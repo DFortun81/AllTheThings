@@ -19,49 +19,49 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							["questID"] = 11165,	-- A Troll Among Trolls
 							["provider"] = { "n", 23761 },	-- Quest Giver: Prigmon
 							["sourceQuest"] = 11164,	-- Source Quest: Tuskin' Raiders
-							["u"] = 2,			-- Legacy Content
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["questID"] = 11171,	-- Hex Lord? Hah!
 							["provider"] = { "n", 23559 },	-- Quest Giver: Budd
 							["sourceQuest"] = 11166,	-- Source Quest: X Marks... Your Doom!
-							["u"] = 2,			-- Legacy Content
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["questID"] = 11130, 	-- Oooh, Shinies!
 							["provider"] = { "n", 19227 },	-- Quest Giver: Griftah (Shattrath)
-							["u"] = 2,			-- Legacy Content
+							["u"] = REMOVED_FROM_GAME,
 							["isBreadcrumb"] = true,
 						},
 						{
 							["questID"] = 11195,	-- Playin' With Dolls
 							["provider"] = { "n", 23897 },	-- Quest Giver: Zungam
 							["sourceQuest"] = 11165,	-- Source Quest: A Troll Among Trolls
-							["u"] = 2,			-- Legacy Content
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
-								un(2, i(34256)),	-- Charmed Amani Jewel
+								un(REMOVED_FROM_GAME, i(34256)),	-- Charmed Amani Jewel
 							},
 						},
 						{
 							["questID"] = 11132,	-- Promises, Promises...
 							["provider"] = { "n", 23559 },	-- Quest Giver: Budd
 							["sourceQuest"] = 11130,	-- Source Quest: Oooh, Shinies!
-							["u"] = 2,			-- Legacy Content
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
-								un(2, i(34067)),	-- Tattered Hexcloth Sack
+								un(REMOVED_FROM_GAME, i(34067)),	-- Tattered Hexcloth Sack
 							},
 						},
 						{
 							["questID"] = 11164,	-- Tuskin' Raiders
 							["provider"] = { "n", 23761 },	-- Quest Giver: Prigmon
 							["sourceQuest"] = 11130,	-- Source Quest: Oooh, Shinies!
-							["u"] = 2,			-- Legacy Content
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["questID"] = 11166,	-- X Marks... Your Doom!
 							["provider"] = { "n", 23559 },	-- Quest Giver: Budd
 							["sourceQuest"] = 11132,	-- Source Quest: Promises, Promises...
-							["u"] = 2,			-- Legacy Content
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}),
 					n(ZONEDROPS, {
@@ -78,115 +78,115 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						["description"] = "Enter the instance and talk to Harrison Jones to start the event and open the doors. You will now have 20 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, but two of them will add extra time to the timer.\n\n    Killing Nalorakk (bear) will add 15 minutes to your timer.\n    Killing Akil'zon (eagle) will add 10 minutes to your timer.\n    Other bosses will not grant additional time.\n\nThe loot from the event is dependent on the number of hostages you rescue.",
 						["groups"] = {
 							n(-7778, {	-- First Chest
-								un(2, i(33489)),	-- Mantle of Ill Intent
-								un(2, i(33481)),	-- Pauldrons of Stone Resolve
-								un(2, i(33590)),	-- Cloak of Fiends
-								un(2, i(33591)),	-- Shadowcaster's Drape
-								un(2, i(33480)),	-- Cord of Braided Troll Hair
-								un(2, i(33483)),	-- Life-Step Belt
-								un(2, i(33971)),	-- Elunite Imbued Leggings
-								un(2, i(33805)),	-- Shadowhunter's Treads
+								un(REMOVED_FROM_GAME, i(33489)),	-- Mantle of Ill Intent
+								un(REMOVED_FROM_GAME, i(33481)),	-- Pauldrons of Stone Resolve
+								un(REMOVED_FROM_GAME, i(33590)),	-- Cloak of Fiends
+								un(REMOVED_FROM_GAME, i(33591)),	-- Shadowcaster's Drape
+								un(REMOVED_FROM_GAME, i(33480)),	-- Cord of Braided Troll Hair
+								un(REMOVED_FROM_GAME, i(33483)),	-- Life-Step Belt
+								un(REMOVED_FROM_GAME, i(33971)),	-- Elunite Imbued Leggings
+								un(REMOVED_FROM_GAME, i(33805)),	-- Shadowhunter's Treads
 							}),
 							n(-7779, {	-- Second Chest
-								un(2, i(33494)),	-- Amani Divining Staff
-								un(2, i(33495)),	-- Rage
-								un(2, i(33490)),	-- Staff of Dark Mending
-								un(2, i(33492)),	-- Trollbane
-								un(2, i(33491)),	-- Tuskbreaker
-								un(2, i(33493)),	-- Umbral Shiv
+								un(REMOVED_FROM_GAME, i(33494)),	-- Amani Divining Staff
+								un(REMOVED_FROM_GAME, i(33495)),	-- Rage
+								un(REMOVED_FROM_GAME, i(33490)),	-- Staff of Dark Mending
+								un(REMOVED_FROM_GAME, i(33492)),	-- Trollbane
+								un(REMOVED_FROM_GAME, i(33491)),	-- Tuskbreaker
+								un(REMOVED_FROM_GAME, i(33493)),	-- Umbral Shiv
 							}),
 							n(-7780, {	-- Third Chest
-								un(2, i(33497)),	-- Mana Attuned Band
-								un(2, i(33500)),	-- Signet of Eternal Life
-								un(2, i(33499)),	-- Signet of the Last Defender
-								un(2, i(33496)),	-- Signet of Primal Wrath
-								un(2, i(33498)),	-- Signet of the Quiet Forest
+								un(REMOVED_FROM_GAME, i(33497)),	-- Mana Attuned Band
+								un(REMOVED_FROM_GAME, i(33500)),	-- Signet of Eternal Life
+								un(REMOVED_FROM_GAME, i(33499)),	-- Signet of the Last Defender
+								un(REMOVED_FROM_GAME, i(33496)),	-- Signet of Primal Wrath
+								un(REMOVED_FROM_GAME, i(33498)),	-- Signet of the Quiet Forest
 							}),
 							n(-7781, {	-- Final Chest
 								["description"] = "This item could only be found in Ashli's Bag after the fourth animal boss had been defeated within the time limit of the event.\n\nOnly one player could receive this within a given raid lockout.\n\nBeware Master Loot!",
 								["groups"] = {
-									un(2, ach(430)),	-- Amani War Bear (FoS)
-									un(2, i(33809)),	-- Amani War Bear
+									un(REMOVED_FROM_GAME, ach(430)),	-- Amani War Bear (FoS)
+									un(REMOVED_FROM_GAME, i(33809)),	-- Amani War Bear
 								},
 							}),
 						},
 					}),
 					cr(23574, e(186, {	-- Akil'zon
 						i(33307),	-- Formula: Enchant Weapon - Executioner
-						un(2, i(33214)),	-- Akil'zon's Talonblade
-						un(2, i(33283)),	-- Amani Punisher
-						un(2, i(33286)),	-- Mojo-Mender's Mask
-						un(2, i(33281)),	-- Brooch of Nature's Mercy
-						un(2, i(33215)),	-- Bloodstained Elven Battlevest
-						un(2, i(33216)),	-- Chestguard of Hidden Purpose
-						un(2, i(33293)),	-- Signet of Ancient Magics
+						un(REMOVED_FROM_GAME, i(33214)),	-- Akil'zon's Talonblade
+						un(REMOVED_FROM_GAME, i(33283)),	-- Amani Punisher
+						un(REMOVED_FROM_GAME, i(33286)),	-- Mojo-Mender's Mask
+						un(REMOVED_FROM_GAME, i(33281)),	-- Brooch of Nature's Mercy
+						un(REMOVED_FROM_GAME, i(33215)),	-- Bloodstained Elven Battlevest
+						un(REMOVED_FROM_GAME, i(33216)),	-- Chestguard of Hidden Purpose
+						un(REMOVED_FROM_GAME, i(33293)),	-- Signet of Ancient Magics
 					})),
 					cr(23576, e(187, {	-- Nalorakk
 						i(33307),	-- Formula: Enchant Weapon - Executioner
-						un(2, i(33640)),	-- Fury
-						un(2, i(33327)),	-- Mask of Introspection
-						un(2, i(33206)),	-- Pauldrons of Primal Fury
-						un(2, i(33203)),	-- Robes of Heavenly Purpose
-						un(2, i(33285)),	-- Fury of the Ursine
-						un(2, i(33211)),	-- Bladeangel's Money Belt
-						un(2, i(33191)),	-- Jungle Stompers
+						un(REMOVED_FROM_GAME, i(33640)),	-- Fury
+						un(REMOVED_FROM_GAME, i(33327)),	-- Mask of Introspection
+						un(REMOVED_FROM_GAME, i(33206)),	-- Pauldrons of Primal Fury
+						un(REMOVED_FROM_GAME, i(33203)),	-- Robes of Heavenly Purpose
+						un(REMOVED_FROM_GAME, i(33285)),	-- Fury of the Ursine
+						un(REMOVED_FROM_GAME, i(33211)),	-- Bladeangel's Money Belt
+						un(REMOVED_FROM_GAME, i(33191)),	-- Jungle Stompers
 					})),
 					cr(23578, e(188, {	-- Jan'alai
-						un(2, i(33354)),	-- Wub's Cursed Hexblade
-						un(2, i(33326)),	-- Bulwark of the Amani Empire
-						un(2, i(33332)),	-- Enamelled Disc of Mojo
-						un(2, i(33356)),	-- Helm of Natural Regeneration
-						un(2, i(33328)),	-- Arrow-Fall Chestguard
-						un(2, i(33329)),	-- Shadowtooth Trollskin Cuirass
-						un(2, i(33357)),	-- Footpads of Madness
+						un(REMOVED_FROM_GAME, i(33354)),	-- Wub's Cursed Hexblade
+						un(REMOVED_FROM_GAME, i(33326)),	-- Bulwark of the Amani Empire
+						un(REMOVED_FROM_GAME, i(33332)),	-- Enamelled Disc of Mojo
+						un(REMOVED_FROM_GAME, i(33356)),	-- Helm of Natural Regeneration
+						un(REMOVED_FROM_GAME, i(33328)),	-- Arrow-Fall Chestguard
+						un(REMOVED_FROM_GAME, i(33329)),	-- Shadowtooth Trollskin Cuirass
+						un(REMOVED_FROM_GAME, i(33357)),	-- Footpads of Madness
 					})),
 					cr(23577, e(189, {	-- Halazzi
-						un(2, i(33297)),	-- The Savage's Choker
-						un(2, i(33300)),	-- Shoulderpads of Dancing Blades
-						un(2, i(33299)),	-- Spaulders of the Advocate
-						un(2, i(33317)),	-- Robe of Departed Spirits
-						un(2, i(33322)),	-- Shimmer-Pelt Vest
-						un(2, i(33533)),	-- Avalanche Leggings
-						un(2, i(33303)),	-- Skullshatter Warboots
+						un(REMOVED_FROM_GAME, i(33297)),	-- The Savage's Choker
+						un(REMOVED_FROM_GAME, i(33300)),	-- Shoulderpads of Dancing Blades
+						un(REMOVED_FROM_GAME, i(33299)),	-- Spaulders of the Advocate
+						un(REMOVED_FROM_GAME, i(33317)),	-- Robe of Departed Spirits
+						un(REMOVED_FROM_GAME, i(33322)),	-- Shimmer-Pelt Vest
+						un(REMOVED_FROM_GAME, i(33533)),	-- Avalanche Leggings
+						un(REMOVED_FROM_GAME, i(33303)),	-- Skullshatter Warboots
 					})),
 					cr(24239, e(190, {	-- Hex Lord Malacrass
-						un(2, i(33389)),	-- Dagger of Bad Mojo
-						un(2, i(33388)),	-- Heartless
-						un(2, i(33298)),	-- Prowler's Strikeblade
-						un(2, i(33465)),	-- Staff of Primal Fury
-						un(2, i(33421)),	-- Battleworn Tuskguard
-						un(2, i(33432)),	-- Coif of the Jungle Stalker
-						un(2, i(33453)),	-- Hood of Hexing
-						un(2, i(33463)),	-- Hood of the Third Eye
-						un(2, i(33464)),	-- Hex Lord's Voodoo Pauldrons
-						un(2, i(33592)),	-- Cloak of Ancient Rituals
-						un(2, i(33446)),	-- Girdle of Stromgarde's Hope
-						un(2, i(33829)),	-- Hex Shrunken Head
-						un(2, i(34029)),	-- Tiny Voodoo Mask
-						un(2, i(33828)),	-- Tome of Diabolic Remedy
+						un(REMOVED_FROM_GAME, i(33389)),	-- Dagger of Bad Mojo
+						un(REMOVED_FROM_GAME, i(33388)),	-- Heartless
+						un(REMOVED_FROM_GAME, i(33298)),	-- Prowler's Strikeblade
+						un(REMOVED_FROM_GAME, i(33465)),	-- Staff of Primal Fury
+						un(REMOVED_FROM_GAME, i(33421)),	-- Battleworn Tuskguard
+						un(REMOVED_FROM_GAME, i(33432)),	-- Coif of the Jungle Stalker
+						un(REMOVED_FROM_GAME, i(33453)),	-- Hood of Hexing
+						un(REMOVED_FROM_GAME, i(33463)),	-- Hood of the Third Eye
+						un(REMOVED_FROM_GAME, i(33464)),	-- Hex Lord's Voodoo Pauldrons
+						un(REMOVED_FROM_GAME, i(33592)),	-- Cloak of Ancient Rituals
+						un(REMOVED_FROM_GAME, i(33446)),	-- Girdle of Stromgarde's Hope
+						un(REMOVED_FROM_GAME, i(33829)),	-- Hex Shrunken Head
+						un(REMOVED_FROM_GAME, i(34029)),	-- Tiny Voodoo Mask
+						un(REMOVED_FROM_GAME, i(33828)),	-- Tome of Diabolic Remedy
 					})),
 					n(130255, {	-- Zul'jin [Old ID: 23863, they reused it for Daakara]
 						["hideText"] = true,
 						["groups"] = {
-							un(2, ach(691)),	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
+							un(REMOVED_FROM_GAME, ach(691)),	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
 							i(33307),	-- Formula: Enchant Weapon - Executioner
 							{
 								["itemID"] = 33102,	-- Blood of Zul'jin
 								["questID"] = 11178,	-- Blood of the Warlord
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
-							un(2, i(33474)),	-- Ancient Amani Longbow
-							un(2, i(33467)),	-- Blade of Twisted Visions
-							un(2, i(33476)),	-- Cleaver of the Unforgiving
-							un(2, i(33468)),	-- Dark Blessing
-							un(2, i(33478)),	-- Jin'rohk, The Great Apocalypse
-							un(2, i(33479)),	-- Grimgrin Faceguard
-							un(2, i(33473)),	-- Chestguard of the Warlord
-							un(2, i(33469)),	-- Hauberk of the Empire's Champion
-							un(2, i(33471)),	-- Two-Toed Sandals
-							un(2, i(33830)),	-- Ancient Aqir Artifact
-							un(2, i(33831)),	-- Berserker's Call
-							un(2, i(33466)),	-- Loop of Cursed Bones
+							un(REMOVED_FROM_GAME, i(33474)),	-- Ancient Amani Longbow
+							un(REMOVED_FROM_GAME, i(33467)),	-- Blade of Twisted Visions
+							un(REMOVED_FROM_GAME, i(33476)),	-- Cleaver of the Unforgiving
+							un(REMOVED_FROM_GAME, i(33468)),	-- Dark Blessing
+							un(REMOVED_FROM_GAME, i(33478)),	-- Jin'rohk, The Great Apocalypse
+							un(REMOVED_FROM_GAME, i(33479)),	-- Grimgrin Faceguard
+							un(REMOVED_FROM_GAME, i(33473)),	-- Chestguard of the Warlord
+							un(REMOVED_FROM_GAME, i(33469)),	-- Hauberk of the Empire's Champion
+							un(REMOVED_FROM_GAME, i(33471)),	-- Two-Toed Sandals
+							un(REMOVED_FROM_GAME, i(33830)),	-- Ancient Aqir Artifact
+							un(REMOVED_FROM_GAME, i(33831)),	-- Berserker's Call
+							un(REMOVED_FROM_GAME, i(33466)),	-- Loop of Cursed Bones
 						},
 					}),
 				},

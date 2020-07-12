@@ -21,25 +21,25 @@ _.Zones =
 								}),
 							}),
 						}),
-						un(2, i(154909, {	-- Kirin Tor Chest
+						un(REMOVED_FROM_GAME, i(154909, {	-- Kirin Tor Chest
 							["sym"] = {
 								{"select", "itemID", 157828},	-- Kirin Tor Chest
 								{"pop"},
 							},
 						})),
-						un(2, i(151470, {	-- Kirin Tor Chest
+						un(REMOVED_FROM_GAME, i(151470, {	-- Kirin Tor Chest
 							["sym"] = {
 								{"select", "itemID", 157828},	-- Kirin Tor Chest
 								{"pop"},
 							},
 						})),
-						un(2, i(146753, {	-- Kirin Tor Chest
+						un(REMOVED_FROM_GAME, i(146753, {	-- Kirin Tor Chest
 							["sym"] = {
 								{"select", "itemID", 157828},	-- Kirin Tor Chest
 								{"pop"},
 							},
 						})),
-						un(2, i(141350, {	-- Kirin Tor Chest
+						un(REMOVED_FROM_GAME, i(141350, {	-- Kirin Tor Chest
 							["sym"] = {
 								{"select", "itemID", 157828},	-- Kirin Tor Chest
 								{"pop"},

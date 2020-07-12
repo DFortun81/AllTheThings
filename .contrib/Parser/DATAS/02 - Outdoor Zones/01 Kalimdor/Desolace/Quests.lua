@@ -39,8 +39,8 @@ _.Zones =
 						1435,	-- The Burning of Spirits
 					},
 					["g"] = {
-						un(2, i(6744)),	-- Gloves of Kapelan
-						un(2, i(6745)),	-- Swiftrunner Cape
+						un(REMOVED_FROM_GAME, i(6744)),	-- Gloves of Kapelan
+						un(REMOVED_FROM_GAME, i(6745)),	-- Swiftrunner Cape
 					},
 				}),
 				q(14380, {	-- An Impactful Discovery
@@ -100,22 +100,22 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 11625 },	-- Cork Gizelton
 					["g"] = {
-						un(2, i(15689)),	-- Trader's Ring
+						un(REMOVED_FROM_GAME, i(15689)),	-- Trader's Ring
 					},
 				}),
 				q(5501,  {	-- Bone Collector
 					["provider"] = { "n", 11438 },	-- Bibbly F'utzbuckle
 					["coord"] = { 62.3, 38.9, 66 },
 					["g"] = {
-						un(2, i(15690)),	-- Kodobone Necklace NOTE: Reward has been removed from quest but quest is still available
+						un(REMOVED_FROM_GAME, i(15690)),	-- Kodobone Necklace NOTE: Reward has been removed from quest but quest is still available
 					},
 				}),
 				q(6027,  {	-- Book of the Ancients
 					["u"] = 40,
 					["provider"] = { "n", 11863 },	-- Azore Aldamort
 					["g"] = {
-						un(2, i(16793)),	-- Arcmetal Shoulders
-						un(2, i(16791)),	-- Silkstream Cuffs
+						un(REMOVED_FROM_GAME, i(16793)),	-- Arcmetal Shoulders
+						un(REMOVED_FROM_GAME, i(16791)),	-- Silkstream Cuffs
 					},
 				}),
 				q(14314, {	-- Breakout!
@@ -149,7 +149,7 @@ _.Zones =
 					["provider"] = { "n", 5752 },	-- Corporal Melkins
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6790)),	-- Ring of Calm
+						un(REMOVED_FROM_GAME, i(6790)),	-- Ring of Calm
 					},
 				}),
 				q(1366,  {	-- Centaur Bounty (H)
@@ -157,8 +157,8 @@ _.Zones =
 					["provider"] = { "n", 5395 },	-- Felgur Twocuts
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(6784)),	-- Braced Handguards
-						un(2, i(6780)),	-- Lilac Sash
+						un(REMOVED_FROM_GAME, i(6784)),	-- Braced Handguards
+						un(REMOVED_FROM_GAME, i(6780)),	-- Lilac Sash
 					},
 				}),
 				q(14335, {	-- Chipping In
@@ -181,8 +181,8 @@ _.Zones =
 					["model"] = 200910,
 					["provider"] = { "o", 177787 },	-- Rackmore's Log (u=43)
 					["g"] = {
-						un(2, i(16789)),	-- Captain Rackmore's Tiller
-						un(2, i(16788)),	-- Captain Rackmore's Wheel
+						un(REMOVED_FROM_GAME, i(16789)),	-- Captain Rackmore's Tiller
+						un(REMOVED_FROM_GAME, i(16788)),	-- Captain Rackmore's Wheel
 					},
 				}),
 				q(6142,  {	-- Clam Bait
@@ -190,9 +190,9 @@ _.Zones =
 					["provider"] = { "n", 12031 },	-- Mai'Lahii
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(15588)),	-- Bracesteel Belt
-						un(2, i(15585)),	-- Pardoc Grips
-						un(2, i(15587)),	-- Ringtail Girdle
+						un(REMOVED_FROM_GAME, i(15588)),	-- Bracesteel Belt
+						un(REMOVED_FROM_GAME, i(15585)),	-- Pardoc Grips
+						un(REMOVED_FROM_GAME, i(15587)),	-- Ringtail Girdle
 					},
 				}),
 				q(14381, {	-- Cleansing Our Crevasse (A)
@@ -223,9 +223,9 @@ _.Zones =
 					["provider"] = { "n", 13698 },	-- Keeper Marandis
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(17705)),	-- Thrash Blade
-						un(2, i(17743)),	-- Resurgence Rod
-						un(2, i(17753)),	-- Verdant Keeper's Aim
+						un(REMOVED_FROM_GAME, i(17705)),	-- Thrash Blade
+						un(REMOVED_FROM_GAME, i(17743)),	-- Resurgence Rod
+						un(REMOVED_FROM_GAME, i(17753)),	-- Verdant Keeper's Aim
 					},
 				}),
 				q(7064,  {	-- Corruption of Earth and Seed (H)
@@ -233,9 +233,9 @@ _.Zones =
 					["provider"] = { "n", 13699 },	-- Selendra
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(17705)),	-- Thrash Blade
-						un(2, i(17743)),	-- Resurgence Rod
-						un(2, i(17753)),	-- Verdant Keeper's Aim
+						un(REMOVED_FROM_GAME, i(17705)),	-- Thrash Blade
+						un(REMOVED_FROM_GAME, i(17743)),	-- Resurgence Rod
+						un(REMOVED_FROM_GAME, i(17753)),	-- Verdant Keeper's Aim
 					},
 				}),
 				q(14394, {	-- Death to Agogridon
@@ -396,9 +396,9 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 11626 },	-- Rigger Gizelton
 					["g"] = {
-						un(2, i(15692)),	-- Kodo Brander
-						un(2, i(15691)),	-- Sidegunner Shottie
-						un(2, i(15695)),	-- Studded Ring Shield
+						un(REMOVED_FROM_GAME, i(15692)),	-- Kodo Brander
+						un(REMOVED_FROM_GAME, i(15691)),	-- Sidegunner Shottie
+						un(REMOVED_FROM_GAME, i(15695)),	-- Studded Ring Shield
 					},
 				}),
 				q(14260, {	-- Going Deep
@@ -479,16 +479,16 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 5398 },	-- Warug
 					["g"] = {
-						un(2, i(6789)),	-- Ceremonial Centaur Blanket
-						un(2, i(6788)),	-- Magram Hunter's Belt
+						un(REMOVED_FROM_GAME, i(6789)),	-- Ceremonial Centaur Blanket
+						un(REMOVED_FROM_GAME, i(6788)),	-- Magram Hunter's Belt
 					},
 				}),
 				q(1380,  {	-- Khan Hratha (Gelkis Friendly Version)
 					["u"] = 40,
 					["provider"] = { "n", 5397 },	-- Uthek the Wise
 					["g"] = {
-						un(2, i(6773)),	-- Gelkis Marauder Chain
-						un(2, i(6774)),	-- Uthek's Finger
+						un(REMOVED_FROM_GAME, i(6773)),	-- Gelkis Marauder Chain
+						un(REMOVED_FROM_GAME, i(6774)),	-- Uthek's Finger
 					},
 				}),
 				q(1374,  {	-- Khan Jehn
@@ -499,8 +499,8 @@ _.Zones =
 					["provider"] = { "n", 11596 },	-- Smeed Scrabblescrew
 					["coord"] = { 60.8, 61.8, 66 },
 					["g"] = {
-						un(2, i(15697)),	-- Kodo Rustler Boots
-						un(2, i(15698)),	-- Wrangling Spaulders
+						un(REMOVED_FROM_GAME, i(15697)),	-- Kodo Rustler Boots
+						un(REMOVED_FROM_GAME, i(15698)),	-- Wrangling Spaulders
 					},
 				}),
 				q(14387, {	-- Lay of the Land
@@ -601,8 +601,8 @@ _.Zones =
 						i(55941),	-- Spaulders of Sealing
 						i(55939),	-- Binding Staff
 						i(131233),	-- Securing Bindings
-						un(2, i(16873)),	-- Braidfur Gloves
-						un(2, i(16794)),	-- Gripsteel Wristguards
+						un(REMOVED_FROM_GAME, i(16873)),	-- Braidfur Gloves
+						un(REMOVED_FROM_GAME, i(16794)),	-- Gripsteel Wristguards
 					},
 				}),
 				q(14306, {	-- Pulling Weeds
@@ -643,9 +643,9 @@ _.Zones =
 					["provider"] = { "n", 5638 },	-- Kreldig Ungor
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6793)),	-- Auric Bracers
-						un(2, i(131232)),	-- Stormfire Gauntlets
-						un(2, i(6794)),	-- Tawny Gloves
+						un(REMOVED_FROM_GAME, i(6793)),	-- Auric Bracers
+						un(REMOVED_FROM_GAME, i(131232)),	-- Stormfire Gauntlets
+						un(REMOVED_FROM_GAME, i(6794)),	-- Tawny Gloves
 					},
 				}),
 				q(14384, {	-- Rerouted!
@@ -672,10 +672,10 @@ _.Zones =
 					["provider"] = { "n", 5644 },	-- Dalinda Malem
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(9699)),	-- Garrison Cloak
-						un(2, i(9698)),	-- Gloves of Insight
-						un(2, i(9687)),	-- Grappler's Belt
-						un(2, i(11884)),	-- Moonlit Amice
+						un(REMOVED_FROM_GAME, i(9699)),	-- Garrison Cloak
+						un(REMOVED_FROM_GAME, i(9698)),	-- Gloves of Insight
+						un(REMOVED_FROM_GAME, i(9687)),	-- Grappler's Belt
+						un(REMOVED_FROM_GAME, i(11884)),	-- Moonlit Amice
 					},
 				}),
 				q(14198, {	-- Rider on the Storm
@@ -728,10 +728,10 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 5397 },	-- Uthek the Wise
 					["g"] = {
-						un(2, i(32378)),	-- Silver Star
-						un(2, i(3463)),	-- Broken Silver Star
-						un(2, i(3464)),	-- Feathered Arrow
-						un(2, i(3465)),	-- Exploding Shot
+						un(REMOVED_FROM_GAME, i(32378)),	-- Silver Star
+						un(REMOVED_FROM_GAME, i(3463)),	-- Broken Silver Star
+						un(REMOVED_FROM_GAME, i(3464)),	-- Feathered Arrow
+						un(REMOVED_FROM_GAME, i(3465)),	-- Exploding Shot
 					},
 				}),
 				q(1382,  {	-- Strange Alliance
@@ -821,8 +821,8 @@ _.Zones =
 					["provider"] = { "n", 5641 },	-- Takata Steelblade
 					["sourceQuest"] = 1484,	-- The Corrupter
 					["g"] = {
-						un(2, i(6746)),	-- Basalt Buckler
-						un(2, i(6747)),	-- Enforcer Pauldrons
+						un(REMOVED_FROM_GAME, i(6746)),	-- Basalt Buckler
+						un(REMOVED_FROM_GAME, i(6747)),	-- Enforcer Pauldrons
 					},
 				}),
 				q(14256, {	-- The Emerging Threat
@@ -843,8 +843,8 @@ _.Zones =
 					["provider"] = { "n", 5638 },	-- Kreldig Ungor
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6791)),	-- Hellion Boots
-						un(2, i(6792)),	-- Sanguine Pauldrons
+						un(REMOVED_FROM_GAME, i(6791)),	-- Hellion Boots
+						un(REMOVED_FROM_GAME, i(6792)),	-- Sanguine Pauldrons
 					},
 				}),
 				q(1454,  {	-- The Karnitol Shipwreck
@@ -940,10 +940,10 @@ _.Zones =
 					["provider"] = { "n", 13656 },	-- Willow
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(17775)),	-- Acumen Robes
-						un(2, i(17779)),	-- Hulkstone Pauldrons
-						un(2, i(17777)),	-- Relentless Chain
-						un(2, i(17776)),	-- Sprightring Helm
+						un(REMOVED_FROM_GAME, i(17775)),	-- Acumen Robes
+						un(REMOVED_FROM_GAME, i(17779)),	-- Hulkstone Pauldrons
+						un(REMOVED_FROM_GAME, i(17777)),	-- Relentless Chain
+						un(REMOVED_FROM_GAME, i(17776)),	-- Sprightring Helm
 					},
 				}),
 				q(14264, {	-- Wetter Than Wet

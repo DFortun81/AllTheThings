@@ -24,7 +24,7 @@ _.ExpansionFeatures =
 							}),
 						}),
 						i(114120, {	-- Big Crate of Salvage
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								-- Only adding items where Salvage Crates was the only source
 								un(7, i(36533)),	-- Adorned Broadsword

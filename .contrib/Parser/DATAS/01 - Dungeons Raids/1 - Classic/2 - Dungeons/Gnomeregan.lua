@@ -17,16 +17,16 @@ _.Instances = { tier(1, {	-- Classic
 				q(2904, {	-- A Fine Mess
 					["u"] = 40,
 					["g"] = {
-						un(2, i(9536)),	-- Fairywing Mantle
-						un(2, i(9535)),	-- Fire-welded Bracers
+						un(REMOVED_FROM_GAME, i(9536)),	-- Fairywing Mantle
+						un(REMOVED_FROM_GAME, i(9535)),	-- Fire-welded Bracers
 					},
 				}),
 				q(2930, {	-- Data Rescue
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(9604)),	-- Mechanic's Pipehammer
-						un(2, i(9605)),	-- Repairman's Cape
+						un(REMOVED_FROM_GAME, i(9604)),	-- Mechanic's Pipehammer
+						un(REMOVED_FROM_GAME, i(9605)),	-- Repairman's Cape
 					},
 				}),
 				q(2945, {	-- Grime-Encrusted Ring
@@ -40,8 +40,8 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(9608)),	-- Shoni's Disarming Tool
-						un(2, i(9609)),	-- Shilly Mitts
+						un(REMOVED_FROM_GAME, i(9608)),	-- Shoni's Disarming Tool
+						un(REMOVED_FROM_GAME, i(9609)),	-- Shilly Mitts
 					},
 				}),
 				q(2947, {	-- Return of the Ring (A)
@@ -58,18 +58,18 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(9623)),	-- Civinad Robes
-						un(2, i(9625)),	-- Dual Reinforced Leggings
-						un(2, i(9624)),	-- Triprunner Dungarees
+						un(REMOVED_FROM_GAME, i(9623)),	-- Civinad Robes
+						un(REMOVED_FROM_GAME, i(9625)),	-- Dual Reinforced Leggings
+						un(REMOVED_FROM_GAME, i(9624)),	-- Triprunner Dungarees
 					},
 				}),
 				q(2929, {	-- The Grand Betrayal
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(9623)),	-- Civinad Robes
-						un(2, i(9624)),	-- Triprunner Dungarees
-						un(2, i(9625)),	-- Dual Reinforced Leggings
+						un(REMOVED_FROM_GAME, i(9623)),	-- Civinad Robes
+						un(REMOVED_FROM_GAME, i(9624)),	-- Triprunner Dungarees
+						un(REMOVED_FROM_GAME, i(9625)),	-- Dual Reinforced Leggings
 					},
 				}),
 				o(142487, {	-- The Sparklematic 5200

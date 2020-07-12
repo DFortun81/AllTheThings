@@ -43,8 +43,8 @@ _.Zones =
 				q(4971,  {	-- A Matter of Time
 					["u"] = 40,
 					["g"] = {
-						un(2, i(15813)),	-- Gold Link Belt
-						un(2, i(15812)),	-- Orchid Amice
+						un(REMOVED_FROM_GAME, i(15813)),	-- Gold Link Belt
+						un(REMOVED_FROM_GAME, i(15812)),	-- Orchid Amice
 					},
 				}),
 				q(27386, {	-- A Strange Historian
@@ -108,9 +108,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(21995)),	-- Boots of Heroism
-						un(2, i(22000)),	-- Legplates of Heroism
-						un(2, i(22001)),	-- Spaulders of Heroism
+						un(REMOVED_FROM_GAME, i(21995)),	-- Boots of Heroism
+						un(REMOVED_FROM_GAME, i(22000)),	-- Legplates of Heroism
+						un(REMOVED_FROM_GAME, i(22001)),	-- Spaulders of Heroism
 					},
 				}),
 				q(8954,  {	-- Anthion's Parting Words (Paladin)[Alliance]
@@ -122,9 +122,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22087)),	-- Soulforge Boots
-						un(2, i(22092)),	-- Soulforge Legplates
-						un(2, i(22093)),	-- Soulforge Spaulders
+						un(REMOVED_FROM_GAME, i(22087)),	-- Soulforge Boots
+						un(REMOVED_FROM_GAME, i(22092)),	-- Soulforge Legplates
+						un(REMOVED_FROM_GAME, i(22093)),	-- Soulforge Spaulders
 					},
 				}),
 				q(8952,  {	-- Anthion's Parting Words (Hunter)[Alliance]
@@ -136,9 +136,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22061)),	-- Beastmaster's Boots
-						un(2, i(22016)),	-- Beastmaster's Mantle
-						un(2, i(22017)),	-- Beastmaster's Pants
+						un(REMOVED_FROM_GAME, i(22061)),	-- Beastmaster's Boots
+						un(REMOVED_FROM_GAME, i(22016)),	-- Beastmaster's Mantle
+						un(REMOVED_FROM_GAME, i(22017)),	-- Beastmaster's Pants
 					},
 				}),
 				q(8956,  {	-- Anthion's Parting Words (Rogue)[Alliance]
@@ -150,9 +150,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22003)),	-- Darkmantle Boots
-						un(2, i(22007)),	-- Darkmantle Pants
-						un(2, i(22008)),	-- Darkmantle Spaulders
+						un(REMOVED_FROM_GAME, i(22003)),	-- Darkmantle Boots
+						un(REMOVED_FROM_GAME, i(22007)),	-- Darkmantle Pants
+						un(REMOVED_FROM_GAME, i(22008)),	-- Darkmantle Spaulders
 					},
 				}),
 				q(8955,  {	-- Anthion's Parting Words (Priest)[Alliance]
@@ -164,9 +164,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22082)),	-- Virtuous Mantle
-						un(2, i(22084)),	-- Virtuous Sandals
-						un(2, i(22085)),	-- Virtuous Skirt
+						un(REMOVED_FROM_GAME, i(22082)),	-- Virtuous Mantle
+						un(REMOVED_FROM_GAME, i(22084)),	-- Virtuous Sandals
+						un(REMOVED_FROM_GAME, i(22085)),	-- Virtuous Skirt
 					},
 				}),
 				q(10496, {	-- Anthion's Parting Words (Shaman)[Alliance]
@@ -178,9 +178,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22096)),	-- Boots of The Five Thunders
-						un(2, i(22100)),	-- Kilt of The Five Thunders.
-						un(2, i(22101)),	-- Pauldrons of The Five Thunders
+						un(REMOVED_FROM_GAME, i(22096)),	-- Boots of The Five Thunders
+						un(REMOVED_FROM_GAME, i(22100)),	-- Kilt of The Five Thunders.
+						un(REMOVED_FROM_GAME, i(22101)),	-- Pauldrons of The Five Thunders
 					},
 				}),
 				q(8953,  {	-- Anthion's Parting Words (Mage)[Alliance]
@@ -192,9 +192,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22064)),	-- Sorcerer's Boots
-						un(2, i(22067)),	-- Sorcerer's Leggings
-						un(2, i(22068)),	-- Sorcerer's Mantle
+						un(REMOVED_FROM_GAME, i(22064)),	-- Sorcerer's Boots
+						un(REMOVED_FROM_GAME, i(22067)),	-- Sorcerer's Leggings
+						un(REMOVED_FROM_GAME, i(22068)),	-- Sorcerer's Mantle
 					},
 				}),
 				q(8958,  {	-- Anthion's Parting Words (Warlock)[Alliance]
@@ -206,9 +206,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22072)),	-- Deathmist Leggings
-						un(2, i(22073)),	-- Deathmist Mantle
-						un(2, i(22076)),	-- Deathmist Sandals
+						un(REMOVED_FROM_GAME, i(22072)),	-- Deathmist Leggings
+						un(REMOVED_FROM_GAME, i(22073)),	-- Deathmist Mantle
+						un(REMOVED_FROM_GAME, i(22076)),	-- Deathmist Sandals
 					},
 				}),
 				q(8951,  {	-- Anthion's Parting Words (Druid)[Alliance]
@@ -220,9 +220,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22107)),	-- Feralheart Boots
-						un(2, i(22111)),	-- Feralheart Kilt
-						un(2, i(22112)),	-- Feralheart Spaulders
+						un(REMOVED_FROM_GAME, i(22107)),	-- Feralheart Boots
+						un(REMOVED_FROM_GAME, i(22111)),	-- Feralheart Kilt
+						un(REMOVED_FROM_GAME, i(22112)),	-- Feralheart Spaulders
 					},
 				}),
 				q(9022,  {	-- Anthion's Parting Words (Warrior)[Horde]
@@ -234,9 +234,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(21995)),	-- Boots of Heroism
-						un(2, i(22000)),	-- Legplates of Heroism
-						un(2, i(22001)),	-- Spaulders of Heroism
+						un(REMOVED_FROM_GAME, i(21995)),	-- Boots of Heroism
+						un(REMOVED_FROM_GAME, i(22000)),	-- Legplates of Heroism
+						un(REMOVED_FROM_GAME, i(22001)),	-- Spaulders of Heroism
 					},
 				}),
 				q(10497, {	-- Anthion's Parting Words (Paladin)[Horde]
@@ -248,9 +248,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22087)),	-- Soulforge Boots
-						un(2, i(22092)),	-- Soulforge Legplates
-						un(2, i(22093)),	-- Soulforge Spaulders
+						un(REMOVED_FROM_GAME, i(22087)),	-- Soulforge Boots
+						un(REMOVED_FROM_GAME, i(22092)),	-- Soulforge Legplates
+						un(REMOVED_FROM_GAME, i(22093)),	-- Soulforge Spaulders
 					},
 				}),
 				q(9017,  {	-- Anthion's Parting Words (Hunter)[Horde]
@@ -262,9 +262,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22061)),	-- Beastmaster's Boots
-						un(2, i(22016)),	-- Beastmaster's Mantle
-						un(2, i(22017)),	-- Beastmaster's Pants
+						un(REMOVED_FROM_GAME, i(22061)),	-- Beastmaster's Boots
+						un(REMOVED_FROM_GAME, i(22016)),	-- Beastmaster's Mantle
+						un(REMOVED_FROM_GAME, i(22017)),	-- Beastmaster's Pants
 					},
 				}),
 				q(9020,  {	-- Anthion's Parting Words (Rogue)[Horde]
@@ -276,9 +276,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22003)),	-- Darkmantle Boots
-						un(2, i(22007)),	-- Darkmantle Pants
-						un(2, i(22008)),	-- Darkmantle Spaulders
+						un(REMOVED_FROM_GAME, i(22003)),	-- Darkmantle Boots
+						un(REMOVED_FROM_GAME, i(22007)),	-- Darkmantle Pants
+						un(REMOVED_FROM_GAME, i(22008)),	-- Darkmantle Spaulders
 					},
 				}),
 				q(9019,  {	-- Anthion's Parting Words (Priest)[Horde]
@@ -290,9 +290,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22082)),	-- Virtuous Mantle
-						un(2, i(22084)),	-- Virtuous Sandals
-						un(2, i(22085)),	-- Virtuous Skirt
+						un(REMOVED_FROM_GAME, i(22082)),	-- Virtuous Mantle
+						un(REMOVED_FROM_GAME, i(22084)),	-- Virtuous Sandals
+						un(REMOVED_FROM_GAME, i(22085)),	-- Virtuous Skirt
 					},
 				}),
 				q(8957,  {	-- Anthion's Parting Words (Shaman)[Horde]
@@ -304,9 +304,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22096)),	-- Boots of The Five Thunders
-						un(2, i(22100)),	-- Kilt of The Five Thunders.
-						un(2, i(22101)),	-- Pauldrons of The Five Thunders
+						un(REMOVED_FROM_GAME, i(22096)),	-- Boots of The Five Thunders
+						un(REMOVED_FROM_GAME, i(22100)),	-- Kilt of The Five Thunders.
+						un(REMOVED_FROM_GAME, i(22101)),	-- Pauldrons of The Five Thunders
 					},
 				}),
 				q(9018,  {	-- Anthion's Parting Words (Mage)[Horde]
@@ -318,9 +318,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22064)),	-- Sorcerer's Boots
-						un(2, i(22067)),	-- Sorcerer's Leggings
-						un(2, i(22068)),	-- Sorcerer's Mantle
+						un(REMOVED_FROM_GAME, i(22064)),	-- Sorcerer's Boots
+						un(REMOVED_FROM_GAME, i(22067)),	-- Sorcerer's Leggings
+						un(REMOVED_FROM_GAME, i(22068)),	-- Sorcerer's Mantle
 					},
 				}),
 				q(9021,  {	-- Anthion's Parting Words (Warlock)[Horde]
@@ -332,9 +332,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22072)),	-- Deathmist Leggings
-						un(2, i(22073)),	-- Deathmist Mantle
-						un(2, i(22076)),	-- Deathmist Sandals
+						un(REMOVED_FROM_GAME, i(22072)),	-- Deathmist Leggings
+						un(REMOVED_FROM_GAME, i(22073)),	-- Deathmist Mantle
+						un(REMOVED_FROM_GAME, i(22076)),	-- Deathmist Sandals
 					},
 				}),
 				q(9016,  {	-- Anthion's Parting Words (Druid)[Horde]
@@ -346,9 +346,9 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22107)),	-- Feralheart Boots
-						un(2, i(22111)),	-- Feralheart Kilt
-						un(2, i(22112)),	-- Feralheart Spaulders
+						un(REMOVED_FROM_GAME, i(22107)),	-- Feralheart Boots
+						un(REMOVED_FROM_GAME, i(22111)),	-- Feralheart Kilt
+						un(REMOVED_FROM_GAME, i(22112)),	-- Feralheart Spaulders
 					},
 				}),
 				q(8947,  {	-- Anthion's Strange Request
@@ -492,7 +492,7 @@ _.Zones =
 					["u"] = 40,			-- Removed in Patch 4.0.3
 					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
-						un(2, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
+						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
 					},
 				}),
 				q(27531, {	-- Counter-Plague Research
@@ -541,8 +541,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(16994)),	-- Duskwing Gloves
-						un(2, i(16995)),	-- Duskwing Mantle
+						un(REMOVED_FROM_GAME, i(16994)),	-- Duskwing Gloves
+						un(REMOVED_FROM_GAME, i(16995)),	-- Duskwing Mantle
 					},
 				}),
 				q(27523, {	-- Duskwing, Oh How I Hate Thee...
@@ -559,48 +559,48 @@ _.Zones =
 					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
-						un(2, i(22657)),	-- Amulet of the Dawn
-						un(2, i(22667)),	-- Bracers of Hope
-						un(2, i(22668)),	-- Bracers of Subterfuge
-						un(2, i(22659)),	-- Medallion of the Dawn
-						un(2, i(22678)),	-- Talisman of Ascendance
-						un(2, i(22656)),	-- The Purifier
+						un(REMOVED_FROM_GAME, i(22657)),	-- Amulet of the Dawn
+						un(REMOVED_FROM_GAME, i(22667)),	-- Bracers of Hope
+						un(REMOVED_FROM_GAME, i(22668)),	-- Bracers of Subterfuge
+						un(REMOVED_FROM_GAME, i(22659)),	-- Medallion of the Dawn
+						un(REMOVED_FROM_GAME, i(22678)),	-- Talisman of Ascendance
+						un(REMOVED_FROM_GAME, i(22656)),	-- The Purifier
 					},
 				}),
 				q(9224,  {	-- Epic Armaments of Battle - Honored Amongst the Dawn
 					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
-						un(2, i(22657)),	-- Amulet of the Dawn
-						un(2, i(22667)),	-- Bracers of Hope
-						un(2, i(22668)),	-- Bracers of Subterfuge
-						un(2, i(22659)),	-- Medallion of the Dawn
-						un(2, i(22678)),	-- Talisman of Ascendance
-						un(2, i(22656)),	-- The Purifier
+						un(REMOVED_FROM_GAME, i(22657)),	-- Amulet of the Dawn
+						un(REMOVED_FROM_GAME, i(22667)),	-- Bracers of Hope
+						un(REMOVED_FROM_GAME, i(22668)),	-- Bracers of Subterfuge
+						un(REMOVED_FROM_GAME, i(22659)),	-- Medallion of the Dawn
+						un(REMOVED_FROM_GAME, i(22678)),	-- Talisman of Ascendance
+						un(REMOVED_FROM_GAME, i(22656)),	-- The Purifier
 					},
 				}),
 				q(9225,  {	-- Epic Armaments of Battle - Revered Amongst the Dawn
 					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
-						un(2, i(22657)),	-- Amulet of the Dawn
-						un(2, i(22667)),	-- Bracers of Hope
-						un(2, i(22668)),	-- Bracers of Subterfuge
-						un(2, i(22659)),	-- Medallion of the Dawn
-						un(2, i(22678)),	-- Talisman of Ascendance
-						un(2, i(22656)),	-- The Purifier
+						un(REMOVED_FROM_GAME, i(22657)),	-- Amulet of the Dawn
+						un(REMOVED_FROM_GAME, i(22667)),	-- Bracers of Hope
+						un(REMOVED_FROM_GAME, i(22668)),	-- Bracers of Subterfuge
+						un(REMOVED_FROM_GAME, i(22659)),	-- Medallion of the Dawn
+						un(REMOVED_FROM_GAME, i(22678)),	-- Talisman of Ascendance
+						un(REMOVED_FROM_GAME, i(22656)),	-- The Purifier
 					},
 				}),
 				q(9228,  {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
 					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
-						un(2, i(22657)),	-- Amulet of the Dawn
-						un(2, i(22667)),	-- Bracers of Hope
-						un(2, i(22668)),	-- Bracers of Subterfuge
-						un(2, i(22659)),	-- Medallion of the Dawn
-						un(2, i(22678)),	-- Talisman of Ascendance
-						un(2, i(22656)),	-- The Purifier
+						un(REMOVED_FROM_GAME, i(22657)),	-- Amulet of the Dawn
+						un(REMOVED_FROM_GAME, i(22667)),	-- Bracers of Hope
+						un(REMOVED_FROM_GAME, i(22668)),	-- Bracers of Subterfuge
+						un(REMOVED_FROM_GAME, i(22659)),	-- Medallion of the Dawn
+						un(REMOVED_FROM_GAME, i(22678)),	-- Talisman of Ascendance
+						un(REMOVED_FROM_GAME, i(22656)),	-- The Purifier
 					},
 				}),
 				q(5861, {	-- Find Myranda
@@ -712,8 +712,8 @@ _.Zones =
 				q(6024,  {	-- Hameya's Plea
 					["u"] = 40,
 					["g"] = {
-						un(2, i(15815)),	-- Hameya's Cloak
-						un(2, i(15814)),	-- Hameya's Slayer
+						un(REMOVED_FROM_GAME, i(15815)),	-- Hameya's Cloak
+						un(REMOVED_FROM_GAME, i(15814)),	-- Hameya's Slayer
 					},
 				}),
 				q(5168,  {	-- Heroes of Darrowshire
@@ -728,9 +728,9 @@ _.Zones =
 				q(5942,  {	-- Hidden Treasures
 					["u"] = 40,
 					["g"] = {
-						un(2, i(15856)),	-- Archlight Talisman
-						un(2, i(15857)),	-- Magebane Scion
-						un(2, i(15855)),	-- Ring of Protection
+						un(REMOVED_FROM_GAME, i(15856)),	-- Archlight Talisman
+						un(REMOVED_FROM_GAME, i(15857)),	-- Magebane Scion
+						un(REMOVED_FROM_GAME, i(15855)),	-- Ring of Protection
 					},
 				}),
 				q(27391, {	-- Hidden Treasures
@@ -754,8 +754,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
 					["g"] = {
-						un(2, i(13217)),	-- Band of the Penitent
-						un(2, i(13216)),	-- Crown of the Penitent
+						un(REMOVED_FROM_GAME, i(13217)),	-- Band of the Penitent
+						un(REMOVED_FROM_GAME, i(13216)),	-- Crown of the Penitent
 					},
 				}),
 				q(27392, {	-- I'm Not Supposed to Tell You This
@@ -786,7 +786,7 @@ _.Zones =
 					["u"] = 40,			-- Removed in Patch 4.0.3
 					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
-						un(2, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
+						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
 					},
 				}),
 				q(27487, {	-- Ix'lar the Underlord
@@ -883,7 +883,7 @@ _.Zones =
 					["u"] = 40,			-- Removed in Patch 4.0.3
 					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
-						un(2, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
+						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
 					},
 				}),
 				q(27489, {	-- Nobody to Blame but Myself
@@ -957,8 +957,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(17001)),	-- Elemental Circle
-						un(2, i(18022)),	-- Royal Seal of Alexis
+						un(REMOVED_FROM_GAME, i(17001)),	-- Elemental Circle
+						un(REMOVED_FROM_GAME, i(18022)),	-- Royal Seal of Alexis
 					},
 				}),
 				q(5742, {	-- Redemption
@@ -1017,44 +1017,44 @@ _.Zones =
 					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
-						un(2, i(22681)),	-- Band of Piety
-						un(2, i(22680)),	-- Band of Resolution
-						un(2, i(22688)),	-- Verimonde's Last Resort
-						un(2, i(22690)),	-- Leggings of the Plague Hunter
-						un(2, i(22689)),	-- Sanctified Leather Helm
+						un(REMOVED_FROM_GAME, i(22681)),	-- Band of Piety
+						un(REMOVED_FROM_GAME, i(22680)),	-- Band of Resolution
+						un(REMOVED_FROM_GAME, i(22688)),	-- Verimonde's Last Resort
+						un(REMOVED_FROM_GAME, i(22690)),	-- Leggings of the Plague Hunter
+						un(REMOVED_FROM_GAME, i(22689)),	-- Sanctified Leather Helm
 					},
 				}),
 				q(9223,  {	-- Superior Armaments of Battle - Honored Amongst the Dawn
 					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
-						un(2, i(22681)),	-- Band of Piety
-						un(2, i(22680)),	-- Band of Resolution
-						un(2, i(22688)),	-- Verimonde's Last Resort
-						un(2, i(22690)),	-- Leggings of the Plague Hunter
-						un(2, i(22689)),	-- Sanctified Leather Helm
+						un(REMOVED_FROM_GAME, i(22681)),	-- Band of Piety
+						un(REMOVED_FROM_GAME, i(22680)),	-- Band of Resolution
+						un(REMOVED_FROM_GAME, i(22688)),	-- Verimonde's Last Resort
+						un(REMOVED_FROM_GAME, i(22690)),	-- Leggings of the Plague Hunter
+						un(REMOVED_FROM_GAME, i(22689)),	-- Sanctified Leather Helm
 					},
 				}),
 				q(9226,  {	-- Superior Armaments of Battle - Revered Amongst the Dawn
 					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
-						un(2, i(22681)),	-- Band of Piety
-						un(2, i(22680)),	-- Band of Resolution
-						un(2, i(22688)),	-- Verimonde's Last Resort
-						un(2, i(22690)),	-- Leggings of the Plague Hunter
-						un(2, i(22689)),	-- Sanctified Leather Helm
+						un(REMOVED_FROM_GAME, i(22681)),	-- Band of Piety
+						un(REMOVED_FROM_GAME, i(22680)),	-- Band of Resolution
+						un(REMOVED_FROM_GAME, i(22688)),	-- Verimonde's Last Resort
+						un(REMOVED_FROM_GAME, i(22690)),	-- Leggings of the Plague Hunter
+						un(REMOVED_FROM_GAME, i(22689)),	-- Sanctified Leather Helm
 					},
 				}),
 				q(9227,  {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
 					["u"] = 40,
 					["repeatable"] = true,
 					["g"] = {
-						un(2, i(22681)),	-- Band of Piety
-						un(2, i(22680)),	-- Band of Resolution
-						un(2, i(22688)),	-- Verimonde's Last Resort
-						un(2, i(22690)),	-- Leggings of the Plague Hunter
-						un(2, i(22689)),	-- Sanctified Leather Helm
+						un(REMOVED_FROM_GAME, i(22681)),	-- Band of Piety
+						un(REMOVED_FROM_GAME, i(22680)),	-- Band of Resolution
+						un(REMOVED_FROM_GAME, i(22688)),	-- Verimonde's Last Resort
+						un(REMOVED_FROM_GAME, i(22690)),	-- Leggings of the Plague Hunter
+						un(REMOVED_FROM_GAME, i(22689)),	-- Sanctified Leather Helm
 					},
 				}),
 				q(27370, {	-- Tarenar Sunstrike
@@ -1080,8 +1080,8 @@ _.Zones =
 				q(5213,  {	-- The Active Agent
 					["u"] = 40,
 					["g"] = {
-						un(2, i(19812)),	-- Rune of the Dawn
-						un(2, i(13209)),	-- Seal of the Dawn
+						un(REMOVED_FROM_GAME, i(19812)),	-- Rune of the Dawn
+						un(REMOVED_FROM_GAME, i(13209)),	-- Seal of the Dawn
 					},
 				}),
 				q(5251, {	-- The Archivist
@@ -1091,9 +1091,9 @@ _.Zones =
 				q(5265,  {	-- The Argent Hold
 					["u"] = 40,
 					["g"] = {
-						un(2, i(13246)),	-- Argent Avenger
-						un(2, i(13249)),	-- Argent Crusader
-						un(2, i(13243)),	-- Argent Defender
+						un(REMOVED_FROM_GAME, i(13246)),	-- Argent Avenger
+						un(REMOVED_FROM_GAME, i(13249)),	-- Argent Crusader
+						un(REMOVED_FROM_GAME, i(13243)),	-- Argent Defender
 					},
 				}),
 				q(27613, {	-- The Assassin
@@ -1163,9 +1163,9 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(17002)),	-- Ichor Spitter
-						un(2, i(17004)),	-- Sarah's Guide
-						un(2, i(17003)),	-- Skullstone Hammer
+						un(REMOVED_FROM_GAME, i(17002)),	-- Ichor Spitter
+						un(REMOVED_FROM_GAME, i(17004)),	-- Sarah's Guide
+						un(REMOVED_FROM_GAME, i(17003)),	-- Skullstone Hammer
 					},
 				}),
 				q(27477, {	-- The Corpulent One
@@ -1189,7 +1189,7 @@ _.Zones =
 				q(5214,  {	-- The Great Fras Siabi
 					["u"] = 40,
 					["g"] = {
-						un(2, i(13171)),	-- Smokey's Lighter
+						un(REMOVED_FROM_GAME, i(13171)),	-- Smokey's Lighter
 					},
 				}),
 				q(27616, {	-- The Huntsman
@@ -1200,7 +1200,7 @@ _.Zones =
 				q(9211,  {	-- The Ice Guard
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22636)),	-- Ice Guard
+						un(REMOVED_FROM_GAME, i(22636)),	-- Ice Guard
 					},
 				}),
 				q(5466, { 	-- The Lich, Ras Frostwhisper
@@ -1208,10 +1208,10 @@ _.Zones =
 					["provider"] = { "n", 11286 },	-- Magistrate Marduke
 					["sourceQuest"] = 5465,	-- Soulbound Keepsake
 					["g"] = {
-						un(2, i(13986)), 	-- Crown of Caer Darrow
-						un(2, i(14002)), 	-- Darrowshire Strongguard
-						un(2, i(13984)), 	-- Darrowspike
-						un(2, i(13982)), 	-- Warblade of Caer Darrow
+						un(REMOVED_FROM_GAME, i(13986)), 	-- Crown of Caer Darrow
+						un(REMOVED_FROM_GAME, i(14002)), 	-- Darrowshire Strongguard
+						un(REMOVED_FROM_GAME, i(13984)), 	-- Darrowspike
+						un(REMOVED_FROM_GAME, i(13982)), 	-- Warblade of Caer Darrow
 					},
 				}),
 				q(27532, {	-- The Plaguewood Tower
@@ -1234,13 +1234,13 @@ _.Zones =
 					["provider"] = { "n", 11140 },	-- Egan
 					["sourceQuest"] = 5281,	-- The Restless Souls
 					["g"] = {
-						un(2, i(13315)),	-- Testament of Hope
+						un(REMOVED_FROM_GAME, i(13315)),	-- Testament of Hope
 					},
 				}),
 				q(9213,  {	-- The Shadow Guard
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22638)),	-- Shadow Guard
+						un(REMOVED_FROM_GAME, i(22638)),	-- Shadow Guard
 					},
 				}),
 				q(27448, {	-- The Trek Continues
@@ -1342,9 +1342,9 @@ _.Zones =
 				q(6041,  {	-- When Smokey Sings, I Get Violent
 					["u"] = 40,
 					["g"] = {
-						un(2, i(17523)),	-- Smokey's Drape
-						un(2, i(16992)),	-- Smokey's Explosive Launcher
-						un(2, i(16993)),	-- Smokey's Fireshooter
+						un(REMOVED_FROM_GAME, i(17523)),	-- Smokey's Drape
+						un(REMOVED_FROM_GAME, i(16992)),	-- Smokey's Explosive Launcher
+						un(REMOVED_FROM_GAME, i(16993)),	-- Smokey's Fireshooter
 					},
 				}),
 				q(27521, {	-- Wretched Hive of Scum and Villainy

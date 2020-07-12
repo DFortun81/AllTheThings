@@ -242,7 +242,7 @@ _.Zones =
 							i(41724),	-- Design: Misty Forest Emerald
 							i(41781, {	-- Design: Misty Forest Emerald
 								["spellID"] = 0,	-- This is now available via 41724, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41567),	-- Design: Nimble Dark Jade
 							i(44104),	-- Fishy Cinch

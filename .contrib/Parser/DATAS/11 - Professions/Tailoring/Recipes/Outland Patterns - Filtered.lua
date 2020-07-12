@@ -33,7 +33,7 @@ profession(TAILORING, {
 						},
 						{
 							["recipeID"] = 28207,--[[Glacial Vest]]
-							["u"] = 2,-- pattern removed from game
+							["u"] = REMOVED_FROM_GAME,
 						},
 					},
 				},
@@ -46,7 +46,7 @@ profession(TAILORING, {
 						},
 						{
 							["recipeID"] = 28209,--[[Glacial Wrists]]
-							["u"] = 2,-- pattern removed from game
+							["u"] = REMOVED_FROM_GAME,
 						},
 					},
 				},
@@ -68,7 +68,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 28205,--[[Glacial Gloves]]
-							["u"] = 2,-- pattern removed from game
+							["u"] = REMOVED_FROM_GAME,
 						},
 					},
 				},
@@ -95,7 +95,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 28208,--[[Glacial Cloak]]
-							["u"] = 2,-- pattern removed from game
+							["u"] = REMOVED_FROM_GAME,
 						},
 					},
 				},

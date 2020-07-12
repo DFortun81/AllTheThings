@@ -233,7 +233,7 @@ _.Zones =
 						i(105920, {	-- Pandaren Peace Offering
 							["cost"] = { { "c", 777, 10000 }, },	-- 10,000x Timeless Coin
 						}),
-						un(2, i(104014)),	-- Pouch of Timeless Coins (was purchased via valor points)
+						un(REMOVED_FROM_GAME, i(104014)),	-- Pouch of Timeless Coins (was purchased via valor points)
 						i(103990, {	-- Resolve of Niuzao
 							["cost"] = { { "c", 777, 50000 }, },	-- 50,000x Timeless Coin
 						}),

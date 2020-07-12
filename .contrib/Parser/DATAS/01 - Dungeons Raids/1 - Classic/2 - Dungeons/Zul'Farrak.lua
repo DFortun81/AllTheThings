@@ -34,8 +34,8 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle
 					["g"] = {
-						un(2, i(9534)),	-- Engineer's Guild Headpiece
-						un(2, i(9533)),	-- Masons Fraternity Ring
+						un(REMOVED_FROM_GAME, i(9534)),	-- Engineer's Guild Headpiece
+						un(REMOVED_FROM_GAME, i(9533)),	-- Masons Fraternity Ring
 					},
 				}),
 				q(27071, {	-- Wrath of the Sandfury

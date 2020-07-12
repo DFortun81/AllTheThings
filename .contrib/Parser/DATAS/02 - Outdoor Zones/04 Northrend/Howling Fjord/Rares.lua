@@ -18,7 +18,7 @@ _.Zones =
 						crit(9, {	-- King Ping
 							["achievementID"] = 2257,	-- Frostbitten
 						}),
-						un(2, i(120139)),    -- Tome of Polymorph: Penguin
+						un(REMOVED_FROM_GAME, i(120139)),    -- Tome of Polymorph: Penguin
 						i(44668),	-- Egg-Warming Blanket
 						i(44663),	-- Abandoned Adventurer's Satchel
 					},

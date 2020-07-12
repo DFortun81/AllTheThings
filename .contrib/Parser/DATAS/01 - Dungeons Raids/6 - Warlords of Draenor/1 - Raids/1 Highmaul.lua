@@ -733,7 +733,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						ach(8965, {	-- Mythic: Imperator's Fall
 							title(304),	-- <Name>, Empire's Twilight
 						}),
-						un(2, ach(9442)),	-- Cutting Edge: Imperator's Fall
+						un(REMOVED_FROM_GAME, ach(9442)),	-- Cutting Edge: Imperator's Fall
 						ach(8977),	-- Lineage of Power
 						i(113848),	-- Gor'gah, High Blade of the Gorians
 						i(113857),	-- Staff of the Grand Imperator

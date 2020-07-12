@@ -100,7 +100,7 @@ _.PetJournal =
 		p(2409),			-- Greatwing Macaw
 		p(50),				-- Green Wing Macaw
 		p(464),				-- Grey Moth
-		un(2, p(245)),		-- Gryphon Hatchling
+		un(REMOVED_FROM_GAME, p(245)),		-- Gryphon Hatchling
 		un(7, p(311)),		-- Guardian Cub
 		p(67),				-- Hawk Owl
 		p(645),				-- Highlands Turkey

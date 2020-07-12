@@ -68,10 +68,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144144),	-- Whirling Dervish Choker
 						i(144145),	-- Conflagrating Gloves
 						i(144143),	-- Hurricane Belt
-						un(2, i(85175)),	-- Crest of the Clan Lords (7.1 - Removed from Game!)
-						un(2, i(85179)),	-- Meteoric Greathelm (7.1 - Removed from Game!)
-						un(2, i(85178)),	-- Conflagrating Gloves (7.1 - Removed from Game!)
-						un(2, i(85176)),	-- Hurricane Belt (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85175)),	-- Crest of the Clan Lords (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85179)),	-- Meteoric Greathelm (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85178)),	-- Conflagrating Gloves (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85176)),	-- Hurricane Belt (7.1 - Removed from Game!)
 					},
 				}),
 				e(690, {	-- Gekkan
@@ -82,10 +82,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144149),	-- Hexxer's Lethargic Gloves
 						i(143992),	-- Glintrok Sollerets
 						i(144146),	-- Iron Protector Talisman
-						un(2, i(85183)),	-- Claws of Gekkan (7.1 - Removed from Game!)
-						un(2, i(85182)),	-- Cloak of Cleansing Flames (7.1 - Removed from Game!)
-						un(2, i(85184)),	-- Hexxer's Lethargic Gloves (7.1 - Removed from Game!)
-						un(2, i(85180)),	-- Glintrok Sollerets (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85183)),	-- Claws of Gekkan (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85182)),	-- Cloak of Cleansing Flames (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85184)),	-- Hexxer's Lethargic Gloves (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85180)),	-- Glintrok Sollerets (7.1 - Removed from Game!)
 					},
 				}),
 				e(698, {	-- Xin the Weaponmaster
@@ -103,14 +103,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(143993),	-- Boots of Plummeting Death
 						i(143994),	-- Soulbinder Treads
 						i(144152),	-- Blade Trap Signet
-						un(2, i(85185)),	-- Ghostheart (7.1 - Removed from Game!)
-						un(2, i(85190)),	-- Firescribe Dagger (7.1 - Removed from Game!)
-						un(2, i(85194)),	-- Regal Silk Shoulderpads (7.1 - Removed from Game!)
-						un(2, i(85193)),	-- Mind's Eye Breastplate (7.1 - Removed from Game!)
-						un(2, i(85189)),	-- Groundshaker Bracer (7.1 - Removed from Game!)
-						un(2, i(85186)),	-- Axebreaker Gauntlets (7.1 - Removed from Game!)
-						un(2, i(85187)),	-- Boots of Plummeting Death (7.1 - Removed from Game!)
-						un(2, i(85192)),	-- Soulbinder Treads (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85185)),	-- Ghostheart (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85190)),	-- Firescribe Dagger (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85194)),	-- Regal Silk Shoulderpads (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85193)),	-- Mind's Eye Breastplate (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85189)),	-- Groundshaker Bracer (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85186)),	-- Axebreaker Gauntlets (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85187)),	-- Boots of Plummeting Death (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(85192)),	-- Soulbinder Treads (7.1 - Removed from Game!)
 					},
 				}),
 			}),
@@ -135,10 +135,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(144144),	-- Whirling Dervish Choker
 							i(144145),	-- Conflagrating Gloves
 							i(144143),	-- Hurricane Belt
-							un(2, i(81237)),	-- Crest of the Clan Lords (7.1 - Removed from Game!)
-							un(2, i(81241)),	-- Meteoric Greathelm (7.1 - Removed from Game!)
-							un(2, i(81240)),	-- Conflagrating Gloves (7.1 - Removed from Game!)
-							un(2, i(81238)),	-- Hurricane Belt (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81237)),	-- Crest of the Clan Lords (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81241)),	-- Meteoric Greathelm (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81240)),	-- Conflagrating Gloves (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81238)),	-- Hurricane Belt (7.1 - Removed from Game!)
 						},
 					}),
 					e(690, {	-- Gekkan
@@ -150,10 +150,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(144149),	-- Hexxer's Lethargic Gloves
 							i(143992),	-- Glintrok Sollerets
 							i(144146),	-- Iron Protector Talisman
-							un(2, i(81245)),	-- Claws of Gekkan (7.1 - Removed from Game!)
-							un(2, i(81244)),	-- Cloak of Cleansing Flames (7.1 - Removed from Game!)
-							un(2, i(81246)),	-- Hexxer's Lethargic Gloves (7.1 - Removed from Game!)
-							un(2, i(81242)),	-- Glintrok Sollerets (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81245)),	-- Claws of Gekkan (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81244)),	-- Cloak of Cleansing Flames (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81246)),	-- Hexxer's Lethargic Gloves (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81242)),	-- Glintrok Sollerets (7.1 - Removed from Game!)
 						},
 					}),
 					e(698, {	-- Xin the Weaponmaster
@@ -172,15 +172,15 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(143993),	-- Boots of Plummeting Death
 							i(143994),	-- Soulbinder Treads
 							i(144152),	-- Blade Trap Signet
-							un(2, i(81247)),	-- Ghostheart (7.1 - Removed from Game!)
-							un(2, i(87542)),	-- Mogu'Dar, Blade of the Thousand Slaves (7.1 - Removed from Game!)
-							un(2, i(81253)),	-- Firescribe Dagger (7.1 - Removed from Game!)
-							un(2, i(81257)),	-- Regal Silk Shoulderpads (7.1 - Removed from Game!)
-							un(2, i(81256)),	-- Mind's Eye Breastplate (7.1 - Removed from Game!)
-							un(2, i(81252)),	-- Groundshaker Bracer (7.1 - Removed from Game!)
-							un(2, i(81248)),	-- Axebreaker Gauntlets (7.1 - Removed from Game!)
-							un(2, i(81249)),	-- Boots of Plummeting Death (7.1 - Removed from Game!)
-							un(2, i(81255)),	-- Soulbinder Treads (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81247)),	-- Ghostheart (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(87542)),	-- Mogu'Dar, Blade of the Thousand Slaves (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81253)),	-- Firescribe Dagger (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81257)),	-- Regal Silk Shoulderpads (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81256)),	-- Mind's Eye Breastplate (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81252)),	-- Groundshaker Bracer (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81248)),	-- Axebreaker Gauntlets (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81249)),	-- Boots of Plummeting Death (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81255)),	-- Soulbinder Treads (7.1 - Removed from Game!)
 						},
 					}),
 				},

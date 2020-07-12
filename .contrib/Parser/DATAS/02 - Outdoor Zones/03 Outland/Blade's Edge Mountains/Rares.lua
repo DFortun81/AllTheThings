@@ -56,10 +56,10 @@ _.Zones =
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
 						i(32941, {	-- Corruptor's Signet
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(32942, {	-- Ring of the Overseer
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),

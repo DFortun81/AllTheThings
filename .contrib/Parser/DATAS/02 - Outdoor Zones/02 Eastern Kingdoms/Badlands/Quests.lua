@@ -10,7 +10,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4978)),	-- Ryedol's Hammer
+						un(REMOVED_FROM_GAME, i(4978)),	-- Ryedol's Hammer
 					},
 				}),
 				q(27823, {	-- A Dwarf's Got Needs
@@ -77,7 +77,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 2202 },	-- Source Quest: Uldaman Reagent Run
 					["g"] = {
-						un(2, recipe(11452)),	-- Restorative Potion
+						un(REMOVED_FROM_GAME, recipe(11452)),	-- Restorative Potion
 					},
 				}),
 				q(27834, {	-- Baelog, the Glass Cannon
@@ -113,10 +113,10 @@ _.Zones =
 					["provider"] = { "n", 1068 },	-- Gorn
 					["sourceQuest"] = 782,	-- Broken Alliances
 					["g"] = {
-						un(2, i(11193)),	-- Blazewind Breastplate
-						un(2, i(11196)),	-- Mindburst Medallion
-						un(2, i(11194)),	-- Prismscale Hauberk
-						un(2, i(11195)),	-- Warforged Chestplate
+						un(REMOVED_FROM_GAME, i(11193)),	-- Blazewind Breastplate
+						un(REMOVED_FROM_GAME, i(11196)),	-- Mindburst Medallion
+						un(REMOVED_FROM_GAME, i(11194)),	-- Prismscale Hauberk
+						un(REMOVED_FROM_GAME, i(11195)),	-- Warforged Chestplate
 					},
 				}),
 				q(713,   {	-- Coolant Heads Prevail
@@ -325,29 +325,29 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(12000)),	-- Limb Cleaver
-						un(2, i(11964)),	-- Swiftstrike Cudgel
+						un(REMOVED_FROM_GAME, i(12000)),	-- Limb Cleaver
+						un(REMOVED_FROM_GAME, i(11964)),	-- Swiftstrike Cudgel
 					},
 				}),
 				q(739,   {	-- Murdaloc
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4983)),	-- Rock Pulverizer
+						un(REMOVED_FROM_GAME, i(4983)),	-- Rock Pulverizer
 					},
 				}),
 				q(1137,  {	-- News for Fizzle
 					["u"] = 40,
 					["g"] = {
-						un(2, i(6729)),	-- Fizzle's Zippy Lighter
-						un(2, i(6732)),	-- Gnomish Mechanic's Gloves
+						un(REMOVED_FROM_GAME, i(6729)),	-- Fizzle's Zippy Lighter
+						un(REMOVED_FROM_GAME, i(6732)),	-- Gnomish Mechanic's Gloves
 					},
 				}),
 				q(2341,  {	-- Necklace Recovery, Take 3
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(7888)),		-- Jarkal's Enhancing Necklace
+						un(REMOVED_FROM_GAME, i(7888)),		-- Jarkal's Enhancing Necklace
 					},
 				}),
 				q(27889, {	-- New Kargath
@@ -373,16 +373,16 @@ _.Zones =
 				q(705,   {	-- Pearl Diving
 					["u"] = 40,
 					["g"] = {
-						un(2, i(4086)),	-- Flash Rifle
-						un(2, i(5248)),	-- Flash Wand
+						un(REMOVED_FROM_GAME, i(4086)),	-- Flash Rifle
+						un(REMOVED_FROM_GAME, i(5248)),	-- Flash Wand
 					},
 				}),
 				q(2418,  {	-- Power Stones
 					["u"] = 40,
 					["g"] = {
-						un(2, i(10358)),	-- Duracin Bracers
-						un(2, i(9522)),	-- Energized Stone Circle
-						un(2, i(10359)),	-- Everlast Boots
+						un(REMOVED_FROM_GAME, i(10358)),	-- Duracin Bracers
+						un(REMOVED_FROM_GAME, i(9522)),	-- Energized Stone Circle
+						un(REMOVED_FROM_GAME, i(10359)),	-- Everlast Boots
 					},
 				}),
 				q(1420,  {	-- Report to Helgrum
@@ -394,7 +394,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(7673)),		-- Talvash's Enhancing Necklace
+						un(REMOVED_FROM_GAME, i(7673)),		-- Talvash's Enhancing Necklace
 					},
 				}),
 				q(27794, {	-- Return to Blam (A)
@@ -441,8 +441,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4653)),	-- Ironheel Boots
-						un(2, i(4652)),	-- Salbac Shield
+						un(REMOVED_FROM_GAME, i(4653)),	-- Ironheel Boots
+						un(REMOVED_FROM_GAME, i(4652)),	-- Salbac Shield
 					},
 				}),
 				q(27766, {	-- Second Sample: Whelps
@@ -462,7 +462,7 @@ _.Zones =
 				q(716,   {	-- Stone Is Better than Cloth
 					["u"] = 40,
 					["g"] = {
-						un(2, i(4979)),	-- Enchanted Stonecloth Bracers
+						un(REMOVED_FROM_GAME, i(4979)),	-- Enchanted Stonecloth Bracers
 					},
 				}),
 				q(710,   {	-- Study of the Elements: Rock
@@ -555,7 +555,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9078 },	-- Shadowmage Vivian Lagrave
 					["g"] = {
-						un(2, i(12038)),	-- Lagrave's Seal
+						un(REMOVED_FROM_GAME, i(12038)),	-- Lagrave's Seal
 					},
 				}),
 				q(692,   {	-- The Lost Fragments
@@ -567,7 +567,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6723)),		-- Medal of Courage
+						un(REMOVED_FROM_GAME, i(6723)),		-- Medal of Courage
 					},
 				}),
 				q(27877, {	-- The Morons' League
@@ -579,9 +579,9 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(15824)),	-- Astoria Robes
-						un(2, i(15827)),	-- Jadescale Breastplate
-						un(2, i(15825)),	-- Traphook Jerkin
+						un(REMOVED_FROM_GAME, i(15824)),	-- Astoria Robes
+						un(REMOVED_FROM_GAME, i(15827)),	-- Jadescale Breastplate
+						un(REMOVED_FROM_GAME, i(15825)),	-- Traphook Jerkin
 					},
 				}),
 				q(4063,  {	-- The Rise of the Machines
@@ -590,10 +590,10 @@ _.Zones =
 					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
 					["sourceQuest"] = 4062,	-- The Rise of the Machines
 					["g"] = {
-						un(2, i(12109)),	-- Azure Moon Amice
-						un(2, i(12108)),	-- Basaltscale Armor
-						un(2, i(12111)),	-- Lavaplate Gauntlets
-						un(2, i(12110)),	-- Raincaster Drape
+						un(REMOVED_FROM_GAME, i(12109)),	-- Azure Moon Amice
+						un(REMOVED_FROM_GAME, i(12108)),	-- Basaltscale Armor
+						un(REMOVED_FROM_GAME, i(12111)),	-- Lavaplate Gauntlets
+						un(REMOVED_FROM_GAME, i(12110)),	-- Raincaster Drape
 					},
 				}),
 				q(27709, {	-- The Sentinel's Game (A)
@@ -756,7 +756,7 @@ _.Zones =
 					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
 					["sourceQuest"] = 777,	-- This Is Going to Be Hard
 					["g"] = {
-						un(2, i(2820)),	-- Nifty Stopwatch
+						un(REMOVED_FROM_GAME, i(2820)),	-- Nifty Stopwatch
 					},
 				}),
 				q(27763, {	-- To Fuselight Proper
@@ -802,10 +802,10 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(11193)),	-- Blazewind Breastplate
-						un(2, i(11196)),	-- Mindburst Medallion
-						un(2, i(11194)),	-- Prismscale Hauberk
-						un(2, i(11195)),	-- Warforged Chestplate
+						un(REMOVED_FROM_GAME, i(11193)),	-- Blazewind Breastplate
+						un(REMOVED_FROM_GAME, i(11196)),	-- Mindburst Medallion
+						un(REMOVED_FROM_GAME, i(11194)),	-- Prismscale Hauberk
+						un(REMOVED_FROM_GAME, i(11195)),	-- Warforged Chestplate
 					},
 				}),
 				q(27789, {	-- Troggish Troubles

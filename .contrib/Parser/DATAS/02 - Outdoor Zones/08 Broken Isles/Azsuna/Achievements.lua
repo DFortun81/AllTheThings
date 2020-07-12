@@ -227,7 +227,7 @@ _.Zones =
 					},
 				}),
 				ach(11139, {	-- Field Medic!
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(39, title(340, {	-- TITLE: Field Medic!
 							["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",

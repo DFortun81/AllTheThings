@@ -570,7 +570,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						-- Bag introduced in 4.0.1 [Cataclysm]
 						-- This bag was removed at the end of MoP and in WoD epic bag introduced
 						["lvl"] = 90,	-- Minimum level this bag drops
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							i(33292, {	-- Hallowed Helm
 								["u"] = 26,	-- Hallow's End
@@ -594,10 +594,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 								},
 							}),
 							i(71326, {	-- The Horseman's Horrific Helm
-								["u"] = 2,	-- Removed BoP Filter
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(87569, {	-- The Horseman's Horrific Hood
-								["u"] = 2,	-- Removed BoP Filter
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(37012, {	-- The Horseman's Reins
 								["u"] = 26,	-- Hallow's End
@@ -608,10 +608,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 								},
 							}),
 							i(71325, {	-- The Horseman's Sinister Saber
-								["u"] = 2,	-- Removed BoP Filter
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(87570, {	-- The Horseman's Sinister Slicer
-								["u"] = 2,	-- Removed BoP Filter
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),
@@ -619,81 +619,81 @@ _.Holidays = bubbleDown({["u"] = 26},
 				--	Item Key ( Original iLvl // BfA+ iLvL // Minium Level)
 				--	Burning Crusade Rings
 					i(33183, {	-- Old Magic Broom
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 						--Note!! Removed in Patch 2.4.3
 					}),
 					i(33184, {	-- Swift Magic Broom
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(38175, {	-- The Horseman's Blade
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(33808, {	-- The Horseman's Helm
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(34075, {	-- Ring of Ghoulish Delight
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(34073, {	-- The Horseman's Signet Ring]
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(34074, {	-- Witches Band
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 				--	Wrath of the Lich King Rings
 					i(49128, {	-- The Horseman's Baleful Blade
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(49126, {	-- The Horseman's Horrific Helm
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(49121, {	-- Ring of Ghoulish Glee
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(49123, {	-- The Horseman's Signet
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(49124, {	-- Wicked Witch's Band
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 				--	Cataclysm Rings
 					i(71327, {	-- Band of Ghoulish Glee
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(71328, {	-- The Horseman's Signet
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(71330, {	-- Seal of the Petrified Pumpkin
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(71329, {	-- Wicked Witch's Ring
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 				--	Mists of Pandaria Rings
 					i(88167, {	-- Band of the Petrified Pumpkin
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(88168, {	-- Seal of Ghoulish Glee
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(88169, {	-- The Horseman's Ring
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(88166, {	-- Wicked Witch's Signet
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 				--	Warlords of Draenor Rings
 					i(117363, {	-- Band of the Petrified Pumpkin
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(117364, {	-- Seal of Ghoulish Glee
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(117365, {	-- The Horseman's Ring
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(117362, {	-- Wicked Witch's Signet
-						["u"] = 2,	-- Removed BoP Filter
+						["u"] = REMOVED_FROM_GAME,
 					}),
 				--	Legion Rings Note!! Scaled from here on out
 					i(143901, {	-- Band of the Petrified Pumpkin

@@ -19,7 +19,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						un(2, i(6068)),	-- Recipe: Shadow Oil
+						un(REMOVED_FROM_GAME, i(6068)),	-- Recipe: Shadow Oil
 					},
 				}),
 				n(41135, {	-- "Plucky" Johnson

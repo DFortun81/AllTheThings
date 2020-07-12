@@ -171,9 +171,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 907,	-- Enraged Thunder Lizards
 					["g"] = {
-						un(2, i(5302)),	-- Cobalt Buckler
-						un(2, i(5299)),	-- Gloves of the Moon
-						un(2, i(5306)),	-- Wind Rider Staff
+						un(REMOVED_FROM_GAME, i(5302)),	-- Cobalt Buckler
+						un(REMOVED_FROM_GAME, i(5299)),	-- Gloves of the Moon
+						un(REMOVED_FROM_GAME, i(5306)),	-- Wind Rider Staff
 					},
 				}),
 				q(24577, {	-- Desolation Hold Inspection
@@ -538,7 +538,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 846,	-- Revenge of Gann
 					["g"] = {
-						un(2, i(5313)),	-- Totemic Clan Ring
+						un(REMOVED_FROM_GAME, i(5313)),	-- Totemic Clan Ring
 					},
 				}),
 				q(24518, {	-- The Low Road
@@ -807,8 +807,8 @@ _.Zones =
 					["provider"] = { "n", 3433 },	-- Tatternack Steelforge
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(5322)),	-- Demolition Hammer
-						un(2, i(5323)),	-- Everglow Lantern
+						un(REMOVED_FROM_GAME, i(5322)),	-- Demolition Hammer
+						un(REMOVED_FROM_GAME, i(5323)),	-- Everglow Lantern
 					},
 				}),
 				q(24539, {	-- When Plants Attack

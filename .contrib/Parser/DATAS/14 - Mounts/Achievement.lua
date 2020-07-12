@@ -79,7 +79,7 @@ _.Mounts =
 		i(44842),	-- Red Dragonhawk
 		i(44160),	-- Red Proto-Drake
 		i(45802),	-- Rusted Proto-Drake
-		un(2, i(156880)),	-- Sinister Gladiator's Proto-Drake
+		un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake
 		i(169194),	-- Snapback Scuttler
 		i(128706),	-- Soaring Skyterror
 		i(104208),	-- Spawn of Galakras

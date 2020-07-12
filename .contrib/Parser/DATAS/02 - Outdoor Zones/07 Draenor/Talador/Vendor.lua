@@ -87,7 +87,7 @@ _.Zones =
 					["coord"] = { 85.0, 31.0, 535 },
 					["g"] = {
 						currency(1191, {	-- Valor
-							un(2, i(127785)),	-- Crystallized Fel
+							un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
 						}),
 						un(4, i(118290)),	-- Solium Band of Might
 						un(4, i(118291)),	-- Solium Band of Wisdom

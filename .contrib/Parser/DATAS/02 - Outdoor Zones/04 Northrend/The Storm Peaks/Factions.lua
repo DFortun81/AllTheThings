@@ -16,7 +16,7 @@ _.Zones =
 								i(41720),	-- Design: Smooth Autumn's Glow
 								i(41817, {	-- Design: Smooth Autumn's Glow
 									["spellID"] = 0,	-- This is now available via 41720, need to delink the old plans from the recipe
-									["u"] = 2,
+									["u"] = REMOVED_FROM_GAME,
 								}),
 								i(44189),	-- Giant Ring Belt
 								i(44194),	-- Giant-Friend Kilt

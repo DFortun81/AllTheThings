@@ -75,7 +75,7 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(8663)),	-- Mithril Insignia
+								un(REMOVED_FROM_GAME, i(8663)),	-- Mithril Insignia
 							},
 						}),
 						q(2754, {	-- Horns of Frenzy
@@ -107,7 +107,7 @@ _.Zones =
 							["lvl"] = 40,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(7994)),	-- Plans: Orcish War Leggings
+								un(REMOVED_FROM_GAME, i(7994)),	-- Plans: Orcish War Leggings
 							},
 						}),
 						q(2752, {	-- On Iron Pauldrons

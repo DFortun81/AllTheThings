@@ -62,10 +62,10 @@ _.Zones =
 					["provider"] = { "n", 17123 },	-- Earthcaller Ryga
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(25492)),	-- Earthcaller's Mace
-						un(2, i(25496)),	-- Mag'har Bow
-						un(2, i(25494)),	-- Totemic Staff
-						un(2, i(25495)),	-- Wolfrider's Dagger
+						un(REMOVED_FROM_GAME, i(25492)),	-- Earthcaller's Mace
+						un(REMOVED_FROM_GAME, i(25496)),	-- Mag'har Bow
+						un(REMOVED_FROM_GAME, i(25494)),	-- Totemic Staff
+						un(REMOVED_FROM_GAME, i(25495)),	-- Wolfrider's Dagger
 					},
 				}),
 				q(29689, {	-- Advancing the Campaign (A)

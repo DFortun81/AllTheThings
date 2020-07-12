@@ -26,16 +26,16 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 5768 },	-- Ebru
 					["g"] = {
 						un(8, i(6476)),	-- Pattern: Deviate Scale Belt
-						un(2, i(8071)),	-- Sizzle Stick
-						un(2, i(6481)),	-- Dagmire Gauntlets
+						un(REMOVED_FROM_GAME, i(8071)),	-- Sizzle Stick
+						un(REMOVED_FROM_GAME, i(6481)),	-- Dagmire Gauntlets
 					},
 				}),
 				q(1486, {	-- Deviate Hides
 					["u"] = 40,
 					["provider"] = { "n", 5767 },	-- Nalpak
 					["g"] = {
-						un(2, i(6480)),	-- Slick Deviate Leggings
-						un(2, i(918)),	-- Deviate Hide Pack
+						un(REMOVED_FROM_GAME, i(6480)),	-- Slick Deviate Leggings
+						un(REMOVED_FROM_GAME, i(918)),	-- Deviate Hide Pack
 					},
 				}),
 				q(26872, {	-- Deviate Hides
@@ -61,7 +61,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(VENDORS, {
 				n(5783, {	-- Kalldan Felmoon <Specialist Leatherworking Supplies>
-					["u"] = 43,	-- Removed from game
+					["u"] = 43,
 					["g"] = {
 						un(7, i(6474)),	-- Pattern: Deviate Scale Cloak
 						un(7, i(6475)),	-- Pattern: Deviate Scale Gloves

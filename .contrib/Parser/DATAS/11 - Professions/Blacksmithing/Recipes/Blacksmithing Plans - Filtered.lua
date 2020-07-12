@@ -133,7 +133,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Enchanted Thorium Helm
 							["recipeID"] = 16742--[[Enchanted Thorium Helm]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Helm of the Great Chief
 							["recipeID"] = 16728--[[Helm of the Great Chief]]
@@ -158,7 +158,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Ornate Mithril Helm
 							["recipeID"] = 9980--[[Ornate Mithril Helm]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Heavy Mithril Helm
 							["recipeID"] = 9970--[[Heavy Mithril Helm]]
@@ -197,11 +197,11 @@ profession(BLACKSMITHING, {
 					["g"] = {
 						{	-- Bloodsoul Shoulders
 							["recipeID"] = 24137--[[Bloodsoul Shoulders]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Darksoul Shoulders
 							["recipeID"] = 24141--[[Darksoul Shoulders]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Fiery Chain Shoulders
 							["recipeID"] = 20873--[[Fiery Chain Shoulders]]
@@ -262,7 +262,7 @@ profession(BLACKSMITHING, {
 					["g"] = {
 						{	-- Bloodsoul Breastplate
 							["recipeID"] = 24136--[[Bloodsoul Breastplate]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Dark Iron Plate
 							["recipeID"] = 15296--[[Dark Iron Plate]]
@@ -272,15 +272,15 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Darksoul Breastplate
 							["recipeID"] = 24139--[[Darksoul Breastplate]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Enchanted Thorium Breastplate
 							["recipeID"] = 16745--[[Enchanted Thorium Breastplate]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Icebane Breastplate
 							["recipeID"] = 28242--[[Icebane Breastplate]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Imperial Plate Chest
 							["recipeID"] = 16663--[[Imperial Plate Chest]]
@@ -296,14 +296,14 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Runic Breastplate
 							["recipeID"] = 16731--[[Runic Breastplate]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Thick Obsidian Breastplate
 							["recipeID"] = 27587--[[Thick Obsidian Breastplate]]
 						},
 						{	-- Demon Forged Breastplate
 							["recipeID"] = 16667--[[Demon Forged Breastplate]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Dark Iron Mail
 							["recipeID"] = 15293--[[Dark Iron Mail]]
@@ -319,11 +319,11 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Truesilver Breastplate
 							["recipeID"] = 9974--[[Truesilver Breastplate]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Ornate Mithril Breastplate
 							["recipeID"] = 9972--[[Ornate Mithril Breastplate]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Heavy Mithril Breastplate
 							["recipeID"] = 9959--[[Heavy Mithril Breastplate]]
@@ -390,7 +390,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Bloodsoul Gauntlets
 							["recipeID"] = 24138--[[Bloodsoul Gauntlets]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Dark Iron Gauntlets
 							["recipeID"] = 23637--[[Dark Iron Gauntlets]]
@@ -403,7 +403,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Icebane Gauntlets
 							["recipeID"] = 28243--[[Icebane Gauntlets]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Ironvine Gloves
 							["recipeID"] = 28462--[[Ironvine Gloves]]
@@ -416,18 +416,18 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Fiery Plate Gauntlets
 							["recipeID"] = 16655--[[Fiery Plate Gauntlets]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Radiant Gloves
 							["recipeID"] = 16654--[[Radiant Gloves]]
 						},
 						{	-- Truesilver Gauntlets
 							["recipeID"] = 9954--[[Truesilver Gauntlets]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Ornate Mithril Gloves
 							["recipeID"] = 9950--[[Ornate Mithril Gloves]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Mithril Scale Gloves
 							["recipeID"] = 9942--[[Mithril Scale Gloves]],
@@ -481,7 +481,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Icebane Bracers
 							["recipeID"] = 28244--[[Icebane Bracers]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Imperial Plate Bracers
 							["recipeID"] = 16649--[[Imperial Plate Bracers]]
@@ -579,11 +579,11 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Darksoul Leggings
 							["recipeID"] = 24140--[[Darksoul Leggings]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Enchanted Thorium Leggings
 							["recipeID"] = 16744--[[Enchanted Thorium Leggings]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Imperial Plate Leggings
 							["recipeID"] = 16730--[[Imperial Plate Leggings]]
@@ -602,11 +602,11 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Orcish War Leggings
 							["recipeID"] = 9957--[[Orcish War Leggings]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Ornate Mithril Pants
 							["recipeID"] = 9945--[[Ornate Mithril Pants]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Heavy Mithril Pants
 							["recipeID"] = 9933--[[Heavy Mithril Pants]]
@@ -669,7 +669,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Ornate Mithril Boots
 							["recipeID"] = 9979--[[Ornate Mithril Boots]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Heavy Mithril Boots
 							["recipeID"] = 9968--[[Heavy Mithril Boots]]
@@ -777,7 +777,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Masterwork Stormhammer
 							["recipeID"] = 16993--[[Masterwork Stormhammer]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Nightfall
 							["recipeID"] = 23653--[[Nightfall]]
@@ -813,7 +813,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Enchanted Battlehammer
 							["recipeID"] = 16973--[[Enchanted Battlehammer]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Huge Thorium Battleaxe
 							["recipeID"] = 16971--[[Huge Thorium Battleaxe]]
@@ -843,7 +843,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Truesilver Champion
 							["recipeID"] = 10015--[[Truesilver Champion]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Ebon Shiv
 							["recipeID"] = 10013--[[Ebon Shiv]]
@@ -862,7 +862,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- The Shatterer
 							["recipeID"] = 10003--[[The Shatterer]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Big Black Mace
 							["recipeID"] = 10001--[[Big Black Mace]]

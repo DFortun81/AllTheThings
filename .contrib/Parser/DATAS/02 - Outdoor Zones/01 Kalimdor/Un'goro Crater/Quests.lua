@@ -15,9 +15,9 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 9999 },	-- Ringo
 					["g"] = {
-						un(2, i(11910)),	-- Bejeweled Legguards
-						un(2, i(11913)),	-- Clayridge Helm
-						un(2, i(11911)),	-- Treetop Leggings
+						un(REMOVED_FROM_GAME, i(11910)),	-- Bejeweled Legguards
+						un(REMOVED_FROM_GAME, i(11913)),	-- Clayridge Helm
+						un(REMOVED_FROM_GAME, i(11911)),	-- Treetop Leggings
 					},
 				}),
 				q(24735, {	-- A Little Help From My Friends
@@ -84,8 +84,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "o", 174682 },	-- Beware of Pterrordax
 					["g"] = {
-						un(2, i(11919)),	-- Cragplate Greaves
-						un(2, i(11918)),	-- Grotslab Gloves
+						un(REMOVED_FROM_GAME, i(11919)),	-- Cragplate Greaves
+						un(REMOVED_FROM_GAME, i(11918)),	-- Grotslab Gloves
 					},
 				}),
 				q(24690, {	-- Blazerunner
@@ -216,8 +216,8 @@ _.Zones =
 					["provider"] = { "n", 9274 },	-- Dadanga
 					["repeatable"] = true,
 					["g"] = {
-						un(2, i(15699, {	-- Small Brown-wrapped Package
-							un(2, i(13481)),	-- Recipe: Elixir of Brute Force
+						un(REMOVED_FROM_GAME, i(15699, {	-- Small Brown-wrapped Package
+							un(REMOVED_FROM_GAME, i(13481)),	-- Recipe: Elixir of Brute Force
 						})),
 					},
 				}),
@@ -319,9 +319,9 @@ _.Zones =
 					["provider"] = { "n", 8737 },	-- Linken
 					["sourceQuest"] = 3961,	-- Linken's Adventure -- todo: Add this quest line. Maybe blizzard will bring it back!
 					["g"] = {
-						un(2, i(11905)),	-- Linken's Boomerang
-						un(2, i(11902)),	-- Linken's Sword of Mastery
-						un(2, i(11904)),	-- Spirit of Aquementas
+						un(REMOVED_FROM_GAME, i(11905)),	-- Linken's Boomerang
+						un(REMOVED_FROM_GAME, i(11902)),	-- Linken's Sword of Mastery
+						un(REMOVED_FROM_GAME, i(11904)),	-- Spirit of Aquementas
 					},
 				}),
 				q(4145, {	-- Larion and Muigin
@@ -410,8 +410,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 9272 },	-- Spark Nilminer
 					["g"] = {
-						un(2, i(11908)),	-- Archaeologist's Quarry Boots
-						un(2, i(11909)),	-- Excavator's Utility Belt
+						un(REMOVED_FROM_GAME, i(11908)),	-- Archaeologist's Quarry Boots
+						un(REMOVED_FROM_GAME, i(11909)),	-- Excavator's Utility Belt
 					},
 				}),
 				q(24730, {	-- Roll the Bones
@@ -451,9 +451,9 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 9998 },	-- Shizzle
 					["g"] = {
-						un(2, i(11915)),	-- Shizzle's Drizzle Blocker
-						un(2, i(11916)),	-- Shizzle's Muzzle
-						un(2, i(11917)),	-- Shizzle's Nozzle Wiper
+						un(REMOVED_FROM_GAME, i(11915)),	-- Shizzle's Drizzle Blocker
+						un(REMOVED_FROM_GAME, i(11916)),	-- Shizzle's Muzzle
+						un(REMOVED_FROM_GAME, i(11917)),	-- Shizzle's Nozzle Wiper
 					},
 				}),
 				q(24736, {	-- Shizzle's Flyer
@@ -492,8 +492,8 @@ _.Zones =
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["sourceQuest"] = 4291,	-- The Scent of Lar'korwi
 					["g"] = {
-						un(2, i(11882)),	-- Outrider Leggings
-						un(2, i(11876)),	-- Plainstalker Tunic
+						un(REMOVED_FROM_GAME, i(11882)),	-- Outrider Leggings
+						un(REMOVED_FROM_GAME, i(11876)),	-- Plainstalker Tunic
 					},
 				}),
 				q(24733, {	-- The Bait for Lar'korwi
@@ -570,8 +570,8 @@ _.Zones =
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["sourceQuest"] = 4289,	-- The Apes of Un'Goro
 					["g"] = {
-						un(2, i(11907)),	-- Beastslayer
-						un(2, i(11906)),	-- Beastsmasher
+						un(REMOVED_FROM_GAME, i(11907)),	-- Beastslayer
+						un(REMOVED_FROM_GAME, i(11906)),	-- Beastsmasher
 					},
 				}),
 				q(24718, {	-- The Mighty U'cha

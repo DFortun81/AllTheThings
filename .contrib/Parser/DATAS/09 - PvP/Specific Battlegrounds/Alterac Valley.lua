@@ -255,8 +255,8 @@ _.PVP =
 									i(21563, {	-- Don Rodrigo's Band
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
-									un(2, i(19320)),	-- Gnoll Skin Bandolier
-									un(2, i(19319)),	-- Harpy Hide Quiver
+									un(REMOVED_FROM_GAME, i(19320)),	-- Gnoll Skin Bandolier
+									un(REMOVED_FROM_GAME, i(19319)),	-- Harpy Hide Quiver
 								},
 							}),
 							n(154473, {	-- Voggah Deathgrip
@@ -271,42 +271,42 @@ _.PVP =
 						}),
 						n(13419, {	-- Ivus the Forest Lord
 							i(19110, {	-- Cold Forged Blade
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
 							}),
 							i(19105, {	-- Frost Runed Headdress
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
 							}),
 							i(19111, {	-- Winteraxe Epaulets
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
 							}),
 							i(19112, {	-- Frozen Steel Vambraces
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
 							}),
 							i(19113, {	-- Yeti Hide Bracers
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
 							}),
 							i(19109, {	-- Deep Rooted Ring
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
@@ -586,42 +586,42 @@ _.PVP =
 						}),
 						n(13256, {	-- Lokholar the Ice Lord
 							i(19110, {	-- Cold Forged Blade
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
 							}),
 							i(19105, {	-- Frost Runed Headdress
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
 							}),
 							i(19111, {	-- Winteraxe Epaulets
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
 							}),
 							i(19112, {	-- Frozen Steel Vambraces
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
 							}),
 							i(19113, {	-- Yeti Hide Bracers
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
 							}),
 							i(19109, {	-- Deep Rooted Ring
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",

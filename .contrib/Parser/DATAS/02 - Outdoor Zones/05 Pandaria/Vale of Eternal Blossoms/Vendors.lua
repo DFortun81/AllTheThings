@@ -284,7 +284,7 @@ _.Zones =
 				n(66973, {	-- Kai Featherfall <Phoenix Egg Trader>
 					["coord"] = { 82.2, 34.0, 390 },
 					["g"] = {
-						un(2, i(90045, {	-- Ancestral Phoenix Egg
+						un(REMOVED_FROM_GAME, i(90045, {	-- Ancestral Phoenix Egg
 							i(89154),	-- Reins of the Crimson Pandaren Phoenix
 							i(90710),	-- Reins of the Ashen Pandaren Phoenix
 							i(90711),	-- Reins of the Emerald Pandaren Phoenix

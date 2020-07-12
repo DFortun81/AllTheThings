@@ -38,11 +38,11 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{	-- Wild Leather Helmet
 							["recipeID"] = 10546,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Wolfshead Helm
 							["recipeID"] = 10621,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}
 				},
@@ -52,7 +52,7 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{	-- Blood Tiger Shoulders
 							["recipeID"] = 24125,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Blue Dragonscale Shoulders
 							["recipeID"] = 19089,
@@ -68,7 +68,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Wild Leather Shoulders
 							["recipeID"] = 10529,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}
 				},
@@ -78,7 +78,7 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{	-- Blood Tiger Breastplate
 							["recipeID"] = 24124,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Blue Dragonscale Breastplate
 							["recipeID"] = 19077,
@@ -94,7 +94,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Icy Scale Breastplate
 							["recipeID"] = 28222,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Ironfeather Breastplate
 							["recipeID"] = 19086,
@@ -110,11 +110,11 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Polar Tunic
 							["recipeID"] = 28219,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Primal Batskin Jerkin
 							["recipeID"] = 24121,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Raptor Hide Harness
 							["recipeID"] = 4096,
@@ -123,7 +123,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Red Dragonscale Breastplate
 							["recipeID"] = 19054,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Stormshroud Armor
 							["recipeID"] = 19079,
@@ -131,7 +131,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Wild Leather Vest
 							["recipeID"] = 10544,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}
 				},
@@ -141,19 +141,19 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{	-- Icy Scale Bracers
 							["recipeID"] = 28224,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Polar Bracers
 							["recipeID"] = 28221,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Primal Batskin Bracers
 							["recipeID"] = 24123,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Swift Flight Bracers
 							["recipeID"] = 22923,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}
 				},
@@ -171,7 +171,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Dragonscale Gauntlets
 							["recipeID"] = 10619,
-							["u"] = 2,	-- specialization removed from game
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Frostsaber Gloves
 							["recipeID"] = 19087,
@@ -187,15 +187,15 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Icy Scale Gauntlets
 							["recipeID"] = 28223,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Polar Gloves
 							["recipeID"] = 28220,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Primal Batskin Gloves
 							["recipeID"] = 24122,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Stormshroud Gloves
 							["recipeID"] = 26279,
@@ -213,7 +213,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Girdle of Insight
 							["recipeID"] = 22921,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Raptor Hide Belt
 							["recipeID"] = 4097,
@@ -245,7 +245,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Wild Leather Leggings
 							["recipeID"] = 10572,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}
 				},
@@ -255,11 +255,11 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{	-- Mongoose Boots
 							["recipeID"] = 22922,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Wild Leather Boots
 							["recipeID"] = 10566,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Winter Boots
 							["recipeID"] = 44953,
@@ -293,7 +293,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Wild Leather Cloak
 							["recipeID"] = 10574,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}
 				},
@@ -303,7 +303,7 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{	-- Gordok Ogre Suit
 							["recipeID"] = 22815,
-							["u"] = 2,	-- can't be learned anymore, was replaced with a quest (27119)
+							["u"] = REMOVED_FROM_GAME,	-- can't be learned anymore, was replaced with a quest (27119)
 						},
 					}
 				}

@@ -63,7 +63,7 @@ _.Zones =
 					},
 					["g"] = {
 						i(5608),	-- Living Cowl
-						un(2, i(11205)),	-- Formula: Enchant Gloves - Advanced Herbalism
+						un(REMOVED_FROM_GAME, i(11205)),	-- Formula: Enchant Gloves - Advanced Herbalism
 					},
 				}),
 				n(50903, {	-- Orlix the Swamplord

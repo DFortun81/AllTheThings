@@ -13,24 +13,24 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(16886)),	-- Outlaw Sabre
-						un(2, i(16887)),	-- Witch's Finger
+						un(REMOVED_FROM_GAME, i(16886)),	-- Outlaw Sabre
+						un(REMOVED_FROM_GAME, i(16887)),	-- Witch's Finger
 					},
 				}),
 				q(1200, {	-- Blackfathom Villainy
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(7002)),		-- Arctic Buckler
-						un(2, i(7001)),		-- Gravestone Scepter
+						un(REMOVED_FROM_GAME, i(7002)),		-- Arctic Buckler
+						un(REMOVED_FROM_GAME, i(7001)),		-- Gravestone Scepter
 					},
 				}),
 				q(6561, {	-- Blackfathom Villainy
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(7002)),		-- Arctic Buckler
-						un(2, i(7001)),		-- Gravestone Scepter
+						un(REMOVED_FROM_GAME, i(7002)),		-- Arctic Buckler
+						un(REMOVED_FROM_GAME, i(7001)),		-- Gravestone Scepter
 					},
 				}),
 				o(177964, {	-- Fathom Stone
@@ -51,22 +51,22 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(56660)),	-- Dusk-Stained Cloak
-						un(2, i(56658)),	-- Eventide Bow
-						un(2, i(56659)),	-- Gloaming Band
-						un(2, i(6743)),		-- Sustaining Ring
+						un(REMOVED_FROM_GAME, i(56660)),	-- Dusk-Stained Cloak
+						un(REMOVED_FROM_GAME, i(56658)),	-- Eventide Bow
+						un(REMOVED_FROM_GAME, i(56659)),	-- Gloaming Band
+						un(REMOVED_FROM_GAME, i(6743)),		-- Sustaining Ring
 					},
 				}),
 				q(1275, {	-- Researching the Corruption
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(56682)),	-- Band of the Skull Crusher
-						un(2, i(7003)),		-- Beetle Clasps
-						un(2, i(56679)),	-- Dissector
-						un(2, i(7004)),		-- Prelacy Cape
-						un(2, i(56681)),	-- Searching Wand
-						un(2, i(56680)),	-- Shadestar Mace
+						un(REMOVED_FROM_GAME, i(56682)),	-- Band of the Skull Crusher
+						un(REMOVED_FROM_GAME, i(7003)),		-- Beetle Clasps
+						un(REMOVED_FROM_GAME, i(56679)),	-- Dissector
+						un(REMOVED_FROM_GAME, i(7004)),		-- Prelacy Cape
+						un(REMOVED_FROM_GAME, i(56681)),	-- Searching Wand
+						un(REMOVED_FROM_GAME, i(56680)),	-- Shadestar Mace
 					},
 				}),
 				q(34672, {	-- The Rise of Aku'mai
@@ -95,11 +95,11 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(56699)),	-- Aluwyn's Legguards
-						un(2, i(56697)),	-- Blackfathom Mace
-						un(2, i(56698)),	-- Gift of the Enigmatic Tree
+						un(REMOVED_FROM_GAME, i(56699)),	-- Aluwyn's Legguards
+						un(REMOVED_FROM_GAME, i(56697)),	-- Blackfathom Mace
+						un(REMOVED_FROM_GAME, i(56698)),	-- Gift of the Enigmatic Tree
 						un(1, i(7000)),		-- Heartwood Girdle
-						un(2, i(6998)),		-- Nimbus Boots
+						un(REMOVED_FROM_GAME, i(6998)),		-- Nimbus Boots
 					},
 				}),
 			}),

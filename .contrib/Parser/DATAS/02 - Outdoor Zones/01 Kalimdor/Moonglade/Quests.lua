@@ -21,7 +21,7 @@ _.Zones =
 					["classes"] = { DRUID },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(16608)),	-- Aquarius Belt
+						un(REMOVED_FROM_GAME, i(16608)),	-- Aquarius Belt
 					},
 				}),
 				q(25316, {	-- As Hyjal Burns
@@ -40,7 +40,7 @@ _.Zones =
 					["lvl"] = 100,
 					["sourceQuest"] = 40904,	-- Shadow of the Defiler
 					["g"] = {
-						un(2, i(128422)),	-- Reins of the Grove Warden
+						un(REMOVED_FROM_GAME, i(128422)),	-- Reins of the Grove Warden
 					},
 				}),
 				q(45498, {	-- Let Sleeping Dogs Lie
@@ -76,8 +76,8 @@ _.Zones =
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 56,
 					["g"] = {
-						un(2, i(18535)),	-- Milli's Shield
-						un(2, i(18536)),	-- Milli's Lexicon
+						un(REMOVED_FROM_GAME, i(18535)),	-- Milli's Shield
+						un(REMOVED_FROM_GAME, i(18536)),	-- Milli's Lexicon
 					},
 				}),
 				q(8446, {	-- Shrouded in Nightmare
@@ -151,8 +151,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 11939 },	-- Umber
 					["g"] = {
-						un(2, i(18402)),	-- Glowing Crystal Ring
-						un(2, i(18400)),	-- Ring of Living Stone
+						un(REMOVED_FROM_GAME, i(18402)),	-- Glowing Crystal Ring
+						un(REMOVED_FROM_GAME, i(18400)),	-- Ring of Living Stone
 					},
 				}),
 				q(1185,  {	-- Under the Chitin Was...
@@ -172,7 +172,7 @@ _.Zones =
 					["lvl"] = 60,
 					["sourceQuest"] = 8446,	-- Shrouded in Nightmare
 					["g"] = {
-						un(2, i(20600)),	-- Malfurion's Signet Ring
+						un(REMOVED_FROM_GAME, i(20600)),	-- Malfurion's Signet Ring
 					},
 				}),
 				q(1124,  {	-- Wasteland

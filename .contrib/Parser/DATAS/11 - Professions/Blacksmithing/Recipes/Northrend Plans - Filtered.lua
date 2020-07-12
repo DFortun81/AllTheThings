@@ -214,14 +214,14 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Chestplate of Conquest
 							["recipeID"] = 55186--[[Chestplate of Conquest]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Tempered Saronite Gauntlets
 							["recipeID"] = 55015--[[Tempered Saronite Gauntlets]]
 						},
 						{	-- Legplates of Conquest
 							["recipeID"] = 55187--[[Legplates of Conquest]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Tempered Saronite Bracers
 							["recipeID"] = 55017--[[Tempered Saronite Bracers]]
@@ -377,11 +377,11 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Corroded Saronite Edge
 							["recipeID"] = 55183--[[Corroded Saronite Edge]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Corroded Saronite Woundbringer
 							["recipeID"] = 55184--[[Corroded Saronite Woundbringer]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Saronite Mindcrusher
 							["recipeID"] = 55185--[[Saronite Mindcrusher]]

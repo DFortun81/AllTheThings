@@ -25,7 +25,7 @@ _.Zones =
 						i(35767),	-- Design: Reckless Pyrestone
 						i(35268, {	-- Design: Reckless Pyrestone
 							["spellID"] = 0,	-- This is now available via 35767, need to delink the old plans from the recipe
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(35708),	-- Design: Regal Talasite
 						i(35766),	-- Design: Steady Seaspray Emerald
@@ -621,17 +621,17 @@ _.Zones =
 						i(35248),	-- Design: Brilliant Crimson Spinel
 						i(35250, {	-- Design: Brilliant Crimson Spinel
 							["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(35255, {	-- Design: Brilliant Crimson Spinel
 							["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(35271),	-- Design: Deadly Pyrestone
 						i(35246),	-- Design: Delicate Crimson Spinel
 						i(35245, {	-- Design: Delicate Crimson Spinel
 							["spellID"] = 0,	-- This is now available via 35246, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(35247),	-- Design: Flashing Crimson Spinel
 						i(35769),	-- Design: Forceful Seaspray Emerald
@@ -639,7 +639,7 @@ _.Zones =
 						i(35266),	-- Design: Glinting Shadowsong Amethyst
 						i(35240, {	-- Design: Glinting Shadowsong Amethyst
 							["spellID"] = 0,	-- This is now available via 35266, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(35267),	-- Design: Inscribed Pyrestone
 						i(35253),	-- Design: Jagged Seaspray Emerald
@@ -648,11 +648,11 @@ _.Zones =
 						i(35251),	-- Design: Purified Shadowsong Amethyst
 						i(35241, {	-- Design: Purified Shadowsong Amethyst
 							["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(37504, {	-- Design: Purified Shadowsong Amethyst
 							["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(35322),	-- Design: Quick Dawnstone
 						i(35768),	-- Design: Quick Lionseye
@@ -661,37 +661,37 @@ _.Zones =
 						i(35767),	-- Design: Reckless Pyrestone
 						i(35268, {	-- Design: Reckless Pyrestone
 							["spellID"] = 0,	-- This is now available via 35767, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(35252),	-- Design: Regal Seaspray Emerald
 						i(35259),	-- Design: Rigid Empyrean Sapphire
 						i(35257, {	-- Design: Rigid Empyrean Sapphire
 							["spellID"] = 0,	-- This is now available via 35259, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(35242),	-- Design: Shifting Shadowsong Amethyst
 						i(35238, {	-- Design: Shifting Shadowsong Amethyst
 							["spellID"] = 0,	-- This is now available via 35242, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(35260),	-- Design: Smooth Lionseye
 						i(35256, {	-- Design: Smooth Lionseye
 							["spellID"] = 0,	-- This is now available via 35260, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(35263),	-- Design: Solid Empyrean Sapphire
 						i(35243),	-- Design: Sovereign Shadowsong Amethyst
 						i(35264),	-- Design: Sparkling Empyrean Sapphire
 						i(35262, {	-- Design: Sparkling Empyrean Sapphire
 							["spellID"] = 0,	-- This is now available via 35262, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(35766),	-- Design: Steady Seaspray Emerald
 						i(35265),	-- Design: Stormy Empyrean Sapphire
 						i(35249),	-- Design: Subtle Lionseye
 						i(35261, {	-- Design: Subtle Lionseye
 							["spellID"] = 0,	-- This is now available via 35261, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(35239),	-- Design: Timeless Shadowsong Amethyst
 						i(35270),	-- Design: Veiled Shadowsong Amethyst

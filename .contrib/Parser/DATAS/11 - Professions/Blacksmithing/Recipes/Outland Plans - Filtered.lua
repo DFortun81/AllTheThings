@@ -56,11 +56,11 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Bulwark of the Ancient Kings
 							["recipeID"] = 36257--[[Bulwark of the Ancient Kings]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Embrace of the Twisting Nether
 							["recipeID"] = 36256--[[Embrace of the Twisting Nether]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Dawnsteel Bracers
 							["recipeID"] = 41134--[[Dawnsteel Bracers]]
@@ -82,7 +82,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Bulwark of Kings
 							["recipeID"] = 34534--[[Bulwark of Kings]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Earthpeace Breastplate
 							["recipeID"] = 29649--[[Earthpeace Breastplate]]
@@ -137,7 +137,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Twisting Nether Plate Shirt
 							["recipeID"] = 34530--[[Twisting Nether Chain Shirt]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Wildguard Breastplate
 							["recipeID"] = 38473--[[Wildguard Breastplate]]
@@ -213,11 +213,11 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Breastplate of Kings
 							["recipeID"] = 34533--[[Breastplate of Kings]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Nether Chain Shirt
 							["recipeID"] = 34529--[[Nether Chain Shirt]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Adamantite Breastplate
 							["recipeID"] = 29606--[[Adamantite Breastplate]]
@@ -230,11 +230,11 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Heavy Earthforged Breastplate
 							["recipeID"] = 36129--[[Heavy Earthforged Breastplate]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Stormforged Hauberk
 							["recipeID"] = 36130--[[Stormforged Hauberk]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Fel Iron Breastplate
 							["recipeID"] = 29550--[[Fel Iron Breastplate]]
@@ -265,11 +265,11 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Earthforged Leggings
 							["recipeID"] = 36122--[[Earthforged Leggings]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Windforged Leggings
 							["recipeID"] = 36124--[[Windforged Leggings]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}
 					}
 				},
@@ -278,51 +278,51 @@ profession(BLACKSMITHING, {
 					["g"] = {
 						{	-- Black Planar Edge
 							["recipeID"] = 34542--[[Black Planar Edge]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Blazefury
 							["recipeID"] = 36258--[[Blazefury]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Blazeguard
 							["recipeID"] = 34537--[[Blazeguard]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Bloodmoon
 							["recipeID"] = 36261--[[Bloodmoon]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Deep Thunder
 							["recipeID"] = 34548--[[Deep Thunder]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Dragonmaw
 							["recipeID"] = 34546--[[Dragonmaw]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Dragonstrike
 							["recipeID"] = 36262--[[Dragonstrike]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Lionheart Champion
 							["recipeID"] = 34540--[[Lionheart Champion]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Lionheart Executioner
 							["recipeID"] = 36259--[[Lionheart Executioner]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Mooncleaver
 							["recipeID"] = 34544--[[Mooncleaver]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Stormherald
 							["recipeID"] = 36263--[[Stormherald]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Wicked Edge of the Planes
 							["recipeID"] = 36260--[[Wicked Edge of the Planes]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Dirge
 							["recipeID"] = 29699--[[Dirge]]
@@ -356,27 +356,27 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Drakefist Hammer
 							["recipeID"] = 34545--[[Drakefist Hammer]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Fireguard
 							["recipeID"] = 34535--[[Fireguard]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Lionheart Blade
 							["recipeID"] = 34538--[[Lionheart Blade]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Lunar Crescent
 							["recipeID"] = 34543--[[Lunar Crescent]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- The Planar Edge
 							["recipeID"] = 34541--[[The Planar Edge]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Thunder
 							["recipeID"] = 34547--[[Thunder]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Adamantite Rapier
 							["recipeID"] = 29571--[[Adamantite Rapier]]
@@ -419,11 +419,11 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Light Emberforged Hammer
 							["recipeID"] = 36128--[[Light Emberforged Hammer]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Light Skyforged Axe
 							["recipeID"] = 36126--[[Light Skyforged Axe]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Felsteel Whisper Knives	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
 							["recipeID"] = 34983,	-- Felsteel Whisper Knives

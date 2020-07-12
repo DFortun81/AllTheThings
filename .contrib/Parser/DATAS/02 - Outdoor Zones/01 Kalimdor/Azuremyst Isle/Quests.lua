@@ -164,7 +164,7 @@ _.Zones =
 					["races"] = { DRAENEI },
 					["classes"] = { PRIEST },
 					["g"] = {
-						un(2, i(23931)),	-- Azure Watch Robes
+						un(REMOVED_FROM_GAME, i(23931)),	-- Azure Watch Robes
 					},
 				}),
 				q(9530,  {	-- I've Got a Plant

@@ -65,8 +65,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4126)),	-- Guerrilla Cleaver
-						un(2, i(4140)),	-- Palm Frond Mantle
+						un(REMOVED_FROM_GAME, i(4126)),	-- Guerrilla Cleaver
+						un(REMOVED_FROM_GAME, i(4140)),	-- Palm Frond Mantle
 					},
 				}),
 				q(26732, {	-- Bad Medicine
@@ -119,9 +119,9 @@ _.Zones =
 						i(61124),	-- Bangalash's Claw
 						i(131202),	-- Monnion of the White Tiger
 						i(17687),	-- Master Hunter's Rifle
-						un(2, i(17686)),	-- Master Hunter's Bow
-						un(2, i(4110)),	-- Master Hunter's Bow
-						un(2, i(4111)),	-- Master Hunter's Rifle
+						un(REMOVED_FROM_GAME, i(17686)),	-- Master Hunter's Bow
+						un(REMOVED_FROM_GAME, i(4110)),	-- Master Hunter's Bow
+						un(REMOVED_FROM_GAME, i(4111)),	-- Master Hunter's Rifle
 					},
 				}),
 				q(26748, {	-- Bloodlord Mandokir (A)
@@ -152,7 +152,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(4135)),	-- Bloodbone Band
+						un(REMOVED_FROM_GAME, i(4135)),	-- Bloodbone Band
 					},
 				}),
 				q(29121, {	-- Bury Me With Me Boots... (A)
@@ -177,7 +177,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4127)),	-- Shrapnel Blaster
+						un(REMOVED_FROM_GAME, i(4127)),	-- Shrapnel Blaster
 					},
 				}),
 				q(26733, {	-- Control Sample
@@ -219,9 +219,9 @@ _.Zones =
 				q(3625,  {	-- Enchanted Azsharite Fel Weaponry
 					["u"] = 40,
 					["g"] = {
-						un(2, i(10697)),	-- Enchanted Azsharite Felbane Dagger
-						un(2, i(10698)),	-- Enchanted Azsharite Felbane Staff
-						un(2, i(10696)),	-- Enchanted Azsharite Felbane Sword
+						un(REMOVED_FROM_GAME, i(10697)),	-- Enchanted Azsharite Felbane Dagger
+						un(REMOVED_FROM_GAME, i(10698)),	-- Enchanted Azsharite Felbane Staff
+						un(REMOVED_FROM_GAME, i(10696)),	-- Enchanted Azsharite Felbane Sword
 					},
 				}),
 				q(2765,  {	-- Expert Blacksmith!
@@ -235,8 +235,8 @@ _.Zones =
 						2763,	-- The Art of the Imbue
 					},
 					["g"] = {
-						un(2, i(8703, {	-- Signet of Expertise
-							un(2, i(8708, {	-- Hammer of Expertise
+						un(REMOVED_FROM_GAME, i(8703, {	-- Signet of Expertise
+							un(REMOVED_FROM_GAME, i(8708, {	-- Hammer of Expertise
 								["ignoreSource"] = true,
 							})),
 						})),
@@ -317,8 +317,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(4132)),	-- Darkspear Armsplints
-						un(2, i(4133)),	-- Darkspear Cuffs
+						un(REMOVED_FROM_GAME, i(4132)),	-- Darkspear Armsplints
+						un(REMOVED_FROM_GAME, i(4133)),	-- Darkspear Cuffs
 					},
 				}),
 				q(26299, {	-- Headhunting
@@ -413,7 +413,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4125)),	-- Tranquil Orb
+						un(REMOVED_FROM_GAME, i(4125)),	-- Tranquil Orb
 					},
 				}),
 				q(29120, {	-- Mauti (A)
@@ -514,7 +514,7 @@ _.Zones =
 						i(61109),	-- Bhag'thera's Roar
 						i(61108),	-- Shield of the Panther
 						i(61107),	-- Mantle of the Panther
-						un(2, i(4108)),	-- Panther Hunter Leggings
+						un(REMOVED_FROM_GAME, i(4108)),	-- Panther Hunter Leggings
 					},
 				}),
 				q(191,   {	-- Panther Stalking
@@ -575,7 +575,7 @@ _.Zones =
 						i(61112),	-- Raptor Slayer's Band
 						i(61110),	-- Tethis' Skull
 						i(131201),	-- Scale-Cord of the Raptor
-						un(2, i(4119)),	-- Raptor Hunter Tunic
+						un(REMOVED_FROM_GAME, i(4119)),	-- Raptor Hunter Tunic
 					},
 				}),
 				q(196,   {	-- Raptor Prowess
@@ -592,8 +592,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4123)),	-- Frost Metal Pauldrons
-						un(2, i(4139)),	-- Junglewalker Sandals
+						un(REMOVED_FROM_GAME, i(4123)),	-- Frost Metal Pauldrons
+						un(REMOVED_FROM_GAME, i(4139)),	-- Junglewalker Sandals
 					},
 				}),
 				q(622,   {	-- Return to Corporal Kaleb
@@ -628,8 +628,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(6723)),	-- Medal of Courage
-						un(2, i(4134)),	-- Nimboya's Mystical Staff
+						un(REMOVED_FROM_GAME, i(6723)),	-- Medal of Courage
+						un(REMOVED_FROM_GAME, i(4134)),	-- Nimboya's Mystical Staff
 					},
 				}),
 				q(26305, {	-- Saving Yenniku
@@ -681,7 +681,7 @@ _.Zones =
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(2, i(7983)),	-- Plans: Ornate Mithril Pants
+						un(REMOVED_FROM_GAME, i(7983)),	-- Plans: Ornate Mithril Pants
 					},
 				}),
 				q(26344, {	-- Some Assembly Required
@@ -740,8 +740,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(4136)),	-- Darkspear Boots
-						un(2, i(4137)),	-- Darkspear Shoes
+						un(REMOVED_FROM_GAME, i(4136)),	-- Darkspear Boots
+						un(REMOVED_FROM_GAME, i(4137)),	-- Darkspear Shoes
 					},
 				}),
 				q(26737, {	-- Stopping Kurzen's Legacy
@@ -785,7 +785,7 @@ _.Zones =
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(2, i(7985)),	-- Plans: Ornate Mithril Shoulders
+						un(REMOVED_FROM_GAME, i(7985)),	-- Plans: Ornate Mithril Shoulders
 					},
 				}),
 				q(615, {	-- The Captain's Cutlass
@@ -795,7 +795,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(4115)),	-- Grom'gol Buckler
+						un(REMOVED_FROM_GAME, i(4115)),	-- Grom'gol Buckler
 					},
 				}),
 				q(26280, {	-- The Defense of Grom'gol: Murloc Menace
@@ -852,14 +852,14 @@ _.Zones =
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(2, i(7984)),	-- Plans: Ornate Mithril Gloves
+						un(REMOVED_FROM_GAME, i(7984)),	-- Plans: Ornate Mithril Gloves
 					},
 				}),
 				q(338,   {	-- The Green Hills of Stranglethorn
 					["u"] = 40,
 					["g"] = {
-						un(2, i(4116)),	-- Olmann Sewar
-						un(2, i(17688)),	-- Jungle Boots
+						un(REMOVED_FROM_GAME, i(4116)),	-- Olmann Sewar
+						un(REMOVED_FROM_GAME, i(17688)),	-- Jungle Boots
 					},
 				}),
 				q(26269, {	-- The Green Hills of Stranglethorn
@@ -871,7 +871,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4122)),	-- Bookmaker's Scepter
+						un(REMOVED_FROM_GAME, i(4122)),	-- Bookmaker's Scepter
 					},
 				}),
 				q(26340, {	-- The Hunt
@@ -967,7 +967,7 @@ _.Zones =
 						i(61114),	-- Cat Lover's Vest
 						i(61113),	-- Sin'Dall's Femur
 						i(131200),	-- Footpads of Sin'Dall
-						un(2, i(4107)),	-- Tiger Hunter Gloves
+						un(REMOVED_FROM_GAME, i(4107)),	-- Tiger Hunter Gloves
 					},
 				}),
 				q(186,   {	-- Tiger Stalking

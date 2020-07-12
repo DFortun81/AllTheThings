@@ -313,7 +313,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					e(168, {	-- Sinestra
 						["creatureID"] = 45213,
 						["groups"] = {
-							un(2, ach(5313)),	-- I Can't Hear You Over the Sound of How Awesome I Am
+							un(REMOVED_FROM_GAME, ach(5313)),	-- I Can't Hear You Over the Sound of How Awesome I Am
 							ach(5121, {	-- Heroic: Sinestra
 								title(186),	-- Dragonslayer
 							}),

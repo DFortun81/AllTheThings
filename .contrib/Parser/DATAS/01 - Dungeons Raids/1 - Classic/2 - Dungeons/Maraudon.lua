@@ -90,7 +90,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(17734),	-- Helm of the Mountain
 						i(17736),	-- Rockgrip Gauntlets
 						i(17713),	-- Blackstone Ring
-						un(2, i(17733)), 	-- Fist of Stone
+						un(REMOVED_FROM_GAME, i(17733)), 	-- Fist of Stone
 					})),
 					cr(13596, e(430, {	-- Rotgrip
 						["modelScale"] = 1.5,
@@ -131,46 +131,46 @@ _.Instances = { tier(1, {	-- Classic
 						["u"] = 40,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							un(2, i(17773)),	-- Prodigious Shadowshard Pendant
-							un(2, i(17772)),	-- Zealous Shadowshard Pendant
+							un(REMOVED_FROM_GAME, i(17773)),	-- Prodigious Shadowshard Pendant
+							un(REMOVED_FROM_GAME, i(17772)),	-- Zealous Shadowshard Pendant
 						},
 					}),
 					q(7068, {	-- Shadowshard Fragments
 						["u"] = 40,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							un(2, i(17773)),	-- Prodigious Shadowshard Pendant
-							un(2, i(17772)),	-- Zealous Shadowshard Pendant
+							un(REMOVED_FROM_GAME, i(17773)),	-- Prodigious Shadowshard Pendant
+							un(REMOVED_FROM_GAME, i(17772)),	-- Zealous Shadowshard Pendant
 						},
 					}),
 					q(7067, {	-- The Pariah's Instructions
 						["u"] = 40,
 						["g"] = {
-							un(2, i(17774)),	-- Mark of the Chosen
+							un(REMOVED_FROM_GAME, i(17774)),	-- Mark of the Chosen
 						},
 					}),
 					q(7046, {	-- The Scepter of Celebras
 						["u"] = 40,
 						["g"] = {
-							un(2, i(17191)),	-- Scepter of Celebras
+							un(REMOVED_FROM_GAME, i(17191)),	-- Scepter of Celebras
 						},
 					}),
 					q(7029, {	-- Vyletongue Corruption
 						["u"] = 40,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							un(2, i(17770)), 	-- Branchclaw Gauntlets
-							un(2, i(17778)),	-- Sagebrush Girdle
-							un(2, i(17768)),	-- Woodseed Hoop
+							un(REMOVED_FROM_GAME, i(17770)), 	-- Branchclaw Gauntlets
+							un(REMOVED_FROM_GAME, i(17778)),	-- Sagebrush Girdle
+							un(REMOVED_FROM_GAME, i(17768)),	-- Woodseed Hoop
 						},
 					}),
 					q(7041, {	-- Vyletongue Corruption
 						["u"] = 40,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							un(2, i(17770)), 	-- Branchclaw Gauntlets
-							un(2, i(17778)),	-- Sagebrush Girdle
-							un(2, i(17768)),	-- Woodseed Hoop
+							un(REMOVED_FROM_GAME, i(17770)), 	-- Branchclaw Gauntlets
+							un(REMOVED_FROM_GAME, i(17778)),	-- Sagebrush Girdle
+							un(REMOVED_FROM_GAME, i(17768)),	-- Woodseed Hoop
 						},
 					}),
 				}),

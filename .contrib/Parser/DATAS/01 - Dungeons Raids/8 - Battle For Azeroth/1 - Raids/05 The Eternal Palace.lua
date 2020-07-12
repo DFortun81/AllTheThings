@@ -292,7 +292,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(168854),	-- Animated Elemental Heart
 							i(168941),	-- Vitality Redistribution Lattice
 							i(168275),	-- Anu-Azshara, Staff of the Eternal
-							--i(168895),	-- Mel'nalore, Javelin of Suramar	-- Removed from game?
+							--i(168895),	-- Mel'nalore, Javelin of Suramar?
 							i(168887),	-- Gloves of Incomparable Beauty
 							i(168888),	-- Handguards of the Highest-Born
 							i(168871),	-- Beloved Monarch's Waistwrap
@@ -507,7 +507,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(168854),	-- Animated Elemental Heart
 						i(168941),	-- Vitality Redistribution Lattice
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
-						--i(168895),	-- Mel'nalore, Javelin of Suramar	-- Removed from game?
+						--i(168895),	-- Mel'nalore, Javelin of Suramar?
 						i(168887),	-- Gloves of Incomparable Beauty
 						i(168888),	-- Handguards of the Highest-Born
 						i(168871),	-- Beloved Monarch's Waistwrap
@@ -713,7 +713,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				e(2361, {	-- Queen Azshara
 					["cr"] = 152910,
 					["g"] = {
-						un(2, ach(13784)),	-- Ahead of the Curve: Queen Azshara
+						un(REMOVED_FROM_GAME, ach(13784)),	-- Ahead of the Curve: Queen Azshara
 						crit(2, {	-- Queen Azshara
 							["achievementID"] = 13725,	-- The Circle of Stars
 						}),
@@ -723,7 +723,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(168942),	-- Mesh of Expanding Vitality
 						i(168855),	-- Pulsing Elemental Hearth
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
-						--i(168895),	-- Mel'nalore, Javelin of Suramar	-- Removed from game?
+						--i(168895),	-- Mel'nalore, Javelin of Suramar?
 						i(168887),	-- Gloves of Incomparable Beauty
 						i(168888),	-- Handguards of the Highest-Born
 						i(168871),	-- Beloved Monarch's Waistwrap
@@ -939,7 +939,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						ach(13733, {	-- Mythic: Queen Azshara
 							title(404),	-- the Eternal
 						}),
-						un(2, ach(13785)),	-- Cutting Edge: Queen Azshara
+						un(REMOVED_FROM_GAME, ach(13785)),	-- Cutting Edge: Queen Azshara
 						crit(2, {	-- Queen Azshara
 							["achievementID"] = 13725,	-- The Circle of Stars
 						}),
@@ -962,7 +962,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(169348),	-- Zanj'ir Poker
 						i(169694),	-- Aqueous Reliquary
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
-						--i(168895),	-- Mel'nalore, Javelin of Suramar	-- Removed from game?
+						--i(168895),	-- Mel'nalore, Javelin of Suramar?
 						i(168887),	-- Gloves of Incomparable Beauty
 						i(168888),	-- Handguards of the Highest-Born
 						i(168871),	-- Beloved Monarch's Waistwrap

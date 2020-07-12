@@ -59,7 +59,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(19126)),	-- Slagplate Gauntlets
+						un(REMOVED_FROM_GAME, i(19126)),	-- Slagplate Gauntlets
 					},
 				}),
 				q(27979, {	-- Dark Ministry
@@ -92,7 +92,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(19125)),	-- Seared Mail Girdle
+						un(REMOVED_FROM_GAME, i(19125)),	-- Seared Mail Girdle
 					},
 				}),
 				q(3443, {	-- Forging the Shaft
@@ -128,7 +128,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(19141)),	-- Luffa
+						un(REMOVED_FROM_GAME, i(19141)),	-- Luffa
 					},
 				}),
 				q(27986, {	-- In the Hall of the Mountain-Lord
@@ -143,8 +143,8 @@ _.Zones =
 					["u"] = 40,	-- Legacy
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(19129)),	-- Everglowing Robe
-						un(2, i(63241)),	-- Very Soft Pillow
+						un(REMOVED_FROM_GAME, i(19129)),	-- Everglowing Robe
+						un(REMOVED_FROM_GAME, i(63241)),	-- Very Soft Pillow
 					},
 				}),
 				q(28057, {	-- Kill 'em With Sleep Deprivation
@@ -160,8 +160,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(11860)),	-- Charged Lightning Rod
-						un(2, i(11861)),	-- Girdle of Reprisal
+						un(REMOVED_FROM_GAME, i(11860)),	-- Charged Lightning Rod
+						un(REMOVED_FROM_GAME, i(11861)),	-- Girdle of Reprisal
 					},
 				}),
 				q(28058, {	-- Look at the Size of It!
@@ -262,8 +262,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(10745)),	-- Kaylari Shoulders
-						un(2, i(10746)),	-- Runesteel Vambraces
+						un(REMOVED_FROM_GAME, i(10745)),	-- Kaylari Shoulders
+						un(REMOVED_FROM_GAME, i(10746)),	-- Runesteel Vambraces
 					},
 				}),
 				q(27985, {	-- Prayer to Elune
@@ -302,9 +302,9 @@ _.Zones =
 				q(3566,  {	-- Rise, Obsidion!
 					["u"] = 40,
 					["g"] = {
-						un(2, i(10740)),	-- Centurion Legplates
-						un(2, i(10741)),	-- Lordrec Helmet
-						un(2, i(10739)),	-- Ring of Fortitude
+						un(REMOVED_FROM_GAME, i(10740)),	-- Centurion Legplates
+						un(REMOVED_FROM_GAME, i(10741)),	-- Lordrec Helmet
+						un(REMOVED_FROM_GAME, i(10739)),	-- Ring of Fortitude
 					},
 				}),
 				q(28029, {	-- Set Them Ablaze!
@@ -315,9 +315,9 @@ _.Zones =
 				q(3463,  {	-- Set Them Ablaze
 					["u"] = 40,
 					["g"] = {
-						un(2, i(10744)),	-- Axe of the Ebon Drake
-						un(2, i(10742)),	-- Dragonflight Leggings
-						un(2, i(10743)),	-- Drakefire Headguard
+						un(REMOVED_FROM_GAME, i(10744)),	-- Axe of the Ebon Drake
+						un(REMOVED_FROM_GAME, i(10742)),	-- Dragonflight Leggings
+						un(REMOVED_FROM_GAME, i(10743)),	-- Drakefire Headguard
 					},
 				}),
 				q(3379,  {	-- Shadoweaver
@@ -325,8 +325,8 @@ _.Zones =
 					["provider"] = { "n", 8439 },	-- Nilith Lokrav
 					["requireSkill"] = TAILORING,
 					["g"] = {
-						un(2, i(10461)),	-- Shadowy Bracers
-						un(2, i(10479)),	-- Kovic's Trading Satchel
+						un(REMOVED_FROM_GAME, i(10461)),	-- Shadowy Bracers
+						un(REMOVED_FROM_GAME, i(10479)),	-- Kovic's Trading Satchel
 					},
 				}),
 				q(28028, {	-- Siege!
@@ -347,8 +347,8 @@ _.Zones =
 				q(7728,  {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
 					["u"] = 40,
 					["g"] = {
-						un(2, i(19123)),	-- Everwarm Handwraps
-						un(2, i(19124)),	-- Slagplate Leggings
+						un(REMOVED_FROM_GAME, i(19123)),	-- Everwarm Handwraps
+						un(REMOVED_FROM_GAME, i(19124)),	-- Slagplate Leggings
 					},
 				}),
 				q(28055, {	-- Sweet, Horrible Freedom
@@ -410,7 +410,7 @@ _.Zones =
 					["sourceQuest"] = 3379,	-- Shadoweaver
 					["requireSkill"] = TAILORING,
 					["g"] = {
-						un(2, i(10462)),	-- Shadowy Belt
+						un(REMOVED_FROM_GAME, i(10462)),	-- Shadowy Belt
 					},
 				}),
 				q(3402,  {	-- The Undermarket
@@ -466,8 +466,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(19127)),	-- Charred Leather Tunic
-						un(2, i(19128)),	-- Seared Mail Vest
+						un(REMOVED_FROM_GAME, i(19127)),	-- Charred Leather Tunic
+						un(REMOVED_FROM_GAME, i(19128)),	-- Seared Mail Vest
 					},
 				}),
 				q(28064, {	-- Welcome to the Brotherhood

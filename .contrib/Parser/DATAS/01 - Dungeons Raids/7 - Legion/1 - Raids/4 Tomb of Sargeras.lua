@@ -1396,13 +1396,13 @@ _.Instances = { tier(7, {	-- Legion
 					["cr"] = 117269,	-- Kil'jaeden
 					["g"] = {
 						ach(11875, {	-- Cutting Edge: Kil'jaeden
-							["u"] = 2,	-- Legacy Achievement
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(11874, {	-- Ahead of the Curve: Kil'jaeden
-							["u"] = 2,	-- Legacy Achievement
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(11783, {	-- Realm First! Kil'jaeden
-							["u"] = 2,	-- Legacy Achievement
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(11781, {	-- Mythic: Kil'jaeden
 							title(357),	-- %s the Darkener

@@ -795,7 +795,7 @@ _.Zones =
 						i(5643, {	-- Recipe: Great Rage Potion
 							["isLimited"] = true,
 						}),
-						un(2, i(13477)),	-- Recipe: Superior Mana Potion
+						un(REMOVED_FROM_GAME, i(13477)),	-- Recipe: Superior Mana Potion
 					},
 				}),
 				n(4228,  {	-- Vaean <Enchanting Supplies>

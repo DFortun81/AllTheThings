@@ -132,7 +132,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						crit(2, {	-- Uu'nat, Harbinger of the Void
 							["achievementID"] = 13414,	-- Crucible of Storms
 						}),
-						un(2, ach(13418)),	-- Ahead of the Curve: Uu'nat, Harbinger of the Void
+						un(REMOVED_FROM_GAME, ach(13418)),	-- Ahead of the Curve: Uu'nat, Harbinger of the Void
 						i(167864),	-- Trident of Deep Ocean
 						i(167839),	-- Grips of Forsaken Sanity
 						i(167217),	-- Legplates of Unbound Anguish
@@ -174,8 +174,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["achievementID"] = 13414,	-- Crucible of Storms
 						}),
 						ach(13417),	-- Mythic: Uu'nat, Harbinger of the Void
-						un(2, ach(13418)),	-- Ahead of the Curve: Uu'nat, Harbinger of the Void
-						un(2, ach(13419)),	-- Cutting Edge: Uu'nat, Harbinger of the Void
+						un(REMOVED_FROM_GAME, ach(13418)),	-- Ahead of the Curve: Uu'nat, Harbinger of the Void
+						un(REMOVED_FROM_GAME, ach(13419)),	-- Cutting Edge: Uu'nat, Harbinger of the Void
 						i(167864),	-- Trident of Deep Ocean
 						i(167839),	-- Grips of Forsaken Sanity
 						i(167217),	-- Legplates of Unbound Anguish

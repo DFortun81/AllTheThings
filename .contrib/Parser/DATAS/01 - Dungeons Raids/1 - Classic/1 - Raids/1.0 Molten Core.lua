@@ -554,7 +554,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(16859),	-- Lawbringer Boots (Paladin)
 				i(18879),	-- Heavy Dark Iron Ring
 				i(19147),	-- Ring of Spell Power
-			--	un(2, i(16665, {	-- Tome of Tranquilizing Shot
+			--	un(REMOVED_FROM_GAME, i(16665, {	-- Tome of Tranquilizing Shot
 			--		["class"] = { 3 },
 			--		["collectible"] = false,
 			--	})),
@@ -633,7 +633,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(19144),	-- Sabatons of the Flamewalker
 				i(18821),	-- Quick Strike Ring
 				i(18820),	-- Talisman of Ephemeral Power
-				un(2, i(17782)),	-- Talisman of Binding Shard
+				un(REMOVED_FROM_GAME, i(17782)),	-- Talisman of Binding Shard
 			})),
 			cr(12264, e(1523, {	-- Shazzrah
 				i(18878),	-- Sorcerous Dagger
@@ -727,13 +727,13 @@ _.Instances = { tier(1, {	-- Classic
 					["questID"] = 7632,	-- The Ancient Leaf
 					["classes"] = { HUNTER },
 					["lvl"] = 60,
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				},
 				i(18646, {	-- The Eye of Divinity
 					["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
 					["sourceQuest"] = 7622,	-- The Balance of Light and Shadow
 					["classes"] = { PRIEST },
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(18803),	-- Finkle's Lava Dredger
 				i(18805),	-- Core Hound Tooth
@@ -799,7 +799,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(19138),	-- Band of Sulfuras
 				i(18815),	-- Essence of the Pure Flame
 				i(17082),	-- Shard of the Flame
-				un(2, i(17982)),	-- Ragnaros Core
+				un(REMOVED_FROM_GAME, i(17982)),	-- Ragnaros Core
 			})),
 		},
 	}),

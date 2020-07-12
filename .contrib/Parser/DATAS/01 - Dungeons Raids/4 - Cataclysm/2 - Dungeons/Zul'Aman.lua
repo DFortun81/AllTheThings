@@ -14,7 +14,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- A Troll Among Trolls
 							["questID"] = 29188,
 							["provider"] = { "n", 23761 },	-- Quest Giver: Prigmon
-							["u"] = 2,			-- Legacy Content
+							["u"] = REMOVED_FROM_GAME,
 						},
 						q(29217, {	-- The Captive Scouts
 							["provider"] = { "n", 52933 },	-- Blood Guard Hakkuz

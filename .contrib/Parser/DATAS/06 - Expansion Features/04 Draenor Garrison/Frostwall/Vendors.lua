@@ -573,7 +573,7 @@ _.ExpansionFeatures =
 						i(127727, {	-- Recipe: Mighty Truesteel Essence
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
-						un(2, i(122551)),	-- Recipe: Powerful Taladite Amplifier
+						un(REMOVED_FROM_GAME, i(122551)),	-- Recipe: Powerful Taladite Amplifier
 						i(122714, {	-- Recipe: Primal Gemcutting
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
@@ -621,7 +621,7 @@ _.ExpansionFeatures =
 						i(127722, {	-- Recipe: Mighty Burnished Essence
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 						}),
-						un(2, i(122547)),	-- Recipe: Powerful Burnished Essence
+						un(REMOVED_FROM_GAME, i(122547)),	-- Recipe: Powerful Burnished Essence
 						i(127740, {	-- Recipe: Savage Burnished Essence
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 						}),

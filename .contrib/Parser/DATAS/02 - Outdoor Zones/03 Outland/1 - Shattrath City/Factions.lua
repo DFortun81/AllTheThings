@@ -865,12 +865,12 @@ _.Zones =
 									i(23145),	-- Design: Purified Shadow Draenite
 									i(23143, {	-- Design: Purified Shadow Draenite
 										["spellID"] = 0,	-- This is now available via 23145, need to delink the old plans from the recipe
-											["u"] = 2,
+											["u"] = REMOVED_FROM_GAME,
 									}),
 									i(23149),	-- Design: Smooth Golden Draenite
 									i(28291, {	-- Design: Smooth Golden Draenite
 										["spellID"] = 0,	-- This is now available via 23149, need to delink the old plans from the recipe
-											["u"] = 2,
+											["u"] = REMOVED_FROM_GAME,
 									}),
 									i(29128),	-- Lightwarden's Band
 									i(29123),	-- Medallion of the Lightbearer

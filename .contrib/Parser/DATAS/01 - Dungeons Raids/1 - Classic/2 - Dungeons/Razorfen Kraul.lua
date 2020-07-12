@@ -47,8 +47,8 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 4510 },	-- Heralath Fallowbrook
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(6751)),	-- Mourning Shawl
-						un(2, i(6752)),	-- Lancer Boots
+						un(REMOVED_FROM_GAME, i(6751)),	-- Mourning Shawl
+						un(REMOVED_FROM_GAME, i(6752)),	-- Lancer Boots
 					},
 				}),
 				q(26907, {	-- Take Them Down!
@@ -57,28 +57,28 @@ _.Instances = { tier(1, {	-- Classic
 				q(24630, {	-- The Crone of the Kraul
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(53155)),	-- Agamaggan's Thorn
-						un(2, i(53158)),	-- Spaulder of the Matriarch
-						un(2, i(57408)),	-- Bloodshard Band
-						un(2, i(53157)),	-- Charlga's Cowl
+						un(REMOVED_FROM_GAME, i(53155)),	-- Agamaggan's Thorn
+						un(REMOVED_FROM_GAME, i(53158)),	-- Spaulder of the Matriarch
+						un(REMOVED_FROM_GAME, i(57408)),	-- Bloodshard Band
+						un(REMOVED_FROM_GAME, i(53157)),	-- Charlga's Cowl
 					},
 				}),
 				q(1144,  {	-- Willix the Importer
 					["provider"] = { "n", 4508 },	-- Willix the Importer
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(6748)),	-- Monkey Ring
-						un(2, i(6750)),	-- Snake Hoop
-						un(2, i(6749)),	-- Tiger Band
+						un(REMOVED_FROM_GAME, i(6748)),	-- Monkey Ring
+						un(REMOVED_FROM_GAME, i(6750)),	-- Snake Hoop
+						un(REMOVED_FROM_GAME, i(6749)),	-- Tiger Band
 					},
 				}),
 				q(26903, {	-- Willix the Importer
 					["u"] = 40,
 					["provider"] = { "n", 4508 },	-- Willix the Importer
 					["g"] = {
-						un(2, i(6748)),	-- Monkey Ring
-						un(2, i(6750)),	-- Snake Hoop
-						un(2, i(6749)),	-- Tiger Band
+						un(REMOVED_FROM_GAME, i(6748)),	-- Monkey Ring
+						un(REMOVED_FROM_GAME, i(6750)),	-- Snake Hoop
+						un(REMOVED_FROM_GAME, i(6749)),	-- Tiger Band
 					},
 				}),
 			}),
@@ -224,15 +224,15 @@ _.Instances = { tier(1, {	-- Classic
 				n(4428, {	-- Death Speaker Jargba <Death's Head Captain>
 					["u"] = 43,
 					["g"] = {
-						un(2, i(2816)),	-- Death Speaker Scepter
+						un(REMOVED_FROM_GAME, i(2816)),	-- Death Speaker Scepter
 						i(6685),	-- Death Speaker Mantle
-						un(2, i(6682)),	-- Death Speaker Robes
+						un(REMOVED_FROM_GAME, i(6682)),	-- Death Speaker Robes
 					},
 				}),
 				n(4438, {	-- Razorfen Spearhide
 					["u"] = 43,
 					["g"] = {
-						un(2, i(6679)),	-- Armor Piercer
+						un(REMOVED_FROM_GAME, i(6679)),	-- Armor Piercer
 					},
 				}),
 			}),

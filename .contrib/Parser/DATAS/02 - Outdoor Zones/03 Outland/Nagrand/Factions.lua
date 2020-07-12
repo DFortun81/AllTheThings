@@ -108,21 +108,21 @@ _.Zones =
 								i(33622),	-- Design: Relentless Earthstorm Diamond
 								i(32412, {	-- Design: Relentless Earthstorm Diamond
 									["spellID"] = 0,	-- This is now available via 33622, need to delink the old plans from the recipe
-									["u"] = 2,
+									["u"] = REMOVED_FROM_GAME,
 								}),
 								i(23146),	-- Design: Shifting Shadow Draenite
 								i(31871, {	-- Design: Shifting Shadow Draenite
 									["spellID"] = 0,	-- This is now available via 23146, need to delink the old plans from the recipe
-									["u"] = 2,
+									["u"] = REMOVED_FROM_GAME,
 								}),
 								i(31872, {	-- Design: Shifting Shadow Draenite
 									["spellID"] = 0,	-- This is now available via 23146, need to delink the old plans from the recipe
-									["u"] = 2,
+									["u"] = REMOVED_FROM_GAME,
 								}),
 								i(23155),	-- Design: Sparkling Azure Moonstone
 								i(23153, {	-- Design: Sparkling Azure Moonstone
 									["spellID"] = 0,	-- This is now available via 23155, need to delink the old plans from the recipe
-									["u"] = 2,
+									["u"] = REMOVED_FROM_GAME,
 								}),
 								i(23150),	-- Design: Subtle Golden Draenite
 								i(25908),	-- Design: Swift Skyfire Diamond
@@ -140,7 +140,7 @@ _.Zones =
 								i(25732), 	-- Pattern: Fel Leather Gloves
 								i(25734), 	-- Pattern: Fel Leather Leggings
 								i(23874),	-- Schematic: Elemental Seaforium Charge
-								un(2, i(29118)),	-- Smuggler's Ammo Pouch
+								un(REMOVED_FROM_GAME, i(29118)),	-- Smuggler's Ammo Pouch
 								i(29117),	-- Stormspire Vest
 
 
@@ -179,7 +179,7 @@ _.Zones =
 							["g"] = {
 								i(29145),	-- Band of Ancestral Spirits
 								i(29139),	-- Ceremonial Cover
-								un(2, i(29143)),	-- Clefthoof Hide Quiver
+								un(REMOVED_FROM_GAME, i(29143)),	-- Clefthoof Hide Quiver
 								i(29135),	-- Earthcaller's Headdress
 								i(29137),	-- Hellscream's Will
 								i(31773),	-- Mag'har Tabard
@@ -253,7 +253,7 @@ _.Zones =
 								i(29230),	-- Reins of the Tan War Talbuk
 								i(31836),	-- Reins of the White Riding Talbuk
 								i(29231),	-- Reins of the White War Talbuk
-								un(2, i(29144)),	-- Worg Hide Quiver
+								un(REMOVED_FROM_GAME, i(29144)),	-- Worg Hide Quiver
 							},
 						}),
 					}),

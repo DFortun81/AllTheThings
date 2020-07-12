@@ -30,7 +30,7 @@ _.Instances = { tier(7, {	-- Legion
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
 						i(140148, {	-- Cache of Nightborne Treasures [Raid Finder]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(140172, {	-- Ancient Nightborne Tome [Raid Finder]
@@ -38,7 +38,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
+								un(REMOVED_FROM_GAME, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 							},
 						}),
 						i(140171, {	-- Glowing Lily [Raid Finder]
@@ -46,7 +46,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
+								un(REMOVED_FROM_GAME, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 							},
 						}),
 						i(140147, {	-- Pulsauron Bindings [Raid Finder]
@@ -54,7 +54,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
+								un(REMOVED_FROM_GAME, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 							},
 						}),
 						i(140173, {	-- Shred of Tattered Robe [Raid Finder]
@@ -62,7 +62,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
+								un(REMOVED_FROM_GAME, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 							},
 						}),
 					},
@@ -363,7 +363,7 @@ _.Instances = { tier(7, {	-- Legion
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
 						i(140150, {	-- Cache of Nightborne Treasures (Normal)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(140175, {	-- Ancient Nightborne Tome (Normal)
@@ -371,7 +371,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140150)),	-- Cache of Nightborne Treasures (Normal)
+								un(REMOVED_FROM_GAME, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 							},
 						}),
 						i(140174, {	-- Glowing Lily (Normal)
@@ -379,7 +379,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140150)),	-- Cache of Nightborne Treasures (Normal)
+								un(REMOVED_FROM_GAME, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 							},
 						}),
 						i(140149, {	-- Pulsauron Bindings (Normal)
@@ -387,7 +387,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140150)),	-- Cache of Nightborne Treasures (Normal)
+								un(REMOVED_FROM_GAME, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 							},
 						}),
 						i(140177, {	-- Shred of Tattered Robe (Normal)
@@ -395,7 +395,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140150)),	-- Cache of Nightborne Treasures (Normal)
+								un(REMOVED_FROM_GAME, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 							},
 						}),
 						q(45381, {	-- The Nighthold: Talisman of the Shal'dorei (Normal)
@@ -745,7 +745,7 @@ _.Instances = { tier(7, {	-- Legion
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
 						i(140152, {	-- Cache of Nightborne Treasures (Heroic)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(140472, {	-- Ancient Nightborne Tome (Heroic)
@@ -753,7 +753,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
+								un(REMOVED_FROM_GAME, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 							},
 						}),
 						i(140178, {	-- Glowing Lily (Heroic)
@@ -761,7 +761,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
+								un(REMOVED_FROM_GAME, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 							},
 						}),
 						i(140151, {	-- Pulsauron Bindings (Heroic)
@@ -769,7 +769,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
+								un(REMOVED_FROM_GAME, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 							},
 						}),
 						i(140180, {	-- Shred of Tattered Robe (Heroic)
@@ -777,7 +777,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
+								un(REMOVED_FROM_GAME, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 							},
 						}),
 						q(45382, {	-- The Nighthold: Talisman of the Shal'dorei (Heroic)
@@ -1083,7 +1083,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(104154, e(1737, {	-- Gul'dan
 					ach(11195, {	-- Ahead of the Curve: Gul'dan
-						["u"] = 2,	-- Legacy Achievement
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					ach(10696),	-- I've Got My Eyes On You
 					ach(10839),	-- Betrayer's Rise
@@ -1129,7 +1129,7 @@ _.Instances = { tier(7, {	-- Legion
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
 						i(140154, {	-- Cache of Nightborne Treasures (Mythic)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(140182, {	-- Ancient Nightborne Tome (Mythic)
@@ -1137,7 +1137,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
+								un(REMOVED_FROM_GAME, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 							},
 						}),
 						i(140181, {	-- Glowing Lily (Mythic)
@@ -1145,7 +1145,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
+								un(REMOVED_FROM_GAME, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 							},
 						}),
 						i(140153, {	-- Pulsauron Bindings (Mythic)
@@ -1153,7 +1153,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
+								un(REMOVED_FROM_GAME, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 							},
 						}),
 						i(140183, {	-- Shred of Tattered Robe (Mythic)
@@ -1161,7 +1161,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
+								un(REMOVED_FROM_GAME, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 							},
 						}),
 						q(45383, {	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
@@ -1476,13 +1476,13 @@ _.Instances = { tier(7, {	-- Legion
 					},
 					["g"] = {
 						ach(11195, {	-- Ahead of the Curve: Gul'dan
-							["u"] = 2,	-- Legacy Achievement
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(11192, {	-- Cutting Edge: Gul'dan
-							["u"] = 2,	-- Legacy Achievement
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(10855, {	-- Realm First! Gul'dan
-							["u"] = 2,	-- Legacy Achievement
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(10696),	-- I've Got My Eyes On You
 						ach(10839),	-- Betrayer's Rise

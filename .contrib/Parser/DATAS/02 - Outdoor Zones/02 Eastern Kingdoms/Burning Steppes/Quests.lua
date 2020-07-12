@@ -179,9 +179,9 @@ _.Zones =
 						4023,	-- A Taste of Flame
 					},
 					["g"] = {
-						un(2, i(12066)),	-- Shaleskin Cape
-						un(2, i(12083)),	-- Valconian Sash
-						un(2, i(12082)),	-- Wyrmhide Spaulders
+						un(REMOVED_FROM_GAME, i(12066)),	-- Shaleskin Cape
+						un(REMOVED_FROM_GAME, i(12083)),	-- Valconian Sash
+						un(REMOVED_FROM_GAME, i(12082)),	-- Wyrmhide Spaulders
 					},
 				}),
 				q(28279, {	-- Abuse of Power
@@ -367,7 +367,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 10260 },	-- Kibler
 					["g"] = {
-						un(2, i(12529)),	-- Smolderweb Carrier
+						un(REMOVED_FROM_GAME, i(12529)),	-- Smolderweb Carrier
 					},
 				}),
 				q(28286, {	-- Enough Damage For One Day
@@ -479,10 +479,10 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(12112)),	-- Crypt Demon Bracers
-						un(2, i(12114)),	-- Nightfall Gloves
-						un(2, i(12115)),	-- Stalwart Clutch
-						un(2, i(12113)),	-- Sunborne Cape
+						un(REMOVED_FROM_GAME, i(12112)),	-- Crypt Demon Bracers
+						un(REMOVED_FROM_GAME, i(12114)),	-- Nightfall Gloves
+						un(REMOVED_FROM_GAME, i(12115)),	-- Stalwart Clutch
+						un(REMOVED_FROM_GAME, i(12113)),	-- Sunborne Cape
 					},
 				}),
 				q(28239, {	-- Into the Black Tooth Hovel
@@ -510,7 +510,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(11869)),	-- Sha'ni's Ring
+						un(REMOVED_FROM_GAME, i(11869)),	-- Sha'ni's Ring
 					},
 				}),
 				q(28312, {	-- Latent Demons of the Land
@@ -655,11 +655,11 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(13961)),	-- Halcyon's Muzzle
-						un(2, i(13959)),	-- Omokk's Girth Restrainer
-						un(2, i(13963)),	-- Voone's Vice Grips
-						un(2, i(13962)),	-- Vosh'gajin's Strand
-						un(2, i(13958)),	-- Wyrmthalak's Shackles
+						un(REMOVED_FROM_GAME, i(13961)),	-- Halcyon's Muzzle
+						un(REMOVED_FROM_GAME, i(13959)),	-- Omokk's Girth Restrainer
+						un(REMOVED_FROM_GAME, i(13963)),	-- Voone's Vice Grips
+						un(REMOVED_FROM_GAME, i(13962)),	-- Vosh'gajin's Strand
+						un(REMOVED_FROM_GAME, i(13958)),	-- Wyrmthalak's Shackles
 					},
 				}),
 				q(28310, {	-- Morgan's Vigil
@@ -701,8 +701,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(11868)),	-- Choking Band
-						un(2, i(11867)),	-- Maddening Gauntlets
+						un(REMOVED_FROM_GAME, i(11868)),	-- Choking Band
+						un(REMOVED_FROM_GAME, i(11867)),	-- Maddening Gauntlets
 					},
 				}),
 				q(28326, {	-- Placing the Pawns
@@ -746,9 +746,9 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(15824)),	-- Astoria Robes
-						un(2, i(15827)),	-- Jadescale Breastplate
-						un(2, i(15825)),	-- Traphook Jerkin
+						un(REMOVED_FROM_GAME, i(15824)),	-- Astoria Robes
+						un(REMOVED_FROM_GAME, i(15827)),	-- Jadescale Breastplate
+						un(REMOVED_FROM_GAME, i(15825)),	-- Traphook Jerkin
 					},
 				}),
 				q(28425, {	-- Return to Ariok

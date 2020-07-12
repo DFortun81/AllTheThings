@@ -184,7 +184,7 @@ profession(INSCRIPTION, {
 						{	-- Glyph of the Headhunter
 							-- Removed in 8.0
 							["recipeID"] = 225540--[[Glyph of the Headhunter]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Glyph of the Hook
 							["recipeID"] = 225541--[[Glyph of the Hook]]

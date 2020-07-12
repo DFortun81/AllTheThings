@@ -38,7 +38,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 24091,--[[Bloodvine Vest]]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 26403,--[[Festival Dress]]
@@ -94,7 +94,7 @@ profession(TAILORING, {
 						},
 						{
 							["recipeID"] = 24092,--[[Bloodvine Leggings]]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}
 				},
@@ -107,7 +107,7 @@ profession(TAILORING, {
 						},
 						{
 							["recipeID"] = 24093,--[[Bloodvine Boots]]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 8778,	-- Boots of Darkness

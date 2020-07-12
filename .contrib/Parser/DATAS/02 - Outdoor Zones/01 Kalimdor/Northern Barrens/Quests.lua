@@ -16,8 +16,8 @@ _.Zones =
 					["coord"] = { 67.7, 74.0, 10 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(5309)),	-- Privateer Musket  NOTE: Old reward, quest repurposed, original quest name was The Guns of Northwatch
-						un(2, i(5310)),	-- Sea Dog Britches  NOTE: Old reward, quest repurposed, original quest name was The Guns of Northwatch
+						un(REMOVED_FROM_GAME, i(5309)),	-- Privateer Musket  NOTE: Old reward, quest repurposed, original quest name was The Guns of Northwatch
+						un(REMOVED_FROM_GAME, i(5310)),	-- Sea Dog Britches  NOTE: Old reward, quest repurposed, original quest name was The Guns of Northwatch
 					},
 				}),
 				q(13988, {	-- A Growing Problem
@@ -62,8 +62,8 @@ _.Zones =
 					["provider"] = { "n", 3430 },	-- Mangletooth
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(5316)),	-- Barkshell Tunic
-						un(2, i(5317)),	-- Dry Moss Tunic
+						un(REMOVED_FROM_GAME, i(5316)),	-- Barkshell Tunic
+						un(REMOVED_FROM_GAME, i(5317)),	-- Dry Moss Tunic
 					},
 				}),
 				q(1838,  {	-- Brutal Armor
@@ -84,7 +84,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(7133)),	-- Brutal Hauberk
+						un(REMOVED_FROM_GAME, i(7133)),	-- Brutal Hauberk
 					},
 				}),
 				q(13963, {	-- By Hook Or By Crook
@@ -101,9 +101,9 @@ _.Zones =
 						i(59584),	-- Foolhardy Bracers
 						i(59583),	-- Marauding Belt
 						i(131221),	-- Marauding Cord
-						un(2, i(5346)),	-- Orcish Battle Bow NOTE: Old rewards, quest reused
-						un(2, i(5344)),	-- Pointed Axe NOTE: Old rewards, quest reused
-						un(2, i(5345)),	-- Stonewood Hammer NOTE: Old rewards, quest reused
+						un(REMOVED_FROM_GAME, i(5346)),	-- Orcish Battle Bow NOTE: Old rewards, quest reused
+						un(REMOVED_FROM_GAME, i(5344)),	-- Pointed Axe NOTE: Old rewards, quest reused
+						un(REMOVED_FROM_GAME, i(5345)),	-- Stonewood Hammer NOTE: Old rewards, quest reused
 					},
 				}),
 				q(14034, {	-- Club Foote
@@ -125,8 +125,8 @@ _.Zones =
 						i(59540),	-- Quilboar Skin Gloves
 						i(59541),	-- Mankrik's Boar Slicer
 						i(131227),	-- Quilboar Linked Gauntlets
-						un(2, i(5314)),	-- Boar Hunter's Cape NOTE: Old rewards, quest reused
-						un(2, i(6477)),	-- Grassland Sash NOTE: Old rewards, quest reused
+						un(REMOVED_FROM_GAME, i(5314)),	-- Boar Hunter's Cape NOTE: Old rewards, quest reused
+						un(REMOVED_FROM_GAME, i(6477)),	-- Grassland Sash NOTE: Old rewards, quest reused
 					},
 				}),
 				q(4021,  {	-- Counterattack!
@@ -164,7 +164,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["g"] = {
-						un(2, i(15866)),	-- Veildust Medicine Bag
+						un(REMOVED_FROM_GAME, i(15866)),	-- Veildust Medicine Bag
 					},
 				}),
 				q(14073, {	-- Deathgate's Reinforcements
@@ -187,7 +187,7 @@ _.Zones =
 					["provider"] = { "n", 3390 },	-- Apothecary Helbrim
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(5340)),	-- Cauldron Stirrer
+						un(REMOVED_FROM_GAME, i(5340)),	-- Cauldron Stirrer
 					},
 				}),
 				q(3281,  {	-- [DEPRECATED] Stolen Silver
@@ -195,8 +195,8 @@ _.Zones =
 					["provider"] = { "n", 3464 },	-- Gazrog
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(11853)),	-- Rambling Boots
-						un(2, i(2694)),	-- Settler's Leggings
+						un(REMOVED_FROM_GAME, i(11853)),	-- Rambling Boots
+						un(REMOVED_FROM_GAME, i(2694)),	-- Settler's Leggings
 					},
 				}),
 				q(862,   {	-- Dig Rat Stew
@@ -204,7 +204,7 @@ _.Zones =
 					["provider"] = { "n", 3443 },	-- Grub
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(10919)),	-- Apothecary Gloves
+						un(REMOVED_FROM_GAME, i(10919)),	-- Apothecary Gloves
 						i(5487),	-- Recipe: Dig Rat Stew -- NOTE: This recipe is still available, only quest was retired
 					},
 				}),
@@ -232,8 +232,8 @@ _.Zones =
 					["provider"] = { "n", 3428 },	-- Korran
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(6503)),	-- Harlequin Robes
-						un(2, i(6502)),	-- Violet Scale Armor
+						un(REMOVED_FROM_GAME, i(6503)),	-- Harlequin Robes
+						un(REMOVED_FROM_GAME, i(6502)),	-- Violet Scale Armor
 					},
 				}),
 				q(13615, {	-- Empty Quivers
@@ -278,10 +278,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["g"] = {
-						un(2, i(7326)),	-- Thun'grim's Axe
-						un(2, i(7328)),	-- Thun'grim's Mace
-						un(2, i(7327)),	-- Thun'grim's Dagger
-						un(2, i(7329)),	-- Thun'grim's Sword
+						un(REMOVED_FROM_GAME, i(7326)),	-- Thun'grim's Axe
+						un(REMOVED_FROM_GAME, i(7328)),	-- Thun'grim's Mace
+						un(REMOVED_FROM_GAME, i(7327)),	-- Thun'grim's Dagger
+						un(REMOVED_FROM_GAME, i(7329)),	-- Thun'grim's Sword
 					},
 				}),
 				q(898,   {	-- Free From the Hold
@@ -289,8 +289,8 @@ _.Zones =
 					["provider"] = { "n", 3465 },	-- Gilthares Firebough
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(5311)),	-- Buckled Boots
-						un(2, i(5312)),	-- Riveted Gauntlets
+						un(REMOVED_FROM_GAME, i(5311)),	-- Buckled Boots
+						un(REMOVED_FROM_GAME, i(5312)),	-- Riveted Gauntlets
 					},
 				}),
 				q(848,   {	-- Fungal Spores
@@ -365,7 +365,7 @@ _.Zones =
 						i(59586),	-- Gloves of Unfocused Rage
 						i(59587),	-- Fractured Belt
 						i(131220),	-- Hands of Unfocused Rage
-						un(2, i(5351)),	-- Bounty Hunter's Ring  NOTE: Old rewards, quest reused
+						un(REMOVED_FROM_GAME, i(5351)),	-- Bounty Hunter's Ring  NOTE: Old rewards, quest reused
 					},
 				}),
 				q(3514,  {	-- Horde Presence
@@ -373,8 +373,8 @@ _.Zones =
 					["provider"] = { "n", 8582 },	-- Kadrak
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(10654)),	-- Jutebraid Gloves
-						un(2, i(10653)),	-- Trailblazer Boots
+						un(REMOVED_FROM_GAME, i(10654)),	-- Jutebraid Gloves
+						un(REMOVED_FROM_GAME, i(10653)),	-- Trailblazer Boots
 					},
 				}),
 				q(903,   {	-- Hunting the Huntress
@@ -418,8 +418,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 8418 },	-- Falla Sagewind
 					["g"] = {
-						un(2, i(10658)),	-- Quagmire Galoshes
-						un(2, i(10657)),	-- Talbar Mantle
+						un(REMOVED_FROM_GAME, i(10658)),	-- Quagmire Galoshes
+						un(REMOVED_FROM_GAME, i(10657)),	-- Talbar Mantle
 					},
 				}),
 				q(905,   {	-- Into the Raptor's Den
@@ -443,9 +443,9 @@ _.Zones =
 					["provider"] = { "n", 3388 },	-- Mahren Skyseer
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(5355)),	-- Beastmaster's Girdle
-						un(2, i(5356)),	-- Branding Rod
-						un(2, i(5357)),	-- Ward of the Vale
+						un(REMOVED_FROM_GAME, i(5355)),	-- Beastmaster's Girdle
+						un(REMOVED_FROM_GAME, i(5356)),	-- Branding Rod
+						un(REMOVED_FROM_GAME, i(5357)),	-- Ward of the Vale
 					},
 				}),
 				q(865,   {	-- It's Gotta be the Horn
@@ -456,7 +456,7 @@ _.Zones =
 						i(59581),	-- Smart Shoes
 						i(59582),	-- Shrewd Crossbow
 						i(131223),	-- Smart Sandals
-						un(2, i(5343)),	-- Barkeeper's Cloak NOTE: Old reward, quest repurposed, original quest name was Raptor Horns
+						un(REMOVED_FROM_GAME, i(5343)),	-- Barkeeper's Cloak NOTE: Old reward, quest repurposed, original quest name was Raptor Horns
 					},
 				}),
 				q(13995, {	-- King of Centaur Mountain
@@ -548,10 +548,10 @@ _.Zones =
 					["provider"] = { "n", 3448 },	-- Tonga Runetotem
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(59557)),	-- Belt of Unwanted Aid [Cata version of quest]
-						un(2, i(59556)),	-- Shield of Inner Glow [Cata version of quest]
-						un(2, i(10820)),	-- Jackseed Belt [WotLK version of quest]
-						un(2, i(10821)),	-- Sower's Cloak [WotLK version of quest]
+						un(REMOVED_FROM_GAME, i(59557)),	-- Belt of Unwanted Aid [Cata version of quest]
+						un(REMOVED_FROM_GAME, i(59556)),	-- Shield of Inner Glow [Cata version of quest]
+						un(REMOVED_FROM_GAME, i(10820)),	-- Jackseed Belt [WotLK version of quest]
+						un(REMOVED_FROM_GAME, i(10821)),	-- Sower's Cloak [WotLK version of quest]
 					},
 				}),
 				q(14063, {	-- Mutiny, Mon!
@@ -573,8 +573,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { MAGE },
 					["g"] = {
-						un(2, i(7512)),	-- Nether-Lace Robe
-						un(2, i(9515)),	-- Nether-Lace Tunic
+						un(REMOVED_FROM_GAME, i(7512)),	-- Nether-Lace Robe
+						un(REMOVED_FROM_GAME, i(9515)),	-- Nether-Lace Tunic
 					},
 				}),
 				q(29027, {	-- Nugget Slugs
@@ -709,8 +709,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 4141 },	-- Control Console
 					["g"] = {
-						un(2, i(5324)),	-- Engineer's Hammer
-						un(2, i(5325)),	-- Welding Shield
+						un(REMOVED_FROM_GAME, i(5324)),	-- Engineer's Hammer
+						un(REMOVED_FROM_GAME, i(5325)),	-- Welding Shield
 					},
 				}),
 				q(14003, {	-- Samophlange Repair
@@ -723,9 +723,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 875,	-- Harpy Lieutenants
 					["g"] = {
-						un(2, i(5321)),	-- 	Elegant Shortsword
-						un(2, i(5279)),	-- 	Harpy Skinner
-						un(2, i(5318)),	-- 	Zhovur Axe
+						un(REMOVED_FROM_GAME, i(5321)),	-- 	Elegant Shortsword
+						un(REMOVED_FROM_GAME, i(5279)),	-- 	Harpy Skinner
+						un(REMOVED_FROM_GAME, i(5318)),	-- 	Zhovur Axe
 					},
 				}),
 				q(29089, {	-- Sludge Beast!
@@ -761,8 +761,8 @@ _.Zones =
 					["provider"] = { "n", 3391 },	-- Gazlowe
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(5320)),	-- Padded Lamellar Boots
-						un(2, i(5337)),	-- Wayfaring Gloves
+						un(REMOVED_FROM_GAME, i(5320)),	-- Padded Lamellar Boots
+						un(REMOVED_FROM_GAME, i(5337)),	-- Wayfaring Gloves
 					},
 				}),
 				q(5041,  {	-- Supplies for the Crossroads
@@ -798,8 +798,8 @@ _.Zones =
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
 					["classes"] = { WARLOCK },
 					["g"] = {
-						un(2, i(15108)),	-- Orb of Dar'Orahil
-						un(2, i(15106)),	-- Staff of Dar'Orahil
+						un(REMOVED_FROM_GAME, i(15108)),	-- Orb of Dar'Orahil
+						un(REMOVED_FROM_GAME, i(15106)),	-- Staff of Dar'Orahil
 					},
 				}),
 				q(4975,  {	-- The Completed Orb of Noh'Orahil
@@ -807,8 +807,8 @@ _.Zones =
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
 					["classes"] = { WARLOCK },
 					["g"] = {
-						un(2, i(15107)),	-- Orb of Noh'Orahil
-						un(2, i(15105)),	-- Staff of Noh'Orahil
+						un(REMOVED_FROM_GAME, i(15107)),	-- Orb of Noh'Orahil
+						un(REMOVED_FROM_GAME, i(15105)),	-- Staff of Noh'Orahil
 					},
 				}),
 				q(4786,  {	-- The Completed Robe
@@ -816,7 +816,7 @@ _.Zones =
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
 					["classes"] = { WARLOCK },
 					["g"] = {
-						un(2, i(6900)),	-- Enchanted Gold Bloodrobe
+						un(REMOVED_FROM_GAME, i(6900)),	-- Enchanted Gold Bloodrobe
 					},
 				}),
 				q(863,   {	-- The Escape
@@ -829,8 +829,8 @@ _.Zones =
 						i(59578),	-- Bracers of Angry Mutterings
 						i(59579),	-- Nozzlepot Leggings
 						i(131222),	-- Nozzlepot Legwraps
-						un(2, i(5326)),	-- Flaring Baton  NOTE: Old reward, quest repurposed
-						un(2, i(5327)),	-- Greasy Tinker's Pants  NOTE: Old reward, quest repurposed
+						un(REMOVED_FROM_GAME, i(5326)),	-- Flaring Baton  NOTE: Old reward, quest repurposed
+						un(REMOVED_FROM_GAME, i(5327)),	-- Greasy Tinker's Pants  NOTE: Old reward, quest repurposed
 					},
 				}),
 				q(872,   {	-- The Far Watch Offensive
@@ -843,8 +843,8 @@ _.Zones =
 						i(59543),	-- Pigman Belt
 						i(59544),	-- Kargal's Breastplate
 						i(131224),	-- Pigman Waistband
-						un(2, i(5275)),	-- Binding Girdle NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
-						un(2, i(5328)),	-- Cinched Belt NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
+						un(REMOVED_FROM_GAME, i(5275)),	-- Binding Girdle NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
+						un(REMOVED_FROM_GAME, i(5328)),	-- Cinched Belt NOTE: Old reward, quest repurposed, original quest name was The Disruption Ends
 					},
 				}),
 				q(870,   {	-- The Forgotten Pools
@@ -976,7 +976,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(7120)),	-- Ruga's Bulwark
+						un(REMOVED_FROM_GAME, i(7120)),	-- Ruga's Bulwark
 					},
 				}),
 				q(1839,  {	-- Ula'elek and the Brutal Gauntlets

@@ -119,7 +119,7 @@ _.Zones =
 				n(4368,   {	-- Strashaz Myrmidon
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						un(2, i(12718)),	-- Plans: Runic Breastplate
+						un(REMOVED_FROM_GAME, i(12718)),	-- Plans: Runic Breastplate
 					},
 				}),
 				n(50901,  {	-- Teromak

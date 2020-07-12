@@ -24,7 +24,7 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(7987)),	-- Plans: Ornate Mithril Helm
+						un(REMOVED_FROM_GAME, i(7987)),	-- Plans: Ornate Mithril Helm
 					},
 				}),
 				q(3913,  {	-- A Grave Situation
@@ -94,7 +94,7 @@ _.Zones =
 					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(8524)),	-- Model 4711-FTZ Power Source
+						un(REMOVED_FROM_GAME, i(8524)),	-- Model 4711-FTZ Power Source
 					},
 				}),
 				q(9269,  {	-- Atiesh, Greatstaff of the Guardian
@@ -236,8 +236,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 10460 },	-- Prospector Ironboot
 					["g"] = {
-						un(2, i(20218)),	-- Faded Hakkari Cloak
-						un(2, i(20219)),	-- Tattered Hakkari Cape
+						un(REMOVED_FROM_GAME, i(20218)),	-- Faded Hakkari Cloak
+						un(REMOVED_FROM_GAME, i(20219)),	-- Tattered Hakkari Cape
 					},
 				}),
 				q(24932, {	-- Cutting Losses
@@ -292,8 +292,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 7881 },	-- Stoley
 					["g"] = {
-						un(2, i(9637)),	-- Shinkicker Boots
-						un(2, i(9636)),	-- Swashbuckler Sash
+						un(REMOVED_FROM_GAME, i(9637)),	-- Shinkicker Boots
+						un(REMOVED_FROM_GAME, i(9636)),	-- Swashbuckler Sash
 					},
 				}),
 				q(3321,  {	-- Did You Lose This?
@@ -307,7 +307,7 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(10418)),	-- Glimmering Mithril Insignia
+						un(REMOVED_FROM_GAME, i(10418)),	-- Glimmering Mithril Insignia
 					},
 					
 				}),
@@ -370,8 +370,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 7771 },	-- Marvon Rivetseeker
 					["g"] = {
-						un(2, i(10827)),	-- Surveyor's Tunic
-						un(2, i(10826)),	-- Staff of Lore
+						un(REMOVED_FROM_GAME, i(10827)),	-- Surveyor's Tunic
+						un(REMOVED_FROM_GAME, i(10826)),	-- Staff of Lore
 					},
 				}),
 				q(25522, {	-- Gargantapid
@@ -439,7 +439,7 @@ _.Zones =
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(2, i(12688, {	-- Plans: Imperial Plate Belt
+						un(REMOVED_FROM_GAME, i(12688, {	-- Plans: Imperial Plate Belt
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
 						})),
 					},
@@ -449,7 +449,7 @@ _.Zones =
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(2, i(12700, {	-- Plans: Imperial Plate Boots
+						un(REMOVED_FROM_GAME, i(12700, {	-- Plans: Imperial Plate Boots
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
 						})),
 					},
@@ -459,7 +459,7 @@ _.Zones =
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(2, i(12690, {	-- Plans: Imperial Plate Bracers
+						un(REMOVED_FROM_GAME, i(12690, {	-- Plans: Imperial Plate Bracers
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
 						})),
 					},
@@ -469,7 +469,7 @@ _.Zones =
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(2, i(12705, {	-- Plans: Imperial Plate Chest
+						un(REMOVED_FROM_GAME, i(12705, {	-- Plans: Imperial Plate Chest
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
 						})),
 					},
@@ -479,7 +479,7 @@ _.Zones =
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(2, i(12701, {	-- Plans: Imperial Plate Helm
+						un(REMOVED_FROM_GAME, i(12701, {	-- Plans: Imperial Plate Helm
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
 						})),
 					},
@@ -489,7 +489,7 @@ _.Zones =
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(2, i(12715, {	-- Plans: Imperial Plate Leggings
+						un(REMOVED_FROM_GAME, i(12715, {	-- Plans: Imperial Plate Leggings
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
 						})),
 					},
@@ -499,7 +499,7 @@ _.Zones =
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(2, i(12687, {	-- Plans: Imperial Plate Shoulders
+						un(REMOVED_FROM_GAME, i(12687, {	-- Plans: Imperial Plate Shoulders
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
 						})),
 					},
@@ -697,9 +697,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 654,	-- Tanaris Field Sampling
 					["g"] = {
-						un(2, i(11502)),	-- Loreskin Shoulders
-						un(2, i(9635)),	-- Master Apothecary Cape
-						un(2, i(9634)),	-- Skilled Handling Gloves
+						un(REMOVED_FROM_GAME, i(11502)),	-- Loreskin Shoulders
+						un(REMOVED_FROM_GAME, i(9635)),	-- Master Apothecary Cape
+						un(REMOVED_FROM_GAME, i(9634)),	-- Skilled Handling Gloves
 					},
 				}),
 				q(8977,  {	-- Return to Deliana
@@ -798,8 +798,8 @@ _.Zones =
 					["provider"] = { "n", 4708 },	-- Shreev
 					["sourceQuest"] = 1188,	-- Safety First
 					["g"] = {
-						un(2, i(6726)),	-- Razzeric's Customized Seatbelt
-						un(2, i(6727)),	-- Razzeric's Racing Grips
+						un(REMOVED_FROM_GAME, i(6726)),	-- Razzeric's Customized Seatbelt
+						un(REMOVED_FROM_GAME, i(6727)),	-- Razzeric's Racing Grips
 					},
 				}),
 				q(25001, {	-- Sandscraper
@@ -893,7 +893,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(8524)),	-- Model 4711-FTZ Power Source
+						un(REMOVED_FROM_GAME, i(8524)),	-- Model 4711-FTZ Power Source
 					},
 				}),
 				q(53816, {	-- Some Reassembly Required
@@ -909,8 +909,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 7882 },	-- Security Chief Bilgewhizzle
 					["g"] = {
-						un(2, i(20640)),	-- Southsea Head Bucket
-						un(2, i(20641)),	-- Southsea Mojo Boots
+						un(REMOVED_FROM_GAME, i(20640)),	-- Southsea Head Bucket
+						un(REMOVED_FROM_GAME, i(20641)),	-- Southsea Mojo Boots
 					},
 				}),
 				q(2641, {	-- Sprinkle's Secret Ingredient
@@ -964,8 +964,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 11758 },	-- Andi Lynn
 					["g"] = {
-						un(2, i(16739)),	-- Rugwood Mantle
-						un(2, i(16738)),	-- Witherseed Gloves
+						un(REMOVED_FROM_GAME, i(16739)),	-- Rugwood Mantle
+						un(REMOVED_FROM_GAME, i(16738)),	-- Witherseed Gloves
 					},
 				}),
 				q(8921,  {	-- The Ectoplasmic Distiller
@@ -1009,7 +1009,7 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(7986)),	-- Plans: Ornate Mithril Breastplate
+						un(REMOVED_FROM_GAME, i(7986)),	-- Plans: Ornate Mithril Breastplate
 					},
 				}),
 				q(3527, {	-- The Prophecy of Mosh'aru
@@ -1093,7 +1093,7 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(7988)),	-- Plans: Ornate Mithril Boots
+						un(REMOVED_FROM_GAME, i(7988)),	-- Plans: Ornate Mithril Boots
 					},
 				}),
 				q(3362, {	-- Thistleshrub Valley
@@ -1171,8 +1171,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 5955 },	-- Tooga
 					["g"] = {
-						un(2, i(9642)),	-- Band of the Great Tortoise
-						un(2, i(9638)),	-- Chelonian Cuffs
+						un(REMOVED_FROM_GAME, i(9642)),	-- Band of the Great Tortoise
+						un(REMOVED_FROM_GAME, i(9638)),	-- Chelonian Cuffs
 					},
 				}),
 				q(3042, {	-- Troll Temper

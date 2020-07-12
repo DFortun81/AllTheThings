@@ -21,17 +21,17 @@ _.Instances = { tier(1, {	-- Classic
 						["title"] = "Atiesh, Greatstaff of the Guardian",
 						["icon"] = "Interface\\Icons\\INV_Staff_Medivh",
 						["isRaid"] = true,
-						["u"] = 2,
+						["u"] = REMOVED_FROM_GAME,
 						["groups"] = {
 							{
 								["itemID"] = 22726,	-- Splinter of Atiesh
 								["description"] = "This item used to drop from all of the bosses in Naxxramas.",
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									{
 										["itemID"] = 22727,	-- Frame of Atiesh
 										["questID"] = 9250,	-- Frame of Atiesh [Quest]
-										["u"] = 2,
+										["u"] = REMOVED_FROM_GAME,
 									},
 								},
 							},
@@ -39,16 +39,16 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 9251,	-- Atiesh, the Befouled Greatstaff
 								["sourceQuest"] = 9250,	-- Frame of Atiesh
 								["provider"] = { "n", 15192 },	-- Anachronos
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["questID"] = 9257,	-- Atiesh, Greatstaff of the Guardian [Priest]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 								["classes"] = { PRIEST },
 								["provider"] = { "n", 15192 },	-- Anachronos
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(2, i(22631)),	-- Atiesh, Greatstaff of the Guardian (Priest)
+									un(REMOVED_FROM_GAME, i(22631)),	-- Atiesh, Greatstaff of the Guardian (Priest)
 								},
 							},
 							{
@@ -56,9 +56,9 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 								["classes"] = { MAGE },
 								["provider"] = { "n", 15192 },	-- Anachronos
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(2, i(22589)),	-- Atiesh, Greatstaff of the Guardian (Mage)
+									un(REMOVED_FROM_GAME, i(22589)),	-- Atiesh, Greatstaff of the Guardian (Mage)
 								},
 							},
 							{
@@ -66,9 +66,9 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 								["classes"] = { WARLOCK },
 								["provider"] = { "n", 15192 },	-- Anachronos
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(2, i(22630)),	-- Atiesh, Greatstaff of the Guardian (Warlock)
+									un(REMOVED_FROM_GAME, i(22630)),	-- Atiesh, Greatstaff of the Guardian (Warlock)
 								},
 							},
 							{
@@ -76,9 +76,9 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 								["classes"] = { DRUID },
 								["provider"] = { "n", 15192 },	-- Anachronos
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
-									un(2, i(22632)),	-- Atiesh, Greatstaff of the Guardian (Druid)
+									un(REMOVED_FROM_GAME, i(22632)),	-- Atiesh, Greatstaff of the Guardian (Druid)
 								},
 							},
 						},
@@ -138,7 +138,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								{	-- Plans: Icebane Bracers
 									["recipeID"] = 28244,	-- Plans: Icebane Bracers
-									["u"] = 2,
+									["u"] = REMOVED_FROM_GAME,
 								},
 							},
 						},
@@ -150,7 +150,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								{	-- Plans: Icebane Breastplate
 									["recipeID"] = 28242,	-- Plans: Icebane Breastplate
-									["u"] = 2,
+									["u"] = REMOVED_FROM_GAME,
 								},
 							},
 						},
@@ -162,7 +162,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								{	-- Plans: Icebane Gauntlets
 									["recipeID"] = 28243,	-- Plans: Icebane Gauntlets
-									["u"] = 2,
+									["u"] = REMOVED_FROM_GAME,
 								},
 							},
 						},
@@ -226,7 +226,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
-								un(2, i(22707)),	-- Ramaladni's Icy Grasp
+								un(REMOVED_FROM_GAME, i(22707)),	-- Ramaladni's Icy Grasp
 							},
 						},
 						{	-- The Dread Citadel - Naxxramas [Honored]
@@ -283,10 +283,10 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = 40,
 							["groups"] = {
-								un(2, i(22700)),	-- Glacial Leggings
-								un(2, i(22699)),	-- Icebane Leggings
-								un(2, i(22702)),	-- Icy Scale Leggings
-								un(2, i(22701)),	-- Polar Leggings
+								un(REMOVED_FROM_GAME, i(22700)),	-- Glacial Leggings
+								un(REMOVED_FROM_GAME, i(22699)),	-- Icebane Leggings
+								un(REMOVED_FROM_GAME, i(22702)),	-- Icy Scale Leggings
+								un(REMOVED_FROM_GAME, i(22701)),	-- Polar Leggings
 							},
 						},
 						cl(1, {	-- Warrior
@@ -1029,50 +1029,50 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					}),
 					n(ZONEDROPS, {
-						un(2, i(23221)),	-- Misplaced Servo Arm
-						un(2, i(23044)),	-- Harbinger of Doom
-						un(2, i(23238)),	-- Stygian Buckler
-						un(2, i(23664)),	-- Pauldrons of Elemental Fury
-						un(2, i(23667)),	-- Spaulders of the Grand Crusader
-						un(2, i(23226)),	-- Ghoul Skin Tunic
-						un(2, i(23069)),	-- Necro-Knight's Garb
-						un(2, i(23666)),	-- Belt of the Grand Crusader
-						un(2, i(23663)),	-- Girdle of Elemental Fury
-						un(2, i(23665)),	-- Leggings of Elemental Fury
-						un(2, i(23668)),	-- Leggings of the Grand Crusader
-						un(2, i(23237)),	-- Ring of the Eternal Flame
+						un(REMOVED_FROM_GAME, i(23221)),	-- Misplaced Servo Arm
+						un(REMOVED_FROM_GAME, i(23044)),	-- Harbinger of Doom
+						un(REMOVED_FROM_GAME, i(23238)),	-- Stygian Buckler
+						un(REMOVED_FROM_GAME, i(23664)),	-- Pauldrons of Elemental Fury
+						un(REMOVED_FROM_GAME, i(23667)),	-- Spaulders of the Grand Crusader
+						un(REMOVED_FROM_GAME, i(23226)),	-- Ghoul Skin Tunic
+						un(REMOVED_FROM_GAME, i(23069)),	-- Necro-Knight's Garb
+						un(REMOVED_FROM_GAME, i(23666)),	-- Belt of the Grand Crusader
+						un(REMOVED_FROM_GAME, i(23663)),	-- Girdle of Elemental Fury
+						un(REMOVED_FROM_GAME, i(23665)),	-- Leggings of Elemental Fury
+						un(REMOVED_FROM_GAME, i(23668)),	-- Leggings of the Grand Crusader
+						un(REMOVED_FROM_GAME, i(23237)),	-- Ring of the Eternal Flame
 					}),
 					n(-368, { 	-- The Arachnid Quarter
 						["groups"] = {
 							n(15956, {	-- Anub'Rekhan
-								un(2, i(22937)),	-- Gem of Nerubis
-								un(2, i(22935)),	-- Touch of Frost
-								un(2, i(22938)),	-- Cryptfiend Silk Cloak
-								un(2, i(22936)),	-- Wristguards of Vengeance
-								un(2, i(22939)),	-- Band of Unanswered Prayers
-								un(2, i(22355)),	-- Desecrated Bracers (Rogue, Warrior)
-								un(2, i(22369)),	-- Desecrated Bindings (Mage, Priest Warlock)
-								un(2, i(22362)),	-- Desecrated Wristguards (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(22937)),	-- Gem of Nerubis
+								un(REMOVED_FROM_GAME, i(22935)),	-- Touch of Frost
+								un(REMOVED_FROM_GAME, i(22938)),	-- Cryptfiend Silk Cloak
+								un(REMOVED_FROM_GAME, i(22936)),	-- Wristguards of Vengeance
+								un(REMOVED_FROM_GAME, i(22939)),	-- Band of Unanswered Prayers
+								un(REMOVED_FROM_GAME, i(22355)),	-- Desecrated Bracers (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22369)),	-- Desecrated Bindings (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22362)),	-- Desecrated Wristguards (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(15953, {	-- Grand Widow Faerlina
-								un(2, i(22942)),	-- The Widow's Embrace
-								un(2, i(22806)),	-- Widow's Remorse
-								un(2, i(22943)),	-- Malice Stone Pendant
-								un(2, i(22940)),	-- Icebane Pauldrons
-								un(2, i(22941)),	-- Polar Shoulder Pads
-								un(2, i(22355)),	-- Desecrated Bracers (Rogue, Warrior)
-								un(2, i(22369)),	-- Desecrated Bindings (Mage, Priest Warlock)
-								un(2, i(22362)),	-- Desecrated Wristguards (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(22942)),	-- The Widow's Embrace
+								un(REMOVED_FROM_GAME, i(22806)),	-- Widow's Remorse
+								un(REMOVED_FROM_GAME, i(22943)),	-- Malice Stone Pendant
+								un(REMOVED_FROM_GAME, i(22940)),	-- Icebane Pauldrons
+								un(REMOVED_FROM_GAME, i(22941)),	-- Polar Shoulder Pads
+								un(REMOVED_FROM_GAME, i(22355)),	-- Desecrated Bracers (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22369)),	-- Desecrated Bindings (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22362)),	-- Desecrated Wristguards (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(15952, {	-- Maexxna
-								un(2, i(22804)),	-- Maexxna's Fang
-								un(2, i(22807)),	-- Wraith Blade
-								un(2, i(22947)),	-- Pendant of Forgotten Names
-								un(2, i(23220)),	-- Crystal Webbed Robe
-								un(2, i(22954)),	-- Kiss of the Spider
-								un(2, i(22357)),	-- Desecrated Gauntlets (Rogue, Warrior)
-								un(2, i(22371)),	-- Desecrated Gloves (Mage, Priest Warlock)
-								un(2, i(22364)),	-- Desecrated Handguards (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(22804)),	-- Maexxna's Fang
+								un(REMOVED_FROM_GAME, i(22807)),	-- Wraith Blade
+								un(REMOVED_FROM_GAME, i(22947)),	-- Pendant of Forgotten Names
+								un(REMOVED_FROM_GAME, i(23220)),	-- Crystal Webbed Robe
+								un(REMOVED_FROM_GAME, i(22954)),	-- Kiss of the Spider
+								un(REMOVED_FROM_GAME, i(22357)),	-- Desecrated Gauntlets (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22371)),	-- Desecrated Gloves (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22364)),	-- Desecrated Handguards (Druid, Hunter, Paladin, Shaman)
 							}),
 						},
 						["icon"] = "Interface\\Icons\\inv_trinket_naxxramas04",
@@ -1080,36 +1080,36 @@ _.Instances = { tier(1, {	-- Classic
 					n(-370, { 	-- The Plague Quarter
 						["groups"] = {
 							n(15954, {	-- Noth the Plaguebringer
-								un(2, i(22816)),	-- Hatchet of Sundered Bone
-								un(2, i(23029)),	-- Noth's Frigid Heart
-								un(2, i(23030)),	-- Cloak of the Scourge
-								un(2, i(23028)),	-- Hailstone Band
-								un(2, i(23031)),	-- Band of the Inevitable
-								un(2, i(23006)),	-- Libram of Light
-								un(2, i(23005)),	-- Totem of Flower Water
-								un(2, i(22356)),	-- Desecrated Waistguard (Rogue, Warrior)
-								un(2, i(22370)),	-- Desecrated Belt (Mage, Priest Warlock)
-								un(2, i(22363)),	-- Desecrated Girdle (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(22816)),	-- Hatchet of Sundered Bone
+								un(REMOVED_FROM_GAME, i(23029)),	-- Noth's Frigid Heart
+								un(REMOVED_FROM_GAME, i(23030)),	-- Cloak of the Scourge
+								un(REMOVED_FROM_GAME, i(23028)),	-- Hailstone Band
+								un(REMOVED_FROM_GAME, i(23031)),	-- Band of the Inevitable
+								un(REMOVED_FROM_GAME, i(23006)),	-- Libram of Light
+								un(REMOVED_FROM_GAME, i(23005)),	-- Totem of Flower Water
+								un(REMOVED_FROM_GAME, i(22356)),	-- Desecrated Waistguard (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22370)),	-- Desecrated Belt (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22363)),	-- Desecrated Girdle (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(15936, {	-- Heigan the Unclean
-								un(2, i(23019)),	-- Icebane Helmet
-								un(2, i(23033)),	-- Icy Scale Coif
-								un(2, i(23035)),	-- Preceptor's Hat
-								un(2, i(23036)),	-- Necklace of Necropsy
-								un(2, i(23068)),	-- Legplates of Carnage
-								un(2, i(22356)),	-- Desecrated Waistguard (Rogue, Warrior)
-								un(2, i(22370)),	-- Desecrated Belt (Mage, Priest Warlock)
-								un(2, i(22363)),	-- Desecrated Girdle (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(23019)),	-- Icebane Helmet
+								un(REMOVED_FROM_GAME, i(23033)),	-- Icy Scale Coif
+								un(REMOVED_FROM_GAME, i(23035)),	-- Preceptor's Hat
+								un(REMOVED_FROM_GAME, i(23036)),	-- Necklace of Necropsy
+								un(REMOVED_FROM_GAME, i(23068)),	-- Legplates of Carnage
+								un(REMOVED_FROM_GAME, i(22356)),	-- Desecrated Waistguard (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22370)),	-- Desecrated Belt (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22363)),	-- Desecrated Girdle (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(16011, {	-- Loatheb
-								un(2, i(22800)),	-- Brimstone Staff
-								un(2, i(23039)),	-- The Eye of Nerub
-								un(2, i(23038)),	-- Band of Unnatural Forces
-								un(2, i(23037)),	-- Ring of Spiritual Fervor
-								un(2, i(23042)),	-- Loatheb's Reflection
-								un(2, i(22352)),	-- Desecrated Legplates (Rogue, Warrior)
-								un(2, i(22366)),	-- Desecrated Leggings (Mage, Priest Warlock)
-								un(2, i(22359)),	-- Desecrated Legguards (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(22800)),	-- Brimstone Staff
+								un(REMOVED_FROM_GAME, i(23039)),	-- The Eye of Nerub
+								un(REMOVED_FROM_GAME, i(23038)),	-- Band of Unnatural Forces
+								un(REMOVED_FROM_GAME, i(23037)),	-- Ring of Spiritual Fervor
+								un(REMOVED_FROM_GAME, i(23042)),	-- Loatheb's Reflection
+								un(REMOVED_FROM_GAME, i(22352)),	-- Desecrated Legplates (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22366)),	-- Desecrated Leggings (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22359)),	-- Desecrated Legguards (Druid, Hunter, Paladin, Shaman)
 							}),
 						},
 						["icon"] = "Interface\\Icons\\inv_misc_cauldron_nature",
@@ -1119,45 +1119,45 @@ _.Instances = { tier(1, {	-- Classic
 							n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
 								["description"] = "Omarion is an artisan Blacksmithing, Leatherworking, and Tailoring craftsman. Unfortunately, he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",
 								["groups"] = {
-									un(2, i(22685)),	-- Pattern: Glacial Cloak
-									un(2, i(22684)),	-- Pattern: Glacial Gloves
-									un(2, i(22686)),	-- Pattern: Glacial Vest
-									un(2, i(22687)), 	-- Pattern: Glacial Wrists
-									un(2, i(22705)),	-- Pattern: Icebane Bracers
-									un(2, i(22703)),	-- Pattern: Icebane Breastplate
-									un(2, i(22704)),	-- Pattern: Icebane Gauntlets
-									un(2, i(22698)),	-- Pattern: Icy Scale Bracers
-									un(2, i(22696)),	-- Pattern: Icy Scale Breastplate
-									un(2, i(22697)),	-- Pattern: Icy Scale Gauntlets
-									un(2, i(22695)),	-- Pattern: Polar Bracers
-									un(2, i(22694)),	-- Pattern: Polar Gloves
-									un(2, i(22692)),	-- Pattern: Polar Tunic
-									un(2, i(22719, {	-- Omarion's Handbook
+									un(REMOVED_FROM_GAME, i(22685)),	-- Pattern: Glacial Cloak
+									un(REMOVED_FROM_GAME, i(22684)),	-- Pattern: Glacial Gloves
+									un(REMOVED_FROM_GAME, i(22686)),	-- Pattern: Glacial Vest
+									un(REMOVED_FROM_GAME, i(22687)), 	-- Pattern: Glacial Wrists
+									un(REMOVED_FROM_GAME, i(22705)),	-- Pattern: Icebane Bracers
+									un(REMOVED_FROM_GAME, i(22703)),	-- Pattern: Icebane Breastplate
+									un(REMOVED_FROM_GAME, i(22704)),	-- Pattern: Icebane Gauntlets
+									un(REMOVED_FROM_GAME, i(22698)),	-- Pattern: Icy Scale Bracers
+									un(REMOVED_FROM_GAME, i(22696)),	-- Pattern: Icy Scale Breastplate
+									un(REMOVED_FROM_GAME, i(22697)),	-- Pattern: Icy Scale Gauntlets
+									un(REMOVED_FROM_GAME, i(22695)),	-- Pattern: Polar Bracers
+									un(REMOVED_FROM_GAME, i(22694)),	-- Pattern: Polar Gloves
+									un(REMOVED_FROM_GAME, i(22692)),	-- Pattern: Polar Tunic
+									un(REMOVED_FROM_GAME, i(22719, {	-- Omarion's Handbook
 										["description"] = "Non-crafters can take this handbook to Craftsman Wilhelm at Light's Hope Chapel, who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
 										["questID"] = 9233,	-- Omarion's Handbook [Quest]
 									})),
 								},
 							}),
 							n(16061, {	-- Instructor Razuvious
-								un(2, i(23014)),	-- Iblis, Blade of the Fallen Seraph
-								un(2, i(23009)),	-- Wand of the Whispering Dead
-								un(2, i(23017)),	-- Veil of Eclipse
-								un(2, i(23219)),	-- Girdle of the Mentor
-								un(2, i(23018)),	-- Signet of the Fallen Defender
-								un(2, i(23004)),	-- Idol of Longevity
-								un(2, i(22358)),	-- Desecrated Sabatons (Rogue, Warrior)
-								un(2, i(22372)),	-- Desecrated Sandals (Mage, Priest Warlock)
-								un(2, i(22365)),	-- Desecrated Boots (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(23014)),	-- Iblis, Blade of the Fallen Seraph
+								un(REMOVED_FROM_GAME, i(23009)),	-- Wand of the Whispering Dead
+								un(REMOVED_FROM_GAME, i(23017)),	-- Veil of Eclipse
+								un(REMOVED_FROM_GAME, i(23219)),	-- Girdle of the Mentor
+								un(REMOVED_FROM_GAME, i(23018)),	-- Signet of the Fallen Defender
+								un(REMOVED_FROM_GAME, i(23004)),	-- Idol of Longevity
+								un(REMOVED_FROM_GAME, i(22358)),	-- Desecrated Sabatons (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22372)),	-- Desecrated Sandals (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22365)),	-- Desecrated Boots (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(16060, {	-- Gothik the Harvester
-								un(2, i(23032)),	-- Glacial Headdress
-								un(2, i(23020)),	-- Polar Helmet
-								un(2, i(23023)),	-- Sadist's Collar
-								un(2, i(23021)),	-- The Soul Harvester's Bindings
-								un(2, i(23073)),	-- Boots of Displacement
-								un(2, i(22358)),	-- Desecrated Sabatons (Rogue, Warrior)
-								un(2, i(22372)),	-- Desecrated Sandals (Mage, Priest Warlock)
-								un(2, i(22365)),	-- Desecrated Boots (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(23032)),	-- Glacial Headdress
+								un(REMOVED_FROM_GAME, i(23020)),	-- Polar Helmet
+								un(REMOVED_FROM_GAME, i(23023)),	-- Sadist's Collar
+								un(REMOVED_FROM_GAME, i(23021)),	-- The Soul Harvester's Bindings
+								un(REMOVED_FROM_GAME, i(23073)),	-- Boots of Displacement
+								un(REMOVED_FROM_GAME, i(22358)),	-- Desecrated Sabatons (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22372)),	-- Desecrated Sandals (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22365)),	-- Desecrated Boots (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(16062, {	-- Highlord Mograine <The Ashbringer>
 								{
@@ -1166,15 +1166,15 @@ _.Instances = { tier(1, {	-- Classic
 									["description"] = "This is here so that you can quickly compare the Corrupted Ashbringer with the original Ashbringer model. It was never available to players.\n\nThis weapon was eventually turned into an Artifact weapon with an updated model for the Legion expansion for Retribution Paladins.",
 									["collectible"] = false,
 								},
-								un(2, i(22691)),	-- Corrupted Ashbringer
-								un(2, i(22809)),	-- Maul of the Redeemed Crusader
-								un(2, i(22811)),	-- Soulstring
-								un(2, i(23071)),	-- Leggings of Apocalypse
-								un(2, i(23025)),	-- Seal of the Damned
-								un(2, i(23027)),	-- Warmth of Forgiveness
-								un(2, i(22349)),	-- Desecrated Breastplate (Rogue, Warrior)
-								un(2, i(22351)),	-- Desecrated Robe (Mage, Priest Warlock)
-								un(2, i(22350)),	-- Desecrated Tunic (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(22691)),	-- Corrupted Ashbringer
+								un(REMOVED_FROM_GAME, i(22809)),	-- Maul of the Redeemed Crusader
+								un(REMOVED_FROM_GAME, i(22811)),	-- Soulstring
+								un(REMOVED_FROM_GAME, i(23071)),	-- Leggings of Apocalypse
+								un(REMOVED_FROM_GAME, i(23025)),	-- Seal of the Damned
+								un(REMOVED_FROM_GAME, i(23027)),	-- Warmth of Forgiveness
+								un(REMOVED_FROM_GAME, i(22349)),	-- Desecrated Breastplate (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22351)),	-- Desecrated Robe (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22350)),	-- Desecrated Tunic (Druid, Hunter, Paladin, Shaman)
 							}),
 						},
 						["icon"] = "Interface\\Icons\\spell_deathknight_classicon",
@@ -1182,53 +1182,53 @@ _.Instances = { tier(1, {	-- Classic
 					n(-367, { 	-- The Construct Quarter
 						["groups"] = {
 							n(16028, {	-- Patchwerk
-								un(2, i(22815)),	-- Severance
-								un(2, i(22818)),	-- The Plague Bearer
-								un(2, i(22820)),	-- Wand of Fates
-								un(2, i(22960)),	-- Cloak of Suturing
-								un(2, i(22961)),	-- Band of Reanimation
-								un(2, i(22354)),	-- Desecrated Pauldrons (Rogue, Warrior)
-								un(2, i(22368)),	-- Desecrated Shoulderpads (Mage, Priest Warlock)
-								un(2, i(22361)),	-- Desecrated Spaulders (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(22815)),	-- Severance
+								un(REMOVED_FROM_GAME, i(22818)),	-- The Plague Bearer
+								un(REMOVED_FROM_GAME, i(22820)),	-- Wand of Fates
+								un(REMOVED_FROM_GAME, i(22960)),	-- Cloak of Suturing
+								un(REMOVED_FROM_GAME, i(22961)),	-- Band of Reanimation
+								un(REMOVED_FROM_GAME, i(22354)),	-- Desecrated Pauldrons (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22368)),	-- Desecrated Shoulderpads (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22361)),	-- Desecrated Spaulders (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(15931, {	-- Grobbulus
-								un(2, i(22803)),	-- Midnight Haze
-								un(2, i(22988)),	-- The End of Dreams
-								un(2, i(22810)),	-- Toxin Injector
-								un(2, i(22968)),	-- Glacial Mantle
-								un(2, i(22967)),	-- Icy Scale Spaulders
-								un(2, i(22354)),	-- Desecrated Pauldrons (Rogue, Warrior)
-								un(2, i(22368)),	-- Desecrated Shoulderpads (Mage, Priest Warlock)
-								un(2, i(22361)),	-- Desecrated Spaulders (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(22803)),	-- Midnight Haze
+								un(REMOVED_FROM_GAME, i(22988)),	-- The End of Dreams
+								un(REMOVED_FROM_GAME, i(22810)),	-- Toxin Injector
+								un(REMOVED_FROM_GAME, i(22968)),	-- Glacial Mantle
+								un(REMOVED_FROM_GAME, i(22967)),	-- Icy Scale Spaulders
+								un(REMOVED_FROM_GAME, i(22354)),	-- Desecrated Pauldrons (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22368)),	-- Desecrated Shoulderpads (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22361)),	-- Desecrated Spaulders (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(15932, {	-- Gluth
-								un(2, i(22813)),	-- Claymore of Unholy Might
-								un(2, i(23075)),	-- Death's Bargain
-								un(2, i(22994)),	-- Digested Hand of Power
-								un(2, i(22981)),	-- Gluth's Missing Collar
-								un(2, i(22983)),	-- Rime Covered Mantle
-								un(2, i(22354)),	-- Desecrated Pauldrons (Rogue, Warrior)
-								un(2, i(22368)),	-- Desecrated Shoulderpads (Mage, Priest Warlock)
-								un(2, i(22361)),	-- Desecrated Spaulders (Druid, Hunter, Paladin, Shaman)
-								un(2, i(22358)),	-- Desecrated Sabatons (Rogue, Warrior)
-								un(2, i(22372)),	-- Desecrated Sandals (Mage, Priest Warlock)
-								un(2, i(22365)),	-- Desecrated Boots (Druid, Hunter, Paladin, Shaman)
-								un(2, i(22356)),	-- Desecrated Waistguard (Rogue, Warrior)
-								un(2, i(22370)),	-- Desecrated Belt (Mage, Priest Warlock)
-								un(2, i(22363)),	-- Desecrated Girdle (Druid, Hunter, Paladin, Shaman)
-								un(2, i(22355)),	-- Desecrated Bracers (Rogue, Warrior)
-								un(2, i(22369)),	-- Desecrated Bindings (Mage, Priest Warlock)
-								un(2, i(22362)),	-- Desecrated Wristguards (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(22813)),	-- Claymore of Unholy Might
+								un(REMOVED_FROM_GAME, i(23075)),	-- Death's Bargain
+								un(REMOVED_FROM_GAME, i(22994)),	-- Digested Hand of Power
+								un(REMOVED_FROM_GAME, i(22981)),	-- Gluth's Missing Collar
+								un(REMOVED_FROM_GAME, i(22983)),	-- Rime Covered Mantle
+								un(REMOVED_FROM_GAME, i(22354)),	-- Desecrated Pauldrons (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22368)),	-- Desecrated Shoulderpads (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22361)),	-- Desecrated Spaulders (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(22358)),	-- Desecrated Sabatons (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22372)),	-- Desecrated Sandals (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22365)),	-- Desecrated Boots (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(22356)),	-- Desecrated Waistguard (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22370)),	-- Desecrated Belt (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22363)),	-- Desecrated Girdle (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(22355)),	-- Desecrated Bracers (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22369)),	-- Desecrated Bindings (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22362)),	-- Desecrated Wristguards (Druid, Hunter, Paladin, Shaman)
 							}),
 							n(15928, {	-- Thaddius
-								un(2, i(22801)),	-- Spire of Twilight
-								un(2, i(22808)),	-- The Castigator
-								un(2, i(23000)),	-- Plated Abomination Ribcage
-								un(2, i(23070)),	-- Leggings of Polarity
-								un(2, i(23001)),	-- Eye of Diminution
-								un(2, i(22353)),	-- Desecrated Helmet (Rogue, Warrior)
-								un(2, i(22367)),	-- Desecrated Circlet (Mage, Priest Warlock)
-								un(2, i(22360)),	-- Desecrated Headpiece (Druid, Hunter, Paladin, Shaman)
+								un(REMOVED_FROM_GAME, i(22801)),	-- Spire of Twilight
+								un(REMOVED_FROM_GAME, i(22808)),	-- The Castigator
+								un(REMOVED_FROM_GAME, i(23000)),	-- Plated Abomination Ribcage
+								un(REMOVED_FROM_GAME, i(23070)),	-- Leggings of Polarity
+								un(REMOVED_FROM_GAME, i(23001)),	-- Eye of Diminution
+								un(REMOVED_FROM_GAME, i(22353)),	-- Desecrated Helmet (Rogue, Warrior)
+								un(REMOVED_FROM_GAME, i(22367)),	-- Desecrated Circlet (Mage, Priest Warlock)
+								un(REMOVED_FROM_GAME, i(22360)),	-- Desecrated Headpiece (Druid, Hunter, Paladin, Shaman)
 							}),
 						},
 						["icon"] = "Interface\\Icons\\ability_rogue_deviouspoisons",
@@ -1236,52 +1236,52 @@ _.Instances = { tier(1, {	-- Classic
 					n(-371, { 	-- The Upper Necropolis
 						["groups"] = {
 							n(15989, {	-- Sapphiron
-								un(2, i(23242)),	-- Claw of the Frost Wyrm
-								un(2, i(23043)),	-- The Face of Death
-								un(2, i(23049)),	-- Sapphiron's Left Eye
-								un(2, i(23048)),	-- Sapphiron's Right Eye
-								un(2, i(23050)),	-- Cloak of the Necropolis
-								un(2, i(23045)),	-- Shroud of Dominion
-								un(2, i(23072)),	-- Fists of the Unrelenting
-								un(2, i(23047)),	-- Eye of the Dead
-								un(2, i(23040)),	-- Glyph of Deflection
-								un(2, i(23041)),	-- Slayer's Crest
-								un(2, i(23046)),	-- The Restrained Essence of Sapphiron
-								un(2, i(23549)),	-- Fortitude of the Scourge
-								un(2, i(23548)),	-- Might of the Scourge
-								un(2, i(23545)),	-- Power of the Scourge
-								un(2, i(23547)),	-- Resilience of the Scourge
+								un(REMOVED_FROM_GAME, i(23242)),	-- Claw of the Frost Wyrm
+								un(REMOVED_FROM_GAME, i(23043)),	-- The Face of Death
+								un(REMOVED_FROM_GAME, i(23049)),	-- Sapphiron's Left Eye
+								un(REMOVED_FROM_GAME, i(23048)),	-- Sapphiron's Right Eye
+								un(REMOVED_FROM_GAME, i(23050)),	-- Cloak of the Necropolis
+								un(REMOVED_FROM_GAME, i(23045)),	-- Shroud of Dominion
+								un(REMOVED_FROM_GAME, i(23072)),	-- Fists of the Unrelenting
+								un(REMOVED_FROM_GAME, i(23047)),	-- Eye of the Dead
+								un(REMOVED_FROM_GAME, i(23040)),	-- Glyph of Deflection
+								un(REMOVED_FROM_GAME, i(23041)),	-- Slayer's Crest
+								un(REMOVED_FROM_GAME, i(23046)),	-- The Restrained Essence of Sapphiron
+								un(REMOVED_FROM_GAME, i(23549)),	-- Fortitude of the Scourge
+								un(REMOVED_FROM_GAME, i(23548)),	-- Might of the Scourge
+								un(REMOVED_FROM_GAME, i(23545)),	-- Power of the Scourge
+								un(REMOVED_FROM_GAME, i(23547)),	-- Resilience of the Scourge
 							}),
 							n(15990, {	-- Kel'Thuzad
 								{
 									["itemID"] = 22520,	-- The Phylactery of Kel'Thuzad
 									["questID"] = 9120,	-- The Fall of Kel'Thuzad
-									["u"] = 2,
+									["u"] = REMOVED_FROM_GAME,
 									["groups"] = {
-										un(2, i(23206)),	-- Mark of the Champion
-										un(2, i(23207)),	-- Mark of the Champion
+										un(REMOVED_FROM_GAME, i(23206)),	-- Mark of the Champion
+										un(REMOVED_FROM_GAME, i(23207)),	-- Mark of the Champion
 									},
 								},
-								un(2, i(22821)),	-- Doomfinger
-								un(2, i(23057)),	-- Gem of Trapped Innocents
-								un(2, i(23054)),	-- Gressil, Dawn of Ruin
-								un(2, i(23056)),	-- Hammer of the Twisting Nether
-								un(2, i(22802)),	-- Kingsfall
-								un(2, i(22798)),	-- Might of Menethil
-								un(2, i(22812)),	-- Nerubian Slavemaker
-								un(2, i(22799)),	-- Soulseeker
-								un(2, i(23577)),	-- The Hungering Cold
-								un(2, i(22819)),	-- Shield of Condemnation
-								un(2, i(23053)),	-- Stormrage's Talisman of Seething
-								un(2, i(23060)),	-- Bonescythe Ring
-								un(2, i(23062)),	-- Frostfire Ring
-								un(2, i(23063)),	-- Plagueheart Ring
-								un(2, i(23061)),	-- Ring of Faith
-								un(2, i(23066)),	-- Ring of Redemption
-								un(2, i(23067)),	-- Ring of the Cryptstalker
-								un(2, i(23059)),	-- Ring of the Dreadnaught
-								un(2, i(23064)),	-- Ring of the Dreamwalker
-								un(2, i(23065)),	-- Ring of the Earthshatterer
+								un(REMOVED_FROM_GAME, i(22821)),	-- Doomfinger
+								un(REMOVED_FROM_GAME, i(23057)),	-- Gem of Trapped Innocents
+								un(REMOVED_FROM_GAME, i(23054)),	-- Gressil, Dawn of Ruin
+								un(REMOVED_FROM_GAME, i(23056)),	-- Hammer of the Twisting Nether
+								un(REMOVED_FROM_GAME, i(22802)),	-- Kingsfall
+								un(REMOVED_FROM_GAME, i(22798)),	-- Might of Menethil
+								un(REMOVED_FROM_GAME, i(22812)),	-- Nerubian Slavemaker
+								un(REMOVED_FROM_GAME, i(22799)),	-- Soulseeker
+								un(REMOVED_FROM_GAME, i(23577)),	-- The Hungering Cold
+								un(REMOVED_FROM_GAME, i(22819)),	-- Shield of Condemnation
+								un(REMOVED_FROM_GAME, i(23053)),	-- Stormrage's Talisman of Seething
+								un(REMOVED_FROM_GAME, i(23060)),	-- Bonescythe Ring
+								un(REMOVED_FROM_GAME, i(23062)),	-- Frostfire Ring
+								un(REMOVED_FROM_GAME, i(23063)),	-- Plagueheart Ring
+								un(REMOVED_FROM_GAME, i(23061)),	-- Ring of Faith
+								un(REMOVED_FROM_GAME, i(23066)),	-- Ring of Redemption
+								un(REMOVED_FROM_GAME, i(23067)),	-- Ring of the Cryptstalker
+								un(REMOVED_FROM_GAME, i(23059)),	-- Ring of the Dreadnaught
+								un(REMOVED_FROM_GAME, i(23064)),	-- Ring of the Dreamwalker
+								un(REMOVED_FROM_GAME, i(23065)),	-- Ring of the Earthshatterer
 							}),
 						},
 						["icon"] = "Interface\\Icons\\inv_misc_head_dragon_blue",

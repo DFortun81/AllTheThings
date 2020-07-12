@@ -31,22 +31,22 @@ _.ExpansionFeatures =
 							["provider"] = { "i", 140495 },	-- Torn Invitation
 						}),
 						un(40, q(43557, {	-- Assault on Violet Hold: Into the Violet Hold(Normal)
-							un(2, i(141164)),	-- Violet Hold Contraband Locker (Normal)
+							un(REMOVED_FROM_GAME, i(141164)),	-- Violet Hold Contraband Locker (Normal)
 						})),
 						un(40, q(44258, {	-- Assault on Violet Hold: Into the Violet Hold (Heroic)
-							un(2, i(141174)),	-- Violet Hold Contraband Locker (Heroic)
+							un(REMOVED_FROM_GAME, i(141174)),	-- Violet Hold Contraband Locker (Heroic)
 						})),
 						un(40, q(44259, {	-- Assault on Violet Hold: Into the Violet Hold (Mythic)
-							un(2, i(141184)),	-- Violet Hold Contraband Locker (Mythic)
+							un(REMOVED_FROM_GAME, i(141184)),	-- Violet Hold Contraband Locker (Mythic)
 						})),
 						un(40, q(43545, {	-- Black Rook Hold: The Lord of Black Rook Hold (Normal)
-							un(2, i(141156)),	-- Haunted Ravencrest Keepsake (Normal)
+							un(REMOVED_FROM_GAME, i(141156)),	-- Haunted Ravencrest Keepsake (Normal)
 						})),
 						un(40, q(44276, {	-- Black Rook Hold: The Lord of Black Rook Hold (Heroic)
-							un(2, i(141166)),	-- Haunted Ravencrest Keepsake (Heroic)
+							un(REMOVED_FROM_GAME, i(141166)),	-- Haunted Ravencrest Keepsake (Heroic)
 						})),
 						un(40, q(44277, {	-- Black Rook Hold: The Lord of Black Rook Hold (Mythic)
-							un(2, i(141176)),	-- Haunted Ravencrest Keepsake (Mythic)
+							un(REMOVED_FROM_GAME, i(141176)),	-- Haunted Ravencrest Keepsake (Mythic)
 						})),
 						q(44865, {	-- Butler to the Great
 							["provider"] = { "n", 115551 },	-- Phantom Valet
@@ -55,68 +55,68 @@ _.ExpansionFeatures =
 							},
 						}),
 						un(40, q(43550, {	-- Court of Stars: Into the Court of Stars (Normal)
-							un(2, i(141157)),	-- Nightborne Rucksack (Normal)
+							un(REMOVED_FROM_GAME, i(141157)),	-- Nightborne Rucksack (Normal)
 						})),
 						un(40, q(44274, {	-- Court of Stars: Into the Court of Stars (Heroic)
-							un(2, i(141167)),	-- Nightborne Rucksack (Heroic)
+							un(REMOVED_FROM_GAME, i(141167)),	-- Nightborne Rucksack (Heroic)
 						})),
 						un(40, q(44275, {	-- Court of Stars: Into the Court of Stars (Mythic)
-							un(2, i(141177)),	-- Nightborne Rucksack (Mythic)
+							un(REMOVED_FROM_GAME, i(141177)),	-- Nightborne Rucksack (Mythic)
 						})),
 						un(40, q(43551, {	-- Darkheart Thicket: Into Darkheart Thicket (Normal)
-							un(2, i(141158)),	-- Despoiled Keeper's Cache (Normal)
+							un(REMOVED_FROM_GAME, i(141158)),	-- Despoiled Keeper's Cache (Normal)
 						})),
 						un(40, q(44272, {	-- Darkheart Thicket: Into Darkheart Thicket (Heroic)
-							un(2, i(141168)),	-- Despoiled Keeper's Cache (Heroic)
+							un(REMOVED_FROM_GAME, i(141168)),	-- Despoiled Keeper's Cache (Heroic)
 						})),
 						un(40, q(44273, {	-- Darkheart Thicket: Into Darkheart Thicket (Mythic)
-							un(2, i(141178)),	-- Despoiled Keeper's Cache (Mythic)
+							un(REMOVED_FROM_GAME, i(141178)),	-- Despoiled Keeper's Cache (Mythic)
 						})),
 						un(40, q(43552, {	-- Eye of Azshara: Into the Eye of Azshara (Normal)
-							un(2, i(141159)),	-- Watertight Salvage Bag (Normal)
+							un(REMOVED_FROM_GAME, i(141159)),	-- Watertight Salvage Bag (Normal)
 						})),
 						un(40, q(44270, {	-- Eye of Azshara: Into the Eye of Azshara (Heroic)
-							un(2, i(141169)),	-- Watertight Salvage Bag (Heroic)
+							un(REMOVED_FROM_GAME, i(141169)),	-- Watertight Salvage Bag (Heroic)
 						})),
 						un(40, q(44271, {	-- Eye of Azshara: Into the Eye of Azshara (Mythic)
-							un(2, i(141179)),	-- Watertight Salvage Bag (Mythic)
+							un(REMOVED_FROM_GAME, i(141179)),	-- Watertight Salvage Bag (Mythic)
 						})),
 						q(44555, {	-- Khadgar's Discovery
 							["lvl"] = 110,
 						}),
 						un(40, q(43553, {	-- Maw of Souls: Into the Maw of Souls(Normal)
-							un(2, i(141160)),	-- Seaweed-Encrusted Satchel (Normal)
+							un(REMOVED_FROM_GAME, i(141160)),	-- Seaweed-Encrusted Satchel (Normal)
 						})),
 						un(40, q(44266, {	-- Maw of Souls: Into the Maw of Souls (Heroic)
-							un(2, i(141170)),	-- Seaweed-Encrusted Satchel (Heroic)
+							un(REMOVED_FROM_GAME, i(141170)),	-- Seaweed-Encrusted Satchel (Heroic)
 						})),
 						un(40, q(44267, {	-- Maw of Souls: Into the Maw of Souls (Mythic)
-							un(2, i(141180)),	-- Seaweed-Encrusted Satchel (Mythic)
+							un(REMOVED_FROM_GAME, i(141180)),	-- Seaweed-Encrusted Satchel (Mythic)
 						})),
 						un(40, q(43554, {	-- Neltharion's Lair: Into Neltharion's Lair(Normal)
-							un(2, i(141161)),	-- Cache of the Black Dragon (Normal)
+							un(REMOVED_FROM_GAME, i(141161)),	-- Cache of the Black Dragon (Normal)
 						})),
 						un(40, q(44264, {	-- Neltharion's Lair: Into Neltharion's Lair (Heroic)
-							un(2, i(141171)),	-- Cache of the Black Dragon (Heroic)
+							un(REMOVED_FROM_GAME, i(141171)),	-- Cache of the Black Dragon (Heroic)
 						})),
 						un(40, q(44265, {	-- Neltharion's Lair: Into Neltharion's Lair (Mythic)
-							un(2, i(141181)),	-- Cache of the Black Dragon (Mythic)
+							un(REMOVED_FROM_GAME, i(141181)),	-- Cache of the Black Dragon (Mythic)
 						})),
 						un(40, q(43509, {	-- Odyn's Challenge (Normal)
-							un(2, i(141155)),	-- Challenger's Spoils (Normal)
+							un(REMOVED_FROM_GAME, i(141155)),	-- Challenger's Spoils (Normal)
 						})),
 						un(40, q(44268, {	-- Odyn's Challenge (Heroic)
-							un(2, i(141165)),	-- Challenger's Spoils (Heroic)
+							un(REMOVED_FROM_GAME, i(141165)),	-- Challenger's Spoils (Heroic)
 						})),
 						un(40, q(44269, {	-- Odyn's Challenge (Mythic)
-							un(2, i(141175)),	-- Challenger's Spoils (Mythic)
+							un(REMOVED_FROM_GAME, i(141175)),	-- Challenger's Spoils (Mythic)
 						})),
 						q(39718, {	-- Paradise Lost
 							["provider"] = { "n", 98613 },	-- Scouting Map
 							["isBreadcrumb"] = true,
 						}),
 						un(40, q(44917, {	-- Return to Karazhan: The Tower of Power (No Tag but Mythic) 
-							un(2, i(142342)),	-- Glittering Pack (No Tag but Mythic) 
+							un(REMOVED_FROM_GAME, i(142342)),	-- Glittering Pack (No Tag but Mythic) 
 						})),
 						q(39735, {	-- Stormheim (A)
 							["lvl"] = 98,
@@ -129,13 +129,13 @@ _.ExpansionFeatures =
 							["altQuests"] = { 44701 },	-- Stormheim (H) from Archmage Landon in Stormheim
 						}),
 						un(40, q(43555, {	-- The Arcway: Into the Arcway (Normal) -- 
-							un(2, i(141162)),	-- Unmarked Suramar Vault Crate (Normal)
+							un(REMOVED_FROM_GAME, i(141162)),	-- Unmarked Suramar Vault Crate (Normal)
 						})),
 						un(40, q(44262, {	-- The Arcway: Into the Arcway (Heroic)
-							un(2, i(141172)),	-- Unmarked Suramar Vault Crate (Heroic)
+							un(REMOVED_FROM_GAME, i(141172)),	-- Unmarked Suramar Vault Crate (Heroic)
 						})),
 						un(40, q(44263, {	-- The Arcway: Into the Arcway (Mythic)
-							un(2, i(141182)),	-- Unmarked Suramar Vault Crate (Mythic)
+							un(REMOVED_FROM_GAME, i(141182)),	-- Unmarked Suramar Vault Crate (Mythic)
 						})),
 						q(39731, {	-- The Tranquil Forest
 							["sourceQuests"] = { 44545 },	-- Pressing the Assault
@@ -143,13 +143,13 @@ _.ExpansionFeatures =
 							["isBreadcrumb"] = true,
 						}),
 						un(40, q(43556, {	-- Vault of the Wardens: Into the Vault of the Wardens (Normal)
-							un(2, i(141163)),	-- Bag of Confiscated Materials (Normal)
+							un(REMOVED_FROM_GAME, i(141163)),	-- Bag of Confiscated Materials (Normal)
 						})),
 						un(40, q(44260, {	-- Vault of the Wardens: Into the Vault of the Wardens (Heroic)
-							un(2, i(141173)),	-- Bag of Confiscated Materials (Heroic)
+							un(REMOVED_FROM_GAME, i(141173)),	-- Bag of Confiscated Materials (Heroic)
 						})),
 						un(40, q(44261, {	-- Vault of the Wardens: Into the Vault of the Wardens (Mythic)
-							un(2, i(141183)),	-- Bag of Confiscated Materials (Mythic)
+							un(REMOVED_FROM_GAME, i(141183)),	-- Bag of Confiscated Materials (Mythic)
 						})),
 						q(44058,  {  -- Volpin the Elusive
 							i(137573),	-- Reins of the Llothien Prowler
@@ -219,7 +219,7 @@ _.ExpansionFeatures =
 						q(45173, {	-- Desperate Times
 							["provider"] = { "i", 143329 },	-- Dire Summons
 							["g"] = {
-								un(2, i(143607)),	-- Solider's Footlocker
+								un(REMOVED_FROM_GAME, i(143607)),	-- Solider's Footlocker
 							},
 							["u"] = 40,
 						}),
@@ -231,8 +231,8 @@ _.ExpansionFeatures =
 						q(45179, {	-- Win the Crowed
 							["provider"] = { "i", 143478 },	-- Arena Invitation
 							["g"] = {
-								un(2, i(143607, {	-- Solider's Footlocker
-									un(2, i(140415)),	--	Blaze of Glory
+								un(REMOVED_FROM_GAME, i(143607, {	-- Solider's Footlocker
+									un(REMOVED_FROM_GAME, i(140415)),	--	Blaze of Glory
 									i(140423),	-- Exhaustive Research
 								})),
 							},
@@ -243,7 +243,7 @@ _.ExpansionFeatures =
 						q(45180, {	-- An Island of War
 							["provider"] = { "i", 143479 },	-- Frayed Banner
 							["g"] = {
-								un(2, i(143607)),	-- Solider's Footlocker
+								un(REMOVED_FROM_GAME, i(143607)),	-- Solider's Footlocker
 							},
 							["u"] = 40,
 						}),
@@ -281,23 +281,23 @@ _.ExpansionFeatures =
 					i(141342),	-- Wardens Insignia
 					i(146945),	-- Wardens Insignia
 					-- Misc
-					un(2, i(143478)),	-- Arena Invitation
+					un(REMOVED_FROM_GAME, i(143478)),	-- Arena Invitation
 					i(143328),	-- Battle Report
-					un(2, i(143329)),	-- Dire Summons
-					un(2, i(143479)),	-- Frayed Banner
+					un(REMOVED_FROM_GAME, i(143329)),	-- Dire Summons
+					un(REMOVED_FROM_GAME, i(143479)),	-- Frayed Banner
 					i(142522),			-- Rude Letter
 					-- Dungeons
-					un(2, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
-					un(2, i(139476)),	-- Broken Dragon Scale -> Neltharion's Lair: Into Neltharion's Lair -> Neltharion's Lair
-					un(2, i(139479)),	-- Broken Portal Shard -> Assault on Violet Hold: Into the Violet Hold -> Violet Hold
-					un(2, i(139478)),	-- Broken Warden Helm -> Vault of the Wardens: Into the Vault of the Wardens -> Vault of the Wardens
-					un(2, i(139474)),	-- Carved Shell -> Eye of Azshara: Into the Eye of Azshara -> Eye of Azshara
-					un(2, i(139477)),	-- Drained Mana Orb -> The Arcway: Into the Arcway -> The Arcway
-					un(2, i(139472)),	-- Glamorous Party Invitation -> Court of Stars: Into the Court of Stars -> Court of Stars
-					un(2, i(142340)),	-- Head of Thar'zul -> Return to Karazhan: The Tower of Power -> Karazhan
-					un(2, i(139457)),	-- Odyn's Challenge -> Halls of Valor: Odyn's Challenge -> Halls of Valor
-					un(2, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
-					un(2, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
+					un(REMOVED_FROM_GAME, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
+					un(REMOVED_FROM_GAME, i(139476)),	-- Broken Dragon Scale -> Neltharion's Lair: Into Neltharion's Lair -> Neltharion's Lair
+					un(REMOVED_FROM_GAME, i(139479)),	-- Broken Portal Shard -> Assault on Violet Hold: Into the Violet Hold -> Violet Hold
+					un(REMOVED_FROM_GAME, i(139478)),	-- Broken Warden Helm -> Vault of the Wardens: Into the Vault of the Wardens -> Vault of the Wardens
+					un(REMOVED_FROM_GAME, i(139474)),	-- Carved Shell -> Eye of Azshara: Into the Eye of Azshara -> Eye of Azshara
+					un(REMOVED_FROM_GAME, i(139477)),	-- Drained Mana Orb -> The Arcway: Into the Arcway -> The Arcway
+					un(REMOVED_FROM_GAME, i(139472)),	-- Glamorous Party Invitation -> Court of Stars: Into the Court of Stars -> Court of Stars
+					un(REMOVED_FROM_GAME, i(142340)),	-- Head of Thar'zul -> Return to Karazhan: The Tower of Power -> Karazhan
+					un(REMOVED_FROM_GAME, i(139457)),	-- Odyn's Challenge -> Halls of Valor: Odyn's Challenge -> Halls of Valor
+					un(REMOVED_FROM_GAME, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
+					un(REMOVED_FROM_GAME, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
 				},
 			}),
 		},

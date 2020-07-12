@@ -42,7 +42,7 @@ _.Zones =
 						["races"] =  { 5 },	-- Undead
 						["classes"] = { 5 },	-- Priest
 						["g"] = {
-							un(2, i(16607)),	-- Garments of Darkness
+							un(REMOVED_FROM_GAME, i(16607)),	-- Garments of Darkness
 						},
 					}),
 					q(3098,  {	-- Glyphic Scroll

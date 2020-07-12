@@ -16,7 +16,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(2000)),	-- Archeus
+						un(REMOVED_FROM_GAME, i(2000)),	-- Archeus
 					},
 				}),
 				q(26797, {	-- A Daughters Love
@@ -71,8 +71,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6223)),	-- Crest of Darkshire
-						un(2, i(3560)),	-- Mantle of Honor
+						un(REMOVED_FROM_GAME, i(6223)),	-- Crest of Darkshire
+						un(REMOVED_FROM_GAME, i(3560)),	-- Mantle of Honor
 					},
 				}),
 				q(26722, {	-- Buried Below
@@ -142,7 +142,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(3559)),	-- Night Watch Gauntlets
+						un(REMOVED_FROM_GAME, i(3559)),	-- Night Watch Gauntlets
 					},
 				}),
 				q(26623, {	-- Dusky Crab Cakes
@@ -220,8 +220,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(7107)),	-- Belt of the Stars
-						un(2, i(7106)),	-- Zodiac Gloves
+						un(REMOVED_FROM_GAME, i(7107)),	-- Belt of the Stars
+						un(REMOVED_FROM_GAME, i(7106)),	-- Zodiac Gloves
 					},
 				}),
 				q(26683, {	-- Look To The Stars
@@ -253,10 +253,10 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(2954)),	-- Night Watch Pantaloons
-						un(2, i(1282)),	-- Sparkmetal Coif
-						un(2, i(7344)),	-- Torch of Holy Flame
-						un(2, i(2953)),	-- Watch Master's Cloak
+						un(REMOVED_FROM_GAME, i(2954)),	-- Night Watch Pantaloons
+						un(REMOVED_FROM_GAME, i(1282)),	-- Sparkmetal Coif
+						un(REMOVED_FROM_GAME, i(7344)),	-- Torch of Holy Flame
+						un(REMOVED_FROM_GAME, i(2953)),	-- Watch Master's Cloak
 					},
 				}),
 				q(26754, {	-- Morbent's Bane
@@ -335,8 +335,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(6832)),	-- Cloak of Blight
-						un(2, i(11265)),	-- Cragwood Maul
+						un(REMOVED_FROM_GAME, i(6832)),	-- Cloak of Blight
+						un(REMOVED_FROM_GAME, i(11265)),	-- Cragwood Maul
 					},
 				}),
 				q(26670, {	-- Roland's Doom
@@ -420,8 +420,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(2044)),	-- Crescent of Forlorn Spirits
-						un(2, i(2043)),	-- Ring of Forlorn Spirits
+						un(REMOVED_FROM_GAME, i(2044)),	-- Crescent of Forlorn Spirits
+						un(REMOVED_FROM_GAME, i(2043)),	-- Ring of Forlorn Spirits
 					},
 				}),
 				q(58,    {	-- The Night Watch
@@ -429,9 +429,9 @@ _.Zones =
 					["provider"] = { "n", 264 },	-- Commander Althea Ebonlocke <Leader of The Night Watch>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(3604)),	-- Bandolier of the Night Watch
-						un(2, i(1729)),	-- Gunnysack of the Night Watch
-						un(2, i(3605)),	-- Quiver of the Night Watch
+						un(REMOVED_FROM_GAME, i(3604)),	-- Bandolier of the Night Watch
+						un(REMOVED_FROM_GAME, i(1729)),	-- Gunnysack of the Night Watch
+						un(REMOVED_FROM_GAME, i(3605)),	-- Quiver of the Night Watch
 					},
 				}),
 				q(1043,  {	-- The Scythe of Elune
@@ -542,7 +542,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(1131)),	-- Totem of Infliction
+						un(REMOVED_FROM_GAME, i(1131)),	-- Totem of Infliction
 					},
 				}),
 				q(26618, {	-- Wolves at Our Heels
@@ -560,9 +560,9 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(2902)),	-- Cloak of the Faith
-						un(2, i(5244)),	-- Consecrated Wand
-						un(2, i(1547)),	-- Shield of the Faith
+						un(REMOVED_FROM_GAME, i(2902)),	-- Cloak of the Faith
+						un(REMOVED_FROM_GAME, i(5244)),	-- Consecrated Wand
+						un(REMOVED_FROM_GAME, i(1547)),	-- Shield of the Faith
 					},
 				}),
 				q(26691, {	-- Worgen in the Woods

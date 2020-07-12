@@ -5,7 +5,7 @@ _.WorldDrops =
 {
 	tier(3, {	-- Wrath of the Lich King
 		f(200, {	-- Recipes
-			un(2, i(49177)),	-- Tome of Cold Weather Flight
+			un(REMOVED_FROM_GAME, i(49177)),	-- Tome of Cold Weather Flight
 			n(-180, {	-- Alchemy
 				un(1, i(112022)),	-- Recipe: Mighty Shadow Protection Potion
 			}),
@@ -23,7 +23,7 @@ _.WorldDrops =
 					["u"] = 7,	-- now learned from trainer, formula was removed from game
 				}),
 				i(37348, {	-- Formula: Enchant Cloak - Haste
-					["u"] = 2,	-- was replaced by Enchant Cloak - Greater Speed
+					["u"] = REMOVED_FROM_GAME,	-- was replaced by Enchant Cloak - Greater Speed
 				}),
 				i(37343, {	-- Formula: Enchant Weapon - Exceptional Agility
 					["u"] = 7,	-- now learned from trainer, formula was removed from game
@@ -55,11 +55,11 @@ _.WorldDrops =
 				i(41783),	-- Design: Purified Twilight Opal
 				i(41699, {	-- Design: Purified Twilight Opal
 					["spellID"] = 0,	-- This is now available via 41783, need to delink the old plans from the recipe
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(41701, {	-- Design: Purified Twilight Opal
 					["spellID"] = 0,	-- This is now available via 41783, need to delink the old plans from the recipe
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(41778),	-- Design: Resolute Monarch Topaz
 				i(41784),	-- Design: Sovereign Twilight Opal

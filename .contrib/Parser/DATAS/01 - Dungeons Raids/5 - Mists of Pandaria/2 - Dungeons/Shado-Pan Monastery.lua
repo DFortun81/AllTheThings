@@ -48,9 +48,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(144126),	-- Star Summoner Bracers
 					i(144096),	-- Sparkbreath Girdle
 					i(143978),	-- Leggings of the Charging Soul
-					un(2, i(80909)),	-- Azure Serpent Chestguard (7.1 - Removed from Game!)
-					un(2, i(80908)),	-- Sparkbreath Girdle (7.1 - Removed from Game!)
-					un(2, i(80910)),	-- Leggings of the Charging Soul (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80909)),	-- Azure Serpent Chestguard (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80908)),	-- Sparkbreath Girdle (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80910)),	-- Leggings of the Charging Soul (7.1 - Removed from Game!)
 				})),
 				cr(56541, e(657, {	-- Master Snowdrift
 					i(144110),	-- Snowdrift's Bladed Staff
@@ -58,9 +58,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(144097),	-- Quivering Heart Girdle
 					i(144129),	-- Eye of the Tornado
 					i(144128),	-- Heart of Fire
-					un(2, i(80937)),	-- Snowdrift's Bladed Staff (7.1 - Removed from Game!)
-					un(2, i(80912)),	-- Gauntlets of Resolute Fury (7.1 - Removed from Game!)
-					un(2, i(80911)),	-- Quivering Heart Girdle (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80937)),	-- Snowdrift's Bladed Staff (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80912)),	-- Gauntlets of Resolute Fury (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80911)),	-- Quivering Heart Girdle (7.1 - Removed from Game!)
 				})),
 				cr(56719, e(685, {	-- Sha of Violence
 					i(144099),	-- Crescent of Ichor
@@ -68,9 +68,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(144131),	-- Bladed Smoke Bracers
 					i(144107),	-- Gloves of Enraged Slaughter
 					i(143985),	-- Spike-Soled Stompers
-					un(2, i(80883)),	-- Crescent of Ichor (7.1 - Removed from Game!)
-					un(2, i(80913)),	-- Gloves of Enraged Slaughter (7.1 - Removed from Game!)
-					un(2, i(80915)),	-- Spike-Soled Stompers (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80883)),	-- Crescent of Ichor (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80913)),	-- Gloves of Enraged Slaughter (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80915)),	-- Spike-Soled Stompers (7.1 - Removed from Game!)
 				})),
 				cr(56884, e(686, {	-- Taran Zhu
 					ach(6469),	-- Shado-Pan Monastery
@@ -85,12 +85,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(143986),	-- Blastwalker Footguards
 					i(144133),	-- Ring of Malice
 					i(144132),	-- Seal of Hateful Meditation
-					un(2, i(80936)),	-- Warmace of Taran Zhu (7.1 - Removed from Game!)
-					un(2, i(80935)),	-- Shield of Blind Hate (7.1 - Removed from Game!)
-					un(2, i(80916)),	-- Shadowspine Shoulderguards (7.1 - Removed from Game!)
-					un(2, i(80918)),	-- Mindbender Plate Gloves (7.1 - Removed from Game!)
-					un(2, i(80919)),	-- Darkbinder Leggings (7.1 - Removed from Game!)
-					un(2, i(80917)),	-- Blastwalker Footguards (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80936)),	-- Warmace of Taran Zhu (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80935)),	-- Shield of Blind Hate (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80916)),	-- Shadowspine Shoulderguards (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80918)),	-- Mindbender Plate Gloves (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80919)),	-- Darkbinder Leggings (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80917)),	-- Blastwalker Footguards (7.1 - Removed from Game!)
 				})),
 			}),
 			d( 2, {	-- Heroic
@@ -107,11 +107,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144126),	-- Star Summoner Bracers
 						i(144096),	-- Sparkbreath Girdle
 						i(143978),	-- Leggings of the Charging Soul
-						un(2, i(81180)),	-- Cloudstrike Pendant (7.1 - Removed from Game!)
-						un(2, i(81110)),	-- Azure Serpent Chestguard (7.1 - Removed from Game!)
-						un(2, i(81179)),	-- Star Summoner Bracers (7.1 - Removed from Game!)
-						un(2, i(81086)),	-- Sparkbreath Girdle (7.1 - Removed from Game!)
-						un(2, i(81092)),	-- Leggings of the Charging Soul (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81180)),	-- Cloudstrike Pendant (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81110)),	-- Azure Serpent Chestguard (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81179)),	-- Star Summoner Bracers (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81086)),	-- Sparkbreath Girdle (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81092)),	-- Leggings of the Charging Soul (7.1 - Removed from Game!)
 					})),
 					cr(56541, e(657, {	-- Master Snowdrift
 						ach(6477),	-- Respect
@@ -120,9 +120,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144097),	-- Quivering Heart Girdle
 						i(144129),	-- Eye of the Tornado
 						i(144128),	-- Heart of Fire
-						un(2, i(81108)),	-- Snowdrift's Bladed Staff (7.1 - Removed from Game!)
-						un(2, i(81101)),	-- Gauntlets of Resolute Fury (7.1 - Removed from Game!)
-						un(2, i(81087)),	-- Quivering Heart Girdle (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81108)),	-- Snowdrift's Bladed Staff (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81101)),	-- Gauntlets of Resolute Fury (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81087)),	-- Quivering Heart Girdle (7.1 - Removed from Game!)
 					})),
 					cr(56719, e(685, {	-- Sha of Violence
 						ach(6472),	-- The Obvious Solution
@@ -131,11 +131,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144131),	-- Bladed Smoke Bracers
 						i(144107),	-- Gloves of Enraged Slaughter
 						i(143985),	-- Spike-Soled Stompers
-						un(2, i(81084)),	-- Necklace of Disorientation (7.1 - Removed from Game!)
-						un(2, i(81089)),	-- Crescent of Ichor (7.1 - Removed from Game!)
-						un(2, i(81185)),	-- Bladed Smoke Bracers (7.1 - Removed from Game!)
-						un(2, i(81102)),	-- Gloves of Enraged Slaughter (7.1 - Removed from Game!)
-						un(2, i(81113)),	-- Spike-Soled Stompers (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81084)),	-- Necklace of Disorientation (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81089)),	-- Crescent of Ichor (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81185)),	-- Bladed Smoke Bracers (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81102)),	-- Gloves of Enraged Slaughter (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81113)),	-- Spike-Soled Stompers (7.1 - Removed from Game!)
 					})),
 					cr(56884, e(686, {	-- Taran Zhu
 						ach(6471),	-- Hate Leads to Suffering
@@ -152,15 +152,15 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(143986),	-- Blastwalker Footguards
 						i(144133),	-- Ring of Malice
 						i(144132),	-- Seal of Hateful Meditation
-						un(2, i(81107)),	-- Warmace of Taran Zhu (7.1 - Removed from Game!)
-						un(2, i(87543)),	-- Ka'eng, Breath of the Shadow (7.1 - Removed from Game!)
-						un(2, i(81096)),	-- Shield of Blind Hate (7.1 - Removed from Game!)
-						un(2, i(81099)),	-- Shadowspine Shoulderguards (7.1 - Removed from Game!)
-						un(2, i(81187)),	-- Hateshatter Chestplate (7.1 - Removed from Game!)
-						un(2, i(81188)),	-- Robes of Fevered Dreams (7.1 - Removed from Game!)
-						un(2, i(81103)),	-- Mindbender Plate Gloves (7.1 - Removed from Game!)
-						un(2, i(81093)),	-- Darkbinder Leggings (7.1 - Removed from Game!)
-						un(2, i(81114)),	-- Blastwalker Footguards (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81107)),	-- Warmace of Taran Zhu (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(87543)),	-- Ka'eng, Breath of the Shadow (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81096)),	-- Shield of Blind Hate (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81099)),	-- Shadowspine Shoulderguards (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81187)),	-- Hateshatter Chestplate (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81188)),	-- Robes of Fevered Dreams (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81103)),	-- Mindbender Plate Gloves (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81093)),	-- Darkbinder Leggings (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81114)),	-- Blastwalker Footguards (7.1 - Removed from Game!)
 					})),
 				},
 			}),

@@ -127,7 +127,7 @@ _.Zones =
 							["u"] = 40,	-- Legacy Quests
 							["g"] = {
 								ach(12071, {	-- Crucible's Promise
-									["u"] = 2,	-- BoP / BoA Item
+									["u"] = REMOVED_FROM_GAME,
 								}),
 							},
 						}),

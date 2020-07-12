@@ -60,8 +60,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 177904 },	-- Wanted Poster: Besseleth
 					["g"] = {
-						un(2, i(16891)),	-- Claystone Shortsword
-						un(2, i(16894)),	-- Clear Crystal Rod
+						un(REMOVED_FROM_GAME, i(16891)),	-- Claystone Shortsword
+						un(REMOVED_FROM_GAME, i(16894)),	-- Clear Crystal Rod
 					},
 				}),
 				q(25766, {	-- Arcane Legacy
@@ -177,8 +177,8 @@ _.Zones =
 					["provider"] = { "n", 11860 },	-- Maggran Earthbinder
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(16987)),	-- Screecher Belt
-						un(2, i(16990)),	-- Spritekin Cloak
+						un(REMOVED_FROM_GAME, i(16987)),	-- Screecher Belt
+						un(REMOVED_FROM_GAME, i(16990)),	-- Spritekin Cloak
 					},
 				}),
 				q(25768, {	-- Bombs Away: Mirkfallon Post!
@@ -315,8 +315,8 @@ _.Zones =
 					["provider"] = { "n", 11861 },	-- Mor'rogal
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(16981)),	-- Owlbeard Bracers
-						un(2, i(1306)),	-- Wolfmane Wristguards
+						un(REMOVED_FROM_GAME, i(16981)),	-- Owlbeard Bracers
+						un(REMOVED_FROM_GAME, i(1306)),	-- Wolfmane Wristguards
 					},
 				}),
 				q(26011, {	-- Enemy of the Horde: Marshal Paltrow
@@ -372,8 +372,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 4201 },	-- Ziz Fizziks
 					["g"] = {
-						un(2, i(6668)),	-- Draftsman Boots
-						un(2, i(6667)),	-- Engineer's Cloak
+						un(REMOVED_FROM_GAME, i(6668)),	-- Draftsman Boots
+						un(REMOVED_FROM_GAME, i(6667)),	-- Engineer's Cloak
 					},
 				}),
 				q(1090, {	-- Gerenzo's Orders
@@ -385,7 +385,7 @@ _.Zones =
 					["provider"] = { "n", 4276 },	-- Piznik
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(6666)),	-- Dredge Boots
+						un(REMOVED_FROM_GAME, i(6666)),	-- Dredge Boots
 					},
 				}),
 				q(25875, {	-- Gnome on the Inside
@@ -480,8 +480,8 @@ _.Zones =
 					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(6665)),	-- Hexed Bracers
-						un(2, i(6664)),	-- Voodoo Mantle
+						un(REMOVED_FROM_GAME, i(6665)),	-- Hexed Bracers
+						un(REMOVED_FROM_GAME, i(6664)),	-- Voodoo Mantle
 					},
 				}),
 				q(25673, {	-- Just Ask Alice
@@ -561,8 +561,8 @@ _.Zones =
 					["provider"] = { "n", 11864 },	-- Tammra Windfield
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(16986)),	-- Sandspire Gloves
-						un(2, i(16985)),	-- Windseeker Boots
+						un(REMOVED_FROM_GAME, i(16986)),	-- Sandspire Gloves
+						un(REMOVED_FROM_GAME, i(16985)),	-- Windseeker Boots
 					},
 				}),
 				q(26134, {	-- Nothing Left for You Here
@@ -643,10 +643,10 @@ _.Zones =
 					["provider"] = { "n", 4079 },	-- Sentinel Thenysil
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6678)),	-- Band of Elven Grace
-						un(2, i(7334)),	-- Efflorescent Robe
-						un(2, i(7335)),	-- Grizzly Tunic
-						un(2, i(7336)),	-- Wildwood Chain
+						un(REMOVED_FROM_GAME, i(6678)),	-- Band of Elven Grace
+						un(REMOVED_FROM_GAME, i(7334)),	-- Efflorescent Robe
+						un(REMOVED_FROM_GAME, i(7335)),	-- Grizzly Tunic
+						un(REMOVED_FROM_GAME, i(7336)),	-- Wildwood Chain
 					},
 				}),
 				q(1059,  {	-- Reclaiming the Charred Vale
@@ -654,8 +654,8 @@ _.Zones =
 					["provider"] = { "n", 3994 },	-- Keeper Albagorm
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6676)),	-- Constable Buckler
-						un(2, i(6675)),	-- Tempered Bracers
+						un(REMOVED_FROM_GAME, i(6676)),	-- Constable Buckler
+						un(REMOVED_FROM_GAME, i(6675)),	-- Tempered Bracers
 					},
 				}),
 				q(26066, {	-- Reinforcements...
@@ -845,9 +845,9 @@ _.Zones =
 					["provider"] = { "n", 4198 },	-- Braelyn Firehand
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(6671)),	-- Juggernaut Leggings
-						un(2, i(6670)),	-- Panther Armor
-						un(2, i(6669)),	-- Sacred Band
+						un(REMOVED_FROM_GAME, i(6671)),	-- Juggernaut Leggings
+						un(REMOVED_FROM_GAME, i(6670)),	-- Panther Armor
+						un(REMOVED_FROM_GAME, i(6669)),	-- Sacred Band
 					},
 				}),
 				q(26100, {	-- The General is Dead

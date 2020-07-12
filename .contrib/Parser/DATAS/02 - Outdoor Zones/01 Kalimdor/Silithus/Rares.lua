@@ -15,16 +15,16 @@ _.Zones =
 					["g"] = {
 						un(7, i(20652)),	-- Abyssal Cloth Slippers
 						un(7, i(20653)), 	-- Abyssal Plate Gauntlets
-						un(2, i(20654)),	-- Amethyst War Staff
+						un(REMOVED_FROM_GAME, i(20654)),	-- Amethyst War Staff
 					},
 				}),
 				n(15205, {	-- Baron Kazum
 					["description"] = "Summoning Baron Kazum requires a full Twilight Trappings set, a Twilight Cultist Medallion of Station, and a Twilight Cultist Ring of Lordship.",
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						un(2, i(20686)),	-- Abyssal Cloth Amice
-						un(2, i(20687)),	-- Abyssal Plate Vambraces
-						un(2, i(20688)),	-- Earthen Guard
+						un(REMOVED_FROM_GAME, i(20686)),	-- Abyssal Cloth Amice
+						un(REMOVED_FROM_GAME, i(20687)),	-- Abyssal Plate Vambraces
+						un(REMOVED_FROM_GAME, i(20688)),	-- Earthen Guard
 					},
 				}),
 				n(50746, {	-- Bornix the Burrower
@@ -36,7 +36,7 @@ _.Zones =
 					["g"] = {
 						un(7, i(20655)), 	-- Abyssal Cloth Handwraps
 						un(7, i(20656)), 	-- Abyssal Mail Sabatons
-						un(2, i(20657)), 	-- Crystal Tipped Stiletto
+						un(REMOVED_FROM_GAME, i(20657)), 	-- Crystal Tipped Stiletto
 					},
 				}),
 				n(15307, { 	-- Earthen Templar
@@ -45,7 +45,7 @@ _.Zones =
 					["g"] = {
 						un(7, i(20661)), 	-- Abyssal Leather Gloves
 						un(7, i(20662)), 	-- Abyssal Plate Greaves
-						un(2, i(20663)), 	-- Deep Strike Bow
+						un(REMOVED_FROM_GAME, i(20663)), 	-- Deep Strike Bow
 					},
 				}),
 				n(50897, {	-- Ffexk the Dunestalker
@@ -71,9 +71,9 @@ _.Zones =
 					["description"] = "This was a summonable elite.",
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						un(2, i(20690)),	-- Abyssal Cloth Wristbands
-						un(2, i(20689)),	-- Abyssal Leather Shoulders
-						un(2, i(20691)),	-- Windshear Cape
+						un(REMOVED_FROM_GAME, i(20690)),	-- Abyssal Cloth Wristbands
+						un(REMOVED_FROM_GAME, i(20689)),	-- Abyssal Leather Shoulders
+						un(REMOVED_FROM_GAME, i(20691)),	-- Windshear Cape
 					},
 				}),
 				n(15212, { 	-- Hoary Templar
@@ -82,7 +82,7 @@ _.Zones =
 					["g"] = {
 						un(7, i(20658)), 	-- Abyssal Leather Boots
 						un(7, i(20659)), 	-- Abyssal Mail Handguards
-						un(2, i(20660)), 	-- Stonecutting Glaive
+						un(REMOVED_FROM_GAME, i(20660)), 	-- Stonecutting Glaive
 					},
 				}),
 				n(14478, {	-- Huricanian
@@ -123,9 +123,9 @@ _.Zones =
 				n(15305, {	-- Lord Skwol <Abyssal High Council>
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						un(2, i(20683)),	-- Abyssal Plate Epaulets
-						un(2, i(20684)),	-- Abyssal Mail Armguards
-						un(2, i(20685)),	-- Wavefront Necklace
+						un(REMOVED_FROM_GAME, i(20683)),	-- Abyssal Plate Epaulets
+						un(REMOVED_FROM_GAME, i(20684)),	-- Abyssal Mail Armguards
+						un(REMOVED_FROM_GAME, i(20685)),	-- Wavefront Necklace
 					},
 				}),
 				n(50745, {	-- Losaj
@@ -137,9 +137,9 @@ _.Zones =
 				n(15203, {	-- Prince Skaldrenox <Abyssal High Council>
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						un(2, i(20680)),	-- Abyssal Mail Pauldrons
-						un(2, i(20681)),	-- Abyssal Leather Bracers
-						un(2, i(20682)),	-- Elemental Focus Band
+						un(REMOVED_FROM_GAME, i(20680)),	-- Abyssal Mail Pauldrons
+						un(REMOVED_FROM_GAME, i(20681)),	-- Abyssal Leather Bracers
+						un(REMOVED_FROM_GAME, i(20682)),	-- Elemental Focus Band
 					},
 				}),
 				n(50742, {	-- Qem
@@ -164,7 +164,7 @@ _.Zones =
 					["g"] = {
 						un(7, i(20664)), 	-- Abyssal Cloth Sash
 						un(7, i(20665)), 	-- Abyssal Leather Leggings
-						un(2, i(20666)), 	-- Hardened Steel Warhammer
+						un(REMOVED_FROM_GAME, i(20666)), 	-- Hardened Steel Warhammer
 					},
 				}),
 				n(15207, { 	-- The Duke of Fathoms
@@ -173,7 +173,7 @@ _.Zones =
 					["g"] = {
 						un(7, i(20667)), 	-- Abyssal Leather Belt
 						un(7, i(20668)), 	-- Abyssal Mail Legguards
-						un(2, i(20669)), 	-- Darkstone Claymore
+						un(REMOVED_FROM_GAME, i(20669)), 	-- Darkstone Claymore
 					},
 				}),
 				n(15208, { 	-- The Duke of Shards
@@ -182,7 +182,7 @@ _.Zones =
 					["g"] = {
 						un(7, i(20670)), 	-- Abyssal Mail Clutch
 						un(7, i(20671)),	-- Abyssal Plate Legguards
-						un(2, i(20672)), 	-- Sparkling Crystal Wand
+						un(REMOVED_FROM_GAME, i(20672)), 	-- Sparkling Crystal Wand
 					},
 				}),
 				n(15220, { 	-- The Duke of Zephyrs
@@ -191,7 +191,7 @@ _.Zones =
 					["g"] = {
 						un(7, i(20674)),	-- Abyssal Cloth Pants
 						un(7, i(20673)), 	-- Abyssal Plate Girdle
-						un(2, i(20675)), 	-- Soulrender
+						un(REMOVED_FROM_GAME, i(20675)), 	-- Soulrender
 					},
 				}),
 				n(14454, { 	-- The Windreaver

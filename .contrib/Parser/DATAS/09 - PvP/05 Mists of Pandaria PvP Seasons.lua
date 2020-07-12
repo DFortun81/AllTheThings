@@ -736,13 +736,13 @@ _.PVP =
 					i(84887),	-- Malevolent Gladiator's Pendant of Cruelty
 					i(84888),	-- Malevolent Gladiator's Pendant of Meditation
 					-- S13 Tooltip
-					un(2, i(91455)),	-- Malevolent Gladiator's Necklace of Proficiency
-					un(2, i(91456)),	-- Malevolent Gladiator's Necklace of Prowess
-					un(2, i(91488)),	-- Malevolent Gladiator's Pendant of Cruelty
-					un(2, i(91489)),	-- Malevolent Gladiator's Pendant of Alacrity
-					un(2, i(91490)),	-- Malevolent Gladiator's Pendant of Meditation
-					un(2, i(91766)),	-- Malevolent Gladiator's Choker of Proficiency
-					un(2, i(91767)),	-- Malevolent Gladiator's Choker of Accuracy
+					un(REMOVED_FROM_GAME, i(91455)),	-- Malevolent Gladiator's Necklace of Proficiency
+					un(REMOVED_FROM_GAME, i(91456)),	-- Malevolent Gladiator's Necklace of Prowess
+					un(REMOVED_FROM_GAME, i(91488)),	-- Malevolent Gladiator's Pendant of Cruelty
+					un(REMOVED_FROM_GAME, i(91489)),	-- Malevolent Gladiator's Pendant of Alacrity
+					un(REMOVED_FROM_GAME, i(91490)),	-- Malevolent Gladiator's Pendant of Meditation
+					un(REMOVED_FROM_GAME, i(91766)),	-- Malevolent Gladiator's Choker of Proficiency
+					un(REMOVED_FROM_GAME, i(91767)),	-- Malevolent Gladiator's Choker of Accuracy
 				}),
 				n(-385,	{	-- Finger
 					-- S12 Tooltip (Available from Sha)
@@ -754,227 +754,227 @@ _.PVP =
 					i(84828),	-- Malevolent Gladiator's Signet of Cruelty
 					i(84829),	-- Malevolent Gladiator's Signet of Accuracy
 					-- S13 Tooltip
-					un(2, i(91458)),	-- Malevolent Gladiator's Ring of Cruelty
-					un(2, i(91459)),	-- Malevolent Gladiator's Ring of Accuracy
-					un(2, i(91491)),	-- Malevolent Gladiator's Band of Cruelty
-					un(2, i(91492)),	-- Malevolent Gladiator's Band of Accuracy
-					un(2, i(91493)),	-- Malevolent Gladiator's Band of Meditation
-					un(2, i(91769)),	-- Malevolent Gladiator's Signet of Cruelty
-					un(2, i(91770)),	-- Malevolent Gladiator's Signet of Accuracy
+					un(REMOVED_FROM_GAME, i(91458)),	-- Malevolent Gladiator's Ring of Cruelty
+					un(REMOVED_FROM_GAME, i(91459)),	-- Malevolent Gladiator's Ring of Accuracy
+					un(REMOVED_FROM_GAME, i(91491)),	-- Malevolent Gladiator's Band of Cruelty
+					un(REMOVED_FROM_GAME, i(91492)),	-- Malevolent Gladiator's Band of Accuracy
+					un(REMOVED_FROM_GAME, i(91493)),	-- Malevolent Gladiator's Band of Meditation
+					un(REMOVED_FROM_GAME, i(91769)),	-- Malevolent Gladiator's Signet of Cruelty
+					un(REMOVED_FROM_GAME, i(91770)),	-- Malevolent Gladiator's Signet of Accuracy
 				}),
 				n(-386,	{	-- Trinket
 					-- S12 Tooltip
-					un(2, i(84934)),	-- Malevolent Gladiator's Badge of Conquest
-					un(2, i(84935)),	-- Malevolent Gladiator's Insignia of Conquest
-					un(2, i(84936)),	-- Malevolent Gladiator's Emblem of Cruelty
-					un(2, i(84937)),	-- Malevolent Gladiator's Insignia of Victory
-					un(2, i(84938)),	-- Malevolent Gladiator's Emblem of Tenacity
-					un(2, i(84939)),	-- Malevolent Gladiator's Emblem of Meditation
-					un(2, i(84940)),	-- Malevolent Gladiator's Badge of Dominance
-					un(2, i(84941)),	-- Malevolent Gladiator's Insignia of Dominance
-					un(2, i(84942)),	-- Malevolent Gladiator's Badge of Victory
-					un(2, i(84943)),	-- Malevolent Gladiator's Medallion of Cruelty (Alliance)
-					un(2, i(84932)),	-- Malevolent Gladiator's Medallion of Meditation (Alliance)
-					un(2, i(84945)),	-- Malevolent Gladiator's Medallion of Tenacity (Alliance)
-					un(2, i(84944)),	-- Malevolent Gladiator's Medallion of Cruelty (Horde)
-					un(2, i(84933)),	-- Malevolent Gladiator's Medallion of Meditation (Horde)
-					un(2, i(84931)),	-- Malevolent Gladiator's Medallion of Tenacity (Horde)
+					un(REMOVED_FROM_GAME, i(84934)),	-- Malevolent Gladiator's Badge of Conquest
+					un(REMOVED_FROM_GAME, i(84935)),	-- Malevolent Gladiator's Insignia of Conquest
+					un(REMOVED_FROM_GAME, i(84936)),	-- Malevolent Gladiator's Emblem of Cruelty
+					un(REMOVED_FROM_GAME, i(84937)),	-- Malevolent Gladiator's Insignia of Victory
+					un(REMOVED_FROM_GAME, i(84938)),	-- Malevolent Gladiator's Emblem of Tenacity
+					un(REMOVED_FROM_GAME, i(84939)),	-- Malevolent Gladiator's Emblem of Meditation
+					un(REMOVED_FROM_GAME, i(84940)),	-- Malevolent Gladiator's Badge of Dominance
+					un(REMOVED_FROM_GAME, i(84941)),	-- Malevolent Gladiator's Insignia of Dominance
+					un(REMOVED_FROM_GAME, i(84942)),	-- Malevolent Gladiator's Badge of Victory
+					un(REMOVED_FROM_GAME, i(84943)),	-- Malevolent Gladiator's Medallion of Cruelty (Alliance)
+					un(REMOVED_FROM_GAME, i(84932)),	-- Malevolent Gladiator's Medallion of Meditation (Alliance)
+					un(REMOVED_FROM_GAME, i(84945)),	-- Malevolent Gladiator's Medallion of Tenacity (Alliance)
+					un(REMOVED_FROM_GAME, i(84944)),	-- Malevolent Gladiator's Medallion of Cruelty (Horde)
+					un(REMOVED_FROM_GAME, i(84933)),	-- Malevolent Gladiator's Medallion of Meditation (Horde)
+					un(REMOVED_FROM_GAME, i(84931)),	-- Malevolent Gladiator's Medallion of Tenacity (Horde)
 					-- S13 Tooltip
-					un(2, i(91452)),	-- Malevolent Gladiator's Badge of Conquest
-					un(2, i(91753)),	-- Malevolent Gladiator's Badge of Dominance
-					un(2, i(91763)),	-- Malevolent Gladiator's Badge of Victory
-					un(2, i(91562)),	-- Malevolent Gladiator's Emblem of Cruelty
-					un(2, i(91564)),	-- Malevolent Gladiator's Emblem of Meditation
-					un(2, i(91563)),	-- Malevolent Gladiator's Emblem of Tenacity
-					un(2, i(91457)),	-- Malevolent Gladiator's Insignia of Conquest
-					un(2, i(91754)),	-- Malevolent Gladiator's Insignia of Dominance
-					un(2, i(91768)),	-- Malevolent Gladiator's Insignia of Victory
-					un(2, i(91682)),	-- Malevolent Gladiator's Medallion of Cruelty (Alliance)
-					un(2, i(91686)),	-- Malevolent Gladiator's Medallion of Meditation (Alliance)
-					un(2, i(91684)),	-- Malevolent Gladiator's Medallion of Tenacity (Alliance)
-					un(2, i(91683)),	-- Malevolent Gladiator's Medallion of Cruelty (Horde)
-					un(2, i(91687)),	-- Malevolent Gladiator's Medallion of Meditation (Horde)
-					un(2, i(91685)),	-- Malevolent Gladiator's Medallion of Tenacity (Horde)
+					un(REMOVED_FROM_GAME, i(91452)),	-- Malevolent Gladiator's Badge of Conquest
+					un(REMOVED_FROM_GAME, i(91753)),	-- Malevolent Gladiator's Badge of Dominance
+					un(REMOVED_FROM_GAME, i(91763)),	-- Malevolent Gladiator's Badge of Victory
+					un(REMOVED_FROM_GAME, i(91562)),	-- Malevolent Gladiator's Emblem of Cruelty
+					un(REMOVED_FROM_GAME, i(91564)),	-- Malevolent Gladiator's Emblem of Meditation
+					un(REMOVED_FROM_GAME, i(91563)),	-- Malevolent Gladiator's Emblem of Tenacity
+					un(REMOVED_FROM_GAME, i(91457)),	-- Malevolent Gladiator's Insignia of Conquest
+					un(REMOVED_FROM_GAME, i(91754)),	-- Malevolent Gladiator's Insignia of Dominance
+					un(REMOVED_FROM_GAME, i(91768)),	-- Malevolent Gladiator's Insignia of Victory
+					un(REMOVED_FROM_GAME, i(91682)),	-- Malevolent Gladiator's Medallion of Cruelty (Alliance)
+					un(REMOVED_FROM_GAME, i(91686)),	-- Malevolent Gladiator's Medallion of Meditation (Alliance)
+					un(REMOVED_FROM_GAME, i(91684)),	-- Malevolent Gladiator's Medallion of Tenacity (Alliance)
+					un(REMOVED_FROM_GAME, i(91683)),	-- Malevolent Gladiator's Medallion of Cruelty (Horde)
+					un(REMOVED_FROM_GAME, i(91687)),	-- Malevolent Gladiator's Medallion of Meditation (Horde)
+					un(REMOVED_FROM_GAME, i(91685)),	-- Malevolent Gladiator's Medallion of Tenacity (Horde)
 				}),
 			}),
 			n(-662, {	-- Elite PvP Gear
 				n(-319, {	-- Weapons
-					un(2, i(85125)),	-- Malevolent Gladiator's Barrier
-					un(2, i(85122)),	-- Malevolent Gladiator's Baton of Light
-					un(2, i(85109)),	-- Malevolent Gladiator's Battle Staff
-					un(2, i(85136)),	-- Malevolent Gladiator's Bonecracker
-					un(2, i(85107)),	-- Malevolent Gladiator's Bonegrinder
-					un(2, i(85131)),	-- Malevolent Gladiator's Cleaver
-					un(2, i(85113)),	-- Malevolent Gladiator's Decapitator
-					un(2, i(85114)),	-- Malevolent Gladiator's Endgame
-					un(2, i(85110)),	-- Malevolent Gladiator's Energy Staff
-					un(2, i(85116)),	-- Malevolent Gladiator's Fleshslicer
-					un(2, i(85137)),	-- Malevolent Gladiator's Gavel
-					un(2, i(85112)),	-- Malevolent Gladiator's Greatsword
-					un(2, i(85132)),	-- Malevolent Gladiator's Hacker
-					un(2, i(85120)),	-- Malevolent Gladiator's Heavy Crossbow
-					un(2, i(85119)),	-- Malevolent Gladiator's Longbow
-					un(2, i(85108)),	-- Malevolent Gladiator's Pike
-					un(2, i(85130)),	-- Malevolent Gladiator's Pummeler
-					un(2, i(85135)),	-- Malevolent Gladiator's Quickblade
-					un(2, i(85126)),	-- Malevolent Gladiator's Redoubt
-					un(2, i(85129)),	-- Malevolent Gladiator's Render
-					un(2, i(85115)),	-- Malevolent Gladiator's Reprieve
-					un(2, i(85123)),	-- Malevolent Gladiator's Rifle
-					un(2, i(85128)),	-- Malevolent Gladiator's Ripper
-					un(2, i(85133)),	-- Malevolent Gladiator's Shanker
-					un(2, i(85124)),	-- Malevolent Gladiator's Shield Wall
-					un(2, i(85117)),	-- Malevolent Gladiator's Slasher
-					un(2, i(85134)),	-- Malevolent Gladiator's Slicer
-					un(2, i(85127)),	-- Malevolent Gladiator's Spellblade
-					un(2, i(85111)),	-- Malevolent Gladiator's Staff
-					un(2, i(85121)),	-- Malevolent Gladiator's Touch of Defeat
+					un(REMOVED_FROM_GAME, i(85125)),	-- Malevolent Gladiator's Barrier
+					un(REMOVED_FROM_GAME, i(85122)),	-- Malevolent Gladiator's Baton of Light
+					un(REMOVED_FROM_GAME, i(85109)),	-- Malevolent Gladiator's Battle Staff
+					un(REMOVED_FROM_GAME, i(85136)),	-- Malevolent Gladiator's Bonecracker
+					un(REMOVED_FROM_GAME, i(85107)),	-- Malevolent Gladiator's Bonegrinder
+					un(REMOVED_FROM_GAME, i(85131)),	-- Malevolent Gladiator's Cleaver
+					un(REMOVED_FROM_GAME, i(85113)),	-- Malevolent Gladiator's Decapitator
+					un(REMOVED_FROM_GAME, i(85114)),	-- Malevolent Gladiator's Endgame
+					un(REMOVED_FROM_GAME, i(85110)),	-- Malevolent Gladiator's Energy Staff
+					un(REMOVED_FROM_GAME, i(85116)),	-- Malevolent Gladiator's Fleshslicer
+					un(REMOVED_FROM_GAME, i(85137)),	-- Malevolent Gladiator's Gavel
+					un(REMOVED_FROM_GAME, i(85112)),	-- Malevolent Gladiator's Greatsword
+					un(REMOVED_FROM_GAME, i(85132)),	-- Malevolent Gladiator's Hacker
+					un(REMOVED_FROM_GAME, i(85120)),	-- Malevolent Gladiator's Heavy Crossbow
+					un(REMOVED_FROM_GAME, i(85119)),	-- Malevolent Gladiator's Longbow
+					un(REMOVED_FROM_GAME, i(85108)),	-- Malevolent Gladiator's Pike
+					un(REMOVED_FROM_GAME, i(85130)),	-- Malevolent Gladiator's Pummeler
+					un(REMOVED_FROM_GAME, i(85135)),	-- Malevolent Gladiator's Quickblade
+					un(REMOVED_FROM_GAME, i(85126)),	-- Malevolent Gladiator's Redoubt
+					un(REMOVED_FROM_GAME, i(85129)),	-- Malevolent Gladiator's Render
+					un(REMOVED_FROM_GAME, i(85115)),	-- Malevolent Gladiator's Reprieve
+					un(REMOVED_FROM_GAME, i(85123)),	-- Malevolent Gladiator's Rifle
+					un(REMOVED_FROM_GAME, i(85128)),	-- Malevolent Gladiator's Ripper
+					un(REMOVED_FROM_GAME, i(85133)),	-- Malevolent Gladiator's Shanker
+					un(REMOVED_FROM_GAME, i(85124)),	-- Malevolent Gladiator's Shield Wall
+					un(REMOVED_FROM_GAME, i(85117)),	-- Malevolent Gladiator's Slasher
+					un(REMOVED_FROM_GAME, i(85134)),	-- Malevolent Gladiator's Slicer
+					un(REMOVED_FROM_GAME, i(85127)),	-- Malevolent Gladiator's Spellblade
+					un(REMOVED_FROM_GAME, i(85111)),	-- Malevolent Gladiator's Staff
+					un(REMOVED_FROM_GAME, i(85121)),	-- Malevolent Gladiator's Touch of Defeat
 				}),
 				cl(6, {	-- Death Knight
-					un(2, i(84993)),	-- Malevolent Gladiator's Dreadplate Chestpiece
-					un(2, i(85028)),	-- Malevolent Gladiator's Dreadplate Gauntlets
-					un(2, i(85046)),	-- Malevolent Gladiator's Dreadplate Helm
-					un(2, i(85059)),	-- Malevolent Gladiator's Dreadplate Legguards
-					un(2, i(85086)),	-- Malevolent Gladiator's Dreadplate Shoulders
+					un(REMOVED_FROM_GAME, i(84993)),	-- Malevolent Gladiator's Dreadplate Chestpiece
+					un(REMOVED_FROM_GAME, i(85028)),	-- Malevolent Gladiator's Dreadplate Gauntlets
+					un(REMOVED_FROM_GAME, i(85046)),	-- Malevolent Gladiator's Dreadplate Helm
+					un(REMOVED_FROM_GAME, i(85059)),	-- Malevolent Gladiator's Dreadplate Legguards
+					un(REMOVED_FROM_GAME, i(85086)),	-- Malevolent Gladiator's Dreadplate Shoulders
 				}),
 				cl(11, {	-- Druid
-					un(2, i(85025)),	-- Malevolent Gladiator's Dragonhide Gloves
-					un(2, i(85045)),	-- Malevolent Gladiator's Dragonhide Helm
-					un(2, i(85058)),	-- Malevolent Gladiator's Dragonhide Legguards
-					un(2, i(85065)),	-- Malevolent Gladiator's Dragonhide Robes
-					un(2, i(85084)),	-- Malevolent Gladiator's Dragonhide Spaulders
-					un(2, i(85026)),	-- Malevolent Gladiator's Kodohide Gloves
-					un(2, i(85043)),	-- Malevolent Gladiator's Kodohide Helm
-					un(2, i(85051)),	-- Malevolent Gladiator's Kodohide Legguards
-					un(2, i(85071)),	-- Malevolent Gladiator's Kodohide Robes
-					un(2, i(85082)),	-- Malevolent Gladiator's Kodohide Spaulders
-					un(2, i(85022)),	-- Malevolent Gladiator's Wyrmhide Gloves
-					un(2, i(85037)),	-- Malevolent Gladiator's Wyrmhide Helm
-					un(2, i(85049)),	-- Malevolent Gladiator's Wyrmhide Legguards
-					un(2, i(85070)),	-- Malevolent Gladiator's Wyrmhide Robes
-					un(2, i(85080)),	-- Malevolent Gladiator's Wyrmhide Spaulders
+					un(REMOVED_FROM_GAME, i(85025)),	-- Malevolent Gladiator's Dragonhide Gloves
+					un(REMOVED_FROM_GAME, i(85045)),	-- Malevolent Gladiator's Dragonhide Helm
+					un(REMOVED_FROM_GAME, i(85058)),	-- Malevolent Gladiator's Dragonhide Legguards
+					un(REMOVED_FROM_GAME, i(85065)),	-- Malevolent Gladiator's Dragonhide Robes
+					un(REMOVED_FROM_GAME, i(85084)),	-- Malevolent Gladiator's Dragonhide Spaulders
+					un(REMOVED_FROM_GAME, i(85026)),	-- Malevolent Gladiator's Kodohide Gloves
+					un(REMOVED_FROM_GAME, i(85043)),	-- Malevolent Gladiator's Kodohide Helm
+					un(REMOVED_FROM_GAME, i(85051)),	-- Malevolent Gladiator's Kodohide Legguards
+					un(REMOVED_FROM_GAME, i(85071)),	-- Malevolent Gladiator's Kodohide Robes
+					un(REMOVED_FROM_GAME, i(85082)),	-- Malevolent Gladiator's Kodohide Spaulders
+					un(REMOVED_FROM_GAME, i(85022)),	-- Malevolent Gladiator's Wyrmhide Gloves
+					un(REMOVED_FROM_GAME, i(85037)),	-- Malevolent Gladiator's Wyrmhide Helm
+					un(REMOVED_FROM_GAME, i(85049)),	-- Malevolent Gladiator's Wyrmhide Legguards
+					un(REMOVED_FROM_GAME, i(85070)),	-- Malevolent Gladiator's Wyrmhide Robes
+					un(REMOVED_FROM_GAME, i(85080)),	-- Malevolent Gladiator's Wyrmhide Spaulders
 				}),
 				cl(3, {	-- Hunter
-					un(2, i(84994)),	-- Malevolent Gladiator's Chain Armor
-					un(2, i(85020)),	-- Malevolent Gladiator's Chain Gauntlets
-					un(2, i(85034)),	-- Malevolent Gladiator's Chain Helm
-					un(2, i(85061)),	-- Malevolent Gladiator's Chain Leggings
-					un(2, i(85076)),	-- Malevolent Gladiator's Chain Spaulders
+					un(REMOVED_FROM_GAME, i(84994)),	-- Malevolent Gladiator's Chain Armor
+					un(REMOVED_FROM_GAME, i(85020)),	-- Malevolent Gladiator's Chain Gauntlets
+					un(REMOVED_FROM_GAME, i(85034)),	-- Malevolent Gladiator's Chain Helm
+					un(REMOVED_FROM_GAME, i(85061)),	-- Malevolent Gladiator's Chain Leggings
+					un(REMOVED_FROM_GAME, i(85076)),	-- Malevolent Gladiator's Chain Spaulders
 				}),
 				cl(8, {	-- Mage
-					un(2, i(85085)),	-- Malevolent Gladiator's Silk Amice
-					un(2, i(85031)),	-- Malevolent Gladiator's Silk Cowl
-					un(2, i(85016)),	-- Malevolent Gladiator's Silk Handguards
-					un(2, i(85068)),	-- Malevolent Gladiator's Silk Robe
-					un(2, i(85062)),	-- Malevolent Gladiator's Silk Trousers
+					un(REMOVED_FROM_GAME, i(85085)),	-- Malevolent Gladiator's Silk Amice
+					un(REMOVED_FROM_GAME, i(85031)),	-- Malevolent Gladiator's Silk Cowl
+					un(REMOVED_FROM_GAME, i(85016)),	-- Malevolent Gladiator's Silk Handguards
+					un(REMOVED_FROM_GAME, i(85068)),	-- Malevolent Gladiator's Silk Robe
+					un(REMOVED_FROM_GAME, i(85062)),	-- Malevolent Gladiator's Silk Trousers
 				}),
 				cl(10, {	-- Monk
-					un(2, i(85015)),	-- Malevolent Gladiator's Copperskin Gloves
-					un(2, i(85030)),	-- Malevolent Gladiator's Copperskin Helm
-					un(2, i(85060)),	-- Malevolent Gladiator's Copperskin Legguards
-					un(2, i(85088)),	-- Malevolent Gladiator's Copperskin Spaulders
-					un(2, i(85067)),	-- Malevolent Gladiator's Copperskin Tunic
-					un(2, i(85018)),	-- Malevolent Gladiator's Ironskin Gloves
-					un(2, i(85033)),	-- Malevolent Gladiator's Ironskin Helm
-					un(2, i(85064)),	-- Malevolent Gladiator's Ironskin Legguards
-					un(2, i(85087)),	-- Malevolent Gladiator's Ironskin Spaulders
-					un(2, i(85066)),	-- Malevolent Gladiator's Ironskin Tunic
+					un(REMOVED_FROM_GAME, i(85015)),	-- Malevolent Gladiator's Copperskin Gloves
+					un(REMOVED_FROM_GAME, i(85030)),	-- Malevolent Gladiator's Copperskin Helm
+					un(REMOVED_FROM_GAME, i(85060)),	-- Malevolent Gladiator's Copperskin Legguards
+					un(REMOVED_FROM_GAME, i(85088)),	-- Malevolent Gladiator's Copperskin Spaulders
+					un(REMOVED_FROM_GAME, i(85067)),	-- Malevolent Gladiator's Copperskin Tunic
+					un(REMOVED_FROM_GAME, i(85018)),	-- Malevolent Gladiator's Ironskin Gloves
+					un(REMOVED_FROM_GAME, i(85033)),	-- Malevolent Gladiator's Ironskin Helm
+					un(REMOVED_FROM_GAME, i(85064)),	-- Malevolent Gladiator's Ironskin Legguards
+					un(REMOVED_FROM_GAME, i(85087)),	-- Malevolent Gladiator's Ironskin Spaulders
+					un(REMOVED_FROM_GAME, i(85066)),	-- Malevolent Gladiator's Ironskin Tunic
 				}),
 				cl(2, {	-- Paladin
-					un(2, i(84991)),	-- Malevolent Gladiator's Ornamented Chestguard
-					un(2, i(85024)),	-- Malevolent Gladiator's Ornamented Gloves
-					un(2, i(85042)),	-- Malevolent Gladiator's Ornamented Headcover
-					un(2, i(85056)),	-- Malevolent Gladiator's Ornamented Legplates
-					un(2, i(85090)),	-- Malevolent Gladiator's Ornamented Spaulders
-					un(2, i(84992)),	-- Malevolent Gladiator's Scaled Chestpiece
-					un(2, i(85027)),	-- Malevolent Gladiator's Scaled Gauntlets
-					un(2, i(85044)),	-- Malevolent Gladiator's Scaled Helm
-					un(2, i(85057)),	-- Malevolent Gladiator's Scaled Legguards
-					un(2, i(85091)),	-- Malevolent Gladiator's Scaled Shoulders
+					un(REMOVED_FROM_GAME, i(84991)),	-- Malevolent Gladiator's Ornamented Chestguard
+					un(REMOVED_FROM_GAME, i(85024)),	-- Malevolent Gladiator's Ornamented Gloves
+					un(REMOVED_FROM_GAME, i(85042)),	-- Malevolent Gladiator's Ornamented Headcover
+					un(REMOVED_FROM_GAME, i(85056)),	-- Malevolent Gladiator's Ornamented Legplates
+					un(REMOVED_FROM_GAME, i(85090)),	-- Malevolent Gladiator's Ornamented Spaulders
+					un(REMOVED_FROM_GAME, i(84992)),	-- Malevolent Gladiator's Scaled Chestpiece
+					un(REMOVED_FROM_GAME, i(85027)),	-- Malevolent Gladiator's Scaled Gauntlets
+					un(REMOVED_FROM_GAME, i(85044)),	-- Malevolent Gladiator's Scaled Helm
+					un(REMOVED_FROM_GAME, i(85057)),	-- Malevolent Gladiator's Scaled Legguards
+					un(REMOVED_FROM_GAME, i(85091)),	-- Malevolent Gladiator's Scaled Shoulders
 				}),
 				cl(5, {	-- Priest
-					un(2, i(85013)),	-- Malevolent Gladiator's Mooncloth Gloves
-					un(2, i(85039)),	-- Malevolent Gladiator's Mooncloth Helm
-					un(2, i(85052)),	-- Malevolent Gladiator's Mooncloth Leggings
-					un(2, i(85083)),	-- Malevolent Gladiator's Mooncloth Mantle
-					un(2, i(85072)),	-- Malevolent Gladiator's Mooncloth Robe
-					un(2, i(85017)),	-- Malevolent Gladiator's Satin Gloves
-					un(2, i(85040)),	-- Malevolent Gladiator's Satin Hood
-					un(2, i(85053)),	-- Malevolent Gladiator's Satin Leggings
-					un(2, i(85074)),	-- Malevolent Gladiator's Satin Mantle
-					un(2, i(85073)),	-- Malevolent Gladiator's Satin Robe
+					un(REMOVED_FROM_GAME, i(85013)),	-- Malevolent Gladiator's Mooncloth Gloves
+					un(REMOVED_FROM_GAME, i(85039)),	-- Malevolent Gladiator's Mooncloth Helm
+					un(REMOVED_FROM_GAME, i(85052)),	-- Malevolent Gladiator's Mooncloth Leggings
+					un(REMOVED_FROM_GAME, i(85083)),	-- Malevolent Gladiator's Mooncloth Mantle
+					un(REMOVED_FROM_GAME, i(85072)),	-- Malevolent Gladiator's Mooncloth Robe
+					un(REMOVED_FROM_GAME, i(85017)),	-- Malevolent Gladiator's Satin Gloves
+					un(REMOVED_FROM_GAME, i(85040)),	-- Malevolent Gladiator's Satin Hood
+					un(REMOVED_FROM_GAME, i(85053)),	-- Malevolent Gladiator's Satin Leggings
+					un(REMOVED_FROM_GAME, i(85074)),	-- Malevolent Gladiator's Satin Mantle
+					un(REMOVED_FROM_GAME, i(85073)),	-- Malevolent Gladiator's Satin Robe
 				}),
 				cl(4, {	-- Rogue
-					un(2, i(85023)),	-- Malevolent Gladiator's Leather Gloves
-					un(2, i(85041)),	-- Malevolent Gladiator's Leather Helm
-					un(2, i(85055)),	-- Malevolent Gladiator's Leather Legguards
-					un(2, i(85089)),	-- Malevolent Gladiator's Leather Spaulders
-					un(2, i(84995)),	-- Malevolent Gladiator's Leather Tunic
+					un(REMOVED_FROM_GAME, i(85023)),	-- Malevolent Gladiator's Leather Gloves
+					un(REMOVED_FROM_GAME, i(85041)),	-- Malevolent Gladiator's Leather Helm
+					un(REMOVED_FROM_GAME, i(85055)),	-- Malevolent Gladiator's Leather Legguards
+					un(REMOVED_FROM_GAME, i(85089)),	-- Malevolent Gladiator's Leather Spaulders
+					un(REMOVED_FROM_GAME, i(84995)),	-- Malevolent Gladiator's Leather Tunic
 				}),
 				cl(7, {	-- Shaman
-					un(2, i(84989)),	-- Malevolent Gladiator's Linked Armor
-					un(2, i(85011)),	-- Malevolent Gladiator's Linked Gauntlets
-					un(2, i(85038)),	-- Malevolent Gladiator's Linked Helm
-					un(2, i(85050)),	-- Malevolent Gladiator's Linked Leggings
-					un(2, i(85081)),	-- Malevolent Gladiator's Linked Spaulders
-					un(2, i(84988)),	-- Malevolent Gladiator's Mail Armor
-					un(2, i(85012)),	-- Malevolent Gladiator's Mail Gauntlets
-					un(2, i(85036)),	-- Malevolent Gladiator's Mail Helm
-					un(2, i(85048)),	-- Malevolent Gladiator's Mail Leggings
-					un(2, i(85079)),	-- Malevolent Gladiator's Mail Spaulders
-					un(2, i(84990)),	-- Malevolent Gladiator's Ringmail Armor
-					un(2, i(85014)),	-- Malevolent Gladiator's Ringmail Gauntlets
-					un(2, i(85029)),	-- Malevolent Gladiator's Ringmail Helm
-					un(2, i(85054)),	-- Malevolent Gladiator's Ringmail Leggings
-					un(2, i(85075)),	-- Malevolent Gladiator's Ringmail Spaulders
+					un(REMOVED_FROM_GAME, i(84989)),	-- Malevolent Gladiator's Linked Armor
+					un(REMOVED_FROM_GAME, i(85011)),	-- Malevolent Gladiator's Linked Gauntlets
+					un(REMOVED_FROM_GAME, i(85038)),	-- Malevolent Gladiator's Linked Helm
+					un(REMOVED_FROM_GAME, i(85050)),	-- Malevolent Gladiator's Linked Leggings
+					un(REMOVED_FROM_GAME, i(85081)),	-- Malevolent Gladiator's Linked Spaulders
+					un(REMOVED_FROM_GAME, i(84988)),	-- Malevolent Gladiator's Mail Armor
+					un(REMOVED_FROM_GAME, i(85012)),	-- Malevolent Gladiator's Mail Gauntlets
+					un(REMOVED_FROM_GAME, i(85036)),	-- Malevolent Gladiator's Mail Helm
+					un(REMOVED_FROM_GAME, i(85048)),	-- Malevolent Gladiator's Mail Leggings
+					un(REMOVED_FROM_GAME, i(85079)),	-- Malevolent Gladiator's Mail Spaulders
+					un(REMOVED_FROM_GAME, i(84990)),	-- Malevolent Gladiator's Ringmail Armor
+					un(REMOVED_FROM_GAME, i(85014)),	-- Malevolent Gladiator's Ringmail Gauntlets
+					un(REMOVED_FROM_GAME, i(85029)),	-- Malevolent Gladiator's Ringmail Helm
+					un(REMOVED_FROM_GAME, i(85054)),	-- Malevolent Gladiator's Ringmail Leggings
+					un(REMOVED_FROM_GAME, i(85075)),	-- Malevolent Gladiator's Ringmail Spaulders
 				}),
 				cl(9, {	-- Warlock
-					un(2, i(85078)),	-- Malevolent Gladiator's Felweave Amice
-					un(2, i(85035)),	-- Malevolent Gladiator's Felweave Cowl
-					un(2, i(85021)),	-- Malevolent Gladiator's Felweave Handguards
-					un(2, i(85069)),	-- Malevolent Gladiator's Felweave Raiment
-					un(2, i(85047)),	-- Malevolent Gladiator's Felweave Trousers
+					un(REMOVED_FROM_GAME, i(85078)),	-- Malevolent Gladiator's Felweave Amice
+					un(REMOVED_FROM_GAME, i(85035)),	-- Malevolent Gladiator's Felweave Cowl
+					un(REMOVED_FROM_GAME, i(85021)),	-- Malevolent Gladiator's Felweave Handguards
+					un(REMOVED_FROM_GAME, i(85069)),	-- Malevolent Gladiator's Felweave Raiment
+					un(REMOVED_FROM_GAME, i(85047)),	-- Malevolent Gladiator's Felweave Trousers
 				}),
 				cl(1, {	-- Warrior
-					un(2, i(84987)),	-- Malevolent Gladiator's Plate Chestpiece
-					un(2, i(85019)),	-- Malevolent Gladiator's Plate Gauntlets
-					un(2, i(85032)),	-- Malevolent Gladiator's Plate Helm
-					un(2, i(85063)),	-- Malevolent Gladiator's Plate Legguards
-					un(2, i(85077)),	-- Malevolent Gladiator's Plate Shoulders
+					un(REMOVED_FROM_GAME, i(84987)),	-- Malevolent Gladiator's Plate Chestpiece
+					un(REMOVED_FROM_GAME, i(85019)),	-- Malevolent Gladiator's Plate Gauntlets
+					un(REMOVED_FROM_GAME, i(85032)),	-- Malevolent Gladiator's Plate Helm
+					un(REMOVED_FROM_GAME, i(85063)),	-- Malevolent Gladiator's Plate Legguards
+					un(REMOVED_FROM_GAME, i(85077)),	-- Malevolent Gladiator's Plate Shoulders
 				}),
 				n(-328, {	-- Waist
-					un(2, i(85093)),	-- Malevolent Gladiator's Cord of Accuracy
-					un(2, i(85092)),	-- Malevolent Gladiator's Cord of Cruelty
-					un(2, i(85094)),	-- Malevolent Gladiator's Cord of Meditation
-					un(2, i(85098)),	-- Malevolent Gladiator's Belt of Cruelty
-					un(2, i(85106)),	-- Malevolent Gladiator's Belt of Meditation
-					un(2, i(85101)),	-- Malevolent Gladiator's Waistband of Accuracy
-					un(2, i(85100)),	-- Malevolent Gladiator's Waistband of Cruelty
-					un(2, i(85095)),	-- Malevolent Gladiator's Links of Accuracy
-					un(2, i(85096)),	-- Malevolent Gladiator's Links of Cruelty
-					un(2, i(85097)),	-- Malevolent Gladiator's Waistguard of Cruelty
-					un(2, i(85099)),	-- Malevolent Gladiator's Waistguard of Meditation
-					un(2, i(85104)),	-- Malevolent Gladiator's Clasp of Cruelty
-					un(2, i(85105)),	-- Malevolent Gladiator's Clasp of Meditation
-					un(2, i(85102)),	-- Malevolent Gladiator's Girdle of Accuracy
-					un(2, i(85103)),	-- Malevolent Gladiator's Girdle of Prowess
+					un(REMOVED_FROM_GAME, i(85093)),	-- Malevolent Gladiator's Cord of Accuracy
+					un(REMOVED_FROM_GAME, i(85092)),	-- Malevolent Gladiator's Cord of Cruelty
+					un(REMOVED_FROM_GAME, i(85094)),	-- Malevolent Gladiator's Cord of Meditation
+					un(REMOVED_FROM_GAME, i(85098)),	-- Malevolent Gladiator's Belt of Cruelty
+					un(REMOVED_FROM_GAME, i(85106)),	-- Malevolent Gladiator's Belt of Meditation
+					un(REMOVED_FROM_GAME, i(85101)),	-- Malevolent Gladiator's Waistband of Accuracy
+					un(REMOVED_FROM_GAME, i(85100)),	-- Malevolent Gladiator's Waistband of Cruelty
+					un(REMOVED_FROM_GAME, i(85095)),	-- Malevolent Gladiator's Links of Accuracy
+					un(REMOVED_FROM_GAME, i(85096)),	-- Malevolent Gladiator's Links of Cruelty
+					un(REMOVED_FROM_GAME, i(85097)),	-- Malevolent Gladiator's Waistguard of Cruelty
+					un(REMOVED_FROM_GAME, i(85099)),	-- Malevolent Gladiator's Waistguard of Meditation
+					un(REMOVED_FROM_GAME, i(85104)),	-- Malevolent Gladiator's Clasp of Cruelty
+					un(REMOVED_FROM_GAME, i(85105)),	-- Malevolent Gladiator's Clasp of Meditation
+					un(REMOVED_FROM_GAME, i(85102)),	-- Malevolent Gladiator's Girdle of Accuracy
+					un(REMOVED_FROM_GAME, i(85103)),	-- Malevolent Gladiator's Girdle of Prowess
 				}),
 				n(-330, {	-- Feet
-					un(2, i(85005)),	-- Malevolent Gladiator's Treads of Alacrity
-					un(2, i(85004)),	-- Malevolent Gladiator's Treads of Cruelty
-					un(2, i(85006)),	-- Malevolent Gladiator's Treads of Meditation
-					un(2, i(85010)),	-- Malevolent Gladiator's Boots of Alacrity
-					un(2, i(85009)),	-- Malevolent Gladiator's Boots of Cruelty
-					un(2, i(84996)),	-- Malevolent Gladiator's Footguards of Alacrity
-					un(2, i(85003)),	-- Malevolent Gladiator's Footguards of Meditation
-					un(2, i(84997)),	-- Malevolent Gladiator's Footguards of Alacrity
-					un(2, i(84998)),	-- Malevolent Gladiator's Footguards of Meditation
-					un(2, i(85008)),	-- Malevolent Gladiator's Sabatons of Alacrity
-					un(2, i(85007)),	-- Malevolent Gladiator's Sabatons of Cruelty
-					un(2, i(85001)),	-- Malevolent Gladiator's Greaves of Alacrity
-					un(2, i(85002)),	-- Malevolent Gladiator's Greaves of Meditation
-					un(2, i(84999)),	-- Malevolent Gladiator's Warboots of Alacrity
-					un(2, i(85000)),	-- Malevolent Gladiator's Warboots of Cruelty
+					un(REMOVED_FROM_GAME, i(85005)),	-- Malevolent Gladiator's Treads of Alacrity
+					un(REMOVED_FROM_GAME, i(85004)),	-- Malevolent Gladiator's Treads of Cruelty
+					un(REMOVED_FROM_GAME, i(85006)),	-- Malevolent Gladiator's Treads of Meditation
+					un(REMOVED_FROM_GAME, i(85010)),	-- Malevolent Gladiator's Boots of Alacrity
+					un(REMOVED_FROM_GAME, i(85009)),	-- Malevolent Gladiator's Boots of Cruelty
+					un(REMOVED_FROM_GAME, i(84996)),	-- Malevolent Gladiator's Footguards of Alacrity
+					un(REMOVED_FROM_GAME, i(85003)),	-- Malevolent Gladiator's Footguards of Meditation
+					un(REMOVED_FROM_GAME, i(84997)),	-- Malevolent Gladiator's Footguards of Alacrity
+					un(REMOVED_FROM_GAME, i(84998)),	-- Malevolent Gladiator's Footguards of Meditation
+					un(REMOVED_FROM_GAME, i(85008)),	-- Malevolent Gladiator's Sabatons of Alacrity
+					un(REMOVED_FROM_GAME, i(85007)),	-- Malevolent Gladiator's Sabatons of Cruelty
+					un(REMOVED_FROM_GAME, i(85001)),	-- Malevolent Gladiator's Greaves of Alacrity
+					un(REMOVED_FROM_GAME, i(85002)),	-- Malevolent Gladiator's Greaves of Meditation
+					un(REMOVED_FROM_GAME, i(84999)),	-- Malevolent Gladiator's Warboots of Alacrity
+					un(REMOVED_FROM_GAME, i(85000)),	-- Malevolent Gladiator's Warboots of Cruelty
 				}),
 			}),
 		}),

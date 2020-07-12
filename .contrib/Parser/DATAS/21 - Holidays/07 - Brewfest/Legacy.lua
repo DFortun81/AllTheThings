@@ -19,7 +19,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 							27,	-- Dun Morogh
 						},
 						["g"] = {
-							un(2, i(32912)),	-- Yellow Brewfest Stein
+							un(REMOVED_FROM_GAME, i(32912)),	-- Yellow Brewfest Stein
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -36,7 +36,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 							1,	-- Durotar
 						},
 						["g"] = {
-							un(2, i(32912)),	-- Yellow Brewfest Stein
+							un(REMOVED_FROM_GAME, i(32912)),	-- Yellow Brewfest Stein
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
@@ -53,7 +53,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 							27,	-- Dun Morogh
 						},
 						["g"] = {
-							un(2, i(33016)),	-- Blue Brewfest Stein
+							un(REMOVED_FROM_GAME, i(33016)),	-- Blue Brewfest Stein
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -70,7 +70,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 							1,	-- Durotar
 						},
 						["g"] = {
-							un(2, i(33016)),	-- Blue Brewfest Stein
+							un(REMOVED_FROM_GAME, i(33016)),	-- Blue Brewfest Stein
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
@@ -87,7 +87,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 							27,	-- Dun Morogh
 						},
 						["g"] = {
-							un(2, i(37892)),	-- Green Brewfest Stein
+							un(REMOVED_FROM_GAME, i(37892)),	-- Green Brewfest Stein
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -104,7 +104,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 							1,	-- Durotar
 						},
 						["g"] = {
-							un(2, i(37892)),	-- Green Brewfest Stein
+							un(REMOVED_FROM_GAME, i(37892)),	-- Green Brewfest Stein
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
@@ -136,7 +136,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["g"] = {
-								un(2, ach(1186)),	-- Down With The Dark Iron
+								un(REMOVED_FROM_GAME, ach(1186)),	-- Down With The Dark Iron
 							},
 					}),
 					q(12192, {	-- This One Time, When I Was Drunk... (A)
@@ -153,28 +153,28 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["g"] = {
-								un(2, ach(1186)),	-- Down With The Dark Iron
+								un(REMOVED_FROM_GAME, ach(1186)),	-- Down With The Dark Iron
 							},
 					}),
 					--[[
 					q(11486, {	-- The Best of Brews (Alliance)
 						["g"] = {
-							un(2, i(34140)),	-- Dark Iron Tankard
+							un(REMOVED_FROM_GAME, i(34140)),	-- Dark Iron Tankard
 						},
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 11454, },	-- Seek the Saboteurs
 						["provider"] = { "n", 23872 },	-- Coren Direbrew
-						["u"] = 2,
+						["u"] = REMOVED_FROM_GAME,
 						["maps"] = { 242, },	-- Blackrock Depths
 					}),
 					q(11487, {	-- The Best of Brews (Horde)
 						["g"] = {
-							un(2, i(34140)),	-- Dark Iron Tankard
+							un(REMOVED_FROM_GAME, i(34140)),	-- Dark Iron Tankard
 						},
 						["provider"] = { "n", 23872 },	-- Coren Direbrew
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 11454, },	-- Seek the Saboteurs
-						["u"] = 2,								
+						["u"] = REMOVED_FROM_GAME,								
 						["maps"] = { 242, },	-- Blackrock Depths
 					}),
 					--]]
@@ -195,7 +195,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["provider"] = { "n", 26719 },	-- Brewfest Spy
 						["sourceQuests"] = { 11442, },	-- Save Brewfest!
 						["isDaily"] = true,
-						["u"] = 2,
+						["u"] = REMOVED_FROM_GAME,
 						["maps"] = { 242, },	-- Blackrock Depths
 					}),
 					--]]

@@ -4,22 +4,20 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
+		["icon"] = "Interface\\Icons\\achievement_general",
 		["groups"] = {
 			n(-569, {	-- Azeroth Academy Mentor Recruitment Promotion
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					n(-548, {	-- China Only
-						["groups"] = {
-							i(103632, {	--Lucky Box of Greatness
-								i(103630),	-- Lucky Riding Turtle
-								i(103629),	-- Lucky Satchel
-								i(103631),	-- Lucky Path of Cenarius
-							}),
-						},
+						i(103632, {	-- Lucky Box of Greatness
+							i(103630),	-- Lucky Riding Turtle
+							i(103629),	-- Lucky Satchel
+							i(103631),	-- Lucky Path of Cenarius
+						}),
 					}),
 				},
-				["u"] = 3,
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_general",
 	}),
 };

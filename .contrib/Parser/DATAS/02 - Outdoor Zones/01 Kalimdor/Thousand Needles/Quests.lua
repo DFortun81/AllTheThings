@@ -328,8 +328,8 @@ _.Zones =
 					["provider"] = { "n", 10646 },	-- Lakota Windsong
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(15469)),	-- Windsong Cinch
-						un(2, i(15468)),	-- Windsong Drape
+						un(REMOVED_FROM_GAME, i(15469)),	-- Windsong Cinch
+						un(REMOVED_FROM_GAME, i(15468)),	-- Windsong Drape
 					},
 				}),
 				q(25835, {	-- Free Freewind Post
@@ -368,8 +368,8 @@ _.Zones =
 					["provider"] = { "n", 4453 },	-- Wizzle Brassbolts
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(11122)),	-- Carrot on a Stick
-						un(2, i(9653)),	-- Speedy Racer Goggles
+						un(REMOVED_FROM_GAME, i(11122)),	-- Carrot on a Stick
+						un(REMOVED_FROM_GAME, i(9653)),	-- Speedy Racer Goggles
 					},
 				}),
 				q(25757, {	-- Get Koalbeard!
@@ -503,9 +503,9 @@ _.Zones =
 					["provider"] = { "n", 10537 },	-- Cliffwatcher Longhorn
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(15457)),	-- Desert Shoulders
-						un(2, i(15459)),	-- Grimtoll Wristguards
-						un(2, i(15458)),	-- Tundra Boots
+						un(REMOVED_FROM_GAME, i(15457)),	-- Desert Shoulders
+						un(REMOVED_FROM_GAME, i(15459)),	-- Grimtoll Wristguards
+						un(REMOVED_FROM_GAME, i(15458)),	-- Tundra Boots
 					},
 				}),
 				q(1105,  {	-- Hardened Shells
@@ -546,7 +546,7 @@ _.Zones =
 					["provider"] = { "n", 10941 },	-- Wizlo Bearingshiner
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(15467)),	-- Inventor's League Ring
+						un(REMOVED_FROM_GAME, i(15467)),	-- Inventor's League Ring
 					},
 				}),
 				q(25524, {	-- In the Outhouse (A)
@@ -660,8 +660,8 @@ _.Zones =
 					["provider"] = { "n", 3428 },	-- Korran
 					["sourceQuest"] = 1148,	-- Parts of the Swarm
 					["g"] = {
-						un(2, i(6738)),	-- Bleeding Crescent
-						un(2, i(6737)),	-- Dryleaf Pants
+						un(REMOVED_FROM_GAME, i(6738)),	-- Bleeding Crescent
+						un(REMOVED_FROM_GAME, i(6737)),	-- Dryleaf Pants
 					},
 				}),
 				q(25533, {	-- Pirate Accuracy Increasing
@@ -679,9 +679,9 @@ _.Zones =
 					["provider"] = { "n", 10638 },	-- Kanati Greycloud
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(15461)),	-- Lightheel Boots
-						un(2, i(15462)),	-- Loamflake Bracers
-						un(2, i(15463)),	-- Palestrider Gloves
+						un(REMOVED_FROM_GAME, i(15461)),	-- Lightheel Boots
+						un(REMOVED_FROM_GAME, i(15462)),	-- Loamflake Bracers
+						un(REMOVED_FROM_GAME, i(15463)),	-- Palestrider Gloves
 					},
 				}),
 				q(25532, {	-- Pirate Accuracy Increasing
@@ -985,8 +985,8 @@ _.Zones =
 					["provider"] = { "n", 4722 },	-- Rau Cliffrunner
 					["sourceQuest"] = 1196,	-- The Sacred Flame
 					["g"] = {
-						un(2, i(6739)),	-- Cliffrunner's Aim
-						un(2, i(6740)),	-- Azure Sash
+						un(REMOVED_FROM_GAME, i(6739)),	-- Cliffrunner's Aim
+						un(REMOVED_FROM_GAME, i(6740)),	-- Azure Sash
 					},
 				}),
 				q(1147,  {	-- The Swarm Grows
@@ -1119,8 +1119,8 @@ _.Zones =
 					["provider"] = { "o", 176115 },	-- Wanted Posted - Arnak Grimtotem
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(15471)),	-- Brawnhide Armor
-						un(2, i(15470)), 	-- Plainsguard Leggings
+						un(REMOVED_FROM_GAME, i(15471)),	-- Brawnhide Armor
+						un(REMOVED_FROM_GAME, i(15470)), 	-- Plainsguard Leggings
 					},
 				}),
 				q(28051, {	-- We All Scream for Ice Cream... and then Die!

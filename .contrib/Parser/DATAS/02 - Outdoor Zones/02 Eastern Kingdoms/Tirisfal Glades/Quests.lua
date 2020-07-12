@@ -133,7 +133,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10839 },	-- Argent Officer Garush
 					["g"] = {
-						un(2, i(12846)),	-- Argent Dawn Commission
+						un(REMOVED_FROM_GAME, i(12846)),	-- Argent Dawn Commission
 					},
 				}),
 				q(370,   {	-- At War With The Scarlet Crusade
@@ -176,7 +176,7 @@ _.Zones =
 					["coord"] = { 83.18, 68.45, 18 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
+						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
 					},
 				}),
 				q(24990, {	-- Darkhound Pounding
@@ -290,7 +290,7 @@ _.Zones =
 					["races"] =  { 5 },	-- Undead
 					["classes"] = { 5 },	-- Priest
 					["g"] = {
-						un(2, i(16607)),	-- Garments of Darkness
+						un(REMOVED_FROM_GAME, i(16607)),	-- Garments of Darkness
 					},
 				}),
 				q(24991, {	-- Garren's Haunt
@@ -344,10 +344,10 @@ _.Zones =
 					["provider"] = { "n", 1500 },	-- Coleman Farthing
 					["classes"] = { 1 },	-- Warrior
 					["g"] = {
-						un(2, i(7115)),	-- Heirloom Axe
-						un(2, i(7117)),	-- Heirloom Hammer
-						un(2, i(7116)),	-- Heirloom Dagger
-						un(2, i(7118)),	-- Heirloom Sword
+						un(REMOVED_FROM_GAME, i(7115)),	-- Heirloom Axe
+						un(REMOVED_FROM_GAME, i(7117)),	-- Heirloom Hammer
+						un(REMOVED_FROM_GAME, i(7116)),	-- Heirloom Dagger
+						un(REMOVED_FROM_GAME, i(7118)),	-- Heirloom Sword
 					},
 				}),
 				q(24996, {	-- Holland's Experiment
@@ -362,7 +362,7 @@ _.Zones =
 					["provider"] = { "n", 10839 },		-- Argent Officer Garush
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
+						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
 					},
 				}),
 				q(24977, {	-- Johaan's Experiment
@@ -415,7 +415,7 @@ _.Zones =
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						i(12844, {	-- Argent Dawn Valor Token
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
@@ -423,9 +423,9 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(15799)),	-- Heroic Commendation Medal
-						un(2, i(15800)),	-- Intrepid Shortsword
-						un(2, i(15801)),	-- Valiant Shortsword
+						un(REMOVED_FROM_GAME, i(15799)),	-- Heroic Commendation Medal
+						un(REMOVED_FROM_GAME, i(15800)),	-- Intrepid Shortsword
+						un(REMOVED_FROM_GAME, i(15801)),	-- Valiant Shortsword
 					},
 				}),
 				q(5514, {	-- Mold Rhymes With...

@@ -7,7 +7,7 @@ _.Achievements =
 	n(-9969, {	-- Feats of Strength
 		n(-10031, {	-- Mounts
 			un(24, ach(3496)),	-- A Brew-FAST Mount
-			un(2, ach(430)),	-- Amani War Bear
+			un(REMOVED_FROM_GAME, ach(430)),	-- Amani War Bear
 			ach(4626),			-- And I'll Form the Head!
 			ach(885),			-- Ashes of Al'ar
 			un(18, ach(4627)),	-- Big Love Rocket
@@ -25,11 +25,11 @@ _.Achievements =
 			un(14, ach(11002)),	-- Ferocious Gladiator's Storm Dragon
 			un(14, ach(12138)),	-- Fierce Gladiator's Storm Dragon - this was showing as a valid achievement until 8.0
 			ach(882),			-- Fiery Warhorse's Reins
-			un(2, ach(4832)),	-- Friends In Even Higher Places
-			un(2, ach(1436)),	-- Friends In High Places
-			un(2, ach(8794)),	-- Friends In Places Even Higher Than That
-			un(2, ach(8213)),	-- Friends In Places Higher Yet
-			un(2, ach(9925)),	-- Friends In Places Yet Even Higher Than That
+			un(REMOVED_FROM_GAME, ach(4832)),	-- Friends In Even Higher Places
+			un(REMOVED_FROM_GAME, ach(1436)),	-- Friends In High Places
+			un(REMOVED_FROM_GAME, ach(8794)),	-- Friends In Places Even Higher Than That
+			un(REMOVED_FROM_GAME, ach(8213)),	-- Friends In Places Higher Yet
+			un(REMOVED_FROM_GAME, ach(9925)),	-- Friends In Places Yet Even Higher Than That
 			un(14, ach(3756)),	-- Furious Gladiator's Frost Wyrm
 			ach(2081),			-- Grand Black War Mammoth
 			un(14, ach(8705)),	-- Grievous Gladiator's Cloud Serpent
@@ -37,20 +37,20 @@ _.Achievements =
 			ach(4625),			-- Invincible's Reins
 			un(14, ach(8216)),	-- Malevolent Gladiator's Cloud Serpent
 			un(14, ach(887)),	-- Merciless Nether Drake
-			un(2, ach(879)),	-- Old School Ride
+			un(REMOVED_FROM_GAME, ach(879)),	-- Old School Ride
 			un(14, ach(8707)),	-- Prideful Gladiator's Cloud Serpent
 			un(14, ach(9229)),	-- Primal Gladiator's Felblood Gronnling
 			ach(883),			-- Reins of the Raven Lord
 			un(14, ach(3757)),	-- Relentless Gladiator's Frost Wyrm
 			un(14, ach(6322)),	-- Ruthless Gladiator's Twilight Drake
-			un(2, ach(416)),	-- Scarab Lord
+			un(REMOVED_FROM_GAME, ach(416)),	-- Scarab Lord
 			ach(5767, {			-- Scourer of the Eternal Sands
 				title(143),		-- the Camel-Hoarder
 			}),
 			un(14, ach(886)),	-- Swift Nether Drake
-			un(2, ach(881)),	-- Swift Razzashi Raptor
+			un(REMOVED_FROM_GAME, ach(881)),	-- Swift Razzashi Raptor
 			ach(884),			-- Swift White Hawkstrider
-			un(2, ach(880)),	-- Swift Zulian Tiger
+			un(REMOVED_FROM_GAME, ach(880)),	-- Swift Zulian Tiger
 			un(26, ach(980)),	-- The Horseman's Reins
 			un(14, ach(8678)),	-- Tyrannical Gladiator's Cloud Serpent
 			un(14, ach(888)),	-- Vengeful Nether Drake

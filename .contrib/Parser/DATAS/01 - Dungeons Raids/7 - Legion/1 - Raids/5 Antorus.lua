@@ -1237,12 +1237,12 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
-					un(2, i(152900, {	-- Blood of the Unmaker (HEROIC+ ONLY)
+					un(REMOVED_FROM_GAME, i(152900, {	-- Blood of the Unmaker (HEROIC+ ONLY)
 						q(48954, {	-- Blood of a Titan
-							un(2, i(152901)),	-- Kirin Tor Summoning Cystal (MOUNT!)
+							un(REMOVED_FROM_GAME, i(152901)),	-- Kirin Tor Summoning Cystal (MOUNT!)
 						}),
 					})),
-					un(2, ach(12110)),	-- Ahead of the Curve: Argus the Unmaker
+					un(REMOVED_FROM_GAME, ach(12110)),	-- Ahead of the Curve: Argus the Unmaker
 					ach(12257),	-- Stardust Crusaders
 					i(153115),	-- Scythe of the Unmaker [BLUE]
 					i(152423),	-- Helm of the Awakened Soul
@@ -1660,14 +1660,14 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
-					un(2, i(152900, {	-- Blood of the Unmaker  (HEROIC+ ONLY)
+					un(REMOVED_FROM_GAME, i(152900, {	-- Blood of the Unmaker  (HEROIC+ ONLY)
 						q(48954, {	-- Blood of a Titan
-							un(2, i(152901)),	-- Kirin Tor Summoning Cystal (MOUNT!)
+							un(REMOVED_FROM_GAME, i(152901)),	-- Kirin Tor Summoning Cystal (MOUNT!)
 						}),
 					})),
-					un(2, ach(12110)),	-- Ahead of the Curve: Argus the Unmaker
-					un(2, ach(12111)),	-- Cutting Edge: Argus the Unmaker
-					un(2, ach(12258)),	-- Realm First! Argus the Unmaker
+					un(REMOVED_FROM_GAME, ach(12110)),	-- Ahead of the Curve: Argus the Unmaker
+					un(REMOVED_FROM_GAME, ach(12111)),	-- Cutting Edge: Argus the Unmaker
+					un(REMOVED_FROM_GAME, ach(12258)),	-- Realm First! Argus the Unmaker
 					ach(12002, {	-- Mythic: Argus the Unmaker
 						title(364),		-- Titanslayer
 					}),

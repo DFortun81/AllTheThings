@@ -152,10 +152,10 @@ _.WorldEvents =
 					["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
 					["g"]	= {
 						i(142403, {	-- Brawler's Burly Basilisk (MOUNT!)
-							["u"] = 2,	-- BoP / BoA Item — unobtainable as of BFA prepatch
+							["u"] = REMOVED_FROM_GAME,	-- unobtainable as of BFA prepatch
 						}),
 						i(98405, {	-- Brawler's Burly Mushan Beast (MOUNT!)
-							["u"] = 4,	-- Legacy Achievement — unobtainable unless you reached Rank 8 in either Season 1 or Season 2
+							["u"] = REMOVED_FROM_GAME, -- unobtainable unless you reached Rank 8 in either Season 1 or Season 2
 						}),
 						i(167812),  -- Brawlers Guild Tabard
 						i(122396),	-- Brawler's Razor Claws
@@ -398,10 +398,10 @@ _.WorldEvents =
 				}),
 			}),
 			ach(9177, {	-- Deck Your Collection [Season 2] -- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
-				["u"] = 2,
+				["u"] = REMOVED_FROM_GAME,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					un(2, i(98543)),	-- Wraps of the Blood-Soaked Brawler -- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
+					un(REMOVED_FROM_GAME, i(98543)),	-- Wraps of the Blood-Soaked Brawler -- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
 				},
 			}),
 		},

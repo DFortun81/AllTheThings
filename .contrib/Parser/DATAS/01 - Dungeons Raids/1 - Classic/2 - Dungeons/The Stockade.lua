@@ -17,8 +17,8 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(2033)),	-- Ambassador's Boots
-						un(2, i(2906)),	-- Darkshire Mail Leggings
+						un(REMOVED_FROM_GAME, i(2033)),	-- Ambassador's Boots
+						un(REMOVED_FROM_GAME, i(2906)),	-- Darkshire Mail Leggings
 					},
 				}),
 				q(50335, {	-- Grant Me Revenge
@@ -36,8 +36,8 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(3562)),	-- Belt of Vindication
-						un(2, i(1264)),	-- Headbasher
+						un(REMOVED_FROM_GAME, i(3562)),	-- Belt of Vindication
+						un(REMOVED_FROM_GAME, i(1264)),	-- Headbasher
 					},
 				}),
 				q(27739,{	-- The Gnoll King
@@ -59,8 +59,8 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(1317)),	-- Hardened Root Staff
-						un(2, i(3400)),	-- Lucine Longsword
+						un(REMOVED_FROM_GAME, i(1317)),	-- Hardened Root Staff
+						un(REMOVED_FROM_GAME, i(3400)),	-- Lucine Longsword
 					},
 				}),
 			}),
@@ -76,15 +76,15 @@ _.Instances = { tier(1, {	-- Classic
 				["u"] = 43,
 				["description"] = "This is a rare that was not always present.",
 				["g"] = {
-					un(2, i(2942)),	-- Iron Knuckles
-					un(2, i(3228)),	-- Jimmied Handcuffs
-					un(2, i(2941)),	-- Prison Shank
+					un(REMOVED_FROM_GAME, i(2942)),	-- Iron Knuckles
+					un(REMOVED_FROM_GAME, i(3228)),	-- Jimmied Handcuffs
+					un(REMOVED_FROM_GAME, i(2941)),	-- Prison Shank
 				},
 			}),
 			n(1666, { 	-- Kam Deepfury
 				["u"] = 43,
 				["g"] = {
-					un(2, i(2280)),	-- Kam's Walking Stick
+					un(REMOVED_FROM_GAME, i(2280)),	-- Kam's Walking Stick
 				},
 			}),
 			cr(46383, e(466, {	-- Randolph Moloch

@@ -34,18 +34,18 @@ _.Instances = { tier(1, {	-- Classic
 							["itemID"] = 18771, -- revisit. Maybe swap this with quest?
 							["requireSkill"] = BLACKSMITHING,
 							["g"] = {
-								un(2, i(12725)),	-- Plans: Enchanted Thorium Helm
+								un(REMOVED_FROM_GAME, i(12725)),	-- Plans: Enchanted Thorium Helm
 							},
 						}),
 						i(18401, {	-- Foror's Compendium of Dragon Slaying
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { WARRIOR, PALADIN },
 							["description"] = "This item used to drop from any boss in Dire Maul.",
 							["g"] = {
 								un(40, q(7507)),	-- Furor's Compendium
 								un(40, q(7508)),	-- The Forging of Quel'Serrar
 								un(40, q(7509, {	-- The Forging of Quel'Serrar
-									un(2, i(18348)),	-- Quel'Serrar
+									un(REMOVED_FROM_GAME, i(18348)),	-- Quel'Serrar
 								})),
 							},
 						}),
@@ -54,7 +54,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 7877 },	-- Latronicus Moonspear
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
-								un(2, i(18491)),	-- Lorespinner
+								un(REMOVED_FROM_GAME, i(18491)),	-- Lorespinner
 							},
 						}),
 						q(7489, {	-- Lethtendris's Web
@@ -62,7 +62,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 7776 },	-- Talo Thornhoof
 							["races"] = HORDE_ONLY,
 							["g"] = {
-								un(2, i(18491)),	-- Lorespinner
+								un(REMOVED_FROM_GAME, i(18491)),	-- Lorespinner
 							},
 						}),
 						q(27108, {	-- Lethtendris's Web
@@ -78,7 +78,7 @@ _.Instances = { tier(1, {	-- Classic
 								{ "i", 12938, 2 },	-- Blood of Heroes
 							},
 							["g"] = {
-								un(2, i(18329, {	-- Arcanum of Rapidity
+								un(REMOVED_FROM_GAME, i(18329, {	-- Arcanum of Rapidity
 									["f"] = 55,	-- Consumable
 								})),
 							},
@@ -87,8 +87,8 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = 40,
 							["provider"] = { "n", 14355 },	-- Azj'Tordin
 							["g"] = {
-								un(2, i(18410)),	-- Sprinter's Sword
-								un(2, i(18411)),	-- Spry Boots
+								un(REMOVED_FROM_GAME, i(18410)),	-- Sprinter's Sword
+								un(REMOVED_FROM_GAME, i(18411)),	-- Spry Boots
 							},
 						}),
 						q(27107, {	-- Pusillin The Thief
@@ -219,7 +219,7 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = 40,
 							["classes"] = { WARRIOR },
 							["g"] = {
-								un(2, i(18466)),	--Royal Seal of Eldre'Thalas
+								un(REMOVED_FROM_GAME, i(18466)),	--Royal Seal of Eldre'Thalas
 							},
 						}),
 						q(27133, {	-- Eyes in the Sky
@@ -229,19 +229,19 @@ _.Instances = { tier(1, {	-- Classic
 						q(8949, {	-- Falrin's Vendetta
 							["u"] = 40,
 							["g"] = {
-								un(2, i(22150)),	-- Beads of Ogre Might
-								un(2, i(22149)),	-- Beads of Ogre Mojo
+								un(REMOVED_FROM_GAME, i(22150)),	-- Beads of Ogre Might
+								un(REMOVED_FROM_GAME, i(22149)),	-- Beads of Ogre Mojo
 							},
 						}),
 						i(18401, {	-- Foror's Compendium of Dragon Slaying
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { WARRIOR, PALADIN },
 							["description"] = "This item used to drop from any boss in Dire Maul.",
 							["g"] = {
 								un(40, q(7507)),	-- Furor's Compendium
 								un(40, q(7508)),	-- The Forging of Quel'Serrar
 								un(40, q(7509, {	-- The Forging of Quel'Serrar
-									un(2, i(18348)),	-- Quel'Serrar
+									un(REMOVED_FROM_GAME, i(18348)),	-- Quel'Serrar
 								})),
 							},
 						}),
@@ -250,21 +250,21 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 14338 },	-- Knott
 							["description"] = "This quest was removed with Cataclym, along with the rest of the fun things in the game. You would obtain the key from one of the guards, turn it in, and he would present you with Knot Thimblejack's Cache.",
 							["g"] = {
-								un(2, i(18250)),	-- Gordok Shackle Key
+								un(REMOVED_FROM_GAME, i(18250)),	-- Gordok Shackle Key
 							},
 						}),
 						q(7502, {	-- Harnessing Shadows
 							["u"] = 40,
 							["classes"] = { WARLOCK },
 							["g"] = {
-								un(2, i(18467)),	-- Royal Seal of Eldre'Thalas
+								un(REMOVED_FROM_GAME, i(18467)),	-- Royal Seal of Eldre'Thalas
 							},
 						}),
 						q(7504, {	-- Holy Bologna: What the Light Won't Tell You
 							["u"] = 40,
 							["classes"] = { PRIEST },
 							["g"] = {
-								un(2, i(18469)),	-- Royal Seal of Eldre'Thalas
+								un(REMOVED_FROM_GAME, i(18469)),	-- Royal Seal of Eldre'Thalas
 							},
 						}),
 						q(27125, {	-- King of the Gordok
@@ -293,15 +293,15 @@ _.Instances = { tier(1, {	-- Classic
 							["g"] = {
 								un(7, i(18414)),	-- Pattern: Belt of the Archmage
 								un(7, i(18517)),	-- Pattern: Chromatic Cloak
-								un(2, i(18418)),	-- Pattern: Cloak of Warding
-								un(2, i(18415)),	-- Pattern: Felcloth Gloves
-								un(2, i(18514)),	-- Pattern: Girdle of Insight
+								un(REMOVED_FROM_GAME, i(18418)),	-- Pattern: Cloak of Warding
+								un(REMOVED_FROM_GAME, i(18415)),	-- Pattern: Felcloth Gloves
+								un(REMOVED_FROM_GAME, i(18514)),	-- Pattern: Girdle of Insight
 								un(7, i(18518)),	-- Pattern: Hide of the Wild
-								un(2, i(18416)),	-- Pattern: Inferno Gloves
-								un(2, i(18515)),	-- Pattern: Mongoose Boots
-								un(2, i(18417)),	-- Pattern: Mooncloth Gloves
+								un(REMOVED_FROM_GAME, i(18416)),	-- Pattern: Inferno Gloves
+								un(REMOVED_FROM_GAME, i(18515)),	-- Pattern: Mongoose Boots
+								un(REMOVED_FROM_GAME, i(18417)),	-- Pattern: Mooncloth Gloves
 								un(7, i(18519)),	-- Pattern: Shifting Cloak
-								un(2, i(18516)),	-- Pattern: Swift Flight Bracers
+								un(REMOVED_FROM_GAME, i(18516)),	-- Pattern: Swift Flight Bracers
 							},
 						}),
 						q(7485, {	-- Libram of Protection
@@ -313,7 +313,7 @@ _.Instances = { tier(1, {	-- Classic
 								{ "i", 12735, 1 },	-- Frayed Abomination Stitching
 							},
 							["g"] = {
-								un(2, i(18331, {	-- Arcanum of Protection
+								un(REMOVED_FROM_GAME, i(18331, {	-- Arcanum of Protection
 									["f"] = 55,	-- Consumable
 								})),
 							},
@@ -322,14 +322,14 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = 40,
 							["classes"] = { MAGE },
 							["g"] = {
-								un(2, i(18468)),	-- Royal Seal of Eldre'Thalas
+								un(REMOVED_FROM_GAME, i(18468)),	-- Royal Seal of Eldre'Thalas
 							},
 						}),
 						q(7506, {	-- The Emerald Dream...
 							["u"] = 40,
 							["classes"] = { DRUID },
 							["g"] = {
-								un(2, i(18470)),	-- Royal Seal of Eldre'Thalas
+								un(REMOVED_FROM_GAME, i(18470)),	-- Royal Seal of Eldre'Thalas
 							},
 						}),
 						q(5518, {	-- The Gordok Ogre Suit
@@ -349,7 +349,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 14338 },	-- Knot Thimblejack
 							["repeatable"] = true,
 							["g"] = {
-								un(2, recipe(22813)),	-- Gordok Ogre Suit
+								un(REMOVED_FROM_GAME, recipe(22813)),	-- Gordok Ogre Suit
 								i(18258),	-- Gordok Ogre Suit
 							},
 						}),
@@ -361,14 +361,14 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = 40,
 							["classes"] = { HUNTER },
 							["g"] = {
-								un(2, i(18473)),	-- Royal Seal of Eldre'Thalas
+								un(REMOVED_FROM_GAME, i(18473)),	-- Royal Seal of Eldre'Thalas
 							},
 						}),
 						q(7501, {	-- The Light and How To Swing It
 							["u"] = 40,
 							["classes"] = { PALADIN },
 							["g"] = {
-								un(2, i(18472)),	-- Royal Seal of Eldre'Thalas
+								un(REMOVED_FROM_GAME, i(18472)),	-- Royal Seal of Eldre'Thalas
 							},
 						}),
 						q(27124, {	-- Unfinished Gordok Business
@@ -512,18 +512,18 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = 40,
 							["requireSkill"] = BLACKSMITHING,
 							["g"] = {
-								un(2, i(12726)),	-- Plans: Enchanted Thorium Leggings
+								un(REMOVED_FROM_GAME, i(12726)),	-- Plans: Enchanted Thorium Leggings
 							},
 						}),
 						i(18401, {	-- Foror's Compendium of Dragon Slaying
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { WARRIOR, PALADIN },
 							["description"] = "This item used to drop from any boss in Dire Maul.",
 							["g"] = {
 								un(40, q(7507)),	-- Furor's Compendium
 								un(40, q(7508)),	-- The Forging of Quel'Serrar
 								un(40, q(7509, {	-- The Forging of Quel'Serrar
-									un(2, i(18348)),	-- Quel'Serrar
+									un(REMOVED_FROM_GAME, i(18348)),	-- Quel'Serrar
 								})),
 							},
 						}),
@@ -531,14 +531,14 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = 40,
 							["classes"] = { SHAMAN },
 							["g"] = {
-								un(2, i(18471)),	-- Royal Seal of Eldre'Thalas
+								un(REMOVED_FROM_GAME, i(18471)),	-- Royal Seal of Eldre'Thalas
 							},
 						}),
 						q(7498, {	-- Garona: A Study on Stealth and Treachery
 							["u"] = 40,
 							["classes"] = { ROGUE },
 							["g"] = {
-								un(2, i(18465)),	-- Royal Seal of Eldre'Thalas
+								un(REMOVED_FROM_GAME, i(18465)),	-- Royal Seal of Eldre'Thalas
 							},
 						}),
 						q(7484, {	-- Libram of Focus
@@ -550,7 +550,7 @@ _.Instances = { tier(1, {	-- Classic
 								{ "i", 12753, 2 },	-- Skin of Shadow
 							},
 							["g"] = {
-								un(2, i(18330, {	-- Arcanum of Focus
+								un(REMOVED_FROM_GAME, i(18330, {	-- Arcanum of Focus
 									["f"] = 55,	-- Consumable
 								})),
 							},
@@ -574,9 +574,9 @@ _.Instances = { tier(1, {	-- Classic
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 7461,	-- The Madness Within
 							["g"] = {
-								un(2, i(18421)),	-- Backwood Helm
-								un(2, i(18420)),	-- Bonecrusher
-								un(2, i(18424)),	-- Sedge Boots
+								un(REMOVED_FROM_GAME, i(18421)),	-- Backwood Helm
+								un(REMOVED_FROM_GAME, i(18420)),	-- Bonecrusher
+								un(REMOVED_FROM_GAME, i(18424)),	-- Sedge Boots
 							},
 						}),
 						q(7877, { 	-- The Treasure of the Shen'dralar
@@ -585,9 +585,9 @@ _.Instances = { tier(1, {	-- Classic
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 7461,	-- The Madness Within
 							["g"] = {
-								un(2, i(18421)),	-- Backwood Helm
-								un(2, i(18420)),	-- Bonecrusher
-								un(2, i(18424)),	-- Sedge Boots
+								un(REMOVED_FROM_GAME, i(18421)),	-- Backwood Helm
+								un(REMOVED_FROM_GAME, i(18420)),	-- Bonecrusher
+								un(REMOVED_FROM_GAME, i(18424)),	-- Sedge Boots
 							},
 						}),
 						q(27111, {	-- The Treasure of Shen'dralar
@@ -610,8 +610,8 @@ _.Instances = { tier(1, {	-- Classic
 							["lvl"] = 58,
 							["u"] = 40,
 							["groups"] = {
-								un(2, i(22150)),	-- Beads of Ogre Might
-								un(2, i(22149)),	-- Beads of Ogre Mojo
+								un(REMOVED_FROM_GAME, i(22150)),	-- Beads of Ogre Might
+								un(REMOVED_FROM_GAME, i(22149)),	-- Beads of Ogre Mojo
 							},
 						}),
 						q(8950, {	-- The Instigator's Enchantment
@@ -769,9 +769,9 @@ _.Instances = { tier(1, {	-- Classic
 						["u"] = 43,
 						["description"] = "This NPC was only available during the pre-WotLK Scourge Invasion.",
 						["g"] = {
-							un(2, i(23129)),	-- Bracers of Mending
-							un(2, i(23127)),	-- Cloak of Revanchion
-							un(2, i(23128)),	-- The Shadow's Grasp
+							un(REMOVED_FROM_GAME, i(23129)),	-- Bracers of Mending
+							un(REMOVED_FROM_GAME, i(23127)),	-- Cloak of Revanchion
+							un(REMOVED_FROM_GAME, i(23128)),	-- The Shadow's Grasp
 						},
 					}),
 				},

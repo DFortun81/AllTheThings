@@ -49,7 +49,7 @@ _.GroupFinder =
 			},
 		}),
 		i(114662, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "Rewarded for completing a random Mists of Pandaria dungeon in the level 85-89 range.",	-- Saying 89, because at level 90 you can no longer queue for this.
 			["g"] = {
 				i(113788),	-- Blossoming Belt
@@ -77,7 +77,7 @@ _.GroupFinder =
 			},
 		}),
 		i(114669, {	-- Tranquil Satchel of Helpful Goods 88-90
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "Rewarded for completing a random Mists of Pandaria dungeon in the level 88-89 range.",	-- Again, saying 89 because at level 90 you can no longer queue for this.
 			["g"] = {
 				i(113766),	-- Blossoming Gloves
@@ -248,7 +248,7 @@ _.GroupFinder =
 			},
 		}),
 		i(92813, {	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133)
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["lvl"] = 90,
 			-- ["description"] = "Rewarded for completing a random Mists of Pandaria normal scenario (unknown level bracket).",
 			["g"] = {
@@ -630,7 +630,7 @@ _.GroupFinder =
 			},
 		}),
 		i(69903, {	-- Satchel of Exotic Mysteries
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["sym"] = {
 				{"select", "itemID", 13335},	-- Deathcharger's Reins
 				{"select", "itemID", 43953},	-- Reins of the Blue Drake
@@ -676,7 +676,7 @@ _.GroupFinder =
 			},
 		}),
 		i(90818, {	-- Misty Satchel of Exotic Mysteries
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["sym"] = {
 				{"select", "itemID", 69903},	-- Satchel of Exotic Mysteries
 			},

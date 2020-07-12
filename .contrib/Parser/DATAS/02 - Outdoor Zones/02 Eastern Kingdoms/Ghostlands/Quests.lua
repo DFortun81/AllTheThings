@@ -200,7 +200,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 4 },
 					["g"] = {
-						un(2, i(23921)),	-- Bulging Sack of Silver
+						un(REMOVED_FROM_GAME, i(23921)),	-- Bulging Sack of Silver
 					},
 				}),
 				q(9145,  {	-- Help Ranger Valanna!
@@ -381,8 +381,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 4 },
 					["g"] = {
-						un(2, i(30504)),	-- Leafblade-dagger
-						un(2, i(30505)),	-- Ghostclaw Tunic
+						un(REMOVED_FROM_GAME, i(30504)),	-- Leafblade-dagger
+						un(REMOVED_FROM_GAME, i(30505)),	-- Ghostclaw Tunic
 					},
 				}),
 				q(9151,  {	-- The Sanctum of the Sun

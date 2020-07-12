@@ -51,7 +51,7 @@ _.Zones =
 							i(41733),	-- Design: Lucent Monarch Topaz
 							i(41732, {	-- Design: Lucent Monarch Topaz
 								["spellID"] = 0,	-- This is now available via 41733, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41740),	-- Design: Mysterious Twilight Opal
 							i(41727),	-- Design: Mystic Autumn's Glow
@@ -62,7 +62,7 @@ _.Zones =
 							i(41737),	-- Design: Turbid Forest Emerald
 							i(41739, {	-- Design: Turbid Forest Emerald
 								["spellID"] = 0,	-- This is now available via 41737, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41730),	-- Design: Willful Monarch Topaz
 							i(44081),	-- Enigmatic Starflare Diamond
@@ -267,7 +267,7 @@ _.Zones =
 							i(41733),	-- Design: Lucent Monarch Topaz
 							i(41732, {	-- Design: Lucent Monarch Topaz
 								["spellID"] = 0,	-- This is now available via 41733, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41740),	-- Design: Mysterious Twilight Opal
 							i(41727),	-- Design: Mystic Autumn's Glow
@@ -278,7 +278,7 @@ _.Zones =
 							i(41737),	-- Design: Turbid Forest Emerald
 							i(41739, {	-- Design: Turbid Forest Emerald
 								["spellID"] = 0,	-- This is now available via 41737, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41730),	-- Design: Willful Monarch Topaz
 							i(44081),	-- Enigmatic Starflare Diamond

@@ -21,9 +21,9 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 10922 },	-- Greta Mosshoof
 					["g"] = {
-						un(2, i(15708)),	-- Blight Leather Gloves
-						un(2, i(15707)),	-- Brantwood Sash
-						un(2, i(15709)),	-- Gearforge Girdle
+						un(REMOVED_FROM_GAME, i(15708)),	-- Blight Leather Gloves
+						un(REMOVED_FROM_GAME, i(15707)),	-- Brantwood Sash
+						un(REMOVED_FROM_GAME, i(15709)),	-- Gearforge Girdle
 					},
 				}),
 				q(28334, {	-- A Flare Fight
@@ -72,7 +72,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 14526 },	-- Hastat the Ancient
 					["g"] = {
-						un(2, i(18714)),	-- Ancient Sinew Wrapped Lamina
+						un(REMOVED_FROM_GAME, i(18714)),	-- Ancient Sinew Wrapped Lamina
 					},
 				}),
 				q(4261,  {	-- Ancient Spirit
@@ -80,8 +80,8 @@ _.Zones =
 					["provider"] = { "n", 9598 },	-- Arei
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(11874)),	-- Clouddrift Mantle
-						un(2, i(11873)),	-- Ethereal Mist Cape
+						un(REMOVED_FROM_GAME, i(11874)),	-- Clouddrift Mantle
+						un(REMOVED_FROM_GAME, i(11873)),	-- Ethereal Mist Cape
 					},
 				}),
 				q(4005,  {	-- Aquementas
@@ -260,8 +260,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 11554 },	-- Grazle
 					["g"] = {
-						un(2, i(21312)),	-- Belt of the Den Watcher
-						un(2, i(21311)),	-- Earth Warder's Vest
+						un(REMOVED_FROM_GAME, i(21312)),	-- Belt of the Den Watcher
+						un(REMOVED_FROM_GAME, i(21311)),	-- Earth Warder's Vest
 					},
 				}),
 				q(28366, {	-- Disarming Bears
@@ -349,7 +349,7 @@ _.Zones =
 					["provider"] = { "n", 9116 },	-- Eridan Bluewind
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(11875)),	-- Breezecloud Bracers
+						un(REMOVED_FROM_GAME, i(11875)),	-- Breezecloud Bracers
 					},
 				}),
 				q(4882, {	-- Guarding Secrets
@@ -363,8 +363,8 @@ _.Zones =
 					["provider"] = { "n", 10306 },	-- Trull Failbane
 					["sourceQuest"] = 4882,	-- Guarding Secrets
 					["g"] = {
-						un(2, i(15796)),	-- Seaspray Bracers
-						un(2, i(15797)),	-- Shining Armplates
+						un(REMOVED_FROM_GAME, i(15796)),	-- Seaspray Bracers
+						un(REMOVED_FROM_GAME, i(15797)),	-- Shining Armplates
 					},
 				}),
 				q(28213, {	-- Hazzard Disposal
@@ -425,7 +425,7 @@ _.Zones =
 					["provider"] = { "n", 14470 },	-- Impsy
 					["classes"] = { WARLOCK },
 					["g"] = {
-						un(2, i(18762)),	-- Shard of the Green Flame
+						un(REMOVED_FROM_GAME, i(18762)),	-- Shard of the Green Flame
 					},
 				}),
 				q(28155, {	-- Lord Banehollow
@@ -815,8 +815,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 11020 },	-- Remains of Trey Lightforge
 					["g"] = {
-						un(2, i(15706)),	-- Hunt Tracker Blade
-						un(2, i(15705)),	-- Tidecrest Blade
+						un(REMOVED_FROM_GAME, i(15706)),	-- Hunt Tracker Blade
+						un(REMOVED_FROM_GAME, i(15705)),	-- Tidecrest Blade
 					},
 				}),
 				q(28479, {	-- The Ruins of Kel'theril	-- breadcrumb?

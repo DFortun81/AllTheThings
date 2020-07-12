@@ -851,7 +851,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(21480),	-- Scaled Silithid Gauntlets
 					i(21481),	-- Boots of the Desert Protector
 					i(21483),	-- Ring of the Desert Winds
-					un(2, i(21482)),	-- Boots of the Fiery Sands
+					un(REMOVED_FROM_GAME, i(21482)),	-- Boots of the Fiery Sands
 				},
 			}),
 			e(1539, { 	-- Moam

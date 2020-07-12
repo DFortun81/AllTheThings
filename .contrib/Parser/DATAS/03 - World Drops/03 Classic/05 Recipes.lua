@@ -14,7 +14,7 @@ _.WorldDrops =
 				i(2553),	-- Recipe: Elixir of Minor Agility
 				i(6211),	-- Recipe: Elixir of Ogre's Strength
 				un(7, i(13491)),	-- Recipe: Elixir of the Mongoose [May no longer drop?]
-				un(2, i(13493)),	-- Recipe: Greater Arcane Elixir
+				un(REMOVED_FROM_GAME, i(13493)),	-- Recipe: Greater Arcane Elixir
 				i(9296), 	-- Recipe: Gift of Arthas
 				i(13490),	-- Recipe: Greater Stoneshield Potion
 				i(9295), 	-- Recipe: Invisibility Potion
@@ -22,7 +22,7 @@ _.WorldDrops =
 				i(3831),	-- Recipe: Major Troll's Blood Elixir
 				i(3394),	-- Recipe: Potion of Curing
 				i(13518),	-- Recipe: Potion of Petrification
-				un(2, i(13492)),	-- Recipe: Purification Potion
+				un(REMOVED_FROM_GAME, i(13492)),	-- Recipe: Purification Potion
 				i(2555),	-- Recipe: Swiftness Potion
 				i(13489),	-- Recipe: Transmute Earth to Life
 				i(13488),	-- Recipe: Transmute Life to Earth
@@ -186,7 +186,7 @@ _.WorldDrops =
 				i(7453),	-- Pattern: Swift Boots
 				i(8385),	-- Pattern: Turtle Scale Gloves
 				i(15742),	-- Pattern: Warbear Harness (BoE version)
-				un(2, i(15754)),	-- Pattern: Warbear Woolies
+				un(REMOVED_FROM_GAME, i(15754)),	-- Pattern: Warbear Woolies
 				i(2407),	-- Pattern: White Leather Jerkin
 				un(7, i(15757)),	-- Pattern: Wicked Leather Pants (now taught by trainer)
 			}),

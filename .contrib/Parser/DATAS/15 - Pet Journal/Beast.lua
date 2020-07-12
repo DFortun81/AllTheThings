@@ -237,7 +237,7 @@ _.PetJournal =
 		p(46),				-- White Kitten
 		p(2851),			-- Wicked Lurker
 		p(400),				-- Widow Spiderling
-		un(2, p(246)),		-- Wind Rider Cub
+		un(REMOVED_FROM_GAME, p(246)),		-- Wind Rider Cub
 		p(306),				-- Winterspring Cub
 		p(89),				-- Worg Pup
 		p(1266),			-- Xu-Fu, Cub of Xuen

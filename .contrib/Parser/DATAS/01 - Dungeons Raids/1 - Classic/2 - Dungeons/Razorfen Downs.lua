@@ -20,8 +20,8 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 2308 },	-- Andrew Brownell
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(10823)),	-- Vanquisher's Sword
-						un(2, i(10824)),	-- Amberglow Talisman
+						un(REMOVED_FROM_GAME, i(10823)),	-- Vanquisher's Sword
+						un(REMOVED_FROM_GAME, i(10824)),	-- Amberglow Talisman
 					},
 				}),
 				q(3636,  {	-- Bring the Light
@@ -29,8 +29,8 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 1284 },	-- Archbishop Benedictus
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(10823)),	-- Vanquisher's Sword
-						un(2, i(10824)),	-- Amberglow Talisman
+						un(REMOVED_FROM_GAME, i(10823)),	-- Vanquisher's Sword
+						un(REMOVED_FROM_GAME, i(10824)),	-- Amberglow Talisman
 					},
 				}),
 				q(3525, {	-- Extinguishing the Idol
@@ -38,7 +38,7 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 8516 },	-- Belnistrasz
 					["sourceQuest"] = 3523,	-- Scourge of the Downs
 					["g"] = {
-						un(2, i(10710)),	-- Dragonclaw Ring
+						un(REMOVED_FROM_GAME, i(10710)),	-- Dragonclaw Ring
 					},
 				}),
 				q(27022, {	-- Extinguishing the Idol
@@ -46,7 +46,7 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 8516 },	-- Belnistrasz
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(10710)),	-- Dragonclaw Ring
+						un(REMOVED_FROM_GAME, i(10710)),	-- Dragonclaw Ring
 					},
 				}),
 				q(27024, {	-- Partners in Crime
@@ -245,7 +245,7 @@ _.Instances = { tier(1, {	-- Classic
 			n(8696,  {	-- Henry Stern
 				["u"] = 43,	-- Removed NPCs
 				["g"] = {
-					un(2, recipe(13028, {	-- Goldthorn Tea
+					un(REMOVED_FROM_GAME, recipe(13028, {	-- Goldthorn Tea
 						["description"] = "Henry Stern, who is currently the only source for Goldthorn Tea, is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, takes the recipe off the list, or gives us another way to obtain it.",
 					})),
 				},
@@ -253,8 +253,8 @@ _.Instances = { tier(1, {	-- Classic
 			n(14686, {	-- Lady Falther'ess
 				["u"] = 43,	-- Removed NPCs
 				["g"] = {
-					un(2, i(23177)),	-- Lady Falther'ess' Finger
-					un(2, i(23178)),	-- Mantle of Lady Falther'ess
+					un(REMOVED_FROM_GAME, i(23177)),	-- Lady Falther'ess' Finger
+					un(REMOVED_FROM_GAME, i(23178)),	-- Mantle of Lady Falther'ess
 				},
 			}),
 		},

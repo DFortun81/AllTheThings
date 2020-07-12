@@ -62,7 +62,7 @@ _.WorldDrops =
 				i(24196),	-- Design: Brilliant Living Ruby
 				i(24203, {	-- Design: Brilliant Living Ruby
 					["spellID"] = 0,	-- This is now available via 24196, need to delink the old plans from the recipe
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(25906),	-- Design: Brutal Earthstorm Diamond
 				i(24171),	-- Design: Chain of the Twilight Owl
@@ -71,11 +71,11 @@ _.WorldDrops =
 				i(24194),	-- Design: Delicate Living Ruby
 				i(24192, {	-- Design: Delicate Living Ruby
 					["spellID"] = 0,	-- This is now available via 24194, need to delink the old plans from the recipe
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(35306, {	-- Design: Delicate Living Ruby
 					["spellID"] = 0,	-- This is now available via 24194, need to delink the old plans from the recipe
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(25907),	-- Design: Destructive Skyfire Diamond
 				i(24170),	-- Design: Embrace of the Dawn
@@ -85,7 +85,7 @@ _.WorldDrops =
 				i(24216),	-- Design: Glinting Nightseye
 				i(31877, {	-- Design: Glinting Nightseye
 					["spellID"] = 0,	-- This is now available via 24216, need to delink the old plans from the recipe
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(24163),	-- Design: Heavy Felsteel Ring
 				i(24213),	-- Design: Inscribed Noble Topaz
@@ -96,7 +96,7 @@ _.WorldDrops =
 				i(24219),	-- Design: Purified Nightseye
 				i(24212, {	-- Design: Purified Nightseye
 					["spellID"] = 0,	-- This is now available via 24219, need to delink the old plans from the recipe
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(24218),	-- Design: Radiant Talasite
 				i(24215),	-- Design: Reckless Noble Topaz
@@ -104,31 +104,31 @@ _.WorldDrops =
 				i(24205),	-- Design: Rigid Star of Elune (BoE version)
 				i(31875, {	-- Design: Rigid Star of Elune
 					["spellID"] = 0,	-- This is now available via 24205, need to delink the old plans from the recipe
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(24210),	-- Design: Shifting Nightseye
 				i(31876, {	-- Design: Shifting Nightseye
 					["spellID"] = 0,	-- This is now available via 24210, need to delink the old plans from the recipe
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(24204),	-- Design: Smooth Dawnstone
 				i(24206, {	-- Design: Smooth Dawnstone
 					["spellID"] = 0,	-- This is now available via 24204, need to delink the old plans from the recipe
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(24199),	-- Design: Solid Star of Elune (BoE version)
 				i(24209),	-- Design: Sovereign Nightseye
 				i(24200),	-- Design: Sparkling Star of Elune
 				i(24201, {	-- Design: Sparkling Star of Elune
 					["spellID"] = 0,	-- This is now available via 24200, need to delink the old plans from the recipe
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(24202),	-- Design: Stormy Star of Elune
 				i(23154),	-- Design: Stormy Azure Moonstone
 				i(24197),	-- Design: Subtle Dawnstone
 				i(24207, {	-- Design: Subtle Dawnstone
 					["spellID"] = 0,	-- This is now available via 24197, need to delink the old plans from the recipe
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(25905),	-- Design: Tenacious Earthstorm Diamond
 				i(24166),	-- Design: Thick Felsteel Necklace

@@ -234,14 +234,14 @@ _.WorldEvents =
 				["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
 				["u"] = 40,	-- Legacy Quests
 				["g"] = {
-					un(2, i(19491)),	-- Amulet of the Darkmoon
+					un(REMOVED_FROM_GAME, i(19491)),	-- Amulet of the Darkmoon
 				},
 			}),
 			q(7940,  {	-- 1200 Tickets - Orb of the Darkmoon
 				["u"] = 40,	-- Legacy Quests
 				["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
 				["g"] = {
-					un(2, i(19426)),	-- Orb of the Darkmoon
+					un(REMOVED_FROM_GAME, i(19426)),	-- Orb of the Darkmoon
 				},
 			}),
 			q(29456, {	-- A Captured Banner

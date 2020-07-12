@@ -1923,7 +1923,7 @@ _.Zones =
 							}),
 							i(42300, {	-- Design: Brilliant Dragon's Eye
 								["spellID"] = 0,	-- This is now available via 42309, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41704, {	-- Design: Chaotic Skyflare Diamond
 								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
@@ -1933,14 +1933,14 @@ _.Zones =
 							}),
 							i(41792, {	-- Design: Design: Deft Monarch Topaz
 								["spellID"] = 0,	-- This is now available via 41687, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(42301, {	-- Design: Delicate Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
 							i(42299, {	-- Design: Delicate Dragon's Eye
 								["spellID"] = 0,	-- This is now available via 42301, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41577, {	-- Design: Delicate Scarlet Ruby
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
@@ -1953,7 +1953,7 @@ _.Zones =
 							}),
 							i(41694, {	-- Design: Energized Forest Emerald
 								["spellID"] = 0,	-- This is now available via 41692, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(42302, {	-- Design: Flashing Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
@@ -1969,11 +1969,11 @@ _.Zones =
 							}),
 							i(41785, {	-- Design: Glinting Twilight Opal
 								["spellID"] = 0,	-- This is now available via 41582, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41796, {	-- Design: Glinting Twilight Opal
 								["spellID"] = 0,	-- This is now available via 41582, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41708, {	-- Design: Insightful Earthsiege Diamond
 								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
@@ -1989,14 +1989,14 @@ _.Zones =
 							}),
 							i(41782, {	-- Design: Lightning Forest Emerald
 								["spellID"] = 0,	-- This is now available via 41696, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41565, {	-- Design: Lucent Huge Citrine
 								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
 							}),
 							i(41564, {	-- Design: Lucent Huge Citrine
 								["spellID"] = 0,	-- This is now available via 41565, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41575, {	-- Design: Mysterious Shadow Crystal
 								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
@@ -2030,14 +2030,14 @@ _.Zones =
 							}),
 							i(41689, {	-- Design: Reckless Monarch Topaz
 								["spellID"] = 0,	-- This is now available via 41690, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41697, {	-- Design: Regal Forest Emerald
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
 							i(41703, {	-- Design: Regal Forest Emerald
 								["spellID"] = 0,	-- This is now available via 41697, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41710, {	-- Design: Relentless Earthsiege Diamond
 								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
@@ -2083,7 +2083,7 @@ _.Zones =
 							}),
 							i(42303, {	-- Design: Smooth Dragon's Eye
 								["spellID"] = 0,	-- This is now available via 42310, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(42311, {	-- Design: Solid Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
@@ -2096,7 +2096,7 @@ _.Zones =
 							}),
 							i(42304, {	-- Design: Sparkling Dragon's Eye
 								["spellID"] = 0,	-- This is now available via 42312, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41581, {	-- Design: Sparkling Sky Sapphire
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
@@ -2115,14 +2115,14 @@ _.Zones =
 							}),
 							i(41791, {	-- Design: Subtle Autumn's Glow
 								["spellID"] = 0,	-- This is now available via 41719, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(42314, {	-- Design: Subtle Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
 							i(42315, {	-- Design: Subtle Dragon's Eye
 								["spellID"] = 0,	-- This is now available via 42314, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(42652, {	-- Design: Titanium Earthguard Chain
 								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
@@ -2153,7 +2153,7 @@ _.Zones =
 							}),
 							i(41573, {	-- Design: Turbid Dark Jade
 								["spellID"] = 0,	-- This is now available via 41571, need to delink the old plans from the recipe
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41688, {	-- Design: Veiled Twilight Opal
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
@@ -2545,121 +2545,121 @@ _.Zones =
 						["coord"] = { 75.2, 22.0, 118 },
 						["races"] = HORDE_ONLY,
 						["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
-							un(2, i(47557, {	-- Regalia of the Grand Conqueror
+							un(REMOVED_FROM_GAME, i(47557, {	-- Regalia of the Grand Conqueror
 								gs(350, {	-- Zabra's Regalia
-									un(2, i(48058)),	-- Zabra's Cowl of Triumph
-									un(2, i(48061)),	-- Zabra's Shoulderpads of Triumph
-									un(2, i(48060)),	-- Zabra's Robe of Triumph
-									un(2, i(48057)),	-- Zabra's Gloves of Triumph
-									un(2, i(48059)),	-- Zabra's Leggings of Triumph
-									un(2, i(48088)),	-- Zabra's Circlet of Triumph
-									un(2, i(48091)),	-- Zabra's Mantle of Triumph
-									un(2, i(48090)),	-- Zabra's Raiments of Triumph
-									un(2, i(48087)),	-- Zabra's Handwraps of Triumph
-									un(2, i(48089)),	-- Zabra's Pants of Triumph
+									un(REMOVED_FROM_GAME, i(48058)),	-- Zabra's Cowl of Triumph
+									un(REMOVED_FROM_GAME, i(48061)),	-- Zabra's Shoulderpads of Triumph
+									un(REMOVED_FROM_GAME, i(48060)),	-- Zabra's Robe of Triumph
+									un(REMOVED_FROM_GAME, i(48057)),	-- Zabra's Gloves of Triumph
+									un(REMOVED_FROM_GAME, i(48059)),	-- Zabra's Leggings of Triumph
+									un(REMOVED_FROM_GAME, i(48088)),	-- Zabra's Circlet of Triumph
+									un(REMOVED_FROM_GAME, i(48091)),	-- Zabra's Mantle of Triumph
+									un(REMOVED_FROM_GAME, i(48090)),	-- Zabra's Raiments of Triumph
+									un(REMOVED_FROM_GAME, i(48087)),	-- Zabra's Handwraps of Triumph
+									un(REMOVED_FROM_GAME, i(48089)),	-- Zabra's Pants of Triumph
 								}),
 								gs(723, {	-- Sunstrider's Regalia
-									un(2, i(47764)),	-- Sunstrider's Hood of Triumph
-									un(2, i(47767)),	-- Sunstrider's Shoulderpads of Triumph
-									un(2, i(47766)),	-- Sunstrider's Robe of Triumph
-									un(2, i(47763)),	-- Sunstrider's Gauntlets of Triumph
-									un(2, i(47765)),	-- Sunstrider's Leggings of Triumph
+									un(REMOVED_FROM_GAME, i(47764)),	-- Sunstrider's Hood of Triumph
+									un(REMOVED_FROM_GAME, i(47767)),	-- Sunstrider's Shoulderpads of Triumph
+									un(REMOVED_FROM_GAME, i(47766)),	-- Sunstrider's Robe of Triumph
+									un(REMOVED_FROM_GAME, i(47763)),	-- Sunstrider's Gauntlets of Triumph
+									un(REMOVED_FROM_GAME, i(47765)),	-- Sunstrider's Leggings of Triumph
 								}),
 								gs(675, {	-- Gul'dan's Regalia
-									un(2, i(47796)),	-- Gul'dan's Hood of Triumph
-									un(2, i(47793)),	-- Gul'dan's Shoulderpads of Triumph
-									un(2, i(47794)),	-- Gul'dan's Robe of Triumph
-									un(2, i(47797)),	-- Gul'dan's Gloves of Triumph
-									un(2, i(47795)),	-- Gul'dan's Leggings of Triumph
+									un(REMOVED_FROM_GAME, i(47796)),	-- Gul'dan's Hood of Triumph
+									un(REMOVED_FROM_GAME, i(47793)),	-- Gul'dan's Shoulderpads of Triumph
+									un(REMOVED_FROM_GAME, i(47794)),	-- Gul'dan's Robe of Triumph
+									un(REMOVED_FROM_GAME, i(47797)),	-- Gul'dan's Gloves of Triumph
+									un(REMOVED_FROM_GAME, i(47795)),	-- Gul'dan's Leggings of Triumph
 								}),
 								gs(826, {	-- Runetotem's Battlegear
-									un(2, i(48201)),	-- Runetotem's Headguard of Triumph
-									un(2, i(48198)),	-- Runetotem's Shoulderpads of Triumph
-									un(2, i(48199)),	-- Runetotem's Raiments of Triumph
-									un(2, i(48202)),	-- Runetotem's Handgrips of Triumph
-									un(2, i(48200)),	-- Runetotem's Legguards of Triumph
-									un(2, i(48174)),	-- Runetotem's Cover of Triumph
-									un(2, i(48177)),	-- Runetotem's Mantle of Triumph
-									un(2, i(48176)),	-- Runetotem's Vestments of Triumph
-									un(2, i(48173)),	-- Runetotem's Gloves of Triumph
-									un(2, i(48175)),	-- Runetotem's Trousers of Triumph
-									un(2, i(48144)),	-- Runetotem's Headpiece of Triumph
-									un(2, i(48147)),	-- Runetotem's Spaulders of Triumph
-									un(2, i(48146)),	-- Runetotem's Robe of Triumph
-									un(2, i(48143)),	-- Runetotem's Handguards of Triumph
-									un(2, i(48145)),	-- Runetotem's Leggings of Triumph
+									un(REMOVED_FROM_GAME, i(48201)),	-- Runetotem's Headguard of Triumph
+									un(REMOVED_FROM_GAME, i(48198)),	-- Runetotem's Shoulderpads of Triumph
+									un(REMOVED_FROM_GAME, i(48199)),	-- Runetotem's Raiments of Triumph
+									un(REMOVED_FROM_GAME, i(48202)),	-- Runetotem's Handgrips of Triumph
+									un(REMOVED_FROM_GAME, i(48200)),	-- Runetotem's Legguards of Triumph
+									un(REMOVED_FROM_GAME, i(48174)),	-- Runetotem's Cover of Triumph
+									un(REMOVED_FROM_GAME, i(48177)),	-- Runetotem's Mantle of Triumph
+									un(REMOVED_FROM_GAME, i(48176)),	-- Runetotem's Vestments of Triumph
+									un(REMOVED_FROM_GAME, i(48173)),	-- Runetotem's Gloves of Triumph
+									un(REMOVED_FROM_GAME, i(48175)),	-- Runetotem's Trousers of Triumph
+									un(REMOVED_FROM_GAME, i(48144)),	-- Runetotem's Headpiece of Triumph
+									un(REMOVED_FROM_GAME, i(48147)),	-- Runetotem's Spaulders of Triumph
+									un(REMOVED_FROM_GAME, i(48146)),	-- Runetotem's Robe of Triumph
+									un(REMOVED_FROM_GAME, i(48143)),	-- Runetotem's Handguards of Triumph
+									un(REMOVED_FROM_GAME, i(48145)),	-- Runetotem's Leggings of Triumph
 								}),
 								gs(691, {	-- Garona's Battlegear
-									un(2, i(48235)),	-- Garona's Helmet of Triumph
-									un(2, i(48237)),	-- Garona's Pauldrons of Triumph
-									un(2, i(48233)),	-- Garona's Breastplate of Triumph
-									un(2, i(48234)),	-- Garona's Gauntlets of Triumph
-									un(2, i(48236)),	-- Garona's Legplates of Triumph
+									un(REMOVED_FROM_GAME, i(48235)),	-- Garona's Helmet of Triumph
+									un(REMOVED_FROM_GAME, i(48237)),	-- Garona's Pauldrons of Triumph
+									un(REMOVED_FROM_GAME, i(48233)),	-- Garona's Breastplate of Triumph
+									un(REMOVED_FROM_GAME, i(48234)),	-- Garona's Gauntlets of Triumph
+									un(REMOVED_FROM_GAME, i(48236)),	-- Garona's Legplates of Triumph
 								}),
 								gs(738, {	-- Windrunner's Pursuit
-									un(2, i(48267)),	-- Windrunner's Headpiece of Triumph
-									un(2, i(48269)),	-- Windrunner's Spaulders of Triumph
-									un(2, i(48265)),	-- Windrunner's Tunic of Triumph
-									un(2, i(48266)),	-- Windrunner's Handguards of Triumph
-									un(2, i(48268)),	-- Windrunner's Legguards of Triumph
+									un(REMOVED_FROM_GAME, i(48267)),	-- Windrunner's Headpiece of Triumph
+									un(REMOVED_FROM_GAME, i(48269)),	-- Windrunner's Spaulders of Triumph
+									un(REMOVED_FROM_GAME, i(48265)),	-- Windrunner's Tunic of Triumph
+									un(REMOVED_FROM_GAME, i(48266)),	-- Windrunner's Handguards of Triumph
+									un(REMOVED_FROM_GAME, i(48268)),	-- Windrunner's Legguards of Triumph
 								}),
 								gs(641, {	-- Thrall's Garb
-									un(2, i(48328)),	-- Thrall's Helm of Triumph
-									un(2, i(48330)),	-- Thrall's Shoulderpads of Triumph
-									un(2, i(48326)),	-- Thrall's Hauberk of Triumph
-									un(2, i(48327)),	-- Thrall's Gloves of Triumph
-									un(2, i(48329)),	-- Thrall's Kilt of Triumph
-									un(2, i(48358)),	-- Thrall's Faceguard of Triumph
-									un(2, i(48360)),	-- Thrall's Shoulderguards of Triumph
-									un(2, i(48356)),	-- Thrall's Chestguard of Triumph
-									un(2, i(48357)),	-- Thrall's Grips of Triumph
-									un(2, i(48359)),	-- Thrall's War-Kilt of Triumph
-									un(2, i(48307)),	-- Thrall's Headpiece of Triumph
-									un(2, i(48309)),	-- Thrall's Spaulders of Triumph
-									un(2, i(48305)),	-- Thrall's Tunic of Triumph
-									un(2, i(48306)),	-- Thrall's Handguards of Triumph
-									un(2, i(48308)),	-- Thrall's Legguards of Triumph
+									un(REMOVED_FROM_GAME, i(48328)),	-- Thrall's Helm of Triumph
+									un(REMOVED_FROM_GAME, i(48330)),	-- Thrall's Shoulderpads of Triumph
+									un(REMOVED_FROM_GAME, i(48326)),	-- Thrall's Hauberk of Triumph
+									un(REMOVED_FROM_GAME, i(48327)),	-- Thrall's Gloves of Triumph
+									un(REMOVED_FROM_GAME, i(48329)),	-- Thrall's Kilt of Triumph
+									un(REMOVED_FROM_GAME, i(48358)),	-- Thrall's Faceguard of Triumph
+									un(REMOVED_FROM_GAME, i(48360)),	-- Thrall's Shoulderguards of Triumph
+									un(REMOVED_FROM_GAME, i(48356)),	-- Thrall's Chestguard of Triumph
+									un(REMOVED_FROM_GAME, i(48357)),	-- Thrall's Grips of Triumph
+									un(REMOVED_FROM_GAME, i(48359)),	-- Thrall's War-Kilt of Triumph
+									un(REMOVED_FROM_GAME, i(48307)),	-- Thrall's Headpiece of Triumph
+									un(REMOVED_FROM_GAME, i(48309)),	-- Thrall's Spaulders of Triumph
+									un(REMOVED_FROM_GAME, i(48305)),	-- Thrall's Tunic of Triumph
+									un(REMOVED_FROM_GAME, i(48306)),	-- Thrall's Handguards of Triumph
+									un(REMOVED_FROM_GAME, i(48308)),	-- Thrall's Legguards of Triumph
 								}),
 								gs(707, {	-- Liadrin's Plate
-									un(2, i(48587)),	-- Liadrin's Headpiece of Triumph
-									un(2, i(48585)),	-- Liadrin's Spaulders of Triumph
-									un(2, i(48589)),	-- Liadrin's Tunic of Triumph
-									un(2, i(48588)),	-- Liadrin's Gloves of Triumph
-									un(2, i(48586)),	-- Liadrin's Greaves of Triumph
-									un(2, i(48649)),	-- Liadrin's Faceguard of Triumph
-									un(2, i(48647)),	-- Liadrin's Shoulderguards of Triumph
-									un(2, i(48651)),	-- Liadrin's Breastplate of Triumph
-									un(2, i(48650)),	-- Liadrin's Handguards of Triumph
-									un(2, i(48648)),	-- Liadrin's Legguards of Triumph
-									un(2, i(48619)),	-- Liadrin's Helm of Triumph
-									un(2, i(48621)),	-- Liadrin's Shoulderplates of Triumph
-									un(2, i(48617)),	-- Liadrin's Battleplate of Triumph
-									un(2, i(48618)),	-- Liadrin's Gauntlets of Triumph
-									un(2, i(48620)),	-- Liadrin's Legplates of Triumph
+									un(REMOVED_FROM_GAME, i(48587)),	-- Liadrin's Headpiece of Triumph
+									un(REMOVED_FROM_GAME, i(48585)),	-- Liadrin's Spaulders of Triumph
+									un(REMOVED_FROM_GAME, i(48589)),	-- Liadrin's Tunic of Triumph
+									un(REMOVED_FROM_GAME, i(48588)),	-- Liadrin's Gloves of Triumph
+									un(REMOVED_FROM_GAME, i(48586)),	-- Liadrin's Greaves of Triumph
+									un(REMOVED_FROM_GAME, i(48649)),	-- Liadrin's Faceguard of Triumph
+									un(REMOVED_FROM_GAME, i(48647)),	-- Liadrin's Shoulderguards of Triumph
+									un(REMOVED_FROM_GAME, i(48651)),	-- Liadrin's Breastplate of Triumph
+									un(REMOVED_FROM_GAME, i(48650)),	-- Liadrin's Handguards of Triumph
+									un(REMOVED_FROM_GAME, i(48648)),	-- Liadrin's Legguards of Triumph
+									un(REMOVED_FROM_GAME, i(48619)),	-- Liadrin's Helm of Triumph
+									un(REMOVED_FROM_GAME, i(48621)),	-- Liadrin's Shoulderplates of Triumph
+									un(REMOVED_FROM_GAME, i(48617)),	-- Liadrin's Battleplate of Triumph
+									un(REMOVED_FROM_GAME, i(48618)),	-- Liadrin's Gauntlets of Triumph
+									un(REMOVED_FROM_GAME, i(48620)),	-- Liadrin's Legplates of Triumph
 								}),
 								gs(657, {	-- Hellscream's Battlegear
-									un(2, i(48398)),	-- Hellscream's Helmet of Triumph
-									un(2, i(48400)),	-- Hellscream's Battleplate of Triumph
-									un(2, i(48396)),	-- Hellscream's Shoulderplates of Triumph
-									un(2, i(48397)),	-- Hellscream's Gauntlets of Triumph
-									un(2, i(48399)),	-- Hellscream's Legplates of Triumph
-									un(2, i(48468)),	-- Hellscream's Greathelm of Triumph
-									un(2, i(48470)),	-- Hellscream's Pauldrons of Triumph
-									un(2, i(48466)),	-- Hellscream's Breastplate of Triumph
-									un(2, i(48467)),	-- Hellscream's Handguards of Triumph
-									un(2, i(48469)),	-- Hellscream's Legguards of Triumph
+									un(REMOVED_FROM_GAME, i(48398)),	-- Hellscream's Helmet of Triumph
+									un(REMOVED_FROM_GAME, i(48400)),	-- Hellscream's Battleplate of Triumph
+									un(REMOVED_FROM_GAME, i(48396)),	-- Hellscream's Shoulderplates of Triumph
+									un(REMOVED_FROM_GAME, i(48397)),	-- Hellscream's Gauntlets of Triumph
+									un(REMOVED_FROM_GAME, i(48399)),	-- Hellscream's Legplates of Triumph
+									un(REMOVED_FROM_GAME, i(48468)),	-- Hellscream's Greathelm of Triumph
+									un(REMOVED_FROM_GAME, i(48470)),	-- Hellscream's Pauldrons of Triumph
+									un(REMOVED_FROM_GAME, i(48466)),	-- Hellscream's Breastplate of Triumph
+									un(REMOVED_FROM_GAME, i(48467)),	-- Hellscream's Handguards of Triumph
+									un(REMOVED_FROM_GAME, i(48469)),	-- Hellscream's Legguards of Triumph
 								}),
 								gs(841, {	-- Koltira's Battlegear
-									un(2, i(48550)),	-- Koltira's Faceguard of Triumph
-									un(2, i(48552)),	-- Koltira's Pauldrons of Triumph
-									un(2, i(48548)),	-- Koltira's Chestguard of Triumph
-									un(2, i(48549)),	-- Koltira's Handguards of Triumph
-									un(2, i(48551)),	-- Koltira's Legguards of Triumph
-									un(2, i(48493)),	-- Koltira's Helmet of Triumph
-									un(2, i(48495)),	-- Koltira's Shoulderpads of Triumph
-									un(2, i(48491)),	-- Koltira's Battleplate of Triumph
-									un(2, i(48492)),	-- Koltira's Gauntlets of Triumph
-									un(2, i(48494)),	-- Koltira's Legplates of Triumph
+									un(REMOVED_FROM_GAME, i(48550)),	-- Koltira's Faceguard of Triumph
+									un(REMOVED_FROM_GAME, i(48552)),	-- Koltira's Pauldrons of Triumph
+									un(REMOVED_FROM_GAME, i(48548)),	-- Koltira's Chestguard of Triumph
+									un(REMOVED_FROM_GAME, i(48549)),	-- Koltira's Handguards of Triumph
+									un(REMOVED_FROM_GAME, i(48551)),	-- Koltira's Legguards of Triumph
+									un(REMOVED_FROM_GAME, i(48493)),	-- Koltira's Helmet of Triumph
+									un(REMOVED_FROM_GAME, i(48495)),	-- Koltira's Shoulderpads of Triumph
+									un(REMOVED_FROM_GAME, i(48491)),	-- Koltira's Battleplate of Triumph
+									un(REMOVED_FROM_GAME, i(48492)),	-- Koltira's Gauntlets of Triumph
+									un(REMOVED_FROM_GAME, i(48494)),	-- Koltira's Legplates of Triumph
 								}),
 							})),
 						}),
@@ -2668,122 +2668,122 @@ _.Zones =
 						["coord"] = { 75.2, 21.6, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r"}, {
-							un(2, i(47557, {	-- Regalia of the Grand Conqueror
+							un(REMOVED_FROM_GAME, i(47557, {	-- Regalia of the Grand Conqueror
 								gs(674, {	-- Kel'Thuzad's Regalia
-									un(2, i(47788)),	-- Kel'Thuzad's Gloves of Triumph
-									un(2, i(47789)),	-- Kel'Thuzad's Hood of Triumph
-									un(2, i(47790)),	-- Kel'Thuzad's Leggings of Triumph
-									un(2, i(47791)),	-- Kel'Thuzad's Robe of Triumph
-									un(2, i(47792)),	-- Kel'Thuzad's Shoulderpads of Triumph
+									un(REMOVED_FROM_GAME, i(47788)),	-- Kel'Thuzad's Gloves of Triumph
+									un(REMOVED_FROM_GAME, i(47789)),	-- Kel'Thuzad's Hood of Triumph
+									un(REMOVED_FROM_GAME, i(47790)),	-- Kel'Thuzad's Leggings of Triumph
+									un(REMOVED_FROM_GAME, i(47791)),	-- Kel'Thuzad's Robe of Triumph
+									un(REMOVED_FROM_GAME, i(47792)),	-- Kel'Thuzad's Shoulderpads of Triumph
 								}),
 								gs(722, {	-- Khadgar's Regalia
-									un(2, i(47762)),	-- Khadgar's Gauntlets of Triumph
-									un(2, i(47761)),	-- Khadgar's Hood of Triumph
-									un(2, i(47760)),	-- Khadgar's Leggings of Triumph
-									un(2, i(47759)),	-- Khadgar's Robe of Triumph
-									un(2, i(47758)),	-- Khadgar's Shoulderpads of Triumph
+									un(REMOVED_FROM_GAME, i(47762)),	-- Khadgar's Gauntlets of Triumph
+									un(REMOVED_FROM_GAME, i(47761)),	-- Khadgar's Hood of Triumph
+									un(REMOVED_FROM_GAME, i(47760)),	-- Khadgar's Leggings of Triumph
+									un(REMOVED_FROM_GAME, i(47759)),	-- Khadgar's Robe of Triumph
+									un(REMOVED_FROM_GAME, i(47758)),	-- Khadgar's Shoulderpads of Triumph
 
 								}),
 								gs(825, {	-- Malfurion's Battlegear
-									un(2, i(48171)),	-- Malfurion's Cover of Triumph
-									un(2, i(48172)),	-- Malfurion's Gloves of Triumph
-									un(2, i(48203)),	-- Malfurion's Handgrips of Triumph
-									un(2, i(48142)),	-- Malfurion's Handguards of Triumph
-									un(2, i(48204)),	-- Malfurion's Headguard of Triumph
-									un(2, i(48141)),	-- Malfurion's Headpiece of Triumph
-									un(2, i(48140)),	-- Malfurion's Leggings of Triumph
-									un(2, i(48205)),	-- Malfurion's Legguards of Triumph
-									un(2, i(48168)),	-- Malfurion's Mantle of Triumph
-									un(2, i(48206)),	-- Malfurion's Raiments of Triumph
-									un(2, i(48139)),	-- Malfurion's Robe of Triumph
-									un(2, i(48207)),	-- Malfurion's Shoulderpads of Triumph
-									un(2, i(48138)),	-- Malfurion's Spaulders of Triumph
-									un(2, i(48170)),	-- Malfurion's Trousers of Triumph
-									un(2, i(48169)),	-- Malfurion's Vestments of Triumph
+									un(REMOVED_FROM_GAME, i(48171)),	-- Malfurion's Cover of Triumph
+									un(REMOVED_FROM_GAME, i(48172)),	-- Malfurion's Gloves of Triumph
+									un(REMOVED_FROM_GAME, i(48203)),	-- Malfurion's Handgrips of Triumph
+									un(REMOVED_FROM_GAME, i(48142)),	-- Malfurion's Handguards of Triumph
+									un(REMOVED_FROM_GAME, i(48204)),	-- Malfurion's Headguard of Triumph
+									un(REMOVED_FROM_GAME, i(48141)),	-- Malfurion's Headpiece of Triumph
+									un(REMOVED_FROM_GAME, i(48140)),	-- Malfurion's Leggings of Triumph
+									un(REMOVED_FROM_GAME, i(48205)),	-- Malfurion's Legguards of Triumph
+									un(REMOVED_FROM_GAME, i(48168)),	-- Malfurion's Mantle of Triumph
+									un(REMOVED_FROM_GAME, i(48206)),	-- Malfurion's Raiments of Triumph
+									un(REMOVED_FROM_GAME, i(48139)),	-- Malfurion's Robe of Triumph
+									un(REMOVED_FROM_GAME, i(48207)),	-- Malfurion's Shoulderpads of Triumph
+									un(REMOVED_FROM_GAME, i(48138)),	-- Malfurion's Spaulders of Triumph
+									un(REMOVED_FROM_GAME, i(48170)),	-- Malfurion's Trousers of Triumph
+									un(REMOVED_FROM_GAME, i(48169)),	-- Malfurion's Vestments of Triumph
 								}),
 								gs(640, {	-- Nobundo's Plate
-									un(2, i(48355)),	-- Nobundo's Chestguard of Triumph
-									un(2, i(48353)),	-- Nobundo's Faceguard of Triumph
-									un(2, i(48324)),	-- Nobundo's Gloves of Triumph
-									un(2, i(48354)),	-- Nobundo's Grips of Triumph
-									un(2, i(48293)),	-- Nobundo's Handguards of Triumph
-									un(2, i(48325)),	-- Nobundo's Hauberk of Triumph
-									un(2, i(48292)),	-- Nobundo's Headpiece of Triumph
-									un(2, i(48323)),	-- Nobundo's Helm of Triumph
-									un(2, i(48322)),	-- Nobundo's Kilt of Triumph
-									un(2, i(48291)),	-- Nobundo's Legguards of Triumph
-									un(2, i(48351)),	-- Nobundo's Shoulderguards of Triumph
-									un(2, i(48321)),	-- Nobundo's Shoulderpads of Triumph
-									un(2, i(48290)),	-- Nobundo's Spaulders of Triumph
-									un(2, i(48294)),	-- Nobundo's Tunic of Triumph
-									un(2, i(48352)),	-- Nobundo's War-Kilt of Triumph
+									un(REMOVED_FROM_GAME, i(48355)),	-- Nobundo's Chestguard of Triumph
+									un(REMOVED_FROM_GAME, i(48353)),	-- Nobundo's Faceguard of Triumph
+									un(REMOVED_FROM_GAME, i(48324)),	-- Nobundo's Gloves of Triumph
+									un(REMOVED_FROM_GAME, i(48354)),	-- Nobundo's Grips of Triumph
+									un(REMOVED_FROM_GAME, i(48293)),	-- Nobundo's Handguards of Triumph
+									un(REMOVED_FROM_GAME, i(48325)),	-- Nobundo's Hauberk of Triumph
+									un(REMOVED_FROM_GAME, i(48292)),	-- Nobundo's Headpiece of Triumph
+									un(REMOVED_FROM_GAME, i(48323)),	-- Nobundo's Helm of Triumph
+									un(REMOVED_FROM_GAME, i(48322)),	-- Nobundo's Kilt of Triumph
+									un(REMOVED_FROM_GAME, i(48291)),	-- Nobundo's Legguards of Triumph
+									un(REMOVED_FROM_GAME, i(48351)),	-- Nobundo's Shoulderguards of Triumph
+									un(REMOVED_FROM_GAME, i(48321)),	-- Nobundo's Shoulderpads of Triumph
+									un(REMOVED_FROM_GAME, i(48290)),	-- Nobundo's Spaulders of Triumph
+									un(REMOVED_FROM_GAME, i(48294)),	-- Nobundo's Tunic of Triumph
+									un(REMOVED_FROM_GAME, i(48352)),	-- Nobundo's War-Kilt of Triumph
 								}),
 								gs(842, {	-- Thassarian's Battlegear
-									un(2, i(48490)),	-- Thassarian's Battleplate of Triumph
-									un(2, i(48547)),	-- Thassarian's Chestguard of Triumph
-									un(2, i(48545)),	-- Thassarian's Faceguard of Triumph
-									un(2, i(48489)),	-- Thassarian's Gauntlets of Triumph
-									un(2, i(48546)),	-- Thassarian's Handguards of Triumph
-									un(2, i(48488)),	-- Thassarian's Helmet of Triumph
-									un(2, i(48544)),	-- Thassarian's Legguards of Triumph
-									un(2, i(48487)),	-- Thassarian's Legplates of Triumph
-									un(2, i(48543)),	-- Thassarian's Pauldrons of Triumph
-									un(2, i(48486)),	-- Thassarian's Shoulderplates of Triumph
+									un(REMOVED_FROM_GAME, i(48490)),	-- Thassarian's Battleplate of Triumph
+									un(REMOVED_FROM_GAME, i(48547)),	-- Thassarian's Chestguard of Triumph
+									un(REMOVED_FROM_GAME, i(48545)),	-- Thassarian's Faceguard of Triumph
+									un(REMOVED_FROM_GAME, i(48489)),	-- Thassarian's Gauntlets of Triumph
+									un(REMOVED_FROM_GAME, i(48546)),	-- Thassarian's Handguards of Triumph
+									un(REMOVED_FROM_GAME, i(48488)),	-- Thassarian's Helmet of Triumph
+									un(REMOVED_FROM_GAME, i(48544)),	-- Thassarian's Legguards of Triumph
+									un(REMOVED_FROM_GAME, i(48487)),	-- Thassarian's Legplates of Triumph
+									un(REMOVED_FROM_GAME, i(48543)),	-- Thassarian's Pauldrons of Triumph
+									un(REMOVED_FROM_GAME, i(48486)),	-- Thassarian's Shoulderplates of Triumph
 								}),
 								gs(706, {	-- Turalyon's Garb
-									un(2, i(48616)),	-- Turalyon's Battleplate of Triumph
-									un(2, i(48642)),	-- Turalyon's Breastplate of Triumph
-									un(2, i(48644)),	-- Turalyon's Faceguard of Triumph
-									un(2, i(48615)),	-- Turalyon's Gauntlets of Triumph
-									un(2, i(48583)),	-- Turalyon's Gloves of Triumph
-									un(2, i(48581)),	-- Turalyon's Greaves of Triumph
-									un(2, i(48643)),	-- Turalyon's Handguards of Triumph
-									un(2, i(48582)),	-- Turalyon's Headpiece of Triumph
-									un(2, i(48614)),	-- Turalyon's Helm of Triumph
-									un(2, i(48645)),	-- Turalyon's Legguards of Triumph
-									un(2, i(48613)),	-- Turalyon's Legplates of Triumph
-									un(2, i(48646)),	-- Turalyon's Shoulderguards of Triumph
-									un(2, i(48612)),	-- Turalyon's Shoulderplates of Triumph
-									un(2, i(48580)),	-- Turalyon's Spaulders of Triumph
-									un(2, i(48584)),	-- Turalyon's Tunic of Triumph
+									un(REMOVED_FROM_GAME, i(48616)),	-- Turalyon's Battleplate of Triumph
+									un(REMOVED_FROM_GAME, i(48642)),	-- Turalyon's Breastplate of Triumph
+									un(REMOVED_FROM_GAME, i(48644)),	-- Turalyon's Faceguard of Triumph
+									un(REMOVED_FROM_GAME, i(48615)),	-- Turalyon's Gauntlets of Triumph
+									un(REMOVED_FROM_GAME, i(48583)),	-- Turalyon's Gloves of Triumph
+									un(REMOVED_FROM_GAME, i(48581)),	-- Turalyon's Greaves of Triumph
+									un(REMOVED_FROM_GAME, i(48643)),	-- Turalyon's Handguards of Triumph
+									un(REMOVED_FROM_GAME, i(48582)),	-- Turalyon's Headpiece of Triumph
+									un(REMOVED_FROM_GAME, i(48614)),	-- Turalyon's Helm of Triumph
+									un(REMOVED_FROM_GAME, i(48645)),	-- Turalyon's Legguards of Triumph
+									un(REMOVED_FROM_GAME, i(48613)),	-- Turalyon's Legplates of Triumph
+									un(REMOVED_FROM_GAME, i(48646)),	-- Turalyon's Shoulderguards of Triumph
+									un(REMOVED_FROM_GAME, i(48612)),	-- Turalyon's Shoulderplates of Triumph
+									un(REMOVED_FROM_GAME, i(48580)),	-- Turalyon's Spaulders of Triumph
+									un(REMOVED_FROM_GAME, i(48584)),	-- Turalyon's Tunic of Triumph
 								}),
 								gs(690, {	-- VanCleef's Battlegear
-									un(2, i(48232)),	-- VanCleef's Breastplate of Triumph
-									un(2, i(48231)),	-- VanCleef's Gauntlets of Triumph
-									un(2, i(48230)),	-- VanCleef's Helmet of Triumph
-									un(2, i(48229)),	-- VanCleef's Legplates of Triumph
-									un(2, i(48228)),	-- VanCleef's Pauldrons of Triumph
+									un(REMOVED_FROM_GAME, i(48232)),	-- VanCleef's Breastplate of Triumph
+									un(REMOVED_FROM_GAME, i(48231)),	-- VanCleef's Gauntlets of Triumph
+									un(REMOVED_FROM_GAME, i(48230)),	-- VanCleef's Helmet of Triumph
+									un(REMOVED_FROM_GAME, i(48229)),	-- VanCleef's Legplates of Triumph
+									un(REMOVED_FROM_GAME, i(48228)),	-- VanCleef's Pauldrons of Triumph
 								}),
 								gs(349, {	-- Velen's Regalia
-									un(2, i(48085)),	-- Velen's Circlet of Triumph
-									un(2, i(48035)),	-- Velen's Cowl of Triumph
-									un(2, i(48037)),	-- Velen's Gloves of Triumph
-									un(2, i(48086)),	-- Velen's Handwraps of Triumph
-									un(2, i(48033)),	-- Velen's Leggings of Triumph
-									un(2, i(48082)),	-- Velen's Mantle of Triumph
-									un(2, i(48084)),	-- Velen's Pants of Triumph
-									un(2, i(48083)),	-- Velen's Raiments of Triumph
-									un(2, i(48031)),	-- Velen's Robe of Triumph
-									un(2, i(48029)),	-- Velen's Shoulderpads of Triumph
+									un(REMOVED_FROM_GAME, i(48085)),	-- Velen's Circlet of Triumph
+									un(REMOVED_FROM_GAME, i(48035)),	-- Velen's Cowl of Triumph
+									un(REMOVED_FROM_GAME, i(48037)),	-- Velen's Gloves of Triumph
+									un(REMOVED_FROM_GAME, i(48086)),	-- Velen's Handwraps of Triumph
+									un(REMOVED_FROM_GAME, i(48033)),	-- Velen's Leggings of Triumph
+									un(REMOVED_FROM_GAME, i(48082)),	-- Velen's Mantle of Triumph
+									un(REMOVED_FROM_GAME, i(48084)),	-- Velen's Pants of Triumph
+									un(REMOVED_FROM_GAME, i(48083)),	-- Velen's Raiments of Triumph
+									un(REMOVED_FROM_GAME, i(48031)),	-- Velen's Robe of Triumph
+									un(REMOVED_FROM_GAME, i(48029)),	-- Velen's Shoulderpads of Triumph
 								}),
 								gs(739, {	-- Windrunner's Battlegear
-									un(2, i(48263)),	-- Windrunner's Handguards of Triumph
-									un(2, i(48262)),	-- Windrunner's Headpiece of Triumph
-									un(2, i(48261)),	-- Windrunner's Legguards of Triumph
-									un(2, i(48260)),	-- Windrunner's Spaulders of Triumph
-									un(2, i(48264)),	-- Windrunner's Tunic of Triumph
+									un(REMOVED_FROM_GAME, i(48263)),	-- Windrunner's Handguards of Triumph
+									un(REMOVED_FROM_GAME, i(48262)),	-- Windrunner's Headpiece of Triumph
+									un(REMOVED_FROM_GAME, i(48261)),	-- Windrunner's Legguards of Triumph
+									un(REMOVED_FROM_GAME, i(48260)),	-- Windrunner's Spaulders of Triumph
+									un(REMOVED_FROM_GAME, i(48264)),	-- Windrunner's Tunic of Triumph
 								}),
 								gs(658, {	-- Wrynn's Battlegear
-									un(2, i(48385)),	-- Wrynn's Battleplate of Triumph
-									un(2, i(48451)),	-- Wrynn's Breastplate of Triumph
-									un(2, i(48384)),	-- Wrynn's Gauntlets of Triumph
-									un(2, i(48433)),	-- Wrynn's Greathelm of Triumph
-									un(2, i(48453)),	-- Wrynn's Handguards of Triumph
-									un(2, i(48383)),	-- Wrynn's Helmet of Triumph
-									un(2, i(48447)),	-- Wrynn's Legguards of Triumph
-									un(2, i(48382)),	-- Wrynn's Legplates of Triumph
-									un(2, i(48455)),	-- Wrynn's Pauldrons of Triumph
-									un(2, i(48381)),	-- Wrynn's Shoulderplates of Triumph
+									un(REMOVED_FROM_GAME, i(48385)),	-- Wrynn's Battleplate of Triumph
+									un(REMOVED_FROM_GAME, i(48451)),	-- Wrynn's Breastplate of Triumph
+									un(REMOVED_FROM_GAME, i(48384)),	-- Wrynn's Gauntlets of Triumph
+									un(REMOVED_FROM_GAME, i(48433)),	-- Wrynn's Greathelm of Triumph
+									un(REMOVED_FROM_GAME, i(48453)),	-- Wrynn's Handguards of Triumph
+									un(REMOVED_FROM_GAME, i(48383)),	-- Wrynn's Helmet of Triumph
+									un(REMOVED_FROM_GAME, i(48447)),	-- Wrynn's Legguards of Triumph
+									un(REMOVED_FROM_GAME, i(48382)),	-- Wrynn's Legplates of Triumph
+									un(REMOVED_FROM_GAME, i(48455)),	-- Wrynn's Pauldrons of Triumph
+									un(REMOVED_FROM_GAME, i(48381)),	-- Wrynn's Shoulderplates of Triumph
 								}),
 							})),
 						}),

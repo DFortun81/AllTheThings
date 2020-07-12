@@ -1002,28 +1002,28 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = 33,	-- Legacy Vendor
 							["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
 							["groups"] = {
-								un(2, i(20757)),	-- Formula: Brilliant Mana Oil
-								un(2, i(20756)),	-- Formula: Brilliant Wizard Oil
-								un(2, i(19772)),	-- Pattern: Blood Tiger Breastplate
-								un(2, i(19773)),	-- Pattern: Blood Tiger Shoulders
-								un(2, i(19766)),	-- Pattern: Bloodvine Boots
-								un(2, i(19765)),	-- Pattern: Bloodvine Leggings
-								un(2, i(19764)),	-- Pattern: Bloodvine Vest
-								un(2, i(19771)),	-- Pattern: Primal Batskin Bracers
-								un(2, i(19770)),	-- Pattern: Primal Batskin Gloves
-								un(2, i(19769)),	-- Pattern: Primal Batskin Jerkin
-								un(2, i(19776)),	-- Plans: Bloodsoul Breastplate
-								un(2, i(19778)),	-- Plans: Bloodsoul Gauntlets
-								un(2, i(19777)),	-- Plans: Bloodsoul Shoulders
-								un(2, i(19779)),	-- Plans: Darksoul Breastplate
-								un(2, i(19780)),	-- Plans: Darksoul Leggings
-								un(2, i(19781)),	-- Plans: Darksoul Shoulders
-								un(2, i(20012)),	-- Recipe: Greater Dreamless Sleep Potion
+								un(REMOVED_FROM_GAME, i(20757)),	-- Formula: Brilliant Mana Oil
+								un(REMOVED_FROM_GAME, i(20756)),	-- Formula: Brilliant Wizard Oil
+								un(REMOVED_FROM_GAME, i(19772)),	-- Pattern: Blood Tiger Breastplate
+								un(REMOVED_FROM_GAME, i(19773)),	-- Pattern: Blood Tiger Shoulders
+								un(REMOVED_FROM_GAME, i(19766)),	-- Pattern: Bloodvine Boots
+								un(REMOVED_FROM_GAME, i(19765)),	-- Pattern: Bloodvine Leggings
+								un(REMOVED_FROM_GAME, i(19764)),	-- Pattern: Bloodvine Vest
+								un(REMOVED_FROM_GAME, i(19771)),	-- Pattern: Primal Batskin Bracers
+								un(REMOVED_FROM_GAME, i(19770)),	-- Pattern: Primal Batskin Gloves
+								un(REMOVED_FROM_GAME, i(19769)),	-- Pattern: Primal Batskin Jerkin
+								un(REMOVED_FROM_GAME, i(19776)),	-- Plans: Bloodsoul Breastplate
+								un(REMOVED_FROM_GAME, i(19778)),	-- Plans: Bloodsoul Gauntlets
+								un(REMOVED_FROM_GAME, i(19777)),	-- Plans: Bloodsoul Shoulders
+								un(REMOVED_FROM_GAME, i(19779)),	-- Plans: Darksoul Breastplate
+								un(REMOVED_FROM_GAME, i(19780)),	-- Plans: Darksoul Leggings
+								un(REMOVED_FROM_GAME, i(19781)),	-- Plans: Darksoul Shoulders
+								un(REMOVED_FROM_GAME, i(20012)),	-- Recipe: Greater Dreamless Sleep Potion
 								i(20013),	-- Recipe: Living Action Potion (this is obtainable in retail from Winterspring vendor)
-								un(2, i(20011)),	-- Recipe: Mageblood Potion
-								un(2, i(20014)),	-- Recipe: Mighty Troll's Blood Potion
-								un(2, i(20000)),	-- Schematic: Bloodvine Goggles
-								un(2, i(20001)),	-- Schematic: Bloodvine Lens
+								un(REMOVED_FROM_GAME, i(20011)),	-- Recipe: Mageblood Potion
+								un(REMOVED_FROM_GAME, i(20014)),	-- Recipe: Mighty Troll's Blood Potion
+								un(REMOVED_FROM_GAME, i(20000)),	-- Schematic: Bloodvine Goggles
+								un(REMOVED_FROM_GAME, i(20001)),	-- Schematic: Bloodvine Lens
 							},
 						}),
 					}),
@@ -1031,7 +1031,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(22721, {	-- Band of Servitude
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1041,7 +1041,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(22716, {	-- Belt of Untapped Power
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1051,7 +1051,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(22718, {	-- Blooddrenched Mask
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1072,7 +1072,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(22711, {	-- Cloak of the Hakkari Worshipers
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1082,7 +1082,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(22715, {	-- Gloves of the Tormented
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1105,7 +1105,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(22712, {	-- Might of the Tribe
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1115,7 +1115,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19724, {	-- Primal Hakkari Aegis
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1127,7 +1127,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19717, {	-- Primal Hakkari Armsplint
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1139,7 +1139,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19716, {	-- Primal Hakkari Bindings
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1151,7 +1151,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19719, {	-- Primal Hakkari Girdle
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1163,7 +1163,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19723, {	-- Primal Hakkari Kossack
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1175,7 +1175,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19720, {	-- Primal Hakkari Sash
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1187,7 +1187,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19721, {	-- Primal Hakkari Shawl
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1199,7 +1199,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19718, {	-- Primal Hakkari Stanchion
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1211,7 +1211,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19722, {	-- Primal Hakkari Tabard
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1223,7 +1223,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(22714, {	-- Sacrificial Gauntlets
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1233,7 +1233,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(22722, {	-- Seal of the Gurubashi Berserker
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1243,7 +1243,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(22720, {	-- Zulian Headdress
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1253,7 +1253,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(22713, {	-- Zulian Scepter of Rites
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1264,9 +1264,9 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 			n(ZONEDROPS, {
-				un(2, i(19727)),	-- Blood Scythe
+				un(REMOVED_FROM_GAME, i(19727)),	-- Blood Scythe
 				un(7, i(20263)),	-- Gurubashi Helm
-				un(2, i(19908)),	-- Sceptre of Smiting
+				un(REMOVED_FROM_GAME, i(19908)),	-- Sceptre of Smiting
 				un(7, i(20261)),	-- Shadow Panther Hide Belt
 				un(7, i(20259)),	-- Shadow Panther Hide Gloves
 				un(7, i(20258)),	-- Zulian Ceremonial Staff
@@ -1299,7 +1299,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
 					["groups"] = {
-						un(2, i(19955)),	-- Wushoolay's Charm of Nature [Druid]
+						un(REMOVED_FROM_GAME, i(19955)),	-- Wushoolay's Charm of Nature [Druid]
 					},
 				},
 				{
@@ -1312,7 +1312,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
 					["groups"] = {
-						un(2, i(19954)),	-- Renataki's Charm of Trickery [Rogue]
+						un(REMOVED_FROM_GAME, i(19954)),	-- Renataki's Charm of Trickery [Rogue]
 					},
 				},
 				{
@@ -1325,7 +1325,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
 					["groups"] = {
-						un(2, i(19953)),	-- Renataki's Charm of Beasts [Hunter]
+						un(REMOVED_FROM_GAME, i(19953)),	-- Renataki's Charm of Beasts [Hunter]
 					},
 				},
 				{
@@ -1338,7 +1338,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
 					["groups"] = {
-						un(2, i(19957)),	-- Hazza'rah's Charm of Destruction [Warlock]
+						un(REMOVED_FROM_GAME, i(19957)),	-- Hazza'rah's Charm of Destruction [Warlock]
 					},
 				},
 				{
@@ -1351,7 +1351,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
 					["groups"] = {
-						un(2, i(19951)),	-- Gri'lek's Charm of Might [Warrior]
+						un(REMOVED_FROM_GAME, i(19951)),	-- Gri'lek's Charm of Might [Warrior]
 					},
 				},
 				{
@@ -1364,7 +1364,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
 					["groups"] = {
-						un(2, i(19959)),	-- Hazza'rah's Charm of Magic [Mage]
+						un(REMOVED_FROM_GAME, i(19959)),	-- Hazza'rah's Charm of Magic [Mage]
 					},
 				},
 				{
@@ -1377,7 +1377,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
 					["groups"] = {
-						un(2, i(19958)),	-- Hazza'rah's Charm of Healing [Priest]
+						un(REMOVED_FROM_GAME, i(19958)),	-- Hazza'rah's Charm of Healing [Priest]
 					},
 				},
 				{
@@ -1390,7 +1390,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
 					["groups"] = {
-						un(2, i(19952)),	-- Gri'lek's Charm of Valor [Paladin]
+						un(REMOVED_FROM_GAME, i(19952)),	-- Gri'lek's Charm of Valor [Paladin]
 					},
 				},
 				{
@@ -1403,7 +1403,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
 					["groups"] = {
-						un(2, i(19956)),	-- Wushoolay's Charm of Spirits [Shaman]
+						un(REMOVED_FROM_GAME, i(19956)),	-- Wushoolay's Charm of Spirits [Shaman]
 					},
 				},
 			}),
@@ -1437,13 +1437,13 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 			un(12, n(14517, {	-- High Priestess Jeklik
-				un(2, i(19928)),	-- Animist's Spaulders
-				un(2, i(19918)),	-- Jeklik's Crusher
-				un(2, i(19923)),	-- Jeklik's Opaline Talisman
-				un(2, i(20265)),	-- Peacekeeper Boots
-				un(2, i(19920)),	-- Primalist's Band
-				un(2, i(20262)),	-- Seafury Boots
-				un(2, i(19915)),	-- Zulian Defender
+				un(REMOVED_FROM_GAME, i(19928)),	-- Animist's Spaulders
+				un(REMOVED_FROM_GAME, i(19918)),	-- Jeklik's Crusher
+				un(REMOVED_FROM_GAME, i(19923)),	-- Jeklik's Opaline Talisman
+				un(REMOVED_FROM_GAME, i(20265)),	-- Peacekeeper Boots
+				un(REMOVED_FROM_GAME, i(19920)),	-- Primalist's Band
+				un(REMOVED_FROM_GAME, i(20262)),	-- Seafury Boots
+				un(REMOVED_FROM_GAME, i(19915)),	-- Zulian Defender
 				un(7, i(19767)),	-- Primal Bat Leather
 			})),
 			un(12, n(14507, {	-- High Priest Venoxis
@@ -1452,42 +1452,42 @@ _.Instances = { tier(1, {	-- Classic
 					["questID"] = 9023,	-- The Perfect Poison
 					["u"] = 40,	-- Legacy Quest Item
 				},
-				un(2, i(19906)),	-- Blooddrenched Footpads
-				un(2, i(19903)),	-- Fang of Venoxis
-				un(2, i(19904)),	-- Runed Bloodstained Hauberk
-				un(2, i(19905)),	-- Zanzil's Band
-				un(2, i(19900)),	-- Zulian Stone Axe
-				un(2, i(19907)),	-- Zulian Tigerhide Cloak
+				un(REMOVED_FROM_GAME, i(19906)),	-- Blooddrenched Footpads
+				un(REMOVED_FROM_GAME, i(19903)),	-- Fang of Venoxis
+				un(REMOVED_FROM_GAME, i(19904)),	-- Runed Bloodstained Hauberk
+				un(REMOVED_FROM_GAME, i(19905)),	-- Zanzil's Band
+				un(REMOVED_FROM_GAME, i(19900)),	-- Zulian Stone Axe
+				un(REMOVED_FROM_GAME, i(19907)),	-- Zulian Tigerhide Cloak
 			})),
 			un(12, n(14510, {	-- High Priestess Mar'li
-				un(2, i(19925)),	-- Band of Jin
-				un(2, i(19919)),	-- Bloodstained Greaves
-				un(2, i(20032)),	-- Flowing Ritual Robes
-				un(2, i(19930)),	-- Mar'li's Eye
-				un(2, i(19927)),	-- Mar'li's Touch
-				un(2, i(19871)),	-- Talisman of Protection
+				un(REMOVED_FROM_GAME, i(19925)),	-- Band of Jin
+				un(REMOVED_FROM_GAME, i(19919)),	-- Bloodstained Greaves
+				un(REMOVED_FROM_GAME, i(20032)),	-- Flowing Ritual Robes
+				un(REMOVED_FROM_GAME, i(19930)),	-- Mar'li's Eye
+				un(REMOVED_FROM_GAME, i(19927)),	-- Mar'li's Touch
+				un(REMOVED_FROM_GAME, i(19871)),	-- Talisman of Protection
 			})),
 			un(12, n(11382, {	-- Bloodlord Mandokir
 				un(9, i(19872)),	-- Swift Razzashi Raptor
-				un(2, i(19877)),	-- Animist's Leggings
-				un(2, i(19869)),	-- Blooddrenched Grips
-				un(2, i(19867)),	-- Bloodlord's Defender
-				un(2, i(19878)),	-- Bloodsoaked Pauldrons
-				un(2, i(19895)),	-- Bloodtinged Kilt
-				un(2, i(19870)),	-- Hakkari Loa Cloak
-				un(2, i(19874)),	-- Halberd of Smiting
-				un(2, i(20038)),	-- Mandokir's Sting
-				un(2, i(19873)),	-- Overlord's Crimson Band
-				un(2, i(19863)),	-- Primalist's Seal
-				un(2, i(19866)),	-- Warblade of the Hakkari [Offhand]
-				un(2, i(19893)),	-- Zanzil's Seal
-				un(2, i(22637)),	-- Primal Hakkari Idol
+				un(REMOVED_FROM_GAME, i(19877)),	-- Animist's Leggings
+				un(REMOVED_FROM_GAME, i(19869)),	-- Blooddrenched Grips
+				un(REMOVED_FROM_GAME, i(19867)),	-- Bloodlord's Defender
+				un(REMOVED_FROM_GAME, i(19878)),	-- Bloodsoaked Pauldrons
+				un(REMOVED_FROM_GAME, i(19895)),	-- Bloodtinged Kilt
+				un(REMOVED_FROM_GAME, i(19870)),	-- Hakkari Loa Cloak
+				un(REMOVED_FROM_GAME, i(19874)),	-- Halberd of Smiting
+				un(REMOVED_FROM_GAME, i(20038)),	-- Mandokir's Sting
+				un(REMOVED_FROM_GAME, i(19873)),	-- Overlord's Crimson Band
+				un(REMOVED_FROM_GAME, i(19863)),	-- Primalist's Seal
+				un(REMOVED_FROM_GAME, i(19866)),	-- Warblade of the Hakkari [Offhand]
+				un(REMOVED_FROM_GAME, i(19893)),	-- Zanzil's Seal
+				un(REMOVED_FROM_GAME, i(22637)),	-- Primal Hakkari Idol
 			})),
 			o(180368, {	-- Tablet of Madness
 				["description"] = "Alchemists with 300 skill can interact with the Tablet of Madness to learn the recipe.",
 				["requireSkill"] = ALCHEMY,
 				["groups"] = {
-					un(2, recipe(24266)),	-- Gurubashi Mojo Madness
+					un(REMOVED_FROM_GAME, recipe(24266)),	-- Gurubashi Mojo Madness
 				},
 			}),
 			o(180327, {	-- Brazier of Madness
@@ -1497,36 +1497,36 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				["groups"] = {
 					un(12, n(15082, {	-- Gri'lek
-						un(2, i(19939)),	-- Gri'lek's Blood
-						un(2, i(19961)),	-- Gri'lek's Grinder
-						un(2, i(19962)),	-- Gri'lek Carver
+						un(REMOVED_FROM_GAME, i(19939)),	-- Gri'lek's Blood
+						un(REMOVED_FROM_GAME, i(19961)),	-- Gri'lek's Grinder
+						un(REMOVED_FROM_GAME, i(19962)),	-- Gri'lek Carver
 					})),
 					un(12, n(15083, {	-- Hazza'rah
-						un(2, i(19942)),	-- Hazza'rah's Dream Thread
-						un(2, i(19967)),	-- Thoughtblighter
-						un(2, i(19968)),	-- Fiery Retributer
+						un(REMOVED_FROM_GAME, i(19942)),	-- Hazza'rah's Dream Thread
+						un(REMOVED_FROM_GAME, i(19967)),	-- Thoughtblighter
+						un(REMOVED_FROM_GAME, i(19968)),	-- Fiery Retributer
 					})),
 					un(12, n(15084, {	-- Renataki
-						un(2, i(19940)),	-- Renataki's Tooth
-						un(2, i(19963)),	-- Pitchfork of Madness
-						un(2, i(19964)),	-- Renataki's Soul Conduit
+						un(REMOVED_FROM_GAME, i(19940)),	-- Renataki's Tooth
+						un(REMOVED_FROM_GAME, i(19963)),	-- Pitchfork of Madness
+						un(REMOVED_FROM_GAME, i(19964)),	-- Renataki's Soul Conduit
 					})),
 					un(12, n(15085, {	-- Wushoolay
-						un(2, i(19941)),	-- Wushoolay's Mane
-						un(2, i(19965)),	-- Wushoolay's Poker
-						un(2, i(19993)),	-- Hoodoo Hunting Bow
+						un(REMOVED_FROM_GAME, i(19941)),	-- Wushoolay's Mane
+						un(REMOVED_FROM_GAME, i(19965)),	-- Wushoolay's Poker
+						un(REMOVED_FROM_GAME, i(19993)),	-- Hoodoo Hunting Bow
 					})),
 				},
 			}),
 			un(12, n(14509, {	-- High Priest Thekal
 				un(9, i(19902)),	-- Swift Zulian Tiger
-				un(2, i(19897)),	-- Betrayer's Boots
-				un(2, i(20266)),	-- Peacekeeper Leggings
-				un(2, i(19899)),	-- Ritualistic Legguards
-				un(2, i(20260)),	-- Seafury Leggings
-				un(2, i(19898)),	-- Seal of Jin
-				un(2, i(19896)),	-- Thekal's Grasp
-				un(2, i(19901)),	-- Zulian Slicer
+				un(REMOVED_FROM_GAME, i(19897)),	-- Betrayer's Boots
+				un(REMOVED_FROM_GAME, i(20266)),	-- Peacekeeper Leggings
+				un(REMOVED_FROM_GAME, i(19899)),	-- Ritualistic Legguards
+				un(REMOVED_FROM_GAME, i(20260)),	-- Seafury Leggings
+				un(REMOVED_FROM_GAME, i(19898)),	-- Seal of Jin
+				un(REMOVED_FROM_GAME, i(19896)),	-- Thekal's Grasp
+				un(REMOVED_FROM_GAME, i(19901)),	-- Zulian Slicer
 				un(7, i(19768)),	-- Primal Tiger Leather
 			})),
 			o(180366, {	-- Battered Tackle Box
@@ -1549,10 +1549,10 @@ _.Instances = { tier(1, {	-- Classic
 					{ "i", 19975, 5 },	-- Zulian Mudskunk
 				},
 				["groups"] = {
-					un(2, i(19945)),	-- Foror's Eyepatch
-					un(2, i(19947)),	-- Nat Pagle's Broken Reel
-					un(2, i(19944)),	-- Nat Pagle's Fish Terminator
-					un(2, i(19946)),	-- Tigule's Harpoon
+					un(REMOVED_FROM_GAME, i(19945)),	-- Foror's Eyepatch
+					un(REMOVED_FROM_GAME, i(19947)),	-- Nat Pagle's Broken Reel
+					un(REMOVED_FROM_GAME, i(19944)),	-- Nat Pagle's Fish Terminator
+					un(REMOVED_FROM_GAME, i(19946)),	-- Tigule's Harpoon
 					{
 						-- This is obtainable in retail (fishing in cataclysm pools)
 						["itemID"] = 22739,	-- Tome of Polymorph: Turtle
@@ -1562,27 +1562,27 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			})),
 			un(12, n(14515, {	-- High Priestess Arlokk
-				un(2, i(19910)),	-- Arlokk's Grasp
-				un(2, i(19922)),	-- Arlokk's Hoodoo Stick
-				un(2, i(19913)),	-- Bloodsoaked Greaves
-				un(2, i(19912)),	-- Overlord's Onyx Band
-				un(2, i(19909)),	-- Will of Arlokk
-				un(2, i(19914)),	-- Panther Hide Sack
+				un(REMOVED_FROM_GAME, i(19910)),	-- Arlokk's Grasp
+				un(REMOVED_FROM_GAME, i(19922)),	-- Arlokk's Hoodoo Stick
+				un(REMOVED_FROM_GAME, i(19913)),	-- Bloodsoaked Greaves
+				un(REMOVED_FROM_GAME, i(19912)),	-- Overlord's Onyx Band
+				un(REMOVED_FROM_GAME, i(19909)),	-- Will of Arlokk
+				un(REMOVED_FROM_GAME, i(19914)),	-- Panther Hide Sack
 			})),
 			un(12, n(11380, {	-- Jin'do the Hexxer
-				un(2, i(19892)),	-- Animist's Boots
-				un(2, i(19889)),	-- Blooddrenched Leggings
-				un(2, i(19894)),	-- Bloodsoaked Gauntlets
-				un(2, i(19875)),	-- Bloodstained Coif
-				un(2, i(19887)),	-- Bloodstained Legplates
-				un(2, i(19929)),	-- Bloodtinged Gloves
-				un(2, i(19891)),	-- Jin'do's Bag of Whammies
-				un(2, i(19885)),	-- Jin'do's Evil Eye
-				un(2, i(19890)),	-- Jin'do's Hexxer
-				un(2, i(19884)),	-- Jin'do's Judgement
-				un(2, i(19888)),	-- Overlord's Embrace
-				un(2, i(19886)),	-- The Hexxer's Cover
-				un(2, i(22637)),	-- Primal Hakkari Idol
+				un(REMOVED_FROM_GAME, i(19892)),	-- Animist's Boots
+				un(REMOVED_FROM_GAME, i(19889)),	-- Blooddrenched Leggings
+				un(REMOVED_FROM_GAME, i(19894)),	-- Bloodsoaked Gauntlets
+				un(REMOVED_FROM_GAME, i(19875)),	-- Bloodstained Coif
+				un(REMOVED_FROM_GAME, i(19887)),	-- Bloodstained Legplates
+				un(REMOVED_FROM_GAME, i(19929)),	-- Bloodtinged Gloves
+				un(REMOVED_FROM_GAME, i(19891)),	-- Jin'do's Bag of Whammies
+				un(REMOVED_FROM_GAME, i(19885)),	-- Jin'do's Evil Eye
+				un(REMOVED_FROM_GAME, i(19890)),	-- Jin'do's Hexxer
+				un(REMOVED_FROM_GAME, i(19884)),	-- Jin'do's Judgement
+				un(REMOVED_FROM_GAME, i(19888)),	-- Overlord's Embrace
+				un(REMOVED_FROM_GAME, i(19886)),	-- The Hexxer's Cover
+				un(REMOVED_FROM_GAME, i(22637)),	-- Primal Hakkari Idol
 			})),
 			un(12, n(14834, {	-- Hakkar the Soulflayer
 				{
@@ -1590,20 +1590,20 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,			-- Legacy Quest Item
 					["questID"] = 8183,	-- The Heart of Hakkar
 				},
-				un(2, i(19862)),	-- Aegis of the Blood God
-				un(2, i(19852)),	-- Ancient Hakkari Manslayer
-				un(2, i(19864)),	-- Bloodcaller
-				un(2, i(19859)),	-- Fang of the Faceless
-				un(2, i(19853)),	-- Gurubashi Dwarf Destroyer
-				un(2, i(19861)),	-- Touch of Chaos
-				un(2, i(19865)),	-- Warblade of the Hakkari [Main Hand]
-				un(2, i(19854)),	-- Zin'rokh, Destroyer of Worlds
-				un(2, i(19876)),	-- Soul Corrupter's Necklace
-				un(2, i(19856)),	-- The Eye of Hakkar
-				un(2, i(19857)),	-- Cloak of Consumption
-				un(2, i(20264)),	-- Peacekeeper Gauntlets
-				un(2, i(20257)),	-- Seafury Gauntlets
-				un(2, i(19855)),	-- Bloodsoaked Legplates
+				un(REMOVED_FROM_GAME, i(19862)),	-- Aegis of the Blood God
+				un(REMOVED_FROM_GAME, i(19852)),	-- Ancient Hakkari Manslayer
+				un(REMOVED_FROM_GAME, i(19864)),	-- Bloodcaller
+				un(REMOVED_FROM_GAME, i(19859)),	-- Fang of the Faceless
+				un(REMOVED_FROM_GAME, i(19853)),	-- Gurubashi Dwarf Destroyer
+				un(REMOVED_FROM_GAME, i(19861)),	-- Touch of Chaos
+				un(REMOVED_FROM_GAME, i(19865)),	-- Warblade of the Hakkari [Main Hand]
+				un(REMOVED_FROM_GAME, i(19854)),	-- Zin'rokh, Destroyer of Worlds
+				un(REMOVED_FROM_GAME, i(19876)),	-- Soul Corrupter's Necklace
+				un(REMOVED_FROM_GAME, i(19856)),	-- The Eye of Hakkar
+				un(REMOVED_FROM_GAME, i(19857)),	-- Cloak of Consumption
+				un(REMOVED_FROM_GAME, i(20264)),	-- Peacekeeper Gauntlets
+				un(REMOVED_FROM_GAME, i(20257)),	-- Seafury Gauntlets
+				un(REMOVED_FROM_GAME, i(19855)),	-- Bloodsoaked Legplates
 			})),
 		},
 	}),

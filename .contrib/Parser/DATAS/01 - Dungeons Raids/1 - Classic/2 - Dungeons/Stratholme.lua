@@ -118,7 +118,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(13378),	-- Songbird Blouse
 						i(13384),	-- Rainbow Girdle
 						i(13383),  	-- Woollies of the Prancing Minstrel
-						un(2, i(16682)),	-- Magister's Boots
+						un(REMOVED_FROM_GAME, i(16682)),	-- Magister's Boots
 					})),
 					cr(10516, e(450, { 	-- The Unforgiven
 						i(22406),	-- Redemption
@@ -159,7 +159,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(13382),	-- Cannonball Runner
 						i(12839),	-- Plans: Heartseeker
 						i(22403),	-- Diana's Pearl Necklace
-						un(2, i(16708)),	-- Shadowcraft Spaulders
+						un(REMOVED_FROM_GAME, i(16708)),	-- Shadowcraft Spaulders
 					})),
 					cr(10811, e(448, { 	-- Instructor Galford
 						i(13385),	-- Tome of Knowledge
@@ -189,7 +189,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(13358),	-- Wyrmtongue Shoulders
 						i(13369),	-- Fire Striders
 						i(12103),	-- Star of Mystaria
-						un(2, i(16725)),	-- Lightforge Boots
+						un(REMOVED_FROM_GAME, i(16725)),	-- Lightforge Boots
 					})),
 					n(-40, {	-- Legacy
 						-- Part of the Dungeon 2 Set Questline
@@ -203,9 +203,9 @@ _.Instances = { tier(1, {	-- Classic
 							un(43, n(14684, { 	-- Balzaphon
 								["description"] = "This boss was only available during the Scourge Invasions.",
 								["groups"] = {
-									un(2, i(23125)),	-- Chains of the Lich
-									un(2, i(23124)),	-- Staff of Balzaphon
-									un(2, i(23126)),	-- Waistband of Balzaphon
+									un(REMOVED_FROM_GAME, i(23125)),	-- Chains of the Lich
+									un(REMOVED_FROM_GAME, i(23124)),	-- Staff of Balzaphon
+									un(REMOVED_FROM_GAME, i(23126)),	-- Waistband of Balzaphon
 								},
 							})),
 							un(43, n(16102, { 	-- Sothos
@@ -214,11 +214,11 @@ _.Instances = { tier(1, {	-- Classic
 									o(181083, {	-- Sothos and Jarien's Heirlooms
 										["modelID"] = 34286,
 										["groups"] = {
-											un(2, i(22327)),	-- Amulet of the Redeemed
-											un(2, i(22301)), 	-- Ironweave Robe
-											un(2, i(22328)),	-- Legplates of Vigilance
-											un(2, i(22329)),	-- Scepter of Interminable Focus
-											un(2, i(22334)),	-- Band of Mending
+											un(REMOVED_FROM_GAME, i(22327)),	-- Amulet of the Redeemed
+											un(REMOVED_FROM_GAME, i(22301)), 	-- Ironweave Robe
+											un(REMOVED_FROM_GAME, i(22328)),	-- Legplates of Vigilance
+											un(REMOVED_FROM_GAME, i(22329)),	-- Scepter of Interminable Focus
+											un(REMOVED_FROM_GAME, i(22334)),	-- Band of Mending
 										},
 									}),
 								},
@@ -391,7 +391,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(13537),	-- Chillhide Bracers
 						i(13539),	-- Banshee's Touch
 						i(18730),	-- Shadowy Laced Handwraps
-						un(2, i(16704)),	-- Dreadmist Sandals
+						un(REMOVED_FROM_GAME, i(16704)),	-- Dreadmist Sandals
 					})),
 					cr(10437, e(452, { 	-- Nerub'enkan
 						i(18738),	-- Carapace Spine Crossbow
@@ -402,7 +402,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(18739),	-- Chitinous Plate Legguards
 						i(13531),	-- Crypt Stalker Leggings
 						i(13530),	-- Fangdrip Runners
-						un(2, i(16675)),	-- Beaststalker's Boots
+						un(REMOVED_FROM_GAME, i(16675)),	-- Beaststalker's Boots
 					})),
 					cr(10438, e(453, { 	-- Maleki the Pallid
 						i(18737),	-- Bone Slicing Hatchet
@@ -414,7 +414,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(13527),	-- Lavawalker Greaves
 						i(18735),	-- Maleki's Footwraps
 						i(12833),	-- Plans: Hammer of the Titans
-						un(2, i(16691)),	-- Devout Sandals
+						un(REMOVED_FROM_GAME, i(16691)),	-- Devout Sandals
 					})),
 					cr(10435, e(454, { 	-- Magistrate Barthilas
 						i(18725),	-- Peacemaker
@@ -457,8 +457,8 @@ _.Instances = { tier(1, {	-- Classic
 					n(-40, {	-- Legacy
 						n(QUESTS, {
 							un(40, q(5125, {	-- Aurius' Reckoning
-								un(2, i(17045)),	-- Blood of the Martyr
-								un(2, i(17044)),	-- Will of the Martyr
+								un(REMOVED_FROM_GAME, i(17045)),	-- Blood of the Martyr
+								un(REMOVED_FROM_GAME, i(17044)),	-- Will of the Martyr
 							})),
 							un(40, q(9737, { 	-- True Masters of the Light
 								["classes"] = { PALADIN },
@@ -466,7 +466,7 @@ _.Instances = { tier(1, {	-- Classic
 								["groups"] = {
 									{
 										["mountID"] = 34767, 	-- Thalassian Charger
-										["u"] = 2,
+										["u"] = REMOVED_FROM_GAME,
 									},
 									i(25549),	-- Blood Knight Tabard (not unobtainable, new quest out of Orgrimmar)
 								},
@@ -532,15 +532,15 @@ _.Instances = { tier(1, {	-- Classic
 							})),
 						}),
 						un(43, n(10440, {	-- Baron Rivendare
-							un(2, i(16678)),	-- Beaststalker's Pants
-							un(2, i(16694)),	-- Devout Skirt
-							un(2, i(16699)),	-- Dreadmist Leggings
-							un(2, i(16668)),	-- Kilt of Elements
-							un(2, i(16732)),	-- Legplates of Valor
-							un(2, i(16728)),	-- Lightforge Legplates
-							un(2, i(16687)),	-- Magister's Leggings
-							un(2, i(16709)),	-- Shadowcraft Pants
-							un(2, i(16719)),	-- Wildheart Kilt
+							un(REMOVED_FROM_GAME, i(16678)),	-- Beaststalker's Pants
+							un(REMOVED_FROM_GAME, i(16694)),	-- Devout Skirt
+							un(REMOVED_FROM_GAME, i(16699)),	-- Dreadmist Leggings
+							un(REMOVED_FROM_GAME, i(16668)),	-- Kilt of Elements
+							un(REMOVED_FROM_GAME, i(16732)),	-- Legplates of Valor
+							un(REMOVED_FROM_GAME, i(16728)),	-- Lightforge Legplates
+							un(REMOVED_FROM_GAME, i(16687)),	-- Magister's Leggings
+							un(REMOVED_FROM_GAME, i(16709)),	-- Shadowcraft Pants
+							un(REMOVED_FROM_GAME, i(16719)),	-- Wildheart Kilt
 						})),
 						un(43, n(16387, {    -- Atiesh <Hand of Sargeras>
 							un(15, i(22736)),    -- Andonisus, Reaper of Souls

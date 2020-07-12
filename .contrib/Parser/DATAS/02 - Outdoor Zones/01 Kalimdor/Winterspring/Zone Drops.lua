@@ -27,7 +27,7 @@ _.Zones =
 				}),
 				i(14493, {	-- Pattern: Robe of Winter Night
 					["crs"] = { 7437 },	-- Cobalt Mageweaver
-					["u"] = 2,	-- BoP / BoA Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(13497, {	-- Recipe: Greater Arcane Protection Potion
 					["crs"] = { 7437 },	-- Cobalt Mageweaver

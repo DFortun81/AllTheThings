@@ -106,7 +106,7 @@ _.GearSets =
 			}),
 			cl(3, {	-- Hunter [Beastsoul]
 				i(73000),	-- Beastsoul Rifle
-				un(2, i(73001)),	-- Beastsoul Spear
+				un(REMOVED_FROM_GAME, i(73001)),	-- Beastsoul Spear
 				i(72913),	-- Beastsoul Helm
 				i(72915),	-- Beastsoul Spaulders
 				i(73146),	-- Beastsoul Choker
@@ -124,7 +124,7 @@ _.GearSets =
 			}),
 			cl(4, {	-- Rogue [Shadowstalking]
 				i(72995),	-- Shadowstalking Dagger
-				un(2, i(72996)),	-- Shadowstalking Shiv
+				un(REMOVED_FROM_GAME, i(72996)),	-- Shadowstalking Shiv
 				i(72997),	-- Shadowstalking Sword
 				i(72667),	-- Shadowstalking Hood
 				i(72669),	-- Shadowstalking Shoulders

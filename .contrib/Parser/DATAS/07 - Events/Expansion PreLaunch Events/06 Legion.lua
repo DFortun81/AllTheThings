@@ -160,22 +160,22 @@ _.WorldEvents =
 							{
 								["itemID"] = 140716,	-- Guardian's Oaken Spear
 								["modID"] = 1,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140716,	-- Guardian's Oaken Spear
 								["modID"] = 3,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140716,	-- Guardian's Oaken Spear
 								["modID"] = 5,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140716,	-- Guardian's Oaken Spear
 								["modID"] = 6,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 150584,	-- Pike of Feral Rage
@@ -184,22 +184,22 @@ _.WorldEvents =
 							{
 								["itemID"] = 140689,	-- Pike of Feral Rage
 								["modID"] = 1,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140689,	-- Pike of Feral Rage
 								["modID"] = 3,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140689,	-- Pike of Feral Rage
 								["modID"] = 5,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140689,	-- Pike of Feral Rage
 								["modID"] = 6,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 150613,	-- Survivalist's Hunting Spear
@@ -208,22 +208,22 @@ _.WorldEvents =
 							{
 								["itemID"] = 140718,	-- Survivalist's Hunting Spear
 								["modID"] = 1,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140718,	-- Survivalist's Hunting Spear
 								["modID"] = 3,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140718,	-- Survivalist's Hunting Spear
 								["modID"] = 5,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140718,	-- Survivalist's Hunting Spear
 								["modID"] = 6,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 						},
 					}),

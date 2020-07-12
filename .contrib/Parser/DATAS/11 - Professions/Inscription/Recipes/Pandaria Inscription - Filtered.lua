@@ -20,7 +20,7 @@ profession(INSCRIPTION, {
 					["g"] = {
 						{	-- Glyph of Deluge
 							["recipeID"] = 64261,--[[Glyph of Deluge]]
-							["u"] = 2,	-- BoP / BoA Item (not sure if it was originally BoP, this may have been a trainer-taught replacement for a BoP or BoE item that got turned into Charred Glyph, but it's hard to find info on it.  either way, is not collectible today/can't be found on AH or anything.  my scribe that has credit for it in ATT from prior to removal no longer has it in her learned list, so it was fully removed.)
+							["u"] = REMOVED_FROM_GAME, -- (not sure if it was originally BoP, this may have been a trainer-taught replacement for a BoP or BoE item that got turned into Charred Glyph, but it's hard to find info on it.  either way, is not collectible today/can't be found on AH or anything.  my scribe that has credit for it in ATT from prior to removal no longer has it in her learned list, so it was fully removed.)
 						},
 						{	-- Glyph of Lesser Proportion
 							["recipeID"] = 58301--[[Glyph of Lesser Proportion]]

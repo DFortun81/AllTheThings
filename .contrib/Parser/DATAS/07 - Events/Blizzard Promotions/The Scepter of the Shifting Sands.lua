@@ -27,11 +27,11 @@ _.WorldEvents =
 						-- objectID:180717 -- The Scarab Gong
 						["u"] = 40,
 						["groups"] = {
-							un(2, ach(416, {	-- Scarab Lord
+							un(REMOVED_FROM_GAME, ach(416, {	-- Scarab Lord
 								["groups"] = {
 									un(39, title(33)),	-- Scarab Lord Title
-									un(2, i(21176)),	-- Black Qiraji Resonating Crystal
-									un(2, { ["mountID"] = 239770, ["questID"] = 8743 }),	-- Black Qiraji War Tank (No item available.)
+									un(REMOVED_FROM_GAME, i(21176)),	-- Black Qiraji Resonating Crystal
+									un(REMOVED_FROM_GAME, { ["mountID"] = 239770, ["questID"] = 8743 }),	-- Black Qiraji War Tank (No item available.)
 								},
 							})),
 						},
@@ -75,8 +75,8 @@ _.WorldEvents =
 						["provider"] = { "n", 13020 },	-- Vaelastrasz the Corrupt
 						["u"] = 40,
 						["groups"] = {
-							un(2, i(21529)),	-- Amulet of Shadow Shielding
-							un(2, i(21530)),	-- Onyx Embedded Leggings
+							un(REMOVED_FROM_GAME, i(21529)),	-- Amulet of Shadow Shielding
+							un(REMOVED_FROM_GAME, i(21530)),	-- Onyx Embedded Leggings
 						},
 					},
 					{
@@ -153,8 +153,8 @@ _.WorldEvents =
 						["provider"] = { "n", 11832 },	-- Keeper Remulos
 						["u"] = 40,
 						["groups"] = {
-							un(2, i(21531)),	-- Drake Tooth Necklace
-							un(2, i(21532)),	-- Drudge Boots
+							un(REMOVED_FROM_GAME, i(21531)),	-- Drake Tooth Necklace
+							un(REMOVED_FROM_GAME, i(21532)),	-- Drudge Boots
 						}
 					},
 					{
@@ -169,7 +169,7 @@ _.WorldEvents =
 						["provider"] = { "n", 11811 },	-- Narain Soothfancy
 						["u"] = 40,
 						["groups"] = {
-							un(2, i(21517)),	-- Gnomish Turban of Psychic Might
+							un(REMOVED_FROM_GAME, i(21517)),	-- Gnomish Turban of Psychic Might
 						},
 					},
 					{
@@ -178,8 +178,8 @@ _.WorldEvents =
 						["provider"] = { "n", 11811 },	-- Narain Soothfancy
 						["u"] = 40,
 						["groups"] = {
-							un(2, i(21526)),	-- Band of Icy Depths
-							un(2, i(21527)),	-- Darkwater Robes
+							un(REMOVED_FROM_GAME, i(21526)),	-- Band of Icy Depths
+							un(REMOVED_FROM_GAME, i(21527)),	-- Darkwater Robes
 						},
 					},
 					{
@@ -194,11 +194,11 @@ _.WorldEvents =
 						["provider"] = { "n", 15693 },	-- Jonathan the Revelator
 						["u"] = 40,
 						["groups"] = {
-							un(2, ach(5533)),	-- Veteran of the Shifting Sands
-							un(2, i(21523)),	-- Fang of Krialstrasz
-							un(2, i(21520)),	-- Ravencrest's Legacy
-							un(2, i(21521)),	-- Runesword of the Red
-							un(2, i(21522)),	-- Shadowsong's Sorrow
+							un(REMOVED_FROM_GAME, ach(5533)),	-- Veteran of the Shifting Sands
+							un(REMOVED_FROM_GAME, i(21523)),	-- Fang of Krialstrasz
+							un(REMOVED_FROM_GAME, i(21520)),	-- Ravencrest's Legacy
+							un(REMOVED_FROM_GAME, i(21521)),	-- Runesword of the Red
+							un(REMOVED_FROM_GAME, i(21522)),	-- Shadowsong's Sorrow
 						},
 					},
 					{

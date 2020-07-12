@@ -68,12 +68,12 @@ _.Zones =
 									{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 								},
 							}),
-							un(2, i(152650, {	-- Scuffed Krokul Cache
+							un(REMOVED_FROM_GAME, i(152650, {	-- Scuffed Krokul Cache
 								["sym"] = {
 									{"select", "itemID", 157831},	-- Scuffed Krokul Cache
 								},
 							})),
-							un(2, i(154911, {	-- Scuffed Krokul Cache
+							un(REMOVED_FROM_GAME, i(154911, {	-- Scuffed Krokul Cache
 								["sym"] = {
 									{"select", "itemID", 157831},	-- Scuffed Krokul Cache
 								},
@@ -126,12 +126,12 @@ _.Zones =
 									{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 								},
 							}),
-							un(2, i(154912, {	-- Gilded Trunk
+							un(REMOVED_FROM_GAME, i(154912, {	-- Gilded Trunk
 								["sym"] = {
 									{"select", "itemID", 157829},	-- Gilded Trunk
 								},
 							})),
-							un(2, i(152652, {	-- Gilded Trunk
+							un(REMOVED_FROM_GAME, i(152652, {	-- Gilded Trunk
 								["sym"] = {
 									{"select", "itemID", 157829},	-- Gilded Trunk
 								},

@@ -10,17 +10,17 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(2907)),	-- Dwarven Tree Chopper
-						un(2, i(2908)),	-- Thornblade
+						un(REMOVED_FROM_GAME, i(2907)),	-- Dwarven Tree Chopper
+						un(REMOVED_FROM_GAME, i(2908)),	-- Thornblade
 					},
 				}),
 				q(26155, {	-- A Dark Threat, Remembered
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(59012)),	-- Disarming Gloves
-						un(2, i(59011)),	-- Nicolette's Robes
-						un(2, i(59013)),	-- Stonesmirk Breastplate
+						un(REMOVED_FROM_GAME, i(59012)),	-- Disarming Gloves
+						un(REMOVED_FROM_GAME, i(59011)),	-- Nicolette's Robes
+						un(REMOVED_FROM_GAME, i(59013)),	-- Stonesmirk Breastplate
 					},
 				}),
 				q(26148, {	-- A Decisive Strike
@@ -39,28 +39,28 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(4980)),	-- Prospector Gloves
+						un(REMOVED_FROM_GAME, i(4980)),	-- Prospector Gloves
 					},
 				}),
 				q(257,   {	-- A Hunter's Boast
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(59004)),	-- Daryl's Bow
-						un(2, i(2903)),	-- Daryl's Hunting Bow
-						un(2, i(2904)),	-- Daryl's Hunting Rifle
-						un(2, i(59003)),	-- Daryl's Rifle
+						un(REMOVED_FROM_GAME, i(59004)),	-- Daryl's Bow
+						un(REMOVED_FROM_GAME, i(2903)),	-- Daryl's Hunting Bow
+						un(REMOVED_FROM_GAME, i(2904)),	-- Daryl's Hunting Rifle
+						un(REMOVED_FROM_GAME, i(59003)),	-- Daryl's Rifle
 					},
 				}),
 				q(258,   {	-- A Hunter's Challenge
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(59000)),	-- Daryl's Axe
-						un(2, i(3572)),		-- Daryl's Shortsword
-						un(2, i(859)),		-- Fine Cloth Shirt
-						un(2, i(59001)),	-- Ill-Worn Belt
-						un(2, i(59002)),	-- Unabashed Vest
+						un(REMOVED_FROM_GAME, i(59000)),	-- Daryl's Axe
+						un(REMOVED_FROM_GAME, i(3572)),		-- Daryl's Shortsword
+						un(REMOVED_FROM_GAME, i(859)),		-- Fine Cloth Shirt
+						un(REMOVED_FROM_GAME, i(59001)),	-- Ill-Worn Belt
+						un(REMOVED_FROM_GAME, i(59002)),	-- Unabashed Vest
 					},
 				}),
 				q(26929, {	-- A Load of Croc
@@ -123,10 +123,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(12522)),	-- Bingles' Flying Gloves
-						un(2, i(58975)),	-- Gnomish All-Purpose Ray Gun
-						un(2, i(58974)),	-- Mechanical Wand
-						un(2, i(58973)),	-- Monte's Scythe
+						un(REMOVED_FROM_GAME, i(12522)),	-- Bingles' Flying Gloves
+						un(REMOVED_FROM_GAME, i(58975)),	-- Gnomish All-Purpose Ray Gun
+						un(REMOVED_FROM_GAME, i(58974)),	-- Mechanical Wand
+						un(REMOVED_FROM_GAME, i(58973)),	-- Monte's Scythe
 					},
 				}),
 				q(27032, {	-- Bird is the Word
@@ -157,9 +157,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(59007)),	-- Croc-Scale Gloves
-						un(2, i(59006)),	-- Croc-Skin Boots
-						un(2, i(59005)),	-- Marek's Dagger
+						un(REMOVED_FROM_GAME, i(59007)),	-- Croc-Scale Gloves
+						un(REMOVED_FROM_GAME, i(59006)),	-- Croc-Skin Boots
+						un(REMOVED_FROM_GAME, i(59005)),	-- Marek's Dagger
 					},
 				}),
 				q(27026, {	-- Defcon: Bobcat
@@ -228,9 +228,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(3166)),	-- Ironheart Chain
-						un(2, i(3160)),	-- Ironplate Buckler
-						un(2, i(3161)),	-- Robe of the Keeper
+						un(REMOVED_FROM_GAME, i(3166)),	-- Ironheart Chain
+						un(REMOVED_FROM_GAME, i(3160)),	-- Ironplate Buckler
+						un(REMOVED_FROM_GAME, i(3161)),	-- Robe of the Keeper
 					},
 				}),
 				q(27030, {	-- Foxtails By The Handful
@@ -253,9 +253,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(5241)),	-- Dwarven Flamestick
-						un(2, i(3154)),	-- Thelsamar Axe
-						un(2, i(6186)),	-- Trogg Slicer
+						un(REMOVED_FROM_GAME, i(5241)),	-- Dwarven Flamestick
+						un(REMOVED_FROM_GAME, i(3154)),	-- Thelsamar Axe
+						un(REMOVED_FROM_GAME, i(6186)),	-- Trogg Slicer
 					},
 				}),
 				q(27078, {	-- Gor'kresh
@@ -313,9 +313,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(6187)),	-- Dwarven Defender
-						un(2, i(1436)),	-- Frontier Britches
-						un(2, i(1832)),	-- Lucky Trousers
+						un(REMOVED_FROM_GAME, i(6187)),	-- Dwarven Defender
+						un(REMOVED_FROM_GAME, i(1436)),	-- Frontier Britches
+						un(REMOVED_FROM_GAME, i(1832)),	-- Lucky Trousers
 					},
 				}),
 				q(13647, {	-- Joining the Hunt
@@ -376,10 +376,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(58977)), 	-- Algaz Shield
-						un(2, i(3217)),	-- Foreman Belt
-						un(2, i(6188)),	-- Mud Stompers
-						un(2, i(58976)), 	-- Rat Ear Cloak
+						un(REMOVED_FROM_GAME, i(58977)), 	-- Algaz Shield
+						un(REMOVED_FROM_GAME, i(3217)),	-- Foreman Belt
+						un(REMOVED_FROM_GAME, i(6188)),	-- Mud Stompers
+						un(REMOVED_FROM_GAME, i(58976)), 	-- Rat Ear Cloak
 					},
 				}),
 				q(301,   {	-- Report to Ironforge
@@ -406,10 +406,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(59016)),	-- Clue-Finder's Leggings
-						un(2, i(59015)),	-- Bracers of Alarm
-						un(2, i(59014)),	-- Kizmet's Wrap
-						un(2, i(59017)),	-- Strange Smelling Boots
+						un(REMOVED_FROM_GAME, i(59016)),	-- Clue-Finder's Leggings
+						un(REMOVED_FROM_GAME, i(59015)),	-- Bracers of Alarm
+						un(REMOVED_FROM_GAME, i(59014)),	-- Kizmet's Wrap
+						un(REMOVED_FROM_GAME, i(59017)),	-- Strange Smelling Boots
 					},
 				}),
 				q(27075, {	-- Servants of Cho'gall
@@ -556,11 +556,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(59028)),	-- Bluntnose's Signet
-						un(2, i(59026)), 	-- Bounty Hunter's Bracers
-						un(2, i(6191)),		-- Kimbra Boots
-						un(2, i(1449)),		-- Minor Channeling Ring
-						un(2, i(59027)), 	-- Thelsamar Chainmail
+						un(REMOVED_FROM_GAME, i(59028)),	-- Bluntnose's Signet
+						un(REMOVED_FROM_GAME, i(59026)), 	-- Bounty Hunter's Bracers
+						un(REMOVED_FROM_GAME, i(6191)),		-- Kimbra Boots
+						un(REMOVED_FROM_GAME, i(1449)),		-- Minor Channeling Ring
+						un(REMOVED_FROM_GAME, i(59027)), 	-- Thelsamar Chainmail
 					},
 				}),
 				q(13648, {	-- WANTED: The Dark Iron Spy

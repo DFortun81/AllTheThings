@@ -38,7 +38,7 @@ _.Zones =
 				n(2481, {	-- Bliztik
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						un(2, i(6068)),	-- Recipe: Shadow Oil
+						un(REMOVED_FROM_GAME, i(6068)),	-- Recipe: Shadow Oil
 					},
 				}),
 				n(2668, {	-- Danielle Zipstitch <Tailoring Supplies>

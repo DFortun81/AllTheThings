@@ -107,7 +107,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(19118)),	-- Nature's Breath
+						un(REMOVED_FROM_GAME, i(19118)),	-- Nature's Breath
 					},
 				}),
 				q(26309, {	-- Dark Vessels (H)
@@ -286,15 +286,15 @@ _.Zones =
 				q(1446,  {	-- Jammal'an the Prophet
 					["u"] = 40,
 					["g"] = {
-						un(2, i(11124)),	-- Helm of Exile
-						un(2, i(11123)),	-- Rainstrider Leggings
+						un(REMOVED_FROM_GAME, i(11124)),	-- Helm of Exile
+						un(REMOVED_FROM_GAME, i(11123)),	-- Rainstrider Leggings
 					},
 				}),
 				q(7862,  {	-- Job Opening: Guard Captain of Revantusk Village
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(19120)),	-- Rune of the Guard Captain
+						un(REMOVED_FROM_GAME, i(19120)),	-- Rune of the Guard Captain
 					},
 				}),
 				q(7845, {	-- Kidnapped Elder Torntusk!
@@ -421,8 +421,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(19115)),	-- Flask of Forest Mojo
-						un(2, i(19114)),	-- Highland Bow
+						un(REMOVED_FROM_GAME, i(19115)),	-- Flask of Forest Mojo
+						un(REMOVED_FROM_GAME, i(19114)),	-- Highland Bow
 					},
 				}),
 				q(2742, {	-- Rin'ji is Trapped!
@@ -445,16 +445,16 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(9652)),	-- Gryphon Rider's Leggings
-						un(2, i(9651)),	-- Gryphon Rider's Stormhammer
+						un(REMOVED_FROM_GAME, i(9652)),	-- Gryphon Rider's Leggings
+						un(REMOVED_FROM_GAME, i(9651)),	-- Gryphon Rider's Stormhammer
 					},
 				}),
 				q(7849,  {	-- Separation Anxiety
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(19116)),	-- Greenleaf Handwraps
-						un(2, i(19117)),	-- Laquered Wooden Plate Legplates
+						un(REMOVED_FROM_GAME, i(19116)),	-- Greenleaf Handwraps
+						un(REMOVED_FROM_GAME, i(19117)),	-- Laquered Wooden Plate Legplates
 					},
 				}),
 				q(26532, {	-- Shadra the Venom Queen (A)
@@ -664,7 +664,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(19119)),	-- Owlbeast Hide Gloves
+						un(REMOVED_FROM_GAME, i(19119)),	-- Owlbeast Hide Gloves
 					},
 				}),
 				q(27626, {	-- The Highvale Documents
@@ -756,8 +756,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(19121)),	-- Deep Woodlands Cloak
-						un(2, i(19159)),	-- Woven Ivy Necklace
+						un(REMOVED_FROM_GAME, i(19121)),	-- Deep Woodlands Cloak
+						un(REMOVED_FROM_GAME, i(19159)),	-- Woven Ivy Necklace
 					},
 				}),
 			}),

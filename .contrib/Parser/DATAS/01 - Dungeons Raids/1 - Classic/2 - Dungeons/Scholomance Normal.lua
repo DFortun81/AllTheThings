@@ -94,31 +94,31 @@ _.Instances = { tier(1, {	-- Classic
 						q(4771, { 	-- Dawn's Gambit
 							["u"] = 40,
 							["g"] = {
-								un(2, i(15854)), 	-- Dancing Sliver
-								un(2, i(15853)), 	-- Windreaper
+								un(REMOVED_FROM_GAME, i(15854)), 	-- Dancing Sliver
+								un(REMOVED_FROM_GAME, i(15853)), 	-- Windreaper
 							},
 						}),
 						q(5384, { 	-- Kirtonos the Herald
 							["u"] = 40,
 							["g"] = {
-								un(2, i(15806)), 	-- Mirah's Song
-								un(2, i(15805)), 	-- Penelope's Rose
-								un(2, i(13544)),	-- Spectral Essence
+								un(REMOVED_FROM_GAME, i(15806)), 	-- Mirah's Song
+								un(REMOVED_FROM_GAME, i(15805)), 	-- Penelope's Rose
+								un(REMOVED_FROM_GAME, i(13544)),	-- Spectral Essence
 							},
 						}),
 						q(27143, {	-- Barov Family Fortune
 							["u"] = 40,
 							["g"] = {
-								un(2, i(65923)),	-- Barov Servant Caller
+								un(REMOVED_FROM_GAME, i(65923)),	-- Barov Servant Caller
 							},
 						}),
 						q(27148, {	-- School's Out Forever
 							["u"] = 40,
 							["g"] = {
-								un(2, i(65974)),	-- Discipline Rod
-								un(2, i(65925)),	-- Lucien's Boots
-								un(2, i(65950)),	-- Shackles of Punishment
-								un(2, i(65995)),	-- Signet of the Darkmaster
+								un(REMOVED_FROM_GAME, i(65974)),	-- Discipline Rod
+								un(REMOVED_FROM_GAME, i(65925)),	-- Lucien's Boots
+								un(REMOVED_FROM_GAME, i(65950)),	-- Shackles of Punishment
+								un(REMOVED_FROM_GAME, i(65995)),	-- Signet of the Darkmaster
 							},
 						}),
 						q(7668, { 	-- The Darkreaver Menace
@@ -127,7 +127,7 @@ _.Instances = { tier(1, {	-- Classic
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								un(32, i(18807)), 	-- Helm of Latent Power (1.4 till 1.7 only)
-								un(2, i(20134)), 	-- Skyfury Helm
+								un(REMOVED_FROM_GAME, i(20134)), 	-- Skyfury Helm
 							},
 						}),
 						q(5262, {	-- The Truth Comes Crashing Down
@@ -178,276 +178,276 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					}),
 					n(10506, { 	-- Kirtonos the Herald
-						un(2, i(16734)),	-- Boots of Valor
-						un(2, i(13956)),	-- Clutch of Andros
-						un(2, i(14024)),	-- Frightalon
-						un(2, i(13957)),	-- Gargoyle Slashers
-						un(2, i(13983)),	-- Gravestone War Axe
-						un(2, i(13960)),	-- Heart of the Fiend
-						un(2, i(13969)),	-- Loomoguard Armbraces
-						un(2, i(13955)),	-- Stoneform Shoulders
-						un(2, i(13967)),	-- Windreaver Greaves
+						un(REMOVED_FROM_GAME, i(16734)),	-- Boots of Valor
+						un(REMOVED_FROM_GAME, i(13956)),	-- Clutch of Andros
+						un(REMOVED_FROM_GAME, i(14024)),	-- Frightalon
+						un(REMOVED_FROM_GAME, i(13957)),	-- Gargoyle Slashers
+						un(REMOVED_FROM_GAME, i(13983)),	-- Gravestone War Axe
+						un(REMOVED_FROM_GAME, i(13960)),	-- Heart of the Fiend
+						un(REMOVED_FROM_GAME, i(13969)),	-- Loomoguard Armbraces
+						un(REMOVED_FROM_GAME, i(13955)),	-- Stoneform Shoulders
+						un(REMOVED_FROM_GAME, i(13967)),	-- Windreaver Greaves
 					}),
 					n(14695, {	-- Lord Blackwood
-						un(2, i(23156)),	-- Blackwood's Thigh
-						un(2, i(23132)),	-- Lord Blackwood's Blade
-						un(2, i(23139)),	-- Lord Blackwood's Buckler
+						un(REMOVED_FROM_GAME, i(23156)),	-- Blackwood's Thigh
+						un(REMOVED_FROM_GAME, i(23132)),	-- Lord Blackwood's Blade
+						un(REMOVED_FROM_GAME, i(23139)),	-- Lord Blackwood's Buckler
 					}),
 					n(10503, {	-- Jandice Barov
-						un(2, o(180794, {	-- Journal of Jandice Barov
+						un(REMOVED_FROM_GAME, o(180794, {	-- Journal of Jandice Barov
 							["description"] = "Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",
 							["model"] = 198032,
 							["g"] = {
-								un(2, recipe(26086)),	-- Felcloth Bag
+								un(REMOVED_FROM_GAME, recipe(26086)),	-- Felcloth Bag
 							},
 						})),
-						un(2, i(14541)),	-- Barovian Family Sword
-						un(2, i(16701)),	-- Dreadmist Mantle
-						un(2, i(14545)),	-- Ghostloom Leggings
-						un(2, i(18689)),	-- Phantasmal Cloak
-						un(2, i(14548)),	-- Royal  Cap Spaulders
-						un(2, i(22394)),	-- Staff of Metanoia
-						un(2, i(18690)),	-- Wraithplate  Leggings
-						un(2, i(14543)),	-- Darkshade Gloves
+						un(REMOVED_FROM_GAME, i(14541)),	-- Barovian Family Sword
+						un(REMOVED_FROM_GAME, i(16701)),	-- Dreadmist Mantle
+						un(REMOVED_FROM_GAME, i(14545)),	-- Ghostloom Leggings
+						un(REMOVED_FROM_GAME, i(18689)),	-- Phantasmal Cloak
+						un(REMOVED_FROM_GAME, i(14548)),	-- Royal  Cap Spaulders
+						un(REMOVED_FROM_GAME, i(22394)),	-- Staff of Metanoia
+						un(REMOVED_FROM_GAME, i(18690)),	-- Wraithplate  Leggings
+						un(REMOVED_FROM_GAME, i(14543)),	-- Darkshade Gloves
 					}),
 					n(11622, {	-- Rattlegore
-						un(2, i(18686)),	-- Bone Golem Shoulders
-						un(2, i(14539)),	-- Bone Ring Helm
-						un(2, i(14537)),	-- Corpselight Greaves
-						un(2, i(14538)),	-- Deadwalker Mantle
-						un(2, i(14531)),	-- Frightskull Shaft
-						un(2, i(14528)),	-- Rattlecage Buckler
-						un(2, i(16711)),	-- Shadowcraft Boots
+						un(REMOVED_FROM_GAME, i(18686)),	-- Bone Golem Shoulders
+						un(REMOVED_FROM_GAME, i(14539)),	-- Bone Ring Helm
+						un(REMOVED_FROM_GAME, i(14537)),	-- Corpselight Greaves
+						un(REMOVED_FROM_GAME, i(14538)),	-- Deadwalker Mantle
+						un(REMOVED_FROM_GAME, i(14531)),	-- Frightskull Shaft
+						un(REMOVED_FROM_GAME, i(14528)),	-- Rattlecage Buckler
+						un(REMOVED_FROM_GAME, i(16711)),	-- Shadowcraft Boots
 					}),
 					n(14516, {	-- Death Knight Darkreaver
-						un(2, i(18759)),	-- Malicious Axe
-						un(2, i(18761)),	-- Oblivion's Touch
-						un(2, i(18758)),	-- Specter's Blade
-						un(2, i(18760)),	-- Necromantic Band
+						un(REMOVED_FROM_GAME, i(18759)),	-- Malicious Axe
+						un(REMOVED_FROM_GAME, i(18761)),	-- Oblivion's Touch
+						un(REMOVED_FROM_GAME, i(18758)),	-- Specter's Blade
+						un(REMOVED_FROM_GAME, i(18760)),	-- Necromantic Band
 					}),
 					n(10433, {	-- Marduk Blackpool
-						un(2, i(18692)),	-- Death Knight Sabatons
-						un(2, i(14576)),	-- Ebon Hilt of Marduk
+						un(REMOVED_FROM_GAME, i(18692)),	-- Death Knight Sabatons
+						un(REMOVED_FROM_GAME, i(14576)),	-- Ebon Hilt of Marduk
 					}),
 					n(10432, {	-- Vectus
-						un(2, i(18691)),	-- Dark Advisor's Pendant
-						un(2, i(14577)),	-- Skullsmoke Pants
+						un(REMOVED_FROM_GAME, i(18691)),	-- Dark Advisor's Pendant
+						un(REMOVED_FROM_GAME, i(14577)),	-- Skullsmoke Pants
 					}),
 					n(10508, {	-- Ras  Frostwhisper
 						un(7, i(13521)),	-- Recipe: Flask of Supreme Power
-						un(2, i(13314)),	-- Alanna's Embrace
-						un(2, i(14487)),	-- Bonechill Hammer
-						un(2, i(14525)),	-- Boneclenched Gauntlets
-						un(2, i(14503)),	-- Death's Clutch
-						un(2, i(14340)),	-- Freezing Lich Robes
-						un(2, i(14502)),	-- Frostbite Girdle
-						un(2, i(13952)),	-- Iceblade  Hacker
-						un(2, i(18696)),	-- Intricately Runed Shield
-						un(2, i(14522)),	-- Maelstrom Leggings
-						un(2, i(16689)),	-- Magister's Mantle
-						un(2, i(18694)),	-- Shadowy Mail Greaves
-						un(2, i(18693)),	-- Shivery Handwraps
-						un(2, i(18695)),	-- Spellbound Tome
+						un(REMOVED_FROM_GAME, i(13314)),	-- Alanna's Embrace
+						un(REMOVED_FROM_GAME, i(14487)),	-- Bonechill Hammer
+						un(REMOVED_FROM_GAME, i(14525)),	-- Boneclenched Gauntlets
+						un(REMOVED_FROM_GAME, i(14503)),	-- Death's Clutch
+						un(REMOVED_FROM_GAME, i(14340)),	-- Freezing Lich Robes
+						un(REMOVED_FROM_GAME, i(14502)),	-- Frostbite Girdle
+						un(REMOVED_FROM_GAME, i(13952)),	-- Iceblade  Hacker
+						un(REMOVED_FROM_GAME, i(18696)),	-- Intricately Runed Shield
+						un(REMOVED_FROM_GAME, i(14522)),	-- Maelstrom Leggings
+						un(REMOVED_FROM_GAME, i(16689)),	-- Magister's Mantle
+						un(REMOVED_FROM_GAME, i(18694)),	-- Shadowy Mail Greaves
+						un(REMOVED_FROM_GAME, i(18693)),	-- Shivery Handwraps
+						un(REMOVED_FROM_GAME, i(18695)),	-- Spellbound Tome
 					}),
 					n(16118, {	-- Kormok
 						["description"] = "This boss was summoned using the Brazier of Beckoning.",
 						["g"] = {
-							un(2, i(22332)),	-- Blade of Necromancy
-							un(2, i(22333)),	-- Hammer of Divine Might
-							un(2, i(22303)),	-- Ironweave Pants
-							un(2, i(22326)),	-- Amalgam's Band
-							un(2, i(22331)),	-- Band of the Steadfast Hero
+							un(REMOVED_FROM_GAME, i(22332)),	-- Blade of Necromancy
+							un(REMOVED_FROM_GAME, i(22333)),	-- Hammer of Divine Might
+							un(REMOVED_FROM_GAME, i(22303)),	-- Ironweave Pants
+							un(REMOVED_FROM_GAME, i(22326)),	-- Amalgam's Band
+							un(REMOVED_FROM_GAME, i(22331)),	-- Band of the Steadfast Hero
 						},
 					}),
 					n(11261, {	-- Doctor Theolen Krastinov <The Butcher>
-						un(2, i(18680)),	-- Ancient Bone Bow
-						un(2, i(14614)),	-- Bloodmail Belt
-						un(2, i(14616)),	-- Bloodmail Boots
-						un(2, i(14615)),	-- Bloodmail Gauntlets
-						un(2, i(14611)),	-- Bloodmail Hauberk
-						un(2, i(14612)),	-- Bloodmail Legguards
-						un(2, i(18681)),	-- Burial Shawl
-						un(2, i(14637)),	-- Cadaverous Armor
-						un(2, i(14636)),	-- Cadaverous Belt
-						un(2, i(14640)),	-- Cadaverous Gloves
-						un(2, i(14638)),	-- Cadaverous Leggings
-						un(2, i(14641)),	-- Cadaverous Walkers
-						un(2, i(14624)),	-- Deathbone Chestplate
-						un(2, i(14622)),	-- Deathbone Gauntlets
-						un(2, i(14620)),	-- Deathbone Girdle
-						un(2, i(14623)),	-- Deathbone Legguards
-						un(2, i(14621)),	-- Deathbone Sabatons
-						un(2, i(18682)),	-- Ghoul Skin Leggings
-						un(2, i(18683)),	-- Hammer of the Vesper
+						un(REMOVED_FROM_GAME, i(18680)),	-- Ancient Bone Bow
+						un(REMOVED_FROM_GAME, i(14614)),	-- Bloodmail Belt
+						un(REMOVED_FROM_GAME, i(14616)),	-- Bloodmail Boots
+						un(REMOVED_FROM_GAME, i(14615)),	-- Bloodmail Gauntlets
+						un(REMOVED_FROM_GAME, i(14611)),	-- Bloodmail Hauberk
+						un(REMOVED_FROM_GAME, i(14612)),	-- Bloodmail Legguards
+						un(REMOVED_FROM_GAME, i(18681)),	-- Burial Shawl
+						un(REMOVED_FROM_GAME, i(14637)),	-- Cadaverous Armor
+						un(REMOVED_FROM_GAME, i(14636)),	-- Cadaverous Belt
+						un(REMOVED_FROM_GAME, i(14640)),	-- Cadaverous Gloves
+						un(REMOVED_FROM_GAME, i(14638)),	-- Cadaverous Leggings
+						un(REMOVED_FROM_GAME, i(14641)),	-- Cadaverous Walkers
+						un(REMOVED_FROM_GAME, i(14624)),	-- Deathbone Chestplate
+						un(REMOVED_FROM_GAME, i(14622)),	-- Deathbone Gauntlets
+						un(REMOVED_FROM_GAME, i(14620)),	-- Deathbone Girdle
+						un(REMOVED_FROM_GAME, i(14623)),	-- Deathbone Legguards
+						un(REMOVED_FROM_GAME, i(14621)),	-- Deathbone Sabatons
+						un(REMOVED_FROM_GAME, i(18682)),	-- Ghoul Skin Leggings
+						un(REMOVED_FROM_GAME, i(18683)),	-- Hammer of the Vesper
 						un(7, i(16684)),	-- Magister's Gloves
-						un(2, i(14631)),	-- Necropile Boots
-						un(2, i(14629)),	-- Necropile Cuffs
-						un(2, i(14632)),	-- Necropile Leggings
-						un(2, i(14633)),	-- Necropile Mantle
-						un(2, i(14626)),	-- Necropile Robe
+						un(REMOVED_FROM_GAME, i(14631)),	-- Necropile Boots
+						un(REMOVED_FROM_GAME, i(14629)),	-- Necropile Cuffs
+						un(REMOVED_FROM_GAME, i(14632)),	-- Necropile Leggings
+						un(REMOVED_FROM_GAME, i(14633)),	-- Necropile Mantle
+						un(REMOVED_FROM_GAME, i(14626)),	-- Necropile Robe
 						un(9, i(14617)),	-- Sawbones Shirt
-						un(2, i(18684)),	-- Dimly Opalescent Ring
+						un(REMOVED_FROM_GAME, i(18684)),	-- Dimly Opalescent Ring
 					}),
 					n(10901, {	-- Lorekeeper Polkelt
-						un(2, i(18680)),	-- Ancient Bone Bow
-						un(2, i(14614)),	-- Bloodmail Belt
-						un(2, i(14616)),	-- Bloodmail Boots
-						un(2, i(14615)),	-- Bloodmail Gauntlets
-						un(2, i(14611)),	-- Bloodmail Hauberk
-						un(2, i(14612)),	-- Bloodmail Legguards
-						un(2, i(18681)),	-- Burial Shawl
-						un(2, i(14637)),	-- Cadaverous Armor
-						un(2, i(14636)),	-- Cadaverous Belt
-						un(2, i(14640)),	-- Cadaverous Gloves
-						un(2, i(14638)),	-- Cadaverous Leggings
-						un(2, i(14641)),	-- Cadaverous Walkers
-						un(2, i(14624)),	-- Deathbone Chestplate
-						un(2, i(14622)),	-- Deathbone Gauntlets
-						un(2, i(14620)),	-- Deathbone Girdle
-						un(2, i(14623)),	-- Deathbone Legguards
-						un(2, i(14621)),	-- Deathbone Sabatons
+						un(REMOVED_FROM_GAME, i(18680)),	-- Ancient Bone Bow
+						un(REMOVED_FROM_GAME, i(14614)),	-- Bloodmail Belt
+						un(REMOVED_FROM_GAME, i(14616)),	-- Bloodmail Boots
+						un(REMOVED_FROM_GAME, i(14615)),	-- Bloodmail Gauntlets
+						un(REMOVED_FROM_GAME, i(14611)),	-- Bloodmail Hauberk
+						un(REMOVED_FROM_GAME, i(14612)),	-- Bloodmail Legguards
+						un(REMOVED_FROM_GAME, i(18681)),	-- Burial Shawl
+						un(REMOVED_FROM_GAME, i(14637)),	-- Cadaverous Armor
+						un(REMOVED_FROM_GAME, i(14636)),	-- Cadaverous Belt
+						un(REMOVED_FROM_GAME, i(14640)),	-- Cadaverous Gloves
+						un(REMOVED_FROM_GAME, i(14638)),	-- Cadaverous Leggings
+						un(REMOVED_FROM_GAME, i(14641)),	-- Cadaverous Walkers
+						un(REMOVED_FROM_GAME, i(14624)),	-- Deathbone Chestplate
+						un(REMOVED_FROM_GAME, i(14622)),	-- Deathbone Gauntlets
+						un(REMOVED_FROM_GAME, i(14620)),	-- Deathbone Girdle
+						un(REMOVED_FROM_GAME, i(14623)),	-- Deathbone Legguards
+						un(REMOVED_FROM_GAME, i(14621)),	-- Deathbone Sabatons
 						un(7, i(16705)),	-- Dreadmist Wraps
-						un(2, i(18682)),	-- Ghoul Skin Leggings
-						un(2, i(18683)),	-- Hammer of the Vesper
-						un(2, i(14631)),	-- Necropile Boots
-						un(2, i(14629)),	-- Necropile Cuffs
-						un(2, i(14632)),	-- Necropile Leggings
-						un(2, i(14633)),	-- Necropile Mantle
-						un(2, i(14626)),	-- Necropile Robe
-						un(2, i(18684)),	-- Dimly Opalescent Ring
+						un(REMOVED_FROM_GAME, i(18682)),	-- Ghoul Skin Leggings
+						un(REMOVED_FROM_GAME, i(18683)),	-- Hammer of the Vesper
+						un(REMOVED_FROM_GAME, i(14631)),	-- Necropile Boots
+						un(REMOVED_FROM_GAME, i(14629)),	-- Necropile Cuffs
+						un(REMOVED_FROM_GAME, i(14632)),	-- Necropile Leggings
+						un(REMOVED_FROM_GAME, i(14633)),	-- Necropile Mantle
+						un(REMOVED_FROM_GAME, i(14626)),	-- Necropile Robe
+						un(REMOVED_FROM_GAME, i(18684)),	-- Dimly Opalescent Ring
 					}),
 					n(10505, {	-- Instructor Malicia
-						un(2, i(18680)),	-- Ancient Bone Bow
-						un(2, i(14614)),	-- Bloodmail Belt
-						un(2, i(14616)),	-- Bloodmail Boots
-						un(2, i(14615)),	-- Bloodmail Gauntlets
-						un(2, i(14611)),	-- Bloodmail Hauberk
-						un(2, i(14612)),	-- Bloodmail Legguards
-						un(2, i(18681)),	-- Burial Shawl
-						un(2, i(14637)),	-- Cadaverous Armor
-						un(2, i(14636)),	-- Cadaverous Belt
-						un(2, i(14640)),	-- Cadaverous Gloves
-						un(2, i(14638)),	-- Cadaverous Leggings
-						un(2, i(14641)),	-- Cadaverous Walkers
-						un(2, i(14624)),	-- Deathbone Chestplate
-						un(2, i(14622)),	-- Deathbone Gauntlets
-						un(2, i(14620)),	-- Deathbone Girdle
-						un(2, i(14623)),	-- Deathbone Legguards
-						un(2, i(14621)),	-- Deathbone Sabatons
-						un(2, i(18682)),	-- Ghoul Skin Leggings
-						un(2, i(18683)),	-- Hammer of the Vesper
+						un(REMOVED_FROM_GAME, i(18680)),	-- Ancient Bone Bow
+						un(REMOVED_FROM_GAME, i(14614)),	-- Bloodmail Belt
+						un(REMOVED_FROM_GAME, i(14616)),	-- Bloodmail Boots
+						un(REMOVED_FROM_GAME, i(14615)),	-- Bloodmail Gauntlets
+						un(REMOVED_FROM_GAME, i(14611)),	-- Bloodmail Hauberk
+						un(REMOVED_FROM_GAME, i(14612)),	-- Bloodmail Legguards
+						un(REMOVED_FROM_GAME, i(18681)),	-- Burial Shawl
+						un(REMOVED_FROM_GAME, i(14637)),	-- Cadaverous Armor
+						un(REMOVED_FROM_GAME, i(14636)),	-- Cadaverous Belt
+						un(REMOVED_FROM_GAME, i(14640)),	-- Cadaverous Gloves
+						un(REMOVED_FROM_GAME, i(14638)),	-- Cadaverous Leggings
+						un(REMOVED_FROM_GAME, i(14641)),	-- Cadaverous Walkers
+						un(REMOVED_FROM_GAME, i(14624)),	-- Deathbone Chestplate
+						un(REMOVED_FROM_GAME, i(14622)),	-- Deathbone Gauntlets
+						un(REMOVED_FROM_GAME, i(14620)),	-- Deathbone Girdle
+						un(REMOVED_FROM_GAME, i(14623)),	-- Deathbone Legguards
+						un(REMOVED_FROM_GAME, i(14621)),	-- Deathbone Sabatons
+						un(REMOVED_FROM_GAME, i(18682)),	-- Ghoul Skin Leggings
+						un(REMOVED_FROM_GAME, i(18683)),	-- Hammer of the Vesper
 						un(7, i(16684)),	-- Magister's Gloves
-						un(2, i(14631)),	-- Necropile Boots
-						un(2, i(14629)),	-- Necropile Cuffs
-						un(2, i(14632)),	-- Necropile Leggings
-						un(2, i(14633)),	-- Necropile Mantle
-						un(2, i(14626)),	-- Necropile Robe
+						un(REMOVED_FROM_GAME, i(14631)),	-- Necropile Boots
+						un(REMOVED_FROM_GAME, i(14629)),	-- Necropile Cuffs
+						un(REMOVED_FROM_GAME, i(14632)),	-- Necropile Leggings
+						un(REMOVED_FROM_GAME, i(14633)),	-- Necropile Mantle
+						un(REMOVED_FROM_GAME, i(14626)),	-- Necropile Robe
 						un(7, i(16710)),	-- Shadowcraft Bracers
-						un(2, i(18684)),	-- Dimly Opalescent Ring
+						un(REMOVED_FROM_GAME, i(18684)),	-- Dimly Opalescent Ring
 					}),
 					n(10502, {	-- Lady Illucia Barov
-						un(2, i(18680)),	-- Ancient Bone Bow
-						un(2, i(14614)),	-- Bloodmail Belt
-						un(2, i(14616)),	-- Bloodmail Boots
-						un(2, i(14615)),	-- Bloodmail Gauntlets
-						un(2, i(14611)),	-- Bloodmail Hauberk
-						un(2, i(14612)),	-- Bloodmail Legguards
-						un(2, i(18681)),	-- Burial Shawl
-						un(2, i(14637)),	-- Cadaverous Armor
-						un(2, i(14636)),	-- Cadaverous Belt
-						un(2, i(14640)),	-- Cadaverous Gloves
-						un(2, i(14638)),	-- Cadaverous Leggings
-						un(2, i(14641)),	-- Cadaverous Walkers
-						un(2, i(14624)),	-- Deathbone Chestplate
-						un(2, i(14622)),	-- Deathbone Gauntlets
-						un(2, i(14620)),	-- Deathbone Girdle
-						un(2, i(14623)),	-- Deathbone Legguards
-						un(2, i(14621)),	-- Deathbone Sabatons
-						un(2, i(18682)),	-- Ghoul Skin Leggings
-						un(2, i(18683)),	-- Hammer of the Vesper
-						un(2, i(14631)),	-- Necropile Boots
-						un(2, i(14629)),	-- Necropile Cuffs
-						un(2, i(14632)),	-- Necropile Leggings
-						un(2, i(14633)),	-- Necropile Mantle
-						un(2, i(14626)),	-- Necropile Robe
-						un(2, i(18684)),	-- Dimly Opalescent Ring
+						un(REMOVED_FROM_GAME, i(18680)),	-- Ancient Bone Bow
+						un(REMOVED_FROM_GAME, i(14614)),	-- Bloodmail Belt
+						un(REMOVED_FROM_GAME, i(14616)),	-- Bloodmail Boots
+						un(REMOVED_FROM_GAME, i(14615)),	-- Bloodmail Gauntlets
+						un(REMOVED_FROM_GAME, i(14611)),	-- Bloodmail Hauberk
+						un(REMOVED_FROM_GAME, i(14612)),	-- Bloodmail Legguards
+						un(REMOVED_FROM_GAME, i(18681)),	-- Burial Shawl
+						un(REMOVED_FROM_GAME, i(14637)),	-- Cadaverous Armor
+						un(REMOVED_FROM_GAME, i(14636)),	-- Cadaverous Belt
+						un(REMOVED_FROM_GAME, i(14640)),	-- Cadaverous Gloves
+						un(REMOVED_FROM_GAME, i(14638)),	-- Cadaverous Leggings
+						un(REMOVED_FROM_GAME, i(14641)),	-- Cadaverous Walkers
+						un(REMOVED_FROM_GAME, i(14624)),	-- Deathbone Chestplate
+						un(REMOVED_FROM_GAME, i(14622)),	-- Deathbone Gauntlets
+						un(REMOVED_FROM_GAME, i(14620)),	-- Deathbone Girdle
+						un(REMOVED_FROM_GAME, i(14623)),	-- Deathbone Legguards
+						un(REMOVED_FROM_GAME, i(14621)),	-- Deathbone Sabatons
+						un(REMOVED_FROM_GAME, i(18682)),	-- Ghoul Skin Leggings
+						un(REMOVED_FROM_GAME, i(18683)),	-- Hammer of the Vesper
+						un(REMOVED_FROM_GAME, i(14631)),	-- Necropile Boots
+						un(REMOVED_FROM_GAME, i(14629)),	-- Necropile Cuffs
+						un(REMOVED_FROM_GAME, i(14632)),	-- Necropile Leggings
+						un(REMOVED_FROM_GAME, i(14633)),	-- Necropile Mantle
+						un(REMOVED_FROM_GAME, i(14626)),	-- Necropile Robe
+						un(REMOVED_FROM_GAME, i(18684)),	-- Dimly Opalescent Ring
 					}),
 					n(10504, {	-- Lord Alexi Barov
-						un(2, i(18680)),	-- Ancient Bone Bow
-						un(2, i(14614)),	-- Bloodmail Belt
-						un(2, i(14616)),	-- Bloodmail Boots
-						un(2, i(14615)),	-- Bloodmail Gauntlets
-						un(2, i(14611)),	-- Bloodmail Hauberk
-						un(2, i(14612)),	-- Bloodmail Legguards
-						un(2, i(18681)),	-- Burial Shawl
-						un(2, i(14637)),	-- Cadaverous Armor
-						un(2, i(14636)),	-- Cadaverous Belt
-						un(2, i(14640)),	-- Cadaverous Gloves
-						un(2, i(14638)),	-- Cadaverous Leggings
-						un(2, i(14641)),	-- Cadaverous Walkers
-						un(2, i(14624)),	-- Deathbone Chestplate
-						un(2, i(14622)),	-- Deathbone Gauntlets
-						un(2, i(14620)),	-- Deathbone Girdle
-						un(2, i(14623)),	-- Deathbone Legguards
-						un(2, i(14621)),	-- Deathbone Sabatons
-						un(2, i(18682)),	-- Ghoul Skin Leggings
-						un(2, i(18683)),	-- Hammer of the Vesper
+						un(REMOVED_FROM_GAME, i(18680)),	-- Ancient Bone Bow
+						un(REMOVED_FROM_GAME, i(14614)),	-- Bloodmail Belt
+						un(REMOVED_FROM_GAME, i(14616)),	-- Bloodmail Boots
+						un(REMOVED_FROM_GAME, i(14615)),	-- Bloodmail Gauntlets
+						un(REMOVED_FROM_GAME, i(14611)),	-- Bloodmail Hauberk
+						un(REMOVED_FROM_GAME, i(14612)),	-- Bloodmail Legguards
+						un(REMOVED_FROM_GAME, i(18681)),	-- Burial Shawl
+						un(REMOVED_FROM_GAME, i(14637)),	-- Cadaverous Armor
+						un(REMOVED_FROM_GAME, i(14636)),	-- Cadaverous Belt
+						un(REMOVED_FROM_GAME, i(14640)),	-- Cadaverous Gloves
+						un(REMOVED_FROM_GAME, i(14638)),	-- Cadaverous Leggings
+						un(REMOVED_FROM_GAME, i(14641)),	-- Cadaverous Walkers
+						un(REMOVED_FROM_GAME, i(14624)),	-- Deathbone Chestplate
+						un(REMOVED_FROM_GAME, i(14622)),	-- Deathbone Gauntlets
+						un(REMOVED_FROM_GAME, i(14620)),	-- Deathbone Girdle
+						un(REMOVED_FROM_GAME, i(14623)),	-- Deathbone Legguards
+						un(REMOVED_FROM_GAME, i(14621)),	-- Deathbone Sabatons
+						un(REMOVED_FROM_GAME, i(18682)),	-- Ghoul Skin Leggings
+						un(REMOVED_FROM_GAME, i(18683)),	-- Hammer of the Vesper
 						un(7, i(16722)),	-- Lightforge Bracers
-						un(2, i(14631)),	-- Necropile Boots
-						un(2, i(14629)),	-- Necropile Cuffs
-						un(2, i(14632)),	-- Necropile Leggings
-						un(2, i(14633)),	-- Necropile Mantle
-						un(2, i(14626)),	-- Necropile Robe
-						un(2, i(18684)),	-- Dimly Opalescent Ring
+						un(REMOVED_FROM_GAME, i(14631)),	-- Necropile Boots
+						un(REMOVED_FROM_GAME, i(14629)),	-- Necropile Cuffs
+						un(REMOVED_FROM_GAME, i(14632)),	-- Necropile Leggings
+						un(REMOVED_FROM_GAME, i(14633)),	-- Necropile Mantle
+						un(REMOVED_FROM_GAME, i(14626)),	-- Necropile Robe
+						un(REMOVED_FROM_GAME, i(18684)),	-- Dimly Opalescent Ring
 					}),
 					n(10507, {	-- The Ravenian
-						un(2, i(18680)),	-- Ancient Bone Bow
-						un(2, i(14614)),	-- Bloodmail Belt
-						un(2, i(14616)),	-- Bloodmail Boots
-						un(2, i(14615)),	-- Bloodmail Gauntlets
-						un(2, i(14611)),	-- Bloodmail Hauberk
-						un(2, i(14612)),	-- Bloodmail Legguards
-						un(2, i(18681)),	-- Burial Shawl
-						un(2, i(14637)),	-- Cadaverous Armor
-						un(2, i(14636)),	-- Cadaverous Belt
-						un(2, i(14640)),	-- Cadaverous Gloves
-						un(2, i(14638)),	-- Cadaverous Leggings
-						un(2, i(14641)),	-- Cadaverous Walkers
-						un(2, i(14624)),	-- Deathbone Chestplate
-						un(2, i(14622)),	-- Deathbone Gauntlets
-						un(2, i(14620)),	-- Deathbone Girdle
-						un(2, i(14623)),	-- Deathbone Legguards
-						un(2, i(14621)),	-- Deathbone Sabatons
-						un(2, i(18682)),	-- Ghoul Skin Leggings
-						un(2, i(18683)),	-- Hammer of the Vesper
-						un(2, i(14631)),	-- Necropile Boots
-						un(2, i(14629)),	-- Necropile Cuffs
-						un(2, i(14632)),	-- Necropile Leggings
-						un(2, i(14633)),	-- Necropile Mantle
-						un(2, i(14626)),	-- Necropile Robe
+						un(REMOVED_FROM_GAME, i(18680)),	-- Ancient Bone Bow
+						un(REMOVED_FROM_GAME, i(14614)),	-- Bloodmail Belt
+						un(REMOVED_FROM_GAME, i(14616)),	-- Bloodmail Boots
+						un(REMOVED_FROM_GAME, i(14615)),	-- Bloodmail Gauntlets
+						un(REMOVED_FROM_GAME, i(14611)),	-- Bloodmail Hauberk
+						un(REMOVED_FROM_GAME, i(14612)),	-- Bloodmail Legguards
+						un(REMOVED_FROM_GAME, i(18681)),	-- Burial Shawl
+						un(REMOVED_FROM_GAME, i(14637)),	-- Cadaverous Armor
+						un(REMOVED_FROM_GAME, i(14636)),	-- Cadaverous Belt
+						un(REMOVED_FROM_GAME, i(14640)),	-- Cadaverous Gloves
+						un(REMOVED_FROM_GAME, i(14638)),	-- Cadaverous Leggings
+						un(REMOVED_FROM_GAME, i(14641)),	-- Cadaverous Walkers
+						un(REMOVED_FROM_GAME, i(14624)),	-- Deathbone Chestplate
+						un(REMOVED_FROM_GAME, i(14622)),	-- Deathbone Gauntlets
+						un(REMOVED_FROM_GAME, i(14620)),	-- Deathbone Girdle
+						un(REMOVED_FROM_GAME, i(14623)),	-- Deathbone Legguards
+						un(REMOVED_FROM_GAME, i(14621)),	-- Deathbone Sabatons
+						un(REMOVED_FROM_GAME, i(18682)),	-- Ghoul Skin Leggings
+						un(REMOVED_FROM_GAME, i(18683)),	-- Hammer of the Vesper
+						un(REMOVED_FROM_GAME, i(14631)),	-- Necropile Boots
+						un(REMOVED_FROM_GAME, i(14629)),	-- Necropile Cuffs
+						un(REMOVED_FROM_GAME, i(14632)),	-- Necropile Leggings
+						un(REMOVED_FROM_GAME, i(14633)),	-- Necropile Mantle
+						un(REMOVED_FROM_GAME, i(14626)),	-- Necropile Robe
 						un(7, i(16716)),	-- Wildheart Belt
-						un(2, i(18684)),	-- Dimly Opalescent Ring
+						un(REMOVED_FROM_GAME, i(18684)),	-- Dimly Opalescent Ring
 					}),
 					n(1853, {	-- Darkmaster Gandling
 						un(7, i(14514)),	-- Pattern: Robe of the Void
-						un(2, i(16677)),	-- Beastalker's Cap
-						un(2, i(13938)),	-- Bonecreeper Stylus
-						un(2, i(13398)),	-- Boots of the Shrieker
-						un(2, i(16667)),	-- Coif of Elements
-						un(2, i(13950)),	-- Detention Strap
-						un(2, i(16693)),	-- Devout Crown
-						un(2, i(22433)),	-- Don Mauricio's Band of Domination
-						un(2, i(16698)),	-- Dreadmist Mask
-						un(2, i(13937)),	-- Headmaster's Charge
-						un(2, i(16731)),	-- Helm of Valor
-						un(2, i(16727)),	-- Lightforge Helm
-						un(2, i(16686)),	-- Magister's Crown
-						un(2, i(16707)),	-- Shadowcraft Cap
-						un(2, i(13953)),	-- Silent Fang
-						un(2, i(13944)),	-- Tombstone Breastplate
-						un(2, i(13951)),	-- Vigorsteel Vambraces
-						un(2, i(16720)),	-- Wildheart Cowl
-						un(2, i(13964)),	-- Witchblade
+						un(REMOVED_FROM_GAME, i(16677)),	-- Beastalker's Cap
+						un(REMOVED_FROM_GAME, i(13938)),	-- Bonecreeper Stylus
+						un(REMOVED_FROM_GAME, i(13398)),	-- Boots of the Shrieker
+						un(REMOVED_FROM_GAME, i(16667)),	-- Coif of Elements
+						un(REMOVED_FROM_GAME, i(13950)),	-- Detention Strap
+						un(REMOVED_FROM_GAME, i(16693)),	-- Devout Crown
+						un(REMOVED_FROM_GAME, i(22433)),	-- Don Mauricio's Band of Domination
+						un(REMOVED_FROM_GAME, i(16698)),	-- Dreadmist Mask
+						un(REMOVED_FROM_GAME, i(13937)),	-- Headmaster's Charge
+						un(REMOVED_FROM_GAME, i(16731)),	-- Helm of Valor
+						un(REMOVED_FROM_GAME, i(16727)),	-- Lightforge Helm
+						un(REMOVED_FROM_GAME, i(16686)),	-- Magister's Crown
+						un(REMOVED_FROM_GAME, i(16707)),	-- Shadowcraft Cap
+						un(REMOVED_FROM_GAME, i(13953)),	-- Silent Fang
+						un(REMOVED_FROM_GAME, i(13944)),	-- Tombstone Breastplate
+						un(REMOVED_FROM_GAME, i(13951)),	-- Vigorsteel Vambraces
+						un(REMOVED_FROM_GAME, i(16720)),	-- Wildheart Cowl
+						un(REMOVED_FROM_GAME, i(13964)),	-- Witchblade
 					}),
 				},
 			}),

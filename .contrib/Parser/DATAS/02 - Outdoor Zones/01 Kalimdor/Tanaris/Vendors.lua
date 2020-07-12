@@ -58,7 +58,7 @@ _.Zones =
 				n(33915,  {	-- Argex Irongut <Veteran Arena Vendor>
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						un(2, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
+						un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
 						i(42565),	-- Furious Gladiator's Barrier
 						i(42514),	-- Furious Gladiator's Baton of Light
 						i(42364),	-- Furious Gladiator's Battle Staff
@@ -155,60 +155,60 @@ _.Zones =
 				n(34090,  {	-- Blazzek the Biter Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						un(2, i(49086)),	-- Relentless Gladiator's Tabard [Elite Rating]
-						un(2, i(48435)),	-- Relentless Gladiator's Punisher
-						un(2, i(48511)),	-- Relentless Gladiator's Truncheon
-						un(2, i(48519)),	-- Relentless Gladiator's Salvation
-						un(2, i(48426)),	-- Relentless Gladiator's Dicer
-						un(2, i(48438)),	-- Relentless Gladiator's Swiftblade
-						un(2, i(48513)),	-- Relentless Gladiator's Longblade
-						un(2, i(48517)),	-- Relentless Gladiator's Halberd
-						un(2, i(48410)),	-- Relentless Gladiator's Skirmish Staff
-						un(2, i(48414)),	-- Relentless Gladiator's Combat Staff
-						un(2, i(48521)),	-- Relentless Gladiator's Light Staff
-						un(2, i(48523)),	-- Relentless Gladiator's Greatstaff
-						un(2, i(48408)),	-- Relentless Gladiator's Mageblade
-						un(2, i(48428)),	-- Relentless Gladiator's Dirk
-						un(2, i(49191)),	-- Relentless Gladiator's Blade of Celerity
-						un(2, i(48424)),	-- Relentless Gladiator's Shotgun
-						un(2, i(48420)),	-- Relentless Gladiator's Recurve
-						un(2, i(48422)),	-- Relentless Gladiator's Repeater
-						un(2, i(48402)),	-- Relentless Gladiator's Sunderer
-						un(2, i(48406)),	-- Relentless Gladiator's Claymore)
+						un(REMOVED_FROM_GAME, i(49086)),	-- Relentless Gladiator's Tabard [Elite Rating]
+						un(REMOVED_FROM_GAME, i(48435)),	-- Relentless Gladiator's Punisher
+						un(REMOVED_FROM_GAME, i(48511)),	-- Relentless Gladiator's Truncheon
+						un(REMOVED_FROM_GAME, i(48519)),	-- Relentless Gladiator's Salvation
+						un(REMOVED_FROM_GAME, i(48426)),	-- Relentless Gladiator's Dicer
+						un(REMOVED_FROM_GAME, i(48438)),	-- Relentless Gladiator's Swiftblade
+						un(REMOVED_FROM_GAME, i(48513)),	-- Relentless Gladiator's Longblade
+						un(REMOVED_FROM_GAME, i(48517)),	-- Relentless Gladiator's Halberd
+						un(REMOVED_FROM_GAME, i(48410)),	-- Relentless Gladiator's Skirmish Staff
+						un(REMOVED_FROM_GAME, i(48414)),	-- Relentless Gladiator's Combat Staff
+						un(REMOVED_FROM_GAME, i(48521)),	-- Relentless Gladiator's Light Staff
+						un(REMOVED_FROM_GAME, i(48523)),	-- Relentless Gladiator's Greatstaff
+						un(REMOVED_FROM_GAME, i(48408)),	-- Relentless Gladiator's Mageblade
+						un(REMOVED_FROM_GAME, i(48428)),	-- Relentless Gladiator's Dirk
+						un(REMOVED_FROM_GAME, i(49191)),	-- Relentless Gladiator's Blade of Celerity
+						un(REMOVED_FROM_GAME, i(48424)),	-- Relentless Gladiator's Shotgun
+						un(REMOVED_FROM_GAME, i(48420)),	-- Relentless Gladiator's Recurve
+						un(REMOVED_FROM_GAME, i(48422)),	-- Relentless Gladiator's Repeater
+						un(REMOVED_FROM_GAME, i(48402)),	-- Relentless Gladiator's Sunderer
+						un(REMOVED_FROM_GAME, i(48406)),	-- Relentless Gladiator's Claymore)
 					},
 				}),
 				n(34093,  {	-- Blazzek the Biter Season >8< Elite Version [Note: Yes, two npc's with same name. One is removed]
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						un(2, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
-						un(2, i(51403)),	-- Wrathful Gladiator's Acute Staff [Elite Rating]
-						un(2, i(51398)),	-- Wrathful Gladiator's Blade of Celerity [Elite Rating]
-						un(2, i(51393)),	-- Wrathful Gladiator's Claymore [Elite Rating]
-						un(2, i(51401)),	-- Wrathful Gladiator's Combat Staff [Elite Rating]
-						un(2, i(51391)),	-- Wrathful Gladiator's Crusher [Elite Rating]
-						un(2, i(51440)),	-- Wrathful Gladiator's Dicer [Elite Rating]
-						un(2, i(51442)),	-- Wrathful Gladiator's Dirk [Elite Rating]
-						un(2, i(51528)),	-- Wrathful Gladiator's Eviscerator [Elite Rating]
-						un(2, i(51524)),	-- Wrathful Gladiator's Grasp [Elite Rating]
-						un(2, i(51432)),	-- Wrathful Gladiator's Greatstaff [Elite Rating]
-						un(2, i(51481)),	-- Wrathful Gladiator's Halberd [Elite Rating]
-						un(2, i(51516)),	-- Wrathful Gladiator's Handaxe [Elite Rating]
-						un(2, i(51529)),	-- Wrathful Gladiator's Left Claw [Elite Rating]
-						un(2, i(51444)),	-- Wrathful Gladiator's Left Razor [Elite Rating]
-						un(2, i(51457)),	-- Wrathful Gladiator's Light Staff [Elite Rating]
-						un(2, i(51522)),	-- Wrathful Gladiator's Longblade [Elite Rating]
-						un(2, i(51399)),	-- Wrathful Gladiator's Mageblade [Elite Rating]
-						un(2, i(51446)),	-- Wrathful Gladiator's Punisher [Elite Rating]
-						un(2, i(51395)),	-- Wrathful Gladiator's Recurve [Elite Rating]
-						un(2, i(51412)),	-- Wrathful Gladiator's Repeater [Elite Rating]
-						un(2, i(51454)),	-- Wrathful Gladiator's Salvation [Elite Rating]
-						un(2, i(51450)),	-- Wrathful Gladiator's Shotgun [Elite Rating]
-						un(2, i(51405)),	-- Wrathful Gladiator's Skirmish Staff [Elite Rating]
-						un(2, i(51518)),	-- Wrathful Gladiator's Spike [Elite Rating]
-						un(2, i(51526)),	-- Wrathful Gladiator's Splitter [Elite Rating]
-						un(2, i(51389)),	-- Wrathful Gladiator's Sunderer [Elite Rating]
-						un(2, i(51448)),	-- Wrathful Gladiator's Swiftblade [Elite Rating]
-						un(2, i(51520)),	-- Wrathful Gladiator's Truncheon [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51403)),	-- Wrathful Gladiator's Acute Staff [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51398)),	-- Wrathful Gladiator's Blade of Celerity [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51393)),	-- Wrathful Gladiator's Claymore [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51401)),	-- Wrathful Gladiator's Combat Staff [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51391)),	-- Wrathful Gladiator's Crusher [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51440)),	-- Wrathful Gladiator's Dicer [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51442)),	-- Wrathful Gladiator's Dirk [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51528)),	-- Wrathful Gladiator's Eviscerator [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51524)),	-- Wrathful Gladiator's Grasp [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51432)),	-- Wrathful Gladiator's Greatstaff [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51481)),	-- Wrathful Gladiator's Halberd [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51516)),	-- Wrathful Gladiator's Handaxe [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51529)),	-- Wrathful Gladiator's Left Claw [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51444)),	-- Wrathful Gladiator's Left Razor [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51457)),	-- Wrathful Gladiator's Light Staff [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51522)),	-- Wrathful Gladiator's Longblade [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51399)),	-- Wrathful Gladiator's Mageblade [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51446)),	-- Wrathful Gladiator's Punisher [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51395)),	-- Wrathful Gladiator's Recurve [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51412)),	-- Wrathful Gladiator's Repeater [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51454)),	-- Wrathful Gladiator's Salvation [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51450)),	-- Wrathful Gladiator's Shotgun [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51405)),	-- Wrathful Gladiator's Skirmish Staff [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51518)),	-- Wrathful Gladiator's Spike [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51526)),	-- Wrathful Gladiator's Splitter [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51389)),	-- Wrathful Gladiator's Sunderer [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51448)),	-- Wrathful Gladiator's Swiftblade [Elite Rating]
+						un(REMOVED_FROM_GAME, i(51520)),	-- Wrathful Gladiator's Truncheon [Elite Rating]
 					},
 				}),
 				n(40216,  {	-- Blazzek the Biter <Vicious Gladiator>
@@ -245,43 +245,43 @@ _.Zones =
 				--[[ Only sold Honor Items
 					["u"] = 43,
 					["g"] = {
-						un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
-						un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
-						un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion
-						un(2, i(70556)),	-- Vicious Gladiator's Drape o of Mediation
-						un(2, i(70557)),	-- Vicious Gladiator's Drape o of Prowess
+						un(REMOVED_FROM_GAME, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
+						un(REMOVED_FROM_GAME, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
+						un(REMOVED_FROM_GAME, i(70555)),	-- Vicious Gladiator's Drape of Diffusion
+						un(REMOVED_FROM_GAME, i(70556)),	-- Vicious Gladiator's Drape o of Mediation
+						un(REMOVED_FROM_GAME, i(70557)),	-- Vicious Gladiator's Drape o of Prowess
 					},
 			--]]}),
 				n(32362,  {	-- Evee Copperspring <Arena Vendor> >Season 6< Elite
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						un(2, i(45952)),	-- Furious Gladiator's Greatstaff
-						un(2, i(45948)),	-- Furious Gladiator's Sunderer
-						un(2, i(45958)),	-- Furious Gladiator's Spike
-						un(2, i(45962)),	-- Furious Gladiator's Dirk
-						un(2, i(45967)),	-- Furious Gladiator's Eviscerator
-						un(2, i(45970)),	-- Furious Gladiator's Mageblade
-						un(2, i(45957)),	-- Furious Gladiator's Handaxe
-						un(2, i(45961)),	-- Furious Gladiator's Dicer
-						un(2, i(45966)),	-- Furious Gladiator's Splitter)
-						un(2, i(45959)),	-- Furious Gladiator's Truncheon
-						un(2, i(45964)),	-- Furious Gladiator's Punisher
-						un(2, i(45971)),	-- Furious Gladiator's Salvation)
-						un(2, i(45960)),	-- Furious Gladiator's Longblade
-						un(2, i(45965)),	-- Furious Gladiator's Swiftblade
-						un(2, i(45937)),	-- Furious Gladiator's Shotgun
-						un(2, i(45938)),	-- Furious Gladiator's Recurve
-						un(2, i(45939)),	-- Furious Gladiator's Repeater
-						un(2, i(45949)),	-- Furious Gladiator's Crusher
-						un(2, i(45950)),	-- Furious Gladiator's Claymore
-						un(2, i(45951)),	-- Furious Gladiator's Halberd
-						un(2, i(45953)),	-- Furious Gladiator's Combat Staff
-						un(2, i(45954)),	-- Furious Gladiator's Acute Staff
-						un(2, i(45955)),	-- Furious Gladiator's Skirmish Staff
-						un(2, i(45956)),	-- Furious Gladiator's Light Staff
-						un(2, i(45963)),	-- Furious Gladiator's Fleshslicer
-						un(2, i(45968)),	-- Furious Gladiator's Claw
-						un(2, i(45969)),	-- Furious Gladiator's Grasp)
+						un(REMOVED_FROM_GAME, i(45952)),	-- Furious Gladiator's Greatstaff
+						un(REMOVED_FROM_GAME, i(45948)),	-- Furious Gladiator's Sunderer
+						un(REMOVED_FROM_GAME, i(45958)),	-- Furious Gladiator's Spike
+						un(REMOVED_FROM_GAME, i(45962)),	-- Furious Gladiator's Dirk
+						un(REMOVED_FROM_GAME, i(45967)),	-- Furious Gladiator's Eviscerator
+						un(REMOVED_FROM_GAME, i(45970)),	-- Furious Gladiator's Mageblade
+						un(REMOVED_FROM_GAME, i(45957)),	-- Furious Gladiator's Handaxe
+						un(REMOVED_FROM_GAME, i(45961)),	-- Furious Gladiator's Dicer
+						un(REMOVED_FROM_GAME, i(45966)),	-- Furious Gladiator's Splitter)
+						un(REMOVED_FROM_GAME, i(45959)),	-- Furious Gladiator's Truncheon
+						un(REMOVED_FROM_GAME, i(45964)),	-- Furious Gladiator's Punisher
+						un(REMOVED_FROM_GAME, i(45971)),	-- Furious Gladiator's Salvation)
+						un(REMOVED_FROM_GAME, i(45960)),	-- Furious Gladiator's Longblade
+						un(REMOVED_FROM_GAME, i(45965)),	-- Furious Gladiator's Swiftblade
+						un(REMOVED_FROM_GAME, i(45937)),	-- Furious Gladiator's Shotgun
+						un(REMOVED_FROM_GAME, i(45938)),	-- Furious Gladiator's Recurve
+						un(REMOVED_FROM_GAME, i(45939)),	-- Furious Gladiator's Repeater
+						un(REMOVED_FROM_GAME, i(45949)),	-- Furious Gladiator's Crusher
+						un(REMOVED_FROM_GAME, i(45950)),	-- Furious Gladiator's Claymore
+						un(REMOVED_FROM_GAME, i(45951)),	-- Furious Gladiator's Halberd
+						un(REMOVED_FROM_GAME, i(45953)),	-- Furious Gladiator's Combat Staff
+						un(REMOVED_FROM_GAME, i(45954)),	-- Furious Gladiator's Acute Staff
+						un(REMOVED_FROM_GAME, i(45955)),	-- Furious Gladiator's Skirmish Staff
+						un(REMOVED_FROM_GAME, i(45956)),	-- Furious Gladiator's Light Staff
+						un(REMOVED_FROM_GAME, i(45963)),	-- Furious Gladiator's Fleshslicer
+						un(REMOVED_FROM_GAME, i(45968)),	-- Furious Gladiator's Claw
+						un(REMOVED_FROM_GAME, i(45969)),	-- Furious Gladiator's Grasp)
 					},
 				}),
 				n(40572,  {	-- Haughty Modiste <Fashion Designer>
@@ -349,38 +349,38 @@ _.Zones =
 						{"pop"},	-- Discard the Set header and acquire the children.
 					},
 					["g"] = {
-						un(2, i(24551)),	-- Talisman of the Horde
-						un(2, i(25829)),	-- Talisman of the Alliance
-						un(2, i(28234)),	-- medallion of the alliance (rogue)
-						un(2, i(28235)),	-- medallion of the alliance (druid)
-						un(2, i(28236)),	-- medallion of the alliance (pala)
-						un(2, i(28237)),	-- medallion of the alliance (hunter)
-						un(2, i(28238)),	-- medallion of the alliance (mage)
-						un(2, i(30348)),	-- medallion of the alliance (warlock)
-						un(2, i(30349)),	-- medallion of the alliance (priest)
-						un(2, i(30350)),	-- medallion of the alliance (warrior)
-						un(2, i(30351)),	-- medallion of the alliance (shaman)
-						un(2, i(28240)),	-- medallion of the horde (rogue)
-						un(2, i(28241)),	-- medallion of the horde (druid)
-						un(2, i(28242)),	-- medallion of the horde (pala)
-						un(2, i(28243)),	-- medallion of the horde (hunter)
-						un(2, i(28239)),	-- medallion of the horde (mage)
-						un(2, i(30343)),	-- medallion of the horde (warlock)
-						un(2, i(30346)),	-- medallion of the horde (priest)
-						un(2, i(30344)),	-- medallion of the horde (warrior)
-						un(2, i(30345)),	-- medallion of the horde (shaman)
-						un(2, i(37865)),	-- medallion of the horde (epic)
-						un(2, i(38588)),	-- Medallion of the horde (dk)
-						un(2, i(69862)),	-- Medallion of the horde 
-						un(2, i(37864)),	-- medallion of the alliance (epic)
-						un(2, i(38589)),	-- Medallion of the alliance (dk)
-						un(2, i(69861)),	-- Medallion of the alliance 
-						un(2, i(34576)),	-- battlemaster's cruelty
-						un(2, i(34577)),	-- battlemaster's depravity
-						un(2, i(34578)),	-- battlemaster's determination
-						un(2, i(34579)),	-- battlemaster's audacity
-						un(2, i(34580)),	-- battlemaster's persevennerance
-						un(2, i(35327)),	-- battlemaster's alacrity
+						un(REMOVED_FROM_GAME, i(24551)),	-- Talisman of the Horde
+						un(REMOVED_FROM_GAME, i(25829)),	-- Talisman of the Alliance
+						un(REMOVED_FROM_GAME, i(28234)),	-- medallion of the alliance (rogue)
+						un(REMOVED_FROM_GAME, i(28235)),	-- medallion of the alliance (druid)
+						un(REMOVED_FROM_GAME, i(28236)),	-- medallion of the alliance (pala)
+						un(REMOVED_FROM_GAME, i(28237)),	-- medallion of the alliance (hunter)
+						un(REMOVED_FROM_GAME, i(28238)),	-- medallion of the alliance (mage)
+						un(REMOVED_FROM_GAME, i(30348)),	-- medallion of the alliance (warlock)
+						un(REMOVED_FROM_GAME, i(30349)),	-- medallion of the alliance (priest)
+						un(REMOVED_FROM_GAME, i(30350)),	-- medallion of the alliance (warrior)
+						un(REMOVED_FROM_GAME, i(30351)),	-- medallion of the alliance (shaman)
+						un(REMOVED_FROM_GAME, i(28240)),	-- medallion of the horde (rogue)
+						un(REMOVED_FROM_GAME, i(28241)),	-- medallion of the horde (druid)
+						un(REMOVED_FROM_GAME, i(28242)),	-- medallion of the horde (pala)
+						un(REMOVED_FROM_GAME, i(28243)),	-- medallion of the horde (hunter)
+						un(REMOVED_FROM_GAME, i(28239)),	-- medallion of the horde (mage)
+						un(REMOVED_FROM_GAME, i(30343)),	-- medallion of the horde (warlock)
+						un(REMOVED_FROM_GAME, i(30346)),	-- medallion of the horde (priest)
+						un(REMOVED_FROM_GAME, i(30344)),	-- medallion of the horde (warrior)
+						un(REMOVED_FROM_GAME, i(30345)),	-- medallion of the horde (shaman)
+						un(REMOVED_FROM_GAME, i(37865)),	-- medallion of the horde (epic)
+						un(REMOVED_FROM_GAME, i(38588)),	-- Medallion of the horde (dk)
+						un(REMOVED_FROM_GAME, i(69862)),	-- Medallion of the horde 
+						un(REMOVED_FROM_GAME, i(37864)),	-- medallion of the alliance (epic)
+						un(REMOVED_FROM_GAME, i(38589)),	-- Medallion of the alliance (dk)
+						un(REMOVED_FROM_GAME, i(69861)),	-- Medallion of the alliance 
+						un(REMOVED_FROM_GAME, i(34576)),	-- battlemaster's cruelty
+						un(REMOVED_FROM_GAME, i(34577)),	-- battlemaster's depravity
+						un(REMOVED_FROM_GAME, i(34578)),	-- battlemaster's determination
+						un(REMOVED_FROM_GAME, i(34579)),	-- battlemaster's audacity
+						un(REMOVED_FROM_GAME, i(34580)),	-- battlemaster's persevennerance
+						un(REMOVED_FROM_GAME, i(35327)),	-- battlemaster's alacrity
 					},
 				}),
 				n(6568,   {	-- Vizzklick <Tailoring Supplies>

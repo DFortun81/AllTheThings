@@ -28,7 +28,7 @@ _.Zones =
 				q(617,   {	-- Akiris by the Bundle
 					["u"] = 40,
 					["g"] = {
-						un(2, i(4117)),	-- Scorching Sash
+						un(REMOVED_FROM_GAME, i(4117)),	-- Scorching Sash
 					},
 				}),
 				q(26819, {	-- Akiris by the Bundle (A)
@@ -180,7 +180,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4129)),	-- Collection Plate
+						un(REMOVED_FROM_GAME, i(4129)),	-- Collection Plate
 					},
 				}),
 				q(26826, {	-- Dask "The Flask" Gobfizzle
@@ -246,7 +246,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4109)),	-- Excelsior Boots
+						un(REMOVED_FROM_GAME, i(4109)),	-- Excelsior Boots
 					},
 				}),
 				q(618,   {	-- Facing Negolash
@@ -306,7 +306,7 @@ _.Zones =
 				q(213,   {	-- Hostile Takeover
 					["u"] = 40,
 					["g"] = {
-						un(2, i(4121)),	-- Gemmed Gloves
+						un(REMOVED_FROM_GAME, i(4121)),	-- Gemmed Gloves
 					},
 				}),
 				q(26435, {	-- I'm A Huge Liar and a Fraud -- TODO:: part of loremaster?
@@ -419,7 +419,7 @@ _.Zones =
 				q(630,   {	-- Message in a Bottle
 					["u"] = 40,
 					["g"] = {
-						un(2, i(4118)),	-- Poobah's Nose Ring
+						un(REMOVED_FROM_GAME, i(4118)),	-- Poobah's Nose Ring
 					},
 				}),
 				q(26603, {	-- Message in a Bottle -- aa
@@ -452,7 +452,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(4112)),	-- Choker of the High Shaman
+						un(REMOVED_FROM_GAME, i(4112)),	-- Choker of the High Shaman
 					},
 				}),
 				q(26606, {	-- Mukla's Demise
@@ -588,7 +588,7 @@ _.Zones =
 				q(348,   {	-- Stranglethorn Fever
 					["u"] = 40,
 					["g"] = {
-						un(2, i(4113)),	-- Medicine Blanket
+						un(REMOVED_FROM_GAME, i(4113)),	-- Medicine Blanket
 					},
 				}),
 				q(26597, {	-- Stranglethorn Fever -- aa
@@ -639,7 +639,7 @@ _.Zones =
 				q(608,   {	-- The Bloodsail Buccaneers
 					["u"] = 40,
 					["g"] = {
-						un(2,  i(4138)),	-- Blackwater Tunic
+						un(REMOVED_FROM_GAME,  i(4138)),	-- Blackwater Tunic
 					},
 				}),
 				q(26609, {	-- The Bloodsail Buccaneers
@@ -705,7 +705,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4120)),	-- Robe of Crystal Waters
+						un(REMOVED_FROM_GAME, i(4120)),	-- Robe of Crystal Waters
 					},
 				}),
 				q(26700, {	-- The Damsel's (Bad) Luck
@@ -821,8 +821,8 @@ _.Zones =
 				q(600,   {	-- Venture Company Mining
 					["u"] = 40,
 					["g"] = {
-						un(2, i(5253)),	-- Goblin Igniter
-						un(2, i(4128)),	-- Silver Spade
+						un(REMOVED_FROM_GAME, i(5253)),	-- Goblin Igniter
+						un(REMOVED_FROM_GAME, i(4128)),	-- Silver Spade
 					},
 				}),
 				q(29150, {	-- Voodoo Zombies (A)
@@ -851,7 +851,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4131)),	-- Belt of Corruption
+						un(REMOVED_FROM_GAME, i(4131)),	-- Belt of Corruption
 					},
 				}),
 				q(26815, {	-- Zanzil's Secret (A)

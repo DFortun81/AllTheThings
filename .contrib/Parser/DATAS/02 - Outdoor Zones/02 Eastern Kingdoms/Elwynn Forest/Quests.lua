@@ -65,10 +65,10 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6979)),	-- Haggard's Axe
-						un(2, i(6980)),	-- Haggard's Dagger
-						un(2, i(6983)),	-- Haggard's Hammer
-						un(2, i(6985)),	-- Haggard's Sword
+						un(REMOVED_FROM_GAME, i(6979)),	-- Haggard's Axe
+						un(REMOVED_FROM_GAME, i(6980)),	-- Haggard's Dagger
+						un(REMOVED_FROM_GAME, i(6983)),	-- Haggard's Hammer
+						un(REMOVED_FROM_GAME, i(6985)),	-- Haggard's Sword
 					},
 				}),
 				q(112,   {	-- Collecting Kelp
@@ -130,7 +130,7 @@ _.Zones =
 					["races"] = { HUMAN },
 					["classes"] = { PRIEST },
 					["g"] = {
-						un(2, i(16605)),	-- Friar's Robes of the Light
+						un(REMOVED_FROM_GAME, i(16605)),	-- Friar's Robes of the Light
 					},
 				}),
 				q(16,    {	-- Give Gerard a Drink
@@ -258,7 +258,7 @@ _.Zones =
 						i(2238),	-- Urchin's Pants
 						i(57526),	-- Gnollbreaker's Boots
 						i(131192),	-- Riverpaw Gnoll Boots
-						un(2, i(2249)),	-- Militia Buckler
+						un(REMOVED_FROM_GAME, i(2249)),	-- Militia Buckler
 					},
 				}),
 				q(111,   {	-- Speak with Gramma
@@ -324,7 +324,7 @@ _.Zones =
 						i(6084),	-- Stormwind Guard Leggings
 						i(60219),	-- Balanced Spell Staff
 						i(131199),	-- Lion Guard Chainmail
-						un(2, i(6215)),	-- Balanced Fighting Stick
+						un(REMOVED_FROM_GAME, i(6215)),	-- Balanced Fighting Stick
 					},
 				}),
 				q(239,   {	-- Westbrook Garrison Needs Help!

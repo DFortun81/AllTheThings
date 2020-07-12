@@ -43,7 +43,7 @@ _.GroupFinder =
 			},
 		}),
 		i(114634, {	-- Icy Satchel of Helpful Goods 70-74
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "|cff66ccffRewarded for completing a random Wrath of the Lich King dungeon in the level 70-74 range.|r",
 			["g"] = {
 				i(112367),	-- Snow-Coated Cloth Belt
@@ -71,7 +71,7 @@ _.GroupFinder =
 			},
 		}),
 		i(114641, {	-- Icy Satchel of Helpful Goods 75-80
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "|cff66ccffRewarded for completing a random Wrath of the Lich King dungeon in the level 75-80 range.|r",
 			["g"] = {
 				i(113685),	-- Coldblood Longcloak

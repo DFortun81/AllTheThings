@@ -22,7 +22,7 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(24138)),	-- Silver Crossbow
+						un(REMOVED_FROM_GAME, i(24138)),	-- Silver Crossbow
 					},
 				}),
 				q(9625, {	-- Elekks Are Serious Business

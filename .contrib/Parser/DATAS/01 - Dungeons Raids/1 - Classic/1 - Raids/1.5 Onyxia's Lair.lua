@@ -19,7 +19,7 @@ _.Instances = { tier(1, {	-- Classic
 						["crs"] = { 10184 },	-- Onyxia
 						["u"] = 43,
 						["g"] = {
-							un(2, ach(684)),	-- Onyxia's Lair (Level 60)
+							un(REMOVED_FROM_GAME, ach(684)),	-- Onyxia's Lair (Level 60)
 							i(18423, {	-- Head of Onyxia (A)
 								["questID"] = 7495,	-- Victory for the Alliance
 								["races"] = ALLIANCE_ONLY,
@@ -37,9 +37,9 @@ _.Instances = { tier(1, {	-- Classic
 										["lvl"] = 60,
 										["u"] = 40,
 										["g"] = {
-											un(2, i(18403)),	-- Dragonslayer's Signet
-											un(2, i(18406)),	-- Onyxia Blood Talisman
-											un(2, i(18404)),	-- Onyxia Tooth Pendant
+											un(REMOVED_FROM_GAME, i(18403)),	-- Dragonslayer's Signet
+											un(REMOVED_FROM_GAME, i(18406)),	-- Onyxia Blood Talisman
+											un(REMOVED_FROM_GAME, i(18404)),	-- Onyxia Tooth Pendant
 										},
 									}),
 									q(7497, {	-- The Journey Has Just Begun
@@ -70,10 +70,10 @@ _.Instances = { tier(1, {	-- Classic
 										["lvl"] = 60,
 										["u"] = 40,
 										["g"] = {
-											un(2, i(18403)),	-- Dragonslayer's Signet
-											un(2, i(18404)),	-- Onyxia Tooth Pendant
-											un(2, i(18406)),	-- Onyxia Blood Talisman
-											un(2, i(49313)),	-- Polished Dragonslayer's Signet
+											un(REMOVED_FROM_GAME, i(18403)),	-- Dragonslayer's Signet
+											un(REMOVED_FROM_GAME, i(18404)),	-- Onyxia Tooth Pendant
+											un(REMOVED_FROM_GAME, i(18406)),	-- Onyxia Blood Talisman
+											un(REMOVED_FROM_GAME, i(49313)),	-- Polished Dragonslayer's Signet
 										},
 									}),
 									q(7493, {	-- The Journey Has Just Begun (H)
@@ -96,16 +96,16 @@ _.Instances = { tier(1, {	-- Classic
 								["lvl"] = 60,
 								["u"] = 40,
 								["g"] = {
-									un(2, i(18715)),	-- Lok'delar, Stave of the Ancient Keepers
-									un(2, i(18707, {	-- Ancient Rune Etched Stave
-										un(2, i(18713)),	-- Rhok'delar, Longbow of the Ancient Keepers
+									un(REMOVED_FROM_GAME, i(18715)),	-- Lok'delar, Stave of the Ancient Keepers
+									un(REMOVED_FROM_GAME, i(18707, {	-- Ancient Rune Etched Stave
+										un(REMOVED_FROM_GAME, i(18713)),	-- Rhok'delar, Longbow of the Ancient Keepers
 									})),
 								},
 							}),
-							un(2, i(17966)),	-- Onyxia Hide Backpack (Bag)
-							un(2, i(17068)),	-- Deathbringer
-							un(2, i(17075)),	-- Vis'kag the Bloodletter
-							un(2, i(17067)),	-- Ancient Cornerstone Grimoire
+							un(REMOVED_FROM_GAME, i(17966)),	-- Onyxia Hide Backpack (Bag)
+							un(REMOVED_FROM_GAME, i(17068)),	-- Deathbringer
+							un(REMOVED_FROM_GAME, i(17075)),	-- Vis'kag the Bloodletter
+							un(REMOVED_FROM_GAME, i(17067)),	-- Ancient Cornerstone Grimoire
 							i(16908),	-- Bloodfang Hood
 							i(16939),	-- Dragonstalker's Helm
 							i(16921),	-- Halo of Transcendence
@@ -115,10 +115,10 @@ _.Instances = { tier(1, {	-- Classic
 							i(16929),	-- Nemesis Skullcap
 							i(16914),	-- Netherwind Crown
 							i(16900),	-- Stormrage Cover
-							un(2, i(18205)),	-- Eskhandar's Collar
-							un(2, i(17078)),	-- Sapphiron Drape
-							un(2, i(18813)),	-- Ring of Binding
-							un(2, i(17064)),	-- Shard of the Scale
+							un(REMOVED_FROM_GAME, i(18205)),	-- Eskhandar's Collar
+							un(REMOVED_FROM_GAME, i(17078)),	-- Sapphiron Drape
+							un(REMOVED_FROM_GAME, i(18813)),	-- Ring of Binding
+							un(REMOVED_FROM_GAME, i(17064)),	-- Shard of the Scale
 						},
 					}),
 				},

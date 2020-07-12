@@ -72,7 +72,7 @@ _.Zones =
 					["g"] = {
 						i(20970, {	-- Design: Pendant of the Agate Shield (Removed in Cata and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,	-- BoP / BoA Items
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),

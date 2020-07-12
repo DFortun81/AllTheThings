@@ -321,7 +321,7 @@ _.Zones =
 						69664,	-- Mumta
 						69997,	-- Progenitus
 					},
-					["u"] = 2,	-- Removed in Patch 5.3
+					["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 5.3
 				}),
 			}),
 		}),

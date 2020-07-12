@@ -9,7 +9,7 @@ _.Zones =
 				n(7996, {	-- Qiaga the Keeper
 					["u"] = 43,
 					["g"] = {
-						un(2, i(9241, {  -- Sacred Mallet
+						un(REMOVED_FROM_GAME, i(9241, {  -- Sacred Mallet
 							i(9240),	-- Mallet of Zul'Farrak
 						})),
 					},

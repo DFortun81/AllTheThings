@@ -12,15 +12,15 @@ _.Zones =
 					["crs"] = { 6201 },	-- Legashi Rogue
 				}),
 				i(15763, {	-- Pattern: Blue Dragonscale Shoulders
-					["u"] = 7,	-- removed from game
+					["u"] = 7,
 					["crs"] = { 6146 },	-- Cliff Breaker
 				}),
 				i(15753, {	-- Pattern: Stormshroud Armor
-					["u"] = 7,	-- removed from game
+					["u"] = 7,
 					["crs"] = { 6138 },	-- Arkkoran Oracle
 				}),
 				i(15764, {	-- Pattern: Stormshroud Shoulders
-					["u"] = 7,	-- removed from game
+					["u"] = 7,
 					["crs"] = { 6144 },	-- Son of Arkkoroc
 				}),
 				i(15728, {	-- Pattern: Wicked Leather Bracers

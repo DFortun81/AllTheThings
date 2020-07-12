@@ -824,8 +824,8 @@ _.WorldEvents =
 					i(73764, {	-- Darkmoon Monkey  (PET!)
 						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
 					}),
-					un(2, i(19303)),	-- Darkmoon Necklace
-					un(2, i(19302)),	-- Darkmoon Ring
+					un(REMOVED_FROM_GAME, i(19303)),	-- Darkmoon Necklace
+					un(REMOVED_FROM_GAME, i(19302)),	-- Darkmoon Ring
 					i(73903, {	-- Darkmoon Tonk  (PET!)
 						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
 					}),

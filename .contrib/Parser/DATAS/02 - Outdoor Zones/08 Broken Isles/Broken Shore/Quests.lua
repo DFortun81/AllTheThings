@@ -335,7 +335,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(47067, {	-- Seeking Lost Knowledge
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.2, 646 },
 					["lvl"] = 110,

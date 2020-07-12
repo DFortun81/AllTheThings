@@ -551,155 +551,155 @@ _.Zones =
 								i(118410, {	-- Tesseract Timepiece
 									["cost"] = 10000000,	-- 1,000g
 								}),
-								un(2, i(119032, {	-- Rusted Challenger's Strongbox
+								un(REMOVED_FROM_GAME, i(119032, {	-- Rusted Challenger's Strongbox
 									["description"] = "This box was from the WoD Challenge Mode Dailies.",
 									["g"] = {
-										un(2, i(118996)),	-- Blackfire Amulet
-										un(2, i(118997)),	-- Blackfire Cape
-										un(2, i(118998)),	-- Blackfire Crystal
-										un(2, i(118999)),	-- Blackfire Ring
-										un(2, i(118988)),	-- Blackfire Scepter
-										un(2, i(118984)),	-- Blackfire Spellblade
-										un(2, i(118995)),	-- Blackfire Wand
-										un(2, i(119012)),	-- Blazemender Cabochon
-										un(2, i(119016)),	-- Blazemender Cloak
-										un(2, i(119006)),	-- Blazemender Loop
-										un(2, i(118946)),	-- Bouldercrush Breastplate
-										un(2, i(118947)),	-- Bouldercrush Gauntlets
-										un(2, i(118948)),	-- Bouldercrush Girdle
-										un(2, i(118949)),	-- Bouldercrush Helm
-										un(2, i(118950)),	-- Bouldercrush Legplates
-										un(2, i(118951)),	-- Bouldercrush Pauldrons
-										un(2, i(118952)),	-- Bouldercrush Sabatons
-										un(2, i(118953)),	-- Bouldercrush Shield
-										un(2, i(118954)),	-- Bouldercrush Vambraces
-										un(2, i(119007)),	-- Dark Night Band
-										un(2, i(119009)),	-- Dark Night Choker
-										un(2, i(119013)),	-- Dark Night Cloak
-										un(2, i(119010)),	-- Doomchain Collar
-										un(2, i(119014)),	-- Doomchain Drape
-										un(2, i(119008)),	-- Doomchain Signet
-										un(2, i(118979)),	-- Expeditious Axe
-										un(2, i(119017)),	-- Expeditious Axe
-										un(2, i(118981)),	-- Expeditious Bow
-										un(2, i(118980)),	-- Expeditious Broadaxe
-										un(2, i(118982)),	-- Expeditious Crossbow
-										un(2, i(118983)),	-- Expeditious Dagger
-										un(2, i(118994)),	-- Expeditious Greatsword
-										un(2, i(118986)),	-- Expeditious Gun
-										un(2, i(118989)),	-- Expeditious Hammer
-										un(2, i(119018)),	-- Expeditious Knuckles
-										un(2, i(118985)),	-- Expeditious Knuckles
-										un(2, i(118987)),	-- Expeditious Mace
-										un(2, i(119019)),	-- Expeditious Mace
-										un(2, i(118990)),	-- Expeditious Spear
-										un(2, i(118992)),	-- Expeditious Staff
-										un(2, i(118991)),	-- Expeditious Staff
-										un(2, i(118993)),	-- Expeditious Sword
-										un(2, i(119020)),	-- Expeditious Sword
-										un(2, i(118963)),	-- Ironburner Cord
-										un(2, i(118964)),	-- Ironburner Cowl
-										un(2, i(118965)),	-- Ironburner Handwraps
-										un(2, i(118966)),	-- Ironburner Leggings
-										un(2, i(118967)),	-- Ironburner Robe
-										un(2, i(118968)),	-- Ironburner Sandals
-										un(2, i(118969)),	-- Ironburner Spaulders
-										un(2, i(118970)),	-- Ironburner Wristwraps
-										un(2, i(118971)),	-- Longshot Belt
-										un(2, i(118972)),	-- Longshot Bracers
-										un(2, i(118973)),	-- Longshot Gauntlets
-										un(2, i(118974)),	-- Longshot Greaves
-										un(2, i(118975)),	-- Longshot Helm
-										un(2, i(118976)),	-- Longshot Legguards
-										un(2, i(118977)),	-- Longshot Shoulderguards
-										un(2, i(118978)),	-- Longshot Vest
-										un(2, i(119011)),	-- Mordant Gorget
-										un(2, i(119015)),	-- Mordant Greatcloak
-										un(2, i(119005)),	-- Mordant Signet
-										un(2, i(118955)),	-- Railwalker Bindings
-										un(2, i(118956)),	-- Railwalker Boots
-										un(2, i(118957)),	-- Railwalker Britches
-										un(2, i(118958)),	-- Railwalker Gloves
-										un(2, i(118959)),	-- Railwalker Hood
-										un(2, i(118960)),	-- Railwalker Jerkin
-										un(2, i(118961)),	-- Railwalker Shoulders
-										un(2, i(118962)),	-- Railwalker Waistband
-										un(2, i(119021)),	-- Stonebinder Shield
+										un(REMOVED_FROM_GAME, i(118996)),	-- Blackfire Amulet
+										un(REMOVED_FROM_GAME, i(118997)),	-- Blackfire Cape
+										un(REMOVED_FROM_GAME, i(118998)),	-- Blackfire Crystal
+										un(REMOVED_FROM_GAME, i(118999)),	-- Blackfire Ring
+										un(REMOVED_FROM_GAME, i(118988)),	-- Blackfire Scepter
+										un(REMOVED_FROM_GAME, i(118984)),	-- Blackfire Spellblade
+										un(REMOVED_FROM_GAME, i(118995)),	-- Blackfire Wand
+										un(REMOVED_FROM_GAME, i(119012)),	-- Blazemender Cabochon
+										un(REMOVED_FROM_GAME, i(119016)),	-- Blazemender Cloak
+										un(REMOVED_FROM_GAME, i(119006)),	-- Blazemender Loop
+										un(REMOVED_FROM_GAME, i(118946)),	-- Bouldercrush Breastplate
+										un(REMOVED_FROM_GAME, i(118947)),	-- Bouldercrush Gauntlets
+										un(REMOVED_FROM_GAME, i(118948)),	-- Bouldercrush Girdle
+										un(REMOVED_FROM_GAME, i(118949)),	-- Bouldercrush Helm
+										un(REMOVED_FROM_GAME, i(118950)),	-- Bouldercrush Legplates
+										un(REMOVED_FROM_GAME, i(118951)),	-- Bouldercrush Pauldrons
+										un(REMOVED_FROM_GAME, i(118952)),	-- Bouldercrush Sabatons
+										un(REMOVED_FROM_GAME, i(118953)),	-- Bouldercrush Shield
+										un(REMOVED_FROM_GAME, i(118954)),	-- Bouldercrush Vambraces
+										un(REMOVED_FROM_GAME, i(119007)),	-- Dark Night Band
+										un(REMOVED_FROM_GAME, i(119009)),	-- Dark Night Choker
+										un(REMOVED_FROM_GAME, i(119013)),	-- Dark Night Cloak
+										un(REMOVED_FROM_GAME, i(119010)),	-- Doomchain Collar
+										un(REMOVED_FROM_GAME, i(119014)),	-- Doomchain Drape
+										un(REMOVED_FROM_GAME, i(119008)),	-- Doomchain Signet
+										un(REMOVED_FROM_GAME, i(118979)),	-- Expeditious Axe
+										un(REMOVED_FROM_GAME, i(119017)),	-- Expeditious Axe
+										un(REMOVED_FROM_GAME, i(118981)),	-- Expeditious Bow
+										un(REMOVED_FROM_GAME, i(118980)),	-- Expeditious Broadaxe
+										un(REMOVED_FROM_GAME, i(118982)),	-- Expeditious Crossbow
+										un(REMOVED_FROM_GAME, i(118983)),	-- Expeditious Dagger
+										un(REMOVED_FROM_GAME, i(118994)),	-- Expeditious Greatsword
+										un(REMOVED_FROM_GAME, i(118986)),	-- Expeditious Gun
+										un(REMOVED_FROM_GAME, i(118989)),	-- Expeditious Hammer
+										un(REMOVED_FROM_GAME, i(119018)),	-- Expeditious Knuckles
+										un(REMOVED_FROM_GAME, i(118985)),	-- Expeditious Knuckles
+										un(REMOVED_FROM_GAME, i(118987)),	-- Expeditious Mace
+										un(REMOVED_FROM_GAME, i(119019)),	-- Expeditious Mace
+										un(REMOVED_FROM_GAME, i(118990)),	-- Expeditious Spear
+										un(REMOVED_FROM_GAME, i(118992)),	-- Expeditious Staff
+										un(REMOVED_FROM_GAME, i(118991)),	-- Expeditious Staff
+										un(REMOVED_FROM_GAME, i(118993)),	-- Expeditious Sword
+										un(REMOVED_FROM_GAME, i(119020)),	-- Expeditious Sword
+										un(REMOVED_FROM_GAME, i(118963)),	-- Ironburner Cord
+										un(REMOVED_FROM_GAME, i(118964)),	-- Ironburner Cowl
+										un(REMOVED_FROM_GAME, i(118965)),	-- Ironburner Handwraps
+										un(REMOVED_FROM_GAME, i(118966)),	-- Ironburner Leggings
+										un(REMOVED_FROM_GAME, i(118967)),	-- Ironburner Robe
+										un(REMOVED_FROM_GAME, i(118968)),	-- Ironburner Sandals
+										un(REMOVED_FROM_GAME, i(118969)),	-- Ironburner Spaulders
+										un(REMOVED_FROM_GAME, i(118970)),	-- Ironburner Wristwraps
+										un(REMOVED_FROM_GAME, i(118971)),	-- Longshot Belt
+										un(REMOVED_FROM_GAME, i(118972)),	-- Longshot Bracers
+										un(REMOVED_FROM_GAME, i(118973)),	-- Longshot Gauntlets
+										un(REMOVED_FROM_GAME, i(118974)),	-- Longshot Greaves
+										un(REMOVED_FROM_GAME, i(118975)),	-- Longshot Helm
+										un(REMOVED_FROM_GAME, i(118976)),	-- Longshot Legguards
+										un(REMOVED_FROM_GAME, i(118977)),	-- Longshot Shoulderguards
+										un(REMOVED_FROM_GAME, i(118978)),	-- Longshot Vest
+										un(REMOVED_FROM_GAME, i(119011)),	-- Mordant Gorget
+										un(REMOVED_FROM_GAME, i(119015)),	-- Mordant Greatcloak
+										un(REMOVED_FROM_GAME, i(119005)),	-- Mordant Signet
+										un(REMOVED_FROM_GAME, i(118955)),	-- Railwalker Bindings
+										un(REMOVED_FROM_GAME, i(118956)),	-- Railwalker Boots
+										un(REMOVED_FROM_GAME, i(118957)),	-- Railwalker Britches
+										un(REMOVED_FROM_GAME, i(118958)),	-- Railwalker Gloves
+										un(REMOVED_FROM_GAME, i(118959)),	-- Railwalker Hood
+										un(REMOVED_FROM_GAME, i(118960)),	-- Railwalker Jerkin
+										un(REMOVED_FROM_GAME, i(118961)),	-- Railwalker Shoulders
+										un(REMOVED_FROM_GAME, i(118962)),	-- Railwalker Waistband
+										un(REMOVED_FROM_GAME, i(119021)),	-- Stonebinder Shield
 									},
 								})),
-								un(2, i(127831, {	-- Challenger's Strongbox
+								un(REMOVED_FROM_GAME, i(127831, {	-- Challenger's Strongbox
 									["description"] = "This box was from the WoD Challenge Mode Dailies.",
 									["g"] = {
-										un(2, i(118997)),	-- Blackfire Cape
-										un(2, i(118998)),	-- Blackfire Crystal
-										un(2, i(118999)),	-- Blackfire Ring
-										un(2, i(118988)),	-- Blackfire Scepter
-										un(2, i(118984)),	-- Blackfire Spellblade
-										un(2, i(118995)),	-- Blackfire Wand
-										un(2, i(119012)),	-- Blazemender Cabochon
-										un(2, i(119016)),	-- Blazemender Cloak
-										un(2, i(119006)),	-- Blazemender Loop
-										un(2, i(118946)),	-- Bouldercrush Breastplate
-										un(2, i(118947)),	-- Bouldercrush Gauntlets
-										un(2, i(118948)),	-- Bouldercrush Girdle
-										un(2, i(118949)),	-- Bouldercrush Helm
-										un(2, i(118950)),	-- Bouldercrush Legplates
-										un(2, i(118951)),	-- Bouldercrush Pauldrons
-										un(2, i(118952)),	-- Bouldercrush Sabatons
-										un(2, i(118953)),	-- Bouldercrush Shield
-										un(2, i(118954)),	-- Bouldercrush Vambraces
-										un(2, i(119007)),	-- Dark Night Band
-										un(2, i(119009)),	-- Dark Night Choker
-										un(2, i(119013)),	-- Dark Night Cloak
-										un(2, i(119010)),	-- Doomchain Collar
-										un(2, i(119014)),	-- Doomchain Drape
-										un(2, i(119008)),	-- Doomchain Signet
-										un(2, i(118979)),	-- Expeditious Axe
-										un(2, i(119017)),	-- Expeditious Axe
-										un(2, i(118981)),	-- Expeditious Bow
-										un(2, i(118980)),	-- Expeditious Broadaxe
-										un(2, i(118982)),	-- Expeditious Crossbow
-										un(2, i(118983)),	-- Expeditious Dagger
-										un(2, i(118994)),	-- Expeditious Greatsword
-										un(2, i(118986)),	-- Expeditious Gun
-										un(2, i(118989)),	-- Expeditious Hammer
-										un(2, i(119018)),	-- Expeditious Knuckles
-										un(2, i(118985)),	-- Expeditious Knuckles
-										un(2, i(118987)),	-- Expeditious Mace
-										un(2, i(119019)),	-- Expeditious Mace
-										un(2, i(118990)),	-- Expeditious Spear
-										un(2, i(118992)),	-- Expeditious Staff
-										un(2, i(118991)),	-- Expeditious Staff
-										un(2, i(118993)),	-- Expeditious Sword
-										un(2, i(119020)),	-- Expeditious Sword
-										un(2, i(118963)),	-- Ironburner Cord
-										un(2, i(118964)),	-- Ironburner Cowl
-										un(2, i(118965)),	-- Ironburner Handwraps
-										un(2, i(118966)),	-- Ironburner Leggings
-										un(2, i(118967)),	-- Ironburner Robe
-										un(2, i(118968)),	-- Ironburner Sandals
-										un(2, i(118969)),	-- Ironburner Spaulders
-										un(2, i(118970)),	-- Ironburner Wristwraps
-										un(2, i(118971)),	-- Longshot Belt
-										un(2, i(118972)),	-- Longshot Bracers
-										un(2, i(118973)),	-- Longshot Gauntlets
-										un(2, i(118974)),	-- Longshot Greaves
-										un(2, i(118975)),	-- Longshot Helm
-										un(2, i(118976)),	-- Longshot Legguards
-										un(2, i(118977)),	-- Longshot Shoulderguards
-										un(2, i(118978)),	-- Longshot Vest
-										un(2, i(119011)),	-- Mordant Gorget
-										un(2, i(119015)),	-- Mordant Greatcloak
-										un(2, i(119005)),	-- Mordant Signet
-										un(2, i(118955)),	-- Railwalker Bindings
-										un(2, i(118956)),	-- Railwalker Boots
-										un(2, i(118957)),	-- Railwalker Britches
-										un(2, i(118958)),	-- Railwalker Gloves
-										un(2, i(118959)),	-- Railwalker Hood
-										un(2, i(118960)),	-- Railwalker Jerkin
-										un(2, i(118961)),	-- Railwalker Shoulders
-										un(2, i(118962)),	-- Railwalker Waistband
-										un(2, i(119021)),	-- Stonebinder Shield
+										un(REMOVED_FROM_GAME, i(118997)),	-- Blackfire Cape
+										un(REMOVED_FROM_GAME, i(118998)),	-- Blackfire Crystal
+										un(REMOVED_FROM_GAME, i(118999)),	-- Blackfire Ring
+										un(REMOVED_FROM_GAME, i(118988)),	-- Blackfire Scepter
+										un(REMOVED_FROM_GAME, i(118984)),	-- Blackfire Spellblade
+										un(REMOVED_FROM_GAME, i(118995)),	-- Blackfire Wand
+										un(REMOVED_FROM_GAME, i(119012)),	-- Blazemender Cabochon
+										un(REMOVED_FROM_GAME, i(119016)),	-- Blazemender Cloak
+										un(REMOVED_FROM_GAME, i(119006)),	-- Blazemender Loop
+										un(REMOVED_FROM_GAME, i(118946)),	-- Bouldercrush Breastplate
+										un(REMOVED_FROM_GAME, i(118947)),	-- Bouldercrush Gauntlets
+										un(REMOVED_FROM_GAME, i(118948)),	-- Bouldercrush Girdle
+										un(REMOVED_FROM_GAME, i(118949)),	-- Bouldercrush Helm
+										un(REMOVED_FROM_GAME, i(118950)),	-- Bouldercrush Legplates
+										un(REMOVED_FROM_GAME, i(118951)),	-- Bouldercrush Pauldrons
+										un(REMOVED_FROM_GAME, i(118952)),	-- Bouldercrush Sabatons
+										un(REMOVED_FROM_GAME, i(118953)),	-- Bouldercrush Shield
+										un(REMOVED_FROM_GAME, i(118954)),	-- Bouldercrush Vambraces
+										un(REMOVED_FROM_GAME, i(119007)),	-- Dark Night Band
+										un(REMOVED_FROM_GAME, i(119009)),	-- Dark Night Choker
+										un(REMOVED_FROM_GAME, i(119013)),	-- Dark Night Cloak
+										un(REMOVED_FROM_GAME, i(119010)),	-- Doomchain Collar
+										un(REMOVED_FROM_GAME, i(119014)),	-- Doomchain Drape
+										un(REMOVED_FROM_GAME, i(119008)),	-- Doomchain Signet
+										un(REMOVED_FROM_GAME, i(118979)),	-- Expeditious Axe
+										un(REMOVED_FROM_GAME, i(119017)),	-- Expeditious Axe
+										un(REMOVED_FROM_GAME, i(118981)),	-- Expeditious Bow
+										un(REMOVED_FROM_GAME, i(118980)),	-- Expeditious Broadaxe
+										un(REMOVED_FROM_GAME, i(118982)),	-- Expeditious Crossbow
+										un(REMOVED_FROM_GAME, i(118983)),	-- Expeditious Dagger
+										un(REMOVED_FROM_GAME, i(118994)),	-- Expeditious Greatsword
+										un(REMOVED_FROM_GAME, i(118986)),	-- Expeditious Gun
+										un(REMOVED_FROM_GAME, i(118989)),	-- Expeditious Hammer
+										un(REMOVED_FROM_GAME, i(119018)),	-- Expeditious Knuckles
+										un(REMOVED_FROM_GAME, i(118985)),	-- Expeditious Knuckles
+										un(REMOVED_FROM_GAME, i(118987)),	-- Expeditious Mace
+										un(REMOVED_FROM_GAME, i(119019)),	-- Expeditious Mace
+										un(REMOVED_FROM_GAME, i(118990)),	-- Expeditious Spear
+										un(REMOVED_FROM_GAME, i(118992)),	-- Expeditious Staff
+										un(REMOVED_FROM_GAME, i(118991)),	-- Expeditious Staff
+										un(REMOVED_FROM_GAME, i(118993)),	-- Expeditious Sword
+										un(REMOVED_FROM_GAME, i(119020)),	-- Expeditious Sword
+										un(REMOVED_FROM_GAME, i(118963)),	-- Ironburner Cord
+										un(REMOVED_FROM_GAME, i(118964)),	-- Ironburner Cowl
+										un(REMOVED_FROM_GAME, i(118965)),	-- Ironburner Handwraps
+										un(REMOVED_FROM_GAME, i(118966)),	-- Ironburner Leggings
+										un(REMOVED_FROM_GAME, i(118967)),	-- Ironburner Robe
+										un(REMOVED_FROM_GAME, i(118968)),	-- Ironburner Sandals
+										un(REMOVED_FROM_GAME, i(118969)),	-- Ironburner Spaulders
+										un(REMOVED_FROM_GAME, i(118970)),	-- Ironburner Wristwraps
+										un(REMOVED_FROM_GAME, i(118971)),	-- Longshot Belt
+										un(REMOVED_FROM_GAME, i(118972)),	-- Longshot Bracers
+										un(REMOVED_FROM_GAME, i(118973)),	-- Longshot Gauntlets
+										un(REMOVED_FROM_GAME, i(118974)),	-- Longshot Greaves
+										un(REMOVED_FROM_GAME, i(118975)),	-- Longshot Helm
+										un(REMOVED_FROM_GAME, i(118976)),	-- Longshot Legguards
+										un(REMOVED_FROM_GAME, i(118977)),	-- Longshot Shoulderguards
+										un(REMOVED_FROM_GAME, i(118978)),	-- Longshot Vest
+										un(REMOVED_FROM_GAME, i(119011)),	-- Mordant Gorget
+										un(REMOVED_FROM_GAME, i(119015)),	-- Mordant Greatcloak
+										un(REMOVED_FROM_GAME, i(119005)),	-- Mordant Signet
+										un(REMOVED_FROM_GAME, i(118955)),	-- Railwalker Bindings
+										un(REMOVED_FROM_GAME, i(118956)),	-- Railwalker Boots
+										un(REMOVED_FROM_GAME, i(118957)),	-- Railwalker Britches
+										un(REMOVED_FROM_GAME, i(118958)),	-- Railwalker Gloves
+										un(REMOVED_FROM_GAME, i(118959)),	-- Railwalker Hood
+										un(REMOVED_FROM_GAME, i(118960)),	-- Railwalker Jerkin
+										un(REMOVED_FROM_GAME, i(118961)),	-- Railwalker Shoulders
+										un(REMOVED_FROM_GAME, i(118962)),	-- Railwalker Waistband
+										un(REMOVED_FROM_GAME, i(119021)),	-- Stonebinder Shield
 									},
 								})),
 							},
@@ -1396,14 +1396,14 @@ _.Zones =
 								i(115768),	-- Primal Gladiator's Plate Helm
 								i(115769),	-- Primal Gladiator's Plate Legguards
 								i(115770),	-- Primal Gladiator's Plate Shoulders
-								un(2, i(115772)),	-- Primal Gladiator's Signet of Ruthlessness
-								un(2, i(115771)),	-- Primal Gladiator's Ring of Triumph
-								un(2, i(115747)),	-- Primal Gladiator's Signet of Accuracy
-								un(2, i(115746)),	-- Primal Gladiator's Signet of Cruelty
-								un(2, i(115665)),	-- Primal Gladiator's Band of Contemplation
-								un(2, i(115664)),	-- Primal Gladiator's Band of Meditation
-								un(2, i(115663)),	-- Primal Gladiator's Band of Victory
-								un(2, i(115662)),	-- Primal Gladiator's Band of Prowess
+								un(REMOVED_FROM_GAME, i(115772)),	-- Primal Gladiator's Signet of Ruthlessness
+								un(REMOVED_FROM_GAME, i(115771)),	-- Primal Gladiator's Ring of Triumph
+								un(REMOVED_FROM_GAME, i(115747)),	-- Primal Gladiator's Signet of Accuracy
+								un(REMOVED_FROM_GAME, i(115746)),	-- Primal Gladiator's Signet of Cruelty
+								un(REMOVED_FROM_GAME, i(115665)),	-- Primal Gladiator's Band of Contemplation
+								un(REMOVED_FROM_GAME, i(115664)),	-- Primal Gladiator's Band of Meditation
+								un(REMOVED_FROM_GAME, i(115663)),	-- Primal Gladiator's Band of Victory
+								un(REMOVED_FROM_GAME, i(115662)),	-- Primal Gladiator's Band of Prowess
 							},
 						}),
 						n(87063, { 	-- Joao Calhandro <Inscription Recipes>
@@ -1608,10 +1608,10 @@ _.Zones =
 									["u"] = 1,
 								}),
 								i(122550, {	-- Recipe: Powerful Steelforged Essence
-									["u"] = 2,
+									["u"] = REMOVED_FROM_GAME,
 								}),
 								i(122552, {	-- Recipe: Powerful Truesteel Essence
-									["u"] = 2,
+									["u"] = REMOVED_FROM_GAME,
 								}),
 							},
 						}),
@@ -1645,13 +1645,13 @@ _.Zones =
 									i(128327),	-- Small Pouch of Coins
 								}),
 								i(120267, {	-- Schematic: Blackrock Rifling
-									["u"] = 2,	-- Deprecated and removed in 6.2.0
+									["u"] = REMOVED_FROM_GAME,	-- Deprecated and removed in 6.2.0
 								}),
 								i(122546, {	-- Schematic: Oglethorpe's Octagonal Lenses
-									["u"] = 2,	-- Deprecated and removed in 6.2.0
+									["u"] = REMOVED_FROM_GAME,	-- Deprecated and removed in 6.2.0
 								}),
 								i(122554, {	-- Schematic: Precision Scope Tuning Kit
-									["u"] = 2,	-- Deprecated and removed in 6.2.0
+									["u"] = REMOVED_FROM_GAME,	-- Deprecated and removed in 6.2.0
 								}),
 							},
 						}),

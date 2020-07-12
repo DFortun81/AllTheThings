@@ -19,7 +19,7 @@ _.Zones =
 					["g"] = {
 						i(141044),	-- Technique: Glyph of Nesingwary's Nemeses
 						i(141048, {	-- Technique: Glyph of the Headhunter
-							["u"] = 2,	-- Removed BoP/BoA item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(136783, {	-- The Art of Concealment
 							["spellID"] = 61648,	-- Aspect of the Chameleon

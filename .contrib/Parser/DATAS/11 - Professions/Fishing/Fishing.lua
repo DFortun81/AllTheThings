@@ -7,27 +7,27 @@ profession(FISHING, {
 		i(16082, {	-- Artisan Fishing - The Way of the Lure
 			["collectible"] = false,
 			["description"] = "No longer required.",
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		i(16083, {	-- Expert Fishing - The Bass and You
 			["collectible"] = false,
 			["description"] = "No longer required.",
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		i(27532, {	-- Master Fishing - The Art of Angling
 			["collectible"] = false,
 			["description"] = "No longer required.",
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		i(46054, {	-- Journeyman Fishing - Fishing for Dummies
 			["collectible"] = false,
 			["description"] = "No longer required.",
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		i(46055, {	-- Grand Master Fishing - Deep Sea Adventures
 			["collectible"] = false,
 			["description"] = "No longer required.",
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 		}),
 	}),
 	f(52,     {	-- Finger

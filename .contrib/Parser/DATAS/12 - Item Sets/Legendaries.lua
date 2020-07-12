@@ -7,16 +7,16 @@ _.GearSets =
 		["achievementID"] = 5010,	-- The Ultimate Collection
 		["g"] = {	
 			n(-319, {	-- Weapons
-				un(2, i(22632, {	-- Atiesh, Greatstaff of the Guardian (Druid)
+				un(REMOVED_FROM_GAME, i(22632, {	-- Atiesh, Greatstaff of the Guardian (Druid)
 					["classes"] = { 11 }
 				})),
-				un(2, i(22589, {	-- Atiesh, Greatstaff of the Guardian (Mage)
+				un(REMOVED_FROM_GAME, i(22589, {	-- Atiesh, Greatstaff of the Guardian (Mage)
 					["classes"] = { 8 }
 				})),
-				un(2, i(22631, {	-- Atiesh, Greatstaff of the Guardian (Priest)
+				un(REMOVED_FROM_GAME, i(22631, {	-- Atiesh, Greatstaff of the Guardian (Priest)
 					["classes"] = { 5 }
 				})),
-				un(2, i(22630, {	-- Atiesh, Greatstaff of the Guardian (WL)
+				un(REMOVED_FROM_GAME, i(22630, {	-- Atiesh, Greatstaff of the Guardian (WL)
 					["classes"] = { 9 }
 				})),
 				i(71086, {	-- Dragonwrath, Tarecgosa's Rest (Priest, Mage, Lock, Druid, Shaman)

@@ -1081,7 +1081,7 @@ _.Zones =
 					["provider"] = { "n", 90237 },	-- Garona Halforcen
 					["sourceQuest"] = 37837,	-- An Inside Job
 					["g"] = {
-						un(2, follower(466)),	-- Garona Halforcen
+						un(REMOVED_FROM_GAME, follower(466)),	-- Garona Halforcen
 					},
 				}),
 				q(34465, {	-- Mystical Hat

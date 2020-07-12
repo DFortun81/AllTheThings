@@ -48,7 +48,7 @@ _.WorldDrops =
 				i(5180),	-- Necklace of Harmony
 				i(12035),	-- Obsidian Pendant
 				i(12032),	-- Onyx Choker
-				un(2, i(4614)),	-- Pendant of Myzrael
+				un(REMOVED_FROM_GAME, i(4614)),	-- Pendant of Myzrael
 				i(12048),	-- Prismatic Pendant
 				i(12026),	-- Quicksilver Pendant
 				i(13087),	-- River Pride Choker

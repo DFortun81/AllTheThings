@@ -16,17 +16,17 @@ _.Instances = { tier(1, {	-- Classic
 				["maps"] = { 76 },	-- Azshara
 				["u"] = 43,
 				["g"] = {
-					un(2, i(18704)),	-- Mature Blue Dragon Sinew
-					un(2, i(19130)),	-- Cold Snap
+					un(REMOVED_FROM_GAME, i(18704)),	-- Mature Blue Dragon Sinew
+					un(REMOVED_FROM_GAME, i(19130)),	-- Cold Snap
 					i(18202),	-- Eskhandar's Left Claw
-					un(2, i(17070)),	-- Fang of the Mystics
-					un(2, i(18542)),	-- Typhoon
-					un(2, i(19132)),	-- Crystal Adorned Crown
-					un(2, i(18208)),	-- Drape of Benediction
-					un(2, i(18541)),	-- Puissant Cape
-					un(2, i(18545)),	-- Leggings of Arcane Supremacy
-					un(2, i(19131)),	-- Snowblind Shoes
-					un(2, i(18547)),	-- Unmelting Ice Girdle
+					un(REMOVED_FROM_GAME, i(17070)),	-- Fang of the Mystics
+					un(REMOVED_FROM_GAME, i(18542)),	-- Typhoon
+					un(REMOVED_FROM_GAME, i(19132)),	-- Crystal Adorned Crown
+					un(REMOVED_FROM_GAME, i(18208)),	-- Drape of Benediction
+					un(REMOVED_FROM_GAME, i(18541)),	-- Puissant Cape
+					un(REMOVED_FROM_GAME, i(18545)),	-- Leggings of Arcane Supremacy
+					un(REMOVED_FROM_GAME, i(19131)),	-- Snowblind Shoes
+					un(REMOVED_FROM_GAME, i(18547)),	-- Unmelting Ice Girdle
 				},
 			}),
 			n(18338, {	-- Highlord Kruul
@@ -35,23 +35,23 @@ _.Instances = { tier(1, {	-- Classic
 				["maps"] = { 17 },	-- Blasted Lands
 				["modelScale"] = 6.0,
 				["g"] = {
-					un(2, i(18665, {	-- The Eye of Shadow
+					un(REMOVED_FROM_GAME, i(18665, {	-- The Eye of Shadow
 						["classes"] = { PRIEST },
 						["g"] = {
-							un(2, i(18609)),	-- Anathema
-							un(2, i(18608)),	-- Benediction
+							un(REMOVED_FROM_GAME, i(18609)),	-- Anathema
+							un(REMOVED_FROM_GAME, i(18608)),	-- Benediction
 						},
 					})),
-					un(2, i(17113)),	-- Amberseal Keeper
-					un(2, i(17112)),	-- Empyrean Demolisher
-					un(2, i(18546)),	-- Infernal Headcage
-					un(2, i(17111)),	-- Blazefury Medallion
-					un(2, i(18204)),	-- Eskhandar's Pelt
-					un(2, i(19135)),	-- Blacklight Bracer
-					un(2, i(18544)),	-- Doomhide Gauntlets
-					un(2, i(19134)),	-- Flayed Doomguard Belt
-					un(2, i(19133)),	-- Fel Infused Leggings
-					un(2, i(18543)),	-- Ring of Entropy
+					un(REMOVED_FROM_GAME, i(17113)),	-- Amberseal Keeper
+					un(REMOVED_FROM_GAME, i(17112)),	-- Empyrean Demolisher
+					un(REMOVED_FROM_GAME, i(18546)),	-- Infernal Headcage
+					un(REMOVED_FROM_GAME, i(17111)),	-- Blazefury Medallion
+					un(REMOVED_FROM_GAME, i(18204)),	-- Eskhandar's Pelt
+					un(REMOVED_FROM_GAME, i(19135)),	-- Blacklight Bracer
+					un(REMOVED_FROM_GAME, i(18544)),	-- Doomhide Gauntlets
+					un(REMOVED_FROM_GAME, i(19134)),	-- Flayed Doomguard Belt
+					un(REMOVED_FROM_GAME, i(19133)),	-- Fel Infused Leggings
+					un(REMOVED_FROM_GAME, i(18543)),	-- Ring of Entropy
 				},
 			}),
 			n(12397, {	-- Lord Kazzak
@@ -60,23 +60,23 @@ _.Instances = { tier(1, {	-- Classic
 				["maps"] = { 17 },	-- Blasted Lands
 				["u"] = 43,
 				["g"] = {
-					un(2, i(18665, {	-- The Eye of Shadow
+					un(REMOVED_FROM_GAME, i(18665, {	-- The Eye of Shadow
 						["classes"] = { PRIEST },
 						["g"] = {
-							un(2, i(18609)),	-- Anathema
-							un(2, i(18608)),	-- Benediction
+							un(REMOVED_FROM_GAME, i(18609)),	-- Anathema
+							un(REMOVED_FROM_GAME, i(18608)),	-- Benediction
 						},
 					})),
-					un(2, i(17113)),	-- Amberseal Keeper
-					un(2, i(17112)),	-- Empyrean Demolisher
-					un(2, i(18546)),	-- Infernal Headcage
-					un(2, i(17111)),	-- Blazefury Medallion
-					un(2, i(18204)),	-- Eskhandar's Pelt
-					un(2, i(19135)),	-- Blacklight Bracer
-					un(2, i(18544)),	-- Doomhide Gauntlets
-					un(2, i(19134)),	-- Flayed Doomguard Belt
-					un(2, i(19133)),	-- Fel Infused Leggings
-					un(2, i(18543)),	-- Ring of Entropy
+					un(REMOVED_FROM_GAME, i(17113)),	-- Amberseal Keeper
+					un(REMOVED_FROM_GAME, i(17112)),	-- Empyrean Demolisher
+					un(REMOVED_FROM_GAME, i(18546)),	-- Infernal Headcage
+					un(REMOVED_FROM_GAME, i(17111)),	-- Blazefury Medallion
+					un(REMOVED_FROM_GAME, i(18204)),	-- Eskhandar's Pelt
+					un(REMOVED_FROM_GAME, i(19135)),	-- Blacklight Bracer
+					un(REMOVED_FROM_GAME, i(18544)),	-- Doomhide Gauntlets
+					un(REMOVED_FROM_GAME, i(19134)),	-- Flayed Doomguard Belt
+					un(REMOVED_FROM_GAME, i(19133)),	-- Fel Infused Leggings
+					un(REMOVED_FROM_GAME, i(18543)),	-- Ring of Entropy
 				},
 			}),
 			n(14889, {	-- Emeriss
@@ -85,21 +85,21 @@ _.Instances = { tier(1, {	-- Classic
 				["maps"] = { 63, 69, 47, 26 },	-- Ashenvale / Feralas / Duskwood / The Hinterlands
 				["u"] = 43,
 				["g"] = {
-					un(2, i(20644)),	-- Nightmare Engulfed Object
-					un(2, i(20580)),	-- Hammer of Bestial Fury
-					un(2, i(20599)),	-- Polished Ironwood Crossbow
-					un(2, i(20581)),	-- Staff of Rampant Growth
-					un(2, i(20582)),	-- Trance Stone
-					un(2, i(20623)),	-- Circlet of Restless Dreams
-					un(2, i(20622)),	-- Dragonheart Necklace
-					un(2, i(20579)),	-- Green Dragonskin Cloak
-					un(2, i(20615)),	-- Dragonspur Wraps
-					un(2, i(20616)),	-- Dragonbone Wristguards
-					un(2, i(20618)),	-- Gloves of Delusional Power
-					un(2, i(20617)),	-- Ancient Corroded Leggings
-					un(2, i(20619)),	-- Acid Inscribed Greaves
-					un(2, i(20621)),	-- Boots of the Endless Moor
-					un(2, i(20624)),	-- Ring of the Unliving
+					un(REMOVED_FROM_GAME, i(20644)),	-- Nightmare Engulfed Object
+					un(REMOVED_FROM_GAME, i(20580)),	-- Hammer of Bestial Fury
+					un(REMOVED_FROM_GAME, i(20599)),	-- Polished Ironwood Crossbow
+					un(REMOVED_FROM_GAME, i(20581)),	-- Staff of Rampant Growth
+					un(REMOVED_FROM_GAME, i(20582)),	-- Trance Stone
+					un(REMOVED_FROM_GAME, i(20623)),	-- Circlet of Restless Dreams
+					un(REMOVED_FROM_GAME, i(20622)),	-- Dragonheart Necklace
+					un(REMOVED_FROM_GAME, i(20579)),	-- Green Dragonskin Cloak
+					un(REMOVED_FROM_GAME, i(20615)),	-- Dragonspur Wraps
+					un(REMOVED_FROM_GAME, i(20616)),	-- Dragonbone Wristguards
+					un(REMOVED_FROM_GAME, i(20618)),	-- Gloves of Delusional Power
+					un(REMOVED_FROM_GAME, i(20617)),	-- Ancient Corroded Leggings
+					un(REMOVED_FROM_GAME, i(20619)),	-- Acid Inscribed Greaves
+					un(REMOVED_FROM_GAME, i(20621)),	-- Boots of the Endless Moor
+					un(REMOVED_FROM_GAME, i(20624)),	-- Ring of the Unliving
 				},
 			}),
 			n(14888, {	-- Lethon
@@ -108,22 +108,22 @@ _.Instances = { tier(1, {	-- Classic
 				["maps"] = { 63, 69, 47, 26 },	-- Ashenvale / Feralas / Duskwood / The Hinterlands
 				["u"] = 43,
 				["g"] = {
-					un(2, i(20644)),	-- Nightmare Engulfed Object
-					un(2, i(20580)),	-- Hammer of Bestial Fury
-					un(2, i(20581)),	-- Staff of Rampant Growth
-					un(2, i(20582)),	-- Trance Stone
-					un(2, i(20628)),	-- Deviate Growth Cap
-					un(2, i(20579)),	-- Green Dragonskin Cloak
-					un(2, i(20626)),	-- Black Bark Wristbands
-					un(2, i(20616)),	-- Dragonbone Wristguards
-					un(2, i(20615)),	-- Dragonspur Wraps
-					un(2, i(20630)),	-- Gauntlets of the Shining Light
-					un(2, i(20618)),	-- Gloves of Delusional Power
-					un(2, i(20625)),	-- Belt of the Dark Bog
-					un(2, i(20617)),	-- Ancient Corroded Leggings
-					un(2, i(20627)),	-- Dark Heart Pants
-					un(2, i(20619)),	-- Acid Inscribed Greaves
-					un(2, i(20629)),	-- Malignant Footguards
+					un(REMOVED_FROM_GAME, i(20644)),	-- Nightmare Engulfed Object
+					un(REMOVED_FROM_GAME, i(20580)),	-- Hammer of Bestial Fury
+					un(REMOVED_FROM_GAME, i(20581)),	-- Staff of Rampant Growth
+					un(REMOVED_FROM_GAME, i(20582)),	-- Trance Stone
+					un(REMOVED_FROM_GAME, i(20628)),	-- Deviate Growth Cap
+					un(REMOVED_FROM_GAME, i(20579)),	-- Green Dragonskin Cloak
+					un(REMOVED_FROM_GAME, i(20626)),	-- Black Bark Wristbands
+					un(REMOVED_FROM_GAME, i(20616)),	-- Dragonbone Wristguards
+					un(REMOVED_FROM_GAME, i(20615)),	-- Dragonspur Wraps
+					un(REMOVED_FROM_GAME, i(20630)),	-- Gauntlets of the Shining Light
+					un(REMOVED_FROM_GAME, i(20618)),	-- Gloves of Delusional Power
+					un(REMOVED_FROM_GAME, i(20625)),	-- Belt of the Dark Bog
+					un(REMOVED_FROM_GAME, i(20617)),	-- Ancient Corroded Leggings
+					un(REMOVED_FROM_GAME, i(20627)),	-- Dark Heart Pants
+					un(REMOVED_FROM_GAME, i(20619)),	-- Acid Inscribed Greaves
+					un(REMOVED_FROM_GAME, i(20629)),	-- Malignant Footguards
 				},
 			}),
 			n(14890, {	-- Taerar
@@ -132,21 +132,21 @@ _.Instances = { tier(1, {	-- Classic
 				["maps"] = { 63, 69, 47, 26 },	-- Ashenvale / Feralas / Duskwood / The Hinterlands
 				["u"] = 43,
 				["g"] = {
-					un(2, i(20644)),	-- Nightmare Engulfed Object
-					un(2, i(20580)),	-- Hammer of Bestial Fury
-					un(2, i(20577)),	-- Nightmare Blade
-					un(2, i(20581)),	-- Staff of Rampant Growth
-					un(2, i(20582)),	-- Trance Stone
-					un(2, i(20579)),	-- Green Dragonskin Cloak
-					un(2, i(20633)),	-- Unnatural Leather Spaulders
-					un(2, i(20616)),	-- Dragonbone Wristguards
-					un(2, i(20615)),	-- Dragonspur Wraps
-					un(2, i(20618)),	-- Gloves of Delusional Power
-					un(2, i(20617)),	-- Ancient Corroded Leggings
-					un(2, i(20619)),	-- Acid Inscribed Greaves
-					un(2, i(20634)),	-- Boots of Fright
-					un(2, i(20631)),	-- Mendicant's Slippers
-					un(2, i(20632)),	-- Mindtear Band
+					un(REMOVED_FROM_GAME, i(20644)),	-- Nightmare Engulfed Object
+					un(REMOVED_FROM_GAME, i(20580)),	-- Hammer of Bestial Fury
+					un(REMOVED_FROM_GAME, i(20577)),	-- Nightmare Blade
+					un(REMOVED_FROM_GAME, i(20581)),	-- Staff of Rampant Growth
+					un(REMOVED_FROM_GAME, i(20582)),	-- Trance Stone
+					un(REMOVED_FROM_GAME, i(20579)),	-- Green Dragonskin Cloak
+					un(REMOVED_FROM_GAME, i(20633)),	-- Unnatural Leather Spaulders
+					un(REMOVED_FROM_GAME, i(20616)),	-- Dragonbone Wristguards
+					un(REMOVED_FROM_GAME, i(20615)),	-- Dragonspur Wraps
+					un(REMOVED_FROM_GAME, i(20618)),	-- Gloves of Delusional Power
+					un(REMOVED_FROM_GAME, i(20617)),	-- Ancient Corroded Leggings
+					un(REMOVED_FROM_GAME, i(20619)),	-- Acid Inscribed Greaves
+					un(REMOVED_FROM_GAME, i(20634)),	-- Boots of Fright
+					un(REMOVED_FROM_GAME, i(20631)),	-- Mendicant's Slippers
+					un(REMOVED_FROM_GAME, i(20632)),	-- Mindtear Band
 				},
 			}),
 			n(14887, {	-- Ysondre
@@ -155,22 +155,22 @@ _.Instances = { tier(1, {	-- Classic
 				["maps"] = { 63, 69, 47, 26 },	-- Ashenvale / Feralas / Duskwood / The Hinterlands
 				["u"] = 43,
 				["g"] = {
-					un(2, i(20644)),	-- Nightmare Engulfed Object
-					un(2, i(20578)),	-- Emerald Dragonfang
-					un(2, i(20580)),	-- Hammer of Bestial Fury
-					un(2, i(20581)),	-- Staff of Rampant Growth
-					un(2, i(20582)),	-- Trance Stone
-					un(2, i(20579)),	-- Green Dragonskin Cloak
-					un(2, i(20637)),	-- Acid Inscribed Pauldrons
-					un(2, i(20635)),	-- Jade Inlaid Vestments
-					un(2, i(20616)),	-- Dragonbone Wristguards
-					un(2, i(20615)),	-- Dragonspur Wraps
-					un(2, i(20618)),	-- Gloves of Delusional Power
-					un(2, i(20617)),	-- Ancient Corroded Leggings
-					un(2, i(20638)),	-- Leggings of the Demented Mind
-					un(2, i(20639)),	-- Strangley Glyphed Legplates
-					un(2, i(20619)),	-- Acid Inscribed Greaves
-					un(2, i(20636)),	-- Hibernation Crystal
+					un(REMOVED_FROM_GAME, i(20644)),	-- Nightmare Engulfed Object
+					un(REMOVED_FROM_GAME, i(20578)),	-- Emerald Dragonfang
+					un(REMOVED_FROM_GAME, i(20580)),	-- Hammer of Bestial Fury
+					un(REMOVED_FROM_GAME, i(20581)),	-- Staff of Rampant Growth
+					un(REMOVED_FROM_GAME, i(20582)),	-- Trance Stone
+					un(REMOVED_FROM_GAME, i(20579)),	-- Green Dragonskin Cloak
+					un(REMOVED_FROM_GAME, i(20637)),	-- Acid Inscribed Pauldrons
+					un(REMOVED_FROM_GAME, i(20635)),	-- Jade Inlaid Vestments
+					un(REMOVED_FROM_GAME, i(20616)),	-- Dragonbone Wristguards
+					un(REMOVED_FROM_GAME, i(20615)),	-- Dragonspur Wraps
+					un(REMOVED_FROM_GAME, i(20618)),	-- Gloves of Delusional Power
+					un(REMOVED_FROM_GAME, i(20617)),	-- Ancient Corroded Leggings
+					un(REMOVED_FROM_GAME, i(20638)),	-- Leggings of the Demented Mind
+					un(REMOVED_FROM_GAME, i(20639)),	-- Strangley Glyphed Legplates
+					un(REMOVED_FROM_GAME, i(20619)),	-- Acid Inscribed Greaves
+					un(REMOVED_FROM_GAME, i(20636)),	-- Hibernation Crystal
 				},
 			}),
 		},

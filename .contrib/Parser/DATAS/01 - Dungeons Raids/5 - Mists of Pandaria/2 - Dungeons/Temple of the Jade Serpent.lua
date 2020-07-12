@@ -66,9 +66,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(143960),	-- Riverbed Chestguard
 					i(143973),	-- Treads of Corrupted Water
 					i(144112),	-- Crystallized Droplet
-					un(2, i(80860)),	-- Waterburst Helm (7.1 - Removed from Game!)
-					un(2, i(80861)),	-- Riverbed Chestguard (7.1 - Removed from Game!)
-					un(2, i(80862)),	-- Treads of Corrupted Water (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80860)),	-- Waterburst Helm (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80861)),	-- Riverbed Chestguard (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80862)),	-- Treads of Corrupted Water (7.1 - Removed from Game!)
 				})),
 				cr(56843, e(664, {	-- Lorewalker Stonestep
 					i(144081),	-- Girdle of Endemic Anger
@@ -76,9 +76,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(143987),	-- Leggings of Whispered Dreams
 					i(143974),	-- Stonestep Boots
 					i(144113),	-- Windswept Pages
-					un(2, i(80864)),	-- Girdle of Endemic Anger (7.1 - Removed from Game!)
-					un(2, i(80865)),	-- Sunheart Waistband (7.1 - Removed from Game!)
-					un(2, i(80863)),	-- Stonestep Boots (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80864)),	-- Girdle of Endemic Anger (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80865)),	-- Sunheart Waistband (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80863)),	-- Stonestep Boots (7.1 - Removed from Game!)
 				})),
 				cr(56732, e(658, {	-- Liu Flameheart
 					i(144090),	-- Firebelcher Hand Cannon
@@ -86,9 +86,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(144094),	-- Cape of Entaglement
 					i(143988),	-- Flameheart Sandals
 					i(144114),	-- Signet of Dancing Jade
-					un(2, i(80872)),	-- Firebelcher Hand Cannon (7.1 - Removed from Game!)
-					un(2, i(80867)),	-- Serpentstrike Shoulderpads (7.1 - Removed from Game!)
-					un(2, i(80866)),	-- Cape of Entaglement (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80872)),	-- Firebelcher Hand Cannon (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80867)),	-- Serpentstrike Shoulderpads (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80866)),	-- Cape of Entaglement (7.1 - Removed from Game!)
 				})),
 				cr(56439, e(335, {	-- Sha of Doubt
 					ach(6757),	-- Temple of the Jade Serpent
@@ -103,12 +103,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(144091),	-- Hopecrusher Gauntlets
 					i(144118),	-- Paralyzing Gloves
 					i(144116),	-- Binding of Broken Dreams
-					un(2, i(80874)),	-- Staff of Trembling Will (7.1 - Removed from Game!)
-					un(2, i(80873)),	-- Dubious Handaxe (7.1 - Removed from Game!)
-					un(2, i(80868)),	-- Doubtridden Shoulderguards (7.1 - Removed from Game!)
-					un(2, i(80871)),	-- Neverdare Shoulders (7.1 - Removed from Game!)
-					un(2, i(80870)),	-- Chestguard of Despair (7.1 - Removed from Game!)
-					un(2, i(80869)),	-- Hopecrusher Gauntlets (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80874)),	-- Staff of Trembling Will (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80873)),	-- Dubious Handaxe (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80868)),	-- Doubtridden Shoulderguards (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80871)),	-- Neverdare Shoulders (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80870)),	-- Chestguard of Despair (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80869)),	-- Hopecrusher Gauntlets (7.1 - Removed from Game!)
 				})),
 			}),
 			d( 2, {	-- Heroic
@@ -121,10 +121,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(143960),	-- Riverbed Chestguard
 						i(143973),	-- Treads of Corrupted Water
 						i(144112),	-- Crystallized Droplet
-						un(2, i(81075)),	-- Waterburst Helm (7.1 - Removed from Game!)
-						un(2, i(81123)),	-- Riverbed Chestguard (7.1 - Removed from Game!)
-						un(2, i(81083)),	-- Riverbed Chestguard (7.1 - Removed from Game!)
-						un(2, i(81072)),	-- Treads of Corrupted Water (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81075)),	-- Waterburst Helm (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81123)),	-- Riverbed Chestguard (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81083)),	-- Riverbed Chestguard (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81072)),	-- Treads of Corrupted Water (7.1 - Removed from Game!)
 					})),
 					cr(56843, e(664, {	-- Lorewalker Stonestep
 						i(144081),	-- Girdle of Endemic Anger
@@ -132,10 +132,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(143987),	-- Leggings of Whispered Dreams
 						i(143974),	-- Stonestep Boots
 						i(144113),	-- Windswept Pages
-						un(2, i(81058)),	-- Girdle of Endemic Anger (7.1 - Removed from Game!)
-						un(2, i(81060)),	-- Sunheart Waistband (7.1 - Removed from Game!)
-						un(2, i(81126)),	-- Leggings of Whispered Dreams (7.1 - Removed from Game!)
-						un(2, i(81073)),	-- Stonestep Boots (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81058)),	-- Girdle of Endemic Anger (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81060)),	-- Sunheart Waistband (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81126)),	-- Leggings of Whispered Dreams (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81073)),	-- Stonestep Boots (7.1 - Removed from Game!)
 					})),
 					cr(56732, e(658, {	-- Liu Flameheart
 						{	-- Polyformic Acid Science: Liu Flameheart
@@ -148,10 +148,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144094),	-- Cape of Entaglement
 						i(143988),	-- Flameheart Sandals
 						i(144114),	-- Signet of Dancing Jade
-						un(2, i(81067)),	-- Firebelcher Hand Cannon (7.1 - Removed from Game!)
-						un(2, i(81070)),	-- Serpentstrike Shoulderpads (7.1 - Removed from Game!)
-						un(2, i(81084)),	-- Cape of Entaglement (7.1 - Removed from Game!)
-						un(2, i(81127)),	-- Flameheart Sandals (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81067)),	-- Firebelcher Hand Cannon (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81070)),	-- Serpentstrike Shoulderpads (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81084)),	-- Cape of Entaglement (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81127)),	-- Flameheart Sandals (7.1 - Removed from Game!)
 					})),
 					cr(56439, e(335, {	-- Sha of Doubt
 						ach(6475),	-- Cleaning Up
@@ -169,17 +169,17 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144091),	-- Hopecrusher Gauntlets
 						i(144118),	-- Paralyzing Gloves
 						i(144116),	-- Binding of Broken Dreams
-						un(2, i(81131)),	-- Mindbreaker Pendant (7.1 - Removed from Game!)
-						un(2, i(81079)),	-- Staff of Trembling Will (7.1 - Removed from Game!)
-						un(2, i(81063)),	-- Dubious Handaxe (7.1 - Removed from Game!)
-						un(2, i(87544)),	-- Je'lyu, Spirit of the Serpent (7.1 - Removed from Game!)
-						un(2, i(81071)),	-- Doubtridden Shoulderguards (7.1 - Removed from Game!)
-						un(2, i(81069)),	-- Neverdare Shoulders (7.1 - Removed from Game!)
-						un(2, i(81129)),	-- Cloak of Failing Will (7.1 - Removed from Game!)
-						un(2, i(81082)),	-- Chestguard of Despair (7.1 - Removed from Game!)
-						un(2, i(81074)),	-- Hopecrusher Gauntlets (7.1 - Removed from Game!)
-						un(2, i(81132)),	-- Paralyzing Gloves (7.1 - Removed from Game!)
-						un(2, i(81130)),	-- Binding of Broken Dreams (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81131)),	-- Mindbreaker Pendant (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81079)),	-- Staff of Trembling Will (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81063)),	-- Dubious Handaxe (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(87544)),	-- Je'lyu, Spirit of the Serpent (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81071)),	-- Doubtridden Shoulderguards (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81069)),	-- Neverdare Shoulders (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81129)),	-- Cloak of Failing Will (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81082)),	-- Chestguard of Despair (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81074)),	-- Hopecrusher Gauntlets (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81132)),	-- Paralyzing Gloves (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81130)),	-- Binding of Broken Dreams (7.1 - Removed from Game!)
 					})),
 				},
 			}),

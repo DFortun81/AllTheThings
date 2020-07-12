@@ -18,7 +18,7 @@ _.Zones =
 				}),
 				i(16222, {	-- Formula: Enchant Shield - Superior Versatility (formerly Superior Spirit)
 					["crs"] = { 9447 },	-- Scarlet Warder
-					["u"] = 2,	-- BoP / BoA Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(13479, {	-- Recipe: Elixir of the Sages
 					["crs"] = {
@@ -28,15 +28,15 @@ _.Zones =
 						9449,	-- Scarlet Cleric
 						15162,	-- Scarlet Inquisitor
 					},
-					["u"] = 2,	-- BoP / BoA Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(14485, {	-- Pattern: Wizardweave Leggings
 					["crs"] = { 8551 },	-- Dark Summoner
-					["u"] = 2,	-- BoP / BoA Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(14500, {	-- Pattern: Wizardweave Robe
 					["crs"] = { 8526 },	-- Dark Caster
-					["u"] = 2,	-- BoP / BoA Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(14505, {	-- Pattern: Wizardweave Turban
 					["crs"] = { 8526 },	-- Dark Caster

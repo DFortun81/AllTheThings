@@ -372,9 +372,9 @@ profession(COOKING, {
 		tier(1, {	-- Classic
 			["groups"] = bubbleDown({["requireSkill"] = COOKING},  {
 				-- Note!! Only commenting out actual items as Automation takes care of the recipes themselves
-				un(2, i(16072)),	-- Expert Cookbook
-				un(2, i(16073)),	-- Artisan Cookbook
-				un(2, i(27736)),	-- Master Cookbook
+				un(REMOVED_FROM_GAME, i(16072)),	-- Expert Cookbook
+				un(REMOVED_FROM_GAME, i(16073)),	-- Artisan Cookbook
+				un(REMOVED_FROM_GAME, i(27736)),	-- Master Cookbook
 				un(7, i(6891)),	-- Recipe: Herb Baked Egg
 				un(7, i(5485)),	-- Recipe: Fillet of Frenzy
 				un(7, h(i(3734))),		-- Recipe: Big Bear Steak [Removed From Game!]

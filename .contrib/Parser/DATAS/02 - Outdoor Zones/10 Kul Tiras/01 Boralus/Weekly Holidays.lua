@@ -15,15 +15,15 @@ _.Zones =
 					["isWeekly"] = true,
 					["g"] = {
 						i(164579, {	-- Cache of Uldir Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1031}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(165724, {	-- Cache of Dazar'alor Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(168269, {	-- Cache of Palace Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(175021, {	-- Cache of Ny'alothan Treasures (Normal Quality)
@@ -39,15 +39,15 @@ _.Zones =
 					["isWeekly"] = true,
 					["g"] = {
 						i(164579, {	-- Cache of Uldir Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1031}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(165724, {	-- Cache of Dazar'alor Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(168269, {	-- Cache of Palace Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(175021, {	-- Cache of Ny'alothan Treasures (Normal Quality)
@@ -64,15 +64,15 @@ _.Zones =
 					["isWeekly"] = true,
 					["g"] = {
 						i(164579, {	-- Cache of Uldir Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1031}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(165724, {	-- Cache of Dazar'alor Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(168269, {	-- Cache of Palace Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(175021, {	-- Cache of Ny'alothan Treasures (Normal Quality)
@@ -88,15 +88,15 @@ _.Zones =
 					["isWeekly"] = true,
 					["g"] = {
 						i(164579, {	-- Cache of Uldir Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1031}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(165724, {	-- Cache of Dazar'alor Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(168269, {	-- Cache of Palace Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(175021, {	-- Cache of Ny'alothan Treasures (Normal Quality)
@@ -112,15 +112,15 @@ _.Zones =
 					["isWeekly"] = true,
 					["g"] = {
 						i(164579, {	-- Cache of Uldir Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1031}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(165724, {	-- Cache of Dazar'alor Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(168269, {	-- Cache of Palace Treasures (Normal Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(175021, {	-- Cache of Ny'alothan Treasures (Normal Quality)
@@ -135,15 +135,15 @@ _.Zones =
 					["isWeekly"] = true,
 					["g"] = {
 						i(164257, {	-- Cache of Uldir Treasures (Heroic Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1031}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(165729, {	-- Cache of Dazar'alor Treasures (Heroic Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(170144, {	-- Cache of Palace Treasures (Heroic Quality)
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(175024, {	-- Cache of Ny'alothan Treasures (Heroic Quality)

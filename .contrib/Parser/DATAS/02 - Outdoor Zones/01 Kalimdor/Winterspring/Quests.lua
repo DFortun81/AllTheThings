@@ -129,7 +129,7 @@ _.Zones =
 					["g"] = {
 						i(12825, {	-- Plans: Blazing Rapier
 							["spellID"] = 0,	-- This is now available via 142358, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
@@ -198,7 +198,7 @@ _.Zones =
 					["sourceQuest"] = 5103,	-- Hot Fiery Death
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(2, i(12699)),	-- Plans: Fiery Plate Gauntlets
+						un(REMOVED_FROM_GAME, i(12699)),	-- Plans: Fiery Plate Gauntlets
 						un(8, i(12631)),	-- Fiery Plate Gauntlets
 					},
 				}),
@@ -232,9 +232,9 @@ _.Zones =
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 5087,	-- Winterfall Runners
 					["g"] = {
-						un(2, i(15784)),	-- Crystal Breeze Mantle
-						un(2, i(15786)),	-- Fempulse Jerkin
-						un(2, i(15787)),	-- Willow Band Hauberk
+						un(REMOVED_FROM_GAME, i(15784)),	-- Crystal Breeze Mantle
+						un(REMOVED_FROM_GAME, i(15786)),	-- Fempulse Jerkin
+						un(REMOVED_FROM_GAME, i(15787)),	-- Willow Band Hauberk
 					},
 				}),
 				q(28470, {	-- High Chief Winterfall
@@ -325,7 +325,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 5056,	-- Shy-Rotam
 					["g"] = {
-						un(2, i(15704)),	-- Hunter's Insignia Medal
+						un(REMOVED_FROM_GAME, i(15704)),	-- Hunter's Insignia Medal
 					},
 				}),
 				q(28641, {	-- Pride of the Dinner Table (granted automatically. Coords are relative to player position)
@@ -362,8 +362,8 @@ _.Zones =
 					["provider"] = { "n", 10468 },	-- Felnok Steelspring
 					["sourceQuest"] = 4809,	-- Chillwind Horns
 					["g"] = {
-						un(2, i(15862)),	-- Blitzcleaver
-						un(2, i(15863)),	-- Grave Scepter
+						un(REMOVED_FROM_GAME, i(15862)),	-- Blitzcleaver
+						un(REMOVED_FROM_GAME, i(15863)),	-- Grave Scepter
 					},
 				}),
 				q(28610, {	-- Rubble Trouble
@@ -390,8 +390,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 5055,	-- Brumeran of the Chillwind
 					["g"] = {
-						un(2, i(15783)),	-- Beasthunter Dagger
-						un(2, i(15782)),	-- Beaststalker Blade
+						un(REMOVED_FROM_GAME, i(15783)),	-- Beasthunter Dagger
+						un(REMOVED_FROM_GAME, i(15782)),	-- Beaststalker Blade
 					},
 				}),
 				q(28742, {	-- Shy-Rotam (granted automatically. Coords are relative to player position)
@@ -414,7 +414,7 @@ _.Zones =
 					["g"] = {
 						i(12821, {	-- Plans: Dawn's Edge
 							["spellID"] = 0,	-- This is now available via 142357, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
@@ -467,7 +467,7 @@ _.Zones =
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 980,	-- The New Springs
 					["g"] = {
-						un(2, i(15789)),	-- Deep River Cloak
+						un(REMOVED_FROM_GAME, i(15789)),	-- Deep River Cloak
 					},
 				}),
 				q(5305,  {	-- Sweet Serenity
@@ -475,7 +475,7 @@ _.Zones =
 					["provider"] = { "n", 11191 },	-- Lilith the Lithe
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(2, i(12824)),	-- Plans: Enchanted Battlehammer
+						un(REMOVED_FROM_GAME, i(12824)),	-- Plans: Enchanted Battlehammer
 					},
 				}),
 				q(28841, {	-- The Arcane Storm Within
@@ -489,9 +489,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 5252,	-- Remorseful Highborne
 					["g"] = {
-						un(2, i(15795)),	-- Emerald Mist Gauntlets
-						un(2, i(15792)),	-- Plow Wood Spaulders
-						un(2, i(15791)),	-- Turquoise Sash
+						un(REMOVED_FROM_GAME, i(15795)),	-- Emerald Mist Gauntlets
+						un(REMOVED_FROM_GAME, i(15792)),	-- Plow Wood Spaulders
+						un(REMOVED_FROM_GAME, i(15791)),	-- Turquoise Sash
 					},
 				}),
 				q(28536, {	-- The Curse of Zin-Malor
@@ -505,8 +505,8 @@ _.Zones =
 					["sourceQuest"] = 5126,	-- Lorax's Tale
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(2, i(12696)),	-- Plans: Demon Forged Breastplate
-						un(2, i(12849, {	-- Demon Kissed Sack
+						un(REMOVED_FROM_GAME, i(12696)),	-- Plans: Demon Forged Breastplate
+						un(REMOVED_FROM_GAME, i(12849, {	-- Demon Kissed Sack
 							i(10383),	-- Commander's Pauldrons
 							i(10377),	-- Commander's Vambraces
 						})),
@@ -648,8 +648,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 4901,	-- Guardians of the Altar
 					["g"] = {
-						un(2, i(16623)),	-- Opaline Medallion
-						un(2, i(16622)),	-- Thornflinger
+						un(REMOVED_FROM_GAME, i(16623)),	-- Opaline Medallion
+						un(REMOVED_FROM_GAME, i(16622)),	-- Thornflinger
 					},
 				}),
 				q(8464, {	-- [DEPRECATED]Winterfall Activity

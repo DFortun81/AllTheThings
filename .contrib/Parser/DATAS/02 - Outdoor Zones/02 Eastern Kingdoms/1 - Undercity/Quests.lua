@@ -83,9 +83,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = 40,
 					["groups"] = {
-						un(2, i(17042)),	-- Nail Splitter
-						un(2, i(17039)),	-- Skullbreaker
-						un(2, i(17043)),	-- Zealot's Robe
+						un(REMOVED_FROM_GAME, i(17042)),	-- Nail Splitter
+						un(REMOVED_FROM_GAME, i(17039)),	-- Skullbreaker
+						un(REMOVED_FROM_GAME, i(17043)),	-- Zealot's Robe
 					},
 				}),
 				q(14353, {	-- An Unholy Alliance
@@ -94,9 +94,9 @@ _.Zones =
 					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
 					["sourceQuest"] = 14352,	-- An Unholy Alliance
 					["g"] = {
-						un(2, i(17039)),	-- Skullbreaker
-						un(2, i(17042)),	-- Nail Spitter
-						un(2, i(17043)),	-- Zealot's Robe
+						un(REMOVED_FROM_GAME, i(17039)),	-- Skullbreaker
+						un(REMOVED_FROM_GAME, i(17042)),	-- Nail Spitter
+						un(REMOVED_FROM_GAME, i(17043)),	-- Zealot's Robe
 					},
 				}),
 				q(3784,  {	-- Assisting Arch Druid Runetotem
@@ -112,7 +112,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(7132)),	-- Brutal Legguards
+						un(REMOVED_FROM_GAME, i(7132)),	-- Brutal Legguards
 					},
 				}),
 				q(38395, {	-- Completionism
@@ -151,8 +151,8 @@ _.Zones =
 					["lvl"] = 24,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(3749)),	-- High Apothecary Cloak
-						un(2, i(3747)),	-- Meditative Sash
+						un(REMOVED_FROM_GAME, i(3749)),	-- High Apothecary Cloak
+						un(REMOVED_FROM_GAME, i(3747)),	-- Meditative Sash
 					},
 				}),
 				q(232,   {	-- Errand for Apothecary Zinge
@@ -184,8 +184,8 @@ _.Zones =
 					["lvl"] = 25,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(6806)),	-- Dancing Flame
-						un(2, i(6804)),	-- Windstorm Hammer
+						un(REMOVED_FROM_GAME, i(6806)),	-- Dancing Flame
+						un(REMOVED_FROM_GAME, i(6804)),	-- Windstorm Hammer
 					},
 				}),
 				q(27304, {	-- Follow the Sun
@@ -203,7 +203,7 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(4984)),	-- Skull of Impending Doom
+						un(REMOVED_FROM_GAME, i(4984)),	-- Skull of Impending Doom
 					},
 				}),
 				q(1961, {	-- Gathering Materials
@@ -259,9 +259,9 @@ _.Zones =
 					["lvl"] = 33,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(10711)),	-- Dragon's Blood Necklace
-						un(2, i(6803)),	-- Prophetic Cane
-						un(2, i(6802)),	-- Sword of Omen
+						un(REMOVED_FROM_GAME, i(10711)),	-- Dragon's Blood Necklace
+						un(REMOVED_FROM_GAME, i(6803)),	-- Prophetic Cane
+						un(REMOVED_FROM_GAME, i(6802)),	-- Sword of Omen
 					},
 				}),
 				q(14355, {	-- Into The Scarlet Monastery
@@ -269,9 +269,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
 					["g"] = {
-						un(2, i(10711)),	-- Dragon's Blood Necklace
-						un(2, i(6803)),	-- Prophetic Cane
-						un(2, i(6802)),	-- Sword of Omen
+						un(REMOVED_FROM_GAME, i(10711)),	-- Dragon's Blood Necklace
+						un(REMOVED_FROM_GAME, i(6803)),	-- Prophetic Cane
+						un(REMOVED_FROM_GAME, i(6802)),	-- Sword of Omen
 					},
 				}),
 				q(1960, {	-- Investigate the Alchemist Shop
@@ -419,8 +419,8 @@ _.Zones =
 					["lvl"] = 48,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(15702)),	-- Chemist's Ring
-						un(2, i(15703)),	-- Chemist's Smock
+						un(REMOVED_FROM_GAME, i(15702)),	-- Chemist's Ring
+						un(REMOVED_FROM_GAME, i(15703)),	-- Chemist's Smock
 					},
 				}),
 				q(6322,  {	-- Michael Garrett
@@ -455,8 +455,8 @@ _.Zones =
 					["lvl"] = 42,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(20642)),	-- Antiquated Nobleman's Tunic
-						un(2, i(20643)),	-- Undercity Reservist's Cap
+						un(REMOVED_FROM_GAME, i(20642)),	-- Antiquated Nobleman's Tunic
+						un(REMOVED_FROM_GAME, i(20643)),	-- Undercity Reservist's Cap
 					},
 				}),
 				q(2342,  {	-- Reclaimed Treasures
@@ -488,8 +488,8 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(10637)),	-- Brewer's Gloves
-						un(2, i(10638)),	-- Long Draping Cape
+						un(REMOVED_FROM_GAME, i(10637)),	-- Brewer's Gloves
+						un(REMOVED_FROM_GAME, i(10638)),	-- Long Draping Cape
 					},
 				}),
 				q(28164, {	-- Seek Brother Silverhallow
@@ -541,7 +541,7 @@ _.Zones =
 					["lvl"] = 15,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(7510)),	-- Lesser Spellfire Robes
+						un(REMOVED_FROM_GAME, i(7510)),	-- Lesser Spellfire Robes
 					},
 				}),
 				q(1160,  {	-- Test of Lore
@@ -568,8 +568,8 @@ _.Zones =
 					["lvl"] = 15,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(7507)),	-- Arcane Orb
-						un(2, i(9514)),	-- Arcane Staff
+						un(REMOVED_FROM_GAME, i(7507)),	-- Arcane Orb
+						un(REMOVED_FROM_GAME, i(9514)),	-- Arcane Staff
 					},
 				}),
 				q(13377, {	-- The Battle for the Undercity [Alliance]
@@ -578,13 +578,13 @@ _.Zones =
 					["lvl"] = 71,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(44579)),	-- Medallion of Heroism
-						un(2, i(44591)),	-- Wrynn's Leggings of Foresight
-						un(2, i(44592)),	-- Wrynn's Leggings of Valor
-						un(2, i(44593)),	-- Wrynn's Leggings of Wisdom
-						un(2, i(44594)),	-- Wrynn's Legguards of Brutality
-						un(2, i(44595)),	-- Wrynn's Legguards of Heroism
-						un(2, i(44596)),	-- Wrynn's Legplates of Carnage
+						un(REMOVED_FROM_GAME, i(44579)),	-- Medallion of Heroism
+						un(REMOVED_FROM_GAME, i(44591)),	-- Wrynn's Leggings of Foresight
+						un(REMOVED_FROM_GAME, i(44592)),	-- Wrynn's Leggings of Valor
+						un(REMOVED_FROM_GAME, i(44593)),	-- Wrynn's Leggings of Wisdom
+						un(REMOVED_FROM_GAME, i(44594)),	-- Wrynn's Legguards of Brutality
+						un(REMOVED_FROM_GAME, i(44595)),	-- Wrynn's Legguards of Heroism
+						un(REMOVED_FROM_GAME, i(44596)),	-- Wrynn's Legplates of Carnage
 					},
 				}),
 				q(13267, {	-- The Battle for the Undercity [Horde]
@@ -594,13 +594,13 @@ _.Zones =
 					["u"] = 40,
 					["sourceQuest"] = 13266,	-- A Life Without Regret
 					["g"] = {
-						un(2, i(44579)),	-- Medallion of Heroism
-						un(2, i(44590)),	-- Warchief's Leggings of Foresight
-						un(2, i(44348)),	-- Warchief's Leggings of Valor
-						un(2, i(44346)),	-- Warchief's Leggings of Wisdom
-						un(2, i(44583)),	-- Warchief's Legguards of Brutality
-						un(2, i(44347)),	-- Warchief's Legguards of Heroism
-						un(2, i(44349)),	-- Warchief's Legplates of Carnage
+						un(REMOVED_FROM_GAME, i(44579)),	-- Medallion of Heroism
+						un(REMOVED_FROM_GAME, i(44590)),	-- Warchief's Leggings of Foresight
+						un(REMOVED_FROM_GAME, i(44348)),	-- Warchief's Leggings of Valor
+						un(REMOVED_FROM_GAME, i(44346)),	-- Warchief's Leggings of Wisdom
+						un(REMOVED_FROM_GAME, i(44583)),	-- Warchief's Legguards of Brutality
+						un(REMOVED_FROM_GAME, i(44347)),	-- Warchief's Legguards of Heroism
+						un(REMOVED_FROM_GAME, i(44349)),	-- Warchief's Legplates of Carnage
 					},
 				}),
 				q(1474, {	-- The Binding
@@ -609,7 +609,7 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(22243)),	-- Small Soul Pouch
+						un(REMOVED_FROM_GAME, i(22243)),	-- Small Soul Pouch
 					},				
 				}),
 				q(5961, {	-- The Champion of the Banshee Queen
@@ -656,9 +656,9 @@ _.Zones =
 					["lvl"] = 9,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(15449)),	-- Ghastly Trousers
-						un(2, i(15450)),	-- Dredgemire Leggings
-						un(2, i(15451)),	-- Gargoyle Leggings
+						un(REMOVED_FROM_GAME, i(15449)),	-- Ghastly Trousers
+						un(REMOVED_FROM_GAME, i(15450)),	-- Dredgemire Leggings
+						un(REMOVED_FROM_GAME, i(15451)),	-- Gargoyle Leggings
 					},
 				}),
 				q(14356,  {	-- The Power to Destroy
@@ -667,9 +667,9 @@ _.Zones =
 					["lvl"] = 9,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(15449)),	-- Ghastly Trousers
-						un(2, i(15450)),	-- Dredgemire Leggings
-						un(2, i(15451)),	-- Gargoyle Leggings
+						un(REMOVED_FROM_GAME, i(15449)),	-- Ghastly Trousers
+						un(REMOVED_FROM_GAME, i(15450)),	-- Dredgemire Leggings
+						un(REMOVED_FROM_GAME, i(15451)),	-- Gargoyle Leggings
 					},
 				}),
 				q(38404, {	-- The Same, But Different
@@ -727,8 +727,8 @@ _.Zones =
 					["lvl"] = 27,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(2032)),	-- Gallan Cuffs
-						un(2, i(4443)),	-- Grim Pauldrons
+						un(REMOVED_FROM_GAME, i(2032)),	-- Gallan Cuffs
+						un(REMOVED_FROM_GAME, i(4443)),	-- Grim Pauldrons
 					},
 				}),
 				q(4133, {	-- Vivian Lagrave

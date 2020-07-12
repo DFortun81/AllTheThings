@@ -945,7 +945,7 @@ _.Holidays =
 					},
 					{	-- Malfurion Has Returned! [Alliance - Human] REMOVED
 						["questID"] = 29107,	-- Malfurion Has Returned!
-						["u"] = 2,				-- Unobtainable	Note!! Looks like quest was removed in BFA due to Teladrassil burning!!
+						["u"] = REMOVED_FROM_GAME,				-- Unobtainable	Note!! Looks like quest was removed in BFA due to Teladrassil burning!!
 						["provider"] = { "n", 14305 },			-- Human Orphan
 						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = {
@@ -1287,7 +1287,7 @@ _.Holidays =
 					},
 					{	-- The Banshee Queen [Horde - Orc] REMOVED
 						["questID"] = 29167,	-- The Banshee Queen
-						["u"] = 2,				-- Unobtainable	Note!! Looks like quest was removed in BFA due to Teladrassil burning!!
+						["u"] = REMOVED_FROM_GAME,				-- Unobtainable	Note!! Looks like quest was removed in BFA due to Teladrassil burning!!
 						["provider"] = { "n", 14444 },			-- Orcish Orphan
 						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
 						["sourceQuests"] = {

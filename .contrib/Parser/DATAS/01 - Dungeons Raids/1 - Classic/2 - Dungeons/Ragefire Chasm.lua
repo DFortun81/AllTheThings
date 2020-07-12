@@ -39,8 +39,8 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(15452)),	-- Featherbead Bracers
-						un(2, i(15453)),	-- Savannah Bracers
+						un(REMOVED_FROM_GAME, i(15452)),	-- Featherbead Bracers
+						un(REMOVED_FROM_GAME, i(15453)),	-- Savannah Bracers
 					},
 				}),
 				q(26859, {	-- Searching for the Lost Satchel
@@ -58,13 +58,13 @@ _.Instances = { tier(1, {	-- Classic
 						31035,	-- Enemies Below
 					},
 					["g"] = {
-						un(2, i(131614)), 	-- Chasm Linked Pants
-						un(2, i(66031)), 	-- Hide Vest of the Shaman
-						un(2, i(66022)), 	-- Ragefire Leggings
-						un(2, i(49541)), 	-- Robes of the Doomed Ritual
-						un(2, i(131613)), 	-- Scaled Vest of the Shaman
-						un(2, i(66040)), 	-- Searing Belt
-						un(2, i(66045)), 	-- Stone Guard Greaves
+						un(REMOVED_FROM_GAME, i(131614)), 	-- Chasm Linked Pants
+						un(REMOVED_FROM_GAME, i(66031)), 	-- Hide Vest of the Shaman
+						un(REMOVED_FROM_GAME, i(66022)), 	-- Ragefire Leggings
+						un(REMOVED_FROM_GAME, i(49541)), 	-- Robes of the Doomed Ritual
+						un(REMOVED_FROM_GAME, i(131613)), 	-- Scaled Vest of the Shaman
+						un(REMOVED_FROM_GAME, i(66040)), 	-- Searing Belt
+						un(REMOVED_FROM_GAME, i(66045)), 	-- Stone Guard Greaves
 					},
 				}),
 				q(30996, {	-- The Dark Shaman
@@ -115,20 +115,20 @@ _.Instances = { tier(1, {	-- Classic
 			n(-40, {	-- Legacy
 				n(ZONEDROPS, {
 					un(43, n(11519, {	-- Bazzalan
-						un(2, i(68195)),	-- Bazzalan's Blade
+						un(REMOVED_FROM_GAME, i(68195)),	-- Bazzalan's Blade
 					})),
 					un(43, n(11518, {	-- Jergosh the Invoker
-						un(2, i(14147)),	-- Cavedweller Bracers
-						un(2, i(14151)),	-- Chanting Blade
-						un(2, i(14150)),	-- Robe of Evocation
+						un(REMOVED_FROM_GAME, i(14147)),	-- Cavedweller Bracers
+						un(REMOVED_FROM_GAME, i(14151)),	-- Chanting Blade
+						un(REMOVED_FROM_GAME, i(14150)),	-- Robe of Evocation
 					})),
 					un(43, n(11517, {	-- Oggleflint
 						un(7, i(68194)),	-- Oggleflint's Inspirer
 					})),
 					un(43, n(11520, {	-- Taragaman the Hungerer
-						un(2, i(14148)),	-- Crystalline Cuffs
-						un(2, i(14145)),	-- Cursed Felblade
-						un(2, i(14149)),	-- Subterranean Cape
+						un(REMOVED_FROM_GAME, i(14148)),	-- Crystalline Cuffs
+						un(REMOVED_FROM_GAME, i(14145)),	-- Cursed Felblade
+						un(REMOVED_FROM_GAME, i(14149)),	-- Subterranean Cape
 					})),
 				}),
 			}),

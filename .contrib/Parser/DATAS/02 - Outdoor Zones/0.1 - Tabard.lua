@@ -57,7 +57,7 @@ _.Zones =
 			},
 			{	-- Competitor's Tabard
 				["itemID"] = 36941,	-- Competitor's Tabard
-				["u"] = 3,			-- Blizzard Promotion
+				["u"] = REMOVED_FROM_GAME,
 				["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
 			},
 			{	-- Consortium Tabard

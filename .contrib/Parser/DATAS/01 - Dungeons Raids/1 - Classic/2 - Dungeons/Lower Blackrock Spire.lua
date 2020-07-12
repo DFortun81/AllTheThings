@@ -21,8 +21,8 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 10257 },	-- Bijou
 					["sourceQuest"] = 4982,	-- Bijou's Belongings
 					["g"] = {
-						un(2, i(15858)),	-- Freewind Gloves
-						un(2, i(15859)),	-- Seapost Girdle
+						un(REMOVED_FROM_GAME, i(15858)),	-- Freewind Gloves
+						un(REMOVED_FROM_GAME, i(15859)),	-- Seapost Girdle
 					},
 				}),
 				q(4941, {	-- Eitrigg's Wisdom
@@ -135,7 +135,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			cr(9196, e(388, {	-- Highlord Omokk
-				un(2, i(16670)),	-- Boots of Elements
+				un(REMOVED_FROM_GAME, i(16670)),	-- Boots of Elements
 				i(13167),	-- Fist of Omokk
 				i(151412),	-- Ogre Highlord's Casque
 				i(13168),	-- Plate of the Shaman King
@@ -172,8 +172,8 @@ _.Instances = { tier(1, {	-- Classic
 				i(13179),	-- Brazecore Armguards
 				i(22231),	-- Kayser's Boots of Precision
 				un(7, i(16676)),	-- Beaststalker's Gloves
-				un(2, i(13175)),	-- Voone's Twitchbow
-				un(2, i(13173)),	-- Broken Flightblade Throwing Axe
+				un(REMOVED_FROM_GAME, i(13175)),	-- Voone's Twitchbow
+				un(REMOVED_FROM_GAME, i(13173)),	-- Broken Flightblade Throwing Axe
 				i(12335, {	-- Gemstone of Smolderthorn
 					un(40, q(4742)),	-- Seal of Ascension
 				}),
@@ -208,7 +208,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(151414),	-- Arcanophile's Greatcloak
 				i(13244),	-- Gilded Gauntlets
 				i(13213),	-- Smolderweb's Eye
-				un(2, i(16715)),	-- Wildheart Boots
+				un(REMOVED_FROM_GAME, i(16715)),	-- Wildheart Boots
 			})),
 			cr(10584, e(392, {	-- Urok Doomhowl
 				["description"] = "Summonable Boss. Loot a Roughshod Pike, found on the left wall after crossing the second bridge before heading to Highlord Omokk. Kill Highlord Omokk and loot his head. After killing Mother Smolderweb, head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",
@@ -248,7 +248,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(151417),	-- Worg-Keeper's Spaulders
 				i(13208),	-- Bleak Howler Armguards
 				i(13206),	-- Wolfshear Leggings
-				un(2, i(16718)),	-- Wildheart Spaulders
+				un(REMOVED_FROM_GAME, i(16718)),	-- Wildheart Spaulders
 			})),
 			n(9718, {	-- Ghok Bashguud (Rare)
 				["coords"] = {
@@ -270,9 +270,9 @@ _.Instances = { tier(1, {	-- Classic
 				i(13143),	-- Mark of the Dragon Lord
 				i(22321),	-- Heart of Wyrmthalak
 				i(142370),	-- Plans: Arcanite Champion
-				un(2, i(16679)),	-- Beaststalker's Mantle
-				un(2, i(13148)), 	-- Chillpike [Disappeared sometime around 3.0]
-				un(2, i(13164)),	-- Heart of the Scale
+				un(REMOVED_FROM_GAME, i(16679)),	-- Beaststalker's Mantle
+				un(REMOVED_FROM_GAME, i(13148)), 	-- Chillpike [Disappeared sometime around 3.0]
+				un(REMOVED_FROM_GAME, i(13164)),	-- Heart of the Scale
 				i(12337, {	-- Gemstone of Bloodaxe
 					un(40, q(4742)),	-- Seal of Ascension
 				}),
