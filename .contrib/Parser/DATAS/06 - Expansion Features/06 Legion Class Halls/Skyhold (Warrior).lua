@@ -104,7 +104,6 @@ _.ExpansionFeatures =
 							45834,	-- Stolen Souls
 						},
 					}),
-					q(46208),	-- A Godly Invitation
 					q(43425, {	-- A Hero's Weapon
 						["coord"] = { 58.3, 84.6, 695 },
 						["classes"] = { WARRIOR },
@@ -122,7 +121,12 @@ _.ExpansionFeatures =
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 108961 },	-- Sergeant Dalton
 					}),
-					q(45986),	-- An Urgent Warning
+					q(45986, {	-- An Urgent Warning
+						["u"] = 40,
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 118406 },	-- Injured Shieldmaiden
+						["isBreadcrumb"] = true,
+					}),
 					q(44850, {	-- Arming the Army
 						["maps"] = { 649 },	-- Helheim
 						["coord"] = { 34.3, 28.5, 649 },	-- Helheim
@@ -167,7 +171,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 96469 },	-- Odyn
 						["sourceQuest"] = 43506,	-- Black Rook Hold: Greater Power
 					}),
-					q(44221),	-- Champion Armaments
+					q(44221, {	-- Champion Armaments
+						["coord"] = { 62.3, 25.8, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 110437 },	-- Haklang Ulfsson
+						["description"] = "Only available if you you have the |cFFFFD700Heavenly Forge|r order hall upgrade.",
+					}),
 					q(42616, {	-- Champion: Dvalen Ironrune
 						["coord"] = { 57.1, 75.0, 695 },
 						["classes"] = { WARRIOR },
@@ -248,7 +257,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 96469 },	-- Odyn
 						["sourceQuest"] = 42597,	-- Odyn's Summons
 					}),
-					q(47072),	-- Delivering Lost Knowledge
 					q(42918, {	-- Demonic Runes
 						["coord"] = { 58.3, 84.6, 695 },
 						["classes"] = { WARRIOR },
@@ -275,7 +283,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 116193 },	-- Aerylia
 						["sourceQuest"] = 44849,	-- Recruitment Drive
 					}),
-					q(45987),	-- Investigate the Broken Shore
+					q(45987, {	-- Investigate the Broken Shore
+						["u"] = 40,
+						["coord"] = { 59.7, 13.4, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
+						["sourceQuest"] = 45986,	-- An Urgent Warning
+					}),
 					q(42204, {	-- Jorhuttam
 						["maps"] = { 650 },	-- Highmountain
 						["coord"] = { 53.8, 87.8, 650 },
