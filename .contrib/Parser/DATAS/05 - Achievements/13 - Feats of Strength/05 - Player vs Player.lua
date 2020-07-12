@@ -304,7 +304,7 @@ _.Achievements =
 					un(REMOVED_FROM_GAME, h(ach(11005))),	-- Cruel Combatant (Horde)
 					un(REMOVED_FROM_GAME, ach(11697)),		-- Cruel Elite
 					un(REMOVED_FROM_GAME, ach(11037, {		-- Cruel Gladiator: Legion Season 3
-						un(39, title(359)),		-- Cruel Gladiator
+						un(REMOVED_FROM_GAME, title(359)),		-- Cruel Gladiator
 					})),
 					un(REMOVED_FROM_GAME, ach(3336)),		-- Deadly Gladiator
 					un(REMOVED_FROM_GAME, a(ach(11022))),	-- Defender of the Alliance: Legion Season 1
@@ -329,11 +329,11 @@ _.Achievements =
 					un(REMOVED_FROM_GAME, h(ach(10119))),	-- Defender of the Horde: Warlords Season 3
 					un(REMOVED_FROM_GAME, ach(12198)),		-- Demonic Elite
 					un(REMOVED_FROM_GAME, ach(12185, {		-- Demonic Gladiator: Legion Season 7
-						un(39, title(370)),		-- Demonic Gladiator
+						un(REMOVED_FROM_GAME, title(370)),		-- Demonic Gladiator
 					})),
 					un(REMOVED_FROM_GAME, ach(12135)),		-- Dominant Elite
 					un(REMOVED_FROM_GAME, ach(12134, {		-- Dominant Gladiator: Legion Season 6
-						un(39, title(368)),		-- Dominant Gladiator
+						un(REMOVED_FROM_GAME, title(368)),		-- Dominant Gladiator
 					})),
 					un(REMOVED_FROM_GAME, ach(11015)),		-- Duelist: Legion Season 1
 					un(REMOVED_FROM_GAME, ach(11026)),		-- Duelist: Legion Season 2
@@ -351,19 +351,19 @@ _.Achievements =
 					un(REMOVED_FROM_GAME, h(ach(11003))),	-- Fearless Combatant (Horde)
 					un(REMOVED_FROM_GAME, ach(11579)),		-- Fearless Elite
 					un(REMOVED_FROM_GAME, ach(11014, {		-- Fearless Gladiator: Legion Season 2
-						un(39, title(355)),		-- Fearless Gladiator
+						un(REMOVED_FROM_GAME, title(355)),		-- Fearless Gladiator
 					})),
 					un(REMOVED_FROM_GAME, a(ach(11010))),	-- Ferocious Combatant (Alliance)
 					un(REMOVED_FROM_GAME, h(ach(11009))),	-- Ferocious Combatant (Horde)
 					un(REMOVED_FROM_GAME, ach(11698)),		-- Ferocious Elite
 					un(REMOVED_FROM_GAME, ach(11062, {		-- Ferocious Gladiator: Legion Season 4
-						un(39, title(360)),		-- Ferocious Gladiator
+						un(REMOVED_FROM_GAME, title(360)),		-- Ferocious Gladiator
 					})),
 					un(REMOVED_FROM_GAME, a(ach(12032))),	-- Fierce Combatant (Alliance)
 					un(REMOVED_FROM_GAME, h(ach(12031))),	-- Fierce Combatant (Horde)
 					un(REMOVED_FROM_GAME, ach(12090)),		-- Fierce Elite
 					un(REMOVED_FROM_GAME, ach(12010, {		-- Fierce Gladiator: Legion Season 5
-						un(39, title(363)),		-- Fierce Gladiator
+						un(REMOVED_FROM_GAME, title(363)),		-- Fierce Gladiator
 					})),
 					un(REMOVED_FROM_GAME, ach(3436)),		-- Furious Gladiator
 					un(REMOVED_FROM_GAME, ach(11011)),		-- Gladiator: Legion Season 1
@@ -385,7 +385,7 @@ _.Achievements =
 						un(REMOVED_FROM_GAME, i(128282)),		-- Warmongering Gladiator's Felblood Gronnling
 					})),
 					un(REMOVED_FROM_GAME, ach(8643, {		-- Grievous Gladiator: Season 14
-						un(39, title(253)),		-- Grievous Gladiator
+						un(REMOVED_FROM_GAME, title(253)),		-- Grievous Gladiator
 					})),
 					un(REMOVED_FROM_GAME, a(ach(11020))),	-- Guardian of the Alliance: Legion Season 1
 					un(REMOVED_FROM_GAME, a(ach(11032))),	-- Guardian of the Alliance: Legion Season 2
@@ -452,10 +452,10 @@ _.Achievements =
 					un(REMOVED_FROM_GAME, ach(3618)),		-- Murkimus the Gladiator
 						un(REMOVED_FROM_GAME, i(100870)),	-- Murkismus the gladiator
 					un(REMOVED_FROM_GAME, ach(8666, {		-- Prideful Gladiator: Season 15
-						un(39, title(254)),		-- Prideful Gladiator
+						un(REMOVED_FROM_GAME, title(254)),		-- Prideful Gladiator
 					})),
 					un(REMOVED_FROM_GAME, ach(9232, {		-- Primal Gladiator: Warlords Season 1
-						un(39, title(308)),		-- Primal Gladiator
+						un(REMOVED_FROM_GAME, title(308)),		-- Primal Gladiator
 					})),
 					un(REMOVED_FROM_GAME, ach(3758)),		-- Relentless Gladiator
 					un(REMOVED_FROM_GAME, a(ach(9256, {	-- Rescue Operation (Alliance)
@@ -516,7 +516,7 @@ _.Achievements =
 						}),
 					}),
 					un(REMOVED_FROM_GAME, ach(8392, {		-- Tournament Glory 2013
-						un(39, title(128)),		-- Vanquisher
+						un(REMOVED_FROM_GAME, title(128)),		-- Vanquisher
 					})),
 					un(REMOVED_FROM_GAME, ach(8391)),		-- Tournament Participation 2013
 					un(REMOVED_FROM_GAME, ach(8791)),		-- Tyrannical Gladiator
@@ -526,15 +526,15 @@ _.Achievements =
 					un(REMOVED_FROM_GAME, h(ach(10997))),	-- Vindictive Combatant (Horde)
 					un(REMOVED_FROM_GAME, ach(11578)),		-- Vindictive Elite
 					un(REMOVED_FROM_GAME, ach(11012, {		-- Vindictive Gladiator: Legion Season 1
-						un(39, title(353)),		-- Vindictive Gladiator
+						un(REMOVED_FROM_GAME, title(353)),		-- Vindictive Gladiator
 					})),
 					un(REMOVED_FROM_GAME, a(ach(10095))),	-- Warmongering Combatant (Alliance)
 					un(REMOVED_FROM_GAME, h(ach(10094))),	-- Warmongering Combatant (Horde)
 					un(REMOVED_FROM_GAME, ach(10097, {		-- Warmongering Gladiator: Warlords Season 3
-						un(39, title(316)),		-- Warmongering Gladiator
+						un(REMOVED_FROM_GAME, title(316)),		-- Warmongering Gladiator
 					})),
 					un(REMOVED_FROM_GAME, ach(10096, {		-- Wild Gladiator: Warlords Season 2
-						un(39, title(315)),		-- Wild Gladiator
+						un(REMOVED_FROM_GAME, title(315)),		-- Wild Gladiator
 					})),
 					un(REMOVED_FROM_GAME, ach(4599)),		-- Wrathful Gladiator
 				},

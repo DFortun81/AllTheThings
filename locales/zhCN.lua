@@ -1021,16 +1021,16 @@ L["UNOBTAINABLE_ITEM_REASONS"] = {
     -- {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
     {1, "|CFFFF0000This was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
 	{1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game (2)"}, -- No Hope -- 2
-    {1, "", ""}, -- 3
-    {1, "", ""}, -- 4
-    {1, "", ""}, -- 5
+    {0, "", ""}, -- 3
+    {0, "", ""}, -- 4
+    {0, "", ""}, -- 5
     {2, "|CFFFF0000此物品是典藏版的一部分。网上可能仍有极小数量出售。|r", "典藏版 (6)"}, -- Little Hope -- 6
     {3, "|CFFFF0000此物品的获得方式已被移除，但此物品是装备后绑定，或者是可装笼的宠物。|r", "装绑物品 (7)"}, -- There is Hope -- 7
     {3, "|CFFFF0000制造此物品的配方已被移除，且此物品装备后绑定，因此仍然可以制造和交易。|r", "配方移除的装绑物品 (8)"}, -- There is Hope -- 8
     {3, "|CFFFF0000此物品的获得方式已被移除，只能从黑市拍卖行获得。|r", "黑市拍卖行 (9)"}, -- There is Hope -- 9
     {3, "|CFFFF0000此物品通过TCG卡牌获得，卡牌不再发行，但网络上、黑市拍卖行甚至交易行仍可能出现。国服也可能有积分兑换活动。|r", "TCG卡牌 (10)"}, -- There is Hope -- 10
     {3, "|CFFFF0000此物品拾取后绑定，但是如果你有召唤首领所需的物品仍可获得。|r", "需要召唤道具 (11)"}, -- There is Hope -- 11
-    {1, "", ""}, -- 12
+    {0, "", ""}, -- 12
     {1, "|CFFFF0000你的追随者等级过高，奖励此物品的任务不再刷新。|r", "绝版物资 (13)"}, -- 13
     {2, "|CFFFF0000此物品无法购买，除非你在对应赛季的PvP评分或排名达标。|r", "PvP Elite/Gladiator (14)"}, -- 14
     {1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
@@ -1051,13 +1051,13 @@ L["UNOBTAINABLE_ITEM_REASONS"] = {
     {19, "|CFF00FFDE只能在荆棘谷钓鱼大赛获得。|r", "荆棘谷钓鱼大赛 (30) "}, --30
     {20, "|CFF00FFDE只能在魔兽世界周年庆期间获得。\n未来的周年庆中可能也可获得。|r\n", "魔兽世界周年庆 (31)"}, --31
     {4, "|CFFFF0000这是此任务原本的奖励，后来任务重做了，也改变了奖励。If you did complete this quest it is likely this item will not be added to your transmog as Blizzard will add the rewards from the revamped quest.|r", "奖励已重做 (32)"}, --32
-    {1, "", ""}, -- 33
-    {1, "", ""}, --34
+    {0, "", ""}, -- 33
+    {0, "", ""}, --34
     {3, "|CFFFF0000在游戏内商城出售。|r", "游戏内商城 (35)"}, --35
     {21, "|CFFFF0000只能在曾经的魔兽世界周年庆期间获得，不再可得。|r\n", "魔兽世界周年庆 [已移除] (36)"}, -- 36
-    {1, "|CFFFF0000此头衔在游戏中不再可得。|r", "头衔 (37)"}, --37
+    {0, "", ""}, --37
     {4, "|CFFFF0000此项只有在熊猫人之谜资料片完成了传说披风任务线的玩家才能获得。|r", "斡耳朵斯－传说披风 (38)"}, --38
-    {4, "|CFFFF0000此头衔不再可得。|r", "绝版头衔 (39)"}, --39
+    {0, "", ""}, --39
     {4, "|CFFFF0000任务或任务物品已绝版，不再可得。|r", "绝版任务 (40)"}, -- 40
     {4, "|CFFFF0000这些外观只有完成了法师塔神器挑战，获得了基础配色的玩家才能获得。|r", "法师塔外观 (41)"}, -- 41
     {21, "|CFFFF0000这些外观只有在对应资料片的时空漫游周才能获得。|r", "时空漫游 (42)"}, -- 42

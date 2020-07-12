@@ -34,7 +34,7 @@ _.Achievements =
 					})),
 					un(REMOVED_FROM_GAME, ach(6920)),	-- Challenge Conqueror
 					un(REMOVED_FROM_GAME, ach(6374, {	-- Challenge Conqueror: Bronze
-						un(39, title(201)),	-- the Undaunted
+						un(REMOVED_FROM_GAME, title(201)),	-- the Undaunted
 					})),
 					un(REMOVED_FROM_GAME, ach(6378, {	-- Challenge Conqueror: Gold
 						un(REMOVED_FROM_GAME, i(90155, {	-- Golden Chest of the Golden King
@@ -186,7 +186,7 @@ _.Achievements =
 					})),
 					un(REMOVED_FROM_GAME, ach(8895)),	-- Challenge Warlord
 					un(REMOVED_FROM_GAME, ach(8897, {	-- Challenge Warlord: Bronze
-						un(39, title(290)),	-- the Indomitable
+						un(REMOVED_FROM_GAME, title(290)),	-- the Indomitable
 					})),
 					un(REMOVED_FROM_GAME, ach(8899, {	-- Challenge Warlord: Gold
 						un(REMOVED_FROM_GAME, i(118395)),	-- Claws of Creation

@@ -85,7 +85,7 @@ _.Achievements =
 						["classes"] = {1,2,6},
 					}),
 					un(REMOVED_FROM_GAME, ach(11387, {		-- The Chosen
-						un(39, title(347)),	-- the Chosen
+						un(REMOVED_FROM_GAME, title(347)),	-- the Chosen
 					})),
 					un(REMOVED_FROM_GAME, ach(2496)),		-- The Fifth Element
 					ach(725, {				-- Thori'dal, the Stars' Fury

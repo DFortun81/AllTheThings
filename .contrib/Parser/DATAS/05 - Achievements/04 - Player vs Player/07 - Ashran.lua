@@ -141,14 +141,14 @@ _.Achievements =
 			ach(9473, {		-- Vol'jin's Spear
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					un(39, h(title(285))),	-- ,Spear of Vol'jin
+					un(REMOVED_FROM_GAME, h(title(285))),	-- ,Spear of Vol'jin
 					faction(1681), 	-- Vol'jin's Spear
 				},
 			}),
 			ach(9474, {		-- Wrynn's Vanguard
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					un(39, a(title(286))),	-- ,Sword of Wrynn
+					un(REMOVED_FROM_GAME, a(title(286))),	-- ,Sword of Wrynn
 					faction(1682),	-- Wyrnn's Vanguard
 				},
 			}),

@@ -133,18 +133,18 @@ _.Achievements =
 					}),
 					un(REMOVED_FROM_GAME, ach(13078)),	-- Realm First! Battle for Azeroth Keystone Master
 					un(REMOVED_FROM_GAME, ach(3259, {	-- Realm First! Celestial Defender
-						un(39, title(125)),	-- the Celestial Defender
+						un(REMOVED_FROM_GAME, title(125)),	-- the Celestial Defender
 					})),
 					un(REMOVED_FROM_GAME, ach(6433)),	-- Realm First! Challenge Conqueror: Gold
 					un(REMOVED_FROM_GAME, ach(1402, {	-- Realm First! Conqueror of Naxxramas
-						un(39, title(90)),	-- ,Conqueror of Naxxramas
+						un(REMOVED_FROM_GAME, title(90)),	-- ,Conqueror of Naxxramas
 					})),
 					un(REMOVED_FROM_GAME, ach(3117, {	-- Realm First! Death's Demise
-						un(39, title(124)),	-- ,Death's Demise
+						un(REMOVED_FROM_GAME, title(124)),	-- ,Death's Demise
 					})),
 					un(REMOVED_FROM_GAME, ach(4576)),	-- Realm First! Fall of the Lich King
 					un(REMOVED_FROM_GAME, ach(4078, {	-- Realm First! Grand Crusader
-						un(39, title(135)),	-- Grand Crusader
+						un(REMOVED_FROM_GAME, title(135)),	-- Grand Crusader
 					})),
 					un(REMOVED_FROM_GAME, ach(1415)),	-- Realm First! Grand Master Alchemist
 					un(REMOVED_FROM_GAME, ach(1420)),	-- Realm First! Grand Master Angler
@@ -222,11 +222,11 @@ _.Achievements =
 					un(REMOVED_FROM_GAME, ach(6746)),	-- Realm First! Level 90 Warlock
 					un(REMOVED_FROM_GAME, ach(6750)),	-- Realm First! Level 90 Warrior
 					un(REMOVED_FROM_GAME, ach(1400, {	-- Realm First! Magic Seeker
-						un(39, title(88)),	-- the Magic Seeker
+						un(REMOVED_FROM_GAME, title(88)),	-- the Magic Seeker
 					})),
 					un(REMOVED_FROM_GAME, ach(1463)),	-- Realm First! Northrend Vanguard
 					un(REMOVED_FROM_GAME, ach(456, {	-- Realm First! Obsidian Slayer
-						un(39, title(106)),	-- Obsidian Slayer
+						un(REMOVED_FROM_GAME, title(106)),	-- Obsidian Slayer
 					})),
 					un(REMOVED_FROM_GAME, ach(6829)),	-- Realm First! Pandaren Ambassador
 					un(REMOVED_FROM_GAME, ach(6859)),	-- Realm First! Zen Master Alchemist

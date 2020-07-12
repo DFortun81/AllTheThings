@@ -64,7 +64,7 @@ _.Achievements =
 					un(REMOVED_FROM_GAME, a(ach(10021))),	-- Chapter IV: Darkness Incarnate (Alliance)
 					un(REMOVED_FROM_GAME, h(ach(10148))),	-- Chapter IV: Darkness Incarnate(Horde)
 					un(REMOVED_FROM_GAME, ach(8325, {		-- Chapter V: Judgment of the Black Prince
-						un(39, title(306)),		-- ,Legend of Pandaria
+						un(REMOVED_FROM_GAME, title(306)),		-- ,Legend of Pandaria
 					})),
 					un(REMOVED_FROM_GAME, ach(2358, {		-- Charger
 						["groups"] = {
@@ -72,7 +72,7 @@ _.Achievements =
 						["classes"] = { 2 },
 					})),
 					un(REMOVED_FROM_GAME, h(ach(8307, {	-- Darkspear Revolutionary
-						un(39, h(title(228))),	-- Darkspear Revolutionary
+						un(REMOVED_FROM_GAME, h(title(228))),	-- Darkspear Revolutionary
 					}))),
 					un(REMOVED_FROM_GAME, a(ach(8340, {	-- Deck Your Collection (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
 						--i(98543),	-- Wraps of the Blood-Soaked Brawler [Only leaving in under Season 2 since you are still able to complete that as of Legion and possibly BfA]
@@ -126,7 +126,7 @@ _.Achievements =
 					un(REMOVED_FROM_GAME, h(ach(8337))),	-- Having a Brawl (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
 					un(REMOVED_FROM_GAME, ach(957)),		-- Hero of the Zandalar Tribe
 					un(REMOVED_FROM_GAME, a(ach(8306, {	-- Hordebreaker
-						un(39, a(title(230))),	-- the Hordebreaker
+						un(REMOVED_FROM_GAME, a(title(230))),	-- the Hordebreaker
 					}))),
 					un(REMOVED_FROM_GAME, ach(7943)),		-- I'm Your Number One Fan (Season 2) **Can't find any commentary on whether this is still available in Legion season or not.**
 					un(REMOVED_FROM_GAME, a(ach(8336))),	-- I've Got the Biggest Brawls of Them All (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**

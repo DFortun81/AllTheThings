@@ -29,7 +29,7 @@ _.WorldEvents =
 						["groups"] = {
 							un(REMOVED_FROM_GAME, ach(416, {	-- Scarab Lord
 								["groups"] = {
-									un(39, title(33)),	-- Scarab Lord Title
+									un(REMOVED_FROM_GAME, title(33)),	-- Scarab Lord Title
 									un(REMOVED_FROM_GAME, i(21176)),	-- Black Qiraji Resonating Crystal
 									un(REMOVED_FROM_GAME, { ["mountID"] = 239770, ["questID"] = 8743 }),	-- Black Qiraji War Tank (No item available.)
 								},

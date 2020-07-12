@@ -18,7 +18,7 @@ _.Achievements =
 				["groups"] = {
 					un(REMOVED_FROM_GAME, ach(11139, {	-- Field Medic!
 						["groups"] = {
-							un(39, title(340, {	-- TITLE: Field Medic!
+							un(REMOVED_FROM_GAME, title(340, {	-- TITLE: Field Medic!
 								["groups"] = {
 									{
 										["achievementID"] = 11139,	-- Field Medic (Achievement)
