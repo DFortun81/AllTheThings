@@ -74,12 +74,12 @@ _.Mounts =
 		i(129280),	-- Prestigious War Steed
 		i(143864),	-- Prestigious War Wolf
 		i(163982),	-- Pureheart Courser
-		un(1, i(166417)),	-- Reins of the Onyx War Hyena	-- Nobody obtained it since Season 2 start. Hopefully will be added later
+		un(NEVER_IMPLEMENTED, i(166417)),	-- Reins of the Onyx War Hyena	-- Nobody obtained it since Season 2 start. Hopefully will be added later
 		i(138387),	-- Ratstallion
 		i(44842),	-- Red Dragonhawk
 		i(44160),	-- Red Proto-Drake
 		i(45802),	-- Rusted Proto-Drake
-		un(2, i(156880)),	-- Sinister Gladiator's Proto-Drake
+		un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake
 		i(169194),	-- Snapback Scuttler
 		i(128706),	-- Soaring Skyterror
 		i(104208),	-- Spawn of Galakras

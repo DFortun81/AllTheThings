@@ -126,7 +126,7 @@ _.Achievements =
 						crit(19),		-- Siamese Cat
 						crit(20),		-- Silver Tabby Cat
 						crit(21),		-- Snow Cub
-						un(3, crit(22)),-- Spectral Cub
+						un(REMOVED_FROM_GAME,crit(22)),-- Spectral Cub
 						crit(23),		-- Spectral Tiger Cub
 						crit(24),		-- White Kitten
 						crit(25),		-- Winterspring Cub

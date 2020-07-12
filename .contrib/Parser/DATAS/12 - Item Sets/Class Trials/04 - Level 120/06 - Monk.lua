@@ -45,7 +45,7 @@ _.GearSets =
 								},
 								{	-- Mistdancer Necklace
 									["itemID"] = 170655,	-- Mistdancer Necklace
-									["u"] = 1,	
+									["u"] = NEVER_IMPLEMENTED,	
 								},
 								{	-- Mistdancer Shoulders
 									["itemID"] = 170827,	-- Mistdancer Shoulders
@@ -98,11 +98,11 @@ _.GearSets =
 							},
 							{	-- Mistdancer Amulet
 								["itemID"] = 170647,	-- Mistdancer Amulet
-								["u"] = 1,	
+								["u"] = NEVER_IMPLEMENTED,	
 							},
 							{	-- Mistdancer Choker
 								["itemID"] = 170662,	-- Mistdancer Choker
-								["u"] = 1,	
+								["u"] = NEVER_IMPLEMENTED,	
 							},
 							{	-- Mistdancer Pauldrons
 								["itemID"] = 170820,	-- Mistdancer Pauldrons

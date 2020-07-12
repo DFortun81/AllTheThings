@@ -6,8 +6,8 @@ _.WorldEvents =
 	n(-65, {	-- Blizzard Promotions
 		["groups"] = {
 			n(-562, {	-- 2008 Worldwide Invitational
-				un(3, ach(414, {	-- Tyrael's Hilt
-					un(3, i(39656)),	-- Tyrael's Hilt (Mini Tyrael)
+				un(REMOVED_FROM_GAME, ach(414, {	-- Tyrael's Hilt
+					un(REMOVED_FROM_GAME, i(39656)),	-- Tyrael's Hilt (Mini Tyrael)
 				})),
 			}),
 		},

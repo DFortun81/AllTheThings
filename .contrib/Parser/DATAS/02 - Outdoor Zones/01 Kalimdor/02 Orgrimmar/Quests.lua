@@ -943,7 +943,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(21996)),	-- Bracers of Heroism
+						un(REMOVED_FROM_GAME, i(21996)),	-- Bracers of Heroism
 					},
 				}),
 				q(10493, {	-- An Earnest Proposition (Paladin)
@@ -954,7 +954,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22088)),	-- Soulforge Bracers
+						un(REMOVED_FROM_GAME, i(22088)),	-- Soulforge Bracers
 					},
 				}),
 				q(8914,  {	-- An Earnest Proposition (Hunter)
@@ -965,7 +965,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22011)),	-- Beastmaster's Bindings
+						un(REMOVED_FROM_GAME, i(22011)),	-- Beastmaster's Bindings
 					},
 				}),
 				q(8917,  {	-- An Earnest Proposition (Rogue)
@@ -976,7 +976,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22004)),	-- Darkmantle Bracers
+						un(REMOVED_FROM_GAME, i(22004)),	-- Darkmantle Bracers
 					},
 				}),
 				q(8916,  {	-- An Earnest Proposition (Priest)
@@ -987,7 +987,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22079)),	-- Virtuous Bracers
+						un(REMOVED_FROM_GAME, i(22079)),	-- Virtuous Bracers
 					},
 				}),
 				q(8918,  {	-- An Earnest Proposition (Shaman)
@@ -998,7 +998,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22095)),	-- Bindings of The Five Thunders
+						un(REMOVED_FROM_GAME, i(22095)),	-- Bindings of The Five Thunders
 					},
 				}),
 				q(8915,  {	-- An Earnest Proposition (Mage)
@@ -1009,7 +1009,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22063)),	-- Sorcerer's Bindings
+						un(REMOVED_FROM_GAME, i(22063)),	-- Sorcerer's Bindings
 					},
 				}),
 				q(8919,  {	-- An Earnest Proposition (Warlock)
@@ -1020,7 +1020,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22071)),	-- Deathmist Bracers
+						un(REMOVED_FROM_GAME, i(22071)),	-- Deathmist Bracers
 					},
 				}),
 				q(8913,  {	-- An Earnest Proposition (Druid)
@@ -1031,7 +1031,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22108)),	-- Feralheart Bracers
+						un(REMOVED_FROM_GAME, i(22108)),	-- Feralheart Bracers
 					},
 				}),
 				q(936,   {	-- Assisting Arch Druid Runetotem
@@ -1098,9 +1098,9 @@ _.Zones =
 					["lvl"] = 48,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(11862)),	-- White Bone Band
-						un(2, i(11863)),	-- White Bone Shredder
-						un(2, i(11864)),	-- White Bone Spear
+						un(REMOVED_FROM_GAME, i(11862)),	-- White Bone Band
+						un(REMOVED_FROM_GAME, i(11863)),	-- White Bone Shredder
+						un(REMOVED_FROM_GAME, i(11864)),	-- White Bone Spear
 					},
 				}),
 				q(29219, {	-- Bwemba's Spirit
@@ -1118,9 +1118,9 @@ _.Zones =
 					["lvl"] = 50,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(11872)),	-- Eschewal Greaves
-						un(2, i(11870)),	-- Oblivion Orb
-						un(2, i(11871)),	-- Snarkshaw Spaulders
+						un(REMOVED_FROM_GAME, i(11872)),	-- Eschewal Greaves
+						un(REMOVED_FROM_GAME, i(11870)),	-- Oblivion Orb
+						un(REMOVED_FROM_GAME, i(11871)),	-- Snarkshaw Spaulders
 					},
 				}),
 				q(7492, {	-- Camp Mojache
@@ -1172,7 +1172,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 15,
 					["g"] = {
-						un(2, i(56708)),	-- Bow of Ire (old version)
+						un(REMOVED_FROM_GAME, i(56708)),	-- Bow of Ire (old version)
 						i(119325),	-- Bow of Ire
 						i(119326), 	-- Ring of Pardons
 						i(119327),	-- Durak's Downfall
@@ -1203,9 +1203,9 @@ _.Zones =
 					["lvl"] = 60,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(18403)),	-- Dragonslayer's Signet
-						un(2, i(18406)),	-- Onyxia Blood Talisman
-						un(2, i(18404)),	-- Onyxia Tooth Pendant
+						un(REMOVED_FROM_GAME, i(18403)),	-- Dragonslayer's Signet
+						un(REMOVED_FROM_GAME, i(18406)),	-- Onyxia Blood Talisman
+						un(REMOVED_FROM_GAME, i(18404)),	-- Onyxia Tooth Pendant
 					},
 				}),
 				q(8367, {	-- For Great Honor
@@ -1249,10 +1249,10 @@ _.Zones =
 					["provider"] = { "n", 3216 },	-- Neeru Fireblade
 					["sourceQuest"] = 5729,	-- Hidden Enemies
 					["g"] = {
-						un(2, i(15424)),	-- Axe of Orgrimmar
-						un(2, i(15445)),	-- Hammer of Orgrimmar
-						un(2, i(15443)),	-- Kris of Orgrimmar
-						un(2, i(15444)),	-- Staff of Ogrimmar
+						un(REMOVED_FROM_GAME, i(15424)),	-- Axe of Orgrimmar
+						un(REMOVED_FROM_GAME, i(15445)),	-- Hammer of Orgrimmar
+						un(REMOVED_FROM_GAME, i(15443)),	-- Kris of Orgrimmar
+						un(REMOVED_FROM_GAME, i(15444)),	-- Staff of Ogrimmar
 					},
 				}),
 				q(53372, {	-- Hour of Reckoning
@@ -1335,8 +1335,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(21994)), 	-- Belt of Heroism
-						un(2, i(21998)), 	-- Gauntlets of Heroism
+						un(REMOVED_FROM_GAME, i(21994)), 	-- Belt of Heroism
+						un(REMOVED_FROM_GAME, i(21998)), 	-- Gauntlets of Heroism
 					},
 				}),
 				q(10495, {	-- Just Compensation (Paladin)
@@ -1348,8 +1348,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22086)), 	-- Soulforge Belt
-						un(2, i(22090)), 	-- Soulforge Gauntlets
+						un(REMOVED_FROM_GAME, i(22086)), 	-- Soulforge Belt
+						un(REMOVED_FROM_GAME, i(22090)), 	-- Soulforge Gauntlets
 					},
 				}),
 				q(8938,  {	-- Just Compensation (Hunter)
@@ -1361,8 +1361,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22010)), 	-- Beastmaster's Belt
-						un(2, i(22015)), 	-- Beastmaster's Gloves
+						un(REMOVED_FROM_GAME, i(22010)), 	-- Beastmaster's Belt
+						un(REMOVED_FROM_GAME, i(22015)), 	-- Beastmaster's Gloves
 					},
 				}),
 				q(8941,  {	-- Just Compensation (Rogue)
@@ -1374,8 +1374,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22002)), 	-- Darkmantle Belt
-						un(2, i(22006)), 	-- Darkmantle Gloves
+						un(REMOVED_FROM_GAME, i(22002)), 	-- Darkmantle Belt
+						un(REMOVED_FROM_GAME, i(22006)), 	-- Darkmantle Gloves
 					},
 				}),
 				q(8940,  {	-- Just Compensation (Priest)
@@ -1387,8 +1387,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22078)), 	-- Virtuous Belt
-						un(2, i(22081)), 	-- Virtuous Gloves
+						un(REMOVED_FROM_GAME, i(22078)), 	-- Virtuous Belt
+						un(REMOVED_FROM_GAME, i(22081)), 	-- Virtuous Gloves
 					},
 				}),
 				q(8942,  {	-- Just Compensation (Shaman)
@@ -1400,8 +1400,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22098)), 	-- Cord of The Five Thunders
-						un(2, i(22099)), 	-- Gauntlets of The Five Thunders
+						un(REMOVED_FROM_GAME, i(22098)), 	-- Cord of The Five Thunders
+						un(REMOVED_FROM_GAME, i(22099)), 	-- Gauntlets of The Five Thunders
 					},
 				}),
 				q(8939,  {	-- Just Compensation (Mage)
@@ -1413,8 +1413,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22062)), 	-- Sorcerer's Belt
-						un(2, i(22066)), 	-- Sorcerer's Gloves
+						un(REMOVED_FROM_GAME, i(22062)), 	-- Sorcerer's Belt
+						un(REMOVED_FROM_GAME, i(22066)), 	-- Sorcerer's Gloves
 					},
 				}),
 				q(8943,  {	-- Just Compensation (Warlock)
@@ -1426,8 +1426,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22070)), 	-- Deathmist Belt
-						un(2, i(22077)), 	-- Deathmist Wraps
+						un(REMOVED_FROM_GAME, i(22070)), 	-- Deathmist Belt
+						un(REMOVED_FROM_GAME, i(22077)), 	-- Deathmist Wraps
 					},
 				}),
 				q(8927,  {	-- Just Compensation (Druid)
@@ -1439,8 +1439,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22106)), 	-- Feralheart Belt
-						un(2, i(22110)), 	-- Feralheart Gloves
+						un(REMOVED_FROM_GAME, i(22106)), 	-- Feralheart Belt
+						un(REMOVED_FROM_GAME, i(22110)), 	-- Feralheart Gloves
 					},
 				}),
 				q(1945, {	-- Laughing Sisters
@@ -1640,8 +1640,8 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(11854)),	-- Samophlange Screwdriver
-						un(2, i(11855)),	-- Tork Wrench
+						un(REMOVED_FROM_GAME, i(11854)),	-- Samophlange Screwdriver
+						un(REMOVED_FROM_GAME, i(11855)),	-- Tork Wrench
 					},
 				}),
 				q(28909, {	-- Sauranok Will Point the Way
@@ -1661,8 +1661,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(21997)),	-- Breastplate of Heroism
-						un(2, i(21999)),	-- Helm of Heroism
+						un(REMOVED_FROM_GAME, i(21997)),	-- Breastplate of Heroism
+						un(REMOVED_FROM_GAME, i(21999)),	-- Helm of Heroism
 					},
 				}),
 				q(10499, {	-- Saving the Best for Last (Paladin)
@@ -1674,8 +1674,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22089)),	-- Soulforge Breastplate
-						un(2, i(22091)),	-- Soulforge Helm
+						un(REMOVED_FROM_GAME, i(22089)),	-- Soulforge Breastplate
+						un(REMOVED_FROM_GAME, i(22091)),	-- Soulforge Helm
 					},
 				}),
 				q(9008,  {	-- Saving the Best for Last (Hunter)
@@ -1687,8 +1687,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22013)),	-- Beastmaster's Cap
-						un(2, i(22060)),	-- Beastmaster's Tunic
+						un(REMOVED_FROM_GAME, i(22013)),	-- Beastmaster's Cap
+						un(REMOVED_FROM_GAME, i(22060)),	-- Beastmaster's Tunic
 					},
 				}),
 				q(9010,  {	-- Saving the Best for Last (Rogue)
@@ -1700,8 +1700,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22005)),	-- Darkmantle Cap
-						un(2, i(22009)),	-- Darkmantle Tunic
+						un(REMOVED_FROM_GAME, i(22005)),	-- Darkmantle Cap
+						un(REMOVED_FROM_GAME, i(22009)),	-- Darkmantle Tunic
 					},
 				}),
 				q(9009,  {	-- Saving the Best for Last (Priest)
@@ -1713,8 +1713,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22080)),	-- Virtuous Crown
-						un(2, i(22083)),	-- Virtuous Robe
+						un(REMOVED_FROM_GAME, i(22080)),	-- Virtuous Crown
+						un(REMOVED_FROM_GAME, i(22083)),	-- Virtuous Robe
 					},
 				}),
 				q(9011,  {	-- Saving the Best for Last (Shaman)
@@ -1726,8 +1726,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22097)),	-- Coif of The Five Thunders
-						un(2, i(22102)),	-- Vest of The Five Thunders
+						un(REMOVED_FROM_GAME, i(22097)),	-- Coif of The Five Thunders
+						un(REMOVED_FROM_GAME, i(22102)),	-- Vest of The Five Thunders
 					},
 				}),
 				q(9014,  {	-- Saving the Best for Last (Mage)
@@ -1739,8 +1739,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22065)),	-- Sorcerer's Crown
-						un(2, i(22069)),	-- Sorcerer's Robes
+						un(REMOVED_FROM_GAME, i(22065)),	-- Sorcerer's Crown
+						un(REMOVED_FROM_GAME, i(22069)),	-- Sorcerer's Robes
 					},
 				}),
 				q(9012,  {	-- Saving the Best for Last (Warlock)
@@ -1752,8 +1752,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22074)),	-- Deathmist Mask
-						un(2, i(22075)),	-- Deathmist Robe
+						un(REMOVED_FROM_GAME, i(22074)),	-- Deathmist Mask
+						un(REMOVED_FROM_GAME, i(22075)),	-- Deathmist Robe
 					},
 				}),
 				q(9007,  {	-- Saving the Best for Last (Druid)
@@ -1765,8 +1765,8 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(22109)),	-- Feralheart Cowl
-						un(2, i(22113)),	-- Feralheart Vest
+						un(REMOVED_FROM_GAME, i(22109)),	-- Feralheart Cowl
+						un(REMOVED_FROM_GAME, i(22113)),	-- Feralheart Vest
 					},
 				}),
 				q(32317, {	-- Seeking the Soulstones
@@ -1877,7 +1877,7 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(22243)),	-- Small Soul Pouch
+						un(REMOVED_FROM_GAME, i(22243)),	-- Small Soul Pouch
 					},				
 				}),
 				q(29440, {	-- The Call of the World-Shaman
@@ -1925,7 +1925,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(20134)),	-- Skyfury Helm
+						un(REMOVED_FROM_GAME, i(20134)),	-- Skyfury Helm
 						un(32, i(18807)),	-- Helm of Latent Power (1.4 till 1.7 only)
 					},
 				}),
@@ -2020,7 +2020,7 @@ _.Zones =
 					["lvl"] = 13,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(7298)),	-- Blade of Cunning
+						un(REMOVED_FROM_GAME, i(7298)),	-- Blade of Cunning
 					},
 				}),
 				q(27436, {	-- The Shadow-Walker's Task

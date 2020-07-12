@@ -168,7 +168,7 @@ _.GearSets =
 					i(38145),	-- Deathweave Bag
 				},
 			}),
-			un(2, i(52940, {	-- Candy's Cloak
+			un(REMOVED_FROM_GAME, i(52940, {	-- Candy's Cloak
 				["races"] = { Goblin }	-- Used to be given to as start cloak to male goblins until Legion Prepatch
 			})),
 			un(7, i(6125, {	-- Brawler's Harness (Former starter shirt for Orc, Troll, Tauren, Undead Warriors)

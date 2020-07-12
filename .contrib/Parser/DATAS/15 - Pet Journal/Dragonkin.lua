@@ -26,7 +26,7 @@ _.PetJournal =
 		p(59),		-- Emerald Whelpling
 		p(1720),	-- Emmigosa
 		p(180, {	-- Essence of Competition
-			["u"] = 3,	-- Blizzard Promotion
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		p(142),		-- Golden Dragonhawk Hatchling
 		p(2017),	-- Infinite Hatchling
@@ -48,7 +48,7 @@ _.PetJournal =
 		p(1165),	-- Nexus Whelpling
 		p(1723),	-- Nightmare Whelpling
 		p(243, {	-- Onyxian Whelpling
-			["u"] = 3,	-- Blizzard Promotion
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		p(1235),	-- Phoenix Hawk Hatchling
 		p(196),		-- Proto-Drake Whelp
@@ -63,20 +63,20 @@ _.PetJournal =
 		}),
 		p(489),		-- Spawn of Onyxia
 		p(179, {	-- Spirit of Competition
-			["u"] = 3,	-- Blizzard Promotion
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		p(87),		-- Sprite Darter Hatchling
 		p(1721),	-- Stormborne Whelpling
 		p(382),		-- Sun Darter Hatchling
 		p(802, {	-- Thundering Serpent Hatchling
-			["u"] = 2,	-- Unobtainable since 6.0. It dropping from BMAH was never confirmed
+			["u"] = REMOVED_FROM_GAME,	-- Unobtainable since 6.0. It dropping from BMAH was never confirmed
 		}),
 		p(2561),	-- Thunderscale Whelpling
 		p(757, {	-- Tiny Green Dragon
-			["u"] = 3,	-- Blizzard Promotion
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		p(758, {	-- Tiny Red Dragon
-			["u"] = 3,	-- Blizzard Promotion
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		p(2081), 	-- Twilight Clutch-Sister
 		p(2677),	-- Twilight Whelpling

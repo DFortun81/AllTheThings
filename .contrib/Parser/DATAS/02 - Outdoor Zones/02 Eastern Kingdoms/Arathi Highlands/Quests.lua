@@ -61,8 +61,8 @@ _.Zones =
 					["provider"] = { "n", 2771 },	-- Drum Fel
 					["sourceQuest"] = 678,	-- Call to Arms
 					["g"] = {
-						un(2, i(9520)),	-- Silent Hunter
-						un(2, i(9521)),	-- Skullsplitter
+						un(REMOVED_FROM_GAME, i(9520)),	-- Silent Hunter
+						un(REMOVED_FROM_GAME, i(9521)),	-- Skullsplitter
 					},
 				}),
 				q(26027, {	-- Call to Arms
@@ -112,8 +112,8 @@ _.Zones =
 				q(667,   {	-- Death From Below
 					["u"] = 40,
 					["g"] = {
-						un(2, i(4550)),	-- Coldwater Ring
-						un(2, i(4549)),	-- Seafire Band
+						un(REMOVED_FROM_GAME, i(4550)),	-- Coldwater Ring
+						un(REMOVED_FROM_GAME, i(4549)),	-- Seafire Band
 					},
 				}),
 				q(26628, {	-- Death From Below
@@ -132,13 +132,13 @@ _.Zones =
 				q(662,   {	-- Deep Sea Salvage
 					["u"] = 40,
 					["g"] = {
-						un(2, i(4511)),	-- Black Water Hammer
+						un(REMOVED_FROM_GAME, i(4511)),	-- Black Water Hammer
 					},
 				}),
 				q(664,   {	-- Drowned Sorrows
 					["u"] = 40,
 					["g"] = {
-						un(2, i(4509)),	-- Seawolf Gloves
+						un(REMOVED_FROM_GAME, i(4509)),	-- Seawolf Gloves
 					},
 				}),
 				q(26055, {	-- Drowned Sorrows
@@ -180,8 +180,8 @@ _.Zones =
 					["provider"] = { "n", 2706 },	-- Tor'gan
 					["sourceQuest"] = 671,	-- Foul Magics
 					["g"] = {
-						un(2, i(4545)),	-- Radiant Silver Bracers
-						un(2, i(4543)),	-- White Drakeskin Cap
+						un(REMOVED_FROM_GAME, i(4545)),	-- Radiant Silver Bracers
+						un(REMOVED_FROM_GAME, i(4543)),	-- White Drakeskin Cap
 					},
 				}),
 				q(26050, {	-- Goggle Boggle
@@ -240,8 +240,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(15455)),	-- Dustfall Robes
-						un(2, i(15456)),	-- Lightstep Leggings
+						un(REMOVED_FROM_GAME, i(15455)),	-- Dustfall Robes
+						un(REMOVED_FROM_GAME, i(15456)),	-- Lightstep Leggings
 					},
 				}),
 				q(26943, {	-- Home Sweet Gnome
@@ -271,8 +271,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4975)),	-- Vigilant Buckler
-						un(2, i(15104)),	-- Wingborne Boots
+						un(REMOVED_FROM_GAME, i(4975)),	-- Vigilant Buckler
+						un(REMOVED_FROM_GAME, i(15104)),	-- Wingborne Boots
 					},
 				}),
 				q(653,   {	-- Myzrael's Allies (A)
@@ -425,7 +425,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4741)),	-- Stromgarde Cavalry Leggings
+						un(REMOVED_FROM_GAME, i(4741)),	-- Stromgarde Cavalry Leggings
 					},
 				}),
 				q(26095, {	-- Stromgarde Badges
@@ -445,7 +445,7 @@ _.Zones =
 				q(656,   {	-- Summoning the Princess
 					["u"] = 40,
 					["g"] = {
-						un(2, i(4743)),	-- Pulsating Crystalline Shard
+						un(REMOVED_FROM_GAME, i(4743)),	-- Pulsating Crystalline Shard
 					},
 				}),
 				q(665, {	-- Sunken Treasure
@@ -454,8 +454,8 @@ _.Zones =
 				q(666,   {	-- Sunken Treasure
 					["u"] = 40,
 					["g"] = {
-						un(2, i(4547)),	-- Gnomish Zapper
-						un(2, i(4548)),	-- Servomechanic Sledgehammer
+						un(REMOVED_FROM_GAME, i(4547)),	-- Gnomish Zapper
+						un(REMOVED_FROM_GAME, i(4548)),	-- Servomechanic Sledgehammer
 					},
 				}),
 				q(668, {	-- Sunken Treasure
@@ -554,8 +554,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(4976)),	-- Mistspray Kilt
-						un(2, i(4977)),	-- Sword of Hammerfall
+						un(REMOVED_FROM_GAME, i(4976)),	-- Mistspray Kilt
+						un(REMOVED_FROM_GAME, i(4977)),	-- Sword of Hammerfall
 					},
 				}),
 				q(26029, {	-- The Real Threat
@@ -646,8 +646,8 @@ _.Zones =
 					["provider"] = { "o", 2703 },	-- Trollbane's Tomb
 					["sourceQuest"] = 645,	-- Trol'kalar
 					["g"] = {
-						un(2, i(4508)),	-- Blood-Tinged Armor
-						un(2, i(4507)),	-- Pit Fighter's Shield
+						un(REMOVED_FROM_GAME, i(4508)),	-- Blood-Tinged Armor
+						un(REMOVED_FROM_GAME, i(4507)),	-- Pit Fighter's Shield
 					},
 				}),
 				q(26033, {	-- Trol'kalar
@@ -666,7 +666,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4744)),	-- Arcane Runed Bracers
+						un(REMOVED_FROM_GAME, i(4744)),	-- Arcane Runed Bracers
 					},
 				}),
 				q(26024, {	-- Wanted! Marez Cowl
@@ -685,8 +685,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(5247)),	-- Rod of Sorrow
-						un(2, i(4745)),	-- War Rider Bracers
+						un(REMOVED_FROM_GAME, i(5247)),	-- Rod of Sorrow
+						un(REMOVED_FROM_GAME, i(4745)),	-- War Rider Bracers
 					},
 				}),
 				q(26079, {	-- Wanted! Otto and Falconcrest

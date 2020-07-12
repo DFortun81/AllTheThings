@@ -92,7 +92,7 @@ _.PetJournal =
 		p(739), 	-- Mongoose Pup
 		p(1447), 	-- Moonshell Crab
 		p(192, { 	-- Mr. Chilly
-			["u"] = 2,	-- Removed, BoP or BoA
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		p(2575, {	-- Mr. Crabs
 			["u"] = 20,	-- Children's Week

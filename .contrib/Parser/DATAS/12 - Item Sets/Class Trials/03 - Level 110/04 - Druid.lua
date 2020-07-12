@@ -93,54 +93,54 @@ _.GearSets =
 								},
 								{	-- Springrain Hood [NYI]
 									["itemID"] = 153787,	-- Springrain Hood
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Choker *LA0422Feral
 									["itemID"] = 153749,	-- Springrain Choker
 								},
 								{	-- Springrain Choker [NYI]
 									["itemID"] = 153794,	-- Springrain Choker
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Necklace [NYI]
 									["itemID"] = 153778,	-- Springrain Necklace
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Pauldrons *LA0422Feral
 									["itemID"] = 153774,	-- Springrain Pauldrons
 								},
 								{	-- Springrain Shoulders [NYI]
 									["itemID"] = 153789,	-- Springrain Shoulders
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Cloak of Durability [NYI]
 									["itemID"] = 153793,	-- Springrain Cloak of Durability
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Cloak of Rage *LA0422Feral
 									["itemID"] = 153748,	-- Springrain Cloak of Rage
 								},
 								{	-- Springrain Cloak of Wisdom [NYI]
 									["itemID"] = 153777,	-- Springrain Cloak of Wisdom
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Jerkin [NYI]
 									["itemID"] = 153784,	-- Springrain Jerkin
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Vest *LA0422Feral
 									["itemID"] = 153768,	-- Springrain Vest
 								},
 								{	-- Springrain Bindings [NYI]
 									["itemID"] = 153791,	-- Springrain Bindings
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Cuffs
 									["itemID"] = 153776,	-- Springrain Cuffs
 								},
 								{	-- Springrain Gloves [NYI]
 									["itemID"] = 153786,	-- Springrain Gloves
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Handguards *LA0422Feral
 									["itemID"] = 153770,	-- Springrain Handguards
@@ -150,65 +150,65 @@ _.GearSets =
 								},
 								{	-- Springrain Waistband [NYI]
 									["itemID"] = 153790,	-- Springrain Waistband
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Britches [NYI]
 									["itemID"] = 153788,	-- Springrain Britches
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Legguards *LA0422Feral
 									["itemID"] = 153772,	-- Springrain Legguards
 								},
 								{	-- Springrain Boots [NYI]
 									["itemID"] = 153785,	-- Springrain Boots
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Footpads *LA0422Feral
 									["itemID"] = 153769,	-- Springrain Footpads
 								},
 								{	-- Springrain Band of Durability [NYI]
 									["itemID"] = 153797,	-- Springrain Band of Durability
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Band of Onslaught [NYI]
 									["itemID"] = 153752,	-- Springrain Band of Onslaught
 								},
 								{	-- Springrain Band of Wisdom *LA0422Feral
 									["itemID"] = 153780,	-- Springrain Band of Wisdom
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Idol of Durability [NYI]
 									["itemID"] = 153795,	-- Springrain Idol of Durability
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Idol of Rage *LA0422Feral
 									["itemID"] = 153750,	-- Springrain Idol of Rage
 								},
 								{	-- Springrain Idol of Wisdom [NYI]
 									["itemID"] = 153779,	-- Springrain Idol of Wisdom
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Ring of Durability [NYI]
 									["itemID"] = 153796,	-- Springrain Ring of Durability
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Ring of Onslaught *LA0422Feral
 									["itemID"] = 153751,	-- Springrain Ring of Onslaught
 								},
 								{	-- Springrain Ring of Wisdom [NYI]
 									["itemID"] = 153781,	-- Springrain Ring of Wisdom
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Stone of Durability [NYI]
 									["itemID"] = 153798,	-- Springrain Stone of Durability
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Springrain Stone of Rage *LA0422Feral
 									["itemID"] = 153753,	-- Springrain Stone of Rage
 								},
 								{	-- Springrain Stone of Wisdom [NYI]
 									["itemID"] = 153782,	-- Springrain Stone of Wisdom
-									["u"] = 1,				-- Not Available
+									["u"] = NEVER_IMPLEMENTED,
 								},
 							},
 						},

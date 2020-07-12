@@ -24,10 +24,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(144163),	-- Girdle of Soothing Detonation
 					i(143996),	-- Sap-Encrusted Legplates
 					i(144156),	-- Flashfrozen Resin Globule
-					un(2, i(100952)),	-- Hood of Viridian Residue (7.1 - Removed from Game!)
-					un(2, i(100953)),	-- Girdle of Soothing Detonation (7.1 - Removed from Game!)
-					un(2, i(100954)),	-- Sap-Encrusted Legplates (7.1 - Removed from Game!)
-					un(2, i(100951)),	-- Flashfrozen Resin Globule (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100952)),	-- Hood of Viridian Residue (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100953)),	-- Girdle of Soothing Detonation (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100954)),	-- Sap-Encrusted Legplates (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100951)),	-- Flashfrozen Resin Globule (7.1 - Removed from Game!)
 				})),
 				cr(61634, e(738, {	-- Commander Vo'jak
 					i(144164),	-- Siege-Captain's Scimitar
@@ -35,11 +35,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(143963),	-- Chestwrap of Arcing Flame
 					i(144165),	-- Bombardment Bracers
 					i(144166),	-- Archer's Precision Grips
-					un(2, i(100955)),	-- Siege-Captain's Scimitar (7.1 - Removed from Game!)
-					un(2, i(100959)),	-- Sightfinder Helm (7.1 - Removed from Game!)
-					un(2, i(100957)),	-- Chestwrap of Arcing Flame (7.1 - Removed from Game!)
-					un(2, i(100956)),	-- Bombardment Bracers (7.1 - Removed from Game!)
-					un(2, i(100958)),	-- Archer's Precision Grips (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100955)),	-- Siege-Captain's Scimitar (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100959)),	-- Sightfinder Helm (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100957)),	-- Chestwrap of Arcing Flame (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100956)),	-- Bombardment Bracers (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100958)),	-- Archer's Precision Grips (7.1 - Removed from Game!)
 				})),
 				cr(61485, e(692, {	-- General Pa'valak
 					i(144167),	-- Tempestuous Longbow
@@ -47,11 +47,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(144168),	-- Siegeworn Bracers
 					i(144169),	-- Breezebinder Handwraps
 					i(144157),	-- Vial of Ichorous Blood
-					un(2, i(100960)),	-- Tempestuous Longbow (7.1 - Removed from Game!)
-					un(2, i(100961)),	-- Aerial Bombardment Cloak (7.1 - Removed from Game!)
-					un(2, i(100964)),	-- Siegeworn Bracers (7.1 - Removed from Game!)
-					un(2, i(100962)),	-- Breezebinder Handwraps (7.1 - Removed from Game!)
-					un(2, i(100963)),	-- Vial of Ichorous Blood (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100960)),	-- Tempestuous Longbow (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100961)),	-- Aerial Bombardment Cloak (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100964)),	-- Siegeworn Bracers (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100962)),	-- Breezebinder Handwraps (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100963)),	-- Vial of Ichorous Blood (7.1 - Removed from Game!)
 				})),
 				cr(62205, e(727, {	-- Wing Leader Ner'onok
 					ach(10011),	-- Siege of Niuzao Temple
@@ -66,17 +66,17 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(144173),	-- Belt of Totemic Binding
 					i(144000),	-- Airbender Sandals
 					i(143997),	-- Anchoring Sabatons
-					un(2, i(100973)),	-- Gustwalker Staff (7.1 - Removed from Game!)
-					un(2, i(100965)),	-- Ner'onok's Razor Katar (7.1 - Removed from Game!)
-					un(2, i(100966)),	-- Tolakesh, Horn of the Black Ox (7.1 - Removed from Game!)
-					un(2, i(100971)),	-- Breezeswept Hood (7.1 - Removed from Game!)
-					un(2, i(100967)),	-- Windblast Helm (7.1 - Removed from Game!)
-					un(2, i(100970)),	-- Spaulders of Immovable Stone (7.1 - Removed from Game!)
-					un(2, i(100972)),	-- Whisperwind Spaulders (7.1 - Removed from Game!)
-					un(2, i(100968)),	-- Galedodger Chestguard (7.1 - Removed from Game!)
-					un(2, i(100974)),	-- Belt of Totemic Binding (7.1 - Removed from Game!)
-					un(2, i(100975)),	-- Airbender Sandals (7.1 - Removed from Game!)
-					un(2, i(100969)),	-- Anchoring Sabatons (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100973)),	-- Gustwalker Staff (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100965)),	-- Ner'onok's Razor Katar (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100966)),	-- Tolakesh, Horn of the Black Ox (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100971)),	-- Breezeswept Hood (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100967)),	-- Windblast Helm (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100970)),	-- Spaulders of Immovable Stone (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100972)),	-- Whisperwind Spaulders (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100968)),	-- Galedodger Chestguard (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100974)),	-- Belt of Totemic Binding (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100975)),	-- Airbender Sandals (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(100969)),	-- Anchoring Sabatons (7.1 - Removed from Game!)
 				})),
 			}),
 			d( 2, {	-- Heroic
@@ -93,9 +93,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144163),	-- Girdle of Soothing Detonation
 						i(143996),	-- Sap-Encrusted Legplates
 						i(144156),	-- Flashfrozen Resin Globule
-						un(2, i(81262)),	-- Hood of Viridian Residue (7.1 - Removed from Game!)
-						un(2, i(81272)),	-- Girdle of Soothing Detonation (7.1 - Removed from Game!)
-						un(2, i(81270)),	-- Sap-Encrusted Legplates (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81262)),	-- Hood of Viridian Residue (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81272)),	-- Girdle of Soothing Detonation (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81270)),	-- Sap-Encrusted Legplates (7.1 - Removed from Game!)
 					})),
 					cr(61634, e(738, {	-- Commander Vo'jak
 						ach(6688),	-- Where's My Air Support?
@@ -104,11 +104,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(143963),	-- Chestwrap of Arcing Flame
 						i(144165),	-- Bombardment Bracers
 						i(144166),	-- Archer's Precision Grips
-						un(2, i(81273)),	-- Siege-Captain's Scimitar (7.1 - Removed from Game!)
-						un(2, i(81274)),	-- Sightfinder Helm (7.1 - Removed from Game!)
-						un(2, i(81275)),	-- Chestwrap of Arcing Flame (7.1 - Removed from Game!)
-						un(2, i(81276)),	-- Bombardment Bracers (7.1 - Removed from Game!)
-						un(2, i(81277)),	-- Archer's Precision Grips (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81273)),	-- Siege-Captain's Scimitar (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81274)),	-- Sightfinder Helm (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81275)),	-- Chestwrap of Arcing Flame (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81276)),	-- Bombardment Bracers (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81277)),	-- Archer's Precision Grips (7.1 - Removed from Game!)
 					})),
 					cr(61485, e(692, {	-- General Pa'valak
 						ach(6485),	-- Return to Sender
@@ -117,10 +117,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144168),	-- Siegeworn Bracers
 						i(144169),	-- Breezebinder Handwraps
 						i(144157),	-- Vial of Ichorous Blood
-						un(2, i(81279)),	-- Tempestuous Longbow (7.1 - Removed from Game!)
-						un(2, i(81282)),	-- Aerial Bombardment Cloak (7.1 - Removed from Game!)
-						un(2, i(81280)),	-- Siegeworn Bracers (7.1 - Removed from Game!)
-						un(2, i(81281)),	-- Breezebinder Handwraps (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81279)),	-- Tempestuous Longbow (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81282)),	-- Aerial Bombardment Cloak (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81280)),	-- Siegeworn Bracers (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81281)),	-- Breezebinder Handwraps (7.1 - Removed from Game!)
 					})),
 					cr(62205, e(727, {	-- Wing Leader Ner'onok
 						ach(6763),	-- Heroic: Siege of Niuzao Temple
@@ -137,17 +137,17 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144173),	-- Belt of Totemic Binding
 						i(144000),	-- Airbender Sandals
 						i(143997),	-- Anchoring Sabatons
-						un(2, i(81288)),	-- Gustwalker Staff (7.1 - Removed from Game!)
-						un(2, i(81286)),	-- Ner'onok's Razor Katar (7.1 - Removed from Game!)
-						un(2, i(87547)),	-- Tolakesh, Horn of the Black Ox (7.1 - Removed from Game!)
-						un(2, i(81289)),	-- Breezeswept Hood (7.1 - Removed from Game!)
-						un(2, i(81283)),	-- Windblast Helm (7.1 - Removed from Game!)
-						un(2, i(81287)),	-- Spaulders of Immovable Stone (7.1 - Removed from Game!)
-						un(2, i(81291)),	-- Whisperwind Spaulders (7.1 - Removed from Game!)
-						un(2, i(81285)),	-- Galedodger Chestguard (7.1 - Removed from Game!)
-						un(2, i(81290)),	-- Belt of Totemic Binding (7.1 - Removed from Game!)
-						un(2, i(81292)),	-- Airbender Sandals (7.1 - Removed from Game!)
-						un(2, i(81284)),	-- Anchoring Sabatons (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81288)),	-- Gustwalker Staff (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81286)),	-- Ner'onok's Razor Katar (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(87547)),	-- Tolakesh, Horn of the Black Ox (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81289)),	-- Breezeswept Hood (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81283)),	-- Windblast Helm (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81287)),	-- Spaulders of Immovable Stone (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81291)),	-- Whisperwind Spaulders (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81285)),	-- Galedodger Chestguard (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81290)),	-- Belt of Totemic Binding (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81292)),	-- Airbender Sandals (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81284)),	-- Anchoring Sabatons (7.1 - Removed from Game!)
 					})),
 				}
 			}),

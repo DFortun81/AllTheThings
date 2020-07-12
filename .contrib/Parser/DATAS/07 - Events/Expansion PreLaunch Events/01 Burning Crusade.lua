@@ -7,9 +7,9 @@ _.WorldEvents =
 		["groups"] = {
 			n(-521, {	-- Burning Crusade
 				["groups"] = {
-					un(3, ach(2079, {	-- Tabard of the Protector
+					un(REMOVED_FROM_GAME, ach(2079, {	-- Tabard of the Protector
 						["groups"] = {
-							un(3, i(28788)),	-- Tabard of the Protector
+							un(REMOVED_FROM_GAME, i(28788)),	-- Tabard of the Protector
 						},
 						["collectible"] = false,
 					})),

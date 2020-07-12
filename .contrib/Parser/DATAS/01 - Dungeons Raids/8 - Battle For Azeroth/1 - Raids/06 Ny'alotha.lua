@@ -160,7 +160,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(174137),	-- Chitinspine Gloves
 							i(174171),	-- Dark Crystalline Girdle
 							i(174530),	-- Ring of Collective Consciousness
-							un(1, i(174053)),	-- Corrupted Ring - Overconfident
+							un(NEVER_IMPLEMENTED, i(174053)),	-- Corrupted Ring - Overconfident
 						},
 					}),
 					e(2364, {	-- Ra-den the Despoiled
@@ -192,7 +192,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(174162),	-- Ego-Annihilating Grips
 							i(174130),	-- Grips of Occult Reminiscence
 							i(174531),	-- Void-Etched Band
-							un(1, i(174052)),	-- Corrupted Ring - Masochistic
+							un(NEVER_IMPLEMENTED, i(174052)),	-- Corrupted Ring - Masochistic
 						},
 					}),
 					e(2373, {	-- Drest'agath
@@ -206,7 +206,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(173946),	-- Writhing Segment of Drest'agath
 							i(174532),	-- Ichorspine Loop
 							i(173946),	-- Writhing Segment of Drest'agath
-							un(1, i(174054)),	-- Corrupted Ring - Last Grasp
+							un(NEVER_IMPLEMENTED, i(174054)),	-- Corrupted Ring - Last Grasp
 						},
 					}),
 					e(2374, {	-- Il'gynoth, Corruption Reborn
@@ -258,7 +258,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(174533),	-- Ring of Cosmic Potential
 							i(174277),	-- Lingering Psychic Shell
 							i(174103),	-- Manifesto of Madness
-							un(1, i(174055)),	-- Corrupted Ring - Thing From Beyond
+							un(NEVER_IMPLEMENTED, i(174055)),	-- Corrupted Ring - Thing From Beyond
 						},
 					}),
 				}),
@@ -378,7 +378,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174137),	-- Chitinspine Gloves
 						i(174171),	-- Dark Crystalline Girdle
 						i(174530),	-- Ring of Collective Consciousness
-						un(1, i(174053)),	-- Corrupted Ring - Overconfident
+						un(NEVER_IMPLEMENTED, i(174053)),	-- Corrupted Ring - Overconfident
 					},
 				}),
 				e(2367, {	-- Shad'har the Insatiable
@@ -392,7 +392,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174162),	-- Ego-Annihilating Grips
 						i(174130),	-- Grips of Occult Reminiscence
 						i(174531),	-- Void-Etched Band
-						un(1, i(174052)),	-- Corrupted Ring - Masochistic
+						un(NEVER_IMPLEMENTED, i(174052)),	-- Corrupted Ring - Masochistic
 					},
 				}),
 				e(2373, {	-- Drest'agath
@@ -407,7 +407,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(173946),	-- Writhing Segment of Drest'agath
 						i(174532),	-- Ichorspine Loop
 						i(173946),	-- Writhing Segment of Drest'agath
-						un(1, i(174054)),	-- Corrupted Ring - Last Grasp
+						un(NEVER_IMPLEMENTED, i(174054)),	-- Corrupted Ring - Last Grasp
 					},
 				}),
 				e(2370, {	-- Vexiona
@@ -492,7 +492,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174533),	-- Ring of Cosmic Potential
 						i(174277),	-- Lingering Psychic Shell
 						i(174103),	-- Manifesto of Madness
-						un(1, i(174055)),	-- Corrupted Ring - Thing From Beyond
+						un(NEVER_IMPLEMENTED, i(174055)),	-- Corrupted Ring - Thing From Beyond
 					},
 				}),
 			}),
@@ -611,7 +611,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174137),	-- Chitinspine Gloves
 						i(174171),	-- Dark Crystalline Girdle
 						i(174530),	-- Ring of Collective Consciousness
-						un(1, i(174053)),	-- Corrupted Ring - Overconfident
+						un(NEVER_IMPLEMENTED, i(174053)),	-- Corrupted Ring - Overconfident
 					},
 				}),
 				e(2367, {	-- Shad'har the Insatiable
@@ -625,7 +625,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174162),	-- Ego-Annihilating Grips
 						i(174130),	-- Grips of Occult Reminiscence
 						i(174531),	-- Void-Etched Band
-						un(1, i(174052)),	-- Corrupted Ring - Masochistic
+						un(NEVER_IMPLEMENTED, i(174052)),	-- Corrupted Ring - Masochistic
 					},
 				}),
 				e(2373, {	-- Drest'agath
@@ -640,7 +640,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(173946),	-- Writhing Segment of Drest'agath
 						i(174532),	-- Ichorspine Loop
 						i(173946),	-- Writhing Segment of Drest'agath
-						un(1, i(174054)),	-- Corrupted Ring - Last Grasp
+						un(NEVER_IMPLEMENTED, i(174054)),	-- Corrupted Ring - Last Grasp
 					},
 				}),
 				e(2370, {	-- Vexiona
@@ -733,7 +733,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174533),	-- Ring of Cosmic Potential
 						i(174277),	-- Lingering Psychic Shell
 						i(174103),	-- Manifesto of Madness
-						un(1, i(174055)),	-- Corrupted Ring - Thing From Beyond
+						un(NEVER_IMPLEMENTED, i(174055)),	-- Corrupted Ring - Thing From Beyond
 					},
 				}),
 			}),
@@ -857,7 +857,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174137),	-- Chitinspine Gloves
 						i(174171),	-- Dark Crystalline Girdle
 						i(174530),	-- Ring of Collective Consciousness
-						un(1, i(174053)),	-- Corrupted Ring - Overconfident
+						un(NEVER_IMPLEMENTED, i(174053)),	-- Corrupted Ring - Overconfident
 					},
 				}),
 				e(2367, {	-- Shad'har the Insatiable
@@ -872,7 +872,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174162),	-- Ego-Annihilating Grips
 						i(174130),	-- Grips of Occult Reminiscence
 						i(174531),	-- Void-Etched Band
-						un(1, i(174052)),	-- Corrupted Ring - Masochistic
+						un(NEVER_IMPLEMENTED, i(174052)),	-- Corrupted Ring - Masochistic
 					},
 				}),
 				e(2373, {	-- Drest'agath
@@ -888,7 +888,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(173946),	-- Writhing Segment of Drest'agath
 						i(174532),	-- Ichorspine Loop
 						i(173946),	-- Writhing Segment of Drest'agath
-						un(1, i(174054)),	-- Corrupted Ring - Last Grasp
+						un(NEVER_IMPLEMENTED, i(174054)),	-- Corrupted Ring - Last Grasp
 					},
 				}),
 				e(2370, {	-- Vexiona
@@ -993,7 +993,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174533),	-- Ring of Cosmic Potential
 						i(174277),	-- Lingering Psychic Shell
 						i(174103),	-- Manifesto of Madness
-						un(1, i(174055)),	-- Corrupted Ring - Thing From Beyond
+						un(NEVER_IMPLEMENTED, i(174055)),	-- Corrupted Ring - Thing From Beyond
 					},
 				}),
 			}),

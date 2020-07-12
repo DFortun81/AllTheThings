@@ -32,7 +32,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(95959),	-- Spiderweb Tabi
 					},
 				}),
-				un(2, i(95343, {	-- Treasures of the Thunder
+				un(REMOVED_FROM_GAME, i(95343, {	-- Treasures of the Thunder
 					["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 					["g"] = {
 						i(94295),	-- Primal Egg
@@ -1431,7 +1431,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					cr(68397, e(832, {	-- Lei Shen
 						ach(8090),	-- A Complete Circuit
-						un(2, ach(8249)),	-- Ahead of the Curve: Lei Shen
+						un(REMOVED_FROM_GAME, ach(8249)),	-- Ahead of the Curve: Lei Shen
 						i(94983),	-- Shan-Dun, Breaker of Hope
 						i(94982),	-- Uroe, Harbinger of Terror
 						i(94988),	-- Torall, Rod of the Shattered Throne
@@ -2174,7 +2174,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					cr(68397, e(832, {	-- Lei Shen
 						ach(8090),	-- A Complete Circuit
-						un(2, ach(8238)),	-- Cutting Edge: Lei Shen
+						un(REMOVED_FROM_GAME, ach(8238)),	-- Cutting Edge: Lei Shen
 						{	-- Heroic: Lei Shen
 							["achievementID"] = 8067,	-- Heroic: Lei Shen
 							["g"] = {
@@ -2227,9 +2227,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						}),
 					})),
 					cr(69473, e(831, {	-- Ra-den
-						un(2, ach(8260)),	-- Cutting Edge: Ra-den
+						un(REMOVED_FROM_GAME, ach(8260)),	-- Cutting Edge: Ra-den
 						ach(8068),	-- Heroic: Ra-den
-						un(2, ach(8089)),	-- I Thought He Was Supposeed to Be Hard?
+						un(REMOVED_FROM_GAME, ach(8089)),	-- I Thought He Was Supposeed to Be Hard?
 						i(95013),	-- Black Night Thundercloak
 						i(95015),	-- Grey Wind Mistcloak
 						i(95014),	-- Red Sky Cloudcloak

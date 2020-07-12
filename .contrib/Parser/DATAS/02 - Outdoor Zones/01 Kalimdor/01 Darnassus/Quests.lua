@@ -59,9 +59,9 @@ _.Zones =
 					["lvl"] = 50,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(11872)),	-- Eschewal Greaves
-						un(2, i(11870)),	-- Oblivion Orb
-						un(2, i(11871)),	-- Snarkshaw Spaulders
+						un(REMOVED_FROM_GAME, i(11872)),	-- Eschewal Greaves
+						un(REMOVED_FROM_GAME, i(11870)),	-- Oblivion Orb
+						un(REMOVED_FROM_GAME, i(11871)),	-- Snarkshaw Spaulders
 					},
 				}),
 				q(27362, {	-- Favored of Elune
@@ -137,7 +137,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(6973)),	-- Fire Hardened Leggings
+						un(REMOVED_FROM_GAME, i(6973)),	-- Fire Hardened Leggings
 					},
 				}),
 				q(28258, {	-- Meet with Ander Germaine
@@ -293,10 +293,10 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(6966)),	-- Elunite Axe
-						un(2, i(6968)),	-- Elunite Hammer
-						un(2, i(6969)),	-- Elunite Dagger
-						un(2, i(6967)),	-- Elunite Sword
+						un(REMOVED_FROM_GAME, i(6966)),	-- Elunite Axe
+						un(REMOVED_FROM_GAME, i(6968)),	-- Elunite Hammer
+						un(REMOVED_FROM_GAME, i(6969)),	-- Elunite Dagger
+						un(REMOVED_FROM_GAME, i(6967)),	-- Elunite Sword
 					},
 				}),
 				q(27266, {	-- Wulf Calls

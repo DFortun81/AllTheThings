@@ -824,8 +824,8 @@ _.WorldEvents =
 					i(73764, {	-- Darkmoon Monkey  (PET!)
 						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
 					}),
-					un(2, i(19303)),	-- Darkmoon Necklace
-					un(2, i(19302)),	-- Darkmoon Ring
+					un(REMOVED_FROM_GAME, i(19303)),	-- Darkmoon Necklace
+					un(REMOVED_FROM_GAME, i(19302)),	-- Darkmoon Ring
 					i(73903, {	-- Darkmoon Tonk  (PET!)
 						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
 					}),
@@ -957,34 +957,39 @@ _.WorldEvents =
 				["description"] = "|cff66ccffYou must be wearing Tabard of the Scarlet Crusade in order to purchase items from the Scarlet Quartermaster.  A tabard that has been transmogged will NOT work.|r",
 				["coord"] = { 58.2, 80.6, 407 },
 				["g"] = {
-					i(23192, {	-- Tabard of the Scarlet Crusade (must be wearing to purchase)
-						i(138429, {	-- Cropped Tabard of the Scarlet Crusade
-							["cost"] = 250000000,	-- 25,000g
-						}),
-						i(138430, { -- Ensemble: Chain of the Scarlet Crusade
-							["ignoreBonus"] = true,
-							["cost"] = 100000000,	-- 10,000g
-							["g"] = {
-								i(10329),	-- Scarlet Belt
-								i(10332),	-- Scarlet Boots
-								i(10328),	-- Scarlet Chestpiece
-								i(10331),	-- Scarlet Gauntlets
-								i(10330),	-- Scarlet Leggings
-								i(10333),	-- Scarlet Wristguards
-							},
-						}),
-						i(138431, { -- Ensemble: Scale of the Scarlet Crusade
-							["ignoreBonus"] = true,
-							["cost"] = 100000000,	-- 10,000g
-							["g"] = {
-								i(138424),	-- Scarlet Belt
-								i(138427),	-- Scarlet Boots
-								i(138423),	-- Scarlet Chestpiece
-								i(138426),	-- Scarlet Gauntlets
-								i(138425),	-- Scarlet Leggings
-								i(138428),	-- Scarlet Wristguards
-							},
-						}),
+					i(138429, {	-- Cropped Tabard of the Scarlet Crusade
+						["cost"] = {
+							{ "i", 23192, 1 },	-- Tabard of the Scarlet Crusade
+							{ "g", 250000000 },	-- 25,000g
+						}
+					}),
+					i(138430, {	-- Ensemble: Chain of the Scarlet Crusade
+						["cost"] = {
+							{ "i", 23192, 1 },	-- Tabard of the Scarlet Crusade
+							{ "g", 100000000 },	-- 10,000g
+						},
+						["g"] = {
+							i(10329),	-- Scarlet Belt
+							i(10332),	-- Scarlet Boots
+							i(10328),	-- Scarlet Chestpiece
+							i(10331),	-- Scarlet Gauntlets
+							i(10330),	-- Scarlet Leggings
+							i(10333),	-- Scarlet Wristguards
+						},
+					}),
+					i(138431, {	-- Ensemble: Scale of the Scarlet Crusade
+						["cost"] = {
+							{ "i", 23192, 1 },	-- Tabard of the Scarlet Crusade
+							{ "g", 100000000 },	-- 10,000g
+						},
+						["g"] = {
+							i(138424),	-- Scarlet Belt
+							i(138427),	-- Scarlet Boots
+							i(138423),	-- Scarlet Chestpiece
+							i(138426),	-- Scarlet Gauntlets
+							i(138425),	-- Scarlet Leggings
+							i(138428),	-- Scarlet Wristguards
+						},
 					}),
 				},
 			}),

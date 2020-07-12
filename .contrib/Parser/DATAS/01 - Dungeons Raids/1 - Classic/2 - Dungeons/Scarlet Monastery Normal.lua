@@ -21,7 +21,7 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 44800 },	-- Dominic
 					["g"] = {
 						i(7748, {	-- Forcestone Buckler
-							["u"] = 2,	-- BoP / BoA item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
@@ -191,56 +191,56 @@ _.Instances = { tier(1, {	-- Classic
 								["u"] = 40,
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									un(2, i(65964)),	-- Gloves of the "Pure"
-									un(2, i(65988)),	-- Helm of the Awakened
-									un(2, i(66005)),	-- Interrogator's Shackles
-									un(2, i(65940)),	-- Strapping Belt
-									un(2, i(65914)),	-- Vishas' Hood
+									un(REMOVED_FROM_GAME, i(65964)),	-- Gloves of the "Pure"
+									un(REMOVED_FROM_GAME, i(65988)),	-- Helm of the Awakened
+									un(REMOVED_FROM_GAME, i(66005)),	-- Interrogator's Shackles
+									un(REMOVED_FROM_GAME, i(65940)),	-- Strapping Belt
+									un(REMOVED_FROM_GAME, i(65914)),	-- Vishas' Hood
 								},
 							}),
 							q(26950, {	-- The Dark Side of the Light
 								["u"] = 40,
 								["races"] = HORDE_ONLY,
 								["g"] = {
-									un(2, i(66032)),	-- Gloves of the "Pure"
-									un(2, i(66046)),	-- Interrogator's Shackles
-									un(2, i(66041)),	-- Scarlet Zealot's Helm
-									un(2, i(66023)),	-- Strapping Belt
-									un(2, i(66014)),	-- Vishas' Hood
+									un(REMOVED_FROM_GAME, i(66032)),	-- Gloves of the "Pure"
+									un(REMOVED_FROM_GAME, i(66046)),	-- Interrogator's Shackles
+									un(REMOVED_FROM_GAME, i(66041)),	-- Scarlet Zealot's Helm
+									un(REMOVED_FROM_GAME, i(66023)),	-- Strapping Belt
+									un(REMOVED_FROM_GAME, i(66014)),	-- Vishas' Hood
 								},
 							}),
 						}),
 						n(RARES, {
 							un(43, n(6488, {	-- Fallen Champion
-								un(2, i(7690)),	-- Ebon Vise
-								un(2, i(7691)),	-- Embalmed Shroud
-								un(2, i(7689)),	-- Morbid Dawn
+								un(REMOVED_FROM_GAME, i(7690)),	-- Ebon Vise
+								un(REMOVED_FROM_GAME, i(7691)),	-- Embalmed Shroud
+								un(REMOVED_FROM_GAME, i(7689)),	-- Morbid Dawn
 							})),
 							un(43, n(6490, {	-- Azshir the Sleepless
-								un(2, i(7709)),	-- Blighted Leggings
-								un(2, i(7731)),	-- Ghostshard Talisman
-								un(2, i(7708)),	-- Necrotic Wand
+								un(REMOVED_FROM_GAME, i(7709)),	-- Blighted Leggings
+								un(REMOVED_FROM_GAME, i(7731)),	-- Ghostshard Talisman
+								un(REMOVED_FROM_GAME, i(7708)),	-- Necrotic Wand
 							})),
 							un(43, n(6489, {	-- Ironspine
-								un(2, i(7686)),	-- Ironspine's Eye
-								un(2, i(7687)),	-- Ironspine's Fist
-								un(2, i(7688)),	-- Ironspine's Ribcage
+								un(REMOVED_FROM_GAME, i(7686)),	-- Ironspine's Eye
+								un(REMOVED_FROM_GAME, i(7687)),	-- Ironspine's Fist
+								un(REMOVED_FROM_GAME, i(7688)),	-- Ironspine's Ribcage
 							})),
 						}),
 						un(43, n(3983, {	-- Interrogator Vishas
-							un(2, i(7683)),	-- Bloody Brass Knuckles
-							un(2, i(7682)),	-- Torturing Poker
+							un(REMOVED_FROM_GAME, i(7683)),	-- Bloody Brass Knuckles
+							un(REMOVED_FROM_GAME, i(7682)),	-- Torturing Poker
 						})),
 						un(43, n(4543, {	-- Bloodmage Thalnos
-							un(2, i(7684)),	-- Bloodmage Mantle
-							un(2, i(7685)),	-- Orb of the Forgotten Seer
+							un(REMOVED_FROM_GAME, i(7684)),	-- Bloodmage Mantle
+							un(REMOVED_FROM_GAME, i(7685)),	-- Orb of the Forgotten Seer
 						})),
 						un(43, n(14693, {	-- Scorn
 							["description"] = "This encounter was only available during the Scourge Invasion.",
 							["g"] = {
-								un(2, i(23168)),	-- Scorn's Focal Dagger
-								un(2, i(23169)),	-- Scorn's Icy Choker
-								un(2, i(23170)),	-- The Frozen Clutch
+								un(REMOVED_FROM_GAME, i(23168)),	-- Scorn's Focal Dagger
+								un(REMOVED_FROM_GAME, i(23169)),	-- Scorn's Icy Choker
+								un(REMOVED_FROM_GAME, i(23170)),	-- The Frozen Clutch
 							},
 						})),
 					}),
@@ -250,32 +250,32 @@ _.Instances = { tier(1, {	-- Classic
 								["u"] = 40,
 								["races"] = HORDE_ONLY,
 								["g"] = {
-									un(2, i(66033)),	-- Band of the Arcanist
-									un(2, i(66015)), 	-- Houndmaster's Belt
-									un(2, i(66024)), 	-- Shield of Comrades
+									un(REMOVED_FROM_GAME, i(66033)),	-- Band of the Arcanist
+									un(REMOVED_FROM_GAME, i(66015)), 	-- Houndmaster's Belt
+									un(REMOVED_FROM_GAME, i(66024)), 	-- Shield of Comrades
 								},
 							}),
 							q(26973, {	-- The Only True Path
 								["u"] = 40,
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									un(2, i(65966)),	-- Band of the Arcanist
-									un(2, i(65916)), 	-- Houndmaster's Belt
-									un(2, i(65942)), 	-- Shield of the Righteous Cause
+									un(REMOVED_FROM_GAME, i(65966)),	-- Band of the Arcanist
+									un(REMOVED_FROM_GAME, i(65916)), 	-- Houndmaster's Belt
+									un(REMOVED_FROM_GAME, i(65942)), 	-- Shield of the Righteous Cause
 								},
 							}),
 						}),
 						un(43, n(3974, {	-- Houndmaster Loksey
-							un(2, i(7756)),	-- Dog Training Gloves
-							un(2, i(3456)),	-- Dog Whistle
-							un(2, i(7710)),	-- Loksey's Training Stick
+							un(REMOVED_FROM_GAME, i(7756)),	-- Dog Training Gloves
+							un(REMOVED_FROM_GAME, i(3456)),	-- Dog Whistle
+							un(REMOVED_FROM_GAME, i(7710)),	-- Loksey's Training Stick
 						})),
 						un(43, n(6487, {	-- Arcanist Doan
-							un(2, i(34227)),	-- Deadman's Hand
-							un(2, i(7714)),	-- Hypnotic Blade
-							un(2, i(7713)),	-- Illusionary Rod
-							un(2, i(7712)),	-- Mantle of Doan
-							un(2, i(7711)),	-- Robe of Doan
+							un(REMOVED_FROM_GAME, i(34227)),	-- Deadman's Hand
+							un(REMOVED_FROM_GAME, i(7714)),	-- Hypnotic Blade
+							un(REMOVED_FROM_GAME, i(7713)),	-- Illusionary Rod
+							un(REMOVED_FROM_GAME, i(7712)),	-- Mantle of Doan
+							un(REMOVED_FROM_GAME, i(7711)),	-- Robe of Doan
 						})),
 					}),
 					n(-87, {	-- Armory
@@ -284,30 +284,30 @@ _.Instances = { tier(1, {	-- Classic
 								["u"] = 40,
 								["races"] = HORDE_ONLY,
 								["g"] = {
-									un(2, i(66034)), 	-- Breastplate of the Scarlet Monastery
-									un(2, i(66047)),	-- Herod's Medallion
-									un(2, i(66016)), 	-- Monk's Leggings
-									un(2, i(66025)), 	-- Spaulder of the Untrained
-									un(2, i(66042)), 	-- Velonara's Cloak
+									un(REMOVED_FROM_GAME, i(66034)), 	-- Breastplate of the Scarlet Monastery
+									un(REMOVED_FROM_GAME, i(66047)),	-- Herod's Medallion
+									un(REMOVED_FROM_GAME, i(66016)), 	-- Monk's Leggings
+									un(REMOVED_FROM_GAME, i(66025)), 	-- Spaulder of the Untrained
+									un(REMOVED_FROM_GAME, i(66042)), 	-- Velonara's Cloak
 								},
 							}),
 							q(26974, {	-- The False Champion
 								["u"] = 40,
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									un(2, i(65967)), 	-- Breastplate of the Scarlet Monastery
-									un(2, i(65990)), 	-- Cloak of the False Champion
-									un(2, i(66006)),	-- Herod's Medallion
-									un(2, i(65917)), 	-- Monk's Leggings
-									un(2, i(65943)), 	-- Shrug of the Crazed
+									un(REMOVED_FROM_GAME, i(65967)), 	-- Breastplate of the Scarlet Monastery
+									un(REMOVED_FROM_GAME, i(65990)), 	-- Cloak of the False Champion
+									un(REMOVED_FROM_GAME, i(66006)),	-- Herod's Medallion
+									un(REMOVED_FROM_GAME, i(65917)), 	-- Monk's Leggings
+									un(REMOVED_FROM_GAME, i(65943)), 	-- Shrug of the Crazed
 								},
 							}),
 						}),
 						un(43, n(3975, {	-- Herod
-							un(2, i(7718)),	-- Herod's Shoulder
-							un(2, i(7719)),	-- Raging Berserker's Helm
-							un(2, i(7717)),	-- Ravager
-							un(2, i(10330)),	-- Scarlet Leggings
+							un(REMOVED_FROM_GAME, i(7718)),	-- Herod's Shoulder
+							un(REMOVED_FROM_GAME, i(7719)),	-- Raging Berserker's Helm
+							un(REMOVED_FROM_GAME, i(7717)),	-- Ravager
+							un(REMOVED_FROM_GAME, i(10330)),	-- Scarlet Leggings
 						})),
 					}),
 					n(-88, {	-- Cathedral
@@ -316,41 +316,41 @@ _.Instances = { tier(1, {	-- Classic
 								["u"] = 40,
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									un(2, i(65970)),	-- Band of Grandiose Delusions
-									un(2, i(65920)), 	-- Grasps of the Insane
-									un(2, i(65946)),	-- Scarlet Necklace of Paradise
+									un(REMOVED_FROM_GAME, i(65970)),	-- Band of Grandiose Delusions
+									un(REMOVED_FROM_GAME, i(65920)), 	-- Grasps of the Insane
+									un(REMOVED_FROM_GAME, i(65946)),	-- Scarlet Necklace of Paradise
 								},
 							}),
 							q(26967, {	-- Battle for the Scarlet Monastery
 								["u"] = 40,
 								["races"] = HORDE_ONLY,
 								["g"] = {
-									un(2, i(66035)),	-- Band of Wrath
-									un(2, i(66026)),	-- Gift of the Banshee Queen
-									un(2, i(66017)), 	-- Grasps of the Forsaken
+									un(REMOVED_FROM_GAME, i(66035)),	-- Band of Wrath
+									un(REMOVED_FROM_GAME, i(66026)),	-- Gift of the Banshee Queen
+									un(REMOVED_FROM_GAME, i(66017)), 	-- Grasps of the Forsaken
 								},
 							}),
 						}),
 						n(4542, {	-- High Inquisitor Fairbanks
-							un(2, i(19508)),	-- Branded Leather Bracers
-							un(2, i(19509)),	-- Dusty Mail Boots
-							un(2, i(19507)),	-- Inquisitor's Shawl
+							un(REMOVED_FROM_GAME, i(19508)),	-- Branded Leather Bracers
+							un(REMOVED_FROM_GAME, i(19509)),	-- Dusty Mail Boots
+							un(REMOVED_FROM_GAME, i(19507)),	-- Inquisitor's Shawl
 						}),
 						n(3976, {	-- Scarlet Commander Mograine
 							["u"] = 43,
 							["g"] = {
-								un(2, i(7726)),	-- Aegis of the Scarlet Commander
+								un(REMOVED_FROM_GAME, i(7726)),	-- Aegis of the Scarlet Commander
 								i(7761),	-- Steelclaw Reaver
-								un(2, i(7724)),	-- Gauntlets of Divinity
-								un(2, i(7723)),	-- Mograine's Might
-								un(2, i(10330)),	-- Scarlet Leggings
+								un(REMOVED_FROM_GAME, i(7724)),	-- Gauntlets of Divinity
+								un(REMOVED_FROM_GAME, i(7723)),	-- Mograine's Might
+								un(REMOVED_FROM_GAME, i(10330)),	-- Scarlet Leggings
 								i(2262),	-- Mark of Kern
 							}
 						}),
 						n(3977, {	-- High Inquisitor Whitemane
-							un(2, i(7721)),	-- Hand of Righteousness
-							un(2, i(7722)),	-- Triune Amulet
-							un(2, i(7720)),	-- Whitemane's Chapeau
+							un(REMOVED_FROM_GAME, i(7721)),	-- Hand of Righteousness
+							un(REMOVED_FROM_GAME, i(7722)),	-- Triune Amulet
+							un(REMOVED_FROM_GAME, i(7720)),	-- Whitemane's Chapeau
 						}),
 					}),
 				}),

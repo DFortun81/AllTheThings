@@ -48,12 +48,12 @@ _.Zones =
 								i(41721),	-- Design: Deadly Monarch Topaz
 								i(41794, {	-- Design: Deadly Monarch Topaz
 									["spellID"] = 0,	-- This is now available via 41721, need to delink the old plans from the recipe
-									["u"] = 2,
+									["u"] = REMOVED_FROM_GAME,
 								}),
 								i(41725),	-- Design: Timeless Twilight Opal
 								i(41795, {	-- Design: Timeless Twilight Opal
 									["spellID"] = 0,	-- This is now available via 41725, need to delink the old plans from the recipe
-									["u"] = 2,
+									["u"] = REMOVED_FROM_GAME,
 								}),
 								i(44305),	-- Kilt of Dark Mercy
 								i(42183),	-- Pattern: Abyssal Bag

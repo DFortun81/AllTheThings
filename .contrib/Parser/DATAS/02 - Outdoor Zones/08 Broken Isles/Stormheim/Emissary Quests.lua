@@ -25,22 +25,22 @@ _.Zones =
 								i(144310),	-- Formula: Enchant Neck - Mark of the Master (Rank 3)
 							},
 						}),
-						un(2, i(154905, {	-- Valarjar Cache
+						un(REMOVED_FROM_GAME, i(154905, {	-- Valarjar Cache
 							["sym"] = {
 								{"select", "itemID", 157824},	-- Valarjar Cache
 							},
 						})),
-						un(2, i(151466, {	-- Valarjar Cache
+						un(REMOVED_FROM_GAME, i(151466, {	-- Valarjar Cache
 							["sym"] = {
 								{"select", "itemID", 157824},	-- Valarjar Cache
 							},
 						})),
-						un(2, i(146749, {	-- Valarjar Cache
+						un(REMOVED_FROM_GAME, i(146749, {	-- Valarjar Cache
 							["sym"] = {
 								{"select", "itemID", 157824},	-- Valarjar Cache
 							},
 						})),
-						un(2, i(137562, {	-- Valarjar Cache
+						un(REMOVED_FROM_GAME, i(137562, {	-- Valarjar Cache
 							["sym"] = {
 								{"select", "itemID", 157824},	-- Valarjar Cache
 							},
@@ -55,7 +55,7 @@ _.Zones =
 							i(152106, {	-- Valarjar Strongbox
 								i(147805),	-- Valarjar Stormwing
 							}),
-							un(2, i(146901, {	-- Valarjar Strongbox
+							un(REMOVED_FROM_GAME, i(146901, {	-- Valarjar Strongbox
 								["sym"] = {
 									{"select", "itemID", 152106},	-- Valarjar Strongbox
 									{"pop"},

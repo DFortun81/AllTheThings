@@ -14,19 +14,19 @@ _.Zones =
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(161531, {	-- Akunda's Grounding Boots
-							["u"] = 1,	-- Never Available (Was in beta, not there on 9/16/18)
+							["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
 						}),
 						i(165245, {	-- Akunda's Grounding Girdle
 							["cost"] = 19000000,	-- 1,900g
 						}),
 						i(161489, {	-- Alpaca Wool Gloves
-							["u"] = 1,	-- Never Available (Was in beta, not there on 9/16/18)
+							["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
 						}),
 						i(165236, {	-- Alpaca Wool Leggings
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161527, {	-- Bracers of Zem'lan
-							["u"] = 1,	-- Never Available (Was in beta, not there on 9/16/18)
+							["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
 						}),
 						i(159753, {	-- Desert Flute (TOY!)
 							["cost"] = 11000000,	-- 1,100g
@@ -50,13 +50,13 @@ _.Zones =
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161542, {	-- Gauntlets of the Scorched Sands
-							["u"] = 1,	-- Never Available (Was in beta, not there on 9/16/18)
+							["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
 						}),
 						i(163213, {	-- Ghostly Explorer's Skull
 							["f"] = 55,  -- They may change it to a toy?
 						}),
 						i(161545, {	-- Girdle of Scavenged Plates
-							["u"] = 1,	-- Never Available (Was in beta, not there on 9/16/18)
+							["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
 						}),
 						i(165235, {	-- Gloves of the Scaled Devoted
 							["cost"] = 19000000,	-- 1,900g
@@ -65,7 +65,7 @@ _.Zones =
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161511, {	-- Kimbul's Cuffs of Redemption
-							["u"] = 1,	-- Never Available (Was in beta, not there on 9/16/18)
+							["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
 						}),
 						i(165241, {	-- Kimbul's Leggings of Redemption
 							["cost"] = 19000000,	-- 1,900g
@@ -104,7 +104,7 @@ _.Zones =
 							["cost"] = 900000000,	-- 90,000g
 						}),
 						i(161502, {	-- Sash of the Scaled Devoted
-							["u"] = 1,	-- Never Available (Was in beta, not there on 9/16/18)
+							["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
 						}),
 						i(162734, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics (Rank 2)
 							["cost"] = 11000000,	-- 1,100g
@@ -122,13 +122,13 @@ _.Zones =
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161507, {	-- Silent Scavenger Leggings
-							["u"] = 1,	-- Never Available (Was in beta, not there on 9/16/18)
+							["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
 						}),
 						i(160548, {	-- Tabard of the Voldunai
 							["cost"] = 6250000,	-- 625g
 						}),
 						i(163565, {	-- Vulpera Scrapper's Armor
-							["u"] = 1,	-- Never Available (Was in beta, not there on 9/16/18)
+							["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
 						}),
 						i(165021, {	-- Words of Akunda (TOY!)
 							["cost"] = 18000000,	-- 1,800g

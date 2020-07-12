@@ -32,7 +32,7 @@ _.Zones =
 					["provider"] = { "n", 3693 },	-- Terenthis
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(5387)),	-- Enchanted Moonstalker Cloak
+						un(REMOVED_FROM_GAME, i(5387)),	-- Enchanted Moonstalker Cloak
 					},
 				}),
 				q(13563, {	-- A Love Eternal
@@ -122,9 +122,9 @@ _.Zones =
 					["provider"] = { "n", 3650 },	-- Asterion
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(5604)),	-- Elven Wand
-						un(2, i(7229)),	-- Explorer's Vest
-						un(2, i(5617)),	-- Vagabond Leggings
+						un(REMOVED_FROM_GAME, i(5604)),	-- Elven Wand
+						un(REMOVED_FROM_GAME, i(7229)),	-- Explorer's Vest
+						un(REMOVED_FROM_GAME, i(5617)),	-- Vagabond Leggings
 					},
 				}),
 				q(13557, {	-- Bearer of Good Fortune
@@ -190,7 +190,7 @@ _.Zones =
 					["provider"] = { "n", 3583 },	-- Barithras Moonshade
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(5610)),	-- Gustweld Cloak
+						un(REMOVED_FROM_GAME, i(5610)),	-- Gustweld Cloak
 					},
 				}),
 				q(13545, {	-- Cleansing the Afflicted
@@ -215,7 +215,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["g"] = {
-						un(2, i(15866)),	-- Veildust Medicine Bag
+						un(REMOVED_FROM_GAME, i(15866)),	-- Veildust Medicine Bag
 					},
 				}),
 				q(13507, {	-- Denying Manpower
@@ -260,7 +260,7 @@ _.Zones =
 					["provider"] = { "n", 3692 },	-- Volcor
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(5609)),	-- Steadfast Cinch
+						un(REMOVED_FROM_GAME, i(5609)),	-- Steadfast Cinch
 					},
 				}),
 				q(995,   {	-- Escape Through Stealth
@@ -268,7 +268,7 @@ _.Zones =
 					["provider"] = { "n", 3692 },	-- Volcor
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6659)),	-- Scarab Trousers
+						un(REMOVED_FROM_GAME, i(6659)),	-- Scarab Trousers
 					},
 				}),
 				q(963,   {	-- For Love Eternal
@@ -276,7 +276,7 @@ _.Zones =
 					["provider"] = { "n", 3644 },	-- Cerellean Whiteclaw
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(5611)),	-- Tear of Grief
+						un(REMOVED_FROM_GAME, i(5611)),	-- Tear of Grief
 					},
 				}),
 				q(1138,  {	-- Fruit of the Sea
@@ -284,8 +284,8 @@ _.Zones =
 					["provider"] = { "n", 10216 },	-- Gubber Blump
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(15406)),	-- Crustacean Boots
-						un(2, i(15405)),	-- Shucking Gloves
+						un(REMOVED_FROM_GAME, i(15406)),	-- Crustacean Boots
+						un(REMOVED_FROM_GAME, i(15405)),	-- Shucking Gloves
 					},
 				}),
 				q(13909, {	-- Got Some Flotsam?
@@ -307,7 +307,7 @@ _.Zones =
 					["sourceQuest"] = 13596,	-- Twilight Plans
 				}),
 				q(26379, {	-- In Aid of the Refugees
-					["u"] = 1,	-- this one doesn't appear to have ever been added. If you get this version, please include how you got it
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(13885, {	-- In Defense of Darkshore
 					["provider"] = { "n", 34301 },	-- Kathrena Winterwisp
@@ -347,8 +347,8 @@ _.Zones =
 					["provider"] = { "n", 3616 },	-- Onu
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(5757)),	-- Hardwood Cudgel
-						un(2, i(5615)),	-- Woodsman Sword
+						un(REMOVED_FROM_GAME, i(5757)),	-- Hardwood Cudgel
+						un(REMOVED_FROM_GAME, i(5615)),	-- Woodsman Sword
 					},
 				}),
 				q(13902, {	-- Mounting the Offensive
@@ -568,8 +568,8 @@ _.Zones =
 					["provider"] = { "n", 3701 },	-- Tharnariun Treetender
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(7738)),	-- Evergreen Gloves
-						un(2, i(7739)),	-- Timberland Cape
+						un(REMOVED_FROM_GAME, i(7738)),	-- Evergreen Gloves
+						un(REMOVED_FROM_GAME, i(7739)),	-- Timberland Cape
 					},
 				}),
 				q(741,   {	-- The Absent Minded Prospector
@@ -577,9 +577,9 @@ _.Zones =
 					["provider"] = { "n", 2913 },	-- Archaeologist Hollee
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(5629)),	-- Hammerfist Gloves
-						un(2, i(11936)),	-- Relic Hunter Belt
-						un(2, i(5630)),	-- Windfelt Gloves
+						un(REMOVED_FROM_GAME, i(5629)),	-- Hammerfist Gloves
+						un(REMOVED_FROM_GAME, i(11936)),	-- Relic Hunter Belt
+						un(REMOVED_FROM_GAME, i(5630)),	-- Windfelt Gloves
 					},
 				}),
 				q(943,   {	-- The Absent Minded Prospector
@@ -587,8 +587,8 @@ _.Zones =
 					["provider"] = { "n", 2911 },	-- Archaeologist Flagongut
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(5627)),	-- Relic Blade
-						un(2, i(5626)),	-- Skullchipper
+						un(REMOVED_FROM_GAME, i(5627)),	-- Relic Blade
+						un(REMOVED_FROM_GAME, i(5626)),	-- Skullchipper
 					},
 				}),
 				q(13911, {	-- The Absent-Minded Prospector
@@ -640,9 +640,9 @@ _.Zones =
 					["provider"] = { "n", 3649 },	-- Thundris Windweaver
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(15203)),	-- Guststorm Legguards
-						un(2, i(15204)),	-- Moonstone Wand
-						un(2, i(15202)),	-- Wildkeeper Leggings
+						un(REMOVED_FROM_GAME, i(15203)),	-- Guststorm Legguards
+						un(REMOVED_FROM_GAME, i(15204)),	-- Moonstone Wand
+						un(REMOVED_FROM_GAME, i(15202)),	-- Wildkeeper Leggings
 					},
 				}),
 				q(13581, {	-- The Blackwood Pledge
@@ -737,9 +737,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 175524 },	-- Mysterious Red Crystal (u=43)
 					["g"] = {
-						un(2, i(15335)),	-- Briarsteel Shortsword
-						un(2, i(15396)),	-- Curvewood Dagger
-						un(2, i(15397)),	-- Oakthrush Staff
+						un(REMOVED_FROM_GAME, i(15335)),	-- Briarsteel Shortsword
+						un(REMOVED_FROM_GAME, i(15396)),	-- Curvewood Dagger
+						un(REMOVED_FROM_GAME, i(15397)),	-- Oakthrush Staff
 					},
 				}),
 				q(13590, {	-- The Front Line
@@ -848,9 +848,9 @@ _.Zones =
 					["provider"] = { "n", 11218 },	-- Kerlonian Evershade
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(15206)),	-- Jadefinger Baton
-						un(2, i(15205)),	-- Owlsight Rifle
-						un(2, i(15207)),	-- Steelcap Shield
+						un(REMOVED_FROM_GAME, i(15206)),	-- Jadefinger Baton
+						un(REMOVED_FROM_GAME, i(15205)),	-- Owlsight Rifle
+						un(REMOVED_FROM_GAME, i(15207)),	-- Steelcap Shield
 					},
 				}),
 				q(13895, {	-- The Slumbering Ancients
@@ -885,8 +885,8 @@ _.Zones =
 					["provider"] = { "n", 3661 },	-- Balthule Shadowstrike
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(10043)),	-- Pious Legwraps
-						un(2, i(5614)),	-- Seraph's Strike
+						un(REMOVED_FROM_GAME, i(10043)),	-- Pious Legwraps
+						un(REMOVED_FROM_GAME, i(5614)),	-- Seraph's Strike
 					},
 				}),
 				q(973,   {	-- The Tower of Althalaxx
@@ -894,8 +894,8 @@ _.Zones =
 					["provider"] = { "n", 3663 },	-- Delgren the Purifier
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(5622)),	-- Clergy Ring
-						un(2, i(5613)),	-- Staff of the Purifier
+						un(REMOVED_FROM_GAME, i(5622)),	-- Clergy Ring
+						un(REMOVED_FROM_GAME, i(5613)),	-- Staff of the Purifier
 					},
 				}),
 				q(13519, {	-- The Twilight's Hammer
@@ -979,9 +979,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 175320 },	-- WANTED: Murkdeep!
 					["g"] = {
-						un(2, i(15404)),	-- Breakwater Girdle
-						un(2, i(15403)),	-- Ridgeback Bracers
-						un(2, i(5315)),	-- Timberland Armguards
+						un(REMOVED_FROM_GAME, i(15404)),	-- Breakwater Girdle
+						un(REMOVED_FROM_GAME, i(15403)),	-- Ridgeback Bracers
+						un(REMOVED_FROM_GAME, i(5315)),	-- Timberland Armguards
 					},
 				}),
 				q(13509, {	-- War Supplies
@@ -998,7 +998,7 @@ _.Zones =
 					["provider"] = { "n", 10219 },	-- Gwennyth Bly'Leggonde
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(15399)),	-- Dryweed Belt
+						un(REMOVED_FROM_GAME, i(15399)),	-- Dryweed Belt
 					},
 				}),
 				q(13525, {	-- What's Happening to the Blackwood Furbolg?

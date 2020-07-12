@@ -142,47 +142,47 @@ _.Zones =
 					["g"] = {
 						i(23131, {	-- Design: Bold Blood Garnet (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23130, {	-- Design: Brilliant Blood Garnet (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23148, {	-- Design: Brilliant Blood Garnet (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(28596, {	-- Design: Delicate Blood Garnet (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23137, {	-- Design: Glinting Shadow Draenite (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23135, {	-- Design: Inscribed Flame Spessarite (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23141, {	-- Design: Jagged Deep Peridot (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23140, {	-- Design: Radiant Deep Peridot (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23152, {	-- Design: Solid Azure Moonstone (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23147, {	-- Design: Sovereign Shadow Draenite (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23144, {	-- Design: Timeless Shadow Draenite (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
@@ -298,7 +298,7 @@ _.Zones =
 					["coord"] = { 53.2, 38.2, 100 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(1, i(25847)),	-- Plans: Eternium Rod
+						un(REMOVED_FROM_GAME, i(25847)),	-- Plans: Eternium Rod
 						i(23638, {	-- Plans: Lesser Ward of Shielding
 							["isLimited"] = true,
 						}),
@@ -337,47 +337,47 @@ _.Zones =
 					["g"] = {
 						i(23131, {	-- Design: Bold Blood Garnet (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23130, {	-- Design: Brilliant Blood Garnet (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23148, {	-- Design: Brilliant Blood Garnet (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(28596, {	-- Design: Delicate Blood Garnet (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23137, {	-- Design: Glinting Shadow Draenite (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23135, {	-- Design: Inscribed Flame Spessarite (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23141, {	-- Design: Jagged Deep Peridot (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23140, {	-- Design: Radiant Deep Peridot (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23152, {	-- Design: Solid Azure Moonstone (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23147, {	-- Design: Sovereign Shadow Draenite (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23144, {	-- Design: Timeless Shadow Draenite (Removed and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),

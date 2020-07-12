@@ -43,9 +43,9 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6094)),		-- Piercing Axe
-						un(2, i(2089)), 	-- Scrimshaw Dagger
-						un(2, i(2074)), 	-- Solid Shortblade
+						un(REMOVED_FROM_GAME, i(6094)),		-- Piercing Axe
+						un(REMOVED_FROM_GAME, i(2089)), 	-- Scrimshaw Dagger
+						un(REMOVED_FROM_GAME, i(2074)), 	-- Solid Shortblade
 					},
 				}),
 				q(27785, {	-- The Admiral
@@ -60,9 +60,9 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6087)),		-- Chausses of Westfall
-						un(2, i(2042)),		-- Staff of Westfall
-						un(2, i(2041)),		-- Tunic of Westfall
+						un(REMOVED_FROM_GAME, i(6087)),		-- Chausses of Westfall
+						un(REMOVED_FROM_GAME, i(2042)),		-- Staff of Westfall
+						un(REMOVED_FROM_GAME, i(2041)),		-- Tunic of Westfall
 					},
 				}),
 				q(27790, {	-- The Defias Kingpin
@@ -99,8 +99,8 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(7606)),		-- Polar Gauntlets
-						un(2, i(7607)),		-- Sable Wand
+						un(REMOVED_FROM_GAME, i(7606)),		-- Polar Gauntlets
+						un(REMOVED_FROM_GAME, i(7607)),		-- Sable Wand
 					},
 				}),
 			}),
@@ -216,10 +216,10 @@ _.Instances = { tier(1, {	-- Classic
 							un(7, i(1945)), 	-- Woodworking Gloves
 						})),
 						un(43, n(646, { 	-- Mr. Smite
-							un(2, i(7230)),	-- Smite's Mighty Hammer
+							un(REMOVED_FROM_GAME, i(7230)),	-- Smite's Mighty Hammer
 						})),
 						un(43, n(643, { 	-- Sneed
-							un(2, i(5194)),	-- Taskmaster Axe
+							un(REMOVED_FROM_GAME, i(5194)),	-- Taskmaster Axe
 						})),
 					}),
 				}),

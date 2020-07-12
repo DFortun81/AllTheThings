@@ -62,11 +62,11 @@ _.ExpansionFeatures =
 								["u"] = 40,
 								["provider"] = { "n", 92213 },	-- Archmage Khadgar
 								["g"] = {
-									un(4, i(124634)),	-- Thorasus, the Stone Heart of Draenor
-									un(4, i(124635)),	-- Nithramus, the All-Seer
-									un(4, i(124636)),	-- Maalus, the Blood Drinker
-									un(4, i(124637)),	-- Sanctus, Sigil of the Unbroken
-									un(4, i(124638)),	-- Etheralus, the Eternal Reward
+									un(REMOVED_FROM_GAME, i(124634)),	-- Thorasus, the Stone Heart of Draenor
+									un(REMOVED_FROM_GAME, i(124635)),	-- Nithramus, the All-Seer
+									un(REMOVED_FROM_GAME, i(124636)),	-- Maalus, the Blood Drinker
+									un(REMOVED_FROM_GAME, i(124637)),	-- Sanctus, Sigil of the Unbroken
+									un(REMOVED_FROM_GAME, i(124638)),	-- Etheralus, the Eternal Reward
 								},
 							}),
 							q(39675, {	-- Equipping Our Fleet

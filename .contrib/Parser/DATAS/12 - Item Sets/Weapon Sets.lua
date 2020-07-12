@@ -1043,24 +1043,24 @@ _.GearSets =
 			}),
 			i(136854, {	-- Arsenal: Draenor Challenger's Armaments
 				["g"] = {
-					un(4, i(118401)),	-- Arcana Shard Spire
-					un(4, i(118396)),	-- Bloodmaw Gargoyle
-					un(4, i(118395)),	-- Claws of Creation
-					un(4, i(118409)),	-- Cloudsong Glaive
-					un(4, i(118411)),	-- Crystal-Shot Longrifle
-					un(4, i(118403)),	-- Dimension-Ripper's Staff
-					un(4, i(118397)),	-- Equus
-					un(4, i(118408)),	-- Elemental Crescent
-					un(4, i(118407)),	-- Face of the Guardian
-					un(4, i(118413)),	-- Flamegrinder
-					un(4, i(118406)),	-- Furnace of the Great Machine
-					un(4, i(118402)),	-- Greatstaff of Infinite Knowledge
-					un(4, i(118412)),	-- Greatsword of the Inferno
-					un(4, i(118404)),	-- Living Longbow
-					un(4, i(118405)),	-- Shifting Felblade
-					un(4, i(118398)),	-- Soul Eater
-					un(4, i(118399)),	-- Suneater
-					un(4, i(118410)),	-- Tesseract Timepiece
+					un(REMOVED_FROM_GAME, i(118401)),	-- Arcana Shard Spire
+					un(REMOVED_FROM_GAME, i(118396)),	-- Bloodmaw Gargoyle
+					un(REMOVED_FROM_GAME, i(118395)),	-- Claws of Creation
+					un(REMOVED_FROM_GAME, i(118409)),	-- Cloudsong Glaive
+					un(REMOVED_FROM_GAME, i(118411)),	-- Crystal-Shot Longrifle
+					un(REMOVED_FROM_GAME, i(118403)),	-- Dimension-Ripper's Staff
+					un(REMOVED_FROM_GAME, i(118397)),	-- Equus
+					un(REMOVED_FROM_GAME, i(118408)),	-- Elemental Crescent
+					un(REMOVED_FROM_GAME, i(118407)),	-- Face of the Guardian
+					un(REMOVED_FROM_GAME, i(118413)),	-- Flamegrinder
+					un(REMOVED_FROM_GAME, i(118406)),	-- Furnace of the Great Machine
+					un(REMOVED_FROM_GAME, i(118402)),	-- Greatstaff of Infinite Knowledge
+					un(REMOVED_FROM_GAME, i(118412)),	-- Greatsword of the Inferno
+					un(REMOVED_FROM_GAME, i(118404)),	-- Living Longbow
+					un(REMOVED_FROM_GAME, i(118405)),	-- Shifting Felblade
+					un(REMOVED_FROM_GAME, i(118398)),	-- Soul Eater
+					un(REMOVED_FROM_GAME, i(118399)),	-- Suneater
+					un(REMOVED_FROM_GAME, i(118410)),	-- Tesseract Timepiece
 				},
 				["lvl"] = 100,
 			}),

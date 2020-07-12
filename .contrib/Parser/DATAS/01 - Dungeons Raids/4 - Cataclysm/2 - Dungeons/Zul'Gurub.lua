@@ -264,7 +264,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							["provider"] = { "n", 53024 },			-- Bloodslayer Zala
 						}),
 						q(29174,  {	-- Break Their Spirits
-							["u"] = 1,				-- Never made it to live
+							["u"] = NEVER_IMPLEMENTED,
 						}),
 						q(29175,  {	-- Break Their Spirits
 							["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
@@ -273,13 +273,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 							["provider"] = { "n", 53043 },			-- Briney Boltcutter
 						}),
 						q(29168,  {	-- Secondary Targets
-							["u"] = 1,				-- Never made it to live
+							["u"] = NEVER_IMPLEMENTED,
 						}),
 						q(29173,  {	-- Secondary Targets
 							["provider"] = { "n", 53023 },			-- Bloodslayer T'ara
 						}),
 						q(29169,  {	-- The Beasts Within
-							["u"] = 1,				-- Never made it to live
+							["u"] = NEVER_IMPLEMENTED,
 						}),
 						q(29172,  {	-- The Beasts Within
 							["provider"] = { "n", 53023 },			-- Bloodslayer T'ara

@@ -673,7 +673,7 @@ _.Zones =
 					["sourceQuest"] = 12974,	-- The Champion's Call
 				}),
 				q(12954, {	-- The Amphitheater of Anguish: Yggdras! (NYI - duplicate?)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(12565, {	-- The Blessing of Zim'Abwa -- aa
 					["coord"] = { 40.5, 65.6, 121 },

@@ -25,22 +25,22 @@ _.Zones =
 								i(144316),	-- Formula: Enchant Neck - Mark of the Quick (Rank 3)
 							},
 						}),
-						un(2, i(137563, {	-- Farondis Lockbox
+						un(REMOVED_FROM_GAME, i(137563, {	-- Farondis Lockbox
 							["sym"] = {
 								{"select", "itemID", 157825},	-- Farondis Lockbox
 							},
 						})),
-						un(2, i(146750, {	-- Farondis Lockbox
+						un(REMOVED_FROM_GAME, i(146750, {	-- Farondis Lockbox
 							["sym"] = {
 								{"select", "itemID", 157825},	-- Farondis Lockbox
 							},
 						})),
-						un(2, i(151467, {	-- Farondis Lockbox
+						un(REMOVED_FROM_GAME, i(151467, {	-- Farondis Lockbox
 							["sym"] = {
 								{"select", "itemID", 157825},	-- Farondis Lockbox
 							},
 						})),
-						un(2, i(154906, {	-- Farondis Lockbox
+						un(REMOVED_FROM_GAME, i(154906, {	-- Farondis Lockbox
 							["sym"] = {
 								{"select", "itemID", 157825},	-- Farondis Lockbox
 							},
@@ -63,22 +63,22 @@ _.Zones =
 								{"is", "npcID"},	-- Ignore all of the non-npcID entries. (set headers only)
 							},
 						}),
-						un(2, i(137565, {	-- Warden's Field Kit
+						un(REMOVED_FROM_GAME, i(137565, {	-- Warden's Field Kit
 							["sym"] = {
 								{"select", "itemID", 157827},	-- Warden's Field Kit
 							},
 						})),
-						un(2, i(146752, {	-- Warden's Field Kit
+						un(REMOVED_FROM_GAME, i(146752, {	-- Warden's Field Kit
 							["sym"] = {
 								{"select", "itemID", 157827},	-- Warden's Field Kit
 							},
 						})),
-						un(2, i(151469, {	-- Warden's Field Kit
+						un(REMOVED_FROM_GAME, i(151469, {	-- Warden's Field Kit
 							["sym"] = {
 								{"select", "itemID", 157827},	-- Warden's Field Kit
 							},
 						})),
-						un(2, i(154908, {	-- Warden's Field Kit
+						un(REMOVED_FROM_GAME, i(154908, {	-- Warden's Field Kit
 							["sym"] = {
 								{"select", "itemID", 157827},	-- Warden's Field Kit
 							},
@@ -93,7 +93,7 @@ _.Zones =
 							i(152102, {	-- Farondis Chest
 								i(147806),	-- Cloudwing Hippogryph (MOUNT!)
 							}),
-							un(2,  i(146897, {	-- Farondis Chest
+							un(REMOVED_FROM_GAME,  i(146897, {	-- Farondis Chest
 								["sym"] = {
 									{"select", "itemID", 152102},	-- Farondis Chest
 									{"pop"},
@@ -108,7 +108,7 @@ _.Zones =
 							i(152107, {	-- Warden's Supply Kit
 								i(147843),	-- Sira's Extra Cloak (TOY!)
 							}),
-							un(2, i(146902, {	-- Warden's Supply Kit
+							un(REMOVED_FROM_GAME, i(146902, {	-- Warden's Supply Kit
 								["sym"] = {
 									{"select", "itemID", 152107},	-- Warden's Supply Kit
 									{"pop"},

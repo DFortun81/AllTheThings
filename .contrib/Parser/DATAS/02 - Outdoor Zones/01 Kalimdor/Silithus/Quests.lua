@@ -10,7 +10,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
 					["g"] = {
-						un(2, i(22725)),	-- Band of Cenarius
+						un(REMOVED_FROM_GAME, i(22725)),	-- Band of Cenarius
 					},
 				}),
 				q(8287,  {	-- A Terrible Purpose
@@ -25,7 +25,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
-						un(2, i(20603, { 	-- Bag of Spoils
+						un(REMOVED_FROM_GAME, i(20603, { 	-- Bag of Spoils
 							un(7, i(20694)), 	-- Glowing Black Orb
 							un(7, i(20693)), 	-- Weighted Cloak
 							un(7, i(20692)),	-- Multicolored Band
@@ -38,8 +38,8 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
-						un(2, i(20699)),	-- Cenarion Reservist's Legplates
-						un(2, i(20710)),	-- Crystal Encrusted Greaves
+						un(REMOVED_FROM_GAME, i(20699)),	-- Cenarion Reservist's Legplates
+						un(REMOVED_FROM_GAME, i(20710)),	-- Crystal Encrusted Greaves
 					},
 				}),
 				q(8376,  {	-- Armaments of War (Paladin)
@@ -48,8 +48,8 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
-						un(2, i(20700)),	-- Cenarion Reservist's Legplates
-						un(2, i(20711)),	-- Crystal Lined Greaves
+						un(REMOVED_FROM_GAME, i(20700)),	-- Cenarion Reservist's Legplates
+						un(REMOVED_FROM_GAME, i(20711)),	-- Crystal Lined Greaves
 					},
 				}),
 				q(8377,  {	-- Armaments of War (Hunter)
@@ -58,8 +58,8 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
-						un(2, i(20702)),	-- Cenarion Reservist's Legguards
-						un(2, i(20713)),	-- Desertstalkers' Gauntlets
+						un(REMOVED_FROM_GAME, i(20702)),	-- Cenarion Reservist's Legguards
+						un(REMOVED_FROM_GAME, i(20713)),	-- Desertstalkers' Gauntlets
 					},
 				}),
 				q(8378,  {	-- Armaments of War (Rogue)
@@ -68,8 +68,8 @@ _.Zones =
 					["classes"] = { ROGUE },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
-						un(2, i(20703)),	-- Cenarion Reservist's Leggings
-						un(2, i(20715)),	-- Dunestalker's Boots
+						un(REMOVED_FROM_GAME, i(20703)),	-- Cenarion Reservist's Leggings
+						un(REMOVED_FROM_GAME, i(20715)),	-- Dunestalker's Boots
 					},
 				}),
 				q(8379,  {	-- Armaments of War (Priest)
@@ -78,8 +78,8 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
-						un(2, i(20707)),	-- Cenarion Reservist's Pants
-						un(2, i(20717)),	-- Desert Bloom Gloves
+						un(REMOVED_FROM_GAME, i(20707)),	-- Cenarion Reservist's Pants
+						un(REMOVED_FROM_GAME, i(20717)),	-- Desert Bloom Gloves
 					},
 				}),
 				q(8380,  {	-- Armaments of War (Shaman)
@@ -88,8 +88,8 @@ _.Zones =
 					["classes"] = { SHAMAN },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
-						un(2, i(20701)),	-- Cenarion Reservist's Legguards
-						un(2, i(20712)),	-- Wastewalker's Gauntlets
+						un(REMOVED_FROM_GAME, i(20701)),	-- Cenarion Reservist's Legguards
+						un(REMOVED_FROM_GAME, i(20712)),	-- Wastewalker's Gauntlets
 					},
 				}),
 				q(8381,  {	-- Armaments of War (Mage, Warlock)
@@ -98,9 +98,9 @@ _.Zones =
 					["classes"] = { MAGE, WARLOCK },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
-						un(2, i(20705)),	-- Cenarion Reservist's Pants
-						un(2, i(20706)),	-- Cenarion Reservist's Pants
-						un(2, i(20716)),	-- Sandworm Skin Gloves
+						un(REMOVED_FROM_GAME, i(20705)),	-- Cenarion Reservist's Pants
+						un(REMOVED_FROM_GAME, i(20706)),	-- Cenarion Reservist's Pants
+						un(REMOVED_FROM_GAME, i(20716)),	-- Sandworm Skin Gloves
 					},
 				}),
 				q(8382,  {	-- Armaments of War (Druid)
@@ -109,8 +109,8 @@ _.Zones =
 					["classes"] = { DRUID },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
-						un(2, i(20704)),	-- Cenarion Reservist's Leggings
-						un(2, i(20714)),	-- Sandstorm Boots
+						un(REMOVED_FROM_GAME, i(20704)),	-- Cenarion Reservist's Leggings
+						un(REMOVED_FROM_GAME, i(20714)),	-- Sandstorm Boots
 					},
 				}),
 				q(8331, {	-- Aurel Goldleaf
@@ -170,9 +170,9 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
-						un(2, i(21180)),	-- Earthstrike
-						un(2, i(21188)),	-- Fist of Cenarius
-						un(2, i(21190)),	-- Wrath of Cenarius
+						un(REMOVED_FROM_GAME, i(21180)),	-- Earthstrike
+						un(REMOVED_FROM_GAME, i(21188)),	-- Fist of Cenarius
+						un(REMOVED_FROM_GAME, i(21190)),	-- Wrath of Cenarius
 					},
 				}),
 				q(8277,  {	-- Deadly Desert Venom
@@ -271,7 +271,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
-						un(2, i(20602, { 	-- Chest of Spoils
+						un(REMOVED_FROM_GAME, i(20602, { 	-- Chest of Spoils
 							un(7, i(20721)),	-- Band of the Cultist
 							un(7, i(20722)), 	-- Crystal Slugthrower
 							un(7, i(20720)), 	-- Dark Whisper Blade
@@ -291,21 +291,21 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 15798 },	-- Colossus Researcher Nestor
 					["g"] = {
-						un(2, i(21528)), 	-- Colossal Bag of Loot
+						un(REMOVED_FROM_GAME, i(21528)), 	-- Colossal Bag of Loot
 					},
 				}),
 				q(8858,  {	-- Secrets of the Colossus - Regal - Was only possible during the 10 hours of AQ opening
 					["u"] = 40,
 					["provider"] = { "n", 15799 },	-- Colossus Researcher Eazel
 					["g"] = {
-						un(2, i(21528)), 	-- Colossal Bag of Loot
+						un(REMOVED_FROM_GAME, i(21528)), 	-- Colossal Bag of Loot
 					},
 				}),
 				q(8859,  {	-- Secrets of the Colossus - Zora - Was only possible during the 10 hours of AQ opening
 					["u"] = 40,
 					["provider"] = { "n", 15797 },	-- Colossus Researcher Sophia
 					["g"] = {
-						un(2, i(21528)), 	-- Colossal Bag of Loot
+						un(REMOVED_FROM_GAME, i(21528)), 	-- Colossal Bag of Loot
 					},
 				}),
 				q(8280,  {	-- Securing the Supply Lines
@@ -328,7 +328,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
-						un(2, i(20601, { 	-- Sack of Spoils
+						un(REMOVED_FROM_GAME, i(20601, { 	-- Sack of Spoils
 							un(7, i(20695)),	-- Abyssal War Beads
 							un(7, i(20696)),	-- Crystal Spiked Maul
 							un(7, i(20697)),	-- Crystalline Threaded Cape
@@ -340,10 +340,10 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
-						un(2, i(21184)),	-- Deeprock Bracers
-						un(2, i(21185)),	-- Earthcalm Orb
-						un(2, i(21189)),	-- Might of Cenarius
-						un(2, i(21186)),	-- Rockfury Bracers
+						un(REMOVED_FROM_GAME, i(21184)),	-- Deeprock Bracers
+						un(REMOVED_FROM_GAME, i(21185)),	-- Earthcalm Orb
+						un(REMOVED_FROM_GAME, i(21189)),	-- Might of Cenarius
+						un(REMOVED_FROM_GAME, i(21186)),	-- Rockfury Bracers
 					},
 				}),
 				q(8281,  {	-- Stepping Up Security
@@ -383,26 +383,26 @@ _.Zones =
 					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 					["repeatable"] = true,
 					["g"] = {
-						un(2, i(20403)),	-- 	Proxy of Nozdormu
+						un(REMOVED_FROM_GAME, i(20403)),	-- 	Proxy of Nozdormu
 					},
 				}),
 				q(8301,  {	-- The Path of the Righteous
 					["u"] = 40,
 					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 					["g"] = {
-						un(2, i(20402)),	-- 	Agent of Nozdormu
+						un(REMOVED_FROM_GAME, i(20402)),	-- 	Agent of Nozdormu
 					},
 				}),
 				q(9023,  {	-- The Perfect Poison
 					["u"] = 40,
 					["provider"] = { "n", 16091 },	-- Dirk Thunderwood
 					["g"] = {
-						un(2, i(22348)),	-- Doomulus Prime
-						un(2, i(22347)),	-- Fahrad's Reloading Repeater
-						un(2, i(22378)),	-- Ravenholdt Slicer
-						un(2, i(22379)),	-- Shivsprocket's Shiv
-						un(2, i(22380)),	-- Simone's Cultivating Hammer
-						un(2, i(22377)),	-- The Thunderwood Poker
+						un(REMOVED_FROM_GAME, i(22348)),	-- Doomulus Prime
+						un(REMOVED_FROM_GAME, i(22347)),	-- Fahrad's Reloading Repeater
+						un(REMOVED_FROM_GAME, i(22378)),	-- Ravenholdt Slicer
+						un(REMOVED_FROM_GAME, i(22379)),	-- Shivsprocket's Shiv
+						un(REMOVED_FROM_GAME, i(22380)),	-- Simone's Cultivating Hammer
+						un(REMOVED_FROM_GAME, i(22377)),	-- The Thunderwood Poker
 					},
 				}),
 				q(1125,  {	-- The Spirits of Southwind
@@ -446,18 +446,18 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
-						un(2, i(21182)),	-- Band of Earthen Might
-						un(2, i(21183)),	-- Earthpower Vest
-						un(2, i(21181)),	-- Grace of Earth
+						un(REMOVED_FROM_GAME, i(21182)),	-- Band of Earthen Might
+						un(REMOVED_FROM_GAME, i(21183)),	-- Earthpower Vest
+						un(REMOVED_FROM_GAME, i(21181)),	-- Grace of Earth
 					},
 				}),
 				q(8548,  {	-- Volunteer's Battlegear
 					["u"] = 40,
 					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
-						un(2, i(21179)),	-- Band of Earthen Wrath
-						un(2, i(21187)),	-- Earthweave Cloak
-						un(2, i(21178)),	-- Gloves of Earthen Power
+						un(REMOVED_FROM_GAME, i(21179)),	-- Band of Earthen Wrath
+						un(REMOVED_FROM_GAME, i(21187)),	-- Earthweave Cloak
+						un(REMOVED_FROM_GAME, i(21178)),	-- Gloves of Earthen Power
 					},
 				}),
 				q(8321,  {	-- Vyral the Vile

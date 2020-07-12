@@ -26,7 +26,7 @@ _.Zones =
 						["u"] = 40,	-- Legacy Quests
 						["g"] = {
 							i(30696, {	-- Scourgebane
-								["u"] = 2,	-- BoP / BoA Items
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 					}),

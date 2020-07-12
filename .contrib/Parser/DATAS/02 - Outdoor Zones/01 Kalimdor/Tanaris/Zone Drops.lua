@@ -7,7 +7,7 @@ _.Zones =
 		m(71, {	-- Tanaris
 			n(ZONEDROPS, {
 				i(71714),	-- Formula: Enchant Cloak - Lesser Agility
-				un(2, i(11206)),	-- Formula: Enchant Cloak - Lesser Agility (legacy version, removed from game)
+				un(REMOVED_FROM_GAME, i(11206)),	-- Formula: Enchant Cloak - Lesser Agility (legacy version, removed from game)
 				i(72028),	-- Pattern: Tough Scorpid Boots
 				un(7, i(8399)),	-- Pattern: Tough Scorpid Boots (old BoE version was removed from game)
 				i(72026),	-- Pattern: Tough Scorpid Bracers

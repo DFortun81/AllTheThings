@@ -98,9 +98,9 @@ _.ExpansionFeatures =
 									i(128327, {	-- Small Pouch of Coins
 										["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 									}),
-									un(2, i(120267)),	-- Schematic: Blackrock Rifling	-- Deprecated and removed in 6.2.0
-									un(2, i(122546)),	-- Schematic: Oglethorpe's Octagonal Lenses	-- Deprecated and removed in 6.2.0
-									un(2, i(122554)),	-- Schematic: Precision Scope Tuning Kit	-- Deprecated and removed in 6.2.0
+									un(REMOVED_FROM_GAME, i(120267)),	-- Schematic: Blackrock Rifling	-- Deprecated and removed in 6.2.0
+									un(REMOVED_FROM_GAME, i(122546)),	-- Schematic: Oglethorpe's Octagonal Lenses	-- Deprecated and removed in 6.2.0
+									un(REMOVED_FROM_GAME, i(122554)),	-- Schematic: Precision Scope Tuning Kit	-- Deprecated and removed in 6.2.0
 								},
 							}),
 						}),

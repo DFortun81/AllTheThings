@@ -24,7 +24,7 @@ _.Zones =
 				n(1493,   {	-- Mok'rash the Cleaver
 					["coord"] = { 35.0, 65.4, 210 },
 					["g"] = {
-						un(2, i(3985)),	-- Monogrammed Sash
+						un(REMOVED_FROM_GAME, i(3985)),	-- Monogrammed Sash
 					},
 				}),					
 				n(14490,  {	-- Rippa

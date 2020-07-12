@@ -30,16 +30,16 @@ _.Achievements =
 			}),
 			ach(12955), 	-- Champions of Azeroth
 			ach(12946, {	-- Kul Tiras Diplomat
-				["u"] = 1,	-- NYI — Removed in 8.01 launch, was present in beta
+				["u"] = NEVER_IMPLEMENTED,	-- Removed in 8.01 launch, was present in beta
 				["g"] = {
 					crit(1, {	-- Proudmoore Admiralty
-						["u"] = 1,	-- NYI — Removed in 8.01 launch, was present in beta
+						["u"] = NEVER_IMPLEMENTED,	-- Removed in 8.01 launch, was present in beta
 					}),
 					crit(2, {	-- Storm's Wake
-						["u"] = 1,	-- NYI — Removed in 8.01 launch, was present in beta
+						["u"] = NEVER_IMPLEMENTED,	-- Removed in 8.01 launch, was present in beta
 					}),
 					crit(3, {	-- Order of Embers
-						["u"] = 1,	-- NYI — Removed in 8.01 launch, was present in beta
+						["u"] = NEVER_IMPLEMENTED,	-- Removed in 8.01 launch, was present in beta
 					}),
 				},
 			}),

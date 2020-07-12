@@ -20,19 +20,19 @@ profession(COOKING, {
 						},
 						{
 							["recipeID"] = 169696,--[[Marinated Elekk Steak]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 169699,--[[Seasoned Elekk Ribeye]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 169701,--[[Seasoned Elekk Ribeye]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 169693,--[[Whole Pot-Roasted Elekk]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						}
 					}
 				}

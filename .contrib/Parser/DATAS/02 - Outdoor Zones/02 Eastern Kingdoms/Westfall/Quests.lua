@@ -209,7 +209,7 @@ _.Zones =
 					["g"] = {
 						i(18160),	-- Recipe: Thistle Tea
 						i(8046, {	-- Kearnen's Journal
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
@@ -255,13 +255,13 @@ _.Zones =
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						i(3511, {	-- Cloak of the People's Militia
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(5944, {	-- Greaves of the People's Militia
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(12295, {-- Leggings of the People's Militia
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
@@ -305,7 +305,7 @@ _.Zones =
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						i(744, {	-- Thunderbrew's Boot Flask
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
@@ -335,10 +335,10 @@ _.Zones =
 					["u"] = 40,
 					["g"] = {
 						i(3578, {	-- Harvester's Pants
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(1561, {	-- Harvester's Robe
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
@@ -352,13 +352,13 @@ _.Zones =
 					["u"] = 40,
 					["g"] = {
 						i(1566, {	-- Edge of the People's Militia
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(1480, {	-- Fist of the People's Militia
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(12296, {	-- Spark of the People's Militia
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
@@ -369,7 +369,7 @@ _.Zones =
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						i(9607, {	-- Bastion of Stormwind
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),

@@ -683,7 +683,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["achievementID"] = 12523,	-- Heart of Corruption
 						}),
 						ach(12536, {	-- Ahead of the Curve: G'huun
-							["u"] = 2,	-- Legacy Achievement
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(12551),		-- Double Dribble
 						i(160690),	-- Heptavium, Staff of Torturous Knowledge
@@ -896,24 +896,24 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["achievementID"] = 12523,	-- Heart of Corruption
 						}),
 						ach(12536, {	-- Ahead of the Curve: G'huun
-							["u"] = 2,	-- Legacy Achievement
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(12535, {	-- Cutting Edge: G'huun
-							["u"] = 2,	-- Legacy Achievement
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(12533, {	-- Mythic: G'huun
 							title(381),	-- <Name> the Purifier
 						}),
 						ach(12542, {	-- Hall of Fame: G'huun (Alliance)
 							["races"] = ALLIANCE_ONLY,  -- Alliance races
-							["u"] = 2,	-- Legacy Achievement
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(374),	-- <Name>, Famed Slayer of G'huun
 							},
 						}),
 						ach(12543, {	-- Hall of Fame: G'huun (Horde)
 							["races"] = HORDE_ONLY,  -- Horde races
-							["u"] = 2,	-- Legacy Achievement
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(374),	-- <Name>, Famed Slayer of G'huun
 							},

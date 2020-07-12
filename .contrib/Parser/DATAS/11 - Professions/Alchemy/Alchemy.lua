@@ -24,12 +24,12 @@ profession(ALCHEMY, {
 						},
 					}),
 					i(112042),	-- Recipe: Draenic Channeled Mana Potion
-					un(1, i(112043)),	-- Recipe: Draenic Mana Potion
+					un(NEVER_IMPLEMENTED, i(112043)),	-- Recipe: Draenic Mana Potion
 					i(112041),	-- Recipe: Draenic Armor Potion
 					i(112038),	-- Recipe: Draenic Agility Potion
 					i(112039),	-- Recipe: Draenic Intellect Potion
 					i(112040),	-- Recipe: Draenic Strength Potion
-					un(1, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
+					un(NEVER_IMPLEMENTED, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
 					i(118700, {	-- Secret of Draenor Alchemy
 						i(112023),	-- Recipe: Draenic Philosopher's Stone
 						i(112045),	-- Recipe: Draenic Rejuvenation Potion
@@ -72,12 +72,12 @@ profession(ALCHEMY, {
 						},
 					}),
 					i(112042),	-- Recipe: Draenic Channeled Mana Potion
-					un(1, i(112043)),	-- Recipe: Draenic Mana Potion
+					un(NEVER_IMPLEMENTED, i(112043)),	-- Recipe: Draenic Mana Potion
 					i(112041),	-- Recipe: Draenic Armor Potion
 					i(112038),	-- Recipe: Draenic Agility Potion
 					i(112039),	-- Recipe: Draenic Intellect Potion
 					i(112040),	-- Recipe: Draenic Strength Potion
-					un(1, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
+					un(NEVER_IMPLEMENTED, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
 					i(118700, {	-- Secret of Draenor Alchemy
 						i(112023),	-- Recipe: Draenic Philosopher's Stone
 						i(112045),	-- Recipe: Draenic Rejuvenation Potion

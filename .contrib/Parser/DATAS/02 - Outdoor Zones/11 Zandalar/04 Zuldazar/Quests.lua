@@ -1799,7 +1799,7 @@ _.Zones =
 					["lvl"] = 120,
 				}),
 				q(49769, {	-- Wreckage of the Cataclysm
-					["u"] = 1,	-- this doesn't appear to have ever made it live
+					["u"] = NEVER_IMPLEMENTED,	-- this doesn't appear to have ever made it live
 				}),
 				q(49060, {	-- Xibalan Ecology (A)
 					["coord"] = { 41.2, 71.4, 862 },

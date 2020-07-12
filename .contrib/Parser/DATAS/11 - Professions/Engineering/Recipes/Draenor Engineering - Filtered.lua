@@ -15,7 +15,7 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Gearspring Parts",
 							["recipeID"] = 178242,
-							["u"] = 1,	-- NOTE: This version is automatically crafted after reaching maximum Draenor Engineering. (Detection is not working.)
+							["u"] = NEVER_IMPLEMENTED,	-- NOTE: This version is automatically crafted after reaching maximum Draenor Engineering. (Detection is not working.)
 						},
 						{
 							["name"] = "Primal Welding",
@@ -128,7 +128,7 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Ultimate Gnomish Army Knife",
 							["recipeID"] = 162208,
-							["u"] = 1,	-- NOTE: This version is automatically crafted after creating Gearspring Parts for the first time. (Detection is not working.)
+							["u"] = NEVER_IMPLEMENTED,	-- NOTE: This version is automatically crafted after creating Gearspring Parts for the first time. (Detection is not working.)
 						},
 						{
 							["name"] = "Ultimate Gnomish Army Knife",

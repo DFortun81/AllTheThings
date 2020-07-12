@@ -15,7 +15,7 @@ _.Zones =
 				n(19796, {	-- Eclipsion Archmage
 					i(28276, {	-- Formula: Enchant Cloak - Greater Arcane Resistance
 						["spellID"] = 0,
-						["u"] = 2,	-- BoP / BoA Item
+						["u"] = REMOVED_FROM_GAME,
 					}),
 				}),
 				i(23609, {	-- Plans: Khorium Pants

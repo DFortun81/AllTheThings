@@ -7,7 +7,7 @@ _.Zones =
 		m(118, {	-- Icecrown
 			n(ZONEDROPS, {
 				i(37331, {	-- Formula: Enchant Cloak - Superior Fire Resistance
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["spellID"] = 0,
 					["crs"] = {
 						31321,	-- Skeletal Runesmith
@@ -15,12 +15,12 @@ _.Zones =
 					},
 				}),
 				i(37332, {	-- Formula: Enchant Cloak - Superior Frost Resistance
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 32289 },	-- Damned Apothecary
 					["spellID"] = 0,
 				}),
 				i(37330, {	-- Formula: Enchant Cloak - Superior Nature Resistance
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["spellID"] = 0,
 					["crs"] = {
 						32290,	-- Cult Alchemist
@@ -29,12 +29,12 @@ _.Zones =
 					},
 				}),
 				i(37334, {	-- Formula: Enchant Cloak - Superior Shadow Resistance
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 32349 },	-- Cultist Shard Watcher
 					["spellID"] = 0,
 				}),
 				i(44559, {	-- Pattern: Fur Lining - Fire Resist
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["spellID"] = 0,
 					["crs"] = {
 						31321,	-- Skeletal Runesmith
@@ -42,12 +42,12 @@ _.Zones =
 					},
 				}),
 				i(44560, {	-- Pattern: Fur Lining - Frost Resist
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 32289 },	-- Damned Apothecary
 					["spellID"] = 0,
 				}),
 				i(44563, {	-- Pattern: Fur Lining - Nature Resist
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["spellID"] = 0,
 					["crs"] = {
 						32290,	-- Cult Alchemistz
@@ -56,7 +56,7 @@ _.Zones =
 					},
 				}),
 				i(44561, {	-- Pattern: Fur Lining - Shadow Resist
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 32349 },	-- Cultist Shard Watcher
 					["spellID"] = 0,
 				}),

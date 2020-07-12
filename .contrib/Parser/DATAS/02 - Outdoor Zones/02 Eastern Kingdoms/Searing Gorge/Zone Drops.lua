@@ -38,7 +38,7 @@ _.Zones =
 						5846,	-- Dark Iron Taskmaster
 						8637,	-- Dark Iron Watchman
 					},
-					["u"] = 2,	-- BoP / BoA Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 		}),

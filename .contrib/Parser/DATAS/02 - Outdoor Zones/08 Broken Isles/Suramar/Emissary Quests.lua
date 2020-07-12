@@ -31,22 +31,22 @@ _.Zones =
 								i(140013),	-- Night Commander's Pauldrons
 							},
 						}),
-						un(2, i(154907, {	-- Nightfallen Hoard
+						un(REMOVED_FROM_GAME, i(154907, {	-- Nightfallen Hoard
 							["sym"] = {
 								{"select", "itemID", 157826},	-- Nightfallen Hoard
 							},
 						})),
-						un(2, i(151468, {	-- Nightfallen Hoard
+						un(REMOVED_FROM_GAME, i(151468, {	-- Nightfallen Hoard
 							["sym"] = {
 								{"select", "itemID", 157826},	-- Nightfallen Hoard
 							},
 						})),
-						un(2, i(146751, {	-- Nightfallen Hoard
+						un(REMOVED_FROM_GAME, i(146751, {	-- Nightfallen Hoard
 							["sym"] = {
 								{"select", "itemID", 157826},	-- Nightfallen Hoard
 							},
 						})),
-						un(2, i(137564, {	-- Nightfallen Hoard
+						un(REMOVED_FROM_GAME, i(137564, {	-- Nightfallen Hoard
 							["sym"] = {
 								{"select", "itemID", 157826},	-- Nightfallen Hoard
 							},
@@ -67,7 +67,7 @@ _.Zones =
 									i(137573),	-- Reins of the Llothien Prowler
 								}),
 							}),
-							un(2, i(146900, {	-- Nightfallen Cache
+							un(REMOVED_FROM_GAME, i(146900, {	-- Nightfallen Cache
 								["sym"] = {
 									{"select", "itemID", 152105},	-- Nightfallen Cache
 									{"pop"},

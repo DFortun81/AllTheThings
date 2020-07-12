@@ -175,10 +175,10 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(27925, {	-- Efficient Excavations
-					["u"] = 1,	-- Never Implemented
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(29809, {	-- Efficient Excavations
-					["u"] = 1,	-- Never Implemented
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(29327, {	-- Elemental Bonds: Doubt
 					["provider"] = { "n", 53524 },	-- Cyclonas

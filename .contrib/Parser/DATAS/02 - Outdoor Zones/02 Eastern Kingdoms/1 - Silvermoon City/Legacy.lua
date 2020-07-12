@@ -12,7 +12,7 @@ _.Zones =
 						["races"] = { 10 },	-- Blood Elf
 						["u"] = 40,	-- Legacy Quests
 						["g"] = {
-							un(2, i(23924)),	-- Robes of Silvermoon
+							un(REMOVED_FROM_GAME, i(23924)),	-- Robes of Silvermoon
 						},
 					}),
 					q(9673, {	-- Beast Training
@@ -20,7 +20,7 @@ _.Zones =
 						["races"] = { 10 },	-- Blood Elf
 						["u"] = 40,	-- Legacy Quests
 						["g"] = {
-							un(2, i(24136)),	-- Farstrider's Bow
+							un(REMOVED_FROM_GAME, i(24136)),	-- Farstrider's Bow
 						},
 					}),
 				}),

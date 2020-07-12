@@ -470,7 +470,7 @@ _.Zones =
 						["sourceQuest"] = 35151,	-- Your Base, Your Choice
 					}),
 					q(35431,  {	-- The Best Poison
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 						["races"] = HORDE_ONLY,
 					}),
 					q(35214,  {	-- The Infested (A)
@@ -1600,7 +1600,7 @@ _.Zones =
 					},
 				}),
 				q(34413, {	-- Lumberstruck	-- never made it live
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(35644, {	-- Mercy for the Living
 					["provider"] = { "n", 82476 },	-- Khaano
@@ -1778,7 +1778,7 @@ _.Zones =
 					},
 				}),
 				q(33705, {	-- Sacking the Saberon Stronghold -- never went live
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				n(85374, {	-- Sappy
 					["questID"] = 35630,
@@ -2048,7 +2048,7 @@ _.Zones =
 					},
 				}),
 				q(35653, {	-- Wood is Wood -- never went live
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				i(116159, {	-- Writhing Green Tendril (A)
 					["questID"] = 36502,	-- Trophy of Glory: Biolante

@@ -40,7 +40,7 @@ _.GroupFinder =
 			},
 		}),
 		i(114648, {	-- Scorched Satchel of Helpful Goods 80-83
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "|cff66ccffRewarded for completing a random Cataclysm dungeon in the level 80-84 range.|r",
 			["g"] = {
 				i(113760),	-- Smoldercloth Bracers
@@ -67,7 +67,7 @@ _.GroupFinder =
 			},
 		}),
 		i(114655, {	-- Scorched Satchel of Helpful Goods 84-85
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "|cff66ccffRewarded for completing a random Cataclysm dungeon in the level 84-85 range.|r",
 			["g"] = {
 				i(113763),	-- Smoldercloth Gloves
@@ -88,7 +88,7 @@ _.GroupFinder =
 			},
 		}),
 		i(90041, {	-- Spoils of Theramore
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "This was a reward for completing the Theramore's Fall scenario during the Mists of Pandaria pre-patch.",
 			["g"] = {
 				-- h(i(90000)),	-- Everlasting Horde Firework

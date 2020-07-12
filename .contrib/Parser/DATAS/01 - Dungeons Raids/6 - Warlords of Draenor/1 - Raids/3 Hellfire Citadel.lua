@@ -750,7 +750,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124514),	-- Seed of Creation
 						i(124516),	-- Tome of Shifting Words
 					}),
-					un(2, i(127785)),	-- Crystallized Fel
+					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
 				})),
 			}),
 			d(15, {	-- Heroic
@@ -1123,9 +1123,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124230),	-- Prophecy of Fear
 				})),
 				cr(91331, e(1438, {	-- Archimonde
-					un(2, i(133762, {
+					un(REMOVED_FROM_GAME, i(133762, {
 						un(40, q(40962, {
-							un(2, i(128422)),  -- Reins of the Grove Warden Mount
+							un(REMOVED_FROM_GAME, i(128422)),  -- Reins of the Grove Warden Mount
 						})),
 					})),
 					i(124389),	-- Calamity's Edge
@@ -1160,7 +1160,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124514),	-- Seed of Creation
 						i(124516),	-- Tome of Shifting Words
 					}),
-					un(2, i(127785)),	-- Crystallized Fel
+					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
 				})),
 			}),
 			d(16, {	-- Mythic
@@ -1564,7 +1564,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124514),	-- Seed of Creation
 						i(124516),	-- Tome of Shifting Words
 					}),
-					un(2, i(127785)),	-- Crystallized Fel
+					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
 				})),
 			}),
 		},

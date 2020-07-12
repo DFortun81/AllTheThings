@@ -9,11 +9,11 @@ _.Zones =
 				["coord"] = { 37.8, 55.7, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					un(1, i(169589)),	-- Azsharan Pearling Kit
-					un(1, i(169592)),	-- Azsharan Pearling Enhancement
-					un(1, i(169787)),	-- Azsharan Azerite Pearling Enhancement
-					un(1, i(170277)),	-- Greater Pearling Reinforcement
-					un(1, i(170276)),	-- Greater Azerite Pearling Reinforcement
+					un(NEVER_IMPLEMENTED, i(169589)),	-- Azsharan Pearling Kit
+					un(NEVER_IMPLEMENTED, i(169592)),	-- Azsharan Pearling Enhancement
+					un(NEVER_IMPLEMENTED, i(169787)),	-- Azsharan Azerite Pearling Enhancement
+					un(NEVER_IMPLEMENTED, i(170277)),	-- Greater Pearling Reinforcement
+					un(NEVER_IMPLEMENTED, i(170276)),	-- Greater Azerite Pearling Reinforcement
 					-- Tokens can be purchased here, but the content listing may be better elsewhere
 					i(169478, {	-- Benthic Bracers
 						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
@@ -298,8 +298,8 @@ _.Zones =
 					i(169602, {	-- Recipe: Potion of Focused Resolve (Rank 3)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					un(1, i(169601)),	-- Recipe: Potion of Reconstitution (Rank 3)
-					un(1, i(170076)),	-- Recipe: Unagi Skewer
+					un(NEVER_IMPLEMENTED, i(169601)),	-- Recipe: Potion of Reconstitution (Rank 3)
+					un(NEVER_IMPLEMENTED, i(170076)),	-- Recipe: Unagi Skewer
 					i(169274, {	-- Tabard of the Unshackled
 						["cost"] = 6250000,	-- 625g
 					}),
@@ -801,11 +801,11 @@ _.Zones =
 				["coord"] = { 49.2, 62.0, 1355 },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					un(1, i(169589)),	-- Azsharan Pearling Kit
-					un(1, i(169592)),	-- Azsharan Pearling Enhancement
-					un(1, i(169787)),	-- Azsharan Azerite Pearling Enhancement
-					un(1, i(170277)),	-- Greater Pearling Reinforcement
-					un(1, i(170276)),	-- Greater Azerite Pearling Reinforcement
+					un(NEVER_IMPLEMENTED, i(169589)),	-- Azsharan Pearling Kit
+					un(NEVER_IMPLEMENTED, i(169592)),	-- Azsharan Pearling Enhancement
+					un(NEVER_IMPLEMENTED, i(169787)),	-- Azsharan Azerite Pearling Enhancement
+					un(NEVER_IMPLEMENTED, i(170277)),	-- Greater Pearling Reinforcement
+					un(NEVER_IMPLEMENTED, i(170276)),	-- Greater Azerite Pearling Reinforcement
 					-- Tokens can be purchased here, but the content listing may be better elsewhere
 					i(169478, {	-- Benthic Bracers
 						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
@@ -1180,7 +1180,7 @@ _.Zones =
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(169493, {	-- Recipe: Potion of Reconstitution (Rank 3)
-						["u"] = 1,	-- NYI
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					i(168610, {	-- Tabard of the Waveblade Ankoan
 						["cost"] = 6250000,	-- 625g

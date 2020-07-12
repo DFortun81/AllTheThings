@@ -423,7 +423,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				{	-- Plans: Sunblessed Breastplate
 					["itemID"] = 35555,	-- Plans: Sunblessed Breastplate
 					["spellID"] = 0,	-- This is now available via 35210, need to delink the old plans from the recipe
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				},
 				i(35208, {	-- Plans: Sunblessed Gauntlets
 					["crs"] = {

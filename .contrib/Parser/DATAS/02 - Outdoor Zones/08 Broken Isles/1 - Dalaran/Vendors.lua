@@ -644,7 +644,7 @@ _.Zones =
 							["description"] = "Unless you played during Legion and have legendaries still not at their maximum iLvl, this item is completely useless.",
 						}),
 						i(157796, {	-- Purified Titan Essence
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {
 								{ "select", "npcID", 106655 },	-- Arcanomancer Vridiel <Blacksmithing Trainer>
 								{ "pop" },	-- Discard the header and acquire the children.
@@ -2388,10 +2388,10 @@ _.Zones =
 					["coord"] = { 33.4, 74.0, 627 },
 					["g"] = {
 						currency(1356, {	-- Echoes of Battle
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								i(149424, {	-- Helm of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2400,7 +2400,7 @@ _.Zones =
 									},
 								}),
 								i(149427, {	-- Pauldrons of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2409,7 +2409,7 @@ _.Zones =
 									},
 								}),
 								i(149432, {	-- Cloak of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2418,7 +2418,7 @@ _.Zones =
 									},
 								}),
 								i(149425, {	-- Chest of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2427,7 +2427,7 @@ _.Zones =
 									},
 								}),
 								i(149431, {	-- Bracers of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2436,7 +2436,7 @@ _.Zones =
 									},
 								}),
 								i(149428, {	-- Gloves of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2445,7 +2445,7 @@ _.Zones =
 									},
 								}),
 								i(149429, {	-- Cinch of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2454,7 +2454,7 @@ _.Zones =
 									},
 								}),
 								i(149426, {	-- Leggings of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2463,7 +2463,7 @@ _.Zones =
 									},
 								}),
 								i(149430, {	-- Treads of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2472,7 +2472,7 @@ _.Zones =
 									},
 								}),
 								i(149406, {	-- Helm of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2481,7 +2481,7 @@ _.Zones =
 									},
 								}),
 								i(149409, {	-- Pauldrons of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2490,7 +2490,7 @@ _.Zones =
 									},
 								}),
 								i(149414, {	-- Cloak of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2499,7 +2499,7 @@ _.Zones =
 									},
 								}),
 								i(149407, {	-- Chest of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2508,7 +2508,7 @@ _.Zones =
 									},
 								}),
 								i(149413, {	-- Bracers of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2517,7 +2517,7 @@ _.Zones =
 									},
 								}),
 								i(149410, {	-- Gloves of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2526,7 +2526,7 @@ _.Zones =
 									},
 								}),
 								i(149411, {	-- Cinch of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2535,7 +2535,7 @@ _.Zones =
 									},
 								}),
 								i(149408, {	-- Leggings of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2544,7 +2544,7 @@ _.Zones =
 									},
 								}),
 								i(149412, {	-- Treads of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2553,7 +2553,7 @@ _.Zones =
 									},
 								}),
 								i(149388, {	-- Helm of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2562,7 +2562,7 @@ _.Zones =
 									},
 								}),
 								i(149391, {	-- Pauldrons of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2571,7 +2571,7 @@ _.Zones =
 									},
 								}),
 								i(149396, {	-- Cloak of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2580,7 +2580,7 @@ _.Zones =
 									},
 								}),
 								i(149389, {	-- Chest of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2589,7 +2589,7 @@ _.Zones =
 									},
 								}),
 								i(149395, {	-- Bracers of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2598,7 +2598,7 @@ _.Zones =
 									},
 								}),
 								i(149392, {	-- Gloves of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2607,7 +2607,7 @@ _.Zones =
 									},
 								}),
 								i(149393, {	-- Cinch of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2616,7 +2616,7 @@ _.Zones =
 									},
 								}),
 								i(149390, {	-- Leggings of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2625,7 +2625,7 @@ _.Zones =
 									},
 								}),
 								i(149394, {	-- Treads of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2636,10 +2636,10 @@ _.Zones =
 							},
 						}),
 						currency(1357, {	-- Echoes of Domination
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								i(149433, {	-- Helm of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2648,7 +2648,7 @@ _.Zones =
 									},
 								}),
 								i(149436, {	-- Pauldrons of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2657,7 +2657,7 @@ _.Zones =
 									},
 								}),
 								i(149441, {	-- Cloak of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2666,7 +2666,7 @@ _.Zones =
 									},
 								}),
 								i(149434, {	-- Chest of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2675,7 +2675,7 @@ _.Zones =
 									},
 								}),
 								i(149440, {	-- Bracers of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2684,7 +2684,7 @@ _.Zones =
 									},
 								}),
 								i(149437, {	-- Gloves of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2693,7 +2693,7 @@ _.Zones =
 									},
 								}),
 								i(149438, {	-- Cinch of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2702,7 +2702,7 @@ _.Zones =
 									},
 								}),
 								i(149435, {	-- Leggings of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2711,7 +2711,7 @@ _.Zones =
 									},
 								}),
 								i(149439, {	-- Treads of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2720,7 +2720,7 @@ _.Zones =
 									},
 								}),
 								i(149415, {	-- Helm of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2729,7 +2729,7 @@ _.Zones =
 									},
 								}),
 								i(149418, {	-- Pauldrons of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2738,7 +2738,7 @@ _.Zones =
 									},
 								}),
 								i(149423, {	-- Cloak of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2747,7 +2747,7 @@ _.Zones =
 									},
 								}),
 								i(149416, {	-- Chest of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2756,7 +2756,7 @@ _.Zones =
 									},
 								}),
 								i(149422, {	-- Bracers of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2765,7 +2765,7 @@ _.Zones =
 									},
 								}),
 								i(149419, {	-- Gloves of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2774,7 +2774,7 @@ _.Zones =
 									},
 								}),
 								i(149420, {	-- Cinch of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2783,7 +2783,7 @@ _.Zones =
 									},
 								}),
 								i(149417, {	-- Leggings of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2792,7 +2792,7 @@ _.Zones =
 									},
 								}),
 								i(149421, {	-- Treads of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2801,7 +2801,7 @@ _.Zones =
 									},
 								}),
 								i(149397, {	-- Helm of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2810,7 +2810,7 @@ _.Zones =
 									},
 								}),
 								i(149400, {	-- Pauldrons of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2819,7 +2819,7 @@ _.Zones =
 									},
 								}),
 								i(149405, {	-- Cloak of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2828,7 +2828,7 @@ _.Zones =
 									},
 								}),
 								i(149398, {	-- Chest of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2837,7 +2837,7 @@ _.Zones =
 									},
 								}),
 								i(149404, {	-- Bracers of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2846,7 +2846,7 @@ _.Zones =
 									},
 								}),
 								i(149401, {	-- Gloves of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2855,7 +2855,7 @@ _.Zones =
 									},
 								}),
 								i(149402, {	-- Cinch of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2864,7 +2864,7 @@ _.Zones =
 									},
 								}),
 								i(149399, {	-- Leggings of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -2873,7 +2873,7 @@ _.Zones =
 									},
 								}),
 								i(149403, {	-- Treads of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3863,10 +3863,10 @@ _.Zones =
 					["coord"] = { 59.6, 25.2, 627 },
 					["g"] = {
 						currency(1356, {	-- Echoes of Battle
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								i(149424, {	-- Helm of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3875,7 +3875,7 @@ _.Zones =
 									},
 								}),
 								i(149427, {	-- Pauldrons of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3884,7 +3884,7 @@ _.Zones =
 									},
 								}),
 								i(149432, {	-- Cloak of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3893,7 +3893,7 @@ _.Zones =
 									},
 								}),
 								i(149425, {	-- Chest of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3902,7 +3902,7 @@ _.Zones =
 									},
 								}),
 								i(149431, {	-- Bracers of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3911,7 +3911,7 @@ _.Zones =
 									},
 								}),
 								i(149428, {	-- Gloves of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3920,7 +3920,7 @@ _.Zones =
 									},
 								}),
 								i(149429, {	-- Cinch of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3929,7 +3929,7 @@ _.Zones =
 									},
 								}),
 								i(149426, {	-- Leggings of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3938,7 +3938,7 @@ _.Zones =
 									},
 								}),
 								i(149430, {	-- Treads of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3947,7 +3947,7 @@ _.Zones =
 									},
 								}),
 								i(149406, {	-- Helm of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3956,7 +3956,7 @@ _.Zones =
 									},
 								}),
 								i(149409, {	-- Pauldrons of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3965,7 +3965,7 @@ _.Zones =
 									},
 								}),
 								i(149414, {	-- Cloak of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3974,7 +3974,7 @@ _.Zones =
 									},
 								}),
 								i(149407, {	-- Chest of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3983,7 +3983,7 @@ _.Zones =
 									},
 								}),
 								i(149413, {	-- Bracers of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -3992,7 +3992,7 @@ _.Zones =
 									},
 								}),
 								i(149410, {	-- Gloves of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4001,7 +4001,7 @@ _.Zones =
 									},
 								}),
 								i(149411, {	-- Cinch of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4010,7 +4010,7 @@ _.Zones =
 									},
 								}),
 								i(149408, {	-- Leggings of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4019,7 +4019,7 @@ _.Zones =
 									},
 								}),
 								i(149412, {	-- Treads of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4028,7 +4028,7 @@ _.Zones =
 									},
 								}),
 								i(149388, {	-- Helm of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4037,7 +4037,7 @@ _.Zones =
 									},
 								}),
 								i(149391, {	-- Pauldrons of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4046,7 +4046,7 @@ _.Zones =
 									},
 								}),
 								i(149396, {	-- Cloak of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4055,7 +4055,7 @@ _.Zones =
 									},
 								}),
 								i(149389, {	-- Chest of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4064,7 +4064,7 @@ _.Zones =
 									},
 								}),
 								i(149395, {	-- Bracers of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4073,7 +4073,7 @@ _.Zones =
 									},
 								}),
 								i(149392, {	-- Gloves of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4082,7 +4082,7 @@ _.Zones =
 									},
 								}),
 								i(149393, {	-- Cinch of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4091,7 +4091,7 @@ _.Zones =
 									},
 								}),
 								i(149390, {	-- Leggings of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4100,7 +4100,7 @@ _.Zones =
 									},
 								}),
 								i(149394, {	-- Treads of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4111,10 +4111,10 @@ _.Zones =
 							},
 						}),
 						currency(1357, {	-- Echoes of Domination
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								i(149433, {	-- Helm of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4123,7 +4123,7 @@ _.Zones =
 									},
 								}),
 								i(149436, {	-- Pauldrons of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4132,7 +4132,7 @@ _.Zones =
 									},
 								}),
 								i(149441, {	-- Cloak of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4141,7 +4141,7 @@ _.Zones =
 									},
 								}),
 								i(149434, {	-- Chest of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4150,7 +4150,7 @@ _.Zones =
 									},
 								}),
 								i(149440, {	-- Bracers of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4159,7 +4159,7 @@ _.Zones =
 									},
 								}),
 								i(149437, {	-- Gloves of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4168,7 +4168,7 @@ _.Zones =
 									},
 								}),
 								i(149438, {	-- Cinch of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4177,7 +4177,7 @@ _.Zones =
 									},
 								}),
 								i(149435, {	-- Leggings of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4186,7 +4186,7 @@ _.Zones =
 									},
 								}),
 								i(149439, {	-- Treads of the Demonic Gladiator
-									["u"] = 2,	-- Removed in BFA Season 1
+									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4195,7 +4195,7 @@ _.Zones =
 									},
 								}),
 								i(149415, {	-- Helm of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4204,7 +4204,7 @@ _.Zones =
 									},
 								}),
 								i(149418, {	-- Pauldrons of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4213,7 +4213,7 @@ _.Zones =
 									},
 								}),
 								i(149423, {	-- Cloak of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4222,7 +4222,7 @@ _.Zones =
 									},
 								}),
 								i(149416, {	-- Chest of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4231,7 +4231,7 @@ _.Zones =
 									},
 								}),
 								i(149422, {	-- Bracers of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4240,7 +4240,7 @@ _.Zones =
 									},
 								}),
 								i(149419, {	-- Gloves of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4249,7 +4249,7 @@ _.Zones =
 									},
 								}),
 								i(149420, {	-- Cinch of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4258,7 +4258,7 @@ _.Zones =
 									},
 								}),
 								i(149417, {	-- Leggings of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4267,7 +4267,7 @@ _.Zones =
 									},
 								}),
 								i(149421, {	-- Treads of the Dominant Gladiator
-									["u"] = 2,	-- Removed in Legion Season 7
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4276,7 +4276,7 @@ _.Zones =
 									},
 								}),
 								i(149397, {	-- Helm of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4285,7 +4285,7 @@ _.Zones =
 									},
 								}),
 								i(149400, {	-- Pauldrons of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4294,7 +4294,7 @@ _.Zones =
 									},
 								}),
 								i(149405, {	-- Cloak of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4303,7 +4303,7 @@ _.Zones =
 									},
 								}),
 								i(149398, {	-- Chest of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4312,7 +4312,7 @@ _.Zones =
 									},
 								}),
 								i(149404, {	-- Bracers of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4321,7 +4321,7 @@ _.Zones =
 									},
 								}),
 								i(149401, {	-- Gloves of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4330,7 +4330,7 @@ _.Zones =
 									},
 								}),
 								i(149402, {	-- Cinch of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4339,7 +4339,7 @@ _.Zones =
 									},
 								}),
 								i(149399, {	-- Leggings of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
@@ -4348,7 +4348,7 @@ _.Zones =
 									},
 								}),
 								i(149403, {	-- Treads of the Fierce Gladiator
-									["u"] = 2,	-- Removed in Legion Season 6
+									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
 										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.

@@ -87,14 +87,14 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(17759)),	-- Mark of Resolution
+						un(REMOVED_FROM_GAME, i(17759)),	-- Mark of Resolution
 					},
 				}),
 				q(105,   {	-- Alas, Andorhal
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(17759)),	-- Mark of Resolution
+						un(REMOVED_FROM_GAME, i(17759)),	-- Mark of Resolution
 					},
 				}),
 				q(27206, {	-- Alas, Andorhal
@@ -167,14 +167,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 10840 },	-- Argent Officer Pureheart
 					["g"] = {
-						un(2, i(12846)),	-- Argent Dawn Commission
+						un(REMOVED_FROM_GAME, i(12846)),	-- Argent Dawn Commission
 					},
 				}),
 				q(5503, {	-- Argent Dawn Commission
 					["u"] = 40,
 					["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff
 					["g"] = {
-						un(2, i(12846)),	-- Argent Dawn Commission
+						un(REMOVED_FROM_GAME, i(12846)),	-- Argent Dawn Commission
 					},
 				}),
 				q(27199, {	-- Ashes to Ashes (A)
@@ -280,7 +280,7 @@ _.Zones =
 					["u"] = 40,			-- Removed in Patch 4.0.3
 					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
-						un(2, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
+						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
 					},
 				}),
 				q(4972, {	-- Counting Out Time
@@ -315,14 +315,14 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(15804)),	-- Cerise Drape
+						un(REMOVED_FROM_GAME, i(15804)),	-- Cerise Drape
 					},
 				}),
 				q(4987,  {	-- Glyphed Oaken Branch
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(15804)),	-- Cerise Drape
+						un(REMOVED_FROM_GAME, i(15804)),	-- Cerise Drape
 					},
 				}),
 				q(27166, {	-- Go Fletch!
@@ -344,11 +344,11 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 1842 },	-- Highlord Taelan Fordring <Highlord of the Scarlet Crusade>
 					["g"] = {
-						un(2, i(16058)),	-- Fordring's Seal
-						un(2, i(15411)),	-- Mark of Fordring
-						un(2, i(15413)),	-- Ornate Adamantium Breastplate
-						un(2, i(15418)),	-- Shimmering Platinum Warhammer
-						un(2, i(15421)),	-- Shroud of the Exile
+						un(REMOVED_FROM_GAME, i(16058)),	-- Fordring's Seal
+						un(REMOVED_FROM_GAME, i(15411)),	-- Mark of Fordring
+						un(REMOVED_FROM_GAME, i(15413)),	-- Ornate Adamantium Breastplate
+						un(REMOVED_FROM_GAME, i(15418)),	-- Shimmering Platinum Warhammer
+						un(REMOVED_FROM_GAME, i(15421)),	-- Shroud of the Exile
 					},
 				}),
 				q(5407,  {	-- Invader's Scourgestones [A]
@@ -357,7 +357,7 @@ _.Zones =
 					["coord"] = { 42.96, 83.55, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
+						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
 					},
 				}),
 				q(27683, {	-- Into the Woods
@@ -410,8 +410,8 @@ _.Zones =
 				q(5060,  {	-- Locked Away
 					["u"] = 40,
 					["g"] = {
-						un(2, i(13474)),	-- Farmer Dalson's Shotgun
-						un(2, i(13475)),	-- Dalson Family Wedding Ring
+						un(REMOVED_FROM_GAME, i(13474)),	-- Farmer Dalson's Shotgun
+						un(REMOVED_FROM_GAME, i(13475)),	-- Dalson Family Wedding Ring
 					},
 				}),
 				q(5507, {	-- Mantles of the Dawn
@@ -438,16 +438,16 @@ _.Zones =
 					["coord"] = { 43.0, 84.0, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
+						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
 					},
 				}),
 				q(5238,  {	-- Mission Accomplished!
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(15799)),	-- Heroic Commendation Medal
-						un(2, i(15800)),	-- Intrepid Shortsword
-						un(2, i(15801)),	-- Valiant Shortsword
+						un(REMOVED_FROM_GAME, i(15799)),	-- Heroic Commendation Medal
+						un(REMOVED_FROM_GAME, i(15800)),	-- Intrepid Shortsword
+						un(REMOVED_FROM_GAME, i(15801)),	-- Valiant Shortsword
 					},
 				}),
 				q(5058, {	-- Mrs. Dalson's Diary
@@ -691,14 +691,14 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(14023)),	-- Barov Peasant Caller
+						un(REMOVED_FROM_GAME, i(14023)),	-- Barov Peasant Caller
 					},
 				}),
 				q(5342,  {	-- The Last Barov
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(14022)),	-- Barov Peasant Caller
+						un(REMOVED_FROM_GAME, i(14022)),	-- Barov Peasant Caller
 					},
 				}),
 				q(42773, {	-- The Light Reveals
@@ -797,7 +797,7 @@ _.Zones =
 				q(5051,  {	-- Two Halves Become One
 					["u"] = 40,
 					["g"] = {
-						un(2, i(13473)),	-- Felstone Good Luck Charm
+						un(REMOVED_FROM_GAME, i(13473)),	-- Felstone Good Luck Charm
 					},
 				}),
 				q(6004, {	-- Unfinished Business

@@ -58,10 +58,10 @@ _.ExpansionFeatures =
 									i(118610, {	-- Technique: Weapon Crystal
 										["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
 									}),
-									un(1, i(118608)),	-- Technique: Greater Weapon Crystal
-									un(1, i(120266)),	-- Technique: Greater Ensorcelled Tarot
-									un(1, i(122548)),	-- Technique: Powerful Ensorcelled Tarot
-									un(1, i(122553)),	-- Technique: Powerful Weapon Crystal
+									un(NEVER_IMPLEMENTED, i(118608)),	-- Technique: Greater Weapon Crystal
+									un(NEVER_IMPLEMENTED, i(120266)),	-- Technique: Greater Ensorcelled Tarot
+									un(NEVER_IMPLEMENTED, i(122548)),	-- Technique: Powerful Ensorcelled Tarot
+									un(NEVER_IMPLEMENTED, i(122553)),	-- Technique: Powerful Weapon Crystal
 								},
 							}),
 						}),

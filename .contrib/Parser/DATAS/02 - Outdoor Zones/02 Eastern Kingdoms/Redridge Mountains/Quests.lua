@@ -85,7 +85,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(1270)),	-- Finely Woven Cloak
+						un(REMOVED_FROM_GAME, i(1270)),	-- Finely Woven Cloak
 					},
 				}),
 				q(26506, {	-- Franks and Beans
@@ -124,8 +124,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(2910)),	-- Gold Militia Boots
-						un(2, i(1319)),	-- Ring of Iron Will
+						un(REMOVED_FROM_GAME, i(2910)),	-- Gold Militia Boots
+						un(REMOVED_FROM_GAME, i(1319)),	-- Ring of Iron Will
 					},
 				}),
 				q(26638, {	-- Hunting the Hunters
@@ -195,9 +195,9 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(3431)),	-- Bone-Studded Leather
-						un(2, i(1275)),	-- Deputy Chain Coat
-						un(2, i(3555)),	-- Robe of Solomon
+						un(REMOVED_FROM_GAME, i(3431)),	-- Bone-Studded Leather
+						un(REMOVED_FROM_GAME, i(1275)),	-- Deputy Chain Coat
+						un(REMOVED_FROM_GAME, i(3555)),	-- Robe of Solomon
 					},
 				}),
 				q(249,   {	-- Morganth
@@ -206,14 +206,14 @@ _.Zones =
 					["provider"] = { "o", 31 },	-- Old Lion Statue
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(5274)),	-- Rose Mantle
+						un(REMOVED_FROM_GAME, i(5274)),	-- Rose Mantle
 					},
 				}),
 				q(150,   {	-- Murloc Poachers
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(3567)),	-- Dwarven Fishing Pole
+						un(REMOVED_FROM_GAME, i(3567)),	-- Dwarven Fishing Pole
 					},
 				}),
 				q(26508, {	-- Nida's Necklace
@@ -314,8 +314,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(1276)),	-- Fire Hardened Buckler
-						un(2, i(6093)),	-- Orc Crusher
+						un(REMOVED_FROM_GAME, i(1276)),	-- Fire Hardened Buckler
+						un(REMOVED_FROM_GAME, i(6093)),	-- Orc Crusher
 					},
 				}),
 				q(26693, {	-- The Dark Tower
@@ -328,9 +328,9 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(1303)),	-- Bridgeworker's Gloves
-						un(2, i(1304)),	-- Riding Gloves
-						un(2, i(1310)),	-- Smith's Trousers
+						un(REMOVED_FROM_GAME, i(1303)),	-- Bridgeworker's Gloves
+						un(REMOVED_FROM_GAME, i(1304)),	-- Riding Gloves
+						un(REMOVED_FROM_GAME, i(1310)),	-- Smith's Trousers
 					},
 				}),
 				q(26694, {	-- The Grand Magus Doane
@@ -365,7 +365,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(6970)),	-- Furen's Favor
+						un(REMOVED_FROM_GAME, i(6970)),	-- Furen's Favor
 					},
 				}),
 				q(26607, {	-- They Drew First Blood
@@ -416,8 +416,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6092)),	-- Black Whelp Boots
-						un(2, i(1302)),	-- Black Whelp Gloves
+						un(REMOVED_FROM_GAME, i(6092)),	-- Black Whelp Boots
+						un(REMOVED_FROM_GAME, i(1302)),	-- Black Whelp Gloves
 					},
 				}),
 				q(26640, {	-- Unspeakable Atrocities

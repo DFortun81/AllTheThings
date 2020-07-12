@@ -22,7 +22,7 @@ _.GearSets =
 						},
 						{	-- Heart-Lesion Faceguard
 							["itemID"] = 153737,	-- Heart-Lesion Faceguard
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heart-Lesion Helm
 							["itemID"] = 153721,	-- Heart-Lesion Helm
@@ -32,32 +32,32 @@ _.GearSets =
 						},
 						{	-- Heart-Lesion Amulet
 							["itemID"] = 153739,	-- Heart-Lesion Amulet
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heart-Lesion Pauldrons
 							["itemID"] = 153723,	-- Heart-Lesion Pauldrons
 						},
 						{	-- Heart-Lesion Shoulderguards
 							["itemID"] = 153744,	-- Heart-Lesion Shoulderguards
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heart-Lesion Cloak of Battle
 							["itemID"] = 153727,	-- Heart-Lesion Cloak of Battle
 						},
 						{	-- Heart-Lesion Cloak of Stoicism
 							["itemID"] = 153734,	-- Heart-Lesion Cloak of Stoicism
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heart-Lesion Breastplate
 							["itemID"] = 153718,	-- Heart-Lesion Breastplate
 						},
 						{	-- Heart-Lesion Chestguard
 							["itemID"] = 153733,	-- Heart-Lesion Chestguard
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heart-Lesion Armguards
 							["itemID"] = 153746,	-- Heart-Lesion Armguards
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heart-Lesion Vambraces
 							["itemID"] = 153725,	-- Heart-Lesion Vambraces
@@ -67,25 +67,25 @@ _.GearSets =
 						},
 						{	-- Heart-Lesion Handguards
 							["itemID"] = 153736,	-- Heart-Lesion Handguards
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heart-Lesion Girdle
 							["itemID"] = 153724,	-- Heart-Lesion Girdle
 						},
 						{	-- Heart-Lesion Waistband
 							["itemID"] = 153745,	-- Heart-Lesion Waistband
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heart-Lesion Legguards
 							["itemID"] = 153738,	-- Heart-Lesion Legguards
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heart-Lesion Legplates
 							["itemID"] = 153722,	-- Heart-Lesion Legplates
 						},
 						{	-- Heart-Lesion Greaves
 							["itemID"] = 153735,	-- Heart-Lesion Greaves
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heart-Lesion Sabatons
 							["itemID"] = 153719,	-- Heart-Lesion Sabatons
@@ -95,25 +95,25 @@ _.GearSets =
 						},
 						{	-- Heart-Lesion Band of Stoicism
 							["itemID"] = 153742,	-- Heart-Lesion Band of Stoicism
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heart-Lesion Ring of Might
 							["itemID"] = 153729,	-- Heart-Lesion Ring of Might
 						},
 						{	-- Heart-Lesion Ring of Stoicism
 							["itemID"] = 153741,	-- Heart-Lesion Ring of Stoicism
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heart-Lesion Stone of Battle
 							["itemID"] = 153731,	-- Heart-Lesion Stone of Battle
 						},
 						{	-- Heart-Lesion Defender Idol
 							["itemID"] = 153740,	-- Heart-Lesion Defender Idol
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heart-Lesion Defender Stone
 							["itemID"] = 153743,	-- Heart-Lesion Defender Stone
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heart-Lesion Idol of Battle
 							["itemID"] = 153732,	-- Heart-Lesion Idol of Battle

@@ -6,7 +6,7 @@ _.Achievements =
 {
 	n(-9968, {	-- Legacy
 		n(-9962, {	-- World Events
-			un(2, ach(1186)),		-- Down With The Dark Iron
+			un(REMOVED_FROM_GAME, ach(1186)),		-- Down With The Dark Iron
 		}),
 	}),
 };

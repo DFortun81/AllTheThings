@@ -6,22 +6,22 @@ _.GroupFinder =
 {
 	tier(6, {	-- Warlords of Draenor
 		i(120334, {	-- Satchel of Cosmic Mysteries
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["sym"] = {
 				{"select", "itemID", 69903},	-- Satchel of Exotic Mysteries
 			},
 		}),
 		i(104260, {	-- Satchel of Savage Mysteries
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["sym"] = {
 				{"select", "itemID", 69903},	-- Satchel of Exotic Mysteries
 			},
 		}),
 		i(122607, {	-- Savage Satchel of Cooperation
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		i(128803, {	-- Savage Satchel of Cooperation
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["g"] = {
 				i(127799, {	-- Baleful Pendant
 					i(124612),	-- Discordant Amulet

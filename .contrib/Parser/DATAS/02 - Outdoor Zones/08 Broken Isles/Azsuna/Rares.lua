@@ -108,7 +108,7 @@ _.Zones =
 					["questID"] = 44673,
 					["coord"] = { 27.8, 51.0, 630 },
 					["g"] = {	
-						un(2, i(141871)),	-- Soraax's Gauntlets of Command
+						un(REMOVED_FROM_GAME, i(141871)),	-- Soraax's Gauntlets of Command
 					},
 				}), 
 				n(90057,  {	-- Daggerbeak

@@ -21,7 +21,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Titanium Rod	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
 							["recipeID"] = 55732--[[Titanium Rod]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 							["description"] = "These are the Titanium Rod plans. They were removed in Patch 5.0.4.",
 						},
 					},
@@ -214,14 +214,14 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Chestplate of Conquest
 							["recipeID"] = 55186--[[Chestplate of Conquest]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Tempered Saronite Gauntlets
 							["recipeID"] = 55015--[[Tempered Saronite Gauntlets]]
 						},
 						{	-- Legplates of Conquest
 							["recipeID"] = 55187--[[Legplates of Conquest]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Tempered Saronite Bracers
 							["recipeID"] = 55017--[[Tempered Saronite Bracers]]
@@ -327,12 +327,12 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Socket Bracer	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
 							["recipeID"] = 55628--[[Socket Bracer]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 							["description"] = "These are the Socket Bracer plans. They were removed in Patch 5.0.4.",
 						},
 						{	-- Socket Gloves	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
 							["recipeID"] = 55641--[[Socket Gloves]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 							["description"] = "These are the Socket Gloves plans. They were removed in Patch 5.0.4.",
 						},
 					},
@@ -377,11 +377,11 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Corroded Saronite Edge
 							["recipeID"] = 55183--[[Corroded Saronite Edge]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Corroded Saronite Woundbringer
 							["recipeID"] = 55184--[[Corroded Saronite Woundbringer]],
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Saronite Mindcrusher
 							["recipeID"] = 55185--[[Saronite Mindcrusher]]
@@ -424,7 +424,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Sure-Fire Shuriken	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
 							["recipeID"] = 55202--[[Sure-Fire Shuriken]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 							["description"] = "These are the Sure-Fire Shuriken plans. They were removed in Patch 5.0.4.",
 						},
 					}

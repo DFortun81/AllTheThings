@@ -26,22 +26,22 @@ _.Zones =
 								i(130167),	-- Thistleleaf Adventurer
 							},
 						}),
-						un(2, i(154903, {	-- Dreamweaver Provisions
+						un(REMOVED_FROM_GAME, i(154903, {	-- Dreamweaver Provisions
 							["sym"] = {
 								{"select", "itemID", 157822},	-- Dreamweaver Provisions
 							},
 						})),
-						un(2, i(151464, {	-- Dreamweaver Provisions
+						un(REMOVED_FROM_GAME, i(151464, {	-- Dreamweaver Provisions
 							["sym"] = {
 								{"select", "itemID", 157822},	-- Dreamweaver Provisions
 							},
 						})),
-						un(2, i(146747, {	-- Dreamweaver Provisions
+						un(REMOVED_FROM_GAME, i(146747, {	-- Dreamweaver Provisions
 							["sym"] = {
 								{"select", "itemID", 157822},	-- Dreamweaver Provisions
 							},
 						})),
-						un(2, i(137560, {	-- Dreamweaver Provisions
+						un(REMOVED_FROM_GAME, i(137560, {	-- Dreamweaver Provisions
 							["sym"] = {
 								{"select", "itemID", 157822},	-- Dreamweaver Provisions
 							},
@@ -56,7 +56,7 @@ _.Zones =
 							i(152103, {	-- Dreamweaver Cache
 								i(147804),	-- Wild Dreamrunner
 							}),
-							un(2, i(146898, {	-- Dreamweaver Cache
+							un(REMOVED_FROM_GAME, i(146898, {	-- Dreamweaver Cache
 								["sym"] = {
 									{"select", "itemID", 152103},	-- Dreamweaver Cache
 									{"pop"},

@@ -521,7 +521,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10815, {	-- The Journal of Val'zareq: Portends of War (NYI - never left Beta)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10677, {	-- The Second Course...
 					["provider"] = { "n", 21777 },	-- Gnomus
@@ -913,7 +913,7 @@ _.Zones =
 						496,	-- The Black Temple (Chamber of Command)
 						497,	-- The Black Temple (Temple Summit)
 					},
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 			}),
 		}),

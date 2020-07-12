@@ -297,7 +297,7 @@ _.Zones =
 					["sourceQuest"] = 11789,	-- A Soldier In Need
 				}),
 				q(11790, {	-- Cultists Among Us (NYI - duplicate)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(11602, {	-- Cutting Off the Source
 					["provider"] = { "n", 25279 },	-- Overlord Razgor

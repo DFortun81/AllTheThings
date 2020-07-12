@@ -32,9 +32,6 @@ _.ExpansionFeatures =
 						q(43486),	-- Cracking the Codex
 						q(42847),	-- Dark Storms
 						q(43699),	-- Defenders of the World
-						q(47071, {	-- Delivering Lost Knowledge
-							["u"] = 40,
-						}),
 						q(45149),	-- Ending the Crescent Curse
 						q(44219),	-- Fate's Blessing
 						q(45147),	-- Felstone Destruction (and warrior?)

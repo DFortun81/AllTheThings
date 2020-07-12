@@ -94,7 +94,7 @@ _.Zones =
 						}),
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge
 							["description"] = "The enchantment is now available through the trainer.",
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(5973, {	-- Pattern: Barbaric Leggings
 							["isLimited"] = true,

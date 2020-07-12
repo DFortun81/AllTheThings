@@ -5,22 +5,22 @@ _.PVP =
 {
 	n(-242, {	-- Unrated
 		i(126919, {	-- Champion's Strongbox [Alliance]
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 		}),		
 		i(126920, {	-- Champion's Strongbox [Horde]
-			["u"] = 2,	
+			["u"] = REMOVED_FROM_GAME,	
 		}),		
 		i(126923, {	-- Champion's Strongbox [Alliance]
-			["u"] = 2,	
+			["u"] = REMOVED_FROM_GAME,	
 		}),		
 		i(126924, {	-- Champion's Strongbox [Horde]
-			["u"] = 2,	
+			["u"] = REMOVED_FROM_GAME,	
 		}),		
 		i(138469, {	-- Champion's Strongbox [Alliance]
-			["u"] = 2,	
+			["u"] = REMOVED_FROM_GAME,	
 		}),		
 		i(138474, {	-- Champion's Strongbox	[Horde]
-			["u"] = 2,	
+			["u"] = REMOVED_FROM_GAME,	
 		}),
 		i(151557),	-- Champion's Strongbox [Alliance]
 		i(151558),	-- Champion's Strongbox [Horde]

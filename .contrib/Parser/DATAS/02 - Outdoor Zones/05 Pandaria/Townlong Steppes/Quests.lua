@@ -465,7 +465,7 @@ _.Zones =
 					},
 				}),
 				q(30974, {	-- Raising Spirits (NYI - never left beta)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30774, {	-- Ranger Rescue
 					["coord"] = { 67.2, 52.2, 388 },

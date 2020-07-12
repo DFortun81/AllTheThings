@@ -901,7 +901,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 								["achievementID"] = 13291,	-- Victory of Death
 							}),
 							ach(13410),		-- Snow Fun Allowed
-							un(2, ach(13322)),	-- Ahead of the Curve: Lady Jaina Proudmoore
+							un(REMOVED_FROM_GAME, ach(13322)),	-- Ahead of the Curve: Lady Jaina Proudmoore
 							i(166582),	-- Technique: Glyph of the Tides
 							i(165604),	-- Daelin Proudmoore's Saber
 							i(165583),	-- Fogbreaker, Light of the Sea
@@ -1215,18 +1215,18 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							ach(13314, {	-- Mythic: Lady Jaina Proudmoore
 								title(386),	-- <Name>, Hero of Dazar'alor
 							}),
-							un(2, ach(13322)),	-- Ahead of the Curve: Lady Jaina Proudmoore
-							un(2, ach(13323)),	-- Cutting Edge: Lady Jaina Proudmoore
+							un(REMOVED_FROM_GAME, ach(13322)),	-- Ahead of the Curve: Lady Jaina Proudmoore
+							un(REMOVED_FROM_GAME, ach(13323)),	-- Cutting Edge: Lady Jaina Proudmoore
 							ach(13326, {	-- Hall of Fame: Lady Jaina Proudmoore (Alliance)
 								["races"] = ALLIANCE_ONLY,  -- Alliance races
-								["u"] = 2,	-- Legacy Achievement
+								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									title(384),	-- <Name>, Famed Conqueror of Dazar'alor
 								},
 							}),
 							ach(13327, {	-- Hall of Fame: Lady Jaina Proudmoore (Horde)
 								["races"] = HORDE_ONLY,  -- Horde races
-								["u"] = 2,	-- Legacy Achievement
+								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									title(385),	-- <Name>, Famed Defender of Dazar'alor
 								},

@@ -349,7 +349,7 @@ _.Zones =
 				q(13800, {	-- Get My Keys
 					["provider"] = { "n", 33801 },	-- Dr. Fingers
 					["sourceQuest"] = 13799,	-- Where Are My Keys?
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(9853,  {	-- Gurok the Usurper
 					["coord"] = { 60.0, 22.0, 107 },
@@ -992,7 +992,7 @@ _.Zones =
 				}),
 				q(13799, {	-- Where Are My Keys?
 					["provider"] = { "n", 33801 },	-- Dr. Fingers
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(9854,  {	-- Windroc Mastery
 					["provider"] = { "n", 18200 },	-- Shado 'Fitz' Farstrider

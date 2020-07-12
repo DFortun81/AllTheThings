@@ -72,8 +72,8 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(9626)),	-- Dwarven Charge
-						un(2, i(9627)),	-- Explorers' League Lodestar
+						un(REMOVED_FROM_GAME, i(9626)),	-- Dwarven Charge
+						un(REMOVED_FROM_GAME, i(9627)),	-- Explorers' League Lodestar
 					},
 				}),
 				q(2318, {	-- Translating the Journal

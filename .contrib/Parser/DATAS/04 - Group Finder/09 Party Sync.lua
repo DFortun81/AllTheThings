@@ -152,7 +152,7 @@ _.GroupFinder =
 				--	["classes"] = { 4 },	-- Rogue
 					["g"] = {
 						i(173556),	-- Assassin's Serrated Dagger
-						un(1, i(173555)),	-- Duskfall Daggers	-- Tagging unavailable until someone confirms. Currently you only get the Assassin's Dagger
+						un(NEVER_IMPLEMENTED, i(173555)),	-- Duskfall Daggers	-- Tagging unavailable until someone confirms. Currently you only get the Assassin's Dagger
 						i(173557),	-- Outlaw's Cutlass
 						i(173641),	-- Lightdrinker Bindings
 						i(173635),	-- Lightdrinker Boots

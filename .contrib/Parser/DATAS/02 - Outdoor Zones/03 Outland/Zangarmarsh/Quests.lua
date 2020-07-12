@@ -582,10 +582,10 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 17884 },	-- Watcher Jhang
 					["g"] = {
-						un(2, i(28181)),	-- Earthwarden's Coif
-						un(2, i(28182)),	-- Helm of the Claw
-						un(2, i(28183)),	-- Hydromancer's Headwrap
-						un(2, i(28180)),	-- Myrmidon's Headdress
+						un(REMOVED_FROM_GAME, i(28181)),	-- Earthwarden's Coif
+						un(REMOVED_FROM_GAME, i(28182)),	-- Helm of the Claw
+						un(REMOVED_FROM_GAME, i(28183)),	-- Hydromancer's Headwrap
+						un(REMOVED_FROM_GAME, i(28180)),	-- Myrmidon's Headdress
 					},
 				}),
 				q(9636,  {	-- The Zapthrottle Mote Extractor!
@@ -665,7 +665,7 @@ _.Zones =
 					["isBreadcrumb"] = true,	-- for "A Warm Welcome"
 				}),
 				q(9733,  {	-- Warning the Cenarion Circle (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(9724,  {	-- Warning the Cenarion Circle
 					["provider"] = { "n", 17841 },	-- Ysiel Windsinger

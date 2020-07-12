@@ -18,7 +18,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["groups"] = {
-							un(2, i(95619, {	-- Amber Encased Treasure Pouch
+							un(REMOVED_FROM_GAME, i(95619, {	-- Amber Encased Treasure Pouch
 								["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 								["groups"] = {
 									i(86884),	-- Belt of Embodied Terror

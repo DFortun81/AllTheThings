@@ -20,7 +20,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 12083,--[[Stormcloth Headband]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},
@@ -29,7 +29,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 12087,--[[Stormcloth Shoulders]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},
@@ -38,7 +38,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 24091,--[[Bloodvine Vest]]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 26403,--[[Festival Dress]]
@@ -54,7 +54,7 @@ profession(TAILORING, {
 						},
 						{
 							["recipeID"] = 7636,--[[Green Woolen Robe]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 44958,--[[Red Winter Clothes]]
@@ -66,7 +66,7 @@ profession(TAILORING, {
 						},
 						{
 							["recipeID"] = 12068,--[[Stormcloth Vest]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},
@@ -81,7 +81,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 12063,--[[Stormcloth Gloves]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},
@@ -90,11 +90,11 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 12062,--[[Stormcloth Pants]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 24092,--[[Bloodvine Leggings]]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}
 				},
@@ -103,15 +103,15 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 12090,--[[Stormcloth Boots]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 24093,--[[Bloodvine Boots]]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 8778,	-- Boots of Darkness
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},

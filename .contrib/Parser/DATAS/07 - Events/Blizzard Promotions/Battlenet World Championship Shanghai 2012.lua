@@ -7,7 +7,7 @@ _.WorldEvents =
 		["groups"] = {
 			n(-558, {	-- Battle.net World Championship Shanghai 2012
 				n(-548, {	-- China Only
-					un(3, i(90953)),	-- Spectral Cub
+					un(REMOVED_FROM_GAME, i(90953)),	-- Spectral Cub
 				}),
 			}),
 		},

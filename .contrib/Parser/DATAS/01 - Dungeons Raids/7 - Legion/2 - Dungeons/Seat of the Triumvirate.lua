@@ -9,108 +9,101 @@ _.Instances = { tier(7, {	-- Legion
 		["coord"] = { 22.2, 55.9, 882 },	-- Mac'Aree
 		["g"] = {
 			n(QUESTS, {
-				crit(9, {	-- Shadowguard Incursion
-					["achievementID"] = 12069,
-					["description"] = "|cFFFFD700Glowing Key Fragment|r can drop from any mob in the |cFFFFFFFFShadowguard Incursion|r area.  Rares and Elites have a higher drop chance than normal mobs.",
-					["icon"] = "Interface\\Icons\\inv_icon_shadowcouncilorb_purple",
+				i(152204, {	-- Glowing Key Fragment
+					["questID"] = 48230,	-- Fragment of the Past
 					["maps"] = { 882 },	-- Mac'Aree
+					["crs"] = {
+						122316,	-- Saprish
+						126152,	-- General Zah'd
+						122423,	-- Grand Shadow-Weaver
+						127791,	-- Grand Shadow-Weaver
+						121670,	-- Shadowguard Adept
+						127797,	-- Shadowguard Champion
+						122403,	-- Shadowguard Champion
+						121672,	-- Shadowguard Phaseblade
+						122413,	-- Shadowguard Riftstalker
+						127796,	-- Shadowguard Riftstalker
+						124171,	-- Shadowguard Subjugator
+						122404,	-- Shadowguard Voidbender
+						122421,	-- Umbral War-Adept
+						122056,	-- Viceroy Nezhar
+					},
+				}),
+				q(48864, {	-- The Broken Blacksmith
+					["provider"] = { "n", 123668 },	-- Captain Fareeya <The Crescent Glaive>
+					["sourceQuest"] = 48230,	-- Fragment of the Past
+					["coord"] = { 62.6, 39.4, 882 },
+					["maps"] = { 882 },	-- Mac'Aree
+				}),
+				q(48271, {	-- Recovering the Pieces
+					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
+					["coord"] = { 56.9, 68.6, 830 },
+					["maps"] = { 830 },	-- Krokuun
+					["sourceQuest"] = 48864,	-- The Broken Blacksmith
+				}),
+				q(48803, {	-- The Power to Reforge
+					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
+					["coord"] = { 56.9, 68.6, 830 },
+					["maps"] = { 830 },	-- Krokuun
+					["sourceQuest"] = 48864,	-- The Broken Blacksmith
+				}),
+				q(48261, {	-- Forging a Key to the Past
+					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
+					["coord"] = { 56.9, 68.6, 830 },
+					["maps"] = { 830 },	-- Krokuun
+					["sourceQuests"] = {
+						48271,	-- Recovering the Pieces
+						48803,	-- The Power to Reforge
+					},
+				}),
+				q(48231, {	-- The Seat of the Triumvirate: Armor of the Triumvirate
+					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
+					["coord"] = { 56.9, 68.6, 830 },
+					["maps"] = { 830 },	-- Krokuun
 					["g"] = {
-						i(152204, {	-- Glowing Key Fragment
-							["questID"] = 48230,	-- Fragment of the Past
-							["crs"] = {
-								122316,	-- Saprish
-								126152,	-- General Zah'd
-								122423,	-- Grand Shadow-Weaver
-								127791,	-- Grand Shadow-Weaver
-								121670,	-- Shadowguard Adept
-								127797,	-- Shadowguard Champion
-								122403,	-- Shadowguard Champion
-								121672,	-- Shadowguard Phaseblade
-								122413,	-- Shadowguard Riftstalker
-								127796,	-- Shadowguard Riftstalker
-								124171,	-- Shadowguard Subjugator
-								122404,	-- Shadowguard Voidbender
-								122421,	-- Umbral War-Adept
-								122056,	-- Viceroy Nezhar
-							},
-							["g"] = {
-								q(48864, {	-- The Broken Blacksmith
-									["provider"] = { "n", 123668 },	-- Captain Fareeya <The Crescent Glaive>
-									["sourceQuest"] = 48230,	-- Fragment of the Past
-								}),
-								q(48271, {	-- Recovering the Pieces
-									["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
-									["coord"] = { 56.9, 68.6, 830 },
-									["maps"] = { 830 },	-- Krokuun
-									["sourceQuest"] = 48864,	-- The Broken Blacksmith
-								}),
-								q(48803, {	-- The Power to Reforge
-									["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
-									["coord"] = { 56.9, 68.6, 830 },
-									["maps"] = { 830 },	-- Krokuun
-									["sourceQuest"] = 48864,	-- The Broken Blacksmith
-								}),
-								q(48261, {	-- Forging a Key to the Past
-									["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
-									["coord"] = { 56.9, 68.6, 830 },
-									["maps"] = { 830 },	-- Krokuun
-									["sourceQuests"] = {
-										48271,	-- Recovering the Pieces
-										48803,	-- The Power to Reforge
-									},
-								}),
-								q(48231, {	-- The Seat of the Triumvirate: Armor of the Triumvirate
-									["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
-									["coord"] = { 56.9, 68.6, 830 },
-									["maps"] = { 830 },	-- Krokuun
-									["g"] = {
-										i(152241, { -- Ensemble: Light-Woven Triumvirate Regalia
-											i(151337),	-- Head
-											i(151299),	-- Shoulder
-											i(151635),	-- Cloak
-											i(151303),	-- Chest
-											i(151305),	-- Wrist
-											i(151300),	-- Hands
-											i(151302),	-- Waist
-											i(151304),	-- Legs
-											i(151301),	-- Feet
-										}),
-										i(152242, { -- Ensemble: Burnished Triumvirate Armor
-											i(151336),	-- Head
-											i(151319),	-- Shoulder
-											i(151306),	-- Cloak
-											i(151313),	-- Chest
-											i(151315),	-- Wrist
-											i(151318),	-- Hands
-											i(151316),	-- Waist
-											i(151314),	-- Legs
-											i(151317),	-- Feet
-										}),
-										i(152243, { -- Ensemble: Sterling Triumvirate Chainmail
-											i(151324),	-- Head
-											i(151323),	-- Shoulder
-											i(151634),	-- Cloak
-											i(151325),	-- Chest
-											i(151321),	-- Wrist
-											i(151322),	-- Hands
-											i(151326),	-- Waist
-											i(151338),	-- Legs
-											i(151320),	-- Feet
-										}),
-										i(152244, { -- Ensemble: Venerated Triumvirate Battleplate
-											i(151333),	-- Head
-											i(151331),	-- Shoulder
-											i(151298),	-- Cloak
-											i(151329),	-- Chest
-											i(151328),	-- Wrist
-											i(151332),	-- Hands
-											i(151327),	-- Waist
-											i(151339),	-- Legs
-											i(151330),	-- Feet
-										}),
-									},
-								}),
-							},
+						i(152241, { -- Ensemble: Light-Woven Triumvirate Regalia
+							i(151337),	-- Head
+							i(151299),	-- Shoulder
+							i(151635),	-- Cloak
+							i(151303),	-- Chest
+							i(151305),	-- Wrist
+							i(151300),	-- Hands
+							i(151302),	-- Waist
+							i(151304),	-- Legs
+							i(151301),	-- Feet
+						}),
+						i(152242, { -- Ensemble: Burnished Triumvirate Armor
+							i(151336),	-- Head
+							i(151319),	-- Shoulder
+							i(151306),	-- Cloak
+							i(151313),	-- Chest
+							i(151315),	-- Wrist
+							i(151318),	-- Hands
+							i(151316),	-- Waist
+							i(151314),	-- Legs
+							i(151317),	-- Feet
+						}),
+						i(152243, { -- Ensemble: Sterling Triumvirate Chainmail
+							i(151324),	-- Head
+							i(151323),	-- Shoulder
+							i(151634),	-- Cloak
+							i(151325),	-- Chest
+							i(151321),	-- Wrist
+							i(151322),	-- Hands
+							i(151326),	-- Waist
+							i(151338),	-- Legs
+							i(151320),	-- Feet
+						}),
+						i(152244, { -- Ensemble: Venerated Triumvirate Battleplate
+							i(151333),	-- Head
+							i(151331),	-- Shoulder
+							i(151298),	-- Cloak
+							i(151329),	-- Chest
+							i(151328),	-- Wrist
+							i(151332),	-- Hands
+							i(151327),	-- Waist
+							i(151339),	-- Legs
+							i(151330),	-- Feet
 						}),
 					},
 				}),

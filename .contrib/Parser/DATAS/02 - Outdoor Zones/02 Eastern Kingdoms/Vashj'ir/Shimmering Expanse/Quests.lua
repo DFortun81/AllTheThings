@@ -20,7 +20,7 @@ _.Zones =
 						["sourceQuest"] = 25595,	-- Something Edible
 					}),
 					q(25634, {	-- A Better Vantage (NYI)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(26005, {	-- A Breath of Fresh Air (A)
 						["provider"] = { "n", 39881 },	-- Wavespeaker Valoren
@@ -87,7 +87,7 @@ _.Zones =
 						},
 					}),
 					q(25633, {	-- An Occupation of Time (NYI)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(25537, {	-- Art of Attraction
 						["provider"] = { "n", 40639 },	-- Engineer Hexascrub
@@ -200,7 +200,7 @@ _.Zones =
 						["sourceQuest"] = 25595,	-- Something Edible
 					}),
 					q(25631, {	-- Caught Off-Guard (NYI)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(25863, {	-- Chosen Burden
 						["coord"] = { 57.2, 89.9, 205 },
@@ -712,7 +712,7 @@ _.Zones =
 						},
 					}),
 					q(25632, {	-- Swift Approach (NYI)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(27393, {	-- The Call of the Blade (A)
 						["provider"] = { "n", 39881 },	-- Wavespeaker Valoren
@@ -817,7 +817,7 @@ _.Zones =
 						},
 					}),
 					q(25635, {	-- Upon the Scene of Battle (NYI)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(25439, {	-- Vengeful Heart
 						["provider"] = { "n", 40221 },	-- Toshe Chaosrender

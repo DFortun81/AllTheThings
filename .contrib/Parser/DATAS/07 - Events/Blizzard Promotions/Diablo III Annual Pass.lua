@@ -6,7 +6,7 @@ _.WorldEvents =
 	n(-65, {	-- Blizzard Promotions
 		["groups"] = {
 			n(-574, {	-- Diablo III Annual Pass
-				un(3, i(76755)),	-- Tyrael's Charger
+				un(REMOVED_FROM_GAME, i(76755)),	-- Tyrael's Charger
 			}),
 		},
 		["icon"] = "Interface\\Icons\\achievement_general",

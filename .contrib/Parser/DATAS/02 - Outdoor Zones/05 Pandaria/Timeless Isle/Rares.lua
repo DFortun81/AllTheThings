@@ -25,7 +25,7 @@ _.Zones =
 						}),
 						i(103982),	-- Burden of Eternity
 						i(86574, {	-- Elxir of Ancient Knowledge
-							["u"] = 2,	-- BoP / BoA Item, removed around Legion prepatch
+							["u"] = REMOVED_FROM_GAME,	-- removed around Legion prepatch
 						}),
 					},
 				}),
@@ -35,7 +35,7 @@ _.Zones =
 						["coord"] = { 34.6, 31.6, 554 },
 						["g"] = {
 							i(103982),	-- Burden of Eternity
-							un(2, i(86574)),	-- Elixir of Ancient Knowledge
+							un(REMOVED_FROM_GAME, i(86574)),	-- Elixir of Ancient Knowledge
 						},
 					}),
 				}),

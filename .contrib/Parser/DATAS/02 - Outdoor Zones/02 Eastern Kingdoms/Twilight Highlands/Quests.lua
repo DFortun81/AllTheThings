@@ -1551,13 +1551,13 @@ _.Zones =
 					["provider"] = { "n", 48472 },	-- Colin Thundermar
 				}),
 				q(31206, {	-- The Crucible of Carnage: The Bloodeye Bruiser! (NYI/removed?  no information about where to pick this version up)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(27862, {	-- The Crucible of Carnage: The Bloodeye Bruiser! (NYI/removed?  no information about where to pick this version up)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(27861, {	-- The Crucible of Carnage: The Bloodeye Bruiser! (NYI/removed?  no information about where to pick this version up)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(27866, {	-- The Crucible of Carnage: Calder's Creation!
 					["sourceQuests"] = {

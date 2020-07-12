@@ -56,7 +56,7 @@ _.Zones =
 								i(44188),	-- Cloak of Peaceful Resolutions
 								i(41722),	-- Design: Stalwart Monarch Topaz
 								i(41779, {	-- Design: Stalwart Monarch Topaz
-									["u"] = 2,	-- BoP / BoA Item
+									["u"] = REMOVED_FROM_GAME,
 									["spellID"] = 0,	-- This is now available via 41722, need to delink the old plans from the recipe
 								}),
 								i(44203),	-- Dragonfriend Bracers

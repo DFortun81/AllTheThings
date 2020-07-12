@@ -148,7 +148,7 @@ _.Zones =
 					},
 				}),
 				q(10925, {	-- Evil Draws Near (NYI - never left beta)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10228, {	-- Ezekiel
 					["provider"] = { "n", 19417 },	-- Ramdor the Mad
@@ -336,10 +336,10 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(1, i(25967)),	-- Eagle Crested Pauldrons
-						un(1, i(25968)),	-- Shalassi Sentry's Epaulets
-						un(1, i(25969)),	-- Rapscallion's Touch
-						un(1, i(25970)),	-- Shalassi Oracle's Sandals
+						un(NEVER_IMPLEMENTED, i(25967)),	-- Eagle Crested Pauldrons
+						un(NEVER_IMPLEMENTED, i(25968)),	-- Shalassi Sentry's Epaulets
+						un(NEVER_IMPLEMENTED, i(25969)),	-- Rapscallion's Touch
+						un(NEVER_IMPLEMENTED, i(25970)),	-- Shalassi Oracle's Sandals
 					},
 				}),
 				q(10926, {	-- Return to Sha'tari Base Camp
@@ -376,10 +376,10 @@ _.Zones =
 				q(10218, {	-- Someone Else's Hard Work Pays Off
 					["u"] = 40,
 					["g"] = {
-						un(2, i(29328)),	-- Consortium Prince's Wrap
-						un(2, i(29327)),	-- Cryo-mitts
-						un(2, i(29326)),	-- Consortium Mantle of Phasing
-						un(2, i(29325)),	-- Flesh Beast's Metal Greaves
+						un(REMOVED_FROM_GAME, i(29328)),	-- Consortium Prince's Wrap
+						un(REMOVED_FROM_GAME, i(29327)),	-- Cryo-mitts
+						un(REMOVED_FROM_GAME, i(29326)),	-- Consortium Mantle of Phasing
+						un(REMOVED_FROM_GAME, i(29325)),	-- Flesh Beast's Metal Greaves
 					},
 				}),
 				q(10038, {	-- Speak with Private Weeks
@@ -538,7 +538,7 @@ _.Zones =
 					["u"] = 40,
 					["classes"] = { 11 },	-- Druid
 					["g"] = {
-						un(2, i(32481)),	-- Charm of Swift Flight
+						un(REMOVED_FROM_GAME, i(32481)),	-- Charm of Swift Flight
 					},
 				}),
 				q(10896, {	-- The Infested Protectors -- aa
@@ -550,7 +550,7 @@ _.Zones =
 					["coord"] = { 37.6, 50.8, 108 },
 					["sourceQuest"] = 10880,	-- Cabal Orders
 					["g"] = {
-						un(2, i(31730)),	-- Heirloom Signet of Convalescence
+						un(REMOVED_FROM_GAME, i(31730)),	-- Heirloom Signet of Convalescence
 						i(31729),	-- Heirloom Signet of Valor
 						i(31728),	-- Heirloom Signet of Willpower
 					},
@@ -572,7 +572,7 @@ _.Zones =
 					--["sourceQuest"] = 10852,	-- Missing Friends
 				}),
 				q(10841, {	-- The Vengeful Harbinger
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10869, {	-- Thin the Flock
 					["provider"] = { "n", 18713 },	-- Lieutenant Gravelhammer
@@ -618,10 +618,10 @@ _.Zones =
 				q(10165, {	-- Undercutting the Competition
 					["u"] = 40,
 					["g"] = {
-						un(2, i(29342)),	-- Consortium Plated Legguards
-						un(2, i(29343)),	-- Haramad's Leggings of the Third Coin
-						un(2, i(29345)),	-- Haramad's Leg Wraps
-						un(2, i(29344)),	-- Haramad's Linked Chain Pantaloons
+						un(REMOVED_FROM_GAME, i(29342)),	-- Consortium Plated Legguards
+						un(REMOVED_FROM_GAME, i(29343)),	-- Haramad's Leggings of the Third Coin
+						un(REMOVED_FROM_GAME, i(29345)),	-- Haramad's Leg Wraps
+						un(REMOVED_FROM_GAME, i(29344)),	-- Haramad's Linked Chain Pantaloons
 					},
 				}),
 				q(9998,  {	-- Unruly Neighbors

@@ -14,7 +14,7 @@ _.Zones =
 					["g"] = {
 						i(166245, {	-- Tortollan Seekers Supplies
 							i(166704),	-- Bowl of Glowing Pufferfish
-							un(1, i(166851)),	-- Kojo's Master Matching Set
+							un(NEVER_IMPLEMENTED, i(166851)),	-- Kojo's Master Matching Set
 							i(166807),	-- Recipe: Boralus Blood Sausage [Rank 3]
 							i(166264),	-- Recipe: Sanguiated Feast [Rank 3]
 						}),

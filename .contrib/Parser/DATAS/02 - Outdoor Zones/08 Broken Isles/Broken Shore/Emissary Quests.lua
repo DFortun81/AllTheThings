@@ -28,12 +28,12 @@ _.Zones =
 								{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 							},
 						}),
-						un(2, i(154910, {	-- Legionfall Spoils
+						un(REMOVED_FROM_GAME, i(154910, {	-- Legionfall Spoils
 							["sym"] = {
 								{"select", "itemID", 157830},	-- Legionfall Spoils
 							},
 						})),
-						un(2, i(152649, {	-- Legionfall Spoils
+						un(REMOVED_FROM_GAME, i(152649, {	-- Legionfall Spoils
 							["sym"] = {
 								{"select", "itemID", 157830},	-- Legionfall Spoils
 							},
@@ -49,7 +49,7 @@ _.Zones =
 							i(152108, {	-- Legionfall Chest
 								i(147841),	-- Orphaned Felbat (PET!)
 							}),
-							un(2, i(147361, {	-- Legionfall Chest
+							un(REMOVED_FROM_GAME, i(147361, {	-- Legionfall Chest
 								["sym"] = {
 									{"select", "itemID", 152108},	-- Legionfall Chest
 									{"pop"},

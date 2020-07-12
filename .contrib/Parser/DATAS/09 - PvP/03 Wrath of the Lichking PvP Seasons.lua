@@ -561,17 +561,17 @@ _.PVP =
 					}),
 				}),
 				n(-384,	{	-- Neck
-					un(2, i(42024)),	-- Hateful Gladiator's Pendant of Ascendance
-					un(2, i(42025)),	-- Hateful Gladiator's Pendant of Deliverance
-					un(2, i(42022)),	-- Hateful Gladiator's Pendant of Dominance
-					un(2, i(42026)),	-- Hateful Gladiator's Pendant of Salvation
-					un(2, i(42023)),	-- Hateful Gladiator's Pendant of Subjugation
-					un(2, i(42020)),	-- Hateful Gladiator's Pendant of Triumph
-					un(2, i(42021)),	-- Hateful Gladiator's Pendant of Victory
+					un(REMOVED_FROM_GAME, i(42024)),	-- Hateful Gladiator's Pendant of Ascendance
+					un(REMOVED_FROM_GAME, i(42025)),	-- Hateful Gladiator's Pendant of Deliverance
+					un(REMOVED_FROM_GAME, i(42022)),	-- Hateful Gladiator's Pendant of Dominance
+					un(REMOVED_FROM_GAME, i(42026)),	-- Hateful Gladiator's Pendant of Salvation
+					un(REMOVED_FROM_GAME, i(42023)),	-- Hateful Gladiator's Pendant of Subjugation
+					un(REMOVED_FROM_GAME, i(42020)),	-- Hateful Gladiator's Pendant of Triumph
+					un(REMOVED_FROM_GAME, i(42021)),	-- Hateful Gladiator's Pendant of Victory
 				}),
 				n(-385,	{	-- Finger
-					un(2, i(42110)),	-- Hateful Gladiator's Band of Dominance
-					un(2, i(42112)),	-- Hateful Gladiator's Band of Triumph
+					un(REMOVED_FROM_GAME, i(42110)),	-- Hateful Gladiator's Band of Dominance
+					un(REMOVED_FROM_GAME, i(42112)),	-- Hateful Gladiator's Band of Triumph
 				}),
 			}),
 			n(-660, {	-- Aspirant / Combatant PvP Gear
@@ -2056,33 +2056,33 @@ _.PVP =
 			}),
 			n(-662, {	-- Elite PvP Gear
 				n(-319, {	-- Weapon
-					un(2, i(45954)),	-- Furious Gladiator's Acute Staff
-					un(2, i(45968)),	-- Furious Gladiator's Claw
-					un(2, i(45950)),	-- Furious Gladiator's Claymore
-					un(2, i(45953)),	-- Furious Gladiator's Combat Staff
-					un(2, i(45949)),	-- Furious Gladiator's Crusher
-					un(2, i(45961)),	-- Furious Gladiator's Dicer
-					un(2, i(45962)),	-- Furious Gladiator's Dirk
-					un(2, i(45967)),	-- Furious Gladiator's Eviscerator
-					un(2, i(45963)),	-- Furious Gladiator's Fleshslicer
-					un(2, i(45969)),	-- Furious Gladiator's Grasp
-					un(2, i(45952)),	-- Furious Gladiator's Greatstaff
-					un(2, i(45951)),	-- Furious Gladiator's Halberd
-					un(2, i(45957)),	-- Furious Gladiator's Handaxe
-					un(2, i(45956)),	-- Furious Gladiator's Light Staff
-					un(2, i(45960)),	-- Furious Gladiator's Longblade
-					un(2, i(45970)),	-- Furious Gladiator's Mageblade
-					un(2, i(45964)),	-- Furious Gladiator's Punisher
-					un(2, i(45938)),	-- Furious Gladiator's Recurve
-					un(2, i(45939)),	-- Furious Gladiator's Repeater
-					un(2, i(45971)),	-- Furious Gladiator's Salvation)
-					un(2, i(45937)),	-- Furious Gladiator's Shotgun
-					un(2, i(45955)),	-- Furious Gladiator's Skirmish Staff
-					un(2, i(45958)),	-- Furious Gladiator's Spike
-					un(2, i(45966)),	-- Furious Gladiator's Splitter)
-					un(2, i(45948)),	-- Furious Gladiator's Sunderer
-					un(2, i(45965)),	-- Furious Gladiator's Swiftblade
-					un(2, i(45959)),	-- Furious Gladiator's Truncheon
+					un(REMOVED_FROM_GAME, i(45954)),	-- Furious Gladiator's Acute Staff
+					un(REMOVED_FROM_GAME, i(45968)),	-- Furious Gladiator's Claw
+					un(REMOVED_FROM_GAME, i(45950)),	-- Furious Gladiator's Claymore
+					un(REMOVED_FROM_GAME, i(45953)),	-- Furious Gladiator's Combat Staff
+					un(REMOVED_FROM_GAME, i(45949)),	-- Furious Gladiator's Crusher
+					un(REMOVED_FROM_GAME, i(45961)),	-- Furious Gladiator's Dicer
+					un(REMOVED_FROM_GAME, i(45962)),	-- Furious Gladiator's Dirk
+					un(REMOVED_FROM_GAME, i(45967)),	-- Furious Gladiator's Eviscerator
+					un(REMOVED_FROM_GAME, i(45963)),	-- Furious Gladiator's Fleshslicer
+					un(REMOVED_FROM_GAME, i(45969)),	-- Furious Gladiator's Grasp
+					un(REMOVED_FROM_GAME, i(45952)),	-- Furious Gladiator's Greatstaff
+					un(REMOVED_FROM_GAME, i(45951)),	-- Furious Gladiator's Halberd
+					un(REMOVED_FROM_GAME, i(45957)),	-- Furious Gladiator's Handaxe
+					un(REMOVED_FROM_GAME, i(45956)),	-- Furious Gladiator's Light Staff
+					un(REMOVED_FROM_GAME, i(45960)),	-- Furious Gladiator's Longblade
+					un(REMOVED_FROM_GAME, i(45970)),	-- Furious Gladiator's Mageblade
+					un(REMOVED_FROM_GAME, i(45964)),	-- Furious Gladiator's Punisher
+					un(REMOVED_FROM_GAME, i(45938)),	-- Furious Gladiator's Recurve
+					un(REMOVED_FROM_GAME, i(45939)),	-- Furious Gladiator's Repeater
+					un(REMOVED_FROM_GAME, i(45971)),	-- Furious Gladiator's Salvation)
+					un(REMOVED_FROM_GAME, i(45937)),	-- Furious Gladiator's Shotgun
+					un(REMOVED_FROM_GAME, i(45955)),	-- Furious Gladiator's Skirmish Staff
+					un(REMOVED_FROM_GAME, i(45958)),	-- Furious Gladiator's Spike
+					un(REMOVED_FROM_GAME, i(45966)),	-- Furious Gladiator's Splitter)
+					un(REMOVED_FROM_GAME, i(45948)),	-- Furious Gladiator's Sunderer
+					un(REMOVED_FROM_GAME, i(45965)),	-- Furious Gladiator's Swiftblade
+					un(REMOVED_FROM_GAME, i(45959)),	-- Furious Gladiator's Truncheon
 				}),
 			}),
 		}),
@@ -2668,34 +2668,34 @@ _.PVP =
 			}),
 			n(-662, {	-- Elite PvP Gear
 				n(-319, {	-- Weapons
-					un(2, i(48412)),	-- Relentless Gladiator's Acute Staff
-					un(2, i(49191)),	-- Relentless Gladiator's Blade of Celerity
-					un(2, i(48444)),	-- Relentless Gladiator's Claw (wrong itemtag from blizzard)
-					un(2, i(48406)),	-- Relentless Gladiator's Claymore
-					un(2, i(48414)),	-- Relentless Gladiator's Combat Staff
-					un(2, i(48404)),	-- Relentless Gladiator's Crusher
-					un(2, i(48426)),	-- Relentless Gladiator's Dicer
-					un(2, i(48428)),	-- Relentless Gladiator's Dirk
-					un(2, i(48442)),	-- Relentless Gladiator's Eviscerator
-					un(2, i(48432)),	-- Relentless Gladiator's Fleshslicer
-					un(2, i(48515)),	-- Relentless Gladiator's Grasp
-					un(2, i(48523)),	-- Relentless Gladiator's Greatstaff
-					un(2, i(48517)),	-- Relentless Gladiator's Halberd
-					un(2, i(48507)),	-- Relentless Gladiator's Handaxe
-					un(2, i(48521)),	-- Relentless Gladiator's Light Staff
-					un(2, i(48513)),	-- Relentless Gladiator's Longblade
-					un(2, i(48408)),	-- Relentless Gladiator's Mageblade
-					un(2, i(48435)),	-- Relentless Gladiator's Punisher
-					un(2, i(48420)),	-- Relentless Gladiator's Recurve
-					un(2, i(48422)),	-- Relentless Gladiator's Repeater
-					un(2, i(48519)),	-- Relentless Gladiator's Salvation
-					un(2, i(48424)),	-- Relentless Gladiator's Shotgun
-					un(2, i(48410)),	-- Relentless Gladiator's Skirmish Staff
-					un(2, i(48509)),	-- Relentless Gladiator's Spike
-					un(2, i(48440)),	-- Relentless Gladiator's Splitter
-					un(2, i(48402)),	-- Relentless Gladiator's Sunderer
-					un(2, i(48438)),	-- Relentless Gladiator's Swiftblade
-					un(2, i(48511)),	-- Relentless Gladiator's Truncheon
+					un(REMOVED_FROM_GAME, i(48412)),	-- Relentless Gladiator's Acute Staff
+					un(REMOVED_FROM_GAME, i(49191)),	-- Relentless Gladiator's Blade of Celerity
+					un(REMOVED_FROM_GAME, i(48444)),	-- Relentless Gladiator's Claw (wrong itemtag from blizzard)
+					un(REMOVED_FROM_GAME, i(48406)),	-- Relentless Gladiator's Claymore
+					un(REMOVED_FROM_GAME, i(48414)),	-- Relentless Gladiator's Combat Staff
+					un(REMOVED_FROM_GAME, i(48404)),	-- Relentless Gladiator's Crusher
+					un(REMOVED_FROM_GAME, i(48426)),	-- Relentless Gladiator's Dicer
+					un(REMOVED_FROM_GAME, i(48428)),	-- Relentless Gladiator's Dirk
+					un(REMOVED_FROM_GAME, i(48442)),	-- Relentless Gladiator's Eviscerator
+					un(REMOVED_FROM_GAME, i(48432)),	-- Relentless Gladiator's Fleshslicer
+					un(REMOVED_FROM_GAME, i(48515)),	-- Relentless Gladiator's Grasp
+					un(REMOVED_FROM_GAME, i(48523)),	-- Relentless Gladiator's Greatstaff
+					un(REMOVED_FROM_GAME, i(48517)),	-- Relentless Gladiator's Halberd
+					un(REMOVED_FROM_GAME, i(48507)),	-- Relentless Gladiator's Handaxe
+					un(REMOVED_FROM_GAME, i(48521)),	-- Relentless Gladiator's Light Staff
+					un(REMOVED_FROM_GAME, i(48513)),	-- Relentless Gladiator's Longblade
+					un(REMOVED_FROM_GAME, i(48408)),	-- Relentless Gladiator's Mageblade
+					un(REMOVED_FROM_GAME, i(48435)),	-- Relentless Gladiator's Punisher
+					un(REMOVED_FROM_GAME, i(48420)),	-- Relentless Gladiator's Recurve
+					un(REMOVED_FROM_GAME, i(48422)),	-- Relentless Gladiator's Repeater
+					un(REMOVED_FROM_GAME, i(48519)),	-- Relentless Gladiator's Salvation
+					un(REMOVED_FROM_GAME, i(48424)),	-- Relentless Gladiator's Shotgun
+					un(REMOVED_FROM_GAME, i(48410)),	-- Relentless Gladiator's Skirmish Staff
+					un(REMOVED_FROM_GAME, i(48509)),	-- Relentless Gladiator's Spike
+					un(REMOVED_FROM_GAME, i(48440)),	-- Relentless Gladiator's Splitter
+					un(REMOVED_FROM_GAME, i(48402)),	-- Relentless Gladiator's Sunderer
+					un(REMOVED_FROM_GAME, i(48438)),	-- Relentless Gladiator's Swiftblade
+					un(REMOVED_FROM_GAME, i(48511)),	-- Relentless Gladiator's Truncheon
 				}),
 			}),
 		}),
@@ -3281,34 +3281,34 @@ _.PVP =
 			}),
 			n(-662, {	-- Elite PvP Gear
 				n(-319, {	-- Weapons
-					un(2, i(51403)),	-- Wrathful Gladiator's Acute Staff
-					un(2, i(51398)),	-- Wrathful Gladiator's Blade of Celerity
-					un(2, i(51393)),	-- Wrathful Gladiator's Claymore
-					un(2, i(51401)),	-- Wrathful Gladiator's Combat Staff
-					un(2, i(51391)),	-- Wrathful Gladiator's Crusher
-					un(2, i(51440)),	-- Wrathful Gladiator's Dicer
-					un(2, i(51442)),	-- Wrathful Gladiator's Dirk
-					un(2, i(51528)),	-- Wrathful Gladiator's Eviscerator
-					un(2, i(51524)),	-- Wrathful Gladiator's Grasp
-					un(2, i(51432)),	-- Wrathful Gladiator's Greatstaff
-					un(2, i(51481)),	-- Wrathful Gladiator's Halberd
-					un(2, i(51516)),	-- Wrathful Gladiator's Handaxe
-					un(2, i(51529)),	-- Wrathful Gladiator's Left Claw
-					un(2, i(51444)),	-- Wrathful Gladiator's Left Razor
-					un(2, i(51457)),	-- Wrathful Gladiator's Light Staff
-					un(2, i(51522)),	-- Wrathful Gladiator's Longblade
-					un(2, i(51399)),	-- Wrathful Gladiator's Mageblade
-					un(2, i(51446)),	-- Wrathful Gladiator's Punisher
-					un(2, i(51395)),	-- Wrathful Gladiator's Recurve
-					un(2, i(51412)),	-- Wrathful Gladiator's Repeater
-					un(2, i(51454)),	-- Wrathful Gladiator's Salvation
-					un(2, i(51450)),	-- Wrathful Gladiator's Shotgun
-					un(2, i(51405)),	-- Wrathful Gladiator's Skirmish Staff
-					un(2, i(51518)),	-- Wrathful Gladiator's Spike
-					un(2, i(51526)),	-- Wrathful Gladiator's Splitter
-					un(2, i(51389)),	-- Wrathful Gladiator's Sunderer
-					un(2, i(51448)),	-- Wrathful Gladiator's Swiftblade
-					un(2, i(51520)),	-- Wrathful Gladiator's Truncheon
+					un(REMOVED_FROM_GAME, i(51403)),	-- Wrathful Gladiator's Acute Staff
+					un(REMOVED_FROM_GAME, i(51398)),	-- Wrathful Gladiator's Blade of Celerity
+					un(REMOVED_FROM_GAME, i(51393)),	-- Wrathful Gladiator's Claymore
+					un(REMOVED_FROM_GAME, i(51401)),	-- Wrathful Gladiator's Combat Staff
+					un(REMOVED_FROM_GAME, i(51391)),	-- Wrathful Gladiator's Crusher
+					un(REMOVED_FROM_GAME, i(51440)),	-- Wrathful Gladiator's Dicer
+					un(REMOVED_FROM_GAME, i(51442)),	-- Wrathful Gladiator's Dirk
+					un(REMOVED_FROM_GAME, i(51528)),	-- Wrathful Gladiator's Eviscerator
+					un(REMOVED_FROM_GAME, i(51524)),	-- Wrathful Gladiator's Grasp
+					un(REMOVED_FROM_GAME, i(51432)),	-- Wrathful Gladiator's Greatstaff
+					un(REMOVED_FROM_GAME, i(51481)),	-- Wrathful Gladiator's Halberd
+					un(REMOVED_FROM_GAME, i(51516)),	-- Wrathful Gladiator's Handaxe
+					un(REMOVED_FROM_GAME, i(51529)),	-- Wrathful Gladiator's Left Claw
+					un(REMOVED_FROM_GAME, i(51444)),	-- Wrathful Gladiator's Left Razor
+					un(REMOVED_FROM_GAME, i(51457)),	-- Wrathful Gladiator's Light Staff
+					un(REMOVED_FROM_GAME, i(51522)),	-- Wrathful Gladiator's Longblade
+					un(REMOVED_FROM_GAME, i(51399)),	-- Wrathful Gladiator's Mageblade
+					un(REMOVED_FROM_GAME, i(51446)),	-- Wrathful Gladiator's Punisher
+					un(REMOVED_FROM_GAME, i(51395)),	-- Wrathful Gladiator's Recurve
+					un(REMOVED_FROM_GAME, i(51412)),	-- Wrathful Gladiator's Repeater
+					un(REMOVED_FROM_GAME, i(51454)),	-- Wrathful Gladiator's Salvation
+					un(REMOVED_FROM_GAME, i(51450)),	-- Wrathful Gladiator's Shotgun
+					un(REMOVED_FROM_GAME, i(51405)),	-- Wrathful Gladiator's Skirmish Staff
+					un(REMOVED_FROM_GAME, i(51518)),	-- Wrathful Gladiator's Spike
+					un(REMOVED_FROM_GAME, i(51526)),	-- Wrathful Gladiator's Splitter
+					un(REMOVED_FROM_GAME, i(51389)),	-- Wrathful Gladiator's Sunderer
+					un(REMOVED_FROM_GAME, i(51448)),	-- Wrathful Gladiator's Swiftblade
+					un(REMOVED_FROM_GAME, i(51520)),	-- Wrathful Gladiator's Truncheon
 				}),
 			}),
 		}),

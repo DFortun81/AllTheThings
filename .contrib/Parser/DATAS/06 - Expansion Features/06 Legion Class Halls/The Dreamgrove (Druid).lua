@@ -548,7 +548,6 @@ _.ExpansionFeatures =
 					q(44057),	-- A "Noble" Event
 					q(43409),	-- A Hero's Weapon
 					q(42046),	-- A New Beginning
-					q(45180),	-- An Island of War
 					q(46026),	-- An Urgent Warning
 					q(44237),	-- Ancients of War
 					q(42047),	-- Champion: Hamuul Runetotem
@@ -560,8 +559,6 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					}),
 					q(43403),	-- Defending the Isles
-					q(47075),	-- Delivering Lost Knowledge
-					q(45173),	-- Desperate Times
 					q(42051),	-- Enter Nightmare
 					q(44235),	-- Essence of Fate
 					q(44236),	-- Essence of Fate
@@ -591,9 +588,7 @@ _.ExpansionFeatures =
 					}),
 					q(40651),	-- The Seed of Ages
 					q(42040),	-- The Way to Nordrassil
-					q(45172),	-- To Battle!
 					q(41413),	-- What Could Go Wrong?
-					q(45179),	-- Win the Crowd
 					q(44232, {	-- The Grove Provides
 						i(139726),	-- Hood of the Dreamgrove
 					}),

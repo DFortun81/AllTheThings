@@ -9,15 +9,15 @@ _.Zones =
 				n(58713, {	-- Anthea Ironpaw <Master of the Wok>
 					["coord"] = { 52.8, 51.8, 376 },
 					["g"] = {
-						un(1, i(87231)),	-- Recipe: Banquet of the Wok
+						un(NEVER_IMPLEMENTED, i(87231)),	-- Recipe: Banquet of the Wok
 						recipe(125594),		-- Banquet of the Wok
-						un(1, i(87233)),	-- Recipe: Great Banquet of the Wok
+						un(NEVER_IMPLEMENTED, i(87233)),	-- Recipe: Great Banquet of the Wok
 						recipe(125595),		-- Great Banquet of the Wok
-						un(1, i(74666)),	-- Recipe: Sauteed Carrots
+						un(NEVER_IMPLEMENTED, i(74666)),	-- Recipe: Sauteed Carrots
 						recipe(104301),		-- Sauteed Carrots
-						un(1, i(74668)),	-- Recipe: Sea Mist Rice Noodles
+						un(NEVER_IMPLEMENTED, i(74668)),	-- Recipe: Sea Mist Rice Noodles
 						recipe(104303),		-- Sea Mist Rice Noodles
-						un(1, i(74667)),	-- Recipe: Valley Stir Fry
+						un(NEVER_IMPLEMENTED, i(74667)),	-- Recipe: Valley Stir Fry
 						recipe(104302),		-- Valley Stir Fry
 					},
 				}),
@@ -25,97 +25,97 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						un(2, i(98336)),	-- Tyrannical Gladiator's Greatcloak
-						un(2, i(91133)),	-- Tyrannical Gladiator's Staff
-						un(2, i(91182)),	-- Tyrannical Gladiator's Battle Staff
-						un(2, i(91207)),	-- Tyrannical Gladiator's Engery Staff
-						un(2, i(91393)),	-- Tyrannical Gladiator's Ripper
-						un(2, i(91397)),	-- Tyrannical Gladiator's Render
-						un(2, i(91129)),	-- Tyrannical Gladiator's Barrier (used 2 upgrade to elite)
-						un(2, i(91205)),	-- Tyrannical Gladiator's Redoubt (used 2 upgrade to elite)
-						un(2, i(91418)),	-- Tyrannical Gladiator's Shield Wall (used 2 upgrade to elite)
-						un(2, i(91130)),	-- Tyrannical Gladiator's Barrier
-						un(2, i(91206)),	-- Tyrannical Gladiator's Redoubt
-						un(2, i(91419)),	-- Tyrannical Gladiator's Shield Wall
-						un(2, i(91094)),	-- Tyrannical Gladiator's Cleaver
-						un(2, i(91087)),	-- Tyrannical Gladiator's Decapitator (used 2 upgrade to elite)
-						un(2, i(91088)),	-- Tyrannical Gladiator's Decapitator
-						un(2, i(91108)),	-- Tyrannical Gladiator's Longbow
-						un(2, i(91405)),	-- Tyrannical Gladiator's Cleaver
-						un(2, i(91091)),	-- Tyrannical Gladiator's Greatsword (used 2 upgrade to elite)
-						un(2, i(91092)),	-- Tyrannical Gladiator's Greatsword
-						un(2, i(91096)),	-- Tyrannical Gladiator's Pummeler
-						un(2, i(91204)),	-- Tyrannical Gladiator's Gavel
-						un(2, i(91407)),	-- Tyrannical Gladiator's Bonecracker
-						un(2, i(91202)),	-- Tyrannical Gladiator's Rifle
-						un(2, i(91097)),	-- Tyrannical Gladiator's Quickblade (used 2 upgrade to elite)
-						un(2, i(91398)),	-- Tyrannical Gladiator's Mageblade (used 2 upgrade to elite)
-						un(2, i(91408)),	-- Tyrannical Gladiator's Slicer (used 2 upgrade to elite)
-						un(2, i(91098)),	-- Tyrannical Gladiator's Quickblade
-						un(2, i(91399)),	-- Tyrannical Gladiator's Mageblade
-						un(2, i(91409)),	-- Tyrannical Gladiator's Slicer
-						un(2, i(91128)),	-- Tyrannical Gladiator's Endgame
-						un(2, i(91142)),	-- Tyrannical Gladiator's Reprieve
-						un(2, i(91090)),	-- Tyrannical Gladiator's Bonebrinder
-						un(2, i(91134)),	-- Tyrannical Gladiator's Battle Staff
-						un(2, i(91183)),	-- Tyrannical Gladiator's Staff
-						un(2, i(91208)),	-- Tyrannical Gladiator's Engery Staff
-						un(2, i(91308)),	-- Tyrannical Gladiator's Pike
-						un(2, i(91131)),	-- Tyrannical Gladiator's Spellblade (used 2 upgrade to elite)
-						un(2, i(91390)),	-- Tyrannical Gladiator's Shanker (used 2 upgrade to elite)
-						un(2, i(91132)),	-- Tyrannical Gladiator's Spellblade
-						un(2, i(91391)),	-- Tyrannical Gladiator's Shanker
-						un(2, i(91145)),	-- Tyrannical Gladiator's Heavy Crossbow (used 2 upgrade to elite)
-						un(2, i(91146)),	-- Tyrannical Gladiator's Heavy Crossbow
-						un(2, i(91144)),	-- Tyrannical Gladiator's  Touch of Defeat
-						un(2, i(91403)),	-- tyrannical Gladiator's baton of light
-						un(2, i(91213)),	-- Tyrannical Gladiator's Links of Cruelty
-						un(2, i(91215)),	-- Tyrannical Gladiator's Links of Accuracy
-						un(2, i(91217)),	-- Tyrannical Gladiator's Sabatons of Cruelty
-						un(2, i(91219)),	-- Tyrannical Gladiator's Sabatons of Alacrity
-						un(2, i(91223)),	-- Tyrannical Gladiator's Chain Armor
-						un(2, i(91225)),	-- Tyrannical Gladiator's Chain Gauntlets
-						un(2, i(91227)),	-- Tyrannical Gladiator's Chain Helm
-						un(2, i(91229)),	-- Tyrannical Gladiator's Chain Legs
-						un(2, i(91231)),	-- Tyrannical Gladiator's Chain Spaulders
-						un(2, i(91251)),	-- Tyrannical Gladiator's Waistguard of Meditation
-						un(2, i(91253)),	-- Tyrannical Gladiator's Footguards of Alacrity
-						un(2, i(91255)),	-- Tyrannical Gladiator's Footguards of Meditation
-						un(2, i(91359)),	-- Tyrannical Gladiator's ringmail Armor
-						un(2, i(91361)),	-- Tyrannical Gladiator's ringmail Gauntlets
-						un(2, i(91363)),	-- Tyrannical Gladiator's ringmail Helm
-						un(2, i(91365)),	-- Tyrannical Gladiator's ringmail Legs
-						un(2, i(91367)),	-- Tyrannical Gladiator's ringmail Spaulders
-						un(2, i(91369)),	-- Tyrannical Gladiator's linked Armor
-						un(2, i(91371)),	-- Tyrannical Gladiator's linked Gauntlets
-						un(2, i(91373)),	-- Tyrannical Gladiator's linked Helm
-						un(2, i(91375)),	-- Tyrannical Gladiator's linked Legs
-						un(2, i(91377)),	-- Tyrannical Gladiator's linked Spaulders
-						un(2, i(91381)),	-- Tyrannical Gladiator's mail Armor
-						un(2, i(91383)),	-- Tyrannical Gladiator's mail Gauntlets
-						un(2, i(91385)),	-- Tyrannical Gladiator's mail Helm
-						un(2, i(91387)),	-- Tyrannical Gladiator's mail Legs
-						un(2, i(91389)),	-- Tyrannical Gladiator's mail Spaulders
-						un(2, i(91379)),	-- Tyrannical Gladiator's Waistguard of Cruelty
-						un(2, i(91110)),	-- Tyrannical Gladiator's Cord of Cruelty
-						un(2, i(91112)),	-- Tyrannical Gladiator's Cord of Accuracy
-						un(2, i(91114)),	-- Tyrannical Gladiator's Cord of Meditation
-						un(2, i(91116)),	-- Tyrannical Gladiator's Treads of Cruelty
-						un(2, i(91118)),	-- Tyrannical Gladiator's Treads of Alacrity
-						un(2, i(91120)),	-- Tyrannical Gladiator's Treads of Meditation
-						un(2, i(91233)),	-- Tyrannical Gladiator's Silk Handguards
-						un(2, i(91235)),	-- Tyrannical Gladiator's Silk Cowl)
-						un(2, i(91237)),	-- Tyrannical Gladiator's Silk Legs
-						un(2, i(91239)),	-- Tyrannical Gladiator's Silk Robe
-						un(2, i(91241)),	-- Tyrannical Gladiator's Silk Amice
-						un(2, i(91310)),	-- Tyrannical Gladiator's Mooncloth Gloves
-						un(2, i(91312)),	-- Tyrannical Gladiator's Mooncloth Helm)
-						un(2, i(91314)),	-- Tyrannical Gladiator's Mooncloth Legs
-						un(2, i(91316)),	-- Tyrannical Gladiator's Mooncloth Robe
-						un(2, i(91318)),	-- Tyrannical Gladiator's Mooncloth Mantle
-						un(2, i(91351)),	-- Tyrannical Gladiator's Waistguard of Meditation
-						un(2, i(91353)),	-- Tyrannical Gladiator's Footguards of Alacrity
-						un(2, i(91355)),	-- Tyrannical Gladiator's Footguards of Meditation
+						un(REMOVED_FROM_GAME, i(98336)),	-- Tyrannical Gladiator's Greatcloak
+						un(REMOVED_FROM_GAME, i(91133)),	-- Tyrannical Gladiator's Staff
+						un(REMOVED_FROM_GAME, i(91182)),	-- Tyrannical Gladiator's Battle Staff
+						un(REMOVED_FROM_GAME, i(91207)),	-- Tyrannical Gladiator's Engery Staff
+						un(REMOVED_FROM_GAME, i(91393)),	-- Tyrannical Gladiator's Ripper
+						un(REMOVED_FROM_GAME, i(91397)),	-- Tyrannical Gladiator's Render
+						un(REMOVED_FROM_GAME, i(91129)),	-- Tyrannical Gladiator's Barrier (used 2 upgrade to elite)
+						un(REMOVED_FROM_GAME, i(91205)),	-- Tyrannical Gladiator's Redoubt (used 2 upgrade to elite)
+						un(REMOVED_FROM_GAME, i(91418)),	-- Tyrannical Gladiator's Shield Wall (used 2 upgrade to elite)
+						un(REMOVED_FROM_GAME, i(91130)),	-- Tyrannical Gladiator's Barrier
+						un(REMOVED_FROM_GAME, i(91206)),	-- Tyrannical Gladiator's Redoubt
+						un(REMOVED_FROM_GAME, i(91419)),	-- Tyrannical Gladiator's Shield Wall
+						un(REMOVED_FROM_GAME, i(91094)),	-- Tyrannical Gladiator's Cleaver
+						un(REMOVED_FROM_GAME, i(91087)),	-- Tyrannical Gladiator's Decapitator (used 2 upgrade to elite)
+						un(REMOVED_FROM_GAME, i(91088)),	-- Tyrannical Gladiator's Decapitator
+						un(REMOVED_FROM_GAME, i(91108)),	-- Tyrannical Gladiator's Longbow
+						un(REMOVED_FROM_GAME, i(91405)),	-- Tyrannical Gladiator's Cleaver
+						un(REMOVED_FROM_GAME, i(91091)),	-- Tyrannical Gladiator's Greatsword (used 2 upgrade to elite)
+						un(REMOVED_FROM_GAME, i(91092)),	-- Tyrannical Gladiator's Greatsword
+						un(REMOVED_FROM_GAME, i(91096)),	-- Tyrannical Gladiator's Pummeler
+						un(REMOVED_FROM_GAME, i(91204)),	-- Tyrannical Gladiator's Gavel
+						un(REMOVED_FROM_GAME, i(91407)),	-- Tyrannical Gladiator's Bonecracker
+						un(REMOVED_FROM_GAME, i(91202)),	-- Tyrannical Gladiator's Rifle
+						un(REMOVED_FROM_GAME, i(91097)),	-- Tyrannical Gladiator's Quickblade (used 2 upgrade to elite)
+						un(REMOVED_FROM_GAME, i(91398)),	-- Tyrannical Gladiator's Mageblade (used 2 upgrade to elite)
+						un(REMOVED_FROM_GAME, i(91408)),	-- Tyrannical Gladiator's Slicer (used 2 upgrade to elite)
+						un(REMOVED_FROM_GAME, i(91098)),	-- Tyrannical Gladiator's Quickblade
+						un(REMOVED_FROM_GAME, i(91399)),	-- Tyrannical Gladiator's Mageblade
+						un(REMOVED_FROM_GAME, i(91409)),	-- Tyrannical Gladiator's Slicer
+						un(REMOVED_FROM_GAME, i(91128)),	-- Tyrannical Gladiator's Endgame
+						un(REMOVED_FROM_GAME, i(91142)),	-- Tyrannical Gladiator's Reprieve
+						un(REMOVED_FROM_GAME, i(91090)),	-- Tyrannical Gladiator's Bonebrinder
+						un(REMOVED_FROM_GAME, i(91134)),	-- Tyrannical Gladiator's Battle Staff
+						un(REMOVED_FROM_GAME, i(91183)),	-- Tyrannical Gladiator's Staff
+						un(REMOVED_FROM_GAME, i(91208)),	-- Tyrannical Gladiator's Engery Staff
+						un(REMOVED_FROM_GAME, i(91308)),	-- Tyrannical Gladiator's Pike
+						un(REMOVED_FROM_GAME, i(91131)),	-- Tyrannical Gladiator's Spellblade (used 2 upgrade to elite)
+						un(REMOVED_FROM_GAME, i(91390)),	-- Tyrannical Gladiator's Shanker (used 2 upgrade to elite)
+						un(REMOVED_FROM_GAME, i(91132)),	-- Tyrannical Gladiator's Spellblade
+						un(REMOVED_FROM_GAME, i(91391)),	-- Tyrannical Gladiator's Shanker
+						un(REMOVED_FROM_GAME, i(91145)),	-- Tyrannical Gladiator's Heavy Crossbow (used 2 upgrade to elite)
+						un(REMOVED_FROM_GAME, i(91146)),	-- Tyrannical Gladiator's Heavy Crossbow
+						un(REMOVED_FROM_GAME, i(91144)),	-- Tyrannical Gladiator's  Touch of Defeat
+						un(REMOVED_FROM_GAME, i(91403)),	-- tyrannical Gladiator's baton of light
+						un(REMOVED_FROM_GAME, i(91213)),	-- Tyrannical Gladiator's Links of Cruelty
+						un(REMOVED_FROM_GAME, i(91215)),	-- Tyrannical Gladiator's Links of Accuracy
+						un(REMOVED_FROM_GAME, i(91217)),	-- Tyrannical Gladiator's Sabatons of Cruelty
+						un(REMOVED_FROM_GAME, i(91219)),	-- Tyrannical Gladiator's Sabatons of Alacrity
+						un(REMOVED_FROM_GAME, i(91223)),	-- Tyrannical Gladiator's Chain Armor
+						un(REMOVED_FROM_GAME, i(91225)),	-- Tyrannical Gladiator's Chain Gauntlets
+						un(REMOVED_FROM_GAME, i(91227)),	-- Tyrannical Gladiator's Chain Helm
+						un(REMOVED_FROM_GAME, i(91229)),	-- Tyrannical Gladiator's Chain Legs
+						un(REMOVED_FROM_GAME, i(91231)),	-- Tyrannical Gladiator's Chain Spaulders
+						un(REMOVED_FROM_GAME, i(91251)),	-- Tyrannical Gladiator's Waistguard of Meditation
+						un(REMOVED_FROM_GAME, i(91253)),	-- Tyrannical Gladiator's Footguards of Alacrity
+						un(REMOVED_FROM_GAME, i(91255)),	-- Tyrannical Gladiator's Footguards of Meditation
+						un(REMOVED_FROM_GAME, i(91359)),	-- Tyrannical Gladiator's ringmail Armor
+						un(REMOVED_FROM_GAME, i(91361)),	-- Tyrannical Gladiator's ringmail Gauntlets
+						un(REMOVED_FROM_GAME, i(91363)),	-- Tyrannical Gladiator's ringmail Helm
+						un(REMOVED_FROM_GAME, i(91365)),	-- Tyrannical Gladiator's ringmail Legs
+						un(REMOVED_FROM_GAME, i(91367)),	-- Tyrannical Gladiator's ringmail Spaulders
+						un(REMOVED_FROM_GAME, i(91369)),	-- Tyrannical Gladiator's linked Armor
+						un(REMOVED_FROM_GAME, i(91371)),	-- Tyrannical Gladiator's linked Gauntlets
+						un(REMOVED_FROM_GAME, i(91373)),	-- Tyrannical Gladiator's linked Helm
+						un(REMOVED_FROM_GAME, i(91375)),	-- Tyrannical Gladiator's linked Legs
+						un(REMOVED_FROM_GAME, i(91377)),	-- Tyrannical Gladiator's linked Spaulders
+						un(REMOVED_FROM_GAME, i(91381)),	-- Tyrannical Gladiator's mail Armor
+						un(REMOVED_FROM_GAME, i(91383)),	-- Tyrannical Gladiator's mail Gauntlets
+						un(REMOVED_FROM_GAME, i(91385)),	-- Tyrannical Gladiator's mail Helm
+						un(REMOVED_FROM_GAME, i(91387)),	-- Tyrannical Gladiator's mail Legs
+						un(REMOVED_FROM_GAME, i(91389)),	-- Tyrannical Gladiator's mail Spaulders
+						un(REMOVED_FROM_GAME, i(91379)),	-- Tyrannical Gladiator's Waistguard of Cruelty
+						un(REMOVED_FROM_GAME, i(91110)),	-- Tyrannical Gladiator's Cord of Cruelty
+						un(REMOVED_FROM_GAME, i(91112)),	-- Tyrannical Gladiator's Cord of Accuracy
+						un(REMOVED_FROM_GAME, i(91114)),	-- Tyrannical Gladiator's Cord of Meditation
+						un(REMOVED_FROM_GAME, i(91116)),	-- Tyrannical Gladiator's Treads of Cruelty
+						un(REMOVED_FROM_GAME, i(91118)),	-- Tyrannical Gladiator's Treads of Alacrity
+						un(REMOVED_FROM_GAME, i(91120)),	-- Tyrannical Gladiator's Treads of Meditation
+						un(REMOVED_FROM_GAME, i(91233)),	-- Tyrannical Gladiator's Silk Handguards
+						un(REMOVED_FROM_GAME, i(91235)),	-- Tyrannical Gladiator's Silk Cowl)
+						un(REMOVED_FROM_GAME, i(91237)),	-- Tyrannical Gladiator's Silk Legs
+						un(REMOVED_FROM_GAME, i(91239)),	-- Tyrannical Gladiator's Silk Robe
+						un(REMOVED_FROM_GAME, i(91241)),	-- Tyrannical Gladiator's Silk Amice
+						un(REMOVED_FROM_GAME, i(91310)),	-- Tyrannical Gladiator's Mooncloth Gloves
+						un(REMOVED_FROM_GAME, i(91312)),	-- Tyrannical Gladiator's Mooncloth Helm)
+						un(REMOVED_FROM_GAME, i(91314)),	-- Tyrannical Gladiator's Mooncloth Legs
+						un(REMOVED_FROM_GAME, i(91316)),	-- Tyrannical Gladiator's Mooncloth Robe
+						un(REMOVED_FROM_GAME, i(91318)),	-- Tyrannical Gladiator's Mooncloth Mantle
+						un(REMOVED_FROM_GAME, i(91351)),	-- Tyrannical Gladiator's Waistguard of Meditation
+						un(REMOVED_FROM_GAME, i(91353)),	-- Tyrannical Gladiator's Footguards of Alacrity
+						un(REMOVED_FROM_GAME, i(91355)),	-- Tyrannical Gladiator's Footguards of Meditation
 					},
 				}),
 				n(75694, {	-- Armsmaster Holinka <Tyrannical Gladiator>
@@ -322,21 +322,21 @@ _.Zones =
 						i(99960),	-- Tyrannical Gladiator's Plate Legguards
 						i(99961),	-- Tyrannical Gladiator's Plate Shoulders
 						-- Alliance only Set. Replaced with a normal set
-						-- un(2, i(91234)),	-- Tyrannical Gladiator's Silk Cowl) (available via S13 ensemble)
-						-- un(2, i(91238)),	-- Tyrannical Gladiator's Silk Robe (available via S13 ensemble)
-						-- un(2, i(91240)),	-- Tyrannical Gladiator's Silk Amice (available via S13 ensemble)
-						un(2, i(91311)),	-- Tyrannical Gladiator's Mooncloth Helm
-						un(2, i(91315)),	-- Tyrannical Gladiator's Mooncloth Robe
-						un(2, i(91317)),	-- Tyrannical Gladiator's Mooncloth Mantle
+						-- un(REMOVED_FROM_GAME, i(91234)),	-- Tyrannical Gladiator's Silk Cowl) (available via S13 ensemble)
+						-- un(REMOVED_FROM_GAME, i(91238)),	-- Tyrannical Gladiator's Silk Robe (available via S13 ensemble)
+						-- un(REMOVED_FROM_GAME, i(91240)),	-- Tyrannical Gladiator's Silk Amice (available via S13 ensemble)
+						un(REMOVED_FROM_GAME, i(91311)),	-- Tyrannical Gladiator's Mooncloth Helm
+						un(REMOVED_FROM_GAME, i(91315)),	-- Tyrannical Gladiator's Mooncloth Robe
+						un(REMOVED_FROM_GAME, i(91317)),	-- Tyrannical Gladiator's Mooncloth Mantle
 					},
 				}),
 				n(58717, {	-- Bobo Ironpaw <Master of the Brew>
 					["coord"] = { 53.0, 52.0, 376 },
 					["g"] = {
-						un(1, i(87247)),	-- Recipe: Banquet of the Brew
+						un(NEVER_IMPLEMENTED, i(87247)),	-- Recipe: Banquet of the Brew
 						recipe(125602),		-- Banquet of the Brew
 						recipe(124052),		-- Ginseng Tea
-						un(1, i(87249)),	-- Recipe: Great Banquet of the Brew
+						un(NEVER_IMPLEMENTED, i(87249)),	-- Recipe: Great Banquet of the Brew
 						recipe(125603),		-- Great Banquet of the Brew
 						recipe(124053),		-- Jade Witch Brew
 						recipe(124054),		-- Mad Brewer's Breakfast
@@ -469,386 +469,386 @@ _.Zones =
 					["g"] = {
 						n(-661, {	-- Gladiator
 							n(-319, {	-- Weapons
-								un(2, i(100227)), -- Grievous Gladiator's Spellblade (Alliance)
-								un(2, i(100498)), -- Grievous Gladiator's Slicer (Alliance)
-								un(2, i(100480)), -- Grievous Gladiator's Shanker (Alliance)
-								un(2, i(100482)), -- Grievous Gladiator's Ripper (Alliance)
-								un(2, i(100486)), -- Grievous Gladiator's Render (Alliance)
-								un(2, i(100193)), -- Grievous Gladiator's Quickblade (Alliance)
-								un(2, i(100191)), -- Grievous Gladiator's Pummeler (Alliance)
-								un(2, i(100488)), -- Grievous Gladiator's Mageblade (Alliance)
-								un(2, i(100494)), -- Grievous Gladiator's Hacker (Alliance)
-								un(2, i(100299)), -- Grievous Gladiator's Gavel (Alliance)
-								un(2, i(100189)), -- Grievous Gladiator's Cleaver (Alliance)
-								un(2, i(100496)), -- Grievous Gladiator's Bonecracker (Alliance)
-								un(2, i(100403)), -- Grievous Gladiator's Pike (Alliance)
-								un(2, i(100187)), -- Grievous Gladiator's Greatsword (Alliance)
-								un(2, i(100303)), -- Grievous Gladiator's Energy Staff (Alliance)
-								un(2, i(100183)), -- Grievous Gladiator's Decapitator (Alliance)
-								un(2, i(100229)), -- Grievous Gladiator's Battle Staff (Alliance)
-								un(2, i(100237)), -- Grievous Gladiator's Reprieve (Alliance)
-								un(2, i(100223)), -- Grievous Gladiator's Endgame (Alliance)
-								un(2, i(100508)), -- Grievous Gladiator's Shield Wall (Alliance)
-								un(2, i(100301)), -- Grievous Gladiator's Redoubt (Alliance)
-								un(2, i(100225)), -- Grievous Gladiator's Barrier (Alliance)
-								un(2, i(100239)), -- Grievous Gladiator's Touch of Defeat (Alliance)
-								un(2, i(100297)), -- Grievous Gladiator's Rifle (Alliance)
-								un(2, i(100203)), -- Grievous Gladiator's Longbow (Alliance)
-								un(2, i(100492)), -- Grievous Gladiator's Baton of Light (Alliance)
+								un(REMOVED_FROM_GAME, i(100227)), -- Grievous Gladiator's Spellblade (Alliance)
+								un(REMOVED_FROM_GAME, i(100498)), -- Grievous Gladiator's Slicer (Alliance)
+								un(REMOVED_FROM_GAME, i(100480)), -- Grievous Gladiator's Shanker (Alliance)
+								un(REMOVED_FROM_GAME, i(100482)), -- Grievous Gladiator's Ripper (Alliance)
+								un(REMOVED_FROM_GAME, i(100486)), -- Grievous Gladiator's Render (Alliance)
+								un(REMOVED_FROM_GAME, i(100193)), -- Grievous Gladiator's Quickblade (Alliance)
+								un(REMOVED_FROM_GAME, i(100191)), -- Grievous Gladiator's Pummeler (Alliance)
+								un(REMOVED_FROM_GAME, i(100488)), -- Grievous Gladiator's Mageblade (Alliance)
+								un(REMOVED_FROM_GAME, i(100494)), -- Grievous Gladiator's Hacker (Alliance)
+								un(REMOVED_FROM_GAME, i(100299)), -- Grievous Gladiator's Gavel (Alliance)
+								un(REMOVED_FROM_GAME, i(100189)), -- Grievous Gladiator's Cleaver (Alliance)
+								un(REMOVED_FROM_GAME, i(100496)), -- Grievous Gladiator's Bonecracker (Alliance)
+								un(REMOVED_FROM_GAME, i(100403)), -- Grievous Gladiator's Pike (Alliance)
+								un(REMOVED_FROM_GAME, i(100187)), -- Grievous Gladiator's Greatsword (Alliance)
+								un(REMOVED_FROM_GAME, i(100303)), -- Grievous Gladiator's Energy Staff (Alliance)
+								un(REMOVED_FROM_GAME, i(100183)), -- Grievous Gladiator's Decapitator (Alliance)
+								un(REMOVED_FROM_GAME, i(100229)), -- Grievous Gladiator's Battle Staff (Alliance)
+								un(REMOVED_FROM_GAME, i(100237)), -- Grievous Gladiator's Reprieve (Alliance)
+								un(REMOVED_FROM_GAME, i(100223)), -- Grievous Gladiator's Endgame (Alliance)
+								un(REMOVED_FROM_GAME, i(100508)), -- Grievous Gladiator's Shield Wall (Alliance)
+								un(REMOVED_FROM_GAME, i(100301)), -- Grievous Gladiator's Redoubt (Alliance)
+								un(REMOVED_FROM_GAME, i(100225)), -- Grievous Gladiator's Barrier (Alliance)
+								un(REMOVED_FROM_GAME, i(100239)), -- Grievous Gladiator's Touch of Defeat (Alliance)
+								un(REMOVED_FROM_GAME, i(100297)), -- Grievous Gladiator's Rifle (Alliance)
+								un(REMOVED_FROM_GAME, i(100203)), -- Grievous Gladiator's Longbow (Alliance)
+								un(REMOVED_FROM_GAME, i(100492)), -- Grievous Gladiator's Baton of Light (Alliance)
 							}),
 							cl(6, {	-- Death Knight
-								un(2, i(100243)), -- Grievous Gladiator's Dreadplate Chestpiece (Alliance)
-								un(2, i(100245)), -- Grievous Gladiator's Dreadplate Gauntlets (Alliance)
-								un(2, i(100247)), -- Grievous Gladiator's Dreadplate Helm (Alliance)
-								un(2, i(100249)), -- Grievous Gladiator's Dreadplate Legguards (Alliance)
-								un(2, i(100251)), -- Grievous Gladiator's Dreadplate Shoulders (Alliance)
+								un(REMOVED_FROM_GAME, i(100243)), -- Grievous Gladiator's Dreadplate Chestpiece (Alliance)
+								un(REMOVED_FROM_GAME, i(100245)), -- Grievous Gladiator's Dreadplate Gauntlets (Alliance)
+								un(REMOVED_FROM_GAME, i(100247)), -- Grievous Gladiator's Dreadplate Helm (Alliance)
+								un(REMOVED_FROM_GAME, i(100249)), -- Grievous Gladiator's Dreadplate Legguards (Alliance)
+								un(REMOVED_FROM_GAME, i(100251)), -- Grievous Gladiator's Dreadplate Shoulders (Alliance)
 							}),
 							cl(11, {	-- Druid
-								un(2, i(100253)),	-- Grievous Gladiator's Dragonhide Gloves (Alliance)
-								un(2, i(100255)),	-- Grievous Gladiator's Dragonhide Helm (Alliance)
-								un(2, i(100257)),	-- Grievous Gladiator's Dragonhide Legguards (Alliance)
-								un(2, i(100259)),	-- Grievous Gladiator's Dragonhide Robes (Alliance)
-								un(2, i(100261)),	-- Grievous Gladiator's Dragonhide Spaulders (Alliance)
-								un(2, i(100268)),	-- Grievous Gladiator's Kodohide Gloves (Alliance)
-								un(2, i(100270)),	-- Grievous Gladiator's Kodohide Helm (Alliance)
-								un(2, i(100272)),	-- Grievous Gladiator's Kodohide Legguards (Alliance)
-								un(2, i(100274)),	-- Grievous Gladiator's Kodohide Robes (Alliance)
-								un(2, i(100276)),	-- Grievous Gladiator's Kodohide Spaulders (Alliance)
-								un(2, i(100285)),	-- Grievous Gladiator's Wyrmhide Gloves (Alliance)
-								un(2, i(100287)),	-- Grievous Gladiator's Wyrmhide Helm (Alliance)
-								un(2, i(100289)),	-- Grievous Gladiator's Wyrmhide Legguards (Alliance)
-								un(2, i(100291)),	-- Grievous Gladiator's Wyrmhide Robes (Alliance)
-								un(2, i(100293)),	-- Grievous Gladiator's Wyrmhide Spaulders (Alliance)
+								un(REMOVED_FROM_GAME, i(100253)),	-- Grievous Gladiator's Dragonhide Gloves (Alliance)
+								un(REMOVED_FROM_GAME, i(100255)),	-- Grievous Gladiator's Dragonhide Helm (Alliance)
+								un(REMOVED_FROM_GAME, i(100257)),	-- Grievous Gladiator's Dragonhide Legguards (Alliance)
+								un(REMOVED_FROM_GAME, i(100259)),	-- Grievous Gladiator's Dragonhide Robes (Alliance)
+								un(REMOVED_FROM_GAME, i(100261)),	-- Grievous Gladiator's Dragonhide Spaulders (Alliance)
+								un(REMOVED_FROM_GAME, i(100268)),	-- Grievous Gladiator's Kodohide Gloves (Alliance)
+								un(REMOVED_FROM_GAME, i(100270)),	-- Grievous Gladiator's Kodohide Helm (Alliance)
+								un(REMOVED_FROM_GAME, i(100272)),	-- Grievous Gladiator's Kodohide Legguards (Alliance)
+								un(REMOVED_FROM_GAME, i(100274)),	-- Grievous Gladiator's Kodohide Robes (Alliance)
+								un(REMOVED_FROM_GAME, i(100276)),	-- Grievous Gladiator's Kodohide Spaulders (Alliance)
+								un(REMOVED_FROM_GAME, i(100285)),	-- Grievous Gladiator's Wyrmhide Gloves (Alliance)
+								un(REMOVED_FROM_GAME, i(100287)),	-- Grievous Gladiator's Wyrmhide Helm (Alliance)
+								un(REMOVED_FROM_GAME, i(100289)),	-- Grievous Gladiator's Wyrmhide Legguards (Alliance)
+								un(REMOVED_FROM_GAME, i(100291)),	-- Grievous Gladiator's Wyrmhide Robes (Alliance)
+								un(REMOVED_FROM_GAME, i(100293)),	-- Grievous Gladiator's Wyrmhide Spaulders (Alliance)
 							}),
 							cl(3, {	-- Hunter
-								un(2, i(100320)), -- Grievous Gladiator's Chain Gauntlets (Alliance)
-								un(2, i(100322)), -- Grievous Gladiator's Chain Helm (Alliance)
-								un(2, i(100326)), -- Grievous Gladiator's Chain Spaulders (Alliance)
-								un(2, i(100318)), -- Grievous Gladiator's Chain Armor (Alliance)
-								un(2, i(100324)), -- Grievous Gladiator's Chain Leggings (Alliance)
+								un(REMOVED_FROM_GAME, i(100320)), -- Grievous Gladiator's Chain Gauntlets (Alliance)
+								un(REMOVED_FROM_GAME, i(100322)), -- Grievous Gladiator's Chain Helm (Alliance)
+								un(REMOVED_FROM_GAME, i(100326)), -- Grievous Gladiator's Chain Spaulders (Alliance)
+								un(REMOVED_FROM_GAME, i(100318)), -- Grievous Gladiator's Chain Armor (Alliance)
+								un(REMOVED_FROM_GAME, i(100324)), -- Grievous Gladiator's Chain Leggings (Alliance)
 							}),
 							cl(8, {	-- Mage
-								un(2, i(100328)), -- Grievous Gladiator's Silk Handguards (Alliance)
-								un(2, i(100332)), -- Grievous Gladiator's Silk Trousers (Alliance)
-								un(2, i(100334)), -- Grievous Gladiator's Silk Robe (Alliance)
-								un(2, i(100330)), -- Grievous Gladiator's Silk Cowl (Alliance)
-								un(2, i(100336)), -- Grievous Gladiator's Silk Amice (Alliance)
+								un(REMOVED_FROM_GAME, i(100328)), -- Grievous Gladiator's Silk Handguards (Alliance)
+								un(REMOVED_FROM_GAME, i(100332)), -- Grievous Gladiator's Silk Trousers (Alliance)
+								un(REMOVED_FROM_GAME, i(100334)), -- Grievous Gladiator's Silk Robe (Alliance)
+								un(REMOVED_FROM_GAME, i(100330)), -- Grievous Gladiator's Silk Cowl (Alliance)
+								un(REMOVED_FROM_GAME, i(100336)), -- Grievous Gladiator's Silk Amice (Alliance)
 							}),
 							cl(10, {	-- Monk
-								un(2, i(100345)), -- Grievous Gladiator's Ironskin Helm (Alliance)
-								un(2, i(100343)), -- Grievous Gladiator's Ironskin Gloves (Alliance)
-								un(2, i(100347)), -- Grievous Gladiator's Ironskin Legguards (Alliance)
-								un(2, i(100349)), -- Grievous Gladiator's Ironskin Spaulders (Alliance)
-								un(2, i(100351)), -- Grievous Gladiator's Ironskin Tunic (Alliance)
-								un(2, i(100353)), -- Grievous Gladiator's Copperskin Gloves (Alliance)
-								un(2, i(100355)), -- Grievous Gladiator's Copperskin Helm (Alliance)
-								un(2, i(100357)), -- Grievous Gladiator's Copperskin Legguards (Alliance)
-								un(2, i(100359)), -- Grievous Gladiator's Copperskin Spaulders (Alliance)
-								un(2, i(100361)), -- Grievous Gladiator's Copperskin Tunic (Alliance)
+								un(REMOVED_FROM_GAME, i(100345)), -- Grievous Gladiator's Ironskin Helm (Alliance)
+								un(REMOVED_FROM_GAME, i(100343)), -- Grievous Gladiator's Ironskin Gloves (Alliance)
+								un(REMOVED_FROM_GAME, i(100347)), -- Grievous Gladiator's Ironskin Legguards (Alliance)
+								un(REMOVED_FROM_GAME, i(100349)), -- Grievous Gladiator's Ironskin Spaulders (Alliance)
+								un(REMOVED_FROM_GAME, i(100351)), -- Grievous Gladiator's Ironskin Tunic (Alliance)
+								un(REMOVED_FROM_GAME, i(100353)), -- Grievous Gladiator's Copperskin Gloves (Alliance)
+								un(REMOVED_FROM_GAME, i(100355)), -- Grievous Gladiator's Copperskin Helm (Alliance)
+								un(REMOVED_FROM_GAME, i(100357)), -- Grievous Gladiator's Copperskin Legguards (Alliance)
+								un(REMOVED_FROM_GAME, i(100359)), -- Grievous Gladiator's Copperskin Spaulders (Alliance)
+								un(REMOVED_FROM_GAME, i(100361)), -- Grievous Gladiator's Copperskin Tunic (Alliance)
 							}),
 							cl(2, {	-- Paladin
-								un(2, i(100367)), -- Grievous Gladiator's Scaled Helm (Alliance)
-								un(2, i(100363)), -- Grievous Gladiator's Scaled Chestpiece (Alliance)
-								un(2, i(100365)), -- Grievous Gladiator's Scaled Gauntlets (Alliance)
-								un(2, i(100369)), -- Grievous Gladiator's Scaled Legguards (Alliance)
-								un(2, i(100371)), -- Grievous Gladiator's Scaled Shoulders (Alliance)
-								un(2, i(100383)), -- Grievous Gladiator's Ornamented Chestguard (Alliance)
-								un(2, i(100385)), -- Grievous Gladiator's Ornamented Gloves (Alliance)
-								un(2, i(100387)), -- Grievous Gladiator's Ornamented Headcover (Alliance)
-								un(2, i(100389)), -- Grievous Gladiator's Ornamented Legplates (Alliance)
-								un(2, i(100391)), -- Grievous Gladiator's Ornamented Spaulders (Alliance)
+								un(REMOVED_FROM_GAME, i(100367)), -- Grievous Gladiator's Scaled Helm (Alliance)
+								un(REMOVED_FROM_GAME, i(100363)), -- Grievous Gladiator's Scaled Chestpiece (Alliance)
+								un(REMOVED_FROM_GAME, i(100365)), -- Grievous Gladiator's Scaled Gauntlets (Alliance)
+								un(REMOVED_FROM_GAME, i(100369)), -- Grievous Gladiator's Scaled Legguards (Alliance)
+								un(REMOVED_FROM_GAME, i(100371)), -- Grievous Gladiator's Scaled Shoulders (Alliance)
+								un(REMOVED_FROM_GAME, i(100383)), -- Grievous Gladiator's Ornamented Chestguard (Alliance)
+								un(REMOVED_FROM_GAME, i(100385)), -- Grievous Gladiator's Ornamented Gloves (Alliance)
+								un(REMOVED_FROM_GAME, i(100387)), -- Grievous Gladiator's Ornamented Headcover (Alliance)
+								un(REMOVED_FROM_GAME, i(100389)), -- Grievous Gladiator's Ornamented Legplates (Alliance)
+								un(REMOVED_FROM_GAME, i(100391)), -- Grievous Gladiator's Ornamented Spaulders (Alliance)
 							}),
 							cl(5, {	-- Priest
-								un(2, i(100405)), -- Grievous Gladiator's Mooncloth Gloves (Alliance)
-								un(2, i(100407)), -- Grievous Gladiator's Mooncloth Helm (Alliance)
-								un(2, i(100409)), -- Grievous Gladiator's Mooncloth Leggings (Alliance)
-								un(2, i(100411)), -- Grievous Gladiator's Mooncloth Robe (Alliance)
-								un(2, i(100413)), -- Grievous Gladiator's Mooncloth Mantle (Alliance)
-								un(2, i(100415)), -- Grievous Gladiator's Satin Gloves (Alliance)
-								un(2, i(100417)), -- Grievous Gladiator's Satin Hood (Alliance)
-								un(2, i(100419)), -- Grievous Gladiator's Satin Leggings (Alliance)
-								un(2, i(100421)), -- Grievous Gladiator's Satin Robe (Alliance)
-								un(2, i(100423)), -- Grievous Gladiator's Satin Mantle (Alliance)
+								un(REMOVED_FROM_GAME, i(100405)), -- Grievous Gladiator's Mooncloth Gloves (Alliance)
+								un(REMOVED_FROM_GAME, i(100407)), -- Grievous Gladiator's Mooncloth Helm (Alliance)
+								un(REMOVED_FROM_GAME, i(100409)), -- Grievous Gladiator's Mooncloth Leggings (Alliance)
+								un(REMOVED_FROM_GAME, i(100411)), -- Grievous Gladiator's Mooncloth Robe (Alliance)
+								un(REMOVED_FROM_GAME, i(100413)), -- Grievous Gladiator's Mooncloth Mantle (Alliance)
+								un(REMOVED_FROM_GAME, i(100415)), -- Grievous Gladiator's Satin Gloves (Alliance)
+								un(REMOVED_FROM_GAME, i(100417)), -- Grievous Gladiator's Satin Hood (Alliance)
+								un(REMOVED_FROM_GAME, i(100419)), -- Grievous Gladiator's Satin Leggings (Alliance)
+								un(REMOVED_FROM_GAME, i(100421)), -- Grievous Gladiator's Satin Robe (Alliance)
+								un(REMOVED_FROM_GAME, i(100423)), -- Grievous Gladiator's Satin Mantle (Alliance)
 							}),
 							cl(4, {	-- Rogue
-								un(2, i(100434)), -- Grievous Gladiator's Leather Helm (Alliance)
-								un(2, i(100430)), -- Grievous Gladiator's Leather Tunic (Alliance)
-								un(2, i(100432)), -- Grievous Gladiator's Leather Gloves (Alliance)
-								un(2, i(100436)), -- Grievous Gladiator's Leather Legguards (Alliance)
-								un(2, i(100438)), -- Grievous Gladiator's Leather Spaulders (Alliance)
+								un(REMOVED_FROM_GAME, i(100434)), -- Grievous Gladiator's Leather Helm (Alliance)
+								un(REMOVED_FROM_GAME, i(100430)), -- Grievous Gladiator's Leather Tunic (Alliance)
+								un(REMOVED_FROM_GAME, i(100432)), -- Grievous Gladiator's Leather Gloves (Alliance)
+								un(REMOVED_FROM_GAME, i(100436)), -- Grievous Gladiator's Leather Legguards (Alliance)
+								un(REMOVED_FROM_GAME, i(100438)), -- Grievous Gladiator's Leather Spaulders (Alliance)
 							}),
 							cl(7, {	-- Shaman
-								un(2, i(100452)), -- Grievous Gladiator's Ringmail Helm (Alliance)
-								un(2, i(100448)), -- Grievous Gladiator's Ringmail Armor (Alliance)
-								un(2, i(100450)), -- Grievous Gladiator's Ringmail Gauntlets (Alliance)
-								un(2, i(100454)), -- Grievous Gladiator's Ringmail Leggings (Alliance)
-								un(2, i(100456)), -- Grievous Gladiator's Ringmail Spaulders (Alliance)
-								un(2, i(100458)), -- Grievous Gladiator's Linked Armor (Alliance)
-								un(2, i(100460)), -- Grievous Gladiator's Linked Gauntlets (Alliance)
-								un(2, i(100462)), -- Grievous Gladiator's Linked Helm (Alliance)
-								un(2, i(100464)), -- Grievous Gladiator's Linked Leggings (Alliance)
-								un(2, i(100466)), -- Grievous Gladiator's Linked Spaulders (Alliance)
-								un(2, i(100470)), -- Grievous Gladiator's Mail Armor (Alliance)
-								un(2, i(100472)), -- Grievous Gladiator's Mail Gauntlets (Alliance)
-								un(2, i(100474)), -- Grievous Gladiator's Mail Helm (Alliance)
-								un(2, i(100476)), -- Grievous Gladiator's Mail Leggings (Alliance)
-								un(2, i(100478)), -- Grievous Gladiator's Mail Spaulders (Alliance)
+								un(REMOVED_FROM_GAME, i(100452)), -- Grievous Gladiator's Ringmail Helm (Alliance)
+								un(REMOVED_FROM_GAME, i(100448)), -- Grievous Gladiator's Ringmail Armor (Alliance)
+								un(REMOVED_FROM_GAME, i(100450)), -- Grievous Gladiator's Ringmail Gauntlets (Alliance)
+								un(REMOVED_FROM_GAME, i(100454)), -- Grievous Gladiator's Ringmail Leggings (Alliance)
+								un(REMOVED_FROM_GAME, i(100456)), -- Grievous Gladiator's Ringmail Spaulders (Alliance)
+								un(REMOVED_FROM_GAME, i(100458)), -- Grievous Gladiator's Linked Armor (Alliance)
+								un(REMOVED_FROM_GAME, i(100460)), -- Grievous Gladiator's Linked Gauntlets (Alliance)
+								un(REMOVED_FROM_GAME, i(100462)), -- Grievous Gladiator's Linked Helm (Alliance)
+								un(REMOVED_FROM_GAME, i(100464)), -- Grievous Gladiator's Linked Leggings (Alliance)
+								un(REMOVED_FROM_GAME, i(100466)), -- Grievous Gladiator's Linked Spaulders (Alliance)
+								un(REMOVED_FROM_GAME, i(100470)), -- Grievous Gladiator's Mail Armor (Alliance)
+								un(REMOVED_FROM_GAME, i(100472)), -- Grievous Gladiator's Mail Gauntlets (Alliance)
+								un(REMOVED_FROM_GAME, i(100474)), -- Grievous Gladiator's Mail Helm (Alliance)
+								un(REMOVED_FROM_GAME, i(100476)), -- Grievous Gladiator's Mail Leggings (Alliance)
+								un(REMOVED_FROM_GAME, i(100478)), -- Grievous Gladiator's Mail Spaulders (Alliance)
 							}),
 							cl(9, {	-- Warlock
-								un(2, i(100512)), -- Grievous Gladiator's Felweave Cowl (Alliance)
-								un(2, i(100510)), -- Grievous Gladiator's Felweave Handguards (Alliance)
-								un(2, i(100514)), -- Grievous Gladiator's Felweave Trousers (Alliance)
-								un(2, i(100516)), -- Grievous Gladiator's Felweave Raiment (Alliance)
-								un(2, i(100518)), -- Grievous Gladiator's Felweave Amice (Alliance)
+								un(REMOVED_FROM_GAME, i(100512)), -- Grievous Gladiator's Felweave Cowl (Alliance)
+								un(REMOVED_FROM_GAME, i(100510)), -- Grievous Gladiator's Felweave Handguards (Alliance)
+								un(REMOVED_FROM_GAME, i(100514)), -- Grievous Gladiator's Felweave Trousers (Alliance)
+								un(REMOVED_FROM_GAME, i(100516)), -- Grievous Gladiator's Felweave Raiment (Alliance)
+								un(REMOVED_FROM_GAME, i(100518)), -- Grievous Gladiator's Felweave Amice (Alliance)
 							}),
 							cl(1, {	-- Warrior
-								un(2, i(100524)), -- Grievous Gladiator's Plate Helm (Alliance)
-								un(2, i(100520)), -- Grievous Gladiator's Plate Chestpiece (Alliance)
-								un(2, i(100522)), -- Grievous Gladiator's Plate Gauntlets (Alliance)
-								un(2, i(100526)), -- Grievous Gladiator's Plate Legguards (Alliance)
-								un(2, i(100528)), -- Grievous Gladiator's Plate Shoulders (Alliance)
+								un(REMOVED_FROM_GAME, i(100524)), -- Grievous Gladiator's Plate Helm (Alliance)
+								un(REMOVED_FROM_GAME, i(100520)), -- Grievous Gladiator's Plate Chestpiece (Alliance)
+								un(REMOVED_FROM_GAME, i(100522)), -- Grievous Gladiator's Plate Gauntlets (Alliance)
+								un(REMOVED_FROM_GAME, i(100526)), -- Grievous Gladiator's Plate Legguards (Alliance)
+								un(REMOVED_FROM_GAME, i(100528)), -- Grievous Gladiator's Plate Shoulders (Alliance)
 							}),
 							n(-322, {	-- Back
-								un(2, i(100221)), -- Grievous Gladiator's Drape of Prowess (Alliance)
-								un(2, i(100222)), -- Grievous Gladiator's Drape of Meditation (Alliance)
-								un(2, i(100220)), -- Grievous Gladiator's Drape of Cruelty (Alliance)
-								un(2, i(100502)), -- Grievous Gladiator's Cloak of Prowess (Alliance)
-								un(2, i(100501)), -- Grievous Gladiator's Cloak of Alacrity (Alliance)
-								un(2, i(100197)), -- Grievous Gladiator's Cape of Prowess (Alliance)
-								un(2, i(100196)), -- Grievous Gladiator's Cape of Cruelty (Alliance)
+								un(REMOVED_FROM_GAME, i(100221)), -- Grievous Gladiator's Drape of Prowess (Alliance)
+								un(REMOVED_FROM_GAME, i(100222)), -- Grievous Gladiator's Drape of Meditation (Alliance)
+								un(REMOVED_FROM_GAME, i(100220)), -- Grievous Gladiator's Drape of Cruelty (Alliance)
+								un(REMOVED_FROM_GAME, i(100502)), -- Grievous Gladiator's Cloak of Prowess (Alliance)
+								un(REMOVED_FROM_GAME, i(100501)), -- Grievous Gladiator's Cloak of Alacrity (Alliance)
+								un(REMOVED_FROM_GAME, i(100197)), -- Grievous Gladiator's Cape of Prowess (Alliance)
+								un(REMOVED_FROM_GAME, i(100196)), -- Grievous Gladiator's Cape of Cruelty (Alliance)
 							}),
 							n(-326, {	-- Wrists
-								un(2, i(100316)), -- Grievous Gladiator's Wristguards of Alacrity (Alliance)
-								un(2, i(100317)), -- Grievous Gladiator's Wristguards of Accuracy (Alliance)
-								un(2, i(100218)), -- Grievous Gladiator's Cuffs of Prowess (Alliance)
-								un(2, i(100219)), -- Grievous Gladiator's Cuffs of Meditation (Alliance)
-								un(2, i(100217)), -- Grievous Gladiator's Cuffs of Accuracy (Alliance)
-								un(2, i(100381)), -- Grievous Gladiator's Bracers of Prowess (Alliance)
-								un(2, i(100382)), -- Grievous Gladiator's Bracers of Meditation (Alliance)
-								un(2, i(100284)), -- Grievous Gladiator's Bindings of Prowess (Alliance)
-								un(2, i(100267)), -- Grievous Gladiator's Bindings of Meditation (Alliance)
-								un(2, i(100429)), -- Grievous Gladiator's Armwraps of Alacrity (Alliance)
-								un(2, i(100342)), -- Grievous Gladiator's Armwraps of Accuracy (Alliance)
-								un(2, i(100401)), -- Grievous Gladiator's Armplates of Proficiency (Alliance)
-								un(2, i(100402)), -- Grievous Gladiator's Armplates of Alacrity (Alliance)
-								un(2, i(100446)), -- Grievous Gladiator's Armbands of Prowess (Alliance)
-								un(2, i(100447)), -- Grievous Gladiator's Armbands of Meditation (Alliance)
+								un(REMOVED_FROM_GAME, i(100316)), -- Grievous Gladiator's Wristguards of Alacrity (Alliance)
+								un(REMOVED_FROM_GAME, i(100317)), -- Grievous Gladiator's Wristguards of Accuracy (Alliance)
+								un(REMOVED_FROM_GAME, i(100218)), -- Grievous Gladiator's Cuffs of Prowess (Alliance)
+								un(REMOVED_FROM_GAME, i(100219)), -- Grievous Gladiator's Cuffs of Meditation (Alliance)
+								un(REMOVED_FROM_GAME, i(100217)), -- Grievous Gladiator's Cuffs of Accuracy (Alliance)
+								un(REMOVED_FROM_GAME, i(100381)), -- Grievous Gladiator's Bracers of Prowess (Alliance)
+								un(REMOVED_FROM_GAME, i(100382)), -- Grievous Gladiator's Bracers of Meditation (Alliance)
+								un(REMOVED_FROM_GAME, i(100284)), -- Grievous Gladiator's Bindings of Prowess (Alliance)
+								un(REMOVED_FROM_GAME, i(100267)), -- Grievous Gladiator's Bindings of Meditation (Alliance)
+								un(REMOVED_FROM_GAME, i(100429)), -- Grievous Gladiator's Armwraps of Alacrity (Alliance)
+								un(REMOVED_FROM_GAME, i(100342)), -- Grievous Gladiator's Armwraps of Accuracy (Alliance)
+								un(REMOVED_FROM_GAME, i(100401)), -- Grievous Gladiator's Armplates of Proficiency (Alliance)
+								un(REMOVED_FROM_GAME, i(100402)), -- Grievous Gladiator's Armplates of Alacrity (Alliance)
+								un(REMOVED_FROM_GAME, i(100446)), -- Grievous Gladiator's Armbands of Prowess (Alliance)
+								un(REMOVED_FROM_GAME, i(100447)), -- Grievous Gladiator's Armbands of Meditation (Alliance)
 							}),
 							n(-328, {	-- Waist
-								un(2, i(100440)), -- Grievous Gladiator's Waistguard of Meditation (Alliance)
-								un(2, i(100468)), -- Grievous Gladiator's Waistguard of Cruelty (Alliance)
-								un(2, i(100338)), -- Grievous Gladiator's Waistband of Cruelty (Alliance)
-								un(2, i(100425)), -- Grievous Gladiator's Waistband of Accuracy (Alliance)
-								un(2, i(100308)), -- Grievous Gladiator's Links of Cruelty (Alliance)
-								un(2, i(100310)), -- Grievous Gladiator's Links of Accuracy (Alliance)
-								un(2, i(100395)), -- Grievous Gladiator's Girdle of Prowess (Alliance)
-								un(2, i(100393)), -- Grievous Gladiator's Girdle of Accuracy (Alliance)
-								un(2, i(100209)), -- Grievous Gladiator's Cord of Meditation (Alliance)
-								un(2, i(100205)), -- Grievous Gladiator's Cord of Cruelty (Alliance)
-								un(2, i(100207)), -- Grievous Gladiator's Cord of Accuracy (Alliance)
-								un(2, i(100375)), -- Grievous Gladiator's Clasp of Meditation (Alliance)
-								un(2, i(100373)), -- Grievous Gladiator's Clasp of Cruelty (Alliance)
-								un(2, i(100263)), -- Grievous Gladiator's Belt of Meditation (Alliance)
-								un(2, i(100280)), -- Grievous Gladiator's Belt of Cruelty (Alliance)
+								un(REMOVED_FROM_GAME, i(100440)), -- Grievous Gladiator's Waistguard of Meditation (Alliance)
+								un(REMOVED_FROM_GAME, i(100468)), -- Grievous Gladiator's Waistguard of Cruelty (Alliance)
+								un(REMOVED_FROM_GAME, i(100338)), -- Grievous Gladiator's Waistband of Cruelty (Alliance)
+								un(REMOVED_FROM_GAME, i(100425)), -- Grievous Gladiator's Waistband of Accuracy (Alliance)
+								un(REMOVED_FROM_GAME, i(100308)), -- Grievous Gladiator's Links of Cruelty (Alliance)
+								un(REMOVED_FROM_GAME, i(100310)), -- Grievous Gladiator's Links of Accuracy (Alliance)
+								un(REMOVED_FROM_GAME, i(100395)), -- Grievous Gladiator's Girdle of Prowess (Alliance)
+								un(REMOVED_FROM_GAME, i(100393)), -- Grievous Gladiator's Girdle of Accuracy (Alliance)
+								un(REMOVED_FROM_GAME, i(100209)), -- Grievous Gladiator's Cord of Meditation (Alliance)
+								un(REMOVED_FROM_GAME, i(100205)), -- Grievous Gladiator's Cord of Cruelty (Alliance)
+								un(REMOVED_FROM_GAME, i(100207)), -- Grievous Gladiator's Cord of Accuracy (Alliance)
+								un(REMOVED_FROM_GAME, i(100375)), -- Grievous Gladiator's Clasp of Meditation (Alliance)
+								un(REMOVED_FROM_GAME, i(100373)), -- Grievous Gladiator's Clasp of Cruelty (Alliance)
+								un(REMOVED_FROM_GAME, i(100263)), -- Grievous Gladiator's Belt of Meditation (Alliance)
+								un(REMOVED_FROM_GAME, i(100280)), -- Grievous Gladiator's Belt of Cruelty (Alliance)
 							}),
 							n(-330, {	-- Feet
-								un(2, i(100397)), -- Grievous Gladiator's Warboots of Cruelty (Alliance)
-								un(2, i(100399)), -- Grievous Gladiator's Warboots of Alacrity (Alliance)
-								un(2, i(100215)), -- Grievous Gladiator's Treads of Meditation (Alliance)
-								un(2, i(100211)), -- Grievous Gladiator's Treads of Cruelty (Alliance)
-								un(2, i(100213)), -- Grievous Gladiator's Treads of Alacrity (Alliance)
-								un(2, i(100312)), -- Grievous Gladiator's Sabatons of Cruelty (Alliance)
-								un(2, i(100314)), -- Grievous Gladiator's Sabatons of Alacrity (Alliance)
-								un(2, i(100379)), -- Grievous Gladiator's Greaves of Meditation (Alliance)
-								un(2, i(100377)), -- Grievous Gladiator's Greaves of Alacrity (Alliance)
-								un(2, i(100265)), -- Grievous Gladiator's Footguards of Meditation (Alliance)
-								un(2, i(100444)), -- Grievous Gladiator's Footguards of Meditation (Alliance)
-								un(2, i(100282)), -- Grievous Gladiator's Footguards of Alacrity (Alliance)
-								un(2, i(100442)), -- Grievous Gladiator's Footguards of Alacrity (Alliance)
-								un(2, i(100427)), -- Grievous Gladiator's Boots of Cruelty (Alliance)
-								un(2, i(100340)), -- Grievous Gladiator's Boots of Alacrity (Alliance)
+								un(REMOVED_FROM_GAME, i(100397)), -- Grievous Gladiator's Warboots of Cruelty (Alliance)
+								un(REMOVED_FROM_GAME, i(100399)), -- Grievous Gladiator's Warboots of Alacrity (Alliance)
+								un(REMOVED_FROM_GAME, i(100215)), -- Grievous Gladiator's Treads of Meditation (Alliance)
+								un(REMOVED_FROM_GAME, i(100211)), -- Grievous Gladiator's Treads of Cruelty (Alliance)
+								un(REMOVED_FROM_GAME, i(100213)), -- Grievous Gladiator's Treads of Alacrity (Alliance)
+								un(REMOVED_FROM_GAME, i(100312)), -- Grievous Gladiator's Sabatons of Cruelty (Alliance)
+								un(REMOVED_FROM_GAME, i(100314)), -- Grievous Gladiator's Sabatons of Alacrity (Alliance)
+								un(REMOVED_FROM_GAME, i(100379)), -- Grievous Gladiator's Greaves of Meditation (Alliance)
+								un(REMOVED_FROM_GAME, i(100377)), -- Grievous Gladiator's Greaves of Alacrity (Alliance)
+								un(REMOVED_FROM_GAME, i(100265)), -- Grievous Gladiator's Footguards of Meditation (Alliance)
+								un(REMOVED_FROM_GAME, i(100444)), -- Grievous Gladiator's Footguards of Meditation (Alliance)
+								un(REMOVED_FROM_GAME, i(100282)), -- Grievous Gladiator's Footguards of Alacrity (Alliance)
+								un(REMOVED_FROM_GAME, i(100442)), -- Grievous Gladiator's Footguards of Alacrity (Alliance)
+								un(REMOVED_FROM_GAME, i(100427)), -- Grievous Gladiator's Boots of Cruelty (Alliance)
+								un(REMOVED_FROM_GAME, i(100340)), -- Grievous Gladiator's Boots of Alacrity (Alliance)
 							}),
 						}),
 						n(-662, {	-- Elite
 							n(-319, {	-- Weapons
-								un(2, i(100184)),	-- Grievous Gladiator's Decapitator
-								un(2, i(100194)),	-- Grievous Gladiator's Quick blade
-								un(2, i(100489)),	-- Grievous Gladiator's Mageblade
-								un(2, i(100499)),	-- Grievous Gladiator's Slicer
-								un(2, i(100224)),	-- Grievous Gladiator's Endgame
-								un(2, i(100238)),	-- Grievous Gladiator's Reprieve
-								un(2, i(100228)),	-- Grievous Gladiator's Spellblade
-								un(2, i(100481)),	-- Grievous Gladiator's Shanker
-								un(2, i(100298)),	-- Grievous Gladiator's Rifle
-								un(2, i(100404)),	-- Grievous Gladiator's Pike
-								un(2, i(100483)),	-- Grievous Gladiator's Ripper
-								un(2, i(100487)),	-- Grievous Gladiator's Render
-								un(2, i(100188)),	-- Grievous Gladiator's Greatsword
-								un(2, i(100226)),	-- Grievous Gladiator's Garrier
-								un(2, i(100304)),	-- Grievous Gladiator's Energy Staff
-								un(2, i(100230)),	-- Grievous Gladiator's Battle Staff
-								un(2, i(100304)),	-- Grievous Gladiator's Staff
-								un(2, i(100190)),	-- Grievous Gladiator's Cleaver
-								un(2, i(100495)),	-- Grievous Gladiator's Hacker
-								un(2, i(100302)),	-- Grievous Gladiator's Redoubt
-								un(2, i(100509)),	-- Grievous Gladiator's Shield Wall
-								un(2, i(100192)),	-- Grievous Gladiator's Pummeler
-								un(2, i(100300)),	-- Grievous Gladiator's Gravel
-								un(2, i(100497)),	-- Grievous Gladiator's Bonecracker
-								un(2, i(100240)),	-- Grievous Gladiator's Touch of Defeat
-								un(2, i(100493)),	-- Grievous Gladiator's Baton of Light
-								un(2, i(100204)),	-- Grievous Gladiator's longbow 
+								un(REMOVED_FROM_GAME, i(100184)),	-- Grievous Gladiator's Decapitator
+								un(REMOVED_FROM_GAME, i(100194)),	-- Grievous Gladiator's Quick blade
+								un(REMOVED_FROM_GAME, i(100489)),	-- Grievous Gladiator's Mageblade
+								un(REMOVED_FROM_GAME, i(100499)),	-- Grievous Gladiator's Slicer
+								un(REMOVED_FROM_GAME, i(100224)),	-- Grievous Gladiator's Endgame
+								un(REMOVED_FROM_GAME, i(100238)),	-- Grievous Gladiator's Reprieve
+								un(REMOVED_FROM_GAME, i(100228)),	-- Grievous Gladiator's Spellblade
+								un(REMOVED_FROM_GAME, i(100481)),	-- Grievous Gladiator's Shanker
+								un(REMOVED_FROM_GAME, i(100298)),	-- Grievous Gladiator's Rifle
+								un(REMOVED_FROM_GAME, i(100404)),	-- Grievous Gladiator's Pike
+								un(REMOVED_FROM_GAME, i(100483)),	-- Grievous Gladiator's Ripper
+								un(REMOVED_FROM_GAME, i(100487)),	-- Grievous Gladiator's Render
+								un(REMOVED_FROM_GAME, i(100188)),	-- Grievous Gladiator's Greatsword
+								un(REMOVED_FROM_GAME, i(100226)),	-- Grievous Gladiator's Garrier
+								un(REMOVED_FROM_GAME, i(100304)),	-- Grievous Gladiator's Energy Staff
+								un(REMOVED_FROM_GAME, i(100230)),	-- Grievous Gladiator's Battle Staff
+								un(REMOVED_FROM_GAME, i(100304)),	-- Grievous Gladiator's Staff
+								un(REMOVED_FROM_GAME, i(100190)),	-- Grievous Gladiator's Cleaver
+								un(REMOVED_FROM_GAME, i(100495)),	-- Grievous Gladiator's Hacker
+								un(REMOVED_FROM_GAME, i(100302)),	-- Grievous Gladiator's Redoubt
+								un(REMOVED_FROM_GAME, i(100509)),	-- Grievous Gladiator's Shield Wall
+								un(REMOVED_FROM_GAME, i(100192)),	-- Grievous Gladiator's Pummeler
+								un(REMOVED_FROM_GAME, i(100300)),	-- Grievous Gladiator's Gravel
+								un(REMOVED_FROM_GAME, i(100497)),	-- Grievous Gladiator's Bonecracker
+								un(REMOVED_FROM_GAME, i(100240)),	-- Grievous Gladiator's Touch of Defeat
+								un(REMOVED_FROM_GAME, i(100493)),	-- Grievous Gladiator's Baton of Light
+								un(REMOVED_FROM_GAME, i(100204)),	-- Grievous Gladiator's longbow 
 							}),
 							cl(6, {	-- Death Knight
-								un(2, i(100244)),	-- Grievous Gladiator's Dreadplate Chestpiece
-								un(2, i(100246)),	-- Grievous Gladiator's Dreadplate Gauntlets
-								un(2, i(100248)),	-- Grievous Gladiator's Dreadplate Helm
-								un(2, i(100250)),	-- Grievous Gladiator's Dreadplate Legguards
-								un(2, i(100252)),	-- Grievous Gladiator's Dreadplate Shoulders
-								un(2, i(100394)),	-- Grievous Gladiator's Dreadplate Girdle
-								un(2, i(100400)),	-- Grievous Gladiator's Dreadplate Warboots
+								un(REMOVED_FROM_GAME, i(100244)),	-- Grievous Gladiator's Dreadplate Chestpiece
+								un(REMOVED_FROM_GAME, i(100246)),	-- Grievous Gladiator's Dreadplate Gauntlets
+								un(REMOVED_FROM_GAME, i(100248)),	-- Grievous Gladiator's Dreadplate Helm
+								un(REMOVED_FROM_GAME, i(100250)),	-- Grievous Gladiator's Dreadplate Legguards
+								un(REMOVED_FROM_GAME, i(100252)),	-- Grievous Gladiator's Dreadplate Shoulders
+								un(REMOVED_FROM_GAME, i(100394)),	-- Grievous Gladiator's Dreadplate Girdle
+								un(REMOVED_FROM_GAME, i(100400)),	-- Grievous Gladiator's Dreadplate Warboots
 							}),
 							cl(11, {	-- Druid
-								un(2, i(100264)),	-- Grievous Gladiator's Kodohide Belt
-								un(2, i(100266)),	-- Grievous Gladiator's Kodohide Footguards
-								un(2, i(100269)),	-- Grievous Gladiator's Kodohide Gloves
-								un(2, i(100271)),	-- Grievous Gladiator's Kodohide Helm
-								un(2, i(100273)),	-- Grievous Gladiator's Kodohide Legguards
-								un(2, i(100275)),	-- Grievous Gladiator's Kodohide Robes
-								un(2, i(100277)),	-- Grievous Gladiator's Kodohide Spaulders
-								un(2, i(100281)),	-- Grievous Gladiator's Wyrmhide Belt
-								un(2, i(100283)),	-- Grievous Gladiator's Wyrmhide Footguards
-								un(2, i(100286)),	-- Grievous Gladiator's Wyrmhide Gloves
-								un(2, i(100288)),	-- Grievous Gladiator's Wyrmhide Helm
-								un(2, i(100290)),	-- Grievous Gladiator's Wyrmhide Legguards
-								un(2, i(100292)),	-- Grievous Gladiator's Wyrmhide Robes
-								un(2, i(100294)),	-- Grievous Gladiator's Wyrmhide Spaulders
-								un(2, i(102143)),	-- Grievous Gladiator's Dragonhide Belt
-								un(2, i(102142)),	-- Grievous Gladiator's Dragonhide Footguards
-								un(2, i(100254)),	-- Grievous Gladiator's Dragonhide Gloves
-								un(2, i(100256)),	-- Grievous Gladiator's Dragonhide Helm
-								un(2, i(100258)),	-- Grievous Gladiator's Dragonhide Legguards
-								un(2, i(100260)),	-- Grievous Gladiator's Dragonhide Robes
-								un(2, i(100262)),	-- Grievous Gladiator's Dragonhide Spaulders
+								un(REMOVED_FROM_GAME, i(100264)),	-- Grievous Gladiator's Kodohide Belt
+								un(REMOVED_FROM_GAME, i(100266)),	-- Grievous Gladiator's Kodohide Footguards
+								un(REMOVED_FROM_GAME, i(100269)),	-- Grievous Gladiator's Kodohide Gloves
+								un(REMOVED_FROM_GAME, i(100271)),	-- Grievous Gladiator's Kodohide Helm
+								un(REMOVED_FROM_GAME, i(100273)),	-- Grievous Gladiator's Kodohide Legguards
+								un(REMOVED_FROM_GAME, i(100275)),	-- Grievous Gladiator's Kodohide Robes
+								un(REMOVED_FROM_GAME, i(100277)),	-- Grievous Gladiator's Kodohide Spaulders
+								un(REMOVED_FROM_GAME, i(100281)),	-- Grievous Gladiator's Wyrmhide Belt
+								un(REMOVED_FROM_GAME, i(100283)),	-- Grievous Gladiator's Wyrmhide Footguards
+								un(REMOVED_FROM_GAME, i(100286)),	-- Grievous Gladiator's Wyrmhide Gloves
+								un(REMOVED_FROM_GAME, i(100288)),	-- Grievous Gladiator's Wyrmhide Helm
+								un(REMOVED_FROM_GAME, i(100290)),	-- Grievous Gladiator's Wyrmhide Legguards
+								un(REMOVED_FROM_GAME, i(100292)),	-- Grievous Gladiator's Wyrmhide Robes
+								un(REMOVED_FROM_GAME, i(100294)),	-- Grievous Gladiator's Wyrmhide Spaulders
+								un(REMOVED_FROM_GAME, i(102143)),	-- Grievous Gladiator's Dragonhide Belt
+								un(REMOVED_FROM_GAME, i(102142)),	-- Grievous Gladiator's Dragonhide Footguards
+								un(REMOVED_FROM_GAME, i(100254)),	-- Grievous Gladiator's Dragonhide Gloves
+								un(REMOVED_FROM_GAME, i(100256)),	-- Grievous Gladiator's Dragonhide Helm
+								un(REMOVED_FROM_GAME, i(100258)),	-- Grievous Gladiator's Dragonhide Legguards
+								un(REMOVED_FROM_GAME, i(100260)),	-- Grievous Gladiator's Dragonhide Robes
+								un(REMOVED_FROM_GAME, i(100262)),	-- Grievous Gladiator's Dragonhide Spaulders
 							}),
 							cl(3, {	-- Hunter
-								un(2, i(100309)),	-- Grievous Gladiator's Chain Links
-								un(2, i(100313)),	-- Grievous Gladiator's Chain Sabatons
-								un(2, i(100319)),	-- Grievous Gladiator's Chain Armor
-								un(2, i(100321)),	-- Grievous Gladiator's Chain Gauntlets
-								un(2, i(100323)),	-- Grievous Gladiator's Chain Helm
-								un(2, i(100325)),	-- Grievous Gladiator's Chain Leggings
-								un(2, i(100327)),	-- Grievous Gladiator's Chain Spaulders
+								un(REMOVED_FROM_GAME, i(100309)),	-- Grievous Gladiator's Chain Links
+								un(REMOVED_FROM_GAME, i(100313)),	-- Grievous Gladiator's Chain Sabatons
+								un(REMOVED_FROM_GAME, i(100319)),	-- Grievous Gladiator's Chain Armor
+								un(REMOVED_FROM_GAME, i(100321)),	-- Grievous Gladiator's Chain Gauntlets
+								un(REMOVED_FROM_GAME, i(100323)),	-- Grievous Gladiator's Chain Helm
+								un(REMOVED_FROM_GAME, i(100325)),	-- Grievous Gladiator's Chain Leggings
+								un(REMOVED_FROM_GAME, i(100327)),	-- Grievous Gladiator's Chain Spaulders
 							}),
 							cl(8, {	-- Mage
-								un(2, i(100206)),	-- Grievous Gladiator's Silk Cord
-								un(2, i(100212)),	-- Grievous Gladiator's Silk Treads
-								un(2, i(100329)),	-- Grievous Gladiator's Silk Handguards
-								un(2, i(100331)),	-- Grievous Gladiator's Silk Cowl
-								un(2, i(100333)),	-- Grievous Gladiator's Silk Trousers
-								un(2, i(100335)),	-- Grievous Gladiator's Silk Robe
-								un(2, i(100337)),	-- Grievous Gladiator's Silk Amice
+								un(REMOVED_FROM_GAME, i(100206)),	-- Grievous Gladiator's Silk Cord
+								un(REMOVED_FROM_GAME, i(100212)),	-- Grievous Gladiator's Silk Treads
+								un(REMOVED_FROM_GAME, i(100329)),	-- Grievous Gladiator's Silk Handguards
+								un(REMOVED_FROM_GAME, i(100331)),	-- Grievous Gladiator's Silk Cowl
+								un(REMOVED_FROM_GAME, i(100333)),	-- Grievous Gladiator's Silk Trousers
+								un(REMOVED_FROM_GAME, i(100335)),	-- Grievous Gladiator's Silk Robe
+								un(REMOVED_FROM_GAME, i(100337)),	-- Grievous Gladiator's Silk Amice
 							}),
 							cl(10, {	-- Monk
-								un(2, i(100339)),	-- Grievous Gladiator's Ironskin Waistband
-								un(2, i(100341)),	-- Grievous Gladiator's Ironskin Boots
-								un(2, i(100344)),	-- Grievous Gladiator's Ironskin Gloves
-								un(2, i(100346)),	-- Grievous Gladiator's Ironskin Helm
-								un(2, i(100348)),	-- Grievous Gladiator's Ironskin Legguards
-								un(2, i(100350)),	-- Grievous Gladiator's Ironskin Spaulders
-								un(2, i(100352)),	-- Grievous Gladiator's Ironskin Tunic
-								un(2, i(102139)),	-- Grievous Gladiator's Copperskin Waistband
-								un(2, i(102138)),	-- Grievous Gladiator's Copperskin Boots
-								un(2, i(100354)),	-- Grievous Gladiator's Copperskin Gloves
-								un(2, i(100356)),	-- Grievous Gladiator's Copperskin Helm
-								un(2, i(100358)),	-- Grievous Gladiator's Copperskin Legguards
-								un(2, i(100360)),	-- Grievous Gladiator's Copperskin Spaulders
-								un(2, i(100362)),	-- Grievous Gladiator's Copperskin Tunic	
+								un(REMOVED_FROM_GAME, i(100339)),	-- Grievous Gladiator's Ironskin Waistband
+								un(REMOVED_FROM_GAME, i(100341)),	-- Grievous Gladiator's Ironskin Boots
+								un(REMOVED_FROM_GAME, i(100344)),	-- Grievous Gladiator's Ironskin Gloves
+								un(REMOVED_FROM_GAME, i(100346)),	-- Grievous Gladiator's Ironskin Helm
+								un(REMOVED_FROM_GAME, i(100348)),	-- Grievous Gladiator's Ironskin Legguards
+								un(REMOVED_FROM_GAME, i(100350)),	-- Grievous Gladiator's Ironskin Spaulders
+								un(REMOVED_FROM_GAME, i(100352)),	-- Grievous Gladiator's Ironskin Tunic
+								un(REMOVED_FROM_GAME, i(102139)),	-- Grievous Gladiator's Copperskin Waistband
+								un(REMOVED_FROM_GAME, i(102138)),	-- Grievous Gladiator's Copperskin Boots
+								un(REMOVED_FROM_GAME, i(100354)),	-- Grievous Gladiator's Copperskin Gloves
+								un(REMOVED_FROM_GAME, i(100356)),	-- Grievous Gladiator's Copperskin Helm
+								un(REMOVED_FROM_GAME, i(100358)),	-- Grievous Gladiator's Copperskin Legguards
+								un(REMOVED_FROM_GAME, i(100360)),	-- Grievous Gladiator's Copperskin Spaulders
+								un(REMOVED_FROM_GAME, i(100362)),	-- Grievous Gladiator's Copperskin Tunic	
 							}),
 							cl(2, {	-- Paladin
-								un(2, i(100374)),	-- Grievous Gladiator's Scaled Clasp
-								un(2, i(100380)),	-- Grievous Gladiator's Scaled Greaves
-								un(2, i(100364)),	-- Grievous Gladiator's Scaled Chestpiece
-								un(2, i(100366)),	-- Grievous Gladiator's Scaled Gauntlets
-								un(2, i(100368)),	-- Grievous Gladiator's Scaled Helm
-								un(2, i(100370)),	-- Grievous Gladiator's Scaled Legguards
-								un(2, i(100372)),	-- Grievous Gladiator's Scaled Shoulders
-								un(2, i(100376)),	-- Grievous Gladiator's Ornamented Clasp
-								un(2, i(100378)),	-- Grievous Gladiator's Ornamented Greaves
-								un(2, i(100384)),	-- Grievous Gladiator's Ornamented Chestguard
-								un(2, i(100386)),	-- Grievous Gladiator's Ornamented Gloves
-								un(2, i(100388)),	-- Grievous Gladiator's Ornamented Headcover
-								un(2, i(100390)),	-- Grievous Gladiator's Ornamented Legplates
-								un(2, i(100392)),	-- Grievous Gladiator's Ornamented Spaulders
+								un(REMOVED_FROM_GAME, i(100374)),	-- Grievous Gladiator's Scaled Clasp
+								un(REMOVED_FROM_GAME, i(100380)),	-- Grievous Gladiator's Scaled Greaves
+								un(REMOVED_FROM_GAME, i(100364)),	-- Grievous Gladiator's Scaled Chestpiece
+								un(REMOVED_FROM_GAME, i(100366)),	-- Grievous Gladiator's Scaled Gauntlets
+								un(REMOVED_FROM_GAME, i(100368)),	-- Grievous Gladiator's Scaled Helm
+								un(REMOVED_FROM_GAME, i(100370)),	-- Grievous Gladiator's Scaled Legguards
+								un(REMOVED_FROM_GAME, i(100372)),	-- Grievous Gladiator's Scaled Shoulders
+								un(REMOVED_FROM_GAME, i(100376)),	-- Grievous Gladiator's Ornamented Clasp
+								un(REMOVED_FROM_GAME, i(100378)),	-- Grievous Gladiator's Ornamented Greaves
+								un(REMOVED_FROM_GAME, i(100384)),	-- Grievous Gladiator's Ornamented Chestguard
+								un(REMOVED_FROM_GAME, i(100386)),	-- Grievous Gladiator's Ornamented Gloves
+								un(REMOVED_FROM_GAME, i(100388)),	-- Grievous Gladiator's Ornamented Headcover
+								un(REMOVED_FROM_GAME, i(100390)),	-- Grievous Gladiator's Ornamented Legplates
+								un(REMOVED_FROM_GAME, i(100392)),	-- Grievous Gladiator's Ornamented Spaulders
 							}),
 							cl(5, {	-- Priest
-								un(2, i(102141)),	-- Grievous Gladiator's Satin Cord
-								un(2, i(102140)),	-- Grievous Gladiator's Satin Treads
-								un(2, i(100416)),	-- Grievous Gladiator's Satin Gloves
-								un(2, i(100418)),	-- Grievous Gladiator's Satin Hood
-								un(2, i(100420)),	-- Grievous Gladiator's Satin Leggings
-								un(2, i(100422)),	-- Grievous Gladiator's Satin Robe
-								un(2, i(100424)),	-- Grievous Gladiator's Satin Mantle
-								un(2, i(100210)),	-- Grievous Gladiator's Mooncloth Cord
-								un(2, i(100216)),	-- Grievous Gladiator's Mooncloth Treads
-								un(2, i(100406)),	-- Grievous Gladiator's Mooncloth Gloves
-								un(2, i(100408)),	-- Grievous Gladiator's Mooncloth Helm
-								un(2, i(100410)),	-- Grievous Gladiator's Mooncloth Leggings
-								un(2, i(100412)),	-- Grievous Gladiator's Mooncloth Robe
-								un(2, i(100414)),	-- Grievous Gladiator's Mooncloth Mantle
+								un(REMOVED_FROM_GAME, i(102141)),	-- Grievous Gladiator's Satin Cord
+								un(REMOVED_FROM_GAME, i(102140)),	-- Grievous Gladiator's Satin Treads
+								un(REMOVED_FROM_GAME, i(100416)),	-- Grievous Gladiator's Satin Gloves
+								un(REMOVED_FROM_GAME, i(100418)),	-- Grievous Gladiator's Satin Hood
+								un(REMOVED_FROM_GAME, i(100420)),	-- Grievous Gladiator's Satin Leggings
+								un(REMOVED_FROM_GAME, i(100422)),	-- Grievous Gladiator's Satin Robe
+								un(REMOVED_FROM_GAME, i(100424)),	-- Grievous Gladiator's Satin Mantle
+								un(REMOVED_FROM_GAME, i(100210)),	-- Grievous Gladiator's Mooncloth Cord
+								un(REMOVED_FROM_GAME, i(100216)),	-- Grievous Gladiator's Mooncloth Treads
+								un(REMOVED_FROM_GAME, i(100406)),	-- Grievous Gladiator's Mooncloth Gloves
+								un(REMOVED_FROM_GAME, i(100408)),	-- Grievous Gladiator's Mooncloth Helm
+								un(REMOVED_FROM_GAME, i(100410)),	-- Grievous Gladiator's Mooncloth Leggings
+								un(REMOVED_FROM_GAME, i(100412)),	-- Grievous Gladiator's Mooncloth Robe
+								un(REMOVED_FROM_GAME, i(100414)),	-- Grievous Gladiator's Mooncloth Mantle
 							}),
 							cl(4, {	-- Rogue
-								un(2, i(100426)),	-- Grievous Gladiator's Leather Waistband
-								un(2, i(100428)),	-- Grievous Gladiator's Leather Boots
-								un(2, i(100431)),	-- Grievous Gladiator's Leather Tunic
-								un(2, i(100433)),	-- Grievous Gladiator's Leather Gloves
-								un(2, i(100435)),	-- Grievous Gladiator's Leather Helm
-								un(2, i(100437)),	-- Grievous Gladiator's Leather Legguards
-								un(2, i(100439)),	-- Grievous Gladiator's Leather Spaulders
+								un(REMOVED_FROM_GAME, i(100426)),	-- Grievous Gladiator's Leather Waistband
+								un(REMOVED_FROM_GAME, i(100428)),	-- Grievous Gladiator's Leather Boots
+								un(REMOVED_FROM_GAME, i(100431)),	-- Grievous Gladiator's Leather Tunic
+								un(REMOVED_FROM_GAME, i(100433)),	-- Grievous Gladiator's Leather Gloves
+								un(REMOVED_FROM_GAME, i(100435)),	-- Grievous Gladiator's Leather Helm
+								un(REMOVED_FROM_GAME, i(100437)),	-- Grievous Gladiator's Leather Legguards
+								un(REMOVED_FROM_GAME, i(100439)),	-- Grievous Gladiator's Leather Spaulders
 							}),
 							cl(7, {	-- Shaman
-								un(2, i(100441)),	-- Grievous Gladiator's Ringmail Waistguard
-								un(2, i(100443)),	-- Grievous Gladiator's Ringmail Footguards
-								un(2, i(100449)),	-- Grievous Gladiator's Ringmail Armor
-								un(2, i(100451)),	-- Grievous Gladiator's Ringmail Gauntlets
-								un(2, i(100453)),	-- Grievous Gladiator's Ringmail Helm
-								un(2, i(100455)),	-- Grievous Gladiator's Ringmail Leggings
-								un(2, i(100457)),	-- Grievous Gladiator's Ringmail Spaulders
-								un(2, i(100445)),	-- Grievous Gladiator's Mail Footguards
-								un(2, i(100469)),	-- Grievous Gladiator's Mail Waistguard
-								un(2, i(100471)),	-- Grievous Gladiator's Mail Armor
-								un(2, i(100473)),	-- Grievous Gladiator's Mail Gauntlets
-								un(2, i(100475)),	-- Grievous Gladiator's Mail Helm
-								un(2, i(100477)),	-- Grievous Gladiator's Mail Leggings
-								un(2, i(100479)),	-- Grievous Gladiator's Mail Spaulders
-								un(2, i(100311)),	-- Grievous Gladiator's Linked Waistband
-								un(2, i(100315)),	-- Grievous Gladiator's Linked Sabatons
-								un(2, i(100459)),	-- Grievous Gladiator's Linked Armor
-								un(2, i(100461)),	-- Grievous Gladiator's Linked Gauntlets
-								un(2, i(100463)),	-- Grievous Gladiator's Linked Helm
-								un(2, i(100465)),	-- Grievous Gladiator's Linked Leggings
-								un(2, i(100467)),	-- Grievous Gladiator's Linked Spaulders
+								un(REMOVED_FROM_GAME, i(100441)),	-- Grievous Gladiator's Ringmail Waistguard
+								un(REMOVED_FROM_GAME, i(100443)),	-- Grievous Gladiator's Ringmail Footguards
+								un(REMOVED_FROM_GAME, i(100449)),	-- Grievous Gladiator's Ringmail Armor
+								un(REMOVED_FROM_GAME, i(100451)),	-- Grievous Gladiator's Ringmail Gauntlets
+								un(REMOVED_FROM_GAME, i(100453)),	-- Grievous Gladiator's Ringmail Helm
+								un(REMOVED_FROM_GAME, i(100455)),	-- Grievous Gladiator's Ringmail Leggings
+								un(REMOVED_FROM_GAME, i(100457)),	-- Grievous Gladiator's Ringmail Spaulders
+								un(REMOVED_FROM_GAME, i(100445)),	-- Grievous Gladiator's Mail Footguards
+								un(REMOVED_FROM_GAME, i(100469)),	-- Grievous Gladiator's Mail Waistguard
+								un(REMOVED_FROM_GAME, i(100471)),	-- Grievous Gladiator's Mail Armor
+								un(REMOVED_FROM_GAME, i(100473)),	-- Grievous Gladiator's Mail Gauntlets
+								un(REMOVED_FROM_GAME, i(100475)),	-- Grievous Gladiator's Mail Helm
+								un(REMOVED_FROM_GAME, i(100477)),	-- Grievous Gladiator's Mail Leggings
+								un(REMOVED_FROM_GAME, i(100479)),	-- Grievous Gladiator's Mail Spaulders
+								un(REMOVED_FROM_GAME, i(100311)),	-- Grievous Gladiator's Linked Waistband
+								un(REMOVED_FROM_GAME, i(100315)),	-- Grievous Gladiator's Linked Sabatons
+								un(REMOVED_FROM_GAME, i(100459)),	-- Grievous Gladiator's Linked Armor
+								un(REMOVED_FROM_GAME, i(100461)),	-- Grievous Gladiator's Linked Gauntlets
+								un(REMOVED_FROM_GAME, i(100463)),	-- Grievous Gladiator's Linked Helm
+								un(REMOVED_FROM_GAME, i(100465)),	-- Grievous Gladiator's Linked Leggings
+								un(REMOVED_FROM_GAME, i(100467)),	-- Grievous Gladiator's Linked Spaulders
 							}),
 							cl(9, {	-- Warlock
-								un(2, i(100208)),	-- Grievous Gladiator's Felweave Cord
-								un(2, i(100214)),	-- Grievous Gladiator's Felweave Treads
-								un(2, i(100511)),	-- Grievous Gladiator's Felweave Handguards
-								un(2, i(100513)),	-- Grievous Gladiator's Felweave Cowl
-								un(2, i(100515)),	-- Grievous Gladiator's Felweave Trousers
-								un(2, i(100517)),	-- Grievous Gladiator's Felweave Raiment
-								un(2, i(100519)),	-- Grievous Gladiator's Felweave Amice
+								un(REMOVED_FROM_GAME, i(100208)),	-- Grievous Gladiator's Felweave Cord
+								un(REMOVED_FROM_GAME, i(100214)),	-- Grievous Gladiator's Felweave Treads
+								un(REMOVED_FROM_GAME, i(100511)),	-- Grievous Gladiator's Felweave Handguards
+								un(REMOVED_FROM_GAME, i(100513)),	-- Grievous Gladiator's Felweave Cowl
+								un(REMOVED_FROM_GAME, i(100515)),	-- Grievous Gladiator's Felweave Trousers
+								un(REMOVED_FROM_GAME, i(100517)),	-- Grievous Gladiator's Felweave Raiment
+								un(REMOVED_FROM_GAME, i(100519)),	-- Grievous Gladiator's Felweave Amice
 							}),
 							cl(1, {	-- Warrior
-								un(2, i(100396)),	-- Grievous Gladiator's Plate Girdle
-								un(2, i(100398)),	-- Grievous Gladiator's Plate Warboots
-								un(2, i(100521)),	-- Grievous Gladiator's Plate Chestpiece
-								un(2, i(100523)),	-- Grievous Gladiator's Plate Gauntlets
-								un(2, i(100525)),	-- Grievous Gladiator's Plate Helm
-								un(2, i(100527)),	-- Grievous Gladiator's Plate Legguards
-								un(2, i(100529)),	-- Grievous Gladiator's Plate Shoulders
+								un(REMOVED_FROM_GAME, i(100396)),	-- Grievous Gladiator's Plate Girdle
+								un(REMOVED_FROM_GAME, i(100398)),	-- Grievous Gladiator's Plate Warboots
+								un(REMOVED_FROM_GAME, i(100521)),	-- Grievous Gladiator's Plate Chestpiece
+								un(REMOVED_FROM_GAME, i(100523)),	-- Grievous Gladiator's Plate Gauntlets
+								un(REMOVED_FROM_GAME, i(100525)),	-- Grievous Gladiator's Plate Helm
+								un(REMOVED_FROM_GAME, i(100527)),	-- Grievous Gladiator's Plate Legguards
+								un(REMOVED_FROM_GAME, i(100529)),	-- Grievous Gladiator's Plate Shoulders
 							}),
 							n(-322, {	-- Back
-								un(2, i(101698)), -- Grievous Gladiator's Greatcloak
+								un(REMOVED_FROM_GAME, i(101698)), -- Grievous Gladiator's Greatcloak
 							}),
 						}),
 					},
@@ -1039,36 +1039,36 @@ _.Zones =
 						i(103331),	-- Grievous Gladiator's Plate Legguards
 						i(103332),	-- Grievous Gladiator's Plate Shoulders
 						n(-384, {	-- Neck
-							un(2, i(100233)), -- Grievous Gladiator's Pendant of Meditation (Alliance)
-							un(2, i(100231)), -- Grievous Gladiator's Pendant of Cruelty (Alliance)
-							un(2, i(100232)), -- Grievous Gladiator's Pendant of Alacrity (Alliance)
-							un(2, i(100199)), -- Grievous Gladiator's Necklace of Prowess (Alliance)
-							un(2, i(100198)), -- Grievous Gladiator's Necklace of Proficiency (Alliance)
-							un(2, i(100503)), -- Grievous Gladiator's Choker of Proficiency (Alliance)
-							un(2, i(100504)), -- Grievous Gladiator's Choker of Accuracy (Alliance)
+							un(REMOVED_FROM_GAME, i(100233)), -- Grievous Gladiator's Pendant of Meditation (Alliance)
+							un(REMOVED_FROM_GAME, i(100231)), -- Grievous Gladiator's Pendant of Cruelty (Alliance)
+							un(REMOVED_FROM_GAME, i(100232)), -- Grievous Gladiator's Pendant of Alacrity (Alliance)
+							un(REMOVED_FROM_GAME, i(100199)), -- Grievous Gladiator's Necklace of Prowess (Alliance)
+							un(REMOVED_FROM_GAME, i(100198)), -- Grievous Gladiator's Necklace of Proficiency (Alliance)
+							un(REMOVED_FROM_GAME, i(100503)), -- Grievous Gladiator's Choker of Proficiency (Alliance)
+							un(REMOVED_FROM_GAME, i(100504)), -- Grievous Gladiator's Choker of Accuracy (Alliance)
 						}),
 						n(-385, {	-- Finger
-							un(2, i(100506)), -- Grievous Gladiator's Signet of Cruelty (Alliance)
-							un(2, i(100507)), -- Grievous Gladiator's Signet of Accuracy (Alliance)
-							un(2, i(100201)), -- Grievous Gladiator's Ring of Cruelty (Alliance)
-							un(2, i(100202)), -- Grievous Gladiator's Ring of Accuracy (Alliance)
-							un(2, i(100236)), -- Grievous Gladiator's Band of Meditation (Alliance)
-							un(2, i(100234)), -- Grievous Gladiator's Band of Cruelty (Alliance)
-							un(2, i(100235)), -- Grievous Gladiator's Band of Accuracy (Alliance)
+							un(REMOVED_FROM_GAME, i(100506)), -- Grievous Gladiator's Signet of Cruelty (Alliance)
+							un(REMOVED_FROM_GAME, i(100507)), -- Grievous Gladiator's Signet of Accuracy (Alliance)
+							un(REMOVED_FROM_GAME, i(100201)), -- Grievous Gladiator's Ring of Cruelty (Alliance)
+							un(REMOVED_FROM_GAME, i(100202)), -- Grievous Gladiator's Ring of Accuracy (Alliance)
+							un(REMOVED_FROM_GAME, i(100236)), -- Grievous Gladiator's Band of Meditation (Alliance)
+							un(REMOVED_FROM_GAME, i(100234)), -- Grievous Gladiator's Band of Cruelty (Alliance)
+							un(REMOVED_FROM_GAME, i(100235)), -- Grievous Gladiator's Band of Accuracy (Alliance)
 						}),
 						n(-386, {	-- Trinkets
-							un(2, i(100591)), -- Grievous Gladiator's Medallion of Tenacity (Alliance)
-							un(2, i(100618)), -- Grievous Gladiator's Medallion of Meditation (Alliance)
-							un(2, i(100616)), -- Grievous Gladiator's Medallion of Cruelty (Alliance)
-							un(2, i(100505)), -- Grievous Gladiator's Insignia of Victory (Alliance)
-							un(2, i(100491)), -- Grievous Gladiator's Insignia of Dominance (Alliance)
-							un(2, i(100200)), -- Grievous Gladiator's Insignia of Conquest (Alliance)
-							un(2, i(100306)), -- Grievous Gladiator's Emblem of Tenacity (Alliance)
-							un(2, i(100307)), -- Grievous Gladiator's Emblem of Meditation (Alliance)
-							un(2, i(100305)), -- Grievous Gladiator's Emblem of Cruelty (Alliance)
-							un(2, i(100500)), -- Grievous Gladiator's Badge of Victory (Alliance)
-							un(2, i(100490)), -- Grievous Gladiator's Badge of Dominance (Alliance)
-							un(2, i(100195)), -- Grievous Gladiator's Badge of Conquest (Alliance)
+							un(REMOVED_FROM_GAME, i(100591)), -- Grievous Gladiator's Medallion of Tenacity (Alliance)
+							un(REMOVED_FROM_GAME, i(100618)), -- Grievous Gladiator's Medallion of Meditation (Alliance)
+							un(REMOVED_FROM_GAME, i(100616)), -- Grievous Gladiator's Medallion of Cruelty (Alliance)
+							un(REMOVED_FROM_GAME, i(100505)), -- Grievous Gladiator's Insignia of Victory (Alliance)
+							un(REMOVED_FROM_GAME, i(100491)), -- Grievous Gladiator's Insignia of Dominance (Alliance)
+							un(REMOVED_FROM_GAME, i(100200)), -- Grievous Gladiator's Insignia of Conquest (Alliance)
+							un(REMOVED_FROM_GAME, i(100306)), -- Grievous Gladiator's Emblem of Tenacity (Alliance)
+							un(REMOVED_FROM_GAME, i(100307)), -- Grievous Gladiator's Emblem of Meditation (Alliance)
+							un(REMOVED_FROM_GAME, i(100305)), -- Grievous Gladiator's Emblem of Cruelty (Alliance)
+							un(REMOVED_FROM_GAME, i(100500)), -- Grievous Gladiator's Badge of Victory (Alliance)
+							un(REMOVED_FROM_GAME, i(100490)), -- Grievous Gladiator's Badge of Dominance (Alliance)
+							un(REMOVED_FROM_GAME, i(100195)), -- Grievous Gladiator's Badge of Conquest (Alliance)
 						}),
 					},
 				}),
@@ -1076,128 +1076,128 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						un(2, i(103635)),	-- Elite Prideful Gladiator's Greatcloak
-						un(2, i(103636)),	-- Elite Prideful Gladiator's Tabard
-						un(2, i(102984)),	-- Elite Prideful Gladiator's Decapitator
-						un(2, i(103032)),	-- Elite Prideful Gladiator's Energy Staff
-						un(2, i(103000)),	-- Elite Prideful Gladiator's Battle Staff
-						un(2, i(103021)),	-- Elite Prideful Gladiator's Staff
-						un(2, i(102987)),	-- Elite Prideful Gladiator's Cleaver
-						un(2, i(103119)),	-- Elite Prideful Gladiator's Hacker
-						un(2, i(102989)),	-- Elite Prideful Gladiator's Quick blade
-						un(2, i(103117)),	-- Elite Prideful Gladiator's Mageblade
-						un(2, i(103121)),	-- Elite Prideful Gladiator's Slicer
-						un(2, i(102997)),	-- Elite Prideful Gladiator's Endgame
-						un(2, i(103001)),	-- Elite Prideful Gladiator's Reprieve
-						un(2, i(102999)),	-- Elite Prideful Gladiator's Spellblade
-						un(2, i(103114)),	-- Elite Prideful Gladiator's Shanker
-						un(2, i(103029)),	-- Elite Prideful Gladiator's Rifle
-						un(2, i(103077)),	-- Elite Prideful Gladiator's Pike
-						un(2, i(103115)),	-- Elite Prideful Gladiator's Ripper
-						un(2, i(103116)),	-- Elite Prideful Gladiator's Render
-						un(2, i(102986)),	-- Elite Prideful Gladiator's Greatsword
-						un(2, i(102998)),	-- Elite Prideful Gladiator's barrier
-						un(2, i(103031)),	-- Elite Prideful Gladiator's redoubt
-						un(2, i(103122)),	-- Elite Prideful Gladiator's shield wall
-						un(2, i(102988)),	-- Elite Prideful Gladiator's pummeler
-						un(2, i(103030)),	-- Elite Prideful Gladiator's gravel
-						un(2, i(103120)),	-- Elite Prideful Gladiator's bonecracker
-						un(2, i(103002)),	-- Elite Prideful Gladiator's Touch of Defeat
-						un(2, i(103118)),	-- Elite Prideful Gladiator's baton of light
-						un(2, i(102990)),	-- Elite Prideful Gladiator's Longbow
-						un(2, i(102985)),	-- Elite Prideful Gladiator's Bonegrinder
-						un(2, i(103039)),	-- Elite Prideful Gladiator's Chain Helm
-						un(2, i(103041)),	-- Elite Prideful Gladiator's Chain Spaulders
-						un(2, i(103037)),	-- Elite Prideful Gladiator's Chain Armor
-					--	un(2, i(102984)),	-- Wrists?
-						un(2, i(103038)),	-- Elite Prideful Gladiator's Chain Gauntlets
-						un(2, i(103033)),	-- Elite Prideful Gladiator's Chain Links
-						un(2, i(103040)),	-- Elite Prideful Gladiator's Chain Leggings
-						un(2, i(103035)),	-- Elite Prideful Gladiator's Chain Sabatons
+						un(REMOVED_FROM_GAME, i(103635)),	-- Elite Prideful Gladiator's Greatcloak
+						un(REMOVED_FROM_GAME, i(103636)),	-- Elite Prideful Gladiator's Tabard
+						un(REMOVED_FROM_GAME, i(102984)),	-- Elite Prideful Gladiator's Decapitator
+						un(REMOVED_FROM_GAME, i(103032)),	-- Elite Prideful Gladiator's Energy Staff
+						un(REMOVED_FROM_GAME, i(103000)),	-- Elite Prideful Gladiator's Battle Staff
+						un(REMOVED_FROM_GAME, i(103021)),	-- Elite Prideful Gladiator's Staff
+						un(REMOVED_FROM_GAME, i(102987)),	-- Elite Prideful Gladiator's Cleaver
+						un(REMOVED_FROM_GAME, i(103119)),	-- Elite Prideful Gladiator's Hacker
+						un(REMOVED_FROM_GAME, i(102989)),	-- Elite Prideful Gladiator's Quick blade
+						un(REMOVED_FROM_GAME, i(103117)),	-- Elite Prideful Gladiator's Mageblade
+						un(REMOVED_FROM_GAME, i(103121)),	-- Elite Prideful Gladiator's Slicer
+						un(REMOVED_FROM_GAME, i(102997)),	-- Elite Prideful Gladiator's Endgame
+						un(REMOVED_FROM_GAME, i(103001)),	-- Elite Prideful Gladiator's Reprieve
+						un(REMOVED_FROM_GAME, i(102999)),	-- Elite Prideful Gladiator's Spellblade
+						un(REMOVED_FROM_GAME, i(103114)),	-- Elite Prideful Gladiator's Shanker
+						un(REMOVED_FROM_GAME, i(103029)),	-- Elite Prideful Gladiator's Rifle
+						un(REMOVED_FROM_GAME, i(103077)),	-- Elite Prideful Gladiator's Pike
+						un(REMOVED_FROM_GAME, i(103115)),	-- Elite Prideful Gladiator's Ripper
+						un(REMOVED_FROM_GAME, i(103116)),	-- Elite Prideful Gladiator's Render
+						un(REMOVED_FROM_GAME, i(102986)),	-- Elite Prideful Gladiator's Greatsword
+						un(REMOVED_FROM_GAME, i(102998)),	-- Elite Prideful Gladiator's barrier
+						un(REMOVED_FROM_GAME, i(103031)),	-- Elite Prideful Gladiator's redoubt
+						un(REMOVED_FROM_GAME, i(103122)),	-- Elite Prideful Gladiator's shield wall
+						un(REMOVED_FROM_GAME, i(102988)),	-- Elite Prideful Gladiator's pummeler
+						un(REMOVED_FROM_GAME, i(103030)),	-- Elite Prideful Gladiator's gravel
+						un(REMOVED_FROM_GAME, i(103120)),	-- Elite Prideful Gladiator's bonecracker
+						un(REMOVED_FROM_GAME, i(103002)),	-- Elite Prideful Gladiator's Touch of Defeat
+						un(REMOVED_FROM_GAME, i(103118)),	-- Elite Prideful Gladiator's baton of light
+						un(REMOVED_FROM_GAME, i(102990)),	-- Elite Prideful Gladiator's Longbow
+						un(REMOVED_FROM_GAME, i(102985)),	-- Elite Prideful Gladiator's Bonegrinder
+						un(REMOVED_FROM_GAME, i(103039)),	-- Elite Prideful Gladiator's Chain Helm
+						un(REMOVED_FROM_GAME, i(103041)),	-- Elite Prideful Gladiator's Chain Spaulders
+						un(REMOVED_FROM_GAME, i(103037)),	-- Elite Prideful Gladiator's Chain Armor
+					--	un(REMOVED_FROM_GAME, i(102984)),	-- Wrists?
+						un(REMOVED_FROM_GAME, i(103038)),	-- Elite Prideful Gladiator's Chain Gauntlets
+						un(REMOVED_FROM_GAME, i(103033)),	-- Elite Prideful Gladiator's Chain Links
+						un(REMOVED_FROM_GAME, i(103040)),	-- Elite Prideful Gladiator's Chain Leggings
+						un(REMOVED_FROM_GAME, i(103035)),	-- Elite Prideful Gladiator's Chain Sabatons
 						-- Shaman
-						un(2, i(103105)),	-- Elite Prideful Gladiator's Linked Helm
-						un(2, i(103107)),	-- Elite Prideful Gladiator's Linked Spaulders
-						un(2, i(103103)),	-- Elite Prideful Gladiator's Linked Armor
-					--	un(2, i(102984)),	-- Wrists?
-						un(2, i(103104)),	-- Elite Prideful Gladiator's Linked Gauntlets
-						un(2, i(103034)),	-- Elite Prideful Gladiator's Linked Waistband
-						un(2, i(103106)),	-- Elite Prideful Gladiator's Linked Leggings
-						un(2, i(103036)),	-- Elite Prideful Gladiator's Linked Sabatons
+						un(REMOVED_FROM_GAME, i(103105)),	-- Elite Prideful Gladiator's Linked Helm
+						un(REMOVED_FROM_GAME, i(103107)),	-- Elite Prideful Gladiator's Linked Spaulders
+						un(REMOVED_FROM_GAME, i(103103)),	-- Elite Prideful Gladiator's Linked Armor
+					--	un(REMOVED_FROM_GAME, i(102984)),	-- Wrists?
+						un(REMOVED_FROM_GAME, i(103104)),	-- Elite Prideful Gladiator's Linked Gauntlets
+						un(REMOVED_FROM_GAME, i(103034)),	-- Elite Prideful Gladiator's Linked Waistband
+						un(REMOVED_FROM_GAME, i(103106)),	-- Elite Prideful Gladiator's Linked Leggings
+						un(REMOVED_FROM_GAME, i(103036)),	-- Elite Prideful Gladiator's Linked Sabatons
 
-						un(2, i(103100)),	-- Elite Prideful Gladiator's Ringmail Helm
-						un(2, i(103102)),	-- Elite Prideful Gladiator's Ringmail Spaulders
-						un(2, i(103098)),	-- Elite Prideful Gladiator's Ringmail Armor
-					--	un(2, i(102984)),	-- Wrists?
-						un(2, i(103099)),	-- Elite Prideful Gladiator's Ringmail Gauntlets
-						un(2, i(103095)),	-- Elite Prideful Gladiator's Ringmail Waistband
-						un(2, i(103101)),	-- Elite Prideful Gladiator's Ringmail Leggings
-						un(2, i(103096)),	-- Elite Prideful Gladiator's Ringmail Footguards
+						un(REMOVED_FROM_GAME, i(103100)),	-- Elite Prideful Gladiator's Ringmail Helm
+						un(REMOVED_FROM_GAME, i(103102)),	-- Elite Prideful Gladiator's Ringmail Spaulders
+						un(REMOVED_FROM_GAME, i(103098)),	-- Elite Prideful Gladiator's Ringmail Armor
+					--	un(REMOVED_FROM_GAME, i(102984)),	-- Wrists?
+						un(REMOVED_FROM_GAME, i(103099)),	-- Elite Prideful Gladiator's Ringmail Gauntlets
+						un(REMOVED_FROM_GAME, i(103095)),	-- Elite Prideful Gladiator's Ringmail Waistband
+						un(REMOVED_FROM_GAME, i(103101)),	-- Elite Prideful Gladiator's Ringmail Leggings
+						un(REMOVED_FROM_GAME, i(103096)),	-- Elite Prideful Gladiator's Ringmail Footguards
 
-						un(2, i(103111)),	-- Elite Prideful Gladiator's Mail Helm
-						un(2, i(103113)),	-- Elite Prideful Gladiator's Mail Spaulders
-						un(2, i(103109)),	-- Elite Prideful Gladiator's Mail Armor
-					--	un(2, i(102984)),	-- Wrists?
-						un(2, i(103110)),	-- Elite Prideful Gladiator's Mail Gauntlets
-						un(2, i(103108)),	-- Elite Prideful Gladiator's Mail Waistguard
-						un(2, i(103112)),	-- Elite Prideful Gladiator's Mail Leggings
-						un(2, i(103097)),	-- Elite Prideful Gladiator's Mail Footguards
+						un(REMOVED_FROM_GAME, i(103111)),	-- Elite Prideful Gladiator's Mail Helm
+						un(REMOVED_FROM_GAME, i(103113)),	-- Elite Prideful Gladiator's Mail Spaulders
+						un(REMOVED_FROM_GAME, i(103109)),	-- Elite Prideful Gladiator's Mail Armor
+					--	un(REMOVED_FROM_GAME, i(102984)),	-- Wrists?
+						un(REMOVED_FROM_GAME, i(103110)),	-- Elite Prideful Gladiator's Mail Gauntlets
+						un(REMOVED_FROM_GAME, i(103108)),	-- Elite Prideful Gladiator's Mail Waistguard
+						un(REMOVED_FROM_GAME, i(103112)),	-- Elite Prideful Gladiator's Mail Leggings
+						un(REMOVED_FROM_GAME, i(103097)),	-- Elite Prideful Gladiator's Mail Footguards
 						--
-						un(2, i(103004)),	-- Elite Prideful Gladiator's dreadplate chestpiece
-						un(2, i(103005)),	-- Elite Prideful Gladiator's dreadplate gauntlets
-						un(2, i(103006)),	-- Elite Prideful Gladiator's dreadplate helm
-						un(2, i(103007)),	-- Elite Prideful Gladiator's dreadplate legguards
-						un(2, i(103008)),	-- Elite Prideful Gladiator's dreadplate shoulders
-						un(2, i(103059)),	-- Elite Prideful Gladiator's scaled chestpiece
-						un(2, i(103060)),	-- Elite Prideful Gladiator's scaled gauntlets
-						un(2, i(103061)),	-- Elite Prideful Gladiator's scaled helm
-						un(2, i(103062)),	-- Elite Prideful Gladiator's scaled legguards
-						un(2, i(103063)),	-- Elite Prideful Gladiator's scaled shoulders
-						un(2, i(103064)),	-- Elite Prideful Gladiator's scaled clasp
-						un(2, i(103065)),	-- Elite Prideful Gladiator's ornamented clasp
-						un(2, i(103066)),	-- Elite Prideful Gladiator's ornamented greaves
-						un(2, i(103067)),	-- Elite Prideful Gladiator's scaled greaves
-						un(2, i(103068)),	-- Elite Prideful Gladiator's ornamented chestguard
-						un(2, i(103069)),	-- Elite Prideful Gladiator's ornamented gloves
-						un(2, i(103070)),	-- Elite Prideful Gladiator's ornamentedheadcover
-						un(2, i(103071)),	-- Elite Prideful Gladiator's ornamented legplates
-						un(2, i(103072)),	-- Elite Prideful Gladiator's ornamented spaulders
-						un(2, i(103073)),	-- Elite Prideful Gladiator's dreadplate girdle
-						un(2, i(103074)),	-- Elite Prideful Gladiator's plate girdle
-						un(2, i(103075)),	-- Elite Prideful Gladiator's plate warboots
-						un(2, i(103076)),	-- Elite Prideful Gladiator's dreadplate warboots
-						un(2, i(103128)),	-- Elite Prideful Gladiator's plate chestpiece
-						un(2, i(103129)),	-- Elite Prideful Gladiator's plate gauntlets
-						un(2, i(103130)),	-- Elite Prideful Gladiator's plate helm
-						un(2, i(103131)),	-- Elite Prideful Gladiator's plate legguards
-						un(2, i(103132)),	-- Elite Prideful Gladiator's plate shoulders
-						un(2, i(102991)),	-- Elite Prideful Gladiator's silk cord
-						un(2, i(102992)),	-- Elite Prideful Gladiator's felweave cord
-						un(2, i(102993)),	-- Elite Prideful Gladiator's mooncloth cord
-						un(2, i(102994)),	-- Elite Prideful Gladiator's silk treads
-						un(2, i(102995)),	-- Elite Prideful Gladiator's felweave treads
-						un(2, i(102996)),	-- Elite Prideful Gladiator's mooncloth treads
-						un(2, i(103042)),	-- Elite Prideful Gladiator's silk handguards
-						un(2, i(103043)),	-- Elite Prideful Gladiator's silk cowl
-						un(2, i(103044)),	-- Elite Prideful Gladiator's silk trousers
-						un(2, i(103045)),	-- Elite Prideful Gladiator's silk robe
-						un(2, i(103046)),	-- Elite Prideful Gladiator's silk amice
-						un(2, i(103078)),	-- Elite Prideful Gladiator's mooncloth gloves
-						un(2, i(103079)),	-- Elite Prideful Gladiator's mooncloth helm
-						un(2, i(103080)),	-- Elite Prideful Gladiator's mooncloth leggings
-						un(2, i(103081)),	-- Elite Prideful Gladiator's mooncloth robe
-						un(2, i(103082)),	-- Elite Prideful Gladiator's mooncloth mantle
-						un(2, i(103083)),	-- Elite Prideful Gladiator's satin gloves
-						un(2, i(103084)),	-- Elite Prideful Gladiator's satin hood
-						un(2, i(103085)),	-- Elite Prideful Gladiator's satin leggings
-						un(2, i(103086)),	-- Elite Prideful Gladiator's satin robe
-						un(2, i(103087)),	-- Elite Prideful Gladiator's satin mantle
-						un(2, i(103123)),	-- Elite Prideful Gladiator's felweave handguards
-						un(2, i(103124)),	-- Elite Prideful Gladiator's felweave cowl
-						un(2, i(103125)),	-- Elite Prideful Gladiator's felweave trousers
-						un(2, i(103126)),	-- Elite Prideful Gladiator's felweave rainment
-						un(2, i(103127)),	-- Elite Prideful Gladiator's felweave amice
-						un(2, i(103135)),	-- Elite Prideful Gladiator's satin treads
-						un(2, i(103136)),	-- Elite Prideful Gladiator's satin cord
+						un(REMOVED_FROM_GAME, i(103004)),	-- Elite Prideful Gladiator's dreadplate chestpiece
+						un(REMOVED_FROM_GAME, i(103005)),	-- Elite Prideful Gladiator's dreadplate gauntlets
+						un(REMOVED_FROM_GAME, i(103006)),	-- Elite Prideful Gladiator's dreadplate helm
+						un(REMOVED_FROM_GAME, i(103007)),	-- Elite Prideful Gladiator's dreadplate legguards
+						un(REMOVED_FROM_GAME, i(103008)),	-- Elite Prideful Gladiator's dreadplate shoulders
+						un(REMOVED_FROM_GAME, i(103059)),	-- Elite Prideful Gladiator's scaled chestpiece
+						un(REMOVED_FROM_GAME, i(103060)),	-- Elite Prideful Gladiator's scaled gauntlets
+						un(REMOVED_FROM_GAME, i(103061)),	-- Elite Prideful Gladiator's scaled helm
+						un(REMOVED_FROM_GAME, i(103062)),	-- Elite Prideful Gladiator's scaled legguards
+						un(REMOVED_FROM_GAME, i(103063)),	-- Elite Prideful Gladiator's scaled shoulders
+						un(REMOVED_FROM_GAME, i(103064)),	-- Elite Prideful Gladiator's scaled clasp
+						un(REMOVED_FROM_GAME, i(103065)),	-- Elite Prideful Gladiator's ornamented clasp
+						un(REMOVED_FROM_GAME, i(103066)),	-- Elite Prideful Gladiator's ornamented greaves
+						un(REMOVED_FROM_GAME, i(103067)),	-- Elite Prideful Gladiator's scaled greaves
+						un(REMOVED_FROM_GAME, i(103068)),	-- Elite Prideful Gladiator's ornamented chestguard
+						un(REMOVED_FROM_GAME, i(103069)),	-- Elite Prideful Gladiator's ornamented gloves
+						un(REMOVED_FROM_GAME, i(103070)),	-- Elite Prideful Gladiator's ornamentedheadcover
+						un(REMOVED_FROM_GAME, i(103071)),	-- Elite Prideful Gladiator's ornamented legplates
+						un(REMOVED_FROM_GAME, i(103072)),	-- Elite Prideful Gladiator's ornamented spaulders
+						un(REMOVED_FROM_GAME, i(103073)),	-- Elite Prideful Gladiator's dreadplate girdle
+						un(REMOVED_FROM_GAME, i(103074)),	-- Elite Prideful Gladiator's plate girdle
+						un(REMOVED_FROM_GAME, i(103075)),	-- Elite Prideful Gladiator's plate warboots
+						un(REMOVED_FROM_GAME, i(103076)),	-- Elite Prideful Gladiator's dreadplate warboots
+						un(REMOVED_FROM_GAME, i(103128)),	-- Elite Prideful Gladiator's plate chestpiece
+						un(REMOVED_FROM_GAME, i(103129)),	-- Elite Prideful Gladiator's plate gauntlets
+						un(REMOVED_FROM_GAME, i(103130)),	-- Elite Prideful Gladiator's plate helm
+						un(REMOVED_FROM_GAME, i(103131)),	-- Elite Prideful Gladiator's plate legguards
+						un(REMOVED_FROM_GAME, i(103132)),	-- Elite Prideful Gladiator's plate shoulders
+						un(REMOVED_FROM_GAME, i(102991)),	-- Elite Prideful Gladiator's silk cord
+						un(REMOVED_FROM_GAME, i(102992)),	-- Elite Prideful Gladiator's felweave cord
+						un(REMOVED_FROM_GAME, i(102993)),	-- Elite Prideful Gladiator's mooncloth cord
+						un(REMOVED_FROM_GAME, i(102994)),	-- Elite Prideful Gladiator's silk treads
+						un(REMOVED_FROM_GAME, i(102995)),	-- Elite Prideful Gladiator's felweave treads
+						un(REMOVED_FROM_GAME, i(102996)),	-- Elite Prideful Gladiator's mooncloth treads
+						un(REMOVED_FROM_GAME, i(103042)),	-- Elite Prideful Gladiator's silk handguards
+						un(REMOVED_FROM_GAME, i(103043)),	-- Elite Prideful Gladiator's silk cowl
+						un(REMOVED_FROM_GAME, i(103044)),	-- Elite Prideful Gladiator's silk trousers
+						un(REMOVED_FROM_GAME, i(103045)),	-- Elite Prideful Gladiator's silk robe
+						un(REMOVED_FROM_GAME, i(103046)),	-- Elite Prideful Gladiator's silk amice
+						un(REMOVED_FROM_GAME, i(103078)),	-- Elite Prideful Gladiator's mooncloth gloves
+						un(REMOVED_FROM_GAME, i(103079)),	-- Elite Prideful Gladiator's mooncloth helm
+						un(REMOVED_FROM_GAME, i(103080)),	-- Elite Prideful Gladiator's mooncloth leggings
+						un(REMOVED_FROM_GAME, i(103081)),	-- Elite Prideful Gladiator's mooncloth robe
+						un(REMOVED_FROM_GAME, i(103082)),	-- Elite Prideful Gladiator's mooncloth mantle
+						un(REMOVED_FROM_GAME, i(103083)),	-- Elite Prideful Gladiator's satin gloves
+						un(REMOVED_FROM_GAME, i(103084)),	-- Elite Prideful Gladiator's satin hood
+						un(REMOVED_FROM_GAME, i(103085)),	-- Elite Prideful Gladiator's satin leggings
+						un(REMOVED_FROM_GAME, i(103086)),	-- Elite Prideful Gladiator's satin robe
+						un(REMOVED_FROM_GAME, i(103087)),	-- Elite Prideful Gladiator's satin mantle
+						un(REMOVED_FROM_GAME, i(103123)),	-- Elite Prideful Gladiator's felweave handguards
+						un(REMOVED_FROM_GAME, i(103124)),	-- Elite Prideful Gladiator's felweave cowl
+						un(REMOVED_FROM_GAME, i(103125)),	-- Elite Prideful Gladiator's felweave trousers
+						un(REMOVED_FROM_GAME, i(103126)),	-- Elite Prideful Gladiator's felweave rainment
+						un(REMOVED_FROM_GAME, i(103127)),	-- Elite Prideful Gladiator's felweave amice
+						un(REMOVED_FROM_GAME, i(103135)),	-- Elite Prideful Gladiator's satin treads
+						un(REMOVED_FROM_GAME, i(103136)),	-- Elite Prideful Gladiator's satin cord
 					},
 				}),
 				n(58706, {	-- Gina Mudclaw <Tillers Quartermaster>
@@ -1249,13 +1249,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
-						un(2, i(103148)),	-- Grievous Gladiator's Necklace of Proficiency (A)
-						un(2, i(103149)),	-- Grievous Gladiator's Necklace of Prowess (A)
-						un(2, i(103170)),	-- Grievous Gladiator's Pendant of Cruelty (A)
-						un(2, i(103171)),	-- Grievous Gladiator's Pendant of Alacrity (A)
-						un(2, i(103172)),	-- Grievous Gladiator's Pendant of Mediation (A)
-						un(2, i(103317)),	-- Grievous Gladiator's Choker of Proficiency (A)
-						un(2, i(103318)),	-- Grievous Gladiator's Choker of Accuracy
+						un(REMOVED_FROM_GAME, i(103148)),	-- Grievous Gladiator's Necklace of Proficiency (A)
+						un(REMOVED_FROM_GAME, i(103149)),	-- Grievous Gladiator's Necklace of Prowess (A)
+						un(REMOVED_FROM_GAME, i(103170)),	-- Grievous Gladiator's Pendant of Cruelty (A)
+						un(REMOVED_FROM_GAME, i(103171)),	-- Grievous Gladiator's Pendant of Alacrity (A)
+						un(REMOVED_FROM_GAME, i(103172)),	-- Grievous Gladiator's Pendant of Mediation (A)
+						un(REMOVED_FROM_GAME, i(103317)),	-- Grievous Gladiator's Choker of Proficiency (A)
+						un(REMOVED_FROM_GAME, i(103318)),	-- Grievous Gladiator's Choker of Accuracy
 					},
 				}),
 				n(75691, {	-- Hayden Christophen <Dreadful Gladiator>
@@ -1421,30 +1421,30 @@ _.Zones =
 				n(58716, {	-- Jian Ironpaw <Master of the Oven>
 					["coord"] = { 53.2, 51.6, 376 },
 					["g"] = {
-						un(1, i(87243)),	-- Recipe: Banquet of the Oven
+						un(NEVER_IMPLEMENTED, i(87243)),	-- Recipe: Banquet of the Oven
 						recipe(125600),		-- Banquet of the Oven
-						un(1, i(74677)),	-- Recipe: Chun Tian Spring Rolls
+						un(NEVER_IMPLEMENTED, i(74677)),	-- Recipe: Chun Tian Spring Rolls
 						recipe(104312),		-- Chun Tian Spring Rolls
-						un(1, i(87245)),	-- Recipe: Great Banquet of the Oven
+						un(NEVER_IMPLEMENTED, i(87245)),	-- Recipe: Great Banquet of the Oven
 						recipe(125601),		-- Great Banquet of the Oven
-						un(1, i(74676)),	-- Recipe: Twin Fish Platter
+						un(NEVER_IMPLEMENTED, i(74676)),	-- Recipe: Twin Fish Platter
 						recipe(104311),		-- Twin Fish Platter
-						un(1, i(74675)),	-- Recipe: Wildfowl Roast
+						un(NEVER_IMPLEMENTED, i(74675)),	-- Recipe: Wildfowl Roast
 						recipe(104310),		-- Wildfowl Roast
 					},
 				}),
 				n(58712, {	-- Kol Ironpaw <Master of the Grill>
 					["coord"] = { 53.0, 51.4, 376 },
 					["g"] = {
-						un(1, i(87227)),	-- Recipe: Banquet of the Grill
+						un(NEVER_IMPLEMENTED, i(87227)),	-- Recipe: Banquet of the Grill
 						recipe(125141),		-- Banquet of the Grill
-						un(1, i(74665)),	-- Recipe: Black Pepper Ribs and Shrimp
+						un(NEVER_IMPLEMENTED, i(74665)),	-- Recipe: Black Pepper Ribs and Shrimp
 						recipe(104300),		-- Black Pepper Ribs and Shrimp
-						un(1, i(74663)),	-- Recipe: Charbroiled Tiger Steak
+						un(NEVER_IMPLEMENTED, i(74663)),	-- Recipe: Charbroiled Tiger Steak
 						recipe(104298),		-- Charbroiled Tiger Steak
-						un(1, i(74664)),	-- Recipe: Eternal Blossom Fish
+						un(NEVER_IMPLEMENTED, i(74664)),	-- Recipe: Eternal Blossom Fish
 						recipe(104299),		-- Eternal Blossom Fish
-						un(1, i(87229)),	-- Recipe: Great Banquet of the Grill
+						un(NEVER_IMPLEMENTED, i(87229)),	-- Recipe: Great Banquet of the Grill
 						recipe(125142),		-- Great Banquet of the Grill
 					},
 				}),
@@ -1452,31 +1452,31 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 43,	-- Vendor no longer exists
 					["g"] = { -- Didn't add the Season 12 Gear here because it is linked to the Ensembles in the PvP file
-						un(2, i(84911)),	-- Malevolent Gladiator's Barrier
-						un(2, i(84787)),	-- Malevolent Gladiator's Battle Staff
-						un(2, i(84970)),	-- Malevolent Gladiator's Bonecracker
-						un(2, i(84785)),	-- Malevolent Gladiator's Bonegrinder
-						un(2, i(84965)),	-- Malevolent Gladiator's Cleaver
-						un(2, i(84791)),	-- Malevolent Gladiator's Decapitator
-						un(2, i(84866)),	-- Malevolent Gladiator's Endgame
-						un(2, i(84788)),	-- Malevolent Gladiator's Energy Staff
-						un(2, i(84971)),	-- Malevolent Gladiator's Gavel
-						un(2, i(84790)),	-- Malevolent Gladiator's Greatsword
-						un(2, i(84966)),	-- Malevolent Gladiator's Hacker
-						un(2, i(84896)),	-- Malevolent Gladiator's Longbow
-						un(2, i(84786)),	-- Malevolent Gladiator's Pike
-						un(2, i(84964)),	-- Malevolent Gladiator's Pummeler
-						un(2, i(84969)),	-- Malevolent Gladiator's Quickblade
-						un(2, i(84912)),	-- Malevolent Gladiator's Redoubt
-						un(2, i(84963)),	-- Malevolent Gladiator's Render
-						un(2, i(84867)),	-- Malevolent Gladiator's Reprieve
-						un(2, i(84900)),	-- Malevolent Gladiator's Rifle
-						un(2, i(84962)),	-- Malevolent Gladiator's Ripper
-						un(2, i(84967)),	-- Malevolent Gladiator's Shanker
-						un(2, i(84910)),	-- Malevolent Gladiator's Shield Wall
-						un(2, i(84968)),	-- Malevolent Gladiator's Slicer
-						un(2, i(84961)),	-- Malevolent Gladiator's Spellblade
-						un(2, i(84789)),	-- Malevolent Gladiator's Staff
+						un(REMOVED_FROM_GAME, i(84911)),	-- Malevolent Gladiator's Barrier
+						un(REMOVED_FROM_GAME, i(84787)),	-- Malevolent Gladiator's Battle Staff
+						un(REMOVED_FROM_GAME, i(84970)),	-- Malevolent Gladiator's Bonecracker
+						un(REMOVED_FROM_GAME, i(84785)),	-- Malevolent Gladiator's Bonegrinder
+						un(REMOVED_FROM_GAME, i(84965)),	-- Malevolent Gladiator's Cleaver
+						un(REMOVED_FROM_GAME, i(84791)),	-- Malevolent Gladiator's Decapitator
+						un(REMOVED_FROM_GAME, i(84866)),	-- Malevolent Gladiator's Endgame
+						un(REMOVED_FROM_GAME, i(84788)),	-- Malevolent Gladiator's Energy Staff
+						un(REMOVED_FROM_GAME, i(84971)),	-- Malevolent Gladiator's Gavel
+						un(REMOVED_FROM_GAME, i(84790)),	-- Malevolent Gladiator's Greatsword
+						un(REMOVED_FROM_GAME, i(84966)),	-- Malevolent Gladiator's Hacker
+						un(REMOVED_FROM_GAME, i(84896)),	-- Malevolent Gladiator's Longbow
+						un(REMOVED_FROM_GAME, i(84786)),	-- Malevolent Gladiator's Pike
+						un(REMOVED_FROM_GAME, i(84964)),	-- Malevolent Gladiator's Pummeler
+						un(REMOVED_FROM_GAME, i(84969)),	-- Malevolent Gladiator's Quickblade
+						un(REMOVED_FROM_GAME, i(84912)),	-- Malevolent Gladiator's Redoubt
+						un(REMOVED_FROM_GAME, i(84963)),	-- Malevolent Gladiator's Render
+						un(REMOVED_FROM_GAME, i(84867)),	-- Malevolent Gladiator's Reprieve
+						un(REMOVED_FROM_GAME, i(84900)),	-- Malevolent Gladiator's Rifle
+						un(REMOVED_FROM_GAME, i(84962)),	-- Malevolent Gladiator's Ripper
+						un(REMOVED_FROM_GAME, i(84967)),	-- Malevolent Gladiator's Shanker
+						un(REMOVED_FROM_GAME, i(84910)),	-- Malevolent Gladiator's Shield Wall
+						un(REMOVED_FROM_GAME, i(84968)),	-- Malevolent Gladiator's Slicer
+						un(REMOVED_FROM_GAME, i(84961)),	-- Malevolent Gladiator's Spellblade
+						un(REMOVED_FROM_GAME, i(84789)),	-- Malevolent Gladiator's Staff
 					},
 				}),
 				n(75689, {	-- Lucan Malory (Season 12: Malevolent Gladiator Vendor)
@@ -1492,15 +1492,15 @@ _.Zones =
 				n(58714, {	-- Mei Mei Ironpaw <Master of the Pot>
 					["coord"] = { 52.6, 51.6, 376 },
 					["g"] = {
-						un(1, i(87235)),	-- Recipe: Banquet of the Pot
+						un(NEVER_IMPLEMENTED, i(87235)),	-- Recipe: Banquet of the Pot
 						recipe(125596),		-- Banquet of the Pot
-						un(1, i(74670)),	-- Recipe: Braised Turtle
+						un(NEVER_IMPLEMENTED, i(74670)),	-- Recipe: Braised Turtle
 						recipe(104305),		-- Braised Turtle
-						un(1, i(87237)),	-- Recipe: Great Banquet of the Pot
+						un(NEVER_IMPLEMENTED, i(87237)),	-- Recipe: Great Banquet of the Pot
 						recipe(125597),		-- Great Banquet of the Pot
-						un(1, i(74671)),	-- Recipe: Mogu Fish Stew
+						un(NEVER_IMPLEMENTED, i(74671)),	-- Recipe: Mogu Fish Stew
 						recipe(104306),		-- Mogu Fish Stew
-						un(1, i(74669)),	-- Recipe: Swirling Mist Soup
+						un(NEVER_IMPLEMENTED, i(74669)),	-- Recipe: Swirling Mist Soup
 						recipe(104304),		-- Swirling Mist Soup
 					},
 				}),
@@ -1905,15 +1905,15 @@ _.Zones =
 				n(58715, {	-- Yan Ironpaw <Master of the Steamer>
 					["coord"] = { 52.6, 51.6, 376 },
 					["g"] = {
-						un(1, i(87239)),	-- Recipe: Banquet of the Steamer
+						un(NEVER_IMPLEMENTED, i(87239)),	-- Recipe: Banquet of the Steamer
 						recipe(125598),		-- Banquet of the Steamer
-						un(1, i(74673)),	-- Recipe: Fire Spirit Salmon
+						un(NEVER_IMPLEMENTED, i(74673)),	-- Recipe: Fire Spirit Salmon
 						recipe(104308),		-- Fire Spirit Salmon
-						un(1, i(87241)),	-- Recipe: Great Banquet of the Steamer
+						un(NEVER_IMPLEMENTED, i(87241)),	-- Recipe: Great Banquet of the Steamer
 						recipe(125599),		-- Great Banquet of the Steamer
-						un(1, i(74672)),	-- Recipe: Shrimp Dumplings
+						un(NEVER_IMPLEMENTED, i(74672)),	-- Recipe: Shrimp Dumplings
 						recipe(104307),		-- Shrimp Dumplings
-						un(1, i(74674)),	-- Recipe: Steamed Crab Surprise
+						un(NEVER_IMPLEMENTED, i(74674)),	-- Recipe: Steamed Crab Surprise
 						recipe(104309),		-- Steamed Crab Surprise
 					},
 				}),

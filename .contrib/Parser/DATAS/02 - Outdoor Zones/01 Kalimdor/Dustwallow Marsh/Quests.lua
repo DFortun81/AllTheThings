@@ -26,7 +26,7 @@ _.Zones =
 					["g"] = {
 						i(57843),	-- Baroque Shield
 						i(57844),	-- Crawling Wand
-						un(2, i(6801)),	-- Baroque Apron
+						un(REMOVED_FROM_GAME, i(6801)),	-- Baroque Apron
 					},
 				}),
 				q(27214, {	-- A Disturbing Development
@@ -66,7 +66,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(33272)),	-- Biting Axe
+						un(REMOVED_FROM_GAME, i(33272)),	-- Biting Axe
 						i(33268),	-- Bone Dirk NOTE: Item is still available from new version of quest
 						i(33264), 	-- Glowing Tourmaline Ring NOTE: Item is still available from new version of quest
 					},
@@ -76,7 +76,7 @@ _.Zones =
 					["provider"] = { "n", 4502 },	-- Tharg
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(9705)),	-- Tharg's Shoelace
+						un(REMOVED_FROM_GAME, i(9705)),	-- Tharg's Shoelace
 					},
 				}),
 				q(27419, {	-- Army of the Black Dragon
@@ -130,8 +130,8 @@ _.Zones =
 					["provider"] = { "n", 6546 },	-- Tabetha
 					["classes"] = { MAGE },
 					["g"] = {
-						un(2, i(7515)),	-- Celestial Orb
-						un(2, i(9517)),	-- Celestial Stave
+						un(REMOVED_FROM_GAME, i(7515)),	-- Celestial Orb
+						un(REMOVED_FROM_GAME, i(9517)),	-- Celestial Stave
 					},
 				}),
 				q(1173,  {	-- Challenge Overlord Mok'Morokk
@@ -139,8 +139,8 @@ _.Zones =
 					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(10704)),	-- Chillnail Splinter
-						un(2, i(10703)),	-- Fiendish Skiv
+						un(REMOVED_FROM_GAME, i(10704)),	-- Chillnail Splinter
+						un(REMOVED_FROM_GAME, i(10703)),	-- Fiendish Skiv
 					},
 				}),
 				q(27418, {	-- Challenge Overlord Mok'Morokk
@@ -161,7 +161,7 @@ _.Zones =
 					["provider"] = { "n", 23579 },	-- Brogg
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(33237)),	-- Brogg's Battle Harness
+						un(REMOVED_FROM_GAME, i(33237)),	-- Brogg's Battle Harness
 					},
 				}),
 				q(27411, {	-- Challenge to the Black Dragonflight
@@ -256,7 +256,7 @@ _.Zones =
 					["provider"] = { "n", 23600 },	-- Apprentice Morlann
 					["g"] = {
 						i(33240),	-- Grimtotem Earthbinder's Tunic
-						un(2, i(33262)),	-- Morlann's Seal
+						un(REMOVED_FROM_GAME, i(33262)),	-- Morlann's Seal
 						i(57827),	-- Morlann's Other Seal
 						i(33261),	-- Destroyer's Cloak
 						i(57831),	-- Direhorn Cinch
@@ -267,7 +267,7 @@ _.Zones =
 					["coord"] = { 46.0, 57.4, 70 },
 					["g"] = {
 						i(33240),	-- Grimtotem Earthbinder's Tunic
-						un(2, i(33262)),	-- Morlann's Seal
+						un(REMOVED_FROM_GAME, i(33262)),	-- Morlann's Seal
 						i(57827),	-- Morlann's Other Seal
 						i(33261),	-- Destroyer's Cloak
 						i(57831),	-- Direhorn Cinch
@@ -310,7 +310,7 @@ _.Zones =
 					["provider"] = { "n", 4456 },	-- Fiora Longears
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6719)),	-- Windborne Belt
+						un(REMOVED_FROM_GAME, i(6719)),	-- Windborne Belt
 					},
 				}),
 				q(27191, {	-- Hungry as an Ogre!
@@ -328,8 +328,8 @@ _.Zones =
 					["provider"] = { "n", 4501 },	-- Draz'Zilb
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(9703)),	-- Scorched Cape
-						un(2, i(9704)),	-- Rustler Gloves
+						un(REMOVED_FROM_GAME, i(9703)),	-- Scorched Cape
+						un(REMOVED_FROM_GAME, i(9704)),	-- Rustler Gloves
 					},
 				}),
 				q(27414, {	-- Identifying the Brood
@@ -412,9 +412,9 @@ _.Zones =
 					["provider"] = { "n", 6546 },	-- Tabetha
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(33230)),	-- Leggings of the Long Road
-						un(2, i(33243)),	-- Skirmisher's Cover
-						un(2, i(33251)),	-- Steel-banded Hauberk
+						un(REMOVED_FROM_GAME, i(33230)),	-- Leggings of the Long Road
+						un(REMOVED_FROM_GAME, i(33243)),	-- Skirmisher's Cover
+						un(REMOVED_FROM_GAME, i(33251)),	-- Steel-banded Hauberk
 					},
 				}),
 				q(27297, {	-- Justice Dispensed
@@ -460,9 +460,9 @@ _.Zones =
 					["provider"] = { "n", 6546 },	-- Tabetha
 					["classes"] = { MAGE },
 					["g"] = {
-						un(2, i(7514)),	-- Icefury Wand
-						un(2, i(11263)),	-- Nether Force Wand
-						un(2, i(7513)),	-- Ragefire Wand
+						un(REMOVED_FROM_GAME, i(7514)),	-- Icefury Wand
+						un(REMOVED_FROM_GAME, i(11263)),	-- Nether Force Wand
+						un(REMOVED_FROM_GAME, i(7513)),	-- Ragefire Wand
 					},
 				}),
 				q(1957, {	-- Mana Surges
@@ -493,7 +493,7 @@ _.Zones =
 					["provider"] = { "n", 4926 },	-- Krog
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(33272)),	-- Biting Axe
+						un(REMOVED_FROM_GAME, i(33272)),	-- Biting Axe
 						i(33268),	-- Bone Dirk NOTE: Item is still available from new version of quest
 						i(33264), 	-- Glowing Tourmaline Ring NOTE: Item is still available from new version of quest
 					},
@@ -563,9 +563,9 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(33230)),	-- Leggings of the Long Road
-						un(2, i(33243)),	-- Skirmisher's Cover
-						un(2, i(33251)),	-- Steel-banded Hauberk
+						un(REMOVED_FROM_GAME, i(33230)),	-- Leggings of the Long Road
+						un(REMOVED_FROM_GAME, i(33243)),	-- Skirmisher's Cover
+						un(REMOVED_FROM_GAME, i(33251)),	-- Steel-banded Hauberk
 					},
 				}),
 				q(27291, {	-- Peace at Last
@@ -673,8 +673,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(33250),	-- Archer's Wristguard NOTE: This is now available from Survey Alcaz Island or Twilight of the Dawn Runner
-						un(2, i(33269)),	-- Bejeweled Dagger
-						un(2, i(33252)),	-- Gleaming Scale Breastplate
+						un(REMOVED_FROM_GAME, i(33269)),	-- Bejeweled Dagger
+						un(REMOVED_FROM_GAME, i(33252)),	-- Gleaming Scale Breastplate
 					},
 				}),
 				q(11204, {	-- Return to Krog
@@ -684,7 +684,7 @@ _.Zones =
 					["g"] = {
 						i(33259),	-- Crimson Barbut NOTE: This item is now available from Recover the Cargo or the new version of Return to Krog
 						i(33267),	-- Fleshripper NOTE: This item is now available from Recover the Cargo or the new version of Return to Krog
-						un(2, i(33270)),	-- Mariner's Sword
+						un(REMOVED_FROM_GAME, i(33270)),	-- Mariner's Sword
 					},
 				}),
 				q(1953, {	-- Return to the Marsh
@@ -725,8 +725,8 @@ _.Zones =
 					["provider"] = { "n", 4047 },	-- Zor Lonetree
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(18585)),	-- Band of Allegiance
-						un(2, i(18586)),	-- Lonetree's Circle
+						un(REMOVED_FROM_GAME, i(18585)),	-- Band of Allegiance
+						un(REMOVED_FROM_GAME, i(18586)),	-- Lonetree's Circle
 					},
 				}),
 				q(27229, {	-- SMASH BROODQUEEN
@@ -822,9 +822,9 @@ _.Zones =
 					["provider"] = { "n", 23905 },	-- Major Mills
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(33228)),	-- Crimson Tunic
+						un(REMOVED_FROM_GAME, i(33228)),	-- Crimson Tunic
 						i(33247),	-- Swift Wind Spaulders (moved to new version of quest)
-						un(2, i(33253)),	-- Golden Helm
+						un(REMOVED_FROM_GAME, i(33253)),	-- Golden Helm
 					},
 				}),
 				q(27222, {	-- Take Down Tethyr!
@@ -938,8 +938,8 @@ _.Zones =
 					["provider"] = { "n", 4501 },	-- Draz'Zilb
 					["sourceQuest"] = 1171,	-- The Brood of Onyxia
 					["g"] = {
-						un(2, i(10700)),	-- Encarmine Boots
-						un(2, i(10701)),	-- Boots of Zua'tec
+						un(REMOVED_FROM_GAME, i(10700)),	-- Encarmine Boots
+						un(REMOVED_FROM_GAME, i(10701)),	-- Boots of Zua'tec
 					},
 				}),
 				q(27416, {	-- The Brood of Onyxia (#1)
@@ -982,8 +982,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(33249),	-- Boots of the Skirmisher NOTE: This is still available from the new verison of the quest
-						un(2, i(33232)),	-- Journeyman's Cowl
-						un(2, i(33274)),	-- Mercenary's Crossbow
+						un(REMOVED_FROM_GAME, i(33232)),	-- Journeyman's Cowl
+						un(REMOVED_FROM_GAME, i(33274)),	-- Mercenary's Crossbow
 					},
 				}),
 				q(27213, {	-- The End of the Deserters
@@ -1021,7 +1021,7 @@ _.Zones =
 					["sourceQuest"] = 27292,	-- Return to Krog
 				}),
 				q(27309, {	-- The Grimtotem Plot
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(11169, {	-- The Grimtotem Weapon
 					["u"] = 40,
@@ -1069,7 +1069,7 @@ _.Zones =
 					["provider"] = { "n", 4967 },	-- Archmage Tervosh
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6757)),	-- Jaina's Signet Ring
+						un(REMOVED_FROM_GAME, i(6757)),	-- Jaina's Signet Ring
 					},
 				}),
 				q(27246, {	-- The Orc Report
@@ -1154,8 +1154,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 6546 },	-- Tabetha
 					["g"] = {
-						un(2, i(9527)),	-- Spellshifter Rod
-						un(2, i(9531)),	-- Gemshale Pauldrons
+						un(REMOVED_FROM_GAME, i(9527)),	-- Spellshifter Rod
+						un(REMOVED_FROM_GAME, i(9531)),	-- Gemshale Pauldrons
 					},
 				}),
 				q(25479, {	-- To New Thalanaar
@@ -1192,8 +1192,8 @@ _.Zones =
 						i(33250),	-- Archer's Wristguard
 						i(57851),	-- Swamp Gas Gauntlets
 						i(131253),	-- Archer's Chain Bracer
-						un(2, i(33269)),	-- Bejeweled Dagger
-						un(2, i(33252)),	-- Gleaming Scale Breastplate
+						un(REMOVED_FROM_GAME, i(33269)),	-- Bejeweled Dagger
+						un(REMOVED_FROM_GAME, i(33252)),	-- Gleaming Scale Breastplate
 					},
 				}),
 				q(27243, { 	-- Unleash the Raptors

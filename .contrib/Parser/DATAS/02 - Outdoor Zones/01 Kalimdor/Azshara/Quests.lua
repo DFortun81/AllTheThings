@@ -27,8 +27,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 13278 },	-- Duke Hydraxis
 					["g"] = {
-						un(2, i(18399)),	-- Ocean's Breeze
-						un(2, i(18398)),	-- Tidal Loop
+						un(REMOVED_FROM_GAME, i(18399)),	-- Ocean's Breeze
+						un(REMOVED_FROM_GAME, i(18398)),	-- Tidal Loop
 					},
 				}),
 				q(5536,  {	-- A Land Filled with Hatred
@@ -198,8 +198,8 @@ _.Zones =
 					["lvl"] = 44,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(11120)),	-- Belgrom's Hammer
-						un(2, i(10709)),	-- Pyrestone Orb
+						un(REMOVED_FROM_GAME, i(11120)),	-- Belgrom's Hammer
+						un(REMOVED_FROM_GAME, i(10709)),	-- Pyrestone Orb
 					},
 				}),
 				q(24430, {	-- Blacken the Skies
@@ -774,8 +774,8 @@ _.Zones =
 					["provider"] = { "n", 8392 },	-- Pilot Xiggs Fuselighter
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(10707)),	-- Steelsmith Greaves
-						un(2, i(10708)),	-- Skullspell Orb
+						un(REMOVED_FROM_GAME, i(10707)),	-- Steelsmith Greaves
+						un(REMOVED_FROM_GAME, i(10708)),	-- Skullspell Orb
 					},
 				}),
 				q(3421,  {	-- Return Trip
@@ -1092,7 +1092,7 @@ _.Zones =
 					["sourceQuest"] = 14134,	-- The Captain's Logs
 				}),
 				q(14231, {	-- Useless quest record
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(14118, {	-- Venison for the Troops
 					["provider"] = { "n", 8576 },	-- Ag'tor Bloodfist

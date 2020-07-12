@@ -32,9 +32,9 @@ _.Zones =
 				q(24936, {	-- Body And Soul
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(34, i(52911)),	-- Yngwie's Vest
-						un(34, i(52957)),	-- Oomlot Staff
-						un(34, i(52935)),	-- Pygmy Cloak
+						un(REMOVED_FROM_GAME, i(52911)),	-- Yngwie's Vest
+						un(REMOVED_FROM_GAME, i(52957)),	-- Oomlot Staff
+						un(REMOVED_FROM_GAME, i(52935)),	-- Pygmy Cloak
 					},
 				}),
 				q(25099, {	-- Borrow Bastia
@@ -43,7 +43,7 @@ _.Zones =
 					["sourceQuests"] = { 25098 },	-- The Warchief Wants You
 				}),
 				q(25124, {	-- Brute Brutality
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 39199 },	-- Assistant Greely
 					["sourceQuests"] = { 25110 },	-- Kaja'Cola Gives you IDEAS!™
 				}),
@@ -123,7 +123,7 @@ _.Zones =
 					["sourceQuests"] = { 14239 },	-- Don't Go Into the Light!
 				}),
 				q(14474, {	-- Goblin Escape Pods (duplicate. NYI?)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(25207, {	-- Good-bye, Sweet Oil
 					["coord"] = { 51.4, 13.0, 174 },

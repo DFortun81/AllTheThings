@@ -36,7 +36,7 @@ _.Instances = { tier(7, {	-- Legion
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
 						i(139484, {	-- Cache of Nightmarish Treasures [Raid Finder]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(139480, {	-- Corrupted Egg Fragment [Raid Finder]
@@ -44,7 +44,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
+								un(REMOVED_FROM_GAME, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 							},
 						}),
 						i(140163, {	-- Tainted Moonglade Leaf [Raid Finder]
@@ -52,7 +52,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
+								un(REMOVED_FROM_GAME, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 							},
 						}),
 						i(140164, {	-- Vial of Swirling Shadow [Raid Finder]
@@ -60,7 +60,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
+								un(REMOVED_FROM_GAME, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 							},
 						}),
 					},
@@ -264,7 +264,7 @@ _.Instances = { tier(7, {	-- Legion
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
 						i(139486, {	-- Cache of Nightmarish Treasures [Normal]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(139481, {	-- Corrupted Egg Fragment [Normal]
@@ -272,7 +272,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
+								un(REMOVED_FROM_GAME, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 							},
 						}),
 						i(140165, {	-- Tainted Moonglade Leaf [Normal]
@@ -280,7 +280,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
+								un(REMOVED_FROM_GAME, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 							},
 						}),
 						i(140166, {	-- Vial of Swirling Shadow [Normal]
@@ -288,7 +288,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
+								un(REMOVED_FROM_GAME, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 							},
 						}),
 						q(44283, {	-- The Emerald Nightmare: Piercing the Veil (Normal)
@@ -506,7 +506,7 @@ _.Instances = { tier(7, {	-- Legion
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
 						i(139487, {	-- Cache of Nightmarish Treasures [Heroic]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(139482, {	-- Corrupted Egg Fragment [Heroic]
@@ -514,7 +514,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
+								un(REMOVED_FROM_GAME, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 							},
 						}),
 						i(140167, {	-- Tainted Moonglade Leaf [Heroic]
@@ -522,7 +522,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
+								un(REMOVED_FROM_GAME, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 							},
 						}),
 						i(140168, {	-- Vial of Swirling Shadow [Heroic]
@@ -530,7 +530,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
+								un(REMOVED_FROM_GAME, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 							},
 						}),
 						q(44284, {	-- The Emerald Nightmare: Piercing the Veil [Heroic]
@@ -716,7 +716,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(103769, e(1726, {	-- Xavius <Nightmare Lord>
 					ach(11194, {	-- Ahead of the Curve: Xavius
-						["u"] = 2,	-- Legacy Achievement
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					ach(10755),	-- I Attack the Darkness
 					ach(10820),	-- Rift of Aln
@@ -749,7 +749,7 @@ _.Instances = { tier(7, {	-- Legion
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
 						i(139488, {	-- Cache of Nightmarish Treasures [Mythic]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 						i(139483, {	-- Corrupted Egg Fragment [Mythic]
@@ -757,7 +757,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
+								un(REMOVED_FROM_GAME, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 							},
 						}),
 						i(140169, {	-- Tainted Moonglade Leaf [Mythic]
@@ -765,7 +765,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
+								un(REMOVED_FROM_GAME, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 							},
 						}),
 						i(140170, {	-- Vial of Swirling Shadow [Mythic]
@@ -773,7 +773,7 @@ _.Instances = { tier(7, {	-- Legion
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
+								un(REMOVED_FROM_GAME, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 							},
 						}),
 						q(44285, {	-- The Emerald Nightmare: Piercing the Veil [Mythic]
@@ -962,13 +962,13 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(103769, e(1726, {	-- Xavius <Nightmare Lord>
 					ach(11194, {	-- Ahead of the Curve: Xavius
-						["u"] = 2,	-- Legacy Achievement
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					ach(11191, {	-- Cutting Edge: Xavius
-						["u"] = 2,	-- Legacy Achievement
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					ach(10854, {	-- Realm First! Xavius
-						["u"] = 2,	-- Legacy Achievement
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					ach(10755),	-- I Attack the Darkness
 					ach(10820),	-- Rift of Aln

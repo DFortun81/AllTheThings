@@ -35,7 +35,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56110, {	-- A Defender Emerges
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(50814, {	-- A Horrible Place
 					["sourceQuests"] = {
@@ -139,7 +139,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56112, {	-- A Royal Awakening
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(52795, {	-- A Saur Point
 					["sourceQuests"] = { 52793 },	-- Circle the Wagons (must be on quest)
@@ -158,7 +158,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50132, {	-- A Sticky Proposition
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(50797, {	-- A Turtle's Invitation
 					["sourceQuests"] = { 50753 },	-- Earl-E Bot Gets the Worm
@@ -368,7 +368,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51110, {	-- Clearing the Skies
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(51504, {	-- Cookie Delivery
 					["sourceQuests"] = { 51335 },	-- Cookies and Cream
@@ -433,7 +433,7 @@ _.Zones =
 					["coord"] = { 35.7, 31.2, 942 },
 				}),
 				q(56109, {	-- Defender of the Hive
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(53097, {	-- Despondent Ablutions
 					["sourceQuests"] = { 50386 },	-- Flush Them Out
@@ -445,7 +445,7 @@ _.Zones =
 					["lvl"] = 120,
 				}),
 				q(51066, {	-- Destroy Mine Carts
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(50070, {	-- Detective Mildenhall
 					["sourceQuests"] = { 50343 },	-- Mayhem at Mildenhall Meadery
@@ -454,7 +454,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50285, {	-- Don't Be Crabby
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(50064, {	-- Don't Go in the Basement
 					["sourceQuests"] = {
@@ -501,7 +501,7 @@ _.Zones =
 					},
 				}),
 				q(51756, {	-- Economic Downturn
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(50645, {	-- Eeling in a Big One
 					["sourceQuests"] = { 50635 },	-- The Shifting Tides
@@ -526,7 +526,7 @@ _.Zones =
 					},
 				}),
 				q(49732, {	-- Evacuate!
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(51540, {	-- Explosive Situation
 				--	SQ needs confirmation
@@ -588,7 +588,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51750, {	-- Field Promotions
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(50649, {	-- Filching from Thieves
 					["sourceQuests"] = { 50635 },	-- The Shifting Tides
@@ -758,7 +758,7 @@ _.Zones =
 				}),
 				q(51883, {	-- Grizz's Lunch
 					["provider"] = { "i", 160897 },	-- Grizz's Lunchbox
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(51492, {	-- Gunpowder Plot
 					["provider"] = { "n", 136574 },	-- Charles Davenport
@@ -826,7 +826,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50060, {	-- Honey, Slimes!
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(49703, {	-- House Stormsong
 					["sourceQuests"] = { 49725 },	-- A Risky Ploy
@@ -869,7 +869,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51557, {	-- Irontide Warning
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(50803, {	-- I Want It All Now
 					["sourceQuests"] = { 50793 },	-- Cave Commotion
@@ -921,7 +921,7 @@ _.Zones =
 					["lvl"] = 120,
 				}),
 				q(50383, {	-- Mankrik's Wrath
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(50343, {	-- Mayhem at Mildenhall Meadery
 					["sourceQuests"] = { 51582 },	-- Make it Mildenhall
@@ -956,7 +956,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51202, {	-- Millstone Hamlet Quest Template
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(53105, {	-- Misplaced Faith
 					["sourceQuests"] = { 50388 },	-- The Weight of My Ambition
@@ -1004,10 +1004,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56107, {	-- One of the Hive
-					["u"] = 1,	-- Never Available — placeholder replaced with tracking quest
+					["u"] = NEVER_IMPLEMENTED, -- placeholder replaced with tracking quest
 				}),
 				q(50815, {	-- Orcs Versus Humans
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(50679, {	-- Piercing the Shield
 					["sourceQuests"] = {
@@ -1026,10 +1026,10 @@ _.Zones =
 					},
 				}),
 				q(50907, {	-- Poor Souls
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(51724, {	-- Powered Up
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(50698, {	-- Problem Solving with Gunpowder
 					["sourceQuests"] = {
@@ -1095,7 +1095,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49742, {	-- Respect Your Elders
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(51221, {	-- Response Required
 					["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
@@ -1114,7 +1114,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50816, {	-- Roarke's Missing
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(50168, {	-- Royal Succession
 					["sourceQuests"] = { 50161 },	-- Recovering Raimond
@@ -1157,7 +1157,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51334, {	-- Securing The Square
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(51140, {	-- Share the Wealth
 					["sourceQuests"] = { 50697 },	-- Bomb Beats Rock
@@ -1166,7 +1166,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49743, {	-- Shoot First, Questions Later
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(50825, {	-- Shrine of the Storm: Whispers Below
 					["sourceQuests"] = { 50824 },	-- Storm's End
@@ -1361,7 +1361,7 @@ _.Zones =
 					},
 				}),
 				q(50743, {	-- The Immediate Problem
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(51881, {	-- The Mine Sweeper
 				--	unknown SQ.  picked up after picking up "having a blast"
@@ -1425,7 +1425,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56111, {	-- The Usurper
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(50388, {	-- The Weight of My Ambition
 					["sourceQuests"] = { 50387 },	-- Trinkets and Baubles
@@ -1507,7 +1507,7 @@ _.Zones =
 				}),
 				q(50690, {	-- UNUSED
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(49998, {	-- Voices Below
 					["sourceQuests"] = { 49997 },	-- Storm's Judgment
@@ -1555,7 +1555,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51708, {	-- Warfang Hold Quest Template
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(50363, {	-- War Pigs
 					["sourceQuests"] = {

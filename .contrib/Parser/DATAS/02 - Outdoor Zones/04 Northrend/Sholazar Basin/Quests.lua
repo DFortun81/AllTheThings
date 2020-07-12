@@ -57,7 +57,7 @@ _.Zones =
 					["sourceQuest"] = 12523,	-- Have a Part, Give a Part
 				}),
 				q(13052, {	-- Aerial Surveillance (NYI - duplicate)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(12699, {	-- An Embarrassing Incident
 					["coord"] = { 49.9, 61.5, 119 },
@@ -289,7 +289,7 @@ _.Zones =
 					},
 				}),
 				q(13053, {	-- Looking for Survivors (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(12571, {	-- Make the Bad Snake Go Away
 					["coord"] = { 54.5, 56.3, 119 },

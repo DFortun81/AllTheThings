@@ -917,7 +917,7 @@ _.Craftables =
 					i(8207),	-- Tough Scorpid Shoulders
 				}),
 				n(-323, {	-- Chest
-					un(1, i(15141)),	-- Onyxia Scale Breastplate (never made it out of Beta)
+					un(NEVER_IMPLEMENTED, i(15141)),	-- Onyxia Scale Breastplate (never made it out of Beta)
 					i(20479),	-- Spitfire Breastplate
 					i(20478),	-- Sandstalker Breastplate
 					un(8, i(20380, {	-- Dreamscale Breastplate
@@ -1062,7 +1062,7 @@ _.Craftables =
 			}),
 			n(-330, {	-- Feet
 				un(8, i(19684)),	-- Bloodvine Boots
-				un(1, i(7027)),		-- Boots of Darkness
+				un(NEVER_IMPLEMENTED, i(7027)),		-- Boots of Darkness
 				i(19056),	-- Argent Boots
 				i(10026),	-- Black Mageweave Boots
 				i(4325),	-- Boots of the Enchanter

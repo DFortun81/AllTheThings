@@ -44,9 +44,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(144087),	-- Bracers of Displaced Air
 					i(143989),	-- Barreldodger Boots
 					i(144119),	-- Empty Fruit Barrel
-					un(2, i(80892)),	-- Ook's Hozen Slicer (7.1 - Removed from Game!)
-					un(2, i(80896)),	-- Nimbletoe Chestguard (7.1 - Removed from Game!)
-					un(2, i(80897)),	-- Bracers of Displaced Air (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80892)),	-- Ook's Hozen Slicer (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80896)),	-- Nimbletoe Chestguard (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80897)),	-- Bracers of Displaced Air (7.1 - Removed from Game!)
 				})),
 				cr(56717, e(669, {	-- Hoptallus
 					i(144092),	-- Bottle of Potent Potables
@@ -54,9 +54,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(144088),	-- Bubble-Breaker Bracers
 					i(144120),	-- Belt of Brazen Inebriation
 					i(143975),	-- Hopping Mad Leggings
-					un(2, i(80893)),	-- Bottle of Potent Potables (7.1 - Removed from Game!)
-					un(2, i(80899)),	-- Bubble-Breaker Bracers (7.1 - Removed from Game!)
-					un(2, i(80898)),	-- Hopping Mad Leggings (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80893)),	-- Bottle of Potent Potables (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80899)),	-- Bubble-Breaker Bracers (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80898)),	-- Hopping Mad Leggings (7.1 - Removed from Game!)
 				})),
 				cr(59479, e(670, {	-- Yan-Zhu the Uncasked
 					ach(6457),	-- Stormstout Brewery
@@ -71,12 +71,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(144125),	-- Alemental Seal
 					i(144123),	-- Lime-Rimmed Signet
 					i(144122),	-- Carbonic Carbuncle
-					un(2, i(80894)),	-- Gao's Keg Tapper (7.1 - Removed from Game!)
-					un(2, i(80895)),	-- Yan-Zhu's Pressure Valve (7.1 - Removed from Game!)
-					un(2, i(80900)),	-- Fizzy Spaulders (7.1 - Removed from Game!)
-					un(2, i(80902)),	-- Uncasked Chestguard (7.1 - Removed from Game!)
-					un(2, i(80903)),	-- Fermenting Belt (7.1 - Removed from Game!)
-					un(2, i(80901)),	-- Sudsy Legplates (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80894)),	-- Gao's Keg Tapper (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80895)),	-- Yan-Zhu's Pressure Valve (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80900)),	-- Fizzy Spaulders (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80902)),	-- Uncasked Chestguard (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80903)),	-- Fermenting Belt (7.1 - Removed from Game!)
+					un(REMOVED_FROM_GAME, i(80901)),	-- Sudsy Legplates (7.1 - Removed from Game!)
 				})),
 			}),
 			d( 2, {	-- Heroic
@@ -94,10 +94,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144087),	-- Bracers of Displaced Air
 						i(143989),	-- Barreldodger Boots
 						i(144119),	-- Empty Fruit Barrel
-						un(2, i(81061)),	-- Ook's Hozen Slicer (7.1 - Removed from Game!)
-						un(2, i(81080)),	-- Nimbletoe Chestguard (7.1 - Removed from Game!)
-						un(2, i(81064)),	-- Bracers of Displaced Air (7.1 - Removed from Game!)
-						un(2, i(81134)),	-- Barreldodger Boots (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81061)),	-- Ook's Hozen Slicer (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81080)),	-- Nimbletoe Chestguard (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81064)),	-- Bracers of Displaced Air (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81134)),	-- Barreldodger Boots (7.1 - Removed from Game!)
 					})),
 					cr(56717, e(669, {	-- Hoptallus
 						i(144092),	-- Bottle of Potent Potables
@@ -105,11 +105,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144088),	-- Bubble-Breaker Bracers
 						i(144120),	-- Belt of Brazen Inebriation
 						i(143975),	-- Hopping Mad Leggings
-						un(2, i(81076)),	-- Bottle of Potent Potables (7.1 - Removed from Game!)
-						un(2, i(81136)),	-- Cloak of Hidden Flasks (7.1 - Removed from Game!)
-						un(2, i(81065)),	-- Bubble-Breaker Bracers (7.1 - Removed from Game!)
-						un(2, i(81135)),	-- Belt of Brazen Inebriation (7.1 - Removed from Game!)
-						un(2, i(81077)),	-- Hopping Mad Leggings (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81076)),	-- Bottle of Potent Potables (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81136)),	-- Cloak of Hidden Flasks (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81065)),	-- Bubble-Breaker Bracers (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81135)),	-- Belt of Brazen Inebriation (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81077)),	-- Hopping Mad Leggings (7.1 - Removed from Game!)
 					})),
 					cr(59479, e(670, {	-- Yan-Zhu the Uncasked
 						ach(6456),	-- Heroic: Stormstout Brewery
@@ -129,14 +129,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144125),	-- Alemental Seal
 						i(144123),	-- Lime-Rimmed Signet
 						i(144122),	-- Carbonic Carbuncle
-						un(2, i(81140)),	-- Wort Stirring Rod (7.1 - Removed from Game!)
-						un(2, i(81062)),	-- Gao's Keg Tapper (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81140)),	-- Wort Stirring Rod (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81062)),	-- Gao's Keg Tapper (7.1 - Removed from Game!)
 						i(87545),	-- Inelava, Spirit of Inebriation — this specific itemID dropped for a discord user on May 4th, 2020 (a screenshot was provided).  possible that both versions drop?
-						un(2, i(81066)),	-- Yan-Zhu's Pressure Valve (7.1 - Removed from Game!)
-						un(2, i(81068)),	-- Fizzy Spaulders (7.1 - Removed from Game!)
-						un(2, i(81081)),	-- Uncasked Chestguard (7.1 - Removed from Game!)
-						un(2, i(81059)),	-- Fermenting Belt (7.1 - Removed from Game!)
-						un(2, i(81078)),	-- Sudsy Legplates (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81066)),	-- Yan-Zhu's Pressure Valve (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81068)),	-- Fizzy Spaulders (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81081)),	-- Uncasked Chestguard (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81059)),	-- Fermenting Belt (7.1 - Removed from Game!)
+						un(REMOVED_FROM_GAME, i(81078)),	-- Sudsy Legplates (7.1 - Removed from Game!)
 					})),
 				},
 			}),

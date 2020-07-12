@@ -289,7 +289,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 347,	-- Rethban Ore
 						["g"] = {
-							un(2, i(6095)),	-- Wandering Boots
+							un(REMOVED_FROM_GAME, i(6095)),	-- Wandering Boots
 						},
 					}),
 					q(28819, {	-- The Rear is Clear

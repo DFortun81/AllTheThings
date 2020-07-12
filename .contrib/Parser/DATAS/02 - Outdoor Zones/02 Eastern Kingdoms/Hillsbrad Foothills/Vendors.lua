@@ -20,7 +20,7 @@ _.Zones =
 					["g"] = {
 						i(20971, {	-- Design: Heavy Iron Knuckles (Removed in Cata and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(6054, {	-- Recipe: Shadow Protection Potion
 							["isLimited"] = true,
@@ -104,11 +104,11 @@ _.Zones =
 						}),
 						i(20971, {	-- Design: Heavy Iron Knuckles (Removed in Cata and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge (Removed in Cata and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),

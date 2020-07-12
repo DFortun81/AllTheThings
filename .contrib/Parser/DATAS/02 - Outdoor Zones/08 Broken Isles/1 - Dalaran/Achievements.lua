@@ -234,10 +234,10 @@ _.Zones =
 				}),
 				ach(10585),		-- Fel-Smelter
 				ach(11139, {	-- Field Medic!
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						title(340, {	-- Field Medic!
-							["u"] = 39,	-- Legacy Title, removed in 8.0.1
+							["u"] = REMOVED_FROM_GAME,	-- removed in 8.0.1
 							["g"] = {
 								crit(1,  {	-- Bloody Letter
 									["itemID"] = 139534,		-- Bloody Letter

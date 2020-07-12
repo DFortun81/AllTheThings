@@ -185,6 +185,10 @@ MINING = 186;
 SKINNING = 393;
 TAILORING = 197;
 
+-- Unobtainable Filters
+NEVER_IMPLEMENTED = 1;
+REMOVED_FROM_GAME = 2;
+
 ItemClassInfo = {
 	{
 		"Soul Bag", -- [1]

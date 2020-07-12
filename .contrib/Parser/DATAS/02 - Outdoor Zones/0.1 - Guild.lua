@@ -76,7 +76,7 @@ _.Zones =
 					ach(6634, {	-- Challenge Conquerors: Gold - Guild Edition
 						["collectible"] = false,
 						["groups"] = {
-							un(2, i(85513)),	-- Thundering Serpent Hatchling.
+							un(REMOVED_FROM_GAME, i(85513)),	-- Thundering Serpent Hatchling.
 						-- They removed it from every guild in 6.0. Never confirmed to be obtainable from BMAH
 						},
 					}),

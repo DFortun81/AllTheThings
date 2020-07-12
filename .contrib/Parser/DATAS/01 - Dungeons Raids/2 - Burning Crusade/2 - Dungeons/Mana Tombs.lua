@@ -14,7 +14,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["provider"] = { "n", 19670 },	-- Artificer Morphalius
 				}),
 				q(29572, {	-- Safety is Job One
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(29573, {	-- Safety is Job One
 					["provider"] = { "n", 54692 },	-- Artificer Morphalius

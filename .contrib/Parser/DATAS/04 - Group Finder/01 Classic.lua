@@ -10,11 +10,11 @@ _.GroupFinder =
 			["lvl"] = 15,
 			["g"] = {
 				i(51982),			-- Earthbound Boots*
-				un(2, i(51978)),	-- Earthbound Girdle [Probably unobtainable]
+				un(REMOVED_FROM_GAME, i(51978)),	-- Earthbound Girdle [Probably unobtainable]
 				i(143580),			-- Earthbound Girdle*
-				-- un(2, i(51979)),	-- Earthbound Grips (moved to BC satchel)
+				-- un(REMOVED_FROM_GAME, i(51979)),	-- Earthbound Grips (moved to BC satchel)
 				i(143581),			-- Earthbound Grips*
-				un(2, i(51980)),	-- Earthbound Handgrips [Probably unobtainable]
+				un(REMOVED_FROM_GAME, i(51980)),	-- Earthbound Handgrips [Probably unobtainable]
 				i(51976),			-- Earthbound Shoulderguards*
 				i(51981),			-- Earthbound Wristguards*
 				i(51972),			-- Enumerated Bracers*
@@ -26,7 +26,7 @@ _.GroupFinder =
 				i(143582),			-- Stalwart Belt			— 4/16/19
 				i(143583),			-- Stalwart Grips			— 4/16/19
 				i(51984),			-- Stalwart Shoulderpads*
-				un(2, i(51997)),	-- Stalwart Spaulders
+				un(REMOVED_FROM_GAME, i(51997)),	-- Stalwart Spaulders
 				i(51990),			-- Stalwart Treads			— 4/16/19
 				i(51994),			-- Tumultuous Cloak*
 				i(160598),			-- Tumultuous Cloak			— 4/21/19
@@ -40,17 +40,17 @@ _.GroupFinder =
 				i(51964),			-- Vigorous Belt			— 4/7/19
 				i(51962),			-- Vigorous Bracers			— 4/7/19
 				i(51965),			-- Vigorous Handguards		— 4/8/19
-				un(2, i(51998)),	-- Vigorous Spaulders [Probably unobtainable - maybe old leather set that got changed into mail set]
+				un(REMOVED_FROM_GAME, i(51998)),	-- Vigorous Spaulders [Probably unobtainable - maybe old leather set that got changed into mail set]
 				i(51966),			-- Vigorous Spaulders*
 				i(51963),			-- Vigorous Stompers		— 4/8/19
 			},
 		}),
 		i(51999, {	-- Satchel of Helpful Goods 15-25
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 15-25 range.|r",
 		}),
 		i(52000, {	-- Satchel of Helpful Goods 24-34
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 24-34 range.|r",
 			["g"] = {
 				i(51973),	-- Enumerated Handwraps
@@ -60,7 +60,7 @@ _.GroupFinder =
 			},
 		}),
 		i(67248, {	-- Satchel of Helpful Goods 35-39
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 35-39 range.|r",
 			["g"] = {
 				i(51974),	-- Enumerated Shoulderpads
@@ -73,7 +73,7 @@ _.GroupFinder =
 			},
 		}),
 		i(52001, {	-- Satchel of Helpful Goods 40-45
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 40-45 range.|r",
 			["g"] = {
 				i(51974),	-- Enumerated Shoulderpads
@@ -83,7 +83,7 @@ _.GroupFinder =
 			},
 		}),
 		i(52002, {	-- Satchel of Helpful Goods 46-55
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 46-55 range.|r",
 			["g"] = {
 				i(51972),	-- Enumerated Bracers
@@ -97,7 +97,7 @@ _.GroupFinder =
 			},
 		}),
 		i(52003, {	-- Satchel of Helpful Goods 56-60
-			["u"] = 2,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 56-60 range.|r",
 			["g"] = {
 				i(51993),	-- Turbulent Cloak

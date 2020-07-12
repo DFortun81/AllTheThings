@@ -72,7 +72,7 @@ _.PetJournal =
 		p(1146),	-- Stitched Pup
 		p(1750),	-- Tiny Apparition
 		p(1238),	-- Unborn Val'kyr
-		un(2, p(187)),	-- Vampiric Batling
+		un(REMOVED_FROM_GAME, p(187)),	-- Vampiric Batling
 		p(2037),	-- Vilebrood Whelpling
 		p(310),		-- Voodoo Figurine
 		p(2580),	-- Wayward Spirit

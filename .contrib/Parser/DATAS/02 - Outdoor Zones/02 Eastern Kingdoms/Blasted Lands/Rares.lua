@@ -26,14 +26,14 @@ _.Zones =
 					n(12396, { 	-- Doomguard Commander
 						["u"] = 43,	-- Removed NPCs
 						["g"] = {
-							un(2, i(4213)), 	-- Grimoire of Doom
+							un(REMOVED_FROM_GAME, i(4213)), 	-- Grimoire of Doom
 							un(7, i(18665)), 	-- The Eye of Shadow
 						},
 					}),
 					n(8716,  { 	-- Dreadlord
 						["u"] = 43,	-- Removed NPCs
 						["g"] = {
-							un(2, i(4213)), 	-- Grimoire of Doom
+							un(REMOVED_FROM_GAME, i(4213)), 	-- Grimoire of Doom
 							un(7, i(18665)), 	-- The Eye of Shadow
 						},
 					}),

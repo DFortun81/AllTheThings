@@ -18,8 +18,8 @@ _.Zones =
 					["provider"] = { "n", 4544 },	-- Krueg Skullsplitter
 					["sourceQuest"] = 2974,	-- A Grim Discovery
 					["g"] = {
-						un(2, i(11858)),	-- Battlehard Cape
-						un(2, i(11859)),	-- Jademoon Orb
+						un(REMOVED_FROM_GAME, i(11858)),	-- Battlehard Cape
+						un(REMOVED_FROM_GAME, i(11859)),	-- Jademoon Orb
 					},
 				}),
 				q(25362, {	-- A Grim Discovery
@@ -33,8 +33,8 @@ _.Zones =
 					["provider"] = { "n", 7880 },	-- Ginro Hearthkindle
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(11856)),	-- Ceremonial Elven Blade
-						un(2, i(11857)),	-- Sanctimonial Rod
+						un(REMOVED_FROM_GAME, i(11856)),	-- Ceremonial Elven Blade
+						un(REMOVED_FROM_GAME, i(11857)),	-- Sanctimonial Rod
 					},
 				}),
 				q(2973, {	-- A New Cloak's Sheen
@@ -107,8 +107,8 @@ _.Zones =
 					["provider"] = { "n", 7776 },	-- Talo Thornhoof
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(9666)),	-- Stronghorn Girdle
-						un(2, i(9665)),	-- Wingcrest Gloves
+						un(REMOVED_FROM_GAME, i(9666)),	-- Stronghorn Girdle
+						un(REMOVED_FROM_GAME, i(9665)),	-- Wingcrest Gloves
 					},
 				}),
 				q(25340, {	-- Dark Heart (H)
@@ -126,8 +126,8 @@ _.Zones =
 					["provider"] = { "n", 7877 },	-- Latronicus Moonspear
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(9663)),	-- Dawnrider's Chestpiece
-						un(2, i(9664)),	-- Sentinel's Guard
+						un(REMOVED_FROM_GAME, i(9663)),	-- Dawnrider's Chestpiece
+						un(REMOVED_FROM_GAME, i(9664)),	-- Sentinel's Guard
 					},
 				}),
 				q(2972,  {	-- Doling Justice
@@ -135,8 +135,8 @@ _.Zones =
 					["provider"] = { "n", 7957 },	-- Jer'kai Moonweaver
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(10705)),	-- Firwillow Wristbands
-						un(2, i(10706)),	-- Nightscale Girdle
+						un(REMOVED_FROM_GAME, i(10705)),	-- Firwillow Wristbands
+						un(REMOVED_FROM_GAME, i(10706)),	-- Nightscale Girdle
 					},
 				}),
 				q(7481, {	-- Elven Legends
@@ -248,8 +248,8 @@ _.Zones =
 					["provider"] = { "n", 8021 },	-- Orwin Gizzmick
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(9658)),	-- Boots of the Maharishi
-						un(2, i(9660)),	-- Stargazer Cloak
+						un(REMOVED_FROM_GAME, i(9658)),	-- Boots of the Maharishi
+						un(REMOVED_FROM_GAME, i(9660)),	-- Stargazer Cloak
 					},
 				}),
 				q(25399, {	-- Hatecrest Forces
@@ -268,7 +268,7 @@ _.Zones =
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(19041)),	-- Pratt's Handcrafted Tunic
+						un(REMOVED_FROM_GAME, i(19041)),	-- Pratt's Handcrafted Tunic
 					},
 				}),
 				q(25450, {	-- Improved Quality
@@ -285,7 +285,7 @@ _.Zones =
 					["provider"] = { "n", 7854 },	-- Jangdor Swiftstrider
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(19042)),	-- Jangdor's Handcrafted Tunic
+						un(REMOVED_FROM_GAME, i(19042)),	-- Jangdor's Handcrafted Tunic
 					},
 				}),
 				q(25453, {	-- Improved Quality
@@ -314,7 +314,7 @@ _.Zones =
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(8408)),	-- Pattern: Wild Leather Cloak
+						un(REMOVED_FROM_GAME, i(8408)),	-- Pattern: Wild Leather Cloak
 					},
 				}),
 				q(25333, {	-- Might of the Sentinels
@@ -390,7 +390,7 @@ _.Zones =
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 				}),
 				q(25305, {	-- Never Look Back
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(25403, {	-- Ogre Abduction (A)
 					["provider"] = { "n", 40052 },	-- Estulan
@@ -472,8 +472,8 @@ _.Zones =
 					["provider"] = { "n", 3936 },	-- Shandris Feathermoon
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(34416)),	-- Gloves of the Dune
-						un(2, i(34417)),	-- Marauder's Handwraps
+						un(REMOVED_FROM_GAME, i(34416)),	-- Gloves of the Dune
+						un(REMOVED_FROM_GAME, i(34417)),	-- Marauder's Handwraps
 					},
 				}),
 				q(25252, {	-- Rulers of Dire Maul
@@ -667,8 +667,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 142195 },	-- Woodpaw Battle Map
 					["g"] = {
-						un(2, i(9661)),	-- Earthclasp Barrier
-						un(2, i(9662)),	-- Rushridge Boots
+						un(REMOVED_FROM_GAME, i(9661)),	-- Earthclasp Barrier
+						un(REMOVED_FROM_GAME, i(9662)),	-- Rushridge Boots
 					},
 				}),
 				q(25366, {	-- The Battle Plans
@@ -686,10 +686,10 @@ _.Zones =
 					["provider"] = { "n", 4048 },	-- Falfindel Waywarder
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(4197)),	-- Berylline Pads
-						un(2, i(29200)),	-- Falfindel's Blaster
-						un(2, i(6725)),	-- Marbled Buckler
-						un(2, i(6742)),	-- Stonefist Girdle
+						un(REMOVED_FROM_GAME, i(4197)),	-- Berylline Pads
+						un(REMOVED_FROM_GAME, i(29200)),	-- Falfindel's Blaster
+						un(REMOVED_FROM_GAME, i(6725)),	-- Marbled Buckler
+						un(REMOVED_FROM_GAME, i(6742)),	-- Stonefist Girdle
 					},
 				}),
 				q(25422, {	-- The Darkmist Legacy
@@ -815,8 +815,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 144063 },	-- Equinex Monolith
 					["g"] = {
-						un(2, i(9654)),	-- Cairnstone Silver
-						un(2, i(9655)),	-- Seedtime Hoop
+						un(REMOVED_FROM_GAME, i(9654)),	-- Cairnstone Silver
+						un(REMOVED_FROM_GAME, i(9655)),	-- Seedtime Hoop
 					},
 				}),
 				q(3791,  {	-- The Mystery of Morrowgrain
@@ -824,8 +824,8 @@ _.Zones =
 					["provider"] = { "n", 7879 },	-- Quintis Jonespyre
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(11889)),	-- Bark Iron Pauldrons
-						un(2, i(11888)),	-- Quintis' Research Gloves
+						un(REMOVED_FROM_GAME, i(11889)),	-- Bark Iron Pauldrons
+						un(REMOVED_FROM_GAME, i(11888)),	-- Quintis' Research Gloves
 					},
 				}),
 				q(25448, {	-- The Northspring Menace
@@ -933,8 +933,8 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 7774 },	-- Shay Leafrunner
 					["g"] = {
-						un(2, i(9656)),	-- Granite Grips
-						un(2, i(9657)),	-- Vinehedge Cinch
+						un(REMOVED_FROM_GAME, i(9656)),	-- Granite Grips
+						un(REMOVED_FROM_GAME, i(9657)),	-- Vinehedge Cinch
 					},
 				}),
 				q(2862, {	-- War on the Woodpaw
@@ -955,10 +955,10 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 					["g"] = {
-						un(2, i(9684)),	-- Force of the Hippogryph
-						un(2, i(9686)),	-- Spirit of the Faerie Dragon
-						un(2, i(9683)),	-- Strength of the Treant
-						un(2, i(10652)),	-- Will of the Mountain Giant
+						un(REMOVED_FROM_GAME, i(9684)),	-- Force of the Hippogryph
+						un(REMOVED_FROM_GAME, i(9686)),	-- Spirit of the Faerie Dragon
+						un(REMOVED_FROM_GAME, i(9683)),	-- Strength of the Treant
+						un(REMOVED_FROM_GAME, i(10652)),	-- Will of the Mountain Giant
 					},
 				}),
 				q(25391, {	-- Weapons of Spirit
@@ -979,7 +979,7 @@ _.Zones =
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(8406)),	-- Pattern: Wild Leather Boots
+						un(REMOVED_FROM_GAME, i(8406)),	-- Pattern: Wild Leather Boots
 					},
 				}),
 				q(2850,  {	-- Wild Leather Helmet
@@ -987,7 +987,7 @@ _.Zones =
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(8405)),	-- Pattern: Wild Leather Helmet
+						un(REMOVED_FROM_GAME, i(8405)),	-- Pattern: Wild Leather Helmet
 					},
 				}),
 				q(2852,  {	-- Wild Leather Leggings
@@ -995,7 +995,7 @@ _.Zones =
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(8407)),	-- Pattern: Wild Leather Leggings
+						un(REMOVED_FROM_GAME, i(8407)),	-- Pattern: Wild Leather Leggings
 					},
 				}),
 				q(2848,  {	-- Wild Leather Shoulders
@@ -1003,7 +1003,7 @@ _.Zones =
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(8403)),	-- Pattern: Wild Leather Shoulders
+						un(REMOVED_FROM_GAME, i(8403)),	-- Pattern: Wild Leather Shoulders
 					},
 				}),
 				q(2849,  {	-- Wild Leather Vest
@@ -1011,7 +1011,7 @@ _.Zones =
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(8404)),	-- Pattern: Wild Leather Vest
+						un(REMOVED_FROM_GAME, i(8404)),	-- Pattern: Wild Leather Vest
 					},
 				}),
 				q(2902, {	-- Woodpaw Investigation
@@ -1064,7 +1064,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 14637 },	-- Zorbin Fandazzle
 					["g"] = {
-						un(2, i(19040)),	-- Zorbin's Mega-Slicer
+						un(REMOVED_FROM_GAME, i(19040)),	-- Zorbin's Mega-Slicer
 					},
 				}),
 				q(25429, {	-- Zukk'ash Infestation (A)
@@ -1089,8 +1089,8 @@ _.Zones =
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(19037)),	-- Emerald Peak Spaulders
-						un(2, i(19038)),	-- Ring of Subtlety
+						un(REMOVED_FROM_GAME, i(19037)),	-- Emerald Peak Spaulders
+						un(REMOVED_FROM_GAME, i(19038)),	-- Ring of Subtlety
 					},
 				}),
 			}),

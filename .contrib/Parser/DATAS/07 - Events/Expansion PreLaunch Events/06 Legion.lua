@@ -21,133 +21,133 @@ _.WorldEvents =
 				["groups"] = {
 					n(-297, {	-- Mailbox
 						["groups"] = {
-							un(3, i(140715)),	-- Frost-Etched Runeblade. DK Frost
-							un(3, i(140696)),	-- Sword of the Singing Wind. Monk WW
-							un(3, i(140694)),	-- Brewmasher's Staff. Monk BW
-							un(3, i(140712)),	-- Greataxe of Fury. Warrior Fury
+							un(REMOVED_FROM_GAME, i(140715)),	-- Frost-Etched Runeblade. DK Frost
+							un(REMOVED_FROM_GAME, i(140696)),	-- Sword of the Singing Wind. Monk WW
+							un(REMOVED_FROM_GAME, i(140694)),	-- Brewmasher's Staff. Monk BW
+							un(REMOVED_FROM_GAME, i(140712)),	-- Greataxe of Fury. Warrior Fury
 						},
 						["description"] = "This item came automatically in the mail box, in some cases even equipped, once the prepatch launched due class&ability changes.",
 					}),
 					i(139048, {	-- Small Legion Chest
-						un(3, i(141597)),	-- Corrupted Argus Gavel
-						un(3, i(141609)),	-- Corrupted Argus Gavel -- Non Upgrade Version -- Was posted here already - Gold 14.04.2019
-						un(3, i(141595)),	-- Eredar Battle Blade
-						un(3, i(141607)),	-- Eredar Battle Blade -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
-						un(3, i(141602)),	-- Eredar Splitter
-						un(3, i(141614)),	-- Eredar Splitter -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
-						un(3, i(141599)),	-- Fel Barbed Spear
-						un(3, i(141611)),	-- Fel Barbed Spear -- Non Upgrade Version -- Dropped below a certain level, somebody on discord posted having it around end of 2018, early 2019)
-						un(3, i(141594)),	-- Fel Hacker
-						un(3, i(141606)),	-- Fel Hacker -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
-						un(3, i(141603)),	-- Fel Lord's Warmace
-						un(3, i(141615)),	-- Fel Lord's Warmace -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
-						un(3, i(141604)),	-- Glaive of the Fallen
-						un(3, i(141601)),	-- Hellfury Longbow
-						un(3, i(141613)),	-- Hellfury Longbow -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
-						un(3, i(141616)),	-- Inquisitor's Wand
-						un(3, i(141617)),	-- Inquisitor's Wand -- Non Upgrade Version -- Dropped below a certain level - My Priest has it - Gold 14.04.2019)
-						un(3, i(141600)),	-- Wyrmtongue Spiteblade
-						un(3, i(141612)),	-- Wyrmtongue Spiteblade -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+						un(REMOVED_FROM_GAME, i(141597)),	-- Corrupted Argus Gavel
+						un(REMOVED_FROM_GAME, i(141609)),	-- Corrupted Argus Gavel -- Non Upgrade Version -- Was posted here already - Gold 14.04.2019
+						un(REMOVED_FROM_GAME, i(141595)),	-- Eredar Battle Blade
+						un(REMOVED_FROM_GAME, i(141607)),	-- Eredar Battle Blade -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+						un(REMOVED_FROM_GAME, i(141602)),	-- Eredar Splitter
+						un(REMOVED_FROM_GAME, i(141614)),	-- Eredar Splitter -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+						un(REMOVED_FROM_GAME, i(141599)),	-- Fel Barbed Spear
+						un(REMOVED_FROM_GAME, i(141611)),	-- Fel Barbed Spear -- Non Upgrade Version -- Dropped below a certain level, somebody on discord posted having it around end of 2018, early 2019)
+						un(REMOVED_FROM_GAME, i(141594)),	-- Fel Hacker
+						un(REMOVED_FROM_GAME, i(141606)),	-- Fel Hacker -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+						un(REMOVED_FROM_GAME, i(141603)),	-- Fel Lord's Warmace
+						un(REMOVED_FROM_GAME, i(141615)),	-- Fel Lord's Warmace -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+						un(REMOVED_FROM_GAME, i(141604)),	-- Glaive of the Fallen
+						un(REMOVED_FROM_GAME, i(141601)),	-- Hellfury Longbow
+						un(REMOVED_FROM_GAME, i(141613)),	-- Hellfury Longbow -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+						un(REMOVED_FROM_GAME, i(141616)),	-- Inquisitor's Wand
+						un(REMOVED_FROM_GAME, i(141617)),	-- Inquisitor's Wand -- Non Upgrade Version -- Dropped below a certain level - My Priest has it - Gold 14.04.2019)
+						un(REMOVED_FROM_GAME, i(141600)),	-- Wyrmtongue Spiteblade
+						un(REMOVED_FROM_GAME, i(141612)),	-- Wyrmtongue Spiteblade -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
 						gsh(160, {	-- Fel-Infused Armor
-							un(3, i(138184)),	-- Fel-Infused Helm
-							un(3, i(138186)),	-- Fel-Infused Spaulders
-							un(3, i(138187)),	-- Fel-Infused Hauberk
-							un(3, i(138181)),	-- Fel-Infused Bracers
-							un(3, i(138182)),	-- Fel-Infused Grips
-							un(3, i(138180)),	-- Fel-Infused Cinch
-							un(3, i(138185)),	-- Fel-Infused Leggings
-							un(3, i(138183)),	-- Fel-Infused Boots
+							un(REMOVED_FROM_GAME, i(138184)),	-- Fel-Infused Helm
+							un(REMOVED_FROM_GAME, i(138186)),	-- Fel-Infused Spaulders
+							un(REMOVED_FROM_GAME, i(138187)),	-- Fel-Infused Hauberk
+							un(REMOVED_FROM_GAME, i(138181)),	-- Fel-Infused Bracers
+							un(REMOVED_FROM_GAME, i(138182)),	-- Fel-Infused Grips
+							un(REMOVED_FROM_GAME, i(138180)),	-- Fel-Infused Cinch
+							un(REMOVED_FROM_GAME, i(138185)),	-- Fel-Infused Leggings
+							un(REMOVED_FROM_GAME, i(138183)),	-- Fel-Infused Boots
 						}),
 						gsh(159, {	-- Felshroud Armor
-							un(3, i(138167)),	-- Felshroud Hood
-							un(3, i(138168)),	-- Felshroud Shoulders
-							un(3, i(138192)),	-- Felshroud Vest
-							un(3, i(138163)),	-- Felshroud Bindings
-							un(3, i(138166)),	-- Felshroud Gloves
-							un(3, i(138169)),	-- Felshroud Belt
-							un(3, i(138165)),	-- Felshroud Pants
-							un(3, i(138164)),	-- Felshroud Boots
+							un(REMOVED_FROM_GAME, i(138167)),	-- Felshroud Hood
+							un(REMOVED_FROM_GAME, i(138168)),	-- Felshroud Shoulders
+							un(REMOVED_FROM_GAME, i(138192)),	-- Felshroud Vest
+							un(REMOVED_FROM_GAME, i(138163)),	-- Felshroud Bindings
+							un(REMOVED_FROM_GAME, i(138166)),	-- Felshroud Gloves
+							un(REMOVED_FROM_GAME, i(138169)),	-- Felshroud Belt
+							un(REMOVED_FROM_GAME, i(138165)),	-- Felshroud Pants
+							un(REMOVED_FROM_GAME, i(138164)),	-- Felshroud Boots
 						}),
 						gsh(158, {	-- Fel-Chain Armor
-							un(3, i(138176)),	-- Fel-Chain Helm
-							un(3, i(138178)),	-- Fel-Chain Spaulders
-							un(3, i(138179)),	-- Fel-Chain Hauberk
-							un(3, i(138173)),	-- Fel-Chain Bracers
-							un(3, i(138174)),	-- Fel-Chain Grips
-							un(3, i(138172)),	-- Fel-Chain Cinch
-							un(3, i(138177)),	-- Fel-Chain Leggings
-							un(3, i(138175)),	-- Fel-Chain Boots
+							un(REMOVED_FROM_GAME, i(138176)),	-- Fel-Chain Helm
+							un(REMOVED_FROM_GAME, i(138178)),	-- Fel-Chain Spaulders
+							un(REMOVED_FROM_GAME, i(138179)),	-- Fel-Chain Hauberk
+							un(REMOVED_FROM_GAME, i(138173)),	-- Fel-Chain Bracers
+							un(REMOVED_FROM_GAME, i(138174)),	-- Fel-Chain Grips
+							un(REMOVED_FROM_GAME, i(138172)),	-- Fel-Chain Cinch
+							un(REMOVED_FROM_GAME, i(138177)),	-- Fel-Chain Leggings
+							un(REMOVED_FROM_GAME, i(138175)),	-- Fel-Chain Boots
 						}),
 						gsh(157, {	-- Felforged Armor
-							un(3, i(138155)),	-- Felforged Helmet
-							un(3, i(138157)),	-- Felforged Pauldrons
-							un(3, i(138152)),	-- Felforged Chestplate
-							un(3, i(138159)),	-- Felforged Vambracers
-							un(3, i(138153)),	-- Felforged Gauntlets
-							un(3, i(138154)),	-- Felforged Waistplate
-							un(3, i(138156)),	-- Felforged Legplates
-							un(3, i(138158)),	-- Felforged Warboots
+							un(REMOVED_FROM_GAME, i(138155)),	-- Felforged Helmet
+							un(REMOVED_FROM_GAME, i(138157)),	-- Felforged Pauldrons
+							un(REMOVED_FROM_GAME, i(138152)),	-- Felforged Chestplate
+							un(REMOVED_FROM_GAME, i(138159)),	-- Felforged Vambracers
+							un(REMOVED_FROM_GAME, i(138153)),	-- Felforged Gauntlets
+							un(REMOVED_FROM_GAME, i(138154)),	-- Felforged Waistplate
+							un(REMOVED_FROM_GAME, i(138156)),	-- Felforged Legplates
+							un(REMOVED_FROM_GAME, i(138158)),	-- Felforged Warboots
 						}),
 					}),	
 					i(139049, {	-- Large Legion Chest
-						un(3, i(141597)),	-- Corrupted Argus Gavel
-						un(3, i(141609)),	-- Corrupted Argus Gavel -- Non Upgrade Version -- Was posted here already - Gold 14.04.2019
-						un(3, i(141595)),	-- Eredar Battle Blade
-						un(3, i(141607)),	-- Eredar Battle Blade -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
-						un(3, i(141602)),	-- Eredar Splitter
-						un(3, i(141614)),	-- Eredar Splitter -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
-						un(3, i(141599)),	-- Fel Barbed Spear
-						un(3, i(141611)),	-- Fel Barbed Spear -- Non Upgrade Version -- Dropped below a certain level, somebody on discord posted having it around end of 2018, early 2019)
-						un(3, i(141594)),	-- Fel Hacker
-						un(3, i(141606)),	-- Fel Hacker -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
-						un(3, i(141603)),	-- Fel Lord's Warmace
-						un(3, i(141615)),	-- Fel Lord's Warmace -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
-						un(3, i(141604)),	-- Glaive of the Fallen
-						un(3, i(141601)),	-- Hellfury Longbow
-						un(3, i(141613)),	-- Hellfury Longbow -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
-						un(3, i(141616)),	-- Inquisitor's Wand
-						un(3, i(141617)),	-- Inquisitor's Wand -- Non Upgrade Version -- Dropped below a certain level - My Priest has it - Gold 14.04.2019)
-						un(3, i(141600)),	-- Wyrmtongue Spiteblade
-						un(3, i(141612)),	-- Wyrmtongue Spiteblade -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+						un(REMOVED_FROM_GAME, i(141597)),	-- Corrupted Argus Gavel
+						un(REMOVED_FROM_GAME, i(141609)),	-- Corrupted Argus Gavel -- Non Upgrade Version -- Was posted here already - Gold 14.04.2019
+						un(REMOVED_FROM_GAME, i(141595)),	-- Eredar Battle Blade
+						un(REMOVED_FROM_GAME, i(141607)),	-- Eredar Battle Blade -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+						un(REMOVED_FROM_GAME, i(141602)),	-- Eredar Splitter
+						un(REMOVED_FROM_GAME, i(141614)),	-- Eredar Splitter -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+						un(REMOVED_FROM_GAME, i(141599)),	-- Fel Barbed Spear
+						un(REMOVED_FROM_GAME, i(141611)),	-- Fel Barbed Spear -- Non Upgrade Version -- Dropped below a certain level, somebody on discord posted having it around end of 2018, early 2019)
+						un(REMOVED_FROM_GAME, i(141594)),	-- Fel Hacker
+						un(REMOVED_FROM_GAME, i(141606)),	-- Fel Hacker -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+						un(REMOVED_FROM_GAME, i(141603)),	-- Fel Lord's Warmace
+						un(REMOVED_FROM_GAME, i(141615)),	-- Fel Lord's Warmace -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+						un(REMOVED_FROM_GAME, i(141604)),	-- Glaive of the Fallen
+						un(REMOVED_FROM_GAME, i(141601)),	-- Hellfury Longbow
+						un(REMOVED_FROM_GAME, i(141613)),	-- Hellfury Longbow -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
+						un(REMOVED_FROM_GAME, i(141616)),	-- Inquisitor's Wand
+						un(REMOVED_FROM_GAME, i(141617)),	-- Inquisitor's Wand -- Non Upgrade Version -- Dropped below a certain level - My Priest has it - Gold 14.04.2019)
+						un(REMOVED_FROM_GAME, i(141600)),	-- Wyrmtongue Spiteblade
+						un(REMOVED_FROM_GAME, i(141612)),	-- Wyrmtongue Spiteblade -- Non Upgrade Version -- Probably similar to other Non Upgrade Items
 						gsh(160, {	-- Fel-Infused Armor
-							un(3, i(138184)),	-- Fel-Infused Helm
-							un(3, i(138186)),	-- Fel-Infused Spaulders
-							un(3, i(138187)),	-- Fel-Infused Hauberk
-							un(3, i(138181)),	-- Fel-Infused Bracers
-							un(3, i(138182)),	-- Fel-Infused Grips
-							un(3, i(138180)),	-- Fel-Infused Cinch
-							un(3, i(138185)),	-- Fel-Infused Leggings
-							un(3, i(138183)),	-- Fel-Infused Boots
+							un(REMOVED_FROM_GAME, i(138184)),	-- Fel-Infused Helm
+							un(REMOVED_FROM_GAME, i(138186)),	-- Fel-Infused Spaulders
+							un(REMOVED_FROM_GAME, i(138187)),	-- Fel-Infused Hauberk
+							un(REMOVED_FROM_GAME, i(138181)),	-- Fel-Infused Bracers
+							un(REMOVED_FROM_GAME, i(138182)),	-- Fel-Infused Grips
+							un(REMOVED_FROM_GAME, i(138180)),	-- Fel-Infused Cinch
+							un(REMOVED_FROM_GAME, i(138185)),	-- Fel-Infused Leggings
+							un(REMOVED_FROM_GAME, i(138183)),	-- Fel-Infused Boots
 						}),
 						gsh(159, {	-- Felshroud Armor
-							un(3, i(138167)),	-- Felshroud Hood
-							un(3, i(138168)),	-- Felshroud Shoulders
-							un(3, i(138192)),	-- Felshroud Vest
-							un(3, i(138163)),	-- Felshroud Bindings
-							un(3, i(138166)),	-- Felshroud Gloves
-							un(3, i(138169)),	-- Felshroud Belt
-							un(3, i(138165)),	-- Felshroud Pants
-							un(3, i(138164)),	-- Felshroud Boots
+							un(REMOVED_FROM_GAME, i(138167)),	-- Felshroud Hood
+							un(REMOVED_FROM_GAME, i(138168)),	-- Felshroud Shoulders
+							un(REMOVED_FROM_GAME, i(138192)),	-- Felshroud Vest
+							un(REMOVED_FROM_GAME, i(138163)),	-- Felshroud Bindings
+							un(REMOVED_FROM_GAME, i(138166)),	-- Felshroud Gloves
+							un(REMOVED_FROM_GAME, i(138169)),	-- Felshroud Belt
+							un(REMOVED_FROM_GAME, i(138165)),	-- Felshroud Pants
+							un(REMOVED_FROM_GAME, i(138164)),	-- Felshroud Boots
 						}),
 						gsh(158, {	-- Fel-Chain Armor
-							un(3, i(138176)),	-- Fel-Chain Helm
-							un(3, i(138178)),	-- Fel-Chain Spaulders
-							un(3, i(138179)),	-- Fel-Chain Hauberk
-							un(3, i(138173)),	-- Fel-Chain Bracers
-							un(3, i(138174)),	-- Fel-Chain Grips
-							un(3, i(138172)),	-- Fel-Chain Cinch
-							un(3, i(138177)),	-- Fel-Chain Leggings
-							un(3, i(138175)),	-- Fel-Chain Boots
+							un(REMOVED_FROM_GAME, i(138176)),	-- Fel-Chain Helm
+							un(REMOVED_FROM_GAME, i(138178)),	-- Fel-Chain Spaulders
+							un(REMOVED_FROM_GAME, i(138179)),	-- Fel-Chain Hauberk
+							un(REMOVED_FROM_GAME, i(138173)),	-- Fel-Chain Bracers
+							un(REMOVED_FROM_GAME, i(138174)),	-- Fel-Chain Grips
+							un(REMOVED_FROM_GAME, i(138172)),	-- Fel-Chain Cinch
+							un(REMOVED_FROM_GAME, i(138177)),	-- Fel-Chain Leggings
+							un(REMOVED_FROM_GAME, i(138175)),	-- Fel-Chain Boots
 						}),
 						gsh(157, {	-- Felforged Armor
-							un(3, i(138155)),	-- Felforged Helmet
-							un(3, i(138157)),	-- Felforged Pauldrons
-							un(3, i(138152)),	-- Felforged Chestplate
-							un(3, i(138159)),	-- Felforged Vambracers
-							un(3, i(138153)),	-- Felforged Gauntlets
-							un(3, i(138154)),	-- Felforged Waistplate
-							un(3, i(138156)),	-- Felforged Legplates
-							un(3, i(138158)),	-- Felforged Warboots
+							un(REMOVED_FROM_GAME, i(138155)),	-- Felforged Helmet
+							un(REMOVED_FROM_GAME, i(138157)),	-- Felforged Pauldrons
+							un(REMOVED_FROM_GAME, i(138152)),	-- Felforged Chestplate
+							un(REMOVED_FROM_GAME, i(138159)),	-- Felforged Vambracers
+							un(REMOVED_FROM_GAME, i(138153)),	-- Felforged Gauntlets
+							un(REMOVED_FROM_GAME, i(138154)),	-- Felforged Waistplate
+							un(REMOVED_FROM_GAME, i(138156)),	-- Felforged Legplates
+							un(REMOVED_FROM_GAME, i(138158)),	-- Felforged Warboots
 						}),
 					}),	
 					n(-220, {	-- Class Changes
@@ -155,75 +155,75 @@ _.WorldEvents =
 						["groups"] = {
 							{
 								["itemID"] = 150611,	-- Guardian's Oaken Spear
-								["u"] = 1,
+								["u"] = NEVER_IMPLEMENTED,
 							},
 							{
 								["itemID"] = 140716,	-- Guardian's Oaken Spear
 								["modID"] = 1,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140716,	-- Guardian's Oaken Spear
 								["modID"] = 3,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140716,	-- Guardian's Oaken Spear
 								["modID"] = 5,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140716,	-- Guardian's Oaken Spear
 								["modID"] = 6,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 150584,	-- Pike of Feral Rage
-								["u"] = 1,
+								["u"] = NEVER_IMPLEMENTED,
 							},
 							{
 								["itemID"] = 140689,	-- Pike of Feral Rage
 								["modID"] = 1,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140689,	-- Pike of Feral Rage
 								["modID"] = 3,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140689,	-- Pike of Feral Rage
 								["modID"] = 5,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140689,	-- Pike of Feral Rage
 								["modID"] = 6,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 150613,	-- Survivalist's Hunting Spear
-								["u"] = 1,
+								["u"] = NEVER_IMPLEMENTED,
 							},
 							{
 								["itemID"] = 140718,	-- Survivalist's Hunting Spear
 								["modID"] = 1,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140718,	-- Survivalist's Hunting Spear
 								["modID"] = 3,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140718,	-- Survivalist's Hunting Spear
 								["modID"] = 5,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							{
 								["itemID"] = 140718,	-- Survivalist's Hunting Spear
 								["modID"] = 6,
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 							},
 						},
 					}),
@@ -321,64 +321,64 @@ _.WorldEvents =
 					n(VENDORS, {
 						n(109912, {	-- Captive Wyrmtongue <Reluctant 'Quartermaster'>
 							un(7, i(136924)),	-- Felbat Pup Pet
-							un(3, i(141604)),	-- Glaive of the Fallen
-							un(3, i(138160)),	-- Infernal Cord
-							un(3, i(139172)),	-- Legionnaire's Fel Pendant
-							un(3, i(138188)),	-- Demon Commander's Drape
-							un(3, i(138162)),	-- Legion Bound Ring
-							un(3, i(139173)),	-- Nether Twisted Band
-							un(3, i(138170)),	-- Felstalker Spine
-							un(3, i(138171)),	-- Inquisitor's Talisman
-							un(3, i(138161)),	-- Mo'arg Clan Token
-							un(3, i(139170, {	-- Ensemble: Fel-Infused Cloth Armor
+							un(REMOVED_FROM_GAME, i(141604)),	-- Glaive of the Fallen
+							un(REMOVED_FROM_GAME, i(138160)),	-- Infernal Cord
+							un(REMOVED_FROM_GAME, i(139172)),	-- Legionnaire's Fel Pendant
+							un(REMOVED_FROM_GAME, i(138188)),	-- Demon Commander's Drape
+							un(REMOVED_FROM_GAME, i(138162)),	-- Legion Bound Ring
+							un(REMOVED_FROM_GAME, i(139173)),	-- Nether Twisted Band
+							un(REMOVED_FROM_GAME, i(138170)),	-- Felstalker Spine
+							un(REMOVED_FROM_GAME, i(138171)),	-- Inquisitor's Talisman
+							un(REMOVED_FROM_GAME, i(138161)),	-- Mo'arg Clan Token
+							un(REMOVED_FROM_GAME, i(139170, {	-- Ensemble: Fel-Infused Cloth Armor
 								["groups"] = {
-									un(3, i(138184)),	-- Fel-Infused Helm
-									un(3, i(138186)),	-- Fel-Infused Spaulders
-									un(3, i(138187)),	-- Fel-Infused Hauberk
-									un(3, i(138181)),	-- Fel-Infused Bracers
-									un(3, i(138182)),	-- Fel-Infused Grips
-									un(3, i(138180)),	-- Fel-Infused Cinch
-									un(3, i(138185)),	-- Fel-Infused Leggings
-									un(3, i(138183)),	-- Fel-Infused Boots
+									un(REMOVED_FROM_GAME, i(138184)),	-- Fel-Infused Helm
+									un(REMOVED_FROM_GAME, i(138186)),	-- Fel-Infused Spaulders
+									un(REMOVED_FROM_GAME, i(138187)),	-- Fel-Infused Hauberk
+									un(REMOVED_FROM_GAME, i(138181)),	-- Fel-Infused Bracers
+									un(REMOVED_FROM_GAME, i(138182)),	-- Fel-Infused Grips
+									un(REMOVED_FROM_GAME, i(138180)),	-- Fel-Infused Cinch
+									un(REMOVED_FROM_GAME, i(138185)),	-- Fel-Infused Leggings
+									un(REMOVED_FROM_GAME, i(138183)),	-- Fel-Infused Boots
 								},
 								["ignoreBonus"] = true,
 							})),
-							un(3, i(139169, {	-- Ensemble: Felshroud Lather Armor
+							un(REMOVED_FROM_GAME, i(139169, {	-- Ensemble: Felshroud Lather Armor
 								["groups"] = {
-									un(3, i(138167)),	-- Felshroud Hood
-									un(3, i(138168)),	-- Felshroud Shoulders
-									un(3, i(138192)),	-- Felshroud Vest
-									un(3, i(138163)),	-- Felshroud Bindings
-									un(3, i(138166)),	-- Felshroud Gloves
-									un(3, i(138169)),	-- Felshroud Belt
-									un(3, i(138165)),	-- Felshroud Pants
-									un(3, i(138164)),	-- Felshroud Boots
+									un(REMOVED_FROM_GAME, i(138167)),	-- Felshroud Hood
+									un(REMOVED_FROM_GAME, i(138168)),	-- Felshroud Shoulders
+									un(REMOVED_FROM_GAME, i(138192)),	-- Felshroud Vest
+									un(REMOVED_FROM_GAME, i(138163)),	-- Felshroud Bindings
+									un(REMOVED_FROM_GAME, i(138166)),	-- Felshroud Gloves
+									un(REMOVED_FROM_GAME, i(138169)),	-- Felshroud Belt
+									un(REMOVED_FROM_GAME, i(138165)),	-- Felshroud Pants
+									un(REMOVED_FROM_GAME, i(138164)),	-- Felshroud Boots
 								},
 								["ignoreBonus"] = true,
 							})),
-							un(3, i(139168, {	-- Ensemble: Fel-Chain Mail Armor
+							un(REMOVED_FROM_GAME, i(139168, {	-- Ensemble: Fel-Chain Mail Armor
 								["groups"] = {
-									un(3, i(138176)),	-- Fel-Chain Helm
-									un(3, i(138178)),	-- Fel-Chain Spaulders
-									un(3, i(138179)),	-- Fel-Chain Hauberk
-									un(3, i(138173)),	-- Fel-Chain Bracers
-									un(3, i(138174)),	-- Fel-Chain Grips
-									un(3, i(138172)),	-- Fel-Chain Cinch
-									un(3, i(138177)),	-- Fel-Chain Leggings
-									un(3, i(138175)),	-- Fel-Chain Boots
+									un(REMOVED_FROM_GAME, i(138176)),	-- Fel-Chain Helm
+									un(REMOVED_FROM_GAME, i(138178)),	-- Fel-Chain Spaulders
+									un(REMOVED_FROM_GAME, i(138179)),	-- Fel-Chain Hauberk
+									un(REMOVED_FROM_GAME, i(138173)),	-- Fel-Chain Bracers
+									un(REMOVED_FROM_GAME, i(138174)),	-- Fel-Chain Grips
+									un(REMOVED_FROM_GAME, i(138172)),	-- Fel-Chain Cinch
+									un(REMOVED_FROM_GAME, i(138177)),	-- Fel-Chain Leggings
+									un(REMOVED_FROM_GAME, i(138175)),	-- Fel-Chain Boots
 								},
 								["ignoreBonus"] = true,
 							})),
-							un(3, i(139167, {	-- Ensemble: Felforged Plate Armor
+							un(REMOVED_FROM_GAME, i(139167, {	-- Ensemble: Felforged Plate Armor
 								["groups"] = {
-									un(3, i(138155)),	-- Felforged Helmet
-									un(3, i(138157)),	-- Felforged Pauldrons
-									un(3, i(138152)),	-- Felforged Chestplate
-									un(3, i(138159)),	-- Felforged Vambracers
-									un(3, i(138153)),	-- Felforged Gauntlets
-									un(3, i(138154)),	-- Felforged Waistplate
-									un(3, i(138156)),	-- Felforged Legplates
-									un(3, i(138158)),	-- Felforged Warboots
+									un(REMOVED_FROM_GAME, i(138155)),	-- Felforged Helmet
+									un(REMOVED_FROM_GAME, i(138157)),	-- Felforged Pauldrons
+									un(REMOVED_FROM_GAME, i(138152)),	-- Felforged Chestplate
+									un(REMOVED_FROM_GAME, i(138159)),	-- Felforged Vambracers
+									un(REMOVED_FROM_GAME, i(138153)),	-- Felforged Gauntlets
+									un(REMOVED_FROM_GAME, i(138154)),	-- Felforged Waistplate
+									un(REMOVED_FROM_GAME, i(138156)),	-- Felforged Legplates
+									un(REMOVED_FROM_GAME, i(138158)),	-- Felforged Warboots
 								},
 								["ignoreBonus"] = true,
 							})),

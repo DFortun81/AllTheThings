@@ -519,11 +519,11 @@ _.Zones =
 					["provider"] = { "o", 205198 },	-- Pile of Explosives
 					["u"] = 40,
 					["g"] = {
-						un(2, i(63919)),	-- Corruption-Seeking Chestguard
-						un(2, i(63918)),	-- Detective's Shoulderplates
-						un(2, i(63920)),	-- Treads of Revelation
-						un(2, i(63921)),	-- Truth-Seeker Belt
-						un(2, i(63917)),	-- Truthbreaker Shield
+						un(REMOVED_FROM_GAME, i(63919)),	-- Corruption-Seeking Chestguard
+						un(REMOVED_FROM_GAME, i(63918)),	-- Detective's Shoulderplates
+						un(REMOVED_FROM_GAME, i(63920)),	-- Treads of Revelation
+						un(REMOVED_FROM_GAME, i(63921)),	-- Truth-Seeker Belt
+						un(REMOVED_FROM_GAME, i(63917)),	-- Truthbreaker Shield
 					},
 				}),
 				q(44473, {	-- A Weapon of the Alliance
@@ -558,7 +558,7 @@ _.Zones =
 					["lvl"] = 16,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(2933)),	-- Seal of Wrynn
+						un(REMOVED_FROM_GAME, i(2933)),	-- Seal of Wrynn
 					},
 				}),
 				q(27273, {	-- An Invitation from Moonglade
@@ -591,8 +591,8 @@ _.Zones =
 					["lvl"] = 26,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(9516)),	-- Astral Knot Blouse
-						un(2, i(7511)),	-- Astral Knot Robe
+						un(REMOVED_FROM_GAME, i(9516)),	-- Astral Knot Blouse
+						un(REMOVED_FROM_GAME, i(7511)),	-- Astral Knot Robe
 					},
 				}),
 				q(27353, {	-- Blessings of the Elements
@@ -656,8 +656,8 @@ _.Zones =
 					["lvl"] = 14,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(2036)),	-- Dusty Mining Gloves
-						un(2, i(2037)),	-- Tunneler's Boots
+						un(REMOVED_FROM_GAME, i(2036)),	-- Dusty Mining Gloves
+						un(REMOVED_FROM_GAME, i(2037)),	-- Tunneler's Boots
 					},
 				}),
 				q(46274, {	-- Consoling the King
@@ -761,7 +761,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(6972)),	-- Fire-Hardened Hauberk
+						un(REMOVED_FROM_GAME, i(6972)),	-- Fire-Hardened Hauberk
 					},
 				}),
 				q(49976, {	-- Gifts of the Fallen
@@ -798,7 +798,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(6971)),	-- Fire Hardened Coif
+						un(REMOVED_FROM_GAME, i(6971)),	-- Fire Hardened Coif
 					},
 				}),
 				q(1700,  {	-- Grimand Elmore
@@ -950,8 +950,8 @@ _.Zones =
 					["lvl"] = 15,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(10747)),	-- Teacher's Sash
-						un(2, i(10748)),	-- Wanderlust Boots
+						un(REMOVED_FROM_GAME, i(10747)),	-- Teacher's Sash
+						un(REMOVED_FROM_GAME, i(10748)),	-- Wanderlust Boots
 					},
 				}),
 				q(28295, {	-- Meetup with the Caravan
@@ -981,9 +981,9 @@ _.Zones =
 					["lvl"] = 84,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(63927)),	-- Machine-Linker Girdle
-						un(2, i(63926)),	-- Reconstructing Hauberk
-						un(2, i(63925)),	-- Scavenger Bracers
+						un(REMOVED_FROM_GAME, i(63927)),	-- Machine-Linker Girdle
+						un(REMOVED_FROM_GAME, i(63926)),	-- Reconstructing Hauberk
+						un(REMOVED_FROM_GAME, i(63925)),	-- Scavenger Bracers
 					},
 				}),
 				q(28289, {	-- Moonglade Calls
@@ -1000,7 +1000,7 @@ _.Zones =
 					["lvl"] = 15,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(1893)),	-- Miner's Revenge
+						un(REMOVED_FROM_GAME, i(1893)),	-- Miner's Revenge
 					},
 				}),
 				q(6187,  {	-- Order Must Be Restored
@@ -1013,9 +1013,9 @@ _.Zones =
 					["lvl"] = 56,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(16996)),	-- Gorewood Bow
-						un(2, i(16998)),	-- Sacred Protector
-						un(2, i(16997)),	-- Stormrager
+						un(REMOVED_FROM_GAME, i(16996)),	-- Gorewood Bow
+						un(REMOVED_FROM_GAME, i(16998)),	-- Sacred Protector
+						un(REMOVED_FROM_GAME, i(16997)),	-- Stormrager
 					},
 				}),
 				q(334,   {	-- Package for Thurman
@@ -1055,7 +1055,7 @@ _.Zones =
 					["lvl"] = 17,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(6677)),	-- Spellcrafter Wand
+						un(REMOVED_FROM_GAME, i(6677)),	-- Spellcrafter Wand
 					},
 				}),
 				q(58498, {	-- Return of the Warrior King
@@ -1141,7 +1141,7 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(7298)),	-- Blade of Cunning
+						un(REMOVED_FROM_GAME, i(7298)),	-- Blade of Cunning
 					},
 				}),
 				q(28399, {	-- Stones of Binding
@@ -1212,7 +1212,7 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(22243)),	-- Small Soul Pouch
+						un(REMOVED_FROM_GAME, i(22243)),	-- Small Soul Pouch
 					},				
 				}),
 				q(29439, {	-- The Call of the World-Shaman
@@ -1367,7 +1367,7 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
 					["g"] = {
-						un(2, i(6866)),	-- Symbol of Life
+						un(REMOVED_FROM_GAME, i(6866)),	-- Symbol of Life
 					},
 				}),
 				q(29158, {	-- The Zandalar Representative
@@ -1505,7 +1505,7 @@ _.Zones =
 					["lvl"] = 25,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(3556)),	-- Dread Mage Hat 
+						un(REMOVED_FROM_GAME, i(3556)),	-- Dread Mage Hat 
 					},
 				}),		
 			}),

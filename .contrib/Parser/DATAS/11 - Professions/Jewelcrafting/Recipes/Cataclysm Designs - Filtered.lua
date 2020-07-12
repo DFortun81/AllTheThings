@@ -331,7 +331,7 @@ profession(JEWELCRAFTING, {
 						},
 						{	-- Resolute Hessonite
 							["recipeID"] = 73259--[[Resolute Hessonite]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Skillful Hessonite
 							["recipeID"] = 73267--[[Skillful Hessonite]]
@@ -563,7 +563,7 @@ profession(JEWELCRAFTING, {
 						},
 						{	-- Mystic Alicite
 							["recipeID"] = 73233--[[Mystic Alicite]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Quick Alicite
 							["recipeID"] = 73234--[[Quick Alicite]]

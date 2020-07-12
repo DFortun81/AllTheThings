@@ -10,7 +10,7 @@ _.GearSets =
 					["groups"] = {
 						i(170742),	-- Felsoul Stave
 						i(170905),	-- Felsoul Cowl
-						un(1, i(170736)),	-- Felsoul Medallion
+						un(NEVER_IMPLEMENTED, i(170736)),	-- Felsoul Medallion
 						i(170908),	-- Felsoul Shoulderpads
 						i(170741),	-- Felsoul Cloak of Destruction
 						i(170907),	-- Felsoul Robe

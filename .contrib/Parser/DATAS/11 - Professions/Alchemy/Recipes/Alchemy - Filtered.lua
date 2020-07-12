@@ -28,7 +28,7 @@ profession(ALCHEMY, {
 						},
 						{
 							["recipeID"] = 24366,--[[Greater Dreamless Sleep Potion]]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 17577,--[[Greater Arcane Protection Potion]]
@@ -48,11 +48,11 @@ profession(ALCHEMY, {
 						},
 						{
 							["recipeID"] = 11452,--[[Restorative Potion]]
-							["u"] = 1,										
+							["u"] = NEVER_IMPLEMENTED,										
 						},
 						{
 							["recipeID"] = 17579,--[[Greater Holy Protection Potion]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					},
 				},
@@ -69,11 +69,11 @@ profession(ALCHEMY, {
 						},
 						{
 							["recipeID"] = 24365,--[[Mageblood Elixir]]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 24368,--[[Mighty Troll's Blood Elixir]]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 26277,--[[Elixir of Greater Firepower]]
@@ -98,7 +98,7 @@ profession(ALCHEMY, {
 					["g"] = {
 						{
 							["recipeID"] = 24266,--[[Gurubashi Mojo Madness]]
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						}
 					},
 				},

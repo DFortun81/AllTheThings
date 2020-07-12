@@ -14,12 +14,12 @@ _.Zones =
 				q(37188, {	-- A Flash of Bronze...
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(37194, {	-- A Flash of Bronze...
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30266, {	-- Bloodied Skies
 					["coord"] = { 21.3, 71.4, 390 },

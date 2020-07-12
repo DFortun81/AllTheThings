@@ -104,7 +104,7 @@ _.Zones =
 					["sourceQuest"] = 25685,	-- The First Step
 				}),
 				q(35499, {	-- Blow up towers
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(25716, {	-- Cultists at our Doorstep
 					["provider"] = { "n", 5385 },	-- Watcher Mahar Ba
@@ -525,7 +525,7 @@ _.Zones =
 					["u"] = 40,
 					["classes"] = { 9 },	-- Warlock
 					["g"] = {
-						un(2, i(18602)),	-- Tome of Sacrifice
+						un(REMOVED_FROM_GAME, i(18602)),	-- Tome of Sacrifice
 					},
 				}),
 				q(26175, {	-- Surwich
@@ -886,9 +886,9 @@ _.Zones =
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["sourceQuest"] = 3627,	-- Uniting the Shattered Amulet
 					["g"] = {
-						un(2, i(10778)),	-- Necklace of Sanctuary
-						un(2, i(10779)),	-- Demon's Blood
-						un(2, i(10959)),	-- Demon Hide Sack
+						un(REMOVED_FROM_GAME, i(10778)),	-- Necklace of Sanctuary
+						un(REMOVED_FROM_GAME, i(10779)),	-- Demon's Blood
+						un(REMOVED_FROM_GAME, i(10959)),	-- Demon Hide Sack
 					},
 				}),
 			}),

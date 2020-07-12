@@ -11,6 +11,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
+				q(46208, {	-- A Godly Invitation
+					["coord"] = { 43.6, 63.1, 646 },
+					["classes"] = { WARRIOR },
+					["provider"] = { "n", 119527 },	-- Valarjar Warsinger
+					["sourceQuest"] = 46246,	-- Strike Them Down
+				}),
 				q(47097, {	-- A Walk to Remember
 					["sourceQuests"] = { 47202 },	-- A Personal Message
 					["provider"] = { "n", 121224 },	-- Anduin Wrynn
@@ -149,6 +155,78 @@ _.Zones =
 					["coord"] = { 44.4, 63.4, 646 },
 					["lvl"] = 110,
 				}),
+				q(46809, {	-- Delivering Lost Knowledge
+					["u"] = 40,
+					["coord"] = { 44.7, 63.2, 646 },
+					["classes"] = { DEATHKNIGHT },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				}),
+				q(47069, {	-- Delivering Lost Knowledge
+					["u"] = 40,
+					["coord"] = { 44.7, 63.2, 646 },
+					["classes"] = { MONK },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				}),
+				q(47070, {	-- Delivering Lost Knowledge
+					["u"] = 40,
+					["coord"] = { 44.7, 63.2, 646 },
+					["classes"] = { MAGE },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				}),
+				q(47071, {	-- Delivering Lost Knowledge
+					["u"] = 40,
+					["coord"] = { 44.7, 63.2, 646 },
+					["classes"] = { PALADIN },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				}),
+				q(47072, {	-- Delivering Lost Knowledge
+					["u"] = 40,
+					["coord"] = { 44.7, 63.2, 646 },
+					["classes"] = { WARRIOR },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				}),
+				q(47073, {	-- Delivering Lost Knowledge
+					["u"] = 40,
+					["coord"] = { 44.7, 63.2, 646 },
+					["classes"] = { HUNTER },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				}),
+				q(47074, {	-- Delivering Lost Knowledge
+					["u"] = 40,
+					["coord"] = { 44.7, 63.2, 646 },
+					["classes"] = { SHAMAN },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				}),
+				q(47075, {	-- Delivering Lost Knowledge
+					["u"] = 40,
+					["coord"] = { 44.7, 63.2, 646 },
+					["classes"] = { DRUID },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				}),
+				q(47076, {	-- Delivering Lost Knowledge
+					["u"] = 40,
+					["coord"] = { 44.7, 63.2, 646 },
+					["classes"] = { WARLOCK },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				}),
+				q(47077, {	-- Delivering Lost Knowledge
+					["u"] = 40,
+					["coord"] = { 44.7, 63.2, 646 },
+					["classes"] = { PRIEST },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				}),
+				q(47078, {	-- Delivering Lost Knowledge
+					["u"] = 40,
+					["coord"] = { 44.7, 63.2, 646 },
+					["classes"] = { DEMONHUNTER },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				}),
+				q(47079, {	-- Delivering Lost Knowledge
+					["u"] = 40,
+					["coord"] = { 44.7, 63.2, 646 },
+					["classes"] = { ROGUE },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				}),
 				q(46501, {	-- Grave Robbin'
 					["sourceQuests"] = { 46499 },	-- Spiders, Huh?
 					["provider"] = { "n", 119886 },	-- Excavator Karla
@@ -257,7 +335,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(47067, {	-- Seeking Lost Knowledge
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.2, 646 },
 					["lvl"] = 110,
@@ -509,7 +587,6 @@ _.Zones =
 				--[[
 				q(45571),	-- A Bit of Espionage
 				q(45343),	-- A Curious Contagion
-				q(46208),	-- A Godly Invitation
 				q(46336),	-- A Golden Ticket
 				q(43407),	-- A Hero's Weapon
 				q(47202, {	-- A Personal Message
@@ -530,7 +607,6 @@ _.Zones =
 				q(46065, {	-- An Impossible Foe
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(45180),	-- An Island of War
 				q(46030),	-- An Urgent Warning
 				q(45021),	-- Answers Unknown
 				q(48641),	-- Armies of Legionfall
@@ -582,20 +658,7 @@ _.Zones =
 				q(45825),	-- Death Knight
 				q(42680),	-- Deciphering the Letter
 				q(46247),	-- Defending Broken Isles
-				q(47073),	-- Delivering Lost Knowledge
-				q(47071),	-- Delivering Lost Knowledge
-				q(47074),	-- Delivering Lost Knowledge
-				q(47075),	-- Delivering Lost Knowledge
-				q(47072),	-- Delivering Lost Knowledge
-				q(47078),	-- Delivering Lost Knowledge
-				q(47070),	-- Delivering Lost Knowledge
-				q(47077),	-- Delivering Lost Knowledge
-				q(47069),	-- Delivering Lost Knowledge
-				q(47076),	-- Delivering Lost Knowledge
-				q(46809),	-- Delivering Lost Knowledge
-				q(47079),	-- Delivering Lost Knowledge
 				q(45828),	-- Demon Hunter
-				q(45173),	-- Desperate Times
 				q(46103),	-- Dread Infiltrators
 				q(42911),	-- Drowned Mana
 				q(45829),	-- Druid
@@ -775,7 +838,6 @@ _.Zones =
 				q(46127, {	-- Thwarting the Twins
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(45172),	-- To Battle!
 				q(45027),	-- To the Broken Shore
 				q(45349),	-- To the Broken Shore
 				q(46675),	-- To Track a Demon
@@ -792,7 +854,6 @@ _.Zones =
 				q(45822),	-- Warrior
 				q(45385),	-- We Must be Prepared!
 				q(45103),	-- We Ride!
-				q(45179),	-- Win the Crowd
 				q(46069),	-- Worthy of the Title
 				q(46256),	-- X Treasures Found, 1 Challenge Attempted
 				q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated

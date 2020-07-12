@@ -164,7 +164,7 @@ _.Zones =
 					["races"] = { DRAENEI },
 					["classes"] = { PRIEST },
 					["g"] = {
-						un(2, i(23931)),	-- Azure Watch Robes
+						un(REMOVED_FROM_GAME, i(23931)),	-- Azure Watch Robes
 					},
 				}),
 				q(9530,  {	-- I've Got a Plant
@@ -291,7 +291,7 @@ _.Zones =
 					["sourceQuest"] = 9671,	-- Urgent Delivery
 				}),
 				q(9751,  {	-- The Bloodcurse Legacy (duplicate, never implemented?)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 17240 },	-- Admiral Odesyus
 					["coord"] = { 47.0, 70.2, 97 },
 					["races"] = ALLIANCE_ONLY,

@@ -34,7 +34,7 @@ _.GearSets =
 								},
 								{	-- Streamtalker Necklace [Restoration]
 									["itemID"] = 170728,	-- Streamtalker Necklace
-									["u"] = 1,	-- 
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Streamtalker Bracers [Restoration]
 									["itemID"] = 170902,	-- Streamtalker Bracers
@@ -82,7 +82,7 @@ _.GearSets =
 								},
 								{	-- Streamtalker Medallion [Elemental]
 									["itemID"] = 170719,	-- Streamtalker Medallion
-									["u"] = 1,	--
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Streamtalker Pauldrons [Elemental]
 									["itemID"] = 170884,	-- Streamtalker Pauldrons
@@ -130,7 +130,7 @@ _.GearSets =
 								},
 								{	-- Streamtalker Choker [Enhancement]
 									["itemID"] = 170714,	-- Streamtalker Choker	
-									["u"] = 1,	--
+									["u"] = NEVER_IMPLEMENTED,
 								},
 								{	-- Streamtalker Armguard [Enhancement]
 									["itemID"] = 170894,	-- Streamtalker Armguard	

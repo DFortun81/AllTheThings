@@ -25,7 +25,7 @@ _.Zones =
 					["g"] = {
 						i(9598),	-- Sleeping Robes
 						i(18957),	-- Brushwood Blade
-						un(2, i(9602)),	-- Brushwood Blade
+						un(REMOVED_FROM_GAME, i(9602)),	-- Brushwood Blade
 					},
 				}),
 				q(1684,  {	-- Elanaria
@@ -61,7 +61,7 @@ _.Zones =
 					["races"] = { NIGHTELF },
 					["classes"] = { PRIEST },
 					["g"] = {
-						un(2, i(16604)),	-- Moon Robes of Elune
+						un(REMOVED_FROM_GAME, i(16604)),	-- Moon Robes of Elune
 					},
 				}),
 				q(476,   {	-- Gnarlpine Corruption
@@ -230,7 +230,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 476,	-- Gnarlpine Corruption
 					["g"] = {
-						un(2, i(9603)),	-- Gritroot Staff NOTE: This is an old reward, quest has been repurposed
+						un(REMOVED_FROM_GAME, i(9603)),	-- Gritroot Staff NOTE: This is an old reward, quest has been repurposed
 					},
 				}),
 				q(487,   {	-- The Road to Darnassus
@@ -321,8 +321,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 483,	-- The Relics of Wakening
 					["g"] = {
-						un(2, i(5459)),	-- Defender Axe	NOTE: This is an old reward, quest has been repurposed
-						un(2, i(5587)),	-- Thornroot Club	NOTE: This is an old reward, quest has been repurposed
+						un(REMOVED_FROM_GAME, i(5459)),	-- Defender Axe	NOTE: This is an old reward, quest has been repurposed
+						un(REMOVED_FROM_GAME, i(5587)),	-- Thornroot Club	NOTE: This is an old reward, quest has been repurposed
 					},
 				}),
 				q(32328, {	-- Victorious Return

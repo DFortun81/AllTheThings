@@ -415,7 +415,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				cr(114537, e(1829, {	-- Helya
 					ach(11581, {	-- Ahead of the Curve: Helya
-						["u"] = 2,	-- Legacy Achievement
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					ach(11394, crit(3)),	-- Trial of Valor / Helya
 					ach(11426, crit(3)),	-- Heroic: Trial of Valor / Helya
@@ -495,28 +495,28 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				cr(114537, e(1829, {	-- Helya
 					ach(11581, {	-- Ahead of the Curve: Helya
-						["u"] = 2,	-- Legacy Achievement
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					ach(11580, {	-- Cutting Edge: Helya
-						["u"] = 2,	-- Legacy Achievement
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					ach(11394, crit(3)),	-- Trial of Valor / Helya
 					ach(11426, crit(3)),	-- Heroic: Trial of Valor / Helya
 					ach(11398),	-- Mythic: Helya
 					ach(11377),	-- Patient Zero
 					ach(11405, {	-- Realm First! Helya
-						["u"] = 2,	-- Legacy Achievement
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					ach(11387, {	-- The Chosen
-						["u"] = 2,	-- Legacy Achievement
+						["u"] = REMOVED_FROM_GAME,
 						["crs"] = { 116229 },	-- Mythical Champion of the Chosen Dead
 						["g"] = {
 							title(347, {	-- The Chosen
-								["u"] = 2,	-- Removed From Game
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(143508, {	-- Ensemble: Vestment of the Chosen Dead
 								["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warlock
-								["u"] = 2,	-- Removed From Game
+								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									i(143346),	-- Circlet of the Chosen Dead
 									i(143356),	-- Mantle of the Chosen Dead
@@ -531,7 +531,7 @@ _.Instances = { tier(7, {	-- Legion
 							}),		
 							i(143512, {	-- Ensemble: Garb of the Chosen Dead
 								["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
-								["u"] = 2,	-- Removed From Game
+								["u"] = REMOVED_FROM_GAME,
 								["g"] = {	
 									i(143348),	-- Hood of the Chosen Dead
 									i(143354),	-- Shoulderpads of the Chosen Dead
@@ -546,7 +546,7 @@ _.Instances = { tier(7, {	-- Legion
 							}),		
 							i(143516, {	-- Ensemble: Chains of the Chosen Dead
 								["classes"] = { 3, 7 },	-- Hunter, Shaman
-								["u"] = 2,	-- Removed From Game
+								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									i(143347),	-- Coif of the Chosen Dead
 									i(143357),	-- Pauldrons of the Chosen Dead
@@ -561,7 +561,7 @@ _.Instances = { tier(7, {	-- Legion
 							}),		
 							i(143520, {	-- Ensemble: Funerary Plate of the Chosen Dead
 								["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
-								["u"] = 2,	-- Removed From Game
+								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									i(143345),	-- Visor of the Chosen Dead
 									i(143355),	-- Shoulderplates of the Chosen Dead

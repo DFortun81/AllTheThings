@@ -98,10 +98,10 @@ _.Zones =
 					["sourceQuest"] = 31395,	-- A Celestial Experience
 				}),
 				q(30596, {	-- A Zandalari Troll? (A) (Triggers when completing "Mogu?! Oh No-gu!")
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30615, {	-- A Zandalari Troll? (H)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30506, {	-- Admiral Taylor has Awakened (3 versions of this quest from 3 different npc's but completing one gives credit for all 3)
 					["coord"] = { 70.8, 90.4, 379 },
@@ -567,13 +567,13 @@ _.Zones =
 					["provider"] = { "n", 59077 },	-- Apothecary Cheng
 				}),
 				q(30673, {	-- Holed Up (NYI - duplicate/removed)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30680, {	-- Holed Up (NYI - duplicate/removed)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30681, {	-- Holed Up (NYI - duplicate/removed)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30682, {	-- Holed Up
 					["coord"] = { 42.9, 88.3, 379 },
@@ -659,7 +659,7 @@ _.Zones =
 					["provider"] = { "n", 60677 },	-- Uncle Tallmug
 				}),
 				q(30744, {	-- Kota Blend (NYI? likely duplicate)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 					["coord"] = { 42.5, 69.4, 379 },
 					["provider"] = { "n", 60503 },	-- Uncle Keenbean
 				}),
@@ -889,7 +889,7 @@ _.Zones =
 					["provider"] = { "n", 59821 },	-- Bao Jian
 				}),
 				q(30766, {	-- Profiting off of the Past (NYI - duplicate)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30469, {	-- Repossession
 					["coord"] = { 74.9, 88.8, 379 },
@@ -915,7 +915,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(30765, {	-- Regaining Honor	-- probably triggers around the completion of "A Terrible Sacrifice"
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(32318, {	-- Regeneration Takes Time
 					["races"] = HORDE_ONLY,
@@ -1446,7 +1446,7 @@ _.Zones =
 					["provider"] = { "n", 60981 },	-- Lin Tenderpaw
 				}),
 				q(31518, {	-- The Vale of Eternal Blossoms (most likely NYI. "A Witness to History" is the opening of the gates)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30496, {	-- The Waterspeaker's Staff
 					["coord"] = { 75.1, 87.9, 379 },
@@ -1601,7 +1601,7 @@ _.Zones =
 					["sourceQuest"] = 57071,	-- No Brew Left Behind
 				}),
 				q(30490, {	-- Yakity Yak (this version is not in game)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30587, {	-- Yakity Yak
 					["cr"] = 59718,	-- Burilgi Despoiler

@@ -17,11 +17,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				ach(576),	-- The Fall of Naxxramas (10 player)
 				{
 					["achievementID"] = 2187,	-- The Undying
-					["u"] = 4,	-- Legacy Achievement
+					["u"] = 4,
 					["groups"] = {
 						{
 							["titleID"] = 109,	-- The Undying
-							["u"] = 37,	-- Removed From Game
+							["u"] = REMOVED_FROM_GAME,
 						},
 					},
 				},
@@ -884,11 +884,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				ach(577),	-- The Fall of Naxxramas (25 player)
 				{
 					["achievementID"] = 2186,	-- The Immortal
-					["u"] = 4,	-- Legacy Achievement
+					["u"] = 4,
 					["groups"] = {
 						{
 							["titleID"] = 108,	-- The Immortal
-							["u"] = 37,	-- Removed From Game
+							["u"] = REMOVED_FROM_GAME,
 						},
 					},
 				},
@@ -1918,11 +1918,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["groups"] = {
 							{
 								["achievementID"] = 1402,	-- Realm First! Conqueror of Naxxramas
-								["u"] = 4,	-- Legacy Achievement
+								["u"] = 4,
 								["groups"] = {
 									{
 										["titleID"] = 90,	-- %, Conqueror of Naxxramas
-										["u"] = 37,	-- Removed From Game
+										["u"] = REMOVED_FROM_GAME,
 									},
 								},
 							},

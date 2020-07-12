@@ -33,7 +33,7 @@ _.WorldEvents =
 				["f"] = 104,	-- Quest Items
 				["g"] = {
 					q(7906,  {	-- Darkmoon Cards - Beast (NYI?)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(7907,  {	-- Darkmoon Beast Deck
 						["repeatable"] = true,
@@ -234,14 +234,14 @@ _.WorldEvents =
 				["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
 				["u"] = 40,	-- Legacy Quests
 				["g"] = {
-					un(2, i(19491)),	-- Amulet of the Darkmoon
+					un(REMOVED_FROM_GAME, i(19491)),	-- Amulet of the Darkmoon
 				},
 			}),
 			q(7940,  {	-- 1200 Tickets - Orb of the Darkmoon
 				["u"] = 40,	-- Legacy Quests
 				["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
 				["g"] = {
-					un(2, i(19426)),	-- Orb of the Darkmoon
+					un(REMOVED_FROM_GAME, i(19426)),	-- Orb of the Darkmoon
 				},
 			}),
 			q(29456, {	-- A Captured Banner
@@ -351,7 +351,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29468, {	-- Baby Needs Two Pair of Shoes
-				["u"] = 1,
+				["u"] = NEVER_IMPLEMENTED,
 				["requireSkill"] = BLACKSMITHING,
 			}),
 			q(29520, {	-- Banners, Banners Everywhere!

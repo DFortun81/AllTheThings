@@ -7,9 +7,9 @@ _.WorldEvents =
 		["groups"] = {
 			n(-553, {	-- 2006 ICoke Promotion
 				n(-548, {	-- China Only
-					un(3, i(19055)),	-- Green Dragon Orb (Tiny Green Dragon)
-					un(3, i(22781)),	-- Polar Bear Collar (Poley)
-					un(3, i(19054)),	-- Red Dragon Orb (Tiny Red Dragon)
+					un(REMOVED_FROM_GAME, i(19055)),	-- Green Dragon Orb (Tiny Green Dragon)
+					un(REMOVED_FROM_GAME, i(22781)),	-- Polar Bear Collar (Poley)
+					un(REMOVED_FROM_GAME, i(19054)),	-- Red Dragon Orb (Tiny Red Dragon)
 				}),
 			}),
 		},

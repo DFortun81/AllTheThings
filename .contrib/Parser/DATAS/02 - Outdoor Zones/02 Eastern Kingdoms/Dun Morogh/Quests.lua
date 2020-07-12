@@ -37,8 +37,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(1009)),	-- Compact Hammer
-						un(2, i(2218)),	-- Craftsman's Dagger
+						un(REMOVED_FROM_GAME, i(1009)),	-- Compact Hammer
+						un(REMOVED_FROM_GAME, i(2218)),	-- Craftsman's Dagger
 					},
 				}),
 				q(384,   {	-- Beer Basted Boar Ribs
@@ -147,7 +147,7 @@ _.Zones =
 					["races"] = { 3 },	-- Dwarf
 					["classes"] = { 5 },	-- Priest
 					["g"] = {
-						un(2, i(16605)),	-- Friar's Robes of the Light
+						un(REMOVED_FROM_GAME, i(16605)),	-- Friar's Robes of the Light
 					},
 				}),
 				q(25998, {	-- Get to the Airfield
@@ -204,8 +204,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(12000)),	-- Limb Cleaver
-						un(2, i(11964)),	-- Swiftstrike Cudgel
+						un(REMOVED_FROM_GAME, i(12000)),	-- Limb Cleaver
+						un(REMOVED_FROM_GAME, i(11964)),	-- Swiftstrike Cudgel
 					},
 				}),
 				q(25932, {	-- It's Raid Night Every Night
@@ -272,7 +272,7 @@ _.Zones =
 					["g"] = {
 						--Note!! When questing confirm that is isn't obtainable as reports says it was and it was previously marked unobtainable
 						--Might be racial locked and not unobtainable
-						un(2, i(3103)),	-- Coldridge Hammer	-- Was a quest reward prior to Cataclysm and no longer isn't.
+						un(REMOVED_FROM_GAME, i(3103)),	-- Coldridge Hammer	-- Was a quest reward prior to Cataclysm and no longer isn't.
 						i(10549, {	-- Rancher's Trousers
 							["ignoreSource"] = true,	-- White Item
 						}),
@@ -337,7 +337,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(3565)),	-- Beerstained Gloves
+						un(REMOVED_FROM_GAME, i(3565)),	-- Beerstained Gloves
 					},
 				}),
 				q(317,   {	-- Stocking Jetsteam

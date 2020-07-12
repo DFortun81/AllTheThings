@@ -18,12 +18,12 @@ _.Instances = { tier(1, {	-- Classic
 					{ "n", 5716 },	-- Zul'Lor
 				},
 				["g"] = {
-					un(2, i(10783)),	-- Atal'ai Spaulders
-					un(2, i(10787)),	-- Atal'ai Gloves
-					un(2, i(10784)),	-- Atal'ai Breastplate
-					un(2, i(10788)),	-- Atal'ai Girdle
-					un(2, i(10785)),	-- Atal'ai Leggings
-					un(2, i(10786)),	-- Atal'ai Boots
+					un(REMOVED_FROM_GAME, i(10783)),	-- Atal'ai Spaulders
+					un(REMOVED_FROM_GAME, i(10787)),	-- Atal'ai Gloves
+					un(REMOVED_FROM_GAME, i(10784)),	-- Atal'ai Breastplate
+					un(REMOVED_FROM_GAME, i(10788)),	-- Atal'ai Girdle
+					un(REMOVED_FROM_GAME, i(10785)),	-- Atal'ai Leggings
+					un(REMOVED_FROM_GAME, i(10786)),	-- Atal'ai Boots
 				},
 			}),
 			n(QUESTS, {
@@ -32,12 +32,12 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["classes"] = { DRUID },
 					["g"] = {
-						un(2, i(22272)),	-- Forest's Embrace
-						un(2, i(53562)),	-- Grizzled Hide
-						un(2, i(22274)),	-- Grizzled Pelt
-						un(2, i(53560)),	-- Moonshadow Staff
-						un(2, i(22458)),	-- Moonshadow Stave
-						un(2, i(53561)),	-- Thicket's Embrace
+						un(REMOVED_FROM_GAME, i(22272)),	-- Forest's Embrace
+						un(REMOVED_FROM_GAME, i(53562)),	-- Grizzled Hide
+						un(REMOVED_FROM_GAME, i(22274)),	-- Grizzled Pelt
+						un(REMOVED_FROM_GAME, i(53560)),	-- Moonshadow Staff
+						un(REMOVED_FROM_GAME, i(22458)),	-- Moonshadow Stave
+						un(REMOVED_FROM_GAME, i(53561)),	-- Thicket's Embrace
 					},
 				}),
 				q(8257, {	-- Blood of Morphaz
@@ -45,9 +45,9 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 8405 },	-- Ogtinc
 					["classes"] = { PRIEST },
 					["g"] = {
-						un(2, i(19990)),	-- Blessed Prayer Beads
-						un(2, i(20006)),	-- Circle of Hope
-						un(2, i(20082)),	-- Woestave
+						un(REMOVED_FROM_GAME, i(19990)),	-- Blessed Prayer Beads
+						un(REMOVED_FROM_GAME, i(20006)),	-- Circle of Hope
+						un(REMOVED_FROM_GAME, i(20082)),	-- Woestave
 					},
 				}),
 				q(8413, {	-- Da Voodoo
@@ -55,9 +55,9 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 6176 },	-- Bath'rah the Windwatcher
 					["classes"] = { SHAMAN },
 					["g"] = {
-						un(2, i(20369)),	-- Azurite Fists
-						un(2, i(20503)),	-- Enamored Water Spirit
-						un(2, i(20556)),	-- Wildstaff
+						un(REMOVED_FROM_GAME, i(20369)),	-- Azurite Fists
+						un(REMOVED_FROM_GAME, i(20503)),	-- Enamored Water Spirit
+						un(REMOVED_FROM_GAME, i(20556)),	-- Wildstaff
 					},
 				}),
 				q(8253, {	-- Destroy Morphaz
@@ -65,9 +65,9 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 8379 },	-- Archmage Xylem
 					["classes"] = { MAGE },
 					["g"] = {
-						un(2, i(20037)),	-- Arcane Crystal Pendant
-						un(2, i(20036)),	-- Fire Ruby
-						un(2, i(20035)),	-- Glacial Spike
+						un(REMOVED_FROM_GAME, i(20037)),	-- Arcane Crystal Pendant
+						un(REMOVED_FROM_GAME, i(20036)),	-- Fire Ruby
+						un(REMOVED_FROM_GAME, i(20035)),	-- Glacial Spike
 					},
 				}),
 				q(27605, {	-- Eranikus
@@ -83,16 +83,16 @@ _.Instances = { tier(1, {	-- Classic
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["g"] = {
-						un(2, i(20505)),	-- Chivalrous Signet
-						un(2, i(20504)),	-- Lightforged Blade
-						un(2, i(20512)),	-- Sanctified Orb
+						un(REMOVED_FROM_GAME, i(20505)),	-- Chivalrous Signet
+						un(REMOVED_FROM_GAME, i(20504)),	-- Lightforged Blade
+						un(REMOVED_FROM_GAME, i(20512)),	-- Sanctified Orb
 					},
 				}),
 				q(1475, {	-- Into The Temple of Atal'Hakkar
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(1490)),	-- Guardian Talisman
+						un(REMOVED_FROM_GAME, i(1490)),	-- Guardian Talisman
 					},
 				}),
 				q(27604, {	-- Jammal'an the Prophet
@@ -101,10 +101,10 @@ _.Instances = { tier(1, {	-- Classic
 				q(3447, {	-- Secret of the Circle
 					["u"] = 40,
 					["g"] = {
-						un(2, i(10773, { 		-- Hakkari Urn
-							un(2, i(10781)),	-- Hakkari Breastplate
-							un(2, i(10782)),	-- Hakkari Shroud
-							un(2, i(10780)),	-- Mark of Hakkar
+						un(REMOVED_FROM_GAME, i(10773, { 		-- Hakkari Urn
+							un(REMOVED_FROM_GAME, i(10781)),	-- Hakkari Breastplate
+							un(REMOVED_FROM_GAME, i(10782)),	-- Hakkari Shroud
+							un(REMOVED_FROM_GAME, i(10780)),	-- Mark of Hakkar
 						})),
 					},
 				}),
@@ -113,9 +113,9 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 8379 },	-- Archmage Xylem
 					["classes"] = { ROGUE },
 					["g"] = {
-						un(2, i(19982)),	-- Duskbat Drape
-						un(2, i(19984)),	-- Ebon Mask
-						un(2, i(20255)),	-- Whisperwalk Boots
+						un(REMOVED_FROM_GAME, i(19982)),	-- Duskbat Drape
+						un(REMOVED_FROM_GAME, i(19984)),	-- Ebon Mask
+						un(REMOVED_FROM_GAME, i(20255)),	-- Whisperwalk Boots
 					},
 				}),
 				q(27633, {	-- The Blood God Hakkar
@@ -124,17 +124,17 @@ _.Instances = { tier(1, {	-- Classic
 				q(3528, {	-- The God Hakkar
 					["u"] = 40,
 					["g"] = {
-						un(2, i(10749)),	-- Avenguard Helm
-						un(2, i(10750)),	-- Lifeforce Dirk
-						un(2, i(10751)),	-- Gemburst Circlet
+						un(REMOVED_FROM_GAME, i(10749)),	-- Avenguard Helm
+						un(REMOVED_FROM_GAME, i(10750)),	-- Lifeforce Dirk
+						un(REMOVED_FROM_GAME, i(10751)),	-- Gemburst Circlet
 					},
 				}),
 				q(27634, {	-- The God Hakkar
 					["u"] = 40,
 					["g"] = {
-						un(2, i(10749)),	-- Avenguard Helm
-						un(2, i(10750)),	-- Lifeforce Dirk
-						un(2, i(10751)),	-- Gemburst Circlet
+						un(REMOVED_FROM_GAME, i(10749)),	-- Avenguard Helm
+						un(REMOVED_FROM_GAME, i(10750)),	-- Lifeforce Dirk
+						un(REMOVED_FROM_GAME, i(10751)),	-- Gemburst Circlet
 					},
 				}),
 				q(8232, {	-- The Green Drake
@@ -142,16 +142,16 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 8405 },	-- Ogtinc
 					["classes"] = { HUNTER },
 					["g"] = {
-						un(2, i(19991)),	-- Devilsaur Eye
-						un(2, i(19992)),	-- Devilsaur Tooth
-						un(2, i(20083)),	-- Hunting Spear
+						un(REMOVED_FROM_GAME, i(19991)),	-- Devilsaur Eye
+						un(REMOVED_FROM_GAME, i(19992)),	-- Devilsaur Tooth
+						un(REMOVED_FROM_GAME, i(20083)),	-- Hunting Spear
 					},
 				}),
 				q(1445, {	-- [DEPRECATED]The Temple of Atal'Hakkar
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(1490)),	-- Guardian Talisman
+						un(REMOVED_FROM_GAME, i(1490)),	-- Guardian Talisman
 					},
 				}),
 				q(8422, {	-- Trolls of a Feather
@@ -159,9 +159,9 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 14470 },	-- Impsy
 					["classes"] = { WARLOCK },
 					["g"] = {
-						un(2, i(20534)),	-- Abyss Shard
-						un(2, i(20530)),	-- Robes of Servitude
-						un(2, i(20536)),	-- Soul Harvester
+						un(REMOVED_FROM_GAME, i(20534)),	-- Abyss Shard
+						un(REMOVED_FROM_GAME, i(20530)),	-- Robes of Servitude
+						un(REMOVED_FROM_GAME, i(20536)),	-- Soul Harvester
 					},
 				}),
 				q(8425, {	-- Voodoo Feathers
@@ -169,9 +169,9 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["classes"] = { WARRIOR },
 					["g"] = {
-						un(2, i(20130)),	-- Diamond Flask
-						un(2, i(20521)),	-- Fury Visor
-						un(2, i(20517)),	-- Razorsteel Shoulders
+						un(REMOVED_FROM_GAME, i(20130)),	-- Diamond Flask
+						un(REMOVED_FROM_GAME, i(20521)),	-- Fury Visor
+						un(REMOVED_FROM_GAME, i(20517)),	-- Razorsteel Shoulders
 					},
 				}),
 			}),
@@ -369,7 +369,7 @@ _.Instances = { tier(1, {	-- Classic
 					["questID"] = 3373,	-- The Essence of Eranikus
 					["u"] = 40,
 					["g"] = {
-						un(2, i(10455)),	-- Chained Essence of Eranikus
+						un(REMOVED_FROM_GAME, i(10455)),	-- Chained Essence of Eranikus
 					},
 				}),
 				i(10828),	-- Dire Nail
@@ -383,16 +383,16 @@ _.Instances = { tier(1, {	-- Classic
 			n(8580, {	-- Atal'alarion
 				["u"] = 43,
 				["g"] = {
-					un(2, i(10799)),	-- Headspike
-					un(2, i(10800)),	-- Darkwater Bracers
-					un(2, i(10798)),	-- Atal'alarion Tusk Ring
+					un(REMOVED_FROM_GAME, i(10799)),	-- Headspike
+					un(REMOVED_FROM_GAME, i(10800)),	-- Darkwater Bracers
+					un(REMOVED_FROM_GAME, i(10798)),	-- Atal'alarion Tusk Ring
 				},
 			}),
 			n(5708, {	-- Spawn of Hakkar
 				["u"] = 43,
 				["g"] = {
-					un(2, i(10801)),	-- Slitherscale Boots
-					un(2, i(10802)),	-- Wingveil Cloak
+					un(REMOVED_FROM_GAME, i(10801)),	-- Slitherscale Boots
+					un(REMOVED_FROM_GAME, i(10802)),	-- Wingveil Cloak
 				},
 			}),
 		},

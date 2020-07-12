@@ -8,7 +8,7 @@ _.GearSets =
 			["groups"] = {
 				n(-141, {	-- Felsoul 
 					["groups"] = {
-						un(1, i(154022)),	-- Felsoul Wand
+						un(NEVER_IMPLEMENTED, i(154022)),	-- Felsoul Wand
 						i(154024),	-- Felsoul Stave
 						i(154016),	-- Felsoul Cowl
 						i(154009),	-- Felsoul Medallion

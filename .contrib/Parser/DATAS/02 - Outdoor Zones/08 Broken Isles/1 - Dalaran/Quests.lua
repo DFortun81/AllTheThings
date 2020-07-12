@@ -587,7 +587,6 @@ _.Zones =
 						{ "n", 115464 },	-- Archmage Khadgar
 					},
 				}),
-			--	q(45173)	-- Desperate Times -- mission board
 				q(45560, {	-- Destruction: Rumblings Near Feltotem
 					["sourceQuests"] = {
 						47031,	-- Legion Threat: Highmountain
@@ -1611,7 +1610,6 @@ _.Zones =
 					["coord"] = { 44.9, 28.8, 627 },
 					["lvl"] = 110,
 				}),
-			--	q(45172),	-- To Battle! -- granted by mission board
 				q(42002, {	-- To Northrend
 					["sourceQuests"] = { 42000 },	-- Seeker of Truth
 					["classes"] = { PALADIN },
@@ -1747,7 +1745,6 @@ _.Zones =
 				q(46206, {	-- Whispers of a Frightened World
 					["u"] = 40,	-- Legacy Quests — version that used to be automatically given?
 				}),
-			--	q(45179),	-- Win the Crowd -- granted by mission board
 				q(47019, {	-- Windwalker: Rumblings Near Feltotem
 					["sourceQuests"] = {
 						47031,	-- Legion Threat: Highmountain

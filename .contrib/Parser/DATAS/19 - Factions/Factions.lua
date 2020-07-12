@@ -262,7 +262,7 @@ _.Factions =
 		faction(749), 	-- Hydraxian Waterlords
 		faction(93),	-- Magram Clan Centaur
 		faction(349), 	-- Ravenholdt
-		un(2, faction(809)),	-- Shen'dralar
+		un(REMOVED_FROM_GAME, faction(809)),	-- Shen'dralar
 		faction(169, { 	-- Steamwheedle Cartel
 			["collectible"] = false,
 			["icon"] = "Interface\\Icons\\achievement_Goblinheaddead",
@@ -275,7 +275,7 @@ _.Factions =
 		}),
 		faction(59), 	-- Thorium Brotherhood
 		faction(576), 	-- Timbermaw Hold
-		un(2, faction(270)), 	-- Zandalar Tribe
+		un(REMOVED_FROM_GAME, faction(270)), 	-- Zandalar Tribe
 	}),
 	tier(2, {	-- The Burning Crusade
 		faction(1012), 	-- Ashtongue Deathsworn

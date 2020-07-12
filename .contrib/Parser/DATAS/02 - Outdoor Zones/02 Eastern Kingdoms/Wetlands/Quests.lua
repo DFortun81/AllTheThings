@@ -15,8 +15,8 @@ _.Zones =
 				q(304,   {	-- A Grim Task
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(2916)),	-- Gold Lion Shield
-						un(2, i(2917)),	-- Tranquil Ring
+						un(REMOVED_FROM_GAME, i(2916)),	-- Gold Lion Shield
+						un(REMOVED_FROM_GAME, i(2917)),	-- Tranquil Ring
 					},
 				}),
 				q(25820, {	-- A Mother's Worries
@@ -34,8 +34,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(2545)),	-- Malleable Chain Leggings
-						un(2, i(3561)),	-- Resilient Poncho
+						un(REMOVED_FROM_GAME, i(2545)),	-- Malleable Chain Leggings
+						un(REMOVED_FROM_GAME, i(3561)),	-- Resilient Poncho
 						i(3681),	-- Recipe: Crocolisk Gumbo (not unobtainable)
 					},
 				}),
@@ -56,9 +56,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(3558)),	-- Fen Keeper Robe
-						un(2, i(1273)),	-- Forest Chain
-						un(2, i(2263)),	-- Phytoblade
+						un(REMOVED_FROM_GAME, i(3558)),	-- Fen Keeper Robe
+						un(REMOVED_FROM_GAME, i(1273)),	-- Forest Chain
+						un(REMOVED_FROM_GAME, i(2263)),	-- Phytoblade
 					},
 				}),
 				q(25801, {	-- Claws from the Deep
@@ -84,7 +84,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(2943)),	-- Eye of Paleth
+						un(REMOVED_FROM_GAME, i(2943)),	-- Eye of Paleth
 					},
 				}),
 				q(25856, {	-- Crocolisk Hides
@@ -108,8 +108,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(3209)),	-- Ancient War Sword
-						un(2, i(6194)),	-- Barreling Reaper
+						un(REMOVED_FROM_GAME, i(3209)),	-- Ancient War Sword
+						un(REMOVED_FROM_GAME, i(6194)),	-- Barreling Reaper
 					},
 				}),
 				q(25864, {	-- Dinosaur Crisis
@@ -149,7 +149,7 @@ _.Zones =
 					["provider"] = { "n", 41128 },	-- Dunlor Marblebeard
 				}),
 				q(26138, {	-- Ferilon Leafborn
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(25721, {	-- Fight the Flood
 					["sourceQuests"] = { 25770 },	-- Keg Run
@@ -262,9 +262,9 @@ _.Zones =
 					["u"] = 40,	-- Legacy Quests
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(5246)),	-- Excavation Rod
-						un(2, i(3493)),	-- Raptor's End
-						un(2, i(3566)),	-- Raptorbane Armor
+						un(REMOVED_FROM_GAME, i(5246)),	-- Excavation Rod
+						un(REMOVED_FROM_GAME, i(3493)),	-- Raptor's End
+						un(REMOVED_FROM_GAME, i(3566)),	-- Raptorbane Armor
 					},
 				}),
 				q(25802, {	-- Reclaiming Goods
@@ -289,8 +289,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(2950)),	-- Icicle Rod
-						un(2, i(2949)),	-- Mariner Boots
+						un(REMOVED_FROM_GAME, i(2950)),	-- Icicle Rod
+						un(REMOVED_FROM_GAME, i(2949)),	-- Mariner Boots
 					},
 				}),
 				q(25804, {	-- Search More Hovels
@@ -427,8 +427,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(4504)),	-- Dwarven Guard Cloak
-						un(2, i(4505)),	-- Swampland Trousers
+						un(REMOVED_FROM_GAME, i(4504)),	-- Dwarven Guard Cloak
+						un(REMOVED_FROM_GAME, i(4505)),	-- Swampland Trousers
 					},
 				}),
 				q(25815, {	-- The Third Fleet
@@ -470,7 +470,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(2, i(2913)),	-- Silk Mantle of Gamn
+						un(REMOVED_FROM_GAME, i(2913)),	-- Silk Mantle of Gamn
 					},
 				}),
 				q(26981, {	-- Whelgar's Retreat

@@ -104,7 +104,6 @@ _.ExpansionFeatures =
 							45834,	-- Stolen Souls
 						},
 					}),
-					q(46208),	-- A Godly Invitation
 					q(43425, {	-- A Hero's Weapon
 						["coord"] = { 58.3, 84.6, 695 },
 						["classes"] = { WARRIOR },
@@ -122,8 +121,12 @@ _.ExpansionFeatures =
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 108961 },	-- Sergeant Dalton
 					}),
-					q(45180),	-- An Island of War
-					q(45986),	-- An Urgent Warning
+					q(45986, {	-- An Urgent Warning
+						["u"] = 40,
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 118406 },	-- Injured Shieldmaiden
+						["isBreadcrumb"] = true,
+					}),
 					q(44850, {	-- Arming the Army
 						["maps"] = { 649 },	-- Helheim
 						["coord"] = { 34.3, 28.5, 649 },	-- Helheim
@@ -168,7 +171,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 96469 },	-- Odyn
 						["sourceQuest"] = 43506,	-- Black Rook Hold: Greater Power
 					}),
-					q(44221),	-- Champion Armaments
+					q(44221, {	-- Champion Armaments
+						["coord"] = { 62.3, 25.8, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 110437 },	-- Haklang Ulfsson
+						["description"] = "Only available if you you have the |cFFFFD700Heavenly Forge|r order hall upgrade.",
+					}),
 					q(42616, {	-- Champion: Dvalen Ironrune
 						["coord"] = { 57.1, 75.0, 695 },
 						["classes"] = { WARRIOR },
@@ -249,14 +257,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 96469 },	-- Odyn
 						["sourceQuest"] = 42597,	-- Odyn's Summons
 					}),
-					q(47072),	-- Delivering Lost Knowledge
 					q(42918, {	-- Demonic Runes
 						["coord"] = { 58.3, 84.6, 695 },
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 96469 },	-- Odyn
 						["sourceQuest"] = 43090,	-- Ulduar's Oath
 					}),
-					q(45173),	-- Desperate Times
 					q(42611, {	-- Einar the Runecaster
 						["coord"] = { 59.7, 13.3, 695 },
 						["classes"] = { WARRIOR },
@@ -277,7 +283,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 116193 },	-- Aerylia
 						["sourceQuest"] = 44849,	-- Recruitment Drive
 					}),
-					q(45987),	-- Investigate the Broken Shore
+					q(45987, {	-- Investigate the Broken Shore
+						["u"] = 40,
+						["coord"] = { 59.7, 13.4, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
+						["sourceQuest"] = 45986,	-- An Urgent Warning
+					}),
 					q(42204, {	-- Jorhuttam
 						["maps"] = { 650 },	-- Highmountain
 						["coord"] = { 53.8, 87.8, 650 },
@@ -461,8 +473,9 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 42110,	-- To the Summit!
 					}),
 					q(43643, {	-- Secrets of the Axes
-						["description"] = "Every day, there is a chance that speaking to Master Smith Helgar will offer a dialogue option, \"Is there an axe the equal to Strom'kar?\", which will end with being offered the quest Secrets of the Axes. When this quest is active, it is active region-wide, and everyone will have access to it for that day.\n\nThis sends you to speak to High Overlord Saurfang at Krasus' Landing in Dalaran. When done, jump back up to Skyhold and speak again to Master Smith Helgar, who will send you to the Circle of Wills to duel Saurfang.",
+						["coord"] = { 41.0, 37.1, 695 },
 						["provider"] = { "n", 96586 },	-- Master Smith Helgar
+						["description"] = "Every day, there is a chance that speaking to Master Smith Helgar will offer a dialogue option, \"Is there an axe the equal to Strom'kar?\", which will end with being offered the quest Secrets of the Axes. When this quest is active, it is active region-wide, and everyone will have access to it for that day.\n\nThis sends you to speak to High Overlord Saurfang at Krasus' Landing in Dalaran. When done, jump back up to Skyhold and speak again to Master Smith Helgar, who will send you to the Circle of Wills to duel Saurfang.",
 						["g"] = {
 							i(139578, {	-- The Arcanite Bladebreaker
 								artifact(908),	-- Arms Warrior Hidden Artifact Skin
@@ -518,8 +531,19 @@ _.ExpansionFeatures =
 							i(139681),	-- Battlelord's Chest
 						},
 					}),
-					q(39192),	-- The Forge of Odyn
-					q(39530),	-- The Forgening
+					q(39192, {	-- The Forge of Odyn
+						["u"] = 40,
+						["coord"] = { 41.0, 37.1, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96586 },	-- Master Smith Helgar
+						["sourceQuest"] = 39530,	-- The Forgening
+					}),
+					q(39530, {	-- The Forgening
+						["u"] = 40,
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+					}),
 					q(42193, {	-- The Gjallarhorn
 						["coord"] = { 55.9, 84.4, 695 },
 						["classes"] = { WARRIOR },
@@ -527,7 +551,12 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 43750,	-- The Call of Battle
 					}),
 					q(40043),	-- The Hunter of Heroes
-					q(44222),	-- The Might of the Val'kyr
+					q(44222, {	-- The Might of the Val'kyr
+						["u"] = 40,
+						["coord"] = { 72.6, 30.8, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 111774 },	-- Matilda Skoptidottir
+					}),
 					q(41105, {	-- The Sword of Kings
 						["coord"] = { 58.3, 84.6, 695 },
 						["classes"] = { WARRIOR },
@@ -543,7 +572,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
 						["sourceQuest"] = 39214,	-- The Eye of Odyn
 					}),
-					q(45172),	-- To Battle!
 					q(42110, {	-- To the Summit!
 						["coord"] = { 55.9, 84.4, 695 },
 						["classes"] = { WARRIOR },
@@ -577,7 +605,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 96469 },	-- Odyn
 						["sourceQuest"] = 43090,	-- Ulduar's Oath
 					}),
-					q(45179),	-- Win the Crowd
 				}),
 				n(VENDORS, {
 					n(112392, {	-- Quartermaster Durnolf

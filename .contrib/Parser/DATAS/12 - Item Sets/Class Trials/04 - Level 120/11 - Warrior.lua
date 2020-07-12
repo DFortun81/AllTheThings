@@ -23,7 +23,7 @@ _.GearSets =
 								},
 							},
 						},
-						un(1, i(170745)),	-- Oathsworn Axe
+						un(NEVER_IMPLEMENTED, i(170745)),	-- Oathsworn Axe
 						{	-- Oathsworn Greataxe
 							["itemID"] = 170743,	-- Oathsworn Greataxe
 						},
@@ -35,11 +35,11 @@ _.GearSets =
 						},
 						{	-- Oathsworn Pendant
 							["itemID"] = 170757,	-- Oathsworn Pendant
-							["u"] = 1,	-- 
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Oathsworn Amulet
 							["itemID"] = 170748,	-- Oathsworn Amulet Prot
-							["u"] = 1,	-- 
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Oathsworn Pauldrons
 							["itemID"] = 170916,	-- Oathsworn Pauldrons

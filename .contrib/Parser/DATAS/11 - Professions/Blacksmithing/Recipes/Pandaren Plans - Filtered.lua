@@ -79,22 +79,22 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Masterwork Lightsteel Helm
 							["recipeID"] = 122608--[[Masterwork Lightsteel Helm]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Masterwork Spiritguard Helm
 							["recipeID"] = 122592--[[Masterwork Spiritguard Helm]]
 						},
 						{	-- Masterwork Ghost-Forged Helm
 							["recipeID"] = 122600--[[Masterwork Ghost-Forged Helm]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Lightsteel Helm
 							["recipeID"] = 122584--[[Lightsteel Helm]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Spiritguard Helm
 							["recipeID"] = 122568--[[Spiritguard Helm]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Ghost-Forged Helm
 							["recipeID"] = 122576--[[Ghost-Forged Helm]]
@@ -136,22 +136,22 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Masterwork Lightsteel Shoulders
 							["recipeID"] = 122609--[[Masterwork Lightsteel Shoulders]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Masterwork Spiritguard Shoulders
 							["recipeID"] = 122593--[[Masterwork Spiritguard Shoulders]]
 						},
 						{	-- Masterwork Ghost-Forged Shoulders
 							["recipeID"] = 122601--[[Masterwork Ghost-Forged Shoulders]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Lightsteel Shoulders
 							["recipeID"] = 122585--[[Lightsteel Shoulders]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Spiritguard Shoulders
 							["recipeID"] = 122569--[[Spiritguard Shoulders]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Ghost-Forged Shoulders
 							["recipeID"] = 122577--[[Ghost-Forged Shoulders]]
@@ -205,7 +205,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Masterwork Lightsteel Breastplate
 							["recipeID"] = 122610--[[Masterwork Lightsteel Breastplate]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Masterwork Spiritguard Breastplate
 							["recipeID"] = 122594--[[Masterwork Spiritguard Breastplate]]
@@ -218,15 +218,15 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Masterwork Ghost-Forged Breastplate
 							["recipeID"] = 122602--[[Masterwork Ghost-Forged Breastplate]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Lightsteel Breastplate
 							["recipeID"] = 122586--[[Lightsteel Breastplate]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Spiritguard Breastplate
 							["recipeID"] = 122570--[[Spiritguard Breastplate]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Ghost-Forged Breastplate
 							["recipeID"] = 122578--[[Ghost-Forged Breastplate]]
@@ -286,22 +286,22 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Masterwork Lightsteel Gauntlets
 							["recipeID"] = 122611--[[Masterwork Lightsteel Gauntlets]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Masterwork Spiritguard Gauntlets
 							["recipeID"] = 122595--[[Masterwork Spiritguard Gauntlets]]
 						},
 						{	-- Masterwork Ghost-Forged Gauntlets
 							["recipeID"] = 122603--[[Masterwork Ghost-Forged Gauntlets]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Lightsteel Gauntlets
 							["recipeID"] = 122587--[[Lightsteel Gauntlets]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Spiritguard Gauntlets
 							["recipeID"] = 122571--[[Spiritguard Gauntlets]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Ghost-Forged Gauntlets
 							["recipeID"] = 122579--[[Ghost-Forged Gauntlets]]
@@ -343,14 +343,14 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Masterwork Lightsteel Bracers
 							["recipeID"] = 122613--[[Masterwork Lightsteel Bracers]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Masterwork Spiritguard Bracers
 							["recipeID"] = 122597--[[Masterwork Spiritguard Bracers]]
 						},
 						{	-- Masterwork Ghost-Forged Bracers
 							["recipeID"] = 122605--[[Masterwork Ghost-Forged Bracers]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Lightsteel Bracers
 							["recipeID"] = 122589--[[Lightsteel Bracers]]
@@ -407,22 +407,22 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Masterwork Lightsteel Belt
 							["recipeID"] = 122615--[[Masterwork Lightsteel Belt]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Masterwork Spiritguard Belt
 							["recipeID"] = 122599--[[Masterwork Spiritguard Belt]]
 						},
 						{	-- Masterwork Ghost-Forged Belt
 							["recipeID"] = 122607--[[Masterwork Ghost-Forged Belt]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Lightsteel Belt
 							["recipeID"] = 122591--[[Lightsteel Belt]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Spiritguard Belt
 							["recipeID"] = 122575--[[Spiritguard Belt]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Ghost-Forged Belt
 							["recipeID"] = 122583--[[Ghost-Forged Belt]]
@@ -473,22 +473,22 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Masterwork Lightsteel Legplates
 							["recipeID"] = 122612--[[Masterwork Lightsteel Legplates]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Masterwork Spiritguard Legplates
 							["recipeID"] = 122596--[[Masterwork Spiritguard Legplates]]
 						},
 						{	-- Masterwork Ghost-Forged Legplates
 							["recipeID"] = 122604--[[Masterwork Ghost-Forged Legplates]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Lightsteel Legplates
 							["recipeID"] = 122588--[[Lightsteel Legplates]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Spiritguard Legplates
 							["recipeID"] = 122572--[[Spiritguard Legplates]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Ghost-Forged Legplates
 							["recipeID"] = 122580--[[Ghost-Forged Legplates]]
@@ -539,22 +539,22 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Masterwork Lightsteel Boots
 							["recipeID"] = 122614--[[Masterwork Lightsteel Boots]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Masterwork Spiritguard Boots
 							["recipeID"] = 122598--[[Masterwork Spiritguard Boots]]
 						},
 						{	-- Masterwork Ghost-Forged Boots
 							["recipeID"] = 122606--[[Masterwork Ghost-Forged Boots]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Lightsteel Boots
 							["recipeID"] = 122590--[[Lightsteel Boots]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Spiritguard Boots
 							["recipeID"] = 122574--[[Spiritguard Boots]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Ghost-Forged Boots
 							["recipeID"] = 122582--[[Ghost-Forged Boots]]

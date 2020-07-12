@@ -293,7 +293,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 17613 },	-- Archmage Alturus
 					["g"] = {
-						un(2, i(31113)),	-- Violet Badge
+						un(REMOVED_FROM_GAME, i(31113)),	-- Violet Badge
 					},
 				}),
 				q(44733, {	-- The Power of Corruption

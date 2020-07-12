@@ -11,7 +11,7 @@ _.GearSets =
 					["groups"] = {
 						{	-- Mountainsage Wand	*LA0207
 							["itemID"] = 153828,	-- Mountainsage Wand
-							["u"] = 1,	-- Not availablee
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Mountainsage Staff	*LA0207
 							["itemID"] = 153830,	-- Mountainsage Stave

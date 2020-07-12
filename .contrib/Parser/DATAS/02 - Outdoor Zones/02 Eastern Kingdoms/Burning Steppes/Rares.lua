@@ -72,8 +72,8 @@ _.Zones =
 				n(9046, {	-- Scarshield Quartermaster <Scarshield Legion>
 					["u"] = 43,
 					["g"] = {
-						un(2, i(13254)),	-- Astral Guard
-						un(2, i(13248)),	-- Burstshot Harquebus
+						un(REMOVED_FROM_GAME, i(13254)),	-- Astral Guard
+						un(REMOVED_FROM_GAME, i(13248)),	-- Burstshot Harquebus
 					},
 				}),
 				n(50357, { 	-- Sunwing

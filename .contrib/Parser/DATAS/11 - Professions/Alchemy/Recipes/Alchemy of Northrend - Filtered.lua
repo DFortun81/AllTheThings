@@ -56,7 +56,7 @@ profession(ALCHEMY, {
 					["g"] = {
 						{
 							["recipeID"] = 54020,--[[Transmute: Eternal Might]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},

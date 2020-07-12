@@ -213,7 +213,6 @@ _.ExpansionFeatures =
 					q(41767),	-- A Daring Rescue
 					q(43414),	-- A Hero's Weapon
 					q(44099),	-- A Mutual Friend
-					q(45180),	-- An Island of War
 					q(45989),	-- An Urgent Warning
 					q(45021),	-- Answers Unknown
 					q(42098),	-- Black Rook Hold: An Unclaimed Soul
@@ -231,8 +230,6 @@ _.ExpansionFeatures =
 					q(46020),	-- Crystal Containment
 					q(42125),	-- Dark Whispers
 					q(40218),	-- Debt Repaid
-					q(47076),	-- Delivering Lost Knowledge
-					q(45173),	-- Desperate Times
 					q(42100),	-- Empowering the Soul
 					q(46239),	-- Fel to the Core
 					q(41785),	-- Finding Fizzlebang
@@ -265,11 +262,9 @@ _.ExpansionFeatures =
 					q(41156),	-- The Power Possessed
 					q(40712),	-- The Power Possessed
 					q(46243),	-- The Wrathsteed of Xoroth
-					q(45172),	-- To Battle!
 					q(45027),	-- To the Broken Shore
 					q(44227),	-- Unleashing our Wrath
-					q(44682),	-- Unparalleled Power
-					q(45179),	-- Win the Crowd							
+					q(44682),	-- Unparalleled Power						
 					q(46243, {	-- The Wrathsteed of Xoroth
 						["lvl"] = 110,
 						["classes"] = {9},

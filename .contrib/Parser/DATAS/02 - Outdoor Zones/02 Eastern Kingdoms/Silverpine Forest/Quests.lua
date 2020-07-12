@@ -20,7 +20,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(3235)),	-- Ring of Scorn
+						un(REMOVED_FROM_GAME, i(3235)),	-- Ring of Scorn
 					},
 				}),
 				q(447,   {	-- A Recipe for Death
@@ -40,8 +40,8 @@ _.Zones =
 					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
 					["sourceQuest"] = 450,	-- A Recipe for Death
 					["g"] = {
-						un(2, i(3582)),	-- Acidproof Cloak
-						un(2, i(3451)),	-- Nightglow Concoction
+						un(REMOVED_FROM_GAME, i(3582)),	-- Acidproof Cloak
+						un(REMOVED_FROM_GAME, i(3451)),	-- Nightglow Concoction
 					},
 				}),
 				q(27510, {	-- A Wolf in Bear's Clothing
@@ -92,17 +92,17 @@ _.Zones =
 					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
 					["sourceQuest"] = 424,	-- Arugal's Folly
 					["g"] = {
-						un(2, i(3570)),	-- Bonegrinding Pestle
-						un(2, i(5242)),	-- Cinder Wand
-						un(2, i(3586)),	-- Logsplitter
+						un(REMOVED_FROM_GAME, i(3570)),	-- Bonegrinding Pestle
+						un(REMOVED_FROM_GAME, i(5242)),	-- Cinder Wand
+						un(REMOVED_FROM_GAME, i(3586)),	-- Logsplitter
 					},
 				}),
 				q(442,   { 	-- Assault on Fenris Isle
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(3461)),	-- High Robe of the Adjudicator
-						un(2, i(3462)),	-- Talonstrike
+						un(REMOVED_FROM_GAME, i(3461)),	-- High Robe of the Adjudicator
+						un(REMOVED_FROM_GAME, i(3462)),	-- Talonstrike
 					},
 				}),
 				q(27056, {	-- Belmont's Report
@@ -115,7 +115,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(5252)),	-- Wand of Decay
+						un(REMOVED_FROM_GAME, i(5252)),	-- Wand of Decay
 					},
 				}),
 				q(477,   {	-- Border Crossings
@@ -411,9 +411,9 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(3450)),	-- Faerleia's Shield
-						un(2, i(3449)),	-- Mystic Shawl
-						un(2, i(2818)),	-- Stretched Leather Trousers
+						un(REMOVED_FROM_GAME, i(3450)),	-- Faerleia's Shield
+						un(REMOVED_FROM_GAME, i(3449)),	-- Mystic Shawl
+						un(REMOVED_FROM_GAME, i(2818)),	-- Stretched Leather Trousers
 					},
 				}),
 				q(27550, {	-- Pyrewood's Fall
@@ -609,8 +609,8 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(3585)),	-- Camouflaged Tunic
-						un(2, i(3452)),	-- Ceranium Rod
+						un(REMOVED_FROM_GAME, i(3585)),	-- Camouflaged Tunic
+						un(REMOVED_FROM_GAME, i(3452)),	-- Ceranium Rod
 					},
 				}),
 				q(27290, {	-- To Forsaken Forward Command
@@ -677,9 +677,9 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(3581)),	-- Serrated Knife
-						un(2, i(3457)),	-- Stamped Trousers
-						un(2, i(3458)),	-- Rugged Mail Gloves
+						un(REMOVED_FROM_GAME, i(3581)),	-- Serrated Knife
+						un(REMOVED_FROM_GAME, i(3457)),	-- Stamped Trousers
+						un(REMOVED_FROM_GAME, i(3458)),	-- Rugged Mail Gloves
 					},
 				}),
 				q(28089, {	-- Warchief's Command: Hillsbrad Foothills!

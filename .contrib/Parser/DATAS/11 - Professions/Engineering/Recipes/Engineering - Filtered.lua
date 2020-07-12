@@ -378,7 +378,7 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Mobile Alarm",
 							["recipeID"] = 12900,
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["name"] = "Ornate Spyglass",
@@ -407,7 +407,7 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Tranquil Mechanical Yeti",
 							["recipeID"] = 26011,
-							["u"] = 2,	-- Cataclysm Rework. >:(
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["name"] = "Ultra-Flash Shadow Reflector",

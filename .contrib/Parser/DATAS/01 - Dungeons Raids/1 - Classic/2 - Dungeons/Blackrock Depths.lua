@@ -129,118 +129,118 @@ _.Instances = { tier(1, {	-- Classic
 				q(4024, {	-- A Taste of Flame
 					["u"] = 40,
 					["g"] = {
-						un(2, i(12066)),	-- Shaleskin Cape
-						un(2, i(12083)),	-- Valconian Sash
-						un(2, i(12082)),	-- Wyrmhide Spaulders
+						un(REMOVED_FROM_GAME, i(12066)),	-- Shaleskin Cape
+						un(REMOVED_FROM_GAME, i(12083)),	-- Valconian Sash
+						un(REMOVED_FROM_GAME, i(12082)),	-- Wyrmhide Spaulders
 					},
 				}),
 				q(4242, {	-- Abandoned Hope
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(12018)),	-- Conservator Helm
-						un(2, i(12021)),	-- Shieldplate Sabatons
-						un(2, i(12041)),	-- Windshear Leggings
+						un(REMOVED_FROM_GAME, i(12018)),	-- Conservator Helm
+						un(REMOVED_FROM_GAME, i(12021)),	-- Shieldplate Sabatons
+						un(REMOVED_FROM_GAME, i(12041)),	-- Windshear Leggings
 					},
 				}),
 				q(3907, {	-- Disharmony of Fire
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(12112)),	-- Crypt Demon Bracers
-						un(2, i(12114)),	-- Nightfall Gloves
-						un(2, i(12115)),	-- Stalwart Clutch
-						un(2, i(12113)),	-- Sunborne Cape
+						un(REMOVED_FROM_GAME, i(12112)),	-- Crypt Demon Bracers
+						un(REMOVED_FROM_GAME, i(12114)),	-- Nightfall Gloves
+						un(REMOVED_FROM_GAME, i(12115)),	-- Stalwart Clutch
+						un(REMOVED_FROM_GAME, i(12113)),	-- Sunborne Cape
 					},
 				}),
 				q(4126, {	-- Hurley Blackbreath
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(12000)),	-- Limb Cleaver
-						un(2, i(11964)),	-- Swiftstrike Cudgel
+						un(REMOVED_FROM_GAME, i(12000)),	-- Limb Cleaver
+						un(REMOVED_FROM_GAME, i(11964)),	-- Swiftstrike Cudgel
 					},
 				}),
 				q(4263, {	-- Incendius!
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(12112)),	-- Crypt Demon Bracers
-						un(2, i(12114)),	-- Nightfall Gloves
-						un(2, i(12115)),	-- Stalwart Clutch
-						un(2, i(12113)),	-- Sunborne Cape
+						un(REMOVED_FROM_GAME, i(12112)),	-- Crypt Demon Bracers
+						un(REMOVED_FROM_GAME, i(12114)),	-- Nightfall Gloves
+						un(REMOVED_FROM_GAME, i(12115)),	-- Stalwart Clutch
+						un(REMOVED_FROM_GAME, i(12113)),	-- Sunborne Cape
 					},
 				}),
 				q(4322, {	-- Jail Break!
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(12061)),	-- Blade of Reckoning
-						un(2, i(12062)),	-- Skilled Fighting Blade
-						un(2, i(12065)),	-- Ward of the Elements
+						un(REMOVED_FROM_GAME, i(12061)),	-- Blade of Reckoning
+						un(REMOVED_FROM_GAME, i(12062)),	-- Skilled Fighting Blade
+						un(REMOVED_FROM_GAME, i(12065)),	-- Ward of the Elements
 					},
 				}),
 				q(4134, {	-- Lost Thunderbrew Recipe
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(12000)),	-- Limb Cleaver
-						un(2, i(11964)),	-- Swiftstrike Cudgel
+						un(REMOVED_FROM_GAME, i(12000)),	-- Limb Cleaver
+						un(REMOVED_FROM_GAME, i(11964)),	-- Swiftstrike Cudgel
 					},
 				}),
 				q(4132, {	-- Operation: Death to Angerforge
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(12059)),	-- Conqueror's Medallion
+						un(REMOVED_FROM_GAME, i(12059)),	-- Conqueror's Medallion
 					},
 				}),
 				q(4136, {	-- Ribbly Screwspigot
 					["u"] = 40,
 					["g"] = {
-						un(2, i(11963)),	-- Penance Spaulders
-						un(2, i(11865)),	-- Rancor Boots
-						un(2, i(12049)),	-- Splintsteel Armor
+						un(REMOVED_FROM_GAME, i(11963)),	-- Penance Spaulders
+						un(REMOVED_FROM_GAME, i(11865)),	-- Rancor Boots
+						un(REMOVED_FROM_GAME, i(12049)),	-- Splintsteel Armor
 					},
 				}),
 				q(7201, {	-- The Last Element
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(12038)),	-- Lagrave's Seal
+						un(REMOVED_FROM_GAME, i(12038)),	-- Lagrave's Seal
 					},
 				}),
 				q(4201, {	-- The Love Potion
 					["u"] = 40,
 					["g"] = {
-						un(2, i(11962)),	-- Manacle Cuffs
-						un(2, i(11866)),	-- Nagmara's Whipping Belt
+						un(REMOVED_FROM_GAME, i(11962)),	-- Manacle Cuffs
+						un(REMOVED_FROM_GAME, i(11866)),	-- Nagmara's Whipping Belt
 					},
 				}),
 				q(4004, {	-- The Princess Saved?
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(12545)),	-- Eye of Orgrimmar
-						un(2, i(12544)),	-- Thrall's Resolve
+						un(REMOVED_FROM_GAME, i(12545)),	-- Eye of Orgrimmar
+						un(REMOVED_FROM_GAME, i(12544)),	-- Thrall's Resolve
 					},
 				}),
 				q(4363, {	-- The Princess's Surprise
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(12548)),	-- Magni's Will
-						un(2, i(12543)),	-- Songstone of Ironforge
+						un(REMOVED_FROM_GAME, i(12548)),	-- Magni's Will
+						un(REMOVED_FROM_GAME, i(12543)),	-- Songstone of Ironforge
 					},
 				}),
 				q(4063, {	-- The Rise of the Machines
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(12109)),	-- Azure Moon Amice
-						un(2, i(12108)),	-- Basaltscale Armor
-						un(2, i(12111)),	-- Lavaplate Gauntlets
-						un(2, i(12110)),	-- Raincaster Drape
+						un(REMOVED_FROM_GAME, i(12109)),	-- Azure Moon Amice
+						un(REMOVED_FROM_GAME, i(12108)),	-- Basaltscale Armor
+						un(REMOVED_FROM_GAME, i(12111)),	-- Lavaplate Gauntlets
+						un(REMOVED_FROM_GAME, i(12110)),	-- Raincaster Drape
 					},
 				}),
 				q(4324, {	-- Yuka Screwspigot
@@ -623,7 +623,7 @@ _.Instances = { tier(1, {	-- Classic
 					["model"] = 196976,
 					["g"] = {
 						i(21986, { 		-- Banner of Provocation
-							un(2, i(22305)), 		-- Ironweave Mantle
+							un(REMOVED_FROM_GAME, i(22305)), 		-- Ironweave Mantle
 							un(11, i(22317)), 		-- Lefty's Brass Knuckle
 							un(11, i(22318)), 		-- Malgen's Long Bow
 							un(11, i(22330)), 		-- Shroud of Arcane Mastery
@@ -701,7 +701,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(11767), 	-- Emberplate Armguards
 					{	-- Incendic Bracers
 						["itemID"] = 11768,	-- Incendic Bracers
-						["u"] = 2,
+						["u"] = REMOVED_FROM_GAME,
 					},
 				})),
 				cr(9056, e(376, {	-- Fineous Darkvire <Chief Architect>
@@ -860,8 +860,8 @@ _.Instances = { tier(1, {	-- Classic
 				cr(9543, n(9543, {	-- Ribbly Screwspigot
 					["g"] = {
 						i(11612),	-- Plans: Dark Iron Plate
-						un(2, i(2663)),	-- Ribbly's Bandolier
-						un(2, i(2662)),	-- Ribbly's Quiver
+						un(REMOVED_FROM_GAME, i(2663)),	-- Ribbly's Bandolier
+						un(REMOVED_FROM_GAME, i(2662)),	-- Ribbly's Quiver
 						i(11742),	-- Wayfarer's Knapsack
 					},
 					["description"]	= "Speak to him to start the encounter.",
@@ -883,7 +883,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(22204), 		-- Wristguards of Renown
 						i(11745), 		-- Fists of Phalanx
 						i(151409), 		-- Ferrous Cord
-						un(2, i(11743)),	-- Rockfist
+						un(REMOVED_FROM_GAME, i(11743)),	-- Rockfist
 					},
 					["description"]	= "Private Rocknot must be sent into a drunken rage to aggro Phalanx. \nTo do that, feed him 6 Dark Iron Ale Mugs, which can be purchased from Plugger Spazzring. \nRocknot will break one of the kegs, it'll blow the door open, and Phalanx will be angry.",
 				})),

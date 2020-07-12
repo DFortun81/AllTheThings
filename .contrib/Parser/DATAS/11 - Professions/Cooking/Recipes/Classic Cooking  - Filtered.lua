@@ -13,8 +13,7 @@ profession(COOKING, {
 						},
 						{	-- Goldthorn Tea
 							["recipeID"] = 13028,	-- Goldthorn Tea
-							["u"] = 2,				-- Never Implemented Filter
-							--Note!! Vendor was removed from game in 6.0.1 when RFD was revamped
+							["u"] = REMOVED_FROM_GAME,	--Note!! Vendor was removed from game in 6.0.1 when RFD was revamped
 						},{	-- Lean Wolf Steak
 							["recipeID"] = 15853,	-- Lean Wolf Steak
 							["u"] = 7,				-- BoE removed from game

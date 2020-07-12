@@ -11,9 +11,9 @@ profession(LEATHERWORKING, {
 			["g"] = {
 				-- Legacy specializations for posterity
 				n(-40, { -- Legacy
-					un(34, recipe(10656)),  -- Dragonscale Leatherworking
-					un(34, recipe(10660)),  -- Tribal Leatherworking
-					un(34, recipe(10658)),  -- Elemental Leatherworking
+					un(REMOVED_FROM_GAME, recipe(10656)),  -- Dragonscale Leatherworking
+					un(REMOVED_FROM_GAME, recipe(10660)),  -- Tribal Leatherworking
+					un(REMOVED_FROM_GAME, recipe(10658)),  -- Elemental Leatherworking
 				}),
 				{
 					["name"] = "Materials",
@@ -34,7 +34,7 @@ profession(LEATHERWORKING, {
 						{
 							-- Quiver of a Thousand Feathers
 							["recipeID"] = 44359,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}
 				},
@@ -56,19 +56,19 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{   -- Ebon Netherscale Breastplate
 							["recipeID"] = 35575,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Netherstrike Breastplate
 							["recipeID"] = 35580,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Primalstrike Vest
 							["recipeID"] = 35589,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Windhawk Hauberk
 							["recipeID"] = 35585,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}
 				},
@@ -78,19 +78,19 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{	-- Ebon Netherscale Bracers
 							["recipeID"] = 35577,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Netherstrike Bracers
 							["recipeID"] = 35584,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Primalstrike Bracers
 							["recipeID"] = 35591,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Windhawk Bracers
 							["recipeID"] = 35588,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						
 					}
@@ -107,19 +107,19 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{	-- Ebon Netherscale Belt
 							["recipeID"] = 35576,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Netherstrike Belt
 							["recipeID"] = 35582,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Primalstrike Belt
 							["recipeID"] = 35590,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Windhawk Belt
 							["recipeID"] = 35587,
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}
 				},

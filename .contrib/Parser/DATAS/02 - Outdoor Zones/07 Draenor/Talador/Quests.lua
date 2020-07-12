@@ -695,7 +695,7 @@ _.Zones =
 					},
 				}),
 				q(33923, {	-- Demons? In Auchindoun?
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(34092, {	-- Desperate Measures
 					["provider"] = { "n", 77799 },	-- Restalaan
@@ -766,7 +766,7 @@ _.Zones =
 					},
 				}),
 				q(33974, {	-- Dying Wish -- duplicate quest, different ID
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(33973, {	-- Dying Wish
 					["provider"] = { "n", 77031 },	-- Ahm
@@ -982,7 +982,7 @@ _.Zones =
 					["coord"] = { 36.1, 65.0, 535 },
 				}),
 				q(34691, {	-- Just the Beginning
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(34448, {	-- Kaelynara Sunchaser
 					["provider"] = { "n", 78513 },	-- Archmage Elandra
@@ -1026,11 +1026,11 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["g"] = {
-						un(4, i(118290)),	-- Solium Band of Might
-						un(4, i(118291)),	-- Solium Band of Wisdom
-						un(4, i(118292)),	-- Solium Band of Dexterity
-						un(4, i(118293)),	-- Solium Band of Endurance
-						un(4, i(118294)),	-- Solium Band of Mending
+						un(REMOVED_FROM_GAME, i(118290)),	-- Solium Band of Might
+						un(REMOVED_FROM_GAME, i(118291)),	-- Solium Band of Wisdom
+						un(REMOVED_FROM_GAME, i(118292)),	-- Solium Band of Dexterity
+						un(REMOVED_FROM_GAME, i(118293)),	-- Solium Band of Endurance
+						un(REMOVED_FROM_GAME, i(118294)),	-- Solium Band of Mending
 					},
 				}),
 				q(33582, {	-- Kura's Vengeance
@@ -1081,7 +1081,7 @@ _.Zones =
 					["provider"] = { "n", 90237 },	-- Garona Halforcen
 					["sourceQuest"] = 37837,	-- An Inside Job
 					["g"] = {
-						un(2, follower(466)),	-- Garona Halforcen
+						un(REMOVED_FROM_GAME, follower(466)),	-- Garona Halforcen
 					},
 				}),
 				q(34465, {	-- Mystical Hat
@@ -1154,7 +1154,7 @@ _.Zones =
 					},
 				}),
 				q(34677, {	-- NOT USED
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(35227, {	-- Ogre Diplomacy
 					["provider"] = { "n", 75392 },	-- Exarch Maladaar
@@ -1314,7 +1314,7 @@ _.Zones =
 					},
 				}),
 				q(34570, {	-- REUSE
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(36012, {	-- Reverse Piracy
 					["u"] = 40,
@@ -1628,11 +1628,11 @@ _.Zones =
 						36012,	-- Reverse Piracy
 					},
 					["g"] = {
-						un(4, i(118305)),	-- Spellbound Runic Band of Elemental Power
-						un(4, i(118306)),	-- Spellbound Runic Band of the All-Seeing Eye
-						un(4, i(118307)),	-- Spellbound Runic Band of Unrelenting Slaughter
-						un(4, i(118308)),	-- Spellbound Runic Band of Elemental Invincibility
-						un(4, i(118309)),	-- Spellbound Runic Band of Infinite Preservation
+						un(REMOVED_FROM_GAME, i(118305)),	-- Spellbound Runic Band of Elemental Power
+						un(REMOVED_FROM_GAME, i(118306)),	-- Spellbound Runic Band of the All-Seeing Eye
+						un(REMOVED_FROM_GAME, i(118307)),	-- Spellbound Runic Band of Unrelenting Slaughter
+						un(REMOVED_FROM_GAME, i(118308)),	-- Spellbound Runic Band of Elemental Invincibility
+						un(REMOVED_FROM_GAME, i(118309)),	-- Spellbound Runic Band of Infinite Preservation
 					},
 				}),
 				q(36843, {	-- They Came From Above
@@ -1688,11 +1688,11 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["g"] = {
-						un(4, i(118300)),	-- Spellbound Solium Band of Sorcerous Strength
-						un(4, i(118301)),	-- Spellbound Solium Band of the Kirin-Tor
-						un(4, i(118302)),	-- Spellbound Solium Band of Fatal Strikes
-						un(4, i(118303)),	-- Spellbound Solium Band of Sorcerous Invincibility
-						un(4, i(118304)),	-- Spellbound Solium Band of the Immortal Spirit
+						un(REMOVED_FROM_GAME, i(118300)),	-- Spellbound Solium Band of Sorcerous Strength
+						un(REMOVED_FROM_GAME, i(118301)),	-- Spellbound Solium Band of the Kirin-Tor
+						un(REMOVED_FROM_GAME, i(118302)),	-- Spellbound Solium Band of Fatal Strikes
+						un(REMOVED_FROM_GAME, i(118303)),	-- Spellbound Solium Band of Sorcerous Invincibility
+						un(REMOVED_FROM_GAME, i(118304)),	-- Spellbound Solium Band of the Immortal Spirit
 					},
 				}),
 				q(34399, {	-- Trouble In The Mine

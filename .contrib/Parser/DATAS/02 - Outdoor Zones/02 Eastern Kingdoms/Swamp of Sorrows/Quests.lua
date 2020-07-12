@@ -122,7 +122,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(9682)),	-- Leather Chef's Belt
+						un(REMOVED_FROM_GAME, i(9682)),	-- Leather Chef's Belt
 					},
 				}),
 				q(2784,  {	-- Fall From Grace
@@ -134,7 +134,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6828)),	-- Visionary Buckler
+						un(REMOVED_FROM_GAME, i(6828)),	-- Visionary Buckler
 					},
 				}),
 				q(2702,  {	-- Heroes of Old
@@ -147,7 +147,7 @@ _.Zones =
 					["provider"] = { "n", 7750 },	-- Corporal Thund Splithoof
 					["sourceQuest"] = 2702,	-- Heroes of Old
 					["g"] = {
-						un(2, i(10659)),	-- Shard of Afrasa
+						un(REMOVED_FROM_GAME, i(10659)),	-- Shard of Afrasa
 					},
 				}),
 				q(27600, {	-- In With a Bang
@@ -516,9 +516,9 @@ _.Zones =
 					["provider"] = { "n", 5593 },	-- Katar
 					["sourceQuest"] = 1426,	-- Threat From the Sea
 					["g"] = {
-						un(2, i(9680)),	-- Tok'kar's Murloc Shanker
-						un(2, i(9678)),	-- Tok'kar's Murloc Basher
-						un(2, i(9679)),	-- Tok'kar's Murloc Chopper
+						un(REMOVED_FROM_GAME, i(9680)),	-- Tok'kar's Murloc Shanker
+						un(REMOVED_FROM_GAME, i(9678)),	-- Tok'kar's Murloc Basher
+						un(REMOVED_FROM_GAME, i(9679)),	-- Tok'kar's Murloc Chopper
 					},
 				}),
 				q(27795, {	-- Tides of Darkness

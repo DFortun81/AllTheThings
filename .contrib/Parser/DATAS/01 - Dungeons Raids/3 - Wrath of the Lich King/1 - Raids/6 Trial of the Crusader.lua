@@ -1227,76 +1227,76 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			n(-40, {	-- Legacy
-				["u"] = 2,
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					ach(4080, {		-- A Tribute to Dedicated Insanity
-						un(37, title(136)),	-- the Argent Defender
+						un(REMOVED_FROM_GAME, title(136)),	-- the Argent Defender
 					}),
 					a(ach(4156, {	-- A Tribute to Immortality
-						un(2, a(i(49096))),		-- Crusader's White Warhorse
+						un(REMOVED_FROM_GAME, a(i(49096))),		-- Crusader's White Warhorse
 					})),
 					h(ach(4079, {	-- A Tribute to Immortality
-						un(2, h(i(49098))),		-- Crusader's Black Warhorse
+						un(REMOVED_FROM_GAME, h(i(49098))),		-- Crusader's Black Warhorse
 					})),
 					ach(3810, {		-- A Tribute to Insanity (10 Player)
-						un(2, a(i(49044))),		-- Swift Alliance Steed
-						un(2, h(i(49046))),		-- Swift Horde Wolf
-						un(2, h(i(48668))),		-- Cloak of Serrated Blades
-						un(2, a(i(48673))),		-- Cloak of the Silver Covenant
-						un(2, h(i(48669))),		-- Cloak of the Triumphant Combatant
-						un(2, h(i(48670))),		-- Cloak of the Unflinching Guardian
-						un(2, a(i(48675))),		-- Cloak of the Unmoving Guardian
-						un(2, a(i(48674))),		-- Cloak of the Victorous Combatant
-						un(2, a(i(48671))),		-- Drape of Bitter Incantation
-						un(2, h(i(48666))),		-- Drape of the Sunreavers
-						un(2, a(i(48672))),		-- Shawl of Fervent Crusader
-						un(2, h(i(48667))),		-- Shawl of the Devout Crusader
+						un(REMOVED_FROM_GAME, a(i(49044))),		-- Swift Alliance Steed
+						un(REMOVED_FROM_GAME, h(i(49046))),		-- Swift Horde Wolf
+						un(REMOVED_FROM_GAME, h(i(48668))),		-- Cloak of Serrated Blades
+						un(REMOVED_FROM_GAME, a(i(48673))),		-- Cloak of the Silver Covenant
+						un(REMOVED_FROM_GAME, h(i(48669))),		-- Cloak of the Triumphant Combatant
+						un(REMOVED_FROM_GAME, h(i(48670))),		-- Cloak of the Unflinching Guardian
+						un(REMOVED_FROM_GAME, a(i(48675))),		-- Cloak of the Unmoving Guardian
+						un(REMOVED_FROM_GAME, a(i(48674))),		-- Cloak of the Victorous Combatant
+						un(REMOVED_FROM_GAME, a(i(48671))),		-- Drape of Bitter Incantation
+						un(REMOVED_FROM_GAME, h(i(48666))),		-- Drape of the Sunreavers
+						un(REMOVED_FROM_GAME, a(i(48672))),		-- Shawl of Fervent Crusader
+						un(REMOVED_FROM_GAME, h(i(48667))),		-- Shawl of the Devout Crusader
 					}),
 					ach(3819, {		-- A Tribute to Insanity (25 Player)
-						un(2, h(i(47551))),		-- Aethas' Intensity
-						un(2, a(i(47553))),		-- Bolvar's Devotion
-						un(2, h(i(47550))),		-- Cairne's Endurance
-						un(2, h(i(47548))),		-- Garrosh's Rage
-						un(2, a(i(47552))),		-- Jaina's Radiance
-						un(2, h(i(47554))),		-- Lady Liadrin's Conviction
-						un(2, a(i(47549))),		-- Magni's Resolution
-						un(2, h(i(47546))),		-- Sylvanas' Cunning
-						un(2, a(i(47547))),		-- Varian's Furor
-						un(2, a(i(47545))),		-- Vereesa's Dexterity
+						un(REMOVED_FROM_GAME, h(i(47551))),		-- Aethas' Intensity
+						un(REMOVED_FROM_GAME, a(i(47553))),		-- Bolvar's Devotion
+						un(REMOVED_FROM_GAME, h(i(47550))),		-- Cairne's Endurance
+						un(REMOVED_FROM_GAME, h(i(47548))),		-- Garrosh's Rage
+						un(REMOVED_FROM_GAME, a(i(47552))),		-- Jaina's Radiance
+						un(REMOVED_FROM_GAME, h(i(47554))),		-- Lady Liadrin's Conviction
+						un(REMOVED_FROM_GAME, a(i(47549))),		-- Magni's Resolution
+						un(REMOVED_FROM_GAME, h(i(47546))),		-- Sylvanas' Cunning
+						un(REMOVED_FROM_GAME, a(i(47547))),		-- Varian's Furor
+						un(REMOVED_FROM_GAME, a(i(47545))),		-- Vereesa's Dexterity
 					}),
 					ach(3809),		-- A Tribute to Mad Skill (10 Player)
 					ach(3818),		-- A Tribute to Mad Skill (25 Player)
 					ach(3808, {		-- A Tribute to Skill (10 Player)
-						un(2, h(i(48705))),		-- Attrition
-						un(2, h(i(48699))),		-- Blood and Glory
-						un(2, h(i(48697))),		-- Frenzystrike Longbow
-						un(2, a(i(48709))),		-- Heartcrusher
-						un(2, h(i(48693))),		-- Heartsmasher
-						un(2, a(i(48714))),		-- Honor of the Fallen
-						un(2, a(i(48713))),		-- Lothar's Edge
-						un(2, h(i(48695))),		-- Mor'kosh, the Bloodreaver
-						un(2, a(i(48710))),		-- Paragon's Breadth
-						un(2, a(i(48711))),		-- Rhok'shalla, the Shadow's Bane
-						un(2, h(i(48701))),		-- Spellharvest
-						un(2, a(i(48708))),		-- Spellstorm Blade
-						un(2, h(i(48703))),		-- The Facebreaker
-						un(2, a(i(48712))),		-- The Spinebreaker
+						un(REMOVED_FROM_GAME, h(i(48705))),		-- Attrition
+						un(REMOVED_FROM_GAME, h(i(48699))),		-- Blood and Glory
+						un(REMOVED_FROM_GAME, h(i(48697))),		-- Frenzystrike Longbow
+						un(REMOVED_FROM_GAME, a(i(48709))),		-- Heartcrusher
+						un(REMOVED_FROM_GAME, h(i(48693))),		-- Heartsmasher
+						un(REMOVED_FROM_GAME, a(i(48714))),		-- Honor of the Fallen
+						un(REMOVED_FROM_GAME, a(i(48713))),		-- Lothar's Edge
+						un(REMOVED_FROM_GAME, h(i(48695))),		-- Mor'kosh, the Bloodreaver
+						un(REMOVED_FROM_GAME, a(i(48710))),		-- Paragon's Breadth
+						un(REMOVED_FROM_GAME, a(i(48711))),		-- Rhok'shalla, the Shadow's Bane
+						un(REMOVED_FROM_GAME, h(i(48701))),		-- Spellharvest
+						un(REMOVED_FROM_GAME, a(i(48708))),		-- Spellstorm Blade
+						un(REMOVED_FROM_GAME, h(i(48703))),		-- The Facebreaker
+						un(REMOVED_FROM_GAME, a(i(48712))),		-- The Spinebreaker
 					}),
 					ach(3817, {		-- A Tribute to Skill (25 Player)
-						un(2, a(i(47517))),		-- Blade of the Unbroken Covenant
-						un(2, a(i(47521))),		-- BRK-1000
-						un(2, a(i(47519))),		-- Catastrophe
-						un(2, a(i(47524))),		-- Clemency
-						un(2, h(i(47528))),		-- Cudgel of the Damned
-						un(2, a(i(47515))),		-- Decimation
-						un(2, h(i(47523))),		-- Fezzik's Autocannon
-						un(2, h(i(47516))),		-- Fleshrender
-						un(2, h(i(47520))),		-- Grievance
-						un(2, h(i(47518))),		-- Mortalis
-						un(2, h(i(47513))),		-- Orgrim's Deflector
-						un(2, a(i(47526))),		-- Remorseless
-						un(2, a(i(47506))),		-- Silverwing Defender
-						un(2, h(i(47525))),		-- Sufferance
+						un(REMOVED_FROM_GAME, a(i(47517))),		-- Blade of the Unbroken Covenant
+						un(REMOVED_FROM_GAME, a(i(47521))),		-- BRK-1000
+						un(REMOVED_FROM_GAME, a(i(47519))),		-- Catastrophe
+						un(REMOVED_FROM_GAME, a(i(47524))),		-- Clemency
+						un(REMOVED_FROM_GAME, h(i(47528))),		-- Cudgel of the Damned
+						un(REMOVED_FROM_GAME, a(i(47515))),		-- Decimation
+						un(REMOVED_FROM_GAME, h(i(47523))),		-- Fezzik's Autocannon
+						un(REMOVED_FROM_GAME, h(i(47516))),		-- Fleshrender
+						un(REMOVED_FROM_GAME, h(i(47520))),		-- Grievance
+						un(REMOVED_FROM_GAME, h(i(47518))),		-- Mortalis
+						un(REMOVED_FROM_GAME, h(i(47513))),		-- Orgrim's Deflector
+						un(REMOVED_FROM_GAME, a(i(47526))),		-- Remorseless
+						un(REMOVED_FROM_GAME, a(i(47506))),		-- Silverwing Defender
+						un(REMOVED_FROM_GAME, h(i(47525))),		-- Sufferance
 					}),
 				},
 			}),

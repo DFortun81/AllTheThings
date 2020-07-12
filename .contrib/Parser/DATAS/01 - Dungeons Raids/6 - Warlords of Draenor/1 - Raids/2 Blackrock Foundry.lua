@@ -1166,7 +1166,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 				cr(77325, e(959, {	-- Blackhand
 					ach(9444, {	-- Ahead of the Curve: Blackhand's Crucible
-						["u"] = 2,	-- Legacy Achievement
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					ach(8952),	-- Ashes, Ashes...
 					ach(8992),	-- Blackhand's Crucible
@@ -1741,14 +1741,14 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 				cr(77325, e(959, {	-- Blackhand
 					ach(9444, {	-- Ahead of the Curve: Blackhand's Crucible
-						["u"] = 2,
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					ach(9443, {	-- Cutting Edge: Blackhand's Crucible
-						["u"] = 2,
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					--[[{
 						["achievementID"] = 9399,	-- Realm First! Warlord Blackhand
-						["u"] = 2,	-- Legacy Achievement
+						["u"] = REMOVED_FROM_GAME,
 					},]]--  Guild Achievement.  Perhaps if a guild version comes out in the future.
 					ach(8952),	-- Ashes, Ashes...
 					ach(8992),	-- Blackhand's Crucible

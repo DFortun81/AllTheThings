@@ -41,10 +41,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(143967),	-- Breastplate of Wracking Souls
 							i(144200),	-- Shadow Puppet Bracers
 							i(144202),	-- Icewrath Belt
-							un(2, i(82822)),	-- Gravetouch Greatsword (7.1 - Removed from Game!)
-							un(2, i(82821)),	-- Breastplate of Wracking Souls (7.1 - Removed from Game!)
-							un(2, i(82820)),	-- Shadow Puppet Bracers (7.1 - Removed from Game!)
-							un(2, i(82823)),	-- Icewrath Belt (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82822)),	-- Gravetouch Greatsword (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82821)),	-- Breastplate of Wracking Souls (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82820)),	-- Shadow Puppet Bracers (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82823)),	-- Icewrath Belt (7.1 - Removed from Game!)
 						},
 					}),
 					e(663,   { 	-- Jandice Barov
@@ -56,11 +56,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(144208),	-- Phantasmal Drape
 							i(144012),	-- Ghostwoven Legguards
 							i(144013),	-- Wraithplate Treads
-							un(2, i(82847)),	-- Metanoia Shield (7.1 - Removed from Game!)
-							un(2, i(82848)),	-- Barovian Ritual Hood (7.1 - Removed from Game!)
-							un(2, i(82850)),	-- Phantasmal Drape (7.1 - Removed from Game!)
-							un(2, i(82851)),	-- Ghostwoven Legguards (7.1 - Removed from Game!)
-							un(2, i(82852)),	-- Wraithplate Treads (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82847)),	-- Metanoia Shield (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82848)),	-- Barovian Ritual Hood (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82850)),	-- Phantasmal Drape (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82851)),	-- Ghostwoven Legguards (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82852)),	-- Wraithplate Treads (7.1 - Removed from Game!)
 						},
 					}),
 					e(665,   { 	-- Rattlegore
@@ -73,11 +73,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(144204),	-- Deadwalker Bracers
 							i(144206),	-- Rattling Gloves
 							i(144011),	-- Bone Golem Boots
-							un(2, i(82824)),	-- Goresoaked Headreaper (7.1 - Removed from Game!)
-							un(2, i(82826)),	-- Necromantic Wand (7.1 - Removed from Game!)
-							un(2, i(82825)),	-- Deadwalker Bracers (7.1 - Removed from Game!)
-							un(2, i(82827)),	-- Rattling Gloves (7.1 - Removed from Game!)
-							un(2, i(82828)),	-- Bone Golem Boots (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82824)),	-- Goresoaked Headreaper (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82826)),	-- Necromantic Wand (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82825)),	-- Deadwalker Bracers (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82827)),	-- Rattling Gloves (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82828)),	-- Bone Golem Boots (7.1 - Removed from Game!)
 						},
 					}),
 					n(59369, {	-- Doctor Theolen Krastinov
@@ -94,10 +94,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(143968),	-- Shivbreaker Vest
 							i(144209),	-- Dark Blaze Gauntlets
 							i(144014),	-- Leggings of Unleashed Anguish
-							un(2, i(82853)),	-- Soulburner Crown (7.1 - Removed from Game!)
-							un(2, i(82855)),	-- Shivbreaker Vest (7.1 - Removed from Game!)
-							un(2, i(82856)),	-- Dark Blaze Gauntlets (7.1 - Removed from Game!)
-							un(2, i(82854)),	-- Leggings of Unleashed Anguish (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82853)),	-- Soulburner Crown (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82855)),	-- Shivbreaker Vest (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82856)),	-- Dark Blaze Gauntlets (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82854)),	-- Leggings of Unleashed Anguish (7.1 - Removed from Game!)
 						},
 					}),
 					e(684, { 	-- Darkmaster Gandling
@@ -114,12 +114,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(144161),	-- Lessons of the Darkmaster
 							i(144159),	-- Price of Progress
 							i(144160),	-- Searing Words
-							un(2, i(82859)),	-- Headmaster's Will (7.1 - Removed from Game!)
-							un(2, i(82857)),	-- Vigorsteel Spaulders (7.1 - Removed from Game!)
-							un(2, i(82862)),	-- Shoulderguards of Painful Lessons (7.1 - Removed from Game!)
-							un(2, i(82860)),	-- Gloves of Explosive Pain (7.1 - Removed from Game!)
-							un(2, i(82858)),	-- Tombstone Gauntlets (7.1 - Removed from Game!)
-							un(2, i(82861)),	-- Incineration Belt (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82859)),	-- Headmaster's Will (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82857)),	-- Vigorsteel Spaulders (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82862)),	-- Shoulderguards of Painful Lessons (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82860)),	-- Gloves of Explosive Pain (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82858)),	-- Tombstone Gauntlets (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(82861)),	-- Incineration Belt (7.1 - Removed from Game!)
 						},
 					}),
 				},

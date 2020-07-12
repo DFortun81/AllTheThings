@@ -25,22 +25,22 @@ _.Zones =
 								i(144313),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 3)
 							},
 						}),
-						un(2, i(137561, {	-- Highmountain Tribute
+						un(REMOVED_FROM_GAME, i(137561, {	-- Highmountain Tribute
 							["sym"] = {
 								{"select", "itemID", 157823},	-- Highmountain Tribute
 							},
 						})),
-						un(2, i(154904, {	-- Highmountain Tribute
+						un(REMOVED_FROM_GAME, i(154904, {	-- Highmountain Tribute
 							["sym"] = {
 								{"select", "itemID", 157823},	-- Highmountain Tribute
 							},
 						})),
-						un(2, i(146748, {	-- Highmountain Tribute
+						un(REMOVED_FROM_GAME, i(146748, {	-- Highmountain Tribute
 							["sym"] = {
 								{"select", "itemID", 157823},	-- Highmountain Tribute
 							},
 						})),
-						un(2, i(151465, {	-- Highmountain Tribute
+						un(REMOVED_FROM_GAME, i(151465, {	-- Highmountain Tribute
 							["sym"] = {
 								{"select", "itemID", 157823},	-- Highmountain Tribute
 							},
@@ -55,7 +55,7 @@ _.Zones =
 							i(152104, {	-- Highmountain Supplies
 								i(147807),	-- Highmountain Elderhorn (MOUNT!)
 							}),
-							un(2, i(146899, {	-- Highmountain Supplies
+							un(REMOVED_FROM_GAME, i(146899, {	-- Highmountain Supplies
 								["sym"] = {
 									{"select", "itemID", 152104},	-- Highmountain Supplies
 									{"pop"},

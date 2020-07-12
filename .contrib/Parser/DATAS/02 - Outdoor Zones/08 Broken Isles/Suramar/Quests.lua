@@ -207,7 +207,7 @@ _.Zones =
 					},
 				}),
 				q(40725, {	-- Arganax (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(43569, {	-- Arluin's Request
 					["coord"] = { 36.4, 46.6, 680 },
@@ -311,7 +311,7 @@ _.Zones =
 					["sourceQuest"] = 44964,	-- I'll Just Leave This Here
 				}),
 				q(45405, {	-- Breaching the Sanctum
-					["u"] = 1, -- couldn't find any information to suggest this was ever in-game
+					["u"] = NEVER_IMPLEMENTED, -- couldn't find any information to suggest this was ever in-game
 				}),
 				q(44845, {	-- Break An Arm
 					["coord"] = { 40.5, 53.0, 680 },
@@ -350,7 +350,7 @@ _.Zones =
 					["sourceQuest"] = 42230,	-- The Valewalker's Burden
 				}),
 				q(40763, {	-- Casual Redistribution
-					["u"] = 1,	-- Never Available — likely replaced with #40730 "Redistribution"
+					["u"] = NEVER_IMPLEMENTED, -- likely replaced with #40730 "Redistribution"
 				}),
 				q(44827, {	-- Citizens' Army
 					["coord"] = { 39.7, 51.2, 680 },
@@ -617,7 +617,7 @@ _.Zones =
 					["sourceQuest"] = 43562,	-- Giving It All We've Got
 				}),
 				q(41031, {	-- For the People
-					["u"] = 1,	-- Never Available	-- replaced with #42859, "A Draught of Hope"
+					["u"] = NEVER_IMPLEMENTED,	-- replaced with #42859, "A Draught of Hope"
 				}),
 				q(43361, {	-- Fragments of Disaster
 					["coord"] = { 42.3, 14.8, 684 },
@@ -834,10 +834,10 @@ _.Zones =
 					["sourceQuest"] = 40907,	-- Removing Obstacles
 				}),
 				q(40674, {	-- Jars for Jandvik
-					["u"] = 1,	-- Never Available — presumably!  no data on wowhead and all attached items also have no attached data
+					["u"] = NEVER_IMPLEMENTED, -- presumably!  no data on wowhead and all attached items also have no attached data
 				}),
 				q(40776, {	-- Kazok'thul
-					["u"] = 1,	-- Never Available — presumably!  no data on wowhead.  it's also a daily, which is weird af
+					["u"] = NEVER_IMPLEMENTED, -- presumably!  no data on wowhead.  it's also a daily, which is weird af
 				}),
 				q(41760, {	-- Kel'danath's Legacy
 					["coord"] = { 37.0, 46.2, 680 },
@@ -845,7 +845,7 @@ _.Zones =
 					["sourceQuest"] = 41704,	-- Subject 16
 				}),
 				q(41000, {	-- King Forgalash's Burden
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(41877, {	-- Lady Lunastre
 					["coord"] = { 36.8, 46.6, 680 },
@@ -861,7 +861,7 @@ _.Zones =
 					},
 				}),
 				q(40974, {	-- Latosius' Trial
-					["u"] = 1,	-- Never Available — presumably!  no data on wowhead.
+					["u"] = NEVER_IMPLEMENTED, -- presumably!  no data on wowhead.
 				}),
 				q(40965, {	-- Lay Waste, Lay Mines
 					["coord"] = { 36.4, 22.3, 680 },
@@ -877,7 +877,7 @@ _.Zones =
 					},
 				}),
 				q(40121, {	-- Ley Line Influences
-					["u"] = 1,	-- Never Available — presumably!  no data on wowhead.
+					["u"] = NEVER_IMPLEMENTED, -- presumably!  no data on wowhead.
 				}),
 				q(44492, {	-- Leyline Apprentice
 					["coord"] = { 37.0, 46.2, 680 },
@@ -988,7 +988,7 @@ _.Zones =
 					["sourceQuest"] = 42230,	-- The Valewalker's Burden
 				}),
 				q(40160, {	-- Magic Clams
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(42829, {	-- Make an Entrance
 					["coord"] = { 36.8, 46.6, 680 },
@@ -1133,7 +1133,7 @@ _.Zones =
 					},
 				}),
 				q(41027, {	-- One Last Breath
-					["u"] = 1,	-- Never Available — replaced with #40334, "Fisherman's Tonic
+					["u"] = NEVER_IMPLEMENTED, -- replaced with #40334, "Fisherman's Tonic
 				}),
 				q(40746, {	-- One of the People
 					["coord"] = { 47.0, 61.9, 680 },
@@ -1535,7 +1535,7 @@ _.Zones =
 					["sourceQuest"] = 40956,	-- Survey Says...
 				}),
 				q(40161, {	-- Tapping the Underground
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(44742, {	-- Tavernkeeper's Fate
 					["coord"] = { 36.5, 46.7, 680 },

@@ -82,8 +82,8 @@ _.Zones =
 					["provider"] = { "n", 12736 },	-- Je'neu Sancrea
 					["sourceQuest"] = 6564,	-- Allegiance to the Old Gods
 					["g"] = {
-						un(2, i(17694)),	-- Band of the Fist
-						un(2, i(17695)),	-- Chestnut Mantle
+						un(REMOVED_FROM_GAME, i(17694)),	-- Band of the Fist
+						un(REMOVED_FROM_GAME, i(17695)),	-- Chestnut Mantle
 					},
 				}),
 				q(6921, {	-- Amongst the Ruins
@@ -106,8 +106,8 @@ _.Zones =
 					["lvl"] = 25,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(5817)),	-- Lunaris Bow
-						un(2, i(5818)),	-- Moonbeam Wand
+						un(REMOVED_FROM_GAME, i(5817)),	-- Lunaris Bow
+						un(REMOVED_FROM_GAME, i(5818)),	-- Moonbeam Wand
 					},
 				}),
 				q(13870, {	-- As Good as it Gets
@@ -446,9 +446,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1034,	-- The Ruins of Stardust
 					["g"] = {
-						un(2, i(5814)),	-- Snapbrook Armor
-						un(2, i(6722)),	-- Beastial Manacles
-						un(2, i(17047)),	-- Luminescent Amice
+						un(REMOVED_FROM_GAME, i(5814)),	-- Snapbrook Armor
+						un(REMOVED_FROM_GAME, i(6722)),	-- Beastial Manacles
+						un(REMOVED_FROM_GAME, i(17047)),	-- Luminescent Amice
 					},
 				}),
 				q(25621, {	-- Field Test: Gnomecorder
@@ -804,9 +804,9 @@ _.Zones =
 					["provider"] = { "n", 3897 },	-- Krolg
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(5815)),	-- Glacial Stone
-						un(2, i(17046)),	-- Gutterblade
-						un(2, i(1116)),	-- Ring of Pure Silver
+						un(REMOVED_FROM_GAME, i(5815)),	-- Glacial Stone
+						un(REMOVED_FROM_GAME, i(17046)),	-- Gutterblade
+						un(REMOVED_FROM_GAME, i(1116)),	-- Ring of Pure Silver
 					},
 				}),
 				q(13798, {	-- Rain of Destruction
@@ -1001,8 +1001,8 @@ _.Zones =
 					["provider"] = { "n", 4484 },	-- Feero Ironhand
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(2, i(6721)),	-- Chestplate of Kor
-						un(2, i(5323)),	-- Everglow Lantern
+						un(REMOVED_FROM_GAME, i(6721)),	-- Chestplate of Kor
+						un(REMOVED_FROM_GAME, i(5323)),	-- Everglow Lantern
 					},
 				}),
 				q(13751, {	-- Tell No One!
@@ -1111,7 +1111,7 @@ _.Zones =
 					["provider"] = { "n", 12696 },	-- Senani Thunderheart
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(16658)),	-- Wildhunter Cloak
+						un(REMOVED_FROM_GAME, i(16658)),	-- Wildhunter Cloak
 					},
 				}),
 				q(13987, {	-- The Last Stand
@@ -1148,8 +1148,8 @@ _.Zones =
 					["provider"] = { "n", 12718 },	-- Gurda Ragescar
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(16741)),	-- Oilrag Handwraps
-						un(2, i(16740)),	-- Shredder Operating Gloves
+						un(REMOVED_FROM_GAME, i(16741)),	-- Oilrag Handwraps
+						un(REMOVED_FROM_GAME, i(16740)),	-- Shredder Operating Gloves
 					},
 				}),
 				q(13630, {	-- The Reason Why
@@ -1384,9 +1384,9 @@ _.Zones =
 					["provider"] = { "n", 11820 },	-- Locke Okarr
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(16977)),	-- Warsong Boots
-						un(2, i(16978)),	-- Warsong Gauntlets
-						un(2, i(16975)),	-- Warsong Supplies
+						un(REMOVED_FROM_GAME, i(16977)),	-- Warsong Boots
+						un(REMOVED_FROM_GAME, i(16978)),	-- Warsong Gauntlets
+						un(REMOVED_FROM_GAME, i(16975)),	-- Warsong Supplies
 					},
 				}),
 				q(25945, {	-- We're Here to Do One Thing, Maybe Two...

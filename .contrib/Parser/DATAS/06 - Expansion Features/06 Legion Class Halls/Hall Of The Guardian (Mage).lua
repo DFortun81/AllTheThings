@@ -142,7 +142,6 @@ _.ExpansionFeatures =
 					}),
 					q(42455),	-- Alodi's Gems
 					q(42001),	-- Aluneth, Greatstaff of the Magna
-					q(45180),	-- An Island of War
 					q(40267),	-- An Unexpected Message
 					q(42418),	-- An Unexpected Visitor
 					q(45437),	-- An Urgent Situation
@@ -184,8 +183,6 @@ _.ExpansionFeatures =
 					q(45846),	-- Chilled to the Core
 					q(45847),	-- Close to Home
 					q(42477),	-- Daio the Decrepit
-					q(47070),	-- Delivering Lost Knowledge
-					q(45173),	-- Desperate Times
 					q(45354),	-- Dispersion of the Discs
 					q(46723),	-- Down the Rabbit Hole
 					q(42222),	-- Empyrean Society Report
@@ -291,7 +288,6 @@ _.ExpansionFeatures =
 					q(46335),	-- The Vault of the Tirisgarde
 					q(42959),	-- Three Is a Lucky Number
 					q(44310),	-- Thrice the Power
-					q(45172),	-- To Battle!
 					q(42687, {	-- Troops in the Field
 						["classes"] = { MAGE },
 						["lvl"] = 101,
@@ -300,7 +296,6 @@ _.ExpansionFeatures =
 					}),
 					q(41125),	-- Unlocked Potential
 					q(42940),	-- When There's a Will, There's a Way
-					q(45179),	-- Win the Crowd
 					q(45354, {	-- Dispersion of the Discs
 						["lvl"] = 110,
 						["classes"] = {8},

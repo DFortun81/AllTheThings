@@ -27,7 +27,7 @@ _.WorldDrops =
 				i(52495),	-- Design: Jeweler's Sapphire Monocle
 				i(52497, {	-- Design: Jeweler's Sapphire Monocle
 					["spellID"] = 0,	-- This is now available via 52495, need to delink the old plans from the recipe
-					["u"] = 2,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(52377),	-- Design: Keen Hessonite
 				i(52386),	-- Design: Lightning Jasper

@@ -29,7 +29,7 @@ _.Zones =
 				}),
 				i(13476, {	-- Recipe: Mighty Rage Potion
 					["crs"] = { 7027 },	-- Blackrock Slayer
-					["u"] = 2,	-- BoP / BoA Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 		}),

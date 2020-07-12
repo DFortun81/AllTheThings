@@ -7,16 +7,16 @@ _.GearSets =
 		["achievementID"] = 5010,	-- The Ultimate Collection
 		["g"] = {	
 			n(-319, {	-- Weapons
-				un(2, i(22632, {	-- Atiesh, Greatstaff of the Guardian (Druid)
+				un(REMOVED_FROM_GAME, i(22632, {	-- Atiesh, Greatstaff of the Guardian (Druid)
 					["classes"] = { 11 }
 				})),
-				un(2, i(22589, {	-- Atiesh, Greatstaff of the Guardian (Mage)
+				un(REMOVED_FROM_GAME, i(22589, {	-- Atiesh, Greatstaff of the Guardian (Mage)
 					["classes"] = { 8 }
 				})),
-				un(2, i(22631, {	-- Atiesh, Greatstaff of the Guardian (Priest)
+				un(REMOVED_FROM_GAME, i(22631, {	-- Atiesh, Greatstaff of the Guardian (Priest)
 					["classes"] = { 5 }
 				})),
-				un(2, i(22630, {	-- Atiesh, Greatstaff of the Guardian (WL)
+				un(REMOVED_FROM_GAME, i(22630, {	-- Atiesh, Greatstaff of the Guardian (WL)
 					["classes"] = { 9 }
 				})),
 				i(71086, {	-- Dragonwrath, Tarecgosa's Rest (Priest, Mage, Lock, Druid, Shaman)
@@ -339,11 +339,11 @@ _.GearSets =
 				["classes"] = { 2, 5, 7, 10, 11 }
 			}),
 			-- Warlords of Draenor
-			un(4, i(124634)),	-- Thorasus, the Stone Heart of Draenor
-			un(4, i(124635)),	-- Nithramus, the All-Seer
-			un(4, i(124636)),	-- Maalus, the Blood Drinker
-			un(4, i(124637)),	-- Sanctus, Sigil of the Unbroken
-			un(4, i(124638)),	-- Etheralus, the Eternal Reward
+			un(REMOVED_FROM_GAME, i(124634)),	-- Thorasus, the Stone Heart of Draenor
+			un(REMOVED_FROM_GAME, i(124635)),	-- Nithramus, the All-Seer
+			un(REMOVED_FROM_GAME, i(124636)),	-- Maalus, the Blood Drinker
+			un(REMOVED_FROM_GAME, i(124637)),	-- Sanctus, Sigil of the Unbroken
+			un(REMOVED_FROM_GAME, i(124638)),	-- Etheralus, the Eternal Reward
 			-- Mists of Pandaria
 			un(38, i(102248)),	-- Fen-Yu, Fury of Xuen
 			un(38, i(102249)),	-- Gon-Lu, Strength of Xuen

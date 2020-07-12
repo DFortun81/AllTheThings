@@ -24,7 +24,7 @@ _.ExpansionFeatures =
 							}),
 						}),
 						i(114120, {	-- Big Crate of Salvage
-							["u"] = 2,	-- BoP / BoA Item
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								-- Only adding items where Salvage Crates was the only source
 								un(7, i(36533)),	-- Adorned Broadsword
@@ -225,7 +225,7 @@ _.ExpansionFeatures =
 									i(119725),	-- Streamtalker Aegis
 									i(119728),	-- Streamtalker Armbands
 									i(119737, {	-- Streamtalker Armguard
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119717),	-- Streamtalker Band of Destruction
 									i(119711),	-- Streamtalker Band of Onslaught
@@ -233,50 +233,50 @@ _.ExpansionFeatures =
 									i(119727),	-- Streamtalker Belt
 									i(119721),	-- Streamtalker Boots
 									i(119754, {	-- Streamtalker Bracers
-										["u"] = 1,	-- Never Available									
+										["u"] = NEVER_IMPLEMENTED,									
 									}),
 									i(119709),	-- Streamtalker Choker
 									i(119719),	-- Streamtalker Claws
 									i(119744, {	-- Streamtalker Cloak of Destruction
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119708, {	-- Streamtalker Cloak of Rage
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119738, {	-- Streamtalker Cloak of Wisdom
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119730, {	-- Streamtalker Chestguard
-										["u"] = 1,	-- Never Available										
+										["u"] = NEVER_IMPLEMENTED,										
 									}),
 									i(119723),	-- Streamtalker Coif
 									i(119749, {	-- Streamtalker Cowl
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119753, {	-- Streamtalker Girdle
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119722),	-- Streamtalker Gloves
 									i(119731, {	-- Streamtalker Greaves
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119748, {	-- Streamtalker Grips
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119732, {	-- Streamtalker Handguards
-										["u"] = 1,	-- Never Available										
+										["u"] = NEVER_IMPLEMENTED,										
 									}),
 									i(119733, {	-- Streamtalker Helm
-										["u"] = 1,	-- Never Available										
+										["u"] = NEVER_IMPLEMENTED,										
 									}),
 									i(119715),	-- Streamtalker Idol of Destruction
 									i(119710),	-- Streamtalker Idol of Rage
 									i(119740),	-- Streamtalker Idol of Wisdom
 									i(119750, {	-- Streamtalker Leggings
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119734, {	-- Streamtalker Legguards
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119724),	-- Streamtalker Legwraps
 									i(119714),	-- Streamtalker Medallion
@@ -286,15 +286,15 @@ _.ExpansionFeatures =
 									i(119712),	-- Streamtalker Ring of Onslaught
 									i(119741),	-- Streamtalker Ring of Wisdom
 									i(119747, {	-- Streamtalker Sabatons
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119751),	-- Streamtalker Shield
 									i(119735, {	-- Streamtalker Shoulderguards
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119745),	-- Streamtalker Slicers
 									i(119752, {	-- Streamtalker Spaulders
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119718),	-- Streamtalker Stone of Destruction
 									i(119713),	-- Streamtalker Stone of Rage
@@ -302,10 +302,10 @@ _.ExpansionFeatures =
 									i(119729),	-- Streamtalker Talons
 									i(119720),	-- Streamtalker Tunic
 									i(119746, {	-- Streamtalker Vest
-										["u"] = 1,	-- Never Available										
+										["u"] = NEVER_IMPLEMENTED,										
 									}),
 									i(119736, {	-- Streamtalker Waistguard
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 								},
 							}),
@@ -333,7 +333,7 @@ _.ExpansionFeatures =
 									i(119557),	-- Trailseeker Belt
 									i(119558),	-- Trailseeker Bracers
 									i(119545, {	-- Trailseeker Cloak of Rage
-										["u"] = 1,	-- Never Available
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119553),	-- Trailseeker Gauntlets
 									i(119552),	-- Trailseeker Greaves

@@ -7,8 +7,8 @@ _.WorldEvents =
 		["groups"] = {
 			n(-557, {	-- Korea World Event
 				n(-549, {	--Korea Only
-					un(3, ach(3896, {	-- Onyx Panther
-						un(3, i(48527)),	-- Enchanted Onyx (Onyx Panther)
+					un(REMOVED_FROM_GAME, ach(3896, {	-- Onyx Panther
+						un(REMOVED_FROM_GAME, i(48527)),	-- Enchanted Onyx (Onyx Panther)
 					})),
 				}),
 			}),

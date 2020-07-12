@@ -28,7 +28,7 @@ _.Zones =
 						i(9301, {	-- Recipe: Elixir of Shadow Power
 							["isLimited"] = true,
 						}),
-						un(2, i(13477)),	-- Recipe: Superior Mana Potion
+						un(REMOVED_FROM_GAME, i(13477)),	-- Recipe: Superior Mana Potion
 					},
 				}),
 				n(50304, {	-- Captain Donald Adams <Undercity Quartermaster>

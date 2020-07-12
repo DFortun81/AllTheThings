@@ -33,7 +33,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 					["g"] = {
-						un(3, i(97849)),	-- Radical Mojo
+						un(REMOVED_FROM_GAME, i(97849)),	-- Radical Mojo
 					},
 				}),
 				q(32862, {	-- Battlefield: Barrens Horde
@@ -41,7 +41,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 					["g"] = {
-						un(3, i(97849)),	-- Radical Mojo
+						un(REMOVED_FROM_GAME, i(97849)),	-- Radical Mojo
 					},
 				}),
 				q(25648, {	-- Beyond Durotar
@@ -78,7 +78,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
-						un(2, i(7129)),	-- Brutal Gauntlets
+						un(REMOVED_FROM_GAME, i(7129)),	-- Brutal Gauntlets
 					},
 				}),
 				q(832, {	-- Burning Shadows
@@ -206,7 +206,7 @@ _.Zones =
 					["races"] = { TROLL },
 					["classes"] = { PRIEST },
 					["g"] = {
-						un(2, i(16606)),	-- Juju Hex Robes
+						un(REMOVED_FROM_GAME, i(16606)),	-- Juju Hex Robes
 					},
 				}),
 				q(25259, {	-- Gaur Icehorn
@@ -345,9 +345,9 @@ _.Zones =
 						i(118219),	-- Harness of Forward Directions
 						i(131898),	-- Chestguard of Forward Directions
 						i(118218),	-- Girdle of Common Causes
-						un(34, i(67154)),	-- Staff of the Unwelcome
-						un(34, i(67157)),	-- Harness of Binding
-						un(34, i(67156)),	-- Girdle of Servitude
+						un(REMOVED_FROM_GAME, i(67154)),	-- Staff of the Unwelcome
+						un(REMOVED_FROM_GAME, i(67157)),	-- Harness of Binding
+						un(REMOVED_FROM_GAME, i(67156)),	-- Girdle of Servitude
 					},
 				}),
 				q(808,   {	-- Minshina's Skull
@@ -473,9 +473,9 @@ _.Zones =
 					["provider"] = { "n", 3208 },	-- Margoz
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(4947)),	-- Jagged Dagger
-						un(2, i(4939)),	-- Steady Bastard Sword
-						un(2, i(4948)),	-- Stinging Mace
+						un(REMOVED_FROM_GAME, i(4947)),	-- Jagged Dagger
+						un(REMOVED_FROM_GAME, i(4939)),	-- Steady Bastard Sword
+						un(REMOVED_FROM_GAME, i(4948)),	-- Stinging Mace
 					},
 				}),
 				q(25262, {	-- Skull Rock
@@ -555,7 +555,7 @@ _.Zones =
 					["provider"] = { "n", 3521 },	-- Ak'Zeloth
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(5420)),	-- Banshee Armor
+						un(REMOVED_FROM_GAME, i(5420)),	-- Banshee Armor
 					},
 				}),
 				q(25196, {	-- The Dranosh'ar Blockade

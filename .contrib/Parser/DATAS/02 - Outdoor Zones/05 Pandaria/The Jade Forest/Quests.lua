@@ -1069,7 +1069,6 @@ _.Zones =
 					["description"] = "Automatically given when prequisites have been fulfilled.",
 				}),
 				q(30567, {	-- Blanche's Boomer Brew
-					-- not available until lvl 90?
 					["provider"] = { "n", 59569 },	-- Brewmaster Blanche
 					["coord"] = { 38.8, 31.1, 371 },
 				}),

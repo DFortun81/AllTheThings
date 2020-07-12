@@ -316,7 +316,7 @@ _.Zones =
 								},
 							}),
 							q(41226, {	-- Breaking Out (Duplicate? triggers at the same time as 38672)
-								["u"] = 1,
+								["u"] = NEVER_IMPLEMENTED,
 							}),
 							q(39742, {	-- Vault of the Wardens
 								["description"] = "This is a bonus objective.",

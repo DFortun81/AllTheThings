@@ -46,7 +46,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					})),
 				})),
 				un(24, ach(1260)),	-- Almost Blind Luck
-				un(2, ach(1293, {	-- Blue Brewfest Stein [Removed]
+				un(REMOVED_FROM_GAME, ach(1293, {	-- Blue Brewfest Stein [Removed]
 					["description"] = "\nEach Brewfest Stein has five different filled appearances. Fill up the stein with one brew, relog, and then refresh your collection by shift+clicking on this achievement. Once it has registered, move on to the next brew and repeat.\n",
 					["g"] = bubbleDown({["u"] = 2}, {
 						i(33016, {	-- Blue Brewfest Stein
@@ -97,8 +97,8 @@ _.Holidays = bubbleDown({["u"] = 24},
 					}),
 				})),
 				un(24, ach(293)),	-- Disturbing the Peace
-				un(2, ach(1186)),	-- Down With The Dark Iron
-				un(2, ach(4782, {	-- Green Brewfest Stein [Removed]
+				un(REMOVED_FROM_GAME, ach(1186)),	-- Down With The Dark Iron
+				un(REMOVED_FROM_GAME, ach(4782, {	-- Green Brewfest Stein [Removed]
 					["g"] = bubbleDown({["u"] = 2}, {
 						i(37892, {	-- Green Brewfest Stein
 							i(37893),	-- Filled Green Brewfest Stein [Barleybrew Clear]
@@ -124,7 +124,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						crit(9),	-- Thunderbrew Stout, Stout Shrunken Head
 					},
 				}),
-				un(2, ach(1292, {	-- Yellow Brewfest Stein [Removed]
+				un(REMOVED_FROM_GAME, ach(1292, {	-- Yellow Brewfest Stein [Removed]
 					["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
 					["g"] = bubbleDown({["u"] = 2}, {
 						i(32912, {	-- Yellow Brewfest Stein

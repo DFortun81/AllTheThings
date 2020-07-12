@@ -10,7 +10,7 @@ _.GearSets =
 					["groups"] = {
 						i(170941),	-- Illidari Warglaives
 						i(170929),	-- Illidari Blindfold
-						un(1, i(170939)),	-- Illidari Chain
+						un(NEVER_IMPLEMENTED, i(170939)),	-- Illidari Chain
 						i(170928),	-- Illidari Shoulders
 						i(170940),	-- Illidari Drape
 						i(170931),	-- Illidari Robe

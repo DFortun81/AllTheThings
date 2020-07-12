@@ -182,8 +182,8 @@ _.Zones =
 					["provider"] = { "n", 2988 },	-- Morin Cloudstalker
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(2, i(4974)),	-- Compact Fighting Knife
-						un(2, i(4964)),	-- Goblin Smasher
+						un(REMOVED_FROM_GAME, i(4974)),	-- Compact Fighting Knife
+						un(REMOVED_FROM_GAME, i(4964)),	-- Goblin Smasher
 					},
 				}),
 				q(26180, {	-- Supervisor Fizsprocket

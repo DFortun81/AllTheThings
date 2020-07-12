@@ -332,7 +332,7 @@ _.Zones =
 						23333,	-- The Grand Collector
 						23355,	-- Zarcsin
 					},
-					["u"] = 2,	-- BoP / BoA Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(31873, {	-- Design: Veiled Shadow Draenite
 					["crs"] = {

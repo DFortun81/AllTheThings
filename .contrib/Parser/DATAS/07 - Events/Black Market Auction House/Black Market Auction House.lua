@@ -328,7 +328,7 @@ _.WorldEvents =
 			n(-319, {	-- Weapons
 				un(9, i(39769)),	-- Arcanite Ripper
 				un(9, i(90176)),	-- Flintlocke's Blasthammer
-				un(1, i(110591)),	-- Flintlocke's Blasthammer
+				un(NEVER_IMPLEMENTED, i(110591)),	-- Flintlocke's Blasthammer
 				un(9, i(44924)),	-- Sun-Lute of the Phoenix King
 			}),	
 			i(50379),	-- Battered Hilt (Alliance)
@@ -340,7 +340,7 @@ _.WorldEvents =
 			un(9, i(45037)),	-- Epic Purple Shirt
 			{	-- Grimoire of the Four Winds
 				["itemID"] = 110672,	-- Grimoire of the Four Winds
-				["u"] = 2,				
+				["u"] = REMOVED_FROM_GAME,				
 				["collectible"] = false,
 				["icon"] = "Interface\\Icons\\passive_monk_teachingsofmonastery",
 				["f"] = 55,
@@ -381,7 +381,7 @@ _.WorldEvents =
 			i(169430, {	--  Unclaimed Black Market Container
 				["sym"] = {{"select", "npcID", -94}, {"pop"}, {"not","itemID", 169430}},
 			}),
-			un(2, i(141995)),	-- Unclaimed Black Market Container Pre 8.2.5 (they updated and added new items)
+			un(REMOVED_FROM_GAME, i(141995)),	-- Unclaimed Black Market Container Pre 8.2.5 (they updated and added new items)
 		},
 		["description"] = "This list is close to what you can expect to find on the Black Market Auction House, but keep in mind other items could pop up.",
 		["maps"] = {

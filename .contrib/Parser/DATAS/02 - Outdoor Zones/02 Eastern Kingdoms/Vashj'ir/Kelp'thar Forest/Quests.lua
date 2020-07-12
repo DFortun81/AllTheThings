@@ -70,7 +70,7 @@ _.Zones =
 						},
 					}),
 					q(25497, {	-- Back in the Saddle (In beta never added to game)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(25477, {	-- Better Late Than Dead
@@ -130,7 +130,7 @@ _.Zones =
 						["sourceQuests"] = { 25598 },	-- Ain't Too Proud to Beg
 					}),
 					q(25413, {	-- Change of Plans (In beta never added to game)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(25884, {	-- Come Hell or High Water
 						["provider"] = { "n", 41344 },	-- Rendel Firetongue
@@ -206,7 +206,7 @@ _.Zones =
 						},
 					}),
 					q(25666, {	-- Getting Your Hands Dirty (In beta never added to game)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(25587, {	-- Gimme Shelter
 						["provider"] = { "n", 39667 },	-- Adarrah
@@ -318,11 +318,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					q(25384, {	-- Raw Materials
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 						["g"] = {
-							un(1, i(59797)),	-- Abalone-Linked Robes
-							un(1, i(59795)),	-- Harp Shell Shoulderpads
-							un(1, i(59796)),	-- Tread of Decapod Death
+							un(NEVER_IMPLEMENTED, i(59797)),	-- Abalone-Linked Robes
+							un(NEVER_IMPLEMENTED, i(59795)),	-- Harp Shell Shoulderpads
+							un(NEVER_IMPLEMENTED, i(59796)),	-- Tread of Decapod Death
 						},
 					}),
 					q(25405, {	-- Rest For the Weary (A)
@@ -350,10 +350,10 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					q(35738, {	-- Shallow End of the Gene Pool (In beta never added to game.)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(25498, {	-- Shark Bait (In beta never added to game.)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(27699, {	-- Shark Weak
 						["coord"] = { 58.3, 48.8, 201 },
@@ -373,7 +373,7 @@ _.Zones =
 						["sourceQuest"] = 25794,	-- Undersea Sanctuary
 					}),
 					q(25636, {	-- Starve a Fever, Feed a Cold (In beta never added to game.)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(25564, {	-- Stormwind Elite Aquatic and Land Forces
 						["provider"] = { "n", 39887 },	-- Captain Taylor
@@ -385,7 +385,7 @@ _.Zones =
 						},
 					}),
 					q(25737, {	-- Tenuous Negotiatons (In beta never added to game.)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(25371, {	-- The Abyssal Ride
 						["provider"] = { "n", 41248 },	-- Moanah Stormhoof
@@ -448,7 +448,7 @@ _.Zones =
 						},
 					}),
 					q(25742, {	-- What? This Old Thing? (In beta never added to game.)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(25885, {	-- What? What? In My Gut...? (A)
 						["provider"] = { "n", 41340 },	-- Private Pollard
@@ -463,7 +463,7 @@ _.Zones =
 						["sourceQuest"] = 25887,	-- Wake of Destruction
 					}),
 					q(25573, {	-- Your Underwater Mount (Temp) -- NYI
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 				}),
 			}),

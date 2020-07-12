@@ -43,10 +43,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(144184),	-- Bracers of the Fallen Crusader
 							i(144002),	-- Legguards of the Crimson Magus
 							i(144174),	-- Signet of the Hidden Door
-							un(2, i(81569)),	-- Forgotten Bloodmage Mantle (7.1 - Removed from Game!)
-							un(2, i(81571)),	-- Soulrender Greatcloak (7.1 - Removed from Game!)
-							un(2, i(81572)),	-- Bracers of the Fallen Crusader (7.1 - Removed from Game!)
-							un(2, i(81570)),	-- Legguards of the Crimson Magus (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81569)),	-- Forgotten Bloodmage Mantle (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81571)),	-- Soulrender Greatcloak (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81572)),	-- Bracers of the Fallen Crusader (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81570)),	-- Legguards of the Crimson Magus (7.1 - Removed from Game!)
 						},
 					}),
 					e(671, {	-- Brother Korloff
@@ -58,10 +58,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(144185),	-- Scorched Earth Cloak
 							i(143965),	-- Korloff's Raiment
 							i(144175),	-- Firefinger Ring
-							un(2, i(81576)),	-- Firestorm Greatstaff (7.1 - Removed from Game!)
-							un(2, i(81574)),	-- Helm of Rising Flame (7.1 - Removed from Game!)
-							un(2, i(81575)),	-- Scorched Earth Cloak (7.1 - Removed from Game!)
-							un(2, i(81573)),	-- Korloff's Raiment (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81576)),	-- Firestorm Greatstaff (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81574)),	-- Helm of Rising Flame (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81575)),	-- Scorched Earth Cloak (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81573)),	-- Korloff's Raiment (7.1 - Removed from Game!)
 						},
 					}),
 					e(674, {	-- High Inquisitor Whitemane
@@ -84,14 +84,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(144003),	-- Dashing Strike Treads
 							i(144176),	-- Triune Signet
 							i(144158),	-- Flashing Steel Talisman
-							un(2, i(81691)),	-- Greatstaff of Righteousness (7.1 - Removed from Game!)
-							un(2, i(81577)),	-- Lightbreaker Greatsword (7.1 - Removed from Game!)
-							un(2, i(81578)),	-- Crown of Holy Flame (7.1 - Removed from Game!)
-							un(2, i(81692)),	-- Whitemane's Embroidered Chapeau (7.1 - Removed from Game!)
-							un(2, i(81690)),	-- Incarnadine Scarlet Spaulders (7.1 - Removed from Game!)
-							un(2, i(81687)),	-- Waistplate of Imminent Resurrection (7.1 - Removed from Game!)
-							un(2, i(81689)),	-- Leggings of Hallowed Fire (7.1 - Removed from Game!)
-							un(2, i(81688)),	-- Dashing Strike Treads (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81691)),	-- Greatstaff of Righteousness (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81577)),	-- Lightbreaker Greatsword (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81578)),	-- Crown of Holy Flame (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81692)),	-- Whitemane's Embroidered Chapeau (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81690)),	-- Incarnadine Scarlet Spaulders (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81687)),	-- Waistplate of Imminent Resurrection (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81689)),	-- Leggings of Hallowed Fire (7.1 - Removed from Game!)
+							un(REMOVED_FROM_GAME, i(81688)),	-- Dashing Strike Treads (7.1 - Removed from Game!)
 						},
 					}),
 				},

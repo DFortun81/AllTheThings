@@ -18,7 +18,7 @@ _.WorldEvents =
 							89,	-- Darnassus
 							62,	-- Darkshore
 						},
-						["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {	-- [Note: Do not adjust ordering.]
+						["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {	-- [Note: Do not adjust ordering.]
 							-- ALLIANCE PART I
 							q(52062, {	-- A Disturbancee in Ashenvale
 								["provider"] = { "n", 139798 },	-- Master Mathias Shaw
@@ -121,7 +121,7 @@ _.WorldEvents =
 								}, 
 							}),
 							q(52220, {	-- Dragon Attack
-								["u"] = 1,
+								["u"] = NEVER_IMPLEMENTED,
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 52197 },	-- Long Away
 							}),
@@ -165,7 +165,7 @@ _.WorldEvents =
 								["sourceQuests"] = { 53095 },	-- A Flicker of Hope
 								["description"] = "Upon either failing or completing \"A Flicker of Hope\" this quest is auto-accepted",
 								["g"] = {
-									un(3, i(163127)),	-- Smoldering Reeins of the Teldrassil Hippogryph
+									un(REMOVED_FROM_GAME, i(163127)),	-- Smoldering Reeins of the Teldrassil Hippogryph
 								}, 
 							}),	
 							-- Horde Part I
@@ -292,7 +292,7 @@ _.WorldEvents =
 								["sourceQuests"] = { 50738 },	-- A Timely Arrival
 							}),	
 							q(53550, {	-- A Change in Leadership
-								["u"] = 1,
+								["u"] = NEVER_IMPLEMENTED,
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 50879 },	-- The Trees Have Ears
 							}),
@@ -325,7 +325,7 @@ _.WorldEvents =
 									53610,	-- Driving Them Out
 								}, 
 								["g"] = {
-									un(3, i(163128)),	-- War-Torn Reins of the Undercity Plaguebat
+									un(REMOVED_FROM_GAME, i(163128)),	-- War-Torn Reins of the Undercity Plaguebat
 								},
 							}),
 						}),
@@ -334,7 +334,7 @@ _.WorldEvents =
 						["maps"] = { 62 },	-- Darkshore; Let's attach the map to this zone since all the WQ's are here.
 						["g"] = {
 							n(QUESTS, {
-								["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									q(52895, {	-- Arboria
 										["races"] = ALLIANCE_ONLY,
 										["isDaily"] = true,
@@ -418,7 +418,7 @@ _.WorldEvents =
 								}),
 							}),
 							cl(5, {	-- Priest
-								["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162830),	-- Faithsworn Armwraps
 									i(162827),	-- Faithsworn Frock
 									i(162825),	-- Faithsworn Hood
@@ -431,7 +431,7 @@ _.WorldEvents =
 								}),
 							}),
 							cl(8, {	-- Mage
-								["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162805),	-- Spell-Splintered Cord
 									i(162801),	-- Spell-Splintered Cowl
 									i(162800),	-- Spell-Splintered Gloves
@@ -444,7 +444,7 @@ _.WorldEvents =
 								}),
 							}),
 							cl(9, {	-- Warlock
-								["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162853),	-- Unshackled Belt
 									i(162849),	-- Unshackled Crown
 									i(162852),	-- Unshackled Epaulettes
@@ -457,7 +457,7 @@ _.WorldEvents =
 								}),
 							}),
 							cl(11, {	-- Druid
-								["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162789),	-- Rootweave Binding
 									i(162787),	-- Rootweave Britches
 									i(162783),	-- Rootweave Garb
@@ -472,7 +472,7 @@ _.WorldEvents =
 								}),
 							}),
 							cl(4, {	-- Rogue
-								["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162835),	-- Ambuscade Breeches
 									i(163000),	-- Ambuscade Dagger
 									i(162832),	-- Ambuscade Footpads
@@ -486,7 +486,7 @@ _.WorldEvents =
 								}),
 							}),
 							cl(10, {	-- Monk
-								["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162808),	-- Serene Disciple's Anklewraps
 									i(162813),	-- Serene Disciple's Cord
 									i(162814),	-- Serene Disciple's Cuffs
@@ -501,7 +501,7 @@ _.WorldEvents =
 								}),
 							}),
 							cl(12, {	-- Demon Hunter
-								["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(163226),	-- Felbound Armguards
 									i(163237),	-- Felbound Armguards
 									i(163231),	-- Felbound Footwraps
@@ -522,7 +522,7 @@ _.WorldEvents =
 								}),
 							}),
 							cl(3, {	-- Hunter
-								["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162792),	-- Wildguard Boots
 									i(162798),	-- Wildguard Bracers
 									i(162794),	-- Wildguard Facemask
@@ -536,7 +536,7 @@ _.WorldEvents =
 								}),
 							}),
 							cl(7, {	-- Shaman
-								["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162839),	-- Earthpyre Chain Shirt
 									i(163004),	-- Earthpyre Claws
 									i(162842),	-- Earthpyre Coif
@@ -552,7 +552,7 @@ _.WorldEvents =
 								}),
 							}),
 							cl(2, {	-- Paladin
-								["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162818),	-- Sacrosanct Barbute
 									i(162815),	-- Sacrosanct Breastplate
 									i(162821),	-- Sacrosanct Faulds
@@ -568,7 +568,7 @@ _.WorldEvents =
 								}),
 							}),
 							cl(1, {	-- Warrior
-								["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(163169),	-- Bladeplate Barrier
 									i(163007),	-- Bladeplate Battleaxe
 									i(162862),	-- Bladeplate Braces
@@ -583,7 +583,7 @@ _.WorldEvents =
 								}),
 							}),
 							cl(6, {	-- Death Knight
-								["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162782),	-- Gravewalker's Bindings
 									i(162775),	-- Gravewalker's Chestplate
 									i(162777),	-- Gravewalker's Clutches

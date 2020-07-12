@@ -11,27 +11,27 @@ profession(ALCHEMY, {
 					["g"] = {
 						{
 							["recipeID"] = 168042,--[[Alchemical Catalyst]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 156588,--[[Alchemical Catalyst - Fireweed]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 156589,--[[Alchemical Catalyst - Flytrap]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 156593,--[[Alchemical Catalyst - Lotus]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 156592,--[[Alchemical Catalyst - Orchid]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 156590,--[[Alchemical Catalyst - Starflower]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},
@@ -40,7 +40,7 @@ profession(ALCHEMY, {
 					["g"] = {
 						{
 							["recipeID"] = 156567,--[[Draenor Armor Flask]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},

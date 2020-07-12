@@ -259,7 +259,7 @@ _.Zones =
 					["provider"] = { "n", 16669 },	-- Bemarrin
 					["sourceQuest"] = 9707,	-- Forging the Weapon
 					["g"] = {
-						un(2, i(25464)),	-- Blood-Tempered Ranseur
+						un(REMOVED_FROM_GAME, i(25464)),	-- Blood-Tempered Ranseur
 					},
 				}),
 				q(27280, {	-- The Earthbreaker Calls

@@ -508,7 +508,7 @@ _.Zones =
 					},
 				}),
 				q(25331, {	-- Grandma's Cat (NYI - duplicate)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(14399, {	-- Grandma's Lost It Alright
 					["provider"] = { "n", 36452 },	-- Grandma Wahl

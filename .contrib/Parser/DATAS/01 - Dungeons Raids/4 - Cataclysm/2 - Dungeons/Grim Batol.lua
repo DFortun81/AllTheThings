@@ -64,11 +64,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(157596), 	-- Glimmerthread Pantaloons (Added 7.3.5)
 					i(56444),	-- Umbriss Band
 					i(56440),	-- Skardyn's Grace
-					un(2, i(56116)),	-- Modgud's Blade [Replaced with 56441]
-					un(2, i(56112)),	-- Wildhammer Riding Helm [Replaced with 56443]
-					un(2, i(56113)),	-- Cursed Skardyn Vest [Replaced with 56442]
-					un(2, i(56114)),	-- Umbriss Band [Replaced with 56444]
-					un(2, i(56115)),	-- Skardyn's Grace [Replaced with 56440]
+					un(REMOVED_FROM_GAME, i(56116)),	-- Modgud's Blade [Replaced with 56441]
+					un(REMOVED_FROM_GAME, i(56112)),	-- Wildhammer Riding Helm [Replaced with 56443]
+					un(REMOVED_FROM_GAME, i(56113)),	-- Cursed Skardyn Vest [Replaced with 56442]
+					un(REMOVED_FROM_GAME, i(56114)),	-- Umbriss Band [Replaced with 56444]
+					un(REMOVED_FROM_GAME, i(56115)),	-- Skardyn's Grace [Replaced with 56440]
 				})),
 				cr(40177, e(132, {	-- Forgemaster Throngus
 					i(157613), 	-- Geomancy Slicer (Added 7.3.5)
@@ -78,11 +78,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56448),	-- Dark Iron Chain Boots
 					i(56445),	-- Ring of Dun Algaz
 					i(56449),	-- Throngus's Finger
-					un(2, i(56122)),	-- Wand of Untainted Power [Replaced with 56446]
-					un(2, i(56118)),	-- Belt of the Forgemaster [Replaced with 56447]
-					un(2, i(56119)),	-- Dark Iron Chain Boots [Replaced with 56448]
-					un(2, i(56120)),	-- Ring of Dun Algaz [Replaced with 56445]
-					un(2, i(56121)),	-- Throngus's Finger [Replaced with 56449]
+					un(REMOVED_FROM_GAME, i(56122)),	-- Wand of Untainted Power [Replaced with 56446]
+					un(REMOVED_FROM_GAME, i(56118)),	-- Belt of the Forgemaster [Replaced with 56447]
+					un(REMOVED_FROM_GAME, i(56119)),	-- Dark Iron Chain Boots [Replaced with 56448]
+					un(REMOVED_FROM_GAME, i(56120)),	-- Ring of Dun Algaz [Replaced with 56445]
+					un(REMOVED_FROM_GAME, i(56121)),	-- Throngus's Finger [Replaced with 56449]
 				})),
 				cr(40319, e(133, {	-- Drahga Shadowburner
 					i(56454),	-- Windwalker Blade
@@ -92,11 +92,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56453),	-- Crimsonborne Bracers
 					i(157614), 	-- Flame Invoker's Treads (Added 7.3.5)
 					i(56451),	-- Red Scale Boots
-					un(2, i(56127)),	-- Windwalker Blade [Replaced with 56454]
-					un(2, i(56124)),	-- Earthshaper Pauldrons [Replaced with 56452]
-					un(2, i(56126)),	-- Azureborne Cloak [Replaced with 56450]
-					un(2, i(56125)),	-- Crimsonborne Bracers [Replaced with 56453]
-					un(2, i(56123)),	-- Red Scale Boots [Replaced with 56451]		
+					un(REMOVED_FROM_GAME, i(56127)),	-- Windwalker Blade [Replaced with 56454]
+					un(REMOVED_FROM_GAME, i(56124)),	-- Earthshaper Pauldrons [Replaced with 56452]
+					un(REMOVED_FROM_GAME, i(56126)),	-- Azureborne Cloak [Replaced with 56450]
+					un(REMOVED_FROM_GAME, i(56125)),	-- Crimsonborne Bracers [Replaced with 56453]
+					un(REMOVED_FROM_GAME, i(56123)),	-- Red Scale Boots [Replaced with 56451]		
 				})),
 				cr(40484, e(134, {	-- Erudax
 					ach(4840),	-- Grim Batol
@@ -111,16 +111,16 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56463),	-- Corrupted Egg Shell
 					i(56462),	-- Gale of Shadows
 					i(56458),	-- Mark of Khardros
-					un(2, i(56137)),	-- Staff of Siphoned Essences [Replaced with 56461]
-					un(2, i(56131)),	-- Wild Hammer [Replaced with 56456]
-					un(2, i(56130)),	-- Mace of Transformed Bone [Replaced with 56459]
-					un(2, i(56133)),	-- Crown of Enfeebled Bodies [Replaced with 56460]
-					un(2, i(56128)),	-- Vest of Misshapen Hides [Replaced with 56462]
-					un(2, i(56135)),	-- Bracers of Umbral Mending [Replaced with 56464]
-					un(2, i(56129)),	-- Circle of Bone [Replaced with 56457]
-					un(2, i(56136)),	-- Corrupted Egg Shell [Replaced with 56463]
-					un(2, i(56138)),	-- Gale of Shadows [Replaced with 56462]
-					un(2, i(56132)),	-- Mark of Khardros [Replaced with 56458]
+					un(REMOVED_FROM_GAME, i(56137)),	-- Staff of Siphoned Essences [Replaced with 56461]
+					un(REMOVED_FROM_GAME, i(56131)),	-- Wild Hammer [Replaced with 56456]
+					un(REMOVED_FROM_GAME, i(56130)),	-- Mace of Transformed Bone [Replaced with 56459]
+					un(REMOVED_FROM_GAME, i(56133)),	-- Crown of Enfeebled Bodies [Replaced with 56460]
+					un(REMOVED_FROM_GAME, i(56128)),	-- Vest of Misshapen Hides [Replaced with 56462]
+					un(REMOVED_FROM_GAME, i(56135)),	-- Bracers of Umbral Mending [Replaced with 56464]
+					un(REMOVED_FROM_GAME, i(56129)),	-- Circle of Bone [Replaced with 56457]
+					un(REMOVED_FROM_GAME, i(56136)),	-- Corrupted Egg Shell [Replaced with 56463]
+					un(REMOVED_FROM_GAME, i(56138)),	-- Gale of Shadows [Replaced with 56462]
+					un(REMOVED_FROM_GAME, i(56132)),	-- Mark of Khardros [Replaced with 56458]
 				})),
 			}),
 			d(2,  {	-- Heroic

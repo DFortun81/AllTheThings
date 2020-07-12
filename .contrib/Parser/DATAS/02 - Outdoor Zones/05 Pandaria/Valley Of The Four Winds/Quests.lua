@@ -25,9 +25,9 @@ _.Zones =
 							["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 							["g"] = {
 								recipe(145038),	-- Noodle Cart Kit
-								un(1, i(101631)),	-- Recipe: Noodle Cart Kit
-								un(1, i(101728)),	-- Recipe: Grand Noodle Cart Kit
-								un(1, recipe(145167)),	-- Grand Noodle Cart Kit
+								un(NEVER_IMPLEMENTED, i(101631)),	-- Recipe: Noodle Cart Kit
+								un(NEVER_IMPLEMENTED, i(101728)),	-- Recipe: Grand Noodle Cart Kit
+								un(NEVER_IMPLEMENTED, recipe(145167)),	-- Grand Noodle Cart Kit
 							},
 						}),
 						q(30329, {	-- Cindergut Peppers
@@ -60,9 +60,9 @@ _.Zones =
 							["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 							["g"] = {
 								recipe(145061),	-- Deluxe Noodle Cart Kit
-								un(1, i(101664)),	-- Recipe: Deluxe Noodle Cart Kit
-								un(1, i(101739)),	-- Recipe: Grand Deluxe Noodle Cart Kit
-								un(1, recipe(145170)),	-- Grand Deluxe Noodle Cart Kit
+								un(NEVER_IMPLEMENTED, i(101664)),	-- Recipe: Deluxe Noodle Cart Kit
+								un(NEVER_IMPLEMENTED, i(101739)),	-- Recipe: Grand Deluxe Noodle Cart Kit
+								un(NEVER_IMPLEMENTED, recipe(145170)),	-- Grand Deluxe Noodle Cart Kit
 							},
 						}),
 						q(31332, {	-- Lesson 1: Sliced Peaches
@@ -148,9 +148,9 @@ _.Zones =
 							["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 							["g"] = {
 								recipe(145062),	-- Pandaren Treasure Noodle Cart Kit
-								un(1, i(101663)),	-- Recipe: Pandaren Treasure Noodle Cart Kit
-								un(1, i(101741)),	-- Recipe: Grand Pandaren Treasure Noodle Cart Kit
-								un(1, recipe(145197)),	-- Grand Pandaren Treasure Noodle Cart Kit
+								un(NEVER_IMPLEMENTED, i(101663)),	-- Recipe: Pandaren Treasure Noodle Cart Kit
+								un(NEVER_IMPLEMENTED, i(101741)),	-- Recipe: Grand Pandaren Treasure Noodle Cart Kit
+								un(NEVER_IMPLEMENTED, recipe(145197)),	-- Grand Pandaren Treasure Noodle Cart Kit
 							},
 						}),
 						q(31474, {	-- The Soup of Contemplation
@@ -1134,7 +1134,7 @@ _.Zones =
 					["provider"] = { "n", 58708 },	-- Sho
 				}),
 				q(31530, {	-- Mission: The Hozen Dozen -- Present in Beta but never made it to live servers
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30322, {	-- Money Matters
 					["isDaily"] = true,
@@ -1296,7 +1296,7 @@ _.Zones =
 					["provider"] = { "n", 57198 },	-- Guard Captain Oakenshield
 				}),
 				q(33139, {	-- Secrets Lost, Forever?
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30057, {	-- Seeing Orange
 					["sourceQuests"] = { 30056 },	-- The Farmer's Daughter
