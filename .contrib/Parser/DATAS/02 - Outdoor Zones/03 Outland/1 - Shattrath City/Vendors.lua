@@ -112,7 +112,7 @@ _.Zones =
 					["g"] = {
 						i(25720, {	-- Pattern: Heavy Knothide Leather
 							["spellID"] = 0,	-- This is now available from the trainer, so use spellID=0 to delink the old plans from the recipe
-							["u"] = 8,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),

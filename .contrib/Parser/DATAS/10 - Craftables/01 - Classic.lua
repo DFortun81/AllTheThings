@@ -54,14 +54,14 @@ _.Craftables =
 				i(3491),	-- Heavy Bronze Mace
 				i(5541),	-- Iridescent Hammer
 				i(12794, {	-- Masterwork Stormhammer
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(3492),	-- Mighty Iron Hammer
 				i(22384),	-- Persuader
 				i(7946),	-- Runed Mithril Hammer
 				i(12781),	-- Serenity
 				i(7954, {	-- The Shatterer
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(12792),	-- Volcanic Hammer
 			}),
@@ -69,7 +69,7 @@ _.Craftables =
 				i(7956),	-- Bronze Warhammer
 				i(11608),	-- Dark Iron Pulverizer
 				i(12776, {	-- Enchanted Battlehammer
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(3852),	-- Golden Iron Destroyer
 				i(12796),	-- Hammer of the Titans
@@ -118,7 +118,7 @@ _.Craftables =
 				i(3487),	-- Heavy Copper Broadsword
 				i(3853),	-- Moonsteel Broadsword
 				i(7960, {	-- Truesilver Champion
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 			filter(29, {	-- Polearms
@@ -145,7 +145,7 @@ _.Craftables =
 				i(19148),	-- Dark Iron Helm
 				i(20551),	-- Darkrune Helm
 				i(12620, {	-- Enchanted Thorium Helm
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(3837),	-- Golden Scale Coif
 				i(3836),	-- Green Iron Helm
@@ -155,7 +155,7 @@ _.Craftables =
 				i(12640),	-- Lionheart Helm
 				i(7931),	-- Mithril Coif
 				i(7937, {	-- Ornate Mithril Helm
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(12417),	-- Radiant Circlet
 				i(12612),	-- Runic Plate Helm
@@ -170,7 +170,7 @@ _.Craftables =
 				}),
 				i(11605),	-- Dark Iron Shoulders
 				i(19695, {	-- Darksoul Shoulders
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(12625),	-- Dawnbringer Shoulders
 				i(16988),	-- Fiery Chain Shoulders
@@ -180,7 +180,7 @@ _.Craftables =
 				i(12428),	-- Imperial Plate Shoulders
 				i(7932),	-- Mithril Scale Shoulders
 				i(7928, {	-- Ornate Mithril Shoulder
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(3480),	-- Rough Bronze Shoulders
 				i(12610),	-- Runic Plate Shoulders
@@ -190,26 +190,26 @@ _.Craftables =
 				i(7914),	-- Barbaric Iron Breastplate
 				i(163964),	-- Barbaric Iron Hauberk
 				i(19690, {	-- Bloodsoul Breastplate
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(3471),	-- Copper Chain Vest
 				i(11604),	-- Dark Iron Plate
 				i(11606),	-- Dark Iron Plate
 				i(20550),	-- Darkrune Breastplate
 				i(19693, {	-- Darksoul Breastplate
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(12628, {	-- Demon Forged Breastplate
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(12618, {	-- Enchanted Thorium Breastplate
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(3845),	-- Golden Scale Cuirass
 				i(3844),	-- Green Iron Hauberk
 				i(7930),	-- Heavy Mithril Breastplate
 				i(22669, {	-- Icebane Breastplate
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(12422),	-- Imperial Plate Chest
 				i(12641),	-- Invulnerable Mail
@@ -217,13 +217,13 @@ _.Craftables =
 				i(22762),	-- Ironvine Breastplate
 				i(22191),	-- Obsidian Plate Tunic
 				i(7935, {	-- Ornate Mithril Breastplate
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(12415),	-- Radiant Breastplate
 				i(2866),	-- Rough Bronze Cuirass
 				i(2864),	-- Runed Copper Breastplate
 				i(12613, {	-- Runic Breastplate
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(2870),	-- Shining Silver Breastplate
 				i(2869),	-- Silvered Bronze Breastplate
@@ -231,7 +231,7 @@ _.Craftables =
 				i(22196),	-- Thick Obsidian Breastplate
 				i(12405),	-- Thorium Armor
 				i(7939, {	-- Truesilver Breastplate
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(12624),	-- Wildthorn Mail
 			}),
@@ -239,26 +239,26 @@ _.Craftables =
 				i(7917),	-- Barbaric Iron Gloves
 				i(22194),	-- Black Grasp of the Destroyer
 				i(19692, {	-- Bloodsoul Gauntlets
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(19164),	-- Dark Iron Gauntlets
 				i(20549),	-- Darkrune Gauntlets
 				i(12631, {	-- Fiery Plate Gauntlets
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(3474),	-- Gemmed Copper Gauntlets
 				i(19057),	-- Gloves of the Dawn
 				i(9366, {	-- Golden Scale Gauntlets
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(3485),	-- Green Iron Gauntlets
 				i(7919),	-- Heavy Mithril Gauntlet
 				i(22670, {	-- Icebane Gauntlets
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(22763),	-- Ironvine Gloves
 				i(7927, {	-- Ornate Mithril Gloves
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(12418),	-- Radiant Gloves
 				i(3472),	-- Runed Copper Gauntlets
@@ -266,7 +266,7 @@ _.Craftables =
 				i(12632),	-- Storm Gauntlets
 				i(12639),	-- Stronghold Gauntlets
 				i(7938, {	-- Truesilver Gauntlets
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 			n(-326, {		-- Wrist
@@ -274,7 +274,7 @@ _.Craftables =
 				i(6040),	-- Golden Scale Bracers
 				i(3835),	-- Green Iron Bracers
 				i(22671, {	-- Icebane Bracers
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(12425),	-- Imperial Plate Bracers
 				i(7924),	-- Mithril Scale Bracers
@@ -297,10 +297,10 @@ _.Craftables =
 			n(-329, {		-- Legs
 				i(17013),	-- Dark Iron Leggings
 				i(19694, {	-- Darksoul Leggings
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(12619, {	-- Enchanted Thorium Leggings
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(3843),	-- Golden Scale Leggings
 				i(3842),	-- Green Iron Leggings
@@ -308,10 +308,10 @@ _.Craftables =
 				i(12429),	-- Imperial Plate Leggings
 				i(7920),	-- Mithril Scale Pants
 				i(7929, {	-- Orcish War Leggings
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(7926, {	-- Ornate Mithril Pants
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(12420),	-- Radiant Leggings
 				i(2865),	-- Rough Bronze Leggings
@@ -330,7 +330,7 @@ _.Craftables =
 				i(19048),	-- Heavy Timbermaw Boots
 				i(12426),	-- Imperial Plate Boots
 				i(7936, {	-- Ornate Mithril Boots
-					["u"] = 8,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(3846),	-- Polished Steel Boots
 				i(12419),	-- Radiant Boots
@@ -378,7 +378,7 @@ _.Craftables =
 				i(18282),	-- Core Marksman Rifle*
 				i(16004),	-- Dark Iron Rifle*
 				i(4369),	-- Deadly Blunderbuss*
-				un(8, i(16007)),	-- Flawless Arcanite Rifle
+				un(REMOVED_FROM_GAME, i(16007)),	-- Flawless Arcanite Rifle
 				i(4372),	-- Lovingly Crafted Boomstick*
 				i(10508),	-- Mithril Blunderbuss*
 				i(10510),	-- Mithril Heavy-Bore Rifle*
@@ -389,8 +389,8 @@ _.Craftables =
 			}),
 			n(-318, {	-- Armor
 				-- Head
-				un(8, i(19999)),	-- Bloodvine Goggles
-				un(8, i(19998)),	-- Bloodvine Lens
+				un(REMOVED_FROM_GAME, i(19999)),	-- Bloodvine Goggles
+				un(REMOVED_FROM_GAME, i(19998)),	-- Bloodvine Lens
 				i(10499),	-- Bright-Eye Goggles*
 				i(10501),	-- Catseye Ultra Goggles*
 				i(4393),	-- Craftsman's Monocle*
@@ -429,7 +429,7 @@ _.Craftables =
 				i(10577),	-- Goblin Mortar*
 				i(18634),	-- Gyrofreeze Ice Reflector*
 				i(45631),	-- High-Powered Flashlight*
-				un(8, i(18638)),	-- Hyper-Radiant Flame Reflector
+				un(REMOVED_FROM_GAME, i(18638)),	-- Hyper-Radiant Flame Reflector
 				i(18637),	-- Major Recombobulator*
 				i(4396),	-- Mechanical Dragonling*
 				i(4381),	-- Minor Recombobulator*
@@ -721,18 +721,18 @@ _.Craftables =
 		}),
 		n(-187, {	-- Leatherworking
 			filter(113, {	-- Bags
-				un(8, i(7372)),	-- Heavy Leather Ammo Pouch
-				un(8, i(7371)),	-- Heavy Quiver
+				un(REMOVED_FROM_GAME, i(7372)),	-- Heavy Leather Ammo Pouch
+				un(REMOVED_FROM_GAME, i(7371)),	-- Heavy Quiver
 				i(34482),	-- Leatherworker's Satchel
-				un(8, i(8217)),	-- Quickdraw Quiver
-				un(8, i(8218)),	-- Thick Leather Ammo Pouch
+				un(REMOVED_FROM_GAME, i(8217)),	-- Quickdraw Quiver
+				un(REMOVED_FROM_GAME, i(8218)),	-- Thick Leather Ammo Pouch
 			}),
 			n(-322, {	-- Cloak
-				un(8, i(18509)),	-- Chromatic Cloak
-				un(8, i(6466)),		-- Deviate Scale Cloak
-				un(8, i(18510)),	-- Hide of the Wild
-				un(8, i(18511)),	-- Shifting Cloak
-				un(8, i(8215)),		-- Wild Leather Cloak
+				un(REMOVED_FROM_GAME, i(18509)),	-- Chromatic Cloak
+				un(REMOVED_FROM_GAME, i(6466)),		-- Deviate Scale Cloak
+				un(REMOVED_FROM_GAME, i(18510)),	-- Hide of the Wild
+				un(REMOVED_FROM_GAME, i(18511)),	-- Shifting Cloak
+				un(REMOVED_FROM_GAME, i(8215)),		-- Wild Leather Cloak
 				i(8216),	-- Big Voodoo Cloak
 				i(7283),	-- Black Whelp Cloak
 				i(2316),	-- Dark Leather Cloak
@@ -750,21 +750,21 @@ _.Craftables =
 					i(15094),	-- Runic Leather Headband (Trainable now, old Pattern id 15756 used to teach this.)
 					i(15086),	-- Wicked Leather Headband (Trainable now, old Pattern id 15744 used to teach this.)
 					i(8348),	-- Helm of Fire
-					un(8, i(8345)),		-- Wolfshead Helm
-					un(8, i(8214)),		-- Wild Leather Helmet
+					un(REMOVED_FROM_GAME, i(8345)),		-- Wolfshead Helm
+					un(REMOVED_FROM_GAME, i(8214)),		-- Wild Leather Helmet
 					i(8201),	-- Big Voodoo Mask
 					i(8176),	-- Nightscape Headband
 					i(8174),	-- Comfortable Leather Hat
 				}),
 				n(-321, {	-- Shoulder
-					un(8, i(19689)),	-- Blood Tiger Shoulders
-					un(8, i(15058)),	-- Stormshroud Shoulders
+					un(REMOVED_FROM_GAME, i(19689)),	-- Blood Tiger Shoulders
+					un(REMOVED_FROM_GAME, i(15058)),	-- Stormshroud Shoulders
 					i(15055),	-- Volcanic Shoulders
 					i(19058),	-- Golden Mantle of the Dawn
 					i(15061),	-- Living Shoulders
 					i(15096),	-- Runic Leather Shoulders (Trainable now, old Pattern id 15777 used to teach this.)
 					i(15067),	-- Ironfeather Shoulders
-					un(8, i(8210)),		-- Wild Leather Shoulders
+					un(REMOVED_FROM_GAME, i(8210)),		-- Wild Leather Shoulders
 					i(8192),	-- Nightscape Shoulders
 					i(5964),	-- Barbaric Shoulders
 					i(4252),	-- Dark Leather Shoulders
@@ -772,20 +772,20 @@ _.Craftables =
 					i(4251),	-- Hillman's Shoulders
 				}),
 				n(-323, {	-- Chest
-					un(8, i(22661)),	-- Polar Tunic
-					un(8, i(19688)),	-- Blood Tiger Breastplate
-					un(8, i(19685)),	-- Primal Batskin Jerkin
-					un(8, i(15059)),	-- Living Breastplate
+					un(REMOVED_FROM_GAME, i(22661)),	-- Polar Tunic
+					un(REMOVED_FROM_GAME, i(19688)),	-- Blood Tiger Breastplate
+					un(REMOVED_FROM_GAME, i(19685)),	-- Primal Batskin Jerkin
+					un(REMOVED_FROM_GAME, i(15059)),	-- Living Breastplate
 					i(15090),	-- Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)
 					i(15085),	-- Wicked Leather Armor (Trainable now, old Pattern id 15773 used to teach this.)
-					un(8, i(15066)),	-- Ironfeather Breastplate
-					un(8, i(15056)),	-- Stormshroud Armor
+					un(REMOVED_FROM_GAME, i(15066)),	-- Ironfeather Breastplate
+					un(REMOVED_FROM_GAME, i(15056)),	-- Stormshroud Armor
 					i(15075),	-- Chimeric Vest
 					i(15053),	-- Volcanic Breastplate
 					i(15064),	-- Warbear Harness
-					un(8, i(15068)),	-- Frostsaber Tunic
+					un(REMOVED_FROM_GAME, i(15068)),	-- Frostsaber Tunic
 					i(8349),	-- Feathered Breastplate
-					un(8, i(8211)),		-- Wild Leather Vest
+					un(REMOVED_FROM_GAME, i(8211)),		-- Wild Leather Vest
 					i(8200),	-- Big Voodoo Robe
 					i(8175),	-- Nightscape Tunic
 					i(5739),	-- Barbaric Harness
@@ -806,8 +806,8 @@ _.Craftables =
 					i(2300),	-- Embossed Leather Vest
 				}),
 				n(-326, {	-- Wrists
-					un(8, i(22663)),	-- Polar Bracers
-					un(8, i(19687)),	-- Primal Batskin Bracers
+					un(REMOVED_FROM_GAME, i(22663)),	-- Polar Bracers
+					un(REMOVED_FROM_GAME, i(19687)),	-- Primal Batskin Bracers
 					i(15092),	-- Runic Leather Bracers (Trainable now, old Pattern id 15739 used to teach this.)
 					i(15084),	-- Wicked Leather Bracers (Trainable now, old Pattern id 15728 used to teach this.)
 					i(4260),	-- Guardian Leather Bracers
@@ -820,14 +820,14 @@ _.Craftables =
 				}),
 				n(-327, {	-- Hands
 					i(19049),	-- Timbermaw Brawlers
-					un(8, i(22662)),	-- Polar Gloves
-					un(8, i(19686)),	-- Primal Batskin Gloves
-					un(8, i(15070)),	-- Frostsaber Gloves
+					un(REMOVED_FROM_GAME, i(22662)),	-- Polar Gloves
+					un(REMOVED_FROM_GAME, i(19686)),	-- Primal Batskin Gloves
+					un(REMOVED_FROM_GAME, i(15070)),	-- Frostsaber Gloves
 					i(15063),	-- Devilsaur Gauntlets
-					un(8, i(21278)),	-- Stormshroud Gloves
+					un(REMOVED_FROM_GAME, i(21278)),	-- Stormshroud Gloves
 					i(15091),	-- Runic Leather Gauntlets (Trainable now, old Pattern id 15731 used to teach this.)
 					i(15083),	-- Wicked Leather Gauntlets (Trainable now, old Pattern id 15725 used to teach this.)
-					un(8, i(15074)),	-- Chimeric Gloves
+					un(REMOVED_FROM_GAME, i(15074)),	-- Chimeric Gloves
 					i(8346),	-- Gauntlets of the Sea
 					i(18238),	-- Shadowskin Gloves
 					un(29, i(17721)),	-- Gloves of the Greatfather
@@ -841,12 +841,12 @@ _.Craftables =
 					i(7285),	-- Nimble Leather Gloves
 					i(7284),	-- Red Whelp Gloves
 					i(7349),	-- Herbalist's Gloves
-					un(8, i(6467)),		-- Deviate Scale Gloves
+					un(REMOVED_FROM_GAME, i(6467)),		-- Deviate Scale Gloves
 					i(2312),	-- Fine Leather Gloves
 					i(4239),	-- Embossed Leather Gloves
 				}),
 				n(-328, {	-- Waist
-					un(8, i(18504)),	-- Girdle of Insight
+					un(REMOVED_FROM_GAME, i(18504)),	-- Girdle of Insight
 						i(22761),	-- Bramblewood Belt
 						i(19163),	-- Molten Belt
 						i(19162),	-- Corehound Belt
@@ -862,21 +862,21 @@ _.Craftables =
 						i(4257),	-- Green Leather Belt
 						i(4249),	-- Dark Leather Belt
 						i(4250),	-- Hillman's Belt
-						un(8, i(6468)),		-- Deviate Scale Belt
+						un(REMOVED_FROM_GAME, i(6468)),		-- Deviate Scale Belt
 						i(5780),	-- Murloc Scale Belt
 						i(4246),	-- Fine Leather Belt
 					}),
 				n(-329, {	-- Legs
 					i(15095),	-- Runic Leather Pants (Trainable now, old Pattern id 15765 used to teach this.)
 					i(15062),	-- Devilsaur Leggings
-					un(8, i(15069)),	-- Frostsaber Leggings
+					un(REMOVED_FROM_GAME, i(15069)),	-- Frostsaber Leggings
 					i(15065),	-- Warbear Woolies
 					i(15087),	-- Wicked Leather Pants (Trainable now, old Pattern id 15757 used to teach this.)
-					un(8, i(15060)),	-- Living Leggings
+					un(REMOVED_FROM_GAME, i(15060)),	-- Living Leggings
 					i(15072),	-- Chimeric Leggings
 					i(15057),	-- Stormshroud Pants
-					un(8, i(15054)),	-- Volcanic Leggings
-					un(8, i(8212)),		-- Wild Leather Leggings
+					un(REMOVED_FROM_GAME, i(15054)),	-- Volcanic Leggings
+					un(REMOVED_FROM_GAME, i(8212)),		-- Wild Leather Leggings
 					i(8202),	-- Big Voodoo Pants
 					i(8193),	-- Nightscape Pants
 					i(5963),	-- Barbaric Leggings
@@ -891,11 +891,11 @@ _.Craftables =
 				n(-330, {	-- Feet
 					i(22760),	-- Bramblewood Boots
 					i(16982),	-- Corehound Boots
-					un(8, i(18506)),	-- Mongoose Boots
+					un(REMOVED_FROM_GAME, i(18506)),	-- Mongoose Boots
 					i(19052),	-- Dawn Treaders
 					i(15073),	-- Chimeric Boots
 					i(15071),	-- Frostsaber Boots
-					un(8, i(8213)),		-- Wild Leather Boots
+					un(REMOVED_FROM_GAME, i(8213)),		-- Wild Leather Boots
 					i(8197),	-- Nightscape Boots
 					i(7391),	-- Swift Boots
 					i(7390),	-- Dusky Boots
@@ -911,31 +911,31 @@ _.Craftables =
 					i(8191),	-- Turtle Scale Helm
 				}),
 				n(-321, {	-- Shoulder
-					un(8, i(15049)),	-- Blue Dragonscale Shoulders
+					un(REMOVED_FROM_GAME, i(15049)),	-- Blue Dragonscale Shoulders
 					i(15051),	-- Black Dragonscale Shoulders
-					un(8, i(15081)),	-- Heavy Scorpid Shoulders
+					un(REMOVED_FROM_GAME, i(15081)),	-- Heavy Scorpid Shoulders
 					i(8207),	-- Tough Scorpid Shoulders
 				}),
 				n(-323, {	-- Chest
 					un(NEVER_IMPLEMENTED, i(15141)),	-- Onyxia Scale Breastplate (never made it out of Beta)
 					i(20479),	-- Spitfire Breastplate
 					i(20478),	-- Sandstalker Breastplate
-					un(8, i(20380, {	-- Dreamscale Breastplate
+					un(REMOVED_FROM_GAME, i(20380, {	-- Dreamscale Breastplate
 						["description"] =  "While this recipe is still available, the mats required to craft it are not",
 					})),
-					un(8, i(22664)),	-- Icy Scale Breastplate
-					un(8, i(15047)),	-- Red Dragonscale Breastplate
-					un(8, i(15048)),	-- Blue Dragonscale Breastplate
+					un(REMOVED_FROM_GAME, i(22664)),	-- Icy Scale Breastplate
+					un(REMOVED_FROM_GAME, i(15047)),	-- Red Dragonscale Breastplate
+					un(REMOVED_FROM_GAME, i(15048)),	-- Blue Dragonscale Breastplate
 					i(15050),	-- Black Dragonscale Breastplate
 					i(15045),	-- Green Dragonscale Breastplate
-					un(8, i(15076)),	-- Heavy Scorpid Vest
+					un(REMOVED_FROM_GAME, i(15076)),	-- Heavy Scorpid Vest
 					i(8367),	-- Dragonscale Breastplate
 					i(8203),	-- Tough Scorpid Breastplate
 					i(8189),	-- Turtle Scale Breastplate
 				}),
 				n(-326, {	-- Wrists
-					un(8, i(22665)),	-- Icy Scale Bracers
-					un(8, i(18508)),	-- Swift Flight Bracers
+					un(REMOVED_FROM_GAME, i(22665)),	-- Icy Scale Bracers
+					un(REMOVED_FROM_GAME, i(18508)),	-- Swift Flight Bracers
 					i(20481),	-- Spitfire Bracers
 					i(20476),	-- Sandstalker Bracers
 					i(15077),	-- Heavy Scorpid Bracers
@@ -944,12 +944,12 @@ _.Craftables =
 				}),
 				n(-327, {	-- Hands
 					i(19157),	-- Chromatic Gauntlets
-					un(8, i(22666)),	-- Icy Scale Gauntlets
+					un(REMOVED_FROM_GAME, i(22666)),	-- Icy Scale Gauntlets
 					i(20480),	-- Spitfire Gauntlets
 					i(20477),	-- Sandstalker Gauntlets
-					un(8, i(15078)),	-- Heavy Scorpid Gauntlets
+					un(REMOVED_FROM_GAME, i(15078)),	-- Heavy Scorpid Gauntlets
 					i(20296),	-- Green Dragonscale Gauntlets
-					un(8, i(8347)),		-- Dragonscale Gauntlets
+					un(REMOVED_FROM_GAME, i(8347)),		-- Dragonscale Gauntlets
 					i(8204),	-- Tough Scorpid Gloves
 					i(8187),	-- Turtle Scale Gloves
 					i(7348),	-- Fletcher's Gloves
@@ -960,7 +960,7 @@ _.Craftables =
 				n(-329, {	-- Legs
 					i(15052),	-- Black Dragonscale Leggings
 					i(20295),	-- Blue Dragonscale Leggings
-					un(8, i(15079)),	-- Heavy Scorpid Leggings
+					un(REMOVED_FROM_GAME, i(15079)),	-- Heavy Scorpid Leggings
 					i(15046),	-- Green Dragonscale Leggings
 					i(8206),	-- Tough Scorpid Leggings
 					i(8185),	-- Turtle Scale Leggings
@@ -994,8 +994,8 @@ _.Craftables =
 				i(4240),	-- Woolen Bag
 			}),
 			n(-323, {	-- Chest
-				un(8, i(19682)),	-- Bloodvine Vest
-				un(8, i(22652)),	-- Glacial Vest
+				un(REMOVED_FROM_GAME, i(19682)),	-- Bloodvine Vest
+				un(REMOVED_FROM_GAME, i(22652)),	-- Glacial Vest
 				i(14153, {	-- Robe of the Void
 					["timeline"] = {
 						"added 1.11.1.5462",
@@ -1045,7 +1045,7 @@ _.Craftables =
 				i(14128),	-- Wizardweave Robe
 			}),
 			n(-322, {	-- Cloaks
-				un(8, i(22658)),	-- Glacial Cloak
+				un(REMOVED_FROM_GAME, i(22658)),	-- Glacial Cloak
 				i(7053),	-- Azure Silk Cloak
 				i(14103),	-- Brightcloth Cloak
 				i(14044),	-- Cindercloth Cloak
@@ -1061,7 +1061,7 @@ _.Craftables =
 				i(13860),	-- Runecloth Cloak
 			}),
 			n(-330, {	-- Feet
-				un(8, i(19684)),	-- Bloodvine Boots
+				un(REMOVED_FROM_GAME, i(19684)),	-- Bloodvine Boots
 				un(NEVER_IMPLEMENTED, i(7027)),		-- Boots of Darkness
 				i(19056),	-- Argent Boots
 				i(10026),	-- Black Mageweave Boots
@@ -1080,7 +1080,7 @@ _.Craftables =
 				i(2583),	-- Woolen Boots
 			}),
 			n(-327, {	-- Hands
-				un(8, i(22654)),	-- Glacial Gloves
+				un(REMOVED_FROM_GAME, i(22654)),	-- Glacial Gloves
 				i(4319),	-- Azure Silk Gloves
 				i(10003),	-- Black Mageweave Gloves
 				i(14101),	-- Brightcloth Gloves
@@ -1124,7 +1124,7 @@ _.Craftables =
 				i(14130),	-- Wizardweave Turban
 			}),
 			n(-329, {	-- Legs
-				un(8, i(19683)),	-- Bloodvine Leggings
+				un(REMOVED_FROM_GAME, i(19683)),	-- Bloodvine Leggings
 				i(7046),	-- Azure Silk Pants
 				i(9999),	-- Black Mageweave Leggings
 				i(14104),	-- Brightcloth Pants
@@ -1201,7 +1201,7 @@ _.Craftables =
 				i(19047),	-- Wisdom of the Timbermaw
 			}),
 			n(-326, {	-- Wrist
-				un(8, i(22655)),	-- Glacial Wrists
+				un(REMOVED_FROM_GAME, i(22655)),	-- Glacial Wrists
 				i(18263),	-- Flarecore Wraps
 				i(4308),	-- Green Linen Bracers
 			}),

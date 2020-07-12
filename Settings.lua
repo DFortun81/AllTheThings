@@ -1765,7 +1765,7 @@ local function OnScrollBarValueChanged(self, value)
 	local un = math.floor(value);
 	local up = un + 1;
 	self.CurrentValue = (up - value) > (-(un - value)) and un or up;
-	self.child:SetPoint("TOP", 0, (self.CurrentValue / 100) * 360);
+	self.child:SetPoint("TOP", 0, (self.CurrentValue / 100) * 200);
 end
 local scrollbar = CreateFrame("Slider", nil, settings, "UIPanelScrollBarTemplate");
 scrollbar:SetPoint("TOP", line, "BOTTOM", -3, -16);
@@ -1913,7 +1913,7 @@ local unobtainableFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate")
 unobtainableFrame:SetPoint("TOP",unobtainable,0,-20);
 unobtainableFrame:SetPoint("LEFT", child, 4, 0);
 unobtainableFrame:SetPoint("RIGHT", child, -4, 0);
-unobtainableFrame:SetHeight(535);
+unobtainableFrame:SetHeight(320);
 
 -- unobtainable enable
 local unobtainableEnable = child:CreateCheckBox("Filter Unobtainable Items",

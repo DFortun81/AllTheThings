@@ -25,7 +25,7 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5768 },	-- Ebru
 					["g"] = {
-						un(8, i(6476)),	-- Pattern: Deviate Scale Belt
+						un(REMOVED_FROM_GAME, i(6476)),	-- Pattern: Deviate Scale Belt
 						un(REMOVED_FROM_GAME, i(8071)),	-- Sizzle Stick
 						un(REMOVED_FROM_GAME, i(6481)),	-- Dagmire Gauntlets
 					},

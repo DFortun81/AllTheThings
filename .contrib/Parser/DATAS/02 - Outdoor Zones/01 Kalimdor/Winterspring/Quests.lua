@@ -29,7 +29,7 @@ _.Zones =
 					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						un(8, recipe(26011)),	-- Tranquil Mechanical Yeti
+						un(REMOVED_FROM_GAME, recipe(26011)),	-- Tranquil Mechanical Yeti
 					},
 				}),
 				q(28837, {	-- Altered Beasts
@@ -199,7 +199,7 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12699)),	-- Plans: Fiery Plate Gauntlets
-						un(8, i(12631)),	-- Fiery Plate Gauntlets
+						un(REMOVED_FROM_GAME, i(12631)),	-- Fiery Plate Gauntlets
 					},
 				}),
 				q(28632, {	-- Fresh From The Hills

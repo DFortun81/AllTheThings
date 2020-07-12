@@ -689,7 +689,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16376 },	--
 					["g"] = {
-						un(8, i(22658)),	-- Glacial Cloak
+						un(REMOVED_FROM_GAME, i(22658)),	-- Glacial Cloak
 					},
 				}),
 				q(27369, {	-- Greasing the Wheel

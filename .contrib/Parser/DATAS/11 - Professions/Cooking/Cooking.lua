@@ -379,7 +379,7 @@ profession(COOKING, {
 				un(REMOVED_FROM_GAME, i(5485)),	-- Recipe: Fillet of Frenzy
 				un(REMOVED_FROM_GAME, h(i(3734))),		-- Recipe: Big Bear Steak [Removed From Game!]
 				un(REMOVED_FROM_GAME, i(5482)),	-- Recipe: Kaldorei Spider Kabob
-				un(8, h(recipe(3397))),	-- Big Bear Steak [Removed From Game!]
+				un(REMOVED_FROM_GAME, h(recipe(3397))),	-- Big Bear Steak [Removed From Game!]
 				{
 					["itemID"] = 7678,	-- Recipe: Thistle Tea (Removed from Game!)
 					["spellID"] = 9513,	-- Thistle Tea
@@ -489,7 +489,7 @@ profession(COOKING, {
 				recipe(18246),	-- Mightfish Steak
 				recipe(22761),	-- Runn Tum Tuber Surprise
 				recipe(24801),	-- Smoked Desert Dumplings
-				un(8, recipe(25659)),	-- Dirge's Kickin' Chimaerok Chops
+				un(REMOVED_FROM_GAME, recipe(25659)),	-- Dirge's Kickin' Chimaerok Chops
 				--]]
 			}),
 		}),

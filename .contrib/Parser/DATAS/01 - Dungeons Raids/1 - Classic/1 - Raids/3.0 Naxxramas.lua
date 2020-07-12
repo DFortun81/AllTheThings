@@ -100,7 +100,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
-								un(8, i(22658)),	-- Glacial Cloak
+								un(REMOVED_FROM_GAME, i(22658)),	-- Glacial Cloak
 							},
 						},
 						{	-- Glacial Gloves
@@ -109,7 +109,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
-								un(8, i(22654)),	-- Glacial Gloves
+								un(REMOVED_FROM_GAME, i(22654)),	-- Glacial Gloves
 							},
 						},
 						{	-- Glacial Vest
@@ -118,7 +118,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
-								un(8, i(22652)),	-- Glacial Vest
+								un(REMOVED_FROM_GAME, i(22652)),	-- Glacial Vest
 							},
 						},
 						{	-- Glacial Wrists
@@ -127,7 +127,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
-								un(8, i(22655)),	-- Glacial Wrists
+								un(REMOVED_FROM_GAME, i(22655)),	-- Glacial Wrists
 							},
 						},
 						{	-- Icebane Bracers
@@ -172,7 +172,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
-								un(8, i(22665)),	-- Icy Scale Bracers
+								un(REMOVED_FROM_GAME, i(22665)),	-- Icy Scale Bracers
 							},
 						},
 						{	-- Icy Scale Breastplate
@@ -181,7 +181,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
-								un(8, i(22664)),	-- Icy Scale Breastplate
+								un(REMOVED_FROM_GAME, i(22664)),	-- Icy Scale Breastplate
 							},
 						},
 						{	-- Icy Scale Gauntlets
@@ -190,7 +190,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
-								un(8, i(22666)),	-- Icy Scale Gauntlets
+								un(REMOVED_FROM_GAME, i(22666)),	-- Icy Scale Gauntlets
 							},
 						},
 						{	-- Polar Bracers
@@ -199,7 +199,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
-								un(8, i(22663)),	-- Polar Bracers
+								un(REMOVED_FROM_GAME, i(22663)),	-- Polar Bracers
 							},
 						},
 						{	-- Polar Gloves
@@ -208,7 +208,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
-								un(8, i(22662)),	-- Polar Gloves
+								un(REMOVED_FROM_GAME, i(22662)),	-- Polar Gloves
 							},
 						},
 						{	-- Polar Tunic
@@ -217,7 +217,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
-								un(8, i(22661)),	-- Polar Tunic
+								un(REMOVED_FROM_GAME, i(22661)),	-- Polar Tunic
 							},
 						},
 						{	-- Ramaladni's Icy Grasp
