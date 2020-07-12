@@ -66,7 +66,7 @@ _.PetJournal =
 		p(2538),			-- Dasher
 		p(1330),			-- Death Adder Hatchling
 		p(2464),			-- Deathsting Scorpid
-		un(4, p(1449)),		-- Deathwatch Hatchling
+		un(REMOVED_FROM_GAME, p(1449)),		-- Deathwatch Hatchling
 		p(484),				-- Desert Spider
 		p(233),				-- Deviate Hatchling
 		p(523),				-- Devouring Maggot

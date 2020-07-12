@@ -13,7 +13,7 @@ _.Toys =
 		i(134026),		-- Honorable Pennant
 		i(163697),		-- Laser Pointer
 		i(174871),		-- Mayhem Mind Melder
-		un(4, i(89205)),	-- Mini Mana Bomb (Horde) No Longer Available
+		un(REMOVED_FROM_GAME, i(89205)),	-- Mini Mana Bomb (Horde) No Longer Available
 		i(143660), 		-- Mrgrglhjorn
 		i(86596),		-- Nat's Fishing Chair
 		i(122700), 		-- Portable Audiophone

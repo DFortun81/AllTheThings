@@ -1026,11 +1026,11 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["g"] = {
-						un(4, i(118290)),	-- Solium Band of Might
-						un(4, i(118291)),	-- Solium Band of Wisdom
-						un(4, i(118292)),	-- Solium Band of Dexterity
-						un(4, i(118293)),	-- Solium Band of Endurance
-						un(4, i(118294)),	-- Solium Band of Mending
+						un(REMOVED_FROM_GAME, i(118290)),	-- Solium Band of Might
+						un(REMOVED_FROM_GAME, i(118291)),	-- Solium Band of Wisdom
+						un(REMOVED_FROM_GAME, i(118292)),	-- Solium Band of Dexterity
+						un(REMOVED_FROM_GAME, i(118293)),	-- Solium Band of Endurance
+						un(REMOVED_FROM_GAME, i(118294)),	-- Solium Band of Mending
 					},
 				}),
 				q(33582, {	-- Kura's Vengeance
@@ -1628,11 +1628,11 @@ _.Zones =
 						36012,	-- Reverse Piracy
 					},
 					["g"] = {
-						un(4, i(118305)),	-- Spellbound Runic Band of Elemental Power
-						un(4, i(118306)),	-- Spellbound Runic Band of the All-Seeing Eye
-						un(4, i(118307)),	-- Spellbound Runic Band of Unrelenting Slaughter
-						un(4, i(118308)),	-- Spellbound Runic Band of Elemental Invincibility
-						un(4, i(118309)),	-- Spellbound Runic Band of Infinite Preservation
+						un(REMOVED_FROM_GAME, i(118305)),	-- Spellbound Runic Band of Elemental Power
+						un(REMOVED_FROM_GAME, i(118306)),	-- Spellbound Runic Band of the All-Seeing Eye
+						un(REMOVED_FROM_GAME, i(118307)),	-- Spellbound Runic Band of Unrelenting Slaughter
+						un(REMOVED_FROM_GAME, i(118308)),	-- Spellbound Runic Band of Elemental Invincibility
+						un(REMOVED_FROM_GAME, i(118309)),	-- Spellbound Runic Band of Infinite Preservation
 					},
 				}),
 				q(36843, {	-- They Came From Above
@@ -1688,11 +1688,11 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["g"] = {
-						un(4, i(118300)),	-- Spellbound Solium Band of Sorcerous Strength
-						un(4, i(118301)),	-- Spellbound Solium Band of the Kirin-Tor
-						un(4, i(118302)),	-- Spellbound Solium Band of Fatal Strikes
-						un(4, i(118303)),	-- Spellbound Solium Band of Sorcerous Invincibility
-						un(4, i(118304)),	-- Spellbound Solium Band of the Immortal Spirit
+						un(REMOVED_FROM_GAME, i(118300)),	-- Spellbound Solium Band of Sorcerous Strength
+						un(REMOVED_FROM_GAME, i(118301)),	-- Spellbound Solium Band of the Kirin-Tor
+						un(REMOVED_FROM_GAME, i(118302)),	-- Spellbound Solium Band of Fatal Strikes
+						un(REMOVED_FROM_GAME, i(118303)),	-- Spellbound Solium Band of Sorcerous Invincibility
+						un(REMOVED_FROM_GAME, i(118304)),	-- Spellbound Solium Band of the Immortal Spirit
 					},
 				}),
 				q(34399, {	-- Trouble In The Mine

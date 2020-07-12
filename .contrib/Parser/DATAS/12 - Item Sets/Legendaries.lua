@@ -339,11 +339,11 @@ _.GearSets =
 				["classes"] = { 2, 5, 7, 10, 11 }
 			}),
 			-- Warlords of Draenor
-			un(4, i(124634)),	-- Thorasus, the Stone Heart of Draenor
-			un(4, i(124635)),	-- Nithramus, the All-Seer
-			un(4, i(124636)),	-- Maalus, the Blood Drinker
-			un(4, i(124637)),	-- Sanctus, Sigil of the Unbroken
-			un(4, i(124638)),	-- Etheralus, the Eternal Reward
+			un(REMOVED_FROM_GAME, i(124634)),	-- Thorasus, the Stone Heart of Draenor
+			un(REMOVED_FROM_GAME, i(124635)),	-- Nithramus, the All-Seer
+			un(REMOVED_FROM_GAME, i(124636)),	-- Maalus, the Blood Drinker
+			un(REMOVED_FROM_GAME, i(124637)),	-- Sanctus, Sigil of the Unbroken
+			un(REMOVED_FROM_GAME, i(124638)),	-- Etheralus, the Eternal Reward
 			-- Mists of Pandaria
 			un(38, i(102248)),	-- Fen-Yu, Fury of Xuen
 			un(38, i(102249)),	-- Gon-Lu, Strength of Xuen
