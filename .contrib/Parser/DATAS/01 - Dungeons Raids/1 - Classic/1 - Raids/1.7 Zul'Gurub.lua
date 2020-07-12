@@ -999,7 +999,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(VENDORS, {
 						n(14921, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
-							["u"] = 33,	-- Legacy Vendor
+							["u"] = REMOVED_FROM_GAME,
 							["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
 							["groups"] = {
 								un(REMOVED_FROM_GAME, i(20757)),	-- Formula: Brilliant Mana Oil

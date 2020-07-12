@@ -1051,7 +1051,7 @@ L["UNOBTAINABLE_ITEM_REASONS"] = {
     {19, "|CFF00FFDE只能在荆棘谷钓鱼大赛获得。|r", "荆棘谷钓鱼大赛 (30) "}, --30
     {20, "|CFF00FFDE只能在魔兽世界周年庆期间获得。\n未来的周年庆中可能也可获得。|r\n", "魔兽世界周年庆 (31)"}, --31
     {4, "|CFFFF0000这是此任务原本的奖励，后来任务重做了，也改变了奖励。If you did complete this quest it is likely this item will not be added to your transmog as Blizzard will add the rewards from the revamped quest.|r", "奖励已重做 (32)"}, --32
-    {4, "|CFFFF0000此商人不再出现在此处或不再出现在游戏中。|r", "绝版商人 (33)"}, -- 33
+    {1, "", ""}, -- 33
     {4, "|CFFFF0000是绝版任务的奖励，不再可得。|r", "绝版任务奖励 (34)"}, --34
     {3, "|CFFFF0000在游戏内商城出售。|r", "游戏内商城 (35)"}, --35
     {21, "|CFFFF0000只能在曾经的魔兽世界周年庆期间获得，不再可得。|r\n", "魔兽世界周年庆 [已移除] (36)"}, -- 36
