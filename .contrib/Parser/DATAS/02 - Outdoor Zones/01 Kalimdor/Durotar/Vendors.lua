@@ -26,7 +26,7 @@ _.Zones =
 				}),
 				n(71226,  {	-- Ravika <Darkspear Quartermaster> 5.3 Version
 					["races"] = HORDE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(97901),	-- Griftah's Authentic Troll Shoes
 						i(97919),	-- Whole-Body Shinka' Toy

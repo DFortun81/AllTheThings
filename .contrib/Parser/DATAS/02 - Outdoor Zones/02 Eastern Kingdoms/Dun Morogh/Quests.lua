@@ -316,7 +316,7 @@ _.Zones =
 				}),
 				o(270,   {	-- Unguarded Thunder Ale Barrel
 					["model"] = 199563,
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						q(311, {	-- Return to Marleth
 							["u"] = REMOVED_FROM_GAME,

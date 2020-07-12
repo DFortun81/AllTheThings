@@ -15,7 +15,7 @@ _.Zones =
 					},
 				}),
 				n(771, {	-- Commander Felstrom
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 18.0, 37.9, 47 },
 					["g"] = {
 						un(7, i(4465)),	-- Felstrom's Gauntlets
@@ -47,7 +47,7 @@ _.Zones =
 					},
 				}),
 				n(503, {	-- Lord Malathrom
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 21.1, 27.2, 47 },
 					["g"] = {
 						un(7, i(4462)),	-- Cloak of Rot

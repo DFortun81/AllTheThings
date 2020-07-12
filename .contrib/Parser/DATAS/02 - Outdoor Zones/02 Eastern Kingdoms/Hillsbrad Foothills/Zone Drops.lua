@@ -16,14 +16,14 @@ _.Zones =
 					},
 				}),
 				n(2346, { 	-- Dun Garok Priest
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(7, i(4723)),	-- Humbert's Pants
 					},
 				}),
 				n(2345, { 	-- Dun Garok Rifleman
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(7, i(4724)), 	-- Humbert's Helm
@@ -38,13 +38,13 @@ _.Zones =
 					},
 				}),
 				n(2427, { 	-- Jailor Eston
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(3429)), 	-- Guardsman Belt
 					},
 				}),
 				n(2428, { 	-- Jailor Marlgen
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(3429)),	-- Guardsman Belt
 					},
@@ -56,7 +56,7 @@ _.Zones =
 					["crs"] = { 2242 },	-- Syndicate Spy
 				}),
 				n(2246, { 	-- Syndicate Assassin
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(1280)),	-- Cloaked Hood
 					},

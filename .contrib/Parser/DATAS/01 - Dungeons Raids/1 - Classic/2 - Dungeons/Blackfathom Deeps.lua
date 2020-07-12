@@ -36,7 +36,7 @@ _.Instances = { tier(1, {	-- Classic
 				o(177964, {	-- Fathom Stone
 					["model"] = 200024,
 					["modelScale"] = 3,
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						q(908, {	-- Amongst the Ruins

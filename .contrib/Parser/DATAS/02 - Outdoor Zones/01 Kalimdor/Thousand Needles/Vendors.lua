@@ -17,7 +17,7 @@ _.Zones =
 				}),
 				n(4878,  {	-- Montarr
 					["races"] = HORDE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6068)),	-- Recipe: Shadow Oil
 					},

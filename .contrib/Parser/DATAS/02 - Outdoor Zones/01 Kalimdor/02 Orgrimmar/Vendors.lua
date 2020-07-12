@@ -52,7 +52,7 @@ _.Zones =
 				n(54659,  {	-- Blood Guard Zar'shi >S10< Elite / Old S11 (Same name, different npc)
 					["coord"] = { 38.2, 71.0, 85 },
 					["races"] = HORDE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -673, -662 },	-- Ruthless Gladiator: Season 10 Elite Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
@@ -405,7 +405,7 @@ _.Zones =
 					-- The NPC ID got reused — she was also >S11< Elite Vendor & >S9< Vendor
 					["coord"] = { 38.8, 69.8, 85 },
 					["races"] = HORDE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(33065)),	-- Veterans Pendant of Dominance
 						un(REMOVED_FROM_GAME, i(33066)),	-- Veterans Pendant of triumph
@@ -444,7 +444,7 @@ _.Zones =
 				n(46593,  {	-- Doris Volanthius >S9< Elite <Vicious Gladiator>
 					["coord"] = { 38.8, 69.8, 85 },
 					["races"] = HORDE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -674, -662 },
 						{"pop"},	-- Discard the Set header and acquire the children.
@@ -2499,7 +2499,7 @@ _.Zones =
 				}),
 				n(34043,  {	-- Lady Palanseer (removed in 4.0.3a)
 					["races"] = HORDE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(41563),	-- Design: Willful Huge Citrine
 						i(41564),	-- Design: Empowered Huge Citrine

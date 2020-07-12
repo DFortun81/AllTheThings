@@ -16,7 +16,7 @@ _.Zones =
 					},
 				}),
 				n(26352,  {	-- Big Zokk Torquewrench >Season 6< Elite
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(45952)),	-- Furious Gladiator's Greatstaff
 						un(REMOVED_FROM_GAME, i(45948)),	-- Furious Gladiator's Sunderer
@@ -668,7 +668,7 @@ _.Zones =
 					},
 				}),
 				n(34091,  {	-- Grex Brainboiler Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(49086)),	-- Relentless Gladiator's Tabard [Elite Rating]
 						un(REMOVED_FROM_GAME, i(48435)),	-- Relentless Gladiator's Punisher

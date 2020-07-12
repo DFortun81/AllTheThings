@@ -200,7 +200,7 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						n(ZONEDROPS, {
-							un(43, n(14684, { 	-- Balzaphon
+							un(REMOVED_FROM_GAME, n(14684, { 	-- Balzaphon
 								["description"] = "This boss was only available during the Scourge Invasions.",
 								["groups"] = {
 									un(REMOVED_FROM_GAME, i(23125)),	-- Chains of the Lich
@@ -208,7 +208,7 @@ _.Instances = { tier(1, {	-- Classic
 									un(REMOVED_FROM_GAME, i(23126)),	-- Waistband of Balzaphon
 								},
 							})),
-							un(43, n(16102, { 	-- Sothos
+							un(REMOVED_FROM_GAME, n(16102, { 	-- Sothos
 								["description"] = "Sothos and Jarien are a pair of elite ghosts summoned in the Scarlet Bastion by using Brazier of Beckoning.",
 								["groups"] = {
 									o(181083, {	-- Sothos and Jarien's Heirlooms
@@ -531,7 +531,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							})),
 						}),
-						un(43, n(10440, {	-- Baron Rivendare
+						un(REMOVED_FROM_GAME, n(10440, {	-- Baron Rivendare
 							un(REMOVED_FROM_GAME, i(16678)),	-- Beaststalker's Pants
 							un(REMOVED_FROM_GAME, i(16694)),	-- Devout Skirt
 							un(REMOVED_FROM_GAME, i(16699)),	-- Dreadmist Leggings
@@ -542,7 +542,7 @@ _.Instances = { tier(1, {	-- Classic
 							un(REMOVED_FROM_GAME, i(16709)),	-- Shadowcraft Pants
 							un(REMOVED_FROM_GAME, i(16719)),	-- Wildheart Kilt
 						})),
-						un(43, n(16387, {    -- Atiesh <Hand of Sargeras>
+						un(REMOVED_FROM_GAME, n(16387, {    -- Atiesh <Hand of Sargeras>
 							un(15, i(22736)),    -- Andonisus, Reaper of Souls
 						})),
 					}),

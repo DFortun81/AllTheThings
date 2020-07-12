@@ -117,7 +117,7 @@ _.Zones =
 					},
 				}),
 				n(4368,   {	-- Strashaz Myrmidon
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12718)),	-- Plans: Runic Breastplate
 					},

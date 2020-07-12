@@ -8,7 +8,7 @@ _.Zones =
 			n(VENDORS, {
 				n(65515, {	-- Acon Deathwielder (Removed Season 12 Elite Vendor)
 					["races"] = HORDE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -10041, -675, -662 },	-- Malevolent Gladiator: Season 12 Elite
 						{"pop"},	-- Discard the Set header and acquire the children.
@@ -210,7 +210,7 @@ _.Zones =
 				}),
 				n(73145, {	-- Acon Deathwielder (5.4.7 Elite and removed Version)	-- Link for all the Items https://www.wowhead.com/npc=73145/acon-deathwielder#comments
 					["races"] = HORDE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(103635)),	-- Elite Prideful Gladiator's Greatcloak
 						un(REMOVED_FROM_GAME, i(103636)),	-- Elite Prideful Gladiator's Tabard
@@ -347,7 +347,7 @@ _.Zones =
 				}),
 				n(65165, {	-- Doris Chiltonius (Removed Season 12 Vendor)
 					["races"] = HORDE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = { -- Didn't add the Season 12 Gear here because it is linked to the Ensembles in the PvP file
 						un(REMOVED_FROM_GAME, i(84911)),	-- Malevolent Gladiator's Barrier
 						un(REMOVED_FROM_GAME, i(84787)),	-- Malevolent Gladiator's Battle Staff
@@ -378,7 +378,7 @@ _.Zones =
 				}),
 				n(69965, {	-- Doris Chiltonius <Conquest Quartermaster> Season 14 Elite
 					["races"] = HORDE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						n(-661, {	-- Gladiator
 							n(-319, {	-- Weapons
@@ -768,7 +768,7 @@ _.Zones =
 				}),
 				n(69982, {	-- Lok'nor Bloodfist  <Honor Quartermaster> Old Grievous Vendor (neck, etc)
 					["races"] = HORDE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						n(-384, {	-- Neck
 								un(REMOVED_FROM_GAME, i(100682)), -- Grievous Gladiator's Pendant of Meditation (Horde)
@@ -966,7 +966,7 @@ _.Zones =
 				}),
 				n(70108, {	-- Roo Desvin >S13< Elite
 					["races"] = HORDE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(98336)),	-- Tyrannical Gladiator's Greatcloak
 						un(REMOVED_FROM_GAME, i(94307)),	-- Tyrannical Gladiator's Staff

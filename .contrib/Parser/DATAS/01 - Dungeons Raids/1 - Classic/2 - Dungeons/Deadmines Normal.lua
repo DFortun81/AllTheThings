@@ -188,37 +188,37 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				n(-40, {	-- Legacy
 					n(ZONEDROPS, {	-- TODO:: These are all from the original version of deadmines. Should these be merged into the rest of this file or left in a dedicated header?
-						un(43, n(647, { 	-- Captain Greenskin
+						un(REMOVED_FROM_GAME, n(647, { 	-- Captain Greenskin
 							i(10403, {	-- Blackened Defias Belt **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
 								["description"] = "You can obtain this appearance by doing a Rogue-only quest in the current Deadmines instance.",
 							}),
 						})),
-						un(43, n(4416, { 	-- Defias Strip Miner
+						un(REMOVED_FROM_GAME, n(4416, { 	-- Defias Strip Miner
 							i(10402, {	-- Blackend Defias Boots **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
 								["description"] = "You can obtain this appearance by doing a Rogue-only quest in the current Deadmines instance.",
 							}),
 						})),
-						un(43, n(639, { 	-- Edwin Van Cleef
+						un(REMOVED_FROM_GAME, n(639, { 	-- Edwin Van Cleef
 							i(10399, {	-- Blackened Defias Armor **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
 								["description"] = "You can obtain this appearance by doing a Rogue-only quest in the current Deadmines instance.",
 							}),
 						})),
-						un(43, n(1731, { 	-- Goblin Craftsman
+						un(REMOVED_FROM_GAME, n(1731, { 	-- Goblin Craftsman
 							un(7, i(1944)), 	-- Metalworking Gloves
 						})),
-						un(43, n(622, { 	-- Goblin Engineer
+						un(REMOVED_FROM_GAME, n(622, { 	-- Goblin Engineer
 							un(7, i(1936)), 	-- Goblin Screwdriver
 						})),
-						un(43, n(3947, { 	-- Goblin Shipbuilder
+						un(REMOVED_FROM_GAME, n(3947, { 	-- Goblin Shipbuilder
 							un(7, i(1943)), 	-- Goblin Mail Leggings
 						})),
-						un(43, n(641, { 	-- Goblin Woodcarver
+						un(REMOVED_FROM_GAME, n(641, { 	-- Goblin Woodcarver
 							un(7, i(1945)), 	-- Woodworking Gloves
 						})),
-						un(43, n(646, { 	-- Mr. Smite
+						un(REMOVED_FROM_GAME, n(646, { 	-- Mr. Smite
 							un(REMOVED_FROM_GAME, i(7230)),	-- Smite's Mighty Hammer
 						})),
-						un(43, n(643, { 	-- Sneed
+						un(REMOVED_FROM_GAME, n(643, { 	-- Sneed
 							un(REMOVED_FROM_GAME, i(5194)),	-- Taskmaster Axe
 						})),
 					}),

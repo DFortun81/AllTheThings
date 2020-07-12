@@ -146,7 +146,7 @@ _.Zones =
 					["coord"] = { 61.6, 74.6, 48 },
 				}), 
 				n(7170,   {	-- Thragomm <Horde Runner>
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(7, i(4949)),	-- Orcish Cleaver

@@ -47,7 +47,7 @@ _.Zones =
 				}),
 				n(3808,   {	-- Forsaken Dark Stalker
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(1351)),	-- Fingerbone Bracers
 					},

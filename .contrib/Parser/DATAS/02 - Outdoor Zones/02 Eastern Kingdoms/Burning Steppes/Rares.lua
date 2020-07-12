@@ -70,7 +70,7 @@ _.Zones =
 					["coord"] = { 50.6, 60.6, 36 },
 				}),
 				n(9046, {	-- Scarshield Quartermaster <Scarshield Legion>
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(13254)),	-- Astral Guard
 						un(REMOVED_FROM_GAME, i(13248)),	-- Burstshot Harquebus

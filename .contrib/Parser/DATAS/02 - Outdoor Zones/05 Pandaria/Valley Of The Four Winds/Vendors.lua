@@ -23,7 +23,7 @@ _.Zones =
 				}),
 				n(70101, {	-- Armsmaster Holinka >S13< Elite
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(98336)),	-- Tyrannical Gladiator's Greatcloak
 						un(REMOVED_FROM_GAME, i(91133)),	-- Tyrannical Gladiator's Staff
@@ -457,7 +457,7 @@ _.Zones =
 				}),
 				n(65514, {	-- Ethan Natice (Removed Season 12 Elite Vendor)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -10041, -675, -662 },	-- Malevolent Gladiator: Season 12 Elite
 						{"pop"},	-- Discard the Set header and acquire the children.
@@ -465,7 +465,7 @@ _.Zones =
 				}),
 				n(69968, {	-- Ethan Natice Season 14 Elite
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						n(-661, {	-- Gladiator
 							n(-319, {	-- Weapons
@@ -1074,7 +1074,7 @@ _.Zones =
 				}),
 				n(73147, {	-- Ethan Natice Season 15 Elite(5.4.7 Elite and removed Version)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(103635)),	-- Elite Prideful Gladiator's Greatcloak
 						un(REMOVED_FROM_GAME, i(103636)),	-- Elite Prideful Gladiator's Tabard
@@ -1247,7 +1247,7 @@ _.Zones =
 				}),
 				n(73143, {	-- Hayden Christophen <Honor Quartermaster> Old Grievous Vendor (neck, etc)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(103148)),	-- Grievous Gladiator's Necklace of Proficiency (A)
 						un(REMOVED_FROM_GAME, i(103149)),	-- Grievous Gladiator's Necklace of Prowess (A)
@@ -1450,7 +1450,7 @@ _.Zones =
 				}),
 				n(65167, {	-- Lucan Malory (Removed Season 12 Vendor)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 43,	-- Vendor no longer exists
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = { -- Didn't add the Season 12 Gear here because it is linked to the Ensembles in the PvP file
 						un(REMOVED_FROM_GAME, i(84911)),	-- Malevolent Gladiator's Barrier
 						un(REMOVED_FROM_GAME, i(84787)),	-- Malevolent Gladiator's Battle Staff

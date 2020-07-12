@@ -27,7 +27,7 @@ _.Zones =
 					},
 				}),
 				n(1271, {	-- Old Icebeard
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(2899)),	-- Wendigo Collar
 					},

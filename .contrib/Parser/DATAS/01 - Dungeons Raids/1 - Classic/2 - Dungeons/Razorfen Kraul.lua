@@ -216,13 +216,13 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				n(4517, {	-- Death's Head Priest
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(3569)), 	-- Vicar's Robe
 					},
 				}),
 				n(4428, {	-- Death Speaker Jargba <Death's Head Captain>
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2816)),	-- Death Speaker Scepter
 						i(6685),	-- Death Speaker Mantle
@@ -230,7 +230,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				n(4438, {	-- Razorfen Spearhide
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6679)),	-- Armor Piercer
 					},

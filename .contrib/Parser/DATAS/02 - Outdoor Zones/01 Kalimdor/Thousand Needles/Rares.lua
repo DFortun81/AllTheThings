@@ -21,7 +21,7 @@ _.Zones =
 					["coord"] = { 55.2, 40.6, 64 },
 				}),
 				n(4099,  { 	-- Galak Marauder
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(1493)),	-- Heaver Marauder Scimitar
 					},

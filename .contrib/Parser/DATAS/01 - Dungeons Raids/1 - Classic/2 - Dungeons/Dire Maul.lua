@@ -766,7 +766,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					})),
 					n(14690, {	-- Revanchion
-						["u"] = 43,
+						["u"] = REMOVED_FROM_GAME,
 						["description"] = "This NPC was only available during the pre-WotLK Scourge Invasion.",
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(23129)),	-- Bracers of Mending

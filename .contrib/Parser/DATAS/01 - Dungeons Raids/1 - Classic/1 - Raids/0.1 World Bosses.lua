@@ -14,7 +14,7 @@ _.Instances = { tier(1, {	-- Classic
 				["isRaid"] = true,
 				["description"] = "This version of the NPC is the Legacy world boss from Vanilla.",
 				["maps"] = { 76 },	-- Azshara
-				["u"] = 43,
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(18704)),	-- Mature Blue Dragon Sinew
 					un(REMOVED_FROM_GAME, i(19130)),	-- Cold Snap
@@ -30,7 +30,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(18338, {	-- Highlord Kruul
-				["u"] = 43,
+				["u"] = REMOVED_FROM_GAME,
 				["isRaid"] = true,
 				["maps"] = { 17 },	-- Blasted Lands
 				["modelScale"] = 6.0,
@@ -58,7 +58,7 @@ _.Instances = { tier(1, {	-- Classic
 				["isRaid"] = true,
 				["description"] = "This version of the NPC is the Legacy world boss from Vanilla.",
 				["maps"] = { 17 },	-- Blasted Lands
-				["u"] = 43,
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(18665, {	-- The Eye of Shadow
 						["classes"] = { PRIEST },
@@ -83,7 +83,7 @@ _.Instances = { tier(1, {	-- Classic
 				["isRaid"] = true,
 				["description"] = "This version of the NPC is the Legacy world boss from Vanilla.",
 				["maps"] = { 63, 69, 47, 26 },	-- Ashenvale / Feralas / Duskwood / The Hinterlands
-				["u"] = 43,
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(20644)),	-- Nightmare Engulfed Object
 					un(REMOVED_FROM_GAME, i(20580)),	-- Hammer of Bestial Fury
@@ -106,7 +106,7 @@ _.Instances = { tier(1, {	-- Classic
 				["isRaid"] = true,
 				["description"] = "This version of the NPC is the Legacy world boss from Vanilla.",
 				["maps"] = { 63, 69, 47, 26 },	-- Ashenvale / Feralas / Duskwood / The Hinterlands
-				["u"] = 43,
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(20644)),	-- Nightmare Engulfed Object
 					un(REMOVED_FROM_GAME, i(20580)),	-- Hammer of Bestial Fury
@@ -130,7 +130,7 @@ _.Instances = { tier(1, {	-- Classic
 				["isRaid"] = true,
 				["description"] = "This version of the NPC is the Legacy world boss from Vanilla.",
 				["maps"] = { 63, 69, 47, 26 },	-- Ashenvale / Feralas / Duskwood / The Hinterlands
-				["u"] = 43,
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(20644)),	-- Nightmare Engulfed Object
 					un(REMOVED_FROM_GAME, i(20580)),	-- Hammer of Bestial Fury
@@ -153,7 +153,7 @@ _.Instances = { tier(1, {	-- Classic
 				["isRaid"] = true,
 				["description"] = "This version of the NPC is the Legacy world boss from Vanilla.",
 				["maps"] = { 63, 69, 47, 26 },	-- Ashenvale / Feralas / Duskwood / The Hinterlands
-				["u"] = 43,
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(20644)),	-- Nightmare Engulfed Object
 					un(REMOVED_FROM_GAME, i(20578)),	-- Emerald Dragonfang

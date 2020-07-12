@@ -6,25 +6,25 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(56, {	-- Wetlands
 			n(ZONEDROPS, {
-				un(43, n(1028, { 	-- Bluegill Muckdweller
+				un(REMOVED_FROM_GAME, n(1028, { 	-- Bluegill Muckdweller
 					un(7, i(3022)),	-- Bluegill Breeches
 				})),
 				n(1025, { 	-- Bluegill Puddlejumper
 					un(7, i(1560)),	-- Bluegill Sandals
 				}),
-				un(43, n(1027, { 	-- Bluegill Warrior
+				un(REMOVED_FROM_GAME, n(1027, { 	-- Bluegill Warrior
 					un(7, i(2046)),	-- Bluegill Kukri
 				})),
-				un(43, n(1069, { 	-- Crimson Whelp
+				un(REMOVED_FROM_GAME, n(1069, { 	-- Crimson Whelp
 					un(7, i(3073)), 	-- Smoldering Pants
 				})),
-				un(43, n(1054, { 	-- Dark Iron Demolitionist
+				un(REMOVED_FROM_GAME, n(1054, { 	-- Dark Iron Demolitionist
 					un(7, i(2084)), 	-- Darksteel Bastard Sword
 				})),
-				un(43, n(6523, {	-- Dark Iron Rifleman
+				un(REMOVED_FROM_GAME, n(6523, {	-- Dark Iron Rifleman
 					un(7, i(6315)),	-- Steelarrow Crossbow
 				})),
-				un(43, n(1053, { 	-- Dark Iron Tunneler
+				un(REMOVED_FROM_GAME, n(1053, { 	-- Dark Iron Tunneler
 					un(7, i(756)), 	-- Tunnel Pick
 				})),
 				i(10822, {	-- Dark Whelpling (PET!)
@@ -36,16 +36,16 @@ _.Zones =
 				n(1035, {	-- Dragonmaw Swamprunner
 					un(7, i(1955)),	-- Dragonmaw Chain Boots
 				}),
-				un(43, n(1044, { 	-- Flamesnorting Whelp
+				un(REMOVED_FROM_GAME, n(1044, { 	-- Flamesnorting Whelp
 					un(7, i(3072)), 	-- Smoldering Robe
 				})),
-				un(43, n(1043, { 	-- Lost Whelp
+				un(REMOVED_FROM_GAME, n(1043, { 	-- Lost Whelp
 					un(7, i(3074)),	-- Smoldering Gloves
 				})),
-				un(43, n(1009, {	-- Mosshide Mistweaver
+				un(REMOVED_FROM_GAME, n(1009, {	-- Mosshide Mistweaver
 					un(7, i(892)),		-- Gnoll Casting Gloves
 				})),
-				un(43, n(1042, {	-- Red Whelp
+				un(REMOVED_FROM_GAME, n(1042, {	-- Red Whelp
 					un(7, i(3076)),	-- Smoldering Boots
 				})),
 				i(8499, {	-- Tiny Crimson Whelpling (PET!)

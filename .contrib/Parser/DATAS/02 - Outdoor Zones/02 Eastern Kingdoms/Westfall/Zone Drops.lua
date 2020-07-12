@@ -10,25 +10,25 @@ _.Zones =
 					["crs"] = { 594 },	-- Defias Henchman
 				}),
 				n(619,  {	-- Defias Conjurer
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(1933)), 	-- Staff of Conjuring
 					},
 				}),
 				n(1726, { 	-- Defias Magician
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(1928)), 	-- Defias Mage Staff
 					},
 				}),
 				n(121,  { 	-- Defias Pathstalker
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(832)),		-- Silver Defias Belt
 					},
 				}),
 				n(1725, { 	-- Defias Watchman
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(1925)), 	-- Defias Rapier
 					},
@@ -43,7 +43,7 @@ _.Zones =
 					["crs"] = { 830 },	-- Sand Crawler
 				}),
 				n(36,   {	-- Harvest Golem
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(816)),		-- Small Hand Blade
 					},
@@ -74,7 +74,7 @@ _.Zones =
 					["crs"] = { 453 },	-- Riverpaw Mystic
 				}),
 				n(125,  { 	-- Riverpaw Overseer
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(1190)),	-- Overseer's Cloak
 						un(7, i(1189)),	-- Overseer's Ring

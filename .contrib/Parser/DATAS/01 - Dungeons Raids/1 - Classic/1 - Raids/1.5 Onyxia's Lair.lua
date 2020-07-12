@@ -17,7 +17,7 @@ _.Instances = { tier(1, {	-- Classic
 				["g"] = {
 					e(1651, {	-- Onyxia (Legacy)
 						["crs"] = { 10184 },	-- Onyxia
-						["u"] = 43,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, ach(684)),	-- Onyxia's Lair (Level 60)
 							i(18423, {	-- Head of Onyxia (A)

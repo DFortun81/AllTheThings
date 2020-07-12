@@ -7,7 +7,7 @@ _.Zones =
 		m(76, {	-- Azshara
 			n(VENDORS, {
 				n(12957, {	-- Blimo Gadgetspring <Trade Supplies>
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(15751)),	-- Pattern: Blue Dragonscale Breastplate
 						un(7, i(15729)),	-- Pattern: Chimeric Gloves

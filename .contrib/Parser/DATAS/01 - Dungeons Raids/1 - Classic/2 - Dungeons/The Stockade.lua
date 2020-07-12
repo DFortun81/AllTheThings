@@ -73,7 +73,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(7, i(1076)),	-- Defias Renegade Ring
 			}),
 			n(1720, {	-- Bruegal Ironknuckle
-				["u"] = 43,
+				["u"] = REMOVED_FROM_GAME,
 				["description"] = "This is a rare that was not always present.",
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(2942)),	-- Iron Knuckles
@@ -82,7 +82,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(1666, { 	-- Kam Deepfury
-				["u"] = 43,
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(2280)),	-- Kam's Walking Stick
 				},

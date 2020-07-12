@@ -114,18 +114,18 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			n(-40, {	-- Legacy
 				n(ZONEDROPS, {
-					un(43, n(11519, {	-- Bazzalan
+					un(REMOVED_FROM_GAME, n(11519, {	-- Bazzalan
 						un(REMOVED_FROM_GAME, i(68195)),	-- Bazzalan's Blade
 					})),
-					un(43, n(11518, {	-- Jergosh the Invoker
+					un(REMOVED_FROM_GAME, n(11518, {	-- Jergosh the Invoker
 						un(REMOVED_FROM_GAME, i(14147)),	-- Cavedweller Bracers
 						un(REMOVED_FROM_GAME, i(14151)),	-- Chanting Blade
 						un(REMOVED_FROM_GAME, i(14150)),	-- Robe of Evocation
 					})),
-					un(43, n(11517, {	-- Oggleflint
+					un(REMOVED_FROM_GAME, n(11517, {	-- Oggleflint
 						un(7, i(68194)),	-- Oggleflint's Inspirer
 					})),
-					un(43, n(11520, {	-- Taragaman the Hungerer
+					un(REMOVED_FROM_GAME, n(11520, {	-- Taragaman the Hungerer
 						un(REMOVED_FROM_GAME, i(14148)),	-- Crystalline Cuffs
 						un(REMOVED_FROM_GAME, i(14145)),	-- Cursed Felblade
 						un(REMOVED_FROM_GAME, i(14149)),	-- Subterranean Cape

@@ -31,7 +31,7 @@ _.Zones =
 					["coord"] = { 70.2, 53.8, 15 },
 				}),
 				n(7057,  {	-- Digmaster Shovelphlange
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(9375)),	-- Expert Goldmaker's Helmet
 						un(7, i(9378)),	-- Shovelphlange's Mining Axe
@@ -39,7 +39,7 @@ _.Zones =
 					},
 				}),
 				n(2719,  { 	-- Dustbelcher Lord
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(1521)),	-- Lumbering Ogre Axe
 					},

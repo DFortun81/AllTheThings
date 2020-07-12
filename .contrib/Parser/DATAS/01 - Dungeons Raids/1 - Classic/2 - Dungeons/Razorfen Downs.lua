@@ -243,7 +243,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(8696,  {	-- Henry Stern
-				["u"] = 43,	-- Removed NPCs
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, recipe(13028, {	-- Goldthorn Tea
 						["description"] = "Henry Stern, who is currently the only source for Goldthorn Tea, is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, takes the recipe off the list, or gives us another way to obtain it.",
@@ -251,7 +251,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(14686, {	-- Lady Falther'ess
-				["u"] = 43,	-- Removed NPCs
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(23177)),	-- Lady Falther'ess' Finger
 					un(REMOVED_FROM_GAME, i(23178)),	-- Mantle of Lady Falther'ess

@@ -11,7 +11,7 @@ _.Zones =
 				}),
 				n(14464, { 	-- Avalanchion
 					["description"] = "This was only available during the Elemental Invasion.",
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(18673)),	-- Avalanchion's Stony Hide
 						un(7, i(18674)),	-- Hardened Stone Band

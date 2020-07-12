@@ -381,7 +381,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(10829),	-- The Dragon's Eye
 			})),
 			n(8580, {	-- Atal'alarion
-				["u"] = 43,
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(10799)),	-- Headspike
 					un(REMOVED_FROM_GAME, i(10800)),	-- Darkwater Bracers
@@ -389,7 +389,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(5708, {	-- Spawn of Hakkar
-				["u"] = 43,
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(10801)),	-- Slitherscale Boots
 					un(REMOVED_FROM_GAME, i(10802)),	-- Wingveil Cloak

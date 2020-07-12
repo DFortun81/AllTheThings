@@ -94,7 +94,7 @@ _.Zones =
 					},
 				}),
 				n(766,   {	-- Tangled Horror
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(5608),	-- Living Cowl
 					},

@@ -8,7 +8,7 @@ _.Zones =
 			n(RARES, {
 				n(1920,  {	-- Ambermill Spellscribe
 					["races"] = HORDE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
 						un(7, i(4437)),	-- Channeler's Staff
 						un(7, i(4436)),	-- Jewel-Encrusted Sash
@@ -82,21 +82,21 @@ _.Zones =
 					},
 				}),
 				n(2283,	 {	-- Ravenclaw Regent
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
 						un(7, i(6628)),	-- Raven's Claws
 						un(7, i(5969)),	-- Regent's Cloak
 					},
 				}),
 				n(1944,  {	-- Rot Hide Bruiser
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
 						un(7, i(4439)),	-- Bruiser Club
 						un(7, i(5975)),	-- Ruffian Belt
 					},
 				}),
 				n(1948,  {	-- Snarlmane
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
 						un(7, i(4445)),	-- Flesh Carver
 					},

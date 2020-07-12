@@ -64,7 +64,7 @@ _.Zones =
 					},
 				}),
 				n(4684,  { 	-- Nether Sorceress
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(7, i(2620)),	-- Augural Shroud
 					},
