@@ -33,7 +33,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 					["g"] = {
-						un(3, i(97849)),	-- Radical Mojo
+						un(REMOVED_FROM_GAME, i(97849)),	-- Radical Mojo
 					},
 				}),
 				q(32862, {	-- Battlefield: Barrens Horde
@@ -41,7 +41,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 					["g"] = {
-						un(3, i(97849)),	-- Radical Mojo
+						un(REMOVED_FROM_GAME, i(97849)),	-- Radical Mojo
 					},
 				}),
 				q(25648, {	-- Beyond Durotar

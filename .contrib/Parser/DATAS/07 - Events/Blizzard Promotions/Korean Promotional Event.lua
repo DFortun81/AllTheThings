@@ -7,7 +7,7 @@ _.WorldEvents =
 		["groups"] = {
 			n(-555, {	-- Korean Promotional Event
 				n(-549, {	-- Korea Only
-					un(3, i(20651)),	-- Orange Murloc Egg (Murki)
+					un(REMOVED_FROM_GAME, i(20651)),	-- Orange Murloc Egg (Murki)
 				}),
 			}),
 		},

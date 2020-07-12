@@ -34,16 +34,16 @@ _.Zones =
 						i(98552),	-- Xan'tish's Flute Toy
 						i(97921),	-- Bom'bay's Color-Seein' Sauce
 						i(97821),	-- Gahz'rooki's Summoning Stone
-						un(3, i(97829)),	-- Latent Kor'kron Helm (they had unique stats before 6.0)
-						un(3, i(97831)),	-- Latent Kor'kron Spaulders (they had unique stats before 6.0)
-						un(3, i(97826)),	-- Latent Kor'kron Chestpiece (they had unique stats before 6.0)
-						un(3, i(97828)),	-- Latent Kor'kron Gloves (they had unique stats before 6.0)
-						un(3, i(97832)),	-- Latent Kor'kron Belt (they had unique stats before 6.0)
-						un(3, i(97830)),	-- Latent Kor'kron Leggings (they had unique stats before 6.0)
-						un(3, i(97827)),	-- Latent Kor'kron Boots (they had unique stats before 6.0)
+						un(REMOVED_FROM_GAME, i(97829)),	-- Latent Kor'kron Helm (they had unique stats before 6.0)
+						un(REMOVED_FROM_GAME, i(97831)),	-- Latent Kor'kron Spaulders (they had unique stats before 6.0)
+						un(REMOVED_FROM_GAME, i(97826)),	-- Latent Kor'kron Chestpiece (they had unique stats before 6.0)
+						un(REMOVED_FROM_GAME, i(97828)),	-- Latent Kor'kron Gloves (they had unique stats before 6.0)
+						un(REMOVED_FROM_GAME, i(97832)),	-- Latent Kor'kron Belt (they had unique stats before 6.0)
+						un(REMOVED_FROM_GAME, i(97830)),	-- Latent Kor'kron Leggings (they had unique stats before 6.0)
+						un(REMOVED_FROM_GAME, i(97827)),	-- Latent Kor'kron Boots (they had unique stats before 6.0)
 						un(40, i(97990)),	-- Raptorhide Boxing Gloves
-						un(3, i(98561)),	-- Darkspear Battle Standard
-						un(3, i(98563)),	-- Rainstick
+						un(REMOVED_FROM_GAME, i(98561)),	-- Darkspear Battle Standard
+						un(REMOVED_FROM_GAME, i(98563)),	-- Rainstick
 					},
 				}),
 				n(5942,   {	-- Zansoa <Fishing Supplies>

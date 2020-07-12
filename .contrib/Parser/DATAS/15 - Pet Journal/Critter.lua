@@ -60,7 +60,7 @@ _.PetJournal =
 		p(430),		-- Gold Beetle
 		p(2387),	-- Golden Beetle
 		p(2867),	-- Golden Chirper
-		un(3, p(170)),	-- Golden Pig
+		un(REMOVED_FROM_GAME, p(170)),	-- Golden Pig
 		p(733),		-- Grassland Hopper
 		p(443),		-- Grasslands Cottontail
 		p(647),		-- Grizzly Squirrel
@@ -78,7 +78,7 @@ _.PetJournal =
 		p(543),		-- Locust
 		p(404),		-- Long-tailed Mole
 		p(1511),	-- Lovebird Hatchling
-		un(3, p(155)),	-- Lucky
+		un(REMOVED_FROM_GAME, p(155)),	-- Lucky
 		un(6, p(671)),	-- Lucky Quilen Cub
 		p(708),		-- Malayan Quillrat
 		p(709),		-- Malayan Quillrat Pup
@@ -127,7 +127,7 @@ _.PetJournal =
 		p(493),		-- Shimmershell Snail
 		p(677),		-- Shy Bandicoon
 		p(568),		-- Silkbead Snail
-		un(3, p(171)),	-- Silver Pig
+		un(REMOVED_FROM_GAME, p(171)),	-- Silver Pig
 		p(820),		-- Singing Cricket
 		p(397),		-- Skunk
 		p(2063),	-- Sneaky Marmot

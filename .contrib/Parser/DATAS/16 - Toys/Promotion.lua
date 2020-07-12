@@ -4,9 +4,9 @@
 _.Toys =
 {
 	n(-31, { 	-- Promotion
-		un(3, i(54653)),	-- Darkspear Pride (Horde) No Longer Available
+		un(REMOVED_FROM_GAME, i(54653)),	-- Darkspear Pride (Horde) No Longer Available
 		un(6, i(172179)),	-- Eternal Traveler's Hearthstone
-		un(3, i(54651)),	-- Gnomeregan Pride (Alliance) No Longer Available
+		un(REMOVED_FROM_GAME, i(54651)),	-- Gnomeregan Pride (Alliance) No Longer Available
 		un(16, i(33079, {	-- Murloc Costume
 			["model"] = 125041,
 		})),
@@ -16,7 +16,7 @@ _.Toys =
 		un(16, i(163987, {	-- Stormwind Champion's War Banner
 			["races"] = ALLIANCE_ONLY,
 		})),
-		un(3, i(142542)), 	-- Tome of Town Portal
-		un(3, i(143543)), 	-- Twelve-String Guitar
+		un(REMOVED_FROM_GAME, i(142542)), 	-- Tome of Town Portal
+		un(REMOVED_FROM_GAME, i(143543)), 	-- Twelve-String Guitar
 	}),
 };

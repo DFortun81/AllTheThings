@@ -20,7 +20,7 @@ _.PetJournal =
 		p(1927),			-- Ash'ana
 		p(1706),			-- Ashmaw Cub
 		p(411),				-- Baby Ape
-		un(3, p(202)),		-- Baby Blizzard Bear
+		un(REMOVED_FROM_GAME, p(202)),		-- Baby Blizzard Bear
 		p(2477),			-- Baby Crawg
 		p(1884),			-- Baby Elderhorn
 		p(2551),			-- Baby Stonehide
@@ -148,7 +148,7 @@ _.PetJournal =
 		p(1663),			-- Periwinkle Calf
 		p(726),				-- Plains Monitor
 		p(2188),			-- Poda
-		un(3, p(124)),		-- Poley
+		un(REMOVED_FROM_GAME, p(124)),		-- Poley
 		p(2849),			-- Pygmy Camel
 		p(1200),			-- Pygmy Direhorn
 		p(2437),			-- Ragepeep
@@ -162,7 +162,7 @@ _.PetJournal =
 		p(2525),			-- Redridge Tarantula
 		p(1756),			-- Ridgeback Piglet
 		p(2776, {			-- Rikki
-			["u"] = 3,	-- Blizzard Promotion (RAF)
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		p(1453),			-- River Calf
 		p(482),				-- Rock Viper

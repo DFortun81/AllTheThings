@@ -7,8 +7,8 @@ _.WorldEvents =
 		["groups"] = {
 			n(-561, {	-- 2007 Worldwide Invitational
 				n(-549, {	-- Korea Only
-					un(3, i(32498)),	-- Fortune Cookie (Lucky)
-					un(3, i(32465)),	-- Fortune Cookie (Lucky)
+					un(REMOVED_FROM_GAME, i(32498)),	-- Fortune Cookie (Lucky)
+					un(REMOVED_FROM_GAME, i(32465)),	-- Fortune Cookie (Lucky)
 				}),
 			}),
 		},

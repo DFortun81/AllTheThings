@@ -117,7 +117,7 @@ _.Achievements =
 							}),
 						},
 					}),
-					un(3, ach(9016, {	-- Breaker of the Black Harvest
+					un(REMOVED_FROM_GAME, ach(9016, {	-- Breaker of the Black Harvest
 						un(3,title(256)),	-- of the Black Harvest
 					})),
 					ach(4496),	-- It's Over Nine Thousand!

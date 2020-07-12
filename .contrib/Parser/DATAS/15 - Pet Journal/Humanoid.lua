@@ -55,7 +55,7 @@ _.PetJournal =
 		p(281, {			-- Guild Page (Horde)
 			["races"] = HORDE_ONLY,
 		}),
-		un(3, p(121)),		-- Gurky
+		un(REMOVED_FROM_GAME, p(121)),		-- Gurky
 		p(1147),			-- Harbinger of Flame
 		p(1157),			-- Harpy Youngling
 		p(1384),			-- Hogs
@@ -66,7 +66,7 @@ _.PetJournal =
 		p(2845),			-- K'uddly
 		p(2683),			-- Kelpfin
 		p(1940, {			-- Knight-Captain Murky (Alliance)
-			["u"] = 3,
+			["u"] = REMOVED_FROM_GAME,
 			["races"] = ALLIANCE_ONLY,
 		}),
 		p(1166),			-- Kun-Lai Runt
@@ -88,9 +88,9 @@ _.PetJournal =
 		p(2681),			-- Murgle
 		un(4, p(329)),		-- Murkablo
 		un(4, p(1364)),		-- Murkalot
-		un(3, p(1168)),		-- Murki
+		un(REMOVED_FROM_GAME, p(1168)),		-- Murki
 		un(4, p(1454)),		-- Murkidan
-		un(3, p(217)),		-- Murkimus the Gladiator
+		un(REMOVED_FROM_GAME, p(217)),		-- Murkimus the Gladiator
 		un(4, p(107)),		-- Murky
 		p(2682),			-- Necrofin Tadpole
 		p(1495),			-- Ore Eater

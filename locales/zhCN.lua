@@ -1019,9 +1019,9 @@ for key, value in pairs({
 
 L["UNOBTAINABLE_ITEM_REASONS"] = {
     -- {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
-    {1, "|CFFFF0000玩家无法获得。|r", "无法获得 (1)"}, -- No Hope -- 1
-    {1, "|CFFFF0000获得方式已被移除，且拾取后绑定/绑定到账号。|r", "BoP / BoA (2)"}, -- No Hope -- 2
-    {1, "|CFFFF0000只在暴雪的推广活动或一次性活动时可得。|r", "暴雪推广活动 (3)"}, -- No Hope -- 3
+    {1, "|CFFFF0000This was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
+	{1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game (2)"}, -- No Hope -- 2
+    {1, "", ""}, -- No Hope -- 3 (deprecated, turned into removed from game)
     {1, "|CFFFF0000要获得此奖励所需的成就目标不再能达成，或有时间限制。|r", "绝版成就 (4)"}, -- Little Hope -- 4
     {2, "|CFFFF0000制造此物品的配方已被移除，且此物品拾取后绑定，因此只有已习得此配方的玩家才能获得。|r", "配方移除的绑定物品 (5)"}, -- Little Hope -- 5
     {2, "|CFFFF0000此物品是典藏版的一部分。网上可能仍有极小数量出售。|r", "典藏版 (6)"}, -- Little Hope -- 6

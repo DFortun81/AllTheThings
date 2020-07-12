@@ -57,7 +57,7 @@ _.PetJournal =
 		p(1631),	-- Hyjal Wisp
 		p(446),		-- Jade Oozeling
 		p(845),		-- Jade Owl
-		un(3, p(231)),	-- Jade Tiger
+		un(REMOVED_FROM_GAME, p(231)),	-- Jade Tiger
 		p(1635),	-- K'ute
 		un(20, p(308)),		-- Legs
 		p(1234),	-- Lesser Voidcaller
@@ -79,7 +79,7 @@ _.PetJournal =
 		p(1664),	-- Nightmare Bell
 		p(547),		-- Nordrassil Wisp
 		p(530),		-- Oily Slimeling
-		un(3, p(240)),	-- Onyx Panther
+		un(REMOVED_FROM_GAME, p(240)),	-- Onyx Panther
 		p(2844),	-- Reek
 		p(1958),	-- Sanctum Cub
 		p(846),		-- Sapphire Cub
@@ -87,7 +87,7 @@ _.PetJournal =
 		un(35, p(2062)),	-- Shadow
 		p(229),		-- Shimmering Wyrmling
 		p(2750),	-- Shrieker
-		un(3, p(1127)),	-- Spectral Cub
+		un(REMOVED_FROM_GAME, p(1127)),	-- Spectral Cub
 		p(1185),	-- Spectral Porcupette
 		un(10, p(242)),		-- Spectral Tiger Cub
 		p(1969),	-- Stardust
@@ -108,7 +108,7 @@ _.PetJournal =
 		p(2535),	-- Wicker Wraith
 		p(1937),	-- Wondrous Wisdomball
 		un(6, p(1255)),	-- Zeradar
-		un(3, p(247)),	-- Zipao Tiger
+		un(REMOVED_FROM_GAME, p(247)),	-- Zipao Tiger
 		p(2550),	-- Zur'aj the Depleted
 	}),
 };

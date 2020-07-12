@@ -7,7 +7,7 @@ _.WorldEvents =
 		["groups"] = {
 			n(-554, {	-- EU Fansite Promotion
 				n(-547, {	-- EU Only
-					un(3, i(22114)),	-- Pink Murloc Egg (Gurky)
+					un(REMOVED_FROM_GAME, i(22114)),	-- Pink Murloc Egg (Gurky)
 				}),
 			}),
 		},

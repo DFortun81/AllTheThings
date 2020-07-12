@@ -33,14 +33,14 @@ _.Achievements =
 			un(6, ach(10309)),		-- Collector's Edition: Zeradar
 			un(6, ach(664)),		-- Collector's Edition: Zergling
 			un(16, ach(5378)),		-- Deathy
-			un(3, ach(11210, {		-- Fight for the Alliance
+			un(REMOVED_FROM_GAME, ach(11210, {		-- Fight for the Alliance
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(140999),			-- Replica Lion's Fang
 					i(141000),			-- Replica Lion's Heart
 				},
 			})),
-			un(3, ach(11211, {		-- Fight for the Horde
+			un(REMOVED_FROM_GAME, ach(11211, {		-- Fight for the Horde
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(141001),			-- Replica Blood Guard's Cleaver
@@ -52,10 +52,10 @@ _.Achievements =
 			ach(8345, {				-- Hearthstoned
 				i(98618),			-- Hearthsteed
 			}),
-			un(3, ach(11425)),		-- Herald of Flames
+			un(REMOVED_FROM_GAME, ach(11425)),		-- Herald of Flames
 			ach(9926),				-- Hero of the Storm
-			un(3, ach(3636)),		-- Jade Tiger (China only)
-			un(3, ach(13196, {			-- Meat Marauder
+			un(REMOVED_FROM_GAME, ach(3636)),		-- Jade Tiger (China only)
+			un(REMOVED_FROM_GAME, ach(13196, {			-- Meat Marauder
 				i(164571),			-- Meat Wagon
 			})),
 			un(16, ach(6185)),		-- Murkablo
@@ -64,13 +64,13 @@ _.Achievements =
 			un(16, ach(411)),		-- Murky
 			un(16, ach(11294)),		-- Murloc Battlemasters
 			un(16, ach(412)),		-- Murloc Costume
-			un(3, ach(3896)),		-- Onyx Panther (Korea only)
-			un(3, ach(10537)),		-- Patron of War
+			un(REMOVED_FROM_GAME, ach(3896)),		-- Onyx Panther (Korea only)
+			un(REMOVED_FROM_GAME, ach(10537)),		-- Patron of War
 			un(16, ach(11931)),		-- Rides of War
-			un(3, ach(12454)),		-- Salute to Starcraft
+			un(REMOVED_FROM_GAME, ach(12454)),		-- Salute to Starcraft
 			un(16, ach(3536)),		-- The Marine Marine
-			un(3, ach(414)),		-- Tyrael's Hilt
-			un(3, ach(9496, { 		-- Warlord's Deathwheel
+			un(REMOVED_FROM_GAME, ach(414)),		-- Tyrael's Hilt
+			un(REMOVED_FROM_GAME, ach(9496, { 		-- Warlord's Deathwheel
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(116788),			-- Warlord's Deathwheel
