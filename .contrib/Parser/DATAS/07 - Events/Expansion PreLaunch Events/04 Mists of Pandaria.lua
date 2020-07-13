@@ -20,7 +20,7 @@ _.WorldEvents =
 						["g"] = {
 							{	-- Theramore Tabard
 								["itemID"] = 89196,	-- Theramore Tabard
-								["un"] = 4,			-- Unobtainable after MoP Launch
+								["u"] = REMOVED_FROM_GAME,	-- Unobtainable after MoP Launch
 							},
 						},
 					},
@@ -33,7 +33,7 @@ _.WorldEvents =
 						["g"] = {
 							{	-- Mini Mana Bomb Toy
 								["itemID"] = 89205,	-- Mini Mana Bomb Toy
-								["un"] = 4,			-- Unobtainable after MoP Launch
+								["u"] = REMOVED_FROM_GAME,	-- Unobtainable after MoP Launch
 							},
 						},
 					},
