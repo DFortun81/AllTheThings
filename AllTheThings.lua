@@ -1011,7 +1011,7 @@ local function GetUnobtainableTexture(group)
 			index = 3;
 		end
 	end
-	return L["UNOBTAINABLE_ITEM_TEXTURES"][index];
+	return L["UNOBTAINABLE_ITEM_TEXTURES"][index or 1];
 end
 local function SetPortraitIcon(self, data, x)
 	self.lastData = data;

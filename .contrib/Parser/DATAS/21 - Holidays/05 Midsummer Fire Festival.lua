@@ -1206,14 +1206,14 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					ach(263),	-- Ice the Frost Lord
 					i(149753, {	-- Knapsack of Chilled Goods [Uncommon Quality]
 						["lvl"] = 23,
-						["un"] = 21,	-- Midsummer Fire Festival
+						["u"] = 21,	-- Midsummer Fire Festival
 						["g"] = {
 							un(21, i(117373)),	-- Frostscythe of Lord Ahune
 						},
 					}),
 					i(117394, {	-- Satchel of Chilled Goods [Epic Quality]
 						["lvl"] = 98,
-						["un"] = 21,	-- Midsummer Fire Festival
+						["u"] = 21,	-- Midsummer Fire Festival
 						["g"] = {
 							un(21, i(138838)),	-- Illusion: Deathfrost
 							un(21, i(117373)),	-- Frostscythe of Lord Ahune
@@ -1225,10 +1225,10 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						["itemID"] = 35723,	-- Shards of Ahune (Item)
 						["g"] = {
 							i(35279, {	-- Tabard of Summer Skies
-								["un"] = 21,	-- Midsummer Fire Festival
+								["u"] = 21,	-- Midsummer Fire Festival
 							}),
 							i(35280, {	-- Tabard of Summer Flames
-								["un"] = 21,	-- Midsummer Fire Festival
+								["u"] = 21,	-- Midsummer Fire Festival
 							}),
 						},
 						["altQuests"] = { 11976 }	-- Ice Shards
