@@ -235,6 +235,35 @@ _.Craftables =
 					}),
 				}),
 			}),
+			{
+				["name"] = "Robotics",
+				["categoryID"] = 474,
+				["g"] = {
+					i(144341, {	-- Rechargeable Reaves Battery
+						i(132524, {	-- Reaves Module: Wormhole Generator Mode
+							["questID"] = 40738,	-- FLAG - Reaves Wormhole Generator Module
+						}),
+						i(132530, {	-- Reaves Module: Bling Mode
+							["questID"] = 40736,	-- FLAG - Reaves Bling Module
+						}),
+						i(132531, {	-- Reaves Module: Piloted Combat Mode
+							["questID"] = 40737,	-- FLAG - Reaves Piloted Combat Module
+						}),
+						i(132525, {	-- Reaves Module: Repair Mode
+							["questID"] = 40732,	-- FLAG - Reaves Repair Module
+						}),
+						i(132529, {	-- Reaves Module: Snack Distribution Mode
+							["questID"] = 40735,	-- FLAG - Reaves Snack Distribution Module
+						}),
+						i(132526, {	-- Reaves Module: Failure Detection Mode
+							["questID"] = 40733,	-- FLAG - Reaves Failure Detection Module
+						}),
+						i(132528, {	-- Reaves Module: Fireworks Display Mode
+							["questID"] = 40734,	-- FLAG - Reaves Fireworks Module
+						}),
+					}),
+				},
+			},
 		}),
 		n(-185, {	-- Inscription
 			n(-491, {	-- Tarot Cards
