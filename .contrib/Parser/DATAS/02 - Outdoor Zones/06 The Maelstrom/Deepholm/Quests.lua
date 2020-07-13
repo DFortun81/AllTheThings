@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(948, {	-- The Maelstrom
@@ -656,7 +657,7 @@ _.Zones =
 						i(61464),	-- Rockslide Treads
 					},
 				}),
-				q(26584, {	-- Shaken and Stirred					
+				q(26584, {	-- Shaken and Stirred
 					["lvl"] = 82,
 					["provider"] = { "n", 42472 },	-- Gorsik the Tumultuous
 					["coord"] = { 72.2, 54.0, 207 },
@@ -838,7 +839,14 @@ _.Zones =
 						{ "n", 45224 },	-- Farseer Krogar
 						{ "n", 45226 },	-- Naraat the Earthspeaker
 					},
-					["sourceQuests"] = {27398,27399,27442,27443,27722,27727},
+					["sourceQuests"] = {
+						27398, -- The Battle Is Won, The War Goes On (A)
+						27399, -- The Battle Is Won, The War Goes On (H)
+						27442, -- The War Has Many Fronts (H)
+						27443, -- The War Has Many Fronts (A)
+						27722, -- Warchief's Command: Deepholm!
+						27727, -- Hero's Call: Deepholm!
+					},
 				}),
 				q(27938, {	-- The Middle Fragment
 					["lvl"] = 82,
@@ -1076,7 +1084,7 @@ _.Zones =
 						26832,	-- Therazane's Mercy
 					},
 				}),
-				q(26583, {	-- Wrath of the Fungalmancer					
+				q(26583, {	-- Wrath of the Fungalmancer
 					["lvl"] = 82,
 					["provider"] = { "n", 43442 },	-- Ruberick
 					["coord"] = { 68.5, 26.4, 207 },
@@ -1092,6 +1100,6 @@ _.Zones =
 					},
 				}),
 			}),
-		}),		
+		}),
 	}),
 };

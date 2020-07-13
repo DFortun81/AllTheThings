@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	i(155915, {	-- Special Duty Assignments
@@ -36,12 +37,12 @@ _.Zones =
 			}),
 			q(43926, {	-- The Legion Returns
 				["isBreadcrumb"] = true,
-				["lvl"] = 98,			
+				["lvl"] = 98,
 				["description"] = "This quest is automatically offered when you reach level 98.  To get it to pop up, you may need to relog.",
 			}),
 			q(28790, { -- A Personal Summons (Vashj'ir Starter Quest)
 				["isBreadcrumb"] = true,
-			}),	
+			}),
 			q(36499),	-- Iron Horde Invasion
 			q(29157),	-- The Zandalari Menace
 			q(49817, {	-- To Northrend! (Horde)
@@ -80,6 +81,7 @@ _.Zones =
 			}),
 			q(27722, {	-- Warchief's Command: Deepholm!
 				["isBreadcrumb"] = true,
+				["races"] = HORDE_ONLY,
 			}),
 			q(28548, {	-- Warchief's Command: Desolace!
 				["isBreadcrumb"] = true,
@@ -299,6 +301,7 @@ _.Zones =
 			q(27727, {	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)
 				["isBreadcrumb"] = true,
 				["lvl"] = 82,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(28531, {	-- Hero's Call: Desolace! (breadcrumb quest for 14384, not available if 25938 is completed) (max level 33)
 				["isBreadcrumb"] = true,

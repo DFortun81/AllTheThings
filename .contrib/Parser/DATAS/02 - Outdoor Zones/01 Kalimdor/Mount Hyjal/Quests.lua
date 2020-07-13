@@ -1,7 +1,8 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-_.Zones = 
+
+_.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(198, {	-- Mount Hyjal
@@ -30,7 +31,7 @@ _.Zones =
 					["sourceQuest"] = 25740,	-- Fact-Finding Mission
 				}),
 				q(42046, {	-- A New Beginning
-					["provider"] = { "n", 106250 },	-- 
+					["provider"] = { "n", 106250 },	--
 					["classes"] = { DRUID },
 				}),
 				q(25411, {	-- A New Master
@@ -949,12 +950,14 @@ _.Zones =
 					["coord"] = { 71.9, 74.0, 198 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25551,	-- The Firelord
+					["isBreadcrumb"] = true,
 				}),
 				q(27399, {	-- The Battle Is Won, The War Goes On
 					["provider"] = { "n", 40772 },	-- Commander Jarod Shadowsong
 					["coord"] = { 71.9, 74.0, 198 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25551,	-- The Firelord
+					["isBreadcrumb"] = true,
 				}),
 				q(25462, {	-- The Bears Up There
 					["provider"] = { "n", 39932 },	-- Keeper Taldros
@@ -1269,7 +1272,7 @@ _.Zones =
 						i(57309),	-- Chestplate of Exceptional Expectations
 					},
 				}),
-				q(25321, {	-- Twilight Captivity	
+				q(25321, {	-- Twilight Captivity
 					["provider"] = { "n", 40096 },	-- Scout Larandia
 					["coord"] = { 44.4, 18.9, 198 },
 					["sourceQuest"] = 25320,	-- The Captured Scout

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -445,7 +446,7 @@ _.Zones =
 					["sourceQuest"] = 27225,	-- A Summons from Ander Germaine
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
-					["lvl"] = 20,	
+					["lvl"] = 20,
 					["g"] = {
 						i(65492),	-- Broadsword of the Crown
 						i(65493),	-- Greatsword of the Crown
@@ -488,7 +489,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(27351, {	-- A Royal Reward
-					["providers"] = { 
+					["providers"] = {
 						{ "n", 51998 },	-- Arthur Huwe
 						{ "n", 13283 },	-- Lord Tony Romano
 					},
@@ -629,8 +630,8 @@ _.Zones =
 					["coord"] = { 25.9, 29.2, 84 },
 					["sourceQuest"] = 29156,	-- The Troll Incursion
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 85,	
-				}),					
+					["lvl"] = 85,
+				}),
 				q(14482, {	-- Call of Duty
 					["provider"] = { "n", 36799 },	-- Recruiter Burns
 					["coord"] = { 27.4, 24.2, 84 },
@@ -771,7 +772,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 					["u"] = REMOVED_FROM_GAME,
-				}),	
+				}),
 				q(39800, {	-- Greymane's Gambit
 					["provider"] = { "n", 96663 },	-- Genn Greymane
 					["coord"] = { 18.6, 50.8, 628 },
@@ -829,7 +830,7 @@ _.Zones =
 					["description"] = "This quest is automatically offered when you reach level 110.",
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
-					["g"] = {		
+					["g"] = {
 						i(163542),	-- Footman's Warmace
 						i(163541),	-- Longbow of the Hunt
 						i(163539),	-- Spear of the Hunt
@@ -904,7 +905,7 @@ _.Zones =
 					["g"] = {
 						i(122637),	-- S.E.L.F.I.E. Camera
 					},
-				}),				
+				}),
 				q(38206, {	-- Making the Rounds
 					["provider"] = { "n", 96644 },	-- Sky Admiral Rogers
 					["coord"] = { 18.8, 42.6, 84 },
@@ -1095,7 +1096,7 @@ _.Zones =
 					},
 					["coord"] = { 85.6, 32.7, 84 },
 					["sourceQuest"] = 26322,	-- Rise of the Brotherhood
-					["races"] = ALLIANCE_ONLY,	
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(44471, {	-- Second Sight
 					["provider"] = { "n", 102585 },	-- Jace Darkweaver
@@ -1213,7 +1214,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22243)),	-- Small Soul Pouch
-					},				
+					},
 				}),
 				q(29439, {	-- The Call of the World-Shaman
 					["provider"] = { "n", 45226 },	-- Naraat the Earthspeaker
@@ -1237,7 +1238,7 @@ _.Zones =
 					["lvl"] = 50,
 					["g"] = {
 						i(65624),	-- SI:7 Special Issue Facemask
-					},				
+					},
 				}),
 				q(7905,  {	-- The Darkmoon Faire
 					["provider"] = { "n", 54334 },	-- Darkmoon Faire Mystic Mage
@@ -1292,14 +1293,14 @@ _.Zones =
 						i(65476),	-- Gavel of the Order
 						i(65477),	-- Warhammer of the Order
 					},
-				}),	
+				}),
 				q(29547, {	-- The King's Command
 					["provider"] = { "n", 1750 },	-- Grand Admiral Jes-Tereth
 					["coord"] = { 85.6, 32.8, 84 },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
-				}),			
+				}),
 				q(7782,  {	-- The Lord of Blackrock
 					["provider"] = { "n", 107574 },	-- Anduin Wrynn
 					["coord"] = { 85.6, 31.8, 84 },
@@ -1311,13 +1312,17 @@ _.Zones =
 						i(19383),	-- Master Dragonslayer's Medallion
 						i(19384),	-- Master Dragonslayer's Ring
 					},
-				}),					
+				}),
 				q(27203, {	-- The Maelstrom
 					["provider"] = { "n", 45226 },	-- Naraat the Earthspeaker
 					["coord"] = { 74.4, 18.8, 84 },
-					["sourceQuest"] = 27727,	-- Hero's Call: Deepholm!
+					["sourceQuests"] = {
+						27398, -- The Battle Is Won, The War Goes On
+						27443, -- The War Has Many Fronts
+						27727, -- Hero's Call: Deepholm!
+					},
 					["lvl"] = 82,
-				}),						
+				}),
 				q(29548, {	-- The Mission
 					["provider"] = { "n", 55789 },	-- Rell Nightwind
 					["coord"] = { 78.9, 39.7, 84 },
@@ -1337,7 +1342,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(543,   {	-- The Perenolde Tiara
-					["provider"] = { "n", 2285 },	-- Count Remington Ridgewell 
+					["provider"] = { "n", 2285 },	-- Count Remington Ridgewell
 					["coord"] = { 81.4, 34.2, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
@@ -1505,9 +1510,9 @@ _.Zones =
 					["lvl"] = 25,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(3556)),	-- Dread Mage Hat 
+						un(REMOVED_FROM_GAME, i(3556)),	-- Dread Mage Hat
 					},
-				}),		
+				}),
 			}),
 		}),
 	}),
