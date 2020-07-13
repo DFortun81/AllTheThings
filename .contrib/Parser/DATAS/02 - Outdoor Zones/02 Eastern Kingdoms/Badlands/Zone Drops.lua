@@ -21,7 +21,7 @@ _.Zones =
 					},
 				}),
 				n(2740, {	-- Shadowforge Darkweaver	-- Coded this way to put the red text on item.
-					un(7, i(2621)), 	-- Cowl of Necromancy
+					un(REMOVED_FROM_GAME, i(2621)), 	-- Cowl of Necromancy
 				}),
 				i(9386, {	-- Excavator's Brand
 					["crs"] = { 4846 },	-- Shadowforge Digger

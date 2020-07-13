@@ -50,13 +50,13 @@ _.Instances = { tier(1, {	-- Classic
 							["sourceQuest"] = 2278,	-- The Platinum Discs
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 45,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 	--[[				q(2280, {	-- The Platinum Discs [Horde] (before Blizzard reworked this Quest)
 							["sourceQuest"] = 2278,	-- The Platinum Discs
 							["races"] = HORDE_ONLY,
 							["lvl"] = 45,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 	]]--				}),
 						q(2280, {	-- The Platinum Discs
 							["sourceQuest"] = 2278,	-- The Platinum Discs
@@ -69,7 +69,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(2240, {	-- The Hidden Chamber
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9626)),	-- Dwarven Charge
@@ -77,7 +77,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(2318, {	-- Translating the Journal
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 6912 },	-- Remains of a Paladin
 					["sourceQuest"] = 2284,	-- Necklace Recovery, Take 2

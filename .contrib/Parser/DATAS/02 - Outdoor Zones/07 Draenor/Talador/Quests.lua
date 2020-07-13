@@ -443,7 +443,7 @@ _.Zones =
 					},
 				}),
 				q(37837, {	-- An Inside Job
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 90233 },	-- Archmage Khadgar
 					["sourceQuest"] = 37964,	-- To Gul'dan!
 				}),
@@ -555,7 +555,7 @@ _.Zones =
 					},
 				}),
 				q(36014, {	-- Blackhand's Secret
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuests"] = {
 						36010,	-- Flamebender's Tome
@@ -586,7 +586,7 @@ _.Zones =
 					["sourceQuest"] = 33728,	-- An Eye for a Spy
 				}),
 				q(37836, {	-- Breaking Badness
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuest"] = 37834,	-- Orb of Dominion
 				}),
@@ -604,13 +604,13 @@ _.Zones =
 					},
 				}),
 				q(39019, {	-- Call of the Archmage
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(39018, {	-- Call of the Archmage
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(39023, {	-- Call of the Archmage
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuests"] = {
 						36014,	-- Blackhand's Secret
 						36016,	-- The Unbroken Circle
@@ -650,15 +650,15 @@ _.Zones =
 					["sourceQuest"] = 34564,	-- Destination: Unknown
 				}),
 				q(35990, {	-- Core of Flame
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 				}),
 				q(35991, {	-- Core of Iron
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 				}),
 				q(35992, {	-- Core of Life
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 				}),
 				q(34667, {	-- Court of Souls (bonus objective)
@@ -739,7 +739,7 @@ _.Zones =
 					},
 				}),
 				q(36158, {	-- Draenor's Secret Power
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 				}),
 				q(34959, {	-- Dreadpiston
@@ -773,7 +773,7 @@ _.Zones =
 					["coord"] = { 56.9, 25.9, 535 },
 				}),
 				q(35997, {	-- Empire's Fall
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuests"] = {
 						36004,	-- Power Unleashed
@@ -823,11 +823,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(35994, {	-- Eyes of the Archmage
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 				}),
 				q(36010, {	-- Flamebender's Tome
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuest"] = 36007,	-- Touch of the Kirin-Tor
 				}),
@@ -844,7 +844,7 @@ _.Zones =
 					["coord"] = { 49.8, 56.1, 535 },
 				}),
 				q(36000, {	-- Fugitive Dragon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 				}),
 				q(34777, {	-- Gatekeepers of Auchindoun
@@ -868,7 +868,7 @@ _.Zones =
 					},
 				}),
 				q(36009, {	-- Heart of the Fury
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuest"] = 36007,	-- Touch of the Kirin-Tor
 				}),
@@ -900,7 +900,7 @@ _.Zones =
 					},
 				}),
 				q(36006, {	-- Hunter: Hunted
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuest"] = 36005,	-- The Scrying Game
 				}),
@@ -1023,7 +1023,7 @@ _.Zones =
 					["sourceQuest"] = 33730,	-- Engineering Her Demise
 				}),
 				q(35989, {	-- Khadgar's Task
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(118290)),	-- Solium Band of Might
@@ -1039,7 +1039,7 @@ _.Zones =
 					["sourceQuest"] = 33579,	-- What the Draenei Found
 				}),
 				q(35998, {	-- Legacy of the Sorcerer Kings
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuests"] = {
 						36004,	-- Power Unleashed
@@ -1068,7 +1068,7 @@ _.Zones =
 					},
 				}),
 				q(36013, {	-- Might of the Elemental Lords
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuest"] = 36007,	-- Touch of the Kirin-Tor
 				}),
@@ -1077,7 +1077,7 @@ _.Zones =
 					["races"] =  HORDE_ONLY,
 				}),
 				q(37838, {	-- My Garona
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 90237 },	-- Garona Halforcen
 					["sourceQuest"] = 37837,	-- An Inside Job
 					["g"] = {
@@ -1197,7 +1197,7 @@ _.Zones =
 					},
 				}),
 				q(37834, {	-- Orb of Dominion
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuests"] = {
 						39023,	-- Call of the Archmage
@@ -1205,7 +1205,7 @@ _.Zones =
 						36018,	-- We're Not Finished...
 					},
 					["g"] = {
-						un(40, i(122155)),	-- Orb of Dominion
+						un(REMOVED_FROM_GAME, i(122155)),	-- Orb of Dominion
 					},
 				}),
 				q(35236, {	-- Orunai Coast (bonus objective)
@@ -1238,7 +1238,7 @@ _.Zones =
 					},
 				}),
 				q(36004, {	-- Power Unleashed
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 84702 },	-- Archmage Khadgar
 				}),
 				q(34458, {	-- Powering the Defenses
@@ -1257,7 +1257,7 @@ _.Zones =
 					["sourceQuest"] = 34971,	-- The Only Way to Travel
 				}),
 				q(36017, {	-- Prisoner of the Mind
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuests"] = {
 						36014,	-- Blackhand's Secret
@@ -1317,7 +1317,7 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(36012, {	-- Reverse Piracy
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuest"] = 36007,	-- Touch of the Kirin-Tor
 				}),
@@ -1460,7 +1460,7 @@ _.Zones =
 					},
 				}),
 				q(36157, {	-- Spires of the Betrayer
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 				}),
 				q(34451, {	-- Sunsworn Camp
@@ -1473,7 +1473,7 @@ _.Zones =
 					},
 				}),
 				q(35993, {	-- Tackling Teron'gor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 				}),
 				q(34472, {	-- Temporal Juxtaposition
@@ -1522,7 +1522,7 @@ _.Zones =
 					},
 				}),
 				q(37841, {	-- The Final Assault
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 90233 },	-- Archmage Khadgar
 					["sourceQuest"] = 37837,	-- An Inside Job
 				}),
@@ -1585,7 +1585,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(36005, {	-- The Scrying Game
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuests"] = {
 						35997,	-- Empire's Fall
@@ -1619,7 +1619,7 @@ _.Zones =
 					},
 				}),
 				q(36016, {	-- The Unbroken Circle
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuests"] = {
 						36010,	-- Flamebender's Tome
@@ -1657,7 +1657,7 @@ _.Zones =
 					["sourceQuest"] = 34683,	-- One Step Ahead
 				}),
 				q(37964, {	-- To Gul'dan!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuest"] = 37836,	-- Breaking Badness
 				}),
@@ -1685,7 +1685,7 @@ _.Zones =
 					["sourceQuest"] = 33754,	-- Through the Looking Glass
 				}),
 				q(36007, {	-- Touch of the Kirin-Tor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(118300)),	-- Spellbound Solium Band of Sorcerous Strength
@@ -1851,7 +1851,7 @@ _.Zones =
 					},
 				}),
 				q(36018, {	-- We're Not Finished...
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 					["sourceQuests"] = {
 						36014,	-- Blackhand's Secret

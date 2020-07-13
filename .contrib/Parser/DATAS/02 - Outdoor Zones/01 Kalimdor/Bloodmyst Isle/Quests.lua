@@ -52,7 +52,7 @@ _.Zones =
 					["provider"] = { "n", 17553 },	-- Caregiver Topher Loaal
 					["coord"] = { 55.8, 59.8, 106 },
 					["races"]= { 11 },	-- Draenei
-					["u"] = 40, 	-- Legacy Quest, quest moved to Azuremyst Isle 	
+					["u"] = REMOVED_FROM_GAME, -- quest moved to Azuremyst Isle 	
 				}),
 				q(9694,  {	-- Blood Watch
 					["provider"] = { "n", 17684 },	-- Vindicator Boros
@@ -74,7 +74,10 @@ _.Zones =
 						i(120951),	-- Protective Field Grips
 						i(26022),	-- Researcher's Gloves
 						i(26008),	-- Scholar's Gloves
-						un(32, i(26034)),	-- Protective Field Gloves
+						un(REMOVED_FROM_GAME, {
+							["itemID"] = 26034,	-- Protective Field Gloves
+							["description"] = "This item was one of the original quest rewards. Blizzard does not give transmog for removed quest rewards.",
+						}),
 					},
 				}),
 				q(9761,  {	-- Clearing the Way
@@ -324,7 +327,7 @@ _.Zones =
 					["coord"] = { 57.7, 53.9, 106 },
 					["sourceQuest"] = 9603,	-- Beds, Bandages, and Beyond
 					["races"] = { DRAENEI },
-					["u"] = 40, 	-- Legacy Quest, quest moved to Azuremyst Isle 
+					["u"] = REMOVED_FROM_GAME, -- quest moved to Azuremyst Isle 
 				}),
 				q(9548,  {	-- Pilfered Equipment
 					["provider"] = { "n", 17421 },	-- Clopper Wizbang

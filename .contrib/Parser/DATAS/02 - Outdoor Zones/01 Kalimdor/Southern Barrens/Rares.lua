@@ -26,7 +26,7 @@ _.Zones =
 					["coord"] = { 47.8, 88.2, 199 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(7, i(4785)),	-- Brimstone Belt
+						un(REMOVED_FROM_GAME, i(4785)),	-- Brimstone Belt
 					},
 				}), 
 				n(5863, {	-- Geopriest Gukk'rok
@@ -36,7 +36,7 @@ _.Zones =
 						{ 42.2, 37.6, 199 },
 					},
 					["g"] = {
-						un(7, i(1539)),	-- Gnarled Hermit's Staff
+						un(REMOVED_FROM_GAME, i(1539)),	-- Gnarled Hermit's Staff
 					},
 				}), 
 				n(5859, {	-- Hagg Taurenbane
@@ -50,7 +50,7 @@ _.Zones =
 					["coord"] = { 47.0, 88.6, 199 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(7, i(2035)),	-- Sword of the Night Sky
+						un(REMOVED_FROM_GAME, i(2035)),	-- Sword of the Night Sky
 					},
 				}), 
 				n(5848, {	-- Malgin Barleybrew

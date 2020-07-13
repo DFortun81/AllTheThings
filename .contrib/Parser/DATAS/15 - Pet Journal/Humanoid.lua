@@ -12,7 +12,7 @@ _.PetJournal =
 		p(216),				-- Argent Gruntling
 		p(214),				-- Argent Squire
 		p(1323),			-- Ashleaf Spriteling
-		un(6, p(1828)),		-- Baby Winston
+		un(REMOVED_FROM_GAME, p(1828)),		-- Baby Winston
 		p(1343),			-- Bonkers
 		p(2457),			-- Coldlight Surfrunner
 		p(1149),			-- Corefire Imp
@@ -21,7 +21,7 @@ _.PetJournal =
 		un(20, p(226)),		-- Curious Wolvar Hatchling
 		p(2850),			-- Cursed Dune Watcher
 		p(1329),			-- Dandelion Frolicker
-		un(16, p(294)),		-- Deathy
+		un(REMOVED_FROM_GAME, p(294)),		-- Deathy
 		p(1979, {			-- Dutiful Gruntling
 			["races"] = HORDE_ONLY,
 		}),
@@ -31,11 +31,11 @@ _.PetJournal =
 		p(119),				-- Father Winter's Helper
 		p(821),				-- Feral Vermling
 		p(1229),			-- Fiendish Imp
-		un(16, p(2778, {	-- Finduin (Blizzcon 2019)
+		un(REMOVED_FROM_GAME, p(2778, {	-- Finduin (Blizzcon 2019)
 			["races"] = ALLIANCE_ONLY,
 		})),
 		p(514),				-- Flayer Youngling
-		un(16, p(2777, {	-- Gillvanas (Blizzcon 2019)
+		un(REMOVED_FROM_GAME, p(2777, {	-- Gillvanas (Blizzcon 2019)
 			["races"] = HORDE_ONLY,
 		})),
 		p(2114),			-- Globe Yeti
@@ -75,7 +75,7 @@ _.PetJournal =
 			["races"] = HORDE_ONLY,
 		}),
 		p(1226),			-- Lil' Bad Wolf
-		un(6, p(111)),		-- Lurky
+		un(REMOVED_FROM_GAME, p(111)),		-- Lurky
 		un(REMOVED_FROM_GAME, p(189)),		-- Mini Tyrael
 		p(296, {	-- Moonkin Hatchling (Alliance)
 			["u"] = 35,
@@ -110,7 +110,7 @@ _.PetJournal =
 		p(1073),			-- Terky
 		p(2469),			-- Thistlebrush Bud
 		p(1803),			-- Thistleleaf Adventurer
-		un(6, p(1365)),		-- Treasure Goblin
+		un(REMOVED_FROM_GAME, p(1365)),		-- Treasure Goblin
 		p(2022),			-- Tylarr Gronnden
 		p(2136), 			-- Uuna
 		p(2833),			-- Void-Scarred Anubisath

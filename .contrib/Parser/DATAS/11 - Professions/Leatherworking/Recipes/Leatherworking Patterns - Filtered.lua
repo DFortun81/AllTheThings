@@ -56,15 +56,15 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Blue Dragonscale Shoulders
 							["recipeID"] = 19089,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Heavy Scorpid Shoulders
 							["recipeID"] = 19100,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Stormshroud Shoulders
 							["recipeID"] = 19090,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Wild Leather Shoulders
 							["recipeID"] = 10529,
@@ -82,15 +82,15 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Blue Dragonscale Breastplate
 							["recipeID"] = 19077,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Frostsaber Tunic
 							["recipeID"] = 19104,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Heavy Scorpid Vest
 							["recipeID"] = 19051,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Icy Scale Breastplate
 							["recipeID"] = 28222,
@@ -98,11 +98,11 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Ironfeather Breastplate
 							["recipeID"] = 19086,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Living Breastplate
 							["recipeID"] = 19095,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Onyxia Scale Breastplate
 							["recipeID"] = 19106,
@@ -127,7 +127,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Stormshroud Armor
 							["recipeID"] = 19079,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Wild Leather Vest
 							["recipeID"] = 10544,
@@ -163,11 +163,11 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{	-- Chimeric Gloves
 							["recipeID"] = 19053,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Deviate Scale Gloves
 							["recipeID"] = 7954,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Dragonscale Gauntlets
 							["recipeID"] = 10619,
@@ -175,7 +175,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Frostsaber Gloves
 							["recipeID"] = 19087,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Gloves of the Greatfather
 							["recipeID"] = 21943,
@@ -183,7 +183,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Heavy Scorpid Gauntlets
 							["recipeID"] = 19064,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Icy Scale Gauntlets
 							["recipeID"] = 28223,
@@ -199,7 +199,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Stormshroud Gloves
 							["recipeID"] = 26279,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}
 				},
@@ -209,7 +209,7 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{	-- Deviate Scale Belt
 							["recipeID"] = 7955,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Girdle of Insight
 							["recipeID"] = 22921,
@@ -228,20 +228,20 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{	-- Frostsaber Leggings
 							["recipeID"] = 19074,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Heavy Scorpid Leggings
 							["recipeID"] = 19075,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Living Leggings
 							["recipeID"] = 19078,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							-- Volcanic Leggings
 							["recipeID"] = 19059,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Wild Leather Leggings
 							["recipeID"] = 10572,
@@ -273,15 +273,15 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{	-- Chromatic Cloak
 							["recipeID"] = 22926,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Deviate Scale Cloak
 							["recipeID"] = 7953,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Hide of the Wild
 							["recipeID"] = 22927,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Nightscape Cloak
 							["recipeID"] = 10550,
@@ -289,7 +289,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Shifting Cloak
 							["recipeID"] = 22928,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Wild Leather Cloak
 							["recipeID"] = 10574,

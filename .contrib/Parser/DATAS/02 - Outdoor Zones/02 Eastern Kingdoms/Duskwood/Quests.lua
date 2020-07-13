@@ -13,7 +13,7 @@ _.Zones =
 					["sourceQuest"] = 26719,	-- Delivery to Master Harris
 				}),
 				q(231,   {	-- A Daughter's Love
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2000)),	-- Archeus
@@ -68,7 +68,7 @@ _.Zones =
 					},
 				}),
 				q(253,   {	-- Bride of the Embalmer
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6223)),	-- Crest of Darkshire
@@ -139,7 +139,7 @@ _.Zones =
 					["sourceQuest"] = 26717,	-- The Yorgen Worgen
 				}),
 				q(245,   {	-- [DEPRECATED]Eight-Legged Menaces
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3559)),	-- Night Watch Gauntlets
@@ -217,7 +217,7 @@ _.Zones =
 					},
 				}),
 				q(181,   {	-- Look to the Stars
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7107)),	-- Belt of the Stars
@@ -250,7 +250,7 @@ _.Zones =
 					["sourceQuest"] = 26794,	-- Morgan Ladimore
 				}),
 				q(55,    {	-- Morbent Fel
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2954)),	-- Night Watch Pantaloons
@@ -285,16 +285,16 @@ _.Zones =
 					["sourceQuest"] = 26677,	-- Ghoulish Effigy
 				}),
 				q(1372,  {	-- Nothing But The Truth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5418 },	-- Deathstalker Zraedus
 				}),
 				q(1388, {	-- Nothing But The Truth
 					["sourceQuest"] = 1372,	-- Nothing But The Truth
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1391, {	-- Nothing But The Truth
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26680, {	-- Ogre Thieves
 					["provider"] = { "n", 289 },	-- Abercrombie
@@ -332,7 +332,7 @@ _.Zones =
 					["sourceQuest"] = 43392,	-- Into the Void
 				}),
 				q(1383,  {	-- Nothing But The Truth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6832)),	-- Cloak of Blight
@@ -385,7 +385,7 @@ _.Zones =
 					["sourceQuest"] = 1041,	-- The Caravan Road
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26778, {	-- The Cries of the Dead
 					["provider"] = { "n", 43731 },	-- Sister Elsington
@@ -417,7 +417,7 @@ _.Zones =
 					},
 				}),
 				q(98,    {	-- The Legend of Stalvan
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2044)),	-- Crescent of Forlorn Spirits
@@ -425,7 +425,7 @@ _.Zones =
 					},
 				}),
 				q(58,    {	-- The Night Watch
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 264 },	-- Commander Althea Ebonlocke <Leader of The Night Watch>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -440,7 +440,7 @@ _.Zones =
 					["sourceQuest"] = 1042,	-- The Carevin Family
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26723, {	-- The Fate of Morbent Fel
 					["provider"] = { "n", 43861 },	-- Sven Yorgen
@@ -539,7 +539,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(101,   {	-- The Totem of Infliction
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1131)),	-- Totem of Infliction
@@ -557,7 +557,7 @@ _.Zones =
 					},
 				}),
 				q(223,   {	-- Worgen in the Woods
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2902)),	-- Cloak of the Faith

@@ -13,7 +13,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["g"] = {
 			d(17, {	-- LFR
 				n(ZONEDROPS, {
-					un(40, i(115280, {	-- Abrogator Stone
+					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
 						["crs"] = {
 							78714,	-- Kargath
 							77404,	-- The Butcher
@@ -25,7 +25,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77428,	-- Imperator Mar'gok 
 						},
 					})),
-					un(40, i(115981, {	-- Abrogator Stone Cluster
+					un(REMOVED_FROM_GAME, i(115981, {	-- Abrogator Stone Cluster
 						["crs"] = {
 							78714,	-- Kargath
 							77404,	-- The Butcher
@@ -115,7 +115,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(116029),	-- Crackle-Proof Chestguard
 							i(116231),	-- Legplates of Arcanic Absorbtion
 							i(116293),	-- Idol of Suppression
-							un(40, i(115288)),	-- Felbreaker's Tome
+							un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
 						})),
 					},
 				}),
@@ -132,7 +132,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(116002),	-- High Arcanist Leggings
 							i(116206),	-- Warmage's Legwraps
 							i(116280),	-- Seal of Arcane Wrath
-							un(40, i(115289)),	-- Sigil of the Sorcerer King
+							un(REMOVED_FROM_GAME, i(115289)),	-- Sigil of the Sorcerer King
 						})),
 					},
 				}),
@@ -192,7 +192,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						},
 					}),
 					i(119337),	-- Ripswallow Plate Belt
-					un(40, i(115280, {	-- Abrogator Stone
+					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
 						["crs"] = {
 							78714,	-- Kargath
 							77404,	-- The Butcher
@@ -204,7 +204,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77428,	-- Imperator Mar'gok 
 						},
 					})),
-					un(40, i(115981, {	-- Abrogator Stone Cluster
+					un(REMOVED_FROM_GAME, i(115981, {	-- Abrogator Stone Cluster
 						["crs"] = {
 							78714,	-- Kargath
 							77404,	-- The Butcher
@@ -316,7 +316,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113846),	-- Seal of Unbound Frost
 					i(113843),	-- Spell-Sink Signet
 					i(113842),	-- Emblem of Caustic Healing
-					un(40, i(115288)),	-- Felbreaker's Tome
+					un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
 				})),
 				cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
 					ach(8977),	-- Lineage of Power
@@ -334,7 +334,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113861),	-- Evergaze Arcane Eidolon
 					i(113854),	-- Mark of Rapid Replication
 					i(113859),	-- Quiescent Runestone
-					un(40, i(115289)),	-- Sigil of the Sorcerer King
+					un(REMOVED_FROM_GAME, i(115289)),	-- Sigil of the Sorcerer King
 				})),
 			}),
 			d(15, {	-- Heroic
@@ -392,7 +392,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						},
 					}),
 					i(119337),	-- Ripswallow Plate Belt
-					un(40, i(115280, {	-- Abrogator Stone
+					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
 						["crs"] = {
 							78714,	-- Kargath
 							77404,	-- The Butcher
@@ -404,7 +404,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77428,	-- Imperator Mar'gok 
 						},
 					})),
-					un(40, i(115981, {	-- Abrogator Stone Cluster
+					un(REMOVED_FROM_GAME, i(115981, {	-- Abrogator Stone Cluster
 						["crs"] = {
 							78714,	-- Kargath
 							77404,	-- The Butcher
@@ -516,7 +516,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113846),	-- Seal of Unbound Frost
 					i(113843),	-- Spell-Sink Signet
 					i(113842),	-- Emblem of Caustic Healing
-					un(40, i(115288)),	-- Felbreaker's Tome
+					un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
 				})),
 				cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
 					ach(8977),	-- Lineage of Power
@@ -534,7 +534,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113861),	-- Evergaze Arcane Eidolon
 					i(113854),	-- Mark of Rapid Replication
 					i(113859),	-- Quiescent Runestone
-					un(40, i(115289)),	-- Sigil of the Sorcerer King
+					un(REMOVED_FROM_GAME, i(115289)),	-- Sigil of the Sorcerer King
 				})),
 			}),
 			d(16, {	-- Mythic
@@ -592,7 +592,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						},
 					}),
 					i(119337),	-- Ripswallow Plate Belt
-					un(40, i(115280, {	-- Abrogator Stone
+					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
 						["crs"] = {
 							78714,	-- Kargath
 							77404,	-- The Butcher
@@ -604,7 +604,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77428,	-- Imperator Mar'gok 
 						},
 					})),
-					un(40, i(115981, {	-- Abrogator Stone Cluster
+					un(REMOVED_FROM_GAME, i(115981, {	-- Abrogator Stone Cluster
 						["crs"] = {
 							78714,	-- Kargath
 							77404,	-- The Butcher
@@ -722,7 +722,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113846),	-- Seal of Unbound Frost
 					i(113843),	-- Spell-Sink Signet
 					i(113842),	-- Emblem of Caustic Healing
-					un(40, i(115288)),	-- Felbreaker's Tome
+					un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
 				})),
 				e(1197, {	-- Imperator Mar'gok <Sorcerer King>
 					["crs"] = {
@@ -749,7 +749,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(113861),	-- Evergaze Arcane Eidolon
 						i(113854),	-- Mark of Rapid Replication
 						i(113859),	-- Quiescent Runestone
-						un(40, i(115289)),	-- Sigil of the Sorcerer King
+						un(REMOVED_FROM_GAME, i(115289)),	-- Sigil of the Sorcerer King
 					},
 				}),
 			}),

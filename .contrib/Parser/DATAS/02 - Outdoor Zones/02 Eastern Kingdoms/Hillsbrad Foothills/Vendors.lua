@@ -96,11 +96,11 @@ _.Zones =
 					},
 				}),
 				n(2381,  {	-- Micha Yance <Trade Goods>
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(20973, {	-- Design: Blazing Citrine Ring (Removed in Cata and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(20971, {	-- Design: Heavy Iron Knuckles (Removed in Cata and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
@@ -140,9 +140,9 @@ _.Zones =
 					},
 				}),
 				n(2684,   {	-- Rizz Loosebolt <Engineering Supplies>
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(13308)),	-- Schematic: Ice Deflector
+						un(REMOVED_FROM_GAME, i(13308)),	-- Schematic: Ice Deflector
 					},
 				}),
 				n(6779,   {	-- Smudge Thunderwood <Poison Supplies>

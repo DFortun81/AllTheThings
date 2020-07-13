@@ -18,7 +18,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(QUESTS, {
 						cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
 							q(8192, {	-- Animist's Caress [Druid]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 15042,		-- Zanza the Restless
 								["repeatable"] = true,
 								["cost"] = {
@@ -30,7 +30,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8065, {	-- Paragons of Power: The Haruspex's Tunic [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
@@ -42,7 +42,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8057, {	-- Paragons of Power: The Haruspex's Bracers [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
@@ -54,7 +54,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8064, {	-- Paragons of Power: The Haruspex's Belt [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
@@ -66,7 +66,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8110, {	-- Enchanted South Seas Kelp [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
@@ -75,7 +75,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8111, {	-- Enchanted South Seas Kelp [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["sourceQuest"] = 8110,	-- Enchanted South Seas Kelp [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
@@ -85,7 +85,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8112, {	-- Enchanted South Seas Kelp [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["sourceQuest"] = 8111,	-- Enchanted South Seas Kelp [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
@@ -95,7 +95,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8113, {	-- Pristine Enchanted South Seas Kelp
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["sourceQuest"] = 8112,	-- Enchanted South Seas Kelp [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
@@ -107,7 +107,7 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 						cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
 							q(8187, {	-- Falcon's Call [Hunter]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 15042,		-- Zanza the Restless
 								["repeatable"] = true,
 								["cost"] = {
@@ -119,7 +119,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8067, {	-- Paragons of Power: The Predator's Mantle [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14905,		-- Falthir the Sightless
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
@@ -131,7 +131,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8062, {	-- Paragons of Power: The Predator's Bracers [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14905,		-- Falthir the Sightless
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
@@ -143,7 +143,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8066, {	-- Paragons of Power: The Predator's Belt [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14905,		-- Falthir the Sightless
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
@@ -155,7 +155,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8145, {	-- The Maelstrom's Tendril [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14905,		-- Falthir the Sightless
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
@@ -164,7 +164,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8146, {	-- The Maelstrom's Tendril [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14905,		-- Falthir the Sightless
 								["sourceQuest"] = 8145,	-- The Maelstrom's Tendril [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
@@ -174,7 +174,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8147, {	-- The Maelstrom's Tendril [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14905,		-- Falthir the Sightless
 								["sourceQuest"] = 8146,	-- The Maelstrom's Tendril [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
@@ -184,7 +184,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8148, {	-- The Maelstrom's Wrath
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14905,		-- Falthir the Sightless
 								["sourceQuest"] = 8147,	-- The Maelstrom's Tendril [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
@@ -196,7 +196,7 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 						cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
 							q(8189, {	-- Presence of Sight [Mage]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 15042,		-- Zanza the Restless
 								["repeatable"] = true,
 								["cost"] = {
@@ -208,7 +208,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8068, {	-- Paragons of Power: The Illusionist's Mantle [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
@@ -220,7 +220,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8069, {	-- Paragons of Power: The Illusionist's Robes [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
@@ -232,7 +232,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8060, {	-- Paragons of Power: The Illusionist's Wraps [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
@@ -244,7 +244,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8101, {	-- The Pebble of Kajaro [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
@@ -253,7 +253,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8102, {	-- The Pebble of Kajaro [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["sourceQuest"] = 8101,	-- The Pebble of Kajaro [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
@@ -263,7 +263,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8103, {	-- The Pebble of Kajaro [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["sourceQuest"] = 8102,	-- The Pebble of Kajaro [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
@@ -273,7 +273,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8104, {	-- The Jewel of Kajaro
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["sourceQuest"] = 8103,	-- The Pebble of Kajaro [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
@@ -285,7 +285,7 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 						cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
 							q(8185, {	-- Syncretist's Sigil [Paladin]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 15042,		-- Zanza the Restless
 								["repeatable"] = true,
 								["cost"] = {
@@ -297,7 +297,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8055, {	-- Paragons of Power: The Freethinker's Breastplate [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
@@ -309,7 +309,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8053, {	-- Paragons of Power: The Freethinker's Armguards [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
@@ -321,7 +321,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8054, {	-- Paragons of Power: The Freethinker's Belt [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
@@ -333,7 +333,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8045, {	-- The Heathen's Brand [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
@@ -342,7 +342,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8046, {	-- The Heathen's Brand [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["sourceQuest"] = 8045,	-- The Heathen's Brand [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
@@ -352,7 +352,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8047, {	-- The Heathen's Brand [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["sourceQuest"] = 8046,	-- The Heathen's Brand [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
@@ -362,7 +362,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8048, {	-- The Hero's Brand
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["sourceQuest"] = 8047,	-- The Heathen's Brand [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
@@ -374,7 +374,7 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 						cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
 							q(8191, {	-- Prophetic Aura [Priest]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 15042,		-- Zanza the Restless
 								["repeatable"] = true,
 								["cost"] = {
@@ -386,7 +386,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8071, {	-- Paragons of Power: The Confessor's Mantle [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
@@ -398,7 +398,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8061, {	-- Paragons of Power: The Confessor's Wraps [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
@@ -410,7 +410,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8070, {	-- Paragons of Power: The Confessor's Bindings [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
@@ -422,7 +422,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8049, {	-- The Eye of Zuldazar [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
@@ -431,7 +431,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8050, {	-- The Eye of Zuldazar [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["sourceQuest"] = 8049,	-- The Eye of Zuldazar [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
@@ -441,7 +441,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8051, {	-- The Eye of Zuldazar [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["sourceQuest"] = 8050,	-- The Eye of Zuldazar [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
@@ -451,7 +451,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8052, {	-- The All-Seeing Eye of Zuldazar
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["sourceQuest"] = 8051,	-- The Eye of Zuldazar [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
@@ -463,7 +463,7 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 						cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
 							q(8186, {	-- Death's Embrace [Rogue]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 15042,		-- Zanza the Restless
 								["repeatable"] = true,
 								["cost"] = {
@@ -475,7 +475,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8072, {	-- Paragons of Power: The Madcap's Mantle [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14905,		-- Falthir the Sightless
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
@@ -487,7 +487,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8073, {	-- Paragons of Power: The Madcap's Tunic [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14905,		-- Falthir the Sightless
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
@@ -499,7 +499,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8063, {	-- Paragons of Power: The Madcap's Bracers [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14905,		-- Falthir the Sightless
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
@@ -511,7 +511,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8141, {	-- Zandalrian Shadow Talisman [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14905,		-- Falthir the Sightless
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
@@ -520,7 +520,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8142, {	-- Zandalrian Shadow Talisman [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14905,		-- Falthir the Sightless
 								["sourceQuest"] = 8141,	-- Zandalrian Shadow Talisman [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
@@ -530,7 +530,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8143, {	-- Zandalrian Shadow Talisman [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14905,		-- Falthir the Sightless
 								["sourceQuest"] = 8142,	-- Zandalrian Shadow Talisman [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
@@ -540,7 +540,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8144, {	-- Zandalrian Shadow Mastery Talisman
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14905,		-- Falthir the Sightless
 								["sourceQuest"] = 8143,	-- Zandalrian Shadow Talisman [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
@@ -552,7 +552,7 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 						cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
 							q(8188, {	-- Vodouisant's Vigilant Embrace [Shaman]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 15042,		-- Zanza the Restless
 								["repeatable"] = true,
 								["cost"] = {
@@ -564,7 +564,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8075, {	-- Paragons of Power: The Augur's Hauberk [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
@@ -576,7 +576,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8056, {	-- Paragons of Power: The Augur's Bracers [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
@@ -588,7 +588,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8074, {	-- Paragons of Power: The Augur's Belt [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
@@ -600,7 +600,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8116, {	-- Vision of Voodress [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
@@ -609,7 +609,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8117, {	-- Vision of Voodress [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["sourceQuest"] = 8116,	-- Vision of Voodress [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
@@ -619,7 +619,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8118, {	-- Vision of Voodress [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["sourceQuest"] = 8117,	-- Vision of Voodress [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
@@ -629,7 +629,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8119, {	-- The Unmarred Vision of Voodress
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["sourceQuest"] = 8118,	-- Vision of Voodress [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
@@ -641,7 +641,7 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 						cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
 							q(8190, {	-- Hoodoo Hex [Warlock]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 15042,		-- Zanza the Restless
 								["repeatable"] = true,
 								["cost"] = {
@@ -653,7 +653,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8076, {	-- Paragons of Power: The Demoniac's Mantle [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
@@ -665,7 +665,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8077, {	-- Paragons of Power: The Demoniac's Robes [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
@@ -677,7 +677,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8059, {	-- Paragons of Power: The Demoniac's Wraps [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
@@ -689,7 +689,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8106, {	-- Kezan's Taint [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
@@ -698,7 +698,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8107, {	-- Kezan's Taint [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["sourceQuest"] = 8106,	-- Kezan's Taint [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
@@ -708,7 +708,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8108, {	-- Kezan's Taint [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["sourceQuest"] = 8107,	-- Kezan's Taint [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
@@ -718,7 +718,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8109, {	-- Kezan's Unstoppable Taint
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["sourceQuest"] = 8108,	-- Kezan's Taint [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
@@ -730,7 +730,7 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 						cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
 							q(8184, {	-- Presence of Might [Warrior]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 15042,		-- Zanza the Restless
 								["repeatable"] = true,
 								["cost"] = {
@@ -742,7 +742,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8079, {	-- Paragons of Power: The Vindicator's Breastplate [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
@@ -754,7 +754,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8058, {	-- Paragons of Power: The Vindicator's Armguards [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
@@ -766,7 +766,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8078, {	-- Paragons of Power: The Vindicator's Belt [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
@@ -778,7 +778,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8041, {	-- Strength of Mount Mugamba [Friendly]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
@@ -787,7 +787,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8042, {	-- Strength of Mount Mugamba [Honored]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["sourceQuest"] = 8041,	-- Strength of Mount Mugamba [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
@@ -797,7 +797,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8043, {	-- Strength of Mount Mugamba [Revered]
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["sourceQuest"] = 8042,	-- Strength of Mount Mugamba [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
@@ -807,7 +807,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(8044, {	-- The Rage of Mount Mugamba
-								["u"] = 40,	-- Legacy Quest
+								["u"] = REMOVED_FROM_GAME,
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["sourceQuest"] = 8043,	-- Strength of Mount Mugamba [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
@@ -818,7 +818,7 @@ _.Instances = { tier(1, {	-- Classic
 							}),
 						})),
 						q(8240, {	-- A Bijou for Zanza
-							["u"] = 40,	-- Legacy Quest
+							["u"] = REMOVED_FROM_GAME,
 							["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
 							["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
 							["description"] = "Costs 1 bijou of any color per turn in. There are 9 colors and 8 (+1 for Shaman/Paladin) classes in the game, as such, some guilds assign specific classes specific color bijous and treat one as a wild card.",
@@ -839,7 +839,7 @@ _.Instances = { tier(1, {	-- Classic
 							}
 						}),
 						q(8201, {	-- A Collection of Heads
-							["u"] = 40,	-- Legacy Quest
+							["u"] = REMOVED_FROM_GAME,
 							["qg"] = 14910,	-- Exzhal <Servitor of Rastakhan>
 							["coord"] = { 15.3, 15.5, STRANGLETHORN_VALE },
 							["cost"] = {
@@ -849,14 +849,14 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								{
 									["itemID"] = 19883,	-- Sacred Cord
-									["u"] = 40,	-- Legacy Quest Item
+									["u"] = REMOVED_FROM_GAME,
 									["cost"] = {
 										{ "i", 19881, 5 },	-- Channeler's Head
 									},
 									["groups"] = {
 										{
 											["itemID"] = 19880,	-- Gurubashi Head Collection
-											["u"] = 40,	-- Legacy Quest Item
+											["u"] = REMOVED_FROM_GAME,
 											["questID"] = 8201,	-- A Collection of Heads
 										},
 									},
@@ -868,7 +868,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(8196, {	-- Essence Mangoes
-							["u"] = 40,	-- Legacy Quest
+							["u"] = REMOVED_FROM_GAME,
 							["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 							["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 							["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
@@ -882,7 +882,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(8238, {	-- Gurubashi, Vilebranch, and Witherbark Coins
-							["u"] = 40,	-- Legacy Quest
+							["u"] = REMOVED_FROM_GAME,
 							["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
 							["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
 							["repeatable"] = true,
@@ -896,7 +896,7 @@ _.Instances = { tier(1, {	-- Classic
 							}
 						}),
 						q(8239, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
-							["u"] = 40,	-- Legacy Quest
+							["u"] = REMOVED_FROM_GAME,
 							["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
 							["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
 							["repeatable"] = true,
@@ -910,7 +910,7 @@ _.Instances = { tier(1, {	-- Classic
 							}
 						}),
 						q(8246, {	-- Signets of the Zandalar
-							["u"] = 40,	-- Legacy Quest
+							["u"] = REMOVED_FROM_GAME,
 							["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 							["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe
 							["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
@@ -926,7 +926,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(8183, {	-- The Heart of Hakkar
-							["u"] = 40,	-- Legacy Quest
+							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "i", 19802 },	-- The Heart of Hakkar
 							["groups"] = {
 								un(REMOVED_FROM_GAME, i(19948)),	-- Zandalarian Hero Badge
@@ -935,7 +935,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(9210, {	-- The Savage Guard - Arcanum of Focus
-							["u"] = 40,	-- Legacy Quest
+							["u"] = REMOVED_FROM_GAME,
 							["qg"] = 15042,		-- Zanza the Restless
 							["repeatable"] = true,
 							["cost"] = {
@@ -946,7 +946,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(9208, {	-- The Savage Guard - Arcanum of Protection
-							["u"] = 40,	-- Legacy Quest
+							["u"] = REMOVED_FROM_GAME,
 							["qg"] = 15042,		-- Zanza the Restless
 							["repeatable"] = true,
 							["cost"] = {
@@ -957,7 +957,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(9209, {	-- The Savage Guard - Arcanum of Rapidity
-							["u"] = 40,	-- Legacy Quest
+							["u"] = REMOVED_FROM_GAME,
 							["qg"] = 15042,	-- Zanza the Restless
 							["repeatable"] = true,
 							["cost"] = {
@@ -968,7 +968,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(8243, {	-- Zanza's Potent Potables
-							["u"] = 40,	-- Legacy Quest
+							["u"] = REMOVED_FROM_GAME,
 							["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 							["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 							["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
@@ -983,7 +983,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(8195, {	-- Zulian, Razzashi, and Hakkari Coins
-							["u"] = 40,	-- Legacy Quest
+							["u"] = REMOVED_FROM_GAME,
 							["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
 							["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
 							["repeatable"] = true,
@@ -1061,7 +1061,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19881, {	-- Channeler's Head
-					["u"] = 40,	-- Legacy Quest Item
+					["u"] = REMOVED_FROM_GAME,
 					["questID"] = 8201,	-- A Collection of Heads
 					["crs"] = {
 						14509,	-- High Priest Thekal
@@ -1092,7 +1092,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19943, {	-- Massive Mojo
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14834,	-- Hakkar
 						11382,	-- Bloodlord Mandokir
@@ -1265,33 +1265,33 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(ZONEDROPS, {
 				un(REMOVED_FROM_GAME, i(19727)),	-- Blood Scythe
-				un(7, i(20263)),	-- Gurubashi Helm
+				un(REMOVED_FROM_GAME, i(20263)),	-- Gurubashi Helm
 				un(REMOVED_FROM_GAME, i(19908)),	-- Sceptre of Smiting
-				un(7, i(20261)),	-- Shadow Panther Hide Belt
-				un(7, i(20259)),	-- Shadow Panther Hide Gloves
-				un(7, i(20258)),	-- Zulian Ceremonial Staff
-				un(7, i(19921)),	-- Zulian Hacker
-				un(7, i(19708)),	-- Blue Hakkari Bijou
-				un(7, i(19713)),	-- Bronze Hakkari Bijou
-				un(7, i(19715)),	-- Gold Hakkari Bijou
-				un(7, i(19711)),	-- Green Hakkari Bijou
-				un(7, i(19710)),	-- Orange Hakkari Bijou
-				un(7, i(19712)),	-- Purple Hakkari Bijou
-				un(7, i(19707)),	-- Red Hakkari Bijou
-				un(7, i(19714)),	-- Silver Hakkari Bijou
-				un(7, i(19709)),	-- Yellow Hakkari Bijou
-				un(7, i(19706)),	-- Bloodscalp Coin
-				un(7, i(19701)),	-- Gurubashi Coin
-				un(7, i(19700)),	-- Hakkari Coin
-				un(7, i(19699)),	-- Razzashi Coin
-				un(7, i(19704)),	-- Sandfury Coin
-				un(7, i(19705)),	-- Skullsplitter Coin
-				un(7, i(19702)),	-- Vilebranch Coin
-				un(7, i(19703)),	-- Witherbark Coin
-				un(7, i(19698)),	-- Zulian Coin
+				un(REMOVED_FROM_GAME, i(20261)),	-- Shadow Panther Hide Belt
+				un(REMOVED_FROM_GAME, i(20259)),	-- Shadow Panther Hide Gloves
+				un(REMOVED_FROM_GAME, i(20258)),	-- Zulian Ceremonial Staff
+				un(REMOVED_FROM_GAME, i(19921)),	-- Zulian Hacker
+				un(REMOVED_FROM_GAME, i(19708)),	-- Blue Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19713)),	-- Bronze Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19715)),	-- Gold Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19711)),	-- Green Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19710)),	-- Orange Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19712)),	-- Purple Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19707)),	-- Red Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19714)),	-- Silver Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19709)),	-- Yellow Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19706)),	-- Bloodscalp Coin
+				un(REMOVED_FROM_GAME, i(19701)),	-- Gurubashi Coin
+				un(REMOVED_FROM_GAME, i(19700)),	-- Hakkari Coin
+				un(REMOVED_FROM_GAME, i(19699)),	-- Razzashi Coin
+				un(REMOVED_FROM_GAME, i(19704)),	-- Sandfury Coin
+				un(REMOVED_FROM_GAME, i(19705)),	-- Skullsplitter Coin
+				un(REMOVED_FROM_GAME, i(19702)),	-- Vilebranch Coin
+				un(REMOVED_FROM_GAME, i(19703)),	-- Witherbark Coin
+				un(REMOVED_FROM_GAME, i(19698)),	-- Zulian Coin
 				{
 					["itemID"] = 19821,	-- Punctured Voodoo Doll [Druid]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1304,7 +1304,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19814,	-- Punctured Voodoo Doll [Rogue]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1317,7 +1317,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19816,	-- Punctured Voodoo Doll [Hunter]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1330,7 +1330,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19819,	-- Punctured Voodoo Doll [Warlock]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1343,7 +1343,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19813,	-- Punctured Voodoo Doll [Warrior]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1356,7 +1356,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19818,	-- Punctured Voodoo Doll [Mage]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1369,7 +1369,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19820,	-- Punctured Voodoo Doll [Priest]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1382,7 +1382,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19815,	-- Punctured Voodoo Doll [Paladin]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1395,7 +1395,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19817,	-- Punctured Voodoo Doll [Shaman]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1413,18 +1413,18 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				["groups"] = {
 					i(19726, {	-- Bloodvine
-						["u"] = 7,
+						["u"] = REMOVED_FROM_GAME,
 					}),
 				},
 			}),
 			prof(MINING, {
 				i(19774, {	-- Souldarite
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 			prof(SKINNING, {
 				i(19768, {	-- Primal Tiger Leather
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11361,	-- Zulian Tiger
 						15067,	-- Zulian Stalker
@@ -1432,7 +1432,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19767, {	-- Primal Bat Leather
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cr"] = 11368,	-- Bloodseeker Bat
 				}),
 			}),
@@ -1444,13 +1444,13 @@ _.Instances = { tier(1, {	-- Classic
 				un(REMOVED_FROM_GAME, i(19920)),	-- Primalist's Band
 				un(REMOVED_FROM_GAME, i(20262)),	-- Seafury Boots
 				un(REMOVED_FROM_GAME, i(19915)),	-- Zulian Defender
-				un(7, i(19767)),	-- Primal Bat Leather
+				un(REMOVED_FROM_GAME, i(19767)),	-- Primal Bat Leather
 			})),
 			un(REMOVED_FROM_GAME, n(14507, {	-- High Priest Venoxis
 				{
 					["itemID"] = 22216,	-- Venoxis's Venom Sac
 					["questID"] = 9023,	-- The Perfect Poison
-					["u"] = 40,	-- Legacy Quest Item
+					["u"] = REMOVED_FROM_GAME,
 				},
 				un(REMOVED_FROM_GAME, i(19906)),	-- Blooddrenched Footpads
 				un(REMOVED_FROM_GAME, i(19903)),	-- Fang of Venoxis
@@ -1527,14 +1527,14 @@ _.Instances = { tier(1, {	-- Classic
 				un(REMOVED_FROM_GAME, i(19898)),	-- Seal of Jin
 				un(REMOVED_FROM_GAME, i(19896)),	-- Thekal's Grasp
 				un(REMOVED_FROM_GAME, i(19901)),	-- Zulian Slicer
-				un(7, i(19768)),	-- Primal Tiger Leather
+				un(REMOVED_FROM_GAME, i(19768)),	-- Primal Tiger Leather
 			})),
 			o(180366, {	-- Battered Tackle Box
 				["description"] = "Fishermen with 300 skill can interact with this to receive the quest item.",
 				["requireSkill"] = FISHING,
 				["groups"] = {
 					q(8227, {	-- Nat's Measuring Tape
-						["u"] = 40,	-- Legacy Quest
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "i", 19973 },	-- Nat's Measuring Tape
 						["requireSkill"] = FISHING,
 						["lvl"] = 58,
@@ -1587,7 +1587,7 @@ _.Instances = { tier(1, {	-- Classic
 			un(REMOVED_FROM_GAME, n(14834, {	-- Hakkar the Soulflayer
 				{
 					["itemID"] = 19802,	-- Heart of Hakkar
-					["u"] = 40,			-- Legacy Quest Item
+					["u"] = REMOVED_FROM_GAME,		
 					["questID"] = 8183,	-- The Heart of Hakkar
 				},
 				un(REMOVED_FROM_GAME, i(19862)),	-- Aegis of the Blood God

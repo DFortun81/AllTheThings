@@ -29,7 +29,7 @@ _.Zones =
 					},
 				}),
 				q(2583, {	-- A Boar's Vitality
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7505 },	-- Bloodmage Drazial
 				}),
 				q(35745, {	-- Attack of the Iron Horde
@@ -203,7 +203,7 @@ _.Zones =
 					},
 				}),
 				q(3501, {	-- Everything Counts In Large Amounts
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7363 },	-- Kum'isha the Collector
 				}),
 				q(35492, {	-- For Nethergarde!
@@ -494,7 +494,7 @@ _.Zones =
 					},
 				}),
 				q(2581, {	-- Snickerfang Jowls
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7505 },	-- Bloodmage Drazial
 				}),
 				q(25681, {	-- Some People Just Need Killing
@@ -522,7 +522,7 @@ _.Zones =
 					},
 				}),
 				q(7583,  {	-- Suppression
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { 9 },	-- Warlock
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(18602)),	-- Tome of Sacrifice
@@ -616,7 +616,7 @@ _.Zones =
 					["sourceQuest"] = 25693,	-- Enhancing the Stone
 				}),
 				q(2601, {	-- The Basilisk's Bite
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7506 },	-- Bloodmage Lynnore
 				}),
 				q(25691, {	-- The Charred Granite of the Dark Portal
@@ -632,7 +632,7 @@ _.Zones =
 					["sourceQuest"] = 26163,	-- Time Is Short
 				}),
 				q(2743, {	-- The Cover of Darkness
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7729 },	-- Spirit of Kirith
 					["sourceQuest"] = 2721,	-- Kirith
 				}),
@@ -721,7 +721,7 @@ _.Zones =
 					["sourceQuest"] = 26163,	-- Time Is Short
 				}),
 				q(9407,  {	-- Through the Dark Portal
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 19254 },	-- Warlord Dar'toon
 					["lvl"] = 58,
 					["coord"] = { 54.4, 50.5, 17 },
@@ -729,7 +729,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(10119, {	-- Through the Dark Portal
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16841 },	-- Watch Commander Relthorn Netherwane
 					["lvl"] = 58,
 					["coord"] = { 54.7, 50.5, 17 },
@@ -797,7 +797,7 @@ _.Zones =
 					["coords"] = { 71.8, 47.7, 17 },
 				}),
 				q(3627, {	-- Uniting the Shattered Amulet
-					["u"] = 40,	-- Legacy
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["sourceQuest"] = 3626,	-- Return to the Blasted Lands
 				}),
@@ -882,7 +882,7 @@ _.Zones =
 					},
 				}),
 				q(3628,  {	-- You Are Rakh'likh, Demon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["sourceQuest"] = 3627,	-- Uniting the Shattered Amulet
 					["g"] = {

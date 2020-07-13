@@ -46,7 +46,7 @@ _.InGameShop =
 		un(35, i(92707)),			-- Cinder Kitten
 		un(35, battlepet(2623)),	-- Dottie (no in-game item)
 		un(REMOVED_FROM_GAME, i(69847)),			-- Guardian Cub (Original Version which was bound for 24h)
-		un(7, i(72068)),			-- Guardian Cub
+		un(REMOVED_FROM_GAME, i(72068)),			-- Guardian Cub
 		un(REMOVED_FROM_GAME, i(49662, {			-- Gryphon Hatchling
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 		})),

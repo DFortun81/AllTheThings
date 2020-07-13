@@ -20,7 +20,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			n(QUESTS, { 	
 					q(10097,  {	-- Brother Against Brother
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 18933 },	-- Isfar
 					}),
 					q(29605, {	-- Brother Against Brother
@@ -38,7 +38,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						["description"] = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
 					}),
 					q(10098,  {	-- Terokk's Legacy
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 18933 },	-- Isfar
 					}),
 					q(29606, {	-- Terokk's Legacy

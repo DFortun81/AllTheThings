@@ -53,7 +53,7 @@ _.Zones =
 					},
 				}),
 				n(23230, {	-- Shartuul [Was the boss of an event in BEM that was removed may better fit somewhere else]
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(32941, {	-- Corruptor's Signet
 							["u"] = REMOVED_FROM_GAME,

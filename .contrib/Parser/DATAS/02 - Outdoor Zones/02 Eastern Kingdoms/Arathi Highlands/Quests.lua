@@ -35,7 +35,7 @@ _.Zones =
 					},
 				}),
 				q(652,   {	-- Breaking the Keystone
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 651,	-- Stones of Binding
 				}),
@@ -45,18 +45,18 @@ _.Zones =
 					["sourceQuest"] = 26041,	-- Stones of Binding
 				}),
 				q(677,   {	-- Call to Arms
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2771 },	-- Drum Fel
 				}),
 				q(678,   {	-- Call to Arms
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2771 },	-- Drum Fel
 					["sourceQuest"] = 677,	-- Call to Arms
 				}),
 				q(679,   {	-- Call to Arms
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2771 },	-- Drum Fel
 					["sourceQuest"] = 678,	-- Call to Arms
@@ -85,12 +85,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(8115,  {	-- Control Five Bases (pvp)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 14983 },	-- Field Marshal Oslight
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8114,  {	-- Control Four Bases (pvp)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 14983 },	-- Field Marshal Oslight
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -102,7 +102,7 @@ _.Zones =
 				}),
 				q(635, {	-- Crystal in the Mountains
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(42535, {	-- Death... and Decay
 					["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
@@ -110,7 +110,7 @@ _.Zones =
 					["classes"] = { 6 },	-- Death Knight
 				}),
 				q(667,   {	-- Death From Below
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4550)),	-- Coldwater Ring
 						un(REMOVED_FROM_GAME, i(4549)),	-- Seafire Band
@@ -130,13 +130,13 @@ _.Zones =
 					},
 				}),
 				q(662,   {	-- Deep Sea Salvage
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4511)),	-- Black Water Hammer
 					},
 				}),
 				q(664,   {	-- Drowned Sorrows
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4509)),	-- Seawolf Gloves
 					},
@@ -170,12 +170,12 @@ _.Zones =
 					},
 				}),
 				q(671,   {	-- Foul Magics
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2706 },	-- Tor'gan
 				}),
 				q(673,   {	-- Foul Magics
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2706 },	-- Tor'gan
 					["sourceQuest"] = 671,	-- Foul Magics
@@ -189,19 +189,19 @@ _.Zones =
 					["coord"] = { 27.5, 83.0, 14 },
 				}),
 				q(701,   {	-- Guile of the Raptor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2706 },	-- Tor'gan
 					["sourceQuest"] = 675,	-- Raising Spirits
 				}),
 				q(702,   {	-- Guile of the Raptor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2706 },	-- Tor'gan
 					["sourceQuest"] = 701,	-- Guile of the Raptor
 				}),
 				q(847,   {	-- Guile of the Raptor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2792 },	-- Gor'mul
 					["sourceQuest"] = 702,	-- Guile of the Raptor
@@ -220,7 +220,7 @@ _.Zones =
 					},
 				}),
 				q(655,   {	-- Hammerfall
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2792 },	-- Gor'mul
 				}),
@@ -237,7 +237,7 @@ _.Zones =
 					["sourceQuest"] = 26081,	-- Alina's Reward
 				}),
 				q(661,   {	-- Hints of a New Plague?
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15455)),	-- Dustfall Robes
@@ -265,10 +265,10 @@ _.Zones =
 				}),
 				q(663, {	-- Land Ho!
 					["provider"] = { "n", 2766 },	-- Lolo the Lookout
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(697,   {	-- Malin's Request
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4975)),	-- Vigilant Buckler
@@ -276,13 +276,13 @@ _.Zones =
 					},
 				}),
 				q(653,   {	-- Myzrael's Allies (A)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 2688 },	-- Keystone
 					["sourceQuest"] = 652,	-- Breaking the Keystone
 				}),
 				q(688,   {	-- Myzrael's Allies (H)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 2688 },	-- Keystone
 					["sourceQuest"] = 652,	-- Breaking the Keystone
@@ -325,19 +325,19 @@ _.Zones =
 					["sourceQuest"] = 26110,	-- Just Like Old Times
 				}),
 				q(672,   {	-- Raising Spirits
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2706 },	-- Tor'gan
 					["sourceQuest"] = 655,	-- Hammerfall
 				}),
 				q(674,   {	-- Raising Spirits
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2706 },	-- Tor'gan
 					["sourceQuest"] = 672,	-- Raising Spirits
 				}),
 				q(675,   {	-- Raising Spirits
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2792 },	-- Gor'mul
 					["sourceQuest"] = 674,	-- Raising Spirits
@@ -365,7 +365,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(643,   {	-- Sigil of Arathor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2703 },	-- Zengu
 					["sourceQuest"] = 641,	-- Sigil of Thoradin
@@ -377,7 +377,7 @@ _.Zones =
 					["sourceQuest"] = 26031,	-- Sigil of Thoradin
 				}),
 				q(639,   {	-- Sigil of Strom
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2703 },	-- Zengu
 					["sourceQuest"] = 638,	-- Trollbane
@@ -389,7 +389,7 @@ _.Zones =
 					["sourceQuest"] = 26023,	-- The Forsaken Trollbane
 				}),
 				q(641,   {	-- Sigil of Thoradin
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2706 },	-- Tor'gan
 					["sourceQuest"] = 640,	-- The Broken Sigil
@@ -401,7 +401,7 @@ _.Zones =
 					["sourceQuest"] = 26030,	-- Sigil of Strom
 				}),
 				q(644,   {	-- Sigil of Trollbane
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2703 },	-- Zengu
 					["sourceQuest"] = 643,	-- Sigil of Arathor
@@ -412,7 +412,7 @@ _.Zones =
 					["sourceQuest"] = 26051,	-- Sunken Treasure
 				}),
 				q(651,   {	-- Stones of Binding
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 2701 },	-- Iridescent Shards
 					["sourceQuest"] = 642,	-- The Princess Trapped
 				}),
@@ -422,7 +422,7 @@ _.Zones =
 					["sourceQuests"] = { 26039 },	-- The Princess Trapped
 				}),
 				q(682,   {	-- Stromgarde Badges
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4741)),	-- Stromgarde Cavalry Leggings
@@ -443,29 +443,29 @@ _.Zones =
 					},
 				}),
 				q(656,   {	-- Summoning the Princess
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4743)),	-- Pulsating Crystalline Shard
 					},
 				}),
 				q(665, {	-- Sunken Treasure
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(666,   {	-- Sunken Treasure
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4547)),	-- Gnomish Zapper
 						un(REMOVED_FROM_GAME, i(4548)),	-- Servomechanic Sledgehammer
 					},
 				}),
 				q(668, {	-- Sunken Treasure
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(669, {	-- Sunken Treasure
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(670, {	-- Sunken Treasure
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26051, {	-- Sunken Treasure
 					["provider"] = { "n", 2774 },	-- Doctor Draxlegauge
@@ -479,27 +479,27 @@ _.Zones =
 					},
 				}),
 				q(8122,  {	-- Take Five Bases (pvp)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15021 },	-- Deathmaster Dwire
 					["races"] = HORDE_ONLY,
 				}),
 				q(8121,  {	-- Take Four Bases (pvp)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15021 },	-- Deathmaster Dwire
 					["races"] = HORDE_ONLY,
 				}),
 				q(8105,  {	-- The Battle for Arathi Basin! (pvp)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 14983 },	-- Field Marshal Oslight
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8120,  {	-- The Battle for Arathi Basin! (pvp)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15021 },	-- Deathmaster Dwire
 					["races"] = HORDE_ONLY,
 				}),
 				q(640,   {	-- The Broken Sigil
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2703 },	-- Zengu
 					["sourceQuest"] = 639,	-- Sigil of Strom
@@ -516,7 +516,7 @@ _.Zones =
 					["classes"] = { 6 },	-- Death Knight
 				}),
 				q(642,   {	-- The Princess Trapped
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 138492 },	-- Shards of Myzrael
 				}),
 				q(26039, {	-- The Princess Trapped
@@ -551,7 +551,7 @@ _.Zones =
 					},
 				}),
 				q(680,   {	-- The Real Threat
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4976)),	-- Mistspray Kilt
@@ -596,7 +596,7 @@ _.Zones =
 					},
 				}),
 				q(687,   {	-- Theldurin the Lost
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["providers"] = {
 						{ "n", 2786 },	-- Gerrig Bonegrip
 						{ "n", 2787 },	-- Zaruk
@@ -632,16 +632,16 @@ _.Zones =
 					["description"] = "This quest requires a skill of 225 in First Aid.",
 					["requireSkill"] = FIRST_AID,
 					["races"] = HORDE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(645,   {	-- Trol'kalar
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2703 },	-- Zengu
 					["sourceQuest"] = 644,	-- Sigil of Trollbane
 				}),
 				q(646,   {	-- Trol'kalar
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 2703 },	-- Trollbane's Tomb
 					["sourceQuest"] = 645,	-- Trol'kalar
@@ -663,7 +663,7 @@ _.Zones =
 					["sourceQuest"] = 26035,	-- Worth Its Weight in Gold
 				}),
 				q(684,   {	-- Wanted! Marez Cowl
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4744)),	-- Arcane Runed Bracers
@@ -682,7 +682,7 @@ _.Zones =
 					},
 				}),
 				q(685,   {	-- Wanted! Otto and Falconcrest
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(5247)),	-- Rod of Sorrow

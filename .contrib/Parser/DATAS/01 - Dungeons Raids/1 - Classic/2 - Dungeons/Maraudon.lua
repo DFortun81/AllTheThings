@@ -120,15 +120,15 @@ _.Instances = { tier(1, {	-- Classic
 			n(-40, {	-- Legacy
 				n(QUESTS, {
 					q(7044, {	-- Legends of Maraudon
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 13697 },	-- Cavindra
 					}),
 					q(7066, {	-- Seed of Life
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 12238 },	-- Zaetar's Spirit
 					}),
 					q(7070, {	-- Shadowshard Fragments
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(17773)),	-- Prodigious Shadowshard Pendant
@@ -136,7 +136,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					q(7068, {	-- Shadowshard Fragments
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(17773)),	-- Prodigious Shadowshard Pendant
@@ -144,19 +144,19 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					q(7067, {	-- The Pariah's Instructions
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(17774)),	-- Mark of the Chosen
 						},
 					}),
 					q(7046, {	-- The Scepter of Celebras
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(17191)),	-- Scepter of Celebras
 						},
 					}),
 					q(7029, {	-- Vyletongue Corruption
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(17770)), 	-- Branchclaw Gauntlets
@@ -165,7 +165,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					q(7041, {	-- Vyletongue Corruption
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(17770)), 	-- Branchclaw Gauntlets

@@ -201,7 +201,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 								i(128670, {	-- Savage Gift
 									["g"] = {
 										--Note!! Temp marking commenting things so they don't inherit Winter Veil filter for the moment
-										--un(7, i(128312)),	-- Elixir of the Rapid Mind
+										--un(REMOVED_FROM_GAME, i(128312)),	-- Elixir of the Rapid Mind
 										--i(128314),	-- Frozen Arms of a Hero
 										--i(128315),	-- Medallion of the Legion
 										i(128671),	-- Minion of Grumpus

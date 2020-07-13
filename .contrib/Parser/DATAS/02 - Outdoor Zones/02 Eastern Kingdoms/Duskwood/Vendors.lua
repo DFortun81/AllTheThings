@@ -36,7 +36,7 @@ _.Zones =
 					},
 				}),
 				n(2481, {	-- Bliztik
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6068)),	-- Recipe: Shadow Oil
 					},

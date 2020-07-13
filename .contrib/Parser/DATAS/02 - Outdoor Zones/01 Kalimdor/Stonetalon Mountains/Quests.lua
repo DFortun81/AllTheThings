@@ -7,7 +7,7 @@ _.Zones =
 		m(65, {	-- Stonetalon Mountains
 			n(QUESTS, {
 				q(1071,  {	-- A Gnome's Respite
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4077 },	-- Gaxim Rustfizzle
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1085,	-- On Guard in Stonetalon
@@ -56,7 +56,7 @@ _.Zones =
 					["sourceQuest"] = 26044,	-- Where Are the Parts?
 				}),
 				q(6284,  {	-- Arachnophobia
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 177904 },	-- Wanted Poster: Besseleth
 					["g"] = {
@@ -101,7 +101,7 @@ _.Zones =
 					},
 				}),
 				q(6548, {	-- Avenge My Village
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 11857 },	-- Makaba Flathoof
 				}),
@@ -168,12 +168,12 @@ _.Zones =
 					},
 				}),
 				q(6461, {	-- Blood Feeders
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 12816 },	-- Xen'Zilla
 				}),
 				q(6283,  {	-- Bloodfury Bloodline
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11860 },	-- Maggran Earthbinder
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -221,7 +221,7 @@ _.Zones =
 					},
 				}),
 				q(5881, {	-- Calling in the Reserves
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 11860 },	-- Maggran Earthbinder
 				}),
@@ -232,7 +232,7 @@ _.Zones =
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
 				}),
 				q(1087,  {	-- Cenarius' Legacy
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4198 },	-- Braelyn Firehand
 				}),
@@ -248,7 +248,7 @@ _.Zones =
 					},
 				}),
 				q(6301, {	-- Cycle of Rebirth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 11864 },	-- Tammra Windfield
 				}),
@@ -311,7 +311,7 @@ _.Zones =
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
 				}),
 				q(6481,  {	-- Earthen Arise
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11861 },	-- Mor'rogal
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -359,17 +359,17 @@ _.Zones =
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
 				}),
 				q(1094,  {	-- Further Instructions
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4201 },	-- Ziz Fizziks
 					["sourceQuest"] = 1093,	-- Super Reaper 6000
 				}),
 				q(1096,  {	-- Gerenzo Wrenchwhistle
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4201 },	-- Ziz Fizziks
 					["sourceQuest"] = 1095,	-- Further Instructions
 				}),
 				q(1096,  {	-- Gerenzo Wrenchwhistle
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4201 },	-- Ziz Fizziks
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6668)),	-- Draftsman Boots
@@ -377,11 +377,11 @@ _.Zones =
 					},
 				}),
 				q(1090, {	-- Gerenzo's Orders
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),
 				q(1092,  {	-- Gerenzo's Orders
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4276 },	-- Piznik
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -407,7 +407,7 @@ _.Zones =
 					["sourceQuest"] = 25822,	-- Armaments for War
 				}),
 				q(6282, {	-- Harpies Threaten
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 11860 },	-- Maggran Earthbinder
 				}),
@@ -476,7 +476,7 @@ _.Zones =
 					["sourceQuest"] = 26062,	-- Da Voodoo: Resonite Crystal
 				}),
 				q(1058,  {	-- Jin'Zil's Forest Magic
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -557,7 +557,7 @@ _.Zones =
 					["sourceQuest"] = 25673,	-- Just Ask Alice
 				}),
 				q(6381,  {	-- New Life
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11864 },	-- Tammra Windfield
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -592,19 +592,19 @@ _.Zones =
 					["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 				}),
 				q(1085,  {	-- On Guard in Stonetalon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4080 },	-- Kaela Shadowspear
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1070,	-- On Guard in Stonetalon
 				}),
 				q(1088,  {	-- Ordanus
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4198 },	-- Braelyn Firehand
 					["sourceQuest"] = 1087,	-- Cenarius' Legacy
 				}),
 				q(26016, {	-- Orders from Base Camp
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 41937 },	-- Marshal Paltrow
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 56474 },	-- Orders from Base Camp
@@ -628,7 +628,7 @@ _.Zones =
 					["sourceQuest"] = 26082,	-- To Battlescar!
 				}),
 				q(6523, {	-- Protect Kaya
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 11856 },	-- Kaya Flathoof
 				}),
@@ -639,7 +639,7 @@ _.Zones =
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
 				}),
 				q(1081,  {	-- Reception from Tyrande
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4079 },	-- Sentinel Thenysil
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -650,7 +650,7 @@ _.Zones =
 					},
 				}),
 				q(1059,  {	-- Reclaiming the Charred Vale
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3994 },	-- Keeper Albagorm
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -788,7 +788,7 @@ _.Zones =
 					},
 				}),
 				q(1093,  {	-- Super Reaper 6000
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4201 },	-- Ziz Fizziks
 					["sourceQuest"] = 1483,	-- Ziz Fizziks
 				}),
@@ -810,7 +810,7 @@ _.Zones =
 					["sourceQuest"] = 1152,	-- Test of Lore
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(6627,  {	-- Test of Lore
 					["provider"] = { "n", 4489 },	-- Braug Dimspirit
@@ -818,7 +818,7 @@ _.Zones =
 					["sourceQuest"] = 1154,	-- Test of Lore
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1159,  {	-- Test of Lore
 					["provider"] = { "n", 4489 },	-- Braug Dimspirit
@@ -826,7 +826,7 @@ _.Zones =
 					["sourceQuest"] = 6627,	-- Test of Lore
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25925, {	-- Thal'darah's Vengeance
 					["provider"] = { "n", 41482 },	-- Master Thal'darah
@@ -841,7 +841,7 @@ _.Zones =
 					["sourceQuest"] = 25765,	-- Tell 'Em Koko Sent You
 				}),
 				q(1089,  {	-- The Den
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4198 },	-- Braelyn Firehand
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -935,7 +935,7 @@ _.Zones =
 					},
 				}),
 				q(6562,  {	-- Trouble in the Deeps
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11862 },	-- Tsunaman
 					["races"] = HORDE_ONLY,
 					["coord"] = { 47.2, 64.3, 65 },

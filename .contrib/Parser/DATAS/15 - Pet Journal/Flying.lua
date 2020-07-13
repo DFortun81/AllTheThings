@@ -65,7 +65,7 @@ _.PetJournal =
 		p(2118),	 		-- Docile Skyfin
 		un(10, p(169)),		-- Dragon Kite
 		p(537),				-- Dragonbone Hatchling
-		un(6, p(1386)),		-- Dread Hatchling
+		un(REMOVED_FROM_GAME, p(1386)),		-- Dread Hatchling
 		p(2431),			-- Dreadtick Leecher
 		p(1588),			-- Dusty Sporewing
 		p(1761),			-- Echo Batling
@@ -101,7 +101,7 @@ _.PetJournal =
 		p(50),				-- Green Wing Macaw
 		p(464),				-- Grey Moth
 		un(REMOVED_FROM_GAME, p(245)),		-- Gryphon Hatchling
-		un(7, p(311)),		-- Guardian Cub
+		un(REMOVED_FROM_GAME, p(311)),		-- Guardian Cub
 		p(67),				-- Hawk Owl
 		p(645),				-- Highlands Turkey
 		un(35, p(130)),		-- Hippogryph Hatchling

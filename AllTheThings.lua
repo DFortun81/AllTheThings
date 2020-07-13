@@ -1004,6 +1004,15 @@ local function GetDisplayID(data)
 		return app.NPCDisplayIDFromID[data.qgs[1]];
 	end
 end
+local function GetUnobtainableTexture(group)
+	local index = L["UNOBTAINABLE_ITEM_REASONS"][group.u or 1][1];
+	if group.itemID or group.spellID then
+		if not group.b or group.b == 2 or group.b == 3 then
+			index = 3;
+		end
+	end
+	return L["UNOBTAINABLE_ITEM_TEXTURES"][index];
+end
 local function SetPortraitIcon(self, data, x)
 	self.lastData = data;
 	local displayID = GetDisplayID(data);
@@ -2174,7 +2183,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 			if right then
 				-- Insert into the display.
 				local o = { prefix = indent, group = group, right = right };
-				if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][group.u][1]] .. ":0|t "; end
+				if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. GetUnobtainableTexture(group) .. ":0|t "; end
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
@@ -2379,7 +2388,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 								if j.s then
 									sourceID = j.s;
 								end
-								if j.u and (j.u == 2 or j.u == 7) and (not j.b or j.b == 2 or j.b == 3) and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
+								if j.u and j.u == 2 and (not j.b or j.b == 2 or j.b == 3) and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
 									tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] });
 								end
 							end
@@ -2441,7 +2450,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												working = true;
 											end
 											if group[1].u then
-												local texture = L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][group[1].u or 1][1]];
+												local texture = GetUnobtainableTexture(group[1]);
 												if texture then
 													text = "|T" .. texture .. ":0|t";
 												else
@@ -2465,7 +2474,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 													working = true;
 												end
 												if otherATTSource.u then
-													local texture = L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][otherATTSource.u or 1][1]];
+													local texture = GetUnobtainableTexture(otherATTSource);
 													if texture then
 														text = "|T" .. texture .. ":0|t";
 													else
@@ -2500,7 +2509,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												working = true;
 											end
 											if group[1].u then
-												local texture = L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][group[1].u or 1][1]];
+												local texture = GetUnobtainableTexture(group[1]);
 												if texture then
 													text = "|T" .. texture .. ":0|t";
 												else
@@ -2524,7 +2533,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												working = true;
 											end
 											if otherATTSource.u then
-												local texture = L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][otherATTSource.u or 1][1]];
+												local texture = GetUnobtainableTexture(otherATTSource);
 												if texture then
 													text = "|T" .. texture .. ":0|t";
 												else
@@ -2738,7 +2747,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						text = string.gsub(text, source,replacement);
 					end
 					if j.u then
-						tinsert(unfiltered, text .. " |T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][j.u][1]] .. ":0|t");
+						tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
 					elseif not app.RecursiveClassAndRaceFilter(j.parent) then
 						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
 					elseif not app.RecursiveUnobtainableFilter(j.parent) then
@@ -8648,14 +8657,11 @@ local function SetRowData(self, row, data)
 			row.Background:Show();
 		end
 		if data.u then
-			local reason = L["UNOBTAINABLE_ITEM_REASONS"][data.u or 1];
-			if reason then
-				local texture = L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]];
-				if texture then
-					row.Indicator:SetTexture(texture);
-					row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
-					row.Indicator:Show();
-				end
+			local texture = GetUnobtainableTexture(data);
+			if texture then
+				row.Indicator:SetTexture(texture);
+				row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
+				row.Indicator:Show();
 			end
 		end
 		if data.saved then
@@ -10516,16 +10522,31 @@ end
 function app:BuildSearchResponse(groups, field, value)
 	if groups then
 		local t;
-		for i,group in ipairs(groups) do
-			local v = group[field];
-			if v and (v == value --[[or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)]]) then
-				if not t then t = {}; end
-				tinsert(t, CloneData(group));
-			elseif group.g then
-				local response = app:BuildSearchResponse(group.g, field, value);
-				if response then
+		if type(field) == "function" then
+			for i,group in ipairs(groups) do
+				if field(group) then
 					if not t then t = {}; end
-					tinsert(t, setmetatable({g=response}, { __index = group }));
+					tinsert(t, CloneData(group));
+				elseif group.g then
+					local response = app:BuildSearchResponse(group.g, field, value);
+					if response then
+						if not t then t = {}; end
+						tinsert(t, setmetatable({g=response}, { __index = group }));
+					end
+				end
+			end
+		else
+			for i,group in ipairs(groups) do
+				local v = group[field];
+				if v and v == value then
+					if not t then t = {}; end
+					tinsert(t, CloneData(group));
+				elseif group.g then
+					local response = app:BuildSearchResponse(group.g, field, value);
+					if response then
+						if not t then t = {}; end
+						tinsert(t, setmetatable({g=response}, { __index = group }));
+					end
 				end
 			end
 		end
@@ -12370,7 +12391,11 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							if response then tinsert(self.data.g, {text=GetCategoryInfo(15301),icon = "Interface\\ICONS\\Achievement_Battleground_TempleOfKotmogu_02_Green",g=response});  end
 							response = app:BuildSearchResponse(app.Categories.WorldEvents, "requireSkill", requireSkill)
 							if response then tinsert(self.data.g, app.CreateDifficulty(18, {icon = "Interface\\Icons\\inv_misc_celebrationcake_01",g=response}));  end
-							response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
+							response = app:BuildSearchResponse(app.Categories.Craftables, function(o)
+								if (o.npcID and o.npcID < 0 and o.text == group.text) or (o.requireSkill and o.requireSkill == requireSkill) then
+									return true;
+								end
+							end);
 							if response then tinsert(self.data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = "Interface\\ICONS\\ability_repair",g=response});  end
 							
 							self.data.indent = 0;

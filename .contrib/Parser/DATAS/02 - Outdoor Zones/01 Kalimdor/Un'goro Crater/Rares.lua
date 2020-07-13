@@ -8,10 +8,10 @@ _.Zones =
 			n(RARES, {	
 				n(14461,  {	-- Baron Charr
 					["description"] = "This rare was only available during the Elemental Invasions.",
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(18671)), 	-- Baron Charr's Sceptre
-						un(7, i(18672)), 	-- Elemental Ember
+						un(REMOVED_FROM_GAME, i(18671)), 	-- Baron Charr's Sceptre
+						un(REMOVED_FROM_GAME, i(18672)), 	-- Elemental Ember
 					},
 				}),
 				n(6582,   {	-- Clutchmother Zavas

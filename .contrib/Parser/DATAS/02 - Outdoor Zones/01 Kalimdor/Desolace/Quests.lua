@@ -26,14 +26,14 @@ _.Zones =
 					["sourceQuest"] = 1432,	-- Alliance Relations
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1436,  {	-- Alliance Relations
 					["provider"] = { "n", 5641 },	-- Takata Steelblade
 					["coord"] = { 52.6, 54.2, 66 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuests"] = {
 						1434, 	-- Befouled by Satyr
 						1435,	-- The Burning of Spirits
@@ -65,7 +65,7 @@ _.Zones =
 					["sourceQuest"] = 1432,	-- Alliance Relations
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14330, {	-- Behind Closed Doors
 					["crs"] = { 4656 },	-- Maraudine Mauler
@@ -97,7 +97,7 @@ _.Zones =
 					},
 				}),
 				q(5821,  {	-- Bodyguard for Hire
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11625 },	-- Cork Gizelton
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15689)),	-- Trader's Ring
@@ -111,7 +111,7 @@ _.Zones =
 					},
 				}),
 				q(6027,  {	-- Book of the Ancients
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11863 },	-- Azore Aldamort
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(16793)),	-- Arcmetal Shoulders
@@ -135,7 +135,7 @@ _.Zones =
 					},
 				}),
 				q(5386, {	-- Catch of the Day
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 11259 },	-- Nataka Longhorn
 				}),
@@ -145,7 +145,7 @@ _.Zones =
 					["sourceQuest"] = 14312,	-- An Introduction is in Order
 				}),
 				q(1387,  {	-- Centaur Bounty (A)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5752 },	-- Corporal Melkins
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -153,7 +153,7 @@ _.Zones =
 					},
 				}),
 				q(1366,  {	-- Centaur Bounty (H)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5395 },	-- Felgur Twocuts
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -177,7 +177,7 @@ _.Zones =
 					},
 				}),
 				q(6161,  {	-- Claim Rackmore's Treasure!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["model"] = 200910,
 					["provider"] = { "o", 177787 },	-- Rackmore's Log (u=43)
 					["g"] = {
@@ -186,7 +186,7 @@ _.Zones =
 					},
 				}),
 				q(6142,  {	-- Clam Bait
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 12031 },	-- Mai'Lahii
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -219,7 +219,7 @@ _.Zones =
 					},
 				}),
 				q(7065,  {	-- Corruption of Earth and Seed (A)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13698 },	-- Keeper Marandis
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -229,7 +229,7 @@ _.Zones =
 					},
 				}),
 				q(7064,  {	-- Corruption of Earth and Seed (H)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13699 },	-- Selendra
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -369,7 +369,7 @@ _.Zones =
 					},
 				}),
 				q(1368,  {	-- Gelkis Alliance
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5412 },	-- Gurda Wildmane
 					["races"] = HORDE_ONLY,
 				}),
@@ -393,7 +393,7 @@ _.Zones =
 					},
 				}),
 				q(5943,  {	-- Gizelton Caravan
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11626 },	-- Rigger Gizelton
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15692)),	-- Kodo Brander
@@ -411,7 +411,7 @@ _.Zones =
 					["coord"] = { 60.9, 29.0, 66 },
 				}),
 				q(5381, {	-- Hand of Iruxos
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 11624 },	-- Taiga Wisemane
 				}),
@@ -430,7 +430,7 @@ _.Zones =
 					},
 				}),
 				q(5763, {	-- Hunting in Stranglethorn
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 11877 },	-- Roon Wildmane
 				}),
@@ -471,12 +471,12 @@ _.Zones =
 					["provider"] = { "i", 49200 },	-- Infernal Power Core
 				}),
 				q(1365,  {	-- Khan Dez'hepah
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5395 },	-- Felgur Twocuts
 				}),
 				q(1381,  {	-- Khan Hratha (Magram Clan Friendly Version)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5398 },	-- Warug
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6789)),	-- Ceremonial Centaur Blanket
@@ -484,7 +484,7 @@ _.Zones =
 					},
 				}),
 				q(1380,  {	-- Khan Hratha (Gelkis Friendly Version)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5397 },	-- Uthek the Wise
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6773)),	-- Gelkis Marauder Chain
@@ -492,7 +492,7 @@ _.Zones =
 					},
 				}),
 				q(1374,  {	-- Khan Jehn
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5397 },	-- Uthek the Wise
 				}),
 				q(5561,  {	-- Kodo Roundup
@@ -563,11 +563,11 @@ _.Zones =
 					["sourceQuest"] = 14301,	-- Return and Report
 				}),
 				q(1373,  {	-- Ongeku
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5397 },	-- Uthek the Wise
 				}),
 				q(6143,  {	-- Other Fish to Fry
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 12340 },	-- Drulzegar Skraghook
 					["races"] = HORDE_ONLY,
 				}),
@@ -634,12 +634,12 @@ _.Zones =
 					},
 				}),
 				q(1384,  {	-- Raid on the Kolkar
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5397 },	-- Uthek the Wise
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1467,  {	-- Reagents for Reclaimers Inc.
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5638 },	-- Kreldig Ungor
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -668,7 +668,7 @@ _.Zones =
 					},
 				}),
 				q(1440,  {	-- Return to Vahlarriel
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5644 },	-- Dalinda Malem
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -704,7 +704,7 @@ _.Zones =
 					["sourceQuest"] = 14213,	-- Ten Pounds of Flesh
 				}),
 				q(5741, {	-- Sceptre of Light
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11863 },	-- Azore Aldamort
 				}),
 				q(14337, {	-- Shadowprey Village
@@ -725,7 +725,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(1370,  {	-- Stealing Supplies
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5397 },	-- Uthek the Wise
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(32378)),	-- Silver Star
@@ -735,7 +735,7 @@ _.Zones =
 					},
 				}),
 				q(1382,  {	-- Strange Alliance
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5396 },	-- Captain Pentigast
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -780,10 +780,10 @@ _.Zones =
 					["sourceQuest"] = 1432,	-- Alliance Relations
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1480, {	-- The Corrupter
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 20310 },	-- Flayed Demon Skin
 					["crs"] = {
@@ -798,25 +798,25 @@ _.Zones =
 					},
 				}),
 				q(1481, {	-- The Corrupter
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4498 },	-- Maurin Bonesplitter
 					["sourceQuest"] = 1480,	-- The Corrupter
 				}),
 				q(1482, {	-- The Corrupter
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4498 },	-- Maurin Bonesplitter
 					["sourceQuest"] = 1481,	-- The Corrupter
 				}),
 				q(1484, {	-- The Corrupter
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4498 },	-- Maurin Bonesplitter
 					["sourceQuest"] = 1482,	-- The Corrupter
 				}),
 				q(1488,  {	-- The Corrupter
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5641 },	-- Takata Steelblade
 					["sourceQuest"] = 1484,	-- The Corrupter
@@ -839,7 +839,7 @@ _.Zones =
 					["sourceQuest"] = 14282,	-- Mystery Solved
 				}),
 				q(1457,  {	-- The Karnitol Shipwreck
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5638 },	-- Kreldig Ungor
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -936,7 +936,7 @@ _.Zones =
 					["sourceQuest"] = 14188,	-- Avenge Furien!
 				}),
 				q(7028,  {	-- Twisted Evils
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13656 },	-- Willow
 					["races"] = HORDE_ONLY,
 					["g"] = {

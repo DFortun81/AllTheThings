@@ -19,7 +19,7 @@ _.Zones =
 							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
 							["lvl"] = 120,
-							["u"] = 40,	-- Retired with the implementation of 8.2
+							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
 						}),
 						q(50373, {	-- A Recent Arrival
 							["sourceQuest"] = 50228,	-- The Twilight Survivor
@@ -97,7 +97,7 @@ _.Zones =
 							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
 							["lvl"] = 120,
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
-							["u"] = 40,	-- Retired with the implementation of 8.2
+							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
 						}),
 						q(51211, {	-- The Heart of Azeroth
 							["sourceQuests"] = {
@@ -116,7 +116,7 @@ _.Zones =
 							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
 							["lvl"] = 120,
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
-							["u"] = 40,	-- Retired with the implementation of 8.2
+							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
 						}),
 						q(50057, {	-- The Power in Our Hands
 							["sourceQuests"] = {
@@ -124,7 +124,7 @@ _.Zones =
 								50056,	-- The Speaker's Call
 							},
 							["provider"] = { "n", 133388 },	-- Magni Bronzebeard
-							["u"] = 40,	-- Legacy Quests
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(12071, {	-- Crucible's Promise
 									["u"] = REMOVED_FROM_GAME,
@@ -145,7 +145,7 @@ _.Zones =
 							["sourceQuest"] = 50374,	-- The Blood of Azeroth
 							["provider"] = { "n", 131963 },	-- Nolan Speed
 							["races"] = ALLIANCE_ONLY,
-							["u"] = 40,	-- Legacy Quests
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(50300, {	-- The Speaker's Call
 							["sourceQuest"] = 50364,	-- The Blood of Azeroth
@@ -181,7 +181,7 @@ _.Zones =
 							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
 							["lvl"] = 120,
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
-							["u"] = 40,	-- Retired with the implementation of 8.2
+							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
 						}),
 					}),
 					n(RARES, {

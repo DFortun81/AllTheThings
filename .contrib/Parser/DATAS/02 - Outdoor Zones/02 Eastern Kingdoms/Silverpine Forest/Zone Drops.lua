@@ -9,7 +9,7 @@ _.Zones =
 				n(3578, {	-- Ambermill Miner
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(7, i(4767)),	-- Coppercloth Gloves
+						un(REMOVED_FROM_GAME, i(4767)),	-- Coppercloth Gloves
 					},
 				}),
 			}),

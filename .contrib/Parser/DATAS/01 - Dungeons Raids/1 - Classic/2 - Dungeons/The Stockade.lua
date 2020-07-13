@@ -14,7 +14,7 @@ _.Instances = { tier(1, {	-- Classic
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(377, {	-- Crime and Punishment
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2033)),	-- Ambassador's Boots
@@ -33,7 +33,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(378, {	-- The Fury Runs Deep
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3562)),	-- Belt of Vindication
@@ -56,7 +56,7 @@ _.Instances = { tier(1, {	-- Classic
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(386, { 	-- What Comes Around...
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1317)),	-- Hardened Root Staff
@@ -70,10 +70,10 @@ _.Instances = { tier(1, {	-- Classic
 						46382,	-- Petty Criminal
 					},
 				}),
-				un(7, i(1076)),	-- Defias Renegade Ring
+				un(REMOVED_FROM_GAME, i(1076)),	-- Defias Renegade Ring
 			}),
 			n(1720, {	-- Bruegal Ironknuckle
-				["u"] = 43,
+				["u"] = REMOVED_FROM_GAME,
 				["description"] = "This is a rare that was not always present.",
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(2942)),	-- Iron Knuckles
@@ -82,7 +82,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(1666, { 	-- Kam Deepfury
-				["u"] = 43,
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(2280)),	-- Kam's Walking Stick
 				},

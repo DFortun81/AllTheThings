@@ -570,7 +570,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109769),	-- Slicebinder Loop
 						i(109777),	-- Unsullied Signet
 						i(110004),	-- Coagulated Genesaur Blood
-						un(40, i(114138)),	-- Core of Life
+						un(REMOVED_FROM_GAME, i(114138)),	-- Core of Life
 					},
 				}),
 			}),
@@ -841,7 +841,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109769),	-- Slicebinder Loop
 						i(109777),	-- Unsullied Signet
 						i(110004),	-- Coagulated Genesaur Blood
-						un(40, i(114138)),	-- Core of Life
+						un(REMOVED_FROM_GAME, i(114138)),	-- Core of Life
 					},
 				}),
 			}),

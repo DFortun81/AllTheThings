@@ -287,7 +287,7 @@ _.Zones =
 							["sourceQuest"] = 25035,	-- Breaking the Line
 						}),
 						q(24752, {	-- The Arts of a Mage
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 38246 },	-- Soratha
 							["classes"] = { MAGE },
 						}),

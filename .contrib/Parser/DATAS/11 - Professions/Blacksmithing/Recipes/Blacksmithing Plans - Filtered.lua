@@ -438,7 +438,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Golden Scale Gauntlets
 							["recipeID"] = 11643--[[Golden Scale Gauntlets]],
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Barbaric Iron Gloves
 							["recipeID"] = 9820--[[Barbaric Iron Gloves]]

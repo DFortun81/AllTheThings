@@ -7,7 +7,7 @@ _.Zones =
 		m(467, {	-- Sunstrider Isle
 			n(QUESTS, {
 				q(8336, {	-- A Fistful of Slivers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elves
 					["provider"] = { "n", 15296 },	-- Arcanist Ithanas
 				}),
@@ -31,19 +31,19 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(27091, {	-- Charge!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 1 },	-- Warrior
 					["provider"] = { "n", 43010 },	-- Delios Silverblade
 				}),
 				q(10073,  {	-- Corruption
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 9 },	-- Warlock
 					["provider"] = { "n", 15283 },	-- Summoner Teli'Larien
 				}),
 				q(10071,  {	-- Evisceration
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 4 },	-- Rogue
 					["provider"] = { "n", 15285 },	-- Pathstalker Kariel
@@ -55,19 +55,19 @@ _.Zones =
 					["sourceQuest"] = 8334,	-- Aggression
 				}),
 				q(10068,  {	-- Frost Nova
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 8 },	-- Mage
 					["provider"] = { "n", 15279 },	-- Julia Sunstiker
 				}),
 				q(10072,  {	-- Learning the Word
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 5 },	-- Priest
 					["provider"] = { "n", 15284 },	-- Matron Arena
 				}),
 				q(9676, {	-- Paladin Training
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 2 },	-- Paladin
 					["provider"] = { "n", 15278 },	-- Magistrix Erona
@@ -84,7 +84,7 @@ _.Zones =
 					["sourceQuest"] = 8326,	-- Unfortunate Measures
 				}),
 				q(8330, {	-- Solanian's Belongings
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elves
 					["provider"] = { "n", 15295 },	-- Well Watcher Solanian
 				}),
@@ -95,7 +95,7 @@ _.Zones =
 					["sourceQuest"] = 8326,	-- Unfortunate Measures
 				}),
 				q(10070,  {	-- Steady Shot
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 3 },	-- Hunter
 					["provider"] = { "n", 15513 },	-- Ranger Sallina
@@ -106,7 +106,7 @@ _.Zones =
 					["provider"] = { "i", 20483 },	-- Tainted Arcane Sliver
 				}),
 				q(8345, {	-- The Shrine of Dath'Remar
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elves
 					["provider"] = { "n", 15295 },	-- Well Watcher Solanian
 				}),
@@ -117,7 +117,7 @@ _.Zones =
 					["sourceQuest"] = 8326,	-- Unfortunate Measures
 				}),
 				q(8346, {	-- Thirst Unending
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Thirst Unending
 					["provider"] = { "n", 15297 },	-- Arcanist Helion
 				}),
@@ -134,7 +134,7 @@ _.Zones =
 					["sourceQuest"] = 8325,	-- Reclaiming Sunstrider Isle
 				}),
 				q(10069,  {	-- Ways of the Light
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 2 },	-- Paladin
 					["provider"] = { "n", 15280 },	-- Jesthenis Sunstriker

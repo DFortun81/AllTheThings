@@ -32,7 +32,7 @@ _.Zones =
 					["g"] = {
 						i(20973, {	-- Design: Blazing Citrine Ring
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(7114, {	-- Pattern: Azure Silk Gloves
 							["isLimited"] = true,

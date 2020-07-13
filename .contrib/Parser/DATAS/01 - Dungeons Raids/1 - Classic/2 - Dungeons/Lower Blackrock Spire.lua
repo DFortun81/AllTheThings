@@ -10,13 +10,13 @@ _.Instances = { tier(1, {	-- Classic
 		["groups"] = {
 			n(QUESTS, {
 				q(4982, {	-- Bijou's Belongings
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10257 },	-- Bijou
 					["sourceQuest"] = 4981,	-- Operative Bijou
 				}),
 				q(4983, {	-- Bijou's Reconnaissance Report
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10257 },	-- Bijou
 					["sourceQuest"] = 4982,	-- Bijou's Belongings
@@ -26,7 +26,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(4941, {	-- Eitrigg's Wisdom
-					["u"] = 40,	-- Legacy Quest
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["provider"] = { "n", 9077 },	-- Warlord Goretooth
@@ -38,7 +38,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(65981),	-- War Master's Pauldrons
 				}),
 				q(4903,  {	-- Warlord's Command
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["provider"] = { "n", 9077 },	-- Warlord Goretooth
@@ -56,7 +56,7 @@ _.Instances = { tier(1, {	-- Classic
 					["crs"] = {
 						9198,	-- Spirestone Mystic
 					},
-					["u"] = 7,	-- now learned from trainer, formula was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
 				}),
 				i(16250, {			-- Formula: Enchant Weapon - Superior Striking
 					["crs"] = {
@@ -143,7 +143,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(13166),	-- Slamshot Shoulders
 				i(13169),	-- Tressermane Leggings
 				i(12336, {	-- Gemstone of Spirestone
-					un(40, q(4742)),	-- Seal of Ascension
+					un(REMOVED_FROM_GAME, q(4742)),	-- Seal of Ascension
 				}),
 			})),
 			cr(9236, e(389, {	-- Shadow Hunter Vosh'gajin
@@ -153,7 +153,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(12626),	-- Funeral Cuffs
 				i(13255),	-- Trueaim Gauntlets
 				i(151413),	-- Smolderthorn Greatbelt
-				un(7, i(16712)), 	-- Shadowcraft Gloves
+				un(REMOVED_FROM_GAME, i(16712)), 	-- Shadowcraft Gloves
 			})),
 			n(16080, {	-- Mor Grayhoof Summonable Read Description
 				["description"] = "Brazier of Invocation (Dungeon Set 2 questline) is required to summon this boss.",
@@ -171,11 +171,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(13177),	-- Talisman of Evasion
 				i(13179),	-- Brazecore Armguards
 				i(22231),	-- Kayser's Boots of Precision
-				un(7, i(16676)),	-- Beaststalker's Gloves
+				un(REMOVED_FROM_GAME, i(16676)),	-- Beaststalker's Gloves
 				un(REMOVED_FROM_GAME, i(13175)),	-- Voone's Twitchbow
 				un(REMOVED_FROM_GAME, i(13173)),	-- Broken Flightblade Throwing Axe
 				i(12335, {	-- Gemstone of Smolderthorn
-					un(40, q(4742)),	-- Seal of Ascension
+					un(REMOVED_FROM_GAME, q(4742)),	-- Seal of Ascension
 				}),
 			})),
 			n(9596, {	-- Bannok Grimaxe (Rare)
@@ -227,14 +227,14 @@ _.Instances = { tier(1, {	-- Classic
 				i(151416),	-- Dark Horde Grunt's Legplates
 				i(151415),	-- Veteran Spearman's Chain Boots
 				i(21955),  	-- Design: Black Diamond Crab
-				un(7, i(16680)),	-- Beaststalker's Belt
-				un(7, i(16735)),	-- Bracers of Valor
-				un(7, i(16673)),	-- Cord of Elements
-				un(7, i(16696)),	-- Devout Belt
-				un(7, i(16703)),	-- Dreadmist Bracers
-				un(7, i(16683)),	-- Magister's Bindings
-				un(7, i(16713)),	-- Shadowcraft Belt
-				un(7, i(16716)),	-- Wildheart Belt
+				un(REMOVED_FROM_GAME, i(16680)),	-- Beaststalker's Belt
+				un(REMOVED_FROM_GAME, i(16735)),	-- Bracers of Valor
+				un(REMOVED_FROM_GAME, i(16673)),	-- Cord of Elements
+				un(REMOVED_FROM_GAME, i(16696)),	-- Devout Belt
+				un(REMOVED_FROM_GAME, i(16703)),	-- Dreadmist Bracers
+				un(REMOVED_FROM_GAME, i(16683)),	-- Magister's Bindings
+				un(REMOVED_FROM_GAME, i(16713)),	-- Shadowcraft Belt
+				un(REMOVED_FROM_GAME, i(16716)),	-- Wildheart Belt
 			})),
 			cr(10220, e(394, {	-- Halycon
 				i(13212),	-- Halcyon's Spiked Collar
@@ -274,12 +274,12 @@ _.Instances = { tier(1, {	-- Classic
 				un(REMOVED_FROM_GAME, i(13148)), 	-- Chillpike [Disappeared sometime around 3.0]
 				un(REMOVED_FROM_GAME, i(13164)),	-- Heart of the Scale
 				i(12337, {	-- Gemstone of Bloodaxe
-					un(40, q(4742)),	-- Seal of Ascension
+					un(REMOVED_FROM_GAME, q(4742)),	-- Seal of Ascension
 				}),
 			})),
 			n(-40, {	-- Legacy
 				n(ZONEDROPS, {
-					un(7, i(16680, {	-- Beaststalker's Belt
+					un(REMOVED_FROM_GAME, i(16680, {	-- Beaststalker's Belt
 						["crs"] = {
 							9692,	-- Bloodaxe Raider
 							9259,	-- Firebrand Grunt
@@ -288,7 +288,7 @@ _.Instances = { tier(1, {	-- Classic
 							9241, 	-- Smolderthorn Headhunter
 						},
 					})),
-					un(7, i(16735, {	-- Bracers of Valor
+					un(REMOVED_FROM_GAME, i(16735, {	-- Bracers of Valor
 						["crs"] = {
 							9716, 	-- Bloodaxe Warmonger
 							9259,	-- Firebrand Grunt
@@ -298,7 +298,7 @@ _.Instances = { tier(1, {	-- Classic
 							9268, 	-- Smolderthorn Berserker
 						},
 					})),
-					un(7, i(16673, {	-- Cord of Elements
+					un(REMOVED_FROM_GAME, i(16673, {	-- Cord of Elements
 						["crs"] = {
 							9693, 	-- Bloodaxe Evoker
 							9262,	-- Firebrand Invoker
@@ -307,7 +307,7 @@ _.Instances = { tier(1, {	-- Classic
 							9266, 	-- Smolderthorn Witch Doctor
 						},
 					})),
-					un(7, i(16696, {	-- Devout Belt
+					un(REMOVED_FROM_GAME, i(16696, {	-- Devout Belt
 						["crs"] = {
 							9717, 	-- Bloodaxe Summoner
 							9261, 	-- Firebrand Darkweaver
@@ -316,7 +316,7 @@ _.Instances = { tier(1, {	-- Classic
 							9240, 	-- Smolderthorn Shadow Priest
 						},
 					})),
-					un(7, i(16703, {	-- Dreadmist Bracers
+					un(REMOVED_FROM_GAME, i(16703, {	-- Dreadmist Bracers
 						["crs"] = {
 							9717, 	-- Bloodaxe Summoner
 							9261, 	-- Firebrand Darkweaver
@@ -325,12 +325,12 @@ _.Instances = { tier(1, {	-- Classic
 							9269, 	-- Smolderthorn Seer
 						},
 					})),
-					un(7, i(16685, {	-- Magister's Belt
+					un(REMOVED_FROM_GAME, i(16685, {	-- Magister's Belt
 						["crs"] = {
 							9239, 	-- Smolderthorn Mystic
 						},
 					})),
-					un(7, i(16683, {	-- Magister's Bindings
+					un(REMOVED_FROM_GAME, i(16683, {	-- Magister's Bindings
 						["crs"] = {
 							9693, 	-- Bloodaxe Evoker
 							9262,	-- Firebrand Invoker
@@ -338,7 +338,7 @@ _.Instances = { tier(1, {	-- Classic
 							9098, 	-- Scarshield Spellbinder
 						},
 					})),
-					un(7, i(16713, {	-- Shadowcraft Belt
+					un(REMOVED_FROM_GAME, i(16713, {	-- Shadowcraft Belt
 						["crs"] = {
 							9716, 	-- Bloodaxe Warmonger
 							9259,	-- Firebrand Grunt
@@ -347,7 +347,7 @@ _.Instances = { tier(1, {	-- Classic
 							9265, 	-- Smolderthorn Shadow Hunter
 						},
 					})),
-					un(7, i(16716, {	-- Wildheart Belt
+					un(REMOVED_FROM_GAME, i(16716, {	-- Wildheart Belt
 						["crs"] = {
 							9692,	-- Bloodaxe Raider
 							9258, 	-- Scarshield Raider
@@ -362,7 +362,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 5103,	-- Hot Fiery Death
 								["requireSkill"] = BLACKSMITHING,
 								["isBreadcrumb"] = true,
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 							},
 						},
 					}

@@ -71,11 +71,11 @@ _.Zones =
 				}), 
 				n(14457,  {	-- Princess Tempestria
 					["description"] = "This rare was only available during the Elemental Invasions.",
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(8, i(21548)),	-- Pattern: Stormshroud Gloves
-						un(7, i(18678)), 	-- Tempestria's Frozen Necklace
-						un(7, i(18679)),	-- Frigid Ring
+						un(REMOVED_FROM_GAME, i(21548)),	-- Pattern: Stormshroud Gloves
+						un(REMOVED_FROM_GAME, i(18678)), 	-- Tempestria's Frozen Necklace
+						un(REMOVED_FROM_GAME, i(18679)),	-- Frigid Ring
 					},
 				}),
 				n(50788,  {	-- Quetzl

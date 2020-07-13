@@ -281,8 +281,8 @@ _.Zones =
 						i(22729, {	-- Schematic: Steam Tonk Controller
 							["isLimited"] = true,
 						}),
-						un(7, i(16041)),	-- Schematic: Thorium Grenade (now learned from trainer, schematic removed from game)
-						un(7, i(16042)),	-- Schematic: Thorium Widget (now learned from trainer, schematic removed from game)
+						un(REMOVED_FROM_GAME, i(16041)),	-- Schematic: Thorium Grenade (now learned from trainer, schematic removed from game)
+						un(REMOVED_FROM_GAME, i(16042)),	-- Schematic: Thorium Widget (now learned from trainer, schematic removed from game)
 					},
 				}),
 				n(6294,  {	-- Krom Stoutarm <Heirloom Curator>

@@ -194,7 +194,7 @@ _.Zones =
 							["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
 						}),
 						q(11513, {	-- Intercepting the Mana Cells
-							["u"] = 40,	-- Legacy Quests
+							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 24932 },	-- Exarch Nasuun
 							["coord"] = { 49.8, 42.6, 111 },
 							["repeatable"] = true,

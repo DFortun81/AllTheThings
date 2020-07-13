@@ -466,7 +466,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(109778),	-- Signet of the Glorious Protector
 							i(109769),	-- Slicebinder Loop
 							i(109777),	-- Unsullied Signet
-							un(40, i(113682)),	-- Core of Flame
+							un(REMOVED_FROM_GAME, i(113682)),	-- Core of Flame
 						},
 					}),
 				},
@@ -697,7 +697,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(109778),	-- Signet of the Glorious Protector
 							i(109769),	-- Slicebinder Loop
 							i(109777),	-- Unsullied Signet
-							un(40, i(113682)),	-- Core of Flame
+							un(REMOVED_FROM_GAME, i(113682)),	-- Core of Flame
 						},
 					}),
 				},

@@ -1578,42 +1578,42 @@ _.Zones =
 --[[
 					The following quests have all been removed from the game
 					q(32236, {	-- Bug Off!
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 					}),
 					q(32199, {	-- Krasarang Steampot
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 					}),
 					q(32141, {	-- Power Metal
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 					}),
 					q(30677, {	-- Shuttle Service
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(32139, {	-- Stacked!
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 					}),
 					q(32221, {	-- Storming the Beach
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 					}),
 					q(32238, {	-- Universal Remote-Explode
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 					}),
 					q(32223, {	-- Wanted: Lieutenant Ethan Jacobson
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 					}),
 					q(32140, {	-- Work Order: Iron
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 					}),
 					q(32138, {	-- Work Order: Lumber
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 					}),
 ]]--

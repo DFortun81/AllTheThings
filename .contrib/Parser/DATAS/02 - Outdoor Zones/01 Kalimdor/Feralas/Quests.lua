@@ -7,13 +7,13 @@ _.Zones =
 		m(69, {	-- Feralas
 			n(QUESTS, {
 				q(2974, {	-- A Grim Discovery
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4544 },	-- Krueg Skullsplitter
 					["sourceQuest"] = 2973,	-- A New Cloak's Sheen
 				}),
 				q(2976,  {	-- A Grim Discovery
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4544 },	-- Krueg Skullsplitter
 					["sourceQuest"] = 2974,	-- A Grim Discovery
@@ -29,7 +29,7 @@ _.Zones =
 					["sourceQuest"] = 25361,	-- A New Cloak's Sheen
 				}),
 				q(4266,  {	-- A Hero's Welcome
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7880 },	-- Ginro Hearthkindle
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -38,7 +38,7 @@ _.Zones =
 					},
 				}),
 				q(2973, {	-- A New Cloak's Sheen
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4544 },	-- Krueg Skullsplitter
 				}),
@@ -49,12 +49,12 @@ _.Zones =
 					["sourceQuest"] = 25345,	-- Faerie Dragon Muisek
 				}),
 				q(3121, {	-- A Strange Request
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 				}),
 				q(2981, {	-- A Threat in Feralas
-					["u"] = 40,	-- Legacy
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4485 },	-- Belgrom Rockmaul
 				}),
@@ -65,7 +65,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(2863, {	-- Alpha Strike
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
 					["sourceQuest"] = 2862,	-- War on the Woodpaw
@@ -87,7 +87,7 @@ _.Zones =
 					["coord"] = { 65.9, 62.8, 69 },
 				}),
 				q(2979, {	-- Dark Ceremony
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7777 },	-- Rok Orhan
 					["sourceQuest"] = 2978,	-- The Gordunni Scroll
@@ -103,7 +103,7 @@ _.Zones =
 					},
 				}),
 				q(3062,  {	-- Dark Heart (H)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7776 },	-- Talo Thornhoof
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -122,7 +122,7 @@ _.Zones =
 					},
 				}),
 				q(2871,  {	-- Delivering the Relic
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7877 },	-- Latronicus Moonspear
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -131,7 +131,7 @@ _.Zones =
 					},
 				}),
 				q(2972,  {	-- Doling Justice
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7957 },	-- Jer'kai Moonweaver
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -140,7 +140,7 @@ _.Zones =
 					},
 				}),
 				q(7481, {	-- Elven Legends
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14373 },	-- Sage Korolusk
 				}),
@@ -164,7 +164,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(3125, {	-- Faerie Dragon Muisek
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 					["sourceQuest"] = 3124,	-- Hippogryph Muisek
@@ -176,7 +176,7 @@ _.Zones =
 					["sourceQuest"] = 25338,	-- Treant Muisek
 				}),
 				q(2766, {	-- Find OOX-22/FE!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 8705 },	-- OOX-22/FE Distress Beacon
 				}),
 				q(25475, {	-- Find OOX-22/FE!
@@ -218,7 +218,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7721, {	-- Fuel for the Zapping
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 14637 },	-- Zorbin Fandazzle
 					["g"] = {
@@ -244,7 +244,7 @@ _.Zones =
 					["sourceQuest"] = 25400,	-- The Gordunni Threat
 				}),
 				q(2987,  {	-- Gordunni Cobalt
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8021 },	-- Orwin Gizzmick
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -264,7 +264,7 @@ _.Zones =
 					["sourceQuest"] = 25336,	-- Testing the Vessel
 				}),
 				q(7733,  {	-- Improved Quality
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -281,7 +281,7 @@ _.Zones =
 					},
 				}),
 				q(7734,  {	-- Improved Quality
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7854 },	-- Jangdor Swiftstrider
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -310,7 +310,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(2853,  {	-- Master of the Wild Leather
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -373,7 +373,7 @@ _.Zones =
 					},
 				}),
 				q(3127, {	-- Mountain Giant Muisek
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 					["sourceQuest"] = 3126,	-- Treant Muisek
@@ -385,7 +385,7 @@ _.Zones =
 					["sourceQuest"] = 25345,	-- Faerie Dragon Muisek
 				}),
 				q(3128, {	-- Natural Materials
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 				}),
@@ -443,7 +443,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(2767, {	-- Rescue OOX-22/FE!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7807 },	-- Homing Robot OOX-22/FE
 				}),
 				q(25476, {	-- Rescue OOX-22/FE!
@@ -468,7 +468,7 @@ _.Zones =
 					["sourceQuest"] = 25368,	-- Verinias the Twisted
 				}),
 				q(4267,  {	-- Rise of the Silithid
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3936 },	-- Shandris Feathermoon
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -587,7 +587,7 @@ _.Zones =
 					},
 				}),
 				q(7731, {	-- Stinglasher
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
 				}),
@@ -645,7 +645,7 @@ _.Zones =
 					["sourceQuest"] = 25403,	-- Ogre Abduction
 				}),
 				q(3123, {	-- Testing the Vessel
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 					["sourceQuest"] = 3122,	-- Return to Witch Doctor Uzer'i
@@ -662,7 +662,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(2903,  {	-- The Battle Plans
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 71.6, 55.9, 69 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 142195 },	-- Woodpaw Battle Map
@@ -682,7 +682,7 @@ _.Zones =
 					},
 				}),
 				q(1101,  {	-- The Crone of the Kraul
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4048 },	-- Falfindel Waywarder
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -708,7 +708,7 @@ _.Zones =
 					["sourceQuest"] = 25337,	-- Hippogryph Muisek
 				}),
 				q(3002, {	-- The Gordunni Orb
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7777 },	-- Rok Orhan
 					["sourceQuest"] = 2979,	-- Dark Ceremony
@@ -724,7 +724,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(2978, {	-- The Gordunni Scroll
-					["u"] = 40, -- Legacy
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 9370 },	-- Gordunni Scroll
 				}),
@@ -780,7 +780,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2822, {	-- The Mark of Quality
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7854 },	-- Jangdor Swiftstrider
 					["g"] = {
@@ -811,7 +811,7 @@ _.Zones =
 					},
 				}),
 				q(2942,  {	-- The Morrow Stone
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 144063 },	-- Equinex Monolith
 					["g"] = {
@@ -820,7 +820,7 @@ _.Zones =
 					},
 				}),
 				q(3791,  {	-- The Mystery of Morrowgrain
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7879 },	-- Quintis Jonespyre
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -834,19 +834,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2975, {	-- The Ogres of Feralas
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7777 },	-- Rok Orhan
 					["sourceQuest"] = 2981,	-- A Threat in Feralas
 				}),
 				q(2980, {	-- The Ogres of Feralas
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7777 },	-- Rok Orhan
 					["sourceQuest"] = 2975,	-- The Ogres of Feralas
 				}),
 				q(3380, {	-- The Sunken Temple
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 				}),
@@ -876,7 +876,7 @@ _.Zones =
 					["sourceQuest"] = 28504,	-- Warchief's Command: Thousand Needles!
 				}),
 				q(3126, {	-- Treant Muisek
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 					["sourceQuest"] = 3125,	-- Faerie Dragon Muisek
@@ -905,7 +905,7 @@ _.Zones =
 					},
 				}),
 				q(3063, {	-- Vengeance on the Northspring
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7776 },	-- Talo Thornhoof
 				}),
@@ -930,7 +930,7 @@ _.Zones =
 					},
 				}),
 				q(2845,  {	-- Wandering Shay
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7774 },	-- Shay Leafrunner
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9656)),	-- Granite Grips
@@ -938,7 +938,7 @@ _.Zones =
 					},
 				}),
 				q(2862, {	-- War on the Woodpaw
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
 				}),
 				q(25426, {	-- War on the Woodpaw (A)
@@ -952,7 +952,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(3129,  {	-- Weapons of Spirit
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9684)),	-- Force of the Hippogryph
@@ -975,7 +975,7 @@ _.Zones =
 					},
 				}),
 				q(2851,  {	-- Wild Leather Boots
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -983,7 +983,7 @@ _.Zones =
 					},
 				}),
 				q(2850,  {	-- Wild Leather Helmet
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -991,7 +991,7 @@ _.Zones =
 					},
 				}),
 				q(2852,  {	-- Wild Leather Leggings
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -999,7 +999,7 @@ _.Zones =
 					},
 				}),
 				q(2848,  {	-- Wild Leather Shoulders
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -1007,7 +1007,7 @@ _.Zones =
 					},
 				}),
 				q(2849,  {	-- Wild Leather Vest
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -1015,7 +1015,7 @@ _.Zones =
 					},
 				}),
 				q(2902, {	-- Woodpaw Investigation
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
 					["sourceQuest"] = 2863,	-- Alpha Strike
@@ -1061,7 +1061,7 @@ _.Zones =
 					},
 				}),
 				q(7003,  {	-- Zapped Giants
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 14637 },	-- Zorbin Fandazzle
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(19040)),	-- Zorbin's Mega-Slicer
@@ -1074,7 +1074,7 @@ _.Zones =
 					["sourceQuest"] = 25427,	-- Alpha Strike
 				}),
 				q(7730, {	-- Zukk'ash Infestation (H)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
 				}),
@@ -1085,7 +1085,7 @@ _.Zones =
 					["sourceQuest"] = 25366,	-- The Battle Plans
 				}),
 				q(7732,  {	-- Zukk'ash Report
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
 					["races"] = HORDE_ONLY,
 					["g"] = {

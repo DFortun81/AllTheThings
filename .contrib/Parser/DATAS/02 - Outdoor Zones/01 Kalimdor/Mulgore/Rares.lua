@@ -8,9 +8,9 @@ _.Zones =
 			n(RARES, {
 				n(3068, {	-- Mazzranache
 					["coord"] = { 50.4, 42.6, 7 },
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(4861)),	-- Sleek Feathered Tunic
+						un(REMOVED_FROM_GAME, i(4861)),	-- Sleek Feathered Tunic
 					},
 				}),
 				n(5785, {	-- Sister Hatelash
@@ -28,7 +28,7 @@ _.Zones =
 						{ 49.6, 22.8, 7 },
 					},
 					["g"] = {
-						un(7, i(17922)),	-- Lionfur Armor
+						un(REMOVED_FROM_GAME, i(17922)),	-- Lionfur Armor
 					},
 				}),
 			}),

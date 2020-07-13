@@ -449,13 +449,13 @@ _.Zones =
 					["sourceQuest"] = 11434,	-- Forgotten Treasure
 				}),
 				q(12918, {	-- Gem Perfection (A)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26915 },	-- Ounhulo
 					["requireSkill"] = JEWELCRAFTING,
 				}),
 				q(12952, {	-- Gem Perfection (H)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26960 },	-- Carter Tiffens
 					["requireSkill"] = JEWELCRAFTING,

@@ -54,7 +54,7 @@ _.Instances = { tier(1, {	-- Classic
 						["sourceQuests"] = { 27579 },	-- Into the Prison [Horde]
 					}),
 					q(4001, {	-- What Is Going On?
-						["u"] = 40,	-- Legacy Quest
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 9020 },	-- Commander Gor'shak
 						["sourceQuest"] = 3982,	-- What Is Going On?
@@ -127,7 +127,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 				}),
 				q(4024, {	-- A Taste of Flame
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12066)),	-- Shaleskin Cape
 						un(REMOVED_FROM_GAME, i(12083)),	-- Valconian Sash
@@ -135,7 +135,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(4242, {	-- Abandoned Hope
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12018)),	-- Conservator Helm
@@ -144,7 +144,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(3907, {	-- Disharmony of Fire
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12112)),	-- Crypt Demon Bracers
@@ -154,7 +154,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(4126, {	-- Hurley Blackbreath
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12000)),	-- Limb Cleaver
@@ -162,7 +162,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(4263, {	-- Incendius!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12112)),	-- Crypt Demon Bracers
@@ -172,7 +172,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(4322, {	-- Jail Break!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12061)),	-- Blade of Reckoning
@@ -181,7 +181,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(4134, {	-- Lost Thunderbrew Recipe
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12000)),	-- Limb Cleaver
@@ -189,14 +189,14 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(4132, {	-- Operation: Death to Angerforge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12059)),	-- Conqueror's Medallion
 					},
 				}),
 				q(4136, {	-- Ribbly Screwspigot
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11963)),	-- Penance Spaulders
 						un(REMOVED_FROM_GAME, i(11865)),	-- Rancor Boots
@@ -204,21 +204,21 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(7201, {	-- The Last Element
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12038)),	-- Lagrave's Seal
 					},
 				}),
 				q(4201, {	-- The Love Potion
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11962)),	-- Manacle Cuffs
 						un(REMOVED_FROM_GAME, i(11866)),	-- Nagmara's Whipping Belt
 					},
 				}),
 				q(4004, {	-- The Princess Saved?
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12545)),	-- Eye of Orgrimmar
@@ -226,7 +226,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(4363, {	-- The Princess's Surprise
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12548)),	-- Magni's Will
@@ -234,7 +234,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(4063, {	-- The Rise of the Machines
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12109)),	-- Azure Moon Amice
@@ -244,7 +244,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(4324, {	-- Yuka Screwspigot
-					["u"] = 40,	-- Legacy Quest
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9706 },	-- Yorba Screwspigot
 					["isBreadcrumb"] = true,
 					["lvl"] = 48,
@@ -517,7 +517,7 @@ _.Instances = { tier(1, {	-- Classic
 					["crs"] = {
 						8900,	-- Doomforge Arcanasmith
 					},
-					["u"] = 7,	-- now learned from trainer, schematic was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
 				},
 				i(18661, {	-- Schematic: World Enlarger
 					["crs"] = {
@@ -605,7 +605,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(22240), 	-- Greaves of Withering Despaire
 				})),
 				cr(9025, e(370, {	-- Lord Roccor
-					un(7, i(11813)),	-- Formula: Smoking Heart of the Mountain [old BOE version that was removed]
+					un(REMOVED_FROM_GAME, i(11813)),	-- Formula: Smoking Heart of the Mountain [old BOE version that was removed]
 					i(45050),	-- Formula: Smoking Heart of the Mountain [BOP]
 					i(11631), 	-- Stoneshell Guard
 					i(22234), 	-- Mantle of Lost Hope

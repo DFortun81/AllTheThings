@@ -18,31 +18,31 @@ _.Instances = { tier(1, {	-- Classic
 			-- Legacy War Effort Quests
 			n(QUESTS, {
 				q(8580, {	-- The Horde Needs Firebloom!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),
 				q(8607, {	-- The Horde Needs Mageweave Bandages!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),
 				q(8609, {	-- The Horde Needs Runecloth Bandages!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),
 				q(8604, {	-- The Horde Needs Wool Bandages!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),
 				q(8792, {	-- [DEPRECATED]The Horde Needs Your Help!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),
 				q(8793, {	-- [DEPRECATED]The Horde Needs Your Help!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),
 				q(8794, {	-- [DEPRECATED]The Horde Needs Your Help!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),
 			}),

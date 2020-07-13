@@ -17,7 +17,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 45201 },	-- Master Craftsman Wilhelm
 						}),
 						q(5848, {	-- Of Love and Family (2/2)
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 11936 },	-- Artist Renfray
 						}),
 						q(27305, {	-- Of Love and Family
@@ -127,7 +127,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(13405),	-- Wailing Nightbane Pauldrons
 						i(13409),	-- Tearfall Bracers
 						i(151404),	-- Gauntlets of Purged Sanity
-						un(7, i(16717)),	-- Wildheart Gloves
+						un(REMOVED_FROM_GAME, i(16717)),	-- Wildheart Gloves
 					})),
 					n(11143, {			-- Postmaster Malown
 						["description"] = "Click any 3 mailboxes in the instance to get Postmaster Malown to spawn.",
@@ -146,7 +146,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(151403),	-- Fetid Stranglers
 						i(13403),	-- Grimgore Noose
 						i(13402),	-- Timmy's Galoshes
-						un(7, i(16724)),	-- Lightforge Gauntlets
+						un(REMOVED_FROM_GAME, i(16724)),	-- Lightforge Gauntlets
 					})),
 					cr(10997, e(446, { 	-- Willey Hopebreaker
 						--i(22406),	-- Redemption (Journal says only from The Unforgiven)
@@ -166,7 +166,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(13386),	-- Archivist Cape
 						i(13387),	-- Foresight Girdle
 						i(18716),	-- Ash Covered Boots
-						un(7, i(16692)),	-- Devout Gloves
+						un(REMOVED_FROM_GAME, i(16692)),	-- Devout Gloves
 					})),
 					cr(10813, e(449, { 	-- Balnazzar
 						{
@@ -176,7 +176,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(14512),	-- Pattern: Truefaith Vestments
 						{
 							["itemID"] = 29120,	-- Pattern: Truefaith Vestments
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						i(13520),	-- Recipe: Flask of Distilled Wisdom
 						i(13348),	-- Demonshear
@@ -197,10 +197,10 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 16031 },	-- Ysida Harmon
 							["sourceQuest"] = 8945,	-- Dead Man's Plea
 							["lvl"] = 58,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						n(ZONEDROPS, {
-							un(43, n(14684, { 	-- Balzaphon
+							un(REMOVED_FROM_GAME, n(14684, { 	-- Balzaphon
 								["description"] = "This boss was only available during the Scourge Invasions.",
 								["groups"] = {
 									un(REMOVED_FROM_GAME, i(23125)),	-- Chains of the Lich
@@ -208,7 +208,7 @@ _.Instances = { tier(1, {	-- Classic
 									un(REMOVED_FROM_GAME, i(23126)),	-- Waistband of Balzaphon
 								},
 							})),
-							un(43, n(16102, { 	-- Sothos
+							un(REMOVED_FROM_GAME, n(16102, { 	-- Sothos
 								["description"] = "Sothos and Jarien are a pair of elite ghosts summoned in the Scarlet Bastion by using Brazier of Beckoning.",
 								["groups"] = {
 									o(181083, {	-- Sothos and Jarien's Heirlooms
@@ -223,52 +223,52 @@ _.Instances = { tier(1, {	-- Classic
 									}),
 								},
 							})),
-							un(7, i(16681, {	-- Beaststalker's Bindings
+							un(REMOVED_FROM_GAME, i(16681, {	-- Beaststalker's Bindings
 								["crs"] = {
 									10421, 	-- Crimson Defender
 								},
 							})),
-							un(7, i(16736, {	-- Belt of Valor
+							un(REMOVED_FROM_GAME, i(16736, {	-- Belt of Valor
 								["crs"] = {
 									10414, 	-- Patchwork Horror
 								},
 							})),
-							un(7, i(16671, { 	-- Bindings of Elements
+							un(REMOVED_FROM_GAME, i(16671, { 	-- Bindings of Elements
 								["crs"] = {
 									11043,	-- Risen Monk
 								},
 							})),
-							un(7, i(16697, { 	-- Devout Bracers
+							un(REMOVED_FROM_GAME, i(16697, { 	-- Devout Bracers
 								["crs"] = {
 									10419, 	-- Crimson Conjuror
 									10420,	-- Crimson Initiate
 									10423, 	-- Crimson Priest
 								},
 							})),
-							un(7, i(16702, {	-- Dreadmist Belt
+							un(REMOVED_FROM_GAME, i(16702, {	-- Dreadmist Belt
 								["crs"] = {
 									10419, 	-- Crimson Conjuror
 								},
 							})),
-							un(7, i(16723, {	-- Lightforge Belt
+							un(REMOVED_FROM_GAME, i(16723, {	-- Lightforge Belt
 								["crs"] = {
 									10424, 	-- Crimson Gallant
 									10418, 	-- Crimson Guardsman
 								},
 							})),
-							un(7, i(16685, {	-- Magister's Belt
+							un(REMOVED_FROM_GAME, i(16685, {	-- Magister's Belt
 								["crs"] = {
 									10425,	-- Crimson Battle Mage
 									10419, 	-- Crimson Conjuror
 									10422, 	-- Crimson Sorcerer
 								},
 							})),
-							un(7, i(15777, {	-- Pattern: Runic Leather Shoulders (now learned from trainer)
+							un(REMOVED_FROM_GAME, i(15777, {	-- Pattern: Runic Leather Shoulders (now learned from trainer)
 								["crs"] = {
 									10425, 	-- Crimson Battle Mage
 								},
 							})),
-							un(7, i(16714, {	-- Wildheart Bracers
+							un(REMOVED_FROM_GAME, i(16714, {	-- Wildheart Bracers
 								["crs"] = {
 									10426, 	-- Crimson Inquisitor
 								},
@@ -284,7 +284,7 @@ _.Instances = { tier(1, {	-- Classic
 				["groups"] = {
 					n(QUESTS, {
 						q(5263, {	-- Above and Beyond
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 						}),
 						q(27359, {	-- Argent Reinforcements
@@ -430,7 +430,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(13374),	-- Soulstealer Mantle
 						i(13373),	-- Band of Flesh
 						i(13515),	-- Ramstein's Lightning Bolts
-						un(7, i(16737)),	-- Gauntlets of Valor
+						un(REMOVED_FROM_GAME, i(16737)),	-- Gauntlets of Valor
 					})),
 					cr(45412, e(456, { 	-- Lord Aurius Rivendare
 						{
@@ -456,11 +456,11 @@ _.Instances = { tier(1, {	-- Classic
 					})),
 					n(-40, {	-- Legacy
 						n(QUESTS, {
-							un(40, q(5125, {	-- Aurius' Reckoning
+							un(REMOVED_FROM_GAME, q(5125, {	-- Aurius' Reckoning
 								un(REMOVED_FROM_GAME, i(17045)),	-- Blood of the Martyr
 								un(REMOVED_FROM_GAME, i(17044)),	-- Will of the Martyr
 							})),
-							un(40, q(9737, { 	-- True Masters of the Light
+							un(REMOVED_FROM_GAME, q(9737, { 	-- True Masters of the Light
 								["classes"] = { PALADIN },
 								["races"] = { 10 },
 								["groups"] = {
@@ -473,65 +473,65 @@ _.Instances = { tier(1, {	-- Classic
 							})),
 						}),
 						n(ZONEDROPS, {
-							un(7, i(16681, {	-- Beaststalker's Bindings
+							un(REMOVED_FROM_GAME, i(16681, {	-- Beaststalker's Bindings
 								["crs"] = {
 									10407, 	-- Fleshflayer Ghoul
 									10406, 	-- Ghoul Ravener
 								},
 							})),
-							un(7, i(16736, {	-- Belt of Valor
+							un(REMOVED_FROM_GAME, i(16736, {	-- Belt of Valor
 								["crs"] = {
 									10416, 	-- Bile Spewer
 									10417,	-- Venom Belcher
 								},
 							})),
-							un(7, i(16671, { 	-- Bindings of Elements
+							un(REMOVED_FROM_GAME, i(16671, { 	-- Bindings of Elements
 								["crs"] = {
 									10413, 	-- Crypt Beast
 								},
 							})),
-							un(7, i(16697, { 	-- Devout Bracers
+							un(REMOVED_FROM_GAME, i(16697, { 	-- Devout Bracers
 								["crs"] = {
 									10400, 	-- Thuzadin Necromancer
 									10398, 	-- Thuzadin Shadowcaster
 								},
 							})),
-							un(7, i(16702, {	-- Dreadmist Belt
+							un(REMOVED_FROM_GAME, i(16702, {	-- Dreadmist Belt
 								["crs"] = {
 									10400, 	-- Thuzadin Necromancer
 									10398, 	-- Thuzadin Shadowcaster
 								},
 							})),
-							un(7, i(16723, {	-- Lightforge Belt
+							un(REMOVED_FROM_GAME, i(16723, {	-- Lightforge Belt
 								["crs"] = {
 									10408, 	-- Rockwing Gargoyle
 									10409, 	-- Rockwing Screecher
 								},
 							})),
-							un(7, i(16685, {	-- Magister's Belt
+							un(REMOVED_FROM_GAME, i(16685, {	-- Magister's Belt
 								["crs"] = {
 									10400, 	-- Thuzadin Necromancer
 									10398, 	-- Thuzadin Shadowcaster
 								},
 							})),
-							un(7, i(15768, {	-- Pattern: Wicked Leather Belt
+							un(REMOVED_FROM_GAME, i(15768, {	-- Pattern: Wicked Leather Belt
 								["crs"] = {
 									10406, 	-- Ghoul Ravener
 								},
 							})),
-							un(7, i(16710, {	-- Shadowcraft Bracers
+							un(REMOVED_FROM_GAME, i(16710, {	-- Shadowcraft Bracers
 								["crs"] = {
 									10405, 	-- Plague Ghoul
 								},
 							})),
-							un(7, i(16714, {	-- Wildheart Bracers
+							un(REMOVED_FROM_GAME, i(16714, {	-- Wildheart Bracers
 								["crs"] = {
 									10463,	-- Shrieking Banshee
 									10464, 	-- Wailing Banshee
 								},
 							})),
 						}),
-						un(43, n(10440, {	-- Baron Rivendare
+						un(REMOVED_FROM_GAME, n(10440, {	-- Baron Rivendare
 							un(REMOVED_FROM_GAME, i(16678)),	-- Beaststalker's Pants
 							un(REMOVED_FROM_GAME, i(16694)),	-- Devout Skirt
 							un(REMOVED_FROM_GAME, i(16699)),	-- Dreadmist Leggings
@@ -542,7 +542,7 @@ _.Instances = { tier(1, {	-- Classic
 							un(REMOVED_FROM_GAME, i(16709)),	-- Shadowcraft Pants
 							un(REMOVED_FROM_GAME, i(16719)),	-- Wildheart Kilt
 						})),
-						un(43, n(16387, {    -- Atiesh <Hand of Sargeras>
+						un(REMOVED_FROM_GAME, n(16387, {    -- Atiesh <Hand of Sargeras>
 							un(15, i(22736)),    -- Andonisus, Reaper of Souls
 						})),
 					}),

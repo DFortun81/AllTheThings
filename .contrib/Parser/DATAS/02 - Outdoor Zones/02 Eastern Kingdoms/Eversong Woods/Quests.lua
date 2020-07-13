@@ -155,7 +155,7 @@ _.Zones =
 					["DisablePartySync"] = true,
 				}),
 				q(14081, {	-- Learn to Ride in the Eversong Woods
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(8480,  {	-- Lost Armaments
 					["provider"] = { "n", 15404 },	-- Velendris Whitemorn
@@ -235,7 +235,7 @@ _.Zones =
 					["races"] = { 10 },	-- Blood Elf
 				}),
 				q(9691, {	-- Return to Silvermoon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 2 },	-- Paladin
 					["provider"] = { "n", 17807 },	-- Master Kelerun Bloodmourn
@@ -279,7 +279,7 @@ _.Zones =
 					["sourceQuest"] = 9035,	-- Roadside Ambush
 				}),
 				q(9677, {	-- Summons from Knight-Lord Bloodvalor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 2 },	-- Paladin
 					["provider"] = { "n", 16275 },	-- Noellene
@@ -345,7 +345,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(9686, {	-- The Second Trial
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 2 },	-- Paladin
 					["provider"] = { "n", 17807 },	-- Master Kelrun Bloodmourn

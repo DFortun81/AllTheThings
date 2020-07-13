@@ -14,7 +14,7 @@ _.PetJournal =
 		p(1738),	-- Auburn Ringtail
 		p(706),		-- Bandicoon
 		p(707),		-- Bandicoon Kit
-		un(6, p(903)),	-- Baneling
+		un(REMOVED_FROM_GAME, p(903)),	-- Baneling
 		p(406),		-- Beetle
 		p(374),		-- Black Lamb
 		p(398),		-- Black Rat
@@ -79,7 +79,7 @@ _.PetJournal =
 		p(404),		-- Long-tailed Mole
 		p(1511),	-- Lovebird Hatchling
 		un(REMOVED_FROM_GAME, p(155)),	-- Lucky
-		un(6, p(671)),	-- Lucky Quilen Cub
+		un(REMOVED_FROM_GAME, p(671)),	-- Lucky Quilen Cub
 		p(708),		-- Malayan Quillrat
 		p(709),		-- Malayan Quillrat Pup
 		p(710),		-- Marsh Fiddler
@@ -95,7 +95,7 @@ _.PetJournal =
 		p(210),		-- Mulgore Hatchling
 		p(2554),	-- Needleback Pup
 		p(638),		-- Nether Roach
-		un(6, p(1691)),	-- Nibbles
+		un(REMOVED_FROM_GAME, p(1691)),	-- Nibbles
 		p(1943),	-- Noblegarden Bunny
 		p(323),		-- Nuts
 		p(1729),	-- Olivetail Hare
@@ -163,7 +163,7 @@ _.PetJournal =
 		p(2700),	-- Wriggler
 		p(740),		-- Yakrat
 		p(549),		-- Yellow-Bellied Marmot
-		un(6, p(94)),	-- Zergling
+		un(REMOVED_FROM_GAME, p(94)),	-- Zergling
 		p(1903),	-- Zoom
 	}),
 };

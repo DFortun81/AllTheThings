@@ -15,18 +15,18 @@ _.Instances = { tier(1, {	-- Classic
 				un(REMOVED_FROM_GAME, ach(2188)),	-- Leeeeeeeeeeeeeroy!
 				n(QUESTS, {
 					q(6602, {	-- Blood of the Black Dragon Champion
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(16309)),	-- Drakefire Amulet
 						},
 					}),
 					q(5164, {	-- Catalogue of the Wayward
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 10976 },	-- Jeziba
 					}),
 					q(4765, {	-- Delivery to Ridgewell
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(15860)),	-- Blinkstrike Armguards
@@ -34,14 +34,14 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					q(6502, {	-- Drakefire Amulet
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(16309)),	-- Drakefire Amulet
 						},
 					}),
 					q(4974, {	-- For The Horde!
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(13965)),	-- Blackhand's Breadth
@@ -50,7 +50,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					q(6102, {	-- General Drakkisath's Demise
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(13965)),	-- Blackhand's Breadth
@@ -59,7 +59,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					q(27445, { 	-- General Drakkisath, Hand of Nefarian
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(66001)), 	-- Aeyla's Staff
 							un(REMOVED_FROM_GAME, i(65934)), 	-- Staff of the Second Orb
@@ -68,89 +68,89 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					q(4866, {	-- Mother's Milk
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(15873)),	-- Ragged John's Neverending Cup
 						},
 					}),
 					q(4743, {	-- Seal of Ascension
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(12344)),	-- Seal of Ascension
 						},
 					}),
 					q(4768, {	-- The Darkstone Tablet
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(15860)),	-- Blinkstrike Armguards
 							un(REMOVED_FROM_GAME, i(15861)),	-- Swiftfoot Treads
 						},
 					}),
 					q(5160, {	-- The Matron Protectorate
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 10740 },	-- Awbee
 					}),
 					q(4907, {	-- Tinkee Steamboil
-						["u"] = 40,	-- Legacy Quest
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 10468 },	-- Felnok Steelspring
 						["isBreadcrumb"] = true,
 						["lvl"] = 57,
 						["sourceQuests"] = { 4810 },	-- Return to Tinkee
 					}),
 					q(4867, { 	-- Urok Doomhowl
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(15867)),	-- Prismcharm
 						},
 					}),
 					q(8996, {	-- Return to Bodley
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 16073 },	-- Spirit of Lord Valthalak
 						["lvl"] = 58,
 						["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
 					}),
 					q(5161, {	-- Wrath of the Blue Flight (1/2)
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 10929 },	-- Haleh
 					}),
 					q(5162, {	-- Wrath of the Blue Flight (2/2)
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 10929 },	-- Haleh
 					}),
 				}),
 				n(ZONEDROPS, {
 					n(10318, {	-- Blackhand Assassin
-						un(7, i(15774)),	-- Pattern: Heavy Scorpid Shoulders
-						un(7, i(16713)),	-- Shadowcraft Belt
+						un(REMOVED_FROM_GAME, i(15774)),	-- Pattern: Heavy Scorpid Shoulders
+						un(REMOVED_FROM_GAME, i(16713)),	-- Shadowcraft Belt
 					}),
 					n(9817, { 	-- Blackhand Dreadweaver
-						un(7, i(16703)),	-- Dreadmist Bracers
+						un(REMOVED_FROM_GAME, i(16703)),	-- Dreadmist Bracers
 						un(REMOVED_FROM_GAME, i(13371)),	-- Father Flame
 					}),
 					n(10317, { 	-- Blackhand Elite
-						un(7, i(16247)),	-- Formula: Enchant 2H Weapon - Superior Impact
+						un(REMOVED_FROM_GAME, i(16247)),	-- Formula: Enchant 2H Weapon - Superior Impact
 					}),
 					n(10319, { 	-- Blackhand Iron Guard
-						un(7, i(16735)),	-- Bracers of Valor
+						un(REMOVED_FROM_GAME, i(16735)),	-- Bracers of Valor
 					}),
 					n(9818, { 	-- Blackhand Summoner
-						un(7, i(16696)),	-- Devout Belt
+						un(REMOVED_FROM_GAME, i(16696)),	-- Devout Belt
 					}),
 					n(	9819, {	-- Blackhand Veteran
 						un(REMOVED_FROM_GAME, i(13371)),	-- Father Flame
 					}),
 					n(10366, { 	-- Rage Talon Dragon Guard
-						un(7, i(16680)), 	-- Beaststalker's Belt
+						un(REMOVED_FROM_GAME, i(16680)), 	-- Beaststalker's Belt
 					}),
 					n(9096, { 	-- Rage Talon Dragonspawn
-						un(7, i(16681)),	-- Beaststalker's Bindings
+						un(REMOVED_FROM_GAME, i(16681)),	-- Beaststalker's Bindings
 						un(REMOVED_FROM_GAME, i(13371)),	-- Father Flame
 					}),
 					n(10372, { 	-- Rage Talon Fire Tongue
-						un(7, i(16683)),	-- Magister's Bindings
+						un(REMOVED_FROM_GAME, i(16683)),	-- Magister's Bindings
 					}),
 					n(10083, {	-- Rage Talon Flamescale
-						un(7, i(16673)), 	-- Cord of Elements
+						un(REMOVED_FROM_GAME, i(16673)), 	-- Cord of Elements
 						un(REMOVED_FROM_GAME, i(13371)),	-- Father Flame
 					}),
 					n(10258, {	-- Rookery Guardian
@@ -167,11 +167,11 @@ _.Instances = { tier(1, {	-- Classic
 					un(REMOVED_FROM_GAME, i(12929)),	-- Emberfury Talisman
 					un(REMOVED_FROM_GAME, i(12905)), 	-- Wildfire Cape
 					un(REMOVED_FROM_GAME, i(12927)),	-- Truestrike Shoulders
-					un(7, i(16672)),	-- Gauntlets of Elements
+					un(REMOVED_FROM_GAME, i(16672)),	-- Gauntlets of Elements
 					un(REMOVED_FROM_GAME, i(12926)),	-- Flaming Band
 				}),
 				n(10264, { 	-- Solakar Flamewreath
-					un(7, i(18657)),	-- Schematic: Hyper-Radiant Flame Reflector
+					un(REMOVED_FROM_GAME, i(18657)),	-- Schematic: Hyper-Radiant Flame Reflector
 					un(REMOVED_FROM_GAME, i(12606)), 	-- Crystallized Girdle
 					un(REMOVED_FROM_GAME, i(16695)), 	-- Devout Mantle
 					un(REMOVED_FROM_GAME, i(12589)),	-- Dustfeather Sash
@@ -201,7 +201,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						i(12834, {	-- Plans: Arcanite Champion
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(12728),	-- Plans: Invulnerable Mail **Still in game as a general world drop now**
 						un(REMOVED_FROM_GAME, i(12837)),	-- Plans: Masterwork Stormhammer
@@ -212,10 +212,10 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				n(10339, { 	-- Gyth
-					un(7, i(13522)),	-- Recipe: Flask of Chromatic Resistance
+					un(REMOVED_FROM_GAME, i(13522)),	-- Recipe: Flask of Chromatic Resistance
 					un(REMOVED_FROM_GAME, i(12871, { 	-- Chromatic Carapace
 						q(5167, { 	-- Legplates of the Chromatic Defier
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["cost"] = {
 								{ "i", 12871, 1 },	-- Chromatic Carapace
 								{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
@@ -228,7 +228,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(5166, { 	-- Breastplate of the Chromatic Flight
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["cost"] = {
 								{ "i", 12871, 1 },	-- Chromatic Carapace
 								{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
@@ -304,7 +304,7 @@ _.Instances = { tier(1, {	-- Classic
 				n(10363, { 	-- General Drakkisath
 					un(REMOVED_FROM_GAME, ach(1307)),	-- Upper Blackrock Spire (Classic)
 					un(REMOVED_FROM_GAME, i(15730)),	-- Pattern: Red Dragonscale Breastplate
-					un(7, i(13519)),	-- Recipe: Flask of the Titans
+					un(REMOVED_FROM_GAME, i(13519)),	-- Recipe: Flask of the Titans
 					un(REMOVED_FROM_GAME, i(12592)),	-- Blackblade of Shahram
 					un(REMOVED_FROM_GAME, i(12602)),	-- Draconian Deflector
 					un(REMOVED_FROM_GAME, i(22253)),	-- Tome of the Lost

@@ -454,7 +454,7 @@ _.ExpansionFeatures =
 						["isBreadcrumb"] = true,
 					}),
 					q(40994, {	-- Right Tools for the Job
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["coord"] = { 41.3, 78.1, 626 },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt

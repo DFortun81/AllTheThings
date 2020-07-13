@@ -25,21 +25,21 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					q(31528, {	-- A Worthy Challenge: Darkmaster Gandling
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(98134),	-- Heroic Cache of Treasures
 						},
 					}),
 					q(31526, {	-- A Worthy Challenge: Durand
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(98134),	-- Heroic Cache of Treasures
 						},
 					}),
 					q(31527, {	-- A Worthy Challenge: Flameweaver Koegler
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(98134),	-- Heroic Cache of Treasures

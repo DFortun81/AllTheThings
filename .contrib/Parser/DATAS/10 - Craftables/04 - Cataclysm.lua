@@ -70,62 +70,62 @@ _.Craftables =
 				i(55042),	-- Stormforged Shield
 			}),
 			n(-320, {		-- Head
-				un(7, i(55077)),	-- Bloodied Pyrium Helm
-				un(7, i(70015)),	-- Bloodthirsty Ornate Pyrium Helm
-				un(7, i(70007)),	-- Bloodthirsty Pyrium Helm
+				un(REMOVED_FROM_GAME, i(55077)),	-- Bloodied Pyrium Helm
+				un(REMOVED_FROM_GAME, i(70015)),	-- Bloodthirsty Ornate Pyrium Helm
+				un(REMOVED_FROM_GAME, i(70007)),	-- Bloodthirsty Pyrium Helm
 				i(55023),	-- Hardened Obsidium Helm
-				un(7, i(55085)),	-- Ornate Pyrium Helm
+				un(REMOVED_FROM_GAME, i(55085)),	-- Ornate Pyrium Helm
 				i(55031),	-- Redsteel Helm
 				i(55039),	-- Stormforged Helm
 				i(75129),	-- Vicious Ornate Pyrium Helm
 				i(75126),	-- Vicious Pyrium Helm
 			}),
 			n(-321, {		-- Shoulders
-				un(7, i(55075)),	-- Bloodied Pyrium Shoulders
-				un(7, i(70017)),	-- Bloodthirsty Ornate Pyrium Shoulders
-				un(7, i(70009)),	-- Bloodthirsty Pyrium Shoulders
+				un(REMOVED_FROM_GAME, i(55075)),	-- Bloodied Pyrium Shoulders
+				un(REMOVED_FROM_GAME, i(70017)),	-- Bloodthirsty Ornate Pyrium Shoulders
+				un(REMOVED_FROM_GAME, i(70009)),	-- Bloodthirsty Pyrium Shoulders
 				i(54876),	-- Hardened Obsidium Shoulders
-				un(7, i(55083)),	-- Ornate Pyrium Shoulders
+				un(REMOVED_FROM_GAME, i(55083)),	-- Ornate Pyrium Shoulders
 				i(55029),	-- Redsteel Shoulders
 				i(55037),	-- Stormforged Shoulders
 				i(75134),	-- Vicious Ornate Pyrium Shoulders
 				i(75119),	-- Vicious Pyrium Shoulders
 			}),
 			n(-323, {		-- Chest
-				un(7, i(55078)),	-- Bloodied Pyrium Breastplate
-				un(7, i(70012)),	-- Bloodthirsty Ornate Pyrium Breastplate
-				un(7, i(70004)),	-- Bloodthirsty Pyrium Breastplate
+				un(REMOVED_FROM_GAME, i(55078)),	-- Bloodied Pyrium Breastplate
+				un(REMOVED_FROM_GAME, i(70012)),	-- Bloodthirsty Ornate Pyrium Breastplate
+				un(REMOVED_FROM_GAME, i(70004)),	-- Bloodthirsty Pyrium Breastplate
 				i(55060),	-- Elementium Deathplate
 				i(55058),	-- Hardened Elementium Hauberk
 				i(55024),	-- Hardened Obsidium Breastplate
 				i(55062),	-- Light Elementium Chestguard
-				un(7, i(55086)),	-- Ornate Pyrium Breastplate
+				un(REMOVED_FROM_GAME, i(55086)),	-- Ornate Pyrium Breastplate
 				i(55032),	-- Redsteel Breastplate
 				i(55040),	-- Stormforged Breastplate
 				i(75128),	-- Vicious Ornate Pyrium Breastplate
 				i(75135),	-- Vicious Pyrium Breastplate
 			}),
 			n(-327, {		-- Hands
-				un(7, i(55072)),	-- Bloodied Pyrium Gauntlets
-				un(7, i(70014)),	-- Bloodthirsty Ornate Pyrium Gauntlets
-				un(7, i(70006)),	-- Bloodthirsty Pyrium Gauntlets
+				un(REMOVED_FROM_GAME, i(55072)),	-- Bloodied Pyrium Gauntlets
+				un(REMOVED_FROM_GAME, i(70014)),	-- Bloodthirsty Ornate Pyrium Gauntlets
+				un(REMOVED_FROM_GAME, i(70006)),	-- Bloodthirsty Pyrium Gauntlets
 				i(69937),	-- Eternal Elementium Handguards
 				i(69936),	-- Fists of Fury
 				i(54852),	-- Hardened Obsidium Gauntlets
 				i(69938),	-- Holy Flame Gauntlets
-				un(7, i(55080)),	-- Ornate Pyrium Gauntlets
+				un(REMOVED_FROM_GAME, i(55080)),	-- Ornate Pyrium Gauntlets
 				i(55026),	-- Redsteel Gauntlets
 				i(55034),	-- Stormforged Gauntlets
 				i(75121),	-- Vicious Ornate Pyrium Gauntlets
 				i(75122),	-- Vicious Pyrium Gauntlets
 			}),
 			n(-326, {		-- Wrist
-				un(7, i(55071)),	-- Bloodied Pyrium Bracers
-				un(7, i(70019)),	-- Bloodthirsty Ornate Pyrium Bracers
-				un(7, i(70011)),	-- Bloodthirsty Pyrium Bracers
+				un(REMOVED_FROM_GAME, i(55071)),	-- Bloodied Pyrium Bracers
+				un(REMOVED_FROM_GAME, i(70019)),	-- Bloodthirsty Ornate Pyrium Bracers
+				un(REMOVED_FROM_GAME, i(70011)),	-- Bloodthirsty Pyrium Bracers
 				i(71992),	-- Bracers of Destructive Strength
 				i(54850),	-- Hardened Obsidium Bracers
-				un(7, i(55079)),	-- Ornate Pyrium Bracers
+				un(REMOVED_FROM_GAME, i(55079)),	-- Ornate Pyrium Bracers
 				i(55025),	-- Redsteel Bracers
 				i(71991),	-- Soul Redeemer Bracers
 				i(55033),	-- Stormforged Bracers
@@ -134,26 +134,26 @@ _.Craftables =
 				i(75124),	-- Vicious Pyrium Bracers
 			}),
 			n(-328, {		-- Waist
-				un(7, i(55073)),	-- Bloodied Pyrium Belt
-				un(7, i(70018)),	-- Bloodthirsty Ornate Pyrium Belt
-				un(7, i(70010)),	-- Bloodthirsty Pyrium Belt
+				un(REMOVED_FROM_GAME, i(55073)),	-- Bloodied Pyrium Belt
+				un(REMOVED_FROM_GAME, i(70018)),	-- Bloodthirsty Ornate Pyrium Belt
+				un(REMOVED_FROM_GAME, i(70010)),	-- Bloodthirsty Pyrium Belt
 				i(55061),	-- Elementium Girdle of Pain
 				i(55059),	-- Hardened Elementium Girdle
 				i(54853),	-- Hardened Obsidium Belt
 				i(55063),	-- Light Elementium Belt
-				un(7, i(55081)),	-- Ornate Pyrium Belt
+				un(REMOVED_FROM_GAME, i(55081)),	-- Ornate Pyrium Belt
 				i(55027),	-- Redsteel Belt
 				i(55035),	-- Stormforged Belt
 				i(75118),	-- Vicious Ornate Pyrium Belt
 				i(75123),	-- Vicious Pyrium Belt
 			}),
 			n(-329, {		-- Legs
-				un(7, i(55076)),	-- Bloodied Pyrium Legguards
-				un(7, i(70016)),	-- Bloodthirsty Ornate Pyrium Legguards
-				un(7, i(70008)),	-- Bloodthirsty Pyrium Legguards
+				un(REMOVED_FROM_GAME, i(55076)),	-- Bloodied Pyrium Legguards
+				un(REMOVED_FROM_GAME, i(70016)),	-- Bloodthirsty Ornate Pyrium Legguards
+				un(REMOVED_FROM_GAME, i(70008)),	-- Bloodthirsty Pyrium Legguards
 				i(71984),	-- Foundations of Courage
 				i(55022),	-- Hardened Obsidium Legguards
-				un(7, i(55084)),	-- Ornate Pyrium Legguards
+				un(REMOVED_FROM_GAME, i(55084)),	-- Ornate Pyrium Legguards
 				i(71982),	-- Pyrium Legplates of Purified Evil
 				i(55030),	-- Redsteel Legguards
 				i(55038),	-- Stormforged Legguards
@@ -162,13 +162,13 @@ _.Craftables =
 				i(75136),	-- Vicious Pyrium Legguards
 			}),
 			n(-330, {		-- Feet
-				un(7, i(55074)),	-- Bloodied Pyrium Boots
-				un(7, i(70013)),	-- Bloodthirsty Ornate Pyrium Boots
-				un(7, i(70005)),	-- Bloodthirsty Pyrium Boots
+				un(REMOVED_FROM_GAME, i(55074)),	-- Bloodied Pyrium Boots
+				un(REMOVED_FROM_GAME, i(70013)),	-- Bloodthirsty Ornate Pyrium Boots
+				un(REMOVED_FROM_GAME, i(70005)),	-- Bloodthirsty Pyrium Boots
 				i(69948),	-- Emberforged Elementium Boots
 				i(54854),	-- Hardened Obsidium Boots
 				i(69947),	-- Mirrored Boots
-				un(7, i(55082)),	-- Ornate Pyrium Boots
+				un(REMOVED_FROM_GAME, i(55082)),	-- Ornate Pyrium Boots
 				i(55028),	-- Redsteel Boots
 				i(55036),	-- Stormforged Boots
 				i(75132),	-- Vicious Ornate Pyrium Boots
@@ -303,9 +303,9 @@ _.Craftables =
 				i(52307, {	-- Alicite Pendant
 					i(52312),	-- Alicite Pendant
 				}),
-				un(7, i(70075)),	-- Bloodthirsty Amberjewel Pendant
-				un(7, i(70076)),	-- Bloodthirsty Ruby Choker
-				un(7, i(70074)),	-- Bloodthirsty Sapphire Necklace
+				un(REMOVED_FROM_GAME, i(70075)),	-- Bloodthirsty Amberjewel Pendant
+				un(REMOVED_FROM_GAME, i(70076)),	-- Bloodthirsty Ruby Choker
+				un(REMOVED_FROM_GAME, i(70074)),	-- Bloodthirsty Sapphire Necklace
 				i(52350),	-- Brazen Elementium Medallion
 				i(52323),	-- Elementium Guardian
 				i(52321),	-- Entwined Elementium Choker
@@ -319,9 +319,9 @@ _.Craftables =
 			}),
 			filter(52, {	-- Finger
 				i(52318),	-- Band of Blades
-				un(7, i(70072)),	-- Bloodthirsty Amberjewel Band
-				un(7, i(70073)),	-- Bloodthirsty Ruby Signet
-				un(7, i(70071)),	-- Bloodthirsty Sapphire Ring
+				un(REMOVED_FROM_GAME, i(70072)),	-- Bloodthirsty Amberjewel Band
+				un(REMOVED_FROM_GAME, i(70073)),	-- Bloodthirsty Ruby Signet
+				un(REMOVED_FROM_GAME, i(70071)),	-- Bloodthirsty Sapphire Ring
 				i(52348),	-- Elementium Destroyer's Ring
 				i(52320),	-- Elementium Moebius Band
 				i(52308, {	-- Hessonite Band
@@ -343,8 +343,8 @@ _.Craftables =
 				i(70137),			-- Triple-Reinforced Mining Bag
 			}),
 			n(-322, { 	-- Cloak
-				un(7, i(70068)),	-- Bloodthirsty Fur Cloak
-				un(7, i(70069)),	-- Bloodthirsty Hide Cloak
+				un(REMOVED_FROM_GAME, i(70068)),	-- Bloodthirsty Fur Cloak
+				un(REMOVED_FROM_GAME, i(70069)),	-- Bloodthirsty Hide Cloak
 				i(56518),	-- Cloak of Beasts
 				i(56519),	-- Cloak of War
 				i(56489),	-- Hardened Scale Cloak
@@ -359,38 +359,38 @@ _.Craftables =
 				i(56537),	-- Belt of Nefarious Whispers
 				i(71985),	-- Bladeshadow Leggings
 				i(71994),	-- Bladeshadow Wristguards
-				un(7, i(56542)),	-- Bloodied Leather Belt
-				un(7, i(56530)),	-- Bloodied Leather Boots
-				un(7, i(56522)),	-- Bloodied Leather Bracers
-				un(7, i(56554)),	-- Bloodied Leather Chest
-				un(7, i(56523)),	-- Bloodied Leather Gloves
-				un(7, i(56543)),	-- Bloodied Leather Helm
-				un(7, i(56555)),	-- Bloodied Leather Legs
-				un(7, i(56531)),	-- Bloodied Leather Shoulders
-				un(7, i(56521)),	-- Bloodied Wyrmhide Belt
-				un(7, i(56529)),	-- Bloodied Wyrmhide Boots
-				un(7, i(56520)),	-- Bloodied Wyrmhide Bracers
-				un(7, i(56541)),	-- Bloodied Wyrmhide Chest
-				un(7, i(56528)),	-- Bloodied Wyrmhide Gloves
-				un(7, i(56553)),	-- Bloodied Wyrmhide Helm
-				un(7, i(56552)),	-- Bloodied Wyrmhide Legs
-				un(7, i(56540)),	-- Bloodied Wyrmhide Shoulders
-				un(7, i(70020)),	-- Bloodthirsty Leather Belt
-				un(7, i(70021)),	-- Bloodthirsty Leather Boots
-				un(7, i(70022)),	-- Bloodthirsty Leather Bracers
-				un(7, i(70023)),	-- Bloodthirsty Leather Chest
-				un(7, i(70024)),	-- Bloodthirsty Leather Gloves
-				un(7, i(70025)),	-- Bloodthirsty Leather Helm
-				un(7, i(70026)),	-- Bloodthirsty Leather Legs
-				un(7, i(70027)),	-- Bloodthirsty Leather Shoulders
-				un(7, i(70028)),	-- Bloodthirsty Wyrmhide Belt
-				un(7, i(70029)),	-- Bloodthirsty Wyrmhide Boots
-				un(7, i(70030)),	-- Bloodthirsty Wyrmhide Bracers
-				un(7, i(70031)),	-- Bloodthirsty Wyrmhide Chest
-				un(7, i(70032)),	-- Bloodthirsty Wyrmhide Gloves
-				un(7, i(70033)),	-- Bloodthirsty Wyrmhide Helm
-				un(7, i(70034)),	-- Bloodthirsty Wyrmhide Legs
-				un(7, i(70035)),	-- Bloodthirsty Wyrmhide Shoulders
+				un(REMOVED_FROM_GAME, i(56542)),	-- Bloodied Leather Belt
+				un(REMOVED_FROM_GAME, i(56530)),	-- Bloodied Leather Boots
+				un(REMOVED_FROM_GAME, i(56522)),	-- Bloodied Leather Bracers
+				un(REMOVED_FROM_GAME, i(56554)),	-- Bloodied Leather Chest
+				un(REMOVED_FROM_GAME, i(56523)),	-- Bloodied Leather Gloves
+				un(REMOVED_FROM_GAME, i(56543)),	-- Bloodied Leather Helm
+				un(REMOVED_FROM_GAME, i(56555)),	-- Bloodied Leather Legs
+				un(REMOVED_FROM_GAME, i(56531)),	-- Bloodied Leather Shoulders
+				un(REMOVED_FROM_GAME, i(56521)),	-- Bloodied Wyrmhide Belt
+				un(REMOVED_FROM_GAME, i(56529)),	-- Bloodied Wyrmhide Boots
+				un(REMOVED_FROM_GAME, i(56520)),	-- Bloodied Wyrmhide Bracers
+				un(REMOVED_FROM_GAME, i(56541)),	-- Bloodied Wyrmhide Chest
+				un(REMOVED_FROM_GAME, i(56528)),	-- Bloodied Wyrmhide Gloves
+				un(REMOVED_FROM_GAME, i(56553)),	-- Bloodied Wyrmhide Helm
+				un(REMOVED_FROM_GAME, i(56552)),	-- Bloodied Wyrmhide Legs
+				un(REMOVED_FROM_GAME, i(56540)),	-- Bloodied Wyrmhide Shoulders
+				un(REMOVED_FROM_GAME, i(70020)),	-- Bloodthirsty Leather Belt
+				un(REMOVED_FROM_GAME, i(70021)),	-- Bloodthirsty Leather Boots
+				un(REMOVED_FROM_GAME, i(70022)),	-- Bloodthirsty Leather Bracers
+				un(REMOVED_FROM_GAME, i(70023)),	-- Bloodthirsty Leather Chest
+				un(REMOVED_FROM_GAME, i(70024)),	-- Bloodthirsty Leather Gloves
+				un(REMOVED_FROM_GAME, i(70025)),	-- Bloodthirsty Leather Helm
+				un(REMOVED_FROM_GAME, i(70026)),	-- Bloodthirsty Leather Legs
+				un(REMOVED_FROM_GAME, i(70027)),	-- Bloodthirsty Leather Shoulders
+				un(REMOVED_FROM_GAME, i(70028)),	-- Bloodthirsty Wyrmhide Belt
+				un(REMOVED_FROM_GAME, i(70029)),	-- Bloodthirsty Wyrmhide Boots
+				un(REMOVED_FROM_GAME, i(70030)),	-- Bloodthirsty Wyrmhide Bracers
+				un(REMOVED_FROM_GAME, i(70031)),	-- Bloodthirsty Wyrmhide Chest
+				un(REMOVED_FROM_GAME, i(70032)),	-- Bloodthirsty Wyrmhide Gloves
+				un(REMOVED_FROM_GAME, i(70033)),	-- Bloodthirsty Wyrmhide Helm
+				un(REMOVED_FROM_GAME, i(70034)),	-- Bloodthirsty Wyrmhide Legs
+				un(REMOVED_FROM_GAME, i(70035)),	-- Bloodthirsty Wyrmhide Shoulders
 				i(71995),	-- Bracers of Flowing Serenity
 				i(56561),	-- Chestguard of Nature's Fury
 				i(69942),	-- Clutches of Evil
@@ -425,38 +425,38 @@ _.Craftables =
 				i(75099),	-- Vicious Wyrmhide Shoulders
 			}),
 			n(-45, { 	-- Mail
-				un(7, i(56546)),	-- Bloodied Dragonscale Belt
-				un(7, i(56534)),	-- Bloodied Dragonscale Boots
-				un(7, i(56526)),	-- Bloodied Dragonscale Bracers
-				un(7, i(56559)),	-- Bloodied Dragonscale Chest
-				un(7, i(56535)),	-- Bloodied Dragonscale Gloves
-				un(7, i(56547)),	-- Bloodied Dragonscale Helm
-				un(7, i(56558)),	-- Bloodied Dragonscale Legs
-				un(7, i(56527)),	-- Bloodied Dragonscale Shoulders
-				un(7, i(56533)),	-- Bloodied Scale Belt
-				un(7, i(56532)),	-- Bloodied Scale Boots
-				un(7, i(56524)),	-- Bloodied Scale Bracers
-				un(7, i(56556)),	-- Bloodied Scale Chest
-				un(7, i(56525)),	-- Bloodied Scale Gloves
-				un(7, i(56557)),	-- Bloodied Scale Helm
-				un(7, i(56545)),	-- Bloodied Scale Legs
-				un(7, i(56544)),	-- Bloodied Scale Shoulders
-				un(7, i(70044)),	-- Bloodthirsty Charscale Belt
-				un(7, i(70045)),	-- Bloodthirsty Charscale Boots
-				un(7, i(70046)),	-- Bloodthirsty Charscale Bracers
-				un(7, i(70047)),	-- Bloodthirsty Charscale Chest
-				un(7, i(70048)),	-- Bloodthirsty Charscale Gloves
-				un(7, i(70049)),	-- Bloodthirsty Charscale Helm
-				un(7, i(70050)),	-- Bloodthirsty Charscale Legs
-				un(7, i(70051)),	-- Bloodthirsty Charscale Shoulders
-				un(7, i(70036)),	-- Bloodthirsty Dragonscale Belt
-				un(7, i(70037)),	-- Bloodthirsty Dragonscale Boots
-				un(7, i(70038)),	-- Bloodthirsty Dragonscale Bracers
-				un(7, i(70039)),	-- Bloodthirsty Dragonscale Chest
-				un(7, i(70040)),	-- Bloodthirsty Dragonscale Gloves
-				un(7, i(70041)),	-- Bloodthirsty Dragonscale Helm
-				un(7, i(70042)),	-- Bloodthirsty Dragonscale Legs
-				un(7, i(70043)),	-- Bloodthirsty Dragonscale Shoulders
+				un(REMOVED_FROM_GAME, i(56546)),	-- Bloodied Dragonscale Belt
+				un(REMOVED_FROM_GAME, i(56534)),	-- Bloodied Dragonscale Boots
+				un(REMOVED_FROM_GAME, i(56526)),	-- Bloodied Dragonscale Bracers
+				un(REMOVED_FROM_GAME, i(56559)),	-- Bloodied Dragonscale Chest
+				un(REMOVED_FROM_GAME, i(56535)),	-- Bloodied Dragonscale Gloves
+				un(REMOVED_FROM_GAME, i(56547)),	-- Bloodied Dragonscale Helm
+				un(REMOVED_FROM_GAME, i(56558)),	-- Bloodied Dragonscale Legs
+				un(REMOVED_FROM_GAME, i(56527)),	-- Bloodied Dragonscale Shoulders
+				un(REMOVED_FROM_GAME, i(56533)),	-- Bloodied Scale Belt
+				un(REMOVED_FROM_GAME, i(56532)),	-- Bloodied Scale Boots
+				un(REMOVED_FROM_GAME, i(56524)),	-- Bloodied Scale Bracers
+				un(REMOVED_FROM_GAME, i(56556)),	-- Bloodied Scale Chest
+				un(REMOVED_FROM_GAME, i(56525)),	-- Bloodied Scale Gloves
+				un(REMOVED_FROM_GAME, i(56557)),	-- Bloodied Scale Helm
+				un(REMOVED_FROM_GAME, i(56545)),	-- Bloodied Scale Legs
+				un(REMOVED_FROM_GAME, i(56544)),	-- Bloodied Scale Shoulders
+				un(REMOVED_FROM_GAME, i(70044)),	-- Bloodthirsty Charscale Belt
+				un(REMOVED_FROM_GAME, i(70045)),	-- Bloodthirsty Charscale Boots
+				un(REMOVED_FROM_GAME, i(70046)),	-- Bloodthirsty Charscale Bracers
+				un(REMOVED_FROM_GAME, i(70047)),	-- Bloodthirsty Charscale Chest
+				un(REMOVED_FROM_GAME, i(70048)),	-- Bloodthirsty Charscale Gloves
+				un(REMOVED_FROM_GAME, i(70049)),	-- Bloodthirsty Charscale Helm
+				un(REMOVED_FROM_GAME, i(70050)),	-- Bloodthirsty Charscale Legs
+				un(REMOVED_FROM_GAME, i(70051)),	-- Bloodthirsty Charscale Shoulders
+				un(REMOVED_FROM_GAME, i(70036)),	-- Bloodthirsty Dragonscale Belt
+				un(REMOVED_FROM_GAME, i(70037)),	-- Bloodthirsty Dragonscale Boots
+				un(REMOVED_FROM_GAME, i(70038)),	-- Bloodthirsty Dragonscale Bracers
+				un(REMOVED_FROM_GAME, i(70039)),	-- Bloodthirsty Dragonscale Chest
+				un(REMOVED_FROM_GAME, i(70040)),	-- Bloodthirsty Dragonscale Gloves
+				un(REMOVED_FROM_GAME, i(70041)),	-- Bloodthirsty Dragonscale Helm
+				un(REMOVED_FROM_GAME, i(70042)),	-- Bloodthirsty Dragonscale Legs
+				un(REMOVED_FROM_GAME, i(70043)),	-- Bloodthirsty Dragonscale Shoulders
 				i(71996),	-- Bracers of the Hunter-Killer
 				i(56539),	-- Corded Viper Belt
 				i(71988),	-- Deathscale Leggings
@@ -504,60 +504,60 @@ _.Craftables =
 				i(54445),	-- Otherworldly Bag
 			}),
 			n(-323, {		-- Chest
-				un(7, i(70060)),	-- Bloodthirsty Embersilk Robe
-				un(7, i(70058)),	-- Bloodthirsty Fireweave Robe
+				un(REMOVED_FROM_GAME, i(70060)),	-- Bloodthirsty Embersilk Robe
+				un(REMOVED_FROM_GAME, i(70058)),	-- Bloodthirsty Fireweave Robe
 				i(54475),	 		-- Deathsilk Robe
-				un(7, i(54495)),	-- Emberfire Robe
-				un(7, i(54494)),	-- Fireweave Robe
+				un(REMOVED_FROM_GAME, i(54495)),	-- Emberfire Robe
+				un(REMOVED_FROM_GAME, i(54494)),	-- Fireweave Robe
 				i(54486),			-- Spiritmend Robe
 				i(75093),			-- Vicious Embersilk Robe
 				i(75088),			-- Vicious Fireweave Robe
 			}),
 			n(-322, {		-- Cloaks
-				un(7, i(70070)),	-- Bloodthirsty Embersilk Cape
+				un(REMOVED_FROM_GAME, i(70070)),	-- Bloodthirsty Embersilk Cape
 				i(75065),			-- Vicious Embersilk Cape
 			}),
 			n(-330, {		-- Feet
 				i(69954),	-- Boots of the Black Flame
-				un(7, i(70061)),	-- Bloodthirsty Embersilk Boots
-				un(7, i(70053)),	-- Bloodthirsty Fireweave Boots
+				un(REMOVED_FROM_GAME, i(70061)),	-- Bloodthirsty Embersilk Boots
+				un(REMOVED_FROM_GAME, i(70053)),	-- Bloodthirsty Fireweave Boots
 				i(54477),			-- Deathsilk Boots
-				un(7, i(54499)),	-- Emberfire Boots
+				un(REMOVED_FROM_GAME, i(54499)),	-- Emberfire Boots
 				i(69953),			-- Endless Dream Walkers
-				un(7, i(54490)),	-- Fireweave Boots
+				un(REMOVED_FROM_GAME, i(54490)),	-- Fireweave Boots
 				i(54482),			-- Spiritmend Boots
 				i(75095),			-- Vicious Embersilk Boots
 				i(75087),			-- Vicious Fireweave Boots
 			}),
 			n(-327, {		-- Hands
-				un(7, i(70065)),	-- Bloodthirsty Embersilk Gloves
-				un(7, i(70056)),	-- Bloodthirsty Fireweave Gloves
+				un(REMOVED_FROM_GAME, i(70065)),	-- Bloodthirsty Embersilk Gloves
+				un(REMOVED_FROM_GAME, i(70056)),	-- Bloodthirsty Fireweave Gloves
 				i(54478),			-- Deathsilk Gloves
 				i(69945),			-- Don Tayo's Inferno Mittens
-				un(7, i(54497)),	-- Emberfire Gloves
-				un(7, i(54492)),	-- Fireweave Gloves
+				un(REMOVED_FROM_GAME, i(54497)),	-- Emberfire Gloves
+				un(REMOVED_FROM_GAME, i(54492)),	-- Fireweave Gloves
 				i(69944),			-- Grips of Altered Reality
 				i(54484),			-- Spiritmend Gloves
 				i(75070),			-- Vicious Embersilk Gloves
 				i(75063),			-- Vicious Fireweave Gloves
 			}),
 			n(-320, {		-- Head
-				un(7, i(70067)),	-- Bloodthirsty Embersilk Cowl
-				un(7, i(70055)),	-- Bloodthirsty Fireweave Cowl
+				un(REMOVED_FROM_GAME, i(70067)),	-- Bloodthirsty Embersilk Cowl
+				un(REMOVED_FROM_GAME, i(70055)),	-- Bloodthirsty Fireweave Cowl
 				i(54476),			-- Deathsilk Cowl
-				un(7, i(54496)),	-- Emberfire Cowl
-				un(7, i(54493)),	-- Fireweave Cowl
+				un(REMOVED_FROM_GAME, i(54496)),	-- Emberfire Cowl
+				un(REMOVED_FROM_GAME, i(54493)),	-- Fireweave Cowl
 				i(54485),			-- Spiritmend Cowl
 				i(75073),			-- Vicious Embersilk Cowl
 				i(75062),			-- Vicious Fireweave Cowl
 			}),
 			n(-329, {		-- Legs
-				un(7, i(70066)),	-- Bloodthirsty Embersilk Pants
-				un(7, i(70057)),	-- Bloodthirsty Fireweave Pants
+				un(REMOVED_FROM_GAME, i(70066)),	-- Bloodthirsty Embersilk Pants
+				un(REMOVED_FROM_GAME, i(70057)),	-- Bloodthirsty Fireweave Pants
 				i(54505),			-- Breeches of Mended Nightmares
 				i(54472),			-- Deathsilk Leggings
-				un(7, i(54498)),	-- Emberfire Pants
-				un(7, i(54491)),	-- Fireweave Pants
+				un(REMOVED_FROM_GAME, i(54498)),	-- Emberfire Pants
+				un(REMOVED_FROM_GAME, i(54491)),	-- Fireweave Pants
 				i(54506),			-- Flame-Ascended Pantaloons
 				i(71980),			-- Lavaquake Legwraps
 				i(54483),			-- Spiritmend Leggings
@@ -566,35 +566,35 @@ _.Craftables =
 				i(71981),			-- World Mender's Pants
 			}),
 			n(-321, {		-- Shoulders
-				un(7, i(70064)),	-- Bloodthirsty Embersilk Shoulders
-				un(7, i(70059)),	-- Bloodthirsty Fireweave Shoulders
+				un(REMOVED_FROM_GAME, i(70064)),	-- Bloodthirsty Embersilk Shoulders
+				un(REMOVED_FROM_GAME, i(70059)),	-- Bloodthirsty Fireweave Shoulders
 				i(54474),			-- Deathsilk Shoulders
-				un(7, i(54502)),	-- Emberfire Shoulders
-				un(7, i(54487)),	-- Fireweave Shoulders
+				un(REMOVED_FROM_GAME, i(54502)),	-- Emberfire Shoulders
+				un(REMOVED_FROM_GAME, i(54487)),	-- Fireweave Shoulders
 				i(54479),			-- Spiritmend Shoulders
 				i(75064),			-- Vicious Embersilk Shoulders
 				i(75091),			-- Vicious Fireweave Shoulders
 			}),
 			n(-328, {		-- Waist
 				i(54504),			-- Belt of the Depths
-				un(7, i(70062)),	-- Bloodthirsty Embersilk Belt
-				un(7, i(70052)),	-- Bloodthirsty Fireweave Belt
+				un(REMOVED_FROM_GAME, i(70062)),	-- Bloodthirsty Embersilk Belt
+				un(REMOVED_FROM_GAME, i(70052)),	-- Bloodthirsty Fireweave Belt
 				i(54471),			-- Deathsilk Belt
 				i(54503),			-- Dreamless Belt
-				un(7, i(54500)),	-- Emberfire Belt
-				un(7, i(54489)),	-- Fireweave Belt
+				un(REMOVED_FROM_GAME, i(54500)),	-- Emberfire Belt
+				un(REMOVED_FROM_GAME, i(54489)),	-- Fireweave Belt
 				i(54481),			-- Spiritmend Belt
 				i(75096),			-- Vicious Embersilk Belt
 				i(75086),			-- Vicious Fireweave Belt
 			}),
 			n(-326, {		-- Wrist
-				un(7, i(70063)),	-- Bloodthirsty Embersilk Bracers
-				un(7, i(70054)),	-- Bloodthirsty Fireweave Bracers
+				un(REMOVED_FROM_GAME, i(70063)),	-- Bloodthirsty Embersilk Bracers
+				un(REMOVED_FROM_GAME, i(70054)),	-- Bloodthirsty Fireweave Bracers
 				i(71989),			-- Bracers of Unconquered Power
 				i(54473),			-- Deathsilk Bracers
 				i(71990),			-- Dreamwraps of the Light
-				un(7, i(54501)),	-- Emberfire Bracers
-				un(7, i(54488)),	-- Fireweave Bracers
+				un(REMOVED_FROM_GAME, i(54501)),	-- Emberfire Bracers
+				un(REMOVED_FROM_GAME, i(54488)),	-- Fireweave Bracers
 				i(54480),			-- Spiritmend Bracers
 				i(75098),			-- Vicious Embersilk Bracers
 				i(75089),			-- Vicious Fireweave Bracers

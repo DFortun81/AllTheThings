@@ -159,7 +159,7 @@ _.Zones =
 					},
 				}),
 				q(9586,  {	-- Help Tavara
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17482 },	-- Guvan
 					["races"] = { DRAENEI },
 					["classes"] = { PRIEST },
@@ -179,7 +179,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14082, {	-- Learn to Ride at the Exodar (removed in Patch 4.0.1)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["lvl"] = 20,
 					["races"] = { DRAENEI },
 				}),

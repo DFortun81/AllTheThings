@@ -108,7 +108,7 @@ _.Zones =
 						},
 					}),
 					n(33921, { 	-- Nargle Lashcord <Veteran Arena Vendor>
-						["u"] = 43,	-- Vendor no longer exists
+						["u"] = REMOVED_FROM_GAME,
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
@@ -119,7 +119,7 @@ _.Zones =
 						},
 					}),
 					n(40211, {	-- Nargle Lashcord >S9< Elite <Vicious Gladiator>
-						["u"] = 43,	-- Vendor no longer exists
+						["u"] = REMOVED_FROM_GAME,
 						["sym"] = {
 							{"sub", "pvp_gear_base", -9979, -672, -662 },	-- Vicious Gladiator: Season 9 Elite Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
@@ -262,21 +262,21 @@ _.Zones =
 						},
 					}),
 					n(54653, {	-- Nargle Lashcord >S11< Elite <Glorious Conquest Quartermaster>
-						["u"] = 43,	-- Vendor no longer exists
+						["u"] = REMOVED_FROM_GAME,
 						["sym"] = {
 							{"sub", "pvp_gear_base", -9979, -674, -662 },	-- Cataclysmic Gladiator: Season 11 Elite Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
 						},
 					}),
 					n(34092, {	-- Trapjaw Rix Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
-						["u"] = 43,	-- Vendor no longer exists
+						["u"] = REMOVED_FROM_GAME,
 						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -670, -662 }, },	-- Relentless Gladiator: Season 7 Elite Weapons
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(49086)),	-- Relentless Gladiator's Tabard [Elite Rating]
 						},
 					}),
 					n(34095, {	-- Trapjaw Rix Season >8< Elite Version [Note: Yes, two npc's with same name. One is removed]
-						["u"] = 43,	-- Vendor no longer exists
+						["u"] = REMOVED_FROM_GAME,
 						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -671, -662 }, },	-- Wrathful Gladiator: Season 8 Elite Weapons
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
@@ -290,7 +290,7 @@ _.Zones =
 						},
 					}),
 					n(31864, { 	-- Xazi Smolderpipe >Season 6< Elite
-						["u"] = 43,	-- Vendor no longer exists
+						["u"] = REMOVED_FROM_GAME,
 						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -669, -662 }, },	-- Furious Gladiator: Season 6 Elite Weapons
 					}),
 					n(69971, { 	-- Xazi Smolderpipe <Wrathful Gladiator>
@@ -310,7 +310,7 @@ _.Zones =
 						},
 					}),
 					n(54651, {	-- Zom Bocom (Same name, different npc)
-						["u"] = 43,	-- Vendor no longer exists
+						["u"] = REMOVED_FROM_GAME,
 						["sym"] = {
 							{"sub", "pvp_gear_base", -9979, -673, -661 },	-- Ruthless Gladiator: Season 10 Gladiator Gear
 							{"pop"},	-- Discard the Set header and acquire the children.

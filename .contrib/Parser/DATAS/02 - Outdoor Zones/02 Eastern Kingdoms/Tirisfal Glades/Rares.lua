@@ -32,13 +32,13 @@ _.Zones =
 				n(1658,  { 	-- Captain Dargol
 					["coord"] = { 52.6, 26.2, 18 },
 					["g"] = {
-						un(7, i(3330)),	-- Dargol's Hauberk
+						un(REMOVED_FROM_GAME, i(3330)),	-- Dargol's Hauberk
 					},
 				}),
 				n(1911,  { 	-- Deeb
 					["coord"] = { 72.6, 25.8, 18 },
 					["g"] = {
-						un(7, i(4303)),	-- Cranial Thumper
+						un(REMOVED_FROM_GAME, i(4303)),	-- Cranial Thumper
 					},
 				}),
 				o(240624, {	-- Faerie Dragon Nest

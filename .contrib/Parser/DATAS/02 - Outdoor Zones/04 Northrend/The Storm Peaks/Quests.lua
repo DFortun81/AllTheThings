@@ -230,7 +230,7 @@ _.Zones =
 					["sourceQuests"] = { 12984 },	-- Valduran the Stormborn
 				}),
 				q(13109, {	-- Diametrically Opposed
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 30105 },	-- King Jokkum
 					["g"] = {
 						i(43193),	-- Lightning Infused Mantle
@@ -1023,7 +1023,7 @@ _.Zones =
 					["sourceQuests"] = { 13009 },	-- A New Beginning
 				}),
 				q(13108, {	-- Whatever it Takes!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 30105 },	-- King Jokkum
 					["g"] = {
 						i(42844),	-- Robes of Lightning

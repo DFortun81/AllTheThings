@@ -377,7 +377,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109804),	-- Trousers of Arcane Mystery
 						i(109819),	-- Verdant Plate Legguards
 						i(110001),	-- Tovra's Lightning Repository
-						un(40, i(114107)),	-- Core of Iron
+						un(REMOVED_FROM_GAME, i(114107)),	-- Core of Iron
 					},
 				}),
 			}),
@@ -553,7 +553,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109804),	-- Trousers of Arcane Mystery
 						i(109819),	-- Verdant Plate Legguards
 						i(110001),	-- Tovra's Lightning Repository
-						un(40, i(114107)),	-- Core of Iron
+						un(REMOVED_FROM_GAME, i(114107)),	-- Core of Iron
 					},
 				}),
 			}),

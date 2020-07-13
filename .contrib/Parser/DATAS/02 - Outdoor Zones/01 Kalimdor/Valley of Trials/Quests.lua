@@ -14,7 +14,7 @@ _.Zones =
 						["sourceQuest"] = 25129,	-- Sarkoth
 					}),
 					q(794,   {	-- Burning Blade Medallion
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 3145 },	-- Zureetha Fargaze
 						["sourceQuest"] = 792,	-- Vile Familiars
@@ -26,7 +26,7 @@ _.Zones =
 						["sourceQuest"] = 25131,	-- Vile Familiars
 					}),
 					q(788,   {	-- Cutting Teeth
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 3143 },	-- Gornek
 						["sourceQuest"] = 4641,	-- Your Place In The World
@@ -38,7 +38,7 @@ _.Zones =
 						["sourceQuest"] = 25152,	-- Your Place In The World
 					}),
 					q(4402, {	-- Galgar's Cactus Apple Surprise
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 9796 },	-- Galgar
 						["sourceQuest"] = 788,	-- Cutting Teeth
@@ -50,7 +50,7 @@ _.Zones =
 						["sourceQuest"] = 25126,	-- Cutting Teeth
 					}),
 					q(3086,   {	-- Glyphic Tablet
-						["u"] = 40,	-- Legacy
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["classes"] = { MAGE },	-- Mage
 						["provider"] = { "n", 3143 },	-- Gornek
@@ -69,12 +69,12 @@ _.Zones =
 						["sourceQuest"] = 25126,	-- Cutting Teeth
 					}),
 					q(5441, {	-- Lazy Peons
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 11378 },	-- Foreman Thazz'ril
 					}),
 					q(25134, {	-- Lazy Peons (replaced by 37446)
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 11378 },	-- Foreman Thazz'ril
 						["races"] = HORDE_ONLY,
 					}),
@@ -85,7 +85,7 @@ _.Zones =
 						["sourceQuest"] = 25127,	-- Sting of the Scorpid
 					}),
 					q(805,   {	-- Report to Sen'jin Village
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 3145 },	-- Zureetha Fargaze
 						["sourceQuest"] = 794,	-- Burning Blade Medallion
@@ -98,12 +98,12 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					}),
 					q(790,   {	-- Sarkoth
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 3287 },	-- Hana'zua
 					}),
 					q(804,   {	-- Sarkoth
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 3287 },	-- Hana'zua
 						["sourceQuest"] = 790,	-- Sarkoth
@@ -115,7 +115,7 @@ _.Zones =
 						["sourceQuest"] = 25128,	-- Hana'zua
 					}),
 					q(789,   {	-- Sting of the Scorpid
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 3143 },	-- Gornek
 						["sourceQuest"] = 788,	-- Cutting Teeth
@@ -127,7 +127,7 @@ _.Zones =
 						["sourceQuest"] = 25172,	-- Invaders In Our Home
 					}),
 					q(6394, {	-- Thazz'ril's Pick
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 11378 },	-- Foreman Thazz'ril
 						["sourceQuest"] = 5441,	-- Lazy Peons
@@ -139,7 +139,7 @@ _.Zones =
 						["sourceQuest"] = 37446,	-- Lazy Peons
 					}),
 					q(792,   {	-- Vile Familiars
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 3145 },	-- Zureetha Fargaze
 						["sourceQuest"] = 1485,	-- Vile Familiars
@@ -151,7 +151,7 @@ _.Zones =
 						["sourceQuest"] = 25127,	-- Sting of the Scorpid
 					}),
 					q(4641,  {	-- Your Place in the World
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 10176 },	-- Kaltunk
 					}),

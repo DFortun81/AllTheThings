@@ -287,21 +287,21 @@ _.Instances = { tier(1, {	-- Classic
 				["g"] = {
 					n(QUESTS, {
 						q(1014, {	-- Arugal Must Die
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(6414)),	-- Seal of Sylvanas
 							},
 						}),
 						q(1098, {	-- Deathstalkers in Shadowfang
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(3324)),	-- Ghostly Mantle
 							},
 						}),
 						q(1013, {	-- The Book of Ur
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(6335)),	-- Grizzled Boots
@@ -309,7 +309,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(1740, {	-- The Orb of Soran'ruk
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { WARLOCK },
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(6898)),	-- Orb of Soran'ruk
@@ -317,12 +317,12 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(1654, {	-- The Test of Righteousness
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { PALADIN },
 							["g"] = {
 								q(1806, {	-- The Test of Righteousness
-									["u"] = 40,
+									["u"] = REMOVED_FROM_GAME,
 									["classes"] = { PALADIN },
 									["g"] = {
 										un(REMOVED_FROM_GAME, i(6953)),	-- Verigan's Fist
@@ -331,20 +331,20 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 					}),
-					un(43, n(3886, {	-- Razorclaw the Butcher
+					un(REMOVED_FROM_GAME, n(3886, {	-- Razorclaw the Butcher
 						un(REMOVED_FROM_GAME, i(6226)),	-- Bloody Apron
 						i(1292),	-- Butcher's Cleaver	NOTE: Drops from Lord Walden now and is still obtainable
 						un(REMOVED_FROM_GAME, i(6633)),	-- Butcher's Slicer
 					})),
-					un(43, n(14682, {	-- Sever
+					un(REMOVED_FROM_GAME, n(14682, {	-- Sever
 						un(REMOVED_FROM_GAME, i(23173)),	-- Abomination Skin Leggings
 						un(REMOVED_FROM_GAME, i(23171)),	-- The Axe of Severing
 					})),
-					un(43, n(4274, {	-- Fenrus the Devourer
+					un(REMOVED_FROM_GAME, n(4274, {	-- Fenrus the Devourer
 						i(3230),	-- Black Wolf Bracers	NOTE: Drops from Lord Walden now and is still obtainable
 						un(REMOVED_FROM_GAME, i(6340)),	-- Fenrus' Hide
 					})),
-					un(43, n(4275, {	-- Archmage Arugal
+					un(REMOVED_FROM_GAME, n(4275, {	-- Archmage Arugal
 						un(REMOVED_FROM_GAME, i(6392)),	-- Belt of Arugal
 						i(6220),	-- Meteor Shard	NOTE: Drops from Lord Godfrey now and is still obtainable
 						i(6324), 	-- Robes of Arugal	NOTE: Drops from Baron Ashbury now and is still obtainable

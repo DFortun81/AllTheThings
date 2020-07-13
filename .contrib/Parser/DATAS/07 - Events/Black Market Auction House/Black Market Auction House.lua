@@ -4,8 +4,33 @@
 _.WorldEvents =
 {
 	n(-94, { 	-- Black Market AH
-		["groups"] = {
-			n(103, {	-- Illusions
+		["u"] = 9,
+		["description"] = "This list is close to what you can expect to find on the Black Market Auction House, but keep in mind other items could pop up.",
+		["maps"] = {
+			1161,	-- Boralus
+			625,	-- Dalaran: Broken Isles
+			626,	-- Dalaran: Rogue Class Hall
+			628,	-- Dalaran: The Underbelly
+			862,	-- Dazar'alor
+			--590,	-- Frostwall
+			--582,	-- Lunarfall
+		},
+		["crs"] = {
+			142062,	-- Madam Gosu [Boralus - Alliance]
+			103791,	-- Madam Gosu [Rogue Class Hall]
+			135709,	-- Madam Goya [Dazar'alor - Horde]
+			100986,	-- Madam Goya [Underbelly]
+			94829,	-- Zhang Yeoh [Garrison]
+		},
+		["coords"] = {
+			{ 56.71, 46.32, 1161 },	-- Madam Gosu, Boralus
+			{ 57.91, 46.28, 626 },	-- Madam Gosu, Dalaran: Rogue Class Hall
+			{ 71.37, 17.93, 628 },	-- Madam Goya, Dalaran: The Underbelly
+			{ 63.54, 62.68, 862 },	-- Madam Goya, Dazar'alor
+			--{ 44.96, 50.07, 590 },	-- Zhang Yeoh, Frostwall
+		},
+		["g"] = {
+			n(-492, {	-- Illusions
 				un(21, i(138838)),	-- Illusion: Deathfrost
 				un(29, i(118572)), 	-- Illusion: Flame of Ragnaros
 				un(29, i(128649)),	-- Illusion: Winter's Grasp
@@ -336,7 +361,7 @@ _.WorldEvents =
 			i(110678, {	-- Darkmoon Ticket Fanny Pack
 				["description"] = "Contains 250-500 Darkmoon Faire Tickets",
 			}),
-			un(7, i(128312)),	-- Elixir of the Rapid Mind
+			un(REMOVED_FROM_GAME, i(128312)),	-- Elixir of the Rapid Mind
 			un(9, i(45037)),	-- Epic Purple Shirt
 			{	-- Grimoire of the Four Winds
 				["itemID"] = 110672,	-- Grimoire of the Four Winds
@@ -347,16 +372,16 @@ _.WorldEvents =
 				-- Removed from BMAH with 7.3.5
 			},
 			-- Heart of Fear Heroic Trash Drops. Only where available from the BMAH while HoF was current Content.
-			un(7, i(86993)),	-- Darting Damselfly Cuffs
-			un(7, i(86994)),	-- Gleaming Moth Cuffs
-			un(7, i(86999)),	-- Inlaid Cricket Bracers
-			un(7, i(86997)),	-- Jagged Hornet Bracers
-			un(7, i(86998)),	-- Luminescent Firefly Wristguards
-			un(7, i(86996)),	-- Pearlescent Butterfly Wristbands
-			un(7, i(87000)),	-- Plated Locust Bracers
-			un(7, i(87001)),	-- Serrated Wasp Bracers
-			un(7, i(86992)),	-- Shining Cicada Bracers
-			un(7, i(86995)),	-- Smooth Beetle Wristbands
+			un(REMOVED_FROM_GAME, i(86993)),	-- Darting Damselfly Cuffs
+			un(REMOVED_FROM_GAME, i(86994)),	-- Gleaming Moth Cuffs
+			un(REMOVED_FROM_GAME, i(86999)),	-- Inlaid Cricket Bracers
+			un(REMOVED_FROM_GAME, i(86997)),	-- Jagged Hornet Bracers
+			un(REMOVED_FROM_GAME, i(86998)),	-- Luminescent Firefly Wristguards
+			un(REMOVED_FROM_GAME, i(86996)),	-- Pearlescent Butterfly Wristbands
+			un(REMOVED_FROM_GAME, i(87000)),	-- Plated Locust Bracers
+			un(REMOVED_FROM_GAME, i(87001)),	-- Serrated Wasp Bracers
+			un(REMOVED_FROM_GAME, i(86992)),	-- Shining Cicada Bracers
+			un(REMOVED_FROM_GAME, i(86995)),	-- Smooth Beetle Wristbands
 			{	-- Kor'kron Shaman's Treasure
 				["groups"] = {
 					i(105745),	-- Kor'kron Dark Shaman Cowl
@@ -383,30 +408,5 @@ _.WorldEvents =
 			}),
 			un(REMOVED_FROM_GAME, i(141995)),	-- Unclaimed Black Market Container Pre 8.2.5 (they updated and added new items)
 		},
-		["description"] = "This list is close to what you can expect to find on the Black Market Auction House, but keep in mind other items could pop up.",
-		["maps"] = {
-			1161,	-- Boralus
-			625,	-- Dalaran: Broken Isles
-			626,	-- Dalaran: Rogue Class Hall
-			628,	-- Dalaran: The Underbelly
-			862,	-- Dazar'alor
-			--590,	-- Frostwall
-			--582,	-- Lunarfall
-		},
-		["crs"] = {
-			142062,	-- Madam Gosu [Boralus - Alliance]
-			103791,	-- Madam Gosu [Rogue Class Hall]
-			135709,	-- Madam Goya [Dazar'alor - Horde]
-			100986,	-- Madam Goya [Underbelly]
-			94829,	-- Zhang Yeoh [Garrison]
-		},
-		["coords"] = {
-			{ 56.71, 46.32, 1161 },	-- Madam Gosu, Boralus
-			{ 57.91, 46.28, 626 },	-- Madam Gosu, Dalaran: Rogue Class Hall
-			{ 71.37, 17.93, 628 },	-- Madam Goya, Dalaran: The Underbelly
-			{ 63.54, 62.68, 862 },	-- Madam Goya, Dazar'alor
-			--{ 44.96, 50.07, 590 },	-- Zhang Yeoh, Frostwall
-		},
-		["u"] = 9,
 	}),
 };

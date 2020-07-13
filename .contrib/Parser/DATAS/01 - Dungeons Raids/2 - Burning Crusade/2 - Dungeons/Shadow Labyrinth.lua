@@ -18,7 +18,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						["provider"] = { "n", 54891 },	-- Spy Grik'tha
 					}),
 					q(10095,  {	-- Into the Heart of the Labyrinth
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "o", 182947 },	-- The Codex of Blood
 					}),
 					q(29644, {	-- Into the Heart of the Labyrinth
@@ -33,14 +33,14 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						},
 					}),
 					q(10094,  {	-- The Codex of Blood
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 19542 },	-- Field Commander Mahfuun
 					}),
 					q(29643, {	-- The Codex of Blood
 						["provider"] = { "n", 54890 },	-- Field Commander Mahfuun
 					}),
 					q(10091,  {	-- The Soul Devices
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 18891 },	-- Spy To'gun
 						["g"] = {
 							i(28174),	-- Shattrath Wraps

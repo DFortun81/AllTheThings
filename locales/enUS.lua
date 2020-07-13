@@ -310,7 +310,7 @@ app.L = {
 		[-36] = "Interface\\Icons\\WoW_Token01", 											-- In-Game Shop
 		[-37] = "Interface\\Icons\\Garrison_Building_MageTower",							-- Discovery
 		[-38] = "Interface\\Icons\\achievement_general_workingasateam",						-- Professions
-		[-39] = "Interface\\Icons\\Inv_misc_book_17", 										-- Legacy Quest
+		[-39] = "Interface\\Icons\\Inv_misc_book_17", 									
 		[-40] = "Interface\\Icons\\Inv_misc_book_17", 										-- Legacy
 		[-41] = "Interface\\Icons\\TRADE_ARCHAEOLOGY", 										-- Cache of Madness
 		[-43] = "Interface\\Icons\\inv_chest_cloth_21",										-- Cloth Armor
@@ -524,6 +524,7 @@ app.L = {
 		[-396] = "Interface\\Icons\\achievement_dungeon_icecrown_frostwinghalls",			-- The Frostwing Halls
 		[-397] = "Interface\\Icons\\inv_icon_daily_mission_scroll",							-- Outposts
 		[-491] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",							-- Tarot Cards
+		[-492] = "Interface\\Icons\\inv_inscription_weaponscroll03",						-- Illusions
 		[-494] = "Interface\\Icons\\Ability_Shaman_Ascendance",								-- Miscellaneous
 		[-498] = "Interface\\Icons\\inv_offhand_hyjal_d_01",								-- Twisting Nether (Demon Hunter Order Hall advancement)
 		[-500] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- WoW Anniversary
@@ -638,6 +639,18 @@ app.L = {
 		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
+		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2202] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2203] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2204] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2205] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2206] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2207] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2208] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2209] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2210] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2211] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-3178] = "Interface\\Icons\\achievement_boss_warlord_kalithresh",					-- Tier 3.5
 		[-3181] = "Interface\\Icons\\achievement_boss_ossiriantheunscarred",				-- Cenarion Circle Set (Ruins of Ahn'Qiraj)
 		[-3183] = "Interface\\Icons\\achievement_boss_hakkar",								-- Tier 1.5
@@ -1403,6 +1416,20 @@ app.L = {
 
 -- Weapon Sets
 		[-2000] = GetSpellInfo(41433),											-- Twin Blades of Azzinoth
+
+-- Warrior order hall lore items
+		[-2200] = "Great Odyn and the Firelord",
+		[-2201] = "The Wanderer and the Serpent",
+		[-2202] = "Halls of GOld and Glory",
+		[-2203] = "The Keeper's Eye",
+		[-2204] = "First of the Val'kyr",
+		[-2205] = "The Sealing of the Halls of Valor",
+		[-2206] = "His Name Is Dragonblood",
+		[-2207] = "The Last Words of Asgrim the Dreadkiller",
+		[-2208] = "A Shieldmaiden's Creed",
+		[-2209] = "The Prophecy of Rythas the Oracle",
+		[-2210] = "The Lessons of the Blacklist",
+		[-2211] = "Volund's Folly",
 
 -- Other Sets
 		[-3159] = GARRISON_TIER.." 6.5 "..WARDROBE_SETS,
@@ -4157,17 +4184,17 @@ app.L = {
 		{0, "", ""}, -- 3
 		{0, "", ""}, -- 4
 		{0, "", ""}, -- 5
-		{2, "|CFFFF0000Item is included in Collector's Edition's, you can still find these for sale online in very low quantities.|r", "Collector's Edition (6)"}, -- Little Hope -- 6
-		{3, "|CFFFF0000The source of this item has been removed, but the item is Bind on Equip or a cageable pet.|r", "BoE Item (7)"}, -- There is Hope -- 7
-		{3, "|CFFFF0000The recipe to learn to craft this item has been removed and the item is Bind on Equip. This can be crafted or posted on the Auction House.|r", "Recipe: BoE Craftable Removed (8)"}, -- There is Hope -- 8
+		{0, "", ""}, -- 6
+		{0, "", ""}, -- 7
+		{0, "", ""}, -- 8
 		{3, "|CFFFF0000The source of this item has been removed and is only available with the Black Market Auction House.|r", "Black Market AH [BMAH] (9)"}, -- There is Hope -- 9
 		{3, "|CFFFF0000Item from TCG card is no longer in print, but still purchaseable online, sometimes BMAH, and possibly AH.|r", "Trading Card  Game [TCG] (10)"}, -- There is Hope -- 10
 		{3, "|CFFFF0000This item is Bind on Pickup but can be obtained if you have access to the items to summon the boss.|r", "Requires Summoning Items (11)"}, -- There is Hope -- 11
 		{0, "", ""}, -- 12
 		{1, "|CFFFF0000Your followers are too high and the mission for the cache will no longer spawn.|r", "Legacy Cache (13)"}, -- 13
-		{2, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator (14)"}, -- 14
+		{3, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator (14)"}, -- 14
 		{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
-		{2, "|CFFFF0000These items require either attending Blizzcon or purchasing a virtual ticket.  You may also find codes on various sites for high prices.|r", "Blizzcon (16)"},--16
+		{0, "", ""},--16
 		{6, "|CFF00FFDEMay require Lunar Festival to be active to obtain this item.|r", "Lunar Festival (17)"},--17
 		{7, "|CFF00FFDEMay require Love is In the Air to be active to obtain this item.|r", "Love is In the Air (18)"},--18
 		{8, "|CFF00FFDEMay require Noblegarden to be active to obtain this item.|r", "Noblegarden (19)"},--19
@@ -4182,22 +4209,20 @@ app.L = {
 		{17, "|CFF00FFDEMay require Pilgrim's Bounty to be active to obtain this item.|r", "Pilgrim's Bounty (28)"},--28
 		{18, "|CFF00FFDEMay require Feast of Winter Veil to be active to obtain this item.|r", "Feast of Winter Veil (29)"},--29
 		{19, "|CFF00FFDEMay require Stranglethorn Fishing Extravaganza to be active.|r", "Stranglethorn Fishing Extravaganza (30) "},--30
-		{20, "|CFF00FFDEThis is obtainable only during the WoW Anniversary it was active.\nIt's a possibility future anniversaries may include this item.|r\n", "WoW Anniversary (31)"},--31
-		{4, "|CFFFF0000This is an original reward for this quest. The quest was later reworked with new rewards. If you did complete this quest it is likely this item will not be added to your transmog as Blizzard will add the rewards from the revamped quest.|r", "Reworked Rewards (32)"},--32
+		{20, "|CFF00FFDEThis was only obtainable during the WoW Anniversary it was active.\nIt's a possibility future anniversaries may include this item.|r\n", "WoW Anniversary (31)"},--31
+		{0, "", ""}, --32
 		{0, "", ""}, -- 33
 		{0, "", ""}, --34
-		{3, "|CFFFF0000This item is purchased from the In-Game Store.|r", "In-Game Store (35)"}, --35
+		{3, "|CFFFF0000This can be purchased from the In-Game Shop.|r", "In-Game Shop (35)"}, --35
 		{21, "|CFFFF0000This was obtainable only during the WoW Anniversary when it was active and is no longer available.|r\n", "WoW Anniversary [Removed] (36)"}, -- 36
 		{0, "", ""}, --37
-		{4, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria or via the BMAH|r", "Ordos - Legendary Cloak (38)"}, --38
+		{1, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria or via the BMAH|r", "Ordos - Legendary Cloak (38)"}, --38
 		{0, "", ""}, --39
-		{4, "|CFFFF0000This is a Legacy quest or quest item, and is no longer available.|r", "Legacy Quests (40)"}, -- 40
-		{4, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"}, -- 41
+		{0, "", ""}, -- 40
+		{1, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"}, -- 41
 		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}, -- 42
-		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}, -- 43
-		{2, "|CFFFF0000This Item was only available from the BMAH for a limited Time.|r", "BMAH Limited Time (44)"}, -- 44
+		{0, "", ""}, -- 43
+		{0, "", ""}, -- 44
 		{1, "|CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nHouse of Nobles Cape/Gurubashi Empire Greatcloak (both BFA Emissary Rewards) & Ogom the Mangler \nare currently broken and need to be fixed.|r", "Broken Loot (45)"}, -- 45
-	--	{3, "|CFFFF0000This item is only available from War Chests while under max level.|r", "Incursion Loot (46)"}, -- 46
-	--	{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}, -- 47
 	};
 };

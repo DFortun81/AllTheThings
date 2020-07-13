@@ -41,7 +41,7 @@ _.Zones =
 					},
 				}),
 				q(4449, {	-- Caught!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 173265 },	-- Wooden Outhouse
 				}),
 				q(27976, {	-- Curse These Fat Fingers
@@ -56,7 +56,7 @@ _.Zones =
 					},
 				}),
 				q(7723,  {	-- Curse These Fat Fingers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(19126)),	-- Slagplate Gauntlets
@@ -85,18 +85,18 @@ _.Zones =
 					["sourceQuests"] = { 27963 },	-- A New Master...But Who?
 				}),
 				q(3441, {	-- Divine Retribution
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8479 },	-- Kalaran Windblade
 				}),
 				q(7724,  {	-- Fiery Menace!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(19125)),	-- Seared Mail Girdle
 					},
 				}),
 				q(3443, {	-- Forging the Shaft
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8479 },	-- Kalaran Windblade
 					["sourceQuest"] = 3442,	-- The Flawless Flame
 				}),
@@ -125,7 +125,7 @@ _.Zones =
 					["sourceQuests"] = { 27965 }, -- Thorium Point: The Seat of the Brotherhood
 				}),
 				q(7727,  {	-- Incendosaurs? Whateverosaur is More Like It
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(19141)),	-- Luffa
@@ -140,7 +140,7 @@ _.Zones =
 					},
 				}),
 				q(7702,  {	-- Kill 'em With Sleep Deprivation
-					["u"] = 40,	-- Legacy
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(19129)),	-- Everglowing Robe
@@ -157,7 +157,7 @@ _.Zones =
 					},
 				}),
 				q(4450,  {	-- Ledger from Tanaris
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11860)),	-- Charged Lightning Rod
@@ -259,7 +259,7 @@ _.Zones =
 					},
 				}),
 				q(3378,  {	-- Prayer to Elune
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10745)),	-- Kaylari Shoulders
@@ -300,7 +300,7 @@ _.Zones =
 					},
 				}),
 				q(3566,  {	-- Rise, Obsidion!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10740)),	-- Centurion Legplates
 						un(REMOVED_FROM_GAME, i(10741)),	-- Lordrec Helmet
@@ -313,7 +313,7 @@ _.Zones =
 					["sourceQuest"] = 27986,	-- In the Hall of the Mountain-Lord
 				}),
 				q(3463,  {	-- Set Them Ablaze
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10744)),	-- Axe of the Ebon Drake
 						un(REMOVED_FROM_GAME, i(10742)),	-- Dragonflight Leggings
@@ -321,7 +321,7 @@ _.Zones =
 					},
 				}),
 				q(3379,  {	-- Shadoweaver
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8439 },	-- Nilith Lokrav
 					["requireSkill"] = TAILORING,
 					["g"] = {
@@ -340,12 +340,12 @@ _.Zones =
 					["sourceQuest"] = 28052,	-- Operation: Stir the Cauldron
 				}),
 				q(3462, {	-- Squire Maltrake
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8479 },	-- Kalaran Windblade
 					["sourceQuest"] = 3454,	-- The Torch of Retribution
 				}),
 				q(7728,  {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(19123)),	-- Everwarm Handwraps
 						un(REMOVED_FROM_GAME, i(19124)),	-- Slagplate Leggings
@@ -361,17 +361,17 @@ _.Zones =
 					["coord"] = { 68.4, 53.2, 32 },
 				}),
 				q(3452, {	-- The Flame's Casing
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8479 },	-- Kalaran Windblade
 					["sourceQuest"] = 3443,	-- Forging the Shaft
 				}),
 				q(3442, {	-- The Flawless Flame
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8479 },	-- Kalaran Windblade
 					["sourceQuest"] = 3441,	-- Divine Retribution
 				}),
 				q(4451, {	-- The Key to Freedom
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 11818 },	-- Grimesilt Outhouse Key
 				}),
 				q(28035, {	-- The Mountain-Lord's Support
@@ -395,17 +395,17 @@ _.Zones =
 					["coord"] = { 37.7, 26.5, 32 },
 				}),
 				q(3453, {	-- The Torch of Retribution
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8479 },	-- Kalaran Windblade
 					["sourceQuest"] = 3452,	-- The Flame's Casing
 				}),
 				q(3454, {	-- The Torch of Retribution
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3479 },	-- Kalaran Windblade
 					["sourceQuest"] = 3453,	-- The Torch of Retribution
 				}),
 				q(3385,  {	-- The Undermarket
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8439 },	-- Nilith Lokrav
 					["sourceQuest"] = 3379,	-- Shadoweaver
 					["requireSkill"] = TAILORING,
@@ -414,7 +414,7 @@ _.Zones =
 					},
 				}),
 				q(3402,  {	-- The Undermarket
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8439 },	-- Nilith Lokrav
 					["sourceQuest"] = 3385,	-- The Undermarket
 					["requireSkill"] = TAILORING,
@@ -445,7 +445,7 @@ _.Zones =
 					},
 				}),
 				q(3481, {	-- Trinkets...
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 149502 },	-- Hoard of the Black Dragonflight
 					["sourceQuest"] = 3463,	-- Set Them Ablaze!
 				}),
@@ -463,7 +463,7 @@ _.Zones =
 					["sourceQuest"] = 28057,	-- Kill 'em With Sleep Deprivation
 				}),
 				q(7701,  {	-- WANTED: Overseer Maltorius
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(19127)),	-- Charred Leather Tunic

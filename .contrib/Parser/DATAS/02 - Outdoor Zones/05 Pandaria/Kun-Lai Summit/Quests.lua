@@ -912,7 +912,7 @@ _.Zones =
 					},
 				}),
 				q(30710, {	-- Provoking the Trolls
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(30765, {	-- Regaining Honor	-- probably triggers around the completion of "A Terrible Sacrifice"
 					["u"] = NEVER_IMPLEMENTED,
@@ -1366,7 +1366,7 @@ _.Zones =
 					["provider"] = { "n", 63778 },	-- Messenger Grummle
 				}),
 				q(38936, {	-- The Road to Kun-Lai (Adventure guide)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(31254, {	-- The Road to Kun-Lai
 					["races"] = ALLIANCE_ONLY,

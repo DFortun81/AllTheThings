@@ -17,14 +17,14 @@ _.Instances = { tier(1, {	-- Classic
 				["g"] = {
 					e(1651, {	-- Onyxia (Legacy)
 						["crs"] = { 10184 },	-- Onyxia
-						["u"] = 43,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, ach(684)),	-- Onyxia's Lair (Level 60)
 							i(18423, {	-- Head of Onyxia (A)
 								["questID"] = 7495,	-- Victory for the Alliance
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 60,
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									q(7496, {	-- Celebrating Good Times
 										["providers"] = {
@@ -35,7 +35,7 @@ _.Instances = { tier(1, {	-- Classic
 										["sourceQuest"] = 7495,	-- Victory for the Alliance
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 60,
-										["u"] = 40,
+										["u"] = REMOVED_FROM_GAME,
 										["g"] = {
 											un(REMOVED_FROM_GAME, i(18403)),	-- Dragonslayer's Signet
 											un(REMOVED_FROM_GAME, i(18406)),	-- Onyxia Blood Talisman
@@ -60,7 +60,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 7490,		-- Victory for the Horde
 								["races"] = HORDE_ONLY,
 								["lvl"] = 60,
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									q(7491, {	-- For All To See
 										["provider"] = { "n", 4949 },	-- Thrall
@@ -68,7 +68,7 @@ _.Instances = { tier(1, {	-- Classic
 										["sourceQuest"] = 7490,	-- Victory for the Horde
 										["races"] = HORDE_ONLY,
 										["lvl"] = 60,
-										["u"] = 40,
+										["u"] = REMOVED_FROM_GAME,
 										["g"] = {
 											un(REMOVED_FROM_GAME, i(18403)),	-- Dragonslayer's Signet
 											un(REMOVED_FROM_GAME, i(18404)),	-- Onyxia Tooth Pendant
@@ -94,7 +94,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 7635,	-- A Proper String
 								["classes"] = { HUNTER },
 								["lvl"] = 60,
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(18715)),	-- Lok'delar, Stave of the Ancient Keepers
 									un(REMOVED_FROM_GAME, i(18707, {	-- Ancient Rune Etched Stave

@@ -24,7 +24,7 @@ _.Zones =
 					},
 				}),
 				q(10871, {	-- Ally of the Netherwing
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 22112 },	-- Karynaku
 				}),
@@ -163,7 +163,7 @@ _.Zones =
 					["sourceQuest"] = 9998,	-- Unruly Neighbors
 				}),
 				q(10178, {	-- Find Spy To'gun
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 19496 },	-- Spy Grik'tha
 				}),
 				q(10920, {	-- For the Fallen -- aa
@@ -176,7 +176,7 @@ _.Zones =
 					["sourceQuest"] = 10922,	-- Digging Through Bones
 				}),
 				q(10164, {	-- Greatfather Aldrimus
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 19698 },	-- Greatfather Aldrimus
 					["g"] = {
 						i(29341),	-- Auchenai Anchorite's Robe
@@ -333,7 +333,7 @@ _.Zones =
 					["sourceQuest"] = 9994,	-- What Are These Things?
 				}),
 				q(9980,  {	-- Rescue Deirom!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(NEVER_IMPLEMENTED, i(25967)),	-- Eagle Crested Pauldrons
@@ -374,7 +374,7 @@ _.Zones =
 					},
 				}),
 				q(10218, {	-- Someone Else's Hard Work Pays Off
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(29328)),	-- Consortium Prince's Wrap
 						un(REMOVED_FROM_GAME, i(29327)),	-- Cryo-mitts
@@ -535,7 +535,7 @@ _.Zones =
 					["sourceQuest"] = 10000,	-- An Unwelcome Presence
 				}),
 				q(10992, {	-- The Hawk's Essence
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { 11 },	-- Druid
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(32481)),	-- Charm of Swift Flight
@@ -616,7 +616,7 @@ _.Zones =
 					},
 				}),
 				q(10165, {	-- Undercutting the Competition
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(29342)),	-- Consortium Plated Legguards
 						un(REMOVED_FROM_GAME, i(29343)),	-- Haramad's Leggings of the Third Coin
@@ -768,7 +768,7 @@ _.Zones =
 					},
 				}),
 				q(10872, {	-- Zuluhed the Whacked
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 22112 },	-- Karynaku
 				}),

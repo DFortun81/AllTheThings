@@ -164,15 +164,15 @@ _.Zones =
 					["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 				}),
 				q(4022, {	-- A Taste of Flame
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9459 },	-- Cyrus Therepentous
 				}),
 				q(4023, {	-- A Taste of Flame
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9459 },	-- Cyrus Therepentous
 				}),
 				q(4024,  {	-- A Taste of Flame
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9459 },	-- Cyrus Therepentous
 					["sourceQuests"] = {
 						4022,	-- A Taste of Flame
@@ -354,17 +354,17 @@ _.Zones =
 					},
 				}),
 				q(4735, {	-- Egg Collection
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10267 },	-- Tinkee Steamboil
 					["sourceQuest"] = 4734,	-- Egg Freezing
 				}),
 				q(4734,  {	-- Egg Freezing
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10267 },	-- Tinkee Steamboil
 					["sourceQuest"] = 4907,	-- Tinkee Steamboil
 				}),
 				q(4862, {	-- En-Ay-Es-Tee-Why
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10260 },	-- Kibler
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12529)),	-- Smolderweb Carrier
@@ -476,7 +476,7 @@ _.Zones =
 					["sourceQuests"] = { 28438 },	-- Trial by Magma
 				}),
 				q(4263,  {	-- Incendius!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12112)),	-- Crypt Demon Bracers
@@ -498,16 +498,16 @@ _.Zones =
 					["sourceQuests"] = { 28428, 28429, 28430, 28431 },	-- A Perfect Costume (Horde versions)
 				}),
 				q(7729, {	-- JOB OPPORTUNITY: Culling the Competition
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 179827 },	-- Wanted/Missing/Lost & Found
 				}),
 				q(4729, {	-- Kibler's Exotic Pets
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10260 },	-- Kibler
 				}),
 				q(3822,  {	-- Krom'Grul
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11869)),	-- Sha'ni's Ring
@@ -526,12 +526,12 @@ _.Zones =
 					["sourceQuests"] = { 28442 },	-- Flame Crest
 				}),
 				q(5522, {	-- Leonid Barthalomew
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10267 },	-- Thinkee Steamboil
 					["sourceQuest"] = 4734,	-- Egg Freezing
 				}),
 				q(4481, {	-- Libram of Constitution
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, 36 },
 					["repeatable"] = true,
@@ -548,7 +548,7 @@ _.Zones =
 					},
 				}),
 				q(4483, {	-- Libram of Resilience
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, 36 },
 					["repeatable"] = true,
@@ -565,7 +565,7 @@ _.Zones =
 					},
 				}),
 				q(4463, {	-- Libram of Rumination
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, 36 },
 					["repeatable"] = true,
@@ -582,7 +582,7 @@ _.Zones =
 					},
 				}),
 				q(4482, {	-- Libram of Tenacity
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, 36 },
 					["repeatable"] = true,
@@ -599,7 +599,7 @@ _.Zones =
 					},
 				}),
 				q(4484, {	-- Libram of Voracity
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, 36 },
 					["repeatable"] = true,
@@ -652,7 +652,7 @@ _.Zones =
 					},
 				}),
 				q(5081,  {	-- Maxwell's Mission
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(13961)),	-- Halcyon's Muzzle
@@ -698,7 +698,7 @@ _.Zones =
 					},
 				}),
 				q(3825,  {	-- Ogre Head On A Stick = Party
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11868)),	-- Choking Band
@@ -743,7 +743,7 @@ _.Zones =
 					["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
 				}),
 				q(4701,  {	-- Put Her Down
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15824)),	-- Astoria Robes
@@ -832,7 +832,7 @@ _.Zones =
 					["sourceQuests"] = { 28433 },	-- Grunt Work (procs after accepting)
 				}),
 				q(4296, {	-- Tablet of the Seven
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9536 },	-- Maxwort Uberglint
 				}),
 				q(28253, {	-- Taking the Horn For Ourselves
@@ -872,7 +872,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(4123, {	-- The Heart of the Mountain
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9536 },	-- Maxwort Uberglint
 				}),
 				q(28252, {	-- The Kodocaller's Horn
@@ -888,12 +888,12 @@ _.Zones =
 					["sourceQuests"] = { 28433 },	-- Grunt Work
 				}),
 				q(4061, {	-- The Rise of the Machines
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9079 },	-- Hierophant Theodora Mulvadania
 				}),
 				q(4062, {	-- The Rise of the Machines
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9079 },	-- Hierophant Theodora Mulvadania
 					["sourceQuest"] = 4061,	-- The Rise of the Machines
@@ -982,7 +982,7 @@ _.Zones =
 					["sourceQuests"] = { 28422 },	-- The Sand, the Cider, and the Orb
 				}),
 				q(7722, {	-- What the Flux?
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 14624 },	-- Master Smith Burninate
 				}),

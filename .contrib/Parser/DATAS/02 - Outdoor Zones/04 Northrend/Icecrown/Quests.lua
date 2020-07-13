@@ -85,7 +85,7 @@ _.Zones =
 					},
 				}),
 				q(13374, {	-- Amped for Revolt!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 54.0, 36.9, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 32430 },	-- Fringe Engineer Tezzla
@@ -565,7 +565,7 @@ _.Zones =
 					},
 				}),
 				q(13373, {	-- Fringe Science Benefits
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 32430 },	-- Fringe Engineer Tezzla
 				}),
@@ -630,7 +630,7 @@ _.Zones =
 					},
 				}),
 				q(13379, {	-- Green Technology
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 30825 },	-- Chief Engineer Copperclaw
 				}),
@@ -826,12 +826,12 @@ _.Zones =
 					},
 				}),
 				q(13383, {	-- Killohertz
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 30345 },	-- Chief Engineer Boltwrench
 				}),
 				q(13380, {	-- Leading the Charge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 32444 },	-- Kibli Killohertz
 				}),
@@ -1128,7 +1128,7 @@ _.Zones =
 					["sourceQuest"] = 13212,	-- He's Gone to Pieces
 				}),
 				q(13382, {	-- Putting the Hertz: The Valley of Lost Hope
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 54.0, 42.8, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1376,7 +1376,7 @@ _.Zones =
 					},
 				}),
 				q(13289, {	-- That's Abominable! (A) (daily)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 29799 },	-- Thassarian
@@ -1850,7 +1850,7 @@ _.Zones =
 					["sourceQuest"] = 12982,	-- Ebon Blade Prisoners
 				}),
 				q(13376, {	-- Total Ohmage: The Valley of Lost Hope!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 54.0, 36.9, 118 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1901,7 +1901,7 @@ _.Zones =
 					["sourceQuest"] = 13239,	-- Volatility
 				}),
 				q(13381, {	-- Watts My Target
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 54.0, 42.8, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 32444 },	-- Kibli Killohertz

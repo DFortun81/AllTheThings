@@ -21,9 +21,9 @@ _.Zones =
 					["coord"] = { 55.2, 40.6, 64 },
 				}),
 				n(4099,  { 	-- Galak Marauder
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(1493)),	-- Heaver Marauder Scimitar
+						un(REMOVED_FROM_GAME, i(1493)),	-- Heaver Marauder Scimitar
 					},
 				}),
 				n(14427, {	-- Gibblesnik
@@ -35,7 +35,7 @@ _.Zones =
 				n(5935,  {	-- Ironeye the Invincible
 					["coord"] = { 61.1, 67.7, 64 },
 					["g"] = {
-						un(7, i(8223)), 	-- Blade of the Basilisk
+						un(REMOVED_FROM_GAME, i(8223)), 	-- Blade of the Basilisk
 					},
 				}), 
 				n(50741, {	-- Kaxx
@@ -44,7 +44,7 @@ _.Zones =
 				n(4132,  {	-- Krkk'kx
 					["coord"] = { 70.0, 85.4, 64 },
 					["g"] = {
-						un(7, i(8224)), 	-- Silithid Ripper
+						un(REMOVED_FROM_GAME, i(8224)), 	-- Silithid Ripper
 					},
 				}), 
 				n(50748, {	-- Nyaj

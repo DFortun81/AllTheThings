@@ -223,7 +223,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109769),	-- Slicebinder Loop
 					i(109777),	-- Unsullied Signet
 					i(110011),	-- Fires of the Sun
-					un(40, i(114780)),	-- Pure Solium Band
+					un(REMOVED_FROM_GAME, i(114780)),	-- Pure Solium Band
 				})),
 			}),
 			d(2, {	-- Heroic
@@ -449,7 +449,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109769),	-- Slicebinder Loop
 						i(109777),	-- Unsullied Signet
 						i(110011),	-- Fires of the Sun
-						un(40, i(114780)),	-- Pure Solium Band
+						un(REMOVED_FROM_GAME, i(114780)),	-- Pure Solium Band
 					})),
 				},
 			}),
@@ -667,7 +667,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109769),	-- Slicebinder Loop
 						i(109777),	-- Unsullied Signet
 						i(110011),	-- Fires of the Sun
-						un(40, i(114780)),	-- Pure Solium Band
+						un(REMOVED_FROM_GAME, i(114780)),	-- Pure Solium Band
 					})),
 				},
 			}),

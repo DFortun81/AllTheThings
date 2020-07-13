@@ -32,7 +32,7 @@ _.Zones =
 						["sourceQuest"] = 24474,	-- First Things First: We're Gonna Need Some Beer
 					}),
 					q(24496, {	-- Arcane Rune
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 37087 },	-- Jona Ironstock
 						["coord"] = { 61.4, 19.4, 427 },
 						["races"] = { 3 },	-- Dwarf
@@ -53,21 +53,21 @@ _.Zones =
 						["sourceQuest"] = 24473,	-- Lockdown in Anvilmar
 					}),
 					q(31150, {	-- Elegant Rune
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 37087 },	-- Jona Ironstock
 						["coord"] = { 61.4, 19.4, 427 },
 						["races"] = { 3 },	-- Dwarf
 						["classes"] = { 10 },	-- Monk
 					}),
 					q(3109,  {	-- Encrypted Rune
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 37087 },	-- Jona Ironstock
 						["coord"] = { 61.4, 19.4, 427 },
 						["races"] = { 3, 7 },	-- Dwarf, Gnome
 						["classes"] = { 4 },	-- Rogue
 					}),
 					q(24532, {	-- Evisceratin' the Enemy
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 916 },	-- Solm Hargin
 						["coord"] = { 59.5, 20.4, 427 },
 						["races"] = { 3 },	-- Dwarf
@@ -107,7 +107,7 @@ _.Zones =
 						},
 					}),
 					q(31151, {	-- Kick, Punch, It's All in the Mind
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 63285 },	-- Lo
 						["coord"] = { 63.2, 22.3, 427 },
 						["races"] = ALLIANCE_ONLY,
@@ -159,7 +159,7 @@ _.Zones =
 						},
 					}),
 					q(24533, {	-- Words of Power
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 837 },	-- Branstock Khalder
 						["coord"] = { 60.7, 14.6, 427 },
 						["races"] = { 3 },	-- Dwarf

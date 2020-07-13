@@ -12,7 +12,7 @@ _.Zones =
 				n(616, { 	-- Chatter
 					["coord"] = { 38.2, 35.8, 49 },
 					["g"] = {
-						un(7, i(3229)), 	-- Tarantula Silk Sash
+						un(REMOVED_FROM_GAME, i(3229)), 	-- Tarantula Silk Sash
 					},
 				}), 
 				n(52146, { 	-- Chitter
@@ -29,8 +29,8 @@ _.Zones =
 				n(584, { 	-- Kazon
 					["coord"] = { 34.8, 12.2, 49 },
 					["g"] = {
-						un(7, i(3231)),		-- Cutthroat Pauldrons
-						un(7, i(2058)),		-- Kazon's Maul
+						un(REMOVED_FROM_GAME, i(3231)),		-- Cutthroat Pauldrons
+						un(REMOVED_FROM_GAME, i(2058)),		-- Kazon's Maul
 					},
 				}),
 				n(14271, { 	-- Ribchaser
@@ -43,7 +43,7 @@ _.Zones =
 				n(947, {	-- Rohh the Silent
 					["coord"] = { 68.0, 35.6, 49 },
 					["g"] = {
-						un(7, i(4447)),		-- Cloak of Night
+						un(REMOVED_FROM_GAME, i(4447)),		-- Cloak of Night
 					},
 				}),
 				n(14269, {	-- Seeker Aqualon
@@ -55,7 +55,7 @@ _.Zones =
 				n(14270, {	-- Squiddic
 					["coord"] = { 37.4, 42.6, 49 },
 					["g"] = {
-						un(7, i(1469)), 	-- Scimitar of Atun
+						un(REMOVED_FROM_GAME, i(1469)), 	-- Scimitar of Atun
 					},
 				}),
 			}),

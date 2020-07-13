@@ -58,7 +58,7 @@ _.Zones =
 					["sourceQuest"] = 13969,	-- Grol'dom's Missing Kodo
 				}),
 				q(906,   {	-- Betrayal from Within
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3430 },	-- Mangletooth
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -73,7 +73,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1848,  {	-- Brutal Hauberk
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
@@ -82,7 +82,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7133)),	-- Brutal Hauberk
 					},
@@ -159,7 +159,7 @@ _.Zones =
 					},
 				}),
 				q(6129,  {	-- Curing the Sick
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3448 },	-- Tonga Runetotem
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
@@ -183,7 +183,7 @@ _.Zones =
 					},
 				}),
 				q(853,   {	-- [DEPRECATED] Apothecary Zamah
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3390 },	-- Apothecary Helbrim
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -191,7 +191,7 @@ _.Zones =
 					},
 				}),
 				q(3281,  {	-- [DEPRECATED] Stolen Silver
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3464 },	-- Gazrog
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -200,7 +200,7 @@ _.Zones =
 					},
 				}),
 				q(862,   {	-- Dig Rat Stew
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3443 },	-- Grub
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -228,7 +228,7 @@ _.Zones =
 					},
 				}),
 				q(868,   {	-- Egg Hunt
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3428 },	-- Korran
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -273,7 +273,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(1503,  {	-- Forged Steel
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
@@ -285,7 +285,7 @@ _.Zones =
 					},
 				}),
 				q(898,   {	-- Free From the Hold
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3465 },	-- Gilthares Firebough
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -369,7 +369,7 @@ _.Zones =
 					},
 				}),
 				q(3514,  {	-- Horde Presence
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8582 },	-- Kadrak
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -415,7 +415,7 @@ _.Zones =
 				}),
 				q(3370,  {	-- In Nightmares
 					["hordeQuestID"] = 3369,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8418 },	-- Falla Sagewind
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10658)),	-- Quagmire Galoshes
@@ -439,7 +439,7 @@ _.Zones =
 					["sourceQuest"] = 13991,	-- The Purloined Payroll
 				}),
 				q(873,   {	-- Isha Awak
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3388 },	-- Mahren Skyseer
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -478,7 +478,7 @@ _.Zones =
 				q(883, {	-- Lakota'mani
 					["provider"] = { "i", 5099 },	-- Hoof of Lakota'mani
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(14038, {	-- Love it or Limpet
 					["provider"] = { "n", 3391 },	-- Gazlowe
@@ -544,7 +544,7 @@ _.Zones =
 					},
 				}),
 				q(3301,  {	-- Mura Runetotem [This quest was repurposed and made obsolete twice]
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3448 },	-- Tonga Runetotem
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -568,7 +568,7 @@ _.Zones =
 					},
 				}),
 				q(1946,  {	-- Nether-lace Garment
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3484 },	-- Kil'hala
 					["races"] = HORDE_ONLY,
 					["classes"] = { MAGE },
@@ -589,7 +589,7 @@ _.Zones =
 					["sourceQuest"] = 1838,	-- Brutal Armor
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(7866,  {	-- Outrider Basic Care Package
 					["provider"] = { "n", 14754 },	-- Kelm Hargunth
@@ -615,7 +615,7 @@ _.Zones =
 					["sourceQuest"] = 1039,	-- The Barrens Port
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(844,   {	-- Plainstrider Menace
 					["provider"] = { "n", 34258 },	-- Halga Bloodeye
@@ -704,7 +704,7 @@ _.Zones =
 					},
 				}),
 				q(902,   {	-- Samophlange
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 50.3, 25.6, 10 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 4141 },	-- Control Console
@@ -754,10 +754,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(888,   {	-- Stolen Booty
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3391 },	-- Gazlowe
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -783,7 +783,7 @@ _.Zones =
 					["sourceQuest"] = 14045,	-- Find Baron Longshore
 				}),
 				q(1795,  {	-- The Binding
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6251 },	-- Strahad Farsan
 					["lvl"] = 30,
 					["classes"] = { WARLOCK },
@@ -794,7 +794,7 @@ _.Zones =
 					},
 				}),
 				q(4964,  {	-- The Completed Orb of Dar'Orahil
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
 					["classes"] = { WARLOCK },
 					["g"] = {
@@ -803,7 +803,7 @@ _.Zones =
 					},
 				}),
 				q(4975,  {	-- The Completed Orb of Noh'Orahil
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
 					["classes"] = { WARLOCK },
 					["g"] = {
@@ -812,7 +812,7 @@ _.Zones =
 					},
 				}),
 				q(4786,  {	-- The Completed Robe
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
 					["classes"] = { WARLOCK },
 					["g"] = {
@@ -921,7 +921,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(28877, {	-- They Call Him Swiftdagger. He Kills Harpies.
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 34698 },	-- Nozzlepot
 					["races"] = HORDE_ONLY,
 				}),
@@ -942,7 +942,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(28876, {	-- To the Mor'Shan Ramparts!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3429 },	-- Thork
 					["races"] = HORDE_ONLY,
 				}),
@@ -960,7 +960,7 @@ _.Zones =
 					["sourceQuest"] = 14066,	-- Investigate the Wreckage
 				}),
 				q(1758,  {	-- Tome of the Cabal
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6251 },	-- Strahad Farsan
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
@@ -974,7 +974,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7120)),	-- Ruga's Bulwark
 					},
@@ -986,7 +986,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1841,  {	-- Velora Nitely and the Brutal Legguards
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
@@ -995,7 +995,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(851,   {	-- Verog the Dervish
 					["provider"] = { "n", 34638 },	-- Shoe
@@ -1034,7 +1034,7 @@ _.Zones =
 				q(885, {	-- Washte Pawne
 					["provider"] = { "i", 5103 },	-- Washte Pawne's Feather
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(29026, {	-- Wenikee Boltbucket
 					["provider"] = { "n", 34674 },	-- Brak Blusterpipe

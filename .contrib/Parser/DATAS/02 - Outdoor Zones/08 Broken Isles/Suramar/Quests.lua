@@ -394,7 +394,7 @@ _.Zones =
 					["sourceQuest"] = 38649,	-- Silence in the City
 				}),
 				q(40973, {	-- Creating Time
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(44843, {	-- Crystal Clearing
 					["coord"] = { 40.6, 64.4, 680 },
@@ -584,7 +584,7 @@ _.Zones =
 					["sourceQuest"] = 41473,	-- Redhoof the Ancient
 				}),
 				q(45317, {	-- Fighting on All Fronts
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 115039 },	-- Archmage Khadgar
 				}),
 				q(40469, {	-- Final Preparations
@@ -774,38 +774,38 @@ _.Zones =
 					["sourceQuest"] = 44725,	-- Hostage Situation
 				}),
 				q(45271, {	-- Insurrection
-					["u"] = 40, -- provided by the adventure journal in 7.1
+					["u"] = REMOVED_FROM_GAME, -- provided by the adventure journal in 7.1
 				}),
 				q(45278, {	-- Insurrection: An Elven Problem
-					["u"] = 40,	-- old adventure guide quest
+					["u"] = REMOVED_FROM_GAME,	-- old adventure guide quest
 					["isBreadcrumb"] = true,
 				}),
 				q(45285, {	-- Insurrection: As Strong As Our Will
-					["u"] = 40,	-- old adventure guide quest
+					["u"] = REMOVED_FROM_GAME,	-- old adventure guide quest
 					["isBreadcrumb"] = true,
 				}),
 				q(45287, {	-- Insurrection: Breaking the Nighthold
-					["u"] = 40,	-- old adventure guide quest
+					["u"] = REMOVED_FROM_GAME,	-- old adventure guide quest
 					["isBreadcrumb"] = true,
 				}),
 				q(45280, {	-- Insurrection: Crafting War
-					["u"] = 40,	-- old adventure guide quest
+					["u"] = REMOVED_FROM_GAME,	-- old adventure guide quest
 					["isBreadcrumb"] = true,
 				}),
 				q(45282, {	-- Insurrection: Elisande's Retort
-					["u"] = 40,	-- old adventure guide quest
+					["u"] = REMOVED_FROM_GAME,	-- old adventure guide quest
 					["isBreadcrumb"] = true,
 				}),
 				q(45281, {	-- Insurrection: March on Suramar
-					["u"] = 40,	-- old adventure guide quest
+					["u"] = REMOVED_FROM_GAME,	-- old adventure guide quest
 					["isBreadcrumb"] = true,
 				}),
 				q(45272, {	-- Insurrection: Missing Persons
-					["u"] = 40,	-- old adventure guide quest
+					["u"] = REMOVED_FROM_GAME,	-- old adventure guide quest
 					["isBreadcrumb"] = true,
 				}),
 				q(45277, {	-- Insurrection: Waxing Crescent
-					["u"] = 40,	-- old adventure guide quest
+					["u"] = REMOVED_FROM_GAME,	-- old adventure guide quest
 					["isBreadcrumb"] = true,
 				}),
 				q(42834, {	-- Intense Concentration
@@ -1901,7 +1901,7 @@ _.Zones =
 					},
 				}),
 				q(40762, {	-- Zealot's Dues
-					["u"] = 40,	-- Item doesn't appear to drop anymore, so marking quest as removed for now
+					["u"] = REMOVED_FROM_GAME,	-- Item doesn't appear to drop anymore, so marking quest as removed for now
 					["cr"] = 106275,	-- Commander Domitille
 					["provider"] = { "i", 136851 },	-- Commander Domitille's Helm
 					["coords"] = {

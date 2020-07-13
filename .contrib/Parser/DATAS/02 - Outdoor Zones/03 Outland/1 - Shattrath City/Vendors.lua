@@ -112,7 +112,7 @@ _.Zones =
 					["g"] = {
 						i(25720, {	-- Pattern: Heavy Knothide Leather
 							["spellID"] = 0,	-- This is now available from the trainer, so use spellID=0 to delink the old plans from the recipe
-							["u"] = 8,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
@@ -1187,7 +1187,7 @@ _.Zones =
 						}),
 						i(32381, {	-- Schematic: Fused Wiring
 							["spellID"] = 0,
-							["u"] = 7,	-- now learned from trainer, schematic was removed from game
+							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
 						}),
 					},
 				}),

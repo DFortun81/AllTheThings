@@ -41,7 +41,7 @@ _.Zones =
 					},
 				}),
 				q(4971,  {	-- A Matter of Time
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15813)),	-- Gold Link Belt
 						un(REMOVED_FROM_GAME, i(15812)),	-- Orchid Amice
@@ -97,7 +97,7 @@ _.Zones =
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 8947,	-- Anthion's Strange Request
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(8959,  {	-- Anthion's Parting Words (Warrior)[Alliance]
 					["provider"] = { "n", 16016 },	-- Anthion Harmon
@@ -106,7 +106,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21995)),	-- Boots of Heroism
 						un(REMOVED_FROM_GAME, i(22000)),	-- Legplates of Heroism
@@ -120,7 +120,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22087)),	-- Soulforge Boots
 						un(REMOVED_FROM_GAME, i(22092)),	-- Soulforge Legplates
@@ -134,7 +134,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 3 },	-- Hunter
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22061)),	-- Beastmaster's Boots
 						un(REMOVED_FROM_GAME, i(22016)),	-- Beastmaster's Mantle
@@ -148,7 +148,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22003)),	-- Darkmantle Boots
 						un(REMOVED_FROM_GAME, i(22007)),	-- Darkmantle Pants
@@ -162,7 +162,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22082)),	-- Virtuous Mantle
 						un(REMOVED_FROM_GAME, i(22084)),	-- Virtuous Sandals
@@ -176,7 +176,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 7 },	-- Shaman
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22096)),	-- Boots of The Five Thunders
 						un(REMOVED_FROM_GAME, i(22100)),	-- Kilt of The Five Thunders.
@@ -190,7 +190,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 8 },	-- Mage
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22064)),	-- Sorcerer's Boots
 						un(REMOVED_FROM_GAME, i(22067)),	-- Sorcerer's Leggings
@@ -204,7 +204,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 9 },	-- Warlock
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22072)),	-- Deathmist Leggings
 						un(REMOVED_FROM_GAME, i(22073)),	-- Deathmist Mantle
@@ -218,7 +218,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22107)),	-- Feralheart Boots
 						un(REMOVED_FROM_GAME, i(22111)),	-- Feralheart Kilt
@@ -232,7 +232,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21995)),	-- Boots of Heroism
 						un(REMOVED_FROM_GAME, i(22000)),	-- Legplates of Heroism
@@ -246,7 +246,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22087)),	-- Soulforge Boots
 						un(REMOVED_FROM_GAME, i(22092)),	-- Soulforge Legplates
@@ -260,7 +260,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 3 },	-- Hunter
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22061)),	-- Beastmaster's Boots
 						un(REMOVED_FROM_GAME, i(22016)),	-- Beastmaster's Mantle
@@ -274,7 +274,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22003)),	-- Darkmantle Boots
 						un(REMOVED_FROM_GAME, i(22007)),	-- Darkmantle Pants
@@ -288,7 +288,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22082)),	-- Virtuous Mantle
 						un(REMOVED_FROM_GAME, i(22084)),	-- Virtuous Sandals
@@ -302,7 +302,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 7 },	-- Shaman
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22096)),	-- Boots of The Five Thunders
 						un(REMOVED_FROM_GAME, i(22100)),	-- Kilt of The Five Thunders.
@@ -316,7 +316,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 8 },	-- Mage
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22064)),	-- Sorcerer's Boots
 						un(REMOVED_FROM_GAME, i(22067)),	-- Sorcerer's Leggings
@@ -330,7 +330,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 9 },	-- Warlock
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22072)),	-- Deathmist Leggings
 						un(REMOVED_FROM_GAME, i(22073)),	-- Deathmist Mantle
@@ -344,7 +344,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22107)),	-- Feralheart Boots
 						un(REMOVED_FROM_GAME, i(22111)),	-- Feralheart Kilt
@@ -356,7 +356,7 @@ _.Zones =
 					["coord"] = { 26.9, 12.1, 23 },
 					["sourceQuest"] = 8946,	-- Proof of Life
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27466, {	-- Argent Call: Northdale
 					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
@@ -400,7 +400,7 @@ _.Zones =
 					["coord"] = { 11.3, 28.5, 23 },
 				}),
 				q(5152, {	-- Auntie Marlene
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10926 },	-- Pamela Redpath
 					["sourceQuest"] = 5149,	-- Pamela's Doll
 				}),
@@ -427,12 +427,12 @@ _.Zones =
 					},
 				}),
 				q(5531, {	-- Betina Bigglezink
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
 					["sourceQuest"] = 5522,	-- Leonid Barthalomew
 				}),
 				q(9131, {	-- Binding the Dreadnaught
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
 				}),
@@ -442,16 +442,16 @@ _.Zones =
 					["sourceQuests"] = { 27522 },	-- Beat it Out of Them
 				}),
 				q(5543, {	-- Blood Tinged Skies
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
 				q(9665, {	-- Bolstering Our Defenses
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 17072 },	-- Emissary Gormok
 				}),
 				q(9126, {	-- Bonescythe Digs
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16131 },	-- Rohan the Assassin
 				}),
 				q(27455, {	-- Boys Will Be Boys
@@ -470,7 +470,7 @@ _.Zones =
 					},
 				}),
 				q(5544, {	-- Carrion Grubbage
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
 				q(27453, {	-- Catalysm
@@ -489,7 +489,7 @@ _.Zones =
 				}),
 				q(5408,  {	-- Corruptor's Scourgestones
 					["provider"] = { "n", 11039 },		-- Duke Nicholas Zverenhoff
-					["u"] = 40,			-- Removed in Patch 4.0.3
+					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
 					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
@@ -507,7 +507,7 @@ _.Zones =
 					},
 				}),
 				q(9124, {	-- Cryptstalker Armor Doesn't Make Itself...
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16132 },	-- Huntsman Leopold
 				}),
 				q(27452, {	-- Dark Garb
@@ -522,10 +522,10 @@ _.Zones =
 						8930,	-- In Search of Anthion [Horde]
 					},
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(5211, {	-- Defenders of Darrowshire
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
 					["sourceQuest"] = 5241,	-- Uncle Carlin
 				}),
@@ -534,11 +534,11 @@ _.Zones =
 					["coord"] = { 27.6, 20.8, 23 },
 				}),
 				q(5542, {	-- Demon Dogs
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
 				q(6135,  {	-- Duskwing, Oh How I Hate Thee...
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(16994)),	-- Duskwing Gloves
@@ -556,7 +556,7 @@ _.Zones =
 					},
 				}),
 				q(9222,  {	-- Epic Armaments of Battle - Friend of the Dawn
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22657)),	-- Amulet of the Dawn
@@ -568,7 +568,7 @@ _.Zones =
 					},
 				}),
 				q(9224,  {	-- Epic Armaments of Battle - Honored Amongst the Dawn
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22657)),	-- Amulet of the Dawn
@@ -580,7 +580,7 @@ _.Zones =
 					},
 				}),
 				q(9225,  {	-- Epic Armaments of Battle - Revered Amongst the Dawn
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22657)),	-- Amulet of the Dawn
@@ -592,7 +592,7 @@ _.Zones =
 					},
 				}),
 				q(9228,  {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22657)),	-- Amulet of the Dawn
@@ -604,7 +604,7 @@ _.Zones =
 					},
 				}),
 				q(5861, {	-- Find Myranda
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
 				q(27555, {	-- Fiona's Lucky Charm
@@ -686,10 +686,10 @@ _.Zones =
 					},
 				}),
 				q(9237,  {	-- Glacial Cloak [Quest]
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16376 },	--
 					["g"] = {
-						un(8, i(22658)),	-- Glacial Cloak
+						un(REMOVED_FROM_GAME, i(22658)),	-- Glacial Cloak
 					},
 				}),
 				q(27369, {	-- Greasing the Wheel
@@ -710,14 +710,14 @@ _.Zones =
 					["sourceQuests"] = { 27524 },	-- Blind Fury
 				}),
 				q(6024,  {	-- Hameya's Plea
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15815)),	-- Hameya's Cloak
 						un(REMOVED_FROM_GAME, i(15814)),	-- Hameya's Slayer
 					},
 				}),
 				q(5168,  {	-- Heroes of Darrowshire
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
 				}),
 				q(27388, {	-- Heroes of Darrowshire
@@ -726,7 +726,7 @@ _.Zones =
 					["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 				}),
 				q(5942,  {	-- Hidden Treasures
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15856)),	-- Archlight Talisman
 						un(REMOVED_FROM_GAME, i(15857)),	-- Magebane Scion
@@ -751,7 +751,7 @@ _.Zones =
 					["sourceQuests"] = { 27432 },	-- Zaeldarr the Outcast
 				}),
 				q(5243,  {	-- Houses of the Holy
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(13217)),	-- Band of the Penitent
@@ -783,7 +783,7 @@ _.Zones =
 				}),
 				q(5509,  {	-- Invader's Scourgestones
 					["provider"] = { "n", 11039 },		-- Duke Nicholas Zverenhoff
-					["u"] = 40,			-- Removed in Patch 4.0.3
+					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
 					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
@@ -852,11 +852,11 @@ _.Zones =
 					["coord"] = { 35.5, 68.8, 23 },
 				}),
 				q(5513, {	-- Mantles of the Dawn
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11536 },	-- Quartermaster Miranda Breechlock
 				}),
 				q(5206, {	-- Marauders of Darrowshire
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
 					["sourceQuests"] = {
 						5168,	-- Heroes of Darrowshire
@@ -869,18 +869,18 @@ _.Zones =
 					["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 				}),
 				q(5463,  {	-- Menethil's Gift
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
 					["sourceQuest"] = 5462,	-- The Dying, Ras Frostwhisper
 				}),
 				q(5464, {	-- Menethil's Gift
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 176631 },	-- Menethil's Gift
 					["sourceQuest"] = 5463,	-- Menethil's Gift
 				}),
 				q(5510,  {	-- Minion's Scourgestones
 					["provider"] = { "n", 11039 },		-- Duke Nicholas Zverenhoff
-					["u"] = 40,			-- Removed in Patch 4.0.3
+					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
 					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
@@ -892,15 +892,15 @@ _.Zones =
 					["sourceQuests"] = { 27488 },	-- Impatience
 				}),
 				q(5781, {	-- Of Forgotten Memories
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
 				q(5845, {	-- Of Lost Honor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
 				q(5846, {	-- Of Love and Family (1/2)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
 				q(27373, {	-- Onward, to Light's Hope Chapel
@@ -920,7 +920,7 @@ _.Zones =
 					},
 				}),
 				q(5149, {	-- Pamela's Doll
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10926 },	-- Pamela Redpath
 					["sourceQuests"] = {
 						5142,	-- Little Pamela
@@ -945,7 +945,7 @@ _.Zones =
 					},
 				}),
 				q(5529, {	-- Plagued Hatchlings
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11035 },	-- Betina Bigglezink
 				}),
 				q(27420, {	-- Postponing the Inevitable
@@ -954,7 +954,7 @@ _.Zones =
 					["sourceQuests"] = { 27544 },	-- Cenarion Tenacity
 				}),
 				q(6163,  {	-- Ramstein
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(17001)),	-- Elemental Circle
@@ -962,11 +962,11 @@ _.Zones =
 					},
 				}),
 				q(5742, {	-- Redemption
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
 				q(5941, {	-- Return to Chromie
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
 					["sourceQuest"] = 5206,	-- Marauders of Darrowshire
 				}),
@@ -997,7 +997,7 @@ _.Zones =
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
 				}),
 				q(5862, {	-- Scarlet Subterfuge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11872 },	-- Myranda the Hag
 				}),
 				q(27528, {	-- Scourged Mass
@@ -1014,7 +1014,7 @@ _.Zones =
 					["sourceQuests"] = { 27459 }, -- The Brotherhood of Light
 				}),
 				q(9221,  {	-- Superior Armaments of Battle - Friend of the Dawn
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22681)),	-- Band of Piety
@@ -1025,7 +1025,7 @@ _.Zones =
 					},
 				}),
 				q(9223,  {	-- Superior Armaments of Battle - Honored Amongst the Dawn
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22681)),	-- Band of Piety
@@ -1036,7 +1036,7 @@ _.Zones =
 					},
 				}),
 				q(9226,  {	-- Superior Armaments of Battle - Revered Amongst the Dawn
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22681)),	-- Band of Piety
@@ -1047,7 +1047,7 @@ _.Zones =
 					},
 				}),
 				q(9227,  {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22681)),	-- Band of Piety
@@ -1078,18 +1078,18 @@ _.Zones =
 					},
 				}),
 				q(5213,  {	-- The Active Agent
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(19812)),	-- Rune of the Dawn
 						un(REMOVED_FROM_GAME, i(13209)),	-- Seal of the Dawn
 					},
 				}),
 				q(5251, {	-- The Archivist
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff
 				}),
 				q(5265,  {	-- The Argent Hold
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(13246)),	-- Argent Avenger
 						un(REMOVED_FROM_GAME, i(13249)),	-- Argent Crusader
@@ -1133,7 +1133,7 @@ _.Zones =
 					["coord"] = { 41.0, 87.9, 24 },
 				}),
 				q(9141, {	-- They Call Me "The Rooster"
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27619, {	-- The Commander
 					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
@@ -1160,7 +1160,7 @@ _.Zones =
 					},
 				}),
 				q(6136,  {	-- The Corpulent One
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(17002)),	-- Ichor Spitter
@@ -1178,16 +1178,16 @@ _.Zones =
 					},
 				}),
 				q(9128, {	-- The Elemental Equation
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 				}),
 				q(5212, {	-- The Flesh Does Not Lie
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11035 },	-- Betina Bigglezink
 				}),
 				q(5214,  {	-- The Great Fras Siabi
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(13171)),	-- Smokey's Lighter
 					},
@@ -1198,13 +1198,13 @@ _.Zones =
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
 				}),
 				q(9211,  {	-- The Ice Guard
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22636)),	-- Ice Guard
 					},
 				}),
 				q(5466, { 	-- The Lich, Ras Frostwhisper
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11286 },	-- Magistrate Marduke
 					["sourceQuest"] = 5465,	-- Soulbound Keepsake
 					["g"] = {
@@ -1221,16 +1221,16 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(6133, {	-- The Ranger Lord's Behest
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["races"] = HORDE_ONLY,
 				}),
 				q(5281, {	-- The Restless Souls
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11038 },	-- Caretaker Alen
 				}),
 				q(5282, {	-- The Restless Souls
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11140 },	-- Egan
 					["sourceQuest"] = 5281,	-- The Restless Souls
 					["g"] = {
@@ -1238,7 +1238,7 @@ _.Zones =
 					},
 				}),
 				q(9213,  {	-- The Shadow Guard
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22638)),	-- Shadow Guard
 					},
@@ -1257,11 +1257,11 @@ _.Zones =
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
 				}),
 				q(5281, {	-- The Restless Souls
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11038 },	-- Caretaker Alen
 				}),
 				q(6022, {	-- To Kill With Purpose (Legacy)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["races"] = HORDE_ONLY,
 				}),
@@ -1281,7 +1281,7 @@ _.Zones =
 					["sourceQuests"] = { 27373 },	-- Onward, to Light's Hope Chapel
 				}),
 				q(5241, {	-- Uncle Carlin
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10926 },	-- Pamela Redpath
 					["sourceQuest"] = 5149,	-- Pamela's Doll
 				}),
@@ -1294,7 +1294,7 @@ _.Zones =
 					},
 				}),
 				q(6042, {	-- Un-Life's Little Annoyances
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["races"] = HORDE_ONLY,
 				}),
@@ -1314,7 +1314,7 @@ _.Zones =
 					["sourceQuests"] = { 27461 },	-- To Take the Abbey
 				}),
 				q(5181, {	-- Villains of Darrowshire
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
 					["sourceQuest"] = 5210,	-- Brother Carlin
 				}),
@@ -1340,7 +1340,7 @@ _.Zones =
 					["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
 				}),
 				q(6041,  {	-- When Smokey Sings, I Get Violent
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(17523)),	-- Smokey's Drape
 						un(REMOVED_FROM_GAME, i(16992)),	-- Smokey's Explosive Launcher
@@ -1352,7 +1352,7 @@ _.Zones =
 					["coord"] = { 49.9, 19.5, 23 },
 				}),
 				q(6021, {	-- Zeldarr the Outcast
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11038 },	-- Caretaker Alen
 				}),
 				q(27432, {	-- Zaeldarr the Outcast

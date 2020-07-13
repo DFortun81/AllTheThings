@@ -10,7 +10,7 @@ _.Zones =
 					["provider"] = { "n", 18528 },	-- Xi'ri
 					["coord"] = { 65.2, 44.0, 104 },
 					["sourceQuests"] = { 10949 },	-- Entry Into the Black Temple
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(32649),	-- Medallion of Karabor
 					},
@@ -322,13 +322,13 @@ _.Zones =
 					["sourceQuests"] = { 10458 },	-- Enraged Spirits of Fire and Earth
 				}),
 				q(10754, {	-- Entry Into the Citadel (removed, old BT key questline)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 22037 },	-- Smith Gorlunk
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 31239 },	-- Primed Key Mold
 				}),
 				q(10755, {	-- Entry Into the Citadel
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 22037 },	-- Smith Gorlunk
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 31241 },	-- Primed Key Mold
@@ -417,12 +417,12 @@ _.Zones =
 					["sourceQuests"] = { 10513 },	-- Oronok Torn-heart
 				}),
 				q(11497, {	-- Learning to Fly (A)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 18940 },	-- Nutral
 				}),
 				q(11498, {	-- Learning to Fly (H)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 18940 },	-- Nutral
 				}),

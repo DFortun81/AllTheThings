@@ -249,10 +249,10 @@ _.WorldEvents =
 							["sourceQuests"] = { 40755 },	-- Hiding in the Stacks
 						}),
 						q(43291, {	-- Defend (Dun Morogh)
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43283, {	-- Demon Commander (Dun Morogh)
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(40755, {	-- Hiding in the Stacks
 							["groups"] = {
@@ -273,34 +273,34 @@ _.WorldEvents =
 							["sourceQuests"] = { 44500 },	-- Author! Author!
 						}),								
 						q(43301, {	-- Invasion: Azshara
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43284, {	-- Invasion: Dun Morogh
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(42803, {	-- Invasion: Dun Morogh
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43285, {	-- Invasion: Hillsbrad Foothills
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(42805, {	-- Invasion: Hillsbrad Foothills
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43282, {	-- Invasion: Northern Barrens
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(42236, {	-- Invasion: Northern Barrens
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43244, {	-- Invasion: Tanaris
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(42237, {	-- Invasion: Tanaris
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43245, {	-- Invasion: Westfall
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(42970, {	-- The Diamond King
 							["provider"] = { "n", 113655 },	-- Brann Bronzebeard
@@ -320,7 +320,7 @@ _.WorldEvents =
 					}),
 					n(VENDORS, {
 						n(109912, {	-- Captive Wyrmtongue <Reluctant 'Quartermaster'>
-							un(7, i(136924)),	-- Felbat Pup Pet
+							un(REMOVED_FROM_GAME, i(136924)),	-- Felbat Pup Pet
 							un(REMOVED_FROM_GAME, i(141604)),	-- Glaive of the Fallen
 							un(REMOVED_FROM_GAME, i(138160)),	-- Infernal Cord
 							un(REMOVED_FROM_GAME, i(139172)),	-- Legionnaire's Fel Pendant
@@ -387,7 +387,7 @@ _.WorldEvents =
 					n(ZONEDROPS, {
 						n(112315, { 	-- Dread Infiltrator
 							["groups"] = {
-								un(7, i(140363)),	-- Pocket Fel Spreader Toy
+								un(REMOVED_FROM_GAME, i(140363)),	-- Pocket Fel Spreader Toy
 							},
 							["description"] = "Players with some sort of Sense Demons ability could get this mob to spawn from Doomsayers.",
 						}),

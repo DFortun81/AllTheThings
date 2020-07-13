@@ -25,19 +25,19 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(6522, {	-- An Unholy Alliance
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 4421 },	-- Charlga Razorflank
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 17008 },	-- Small Scroll
 				}),
 				q(14352, {	-- An Unholy Alliance
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["cr"] = 4421,	-- Charlga Razorflank
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 49205 },	-- Small Scroll
 				}),
 				q(24900, {	-- Blueleaf Tubers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26901, {	-- Going, Going, Guano!
 					["provider"] = { "n", 44402 },	-- Auld Stonespire
@@ -45,7 +45,7 @@ _.Instances = { tier(1, {	-- Classic
 				q(1142,  {	-- Mortality Wanes
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 4510 },	-- Heralath Fallowbrook
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6751)),	-- Mourning Shawl
 						un(REMOVED_FROM_GAME, i(6752)),	-- Lancer Boots
@@ -55,7 +55,7 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 44402 },	-- Auld Stonespire
 				}),
 				q(24630, {	-- The Crone of the Kraul
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(53155)),	-- Agamaggan's Thorn
 						un(REMOVED_FROM_GAME, i(53158)),	-- Spaulder of the Matriarch
@@ -65,7 +65,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(1144,  {	-- Willix the Importer
 					["provider"] = { "n", 4508 },	-- Willix the Importer
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6748)),	-- Monkey Ring
 						un(REMOVED_FROM_GAME, i(6750)),	-- Snake Hoop
@@ -73,7 +73,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(26903, {	-- Willix the Importer
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4508 },	-- Willix the Importer
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6748)),	-- Monkey Ring
@@ -216,13 +216,13 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				n(4517, {	-- Death's Head Priest
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(3569)), 	-- Vicar's Robe
+						un(REMOVED_FROM_GAME, i(3569)), 	-- Vicar's Robe
 					},
 				}),
 				n(4428, {	-- Death Speaker Jargba <Death's Head Captain>
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2816)),	-- Death Speaker Scepter
 						i(6685),	-- Death Speaker Mantle
@@ -230,7 +230,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				n(4438, {	-- Razorfen Spearhide
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6679)),	-- Armor Piercer
 					},

@@ -7,7 +7,7 @@ _.Zones =
 		m(51, {	-- Swamp of Sorrows
 			n(QUESTS, {
 				q(2801,  {	-- A Tale of Sorrow
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2783,	-- Petty Squabbles
 				}),
@@ -64,13 +64,13 @@ _.Zones =
 					},
 				}),
 				q(1428,  {	-- Continued Threat
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5593 },	-- Katar
 					["sourceQuest"] = 1427,	-- Threat From the Sea
 				}),
 				q(625,   {	-- Cortellos' Riddle
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 2553 },	-- A Soggy Scroll
 					["sourceQuest"] = 624,	-- Cortello's Riddle
 				}),
@@ -98,7 +98,7 @@ _.Zones =
 					},
 				}),
 				q(1389,  {	-- Draenethyst Crystals
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1776 },	-- Magtoor
 				}),
 				q(27840, {	-- Draenethyst Crystals
@@ -119,31 +119,31 @@ _.Zones =
 					},
 				}),
 				q(1430,  {	-- [DEPRECATED]Fresh Meat
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9682)),	-- Leather Chef's Belt
 					},
 				}),
 				q(2784,  {	-- Fall From Grace
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["races"] = HORDE_ONLY,
 				}),
 				q(1393,  {	-- Galen's Escape
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6828)),	-- Visionary Buckler
 					},
 				}),
 				q(2702,  {	-- Heroes of Old
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2681,	-- The Stones that Bind Us
 				}),
 				q(2701,  {	-- Heroes of Old 2
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7750 },	-- Corporal Thund Splithoof
 					["sourceQuest"] = 2702,	-- Heroes of Old
 					["g"] = {
@@ -170,17 +170,17 @@ _.Zones =
 					["sourceQuest"] = 27597,	-- Crazy Larry
 				}),
 				q(2721, {	-- Kirith
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2701,	-- Heroes of Old
 				}),
 				q(698,   {	-- Lack of Surplus
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5591 },	-- Dar
 				}),
 				q(699,   {	-- Lack of Surplus
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5592 },	-- Tok'Kar
 					["sourceQuest"] = 698,	-- Lack of Surplus
@@ -200,7 +200,7 @@ _.Zones =
 					["sourceQuest"] = 27694,	-- Pool of Tears
 				}),
 				q(9440, {	-- [DEPRECATED]Little Morsels
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 17109 },	-- Cersei Dusksinger
 				}),
@@ -267,7 +267,7 @@ _.Zones =
 					},
 				}),
 				q(1418,  {	-- Neeka Bloodscar
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1442 },	-- Helgrum the Swift
 				}),
@@ -278,7 +278,7 @@ _.Zones =
 					["sourceQuest"] = 27857,	-- We're Under Attack!
 				}),
 				q(1392, {	-- Noboru the Cudgel
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(28553, {	-- Okrilla and the Blasted Lands
 					["provider"] = { "n", 7623 },	-- Dispatch Commander Ruag
@@ -307,12 +307,12 @@ _.Zones =
 					["sourceQuest"] = 27871,	-- To Stonard
 				}),
 				q(2783,  {	-- Petty Squabbles
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7826 },	-- Ambassador Ardalan
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1424,  {	-- Pool of Tears
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1443 },	-- Fel'zerul
 				}),
@@ -350,7 +350,7 @@ _.Zones =
 					},
 				}),
 				q(1444, {	-- Return to Fel'Zerul
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5598 },	-- Atal'ai Exile
 					["sourceQuest"] = 1429,	-- The Atal'ai Exile
@@ -410,7 +410,7 @@ _.Zones =
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
 				}),
 				q(1429, {	-- The Atal'ai Exile
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1443 },	-- Fel'zerul
 					["sourceQuest"] = 1424,	-- Pool of Tears
@@ -427,12 +427,12 @@ _.Zones =
 					},
 				}),
 				q(2744, {	-- The Demon Hunter
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2743,	-- The Cover of Darkness
 				}),
 				q(2621,  {	-- The Disgraced One
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 2784,	-- Fall From Grace
@@ -464,7 +464,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2622,  {	-- The Missing Orders
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7623 },	-- Dispatch Commander Ruag
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 2621,	-- The Disgraced One
@@ -488,30 +488,30 @@ _.Zones =
 					},
 				}),
 				q(2681,  {	-- The Stones That Bind Us
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuests"] = {
 						2801,	-- A Tale of Sorrow (A)
 						2623,	-- The Swamp (H)
 					},
 				}),
 				q(2623,  {	-- The Swamp
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7643 },	-- Bengor
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 2622,	-- The Missing Orders
 				}),
 				q(1422,  {	-- Threat From the Sea
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5592 },	-- Tok'Kar
 				}),
 				q(1426,  {	-- Threat From the Sea
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5593 },	-- Katar
 				}),
 				q(1427,  {	-- [DEPRECATED]Threat From the Sea
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5593 },	-- Katar
 					["sourceQuest"] = 1426,	-- Threat From the Sea

@@ -80,7 +80,7 @@ _.Zones =
 				n(12777, {	-- Captain Dirgehammer (Legacy)
 					["coord"] = { 75.0, 67.5, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(16422)),	-- Knight-Captain's Dragonhide Leggings
 						un(REMOVED_FROM_GAME, i(16421)),	-- Knight-Captains's Dragonhide Tunic
@@ -191,7 +191,7 @@ _.Zones =
 				n(34079, {	-- Captain O'Neal
 					["coord"] = { 75.0, 66.7, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(41563),	-- Design: Willful Huge Citrine
 						i(41564),	-- Design: Empowered Huge Citrine
@@ -2316,7 +2316,7 @@ _.Zones =
 				n(40606, {	-- Knight-Lieutenant T'Maire Sydes >S10< Elite / Old S11 <Ruthless Gladiator>
 					["coord"] = { 74.8, 67.6, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -673, -662 },	-- Ruthless Gladiator: Season 10 Elite Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
@@ -2646,7 +2646,7 @@ _.Zones =
 					-- The NPC ID got reused — she was also >S11< Elite Vendor & >S9< Vendor
 					["coord"] = { 75.0, 67.0, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(33065)),	-- Veterans Pendant of Dominance
 						un(REMOVED_FROM_GAME, i(33066)),	-- Veterans Pendant of triumph
@@ -2685,7 +2685,7 @@ _.Zones =
 				n(51255, {	--Lieutenant Tristia >S9< Elite <Vicious Gladiator>
 					["coord"] = { 75.0, 67.0, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -674, -662 },
 						{"pop"},	-- Discard the Set header and acquire the children.

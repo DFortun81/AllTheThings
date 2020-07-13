@@ -294,26 +294,7 @@ namespace ATT
                     }
                     else
                     {
-#if CLASSIC
                         data["u"] = 2;  // Removed From Game
-#else
-                        if (data.TryGetValue("b", out int b))
-                        {
-                            switch (b)
-                            {
-                                case 1:
-                                    data["u"] = 2;  // Removed From Game
-                                    break;
-                                default:
-                                    data["u"] = 7;  // Legacy BOE Removed (TODO: Deprecate this.)
-                                    break;
-                            }
-                        }
-                        else
-                        {
-                            data["u"] = 7;  // Legacy BOE Removed (TODO: Deprecate this.)
-                        }
-#endif
                     }
                 }
             }

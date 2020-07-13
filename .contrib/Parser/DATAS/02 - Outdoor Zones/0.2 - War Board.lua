@@ -23,8 +23,8 @@ _.Zones =
 				["isBreadcrumb"] = true,
 				["lvl"] = 85,
 			}),
-			un(40, q(36499)),	-- Iron Horde Invasion (LEGACY - pre WoD)
-			un(40, q(4494)),	-- March of the Silithid
+			un(REMOVED_FROM_GAME, q(36499)),	-- Iron Horde Invasion (LEGACY - pre WoD)
+			un(REMOVED_FROM_GAME, q(4494)),	-- March of the Silithid
 			q(29612, {	-- The Art of War
 				["description"] = "Players who have completed Vashj'ir will receive this version of The Art of War.",
 			}),
@@ -467,7 +467,7 @@ _.Zones =
 			q(38931, {	-- Hero's Call: The Hinterlands!
 				["isBreadcrumb"] = true,
 				["lvl"] = 30,
-				["u"] = 40,	-- Legacy quest
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(28503, {	-- Hero's Call: Thousand Needles! (breadcrumb quest for 25486, not available if 25479,25481 are completed) (max level 43)
 				["isBreadcrumb"] = true,

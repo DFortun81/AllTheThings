@@ -46,8 +46,8 @@ _.Zones =
 				n(2108,   {	-- Garneg Charskull
 					["coord"] = { 38.6, 46.2, 56 },
 					["g"] = {
-						un(7, i(6200)), 	-- Garneg's War Belt
-						un(7, i(3392)), 	-- Ringed Helm
+						un(REMOVED_FROM_GAME, i(6200)), 	-- Garneg's War Belt
+						un(REMOVED_FROM_GAME, i(3392)), 	-- Ringed Helm
 					},
 				}), 
 				n(44227,  {	-- Gazz the Loch-Hunter
@@ -65,14 +65,14 @@ _.Zones =
 					["coord"] = { 46.8, 63.6, 56 },
 					["g"] = {
 						i(6199),	-- Black Widow Band
-						un(7, i(4444)),	-- Black Husk Shield
+						un(REMOVED_FROM_GAME, i(4444)),	-- Black Husk Shield
 					},
 				}), 
 				n(2090,   {	-- Ma'ruk Wyrmscale
 					["coord"] = { 48.0, 74.6, 56 },
 					["g"] = {
-						un(7, i(5749)),	-- Scythe Axe
-						un(7, i(5750)),	-- Warchief's Girdle
+						un(REMOVED_FROM_GAME, i(5749)),	-- Scythe Axe
+						un(REMOVED_FROM_GAME, i(5750)),	-- Warchief's Girdle
 					},
 				}), 
 				n(14424,  {	-- Mirelow
@@ -88,8 +88,8 @@ _.Zones =
 					["description"] = "Located inside the cave south of the coords.",
 					["coord"] = { 69.8, 29.2, 56 },
 					["g"] = {
-						un(7, i(4463)),	-- Beaded Raptor Collar
-						un(7, i(6198)),	-- Jurassic Wristguards
+						un(REMOVED_FROM_GAME, i(4463)),	-- Beaded Raptor Collar
+						un(REMOVED_FROM_GAME, i(6198)),	-- Jurassic Wristguards
 					},
 				}), 
 				o(202083, {	-- Razormaw Matriarch's Nest

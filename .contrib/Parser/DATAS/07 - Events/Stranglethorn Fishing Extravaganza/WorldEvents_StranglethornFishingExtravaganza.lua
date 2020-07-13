@@ -33,7 +33,7 @@ _.WorldEvents =
 						},
 					}),
 					q(32435, {	-- Second Prize
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
 						["coord"] = { 41.4, 73.0, 210 },
 						["repeatable"] = true,
@@ -57,7 +57,7 @@ _.WorldEvents =
 						},
 					}),
 					q(32436, {	-- Third Prize
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
 						["coord"] = { 41.4, 73.0, 210 },
 						["repeatable"] = true,

@@ -47,9 +47,9 @@ _.Zones =
 				}),
 				n(3808,   {	-- Forsaken Dark Stalker
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(1351)),	-- Fingerbone Bracers
+						un(REMOVED_FROM_GAME, i(1351)),	-- Fingerbone Bracers
 					},
 				}),
 				n(10559,  {	-- Lady Vespia
@@ -95,8 +95,8 @@ _.Zones =
 				n(3792,   {	-- Terrowulf Packlord
 					["coord"] = { 53.0, 37.6, 63 },
 					["g"] = {
-						un(7, i(5753)),	-- Ruffled Chaplet
-						un(7, i(5754)),	-- Wolfpack Medallion
+						un(REMOVED_FROM_GAME, i(5753)),	-- Ruffled Chaplet
+						un(REMOVED_FROM_GAME, i(5754)),	-- Wolfpack Medallion
 					},
 				}),
 				n(12037,  {	-- Ursol'lok

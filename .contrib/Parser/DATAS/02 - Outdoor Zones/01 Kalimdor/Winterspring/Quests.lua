@@ -25,11 +25,11 @@ _.Zones =
 				}),
 				q(8798,  {	-- A Yeti of Your Own
 					["sourceQuest"] = 5163,	-- [DEPRECATED]Are We There, Yeti?
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						un(8, recipe(26011)),	-- Tranquil Mechanical Yeti
+						un(REMOVED_FROM_GAME, recipe(26011)),	-- Tranquil Mechanical Yeti
 					},
 				}),
 				q(28837, {	-- Altered Beasts
@@ -38,17 +38,17 @@ _.Zones =
 					["sourceQuest"] = 28847,	-- The Pursuit of Umbranse
 				}),
 				q(3783,  {	-- [DEPRECATED]Are We There, Yeti?
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 				}),
 				q(977,   {	-- [DEPRECATED]Are We There, Yeti?
 					["sourceQuest"] = 3783,	-- [DEPRECATED]Are We There, Yeti?
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 				}),
 				q(5163,  {	-- [DEPRECATED]Are We There, Yeti?
 					["sourceQuest"] = 977,	-- [DEPRECATED]Are We There, Yeti?
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 					["g"] = {
 						i(15778),	-- [DEPRECATED]Are We There, Yeti?
@@ -85,25 +85,25 @@ _.Zones =
 					["sourceQuest"] = 28610,	-- Rubble Trouble
 				}),
 				q(4726,  {	-- Broodling Essence
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10267 },	-- Tinkee Steamboil
 				}),
 				q(5055,  {	-- Brumeran of the Chillwind
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10303 },	-- Storm Shadowhoof
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 5054,	-- Ursius of the Shardtooth
 				}),
 				q(975,   {	-- Cache of Mau'ari
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10307 },	-- Witch Doctor Mau'ari
 					["sourceQuest"] = 969,	-- Luck Be With You
 				}),
 				q(28516, {	-- Centuries of Suffering
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(4809,  {	-- Chillwind Horns
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10468 },
 					["sourceQuest"] = 4808,	-- Felnok Steelspring
 				}),
@@ -124,7 +124,7 @@ _.Zones =
 					},
 				}),
 				q(5307,  {	-- Corruption
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11193 },	-- Seril Scourgebane
 					["g"] = {
 						i(12825, {	-- Plans: Blazing Rapier
@@ -165,7 +165,7 @@ _.Zones =
 					},
 				}),
 				q(6030, {	-- Duke Nicholas Zverenhoff
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10431 },	-- Gregor Greystone
 				}),
 				q(28630, {	-- Echo Three
@@ -179,7 +179,7 @@ _.Zones =
 					["sourceQuest"] = 28674,	-- Starfall Village
 				}),
 				q(5084,  {	-- Falling to Corruption
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donovan Snowden
 					["sourceQuest"] = 5083,	-- Winterfall Firewater
 				}),
@@ -188,18 +188,18 @@ _.Zones =
 					["coord"] = { 25.1, 58.4, 83 },
 				}),
 				q(4808,  {	-- Felnok Steelspring
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10267 },	-- Tinkee Steamboil
 					["sourceQuest"] = 4726,	-- Broodling Essence
 				}),
 				q(5124,  {	-- Fiery Plate Gauntlets
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10637 },	-- Malyfous Darkhammer
 					["sourceQuest"] = 5103,	-- Hot Fiery Death
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12699)),	-- Plans: Fiery Plate Gauntlets
-						un(8, i(12631)),	-- Fiery Plate Gauntlets
+						un(REMOVED_FROM_GAME, i(12631)),	-- Fiery Plate Gauntlets
 					},
 				}),
 				q(28632, {	-- Fresh From The Hills
@@ -213,13 +213,13 @@ _.Zones =
 					["sourceQuest"] = 28718,	-- Where There's Smoke, There's Delicious Meat
 				}),
 				q(4970,  {	-- Frostsaber Provisions
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10618 },	-- Rivern Frostwind
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(4901,  {	-- Guardians of the Altar
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10300 },	-- Ranshalla
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -228,7 +228,7 @@ _.Zones =
 					["coord"] = { 59.8, 49.1, 83 },
 				}),
 				q(5121,  {	-- High Chief Winterfall
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 5087,	-- Winterfall Runners
 					["g"] = {
@@ -275,12 +275,12 @@ _.Zones =
 					["sourceQuest"] = 28534,	-- Descendants of the Highborne
 				}),
 				q(5126,  {	-- Lorax's Tale
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10918 },	-- Lorax
 					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(969,   {	-- Luck Be With You
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10307 },	-- Witch Doctor Mau'ari
 				}),
 				q(28839, {	-- Magic Prehistoric
@@ -293,7 +293,7 @@ _.Zones =
 					["repeatable"] = true,
 				}),
 				q(3912,  {	-- Meet at the Grave
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 3909,	-- The Videre Elixir
 				}),
@@ -320,7 +320,7 @@ _.Zones =
 					},
 				}),
 				q(5057,  {	-- Past Endeavors
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10303 },	-- Storm Shadowhoof
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 5056,	-- Shy-Rotam
@@ -342,7 +342,7 @@ _.Zones =
 					},
 				}),
 				q(5981,  {	-- Rampaging Giants
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10618 },	-- Rivern Frostwind
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -352,13 +352,13 @@ _.Zones =
 					["coord"] = { 61.8, 74.6, 83 },
 				}),
 				q(5252,  {	-- Remorseful Highborne
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10684 },	-- Remorseful Highborne
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 5248,	-- Tormented By the Past
 				}),
 				q(4810,  {	-- Return to Tinkee
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10468 },	-- Felnok Steelspring
 					["sourceQuest"] = 4809,	-- Chillwind Horns
 					["g"] = {
@@ -385,7 +385,7 @@ _.Zones =
 					["sourceQuest"] = 28626,	-- Tree Delivery
 				}),
 				q(5056,  {	-- Shy-Rotam
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10303 },	-- Storm Shadowhoof
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 5055,	-- Brumeran of the Chillwind
@@ -405,11 +405,11 @@ _.Zones =
 					},
 				}),
 				q(5601, {	-- Sister Pamela
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11629 },	-- Jessica Redpath
 				}),
 				q(5306,  {	-- Snakestone of the Shadow Huntress
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11192 },	-- Kilram
 					["g"] = {
 						i(12821, {	-- Plans: Dawn's Edge
@@ -463,7 +463,7 @@ _.Zones =
 					},
 				}),
 				q(4842,  {	-- Strange Sources
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 980,	-- The New Springs
 					["g"] = {
@@ -471,7 +471,7 @@ _.Zones =
 					},
 				}),
 				q(5305,  {	-- Sweet Serenity
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11191 },	-- Lilith the Lithe
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
@@ -484,7 +484,7 @@ _.Zones =
 					["sourceQuest"] = 28840,	-- Winterwater
 				}),
 				q(5253,  {	-- The Crystal of Zin-Malor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11079 },	-- Wynd Nightchaser
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 5252,	-- Remorseful Highborne
@@ -500,7 +500,7 @@ _.Zones =
 					["sourceQuest"] = 28519,	-- Pain of the Blood Elves
 				}),
 				q(5127,  {	-- The Demon Forge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10918 },	-- Lorax
 					["sourceQuest"] = 5126,	-- Lorax's Tale
 					["requireSkill"] = BLACKSMITHING,
@@ -513,12 +513,12 @@ _.Zones =
 					},
 				}),
 				q(6029, {	-- The Everlook Report
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10431 },	-- Gregor Greystone
 				}),
 				q(5123, {	-- The Final Piece
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 10738 },	-- Crudely-written Log
 					["provider"] = { "i", 12842 },	-- Crudely-written Log
 					["sourceQuest"] = 5087,	-- Winterfall Runners
@@ -562,12 +562,12 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(3909,  {	-- The Videre Elixir
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 3908,	-- It's a Secret to Everybody
 				}),
 				q(5082, {	-- Threat of the Winterfall
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 6603,	-- Trouble in Winterspring!
 				}),
@@ -588,17 +588,17 @@ _.Zones =
 					},
 				}),
 				q(5248,  {	-- Tormented By the Past
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10304 },	-- Aurora Skycaller
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(5086,  {	-- Toxic Horrors
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donovan Snowden
 					["sourceQuest"] = 5085,	-- Mystery Goo
 				}),
 				q(28468, {	-- [DEPRECATED]Toxic Horrors
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(28848, {	-- Trailing the Spiritspeaker
 					["provider"] = { "n", 10920 },	-- Kelek Skykeeper
@@ -632,7 +632,7 @@ _.Zones =
 					},
 				}),
 				q(5054,  {	-- Ursius of the Shardtooth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10303 },	-- Storm Shadowhoof
 					["races"] = HORDE_ONLY,
 				}),
@@ -643,7 +643,7 @@ _.Zones =
 					["sourceQuest"] = 28710,	-- Spray it One More Time
 				}),
 				q(4902,  {	-- Wildkin of Elune
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7916 },	-- Erelas Ambersky
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 4901,	-- Guardians of the Altar
@@ -653,21 +653,21 @@ _.Zones =
 					},
 				}),
 				q(8464, {	-- [DEPRECATED]Winterfall Activity
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11556 },	-- Salfa
 				}),
 				q(5083,  {	-- Winterfall Firewater
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 12771 },	-- Empty Firewater Flask
 				}),
 				q(5201,  {	-- Winterfall Intrusion
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10618 },	-- Rivern Frostwind
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(8471, {	-- Winterfall Ritual Totem
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 20742 },	-- Winterfall Ritual Totem
 				}),
 				q(28469, {	-- Winterfall Runners
@@ -676,7 +676,7 @@ _.Zones =
 					["sourceQuest"] = 28467,	-- Mystery Goo
 				}),
 				q(5087,  {	-- [DEPRECATED] Winterfall Runners
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 5086,	-- Toxic Horrors
 				}),
@@ -689,7 +689,7 @@ _.Zones =
 					},
 				}),
 				q(5128, {	-- Words of the High Chief
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 5123,	-- The Final Piece
 				}),

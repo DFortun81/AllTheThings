@@ -23,7 +23,7 @@ _.Zones =
 					},
 				}),
 				q(1656, {	-- A Task Unfinished
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 6775 },	-- Antur Fallow
 				}),
@@ -33,22 +33,22 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(746,   {	-- Dwarven Digging
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2993 },	-- Baine Bloodhoof
 				}),
 				q(14436, {	-- Dwarven Digging
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),
 				q(775,   {	-- Journey into Thunder Bluff
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2994 },	-- Ancestral Spirit
 				}),
 				q(14439, {	-- Journey into Thunder Bluff
 					["races"] = HORDE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(24550, {	-- Journey into Thunder Bluff
 					["provider"] = { "n", 37024 },	-- Una Wildmane
@@ -69,13 +69,13 @@ _.Zones =
 					["description"] = "This quest is available Tauren upon reaching level 20.",
 				}),
 				q(14087, {	-- Learn to Ride
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["lvl"] = 20,
 					["races"] = { TAUREN },
 					["provider"] = { "i", 46884 },	-- Riding Training Pamphlet
 				}),
 				q(766,   {	-- Mazzranache
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3055 },	-- Maur Raincaller
 				}),
@@ -91,7 +91,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(7663,  {	-- New Kodo - Green
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3685 },	-- Harb Clawhoof
 					["coord"] = { 47.6, 58.0, 7 },
 					["g"] = {
@@ -101,7 +101,7 @@ _.Zones =
 					},
 				}),
 				q(7662,  {	-- New Kodo - Teal
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3685 },	-- Harb Clawhoof
 					["coord"] = { 47.6, 58.0, 7 },
 					["g"] = {
@@ -132,19 +132,19 @@ _.Zones =
 					["races"] = { TAUREN },
 				}),
 				q(767,   {	-- Rite of Vision
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2993 },	-- Baine Bloodhoof
 					["sourceQuest"] = 763,	-- Rites of the Earthmother
 				}),
 				q(771,   {	-- Rite of Vision
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3054 },	-- Zarlman Two-Moons
 					["sourceQuest"] = 767,	-- Rite of Vision
 				}),
 				q(772,   {	-- Rite of Vision
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3054 },	-- Zarlman Two-Moons
 					["sourceQuest"] = 771,	-- Rite of Vision
@@ -168,7 +168,7 @@ _.Zones =
 					["races"] = { TAUREN },
 				}),
 				q(745,   {	-- Sharing the Land
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2993 },	-- Baine Bloodhoof
 				}),
@@ -178,7 +178,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(765,   {	-- Supervisor Fizsprocket
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2988 },	-- Morin Cloudstalker
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -198,7 +198,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(780,   {	-- The Battleboars
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2980 },	-- Grull Hawkwind
 					["sourceQuest"] = 750,	-- The Hunt Continues
@@ -221,18 +221,18 @@ _.Zones =
 					},
 				}),
 				q(747,   {	-- The Hunt Begins
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2980 },	-- Grull Hawkwind
 				}),
 				q(750,   {	-- The Hunt Continues
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2980 },	-- Grull Hawkwind
 					["sourceQuest"] = 747,	-- The Hunt Begins
 				}),
 				q(861,   {	-- The Hunter's Way
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3052 },	-- Skorn Whitecloud
 					["coord"] = { 49.6, 17.2, 7 },
 					["races"] = {
@@ -260,7 +260,7 @@ _.Zones =
 					["sourceQuest"] = 14438,	-- Sharing the Land
 				}),
 				q(764,   {	-- The Venture Co.
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2988 },	-- Morin Cloudstalker
 					["coord"] = { 57.2, 61.2, 7 },
 					["races"] = HORDE_ONLY,

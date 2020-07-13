@@ -165,7 +165,7 @@ _.WorldDrops =
 				i(116467),	-- Frostbitten Hammer
 				i(116484),	-- Lunarglow Hammer
 				i(116501),	-- Vinewrapped Hammer
-				un(7, i(36505)),	-- Frosted Steel Mallet
+				un(REMOVED_FROM_GAME, i(36505)),	-- Frosted Steel Mallet
 				i(116518),	-- Creeperclaw Hammer
 				i(116535),	-- Incised Hammer
 				i(116552),	-- Auchenai Hammer
@@ -194,7 +194,7 @@ _.WorldDrops =
 			}),			
 			n(-332, {	-- Shield
 				i(106397),	-- Frostbitten Shield
-				un(7, i(55433)),	-- Steelgrill Shield
+				un(REMOVED_FROM_GAME, i(55433)),	-- Steelgrill Shield
 				i(106430),	-- Rimeplate Shield
 				i(106463),	-- Rockspine Shield
 				i(106496),	-- Shardback Shield
@@ -236,7 +236,7 @@ _.WorldDrops =
 				i(118803),	-- Kihrawr's Scratching Post
 				i(118804),	-- Starrgo's Walking Stick
 				i(118805),	-- Caniki's Cane of Command
-				un(7, i(25173)),	-- Master's Bo Staff
+				un(REMOVED_FROM_GAME, i(25173)),	-- Master's Bo Staff
 			}),
 			n(-338, {	-- 1H Swords
 				i(116471),	-- Frostbitten Sword
@@ -271,7 +271,7 @@ _.WorldDrops =
 			n(-341, {	-- Wands
 				i(116473),	-- Coldsinger Wand
 				i(116490),	-- Moonwhisper Wand
-				un(7, i(25285)),	-- Bloodwood Wand
+				un(REMOVED_FROM_GAME, i(25285)),	-- Bloodwood Wand
 				i(116507),	-- Growthshaper Wand
 				i(116524),	-- Evermorn Wand
 				i(116541),	-- Zangarra Wand
@@ -279,7 +279,7 @@ _.WorldDrops =
 				i(116575),	-- Sunsworn Wand
 				i(116592),	-- Shadowsage Wand
 				i(116609),	-- Ruhkmari Wand
-				un(7, i(36659)),	-- Shivery Wand
+				un(REMOVED_FROM_GAME, i(36659)),	-- Shivery Wand
 				i(116626),	-- Ancestral Wand
 				i(116643),	-- Oshu'gun Wand
 				i(118793),	-- Kuug'lar's Stylus of Sorcery

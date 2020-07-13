@@ -7,23 +7,23 @@ _.Zones =
 		m(111, {	-- Shattrath City
 			n(QUESTS, {
 				q(12753, {	-- A Desperate Alliance
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 3 },	-- Dwarf
 				}),
 				q(12753, {	-- A Desperate Alliance
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 4 },	-- Night Elf
 				}),
 				q(12775, {	-- A Desperate Alliance
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 1 },	-- Human
 				}),
 				q(12777, {	-- A Desperate Alliance
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 11 },	-- Draenei
 				}),
 				q(12808, {	-- A Desperate Alliance
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 7 },	-- Gnome
 				}),
 				q(10210, {	-- A'dal
@@ -31,7 +31,7 @@ _.Zones =
 					["coord"] = { 59.6, 41.4, 111 },
 				}),
 				q(11216, {	-- Archmage Alturus
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23948 },	-- Apprentice Tasserel
 				}),
 				q(10211, {	-- City of Light
@@ -68,29 +68,29 @@ _.Zones =
 					["sourceQuests"] = { 10004 },	-- Patience and Understanding *UNTESTED*
 				}),
 				q(12773, {	-- Darnassus
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 4 },	-- Night Elf
 					["provider"] = { "n", 29087 },	-- Bishop Lazaril
 					["sourceQuest"] = 12753,	-- A Desperate Alliance
 				}),
 				q(12783, {	-- Desperate Research
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 8 },	-- Troll
 				}),
 				q(12752, {	-- Desperate Research
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 5 },	-- Undead
 				}),
 				q(12782, {	-- Desperate Research
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 				}),
 				q(12784, {	-- Desperate Research
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 6 },	-- Tauren
 				}),
 				q(12811, {	-- Desperate Research
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 6 },	-- Orc
 				}),
 				q(47523, {	-- Disturbance Detected: Black Temple (EVENT: TIMEWALKING)
@@ -114,7 +114,7 @@ _.Zones =
 					["sourceQuests"] = { 10948 },	-- The Hostage Soul
 				}),
 				q(10882, {	-- Harbinger of Doom
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 18481 },	-- A'dal
 					["g"] = {
 						i(31747),	-- Potent Sha'tari Pendant
@@ -135,13 +135,13 @@ _.Zones =
 					},
 				}),
 				q(12771, {	-- Ironforge (Dwarf)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 3 },	-- Dwarf
 					["provider"] = { "n", 29087 },	-- Bishop Lazaril
 					["sourceQuest"] = 12753,	-- A Desperate Alliance
 				}),
 				q(12809, {	-- Ironforge (Gnome)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 7 },	-- Gnome
 					["provider"] = { "n", 29087 },	-- Bishop Lazaril
 					["sourceQuest"] = 12808,	-- A Desperate Alliance
@@ -175,13 +175,13 @@ _.Zones =
 					},
 				}),
 				q(12785, {	-- Orgrimmar (Troll)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 8 },	-- Troll
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12783,	-- Desperate Research
 				}),
 				q(12812, {	-- Orgrimmar (Orc)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 2 },	-- Orc
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12811,	-- Desperate Research
@@ -217,7 +217,7 @@ _.Zones =
 					},
 				}),
 				q(12788, {	-- Silvermoon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12782,	-- Desperate Research
@@ -247,7 +247,7 @@ _.Zones =
 					},
 				}),
 				q(12774, {	-- Stormwind
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 1 },	-- Human
 					["provider"] = { "n", 29087 },	-- Bishop Lazaril
 					["sourceQuest"] = 12775,	-- A Desperate Alliance
@@ -286,7 +286,7 @@ _.Zones =
 					["coord"] = { 63.8, 69.7, 111 },
 				}),
 				q(12776, {	-- The Exodar
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 11 },	-- Night Elf
 					["provider"] = { "n", 29087 },	-- Bishop Lazaril
 					["sourceQuest"] = 12777,	-- A Desperate Alliance
@@ -301,13 +301,13 @@ _.Zones =
 					["sourceQuests"] = { 10588 },	-- The Cipher of Damnation
 				}),
 				q(12787, {	-- The Undercity
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 5 },	-- Undead
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12752,	-- Desperate Research
 				}),
 				q(12786, {	-- Thunder Bluff
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 6 },	-- Tauren
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12784,	-- Desperate Research
@@ -319,7 +319,7 @@ _.Zones =
 					["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)
 				}),
 				q(10888, {	-- Trial of the Naaru: Magtheridon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(10884, {	-- Trial of the Naaru: Mercy
 					["provider"] = { "n", 18481 },	-- A'dal
@@ -334,7 +334,7 @@ _.Zones =
 					["sourceQuests"] = { 10883 },	-- The Tempest Key
 				}),
 				q(10177, {	-- Trouble at Auchindoun
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 18893 },	-- Spymistress Mehlisah Highcrown
 				}),
 				q(29642, {	-- Trouble at Auchindoun

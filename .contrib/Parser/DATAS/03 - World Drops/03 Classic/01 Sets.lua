@@ -109,7 +109,7 @@ _.WorldDrops =
 			i(6552),	-- Bard's Tunic
 			i(3282),	-- Battle Chain Pants
 			i(3283, {	-- Battle Chain Tunic
-				["u"] = 7,	-- BoE Item
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(120950),	-- Battle Chain Vest
 			i(6592),	-- Battleforge Armor
@@ -180,7 +180,7 @@ _.WorldDrops =
 			i(15614),	-- Bonelink Sabatons
 			i(3302),	-- Brackwater Boots
 			i(3305, {	-- Brackwater Leggings
-				["u"] = 7,	-- BoE Item
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(120954),	-- Brackwater Legguards
 			i(3306),	-- Brackwater Vest
@@ -1372,10 +1372,10 @@ _.WorldDrops =
 			i(8262),	-- Serpentskin Leggings
 			i(8263),	-- Serpentskin Spaulders
 		--	i(20261, {	-- Shadow Panther Hide Belt
-		--		["u"] = 7,	-- BoE Item
+		--		["u"] = REMOVED_FROM_GAME,
 		--	}),
 		--	i(20259, {	-- Shadow Panther Hide Gloves
-		--		["u"] = 7,	-- BoE Item
+		--		["u"] = REMOVED_FROM_GAME,
 		--	}),
 			i(6567),	-- Shimmering Armor
 			i(6562),	-- Shimmering Boots
@@ -1416,16 +1416,16 @@ _.WorldDrops =
 			i(14756),	-- Slayer's Slippers
 			i(14751),	-- Slayer's Surcoat
 			i(3076, {	-- Smoldering Boots
-				["u"] = 7,	-- BoE Item
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(3074, {	-- Smoldering Gloves
-				["u"] = 7,	-- BoE Item
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(3073, {	-- Smoldering Pants
-				["u"] = 7,	-- BoE Item
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(3072, {	-- Smoldering Robe
-				["u"] = 7,	-- BoE Item
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(6545),	-- Soldier's Armor
 			i(6551),	-- Soldier's Boots

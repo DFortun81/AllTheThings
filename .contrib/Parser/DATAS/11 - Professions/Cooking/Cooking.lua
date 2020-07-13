@@ -375,29 +375,29 @@ profession(COOKING, {
 				un(REMOVED_FROM_GAME, i(16072)),	-- Expert Cookbook
 				un(REMOVED_FROM_GAME, i(16073)),	-- Artisan Cookbook
 				un(REMOVED_FROM_GAME, i(27736)),	-- Master Cookbook
-				un(7, i(6891)),	-- Recipe: Herb Baked Egg
-				un(7, i(5485)),	-- Recipe: Fillet of Frenzy
-				un(7, h(i(3734))),		-- Recipe: Big Bear Steak [Removed From Game!]
-				un(7, i(5482)),	-- Recipe: Kaldorei Spider Kabob
-				un(8, h(recipe(3397))),	-- Big Bear Steak [Removed From Game!]
+				un(REMOVED_FROM_GAME, i(6891)),	-- Recipe: Herb Baked Egg
+				un(REMOVED_FROM_GAME, i(5485)),	-- Recipe: Fillet of Frenzy
+				un(REMOVED_FROM_GAME, h(i(3734))),		-- Recipe: Big Bear Steak [Removed From Game!]
+				un(REMOVED_FROM_GAME, i(5482)),	-- Recipe: Kaldorei Spider Kabob
+				un(REMOVED_FROM_GAME, h(recipe(3397))),	-- Big Bear Steak [Removed From Game!]
 				{
 					["itemID"] = 7678,	-- Recipe: Thistle Tea (Removed from Game!)
 					["spellID"] = 9513,	-- Thistle Tea
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 				},
-				un(7, i(5489)),	-- Recipe: Lean Venison
-				un(7, i(12227)),	-- Recipe: Lean Wolf Steak
-				un(7, i(5487)),	-- Recipe: Dig Rat Stew
-				un(7, i(44977)),	-- Recipe: Dig Rat Stew
-				un(7, i(3736)),	-- Recipe: Tasty Lion Steak
-				un(7, i(3737)),	-- Recipe: Soothing Turtle Bisque
-				un(7, i(13939)),	-- Recipe: Spotted Yellowtail
-				un(7, i(13942)),	-- Recipe: Grilled Squid
-				un(7, i(35564)),	-- Recipe: Charred Bear Kabobs
-				un(7, i(35566)),	-- Recipe: Juicy Bear Burger
-				un(7, i(13945)),	-- Recipe: Nightfin Soup
-				un(7, i(13946)),	-- Recipe: Poached Sunscale Salmon
-				un(7, i(21025)),	-- Recipe: Dirge's Kickin' Chimaerok Chops
+				un(REMOVED_FROM_GAME, i(5489)),	-- Recipe: Lean Venison
+				un(REMOVED_FROM_GAME, i(12227)),	-- Recipe: Lean Wolf Steak
+				un(REMOVED_FROM_GAME, i(5487)),	-- Recipe: Dig Rat Stew
+				un(REMOVED_FROM_GAME, i(44977)),	-- Recipe: Dig Rat Stew
+				un(REMOVED_FROM_GAME, i(3736)),	-- Recipe: Tasty Lion Steak
+				un(REMOVED_FROM_GAME, i(3737)),	-- Recipe: Soothing Turtle Bisque
+				un(REMOVED_FROM_GAME, i(13939)),	-- Recipe: Spotted Yellowtail
+				un(REMOVED_FROM_GAME, i(13942)),	-- Recipe: Grilled Squid
+				un(REMOVED_FROM_GAME, i(35564)),	-- Recipe: Charred Bear Kabobs
+				un(REMOVED_FROM_GAME, i(35566)),	-- Recipe: Juicy Bear Burger
+				un(REMOVED_FROM_GAME, i(13945)),	-- Recipe: Nightfin Soup
+				un(REMOVED_FROM_GAME, i(13946)),	-- Recipe: Poached Sunscale Salmon
+				un(REMOVED_FROM_GAME, i(21025)),	-- Recipe: Dirge's Kickin' Chimaerok Chops
 				--[[
 				recipe(37836),	-- Spice Bread
 				recipe(7751),	-- Brilliant Smallfish
@@ -446,10 +446,10 @@ profession(COOKING, {
 				recipe(2549),	-- Seasoned Wolf Kabob
 				recipe(2548),	-- Succulent Pork Ribs
 				recipe(3377),	-- Gooey Spider Cake
-				un(7, recipe(6419)),	-- Lean Venison
+				un(REMOVED_FROM_GAME, recipe(6419)),	-- Lean Venison
 				recipe(3373),	-- Crocolisk Gumbo
 				recipe(6500),	-- Goblin Deviled Clams
-				un(7, recipe(15853)),	-- Lean Wolf Steak
+				un(REMOVED_FROM_GAME, recipe(15853)),	-- Lean Wolf Steak
 				recipe(3398),	-- Hot Lion Chops
 				recipe(6417),	-- Dig Rat Stew
 				recipe(3376),	-- Curiously Tasty Omelet
@@ -489,7 +489,7 @@ profession(COOKING, {
 				recipe(18246),	-- Mightfish Steak
 				recipe(22761),	-- Runn Tum Tuber Surprise
 				recipe(24801),	-- Smoked Desert Dumplings
-				un(8, recipe(25659)),	-- Dirge's Kickin' Chimaerok Chops
+				un(REMOVED_FROM_GAME, recipe(25659)),	-- Dirge's Kickin' Chimaerok Chops
 				--]]
 			}),
 		}),

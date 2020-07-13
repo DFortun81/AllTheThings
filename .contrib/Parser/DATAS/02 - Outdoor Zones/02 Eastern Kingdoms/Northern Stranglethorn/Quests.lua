@@ -25,7 +25,7 @@ _.Zones =
 					["sourceQuest"] = 26323,	-- Favored Skull
 				}),
 				q(26764, {	-- A New Low
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26747, {	-- A Physical Specimen
 					["provider"] = { "n", 43884 },	-- Osborn Obnoticus
@@ -59,10 +59,10 @@ _.Zones =
 					},
 				}),
 				q(7908,  {	-- Arena Master
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(204,   {	-- Bad Medicine
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4126)),	-- Guerrilla Cleaver
@@ -149,7 +149,7 @@ _.Zones =
 					["sourceQuest"] = 26321,	-- I Think She's Hungry
 				}),
 				q(596,   {	-- Bloody Bone Necklaces
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4135)),	-- Bloodbone Band
@@ -174,7 +174,7 @@ _.Zones =
 					["sourceQuest"] = 26301,	-- Speaking with Nezzliok
 				}),
 				q(202,   {	-- Colonel Kurzen
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4127)),	-- Shrapnel Blaster
@@ -217,7 +217,7 @@ _.Zones =
 					["sourceQuest"] = 29124,	-- Warn the Rebel Camp
 				}),
 				q(3625,  {	-- Enchanted Azsharite Fel Weaponry
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10697)),	-- Enchanted Azsharite Felbane Dagger
 						un(REMOVED_FROM_GAME, i(10698)),	-- Enchanted Azsharite Felbane Staff
@@ -225,7 +225,7 @@ _.Zones =
 					},
 				}),
 				q(2765,  {	-- Expert Blacksmith!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
 					["requireSkill"] = BLACKSMITHING,
@@ -297,7 +297,7 @@ _.Zones =
 					["sourceQuest"] = 29227,	-- The Hunter's Revenge
 				}),
 				q(2764,  {	-- Galvin's Finest Pupil
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
 					["requireSkill"] = BLACKSMITHING,
@@ -314,7 +314,7 @@ _.Zones =
 					["sourceQuest"] = 26775,	-- Be Raptor
 				}),
 				q(582,   {	-- Headhunting
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4132)),	-- Darkspear Armsplints
@@ -410,7 +410,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(206,   {	-- Mai'Zoth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4125)),	-- Tranquil Orb
@@ -435,7 +435,7 @@ _.Zones =
 					},
 				}),
 				q(594, {	-- Message in a Bottle
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26774, {	-- Mind Control (A)
 					["provider"] = { "n", 44017 },	-- Priestess Thaalia
@@ -589,7 +589,7 @@ _.Zones =
 					["sourceQuest"] = 194,	-- Raptor Hunting
 				}),
 				q(331,   {	-- Report to Doren
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4123)),	-- Frost Metal Pauldrons
@@ -597,7 +597,7 @@ _.Zones =
 					},
 				}),
 				q(622,   {	-- Return to Corporal Kaleb
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4124),	-- Cap of Harmony NOTE: Awarded from new version of quest 26765
@@ -625,7 +625,7 @@ _.Zones =
 					},
 				}),
 				q(592,   {	-- Saving Yenniku
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6723)),	-- Medal of Courage
@@ -675,7 +675,7 @@ _.Zones =
 					["sourceQuest"] = 26330,	-- Who's a Big Troll?
 				}),
 				q(2761,  {	-- Smelt On, Smelt Off
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
 					["sourceQuest"] = 2760,	-- The Mithril Order
@@ -737,7 +737,7 @@ _.Zones =
 					["sourceQuest"] = 29221,	-- Serpents and Poison
 				}),
 				q(598,   {	-- Split Bone Necklace
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4136)),	-- Darkspear Boots
@@ -779,7 +779,7 @@ _.Zones =
 					},
 				}),
 				q(2763,  {	-- The Art of the Imbue
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
 					["sourceQuest"] = 2760,	-- The Mithril Order
@@ -789,10 +789,10 @@ _.Zones =
 					},
 				}),
 				q(615, {	-- The Captain's Cutlass
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(569,   {	-- The Defense of Grom'gol
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4115)),	-- Grom'gol Buckler
@@ -846,7 +846,7 @@ _.Zones =
 					["sourceQuest"] = 26838,	-- Rebels Without a Clue
 				}),
 				q(2762,  {	-- The Great Silver Deceiver
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
 					["sourceQuest"] = 2760,	-- The Mithril Order
@@ -856,7 +856,7 @@ _.Zones =
 					},
 				}),
 				q(338,   {	-- The Green Hills of Stranglethorn
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4116)),	-- Olmann Sewar
 						un(REMOVED_FROM_GAME, i(17688)),	-- Jungle Boots
@@ -868,7 +868,7 @@ _.Zones =
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
 				}),
 				q(328,   {	-- The Hidden Key
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4122)),	-- Bookmaker's Scepter
@@ -910,7 +910,7 @@ _.Zones =
 					["sourceQuest"] = 26302,	-- Chasing Yenniku's Fate
 				}),
 				q(2760,  {	-- The Mithril Order
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7794 },	-- McGaven
 					["requireSkill"] = BLACKSMITHING,
 					["sourceQuests"] = {
@@ -919,7 +919,7 @@ _.Zones =
 					},
 				}),
 				q(620, {	-- The Monogrammed Sash
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26782, {	-- The Mosh'Ogg Bounty (A) -- TODO:: how is this version obtained?
 					["provider"] = { "n", 44017 },	-- Wulfred Harrys

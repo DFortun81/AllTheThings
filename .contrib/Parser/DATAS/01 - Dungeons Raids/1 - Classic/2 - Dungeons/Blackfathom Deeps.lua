@@ -10,7 +10,7 @@ _.Instances = { tier(1, {	-- Classic
 		["groups"] = {
 			n(QUESTS, {
 				q(6922, {	-- Baron Aquanis
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(16886)),	-- Outlaw Sabre
@@ -18,7 +18,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(1200, {	-- Blackfathom Villainy
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7002)),		-- Arctic Buckler
@@ -26,7 +26,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(6561, {	-- Blackfathom Villainy
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7002)),		-- Arctic Buckler
@@ -36,11 +36,11 @@ _.Instances = { tier(1, {	-- Classic
 				o(177964, {	-- Fathom Stone
 					["model"] = 200024,
 					["modelScale"] = 3,
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						q(908, {	-- Amongst the Ruins
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
 							["sourceQuest"] = 6563,	-- The Essence of Aku'Mai
@@ -48,7 +48,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(26885, {	-- Knowledge in the Deeps
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(56660)),	-- Dusk-Stained Cloak
@@ -58,7 +58,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(1275, {	-- Researching the Corruption
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(56682)),	-- Band of the Skull Crusher
@@ -92,7 +92,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(26883, {	-- Twilight Falls
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(56699)),	-- Aluwyn's Legguards

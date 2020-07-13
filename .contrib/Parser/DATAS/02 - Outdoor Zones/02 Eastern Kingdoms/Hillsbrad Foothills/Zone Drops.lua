@@ -7,26 +7,26 @@ _.Zones =
 		m(25, {	-- Hillsbrad Foothills
 			n(ZONEDROPS, {
 				n(2287, { 	-- Crushridge Warmonger
-					un(7, i(1602)),	-- Sickle Axe
+					un(REMOVED_FROM_GAME, i(1602)),	-- Sickle Axe
 				}),
 				n(2358, { 	-- Dalaran Summoner
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(7, i(5245)), 	-- Summoner's Wand
+						un(REMOVED_FROM_GAME, i(5245)), 	-- Summoner's Wand
 					},
 				}),
 				n(2346, { 	-- Dun Garok Priest
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(7, i(4723)),	-- Humbert's Pants
+						un(REMOVED_FROM_GAME, i(4723)),	-- Humbert's Pants
 					},
 				}),
 				n(2345, { 	-- Dun Garok Rifleman
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(7, i(4724)), 	-- Humbert's Helm
+						un(REMOVED_FROM_GAME, i(4724)), 	-- Humbert's Helm
 					},
 				}),
 				i(11152, {	-- Formula: Enchant Gloves - Fishing
@@ -38,27 +38,27 @@ _.Zones =
 					},
 				}),
 				n(2427, { 	-- Jailor Eston
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(3429)), 	-- Guardsman Belt
+						un(REMOVED_FROM_GAME, i(3429)), 	-- Guardsman Belt
 					},
 				}),
 				n(2428, { 	-- Jailor Marlgen
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(3429)),	-- Guardsman Belt
+						un(REMOVED_FROM_GAME, i(3429)),	-- Guardsman Belt
 					},
 				}),
 				n(2372, { 	-- Mudsnout Gnoll
-					un(7, i(3204)),	-- Deepwood Bracers
+					un(REMOVED_FROM_GAME, i(3204)),	-- Deepwood Bracers
 				}),
 				i(5775,  {	-- Pattern: Black Silk Pack
 					["crs"] = { 2242 },	-- Syndicate Spy
 				}),
 				n(2246, { 	-- Syndicate Assassin
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(1280)),	-- Cloaked Hood
+						un(REMOVED_FROM_GAME, i(1280)),	-- Cloaked Hood
 					},
 				}),
 			}),

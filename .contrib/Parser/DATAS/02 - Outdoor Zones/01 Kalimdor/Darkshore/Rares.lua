@@ -29,7 +29,7 @@ _.Zones =
 						{ 46.6, 41.4, 62 },
 					},
 					["g"] = {
-						un(7, i(6333)),	-- Spikelash Dagger
+						un(REMOVED_FROM_GAME, i(6333)),	-- Spikelash Dagger
 					},
 				}), 
 				n(2191, {	-- Licillin

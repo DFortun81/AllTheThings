@@ -18,7 +18,7 @@ _.Zones =
 					["sourceQuests"] = { 26542 },	-- Hero's Call: The Hinterlands!
 				}),
 				q(77,    {	-- A Sticky Situation
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7801 },	-- Gilveradin Sunchaser
 					["sourceQuest"] = 650,	-- Ripple Recovery
@@ -34,13 +34,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(7842, {	-- Another Message to the Wildhammer
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14738 },	-- Otho Moji'ko
 					["sourceQuest"] = 7841,	-- Message to the Wildhammer
 				}),
 				q(7830, {	-- Avenging the Fallen
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14741 },	-- Huntsman Markhor
 				}),
@@ -75,7 +75,7 @@ _.Zones =
 					},
 				}),
 				q(7844, {	-- Cannibalistic Cousins
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14739 },	-- Mystic Yayo'jin
 				}),
@@ -104,7 +104,7 @@ _.Zones =
 					},
 				}),
 				q(7850,  {	-- Dark Vessels (H Legacy)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(19118)),	-- Nature's Breath
@@ -176,7 +176,7 @@ _.Zones =
 					["description"] = "The item that starts this quest drops from any mob in The Hinterlands.",
 				}),
 				q(7816, {	-- Gammerita, Mon!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14740 },	-- Katoom the Angler
 				}),
@@ -245,7 +245,7 @@ _.Zones =
 					},
 				}),
 				q(7829, {	-- Hunt the Savages
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14741 },	-- Huntsman Markhor
 				}),
@@ -284,26 +284,26 @@ _.Zones =
 					},
 				}),
 				q(1446,  {	-- Jammal'an the Prophet
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11124)),	-- Helm of Exile
 						un(REMOVED_FROM_GAME, i(11123)),	-- Rainstrider Leggings
 					},
 				}),
 				q(7862,  {	-- Job Opening: Guard Captain of Revantusk Village
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(19120)),	-- Rune of the Guard Captain
 					},
 				}),
 				q(7845, {	-- Kidnapped Elder Torntusk!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14736 },	-- Primal Torntusk
 				}),
 				q(7840, {	-- Lard Lost His Lunch
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14731 },	-- Lard
 				}),
@@ -322,7 +322,7 @@ _.Zones =
 					},
 				}),
 				q(7841, {	-- Message to the Wildhammer
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14738 },	-- Otho Moji'ko
 				}),
@@ -403,7 +403,7 @@ _.Zones =
 					},
 				}),
 				q(7846, {	-- Recover the Key!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14757 },	-- Elder Torntusk
 					["sourceQuest"] = 7845,	-- Kidnapped Elder Torntusk!
@@ -418,7 +418,7 @@ _.Zones =
 					},
 				}),
 				q(7847,  {	-- Return to Primal Torntusk
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(19115)),	-- Flask of Forest Mojo
@@ -426,23 +426,23 @@ _.Zones =
 					},
 				}),
 				q(2742, {	-- Rin'ji is Trapped!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7780 },	-- Rin'ji
 				}),
 				q(2782, {	-- Rin'ji's Secret
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 142127 },	-- Rin'ji's Secret
 					["sourceQuest"] = 2742,	-- Rin'ji is Trapped!
 				}),
 				q(81,    {	-- Ripple Discovery
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7801 },	-- Gilveradin Sunchaser
 				}),
 				q(2994,  {	-- Saving Sharpbeak
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9652)),	-- Gryphon Rider's Leggings
@@ -450,7 +450,7 @@ _.Zones =
 					},
 				}),
 				q(7849,  {	-- Separation Anxiety
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(19116)),	-- Greenleaf Handwraps
@@ -530,7 +530,7 @@ _.Zones =
 					},
 				}),
 				q(7815,  {	-- Snapjaws, Mon!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(19022),	-- Nat Pagle's Extreme Angler FC-5000 NOTE: Now available from quests 26485 & 26211
@@ -545,7 +545,7 @@ _.Zones =
 					},
 				}),
 				q(7828, {	-- Stalking the Stalkers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14741 },	-- Huntsman Markhor
 				}),
@@ -661,7 +661,7 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(7843,  {	-- The Final Message to the Wildhammer
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(19119)),	-- Owlbeast Hide Gloves
@@ -725,7 +725,7 @@ _.Zones =
 					},
 				}),
 				q(2933, {	-- Venom Bottles
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 142702 },	-- Venom Bottle
 				}),
@@ -742,7 +742,7 @@ _.Zones =
 					["sourceQuests"] = { 26309 },	-- Dark Vessels
 				}),
 				q(7839, {	-- Vilebranch Hooligans
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14737 },	-- Smith Slagtree
 				}),
@@ -753,7 +753,7 @@ _.Zones =
 					["sourceQuests"] = { 26496 },	-- Down with the Vilebranch
 				}),
 				q(7861,  {	-- Wanted: Vile Priestess Hexx and Her Minions
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(19121)),	-- Deep Woodlands Cloak

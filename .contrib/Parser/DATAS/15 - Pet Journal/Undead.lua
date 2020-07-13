@@ -22,14 +22,14 @@ _.PetJournal =
 		p(2710),	-- Drowned Hatchling
 		p(1967),	-- Drudge Ghoul
 		un(10, p(348)),	-- Eye of the Legion
-		un(6, p(346)),	-- Fetish Shaman
+		un(REMOVED_FROM_GAME, p(346)),	-- Fetish Shaman
 		p(266),		-- Fossilized Hatchling
 		p(1625),	-- Fragment of Anger
 		p(1627),	-- Fragment of Desire
 		p(1626),	-- Fragment of Suffering
 		p(2036),	-- Frostbrood Whelpling
 		p(1530),	-- Frostwolf Ghostpup
-		un(6, p(188)),	-- Frosty
+		un(REMOVED_FROM_GAME, p(188)),	-- Frosty
 		p(1144),	-- Fungal Abomination
 		p(1442),	-- Ghastly Kid
 		p(1741),	-- Ghastly Rat

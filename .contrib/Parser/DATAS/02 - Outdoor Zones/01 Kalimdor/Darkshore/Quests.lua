@@ -28,7 +28,7 @@ _.Zones =
 					},
 				}),
 				q(993,   {	-- A Lost Master
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3693 },	-- Terenthis
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -118,7 +118,7 @@ _.Zones =
 					["sourceQuest"] = 13897,	-- The Battle for Darkshore
 				}),
 				q(957,   {	-- Bashal'Aran
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3650 },	-- Asterion
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -186,7 +186,7 @@ _.Zones =
 					},
 				}),
 				q(947,   {	-- Cave Mushrooms
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3583 },	-- Barithras Moonshade
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -210,7 +210,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6124,  {	-- Curing the Sick
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3702 },	-- Alanndarian Nightsong
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -256,7 +256,7 @@ _.Zones =
 					["sourceQuest"] = 13590,	-- The Front Line
 				}),
 				q(994,   {	-- Escape Through Force
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3692 },	-- Volcor
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -264,7 +264,7 @@ _.Zones =
 					},
 				}),
 				q(995,   {	-- Escape Through Stealth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3692 },	-- Volcor
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -272,7 +272,7 @@ _.Zones =
 					},
 				}),
 				q(963,   {	-- For Love Eternal
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3644 },	-- Cerellean Whiteclaw
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -280,7 +280,7 @@ _.Zones =
 					},
 				}),
 				q(1138,  {	-- Fruit of the Sea
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10216 },	-- Gubber Blump
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -343,7 +343,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(951,   {	-- Mathystra Relics
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3616 },	-- Onu
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -446,7 +446,7 @@ _.Zones =
 					["sourceQuest"] = 26758,	-- Flight to Auberdine
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(13566, {	-- Ritual Materials
 					["provider"] = { "n", 33048 },	-- Keeper Karithus
@@ -564,7 +564,7 @@ _.Zones =
 					["sourceQuest"] = 13584,	-- Calming the Earth
 				}),
 				q(2139,  {	-- Tharnariun's Hope
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3701 },	-- Tharnariun Treetender
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -573,7 +573,7 @@ _.Zones =
 					},
 				}),
 				q(741,   {	-- The Absent Minded Prospector
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2913 },	-- Archaeologist Hollee
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -583,7 +583,7 @@ _.Zones =
 					},
 				}),
 				q(943,   {	-- The Absent Minded Prospector
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2911 },	-- Archaeologist Flagongut
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -636,7 +636,7 @@ _.Zones =
 					["sourceQuest"] = 13525,	-- What's Happening to the Blackwood Furbolg?
 				}),
 				q(4763,  {	-- The Blackwood Corrupted
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3649 },	-- Thundris Windweaver
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -733,7 +733,7 @@ _.Zones =
 					["sourceQuest"] = 13529,	-- The Corruption's Source
 				}),
 				q(4813,  {	-- The Fragments Within
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 175524 },	-- Mysterious Red Crystal (u=43)
 					["g"] = {
@@ -844,7 +844,7 @@ _.Zones =
 					["sourceQuest"] = 13569,	-- The Ritual Bond
 				}),
 				q(5321,  {	-- The Sleeper Has Awakened
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11218 },	-- Kerlonian Evershade
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -881,7 +881,7 @@ _.Zones =
 					},
 				}),
 				q(981,   {	-- The Tower of Althalaxx
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3661 },	-- Balthule Shadowstrike
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -890,7 +890,7 @@ _.Zones =
 					},
 				}),
 				q(973,   {	-- The Tower of Althalaxx
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3663 },	-- Delgren the Purifier
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -975,7 +975,7 @@ _.Zones =
 					["sourceQuest"] = 13564,	-- A Lost Companion
 				}),
 				q(4740,  {	-- WANTED: Murkdeep!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 175320 },	-- WANTED: Murkdeep!
 					["g"] = {
@@ -994,7 +994,7 @@ _.Zones =
 					},
 				}),
 				q(4681,  {	-- Washed Ashore
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10219 },	-- Gwennyth Bly'Leggonde
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

@@ -82,7 +82,7 @@ _.Zones =
 					},
 				}),
 				q(116,   {	-- Dry Times
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1270)),	-- Finely Woven Cloak
@@ -121,7 +121,7 @@ _.Zones =
 					},
 				}),
 				q(126,   {	-- Howling in the Hills
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2910)),	-- Gold Militia Boots
@@ -192,7 +192,7 @@ _.Zones =
 					},
 				}),
 				q(219,   {	-- Missing in Action
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3431)),	-- Bone-Studded Leather
@@ -201,7 +201,7 @@ _.Zones =
 					},
 				}),
 				q(249,   {	-- Morganth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["model"] = 189908,
 					["provider"] = { "o", 31 },	-- Old Lion Statue
 					["races"] = ALLIANCE_ONLY,
@@ -210,7 +210,7 @@ _.Zones =
 					},
 				}),
 				q(150,   {	-- Murloc Poachers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3567)),	-- Dwarven Fishing Pole
@@ -311,7 +311,7 @@ _.Zones =
 					},
 				}),
 				q(19,    {	-- Tharil'zun
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1276)),	-- Fire Hardened Buckler
@@ -325,7 +325,7 @@ _.Zones =
 					["sourceQuest"] = 26668,	-- Detonation
 				}),
 				q(89,    {	-- The Everstill Bridge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1303)),	-- Bridgeworker's Gloves
@@ -354,7 +354,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1702,  {	-- The Shieldsmith
 					["provider"] = { "n", 6166 },	-- Yorus Barleybrew
@@ -363,7 +363,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6970)),	-- Furen's Favor
 					},
@@ -413,7 +413,7 @@ _.Zones =
 					["sourceQuest"] = 26510,	-- We Must Prepare!
 				}),
 				q(122,   {	-- Underbelly Scales
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6092)),	-- Black Whelp Boots

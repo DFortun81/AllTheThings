@@ -26,8 +26,8 @@ _.Zones =
 						{ 68.0, 66.0, 48 },
 					},
 					["g"] = {
-						un(7, i(1938)),	-- Block Mallet
-						un(7, i(1215)),	-- Support Girdle
+						un(REMOVED_FROM_GAME, i(1938)),	-- Block Mallet
+						un(REMOVED_FROM_GAME, i(1215)),	-- Support Girdle
 					},
 				}), 
 				o(207496, {	-- Dark Iron Treasure Chest
@@ -78,14 +78,14 @@ _.Zones =
 						{ 53.0, 56.8, 48 },
 					},
 					["g"] = {
-						un(7, i(6197)),	-- Loch Croc Hide Vest
-						un(7, i(3563)),	-- Seafarer's Pantaloons
+						un(REMOVED_FROM_GAME, i(6197)),	-- Loch Croc Hide Vest
+						un(REMOVED_FROM_GAME, i(3563)),	-- Seafarer's Pantaloons
 					},
 				}), 
 				n(45398,  {	-- Grizlak
 					["coord"] = { 35.6, 15.6, 48 },
 					["g"] = {
-						un(7, i(2284)),	-- Rat Cloth Cloak
+						un(REMOVED_FROM_GAME, i(2284)),	-- Rat Cloth Cloak
 					},
 				}), 
 				n(1425,   {	-- Kubb
@@ -95,7 +95,7 @@ _.Zones =
 						{ 24.8, 30.6, 48 },
 					},
 					["g"] = {
-						un(7, i(6195)),	-- Wax-Polished Armor
+						un(REMOVED_FROM_GAME, i(6195)),	-- Wax-Polished Armor
 					},
 				}), 
 				n(14268,  {	-- Lord Condar
@@ -111,8 +111,8 @@ _.Zones =
 				n(1399,   {	-- Magosh
 					["coord"] = { 31.0, 75.6, 48 },
 					["g"] = {
-						un(7, i(2241)),	-- Desperado Cape
-						un(7, i(3571)),	-- Trogg Beater
+						un(REMOVED_FROM_GAME, i(2241)),	-- Desperado Cape
+						un(REMOVED_FROM_GAME, i(3571)),	-- Trogg Beater
 					},
 				}), 
 				n(45369,  {	-- Morick Darkbrew
@@ -146,10 +146,10 @@ _.Zones =
 					["coord"] = { 61.6, 74.6, 48 },
 				}), 
 				n(7170,   {	-- Thragomm <Horde Runner>
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(7, i(4949)),	-- Orcish Cleaver
+						un(REMOVED_FROM_GAME, i(4949)),	-- Orcish Cleaver
 					},
 				}),
 				n(45401,  {	-- Whitefin

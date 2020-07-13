@@ -8,11 +8,11 @@ _.Holidays = bubbleDown({["u"] = 17},
 			n(15909, {	-- Fariel Starsong <Coin of Ancestry Collector>
 				["coord"] = { 53.7, 35.4, 80 },
 				["g"] = {
-					un(7, i(21722)),	-- Pattern: Festival Dress (old version)
+					un(REMOVED_FROM_GAME, i(21722)),	-- Pattern: Festival Dress (old version)
 					un(17, i(44916, {	-- Pattern: Festival Dress
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					})),
-					un(7, i(21723)),	-- Pattern: Festival Suit (old version)
+					un(REMOVED_FROM_GAME, i(21723)),	-- Pattern: Festival Suit (old version)
 					un(17, i(44917, {	-- Pattern: Festival Suit
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					})),
@@ -52,14 +52,14 @@ _.Holidays = bubbleDown({["u"] = 17},
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					})),
 					i(21738, {	-- Schematic: Firework Launcher
-						["u"] = 7,	-- replaced with BOP version
+						["u"] = REMOVED_FROM_GAME,
 						["spellID"] = 0,	-- Old BOE version new version is 44919 and BOP, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
 					}),
 					un(17, i(44918, {	-- Schematic: Cluster Launcher
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					})),
 					i(21737, {	-- Schematic: Cluster Launcher
-						["u"] = 7,	-- replaced with BOP version
+						["u"] = REMOVED_FROM_GAME,
 						["spellID"] = 0,   	-- Old BOE version new version is 44918 and BOP, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
 					}),
 					un(17, i(116146, {  -- Schematic: Snake Firework

@@ -17,7 +17,7 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 64827 },	-- Hooded Crusader
 				}),
 				q(26993, {	-- Compendium of the Fallen
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 44800 },	-- Dominic
 					["g"] = {
 						i(7748, {	-- Forcestone Buckler
@@ -26,7 +26,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(26996, {	-- Right Under Their Noses
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 44800 },	-- Dominic
 				}),
 				q(31514, {	-- Unto Dust Thou Shalt Return
@@ -34,7 +34,7 @@ _.Instances = { tier(1, {	-- Classic
 					["sourceQuests"] = { 31513 },	-- Blades of the Anointed
 				}),
 				q(26994, {	-- Without Rhyme or Reason
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 44804 },	-- Dominic
 				}),
 			}),
@@ -81,7 +81,7 @@ _.Instances = { tier(1, {	-- Classic
 							58590,	-- Scarlet Zealot
 						},
 					}),
-					un(7, i(7736)),	-- Fight Club
+					un(REMOVED_FROM_GAME, i(7736)),	-- Fight Club
 					i(7755),	-- Flintrock Shoulders
 					i(7754, {	-- Harbinger Boots
 						["crs"] = {
@@ -114,7 +114,7 @@ _.Instances = { tier(1, {	-- Classic
 							4283,	-- Scarlet Sentry
 						},
 					}),
-					un(7, i(7758)),	-- Ruthless Shiv
+					un(REMOVED_FROM_GAME, i(7758)),	-- Ruthless Shiv
 					i(10329),	-- Scarlet Belt
 					i(10332),	-- Scarlet Boots
 					i(10328),	-- Scarlet Chestpiece
@@ -144,7 +144,7 @@ _.Instances = { tier(1, {	-- Classic
 							58590,	-- Scarlet Zealot
 						},
 					}),
-					un(7, i(7760)),	-- Warchief Kilt
+					un(REMOVED_FROM_GAME, i(7760)),	-- Warchief Kilt
 					i(7727, {	-- Watchman Pauldrons
 						["crs"] = {
 							59746,	-- Scarlet Centurion
@@ -188,7 +188,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(-85, {	-- Graveyard
 						n(QUESTS, {
 							q(26972, {	-- The Dark Side of the Light
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(65964)),	-- Gloves of the "Pure"
@@ -199,7 +199,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(26950, {	-- The Dark Side of the Light
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(66032)),	-- Gloves of the "Pure"
@@ -211,31 +211,31 @@ _.Instances = { tier(1, {	-- Classic
 							}),
 						}),
 						n(RARES, {
-							un(43, n(6488, {	-- Fallen Champion
+							un(REMOVED_FROM_GAME, n(6488, {	-- Fallen Champion
 								un(REMOVED_FROM_GAME, i(7690)),	-- Ebon Vise
 								un(REMOVED_FROM_GAME, i(7691)),	-- Embalmed Shroud
 								un(REMOVED_FROM_GAME, i(7689)),	-- Morbid Dawn
 							})),
-							un(43, n(6490, {	-- Azshir the Sleepless
+							un(REMOVED_FROM_GAME, n(6490, {	-- Azshir the Sleepless
 								un(REMOVED_FROM_GAME, i(7709)),	-- Blighted Leggings
 								un(REMOVED_FROM_GAME, i(7731)),	-- Ghostshard Talisman
 								un(REMOVED_FROM_GAME, i(7708)),	-- Necrotic Wand
 							})),
-							un(43, n(6489, {	-- Ironspine
+							un(REMOVED_FROM_GAME, n(6489, {	-- Ironspine
 								un(REMOVED_FROM_GAME, i(7686)),	-- Ironspine's Eye
 								un(REMOVED_FROM_GAME, i(7687)),	-- Ironspine's Fist
 								un(REMOVED_FROM_GAME, i(7688)),	-- Ironspine's Ribcage
 							})),
 						}),
-						un(43, n(3983, {	-- Interrogator Vishas
+						un(REMOVED_FROM_GAME, n(3983, {	-- Interrogator Vishas
 							un(REMOVED_FROM_GAME, i(7683)),	-- Bloody Brass Knuckles
 							un(REMOVED_FROM_GAME, i(7682)),	-- Torturing Poker
 						})),
-						un(43, n(4543, {	-- Bloodmage Thalnos
+						un(REMOVED_FROM_GAME, n(4543, {	-- Bloodmage Thalnos
 							un(REMOVED_FROM_GAME, i(7684)),	-- Bloodmage Mantle
 							un(REMOVED_FROM_GAME, i(7685)),	-- Orb of the Forgotten Seer
 						})),
-						un(43, n(14693, {	-- Scorn
+						un(REMOVED_FROM_GAME, n(14693, {	-- Scorn
 							["description"] = "This encounter was only available during the Scourge Invasion.",
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(23168)),	-- Scorn's Focal Dagger
@@ -247,7 +247,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(-86, {	-- Library
 						n(QUESTS, {
 							q(26959, {	-- Stripping Their Defenses
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(66033)),	-- Band of the Arcanist
@@ -256,7 +256,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(26973, {	-- The Only True Path
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(65966)),	-- Band of the Arcanist
@@ -265,12 +265,12 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 						}),
-						un(43, n(3974, {	-- Houndmaster Loksey
+						un(REMOVED_FROM_GAME, n(3974, {	-- Houndmaster Loksey
 							un(REMOVED_FROM_GAME, i(7756)),	-- Dog Training Gloves
 							un(REMOVED_FROM_GAME, i(3456)),	-- Dog Whistle
 							un(REMOVED_FROM_GAME, i(7710)),	-- Loksey's Training Stick
 						})),
-						un(43, n(6487, {	-- Arcanist Doan
+						un(REMOVED_FROM_GAME, n(6487, {	-- Arcanist Doan
 							un(REMOVED_FROM_GAME, i(34227)),	-- Deadman's Hand
 							un(REMOVED_FROM_GAME, i(7714)),	-- Hypnotic Blade
 							un(REMOVED_FROM_GAME, i(7713)),	-- Illusionary Rod
@@ -281,7 +281,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(-87, {	-- Armory
 						n(QUESTS, {
 							q(26962, {	-- Stripping Their Offense
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(66034)), 	-- Breastplate of the Scarlet Monastery
@@ -292,7 +292,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(26974, {	-- The False Champion
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(65967)), 	-- Breastplate of the Scarlet Monastery
@@ -303,7 +303,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 						}),
-						un(43, n(3975, {	-- Herod
+						un(REMOVED_FROM_GAME, n(3975, {	-- Herod
 							un(REMOVED_FROM_GAME, i(7718)),	-- Herod's Shoulder
 							un(REMOVED_FROM_GAME, i(7719)),	-- Raging Berserker's Helm
 							un(REMOVED_FROM_GAME, i(7717)),	-- Ravager
@@ -313,7 +313,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(-88, {	-- Cathedral
 						n(QUESTS, {
 							q(26976, {	-- Battle for the Scarlet Monastery
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(65970)),	-- Band of Grandiose Delusions
@@ -322,7 +322,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(26967, {	-- Battle for the Scarlet Monastery
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(66035)),	-- Band of Wrath
@@ -337,7 +337,7 @@ _.Instances = { tier(1, {	-- Classic
 							un(REMOVED_FROM_GAME, i(19507)),	-- Inquisitor's Shawl
 						}),
 						n(3976, {	-- Scarlet Commander Mograine
-							["u"] = 43,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(7726)),	-- Aegis of the Scarlet Commander
 								i(7761),	-- Steelclaw Reaver

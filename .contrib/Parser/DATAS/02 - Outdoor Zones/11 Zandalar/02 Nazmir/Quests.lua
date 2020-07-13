@@ -90,7 +90,7 @@ _.Zones =
 					["sourceQuests"] = { 54940 },	-- Necessity is the MOTHER
 					["provider"] = { "n", 149823 },	-- Magni Bronzebeard
 					["coord"] = { 52.3, 68.6, 1382 },
-					["u"] = 40,	-- Legacy Quests — Retired with the implementation of 8.2
+					["u"] = REMOVED_FROM_GAME, -- Retired with the implementation of 8.2
 				}),
 				
 				
@@ -747,7 +747,7 @@ _.Zones =
 					["sourceQuests"] = { 54939 },	-- Stubborn as a Bronzebeard
 					["provider"] = { "n", 149823 },
 					["coord"] = { 47.6, 16.2, 1381 },
-					["u"] = 40,	-- Legacy Quests — Retired with the implementation of 8.2
+					["u"] = REMOVED_FROM_GAME, -- Retired with the implementation of 8.2
 				}),
 				
 				
@@ -1166,7 +1166,7 @@ _.Zones =
 					["sourceQuests"] = { 54938 },	-- A Brother's Help
 					["provider"] = { "n", 149867 },	-- Magni Bronzebeard
 					["coord"] = { 57.8, 50.4, 863 },
-					["u"] = 40,	-- Legacy Quests — Retired with the implementation of 8.2
+					["u"] = REMOVED_FROM_GAME, -- Retired with the implementation of 8.2
 				}),
 				
 				

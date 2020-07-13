@@ -15,11 +15,11 @@ _.Zones =
 					},
 				}),
 				n(771, {	-- Commander Felstrom
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 18.0, 37.9, 47 },
 					["g"] = {
-						un(7, i(4465)),	-- Felstrom's Gauntlets
-						un(7, i(4464)),	-- Trouncing Boots
+						un(REMOVED_FROM_GAME, i(4465)),	-- Felstrom's Gauntlets
+						un(REMOVED_FROM_GAME, i(4464)),	-- Trouncing Boots
 					},
 				}),
 				n(45801, {	-- Eliza
@@ -36,8 +36,8 @@ _.Zones =
 						{ 64.0, 51.2, 47 },
 					},
 					["g"] = {
-						un(7, i(4474)), 	-- Ravenwood Bow
-						un(7, i(6204)),		-- Tribal Worg Helm
+						un(REMOVED_FROM_GAME, i(4474)), 	-- Ravenwood Bow
+						un(REMOVED_FROM_GAME, i(6204)),		-- Tribal Worg Helm
 					},
 				}),
 				n(91592, {	-- Forlorn Composer
@@ -47,10 +47,10 @@ _.Zones =
 					},
 				}),
 				n(503, {	-- Lord Malathrom
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 21.1, 27.2, 47 },
 					["g"] = {
-						un(7, i(4462)),	-- Cloak of Rot
+						un(REMOVED_FROM_GAME, i(4462)),	-- Cloak of Rot
 					},
 				}),
 				n(521,   {	-- Lupos
@@ -60,8 +60,8 @@ _.Zones =
 						{ 70.2, 24.4, 47 },
 					},
 					["g"] = {
-						un(7, i(3018)),	-- Hide of Lupos
-						un(7, i(3227)),	-- Nightbane Staff
+						un(REMOVED_FROM_GAME, i(3018)),	-- Hide of Lupos
+						un(REMOVED_FROM_GAME, i(3227)),	-- Nightbane Staff
 					},
 				}),
 				n(45811, { 	-- Marina DeSirrus
@@ -79,15 +79,15 @@ _.Zones =
 				n(574,   {	-- Naraxis
 					["coord"] = { 86.36, 47.32, 47 },
 					["g"] = {
-						un(7, i(4448)),	-- Husk of Naraxis
-						un(7, i(4449)),	-- Naraxis' Fang
+						un(REMOVED_FROM_GAME, i(4448)),	-- Husk of Naraxis
+						un(REMOVED_FROM_GAME, i(4449)),	-- Naraxis' Fang
 					},
 				}),
 				n(534,   {	-- Nefaru
 					["coord"] = { 74.0, 78.6, 47 },
 					["g"] = {
-						un(7, i(4477)),	-- Nefarious Buckler
-						un(7, i(4476)),	-- Beastwalker Robe
+						un(REMOVED_FROM_GAME, i(4477)),	-- Nefarious Buckler
+						un(REMOVED_FROM_GAME, i(4476)),	-- Beastwalker Robe
 					},
 				}),
 				n(45739, { 	-- The Unknown Soldier

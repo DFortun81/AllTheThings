@@ -7,7 +7,7 @@ _.Zones =
 		m(76, {	-- Azshara
 			n(QUESTS, {
 				q(3382,  {	-- A Crew Under Fire
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8380 },	-- Captain Vanessa Beltis
 					["repeatable"] = true,
 				}),
@@ -24,7 +24,7 @@ _.Zones =
 					["sourceQuest"] = 14388,	-- Azsharite Experiment Number Two
 				}),
 				q(7486,  {	-- A Hero's Reward
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13278 },	-- Duke Hydraxis
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(18399)),	-- Ocean's Breeze
@@ -32,7 +32,7 @@ _.Zones =
 					},
 				}),
 				q(5536,  {	-- A Land Filled with Hatred
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11548 },	-- Loh'atu
 				}),
 				q(14131, {	-- A Little Pick-me-up
@@ -42,7 +42,7 @@ _.Zones =
 					["sourceQuest"] = 14130,	-- Friends Come in All Colors
 				}),
 				q(3381,  {	-- A Meeting with the Master
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8395 },	-- Sanath Lim-yo
 				}),
 				q(14432, {	-- A Pale Brew
@@ -81,7 +81,7 @@ _.Zones =
 					["sourceQuest"] = 14130,	-- Friends Come in All Colors
 				}),
 				q(6823,  {	-- Agent of Hydraxis
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13278 },	-- Duke Hydraxis
 					["coord"] = { 79.3, 73.7, 76 },
 					["sourceQuest"] = 6822,	-- The Molten Core
@@ -125,7 +125,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(3602,  {	-- Azsharite
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7783 },	-- Loramus Thalipedes
 					["coord"] = { 60.8, 66.3, 76 },
 					["sourceQuest"] = 3511,	-- The Name of the Beast
@@ -143,7 +143,7 @@ _.Zones =
 					["sourceQuest"] = 14385,	-- Azsharite Experiment Number One
 				}),
 				q(8575,  {	-- Azuregos's Magical Ledger
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 20949 }	-- Magical Ledger -- part of the Scepter of Shifting Sands questline
 				}),
 				q(14322, {	-- Bad Science! Bad!
@@ -180,7 +180,7 @@ _.Zones =
 					["sourceQuest"] = 3504,	-- Betrayed
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3506,  {	-- Betrayed
 					["provider"] = { "n", 8576 },	-- Ag'tor Bloodfist
@@ -188,7 +188,7 @@ _.Zones =
 					["sourceQuest"] = 3505,	-- Betrayed
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3507,  {	-- Betrayed
 					["provider"] = { "n", 8576 },	-- Ag'tor Bloodfist
@@ -196,7 +196,7 @@ _.Zones =
 					["sourceQuest"] = 3506,	-- Betrayed
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11120)),	-- Belgrom's Hammer
 						un(REMOVED_FROM_GAME, i(10709)),	-- Pyrestone Orb
@@ -212,7 +212,7 @@ _.Zones =
 					},
 				}),
 				q(3508,  {	-- Breaking the Ward
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7783 },	-- Loramus Thalipedes
 					["coord"] = { 60.8, 66.3, 76 },
 					["sourceQuest"] = 3141,	-- Loramus
@@ -227,43 +227,43 @@ _.Zones =
 					["sourceQuest"] = 14135,	-- Up a Tree
 				}),
 				q(3542,  {	-- Delivery to Andron Gant
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8587 },	-- Jediga
 					["coord"] = { 22.6, 51.4, 76 },
 					["sourceQuest"] = 3517,	-- Stealing Knowledge,
 				}),
 				q(3561, {	-- Delivery to Archmage Xylem
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8587 },	-- Jediga
 					["sourceQuest"] = 3517,	-- Stealing Knowledge
 				}),
 				q(3542,  {	-- Delivery to Archmage Xylem
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8587 },	-- Jediga
 					["coord"] = { 22.6, 51.4, 76 },
 					["sourceQuest"] = 3517,	-- Stealing Knowledge,
 				}),
 				q(3541, {	-- Delivery to Jes'rimon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8587 },	-- Jediga
 					["sourceQuest"] = 3517,	-- Stealing Knowledge
 				}),
 				q(3542,  {	-- Delivery to Jes'rimon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8587 },	-- Jediga
 					["coord"] = { 22.6, 51.4, 76 },
 					["sourceQuest"] = 3517,	-- Stealing Knowledge
 				}),
 				q(3518, {	-- Delivery to Magatha
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8587 },	-- Jediga
 					["sourceQuest"] = 3517,	-- Stealing Knowledge
 				}),
 				q(3542,  {	-- Delivery to Magatha
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8587 },	-- Jediga
 					["coord"] = { 22.6, 51.4, 76 },
 					["sourceQuest"] = 3517,	-- Stealing Knowledge,
@@ -308,7 +308,7 @@ _.Zones =
 					},
 				}),
 				q(6821,  {	-- Eye of the Emberseer
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13278 },	-- Duke Hydraxis
 					["coord"] = { 79.3, 73.7, 76 },
 					["sourceQuests"] = {
@@ -367,7 +367,7 @@ _.Zones =
 					},
 				}),
 				q(9364,  {	-- Fragmented Magic (removed with Cataclysm)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8379 },	-- Archmage Xylem
 					["classes"] = { MAGE },
 					["sourceQuest"] = 9362,	-- Warlord Krellian
@@ -431,7 +431,7 @@ _.Zones =
 					["sourceQuest"] = 14468,	-- Another Warm Body
 				}),
 				q(6824,  {	-- Hands of the Enemy
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13278 },	-- Duke Hydraxis
 					["coord"] = { 79.3, 73.7, 76 },
 					["sourceQuest"] = 6823,	-- Agent of Hydraxis
@@ -482,12 +482,12 @@ _.Zones =
 					["sourceQuest"] = 14258,	-- Mortar the Point
 				}),
 				q(3601,  {	-- Kim'jael Indeed!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8420 },	-- Kim'jael
 					["coord"] = { 53.5, 21.8, 76 },
 				}),
 				q(5534,  {	-- Kim'jael's Missing Equipment
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8420 },	-- Kim'jael
 					["coord"] = { 53.5, 21.8, 76 },
 					["sourceQuest"] = 3601,	-- Kim'jael Indeed!
@@ -509,7 +509,7 @@ _.Zones =
 					},
 				}),
 				q(3141,  {	-- Loramus
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7783 },	-- Loramus Thalipedes
 					["coord"] = { 60.8, 66.3, 76 },
 					["sourceQuest"] = 2744,	-- The Demon Hunter
@@ -525,7 +525,7 @@ _.Zones =
 					},
 				}),
 				q(3503,  {	-- Meeting with the Master
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8395 },	-- Sanath Lim-yo
 					["repeatable"] = true,
 				}),
@@ -615,7 +615,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(6804,  {	-- Poisoned Water
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13278 },	-- Duke Hydraxis
 					["races"] = HORDE_ONLY,
 					["coord"] = { 79.3, 73.7, 76 },
@@ -770,7 +770,7 @@ _.Zones =
 					["sourceQuest"] = 14127,	-- Return of the Highborne?
 				}),
 				q(3461,  {	-- Return to Tymor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8392 },	-- Pilot Xiggs Fuselighter
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -779,7 +779,7 @@ _.Zones =
 					},
 				}),
 				q(3421,  {	-- Return Trip
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8399 },	-- Nyril
 					["repeatable"] = true,
 				}),
@@ -864,11 +864,11 @@ _.Zones =
 					},
 				}),
 				q(5535,  {	-- Spiritual Unrest
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11548 },	-- Loh'atu
 				}),
 				q(3517,  {	-- Stealing Knowledge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8587 },	-- Jediga
 					["coord"] = { 22.6, 51.4, 76 },
 				}),
@@ -878,7 +878,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(6805,  {	-- Stormers and Rumblers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13278 },	-- Duke Hydraxis
 					["coord"] = { 79.3, 73.7, 76 },
 				}),
@@ -952,7 +952,7 @@ _.Zones =
 					},
 				}),
 				q(3621,  {	-- The Formation of Felbane
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7783 },	-- Loramus Thalipedes
 					["coord"] = { 60.8, 66.3, 76 },
 					["sourceQuest"] = 3602,	-- Azsharite
@@ -965,25 +965,25 @@ _.Zones =
 					["sourceQuest"] = 14267,	-- Investigating the Sea Shrine
 				}),
 				q(6822,  {	-- The Molten Core
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13278 },	-- Duke Hydraxis
 					["coord"] = { 79.3, 73.7, 76 },
 					["sourceQuest"] = 6821,	-- Eye of the Emberseer
 				}),
 				q(3509,  {	-- The Name of the Beast
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7783 },	-- Loramus Thalipedes
 					["coord"] = { 60.8, 66.3, 76 },
 					["sourceQuest"] = 3508,	-- Breaking the Ward
 				}),
 				q(3510,  {	-- The Name of the Beast
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6134 },	-- Lord Arkkoroc
 					["coord"] = { 77.1, 42.8, 76 },
 					["sourceQuest"] = 3509,	-- The Name of the Beast
 				}),
 				q(3511,  {	-- The Name of the Beast
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6134 },	-- Lord Arkkoroc
 					["coord"] = { 77.1, 42.8, 76 },
 					["sourceQuest"] = 3510,	-- The Name of the Beast
@@ -1166,7 +1166,7 @@ _.Zones =
 					},
 				}),
 				q(3565,  {	-- Xylem's Payment to Jediga
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8379 },	-- Archmage Xylem
 					["sourceQuest"] = 3561,	-- Delivery to Archmage Xylem
 				}),

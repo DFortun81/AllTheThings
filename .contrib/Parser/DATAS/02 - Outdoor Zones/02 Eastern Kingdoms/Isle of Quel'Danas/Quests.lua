@@ -7,7 +7,7 @@ _.Zones =
 		m(122, {	-- Isle of Quel'Danas
 			n(QUESTS, {
 				q(11545, {	-- A Charitable Donation (Removed completion of Phase 4)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 25112 },	-- Anchorite Ayuri
 					["coord"] = { 49.1, 37.6, 122 },
 					["isDaily"] = true,
@@ -46,7 +46,7 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(11532, {	-- Distraction at the Dead Scar (Removed completion of Phase 2)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 25057 },	-- Battlemage Arynna
 					["coord"] = { 47.5, 35.0, 122 },
 					["isDaily"] = true,
@@ -57,7 +57,7 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(11524, {	-- Erratic Behavior (Removed completion of Phase 1)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 24965 },	-- Vindicator Xayann
 					["coord"] = { 47.1, 30.6, 122 },
 					["isDaily"] = true,
@@ -78,7 +78,7 @@ _.Zones =
 					["minReputation"] = { 1077, HONORED },
 				}),
 				q(11542, {	-- Intercept the Reinforcements (Removed completion of Phase 3)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 25108 },	-- Vindicator Kaalan
 					["coord"] = { 50.5, 38.9, 122 },
 					["isDaily"] = true,
@@ -94,7 +94,7 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(11488, {	-- Magisters' Terrace
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 24813 },	-- Exarch Larethor
 					["sourceQuest"] = 11481,	-- Crisis at the Sunwell
 				}),
@@ -103,7 +103,7 @@ _.Zones =
 					["coord"] = { 47.4, 30.4, 122 },
 				}),
 				q(11535, {	-- Making Ready
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 25046 },	-- Smith Hauthaa
 					["coord"] = { 50.5, 40.7, 122 },
 					["isDaily"] = true,
@@ -128,7 +128,7 @@ _.Zones =
 					["minReputation"] = { 1077, REVERED },
 				}),
 				q(11539, {	-- Taking the Harbor (Removed completion of Phase 3)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 25069 },	-- Magister Ilastar
 					["coord"] = { 49.3, 40.3, 122 },
 					["isDaily"] = true,
@@ -139,7 +139,7 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(11538, {	-- The Battle for the Sun's Reach Armory (Removed completion of Phase 2)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 25061 },	-- Harbinger Inuuro
 					["coord"] = { 47.6, 35.0, 122 },
 					["isDaily"] = true,
@@ -150,7 +150,7 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(11496, {	-- The Sanctum Wards (Removed completion of Phase 1)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 24967 },	-- Captain Theris Dawnhearth
 					["coord"] = { 47.4, 30.4, 122 },
 					["isDaily"] = true,

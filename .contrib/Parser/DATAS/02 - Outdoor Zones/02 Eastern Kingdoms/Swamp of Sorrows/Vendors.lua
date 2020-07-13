@@ -39,7 +39,7 @@ _.Zones =
 						i(12254, {	-- Well Oiled Cloak
 							["isLimited"] = true,
 						}),
-						un(7, i(15726)),	-- Pattern: Green Dragonscale Breastplate (BoE version was removed from game)
+						un(REMOVED_FROM_GAME, i(15726)),	-- Pattern: Green Dragonscale Breastplate (BoE version was removed from game)
 					},
 				}),
 				n(8177,  {	-- Rartar <Alchemy Supplies>

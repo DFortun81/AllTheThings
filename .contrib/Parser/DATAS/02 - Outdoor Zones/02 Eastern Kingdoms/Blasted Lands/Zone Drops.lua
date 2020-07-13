@@ -133,7 +133,7 @@ _.Zones =
 				}),
 				i(15727, {	-- Pattern: Heavy Scorpid Vest
 					["crs"] = { 6005 },	-- Shadowsworn Thug
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(118675, {	-- Time-Locked Box (PET!)
 					["description"] = "Must be in the Iron Horde Invasion version of Blasted Lands. Drops from any Iron Horde enemy.",

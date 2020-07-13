@@ -1765,7 +1765,7 @@ local function OnScrollBarValueChanged(self, value)
 	local un = math.floor(value);
 	local up = un + 1;
 	self.CurrentValue = (up - value) > (-(un - value)) and un or up;
-	self.child:SetPoint("TOP", 0, (self.CurrentValue / 100) * 360);
+	self.child:SetPoint("TOP", 0, (self.CurrentValue / 100) * 200);
 end
 local scrollbar = CreateFrame("Slider", nil, settings, "UIPanelScrollBarTemplate");
 scrollbar:SetPoint("TOP", line, "BOTTOM", -3, -16);
@@ -1913,7 +1913,7 @@ local unobtainableFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate")
 unobtainableFrame:SetPoint("TOP",unobtainable,0,-20);
 unobtainableFrame:SetPoint("LEFT", child, 4, 0);
 unobtainableFrame:SetPoint("RIGHT", child, -4, 0);
-unobtainableFrame:SetHeight(535);
+unobtainableFrame:SetHeight(320);
 
 -- unobtainable enable
 local unobtainableEnable = child:CreateCheckBox("Filter Unobtainable Items",
@@ -2045,90 +2045,9 @@ for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 	end
 end
 
--- possible
-local possChance = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-possChance:SetPoint("TOPLEFT", noChance, 0, -(noChanceFrame:GetHeight() + (2*20)))
-possChance:SetText("Possible Chance");
-
-local possChanceFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
-possChanceFrame:SetPoint("TOP",possChance,0,-20);
-possChanceFrame:SetPoint("LEFT", child, 4, 0);
-possChanceFrame:SetPoint("RIGHT", child, -4, 0);
-possChanceFrame:SetHeight(75);
-
--- possible Everything
-local possChanceAll = child:CreateCheckBox("Enable All \"Possible Chance\"",
-function(self)
-	local isTrue = true
-	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-		if v[1] == 2 then
-			isTrue = isTrue and not val[k]
-		end
-	end
-	self:SetChecked(isTrue);
-	if not app.GetDataMember("FilterUnobtainableItems") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-		if v[1] == 2 then
-			val[k] = not self:GetChecked()
-		end
-	end
-	app.SetDataMember("UnobtainableItemFilters", val);
-	settings:Refresh();
-	app:RefreshData();
-end);
-possChanceAll:SetPoint("TOPLEFT",possChance, 300, 7)
-
-local last = possChanceFrame;
-local x = 5;
-local y = 5;
-local count = 0;
-for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-	if v[1]  == 2 then
-		local filter = child:CreateCheckBox(v[3],
-		function(self) 
-			self:SetChecked(not app.GetDataMember("UnobtainableItemFilters")[k]);
-			if not app.GetDataMember("FilterUnobtainableItems") then
-				self:Disable();
-				self:SetAlpha(0.2);
-			else
-				self:Enable();
-				self:SetAlpha(1);
-			end
-		end,
-		function(self)
-			local val = app.GetDataMember("UnobtainableItemFilters")
-			val[k]= not self:GetChecked()
-			app.SetDataMember("UnobtainableItemFilters", val);
-			settings:Refresh();
-			app:RefreshData();
-		end);
-		filter:SetATTTooltip(v[2]);
-		filter:SetPoint("TOPLEFT",last,x,-y)
-		last = filter
-		x = 0;
-		y = 20;
-		count = count + 1;
-		if count == 3 then
-			x = 300
-			y = 5
-			last = possChanceFrame
-		end
-	end
-end
-
 -- high
 local highChance = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-highChance:SetPoint("TOPLEFT", possChance, 0, -(possChanceFrame:GetHeight() + (2*20)))
+highChance:SetPoint("TOPLEFT", noChance, 0, -(noChanceFrame:GetHeight() + (2*20)))
 highChance:SetText("High Chance");
 
 local highChanceFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
@@ -2203,83 +2122,6 @@ for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 			x = 300
 			y = 5
 			last = highChanceFrame
-		end
-	end
-end
-
--- Legacy
-local legacy = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-legacy:SetPoint("TOPLEFT", highChance, 0, -(highChanceFrame:GetHeight() + (2*15)))
-legacy:SetText("Legacy");
-
-local legacyFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
-legacyFrame:SetPoint("TOP",legacy,0,-20);
-legacyFrame:SetPoint("LEFT", child, 4, 0);
-legacyFrame:SetPoint("RIGHT", child, -4, 0);
-legacyFrame:SetHeight(150);
-
--- Legacy Everything
-local legacyAll = child:CreateCheckBox("Enable All \"Legacy\"",
-function(self)
-	local isTrue = true
-	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-		if v[1] == 4 then
-			isTrue = isTrue and not val[k]
-		end
-	end
-	self:SetChecked(isTrue);
-	if not app.GetDataMember("FilterUnobtainableItems") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-		if v[1] == 4 then
-			val[k] = not self:GetChecked()
-		end
-	end
-	app.SetDataMember("UnobtainableItemFilters", val);
-	settings:Refresh();
-	app:RefreshData();
-end);
-legacyAll:SetPoint("TOPLEFT",legacy, 300, 7)
-
-local x = 5;
-local y = 5;
-local legacyWidth = 600;
-for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-	if v[1]  == 4 then
-		local filter = child:CreateCheckBox(v[3],
-		function(self) 
-			self:SetChecked(not app.GetDataMember("UnobtainableItemFilters")[k]);
-			if not app.GetDataMember("FilterUnobtainableItems") then
-				self:Disable();
-				self:SetAlpha(0.2);
-			else
-				self:Enable();
-				self:SetAlpha(1);
-			end
-		end,
-		function(self)
-			local val = app.GetDataMember("UnobtainableItemFilters")
-			val[k]= not self:GetChecked()
-			app.SetDataMember("UnobtainableItemFilters", val);
-			settings:Refresh();
-			app:RefreshData();
-		end);
-		filter:SetATTTooltip(v[2]);
-		filter:SetPoint("TOPLEFT",legacyFrame,x,-y)
-		
-		x = x + (legacyWidth / 2);
-		if x > legacyWidth then
-			y = y + 20;
-			x = 5;
 		end
 	end
 end

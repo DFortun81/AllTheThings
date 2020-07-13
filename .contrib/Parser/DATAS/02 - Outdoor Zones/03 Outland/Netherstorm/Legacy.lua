@@ -8,7 +8,7 @@ _.Zones =
 			n(-40, {	-- Legacy
 				n(VENDORS, {
 					n(34094, {	-- Grex Brainboiler <Veteran Arena Vendor> [Note: Yes, two NPCs with same name. One is removed]
-						["u"] = 43,	-- Removed NPCs
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
 							un(REMOVED_FROM_GAME, i(51403)),	-- Wrathful Gladiator's Acute Staff [Elite Rating]
@@ -42,7 +42,7 @@ _.Zones =
 						},
 					}),
 					n(33918, {  -- Kezzik the Striker <Veteran Arena Vendor> [Note: Yes, two NPCs with same name. One is removed]
-						["u"] = 43,	-- Removed NPCs
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
 							i(42565),	-- Furious Gladiator's Barrier

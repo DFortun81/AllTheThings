@@ -17,15 +17,15 @@ _.Zones =
 				}),
 				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets
 					["crs"] = { 7025 },	-- Blackrock Soldier
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(15748, {	-- Pattern: Heavy Scorpid Leggings
 					["crs"] = { 7027 },	-- Blackrock Slayer
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(15732, {	-- Pattern: Volcanic Leggings
 					["crs"] = { 7035 },	-- Firegut Brute
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(13476, {	-- Recipe: Mighty Rage Potion
 					["crs"] = { 7027 },	-- Blackrock Slayer

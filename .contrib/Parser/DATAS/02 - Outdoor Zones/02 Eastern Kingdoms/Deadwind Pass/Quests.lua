@@ -16,7 +16,7 @@ _.Zones =
 				}),
 				]]--
 				q(11031, {	-- Archmage No More
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 18253 },	-- Archmage Leryda
 					["repeatable"] = true,
 					["g"] = {
@@ -26,7 +26,7 @@ _.Zones =
 					},
 				}),
 				q(11033, {	-- Assassin No More
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 18253 },	-- Archmage Leryda
 					["repeatable"] = true,
 					["g"] = {
@@ -123,35 +123,35 @@ _.Zones =
 				}),
 				]]--
 				q(10731, {	-- Path of the Violet Assassin
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 18253 },	-- Archmage Leryda
 					["g"] = {
 						i(29280),	-- Violet Signet
 					},
 				}),
 				q(10729, {	-- Path of the Violet Mage
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 18253 },	-- Archmage Leryda
 					["g"] = {
 						i(29284),	-- Violet Signet
 					},
 				}),
 				q(10732, {	-- Path of the Violet Protector
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 18253 },	-- Archmage Leryda
 					["g"] = {
 						i(29276),	-- Violet Signet
 					},
 				}),
 				q(10730, {	-- Path of the Violet Restorer
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 18253 },	-- Archmage Leryda
 					["g"] = {
 						i(29288),	-- Violet Signet
 					},
 				}),
 				q(11032, {	-- Protector No More
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 18253 },	-- Archmage Leryda
 					["repeatable"] = true,
 					["g"] = {
@@ -171,7 +171,7 @@ _.Zones =
 					},
 				}),
 				q(11034, {	-- Restorer No More
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 18253 },	-- Archmage Leryda
 					["repeatable"] = true,
 					["g"] = {
@@ -290,7 +290,7 @@ _.Zones =
 					},
 				}),
 				q(9860, {	-- The New Directive
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17613 },	-- Archmage Alturus
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(31113)),	-- Violet Badge

@@ -18,7 +18,7 @@ _.Instances = { tier(1, {	-- Classic
 				q(3341,  {	-- Bring the End
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2308 },	-- Andrew Brownell
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10823)),	-- Vanquisher's Sword
 						un(REMOVED_FROM_GAME, i(10824)),	-- Amberglow Talisman
@@ -27,14 +27,14 @@ _.Instances = { tier(1, {	-- Classic
 				q(3636,  {	-- Bring the Light
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1284 },	-- Archbishop Benedictus
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10823)),	-- Vanquisher's Sword
 						un(REMOVED_FROM_GAME, i(10824)),	-- Amberglow Talisman
 					},
 				}),
 				q(3525, {	-- Extinguishing the Idol
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8516 },	-- Belnistrasz
 					["sourceQuest"] = 3523,	-- Scourge of the Downs
 					["g"] = {
@@ -44,26 +44,26 @@ _.Instances = { tier(1, {	-- Classic
 				q(27022, {	-- Extinguishing the Idol
 					["sourceQuests"] = { 27019 },	-- Scourge of the Downs
 					["provider"] = { "n", 8516 },	-- Belnistrasz
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10710)),	-- Dragonclaw Ring
 					},
 				}),
 				q(27024, {	-- Partners in Crime
 					["provider"] = { "n", 44837 },	-- Koristrasza
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3523, {	-- Scourge of the Downs
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8516 },	-- Belnistrasz
 				}),
 				q(27019, {	-- Scourge of the Downs
 					["provider"] = { "n", 8516 },	-- Belnistrasz
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27009, {	-- The Coldbringer
 					["provider"] = { "n", 44837 },	-- Koristrasza
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(65996),	-- Belt of Tyrannic Rule
 						i(65975),	-- Chestguard of Redemption
@@ -243,7 +243,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(8696,  {	-- Henry Stern
-				["u"] = 43,	-- Removed NPCs
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, recipe(13028, {	-- Goldthorn Tea
 						["description"] = "Henry Stern, who is currently the only source for Goldthorn Tea, is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, takes the recipe off the list, or gives us another way to obtain it.",
@@ -251,7 +251,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(14686, {	-- Lady Falther'ess
-				["u"] = 43,	-- Removed NPCs
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(23177)),	-- Lady Falther'ess' Finger
 					un(REMOVED_FROM_GAME, i(23178)),	-- Mantle of Lady Falther'ess

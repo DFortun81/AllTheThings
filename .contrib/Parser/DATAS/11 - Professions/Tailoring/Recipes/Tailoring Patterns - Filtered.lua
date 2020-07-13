@@ -11,7 +11,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 26086,--[[Felcloth Bag]]
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}
 				},
@@ -62,7 +62,7 @@ profession(TAILORING, {
 						},
 						{
 							["recipeID"] = 18458,--[[Robe of the Void]]
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 12068,--[[Stormcloth Vest]]
@@ -132,7 +132,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 22813,--[[Gordok Ogre Suit]]
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						}
 					}
 				},

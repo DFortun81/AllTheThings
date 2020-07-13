@@ -56,7 +56,7 @@ _.Zones =
 					},
 				}),
 				n(33915,  {	-- Argex Irongut <Veteran Arena Vendor>
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
 						i(42565),	-- Furious Gladiator's Barrier
@@ -153,7 +153,7 @@ _.Zones =
 					},
 				}),
 				n(34090,  {	-- Blazzek the Biter Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(49086)),	-- Relentless Gladiator's Tabard [Elite Rating]
 						un(REMOVED_FROM_GAME, i(48435)),	-- Relentless Gladiator's Punisher
@@ -178,7 +178,7 @@ _.Zones =
 					},
 				}),
 				n(34093,  {	-- Blazzek the Biter Season >8< Elite Version [Note: Yes, two npc's with same name. One is removed]
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
 						un(REMOVED_FROM_GAME, i(51403)),	-- Wrathful Gladiator's Acute Staff [Elite Rating]
@@ -243,7 +243,7 @@ _.Zones =
 				}),
 				n(69979,  {	-- Ecton Brasstumbler <Honor Quartermaster>
 				--[[ Only sold Honor Items
-					["u"] = 43,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
 						un(REMOVED_FROM_GAME, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
@@ -253,7 +253,7 @@ _.Zones =
 					},
 			--]]}),
 				n(32362,  {	-- Evee Copperspring <Arena Vendor> >Season 6< Elite
-					["u"] = 43,	-- Removed NPCs
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(45952)),	-- Furious Gladiator's Greatstaff
 						un(REMOVED_FROM_GAME, i(45948)),	-- Furious Gladiator's Sunderer

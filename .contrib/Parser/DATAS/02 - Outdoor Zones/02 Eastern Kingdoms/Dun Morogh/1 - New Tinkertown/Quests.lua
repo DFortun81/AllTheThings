@@ -157,7 +157,7 @@ _.Zones =
 						},
 					}),
 					q(31138, {	-- The Arts of a Monk
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = { 7 },	-- Gnome
 						["classes"] = { 8 },	-- Mage
 						["g"] = {
@@ -165,7 +165,7 @@ _.Zones =
 						},
 					}),
 					q(26207, {	-- The Arts of a Rogue
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 42366 },	-- Kelsey Steelspark
 						["coord"] = { 38.0, 33.5, 469 },
 						["races"] = { 7 },	-- Gnome

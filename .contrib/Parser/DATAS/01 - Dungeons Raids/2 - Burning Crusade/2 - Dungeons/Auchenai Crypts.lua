@@ -20,7 +20,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						["provider"] = { "n", 54725 },			-- Draenei Spirit
 					}),
 					q(29597, {	-- The End of the Exarch
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(29596, {	-- The End of the Exarch
 						["provider"] = { "n", 54725 },			-- Draenei Spirit

@@ -707,7 +707,7 @@ _.Zones =
 									["coord"] = { 37.8, 81.0, 85 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 110,
-									["u"] = 40,
+									["u"] = REMOVED_FROM_GAME,
 								}),
 							},
 						}),
@@ -726,42 +726,42 @@ _.Zones =
 					},
 				}),
 				q(7831, {	-- A Donation of Mageweave
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14726 },	-- Rashona Straglash
 				}),
 				q(7835, {	-- A Donation of Mageweave
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14727 },	-- Vehena
 				}),
 				q(7824, {	-- A Donation of Runecloth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14726 },	-- Rashona Straglash
 				}),
 				q(7836, {	-- A Donation of Runecloth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14727 },	-- Vehena
 				}),
 				q(7827, {	-- A Donation of Silk
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14726 },	-- Rashona Straglash
 				}),
 				q(7834, {	-- A Donation of Silk
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14727 },	-- Vehena
 				}),
 				q(7826, {	-- A Donation of Wool
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14726 },	-- Rashona Straglash
 				}),
 				q(7833, {	-- A Donation of Wool
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14727 },	-- Vehena
 				}),
@@ -771,7 +771,7 @@ _.Zones =
 					["sourceQuest"] = 51796,	-- The Battle for Lordaeron
 					["races"] = HORDE_ONLY,
 					["lvl"] = 110,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27365, {	-- A Fitting Weapon
 					["provider"] = { "n", 3353 },	-- Grezz Ragefist
@@ -800,7 +800,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(13266, {	-- A Life Without Regret
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 31412 },	-- Thrall
 					["sourceQuest"] = 13257,	-- Herald of War
@@ -822,7 +822,7 @@ _.Zones =
 					["sourceQuest"] = 49977,	-- Summons to Orgrimmar
 					["races"] = HORDE_ONLY,
 					["lvl"] = 110,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27435, {	-- A Seer's Staff
 					["provider"] = { "n", 44735 },	-- Seer Liwatha
@@ -865,7 +865,7 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(32309, {	-- A Tale of Six Masters
 					["provider"] = { "n", 88705 },	-- Kranosh
@@ -889,7 +889,7 @@ _.Zones =
 					},
 				}),
 				q(809,   {	-- Ak'Zeloth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3216 },	-- Neeru Fireblade
 					["sourceQuest"] = 829,	-- Neeru Fireblade
@@ -925,7 +925,7 @@ _.Zones =
 					["coord"] = { 52.4, 44.6, 85 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1432,  {	-- Alliance Relations
 					["provider"] = { "n", 5640 },	-- Keldran
@@ -933,7 +933,7 @@ _.Zones =
 					["sourceQuest"] = 1431,	-- Alliance Relations
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(8920,  {	-- An Earnest Proposition (Warrior)
 					["provider"] = { "n", 16012 },	-- Mokvar
@@ -941,7 +941,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21996)),	-- Bracers of Heroism
 					},
@@ -952,7 +952,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22088)),	-- Soulforge Bracers
 					},
@@ -963,7 +963,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { HUNTER },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22011)),	-- Beastmaster's Bindings
 					},
@@ -974,7 +974,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22004)),	-- Darkmantle Bracers
 					},
@@ -985,7 +985,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { PRIEST },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22079)),	-- Virtuous Bracers
 					},
@@ -996,7 +996,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22095)),	-- Bindings of The Five Thunders
 					},
@@ -1007,7 +1007,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22063)),	-- Sorcerer's Bindings
 					},
@@ -1018,7 +1018,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22071)),	-- Deathmist Bracers
 					},
@@ -1029,13 +1029,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22108)),	-- Feralheart Bracers
 					},
 				}),
 				q(936,   {	-- Assisting Arch Druid Runetotem
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
 				}),
@@ -1051,7 +1051,7 @@ _.Zones =
 					["coord"] = { 75.0, 34.0, 85 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27396, {	-- Blade of the Shattered Hand
 					["provider"] = { "n", 47233 },	-- Gordul
@@ -1089,14 +1089,14 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(4300,  {	-- Bone-Bladed Weapons
 					["provider"] = { "n", 8659 },	-- Jes'rimon
 					["coord"] = { 55.6, 34.2, 85 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11862)),	-- White Bone Band
 						un(REMOVED_FROM_GAME, i(11863)),	-- White Bone Shredder
@@ -1116,7 +1116,7 @@ _.Zones =
 					["sourceQuest"] = 4509,	-- Calm Before the Storm [Horde]
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11872)),	-- Eschewal Greaves
 						un(REMOVED_FROM_GAME, i(11870)),	-- Oblivion Orb
@@ -1124,7 +1124,7 @@ _.Zones =
 					},
 				}),
 				q(7492, {	-- Camp Mojache
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["providers"] = {
 						{ "n", 20724 },	-- Herald Amorlin (Silvermoon)
@@ -1179,7 +1179,7 @@ _.Zones =
 					},
 				}),
 				q(26865, {	-- Enemies Below
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 39605 },	-- Garrosh Hellscream
 				}),
@@ -1201,7 +1201,7 @@ _.Zones =
 					["coord"] = { 48.6, 71.0, 85 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 60,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(18403)),	-- Dragonslayer's Signet
 						un(REMOVED_FROM_GAME, i(18406)),	-- Onyxia Blood Talisman
@@ -1209,40 +1209,40 @@ _.Zones =
 					},
 				}),
 				q(8367, {	-- For Great Honor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 15350 },	-- Horde Warbringer
 				}),
 				q(13476, {	-- For Great Honor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 15350 },	-- Horde Warbringer
 				}),
 				q(5726, {	-- Hidden Enemies
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4949 },	-- Thrall
 				}),
 				q(5727, {	-- Hidden Enemies
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4949 },	-- Thrall
 					["sourceQuest"] = 5726,	-- Hidden Enemies
 				}),
 				q(5728, {	-- Hidden Enemies
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4949 },	-- Thrall
 					["sourceQuest"] = 5727,	-- Hidden Enemies
 				}),
 				q(5729, {	-- Hidden Enemies
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4949 },	-- Thrall
 					["sourceQuest"] = 5728,	-- Hidden Enemies
 				}),
 				q(5730,  {	-- Hidden Enemies
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["lvl"] = 9,
 					["coord"] = { 50.0, 60.0, 85 },
 					["races"] = HORDE_ONLY,
@@ -1282,7 +1282,7 @@ _.Zones =
 					["lvl"] = 60,
 				}),
 				q(7241, {	-- In Defense of Frostwolf
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 13842 },	-- Frostwolf Ambassador Rokhstrom
 				}),
@@ -1302,7 +1302,7 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(44663, {	-- In the Blink of an Eye
 					["provider"] = { "n", 95234 },	-- Elthyn Da'rai
@@ -1319,11 +1319,11 @@ _.Zones =
 					["sourceQuest"] = 3541,	-- Delivery to Jes'rimon
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1947, {	-- Journey to the Marsh
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
 				q(8944,  {	-- Just Compensation (Warrior)
@@ -1333,7 +1333,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21994)), 	-- Belt of Heroism
 						un(REMOVED_FROM_GAME, i(21998)), 	-- Gauntlets of Heroism
@@ -1346,7 +1346,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22086)), 	-- Soulforge Belt
 						un(REMOVED_FROM_GAME, i(22090)), 	-- Soulforge Gauntlets
@@ -1359,7 +1359,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { HUNTER },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22010)), 	-- Beastmaster's Belt
 						un(REMOVED_FROM_GAME, i(22015)), 	-- Beastmaster's Gloves
@@ -1372,7 +1372,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22002)), 	-- Darkmantle Belt
 						un(REMOVED_FROM_GAME, i(22006)), 	-- Darkmantle Gloves
@@ -1385,7 +1385,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { PRIEST },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22078)), 	-- Virtuous Belt
 						un(REMOVED_FROM_GAME, i(22081)), 	-- Virtuous Gloves
@@ -1398,7 +1398,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22098)), 	-- Cord of The Five Thunders
 						un(REMOVED_FROM_GAME, i(22099)), 	-- Gauntlets of The Five Thunders
@@ -1411,7 +1411,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22062)), 	-- Sorcerer's Belt
 						un(REMOVED_FROM_GAME, i(22066)), 	-- Sorcerer's Gloves
@@ -1424,7 +1424,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22070)), 	-- Deathmist Belt
 						un(REMOVED_FROM_GAME, i(22077)), 	-- Deathmist Wraps
@@ -1437,7 +1437,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22106)), 	-- Feralheart Belt
 						un(REMOVED_FROM_GAME, i(22110)), 	-- Feralheart Gloves
@@ -1445,7 +1445,7 @@ _.Zones =
 				}),
 				q(1945, {	-- Laughing Sisters
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
 				q(32673, {	-- Learn To Ride
@@ -1510,7 +1510,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(28296, {	-- Meetup with the Caravan
 					["provider"] = { "n", 47571 },	-- Belloc Brightblade
@@ -1539,12 +1539,12 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(2283, {	-- Necklace Recovery
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 6986 },	-- Dran Droffers
 				}),
 				q(2284, {	-- Necklace Recovery, Take 2
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 6986 },	-- Dran Droffers
 					["sourceQuest"] = 2283,	-- Necklace Recovery
@@ -1579,7 +1579,7 @@ _.Zones =
 					["coord"] = { 52.6, 56.2, 85 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 98,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(32307, {	-- Reader for the Dead Tongue
 					["provider"] = { "n", 88705 },	-- Kranosh (Orgrimmar)
@@ -1589,7 +1589,7 @@ _.Zones =
 					["lvl"] = 90,
 				}),
 				q(1361,  {	-- Regthar Deathgate
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4485 },	-- Belgrom Rockmaul
 				}),
@@ -1617,18 +1617,18 @@ _.Zones =
 					["lvl"] = 84,
 				}),
 				q(3122, {	-- Return to Witch Doctor Uzer'i
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3216 },	-- Neeru Fireblade
 					["sourceQuest"] = 3121,	-- A Strange Request
 				}),
 				q(649,   {	-- Ripple Recovery
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 6986 },	-- Dran Droffers
 				}),
 				q(650,   {	-- Ripple Recovery
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 6987 },	-- Malton Droffers
 					["sourceQuest"] = 649,	-- Ripple Recovery
@@ -1638,7 +1638,7 @@ _.Zones =
 					["coord"] = { 56.8, 56.4, 85 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11854)),	-- Samophlange Screwdriver
 						un(REMOVED_FROM_GAME, i(11855)),	-- Tork Wrench
@@ -1659,7 +1659,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21997)),	-- Breastplate of Heroism
 						un(REMOVED_FROM_GAME, i(21999)),	-- Helm of Heroism
@@ -1672,7 +1672,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22089)),	-- Soulforge Breastplate
 						un(REMOVED_FROM_GAME, i(22091)),	-- Soulforge Helm
@@ -1685,7 +1685,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { HUNTER },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22013)),	-- Beastmaster's Cap
 						un(REMOVED_FROM_GAME, i(22060)),	-- Beastmaster's Tunic
@@ -1698,7 +1698,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22005)),	-- Darkmantle Cap
 						un(REMOVED_FROM_GAME, i(22009)),	-- Darkmantle Tunic
@@ -1711,7 +1711,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { PRIEST },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22080)),	-- Virtuous Crown
 						un(REMOVED_FROM_GAME, i(22083)),	-- Virtuous Robe
@@ -1724,7 +1724,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22097)),	-- Coif of The Five Thunders
 						un(REMOVED_FROM_GAME, i(22102)),	-- Vest of The Five Thunders
@@ -1737,7 +1737,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22065)),	-- Sorcerer's Crown
 						un(REMOVED_FROM_GAME, i(22069)),	-- Sorcerer's Robes
@@ -1750,7 +1750,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22074)),	-- Deathmist Mask
 						un(REMOVED_FROM_GAME, i(22075)),	-- Deathmist Robe
@@ -1763,7 +1763,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22109)),	-- Feralheart Cowl
 						un(REMOVED_FROM_GAME, i(22113)),	-- Feralheart Vest
@@ -1789,7 +1789,7 @@ _.Zones =
 					},
 				}),
 				q(5761, {	-- Slaying the Beast
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3216 },	-- Neeru Fireblade
 				}),
@@ -1799,7 +1799,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27439, {	-- Staff of the Light
 					["provider"] = { "n", 45337 },	-- Tyelis
@@ -1826,7 +1826,7 @@ _.Zones =
 				q(49977, {	-- Summons to Orgrimmar
 					["races"] = HORDE_ONLY,
 					["lvl"] = 110,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27397, {	-- Terga's Task
 					["provider"] = { "n", 3344 },	-- Kardris Dreamseeker
@@ -1854,7 +1854,7 @@ _.Zones =
 					},
 				}),
 				q(235,   {	-- The Ashenvale Hunt
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10880 },	-- Warcaller Gorlach
 				}),
@@ -1872,7 +1872,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(1513, {	-- The Binding
-					["u"] = 40,	-- Legacy Quest
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5875 },	-- Gan'rul Bloodeye
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -1917,20 +1917,8 @@ _.Zones =
 						currency(515),	-- Darkmoon Prize Ticket
 					},
 				}),
-				q(8258,  {	-- The Darkreaver Menace
-					["provider"] = { "n", 13417 },	-- Sagorne Creststrider
-					["coord"] = { 39.2, 48.4, 85 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { SHAMAN },
-					["lvl"] = 58,
-					["u"] = 40,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(20134)),	-- Skyfury Helm
-						un(32, i(18807)),	-- Helm of Latent Power (1.4 till 1.7 only)
-					},
-				}),
 				q(4002, {	-- The Eastern Kingdoms
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4949 },	-- Thrall
 					["sourceQuest"] = 4001,	-- What Is Going On?
@@ -1991,7 +1979,7 @@ _.Zones =
 					["lvl"] = 82,
 				}),
 				q(1018,  {	-- The New Frontier
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10880 },	-- Warcaller Gorlach
 				}),
@@ -2007,7 +1995,7 @@ _.Zones =
 					},
 				}),
 				q(4003, {	-- The Royal Rescue
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4949 },	-- Thrall
 					["sourceQuest"] = 4002,	-- The Eastern Kingdoms
@@ -2018,7 +2006,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 13,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7298)),	-- Blade of Cunning
 					},
@@ -2038,7 +2026,7 @@ _.Zones =
 					},
 				}),
 				q(27570, {	-- The Situation So Far
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 39283 },	-- Earthmender Norsala
 				}),
@@ -2050,7 +2038,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(1146,  {	-- The Swarm Grows
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4485 },	-- Belgrom Rockmaul
 					["sourceQuest"] = 1145,	-- The Swarm Grows
@@ -2177,7 +2165,7 @@ _.Zones =
 				}),
 				q(1944, {	-- Waters of Xavian
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
 				q(58673, {	-- Warchief of the Horde
@@ -2227,13 +2215,13 @@ _.Zones =
 					["sourceQuest"] = 50341 ,	-- A Recent Discovery
 					["races"] = HORDE_ONLY,
 					["lvl"] = 110,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(7660,  {	-- Wolf Swapping - Arctic Wolf
 					["provider"] = { "n", 3362 },	-- Ogunaro Wolfrunner
 					["coord"] = { 61.0, 35.2, 85 },
 					["races"] = HORDE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(18796),	-- Horn of the Swift Brown Wolf
 						i(18798),	-- Horn of the Swift Gray Wolf
@@ -2244,7 +2232,7 @@ _.Zones =
 					["provider"] = { "n", 3362 },	-- Ogunaro Wolfrunner
 					["coord"] = { 61.0, 35.2, 85 },
 					["races"] = HORDE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(18796),	-- Horn of the Swift Brown Wolf
 						i(18798),	-- Horn of the Swift Gray Wolf

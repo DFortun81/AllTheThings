@@ -14,7 +14,7 @@ _.Zones =
 				}),
 				i(16242, {	-- Formula: Enchant Chest - Major Mana
 					["crs"] = { 9452 },	-- Scarlet Enchanter
-					["u"] = 7,	-- now learned from trainer, formula was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
 				}),
 				i(16222, {	-- Formula: Enchant Shield - Superior Versatility (formerly Superior Spirit)
 					["crs"] = { 9447 },	-- Scarlet Warder
@@ -40,18 +40,18 @@ _.Zones =
 				}),
 				i(14505, {	-- Pattern: Wizardweave Turban
 					["crs"] = { 8526 },	-- Dark Caster
-					["u"] = 7,	-- now learned from trainer, pattern was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, pattern was removed from game
 				}),
 				i(13499, {	-- Recipe: Greater Shadow Protection Potion
 					["crs"] = {
 						8546,	-- Dark Adept <Cult of the Damned>
 						8550,	-- Shadowmage <Cult of the Damned>
 					},
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(16056, {	-- Schematic: Flawless Arcanite Rifle
 					["crs"] = { 8561 },	-- Mossflayer Shadowhunter
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 		}),

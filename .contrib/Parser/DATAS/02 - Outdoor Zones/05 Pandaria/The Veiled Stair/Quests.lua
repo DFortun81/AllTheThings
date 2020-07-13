@@ -7,7 +7,7 @@ _.Zones =
 		m(433, {	-- The Veiled Stair
 			n(QUESTS, {
 				q(33104, {	-- A Pandaren Legend
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(102457, {	-- Timeless Essence of the Black Dragonflight
 							un(38, i(102248)),	-- Fen-Yu, Fury of Xuen

@@ -8,11 +8,11 @@ _.Zones =
 			m(469,  {	-- New Tinkertown [Above]
 				n(RARES, {
 					n(8503, { 	-- Gibblewilt NOTE: As of 8.0 npc still spawns but drops are unobtainable
-						un(7, i(10554)),	-- Foreman Pants
-						un(7, i(10553)),	-- Foreman Vest
+						un(REMOVED_FROM_GAME, i(10554)),	-- Foreman Pants
+						un(REMOVED_FROM_GAME, i(10553)),	-- Foreman Vest
 					}),	
 					n(1260,	{ 	-- Great Father Arktikus NOTE: Believe this npc has been replaced by Boss Bruggor but cannot find confirmation
-						un(7, i(3223)),	-- Frostmane Scepter
+						un(REMOVED_FROM_GAME, i(3223)),	-- Frostmane Scepter
 					}),
 					n(1132, {	-- Timber
 					}),

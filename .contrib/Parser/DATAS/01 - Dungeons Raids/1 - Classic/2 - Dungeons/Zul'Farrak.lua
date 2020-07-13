@@ -31,7 +31,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(2768, {	-- Divino-matic Rod
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9534)),	-- Engineer's Guild Headpiece

@@ -4,7 +4,7 @@
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
-		cl(1, {	-- Skyhold (Warrior)
+		cl(WARRIOR, {	-- Skyhold (Warrior)
 			["classes"] = { WARRIOR },	-- Warrior
 			["lvl"] = 98,
 			["maps"] = {
@@ -17,7 +17,7 @@ _.ExpansionFeatures =
 					i(141069, {	-- Skyhold Chest of Riches
 						["lvl"] = 103,
 						["questID"] = 43763,	-- Chest of Riches Weekly Lockout
-						["classes"]  = {1},
+						["classes"]  = { WARRIOR },
 						["description"] = "\nThe chests spawn every 3 hours in the Arena of Glory, starting at 0:00 Realm Time or 02:00 Realm Time if Daylight Savings Time is active. You must research the 2nd tier order hall upgrade |cFFFFD700For Honor and Glory|r from Einar the Runecaster to see the chest. You can only loot it once per week.\n\nIt can contain the Fury Hidden Appearance items, however, you're better off gathering those items from their respective sources in the outdoor world due to the number of Warriors going for the toy. (IE: Do not open this chest if you already have the toy)",
 						["g"] = {
 							i(140160),	-- Stormforged Vrykul Horn
@@ -26,67 +26,53 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				--[[
-				n(97389, {	-- Eye of Odin
-					["achievementID"] = 11217,
-					["modelScale"] = 4,
-					["g"] = {
-						-- Blank for Class Only Missions in the future
-					},
-				}),
-				]]--
 				n(QUESTS, {
 					i(144436, {	-- Lost Legend of Odyn
 						["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
 						["g"] = {
-							q(46223, {	-- Odyn Lore Unlock 1
-								["description"] = "Great Odyn and the Firelord",
+							n(-2200, {	-- Great Odyn and the Firelord
+								["questID"] = 46223,
 							}),
-							q(46224, {	-- Odyn Lore Unlock 2
-								["description"] = "The Wanderer and the Serpent",
+							n(-2201, {	-- The Wanderer and the Serpent
+								["questID"] = 46224,
 							}),
-							q(46225, {	-- Odyn Lore Unlock 3
-								["description"] = "Halls of Gold and Glory",
+							n(-2202, {	-- Halls of Gold and Glory
+								["questID"] = 46225,
 							}),
-							q(46226, {	-- Odyn Lore Unlock 4
-								["description"] = "The Keeper's Eye",
+							n(-2203, {	-- The Keeper's Eye
+								["questID"] = 46226,
 							}),
-							q(46227, {	-- Odyn Lore Unlock 5
-								["description"] = "First of the Val'kyr",
+							n(-2204, {	-- First of the Val'kyr
+								["questID"] = 46227,
 							}),
-							q(46228, {	-- Odyn Lore Unlock 6
-								["description"] = "The Sealing of the Halls of Valor",
+							n(-2205, {	-- The Sealing of the Halls of Valor
+								["questID"] = 46228,
 							}),
 						}
 					}),
 					i(144437, {	-- Lost Legend of the Valarjar
 						["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
 						["g"] = {
-							q(46229, {	-- Valarjar Lore Unlock 1
-								["description"] = "His Name Is Dragonblood",
+							n(-2206, {	-- His Name Is Dragonblood
+								["questID"] = 46229,
 							}),
-							q(46230, {	-- Valarjar Lore Unlock 2
-								["description"] = "The Last Words of Asgrim the Dreadkiller",
+							n(-2207, {	-- The Last Words of Asgrim the Dreadkiller
+								["questID"] = 46230,
 							}),
-							q(46231, {	-- Valarjar Lore Unlock 3
-								["description"] = "A Shieldmaiden's Creed",
+							n(-2208, {	-- A Shieldmaiden's Creed
+								["questID"] = 46231,
 							}),
-							q(46232, {	-- Valarjar Lore Unlock 4
-								["description"] = "The Prophecy of Rythas the Oracle",
+							n(-2209, {	-- The Prophecy of Rythas the Oracle
+								["questID"] = 46232,
 							}),
-							q(46233, {	-- Valarjar Lore Unlock 5
-								["description"] = "The Lessons of the Blackfist",
+							n(-2210, {	-- The Lessons of the Blackfist
+								["questID"] = 46233,
 							}),
-							q(46234, {	-- Valarjar Lore Unlock 6
-								["description"] = "Volund's Folly",
+							n(-2211, {	-- Volund's Folly
+								["questID"] = 46234,
 							}),
 						}
 					}),
-
-
-
-
-					-- NASTY QUEST LIST
 					q(41052, {	-- A Desperate Plea
 						["maps"] = { 627 },	-- Dalaran
 						["races"] = HORDE_ONLY,
@@ -122,7 +108,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 108961 },	-- Sergeant Dalton
 					}),
 					q(45986, {	-- An Urgent Warning
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 118406 },	-- Injured Shieldmaiden
 						["isBreadcrumb"] = true,
@@ -275,7 +261,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
 						["sourceQuest"] = 46267,	-- Return of the Battlelord
 					}),
-					q(46155),	-- Furthering Knowledge
+					q(46155, {	-- Furthering Knowledge
+						["u"] = REMOVED_FROM_GAME,
+						["coord"] = { 45.1, 28.2, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 111741 },	-- Fjornson Stonecarver
+						["sourceQuest"] = 46142,	-- Knowledge is Power
+					}),
 					q(45118, {	-- Helya's Horn
 						["maps"] = { 649 },	-- Helheim
 						["coord"] = { 34.3, 28.5, 649 },	-- Helheim
@@ -283,8 +275,14 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 116193 },	-- Aerylia
 						["sourceQuest"] = 44849,	-- Recruitment Drive
 					}),
+					q(43888, {	-- Hitting the Books
+						["u"] = REMOVED_FROM_GAME,
+						["coord"] = { 45.1, 28.2, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 111741 },	-- Fjornson Stonecarver
+					}),
 					q(45987, {	-- Investigate the Broken Shore
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["coord"] = { 59.7, 13.4, 695 },
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
@@ -303,13 +301,25 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
+					q(46142, {	-- Knowledge is Power
+						["u"] = REMOVED_FROM_GAME,
+						["coord"] = { 45.1, 28.2, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 111741 },	-- Fjornson Stonecarver
+						["sourceQuest"] = 43888,	-- Hitting the Books
+					}),
 					q(45634, {	-- Kvaldir on Call
 						["maps"] = { 646 },	-- Broken Shore
 						["coord"] = { 69.8, 34.7, 646 },
 						["classes"] = { WARRIOR },
 						["sourceQuest"] = 44889,	-- Resource Management
 					}),
-					q(39191),	-- Legacy of the Icebreaker
+					q(39191, {	-- Legacy of the Icebreaker
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["description"] = "Pursue your artifact weapon for Protection.",
+					}),
 					q(43586, {	-- Maw of Souls: Message to Helya
 						["lvl"] = 110,
 						["coord"] = { 58.3, 84.6, 695 },
@@ -532,14 +542,14 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(39192, {	-- The Forge of Odyn
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["coord"] = { 41.0, 37.1, 695 },
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 96586 },	-- Master Smith Helgar
 						["sourceQuest"] = 39530,	-- The Forgening
 					}),
 					q(39530, {	-- The Forgening
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["coord"] = { 58.3, 84.6, 695 },
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 96469 },	-- Odyn
@@ -550,9 +560,14 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 107987 },	-- Hymdall
 						["sourceQuest"] = 43750,	-- The Call of Battle
 					}),
-					q(40043),	-- The Hunter of Heroes
+					q(40043, {	-- The Hunter of Heroes
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["description"] = "Pursue your artifact weapon for Fury.",
+					}),
 					q(44222, {	-- The Might of the Val'kyr
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["coord"] = { 72.6, 30.8, 695 },
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 111774 },	-- Matilda Skoptidottir
@@ -564,7 +579,13 @@ _.ExpansionFeatures =
 						["description"] = "Pursue your artifact weapon for Arms.",
 					}),
 					q(46207, {	-- The Trial of Rage
-						i(142232),	-- Iron Reins of the Bloodthirsty War Wyrm
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["sourceQuest"] = 46208,	-- A Godly Invitation
+						["g"] = {
+							i(142232),	-- Iron Reins of the Bloodthirsty War Wyrm
+						},
 					}),
 					q(40585, {	-- Thus Begins the War
 						["coord"] = { 59.7, 13.3, 695 },

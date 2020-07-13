@@ -8,22 +8,22 @@ _.Zones =
 			m(462, {	-- Camp Narache
 				n(QUESTS, {
 					q(752,   {	-- A Humble Task
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2981 },	-- Chief Hawkwind
 						["races"] = HORDE_ONLY,
 					}),
 					q(753,   {	-- A Humble Task
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2991 },	-- Greatmother Hawkwind
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 752,	-- A Humble Task
 					}),
 					q(14453,   {	-- A Humble Task
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 					}),
 					q(3376, {	-- Break Sharptusk!
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 3209 },	-- Brave Windfeather
 					}),
@@ -73,7 +73,7 @@ _.Zones =
 						},
 					}),
 					q(757,   {	-- Rite of Strength
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2982 },	-- Seer Graytongue
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 755,	-- Rites of the Earthmother
@@ -91,23 +91,23 @@ _.Zones =
 						["sourceQuest"] = 23733,	-- Rites of the Earthmother
 					}),
 					q(755,   {	-- Rites of the Earthmother
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2981 },	-- Chief Hawkwind
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 753,	-- A Humble Task
 					}),
 					q(763,   {	-- Rites of the Earthmother
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2981 },	-- Chief Hawkwind
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 757,	-- Rite of Strength
 					}),
 					q(14437, {	-- Rites of the Earthmother
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 					}),
 					q(14440, {	-- Rites of the Earthmother
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 					}),
 					q(23733, {	-- Rites of the Earthmother
@@ -137,7 +137,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					q(31166, {	-- Tiger Palm
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 63327 },	-- Shoyu
 						["coord"] = { 27.8, 28.6, 462 },
 						["races"] = HORDE_ONLY,

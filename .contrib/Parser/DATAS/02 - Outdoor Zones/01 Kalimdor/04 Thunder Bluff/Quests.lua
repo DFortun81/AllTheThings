@@ -7,22 +7,22 @@ _.Zones =
 		m(88, {	-- Thunder Bluff
 			n(QUESTS, {
 				q(7822, {	-- A Donation of Mageweave
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
 				}),
 				q(7823, {	-- A Donation of Runecloth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
 				}),
 				q(7821, {	-- A Donation of Silk
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
 				}),
 				q(7820, {	-- A Donation of Wool
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
 				}),
@@ -32,7 +32,7 @@ _.Zones =
 					["sourceQuest"] = 2967,	-- Return to Thunder Bluff
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(34421)),	-- Cave Crawler's Mail Treads
 						un(REMOVED_FROM_GAME, i(34422)),	-- Tempered Thorium Boots
@@ -51,7 +51,7 @@ _.Zones =
 					["coord"] = { 36.2, 59.8 , 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4197)),	-- Berylline Pads
 						un(REMOVED_FROM_GAME, i(6742)),	-- Stonefist Girdle
@@ -71,7 +71,7 @@ _.Zones =
 					["coord"] = { 69.9, 30.9, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15464)),	-- Brute Hammer
 						un(REMOVED_FROM_GAME, i(15465)),	-- Slingshot Wand
@@ -79,7 +79,7 @@ _.Zones =
 					},
 				}),
 				q(3762, {	-- Assisting Arch Druid Runetotem
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 6746 },	-- Innkeeper Pala
 				}),
@@ -89,7 +89,7 @@ _.Zones =
 					["sourceQuest"] = 1844,	-- Chimaeric Horn
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7130)),	-- Brutal Helm
 					},
@@ -100,14 +100,14 @@ _.Zones =
 					["sourceQuest"] = 1840,	-- Orm Stonehoof and the Brutal Helm
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1049, {	-- Compendium of the Fallen
 					["provider"] = { "n", 3978 },	-- Sage Truthseeker
 					["coord"] = { 34.6, 47.4, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7747)),	-- Vile Protector
 						un(REMOVED_FROM_GAME, i(17508)),	-- Forcestone Buckler
@@ -135,7 +135,7 @@ _.Zones =
 					["lvl"] = 35,
 				}),
 				q(26866, {	-- Enemies Below
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 36648 },	-- Baine Bloodhoof
 				}),
@@ -150,7 +150,7 @@ _.Zones =
 					["coord"] = { 61.2, 80.6, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6720)),	-- Spirit Hunter's Headdress
 					},
@@ -164,7 +164,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(1064,  {	-- Forsaken Aid
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4046 },	-- Magatha Grimtotem
 					["sourceQuest"] = 1063,	-- The Elder Crone
@@ -207,7 +207,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(1065,  {	-- Journey to Tarren Mill
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3419 },	-- Apothecary Zamah
 					["sourceQuest"] = 1064,	-- Forsaken Aid
@@ -236,7 +236,7 @@ _.Zones =
 					["coord"] = { 75.8, 30.8, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 11,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6505)),	-- Crescent Staff
 						un(REMOVED_FROM_GAME, i(6504)),	-- Wingblade
@@ -248,7 +248,7 @@ _.Zones =
 					["sourceQuest"] = 3518,	-- Delivery to Magatha
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(28323, {	-- Meet with Brother Silverhallow
 					["providers"] = {
@@ -350,18 +350,18 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(3782, {	-- Morrowgrain Research
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem
 					["sourceQuest"] = 3761,	-- Un'Goro Soil
 				}),
 				q(3786, {	-- Morrowgrain Research
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9087 },	-- Bashana Runetotem
 					["sourceQuest"] = 3782,	-- Morrowgrain Research
 				}),
 				q(1490, {	-- Nara Wildmane
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem
 					["sourceQuest"] = 1489,	-- Hamuul Runetotem
@@ -372,10 +372,10 @@ _.Zones =
 					["sourceQuest"] = 2440,	-- The Platinum Discs
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1123,  {	-- Rabine Saturna
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem
 					["sourceQuests"] = { 1000, 1004, 1018, },	-- 3x versions of The New Frontier
@@ -404,13 +404,13 @@ _.Zones =
 					["coord"] = { 60.3, 51.7, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4909)),	-- Kodo Hunter's Leggings
 					},
 				}),
 				q(5722, {	-- Searching for the Lost Satchel
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 11833 },	-- Rahauro
 				}),
@@ -450,20 +450,20 @@ _.Zones =
 					["sourceQuest"] = 2965,	-- Portents of Uldum
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(962, {	-- Serpentbloom
 					["provider"] = { "n", 3419 },	-- Apothecary Zamah
 					["coord"] = { 22.6, 20.2, 88 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10919)),	-- Apothecary Gloves
 					},
 				}),
 				q(1131,  {	-- Steelsnap
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3441 },	-- Melor Stonehoof
 					["sourceQuest"] = 1130,	-- Melor Sends Word
@@ -476,12 +476,12 @@ _.Zones =
 					["lvl"] = 4,
 				}),
 				q(5723, {	-- Testing an Enemy's Strength
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 11833 },	-- Rahauro
 				}),
 				q(742,   {	-- The Ashenvale Hunt
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10881 },	-- Bluff Runner Windstrider
 				}),
@@ -494,13 +494,13 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(1086,  {	-- The Flying Machine Airport
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3419 },	-- Apothecary Zamah
 					["sourceQuest"] = 1067,	-- Return to Thunder Bluff
 				}),
 				q(1000,   {	-- The New Frontier
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10881 },	-- Bluff Runner Windstrider
 				}),
@@ -510,18 +510,18 @@ _.Zones =
 					["sourceQuest"] = 2280,	-- The Platinum Discs
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9587)),	-- Thawpelt Sack
 					},
 				}),
 				q(1195,  {	-- The Sacred Flame
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4721 },	-- Zangen Stonehoof
 				}),
 				q(1196,  {	-- The Sacred Flame
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4721 },	-- Zangen Stonehoof
 					["sourceQuest"] = 1195,	-- The Sacred Flame
 				}),
@@ -540,7 +540,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(3761, {	-- Un'Goro Soil
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem
 					["sourceQuests"] = {
 						936,	-- Assisting Arch Druid Runetotem

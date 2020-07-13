@@ -20,7 +20,7 @@ _.Zones =
 					["races"] = { DRAENEI },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(24138)),	-- Silver Crossbow
 					},
@@ -58,7 +58,7 @@ _.Zones =
 					q(14082, {	-- Learn to Ride at the Exodar
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 20,
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					}),
 				}),
 				q(27265, {	-- Lord Grayson Shadowbreaker
@@ -149,7 +149,7 @@ _.Zones =
 					["races"] = { DRAENEI },
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27266, {	-- Wulf Calls
 					["provider"] = { "n", 17122 },	-- Vord (The Exodar)

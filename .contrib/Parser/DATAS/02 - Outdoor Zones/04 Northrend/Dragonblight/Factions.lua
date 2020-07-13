@@ -39,7 +39,7 @@ _.Zones =
 							["provider"] = { "n", 26228 },	-- Trapper Mau'i
 						}),
 						q(26178, {	-- Planning for the Future (old quest reworked to be a daily)
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 26228 },	-- Trapper Mau'i
 						}),
 					},
