@@ -10,6 +10,15 @@ _.Zones =
 					["repeatable"] = true,
 					["provider"] = { "n", 32725 },	-- Warmage Silva
 					["g"]  = {
+						i(147410),	-- Greater Court of Farondis Insignia
+						i(147411),	-- Greater Dreamweaver Insignia
+						i(147412),	-- Greater Highmountain Insignia
+						i(147413),	-- Greater Nightfallen Insignia
+						i(147414),	-- Greater Valarjar Insignia
+						i(147415),	-- Greater Wardens Insignia
+						i(147727),	-- Greater Legionfall Insignia
+						i(152956),	-- Greater Army of the Light Insignia
+						i(152961),	-- Greater Argussian Reach Insignia
 						i(157828, {	-- Kirin Tor Chest
 							i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 							i(141349, {	-- Strange Humming Crystal

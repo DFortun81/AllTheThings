@@ -435,6 +435,13 @@ _.Zones =
 					["provider"] = { "n", 123026 },	-- Erak the Aloof
 					["coord"] = { 67.4, 17.7, 862 },
 				}),
+				q(50397, {	-- Aerial Aspirations
+					["sourceQuests"] = { 52748 },	-- Eyes on the Skies
+					["provider"] = { "n", 133682 },	-- Kua'fon
+					["coord"] = { 75.2, 49.4, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(49871, {	-- Against the Tide
 					["sourceQuests"] = { 49754 },	-- Not "Only Zul"
 					["provider"] = { "n", 130821 },	-- Wavemaster Lanfa
@@ -637,6 +644,26 @@ _.Zones =
 					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 					["coord"] = { 66.8, 42.6, 862 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(50944, {	-- Down, But Not Out
+					["sourceQuests"] = { 50943 },	-- The Joy of Flight
+					["providers"] = {
+						{ "n", 135744 },	-- Kua'fon
+						{ "n", 133680 },	-- Kua'fon (both versions of the NPC are in the same place at the same time.  i assume if you relog this is the only one there)
+					},
+					["coord"] = { 70.6, 50.6, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(159146),	-- Kua'fon's Harness (MOUNT!)
+					},
+				}),
+				q(50942, {	-- Dress for the Slide, Not the Ride
+					["sourceQuests"] = { 50940 },	-- Wisdom of the Wingless
+					["provider"] = { "n", 135801 },	-- Hexlord Raal
+					["coord"] = { 70.6, 50.6, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(55245, {	-- Eat Like a Direhorn
 					["sourceQuests"] = { 55243 },	-- A Daughter of Torcali #2
@@ -889,6 +916,13 @@ _.Zones =
 					["coord"] = { 79.2, 42.1, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(56205, {	--  Just Ptrust Me On This
+					["sourceQuests"] = { 50944 },	-- Down, But Not Out
+					["provider"] = { "n", 127377 },	-- Pa'Ku
+					["races"] = HORDE_ONLY,
+					["coord"] = { 71.5, 49.4, 862 },
+					["lvl"] = 120,
+				}),
 				q(49919, {	-- Kaja'mite Ore Bust
 					["sourceQuests"] = { 49917 },	-- Kaja'mite? Kaja'must!
 					["provider"] = { "n", 132267 },	-- Bently Greaseflare
@@ -917,11 +951,19 @@ _.Zones =
 					["coord"] = { 71.0, 29.8, 862 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(51146, {	-- Kua'fon's Day Off
+				q(51146, {	-- Kua'fon's Day Off #1
 					["sourceQuests"] = { 50412 },	-- Back to the Nest
 					["provider"] = { "n", 135308 },	-- Wingminder Goja
 					["isDaily"] = true,
 					["coord"] = { 70.7, 51.0, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
+				q(51147, {	-- Kua'fon's Day Off #2
+					["sourceQuests"] = { 50900 },	-- Maybe When You're Older
+					["provider"] = { "n", 135308 },	-- Wingminder Goja
+					["isDaily"] = true,
+					["coord"] = { 70.8, 50.7, 862 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
@@ -1403,6 +1445,13 @@ _.Zones =
 					["coord"] = { 50.7, 29.7, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(50943, {	-- The Joy of Flight
+					["sourceQuests"] = { 50942 },	-- Dress for the Slide, Not the Ride
+					["provider"] = { "n", 135801 },	-- Hexlord Raal
+					["coord"] = { 75.2, 49.4, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(47733, {	-- The Loa-Speaker's Betrayal
 					["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
 					["provider"] = { "n", 138520 },	-- Zeb'ahari Villager
@@ -1613,6 +1662,13 @@ _.Zones =
 					["coord"] = { 66.8, 42.5, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(50940, {	-- Wisdom of the Wingless
+					["sourceQuests"] = { 50397 },	-- Aerial Aspirations
+					["provider"] = { "n", 133682 },	-- Kua'fon
+					["coord"] = { 75.2, 49.4, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(51538, {	-- Word from the Deep
 					["sourceQuests"] = { 48026 },	-- Beneath the Waves
 					["provider"] = { "n", 131461 },	-- Spirit of Gral
@@ -1822,14 +1878,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 135890 },		-- King Rastakhan
 					["sourceQuests"] = { 47229 },	-- Bulwark of Torcali
-				}),
-				q(56205, {	--  Just Ptrust Me On This
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 127377 },	-- Pa'Ku
-					["coord"] = { 71.5, 49.4, 862 },
-					["g"] = {
-						ach(13573),	-- How to Ptrain Your Pterrordax
-					},
 				}),
 				q(51513, {	-- Zalazane Returns
 					["minReputation"] = { 2103, REVERED },

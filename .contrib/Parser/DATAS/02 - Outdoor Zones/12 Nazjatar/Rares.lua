@@ -460,7 +460,7 @@ _.Zones =
 					i(170171, {	-- Giant Crab Leg
 						["allianceQuestID"] = 57248,	-- Giant Crab Leg
 						["hordeQuestID"] = 56973,	-- Giant Crab Leg
-						["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 250 reputation, plus 50 experience for your bodyguard.",
+						["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Poen Gillbrack|r (Horde) for 250 reputation, plus 50 experience for your bodyguard.",
 						["repeatable"] = true,
 						["g"] = {
 							crit(49, {	-- Giant Crab Leg
@@ -589,7 +589,7 @@ _.Zones =
 					i(170171, {	-- Giant Crab Leg
 						["allianceQuestID"] = 57248,	-- Giant Crab Leg
 						["hordeQuestID"] = 56973,	-- Giant Crab Leg
-						["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 250 reputation, plus 50 experience for your bodyguard.",
+						["description"] = "Turn in to |cFFFFD700Bladesman Inowari|r (Alliance) or |cFFFFD700Poen Gillbrack|r (Horde) for 250 reputation, plus 50 experience for your bodyguard.",
 						["repeatable"] = true,
 						["g"] = {
 							crit(49, {	-- Giant Crab Leg

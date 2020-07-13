@@ -232,7 +232,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					}),
 				},
 			}),
-			d(  7, {	-- LFR
+			d(7, {	-- LFR
 				["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.|r",
 				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
 				["g"] = {
@@ -745,7 +745,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					}),
 				},
 			}),
-			d(1, {		-- Normal
+			d(1, {	-- Normal
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["g"] = {
@@ -759,12 +759,19 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							69134,	-- Kazra'jin
 							69078,	-- Sul the Sandrawler
 							67977,	-- Tortos
-							70212,	-- Megaera (Flaming Head)
+							70248,	-- Arcane Head
+							70212,	-- Flaming Head
+							70235,	-- Frozen Head
+							68065,	-- Megaera
+							70247,	-- Venomous Head
 							69712,	-- Ji-Kun
 							68036,	-- Durumu the Forgotten
 							69017,	-- Primordius
 							69427,	-- Dark Animus
 							68078,	-- Iron Qon
+							68079,	-- Ro'shak
+							68080,	-- Quet'zal
+							68081,	-- Dam'ren
 							68904,	-- Suen <Mistress of Anger>
 							68905,	-- Lu'lin <Mistress of Solitude>
 							68397,	-- Lei Shen
@@ -1033,9 +1040,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					cr(70212, e(821, {	-- Megaera (Flaming Head)
 						["crs"] = {
-							70252,	-- Arcane Head <Head of Megaera>
+							70248,	-- Arcane Head <Head of Megaera>
 							70212,	-- Flaming Head <Head of Megaera>
 							70235,	-- Frozen Head <Head of Megaera>
+							68065,	-- Megaera <Terror of the Depths>
 							70247,	-- Venomous Head <Head of Megaera>
 						},
 						["g"] = {
@@ -1477,7 +1485,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 				},
 			}),
-			d(  2, {	-- Heroic
+			d(2, {	-- Heroic
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["g"] = {
@@ -1491,12 +1499,19 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							69134,	-- Kazra'jin
 							69078,	-- Sul the Sandrawler
 							67977,	-- Tortos
-							70212,	-- Megaera (Flaming Head)
+							70248,	-- Arcane Head
+							70212,	-- Flaming Head
+							70235,	-- Frozen Head
+							68065,	-- Megaera
+							70247,	-- Venomous Head
 							69712,	-- Ji-Kun
 							68036,	-- Durumu the Forgotten
 							69017,	-- Primordius
 							69427,	-- Dark Animus
 							68078,	-- Iron Qon
+							68079,	-- Ro'shak
+							68080,	-- Quet'zal
+							68081,	-- Dam'ren
 							68904,	-- Suen <Mistress of Anger>
 							68905,	-- Lu'lin <Mistress of Solitude>
 							68397,	-- Lei Shen
