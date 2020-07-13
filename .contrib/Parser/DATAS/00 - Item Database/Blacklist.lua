@@ -6,6 +6,7 @@ local i = function(itemID)
 end
 
 -- Consumables
+i(139786);	-- Ancient Mana Crystal
 i(23123);	-- Blessed Wizard Oil
 i(18595);	-- Blood Opal ("Retrieving Data" in-game)
 i(44626);	-- Cask of Aged Dalaran Red
@@ -33,6 +34,7 @@ i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
 i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
+i(141016);	-- Scroll of Town Portal: Faronaar
 i(141015);	-- Scroll of Town Portal: Kal'delar
 i(141013);	-- Scroll of Town Portal: Shala'nir
 i(141655);	-- Shimmering Ancient Mana Cluster

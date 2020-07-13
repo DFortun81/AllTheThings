@@ -146,55 +146,28 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(13030, {	-- How to Ptrain Your Pterrordax
-					["races"] = HORDE_ONLY,
+				ach(13573, {	-- How to Ptrain Your Pterrordax
+					["sourceQuests"] = { 56205 },	-- Just Ptrust Me On This
 					["g"] = {
-						crit(1, {	-- Nature Versus Nurture
-							["sourceQuests"] = { 52305 },	-- Nature Versus Nurture
-							["description"] = "Must complete ~7 daily quests to fill Kua'fon's experience bar.",
-						}),
-						crit(2, {	-- Room to Grow
-							["sourceQuests"] = { 52447 },	-- Room to Grow
-							["description"] = "Must complete ~14 daily quests to fill Kua'fon's experience bar.",
-						}),
-						crit(3, {	-- Eyes on the Skies
-							["sourceQuests"] = { 52748 },	-- Eyes on the Skies
-							["description"] = "Must complete 4 to 7 daily quests to fill Kua'fon's experience bar.",
-						}),
-						crit(4, {	-- Down, But Not Out
-							q(50397, {	-- Aerial Aspirations
-								["provider"] = { "n", 133682 },	-- Kua'fon
-								["coord"] = { 75.2, 49.4, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 52748,	-- Eyes on the Skies
-							}),
-							q(50940, {	-- Wisdom of the Wingless
-								["provider"] = { "n", 133682 },	-- Kua'fon
-								["coord"] = { 75.2, 49.4, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 50397,	-- Aerial Aspirations
-							}),
-							q(50942, {	-- Dress for the Slide, Not the Ride
-								["provider"] = { "n", 135801 },	-- Hexlord Raal
-								["coord"] = { 70.6, 50.6, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 50940,	-- Wisdom of the Wingless
-							}),
-							q(50943, {	-- The Joy of Flight
-								["provider"] = { "n", 135801 },	-- Hexlord Raal
-								["coord"] = { 70.6, 50.6, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 50942,	-- Dress for the Slide, Not the Ride
-							}),
-							q(50944, {	-- Down, But Not Out
-								["provider"] = { "n", 135744 },	-- Kua'fon
-								["coord"] = { 70.6, 50.6, 863 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 50943,	-- The Joy of Flight
-								["g"] = {
-									i(159146),	-- Kua'fon's Harness
-								},
-							}),
+						ach(13030, {	-- How to Ptrain Your Pterrordax
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								crit(1, {	-- Nature Versus Nurture
+									["sourceQuests"] = { 52305 },	-- Nature Versus Nurture
+									["description"] = "Must complete ~7 daily quests to fill Kua'fon's experience bar.",
+								}),
+								crit(2, {	-- Room to Grow
+									["sourceQuests"] = { 52447 },	-- Room to Grow
+									["description"] = "Must complete ~14 daily quests to fill Kua'fon's experience bar.",
+								}),
+								crit(3, {	-- Eyes on the Skies
+									["sourceQuests"] = { 52748 },	-- Eyes on the Skies
+									["description"] = "Must complete 4 to 7 daily quests to fill Kua'fon's experience bar.",
+								}),
+								crit(4, {	-- Down, But Not Out
+									["sourceQuests"] = { 50944 },	-- Down, But Not Out
+								}),
+							},
 						}),
 					},
 				}),

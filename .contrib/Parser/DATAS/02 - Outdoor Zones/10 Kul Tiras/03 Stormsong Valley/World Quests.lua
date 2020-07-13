@@ -12,10 +12,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51828, {	-- Burning the Legion
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53343, {	-- Censership
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -191,6 +187,11 @@ _.Zones =
 					q(52117, {	-- Briarback Mountain
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
+					}),
+					q(51828, {	-- Burning the Legion
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(55341, {	-- Calligraphy
 						["lvl"] = 120,
