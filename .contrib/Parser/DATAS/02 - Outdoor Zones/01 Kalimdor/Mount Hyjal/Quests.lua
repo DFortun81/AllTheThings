@@ -731,6 +731,7 @@ _.Zones =
 				q(25317, {	-- Protect the World Tree
 					["provider"] = { "n", 40289 },	-- Ysera
 					["coord"] = { 62.0, 24.8, 198 },
+					["sourceQuest"] = 25316,	-- As Hyjal Burns
 				}),
 				q(29101, {	-- Punting Season
 					["provider"] = { "n", 52671 },	-- Mylune

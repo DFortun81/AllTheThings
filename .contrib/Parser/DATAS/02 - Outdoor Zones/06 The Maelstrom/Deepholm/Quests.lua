@@ -835,6 +835,10 @@ _.Zones =
 				}),
 				q(27203, {	-- The Maelstrom
 					["lvl"] = 82,
+					["coords"] = {
+						{ 50.4, 38.2, 85 },	-- Farseer Krogar (Orgrimmar)
+						{ 74.4, 18.8, 84 },	-- Naraat the Earthspeaker (Stormwind)
+					},
 					["providers"] = {
 						{ "n", 45224 },	-- Farseer Krogar
 						{ "n", 45226 },	-- Naraat the Earthspeaker

@@ -133,6 +133,7 @@ _.Zones =
 			}),
 			q(27721, {	-- Warchief's Command: Mount Hyjal!
 				["isBreadcrumb"] = true,
+				["races"] = HORDE_ONLY,
 			}),
 			q(49549, {	-- Warchief's Command: Nagrand! (Draenor)
 				["isBreadcrumb"] = true,
@@ -370,6 +371,7 @@ _.Zones =
 			q(27726, {	-- Hero's Call: Mount Hyjal! (max level 100)
 				["isBreadcrumb"] = true,
 				["lvl"] = 80,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(39197, {	-- Hero's Call: Nagrand! (Outland)
 				["isBreadcrumb"] = true,
