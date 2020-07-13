@@ -45,15 +45,19 @@ _.PetJournal =
 		un(REMOVED_FROM_GAME, p(228)),		-- Grunty
 		p(282, {			-- Guild Herald (Alliance)
 			["races"] = ALLIANCE_ONLY,
+			["altSpeciesID"] = 283,
 		}),
 		p(283, {			-- Guild Herald (Horde)
 			["races"] = HORDE_ONLY,
+			["altSpeciesID"] = 282,
 		}),
 		p(280, {			-- Guild Page (Alliance)
 			["races"] = ALLIANCE_ONLY,
+			["altSpeciesID"] = 281,
 		}),
 		p(281, {			-- Guild Page (Horde)
 			["races"] = HORDE_ONLY,
+			["altSpeciesID"] = 280,
 		}),
 		un(REMOVED_FROM_GAME, p(121)),		-- Gurky
 		p(1147),			-- Harbinger of Flame
