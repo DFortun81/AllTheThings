@@ -233,7 +233,6 @@ _.Zones =
 				q(25577, {	-- Crushing the Cores
 					["provider"] = { "n", 40834 },	-- Jordan Olafson
 					["coord"] = { 26.2, 41.9, 198 },
-					["sourceQuest"] = 25617,	-- Into the Maw!
 					["sourceQuests"] = {
 						25617,	-- Into the Maw! H1
 						25618,	-- Into the Maw! A1
