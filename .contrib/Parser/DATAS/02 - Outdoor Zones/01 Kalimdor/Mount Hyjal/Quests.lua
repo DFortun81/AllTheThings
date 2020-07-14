@@ -300,7 +300,6 @@ _.Zones =
 					["provider"] = { "n", 41006 },	-- Thisalee Crow
 					["coord"] = { 32.7, 70.7, 198 },
 					["sourceQuests"] = {
-						25761,	-- Disassembly
 						25746,	-- Sethria's Brood
 						25763,	-- The Codex of Shadows
 					},
@@ -595,9 +594,19 @@ _.Zones =
 					["sourceQuest"] = 25353,	-- Lightning in a Bottle
 				}),
 				q(25940, {	-- Last Stand at Whistling Grove
-					["provider"] = { "n", 39927 },	-- Laina Nightsky
-					["coord"] = { 19.0, 40.9, 198 },
-					["sourceQuest"] = 25382,	-- Disrupting the Rituals
+					["providers"] = {
+						{ "n", 39927 },	-- Laina Nightsky
+						{ "n", 39928 },	-- Matoclaw
+					},
+					["coords"] = {
+						{ 19.0, 40.9, 198 },	-- Laina Nightsky
+						{ 19.03, 37.01, 198 },	-- Matoclaw
+					},
+					["sourceQuests"] = {
+						25382,	-- Disrupting the Rituals
+						25392,	-- Oh, Deer!
+						25428,	-- Black Heart of Flame
+					},
 					["isBreadcrumb"] = true,
 				}),
 				q(29200, {	-- Leyara
@@ -899,7 +908,10 @@ _.Zones =
 				q(25776, {	-- Sethria's Demise
 					["provider"] = { "n", 41006 },	-- Thisalee Crow
 					["coord"] = { 32.7, 70.7, 198 },
-					["sourceQuest"] = 25764,	-- Egg Hunt
+					["sourceQuests"] = {
+						25761,	-- Disassembly
+						25746,	-- Egg Hunt
+					},
 				}),
 				q(25274, {	-- Signed in Blood
 					["provider"] = { "n", 39621 },	-- Elementalist Ortell
@@ -1103,7 +1115,9 @@ _.Zones =
 					["sourceQuests"] = {
 						25520,	-- An Ancient Awakens
 						25382,	-- Disrupting the Rituals
+						25491,	-- Durable Seeds
 						29066,	-- Good News... and Bad News
+						25502,	-- Prepping the Soil
 						25832,	-- Return to Aviana
 					},
 				}),
