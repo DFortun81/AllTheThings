@@ -43,11 +43,15 @@ _.Zones =
 					["provider"] = { "n", 41068 },	-- Mysterious Winged Spirit
 					["coord"] = { 40.3, 44.3, 198 },
 					["sourceQuest"] = 25663,	-- An Offering For Aviana
+					["isBreadcrumb"] = true,
 				}),
 				q(25664, {	-- A Prayer and a Wing
 					["provider"] = { "n", 41005 },	-- Choluna
 					["coord"] = { 44.4, 46.2, 198 },
-					["sourceQuest"] = 25665,	-- A Plea From Beyond
+					["sourceQuests"] = {
+						25663,	-- An Offering For Aviana
+						25665,	-- A Plea From Beyond
+					},
 					["g"] = {
 						i(57341),	-- Shoulderpads of Dead Memories
 						i(57340),	-- Griefsoul Wristguards
@@ -217,7 +221,9 @@ _.Zones =
 				}),
 				q(25278, {	-- Cleaning House
 					["provider"] = { "n", 39433 },	-- Ian Duran
+					["coord"] = { 28.22, 29.74, 198 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25280,	-- The Shrine Reclaimed
 				}),
 				q(25597, {	-- Commander Jarod Shadowsong
 					["provider"] = { "n", 40289 },	-- Ysera
@@ -228,6 +234,12 @@ _.Zones =
 					["provider"] = { "n", 40834 },	-- Jordan Olafson
 					["coord"] = { 26.2, 41.9, 198 },
 					["sourceQuest"] = 25617,	-- Into the Maw!
+					["sourceQuests"] = {
+						25617,	-- Into the Maw! H1
+						25618,	-- Into the Maw! A1
+						25623,	-- Into the Maw! A2
+						25624,	-- Into the Maw! H2
+					},
 					["g"] = {
 						i(57358),	-- Coreforged Girdle
 						i(57357),	-- Anvilcrush Bracers
@@ -471,7 +483,9 @@ _.Zones =
 				}),
 				q(25271, {	-- Goldrinn's Ferocity
 					["provider"] = { "n", 39433 },	-- Ian Duran
+					["coord"] = { 30.12, 31.33, 198 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25268,	-- The Voice of Goldrinn
 				}),
 				q(29066, {	-- Good News... and Bad News
 					["coord"] = { 22.2, 44.9, 198 },
@@ -573,11 +587,13 @@ _.Zones =
 					["provider"] = { "n", 39433 },	-- Ian Duran
 					["races"] = ALLIANCE_ONLY,
 					["altQuests"] = { 25618 },
+					["sourceQuest"] = 25353,	-- Lightning in a Bottle
 				}),
 				q(25618, {	-- Into the Maw!
 					["provider"] = { "n", 39627 },	-- Spirit of Goldrinn
 					["races"] = ALLIANCE_ONLY,
 					["altQuests"] = { 25623 },
+					["sourceQuest"] = 25353,	-- Lightning in a Bottle
 				}),
 				q(25940, {	-- Last Stand at Whistling Grove
 					["provider"] = { "n", 39927 },	-- Laina Nightsky
@@ -593,13 +609,17 @@ _.Zones =
 				}),
 				q(25355, {	-- Lightning in a Bottle
 					["provider"] = { "n", 39432 },	-- Takrik Ragehowl
-					["coord"] = { 28.4, 29.8, 198 },
+					["coord"] = { 28.22, 29.74, 198 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25277,	-- Cleaning House
+					["description"] = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to the Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
 				}),
 				q(25353, {	-- Lightning in a Bottle
 					["provider"] = { "n", 39433 },	-- Ian Duran
+					["coord"] = { 28.22, 29.74, 198 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25278,	-- Cleaning House
+					["description"] = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to the Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
 				}),
 				q(44921, {	-- Lone Wolf
 					["provider"] = { "n", 115749 },	-- Aviana
@@ -614,7 +634,9 @@ _.Zones =
 				}),
 				q(25273, {	-- Lycanthoth the Corruptor
 					["provider"] = { "n", 39433 },	-- Ian Duran
+					["coord"] = { 30.12, 31.33, 198 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25271,	-- Goldrinn's Ferocity
 					["g"] = {
 						i(57379),	-- Clutches of the Worgen Spirit
 						i(57378),	-- Primal Force Girdle
@@ -921,6 +943,7 @@ _.Zones =
 				}),
 				q(25352, {	-- Sweeping the Shelf
 					["provider"] = { "n", 39433 },	-- Ian Duran
+					["coord"] = { 28.22, 29.74, 198 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(57372),	-- Bracers of the Forlorn Wolf
@@ -931,7 +954,7 @@ _.Zones =
 				}),
 				q(25354, {	-- Sweeping the Shelf
 					["provider"] = { "n", 39432 },	-- Takrik Ragehowl
-					["coord"] = { 28.4, 29.8, 198 },
+					["coord"] = { 28.22, 29.74, 198 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25277,	-- Cleaning House
 					["g"] = {
@@ -1152,7 +1175,9 @@ _.Zones =
 				}),
 				q(25280, {	-- The Shrine Reclaimed
 					["provider"] = { "n", 39627 },	-- Spirit of Goldrinn
+					["coord"] = { 29.63, 29.30, 198 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25273,	-- Lycanthoth the Corruptor
 				}),
 				q(25279, {	-- The Shrine Reclaimed
 					["provider"] = { "n", 39622 },	-- Spirit of Lo'Gosh
@@ -1187,7 +1212,9 @@ _.Zones =
 				}),
 				q(25268, {	-- The Voice of Goldrinn
 					["provider"] = { "n", 39427 },	-- Jadi Falaryn
+					["coord"] = { 35.6, 19.6, 198 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25233,	-- End of the Supply Line
 				}),
 				q(25269, {	-- The Voice of Lo'Gosh
 					["provider"] = { "n", 39429 },	-- Oomla Whitehorn
@@ -1348,8 +1375,8 @@ _.Zones =
 					["sourceQuest"] = 29147,	-- Call the Flock
 				}),
 				q(25985, {	-- Wings Over Mount Hyjal
-					["provider"] = { "n", 41005 },	-- Choluna
-					["coord"] = { 44.4, 46.2, 198 },
+					["provider"] = { "n", 40833 },	-- Tiala Whitemane
+					["coord"] = { 63.25, 21.50, 198 },
 					["isBreadcrumb"] = true,
 				}),
 				q(25276, {	-- Your New Identity
