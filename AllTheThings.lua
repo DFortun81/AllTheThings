@@ -4816,7 +4816,7 @@ app.BaseFaction = {
 			end
 			if t.altAchievements then
 				for i,achID in ipairs(t.altAchievements) do
-					if select(4, GetAchievementInfo(achID)) or true then
+					if select(4, GetAchievementInfo(achID)) then
 						return 2;
 					end
 				end

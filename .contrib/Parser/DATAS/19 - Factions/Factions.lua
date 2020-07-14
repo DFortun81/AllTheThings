@@ -287,10 +287,18 @@ _.Factions =
 		faction(1031), 	-- Sha'tari Skyguard
 		faction(1077), 	-- Shattered Sun Offensive
 		faction(970), 	-- Sporeggar
-		faction(932), 	-- The Aldor
+		faction(932, { 	-- The Aldor
+			["altAchievements"] = {
+				1205,	-- Hero of Shattrath
+			},
+		}),
 		faction(933), 	-- The Consortium
 		faction(990), 	-- The Scale of the Sands
-		faction(934), 	-- The Scryer
+		faction(934, { 	-- The Scryer
+			["altAchievements"] = {
+				1205,	-- Hero of Shattrath
+			},
+		}),
 		faction(935), 	-- The Sha'tar
 		faction(967), 	-- The Violet Eye
 	}),
@@ -298,12 +306,20 @@ _.Factions =
 		["description"] = "Wrath of the Lich King is the second expansion. The majority of the expansion content takes place in Northrend & centers around the plans of the Lich King. Content highlights include the increase of the level cap from 70 to 80, the introduction of the death knight Hero class, & new PvP/World PvP content.\n\n|CFFFF0000Need to finish off a WotLK rep?  Equip a tabard obtained from the faction quartermaster and clear Halls of Lightning on normal for around 2k rep per clear.|r",
 		["g"] = {
 			faction(1106), 	-- Argent Crusade
-			faction(1104), 	-- Frenzyheart Tribe
+			faction(1104, { 	-- Frenzyheart Tribe
+				["altAchievements"] = {
+					952,	-- Mercenary of Sholazar
+				},
+			}),
 			faction(1090), 	-- Kirin Tor
 			faction(1098), 	-- Knights of the Ebon Blade
 			faction(1156), 	-- The Ashen Verdict
 			faction(1073), 	-- The Kalu'ak
-			faction(1105),	-- The Oracles
+			faction(1105, { 	-- The Oracles
+				["altAchievements"] = {
+					952,	-- Mercenary of Sholazar
+				},
+			}),
 			faction(1119), 	-- The Sons of Hodir
 			faction(1091), 	-- The Wyrmrest Accord
 		},
