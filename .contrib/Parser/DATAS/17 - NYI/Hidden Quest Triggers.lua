@@ -1560,15 +1560,6 @@ _.NeverImplemented =
 		-------------------
 		--[[ All of these pop up with brand new characters. Something account-wide triggers these. Possibly related to certain kinds of transmog events
 		q(52969),	--
-		q(56624),	--
-		q(56625),	--
-		q(56626),	--
-		q(56628),	--
-		q(56629),	--
-		q(56632),	--
-		q(56633),	--
-		q(56635),	--
-		q(56652),	--
 		q(57096),	--
 		]]--
 
@@ -2376,8 +2367,20 @@ _.NeverImplemented =
 		q(56330),	-- Triggered shortly after completing "Chopped Bots". Possibly shuts down the magnet?
 		q(56660),	-- Triggered on Mechagon randomly
 		q(56840),	-- Toys of Destruction - made the Volatile Blaster. Maybe triggers for all the toys to indicate the toy extra action button is available?
+		q(56624),	-- collected Izira Gearsworn mini for "Most Minis Wins"
+		q(56625),	-- collected Bondo Grosbloc mini for "Most Minis Wins"
+		q(56626),	-- collected Wrenchbot mini for "Most Minis Wins"
 		q(56627),	-- collected Roadtrogg mini for "Most Minis Wins"
+		q(56628),	-- collected Overspark mini for "Most Minis Wins"
+		q(56629),	-- collected Gazlowe mini for "Most Minis Wins"
 		q(56630),	-- collected HK-8 mini for "Most Minis Wins"
+		q(56631),	-- collected King Mechagon mini for "Most Minis Wins"
+		q(56632),	-- collected Prince Erazmin mini for "Most Minis Wins"
+		q(56633),	-- collected Cork Stuttguard mini for "Most Minis Wins"
+		q(56634),	-- collected Naeno Megacrash mini for "Most Minis Wins"
+		q(56635),	-- collected Cogstar mini for "Most Minis Wins"
+		q(56652),	-- collected Blastatron mini for "Most Minis Wins"
+		q(56729),	-- collected Sapphronetta mini for "Most Minis Wins"
 
 
 	--	Dungeons
