@@ -147,8 +147,6 @@ _.Zones =
 --[[
 				q(49027),	-- Targets of Opportunity: Terminus
 				q(48199),	-- The Burning Heart
-				q(48203),	-- The Burning Throne
-				q(49014),	-- The Burning Throne
 				q(49445),	-- The Prime Exchange
 				q(47287),	-- The Vindicaar Matrix Core
 				q(48069),	-- The Wrench Calls

@@ -339,6 +339,11 @@ _.Zones =
 						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
 						["coord"] = { 40.1, 25.2, 831 },
 					}),
+					q(48203, {	-- The Burning Throne
+						["sourceQuests"] = { 47654 },	-- An Oferring of Light
+						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+						["coord"] = { 40.1, 25.2, 831 },
+					}),
 					q(47743, {	-- The Child of Light and Shadow
 						["sourceQuests"] = { 47653 },	-- Light's Return
 						["provider"] = { "n", 122378 },	-- High Exarch Turalyon
