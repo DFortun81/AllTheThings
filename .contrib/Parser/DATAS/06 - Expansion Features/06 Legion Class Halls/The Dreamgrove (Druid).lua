@@ -516,6 +516,30 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 42036,	-- Idol of the Wilds
 						["classes"] = { DRUID },
 					}),
+					q(42041, {	-- Enduring the Nightmare
+						["classes"] = { DRUID },
+						["lvl"] = 110,
+						["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
+						["coord"] = { 43.4, 30.6, 715 },
+						["sourceQuest"] = 42040,	-- The Way to Nordrassil
+						["maps"] = { 715 },	-- The Dreamway
+					}),
+					q(42042, {	-- Teensy Weensies!
+						["classes"] = { DRUID },
+						["lvl"] = 110,
+						["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
+						["coord"] = { 43.4, 30.6, 715 },
+						["sourceQuest"] = 42040,	-- The Way to Nordrassil
+						["maps"] = { 715 },	-- The Dreamway
+					}),
+					q(42043, {	-- Cleaning Up
+						["classes"] = { DRUID },
+						["lvl"] = 110,
+						["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
+						["coord"] = { 43.4, 30.6, 715 },
+						["sourceQuest"] = 42040,	-- The Way to Nordrassil
+						["maps"] = { 715 },	-- The Dreamway
+					}),
 					
 					
 
