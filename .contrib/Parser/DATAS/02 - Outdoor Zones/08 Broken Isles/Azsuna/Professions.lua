@@ -463,6 +463,12 @@ _.Zones =
 						},
 						["provider"] = { "n", 98964 },	-- Celea
 					}),
+					q(40189, {	-- Naga Know-How
+						["g"] = {
+							i(137902),	-- Recipe: Battlebound Spaulders (Rank 2)
+						},
+						["provider"] = { "n", 98964 },	-- Celea
+					}),
 					q(40194, {	-- Reclaimed Cargo
 						["g"] = {
 							i(137900),	-- Recipe: Battlebound Armbands (Rank 2)

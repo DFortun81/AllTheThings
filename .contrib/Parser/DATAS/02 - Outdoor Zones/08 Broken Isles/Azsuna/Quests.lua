@@ -857,7 +857,6 @@ _.Zones =
 				q(43519),	-- Lucid Strength
 				q(38952),	-- Meticulous Precision
 				q(43462),	-- Mother Ozram
-				q(40189),	-- Naga Know-How
 				q(41181),	-- Narrowing Down
 				q(39921),	-- Neltharion's Lair: Rod of Azure
 				q(37928),	-- Normantis the Deposed

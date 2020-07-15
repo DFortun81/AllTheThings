@@ -361,6 +361,12 @@ _.Zones =
 							i(137871),	-- Recipe: Warhide Pants (Rank 2)
 						},
 					}),
+					q(40185, {	-- Shoulder the Burden
+						["g"] = {
+							i(137870),	-- Recipe: Warhide Shoulderguard (Rank 2)
+						},
+						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+					}),
 					q(40191, {	-- Stamped Stories
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["groups"] = {
