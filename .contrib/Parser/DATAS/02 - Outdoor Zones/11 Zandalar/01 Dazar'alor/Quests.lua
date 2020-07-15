@@ -41,7 +41,7 @@ _.Zones =
 							},
 						}),
 						i(165804, {	-- Outpost Upgrade: Vulpera Hideaway
-							--["questID"] = ,	-- Mission Start Trigger
+							["questID"] = 54259,	-- Mission Start Trigger
 							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
@@ -49,13 +49,13 @@ _.Zones =
 								mi(2108, {	-- Upgrade: Vulpera Hideaway
 									--["questID"] = ,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-									--["sourceQuests"] = {  },	-- Mission Start Trigger
+									["sourceQuests"] = { 54259 },	-- Mission Start Trigger
 								}),
 								q(54258, {	-- Mission Report: Vulpera Hideaway
 									["provider"] = { "n", 138704 },		-- Mission Command Table
 									["races"] = HORDE_ONLY,
 									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									--["sourceQuests"] = {  },	-- Upgrade: Vulpera Hideaway Mission Complete
+									--["sourceQuests"] = { },	-- Upgrade: Vulpera Hideaway Mission Complete
 								}),
 								q(54260, {	-- Outpost Upgrade: Vulpera Hideaway
 									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller

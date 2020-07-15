@@ -305,7 +305,7 @@ _.Zones =
 					["description"] = "Alliance Outposts allow you to set up additional bases in Zandalar.  You can buy Scouting Reports from Vindicator Jaelaana, the vendor next to Wind's Redemption.  Each one will start a mission on your Mission Command Table.  After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 					["g"] = {
 						i(165880, {	-- Outpost Upgrade: Arom's Stand
-							["questID"] = 54261,	-- Mission Start Trigger
+							["questID"] = 54304,	-- Mission Start Trigger
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
@@ -313,7 +313,7 @@ _.Zones =
 								mi(2111, {	-- Upgrade: Arom's Stand
 									--["questID"] = ,	-- Triggers when completed
 									["races"] = ALLIANCE_ONLY,
-									["sourceQuests"] = { 54261 },	-- Mission Start Trigger
+									["sourceQuests"] = { 54304 },	-- Mission Start Trigger
 								}),
 								q(54306, {	-- Mission Report: Arom's Stand
 									["provider"] = { "n", 138704 },		-- Mission Command Table
@@ -330,7 +330,7 @@ _.Zones =
 							},
 						}),
 						i(165836, {	-- Outpost Upgrade: Brennadam
-							["questID"] = 54304,	-- Mission Start Trigger
+							["questID"] = 54261,	-- Mission Start Trigger
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
@@ -338,7 +338,7 @@ _.Zones =
 								mi(2109, {	-- Upgrade: Brennadam
 									--["questID"] = ,	-- Triggers when completed
 									["races"] = ALLIANCE_ONLY,
-									["sourceQuests"] = { 54304 },	-- Mission Start Trigger
+									["sourceQuests"] = { 54261 },	-- Mission Start Trigger
 								}),
 								q(54262, {	-- Mission Report: Brennadam
 									["provider"] = { "n", 138704 },		-- Mission Command Table
