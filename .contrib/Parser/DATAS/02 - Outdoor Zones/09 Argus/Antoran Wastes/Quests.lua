@@ -70,6 +70,14 @@ _.Zones =
 					},
 					["description"] = "You need to collect the Smashed Portal Generator before this will drop.",
 				},
+				q(48448, {	-- Hindering the Legion War Machine
+					["sourceQuests"] = {
+						48446,	-- Relics of the Ancient Eredar
+						48654,	-- Beneath Oronaar
+					},
+					["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+					["coord"] = { 46.7, 24.6, 831 },
+				}),
 				{	-- Power Cell
 					["questID"] = 49007,	-- Commander on Deck!
 					["itemID"] = 152891,	-- Power Cell
@@ -94,11 +102,9 @@ _.Zones =
 				q(48055),	-- Empyrial Strength
 				q(48034),	-- Empyrium Deposit Chunk
 				q(48037),	-- Empyrium Seam Chunk
-				q(48601),	-- Felfire Shattering
 				q(49030),	-- Fragments of the Abyss
 				q(48799),	-- Fuel of a Doomed World
 				q(48636),	-- Fueling the Antoran Campaign
-				q(48448),	-- Hindering the Legion War Machine
 				q(48964),	-- Immortal Ace
 				q(49189),	-- Intact Demon Eyes
 				q(49029),	-- Invasion of Space
@@ -131,9 +137,14 @@ _.Zones =
 				q(47892),	-- Storming the Citadel
 				q(48976),	-- Supplies From the Argussian Reach
 				q(48977),	-- Supplies From the Army of the Light
-				q(48912),	-- Supplying the Antoran Campaign
 				q(48040),	-- Tainted Scraps
-				q(48600),	-- Take the Edge Off
+--]]
+				q(48600, {	-- Take the Edge Off
+					["sourceQuests"] = { 48448 },	-- Hindering the Legion War Machine
+					["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+					["coord"] = { 46.7, 24.6, 831 },
+				}),
+--[[
 				q(49027),	-- Targets of Opportunity: Terminus
 				q(48199),	-- The Burning Heart
 				q(48203),	-- The Burning Throne

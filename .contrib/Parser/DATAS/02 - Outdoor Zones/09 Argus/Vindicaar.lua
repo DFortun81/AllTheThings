@@ -323,6 +323,7 @@ _.Zones =
 						["coord"] = { 40.1, 25.6, 831 },
 					}),
 					q(48912, {	-- Supplying the Antoran Campaign
+						["sourceQuests"] = { 48448 },	-- Hindering the Legion War Machine
 						["isWeekly"] = true,
 						["g"] = {
 							i(152097),	-- Lightforged Bulwark

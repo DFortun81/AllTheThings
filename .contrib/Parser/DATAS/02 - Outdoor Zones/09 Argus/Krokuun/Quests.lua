@@ -213,6 +213,9 @@ _.Zones =
 						},
 						["coord"] = { 54.2, 75.4, 830 },
 					}),
+					q(48542, {	-- Strike Back
+						["provider"] = { "i", 152575 },	-- Birth of the Ur'zul
+					}),
 					q(47541, {	-- The Best Prevention
 						["sourceQuests"] = { 47431 },	-- Gathering Light
 						["provider"] = { "n", 121520 },	-- Grand Lector Enaara
