@@ -1493,7 +1493,7 @@ _.Zones =
 					["sourceQuest"] = 32,	-- Rise of the Silithid [Horde]
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
-					["u"] = 40
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27400, {	-- Mastering the Arcane
 					["provider"] = { "n", 47246 },	-- Ureda

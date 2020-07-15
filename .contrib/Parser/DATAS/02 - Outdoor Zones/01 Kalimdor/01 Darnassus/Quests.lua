@@ -126,7 +126,7 @@ _.Zones =
 					["sourceQuest"] = 162,	-- Rise of the Silithid [Alliance]
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
-					["u"] = 40
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1711, {	-- Mathiel's Armor
 					["provider"] = { "n", 6142 },	-- Mathiel
