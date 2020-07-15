@@ -1558,7 +1558,6 @@ _.NeverImplemented =
 		--      BFA      --
 		-------------------
 		--[[ All of these pop up with brand new characters. Something account-wide triggers these. Possibly related to certain kinds of transmog events
-		q(51994),	--
 		q(52969),	--
 		q(56624),	--
 		q(56625),	--
@@ -1668,6 +1667,7 @@ _.NeverImplemented =
 
 
 	--	ISLAND EXPEDITIONS
+		q(51994),	-- Unlock the ability to go on Island Expeditions in search of Azerite
 		q(55687),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions, Alliance
 		q(57104),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions, Horde
 		q(55713),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions, Alliance
