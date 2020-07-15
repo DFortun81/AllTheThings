@@ -288,16 +288,12 @@ _.Factions =
 		faction(1077), 	-- Shattered Sun Offensive
 		faction(970), 	-- Sporeggar
 		faction(932, { 	-- The Aldor
-			["altAchievements"] = {
-				1205,	-- Hero of Shattrath
-			},
+			["altAchievements"] = { 1205 },	-- Hero of Shattrath
 		}),
 		faction(933), 	-- The Consortium
 		faction(990), 	-- The Scale of the Sands
 		faction(934, { 	-- The Scryer
-			["altAchievements"] = {
-				1205,	-- Hero of Shattrath
-			},
+			["altAchievements"] = { 1205 },	-- Hero of Shattrath
 		}),
 		faction(935), 	-- The Sha'tar
 		faction(967), 	-- The Violet Eye
@@ -307,18 +303,14 @@ _.Factions =
 		["g"] = {
 			faction(1106), 	-- Argent Crusade
 			faction(1104, { 	-- Frenzyheart Tribe
-				["altAchievements"] = {
-					952,	-- Mercenary of Sholazar
-				},
+				["altAchievements"] = { 952 },	-- Mercenary of Sholazar
 			}),
 			faction(1090), 	-- Kirin Tor
 			faction(1098), 	-- Knights of the Ebon Blade
 			faction(1156), 	-- The Ashen Verdict
 			faction(1073), 	-- The Kalu'ak
 			faction(1105, { 	-- The Oracles
-				["altAchievements"] = {
-					952,	-- Mercenary of Sholazar
-				},
+				["altAchievements"] = { 952 },	-- Mercenary of Sholazar
 			}),
 			faction(1119), 	-- The Sons of Hodir
 			faction(1091), 	-- The Wyrmrest Accord

@@ -203,7 +203,7 @@ _.Zones =
 					},
 					["provider"] = { "n", 137554 },	-- Toki
 					["coord"] = { 34.3, 26.2, 942 },
-					["g"] = {
+					["g"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {	-- even the hidden Horde appearances can only be unlocked by completing the quest on an Alliance character
 						i(160335),	-- Tidespeaker Soles
 						i(160338),	-- Darkwater Waders
 						i(160341),	-- Stormchaser Footgear
@@ -216,7 +216,7 @@ _.Zones =
 						i(161280), -- Lastwind Shoes
 						i(161283), -- Exiled Veteran's Sabatons
 						i(161282), -- Resilient Outcast's Footguards
-					},
+					}),
 				}),
 				q(52070, {	-- Bauer Backup
 					["sourceQuests"] = { 51712 },	-- Eye For an Eye
@@ -841,14 +841,14 @@ _.Zones =
 					},
 					["provider"] = { "n", 137453 },	-- Loroja <Watcher of Ai'twen>
 					["coord"] = { 35.7, 31.2, 942 },
-					["g"] = {
+					["g"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {	-- Horde characters do not earn appearances from this quest.
 						i(160395),	-- Ai'twen's Light
 						i(160396),	-- Ai'twen's Defender
 						i(160352),	-- Darkwater Grasps
 						i(160358),	-- Dread Corsair Grips
 						i(160355),	-- Stormchaser Handcovers
 						i(160349),	-- Tidespeaker Mittens
-					},
+					}),
 				}),
 				q(50385, {	-- Indefatigable Purpose
 					["sourceQuests"] = { 53105 },	-- Misplaced Faith

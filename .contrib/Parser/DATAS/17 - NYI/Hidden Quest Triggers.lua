@@ -1514,6 +1514,7 @@ _.NeverImplemented =
 		q(48646),	-- Mistress Sassz'ine
 		q(48644),	-- Demonic Inquisition
 		q(48647),	-- Sisters of the Moon
+		q(46332),	-- [DNT]Shadow Priests - Elune Death Enabled — for trying to use Xal'atath to absorb Elune's power after Sisters of the Moon
 		q(48648),	-- The Desolate Host
 		q(48649),	-- Maiden of Vigilance
 		q(49612),	-- Maiden of Vigilance (triggered at the same time as above)
