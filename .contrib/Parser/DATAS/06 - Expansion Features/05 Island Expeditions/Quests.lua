@@ -17,6 +17,37 @@ _.ExpansionFeatures =
 			}),
 		}),
 		n(QUESTS, {
+			-- These quests need to be done once per account to unlock Island Expeditions. After completing, each character will have completed the flag quest 51994.
+			q(51903, {	-- Island Expedition (1/2) (A)
+				["sourceQuest"] = 53061,
+				["races"] = ALLIANCE_ONLY,
+				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
+			}),
+			q(51904, {	-- Island Expedition (2/2) (A)
+				["sourceQuest"] = 51903,
+				["races"] = ALLIANCE_ONLY,
+				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
+			}),
+			q(51870, {	-- Island Expedition (1/2) (H)
+				["sourceQuest"] = 53061,
+				["races"] = HORDE_ONLY,
+				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
+			}),
+			q(51888, {	-- Island Expedition (2/2) (H)
+				["sourceQuest"] = 51903,
+				["races"] = HORDE_ONLY,
+				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
+			}),
+			q(53061, {	-- The Azerite Advantage (A)
+				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
+				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
+			}),
+			q(53062, {	-- The Azerite Advantage (H)
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
+			}),
 			q(53436, { 	-- Azerite for the Alliance
 				["isWeekly"] = true,
 				["provider"] = { "n", 131290 },	-- Flynn

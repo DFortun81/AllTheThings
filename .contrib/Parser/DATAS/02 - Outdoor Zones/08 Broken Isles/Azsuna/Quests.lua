@@ -431,7 +431,7 @@ _.Zones =
 						i(132937),	-- Traitor's Bane Breastplate
 					},
 				}),
-				q(37965, {	-- Plunder the Cove (Bonus Objective)
+				q(37495, {	-- Plunder the Cove (Bonus Objective)
 					["coord"] = { 49.2, 58.8, 630 },
 				}),
 				q(37729, {	-- Pop Quiz: Advanced Rune Drawing

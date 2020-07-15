@@ -72,7 +72,7 @@ _.Zones =
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mi(2107, {	-- Upgrade: Zul'jan Ruins
-									--["questID"] = ,	-- Triggers when completed
+									["questID"] = 54297,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
 									["sourceQuests"] = { 54238 },	-- Mission Start Trigger
 								}),
@@ -80,7 +80,7 @@ _.Zones =
 									["provider"] = { "n", 138704 },		-- Mission Command Table
 									["races"] = HORDE_ONLY,
 									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									--["sourceQuests"] = {  },	-- Upgrade: Zul'jan Ruins Mission Complete
+									["sourceQuests"] = { 54297 },	-- Upgrade: Zul'jan Ruins Mission Complete
 								}),
 								q(54240, {	-- Outpost Upgrade: Zul'jan Ruins
 									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
