@@ -42,7 +42,9 @@ _.NeverImplemented =
 		q(38995),	-- Unused
 		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
 		q(39748),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
+		q(48671),	-- Lockout Tracking - Normal - Fire
 		q(48674),	-- Lockout Tracking - Normal - Islands. Possibly used in multiple situations
+		q(48676),	-- Lockout Tracking - Normal - Forest.
 		q(54740),	-- [DNT] REUSE ME
 		q(57917),	-- [DNT] Test - JAM
 		q(8274),	-- Test Kill Quest - triggered after The Conquest Pit: Final Showdown (12431)
