@@ -1316,7 +1316,6 @@ _.Zones =
 					},
 				}),
 				n(135447, {	-- Ransa Greyfeather <The Honorbound Emissary>
-					-- We need to move out outpost quests somewhere else because it now plots all those coordinates when plotting vendor
 					["coord"] = { 58.0, 62.6, 862 },
 					["races"] = HORDE_ONLY,
 					["g"] = {

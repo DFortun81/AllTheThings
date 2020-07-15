@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -1878,7 +1879,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22243)),	-- Small Soul Pouch
-					},				
+					},
 				}),
 				q(29440, {	-- The Call of the World-Shaman
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
@@ -1975,7 +1976,11 @@ _.Zones =
 				q(27203, {	-- The Maelstrom
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, 85 },
-					["sourceQuest"] = 27722,	-- Warchief's Command: Deepholm!
+					["sourceQuests"] = {
+						27399, -- The Battle Is Won, The War Goes On
+						27442, -- The War Has Many Fronts
+						27722, -- Warchief's Command: Deepholm!
+					},
 					["lvl"] = 82,
 				}),
 				q(1018,  {	-- The New Frontier

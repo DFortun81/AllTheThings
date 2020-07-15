@@ -1,7 +1,8 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-_.Zones = 
+
+_.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(198, {	-- Mount Hyjal
@@ -30,7 +31,7 @@ _.Zones =
 					["sourceQuest"] = 25740,	-- Fact-Finding Mission
 				}),
 				q(42046, {	-- A New Beginning
-					["provider"] = { "n", 106250 },	-- 
+					["provider"] = { "n", 106250 },	--
 					["classes"] = { DRUID },
 				}),
 				q(25411, {	-- A New Master
@@ -42,11 +43,15 @@ _.Zones =
 					["provider"] = { "n", 41068 },	-- Mysterious Winged Spirit
 					["coord"] = { 40.3, 44.3, 198 },
 					["sourceQuest"] = 25663,	-- An Offering For Aviana
+					["isBreadcrumb"] = true,
 				}),
 				q(25664, {	-- A Prayer and a Wing
 					["provider"] = { "n", 41005 },	-- Choluna
 					["coord"] = { 44.4, 46.2, 198 },
-					["sourceQuest"] = 25665,	-- A Plea From Beyond
+					["sourceQuests"] = {
+						25663,	-- An Offering For Aviana
+						25665,	-- A Plea From Beyond
+					},
 					["g"] = {
 						i(57341),	-- Shoulderpads of Dead Memories
 						i(57340),	-- Griefsoul Wristguards
@@ -216,7 +221,9 @@ _.Zones =
 				}),
 				q(25278, {	-- Cleaning House
 					["provider"] = { "n", 39433 },	-- Ian Duran
+					["coord"] = { 28.22, 29.74, 198 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25280,	-- The Shrine Reclaimed
 				}),
 				q(25597, {	-- Commander Jarod Shadowsong
 					["provider"] = { "n", 40289 },	-- Ysera
@@ -226,7 +233,12 @@ _.Zones =
 				q(25577, {	-- Crushing the Cores
 					["provider"] = { "n", 40834 },	-- Jordan Olafson
 					["coord"] = { 26.2, 41.9, 198 },
-					["sourceQuest"] = 25617,	-- Into the Maw!
+					["sourceQuests"] = {
+						25617,	-- Into the Maw! H1
+						25618,	-- Into the Maw! A1
+						25623,	-- Into the Maw! A2
+						25624,	-- Into the Maw! H2
+					},
 					["g"] = {
 						i(57358),	-- Coreforged Girdle
 						i(57357),	-- Anvilcrush Bracers
@@ -288,7 +300,6 @@ _.Zones =
 					["provider"] = { "n", 41006 },	-- Thisalee Crow
 					["coord"] = { 32.7, 70.7, 198 },
 					["sourceQuests"] = {
-						25761,	-- Disassembly
 						25746,	-- Sethria's Brood
 						25763,	-- The Codex of Shadows
 					},
@@ -470,7 +481,9 @@ _.Zones =
 				}),
 				q(25271, {	-- Goldrinn's Ferocity
 					["provider"] = { "n", 39433 },	-- Ian Duran
+					["coord"] = { 30.12, 31.33, 198 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25268,	-- The Voice of Goldrinn
 				}),
 				q(29066, {	-- Good News... and Bad News
 					["coord"] = { 22.2, 44.9, 198 },
@@ -572,16 +585,28 @@ _.Zones =
 					["provider"] = { "n", 39433 },	-- Ian Duran
 					["races"] = ALLIANCE_ONLY,
 					["altQuests"] = { 25618 },
+					["sourceQuest"] = 25353,	-- Lightning in a Bottle
 				}),
 				q(25618, {	-- Into the Maw!
 					["provider"] = { "n", 39627 },	-- Spirit of Goldrinn
 					["races"] = ALLIANCE_ONLY,
 					["altQuests"] = { 25623 },
+					["sourceQuest"] = 25353,	-- Lightning in a Bottle
 				}),
 				q(25940, {	-- Last Stand at Whistling Grove
-					["provider"] = { "n", 39927 },	-- Laina Nightsky
-					["coord"] = { 19.0, 40.9, 198 },
-					["sourceQuest"] = 25382,	-- Disrupting the Rituals
+					["providers"] = {
+						{ "n", 39927 },	-- Laina Nightsky
+						{ "n", 39928 },	-- Matoclaw
+					},
+					["coords"] = {
+						{ 19.0, 40.9, 198 },	-- Laina Nightsky
+						{ 19.03, 37.01, 198 },	-- Matoclaw
+					},
+					["sourceQuests"] = {
+						25382,	-- Disrupting the Rituals
+						25392,	-- Oh, Deer!
+						25428,	-- Black Heart of Flame
+					},
 					["isBreadcrumb"] = true,
 				}),
 				q(29200, {	-- Leyara
@@ -592,13 +617,17 @@ _.Zones =
 				}),
 				q(25355, {	-- Lightning in a Bottle
 					["provider"] = { "n", 39432 },	-- Takrik Ragehowl
-					["coord"] = { 28.4, 29.8, 198 },
+					["coord"] = { 28.22, 29.74, 198 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25277,	-- Cleaning House
+					["description"] = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to the Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
 				}),
 				q(25353, {	-- Lightning in a Bottle
 					["provider"] = { "n", 39433 },	-- Ian Duran
+					["coord"] = { 28.22, 29.74, 198 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25278,	-- Cleaning House
+					["description"] = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to the Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
 				}),
 				q(44921, {	-- Lone Wolf
 					["provider"] = { "n", 115749 },	-- Aviana
@@ -613,7 +642,9 @@ _.Zones =
 				}),
 				q(25273, {	-- Lycanthoth the Corruptor
 					["provider"] = { "n", 39433 },	-- Ian Duran
+					["coord"] = { 30.12, 31.33, 198 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25271,	-- Goldrinn's Ferocity
 					["g"] = {
 						i(57379),	-- Clutches of the Worgen Spirit
 						i(57378),	-- Primal Force Girdle
@@ -730,6 +761,7 @@ _.Zones =
 				q(25317, {	-- Protect the World Tree
 					["provider"] = { "n", 40289 },	-- Ysera
 					["coord"] = { 62.0, 24.8, 198 },
+					["sourceQuest"] = 25316,	-- As Hyjal Burns
 				}),
 				q(29101, {	-- Punting Season
 					["provider"] = { "n", 52671 },	-- Mylune
@@ -876,7 +908,10 @@ _.Zones =
 				q(25776, {	-- Sethria's Demise
 					["provider"] = { "n", 41006 },	-- Thisalee Crow
 					["coord"] = { 32.7, 70.7, 198 },
-					["sourceQuest"] = 25764,	-- Egg Hunt
+					["sourceQuests"] = {
+						25761,	-- Disassembly
+						25746,	-- Egg Hunt
+					},
 				}),
 				q(25274, {	-- Signed in Blood
 					["provider"] = { "n", 39621 },	-- Elementalist Ortell
@@ -919,6 +954,7 @@ _.Zones =
 				}),
 				q(25352, {	-- Sweeping the Shelf
 					["provider"] = { "n", 39433 },	-- Ian Duran
+					["coord"] = { 28.22, 29.74, 198 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(57372),	-- Bracers of the Forlorn Wolf
@@ -929,7 +965,7 @@ _.Zones =
 				}),
 				q(25354, {	-- Sweeping the Shelf
 					["provider"] = { "n", 39432 },	-- Takrik Ragehowl
-					["coord"] = { 28.4, 29.8, 198 },
+					["coord"] = { 28.22, 29.74, 198 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25277,	-- Cleaning House
 					["g"] = {
@@ -949,12 +985,14 @@ _.Zones =
 					["coord"] = { 71.9, 74.0, 198 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25551,	-- The Firelord
+					["isBreadcrumb"] = true,
 				}),
 				q(27399, {	-- The Battle Is Won, The War Goes On
 					["provider"] = { "n", 40772 },	-- Commander Jarod Shadowsong
 					["coord"] = { 71.9, 74.0, 198 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25551,	-- The Firelord
+					["isBreadcrumb"] = true,
 				}),
 				q(25462, {	-- The Bears Up There
 					["provider"] = { "n", 39932 },	-- Keeper Taldros
@@ -1077,7 +1115,9 @@ _.Zones =
 					["sourceQuests"] = {
 						25520,	-- An Ancient Awakens
 						25382,	-- Disrupting the Rituals
+						25491,	-- Durable Seeds
 						29066,	-- Good News... and Bad News
+						25502,	-- Prepping the Soil
 						25832,	-- Return to Aviana
 					},
 				}),
@@ -1148,7 +1188,9 @@ _.Zones =
 				}),
 				q(25280, {	-- The Shrine Reclaimed
 					["provider"] = { "n", 39627 },	-- Spirit of Goldrinn
+					["coord"] = { 29.63, 29.30, 198 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25273,	-- Lycanthoth the Corruptor
 				}),
 				q(25279, {	-- The Shrine Reclaimed
 					["provider"] = { "n", 39622 },	-- Spirit of Lo'Gosh
@@ -1183,7 +1225,9 @@ _.Zones =
 				}),
 				q(25268, {	-- The Voice of Goldrinn
 					["provider"] = { "n", 39427 },	-- Jadi Falaryn
+					["coord"] = { 35.6, 19.6, 198 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25233,	-- End of the Supply Line
 				}),
 				q(25269, {	-- The Voice of Lo'Gosh
 					["provider"] = { "n", 39429 },	-- Oomla Whitehorn
@@ -1269,7 +1313,7 @@ _.Zones =
 						i(57309),	-- Chestplate of Exceptional Expectations
 					},
 				}),
-				q(25321, {	-- Twilight Captivity	
+				q(25321, {	-- Twilight Captivity
 					["provider"] = { "n", 40096 },	-- Scout Larandia
 					["coord"] = { 44.4, 18.9, 198 },
 					["sourceQuest"] = 25320,	-- The Captured Scout
@@ -1344,8 +1388,8 @@ _.Zones =
 					["sourceQuest"] = 29147,	-- Call the Flock
 				}),
 				q(25985, {	-- Wings Over Mount Hyjal
-					["provider"] = { "n", 41005 },	-- Choluna
-					["coord"] = { 44.4, 46.2, 198 },
+					["provider"] = { "n", 40833 },	-- Tiala Whitemane
+					["coord"] = { 63.25, 21.50, 198 },
 					["isBreadcrumb"] = true,
 				}),
 				q(25276, {	-- Your New Identity

@@ -33,6 +33,7 @@ _.Zones =
 						27726,	-- Hero's Call: Mount Hyjal!
 						27721,	-- Warchief's Command: Mount Hyjal!
 					},
+					["isBreadcrumb"] = true,
 				}),
 				q(40962, {	-- Dark Waters
 					["u"] = REMOVED_FROM_GAME,

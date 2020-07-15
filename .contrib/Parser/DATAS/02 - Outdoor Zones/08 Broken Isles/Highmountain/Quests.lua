@@ -1058,7 +1058,6 @@ _.Zones =
 				q(38914),	-- Secrets of Highmountain REMOVED
 				q(42698),	-- Selia, Master of Balefire
 				q(40050),	-- Shipwreck Cove
-				q(40185),	-- Shoulder the Burden
 				q(39317),	-- Siege of Crawliac
 				q(42395),	-- Signaling Trouble
 				q(42928),	-- Silkweave Bandages

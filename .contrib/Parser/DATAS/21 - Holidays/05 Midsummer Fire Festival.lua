@@ -5,7 +5,7 @@
 --	all coordinates confirmed for "flame warden of eastern kingdoms" achievement on 6/24/19.
 --	all coordinates for "extinguishing eastern kingdom" (alliance achievement to extinguish horde fires) also confirmed on 6/24/19 EXCEPT for eversong woods and ghostlands.
 --	coordinates for the krasarang wilds flame warden (for alliance and horde achievements + neutral "honor the flame" quest) confirmed.
---	all other coordinates taken from wowhead, so they should suffice but may be slightly off.  
+--	all other coordinates taken from wowhead, so they should suffice but may be slightly off.
 
 --	in my experience, coordinates for extinguishing bonfires were pretty precise, but coordinates for "honor the flame," which are based on the questgiver, were less so.
 
@@ -373,7 +373,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 										["maps"] = { 83 },	-- Winterspring
 									}),
 								},
-							}), 
+							}),
 							ach(1030, {	-- Extinguishing Outland
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
@@ -575,7 +575,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						["maps"] = { 896 },	-- Drustvar
 					}),
 				},
-			}),	
+			}),
 			ach(8042,  {	-- Extinguishing Pandaria
 				["coord"] = { 77.9, 33.9, 390 },
 				["races"] = ALLIANCE_ONLY,
@@ -2157,7 +2157,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 				["maps"] = { 121 },	-- Zul'Drak
 			}),
 		--	HORDE "DESECRATE THIS FIRE!" QUESTS END HERE.
-		--	ALLIANCE "HONOR THE FLAME" QUESTS START HERE.	
+		--	ALLIANCE "HONOR THE FLAME" QUESTS START HERE.
 			q(11804, {	-- Honor the Flame — Arathi Highlands
 				["isYearly"] = true,
 				["coord"] = { 44.3, 45.8, 14 },
@@ -3247,7 +3247,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(9330,  {	-- Stealing Stormwind's Flame
 				["isYearly"] = true,
-				["provider"] = { "o", 181332 },	-- Flame of 
+				["provider"] = { "o", 181332 },	-- Flame of
 			--	["itemID"] = 23182,	-- Flame of Stormwind
 				["coord"] = { 49.8, 72.9, 84 },
 				["races"] = HORDE_ONLY,
@@ -3256,7 +3256,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(9325,  {	-- Stealing Thunder Bluff's Flame
 				["isYearly"] = true,
-				["provider"] = { "o", 181337 },	-- Flame of 
+				["provider"] = { "o", 181337 },	-- Flame of
 			--	["itemID"] = 23180,	-- Flame of Thunder Bluff
 				["coord"] = { 21.9, 27.3, 88 },
 				["races"] = ALLIANCE_ONLY,
@@ -3274,7 +3274,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11935, {	-- Stealing Silvermoon's Flame
 				["isYearly"] = true,
-				["provider"] = { "o", 188129 },	-- Flame of 
+				["provider"] = { "o", 188129 },	-- Flame of
 			--	["itemID"] = 35568,	-- Flame of Silvermoon
 				["coord"] = { 69.7, 42.7, 110 },
 				["races"] = ALLIANCE_ONLY,

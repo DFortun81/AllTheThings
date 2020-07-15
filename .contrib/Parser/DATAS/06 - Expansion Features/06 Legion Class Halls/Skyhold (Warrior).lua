@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 ---------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
@@ -28,7 +29,7 @@ _.ExpansionFeatures =
 				}),
 				n(QUESTS, {
 					i(144436, {	-- Lost Legend of Odyn
-						["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
+						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
 						["g"] = {
 							n(-2200, {	-- Great Odyn and the Firelord
 								["questID"] = 46223,
@@ -51,7 +52,7 @@ _.ExpansionFeatures =
 						}
 					}),
 					i(144437, {	-- Lost Legend of the Valarjar
-						["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
+						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior. (any spec)",
 						["g"] = {
 							n(-2206, {	-- His Name Is Dragonblood
 								["questID"] = 46229,

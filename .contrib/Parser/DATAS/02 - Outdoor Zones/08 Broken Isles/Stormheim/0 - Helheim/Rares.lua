@@ -1,6 +1,7 @@
- ---------------------------------------------------
+---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -23,7 +24,7 @@ _.Zones =
 						["coord"] = { 32.9, 43.2, 649 },
 						["g"] = {
 							i(144437, {	-- Lost Legend of the Valarjar
-								["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior in any spec.",
+								["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior in any spec.",
 								["classes"] = { 1 },	-- Warrior
 								["g"] = {
 									q(46229, {	-- Valarjar Lore Unlock 1
@@ -60,6 +61,6 @@ _.Zones =
 					}),
 				}),
 			}),
-		}),	
+		}),
 	}),
 };

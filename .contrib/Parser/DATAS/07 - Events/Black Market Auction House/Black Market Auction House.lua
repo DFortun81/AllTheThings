@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
+-- TODO: refactor some items here accroding to new format standarts.
 _.WorldEvents =
 {
 	n(-94, { 	-- Black Market AH
@@ -37,13 +39,13 @@ _.WorldEvents =
 			}),
 			n(-160, {	-- Mounts
 				i(143643),	-- Abyss Worm
-				i(68823),	-- Armored Razzashi Raptor 
+				i(68823),	-- Armored Razzashi Raptor
 				i(32458),	-- Ashes of Alar
 				i(95059),	-- Clutch of Ji-Kun
 				un(9, i(115484)),	-- Core Hound Chain
 				i(13335),	-- Deathcharger's Reins
 				i(78919),	-- Experiment 12-B
-				i(123890),	-- Felsteel Annihilator 
+				i(123890),	-- Felsteel Annihilator
 				i(30480),	-- Fiery Warhorse's Reins
 				i(71665),	-- Flametalon of Alysrazor
 				i(50818),	-- Invincible's Reins
@@ -60,14 +62,14 @@ _.WorldEvents =
 				i(77067),	-- Reins of the Blazing Drake
 				i(43953),	-- Reins of the Blue Drake
 				i(44151),	-- Reins of the Blue Proto-Drake
-				i(94228),	-- Reins of the Cobalt Primordial Direhorn 
+				i(94228),	-- Reins of the Cobalt Primordial Direhorn
 				i(63040),	-- Reins of the Drake of the North Wind
 				i(63041),	-- Reins of the Drake of the South Wind
 				i(43959),	-- Reins of the Grand Black War Mammoth (A)
 				i(44083),	-- Reins of the Grand Black War Mammoth (H)
 				i(44707),	-- Reins of the Green Proto-Drake
 				i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent
-				i(94231),	-- Reins of the Jade Primordial Direhorn 
+				i(94231),	-- Reins of the Jade Primordial Direhorn
 				i(49636),	-- Reins of the Onyxian Drake
 				un(9, i(44175)),	-- Reins of the Plagued Proto-Drake
 				i(94229),	-- Reins of the Slate Primordial Direhorn
@@ -80,8 +82,8 @@ _.WorldEvents =
 				i(43962),	-- Reins of the White Polar Bear
 				i(23720),	-- Riding Turtle
 				i(152789),	-- Shackled Ur'zul
-				i(116771),	-- Solar Spirehawk 
-				i(93666),	-- Spawn of Horridon 
+				i(116771),	-- Solar Spirehawk
+				i(93666),	-- Spawn of Horridon
 				i(69224),	-- Smoldering Egg of Millagazor
 				i(89783),	-- Son of Galleon's Saddle
 				un(9, i(19872)),	-- Swift Razzashi Raptor
@@ -355,7 +357,7 @@ _.WorldEvents =
 				un(9, i(90176)),	-- Flintlocke's Blasthammer
 				un(NEVER_IMPLEMENTED, i(110591)),	-- Flintlocke's Blasthammer
 				un(9, i(44924)),	-- Sun-Lute of the Phoenix King
-			}),	
+			}),
 			i(50379),	-- Battered Hilt (Alliance)
 			i(50380),	-- Battered Hilt (Horde)
 			i(110678, {	-- Darkmoon Ticket Fanny Pack
@@ -365,7 +367,7 @@ _.WorldEvents =
 			un(9, i(45037)),	-- Epic Purple Shirt
 			{	-- Grimoire of the Four Winds
 				["itemID"] = 110672,	-- Grimoire of the Four Winds
-				["u"] = REMOVED_FROM_GAME,				
+				["u"] = REMOVED_FROM_GAME,
 				["collectible"] = false,
 				["icon"] = "Interface\\Icons\\passive_monk_teachingsofmonastery",
 				["f"] = 55,
@@ -398,7 +400,7 @@ _.WorldEvents =
 			un(9, i(142000, {	-- Rhinestone Sunglasses
 				["groups"] = {
 				},
-				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.  NOTE: You will not be able to transmog this item",
+				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.  NOTE: You will not be able to transmog this item.",
 			})),
 			i(14617),	-- Sawbones Shirt
 			i(112935),	-- Tusk of Mannoroth
