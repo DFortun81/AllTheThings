@@ -1311,6 +1311,7 @@ _.NeverImplemented =
 		q(47065),	-- Highmountain Invasion / Fel Commander Erixtol Kill
 		q(47185),	-- Invasion Boss Weekly Bonus
 		q(46808),	-- Ship - Highmountain — part of a Highmountain invasion.  i refreshed after killing the NPC for "Holding Our Ground" and this quest popped
+		q(47193),	-- Battle for Azsuna, for the achievement Defender of the Broken Isles
 		q(47194),	-- Battle for Highmountain — popped alongside the normal "Battle for Highmountain" final invasion quest.  possibly first-time quest?
 		q(47195),	-- Battle for Stormheim — same as above, first time i did the Stormheim invasion on that character
 		q(46956),	-- Azsuna - Assault Treasure
@@ -1511,6 +1512,10 @@ _.NeverImplemented =
 		q(45327),	-- Gul'dan (Mythic)
 
 	-- Tomb of Sargeras
+		q(47106),	-- 7.2 Raid - Tomb - 1 - Quest Item Reward - Tracking Quest
+		q(47107),	-- 7.2 Raid - Tomb - 2 - Quest Item Reward - Tracking Quest
+		q(47108),	-- 7.2 Raid - Tomb - 3 - Quest Item Reward - Tracking Quest
+		q(47109),	-- 7.2 Raid - Tomb - 4 - Quest Item Reward - Tracking Quest
 		q(48643),	-- Goroth
 		q(48645),	-- Harjatan
 		q(48646),	-- Mistress Sassz'ine
