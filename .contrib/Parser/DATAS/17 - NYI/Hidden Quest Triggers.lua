@@ -1302,7 +1302,7 @@ _.NeverImplemented =
 		q(47091),	-- Si'vash bonus roll
 		q(44510),	-- The Soultakers killID
 		q(44905),	-- The Soultakers bonus roll
-	--	q(),	-- Withered J'im killID
+		q(44511),	-- Withered J'im killID
 		q(44906),	-- Withered J'im bonus roll
 
 	--	Invasions
