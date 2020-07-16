@@ -669,6 +669,9 @@ _.ExpansionFeatures =
 						},
 						["maps"] = { 207 },	-- Deepholm
 					}),
+					q(46940, {	-- Using Lost Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(43645, {	-- Wavespeaker's Trail
 						["classes"] = { SHAMAN },
 						["lvl"] = 98,

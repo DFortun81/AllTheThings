@@ -156,6 +156,9 @@ _.ExpansionFeatures =
 								follower(759),	-- Lothraxion
 							},
 						}),
+						q(46940, {	-- Using Lost Knowledge
+							["u"] = REMOVED_FROM_GAME,
+						}),
 						q(45813, {	-- Where Art Thou, My Sweet
 							["provider"] = { "n", 118088 },	-- Maximillian of Northshire <Knight-Errant>
 							["g"] = {

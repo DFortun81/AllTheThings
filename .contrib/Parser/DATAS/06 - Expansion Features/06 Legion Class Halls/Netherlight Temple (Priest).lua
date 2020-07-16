@@ -396,6 +396,9 @@ _.ExpansionFeatures =
 						["lvl"] = 101,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
+					q(46940, {	-- Using Lost Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(43379, {	-- Velen's Vision
 						-- awarded third criteria for "fighting with style: classic" achievement
 						-- not sure if that should be here or on the achievement as a SQ or anything like that.

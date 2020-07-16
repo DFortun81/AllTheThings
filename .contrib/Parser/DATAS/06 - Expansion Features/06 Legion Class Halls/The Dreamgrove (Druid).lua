@@ -73,6 +73,9 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 44431,	-- More Weapons of Old
 						["classes"] = { DRUID },
 					}),
+					q(46940, {	-- Using Lost Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					-- Restoration Artifact
 					q(40649, {	-- Meet with Mylune
 						["provider"] = { "n", 103832 },	-- Keeper Remulos

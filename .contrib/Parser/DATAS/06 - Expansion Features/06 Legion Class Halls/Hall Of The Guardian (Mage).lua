@@ -295,6 +295,9 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42127 },	-- Building Our Troops
 					}),
 					q(41125),	-- Unlocked Potential
+					q(46940, {	-- Using Lost Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(42940),	-- When There's a Will, There's a Way
 					q(45354, {	-- Dispersion of the Discs
 						["lvl"] = 110,

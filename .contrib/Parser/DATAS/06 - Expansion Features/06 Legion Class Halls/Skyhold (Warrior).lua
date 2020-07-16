@@ -615,6 +615,9 @@ _.ExpansionFeatures =
 							i(139688),	-- Battlelord's Bracers
 						},
 					}),
+					q(46940, {	-- Using Lost Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(40579, {	-- Weapons of Legend
 						["coord"] = { 58.3, 84.9, 695 },
 						["classes"] = { WARRIOR },

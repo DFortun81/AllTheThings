@@ -719,6 +719,9 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
+					q(46940, {	-- Using Lost Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(41863, {	-- Vengeance Will Be Ours (Altruis)
 						["maps"] = { 627 },	-- Dalaran
 						["coord"] = { 74.9, 49.0, 210 },
