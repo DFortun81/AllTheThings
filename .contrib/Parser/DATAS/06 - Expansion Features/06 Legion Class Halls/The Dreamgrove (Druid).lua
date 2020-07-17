@@ -87,6 +87,21 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40643 },	-- A Summons From Moonglade
 						["maps"] = { 80 },	-- Moonglade
 					}),
+					q(43368, {	-- Champion: Brightwing
+						["classes"] = { DRUID },
+						["lvl"] = 110,
+						["provider"] = { "n", 98008 },		-- Brightwing
+						["coord"] = { 39.6, 45.5, 715 },
+						["sourceQuests"] = {
+							42719,	-- Eye of Azshara: Cleansing the Dreamway
+							43365, 	-- The Cycle Continues
+							42129, 	-- The Pendant of Starlight
+						},
+						["maps"] = { 715 },	-- The Dreamway
+						["g"] = {
+							follower(645),	-- Brightwing
+						},
+					}),
 					q(42038, {	-- Champion: Broll Bearmantle
 						["classes"] = { DRUID },
 						["lvl"] = 103,
@@ -170,7 +185,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42044 },	-- A Dying Dream
 						["maps"] = { 715 },	-- The Dreamway
 					}),
-
 					q(44076, {	-- Darkheart Thicket: Essence of Regrowth
 						["classes"] = { DRUID },
 						["lvl"] = 103,
@@ -776,19 +790,12 @@ _.ExpansionFeatures =
 					}),
 					--]]
 					--Followers Sort later
-					q(43368, {	-- Champion: Brightwing
-						["provider"] = { "n", 98008 },		-- Brightwing
-						["g"] = {
-							follower(645),	-- Brightwing
-						},
-					}),
 					q(42056, {	-- Champion: Remulos
 						["provider"] = { "n", 103832 },	-- Keeper Remulos
 						["g"] = {
 							follower(646),	-- Keeper Remulos
 						},
 					}),
-
 					q(46044, {	-- Champion: Thisalee Crow
 						["provider"] = { "n", 106299 },	-- Thisalee Crow
 						["g"] = {
