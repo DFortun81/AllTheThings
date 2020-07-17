@@ -989,6 +989,8 @@ _.NeverImplemented =
 		q(38994),	-- TRACKING Encounter Botanist — this quest and the one below are during/after doing the "To Old Friends" quest in Val'sharah
 		q(38596),	-- TRACKING Nightmare 02
 		q(48570),	-- Antorus, The Burning Throne - Triggers when the door opens to Kin'garoth
+		q(40609),	-- 7.0 Highmountain - Vignette - Windripper Peak - Taurson - Tracking Quest Credit - See Treasure (JLW/RKS). Triggered after killing The Beastly Boxer
+		q(40610),	-- 7.0 Highmountain - Vignette - Worm Treasure - Tracking Quest Credit - See Treasure (JLW/RKS). Triggered after killing Treasure Worm
 		q(40612),	-- 7.0 Highmountain - Vignette - Amateur Hunters - Tracking Quest Credit - See Treasure (JAP) - NYI. Triggered after killing Irewing during Scout It Out
 		q(46775),	-- Campaign Cooldown - triggers after turning in "Champions of Legionfall" during the legionfall campaign
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
