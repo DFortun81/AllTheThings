@@ -117,27 +117,6 @@ _.Zones =
 						25985,	-- Wings Over Mount Hyjal
 					},
 				}),
-				q(44877, {	-- Attack on the Roost
-					["lvl"] = 110,
-					["classes"] = { DRUID },
-					["sourceQuest"]	= 44869,	-- Talon Terror
-					["providers"] = {
-						{ "n", 115802 },	-- Thisalee Crow
-						{ "n", 119982 },	-- Druid of the Talon
-					},
-				}),
-				q(44888, {	-- Aviana's Grace
-					["lvl"] = 110,
-					["classes"] = { DRUID },
-					["providers"] = {
-						{ "n", 115802 },	-- Thisalee Crow
-						{ "n", 119982 },	-- Druid of the Talon
-					},
-					["sourceQuests"] = {
-						44877,	-- Attack on the Roost
-						45532,	-- Mother's Orders
-					},
-				}),
 				q(27874, {	-- Aviana's Legacy
 					["provider"] = { "n", 40289 },	-- Ysera
 					["coord"] = { 62.0, 24.8, 198 },
@@ -628,12 +607,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25278,	-- Cleaning House
 					["description"] = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to the Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
-				}),
-				q(44921, {	-- Lone Wolf
-					["provider"] = { "n", 115749 },	-- Aviana
-					["lvl"] = 110,
-					["classes"] = { DRUID },
-					["sourceQuest"]	= 44888,	-- Aviana's Grace
 				}),
 				q(25881, {	-- Lost Wardens
 					["provider"] = { "n", 41507 },	-- Niden

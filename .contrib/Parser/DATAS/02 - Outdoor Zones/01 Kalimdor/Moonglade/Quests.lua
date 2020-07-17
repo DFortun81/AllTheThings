@@ -44,16 +44,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(128422)),	-- Reins of the Grove Warden
 					},
 				}),
-				q(45498, {	-- Let Sleeping Dogs Lie
-					["lvl"] = 110,
-					["coord"] = { 68.0, 54.8, 80 },
-					["classes"] = { DRUID },
-					["sourceQuest"]	= 44921,	-- Lone Wolf
-					["providers"] = {
-						{ "n", 120032 },	-- Thisalee Crow
-						{ "n", 120041 },	-- Druid of the Talon
-					},
-				}),
 				q(47430, {	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
 					["provider"] = { "n", 122134 },	-- Makkaw <Moonkin Festival>
 					["coord"] = { 45.4, 62.0, 80 },
@@ -64,13 +54,6 @@ _.Zones =
 							["collectible"] = false,
 						}),
 					},
-				}),
-				q(45426, {	-- Nature's Advance
-					["provider"] = { "n", 115750 },	-- Goldrinn <Ancient>
-					["lvl"] = 110,
-					["coord"] = { 69.4, 47.8, 80 },
-					["classes"] = { DRUID },
-					["sourceQuest"] = 46924,	-- The Wolf's Tale
 				}),
 				q(5526,  {	-- Shards of the Felvine
 					["u"] = REMOVED_FROM_GAME,
@@ -84,16 +67,6 @@ _.Zones =
 				q(8446, {	-- Shrouded in Nightmare
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 20644 },	-- Nightmare Engulfed Object
-				}),
-				q(45528, {	-- The Befouled Barrows
-					["lvl"] = 110,
-					["classes"] = { DRUID },
-					["coord"] = { 68.0, 54.8, 80 },
-					["sourceQuest"]	= 44921,	-- Lone Wolf
-					["providers"] = {
-						{ "n", 120032 },	-- Thisalee Crow
-						{ "n", 120041 },	-- Druid of the Talon
-					},
 				}),
 				q(28343, {	-- The Breath of Cenarius
 					["sourceQuests"] = { 28289 },	-- Moonglade Calls
@@ -128,18 +101,6 @@ _.Zones =
 					["g"] = {
 						i(65463),	-- Staff of the Green Circle
 						i(65464),	-- Staff of the Verdant Circle
-					},
-				}),
-				q(46924, {	-- The Wolf's Tale
-					["lvl"] = 110,
-					["classes"] = { DRUID },
-					["providers"] = {
-						{ "n", 120032 },	-- Thisalee Crow
-						{ "n", 120041 },	-- Druid of the Talon
-					},
-					["sourceQuests"] = {
-						45498,	-- Let Sleeping Dogs Lie
-						45528,	-- The Befouled Barrows
 					},
 				}),
 				q(29303, {	-- Tragedy and Family

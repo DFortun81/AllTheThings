@@ -470,28 +470,8 @@ _.Zones =
 					["sourceQuests"] = { 53776 },	-- To the Broken Shore
 				}),
 
-
-
-
-
-
-
-
-
-
 			-- TODO: unconfirmed or old af data that needs to be re-confirmed anyway
-				q(45425, {	-- Grovebound
-					["sourceQuests"] = { 46677 },	-- Prick of a Thistle
-					["classes"]= { DRUID },
-					["lvl"] = 110,
-					["providers"] = {
-						{ "n", 120070 },	-- Thisalee Crow
-						{ "n", 120084 },	-- Druid of the Talon
-					},
-					["g"] = {
-						i(147461),	-- Unblemished Leaf of Shaladrassil
-					},
-				}),
+
 				q(47031, {	-- Legion Threat: Highmountain
 					["isBreadcrumb"] = true,
 					["altQuests"] = { 47035 },	-- Legion Threat: The Missing Mage
@@ -545,44 +525,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
 				}),
-				q(46676, {	-- Nature's Touch
-					["lvl"] = 110,
-					["classes"]= { DRUID },
-					["sourceQuests"]	= { 46674 },	-- The Preservation of Nature
-					["providers"] = {
-						{ "n", 120070 },	-- Thisalee Crow
-						{ "n", 120084 },	-- Druid of the Talon
-					},
-				}),
-				q(46677, {	-- Prick of a Thistle
-					["lvl"] = 110,
-					["classes"]= { DRUID },
-					["providers"] = {
-						{ "n", 120070 },	-- Thisalee Crow
-						{ "n", 120084 },	-- Druid of the Talon
-					},
-					["sourceQuests"] = {
-						46676,	-- Nature's Touch
-						46675,	-- To Track a Demon
-					},
-				}),
 				q(42074, {	-- Return of the Light
 					["provider"] = { "n", 106011 },	-- Jace Darkweaver
 					["classes"] = { PRIEST },
-				}),
-				q(46317, {	-- Talon's Call
-					["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
-					["sourceQuests"] = { 46246 },	-- Strike Them Down
-					["classes"] = { DRUID },
-				}),
-				q(46675, {	-- To Track a Demon
-					["lvl"] = 110,
-					["classes"]= { DRUID },
-					["sourceQuests"] = { 46674 },	-- The Preservation of Nature
-					["providers"] = {
-						{ "n", 120070 },	-- Thisalee Crow
-						{ "n", 120084 },	-- Druid of the Talon
-					},
 				}),
 				--[[
 				q(45571),	-- A Bit of Espionage
@@ -714,7 +659,6 @@ _.Zones =
 				}),
 				q(45345),	-- Mischievous Sprites
 				q(45827),	-- Monk
-				q(46676),	-- Nature's Touch
 				q(44264),	-- Neltharion's Lair
 				q(44265),	-- Neltharion's Lair
 				q(43571),	-- Neltharion's Lair: Braid of the Underking
