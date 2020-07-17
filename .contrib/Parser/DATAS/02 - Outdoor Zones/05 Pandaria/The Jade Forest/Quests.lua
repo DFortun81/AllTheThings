@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -110,10 +111,7 @@ _.Zones =
 					},
 				}),
 				q(29753, {	-- Back to Nature
-					["sourceQuests"] = {
-						29752,	-- The Wayward Dead
-						29750,	-- Vessels of the Spirit
-					},
+					["sourceQuests"] = { 29750 },	-- Vessels of the Spirit
 					["provider"] = { "n", 55614 },	-- Pei-Zhi
 					["coord"] = { 44.2, 15.0, 371 },
 				}),
@@ -510,7 +508,7 @@ _.Zones =
 				q(29751, {	-- Ritual Artifacts
 					["sourceQuests"] = { 29749 },	-- An Urgent Plea
 					["provider"] = { "n", 55614 },	-- Pei-Zhi
-					["coord"] = { 44.2, 15.0, 371 }, 
+					["coord"] = { 44.2, 15.0, 371 },
 				}),
 				q(29885, {	-- Road Rations
 					["sourceQuests"]  = { 29562 },	-- Jailbreak
@@ -786,7 +784,7 @@ _.Zones =
 				q(29752, {	-- The Wayward Dead
 					["sourceQuests"] = { 29749 },	-- An Urgent Plea
 					["provider"] = { "n", 55614 },	-- Pei-Zhi
-					["coord"] = { 44.2, 15.0, 371 }, 
+					["coord"] = { 44.2, 15.0, 371 },
 				}),
 				q(29555, {	-- The White Pawn
 					["sourceQuests"] = { 31745 },	-- Onward and Inward
@@ -870,7 +868,7 @@ _.Zones =
 				q(29750, {	-- Vessels of the Spirit
 					["sourceQuests"] = { 29749 },	-- An Urgent Plea
 					["provider"] = { "n", 55614 },	-- Pei-Zhi
-					["coord"] = { 44.2, 15.0, 371 }, 
+					["coord"] = { 44.2, 15.0, 371 },
 				}),
 				q(31734, {	-- Welcome Wagons
 					["sourceQuests"] = { 31733 },	-- Touching Ground
@@ -920,33 +918,33 @@ _.Zones =
 					["sourceQuests"] = { 29632 },	-- Becoming Battle-Ready
 					["coord"] = { 43.2, 24.7, 371 },
 				}),
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-	--[[	
-					["sourceQuests"] = {  },	-- 
-					["provider"] = { "n",  },	-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	--[[
+					["sourceQuests"] = {  },	--
+					["provider"] = { "n",  },	--
 					["coord"] = { , , 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				
+
 					--]]
-				
-				
-				
-				
-				
+
+
+
+
+
 	ach(6300, {	-- Upjade Complete [Alliance]
 		["races"] = ALLIANCE_ONLY,	-- Alliance
 		["g"] = {
@@ -1000,12 +998,12 @@ _.Zones =
 			}),
 		},
 	}),
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 				q(30149, {	-- A Feast for the Senses
 					["provider"] = { "n", 58413 },	-- Jenova Longeye
 					["isDaily"] = true,
@@ -1195,8 +1193,8 @@ _.Zones =
 				}),
 				q(30498, {	-- Get Back Here!
 					-- horde equivalent is a breadcrumb, so this almost certainly is too
-					-- probably the same sourceQuest as the horde equivalent
-					--["sourceQuests"] = { 30000 },	-- The Jade Serpent
+					["cost"] = { { "i", 86068, 1 }, },	-- Alliance Missive
+					["sourceQuests"] = { 30000 },	-- The Jade Serpent
 					["provider"] = { "n", 57242 },	-- Elder Sage Wind-Yi
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1426,7 +1424,7 @@ _.Zones =
 					["coord"] = { 54.8, 45.3, 371 },
 				}),
 				q(30139, {	-- The Rider's Journey (blue egg)
-					-- picked the blue and got this one, but some notes indicate all colors now grant this quest. 
+					-- picked the blue and got this one, but some notes indicate all colors now grant this quest.
 					-- verify if picking green/yellow gives their respective quest or if they all grant this one
 					["sourceQuests"] = { 30138 },	-- Choosing the One
 					["provider"] = { "n", 58225 },	-- Instructor Tong
@@ -1640,6 +1638,7 @@ _.Zones =
 				q(30499, {	-- Get Back Here!
 					["sourceQuests"] = { 30000 },	-- The Jade Serpent
 					["provider"] = { "n", 57242 },	-- Elder Sage Wind-Yi
+					["cost"] = { { "i", 86067, 1 }, },	-- Horde Missive
 					["races"] = HORDE_ONLY,
 					["coord"] = { 55.8, 57.0, 371 },
 					["isBreadcrumb"] = true,
@@ -1867,7 +1866,7 @@ _.Zones =
 				}),
 				q(31774, {	-- Seeking Zin'jun
 					["sourceQuests"] = {
-						31771,	-- Face to Face With Consequence, 
+						31771,	-- Face to Face With Consequence,
 						31773,	-- Prowler Problems
 						29694,	-- Regroup!
 						31770,	-- You're Either With Us Or...

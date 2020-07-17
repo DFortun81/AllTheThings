@@ -1,7 +1,8 @@
 ---------------------------------------------
 --     S E C R E T S     M O D U L E       --
 ---------------------------------------------
-_.Secrets = 
+
+_.Secrets =
 {
 	n(159783, { 	-- Jenafur
 		["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nThis secret is a work in progress!",

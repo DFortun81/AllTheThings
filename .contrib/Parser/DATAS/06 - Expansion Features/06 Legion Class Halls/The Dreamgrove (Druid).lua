@@ -1,16 +1,17 @@
 ---------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 ---------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
-		cl(11, {	-- The Dreamgrove (Druid)
-			["classes"] = { 11 },
+		cl(DRUID, {	-- The Dreamgrove (Druid)
+			["classes"] = { DRUID },
 			["lvl"] = 98,
 			["mapID"] = 747,	-- The Dreamgrove (Druid)
 			["g"] = {
 				o(253161, {	-- Grove Vine
-					["classes"] = {11},
+					["classes"] = { DRUID },
 					["description"] = "|c808080FAThese pets are obtained by picking them from the|r |cFFFFD700Evergreen|r |c808080FAclass hall ability that druids get on Tier 2.\nOnce the ability is learned you will gain access to two plots where you grow plants every three days and it will randomly pick amongst six plots.  When Grove Vine spawns it has a chance for these two pets.|r",
 					["g"] = {
 						i(139554, {	-- Acorn of the Endless
@@ -393,7 +394,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42036 },	-- Idol of the Wilds
 						["description"] = "Feral stone: Shapeshift into cat form and use Prowl.\nRestoration stone: Heal the sampling infront of the stone.\nBalance stone: Target the candles and use Moonfire.\nGuardian stone: Just be a Bear.",
 						["maps"] = { 747 },	-- The Dreamway
-					}),	
+					}),
 					q(40645, {	-- To The Dreamgrove
 						["classes"] = { DRUID },
 						["lvl"] = 98,
@@ -431,7 +432,7 @@ _.ExpansionFeatures =
 						["coord"] = { 46.0, 51.1, 747 },
 						["sourceQuests"] = { 41332 },	-- Ascending The Circle
 						["maps"] = { 747 },
-					}),					
+					}),
 					-- Restoration Artifact
 					q(40649, {	-- Meet with Mylune
 						["provider"] = { "n", 103832 },	-- Keeper Remulos
@@ -625,7 +626,7 @@ _.ExpansionFeatures =
 						["classes"] = { DRUID },
 						["lvl"] = 98,
 						["maps"] = { 116 },	-- Grizzly Hills
-					}),					
+					}),
 					q(41790, {	-- The First Trial of Ursol
 						["provider"] = { "n", 104385 },	-- Ursol
 						["coord"] = { 50.5, 37.6, 116 },
@@ -633,7 +634,7 @@ _.ExpansionFeatures =
 						["classes"] = { DRUID },
 						["lvl"] = 98,
 						["maps"] = { 116 },	-- Grizzly Hills
-					}),	
+					}),
 					q(41791, {	-- The Second Trial of Ursol
 						["provider"] = { "n", 104385 },	-- Ursol
 						["coord"] = { 50.5, 37.6, 116 },
@@ -641,7 +642,7 @@ _.ExpansionFeatures =
 						["classes"] = { DRUID },
 						["lvl"] = 98,
 						["maps"] = { 116 },	-- Grizzly Hills
-					}),	
+					}),
 					q(41792, {	-- The Third Trial of Ursol
 						["provider"] = { "n", 104385 },	-- Ursol
 						["coord"] = { 50.5, 37.6, 116 },
@@ -649,7 +650,7 @@ _.ExpansionFeatures =
 						["classes"] = { DRUID },
 						["lvl"] = 98,
 						["maps"] = { 116 },	-- Grizzly Hills
-					}),	
+					}),
 					q(40647, {	-- When Dreams Become Nightmares
 						["provider"] = { "n", 104535 },	-- Lea Stonepaw
 						["coord"] = { 51.3, 36.8, 116 },
@@ -790,7 +791,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(999),	-- Thisalee Crow
 						},
-					}),											
+					}),
 				}),
 				n(98000, {	-- Scouting Map
 					["g"] = {
@@ -873,7 +874,7 @@ _.ExpansionFeatures =
 									["questID"] = 44329,	-- Owlcat Stone Activate [Duskwood]
 									["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
 									["icon"] = "Interface\\Icons\\achievement_zone_duskwood",
-									["coords"] = {									
+									["coords"] = {
 										{ 42.0, 38.0, 47 },
 										{ 43.0, 38.0, 47 },
 										{ 43.7, 41.9, 47 },
@@ -975,7 +976,7 @@ _.ExpansionFeatures =
 						}),
 						n(113663, {	-- Ela'lothen <The Moonspirit>
 							["description"] = "Turn on \"Show Incomplete Quests\" to see which stones you are still missing.  Each quest has a descripton added to it on it's location.\n\nOnce all 3 of the Owlcat stones are activated, you will be able to see Ela'lothen. Type /sit at him for the Feather of the Moonspirit to appear in your inventory.",
-							["sourceQuests"] = { 44330, 44331, 44332 },	-- 
+							["sourceQuests"] = { 44330, 44331, 44332 },	--
 							["g"] = {
 								i(139552, {	-- Feather of the Moonspirit
 									artifact(830),	-- Feral Druid Hidden Artifact Appearance

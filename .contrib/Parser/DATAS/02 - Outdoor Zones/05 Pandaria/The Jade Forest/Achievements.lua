@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -24,10 +25,16 @@ _.Zones =
 				ach(7291),	-- In a Trail of Smoke
 				ach(7284),	-- Is Another Man's Treasure
 				ach(7997),	-- Riches of Pandaria
-				ach(7289),	-- Shadow Hopper (Jade Forest)
+				ach(7289),	-- Shadow Hopper
 				ach(6754, {	-- The Dark Heart of the Mogu
-					crit(3, {	-- Spirit Binders (Jade Forest)
+					crit(3, {	-- Spirit Binders
 						["coord"] = { 42.26, 17.46, 371 },
+					}),
+				}),
+				ach(6855, {	-- The Seven Burdens of Shaohao
+					crit(1),	-- The Emperor's Burden - Part 1
+					crit(3, {	-- The Emperor's Burden - Part 3
+						["coord"] = { 55.88, 56.84, 371 },
 					}),
 				}),
 				ach(6300, {	-- Upjade Complete [Alliance]
@@ -40,10 +47,10 @@ _.Zones =
 							["sourceQuests"] = { 29894 },	-- Spirits of the Water
 						}),
 						crit(3,  {	-- The White Pawn
-						--	["sourceQuests"] = {  },	-- 
+						--	["sourceQuests"] = {  },	--
 						}),
 						crit(4,  {	-- Pearlfin Village
-						--	["sourceQuests"] = {  },	-- 
+						--	["sourceQuests"] = {  },	--
 						}),
 						crit(5,  {	-- Dawn's Blossom
 							["sourceQuests"] = {

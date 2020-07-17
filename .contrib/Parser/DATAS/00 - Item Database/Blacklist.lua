@@ -70,8 +70,10 @@ i(171987);	-- Champions of Azeroth Survival Kit
 i(6351);	-- Dented Crate
 i(2460);	-- Elixir of Tongues
 i(13874);	-- Heavy Crate
+i(72201);	-- Plump Intestines
 i(9316);	-- Prismatic Punch Card
 i(6357);	-- Sealed Crate
+i(88496);	-- Sealed Crate
 i(67495);	-- Strange Bloated Stomach
 i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate

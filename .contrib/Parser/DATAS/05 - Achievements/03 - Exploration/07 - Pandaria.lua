@@ -382,7 +382,9 @@ _.Achievements =
 					ach(6855, {	-- The Seven Burdens of Shaohao
 						crit(1),	-- The Emperor's Burden - Part 1 (Jade Forest)
 						crit(2),	-- The Emperor's Burden - Part 2 (Kun-Lai Summit)
-						crit(3),	-- The Emperor's Burden - Part 3 (Jade Forest)
+						crit(3, {	-- The Emperor's Burden - Part 3 (Jade Forest)
+							["coord"] = { 55.88, 56.84, 371 },
+						}),
 						crit(4),	-- The Emperor's Burden - Part 4 (Krasarang Wilds)
 						crit(5),	-- The Emperor's Burden - Part 5 (Townlong Steppes)
 						crit(6),	-- The Emperor's Burden - Part 6 (Kun-Lai Summit)
