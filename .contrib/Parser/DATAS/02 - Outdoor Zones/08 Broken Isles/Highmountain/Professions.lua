@@ -363,7 +363,7 @@ _.Zones =
 					}),
 					q(40185, {	-- Shoulder the Burden
 						["g"] = {
-							i(137870),	-- Recipe: Warhide Shoulderguard (Rank 2)
+							recipe(194697),	-- Recipe: Warhide Shoulderguard (Rank 1)
 						},
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 					}),

@@ -1304,7 +1304,7 @@ _.NeverImplemented =
 		q(47091),	-- Si'vash bonus roll
 		q(44510),	-- The Soultakers killID
 		q(44905),	-- The Soultakers bonus roll
-	--	q(),	-- Withered J'im killID
+		q(44511),	-- Withered J'im killID
 		q(44906),	-- Withered J'im bonus roll
 
 	--	Invasions
@@ -2272,6 +2272,7 @@ _.NeverImplemented =
 		q(57083),	-- Wayward Algan Benthic loot
 		q(57166),	-- triggered when completing #55891, "Champion Aldrantiss, Defender of Her Kingdom," in nazjatar
 		q(57165),	-- triggered when completing #55892, "Champion Eldanar, Shield of Her Glory," in nazjatar
+		q(57168),	-- triggered when completing #55889, "Champion Kyx'zhul the Deepspeaker," in nazjatar
 		q(57140),	-- pretty sure this is for looting Ancient Reefwalker Bark
 		q(57169),	-- triggered when completing WQ to kill Alzana, Arrow of Thunder (not WQ ID)
 	--	PVP
