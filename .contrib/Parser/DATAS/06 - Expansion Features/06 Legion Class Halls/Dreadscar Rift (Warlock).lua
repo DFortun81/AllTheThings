@@ -180,6 +180,9 @@ _.ExpansionFeatures =
 						["lvl"] = 101,
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 					}),
+					q(46940, {	-- Using Lost Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(40495, {	-- Ulthalesh, the Deadwind Harvester
 						["sourceQuests"] = { 
 							40684,	-- The Tome of Blighted Implements (if this artifact is picked first)

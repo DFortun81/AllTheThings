@@ -425,6 +425,9 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 44431 },	-- More Weapons of Old
 						["classes"] = { DRUID },
 					}),
+					q(46940, {	-- Using Lost Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(40652, {	-- Word on the Winds
 						["classes"] = { DRUID },
 						["lvl"] = 98,

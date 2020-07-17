@@ -271,6 +271,9 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 						["maps"] = { 120 },	-- The Storm Peaks
 					}),
+					q(46940, {	-- Using Lost Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 				}),
 				--[[
 				n(102669, {	-- Scouting Map

@@ -323,6 +323,7 @@ _.Zones =
 						["coord"] = { 40.1, 25.6, 831 },
 					}),
 					q(48912, {	-- Supplying the Antoran Campaign
+						["sourceQuests"] = { 48448 },	-- Hindering the Legion War Machine
 						["isWeekly"] = true,
 						["g"] = {
 							i(152097),	-- Lightforged Bulwark
@@ -335,6 +336,11 @@ _.Zones =
 					}),
 					q(49014, {	-- The Burning Throne
 						["sourceQuests"] = { 48559 },	-- An Oferring of Light
+						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+						["coord"] = { 40.1, 25.2, 831 },
+					}),
+					q(48203, {	-- The Burning Throne
+						["sourceQuests"] = { 47654 },	-- An Oferring of Light
 						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
 						["coord"] = { 40.1, 25.2, 831 },
 					}),

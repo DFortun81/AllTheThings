@@ -8,7 +8,8 @@ _.Zones =
 			n(QUESTS, {
 				q(32413, {	-- A Return to Krasarang
 					["provider"] = { "n", 68586 },	-- Grand Magister Rommath
-					["races"] = HORDE_ONLY,
+					["races"] = { BLOODELF, ORC},
+					["classes"] = { WARRIOR, WARLOCK },
 				}),
 				--[[
 				q(32406, {	-- A Tactical Assault

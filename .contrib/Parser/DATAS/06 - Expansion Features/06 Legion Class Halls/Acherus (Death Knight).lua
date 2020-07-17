@@ -29,6 +29,9 @@ _.ExpansionFeatures =
 					q(46813, {	-- The Lost Glacier
 						i(142231),	-- Decaying Reins of the Vilebrood Vanquisher
 					}),
+					q(46940, {	-- Using Lost Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(44217, {	-- Armor Fit For A Deathlord
 						i(139676),	-- Head
 					}),

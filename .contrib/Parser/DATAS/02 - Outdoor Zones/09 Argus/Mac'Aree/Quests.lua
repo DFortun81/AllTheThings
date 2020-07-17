@@ -77,6 +77,10 @@ _.Zones =
 					["provider"] = { "n", 121597 },	-- Locus-Walker
 					["coord"] = { 32.0, 37.4, 882 },
 				}),
+				q(48654, {	-- Beneath Oronaar
+					["provider"] = { "n", 121230 },	-- Alleria Windrunner
+					["sourceQuests"] = { 48445 },	-- The Ruins of Oronaar
+				}),
 				q(47066, {	-- Consecrating Ground
 					["sourceQuests"] = {
 						46818,	-- Defenseless and Afraid
@@ -145,10 +149,21 @@ _.Zones =
 					["provider"] = { "n", 123668 },	-- Captain Fareeya
 					["coord"] = { 62.7, 39.4, 882 },
 				}),
+				q(48446, {	-- Relics of the Ancient Eredar
+					["provider"] = { "n", 121230 },	-- Alleria Windrunner
+					["sourceQuests"] = { 48445 },	-- The Ruins of Oronaar
+				}),
 				q(47416, {	-- Shadow of the Triumvirate
 					["sourceQuests"] = { 47856 },	-- Across the Universe
 					["provider"] = { "n", 120533 },	-- Prophet Velen
 					["coord"] = { 50.0, 18.1, 882 },
+				}),
+				q(48447, {	-- Shadowguard Dispersion
+					["provider"] = { "n", 121230 },	-- Alleria Windrunner
+					["sourceQuests"] = { 
+						48446,	-- Relics of the Ancient Eredar
+						48654,	-- Beneath Oronaar
+					},
 				}),
 				q(47217, {	-- Sources of Darkness
 					["sourceQuests"] = { 47203 },	-- Throwing Shade
@@ -194,6 +209,10 @@ _.Zones =
 					["provider"] = { "n", 121230 },	-- Alleria Windrunner
 					["coord"] = { 43.5, 67.5, 882 },
 				}),
+				q(48445, {	-- The Ruins of Oronaar
+					["provider"] = { "n", 121230 },	-- Alleria Windrunner
+					["sourceQuests"] = { 48443 },	-- Supplying Krokuun
+				}),
 				q(47218, {	-- The Shadowguard Incursion
 					["sourceQuests"] = { 47203 },	-- Throwing Shade
 					["provider"] = { "n", 121597 },	-- Locus-Walker
@@ -213,6 +232,10 @@ _.Zones =
 					["coord"] = { 43.8, 60.8, 882 },
 					["isWeekly"] = true,
 					["provider"] = { "n", 127037 },	-- Nabiru
+					["sourceQuests"] = { 
+						48446,	-- Relics of the Ancient Eredar
+						48654,	-- Beneath Oronaar
+					},
 				}),
 				q(47855, {	-- What Might Have Been
 					["sourceQuests"] = {
@@ -238,16 +261,13 @@ _.Zones =
 				q(48642),	-- Argussian Reach
 				q(48639),	-- Army of the Light
 				q(48039),	-- Balancing the Break
-				q(48654),	-- Beneath Oronaar
 				q(48605),	-- Commander's Downfall
 				q(48038),	-- Don't Just Pick At It
 				q(48055),	-- Empyrial Strength
 				q(48034),	-- Empyrium Deposit Chunk
 				q(48037),	-- Empyrium Seam Chunk
-				q(48601),	-- Felfire Shattering
 				q(48230),	-- Fragment of the Past
 				q(48636),	-- Fueling the Antoran Campaign
-				q(48448),	-- Hindering the Legion War Machine
 				q(49293),	-- Invasion Onslaught
 				q(48668),	-- Lightforged Beacon: City Center
 				q(48074),	-- Looming Over Me
@@ -255,17 +275,12 @@ _.Zones =
 				q(48974),	-- Paragon of the Army of the Light
 				q(48036),	-- Precision Perfected
 				q(48271),	-- Recovering the Pieces
-				q(48446),	-- Relics of the Ancient Eredar
-				q(48447),	-- Shadowguard Dispersion
 				q(48976),	-- Supplies From the Argussian Reach
 				q(48977),	-- Supplies From the Army of the Light
-				q(48912),	-- Supplying the Antoran Campaign
 				q(48040),	-- Tainted Scraps
-				q(48600),	-- Take the Edge Off
 				q(48864),	-- The Broken Blacksmith
 				q(48261),	-- The Power to Reforge
 				q(49445),	-- The Prime Exchange
-				q(48445),	-- The Ruins of Oronaar
 				q(48277),	-- The Speaker Seeks
 				q(48069),	-- The Wrench Calls
 				q(48632),	-- Void Extract

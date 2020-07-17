@@ -579,6 +579,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 40793 },	-- A Matter of Planning
 					}),
+					q(46940, {	-- Using Lost Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(41853, {	-- Zero to Hiro
 						["classes"] = { MONK },
 						["lvl"] = 110,

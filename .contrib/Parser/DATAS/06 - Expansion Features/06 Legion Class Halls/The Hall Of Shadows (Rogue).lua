@@ -604,6 +604,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 41920,	-- A Matter of Finesse
 					}),
+					q(46940, {	-- Using Lost Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(47591, {	-- Wanna Buy a Lamp?
 						["coord"] = { 45.4, 27.6, 626 },
 						["classes"] = { ROGUE },
