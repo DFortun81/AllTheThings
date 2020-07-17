@@ -1133,6 +1133,8 @@ _.NeverImplemented =
 					q(43356),	-- Gathering the Dreamweavers: Talza
 					q(43357),	-- Gathering the Dreamweavers: Graham Silverclaw
 					q(44642),	-- Tracking Quest: 7.0 Class Hall - Druid - Pacing Mission 1A. Triggers when completing mission table quest (Sampling the Nightmare) for Sampling the Nightmare (42032)
+					q(42361),	-- Tracking Quest: Chose Sylendra - Part of Defenders of the Dream (42050)
+					q(42363),	-- Tracking Quest: Chose Mylune - Part of Defenders of the Dream (42050)
 
 				-- Hunter Order Hall
 					q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
