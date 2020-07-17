@@ -1,6 +1,7 @@
----------------------------------------------------------------------------
---         N E V E R       I M P L E M E N T E D       M O D U L E      	--
----------------------------------------------------------------------------
+---------------------------------------------------------------
+--     N E V E R    I M P L E M E N T E D    M O D U L E     --
+---------------------------------------------------------------
+
 _.NeverImplemented =
 {
 	n(-10052, {	-- BFA - Stuff that might gets added later duo changes/hotfixes/patches and/or similar
@@ -39,7 +40,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(163436)),	-- Honorbound Outrider's Faceguard
 		un(NEVER_IMPLEMENTED, i(163433)),	-- Honorbound Outrider's Mantle
 		un(NEVER_IMPLEMENTED, i(163440)),	-- Honorbound Outrider's Belt
-		
+
 		-- Cloth Blue Warfront Pieces
 		un(NEVER_IMPLEMENTED, i(163340)),	-- 7th Legionnaire's Circlet
 		un(NEVER_IMPLEMENTED, i(163269)),	-- 7th Legionnaire's Mantle
@@ -47,7 +48,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(163427)),	-- Honorbound Artificer's Skullcap
 		un(NEVER_IMPLEMENTED, i(163425)),	-- Honorbound Artificer's Mantle
 		un(NEVER_IMPLEMENTED, i(163431)),	-- Honorbound Artificer's Sash
-		
+
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
 		un(NEVER_IMPLEMENTED, i(166405)),	-- Blindside (TW Vendor?)
 		un(NEVER_IMPLEMENTED, i(166364)),	-- Song of the Fallen (TW Vendor?)
@@ -60,8 +61,8 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(166358)),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform.A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
 		un(NEVER_IMPLEMENTED, i(165792)),	-- Worn Cloak (future WQ?)
 		un(NEVER_IMPLEMENTED, p(2341)),		-- Feathers (possibly tied to a quest?)
-		
-		
+
+
 		-- Scrapped Lv20 Gear (??)
 		un(NEVER_IMPLEMENTED, i(157622)),	-- Silverscope Longrifle ( Level 20 Kul Tiran Hunter Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157644)),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
@@ -81,7 +82,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(150598)),	-- Duskfall Daggers
 		un(NEVER_IMPLEMENTED, i(140704)),	-- Assassins Serrated Dagger
 		un(NEVER_IMPLEMENTED, i(150599)),	-- Assassins Serrated Dagger
-		
+
 	--	random stuff from the BFA world drop files that was commented out and cluttery, all show up as 'retrieving data'
 		i(159190),	--  Foxhollow Bracelets
 		i(159183),	--  Foxhollow Cord
@@ -96,11 +97,11 @@ _.NeverImplemented =
 		i(159165),	--  Ashvane Company Bracers
 		i(159159),	--  Ashvane Company Gauntlets
 		i(159160),	--  Ashvane Company Girdle
-		
+
 		-- patch 8.3 removed content
 		un(NEVER_IMPLEMENTED, i(173421)),	-- Black Empire Signet
 		un(NEVER_IMPLEMENTED, i(173426)),	-- Black Empire trinkets
-		
+
 		un(NEVER_IMPLEMENTED, ach(14116)),	-- All Bridges Burned
 		un(NEVER_IMPLEMENTED, ach(14121)),	-- Daring Defender
 		un(NEVER_IMPLEMENTED, ach(14113)),	-- Imagine a Dark, Dark World
@@ -290,7 +291,7 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(153938)), -- Communal Cowl
 				un(NEVER_IMPLEMENTED, i(153914)), -- Communal Medallion
 				un(NEVER_IMPLEMENTED, i(153941)), -- Communal Mantle
-				un(NEVER_IMPLEMENTED, i(153935)), -- Communal Communal Cloak of Destruction				
+				un(NEVER_IMPLEMENTED, i(153935)), -- Communal Communal Cloak of Destruction
 			}),
 			cl(9, {	-- Warlock
 				un(NEVER_IMPLEMENTED, i(32093)),	-- Chancellor's Dreadweave Gloves
@@ -353,7 +354,7 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(109379)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(147036)),	-- Fel-Stippled Legguards 								(removed Beta)
 			un(NEVER_IMPLEMENTED, i(147058)), 	-- Chaos-Calming Wristguards 							(removed Beta)
-			un(NEVER_IMPLEMENTED, i(147074)),	-- Vambraces of Resoulte Justice 
+			un(NEVER_IMPLEMENTED, i(147074)),	-- Vambraces of Resoulte Justice
 			un(NEVER_IMPLEMENTED, i(109398)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109405)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109411)),	-- Unknown
@@ -2315,14 +2316,14 @@ _.NeverImplemented =
 				["itemID"] = 12764,	-- Thorium Greatsword
 				["u"] = NEVER_IMPLEMENTED,
 			},
-			
+
 			-- Burning Crusade
 			{   	-- Plans: Elementium Shield Spike
 				["itemID"] = 66102,   	-- Plans: Elementium Shield Spike
 				["spellID"] = 0,  	 	-- This is available via the trainer, need to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
-			
+
 			-- Cataclysm
 			{	-- Plans: Cold-Forged Shank
 				["itemID"] = 66095,	-- Plans: Cold-Forged Shank
@@ -2494,7 +2495,7 @@ _.NeverImplemented =
 				["spellID"] = 0,	-- This is available via the trainer, need to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
-			
+
 			-- Mists of Pandaria
 			{	-- Lightsteel Helm
 				["itemID"] = 82911,	-- Lightsteel Helm
@@ -2584,8 +2585,8 @@ _.NeverImplemented =
 				["itemID"] = 82901,	-- Spiritguard Boots
 				["u"] = NEVER_IMPLEMENTED,
 			},
-			
-			
+
+
 			-- Warlords of Draenor
 			{	-- Draenic Steel Dagger
 				["itemID"] = 108054,	-- Draenic Steel Dagger
@@ -4074,9 +4075,9 @@ _.NeverImplemented =
 	un(NEVER_IMPLEMENTED, i(150715)),	-- Illidari Warglaive
 	un(NEVER_IMPLEMENTED, i(3738)),	-- Brewing Rod
 	un(NEVER_IMPLEMENTED, i(128824)), 	-- Tome of the Silver Hand
-	}),		
+	}),
 	-- Weapons end
-	
+
 	un(NEVER_IMPLEMENTED, i(146651)),	-- Arsenal: Gladiator's Weapons							(Never added in Game; instead was combined with Merciless)
 	un(NEVER_IMPLEMENTED, i(133018)),	-- Azsuna Packe 3 Holy 1 Unused
 	un(NEVER_IMPLEMENTED, i(138229)),	-- Nightmare Boss 3 Relic Storm

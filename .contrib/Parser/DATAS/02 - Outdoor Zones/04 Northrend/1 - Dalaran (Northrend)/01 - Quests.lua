@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, {	-- Northrend
@@ -8,7 +9,7 @@ _.Zones =
 			n(QUESTS, {
 				q(32413, {	-- A Return to Krasarang
 					["provider"] = { "n", 68586 },	-- Grand Magister Rommath
-					["races"] = { BLOODELF, ORC},
+					["races"] = { BLOODELF, ORC },
 					["classes"] = { WARRIOR, WARLOCK },
 				}),
 				--[[
