@@ -873,6 +873,7 @@ _.NeverImplemented =
 		q(36886),	-- Ogre Waygate — opening waygate in gorgrond
 		q(36294),	-- Lumber Mill — Phylarch the Evergreen first attack
 		q(36295),	-- Lumber Mill — Phylarch the Evergreen second attack
+		q(39414),	-- Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
 
 	--	TREASURES
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
@@ -1133,6 +1134,7 @@ _.NeverImplemented =
 		q(43355),	-- Gathering the Dreamweavers: Matoclaw
 		q(43356),	-- Gathering the Dreamweavers: Talza
 		q(43357),	-- Gathering the Dreamweavers: Graham Silverclaw
+		q(44642),	-- Tracking Quest: 7.0 Class Hall - Druid - Pacing Mission 1A. Triggers when completing mission table quest (Sampling the Nightmare) for Sampling the Nightmare (42032)
 
 		q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
 		q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
@@ -1232,6 +1234,8 @@ _.NeverImplemented =
 		q(38547),	-- FLAG: Demonsteel Gauntlets Crafted
 		q(38549),	-- FLAG: Demonsteel Helm Crafted
 		q(47096),	-- Broken Shore - Choice: Blacksmithing
+	-- Jewelcrafting
+		q(40557), 	-- FLAG: Clive Cozen Leave - Triggers after completing Hidden Intentions (40539)
 	--	Leatherworking
 		q(44351),	-- FLAG: Upgrade First Crafted Item - triggers when you craft the first legion armour item (may not be LW specific)
 		q(47094),	-- Broken Shore - Choice: Leatherworking (L) - triggers when you choose to craft the leather legendary at Eliezer Hammerbeard (Nether Disruptor)
@@ -1542,6 +1546,7 @@ _.NeverImplemented =
 		q(45464),	-- Eonar
 		q(48425),	-- Eonar (triggered at the same time as above)
 		q(49357),	-- Eonar (triggered at the same time as above)
+		q(49359),	-- Eonar (triggered after kill)
 		q(45463),	-- Portal Keeper Hasabel
 		q(48424),	-- Portal Keeper Hasabel (triggered at the same time as above)
 		q(45465),	-- Imonar
@@ -2238,6 +2243,7 @@ _.NeverImplemented =
 		q(56615),	-- Amethyst Spireshell first kill
 		q(56614),	-- Blightlight first kill
 		q(56887),	-- Carnivorous Lasher first kill
+		q(56888),	-- Carnivorous lasher kill
 		q(57188),	-- Carnivorous Lasher, Germinating Seafly buff (drops herbs)
 		q(57187),	-- Carnivorous Lasher Golden Seafly buff (drops gold)
 		q(57186),	-- Carnivorous Lasher, Radiant Seafly buff (drops Azerite)
