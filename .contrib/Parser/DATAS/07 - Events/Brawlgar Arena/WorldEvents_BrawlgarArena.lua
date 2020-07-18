@@ -205,6 +205,12 @@ _.WorldEvents =
 							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
 							["g"] = {
+								ach(9177, {	-- Deck Your Collection [Season 2] -- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										i(98543), -- Wraps of the Blood-Soaked Brawler -- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
+									},
+								}),
 								n(117208, {	-- a Seagull
 									i(144375, {		-- Feathered Brawler's Purse
 										i(144368),		-- Felfeather Jersey
@@ -396,13 +402,6 @@ _.WorldEvents =
 						}),
 					},
 				}),
-			}),
-			ach(9177, {	-- Deck Your Collection [Season 2] -- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
-				["u"] = REMOVED_FROM_GAME,
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					un(REMOVED_FROM_GAME, i(98543)),	-- Wraps of the Blood-Soaked Brawler -- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
-				},
 			}),
 		},
 	}),

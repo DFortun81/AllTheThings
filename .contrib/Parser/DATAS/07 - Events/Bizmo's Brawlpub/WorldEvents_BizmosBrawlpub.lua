@@ -233,6 +233,12 @@ _.WorldEvents =
 					i(143763, {	-- Bag of Chipped Dice
 						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
 						["g"] = {
+							ach(9176, {	-- Deck Your Collection [Season 2]
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									i(98543), -- Wraps of the Blood-Soaked Brawler
+								},
+							}),
 							ach(13194),		-- I Am Thrall's Complete Lack Of Surprise
 							n(117208, {		-- a Seagull
 								i(144375, {		-- Feathered Brawler's Purse
@@ -424,15 +430,6 @@ _.WorldEvents =
 						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
 					}),
 				}),
-			}),
-			ach(9176, {	-- Deck Your Collection [Season 2]
-				["u"] = REMOVED_FROM_GAME,					-- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					i(98543, {	-- Wraps of the Blood-Soaked Brawler
-						["u"] = REMOVED_FROM_GAME,			-- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
-					}),
-				},
 			}),
 		},
 	}),
