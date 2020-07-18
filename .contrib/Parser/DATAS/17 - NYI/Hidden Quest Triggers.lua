@@ -575,6 +575,7 @@ _.NeverImplemented =
 		q(31623),	-- Stormstout Brewery Challenge Mode - Gold Addition (Nth)
 		q(31622),	-- Stormstout Brewery Challenge Mode - Silver Addition (Nth)
 		q(35324),	-- Stormstout Brewery Reward Quest
+		q(35325),	-- Temple of the Jade Serpent Reward Quest (LFG)
 		q(35327),	-- Temple of the Jade Serpent Reward Quest
 		q(32898),	-- Daily Scenario Random (1st) (Mists) — normal scenario completion
 		q(32817),	-- Complete "Loyalty" Scenario — triggered when turning in "The King and the Council"
