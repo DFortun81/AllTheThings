@@ -116,6 +116,8 @@ _.GroupFinder =
 				i(92815),	-- Bladesnap Sabatons
 				i(92883),	-- Bladesnap Seal
 				i(92814),	-- Bladesnap Vambraces
+				i(93048),	-- Brewcarrier Cloak
+				i(93102),	-- Brewfather Cloak
 				i(93110),	-- Brewfather Wristwraps			— 12/4/19
 				i(89501),	-- Brewmoon Cloak
 				i(89492),	-- Brewmoon Cord

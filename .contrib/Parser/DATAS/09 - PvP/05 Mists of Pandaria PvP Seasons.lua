@@ -979,6 +979,9 @@ _.PVP =
 			}),
 		}),
 		n(-676, {	-- Tyrannical Gladiator: Season 13
+			n(-325, { -- Tabards
+				un(REMOVED_FROM_GAME, i(98162)), -- Tyrannical Gladiator's Tabard
+			}),
 		}),
 		n(-677, {	-- Grievous Gladiator: Season 14
 		}),

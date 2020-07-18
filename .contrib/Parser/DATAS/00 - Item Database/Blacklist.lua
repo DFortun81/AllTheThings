@@ -63,6 +63,12 @@ i(17410);	-- Zinfizzlex's Portable Shredder Unit
 
 
 
+-- Recipes (Not actual recipes)
+i(168326);	-- Eye of Theras
+i(127772);	-- Gemcutter Module: Haste
+
+
+
 
 -- "Toy"
 i(9282);	-- Blue Punch Card

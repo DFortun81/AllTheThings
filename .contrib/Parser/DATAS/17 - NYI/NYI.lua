@@ -680,6 +680,7 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(54687)),	-- Sentinel Breastplate
 			un(NEVER_IMPLEMENTED, i(54724)),	-- Shadowcraft Bracers
 			un(NEVER_IMPLEMENTED, i(54725)),	-- Shadowcraft Gloves
+			un(NEVER_IMPLEMENTED, i(63012)),	-- Skull Kickers
 			un(NEVER_IMPLEMENTED, i(109276)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109287)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109294)),	-- Unknown
