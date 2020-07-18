@@ -280,7 +280,7 @@ _.Achievements =
 						ach(13957, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
 						--	["u"] = 4, S3
 							["g"] = {
-								title(665, {	-- Corrupted Gladiator <Name>
+								title(411, {	-- Corrupted Gladiator <Name>
 								--	["u"] = REMOVED_FROM_GAME, -- S3
 								}),
 							},
