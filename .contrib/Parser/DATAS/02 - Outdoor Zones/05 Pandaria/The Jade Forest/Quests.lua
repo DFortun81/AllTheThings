@@ -31,6 +31,12 @@ _.Zones =
 					["provider"] = { "n", 54915 },	-- Groundskeeper Wu
 					["coord"] = { 41.6, 23.6, 371 },
 				}),
+				q(30065, {	-- Arrows of Fortune
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
+					["coord"] = { 53.8, 61.8, 371 },
+					["isDaily"] = true,
+				}),
 				q(29629, {	-- A Steady Hand
 					["sourceQuests"] = { 29627 },	-- A Proper Weapon
 					["provider"] = { "n", 54915 },	-- Groundskeeper Wu
@@ -125,6 +131,12 @@ _.Zones =
 					["provider"] = { "n", 54922 },	-- Master Stone Fist
 					["coord"] = { 43.2, 24.7, 371 },
 				}),
+				q(30063, {	-- Behind the Masks
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 57319 },	-- Elder Sage Storm-Sing
+					["coord"] = { 53.8, 61.8, 371 },
+					["isDaily"] = true,
+				}),
 				q(29747, {	-- Break the Cycle
 					["sourceQuests"] = { 29745 },	-- The Sprites' Plight
 					["provider"] = { "o", 214871 },	-- Shattered Destroyer
@@ -198,6 +210,12 @@ _.Zones =
 					["provider"] = { "n", 56222 },	-- Bold Karasshi
 					["coord"] = { 58.9, 81.7, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(30068, {	-- Flames of the Void
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
+					["coord"] = { 53.8, 61.8, 371 },
+					["isDaily"] = true,
 				}),
 				q(29639, {	-- Flying Colors (Instructor Xann)
 					["sourceQuests"] = {
@@ -300,6 +318,12 @@ _.Zones =
 					["provider"] = { "n", 54926 },	-- Xiao
 					["coord"] = { 43.1, 23.6, 371 },
 				}),
+				q(30066, {	-- Hidden Power
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
+					["coord"] = { 53.8, 61.8, 371 },
+					["isDaily"] = true,
+				}),
 				q(29556, {	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
 					["sourceQuests"] = { 31745 },	-- Onward and Inward
 					["provider"] = { "n", 66292 },	-- Sky Admiral Rogers
@@ -396,6 +420,12 @@ _.Zones =
 						i(80781),	-- Shoots of Life
 						i(80782),	-- Misty Jade Idol
 					},
+				}),
+				q(31712, {	-- Monkey Mischief
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 58228 },	-- Instructor Skythorn <Serpent Master>
+					["coord"] = { 57.6, 45.0, 371 },
+					["isDaily"] = true,
 				}),
 				q(30001, {	-- Moth-Ridden
 					["sourceQuests"] = { 29998 },	-- The Librarian's Quandary
@@ -516,6 +546,24 @@ _.Zones =
 					["coord"] = { 58.8, 81.9, 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(31714, {	-- Saving the Serpents
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 58511 },	-- Qua-Ro Whitebrow
+					["coord"] = { 57.2, 43.6, 371 },
+					["isDaily"] = true,
+				}),
+				q(30064, {	-- Saving the Sutras
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 57319 },	-- Elder Sage Storm-Sing
+					["coord"] = { 53.8, 61.8, 371 },
+					["isDaily"] = true,
+				}),
+				q(31708, {	-- Serpent's Scale
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 58511 },	-- Qua-Ro Whitebrow
+					["coord"] = { 57.2, 43.6, 371 },
+					["isDaily"] = true,
+				}),
 				q(29995, {	-- Shrine of the Dawn
 					["sourceQuests"] = { 29993 },	-- Find the Boy
 					["provider"] = { "n", 56065 },	-- Inkmaster Wei
@@ -596,6 +644,12 @@ _.Zones =
 					["provider"] = { "n", 54617 },	-- Rell Nightwind
 					["coord"] = { 46.4, 96.3, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(30006, {	-- The Darkness Around Us
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
+					["coord"] = { 53.8, 61.8, 371 },
+					["isDaily"] = true,
 				}),
 				q(29716, {	-- The Double Hozen Dare
 					["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
@@ -750,6 +804,12 @@ _.Zones =
 					["provider"] = { "n", 56346 },	-- Foreman Mann
 					["coord"] = { 50.9, 27.0, 371 },
 				}),
+				q(30067, {	-- The Shadow of Doubt
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
+					["coord"] = { 53.8, 61.8, 371 },
+					["isDaily"] = true,
+				}),
 				q(29865, {	-- The Silkwood Road
 					["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
 					["provider"] = { "n", 56062 },	-- Tzu the Ironbelly
@@ -781,6 +841,36 @@ _.Zones =
 					["provider"] = { "n", 59178 },	-- Lo Wanderbrew
 					["coord"] = { 46.6, 45.3, 371 },
 				}),
+				q(31717, {	-- The Trainer's Challenge: Ace Longpaw
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
+					["coord"] = { 57.6, 44.8, 371 },
+					["isDaily"] = true,
+				}),
+				q(31718, {	-- The Trainer's Challenge: Big Bao
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
+					["coord"] = { 57.6, 44.8, 371 },
+					["isDaily"] = true,
+				}),
+				q(31719, {	-- The Trainer's Challenge: Ningna Darkwheel
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
+					["coord"] = { 57.6, 44.8, 371 },
+					["isDaily"] = true,
+				}),
+				q(31721, {	-- The Trainer's Challenge: Qua-Ro Whitebrow
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
+					["coord"] = { 57.6, 44.8, 371 },
+					["isDaily"] = true,
+				}),
+				q(31720, {	-- The Trainer's Challenge: Suchi the Sweet
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
+					["coord"] = { 57.6, 44.8, 371 },
+					["isDaily"] = true,
+				}),
 				q(29752, {	-- The Wayward Dead
 					["sourceQuests"] = { 29749 },	-- An Urgent Plea
 					["provider"] = { "n", 55614 },	-- Pei-Zhi
@@ -802,6 +892,16 @@ _.Zones =
 					["provider"] = { "n", 54998 },	-- Apprentice Yufi
 					["coord"] = { 49.6, 45.8, 371 },
 					["isBreadcrumb"] = true,
+				}),
+				q(31710, {	-- Tiny Treats
+					["u"] = REMOVED_FROM_GAME,	-- Wowhead says it's added in 7.3.5, is it really removed?
+					["providers"] = {
+						{ "n", 65672 },	-- Your Cloud Serpent
+						{ "n", 65673 },	-- Your Cloud Serpent
+						{ "n", 65674 },	-- Your Cloud Serpent
+						{ "n", 65724 },	-- Azure Hatchling
+					},
+					["isDaily"] = true,
 				}),
 				q(29754, {	-- To Bridge Earth and Sky
 					["sourceQuests"] = {
@@ -918,103 +1018,67 @@ _.Zones =
 					["sourceQuests"] = { 29632 },	-- Becoming Battle-Ready
 					["coord"] = { 43.2, 24.7, 371 },
 				}),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	--[[
-					["sourceQuests"] = {  },	--
-					["provider"] = { "n",  },	--
-					["coord"] = { , , 371 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-
-					--]]
-
-
-
-
-
-	ach(6300, {	-- Upjade Complete [Alliance]
-		["races"] = ALLIANCE_ONLY,	-- Alliance
-		["g"] = {
-			crit(3, {	-- The White Pawn
-			}),
-			crit(4, {	-- Pearlfin Village
-				q(29903, {	-- A Perfect Match
-					["provider"] = { "n", 60970 },	-- Admiral Taylor
-					["sourceQuests"] = { 29727 },	-- SI:7 Report: Take No Prisoners
-				}),
-				q(29904, {	-- Bigger Fish to Fry
-					["provider"] = { "n", 60970 },	-- Admiral Taylor
-					["sourceQuests"] = { 29903 },	-- A Perfect Match
-				}),
-				q(29906, {	-- Carp Diem [Note: 1 of 2 Final Quest needed to trigger criteria]
-					["provider"] = { "n", 60970 },	-- Admiral Taylor
-					["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
+				ach(6300, {	-- Upjade Complete [Alliance]
+					["races"] = ALLIANCE_ONLY,	-- Alliance
 					["g"] = {
-						i(80788),	-- Jinyu Meditation Staff
-						i(80789),	-- Jinyu Divining Rod
-						i(80790),	-- Jinyu Combat Staff
-						i(80791),	-- Jinyu Greatsword
-						i(80792),	-- Jinyu Handaxe
-						i(80793),	-- Jinyu Crossbow
-						i(80794),	-- Jinyu Battleaxe
-						i(80795),	-- Jinyu Ritual Sceptar
-						i(80796),	-- Jinyu Dagger
-						i(80797),	-- Jinyu Combat Mace
+						crit(3, {	-- The White Pawn
+						}),
+						crit(4, {	-- Pearlfin Village
+							q(29903, {	-- A Perfect Match
+								["provider"] = { "n", 60970 },	-- Admiral Taylor
+								["sourceQuests"] = { 29727 },	-- SI:7 Report: Take No Prisoners
+							}),
+							q(29904, {	-- Bigger Fish to Fry
+								["provider"] = { "n", 60970 },	-- Admiral Taylor
+								["sourceQuests"] = { 29903 },	-- A Perfect Match
+							}),
+							q(29906, {	-- Carp Diem [Note: 1 of 2 Final Quest needed to trigger criteria]
+								["provider"] = { "n", 60970 },	-- Admiral Taylor
+								["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
+								["g"] = {
+									i(80788),	-- Jinyu Meditation Staff
+									i(80789),	-- Jinyu Divining Rod
+									i(80790),	-- Jinyu Combat Staff
+									i(80791),	-- Jinyu Greatsword
+									i(80792),	-- Jinyu Handaxe
+									i(80793),	-- Jinyu Crossbow
+									i(80794),	-- Jinyu Battleaxe
+									i(80795),	-- Jinyu Ritual Sceptar
+									i(80796),	-- Jinyu Dagger
+									i(80797),	-- Jinyu Combat Mace
+								},
+							}),
+							q(29905, {	-- Let Them Burn [Note: 1 of 2 Final Quest needed to trigger criteria]
+								["provider"] = { "n", 60970 },	-- Admiral Taylor
+								["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
+							}),
+						}),
+						crit(5, {	-- Dawn's Blossom
+						}),
+						crit(6, {	-- Greenstone Quarry
+						}),
+						crit(7, {	-- Tian Monastery
+						}),
+						crit(8, {	-- Terrace of Ten Thunders
+						}),
+						crit(9, {	-- The Temple of the Jade Serpent
+						}),
+						crit(10, {	-- Nectarbreeze Orchard
+						}),
+						crit(11, {	-- The Battle for the Forest
+						}),
+						crit(12, {	-- Overcoming doubt
+						}),
 					},
 				}),
-				q(29905, {	-- Let Them Burn [Note: 1 of 2 Final Quest needed to trigger criteria]
-					["provider"] = { "n", 60970 },	-- Admiral Taylor
-					["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
-				}),
-			}),
-			crit(5, {	-- Dawn's Blossom
-			}),
-			crit(6, {	-- Greenstone Quarry
-			}),
-			crit(7, {	-- Tian Monastery
-			}),
-			crit(8, {	-- Terrace of Ten Thunders
-			}),
-			crit(9, {	-- The Temple of the Jade Serpent
-			}),
-			crit(10, {	-- Nectarbreeze Orchard
-			}),
-			crit(11, {	-- The Battle for the Forest
-			}),
-			crit(12, {	-- Overcoming doubt
-			}),
-		},
-	}),
-
-
-
-
-
-
 				q(30149, {	-- A Feast for the Senses
 					["provider"] = { "n", 58413 },	-- Jenova Longeye
 					["isDaily"] = true,
 				}),
-
-
 				q(31707, {	-- A Tangled Web
 					["provider"] = { "n", 58228 },	-- Instructor Skythorn
 					["isDaily"] = true,
 				}),
-
 				q(31539, {	-- A Thing of Beauty
 					["provider"] = { "n", 56065 },	-- Inkmaster Wei
 					["requireSkill"] = INSCRIPTION,
@@ -1186,7 +1250,6 @@ _.Zones =
 					["provider"] = { "n", 58420 },	-- Instructor Windblade
 					["sourceQuests"] = { 30143 },	-- They Grow Like Weeds
 				}),
-
 				q(30147, {	-- Fragments of the Past
 					["provider"] = { "n", 58413 },	-- Jenova Longeye
 					["isDaily"] = true,
@@ -1198,7 +1261,6 @@ _.Zones =
 					["provider"] = { "n", 57242 },	-- Elder Sage Wind-Yi
 					["races"] = ALLIANCE_ONLY,
 				}),
-
 				q(30568, {	-- Helping the Cause
 					["provider"] = { "n", 55122 },	-- Admiral Taylor
 					["races"] = ALLIANCE_ONLY,
@@ -1209,7 +1271,6 @@ _.Zones =
 					["coord"] = { 45.7, 43.9, 371 },
 					["isBreadcrumb"] = true,
 				}),
-
 				q(29893, {	-- Hue
 					["providers"] = {
 						{ "n", 56287 },	-- Lorewalker Cho
@@ -1247,7 +1308,6 @@ _.Zones =
 					["provider"] = { "n", 58564 },	-- Elder Anli
 					["isDaily"] = true,
 				}),
-
 				q(30648, {	-- Moving On
 					-- possibly a breadcrumb?
 					["sourceQuests"] = {
@@ -1263,12 +1323,10 @@ _.Zones =
 					["provider"] = { "n", 58564 },	-- Elder Anli
 					["isDaily"] = true,
 				}),
-
 				q(31702, {	-- On The Prowl
 					["provider"] = { "n", 58564 },	-- Elder Anli
 					["isDaily"] = true,
 				}),
-
 				q(31784, {	-- Onyx To Goodness
 					["provider"] = { "n", 58564 },	-- Elder Anli
 					["repeatable"] = true,
@@ -1348,7 +1406,6 @@ _.Zones =
 					["provider"] = { "n", 58413 },	-- Jenova Longeye
 					["isDaily"] = true,
 				}),
-
 				q(31699, {	-- Sprite Fright
 					["provider"] = { "n", 58509 },	-- Ningna Darkwheel
 					["isDaily"] = true,
@@ -1488,13 +1545,6 @@ _.Zones =
 					["provider"] = { "n", 56348 },	-- Toya
 					["coord"] = { 47.1, 46.1, 371 },
 				}),
-
-
-
-
-
-
-
 				q(31132, {	-- A Mile in My Shoes
 					["sourceQuests"] = { 31121 },	-- Stay a While, and Listen
 					["provider"] = { "n", 55768 },	-- Lorewalker Cho
@@ -2012,42 +2062,6 @@ _.Zones =
 					["coord"] = { 33.6, 10.6, 371 },
 					["races"] = HORDE_ONLY,
 				}),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---[[				These quests were removed
-				--
-				q(30065)	-- Arrows of Fortune
-				q(30063)	-- Behind the Masks
-				q(30068)	-- Flames of the Void
-				q(30066)	-- Hidden Power
-				q(31712)	-- Monkey Mischief
-				q(31716)	-- Pooped
-				q(31714)	-- Saving the Serpents
-				q(30064)	-- Saving the Sutras
-				q(31708)	-- Serpent's Scale
-				q(30006)	-- The Darkness Around Us
-				q(30067)	-- The Shadow of Doubt
-				q(31717)	-- The Trainer's Challenge: Ace Longpaw
-				q(31718)	-- The Trainer's Challenge: Big Bao
-				q(31719)	-- The Trainer's Challenge: Ningna Darkwheel
-				q(31721)	-- The Trainer's Challenge: Qua-Ro Whitebrow
-				q(31720)	-- The Trainer's Challenge: Suchi the Sweet
-				q(31710)	-- Tiny Treats
-				--
---]]
 			}),
 		}),
 	}),

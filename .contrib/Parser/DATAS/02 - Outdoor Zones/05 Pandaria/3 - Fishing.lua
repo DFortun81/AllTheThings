@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -13,6 +14,7 @@ _.Zones =
 				418,	-- Krasarang Wilds
 				379,	-- Kun-Lai Summit
 				371,	-- The Jade Forest
+				433,	-- The Veiled Star
 				554,	-- Timeless Isle
 				388,	-- Townlong Steppes
 				390,	-- Vale of Eternal Blossoms

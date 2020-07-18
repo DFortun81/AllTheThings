@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.WorldEvents =
 {
 	m(503, {	-- Brawlgar Arena
@@ -205,10 +206,10 @@ _.WorldEvents =
 							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
 							["g"] = {
-								ach(9177, {	-- Deck Your Collection [Season 2] -- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
+								ach(9177, {	-- Deck Your Collection [Season 2]
 									["races"] = HORDE_ONLY,
 									["g"] = {
-										i(98543), -- Wraps of the Blood-Soaked Brawler -- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
+										i(98543), -- Wraps of the Blood-Soaked Brawler
 									},
 								}),
 								n(117208, {	-- a Seagull

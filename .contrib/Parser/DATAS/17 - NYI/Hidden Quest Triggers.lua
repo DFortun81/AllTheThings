@@ -511,6 +511,7 @@ _.NeverImplemented =
 		q(31464),	-- Kun-lai Summit - Opposing Faction Leader Defeated - third test during "A Celestial Experience"
 		q(30647),	-- Kun-lai Summit - Tracking Quest: Opened the Golden Valley - triggers when the gates to the Vale of Eternal Blossom are opened
 		q(31807),	-- Kun-lai Summit - Tracking Quest: Opened the Golden Valley II - triggers after the dialog finishes with the 4 celestials at the gates
+		q(30453),	-- Binan Village Intro Event Tracking Event - triggered when I flew into Binan village through the Ancient Passage on my mount, even though I flew there using flight points AND I have already completed some quests there
 		q(31123),	-- Townlong Steppes - Chose Arms Warrior
 		q(31124),	-- Townlong Steppes - Chose Brewmaster
 		q(31050),	-- Townlong Steppes - Chose Fire Mage

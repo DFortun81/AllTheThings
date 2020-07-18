@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -35,7 +36,7 @@ _.Zones =
 						33230,	-- A Flash of Bronze...
 						37188,	-- A Flash of Bronze...
 						37194,	-- A Flash of Bronze...
-					},	
+					},
 				}),
 				q(30243, {	-- Mantid Under Fire
 					["coord"] = { 21.3, 71.4, 390 },
@@ -65,6 +66,10 @@ _.Zones =
 					["coord"] = { 19.0, 75.4, 390 },
 					["isDaily"] = true,
 					["provider"] = { "n", 58962 },	-- Hai-Me Heavyhands
+				}),
+				q(31095, {	-- The Dark Heart of the Mogu
+					["provider"] = { "i", 83772 },	-- The Dark Heart of the Mogu
+					["description"] = "Complete achievement with the same name and you will get the item that starts the quest in the mail.",
 				}),
 				q(31384, {	-- The Golden Lotus (A)
 					["isBreadcrumb"] = true,

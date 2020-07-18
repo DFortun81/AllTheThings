@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -806,7 +807,7 @@ _.Zones =
 				q(29871, {	-- Clever Ashyo
 					["coord"] = { 84.0, 21.1, 376 },
 					["provider"] = { "n", 56110 },	-- Xiao
-					["altQuests"] = { 29874, 29875, 29873 },	
+					["altQuests"] = { 29874, 29875, 29873 },
 				}),
 				q(29947, {	-- Crouching Carrot, Hidden Turnip
 					["sourceQuests"] = { 29945 },	-- Yellow and Red Make Orange
@@ -846,7 +847,7 @@ _.Zones =
 						i(88020),	-- Thunderfoot Heavy Pauldrons
 						i(88019),	-- Sunsong Armored Pauldrons
 					},
-				}),				
+				}),
 				q(30517, {	-- Farmer Fung's Vote I: Yak Attack
 					["description"] = "Must be revered with at least 4500 reputation with The Tillers.",
 					["coord"] = { 52.2, 48.8, 376 },
@@ -1011,13 +1012,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 84.0, 21.1, 376 },
 					["provider"] = { "n", 56110 },	-- Xiao
-					["altQuests"] = { 29875, 29873, 29871 },	
+					["altQuests"] = { 29875, 29873, 29871 },
 				}),
 				q(29875, {	-- Kang Bramblestaff
 					["races"] = HORDE_ONLY,
 					["coord"] = { 84.0, 21.1, 376 },
 					["provider"] = { "n", 56110 },	-- Xiao
-					["altQuests"] = { 29874, 29873, 29871 },	
+					["altQuests"] = { 29874, 29873, 29871 },
 				}),
 				q(29873, {	-- Ken-Ken
 					["isBreadcrumb"] = true,

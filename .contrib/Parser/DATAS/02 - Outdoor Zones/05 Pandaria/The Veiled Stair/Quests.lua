@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -19,20 +20,28 @@ _.Zones =
 						}),
 					},
 				}),
---[[
-				q(31287),	-- Educating Saurok
-				q(31286),	-- Robbing Robbers of Robbers
-				q(31611),	-- The Kun-Lai Kicker
-				q(31254, {	-- The Road to Kun-Lai
-					["races"] = ALLIANCE_ONLY,
+				q(32861, {	-- Cloak of Virtue
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 71424 },	-- Wrathion <The Black Prince>
+					["coord"] = { 73.2, 79.6, 433 },
 				}),
-				q(31255, {	-- The Road to Kun-Lai
-					["races"] = HORDE_ONLY,
+				q(31287, {	-- Educating Saurok
+					["provider"] = { "n", 63484 },	-- Len the Whisperer
+					["coord"] = { 53.51, 65.75, 433 },
 				}),
-				q(38936),	-- The Road to Kun-Lai
-				q(31285),	-- The Spring Drifter
-				q(32861),	-- Cloak of Virtue - removed from game
---]]
+				q(31286, {	-- Robbing Robbers of Robbers
+					["provider"] = { "n", 63484 },	-- Len the Whisperer
+					["coord"] = { 53.51, 65.75, 433 },
+				}),
+				q(31611, {	-- The Kun-Lai Kicker
+					["provider"] = { "n", 63367 },	-- Brewmaster Boof
+					["coord"] = { 51.90, 43.73, 433 },
+					["description"] = "If you don't see questgiver in The Veiled Star, look in the Binan Village to the north.",
+				}),
+				q(31285, {	-- The Spring Drifter
+					["provider"] = { "n", 63367 },	-- Brewmaster Boof
+					["coord"] = { 51.90, 43.73, 433 },
+				}),
 			}),
 		}),
 	}),
