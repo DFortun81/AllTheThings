@@ -30,6 +30,9 @@ _.Zones =
 					["crs"] = {
 						154991,	-- Lesser Pyroclasmic Arcanocrystal
 					},
+					["cost"] = {
+						{ "i", 169333, 1 }, -- Strange Volcanic Rock
+					},
 					["g"] = {
 						crit(3, {	-- Burning Amalgamation
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -41,6 +44,9 @@ _.Zones =
 					["description"] = "Activate Lesser Lithic (Yellow) Arcanocrystal.",
 					["crs"] = {
 						155009,	-- Lesser Lithic Arcanocrystal
+					},
+					["cost"] = {
+						{ "i", 169334, 1 }, -- Strange Oceanic Sediment
 					},
 					["g"] = {
 						crit(4, {	-- Dusty Amalgamation
@@ -55,6 +61,9 @@ _.Zones =
 						155009,	-- Lesser Lithic Arcanocrystal
 						155031,	-- Greater Lithic Arcanocrystal
 					},
+					["cost"] = {
+						{ "i", 169334, 2 }, -- Strange Oceanic Sediment
+					},
 					["g"] = {
 						crit(12, {	-- Herald of Salgos
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -68,6 +77,10 @@ _.Zones =
 						154991,	-- Lesser Pyroclasmic Arcanocrystal
 						155031,	-- Greater Lithic Arcanocrystal
 					},
+					["cost"] = {
+						{ "i", 169333, 1 }, -- Strange Volcanic Rock
+						{ "i", 169334, 1 }, -- Strange Oceanic Sediment
+					},
 					["g"] = {
 						crit(8, {	-- Moghiea
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -80,6 +93,10 @@ _.Zones =
 					["crs"] = {
 						154970,	-- Lesser Benthic Arcanocrystal
 						155025,	-- Greater Pyroclasmic Arcanocrystal
+					},
+					["cost"] = {
+						{ "i", 169332, 1 }, -- Strange Mineralized Water
+						{ "i", 169333, 1 }, -- Strange Volcanic Rock
 					},
 					["g"] = {
 						crit(6, {	-- Omus
@@ -95,6 +112,9 @@ _.Zones =
 						154970,	-- Lesser Benthic Arcanocrystal
 						154979,	-- Greater Benthic Arcanocrystal
 					},
+					["cost"] = {
+						{ "i", 169332, 2 }, -- Strange Mineralized Water
+					},
 					["g"] = {
 						crit(7, {	-- Osgen
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -107,6 +127,10 @@ _.Zones =
 					["crs"] = {
 						155009,	-- Lesser Lithic Arcanocrystal
 						155025,	-- Greater Pyroclasmic Arcanocrystal
+					},
+					["cost"] = {
+						{ "i", 169333, 1 }, -- Strange Volcanic Rock
+						{ "i", 169334, 1 }, -- Strange Oceanic Sediment
 					},
 					["g"] = {
 						crit(13, {	-- Salgos the Eternal
@@ -121,6 +145,10 @@ _.Zones =
 						155009,	-- Lesser Lithic Arcanocrystal
 						154979,	-- Greater Benthic Arcanocrystal
 					},
+					["cost"] = {
+						{ "i", 169332, 1 }, -- Strange Mineralized Water
+						{ "i", 169334, 1 }, -- Strange Oceanic Sediment
+					},
 					["g"] = {
 						crit(11, {	-- Spawn of Salgos
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -134,6 +162,9 @@ _.Zones =
 						154991,	-- Lesser Pyroclasmic Arcanocrystal
 						155025,	-- Greater Pyroclasmic Arcanocrystal
 					},
+					["cost"] = {
+						{ "i", 169333, 2 }, -- Strange Volcanic Rock
+					},
 					["g"] = {
 						crit(10, {	-- Ungormath
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -145,6 +176,9 @@ _.Zones =
 					["description"] = "Activate Lesser Benthic (Blue) Arcanocrystal.",
 					["crs"] = {
 						154970,	-- Lesser Benthic Arcanocrystal
+					},
+					["cost"] = {
+						{ "i", 169332, 1 }, -- Strange Mineralized Water
 					},
 					["g"] = {
 						crit(2, {	-- Watery Amalgamation
@@ -159,6 +193,10 @@ _.Zones =
 						154991,	-- Lesser Pyroclasmic Arcanocrystal
 						154979,	-- Greater Benthic Arcanocrystal
 					},
+					["cost"] = {
+						{ "i", 169332, 1 }, -- Strange Mineralized Water
+						{ "i", 169333, 1 }, -- Strange Volcanic Rock
+					},
 					["g"] = {
 						crit(9, {	-- Xue
 							["achievementID"] = 13699,	-- Periodic Destruction
@@ -172,6 +210,10 @@ _.Zones =
 					["crs"] = {
 						154970,	-- Lesser Benthic Arcanocrystal
 						155031,	-- Greater Lithic Arcanocrystal
+					},
+					["cost"] = {
+						{ "i", 169332, 1 }, -- Strange Mineralized Water
+						{ "i", 169334, 1 }, -- Strange Oceanic Sediment
 					},
 					["g"] = {
 						crit(5, {	-- Zomera
