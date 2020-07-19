@@ -23,10 +23,7 @@ _.Achievements =
 			}),
 			ach(7988, {			-- A Little Patience (A Little Patience)
 				["maps"] = { 487 },	-- A Little Patience
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(8319, {			-- Accelerated Archaeology (Dark Heart of Pandaria)
 				["maps"] = { 520, 521 },
@@ -37,24 +34,15 @@ _.Achievements =
 			}),
 			ach(7271, {			-- Arena of Annihilation (Arena of Annihilation)
 				["maps"] = { 480 },	-- Arena of Annihilation
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(8016, {			-- Assault on Zan'vess (Assault on Zan'vess)
 				["maps"] = { 451 },	-- Assault on Zan'vess
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7273, {			-- Beat the Heat (Arena of Annihilation)
 				["maps"] = { 480 },	-- Arena of Annihilation
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(6931, {			-- Binan Village All-Star (Brewmoon Festival)
 				["maps"] = { 452 },	-- Brewmoon Festival
@@ -66,10 +54,7 @@ _.Achievements =
 					crit(5),		-- Tian Disciple
 					crit(6),		-- Derpa Derpa
 				},
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(8316, {			-- Blood in the Snow (Blood in the Snow)
 				["maps"] = { 523 },	-- Blood in the Snow
@@ -80,24 +65,15 @@ _.Achievements =
 			}),
 			ach(6923, {			-- Brewmoon Festival (Brewmoon Festival)
 				["maps"] = { 452 },	-- Brewmoon Festival
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7989, {			-- Bubbletrapped! (A Little Patience)
 				["maps"] = { 487 },	-- A Little Patience
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7990, {			-- Cannonballer (A Little Patience)
 				["maps"] = { 487 },	-- A Little Patience
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7522, {			-- Crypt of Forgotten Kings (Crypt of Forgotten Kings)
 				["maps"] = { 481, 482 },	-- Crypt of Forgotten Kings
@@ -108,10 +84,7 @@ _.Achievements =
 			}),
 			ach(8009, {			-- Dagger in the Dark (Dagger in the Dark)
 				["maps"] = { 488, 489 },	-- Dagger in the Dark
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(8317, {			-- Dark Heart of Pandaria (Dark Heart of Pandaria)
 				["maps"] = { 520, 521 },
@@ -125,10 +98,7 @@ _.Achievements =
 					498,	-- Domination Point
 					486,	-- Lion's Landing
 				},
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7257, {			-- Don't Shake the Keg (A Brewing Storm)
 				["maps"] = { 447 },	-- A Brewing Storm
@@ -153,17 +123,11 @@ _.Achievements =
 			}),
 			ach(8017, {			-- For the Swarm (Assault on Zan'vess)
 				["maps"] = { 451 },	-- Assault on Zan'vess
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7265, {			-- Greenstone Village (Greenstone Village)
 				["maps"] = { 448 },	-- The Jade Forest (Greenstone Village)
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(8329, {			-- Heed the Weed (Blood in the Snow)
 				["maps"] = { 523 },	-- Blood in the Snow
@@ -208,10 +172,7 @@ _.Achievements =
 			}),
 			ach(7992, {			-- I Used To Love Them (A Little Patience)
 				["maps"] = { 487 },	-- A Little Patience
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7272, {			-- In the Eye of the Tiger (Arena of Annihilation)
 				["maps"] = { 480 },	-- Arena of Annihilation
@@ -220,10 +181,7 @@ _.Achievements =
 					crit(2),		-- Kill Maki Waterblade
 					crit(3),		-- Kill Satay Byu
 				},
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7275, {			-- It's a Trap! (Crypt of the Forgotten Kings)
 				["maps"] = { 481, 482 },	-- Crypt of Forgotten Kings
@@ -241,17 +199,11 @@ _.Achievements =
 			}),
 			ach(7526, 7529, {	-- Kite Fight (A, H, Theramore's Fall)
 				["maps"] = { 483 },	-- Dustwallow Marsh (Theramore's Fall)
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7239, {			-- Monkey in the Middle (Unga Ingoo)
 				["maps"] = { 450 },	-- Unga Ingoo
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7248, {			-- Monkey See, Monkey Kill (Unga Ingoo)
 				["maps"] = { 450 },	-- Unga Ingoo
@@ -264,34 +216,22 @@ _.Achievements =
 					crit(6),		-- Rik Rik
 					crit(7),		-- Protected King Unga Keg
 				},
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7987, {			-- No Egg Left Behind (Dagger in the Dark)
 				["maps"] = { 488, 489 },	-- Dagger in the Dark
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7527, 7530, {	-- No Tank You (A, H)
 				["maps"] = { 483 },	-- Dustwallow Marsh (Theramore's Fall)
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(8011, 8014, {	-- Number Five is Alive (A, H)
 				["maps"] = {
 					498,	-- Domination Point
 					486,	-- Lion's Landing
 				},
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7258, {			-- Party of Six (A Brewing Storm)
 				["maps"] = { 447 },	-- A Brewing Storm
@@ -302,10 +242,7 @@ _.Achievements =
 			}),
 			ach(7267, {			-- Perfect Delivery (Greenstone Village)
 				["maps"] = { 448 },	-- The Jade Forest (Greenstone Village)
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7385, {			-- Pub Crawl (META)
 				i(87528),		-- Honorary Brewmaster Keg
@@ -324,6 +261,7 @@ _.Achievements =
 			ach(6943), 			-- Queuing Spree
 			ach(7266, {			-- Save it for Later (Greenstone Village)
 				["maps"] = { 448 },	-- The Jade Forest (Greenstone Village)
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(6874, 7509, {	-- Scenaturday (A, H)
 				title(206),	-- <Name> the Scenaturdist
@@ -337,10 +275,7 @@ _.Achievements =
 			}),
 			ach(7231, {			-- Spill No Evil (Unga Ingoo)
 				["maps"] = { 450 },	-- Unga Ingoo
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(8295, {			-- The Few, the Proud, the Gob Squad (The Secrets of Ragefire)
 				["maps"] = { 522 },	-- The Secrets of Ragefire
@@ -351,10 +286,7 @@ _.Achievements =
 			}),
 			ach(7232, {			-- The Keg Runner (Unga Ingoo)
 				["maps"] = { 450 },	-- Unga Ingoo
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7261, {			-- The Perfect Pour (A Brewing Storm)
 				["maps"] = { 447 },	-- A Brewing Storm
@@ -372,17 +304,11 @@ _.Achievements =
 			}),
 			ach(7523, 7524, {	-- Theramore's Fall (A, H)
 				["maps"] = { 483 },	-- Dustwallow Marsh (Theramore's Fall)
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7249, {			-- Unga Ingoo (Unga Ingoo)
 				["maps"] = { 450 },	-- Unga Ingoo
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(8012, 8015, {	-- Waste Not, Want Not (A, H)
 				["maps"] = {
@@ -398,45 +324,27 @@ _.Achievements =
 					crit(6),	-- Restoration Power-Up
 					crit(7),	-- Speed Power-Up
 				},
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7984, {			-- Watery Grave (Dagger in the Dark)
 				["maps"] = { 488, 489 },	-- Dagger in the Dark
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7993, {			-- We've Been Dancin' (A Little Patience)
 				["maps"] = { 487 },	-- A Little Patience
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7991, {			-- Which Came First? (A Little Patience)
 				["maps"] = { 487 },	-- A Little Patience
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(6930, {			-- Yaungolian Barbecue (Brewmoon Festival)
 				["maps"] = { 452 },	-- Brewmoon Festival
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 			ach(7986, {			-- You Mean That Wasn't a Void Zone? (Dagger in the Dark)
 				["maps"] = { 488, 489 },	-- Dagger in the Dark
-				["crs"] = {
-					78709,	-- Lorewalker Fu <Scenario Storyteller>
-					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				},
+				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
 		}),
 	}),

@@ -1416,7 +1416,8 @@ _.Zones =
 					["sourceQuests"] = { 30048 },	-- Li Li and the Grain
 					["coord"] = { 52.7, 62.8, 376 },
 					["provider"] = { "n", 56138 },	-- Li Li
-				}),				q(31392, {	-- Temple of the White Tiger
+				}),
+				q(31392, {	-- Temple of the White Tiger
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 55.8, 51.8, 376 },
 					["provider"] = { "n", 64448 },	-- Hopsmaster Chang

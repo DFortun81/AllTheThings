@@ -221,6 +221,7 @@ _.Zones =
 			}),
 			q(49539, {	-- Warchief's Command: Valley of the Four Winds!
 				["isBreadcrumb"] = true,
+				["races"] = HORDE_ONLY,
 			}),
 			q(27718, {	-- Warchief's Command: Vashj'ir!
 				["isBreadcrumb"] = true,
