@@ -687,6 +687,7 @@ _.NeverImplemented =
 		q(35626),	-- Shadowmoon Valley - Friend of the Exarchs: Apprentice Artificer Andren selected
 		q(35629),	-- Shadowmoon Valley - Friend of the Exarchs: Vindicator Onaala selected
 		q(35628),	-- Shadowmoon Valley - Friend of the Exarchs: Rangari Chel selected
+		q(37451),	-- Shadowmoon Valley - see Qiana Moonshadow while on "Qiana Moonshadow"
 		q(34600),	-- Shadowmoon Valley - Tracking Quest: Saw Vorka, Rangari Leave
 		q(34622),	-- Shadowmoon Valley - Tracking Quest: Saw Ner'zhul Leave
 		q(33839),	-- Shadowmoon Valley - Tracking Quest: Saw Naaru Purified
