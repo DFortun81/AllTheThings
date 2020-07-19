@@ -2938,9 +2938,56 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									["achievementID"] = 8462,	-- Downfall
 									["criteriaID"] = 3,	-- Garrosh Hellscream
 								},
-								i(105861),	-- Essence of the Cursed Conqueror
-								i(105860),	-- Essence of the Cursed Protector
-								i(105862),	-- Essence of the Cursed Vanquisher
+								{	-- Essence of the Cursed Conqueror
+									["itemID"] = 105861,
+									["classes"] = {
+										2,	-- Paladin
+										5,	-- Priest
+										9,	-- Warlock
+									},
+									["sym"] = {
+										{"select", "itemID", 99672}, -- Helm of the Cursed Conqueror
+										{"select", "itemID", 99669}, -- Shoulders of the Cursed Conqueror
+										{"select", "itemID", 99678}, -- Chest of the Cursed Conqueror
+										{"select", "itemID", 99681}, -- Gauntlets of the Cursed Conqueror
+										{"select", "itemID", 99675}, -- Leggings of the Cursed Conqueror
+										{"pop"},
+									},
+								},
+								{	-- Essence of the Cursed Protector
+									["itemID"] = 105860,
+									["classes"] = {
+										3,	-- Hunter
+										10,	-- Monk
+										7,	-- Shaman
+										1,	-- Warrior
+									},
+									["sym"] = {
+										{"select", "itemID", 99673}, -- Helm of the Cursed Protector
+										{"select", "itemID", 99670}, -- Shoulders of the Cursed Protector
+										{"select", "itemID", 99679}, -- Chest of the Cursed Protector
+										{"select", "itemID", 99667}, -- Gauntlets of the Cursed Protector
+										{"select", "itemID", 99676}, -- Leggings of the Cursed Protector
+										{"pop"},
+									},
+								},
+								{	-- Essence of the Cursed Vanquisher
+									["itemID"] = 105862,
+									["classes"] = {
+										6,	-- Death Knight
+										11,	-- Druid
+										8,	-- Mage
+										4,	-- Rogue
+									},
+									["sym"] = {
+										{"select", "itemID", 99671}, -- Helm of the Cursed Vanquisher
+										{"select", "itemID", 99668}, -- Shoulders of the Cursed Vanquisher
+										{"select", "itemID", 99677}, -- Chest of the Cursed Vanquisher
+										{"select", "itemID", 99680}, -- Gauntlets of the Cursed Vanquisher
+										{"select", "itemID", 99674}, -- Leggings of the Cursed Vanquisher
+										{"pop"},
+									},
+								},
 								i(112932),	-- Kor'kron Spire of Supremacy
 								i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
 								i(112939),	-- Horned Mace of the Old Ones
@@ -4145,9 +4192,56 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					{	-- Strike!	
 						["achievementID"] = 8537,	-- Strike!
 					},
-					i(105864),	-- Essence of the Cursed Conqueror
-					i(105863),	-- Essence of the Cursed Protector
-					i(105865),	-- Essence of the Cursed Vanquisher
+					{	-- Essence of the Cursed Conqueror
+						["itemID"] = 105864,
+						["classes"] = {
+							2,	-- Paladin
+							5,	-- Priest
+							9,	-- Warlock
+						},
+						["sym"] = {
+							{"select", "itemID", 99749}, -- Helm of the Cursed Conqueror
+							{"select", "itemID", 99755}, -- Shoulders of the Cursed Conqueror
+							{"select", "itemID", 99743}, -- Chest of the Cursed Conqueror
+							{"select", "itemID", 99746}, -- Gauntlets of the Cursed Conqueror
+							{"select", "itemID", 99752}, -- Leggings of the Cursed Conqueror
+							{"pop"},
+						},
+					},
+					{	-- Essence of the Cursed Protector
+						["itemID"] = 105863,
+						["classes"] = {
+							3,	-- Hunter
+							10,	-- Monk
+							7,	-- Shaman
+							1,	-- Warrior
+						},
+						["sym"] = {
+							{"select", "itemID", 99750}, -- Helm of the Cursed Protector
+							{"select", "itemID", 99756}, -- Shoulders of the Cursed Protector
+							{"select", "itemID", 99744}, -- Chest of the Cursed Protector
+							{"select", "itemID", 99747}, -- Gauntlets of the Cursed Protector
+							{"select", "itemID", 99753}, -- Leggings of the Cursed Protector
+							{"pop"},
+						},
+					},
+					{	-- Essence of the Cursed Vanquisher
+						["itemID"] = 105865,
+						["classes"] = {
+							6,	-- Death Knight
+							11,	-- Druid
+							8,	-- Mage
+							4,	-- Rogue
+						},
+						["sym"] = {
+							{"select", "itemID", 99748}, -- Helm of the Cursed Vanquisher
+							{"select", "itemID", 99754}, -- Shoulders of the Cursed Vanquisher
+							{"select", "itemID", 99742}, -- Chest of the Cursed Vanquisher
+							{"select", "itemID", 99745}, -- Gauntlets of the Cursed Vanquisher
+							{"select", "itemID", 99751}, -- Leggings of the Cursed Vanquisher
+							{"pop"},
+						},
+					},
 					i(112932),	-- Kor'kron Spire of Supremacy
 					i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
 					i(112939),	-- Horned Mace of the Old Ones
@@ -4933,7 +5027,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99197),	-- Battleplate of the Prehistoric Marauder
 						i(99201),	-- Chestguard of the Prehistoric Marauder
 					}),
-					i(99696, {	-- Chest of the Cursed Vanquisher
+					i(99696, { -- Chest of the Cursed Vanquisher
 						i(99192),	-- Breastplate of Cyclopean Dread
 						i(99188),	-- Chestguard of Cyclopean Dread
 						i(99180),	-- Raiment of the Shattered Vale
@@ -5362,9 +5456,56 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["achievementID"] = 8462,	-- Downfall
 					}),
 					ach(8537),	-- Strike!
-					i(105858),	-- Essence of the Cursed Conqueror
-					i(105857),	-- Essence of the Cursed Protector
-					i(105859),	-- Essence of the Cursed Vanquisher
+					{	-- Essence of the Cursed Conqueror
+						["itemID"] = 105858,
+						["classes"] = {
+							2,	-- Paladin
+							5,	-- Priest
+							9,	-- Warlock
+						},
+						["sym"] = {
+							{"select", "itemID", 99689}, -- Helm of the Cursed Conqueror
+							{"select", "itemID", 99690}, -- Shoulders of the Cursed Conqueror
+							{"select", "itemID", 99686}, -- Chest of the Cursed Conqueror
+							{"select", "itemID", 99687}, -- Gauntlets of the Cursed Conqueror
+							{"select", "itemID", 99688}, -- Leggings of the Cursed Conqueror
+							{"pop"},
+						},
+					},
+					{	-- Essence of the Cursed Protector
+						["itemID"] = 105857,
+						["classes"] = {
+							3,	-- Hunter
+							10,	-- Monk
+							7,	-- Shaman
+							1,	-- Warrior
+						},
+						["sym"] = {
+							{"select", "itemID", 99694}, -- Helm of the Cursed Protector
+							{"select", "itemID", 99695}, -- Shoulders of the Cursed Protector
+							{"select", "itemID", 99691}, -- Chest of the Cursed Protector
+							{"select", "itemID", 99692}, -- Gauntlets of the Cursed Protector
+							{"select", "itemID", 99693}, -- Leggings of the Cursed Protector
+							{"pop"},
+						},
+					},
+					{	-- Essence of the Cursed Vanquisher
+						["itemID"] = 105859,
+						["classes"] = {
+							6,	-- Death Knight
+							11,	-- Druid
+							8,	-- Mage
+							4,	-- Rogue
+						},
+						["sym"] = {
+							{"select", "itemID", 99683}, -- Helm of the Cursed Vanquisher
+							{"select", "itemID", 99685}, -- Shoulders of the Cursed Vanquisher
+							{"select", "itemID", 99696}, -- Chest of the Cursed Vanquisher
+							{"select", "itemID", 99682}, -- Gauntlets of the Cursed Vanquisher
+							{"select", "itemID", 99684}, -- Leggings of the Cursed Vanquisher
+							{"pop"},
+						},
+					},
 					i(112935, {	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
 						["bonusID"] = 449,
 					}),
@@ -6740,238 +6881,54 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						title(214),	-- ,Hellscream's Downfall
 					}),
 					ach(8537),	-- Strike!
-					{	-- Essence of the Cursed Conqueror [Priest / Warlock / Priest]
-						["itemID"] = 105867,	-- Essence of the Cursed Conqueror
+					{	-- Essence of the Cursed Conqueror
+						["itemID"] = 105867,
 						["classes"] = {
+							2,	-- Paladin
 							5,	-- Priest
 							9,	-- Warlock
-							2,	-- Paladin
 						},
-						["g"] = {
-							--[[
-							{	-- Chest of the Cursed Conqueror [Priest / Warlock / Priest]
-								["itemID"] = 99715,	-- Chest of the Cursed Conqueror
-								["classes"] = {
-									5,	-- Priest
-									9,	-- Warlock
-									2,	-- Paladin
-								},
-								["g"] = {
-									{	-- Raiment of the Ternion Glory
-										["itemID"] = 99362,	-- Raiment of the Ternion Glory
-									},
-									{	-- Robes of the Ternion Glory
-										["itemID"] = 99357,	-- Robes of the Ternion Glory
-									},
-									{	-- Robes of the Horned Nightmare
-										["itemID"] = 99416,	-- Robes of the Horned Nightmare
-									},
-									{	-- Battleplate of Winged Triumph
-										["itemID"] = 99387,	-- Battleplate of Winged Triumph
-									},
-									{	-- Breastplate of Winged Triumph
-										["itemID"] = 99374,	-- Breastplate of Winged Triumph
-									},
-									{	-- Chestguard of Winged Triumph
-										["itemID"] = 99368,	-- Chestguard of Winged Triumph
-									},
-								},
-							},
-							{	-- Gauntlets of the Cursed Conqueror [Priest / Warlock / Priest]
-								["itemID"] = 99721,	-- Gauntlets of the Cursed Conqueror
-								["classes"] = {
-									5,	-- Priest
-									9,	-- Warlock
-									2,	-- Paladin
-								},
-								["g"] = {
-									{	-- Gloves of the Ternion Glory
-										["itemID"] = 99359,	-- Gloves of the Ternion Glory
-									},
-									{	-- Handwraps of the Ternion Glory
-										["itemID"] = 99365,	-- Handwraps of the Ternion Glory
-									},
-									{	-- Gloves of the Horned Nightmare
-										["itemID"] = 99424,	-- Gloves of the Horned Nightmare
-									},
-									{	-- Gauntlets of Winged Triumph
-										["itemID"] = 99380,	-- Gauntlets of Winged Triumph
-									},
-									{	-- Gloves of Winged Triumph
-										["itemID"] = 99375,	-- Gloves of Winged Triumph
-									},
-									{	-- Handguards of Winged Triumph
-										["itemID"] = 99369,	-- Handguards of Winged Triumph
-									},
-								},								
-							},	
-							--]]
+						["sym"] = {
+							{"select", "itemID", 99724}, -- Helm of the Cursed Conqueror
+							{"select", "itemID", 99718}, -- Shoulders of the Cursed Conqueror
+							{"select", "itemID", 99715}, -- Chest of the Cursed Conqueror
+							{"select", "itemID", 99721}, -- Gauntlets of the Cursed Conqueror
+							{"select", "itemID", 99712}, -- Leggings of the Cursed Conqueror
+							{"pop"},
 						},
 					},
-					{	-- Essence of the Cursed Protector [Monk / Hunter / Shaman / Warrior]
-						["itemID"] = 105866,	-- Essence of the Cursed Protector
+					{	-- Essence of the Cursed Protector
+						["itemID"] = 105866,
 						["classes"] = {
-							10,	-- Monk
 							3,	-- Hunter
+							10,	-- Monk
 							7,	-- Shaman
 							1,	-- Warrior
 						},
-						["g"] = {
-							--[[
-							{	-- Chest of the Cursed Protector [Monk / Hunter / Shaman / Warrior]
-								["itemID"] = 99716,	-- Chest of the Cursed Protector
-								["classes"] = {
-									10,	-- Monk
-									3,	-- Hunter
-									7,	-- Shaman
-									1,	-- Warrior
-								},
-								["g"] = {
-									{	-- Tunic of Seven Sacred Seals
-										["itemID"] = 99396,	-- Tunic of Seven Sacred Seals
-									},
-									{	-- Vest of Seven Sacred Seals
-										["itemID"] = 99391,	-- Vest of Seven Sacred Seals
-									},
-									{	-- Tunic of the Unblinking Vigil
-										["itemID"] = 99405,	-- Tunic of the Unblinking Vigil
-									},
-									{	-- Cuirass of Celestial Harmony
-										["itemID"] = 99347,	-- Cuirass of Celestial Harmony
-									},
-									{	-- Hauberk of Celestial Harmony
-										["itemID"] = 99344,	-- Hauberk of Celestial Harmony
-									},
-									{	-- Tunic of Celestial Harmony
-										["itemID"] = 99351,	-- Tunic of Celestial Harmony
-									},
-									{	-- Battleplate of the Prehistoric Marauder
-										["itemID"] = 99411,	-- Battleplate of the Prehistoric Marauder
-									},
-									{	-- Chestguard of the Prehistoric Marauder
-										["itemID"] = 99415,	-- Chestguard of the Prehistoric Marauder
-									},
-								},
-							},
-							{	-- Gauntlets of the Cursed Protector [Monk / Hunter / Shaman / Warrior]
-								["itemID"] = 99722,	-- Gauntlets of the Cursed Protector
-								["classes"] = {
-									10,	-- Monk
-									3,	-- Hunter
-									7,	-- Shaman
-									1,	-- Warrior
-								},
-								["g"] = {
-									{	-- Gauntlets of Seven Sacred Seals
-										["itemID"] = 99383,	-- Gauntlets of Seven Sacred Seals
-									},
-									{	-- Grips of Seven Sacred Seals
-										["itemID"] = 99392,	-- Grips of Seven Sacred Seals
-									},
-									{	-- Handwraps of Seven Sacred Seals
-										["itemID"] = 99388,	-- Handwraps of Seven Sacred Seals
-									},
-									{	-- Gloves of the Unblinking Vigil
-										["itemID"] = 99406,	-- Gloves of the Unblinking Vigil
-									},
-									{	-- Gloves of Celestial Harmony
-										["itemID"] = 99345,	-- Gloves of Celestial Harmony
-									},
-									{	-- Grips of Celestial Harmony
-										["itemID"] = 99340,	-- Grips of Celestial Harmony
-									},
-									{	-- Handwraps of Celestial Harmony
-										["itemID"] = 99352,	-- Handwraps of Celestial Harmony
-									},
-									{	-- Gauntlets of the Prehistoric Marauder
-										["itemID"] = 99412,	-- Gauntlets of the Prehistoric Marauder
-									},
-									{	-- Handguards of the Prehistoric Marauder
-										["itemID"] = 99408,	-- Handguards of the Prehistoric Marauder
-									},
-								},								
-							},	
-							--]]
+						["sym"] = {
+							{"select", "itemID", 99725}, -- Helm of the Cursed Protector
+							{"select", "itemID", 99719}, -- Shoulders of the Cursed Protector
+							{"select", "itemID", 99716}, -- Chest of the Cursed Protector
+							{"select", "itemID", 99722}, -- Gauntlets of the Cursed Protector
+							{"select", "itemID", 99713}, -- Leggings of the Cursed Protector
+							{"pop"},
 						},
 					},
-					{	-- Essence of the Cursed Vanquisher [Mage / Druid / Rogue / Death Knight]
-						["itemID"] = 105868,	-- Essence of the Cursed Vanquisher
+					{	-- Essence of the Cursed Vanquisher
+						["itemID"] = 105868,
 						["classes"] = {
-							8,	-- Mage
-							11,	-- Druid
-							4,	-- Rogue
 							6,	-- Death Knight
+							11,	-- Druid
+							8,	-- Mage
+							4,	-- Rogue
 						},
-						["g"] = {
-							--[[
-							{	-- Chest of the Cursed Vanquisher [Mage / Druid / Rogue / Death Knight]
-								["itemID"] = 99714,	-- Chest of the Cursed Vanquisher
-								["classes"] = {
-									8,	-- Mage
-									11,	-- Druid
-									4,	-- Rogue
-									6,	-- Death Knight
-								},
-								["g"] = {
-									{	-- Chronomancer Robes
-										["itemID"] = 99400,	-- Chronomancer Robes
-									},
-									{	-- Raiment of the Shattered Vale
-										["itemID"] = 99326,	-- Raiment of the Shattered Vale
-									},
-									{	-- Robes of the Shattered Vale
-										["itemID"] = 99430,	-- Robes of the Shattered Vale
-									},
-									{	-- Tunic of the Shattered Vale
-										["itemID"] = 99419,	-- Tunic of the Shattered Vale
-									},
-									{	-- Vestment of the Shattered Vale
-										["itemID"] = 99427,	-- Vestment of the Shattered Vale
-									},
-									{	-- Tunic of the Barbed Assassin
-										["itemID"] = 99356,	-- Tunic of the Barbed Assassin
-									},
-									{	-- Breastplate of Cyclopean Dread
-										["itemID"] = 99335,	-- Breastplate of Cyclopean Dread
-									},
-									{	-- Chestguard of Cyclopean Dread
-										["itemID"] = 99330,	-- Chestguard of Cyclopean Dread
-									},
-								},
-							},
-							{	-- Gauntlets of the Cursed Vanquisher [Mage / Druid / Rogue / Death Knight]
-								["itemID"] = 99720,	-- Gauntlets of the Cursed Vanquisher
-								["classes"] = {
-									8,	-- Mage
-									11,	-- Druid
-									4,	-- Rogue
-									6,	-- Death Knight
-								},
-								["g"] = {
-									{	-- Chronomancer Gloves
-										["itemID"] = 99397,	-- Chronomancer Gloves
-									},
-									{	-- Grips of the Shattered Vale
-										["itemID"] = 99327,	-- Grips of the Shattered Vale
-									},
-									{	-- Handguards of the Shattered Vale
-										["itemID"] = 99420,	-- Handguards of the Shattered Vale
-									},
-									{	-- Handwraps of the Shattered Vale
-										["itemID"] = 99435,	-- Handwraps of the Shattered Vale
-									},
-									{	-- Gloves of the Barbed Assassin
-										["itemID"] = 99355,	-- Gloves of the Barbed Assassin
-									},
-									{	-- Gauntlets of Cyclopean Dread
-										["itemID"] = 99336,	-- Gauntlets of Cyclopean Dread
-									},
-									{	-- Handguards of Cyclopean Dread
-										["itemID"] = 99331,	-- Handguards of Cyclopean Dread
-									},
-								},								
-							},	
-							--]]
+						["sym"] = {
+							{"select", "itemID", 99723}, -- Helm of the Cursed Vanquisher
+							{"select", "itemID", 99717}, -- Shoulders of the Cursed Vanquisher
+							{"select", "itemID", 99714}, -- Chest of the Cursed Vanquisher
+							{"select", "itemID", 99720}, -- Gauntlets of the Cursed Vanquisher
+							{"select", "itemID", 99726}, -- Leggings of the Cursed Vanquisher
+							{"pop"},
 						},
 					},
 					{	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
