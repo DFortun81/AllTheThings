@@ -75,6 +75,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(99192, e(1657, {	-- Shade of Xavius
 					ach(10783),	-- Darkheart Thicket
+					i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr (Rank 2)
 					i(137876),	-- Recipe: Warhide Bindings (Rank 3)
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
@@ -145,6 +146,7 @@ _.Instances = { tier(7, {	-- Legion
 					cr(99192, e(1657, {	-- Shade of Xavius
 						ach(10784),	-- Heroic: Darkheart Thicket
 						i(137853),	-- Design: Sylvan Maelstrom Amulet (Rank 3)
+						i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr (Rank 2)
 						i(137876),	-- Recipe: Warhide Bindings (Rank 3)
 						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 						i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
