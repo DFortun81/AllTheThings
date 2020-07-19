@@ -169,7 +169,9 @@ _.Achievements =
 					}),
 					ach(6846, {	-- Fish Tales
 						crit(1),	-- Watersmithing (Jade Forest)
-						crit(2),	-- Waterspeakers (Valley of the Four Winds)
+						crit(2, {	-- Waterspeakers (Valley of the Four Winds)
+							["coord"] = { 61.52, 34.88, 376 },
+						}),
 						crit(3),	-- Origins (Krasarang Wilds)
 						crit(4),	-- Role Call (Kun-Lai Summit)
 					}),
@@ -248,7 +250,9 @@ _.Achievements =
 					ach(6850, {	-- Hozen in the Mist
 						crit(1),	-- Hozen Speech (Jade Forest)
 						crit(2),	-- Hozen Maturity (Krasarang Wilds)
-						crit(3),	-- Embracing the Passions (Valley of the Four Winds)
+						crit(3, {	-- Embracing the Passions (Valley of the Four Winds)
+							["coord"] = { 83.22, 21.16, 376 },
+						}),
 						crit(4),	-- The Hozen Ravage (Kun-Lai Summit)
 					}),
 					ach(7932, {	-- I'm In Your Base, Killing Your Dudes (Krasarang Wilds)
