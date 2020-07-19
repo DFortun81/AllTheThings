@@ -130,6 +130,7 @@ _.Zones =
 			}),
 			q(49541, {	-- Warchief's Command: Kun-Lai Summit!
 				["isBreadcrumb"] = true,
+				["lvl"] = 82,
 			}),
 			q(27721, {	-- Warchief's Command: Mount Hyjal!
 				["isBreadcrumb"] = true,
@@ -179,6 +180,7 @@ _.Zones =
 			}),
 			q(49548, {	-- Warchief's Command: Spires of Arak!
 				["isBreadcrumb"] = true,
+				["lvl"] = 96,
 			}),
 			q(49536, {	-- Warchief's Command: Storm Peaks!
 				["isBreadcrumb"] = true,
@@ -191,6 +193,7 @@ _.Zones =
 			}),
 			q(49547, {	-- Warchief's Command: Talador!
 				["isBreadcrumb"] = true,
+				["lvl"] = 94,
 			}),
 			q(28509, {	-- Warchief's Command: Tanaris!
 				["isBreadcrumb"] = true,
@@ -209,6 +212,7 @@ _.Zones =
 			}),
 			q(49542, {	-- Warchief's Command: Townlong Steppes!
 				["isBreadcrumb"] = true,
+				["lvl"] = 83,
 			}),
 			q(28717, {	-- Warchief's Command: Twilight Highlands!
 				["isBreadcrumb"] = true,
@@ -221,6 +225,7 @@ _.Zones =
 			}),
 			q(49539, {	-- Warchief's Command: Valley of the Four Winds!
 				["isBreadcrumb"] = true,
+				["lvl"] = 81,
 			}),
 			q(27718, {	-- Warchief's Command: Vashj'ir!
 				["isBreadcrumb"] = true,
