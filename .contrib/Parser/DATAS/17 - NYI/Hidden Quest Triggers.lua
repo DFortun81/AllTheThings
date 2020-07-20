@@ -1601,6 +1601,9 @@ _.NeverImplemented =
 		--	VARIOUS
 		q(48575),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity? Maybe an alliance/horde equivalent?
 		q(53441),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity?
+		q(53470),	-- Vol'dun - Alliance - landed in Vol'Dun while doing the war campaign. First zone landing
+		q(51242),	-- Vol'dun - Alliance - planted the Alliance banner
+		q(51396),	-- Vol'dun - Alliance - watched Vorrik place the first keystone on the pedestal in the Sanctuary of the Devoted
 		q(47698),	-- Nazmir - Ticker is summoned
 		q(49294),	-- Nazmir - triggers when Hanzabu talks about the Zo'bal shrine
 		q(48779),	-- Nazmir - triggers after activating all the spirits in Zo'bal during "Spiritual Restoration"
