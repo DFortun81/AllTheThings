@@ -1954,6 +1954,9 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(-34,	{	-- World Quests
+					q(55629, {	-- Unknown quest populating /attwq
+						["u"] = 1,
+					}),
 					q(58743, {	-- Dune Buggy
 						-- pet battle
 						["lvl"] = 120,
