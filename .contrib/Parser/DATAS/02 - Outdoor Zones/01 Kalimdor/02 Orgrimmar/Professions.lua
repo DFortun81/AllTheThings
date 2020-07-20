@@ -346,6 +346,7 @@ _.Zones =
 							["coord"] = { 52.2, 77.0, 85 },
 							["requireSkill"] = FISHING,
 							["isBreadcrumb"] = true,
+							["repeatable"] = true,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 35,
 						}),
