@@ -424,6 +424,9 @@ _.NeverImplemented =
 		-------------------
 		--      MOP      --
 		-------------------
+		q(29698),	-- Tracking Event: Alliance Banner Found
+		q(29700),	-- Tracking Event: Bodyguard Found (Alliance)
+		q(29701),	-- Tracking Event: Journal Found (Alliance)
 		q(30087),	-- FLAG - Kung Fu Intro — wowhead info for this is possibly irrelevant, seems to trigger either when flying close to the magical barrier or after accepting The Arcanic Oubliette in Krasarang Wilds
 		q(31153),	-- Tracking Event - Saved Diaani
 		q(31154),	-- Tracking Event - Saved Zuulo
