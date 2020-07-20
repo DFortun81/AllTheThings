@@ -424,6 +424,9 @@ _.NeverImplemented =
 		-------------------
 		--      MOP      --
 		-------------------
+		q(29698),	-- Tracking Event: Alliance Banner Found
+		q(29700),	-- Tracking Event: Bodyguard Found (Alliance)
+		q(29701),	-- Tracking Event: Journal Found (Alliance)
 		q(30087),	-- FLAG - Kung Fu Intro — wowhead info for this is possibly irrelevant, seems to trigger either when flying close to the magical barrier or after accepting The Arcanic Oubliette in Krasarang Wilds
 		q(31153),	-- Tracking Event - Saved Diaani
 		q(31154),	-- Tracking Event - Saved Zuulo
@@ -683,9 +686,12 @@ _.NeverImplemented =
 		q(39307),	-- Gorgrond - Mechasuit
 		q(36712),	-- Gorgrond - Mill Treasure 1 - triggers when looting the ancient titan chest questID 35701
 		q(35946),	-- Gorgrond - Peckers the Majestic - triggers if you free Peckers from his cage in Kor'gall's Hovel with the sparring arena active (37.3, 70.7)
+		q(36797),	-- Shadowmoon Valley - Founded the garrison
 		q(35626),	-- Shadowmoon Valley - Friend of the Exarchs: Apprentice Artificer Andren selected
 		q(35629),	-- Shadowmoon Valley - Friend of the Exarchs: Vindicator Onaala selected
 		q(35628),	-- Shadowmoon Valley - Friend of the Exarchs: Rangari Chel selected
+		q(33151),	-- Shadowmoon Valley - Saw scout Valdez arrive in Twilight Glade
+		q(37451),	-- Shadowmoon Valley - see Qiana Moonshadow while on "Qiana Moonshadow"
 		q(34600),	-- Shadowmoon Valley - Tracking Quest: Saw Vorka, Rangari Leave
 		q(34622),	-- Shadowmoon Valley - Tracking Quest: Saw Ner'zhul Leave
 		q(33839),	-- Shadowmoon Valley - Tracking Quest: Saw Naaru Purified
@@ -1143,6 +1149,18 @@ _.NeverImplemented =
 		q(40620),	-- Hunter Order Hall - Marksmanship Chosen
 		q(44368),	-- Hunter Order Hall - Marksmanship Chosen
 		q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
+
+		q(41079),	-- Mage Order Hall - Arcane chosen first
+		q(43442),	-- Mage Order Hall - Arcane chosen second
+		q(44307),	-- Mage Order Hall - Arcane chosen third
+		q(41080),	-- Mage Order Hall - Fire chosen first
+		q(43443),	-- Mage Order Hall - Fire chosen second
+		q(44308),	-- Mage Order Hall - Fire chosen third
+		q(41081),	-- Mage Order Hall - Frost chosen first
+		q(43444),	-- Mage Order Hall - Frost chosen second
+		q(44309),	-- Mage Order Hall - Frost chosen third
+		q(42727),	-- Mage Order Hall - Transition to Forge Quests (triggered after completing The Mage Hunter as first artifact weapon)
+		q(44645),	-- Mage Order Hall - Completed the "Ancient Magic" mission
 
 		q(40516),	-- Monk Order Hall - The Dawning Bit (Triggered after accepting The Dawning Light)
 		q(40638),	-- Monk Order Hall - Windwalker Chosen

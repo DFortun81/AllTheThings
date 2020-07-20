@@ -1,10 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
-		m(376, {	-- Valley of the Four Winds				
+		m(376, {	-- Valley of the Four Winds
 			n(-4, {		-- Achievement
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
@@ -17,7 +18,17 @@ _.Zones =
 					},
 				}),
 				ach(7294),	-- A Taste of Things to Come (Halfhill)
+				ach(6846, {	-- Fish Tales
+					crit(2, {	-- Waterspeakers
+						["coord"] = { 61.52, 34.88, 376 },
+					}),
+				}),
 				ach(7292),	-- Green Acres (Halfhill)
+				ach(6850, {	-- Hozen in the Mist
+					crit(3, {	-- Embracing the Passions
+						["coord"] = { 83.22, 21.16, 376 },
+					}),
+				}),
 				ach(7284, {	-- Is Another Man's Treasure
 					["collectible"] = false,
 					["g"] = {

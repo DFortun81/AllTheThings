@@ -28,6 +28,7 @@ i(43626);	-- Happy Pet Snack
 i(18284);	-- Kreeg's Stout Beatdown
 i(19297);	-- Lesser Darkmoon Prize
 i(142263);	-- Machine Fluid
+i(138883);	-- Meryl's Conjured Refreshment
 i(19298);	-- Minor Darkmoon Prize
 i(19425);	-- Mysterious Lockbox
 i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)

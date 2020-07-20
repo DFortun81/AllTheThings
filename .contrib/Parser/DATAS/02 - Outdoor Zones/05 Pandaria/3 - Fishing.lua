@@ -14,7 +14,7 @@ _.Zones =
 				418,	-- Krasarang Wilds
 				379,	-- Kun-Lai Summit
 				371,	-- The Jade Forest
-				433,	-- The Veiled Star
+				433,	-- The Veiled Stair
 				554,	-- Timeless Isle
 				388,	-- Townlong Steppes
 				390,	-- Vale of Eternal Blossoms

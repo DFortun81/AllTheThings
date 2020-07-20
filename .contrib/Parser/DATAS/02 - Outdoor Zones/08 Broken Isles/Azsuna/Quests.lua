@@ -363,7 +363,7 @@ _.Zones =
 							i(133547),	-- Freebooter Captain's Boots
 							i(133546),	-- Croc-Resistant Waders
 							i(133544),	-- Kul'Tiras Dress Sabatons
-						}),	
+						}),
 					},
 				}),
 				q(37654, {	-- Maritime Law
@@ -415,7 +415,7 @@ _.Zones =
 					["g"] = {
 						i(129178),	-- Emmigosa (PET!)
 					},
-				}),	
+				}),
 				q(37257, {	-- Our Very Bones
 					["sourceQuests"] = { 37733 },	-- Prince Farondis
 					["coord"] = { 46.9, 41.2, 630 },
@@ -828,7 +828,6 @@ _.Zones =
 				q(41178),	-- Explosive Results
 				q(38961),	-- Eye of Azshara: The Depraved Nightfallen
 				q(41167),	-- Fel Fragments
-				q(42171),	-- Final Exit
 				q(40527),	-- Finishing Touches
 				q(40528),	-- Finishing Touches
 				q(40526),	-- Finishing Touches
@@ -866,10 +865,9 @@ _.Zones =
 				q(40855),	-- Our Man in Azsuna
 				q(39934),	-- Our New Allies
 				q(40056),	-- Our New Allies
-				q(41161),	-- Out of the Frying Pan		
+				q(41161),	-- Out of the Frying Pan
 				q(46794),	-- Paragon of the Court
 				q(46800),	-- Paragon of the Wardens
-				q(42435),	-- Prepare To Be Assimilated
 				q(39906),	-- Prepping For Battle
 				q(45795),	-- Presence of Power
 				q(37728),	-- Presentation is Everything
@@ -903,7 +901,7 @@ _.Zones =
 				q(41163),	-- The Apocalypse Bringer
 				q(43373),	-- The Best and Brightest
 				q(43520),	-- The Emerald Nightmare: In Nightmares
-				q(45028),	-- The Fate of Kanrethad										
+				q(45028),	-- The Fate of Kanrethad
 				q(38963),	-- The Final Lesson?
 				q(45174),	-- The Hunt for Illidan Stormrage
 				q(41185),	-- The Keys to Success
@@ -935,8 +933,7 @@ _.Zones =
 				q(39916),	-- Turnabout Betrayal
 				q(41182),	-- Uncovering the Orb of Sciallax
 				q(41180),	-- Unspeakable Power
-				q(40130),	-- Washed Clean					
-				q(42166),	-- What Is Going On Here?
+				q(40130),	-- Washed Clean
 				q(41179),	-- What Once Was Lost
 				q(44758, {	-- What's the Cache?
 					["races"] = ALLIANCE_ONLY,
@@ -947,7 +944,7 @@ _.Zones =
 				q(37930),	-- Whelp? That Happened.
 				q(38956),	-- Where's Lyndras Again?
 				q(38954),	-- Where's Lyndras?
-				q(41174),	-- Worth Its Weight 	--]]			
+				q(41174),	-- Worth Its Weight 	--]]
 			}),
 		}),
 	}),

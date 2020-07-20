@@ -814,13 +814,6 @@ _.Zones =
 					["coord"] = { 59.9, 63.3, 25 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(11997, {	-- The Frozen Flame
-					["provider"] = { "n", 99415 },	-- Aethas Sunreaver
-					["coord"] = { 28.6, 37.2, 25 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
-					["sourceQuests"] = { 40270 },	-- The Path of Atonement
-				}),
 				q(676, {	-- The Hammer May Fall
 					["provider"] = { "n", 2770 },	-- Tallow
 					["races"] = HORDE_ONLY,
@@ -836,12 +829,6 @@ _.Zones =
 						i(65682),	-- Bel'varil's Armbands
 						i(131698),	-- Bel'varil's Chain Leggings
 					},
-				}),
-				q(40270, {	-- The Path of Atonement
-					["provider"] = { "n", 99398 },	-- Archmage Modera
-					["coord"] = { 28.6, 37.2, 25 },
-					["classes"] = { 8 },	-- Mage
-					["sourceQuests"] = { 40267 },	-- An Unexpected Message
 				}),
 				q(498,   {	-- The Rescue
 					["u"] = REMOVED_FROM_GAME,

@@ -654,6 +654,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80073 },	-- Exarch Maladaar
 				}),
+				q(34575, {	-- Step Three: Prophet!
+					["races"] = ALLIANCE_ONLY,
+					["description"] = "Automatically granted after completing the Assault on the Dark Portal scenario.",
+				}),
 				q(35905, {	-- Supply Drop
 					["sourceQuests"] = { 34788 },	-- Friend of the Exarchs
 					["coord"] = { 62.5, 26.2, 539 },
