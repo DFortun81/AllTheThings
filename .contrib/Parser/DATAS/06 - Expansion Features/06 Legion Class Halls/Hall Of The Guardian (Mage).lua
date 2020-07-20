@@ -4,12 +4,14 @@
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
-		cl(8, {	-- Hall of the Guardian (Mage)
-			["classes"] = { 8 },	-- Mage
+		cl(MAGE, {	-- Hall of the Guardian (Mage)
+			["classes"] = { MAGE },
 			["lvl"] = 98,
 			["maps"] = {
+				700,	-- Icecrown Citadel (Fire weapon scenario)
 				734,	-- Hall of the Guardian (Mage)
 				735,	-- Hall of the Guardian (Mage) (2nd Floor)
+				736,	-- The Nexus (Arcane weapon scenario)
 			},
 			["g"] = {
 				spell(118, {	-- Polymorph
@@ -120,40 +122,113 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(QUESTS, {
-					q(41141, { 	-- A Conjuror's Duty (mage class hall)
+					q(41141, { 	-- A Conjuror's Duty
+						["coord"] = { 81.6, 60.2, 734 },
+						["classes"] = { MAGE },
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
-						["classes"] = {8},
+						["sourceQuest"] = 41124,	-- The Tirisgarde Reborn
 					}),
-					q(42434),	-- A Covert Operation
-					q(46338, {	-- A Creative Solution (mage class hall)
+					q(42434, {	-- A Covert Operation
+						["coord"] = { 61.8, 59.9, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 107341 },	-- Ravandwyr
+						["sourceQuest"] = 42418,	-- An Unexpected Visitor
+					}),
+					q(46338, {	-- A Creative Solution
 						["provider"] = { "n", 108247 },	-- Archmage Kalec
 					}),
-					q(43415),	-- A Hero's Weapon
-					q(41085, {	-- A Mage's Weapon (mage class hall)
-						["provider"] = { "n", 102700 },	-- Meryl Felstorm
-						["classes"] = {8},
+					q(42007, {	-- A Forgotten Enemy
+						["lvl"] = 98,
+						["maps"] = { 115 },
+						["coord"] = { 56.7, 69.1, 115 },
+						["model"] = 192568,
+						["classes"] = { MAGE },
+						["provider"] = { "o", 248398 },	-- Ethereal Communication Device
 					}),
-					q(43441),	-- A Second Weapon
+					q(43415),	-- A Hero's Weapon
+					q(41085, {	-- A Mage's Weapon
+						["coord"] = { 59.0, 43.0, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["sourceQuest"] = 41036,	-- The Dreadlord's Prize
+					}),
+					q(42006, {	-- A New Threat
+						["maps"] = { 627 },
+						["coord"] = { 28.6, 49.9, 627 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 105081 },	-- Archmage Kalec
+						["sourceQuests"] = {
+							42001,	-- Aluneth, Greatstaff of the Magna
+							42003,	-- Kept Secret, Kept Safe
+						},
+					}),
+					q(43441, {	-- A Second Weapon
+						["lvl"] = 102,
+						["coord"] = { 55.3, 38.1, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["sourceQuest"] = 41085,	-- A Mage's Weapon
+					}),
 					q(42954),	-- A Small Favor
 					q(42520, {	-- A Terrible Loss
-						["classes"] = { 8 },
+						["classes"] = { MAGE },
 						["provider"] = { "n", 108085 },	-- Image of Kalec
 						["sourceQuest"] = 42493,	-- Impending Dooooooom!
+						["g"] = {
+							i(139754),	-- Bracers of Tirisgarde
+						},
 					}),
-					q(42455),	-- Alodi's Gems
-					q(42001),	-- Aluneth, Greatstaff of the Magna
-					q(40267),	-- An Unexpected Message
-					q(42418),	-- An Unexpected Visitor
+					q(42455, {	-- Alodi's Gems
+						["coord"] = { 60.6, 43.4, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102846 },	-- Alodi
+						["sourceQuest"] = 42452,	-- Finding Ebonchill
+					}),
+					q(42001, {	-- Aluneth, Greatstaff of the Magna
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["description"] = "Pursue your Arcane artifact weapon.",
+					}),
+					q(40267, {	-- An Unexpected Message
+						["coord"] = { 55.3, 38.1, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["description"] = "Persue your Fire artifact weapon.",
+					}),
+					q(42418, {	-- An Unexpected Visitor
+						["coord"] = { 80.9, 63.0, 734 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 108515 },	-- Archmage Melis
+						["sourceQuest"] = 42433,	-- Ancient Magic
+					}),
 					q(45437),	-- An Urgent Situation
 					q(45997),	-- An Urgent Warning
 					q(42433, {	-- Ancient Magic
-						["races"] = ALLIANCE_ONLY,
+						["coord"] = { 74.5, 63.0, 734 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 107482 },	-- Archmage Vargoth
+						["sourceQuest"] = 42696,	-- Tech It Up a Notch
+					}),
+					q(42010, {	-- Arcane Unleashed
+						["maps"] = { 114 },
+						["coord"] = { 27.8, 26.7, 114 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 105917 },	-- Image of Kalec
+						["sourceQuest"] = 42009,	-- Harnessing the Arcane
 					}),
 					q(42126, {	-- Archmage Omniara
-						["classes"] = { MAGE },
 						["lvl"] = 101,
+						["coord"] = { 80.8, 63.1, 734 },
+						["classes"] = { MAGE },
 						["provider"] = { "n", 108515 },	-- Archmage Melis
-						["sourceQuests"] = { 42703 },	-- Technical Wizardry
+						["sourceQuest"] = 42703,	-- Technical Wizardry
+					}),
+					q(42423, {	-- Archmage Vargoth's Retreat
+						["maps"] = { 627 },
+						["coord"] = { 28.4, 49.4, 627 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 90431 },	-- Archmage Ansirem Runeweaver
+						["sourceQuest"] = 42416,	-- The Council is in Session
 					}),
 					q(42956, {	-- Ari's Package
 						i(141880),	-- Ari's Wooden Ring
@@ -164,230 +239,389 @@ _.ExpansionFeatures =
 					}),
 					q(44766),	-- Backup Plan
 					q(42127, {	-- Building Our Troops
-						["classes"] = { MAGE },
 						["lvl"] = 101,
+						["coord"] = { 80.8, 63.0, 734 },
+						["classes"] = { MAGE },
 						["provider"] = { "n", 108515 },	-- Archmage Melis
-						["sourceQuests"] = { 42126 },	-- Archmage Omniara
+						["sourceQuest"] = 42126,	-- Archmage Omniara
 					}),
 					q(45845),	-- Burning Within
-					q(46043),	-- Champion: Aethas Sunreaver
-					q(42704),	-- Champion: Arcane Destroyer
-					q(42662),	-- Champion: Archmage Kalec
-					q(42685),	-- Champion: Archmage Modera
-					q(42917),	-- Champion: Archmage Vargoth
-					q(42706),	-- Champion: Esara Verrinde
-					q(42914),	-- Champion: Meryl Felstorm
-					q(42702),	-- Champion: Millhouse Manastorm
-					q(42705),	-- Champion: Ravandwyr
-					q(46724),	-- Champion: The Great Akazamzarak
-					q(45846),	-- Chilled to the Core
-					q(45847),	-- Close to Home
-					q(42477),	-- Daio the Decrepit
-					q(45354),	-- Dispersion of the Discs
-					q(46723),	-- Down the Rabbit Hole
-					q(42222),	-- Empyrean Society Report
-					q(43552),	-- Eye of Azshara
-					q(42707),	-- Eye of Azshara: A Magical Affliction
-					q(44208),	-- Fate and Time
-					q(41035),	-- Felstorm's Plea
-					q(45615),	-- Finders Keepers
-					q(42452),	-- Finding Ebonchill
-					q(42424),	-- Following In His Footsteps
-					q(46782),	-- Further Advancement
-					q(46156),	-- Furthering Knowledge
-					q(42175, {	-- Growing Power
-						["classes"] = { MAGE },
-						["lvl"] = 101,
-						["provider"] = { "n", 112688 },	-- Meryl Felstorm
-						["maps"] = { 627 },	-- Dalaran
-						["isBreadcrumb"] = true,
-					}),
-					q(42493, {	-- Impending Dooooooom!
-						["classes"] = { 8 },	-- Mage
-					}),
-					q(46345, {	-- Into the Hornet's Nest
-						["classes"] = { 8 },	-- Mage
-					}),
-					q(42734),	-- Into the Oculus
-					q(45998),	-- Investigate the Broken Shore
-					q(42451, {	-- Kalec's Plan
-						["classes"] = { 8 },	-- Mage
-					}),
-					q(46351, {	-- Keep it Secret, Keep it Safe
-						["classes"] = { 8 },	-- Mage
-					}),
-					q(46339, {	-- Keymaster Orlis
-						["classes"] = { 8 },	-- Mage
-					}),
-					q(42429),	-- Memories of Ebonchill
-					q(42494, {	-- More Than Just A Food Vendor
-						["classes"] = { 8 },	-- Mage
-					}),
-					q(42508, {	-- Not A Toothless Dragon
-						["classes"] = { 8 },	-- Mage
-					}),
-					q(46722),	-- Nothing Up My Sleeve
-					q(44768, {	-- Nyell's Workshop
-						["classes"] = { 8 },	-- Mage
-					}),
-					q(44240, {	-- Orange is the New Purple
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(44207),	-- Portal Full of Shiny Things
-					q(44098),	-- Recruiting Apprentices
-					q(45251),	-- Redundancy
-					q(46705, {	-- Retaliation
-						["classes"] = { 8 },	-- Mage
-					}),
-					q(46290),	-- Return of the Archmage
-					q(42663, {	-- Rise, Champions
-						["classes"] = { MAGE },
-						["lvl"] = 101,
-						["provider"] = { "n", 102700 },	-- Meryl Felstorm
-						["sourceQuests"] = { 42175 },	-- Growing Power
-					}),
-					q(44770, {	-- Secrets of the Shal'dorei
-						["classes"] = { 8 },	-- Mage
-					}),
-					q(45630),	-- Servant to No One
-					q(42696, {	-- Tech It Up A Notch
-						["classes"] = { MAGE },
-						["lvl"] = 101,
-						["provider"] = { "n", 108515 },	-- Archmage Melis
-						["sourceQuests"] = { 42687 },	-- Troops in the Field
-					}),
-					q(42703, {	-- Technical Wizardry
-						["classes"] = { MAGE },
-						["lvl"] = 101,
-						["provider"] = { "n", 102700 },	-- Meryl Felstorm
-						["sourceQuests"] = { 42663 },	-- Rise, Champions
-					}),
-					q(41114),	-- The Champion's Return
-					q(42416, {	-- The Council is in Session
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(42476),	-- The Deadwind Site
-					q(41036),	-- The Dreadlord's Prize
-					q(42521, {	-- The Enemy of My Enemy...
-						["classes"] = { 8 },	-- Mage
-						["provider"] = { "n", 111553 },	-- Kalecgos
-						["sourceQuest"] = 42508,	-- Not a Toothless Dragon
-					}),
-					q(41112),	-- The Great Akazamzarak
-					q(42479),	-- The Mage Hunter
-					q(44209),	-- The Might of Dalaran
-					q(44689),	-- The Might of the Tirisgarde
-					q(45207, {	-- The Nightborne Apprentice
-						["classes"] = { 8 },	-- Mage
-						["provider"] = { "n", 118242 },	-- Aethas Sunreaver
-						["sourceQuest"] = 46338,	-- A Creative Solution
-					}),
-					q(41113),	-- The Only Way to Travel
-					q(42955),	-- The Proper Way of Things
-					q(41124),	-- The Tirisgarde Reborn
-					q(46335),	-- The Vault of the Tirisgarde
-					q(42959),	-- Three Is a Lucky Number
-					q(44310),	-- Thrice the Power
-					q(42687, {	-- Troops in the Field
-						["classes"] = { MAGE },
-						["lvl"] = 101,
-						["provider"] = { "n", 108515 },	-- Archmage Melis
-						["sourceQuests"] = { 42127 },	-- Building Our Troops
-					}),
-					q(41125),	-- Unlocked Potential
-					q(46940, {	-- Using Lost Knowledge
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(42940),	-- When There's a Will, There's a Way
-					q(45354, {	-- Dispersion of the Discs
-						["lvl"] = 110,
-						["classes"] = {8},
-						["g"] = {
-							{ ["mountID"] = 229376 },	-- Archmage's Prismatic Discs
-						},
-					}),
-					q(44240, {	-- Orange is the New Purple
-						i(139749),	-- Cowl of Tirisgarde
-					}),
-					q(42734, {	-- Into the Oculus
-						i(139751),	-- Robes of Tirisgarde
-					}),
-					q(42520, {	-- A Terrible Loss
-						i(139754),	-- Bracers of Tirisgarde
-					}),
-					--[[ Artifact Appearance  Quests Commented Out For Now
-					q(43415, {	-- A Hero's Weapon
-						sp(219663) -- Heroic Weapons [No item associated]
-					}),
-					--]]
-					--Followers Sort Later
 					q(46043, {	-- Champion: Aethas Sunreaver
+						["classes"] = { MAGE },
 						["provider"] = { "n", 117497 },	-- Aethas Sunreaver
 						["g"] = {
 							follower(994),	-- Aethas Sunreaver
 						},
 					}),
 					q(42704, {	-- Champion: Arcane Destroyer
+						["classes"] = { MAGE },
 						["provider"] = { "n", 108368 },	-- Arcane Destroyer
 						["g"] = {
 							follower(724),	-- Arcane Destroyer
 						},
 					}),
 					q(42662, {	-- Champion: Archmage Kalec
+						["coord"] = { 56.3, 37.9, 735 },
 						["provider"] = { "n", 108247 },	-- Archmage Kalec <Kirin Tor>
+						["sourceQuest"] = 42663,	-- Rise, Champions
 						["g"] = {
 							follower(716),	-- Archmage Kalec
 						},
 					}),
 					q(42685, {	-- Champion: Archmage Modera
+						["coord"] = { 55.3, 39.6, 735 },
 						["provider"] = { "n", 108248 },	-- Archmage Modera <Kirin Tor>
+						["sourceQuest"] = 42663,	-- Rise, Champions
 						["g"] = {
 							follower(717),	-- Archmage Modera
 						},
 					}),
 					q(42917, {	-- Champion: Archmage Vargoth
+						["classes"] = { MAGE },
 						["provider"] = { "n", 109226 },	-- Archmage Vargoth <Kirin Tor>
 						["g"] = {
 							follower(762),	-- Archmage Vargoth
 						},
 					}),
 					q(42706, {	-- Champion: Esara Verrinde
+						["coord"] = { 74.0, 59.4, 735 },
+						["classes"] = { MAGE },
 						["provider"] = { "n", 108380 },	-- Esara Verrinde <Magisters>
+						["sourceQuest"] = 42222,	-- Empyrean Society Report
 						["g"] = {
 							follower(726),	-- Esara Verrinde
 						},
 					}),
 					q(42914, {	-- Champion: Meryl Felstorm
+						["classes"] = { MAGE },
 						["provider"] = { "n", 109222 },	-- Meryl Felstorm
 						["g"] = {
 							follower(761),	-- Meryl Felstorm
 						},
 					}),
 					q(42702, {	-- Champion: Millhouse Manastorm
+						["classes"] = { MAGE },
 						["provider"] = { "n", 108342 },	-- Millhouse Manastorm
 						["g"] = {
 							follower(723),	-- Millhouse Manastorm
 						},
 					}),
 					q(42705, {	-- Champion: Ravandwyr
+						["coord"] = { 70.4, 53.3, 735 },
+						["classes"] = { MAGE },
 						["provider"] = { "n", 108377 },	-- Ravandwyr <Senior Kirin Tor Apprentice>
+						["sourceQuest"] = 42222,	-- Empyrean Society Report
 						["g"] = {
 							follower(725),	-- Ravandwyr
 						},
 					}),
 					q(46724, {	-- Champion: The Great Akazamzarak
+						["classes"] = { MAGE },
 						--["provider"] = { "n",  },			-- Can't find QG
 						["g"] = {
 							follower(995),	-- The Great Akazamzarak
 						},
 					}),
-				}),
-				n(98695, {	-- Scouting Map
-					["g"] = {
-						i(138883),	-- Meryl's Conjured Refreshment
-					},
-					["achievementID"] = 11217,
-					["modelScale"] = 2.5,
+					q(45846),	-- Chilled to the Core
+					q(45847),	-- Close to Home
+					q(42477, {	-- Daio the Decrepit
+						["coord"] = { 59.1, 43.0, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["sourceQuest"] = 42452,	-- Finding Ebonchill
+					}),
+					q(45354, {	-- Dispersion of the Discs
+						["lvl"] = 110,
+						["classes"] = { MAGE },
+						["g"] = {
+							mount(229376),	-- Archmage's Prismatic Discs
+						},
+					}),
+					q(46723),	-- Down the Rabbit Hole
+					q(42222, {	-- Empyrean Society Report
+						["maps"] = { 630 },
+						["coord"] = { 66.0, 32.3, 630 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 106530 },	-- Ravandwyr
+						["sourceQuest"] = 42171,	-- Final Exit
+					}),
+					q(43552),	-- Eye of Azshara
+					q(42707),	-- Eye of Azshara: A Magical Affliction
+					q(42008, {	-- Eyes of the Dragon
+						["maps"] = { 115 },
+						["coord"] = { 56.6, 69.1, 115 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 105917 },	-- Image of Kalec
+						["sourceQuest"] = 42007,	-- A Forgotten Enemy
+					}),
+					q(44208),	-- Fate and Time
+					q(41035, {	-- Felstorm's Plea
+						["maps"] = { 627 },
+						["classes"] = { MAGE },
+					}),
+					q(45615),	-- Finders Keepers
+					q(42452, {	-- Finding Ebonchill
+						["coord"] = { 59.1, 43.0, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["description"] = "Pursue your Frost artifact weapon.",
+					}),
+					q(42171, {	-- Final Exit
+						["maps"] = { 630 },
+						["coord"] = { 66.4, 33.5, 630 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 106656 },	-- Esara Verrinde
+						["sourceQuests"] = {
+							42149,	-- Some Knowledge Shouldn't Be Shared
+							42206,	-- The Next Level Has Arrived
+						},
+					}),
+					q(42424, {	-- Following In His Footsteps
+						["maps"] = { 627 },
+						["coord"] = { 22.2, 55.1, 627 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 107423 },	-- Archmage Kalec
+						["sourceQuest"] = 42423,	-- Archmage Vargoth's Retreat
+					}),
+					q(46782),	-- Further Advancement
+					q(46156),	-- Furthering Knowledge
+					q(42175, {	-- Growing Power
+						["lvl"] = 101,
+						["maps"] = { 627 },	-- Dalaran
+						["classes"] = { MAGE },
+						["provider"] = { "n", 112688 },	-- Meryl Felstorm
+						["isBreadcrumb"] = true,
+					}),
+					q(42009, {	-- Harnessing the Arcane
+						["maps"] = { 114 },
+						["coord"] = { 27.8, 26.7, 114 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 105917 },	-- Image of Kalec
+						["sourceQuest"] = 42008,	-- Eyes of the Dragon
+					}),
+					q(42493, {	-- Impending Dooooooom!
+						["classes"] = { MAGE },
+					}),
+					q(46345, {	-- Into the Hornet's Nest
+						["classes"] = { MAGE },
+					}),
+					q(42734, {	-- Into the Oculus
+						i(139751),	-- Robes of Tirisgarde
+					}),
+					q(45998),	-- Investigate the Broken Shore
+					q(42451, {	-- Kalec's Plan
+						["classes"] = { MAGE },
+					}),
+					q(46351, {	-- Keep it Secret, Keep it Safe
+						["classes"] = { MAGE },
+					}),
+					q(46339, {	-- Keymaster Orlis
+						["classes"] = { MAGE },
+					}),
+					q(42429, {	-- Memories of Ebonchill
+						["lvl"] = 101,
+						["coord"] = { 53.2, 41.5, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 107452 },	-- Old Fillmaff
+						["sourceQuest"] = 41113,	-- The Only Way to Travel
+					}),
+					q(42494, {	-- More Than Just A Food Vendor
+						["classes"] = { MAGE },
+					}),
+					q(42508, {	-- Not A Toothless Dragon
+						["classes"] = { MAGE },
+					}),
+					q(46722),	-- Nothing Up My Sleeve
+					q(44768, {	-- Nyell's Workshop
+						["classes"] = { MAGE },
+					}),
+					q(44240, {	-- Orange is the New Purple
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(139749),	-- Cowl of Tirisgarde
+						},
+					}),
+					q(44207),	-- Portal Full of Shiny Things
+					q(42435, {	-- Prepare To Be Assimilated
+						["maps"] = { 630 },
+						["coord"] = { 64.8, 37.9, 630 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 107532 },	-- Ravandwyr
+						["sourceQuest"] = 42434,	-- A Covert Operation
+					}),
+					q(44098, {	-- Recruiting Apprentices
+						["lvl"] = 103,
+						["coord"] = { 80.8, 63.0, 734 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 108515 },	-- Archmage Melis
+						["sourceQuest"] = 42171,	-- Final Exit
+					}),
+					q(45251),	-- Redundancy
+					q(46705, {	-- Retaliation
+						["classes"] = { MAGE },
+					}),
+					q(46290),	-- Return of the Archmage
+					q(42663, {	-- Rise, Champions
+						["lvl"] = 101,
+						["coord"] = { 55.3, 38.1, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["sourceQuests"] = { 42175 },	-- Growing Power
+					}),
+					q(44770, {	-- Secrets of the Shal'dorei
+						["classes"] = { MAGE },
+					}),
+					q(45630),	-- Servant to No One
+					q(42149, {	-- Some Knowledge Shouldn't Be Shared
+						["maps"] = { 630 },
+						["coord"] = { 66.4, 33.5, 630 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 106656 },	-- Esara Verrinde
+						["sourceQuest"] = 42166,	-- What Is Going On Here?
+					}),
+					q(42696, {	-- Tech It Up A Notch
+						["lvl"] = 101,
+						["coord"] = { 80.9, 63.1, 734 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 108515 },	-- Archmage Melis
+						["sourceQuest"] = 42687,	-- Troops in the Field
+					}),
+					q(42703, {	-- Technical Wizardry
+						["lvl"] = 101,
+						["coord"] = { 55.3, 38.1, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["sourceQuest"] = 42663,	-- Rise, Champions
+					}),
+					q(41114),	-- The Champion's Return
+					q(42416, {	-- The Council is in Session
+						["coord"] = { 71.7, 54.9, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 107351 },	-- Archmage Khadgar
+						["sourceQuest"] = 42222,	-- Empyrean Society Report
+					}),
+					q(42476, {	-- The Deadwind Site
+						["coord"] = { 59.1, 43.0, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["sourceQuest"] = 42452,	-- Finding Ebonchill
+					}),
+					q(41036, {	-- The Dreadlord's Prize
+						["maps"] = { 627 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["sourceQuest"] = 41035,	-- Felstorm's Plea
+						["g"] = {
+							sp(204287),	-- Teleport: Hall of the Guardian
+						},
+					}),
+					q(42521, {	-- The Enemy of My Enemy...
+						["classes"] = { MAGE },
+						["provider"] = { "n", 111553 },	-- Kalecgos
+						["sourceQuest"] = 42508,	-- Not a Toothless Dragon
+					}),
+					q(11997, {	-- The Frozen Flame
+						["coord"] = { 28.6, 37.2, 25 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 99415 },	-- Aethas Sunreaver
+						["sourceQuest"] = 40270,	-- The Path of Atonement
+					}),
+					q(41112, {	-- The Great Akazamzarak
+						["coord"] = { 56.5, 33.8, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["sourceQuests"] = {
+							42479,	-- The Mage Hunter (Frost)
+							42011,	-- The Nexus Vault (Arcane)
+							11997,	-- The Frozen Flame (Fire)
+							--41125,	-- Unlocked Potential
+						},
+					}),
+					q(42479, {	-- The Mage Hunter
+						["coord"] = { 59.1, 43.0, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["sourceQuests"] = {
+							42455,	-- Alodi's Gems
+							42477,	-- Daio the Decrepit
+							42476,	-- The Deadwind Site
+						},
+					}),
+					q(44209),	-- The Might of Dalaran
+					q(44689),	-- The Might of the Tirisgarde
+					q(42206, {	-- The Next Level Has Arrived
+						["maps"] = { 630 },
+						["coord"] = { 66.4, 33.5, 630 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 106656 },	-- Esara Verrinde
+						["sourceQuest"] = 42166,	-- What Is Going On Here?
+					}),
+					q(42011, {	-- The Nexus Vault
+						["maps"] = { 114 },
+						["coord"] = { 27.8, 26.7, 114 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 105917 },	-- Image of Kalec
+						["sourceQuest"] = 42010,	-- Arcane Unleashed
+					}),
+					q(45207, {	-- The Nightborne Apprentice
+						["classes"] = { MAGE },
+						["provider"] = { "n", 118242 },	-- Aethas Sunreaver
+						["sourceQuest"] = 46338,	-- A Creative Solution
+					}),
+					q(41113, {	-- The Only Way to Travel
+						["maps"] = { 627 },
+						["coord"] = { 48.5, 63.4, 627 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
+						["sourceQuest"] = 41112,	-- The Great Akazamzarak
+					}),
+					q(40270, {	-- The Path of Atonement
+						["maps"] = { 25 },
+						["coord"] = { 28.6, 37.2, 25 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 99398 },	-- Archmage Modera
+						["sourceQuest"] = 40267,	-- An Unexpected Message
+					}),
+					q(42955),	-- The Proper Way of Things
+					q(41124, {	-- The Tirisgarde Reborn
+						["coord"] = { 60.4, 34.6, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["sourceQuest"] = 41113,	-- The Only Way to Travel
+					}),
+					q(46335),	-- The Vault of the Tirisgarde
+					q(42959),	-- Three Is a Lucky Number
+					q(44310, {	-- Thrice the Power
+						["lvl"] = 102,
+						["coord"] = { 55.3, 38.1, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["sourceQuest"] = 43441,	-- A Second Weapon
+					}),
+					q(42687, {	-- Troops in the Field
+						["lvl"] = 101,
+						["coord"] = { 80.9, 63.0, 734 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 108515 },	-- Archmage Melis
+						["sourceQuest"] = 42127,	-- Building Our Troops
+					}),
+					q(41125, {	-- Unlocked Potential
+						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { MAGE },
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["sourceQuests"] = { 41114 },	-- The Champion's Return
+					}),
+					q(46940, {	-- Using Lost Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(42166, {	-- What Is Going On Here?
+						["maps"] = { 630 },
+						["coord"] = { 64.3, 31.3, 630 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 106530 },	-- Ravandwyr
+						["sourceQuest"] = 42435,	-- Prepare To Be Assimilated
+					}),
+					q(42940),	-- When There's a Will, There's a Way
 				}),
 				n(VENDORS, {
 					n(112440, {	-- Jackson Watkins <Tirisgarde Quartermaster>
@@ -431,7 +665,7 @@ _.ExpansionFeatures =
 					}),
 					n(103169, {	-- Uthel'nay
 						["sourceQuests"] = { 45354 },	-- Dispersion of the Discs
-						["classes"] = {8},
+						["classes"] = { MAGE },
 						["g"] = {
 							i(147832, {	-- Magical Saucer Toy
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources

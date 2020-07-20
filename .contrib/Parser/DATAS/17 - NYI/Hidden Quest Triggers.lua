@@ -1150,6 +1150,18 @@ _.NeverImplemented =
 		q(44368),	-- Hunter Order Hall - Marksmanship Chosen
 		q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
 
+		q(41079),	-- Mage Order Hall - Arcane chosen first
+		q(43442),	-- Mage Order Hall - Arcane chosen second
+		q(44307),	-- Mage Order Hall - Arcane chosen third
+		q(41080),	-- Mage Order Hall - Fire chosen first
+		q(43443),	-- Mage Order Hall - Fire chosen second
+		q(44308),	-- Mage Order Hall - Fire chosen third
+		q(41081),	-- Mage Order Hall - Frost chosen first
+		q(43444),	-- Mage Order Hall - Frost chosen second
+		q(44309),	-- Mage Order Hall - Frost chosen third
+		q(42727),	-- Mage Order Hall - Transition to Forge Quests (triggered after completing The Mage Hunter as first artifact weapon)
+		q(44645),	-- Mage Order Hall - Completed the "Ancient Magic" mission
+
 		q(40516),	-- Monk Order Hall - The Dawning Bit (Triggered after accepting The Dawning Light)
 		q(40638),	-- Monk Order Hall - Windwalker Chosen
 		q(40639),	-- Monk Order Hall - Mistweaver Chosen

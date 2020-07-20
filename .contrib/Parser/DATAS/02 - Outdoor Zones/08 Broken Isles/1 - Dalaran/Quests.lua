@@ -210,14 +210,6 @@ _.Zones =
 					["lvl"] = 101,
 					["provider"] = { "n", 112693 },	-- Black Harvest Acolyte
 				}),
-				q(42006, {	-- A New Threat
-					["sourceQuests"] = {
-						42001,	-- Aluneth, Greatstaff of the Magna
-						42003,	-- Kept Secret, Kept Safe
-					},
-					["classes"] = { MAGE },
-					["provider"] = { "n", 105081 },	-- Archmage Kalec
-				}),
 				q(41626, {	-- A New Threat
 					["sourceQuests"] = { 41625 },	-- The Light's Wrath
 					["classes"] = { PRIEST },
@@ -281,10 +273,6 @@ _.Zones =
 					["provider"] = { "n", 117871 },	-- War Councilor Victoria
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(40267, {	-- An Unexpected Message
-					["classes"] = { MAGE },
-					["provider"] = { "n", 102700 },	-- Meryl Felstorm
-				}),
 				q(38710, {	-- An Urgent Gathering
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 92909 },	-- Lord Maxwell Tyrosus
@@ -302,12 +290,6 @@ _.Zones =
 						{ "n", 90417 },	-- Archmage Khadgar
 						{ "n", 115464 },	-- Archmage Khadgar
 					},
-				}),
-				q(42423, {	-- Archmage Vargoth's Retreat
-					["sourceQuests"] = { 42416 },	-- The Council is in Session
-					["classes"] = { MAGE },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 90431 },	-- Archmage Ansirem Runeweaver
 				}),
 				q(46730, {	-- Armies of Legionfall
 					["sourceQuests"] = { 45727 },	-- Uniting the Isles
@@ -668,9 +650,6 @@ _.Zones =
 					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
 					["isDaily"] = true,
 				}),
-				q(41035, {	-- Felstorm's Plea
-					["classes"] = { MAGE },
-				}),
 				q(47059, {	-- Feral: The Folly of Levia Laurence
 					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
@@ -712,11 +691,6 @@ _.Zones =
 					["provider"] = { "n", 90463 },	-- Archmage Karlain
 					["coord"] = { 42.7, 28.4, 627 },
 					["lvl"] = 110,
-				}),
-				q(42424, {	-- Following In His Footsteps
-					["sourceQuests"] = { 42423 },	-- Archmage Vargoth's Retreat
-					["classes"] = { MAGE },
-					["provider"] = { "n", 107423 },	-- Archmage Kalec
 				}),
 				q(45917, {	-- Following the Scent
 					["sourceQuests"] = { 45125 },	-- Dabbling in the Demonic
@@ -1362,14 +1336,6 @@ _.Zones =
 					["classes"] = { MAGE },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
-				q(41036, {	-- The Dreadlord's Prize
-					["sourceQuests"] = { 41035 },	-- Felstorm's Plea
-					["classes"] = { MAGE },
-					["provider"] = { "n", 102700 },	-- Meryl Felstorm
-					["g"] = {
-						sp(204287),	-- Teleport: Hall of the Guardian
-					},
-				}),
 				q(39427, {	-- The Eagle Spirit's Blessing
 					["sourceQuests"] = { 41542 },	-- Preparation for the Hunt
 					["classes"] = { HUNTER },
@@ -1387,11 +1353,6 @@ _.Zones =
 					["classes"] = { PALADIN, ROGUE, SHAMAN, MAGE, WARLOCK },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(41112, {	-- The Great Akazamzarak
-					["sourceQuests"] = { 41125 },	-- Unlocked Potential
-					["classes"] = { MAGE },
-					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
 				q(48506, {	-- The Hand of Fate (A)
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
@@ -1484,10 +1445,6 @@ _.Zones =
 					["coord"] = { 57.3, 60.8, 628 },	-- Dalaran Underbelly
 					["provider"] = { "n", 101456 },	-- Ritssyn Flamescowl
 				}),
-				q(42011, {	-- The Nexus Vault
-					["sourceQuests"] = { 42010 },	-- Arcane Unleashed
-					["classes"] = { MAGE },
-				}),
 				q(41631, {	-- The Nexus Vault
 					["sourceQuests"] = { 41630 },	-- Unleashing Judgment
 					["classes"] = { PRIEST },
@@ -1496,11 +1453,6 @@ _.Zones =
 					["sourceQuests"] = { 46338 },	-- A Creative Solution
 					["classes"] = { MAGE },
 					["provider"] = { "n", 118242 },	-- Aethas Sunreaver
-				}),
-				q(41113, {	-- The Only Way to Travel
-					["sourceQuests"] = { 41112 },	-- The Great Akazamzarak
-					["classes"] = { MAGE },
-					["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 				}),
 				q(46322, {	-- The Pirate's Bay
 					["classes"] = { ROGUE },
@@ -1531,19 +1483,12 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["provider"] = { "n", 103506 },	-- Ritssyn Flamescowl
 				}),
-				q(41124, {	-- The Tirisgarde Reborn
-					["classes"] = { MAGE },
-					["provider"] = { "n", 102700 },	-- Meryl Felstorm
-				}),
 				q(40684, {	-- The Tome of Blighted Implements
 					["sourceQuests"] = { 40729 },	-- The New Blood
 					["classes"] = { WARLOCK },
 					["coord"] = { 56.3, 65.0, 628 },
 					["lvl"] = 98,
 					["provider"] = { "n", 101097 },	-- Calydus
-				}),
-				q(39731, {	-- The Tranquil Forest
-					["provider"] = { "n", 98000 },	-- Scouting Map
 				}),
 				q(44174, {	-- The Very Best
 					["u"] = REMOVED_FROM_GAME,
@@ -1675,12 +1620,6 @@ _.Zones =
 							["modID"] = 11,
 						}),
 					},
-				}),
-				q(41125, {	-- Unlocked Potential
-					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { MAGE },
-					["provider"] = { "n", 102700 },	-- Meryl Felstorm
-					["sourceQuests"] = { 41114 },	-- The Champion's Return
 				}),
 				q(46314, {	-- Vengeance: Seeking Kor'vas
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration

@@ -18,13 +18,6 @@ _.Zones =
 					["provider"] = { "n", 27350 },	-- Agent Skully
 					["sourceQuest"] = 12260,	-- The Perfect Dissemblance
 				}),
-				q(42007, {	-- A Forgotten Enemy (Mage)
-					["lvl"] = 98,
-					["coord"] = { 56.7, 69.1, 115 },
-					["model"] = 192568,
-					["classes"] = { 8 },	-- Mage
-					["provider"] = { "o", 248398 },	-- Ethereal Communication Device
-				}),
 				q(41627, {	-- A Forgotten Enemy (Priest)
 					["lvl"] = 98,
 					["coord"] = { 56.7, 69.1, 115 },
