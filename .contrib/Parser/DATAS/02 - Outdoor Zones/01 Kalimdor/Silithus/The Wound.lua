@@ -151,6 +151,7 @@ _.Zones =
 							["sourceQuest"] = 50364,	-- The Blood of Azeroth
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132147 },	-- Grol Warblade
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(50049, {	-- The Speaker's Perspective
 							["sourceQuest"] = 50373,	-- A Recent Arrival
