@@ -1,5 +1,5 @@
 -----------------------------------------------------
---   D U N G E O N S  &  R A I D S  M O D U L E   	--
+--   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
@@ -1722,7 +1722,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					n(COMMON_BOSS_DROPS, {
 						un(REMOVED_FROM_GAME, i(104275, {	-- Twisted Treasures of the Vale
 							["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
-							--[[
 							["crs"] = {
 								71543,	-- Immerseus
 								71479,	-- He Softfoot [The Fallen Protectors]
@@ -1731,7 +1730,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								72276,	-- Amalgam of Corruption
 								71734,	-- Sha of Pride
 							},
-							]]--
 							["g"] = {
 								i(105824),	-- Aeth's Swiftcinder Cloak
 								i(105816),	-- Brave Niunai's Cloak
@@ -1746,7 +1744,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(105814),	-- Seebo's Sainted Touch
 								i(105817),	-- Siid's Silent Stranglers
 								i(105825),	-- Turtleshell Greatcloak
-								i(105822),	-- Zoid's Molten Gauntlets								
+								i(105822),	-- Zoid's Molten Gauntlets
 								-- Pets / Mounts
 								i(94295),	-- Primal Egg
 								i(44984),	-- Ammen Vale Lashling
@@ -1784,7 +1782,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						})),
 						un(REMOVED_FROM_GAME, i(105714, {	-- Coalesced Turmoil
 							["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
-							--[[
 							["crs"] = {
 								72249,	-- Galakras
 								71466,	-- Iron Juggernaut
@@ -1806,13 +1803,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								71157,	-- Xaril the Poisoned Mind
 								71865,	-- Garrosh Hellscream
 							},
-							]]--
 						})),
 					}),
 					n(ZONEDROPS, {
 						-- Confirmed drops are uncommented
-						--[[{	-- Aeth's Swiftcinder Cloak
-							["itemID"] = 113224,	-- Aeth's Swiftcinder Cloak
+						--[[
+						i(113224, {	-- Aeth's Swiftcinder Cloak
 							["crs"] = {
 								72658,	-- Amalgamated Hubris
 								73191,	-- Aqueous Defender
@@ -1854,9 +1850,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								73349,	-- Tormented Initiate
 								73775,	-- War Master Kragg
 							},
-						},
-						{	-- Brave Niunai's Cloak
-							["itemID"] = 113231,	-- Brave Niunai's Cloak
+						}),
+						i(113231, {	-- Brave Niunai's Cloak
 							["crs"] = {
 								72658,	-- Amalgamated Hubris
 								73191,	-- Aqueous Defender
@@ -1894,9 +1889,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								73152,	-- Storeroom Guard
 								73349,	-- Tormented Initiate
 							},
-						},
-						{	-- Cape of the Alpha
-							["itemID"] = 113226,	-- Cape of the Alpha
+						}),
+						i(113226, {	-- Cape of the Alpha
 							["crs"] = {
 								72658,	-- Amalgamated Hubris
 								73188,	-- Captive Cave Bat
@@ -1939,9 +1933,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								72434,	-- Treasury Guard
 								73775,	-- War Master Kragg
 							},
-						},
-						{	-- Drape of the Omega
-							["itemID"] = 113230,	-- Drape of the Omega
+						}),
+						i(113230, {	-- Drape of the Omega
 							["crs"] = {
 								72658,	-- Amalgamated Hubris
 								73191,	-- Aqueous Defender
@@ -1987,9 +1980,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								73349,	-- Tormented Initiate
 								72434,	-- Treasury Guard
 							},
-						},
-						{	-- Turtleshell Greatcloak
-							["itemID"] = 113223,	-- Turtleshell Greatcloak
+						}),
+						i(113223, {	-- Turtleshell Greatcloak
 							["crs"] = {
 								72658,	-- Amalgamated Hubris
 								73191,	-- Aqueous Defender
@@ -2036,9 +2028,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								73775,	-- War Master Kragg
 								72661,	-- Zeal
 							},
-						},
-						{	-- Kalaena's Arcane Handwraps
-							["itemID"] = 113225,	-- Kalaena's Arcane Handwraps
+						}),
+						i(113225, {	-- Kalaena's Arcane Handwraps
 							["crs"] = {
 								72658,	-- Amalgamated Hubris
 								73188,	-- Captive Cave Bat
@@ -2084,9 +2075,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								73667,	-- Windreaver Tar'rath
 								72661,	-- Zeal
 							},
-						},
-						{	-- Seebo's Sainted Touch
-							["itemID"] = 113218,	-- Seebo's Sainted Touch
+						}),
+						i(113218, {	-- Seebo's Sainted Touch
 							["crs"] = {
 								72658,	-- Amalgamated Hubris
 								73188,	-- Captive Cave Bat
@@ -2128,9 +2118,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								73152,	-- Storeroom Guard
 								73349,	-- Tormented Initiate
 							},
-						},
-						{	-- Crimson Gauntlets of Death
-							["itemID"] = 113220,	-- Crimson Gauntlets of Death
+						}),
+						i(113220, {	-- Crimson Gauntlets of Death
 							["crs"] = {
 								72658,	-- Amalgamated Hubris
 								72131,	-- Blind Blademaster
@@ -2173,9 +2162,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								73349,	-- Tormented Initiate
 								72661,	-- Zeal
 							},
-						},
-						{	-- Siid's Silent Stranglers
-							["itemID"] = 113221,	-- Siid's Silent Stranglers
+						}),
+						i(113221, {	-- Siid's Silent Stranglers
 							["crs"] = {
 								72658,	-- Amalgamated Hubris
 								73191,	-- Aqueous Defender
@@ -2221,9 +2209,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								72434,	-- Treasury Guard
 								73775,	-- War Master Kragg
 							},
-						},]]
-						{	-- Keengrip Arrowpullers
-							["itemID"] = 113222,	-- Keengrip Arrowpullers
+						}),
+						]]
+						i(113222, {	-- Keengrip Arrowpullers
 							["crs"] = {
 								72658,	-- Amalgamated Hubris
 								73191,	-- Aqueous Defender
@@ -2263,9 +2251,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								73349,	-- Tormented Initiate
 								72661,	-- Zeal
 							},
-						},
-						--[[{	-- Marco's Crackling Gloves
-							["itemID"] = 113227,	-- Marco's Crackling Gloves
+						}),
+						--[[
+						i(113227, {	-- Marco's Crackling Gloves
 							["crs"] = {
 								73191,	-- Aqueous Defender
 								73188,	-- Captive Cave Bat
@@ -2305,9 +2293,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								73349,	-- Tormented Initiate
 								72661,	-- Zeal
 							},
-						},
-						{	-- Gauntlets of Discarded Time
-							["itemID"] = 113228,	-- Gauntlets of Discarded Time
+						}),
+						i(113228, {	-- Gauntlets of Discarded Time
 							["crs"] = {
 								72658,	-- Amalgamated Hubris
 								73191,	-- Aqueous Defender
@@ -2352,9 +2339,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								73152,	-- Storeroom Guard
 								73349,	-- Tormented Initiate
 							},
-						},
-						{	-- Romy's Reliable Grips
-							["itemID"] = 113219,	-- Romy's Reliable Grips
+						}),
+						i(113219, {	-- Romy's Reliable Grips
 							["crs"] = {
 								72658,	-- Amalgamated Hubris
 								72131,	-- Blind Blademaster
@@ -2394,9 +2380,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								73349,	-- Tormented Initiate
 								72661,	-- Zeal
 							},
-						},
-						{	-- Zoid's Molten Gauntlets
-							["itemID"] = 113229,	-- Zoid's Molten Gauntlets
+						}),
+						i(113229, {	-- Zoid's Molten Gauntlets
 							["crs"] = {
 								72658,	-- Amalgamated Hubris
 								73191,	-- Aqueous Defender
@@ -2438,7 +2423,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								73349,	-- Tormented Initiate
 								73775,	-- War Master Kragg
 							},
-						},]]
+						}),
+						]]
 					}),
 					ach(8458, {	-- Vale of Eternal Sorrows
 						["crs"] = {
@@ -2446,10 +2432,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							cr(71543, e(852, {	-- Immerseus
-								{	-- Vale of Eternal Sorrows: Immerseus
+								crit(1, {	-- Immerseus
 									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-									["criteriaID"] = 1,	-- Immerseus
-								},
+								}),
 								i(110784),	-- Trident of Corrupted Waters
 								i(110785),	-- Encapsulated Essence of Immerseus
 								i(112382),	-- Hood of Blackened Tears
@@ -2480,10 +2465,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									71480,	-- Sun Tenderheart [The Fallen Protectors]
 								},
 								["g"] = {
-									{	-- Vale of Eternal Sorrows: Fallen Protectors
+									crit(2, {	-- Fallen Protectors
 										["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-										["criteriaID"] = 2,	-- Fallen Protectors
-									},
+									}),
 									i(112477),	-- Softfoot's Last Resort
 									i(112478),	-- Death Lotus Crossbow
 									i(112491),	-- Purehearted Cricket Cage
@@ -2513,10 +2497,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									72276,	-- Amalgam of Corruption
 								},
 								["g"] = {
-									{	-- Vale of Eternal Sorrows: Norushen
+									crit(3, {	-- Norushen
 										["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-										["criteriaID"] = 3,	-- Norushen
-									},
+									}),
 									i(112547),	-- Norushen's Shortblade
 									i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 									i(112560),	-- Norushen's Enigmatic Barrier
@@ -2542,10 +2525,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								},
 							}),
 							cr(71734, e(867, {	-- Sha of Pride
-								{	-- Vale of Eternal Sorrows: Sha of Pride
+								crit(4, {	-- Sha of Pride
 									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-									["criteriaID"] = 4,	-- Sha of Pride
-								},
+								}),
 								i(99678, {	-- Chest of the Cursed Conqueror
 									i(99052),	-- Battleplate of Winged Triumph
 									i(99003),	-- Breastplate of Winged Triumph
@@ -2596,10 +2578,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							cr(72249, e(881, {	-- Galakras
-								{	-- Gates of Retribution: Galakras
+								crit(1, {	-- Galakras
 									["achievementID"] = 8459,	-- Gates of Retribution
-									["criteriaID"] = 1,	-- Galakras
-								},
+								}),
 								i(112723),	-- Drakebinder Greatstaff
 								i(112710),	-- Dagryn's Discarded Longbow
 								i(112717),	-- Flameslinger's Fiery Cowl
@@ -2624,10 +2605,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112703),	-- Evil Eye of Galakras
 							})),
 							cr(71466, e(864, {	-- Iron Juggernaut
-								{	-- Gates of Retribution: Iron Juggernaut
+								crit(2, {	-- Iron Juggernaut
 									["achievementID"] = 8459,	-- Gates of Retribution
-									["criteriaID"] = 2,	-- Iron Juggernaut
-								},
+								}),
 								i(112736),	-- Seismic Bore
 								i(112748),	-- Juggernaut's Power Core
 								i(112742),	-- Juggernaut's Ignition Keys
@@ -2652,10 +2632,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112729),	-- Juggernaut's Focusing Crystal
 							})),
 							cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
-								{	-- Gates of Retribution: Kor'kron Dark Shaman
+								crit(3, {	-- Kor'kron Dark Shaman
 									["achievementID"] = 8459,	-- Gates of Retribution
-									["criteriaID"] = 3,	-- Kor'kron Dark Shaman
-								},
+								}),
 								i(112759),	-- Haromm's Frozen Crescent
 								i(112769),	-- Kardris' Scepter
 								i(112770),	-- Darkfang Mask
@@ -2679,10 +2658,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112768),	-- Kardris' Toxic Totem
 							})),
 							cr(71515, e(850, {	-- General Nazgrim
-								{	-- Gates of Retribution: General Nazgrim
+								crit(4, {	-- General Nazgrim
 									["achievementID"] = 8459,	-- Gates of Retribution
-									["criteriaID"] = 4,	-- General Nazgrim
-								},
+								}),
 								i(99681, {	-- Gauntlets of the Cursed Conqueror
 									i(99002),	-- Gauntlets of Winged Triumph
 									i(98982),	-- Gloves of Winged Triumph
@@ -2732,10 +2710,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							cr(71454, e(846, {	-- Malkorok
-								{	-- The Underhold: Malkorok
+								crit(1, {	-- Malkorok
 									["achievementID"] = 8461,	-- The Underhold
-									["criteriaID"] = 1,	-- Malkorok
-								},
+								}),
 								i(112805),	-- Halberd of Inner Shadows
 								i(112804),	-- Malkorok's Skullcleaver
 								i(112806),	-- Kor'kron Hand Cannon
@@ -2760,10 +2737,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112792),	-- Vial of Living Corruption
 							})),
 							cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-								{	-- The Underhold: Spoils of Pandaria
+								crit(2, {	-- Spoils of Pandaria
 									["achievementID"] = 8461,	-- The Underhold
-									["criteriaID"] = 2,	-- Spoils of Pandaria
-								},
+								}),
 								i(112835),	-- Enchanted Shao-Tien Saber
 								i(112841),	-- Immaculately Preserved Wand
 								i(112829),	-- Ancient Mogu Tower Shield
@@ -2787,10 +2763,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112825),	-- Sigil of Rampage
 							})),
 							cr(71529, e(851, {	-- Thok the Bloodthirsty
-								{	-- The Underhold: Thok the Bloodthirsty
+								crit(3, {	-- Thok the Bloodthirsty
 									["achievementID"] = 8461,	-- The Underhold
-									["criteriaID"] = 3,	-- Thok the Bloodthirsty
-								},
+								}),
 								i(99672, {	-- Helm of the Cursed Conqueror
 									i(99029),	-- Faceguard of Winged Triumph
 									i(98979),	-- Headguard of Winged Triumph
@@ -2840,10 +2815,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							cr(71504, e(865, {	-- Siegecrafter Blackfuse
-								{	-- Downfall: Siegecrafter Blackfuse
+								crit(1, {	-- Siegecrafter Blackfuse
 									["achievementID"] = 8462,	-- Downfall
-									["criteriaID"] = 1,	-- Siegecrafter Blackfuse
-								},
+								}),
 								i(104158),	-- Blackfuse Bombling (PET!)
 								i(99669, {	-- Shoulders of the Cursed Conqueror
 									i(99076),	-- Mantle of Winged Triumph
@@ -2887,10 +2861,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112879),	-- Ticking Ebon Detonator
 							})),
 							cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-								{	-- Downfall: Paragons of the Klaxxi
+								crit(2, {	-- Paragons of the Klaxxi
 									["achievementID"] = 8462,	-- Downfall
-									["criteriaID"] = 2,	-- Paragons of the Klaxxi
-								},
+								}),
 								i(104165),	-- Kovok (PET!)
 								i(99675, {	-- Leggings of the Cursed Conqueror
 									i(98980),	-- Greaves of Winged Triumph
@@ -2934,16 +2907,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112913),	-- Skeer's Bloodsoaked Talisman
 							})),
 							cr(71865, e(869, {	-- Garrosh Hellscream
-								{	-- Downfall: Garrosh Hellscream
+								crit(3, {	-- Garrosh Hellscream
 									["achievementID"] = 8462,	-- Downfall
-									["criteriaID"] = 3,	-- Garrosh Hellscream
-								},
-								{	-- Essence of the Cursed Conqueror
-									["itemID"] = 105861,
+								}),
+								i(105861, {	-- Essence of the Cursed Conqueror
 									["classes"] = {
-										2,	-- Paladin
-										5,	-- Priest
-										9,	-- Warlock
+										PALADIN,
+										PRIEST,
+										WARLOCK,
 									},
 									["sym"] = {
 										{"select", "itemID", 99672}, -- Helm of the Cursed Conqueror
@@ -2953,14 +2924,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 										{"select", "itemID", 99675}, -- Leggings of the Cursed Conqueror
 										{"pop"},
 									},
-								},
-								{	-- Essence of the Cursed Protector
-									["itemID"] = 105860,
+								}),
+								i(105860, {	-- Essence of the Cursed Protector
 									["classes"] = {
-										3,	-- Hunter
-										10,	-- Monk
-										7,	-- Shaman
-										1,	-- Warrior
+										HUNTER,
+										MONK,
+										SHAMAN,
+										WARRIOR,
 									},
 									["sym"] = {
 										{"select", "itemID", 99673}, -- Helm of the Cursed Protector
@@ -2970,14 +2940,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 										{"select", "itemID", 99676}, -- Leggings of the Cursed Protector
 										{"pop"},
 									},
-								},
-								{	-- Essence of the Cursed Vanquisher
-									["itemID"] = 105862,
+								}),
+								i(105862, {	-- Essence of the Cursed Vanquisher
 									["classes"] = {
-										6,	-- Death Knight
-										11,	-- Druid
-										8,	-- Mage
-										4,	-- Rogue
+										DEATHKNIGHT,
+										DRUID,
+										MAGE,
+										ROGUE,
 									},
 									["sym"] = {
 										{"select", "itemID", 99671}, -- Helm of the Cursed Vanquisher
@@ -2987,7 +2956,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 										{"select", "itemID", 99674}, -- Leggings of the Cursed Vanquisher
 										{"pop"},
 									},
-								},
+								}),
 								i(112932),	-- Kor'kron Spire of Supremacy
 								i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
 								i(112939),	-- Horned Mace of the Old Ones
@@ -3011,13 +2980,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112924),	-- Curse of Hubris
 							})),
 						},
-					}),	
+					}),
 				},
 			}),
 			d(14, {	-- Normal
 				n(ZONEDROPS, {
-					{	-- Aeth's Swiftcinder Cloak
-						["itemID"] = 113224,	-- Aeth's Swiftcinder Cloak
+					i(113224, {	-- Aeth's Swiftcinder Cloak
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -3059,9 +3027,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							73775,	-- War Master Kragg
 						},
-					},
-					{	-- Brave Niunai's Cloak
-						["itemID"] = 113231,	-- Brave Niunai's Cloak
+					}),
+					i(113231, {	-- Brave Niunai's Cloak
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -3099,9 +3066,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73152,	-- Storeroom Guard
 							73349,	-- Tormented Initiate
 						},
-					},
-					{	-- Cape of the Alpha
-						["itemID"] = 113226,	-- Cape of the Alpha
+					}),
+					i(113226, {	-- Cape of the Alpha
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73188,	-- Captive Cave Bat
@@ -3144,9 +3110,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							72434,	-- Treasury Guard
 							73775,	-- War Master Kragg
 						},
-					},
-					{	-- Drape of the Omega
-						["itemID"] = 113230,	-- Drape of the Omega
+					}),
+					i(113230, {	-- Drape of the Omega
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -3192,9 +3157,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72434,	-- Treasury Guard
 						},
-					},
-					{	-- Turtleshell Greatcloak
-						["itemID"] = 113223,	-- Turtleshell Greatcloak
+					}),
+					i(113223, {	-- Turtleshell Greatcloak
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -3241,9 +3205,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73775,	-- War Master Kragg
 							72661,	-- Zeal
 						},
-					},
-					{	-- Kalaena's Arcane Handwraps
-						["itemID"] = 113225,	-- Kalaena's Arcane Handwraps
+					}),
+					i(113225, {	-- Kalaena's Arcane Handwraps
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73188,	-- Captive Cave Bat
@@ -3289,9 +3252,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73667,	-- Windreaver Tar'rath
 							72661,	-- Zeal
 						},
-					},
-					{	-- Seebo's Sainted Touch
-						["itemID"] = 113218,	-- Seebo's Sainted Touch
+					}),
+					i(113218, {	-- Seebo's Sainted Touch
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73188,	-- Captive Cave Bat
@@ -3333,9 +3295,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73152,	-- Storeroom Guard
 							73349,	-- Tormented Initiate
 						},
-					},
-					{	-- Crimson Gauntlets of Death
-						["itemID"] = 113220,	-- Crimson Gauntlets of Death
+					}),
+					i(113220, {	-- Crimson Gauntlets of Death
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							72131,	-- Blind Blademaster
@@ -3378,9 +3339,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72661,	-- Zeal
 						},
-					},
-					{	-- Siid's Silent Stranglers
-						["itemID"] = 113221,	-- Siid's Silent Stranglers
+					}),
+					i(113221, {	-- Siid's Silent Stranglers
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -3426,9 +3386,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							72434,	-- Treasury Guard
 							73775,	-- War Master Kragg
 						},
-					},
-					{	-- Keengrip Arrowpullers
-						["itemID"] = 113222,	-- Keengrip Arrowpullers
+					}),
+					i(113222, {	-- Keengrip Arrowpullers
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -3468,9 +3427,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72661,	-- Zeal
 						},
-					},
-					{	-- Marco's Crackling Gloves
-						["itemID"] = 113227,	-- Marco's Crackling Gloves
+					}),
+					i(113227, {	-- Marco's Crackling Gloves
 						["crs"] = {
 							73191,	-- Aqueous Defender
 							73188,	-- Captive Cave Bat
@@ -3510,9 +3468,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72661,	-- Zeal
 						},
-					},
-					{	-- Gauntlets of Discarded Time
-						["itemID"] = 113228,	-- Gauntlets of Discarded Time
+					}),
+					i(113228, {	-- Gauntlets of Discarded Time
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -3557,9 +3514,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73152,	-- Storeroom Guard
 							73349,	-- Tormented Initiate
 						},
-					},
-					{	-- Romy's Reliable Grips
-						["itemID"] = 113219,	-- Romy's Reliable Grips
+					}),
+					i(113219, {	-- Romy's Reliable Grips
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							72131,	-- Blind Blademaster
@@ -3599,9 +3555,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72661,	-- Zeal
 						},
-					},
-					{	-- Zoid's Molten Gauntlets
-						["itemID"] = 113229,	-- Zoid's Molten Gauntlets
+					}),
+					i(113229, {	-- Zoid's Molten Gauntlets
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -3643,16 +3598,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							73775,	-- War Master Kragg
 						},
-					},
+					}),
 				}),
 				cr(71543, e(852, {	-- Immerseus
-					{	-- No More Tears
-						["achievementID"] = 8536,	-- No More Tears
-					},
-					{	-- Vale of Eternal Sorrows: Immerseus
+					crit(1, {	-- Immerseus
 						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-						["criteriaID"] = 1,	-- Immerseus
-					},
+					}),
+					ach(8536),	-- No More Tears
 					i(110784),	-- Trident of Corrupted Waters
 					i(110785),	-- Encapsulated Essence of Immerseus
 					i(112382),	-- Hood of Blackened Tears
@@ -3683,13 +3635,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
 					["g"] = {
-						{	-- Go Long
-							["achievementID"] = 8528,	-- Go Long
-						},
-						{	-- Vale of Eternal Sorrows: Fallen Protectors
+						crit(2, {	-- Fallen Protectors
 							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-							["criteriaID"] = 2,	-- Fallen Protectors
-						},
+						}),
+						ach(8528),	-- Go Long
 						i(112477),	-- Softfoot's Last Resort
 						i(112478),	-- Death Lotus Crossbow
 						i(112491),	-- Purehearted Cricket Cage
@@ -3718,13 +3667,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71965,	-- Norushen
 					},
 					["g"] = {
-						{	-- None Shall Pass
-							["achievementID"] = 8532,	-- None Shall Pass
-						},
-						{	-- Vale of Eternal Sorrows: Norushen
+						ach(8532),	-- None Shall Pass
+						crit(3, {	-- Norushen
 							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-							["criteriaID"] = 3,	-- Norushen
-						},
+						}),
 						i(112547),	-- Norushen's Shortblade
 						i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 						i(112560),	-- Norushen's Enigmatic Barrier
@@ -3750,13 +3696,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				})),
 				cr(71734, e(867, {	-- Sha of Pride
-					{	-- Swallow Your Pride
-						["achievementID"] = 8521,	-- Swallow Your Pride
-					},
-					{	-- Vale of Eternal Sorrows: Sha of Pride
+					crit(4, {	-- Sha of Pride
 						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-						["criteriaID"] = 4,	-- Sha of Pride
-					},
+					}),
+					ach(8521),	-- Swallow Your Pride
 					i(99743, {	-- Chest of the Cursed Conqueror
 						i(99566),	-- Battleplate of Winged Triumph
 						i(99626),	-- Breastplate of Winged Triumph
@@ -3800,13 +3743,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112948),	-- Prismatic Prison of Pride
 				})),
 				cr(72249, e(881, {	-- Galakras
-					{	-- Gates of Retribution: Galakras
+					crit(1, {	-- Galakras
 						["achievementID"] = 8459,	-- Gates of Retribution
-						["criteriaID"] = 1,	-- Galakras
-					},
-					{	-- The Immortal Vanguard
-						["achievementID"] = 8530,	-- The Immortal Vanguard
-					},
+					}),
+					ach(8530),	-- The Immortal Vanguard
 					i(112723),	-- Drakebinder Greatstaff
 					i(112710),	-- Dagryn's Discarded Longbow
 					i(112717),	-- Flameslinger's Fiery Cowl
@@ -3831,13 +3771,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112703),	-- Evil Eye of Galakras
 				})),
 				cr(71466, e(864, {	-- Iron Juggernaut
-					{	-- Fire in the Hole!
-						["achievementID"] = 8520,	-- Fire in the Hole!
-					},
-					{	-- Gates of Retribution: Iron Juggernaut
+					ach(8520),	-- Fire in the Hole!
+					crit(2, {	-- Iron Juggernaut
 						["achievementID"] = 8459,	-- Gates of Retribution
-						["criteriaID"] = 2,	-- Iron Juggernaut
-					},
+					}),
 					i(112736),	-- Seismic Bore
 					i(112748),	-- Juggernaut's Power Core
 					i(112742),	-- Juggernaut's Ignition Keys
@@ -3867,13 +3804,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71858,	-- Wavebinder Kardris
 					},
 					["g"] = {
-						{	-- Gates of Retribution: Kor'kron Dark Shaman
+						crit(3, {	-- Kor'kron Dark Shaman
 							["achievementID"] = 8459,	-- Gates of Retribution
-							["criteriaID"] = 3,	-- Kor'kron Dark Shaman
-						},
-						{	-- Rescue Raiders
-							["achievementID"] = 8453,	-- Rescue Raiders
-						},
+						}),
+						ach(8453),	-- Rescue Raiders
 						i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
 							i(105745),	-- Kor'kron Dark Shaman Cowl
 							i(105747),	-- Kor'kron Dark Shaman Shoulder
@@ -3908,13 +3842,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				})),
 				cr(71515, e(850, {	-- General Nazgrim
-					{	-- Gamon Will Save Us!
-						["achievementID"] = 8448,	-- Gamon Will Save Us!
-					},
-					{	-- Gates of Retribution: General Nazgrim
+					ach(8448),	-- Gamon Will Save Us!
+					crit(4, {	-- General Nazgrim
 						["achievementID"] = 8459,	-- Gates of Retribution
-						["criteriaID"] = 4,	-- General Nazgrim
-					},
+					}),
 					i(99746, {	-- Gauntlets of the Cursed Conqueror
 						i(99625),	-- Gauntlets of Winged Triumph
 						i(99648),	-- Gloves of Winged Triumph
@@ -3957,13 +3888,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112778),	-- Nazgrim's Burnished Insignia
 				})),
 				cr(71454, e(846, {	-- Malkorok
-					{	-- The Underhold: Malkorok
+					crit(1, {	-- Malkorok
 						["achievementID"] = 8461,	-- The Underhold
-						["criteriaID"] = 1,	-- Malkorok
-					},
-					{	-- Unlimited Potential
-						["achievementID"] = 8538,	-- Unlimited Potential
-					},
+					}),
+					ach(8538),	-- Unlimited Potential
 					i(112805),	-- Halberd of Inner Shadows
 					i(112804),	-- Malkorok's Skullcleaver
 					i(112806),	-- Kor'kron Hand Cannon
@@ -3988,13 +3916,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112792),	-- Vial of Living Corruption
 				})),
 				cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-					{	-- Criss Cross
-						["achievementID"] = 8529,	-- Criss Cross
-					},
-					{	-- The Underhold: Spoils of Pandaria
+					ach(8529),	-- Criss Cross
+					crit(2, {	-- Spoils of Pandaria
 						["achievementID"] = 8461,	-- The Underhold
-						["criteriaID"] = 2,	-- Spoils of Pandaria
-					},
+					}),
 					i(112835),	-- Enchanted Shao-Tien Saber
 					i(112841),	-- Immaculately Preserved Wand
 					i(112829),	-- Ancient Mogu Tower Shield
@@ -4018,13 +3943,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112825),	-- Sigil of Rampage
 				})),
 				cr(71529, e(851, {	-- Thok the Bloodthirsty
-					{	-- Giant Dinosaur vs. Mega Snail
-						["achievementID"] = 8527,	-- Giant Dinosaur vs. Mega Snail
-					},
-					{	-- The Underhold: Thok the Bloodthirsty
+					ach(8527),	-- Giant Dinosaur vs. Mega Snail
+					crit(3, {	-- Thok the Bloodthirsty
 						["achievementID"] = 8461,	-- The Underhold
-						["criteriaID"] = 3,	-- Thok the Bloodthirsty
-					},
+					}),
 					i(99749, {	-- Helm of the Cursed Conqueror
 						i(99596),	-- Faceguard of Winged Triumph
 						i(99665),	-- Headguard of Winged Triumph
@@ -4067,31 +3989,15 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112850),	-- Thok's Tail Tip
 				})),
 				cr(71504, e(865, {	-- Siegecrafter Blackfuse
-					{	-- Downfall: Siegecrafter Blackfuse
+					ach(8543, {	-- Lasers and Magnets and Drills! Oh My!
+						crit(2),	-- Deactivated Electromagnet
+						crit(1),	-- Deactivated Laser Turret
+						crit(3),	-- Deactivated Missile Turret
+						crit(4),	-- Disassembled Crawler Mines
+					}),
+					crit(1, {	-- Siegecrafter Blackfuse
 						["achievementID"] = 8462,	-- Downfall
-						["criteriaID"] = 1,	-- Siegecrafter Blackfuse
-					},
-					{	-- Lasers and Magnets and Drills! Oh My!
-						["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-						["g"] = {
-							{	-- Deactivated Electromagnet
-								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-								["criteriaID"] = 2,	-- Deactivated Electromagnet
-							},
-							{	-- Deactivated Laser Turret
-								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-								["criteriaID"] = 1,	-- Deactivated Laser Turret
-							},
-							{	-- Deactivated Missile Turret
-								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-								["criteriaID"] = 3,	-- Deactivated Missile Turret
-							},
-							{	-- Disassembled Crawler Mines
-								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-								["criteriaID"] = 4,	-- Disassembled Crawler Mines
-							},
-						},
-					},
+					}),
 					i(104158),	-- Blackfuse Bombling (PET!)
 					i(99755, {	-- Shoulders of the Cursed Conqueror
 						i(99656),	-- Mantle of Winged Triumph
@@ -4135,13 +4041,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112879),	-- Ticking Ebon Detonator
 				})),
 				cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-					{	-- Downfall: Paragons of the Klaxxi
+					ach(8531),	-- Now We are the Paragon
+					crit(2, {	-- Paragons of the Klaxxi
 						["achievementID"] = 8462,	-- Downfall
-						["criteriaID"] = 2,	-- Paragons of the Klaxxi
-					},
-					{	-- Now We are the Paragon
-						["achievementID"] = 8531,	-- Now We are the Paragon
-					},
+					}),
 					i(104165),	-- Kovok (PET!)
 					i(99752, {	-- Leggings of the Cursed Conqueror
 						i(99666),	-- Greaves of Winged Triumph
@@ -4185,19 +4088,15 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112913),	-- Skeer's Bloodsoaked Talisman
 				})),
 				cr(71865, e(869, {	-- Garrosh Hellscream
-					{	-- Downfall: Garrosh Hellscream
+					crit(3, {	-- Garrosh Hellscream
 						["achievementID"] = 8462,	-- Downfall
-						["criteriaID"] = 3,	-- Garrosh Hellscream
-					},
-					{	-- Strike!	
-						["achievementID"] = 8537,	-- Strike!
-					},
-					{	-- Essence of the Cursed Conqueror
-						["itemID"] = 105864,
+					}),
+					ach(8537),	-- Strike!
+					i(105864, {	-- Essence of the Cursed Conqueror
 						["classes"] = {
-							2,	-- Paladin
-							5,	-- Priest
-							9,	-- Warlock
+							PALADIN,
+							PRIEST,
+							WARLOCK,
 						},
 						["sym"] = {
 							{"select", "itemID", 99749}, -- Helm of the Cursed Conqueror
@@ -4207,14 +4106,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							{"select", "itemID", 99752}, -- Leggings of the Cursed Conqueror
 							{"pop"},
 						},
-					},
-					{	-- Essence of the Cursed Protector
-						["itemID"] = 105863,
+					}),
+					i(105863, {	-- Essence of the Cursed Protector
 						["classes"] = {
-							3,	-- Hunter
-							10,	-- Monk
-							7,	-- Shaman
-							1,	-- Warrior
+							HUNTER,
+							MONK,
+							SHAMAN,
+							WARRIOR,
 						},
 						["sym"] = {
 							{"select", "itemID", 99750}, -- Helm of the Cursed Protector
@@ -4224,14 +4122,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							{"select", "itemID", 99753}, -- Leggings of the Cursed Protector
 							{"pop"},
 						},
-					},
-					{	-- Essence of the Cursed Vanquisher
-						["itemID"] = 105865,
+					}),
+					i(105865, {	-- Essence of the Cursed Vanquisher
 						["classes"] = {
-							6,	-- Death Knight
-							11,	-- Druid
-							8,	-- Mage
-							4,	-- Rogue
+							DEATHKNIGHT,
+							DRUID,
+							MAGE,
+							ROGUE,
 						},
 						["sym"] = {
 							{"select", "itemID", 99748}, -- Helm of the Cursed Vanquisher
@@ -4241,7 +4138,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							{"select", "itemID", 99751}, -- Leggings of the Cursed Vanquisher
 							{"pop"},
 						},
-					},
+					}),
 					i(112932),	-- Kor'kron Spire of Supremacy
 					i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
 					i(112939),	-- Horned Mace of the Old Ones
@@ -4267,8 +4164,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			}),
 			d(15, {	-- Heroic
 				n(ZONEDROPS, {
-					{	-- Aeth's Swiftcinder Cloak
-						["itemID"] = 113224,	-- Aeth's Swiftcinder Cloak
+					i(113224, {	-- Aeth's Swiftcinder Cloak
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -4310,9 +4206,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							73775,	-- War Master Kragg
 						},
-					},
-					{	-- Brave Niunai's Cloak
-						["itemID"] = 113231,	-- Brave Niunai's Cloak
+					}),
+					i(113231, {	-- Brave Niunai's Cloak
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -4350,9 +4245,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73152,	-- Storeroom Guard
 							73349,	-- Tormented Initiate
 						},
-					},
-					{	-- Cape of the Alpha
-						["itemID"] = 113226,	-- Cape of the Alpha
+					}),
+					i(113226, {	-- Cape of the Alpha
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73188,	-- Captive Cave Bat
@@ -4395,9 +4289,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							72434,	-- Treasury Guard
 							73775,	-- War Master Kragg
 						},
-					},
-					{	-- Drape of the Omega
-						["itemID"] = 113230,	-- Drape of the Omega
+					}),
+					i(113230, {	-- Drape of the Omega
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -4443,9 +4336,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72434,	-- Treasury Guard
 						},
-					},
-					{	-- Turtleshell Greatcloak
-						["itemID"] = 113223,	-- Turtleshell Greatcloak
+					}),
+					i(113223, {	-- Turtleshell Greatcloak
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -4492,9 +4384,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73775,	-- War Master Kragg
 							72661,	-- Zeal
 						},
-					},
-					{	-- Kalaena's Arcane Handwraps
-						["itemID"] = 113225,	-- Kalaena's Arcane Handwraps
+					}),
+					i(113225, {	-- Kalaena's Arcane Handwraps
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73188,	-- Captive Cave Bat
@@ -4540,9 +4431,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73667,	-- Windreaver Tar'rath
 							72661,	-- Zeal
 						},
-					},
-					{	-- Seebo's Sainted Touch
-						["itemID"] = 113218,	-- Seebo's Sainted Touch
+					}),
+					i(113218, {	-- Seebo's Sainted Touch
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73188,	-- Captive Cave Bat
@@ -4584,9 +4474,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73152,	-- Storeroom Guard
 							73349,	-- Tormented Initiate
 						},
-					},
-					{	-- Crimson Gauntlets of Death
-						["itemID"] = 113220,	-- Crimson Gauntlets of Death
+					}),
+					i(113220, {	-- Crimson Gauntlets of Death
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							72131,	-- Blind Blademaster
@@ -4629,9 +4518,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72661,	-- Zeal
 						},
-					},
-					{	-- Siid's Silent Stranglers
-						["itemID"] = 113221,	-- Siid's Silent Stranglers
+					}),
+					i(113221, {	-- Siid's Silent Stranglers
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -4677,9 +4565,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							72434,	-- Treasury Guard
 							73775,	-- War Master Kragg
 						},
-					},
-					{	-- Keengrip Arrowpullers
-						["itemID"] = 113222,	-- Keengrip Arrowpullers
+					}),
+					i(113222, {	-- Keengrip Arrowpullers
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -4719,9 +4606,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72661,	-- Zeal
 						},
-					},
-					{	-- Marco's Crackling Gloves
-						["itemID"] = 113227,	-- Marco's Crackling Gloves
+					}),
+					i(113227, {	-- Marco's Crackling Gloves
 						["crs"] = {
 							73191,	-- Aqueous Defender
 							73188,	-- Captive Cave Bat
@@ -4761,9 +4647,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72661,	-- Zeal
 						},
-					},
-					{	-- Gauntlets of Discarded Time
-						["itemID"] = 113228,	-- Gauntlets of Discarded Time
+					}),
+					i(113228, {	-- Gauntlets of Discarded Time
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -4808,9 +4693,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73152,	-- Storeroom Guard
 							73349,	-- Tormented Initiate
 						},
-					},
-					{	-- Romy's Reliable Grips
-						["itemID"] = 113219,	-- Romy's Reliable Grips
+					}),
+					i(113219, {	-- Romy's Reliable Grips
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							72131,	-- Blind Blademaster
@@ -4850,9 +4734,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72661,	-- Zeal
 						},
-					},
-					{	-- Zoid's Molten Gauntlets
-						["itemID"] = 113229,	-- Zoid's Molten Gauntlets
+					}),
+					i(113229, {	-- Zoid's Molten Gauntlets
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -4894,16 +4777,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							73775,	-- War Master Kragg
 						},
-					},
+					}),
 				}),
 				cr(71543, e(852, {	-- Immerseus
-					{	-- No More Tears
-						["achievementID"] = 8536,	-- No More Tears
-					},
-					{	-- Vale of Eternal Sorrows: Immerseus
+					crit(1, {	-- Immerseus
 						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-						["criteriaID"] = 1,	-- Immerseus
-					},
+					}),
+					ach(8536),	-- No More Tears
 					i(110784),	-- Trident of Corrupted Waters
 					i(110785),	-- Encapsulated Essence of Immerseus
 					i(112382),	-- Hood of Blackened Tears
@@ -4934,13 +4814,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
 					["g"] = {
-						{	-- Go Long
-							["achievementID"] = 8528,	-- Go Long
-						},
-						{	-- Vale of Eternal Sorrows: Fallen Protectors
+						crit(2, {	-- Fallen Protectors
 							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-							["criteriaID"] = 2,	-- Fallen Protectors
-						},
+						}),
+						ach(8528),	-- Go Long
 						i(112477),	-- Softfoot's Last Resort
 						i(112478),	-- Death Lotus Crossbow
 						i(112491),	-- Purehearted Cricket Cage
@@ -4969,13 +4846,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71965,	-- Norushen
 					},
 					["g"] = {
-						{	-- None Shall Pass
-							["achievementID"] = 8532,	-- None Shall Pass
-						},
-						{	-- Vale of Eternal Sorrows: Norushen
+						ach(8532),	-- None Shall Pass
+						crit(3, {	-- Norushen
 							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-							["criteriaID"] = 3,	-- Norushen
-						},
+						}),
 						i(112547),	-- Norushen's Shortblade
 						i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 						i(112560),	-- Norushen's Enigmatic Barrier
@@ -5001,13 +4875,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				})),
 				cr(71734, e(867, {	-- Sha of Pride
-					{	-- Swallow Your Pride
-						["achievementID"] = 8521,	-- Swallow Your Pride
-					},
-					{	-- Vale of Eternal Sorrows: Sha of Pride
+					crit(4, {	-- Sha of Pride
 						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-						["criteriaID"] = 4,	-- Sha of Pride
-					},
+					}),
+					ach(8521),	-- Swallow Your Pride
 					i(99686, {	-- Chest of the Cursed Conqueror
 						i(99136),	-- Battleplate of Winged Triumph
 						i(99133),	-- Breastplate of Winged Triumph
@@ -5051,13 +4922,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112948),	-- Prismatic Prison of Pride
 				})),
 				cr(72249, e(881, {	-- Galakras
-					{	-- Gates of Retribution: Galakras
+					crit(1, {	-- Galakras
 						["achievementID"] = 8459,	-- Gates of Retribution
-						["criteriaID"] = 1,	-- Galakras
-					},
-					{	-- The Immortal Vanguard
-						["achievementID"] = 8530,	-- The Immortal Vanguard
-					},
+					}),
+					ach(8530),	-- The Immortal Vanguard
 					i(112723),	-- Drakebinder Greatstaff
 					i(112710),	-- Dagryn's Discarded Longbow
 					i(112717),	-- Flameslinger's Fiery Cowl
@@ -5082,13 +4950,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112703),	-- Evil Eye of Galakras
 				})),
 				cr(71466, e(864, {	-- Iron Juggernaut
-					{	-- Fire in the Hole!
-						["achievementID"] = 8520,	-- Fire in the Hole!
-					},
-					{	-- Gates of Retribution: Iron Juggernaut
+					ach(8520),	-- Fire in the Hole!
+					crit(2, {	-- Iron Juggernaut
 						["achievementID"] = 8459,	-- Gates of Retribution
-						["criteriaID"] = 2,	-- Iron Juggernaut
-					},
+					}),
 					i(112736),	-- Seismic Bore
 					i(112748),	-- Juggernaut's Power Core
 					i(112742),	-- Juggernaut's Ignition Keys
@@ -5118,13 +4983,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71858,	-- Wavebinder Kardris
 					},
 					["g"] = {
-						{	-- Gates of Retribution: Kor'kron Dark Shaman
+						crit(3, {	-- Kor'kron Dark Shaman
 							["achievementID"] = 8459,	-- Gates of Retribution
-							["criteriaID"] = 3,	-- Kor'kron Dark Shaman
-						},
-						{	-- Rescue Raiders
-							["achievementID"] = 8453,	-- Rescue Raiders
-						},
+						}),
+						ach(8453),	-- Rescue Raiders
 						i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
 							i(105745),	-- Kor'kron Dark Shaman Cowl
 							i(105747),	-- Kor'kron Dark Shaman Shoulder
@@ -5159,13 +5021,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				})),
 				cr(71515, e(850, {	-- General Nazgrim
-					{	-- Gamon Will Save Us!
-						["achievementID"] = 8448,	-- Gamon Will Save Us!
-					},
-					{	-- Gates of Retribution: General Nazgrim
+					ach(8448),	-- Gamon Will Save Us!
+					crit(4, {	-- General Nazgrim
 						["achievementID"] = 8459,	-- Gates of Retribution
-						["criteriaID"] = 4,	-- General Nazgrim
-					},
+					}),
 					i(99687, {	-- Gauntlets of the Cursed Conqueror
 						i(99137),	-- Gauntlets of Winged Triumph
 						i(99134),	-- Gloves of Winged Triumph
@@ -5208,13 +5067,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112778),	-- Nazgrim's Burnished Insignia
 				})),
 				cr(71454, e(846, {	-- Malkorok
-					{	-- The Underhold: Malkorok
+					crit(1, {	-- Malkorok
 						["achievementID"] = 8461,	-- The Underhold
-						["criteriaID"] = 1,	-- Malkorok
-					},
-					{	-- Unlimited Potential
-						["achievementID"] = 8538,	-- Unlimited Potential
-					},
+					}),
+					ach(8538),	-- Unlimited Potential
 					i(112805),	-- Halberd of Inner Shadows
 					i(112804),	-- Malkorok's Skullcleaver
 					i(112806),	-- Kor'kron Hand Cannon
@@ -5239,13 +5095,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112792),	-- Vial of Living Corruption
 				})),
 				cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-					{	-- Criss Cross
-						["achievementID"] = 8529,	-- Criss Cross
-					},
-					{	-- The Underhold: Spoils of Pandaria
+					ach(8529),	-- Criss Cross
+					crit(2, {	-- Spoils of Pandaria
 						["achievementID"] = 8461,	-- The Underhold
-						["criteriaID"] = 2,	-- Spoils of Pandaria
-					},
+					}),
 					i(112835),	-- Enchanted Shao-Tien Saber
 					i(112841),	-- Immaculately Preserved Wand
 					i(112829),	-- Ancient Mogu Tower Shield
@@ -5269,13 +5122,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112825),	-- Sigil of Rampage
 				})),
 				cr(71529, e(851, {	-- Thok the Bloodthirsty
-					{	-- Giant Dinosaur vs. Mega Snail
-						["achievementID"] = 8527,	-- Giant Dinosaur vs. Mega Snail
-					},
-					{	-- The Underhold: Thok the Bloodthirsty
+					ach(8527),	-- Giant Dinosaur vs. Mega Snail
+					crit(3, {	-- Thok the Bloodthirsty
 						["achievementID"] = 8461,	-- The Underhold
-						["criteriaID"] = 3,	-- Thok the Bloodthirsty
-					},
+					}),
 					i(99689, {	-- Helm of the Cursed Conqueror
 						i(99128),	-- Faceguard of Winged Triumph
 						i(99135),	-- Headguard of Winged Triumph
@@ -5318,31 +5168,15 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112850),	-- Thok's Tail Tip
 				})),
 				cr(71504, e(865, {	-- Siegecrafter Blackfuse
-					{	-- Downfall: Siegecrafter Blackfuse
+					ach(8543, {	-- Lasers and Magnets and Drills! Oh My!
+						crit(2),	-- Deactivated Electromagnet
+						crit(1),	-- Deactivated Laser Turret
+						crit(3),	-- Deactivated Missile Turret
+						crit(4),	-- Disassembled Crawler Mines
+					}),
+					crit(1, {	-- Siegecrafter Blackfuse
 						["achievementID"] = 8462,	-- Downfall
-						["criteriaID"] = 1,	-- Siegecrafter Blackfuse
-					},
-					{	-- Lasers and Magnets and Drills! Oh My!
-						["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-						["g"] = {
-							{	-- Deactivated Electromagnet
-								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-								["criteriaID"] = 2,	-- Deactivated Electromagnet
-							},
-							{	-- Deactivated Laser Turret
-								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-								["criteriaID"] = 1,	-- Deactivated Laser Turret
-							},
-							{	-- Deactivated Missile Turret
-								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-								["criteriaID"] = 3,	-- Deactivated Missile Turret
-							},
-							{	-- Disassembled Crawler Mines
-								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-								["criteriaID"] = 4,	-- Disassembled Crawler Mines
-							},
-						},
-					},
+					}),
 					i(104158),	-- Blackfuse Bombling (PET!)
 					i(99690, {	-- Shoulders of the Cursed Conqueror
 						i(99125),	-- Mantle of Winged Triumph
@@ -5386,13 +5220,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112879),	-- Ticking Ebon Detonator
 				})),
 				cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-					{	-- Downfall: Paragons of the Klaxxi
+					ach(8531),	-- Now We are the Paragon
+					crit(2, {	-- Paragons of the Klaxxi
 						["achievementID"] = 8462,	-- Downfall
-						["criteriaID"] = 2,	-- Paragons of the Klaxxi
-					},
-					{	-- Now We are the Paragon
-						["achievementID"] = 8531,	-- Now We are the Paragon
-					},
+					}),
 					i(104165),	-- Kovok (PET!)
 					i(99688, {	-- Leggings of the Cursed Conqueror
 						i(99124),	-- Greaves 	of Winged Triumph
@@ -5456,12 +5287,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["achievementID"] = 8462,	-- Downfall
 					}),
 					ach(8537),	-- Strike!
-					{	-- Essence of the Cursed Conqueror
-						["itemID"] = 105858,
+					i(105858, {	-- Essence of the Cursed Conqueror
 						["classes"] = {
-							2,	-- Paladin
-							5,	-- Priest
-							9,	-- Warlock
+							PALADIN,
+							PRIEST,
+							WARLOCK,
 						},
 						["sym"] = {
 							{"select", "itemID", 99689}, -- Helm of the Cursed Conqueror
@@ -5471,14 +5301,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							{"select", "itemID", 99688}, -- Leggings of the Cursed Conqueror
 							{"pop"},
 						},
-					},
-					{	-- Essence of the Cursed Protector
-						["itemID"] = 105857,
+					}),
+					i(105857, {	-- Essence of the Cursed Protector
 						["classes"] = {
-							3,	-- Hunter
-							10,	-- Monk
-							7,	-- Shaman
-							1,	-- Warrior
+							HUNTER,
+							MONK,
+							SHAMAN,
+							WARRIOR,
 						},
 						["sym"] = {
 							{"select", "itemID", 99694}, -- Helm of the Cursed Protector
@@ -5488,14 +5317,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							{"select", "itemID", 99693}, -- Leggings of the Cursed Protector
 							{"pop"},
 						},
-					},
-					{	-- Essence of the Cursed Vanquisher
-						["itemID"] = 105859,
+					}),
+					i(105859, {	-- Essence of the Cursed Vanquisher
 						["classes"] = {
-							6,	-- Death Knight
-							11,	-- Druid
-							8,	-- Mage
-							4,	-- Rogue
+							DEATHKNIGHT,
+							DRUID,
+							MAGE,
+							ROGUE,
 						},
 						["sym"] = {
 							{"select", "itemID", 99683}, -- Helm of the Cursed Vanquisher
@@ -5505,7 +5333,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							{"select", "itemID", 99684}, -- Leggings of the Cursed Vanquisher
 							{"pop"},
 						},
-					},
+					}),
 					i(112935, {	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
 						["bonusID"] = 449,
 					}),
@@ -5534,8 +5362,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			}),
 			d(16, {	-- Mythic
 				n(ZONEDROPS, {
-					{	-- Aeth's Swiftcinder Cloak
-						["itemID"] = 113224,	-- Aeth's Swiftcinder Cloak
+					i(113224, {	-- Aeth's Swiftcinder Cloak
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -5577,9 +5404,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							73775,	-- War Master Kragg
 						},
-					},
-					{	-- Brave Niunai's Cloak
-						["itemID"] = 113231,	-- Brave Niunai's Cloak
+					}),
+					i(113231, {	-- Brave Niunai's Cloak
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -5617,9 +5443,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73152,	-- Storeroom Guard
 							73349,	-- Tormented Initiate
 						},
-					},
-					{	-- Cape of the Alpha
-						["itemID"] = 113226,	-- Cape of the Alpha
+					}),
+					i(113226, {	-- Cape of the Alpha
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73188,	-- Captive Cave Bat
@@ -5662,9 +5487,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							72434,	-- Treasury Guard
 							73775,	-- War Master Kragg
 						},
-					},
-					{	-- Drape of the Omega
-						["itemID"] = 113230,	-- Drape of the Omega
+					}),
+					i(113230, {	-- Drape of the Omega
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -5710,9 +5534,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72434,	-- Treasury Guard
 						},
-					},
-					{	-- Turtleshell Greatcloak
-						["itemID"] = 113223,	-- Turtleshell Greatcloak
+					}),
+					i(113223, {	-- Turtleshell Greatcloak
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -5759,9 +5582,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73775,	-- War Master Kragg
 							72661,	-- Zeal
 						},
-					},
-					{	-- Kalaena's Arcane Handwraps
-						["itemID"] = 113225,	-- Kalaena's Arcane Handwraps
+					}),
+					i(113225, {	-- Kalaena's Arcane Handwraps
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73188,	-- Captive Cave Bat
@@ -5807,9 +5629,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73667,	-- Windreaver Tar'rath
 							72661,	-- Zeal
 						},
-					},
-					{	-- Seebo's Sainted Touch
-						["itemID"] = 113218,	-- Seebo's Sainted Touch
+					}),
+					i(113218, {	-- Seebo's Sainted Touch
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73188,	-- Captive Cave Bat
@@ -5851,9 +5672,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73152,	-- Storeroom Guard
 							73349,	-- Tormented Initiate
 						},
-					},
-					{	-- Crimson Gauntlets of Death
-						["itemID"] = 113220,	-- Crimson Gauntlets of Death
+					}),
+					i(113220, {	-- Crimson Gauntlets of Death
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							72131,	-- Blind Blademaster
@@ -5896,9 +5716,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72661,	-- Zeal
 						},
-					},
-					{	-- Siid's Silent Stranglers
-						["itemID"] = 113221,	-- Siid's Silent Stranglers
+					}),
+					i(113221, {	-- Siid's Silent Stranglers
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -5944,9 +5763,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							72434,	-- Treasury Guard
 							73775,	-- War Master Kragg
 						},
-					},
-					{	-- Keengrip Arrowpullers
-						["itemID"] = 113222,	-- Keengrip Arrowpullers
+					}),
+					i(113222, {	-- Keengrip Arrowpullers
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -5986,9 +5804,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72661,	-- Zeal
 						},
-					},
-					{	-- Marco's Crackling Gloves
-						["itemID"] = 113227,	-- Marco's Crackling Gloves
+					}),
+					i(113227, {	-- Marco's Crackling Gloves
 						["crs"] = {
 							73191,	-- Aqueous Defender
 							73188,	-- Captive Cave Bat
@@ -6028,9 +5845,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72661,	-- Zeal
 						},
-					},
-					{	-- Gauntlets of Discarded Time
-						["itemID"] = 113228,	-- Gauntlets of Discarded Time
+					}),
+					i(113228, {	-- Gauntlets of Discarded Time
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -6075,9 +5891,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73152,	-- Storeroom Guard
 							73349,	-- Tormented Initiate
 						},
-					},
-					{	-- Romy's Reliable Grips
-						["itemID"] = 113219,	-- Romy's Reliable Grips
+					}),
+					i(113219, {	-- Romy's Reliable Grips
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							72131,	-- Blind Blademaster
@@ -6117,9 +5932,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							72661,	-- Zeal
 						},
-					},
-					{	-- Zoid's Molten Gauntlets
-						["itemID"] = 113229,	-- Zoid's Molten Gauntlets
+					}),
+					i(113229, {	-- Zoid's Molten Gauntlets
 						["crs"] = {
 							72658,	-- Amalgamated Hubris
 							73191,	-- Aqueous Defender
@@ -6161,19 +5975,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							73349,	-- Tormented Initiate
 							73775,	-- War Master Kragg
 						},
-					},
+					}),
 				}),
 				cr(71543, e(852, {	-- Immerseus
-					{	-- Mythic: Immerseus
-						["achievementID"] = 8463,	-- Mythic: Immerseus
-					},
-					{	-- No More Tears
-						["achievementID"] = 8536,	-- No More Tears
-					},
-					{	-- Vale of Eternal Sorrows: Immerseus
+					crit(1, {	-- Immerseus
 						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-						["criteriaID"] = 1,	-- Immerseus
-					},
+					}),
+					ach(8463),	-- Mythic: Immerseus
+					ach(8536),	-- No More Tears
 					i(110784),	-- Trident of Corrupted Waters
 					i(110785),	-- Encapsulated Essence of Immerseus
 					i(112382),	-- Hood of Blackened Tears
@@ -6204,16 +6013,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
 					["g"] = {
-						{	-- Go Long
-							["achievementID"] = 8528,	-- Go Long
-						},
-						{	-- Mythic: Fallen Protectors
-							["achievementID"] = 8465,	-- Mythic: Fallen Protectors
-						},
-						{	-- Vale of Eternal Sorrows: Fallen Protectors
+						crit(2, {	-- Fallen Protectors
 							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-							["criteriaID"] = 2,	-- Fallen Protectors
-						},
+						}),
+						ach(8528),	-- Go Long
+						ach(8465),	-- Mythic: Fallen Protectors
 						i(112477),	-- Softfoot's Last Resort
 						i(112478),	-- Death Lotus Crossbow
 						i(112491),	-- Purehearted Cricket Cage
@@ -6242,16 +6046,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71965,	-- Norushen
 					},
 					["g"] = {
-						{	-- Mythic: Norushen
-							["achievementID"] = 8466,	-- Mythic: Norushen
-						},
-						{	-- None Shall Pass
-							["achievementID"] = 8532,	-- None Shall Pass
-						},
-						{	-- Vale of Eternal Sorrows: Norushen
+						ach(8466),	-- Mythic: Norushen
+						ach(8532),	-- None Shall Pass
+						crit(3, {	-- Norushen
 							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-							["criteriaID"] = 3,	-- Norushen
-						},
+						}),
 						i(112547),	-- Norushen's Shortblade
 						i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 						i(112560),	-- Norushen's Enigmatic Barrier
@@ -6277,114 +6076,62 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				})),
 				cr(71734, e(867, {	-- Sha of Pride
-					{	-- Mythic: Sha of Pride
-						["achievementID"] = 8467,	-- Mythic: Sha of Pride
-					},
-					{	-- Swallow Your Pride
-						["achievementID"] = 8521,	-- Swallow Your Pride
-					},
-					{	-- Vale of Eternal Sorrows: Sha of Pride
+					ach(8467),	-- Mythic: Sha of Pride
+					crit(4, {	-- Sha of Pride
 						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-						["criteriaID"] = 4,	-- Sha of Pride
-					},
-					{	-- Chest of the Cursed Conqueror [Priest / Warlock / Priest]
-						["itemID"] = 99715,	-- Chest of the Cursed Conqueror
+					}),
+					ach(8521),	-- Swallow Your Pride
+					i(99715, {	-- Chest of the Cursed Conqueror
 						["classes"] = {
-							5,	-- Priest
-							9,	-- Warlock
-							2,	-- Paladin
+							PRIEST,
+							WARLOCK,
+							PALADIN,
 						},
 						["g"] = {
-							{	-- Raiment of the Ternion Glory
-								["itemID"] = 99362,	-- Raiment of the Ternion Glory
-							},
-							{	-- Robes of the Ternion Glory
-								["itemID"] = 99357,	-- Robes of the Ternion Glory
-							},
-							{	-- Robes of the Horned Nightmare
-								["itemID"] = 99416,	-- Robes of the Horned Nightmare
-							},
-							{	-- Battleplate of Winged Triumph
-								["itemID"] = 99387,	-- Battleplate of Winged Triumph
-							},
-							{	-- Breastplate of Winged Triumph
-								["itemID"] = 99374,	-- Breastplate of Winged Triumph
-							},
-							{	-- Chestguard of Winged Triumph
-								["itemID"] = 99368,	-- Chestguard of Winged Triumph
-							},
+							i(99362),	-- Raiment of the Ternion Glory
+							i(99357),	-- Robes of the Ternion Glory
+							i(99416),	-- Robes of the Horned Nightmare
+							i(99387),	-- Battleplate of Winged Triumph
+							i(99374),	-- Breastplate of Winged Triumph
+							i(99368),	-- Chestguard of Winged Triumph
 						},
-					},
-					{	-- Chest of the Cursed Protector [Monk / Hunter / Shaman / Warrior]
-						["itemID"] = 99716,	-- Chest of the Cursed Protector
+					}),
+					i(99716, {	-- Chest of the Cursed Protector
 						["classes"] = {
-							10,	-- Monk
-							3,	-- Hunter
-							7,	-- Shaman
-							1,	-- Warrior
+							MONK,
+							HUNTER,
+							SHAMAN,
+							WARRIOR,
 						},
 						["g"] = {
-							{	-- Tunic of Seven Sacred Seals
-								["itemID"] = 99396,	-- Tunic of Seven Sacred Seals
-							},
-							{	-- Vest of Seven Sacred Seals
-								["itemID"] = 99391,	-- Vest of Seven Sacred Seals
-							},
-							{	-- Tunic of the Unblinking Vigil
-								["itemID"] = 99405,	-- Tunic of the Unblinking Vigil
-							},
-							{	-- Cuirass of Celestial Harmony
-								["itemID"] = 99347,	-- Cuirass of Celestial Harmony
-							},
-							{	-- Hauberk of Celestial Harmony
-								["itemID"] = 99344,	-- Hauberk of Celestial Harmony
-							},
-							{	-- Tunic of Celestial Harmony
-								["itemID"] = 99351,	-- Tunic of Celestial Harmony
-							},
-							{	-- Battleplate of the Prehistoric Marauder
-								["itemID"] = 99411,	-- Battleplate of the Prehistoric Marauder
-							},
-							{	-- Chestguard of the Prehistoric Marauder
-								["itemID"] = 99415,	-- Chestguard of the Prehistoric Marauder
-							},
+							i(99396),	-- Tunic of Seven Sacred Seals
+							i(99391),	-- Vest of Seven Sacred Seals
+							i(99405),	-- Tunic of the Unblinking Vigil
+							i(99347),	-- Cuirass of Celestial Harmony
+							i(99344),	-- Hauberk of Celestial Harmony
+							i(99351),	-- Tunic of Celestial Harmony
+							i(99411),	-- Battleplate of the Prehistoric Marauder
+							i(99415),	-- Chestguard of the Prehistoric MarauderSeals
 						},
-					},
-					{	-- Chest of the Cursed Vanquisher [Mage / Druid / Rogue / Death Knight]
-						["itemID"] = 99714,	-- Chest of the Cursed Vanquisher
+					}),
+					i(99714, {	-- Chest of the Cursed Vanquisher
 						["classes"] = {
-							8,	-- Mage
-							11,	-- Druid
-							4,	-- Rogue
-							6,	-- Death Knight
+							MAGE,
+							DRUID,
+							ROGUE,
+							DEATHKNIGHT,
 						},
 						["g"] = {
-							{	-- Chronomancer Robes
-								["itemID"] = 99400,	-- Chronomancer Robes
-							},
-							{	-- Raiment of the Shattered Vale
-								["itemID"] = 99326,	-- Raiment of the Shattered Vale
-							},
-							{	-- Robes of the Shattered Vale
-								["itemID"] = 99430,	-- Robes of the Shattered Vale
-							},
-							{	-- Tunic of the Shattered Vale
-								["itemID"] = 99419,	-- Tunic of the Shattered Vale
-							},
-							{	-- Vestment of the Shattered Vale
-								["itemID"] = 99427,	-- Vestment of the Shattered Vale
-							},
-							{	-- Tunic of the Barbed Assassin
-								["itemID"] = 99356,	-- Tunic of the Barbed Assassin
-							},
-							{	-- Breastplate of Cyclopean Dread
-								["itemID"] = 99335,	-- Breastplate of Cyclopean Dread
-							},
-							{	-- Chestguard of Cyclopean Dread
-								["itemID"] = 99330,	-- Chestguard of Cyclopean Dread
-							},
+							i(99400),	-- Chronomancer Robes
+							i(99326),	-- Raiment of the Shattered Vale
+							i(99430),	-- Robes of the Shattered Vale
+							i(99419),	-- Tunic of the Shattered Vale
+							i(99427),	-- Vestment of the Shattered Vale
+							i(99356),	-- Tunic of the Barbed Assassin
+							i(99335),	-- Breastplate of Cyclopean Dread
+							i(99330),	-- Chestguard of Cyclopean Dread
 						},
-					},
+					}),
 					i(104162),	-- Droplet of Y'Shaarj (PET!)
 					i(104163),	-- Gooey Sha-ling (PET!)
 					i(112951),	-- Gaze of Arrogance
@@ -6399,16 +6146,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112948),	-- Prismatic Prison of Pride
 				})),
 				cr(72249, e(881, {	-- Galakras
-					{	-- Gates of Retribution: Galakras
+					crit(1, {	-- Galakras
 						["achievementID"] = 8459,	-- Gates of Retribution
-						["criteriaID"] = 1,	-- Galakras
-					},
-					{	-- Mythic: Galakras
-						["achievementID"] = 8468,	-- Mythic: Galakras
-					},
-					{	-- The Immortal Vanguard
-						["achievementID"] = 8530,	-- The Immortal Vanguard
-					},
+					}),
+					ach(8468),	-- Mythic: Galakras
+					ach(8530),	-- The Immortal Vanguard
 					i(112723),	-- Drakebinder Greatstaff
 					i(112710),	-- Dagryn's Discarded Longbow
 					i(112717),	-- Flameslinger's Fiery Cowl
@@ -6433,16 +6175,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112703),	-- Evil Eye of Galakras
 				})),
 				cr(71466, e(864, {	-- Iron Juggernaut
-					{	-- Fire in the Hole!
-						["achievementID"] = 8520,	-- Fire in the Hole!
-					},
-					{	-- Gates of Retribution: Iron Juggernaut
+					ach(8520),	-- Fire in the Hole!
+					crit(2, {	-- Iron Juggernaut
 						["achievementID"] = 8459,	-- Gates of Retribution
-						["criteriaID"] = 2,	-- Iron Juggernaut
-					},
-					{	-- Mythic: Iron Juggernaut
-						["achievementID"] = 8469,	-- Mythic: Iron Juggernaut
-					},
+					}),
+					ach(8469),	-- Mythic: Iron Juggernaut
 					i(112736),	-- Seismic Bore
 					i(112748),	-- Juggernaut's Power Core
 					i(112742),	-- Juggernaut's Ignition Keys
@@ -6472,16 +6209,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71858,	-- Wavebinder Kardris
 					},
 					["g"] = {
-						{	-- Gates of Retribution: Kor'kron Dark Shaman
+						crit(3, {	-- Kor'kron Dark Shaman
 							["achievementID"] = 8459,	-- Gates of Retribution
-							["criteriaID"] = 3,	-- Kor'kron Dark Shaman
-						},
-						{	-- Mythic: Kor'kron Dark Shaman
-							["achievementID"] = 8470,	-- Mythic: Kor'kron Dark Shaman
-						},
-						{	-- Rescue Raiders
-							["achievementID"] = 8453,	-- Rescue Raiders
-						},
+						}),
+						ach(8470),	-- Mythic: Kor'kron Dark Shaman
+						ach(8453),	-- Rescue Raiders
 						i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
 							i(105745),	-- Kor'kron Dark Shaman Cowl
 							i(105747),	-- Kor'kron Dark Shaman Shoulder
@@ -6516,82 +6248,45 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				})),
 				cr(71515, e(850, {	-- General Nazgrim
-					{	-- Gamon Will Save Us!
-						["achievementID"] = 8448,	-- Gamon Will Save Us!
-					},
-					{	-- Gates of Retribution: General Nazgrim
+					ach(8448),	-- Gamon Will Save Us!
+					crit(4, {	-- General Nazgrim
 						["achievementID"] = 8459,	-- Gates of Retribution
-						["criteriaID"] = 4,	-- General Nazgrim
-					},
-					{	-- Mythic: General Nazgrim
-						["achievementID"] = 8471,	-- Mythic: General Nazgrim
-					},
-					{	-- Gauntlets of the Cursed Conqueror [Priest / Warlock / Priest]
-						["itemID"] = 99721,	-- Gauntlets of the Cursed Conqueror
+					}),
+					ach(8471),	-- Mythic: General Nazgrim
+					i(99721, {	-- Gauntlets of the Cursed Conqueror
 						["classes"] = {
-							5,	-- Priest
-							9,	-- Warlock
-							2,	-- Paladin
+							PRIEST,
+							WARLOCK,
+							PALADIN,
 						},
 						["g"] = {
-							{	-- Gloves of the Ternion Glory
-								["itemID"] = 99359,	-- Gloves of the Ternion Glory
-							},
-							{	-- Handwraps of the Ternion Glory
-								["itemID"] = 99365,	-- Handwraps of the Ternion Glory
-							},
-							{	-- Gloves of the Horned Nightmare
-								["itemID"] = 99424,	-- Gloves of the Horned Nightmare
-							},
-							{	-- Gauntlets of Winged Triumph
-								["itemID"] = 99380,	-- Gauntlets of Winged Triumph
-							},
-							{	-- Gloves of Winged Triumph
-								["itemID"] = 99375,	-- Gloves of Winged Triumph
-							},
-							{	-- Handguards of Winged Triumph
-								["itemID"] = 99369,	-- Handguards of Winged Triumph
-							},
-						},								
-					},									
-					{	-- Gauntlets of the Cursed Protector [Monk / Hunter / Shaman / Warrior]
-						["itemID"] = 99722,	-- Gauntlets of the Cursed Protector
+							i(99359),	-- Gloves of the Ternion Glory
+							i(99365),	-- Handwraps of the Ternion GloryGlory
+							i(99424),	-- Gloves of the Horned Nightmare
+							i(99380),	-- Gauntlets of Winged Triumph
+							i(99375),	-- Gloves of Winged Triumph
+							i(99369),	-- Handguards of Winged Triumph
+						},
+					}),
+					i(99722, {	-- Gauntlets of the Cursed Protector
 						["classes"] = {
-							10,	-- Monk
-							3,	-- Hunter
-							7,	-- Shaman
-							1,	-- Warrior
+							MONK,
+							HUNTER,
+							SHAMAN,
+							WARRIOR,
 						},
 						["g"] = {
-							{	-- Gauntlets of Seven Sacred Seals
-								["itemID"] = 99383,	-- Gauntlets of Seven Sacred Seals
-							},
-							{	-- Grips of Seven Sacred Seals
-								["itemID"] = 99392,	-- Grips of Seven Sacred Seals
-							},
-							{	-- Handwraps of Seven Sacred Seals
-								["itemID"] = 99388,	-- Handwraps of Seven Sacred Seals
-							},
-							{	-- Gloves of the Unblinking Vigil
-								["itemID"] = 99406,	-- Gloves of the Unblinking Vigil
-							},
-							{	-- Gloves of Celestial Harmony
-								["itemID"] = 99345,	-- Gloves of Celestial Harmony
-							},
-							{	-- Grips of Celestial Harmony
-								["itemID"] = 99340,	-- Grips of Celestial Harmony
-							},
-							{	-- Handwraps of Celestial Harmony
-								["itemID"] = 99352,	-- Handwraps of Celestial Harmony
-							},
-							{	-- Gauntlets of the Prehistoric Marauder
-								["itemID"] = 99412,	-- Gauntlets of the Prehistoric Marauder
-							},
-							{	-- Handguards of the Prehistoric Marauder
-								["itemID"] = 99408,	-- Handguards of the Prehistoric Marauder
-							},
+							i(99383),	-- Gauntlets of Seven Sacred Seals
+							i(99392),	-- Grips of Seven Sacred Seals
+							i(99388),	-- Handwraps of Seven Sacred Seals
+							i(99406),	-- Gloves of the Unblinking Vigil
+							i(99345),	-- Gloves of Celestial Harmony
+							i(99340),	-- Grips of Celestial Harmony
+							i(99352),	-- Handwraps of Celestial Harmony
+							i(99412),	-- Gauntlets of the Prehistoric Marauder
+							i(99408),	-- Handguards of the Prehistoric Marauder
 						},
-					},
+					}),
 					i(99720, {	-- Gauntlets of the Cursed Vanquisher
 						i(99397),	-- Chronomancer Gloves
 						i(99336),	-- Gauntlets of Cyclopean Dread
@@ -6601,7 +6296,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(99331),	-- Handguards of Cyclopean Dread
 						i(99420),	-- Handguards of the Shattered Vale
 						i(99435),	-- Handwraps of the Shattered Vale
-					}),	
+					}),
 					i(112785),	-- Gar'tok, Strength of the Faithful
 					i(112787),	-- Arcweaver Spell Sword
 					i(112780),	-- Naz'grim's Gutripper
@@ -6615,16 +6310,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112778),	-- Nazgrim's Burnished Insignia
 				})),
 				cr(71454, e(846, {	-- Malkorok
-					{	-- Mythic: Malkorok
-						["achievementID"] = 8472,	-- Mythic: Malkorok
-					},
-					{	-- The Underhold: Malkorok
+					crit(1, {	-- Malkorok
 						["achievementID"] = 8461,	-- The Underhold
-						["criteriaID"] = 1,	-- Malkorok
-					},
-					{	-- Unlimited Potential
-						["achievementID"] = 8538,	-- Unlimited Potential
-					},
+					}),
+					ach(8472),	-- Mythic: Malkorok
+					ach(8538),	-- Unlimited Potential
 					i(112805),	-- Halberd of Inner Shadows
 					i(112804),	-- Malkorok's Skullcleaver
 					i(112806),	-- Kor'kron Hand Cannon
@@ -6649,16 +6339,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112792),	-- Vial of Living Corruption
 				})),
 				cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-					{	-- Criss Cross
-						["achievementID"] = 8529,	-- Criss Cross
-					},
-					{	-- Mythic: Spoils of Pandaria
-						["achievementID"] = 8478,	-- Mythic: Spoils of Pandaria
-					},
-					{	-- The Underhold: Spoils of Pandaria
+					ach(8529),	-- Criss Cross
+					ach(8478),	-- Mythic: Spoils of Pandaria
+					crit(2, {	-- Spoils of Pandaria
 						["achievementID"] = 8461,	-- The Underhold
-						["criteriaID"] = 2,	-- Spoils of Pandaria
-					},
+					}),
 					i(112835),	-- Enchanted Shao-Tien Saber
 					i(112841),	-- Immaculately Preserved Wand
 					i(112829),	-- Ancient Mogu Tower Shield
@@ -6682,16 +6367,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112825),	-- Sigil of Rampage
 				})),
 				cr(71529, e(851, {	-- Thok the Bloodthirsty
-					{	-- Giant Dinosaur vs. Mega Snail
-						["achievementID"] = 8527,	-- Giant Dinosaur vs. Mega Snail
-					},
-					{	-- Mythic: Thok the Bloodthirsty
-						["achievementID"] = 8479,	-- Mythic: Thok the Bloodthirsty
-					},
-					{	-- The Underhold: Thok the Bloodthirsty
+					ach(8527),	-- Giant Dinosaur vs. Mega Snail
+					ach(8479),	-- Mythic: Thok the Bloodthirsty
+					crit(3, {	-- Thok the Bloodthirsty
 						["achievementID"] = 8461,	-- The Underhold
-						["criteriaID"] = 3,	-- Thok the Bloodthirsty
-					},
+					}),
 					i(99724, {	-- Helm of the Cursed Conqueror
 						i(99370),	-- Faceguard of Winged Triumph
 						i(99376),	-- Headguard of Winged Triumph
@@ -6734,34 +6414,16 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112850),	-- Thok's Tail Tip
 				})),
 				cr(71504, e(865, {	-- Siegecrafter Blackfuse
-					{	-- Downfall: Siegecrafter Blackfuse
+					ach(8543, {	-- Lasers and Magnets and Drills! Oh My!
+						crit(2),	-- Deactivated Electromagnet
+						crit(1),	-- Deactivated Laser Turret
+						crit(3),	-- Deactivated Missile Turret
+						crit(4),	-- Disassembled Crawler Mines
+					}),
+					ach(8480),	-- Mythic: Siegecrafter Blackfuse
+					crit(1, {	-- Siegecrafter Blackfuse
 						["achievementID"] = 8462,	-- Downfall
-						["criteriaID"] = 1,	-- Siegecrafter Blackfuse
-					},
-					{	-- Lasers and Magnets and Drills! Oh My!
-						["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-						["g"] = {
-							{	-- Deactivated Electromagnet
-								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-								["criteriaID"] = 2,	-- Deactivated Electromagnet
-							},
-							{	-- Deactivated Laser Turret
-								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-								["criteriaID"] = 1,	-- Deactivated Laser Turret
-							},
-							{	-- Deactivated Missile Turret
-								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-								["criteriaID"] = 3,	-- Deactivated Missile Turret
-							},
-							{	-- Disassembled Crawler Mines
-								["achievementID"] = 8543,	-- Lasers and Magnets and Drills! Oh My!
-								["criteriaID"] = 4,	-- Disassembled Crawler Mines
-							},
-						},
-					},
-					{	-- Mythic: Siegecrafter Blackfuse
-						["achievementID"] = 8480,	-- Mythic: Siegecrafter Blackfuse
-					},
+					}),
 					i(104158),	-- Blackfuse Bombling (PET!)
 					i(99718, {	-- Shoulders of the Cursed Conqueror
 						i(99378),	-- Mantle of Winged Triumph
@@ -6805,16 +6467,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112879),	-- Ticking Ebon Detonator
 				})),
 				cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-					{	-- Downfall: Paragons of the Klaxxi
+					ach(8481),	-- Mythic: Paragons of the Klaxxi
+					ach(8531),	-- Now We are the Paragon
+					crit(2, {	-- Paragons of the Klaxxi
 						["achievementID"] = 8462,	-- Downfall
-						["criteriaID"] = 2,	-- Paragons of the Klaxxi
-					},
-					{	-- Mythic: Paragons of the Klaxxi
-						["achievementID"] = 8481,	-- Mythic: Paragons of the Klaxxi
-					},
-					{	-- Now We are the Paragon
-						["achievementID"] = 8531,	-- Now We are the Paragon
-					},
+					}),
 					i(104165),	-- Kovok (PET!)
 					i(99712, {	-- Leggings of the Cursed Conqueror
 						i(99377),	-- Greaves of Winged Triumph
@@ -6878,15 +6535,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["achievementID"] = 8462,	-- Downfall
 					}),
 					ach(8482, {	-- Mythic: Garrosh Hellscream
-						title(214),	-- ,Hellscream's Downfall
+						title(214),	-- , Hellscream's Downfall
 					}),
 					ach(8537),	-- Strike!
-					{	-- Essence of the Cursed Conqueror
-						["itemID"] = 105867,
+					i(105867, {	-- Essence of the Cursed Conqueror
 						["classes"] = {
-							2,	-- Paladin
-							5,	-- Priest
-							9,	-- Warlock
+							PALADIN,
+							PRIEST,
+							WARLOCK,
 						},
 						["sym"] = {
 							{"select", "itemID", 99724}, -- Helm of the Cursed Conqueror
@@ -6896,14 +6552,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							{"select", "itemID", 99712}, -- Leggings of the Cursed Conqueror
 							{"pop"},
 						},
-					},
-					{	-- Essence of the Cursed Protector
-						["itemID"] = 105866,
+					}),
+					i(105866, {	-- Essence of the Cursed Protector
 						["classes"] = {
-							3,	-- Hunter
-							10,	-- Monk
-							7,	-- Shaman
-							1,	-- Warrior
+							HUNTER,
+							MONK,
+							SHAMAN,
+							WARRIOR,
 						},
 						["sym"] = {
 							{"select", "itemID", 99725}, -- Helm of the Cursed Protector
@@ -6913,14 +6568,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							{"select", "itemID", 99713}, -- Leggings of the Cursed Protector
 							{"pop"},
 						},
-					},
-					{	-- Essence of the Cursed Vanquisher
-						["itemID"] = 105868,
+					}),
+					i(105868, {	-- Essence of the Cursed Vanquisher
 						["classes"] = {
-							6,	-- Death Knight
-							11,	-- Druid
-							8,	-- Mage
-							4,	-- Rogue
+							DEATHKNIGHT,
+							DRUID,
+							MAGE,
+							ROGUE,
 						},
 						["sym"] = {
 							{"select", "itemID", 99723}, -- Helm of the Cursed Vanquisher
@@ -6930,11 +6584,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							{"select", "itemID", 99726}, -- Leggings of the Cursed Vanquisher
 							{"pop"},
 						},
-					},
-					{	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
-						["itemID"] = 112935,	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
+					}),
+					i(112935, {	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
 						["bonusID"] = 450,
-					},
+					}),
 					i(104253),	-- Kor'kron Juggernaut (MOUNT!)
 					i(112932),	-- Kor'kron Spire of Supremacy
 					i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
