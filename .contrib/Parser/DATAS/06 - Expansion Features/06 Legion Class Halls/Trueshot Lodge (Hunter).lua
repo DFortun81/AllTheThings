@@ -54,7 +54,6 @@ _.ExpansionFeatures =
 						["classes"] = { 3 },	-- Hunter
 					}),
 					q(46783),	-- Further Advancement
-					un(REMOVED_FROM_GAME, q(46149)),	-- Furthering Knowledge. Used to Increase Artefact Power
 					q(42403, {	-- Highmountain Hunters
 						["isBreadcrumb"] = true,
 					}),
@@ -125,6 +124,9 @@ _.ExpansionFeatures =
 						["g"] = {
 							{ ["mountID"] = 229386 },	-- Huntmaster's Loyal Wolfhawk
 						},
+					}),
+					q(46149, {	-- Furthering Knowledge
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(44233, {	-- Walk This Way
 						i(139710),	-- Mask of the Unseen Path

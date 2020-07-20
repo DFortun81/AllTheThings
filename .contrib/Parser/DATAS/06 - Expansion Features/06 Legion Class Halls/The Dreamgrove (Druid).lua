@@ -396,7 +396,10 @@ _.ExpansionFeatures =
 						["coord"] = { 52.6, 51.4, 747 },
 						["sourceQuests"] = { 46044 },	-- Champion: Thisalee Crow
 						["maps"] = { 747 }
-					}),					
+					}),
+					q(46154, {	-- Furthering Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(42037, {	-- Gathering the Dreamweavers
 						["classes"] = { DRUID },
 						["lvl"] = 103,
@@ -1024,7 +1027,6 @@ _.ExpansionFeatures =
 					q(44237),	-- Ancients of War
 					q(44235),	-- Essence of Fate
 					q(44236),	-- Essence of Fate
-					q(46154),	-- Furthering Knowledge
 					q(41413),	-- What Could Go Wrong?
 
 					--[[ Artifact Appearance  Quests Commented Out For Now

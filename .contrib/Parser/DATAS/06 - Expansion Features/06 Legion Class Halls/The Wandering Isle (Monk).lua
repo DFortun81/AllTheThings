@@ -210,6 +210,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
 						["sourceQuests"] = { 41733 },	-- Rebuilding the Order
 					}),
+					q(46157, {	-- Furthering Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(42186, {	-- Growing Power
 						["classes"] = { MONK },
 						["lvl"] = 101,
@@ -606,7 +609,6 @@ _.ExpansionFeatures =
 					q(46024),	-- An Urgent Warning
 					q(44239),	-- Echo of a Celestial
 					q(46785),	-- Further Advancement
-					q(46157),	-- Furthering Knowledge
 					q(43060),	-- Highmountain Salmon (Repeatable hand in quest but always returns false for completed even when the overarching quest(41907) is completed)
 					q(46320),	-- Hope For a Cure
 					q(46025),	-- Investigate the Broken Shore

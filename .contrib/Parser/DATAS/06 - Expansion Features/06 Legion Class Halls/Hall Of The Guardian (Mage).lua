@@ -383,8 +383,16 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 107423 },	-- Archmage Kalec
 						["sourceQuest"] = 42423,	-- Archmage Vargoth's Retreat
 					}),
-					q(46782),	-- Further Advancement
-					q(46156),	-- Furthering Knowledge
+					q(46782, {	-- Further Advancement
+						["classes"] = { MAGE },
+						["lvl"] = 110,
+						["provider"] = { "n", 108515 },	-- Archmage Melis
+						["coord"] = { 80.8, 63.0, 734 },
+						["maps"] = { 734 },
+					}),
+					q(46156, {	-- Furthering Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(42175, {	-- Growing Power
 						["lvl"] = 101,
 						["maps"] = { 627 },	-- Dalaran

@@ -36,9 +36,6 @@ _.ExpansionFeatures =
 						q(44219),	-- Fate's Blessing
 						q(45147),	-- Felstone Destruction (and warrior?)
 						q(39722),	-- Forging New Strength
-						q(46151, {	-- Furthering Knowledge
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						q(42844),	-- Growing Power
 						q(42774),	-- Hope Prevails
 						q(45975),	-- Investigate the Broken Shore
@@ -81,6 +78,9 @@ _.ExpansionFeatures =
 						]]--
 						q(44250, {	-- Champion of the Light
 							i(139693),	-- Crown of the Silver Hand
+						}),
+						q(46151, {	-- Furthering Knowledge
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(45770, {	-- Stirring in the Shadows
 							["lvl"] = 110,
