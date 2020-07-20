@@ -1164,8 +1164,15 @@ _.NeverImplemented =
 
 		q(40516),	-- Monk Order Hall - The Dawning Bit (Triggered after accepting The Dawning Light)
 		q(40638),	-- Monk Order Hall - Windwalker Chosen
+		q(43971),	-- Monk Order Hall - Windwalker Chosen
+		q(44429),	-- Monk Order Hall - Windwalker Chosen
 		q(40639),	-- Monk Order Hall - Mistweaver Chosen
+		q(43972),	-- Monk Order Hall - Mistweaver Chosen
+		q(44428),	-- Monk Order Hall - Mistweaver Chosen
 		q(40640),	-- Monk Order Hall - Brewmaster Chosen
+		q(43970),	-- Monk Order Hall - Brewmaster Chosen
+		q(44427),	-- Monk Order Hall - Brewmaster Chosen
+		q(44646),	-- Monk Order Hall - Tracking Quest: 7.0 Class Hall - Monk - Pacing Mission 1 - Unlocks Ch 2
 
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second
