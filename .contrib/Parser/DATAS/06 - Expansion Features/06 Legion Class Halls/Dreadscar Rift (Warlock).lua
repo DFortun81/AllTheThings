@@ -107,6 +107,9 @@ _.ExpansionFeatures =
 						["lvl"] = 98,
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
+					q(46150, {	-- Furthering Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(42603, {	-- Information at Any Cost
 						["sourceQuests"] = {
 							41750,	-- Champion: Calydus
@@ -237,7 +240,6 @@ _.ExpansionFeatures =
 					q(46239),	-- Fel to the Core
 					q(41785),	-- Finding Fizzlebang
 					q(46784),	-- Further Advancement
-					q(46150),	-- Furthering Knowledge
 					q(44254, {	-- Gazing Into Oblivion
 						["races"] = HORDE_ONLY,
 					}),

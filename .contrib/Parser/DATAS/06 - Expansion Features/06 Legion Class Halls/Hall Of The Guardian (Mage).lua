@@ -15,7 +15,7 @@ _.ExpansionFeatures =
 			},
 			["g"] = {
 				spell(118, {	-- Polymorph
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["lvl"] = 110,
 					["maps"] = {
 						630,	-- Azsuna
@@ -94,7 +94,7 @@ _.ExpansionFeatures =
 				}),
 				gt(386, {		-- Teleportation Nexus
 					["description"] = "A set of 5 portals is generated in the Class Hall; there is a small daily chance instead you will be phased to Frostfire Ridge where you can loot Everburning Crystal. You will be alerted to this chance by an emote when walking around on the stairs of your class hall.",
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["maps"] = {
 						630,	-- Azsuna
 						650,	-- Highmountain
@@ -169,11 +169,22 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 102700 },	-- Meryl Felstorm
 						["sourceQuest"] = 41085,	-- A Mage's Weapon
 					}),
-					q(42954),	-- A Small Favor
+					q(42954, {	-- A Small Favor
+						["lvl"] = 110,
+						["coord"] = { 55.5, 77.0, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 107351 },	-- Archmage Khadgar
+						["sourceQuest"] = 42222,	-- Empyrean Society Report
+					}),
 					q(42520, {	-- A Terrible Loss
+						["maps"] = { 680 },
+						["coord"] = { 41.7, 59.8, 683 },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 108085 },	-- Image of Kalec
-						["sourceQuest"] = 42493,	-- Impending Dooooooom!
+						["sourceQuests"] = {
+							42493,	-- Impending Dooooooom!
+							42494,	-- More Than Just A Food Vendor
+						},
 						["g"] = {
 							i(139754),	-- Bracers of Tirisgarde
 						},
@@ -300,8 +311,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42702, {	-- Champion: Millhouse Manastorm
+						["coord"] = { 56.0, 58.9, 735 },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 108342 },	-- Millhouse Manastorm
+						["sourceQuests"] = {
+							42493,	-- Impending Doooooooom!
+							42494,	-- More Than just A Food Vendor
+						},
 						["g"] = {
 							follower(723),	-- Millhouse Manastorm
 						},
@@ -346,7 +362,12 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 42171,	-- Final Exit
 					}),
 					q(43552),	-- Eye of Azshara
-					q(42707),	-- Eye of Azshara: A Magical Affliction
+					q(42707, {	-- Eye of Azshara: A Magical Affliction
+						["coord"] = { 71.7, 54.9, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 107351 },	-- Archmage Khadgar
+						["sourceQuest"] = 42520,	-- A Terrible Loss
+					}),
 					q(42008, {	-- Eyes of the Dragon
 						["maps"] = { 115 },
 						["coord"] = { 56.6, 69.1, 115 },
@@ -383,8 +404,16 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 107423 },	-- Archmage Kalec
 						["sourceQuest"] = 42423,	-- Archmage Vargoth's Retreat
 					}),
-					q(46782),	-- Further Advancement
-					q(46156),	-- Furthering Knowledge
+					q(46782, {	-- Further Advancement
+						["classes"] = { MAGE },
+						["lvl"] = 110,
+						["provider"] = { "n", 108515 },	-- Archmage Melis
+						["coord"] = { 80.8, 63.0, 734 },
+						["maps"] = { 734 },
+					}),
+					q(46156, {	-- Furthering Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(42175, {	-- Growing Power
 						["lvl"] = 101,
 						["maps"] = { 627 },	-- Dalaran
@@ -400,7 +429,11 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 42008,	-- Eyes of the Dragon
 					}),
 					q(42493, {	-- Impending Dooooooom!
+						["maps"] = { 680 },
+						["coord"] = { 64.2, 29.5, 683 },
 						["classes"] = { MAGE },
+						["provider"] = { "n", 108085 },	-- Image of Kalec
+						["sourceQuest"] = 42521,	-- The Enemy of My Enemy...
 					}),
 					q(46345, {	-- Into the Hornet's Nest
 						["classes"] = { MAGE },
@@ -410,7 +443,10 @@ _.ExpansionFeatures =
 					}),
 					q(45998),	-- Investigate the Broken Shore
 					q(42451, {	-- Kalec's Plan
+						["coord"] = { 80.9, 63.0, 734 },
 						["classes"] = { MAGE },
+						["provider"] = { "n", 108515 },	-- Archmage Melis
+						["sourceQuest"] = 42424,	-- Following In His Footsteps
 					}),
 					q(46351, {	-- Keep it Secret, Keep it Safe
 						["classes"] = { MAGE },
@@ -426,17 +462,28 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 41113,	-- The Only Way to Travel
 					}),
 					q(42494, {	-- More Than Just A Food Vendor
+						["maps"] = { 680 },
+						["coord"] = { 34.1, 83.4, 680 },
 						["classes"] = { MAGE },
+						["provider"] = { "n", 111553 },	-- Kalecgos
+						["sourceQuest"] = 42508,	-- Not a Toothless Dragon
 					}),
 					q(42508, {	-- Not A Toothless Dragon
+						["maps"] = { 680 },
+						["coord"] = { 29.2, 87.6, 680 },
 						["classes"] = { MAGE },
+						["provider"] = { "n", 42508 },	-- Kalecgos
+						["sourceQuest"] = 42451,	-- Kalec's Plan
 					}),
 					q(46722),	-- Nothing Up My Sleeve
 					q(44768, {	-- Nyell's Workshop
 						["classes"] = { MAGE },
 					}),
 					q(44240, {	-- Orange is the New Purple
-						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 110,
+						["coord"] = { 44.8, 57.8, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 112440 },	-- Jackson Watkins
 						["g"] = {
 							i(139749),	-- Cowl of Tirisgarde
 						},
@@ -516,6 +563,8 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42521, {	-- The Enemy of My Enemy...
+						["maps"] = { 680 },
+						["coord"] = { 34.1, 83.4, 680 },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 111553 },	-- Kalecgos
 						["sourceQuest"] = 42508,	-- Not a Toothless Dragon
@@ -582,7 +631,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 99398 },	-- Archmage Modera
 						["sourceQuest"] = 40267,	-- An Unexpected Message
 					}),
-					q(42955),	-- The Proper Way of Things
+					q(42955, {	-- The Proper Way of Things
+						["coord"] = { 37.0, 48.3, 734 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 109307 },	-- Ari
+						["sourceQuest"] = 42954,	-- A Small Favor
+					}),
 					q(41124, {	-- The Tirisgarde Reborn
 						["coord"] = { 60.4, 34.6, 735 },
 						["classes"] = { MAGE },
@@ -621,7 +675,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 106530 },	-- Ravandwyr
 						["sourceQuest"] = 42435,	-- Prepare To Be Assimilated
 					}),
-					q(42940),	-- When There's a Will, There's a Way
+					q(42940, {	-- When There's a Will, There's a Way
+						["coord"] = { 71.7, 54.9, 735 },
+						["classes"] = { MAGE },
+						["provider"] = { "n", 107351 },	-- Archmage Khadgar
+						["sourceQuest"] = 42520,	-- A Terrible Loss
+					}),
 				}),
 				n(VENDORS, {
 					n(112440, {	-- Jackson Watkins <Tirisgarde Quartermaster>

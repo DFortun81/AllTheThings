@@ -1161,11 +1161,28 @@ _.NeverImplemented =
 		q(44309),	-- Mage Order Hall - Frost chosen third
 		q(42727),	-- Mage Order Hall - Transition to Forge Quests (triggered after completing The Mage Hunter as first artifact weapon)
 		q(44645),	-- Mage Order Hall - Completed the "Ancient Magic" mission
+		q(44474),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: The Nightborne Vault" mission
+		q(44475),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: Ruins of Nar'thalas" mission
+		q(44476),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: The Scholars of Tel'anor" mission
+		q(44477),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: The Forests of Ashenvale" mission
+		q(44478),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: Best Friends Forever" mission
+		q(44467),	-- Mage Order Hall - Completed the "Oculus Preparations: A Nightmarish Situation" mission
+		q(44468),	-- Mage Order Hall - Completed the "Oculus Preparations: Communication Disruption" mission
+		q(44469),	-- Mage Order Hall - Completed the "Oculus Preparations: Ley Them Down" mission
+		q(44470),	-- Mage Order Hall - Completed the "Oculus Preparations: Eternos" mission
+		q(44472),	-- Mage Order Hall - Completed the "Oculus Preparations: On The Offensive" mission
 
 		q(40516),	-- Monk Order Hall - The Dawning Bit (Triggered after accepting The Dawning Light)
 		q(40638),	-- Monk Order Hall - Windwalker Chosen
+		q(43971),	-- Monk Order Hall - Windwalker Chosen
+		q(44429),	-- Monk Order Hall - Windwalker Chosen
 		q(40639),	-- Monk Order Hall - Mistweaver Chosen
+		q(43972),	-- Monk Order Hall - Mistweaver Chosen
+		q(44428),	-- Monk Order Hall - Mistweaver Chosen
 		q(40640),	-- Monk Order Hall - Brewmaster Chosen
+		q(43970),	-- Monk Order Hall - Brewmaster Chosen
+		q(44427),	-- Monk Order Hall - Brewmaster Chosen
+		q(44646),	-- Monk Order Hall - Tracking Quest: 7.0 Class Hall - Monk - Pacing Mission 1 - Unlocks Ch 2
 
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second
@@ -1592,6 +1609,11 @@ _.NeverImplemented =
 		]]--
 
 		--	VARIOUS
+		q(48575),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity? Maybe an alliance/horde equivalent?
+		q(53441),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity?
+		q(53470),	-- Vol'dun - Alliance - landed in Vol'Dun while doing the war campaign. First zone landing
+		q(51242),	-- Vol'dun - Alliance - planted the Alliance banner
+		q(51396),	-- Vol'dun - Alliance - watched Vorrik place the first keystone on the pedestal in the Sanctuary of the Devoted
 		q(47698),	-- Nazmir - Ticker is summoned
 		q(49294),	-- Nazmir - triggers when Hanzabu talks about the Zo'bal shrine
 		q(48779),	-- Nazmir - triggers after activating all the spirits in Zo'bal during "Spiritual Restoration"

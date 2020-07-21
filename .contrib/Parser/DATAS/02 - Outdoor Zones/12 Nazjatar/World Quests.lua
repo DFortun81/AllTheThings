@@ -5,6 +5,9 @@ _.Zones =
 {
 	m(1355, {	-- Nazjatar
 		n(-34,  {	-- World Quests
+			q(58703, {	-- Unknown quest populating /attwq
+				["u"] = 1,
+			}),
 			q(55664, {	-- A Blow to Morale
 				["lvl"] = 120,
 				["races"] = HORDE_ONLY,

@@ -26,10 +26,9 @@ _.Zones =
 				ach(7284),	-- Is Another Man's Treasure
 				ach(7997),	-- Riches of Pandaria
 				ach(7289),	-- Shadow Hopper
-				ach(6754, {	-- The Dark Heart of the Mogu
-					crit(3, {	-- Spirit Binders
-						["coord"] = { 42.26, 17.46, 371 },
-					}),
+				crit(3, {	-- Spirit Binders
+					["achievementID"] = 6754,	-- The Dark Heart of the Mogu
+					["coord"] = { 42.26, 17.46, 371 },
 				}),
 				ach(6855, {	-- The Seven Burdens of Shaohao
 					crit(1),	-- The Emperor's Burden - Part 1

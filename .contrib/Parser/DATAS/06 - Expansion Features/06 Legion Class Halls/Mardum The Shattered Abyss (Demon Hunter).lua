@@ -328,6 +328,9 @@ _.ExpansionFeatures =
 						["coord"] = { 54.0, 46.7, 721 },
 						["lvl"] = 110,
 					}),
+					q(46152, {	-- Furthering Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(42808, {	-- Green Adepts
 						["sourceQuests"] = { 42802 },	-- Securing Mardum
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
@@ -773,9 +776,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(41064),	-- Cursed Forge of the Nathrezim
-					q(43552),	-- Eye of Azshara
+					q(43552, {	-- Eye of Azshara
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(44226),	-- Fate Favors Us
-					q(46152),	-- Furthering Knowledge
 					q(45994),	-- Investigate the Broken Shore
 					q(46333),	-- Livin' on the Ledge
 					q(41096),	-- Time is of the Essence

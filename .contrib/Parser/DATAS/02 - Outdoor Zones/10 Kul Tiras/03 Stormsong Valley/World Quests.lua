@@ -8,10 +8,6 @@ _.Zones =
 			n(-34,  {	-- World Quests
 				n(QUESTS, {
 	--[[	raw quest list to check against
-					q(52063, {	-- Boarder Patrol
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53343, {	-- Censership
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -178,6 +174,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(52063, {	-- Boarder Patrol
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
 					}),
 					q(52071, {	-- Briarback Mountain
 						["lvl"] = 120,
