@@ -7,13 +7,6 @@ _.Zones =
 		m(646, {	-- Broken Shore
 			n(-10050, {	-- Nether Disruptor
 				["g"] = bubbleDown({["requireSkill"] = BLACKSMITHING}, {
-					q(46774, {	-- The Nether Disruptor
-						["provider"] = { "n", 120183 },	-- Commander Chambers
-						["repeatable"] = true,
-						["g"] = {
-							i(147451),	-- Armorcrafter's Commendation
-						},
-					}),
 					q(46736, {	-- Contribute to Nether Disruptor
 						["repeatable"] = true,
 						["g"] = {

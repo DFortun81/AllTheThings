@@ -329,6 +329,10 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45763 },	-- Demonic Disruption
 						["maps"] = { 646 },	-- Broken Shore
 					}),
+					q(46147, {	-- Knowledge is Power
+						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { SHAMAN },
+					}),
 					q(42989, {	-- Ma'haat the Indomitable
 						["classes"] = { SHAMAN },
 						["lvl"] = 110,

@@ -396,6 +396,9 @@ _.ExpansionFeatures =
 						["coord"] = { 59.0, 74.0, 721 },
 						["lvl"] = 110,
 					}),
+					q(46133, {	-- Knowledge is Power
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(42132, {	-- Last, But Not Least
 						["sourceQuests"] = { 42920, 42809 },	-- The Invasion of Niskara (Altruis, Kayn)
 						["providers"] = {

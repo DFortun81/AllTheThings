@@ -120,6 +120,9 @@ _.ExpansionFeatures =
 						["lvl"] = 101,
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 					}),
+					q(46131, {	-- Knowledge is Power
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(40823, {	-- Rebuilding the Council
 						["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
 						["classes"] = { 9 },	-- Warlock

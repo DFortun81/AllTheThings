@@ -63,6 +63,9 @@ _.ExpansionFeatures =
 					q(41047),	-- Infused with Power
 					q(46023),	-- Investigate the Broken Shore
 					q(42689),	-- Knowing Our Enemy
+					q(46130, {	-- Knowledge is Power
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(44680),	-- Leading by Example
 					q(42385),	-- Lending a Hand
 					q(42523),	-- Making Contact

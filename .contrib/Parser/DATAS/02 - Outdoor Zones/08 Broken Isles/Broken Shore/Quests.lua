@@ -416,6 +416,20 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
+				q(46772, {	-- The Mage Tower
+					["sourceQuests"] = { 46773 },	-- The Command Center
+					["repeatable"] = true,
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["coord"] = { 44.4, 63.1, 646 },
+					["lvl"] = 110,
+				}),
+				q(46774, {	-- The Nether Disruptor
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["repeatable"] = true,
+					["g"] = {
+						i(147451),	-- Armorcrafter's Commendation
+					},
+				}),
 				q(46666, {	-- The Motherlode
 					["sourceQuests"] = { 46511 },	-- We're Treasure Hunters
 					["provider"] = { "n", 119886 },	-- Excavator Karla
@@ -640,7 +654,14 @@ _.Zones =
 				q(46031),	-- Investigate the Broken Shore
 				q(39757),	-- Keeping Your Edge
 				q(44082),	-- Knights of the Ebon Blade
-				q(45614),	-- Lady Remor'za
+--]]
+				q(45614, {	-- Lady Remor'za
+					["sourceQuests"] = { 45251 },	-- Redundancy
+					["provider"] = { "n", 117331 },	-- Aethas Sunreaver
+					["coord"] = { 49.2, 18.6, 646 },
+					["lvl"] = 110,
+				}),
+--[[
 				q(46688),	-- Leather of the Ancients
 				q(38804),	-- Lyrelle
 				q(45817),	-- Mage
@@ -677,7 +698,6 @@ _.Zones =
 				q(45823),	-- Priest
 				q(45556),	-- Ready to Strike
 				q(43266),	-- Recruiting the Troops
-				q(45251),	-- Redundancy
 				q(40419),	-- Rescue Mission
 				q(44889),	-- Resource Management
 				q(38793),	-- Rethu's Experience
@@ -760,9 +780,7 @@ _.Zones =
 				q(43545),	-- The Lord of Black Rook Hold
 				q(44276),	-- The Lord of Black Rook Hold
 				q(44277),	-- The Lord of Black Rook Hold
-				q(46772),	-- The Mage Tower
 				q(46666),	-- The Motherlode
-				q(46774),	-- The Nether Disruptor
 				q(45553),	-- The Nighthuntress Beckons
 				q(44775),	-- The Peak of Bones
 				q(46674),	-- The Preservation of Nature

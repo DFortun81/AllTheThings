@@ -270,6 +270,10 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42766, 42767, 42768 },	-- The Riddle of the Barrel, The Riddle of the Land, The Riddle of Purity
 						["maps"] = { 371 },	-- Jade Forest
 					}),
+					q(46144, {	-- Knowledge is Power
+						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { MONK },
+					}),
 					q(46349, {	-- Lilies for Ryuli
 						["classes"] = { MONK },
 						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
