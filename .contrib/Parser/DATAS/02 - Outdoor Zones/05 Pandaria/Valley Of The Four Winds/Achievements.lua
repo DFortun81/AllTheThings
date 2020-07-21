@@ -18,14 +18,22 @@ _.Zones =
 					},
 				}),
 				ach(7294),	-- A Taste of Things to Come (Halfhill)
-				crit(2, {	-- Waterspeakers
-					["achievementID"] = 6846,	-- Fish Tales
-					["coord"] = { 61.52, 34.88, 376 },
+				ach(6846, {	-- Fish Tales
+					["collectible"] = false,
+					["g"] = {
+						crit(2, {	-- Waterspeakers
+							["coord"] = { 61.52, 34.88, 376 },
+						}),
+					},
 				}),
 				ach(7292),	-- Green Acres (Halfhill)
-				crit(3, {	-- Embracing the Passions
-					["achievementID"] = 6850,	-- Hozen in the Mist
-					["coord"] = { 83.22, 21.16, 376 },
+				ach(6850, {	-- Hozen in the Mist
+					["collectible"] = false,
+					["g"] = {
+						crit(3, {	-- Embracing the Passions
+							["coord"] = { 83.22, 21.16, 376 },
+						}),
+					},
 				}),
 				ach(7284, {	-- Is Another Man's Treasure
 					["collectible"] = false,
