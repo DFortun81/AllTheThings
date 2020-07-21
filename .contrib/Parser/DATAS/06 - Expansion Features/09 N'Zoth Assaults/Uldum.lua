@@ -1288,7 +1288,7 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 					--[[
-					q(, {	-- 
+					q(, {	--
 						["lvl"] = 120,
 						["coord"] = { , 1527 },
 						["isWorldQuest"] = true,
@@ -1954,9 +1954,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(-34,	{	-- World Quests
-					q(55629, {	-- Unknown quest populating /attwq
-						["u"] = 1,
-					}),
+					un(NEVER_IMPLEMENTED, q(55629)),	-- Unknown quest populating /attwq
 					q(58743, {	-- Dune Buggy
 						-- pet battle
 						["lvl"] = 120,
