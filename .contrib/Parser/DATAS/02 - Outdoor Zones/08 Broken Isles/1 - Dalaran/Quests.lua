@@ -1102,10 +1102,6 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
-				q(45251, {	-- Redundancy
-					["classes"] = { MAGE },
-					["provider"] = { "n", 118242 },	-- Aethas Sunreaver
-				}),
 				q(41540, {	-- Rendezvous with the Courier
 					["classes"] = { HUNTER },
 					["providers"] = {

@@ -13,6 +13,9 @@ _.ExpansionFeatures =
 			["lvl"] = 98,
 			["g"] = {
 				n(QUESTS, {
+					q(46108, {	-- Knowledge is Power
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					n(111093, {	-- Stitchwork
 						["questID"] = 44188,	-- Hidden Tracking
 						["classes"] = { 6 },	-- Death Knight Only!

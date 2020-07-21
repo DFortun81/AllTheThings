@@ -701,6 +701,7 @@ _.Zones =
 					}),
 					q(32326, {	-- Insertion
 						["provider"] = { "n", 67939 },	-- General Nazgrim
+						["coord"] = { 9.3, 51.1, 418 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(30133, {	-- Into the Wilds
