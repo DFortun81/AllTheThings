@@ -875,6 +875,14 @@ _.NeverImplemented =
 		q(36294),	-- Lumber Mill — Phylarch the Evergreen first attack
 		q(36295),	-- Lumber Mill — Phylarch the Evergreen second attack
 		q(39414),	-- Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
+		
+		q(36808), 	-- Missive completion: Assault on Shatrath Harbour
+		q(36809), 	-- Missive completion: Assault on the Heart of Shatrath
+
+		-- GARRISON COMMAND TABLE
+		q(39413),
+		q(39415),
+		q(39710),
 
 		--	TREASURES
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
