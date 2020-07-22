@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, { 	-- Pandaria
@@ -1454,7 +1455,11 @@ _.Zones =
 					}),
 					q(30269, {	-- Unsafe Passage
 						["provider"] = { "n", 58547 },	-- Koro Mistwalker
-						["sourceQuests"] = { 30461, 30133 },	-- Into the Wilds
+						["sourceQuests"] = {
+							30461,	-- Into the Wilds (Horde)
+							30133,	-- Into the Wilds (Horde)
+							-- TODO: Alliance source quest
+						},
 					}),
 					q(32328, {	-- Victorious Return
 						["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
@@ -1512,7 +1517,11 @@ _.Zones =
 					}),
 					q(30079, {	-- What's Eating Zhu's Watch?
 						["provider"] = { "n", 56115 },	-- Ken-Ken
-						["sourceQuests"] = { 29873, 49540, 49558 },	-- Ken-Ken, Warchief's Command: Krasarang Wilds!, Hero's Call: Krasarang Wilds!
+						["sourceQuests"] = {
+							29873,	-- Ken-Ken
+							49540,	-- Warchief's Command: Krasarang Wilds!
+							49558,	-- Hero's Call: Krasarang Wilds!
+						},
 					}),
 					q(30346, {	-- Where are the Pools
 						["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin

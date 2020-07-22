@@ -717,8 +717,8 @@ _.Zones =
 					["sourceQuests"] = { 30074 },	-- Knocking on the Door
 					["coord"] = { 32.3, 68.5, 376 },
 					["provider"] = { "n", 56138 },	-- Li Li
-				}),				q(29757, {	-- Bottletoads
-					["sourceQuests"] = { 29871 },	-- Clever Ashyo
+				}),
+				q(29757, {	-- Bottletoads
 					["coord"] = { 60.6, 33.7, 376 },
 					["provider"] = { "n", 56773 },	-- Yan
 				}),
@@ -807,7 +807,6 @@ _.Zones =
 				q(29871, {	-- Clever Ashyo
 					["coord"] = { 84.0, 21.1, 376 },
 					["provider"] = { "n", 56110 },	-- Xiao
-					["altQuests"] = { 29874, 29875, 29873 },
 				}),
 				q(29947, {	-- Crouching Carrot, Hidden Turnip
 					["sourceQuests"] = { 29945 },	-- Yellow and Red Make Orange
@@ -1012,13 +1011,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 84.0, 21.1, 376 },
 					["provider"] = { "n", 56110 },	-- Xiao
-					["altQuests"] = { 29875, 29873, 29871 },
 				}),
 				q(29875, {	-- Kang Bramblestaff
 					["races"] = HORDE_ONLY,
 					["coord"] = { 84.0, 21.1, 376 },
 					["provider"] = { "n", 56110 },	-- Xiao
-					["altQuests"] = { 29874, 29873, 29871 },
 				}),
 				q(29873, {	-- Ken-Ken
 					["isBreadcrumb"] = true,
@@ -1736,7 +1733,6 @@ _.Zones =
 					["provider"] = { "n", 57298 },	-- Farmer Fung
 				}),
 				q(30267, {	-- Watery Woes
-					["sourceQuests"] = { 29871 },	-- Clever Ashyo
 					["coord"] = { 61.0, 32.9, 376 },
 					["provider"] = { "n", 58736 },	-- Gladecaster Lang
 				}),

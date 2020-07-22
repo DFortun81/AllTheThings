@@ -127,6 +127,7 @@ _.Zones =
 			}),
 			q(49540, {	-- Warchief's Command: Krasarang Wilds!
 				["isBreadcrumb"] = true,
+				["races"] = HORDE_ONLY,
 			}),
 			q(49541, {	-- Warchief's Command: Kun-Lai Summit!
 				["isBreadcrumb"] = true,
@@ -360,6 +361,7 @@ _.Zones =
 			q(49558, {	-- Hero's Call: Krasarang Wilds!
 				["isBreadcrumb"] = true,
 				["lvl"] = 81,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49559, {	-- Hero's Call: Kun-Lai Summit!
 				["isBreadcrumb"] = true,
@@ -498,6 +500,7 @@ _.Zones =
 			q(49557, {	-- Hero's Call: Valley of the Four Winds!
 				["isBreadcrumb"] = true,
 				["lvl"] = 81,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(27724, {	-- Hero's Call: Vashj'ir!
 				["isBreadcrumb"] = true,
