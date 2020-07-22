@@ -456,6 +456,7 @@ _.NeverImplemented =
 		q(33019),	-- NC S1 Q2 - unused cooking quest
 		q(33023),	-- NC S1 Q6 - unused cooking quest
 		q(33025),	-- NC S2 Q2 - unused cooking quest
+		q(32107),	-- Flying Tiger Gourami, triggered together with Flying Tiger Gourami (31443)
 		q(29695),	-- Jade Forest - Kiryn TRACKING
 		q(29702),	-- Jade Forest - Gorrok TRACKING
 		q(29697),	-- Jade Forest - Rivett TRACKING
@@ -875,7 +876,7 @@ _.NeverImplemented =
 		q(36294),	-- Lumber Mill — Phylarch the Evergreen first attack
 		q(36295),	-- Lumber Mill — Phylarch the Evergreen second attack
 		q(39414),	-- Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
-		
+
 		q(36808), 	-- Missive completion: Assault on Shatrath Harbour
 		q(36809), 	-- Missive completion: Assault on the Heart of Shatrath
 
@@ -2226,6 +2227,7 @@ _.NeverImplemented =
 		q(56428),	-- Summoned Arcane Amalgamation
 		q(55144),	-- Summoned Dusty Amalgamation
 		q(55205),	-- Summoned Moghiea
+		q(55206),	-- Summoned Ungormath
 		q(55203),	-- Summoned Salgos, the Eternal
 		q(55201),	-- Summoned Spawn of Salgos
 		q(55204),	-- Summoned Xue
@@ -2242,6 +2244,7 @@ _.NeverImplemented =
 		q(56484),	-- Killed Moghiea
 		q(56479),	-- Killed Omus
 		q(56722),	-- Killed Omus
+		q(56483),	-- Killed Ungormath
 		q(56487),	-- Killed Salgos, the Eternal
 		q(56732),	-- Killed Salgos, the Eternal
 		q(56486),	-- Killed Spawn of Salgos
@@ -2425,6 +2428,7 @@ _.NeverImplemented =
 		q(55903),	-- Triggered when completing "Armed for Action" achievement. May be related to picking up the weapon (e.g. Bolt Spitter)
 		q(56330),	-- Triggered shortly after completing "Chopped Bots". Possibly shuts down the magnet?
 		q(56660),	-- Triggered on Mechagon randomly
+		q(55260),	-- triggers when making the Volatile Blaster first time on character
 		q(56840),	-- Toys of Destruction - made the Volatile Blaster. Maybe triggers for all the toys to indicate the toy extra action button is available?
 		q(56624),	-- collected Izira Gearsworn mini for "Most Minis Wins"
 		q(56625),	-- collected Bondo Grosbloc mini for "Most Minis Wins"
