@@ -325,6 +325,10 @@ _.ExpansionFeatures =
 					q(43402, {	-- High Priest of Netherlight
 						i(139759),	-- Chest
 					}),
+					q(46140, {	-- Knowledge is Power
+						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { PRIEST },
+					}),
 					q(44251, {	-- Power Word: Armor
 						["classes"] = { 5 },	-- Priest
 						["coord"] = { 38.9, 24.4, 702 },

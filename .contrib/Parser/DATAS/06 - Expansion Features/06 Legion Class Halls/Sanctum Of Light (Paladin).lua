@@ -82,6 +82,9 @@ _.ExpansionFeatures =
 						q(46151, {	-- Furthering Knowledge
 							["u"] = REMOVED_FROM_GAME,
 						}),
+						q(46132, {	-- Knowledge is Power
+							["u"] = REMOVED_FROM_GAME,
+						}),
 						q(45770, {	-- Stirring in the Shadows
 							["lvl"] = 110,
 							["classes"] = {2},

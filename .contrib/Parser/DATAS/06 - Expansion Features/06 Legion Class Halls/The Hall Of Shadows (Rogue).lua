@@ -389,6 +389,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47603,	-- The Mysterious, Magnificent Al'Abas
 					}),
+					q(46129, {	-- Knowledge is Power
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(40997, {	-- Lethal Efficiency
 						["coord"] = { 37.7, 44.8, 626 },
 						["classes"] = { ROGUE },

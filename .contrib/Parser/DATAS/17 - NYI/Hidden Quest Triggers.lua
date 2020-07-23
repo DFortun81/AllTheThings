@@ -939,6 +939,8 @@ _.NeverImplemented =
 		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
 
 		--	PvP Set Completed
+		q(45586),	-- Dreadful Gladiator's Dreadplate Armor (Death Knight)
+
 		q(43092),	-- Primal Combatant's Felweave Armor (Alliance, Warlock)
 		q(43093),	-- Primal Combatant's Felweave Armor (Horde, Warlock)
 		q(43094),	-- Primal Combatant's Satin Armor (Alliance, Priest)
@@ -1081,6 +1083,8 @@ _.NeverImplemented =
 		q(44659),	-- Dalaran - I Skipped The Intro Tracking Quest
 		q(48984),	-- Antoran Wastes - triggered when combining the Smashed Portal Generator and other parts to make Vishak's Portal Generator
 		q(46717),	-- got achievement Burning Bridges and looted Qa'pla, Eredun War Order legendary, so one of the two
+		q(46835),	-- Whispers of a Frightened World Tracking, while doing quest 46206
+		q(45914),	-- Ch 5 Soulstone Shielded Tracking Quest (Mage campaign)
 
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
@@ -1442,22 +1446,29 @@ _.NeverImplemented =
 		q(48672),	-- Lockout Tracking - Normal - Ice — val first completion?
 
 		--	Rares
-		q(39533),	-- Durguth — WQ rare in suramar, attached WQ to rare so his special drop shows in /attwq
+		q(45489),	-- Azsuna - WQ rare: Deepclaw
+		q(45499),	-- Azsuna - WQ rare: Fjordun
+		q(45513),	-- Highmountain - WQ rare: Defilia
 		q(45511),	-- Highmountain - WQ rare: Olokk the Shipbreaker
 		q(45512),	-- Highmountain - WQ rare: Mawat'aki
-		q(48381),	-- Obsidian Deathwarder, Highmountain rare with no associated loot
-		q(45477),	-- Suramar - WQ rare: Sorallus
-		q(45502),	-- Suramar - WQ rare: Selenyi
-		q(45503),	-- Suramar - WQ rare: Colerian
-		q(45504),	-- Suramar - WQ rare: Alteria
+		q(48381),	-- Highmountain - WQ rare: Obsidian Deathwarder		
 		q(45478),	-- Suramar - WQ rare: Achronos
+		q(45504),	-- Suramar - WQ rare: Alteria
 		q(45475),	-- Suramar - WQ rare: Auditor Esiel
 		q(45471),	-- Suramar - WQ rare: Az'jatar
+		q(45503),	-- Suramar - WQ rare: Colerian
+		q(39533),	-- Suramar - WQ rare: Durguth - attached WQ to rare so his special drop shows in /attwq
 		q(45476),	-- Suramar - WQ rare: Magistrix Vilessa
 		q(45506),	-- Suramar - WQ rare: Oglok the Furious
 		q(45505),	-- Suramar - WQ rare: Scythemaster Cil'raman
+		q(45502),	-- Suramar - WQ rare: Selenyi
+		q(45477),	-- Suramar - WQ rare: Sorallus
 		q(45474),	-- Suramar - WQ rare: Volshax, Breaker of Will
+		q(45485),	-- Val'Sharah - WQ rare: Aodh Witherpetal
+		q(45483),	-- Val'Sharah - WQ rare: Ealdis
+		q(45501),	-- Val'Sharah - WQ rare: Malisandra
 		q(45488),	-- Val'Sharah - WQ rare: Nylaathria the Forgotten
+		q(45487),	-- Val'Sharah - WQ rare: Rabxach
 
 		--	Treasures
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8

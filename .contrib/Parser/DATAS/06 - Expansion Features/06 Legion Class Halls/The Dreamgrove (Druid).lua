@@ -242,8 +242,8 @@ _.ExpansionFeatures =
 						["maps"] = { 747 },
 						["g"] = {
 							follower(999),	-- Thisalee Crow
-						},						
-					}),					
+						},
+					}),
 					q(40650, {	-- Champion: Zen'tabra
 						["classes"] = { DRUID },
 						["lvl"] = 101,
@@ -276,7 +276,7 @@ _.ExpansionFeatures =
 							}),
 						},
 						["maps"] = { 747 },
-					}),					
+					}),
 					q(42045, {	-- Communing with Malorne
 						["classes"] = { DRUID },
 						["lvl"] = 110,
@@ -425,7 +425,7 @@ _.ExpansionFeatures =
 						},
 						["sourceQuests"] = { 46677 },	-- Prick of a Thistle
 						["maps"] = { 646 },
-					}),					
+					}),
 					q(42516, {	-- Growing Power
 						["classes"] = { DRUID },
 						["level"] = 101,
@@ -482,7 +482,11 @@ _.ExpansionFeatures =
 						["coord"] = { 52.6, 52.8, 747 },
 						["sourceQuests"] = { 41422 },	-- Necessary Preparations
 						["maps"] = { 747 },
-					}),					
+					}),
+					q(46141, {	-- Knowledge is Power
+						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { DRUID },
+					}),
 					q(45498, {	-- Let Sleeping Dogs Lie
 						["classes"] = { DRUID },
 						["lvl"] = 110,
@@ -608,7 +612,7 @@ _.ExpansionFeatures =
 							46675,	-- To Track a Demon
 						},
 						["maps"] = { 646 },
-					}),					
+					}),
 					q(41690, {	-- Reconvene
 						["classes"] = { DRUID },
 						["lvl"] = 98,

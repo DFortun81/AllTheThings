@@ -454,6 +454,10 @@ _.ExpansionFeatures =
 					q(46339, {	-- Keymaster Orlis
 						["classes"] = { MAGE },
 					}),
+					q(46143, {	-- Knowledge is Power
+						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { MAGE },
+					}),
 					q(42429, {	-- Memories of Ebonchill
 						["lvl"] = 101,
 						["coord"] = { 53.2, 41.5, 735 },
@@ -503,7 +507,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 108515 },	-- Archmage Melis
 						["sourceQuest"] = 42171,	-- Final Exit
 					}),
-					q(45251),	-- Redundancy
+					q(45251, {	-- Redundancy
+						["classes"] = { MAGE },
+						["provider"] = { "n", 118242 },	-- Aethas Sunreaver
+					}),
 					q(46705, {	-- Retaliation
 						["classes"] = { MAGE },
 					}),

@@ -33,9 +33,6 @@ _.Zones =
 					["coord"] = { 47.0, 41.4, 630 },
 					["provider"] = { "n", 88798 },	-- Lady Irisse
 				}),
-				q(37965, {	-- A Tainted Vintage (Bonus Objective)
-					["coord"] = { 47.0, 11.4, 630 },
-				}),
 				q(42367, {	-- Arkethrax
 					["sourceQuests"] = { 42375 },	-- Eye See You
 					["coord"] = { 63.8, 28.8, 630 },
