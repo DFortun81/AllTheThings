@@ -1055,6 +1055,14 @@ _.Zones =
 							30694,	-- Tread Lightly
 						},
 					}),
+					q(32139, {	-- Stacked!
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+					}),
+					q(32221, {	-- Storming the Beach
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+					}),
 					q(30718, {	-- Students of Chi-Ji
 						["provider"] = { "n", 60506 },	-- Thelonius
 						["isDaily"] = true,
@@ -1462,6 +1470,10 @@ _.Zones =
 							-- TODO: Alliance source quest
 						},
 					}),
+					q(32238, {	-- Universal Remote-Explode
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+					}),
 					q(32328, {	-- Victorious Return
 						["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
 						["races"] = HORDE_ONLY,
@@ -1478,6 +1490,10 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
+					}),
+					q(32223, {	-- Wanted: Lieutenant Ethan Jacobson
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
 					}),
 					q(30360, {	-- Warn Stoneplow
 						["provider"] = { "n", 58821 },	-- Lyalia
@@ -1605,22 +1621,6 @@ _.Zones =
 					}),
 					q(30677, {	-- Shuttle Service
 						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(32139, {	-- Stacked!
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = HORDE_ONLY,
-					}),
-					q(32221, {	-- Storming the Beach
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = HORDE_ONLY,
-					}),
-					q(32238, {	-- Universal Remote-Explode
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = HORDE_ONLY,
-					}),
-					q(32223, {	-- Wanted: Lieutenant Ethan Jacobson
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = HORDE_ONLY,
 					}),
 					q(32140, {	-- Work Order: Iron
 						["u"] = REMOVED_FROM_GAME,
