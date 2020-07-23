@@ -1153,51 +1153,61 @@ _.Zones =
 						["coord"] = { 76.3, 19.0, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 33592 },	-- Jaelyne Evensong
+						["sourceQuest"] = 13717,	-- The Valiant's Charge (A)
 					}),
 					q(13723, {	-- The Valiant's Challenge (A)
 						["coord"] = { 76.5, 19.8, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 33335 },	-- Ambrose Boltspark
+						["sourceQuest"] = 13715,	-- The Valiant's Charge (A)
 					}),
 					q(13713, {	-- The Valiant's Challenge (A)
 						["coord"] = { 76.6, 19.5, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 33312 },	-- Lana Stouthammer
+						["sourceQuest"] = 13714,	-- The Valiant's Charge (A)
 					}),
 					q(13724, {	-- The Valiant's Challenge (A)
 						["coord"] = { 76.1, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 33593 },	-- Colosos
+						["sourceQuest"] = 13716,	-- The Valiant's Charge (A)
 					}),
 					q(13699, {	-- The Valiant's Challenge (A)
 						["coord"] = { 76.6, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
+						["sourceQuest"] = 13718 	-- The Valiant's Charge (A)
 					}),
 					q(13726, {	-- The Valiant's Challenge (H)
 						["coord"] = { 76.5, 24.6, 118 },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
+						["sourceQuest"] = 13697,	-- The Valiant's Charge (H)
 					}),
 					q(13728, {	-- The Valiant's Challenge (H)
 						["coord"] = { 76.2, 24.6, 118 },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 33403 },	-- Runok Wildmane
+						["sourceQuest"] = 13720,	-- The Valiant's Charge (H)
 					}),
 					q(13729, {	-- The Valiant's Challenge (H)
 						["coord"] = { 76.5, 24.2, 118 },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 33373 },	-- Deathstalker Visceri
+						["sourceQuest"] = 13721,	-- The Valiant's Charge (H)
 					}),
 					q(13731, {	-- The Valiant's Challenge (H)
 						["coord"] = { 76.5, 23.9, 118 },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
+						["sourceQuest"] = 13722,	-- The Valiant's Charge (H)
 					}),
 					q(13727, {	-- The Valiant's Challenge (H)
 						["coord"] = { 76.0, 24.5, 118 },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 33372 },	-- Zul'tore
+						["sourceQuest"] = 13719,	-- The Valiant's Charge (H)
 					}),
 					q(13714, {	-- The Valiant's Charge (A)
 						["coord"] = { 76.6, 19.5, 118 },

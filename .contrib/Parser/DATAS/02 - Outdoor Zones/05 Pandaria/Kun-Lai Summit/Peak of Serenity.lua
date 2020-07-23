@@ -47,21 +47,38 @@ _.Zones =
 							i(90010),
 							i(90011),
 						}),
-						q(31844),	-- Practice Makes Perfect: Master Cheng
-						q(31840),	-- Practice Makes Perfect: Master Cheng
-						q(31846),	-- Practice Makes Perfect: Master Hsu
-						q(31842),	-- Practice Makes Perfect: Master Kistane
-						q(31845),	-- Practice Makes Perfect: Master Tsang
-						q(31841),	-- Practice Makes Perfect: Master Woo
-						q(31843),	-- Practice Makes Perfect: Master Yoon
-						q(31856),	-- The Peak of Serenity - Begin Your Training
-						q(31989),	-- The Peak of Serenity - Complete Your Training
-						q(31859),	-- The Peak of Serenity - Continue Your Training
-						q(31860),	-- The Peak of Serenity - Continue Your Training
-						q(31855),	-- The Peak of Serenity - Continue Your Training
-						q(31857),	-- The Peak of Serenity - Continue Your Training
-						q(31861),	-- The Peak of Serenity - Continue Your Training
-						q(31858),	-- The Peak of Serenity - Continue Your Training
+						q(31844, {	-- Practice Makes Perfect: Master Cheng/lvl 60
+							["isDaily"] = true,
+						}),
+						q(31840, {	-- Practice Makes Perfect: Master Cheng/lvl 20
+							["isDaily"] = true,
+						}),
+						q(31846, {	-- Practice Makes Perfect: Master Hsu/lvl 80
+							["isDaily"] = true,
+						}),
+						q(31842, {	-- Practice Makes Perfect: Master Kistane/lvl 40
+							["isDaily"] = true,
+						}),
+						q(31845, {	-- Practice Makes Perfect: Master Tsang/lvl 70
+							["isDaily"] = true,
+						}),
+						q(31841, {	-- Practice Makes Perfect: Master Woo/lvl 30
+							["isDaily"] = true,
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						q(31843, {	-- Practice Makes Perfect: Master Yoon/lvl 50
+							["isDaily"] = true,
+						}),
+						q(31856), 	-- The Peak of Serenity - Begin Your Training
+						q(31989),	-- The Peak of Serenity - Complete Your Training/lvl 90
+						q(31859),	-- The Peak of Serenity - Continue Your Training/lvl 60
+						q(31860),	-- The Peak of Serenity - Continue Your Training/lvl 70
+						q(31855, {	-- The Peak of Serenity - Continue Your Training/lvl 30
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						q(31857),	-- The Peak of Serenity - Continue Your Training/lvl 40
+						q(31861),	-- The Peak of Serenity - Continue Your Training/lvl 80
+						q(31858),	-- The Peak of Serenity - Continue Your Training/lvl 50
 					}),
 					n(VENDORS, {
 						n(66354, {	-- Master Cannon <Tanner>

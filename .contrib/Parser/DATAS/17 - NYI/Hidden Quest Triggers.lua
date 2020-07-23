@@ -361,6 +361,8 @@ _.NeverImplemented =
 		-- Zones
 		q(12845),	-- Dalaran teleport crystal flag
 		q(13701),	-- Argent Tournament - Horde Champion Marker
+		q(13686),	-- Alliance Tournament Eligibility Marker
+		q(13687),	-- Horde Tournament Eligibility Marker
 		q(46051),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 01
 		q(46052),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 02
 		q(46053),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 03

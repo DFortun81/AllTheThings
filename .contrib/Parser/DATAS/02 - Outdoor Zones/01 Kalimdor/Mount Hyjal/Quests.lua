@@ -599,14 +599,14 @@ _.Zones =
 					["coord"] = { 28.22, 29.74, 198 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25277,	-- Cleaning House
-					["description"] = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to the Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
+					["description"] = "Before using Totem of Lo'Gosh to turn in the quest, get back to the camp and stand next to Takrik Ragehowl. Summon Spirit of Lo'Gosh, turn in your quest and without going anywhere pick up Into the Maw! from Takrik Ragehowl and then pick up Into the Maw! from Spirit of Lo'Gosh (in this order). Congratulations, you got two quests for the price of one!",
 				}),
 				q(25353, {	-- Lightning in a Bottle
 					["provider"] = { "n", 39433 },	-- Ian Duran
 					["coord"] = { 28.22, 29.74, 198 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25278,	-- Cleaning House
-					["description"] = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to the Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
+					["description"] = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
 				}),
 				q(25881, {	-- Lost Wardens
 					["provider"] = { "n", 41507 },	-- Niden

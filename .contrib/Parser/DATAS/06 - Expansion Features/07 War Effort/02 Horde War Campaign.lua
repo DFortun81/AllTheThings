@@ -1122,7 +1122,7 @@ _.ExpansionFeatures =
 					q(54007, {	-- Insurance Policy
 						["provider"] = { "n", 146073 },	-- Trade Prince Gallywix
 						["coord"] = { 54.6, 64.6, 895 },
-						["sourceQuest"] = 54128,	-- Test Case #1; Mech vs. Mekkatorque
+						["sourceQuest"] = 54004,	-- Test Case #1; Mech vs. Mekkatorque
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
