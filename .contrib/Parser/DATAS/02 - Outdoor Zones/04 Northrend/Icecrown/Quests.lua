@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, { 	-- Northrend
@@ -1063,13 +1064,13 @@ _.Zones =
 				}),
 				q(13104, {	-- Once More Unto The Breach, Hero (non-DK)
 					["coord"] = { 86.0, 75.7, 118 },
-					["classes"] = exclude({6}, ALL_CLASSES),	-- All classes except DK
+					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["provider"] = { "n", 30677 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13086,	-- The Last Line Of Defense
 				}),
 				q(13105, {	-- Once More Unto The Breach, Hero (DK)
 					["coord"] = { 86.0, 75.7, 118 },
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
 					["provider"] = { "n", 30677 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13086,	-- The Last Line of Defense
 				}),

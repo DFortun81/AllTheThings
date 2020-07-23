@@ -710,7 +710,7 @@ _.Zones =
 				q(55142, {	-- For the Alliance
 					["provider"] = { "n", 150941 },	-- Katherine Proudmoore
 					["coord"] = { 67.8, 21.8, 1161 },
-					["races"] = { 32 },	-- Kul Tiran
+					["races"] = { KULTIRAN },
 					["lvl"] = 20,
 					["g"] = {
 						i(165010),	-- Tabard of Kul Tiras
@@ -756,7 +756,7 @@ _.Zones =
 				}),
 				q(54144, {	-- Orders from Azshara
 					["sourceQuest"] = 54141,	-- The Azsharan Medallion
-					["classes"] = exclude( { 5 }, ALL_CLASSES ),	-- all classes, excluding Priest
+					["classes"] = exclude(PRIEST, ALL_CLASSES),
 					["coord"] = { 40.4, 36.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 135793 },	-- Collector Kojo
@@ -766,7 +766,7 @@ _.Zones =
 				}),
 				q(54265, {	-- Orders from Azshara
 					["sourceQuest"] = 54172,	-- The Azsharan Medallion
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["coord"] = { 71.4, 30.2, 862 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 134345 },	-- Collector Kojo
@@ -956,7 +956,7 @@ _.Zones =
 				o(311218, {	-- Xal'atath, Blade of the Black Empire
 					q(54113, {	-- Every Little Death Helps
 						["sourceQuest"] = 54144,	-- Orders from Azshara
-						["classes"] = exclude( { 5 }, ALL_CLASSES ),	-- all classes, excluding Priest
+						["classes"] = exclude(PRIEST, ALL_CLASSES),
 						["coord"] = { 34.2, 31.8, 942 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -968,7 +968,7 @@ _.Zones =
 							54265,	-- Orders from Azshara
 							54433,	-- Orders from Azshara
 						},
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coords"] = {
 							{ 78.0, 36.7, 862 },
 							{ 34.2, 31.8, 942 },
@@ -976,7 +976,7 @@ _.Zones =
 					}),
 					q(53760, {	-- Unintended Consequences
 						["sourceQuest"] = 54117,	-- Every Little Death Helps
-						["classes"] = exclude( { 5 }, ALL_CLASSES ),	-- all classes, excluding Priest
+						["classes"] = exclude(PRIEST, ALL_CLASSES),
 						["coords"] = {
 							{ 78.0, 36.7, 862 },
 							{ 34.2, 31.8, 942 },
@@ -987,7 +987,7 @@ _.Zones =
 					}),
 					q(54058, {	-- Unintended Consequences
 						["sourceQuest"] = 54118,	-- Every Little Death Helps
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coords"] = {
 							{ 78.0, 36.7, 862 },
 							{ 34.2, 31.8, 942 },

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -16,7 +17,7 @@ _.Zones =
 					q(29078, {	-- Beating Them Back!
 						["provider"] = { "n", 197 },	-- Marshal McBrideMarshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = exclude({ 1 }, ALLIANCE_ONLY),	-- non-Human Alliance races
+						["races"] = exclude(HUMAN, ALLIANCE_ONLY),
 					}),
 					q(28767, {	-- Beating Them Back!
 						["provider"] = { "n", 197 },	-- Marshal McBride
@@ -150,13 +151,13 @@ _.Zones =
 					q(29082, {	-- Fear No Evil
 						["provider"] = { "n", 951 },	-- Brother Paxton
 						["coord"] = { 35.3, 37.9, 425 },
-						["races"] = exclude({ 1, 32 }, ALLIANCE_ONLY),	-- excluding Human and Kul Tiran
+						["races"] = exclude({ HUMAN, KULTIRAN }, ALLIANCE_ONLY),
 						["sourceQuest"] = 29080,	-- Join the Battle!
 					}),
 					q(29080, {	-- Join the Battle!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = exclude({ 1 }, ALLIANCE_ONLY),	-- non-human
+						["races"] = exclude(HUMAN, ALLIANCE_ONLY),
 						["sourceQuest"] = 29079,	-- Lions for Lambs
 					}),
 					q(28789, {	-- Join the Battle!
@@ -253,7 +254,7 @@ _.Zones =
 					q(29079, {	-- Lions for Lambs
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = exclude({ 1 }, ALLIANCE_ONLY),	-- non-Human
+						["races"] = exclude(HUMAN, ALLIANCE_ONLY),
 						["sourceQuest"] = 29078,	-- Beating Them Back!
 					}),
 					q(31140, {	-- Lions for Lambs
@@ -351,7 +352,7 @@ _.Zones =
 					q(29083, {	-- The Rear is Clear
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = exclude({ 1 }, ALLIANCE_ONLY),	-- all non-human
+						["races"] = exclude(HUMAN, ALLIANCE_ONLY),
 						["sourceQuest"] = 29081,	-- They Sent Assassin
 					}),
 					q(28792, {	-- They Sent Assassins
@@ -413,7 +414,7 @@ _.Zones =
 					q(29081, {	-- They Sent Assassins
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = exclude({ 1 }, ALLIANCE_ONLY),	-- all non-human
+						["races"] = exclude(HUMAN, ALLIANCE_ONLY),
 						["sourceQuest"] = 29080,	-- Join the Battle!
 					}),
 				}),

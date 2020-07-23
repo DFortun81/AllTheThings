@@ -777,8 +777,6 @@ _.NeverImplemented =
 		q(34760),	-- Talador - triggered when looting the Rusted Lockbox. WoWhead lists as a nagrand treasure but that treasure doesn't seem to exist
 		q(35491),	-- Talador - Underseer Bloodmane vignette duplicate flag
 
-
-
 		--	TANAAN JUNGLE
 		q(37938),	-- Tanaan Jungle - Assault on the Ruins of Kra'nak - criteria complete
 		q(38009),	-- Tanaan Jungle - Assault on the Ruins of Kra'nak - criteria complete
@@ -883,8 +881,8 @@ _.NeverImplemented =
 		q(36295),	-- Lumber Mill — Phylarch the Evergreen second attack
 		q(39414),	-- Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
 
-		q(36808), 	-- Missive completion: Assault on Shatrath Harbour
-		q(36809), 	-- Missive completion: Assault on the Heart of Shatrath
+		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
+		q(36809), 	-- Missive completion: Assault on the Heart of Shattrath
 
 		-- GARRISON COMMAND TABLE
 		q(39413),

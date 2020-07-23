@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -235,20 +236,20 @@ _.Zones =
 				}),
 				q(36920, {	-- From Within (Non-DH version)
 					["sourceQuests"] = { 37660 },	-- The Scythe of Souls
-					["classes"] = exclude(12, ALL_CLASSES),	-- all classes, excluding Demon Hunter
+					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 					["coord"] = { 43.5, 43.4, 630 },
 					["provider"] = { "n", 89362 },	-- Kayn Sunfury
 				}),
 				q(40815, {	-- From Within (DH version, must choose Altruis)
 					["sourceQuests"] = { 37660 },	-- The Scythe of Souls
 					["description"] = "This quest is available if you chose to follow Altruis the Sufferer during the Demon Hunter introduction quests.",
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["provider"] = { "n", 101927 },	-- Altruis the Sufferer
 				}),
 				q(44140, {	-- From Within (DH version, must choose Kayn)
 					["sourceQuests"] = { 37660 },	-- The Scythe of Souls
 					["description"] = "This quest is available if you chose to follow Kayn Sunfury during the Demon Hunter introduction quests.",
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 43.5, 43.4, 630 },
 					["provider"] = { "n", 89362 },	-- Kayn Sunfury
 				}),
@@ -306,25 +307,25 @@ _.Zones =
 				}),
 				q(38834, {	-- Into the Fray (Non-DH version)
 					["sourceQuests"] = { 41220 },	-- Down to Azsuna
-					["classes"] = exclude(12, ALL_CLASSES),	-- all classes, excluding Demon Hunter
+					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 					["coord"] = { 45.1, 42.9, 630 },
 					["provider"] = { "n", 93337 },	-- Archmage Khadgar
 				}),
 				q(44137, {	-- Into the Fray (DH version)
 					["sourceQuests"] = { 41220 },	-- Down to Azsuna
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 45.1, 42.9, 630 },
 					["provider"] = { "n", 93337 },	-- Archmage Khadgar
 				}),
 				q(45836, {	-- Jorach's Calling
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["coord"] = { 57.6, 63.4, 630 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 					["provider"] = { "n", 119821 },	-- Princess Tess Greymane
 				}),
 				q(46326, {	-- Jorach's Calling
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["coord"] = { 57.6, 63.4, 630 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 119822 },	-- Lilian Voss
@@ -809,7 +810,7 @@ _.Zones =
 					["coord"] = { 53.7, 16.7, 630 },
 					["provider"] = { "n", 90383 },	-- Runas the Shamed
 				}),
-        --[[ These quests will be organized soon™
+        --[[ TODO: These quests will be organized soon™
 				q(41173),	-- A Beacon of Hope
 				q(46205),	-- A Conduit No More
 				q(43514),	-- A Vainglorious Past

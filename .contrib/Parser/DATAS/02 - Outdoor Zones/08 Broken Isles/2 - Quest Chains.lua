@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, { 	-- The Broken Isles
@@ -20,7 +21,7 @@ _.Zones =
 						q(43496, {	-- The Power Within
 							["description"] = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna.",
 							["provider"] = { "n", 110768 },	-- Image of Kalec
-							["classes"] = exclude( { 8 }, ALL_CLASSES ),	-- all classes, excluding Mage
+							["classes"] = exclude(MAGE, ALL_CLASSES),
 							["maps"] = {	-- all class hall maps, excluding those for Mages
 								647, 648,	-- Acherus (Death Knight)
 								717,		-- Dreadscar Rift (Warlock)
@@ -38,7 +39,7 @@ _.Zones =
 						q(43501, {	-- The Power Within
 							["description"] = "This quest is available if you *have not* completed the quests at Azurewing Repose in Azsuna.",
 							["provider"] = { "n", 110768 },	-- Image of Kalec
-							["classes"] = exclude( { 8 }, ALL_CLASSES ),	-- all classes, excluding Mage
+							["classes"] = exclude(MAGE, ALL_CLASSES),
 							["maps"] = {	-- all class hall maps, excluding those for Mages
 								647, 648,	-- Acherus (Death Knight)
 								717,		-- Dreadscar Rift (Warlock)
@@ -56,14 +57,14 @@ _.Zones =
 						q(43503, {	-- The Power Within
 							["description"] = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna.",
 							["provider"] = { "n", 108247 },	-- Image of Kalec
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 							["maps"] = { 734, 735 },	-- Hall of the Guardian (Mage)
 						}),
 						q(43505, {	-- The Power Within
 							["description"] = "This quest is available if you have *not* completed the quests at Azurewing Repose in Azsuna.",
 							["altQuests"] = { 43503 },	-- The Power Within (this is the only version that doesn't autocomplete with the others when you turn one in)
 							["provider"] = { "n", 108247 },	-- Image of Kalec
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 							["maps"] = { 734, 735 },	-- Hall of the Guardian (Mage)
 						}),
 						q(40668, {	-- Eye of Azshara: The Heart of Zin-Azshari
@@ -215,14 +216,14 @@ _.Zones =
 						q(44009, {	-- A Falling Star (non-Paladin)
 							["description"] = "The prerequisite for this quest is recruiting your class's first two champions, doing your first short mission, and recruiting your first troops.",	-- i also sent out my first 1-hour mission after the 2-minute one, not sure if that's required.  not sure whether paladin's requirements are different, so i didn't add the description to their version of the quest.
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
-							["classes"] = exclude(2, ALL_CLASSES),	-- all classes, excluding Paladins
+							["classes"] = exclude(PALADIN, ALL_CLASSES),
 							["coord"] = { 28.9, 48.4, 627 },
 							["maps"] = { 627 },	-- Dalaran
 						}),
 						q(44257, {	-- A Falling Star (Paladin)
 							["description"] = "The prerequisite for this quest is recruiting your class's first two champions, doing your first short mission, and recruiting your first troops.",	-- i also sent out my first 1-hour mission after the 2-minute one, not sure if that's required.  not sure whether paladin's requirements are different, so i didn't add the description to their version of the quest.
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
-							["classes"] = { 2 },	-- Paladin
+							["classes"] = { PALADIN },
 							["coord"] = { 28.9, 48.4, 627 },
 							["maps"] = { 627 },	-- Dalaran
 						}),
@@ -476,7 +477,7 @@ _.Zones =
 							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for Hunters and Demon Hunters only.",
 							["sourceQuest"] = 44480,	-- In My Father's House
 							["provider"] = { "n", 113857 },	-- Light's Heart
-							["classes"] = { 3, 12 },	-- Hunters / Demon Hunters Only
+							["classes"] = { HUNTER, DEMONHUNTER },
 							["maps"] = {
 								720, 721,	-- Mardum, the Shattered Abyss (Demon Hunter)
 								739,		-- Trueshot Lodge (Hunter)

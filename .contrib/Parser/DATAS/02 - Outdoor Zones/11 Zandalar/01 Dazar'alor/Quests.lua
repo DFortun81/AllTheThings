@@ -1011,14 +1011,14 @@ _.Zones =
 					["coord"] = { 71.4, 30.2, 862 },
 					["lvl"] = 120,
 					["provider"] = { "n", 134345 },	-- Collector Kojo
-					["classes"] = exclude({ 5 }, ALL_CLASSES),	-- All except priest
+					["classes"] = exclude(PRIEST, ALL_CLASSES),
 					["g"] = {
 						i(164761),	-- Xal'atath, Blade of the Black Empire (QI)
 					},
 				}),
 				q(54433, {	-- Orders from Azshara
 					["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["races"] = HORDE_ONLY,
 					["coord"] = { 71.4, 30.2, 862 },
 					["provider"] = { "n", 134345 },	-- Collector Kojo
@@ -1099,7 +1099,7 @@ _.Zones =
 						["coord"] = { 78.0, 36.7, 862 },
 						["sourceQuest"] = 54174,	-- Orders from Azshara
 						["races"] = HORDE_ONLY,
-						["classes"] = exclude( { 5 }, ALL_CLASSES ),	-- all classes, excluding Priest
+						["classes"] = exclude(PRIEST, ALL_CLASSES),
 						["g"] = {
 							i(164761),	-- Xal'atath, Blade of the Black Empire (QI)
 						},
@@ -1113,7 +1113,7 @@ _.Zones =
 							54265,	-- Orders from Azshara
 							54433,	-- Orders from Azshara
 						},
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 					}),
 					q(53760, {	-- Unintended Consequences
 						["coords"] = {
@@ -1121,7 +1121,7 @@ _.Zones =
 							{ 34.2, 31.8, 942 },
 						},
 						["sourceQuest"] = 54117,	-- Every Little Death Helps
-						["classes"] = exclude( { 5 }, ALL_CLASSES ),	-- all classes, excluding Priest
+						["classes"] = exclude(PRIEST, ALL_CLASSES),
 						["g"] = {
 							i(164761),	-- Xal'atath, Blade of the Black Empire (QI)
 						},
@@ -1132,7 +1132,7 @@ _.Zones =
 							{ 34.2, 31.8, 942 },
 						},
 						["sourceQuest"] = 54118,	-- Every Little Death Helps
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 					}),
 				}),
 			}),

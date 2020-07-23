@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -106,7 +107,7 @@ _.Zones =
 				q(9369,  {	-- Replenishing the Healing Crystals
 					["provider"] = { "n", 16477 },	-- Proenitus
 					["coord"] = { 52.7, 35.9, 468 },
-					["races"] = exclude({ DRAENEI }, ALLIANCE_ONLY),	-- all other races except draenei
+					["races"] = exclude(DRAENEI, ALLIANCE_ONLY),	-- all other races except draenei
 				}),
 				q(9283,  {	-- Rescue the Survivors!
 					["provider"] = { "n", 16502 },	-- Zalduun

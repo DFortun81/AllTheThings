@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, { 	-- The Broken Isles
@@ -21,7 +22,7 @@ _.Zones =
 			--	q(44078),	-- Supporting Cast
 			--	q(40342),	-- Surprise the Sashj'tar
 			--	q(40779),	-- We Need Even More Power!
-			
+
 
 			--	real quests begin here!
 				q(41916, {	-- A Better Future
@@ -150,7 +151,7 @@ _.Zones =
 					["coord"] = { 41.5, 71.2, 680 },
 					["provider"] = { "n", 103175 },	-- Lespin Silverleaf
 					-- TODO: figure out the sourceQuest. this isn't always available
-					--["sourceQuest"] = 
+					--["sourceQuest"] =
 				}),
 				q(40012, {	-- An Old Ally
 					["coord"] = { 36.5, 46.9, 680 },
@@ -709,7 +710,7 @@ _.Zones =
 				}),
 				q(40901, {	-- Grimwing the Devourer (All others)
 					["coord"] = { 30.8, 59.1, 680 },
-					["classes"] = exclude({ DEMONHUNTER }, ALL_CLASSES),
+					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 					["provider"] = { "n", 99514 },	-- Lyana Darksorrow
 					["sourceQuests"] = {
 						40898,	-- Fresh Meat
@@ -983,7 +984,7 @@ _.Zones =
 				}),
 				q(40297, {	-- Lyana Darksorrow
 					["coord"] = { 30.8, 59.1, 680 },
-					["classes"] = exclude({ DEMONHUNTER }, ALL_CLASSES),
+					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 					["provider"] = { "n", 98801 },	-- Lyana Darksorrow
 					["sourceQuest"] = 42230,	-- The Valewalker's Burden
 				}),

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -41,7 +42,7 @@ _.Zones =
 					["provider"] = { "n", 42936 },	-- Sentinel Cordressa Briarbow
 					["coord"] = { 43.8, 76.2, 89 },
 					["isBreadcrumb"] = true,
-					["races"] = exclude(22, ALLIANCE_ONLY),	-- All alliance races exception Worgen
+					["races"] = exclude(WORGEN, ALLIANCE_ONLY),
 					["lvl"] = 10,
 				}),
 				q(26385, {	-- Breaking Waves of Change

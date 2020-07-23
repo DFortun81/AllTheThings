@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -128,7 +129,7 @@ _.Zones =
 					["lvl"] = 98,
 					["coord"] = { 45.8, 15.1, 1 },
 					["races"] = HORDE_ONLY,
-					["classes"] = exclude({DEMONHUNTER}, ALL_CLASSES),
+					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 					["sourceQuests"] = { 40760 },	-- Emissary
 					["g"] = {
 						i(129104),	-- Brand of the Banshee Queen

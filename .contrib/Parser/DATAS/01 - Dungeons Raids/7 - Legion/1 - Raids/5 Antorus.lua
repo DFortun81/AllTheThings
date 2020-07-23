@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 _.Instances = { tier(7, {	-- Legion
 	inst(946, {	-- Antorus, the Burning Throne
@@ -472,7 +473,7 @@ _.Instances = { tier(7, {	-- Legion
 								{"pop"},	-- Discard the Encounter Headers and acquire the children.
 								{"isnt", "c"},	-- Exclude Tier Set Pieces
 								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
-								{"exclude", "itemID", 
+								{"exclude", "itemID",
 									152094, 153115, 	-- Exclude Taeshalach, Scythe of the Unmaker
 									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
 									155831,	-- Pantheon's Blessing
@@ -528,7 +529,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(153019),	-- Hulking Demolisher Legplates
 				}),
 				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
-					i(152815),	-- Antoran Glooomhound 
+					i(152815),	-- Antoran Glooomhound
 				}),
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
@@ -882,7 +883,7 @@ _.Instances = { tier(7, {	-- Legion
 								{"pop"},	-- Discard the Encounter Headers and acquire the children.
 								{"isnt", "c"},	-- Exclude Tier Set Pieces
 								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
-								{"exclude", "itemID", 
+								{"exclude", "itemID",
 									152094, 153115, 	-- Exclude Taeshalach, Scythe of the Unmaker
 									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
 									155831,	-- Pantheon's Blessing
@@ -938,7 +939,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(153019),	-- Hulking Demolisher Legplates
 				}),
 				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
-					i(152815),	-- Antoran Glooomhound 
+					i(152815),	-- Antoran Glooomhound
 				}),
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
@@ -991,7 +992,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(152291),	-- Fraternal Fervor
 						i(152027),	-- Gravitational Condensate
 						i(152059),	-- Whistling Ulna
-						
+
 					},
 				}),
 				e(1997, {	-- Antoran High Command
@@ -1298,7 +1299,7 @@ _.Instances = { tier(7, {	-- Legion
 								{"pop"},	-- Discard the Encounter Headers and acquire the children.
 								{"isnt", "c"},	-- Exclude Tier Set Pieces
 								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
-								{"exclude", "itemID", 
+								{"exclude", "itemID",
 									152094, 153115, 155880, 	-- Exclude Taeshalach, Scythe of the Unmaker (Both)
 									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
 									155831,	-- Pantheon's Blessing
@@ -1354,7 +1355,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(153019),	-- Hulking Demolisher Legplates
 				}),
 				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
-					i(152815),	-- Antoran Glooomhound 
+					i(152815),	-- Antoran Glooomhound
 				}),
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
