@@ -383,6 +383,7 @@ _.Zones =
 						q(27686, {	-- Forged Documents
 							["provider"] = { "i", 63276 },	-- Forged Documents
 							["requireSkill"] = INSCRIPTION,
+							["isDaily"] = true,
 							["description"] = "After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",
 							["races"] = HORDE_ONLY,
 						}),

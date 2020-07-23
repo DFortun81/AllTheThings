@@ -369,6 +369,11 @@ _.Zones =
 					["coord"] = { 49.9, 46.6, 1165 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(50240, {	-- A Slip of the Tongue
+					["provider"] = { "n", 132989 },	-- Blind Tra'wala
+					["coord"] = { 53.6, 9.4, 1165 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(47437, {	-- Competitive Devotion
 					["sourceQuests"] = {
 						47434,	-- Restraining Order

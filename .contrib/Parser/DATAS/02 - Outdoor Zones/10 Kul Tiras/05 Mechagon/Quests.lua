@@ -1,6 +1,7 @@
 --------------------------------------------------
 --          Z O N E S       M O D U L E         --
 --------------------------------------------------
+
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
@@ -110,7 +111,7 @@ _.Zones =
 					["coord"] = { 70.8, 39.1, 1462 },
 					["sourceQuest"] = 55707,	-- First One's Free
 				}),
-				q(56355, {	-- Battle Tested -- also triggered 55260
+				q(56355, {	-- Battle Tested
 					["provider"] = { "n", 151006 },	-- Rocket-Chief Fuselage
 					["coord"] = { 69.7, 33.0, 1462 },
 					["isDaily"] = true,

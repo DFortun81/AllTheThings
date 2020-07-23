@@ -266,6 +266,19 @@ _.Zones =
 									}),
 								}),
 								n(-256, {	-- Mechagnome
+									q(58214, {	-- Urgent Care
+										["maps"] = { 1462 },	-- Mechagon Island
+										["coords"] = {
+											{ 52.6, 13.8, 84 },		-- Stormwind
+											{ 74.0, 36.8, 1462 },	-- Mechagon Island
+										},
+										["races"] = ALLIANCE_ONLY,
+										["providers"] = {
+											{ "n", 126332 },	-- Aysa Cloudsinger
+											{ "n", 149816 },	-- Prince Erazmin
+										},
+										["isBreadcrumb"] = true,
+									}),
 									q(57486, {	-- Waning Energy
 										["maps"] = { 1161 },	-- Boralus
 										["coord"] = { 73.1, 16.9, 1161 },

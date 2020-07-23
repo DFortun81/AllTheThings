@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -1030,7 +1031,7 @@ _.Zones =
 				q(30883, {	-- Round 3: The Wrestler
 					["isDaily"] = true,
 					["provider"] = { "n", 60968 },	-- Xuen
-					["sourceQuest"] = 30881,	-- ROund 2: Clever Ashyo & Ken-Ken
+					["sourceQuest"] = 30881,	-- Round 2: Clever Ashyo & Ken-Ken
 				}),
 				q(30902, {	-- Round 4: Master Windfur
 					["isDaily"] = true,

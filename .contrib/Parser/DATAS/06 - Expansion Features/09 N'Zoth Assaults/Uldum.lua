@@ -445,13 +445,19 @@ _.ExpansionFeatures =
 							57956,	-- Wastewander Hosts
 						},
 					}),
-					q(57969, {	-- Tend the Wounded
+					q(58606, {	-- A Bit of Investigation
+						["lvl"] = 120,
+						["coord"] = { 27.9, 63.3, 1527 },
+						["provider"] = { "n", 164196 },	-- H'partho Ardoros
+						["sourceQuest"] = 57971,	-- Ruins of Ammon
+					}),
+					q(57970, {	-- Ruinator Xok'nixx
 						["lvl"] = 120,
 						["coord"] = { 27.9, 63.4, 1527 },
 						["provider"] = { "n", 159820 },	-- Mender Dyrin
 						["sourceQuest"] = 57971,	-- Ruins of Ammon
 					}),
-					q(57970, {	-- Ruinator Xok'nixx
+					q(57969, {	-- Tend the Wounded
 						["lvl"] = 120,
 						["coord"] = { 27.9, 63.4, 1527 },
 						["provider"] = { "n", 159820 },	-- Mender Dyrin
@@ -489,12 +495,6 @@ _.ExpansionFeatures =
 						},
 					}),
 					-- Dailies
-					q(58606, {	-- A Bit of Investigation
-						["lvl"] = 120,
-						["coord"] = { 27.9, 63.3, 1527 },
-						["provider"] = { "n", 164196 },	-- H'partho Ardoros
-						["sourceQuest"] = 57971,	-- Ruins of Ammon
-					}),
 					q(56550, {	-- Corpse Cleanup
 						["lvl"] = 120,
 						["coord"] = { 24.5, 55.2, 1527 },
@@ -518,6 +518,12 @@ _.ExpansionFeatures =
 						["coord"] = { 40.0, 21.3, 1527 },
 						["isDaily"] = true,
 						["provider"] = { "n", 154443 },	-- Captain Navid Sandstone
+					}),
+					q(58010, {	-- More Bits, More Bits!
+						["coord"] = { 55.6, 35.3, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58606,	-- A Bit of Investigation
 					}),
 					q(58777, {	-- Put Your Foot Down
 						["lvl"] = 120,
@@ -1606,39 +1612,55 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58803,	-- Match the Hatch
 						}),
-						q(58807, {	-- Wrapping Up (aqir invasion)
+						q(58809, {	-- A Shocking Technique
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58804,	-- Void Incubation
+							["description"] = "Can appear during Mogu invasions in the Vale of Eternal Blossoms.",
+							["altQuests"] = {
+								58808,	-- Encased in Amber
+								58806,	-- Warmth of the Sun
+								58807,	-- Wrapping Up
+							},
 						}),
-						q(58806, {	-- Warmth of the Sun
+						q(58808, {	-- Encased in Amber (Mantid assault)
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58804,	-- Void Incubation
+							["description"] = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
+							["altQuests"] = {
+								58809,	-- A Shocking Technique
+								58806,	-- Warmth of the Sun
+								58807,	-- Wrapping Up
+							},
+						}),
+						q(58806, {	-- Warmth of the Sun (Amathet assault)
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58804,	-- Void Incubation
+							["description"] = "Can appear during Amathet invasions in Uldum.",
+							["altQuests"] = {
+								58809,	-- A Shocking Technique
+								58808,	-- Encased in Amber
+								58807,	-- Wrapping Up
+							},
+						}),
+						q(58807, {	-- Wrapping Up (Aqir assault)
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58804,	-- Void Incubation
+							["description"] = "Can appear during Aqir invasions in Uldum.",
+							["altQuests"] = {
+								58809,	-- A Shocking Technique
+								58808,	-- Encased in Amber
+								58806,	-- Warmth of the Sun
+							},
 						}),
 						q(58805, {	-- Continued Incubation
 							["coord"] = { 55.6, 35.3, 1527 },
 							["isDaily"] = true,
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
-							["sourceQuest"] = 58806,	-- Warmth of the Sun
-						}),
-						q(58010, {	-- More Bits, More Bits!
-							["coord"] = { 55.6, 35.3, 1527 },
-							["isDaily"] = true,
-							["provider"] = { "n", 161738 },	-- H'partho Ardoros
-							["sourceQuest"] = 58806,	-- Warmth of the Sun
-						}),
-						q(58808, {	-- Encased in Amber
-							["coord"] = { 55.6, 35.3, 1527 },
-							["provider"] = { "n", 161738 },	-- H'partho Ardoros
-							["sourceQuest"] = 58805,	-- Continued Incubation
-							["description"] = "Must complete 2x |cFFFFD700Continued Incubation|r daily quests.",
-						}),
-						q(58809, {	-- A Shocking Technique
-							["coord"] = { 55.6, 35.3, 1527 },
-							["provider"] = { "n", 161738 },	-- H'partho Ardoros
-							["sourceQuest"] = 58808,	-- Encased in Amber
-							["isDaily"] = true,
+							["sourceQuest"] = 58804,	-- Void Incubation
 						}),
 						q(58810, {	-- Coming Out of His Shell
 							["coord"] = { 55.6, 35.3, 1527 },
@@ -1664,36 +1686,55 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58812,	-- Meat Alternatives
 						}),
-						q(58858, {	-- More Fetid Filets
+						q(58826, {	-- A Bloody Treat
 							["coord"] = { 55.6, 35.3, 1527 },
-							["isDaily"] = true,
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58813,	-- Fetid Filets
-						}),
-						q(58818, {	-- Bug Buddies
-							["coord"] = { 55.6, 35.3, 1527 },
-							["isDaily"] = true,
-							["provider"] = { "n", 161738 },	-- H'partho Ardoros
-							["sourceQuest"] = 58813,	-- Fetid Filets
-							["description"] = "Can appear during Aqir invasions in Uldum.",
+							["description"] = "Can appear during Mogu invasions in the Vale of Eternal Blossoms.",
+							["altQuests"] = {
+								58817,	-- Action Figures
+								58818,	-- Bug Buddies
+								58825,	-- Super Jelly
+							},
 						}),
 						q(58817, {	-- Action Figures
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58813,	-- Fetid Filets
 							["description"] = "Can appear during Amathet invasions in Uldum.",
+							["altQuests"] = {
+								58826,	-- A Bloody Treat
+								58818,	-- Bug Buddies
+								58825,	-- Super Jelly
+							},
+						}),
+						q(58818, {	-- Bug Buddies
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58813,	-- Fetid Filets
+							["description"] = "Can appear during Aqir invasions in Uldum.",
+							["altQuests"] = {
+								58826,	-- A Bloody Treat
+								58817,	-- Action Figures
+								58825,	-- Super Jelly
+							},
 						}),
 						q(58825, {	-- Super Jelly
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58813,	-- Fetid Filets
 							["description"] = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
+							["altQuests"] = {
+								58826,	-- A Bloody Treat
+								58817,	-- Action Figures
+								58818,	-- Bug Buddies
+							},
 						}),
-						q(58826, {	-- A Bloody Treat
+						q(58858, {	-- More Fetid Filets
 							["coord"] = { 55.6, 35.3, 1527 },
+							["isDaily"] = true,
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58813,	-- Fetid Filets
-							["description"] = "Can appear during Mogu invasions in the Vale of Eternal Blossoms.",
 						}),
 						q(58829, {	-- They Grow So Fast
 							["coord"] = { 55.6, 35.3, 1527 },
@@ -1713,28 +1754,49 @@ _.ExpansionFeatures =
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58830,	-- Aqir Instincts
+							["description"] = "Can appear during Aqir invasions in Uldum.",
+							["altQuests"] = {
+								58861,	-- The Mantids' Mettle
+								58862,	-- The Littlest Defender
+								58859,	-- Someone His Own Size
+							},
 						}),
-						q(58861, {	-- The Mantids' Mettle
-							["isDaily"] = true,
+						q(58862, {	-- The Littlest Defender
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58830,	-- Aqir Instincts
+							["description"] = "Can appear during Mogu invasions in the Vale of Eternal Blossoms.",
+							["altQuests"] = {
+								58860,	-- Big Bad Beetle
+								58861,	-- The Mantids' Mettle
+								58859,	-- Someone His Own Size
+							},
+						}),
+						q(58861, {	-- The Mantids' Mettle
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58830,	-- Aqir Instincts
+							["description"] = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
+							["altQuests"] = {
+								58860,	-- Big Bad Beetle
+								58862,	-- The Littlest Defender
+								58859,	-- Someone His Own Size
+							},
+						}),
+						q(58859, {	-- Someone His Own Size
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58830,	-- Aqir Instincts
+							["description"] = "Can appear during Amathet invasions in Uldum.",
+							["altQuests"] = {
+								58860,	-- Big Bad Beetle
+								58862,	-- The Littlest Defender
+								58861,	-- The Mantids' Mettle
+							},
 						}),
 						q(58831, {	-- Honing Instincts
 							["coord"] = { 55.6, 35.3, 1527 },
 							["isDaily"] = true,
-							["provider"] = { "n", 161738 },	-- H'partho Ardoros
-							["sourceQuest"] = 58830,	-- Aqir Instincts
-						}),
-						q(58862, {	-- The Littlest Defender
-							["isDaily"] = true,
-							["coord"] = { 55.6, 35.3, 1527 },
-							["provider"] = { "n", 161738 },	-- H'partho Ardoros
-							["sourceQuest"] = 58830,	-- Aqir Instincts
-						}),
-						q(58859, {	-- Someone His Own Size
-							["isDaily"] = true,
-							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58830,	-- Aqir Instincts
 						}),

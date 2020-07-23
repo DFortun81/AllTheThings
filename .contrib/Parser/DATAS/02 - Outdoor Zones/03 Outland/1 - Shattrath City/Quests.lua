@@ -314,7 +314,6 @@ _.Zones =
 				}),
 				q(13430, {	-- Trial of the Naaru: Magtheridon
 					["provider"] = { "n", 18481 },	-- A'dal
-					["repeatable"] = true,
 					["sourceQuests"] = { 10884, 10885, 10886 },	-- Trial of the Naaru: Mercy, Strength, & Tenacity
 					["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)
 				}),

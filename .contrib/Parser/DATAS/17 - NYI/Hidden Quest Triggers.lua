@@ -361,6 +361,8 @@ _.NeverImplemented =
 		-- Zones
 		q(12845),	-- Dalaran teleport crystal flag
 		q(13701),	-- Argent Tournament - Horde Champion Marker
+		q(13686),	-- Alliance Tournament Eligibility Marker
+		q(13687),	-- Horde Tournament Eligibility Marker
 		q(46051),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 01
 		q(46052),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 02
 		q(46053),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 03
@@ -456,6 +458,7 @@ _.NeverImplemented =
 		q(33019),	-- NC S1 Q2 - unused cooking quest
 		q(33023),	-- NC S1 Q6 - unused cooking quest
 		q(33025),	-- NC S2 Q2 - unused cooking quest
+		q(32107),	-- Flying Tiger Gourami, triggered together with Flying Tiger Gourami (31443)
 		q(29695),	-- Jade Forest - Kiryn TRACKING
 		q(29702),	-- Jade Forest - Gorrok TRACKING
 		q(29697),	-- Jade Forest - Rivett TRACKING
@@ -761,6 +764,8 @@ _.NeverImplemented =
 		q(34562),	-- Talador - Trigger Teron'gor Defense Spawns),	-- triggers in a cave with Soulbind Nyami at Gul'Rok
 		q(34574),	-- Talador - Unused. Triggered when choosing the Arcane Sanctum
 		q(34101),	-- Talador - Vignette: Aruumel's Worn Mace	-- triggers when looting "Lightbearer"
+		q(34112), 	-- Talador - Vignette: Guy 1 Found,	-- triggers breaking a deathweb cocoon in Deathweb Hollow (A)
+		q(34114), 	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable (A)
 		q(34115),	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable
 		q(34116),	-- Talador - Vignette: Girl 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
 		q(34117),	-- Talador - Vignette: Girl 2 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
@@ -771,6 +776,8 @@ _.NeverImplemented =
 		q(34503),	-- Talador - Screaming Telmor Citizen,	-- triggers in Telmor
 		q(34760),	-- Talador - triggered when looting the Rusted Lockbox. WoWhead lists as a nagrand treasure but that treasure doesn't seem to exist
 		q(35491),	-- Talador - Underseer Bloodmane vignette duplicate flag
+
+
 
 		--	TANAAN JUNGLE
 		q(37938),	-- Tanaan Jungle - Assault on the Ruins of Kra'nak - criteria complete
@@ -875,6 +882,14 @@ _.NeverImplemented =
 		q(36294),	-- Lumber Mill — Phylarch the Evergreen first attack
 		q(36295),	-- Lumber Mill — Phylarch the Evergreen second attack
 		q(39414),	-- Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
+
+		q(36808), 	-- Missive completion: Assault on Shatrath Harbour
+		q(36809), 	-- Missive completion: Assault on the Heart of Shatrath
+
+		-- GARRISON COMMAND TABLE
+		q(39413),
+		q(39415),
+		q(39710),
 
 		--	TREASURES
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
@@ -2229,6 +2244,7 @@ _.NeverImplemented =
 		q(56428),	-- Summoned Arcane Amalgamation
 		q(55144),	-- Summoned Dusty Amalgamation
 		q(55205),	-- Summoned Moghiea
+		q(55206),	-- Summoned Ungormath
 		q(55203),	-- Summoned Salgos, the Eternal
 		q(55201),	-- Summoned Spawn of Salgos
 		q(55204),	-- Summoned Xue
@@ -2245,6 +2261,7 @@ _.NeverImplemented =
 		q(56484),	-- Killed Moghiea
 		q(56479),	-- Killed Omus
 		q(56722),	-- Killed Omus
+		q(56483),	-- Killed Ungormath
 		q(56487),	-- Killed Salgos, the Eternal
 		q(56732),	-- Killed Salgos, the Eternal
 		q(56486),	-- Killed Spawn of Salgos
@@ -2428,6 +2445,7 @@ _.NeverImplemented =
 		q(55903),	-- Triggered when completing "Armed for Action" achievement. May be related to picking up the weapon (e.g. Bolt Spitter)
 		q(56330),	-- Triggered shortly after completing "Chopped Bots". Possibly shuts down the magnet?
 		q(56660),	-- Triggered on Mechagon randomly
+		q(55260),	-- triggers when making the Volatile Blaster first time on character
 		q(56840),	-- Toys of Destruction - made the Volatile Blaster. Maybe triggers for all the toys to indicate the toy extra action button is available?
 		q(56624),	-- collected Izira Gearsworn mini for "Most Minis Wins"
 		q(56625),	-- collected Bondo Grosbloc mini for "Most Minis Wins"

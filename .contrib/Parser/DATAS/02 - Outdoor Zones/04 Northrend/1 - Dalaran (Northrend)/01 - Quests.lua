@@ -62,7 +62,7 @@ _.Zones =
 				q(14151, {	-- Cardinal Ruby
 					["provider"] = { "n", 28703 },	-- Quest Giver: Linzy Blackbolt <Alchemy Trainer>
 					["coord"] = { 42.4, 32.0 },
-					["description"] = "This quest is currently broken. Ticket a GM and they can autocomplete the quest for you to get you the recipe.\n\nNOTE FOR BLUES: Please fix this so that we stop bugging Customer Support.\n  - Crieve",
+					["repeatable"] = true,
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
 						recipe(66659),	-- Transmute: Cardinal Ruby
