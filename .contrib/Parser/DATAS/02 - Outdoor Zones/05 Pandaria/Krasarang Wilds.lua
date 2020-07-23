@@ -1569,6 +1569,10 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
+					q(32138, {	-- Work Order: Lumber
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
 					q(32132, {	-- Worker Harassment
 						["provider"] = { "n", 67628 },	-- Shademaster Kiryn
 						["coord"] = { 79.7, 30.4, 418 },
@@ -1619,10 +1623,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					q(32140, {	-- Work Order: Iron
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = HORDE_ONLY,
-					}),
-					q(32138, {	-- Work Order: Lumber
 						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 					}),
