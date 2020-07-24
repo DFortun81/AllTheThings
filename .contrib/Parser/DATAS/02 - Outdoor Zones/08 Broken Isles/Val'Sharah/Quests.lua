@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -20,13 +21,13 @@ _.Zones =
 				}),
 				q(38381, {	-- Archdruid of Lore (Non-Druid version)
 					["sourceQuests"] = { 38384 },	-- Nature's Call
-					["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12 },	-- not Druids
+					["classes"] = exclude(DRUID, ALL_CLASSES),
 					["coord"] = { 54.3, 73.4, 641 },
 					["provider"] = { "n", 94179 },	-- Aranelle
 				}),
 				q(44106, {	-- Archdruid of Lore (Druid version)
 					["sourceQuests"] = { 38384 },	-- Nature's Call
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["coord"] = { 54.3, 73.4, 641 },
 					["provider"] = { "n", 94179 },	-- Aranelle
 				}),
@@ -81,7 +82,7 @@ _.Zones =
 					["sourceQuests"] = { 38717 },		-- Black Rook Prison
 					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
 					["provider"] = { "n", 92850 },		-- Commander Jarod Shadowsong
-					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),	-- All classes except demon hunter
+					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 				}),
 				q(44457, {	-- Brotherly Love (Demon Hunter)
 					["sourceQuests"] = { 38717 },		-- Black Rook Prison
@@ -276,13 +277,13 @@ _.Zones =
 				}),
 				q(44278, {	-- Illidari Freedom
 					["sourceQuests"] = { 38717 },	-- Black Rook Prison
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
 					["provider"] = { "n", 93029 },	-- Arduen Soulblade
 				}),
 				q(38719, {	-- Illidari Freedom
 					["sourceQuests"] = { 38717 },	-- Black Rook Prison
-					["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },	-- not Demon Hunter
+					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
 					["provider"] = { "n", 93029 },	-- Arduen Soulblade
 				}),
@@ -473,11 +474,11 @@ _.Zones =
 				}),
 				q(46107, {	-- Source of the Corruption
 					["classes"] = {
-						11,	-- Druid (Restoration)
-						10,	-- Monk (Mistweaver)
-						2,	-- Paladin (Holy)
-						5,	-- Priest (Holy)
-						7,	-- Shaman (Restoration)
+						DRUID,		-- Restoration
+						MONK,		-- Mistweaver
+						PALADIN,	-- Holy
+						PRIEST,		-- Holy
+						SHAMAN,		-- Restoration
 					},
 					["lvl"] = 110,
 				}),
@@ -695,6 +696,6 @@ _.Zones =
 					["provider"] = { "n", 95117 },	-- Aldos Duskwing
 				}),
 			}),
-		}),	
+		}),
 	}),
 };

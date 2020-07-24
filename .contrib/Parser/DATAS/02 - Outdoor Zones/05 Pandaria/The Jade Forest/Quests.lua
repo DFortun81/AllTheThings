@@ -1369,13 +1369,25 @@ _.Zones =
 					["coord"] = { 57.5, 45.1, 371 },
 					["isDaily"] = true,
 				}),
-				q(30188, {	-- Riding the Skies - actually three different quests but completing one completes all three so I combined them and put a description
+				q(30188, {	-- Riding the Skies (Jade)
 					["provider"] = { "n", 58564 },	-- Elder Anli
 					["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the quest again on another character.|r",
 					["g"] = {
-						i(79802), 	-- Quest 30188 - Reins of the Jade Cloud Serpent
-						i(85430), 	-- Quest 31810 - Reins of the Azure Cloud Serpent
-						i(85429), 	-- Quest 31811 - Reins of the Golden Cloud Serpent
+						i(79802), 	-- Reins of the Jade Cloud Serpent
+					},
+				}),
+				q(31810, {	-- Riding the Skies (Azure)
+					["provider"] = { "n", 58564 },	-- Elder Anli
+					["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the quest again on another character.|r",
+					["g"] = {
+						i(85430), 	-- Reins of the Azure Cloud Serpent
+					},
+				}),
+				q(31811, {	-- Riding the Skies (Golden)
+					["provider"] = { "n", 58564 },	-- Elder Anli
+					["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the quest again on another character.|r",
+					["g"] = {
+						i(85429), 	-- Reins of the Golden Cloud Serpent
 					},
 				}),
 				q(29898, {	-- Sacred Waters

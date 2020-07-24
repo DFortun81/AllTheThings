@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -191,7 +192,7 @@ _.Zones =
 				}),
 				q(47025, {	-- Blood: Aid of the Illidari
 					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { 6 },
+					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10250, {	-- Bloody Vengeance
@@ -291,12 +292,12 @@ _.Zones =
 				q(45843, {	-- Dark Omens
 					["sourceQuests"] = { 45415 },	-- Between Worlds
 					["classes"] = {
-						6,	-- Death Knight (Blood)
-						12,	-- Demon Hunter (Vengeance)
-						11,	-- Druid (Guardian)
-						10,	-- Monk (Brewmaster)
-						2,	-- Paladin (Protection)
-						1,	-- Warrior (Protection)
+						DEATHKNIGHT,	-- Blood
+						DEMONHUNTER,	-- Vengeance
+						DRUID,			-- Guardian
+						MONK,			-- Brewmaster
+						PALADIN,		-- Protection
+						WARRIOR,		-- Protection
 					},
 					["coord"] = { 85.2, 50.1, 100 },
 					["races"] = ALLIANCE_ONLY,
@@ -428,14 +429,14 @@ _.Zones =
 				}),
 				q(9498,  {	-- Falcon Watch
 					["coord"] = { 55.1, 39.1, 100 },
-					["races"] = exclude({ 10 }, HORDE_ONLY),	-- Every horde race but Blood Elves
+					["races"] = exclude(BLOODELF, HORDE_ONLY),
 					["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
 					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["isBreadcrumb"] = true,
 				}),
 				q(9499,  {	-- Falcon Watch
 					["provider"] = { "n", 16577 },	-- Martik Tor'seldori
-					["races"] = { 10 },	-- Blood Elves
+					["races"] = { BLOODELF },
 					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["isBreadcrumb"] = true,
 				}),
@@ -549,7 +550,7 @@ _.Zones =
 				}),
 				q(47023, {	-- Guardian: Aid of the Illidari
 					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { 11 },
+					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9608, {	-- Heart of Rage
@@ -576,14 +577,14 @@ _.Zones =
 					["coord"] = { 56.3, 62.8, 100 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
 					["provider"] = { "n", 18266 },	-- Warrant Officer Tracy Proudwell
 					["sourceQuest"] = 10143,	-- Expedition Point
 				}),
 				q(13408, {	-- Hellfire Fortifications (A)
 					["coord"] = { 56.3, 62.8, 100 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = exclude({ 6 }, ALL_CLASSES),	-- All but DK
+					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["provider"] = { "n", 18266 },	-- Warrant Officer Tracy Proudwell
 					["sourceQuest"] = 10143,	-- Expedition Point
 					["g"] = {
@@ -592,13 +593,13 @@ _.Zones =
 				}),
 				q(13411, {	-- Hellfire Fortifications (H, DK)
 					["races"] = HORDE_ONLY,
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
 					["provider"] = { "n", 18267 },	-- Battlecryer Blackeye
 				}),
 				q(13409, {	-- Hellfire Fortifications (H)
 					["coord"] = { 55.9, 39.2, 100 },
 					["races"] = HORDE_ONLY,
-					["classes"] = exclude({ 6 }, ALL_CLASSES),	-- All but DK
+					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["provider"] = { "n", 18267 },	-- Battlecryer Blackeye
 					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["g"] = {
@@ -914,12 +915,12 @@ _.Zones =
 				}),
 				q(45412, {	-- Protection: Aid of the Illidari (Warrior)
 					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { 1 },
+					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47022, {	-- Protection: Aid of the Illidari (Paladin)
 					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9385,  {	-- Rampaging Ravagers

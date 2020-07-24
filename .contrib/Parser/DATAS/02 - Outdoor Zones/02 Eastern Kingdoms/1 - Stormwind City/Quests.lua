@@ -1509,7 +1509,7 @@ _.Zones =
 				q(1698,  {	-- Yorus Barleybrew
 					["provider"] = { "n", 5479 },	-- Wu Shen
 					["coord"] = { 78.8, 45.4, 84 },
-					["races"] = exclude(DRAENEI, ALLIANCE_ONLY),	-- All alliance races except Draenei
+					["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = REMOVED_FROM_GAME,

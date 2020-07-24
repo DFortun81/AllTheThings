@@ -140,73 +140,73 @@ _.Zones =
 							}),
 							q(24553, {	-- The Purification of Quel'Delar (A)
 								["sourceQuest"] = 24535,	-- Thalorien Dawnseeker [Alliance]
-								["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
+								["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
 								["races"] = ALLIANCE_ONLY,
 								["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
 							}),
 							q(24595, {	-- The Purification of Quel'Delar (A — Maces)
 								["sourceQuest"] = 24535,	-- Thalorien Dawnseeker [Alliance]
-								["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
+								["classes"] = { PRIEST, SHAMAN, DRUID },
 								["races"] = ALLIANCE_ONLY,
 								["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
 							}),
 							q(24564, {	-- The Purification of Quel'Delar (H)
 								["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
-								["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
-								["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
+								["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
+								["races"] = exclude(BLOODELF, HORDE_ONLY),
 								["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
 							}),
 							q(24598, {	-- The Purification of Quel'Delar (H — Maces)
 								["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
-								["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
-								["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
+								["classes"] = { PRIEST, SHAMAN, DRUID },
+								["races"] = exclude(BLOODELF, HORDE_ONLY),
 								["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
 							}),
 							q(24594, {	-- The Purification of Quel'Delar (Blood Elf)
 								["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
-								["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
-								["races"] = { 10 },	-- Blood Elf
+								["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
+								["races"] = { BLOODELF },
 								["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
 							}),
 							q(24596, {	-- The Purification of Quel'Delar (Blood Elf — Maces)
 								["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
-								["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
-								["races"] = { 10 },	-- Blood Elf
+								["classes"] = { PRIEST, SHAMAN, DRUID },
+								["races"] = { BLOODELF },
 								["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
 							}),
 							q(24796, {	-- A Victory For The Silver Covenant (A)
 								["sourceQuest"] = 24553,	-- The Purification of Quel'Delar [Alliance]
-								["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
+								["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
 								["races"] = ALLIANCE_ONLY,
 								["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
 							}),
 							q(24795, {	-- A Victory For The Silver Covenant (A — Maces)
 								["sourceQuest"] = 24595,	-- The Purification of Quel'Delar [Alliance - Maces]
 								["races"] = ALLIANCE_ONLY,
-								["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
+								["classes"] = { PRIEST, SHAMAN, DRUID },
 								["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
 							}),
 							q(24801, {	-- A Victory For The Sunreavers [Horde]
 								["sourceQuest"] = 24564,	-- The Purification of Quel'Delar [Horde]
-								["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
+								["races"] = exclude(BLOODELF, HORDE_ONLY),
 								["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 							}),
 							q(24799, {	-- A Victory For The Sunreavers [Horde - Maces]
 								["sourceQuest"] = 24598,	-- The Purification of Quel'Delar [Horde - Maces]
-								["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
-								["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
+								["classes"] = { PRIEST, SHAMAN, DRUID },
+								["races"] = exclude(BLOODELF, HORDE_ONLY),
 								["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 							}),
 							q(24800, {	-- A Victory For The Sunreavers [Blood Elves]
 								["sourceQuest"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
-								["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
-								["races"] = { 10 },	-- Blood Elf Only!
+								["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
+								["races"] = { BLOODELF },
 								["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 							}),
 							q(24798, {	-- A Victory For The Sunreavers [Blood Elves - Maces]
 								["sourceQuest"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
-								["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
-								["races"] = { 10 },	-- Blood Elf Only!
+								["classes"] = { PRIEST, SHAMAN, DRUID },
+								["races"] = { BLOODELF },
 								["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 							}),
 							n(-6015, {	-- Rewards
@@ -394,52 +394,52 @@ _.Zones =
 					}),
 					q(13689, {	-- A Valiant Of Darnassus
 						["coord"] = { 76.5, 19.4, 118 },
-						["races"] = { 4 },	-- Night Elf
+						["races"] = { NIGHTELF },
 						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13688, {	-- A Valiant Of Gnomeregan
 						["coord"] = { 76.5, 19.4, 118 },
-						["races"] = { 7 },	-- Gnome
+						["races"] = { GNOME },
 						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13685, {	-- A Valiant Of Ironforge
 						["coord"] = { 76.5, 19.4, 118 },
-						["races"] = { 3 },	-- Dwarf
+						["races"] = { DWARF },
 						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13691, {	-- A Valiant Of Orgrimmar
 						["coord"] = { 76.3, 24.4, 118 },
-						["races"] = { 2 },	-- Orc
+						["races"] = { ORC },
 						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13693, {	-- A Valiant Of Sen'jin
 						["coord"] = { 76.3, 24.4, 118 },
-						["races"] = { 8 },	-- Troll
+						["races"] = { TROLL },
 						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13696, {	-- A Valiant Of Silvermoon
 						["coord"] = { 76.3, 24.4, 118 },
-						["races"] = { 10 },	-- Blood Elf
+						["races"] = { BLOODELF },
 						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13684, {	-- A Valiant Of Stormwind
 						["coord"] = { 76.5, 19.4, 118 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13690, {	-- A Valiant Of The Exodar
 						["coord"] = { 76.5, 19.4, 118 },
-						["races"] = { 11 },	-- Draenei
+						["races"] = { DRAENEI },
 						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13694, {	-- A Valiant Of Thunder Bluff
 						["coord"] = { 76.3, 24.4, 118 },
-						["races"] = { 6 },	-- Tauren
+						["races"] = { TAUREN },
 						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13695, {	-- A Valiant Of Undercity
 						["coord"] = { 76.3, 24.4, 118 },
-						["races"] = { 5 },	-- Undead
+						["races"] = { UNDEAD },
 						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13749, {	-- A Valiant's Field Training (A)
@@ -576,7 +576,7 @@ _.Zones =
 					}),
 					q(13790, {	-- Among the Champions (A / H, non-DK)
 						["hordeQuestID"] = 13811,
-						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
+						["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 						["isDaily"] = true,
 						["coord"] = { 69.8, 23.3, 118 },
 						["provider"] = { "n", 33771 },	-- Luuri
@@ -601,7 +601,7 @@ _.Zones =
 					}),
 					q(13793, {	-- Among the Champions (A / H, DK)
 						["hordeQuestID"] = 13814,
-						["classes"] = { 6 },	-- Death Knight Only
+						["classes"] = { DEATHKNIGHT },
 						["isDaily"] = true,
 						["coord"] = { 73.6, 20.0, 118 },
 						["provider"] = { "n", 33770 },	-- Illyrie Nightfall <Mistress of Horses>
@@ -686,7 +686,7 @@ _.Zones =
 					}),
 					q(13861, {	-- Battle Before the Citadel (A / H, non-DK)
 						["hordeQuestID"] = 13862,
-						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
+						["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 						["isDaily"] = true,
 						["coord"] = { 69.9, 23.4, 118 },
 						["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
@@ -698,7 +698,7 @@ _.Zones =
 					}),
 					q(13864, {	-- Battle Before the Citadel (A / H, DK)
 						["hordeQuestID"] = 13863,
-						["classes"] = { 6 },	-- Death Knight Only
+						["classes"] = { DEATHKNIGHT },
 						["isDaily"] = true,
 						["coord"] = { 73.8, 20.0, 118 },
 						["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
@@ -893,7 +893,7 @@ _.Zones =
 					}),
 					q(13789, {	-- Taking Battle To The Enemy (A / H, non-DK)
 						["hordeQuestID"] = 13810,
-						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
+						["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 						["isDaily"] = true,
 						["coord"] = { 69.9, 23.4, 118 },
 						["provider"] = { "n", 33763 },	-- Cellian Daybreak <Master of Arms>
@@ -905,7 +905,7 @@ _.Zones =
 					}),
 					q(13791, {	-- Taking Battle To The Enemy (A / H, DK)
 						["hordeQuestID"] = 13813,
-						["classes"] = { 6 },	-- Death Knight Only
+						["classes"] = { DEATHKNIGHT },
 						["isDaily"] = true,
 						["coord"] = { 73.8, 19.6, 118 },
 						["provider"] = { "n", 33769 },	-- Zor'be the Bloodletter <Master of Arms>
@@ -1133,7 +1133,7 @@ _.Zones =
 					}),
 					q(13795, {	-- The Scourgebane
 						["coord"] = { 69.6, 22.8, 118 },
-						["classes"] = { 6 },	-- Death Knight
+						["classes"] = { DEATHKNIGHT },
 						["provider"] = { "n", 33817 },	-- Justicar Mariel Trueheart
 					}),
 					q(13641, {	-- The Seer's Crystal
@@ -1266,7 +1266,7 @@ _.Zones =
 					}),
 					q(13682, {	-- Threat From Above (A / H, non-DK)
 						["hordeQuestID"] = 13809,
-						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
+						["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 						["isDaily"] = true,
 						["coord"] = { 69.9, 23.4, 118 },
 						["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
@@ -1279,7 +1279,7 @@ _.Zones =
 					q(13788, {	-- Threat From Above (A / H, DK)
 						["hordeQuestID"] = 13812,
 						["isDaily"] = true,
-						["classes"] = { 6 },	-- Death Knight Only
+						["classes"] = { DEATHKNIGHT },
 						["coord"] = { 73.8, 20.0, 118 },
 						["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 						["g"] = {
@@ -1343,7 +1343,7 @@ _.Zones =
 					}),
 					q(13708, {	-- Valiant Of Sen'jin
 						["coord"] = { 76.0, 24.5, 118 },
-						["races"] = exclude(ZANDALARI, exclude(TROLL, HORDE_ONLY)),
+						["races"] = exclude({ TROLL, ZANDALARI }, HORDE_ONLY),
 						["provider"] = { "n", 33372 },	-- Zul'tore
 					}),
 					q(13711, {	-- Valiant Of Silvermoon
@@ -1368,7 +1368,7 @@ _.Zones =
 					}),
 					q(13710, {	-- Valiant Of Undercity
 						["coord"] = { 76.5, 24.2, 118 },
-						["races"] = exclude(UNDEAD, HORDE_ONLY),	-- All but undead
+						["races"] = exclude(UNDEAD, HORDE_ONLY),
 						["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 					}),
 					q(14112, {	-- What Do You Feed a Yeti, Anyway? (A)
@@ -2808,11 +2808,11 @@ _.Zones =
 								["cost"] = { { "c", 241, 100 }, },	-- 100 Champion's Seal
 							}),
 							i(46752, {	-- Swift Gray Steed
-								["races"] = { 1 },	-- Human
+								["races"] = { HUMAN },
 								["cost"] = { { "c", 241, 5 }, },	-- 5 Champion's Seal
 							}),
 							i(46758, {	-- Swift Grey Steed
-								["races"] = exclude( { 1 }, ALLIANCE_ONLY ),	-- non-Human Alliance
+								["races"] = exclude(HUMAN, ALLIANCE_ONLY ),
 								["cost"] = { { "c", 241, 5 }, },	-- 5 Champion's Seal
 							}),
 							i(44974, {	-- Elwynn Lamb Pet
@@ -3064,11 +3064,11 @@ _.Zones =
 							}),
 							i(45577),	-- Ironforge Tabard
 							i(46748, {	-- Swift Violet Ram
-								["races"] = { 3 },	-- Dwarf
+								["races"] = { DWARF },
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 							i(46762, {	-- Swift Violet Ram
-								["races"] = exclude( { 3 }, ALLIANCE_ONLY ),	-- non-Dwarf Alliance
+								["races"] = exclude(DWARF, ALLIANCE_ONLY ),
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 						},
@@ -3179,10 +3179,10 @@ _.Zones =
 							}),
 							i(45580),	-- Exodar Tabard
 							i(46745, {	-- Great Red Elekk (MOUNT!)
-								["races"] = { 11 },	-- Draenei
+								["races"] = { DRAENEI },
 							}),
 							i(46756, {	-- Great Red Elekk (MOUNT!)
-								["races"] = exclude( { 11 }, ALLIANCE_ONLY ),	-- non-Draenei Alliance
+								["races"] = exclude(DRAENEI, ALLIANCE_ONLY ),
 							}),
 						},
 					}),
@@ -3402,11 +3402,11 @@ _.Zones =
 								["cost"] = { { "c", 241, 40 }, },	-- 40x Champion's Seal
 							}),
 							i(46747, {	-- Turbostrider
-								["races"] = { 7 },	-- Gnomes
+								["races"] = { GNOME },
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 							i(46763, {	-- Turbostrider
-								["races"] = exclude( { 7 }, ALLIANCE_ONLY ),	-- non-Gnome Alliance
+								["races"] = exclude(GNOME, ALLIANCE_ONLY ),
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 						},
@@ -3426,11 +3426,11 @@ _.Zones =
 							}),
 							i(45579),	-- Darnassus Tabard
 							i(46744, {	-- Swift Moonsaber (MOUNT!)
-								["races"] = { 4 },	-- Night Elf
+								["races"] = { NIGHTELF },
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 							i(46759, {	-- Swift Moonsaber (MOUNT!)
-								["races"] = exclude( { 4 }, ALLIANCE_ONLY ),
+								["races"] = exclude(NIGHTELF, ALLIANCE_ONLY ),
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 							i(44965, {	-- Teldrassil Sproutling (PET!)
@@ -3478,11 +3478,11 @@ _.Zones =
 								["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
 							}),
 							i(46751, {	-- Swift Red Hawkstrider (MOUNT!)
-								["races"] = { 10 },	-- Blood Elf
+								["races"] = { BLOODELF },
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 							i(46761, {	-- Swift Red Hawkstrider (MOUNT!)
-								["races"] = exclude( { 10 }, HORDE_ONLY ),	-- non-Blood Elf Horde
+								["races"] = exclude(BLOODELF, HORDE_ONLY ),
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 						},

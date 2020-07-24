@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -9,7 +10,7 @@ _.Zones =
 				q(10372, {	-- A Discreet Inquiry
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 				}),
 				q(9275,  {	-- A Little Dash of Seasoning
 					["provider"] = { "n", 16464 },	-- Apothecary Venustus
@@ -33,8 +34,8 @@ _.Zones =
 				q(9487,  {	-- Arcane Reavers (UNTESTED - unsure if there are pre-req requirements)
 					["provider"] = { "n", 16197 },	-- Arcanist Vandril
 					["lvl"] = 10,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 8 },	-- Mage
+					["races"] = { BLOODELF },
+					["classes"] = { MAGE },
 				}),
 				q(9877,  {	-- A Restorative Draught
 					["u"] = REMOVED_FROM_GAME,
@@ -44,8 +45,8 @@ _.Zones =
 				q(9488,  {	-- A Simple Robe (UNTESTED, don't know if there are add'l prereqs)
 					["provider"] = { "n", 16197 },	-- Arcanist Vandril
 					["lvl"] = 10,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 8 },	-- Mage
+					["races"] = { BLOODELF },
+					["classes"] = { MAGE },
 					["sourceQuests"] = { 9487 },	-- Arcane Reavers
 					["g"] = {
 						i(7509)	-- Manaweave Robe
@@ -183,7 +184,7 @@ _.Zones =
 				q(9811,  {	-- Friend of the Sin'dorei
 					["provider"] = { "n", 16239 },	-- Magister Kaendris
 					["coord"] = { 55.0, 48.8, 95 },
-					["races"] = exclude({10}, HORDE_ONLY),	-- Horde, non-Blood Elf
+					["races"] = exclude(BLOODELF, HORDE_ONLY),
 					["sourceQuests"] = { 9167 },	-- The Traitor's Destruction
 				}),
 				q(9139,  {	-- Goldenmist Village
@@ -198,7 +199,7 @@ _.Zones =
 				q(9491,  {	-- Greed
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(23921)),	-- Bulging Sack of Silver
 					},
@@ -214,7 +215,7 @@ _.Zones =
 				}),
 				q(9328,  {	-- Hero of the Sin'dorei
 					["provider"] = { "n", 16239 },	-- Magister Kaendris
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["sourceQuests"] = { 9167 },	-- The Traitor's Destruction
 				}),
 				q(9162,  {	-- Hints of the Past
@@ -245,14 +246,14 @@ _.Zones =
 				q(9177,  {	-- Journey to Undercity (wowhead reports this as removed, but Pr3vention recieved this version on 8.June.2019)
 					["provider"] = { "n", 16252 },	-- High Executor Mavren
 					["coord"] = { 44.7, 32.4, 95 },
-					["races"] = exclude({ 10 }, HORDE_ONLY),	-- Horde, excluding Blood Elf
+					["races"] = exclude(BLOODELF, HORDE_ONLY),
 					["sourceQuests"] = { 9175 },	-- The Lady's Necklace
 					-- possibly granted if you do "The Lady's Necklace" before "Retaking Windrunner Spire" OR this one is for non-BEs
 				}),
 				q(9180,  {	-- Journey to Undercity
 					["provider"] = { "n", 16252 },	-- High Executor Mavren
 					["coord"] = { 44.7, 32.4, 95 },
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["sourceQuests"] = { 9175 },	-- The Lady's Necklace
 				}),
 				q(9217,  {	-- More Rotting Hearts
@@ -353,11 +354,11 @@ _.Zones =
 				}),
 				q(9327,  {	-- The Forsaken
 					["provider"] = { "n", 16197 },	-- Arcanist Vandril
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 				}),
 				q(9329,  {	-- The Forsaken
 					["provider"] = { "n", 16197 },	-- Arcanist Vandril
-					["races"] = exclude({10}, HORDE_ONLY),	-- Horde, not Blood Elf
+					["races"] = exclude(BLOODELF, HORDE_ONLY),
 				}),
 				q(9175,  {	-- The Lady's Necklace
 					["races"] = HORDE_ONLY,
@@ -379,7 +380,7 @@ _.Zones =
 				q(10548, {	-- The Sad Truth
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(30504)),	-- Leafblade-dagger
 						un(REMOVED_FROM_GAME, i(30505)),	-- Ghostclaw Tunic
@@ -394,8 +395,8 @@ _.Zones =
 				}),
 				q(9529,  {	-- The Stone
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 9 },	-- Warlock
+					["races"] = { BLOODELF },
+					["classes"] = { WARLOCK },
 				}),
 				q(9167,  {	-- The Traitor's Destruction
 					["provider"] = { "n", 16239 },	-- Magister Kaendris

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -114,14 +115,14 @@ _.Zones =
 				}),
 				q(11102, {	-- Bombing Run (druid)
 					["coord"] = { 27.6, 52.9, 105 },
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["provider"] = { "n", 23120 },	-- Sky Sergeant Vanderlip
 					["sourceQuest"] = 11062,	-- The Skyguard Outpost
 				}),
 				q(11010, {	-- Bombing Run (all others)
 					["provider"] = { "n", 23120 },	-- Sky Sergeant Vanderlip
 					["coord"] = { 27.6, 52.9, 105 },
-					["classes"] = exclude({ 11 }, ALL_CLASSES),	-- All but druid
+					["classes"] = exclude(DRUID, ALL_CLASSES),
 					["sourceQuest"] = 11062,	-- The Skyguard Outpost
 				}),
 				q(11023, {	-- Bomb Them Again!
@@ -727,7 +728,7 @@ _.Zones =
 					["provider"] = { "n", 23053 },	-- Bladespire Supplicant
 					["coord"] = { 56.2, 48.0, 105 },
 					["sourceQuest"] = 11000,	-- Into the Soulgrinder
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 					["isBreadcrumb"] = true,
 				}),
 				q(10853, {	-- Spirit Calling

@@ -98,6 +98,10 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(QUESTS, {
+					q(53052, {	-- Deeper Into Zandalar
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
 					q(47099, { 	-- Get Your Bearings
 						["coord"] = { 75.7, 23.5, 1161 },
 						["races"] = ALLIANCE_ONLY,
@@ -221,6 +225,7 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "To get this quest and continue the campaign, you must complete one foothold of your choice.",
 						["sourceQuests"] = {
+							53052,	-- Deeper Into Zandalar
 							51967,	-- Return to Boralus
 							-- last Vol'dun quest
 							-- last Zuldazar quest
