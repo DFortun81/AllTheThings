@@ -73,6 +73,10 @@ _.Zones =
 					["provider"] = { "n", 41381 },	-- Nordu
 					["coord"] = { 27.3, 55.5, 198 },
 					["sourceQuest"] = 25842,	-- Firefight
+					["sourceQuests"] = {
+						25381,	-- Fighting Fire With ... Anything
+						25842,	-- Firefight
+					},
 					["g"] = {
 						i(57267),	-- Rebirth Spaulders
 						i(57266),	-- Gloves of Nurtured Truth
@@ -338,7 +342,11 @@ _.Zones =
 				q(25381, {	-- Fighting Fire With ... Anything
 					["provider"] = { "n", 39927 },	-- Laina Nightsky
 					["coord"] = { 19.0, 40.9, 198 },
-					["sourceQuest"] = 25584,	-- The Return of the Ancients
+					["sourceQuests"] = {
+						25584,	-- The Return of the Ancients
+						25630,	-- The Fires of Mount Hyjal
+					},
+					["isBreadcrumb"] = true,
 				}),
 				q(25923, {	-- Finish Nemesis
 					["provider"] = { "n", 41498 },	-- Garunda Mountainpeak
@@ -1036,6 +1044,7 @@ _.Zones =
 					["provider"] = { "n", 39434 },	-- Rio Duran
 					["coord"] = { 28.1, 29.8, 198 },
 					["isBreadcrumb"] = true,
+					["description"] = "If you finish quest \"Aessina's Miracle\" before turning in this quest, NPC will phase out and you won't be able to complete it.",
 				}),
 				q(25472, {	-- The Flameseer's Staff
 					["provider"] = { "n", 39869 },	-- Windspeaker Tamila
