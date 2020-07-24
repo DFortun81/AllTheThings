@@ -490,6 +490,7 @@ _.NeverImplemented =
 		q(37217),	-- FLAG - Proving Grounds - Tank Gold
 		q(37216),	-- FLAG - Proving Grounds - Tank Silver
 		q(33093),	-- FLAG - Proving Grounds - Tank Silver
+		q(32112),	-- FLAG - Been to Fight Club. Completing first fight
 		q(32899),	-- Daily Scenario Random (Nth)(Mists)
 		q(32873),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st
 		q(32874),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth
@@ -1451,7 +1452,7 @@ _.NeverImplemented =
 		q(45513),	-- Highmountain - WQ rare: Defilia
 		q(45511),	-- Highmountain - WQ rare: Olokk the Shipbreaker
 		q(45512),	-- Highmountain - WQ rare: Mawat'aki
-		q(48381),	-- Highmountain - WQ rare: Obsidian Deathwarder		
+		q(48381),	-- Highmountain - WQ rare: Obsidian Deathwarder
 		q(45478),	-- Suramar - WQ rare: Achronos
 		q(45504),	-- Suramar - WQ rare: Alteria
 		q(45475),	-- Suramar - WQ rare: Auditor Esiel
