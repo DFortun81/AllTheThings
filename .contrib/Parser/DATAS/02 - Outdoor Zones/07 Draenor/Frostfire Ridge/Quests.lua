@@ -149,6 +149,12 @@ _.Zones =
 					["requireSkill"] = INSCRIPTION,
 					["sourceQuest"] = 36435,	-- Unintelligible Intelligence
 				}),
+				q(34287, {	-- Cleansing the Souls
+					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
+					["coord"] = { 39.6, 23.4, 525 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 34362,	-- The Shadow Gate
+				}),
 				q(36516, {	-- Cut 'Em Out!
 					["provider"] = { "n", 85751 },	-- Gaoda Hidecleaver
 					["coord"] = { 20.6, 60.2, 525 },
@@ -299,6 +305,17 @@ _.Zones =
 					["coord"] = { 43.1, 41.3, 526 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33473,	-- Back to Bladespire Citadel
+				}),
+				q(34285, {	-- Gearing Up
+					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
+					["coord"] = { 48.8, 14.6, 525 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 34281,	-- Out of the Chains
+					["cost"] = {
+						{ "i", 110229, 1 },	-- Owynn's Armor
+						{ "i", 110232, 1 },	-- Owynn's Dagger
+						{ "i", 110149, 1 },	-- Owynn's Mace
+					},
 				}),
 				q(34069, {	-- Getting the Points
 					["coord"] = { 84.1, 65.1, 525 },
@@ -531,6 +548,15 @@ _.Zones =
 						i(112689),	-- Gorget of Flowing Earth
 					},
 				}),
+				q(34281, {	-- Out of the Chains
+					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
+					["coord"] = { 48.8, 14.6, 525 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 34284,	-- Garrison Campaign: The Search for Owynn Graddock
+					["cost"] = {
+						{ "i", 110116, 1 },	-- Bloodmaul Shackle Key
+					},
+				}),
 				q(33470, {	-- Pool of Visions
 					["provider"] = { "n", 74272 },	-- Farseer Drek'Thar
 					["coord"] = { 16.7, 57.8, 525 },
@@ -615,6 +641,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33473,	-- Back to Bladespire Citadel
 				}),
+				q(34286, {	-- Seeking the Truth
+					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
+					["coord"] = { 48.8, 14.6, 525 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 34285,	-- Gearing Up
+				}),
 				q(33929, {	-- Shivertail's Den
 					["provider"] = { "n", 76889 },	-- Shivertail
 					["coord"] = { 19.5, 50.9, 525 },
@@ -643,6 +675,18 @@ _.Zones =
 					["coord"] = { 88.4, 49.4, 525 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34030,	-- The Captive Engineer
+				}),
+				q(34289, {	-- Soulgrinder Survivor
+					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
+					["coord"] = { 39.6, 23.4, 525 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						34287,	-- Cleansing the Souls
+						34288,	-- The Totems That Bind
+					},
+					["g"] = {
+						i(119151),	-- Soulgrinder
+					},
 				}),
 				q(36475, {	-- Stealing the Declaration
 					["provider"] = { "n", 85440 },	-- Nicholaus Page
@@ -705,6 +749,12 @@ _.Zones =
 						i(106146),	-- Frostwolf Stalwart Cap
 						i(107397),	-- Frostwolf Wind-Talker Cowl
 					},
+				}),
+				q(34362, {	-- The Shadow Gate
+					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
+					["coord"] = { 40.22, 21.46, 525 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 34286,	-- Seeking the Truth
 				}),
 				q(34123, {	-- To Thunder Pass
 					["provider"] = { "n", 76720 },	-- Thrall
@@ -912,6 +962,15 @@ _.Zones =
 						i(113255),	-- Asha's Fang
 						i(113253),	-- Karg's Hunting Horn
 						i(113254),	-- Lokra's Fury
+					},
+				}),
+				q(34288, {	-- The Totems That Bind
+					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
+					["coord"] = { 39.6, 23.4, 525 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 34362,	-- The Shadow Gate
+					["cost"] = {
+						{ "i", 110378, 5 },	-- Borgal's Totem
 					},
 				}),
 				q(33450, {	-- The Warlord's Guard

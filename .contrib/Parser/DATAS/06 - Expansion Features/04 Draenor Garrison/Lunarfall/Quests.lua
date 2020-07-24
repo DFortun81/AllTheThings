@@ -25,6 +25,10 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 77209 },	-- Baros Alexston
 								["coord"] = { 29.2, 33.1, 582 },	-- garrison lvl 3
 							}),
+							q(34284, {	-- Garrison Campaign: The Search for Owynn Graddock
+								["provider"] = { "n", 81492 },	-- Bodrick Grey <SI:7>
+								["coord"] = { 38.0, 37.6, 582 },	-- garrison lvl 3
+							}),
 							q(35985, {	-- Garrison Campaign: The Broken Precipice
 								["provider"] = { "n", 88892 },	-- Nixxie
 								["races"] = ALLIANCE_ONLY,
