@@ -12524,7 +12524,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 		return;
 	end
 	if self:IsVisible() then
-		if TSM_API then
+		if TSM_API and TSMAPI_FOUR then
 			if not self.cachedTSMFrame then
 				for i,f in ipairs({UIParent:GetChildren()}) do
 					if f.headerBgCenter then
