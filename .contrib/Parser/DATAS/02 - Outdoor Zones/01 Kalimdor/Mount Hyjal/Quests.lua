@@ -72,7 +72,6 @@ _.Zones =
 				q(25372, {	-- Aessina's Miracle
 					["provider"] = { "n", 41381 },	-- Nordu
 					["coord"] = { 27.3, 55.5, 198 },
-					["sourceQuest"] = 25842,	-- Firefight
 					["sourceQuests"] = {
 						25381,	-- Fighting Fire With ... Anything
 						25842,	-- Firefight
