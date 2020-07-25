@@ -1982,6 +1982,7 @@ _.NeverImplemented =
 		--	Drustvar
 		q(51851),	-- Triggered after completing "Storming the Manor". Didn't appear to trigger anything specific, so not sure what they're used for
 		q(51852),	-- Triggered after completing "Storming the Manor". Didn't appear to trigger anything specific, so not sure what they're used for
+		q(54318),	-- Triggered immediately after completing "A Drust Cause" invasion in Drustvar as alliance (did it prior to lvl 120, but this may be a loot lock tracker)
 		
 		-- Bonus Objectives
 		q(48525, {	-- Break Them to Splinters
