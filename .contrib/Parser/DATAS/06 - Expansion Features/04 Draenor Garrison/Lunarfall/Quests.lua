@@ -21,6 +21,10 @@ _.ExpansionFeatures =
 							q(35837, {	-- Garrison Campaign: Deep Recon
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(36160, {	-- Garrison Campaign: Every Rose Has Its Thorn
+								["provider"] = { "n", 77209 },	-- Baros Alexston
+								["coord"] = { 29.2, 33.1, 582 },	-- garrison lvl 3
+							}),
 							q(34026, {	-- Garrison Campaign: Seismic Matters
 								["provider"] = { "n", 77209 },	-- Baros Alexston
 								["coord"] = { 29.2, 33.1, 582 },	-- garrison lvl 3
@@ -431,6 +435,12 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 115507 },	-- Drained Crystal Fragment
 						["requireSkill"] = JEWELCRAFTING,
+					}),
+					q(36248, {	-- A Stolen Heart
+						["sourceQuest"] = 36161,	-- Where There Is Smoke...
+						["provider"] = { "n", 84684 },	-- Lieutenant Thorn <Mission Specialist>
+						["coord"] = { 29.6, 34.4, 582 },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(38259, {	-- All Hands on Deck
 						["provider"] = { "n", 92219 },	-- King Varian Wrynn
@@ -938,6 +948,12 @@ _.ExpansionFeatures =
 						},
 						["provider"] = { "n", 92219 },	-- King Varian Wrynn
 						["coord"] = { 32.0, 31.9, 582 },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(36161, {	-- Where There Is Smoke...
+						["sourceQuest"] = 36160,	-- Garrison Campaign: Every Rose Has Its Thorn
+						["provider"] = { "n", 84684 },	-- Lieutenant Thorn <Mission Specialist>
+						["coord"] = { 29.6, 34.4, 582 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 				},
