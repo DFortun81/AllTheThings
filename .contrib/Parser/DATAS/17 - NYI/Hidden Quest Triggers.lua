@@ -1980,6 +1980,9 @@ _.NeverImplemented =
 
 		--	Zones
 		--	Drustvar
+		q(51851),	-- Triggered after completing "Storming the Manor". Didn't appear to trigger anything specific, so not sure what they're used for
+		q(51852),	-- Triggered after completing "Storming the Manor". Didn't appear to trigger anything specific, so not sure what they're used for
+		
 		-- Bonus Objectives
 		q(48525, {	-- Break Them to Splinters
 			["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
