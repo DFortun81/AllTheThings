@@ -1639,6 +1639,7 @@ _.NeverImplemented =
 		q(53470),	-- Vol'dun - Alliance - landed in Vol'Dun while doing the war campaign. First zone landing
 		q(51242),	-- Vol'dun - Alliance - planted the Alliance banner
 		q(51396),	-- Vol'dun - Alliance - watched Vorrik place the first keystone on the pedestal in the Sanctuary of the Devoted
+		q(53384),	-- Zuldazar - Alliance - war campaign trigger in Castaway Encampment. Probably a zone phase controller
 		q(47698),	-- Nazmir - Ticker is summoned
 		q(49294),	-- Nazmir - triggers when Hanzabu talks about the Zo'bal shrine
 		q(48779),	-- Nazmir - triggers after activating all the spirits in Zo'bal during "Spiritual Restoration"
