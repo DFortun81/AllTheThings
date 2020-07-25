@@ -1471,6 +1471,7 @@ _.NeverImplemented =
 		q(45501),	-- Val'Sharah - WQ rare: Malisandra
 		q(45488),	-- Val'Sharah - WQ rare: Nylaathria the Forgotten
 		q(45487),	-- Val'Sharah - WQ rare: Rabxach
+		q(45493),	-- Val'Sharah - WQ rare: Witchdoctor Grgl-Brgl
 
 		--	Treasures
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
