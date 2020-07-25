@@ -466,6 +466,18 @@ _.ExpansionFeatures =
 						},
 						-- Hidden quest 53384 completes as Kelsey Steelspark runs up
 					}),
+					q(51331, {	-- Mole Machinations
+						["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
+						["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 51418,	-- Xibala
+					}),
+					q(51309, {	-- Rocks of Ragnaros
+						["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
+						["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 51418,	-- Xibala
+					}),
 					q(51359, {	-- Fragment of the Firelands
 						["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
 						["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
