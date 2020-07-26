@@ -232,13 +232,6 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(43441, {	-- A Second Weapon
-					["classes"] = { MAGE },
-					["providers"] = {
-						{ "n", 102700 },	-- Meryl Felstorm
-						{ "n", 109222 },	-- Meryl Felstorm (alliance)
-					},
-				}),
 				q(44252, {	-- A Sheath For Every Blade
 					["classes"] = { ROGUE },
 					["provider"] = { "n", 105986 },	-- Kelsey Steelspark
@@ -263,10 +256,6 @@ _.Zones =
 						{ "n", 115468 },	-- Archmage Karlain
 					},
 				}),
-				q(42001, {	-- Aluneth, Greatstaff of the Magna
-					["classes"] = { MAGE },
-					["provider"] = { "n", 102700 },	-- Meryl Felstorm
-				}),
 				q(46065, {	-- An Impossible Foe
 					["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, SHAMAN, MAGE, DRUID },
 					["races"] = ALLIANCE_ONLY,
@@ -276,9 +265,6 @@ _.Zones =
 				q(38710, {	-- An Urgent Gathering
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 92909 },	-- Lord Maxwell Tyrosus
-				}),
-				q(45437, {	-- An Urgent Situation
-					["classes"] = { MAGE },
 				}),
 				q(45991, {	-- An Urgent Warning
 					["classes"] = { ROGUE },
@@ -296,11 +282,6 @@ _.Zones =
 					["provider"] = { "n", 120215 },	-- Archmage Khadgar
 					["coord"] = { 66.2, 42.6, 627 },
 					["lvl"] = 110,
-				}),
-				q(46000, {	-- Arming Dalaran
-					["sourceQuests"] = { 45586 },	-- Shield Amplification
-					["classes"] = { MAGE },
-					["provider"] = { "n", 119001 },	-- Sin'dorei Archmage
 				}),
 				q(44914, {	-- Arms: The Thieving Apprentice
 					["lvl"] = 110,
@@ -361,11 +342,6 @@ _.Zones =
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["coord"] = { 28.8, 48.4, 627 },
 					["lvl"] = 110,
-				}),
-				q(44766, {	-- Backup Plan
-					["sourceQuests"] = { 45437 },	-- An Urgent Situation
-					["classes"] = { MAGE },
-					["provider"] = { "n", 118242 },	-- Aethas Sunreaver
 				}),
 				q(47037, {	-- Balance: The Twisted Twin
 					["classes"] = { DRUID },
@@ -460,14 +436,6 @@ _.Zones =
 						{ "n", 103741 },	-- Courier Larkspur
 					},
 				}),
-				q(46724, {	-- Champion: The Great Akazamzarak
-					["sourceQuests"] = { 46723 },	-- Down the Rabbit Hole
-					["classes"] = { MAGE },
-					["provider"] = { "n", 103092 },	-- The Great Akazamzarak
-					["g"] = {
-						follower(995),	-- The Great Akazamzarak
-					},
-				}),
 				q(48021, {	-- Chromie
 					["providers"] = {
 						{ "n", 90417 },	-- Archmage Khadgar
@@ -523,13 +491,6 @@ _.Zones =
 					["provider"] = { "n", 116714 },	-- Ritssyn Flamescowl
 					["coord"] = { 57.9, 72.6, 629 },
 					["lvl"] = 110,
-				}),
-				q(42477, {	-- Daio the Decrepit
-					["classes"] = { MAGE },
-					["providers"] = {
-						{ "n", 102700 },	-- Meryl Felstorm
-						{ "n", 109222 },	-- Meryl Felstorm
-					},
 				}),
 				q(45843, {	-- Dark Omens
 					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
@@ -588,13 +549,6 @@ _.Zones =
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
-					},
-				}),
-				q(46723, {	-- Down the Rabbit Hole
-					["classes"] = { MAGE },
-					["provider"] = { "n", 103092 },	-- The Great Akazamzarak
-					["g"] = {
-						i(147838),	-- Akazamzarak's Spare Hat
 					},
 				}),
 				q(41220, {	-- Down to Azsuna
@@ -656,17 +610,6 @@ _.Zones =
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
-					},
-				}),
-				q(45615, {	-- Finders Keepers
-					["classes"] = { MAGE },
-					["provider"] = { "n", 103092 },	-- The Great Akazamzarak
-				}),
-				q(42452, {	-- Finding Ebonchill
-					["classes"] = { MAGE },
-					["providers"] = {
-						{ "n", 102700 },	-- Meryl Felstorm
-						{ "n", 109222 },	-- Meryl Felstorm
 					},
 				}),
 				q(43100, {	-- Finding the Scepter
@@ -993,10 +936,6 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["provider"] = { "n", 106558 },	-- Mimiron
 				}),
-				q(46722, {	-- Nothing Up My Sleeve
-					["classes"] = { MAGE },
-					["provider"] = { "n", 103092 },	-- The Great Akazamzarak
-				}),
 				q(43250, {	-- Off to Court
 					["sourceQuests"] = { 43249 },	-- The Raven's Eye
 					["classes"] = { ROGUE },
@@ -1139,11 +1078,6 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 				}),
-				q(46290, {	-- Return of the Archmage
-					["sourceQuests"] = { 46000 },	-- Arming Dalaran
-					["classes"] = { MAGE },
-					["provider"] = { "n", 118242 },	-- Aethas Sunreaver
-				}),
 				q(45238, {	-- Return to Karazhan: Cubic Cynosure
 					["sourceQuests"] = { 45160 },	-- Cubic Currents
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
@@ -1242,10 +1176,6 @@ _.Zones =
 						{ "n", 90369 },	-- Lord Maxwell Tyrosus
 					},
 				}),
-				q(45630, {	-- Servant to No One
-					["classes"] = { MAGE },
-					["provider"] = { "n", 103092 },	-- The Great Akazamzarak
-				}),
 				q(47042, {	-- Shadow: The Twisted Twin
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
@@ -1314,23 +1244,10 @@ _.Zones =
 					["description"] = "Automatically given to you when you arrive in Dalaran.",
 					["classes"] = { DEATHKNIGHT },
 				}),
-				q(41114, {	-- The Champion's Return -- no qg info
-					["classes"] = { MAGE },
-				}),
-				q(42416, {	-- The Council is in Session
-					["sourceQuests"] = { 42222 },	-- Empyrean Society Report
-					["classes"] = { MAGE },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 107351 },	-- Archmage Khadgar
-				}),
 				i(154880, {	-- Cursed Shard
 					q(49474, {	-- The Cursed Shard
 						["isBreadcrumb"] = true,
 					}),
-				}),
-				q(42476, {	-- The Deadwind Site
-					["classes"] = { MAGE },
-					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
 				q(39427, {	-- The Eagle Spirit's Blessing
 					["sourceQuests"] = { 41542 },	-- Preparation for the Hunt
@@ -1416,13 +1333,6 @@ _.Zones =
 				q(39733, {	-- The Lone Mountain -- granted by order hall scouting map
 					["isBreadcrumb"] = true,
 				}),
-				q(42479, {	-- The Mage Hunter
-					["classes"] = { MAGE },
-					["providers"] = {
-						{ "n", 102700 },	-- Meryl Felstorm
-						{ "n", 109222 },	-- Meryl Felstorm
-					},
-				}),
 				q(46200, {	-- The Matter Resolved... For Now...
 					["provider"] = { "n", 118954 },	-- Night Elf Warrior
 					["classes"] = { DRUID, MONK, PALADIN, PRIEST, SHAMAN },	-- Legion healing classes
@@ -1444,11 +1354,6 @@ _.Zones =
 				q(41631, {	-- The Nexus Vault
 					["sourceQuests"] = { 41630 },	-- Unleashing Judgment
 					["classes"] = { PRIEST },
-				}),
-				q(45207, {	-- The Nightborne Apprentice
-					["sourceQuests"] = { 46338 },	-- A Creative Solution
-					["classes"] = { MAGE },
-					["provider"] = { "n", 118242 },	-- Aethas Sunreaver
 				}),
 				q(46322, {	-- The Pirate's Bay
 					["classes"] = { ROGUE },
@@ -1518,13 +1423,6 @@ _.Zones =
 					["sourceQuests"] = { 43470 },	-- Pruning the Garden
 					["classes"] = { ROGUE },
 					["provider"] = { "n", 98100 },	-- Taoshi
-				}),
-				q(44310, {	-- Thrice the Power
-					["classes"] = { MAGE },
-					["providers"] = {
-						{ "n", 102700 },	-- Maryl Felstorm
-						{ "n", 109222 },	-- Maryl Felstorm
-					},
 				}),
 				q(43331, {	-- Time to Collect
 					["sourceQuests"] = { 42483 },	-- Put It All on Red

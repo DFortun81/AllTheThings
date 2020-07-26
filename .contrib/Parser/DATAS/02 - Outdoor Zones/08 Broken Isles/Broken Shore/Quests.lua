@@ -571,9 +571,6 @@ _.Zones =
 				q(48641),	-- Armies of Legionfall
 				q(44217),	-- Armor Fit For A Deathlord
 				q(46734),	-- Assault on Broken Shore
-				q(45844, {	-- Avocation of Antonidas
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(47037, {	-- Balance: The Twisted Twin
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -654,14 +651,6 @@ _.Zones =
 				q(46031),	-- Investigate the Broken Shore
 				q(39757),	-- Keeping Your Edge
 				q(44082),	-- Knights of the Ebon Blade
---]]
-				q(45614, {	-- Lady Remor'za
-					["sourceQuests"] = { 45251 },	-- Redundancy
-					["provider"] = { "n", 117331 },	-- Aethas Sunreaver
-					["coord"] = { 49.2, 18.6, 646 },
-					["lvl"] = 110,
-				}),
---[[
 				q(46688),	-- Leather of the Ancients
 				q(38804),	-- Lyrelle
 				q(45817),	-- Mage
@@ -744,7 +733,6 @@ _.Zones =
 				}),
 				q(45830),	-- Shaman
 				q(45346),	-- Shambling Specimens
-				q(45586),	-- Shield Amplification
 				q(46499),	-- Spiders, Huh?
 				q(43265),	-- Spread the Word
 				q(45025),	-- Stealing the Source of Power

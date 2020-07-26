@@ -940,8 +940,6 @@ _.NeverImplemented =
 		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
 
 		--	PvP Set Completed
-		q(45586),	-- Dreadful Gladiator's Dreadplate Armor (Death Knight)
-
 		q(43092),	-- Primal Combatant's Felweave Armor (Alliance, Warlock)
 		q(43093),	-- Primal Combatant's Felweave Armor (Horde, Warlock)
 		q(43094),	-- Primal Combatant's Satin Armor (Alliance, Priest)
@@ -1085,7 +1083,6 @@ _.NeverImplemented =
 		q(48984),	-- Antoran Wastes - triggered when combining the Smashed Portal Generator and other parts to make Vishak's Portal Generator
 		q(46717),	-- got achievement Burning Bridges and looted Qa'pla, Eredun War Order legendary, so one of the two
 		q(46835),	-- Whispers of a Frightened World Tracking, while doing quest 46206
-		q(45914),	-- Ch 5 Soulstone Shielded Tracking Quest (Mage campaign)
 		q(43659),	-- Mage - learned the Felo'melorn appearance from The Stars' Design (maybe put this on the appearance item?)
 
 		-- demon hunter hidden demons - maybe add this to the zone maps?
@@ -1190,6 +1187,11 @@ _.NeverImplemented =
 		q(44469),	-- Mage Order Hall - Completed the "Oculus Preparations: Ley Them Down" mission
 		q(44470),	-- Mage Order Hall - Completed the "Oculus Preparations: Eternos" mission
 		q(44472),	-- Mage Order Hall - Completed the "Oculus Preparations: On The Offensive" mission
+		q(42976),	-- Mage Order Hall - Chapter 3 tracking - completed "Three is a lucky number" and saw the Arcane Destroyer be summoned
+		q(47234),	-- Mage Order Hall - Unlocked the order hall storyline artifact appearance from "A Hero's Weapon"
+		q(45914),	-- Mage Order Hall - Chapter 5 tracking - Soulstone Shielded. Triggers after completing "Keep it Secret, Keep it Safe"
+		q(46768),	-- Mage Order Hall - Akazamzarak 1 week cooldown. Triggered after completing "Champion: Aethas Sunreaver"
+		q(46776),	-- Mage Order Hall - Akazamzarak 1 week cooldown. Triggered after completing "Champion: Aethas Sunreaver". Duplicate?
 
 		q(40516),	-- Monk Order Hall - The Dawning Bit (Triggered after accepting The Dawning Light)
 		q(40638),	-- Monk Order Hall - Windwalker Chosen
