@@ -127,7 +127,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["g"] = {
-							ach(13438, {	-- Boxing Match
+							ach(13439, {	-- Boxing Match
 								["races"] = ALLIANCE_ONLY,
 							}),
 						},
@@ -137,7 +137,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 						["g"] = {
-							ach(13439, {	-- Boxing Match
+							ach(13438, {	-- Boxing Match
 								["races"] = HORDE_ONLY,
 							}),
 						},
