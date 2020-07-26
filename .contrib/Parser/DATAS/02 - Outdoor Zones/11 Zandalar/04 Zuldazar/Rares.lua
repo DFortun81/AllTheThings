@@ -125,6 +125,7 @@ _.Zones =
 				n(134637, {	-- Headhunter Lee'za
 					["questID"] = 50661,
 					["coord"] = { 63.0, 14.0, 862 },
+					["isWorldQuest"] = true,
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(161117),	-- Berserker's Juju
 					}),
