@@ -179,44 +179,6 @@ _.Zones =
 						}),
 					},
 				}),
-				n(73082, {	-- Master Li <Celestial Tournament Host>
-					["description"] = "You must have leveled at least 15 pets to 25 in order to enter the tournament.",
-					["coord"] = { 34.7, 59.6, 554 },
-					["g"] = {
-						i(102145, {	-- Chi-Chi, Hatchling of Chi-Ji
-							["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
-							["g"] = {
-								crit(2, {	-- Chi-Chi, Hatchling of Chi-Ji
-									["achievementID"] = 8519,	-- Celestial Family
-								}),
-							},
-						}),
-						i(101771, {	-- Xu-Fu, Cub of Xuen
-							["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
-							["g"] = {
-								crit(1, {	-- Xu-Fu, Cub of Xuen
-									["achievementID"] = 8519,	-- Celestial Family
-								}),
-							},
-						}),
-						i(102147, {	-- Yu'la, Broodling of Yu'lon
-							["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
-							["g"] = {
-								crit(3, {	-- Yu'la, Broodling of Yu'lon
-									["achievementID"] = 8519,	-- Celestial Family
-								}),
-							},
-						}),
-						i(102146, {	-- Zao, Calfling of Niuzao
-							["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
-							["g"] = {
-								crit(4, {	-- Zao, Calfling of Niuzao
-									["achievementID"] = 8519,	-- Celestial Family
-								}),
-							},
-						}),
-					},
-				}),
 				n(73305, {	-- Mistweaver Ai <Timeless Artifacts>
 					["coord"] = { 42.6, 55.7, 554 },
 					["g"] = {
