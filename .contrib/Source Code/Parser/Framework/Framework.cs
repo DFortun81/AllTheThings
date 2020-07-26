@@ -68,7 +68,7 @@ namespace ATT
         /// </summary>
         public static readonly long MAX_ITEMID =
 #if CLASSIC
-            23796
+            24358
 #else
             99999999
 #endif
