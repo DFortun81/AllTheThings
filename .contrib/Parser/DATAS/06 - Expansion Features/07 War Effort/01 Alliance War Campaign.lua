@@ -791,6 +791,9 @@ _.ExpansionFeatures =
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52308 },	-- Intercepted Orders
+						["maps"] = {
+							1156,	-- The Great Sea (scenario map)
+						},
 					}),
 				--	BLOOD IN THE WATER STARTS HERE
 					q(52490, {	-- Behind Enemy Boats
