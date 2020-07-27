@@ -10,7 +10,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						crit(1, {	-- Clearing a Path
-							["sourceQuest"] = 25646,	-- Windshear Mine Cleanup
+							["sourceQuests"] = {
+								25642,	-- Don't Look Them in the Eyes
+								25646,	-- Windshear Mine Cleanup
+							},
 						}),
 						crit(2, {	-- Slay the Warlord
 						}),
