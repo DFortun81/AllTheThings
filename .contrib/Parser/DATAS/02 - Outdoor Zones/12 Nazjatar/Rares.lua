@@ -1,12 +1,13 @@
---------------------------------------------------
---          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
 		n(RARES, {
 			n(152415, { -- Alga the Eyeless
-				["questID"] = 56279, 
+				["questID"] = 56279,
 				["isDaily"] = true,
 				["coord"] = { 52.4, 41.9, 1355 },
 				["g"] = {
@@ -21,7 +22,7 @@ _.Zones =
 								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 							}),
 						},
-					}),				
+					}),
 				},
 			}),
 			n(152416, {	-- Allseer Oma'kil
@@ -559,7 +560,7 @@ _.Zones =
 			}),
 			n(151870, {	-- Sandcastle
 				["description"] = "There is a chance for Sandcastle to spawn when you are using a Scrying Stone to find treasures in Nazjatar.",
-				["questID"] = 56276,	-- 57191 and 57192 triggered around the time sandcastle 
+				["questID"] = 56276,	-- 57191 and 57192 triggered around the time sandcastle
 				["isDaily"] = true,
 				["g"] = {
 					crit(23, {	-- I Thought You Said They'd Be Rare?
@@ -698,7 +699,7 @@ _.Zones =
 					i(170187, {	-- Shadescale (TOY!)
 						crit(35, {	-- Shadescale
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),				
+						}),
 					}),
 				},
 			}),
@@ -751,7 +752,7 @@ _.Zones =
 					{ 64.8, 52.0, 1355 },
 				},
 				["isDaily"] = true,
-				["description"] = "On top of the coral reef. Requires Flying.", 
+				["description"] = "On top of the coral reef. Requires Flying.",
 				["g"] = {
 					crit(31, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
@@ -813,7 +814,7 @@ _.Zones =
 					i(170196, {	-- Shirakess Warning Sign
 						crit(26, {	-- Shirakess Warning Sign
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),				
+						}),
 					}),
 				},
 			}),
@@ -831,7 +832,7 @@ _.Zones =
 					i(170178, {	-- Alpha Fin
 						crit(44, {	-- Alpha Fin
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),				
+						}),
 					}),
 					i(170177, {	-- Exposed Fish
 						crit(45, {	-- Exposed Fish

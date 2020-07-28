@@ -1,6 +1,7 @@
----------------------------------------------------
+-------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
----------------------------------------------------
+-------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
@@ -779,9 +780,6 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(41064),	-- Cursed Forge of the Nathrezim
-					q(43552, {	-- Eye of Azshara
-						["u"] = REMOVED_FROM_GAME,
-					}),
 					q(44226),	-- Fate Favors Us
 					q(45994),	-- Investigate the Broken Shore
 					q(46333),	-- Livin' on the Ledge

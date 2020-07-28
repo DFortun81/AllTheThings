@@ -1644,7 +1644,7 @@ _.NeverImplemented =
 		q(51242),	-- Vol'dun - Alliance - planted the Alliance banner
 		q(51396),	-- Vol'dun - Alliance - watched Vorrik place the first keystone on the pedestal in the Sanctuary of the Devoted
 		q(53384),	-- Zuldazar - Alliance - war campaign trigger in Castaway Encampment. Probably a zone phase controller
-		q(53124),	-- Kings' Rest dungeon unlock trigger for alliance 
+		q(53124),	-- Kings' Rest dungeon unlock trigger for alliance
 		q(47698),	-- Nazmir - Ticker is summoned
 		q(49294),	-- Nazmir - triggers when Hanzabu talks about the Zo'bal shrine
 		q(48779),	-- Nazmir - triggers after activating all the spirits in Zo'bal during "Spiritual Restoration"
@@ -1988,8 +1988,8 @@ _.NeverImplemented =
 		--	Drustvar
 		q(51851),	-- Triggered after completing "Storming the Manor". Didn't appear to trigger anything specific, so not sure what they're used for
 		q(51852),	-- Triggered after completing "Storming the Manor". Didn't appear to trigger anything specific, so not sure what they're used for
-		q(54318),	-- Triggered immediately after completing "A Drust Cause" invasion in Drustvar as alliance (did it prior to lvl 120, but this may be a loot lock tracker)
-		
+		q(54318),	-- Triggered immediately after completing "A Drust Cause" invasion in Drustvar as Alliance (first completion on character? WM off specific? it doesn't trigger later in WM)
+
 		-- Bonus Objectives
 		q(48525, {	-- Break Them to Splinters
 			["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
@@ -2265,8 +2265,10 @@ _.NeverImplemented =
 		q(56725),	-- Killed Burning Amalgamation
 		q(56891),	-- Killed Burning Amalgamation, Moghiea, Salgos the Eternal, Spawn of Salgos, and Xue
 		q(56485),	-- Killed Dusty Amalgamation
+		q(56730),	-- First kill of Dusty Amalgamation
 		q(56488),	-- Killed Herald of Salgos
 		q(55891),	-- Killed Herald of Salgos
+		q(56733),	-- First kill of Herald of Salgos
 		q(56484),	-- Killed Moghiea
 		q(56479),	-- Killed Omus
 		q(56722),	-- Killed Omus
