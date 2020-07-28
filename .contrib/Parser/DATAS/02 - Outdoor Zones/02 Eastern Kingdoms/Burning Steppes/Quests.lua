@@ -210,7 +210,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 207303 },	-- Adventure Board
 					["description"] = "Only available between level 47 and 56.",
-					["lvl"] = 47
+					["lvl"] = 47,
 					["isBreadcrumb"] = true,
 				}),
 				q(28320, {	-- Assault on Dreadmaul Rock
