@@ -47,6 +47,7 @@ i(143857);	-- Twilight Cultist Mantle
 i(143855);	-- Twilight Cultist Robe
 i(168003);	-- Unstable Manapearl
 i(13514);	-- Wail of the Banshee
+i(128851);	-- Roasted juicycrunch carrots
 
 
 
@@ -67,7 +68,7 @@ i(17410);	-- Zinfizzlex's Portable Shredder Unit
 -- Recipes (Not actual recipes)
 i(168326);	-- Eye of Theras
 i(127772);	-- Gemcutter Module: Haste
-
+i(171315); 	-- Reuse me (MTMM)
 
 
 
@@ -85,3 +86,15 @@ i(67495);	-- Strange Bloated Stomach
 i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate
 i(9279);	-- White Punch Card
+
+-- "Weekly Holidays"
+i(167872);	-- Damaged diving helmet
+i(168010);	-- submerisble propulsion device
+i(168011);	-- jelly jam
+i(150366);	-- moonkin stone
+i(150735);	-- moonberry
+i(150740);	-- beanie boomie
+i(150747);	-- brilliant vial
+i(150748);	-- constellas corruptions
+i(150749);	-- moonglow water
+i(150750);	-- moonkisd antidote
