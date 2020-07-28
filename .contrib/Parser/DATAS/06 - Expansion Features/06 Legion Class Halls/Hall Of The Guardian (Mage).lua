@@ -389,6 +389,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(46724, {	-- Champion: The Great Akazamzarak
+						["coord"] = { 81.5, 60.3, 734 },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["sourceQuest"] = 46723,	-- Down the Rabbit Hole
@@ -421,6 +422,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(46723, {	-- Down the Rabbit Hole
+						["coord"] = { 81.5, 60.3, 734 },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["sourceQuest"] = 46722,	-- Nothing Up My Sleeve
@@ -459,9 +461,10 @@ _.ExpansionFeatures =
 						["classes"] = { MAGE },
 					}),
 					q(45615, {	-- Finders Keepers
+						["coord"] = { 81.5, 60.3, 734 },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
-						["description"] = "Must complete all 7 order hall research tiers.",
+						["description"] = "Must complete 6 order hall research tiers.",
 					}),
 					q(42452, {	-- Finding Ebonchill
 						["coord"] = { 59.1, 43.0, 735 },
@@ -601,6 +604,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 42451,	-- Kalec's Plan
 					}),
 					q(46722, {	-- Nothing Up My Sleeve
+						["coord"] = { 81.5, 60.3, 734 },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["sourceQuest"] = 45630,	-- Servant to No One
@@ -676,6 +680,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 46345,	-- Into the Hornet's Nest
 					}),
 					q(45630, {	-- Servant to No One
+						["coord"] = { 81.5, 60.3, 734 },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["sourceQuest"] = 45615,	-- Finders Keepers
