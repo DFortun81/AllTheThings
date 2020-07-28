@@ -273,7 +273,10 @@ _.Zones =
 				q(45482, {	-- Arcane: Fate of the Tideskorn
 					["coord"] = { 22.4, 38.7, 635 },
 					["classes"] = { MAGE },
-					["sourceQuest"] = 44821,	-- In Dire Need
+					["sourceQuests"] = {
+						44821,	-- In Dire Need
+						47033,	-- Legion Threat: Suramar
+					},
 					["providers"] = {
 						{ "n", 90417 },	-- Archmage Khadgar
 						{ "n", 115464 },	-- Archmage Khadgar
@@ -627,7 +630,10 @@ _.Zones =
 				q(47055, {	-- Fire: The Folly of Levia Laurence
 					["coord"] = { 22.2, 39.6, 635 },
 					["classes"] = { MAGE },
-					["sourceQuest"] = 44821,	-- In Dire Need
+					["sourceQuests"] = {
+						44821,	-- In Dire Need
+						47035,	-- Legion Threat: The Missing mage
+					},
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
@@ -680,7 +686,10 @@ _.Zones =
 				q(45182, {	-- Frost: The Twisted Twin
 					["coord"] = { 22.9, 38.1, 635 },
 					["classes"] = { MAGE },
-					["sourceQuest"] = 44821,	-- In Dire Need
+					["sourceQuests"] = {
+						44821,	-- In Dire Need
+						47034,	-- Legion Threat: The Necromancer
+					},
 					["providers"] = {
 						{ "n", 90463 },	-- Archmage Karlain
 						{ "n", 115468 },	-- Archmage Karlain

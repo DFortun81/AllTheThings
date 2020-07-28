@@ -266,6 +266,33 @@ _.Zones =
 					},
 					["lvl"] = 110,
 				}),
+				q(47033, {	-- Legion Threat: Suramar -- TODO: need to determine all classes this applies to. Confirmed mage 28.July.2020
+					["coord"] = { 44.7, 63.2, 646 },
+					["classes"] = { MAGE },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["sourceQuest"] = 44821,	-- In Dire Need
+					["isBreadcrumb"] = true,
+				}),
+				q(47035, {	-- Legion Threat: The Missing Mage -- TODO: need to determine all classes this applies to. Confirmed mage 28.July.2020
+					["coord"] = { 44.7, 63.2, 646 },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["sourceQuest"] = 44821,	-- In Dire Need
+					["isBreadcrumb"] = true,
+					["classes"] = {
+						HUNTER,		-- Beast Mastery
+						MAGE,		-- Fire
+						MONK,		-- Windwalker
+						PRIEST,		-- Discipline
+						WARLOCK,	-- Destruction
+					},
+				}),
+				q(47034, {	-- Legion Threat: The Necromancer -- TODO: need to determine all classes this applies to. Confirmed mage 28.July.2020
+					["coord"] = { 44.7, 63.2, 646 },
+					["classes"] = { MAGE },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["sourceQuest"] = 44821,	-- In Dire Need
+					["isBreadcrumb"] = true,
+				}),
 				q(46333, {	-- Livin' on the Ledge
 					["sourceQuests"] = { 46246 },	-- Strike Them Down
 					["provider"] = { "n", 118316 },	-- Illidari Enforcer
@@ -496,30 +523,6 @@ _.Zones =
 						PRIEST,		-- Discipline
 						WARLOCK,	-- Destruction
 					},
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(47033, {	-- Legion Threat: Suramar
-					["isBreadcrumb"] = true,
-					["altQuests"] = { 47034 },	-- Legion Threat: The Necromancer
-					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["classes"] = { MAGE },	-- Arcane
-				}),
-				q(47035, {	-- Legion Threat: The Missing Mage
-					["isBreadcrumb"] = true,
-					["altQuests"] = { 47031 },	-- Legion Threat: Highmountain
-					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["classes"] = {
-						HUNTER,		-- Beast Mastery
-						MONK,		-- Windwalker
-						PRIEST,		-- Discipline
-						WARLOCK,	-- Destruction
-					},
-				}),
-				q(47034, {	-- Legion Threat: The Necromancer
-					["isBreadcrumb"] = true,
-					["altQuests"] = { 47033 },	-- Legion Threat: Suramar
-					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["classes"] = { MAGE },	-- Arcane
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47027, {	-- Legion Threat: Val'sharah
