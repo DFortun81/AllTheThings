@@ -948,6 +948,7 @@ _.Zones =
 					["provider"] = { "n", 15395 },	-- Nafien
 					["coord"] = { 64, 10.4, 77 },
 					["isBreadcrumb"] = true,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(28370, {	-- Wisp-napping
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
