@@ -576,6 +576,7 @@ _.Zones =
 							["provider"] = { "n", 19467 },	-- Anchorite Karja
 							["coord"] = { 32.0, 64.2, 109 },
 							["isBreadcrumb"] = true,
+							["sourceQuests"] = { 10186 },
 						}),
 						q(10265, {	-- Consortium Crystal Collection
 							["provider"] = { "n", 19880 },	-- Nether-Stalker Khay'ji
