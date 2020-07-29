@@ -1368,6 +1368,7 @@ _.NeverImplemented =
 		q(44906),	-- Withered J'im bonus roll
 
 		--	Invasions
+		q(46795),	-- Azsuna - Triggered after completing the criteria for "A Conduit No More" and riding to Farondale
 		q(47065),	-- Highmountain Invasion / Fel Commander Erixtol Kill
 		q(47185),	-- Invasion Boss Weekly Bonus
 		q(46808),	-- Ship - Highmountain — part of a Highmountain invasion.  i refreshed after killing the NPC for "Holding Our Ground" and this quest popped
