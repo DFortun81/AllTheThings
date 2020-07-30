@@ -1823,7 +1823,7 @@ namespace ATT
                             }
                         }
                     }
-                    else if (mostSignificantID == "azeriteEssenceID")
+                    else if (mostSignificantID == "azeriteEssenceID" || mostSignificantID == "spellID")
                     {
                         // For Essences, also keep track of the ranks to allow more than one per list.
                         if (data2.TryGetValue("rank", out object fieldRef))
