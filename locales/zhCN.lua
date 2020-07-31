@@ -142,7 +142,7 @@ for key, value in pairs({
 		[-14] = DUNGEON_FLOOR_DIREMAUL2 .. " [西 - 精灵]", -- Capital Gardens [West - Elves] 中心花园
 		[-15] = "Common Vendor Items",
 		[-16] = "稀有", -- Rares
-		
+
 		[-40] = "绝版", -- Legacy
 		[-41] = "Cache of Madness",
 -- Armor Types
@@ -152,9 +152,9 @@ for key, value in pairs({
 		[-46] = GetItemSubClassInfo(4,4), -- Plate 板甲
 -- World Events
 		[-50] = "情人节", -- Love is in the Air
-		
+
 		[-53] = "仲夏火焰节", -- Midsummer Fire Festival
-		[-55] = "海盗日", -- Pirate's Day
+		[-55] = "海盗日", -- Pirates' Day
 		[-59] = "亡灵节", -- Day of the Dead
 		[-61] = "冬幕节", -- The Feast of Winter Veil
 		[-62] = "荆棘谷钓鱼大赛", -- Stranglethorn Fishing Extravaganza
@@ -177,7 +177,7 @@ for key, value in pairs({
 		[-131] = "辛特兰 "..GetSpellInfo(133137),
 		[-132] = "菲拉斯 "..GetSpellInfo(133137),
 		[-133] = "暮色森林 "..GetSpellInfo(78741),
-		
+
 --Transmog Sets
 		[-134] = "奥格瑞玛套装", -- Orgrimmar Set
 		[-135] = "暴风城套装", -- Stormwind Set
@@ -198,12 +198,12 @@ for key, value in pairs({
 		[-158] = "菲拉斯 "..GetSpellInfo(78741),
 		[-159] = "事件roll点", -- Event Roll (Daily Dreamway Event Roll)
 		[-168] = FACTION_OTHER .. QUESTS_LABEL,
-		
+
 		[-171] = "任务线", -- Quest Chains
 		[-175] = "垃圾场匠技", -- Junkyard Tinkering
-		
+
 		[-206] = "典范", -- Paragon
-		
+
 		[-211] = NEW .. CHARACTER, -- New Character 新建角色
 		[-212] = "宝箱", -- Treasure Chest
 		[-214] = "夜之子", -- Nightborne Home
@@ -211,7 +211,7 @@ for key, value in pairs({
 		[-218] = "鱼饵", -- Coastal (for Fishing)
 		[-224] = "伊利达雷", -- Illidari
 		[-236] = "联盟阵营战役", -- Alliance War Campaign
-		
+
 		[-242] = "Unrated",
 		[-243] = "Bounty",
 		[-244] = "黑铁矮人", -- Dark Iron Dwarf
@@ -224,22 +224,22 @@ for key, value in pairs({
 		[-254] = "传承护甲", -- Heritage Armor
 		[-255] = "狐人", -- Vulpera
 		[-256] = "机械侏儒", -- Mechagnome
-		
+
 		[-351] = "首领掉落", -- Boss Drop
 		[-356] = "进攻黑暗之门", -- Assault on the Dark Portal
 		[-359] = "酿酒厂", -- Brewery
 		[-362] = "晴日峰", -- Peak of Serenity
-		
+
 		[-366] = "武器系列",
-		
+
 		[-388] = "主门", -- Main Gate (Stratholme)
 		[-389] = "仆从入口", -- Service Entrance (Stratholme)
-		
+
 		[-488] = "战争宝箱", -- War Chest
 		[-489] = "周常PvP宝箱", -- Weekly PVP Chest
 		[-491] = "塔罗牌", -- Tarot Cards
 		[-492] = "幻象", -- Illusions
-		
+
 		[-518] = "库尔提拉斯和赞达拉", -- Kul Tiras and Zandalar
 		[-520] = "资料片前夕", -- Expansion Pre-Launch
 		[-521] = "燃烧的远征：Dark Portal Opens", -- 这些谁知道官翻？
@@ -253,7 +253,7 @@ for key, value in pairs({
 		[-532] = "风暴英雄推广活动", -- Heroes of the Storm Promotion
 		[-533] = "炉石传说推广活动", -- Hearthstone Promotion
 		[-534] = "典藏版", -- Collector's Edition
-		
+
 		[-536] = "守望先锋推广活动", -- Overwatch Promotion
 		[-537] = "星际争霸推广活动", -- Starcraft Promotion
 		[-538] = "暗黑破坏神20周年庆", -- Diablo 20th Anniversary Promotion
@@ -293,9 +293,9 @@ for key, value in pairs({
 		[-575] = "暗黑破坏神3：夺魂之镰", -- Diablo III: Reaper of Souls
 		[-576] = "星际争霸2：虚空之遗", -- StarCraft II: Legacy of the Void
 		[-577] = "魔兽世界电影", -- World of Warcraft Movie
-		
+
 		[-650] = "任务物品", -- Quest Items
-		
+
 -- PvP Set Names
 		[-659] = "候选者套装", -- Aspirant PvP Gear (WoD, BfA)
 		[-660] = "争斗者套装", -- Combatant PvP Gear (WoD, Legion)
@@ -325,10 +325,10 @@ for key, value in pairs({
 -- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214)).."第12赛季", -- Malevolent Gladiator: Season 12
 		[-676] = select(2, GetAchievementInfo(8791)).."第13赛季", -- Tyrannical Gladiator: Season 13
-		
+
 		[-806] = "钟示贤德腰带", -- Waist of Time
-		
--- Mechagon		
+
+-- Mechagon
 		[-850] = "机械化的宝箱", -- Mechanized Chest
 		[-851] = "铁潮宝箱", -- Irontide Chest
 		[-1001] = "The Black Vault",
@@ -365,9 +365,9 @@ for key, value in pairs({
 		[-3187] = "副本套装", -- Instance Item Sets
 		[-3188] = "Dungeon, Tier and Class Sets",
 		[-3189] = "Fel-Touched Weapons",
-		
+
 		[-3199] = "Midsummer Reveler Set",
-		
+
 -- Dungeon 1 Sets [Tier 0]
 		[-3200] = "虔诚", -- Vestments of the Devout (Priest)
 		[-3201] = "博学者", -- Magister's Regalia (Mage)
@@ -496,7 +496,7 @@ for key, value in pairs({
 		[-3319] = "Swarmfury",
 		[-3340] = "Dark Animator",
 		[-3341] = "Duskhaven",
-		
+
 		[-3343] = "Choking Winter",
 		[-3342] = "Fallen Runelord",
 		[-3320] = "Spiritbough",
@@ -539,20 +539,20 @@ for key, value in pairs({
 		[-5203] = "荣誉奖励",
 		[-5204] = "挑战外观",
 		[-5205] = "隐藏外观",
-		
+
 		[-5349] = MAC_OPTIONS_MISC.." "..LOOT_JOURNAL_ITEM_SETS, 					-- Miscellaneous Item Sets
 		[-5350] = "职业试用套装",                                                    -- Class Trial
 		[-5351] = GAMEMENU_BOOST_BUTTON,											-- Character Boost
-		
+
 		[-5352] = "Tier套装", -- 想不到更好的翻译了
-		
+
 		[-7776] = "Winter Revelers",												-- Winter Revelers (for Winter Veil)
 		[-7777] = "Timed Event",
 		[-7778] = "First Chest",
 		[-7779] = "Second Chest",
 		[-7780] = "Third Chest",
 		[-7781] = "Final Chest",
-		
+
 		[-10066] = BATTLE_PET_BREED_QUALITY6,			-- "Legendary";
 		[-10067] = ITEM_QUALITY6_DESC, 					-- Artifact
 		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
@@ -759,7 +759,7 @@ for key, value in pairs({
 		[279689] = "Lost Nazmani Treasure",
 		[279750] = "干草覆盖的宝箱", -- Hay Covered Chest
 		[280504] = "Swallowed Naga Chest",
-		[280522] = "Partially-Digested Treasure",		
+		[280522] = "Partially-Digested Treasure",
 		[280619] = "古旧的缚铁宝箱", -- Old Ironbound Chest
 		[280727] = "Charred Note",
 		[280751] = "Small Treasure Chest",

@@ -1,7 +1,8 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays =  
+
+_.Holidays =
 {
 	holiday(235465, {	-- Pilgrim's Bounty
 		n(-4, {	-- Achievements

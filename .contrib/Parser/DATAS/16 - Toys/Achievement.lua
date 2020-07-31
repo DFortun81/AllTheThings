@@ -1,9 +1,10 @@
 ---------------------------------------------
---         T O Y S       M O D U L E       --
+--        T O Y S       M O D U L E        --
 ---------------------------------------------
+
 _.Toys =
 {
-	n(-4,  { 	-- Achievement
+	n(ACHIEVEMENTS,  {
 		i(166247),		-- Citizens Brigade Whistle
 		i(134032),		-- Elite Pennant
 		i(139773),		-- Emerald Winds

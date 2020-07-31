@@ -581,6 +581,7 @@ _.NeverImplemented =
 		q(31620),	-- Stormstout Brewery Challenge Mode - Consolation (Nth)
 		q(31623),	-- Stormstout Brewery Challenge Mode - Gold Addition (Nth)
 		q(31622),	-- Stormstout Brewery Challenge Mode - Silver Addition (Nth)
+		q(35323),	-- Stormstout Brewery Reward Quest
 		q(35324),	-- Stormstout Brewery Reward Quest
 		q(35325),	-- Temple of the Jade Serpent Reward Quest (LFG)
 		q(35327),	-- Temple of the Jade Serpent Reward Quest

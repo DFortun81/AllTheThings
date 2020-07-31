@@ -1,7 +1,8 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = bubbleDown({["u"] = 28}, 
+
+_.Holidays = bubbleDown({["u"] = 28},
 {
 	holiday(235465, {	-- Pilgrim's Bounty
 		n(QUESTS, {
@@ -94,15 +95,15 @@ _.Holidays = bubbleDown({["u"] = 28},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27, },	-- Dun Morogh
 					["g"] = {
-						un(28, i(46723)),	-- Pilgrim's Hat
-						un(28, i(46800)),	-- Pilgrim's Attire
-						un(28, i(44785)),	-- Pilgrim's Dress
-						un(28, i(46824)),	-- Pilgrim's Robe
-						un(28, i(44788)),	-- Pilgrim's Boots
+						i(46723),	-- Pilgrim's Hat
+						i(46800),	-- Pilgrim's Attire
+						i(44785),	-- Pilgrim's Dress
+						i(46824),	-- Pilgrim's Robe
+						i(44788),	-- Pilgrim's Boots
 						i(116404, {	-- Pilgrim's Bounty
-							un(28, i(116401)),	-- Fine Pilgrim's Hat
-							un(28, i(116403)),	-- Frightened Bush Chicken
-							un(28, i(116400)),	-- Silver-Plated Turkey Shooter
+							i(116401),	-- Fine Pilgrim's Hat
+							i(116403),	-- Frightened Bush Chicken
+							i(116400),	-- Silver-Plated Turkey Shooter
 						}),
 					},
 				}),
@@ -112,15 +113,15 @@ _.Holidays = bubbleDown({["u"] = 28},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27, },	-- Dun Morogh
 					["g"] = {
-						un(28, i(46723)),	-- Pilgrim's Hat
-						un(28, i(46800)),	-- Pilgrim's Attire
-						un(28, i(44785)),	-- Pilgrim's Dress
-						un(28, i(46824)),	-- Pilgrim's Robe
-						un(28, i(44788)),	-- Pilgrim's Boots
+						i(46723),	-- Pilgrim's Hat
+						i(46800),	-- Pilgrim's Attire
+						i(44785),	-- Pilgrim's Dress
+						i(46824),	-- Pilgrim's Robe
+						i(44788),	-- Pilgrim's Boots
 						i(116404, {	-- Pilgrim's Bounty
-							un(28, i(116401)),	-- Fine Pilgrim's Hat
-							un(28, i(116403)),	-- Frightened Bush Chicken
-							un(28, i(116400)),	-- Silver-Plated Turkey Shooter
+							i(116401),	-- Fine Pilgrim's Hat
+							i(116403),	-- Frightened Bush Chicken
+							i(116400),	-- Silver-Plated Turkey Shooter
 						}),
 					},
 				}),
@@ -130,15 +131,15 @@ _.Holidays = bubbleDown({["u"] = 28},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 37, },	-- Elwynn Forest
 					["g"] = {
-						un(28, i(46723)),	-- Pilgrim's Hat
-						un(28, i(46800)),	-- Pilgrim's Attire
-						un(28, i(44785)),	-- Pilgrim's Dress
-						un(28, i(46824)),	-- Pilgrim's Robe
-						un(28, i(44788)),	-- Pilgrim's Boots
+						i(46723),	-- Pilgrim's Hat
+						i(46800),	-- Pilgrim's Attire
+						i(44785),	-- Pilgrim's Dress
+						i(46824),	-- Pilgrim's Robe
+						i(44788),	-- Pilgrim's Boots
 						i(116404, {	-- Pilgrim's Bounty
-							un(28, i(116401)),	-- Fine Pilgrim's Hat
-							un(28, i(116403)),	-- Frightened Bush Chicken
-							un(28, i(116400)),	-- Silver-Plated Turkey Shooter
+							i(116401),	-- Fine Pilgrim's Hat
+							i(116403),	-- Frightened Bush Chicken
+							i(116400),	-- Silver-Plated Turkey Shooter
 						}),
 					},
 				}),
@@ -149,15 +150,15 @@ _.Holidays = bubbleDown({["u"] = 28},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 89 },	-- Darnassus
 					["g"] = {
-						un(28, i(46723)),	-- Pilgrim's Hat
-						un(28, i(46800)),	-- Pilgrim's Attire
-						un(28, i(44785)),	-- Pilgrim's Dress
-						un(28, i(46824)),	-- Pilgrim's Robe
-						un(28, i(44788)),	-- Pilgrim's Boots
+						i(46723),	-- Pilgrim's Hat
+						i(46800),	-- Pilgrim's Attire
+						i(44785),	-- Pilgrim's Dress
+						i(46824),	-- Pilgrim's Robe
+						i(44788),	-- Pilgrim's Boots
 						i(116404, {	-- Pilgrim's Bounty
-							un(28, i(116401)),	-- Fine Pilgrim's Hat
-							un(28, i(116403)),	-- Frightened Bush Chicken
-							un(28, i(116400)),	-- Silver-Plated Turkey Shooter
+							i(116401),	-- Fine Pilgrim's Hat
+							i(116403),	-- Frightened Bush Chicken
+							i(116400),	-- Silver-Plated Turkey Shooter
 						}),
 					},
 				}),
@@ -167,15 +168,15 @@ _.Holidays = bubbleDown({["u"] = 28},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 37 },	-- Elwynn Forest
 					["g"] = {
-						un(28, i(46723)),	-- Pilgrim's Hat
-						un(28, i(46800)),	-- Pilgrim's Attire
-						un(28, i(44785)),	-- Pilgrim's Dress
-						un(28, i(46824)),	-- Pilgrim's Robe
-						un(28, i(44788)),	-- Pilgrim's Boots
+						i(46723),	-- Pilgrim's Hat
+						i(46800),	-- Pilgrim's Attire
+						i(44785),	-- Pilgrim's Dress
+						i(46824),	-- Pilgrim's Robe
+						i(44788),	-- Pilgrim's Boots
 						i(116404, {	-- Pilgrim's Bounty
-							un(28, i(116401)),	-- Fine Pilgrim's Hat
-							un(28, i(116403)),	-- Frightened Bush Chicken
-							un(28, i(116400)),	-- Silver-Plated Turkey Shooter
+							i(116401),	-- Fine Pilgrim's Hat
+							i(116403),	-- Frightened Bush Chicken
+							i(116400),	-- Silver-Plated Turkey Shooter
 						}),
 					},
 				}),
@@ -265,15 +266,15 @@ _.Holidays = bubbleDown({["u"] = 28},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 90, },	-- Undercity
 					["g"] = {
-						un(28, i(46723)),	-- Pilgrim's Hat
-						un(28, i(46800)),	-- Pilgrim's Attire
-						un(28, i(44785)),	-- Pilgrim's Dress
-						un(28, i(46824)),	-- Pilgrim's Robe
-						un(28, i(44788)),	-- Pilgrim's Boots
+						i(46723),	-- Pilgrim's Hat
+						i(46800),	-- Pilgrim's Attire
+						i(44785),	-- Pilgrim's Dress
+						i(46824),	-- Pilgrim's Robe
+						i(44788),	-- Pilgrim's Boots
 						i(116404, {	-- Pilgrim's Bounty
-							un(28, i(116401)),	-- Fine Pilgrim's Hat
-							un(28, i(116403)),	-- Frightened Bush Chicken
-							un(28, i(116400)),	-- Silver-Plated Turkey Shooter
+							i(116401),	-- Fine Pilgrim's Hat
+							i(116403),	-- Frightened Bush Chicken
+							i(116400),	-- Silver-Plated Turkey Shooter
 						}),
 					},
 				}),
@@ -283,15 +284,15 @@ _.Holidays = bubbleDown({["u"] = 28},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 90, },	-- Undercity
 					["g"] = {
-						un(28, i(46723)),	-- Pilgrim's Hat
-						un(28, i(46800)),	-- Pilgrim's Attire
-						un(28, i(44785)),	-- Pilgrim's Dress
-						un(28, i(46824)),	-- Pilgrim's Robe
-						un(28, i(44788)),	-- Pilgrim's Boots
+						i(46723),	-- Pilgrim's Hat
+						i(46800),	-- Pilgrim's Attire
+						i(44785),	-- Pilgrim's Dress
+						i(46824),	-- Pilgrim's Robe
+						i(44788),	-- Pilgrim's Boots
 						i(116404, {	-- Pilgrim's Bounty
-							un(28, i(116401)),	-- Fine Pilgrim's Hat
-							un(28, i(116403)),	-- Frightened Bush Chicken
-							un(28, i(116400)),	-- Silver-Plated Turkey Shooter
+							i(116401),	-- Fine Pilgrim's Hat
+							i(116403),	-- Frightened Bush Chicken
+							i(116400),	-- Silver-Plated Turkey Shooter
 						}),
 					},
 				}),
@@ -301,15 +302,15 @@ _.Holidays = bubbleDown({["u"] = 28},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 88 },	-- Thunder Bluff
 					["g"] = {
-						un(28, i(46723)),	-- Pilgrim's Hat
-						un(28, i(46800)),	-- Pilgrim's Attire
-						un(28, i(44785)),	-- Pilgrim's Dress
-						un(28, i(46824)),	-- Pilgrim's Robe
-						un(28, i(44788)),	-- Pilgrim's Boots
+						i(46723),	-- Pilgrim's Hat
+						i(46800),	-- Pilgrim's Attire
+						i(44785),	-- Pilgrim's Dress
+						i(46824),	-- Pilgrim's Robe
+						i(44788),	-- Pilgrim's Boots
 						i(116404, {	-- Pilgrim's Bounty
-							un(28, i(116401)),	-- Fine Pilgrim's Hat
-							un(28, i(116403)),	-- Frightened Bush Chicken
-							un(28, i(116400)),	-- Silver-Plated Turkey Shooter
+							i(116401),	-- Fine Pilgrim's Hat
+							i(116403),	-- Frightened Bush Chicken
+							i(116400),	-- Silver-Plated Turkey Shooter
 						}),
 					},
 				}),
@@ -319,15 +320,15 @@ _.Holidays = bubbleDown({["u"] = 28},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1, },	-- Durotar
 					["g"] = {
-						un(28, i(46723)),	-- Pilgrim's Hat
-						un(28, i(46800)),	-- Pilgrim's Attire
-						un(28, i(44785)),	-- Pilgrim's Dress
-						un(28, i(46824)),	-- Pilgrim's Robe
-						un(28, i(44788)),	-- Pilgrim's Boots
+						i(46723),	-- Pilgrim's Hat
+						i(46800),	-- Pilgrim's Attire
+						i(44785),	-- Pilgrim's Dress
+						i(46824),	-- Pilgrim's Robe
+						i(44788),	-- Pilgrim's Boots
 						i(116404, {	-- Pilgrim's Bounty
-							un(28, i(116401)),	-- Fine Pilgrim's Hat
-							un(28, i(116403)),	-- Frightened Bush Chicken
-							un(28, i(116400)),	-- Silver-Plated Turkey Shooter
+							i(116401),	-- Fine Pilgrim's Hat
+							i(116403),	-- Frightened Bush Chicken
+							i(116400),	-- Silver-Plated Turkey Shooter
 						}),
 					},
 				}),
@@ -337,15 +338,15 @@ _.Holidays = bubbleDown({["u"] = 28},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1, },	-- Durotar
 					["g"] = {
-						un(28, i(46723)),	-- Pilgrim's Hat
-						un(28, i(46800)),	-- Pilgrim's Attire
-						un(28, i(44785)),	-- Pilgrim's Dress
-						un(28, i(46824)),	-- Pilgrim's Robe
-						un(28, i(44788)),	-- Pilgrim's Boots
+						i(46723),	-- Pilgrim's Hat
+						i(46800),	-- Pilgrim's Attire
+						i(44785),	-- Pilgrim's Dress
+						i(46824),	-- Pilgrim's Robe
+						i(44788),	-- Pilgrim's Boots
 						i(116404, {	-- Pilgrim's Bounty
-							un(28, i(116401)),	-- Fine Pilgrim's Hat
-							un(28, i(116403)),	-- Frightened Bush Chicken
-							un(28, i(116400)),	-- Silver-Plated Turkey Shooter
+							i(116401),	-- Fine Pilgrim's Hat
+							i(116403),	-- Frightened Bush Chicken
+							i(116400),	-- Silver-Plated Turkey Shooter
 						}),
 					},
 				}),

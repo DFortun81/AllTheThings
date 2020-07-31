@@ -1,6 +1,7 @@
-	---------------------------------------------
---         T O Y S       M O D U L E       --
 ---------------------------------------------
+--        T O Y S       M O D U L E        --
+---------------------------------------------
+
 _.Toys =
 {
 	n(-3,  {	-- World Event
@@ -231,7 +232,7 @@ _.Toys =
 				un(28, i(116400)), 	-- Silver-Plated Turkey Shooter
 			},
 		}),
-		n(-55, {    -- Pirate's Day
+		n(-55, {    -- Pirates' Day
 			["achievementID"] = 3457,	-- The Captain's Booty
 			["u"] = 23,
 			["g"] = {
