@@ -289,6 +289,7 @@ _.ExpansionFeatures =
 						["maps"] = {
 							719,	-- Mardum, the Shattered Abyss
 							879,	-- Mardum, the Shattered Abyss (on the Fel Hammer)
+							880,	-- Mardum, the Shattered Abyss (on the Fel Hammer)
 						},
 						["lvl"] = 110,
 					}),
