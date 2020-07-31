@@ -93,11 +93,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(50987, {	-- Work Order: Monelite Ore
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(50986, {	-- Work Order: Sea Stalk
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -807,6 +802,12 @@ _.Zones =
 						["g"] = {
 							i(162331), 	-- Schematic: F.R.I.E.D. [Rank 3]
 						},
+					}),
+					q(50987, {	-- Work Order: Monelite Ore
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = MINING,
 					}),
 					q(52334, {	-- Work Order: Potion of Concealment
 						["lvl"] = 120,
