@@ -8,8 +8,7 @@ _.GroupFinder =
 	--	["description"] = "",	-- TODO: Add a description here about how to get rewards when we figure it out!
 		["g"] = {
 			i(171305, {	-- Salvaged Cache of Goods
-				cl(6,  {	-- Death Knight
-				--	["classes"] = { 6 },	-- Death Knight
+				cl(DEATHKNIGHT,  {
 					["g"] = {
 						i(173566),	-- Bloodcaked Runeblade
 						i(173567),	-- Frost-Etched Runeblade
@@ -24,7 +23,7 @@ _.GroupFinder =
 						i(173539),	-- Unholy Runeblade
 					},
 				}),
-				cl(12, {	-- Demon Hunter
+				cl(DEMONHUNTER, {
 					["g"] = {	-- Confirmed obtaining all this stuff on horde DH.  If anything it has to do with spec.
 						i(173688),	-- Illidari Belt
 						i(173683),	-- Illidari Blindfold
@@ -45,8 +44,7 @@ _.GroupFinder =
 						i(173672),	-- Illidari Warglaive
 					},
 				}),
-				cl(11, {	-- Druid
-				--	["classes"] = { 11 },	-- Druid
+				cl(DRUID, {
 					["g"] = {
 						i(173568),	-- Guardian's Oaken Spear
 						i(173541),	-- Pike of Feral Rage
@@ -62,8 +60,7 @@ _.GroupFinder =
 						i(173540),	-- Staff of Astral Alignment
 					},
 				}),
-				cl(3,  {	-- Hunter
-				--	["classes"] = { 3 },	-- Hunter
+				cl(HUNTER,  {
 					["g"] = {
 						i(173569),	-- Marksman's Recurve Bow
 						i(173543),	-- Packmaster's Rifle
@@ -80,8 +77,7 @@ _.GroupFinder =
 						i(173594),	-- Trailseeker Vest
 					},
 				}),
-				cl(8,  {	-- Mage
-				--	["classes"] = { 8 },	-- Mage
+				cl(MAGE,  {
 					["g"] = {
 						i(173544),	-- Frostcore Staff
 						i(173608),	-- Mountainsage Cord
@@ -96,8 +92,7 @@ _.GroupFinder =
 						i(173545),	-- Staff of Inner Flame
 					},
 				}),
-				cl(10, {	-- Monk
-				--	["classes"] = { 10 },	-- Monk
+				cl(MONK, {
 					["g"] = {
 						i(173546),	-- Brewmasher's Staff
 						i(173616),	-- Mistdancer Cord
@@ -114,8 +109,7 @@ _.GroupFinder =
 						i(173548),	-- Sword of Singing Wind
 					},
 				}),
-				cl(2,  {	-- Paladin
-				--	["classes"] = { 2 },	-- Paladin
+				cl(PALADIN,  {
 					["g"] = {
 						i(173574),	-- Defender's Bulwark
 						i(173550),	-- Defender's Longsword
@@ -132,8 +126,7 @@ _.GroupFinder =
 						i(173551),	-- Warhammer of Retribution
 					},
 				}),
-				cl(5,  {	-- Priest
-				--	["classes"] = { 5 },	-- Priest
+				cl(PRIEST,  {
 					["g"] = {
 						i(173552),	-- Staff of Dual Convictions
 						i(173553),	-- Staff of Radiance
@@ -148,11 +141,10 @@ _.GroupFinder =
 						i(173632),	-- Communal Sash
 					},
 				}),
-				cl(4,  {	-- Rogue
-				--	["classes"] = { 4 },	-- Rogue
+				cl(ROGUE,  {
 					["g"] = {
 						i(173556),	-- Assassin's Serrated Dagger
-						un(NEVER_IMPLEMENTED, i(173555)),	-- Duskfall Daggers	-- Tagging unavailable until someone confirms. Currently you only get the Assassin's Dagger
+						i(173555),	-- Duskfall Daggers
 						i(173557),	-- Outlaw's Cutlass
 						i(173641),	-- Lightdrinker Bindings
 						i(173635),	-- Lightdrinker Boots
@@ -164,8 +156,7 @@ _.GroupFinder =
 						i(173640),	-- Lightdrinker Waistband
 					},
 				}),
-				cl(7,  {	-- Shaman
-				--	["classes"] = { 7 },	-- Shaman
+				cl(SHAMAN,  {
 					["g"] = {
 						i(173576),	-- Earthmender's Shield
 						i(173560),	-- Earthmender's Talons
@@ -182,8 +173,7 @@ _.GroupFinder =
 						i(173559),	-- Talons of Totemic Might
 					},
 				}),
-				cl(9,  {	-- Warlock
-				--	["classes"] = { 9 },	-- Warlock
+				cl(WARLOCK,  {
 					["g"] = {
 						i(173562),	-- Demonologist's Staff
 						i(173561),	-- Destructive Spellstaff
@@ -198,8 +188,7 @@ _.GroupFinder =
 						i(173572),	-- Staff of Swelling Agony
 					},
 				}),
-				cl(1,  {	-- Warrior
-				--	["classes"] = { 1 },	-- Warrior
+				cl(WARRIOR,  {
 					["g"] = {
 						i(173563),	-- Armsmaster's Greataxe
 						i(173564),	-- Greataxe of Fury
