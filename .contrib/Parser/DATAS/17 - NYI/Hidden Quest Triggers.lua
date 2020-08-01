@@ -1267,6 +1267,9 @@ _.NeverImplemented =
 		q(44062),	-- Warrior Order Hall - Suramar Teleport learned in Meredil
 		q(44061),	-- Warrior Order Hall - Val'sharah Teleport learned in Loriathil
 
+		--	Artifact Appearances
+		q(45130),	-- Hidden Appearance unlocked
+
 		--	Professions
 		--	Archaeology
 		q(41867),	-- FLAG - Brann Week 1

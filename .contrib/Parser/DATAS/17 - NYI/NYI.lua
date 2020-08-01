@@ -3731,7 +3731,7 @@ _.NeverImplemented =
 		}),
 		n(-387,	{	-- Relics
 			un(NEVER_IMPLEMENTED, i(132252)),	-- Owen Test Relic
-			un(NEVER_IMPLEMENTED, i(130162)),   	-- Val-Sharah Artifact Gem #1
+			un(NEVER_IMPLEMENTED, i(130162)),	-- Val-Sharah Artifact Gem #1
 			un(NEVER_IMPLEMENTED, i(140070)),	-- Deep cave ice crystal (ptr only)
 			un(NEVER_IMPLEMENTED, i(136988)),	-- qa combat test relic holy 1
 			un(NEVER_IMPLEMENTED, i(136989)),	-- qa combat test relic arcane 1
