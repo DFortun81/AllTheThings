@@ -2587,7 +2587,6 @@ _.NeverImplemented =
 
 		-- Horrific Visions
 		-- Orgrimmar
-		--q(57841),	-- first horrific vision cleared as horde(moved to metadata)
 		q(58581),	-- first horrific vision cleared as horde
 		q(57039),	-- Valley of Spirits cleansed (Orgrimmar)
 		q(58896),	-- Valley of Spirits cleansed (Orgrimmar) - probably controls activation of the quick-navigation back to the start?
@@ -2608,6 +2607,8 @@ _.NeverImplemented =
 		q(57027),	-- triggers in the chest room at the end of the Orgrimmar scenario. Doesn't matter if you defeat Thrall or not
 		q(59044),	-- completed all objectives
 		q(58966),	-- triggered after completing all of zek'han's area but before killing the boss. Also triggers in Stormwind in valeria's wing
+		q(58963),	-- triggered while fighting Thrall after two corrupted areas/triggered before boss in The Drag
+		q(58973),	-- triggered after fighting Rexxar
 		-- Stormwind
 		q(58968),	-- 3rd wing clear
 		q(58965),	-- triggered when going to Dwarven District (during the fight with 3 gnomes)
@@ -2633,9 +2634,8 @@ _.NeverImplemented =
 		q(58971),	-- killing Mail Muncher
 		--[[
 		q(57845)	-- probably triggers after clearing two corrupted areas + boss
-		q(58963)	-- got it while fighting Thrall after two corrupted areas
 		58840 - looted the chest in front of zekhan. Torn Page of Compednium, Vol.II and Sparks of Unwavering Strength dropped
-		57841, 58581 -- both triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
+		58581 -- triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
 		Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
 		]]--
 
