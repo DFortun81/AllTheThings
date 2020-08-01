@@ -1080,6 +1080,7 @@ _.NeverImplemented =
 		q(40302),	-- FLAG - Prospecting 01
 		q(40303),	-- FLAG - Prospecting 02
 		q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
+		q(44295),	-- Tracking Quest - W2 - Spoke to Khadgar
 		q(44297),	-- Tracking Quest - W2 - Jaina Gone
 		q(44659),	-- Dalaran - I Skipped The Intro Tracking Quest
 		q(48984),	-- Antoran Wastes - triggered when combining the Smashed Portal Generator and other parts to make Vishak's Portal Generator
@@ -1450,12 +1451,18 @@ _.NeverImplemented =
 		q(48672),	-- Lockout Tracking - Normal - Ice — val first completion?
 
 		--	Rares
+		q(43961),	-- Azsuna - WQ rare: Bestrix
+		q(44882),	-- Azsuna - WQ rare: Bloodgazer Matriarch
 		q(45489),	-- Azsuna - WQ rare: Deepclaw
 		q(45499),	-- Azsuna - WQ rare: Fjordun
+		q(44035),	-- Azsuna - WQ rare: Torrentius
 		q(45513),	-- Highmountain - WQ rare: Defilia
-		q(45511),	-- Highmountain - WQ rare: Olokk the Shipbreaker
 		q(45512),	-- Highmountain - WQ rare: Mawat'aki
 		q(48381),	-- Highmountain - WQ rare: Obsidian Deathwarder
+		q(45511),	-- Highmountain - WQ rare: Olokk the Shipbreaker
+		q(44039),	-- Highmountain - WQ rare: Sea King Tidross
+		q(44879),	-- Highmountain - WQ rare: Snowfeather Matriarch
+		q(44880),	-- Stormheim - WQ rare: Direbeak Matriarch
 		q(45478),	-- Suramar - WQ rare: Achronos
 		q(45504),	-- Suramar - WQ rare: Alteria
 		q(45475),	-- Suramar - WQ rare: Auditor Esiel
