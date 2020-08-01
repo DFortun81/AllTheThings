@@ -281,6 +281,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(137931),	-- Recipe: Gravenscale Hauberk (Rank 3)
 							i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 							i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+							i(137694),	-- Schematic: Reaves Module: Repair Mode
 							i(136716),	-- Caged Horror
 							i(136770),	-- Drape of the Raven Lord
 							i(134370),	-- Felbat Leather Leggings

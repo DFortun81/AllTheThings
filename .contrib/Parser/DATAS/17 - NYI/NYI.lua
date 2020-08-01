@@ -3073,11 +3073,6 @@ _.NeverImplemented =
 				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
 				["u"] = NEVER_IMPLEMENTED,
 			},
-			{	-- Schematic: Reaves Module: Repair Mode
-				["itemID"] = 137694,
-				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
-				["u"] = NEVER_IMPLEMENTED,
-			},
 			{	-- Schematic: Rechargeable Reaves Battery
 				["itemID"] = 144343,
 				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
