@@ -234,6 +234,9 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41040 },	-- Halls of Valor: The Brewmaster
 						["maps"] = { 704 }	-- Halls of Valor, Stormheim
 					}),
+					q(43881, {	-- Hitting the Books
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(46320, {	-- Hope For a Cure
 						["classes"] = { MONK },
 						["provider"] = { "n", 117305 },	-- Brewer Almai

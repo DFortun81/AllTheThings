@@ -325,6 +325,9 @@ _.ExpansionFeatures =
 					q(43402, {	-- High Priest of Netherlight
 						i(139759),	-- Chest
 					}),
+					q(43884, {	-- Hitting the Books
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(46140, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
 						["classes"] = { PRIEST },

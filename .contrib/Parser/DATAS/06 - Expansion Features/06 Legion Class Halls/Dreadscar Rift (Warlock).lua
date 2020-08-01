@@ -110,6 +110,9 @@ _.ExpansionFeatures =
 					q(46150, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
 					}),
+					q(43887, {	-- Hitting the Books
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(42603, {	-- Information at Any Cost
 						["sourceQuests"] = {
 							41750,	-- Champion: Calydus

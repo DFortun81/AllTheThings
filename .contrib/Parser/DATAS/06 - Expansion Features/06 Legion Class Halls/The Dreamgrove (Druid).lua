@@ -442,6 +442,9 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 43991 },	-- The Protectors
 						["maps"] = { 715 },	-- The Dreamway
 					}),
+					q(43879, {	-- Hitting the Books
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(42036, {	-- Idol of the Wilds
 						["classes"] = { DRUID },
 						["lvl"] = 103,
