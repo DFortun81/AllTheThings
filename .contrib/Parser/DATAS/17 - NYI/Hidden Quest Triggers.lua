@@ -536,6 +536,7 @@ _.NeverImplemented =
 		q(32666),	-- Warlock Green Fire Questline - Reached Kanrethad
 
 		--	DUNGEONS
+		q(35315),	-- Gate of the Setting Sun Reward Quest
 		q(35316),	-- Gate of the Setting Sun Reward Quest
 		q(31631),	-- Gate of the Setting Sun Challenge Mode - Bronze Addition (Nth)
 		q(31624),	-- Gate of the Setting Sun Challenge Mode - Consolation (Nth)
