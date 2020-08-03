@@ -104,6 +104,9 @@ _.Zones =
 			q(28510, {	-- Warchief's Command: Feralas!
 				["isBreadcrumb"] = true,
 			}),
+			q(49545, {	-- Warchief's Command: Frostfire Ridge!
+				["isBreadcrumb"] = true,
+			}),
 			q(39206, {	-- Warchief's Command: Grizzly Hills!
 				["isBreadcrumb"] = true,
 			}),

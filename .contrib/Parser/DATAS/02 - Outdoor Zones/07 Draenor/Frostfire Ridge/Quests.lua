@@ -1,6 +1,7 @@
--------------------------------------------------
+---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -41,7 +42,10 @@ _.Zones =
 					["provider"] = { "n", 76411 },	-- Farseer Drek'Thar
 					["coord"] = { 40.7, 67.0, 525 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 33868,	-- The Home of the Frostwolves
+					["sourceQuests"] = {
+						33868,	-- The Home of the Frostwolves
+						49545,	-- Warchief's Command: Frostfire Ridge!
+					},
 				}),
 				q(34280, {	-- All is Revealed
 					["provider"] = { "n", 72874 },	-- Archmage Khadgar

@@ -655,6 +655,7 @@ _.NeverImplemented =
 		q(36426),	-- Dueling Orbs,	-- triggered when completing "Mysterious Ring" (34463)
 		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
 		q(36461),	-- Locating the Lapidarist - NYI version of the quest. seems to be a duplicate
+		q(49563),	-- triggered with "Warchief's Command: Frostfire Ridge!"
 		q(34453),	-- Frostfire Ridge - Tracking Event: Gazlowe Arrived
 		q(34715),	-- Frostfire Ridge - Tracking Flag: Shamanstone Summons - appoach the frostwolf shaman stone in Wor'gol while on "Honor Has Its Rewards" to start the dialog
 		q(33847),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out),	-- triggered going into Chillfang's cave immediately upon getting to Draenor
