@@ -10,7 +10,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["coord"] = { 19.2, 54.2, 241 },
 		["g"] = {
 			d(1,  {	-- Normal
-				n(QUESTS, { 				
+				n(QUESTS, {
 					q(28854, {	-- Closing A Dark Chapter
 						i(66933),	-- Breastplate of the Witness
 						i(66935),	-- Eradicator's Bracers
@@ -21,6 +21,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(66937),	-- Sandals of the Courier
 						i(66938),	-- Tooranu's Spaulders
 					}),
+					q(28852),	-- Soften them Up
 				}),
 				n(ZONEDROPS, {
 					["crs"] = {
@@ -52,15 +53,15 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 					["groups"] = {
 						i(56220),	-- Abandoned Dark Iron Ring
-						i(56218),	-- Curse-Tainted Leggings		
+						i(56218),	-- Curse-Tainted Leggings
 						i(56219),	-- Shroud of Dark Memories
 					},
-				}),			
+				}),
 				cr(39625, e(131, {	-- General Umbriss
 					i(56441),	-- Modgug's Blade
 					i(157612), 	-- Dragonkin Ward (Added 7.3.5)
 					i(56443),	-- Wildhammer Riding Helm
-					i(56442),	-- Cursed Skardyn Vest 
+					i(56442),	-- Cursed Skardyn Vest
 					i(157596), 	-- Glimmerthread Pantaloons (Added 7.3.5)
 					i(56444),	-- Umbriss Band
 					i(56440),	-- Skardyn's Grace
@@ -74,7 +75,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(157613), 	-- Geomancy Slicer (Added 7.3.5)
 					i(56446),	-- Wand of Untainted Power
 					i(157597), 	-- Troggstitched Drape (Added 7.3.5)
-					i (56447),	-- Belt of the Forgemaster
+					i(56447),	-- Belt of the Forgemaster
 					i(56448),	-- Dark Iron Chain Boots
 					i(56445),	-- Ring of Dun Algaz
 					i(56449),	-- Throngus's Finger
@@ -96,7 +97,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(REMOVED_FROM_GAME, i(56124)),	-- Earthshaper Pauldrons [Replaced with 56452]
 					un(REMOVED_FROM_GAME, i(56126)),	-- Azureborne Cloak [Replaced with 56450]
 					un(REMOVED_FROM_GAME, i(56125)),	-- Crimsonborne Bracers [Replaced with 56453]
-					un(REMOVED_FROM_GAME, i(56123)),	-- Red Scale Boots [Replaced with 56451]		
+					un(REMOVED_FROM_GAME, i(56123)),	-- Red Scale Boots [Replaced with 56451]
 				})),
 				cr(40484, e(134, {	-- Erudax
 					ach(4840),	-- Grim Batol
@@ -105,7 +106,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56459),	-- Mace of Transformed Bone
 					i(56460),	-- Crown of Enfeebled Bodies
 					i(56455),	-- Vest of Misshapen Hides
-					i(56464),	-- Bracers of Umbral Mending 
+					i(56464),	-- Bracers of Umbral Mending
 					i(157615), 	-- Flamescale Chain Leggings (Added 7.3.5)
 					i(56457),	-- Circle of Bone
 					i(56463),	-- Corrupted Egg Shell
@@ -132,7 +133,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(56441),	-- Modgug's Blade
 						i(157612), 	-- Dragonkin Ward (Added 7.3.5)
 						i(56443),	-- Wildhammer Riding Helm
-						i(56442),	-- Cursed Skardyn Vest 
+						i(56442),	-- Cursed Skardyn Vest
 						i(157596), 	-- Glimmerthread Pantaloons (Added 7.3.5)
 						i(56444),	-- Umbriss Band
 						i(56440),	-- Skardyn's Grace
@@ -163,7 +164,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(56459),	-- Mace of Transformed Bone
 						i(56460),	-- Crown of Enfeebled Bodies
 						i(56455),	-- Vest of Misshapen Hides
-						i(56464),	-- Bracers of Umbral Mending 
+						i(56464),	-- Bracers of Umbral Mending
 						i(157615), 	-- Flamescale Chain Leggings (Added 7.3.5)
 						i(56457),	-- Circle of Bone
 						i(56463),	-- Corrupted Egg Shell

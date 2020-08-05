@@ -380,12 +380,15 @@ _.NeverImplemented =
 		q(35348),	-- Blackrock Caverns Reward Quest
 		q(35587),	-- Deadmines heroic completion
 		q(35358),	-- End Time heroic completion
+		q(35404),	-- Grim Batol Reward Quest
 		q(35439),	-- Hour of Twilight dungeon reward (Kill benedictus)
 		q(35414),	-- Lost City of the Tol'vir dungeon reward (Kill Siamat)
 		q(35311),	-- Shadowfang Keep heroic bonus objective complete
 		q(35309),	-- Shadowfang Keep heroic completion (Kill Lord Godfrey)
 		q(35911),	-- Stonecore Reward Quest
 		q(35913),	-- Stonecore (Heroic) reward quest
+		q(35401),	-- The Vortex Pinnacle Reward Quest
+		q(35363),	-- Throne of the Tides Reward Quest
 		q(35366),	-- Throne of the Tides Bonus Reward (kill Mindbender Ghur'sha, triggered in Timewalking)
 		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
 		q(35411),	-- Zul'Gurub Reward Quest

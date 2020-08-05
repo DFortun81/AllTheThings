@@ -10,8 +10,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["coord"] = { 71.77, 52.98, 34 },	-- Blackrock Caverns, Blackrock Caverns
 		["groups"] = {
 			n(QUESTS, {
-				{	-- Ascendant Lord Obsidius
-					["questID"] = 28741,
+				q(28741, { -- Ascendant Lord Obsidius
 					["provider"] = { "n", 49476 },	-- Finkle Einhorn
 					["sourceQuest"] = 28738,	-- The Twilight Forge
 					["groups"] = {
@@ -19,35 +18,31 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(66885),	-- Diamond-Studden Helm
 						i(66884),	-- Raz's Breastplate
 					},
-				},
-				{	-- Do My Eyes Deceive Me?
-					["questID"] = 28740,
+				}),
+				q(28740, { -- Do My Eyes Deceive Me?
 					["provider"] = { "n", 49476 },	-- Finkle Einhorn
 					["sourceQuest"] = 28738,	-- The Twilight Forge
 					["groups"] = {
 						i(66889),	-- Beauty's Cootie-Ridden Blankie
 						i(66887),	-- Beauty Jr.'s Collar
+						i(66890),	-- Finkle's Twinkle
 					},
-				},
-				{	-- The Twilight Forge
-					["questID"] = 28738,
+				}),
+				q(28738, { -- The Twilight Forge
 					["provider"] = { "n", 49476 },	-- Finkle Einhorn
 					["sourceQuest"] = 28737,	-- What Is This Place?
-				},
-				{	-- To the Chamber of Incineration!
-					["questID"] = 28735,
+				}),
+				q(28735, { -- To the Chamber of Incineration!
 					["provider"] = { "n", 49476 },	-- Finkle Einhorn
 					["sourceQuest"] = 28732,	-- This Can Only Mean One Thing...
-				},
-				{	-- What Is This Place?
-					["questID"] = 28737,
+				}),
+				q(28737, { -- What Is This Place?
 					["provider"] = { "n", 49476 },	-- Finkle Einhorn
 					["sourceQuest"] = 28735,	-- To the Chamber of Incineration!
-				},
+				}),
 			}),
 			n(ZONEDROPS, {
-				{	-- Acanthia's Lost Pendant
-					["itemID"] = 55791,	-- Acanthia's Lost Pendant
+				i(55791, { -- Acanthia's Lost Pendant
 					["crs"] = {
 						40084,	-- Bellows Slave
 						40013,	-- Buster
@@ -68,9 +63,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						39990,	-- Twilight Zealot
 						50284,	-- Twilight Zealot
 					},
-				},
-				{	-- Berto's Staff
-					["itemID"] = 55789,	-- Berto's Staff
+				}),
+				i(55789, { -- Berto's Staff
 					["crs"] = {
 						40084,	-- Bellows Slave
 						40013,	-- Buster
@@ -91,9 +85,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						39990,	-- Twilight Zealot
 						50284,	-- Twilight Zealot
 					},
-				},
-				{	-- Toxidunk Dagger
-					["itemID"] = 55790,	-- Toxidunk Dagger
+				}),
+				i(55790, { -- Toxidunk Dagger
 					["crs"] = {
 						40084,	-- Bellows Slave
 						40013,	-- Buster
@@ -114,9 +107,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						39990,	-- Twilight Zealot
 						50284,	-- Twilight Zealot
 					},
-				},
+				}),
 			}),
-			d(  1, {	-- Normal
+			d(1, {	-- Normal
 				cr(39665, e(105, {	-- Rom'ogg Boncrusher
 					i(56312),	-- Torturer's Mercy
 					i(56314),	-- Shield of the Iron Maiden
@@ -169,9 +162,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(REMOVED_FROM_GAME, i(55276)),	-- Kibble (7.3.5 - Removed from Game!)
 				})),
 				cr(39705, e(109, {	-- Ascendent Lord Obsidius
-					{	-- Blackrock Caverns
-						["achievementID"] = 4833,	-- Blackrock Caverns
-					},
+					ach(4833),	-- Blackrock Caverns
 					i(56317), 	-- Amber Messenger
 					i(56322), 	-- Crepuscular Shield
 					i(56321), 	-- Willowy Crown
@@ -192,14 +183,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(REMOVED_FROM_GAME, i(55787)),	-- Witching Hourglass (7.3.5 - Removed from Game!)
 				})),
 			}),
-			d(  2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 85,
 				["ignoreBonus"] = true,
 				["groups"] = {
 					cr(39665, e(105, {	-- Rom'ogg Boncrusher
-						{	-- Crushing Bones and Cracking Skulls
-							["achievementID"] = 5281,	-- Crushing Bones and Cracking Skulls
-						},
+						ach(5281),	-- Crushing Bones and Cracking Skulls
 						i(56312),	-- Torturer's Mercy
 						i(56314),	-- Shield of the Iron Maiden
 						i(56311),	-- Inquisition Robes
@@ -208,9 +197,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(56310),	-- Skullcracker Ring
 					})),
 					cr(39679, e(106, {	-- Corla, Herald of Twilight
-						{	-- Arrested Development
-							["achievementID"] = 5282,	-- Arrested Development
-						},
+						ach(5282),	-- Arrested Development
 						i(56296),	-- Corla's Baton
 						i(56298),	-- Renouncer's Cowl
 						i(56297),	-- Armbands of Change
@@ -218,9 +205,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(56295),	-- Grace of the Herald
 					})),
 					cr(39698, e(107, {	-- Karsh Steelbender
-						{	-- Too Hot to Handle
-							["achievementID"] = 5283,	-- Too Hot to Handle
-						},
+						ach(5283),	-- Too Hot to Handle
 						i(56302), 	-- Steelbender's Masterpiece
 						i(56300),	-- Quicksilver Amulet
 						i(56304), 	-- Burned Gatherings
@@ -237,12 +222,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(56307),	-- Kibble
 					})),
 					cr(39705, e(109, {	-- Ascendent Lord Obsidius
-						{	-- Ascendant Descending
-							["achievementID"] = 5284,	-- Ascendant Descending
-						},
-						{	-- Heroic: Blackrock Caverns
-							["achievementID"] = 5060,	-- Heroic: Blackrock Caverns
-						},
+						ach(5284),	-- Ascendant Descending
+						ach(5060),	-- Heroic: Blackrock Caverns
 						i(56317), 	-- Amber Messenger
 						i(56322), 	-- Crepuscular Shield
 						i(56321), 	-- Willowy Crown
@@ -254,7 +235,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(56320),	-- Witching Hourglass
 					})),
 				},
-			}),	
+			}),
 		},
 	}),
 })};
