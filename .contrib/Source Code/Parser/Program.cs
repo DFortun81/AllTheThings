@@ -106,7 +106,7 @@ namespace ATT
                     {
                         lua.DoString("AllTheThings = {};_ = AllTheThings;");
                         lua.DoFile(fileName);
-                        Framework.Merge(lua.GetTable("AllTheThings"));
+                        Framework.Merge(lua, lua.GetTable("AllTheThings"));
                         break;
                     }
                     catch(Exception e)
@@ -125,7 +125,7 @@ namespace ATT
                 {
                     lua.DoString("AllTheThings = {};_ = AllTheThings;");
                     lua.DoString("for i,method in ipairs(POST_PROCESSING_FUNCTIONS) do method(); end");
-                    Framework.Merge(lua.GetTable("AllTheThings"));
+                    Framework.Merge(lua, lua.GetTable("AllTheThings"));
                     break;
                 }
                 catch (Exception e)

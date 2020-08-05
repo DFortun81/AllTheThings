@@ -153,6 +153,10 @@ namespace ATT
                                 //builder.Append('"').Append(Convert.ToString(data[field]).Replace("\"", "\\\"")).Append('"');
                                 ExportRawLua(builder, data[field]);
                             }
+                            else if(field == "OnUpdate")
+                            {
+                                builder.Append(Convert.ToString(data[field]).Replace("\n", "").Replace("\r", "").Replace("\t\t", "\t"));
+                            }
                             else ExportCompressedLua(builder, data[field]);
                         }
 

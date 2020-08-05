@@ -4,6 +4,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
+using NLua;
 
 namespace ATT
 {
@@ -461,6 +462,11 @@ namespace ATT
                             item[field] = newListOfLists;
                             break;
                         }
+
+                    // Functions
+                    case "OnUpdate":
+                        item[field] = value;
+                        break;
 
                     // Report all other fields.
                     default:

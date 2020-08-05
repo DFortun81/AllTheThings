@@ -1604,6 +1604,11 @@ namespace ATT
                             break;
                         }
 
+                    // Functions
+                    case "OnUpdate":
+                        item[field] = value;
+                        break;
+
                     // Blacklisted Fields
                     case "link":
                     case "retries":

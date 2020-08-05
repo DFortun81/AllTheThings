@@ -1383,11 +1383,12 @@ namespace ATT
         /// Merge the contents of the lua table into the database.
         /// If the keys are whitelisted, then the data will be added.
         /// </summary>
+        /// <param name="lua">The lua context.</param>
         /// <param name="table">The raw lua table.</param>
-        public static void Merge(LuaTable table)
+        public static void Merge(Lua lua, LuaTable table)
         {
             // Parse the contents of the table into a generic object.
-            var dict = Parse(table);
+            var dict = Parse(lua, table);
             if (dict == null) return;
 
             // Iterate through the pairs and determine what goes where.
@@ -1447,9 +1448,10 @@ namespace ATT
         /// <summary>
         /// Parse the lua table into a commonly formatted object container.
         /// </summary>
+        /// <param name="lua">The lua context.</param>
         /// <param name="table">The raw lua table.</param>
         /// <returns>The object dictionary or null.</returns>
-        public static Dictionary<object, object> Parse(LuaTable table)
+        public static Dictionary<object, object> Parse(Lua lua, LuaTable table)
         {
             // If the table is invalid, return immediately.
             if (table == null) return null;
@@ -1463,7 +1465,7 @@ namespace ATT
                 {
                     case "NLua.LuaTable":
                         {
-                            var t = Parse(v as LuaTable);
+                            var t = Parse(lua, v as LuaTable);
                             if (t != null && t.Count > 0) dict[field] = t;
                             break;
                         }
@@ -1472,6 +1474,17 @@ namespace ATT
                     case "System.String":
                         {
                             dict[field] = v;
+                            break;
+                        }
+                    case "NLua.LuaFunction":
+                        {
+                            Trace.Write(field);
+                            Trace.Write(" (");
+                            Trace.Write(v.GetType().ToString());
+                            Trace.Write("): ");
+                            Trace.WriteLine(v);
+                            Trace.WriteLine("Functions are not directly supported at this time. Please use a [[ ]] surrounded string.");
+                            Console.ReadLine();
                             break;
                         }
                     default:
