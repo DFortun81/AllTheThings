@@ -1,6 +1,7 @@
---------------------------------------------------
---          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
@@ -507,10 +508,10 @@ _.Zones =
 						i(169688, {	-- Vinyl: Gnomeragan Forever
 							["questID"] = 56515,
 							["g"] = {
-                                crit(2, {    -- Gnomeregan Forever
-                                    ["achievementID"] = 13686,    -- Junkyard Melomanic
-                                }),
-                            },
+								crit(2, {    -- Gnomeregan Forever
+									["achievementID"] = 13686,    -- Junkyard Melomanic
+								}),
+							},
 						}),
 					},
 				}),
@@ -618,6 +619,14 @@ _.Zones =
 									i(169851),	-- Azeroth Mini: Cogstar
 									i(169845),	-- Azeroth Mini: HK-8
 									i(169846),	-- Azeroth Mini: King Mechagon *slumber note: this pack dropped from a mechanized chest for me and contained this mini
+								}),
+								i(169692, {    -- Vinyl: Triumph of Gnomeregan
+									["questID"] = 56519,    -- Triumph of Gnomeregan
+									["g"] = {
+										crit(6, {    -- Triumph of Gnomeregan
+											["achievementID"] = 13686,    -- Junkyard Melomanic
+										}),
+									},
 								}),
 							},
 						}),
@@ -858,28 +867,28 @@ _.Zones =
 							},
 						}),
 						i(169689, {    -- Vinyl: Mimiron's Brainstorm
-                            ["questID"] = 56516,    -- Vinyl: Mimiron's Brainstorm
-                            ["g"] = {
-                                crit(3, {    -- Mimiron's Brainstorm
-                                    ["achievementID"] = 13686,    -- Junkyard Melomanic
-                                }),
-                            },
-                        }),
-                        i(169692, {    -- Vinyl: Triumph of Gnomeregan
-                            ["questID"] = 56519,    -- Triumph of Gnomeregan
-                            ["g"] = {
-                                crit(6, {    -- Triumph of Gnomeregan
-                                    ["achievementID"] = 13686,    -- Junkyard Melomanic
-                                }),
-                            },
-                        }),
-                        i(169690, {    -- Vinyl: Battle of Gnomeregan
-                            ["questID"] = 56517,    -- Vinyl: Battle of Gnomeregan
-                            ["g"] = {
-                                crit(4, {    -- Battle of Gnomeregan
-                                    ["achievementID"] = 13686,    -- Junkyard Melomanic
-                                }),
-                            },
+							["questID"] = 56516,    -- Vinyl: Mimiron's Brainstorm
+							["g"] = {
+								crit(3, {    -- Mimiron's Brainstorm
+									["achievementID"] = 13686,    -- Junkyard Melomanic
+								}),
+							},
+						}),
+						i(169692, {    -- Vinyl: Triumph of Gnomeregan
+							["questID"] = 56519,    -- Triumph of Gnomeregan
+							["g"] = {
+								crit(6, {    -- Triumph of Gnomeregan
+									["achievementID"] = 13686,    -- Junkyard Melomanic
+								}),
+							},
+						}),
+						i(169690, {    -- Vinyl: Battle of Gnomeregan
+							["questID"] = 56517,    -- Vinyl: Battle of Gnomeregan
+							["g"] = {
+								crit(4, {    -- Battle of Gnomeregan
+									["achievementID"] = 13686,    -- Junkyard Melomanic
+								}),
+							},
 						}),
 					},
 				}),
