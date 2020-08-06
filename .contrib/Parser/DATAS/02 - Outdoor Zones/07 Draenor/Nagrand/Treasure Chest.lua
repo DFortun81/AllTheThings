@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -89,7 +90,7 @@ _.Zones =
 						i(106745),	-- Packrunner Belt
 						i(106722),	-- Stonecrag Girdle
 						-- Legs
-						i(106740),	-- Dark Star Leggings							
+						i(106740),	-- Dark Star Leggings
 						i(106731),	-- Meadowstomper Britches
 						i(106750),	-- Packrunner Legguards
 						i(106724),	-- Stonecrag Legplates
@@ -133,7 +134,7 @@ _.Zones =
 							i(106708),	-- Voidwrap Robe
 							-- Wrist
 							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers							
+							i(106713),	-- Sunspring Bracers
 							i(106711),	-- Voidwrap Wristwraps
 							-- Hands
 							i(106747),	-- Packrunner Gauntlets
@@ -151,7 +152,7 @@ _.Zones =
 							-- Feet
 							i(106697),	-- Sabermaw Boots
 							i(106726),	-- Stonecrag Sabatons
-						}),							
+						}),
 					},
 				}),
 				o(233650, {	-- Adventurer's Mace
@@ -221,7 +222,7 @@ _.Zones =
 						i(106745),	-- Packrunner Belt
 						i(106722),	-- Stonecrag Girdle
 						-- Legs
-						i(106740),	-- Dark Star Leggings							
+						i(106740),	-- Dark Star Leggings
 						i(106731),	-- Meadowstomper Britches
 						i(106750),	-- Packrunner Legguards
 						i(106724),	-- Stonecrag Legplates
@@ -265,7 +266,7 @@ _.Zones =
 							i(106708),	-- Voidwrap Robe
 							-- Wrist
 							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers							
+							i(106713),	-- Sunspring Bracers
 							i(106711),	-- Voidwrap Wristwraps
 							-- Hands
 							i(106747),	-- Packrunner Gauntlets
@@ -345,7 +346,7 @@ _.Zones =
 						i(106745),	-- Packrunner Belt
 						i(106722),	-- Stonecrag Girdle
 						-- Legs
-						i(106740),	-- Dark Star Leggings							
+						i(106740),	-- Dark Star Leggings
 						i(106731),	-- Meadowstomper Britches
 						i(106750),	-- Packrunner Legguards
 						i(106724),	-- Stonecrag Legplates
@@ -389,7 +390,7 @@ _.Zones =
 							i(106708),	-- Voidwrap Robe
 							-- Wrist
 							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers							
+							i(106713),	-- Sunspring Bracers
 							i(106711),	-- Voidwrap Wristwraps
 							-- Hands
 							i(106747),	-- Packrunner Gauntlets
@@ -407,7 +408,7 @@ _.Zones =
 							-- Feet
 							i(106697),	-- Sabermaw Boots
 							i(106726),	-- Stonecrag Sabatons
-						}),							
+						}),
 					},
 				}),
 				o(232406, {	-- Adventurer's Pack
@@ -470,7 +471,7 @@ _.Zones =
 						i(106745),	-- Packrunner Belt
 						i(106722),	-- Stonecrag Girdle
 						-- Legs
-						i(106740),	-- Dark Star Leggings							
+						i(106740),	-- Dark Star Leggings
 						i(106731),	-- Meadowstomper Britches
 						i(106750),	-- Packrunner Legguards
 						i(106724),	-- Stonecrag Legplates
@@ -514,7 +515,7 @@ _.Zones =
 							i(106708),	-- Voidwrap Robe
 							-- Wrist
 							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers							
+							i(106713),	-- Sunspring Bracers
 							i(106711),	-- Voidwrap Wristwraps
 							-- Hands
 							i(106747),	-- Packrunner Gauntlets
@@ -600,7 +601,7 @@ _.Zones =
 						i(106745),	-- Packrunner Belt
 						i(106722),	-- Stonecrag Girdle
 						-- Legs
-						i(106740),	-- Dark Star Leggings							
+						i(106740),	-- Dark Star Leggings
 						i(106731),	-- Meadowstomper Britches
 						i(106750),	-- Packrunner Legguards
 						i(106724),	-- Stonecrag Legplates
@@ -644,7 +645,7 @@ _.Zones =
 							i(106708),	-- Voidwrap Robe
 							-- Wrist
 							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers							
+							i(106713),	-- Sunspring Bracers
 							i(106711),	-- Voidwrap Wristwraps
 							-- Hands
 							i(106747),	-- Packrunner Gauntlets
@@ -662,7 +663,7 @@ _.Zones =
 							-- Feet
 							i(106697),	-- Sabermaw Boots
 							i(106726),	-- Stonecrag Sabatons
-						}),						
+						}),
 					},
 				}),
 				o(233623, {	-- Adventurer's Pouch
@@ -725,7 +726,7 @@ _.Zones =
 						i(106745),	-- Packrunner Belt
 						i(106722),	-- Stonecrag Girdle
 						-- Legs
-						i(106740),	-- Dark Star Leggings							
+						i(106740),	-- Dark Star Leggings
 						i(106731),	-- Meadowstomper Britches
 						i(106750),	-- Packrunner Legguards
 						i(106724),	-- Stonecrag Legplates
@@ -769,7 +770,7 @@ _.Zones =
 							i(106708),	-- Voidwrap Robe
 							-- Wrist
 							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers							
+							i(106713),	-- Sunspring Bracers
 							i(106711),	-- Voidwrap Wristwraps
 							-- Hands
 							i(106747),	-- Packrunner Gauntlets
@@ -787,7 +788,7 @@ _.Zones =
 							-- Feet
 							i(106697),	-- Sabermaw Boots
 							i(106726),	-- Stonecrag Sabatons
-						}),								
+						}),
 					},
 				}),
 				o(233499, {	-- Adventurer's Sack
@@ -850,7 +851,7 @@ _.Zones =
 						i(106745),	-- Packrunner Belt
 						i(106722),	-- Stonecrag Girdle
 						-- Legs
-						i(106740),	-- Dark Star Leggings							
+						i(106740),	-- Dark Star Leggings
 						i(106731),	-- Meadowstomper Britches
 						i(106750),	-- Packrunner Legguards
 						i(106724),	-- Stonecrag Legplates
@@ -894,7 +895,7 @@ _.Zones =
 							i(106708),	-- Voidwrap Robe
 							-- Wrist
 							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers							
+							i(106713),	-- Sunspring Bracers
 							i(106711),	-- Voidwrap Wristwraps
 							-- Hands
 							i(106747),	-- Packrunner Gauntlets
@@ -912,7 +913,7 @@ _.Zones =
 							-- Feet
 							i(106697),	-- Sabermaw Boots
 							i(106726),	-- Stonecrag Sabatons
-						}),								
+						}),
 					},
 				}),
 				o(233457, {	-- Adventurer's Staff
@@ -921,6 +922,10 @@ _.Zones =
 					["g"] = {
 						i(116640),  -- Howling Staff
 					},
+				}),
+				o(233773, {	-- Bag of Herbs
+					["questID"] = 36116,
+					["coord"] = { 62.6, 67.1, 550 },
 				}),
 				o(233532, {	-- Bone-Carved Dagger
 					["questID"] = 35986,
@@ -995,7 +1000,7 @@ _.Zones =
 						i(106745),	-- Packrunner Belt
 						i(106722),	-- Stonecrag Girdle
 						-- Legs
-						i(106740),	-- Dark Star Leggings							
+						i(106740),	-- Dark Star Leggings
 						i(106731),	-- Meadowstomper Britches
 						i(106750),	-- Packrunner Legguards
 						i(106724),	-- Stonecrag Legplates
@@ -1039,7 +1044,7 @@ _.Zones =
 							i(106708),	-- Voidwrap Robe
 							-- Wrist
 							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers							
+							i(106713),	-- Sunspring Bracers
 							i(106711),	-- Voidwrap Wristwraps
 							-- Hands
 							i(106747),	-- Packrunner Gauntlets
@@ -1057,7 +1062,7 @@ _.Zones =
 							-- Feet
 							i(106697),	-- Sabermaw Boots
 							i(106726),	-- Stonecrag Sabatons
-						}),	
+						}),
 					},
 				}),
 				o(233492, {	-- Elemental Offering
@@ -1260,7 +1265,7 @@ _.Zones =
 						i(106745),	-- Packrunner Belt
 						i(106722),	-- Stonecrag Girdle
 						-- Legs
-						i(106740),	-- Dark Star Leggings							
+						i(106740),	-- Dark Star Leggings
 						i(106731),	-- Meadowstomper Britches
 						i(106750),	-- Packrunner Legguards
 						i(106724),	-- Stonecrag Legplates
@@ -1304,7 +1309,7 @@ _.Zones =
 							i(106708),	-- Voidwrap Robe
 							-- Wrist
 							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers							
+							i(106713),	-- Sunspring Bracers
 							i(106711),	-- Voidwrap Wristwraps
 							-- Hands
 							i(106747),	-- Packrunner Gauntlets
@@ -1361,7 +1366,7 @@ _.Zones =
 					},
 				}),
 				o(232590, {	-- Void-Infused Crystal
-					["questID"] = 35579,	
+					["questID"] = 35579,
 					["coord"] = { 50.0, 66.5, 550 },
 					["g"] = {
 						i(118264),	-- Serrated Void Crystal
