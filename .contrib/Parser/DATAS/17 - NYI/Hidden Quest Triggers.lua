@@ -1009,6 +1009,9 @@ _.NeverImplemented =
 		q(43510),	-- Seal of Fate: Class Hall. Weekly quest, various sources
 		q(43806),	-- The Battle for Broken Shore Scenario Skip (A)
 		q(44543),	-- The Battle for Broken Shore Scenario Skip (H)
+		q(43463),	-- Looting Charred Locket from Ashes of a Fallen Crusader
+		q(43464),	-- Talking to Alaina Hearthsong
+		q(43465),	-- Looting Alaina's Bonnet
 		q(38994),	-- TRACKING Encounter Botanist — this quest and the one below are during/after doing the "To Old Friends" quest in Val'sharah
 		q(38596),	-- TRACKING Nightmare 02
 		q(48570),	-- Antorus, The Burning Throne - Triggers when the door opens to Kin'garoth
