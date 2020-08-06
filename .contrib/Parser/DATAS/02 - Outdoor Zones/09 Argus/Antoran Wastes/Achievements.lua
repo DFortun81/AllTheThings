@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(905, { 	-- Argus
@@ -14,35 +15,32 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_misc_treasurechest04d",
 						["coord"] = { 65.9, 39.9, 885 },
 						["groups"] = {
-							{
+							crit(13, {	-- Ancient Legion War Cache
 								["achievementID"] = 12074,	-- Shoot First, Loot Later
-								["criteriaID"] = 13,	-- Ancient Legion War Cache
-							},
+							}),
 							i(153308),	-- Unyielding Peacekeeper's Cudgel
 						},
 					}),
 					o(277206, {	-- Fel-Bound Chest
-						--["questID"] = ,	-- TODO: Need this questID
+						["questID"] = 49019,
 						["description"] = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
 						["icon"] = "Interface\\Icons\\inv_misc_treasurechest04d",
 						["coord"] = { 52.2, 27.2, 885 },
 						["groups"] = {
-							{
+							crit(14, {	-- Fel-Bound Chest
 								["achievementID"] = 12074,	-- Shoot First, Loot Later
-								["criteriaID"] = 14,	-- Fel-Bound Chest
-							},
+							}),
 						},
 					}),
 					o(277204, {	-- Forgotten Legion Supplies
-						--["questID"] = ,	-- TODO: Need this questID
+						["questID"] = 49017,
 						["description"] = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
 						["icon"] = "Interface\\Icons\\inv_misc_treasurechest04d",
 						["coord"] = { 58.8, 59.2, 885 },
 						["groups"] = {
-							{
+							crit(12, {	-- Forgotten Legion Supplies
 								["achievementID"] = 12074,	-- Shoot First, Loot Later
-								["criteriaID"] = 12,	-- Forgotten Legion Supplies
-							},
+							}),
 						},
 					}),
 					o(277207, {	-- Legion Treasure Hoard
@@ -51,10 +49,9 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_misc_treasurechest04d",
 						["coord"] = { 49.2, 59.5, 885 },
 						["groups"] = {
-							{
+							crit(15, {	-- Legion Treasure Hoard
 								["achievementID"] = 12074,	-- Shoot First, Loot Later
-								["criteriaID"] = 15,	-- Legion Treasure Hoard
-							},
+							}),
 							i(153291),	-- Spectral Censorite's Staff
 						},
 					}),
@@ -64,10 +61,9 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_misc_treasurechest04d",
 						["coord"] = { 57.5, 63.5, 885 },
 						["groups"] = {
-							{
+							crit(22, {	-- Missing Augari Chest
 								["achievementID"] = 12074,	-- Shoot First, Loot Later
-								["criteriaID"] = 22,	-- Missing Augari Chest
-							},
+							}),
 							i(153285),	-- Augari Wakener's Mantle
 						},
 					}),
@@ -76,10 +72,9 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_misc_treasurechest04d",
 						["coord"] = { 75.7, 52.6, 885 },
 						["groups"] = {
-							{
+							crit(16, {	-- Timeworn Fel Chest
 								["achievementID"] = 12074,	-- Shoot First, Loot Later
-								["criteriaID"] = 16,	-- Timeworn Fel Chest
-							},
+							}),
 						},
 					}),
 				}),

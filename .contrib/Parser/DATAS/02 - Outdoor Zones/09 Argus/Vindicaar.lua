@@ -19,7 +19,7 @@ _.Zones =
 			["lvl"] = 110,
 			["isRaid"] = true,
 			["g"] = {
-				n(-4,   {	-- Achievement					
+				n(-4,   {	-- Achievement
 				}),
 				n(-169, {	-- Emissary Quests
 					q(48642, {	-- Argussian Reach
@@ -57,7 +57,7 @@ _.Zones =
 									{"select", "itemID", 153153},	-- Unsullied Plate Pauldrons
 									{"select", "itemID", 153143},	-- Unsullied Plate Breasplate
 									{"select", "itemID", 153150},	-- Unsullied Plate Vambraces
-									{"select", "itemID", 153157},	-- Unsullied Plate Gauntlets	
+									{"select", "itemID", 153157},	-- Unsullied Plate Gauntlets
 									{"select", "itemID", 153140},	-- Unsullied Plate Waistplate
 									{"select", "itemID", 153146},	-- Unsullied Plate Greaves
 									{"select", "itemID", 152743},	-- Unsullied Plate Sabatons
@@ -115,7 +115,7 @@ _.Zones =
 									{"select", "itemID", 153153},	-- Unsullied Plate Pauldrons
 									{"select", "itemID", 153143},	-- Unsullied Plate Breasplate
 									{"select", "itemID", 153150},	-- Unsullied Plate Vambraces
-									{"select", "itemID", 153157},	-- Unsullied Plate Gauntlets	
+									{"select", "itemID", 153157},	-- Unsullied Plate Gauntlets
 									{"select", "itemID", 153140},	-- Unsullied Plate Waistplate
 									{"select", "itemID", 153146},	-- Unsullied Plate Greaves
 									{"select", "itemID", 152743},	-- Unsullied Plate Sabatons
@@ -216,8 +216,8 @@ _.Zones =
 						["requireSkill"] = LEATHERWORKING,
 						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 						["g"] = {
-							i(151740),	-- Recipe: Fiendish Shoulderguards (Rank 1)					
-							i(151743),	-- Recipe: Fiendish Spaulders (Rank 1)					
+							i(151740),	-- Recipe: Fiendish Shoulderguards (Rank 1)
+							i(151743),	-- Recipe: Fiendish Spaulders (Rank 1)
 						},
 					}),
 					q(48055, {	-- Empyrial Strength
@@ -488,7 +488,6 @@ _.Zones =
 							["cost"] = 100000000,	-- 10,000g
 						}),
 						i(152725),	-- Technique: Mass Mill Astral Glory
-						
 					}),
 					n(121589, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
 						["currencyID"] = 1508,	-- Veil Argunite

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(905, { 	-- Argus
@@ -160,7 +161,7 @@ _.Zones =
 				}),
 				q(48447, {	-- Shadowguard Dispersion
 					["provider"] = { "n", 121230 },	-- Alleria Windrunner
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						48446,	-- Relics of the Ancient Eredar
 						48654,	-- Beneath Oronaar
 					},
@@ -232,7 +233,7 @@ _.Zones =
 					["coord"] = { 43.8, 60.8, 882 },
 					["isWeekly"] = true,
 					["provider"] = { "n", 127037 },	-- Nabiru
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						48446,	-- Relics of the Ancient Eredar
 						48654,	-- Beneath Oronaar
 					},
@@ -250,39 +251,9 @@ _.Zones =
 					["provider"] = { "n", 124312 },	-- High Exarch Turalyon
 					["coord"] = { 62.7, 39.4, 882 },
 				}),
-
-				
-				
-				
-				
 --[[
-				q(48041),	-- A Larger Cut
-				q(48035),	-- Angling For a Better Strike
-				q(48642),	-- Argussian Reach
-				q(48639),	-- Army of the Light
-				q(48039),	-- Balancing the Break
 				q(48605),	-- Commander's Downfall
-				q(48038),	-- Don't Just Pick At It
-				q(48055),	-- Empyrial Strength
-				q(48034),	-- Empyrium Deposit Chunk
-				q(48037),	-- Empyrium Seam Chunk
-				q(48230),	-- Fragment of the Past
 				q(48636),	-- Fueling the Antoran Campaign
-				q(49293),	-- Invasion Onslaught
-				q(48668),	-- Lightforged Beacon: City Center
-				q(48074),	-- Looming Over Me
-				q(48042),	-- Order of Operations
-				q(48974),	-- Paragon of the Army of the Light
-				q(48036),	-- Precision Perfected
-				q(48271),	-- Recovering the Pieces
-				q(48976),	-- Supplies From the Argussian Reach
-				q(48977),	-- Supplies From the Army of the Light
-				q(48040),	-- Tainted Scraps
-				q(48864),	-- The Broken Blacksmith
-				q(48261),	-- The Power to Reforge
-				q(49445),	-- The Prime Exchange
-				q(48277),	-- The Speaker Seeks
-				q(48069),	-- The Wrench Calls
 				q(48632),	-- Void Extract
 --]]
 			}),

@@ -6,269 +6,239 @@ profession(MINING, {
 			["description"] = "This can drop from any ore gathering node on Draenor.",
 		}),
 		i(151564, {	-- Empyrium
-			{
-				["objectID"] = 272768,	-- Empyrium Deposit [No Model]
+			o(272768, {	-- Empyrium Deposit
 				["groups"] = {
-					{
-						["itemID"] = 151860,	-- Empyrium Deposit Chunk
-						["questID"] = 48034,	-- Empyrium Deposit Chunk (Quest)
+					i(151860, {	-- Empyrium Deposit Chunk
+						["questID"] = 48034,	-- Empyrium Deposit Chunk
 						["groups"] = {
 							recipe(247848),	-- Empyrium Deposit [Rank 1]
 						},
-					},
-					{
-						["itemID"] = 151861,	-- Empyrium Dust
-						["questID"] = 48035,	-- Angling For a Better Strike (Quest)
-						["sourceQuest"] = 48034,	-- Source Quest: Empyrium Deposit Chunk
+					}),
+					i(151861, {	-- Empyrium Dust
+						["questID"] = 48035,	-- Angling For a Better Strike)
+						["sourceQuest"] = 48034,	-- Empyrium Deposit Chunk
 						["groups"] = {
 							recipe(247849),	-- Empyrium Deposit [Rank 2]
 						},
-					},
-					{
-						["itemID"] = 151862,	-- Unusable Empyrium Core
-						["questID"] = 48036,	-- Precision Perfected (Quest)
-						["sourceQuest"] = 48035,	-- Source Quest: Angling For a Better Strike
+					}),
+					i(151862, {	-- Unusable Empyrium Core
+						["questID"] = 48036,	-- Precision Perfected
+						["sourceQuest"] = 48035,	-- Angling For a Better Strike
 						["groups"] = {
 							recipe(247850),	-- Empyrium Deposit [Rank 3]
 						},
-					},
+					}),
 				}
-			},
-			{
-				["objectID"] = 272780,	-- Empyrium Seam [No Model]
+			}),
+			o(272780, {	-- Empyrium Seam
 				["groups"] = {
-					{
-						["itemID"] = 151863,	-- Empyrium Seam Chunk
-						["questID"] = 48037,	-- Empyrium Seam Chunk (Quest)
+					i(151863, {	-- Empyrium Seam Chunk
+						["questID"] = 48037,	-- Empyrium Seam Chunk
 						["groups"] = {
 							recipe(247851),	-- Empyrium Seam [Rank 1]
 						},
-					},
-					{
-						["itemID"] = 151864,	-- Embedded Empyrium Ore
-						["questID"] = 48038,	-- Don't Just Pick At It (Quest)
-						["sourceQuest"] = 48037,	-- Source Quest: Empyrium Seam Chunk
+					}),
+					i(151864, {	-- Embedded Empyrium Ore
+						["questID"] = 48038,	-- Don't Just Pick At It
+						["sourceQuest"] = 48037,	-- Empyrium Seam Chunk
 						["groups"] = {
 							recipe(247852),	-- Empyrium Seam [Rank 2]
 						},
-					},
-					{
-						["itemID"] = 151865,	-- Empyrium Bits
-						["questID"] = 48039,	-- Balancing the Break (Quest)
-						["sourceQuest"] = 48038,	-- Source Quest: Don't Just Pick At It
+					}),
+					i(151865, {	-- Empyrium Bits
+						["questID"] = 48039,	-- Balancing the Break
+						["sourceQuest"] = 48038,	-- Don't Just Pick At It
 						["groups"] = {
 							recipe(247853),	-- Empyrium Seam [Rank 3]
 						},
-					},
+					}),
 				}
-			},
+			}),
 		}),
 		i(123919, {	-- Felslate
-			{
-				["objectID"] = 241743,	-- Felslate Deposit [No Model]
+			o(241743, {	--Felslate Deposit
 				["groups"] = {
-					{
-						["itemID"] = 124496,	-- Felslate Deposit Sample
-						["questID"] = 38795,	-- Felslate Deposit Sample (Quest)
+					i(124496, {	-- Felslate Deposit Sample
+						["questID"] = 38795,	-- Felslate Deposit Sample
 						["groups"] = {
 							recipe(184492),	-- Felslate Deposit [Rank 1]
 						},
-					},
-					{
-						["itemID"] = 124499,	-- Ore-Bound Eye
-						["questID"] = 38800,	-- Rin'thissa's Eye (Quest)
-						["sourceQuest"] = 38799,	-- Source Quest: Darkheart Thicket: Nal'ryssa's Sisters
+					}),
+					i(124499, {	-- Ore-Bound Eye
+						["questID"] = 38800,	-- Rin'thissa's Eye
+						["sourceQuest"] = 38799,	-- Darkheart Thicket: Nal'ryssa's Sisters
 						["groups"] = {
 							recipe(184493),	-- Felslate Deposit [Rank 2]
 						},
-					},
-					{
-						["questID"] = 38803,	-- Rin'thissa (Quest)
-						["sourceQuest"] = 38800,-- Source Quest: Rin'thissa's Eye
-						["provider"] = { "n", 93893 }, 		-- Quest Giver: Rin'thissa
+					}),
+					q(38803, {	-- Rin'thissa
+						["sourceQuest"] = 38800,	-- Rin'thissa's Eye
+						["provider"] = { "n", 93893 },	-- Rin'thissa
 						["groups"] = {
 							recipe(184494),	-- Felslate Deposit [Rank 3]
 						},
-					},
+					}),
 				}
-			},
-			{
-				["objectID"] = 255344,	-- Felslate Seam [No Model]
+			}),
+			o(255344, {	-- Felslate Seam
 				["groups"] = {
-					{
-						["itemID"] = 124497,	-- Felslate Seam Chunk
-						["questID"] = 38796,	-- Felslate Seam Chunk (Quest)
+					i(124497, {	-- Felslate Seam Chunk
+						["questID"] = 38796,	-- Felslate Seam Chunk)
 						["groups"] = {
 							recipe(184496),	-- Felslate Seam [Rank 1]
 						},
-					},
-					{
-						["itemID"] = 124500,	-- Severed Arm
-						["questID"] = 38801,	-- Lyrelle's Right Arm (Quest)
-						["sourceQuest"] = 38799,	-- Source Quest: Darkheart Thicket: Nal'ryssa's Sisters
+					}),
+					i(124500, {	-- Severed Arm
+						["questID"] = 38801,	-- Lyrelle's Right Arm
+						["sourceQuest"] = 38799,	-- Darkheart Thicket: Nal'ryssa's Sisters
 						["groups"] = {
 							recipe(184497),	-- Felslate Seam [Rank 2]
 						},
-					},
-					{
-						["questID"] = 38804,	-- Lyrelle (Quest)
-						["sourceQuest"] = 38801,-- Source Quest: Lyrelle's Right Arm
-						["provider"] = { "n", 93776 }, 		-- Quest Giver: Lyrelle
+					}),
+					q(38804, {	-- Lyrelle
+						["sourceQuest"] = 38801,	-- Lyrelle's Right Arm
+						["provider"] = { "n", 93776 },	-- Lyrelle
 						["groups"] = {
 							recipe(184498),	-- Felslate Seam [Rank 3]
 						},
-					},
+					}),
 				}
-			},
-			{
-				["npcID"] = 93619,	-- Infernal Brutalizer
+			}),
+			n(93619, {	-- Infernal Brutalizer
 				["groups"] = {
-					{
-						["itemID"] = 124498,	-- Living Felslate Sample
-						["questID"] = 38797,	-- Living Felslate Sample (Quest)
+					i(124498, {	-- Living Felslate Sample
+						["questID"] = 38797,	-- Living Felslate Sample
 						["groups"] = {
 							recipe(184500),	-- Living Felslate [Rank 1]
 						},
-					},
-					{
-						["itemID"] = 124501,	-- Ore-Choked Heart
-						["questID"] = 38802,	-- Ondri's Still-Beating Heart (Quest)
-						["sourceQuest"] = 38799,	-- Source Quest: Darkheart Thicket: Nal'ryssa's Sisters
+					}),
+					i(124501, {	-- Ore-Choked Heart
+						["questID"] = 38802,	-- Ondri's Still-Beating Heart
+						["sourceQuest"] = 38799,	-- Darkheart Thicket: Nal'ryssa's Sisters
 						["groups"] = {
 							recipe(184501),	-- Living Felslate [Rank 2]
 						},
-					},
-					{
-						["questID"] = 38805,	-- Ondri (Quest)
-						["sourceQuest"] = 38802,-- Source Quest: Ondri's Still-Beating Heart
-						["provider"] = { "n", 93777 }, 		-- Quest Giver: Ondri
+					}),
+					q(38805, {	-- Ondri
+						["sourceQuest"] = 38802,	-- Ondri's Still-Beating Heart
+						["provider"] = { "n", 93777 },	-- Ondri
 						["groups"] = {
 							recipe(184502),	-- Living Felslate [Rank 3]
 						},
-					},
+					}),
 				}
-			},
-			{
-				["questID"] = 38901,	-- The Felsmiths
-				["sourceQuests"] = {38795, 38796, 38797},	-- Source Quests: Felslate Deposit Sample, Felslate Seam Sample, and Living Felslate Sample.
+			}),
+			q(38901, {	-- The Felsmiths
+				["sourceQuests"] = {
+					38795,	-- Felslate Deposit Sample
+					38796,	-- Felslate Seam Sample
+					38797	-- Living Felslate Sample
+				},
 				["description"] = "You must complete all of the Rank 1 Felslate mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
-				["provider"] = { "n", 93189 }, 		-- Quest Giver: Mama Diggs <Mining Trainer>
-			},
-			{
-				["questID"] = 38798,	-- A Shred of Your Humanity
-				["sourceQuest"] = 38901,-- Source Quest: The Felsmiths
-				["provider"] = { "n", 92264 }, 		-- Quest Giver: Felsmith Nal'ryssa <Blacksmithing Trainer>
-			},
-			{
-				["questID"] = 38799,	-- Darkheart Thicket: Nal'ryssa's Sisters
-				["sourceQuest"] = 38798,-- Source Quest: A Shred of Your Humanity
-				["provider"] = { "n", 92264 }, 		-- Quest Giver: Felsmith Nal'ryssa <Blacksmithing Trainer>
+				["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
+			}),
+			q(38798, {	-- A Shred of Your Humanity
+				["sourceQuest"] = 38901,	-- The Felsmiths
+				["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa <Blacksmithing Trainer>
+			}),
+			q(38799, {	-- Darkheart Thicket: Nal'ryssa's Sisters
+				["sourceQuest"] = 38798,	-- A Shred of Your Humanity
+				["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa <Blacksmithing Trainer>
 				["groups"] = {
 					i(126947),	-- Nal'ryssa's Spare Mining Supplies
 				},
-			},
+			}),
 		}),
 		i(123918, {	-- Leystone Ore
-			{
-				["objectID"] = 241726,	-- Leystone Deposit [No Model]
+			o(241726, {	-- Leystone Deposit
 				["groups"] = {
-					{
-						["itemID"] = 124489,	-- Leystone Deposit Sample
-						["questID"] = 38777,	-- Leystone Deposit Sample (Quest)
+					i(124489, {	-- Leystone Deposit Sample
+						["questID"] = 38777,	-- Leystone Deposit Sample
 						["groups"] = {
 							recipe(184454),	-- Leystone Deposit [Rank 1]
 						},
-					},
-					{
-						["itemID"] = 124492,	-- Torn Journal Page
-						["questID"] = 38789,	-- Rethu's Journal (Quest)
-						["sourceQuest"] = 38787,	-- Source Quest: The Legend of Rethu Ironhorn
+					}),
+					i(124492, {	-- Torn Journal Page
+						["questID"] = 38789,	-- Rethu's Journal
+						["sourceQuest"] = 38787,	-- The Legend of Rethu Ironhorn
 						["groups"] = {
 							recipe(184456),	-- Leystone Deposit [Rank 2]
 						},
-					},
-					{
-						["questID"] = 38792,	-- Rethu's Lesson (Quest)
-						["sourceQuest"] = 38789,-- Source Quest: Rethu's Journal
-						["provider"] = { "n", 93735 },			-- Quest Giver: Rethu Ironhorn
+					}),
+					q(38792, {	-- Rethu's Lesson
+						["sourceQuest"] = 38789,	-- Rethu's Journal
+						["provider"] = { "n", 93735 },	-- Rethu Ironhorn
 						["groups"] = {
 							recipe(184457),	-- Leystone Deposit [Rank 3]
 						},
-					},
+					}),
 				}
-			},
-			{
-				["objectID"] = 253280,	-- Leystone Seam [No Model]
+			}),
+			o(253280, {	-- Leystone Seam
 				["groups"] = {
-					{
-						["itemID"] = 124490,	-- Leystone Seam Sample
-						["questID"] = 38784,	-- Leystone Seam Sample (Quest)
+					i(124490, {	-- Leystone Seam Sample
+						["questID"] = 38784,	-- Leystone Seam Sample
 						["groups"] = {
 							recipe(184484),	-- Leystone Seam [Rank 1]
 						},
-					},
-					{
-						["itemID"] = 124493,	-- Battered Mining Pick
-						["questID"] = 38790,	-- Rethu's Pick (Quest)
-						["sourceQuest"] = 38787,	-- Source Quest: The Legend of Rethu Ironhorn
+					}),
+					i(124493, {	-- Battered Mining Pick
+						["questID"] = 38790,	-- Rethu's Pick
+						["sourceQuest"] = 38787,	-- The Legend of Rethu Ironhorn
 						["groups"] = {
 							recipe(184485),	-- Leystone Seam [Rank 2]
 						},
-					},
-					{
-						["questID"] = 38793,	-- Rethu's Experience (Quest)
-						["sourceQuest"] = 38790,-- Source Quest: Rethu's Pick
-						["provider"] = { "n", 93735 },			-- Quest Giver: Rethu Ironhorn
+					}),
+					q(38793, {	-- Rethu's Experience
+						["sourceQuest"] = 38790,	-- Rethu's Pick
+						["provider"] = { "n", 93735 },	-- Rethu Ironhorn
 						["groups"] = {
 							recipe(184486),	-- Leystone Seam [Rank 3]
 						},
-					},
+					}),
 				}
-			},
-			{
-				["npcID"] = 104877,	-- Leystone Basilisk
+			}),
+			n(104877, {	-- Leystone Basilisk
 				["groups"] = {
-					{
-						["itemID"] = 124491,	-- Living Leystone Sample
-						["questID"] = 38785,	-- Living Leystone Sample (Quest)
+					i(124491, {	-- Living Leystone Sample
+						["questID"] = 38785,	-- Living Leystone Sample
 						["groups"] = {
 							recipe(184488),	-- Living Leystone [Rank 1]
 						},
-					},
-					{
-						["itemID"] = 124494,	-- Chunk of Horn
-						["questID"] = 38791,	-- Rethu's Horn (Quest)
-						["sourceQuest"] = 38787,	-- Source Quest: The Legend of Rethu Ironhorn
+					}),
+					i(124494, {	-- Chunk of Horn
+						["questID"] = 38791,	-- Rethu's Horn
+						["sourceQuest"] = 38787,	-- The Legend of Rethu Ironhorn
 						["groups"] = {
 							recipe(184489),	-- Living Leystone [Rank 2]
 						},
-					},
-					{
-						["questID"] = 38794,	-- Rethu's Sacrifice (Quest)
-						["sourceQuest"] = 38791,-- Source Quest: Rethu's Horn
-						["provider"] = { "n", 93735 },			-- Quest Giver: Rethu Ironhorn
+					}),
+					q(38794, {	-- Rethu's Sacrifice
+						["sourceQuest"] = 38791,	-- Rethu's Horn
+						["provider"] = { "n", 93735 },	-- Rethu Ironhorn
 						["groups"] = {
 							recipe(184490),	-- Living Leystone [Rank 3]
 						},
-					},
+					}),
 				}
-			},
-			{
-				["questID"] = 38888,	-- The Highmountain Tauren
-				["sourceQuests"] = {38777, 38784, 38785},	-- Source Quests: Leystone Deposit Sample, Leystone Seam Sample, and Living Leystone Sample.
+			}),
+			q(38888, {	-- The Highmountain Tauren
+				["sourceQuests"] = {
+					38777,	-- Leystone Deposit Sample
+					38784,	-- Leystone Seam Sample
+					38785	-- Living Leystone Sample
+				},
 				["description"] = "You must complete all of the Rank 1 Leystone mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
-				["provider"] = { "n", 93189 }, 		-- Quest Giver: Mama Diggs <Mining Trainer>
-			},
-			{
-				["questID"] = 38786,	-- Where Respect is Due
-				["sourceQuest"] = 38888,-- Source Quest: The Highmountain Tauren
-				["provider"] = { "n", 93691 }, 		-- Quest Giver: Ronos Ironhorn <Mining Trainer>
-			},
-			{
-				["questID"] = 38787,	-- The Legend of Rethu Ironhorn
-				["sourceQuest"] = 38786,-- Source Quest: Where Respect is Due
-				["provider"] = { "n", 93691 }, 		-- Quest Giver: Ronos Ironhorn <Mining Trainer>
-			},
+				["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
+			}),
+			q(38786, {	-- Where Respect is Due
+				["sourceQuest"] = 38888,	-- The Highmountain Tauren
+				["provider"] = { "n", 93691 },	-- Ronos Ironhorn <Mining Trainer>
+			}),
+			q(38787, {	-- The Legend of Rethu Ironhorn
+				["sourceQuest"] = 38786,	-- Where Respect is Due
+				["provider"] = { "n", 93691 },	-- Ronos Ironhorn <Mining Trainer>
+			}),
 		}),
 	}),
 	filter(101, { 	-- Pet Battle
@@ -276,10 +246,9 @@ profession(MINING, {
 		i(118919),	-- Red Goren Egg
 	}),
 	n(QUESTS, {
-		{
-			["questID"] = 38807,	-- Infernal Brimstone Analysis
-			["sourceQuest"] = 38806,	-- Source Quest: Infernal Brimstone Sample (Quest)
-			["provider"] = { "n", 93189 },			-- Quest Giver: Mama Diggs <Mining Trainer>
+		q(38807, {	-- Infernal Brimstone Analysis
+			["sourceQuest"] = 38806,	-- Infernal Brimstone Sample
+			["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 			["lvl"] = 110,
 			["groups"] = {
 				{
@@ -287,34 +256,30 @@ profession(MINING, {
 					["spellID"] = 184505,	-- Infernal Brimstone [Rank 2]
 				},
 			},
-		},
-		{
-			["questID"] = 39790,	-- Infernal Brimstone Theory
-			["sourceQuest"] = 38807,	-- Source Quest: Infernal Brimstone Analysis (Quest)
-			["provider"] = { "n", 93189 },			-- Quest Giver: Mama Diggs <Mining Trainer>
+		}),
+		q(39790, {	-- Infernal Brimstone Theory
+			["sourceQuest"] = 38807,	-- Infernal Brimstone Analysis
+			["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 			["lvl"] = 110,
-		},
-		{
-			["questID"] = 39763,	-- For Whom the Fel Tolls
-			["sourceQuest"] = 39790,	-- Source Quest: Infernal Brimstone Theory (Quest)
-			["provider"] = { "n", 97360 },			-- Quest Giver: Matthew Rabis <Feral Warlock>
+		}),
+		q(39763, {	-- For Whom the Fel Tolls
+			["sourceQuest"] = 39790,	-- Infernal Brimstone Theory
+			["provider"] = { "n", 97360 },	-- Matthew Rabis <Feral Warlock>
 			["lvl"] = 110,
-		},
-		{
-			["questID"] = 39817,	-- The Brimstone's Secret
-			["sourceQuest"] = 39763,	-- Source Quest: For Whom the Fel Tolls (Quest)
-			["provider"] = { "n", 97360 },			-- Quest Giver: Matthew Rabis <Feral Warlock>
+		}),
+		q(39817, {	-- The Brimstone's Secret
+			["sourceQuest"] = 39763,	-- For Whom the Fel Tolls
+			["provider"] = { "n", 97360 },	-- Matthew Rabis <Feral Warlock>
 			["lvl"] = 110,
-		},
-		{
-			["questID"] = 39830,	-- Hellfire Citadel: Hellfire and Brimstone
-			["sourceQuest"] = 39817,	-- Source Quest: The Brimstone's Secret
-			["provider"] = { "n", 93189 },			-- Quest Giver: Mama Diggs <Mining Trainer>
+		}),
+		q(39830, {	-- Hellfire Citadel: Hellfire and Brimstone
+			["sourceQuest"] = 39817,	-- The Brimstone's Secret
+			["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 			["lvl"] = 110,
 			["groups"] = {
 				recipe(191970),	-- Infernal Brimstone [Rank 3]
 			},
-		},
+		}),
 	}),
 	n(-34,  {	-- World Quests
 		["lvl"] = 110,
@@ -343,9 +308,8 @@ profession(MINING, {
 					i(124444, {	-- Infernal Brimstone
 						["sourceQuest"] = 39830,	-- Hellfire Citadel: Hellfire and Brimstone
 					}),
-					{
-						["itemID"] = 124502,	-- Infernal Brimstone Sample
-						["questID"] = 38806,	-- Infernal Brimstone Sample (Quest)
+					i(124502, {	-- Infernal Brimstone Sample
+						["questID"] = 38806,	-- Infernal Brimstone Sample
 						["lvl"] = 110,
 						["groups"] = {
 							{
@@ -353,7 +317,7 @@ profession(MINING, {
 								["spellID"] = 184504,	-- Infernal Brimstone [Rank 1]
 							},
 						},
-					},
+					}),
 				},
 			}),
 		},

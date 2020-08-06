@@ -835,6 +835,7 @@ _.NeverImplemented =
 		q(34526),	-- Iron Docks Challenge Mode - Consolation (Nth)
 		q(34538),	-- Iron Docks Challenge Mode - Gold Addition (Nth)
 		q(34537),	-- Iron Docks Challenge Mode - Silver Addition (Nth)
+		q(35958),	-- Iron Docks Reward Quest
 		q(36866),	-- Lower Blackrock Spire cleared
 		q(34545),	-- Shadowmoon Burial Grounds Challenge Mode - Bronze Addition (Nth)
 		q(34528),	-- Shadowmoon Burial Grounds Challenge Mode - Consolation (Nth)
@@ -1043,7 +1044,6 @@ _.NeverImplemented =
 		q(45855),	-- Tank Trait Complete — triggered when raising weapon during "A Gift From the Six," #45863, on vengeance DH
 		q(43511),	-- Kalec Arrives — triggered when turning in "The Power Within" at Azurewing Repose (starting Balance of Power)
 		q(45302),	-- 7.1.5 Class Hall - Brawlers Missions - Has Completed Any Brawlers Mission with Overmax - Tracking Quest — triggered when doing my first brawl for BFA
-		q(48974),	-- Unused Paragon quest, it seems the active one is #48977, "Supplies From the Army of the Light"
 		q(45311),	-- 7.1.5 Class Hall - Special - Brawlers - Fight 04 - Tracking Quest — completing "I've Got a Strange Feeling About This" mission while unlocking Meatball
 		q(45313),	-- 7.1.5 Class Hall - Brawlers - Fight 04 - Overmax Reward Credit - Tracking Quest — same as above
 		q(40584),	-- Azsuna - FLAG - Witnessed Drake Lift Crystal - triggers shortly after arriving in Azurewing Repose when turning in "Journey to the Repose"
@@ -1087,6 +1087,9 @@ _.NeverImplemented =
 		q(44297),	-- Tracking Quest - W2 - Jaina Gone
 		q(44659),	-- Dalaran - I Skipped The Intro Tracking Quest
 		q(48984),	-- Antoran Wastes - triggered when combining the Smashed Portal Generator and other parts to make Vishak's Portal Generator
+		q(49022),	-- Antoran Wastes - triggered when looting Forgotten Legion Supplies. Probably achievement criteria as chests have their own questIDs
+		q(49023),	-- Antoran Wastes - triggered when looting Ancient Legion War Cache. Probably achievement criteria as chests have their own questIDs
+		q(49024),	-- Antoran Wastes - triggered when looting Fel-Bound Chest. Probably achievement criteria as chests have their own questIDs
 		q(46717),	-- got achievement Burning Bridges and looted Qa'pla, Eredun War Order legendary, so one of the two
 		q(46835),	-- Whispers of a Frightened World Tracking, while doing quest 46206
 		q(43659),	-- Mage - learned the Felo'melorn appearance from The Stars' Design (maybe put this on the appearance item?)
@@ -2411,6 +2414,7 @@ _.NeverImplemented =
 		q(55848),	-- Reclamation Rig hardmode — putting here because with both quests attached with altQuests it doesn't roll over like dailies should
 		q(55913),	-- Arachnoid Harvester first kill
 		q(56996),	-- Armored Vaultbot first kill
+		q(56997),	-- Armored Vaultbot first kill in alternate timeline
 		-- Boilburn first kill  -- No first kill id
 		q(55920),	-- Boggac Skullbash first kill
 		q(55919),	-- Bonepicker first kill
@@ -2442,7 +2446,7 @@ _.NeverImplemented =
 		q(55923),	-- Sparkqueen P'Emp first kill
 		q(55933),	-- Steel Singer Freza first kill
 		q(55931),	-- The Kleptoboss first kill
-		-- The Rusty Prince first kill
+		q(56995),	-- The Rusty Prince first kill
 		q(56713),	-- seems to trigger on every Rusty Prince kill, along with 56182
 		q(55908),	-- The Scrap King first kill
 		q(55921),	-- Uncle T'Rogg first kill

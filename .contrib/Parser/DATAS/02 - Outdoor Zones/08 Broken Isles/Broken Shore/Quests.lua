@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -547,7 +548,6 @@ _.Zones =
 					["classes"] = { PRIEST },
 				}),
 				--[[
-				q(45571),	-- A Bit of Espionage
 				q(45343),	-- A Curious Contagion
 				q(46336),	-- A Golden Ticket
 				q(43407),	-- A Hero's Weapon
@@ -679,7 +679,6 @@ _.Zones =
 				q(44269),	-- Odyn's Challenge
 				q(44268),	-- Odyn's Challenge
 				q(45243),	-- On Daumyr's Wings
-				q(38805),	-- Ondri
 				q(38802),	-- Ondri's Still-Beating Heart
 				q(47017),	-- Only the Best
 				q(39799),	-- Our Next Move
