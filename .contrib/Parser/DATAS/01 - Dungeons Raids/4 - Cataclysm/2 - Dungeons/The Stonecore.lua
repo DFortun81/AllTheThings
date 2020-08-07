@@ -7,11 +7,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["lvl"] = 80,
 		["mapID"] = 324,
 		["groups"] = {
-			d( 1, {	-- Normal
-				n(QUESTS, { 				
+			d(1, {	-- Normal
+				n(QUESTS, {
 					q(28814, {	-- Followers and Leaders
 						["provider"] = { "n", 50048 },	-- Earthwarden Yrsa
-						["sourceQuests"] = {28815},	-- Twilight Documents
+						["sourceQuests"] = { 28815 },	-- Twilight Documents
 						["groups"] = {
 							i(66892),	-- Band of the One Hundred and One
 							i(66893),	-- High Priestess' Signet
@@ -134,10 +134,32 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(REMOVED_FROM_GAME, i(55819)),	-- Tear of Blood (7.3.5 - Removed from Game!)
 				})),
 			}),
-			d( 2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 85,
 				["ignoreBonus"] = true,
 				["groups"] = {
+					n(QUESTS, {
+						q(28814, {	-- Followers and Leaders
+							["provider"] = { "n", 50048 },	-- Earthwarden Yrsa
+							["sourceQuests"] = { 28815 },	-- Twilight Documents
+							["groups"] = {
+								i(66892),	-- Band of the One Hundred and One
+								i(66893),	-- High Priestess' Signet
+								i(66891),	-- Pauldrons of Unholy Rituals
+							},
+						}),
+						q(28815, {	-- Twilight Documents
+							["provider"] = { "n", 50048 },	-- Earthwarden Yrsa
+						}),
+						q(28824, {	-- Wayward Child
+							["provider"] = { "n", 42465 },	-- Therazane <The Stonemother>
+							["groups"] = {
+								i(66897),	-- Crystal Shimmer Cloak
+								i(66894),	-- Leggings of the Lost Child
+								i(66896),	-- Stonecore Belt
+							},
+						}),
+					}),
 					cr(43438, e(110, {	-- Corborus
 						i(157592),	-- Crackling Geode Mace
 						i(56329),	-- Fist of Pained Senses
