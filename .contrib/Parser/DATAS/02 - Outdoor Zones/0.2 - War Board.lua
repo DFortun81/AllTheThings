@@ -91,6 +91,7 @@ _.Zones =
 			}),
 			q(49543, {	-- Warchief's Command: Dread Wastes!
 				["isBreadcrumb"] = true,
+				["races"] = HORDE_ONLY,
 			}),
 			q(28554, {	-- Warchief's Command: Dustwallow Marsh!
 				["isBreadcrumb"] = true,
@@ -217,6 +218,7 @@ _.Zones =
 			q(49542, {	-- Warchief's Command: Townlong Steppes!
 				["isBreadcrumb"] = true,
 				["lvl"] = 83,
+				["races"] = HORDE_ONLY,
 			}),
 			q(28717, {	-- Warchief's Command: Twilight Highlands!
 				["isBreadcrumb"] = true,
@@ -325,6 +327,7 @@ _.Zones =
 			q(49561, {	-- Hero's Call: Dread Wastes!
 				["isBreadcrumb"] = true,
 				["lvl"] = 84,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(28564, {	-- Hero's Call: Duskwood!
 				["isBreadcrumb"] = true,
@@ -492,6 +495,7 @@ _.Zones =
 			q(49560, {	-- Hero's Call: Townlong Steppes!
 				["isBreadcrumb"] = true,
 				["lvl"] = 83,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(28716, {	-- Hero's Call: Twilight Highlands! (breadcrumb quest for 26960) (max level 93)
 				["isBreadcrumb"] = true,

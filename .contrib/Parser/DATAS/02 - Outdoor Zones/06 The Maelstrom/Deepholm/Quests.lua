@@ -443,7 +443,6 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 44010 },	-- Stormcaller Mylra
 					["coord"] = { 64.4, 82.2, 207 },
-					["sourceQuests"] = { 27061 },	-- The Twilight Overlook
 				}),
 				q(29338, {	-- Into Unrelenting Flame
 					["lvl"] = 85,

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -20,6 +21,10 @@ _.Zones =
 				q(30814, {	-- A Foot in the Door
 					["coord"] = { 71.1, 56.6, 388 },
 					["provider"] = { "n", 60688 },	-- Taran Zhu
+					["sourceQuests"] = {
+						49560,	-- Hero's Call: Townlong Steppes!
+						49542,	-- Warchief's Command: Townlong Steppes!
+					},
 				}),
 				q(30964, {	-- A Proper Poultice
 					["coord"] = { 49.1, 71.3, 388 },
