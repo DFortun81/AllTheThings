@@ -24,9 +24,17 @@ i(37431);	-- Fetch Ball
 i(44618);	-- Glass of Aged Dalaran Red
 i(18269);	-- Gordok Green Grog
 i(19296);	-- Greater Darkmoon Prize
+i(62343);	-- Greater Inscription of Charged Lodestone
+i(62345);	-- Greater Inscription of Jagged Stone
+i(62346);	-- Greater Inscription of Shattered Crystal
+i(62333);	-- Greater Inscription of Unbreakable Quartz
 i(43626);	-- Happy Pet Snack
 i(18284);	-- Kreeg's Stout Beatdown
 i(19297);	-- Lesser Darkmoon Prize
+i(62342);	-- Lesser Inscription of Charged Lodestone
+i(62344);	-- Lesser Inscription of Jagged Stone
+i(62347);	-- Lesser Inscription of Shattered Crystal
+i(62321);	-- Lesser Inscription of Unbreakable Quartz
 i(142263);	-- Machine Fluid
 i(138883);	-- Meryl's Conjured Refreshment
 i(19298);	-- Minor Darkmoon Prize
