@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -85,6 +86,7 @@ _.Zones =
 				q(25423, {	-- Ancient Suffering
 					["provider"] = { "n", 40131 },	-- Sensiria
 					["coord"] = { 65.9, 62.8, 69 },
+					["description"] = "You need to pick up |cFFFFD700The Lost Apprentice|r for this quest to appear.",
 				}),
 				q(2979, {	-- Dark Ceremony
 					["u"] = REMOVED_FROM_GAME,
@@ -301,7 +303,7 @@ _.Zones =
 				q(25432, {	-- It's not "Ogre" Yet
 					["provider"] = { "n", 39725 },	-- Adella
 					["coord"] = { 77.2, 56.5, 69 },
-					["races"] = ALLIANCE_ONLY, 
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27063, {	-- Looming Threat
 					["provider"] = { "n", 40032 },	-- Telaron Windflight
@@ -355,7 +357,7 @@ _.Zones =
 						i(54912),	-- Telaron's Platemail
 						i(54909),	-- Windflight Staff
 						i(131421),	-- Green Whelp Spaulders
-						i(156984),	-- Windflight Knife 
+						i(156984),	-- Windflight Knife
 					},
 				}),
 				q(25230, {	-- More than Illness (H)
@@ -369,7 +371,7 @@ _.Zones =
 						i(54916),	-- Konu's Platemail
 						i(54913),	-- Runetotem Staff
 						i(131411),	-- Green Whelp Spaulders
-						i(156983),	-- Runetotem Slicer 
+						i(156983),	-- Runetotem Slicer
 					},
 				}),
 				q(3127, {	-- Mountain Giant Muisek
@@ -695,6 +697,7 @@ _.Zones =
 				q(25422, {	-- The Darkmist Legacy
 					["provider"] = { "n", 40131 },	-- Sensiria
 					["coord"] = { 65.9, 62.8, 69 },
+					["description"] = "You need to pick up |cFFFFD700The Lost Apprentice|r for this quest to appear.",
 				}),
 				q(25643, {	-- The Darkmist Ruins
 					["provider"] = { "n", 5390 },	-- Sage Palerunner
@@ -912,7 +915,7 @@ _.Zones =
 				q(25339, {	-- Vengeance on the Northspring
 					["provider"] = { "n", 7776 },	-- Talo Thornhoof
 					["coord"] = { 41.5, 15.2, 69 },
-					["races"] = HORDE_ONLY, 
+					["races"] = HORDE_ONLY,
 				}),
 				q(25368, {	-- Verinias the Twisted
 					["provider"] = { "n", 40131 },	-- Sensiria
