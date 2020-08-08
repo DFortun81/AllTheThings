@@ -310,7 +310,6 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10418)),	-- Glimmering Mithril Insignia
 					},
-
 				}),
 				q(27003, {	-- Easy Money
 					["provider"] = { "n", 44833 },	-- Adarrah

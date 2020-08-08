@@ -6,6 +6,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 	inst(63, { 	-- Deadmines
 		["mapID"] = 291,
 		["maps"] = { 292 },
+		["coord"] = { 25.59, 50.97, 55 },	-- Deadmines, The Deadmines [Westfall]
 		["g"] = {
 			d(2, {	-- Heroic
 				["lvl"] = 85,

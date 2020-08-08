@@ -6,8 +6,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 	inst(65, { 	-- Throne of the Tides
 		["lvl"] = 77,
 		["maps"] = { 322, 323 },
+		["coord"] = { 71.00, 29.00, 204 },	-- Abyssal Depths, Vashj'ir
 		["groups"] = {
-			n(QUESTS, { 				
+			n(QUESTS, {
 				q(28834, {	-- Rescue the Earthspeaker!
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -59,8 +60,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(55262),	-- Barnacle Pendant
 					i(55261),	-- Ring of the Great Whale
 				},
-			}),	
-			d( 1, {	-- Normal
+			}),
+			d(1, {	-- Normal
 				cr(40586, e(101, {	-- Lady Naz'jar
 					i(56266),	-- Lightning Whelk Axe
 					i(56269),	-- Aurelian Mitre
@@ -125,7 +126,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(REMOVED_FROM_GAME, i(55256)),	-- Sea Star (7.3.5 - Removed from Game!)
 				}))
 			}),
-			d( 2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 85,
 				["ignoreBonus"] = true,
 				["groups"] = {
