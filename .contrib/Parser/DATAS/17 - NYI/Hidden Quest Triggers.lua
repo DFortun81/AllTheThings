@@ -378,6 +378,8 @@ _.NeverImplemented =
 		-------------------
 		--	Dungeons & Raids
 		q(35348),	-- Blackrock Caverns Reward Quest
+		q(35351),	-- Blackrock Caverns Reward Quest
+		q(35352),	-- Blackrock Caverns Bonus Reward. Killing Beauty
 		q(35587),	-- Deadmines heroic completion
 		q(35358),	-- End Time heroic completion
 		q(35404),	-- Grim Batol Reward Quest
@@ -392,6 +394,7 @@ _.NeverImplemented =
 		q(35366),	-- Throne of the Tides Bonus Reward (kill Mindbender Ghur'sha, triggered in Timewalking)
 		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
 		q(35411),	-- Zul'Gurub Reward Quest
+		q(35412),	-- Zul'Gurub Bonus Objective Reward Quest. Killing Cache of Madness
 		q(35435),	-- Well of Eternity Reward Quest
 
 		q(28347),	-- Coffer of Promise TRACKING QUEST
