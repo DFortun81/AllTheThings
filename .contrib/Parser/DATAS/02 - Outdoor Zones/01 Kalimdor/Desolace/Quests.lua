@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -45,6 +46,7 @@ _.Zones =
 				}),
 				q(14380, {	-- An Impactful Discovery
 					["provider"] = { "n", 36329 },	-- Thargad
+					["coord"] = { 36.7, 71.3, 66 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14378,	-- Hunting Brendol
 				}),
@@ -197,6 +199,7 @@ _.Zones =
 				}),
 				q(14381, {	-- Cleansing Our Crevasse (A)
 					["provider"] = { "n", 36034 },	-- Karnum Marshweaver
+					["coord"] = { 57.4, 47.6, 66 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14380,	-- An Impactful Discovery
 					["g"] = {
@@ -313,6 +316,7 @@ _.Zones =
 				}),
 				q(14354, {	-- Elune's Gifts
 					["provider"] = { "n", 5642 },	-- Vahlarriel Demonslayer
+					["coord"] = { 66.4, 11.8, 66 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14387,	-- Lay of the Land
 					["g"] = {
@@ -423,6 +427,7 @@ _.Zones =
 				}),
 				q(14378, {	-- Hunting Brendol
 					["provider"] = { "n", 36329 },	-- Thargad
+					["coord"] = { 36.7, 71.3, 66 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						14373,	-- Infernal Encroachment
@@ -436,6 +441,7 @@ _.Zones =
 				}),
 				q(14373, {	-- Infernal Encroachment
 					["provider"] = { "n", 36329 },	-- Thargad
+					["coord"] = { 36.7, 71.3, 66 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(55931),	-- Demonkiller Mask
@@ -505,6 +511,7 @@ _.Zones =
 				}),
 				q(14387, {	-- Lay of the Land
 					["provider"] = { "n", 5396 },	-- Captain Pentigast
+					["coord"] = { 66.6, 11.0, 66 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14384,	-- Rerouted!
 				}),
@@ -527,6 +534,8 @@ _.Zones =
 					["sourceQuest"] = 14325,	-- Will Work For Food
 				}),
 				q(14282, {	-- Mystery Solved
+					["provider"] = { "n", 35773 },	-- Cenarion Researcher Korrah
+					["coord"] = { 38.7, 26.9, 66 },
 					["sourceQuest"] = 14268,	-- Deep Impact
 					["g"] = {
 						i(55896), 	-- Emblazoned Girdle
@@ -554,6 +563,8 @@ _.Zones =
 					}
 				}),
 				q(14360, {	-- Nothing a Couple of Melons Won't Fix (H)
+					["provider"] = { "0", 195433 },	-- Ancient Tablets
+					["coord"] = { 69.2, 29.2, 66 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14191,	-- Furien's Footsteps
 				}),
@@ -573,6 +584,7 @@ _.Zones =
 				}),
 				q(14361, {	-- Peace of Mind (A)
 					["provider"] = { "n", 5396 },	-- Captain Pentigast
+					["coord"] = { 66.6, 11.0, 66 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14354,	-- Elune's Gifts
 				}),
@@ -584,6 +596,7 @@ _.Zones =
 				}),
 				q(14374, {	-- Portals of the Legion (A)
 					["provider"] = { "n", 36329 },	-- Thargad
+					["coord"] = { 36.7, 71.3, 66 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(55937),	-- Bracer of Portals
@@ -616,6 +629,8 @@ _.Zones =
 					},
 				}),
 				q(14364, {	-- Putting Their Heads Together (A)
+					["provider"] = { "n", 5396 },	-- Captain Pentigast
+					["coord"] = { 66.6, 11.0, 66 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14363,	-- You'll Know it When You See It
 					["g"] = {
@@ -625,6 +640,8 @@ _.Zones =
 					},
 				}),
 				q(14227, {	-- Putting Their Heads Together (H)
+					["provider"] = { "n", 35298 },	-- Sorrem
+					["coord"] = { 44.9, 29.5, 66 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14225,	-- You'll Know it When You See It
 					["g"] = {
@@ -679,6 +696,8 @@ _.Zones =
 					},
 				}),
 				q(14198, {	-- Rider on the Storm
+					["provider"] = { "o", 195445 },	-- Ancient Vortex Runestone
+					["coord"] = { 74.8, 13.2, 66 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14196,	-- Firestarter
 					["g"] = {
@@ -689,6 +708,7 @@ _.Zones =
 				}),
 				q(14379, {	-- Rock Lobstrock!
 					["provider"] = { "n", 36378 },	-- Dumti
+					["coord"] = { 36.4, 71.2, 66 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						14373,	-- Infernal Encroachment
@@ -770,6 +790,7 @@ _.Zones =
 				}),
 				q(14372, {	-- Thargad's Camp
 					["provider"] = { "n", 36034 },	-- Karnum Marshweaver
+					["coord"] = { 57.4, 47.6, 66 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 14327,	-- My Word is My Bond
@@ -855,6 +876,7 @@ _.Zones =
 				}),
 				q(1456,  {	-- The Karnitol Shipwreck
 					["provider"] = { "n", 5638 },	-- Kreldig Ungor
+					["coord"] = { 66.2, 9.6, 66 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1455,	-- The Karnitol Shipwreck
 					["g"] = {
@@ -866,8 +888,9 @@ _.Zones =
 				}),
 				q(1455,  {	-- The Karnitol Shipwreck
 					["model"] = 196979,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 35251 },	-- Karnitol's Chest
+					["coord"] = { 36.1, 30.4, 66 },
+					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1454,	-- The Karnitol Shipwreck
 				}),
 				q(14410, {	-- The Wilds of Feralas (A)
