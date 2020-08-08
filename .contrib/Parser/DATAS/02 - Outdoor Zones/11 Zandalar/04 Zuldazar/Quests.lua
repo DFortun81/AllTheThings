@@ -1297,10 +1297,18 @@ _.Zones =
 					["coord"] = { 64.0, 35.4, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(50791, {	-- Skree...
+					["sourceQuests"] = { 50402 },	-- SKREEEEE! (#1)
+					["provider"] = { "n", 135272 },	-- Kua'fon
+					["isDaily"] = true,
+					["coord"] = { 70.7, 50.8, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(50402, {	-- SKREEEEE! (#1)
 					["sourceQuests"] = { 50394 },	-- Your Problem Now
 					["provider"] = { "n", 133678 },	-- Kua'fon
-					["coord"] = { 70.8, 50.9 },
+					["coord"] = { 70.8, 50.9, 862 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
