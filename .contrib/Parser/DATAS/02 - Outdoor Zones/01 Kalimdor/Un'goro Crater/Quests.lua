@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -292,7 +293,7 @@ _.Zones =
 						i(53563),	-- Stegodon Tusk Mace
 						i(53564),	-- Osteoderm Belt
 						i(53565),	-- Diemetradon Plate Gloves
-						i(156996),	-- Tailspike Pike 
+						i(156996),	-- Tailspike Pike
 					},
 				}),
 				q(13889, {	-- Hungry, Hungry Hatchling
@@ -342,13 +343,14 @@ _.Zones =
 				q(24734, {	-- Lost!
 					["provider"] = { "n", 9997 },	-- Spraggle Frock
 					["coord"] = { 54.9, 62.6, 78 },
-					["sourceQuest"] = 24794,	-- Speak with Spraggle
+					["sourceQuests"] = {
+						24742,	-- Finding the Source
+						24794,	-- Speak with Spraggle
+					},
 				}),
 				q(4492,  {	-- Lost!
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9997 },	-- Spraggle Frock
-				--	["coord"] = { 54.9, 62.6, 78 },
-				--	["sourceQuest"] = 24794,	-- Speak with Spraggle
 				}),
 				q(4321, {	-- Making Sense of It
 					["u"] = REMOVED_FROM_GAME,
