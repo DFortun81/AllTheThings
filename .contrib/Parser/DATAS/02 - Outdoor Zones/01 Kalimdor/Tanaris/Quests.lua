@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -212,7 +213,7 @@ _.Zones =
 					["sourceQuest"] = 24932,	-- Cutting Losses
 				}),
 				q(13825, {	-- Clamlette Surprise
-					["u"] = REMOVED_FROM_GAME,	
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 40589 },	-- Dirge Quikcleave
 					["description"] = "This quest is only available if you learned Artisan Cooking before 3.1.0",
 					["requireSkill"] = COOKING,
@@ -309,7 +310,7 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10418)),	-- Glimmering Mithril Insignia
 					},
-					
+
 				}),
 				q(27003, {	-- Easy Money
 					["provider"] = { "n", 44833 },	-- Adarrah
@@ -812,7 +813,7 @@ _.Zones =
 						i(56888),	-- Sandscraper Bracers
 						i(56889),	-- Business Finisher
 						i(56890),	-- Bilgewater Brooch
-						i(157014),	-- Dunemaul Skullcracker 
+						i(157014),	-- Dunemaul Skullcracker
 					},
 				}),
 				q(25014, {	-- Sandscraper's Treasure
@@ -833,7 +834,7 @@ _.Zones =
 						i(56844),	-- Bone Valley Mace
 						i(56845),	-- Blood Speaker Tunic
 						i(56846),	-- Bloodcraver Pauldrons
-						i(157024),	-- Sandfury Hatchet 
+						i(157024),	-- Sandfury Hatchet
 					},
 				}),
 				q(2865, {	-- Scarab Shells
@@ -900,7 +901,7 @@ _.Zones =
 					["provider"] = { "n", 151132 },	-- Feathers
 					["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
 					["lvl"] = 120,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						53815,	-- Whatever Happened to Saffy Flivvers?
 						53817,	-- Whatever Happened to Grizzek Fizzwrench?
 					},
@@ -1028,12 +1029,14 @@ _.Zones =
 					["coord"] = { 40.1, 76.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25420,	-- Ancient Obstacles
+					["description"] = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
 				}),
 				q(25069, {	-- The Secrets of Uldum
 					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25017,	-- Ancient Obstacles
+					["description"] = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
 				}),
 				q(3444, {	-- The Stone Circle
 					["u"] = REMOVED_FROM_GAME,
@@ -1046,7 +1049,7 @@ _.Zones =
 				q(2954,  {	-- The Stone Watcher
 					["provider"] = { "n", 7918 },	-- Stone Watcher of Norgannon
 					["coord"] = { 37.6, 81.4, 71 },
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						2966,	-- Seeing What Happens [Horde]
 						2946,	-- Seeing What Happens [Alliance]
 					},
@@ -1242,7 +1245,7 @@ _.Zones =
 						i(56884),	-- "Smart Bracers"
 						i(56885),	-- Dagger of the Ides
 						i(56886),	-- Gnomeregan Medallion of Merit
-						i(157015),	-- Meatface's Tenderizer 
+						i(157015),	-- Meatface's Tenderizer
 					},
 				}),
 				-- Scale of Sands / Repeatable Switch Ring Quests
