@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -935,7 +936,10 @@ _.Zones =
 				q(28045, {	-- The Greatest Flavor in the World!
 					["provider"] = { "n", 47383 },	-- Brivelthwerp
 					["coord"] = { 69.8, 85.1, 64 },
-					["sourceQuest"] = 28042,	-- Special Delivery for Brivelthwerp
+					["sourceQuests"] = {
+						28031,	-- Special Delivery for Brivelthwerp (A)
+						28042,	-- Special Delivery for Brivelthwerp (H)
+					},
 				}),
 				q(25487, {	-- The Grimtotem are Coming
 					["provider"] = { "n", 39895 },	-- Kanati Greycloud
@@ -1126,7 +1130,10 @@ _.Zones =
 				q(28051, {	-- We All Scream for Ice Cream... and then Die!
 					["provider"] = { "n", 47383 },	-- Brivelthwerp
 					["coord"] = { 69.8, 85.1, 64 },
-					["sourceQuest"] = 28042,	-- Special Delivery for Brivelthwerp
+					["sourceQuests"] = {
+						28031,	-- Special Delivery for Brivelthwerp (A)
+						28042,	-- Special Delivery for Brivelthwerp (H)
+					},
 					["g"] = {
 						i(63583),	-- Belt of Feigned Joy
 						i(63584),	-- Ice Cream Mitts
