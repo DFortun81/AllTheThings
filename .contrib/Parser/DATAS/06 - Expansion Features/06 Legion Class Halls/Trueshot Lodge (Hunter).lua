@@ -54,6 +54,9 @@ _.ExpansionFeatures =
 						["classes"] = { 3 },	-- Hunter
 					}),
 					q(46783),	-- Further Advancement
+					q(43880, {	-- Hitting the Books
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(42403, {	-- Highmountain Hunters
 						["isBreadcrumb"] = true,
 					}),

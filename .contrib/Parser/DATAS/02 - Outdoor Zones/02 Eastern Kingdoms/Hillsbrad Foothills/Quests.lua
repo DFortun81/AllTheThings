@@ -151,6 +151,7 @@ _.Zones =
 					["sourceQuests"] = {
 						28332,	-- Helcular's Command
 						28331,	-- Helcular's Rod Giveth...
+						28096,	-- Welcome to the Machine
 					},
 				}),
 				ql(q(30107, {	-- Cluster Clutch

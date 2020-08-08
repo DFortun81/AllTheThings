@@ -358,6 +358,9 @@ _.ExpansionFeatures =
 							i(151144),	-- Gleaming Lamp of Al'Abas
 						},
 					}),
+					q(43885, {	-- Hitting the Books
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(40950, {	-- Honoring Success
 						["coord"] = { 41.4, 78.0, 626 },
 						["classes"] = { ROGUE },

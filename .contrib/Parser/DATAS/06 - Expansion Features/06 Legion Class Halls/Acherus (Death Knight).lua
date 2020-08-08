@@ -13,6 +13,9 @@ _.ExpansionFeatures =
 			["lvl"] = 98,
 			["g"] = {
 				n(QUESTS, {
+					q(43877, {	-- Hitting the Books
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(46108, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
 					}),

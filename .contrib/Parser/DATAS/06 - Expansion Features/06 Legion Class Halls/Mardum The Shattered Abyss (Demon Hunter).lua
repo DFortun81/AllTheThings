@@ -339,6 +339,9 @@ _.ExpansionFeatures =
 						["coord"] = { 58.3, 51.1, 720 },
 						["lvl"] = 103,
 					}),
+					q(43878, {	-- Hitting the Books
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(43186, {	-- I Am the Slayer!
 						["sourceQuests"] = {
 							43184,	-- Champion: Allari the Souleater

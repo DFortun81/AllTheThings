@@ -243,6 +243,27 @@ _.PVP =
 					["races"] = HORDE_ONLY,
 					["icon"] = "Interface\\Icons\\ability_warrior_warcry",
 					["g"] = {
+						ach(712),	-- Warsong Outrider
+						n(QUESTS, {
+							q(7866,  {	-- Outrider Basic Care Package
+								["provider"] = { "n", 14754 },	-- Kelm Hargunth
+								["coord"] = { 40.2, 20.0, 10 },
+								["races"] = HORDE_ONLY,
+								["minReputation"] = { 889, FRIENDLY },
+							}),
+							q(7867,  {	-- Outrider Standard Care Package
+								["provider"] = { "n", 14754 },	-- Kelm Hargunth
+								["coord"] = { 40.2, 20.0, 10 },
+								["races"] = HORDE_ONLY,
+								["minReputation"] = { 889, HONORED },
+							}),
+							q(7868,  {	-- Outrider Advanced Care Package
+								["provider"] = { "n", 14754 },	-- Kelm Hargunth
+								["coord"] = { 40.2, 20.0, 10 },
+								["races"] = HORDE_ONLY,
+								["minReputation"] = { 889, REVERED },
+							}),
+						}),
 						n(14754, {	-- Kelm Hargunth <Warsong Supply Officer>
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 40.2, 20.0, 1307 },

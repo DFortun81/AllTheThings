@@ -515,6 +515,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 105917 },	-- Image of Kalec
 						["sourceQuest"] = 42008,	-- Eyes of the Dragon
 					}),
+					q(43749, {	-- Hitting the Books
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(42493, {	-- Impending Dooooooom!
 						["maps"] = { 680 },
 						["coord"] = { 64.2, 29.5, 683 },

@@ -591,24 +591,6 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(7866,  {	-- Outrider Basic Care Package
-					["provider"] = { "n", 14754 },	-- Kelm Hargunth
-					["coord"] = { 40.2, 20.0, 10 },
-					["races"] = HORDE_ONLY,
-					["minReputation"] = { 889, FRIENDLY },
-				}),
-				q(7867,  {	-- Outrider Standard Care Package
-					["provider"] = { "n", 14754 },	-- Kelm Hargunth
-					["coord"] = { 40.2, 20.0, 10 },
-					["races"] = HORDE_ONLY,
-					["minReputation"] = { 889, HONORED },
-				}),
-				q(7868,  {	-- Outrider Advanced Care Package
-					["provider"] = { "n", 14754 },	-- Kelm Hargunth
-					["coord"] = { 40.2, 20.0, 10 },
-					["races"] = HORDE_ONLY,
-					["minReputation"] = { 889, REVERED },
-				}),
 				q(1040,  {	-- Passage to Booty Bay
 					["provider"] = { "n", 3453 },	-- Wharfmaster Dizzywig
 					["coord"] = { 63.2, 38.4, 10 },

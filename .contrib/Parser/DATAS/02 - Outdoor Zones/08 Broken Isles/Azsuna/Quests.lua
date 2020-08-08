@@ -768,6 +768,10 @@ _.Zones =
 					["coord"] = { 48.0, 26.9, 630 },
 					["provider"] = { "n", 89975 },	-- Senegos
 				}),
+				q(43942, {	-- Timeworn Artifact
+					["lvl"] = 98,
+					["provider"] = { "i", 140249 }	-- Timeworn Artifact
+				}),
 				q(37779, {	-- Tip the Scales (Bonus Objective)
 					["coord"] = { 62.6, 42.6, 630 },
 				}),
@@ -918,7 +922,6 @@ _.Zones =
 				q(43581),	-- The Wisdom of Patience
 				q(42887),	-- This Is Retribution
 				q(37963),	-- Those Beyond Redemption
-				q(43942),	-- Timeworn Artifact
 				q(42886),	-- To Faronaar
 				q(43489),	-- To Felblaze Ingress
 				q(42406),	-- To Tame the Beast

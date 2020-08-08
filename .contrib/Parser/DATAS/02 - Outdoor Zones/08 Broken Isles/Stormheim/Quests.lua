@@ -139,6 +139,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 45.7, 72.9, 634 },
 					["sourceQuests"] = { 38617 },	-- Another Way
+					["altQuests"] = {
+						44922,	-- Inside the Winter Storm
+						44940,	-- Inside the Winter Storm
+					},
 				}),
 				q(39590, {	-- Ahead of the Game
 					["sourceQuests"] = { 38331 },	-- Havi's Test

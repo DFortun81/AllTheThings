@@ -1207,7 +1207,9 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["provider"] = { "n", 104381 },	-- Grif Wildheart
 				}),
-			--	q(44411),	-- Strange Humming Crystal -- granted by i(141349)
+				q(44411, {	-- Strange Humming Crystal
+					["provider"] = { "i", 141349 },	-- Strange Humming Crystal
+				}),
 				q(47048, {	-- Subtlety: The Thieving Apprentice
 					["classes"] = { ROGUE },
 					["providers"] = {

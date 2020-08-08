@@ -295,6 +295,7 @@ _.Zones =
 						["coord"] = { 50.6, 87.3, 338 },
 						["sourceQuest"] = 29214,	-- The Shadow Wardens
 						["isBreadcrumb"] = true,
+						["isDaily"] = true,
 					}),
 					q(29205, {	-- The Forlorn Spire
 						["provider"] = { "n", 52824 },	-- General Taldris Moonfall
