@@ -654,10 +654,16 @@ _.Zones =
 								}),
 							},
 						}),
+						q(53175, {	-- The Warfront Looms
+							["lvl"] = 120,
+							["races"] = ALLIANCE_ONLY,
+							["isBreadcrumb"] = true,
+						}),
 						q(53194, {	-- To The Front
 							["provider"] = { "n", 142721 },		-- Ralston Karn
 							["coord"] = { 65.89, 26.03, 1161 },
 							["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
+							["sourceQuest"] = 53175,	-- The Warfront Looms
 						}),
 						q(53992, {	-- Warfront: The Battle for Darkshore [Tier 3]
 							["isWeekly"] = true,
