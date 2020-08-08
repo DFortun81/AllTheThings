@@ -35,6 +35,7 @@ i(62342);	-- Lesser Inscription of Charged Lodestone
 i(62344);	-- Lesser Inscription of Jagged Stone
 i(62347);	-- Lesser Inscription of Shattered Crystal
 i(62321);	-- Lesser Inscription of Unbreakable Quartz
+i(169943);	-- Little Princess Cap
 i(142263);	-- Machine Fluid
 i(138883);	-- Meryl's Conjured Refreshment
 i(19298);	-- Minor Darkmoon Prize
