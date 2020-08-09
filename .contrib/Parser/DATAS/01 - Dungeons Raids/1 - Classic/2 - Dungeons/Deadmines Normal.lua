@@ -124,6 +124,12 @@ _.Instances = { tier(1, {	-- Classic
 							48522,	-- Defias Pirate
 						},
 					}),
+					i(1929, {	-- Silk-Threaded Trousers
+						["crs"] = {
+							48417,	-- Defias Blood Wizard
+							48418,	-- Defias Envoker
+						},
+					}),
 					i(1930, {	-- Stonemason Cloak
 						["crs"] = { 48419 },	-- Defias Miner
 					}),

@@ -1,11 +1,15 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(52, {	-- Westfall
 			n(ZONEDROPS, {
+				i(1959, {	-- Cold Iron Pick
+					["crs"] = { 623 },	-- Skeletal Miner
+				}),
 				i(1927, {	-- Deadmines Cleaver
 					["crs"] = { 594 },	-- Defias Henchman
 				}),
