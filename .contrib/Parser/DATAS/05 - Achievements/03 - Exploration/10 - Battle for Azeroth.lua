@@ -839,11 +839,9 @@ _.Achievements =
 					}),
 					ach(13765),	-- Subaquatic Support
 					ach(13722),	-- Terror of the Tadpoles
-					{	-- Three Sheets to the Wind [22 items]
-						["achievementID"] = 13061,	-- Three Sheets to the Wind
+					ach(13061, {	-- Three Sheets to the Wind
 						["g"] = {
-							{	-- "Aurora Borealis"
-								["itemID"] = 160484,		-- "Aurora Borealis"
+							i(160484, {	-- "Aurora Borealis"
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 1,			-- "Aurora Borealis"
 								["crs"] = {
@@ -865,11 +863,10 @@ _.Achievements =
 									{ 49.73, 25.22, 895 },	-- Arthur Seville
 									{ 75.37, 14.48, 1161 },	-- Harold Atkey
 									{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-									{ 50.82, 33.46, 942 },	-- Rusty Blade Waistress
+									{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
 								},
-							},
-							{	-- Admiralty-Issued Grog
-								["itemID"] = 163103,		-- Admiralty-Issued Grog
+							}),
+							i(163103, {	-- Admiralty-Issued Grog
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 2,			-- Admiralty-Issued Grog
 								["crs"] = {
@@ -889,13 +886,12 @@ _.Achievements =
 									{ 54.99, 43.63, 1161 },	-- Crimper Mirjam
 									{ 75.44, 18.61, 1161 },	-- Garrett Elmendorf
 									{ 75.37, 14.48, 1161 },	-- Harold Atkey
-									{ 77.21, 84.25, 895 },	-- Martha Mae
 									{ 21.51, 43.59, 896 },	-- Linda Deepwater
+									{ 77.21, 84.25, 895 },	-- Martha Mae
 									{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
 								},
-							},
-							{	-- Arathor Single Cask
-								["itemID"] = 163639,		-- Arathor Single Cask
+							}),
+							i(163639, {	-- Arathor Single Cask
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 3,			-- Arathor Single Cask
 								["crs"] = {
@@ -907,9 +903,8 @@ _.Achievements =
 								["coords"] = {
 									{ 58.17, 70.32, 1161 },	-- Nicolas Moal
 								},
-							},
-							{	-- Bitter Darkroot Vodka
-								["itemID"] = 159850,		-- Bitter Darkroot Vodka
+							}),
+							i(159850, {	-- Bitter Darkroot Vodka
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 4,			-- Bitter Darkroot Vodka
 								["crs"] = {
@@ -939,9 +934,8 @@ _.Achievements =
 									{ 77.21, 84.25, 895 },	-- Martha Mae
 									{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
 								},
-							},
-							{	-- Blacktooth Bloodwine
-								["itemID"] = 159848,		-- Blacktooth Bloodwine
+							}),
+							i(159848, {	-- Blacktooth Bloodwine
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 5,			-- Blacktooth Bloodwine
 								["crs"] = {
@@ -972,9 +966,8 @@ _.Achievements =
 									{ 21.51, 43.59, 896 },	-- Linda Deepwater
 									{ 77.21, 84.25, 895 },	-- Martha Mae
 								},
-							},
-							{	-- Brennadam Apple Brandy
-								["itemID"] = 159845,		-- Brennadam Apple Brandy
+							}),
+							i(159845, {	-- Brennadam Apple Brandy
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 6,			-- Brennadam Apple Brandy
 								["crs"] = {
@@ -1000,13 +993,12 @@ _.Achievements =
 									{ 75.37, 14.48, 1161 },	-- Harold Atkey
 									{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
 									{ 41.22, 50.21, 942 },	-- Rebecca Barnes
-									{ 50.82, 33.46, 942 },	-- Rusty Blade Waistress
+									{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
 									{ 53.31, 28.29, 895 },	-- Terry Rigglesmith
 									{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
 								},
-							},
-							{	-- Corlain Estate 12 Year
-								["itemID"] = 163638,		-- Corlain Estate 12 Year
+							}),
+							i(163638, {	-- Corlain Estate 12 Year
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 7,			-- Corlain Estate 12 Year
 								["crs"] = {
@@ -1018,9 +1010,8 @@ _.Achievements =
 								["coords"] = {
 									{ 58.17, 70.32, 1161 },	-- Nicolas Moal
 								},
-							},
-							{	-- Dark and Stormy
-								["itemID"] = 163522,		-- Dark and Stormy
+							}),
+							i(163522, {	-- Dark and Stormy
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 8,			-- Dark and Stormy
 								["crs"] = {
@@ -1038,11 +1029,10 @@ _.Achievements =
 									{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
 									{ 47.04, 91.55, 1165 },	-- Lenne
 									{ 41.22, 50.21, 942 },	-- Rebecca Barnes
-									{ 50.82, 33.46, 942 },	-- Rusty Blade Waistress
+									{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
 								},
-							},
-							{	-- Drop Anchor Dunkel
-								["itemID"] = 163019,		-- Drop Anchor Dunkel
+							}),
+							i(163019, {	-- Drop Anchor Dunkel
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 9,			-- Drop Anchor Dunkel
 								["crs"] = {
@@ -1084,9 +1074,8 @@ _.Achievements =
 									{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
 									{ 35.42, 16.66, 1165 },	-- Zuaba Sonja
 								},
-							},
-							{	-- Foaming Turtle Broth [Stormsong Only]
-								["itemID"] = 158927,		-- Foaming Turtle Broth
+							}),
+							i(158927, {	-- Foaming Turtle Broth
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 10,		-- Foaming Turtle Broth
 								["crs"] = {
@@ -1098,9 +1087,8 @@ _.Achievements =
 								["coords"] = {
 									{ 44.47, 54.21, 942 },	-- Emma Haribull
 								},
-							},
-							{	-- Hook Point Porter
-								["itemID"] = 162026,		-- Hook Point Porter
+							}),
+							i(162026, {	-- Hook Point Porter
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 11,		-- Hook Point Porter
 								["crs"] = {
@@ -1145,9 +1133,8 @@ _.Achievements =
 									{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
 									{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
 								},
-							},
-							{	-- Hook Point Schnapps
-								["itemID"] = 159849,		-- Hook Point Schnapps
+							}),
+							i(159849, {	-- Hook Point Schnapps
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 12,		-- Hook Point Schnapps
 								["crs"] = {
@@ -1179,9 +1166,8 @@ _.Achievements =
 									{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
 									{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
 								},
-							},
-							{	-- Kul Tiran Tripel
-								["itemID"] = 163548,		-- Kul Tiran Tripel
+							}),
+							i(163548, {	-- Kul Tiran Tripel
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 13,		-- Kul Tiran Tripel
 								["crs"] = {
@@ -1205,21 +1191,24 @@ _.Achievements =
 									{ 49.77, 25.13, 895 },	-- Sarella Griffin
 									{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
 								},
-							},
-							{	-- Long Forgotten Rum
-								["itemID"] = 161153,		-- Long Forgotten Rum
+							}),
+							i(161153, {	-- Long Forgotten Rum
 								["provider"] = { "n", 140055 }, 			-- First Mate Grogtok
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 14,		-- Long Forgotten Rum
+								["crs"] = {
+									137040,	-- Linda Deepwater
+								},
 								["maps"] = {
 									942,	-- Stormsong Valley
+									896,	-- Drustvar
 								},
 								["coords"] = {
+									{ 21.51, 43.59, 896 },	-- Linda Deepwater
 									{ 49.07, 57.22, 942 },	-- Long Forgotten Rum
 								},
-							},
-							{	-- Mildenhall Mead
-								["itemID"] = 159847,		-- Mildenhall Mead
+							}),
+							i(159847, {	-- Mildenhall Mead
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 15,		-- Mildenhall Mead
 								["crs"] = {
@@ -1230,10 +1219,8 @@ _.Achievements =
 									134968,	-- Felicity Noel
 									123639,	-- Harold Atkey
 									135525,	-- Jaela Billman
-									137031,	-- Jake Storm
 									136479,	-- Jill McHoonigan
 									137411,	-- Joseph Stephens
-									142770,	-- Kevin Tack
 									136468,	-- Lidia Plank
 									137040,	-- Linda Deepwater
 									137455,	-- Quartermaster Rickard
@@ -1256,16 +1243,14 @@ _.Achievements =
 									{ 72.61, 68.41, 1161 },	-- Jaela Billman
 									{ 77.38, 83.97, 895 },	-- Jill McHoonigan
 									{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-									{ 53.18, 16.48, 1161 },	-- Kevin Tack
 									{ 75.88, 50.64, 895 },	-- Lidia Plank
 									{ 21.51, 43.59, 896 },	-- Linda Deepwater
 									{ 31.19, 29.78, 896 },	-- Quartermaster Rickard
-									{ 50.82, 33.46, 942 },	-- Rusty Blade Waistress
-									{ 35.33, 24.22, 895 },	-- Tom Fishbury`
+									{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
+									{ 35.33, 24.22, 895 },	-- Tom Fishbury
 								},
-							},
-							{	-- Patina Pale Ale
-								["itemID"] = 162560,		-- Patina Pale Ale
+							}),
+							i(162560, {	-- Patina Pale Ale
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 16,		-- Patina Pale Ale
 								["crs"] = {
@@ -1293,9 +1278,8 @@ _.Achievements =
 									{ 52.78, 17.27, 1161 },	-- Monica Winters
 									{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
 								},
-							},
-							{	-- Pontoon Pilsner
-								["itemID"] = 163018,		-- Pontoon Pilsner
+							}),
+							i(163018, {	-- Pontoon Pilsner
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 17,		-- Pontoon Pilsner
 								["crs"] = {
@@ -1331,9 +1315,8 @@ _.Achievements =
 									{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
 									{ 35.42, 16.66, 1165 },	-- Zuaba Sonja
 								},
-							},
-							{	-- Sausage Martini [Drustvar Only]
-								["itemID"] = 163651,		-- Sausage Martini
+							}),
+							i(163651, {	-- Sausage Martini
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 18,		-- Sausage Martini
 								["crs"] = {
@@ -1345,9 +1328,8 @@ _.Achievements =
 								["coords"] = {
 									{ 21.04, 66.14, 896 },	-- Barkeep Cotner
 								},
-							},
-							{	-- Snowberry Berliner
-								["itemID"] = 163094,		-- Snowberry Berliner
+							}),
+							i(163094, {	-- Snowberry Berliner
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 19,		-- Snowberry Berliner
 								["crs"] = {
@@ -1378,9 +1360,8 @@ _.Achievements =
 									{ 52.78, 17.27, 1161 },	-- Monica Winters
 									{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
 								},
-							},
-							{	-- Thornspeaker Moonshine
-								["itemID"] = 163549,		-- Thornspeaker Moonshine
+							}),
+							i(163549, {	-- Thornspeaker Moonshine
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 20,		-- Thornspeaker Moonshine
 								["crs"] = {
@@ -1393,43 +1374,12 @@ _.Achievements =
 									896,	-- Drustvar
 								},
 								["coords"] = {
-									{ 53.09, 16.67, 1161 },	-- "Fairplay" JJ
-									{ 58.58, 70.31, 942 },	-- "Nasty" Buck
 									{ 74.25, 17.76, 1161 },	-- Allison Weber
-									{ 49.73, 25.22, 895 },	-- Arthur Seville
-									{ 54.71, 16.29, 1161 },	-- Barserver Aspen
-									{ 21.04, 66.14, 896 },	-- Barkeep Cotner
-									{ 54.41, 16.43, 1161 },	-- Barserver Donlyuk
-									{ 55.44, 15.44, 1161 },	-- Barserver Vince
-									{ 53.99, 75.22, 1161 },	-- Bored Barkeep
-									{ 54.55, 16.81, 1161 },	-- Captain Langton
-									{ 54.99, 43.63, 1161 },	-- Crimper Mirjam
-									{ 66.28, 61.58, 1161 },	-- Diana Seafinch
-									{ 44.59, 55.49, 942 },	-- Felicity Noel
-									{ 21.51, 43.71, 896 },	-- Fixi Slyshiv
-									{ 75.44, 18.61, 1161 },	-- Garrett Elmendorf
-									{ 75.37, 14.48, 1161 },	-- Harold Atkey
-									{ 77.38, 83.97, 895 },	-- Jill McHoonigan
 									{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-									{ 53.18, 16.48, 1161 },	-- Kevin Tack
-									{ 47.04, 91.55, 1165 },	-- Lenne
-									{ 26.45, 50.7, 1164 },	-- Lily Whistlebrew
 									{ 21.51, 43.59, 896 },	-- Linda Deepwater
-									{ 77.21, 84.25, 895 },	-- Martha Mae
-									{ 52.78, 17.27, 1161 },	-- Monica Winters
-									{ 41.22, 50.21, 942 },	-- Rebecca Barnes
-									{ 65.45, 39.29, 1161 },	-- Ron Mahogany
-									{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
-									{ 50.82, 33.46, 942 },	-- Rusty Blade Waistress
-									{ 49.77, 25.13, 895 },	-- Sarella Griffin
-									{ 53.31, 28.29, 895 },	-- Terry Rigglesmith
-									{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
-									{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
-									{ 35.42, 16.66, 1165 },	-- Zuaba Sonja
 								},
-							},
-							{	-- Tradewinds Kolsch
-								["itemID"] = 163098,		-- Tradewinds Kolsch
+							}),
+							i(163098, {	-- Tradewinds Kolsch
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 21,		-- Tradewinds Kolsch
 								["crs"] = {
@@ -1452,42 +1402,20 @@ _.Achievements =
 								},
 								["coords"] = {
 									{ 53.09, 16.67, 1161 },	-- "Fairplay" JJ
-									{ 58.58, 70.31, 942 },	-- "Nasty" Buck
-									{ 74.25, 17.76, 1161 },	-- Allison Weber
-									{ 49.73, 25.22, 895 },	-- Arthur Seville
 									{ 54.71, 16.29, 1161 },	-- Barserver Aspen
 									{ 21.04, 66.14, 896 },	-- Barkeep Cotner
 									{ 54.41, 16.43, 1161 },	-- Barserver Donlyuk
 									{ 55.44, 15.44, 1161 },	-- Barserver Vince
-									{ 53.99, 75.22, 1161 },	-- Bored Barkeep
 									{ 54.55, 16.81, 1161 },	-- Captain Langton
 									{ 54.99, 43.63, 1161 },	-- Crimper Mirjam
-									{ 66.28, 61.58, 1161 },	-- Diana Seafinch
-									{ 44.59, 55.49, 942 },	-- Felicity Noel
-									{ 21.51, 43.71, 896 },	-- Fixi Slyshiv
-									{ 75.44, 18.61, 1161 },	-- Garrett Elmendorf
-									{ 75.37, 14.48, 1161 },	-- Harold Atkey
-									{ 77.38, 83.97, 895 },	-- Jill McHoonigan
-									{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
 									{ 53.18, 16.48, 1161 },	-- Kevin Tack
-									{ 47.04, 91.55, 1165 },	-- Lenne
-									{ 26.45, 50.7, 1164 },	-- Lily Whistlebrew
-									{ 21.51, 43.59, 896 },	-- Linda Deepwater
-									{ 77.21, 84.25, 895 },	-- Martha Mae
 									{ 52.78, 17.27, 1161 },	-- Monica Winters
-									{ 41.22, 50.21, 942 },	-- Rebecca Barnes
-									{ 65.45, 39.29, 1161 },	-- Ron Mahogany
 									{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
-									{ 50.82, 33.46, 942 },	-- Rusty Blade Waistress
 									{ 49.77, 25.13, 895 },	-- Sarella Griffin
-									{ 53.31, 28.29, 895 },	-- Terry Rigglesmith
 									{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
-									{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
-									{ 35.42, 16.66, 1165 },	-- Zuaba Sonja
 								},
-							},
-							{	-- Whitegrove Pale Ale
-								["itemID"] = 159846,		-- Whitegrove Pale Ale
+							}),
+							i(159846, {	-- Whitegrove Pale Ale
 								["achievementID"] = 13061,	-- Three Sheets to the Wind
 								["criteriaID"] = 22,		-- Whitegrove Pale Ale
 								["crs"] = {
@@ -1495,19 +1423,14 @@ _.Achievements =
 									126600,	-- Arthur Seville
 									139638,	-- Barkeep Cotner
 									134729,	-- Crimper Mirjam
-									133214,	-- Dandy Jons
 									144115,	-- Diana Seafinch
-									129159,	-- Egert Tominson
 									134968,	-- Felicity Noel
 									136138,	-- Fixi Slyshiv
 									123639,	-- Harold Atkey
 									135525,	-- Jaela Billa
-									137031,	-- Jake Storm
 									136479,	-- Jill McHoonigan
 									137411,	-- Joseph Stephens
-									136468,	-- Lidia Plank
 									137040,	-- Linda Deepwater
-									137455,	-- Quartermaster Rickard
 									142189,	-- Ruddy the Rat
 									135153,	-- Wesley Rockhold
 								},
@@ -1518,43 +1441,24 @@ _.Achievements =
 									895,	-- Tiragarde Sound
 								},
 								["coords"] = {
-									{ 53.09, 16.67, 1161 },	-- "Fairplay" JJ
 									{ 58.58, 70.31, 942 },	-- "Nasty" Buck
-									{ 74.25, 17.76, 1161 },	-- Allison Weber
 									{ 49.73, 25.22, 895 },	-- Arthur Seville
-									{ 54.71, 16.29, 1161 },	-- Barserver Aspen
 									{ 21.04, 66.14, 896 },	-- Barkeep Cotner
-									{ 54.41, 16.43, 1161 },	-- Barserver Donlyuk
-									{ 55.44, 15.44, 1161 },	-- Barserver Vince
-									{ 53.99, 75.22, 1161 },	-- Bored Barkeep
-									{ 54.55, 16.81, 1161 },	-- Captain Langton
 									{ 54.99, 43.63, 1161 },	-- Crimper Mirjam
 									{ 66.28, 61.58, 1161 },	-- Diana Seafinch
 									{ 44.59, 55.49, 942 },	-- Felicity Noel
 									{ 21.51, 43.71, 896 },	-- Fixi Slyshiv
-									{ 75.44, 18.61, 1161 },	-- Garrett Elmendorf
 									{ 75.37, 14.48, 1161 },	-- Harold Atkey
+									{ 72.60, 82.60, 1161 },	-- Jaela Billa
 									{ 77.38, 83.97, 895 },	-- Jill McHoonigan
 									{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-									{ 53.18, 16.48, 1161 },	-- Kevin Tack
-									{ 47.04, 91.55, 1165 },	-- Lenne
-									{ 26.45, 50.7, 1164 },	-- Lily Whistlebrew
 									{ 21.51, 43.59, 896 },	-- Linda Deepwater
-									{ 77.21, 84.25, 895 },	-- Martha Mae
-									{ 52.78, 17.27, 1161 },	-- Monica Winters
-									{ 41.22, 50.21, 942 },	-- Rebecca Barnes
-									{ 65.45, 39.29, 1161 },	-- Ron Mahogany
 									{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
-									{ 50.82, 33.46, 942 },	-- Rusty Blade Waistress
-									{ 49.77, 25.13, 895 },	-- Sarella Griffin
-									{ 53.31, 28.29, 895 },	-- Terry Rigglesmith
-									{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
 									{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
-									{ 35.42, 16.66, 1165 },	-- Zuaba Sonja
 								},
-							},
+							}),
 						},
-					},
+					}),
 					ach(13635, {	-- Tour of the Depths
 						crit(1),	-- Complete an Emissary for your ally in Nazjatar
 						crit(2),	-- Defeat one of the World Bosses of Nazjatar
