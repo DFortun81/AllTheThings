@@ -1,6 +1,7 @@
 ---------------------------------------------
 --       M O U N T S     M O D U L E       --
 ---------------------------------------------
+
 _.Mounts =
 {
 	n(-36, { 	-- In-Game Shop
@@ -15,6 +16,7 @@ _.Mounts =
 		un(35, i(147901)),		-- Luminous Starseeker
 		un(35, i(122469)),		-- Mystic Runesaber
 		un(35, i(156564)),		-- Shu-zen, the Divine Sentinel
+		un(35, mount(326390)),	-- Steamscale Incinerator
 		un(35, mount(308078)),	-- Squeakers, the Trickster
 		un(35, i(92724)),		-- Swift Windsteed
 		un(35, i(166776)),		-- Sylverian Dreamer
