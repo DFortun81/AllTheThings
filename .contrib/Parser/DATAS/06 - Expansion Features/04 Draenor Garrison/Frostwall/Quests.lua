@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
@@ -47,7 +48,10 @@ _.ExpansionFeatures =
 								i(119145),	-- Toy
 							}),
 							q(38567, {	-- Garrison Campaign: War Council
+								["sourceQuests"] = { 36614 },	-- My Very Own Fortress
+								["lvl"] = 100,
 								["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
+								["altQuests"] = { 40417 },	-- To Tanaan!
 							}),
 						},
 					}),
@@ -907,6 +911,12 @@ _.ExpansionFeatures =
 						["g"] = {
 							garrisonBuilding(61),	-- Frostwall Mines lvl 1
 						},
+					}),
+					q(40417, {	-- To Tanaan! -- no idea how to get this one
+						["sourceQuests"] = { 36615 },	-- My Very Own Castle
+						["lvl"] = 100,
+						["races"] = ALLIANCE_ONLY,
+						["altQuests"] = { 38567 },	-- Garrison Campaign: War Council
 					}),
 					q(37941, {	-- Treasure Contract: The Infected Orc
 						["isDaily"] = true,

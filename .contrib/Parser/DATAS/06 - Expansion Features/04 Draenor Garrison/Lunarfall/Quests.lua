@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
@@ -617,6 +618,7 @@ _.ExpansionFeatures =
 						["lvl"] = 100,
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "Automatically granted upon entering your garrison.",
+						["altQuests"] = { 40418 },	-- To Tanaan!
 					}),
 					q(39195, {	-- Gems of the Apexis
 						["requireSkill"] = JEWELCRAFTING,
@@ -901,6 +903,12 @@ _.ExpansionFeatures =
 						["g"] = {
 							garrisonBuilding(61),	-- Frostwall Mines
 						},
+					}),
+					q(40418, {	-- To Tanaan! -- no idea how to get this one
+						["sourceQuests"] = { 36615 },	-- My Very Own Castle
+						["lvl"] = 100,
+						["races"] = ALLIANCE_ONLY,
+						["altQuests"] = { 38253 },	-- Garrison Campaign: War Council
 					}),
 					q(37848, {	-- Treasure Contract: Amulet of Rukhmar
 						["isDaily"] = true,
