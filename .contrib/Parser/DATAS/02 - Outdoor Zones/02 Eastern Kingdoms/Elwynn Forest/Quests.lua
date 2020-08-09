@@ -285,6 +285,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42740, {	-- The Battle For Broken Shore
+					["classes"] = exclude({ DEMONHUNTER }, ALL_CLASSES),
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 98,
 					["g"] = {
