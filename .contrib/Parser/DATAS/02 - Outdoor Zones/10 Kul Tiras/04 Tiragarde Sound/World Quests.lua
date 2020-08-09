@@ -16,10 +16,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53314, {	-- Coarse Storm Silver
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),					
 					q(53874, {	-- End Their Vigil
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -84,7 +80,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-]]--				
+]]--
 					q(53812, {	-- A Carefully Laid Trap (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
@@ -245,6 +241,11 @@ _.Zones =
 					q(51842, {	-- Carla Smirk
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
+					}),
+					q(53314, {	-- Coarse Storm Silver
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["requireSkill"] = MINING,
 					}),
 					q(51405, {	-- Corruption in the Bay
 						["isWorldQuest"] = true,
@@ -842,7 +843,7 @@ _.Zones =
 						{"select", "itemID", 158159},	-- Boralus Sailor's Cloak
 						{"select", "itemID", 157996},	-- Harbormaster Pauldrons
 						{"finalize"},	-- Push the items to the finalized list.
-						
+
 						{"select", "mapID", 895},	-- Tiragarde Sound
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "npcID", -34 },	-- Select the World Quests Header.
@@ -851,7 +852,7 @@ _.Zones =
 						{"pop"},	-- Discard the Item Set Header and acquire the children.
 						{"is", "itemID" },	-- Select the Items.
 						{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.
-						
+
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
