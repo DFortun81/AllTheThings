@@ -409,6 +409,7 @@ _.NeverImplemented =
 		q(29381),	-- FLAG - Teleport to Hyjal
 		q(29395),	-- FLAG - Teleport to Uldum
 		q(29592),	-- Caster Legendary BREADCRUMB TRACKER
+		q(29286),	-- Druid Tree, Stage 2 Tracking
 
 		q(26565),	-- A Furious Catch (REMOVED) — unused version of Orgrimmar Cata fishing daily "A Golden Opportunity"
 		q(25829),	-- Mount Hyjal - goldrinn hub complete
