@@ -50,23 +50,24 @@ app.RawData = {};
 app.refreshing = {};
 local function OnUpdate(self)
 	for i=#self.__stack,1,-1 do
+		-- print("Running Stack " .. i .. ":" .. self.__stack[i][2])
 		if not self.__stack[i][1](self) then
+			-- print("Removing Stack " .. i .. ":" .. self.__stack[i][2])
 			table.remove(self.__stack, i);
-			if #self.__stack < 1 then
-				self:SetScript("OnUpdate", nil);
-			end
 		end
+	end
+	-- Stop running OnUpdate if nothing in the Stack to process
+	if #self.__stack < 1 then
+		self:SetScript("OnUpdate", nil);
 	end
 end
 local function Push(self, name, method)
 	if not self.__stack then
 		self.__stack = {};
-		self:SetScript("OnUpdate", OnUpdate);
-	elseif #self.__stack < 1 then 
-		self:SetScript("OnUpdate", OnUpdate);
 	end
 	--print("Push->" .. name);
 	table.insert(self.__stack, { method, name });
+	self:SetScript("OnUpdate", OnUpdate);
 end
 local function StartCoroutine(name, method)
 	if method and not app.refreshing[name] then
@@ -1874,6 +1875,7 @@ ResolveSymbolicLink = function(o)
 		local searchResults, finalized = {}, {};
 		for j,sym in ipairs(o.sym) do
 			local cmd = sym[1];
+			-- print("Resolving Symbolic Link using '" .. tostring(cmd) .. "' with [" .. tostring(sym[2]) .. "] & [" .. tostring(sym[3]) .. "]")
 			if cmd == "select" then
 				-- Instruction to search the full database for something.
 				local cache = app.SearchForField(sym[2], sym[3]);
@@ -3493,6 +3495,7 @@ local function ExportData(group)
 	end
 end
 local function RefreshSavesCoroutine()
+	-- TODO: this coroutine ran "forever" (5+ minutes) on a vulpera when I logged in, may need to test further...
 	local waitTimer = 30;
 	while waitTimer > 0 do
 		coroutine.yield();
@@ -12633,7 +12636,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!",
 						['hash'] = "funUpdateWorldQuests",
 						['OnClick'] = function(data, button)
-							Push(self, "Rebuild", self.Rebuild);
+							Push(self, "WorldQuests-Rebuild", self.Rebuild);
 							return true;
 						end,
 						['OnUpdate'] = function(data) 
@@ -12716,7 +12719,8 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				wipe(self.data.g);
 				wipe(self.rawData);
 				tinsert(self.data.g, temp);
-				self:Rebuild();
+				-- self:Rebuild(); -- clearing data probably shouldn't include putting it all back...
+				self:Update();
 			end
 			self.Rebuild = function(self, no)
 				-- Rebuild all World Quest data
@@ -12727,6 +12731,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				-- Acquire all of the emissary quests
 				for _,pair in ipairs(emissaryMapIDs) do
 					local mapID = pair[1];
+					-- print("WQ.EmissaryMapIDs." .. tostring(mapID))
 					local mapObject = { mapID=mapID,g={},progress=0,total=0};
 					local cache = fieldCache["mapID"][mapID];
 					if cache then
@@ -12775,9 +12780,10 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					end
 				end
 				
-				-- Acquire all of the world quests.
+				-- Acquire all of the world quests
 				for _,pair in ipairs(worldMapIDs) do
 					local mapID = pair[1];
+					-- print("WQ.WorldMapIDs." .. tostring(mapID))
 					local mapObject = { mapID=mapID,g={},progress=0,total=0};
 					local cache = fieldCache["mapID"][mapID];
 					if cache then
@@ -12839,9 +12845,12 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 											end
 										end
 										
-										local numQuestRewards = GetNumQuestLogRewards (questObject.questID);
+										local numQuestRewards = GetNumQuestLogRewards(questObject.questID);
+										-- numQuestRewards will often be 0 for fresh questID API calls
+										-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
+										local _ = GetQuestLogRewardInfo(1, questObject.questID);
 										for j=1,numQuestRewards,1 do
-											local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo (j, questObject.questID);
+											local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo(j, questObject.questID);
 											if itemID then
 												if showCurrencies or (itemID ~= 116415 and itemID ~= 163036) then
 													QuestHarvester.AllTheThingsProcessing = true;
@@ -12907,7 +12916,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 													end
 												end
 											else
-												return true;
+												retry = true;
 											end
 										end
 										
@@ -13029,6 +13038,9 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							end
 							
 							local numQuestRewards = GetNumQuestLogRewards (questObject.questID);
+							-- numQuestRewards will often be 0 for fresh questID API calls...
+							-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
+							local _ = GetQuestLogRewardInfo(1, questObject.questID);
 							for j=1,numQuestRewards,1 do
 								local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo (j, questObject.questID);
 								if itemID then
@@ -13096,7 +13108,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 										end
 									end
 								else
-									return true;
+									retry = true;
 								end
 							end
 							
@@ -13117,38 +13129,39 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							
 							if showCurrencies then
 								local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
-								if numCurrencies > 0 then
-									for j=1,numCurrencies,1 do
-										local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
-										if currencyID then
-											local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
-											cache = fieldCache["currencyID"][currencyID];
-											if cache then
-												for _,data in ipairs(cache) do
-													if data.f then
-														item.f = data.f;
+								-- numQuestRewards will often be 0 for fresh questID API calls...
+								-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
+								local _ = GetQuestLogRewardCurrencyInfo(1, questObject.questID);
+								for j=1,numCurrencies,1 do
+									local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
+									if currencyID then
+										local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
+										cache = fieldCache["currencyID"][currencyID];
+										if cache then
+											for _,data in ipairs(cache) do
+												if data.f then
+													item.f = data.f;
+												end
+												if data.g and #data.g > 0 then
+													if not item.g then
+														item.g = {};
+														item.progress = 0;
+														item.total = 0;
+														item.OnUpdate = OnUpdateForItem;
 													end
-													if data.g and #data.g > 0 then
-														if not item.g then
-															item.g = {};
-															item.progress = 0;
-															item.total = 0;
-															item.OnUpdate = OnUpdateForItem;
-														end
-														MergeObjects(item.g, data.g);
-													end
+													MergeObjects(item.g, data.g);
 												end
 											end
-											if not item.g then
-												item.g = {};
-												item.progress = 0;
-												item.total = 0;
-												item.OnUpdate = OnUpdateForItem;
-											end
-											MergeObject(questObject.g, item);
-										else
-											return true;
 										end
+										if not item.g then
+											item.g = {};
+											item.progress = 0;
+											item.total = 0;
+											item.OnUpdate = OnUpdateForItem;
+										end
+										MergeObject(questObject.g, item);
+									else
+										retry = true;
 									end
 								end
 							end
@@ -13335,6 +13348,27 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					end
 					table.insert(temp, groupFinder);
 				end
+				
+				if retry == true
+				then
+					-- print("Missing API quest data on this World Quest refresh");
+					return true;
+				end
+				
+				-- Put a 'Clear World Quests' click at the bottom
+				MergeObject(temp, {
+						['text'] = "Clear World Quests",
+						['icon'] = "Interface\\Icons\\ability_racial_haymaker",
+						['description'] = "Click to clear the current information within the World Quests frame",
+						['hash'] = "funClearWorldQuests",
+						['OnClick'] = function(data, button)
+							Push(self, "WorldQuests-Clear", self.Clear);
+							return true;
+						end,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
+					});
 				
 				for i,o in ipairs(temp) do
 					UnsetNotCollectible(o);
