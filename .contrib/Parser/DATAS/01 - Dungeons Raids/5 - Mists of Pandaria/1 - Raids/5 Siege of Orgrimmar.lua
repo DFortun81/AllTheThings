@@ -6,8 +6,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(369, { 	-- Siege of Orgrimmar
 		["order"] = "05",
 		["isRaid"] = true,
-		["lvl"] = 90,
+		["coords"] = {
+			{ 72.3, 44.3, 390 },	-- old Vale
+			{ 72.3, 44.3, 1530 },	-- new Vale
+		},
 		["mapID"] = 556,
+		["lvl"] = 90,
 		["maps"] = {
 			557,
 			558,

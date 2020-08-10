@@ -1784,7 +1784,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					cr(70212, e(821, {	-- Megaera (Flaming Head)
 						["crs"] = {
-							70252,	-- Arcane Head <Head of Megaera>
+							70248,	-- Arcane Head <Head of Megaera>
 							70212,	-- Flaming Head <Head of Megaera>
 							70235,	-- Frozen Head <Head of Megaera>
 							70247,	-- Venomous Head <Head of Megaera>
