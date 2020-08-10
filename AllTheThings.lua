@@ -13152,14 +13152,14 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 													MergeObjects(item.g, data.g);
 												end
 											end
+											if not item.g then
+												item.g = {};
+												item.progress = 0;
+												item.total = 0;
+												item.OnUpdate = OnUpdateForItem;
+											end
+											MergeObject(questObject.g, item);
 										end
-										if not item.g then
-											item.g = {};
-											item.progress = 0;
-											item.total = 0;
-											item.OnUpdate = OnUpdateForItem;
-										end
-										MergeObject(questObject.g, item);
 									else
 										retry = true;
 									end
