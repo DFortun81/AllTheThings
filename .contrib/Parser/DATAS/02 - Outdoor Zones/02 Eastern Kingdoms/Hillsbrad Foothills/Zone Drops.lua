@@ -6,6 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(25, {	-- Hillsbrad Foothills
 			n(ZONEDROPS, {
+				i(8491),	-- Cat Carrier (Black Tabby)
 				n(2287, { 	-- Crushridge Warmonger
 					un(REMOVED_FROM_GAME, i(1602)),	-- Sickle Axe
 				}),
