@@ -2,11 +2,11 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = 24},
+_.Holidays =
 {
 	holiday(235442, {	-- Brewfest
 		n(VENDORS, {
-			--["u"] = 24,	-- Brewfest
+			["u"] = 24,	-- Brewfest
 			["g"] = {
 				n(23604,  {	-- Agnes Farwithers <Cheese Vendor>
 					["coord"] = { 41.0, 18.3, 1 },
@@ -49,10 +49,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["coord"] = { 56.3, 37.5, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
-					["g"] = bubbleDown({["u"] = 24}, {
+					["g"] = {
 						n(-3198, {	-- Brewfest Garb
+							["u"] = 24,	-- Brewfest
 							["icon"] = "Interface\\Icons\\inv_misc_beer_01",
-							["g"] = {
+							["g"] = bubbleDown({["u"] = 24}, {
 								i(33968, { 	-- Blue Brewfest Hat
 									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
 								}),
@@ -77,76 +78,95 @@ _.Holidays = bubbleDown({["u"] = 24},
 								i(33969, { 	-- Purple Brewfest Hat
 									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
 								}),
-							},
+							}),
 						}),
 						i(37571, {	-- "Brew of the Month" Club Membership Form
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
-							["g"] = {
+							["g"] = bubbleDown({["u"] = 24}, {
 								ach(2796),	-- Brew of the Month
-							},
+							}),
 						}),
 						i(119209, {	-- Angry Brewfest Letter
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
 						}),
 						i(33047, {	-- Belbi's Eyesight Enhancing Romance Goggles
+							["u"] = 24,	-- Brewfest
 							["collectible"] = false,	-- Needs marked because for some reason ATT thinks it is a collectible
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
 						i(169448, {	-- Bottomless Brewfest Stein
+							["u"] = 24,	-- Brewfest
 							["description"] = "\nEach Brewfest Stein has five different filled appearances. Fill up the stein with one brew, relog, and then refresh your collection by shift+clicking on a main or mini list header. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Brew can be only found in Durotar.  Gordok Brew is in both areas.  Alliance and Horde players can use the opposite faction's kegs; it just requires a little traveling!\n",
 							["cost"] = { { "i", 37829, 10 }, },		-- 10x Brewfest Prize Token
-							["g"] = {
+							["g"] = bubbleDown({["u"] = 24}, {
 								i(169450),	-- Filled Bottomless Brewfest Stein [Barleybrew Clear - Alliance]
 								i(169452),	-- Filled Bottomless Brewfest Stein [Thunder 45 - Alliance]
 								i(169453),	-- Filled Bottomless Brewfest Stein [Gordok Brew - Alliance/Horde]
 								i(169454),	-- Filled Bottomless Brewfest Stein [Small Step Brew - Horde]
 								i(169455),	-- Filled Bottomless Brewfest Stein [Jungle River Brew - Horde]
-							},
+							}),
 						}),
 						i(116758, {	-- Brewfest Banner (TOY!)
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
 						i(71137, {	-- Brewfest Keg Pony (TOY!)
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(33927, {	-- Brewfest Pony Keg (TOY!)
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
 						i(166747, {	-- Brewfest Reveler's Hearthstone
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(90426, {	-- Brewhelm
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 2 }, },		-- 2x Brewfest Prize Token
 						}),
 						i(37750, {	-- Fresh Brewfest Hops
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 2 }, },		-- 2x Brewfest Prize Token
 						}),
 						i(39476, {	-- Fresh Goblin Brewfest Hops
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 5 }, },		-- 5x Brewfest Prize Token
 						}),
 						i(169461, {	-- Garland of Grain
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 150 }, },	-- 150x Brewfest Prize Token
 						}),
 						i(90427, {	-- Pandaren Brewpack (TOY!)
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
 						i(46707, {	-- Pint-Sized Pink Pachyderm (PET!)
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
 						i(37816, {	-- Preserved Brewfest Hops
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 20 }, },		-- 20x Brewfest Prize Token
 						}),
 						i(116757, {	-- Steamworks Sausage Grill (TOY!)
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(116756, {	-- Stout Alemental (PET!)
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(138730, {	-- Synthebrew Goggles XL
+							["u"] = 24,	-- Brewfest
 							["collectible"] = false,
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(168915, {	-- Tabard of Brew
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
@@ -166,12 +186,13 @@ _.Holidays = bubbleDown({["u"] = 24},
 							},
 						}),
 						i(32233, {	-- Wolpertinger's Tankard
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
-							["g"] = {
+							["g"] = bubbleDown({["u"] = 24}, {
 								ach(1936),	-- Does Your Wolpertinger Linger?
-							},
+							}),
 						}),
-					}),
+					},
 				}),
 				n(23605,  {	-- Bron <Sausage Vendor>
 					["coord"] = { 41.6, 17.8, 1 },
@@ -195,10 +216,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["coord"] = { 41.0, 17.0, 1 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
-					["g"] = bubbleDown({["u"] = 24}, {
+					["g"] = {
 						n(-3198, {	-- Brewfest Garb
+							["u"] = 24,	-- Brewfest
 							["icon"] = "Interface\\Icons\\inv_misc_beer_01",
-							["g"] = {
+							["g"] = bubbleDown({["u"] = 24}, {
 								i(33968, { 	-- Blue Brewfest Hat
 									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
 								}),
@@ -223,76 +245,95 @@ _.Holidays = bubbleDown({["u"] = 24},
 								i(33969, { 	-- Purple Brewfest Hat
 									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
 								}),
-							},
+							}),
 						}),
 						i(37599, {	-- "Brew of the Month" Club Membership Form
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
-							["g"] = {
+							["g"] = bubbleDown({["u"] = 24}, {
 								ach(2796),	-- Brew of the Month
-							},
+							}),
 						}),
 						i(119209, {	-- Angry Brewfest Letter
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
 						}),
 						i(34008, {	-- Blix's Eyesight Enhancing Romance Goggles
+							["u"] = 24,	-- Brewfest
 							["collectible"] = false,	-- Needs marked because for some reason ATT thinks it is a collectible
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
 						i(169448, {	-- Bottomless Brewfest Stein
+							["u"] = 24,	-- Brewfest
 							["description"] = "\nEach Brewfest Stein has five different filled appearances. Fill up the stein with one brew, relog, and then refresh your collection by shift+clicking on a main or mini list header. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Brew can be only found in Durotar.  Gordok Brew is in both areas.  Alliance and Horde players can use the opposite faction's kegs; it just requires a little traveling!\n",
 							["cost"] = { { "i", 37829, 10 }, },		-- 10x Brewfest Prize Token
-							["g"] = {
+							["g"] = bubbleDown({["u"] = 24}, {
 								i(169450),	-- Filled Bottomless Brewfest Stein [Barleybrew Clear - Alliance]
 								i(169452),	-- Filled Bottomless Brewfest Stein [Thunder 45 - Alliance]
 								i(169453),	-- Filled Bottomless Brewfest Stein [Gordok Brew - Alliance/Horde]
 								i(169454),	-- Filled Bottomless Brewfest Stein [Small Step Brew - Horde]
 								i(169455),	-- Filled Bottomless Brewfest Stein [Jungle River Brew - Horde]
-							},
+							}),
 						}),
 						i(116758, {	-- Brewfest Banner (TOY!)
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
 						i(71137, {	-- Brewfest Keg Pony (TOY!)
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(33927, {	-- Brewfest Pony Keg (TOY!)
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
 						i(166747, {	-- Brewfest Reveler's Hearthstone
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(90426, {	-- Brewhelm
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 2 }, },		-- 2x Brewfest Prize Token
 						}),
 						i(37750, {	-- Fresh Brewfest Hops
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 2 }, },		-- 2x Brewfest Prize Token
 						}),
 						i(39477, {	-- Fresh Dwarven Brewfest Hops
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 5 }, },		-- 5x Brewfest Prize Token
 						}),
 						i(169461, {	-- Garland of Grain
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 150 }, },	-- 150x Brewfest Prize Token
 						}),
 						i(90427, {	-- Pandaren Brewpack (TOY!)
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
 						i(46707, {	-- Pint-Sized Pink Pachyderm (PET!)
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
 						i(37816, {	-- Preserved Brewfest Hops
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 20 }, },		-- 20x Brewfest Prize Token
 						}),
 						i(116757, {	-- Steamworks Sausage Grill (TOY!)
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(116756, {	-- Stout Alemental (PET!)
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(138730, {	-- Synthebrew Goggles XL
+							["u"] = 24,	-- Brewfest
 							["collectible"] = false,
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(168915, {	-- Tabard of Brew
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
@@ -312,12 +353,13 @@ _.Holidays = bubbleDown({["u"] = 24},
 							},
 						}),
 						i(32233, {	-- Wolpertinger's Tankard
+							["u"] = 24,	-- Brewfest
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
-							["g"] = {
+							["g"] = bubbleDown({["u"] = 24}, {
 								ach(1936),	-- Does Your Wolpertinger Linger?
-							},
+							}),
 						}),
-					}),
+					},
 				}),
 				n(153574, {	-- Britta Steinheart <Chowdown Organizer>
 					["coord"] = { 54.8, 38.6, 27 },
@@ -417,4 +459,4 @@ _.Holidays = bubbleDown({["u"] = 24},
 			},
 		}),
 	}),
-});
+};

@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 _.Holidays = bubbleDown({["u"] = 24},
 {
 	holiday(235442, {	-- Brewfest
@@ -11,18 +12,18 @@ _.Holidays = bubbleDown({["u"] = 24},
 				243,	-- Blackrock Depths
 			},
 			["g"] = {
-				un(24, i(149752, {	-- Keg-Shaped Treasure Box		(Uncommon Quality)
+				i(149752, {	-- Keg-Shaped Treasure Box		(Uncommon Quality)
 					["lvl"] = 46,
-					["g"] = bubbleDown({["u"] = 24}, {
+					["g"] = {
 						i(117378), 	-- Direbrew's Bloodied Shanker
 						i(150922), 	-- Terrific Tankard O'Terror
 						i(117379), 	-- Tremendous Tankard O'Terror
 						i(37863),	-- Direbrew's Remote
-					}),
-				})),
-				un(24, i(117393, {	-- Keg-Shaped Treasure Chest	(Epic Quality)
+					},
+				}),
+				i(117393, {	-- Keg-Shaped Treasure Chest	(Epic Quality)
 					["lvl"] = 98,
-					["g"] = bubbleDown({["u"] = 24}, {
+					["g"] = {
 						i(37828, {	-- Great Brewfest Kodo
 							ach(3496),	-- A Brew-FAST Mount
 						}),
@@ -37,8 +38,8 @@ _.Holidays = bubbleDown({["u"] = 24},
 						un(REMOVED_FROM_GAME, i(107218)), 	-- Tremendous Tankard O'Terror [Level 90]
 						i(117379), 	-- Tremendous Tankard O'Terror [Level 100+]
 						i(37863),	-- Direbrew's Remote
-					}),
-				})),
+					},
+				}),
 				un(REMOVED_FROM_GAME, i(37597)),	-- Direbrew's Shanker [Level 70]
 				un(REMOVED_FROM_GAME, i(37128)),	-- Balebrew Charm [Level 70]
 				un(REMOVED_FROM_GAME, i(37127)),	-- Brightbrew Charm [Level 70]
@@ -66,22 +67,20 @@ _.Holidays = bubbleDown({["u"] = 24},
 				un(REMOVED_FROM_GAME, i(87574)),	-- Coren's Cold Chromium Coaster [Level 90]
 				un(REMOVED_FROM_GAME, i(87572)),	-- Mithril Wristwatch [Level 90]
 				un(REMOVED_FROM_GAME, i(87573)),	-- Thousand-Year Pickled Egg [Level 90]
-				un(24, i(117361)),	-- Bitterest Balebrew Charm [Level 100+]
-				un(24, i(117357)),	-- Brawler's Statue [Level 100+]
-				un(24, i(117391)),	-- Bubbliest Brightbrew Charm [Level 100+]
-				un(24, i(117360)),	-- Coren's Cold Chromium Coaster [Level 100+]
-				un(24, i(117358)),	-- Mithril Wristwatch [Level 100+]
-				un(24, i(117359)),	-- Thousand-Year Pickled Egg [Level 100+]
+				i(117361),	-- Bitterest Balebrew Charm [Level 100+]
+				i(117357),	-- Brawler's Statue [Level 100+]
+				i(117391),	-- Bubbliest Brightbrew Charm [Level 100+]
+				i(117360),	-- Coren's Cold Chromium Coaster [Level 100+]
+				i(117358),	-- Mithril Wristwatch [Level 100+]
+				i(117359),	-- Thousand-Year Pickled Egg [Level 100+]
 				q(12491, {	-- Direbrew's Dire Brew
 					["provider"] = { "i", 38280 },	-- Direbrew's Dire Brew
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 24,
 					["isYearly"] = true,
 				}),
 				q(12492, {	-- Direbrew's Dire Brew
 					["provider"] = { "i", 38281 },	-- Direbrew's Dire Brew
 					["races"] = HORDE_ONLY,
-					["u"] = 24,
 					["isYearly"] = true,
 				}),
 			},

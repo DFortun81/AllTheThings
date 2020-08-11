@@ -1,11 +1,11 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 _.Holidays = bubbleDown({["u"] = 24},
 {
 	holiday(235442, {	-- Brewfest
 		n(QUESTS, {
-			["u"] = 24,	-- Brewfest
 			["g"] = {
 				-- ALLIANCE QUESTS --
 				q(29397, {	-- A New Supplier of Souvenirs
@@ -15,7 +15,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
 					["g"] = {
-						un(24, i(56836)), 	-- Overflowing Purple Brewfest Stein
+						i(56836), 	-- Overflowing Purple Brewfest Stein
 					},
 					["isYearly"] = true,
 				}),
@@ -27,7 +27,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
 					["g"] = {
-						un(24, i(37829)),	-- Brewfest Prize Token
+						i(37829),	-- Brewfest Prize Token
 					},
 				}),
 				q(11294, {	-- Bark for the Thunderbrews!
@@ -38,7 +38,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
 					["g"] = {
-						un(24, i(37829)),	-- Brewfest Prize Token
+						i(37829),	-- Brewfest Prize Token
 					},
 				}),
 				q(11441, {	-- Brewfest! (A)
@@ -66,7 +66,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
 					["g"] = {
-						un(24, i(37829)),	-- Brewfest Prize Token
+						i(37829),	-- Brewfest Prize Token
 					},
 					["isYearly"] = true,
 				}),
@@ -92,9 +92,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["maps"] = { 27 },	-- Dun Morogh
 					["g"] = {
 						i(32233, {	-- Wolpertinger's Tankard (Pet)
-							ach(1936, {	-- Does Your Wolpertinger Linger?
-								["u"] = 24,	-- Brewfest
-							}),
+							ach(1936),	-- Does Your Wolpertinger Linger?
 						}),
 					},
 					["isYearly"] = true,
@@ -104,24 +102,24 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["coord"] = { 54.7, 38.0, 27 },
 					["sourceQuests"] = {
 						11441,	-- Brewfest! (A)
-						11442,	-- Welcome to Brewfest! (A)	
+						11442,	-- Welcome to Brewfest! (A)
 					},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
 					["g"] = {
-						un(24, i(37829)),	-- Brewfest Prize Token
+						i(37829),	-- Brewfest Prize Token
 					},
 					["isYearly"] = true,
 				}),
 				q(56322, {	-- Contained Alemental (A)
-				--	["provider"] = { "o", ??? },	-- ???
+					["provider"] = { "o", 327669 },	-- Contained Alemental
 					["coord"] = { 55.5, 37.7, 27 },
 					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
 				}),
 				q(56372, {	-- Hozen Totem (A)
-				--	["provider"] = { "o", ??? },	-- Hozen Totem
+					["provider"] = { "o", 328413 },	-- Hozen Totem
 					["coord"] = { 55.5, 37.7, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -132,7 +130,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["coord"] = { 53.6, 38.6, 27 },
 					["sourceQuests"] = {
 						11441,	-- Brewfest! (A)
-						11442,	-- Welcome to Brewfest! (A)	
+						11442,	-- Welcome to Brewfest! (A)
 					},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
@@ -152,11 +150,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
 					["g"] = {
-						un(24, i(37829)),	-- Brewfest Prize Token
+						i(37829),	-- Brewfest Prize Token
 					},
 					["isYearly"] = true,
 				}),
-				q(11442, {	-- Welcome to Brewfest! (A)	
+				q(11442, {	-- Welcome to Brewfest! (A)
 					["provider"] = { "n", 24710 },	-- Ipfelkofer Ironkeg
 					["coord"] = { 55.1, 38.1, 27 },
 					["races"] = ALLIANCE_ONLY,
@@ -171,7 +169,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = {
-						un(24, i(56836)),	-- Overflowing Purple Brewfest Stein
+						i(56836),	-- Overflowing Purple Brewfest Stein
 					},
 					["isYearly"] = true,
 				}),
@@ -183,7 +181,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = {
-						un(24, i(37829)),	-- Brewfest Prize Token
+						i(37829),	-- Brewfest Prize Token
 					},
 				}),
 				q(11408, {	-- Bark for T'chali's Voodoo Brewery!
@@ -194,7 +192,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = {
-						un(24, i(37829)),	-- Brewfest Prize Token
+						i(37829),	-- Brewfest Prize Token
 					},
 				}),
 				q(11446, {	-- Brewfest! (H)
@@ -231,7 +229,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = {
-						un(24, i(37829)),	-- Brewfest Prize Token
+						i(37829),	-- Brewfest Prize Token
 					},
 					["isYearly"] = true,
 				}),
@@ -257,9 +255,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["maps"] = { 1 },	-- Durotar
 					["g"] = {
 						i(32233, {	-- Wolpertinger's Tankard (Pet)
-							ach(1936, {	-- Does Your Wolpertinger Linger?
-								["u"] = 24,	-- Brewfest
-							}),
+							ach(1936),	-- Does Your Wolpertinger Linger?
 						}),
 					},
 					["isYearly"] = true,
@@ -274,7 +270,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = {
-						un(24, i(37829)),	-- Brewfest Prize Token
+						i(37829),	-- Brewfest Prize Token
 					},
 					["isYearly"] = true,
 				}),
@@ -316,7 +312,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = {
-						un(24, i(37829)),	-- Brewfest Prize Token
+						i(37829),	-- Brewfest Prize Token
 					},
 					["isYearly"] = true,
 				}),

@@ -1,23 +1,24 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 _.Holidays = bubbleDown({["u"] = 24},
 {
 	holiday(235442, {	-- Brewfest
-		n(-4, {	-- Achievement
+		n(ACHIEVEMENTS, {
 			["maps"] = {
 				1,	-- Durotar
 				27,	-- Dun Morogh
 			},
 			["g"] = {
-				un(24, ach(1683, {	-- Brewmaster
-					un(24, title(101)),	-- Brewmaster
-					un(24, ach(2796)),	-- Brew of the Month
-					un(24, ach(295)),	-- Direbrewfest
-					un(24, ach(1936)),	-- Does Your Wolpertinger Linger?
-					un(24, ach(303)),	-- Have Keg, Will Travel
-					un(24, ach(1185, {	-- The Brewfest Diet
-						["g"] = bubbleDown({["u"] = 24}, {
+				ach(1683, {	-- Brewmaster
+					title(101),	-- Brewmaster
+					ach(2796),	-- Brew of the Month
+					ach(295),	-- Direbrewfest
+					ach(1936),	-- Does Your Wolpertinger Linger?
+					ach(303),	-- Have Keg, Will Travel
+					ach(1185, {	-- The Brewfest Diet
+						["g"] = {
 							crit(1, {	-- Dried Sausage
 								["itemID"] = 34063,	-- Dried Sausage
 							}),
@@ -42,13 +43,13 @@ _.Holidays = bubbleDown({["u"] = 24},
 							crit(8, {	-- The Golden Link
 								["itemID"] = 33026,	-- The Golden Link
 							}),
-						}),
-					})),
-				})),
-				un(24, ach(1260)),	-- Almost Blind Luck
+						},
+					}),
+				}),
+				ach(1260),	-- Almost Blind Luck
 				un(REMOVED_FROM_GAME, ach(1293, {	-- Blue Brewfest Stein [Removed]
 					["description"] = "\nEach Brewfest Stein has five different filled appearances. Fill up the stein with one brew, relog, and then refresh your collection by shift+clicking on this achievement. Once it has registered, move on to the next brew and repeat.\n",
-					["g"] = bubbleDown({["u"] = 2}, {
+					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 						i(33016, {	-- Blue Brewfest Stein
 							i(33017),	-- Filled Blue Brewfest Stein [Barleybrew Clear]
 							i(33018),	-- Filled Blue Brewfest Stein [Thunder 45]
@@ -58,7 +59,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						}),
 					}),
 				})),
-				un(24, ach(1183, {	-- Brew of the Year
+				ach(1183, {	-- Brew of the Year
 					crit(1, {	-- Wild Winter Pilsner
 						["itemID"] = 37488,	-- Wild Winter Pilsner
 					}),
@@ -95,11 +96,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 					crit(12, {	-- Aromatic Honey Brew
 						["itemID"] = 37490,	-- Aromatic Honey Brew
 					}),
-				})),
-				un(24, ach(293)),	-- Disturbing the Peace
+				}),
+				ach(293),	-- Disturbing the Peace
 				un(REMOVED_FROM_GAME, ach(1186)),	-- Down With The Dark Iron
 				un(REMOVED_FROM_GAME, ach(4782, {	-- Green Brewfest Stein [Removed]
-					["g"] = bubbleDown({["u"] = 2}, {
+					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 						i(37892, {	-- Green Brewfest Stein
 							i(37893),	-- Filled Green Brewfest Stein [Barleybrew Clear]
 							i(37894),	-- Filled Green Brewfest Stein [Thunder 45]
@@ -111,7 +112,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
 				})),
 				ach(1184, 1203, {	-- Strange Brew (A, H)
-					["u"] = 24,	-- Brewfest Filter
 					["g"] = {
 						crit(1),	-- Barleybrew Clear, Brewdoo Magic
 						crit(2),	-- Barleybrew Dark, Gordok Grog
@@ -126,7 +126,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 				}),
 				un(REMOVED_FROM_GAME, ach(1292, {	-- Yellow Brewfest Stein [Removed]
 					["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",
-					["g"] = bubbleDown({["u"] = 2}, {
+					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 						i(32912, {	-- Yellow Brewfest Stein
 							i(32915),	-- Filled Yellow Brewfest Stein [Barleybrew Clear]
 							i(32917),	-- Filled Yellow Brewfest Stein [Thunder 45]
