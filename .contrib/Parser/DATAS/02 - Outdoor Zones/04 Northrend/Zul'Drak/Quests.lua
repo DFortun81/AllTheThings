@@ -256,7 +256,8 @@ _.Zones =
 					["description"] = "Must be on |cFFFFD700Sabotage|r to see this quest.",
 					["sourceQuest"] = 12677,	-- Hazardous Materials
 				}),
-				q(13098, {	-- For Posterity -- confirmed still available in 8.3.7
+				q(13098, {	-- For Posterity
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 30676 },	-- Chronicler Bah'Kini
 					["g"] = {
 						i(43177),	-- Voodoo Signet

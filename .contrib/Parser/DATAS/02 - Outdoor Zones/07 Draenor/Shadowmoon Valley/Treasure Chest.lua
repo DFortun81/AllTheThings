@@ -257,6 +257,12 @@ _.Zones =
 						i(107650),	-- Shadowmoon Offering
 					},
 				}),
+				o(232251, {	-- Pippers' Buried Supplies
+					["questID"] = 35383,
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(226861, {	-- Ronokk's Belongings
 					["questID"] = 33886,
 					["coord"] = { 31.3, 39.1, 539 },

@@ -1002,6 +1002,8 @@ _.NeverImplemented =
 		q(40616),	-- Tracking Quest - W1 - Saw Leader Die
 		q(36825),	-- Fate of the Horde - triggered when turning in "Audience with the Warchief" as a demon hunter
 		q(40521),	-- Tracking Quest - W1 - Demon Attack Complete (Horde) - triggered after turning in "Demons Among Them"
+		q(41306),	-- The Fallen Lion. Triggers with regular "The Fallen Lion" 40517
+		q(33079),	-- Triggers with "Demons Among Us" 40593
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
 		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior (all classes?)
 		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior (all classes?)
