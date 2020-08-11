@@ -259,6 +259,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(133260),	-- Tauntka's Necklace
 							i(133280),	-- Oasis Bracers
 						 -- i(133278),	-- Evelyn's Belt (drops from Siamat, like in other difficulties -- erroneously listed on Lockmaw in DJ)
+							i(133267),	-- Sand Dune Belt (drops from Lockmaw rather than High Prophet Barim in TW, report in #errors on August 11, 2020)
 							i(133261),	-- Balkar's Waders
 							i(133262),	-- Greaves of Wu the Younger
 							i(133263),	-- Ring of the Darkest Day
@@ -271,7 +272,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(133265),	-- Barin's Main Gauche
 							i(133277),	-- Zora's Ward
 							i(133264),	-- Sand Silk Wristband
-							i(133267),	-- Sand Dune Belt
+						--	i(133267),	-- Sand Dune Belt (drops from Lockmaw rather than High Prophet Barim in TW, report in #errors on August 11, 2020)
 							i(133276),	-- Leggings of the Path
 							i(133279),	-- Mirage Ring
 							i(133266),	-- Veneficial Band
