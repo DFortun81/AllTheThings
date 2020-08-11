@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.Craftables =
 {
 	tier(1, {	-- Classic
@@ -616,7 +617,7 @@ _.Craftables =
 						i(39894),	-- Darkcloth Shoulders
 						i(131277),	-- Veiled Pauldrons
 					}),
-					i( 37145, {	-- Ace of Swords
+					i(37145, {	-- Ace of Swords
 						["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
 					}),
 					i(37147, {	-- Two of Swords

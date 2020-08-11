@@ -255,7 +255,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					})),
 				},
 			}),
-			d( 24, {	-- Timewalking
+			d(24, {	-- Timewalking
 				["lvl"] = 81,
 				["g"] = {
 					cr(36494, e(608, {	-- Forgemaster Garfrost

@@ -8,7 +8,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["mapID"] = 265,
 		["coord"] = { 48.95, 35.84, 102 },	-- The Slave Pens, Zangarmarsh
 		["g"] = {
-			n(QUESTS, { 					
+			n(QUESTS, {
 				{	-- A Brother Betrayed
 					["questID"] = 29564,	-- A Brother Betrayed
 					["provider"] = { "n", 54668 },	-- Nahuud
@@ -25,9 +25,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(28029),	-- Goldenvine Wraps
 						i(25540),	-- Dark Cloak of the Marsh
 					},
-				},	
+				},
 			}),
-			d( 1, {	-- Normal
+			d(1, {	-- Normal
 				cr(17941, e(570, {	-- Mennu the Betrayer
 					i(24361),	-- Spellfire Longsword
 					i(27543),	-- Starlight Dagger
@@ -78,7 +78,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(27683),	-- Quagmirran's Eye
 				}))
 			}),
-			d( 2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 70,
 				["ignoreBonus"] = true,
 				["g"] = {

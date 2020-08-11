@@ -17,7 +17,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(87360),	-- Saboteur's Locket
 				}),
 			}),
-			d( 1, {	-- Normal
+			d(1, {	-- Normal
 				cr(61567, e(693, {	-- Vizier Jin'bak
 					i(144022),	-- Hood of Viridian Residue
 					i(144162),	-- Engraved Amber Pendant
@@ -79,7 +79,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(REMOVED_FROM_GAME, i(100969)),	-- Anchoring Sabatons (7.1 - Removed from Game!)
 				})),
 			}),
-			d( 2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 90,
 				["groups"] = {
 					cr(61567, e(693, {	-- Vizier Jin'bak

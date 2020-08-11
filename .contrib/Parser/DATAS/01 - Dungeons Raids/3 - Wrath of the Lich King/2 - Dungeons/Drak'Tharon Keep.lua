@@ -8,7 +8,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["mapID"] = 160,
 		["maps"] = { 161 },
 		["groups"] = {
-			n(QUESTS, { 	
+			n(QUESTS, {
 				q(30120,{ 	-- Cleansing Drak'Tharon
 					["provider"] = { "n", 58149 },	-- Image of Drakuru
 					["groups"] = {
@@ -31,7 +31,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["provider"] = { "n", 26664 },	-- Kurzel
 				}),
 			}),
-			d(  1, {	-- Normal
+			d(1, {	-- Normal
 				n(ZONEDROPS, {
 					i(37800, {	-- Aviary Guardsman's Hauberk
 						["crs"] = {
@@ -215,7 +215,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37734),	-- Talisman of Troll Divinity
 				})),
 			}),
-			d(  2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 80,
 				["ignoreBonus"] = true,
 				["groups"] = {

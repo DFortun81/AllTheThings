@@ -31,7 +31,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(87300),	-- Armplates of the Jade Idol
 				}),
 			}),
-			d( 1, {	-- Normal
+			d(1, {	-- Normal
 				n(QUESTS, {
 					{
 						["questID"] = 33107,		-- Bad Feeling, Worse Result
@@ -111,7 +111,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(REMOVED_FROM_GAME, i(80869)),	-- Hopecrusher Gauntlets (7.1 - Removed from Game!)
 				})),
 			}),
-			d( 2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 90,
 				["groups"] = {
 					cr(56448, e(672, {	-- Wise Mari

@@ -287,7 +287,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 								}),
 							}),
 						},
-					}),	
+					}),
 					i(117392, {	-- Loot-Stuffed Pumpkin (Epic)
 						["u"] = 26,	-- Hallow's End
 						["lvl"] = 98,	-- Minimum level this bag drops
@@ -616,7 +616,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						},
 					}),
 				--	This is loot that use to actually drop off his body and not a bag.
-				--	Item Key ( Original iLvl // BfA+ iLvL // Minium Level)
+				--	Item Key (Original iLvl // BfA+ iLvL // Minium Level)
 				--	Burning Crusade Rings
 					i(33183, {	-- Old Magic Broom
 						["u"] = REMOVED_FROM_GAME,

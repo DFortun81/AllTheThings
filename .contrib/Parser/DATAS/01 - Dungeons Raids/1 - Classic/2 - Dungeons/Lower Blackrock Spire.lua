@@ -166,7 +166,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 				},
 			}),
-			cr( 9237, e(390, {	-- War Master Voone
+			cr(9237, e(390, {	-- War Master Voone
 				i(12582),	-- Keris of Zul'Serak
 				i(13177),	-- Talisman of Evasion
 				i(13179),	-- Brazecore Armguards
@@ -219,7 +219,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(13178),	-- Rosewine Circle
 				},
 			})),
-			cr( 9736, e(393, {	-- Quartermaster Zigris
+			cr(9736, e(393, {	-- Quartermaster Zigris
 				i(12835),	-- Plans: Annihilator
 				i(12264),	-- Worg Carrier (PET!)
 				i(13253),	-- Hands of Power
@@ -262,7 +262,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(13198),	-- Hurd Smasher
 				},
 			}),
-			cr( 9568, e(396, {	-- Overlord Wyrmthalak
+			cr(9568, e(396, {	-- Overlord Wyrmthalak
 				ach(643),	-- Lower Blackrock Spire
 				i(13163),	-- Relentless Scythe
 				i(13161),	-- Trindlehaven Staff

@@ -33,7 +33,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				}),
 			}),
-			d( 1, {	-- Normal
+			d(1, {	-- Normal
 				ach(6400),	-- How Did He Get Up There?
 				ach(6402, {	-- Ling-Ting's Herbal Journey
 					i(86562),	-- Hopling
@@ -79,7 +79,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(REMOVED_FROM_GAME, i(80901)),	-- Sudsy Legplates (7.1 - Removed from Game!)
 				})),
 			}),
-			d( 2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 90,
 				["g"] = {
 					ach(6420),	-- Hopocalypse Now!

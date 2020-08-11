@@ -1024,7 +1024,7 @@ app.L = {
 		[-93] = "Silithus (The Wound)",
 		[-94] = "Black Market Auction House",									-- Black Market Auction House"
 -- Garrison Note: These will be changed into a new class soon(TM)
-		--[-99] = select(2,C_Garrison.GetBuildingInfo(65) ), 					-- Stables
+		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)), 					-- Stables
 		[-99] = "Buildings",
 		[-101] = "Followers",
 --Horde [Swaps based on faction ONLY after a reloadui]

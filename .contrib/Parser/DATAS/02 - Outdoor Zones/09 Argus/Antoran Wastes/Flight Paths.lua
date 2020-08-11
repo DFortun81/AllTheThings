@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(905, { 	-- Argus
@@ -10,7 +11,7 @@ _.Zones =
 					["description"] = "Hope's Landing, Antoran Wastes",
 					["coord"] = { 73, 50.4 },
 				}),
-				--[[	Beacon only up with The Veiled Den is not, need to get fp # next time it's up
+				--[[ TODO: Beacon only up with The Veiled Den is not, need to get fp # next time it's up
 				fp( , {	-- Light's Purchase
 					["description"] = "Light's Purchase",
 					["coord"] = { 72.6, 76 },

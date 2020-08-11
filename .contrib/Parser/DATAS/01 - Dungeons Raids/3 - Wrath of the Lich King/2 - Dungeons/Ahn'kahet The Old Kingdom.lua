@@ -131,7 +131,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(35614),	-- Volazj's Sabatons
 				})),
 			}),
-			d(  2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 80,
 				["ignoreBonus"] = true,
 				["groups"] = {
@@ -256,7 +256,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					})),
 				},
 			}),
-			d( 24, {	-- Timewalking
+			d(24, {	-- Timewalking
 				["lvl"] = 81,
 				["groups"] = {
 					cr(29309, e(580, {	-- Elder Nadox

@@ -41,7 +41,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				}),
 			}),
-			d( 1, {	-- Normal
+			d(1, {	-- Normal
 				cr(56747, e(673, {	-- Gu Cloudstrike
 					i(144127),	-- Cloudstrike Pendant
 					i(143961),	-- Azure Serpent Chestguard
@@ -93,7 +93,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(REMOVED_FROM_GAME, i(80917)),	-- Blastwalker Footguards (7.1 - Removed from Game!)
 				})),
 			}),
-			d( 2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 90,
 				["groups"] = {
 					cr(56747, e(673, {	-- Gu Cloudstrike

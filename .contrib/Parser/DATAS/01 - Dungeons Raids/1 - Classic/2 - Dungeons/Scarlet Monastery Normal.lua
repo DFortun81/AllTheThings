@@ -170,7 +170,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(88291),	-- Korloff's Raiment
 					i(88293),	-- Firefinger Ring
 				})),
-				cr( 3977, e(674, {	-- High Inquisitor Whitemane
+				cr(3977, e(674, {	-- High Inquisitor Whitemane
 					ach(637),	-- Scarlet Monastery
 					i(88301),	-- Greatstaff of Righteousness
 					i(88297),	-- Lightbreaker Greatsword

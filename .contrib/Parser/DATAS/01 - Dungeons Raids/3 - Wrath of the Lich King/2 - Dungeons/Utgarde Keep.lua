@@ -156,7 +156,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37186),	-- Unsmashable Heavy Band
 				})),
 			}),
-			d(  2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
 					n(ZONEDROPS, {

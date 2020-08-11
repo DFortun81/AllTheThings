@@ -7,7 +7,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["lvl"] = 88,
 		["maps"] = { 437, 438 },
 		["groups"] = {
-			n(QUESTS, { 
+			n(QUESTS, {
 				q(31363),	-- Lighting the Way
 				q(31364, {	-- That's a Big Bug!
 					i(87351),	-- Carapace Inlaid Drape
@@ -17,7 +17,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(87355),	-- Mantid Exterminator's Cloak
 				}),
 			}),
-			d( 1, {	-- Normal
+			d(1, {	-- Normal
 				cr(56906, e(655, {	-- Saboteur Kip'tilak
 					i(144018),	-- Fallout-Filtering Hood
 					i(144102),	-- Pendant of Precise Timing
@@ -72,7 +72,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(REMOVED_FROM_GAME, i(80928)),	-- Treads of Fixation (7.1 - Removed from Game!)
 				})),
 			}),
-			d( 2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 90,
 				["groups"] = {
 					ach(6476),	-- Conscriptinator

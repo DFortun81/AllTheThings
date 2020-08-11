@@ -2812,7 +2812,7 @@ _.Zones =
 								["cost"] = { { "c", 241, 5 }, },	-- 5 Champion's Seal
 							}),
 							i(46758, {	-- Swift Grey Steed
-								["races"] = exclude(HUMAN, ALLIANCE_ONLY ),
+								["races"] = exclude(HUMAN, ALLIANCE_ONLY),
 								["cost"] = { { "c", 241, 5 }, },	-- 5 Champion's Seal
 							}),
 							i(44974, {	-- Elwynn Lamb Pet
@@ -3068,7 +3068,7 @@ _.Zones =
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 							i(46762, {	-- Swift Violet Ram
-								["races"] = exclude(DWARF, ALLIANCE_ONLY ),
+								["races"] = exclude(DWARF, ALLIANCE_ONLY),
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 						},
@@ -3182,7 +3182,7 @@ _.Zones =
 								["races"] = { DRAENEI },
 							}),
 							i(46756, {	-- Great Red Elekk (MOUNT!)
-								["races"] = exclude(DRAENEI, ALLIANCE_ONLY ),
+								["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
 							}),
 						},
 					}),
@@ -3406,7 +3406,7 @@ _.Zones =
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 							i(46763, {	-- Turbostrider
-								["races"] = exclude(GNOME, ALLIANCE_ONLY ),
+								["races"] = exclude(GNOME, ALLIANCE_ONLY),
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 						},
@@ -3430,7 +3430,7 @@ _.Zones =
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 							i(46759, {	-- Swift Moonsaber (MOUNT!)
-								["races"] = exclude(NIGHTELF, ALLIANCE_ONLY ),
+								["races"] = exclude(NIGHTELF, ALLIANCE_ONLY),
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 							i(44965, {	-- Teldrassil Sproutling (PET!)
@@ -3482,7 +3482,7 @@ _.Zones =
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 							i(46761, {	-- Swift Red Hawkstrider (MOUNT!)
-								["races"] = exclude(BLOODELF, HORDE_ONLY ),
+								["races"] = exclude(BLOODELF, HORDE_ONLY),
 								["cost"] = { { "c", 241, 5 }, },	-- 5x Champion's Seal
 							}),
 						},

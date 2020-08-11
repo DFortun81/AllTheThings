@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(184, { 	-- End Time
 		["lvl"] = 85,
@@ -34,10 +35,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 					["sourceQuests"] = { 30096 },	-- Murozond
 				}),
 			}),
-			d(  2, {	-- Heroic
+			d(2, {	-- Heroic
 				n(ZONEDROPS, {
-					{	--  Breastplate of Despair
-						["itemID"] = 76154,	-- Breastplate of Despair
+					i(76154, {	-- Breastplate of Despair
 						["crs"] = {
 							54920,	-- Infinite Suppressor
 							54923,	-- Infinite Warden
@@ -51,9 +51,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 							54553, 	-- Time-Twisted Seer
 							54691, 	-- Time-Twisted Sorceress
 						},
-					},
-					{	--  Bindings of The End Times
-						["itemID"] = 76156,	-- Bindings of The End Times
+					}),
+					i(76156, {	-- Bindings of The End Times
 						["crs"] = {
 							54920,	-- Infinite Suppressor
 							54923,	-- Infinite Warden
@@ -67,7 +66,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							54553, 	-- Time-Twisted Seer
 							54691, 	-- Time-Twisted Sorceress
 						},
-					},
+					}),
 				}),
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
@@ -107,7 +106,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					ach(5995),	-- Moon Guard
 					i(72812),	-- Crescent Moon
 					i(72813),	-- Whisperwind Robes
-				})),			
+				})),
 				cr(54432, e(289, { 	-- Murozond
 					ach(6117),	-- Heroic: End Time
 					i(72822),	-- Jagged Edge of Time
@@ -124,7 +123,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(72897),	-- Arrow of Time
 				})),
 			}),
-			d( 24, {	-- Timewalking
+			d(24, {	-- Timewalking
 				["lvl"] = 86,
 				["g"] = {
 					n(COMMON_BOSS_DROPS, {
@@ -154,11 +153,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(133386),	-- Dead End Boots
 						},
 					}),
-					cr(54431, e(340, {	-- Echo of Baine	
+					cr(54431, e(340, {	-- Echo of Baine
 						i(133401),	-- Axe of The Tauren Chieftain
 						i(133402),	-- Bloodhoof Legguards
 					})),
-					cr(54445, e(285, {	-- Echo of Jaina	
+					cr(54445, e(285, {	-- Echo of Jaina
 						i(133395),	-- Jaina's Staff
 						i(133396),	-- Ward of Incantations
 					})),

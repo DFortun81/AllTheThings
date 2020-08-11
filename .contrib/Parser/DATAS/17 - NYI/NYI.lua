@@ -64,7 +64,7 @@ _.NeverImplemented =
 
 
 		-- Scrapped Lv20 Gear (??)
-		un(NEVER_IMPLEMENTED, i(157622)),	-- Silverscope Longrifle ( Level 20 Kul Tiran Hunter Start Gear?)
+		un(NEVER_IMPLEMENTED, i(157622)),	-- Silverscope Longrifle (Level 20 Kul Tiran Hunter Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157644)),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
 		un(NEVER_IMPLEMENTED, i(157621)),	-- Staff of Regrowth (Lv20 Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157623)),	-- Frostcore Staff (Lv20 Start Gear?)
@@ -1085,7 +1085,7 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(56501)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(56506)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(56510)),	-- Unknown
-			un(NEVER_IMPLEMENTED, i(106166)),	-- Frostwolf Ringmail Armor (Beta only, was reward from https://www.wowhead.com/quest=32985/fury-of-frostfire )
+			un(NEVER_IMPLEMENTED, i(106166)),	-- Frostwolf Ringmail Armor (Beta only, was reward from https://www.wowhead.com/quest=32985/fury-of-frostfire)
 			un(NEVER_IMPLEMENTED, i(30289)),	-- Cenarion warden's belt
 			un(NEVER_IMPLEMENTED, i(106178)),	-- Rangari Initiate Wristwraps (Beta only)
 			un(NEVER_IMPLEMENTED, i(68844)),	-- Unknown
@@ -2170,7 +2170,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(91031)),	-- Darkmoon Glowfly (you get it via pet battles)
 		un(NEVER_IMPLEMENTED, i(119147)),	-- Nether Ray Fry (unsed Version)
 		un(NEVER_IMPLEMENTED, i(119112)),	-- Son of Sethe (unsed Version)
-		model(38311, n(51634, {["u"] = NEVER_IMPLEMENTED,} )),	-- Bubbles
+		model(38311, n(51634, {["u"] = NEVER_IMPLEMENTED,})),	-- Bubbles
 		model(36583, n(51636, {["u"] = NEVER_IMPLEMENTED,})),	-- Lizzy
 		model(14657, n(14629, {["u"] = NEVER_IMPLEMENTED,})), 	-- Loggerhead Snapjaw
 		model(36129, n(48376, {["u"] = NEVER_IMPLEMENTED,})),	-- Rumbling Rockling

@@ -42,7 +42,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(23615),	-- Plans: Swiftsteel Gloves
 				}),
 			}),
-			d( 1, {	-- Normal
+			d(1, {	-- Normal
 				cr(18341, e(534, {	-- Pandemonius
 					i(25943),	-- Creepjacker
 					i(27814),	-- Twinblade of Mastery
@@ -96,7 +96,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(27828),	-- Warp-Scarab Brooch
 				})),
 			}),
-			d( 2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 70,
 				["ignoreBonus"] = true,
 				["groups"] = {

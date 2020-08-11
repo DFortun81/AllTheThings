@@ -65,7 +65,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 			}),
-			d(  1, {	-- Normal
+			d(1, {	-- Normal
 				n(ZONEDROPS, {
 					i(35593, {	-- Steel Bear Trap Bracers
 						["crs"] = {
@@ -159,7 +159,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37638),	-- Offering of Sacrifice
 				})),
 			}),
-			d(  2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 80,
 				["g"] = {
 					n(ZONEDROPS, {
@@ -297,7 +297,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					})),
 				},
 			}),
-			d( 24, {	-- Timewalking
+			d(24, {	-- Timewalking
 				["lvl"] = 81,
 				["g"] = {
 					cr(29304, e(592, {	-- Slad'ran
