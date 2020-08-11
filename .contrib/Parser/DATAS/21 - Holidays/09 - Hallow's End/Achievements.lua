@@ -1,409 +1,301 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 _.Holidays = bubbleDown({["u"] = 26},
 {
 	holiday(235462, {	-- Hallow's End
-		["u"] = 26,	-- Hallow's End
 		["g"] = {
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {	-- Achievements
 				ach(1656, {	-- Hallowed Be Thy Name
-					["u"] = 26,	-- Hallow's End
 					["g"] = {
-						title(92, {	-- %s the Hallowed
-							["u"] = 26,	-- Hallow's End
-						}),
+						title(92),	-- %s the Hallowed
 						ach(972,  {	-- Trick or Treat!
-							["u"] = 26,	-- Hallow's End
 							["g"] = {
 								i(37586, {	-- Handful of Treats
-									["u"] = 26,	-- Hallow's End
 									["g"] = {
 										i(34000,  {	-- Blood Elf Female Mask
 											crit(1, {	-- Blood Elf Female Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(34002,  {	-- Blood Elf Male Mask
 											crit(2, {	-- Blood Elf Male Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
-										i(37585,  {	-- Chewy Fel Taffy
-											["u"] = 26,	-- Hallow's End
-										}),
+										i(37585),	-- Chewy Fel Taffy
 										i(34001,  {	-- Draenei Female Mask
 											crit(3, {	-- Draenei Female Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(34003,  {	-- Draenei Male Mask
 											crit(4, {	-- Draenei Male Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20562,  {	-- Dwarf Female Mask
 											crit(5, {	-- Dwarf Female Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20561,  {	-- Dwarf Male Mask
 											crit(6, {	-- Dwarf Male Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(37583,  {	-- G.N.E.R.D.S.
 											crit(7, {	-- G.N.E.R.D. Rage
 												["achievementID"] = 1656,	-- Hallowed Be Thy Name
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20392,  {	-- Gnome Female Mask
 											crit(7, {	-- Gnome Female Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20391,  {	-- Gnome Male Mask
 											crit(8, {	-- Gnome Male Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(49212,  {	-- Goblin Female Mask
 											crit(9, {	-- Goblin Female Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(49210,  {	-- Goblin Male Mask
 											crit(10, {	-- Goblin Male Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(33292,  {	-- Hallowed Helm
-											["u"] = 26,	-- Hallow's End
 											["g"] = {
 												crit(2, {	-- Hallowed Helm
 													["achievementID"] = 292,	-- Sinister Calling
-													["u"] = 26,	-- Hallow's End
 												}),
 											},
 										}),
-										i(116851, {	-- Hallowed Wand - Abomination
-											["u"] = 26,	-- Hallow's End
-										}),
-										i(139004, {	-- Hallowed Wand - Banshee
-											["u"] = 26,	-- Hallow's End
-										}),
+										i(116851),	-- Hallowed Wand - Abomination
+										i(139004),	-- Hallowed Wand - Banshee
 										i(20410,  {	-- Hallowed Wand - Bat
 											crit(1, {	-- Transformed by Hallowed Wand - Bat
 												["achievementID"] = 283,	-- The Masquerade
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
-										i(128645, {	-- Hallowed Wand - Gargoyle
-											["u"] = 26,	-- Hallow's End
-										}),
-										i(116853, {	-- Hallowed Wand - Geist
-											["u"] = 26,	-- Hallow's End
-										}),
+										i(128645),	-- Hallowed Wand - Gargoyle
+										i(116853),	-- Hallowed Wand - Geist
 										i(20409,  {	-- Hallowed Wand - Ghost
 											crit(2, {	-- Transformed by Hallowed Wand - Ghost
 												["achievementID"] = 283,	-- The Masquerade
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
-										i(116850, {	-- Hallowed Wand - Ghoul
-											["u"] = 26,	-- Hallow's End
-										}),
+										i(116850),	-- Hallowed Wand - Ghoul
 										i(20399,  {	-- Hallowed Wand - Leper Gnome
 											crit(3, {	-- Transformed by Hallowed Wand - Leper Gnome
 												["achievementID"] = 283,	-- The Masquerade
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
-										i(128646, {	-- Hallowed Wand - Nerubian
-											["u"] = 26,	-- Hallow's End
-										}),
+										i(128646),	-- Hallowed Wand - Nerubian
 										i(20398,  {	-- Hallowed Wand - Ninja
 											crit(4, {	-- Transformed by Hallowed Wand - Ninja
 												["achievementID"] = 283,	-- The Masquerade
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20397,  {	-- Hallowed Wand - Pirate
 											crit(5, {	-- Transformed by Hallowed Wand - Pirate
 												["achievementID"] = 283,	-- The Masquerade
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20411,  {	-- Hallowed Wand - Skeleton
 											crit(6, {	-- Transformed by Hallowed Wand - Skeleton
 												["achievementID"] = 283,	-- The Masquerade
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
-										i(116848, {	-- Hallowed Wand - Slime
-											["u"] = 26,	-- Hallow's End
-										}),
-										i(116854, {	-- Hallowed Wand - Spider
-											["u"] = 26,	-- Hallow's End
-										}),
-										i(128644, {	-- Hallowed Wand - Wight
-											["u"] = 26,	-- Hallow's End
-										}),
+										i(116848),	-- Hallowed Wand - Slime
+										i(116854),	-- Hallowed Wand - Spider
+										i(128644),	-- Hallowed Wand - Wight
 										i(20414,  {	-- Hallowed Wand - Wisp
 											crit(7, {	-- Transformed by Hallowed Wand - Wisp
 												["achievementID"] = 283,	-- The Masquerade
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20565,  {	-- Human Female Mask
 											crit(11, {	-- Human Female Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20566,  {	-- Human Male Mask
 											crit(12, {	-- Human Male Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20563,  {	-- Night Elf Female Mask
 											crit(13, {	-- Night Elf Female Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20564,  {	-- Night Elf Male Mask
 											crit(14, {	-- Night Elf Male Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20569,  {	-- Orc Female Mask
 											crit(15, {	-- Orc Female Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20570,  {	-- Orc Male Mask
 											crit(16, {	-- Orc Male Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
-										i(37606,  {	-- Penny Pouch
-											["u"] = 26,	-- Hallow's End
-										}),
-										i(37582,  {	-- Pyroblast Cinnamon Ball
-											["u"] = 26,	-- Hallow's End
-										}),
+										i(37606),	-- Penny Pouch
+										i(37582),	-- Pyroblast Cinnamon Ball
 										i(33154,  {	-- Sinister Squashling (PET!)
-											["u"] = 26,	-- Hallow's End
-											["g"] = {
-												crit(1, {	-- Sinister Squashling
-													["achievementID"] = 292,	-- Sinister Calling
-													["u"] = 26,	-- Hallow's End
-												}),
-											},
+											crit(1, {	-- Sinister Squashling
+												["achievementID"] = 292,	-- Sinister Calling
+											}),
 										}),
-										i(37584,  {	-- Soothing Spearmint Candy
-											["u"] = 26,	-- Hallow's End
-										}),
+										i(37584),	-- Soothing Spearmint Candy
 										i(20571,  {	-- Tauren Female Mask
 											crit(17, {	-- Tauren Female Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20572,  {	-- Tauren Male Mask
 											crit(18, {	-- Tauren Male Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(37604,  {	-- Tooth Pick
 											crit(5, {	-- Trick or Treat!
 												["achievementID"] = 1656,	-- Hallowed Be Thy Name
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
-										i(33226,  {	-- Tricky Treats
-											["u"] = 26,
-										}),
+										i(33226),	-- Tricky Treats
 										i(20567,  {	-- Troll Female Mask
 											crit(19, {	-- Troll Female Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20568,  {	-- Troll Male Mask
 											crit(20, {	-- Troll Male Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20574,  {	-- Undead Female Mask
 											crit(21, {	-- Undead Female Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(20573,  {	-- Undead Male Mask
 											crit(22, {	-- Undead Male Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(49215,  {	-- Worgen Female Mask
 											crit(23, {	-- Worgen Female Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 										i(49216,  {	-- Worgen Male Mask
 											crit(24, {	-- Worgen Male Mask
 												["achievementID"] = 284,	-- A Mask For All Occasions
-												["u"] = 26,	-- Hallow's End
 											}),
 										}),
 									},
 								}),
 							},
 						}),
-						ach(288,  {	-- Out With It
-							["u"] = 26,	-- Hallow's End
-						}),
-						ach(255,  {	-- Bring Me The Head of... Oh Wait
-							["u"] = 26,	-- Hallow's End
-						}),
-						ach(289,  {	-- The Savior of Hallow's End
-							["u"] = 26,	-- Hallow's End
-						}),
-						ach(981,  {	-- That Sparkling Smile
-							["u"] = 26,	-- Hallow's End
-						}),
+						ach(288),	-- Out With It
+						ach(255),	-- Bring Me The Head of... Oh Wait
+						ach(289),	-- The Savior of Hallow's End
+						ach(981),	-- That Sparkling Smile
 						ach(1040, {	-- Rotten Hallow (A)
 							["races"] = ALLIANCE_ONLY,
-							["u"] = 26,	-- Hallow's End
-							--Note!! The individual criteria for this will be attached to the actual quest rather than here.  By linking it to the quest we give a better represenation of the criteria and avoid duplicity.
+							-- Note!! The individual criteria for this will be attached to the actual quest rather than here.  By linking it to the quest we give a better represention of the criteria and avoid duplicity.
 						}),
 						ach(1041, {	-- Rotten Hallow (H)
 							["races"] = HORDE_ONLY,
-							["u"] = 26,	-- Hallow's End
-							--Note!! The individual criteria for this will be attached to the actual quest rather than here.  By linking it to the quest we give a better represenation of the criteria and avoid duplicity.
+							-- Note!! The individual criteria for this will be attached to the actual quest rather than here.  By linking it to the quest we give a better represention of the criteria and avoid duplicity.
 						}),
-						ach(1261, {	-- G.N.E.R.D. Rage
-							["u"] = 26,	-- Hallow's End
-						}),
+						ach(1261),	-- G.N.E.R.D. Rage
 						ach(291,  {	-- Check Your Head
-							["u"] = 26,	-- Hallow's End
 							["g"] = {
 								crit(1, {	-- Blood Elf
 									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(2, {	-- Draenei
 									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(3, {	-- Dwarf
 									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(4, {	-- Gnome
 									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(5, {	-- Goblin
 									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(6, {	-- Human
 									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(7, {	-- Night Elf
 									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(8, {	-- Orc
 									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(9, {	-- Tauren
 									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(10, {	-- Troll
 									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(11, {	-- Undead
 									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(12, {	-- Worgen
 									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
 								}),
 							},
 						}),
 						ach(283,  {	-- The Masquerade
-							["u"] = 26,	-- Hallow's End
-							--Note!! We are linking these here as it is an easy way to track what you need done.
-							--Since we aren't utilizing maps technique it won't provide clutter in mini list for each zone
+							-- Note!! We are linking these here as it is an easy way to track what you need done.
+							-- Since we aren't utilizing maps technique it won't provide clutter in mini list for each zone
 							["g"] = {
 								crit(1, {	-- Transformed by Hallowed Wand - Bat
 									["itemID"] = 20410,	-- Hallowed Wand - Bat
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(2, {	-- Transformed by Hallowed Wand - Ghost
 									["itemID"] = 20409,	-- Hallowed Wand - Ghost
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(3, {	-- Transformed by Hallowed Wand - Leper Gnome
 									["itemID"] = 20399,	-- Hallowed Wand - Leper Gnome
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(4, {	-- Transformed by Hallowed Wand - Ninja
 									["itemID"] = 20398,	-- Hallowed Wand - Ninja
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(5, {	-- Transformed by Hallowed Wand - Pirate
 									["itemID"] = 20397,	-- Hallowed Wand - Pirate
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(6, {	-- Transformed by Hallowed Wand - Skeleton
 									["itemID"] = 20411,	-- Hallowed Wand - Skeleton
-									["u"] = 26,	-- Hallow's End
 								}),
 								crit(7, {	-- Transformed by Hallowed Wand - Wisp
 									["itemID"] = 20414,	-- Hallowed Wand - Wisp
-									["u"] = 26,	-- Hallow's End
 								}),
 							},
 						}),
 						ach(292,  {	-- Sinister Calling
-							["u"] = 26,	-- Hallow's End
-							--Note!! The individual criteria for this will be attached to the actual item rather than here.  By linking it to the item we give a better represenation of the criteria and avoid duplicity.
+							-- Note!! The individual criteria for this will be attached to the actual item rather than here.  By linking it to the item we give a better represention of the criteria and avoid duplicity.
 						}),
 						ach(971,  {	-- Tricks and Treats of Azeroth
-							["u"] = 26,	-- Hallow's End
 							["g"] = {
 								ach(966, {	-- Tricks and Treats of Eastern Kingdoms (A)
 									["races"] = ALLIANCE_ONLY,
-									["u"] = 26,	-- Hallow's End
 									["g"] = {
 										crit(1,  {	-- Arathi Highlands, Refuge Point
 											["coord"] = { 40.1, 49.0, 14 },
@@ -513,7 +405,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 								}),
 								ach(967, {	-- Tricks and Treats of Eastern Kingdoms (H)
 									["races"] = HORDE_ONLY,
-									["u"] = 26,	-- Hallow's End
 									["g"] = {
 										crit(1,  {	-- Arathi Highlands, Hammerfall
 											["coord"] = { 69.0, 33.4, 14 },
@@ -623,7 +514,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 								}),
 								ach(963, {	-- Tricks and Treats of Kalimdor (A)
 									["races"] = ALLIANCE_ONLY,
-									["u"] = 26,	-- Hallow's End
 									["g"] = {
 										crit(1,  {	-- Ashenvale, Astranaar
 											["coord"] = { 37.0, 49.3, 63 },
@@ -737,7 +627,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 								}),
 								ach(965, {	-- Tricks and Treats of Kalimdor (H)
 									["races"] = HORDE_ONLY,
-									["u"] = 26,	-- Hallow's End
 									["g"] = {
 										crit(1,  {	-- Ashenvale, Hellscream's Watch
 											["coord"] = { 38.6, 42.4, 63 },
@@ -863,7 +752,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 								}),
 								ach(969, {	-- Tricks and Treats of Outlands (A)
 									["races"] = ALLIANCE_ONLY,
-									["u"] = 26,	-- Hallow's End
 									["g"] = {
 										crit(1,  {	-- Blade's Edge Mountains, Evergrove
 											["coord"] = { 62.9, 38.3, 105 },
@@ -935,7 +823,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 								}),
 								ach(968, {	-- Tricks and Treats of Outlands (H)
 									["races"] = HORDE_ONLY,
-									["u"] = 26,	-- Hallow's End
 									["g"] = {
 										crit(1, {	-- Blade's Edge Mountains, Evergrove
 											["coord"] = { 62.9, 38.3, 105 },
@@ -1018,7 +905,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 				}),
 				ach(284,   {	-- A Mask for All Occasions
 					["description"] = "You can collect masks from the Headless Horseman event or from trick-or-treating, or you can purchase them from your faction's Hallow's End vendor.",
-					["u"] = 26,	-- Hallow's End
 				--	hey y'all these masks are linked in roughly 19,000 places already to show where you can actually collect them, so i'm not going to put them here
 				}),
 				ach(5836,  {	-- Tricks and Treats of Northrend
