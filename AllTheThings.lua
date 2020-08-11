@@ -824,7 +824,7 @@ end
 local function GetProgressColorText(progress, total)
 	if total and total > 0 then
 		local percent = progress / total;
-		return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%) |r";
+        return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%)|r";
 	end
 end
 local function GetCollectionIcon(state)
@@ -8683,6 +8683,7 @@ local function SetRowData(self, row, data)
 			x = 4;
 		end
 		local summary = GetProgressTextForRow(data);
+		local iconAdjust = (summary and string.find(summary, "|T") and -1) or 0;
 		if not summary then
 			if data.g and not data.expanded and #data.g > 0 then
 				summary = "+++";
@@ -8693,12 +8694,19 @@ local function SetRowData(self, row, data)
 		local specs = data.specs;
 		if specs and #specs > 0 then
 			table.sort(specs);
-			for i,spec in ipairs(specs) do
+			-- iterate backwards since the icons are appended from right to left, this way it matches the tooltip sort of spec icons
+            for i=#specs,1,-1 do
+                local spec = specs[i]
 				local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-				if class == app.Class then summary = "|T" .. icon .. ":0|t " .. summary; end
+				if class == app.Class then 
+                    summary = "|T" .. icon .. ":0|t " .. summary;
+                    iconAdjust = iconAdjust - 1;
+                end
 			end
 		end
 		row.Summary:SetText(summary);
+		-- for whatever reason, the Client does not properly align the Points when textures are used within the 'text' of the object, with each texture added causing a 1px offset on alignment
+        row.Summary:SetPoint("RIGHT", iconAdjust, 0);
 		row.Summary:Show();
 		row.Label:SetPoint("LEFT", leftmost, relative, x, 0);
 		if row.Summary and row.Summary:IsShown() then
@@ -9624,7 +9632,7 @@ CreateRow = function(self)
 	
 	-- Summary is the completion summary information. (percentage text)
 	row.Summary = row:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-	row.Summary:SetJustifyH("CENTER");
+	row.Summary:SetJustifyH("RIGHT");
 	row.Summary:SetPoint("BOTTOM");
 	row.Summary:SetPoint("RIGHT");
 	row.Summary:SetPoint("TOP");
