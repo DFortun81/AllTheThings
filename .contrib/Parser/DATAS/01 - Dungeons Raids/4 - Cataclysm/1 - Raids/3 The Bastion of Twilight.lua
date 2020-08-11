@@ -4,12 +4,13 @@
 
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(72, { 	-- The Bastion of Twilight
-		["order"] = "03",
-		["isRaid"] = true,
 		["sharedLockout"] = 1,
-		["lvl"] = 85,
+		["isRaid"] = true,
+		["order"] = "03",
+		["coord"] = { 34.2, 77.7, 241 },
 		["mapID"] = 294,
 		["maps"] = { 295, 296 },
+		["lvl"] = 85,
 		["groups"] = {
 			ach(4850),	-- The Bastion of Twilight
 			n(ZONEDROPS, {
