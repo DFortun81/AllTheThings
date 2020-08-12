@@ -161,7 +161,15 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 50.2, 88.1, 118 },
 						["questID"] = 62332, -- first-time kill. TODO: is this a daily? weekly? only-time only? Need more data!
-						["g"] = {	-- adding the reward, but uncertain if it's worth adding yet
+						["g"] = {	-- adding the reward, but uncertain if it's worth keeping
+							i(183200),	-- Pitch Black Scourgestone
+						},
+					}),
+					n(174052, {	-- Novos the Summoner
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 77.9, 66.2, 118 },
+						["questID"] = 62330,
+						["g"] = {	-- adding the reward, but uncertain if it's worth keeping
 							i(183200),	-- Pitch Black Scourgestone
 						},
 					}),
@@ -169,7 +177,7 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 80.1, 61.2, 118 },
 						["questID"] = 62331,
-						["g"] = {	-- adding the reward, but uncertain if it's worth adding yet
+						["g"] = {	-- adding the reward, but uncertain if it's worth keeping
 							i(183200),	-- Pitch Black Scourgestone
 						},
 					}),
