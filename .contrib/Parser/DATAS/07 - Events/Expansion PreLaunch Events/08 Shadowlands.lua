@@ -134,14 +134,16 @@ _.WorldEvents =
 							i(12844),	-- Argent Dawn Valor Token
 						},
 					}),
-					q(62293, {	-- Pitch Black Scourgestones
+					q(62292, {	-- Pitch Black Scourgestones
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 21.6, 118 },
 						["races"] = HORDE_ONLY,	-- TODO: confirm
 						["provider"] = { "n", 169718 },	-- Veteran Crusader Aliocha Segard
 						["repeatable"] = true,
 						["sourceQuest"] = 62401,	-- Strange Scourgestones
-						-- TODO: what does this grant? 
+						["g"] = {
+							i(12844),	-- Argent Dawn Valor Token
+						},
 					}),
 					--[[
 					q(, {	-- 
