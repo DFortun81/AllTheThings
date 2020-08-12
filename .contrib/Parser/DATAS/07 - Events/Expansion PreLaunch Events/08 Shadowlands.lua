@@ -114,7 +114,22 @@ _.WorldEvents =
 						["provider"] = { "n", 168880 },	-- Sentry Joren
 						["sourceQuest"] = 60827,	-- Advancing the Effort
 					}),
-
+					q(59863, {	-- Combat Nullifier 07-X
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 73.1, 35.6, 118 },
+						["races"] = HORDE_ONLY,	-- TODO: confirm
+						["isDaily"] = true,
+						["provider"] = { "n", 173124 },	-- Binkie Brightgear
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+					}),
+					q(59839, {	-- WARNING: This is Only a Test!
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 66.0, 22.4, 118 },
+						["races"] = HORDE_ONLY,	-- TODO: confirm
+						["isDaily"] = true,
+						["provider"] = { "n", 172905 },	-- Fizzix Blastbolt
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+					}),
 
 					-- repeatables below
 					q(62401, {	-- Strange Scourgestones
