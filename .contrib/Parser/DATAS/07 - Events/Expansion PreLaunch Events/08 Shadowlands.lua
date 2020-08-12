@@ -110,8 +110,8 @@ _.WorldEvents =
 						["provider"] = { "n", 168880 },	-- Sentry Joren
 						["sourceQuest"] = 60827,	-- Advancing the Effort
 					}),
-					
-					
+
+
 					-- repeatables below
 					q(62401, {	-- Strange Scourgestones
 						["maps"] = { 118 },	-- Icecrown
@@ -146,16 +146,17 @@ _.WorldEvents =
 						},
 					}),
 					--[[
-					q(, {	-- 
+					q(, {	--
 						["maps"] = {  },
 						["coord"] = {  },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "n",  },	-- 
-						["sourceQuest"] = ,	-- 
+						["provider"] = { "n",  },	--
+						["sourceQuest"] = ,	--
 					}),
 					]]--
 				}),
-				n(RARES, {	
+				n(RARES, {
+					-- TODO: need to add Forgemaster Garfrost and Malywn as confirmed spawns
 					n(174054, {	-- Falric
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 50.2, 88.1, 118 },
@@ -163,11 +164,18 @@ _.WorldEvents =
 						["g"] = {	-- adding the reward, but uncertain if it's worth adding yet
 							i(183200),	-- Pitch Black Scourgestone
 						},
-						-- TODO: need to add Forgemaster Garfrost and Malywn as confirmed spawns
+					}),
+					n(174053, {	-- The Prophet Tharon'ja
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 80.1, 61.2, 118 },
+						["questID"] = 62331,
+						["g"] = {	-- adding the reward, but uncertain if it's worth adding yet
+							i(183200),	-- Pitch Black Scourgestone
+						},
 					}),
 				}),
 				n(VENDORS, {
-					
+
 				}),
 			}),
 		},
