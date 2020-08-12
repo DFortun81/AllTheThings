@@ -188,6 +188,16 @@ _.WorldEvents =
 							i(183200),	-- Pitch Black Scourgestone
 						},
 					}),
+					n(174061, {	-- Ingvar the Plunderer
+						["maps"] = { 118 }, -- Icecrown
+						["coord"] = { 52.3, 52.6, 118 },
+						["questID"] = 62339,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+							i(183659),	-- Annhylde's Band
+						},
+					}),
 					n(174063, {	-- Lady Deathwhisper
 						["maps"] = { 118 }, -- Icecrown
 						["coord"] = { 51.2, 78.6, 118 },
