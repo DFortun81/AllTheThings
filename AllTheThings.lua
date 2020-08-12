@@ -22,6 +22,7 @@ local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
 local C_ToyBox_GetToyLink = C_ToyBox.GetToyLink;
 local C_Map_GetMapDisplayInfo = C_Map.GetMapDisplayInfo;
 local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
+local C_QuestLog_GetAllCompletedQuestIDs = C_QuestLog.GetAllCompletedQuestIDs
 local SetPortraitTexture = _G["SetPortraitTexture"];
 local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
 local EJ_GetCreatureInfo = _G["EJ_GetCreatureInfo"];
@@ -465,7 +466,7 @@ GameTooltipIcon.icon.Border:Show();
 GameTooltipIcon:Hide();
 
 -- Model is used to display the model of an NPC/Encounter.
-local GameTooltipModel, model, fi = CreateFrame("FRAME", "ATTGameTooltipModel", GameTooltip);
+local GameTooltipModel, model, fi = CreateFrame("FRAME", "ATTGameTooltipModel", GameTooltip, BackdropTemplateMixin and "BackdropTemplate");
 GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 GameTooltipModel:SetSize(128, 128);
 GameTooltipModel:SetBackdrop({
@@ -1228,7 +1229,7 @@ local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", 
 local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 	QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
 	QuestHarvester:SetHyperlink("quest:"..id);
-	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetQuestInfo(id);
+	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetTitleForQuestID(id);
 	QuestHarvester:Hide()
 	if title and title ~= RETRIEVING_DATA then
 		rawset(questRetries, id, nil);
@@ -4610,7 +4611,7 @@ app.BaseCurrencyClass = {
 		if key == "key" then
 			return "currencyID";
 		elseif key == "text" then
-			return GetCurrencyLink(t.currencyID, 1) or select(1, GetCurrencyInfo(t.currencyID));
+			return C_CurrencyInfo.GetCurrencyLink(t.currencyID, 1) or select(1, C_CurrencyInfo.GetCurrencyInfo(t.currencyID));
 		elseif key == "icon" then
 			return select(3, GetCurrencyInfo(t.currencyID));
 		elseif key == "icon" then
@@ -6525,6 +6526,11 @@ app.BaseQuestObjective = {
 };
 app.CreateQuestObjective = function(id, t)
 	return setmetatable(constructor(id, t, "objectiveID"), app.BaseQuestObjective);
+end
+local function GetQuestsCompleted(t)
+	for k,v in pairs(C_QuestLog_GetAllCompletedQuestIDs()) do
+		CompletedQuests[v] = true
+	end
 end
 local function RefreshQuestCompletionState(questID)
 	if questID ~= nil then
@@ -10424,7 +10430,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	local window = app.Windows[suffix];
 	if not window then
 		-- Create the window instance.
-		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent);
+		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
 		app.Windows[suffix] = window;
 		window.Suffix = suffix;
 		window.Refresh = Refresh;
