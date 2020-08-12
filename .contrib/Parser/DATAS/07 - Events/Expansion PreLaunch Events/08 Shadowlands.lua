@@ -103,14 +103,15 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.6, 21.0, 118 },
 						["races"] = HORDE_ONLY,	-- TODO: confirm
-						["provider"] = { "n", 167572 },	-- Crystal Brightspark
 						["isDaily"] = true,
+						["provider"] = { "n", 167572 },	-- Crystal Brightspark
 						["sourceQuest"] = 60827,	-- Advancing the Effort
 					}),
 					q(59783, {	-- Cultist Captors
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 66.0, 21.9, 118 },
 						["races"] = HORDE_ONLY, -- TODO: confirm
+						["isDaily"] = true,
 						["provider"] = { "n", 168880 },	-- Sentry Joren
 						["sourceQuest"] = 60827,	-- Advancing the Effort
 					}),
@@ -136,6 +137,7 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 21.6, 118 },
 						["races"] = HORDE_ONLY,	-- TODO: confirm
+						["isDaily"] = true,
 						["provider"] = { "n", 169718 },	-- Veteran Crusader Aliocha Segard
 						["sourceQuest"] = 60004,	-- A Valiant Effort -- TODO: confirm. First noticed after turning this quest in, but may actually be available once you loot your first scourgestone
 						["g"] = {
