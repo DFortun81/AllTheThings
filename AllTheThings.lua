@@ -5219,7 +5219,7 @@ app.BaseGarrisonTalent = {
 			if info.description then return info.description; end
 		elseif key == "info" then
 			-- TODO: Add "perkSpellID"
-			return C_Garrison.GetTalent(t.talentID);
+			return C_Garrison.GetTalentInfo(t.talentID);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
