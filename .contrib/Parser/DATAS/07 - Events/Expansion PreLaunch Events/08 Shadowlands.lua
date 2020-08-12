@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.WorldEvents =
 {
 	n(-520, { 	-- Expansion Prelaunch Events
@@ -12,6 +13,9 @@ _.WorldEvents =
 			]]--
 			tier(9, {	-- Shadowlands
 				n(QUESTS, {
+					q(60113, {	-- An Urgent Request
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(60115, {	-- An Urgent Request
 						["races"] = HORDE_ONLY,
 					}),
