@@ -206,6 +206,15 @@ _.WorldEvents =
 							i(183200),	-- Pitch Black Scourgestone
 						},
 					}),
+					n(174062, {	-- Skadi the Ruthless
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 57.7, 56.0, 118 },
+						["questID"] = 62340,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+						},
+					}),
 					n(174053, {	-- The Prophet Tharon'ja
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 80.1, 61.2, 118 },
