@@ -216,6 +216,15 @@ _.WorldEvents =
 							i(183200),	-- Pitch Black Scourgestone
 						},
 					}),
+					n(174060, {	-- Prince Keleseth
+						["maps"] = { 118 }, -- Icecrown
+						["coord"] = { 53.9, 44.7, 118 },
+						["questID"] = 62338,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+						},
+					}),
 					n(174062, {	-- Skadi the Ruthless
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 57.7, 56.0, 118 },
