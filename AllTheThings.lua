@@ -4053,7 +4053,7 @@ end
 		
 		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
-			local name, isHeader = GetCurrencyListInfo(tokenID);
+			local name, isHeader = C_CurrencyInfo.GetCurrencyListInfo(tokenID);
 			if not isHeader then
 				-- Determine which currencyID is the one that we're dealing with.
 				local cache = SearchForFieldContainer("currencyID");
