@@ -2739,5 +2739,13 @@ _.NeverImplemented =
 		q(58514),	-- Vuk'laz the Earthbreaker bonus roll
 		q(58508),	-- Grand Empress Shek'zara first kill??
 		--q(58770),	-- Grand Empress Shek'zara bonus roll
+		
+		
+		
+		-----------------
+		-- SHADOWLANDS --
+		-----------------
+		-- Pre-launch event
+		q(60490),	-- Triggers after completing "Advancing the Effort" and unlocking Icecrown dailies
 	}),
 };
