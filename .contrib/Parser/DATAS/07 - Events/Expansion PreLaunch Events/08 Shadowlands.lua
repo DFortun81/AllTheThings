@@ -234,6 +234,15 @@ _.WorldEvents =
 							i(183200),	-- Pitch Black Scourgestone
 						},
 					}),
+					n(174059, {	-- The Black Knight
+						["maps"] = { 118 }, -- Icecrown
+						["coord"] = { 64.9, 22.1, 118 },
+						["questID"] = 62337,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+						},
+					}),
 					n(174053, {	-- The Prophet Tharon'ja
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 80.1, 61.2, 118 },
