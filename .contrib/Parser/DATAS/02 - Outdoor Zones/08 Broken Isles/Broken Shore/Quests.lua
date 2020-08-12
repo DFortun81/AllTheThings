@@ -551,49 +551,17 @@ _.Zones =
 				q(45343),	-- A Curious Contagion
 				q(46336),	-- A Golden Ticket
 				q(43407),	-- A Hero's Weapon
-				q(47202, {	-- A Personal Message
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(42708),	-- A Personal Request
 				q(44401),	-- A Weapon For Every Occasion
 				q(45342),	-- Administering Aid
 				q(39761),	-- Advanced Runecarving
 				q(43573),	-- Advancing the War Effort
-				q(47041, {	-- Affliction: The Twisted Twin
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(43928),	-- Aggregates of Anguish
-				q(45449),	-- Alchemist Korlya
-				q(46244),	-- Altar of the Aegis
 				q(46719),	-- Amal'thazad's Message
-				q(46065, {	-- An Impossible Foe
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(46030),	-- An Urgent Warning
 				q(45021),	-- Answers Unknown
-				q(48641),	-- Armies of Legionfall
-				q(44217),	-- Armor Fit For A Deathlord
-				q(46734),	-- Assault on Broken Shore
-				q(47037, {	-- Balance: The Twisted Twin
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(45545),	-- Barrel Toss
-				q(42678),	-- Black Rook Hold: Into Black Rook Hold
 				q(43962),	-- Blades of Destiny
-				q(43468),	-- Blood for the Wolfe
-				q(46237),	-- Bloodbringer's Missive
-				q(45765),	-- Brothers and Sisters
-				q(40392),	-- Call of the Marksman
 				q(44550),	-- Called to Acherus
-				q(44247),	-- Champion: Amal'thazad
-				q(44248),	-- Champion: Darion Mograine
-				q(44244),	-- Champion: Koltira Deathweaver
-				q(46050),	-- Champion: Minerva Ravensorrow
-				q(39818),	-- Champion: Nazgrim
-				q(46048),	-- Champion: Nighthuntress Syrenne
-				q(39816),	-- Champion: Thassarian
-				q(44243),	-- Champion: Thoras Trollbane
-				q(42800),	-- Champion: Valeera Sanguinar
 				q(45816),	-- Choose Order Hall to Support
 				q(40403, {	-- Clandestine Operation
 					["races"] = HORDE_ONLY,
@@ -604,13 +572,9 @@ _.Zones =
 				q(40402, {	-- Clandestine Operation
 					["races"] = HORDE_ONLY,
 				}),
-				q(44925),	-- Closing the Eye
 				q(45350),	-- Countering the Contagion
-				q(44275),	-- Court of Stars
 				q(45347),	-- Crafting a Cure
-				q(46020),	-- Crystal Containment
 				q(45024),	-- Cult Culling
-				q(44273),	-- Darkheart Thicket
 				q(44272),	-- Darkheart Thicket
 				q(43551),	-- Darkheart Thicket
 				q(43572),	-- Darkheart Thicket: The Nightmare Lash

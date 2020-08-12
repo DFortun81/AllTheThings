@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E      	--
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
@@ -47,7 +48,7 @@ _.ExpansionFeatures =
 					q(44246, {	-- Champion: Rottgut
 						i(139680),	-- Bracers
 					}),
-					--Followers Sort Later
+					-- TODO: Followers Sort Later
 					q(44247, {	-- Champion: Amal'thazad
 						["provider"] = { "n", 93555 },		-- Amal'thazad
 						["g"] = {

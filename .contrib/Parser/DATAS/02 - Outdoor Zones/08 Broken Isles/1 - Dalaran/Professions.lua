@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, { 	-- The Broken Isles
@@ -1342,7 +1343,6 @@ _.Zones =
 					}),
 					q(38785, {	-- Living Leystone Sample
 						["provider"] = { "i", 124491 },	-- Living Leystone Sample
-						
 					}),
 					q(39817, {	-- The Brimstone's Secret
 						["sourceQuests"] = { 39763 },	-- For Whom the Fel Tolls
@@ -1564,4 +1564,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};;
+};

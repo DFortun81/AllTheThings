@@ -97,7 +97,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(43100, {	-- Finding the Scepter
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
 							43984,	-- The Tome Opens Again (if this artifact is chosen second)
 							44089,	-- A Greater Arsenal (if this artifact is picked last)
@@ -148,7 +148,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(42128, {	-- Ritual Reagents
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
 							43984,	-- The Tome Opens Again (if this artifact is chosen second)
 							44089,	-- A Greater Arsenal (if this artifact is picked last)
@@ -193,7 +193,7 @@ _.ExpansionFeatures =
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(40495, {	-- Ulthalesh, the Deadwind Harvester
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
 							43984,	-- The Tome Opens Again (if this artifact is chosen second)
 							44089,	-- A Greater Arsenal (if this artifact is picked last)
@@ -203,17 +203,17 @@ _.ExpansionFeatures =
 						["lvl"] = 98,
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
-						
-						
-						
-						
-						
+
+
+
+
+
 --[[
-						["sourceQuests"] = {  },	-- 
+						["sourceQuests"] = {  },	--
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { , , 717 },
 						["lvl"] = ,
-						["provider"] = { "n",  },	-- 
+						["provider"] = { "n",  },	--
 					}),
 --]]
 
@@ -221,7 +221,7 @@ _.ExpansionFeatures =
 
 
 
-				--	not organized/sourced yet.
+				--	TODO: not organized/sourced yet.
 					q(41767),	-- A Daring Rescue
 					q(43414),	-- A Hero's Weapon
 					q(44099),	-- A Mutual Friend
@@ -275,7 +275,7 @@ _.ExpansionFeatures =
 					q(46243),	-- The Wrathsteed of Xoroth
 					q(45027),	-- To the Broken Shore
 					q(44227),	-- Unleashing our Wrath
-					q(44682),	-- Unparalleled Power						
+					q(44682),	-- Unparalleled Power
 					q(46243, {	-- The Wrathsteed of Xoroth
 						["lvl"] = 110,
 						["classes"] = {9},

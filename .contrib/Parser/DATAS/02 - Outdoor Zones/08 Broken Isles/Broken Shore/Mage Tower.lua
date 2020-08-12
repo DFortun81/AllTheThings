@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -51,7 +52,7 @@ _.Zones =
 						["classes"] = {
 							6,	-- Frost Death Knight
 							12,	-- Havoc Demon Hunter
-							3,	-- Survival Hunter
+							HUNTER,	-- Survival
 							4,	-- Subtlety Rogue
 							1,	-- Arms Warrior
 						},

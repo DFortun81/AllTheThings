@@ -811,7 +811,7 @@ _.Zones =
 					["coord"] = { 53.7, 16.7, 630 },
 					["provider"] = { "n", 90383 },	-- Runas the Shamed
 				}),
-        --[[ TODO: These quests will be organized soon™
+		--[[ TODO: These quests will be organized soon™
 				q(41173),	-- A Beacon of Hope
 				q(46205),	-- A Conduit No More
 				q(43514),	-- A Vainglorious Past
@@ -821,7 +821,6 @@ _.Zones =
 				q(47193),	-- Battle for Azsuna
 				q(43193),	-- Calamitous Intent
 				q(41157),	-- Corrupted Studies
-				q(46020),	-- Crystal Containment
 				q(41166),	-- Dark Secrets
 				q(41169),	-- Darkheart Thicket: Through the Fog
 				q(41165),	-- Deciphering Demonology

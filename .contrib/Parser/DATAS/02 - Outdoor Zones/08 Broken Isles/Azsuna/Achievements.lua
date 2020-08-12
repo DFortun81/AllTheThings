@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -8,19 +9,19 @@ _.Zones =
 			n(-4, {		-- Achievements
 				ach(11261),		-- Adventurer of Azsuna
 				ach(10994, {	-- A Glorious Campaign
-					cl(5, {	-- Priest
-						["classes"] = { 5 },	-- Priest
+					cl(PRIEST, {
+						["classes"] = { PRIEST },
 						["g"] = {
 							q(43375, {	-- An Ample Supply
 								["sourceQuests"] = { 43374 },	-- Murloc Mind Control (must pick up for this quest to be available)
-								["classes"] = { 5 },	-- Priest
+								["classes"] = { PRIEST },
 								["coord"] = { 58.5, 37.2, 630 },
 								["lvl"] = 103,
 								["provider"] = { "n", 110686 },	-- Zabra Hexx
 							}),
 							q(42137, {	-- Champion: Yalia Sagewhisper
 								["sourceQuests"] = { 43376 },	-- Problem Salver
-								["classes"] = { 5 },	-- Priest
+								["classes"] = { PRIEST },
 								["coord"] = { 47.1, 43.9, 630 },
 								["lvl"] = 103,
 								["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
@@ -30,7 +31,7 @@ _.Zones =
 							}),
 							q(42138, {	-- Champion: Zabra Hexx
 								["sourceQuests"] = { 43376 },	-- Problem Salver
-								["classes"] = { 5 },	-- Priest
+								["classes"] = { PRIEST },
 								["coord"] = { 47.1, 43.9, 630 },
 								["lvl"] = 103,
 								["provider"] = { "n", 110686 },	-- Zabra Hexx
@@ -48,7 +49,7 @@ _.Zones =
 							}),
 							q(43374, {	-- Murloc Mind Control
 								["sourceQuests"] = { 43372 },	-- The Best and Brightest
-								["classes"] = { 5 },	-- Priest
+								["classes"] = { PRIEST },
 								["coord"] = { 58.5, 37.2, 630 },
 								["lvl"] = 103,
 								["provider"] = { "n", 110686 },	-- Zabra Hexx
@@ -58,28 +59,28 @@ _.Zones =
 									43375,	-- An Ample Supply
 								--	43374,	-- Murloc Mind Control (commented out to avoid infinite loop!)
 								},
-								["classes"] = { 5 },	-- Priest
+								["classes"] = { PRIEST },
 								["coord"] = { 58.5, 37.2, 630 },
 								["lvl"] = 103,
 								["provider"] = { "n", 112487 },	-- Yalia Sagewhisper
 							}),
 						},
 					}),
-					cl(2, {	-- Paladin
-						["classes"] = { 2 },	-- Paladin
+					cl(PALADIN, {
+						["classes"] = { PALADIN },
 						["g"] = {
 							q(43490),	-- Aponi's Trail
 							q(42888),	-- Communication Orbs
 						},
 					}),
-					cl(8, {	-- Mage
-						["classes"] = { 8 },	-- Mage
+					cl(MAGE, {
+						["classes"] = { MAGE },
 						["g"] = {
 							q(42222),	-- Empyrean Society Report
 						},
 					}),
-					cl(4, {	-- Rogue
-						["classes"] = { 4 },	-- Rogue
+					cl(ROGUE, {
+						["classes"] = { ROGUE },
 						["g"] = {
 							q(46324, {	-- False Orders
 								["races"] = HORDE_ONLY,
@@ -89,8 +90,8 @@ _.Zones =
 							}),
 						},
 					}),
-					cl(9, {	-- Warlock
-						["classes"] = { 9 },	-- Warlock
+					cl(WARLOCK, {
+						["classes"] = { WARLOCK },
 						["g"] = {
 							q(39179),	-- Bloodstone Bandit
 							q(45024),	-- Cult Culling
@@ -113,7 +114,7 @@ _.Zones =
 						["sourceQuests"] = { 37566 },	-- The Prince is Going Down
 					}),
 					crit(5, {	-- Mak'rana and the Fate of the Queen's Reprisal
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							40794,	-- Fate of the Queen's Reprisal  (Alliance)
 							42244,	-- Fate of the Queen's Reprisal (Horde)
 							37657,	-- Making the World Safe for Profit
@@ -232,30 +233,27 @@ _.Zones =
 						un(REMOVED_FROM_GAME, title(340, {	-- TITLE: Field Medic!
 							["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
 							["g"] = {
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 2, 		-- Bloody Note (Criteria)
-									["itemID"] = 139522,		-- Bloody Note (Item)
-									--["questID"] = 42255,		-- Bloody Note (Quest)
+								i(139522, {	-- Bloody Note
+									["achievementID"] = 11139,	-- Field Medic
+									["criteriaID"] = 2, 		-- Bloody Note
+									--["questID"] = 42255,		-- Bloody Note
 									["description"] = "Pirates in southern-east Azsuna.",
 									["crs"] = {108133, 108139, 108153, 108146}
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 11, 		-- Fevered Plea (Criteria)
-									["itemID"] = 139520,		-- Fevered Plea (Item)
-									--["questID"] = 42250,		-- Fevered Plea (Quest)
+								}),
+								i(139520, {	-- Fevered Plea
+									["achievementID"] = 11139,	-- Field Medic
+									["criteriaID"] = 11, 		-- Fevered Plea
+									--["questID"] = 42250,		-- Fevered Plea
 									["description"] = "Murlocs at the southern tip in Azsuna.",
 									["crs"] = {111598, 111630, 111586 }
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 15, 		-- Singed Note (Criteria)
-									["itemID"] = 139521,		-- Singed Note (Item)
-									--["questID"] = 42245,		-- Singed Note (Quest)
+								}),
+								i(139521, {	-- Singed Note
+									["achievementID"] = 11139,	-- Field Medic
+									["criteriaID"] = 15, 		-- Singed Note
+									--["questID"] = 42245,		-- Singed Note
 									["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy.",
 									["crs"] = {88101, 88099, 108146}
-								},
+								}),
 							}
 						})),
 					},
@@ -267,7 +265,7 @@ _.Zones =
 							["sourceQuests"] = { 42213 },	-- Eye of Azshara: The Tidestone of Golganneth
 						}),
 					},
-				}),  
+				}),
 			}),
 		}),
 	}),

@@ -1,6 +1,7 @@
  ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -19,10 +20,9 @@ _.Zones =
 						["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 						["lvl"] = 110,
 						["groups"] = {
-							{
-								["itemID"] = 133887,	-- Luminous Pearl (Item)
-								["questID"] = 40960,	-- Luminous Pearl (Quest)
-							}
+							i(133887, {	-- Luminous Pearl
+								["questID"] = 40960,	-- Luminous Pearl
+							}),
 						},
 					}),
 					ach(10596, {	-- Bigger Fish to Fry
@@ -30,16 +30,14 @@ _.Zones =
 							i(133722, {		-- Axefish Lure
 								["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
 								["groups"] = {
-									{
+									i(133740, {	-- Axefish
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 4,			-- Axefish (Criteria)
-										["itemID"] = 133740,		-- Axefish (Item)
-									},
-									{
+										["criteriaID"] = 4,			-- Axefish
+									}),
+									i(139667, {	-- Axefish
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 4,			-- Axefish (Criteria)
-										["itemID"] = 139667,		-- Axefish (Item)
-									},
+										["criteriaID"] = 4,			-- Axefish
+									}),
 								},
 							}),
 							i(133724, {		-- Decayed Whale Blubber
@@ -57,16 +55,14 @@ _.Zones =
 							i(133795, {		-- Ravenous Fly
 								["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
 								["groups"] = {
-									{
+									i(133742, {	-- Ancient Black Barracuda
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-										["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
-									},
-									{
+										["criteriaID"] = 1,			-- Ancient Black Barracuda
+									}),
+									i(139669, {	-- Ancient Black Barracuda
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-										["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
-									},
+										["criteriaID"] = 1,			-- Ancient Black Barracuda
+									}),
 								},
 							}),
 							i(133723, {		-- Stunned, Angry Shark
@@ -75,16 +71,14 @@ _.Zones =
 									n(102359, {		-- Landlocked Shark
 										["description"] = "Drops 7-9 Seabottom Squid when killed.",
 										["groups"] = {
-											{
+											i(133741, {	-- Seabottom Squid
 												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-												["itemID"] = 133741,		-- Seabottom Squid (Item)
-											},
-											{
+												["criteriaID"] = 13,		-- Seabottom Squid
+											}),
+											i(139668, {	-- Seabottom Squid
 												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-												["itemID"] = 139668,		-- Seabottom Squid (Item)
-											},
+												["criteriaID"] = 13,		-- Seabottom Squid
+											}),
 										},
 									})
 								},
@@ -94,16 +88,14 @@ _.Zones =
 							["description"] = "This item will give you a buff that will allow you to see and fish from Oodelfjisk schools.",
 							["groups"] = {
 								spell(201818, {		-- Ancient Vrykul Ring (Buff)
-									{
+									i(133734, {	-- Oodelfjisk
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 12,		-- Oodelfjisk (Criteria)
-										["itemID"] = 133734,		-- Oodelfjisk (Item)
-									},
-									{
+										["criteriaID"] = 12,		-- Oodelfjisk
+									}),
+									i(139661, {	-- Oodelfjisk
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 12,		-- Oodelfjisk (Criteria)
-										["itemID"] = 139661,		-- Oodelfjisk (Item)
-									},
+										["criteriaID"] = 12,		-- Oodelfjisk
+									}),
 								}),
 							},
 						}),
@@ -116,31 +108,27 @@ _.Zones =
 						i(133714, {		-- Silverscale Minnow
 							["description"] = "This item will allow you to catch the Rare fish Thundering Stormray in Stormheim.",
 							["groups"] = {
-								{
+								i(133736, {	-- Thundering Stormray
 									["achievementID"] = 10596,	-- Bigger Fish to Fry
-									["criteriaID"] = 15,		-- Thundering Stormray (Criteria)
-									["itemID"] = 133736,		-- Thundering Stormray (Item)
-								},
-								{
+									["criteriaID"] = 15,		-- Thundering Stormray
+								}),
+								i(139663, {	-- Thundering Stormray
 									["achievementID"] = 10596,	-- Bigger Fish to Fry
-									["criteriaID"] = 15,		-- Thundering Stormray (Criteria)
-									["itemID"] = 139663,		-- Thundering Stormray (Item)
-								},
+									["criteriaID"] = 15,		-- Thundering Stormray
+								}),
 							},
 						}),
 						i(133716, {		-- Soggy Drakescale
 							["description"] = "This item will allow you to catch the Rare fish Graybelly Lobster in Stormheim.",
 							["groups"] = {
-								{
+								i(133735, {	-- Graybelly Lobster
 									["achievementID"] = 10596,	-- Bigger Fish to Fry
-									["criteriaID"] = 7,			-- Graybelly Lobster (Criteria)
-									["itemID"] = 133735,		-- Graybelly Lobster (Item)
-								},
-								{
+									["criteriaID"] = 7,			-- Graybelly Lobster
+								}),
+								i(139662, {	-- Graybelly Lobster
 									["achievementID"] = 10596,	-- Bigger Fish to Fry
-									["criteriaID"] = 7,			-- Graybelly Lobster (Criteria)
-									["itemID"] = 139662,		-- Graybelly Lobster (Item)
-								},
+									["criteriaID"] = 7,			-- Graybelly Lobster
+								}),
 							},
 						}),
 					}),
@@ -157,48 +145,37 @@ _.Zones =
 							["creatureID"] = 120458
 						}),
 					}),
-					{	-- Schematic: Reaves Module: Wormhole Generator Mode
-						["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
-					},
+					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
 				prof(HERBALISM, {
-					{	-- Felwort Sample [Felwort I]
-						["itemID"] = 129122,	-- Felwort Sample
+					i(129122, {	-- Felwort Sample
 						["questID"] = 40040,	-- Felwort Sample
 						["requireSkill"] = HERBALISM,
 						["groups"] = {
-							{	-- Felwort [Rank 1]
-								["recipeID"] = 193307,	-- Felwort [Rank 1]
-							},
+							recipe(193307),	-- Felwort [Rank 1]
 						},
-					},
-					{	-- Fjarnskaggl Sample [Fjarnskaggl I]
-						["itemID"] = 129120,	-- Fjarnskaggl Sample
+					}),
+					i(129120, {	-- Fjarnskaggl Sample
 						["questID"] = 40029,	-- Fjarnskaggl Sample
 						["requireSkill"] = HERBALISM,
 						["groups"] = {
-							{	-- Fjarnskaggl [Rank 1]
-								["recipeID"] =  193301,	-- Fjarnskaggl [Rank 1]
-							},
+							recipe(193301),	-- Fjarnskaggl [Rank 1]
 						},
-					},
-					{	-- Ram's-Horn Trowel [Fjarnskaggl II]
-						["itemID"] = 129138,	-- Ram's-Horn Trowel
+					}),
+					i(129138, {	-- Ram's-Horn Trowel
 						["questID"] = 40030,	-- Ram's-Horn Trowel
 						["sourceQuests"] = {
 							40029,	-- Fjarnskaggl Sample
 						},
 						["requireSkill"] = HERBALISM,
-					},
-					{	-- Runed Journal Page [Fjarnskaggl III]
-						["itemID"] = 129142,	-- Runed Journal Page
+					}),
+					i(129142, {	-- Runed Journal Page
 						["questID"] = 40032,	-- The Missing Page
 						["sourceQuests"] = {
 							40031,	-- Vrykul Herblore
-						},	
-						
+						},
 						["requireSkill"] = HERBALISM,
-					},
+					}),
 				}),
 				prof(SKINNING, {
 					q(40149, {	-- Drakol'nir Must Die
@@ -225,8 +202,7 @@ _.Zones =
 						["coord"] = { 45.7, 25.6, 634 },
 						["provider"] = { "n", 98721 },	-- Seymour
 					}),
-					{	-- Skinning Technique: Unbroken Claw
-						["itemID"] = 139894,	-- Skinning Technique: Unbroken Claw
+					i(139894, {	-- Skinning Technique: Unbroken Claw
 						["requireSkill"] = SKINNING,
 						["crs"] = {
 							91799,	-- Juvenile Stormwing
@@ -236,7 +212,7 @@ _.Zones =
 								["recipeID"] = 194171,	-- Unbroken Claw
 							},
 						},
-					},
+					}),
 					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
 						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
 						["requireSkill"] = SKINNING,
@@ -245,6 +221,6 @@ _.Zones =
 					}),
 				}),
 			}),
-		}),	
+		}),
 	}),
 };

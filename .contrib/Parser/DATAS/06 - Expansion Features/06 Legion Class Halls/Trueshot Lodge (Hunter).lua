@@ -20,10 +20,10 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(QUESTS, {
-					q(41541, {	-- A Beastly Expedition 
+					q(41541, {	-- A Beastly Expedition
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
 						["classes"] = {3},
-					}),			
+					}),
 					q(41541),	-- A Beastly Expedition
 					q(43423),	-- A Hero's Weapon
 					q(43370),	-- A New Invention
@@ -44,7 +44,7 @@ _.ExpansionFeatures =
 					q(42415),	-- Champion: Halduron Brightwing
 					q(42409),	-- Champion: Loren Stormhoof
 					q(46048, {	-- Champion: Nighthuntress Syrenne
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 					}),
 					q(44043),	-- Continuing the Legend
 					q(45392),	-- Dark Memento
@@ -145,7 +145,7 @@ _.ExpansionFeatures =
 						sp(219663) -- Heroic Weapons [No item associated]
 					}),
 					--]]
-					--Followers  Sort to other quests later
+					-- TODO: Followers  Sort to other quests later
 					q(42414, {	-- Champion: Addie Fizzlebog
 						["provider"] = { "n", 99095 },	-- Addie Fizzlebog
 						["g"] = {
