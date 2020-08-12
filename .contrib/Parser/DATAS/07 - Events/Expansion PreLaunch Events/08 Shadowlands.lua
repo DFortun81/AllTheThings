@@ -155,6 +155,17 @@ _.WorldEvents =
 					}),
 					]]--
 				}),
+				n(RARES, {	
+					n(174054, {	-- Falric
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 50.2, 88.1, 118 },
+						["questID"] = 62332, -- first-time kill. TODO: is this a daily? weekly? only-time only? Need more data!
+						["g"] = {	-- adding the reward, but uncertain if it's worth adding yet
+							i(183200),	-- Pitch Black Scourgestone
+						},
+						-- TODO: need to add Forgemaster Garfrost and Malywn as confirmed spawns
+					}),
+				}),
 				n(VENDORS, {
 					
 				}),
