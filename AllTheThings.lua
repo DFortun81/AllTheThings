@@ -4064,7 +4064,8 @@ end
 					-- We only care about currencies in the addon at the moment.
 					for currencyID, _ in pairs(cache) do
 						-- Compare the name of the currency vs the name of the token
-						if select(1, C_CurrencyInfo.GetCurrencyInfo(currencyID)) == name then
+						local currencyInfo = C_CurrencyInfo.GetCurrencyInfo(currencyID)
+						if currencyInfo and currencyInfo.name == name then
 							AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
 							if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 							self:Show();
@@ -4614,11 +4615,9 @@ app.BaseCurrencyClass = {
 		if key == "key" then
 			return "currencyID";
 		elseif key == "text" then
-			return C_CurrencyInfo.GetCurrencyLink(t.currencyID, 1) or select(1, C_CurrencyInfo.GetCurrencyInfo(t.currencyID));
+			return C_CurrencyInfo.GetCurrencyLink(t.currencyID, 1) or C_CurrencyInfo.GetCurrencyInfo(t.currencyID).name;
 		elseif key == "icon" then
-			return select(3, C_CurrencyInfo.GetCurrencyInfo(t.currencyID));
-		elseif key == "icon" then
-			return select(3, C_CurrencyInfo.GetCurrencyInfo(t.currencyID));
+			return C_CurrencyInfo.GetCurrencyInfo(t.currencyID).iconFileID;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -9356,7 +9355,9 @@ local function RowOnEnter(self)
 						_,name,_,_,_,_,_,_,_,icon = GetItemInfo(v[2]);
 						amount = "x" .. formatNumericWithCommas(v[3]);
 					elseif _ == "c" then
-						name,_,icon = C_CurrencyInfo.GetCurrencyInfo(v[2])
+						local currencyData = C_CurrencyInfo.GetCurrencyInfo(v[2])
+						name = currencyData.name or "Unknown"
+						icon = currencyData.iconFileID or nil
 						amount = "x" .. formatNumericWithCommas(v[3]);
 					elseif _ == "g" then
 						name = "";
