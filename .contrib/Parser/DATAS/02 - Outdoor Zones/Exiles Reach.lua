@@ -5,7 +5,8 @@ _.Zones =
 {
 	m(1409, {	-- Exile's Reach
 		["maps"] = {
-			1727,	-- North Sea
+			1726,	-- North Sea (Alliance)
+			1727,	-- North Sea (Horde)
 			1609,	-- Darkmaul Citadel (dungeon scenario)
 			1610,	-- Darkmaul Citadel upper floor (dungeon scenario)
 		},
@@ -45,7 +46,12 @@ _.Zones =
 						]]--
 					},
 				}),
-				q(59928, {	-- Brace for Impact
+				q(58208, {	-- Brace for Impact (A)
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 160664 },	-- Private Cole
+					["sourceQuest"] = 58209,	-- Stand Your Ground
+				}),
+				q(59928, {	-- Brace for Impact (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166583 },	-- Grunt Throg
 					["sourceQuest"] = 59927,	-- Stand Your Ground
@@ -62,13 +68,25 @@ _.Zones =
 					["provider"] = { "n", 167633 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59978,	-- Right Beneath Their Eyes
 				}),
-				q(59932, {	-- Cooking Meat
+				q(55174, {	-- Cooking Meat (A)
+					["coord"] = { 58.3, 74.6, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 156651 },	-- Captain Garrick
+					["sourceQuest"] = 54952,	-- Finding the Lost Expedition
+				}),
+				q(59932, {	-- Cooking Meat (H)
 					["coord"] = { 58.3, 74.6, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59931,	-- Finding the Lost Expedition
 				}),
-				q(59938, {	-- Down with the Quilboar
+				q(55186, {	-- Down with the Quilboar (A)
+					["coord"] = { 62.7, 69.8, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 154327 },	-- Austin Huxworth
+					["sourceQuest"] = 55173,	-- Northbound
+				}),
+				q(59938, {	-- Down with the Quilboar (H)
 					["coord"] = { 62.7, 69.8, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
@@ -91,19 +109,37 @@ _.Zones =
 						]]--
 					},
 				}),
-				q(59930, {	-- Emergency First Aid
+				q(54951, {	-- Emergency First Aid (A)
+					["coord"] = { 61.8, 82.8, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 156626 },	-- Captain Garrick
+					["sourceQuest"] = 55122,	-- Murloc Mania
+				}),
+				q(59930, {	-- Emergency First Aid (H)
 					["coord"] = { 61.8, 82.8, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59929,	-- Murloc Mania
 				}),
-				q(59933, {	-- Enhanced Combat Tactics
+				q(59254, {	-- Enhanced Combat Tactics (A)
+					["coord"] = { 58.3, 74.6, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 156651 },	-- Captain Garrick
+					["sourceQuest"] = 55174,	-- Cooking Meat
+				}),
+				q(59933, {	-- Enhanced Combat Tactics (H)
 					["coord"] = { 58.3, 74.6, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59932,	-- Cooking Meat
 				}),
-				q(59931, {	-- Finding the Lost Expedition
+				q(54952, {	-- Finding the Lost Expedition (A)
+					["coord"] = { 61.8, 82.8, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 156626 },	-- Captain Garrick
+					["sourceQuest"] = 54951,	-- Emergency First Aid
+				}),
+				q(59931, {	-- Finding the Lost Expedition (H)
 					["coord"] = { 61.8, 82.8, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
@@ -115,7 +151,13 @@ _.Zones =
 					["provider"] = { "n", 168441 },	-- Cork Fizzlepop
 					["sourceQuest"] = 60343,	-- Welcome to Orgrimmar
 				}),
-				q(59939, {	-- Forbidden Quilboar Necromancy
+				q(55184, {	-- Forbidden Quilboar Necromancy (A)
+					["coord"] = { 62.7, 69.8, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 154327 },	-- Austin Huxworth
+					["sourceQuest"] = 55173,	-- Northbound
+				}),
+				q(59939, {	-- Forbidden Quilboar Necromancy (H)
 					["coord"] = { 62.7, 69.8, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
@@ -176,13 +218,25 @@ _.Zones =
 						]]--
 					},
 				}),
-				q(59929, {	-- Murloc Mania
+				q(55122, {	-- Murloc Mania (A)
+					["coord"] = { 61.8, 82.8, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 156626 },	-- Captain Garrick
+					["sourceQuest"] = 58208,	-- Brace for Impact
+				}),
+				q(59929, {	-- Murloc Mania (H)
 					["coord"] = { 61.8, 82.8, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59928,	-- Brace for Impact
 				}),
-				q(59935, {	-- Northbound
+				q(55173, {	-- Northbound (A)
+					["coord"] = { 58.3, 74.4, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 156607 },	-- Alaria
+					["sourceQuest"] = 59254,	-- Enhanced Combat Tactics
+				}),
+				q(59935, {	-- Northbound (H)
 					["coord"] = { 58.3, 74.4, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166854 },	-- Won'sa
@@ -212,6 +266,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167596 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59975,	-- To Darkmaul Citadel
+				}),
+				q(58209, {	-- Stand Your Ground (A)
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 160664 },	-- Private Cole
+					["sourceQuest"] = 56775,	-- Warming Up
 				}),
 				q(59927, {	-- Stand Your Ground
 					["races"] = HORDE_ONLY,
@@ -278,7 +337,11 @@ _.Zones =
 					["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59947,	-- Message to Base
 				}),
-				q(59926, {	-- Warming Up
+				q(56775, {	-- Warming Up (A)
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 156280 },	-- Captain Garrick
+				}),
+				q(59926, {	-- Warming Up (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166573 },	-- Warlord Breka Grimaxe
 				}),

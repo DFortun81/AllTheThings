@@ -2749,12 +2749,15 @@ _.NeverImplemented =
 		q(60490),	-- Triggers after completing "Advancing the Effort" and unlocking Icecrown dailies
 		
 		-- Exile's Reach
-		q(58418),	-- Triggers immediately upon login. Possibly some kind of indicator for the account having done it at least once
-		q(54927),	-- Triggered after picking up the first quest as horde but is account-wide
-		q(54937),	-- Triggered after picking up the first quest as horde but is account-wide
-		q(59699),	-- Defeat Grunt Throg during "Stand Your Ground" as Horde. Coincides with hitting level 2
-		q(54928),	-- Triggered after getting 3 holy power and striking Warlord Grimaxe with the first major combat ability
+		q(58418),	-- Triggers shortly after login. Possibly some kind of indicator for the account having done it at least once per faction?
+		q(54927),	-- Triggered after picking up the first quest on the boat
+		q(54937),	-- Triggered after picking up the first quest on the boat
+		q(59699),	-- Defeat Private Cole(A) or Grunt Throg(H) during "Stand Your Ground". Coincides with hitting level 2
+		q(58882),	-- Triggered after collecting the Abandoned Treasure Chest along with 58380
+		q(58883),	-- Triggered after hitting level 3 during "Murloc Mania" as alliance. Didn't notice it on horde, but may have missed it
+		q(54928),	-- Triggered after getting 3 holy power and striking Warlord Grimaxe with the first major combat ability. Didn't trigger at all on an alliance priest
 		q(58336),	-- Triggered at the same time as 54928. Possibly dialog-related?
+		q(55607),	-- Triggered while killing quilboars in Quilboar Briarpatch on an alliance priest. Did not see it trigger as horde
 		q(59610),	-- Triggered after killing Torgok during "The Re-Deather" as horde. Probably a zone-phase controller
 		q(59143),	-- Triggered shortly after collecting the Runetusk Necklace. Maybe the neck only drops once and this is the tracker?
 		q(60167),	-- Triggered right after Warlord Grimaxe tells Shuja to heal during the Tunk encounter
