@@ -2759,7 +2759,8 @@ _.NeverImplemented =
 		q(58336),	-- Triggered at the same time as 54928. Possibly dialog-related?
 		q(55607),	-- Triggered while killing quilboars in Quilboar Briarpatch on an alliance priest. Did not see it trigger as horde
 		q(59610),	-- Triggered after killing Torgok during "The Re-Deather" as horde. Probably a zone-phase controller
-		q(59143),	-- Triggered shortly after collecting the Runetusk Necklace. Maybe the neck only drops once and this is the tracker?
+		q(59143),	-- Triggered after looting the Runetusk Necklace from ogres in Darkmaul Citadel
+		q(59139),	-- Triggered after looting the Spider-Eye Ring from spiders in Hrun's Barrow
 		q(60167),	-- Triggered right after Warlord Grimaxe tells Shuja to heal during the Tunk encounter
 	}),
 };
