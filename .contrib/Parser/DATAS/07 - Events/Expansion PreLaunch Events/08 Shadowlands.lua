@@ -253,6 +253,18 @@ _.WorldEvents =
 					]]--
 				}),
 				n(RARES, {
+					n(169035, {	-- Nathanos Blightcaller
+						["maps"] = { 23 },	-- Eastern Plaguelands
+						["coord"] = { 23.5, 68.4, 23 },
+						["isRaid"] = true,
+						["questID"] = 60541,
+						["altQuests"] = {
+							60542,	-- This is the world quest ID. Not sure if it's repeatable, so using the loot tracker on Nathanos directly and we can add the quest itself later if it's relevant
+						},
+						["g"] = {
+							-- world quest grants the equivalent of a darkshore cache. Not sure yet if he has his own loot table
+						},
+					}),
 					-- adding the Pitch Black Scourgestone rewards, but uncertain if it's worth keeping
 					-- TODO: need to add Forgemaster Garfrost and Malywn as confirmed spawns
 					n(174054, {	-- Falric
