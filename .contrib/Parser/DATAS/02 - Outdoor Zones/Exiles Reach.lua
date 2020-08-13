@@ -386,8 +386,9 @@ _.Zones =
 			}),
 			n(-212, {	-- Treasure Chests
 				o(339770, {	-- Abandoned Treasure Chest
-					-- TODO: forgot to add coords for this one
-					["questID"] = 58380,	-- also triggered 58882, coinciding with lvl 4
+					["coord"] = { 57.1, 68.4, 1409 },
+					["questID"] = 58380,
+					["sourceQuest"] = 59254,	-- Enhanced Combat Tactics
 				}),
 				o(329918, {	-- Quilboar Treasures
 					["coord"] = { 58.5, 59.3, 1409 },
