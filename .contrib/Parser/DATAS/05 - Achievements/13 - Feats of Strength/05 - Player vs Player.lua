@@ -10,19 +10,19 @@ _.Achievements =
 				["groups"] = {
 					n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
 						ach(12959, {	-- Challenger: Battle for Azeroth Season 1
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(32),	-- Challenger <Name>
 							},
 						}),
 						ach(13199, {	-- Combatant: Battle for Azeroth Season 1
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(78),	-- Combatant <Name>
 							},
 						}),
 						ach(12962, {	-- Duelist: Battle for Azeroth Season 1
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(30),		-- Duelist <Name>
 								--[[ Note!! Currently we can not list this due to having no item.
@@ -36,10 +36,10 @@ _.Achievements =
 							},
 						}),
 						ach(13465, {	-- Elite: Battle for Azeroth Season 1
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(12961, {	-- Gladiator: Battle for Azeroth Season 1
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(29),			-- Gladiator <Name>
 								i(156879, {	-- Dread Gladiator's Proto-Drake
@@ -55,20 +55,20 @@ _.Achievements =
 						}),
 						ach(12963, {	-- Hero of the Alliance: Dread
 							["races"] = ALLIANCE_ONLY,
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(12964, {	-- Hero of the Horde: Dread
 							["races"] = HORDE_ONLY,
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(12960, {	-- Rival: Battle for Azeroth Season 1
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(31),	-- Rival <Name>
 							},
 						}),
 						ach(12945, {	-- Dread Gladiator: Battle for Azeroth Season 1
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(79, {	-- Dread Gladiator <Name>
 									["u"] = REMOVED_FROM_GAME,
@@ -78,19 +78,19 @@ _.Achievements =
 					}),
 					n(-690,{	-- Sinister Gladiator: Battle for Azeroth Season 2
 						ach(13203, {	-- Challenger: Battle for Azeroth Season 2
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(32),	-- Challenger <Name>
 							},
 						}),
 						ach(13204, {	-- Combatant: Battle for Azeroth Season 2
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(78),	-- Combatant <Name>
 							},
 						}),
 						ach(13209, {	-- Duelist: Battle for Azeroth Season 2
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(30),	-- Duelist <Name>
 								--[[ Note!! Currently we can not list this due to having no item.
@@ -104,7 +104,7 @@ _.Achievements =
 							},
 						}),
 						ach(13451, {	-- Elite: Battle for Azeroth Season 2
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								i(164910, {	-- Sinister Gladiator's Tabard (A)
 									["u"] = REMOVED_FROM_GAME,
@@ -115,7 +115,7 @@ _.Achievements =
 							},
 						}),
 						ach(13212, {	-- Gladiator: Battle for Azeroth Season 2
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(29),	-- Gladiator <Name>
 								i(156880, {	-- Sinister Gladiator's Proto-Drake
@@ -125,20 +125,20 @@ _.Achievements =
 						}),
 						ach(13210, {	-- Hero of the Alliance: Sinister
 							["races"] = ALLIANCE_ONLY,
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(13211, {	-- Hero of the Horde: Sinister
 							["races"] = HORDE_ONLY,
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(13205, {	-- Rival: Battle for Azeroth Season 2
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(31),	-- Rival <Name>
 							},
 						}),
 						ach(13200, {	-- Sinister Gladiator: Battle for Azeroth Season 2
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(80, {	-- Sinister Gladiator <Name>
 									["u"] = REMOVED_FROM_GAME,
@@ -148,19 +148,19 @@ _.Achievements =
 					}),
 					n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
 						ach(13634, {	-- Challenger: Battle for Azeroth Season 3
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(32),	-- Challenger <Name>
 							},
 						}),
 						ach(13639, {	-- Combatant: Battle for Azeroth Season 3
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(78),	-- Combatant <Name>
 							},
 						}),
 						ach(13642, {	-- Duelist: Battle for Azeroth Season 3
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(30),	-- Duelist <Name>
 								--[[ Note!! Currently we can not list this due to having no item.
@@ -174,7 +174,7 @@ _.Achievements =
 							},
 						}),
 						ach(13676, {	-- Elite: Battle for Azeroth Season 3
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								i(167363, {	-- Notorious Gladiator's Tabard (A)
 									["u"] = REMOVED_FROM_GAME,
@@ -185,7 +185,7 @@ _.Achievements =
 							},
 						}),
 						ach(13647, {	-- Gladiator: Battle for Azeroth Season 3
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(29),	-- Gladiator <Name>
 								i(156881, {	-- Notorious Gladiator's Proto-Drake
@@ -195,14 +195,14 @@ _.Achievements =
 						}),
 						ach(13643, {	-- Hero of the Alliance: Notorious
 							["races"] = ALLIANCE_ONLY,
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(13644, {	-- Hero of the Horde: Notorious
 							["races"] = HORDE_ONLY,
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(13630, {	-- Notorious Gladiator: Battle for Azeroth Season 3
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(402, {	-- Notorious Gladiator <Name>
 									["u"] = REMOVED_FROM_GAME,
@@ -210,7 +210,7 @@ _.Achievements =
 							},
 						}),
 						ach(13641, {	-- Rival: Battle for Azeroth Season 3
-							["u"] = 4,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								title(31),	-- Rival <Name>
 							},
@@ -218,19 +218,19 @@ _.Achievements =
 					}),
 					n(-692, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
 						ach(13959, {	-- Challenger: Battle for Azeroth Season 4
-						--	["u"] = 4, S3
+						--	["u"] = REMOVED_FROM_GAME, S4
 							["g"] = {
 								title(32),	-- Challenger <Name>
 							},
 						}),
 						ach(13962, {	-- Combatant: Battle for Azeroth Season 4
-						--	["u"] = 4, S3
+						--	["u"] = REMOVED_FROM_GAME, S4
 							["g"] = {
 								title(78),	-- Combatant <Name>
 							},
 						}),
 						ach(13964, {	-- Duelist: Battle for Azeroth Season 4
-						--	["u"] = 4, S3
+						--	["u"] = REMOVED_FROM_GAME, S4
 							["g"] = {
 								title(30),	-- Duelist <Name>
 								-- Note!! Currently we can not list this due to having no item.
@@ -244,7 +244,7 @@ _.Achievements =
 							},
 						}),
 						ach(13989, {	-- Elite: Battle for Azeroth Season 4
-						--	["u"] = 4, S3
+						--	["u"] = REMOVED_FROM_GAME, S4
 							["g"] = {
 								i(172652, {	-- Corrupted Gladiator's Tabard (A)
 								--	["u"] = REMOVED_FROM_GAME, -- S3
@@ -255,7 +255,7 @@ _.Achievements =
 							},
 						}),
 						ach(13967, {	-- Gladiator: Battle for Azeroth Season 4
-						--	["u"] = 4, S3
+						--	["u"] = REMOVED_FROM_GAME, S4
 							["g"] = {
 								title(29),	-- Gladiator <Name>
 								i(156884, {	-- Corrupted Gladiator's Proto-Drake
@@ -265,20 +265,20 @@ _.Achievements =
 						}),
 						ach(13966, {	-- Hero of the Alliance: Corrupted
 							["races"] = ALLIANCE_ONLY,
-						--	["u"] = 4, S3
+						--	["u"] = REMOVED_FROM_GAME, S4
 						}),
 						ach(13965, {	-- Hero of the Horde: Corrupted
 							["races"] = HORDE_ONLY,
-						--	["u"] = 4, S3
+						--	["u"] = REMOVED_FROM_GAME, S4
 						}),
 						ach(13963, {	-- Rival: Battle for Azeroth Season 4
-						--	["u"] = 4, S3
+						--	["u"] = REMOVED_FROM_GAME, S4
 							["g"] = {
 								title(31),	-- Rival <Name>
 							},
 						}),
 						ach(13957, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
-						--	["u"] = 4, S3
+						--	["u"] = REMOVED_FROM_GAME, S4
 							["g"] = {
 								title(411, {	-- Corrupted Gladiator <Name>
 								--	["u"] = REMOVED_FROM_GAME, -- S3
