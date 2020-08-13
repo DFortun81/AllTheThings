@@ -2746,7 +2746,9 @@ _.NeverImplemented =
 		-- SHADOWLANDS --
 		-----------------
 		-- Pre-launch event
-		q(60490),	-- Triggers after completing "Advancing the Effort" and unlocking Icecrown dailies
+		q(60490),	-- Triggers after completing "Advancing the Effort" and unlocking Icecrown dailies. Also triggered when starting the new phase at Ironwall Rampart. Maybe it's the zone story daily progression tracker?
+		q(60541),	-- 
+		q(60511),	-- Icecrown story - Advancing the effort (phase 2?). triggered after completing "Only Shadows Remain"
 		
 		-- Exile's Reach
 		q(58418),	-- Triggers shortly after login. Possibly some kind of indicator for the account having done it at least once per faction?

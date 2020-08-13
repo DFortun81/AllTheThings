@@ -204,7 +204,100 @@ _.WorldEvents =
 						["sourceQuest"] = 60827,	-- Advancing the Effort
 						["lvl"] = 48,
 					}),
-
+					q(59878, {	-- Too Many Whelps
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 71.0, 21.9, 118 },
+						["isDaily"] = true,
+						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 48,
+					}),
+					q(60841, {	-- Evacuation Effort
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 71.0, 21.9, 118 },
+						["isDaily"] = true,
+						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 48,
+					}),
+					
+					-- phase 2 quests?
+					q(62163, {	-- A Message from the Justicar
+						["maps"] = { 85 },	-- Orgrimmar
+						["coord"] = { 52.9, 77.3, 84 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 169878 },	-- Commander Throgg
+						-- not sure when this quest actually appears. It wasn't there on day one but showed up on subsequent days. Possibly related to event phasing?
+					}),
+					q(60828, {	-- A New Foothold
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 71.0, 22.0, 118 },
+						["provider"] = { "n", 168123 },	-- Crusader Renn
+						["sourceQuests"] = {
+							-- pretty sure there's an alliance version here too
+							62163,	-- A Message from the Justicar 
+						},
+					}),
+					q(60843, {	-- Cult Couture
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 44.9, 44.7, 118 },
+						["provider"] = { "n", 170467 },	-- Crusader Renn
+						["sourceQuest"] = 60828,	-- A New Foothold
+					}),
+					q(62185, {	-- Fighting for Attention
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 44.9, 44.7, 118 },
+						["provider"] = { "n", 170467 },	-- Crusader Renn
+						["sourceQuest"] = 60828,	-- A New Foothold
+					}),
+					q(60861, {	-- Secrets in Shadows
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 44.9, 44.7, 118 },
+						["provider"] = { "n", 170467 },	-- Crusader Renn
+						["sourceQuests"] = {
+							60843,	-- Cult Couture
+							62185,	-- Fighting for Attention
+						},
+					}),
+					q(62225, {	-- Bursting the Bubble
+						["maps"] = { 118 },
+						["coord"] = { 61.4, 63.8, 118 },
+						["provider"] = { "o", 357758 },	-- Plague Barrel
+						["sourceQuest"] = 60861,	-- Secrets in Shadows
+					}),
+					q(60867, {	-- A Message from Above
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 44.9, 44.7, 118 },
+						["provider"] = { "n", 170467 },	-- Crusader Renn
+						["sourceQuest"] = 62225,	-- Bursting the Bubble
+					}),
+					q(60932, {	-- Only Shadows Remain
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 44.9, 44.7, 118 },
+						["provider"] = { "n", 170467 },	-- Crusader Renn
+						["sourceQuest"] = 60867,	-- A Message from Above
+					}),
+					q(60869, {	-- With Hope in Hand
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 44.9, 44.7, 118 },
+						["provider"] = { "n", 170467 },	-- Crusader Renn
+						["sourceQuest"] = 60932,	-- Only Shadows Remain
+					}),
+					q(59851, {	-- Frozen Solid
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 44.9, 44.7, 118 },
+						["isDaily"] = true,
+						["provider"] = { "n", 170467 },	-- Crusader Renn
+						["sourceQuest"] = 60932,	-- Only Shadows Remain
+					}),
+					q(59847, {	-- Defending the Rampart
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 44.9, 44.7, 118 },
+						["isDaily"] = true,
+						["provider"] = { "n", 170467 },	-- Crusader Renn
+						["sourceQuest"] = 60932,	-- Only Shadows Remain
+					}),
+					
 					-- repeatables below
 					q(62401, {	-- Strange Scourgestones
 						["maps"] = { 118 },	-- Icecrown
@@ -266,7 +359,8 @@ _.WorldEvents =
 						},
 					}),
 					-- adding the Pitch Black Scourgestone rewards, but uncertain if it's worth keeping
-					-- TODO: need to add Forgemaster Garfrost and Malywn as confirmed spawns
+					-- TODO: many more possible bosses here
+					-- rares spawn every 20 minutes
 					n(174054, {	-- Falric
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 50.2, 88.1, 118 },
@@ -351,7 +445,84 @@ _.WorldEvents =
 					}),
 				}),
 				n(VENDORS, {
-
+					-- Big list of items from multiple vendors.. feels messy doing it like this
+					n(165840, {	-- Quartermaster Lungren
+						["coord"] = { 53.1, 76.9, 85 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(183555),	-- PH Prologue Horde Cloth Cloak
+							i(183538),	-- PH Prologue Horde Cloth Feet
+							i(183576),	-- PH Prologue Horde Cloth Hand
+							i(183575),	-- PH Prologue Horde Cloth Head
+							i(183539),	-- PH Prologue Horde Cloth Legs
+							i(183535),	-- PH Prologue Horde Cloth Robe
+							i(183574),	-- PH Prologue Horde Cloth Shoulder
+							i(183577),	-- PH Prologue Horde Cloth Waist
+							i(183541),	-- PH Prologue Horde Cloth Wrist
+							i(183537),	-- PH Prologue Horde Leather Chest
+							i(183581),	-- PH Prologue Horde Leather Feet
+							i(183580),	-- PH Prologue Horde Leather Hand
+							i(183579),	-- PH Prologue Horde Leather Head
+							i(183540),	-- PH Prologue Horde Leather Legs
+							i(183578),	-- PH Prologue Horde Leather Shoulder
+							i(183582),	-- PH Prologue Horde Leather Waist
+							i(183544),	-- PH Prologue Horde Leather Wrist
+							i(183536),	-- PH Prologue Horde Mail Chest
+							i(183587),	-- PH Prologue Horde Mail Feet
+							i(183586),	-- PH Prologue Horde Mail Hand
+							i(183585),	-- PH Prologue Horde Mail Head
+							i(183584),	-- PH Prologue Horde Mail Legs
+							i(183583),	-- PH Prologue Horde Mail Shoulder
+							i(183588),	-- PH Prologue Horde Mail Waist
+							i(183543),	-- PH Prologue Horde Mail Wrist
+							i(183593),	-- PH Prologue Horde Plate Chest
+							i(183594),	-- PH Prologue Horde Plate Feet
+							i(183592),	-- PH Prologue Horde Plate Hand
+							i(183591),	-- PH Prologue Horde Plate Head
+							i(183590),	-- PH Prologue Horde Plate Legs
+							i(183589),	-- PH Prologue Horde Plate Shoulder
+							i(183595),	-- PH Prologue Horde Plate Waist
+							i(183542),	-- PH Prologue Horde Plate Wrist
+						},
+					}),
+					n(173791, {	-- Crusader Adevald Ironbeard
+						["coord"] = { 44.9, 44.5, 118 },
+						["g"] = {
+							i(183555),	-- PH Prologue Horde Cloth Cloak
+							i(183538),	-- PH Prologue Horde Cloth Feet
+							i(183576),	-- PH Prologue Horde Cloth Hand
+							i(183575),	-- PH Prologue Horde Cloth Head
+							i(183539),	-- PH Prologue Horde Cloth Legs
+							i(183535),	-- PH Prologue Horde Cloth Robe
+							i(183574),	-- PH Prologue Horde Cloth Shoulder
+							i(183577),	-- PH Prologue Horde Cloth Waist
+							i(183541),	-- PH Prologue Horde Cloth Wrist
+							i(183537),	-- PH Prologue Horde Leather Chest
+							i(183581),	-- PH Prologue Horde Leather Feet
+							i(183580),	-- PH Prologue Horde Leather Hand
+							i(183579),	-- PH Prologue Horde Leather Head
+							i(183540),	-- PH Prologue Horde Leather Legs
+							i(183578),	-- PH Prologue Horde Leather Shoulder
+							i(183582),	-- PH Prologue Horde Leather Waist
+							i(183544),	-- PH Prologue Horde Leather Wrist
+							i(183536),	-- PH Prologue Horde Mail Chest
+							i(183587),	-- PH Prologue Horde Mail Feet
+							i(183586),	-- PH Prologue Horde Mail Hand
+							i(183585),	-- PH Prologue Horde Mail Head
+							i(183584),	-- PH Prologue Horde Mail Legs
+							i(183583),	-- PH Prologue Horde Mail Shoulder
+							i(183588),	-- PH Prologue Horde Mail Waist
+							i(183543),	-- PH Prologue Horde Mail Wrist
+							i(183593),	-- PH Prologue Horde Plate Chest
+							i(183594),	-- PH Prologue Horde Plate Feet
+							i(183592),	-- PH Prologue Horde Plate Hand
+							i(183591),	-- PH Prologue Horde Plate Head
+							i(183590),	-- PH Prologue Horde Plate Legs
+							i(183589),	-- PH Prologue Horde Plate Shoulder
+							i(183595),	-- PH Prologue Horde Plate Waist
+							i(183542),	-- PH Prologue Horde Plate Wrist
+						},
+					}),
 				}),
 			}),
 		},
