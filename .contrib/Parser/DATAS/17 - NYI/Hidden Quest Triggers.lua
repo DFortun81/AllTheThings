@@ -2747,5 +2747,16 @@ _.NeverImplemented =
 		-----------------
 		-- Pre-launch event
 		q(60490),	-- Triggers after completing "Advancing the Effort" and unlocking Icecrown dailies
+		
+		-- Exile's Reach
+		q(58418),	-- Triggers immediately upon login. Possibly some kind of indicator for the account having done it at least once
+		q(54927),	-- Triggered after picking up the first quest as horde but is account-wide
+		q(54937),	-- Triggered after picking up the first quest as horde but is account-wide
+		q(59699),	-- Defeat Grunt Throg during "Stand Your Ground" as Horde. Coincides with hitting level 2
+		q(54928),	-- Triggered after getting 3 holy power and striking Warlord Grimaxe with the first major combat ability
+		q(58336),	-- Triggered at the same time as 54928. Possibly dialog-related?
+		q(59610),	-- Triggered after killing Torgok during "The Re-Deather" as horde. Probably a zone-phase controller
+		q(59143),	-- Triggered shortly after collecting the Runetusk Necklace. Maybe the neck only drops once and this is the tracker?
+		q(60167),	-- Triggered right after Warlord Grimaxe tells Shuja to heal during the Tunk encounter
 	}),
 };
