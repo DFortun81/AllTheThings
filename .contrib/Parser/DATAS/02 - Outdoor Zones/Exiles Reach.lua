@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(1409, {	-- Exile's Reach
@@ -15,7 +16,7 @@ _.Zones =
 			Remaining things TODO:
 				* Class-specific quests that begins after "Stocking Up on Supplies"
 				* Quests after "Finding Your Way" - can't complete due to pre-launch event zombies making it impossible to progress further as of 12.August.2020
-				
+
 			Darkmaul Citadel:
 				n(157300, {	-- Tunk
 					i(178167),	-- Tunk's Lil' Whomper
@@ -34,7 +35,7 @@ _.Zones =
 				q(58923, {	-- A Paladin's Service (A)
 					["coord"] = { 52.0, 55.4, 1409 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PRIEST },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 156801 },	-- Private Cole
 					["sourceQuest"] = 55194,	-- Stocking Up on Supplies
 				}),
@@ -414,7 +415,7 @@ _.Zones =
 					["coord"] = { 56.1, 53.6, 1409 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { PRIEST },
-					--["provider"] = { "n",  },	-- 
+					--["provider"] = { "n",  },	--
 					["sourceQuest"] = 59961,	-- A Priest's End
 				}),
 				q(55879, {	-- Ride of the Scientifically Enhanced Boar
@@ -478,7 +479,7 @@ _.Zones =
 					["coord"] = { 57.5, 52.2, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
-					--["provider"] = { "n",  },	-- 
+					--["provider"] = { "n",  },	--
 					["sourceQuest"] = 58923,	-- A Paladin's Service
 				}),
 				q(60174, {	-- The Divine's Shield (H)
