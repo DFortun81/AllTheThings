@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(1409, {	-- Exile's Reach
@@ -19,10 +20,12 @@ _.Zones =
 			Darkmaul Citadel:
 				n(157300, {	-- Tunk
 					i(178167),	-- Tunk's Lil' Whomper
+					i(179360),	-- Tunk's Tiny Bow
 					i(178162),	-- Tunk's Whomper
 				}),
 				n(156501, {	-- Ravnyr
 					i(178168),	-- Darkmaul Ritual Stone
+					i(178171),	-- Darkmaul Signet Ring
 					i(178169),	-- Decrepit Dragonscale Drape
 				},
 
@@ -631,6 +634,7 @@ _.Zones =
 						i(175167),	-- Expeditionary Staff
 						i(175172),	-- Expeditionary Dagger
 						i(175166),	-- Expeditionary Greatsword
+						i(175162),	-- Expeditionary Longbow
 						i(175168),	-- Expeditionary Quarterstaff
 						i(175170),	-- Expeditionary Short Sword
 						i(175173),	-- Expeditionary Cudgel
@@ -771,6 +775,7 @@ _.Zones =
 						i(175163),	-- Expeditionary Quarterstaff
 						i(175165),	-- Expeditionary Greataxe
 						i(175174),	-- Expeditionary Cudgel
+						i(175169),	-- Expeditionary Longbow
 						i(175164),	-- Expeditionary Staff
 						i(175171),	-- Expeditionary Dagger
 					},
@@ -894,7 +899,10 @@ _.Zones =
 				o(339770, {	-- Abandoned Treasure Chest
 					["coord"] = { 57.1, 68.4, 1409 },
 					["questID"] = 58380,
-					["sourceQuest"] = 59254,	-- Enhanced Combat Tactics
+					["sourceQuests"] = {
+						54952,	-- Finding the Lost Expedition (A)
+						59931,	-- Finding the Lost Expedition (H)
+					},
 				}),
 				o(329918, {	-- Quilboar Treasures
 					["coord"] = { 58.5, 59.3, 1409 },
