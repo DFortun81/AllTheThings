@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
 	m(1409, {	-- Exile's Reach
@@ -14,7 +13,7 @@ _.Zones =
 		["g"] = {
 			--[[
 			Remaining things TODO:
-				* Class-specific quests that begins after "Stocking Up on Supplies"
+				* Some class-specific quests are missing providers. Search "TODO" for which ones are needed
 				* Quests after "Finding Your Way" - can't complete due to pre-launch event zombies making it impossible to progress further as of 12.August.2020
 
 			Darkmaul Citadel:
@@ -32,6 +31,74 @@ _.Zones =
 				i(175244),	-- Spider-Eye Ring - drops from spiders in Hrun's Barrow
 			]]--
 			n(QUESTS, {
+				q(59350, {	-- A Druid's Form (A)
+					["coord"] = { 52.0, 55.2, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["provider"] = { "n", 156932 },	-- Ralia Dreamchaster
+					["sourceQuests"] = {
+						55882,	-- Message to Base
+						55639,	-- Who Lurks in the Pit
+					},
+				}),
+				q(59951, {	-- A Druid's Form (H) -- TODO: needs provider
+					["coord"] = { 52.0, 55.2, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					--["provider"] = { "n",  },	--
+					["sourceQuests"] = {
+						59947,	-- Message to Base
+						59949,	-- Who Lurks in the Pit
+					},
+				}),
+				q(59355, {	-- A Hunter's Trap (A)
+					["coord"] = { 52.4, 55.2, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { HUNTER },
+					["provider"] = { "n", 161666 },	-- Austin Huxworth
+					["sourceQuests"] = {
+						59947,	-- Message to Base
+						59949,	-- Who Lurks in the Pit
+					},
+				}),
+				q(59952, {	-- A Hunter's Trap (H) -- TODO: need provider
+					["coord"] = { 52.4, 55.2, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { HUNTER },
+					--["provider"] = { "n",  },	--
+					["sourceQuests"] = {
+						59947,	-- Message to Base
+						59949,	-- Who Lurks in the Pit
+					},
+				}),
+				q(59352, {	-- A Mage's Knowledge (A)
+					["coord"] = { 52.0, 55.2, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MAGE },
+					["provider"] = { "n", 156801 },	-- Private Cole
+					["sourceQuest"] = 55882,	-- Message to Base
+				}),
+				q(59954, {	-- A Mage's Knowledge (H)
+					["coord"] = { 52.0, 55.2, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { MAGE },
+					["provider"] = { "n", 167216 },	-- Grunt Throg
+					["sourceQuest"] = 59947,	-- Message to Base
+				}),
+				q(59347, {	-- A Monk's Focus (A)
+					["coord"] = { 52.0, 55.2, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MONK },
+					["provider"] = { "n", 156885 },	-- Kee-La
+					["sourceQuest"] = 55882,	-- Message to Base
+				}),
+				q(59956, {	-- A Monk's Focus (H) -- TODO: needs provider
+					["coord"] = { 52.0, 55.2, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { MONK },
+					--["provider"] = { "n",  },	--
+					["sourceQuest"] = 59947,	-- Message to Base
+				}),
 				q(58923, {	-- A Paladin's Service (A)
 					["coord"] = { 52.0, 55.4, 1409 },
 					["races"] = ALLIANCE_ONLY,
@@ -57,6 +124,64 @@ _.Zones =
 					["coord"] = { 52.0, 55.2, 1409 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { PRIEST },
+					["provider"] = { "n", 167216 },	-- Grunt Throg
+					["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+				}),
+				q(58917, {	-- A Rogue's End (A)
+					["coord"] = { 52.0, 55.2, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["provider"] = { "n", 156801 },	-- Private Cole
+					["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+				}),
+				q(59967, {	-- A Rogue's End (H)
+					["coord"] = { 52.0, 55.2, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { ROGUE },
+					["provider"] = { "n", 167216 },	-- Grunt Throg
+					["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+				}),
+				--[[
+				q(, {	-- A Shaman's Duty (A)
+					["coord"] = { , 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { SHAMAN },
+					["provider"] = { "n",  },	--
+					["sourceQuest"] = ,	--
+				}),
+				q(, {	-- A Shaman's Duty (H)
+					["coord"] = { , 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["provider"] = { "n",  },	--
+					["sourceQuest"] = ,	--
+				}),
+				]]--
+				q(58962, {	-- A Warlock's Bargain (A)
+					["coord"] = { 52.0, 55.2, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["provider"] = { "n", 156801 },	-- Private Cole
+					["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+				}),
+				q(59970, {	-- A Warlock's Bargain (H)
+					["coord"] = { 52.0, 55.2, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARLOCK },
+					["provider"] = { "n", 167216 },	-- Grunt Throg
+					["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+				}),
+				q(58914, {	-- A Warrior's End (A)
+					["coord"] = { 52.0, 55.2, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
+					["provider"] = { "n", 156801 },	-- Private Cole
+					["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+				}),
+				q(59971, {	-- A Warrior's End (H)
+					["coord"] = { 52.0, 55.2, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
 					["provider"] = { "n", 167216 },	-- Grunt Throg
 					["sourceQuest"] = 59950,	-- Stocking Up on Supplies
 				}),
@@ -134,13 +259,19 @@ _.Zones =
 					["coord"] = { 62.7, 69.8, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 154327 },	-- Austin Huxworth
-					["sourceQuest"] = 55173,	-- Northbound
+					["sourceQuests"] = {
+						55173,	-- Northbound (All except hunters)
+						59342,	-- Taming the Wilds (hunters)
+					},
 				}),
 				q(59938, {	-- Down with the Quilboar (H)
 					["coord"] = { 62.7, 69.8, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
-					["sourceQuest"] = 59935,	-- Northbound
+					["sourceQuests"] = {
+						59935,	-- Northbound (All except hunters)
+						59937,	-- Taming the Wilds (hunters)
+					},
 				}),
 				q(55992, {	-- Dungeon: Darkmaul Citadel (A)
 					["coord"] = { 39.9, 32.1, 1409 },
@@ -189,12 +320,28 @@ _.Zones =
 				q(59254, {	-- Enhanced Combat Tactics (A)
 					["coord"] = { 58.3, 74.6, 1409 },
 					["races"] = ALLIANCE_ONLY,
+					["classes"] = exclude({ HUNTER, MONK }, ALL_CLASSES),
+					["provider"] = { "n", 156651 },	-- Captain Garrick
+					["sourceQuest"] = 55174,	-- Cooking Meat
+				}),
+				q(59339, {	-- Enhanced Combat Tactics (A - Monk)
+					["coord"] = { 58.3, 74.6, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MONK },
 					["provider"] = { "n", 156651 },	-- Captain Garrick
 					["sourceQuest"] = 55174,	-- Cooking Meat
 				}),
 				q(59933, {	-- Enhanced Combat Tactics (H)
 					["coord"] = { 58.3, 74.6, 1409 },
 					["races"] = HORDE_ONLY,
+					["classes"] = exclude({ HUNTER, MONK }, ALL_CLASSES),
+					["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
+					["sourceQuest"] = 59932,	-- Cooking Meat
+				}),
+				q(59934, {	-- Enhanced Combat Tactics (H - Monk)
+					["coord"] = { 58.3, 74.6, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { MONK },
 					["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59932,	-- Cooking Meat
 				}),
@@ -226,18 +373,24 @@ _.Zones =
 					["coord"] = { 62.7, 69.8, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 154327 },	-- Austin Huxworth
-					["sourceQuest"] = 55173,	-- Northbound
+					["sourceQuests"] = {
+						55173,	-- Northbound (All except hunters)
+						59342,	-- Taming the Wilds (hunters)
+					},
 				}),
 				q(59939, {	-- Forbidden Quilboar Necromancy (H)
 					["coord"] = { 62.7, 69.8, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
-					["sourceQuest"] = 59935,	-- Northbound
+					["sourceQuests"] = {
+						59935,	-- Northbound (All except hunters)
+						59937,	-- Taming the Wilds (hunters)
+					},
 				}),
 				q(54933, {	-- Freeing the Light
 					["coord"] = { 58.1, 50.2, 1409 },
 					["provider"] = { "n", 157114 },	-- Lightspawn
-					["sourceQuests"] = { -- TODO: verify the sourceQuests
+					["sourceQuests"] = {
 						55879,	-- Ride of the Scientifically Enhanced Boar
 						59942,	-- The Re-Deather
 					},
@@ -254,7 +407,36 @@ _.Zones =
 					["provider"] = { "n", 167291 },	-- Bo
 					["sourceQuest"] = 59943,	-- The Harpy Problem
 				}),
-				q(56839, {	-- Killclaw the Terrible -- TODO: verify sourceQuests. Earliest confirmed point, but may be earlier
+				q(58915, {	-- Hjalmar's Final Execution (A)
+					["coord"] = { 51.5, 47.8, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
+					["provider"] = { "n", 162943 },	-- Hjalmar the Undying
+					["sourceQuest"] = 58914,	-- A Warrior's End
+				}),
+				q(59972, {	-- Hjalmar's Final Execution (H) -- TODO: need provider
+					["coord"] = { 51.5, 47.8, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					--["provider"] = { "n",  },	--
+					["sourceQuest"] = 59971,	-- A Warrior's End
+				}),
+				q(59356, {	-- Hunting the Stalker (A)
+					["coord"] = { 52.4, 55.2, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { HUNTER },
+					["provider"] = { "n", 161666 },	-- Austin Huxworth
+					["sourceQuest"] = 59355,	-- A Hunter's Trap
+				}),
+				q(59953, {	-- Hunting the Stalker (H) -- TODO: need provider
+					["coord"] = { 52.4, 55.2, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { HUNTER },
+					--["provider"] = { "n",  },	--
+					["sourceQuest"] = 59952,	-- A Hunter's Trap
+				}),
+				q(56839, {	-- Killclaw the Terrible
+					["lvl"] = 7,
 					["coord"] = { 48.7, 54.2, 1409 },
 					["provider"] = { "o", 330627 },	-- Danger Sign
 					["sourceQuests"] = {
@@ -360,13 +542,35 @@ _.Zones =
 					["coord"] = { 58.3, 74.4, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156607 },	-- Alaria
-					["sourceQuest"] = 59254,	-- Enhanced Combat Tactics
+					["sourceQuests"] = {
+						55174,	-- Cooking Meat (hunters)
+						59254,	-- Enhanced Combat Tactics (all except hunters/monks)
+						59339,	-- Enhanced Combat Tactics (monk)
+					},
 				}),
 				q(59935, {	-- Northbound (H)
 					["coord"] = { 58.3, 74.4, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166854 },	-- Won'sa
-					["sourceQuest"] = 59933,	-- Enhanced Combat Tactics
+					["sourceQuests"] = {
+						59932,	-- Cooking Meat (hunters)
+						59933,	-- Enhanced Combat Tactics (all except hunters/monks)
+						59934,	-- Enhanced Combat Tactics (monk)
+					},
+				}),
+				q(59349, {	-- One Last Spar (A)
+					["coord"] = { 52.6, 49.4, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MONK },
+					["provider"] = { "n", 164835 },	-- Kee-La
+					["sourceQuest"] = 59347,	-- A Monk's Focus
+				}),
+				q(59957, {	-- One Last Spar (H) -- TODO: need provider
+					["coord"] = { 52.6, 49.4, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { MONK },
+					--["provider"] = { "n",  },	--
+					["sourceQuest"] = 59956,	-- A Monk's Focus
 				}),
 				q(55881, {	-- Purge the Totems (A)
 					["coord"] = { 56.9, 46.2, 1409 },
@@ -411,7 +615,7 @@ _.Zones =
 					["provider"] = { "n", 163108 },	-- Branven Hammerheart
 					["sourceQuest"] = 58953,	-- A Priest's End
 				}),
-				q(59965, {	-- Resurrecting the Recruits (H) -- TODO: set provider
+				q(59965, {	-- Resurrecting the Recruits (H) -- TODO: need provider
 					["coord"] = { 56.1, 53.6, 1409 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { PRIEST },
@@ -449,7 +653,7 @@ _.Zones =
 					["provider"] = { "n", 160664 },	-- Private Cole
 					["sourceQuest"] = 56775,	-- Warming Up
 				}),
-				q(59927, {	-- Stand Your Ground
+				q(59927, {	-- Stand Your Ground (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166583 },	-- Grunt Throg
 					["sourceQuest"] = 59926,	-- Warming Up
@@ -466,6 +670,48 @@ _.Zones =
 					["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59942,	-- The Re-Deather
 				}),
+				q(59342, {	-- Taming the Wilds (A)
+					["coord"] = { 62.7, 69.8, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { HUNTER },
+					["provider"] = { "n", 154327 },	-- Austin Huxworth
+					["sourceQuest"] = 55173,	-- Northbound
+				}),
+				q(59937, {	-- Taming the Wilds (H)
+					["coord"] = { 62.7, 69.8, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { HUNTER },
+					["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
+					["sourceQuest"] = 59935,	-- Northbound
+				}),
+				q(60168, {	-- The Art of Taming (A)
+					["coord"] = { 52.4, 55.2, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { HUNTER },
+					["provider"] = { "n", 161666 },	-- Austin Huxworth
+					["sourceQuest"] = 59356,	-- Hunting the Stalker
+				}),
+				q(60162, {	-- The Art of Taming (H)	-- TODO: need provider
+					["coord"] = { 52.4, 55.2, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { HUNTER },
+					--["provider"] = { "n",  },	--
+					["sourceQuest"] = 59953,	-- Hunting the Stalker
+				}),
+				q(59354, {	-- The Best Way to Use Sheep (A)
+					["coord"] = { 52.2, 55.4, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MAGE },
+					["provider"] = { "n", 156886 },	-- Meredy Huntswell
+					["sourceQuest"] = 59352,	-- A Mage's Knowledge
+				}),
+				q(59955, {	-- The Best Way to Use Sheep (H) -- TODO: need provider
+					["coord"] = { 52.2, 55.4, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { MAGE },
+					--["provider"] = { "n",  },	--
+					["sourceQuest"] = 59954,	-- A Mage's Knowledge
+				}),
 				q(59940, {	-- The Choppy Booster Mk 5
 					["coord"] = { 56.1, 59.1, 1409 },
 					["races"] = HORDE_ONLY,
@@ -475,7 +721,21 @@ _.Zones =
 						59939,	-- Forbidden Quilboar Necromancy
 					},
 				}),
-				q(58946, {	-- The Divine's Shield (A) -- TODO: set provider
+				q(58933, {	-- The Deadliest of Poisons (A)
+					["coord"] = { 45.6, 56.1, 1409 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["provider"] = { "n", 163024 },	-- Coulston Nereus
+					["sourceQuest"] = 58917,	-- A Rogue's End
+				}),
+				q(59968, {	-- The Deadliest of Poisons (H) -- TODO: need provider
+					["coord"] = { 45.6, 56.1, 1409 },
+					["races"] = HORDE_ONLY,
+					["classes"] = { ROGUE },
+					--["provider"] = { "n",  },	--
+					["sourceQuest"] = 59967,	-- A Rogue's End
+				}),
+				q(58946, {	-- The Divine's Shield (A) -- TODO: need provider
 					["coord"] = { 57.5, 52.2, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
@@ -541,8 +801,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156807 },	-- Captain Garrick
 					["sourceQuests"] = {
-						55882,	-- Message to Base
-						55639,	-- Who Lurks in the Pit
+						59350,	-- A Druid's Form (druid)
+						55882,	-- Message to Base (all)
+						60168,	-- The Art of Taming (hunter)
+						59354,	-- The Best Way to Use Sheep (mage)
+						55639,	-- Who Lurks in the Pit (all)
 					},
 				}),
 				q(59975, {	-- To Darkmaul Citadel (H)
@@ -550,8 +813,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
 					["sourceQuests"] = {
-						59947,	-- Message to Base
-						59949,	-- Who Lurks in the Pit
+						59951,	-- A Druid's Form (druid)
+						59947,	-- Message to Base (all)
+						60162,	-- The Art of Taming (hunter)
+						59955,	-- The Best Way to Use Sheep (mage)
+						59949,	-- Who Lurks in the Pit (all)
 					},
 				}),
 				q(56775, {	-- Warming Up (A)
@@ -638,7 +904,7 @@ _.Zones =
 				o(329919, {	-- Stolen Supplies
 					["coord"] = { 59.3, 37.6, 1409 },
 					["questID"] = 56581,
-					["sourceQuests"] = { -- TODO: verify these
+					["sourceQuests"] = {
 						55879,	-- Ride of the Scientifically Enhanced Boar
 						59942,	-- The Re-deather
 					},
@@ -646,7 +912,7 @@ _.Zones =
 				o(327407, {	-- Precious Ogre Stash
 					["coord"] = { 41.8, 42.8, 1409 },
 					["questID"] = 56088,
-					["sourceQuests"] = { -- TODO: verify these
+					["sourceQuests"] = {
 						55879,	-- Ride of the Scientifically Enhanced Boar
 						59942,	-- The Re-deather
 					},

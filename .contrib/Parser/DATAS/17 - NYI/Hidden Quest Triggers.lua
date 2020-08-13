@@ -2750,15 +2750,15 @@ _.NeverImplemented =
 		
 		-- Exile's Reach
 		q(58418),	-- Triggers shortly after login. Possibly some kind of indicator for the account having done it at least once per faction?
-		q(54927),	-- Triggered after picking up the first quest on the boat
-		q(54937),	-- Triggered after picking up the first quest on the boat
+		q(54927),	-- Triggers after the cinematic. You can't move until this quest triggers
+		q(54937),	-- Triggers after the cinematic. You can't move until this quest triggers
 		q(59699),	-- Defeat Private Cole(A) or Grunt Throg(H) during "Stand Your Ground". Coincides with hitting level 2
-		q(58882),	-- Triggered after collecting the Abandoned Treasure Chest along with 58380
-		q(58883),	-- Triggered after hitting level 3 during "Murloc Mania" as alliance. Didn't notice it on horde, but may have missed it
+		q(58882),	-- Triggered after looting white-quality chestpiece. loot controller so they don't drop twice
+		q(58883),	-- Triggered after looting white-quality boots. loot controller so they don't drop twice
 		q(54928),	-- Triggered after getting 3 holy power and striking Warlord Grimaxe with the first major combat ability. Didn't trigger at all on an alliance priest
 		q(58336),	-- Triggered at the same time as 54928. Possibly dialog-related?
 		q(55607),	-- Triggered while killing quilboars in Quilboar Briarpatch on an alliance priest. Did not see it trigger as horde
-		q(59610),	-- Triggered after killing Torgok during "The Re-Deather" as horde. Probably a zone-phase controller
+		q(59610),	-- Triggered after killing Torgok. Loot controller for "Torgok's Reagent Pouch"
 		q(59143),	-- Triggered after looting the Runetusk Necklace from ogres in Darkmaul Citadel
 		q(59139),	-- Triggered after looting the Spider-Eye Ring from spiders in Hrun's Barrow
 		q(60167),	-- Triggered right after Warlord Grimaxe tells Shuja to heal during the Tunk encounter
