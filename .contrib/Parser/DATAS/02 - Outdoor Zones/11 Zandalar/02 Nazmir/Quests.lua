@@ -643,15 +643,31 @@ _.Zones =
 					},
 					["provider"] = { "n", 126080 },	-- Shinga Deathwalker
 					["coord"] = { 39.0, 59.9, 863 },
-					["g"] = {
-						i(158943),	-- Nazmani Warplate Treads
-						i(158944),	-- Loa Speaker's Footwraps
-						i(158945),	-- Death-Pledged Treads
-						i(158946),	-- Ritual Flayer's Footpads
-						i(155519),	-- Loa Speaker's Cuffs
-						i(155343),	-- Ritual Flayer's Bindings
-						i(155521),	-- Death-Pledged Bracers
-						i(155341),	-- Nazmani Warplate Vambraces
+					["g"] = {	-- quest is neutral, but rewards are Horde-only
+						i(158943, {	-- Nazmani Warplate Treads
+							["races"] = HORDE_ONLY,
+						}),
+						i(158944, {	-- Loa Speaker's Footwraps
+							["races"] = HORDE_ONLY,
+						}),
+						i(158945, {	-- Death-Pledged Treads
+							["races"] = HORDE_ONLY,
+						}),
+						i(158946, {	-- Ritual Flayer's Footpads
+							["races"] = HORDE_ONLY,
+						}),
+						i(155519, {	-- Loa Speaker's Cuffs
+							["races"] = HORDE_ONLY,
+						}),
+						i(155343, {	-- Ritual Flayer's Bindings
+							["races"] = HORDE_ONLY,
+						}),
+						i(155521, {	-- Death-Pledged Bracers
+							["races"] = HORDE_ONLY,
+						}),
+						i(155341, {	-- Nazmani Warplate Vambraces
+							["races"] = HORDE_ONLY,
+						}),
 					},
 				}),
 				

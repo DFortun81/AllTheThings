@@ -38,6 +38,7 @@ i(62321);	-- Lesser Inscription of Unbreakable Quartz
 i(169943);	-- Little Princess Cap
 i(142263);	-- Machine Fluid
 i(138883);	-- Meryl's Conjured Refreshment
+i(169944);	-- Miniscule Fez
 i(19298);	-- Minor Darkmoon Prize
 i(19425);	-- Mysterious Lockbox
 i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
