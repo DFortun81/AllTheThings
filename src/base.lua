@@ -10,7 +10,7 @@ _G["AllTheThings"] = app;
 
 -- Create an Event Processor.
 local events = {};
-local _ = CreateFrame("FRAME", nil, UIParent);
+local _ = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
 _:SetScript("OnEvent", function(self, e, ...) (rawget(events, e) or print)(...); end);
 _:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
 _:SetSize(1, 1);

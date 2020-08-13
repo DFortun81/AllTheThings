@@ -22,6 +22,7 @@ local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
 local C_ToyBox_GetToyLink = C_ToyBox.GetToyLink;
 local C_Map_GetMapDisplayInfo = C_Map.GetMapDisplayInfo;
 local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
+local C_QuestLog_GetAllCompletedQuestIDs = C_QuestLog.GetAllCompletedQuestIDs
 local SetPortraitTexture = _G["SetPortraitTexture"];
 local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
 local EJ_GetCreatureInfo = _G["EJ_GetCreatureInfo"];
@@ -466,7 +467,7 @@ GameTooltipIcon.icon.Border:Show();
 GameTooltipIcon:Hide();
 
 -- Model is used to display the model of an NPC/Encounter.
-local GameTooltipModel, model, fi = CreateFrame("FRAME", "ATTGameTooltipModel", GameTooltip);
+local GameTooltipModel, model, fi = CreateFrame("FRAME", "ATTGameTooltipModel", GameTooltip, BackdropTemplateMixin and "BackdropTemplate");
 GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 GameTooltipModel:SetSize(128, 128);
 GameTooltipModel:SetBackdrop({
@@ -825,7 +826,7 @@ end
 local function GetProgressColorText(progress, total)
 	if total and total > 0 then
 		local percent = progress / total;
-        return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%)|r";
+		return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%) |r";
 	end
 end
 local function GetCollectionIcon(state)
@@ -1229,7 +1230,7 @@ local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", 
 local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 	QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
 	QuestHarvester:SetHyperlink("quest:"..id);
-	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetQuestInfo(id);
+	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetTitleForQuestID(id);
 	QuestHarvester:Hide()
 	if title and title ~= RETRIEVING_DATA then
 		rawset(questRetries, id, nil);
@@ -4055,7 +4056,7 @@ end
 		
 		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
-			local name, isHeader = GetCurrencyListInfo(tokenID);
+			local name, isHeader = C_CurrencyInfo.GetCurrencyListInfo(tokenID);
 			if not isHeader then
 				-- Determine which currencyID is the one that we're dealing with.
 				local cache = SearchForFieldContainer("currencyID");
@@ -4063,7 +4064,7 @@ end
 					-- We only care about currencies in the addon at the moment.
 					for currencyID, _ in pairs(cache) do
 						-- Compare the name of the currency vs the name of the token
-						if select(1, GetCurrencyInfo(currencyID)) == name then
+						if select(1, C_CurrencyInfo.GetCurrencyInfo(currencyID)) == name then
 							AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
 							if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 							self:Show();
@@ -4613,11 +4614,11 @@ app.BaseCurrencyClass = {
 		if key == "key" then
 			return "currencyID";
 		elseif key == "text" then
-			return GetCurrencyLink(t.currencyID, 1) or select(1, GetCurrencyInfo(t.currencyID));
+			return C_CurrencyInfo.GetCurrencyLink(t.currencyID, 1) or select(1, C_CurrencyInfo.GetCurrencyInfo(t.currencyID));
 		elseif key == "icon" then
-			return select(3, GetCurrencyInfo(t.currencyID));
+			return select(3, C_CurrencyInfo.GetCurrencyInfo(t.currencyID));
 		elseif key == "icon" then
-			return select(3, GetCurrencyInfo(t.currencyID));
+			return select(3, C_CurrencyInfo.GetCurrencyInfo(t.currencyID));
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5221,7 +5222,7 @@ app.BaseGarrisonTalent = {
 			if info.description then return info.description; end
 		elseif key == "info" then
 			-- TODO: Add "perkSpellID"
-			return C_Garrison.GetTalent(t.talentID);
+			return C_Garrison.GetTalentInfo(t.talentID);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -6528,6 +6529,11 @@ app.BaseQuestObjective = {
 };
 app.CreateQuestObjective = function(id, t)
 	return setmetatable(constructor(id, t, "objectiveID"), app.BaseQuestObjective);
+end
+local function GetQuestsCompleted(t)
+	for k,v in pairs(C_QuestLog_GetAllCompletedQuestIDs()) do
+		CompletedQuests[v] = true
+	end
 end
 local function RefreshQuestCompletionState(questID)
 	if questID ~= nil then
@@ -9350,7 +9356,7 @@ local function RowOnEnter(self)
 						_,name,_,_,_,_,_,_,_,icon = GetItemInfo(v[2]);
 						amount = "x" .. formatNumericWithCommas(v[3]);
 					elseif _ == "c" then
-						name,_,icon = GetCurrencyInfo(v[2])
+						name,_,icon = C_CurrencyInfo.GetCurrencyInfo(v[2])
 						amount = "x" .. formatNumericWithCommas(v[3]);
 					elseif _ == "g" then
 						name = "";
@@ -10435,7 +10441,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	local window = app.Windows[suffix];
 	if not window then
 		-- Create the window instance.
-		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent);
+		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
 		app.Windows[suffix] = window;
 		window.Suffix = suffix;
 		window.Refresh = Refresh;
