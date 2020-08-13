@@ -313,6 +313,15 @@ _.WorldEvents =
 							i(183200),	-- Pitch Black Scourgestone
 						},
 					}),
+					n(174064, {	-- Professor Putricide
+						["maps"] = { 118 },
+						["coord"] = { 57.1, 30.5, 118 },
+						["questID"] = 62342,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+						},
+					}),
 					n(174062, {	-- Skadi the Ruthless
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 57.7, 56.0, 118 },
