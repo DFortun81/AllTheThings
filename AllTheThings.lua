@@ -1516,6 +1516,18 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 		end
 	end
 end
+-- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
+local function HasExpandedSubgroup(group)
+	if group and group.g then
+		for i, subgroup in ipairs(group.g) do
+			-- dont need recursion since a group has to be expanded for a subgroup to be visible within it
+			if subgroup.expanded then
+				return true;
+			end			
+		end
+	end
+	return false;
+end
 local function ReapplyExpand(g, g2)
 	for j,p in ipairs(g2) do
 		local found = false;
@@ -9022,11 +9034,8 @@ local function RowOnClick(self, button)
 				
 				-- If this reference is anything else, expand the groups.
 				if reference.g then
-					if self.index < 1 and #reference.g > 0 then
-						ExpandGroupsRecursively(reference, not reference.g[1].expanded, true);
-					else
-						ExpandGroupsRecursively(reference, not reference.expanded, true);
-					end
+					-- always expand if collapsed or if clicked the header and all immediate subgroups are collapsed, otherwise collapse
+					ExpandGroupsRecursively(reference, not reference.expanded or (self.index < 1 and not HasExpandedSubgroup(reference)), true);
 					self:GetParent():GetParent():Update();
 					return true;
 				end
