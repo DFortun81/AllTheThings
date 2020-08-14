@@ -425,6 +425,15 @@ _.WorldEvents =
 							i(183200),	-- Pitch Black Scourgestone
 						},
 					}),
+					n(174057, {	-- Scourgelord Tyrannus
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 47.1, 66.0, 118 },
+						["questID"] = 62335,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+						},
+					}),
 					n(174062, {	-- Skadi the Ruthless
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 57.7, 56.0, 118 },
