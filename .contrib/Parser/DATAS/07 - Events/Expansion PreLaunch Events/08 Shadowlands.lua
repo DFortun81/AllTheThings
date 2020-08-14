@@ -361,6 +361,15 @@ _.WorldEvents =
 					-- adding the Pitch Black Scourgestone rewards, but uncertain if it's worth keeping
 					-- TODO: many more possible bosses here
 					-- rares spawn every 20 minutes
+					n(174058, {	-- Bronjahm
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 70.6, 38.5, 118 },
+						["questID"] = 62336,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+						},
+					}),
 					n(174054, {	-- Falric
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 50.2, 88.1, 118 },
