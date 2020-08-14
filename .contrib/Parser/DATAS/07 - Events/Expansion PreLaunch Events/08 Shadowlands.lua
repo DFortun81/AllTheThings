@@ -520,8 +520,8 @@ _.WorldEvents =
 					}),
 					n(174049, {	-- Prince Taldaram
 						["maps"] = { 118 },	-- Icecrown
-						--["coord"] = { , 118 },
-						--["questID"] = ,
+						["coord"] = { 30.0, 62.4, 118 },
+						["questID"] = 62327,
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
