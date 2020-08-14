@@ -1115,6 +1115,49 @@ local function GetRelativeValue(group, field)
 		if group.parent then return GetRelativeValue(group.parent, field); end
 	end
 end
+-- Filters a specs table to only those which the current Character class can choose
+local function FilterSpecs(specs)
+	if specs then
+		if #specs > 0 then
+			local specCount = #specs;
+			for i=specCount,1,-1 do
+				local specID = specs[i];
+				local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
+				if class ~= app.Class then
+					table.remove(specs, i);
+				end
+			end
+			table.sort(specs);
+		end
+	end
+end
+-- Returns proper, class-filtered specs for a given itemID
+local function GetFixedItemSpecInfo(itemID)
+	local specs = GetItemSpecInfo(itemID);
+	if not specs then
+		specs = {}
+	end
+	if #specs < 1 then
+		-- Starting with Legion items, the API seems to return no spec information when the item is in fact lootable by ANY spec
+		local _, _, _, _, _, _, _, _, itemEquipLoc, _, _, itemClassID, itemSubClassID, _, expacID, _, _ = GetItemInfo(itemID);
+		-- only Armor items
+		if itemClassID and itemClassID == 4 then
+			-- unable to distinguish between Trinkets usable by all specs (Font of Power) and Role-Specific trinkets which do not apply to any Role of the current Character
+			if (expacID == 6 or expacID == 7) and (itemEquipLoc == "INVTYPE_NECK" or itemEquipLoc == "INVTYPE_FINGER") then
+				local numSpecializations = GetNumSpecializations();
+				if numSpecializations and numSpecializations > 0 then
+					for i=1,numSpecializations,1 do
+						local specID = select(1, GetSpecializationInfo(i));
+						tinsert(specs, specID);
+					end
+				end
+			end
+		end
+	else
+		FilterSpecs(specs);
+	end
+	return specs;
+end
 
 -- Quest Completion Lib
 local DirtyQuests = {};
@@ -2594,27 +2637,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
 				if app.Settings:GetTooltipSetting("SpecializationRequirements") then
-					local specs = GetItemSpecInfo(itemID);
-					if specs then
-						if #specs > 0 then
-							table.sort(specs);
-							local spec_label = "";
-							local atleastone = false;
-							for key, specID in ipairs(specs) do
-								local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
-								if class == app.Class then
-									spec_label = spec_label .. "  |T" .. icon .. ":0|t " .. name;
-									atleastone = true;
-								end
-							end
-							if atleastone then
-								tinsert(info, { right = spec_label });
-							else
-								tinsert(info, { right = "Not available in Personal Loot." });
-							end
-						else
-							tinsert(info, { right = "Not available in Personal Loot." });
+					local specs = GetFixedItemSpecInfo(itemID);
+					-- specs is already filtered/sorted to only current class
+					if #specs > 0 then
+						local spec_label = "";
+						for key, specID in ipairs(specs) do
+							local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
+							spec_label = spec_label .. "  |T" .. icon .. ":0|t " .. name;
 						end
+						tinsert(info, { right = spec_label });
+					else
+						tinsert(info, { right = "Not available in Personal Loot." });
 					end
 				end
 				
@@ -2873,10 +2906,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							right = item.right;
 							local specs = item.group.specs;
 							if specs and #specs > 0 then
-								table.sort(specs);
 								for i,spec in ipairs(specs) do
 									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-									if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
+									right = "|T" .. icon .. ":0|t " .. right;
 								end
 							end
 							tinsert(info, { left = item.prefix .. left, right = right });
@@ -2892,10 +2924,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							right = item.right;
 							local specs = item.group.specs;
 							if specs and #specs > 0 then
-								table.sort(specs);
 								for i,spec in ipairs(specs) do
 									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-									if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
+									right = "|T" .. icon .. ":0|t " .. right;
 								end
 							end
 							tinsert(info, { left = item.prefix .. left, right = right });
@@ -5310,7 +5341,7 @@ app.BaseGearSource = {
 		elseif key == "icon" then
 			return select(5, GetItemInfoInstant(t.itemID));
 		elseif key == "specs" then
-			return GetItemSpecInfo(t.itemID);
+			return GetFixedItemSpecInfo(t.itemID);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5877,7 +5908,7 @@ local itemFields = {
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
 	["specs"] = function(t)
-		return GetItemSpecInfo(t.itemID);
+		return GetFixedItemSpecInfo(t.itemID);
 	end,
 	["tsm"] = function(t)
 		local itemLink = t.itemID;
@@ -6586,7 +6617,7 @@ app.BaseRecipe = {
 			return t.itemID and GetItemInfo(t.itemID);
 		elseif key == "specs" then
 			if t.itemID then
-				return GetItemSpecInfo(t.itemID);
+				return GetFixedItemSpecInfo(t.itemID);
 			end
 		elseif key == "tsm" then
 			if t.itemID then
@@ -6688,7 +6719,7 @@ app.BaseSpell = {
 			return t.itemID and GetItemInfo(t.itemID);
 		elseif key == "specs" then
 			if t.itemID then
-				return GetItemSpecInfo(t.itemID);
+				return GetFixedItemSpecInfo(t.itemID);
 			end
 		elseif key == "tsm" then
 			if t.itemID then
@@ -8696,15 +8727,12 @@ local function SetRowData(self, row, data)
 		end
 		local specs = data.specs;
 		if specs and #specs > 0 then
-			table.sort(specs);
 			-- iterate backwards since the icons are appended from right to left, this way it matches the tooltip sort of spec icons
             for i=#specs,1,-1 do
                 local spec = specs[i]
 				local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-				if class == app.Class then 
-                    summary = "|T" .. icon .. ":0|t " .. summary;
-                    iconAdjust = iconAdjust - 1;
-                end
+				summary = "|T" .. icon .. ":0|t " .. summary;
+				iconAdjust = iconAdjust - 1;
 			end
 		end
 		row.Summary:SetText(summary);
@@ -9399,10 +9427,13 @@ local function RowOnEnter(self)
 									specHits[spec] = (specHits[spec] or 0) + 1;
 								end
 							end
-						end
+						end						
+												
+						local totalItems = #itemList or 1; -- if somehow encounter drops 0 items but an item still references the encounter
+						local legacyLoot = C_Loot.IsLegacyLootModeEnabled();
 						
-						local totalItems = #itemList;
-						local currentSpecID = select(1, GetSpecializationInfo(GetSpecialization()));
+						-- Legacy Loot is simply 1 / total items chance since spec has no relevance to drops, i.e. this one item / total items in drop table
+						GameTooltip:AddDoubleLine("Loot Table Chance", GetNumberWithZeros(100 / totalItems, 2) .. "%");
 						
 						local specs = reference.specs;
 						if specs and #specs > 0 then
@@ -9429,34 +9460,9 @@ local function RowOnEnter(self)
 							if bestSpecID then
 								local chance = (1 / specHits[bestSpecID]) * 100;
 								local id, name, description, icon = GetSpecializationInfoByID(bestSpecID);
-								GameTooltip:AddDoubleLine(C_Loot.IsLegacyLootModeEnabled() and "Bonus Roll" or "Personal Loot",  GetNumberWithZeros(chance, 2) .. "% (" .. GetNumberWithZeros(chance / 5, 2) .. "%) |T" .. icon .. ":0|t " .. name);
+								GameTooltip:AddDoubleLine(legacyLoot and "Best Bonus Roll Chance" or "Best Personal Loot Chance",  GetNumberWithZeros(chance, 2) .. "% (" .. GetNumberWithZeros(chance / 5, 2) .. "%) |T" .. icon .. ":0|t " .. name);
 							end
-							if C_Loot.IsLegacyLootModeEnabled() then
-								local most, bestLegacySpecID = 0, -1;
-								for spec,_ in ipairs(mySpecs) do
-									local specHit = specHits[spec] or 0;
-									if not matchingSpecs[spec] then
-										if specHit > most then
-											most = specHit;
-											bestLegacySpecID = spec;
-										end
-									end
-								end
-								if bestLegacySpecID < 0 then
-									bestLegacySpecID = select(1, GetSpecializationInfo(1));
-								end
-								
-								local legacyMatchChance = ((1 / specHits[bestSpecID]) * 100) / 5;
-								local legacyNoMatchChance = ((1 / (totalItems - specHits[bestLegacySpecID])) * 100) * (4/5);
-								if legacyMatchChance > legacyNoMatchChance then
-									local id, name, description, icon = GetSpecializationInfoByID(bestSpecID);
-									GameTooltip:AddDoubleLine("Legacy Loot", GetNumberWithZeros(legacyMatchChance, 2) .. "% |T" .. icon .. ":0|t " .. name);
-								else
-									local id, name, description, icon = GetSpecializationInfoByID(bestLegacySpecID);
-									GameTooltip:AddDoubleLine("Legacy Loot", GetNumberWithZeros(legacyNoMatchChance, 2) .. "% |T" .. icon .. ":0|t " .. name);
-								end
-							end
-						elseif C_Loot.IsLegacyLootModeEnabled() then
+						elseif legacyLoot then
 							-- Not available at all, best loot spec is the one with the most number of items in it.
 							local most, bestSpecID = 0;
 							for i=1,numSpecializations,1 do
@@ -9469,7 +9475,7 @@ local function RowOnEnter(self)
 							end
 							if bestSpecID then
 								local id, name, description, icon = GetSpecializationInfo(bestSpecID);
-								GameTooltip:AddDoubleLine("Legacy Loot", GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
+								GameTooltip:AddDoubleLine("Bonus Roll", GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
 							end
 						end
 					end
