@@ -379,6 +379,15 @@ _.WorldEvents =
 							i(183200),	-- Pitch Black Scourgestone
 						},
 					}),
+					n(174056, {	-- Forgemaster Garfrost
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 59.1, 72.5, 118 },
+						["questID"] = 62334,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+						},
+					}),
 					n(174061, {	-- Ingvar the Plunderer
 						["maps"] = { 118 }, -- Icecrown
 						["coord"] = { 52.3, 52.6, 118 },
