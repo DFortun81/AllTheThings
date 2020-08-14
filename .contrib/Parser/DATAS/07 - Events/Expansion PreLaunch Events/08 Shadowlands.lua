@@ -384,6 +384,16 @@ _.WorldEvents =
 							i(183635),	-- Grieving Gauntlets
 						},
 					}),
+					n(174048, {	-- Elder Nadox
+						["maps"] = { 118 },	-- Icecrown
+						--["coord"] = { , 118 },
+						--["questID"] = ,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+							i(183673),	-- Nerubian Aegis Ring
+						},
+					}),
 					n(174054, {	-- Falric
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 50.2, 88.1, 118 },
@@ -418,6 +428,16 @@ _.WorldEvents =
 							i(183659),	-- Annhylde's Band
 							i(183658),	-- Ingvar's Monolithic Skullcleaver
 							i(183668),	-- Razor-Barbed Leather Belt
+						},
+					}),
+					n(174050, {	-- Krik'thir the Gatewatcher
+						["maps"] = { 118 }, -- Icecrown
+						["coord"] = { 67.5, 58.2, 118 },
+						["questID"] = 62328,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+							i(183681),	-- Webrending Machete
 						},
 					}),
 					n(174063, {	-- Lady Deathwhisper
