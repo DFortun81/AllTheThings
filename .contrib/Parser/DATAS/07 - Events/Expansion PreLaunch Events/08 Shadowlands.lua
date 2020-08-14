@@ -392,8 +392,8 @@ _.WorldEvents =
 					}),
 					n(174048, {	-- Elder Nadox
 						["maps"] = { 118 },	-- Icecrown
-						--["coord"] = { , 118 },
-						--["questID"] = ,
+						["coord"] = { 44.2, 49.2, 118 },
+						["questID"] = 62326,
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
