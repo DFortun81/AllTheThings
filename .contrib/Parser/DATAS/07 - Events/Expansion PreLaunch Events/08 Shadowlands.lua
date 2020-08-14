@@ -297,6 +297,20 @@ _.WorldEvents =
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 					}),
+					q(62295, {	-- Cleaning Out the Vault
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 42.8, 29.9, 118 },
+						["isDaily"] = true,
+						["provider"] = { "n", 173869 },	-- Crusader Renn
+						["sourceQuest"] = 60932,	-- Only Shadows Remain
+					}),
+					q(62365, {	-- Careful Creations
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 35.3, 66.3, 118 },
+						["isDaily"] = true,
+						["provider"] = { "n", 173997 },	-- Crusader Renn
+						["sourceQuest"] = 60932,	-- Only Shadows Remain
+					}),
 
 					-- repeatables below
 					q(62401, {	-- Strange Scourgestones
