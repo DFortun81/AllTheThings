@@ -39,9 +39,9 @@ _.WorldEvents =
 					}),
 					q(60117, {	-- Return of the Crusade (A)
 						["maps"] = { 84 },	-- Stormwind
-						--["coord"] = { 49.2, 73.7, 84 },
+						["coord"] = { 39.4, 64.1, 84 },
 						["races"] = ALLIANCE_ONLY,
-						--["provider"] = { "n", 169928 },	-- Lor'themar Theron
+						["provider"] = { "n", 167329 },	-- Genn Greymane
 						["sourceQuest"] = 60116,	-- Cause for Distraction (A)
 						["lvl"] = 48,
 					}),
@@ -55,9 +55,9 @@ _.WorldEvents =
 					}),
 					q(59876, {	-- Field Reports (A)
 						["maps"] = { 84 },	-- Stormwind
-						--["coord"] = { 52.9, 77.3, 84 },
+						["coord"] = { 65.7, 77.1, 84 },
 						["races"] = ALLIANCE_ONLY,
-						--["provider"] = { "n", 169878 },	-- Commander Throgg
+						["provider"] = { "n", 166383 },	-- Commander Gregor
 						["sourceQuest"] = 60117,	-- Return of the Crusade (A)
 						["lvl"] = 48,
 					}),
@@ -220,7 +220,7 @@ _.WorldEvents =
 						["sourceQuest"] = 60827,	-- Advancing the Effort
 						["lvl"] = 48,
 					}),
-					
+
 					-- phase 2 quests?
 					q(62163, {	-- A Message from the Justicar
 						["maps"] = { 85 },	-- Orgrimmar
@@ -235,7 +235,7 @@ _.WorldEvents =
 						["provider"] = { "n", 168123 },	-- Crusader Renn
 						["sourceQuests"] = {
 							-- pretty sure there's an alliance version here too
-							62163,	-- A Message from the Justicar 
+							62163,	-- A Message from the Justicar
 						},
 					}),
 					q(60843, {	-- Cult Couture
@@ -297,7 +297,7 @@ _.WorldEvents =
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 					}),
-					
+
 					-- repeatables below
 					q(62401, {	-- Strange Scourgestones
 						["maps"] = { 118 },	-- Icecrown

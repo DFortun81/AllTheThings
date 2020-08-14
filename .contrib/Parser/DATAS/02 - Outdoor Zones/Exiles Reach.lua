@@ -20,7 +20,9 @@ _.Zones =
 			Darkmaul Citadel:
 				n(157300, {	-- Tunk
 					i(178167),	-- Tunk's Lil' Whomper
+					i(178164),	-- Tunk's Needle
 					i(179360),	-- Tunk's Tiny Bow
+					i(178166),	-- Tunk's Toothpick
 					i(178162),	-- Tunk's Whomper
 				}),
 				n(156501, {	-- Ravnyr
