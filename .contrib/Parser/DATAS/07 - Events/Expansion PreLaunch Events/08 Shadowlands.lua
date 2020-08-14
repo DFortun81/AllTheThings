@@ -358,9 +358,19 @@ _.WorldEvents =
 							-- world quest grants the equivalent of a darkshore cache. Not sure yet if he has his own loot table
 						},
 					}),
-					-- adding the Pitch Black Scourgestone rewards, but uncertain if it's worth keeping
-					-- TODO: many more possible bosses here
 					-- rares spawn every 20 minutes
+					n(174065, {	-- Blood Queen Lana'thel
+						["maps"] = { 118 },	-- Icecrown
+						--["coord"] = { , 118 },
+						--["questID"] = ,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+							i(183646),	-- Chestguard of Siphoned Vitality
+							i(183648),	-- Veincrusher Gauntlets
+							i(183647),	-- Bloodspatter
+						},
+					}),
 					n(174058, {	-- Bronjahm
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 70.6, 38.5, 118 },
@@ -368,6 +378,10 @@ _.WorldEvents =
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
+							i(183675),	-- Cold Sweat Mitts
+							i(183634),	-- Papa's Mint Condition Bag
+							i(183639),	-- Gaze of Bewilderment
+							i(183635),	-- Grieving Gauntlets
 						},
 					}),
 					n(174054, {	-- Falric
@@ -377,6 +391,9 @@ _.WorldEvents =
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
+							i(183664),	-- Bracer of Ground Molars
+							i(183665),	-- Valonforth's Marred Pauldrons
+							i(183666),	-- Legguards of the Frosty Fathoms
 						},
 					}),
 					n(174056, {	-- Forgemaster Garfrost
@@ -386,6 +403,9 @@ _.WorldEvents =
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
+							i(183666),	-- Legguards of the Frosty Fathoms
+							i(183631),	-- Ring of Carnelian and Sinew
+							i(183630),	-- Garfrost's Two-Ton Bludgeon
 						},
 					}),
 					n(174061, {	-- Ingvar the Plunderer
@@ -396,6 +416,8 @@ _.WorldEvents =
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183659),	-- Annhylde's Band
+							i(183658),	-- Ingvar's Monolithic Skullcleaver
+							i(183668),	-- Razor-Barbed Leather Belt
 						},
 					}),
 					n(174063, {	-- Lady Deathwhisper
@@ -405,6 +427,32 @@ _.WorldEvents =
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
+							i(183641),	-- Shoulderpads of Corpal Rigidity
+							i(183653),	-- Deathwhisper Vestment
+							i(183655),	-- Handgrips of Rime and Sleet
+						},
+					}),
+					n(174055, {	-- Marwyn
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 58.2, 83.5, 118 },
+						["questID"] = 62333,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+							i(183687),	-- Frayed Flesh-Stitched Shoulderguards
+							i(183663),	-- Sightless Capuchin of Ulmaas
+							i(183662),	-- Frostsworn Rattleshirt
+						},
+					}),
+					n(174067, {	-- Noth the Plaguebringer
+						["maps"] = { 118 },	-- Icecrown
+						--["coord"] = { , 118 },
+						--["questID"] = ,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+							i(183642),	-- Robes of Rasped Breaths
+							i(183676),	-- Hailstone Loop
 						},
 					}),
 					n(174052, {	-- Novos the Summoner
@@ -414,6 +462,21 @@ _.WorldEvents =
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
+							i(183671),	-- Necromantic Wristwraps
+							i(183672),	-- Cuirass of Undeath
+							i(183627),	-- Summoner's Granite Gavel
+						},
+					}),
+					n(174066, {	-- Patchwerk
+						["maps"] = { 118 },	-- Icecrown
+						--["coord"] = { , 118 },
+						--["questID"] = ,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+							i(183645),	-- Cinch of the Tortured
+							i(183644),	-- Regurgitator's Shoulderpads
+							i(183643),	-- Severance of Mortality
 						},
 					}),
 					n(174060, {	-- Prince Keleseth
@@ -423,6 +486,20 @@ _.WorldEvents =
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
+							i(183678),	-- Keleseth's Influencer
+							i(183677),	-- Blood-Drinker's Belt -- TODO: does Keleseth actually drop this or does Taldaram? Need more data
+							i(183661),	-- Drake Stablers Gauntlets
+						},
+					}),
+					n(174049, {	-- Prince Taldaram
+						["maps"] = { 118 },	-- Icecrown
+						--["coord"] = { , 118 },
+						--["questID"] = ,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+							i(183679),	-- Taldaram's Supple Slippers
+							i(183625),	-- Reforged Necklace of Taldaram
 						},
 					}),
 					n(174064, {	-- Professor Putricide
@@ -432,6 +509,9 @@ _.WorldEvents =
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
+							i(183649),	-- Bag of Discarded Entrails
+							i(183651),	-- Chestplate of Septic Sutures
+							i(183650),	-- Miniscule Abomination in a Jar
 						},
 					}),
 					n(174057, {	-- Scourgelord Tyrannus
@@ -441,6 +521,9 @@ _.WorldEvents =
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
+							i(183674),	-- Rimewoven Pantaloons
+							i(183633),	-- Fringed Wyrmleather Leggings
+							i(183632),	-- Protector of Stolen Souls
 						},
 					}),
 					n(174062, {	-- Skadi the Ruthless
@@ -450,6 +533,9 @@ _.WorldEvents =
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
+							i(183670),	-- Skadi's Saronite Belt
+							i(183656),	-- Drake Rider's Jerkin
+							i(183657),	-- Skadi's Scaled Sollerets
 						},
 					}),
 					n(174059, {	-- The Black Knight
@@ -459,15 +545,32 @@ _.WorldEvents =
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
+							i(183638),	-- Phantasmic Kris
+							i(183637),	-- Shoulderpads of the Notorious Knave
+							i(183636),	-- Helm of the Violent Fracas
 						},
 					}),
 					n(174053, {	-- The Prophet Tharon'ja
 						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 80.1, 61.2, 118 },
+						["coord"] = { 80.3, 61.4, 118 },
 						["questID"] = 62331,
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
+							i(183686),	-- Breeches of the Skeletal Serpent
+							i(183685),	-- Phantasmic Seal of the Prophet
+							i(183684),	-- Tharaon'ja's Protectorate
+						},
+					}),
+					n(174051, {	-- Trollgore
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 58.3, 39.3, 118 },
+						["questID"] = 62329,
+						["isDaily"] = true,
+						["g"] = {
+							i(183200),	-- Pitch Black Scourgestone
+							i(183669),	-- Cowl of the Rampaging Trollgore
+							i(183626),	-- Troll Gorer
 						},
 					}),
 				}),
