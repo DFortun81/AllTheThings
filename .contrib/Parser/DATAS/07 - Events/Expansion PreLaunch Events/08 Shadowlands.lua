@@ -359,6 +359,12 @@ _.WorldEvents =
 						},
 					}),
 					-- rares spawn every 20 minutes
+					--[[
+						i(183640),	-- Leggings of Disreputable Charms - themed from "Leggings of Dubious Charms" from ICC trash mobs
+						i(183682),	-- Cinch of the Servant - themed from "Sash of the Servant" originally from Anub'arak in Azjol-Nerub
+						i(183683),	-- Skittering Vestments - themed from "Insect Vestments" originally from Anub'arak in Azjol-Nerub
+						i(183654),	-- Etched Dragonbone Stompers - originally Shivermaw from Violet Hold
+					]]--
 					n(174065, {	-- Blood Queen Lana'thel
 						["maps"] = { 118 },	-- Icecrown
 						--["coord"] = { , 118 },
@@ -450,6 +456,7 @@ _.WorldEvents =
 							i(183641),	-- Shoulderpads of Corpal Rigidity
 							i(183653),	-- Deathwhisper Vestment
 							i(183655),	-- Handgrips of Rime and Sleet
+							i(183652),	-- Zod's Echoing Longbow - themed off of the "Njorndar Bone Bow" she drops in ICC. Needs confirmation due to lack of data
 						},
 					}),
 					n(174055, {	-- Marwyn
