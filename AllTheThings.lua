@@ -835,7 +835,7 @@ local function GetCollectionText(state)
 	return L[(state and (state == 2 and "COLLECTED_APPEARANCE" or "COLLECTED")) or "NOT_COLLECTED"];
 end
 local function GetCompletionIcon(state)
-	return L[state and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"];
+    return L[state and "COMPLETE_ICON" or "INCOMPLETE_ICON"];
 end
 local function GetCompletionText(state)
 	return L[(state == 2 and "COMPLETE_OTHER") or (state == 1 and "COMPLETE") or "INCOMPLETE"];
@@ -6711,6 +6711,9 @@ app.BaseQuest = {
 				end
 			end
 			if key == "preview" then
+				if t.repeatable then
+                    return "Interface\\Icons\\Achievement_Quests_Completed_Daily_08";
+                end
 				return "Interface\\Icons\\Achievement_Quests_Completed_08";
 			elseif t.isDaily or t.isWeekly then
 				return "Interface\\GossipFrame\\DailyQuestIcon";
