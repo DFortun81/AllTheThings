@@ -276,8 +276,8 @@ _.Zones =
 						["provider"] = { "n", 52491 },	-- Morthis Whisperwing
 						["coord"] = { 34.6, 56,4, 338 },
 						["sourceQuests"] = {
-							29293,	-- Singed Wings
-							29296,	-- Territorial Birds
+							29265,	-- Fire Flowers
+							29264,	-- Flamewakers of the Molten Flow
 						},
 						["isDaily"] = true,
 						["g"] = {

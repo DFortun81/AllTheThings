@@ -383,6 +383,7 @@ _.NeverImplemented =
 		q(35587),	-- Deadmines heroic completion
 		q(35358),	-- End Time heroic completion
 		q(35404),	-- Grim Batol Reward Quest
+		q(35405),	-- Grim Batol Reward Quest
 		q(35439),	-- Hour of Twilight dungeon reward (Kill benedictus)
 		q(35414),	-- Lost City of the Tol'vir dungeon reward (Kill Siamat)
 		q(35311),	-- Shadowfang Keep heroic bonus objective complete
@@ -410,6 +411,8 @@ _.NeverImplemented =
 		q(29395),	-- FLAG - Teleport to Uldum
 		q(29592),	-- Caster Legendary BREADCRUMB TRACKER
 		q(29286),	-- Druid Tree, Stage 2 Tracking
+		q(29291),	-- triggered with Peaked Interest 29287
+		q(29292),	-- triggered with Peaked Interest 29287
 
 		q(26565),	-- A Furious Catch (REMOVED) — unused version of Orgrimmar Cata fishing daily "A Golden Opportunity"
 		q(25829),	-- Mount Hyjal - goldrinn hub complete
