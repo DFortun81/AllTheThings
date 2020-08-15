@@ -1184,6 +1184,7 @@ _.NeverImplemented =
 		q(40620),	-- Hunter Order Hall - Marksmanship Chosen
 		q(44368),	-- Hunter Order Hall - Marksmanship Chosen
 		q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
+		q(43158),	-- Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 1 (JAP)
 
 		q(41079),	-- Mage Order Hall - Arcane chosen first
 		q(43442),	-- Mage Order Hall - Arcane chosen second
@@ -1290,6 +1291,7 @@ _.NeverImplemented =
 		q(44061),	-- Warrior Order Hall - Val'sharah Teleport learned in Loriathil
 
 		--	Artifact Appearances
+		q(43655),	-- Hidden Appearance unlocked (The Silver Hand?)
 		q(45130),	-- Hidden Appearance unlocked
 
 		--	Professions
