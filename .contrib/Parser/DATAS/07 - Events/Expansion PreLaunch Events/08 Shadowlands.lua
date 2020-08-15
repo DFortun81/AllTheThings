@@ -379,7 +379,7 @@ _.WorldEvents =
 						i(183683),	-- Skittering Vestments - themed from "Insect Vestments" originally from Anub'arak in Azjol-Nerub
 						i(183654),	-- Etched Dragonbone Stompers - originally Shivermaw from Violet Hold
 					]]--
-					n(174065, {	-- Blood Queen Lana'thel
+					n(174065, {	-- Blood Queen Lana'thel (6)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 49.6, 32.3, 118 },
 						["questID"] = 62343,
@@ -391,7 +391,7 @@ _.WorldEvents =
 							i(183647),	-- Bloodspatter
 						},
 					}),
-					n(174058, {	-- Bronjahm
+					n(174058, {	-- Bronjahm (13)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 70.6, 38.5, 118 },
 						["questID"] = 62336,
@@ -404,7 +404,7 @@ _.WorldEvents =
 							i(183635),	-- Grieving Gauntlets
 						},
 					}),
-					n(174048, {	-- Elder Nadox
+					n(174048, {	-- Elder Nadox (3)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 44.2, 49.2, 118 },
 						["questID"] = 62326,
@@ -414,7 +414,7 @@ _.WorldEvents =
 							i(183673),	-- Nerubian Aegis Ring
 						},
 					}),
-					n(174054, {	-- Falric
+					n(174054, {	-- Falric (17)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 50.2, 88.1, 118 },
 						["questID"] = 62332,
@@ -426,7 +426,7 @@ _.WorldEvents =
 							i(183666),	-- Legguards of the Frosty Fathoms
 						},
 					}),
-					n(174056, {	-- Forgemaster Garfrost
+					n(174056, {	-- Forgemaster Garfrost (15)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 59.1, 72.5, 118 },
 						["questID"] = 62334,
@@ -438,7 +438,7 @@ _.WorldEvents =
 							i(183630),	-- Garfrost's Two-Ton Bludgeon
 						},
 					}),
-					n(174061, {	-- Ingvar the Plunderer
+					n(174061, {	-- Ingvar the Plunderer (10)
 						["maps"] = { 118 }, -- Icecrown
 						["coord"] = { 52.3, 52.6, 118 },
 						["questID"] = 62339,
@@ -450,7 +450,7 @@ _.WorldEvents =
 							i(183668),	-- Razor-Barbed Leather Belt
 						},
 					}),
-					n(174050, {	-- Krik'thir the Gatewatcher
+					n(174050, {	-- Krik'thir the Gatewatcher (1)
 						["maps"] = { 118 }, -- Icecrown
 						["coord"] = { 67.5, 58.2, 118 },
 						["questID"] = 62328,
@@ -460,7 +460,7 @@ _.WorldEvents =
 							i(183681),	-- Webrending Machete
 						},
 					}),
-					n(174063, {	-- Lady Deathwhisper
+					n(174063, {	-- Lady Deathwhisper (8)
 						["maps"] = { 118 }, -- Icecrown
 						["coord"] = { 51.2, 78.6, 118 },
 						["questID"] = 62341,
@@ -473,7 +473,7 @@ _.WorldEvents =
 							i(183652),	-- Zod's Echoing Longbow - themed off of the "Njorndar Bone Bow" she drops in ICC. Needs confirmation due to lack of data
 						},
 					}),
-					n(174055, {	-- Marwyn
+					n(174055, {	-- Marwyn (16)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 58.2, 83.5, 118 },
 						["questID"] = 62333,
@@ -485,7 +485,7 @@ _.WorldEvents =
 							i(183662),	-- Frostsworn Rattleshirt
 						},
 					}),
-					n(174067, {	-- Noth the Plaguebringer
+					n(174067, {	-- Noth the Plaguebringer (4)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 31.5, 70.4, 118 },
 						--["questID"] = , it's EITHER 62325 or 62345 based on other boss IDs
@@ -496,7 +496,7 @@ _.WorldEvents =
 							i(183676),	-- Hailstone Loop
 						},
 					}),
-					n(174052, {	-- Novos the Summoner
+					n(174052, {	-- Novos the Summoner (19)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 77.9, 66.2, 118 },
 						["questID"] = 62330,
@@ -508,7 +508,7 @@ _.WorldEvents =
 							i(183627),	-- Summoner's Granite Gavel
 						},
 					}),
-					n(174066, {	-- Patchwerk
+					n(174066, {	-- Patchwerk (5)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 36.5, 67.7, 118 },
 						["questID"] = 62344,
@@ -521,7 +521,7 @@ _.WorldEvents =
 							i(183643),	-- Severance of Mortality
 						},
 					}),
-					n(174060, {	-- Prince Keleseth
+					n(174060, {	-- Prince Keleseth (11)
 						["maps"] = { 118 }, -- Icecrown
 						["coord"] = { 53.9, 44.7, 118 },
 						["questID"] = 62338,
@@ -533,7 +533,7 @@ _.WorldEvents =
 							i(183661),	-- Drake Stablers Gauntlets
 						},
 					}),
-					n(174049, {	-- Prince Taldaram
+					n(174049, {	-- Prince Taldaram (2)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 30.0, 62.4, 118 },
 						["questID"] = 62327,
@@ -544,7 +544,7 @@ _.WorldEvents =
 							i(183625),	-- Reforged Necklace of Taldaram
 						},
 					}),
-					n(174064, {	-- Professor Putricide
+					n(174064, {	-- Professor Putricide (7)
 						["maps"] = { 118 },
 						["coord"] = { 57.1, 30.5, 118 },
 						["questID"] = 62342,
@@ -556,7 +556,7 @@ _.WorldEvents =
 							i(183650),	-- Miniscule Abomination in a Jar
 						},
 					}),
-					n(174057, {	-- Scourgelord Tyrannus
+					n(174057, {	-- Scourgelord Tyrannus (14)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 47.1, 66.0, 118 },
 						["questID"] = 62335,
@@ -568,7 +568,7 @@ _.WorldEvents =
 							i(183632),	-- Protector of Stolen Souls
 						},
 					}),
-					n(174062, {	-- Skadi the Ruthless
+					n(174062, {	-- Skadi the Ruthless (9)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 57.7, 56.0, 118 },
 						["questID"] = 62340,
@@ -580,7 +580,7 @@ _.WorldEvents =
 							i(183657),	-- Skadi's Scaled Sollerets
 						},
 					}),
-					n(174059, {	-- The Black Knight
+					n(174059, {	-- The Black Knight (12)
 						["maps"] = { 118 }, -- Icecrown
 						["coord"] = { 64.9, 22.1, 118 },
 						["questID"] = 62337,
@@ -592,7 +592,7 @@ _.WorldEvents =
 							i(183636),	-- Helm of the Violent Fracas
 						},
 					}),
-					n(174053, {	-- The Prophet Tharon'ja
+					n(174053, {	-- The Prophet Tharon'ja (18)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 80.3, 61.4, 118 },
 						["questID"] = 62331,
@@ -604,7 +604,7 @@ _.WorldEvents =
 							i(183684),	-- Tharaon'ja's Protectorate
 						},
 					}),
-					n(174051, {	-- Trollgore
+					n(174051, {	-- Trollgore (20)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 58.3, 39.3, 118 },
 						["questID"] = 62329,
