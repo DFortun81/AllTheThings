@@ -6722,7 +6722,7 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return app.CollectibleQuests and ((not t.isBreadcrumb and not t.DisablePartySync) or app.AccountWideQuests) and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")) and ((not t.isWorldQuest and not t.repeatable) or app.Settings:GetTooltipSetting("RepeatableFirstTime"));
+			return app.CollectibleQuests and ((not t.isBreadcrumb and not t.DisablePartySync) or app.AccountWideQuests) and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
 		elseif key == "saved" or key == "collected" then
