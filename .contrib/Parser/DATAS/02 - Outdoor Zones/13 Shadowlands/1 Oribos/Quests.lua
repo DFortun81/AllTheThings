@@ -58,6 +58,25 @@ _.Zones =
 					["sourceQuest"] = 60156,	-- The Path to Bastion
 					["lvl"] = 50,
 				}),
+			-- From Bastion to Maldraxxus
+				q(61096, {	-- The Arbiter's Will
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.9, 69.9, 1670 },
+					["sourceQuest"] = 60056,	-- Follow the Path
+					["lvl"] = 50,
+				}),
+				q(61107, {	-- A Land of Strife
+					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
+					["coord"] = {61.1, 36.9, 1670 },
+					["sourceQuest"] = 61096,	-- The Arbiter's Will
+					["lvl"] = 50,
+				}),
+				q(57386, {	-- If You Want Peace...
+					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
+					["coord"] = {61.1, 36.9, 1670 },
+					["sourceQuest"] = 61107,	-- A Land of Strife
+					["lvl"] = 50,
+				}),
 			}),
 		}),
 	}),

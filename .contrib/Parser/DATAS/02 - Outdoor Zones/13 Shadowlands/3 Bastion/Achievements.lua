@@ -27,6 +27,8 @@ _.Zones =
 						["sourceQuest"] = 60055,	-- A Time for Courage
 					}),
 				}),
+				ach(14311),	-- Treasures of Bastion
+					
 			}),
 		}),
 	}),

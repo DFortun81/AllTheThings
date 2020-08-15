@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
+_.Zones = 
 {
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
@@ -24,7 +24,7 @@ _.Zones =
 						i(179488),	-- Cloudtail's Paw
 					},
 				}),
-				n(161529, { -- Nemaeus
+				n(161529, { -- Nemaeus											-- Something is wrong here ... QuestID and/or crit
 					["coord"] = { 55.3, 80.3, 1533 },
 					["questID"] = 50570,
 					["isDaily"] = true,
@@ -40,6 +40,15 @@ _.Zones =
 					["g"] = {
 						ach(14307, crit(3)),	-- Adventurer of Bastion / Sigilback
 						i(179486),	-- Sigilback's Smashshell
+					},
+				}),
+				n(160721, { -- Fallen Acolyte Erisne
+					["coord"] = { 60.5, 73.4, 1533 },
+					["questID"] = 58222,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(2)),	-- Adventurer of Bastion / Fallen Acolyte Erisne
+						i(180444),	-- Harmonia's Chosen Belt
 					},
 				}),
 			}),
