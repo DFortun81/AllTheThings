@@ -381,8 +381,8 @@ _.WorldEvents =
 					]]--
 					n(174065, {	-- Blood Queen Lana'thel
 						["maps"] = { 118 },	-- Icecrown
-						--["coord"] = { , 118 },
-						--["questID"] = ,
+						["coord"] = { 49.6, 32.3, 118 },
+						["questID"] = 62343,
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
@@ -487,8 +487,8 @@ _.WorldEvents =
 					}),
 					n(174067, {	-- Noth the Plaguebringer
 						["maps"] = { 118 },	-- Icecrown
-						--["coord"] = { , 118 },
-						--["questID"] = ,
+						["coord"] = { 31.5, 70.4, 118 },
+						--["questID"] = , it's EITHER 62325 or 62345 based on other boss IDs
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
@@ -510,9 +510,10 @@ _.WorldEvents =
 					}),
 					n(174066, {	-- Patchwerk
 						["maps"] = { 118 },	-- Icecrown
-						--["coord"] = { , 118 },
-						--["questID"] = ,
+						["coord"] = { 36.5, 67.7, 118 },
+						["questID"] = 62344,
 						["isDaily"] = true,
+						["description"] = "Inside the Sanctum of Reanimation at the Fleshworks.",
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183645),	-- Cinch of the Tortured
