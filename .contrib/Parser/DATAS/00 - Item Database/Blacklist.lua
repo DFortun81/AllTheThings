@@ -53,13 +53,13 @@ i(141655);	-- Shimmering Ancient Mana Cluster
 i(169856);	-- Spark-1351
 i(1187);	-- Spiked Collar
 i(15723);	-- Tea with Sugar
+i(169860);	-- Tiny Dapper Hat
 i(143858);	-- Twilight Cultist Cowl
 i(143857);	-- Twilight Cultist Mantle
 i(143855);	-- Twilight Cultist Robe
 i(168003);	-- Unstable Manapearl
 i(13514);	-- Wail of the Banshee
 i(128851);	-- Roasted juicycrunch carrots
-
 
 
 
@@ -97,6 +97,8 @@ i(67495);	-- Strange Bloated Stomach
 i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate
 i(9279);	-- White Punch Card
+
+
 
 -- "Weekly Holidays"
 i(167872);	-- Damaged Diving Helmet

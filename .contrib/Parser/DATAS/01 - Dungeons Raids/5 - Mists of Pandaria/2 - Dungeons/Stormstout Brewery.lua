@@ -63,6 +63,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(144124),	-- Wort Stirring Rod
 					i(144085),	-- Gao's Keg Tapper
 					i(144217),	-- Inelava, Spirit of Inebriation
+					i(87545),	-- Inelava, Spirit of Inebriation — dropped for Carbion in Normal difficulty as well
 					i(144089),	-- Yan-Zhu's Pressure Valve
 					i(143969),	-- Fizzy Spaulders
 					i(143958),	-- Uncasked Chestguard
@@ -121,6 +122,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144124),	-- Wort Stirring Rod
 						i(144085),	-- Gao's Keg Tapper
 						i(144217),	-- Inelava, Spirit of Inebriation
+						i(87545),	-- Inelava, Spirit of Inebriation — this specific itemID dropped for a discord user on May 4th, 2020 (a screenshot was provided).  possible that both versions drop?
 						i(144089),	-- Yan-Zhu's Pressure Valve
 						i(143969),	-- Fizzy Spaulders
 						i(143958),	-- Uncasked Chestguard
@@ -131,7 +133,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144122),	-- Carbonic Carbuncle
 						un(REMOVED_FROM_GAME, i(81140)),	-- Wort Stirring Rod (7.1 - Removed from Game!)
 						un(REMOVED_FROM_GAME, i(81062)),	-- Gao's Keg Tapper (7.1 - Removed from Game!)
-						i(87545),	-- Inelava, Spirit of Inebriation — this specific itemID dropped for a discord user on May 4th, 2020 (a screenshot was provided).  possible that both versions drop?
 						un(REMOVED_FROM_GAME, i(81066)),	-- Yan-Zhu's Pressure Valve (7.1 - Removed from Game!)
 						un(REMOVED_FROM_GAME, i(81068)),	-- Fizzy Spaulders (7.1 - Removed from Game!)
 						un(REMOVED_FROM_GAME, i(81081)),	-- Uncasked Chestguard (7.1 - Removed from Game!)

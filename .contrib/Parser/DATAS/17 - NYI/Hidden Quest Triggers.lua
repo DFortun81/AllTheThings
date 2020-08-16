@@ -392,6 +392,7 @@ _.NeverImplemented =
 		q(35913),	-- Stonecore (Heroic) reward quest
 		q(35401),	-- The Vortex Pinnacle Reward Quest
 		q(35363),	-- Throne of the Tides Reward Quest
+		q(35365),	-- Throne of the Tides Reward Quest (kill final boss, triggered in Timewalking)
 		q(35366),	-- Throne of the Tides Bonus Reward (kill Mindbender Ghur'sha, triggered in Timewalking)
 		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
 		q(35411),	-- Zul'Gurub Reward Quest
