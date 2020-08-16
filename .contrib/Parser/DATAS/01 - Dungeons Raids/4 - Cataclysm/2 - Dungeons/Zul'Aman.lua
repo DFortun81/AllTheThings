@@ -11,11 +11,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["lvl"] = 85,
 				["groups"] = {
 					n(QUESTS, {
-						{	-- A Troll Among Trolls
-							["questID"] = 29188,
-							["provider"] = { "n", 23761 },	-- Quest Giver: Prigmon
+						q(29188, {	-- A Troll Among Trolls
+							["provider"] = { "n", 23761 },	-- Prigmon
 							["u"] = REMOVED_FROM_GAME,
-						},
+						}),
 						q(29217, {	-- The Captive Scouts
 							["provider"] = { "n", 52933 },	-- Blood Guard Hakkuz
 						}),
@@ -66,54 +65,47 @@ _.Instances = { tier(4, {	-- Cataclysm
 								["groups"] = {
 									i(33993),	-- Mojo (PET!)
 									ach(5761, {	-- Hex Mix
-										{
-											["criteriaID"] = 1,	-- Rosa saved.
+										crit(1, {	-- Rosa saved.
 											["provider"] = { "n", 52905 },	-- Rosa
-										},
-										{
-											["criteriaID"] = 2,	-- Eulinda saved.
+										}),
+										crit(2, {	-- Eulinda saved.
 											["provider"] = { "n", 52914 },	-- Eulinda
-										},
-										{
-											["criteriaID"] = 3,	-- Lenzo saved.
+										}),
+										crit(3, {	-- Lenzo saved.
 											["provider"] = { "n", 52917 },	-- Lenzo
-										},
-										{
-											["criteriaID"] = 4,	-- Melasong saved.
+										}),
+										crit(4, {	-- Melasong saved.
 											["provider"] = { "n", 52916 },	-- Melasong
-										},
-										{
-											["criteriaID"] = 5,	-- Harald saved.
+										}),
+										crit(5, {	-- Harald saved.
 											["provider"] = { "n", 52915 },	-- Harald
-										},
-										{
-											["criteriaID"] = 6,	-- Relissa saved.
+											["g"] = {
+												i(33926, {	-- Sealed Scroll Case
+													["description"] = "Can contain profession recipes."
+												})
+											}
+										}),
+										crit(6, {	-- Relissa saved.
 											["provider"] = { "n", 52912 },	-- Relissa
-										},
-										{
-											["criteriaID"] = 7,	-- Kaldrick saved.
+										}),
+										crit(7, {	-- Kaldrick saved.
 											["provider"] = { "n", 52918 },	-- Kaldrick
-										},
-										{
-											["criteriaID"] = 8,	-- Arinoth saved.
+										}),
+										crit(8, {	-- Arinoth saved.
 											["provider"] = { "n", 52919 },	-- Arinoth
-										},
-										{
-											["criteriaID"] = 9,	-- Micah saved.
+										}),
+										crit(9, {	-- Micah saved.
 											["provider"] = { "n", 52910 },	-- Micah
-										},
-										{
-											["criteriaID"] = 10,	-- Tyllan saved.
+										}),
+										crit(10, {	-- Tyllan saved.
 											["provider"] = { "n", 52909 },	-- Tyllan
-										},
-										{
-											["criteriaID"] = 11,	-- Mawago saved.
+										}),
+										crit(11, {	-- Mawago saved.
 											["provider"] = { "n", 52920 },	-- Mawago
-										},
-										{
-											["criteriaID"] = 12,	-- Melissa saved.
+										}),
+										crit(12, {	-- Melissa saved.
 											["provider"] = { "n", 52947 },	-- Melissa
-										},
+										}),
 									}),
 								},
 							}),

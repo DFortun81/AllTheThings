@@ -395,6 +395,7 @@ _.NeverImplemented =
 		q(35365),	-- Throne of the Tides Reward Quest (kill final boss, triggered in Timewalking)
 		q(35366),	-- Throne of the Tides Bonus Reward (kill Mindbender Ghur'sha, triggered in Timewalking)
 		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
+		q(35443),	-- Zul'Aman Reward Quest
 		q(35411),	-- Zul'Gurub Reward Quest
 		q(35412),	-- Zul'Gurub Bonus Objective Reward Quest. Killing Cache of Madness
 		q(35435),	-- Well of Eternity Reward Quest

@@ -6,6 +6,9 @@ local i = function(itemID)
 end
 
 -- Consumables
+i(33930);	-- Amani Charm of the Bloodletter
+i(33931);	-- Amani Charm of Mighty Mojo
+i(33932);	-- Amani Charm of the Witch Doctor
 i(139786);	-- Ancient Mana Crystal
 i(23123);	-- Blessed Wizard Oil
 i(18595);	-- Blood Opal ("Retrieving Data" in-game)
@@ -29,6 +32,7 @@ i(62345);	-- Greater Inscription of Jagged Stone
 i(62346);	-- Greater Inscription of Shattered Crystal
 i(62333);	-- Greater Inscription of Unbreakable Quartz
 i(43626);	-- Happy Pet Snack
+i(33928);	-- Hollowed Bone Decanter
 i(18284);	-- Kreeg's Stout Beatdown
 i(19297);	-- Lesser Darkmoon Prize
 i(62342);	-- Lesser Inscription of Charged Lodestone
