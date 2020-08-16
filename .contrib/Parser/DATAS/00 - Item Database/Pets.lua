@@ -882,3 +882,6 @@ pet(113554, 1428);	-- Zomstrok
 pet(137298, 1903); 	-- Zoom
 pet(166455, 2550);	-- Zur'aj the Depleted
 
+
+-- Beta Pets
+pet(173891, 2798);	-- 	Plagueborn Slime

@@ -1,0 +1,15 @@
+---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+
+_.Zones =
+{
+	m(1550, {	-- Shadowlands
+		m(1565, {	-- Ardenweald
+			["achievementID"] = 14304,	-- Explore Ardenweald
+			["description"] = "A vibrant afterlife for those closely connected to the wild, Ardenweald is a domain of endless restoration tended by the mystic night fae. Within this eternal forest, massive dream trees draw in precious anima —soul essence— to feed the spirits of nature awaiting rebirth.",
+			["maps"] = {
+			},
+		}),
+	}),
+};

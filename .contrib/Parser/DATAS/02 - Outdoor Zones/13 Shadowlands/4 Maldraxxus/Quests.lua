@@ -259,25 +259,25 @@ _.Zones =
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
 					["sourceQuest"] = 60886,	-- The Seat of the Primus
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(57976, {	-- Lead By Example
 					["provider"] = { "n", 159894 },	-- Baron Vyraz
 					["coord"] = { 39.2, 55.9, 1536 },
 					["sourceQuest"] = 57912,	-- Baron of the Chosen
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(60557, {	-- First Time? You Have to Fight!
 					["provider"] = { "n", 159894 },	-- Baron Vyraz
 					["coord"] = { 39.2, 55.9, 1536 },
 					["sourceQuest"] = 57912,	-- Baron of the Chosen
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(58268, {	-- Take the High Ground
 					["provider"] = { "n", 169359 },	-- Secutor Mevix
 					["coord"] = { 39.4, 55.5, 1536 },
 					["sourceQuest"] = 57912,	-- Baron of the Chosen
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(57979, {	-- Offensive Behavior
 					["provider"] = { "n", 169226 },	-- Secutor Mevix
@@ -287,7 +287,7 @@ _.Zones =
 						60557,	-- First Time? You Have to Fight!
 						58268,	-- Take the High Ground
 					},
-					["lvl"] = 52,
+					["lvl"] = 53,
 					["g"] = {
 						i(175763),	-- Salvaged Mercenary's Drape
 					},
@@ -296,18 +296,18 @@ _.Zones =
 					["provider"] = { "n", 169462 },	-- Baron Vyraz
 					["coord"] = { 39.7, 46.7, 1536 },
 					["sourceQuest"] = 57979,	-- Offensive Behavior
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(57983, {	-- Archon Save Us
 					["provider"] = { "n", 160211 },	-- Aspirant Thales
 					["coord"] = { 33.8, 31.0, 1536 },
 					["sourceQuest"] = 59616,	-- Army of One
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(57984, {	-- The Ones in Charge
 					["provider"] = { "n", 160211 },	-- Aspirant Thales
 					["sourceQuest"] = 60886,	-- The Seat of the Primus
-					["lvl"] = 52,
+					["lvl"] = 53,
 					["g"] = {
 						i(175474),	-- Epidemiologist's Wristwraps
 						i(175477),	-- Deceitful Agent's Wristwraps
@@ -319,19 +319,19 @@ _.Zones =
 					["provider"] = { "n", 165397 },	-- Secutor Mevix
 					["coord"] = { 31.9, 27.3, 1536 },
 					["sourceQuest"] = 57984,	-- The Ones in Charge
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(57987, {	-- A Deadly Distraction
 					["provider"] = { "n", 165397 },	-- Secutor Mevix
 					["coord"] = { 31.9, 27.3, 1536 },
 					["sourceQuest"] = 57984,	-- The Ones in Charge
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(57986, {	-- A Burden Worth Bearing
 					["provider"] = { "n", 160211 },	-- Aspirant Thales
 					["coord"] = { 32.0 , 27.4, 1536 },
 					["sourceQuest"] = 57984,	-- The Ones in Charge
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(57982, {	-- Breaking Down Barriers
 					["provider"] = { "n", 170018 },	-- Secutor Mevix
@@ -341,13 +341,13 @@ _.Zones =
 						57987,	-- A Deadly Distraction
 						57986,	-- A Burden Worth Bearing
 					},
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(57993, {	-- Two of Them, Two of Us
 					["provider"] = { "n", 170018 },	-- Secutor Mevix
 					["coord"] = { 30.1, 23.7, 1536 },
 					["sourceQuest"] = 57982,	-- Breaking Down Barriers
-					["lvl"] = 52,
+					["lvl"] = 53,
 					["g"] = {
 						i(175447),	-- Epidemiologist's Robe
 						i(175450),	-- Deceitful Agent's Vest
@@ -359,32 +359,32 @@ _.Zones =
 					["provider"] = { "n", 165575 },	-- Aspirant Thales
 					["coord"] = { 28.8, 22.1, 1536 },
 					["sourceQuest"] = 57993,	-- Two of Them, Two of Us
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(60733, {	-- Front and Center
 					["provider"] = { "n", 170094 },	-- Secutor Mevix
 					["coord"] = { 37.6, 29.1, 1536 },
 					["sourceQuest"] = 57994,	-- In The Flesh
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 			-- House of Plagues
 				q(59130, {	-- The House of Plagues
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
 					["sourceQuest"] = 60886,	-- The Seat of the Primus
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(58011, {	-- Bug Bites
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, 1536 },
 					["sourceQuest"] = 59130,	-- The House of Plagues
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(58016, {	-- Spores Galore
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
 					["sourceQuest"] = 59130,	-- The House of Plagues
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(58027, {	-- Slime, Anyone?
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
@@ -393,7 +393,7 @@ _.Zones =
 						58011,	-- Bug Bites
 						58016,	-- Spores Galore
 					},
-					["lvl"] = 52,
+					["lvl"] = 53,
 					["g"] = {
 						i(173891),	-- 	Plagueborn Slime
 					},
@@ -402,13 +402,13 @@ _.Zones =
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, 1536 },
 					["sourceQuest"] = 58027,	-- Slime, Anyone?
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(58045, {	-- Plague is Thicker Than Water
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, 1536 },
 					["sourceQuest"] = 58027,	-- Slime, Anyone?
-					["lvl"] = 52,
+					["lvl"] = 53,
 					["g"] = {
 						i(175457),	-- Epidemiologist's Gloves
 						i(175455),	-- Deceitful Agent's Gloves
@@ -420,7 +420,7 @@ _.Zones =
 				--	["provider"] = { "o", 353645 },	-- Marileth's Journal						-- Need to add the Object
 					["coord"] = { 56.5, 57.2, 1536 },
 					["sourceQuest"] = 60886,	-- The Seat of the Primus
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(59223, {	-- By Any Other Name
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
@@ -430,13 +430,13 @@ _.Zones =
 						58045,	-- Plague is Thicker Than Water
 						58031,	-- Applied Science
 					},
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(60831, {	-- Fit For a Margrave
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 60.4, 71.6, 1536 },
 					["sourceQuest"] = 59223,	-- By Any Other Name
-					["lvl"] = 52,
+					["lvl"] = 53,
 					["g"] = {
 						i(175722),	-- Vial of Caustic Liquid
 						i(175723),	-- Rejuvenating Serum
@@ -446,7 +446,7 @@ _.Zones =
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 60.4, 71.6, 1536 },
 					["sourceQuest"] = 60831,	-- Fit For a Margrave
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 			-- Ritual for the Damned
 				q(59202, {	-- Among the Chosen
@@ -457,32 +457,63 @@ _.Zones =
 						60733,	-- Front and Center
 						59231,	-- Fathomless Power
 					},
-					["lvl"] = 52,
+					["lvl"] = 54,
 				}),
 				q(59874, {	-- The Maw
 					["provider"] = { "n", 164843 },	-- Baron Vyraz
 					["coord"] = { 38.2, 66.7, 1536 },
 					["sourceQuest"] = 59202,	-- Among the Chosen
-					["lvl"] = 52,
+					["lvl"] = 54,
 				}),
 				q(59897, {	-- Seeking the Baron
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
 					["sourceQuest"] = 59874,	-- The Maw
-					["lvl"] = 52,
+					["lvl"] = 54,
 				}),
-				q(60972, {	-- The Hunt for the Baron
-					["sourceQuest"] = 59897,	-- Seeking the Baron
-					["lvl"] = 52,
+				-- To The Maw and Back To Maldraxxus
+				q(59974, {	-- A Soul Saved
+					["provider"] = { "n", 167903 },	-- Baroness Draka
+					["coord"] = { 39.1, 49.9, 1670 },
+					["sourceQuest"] = 61190,	-- Wake of Ashes
+					["lvl"] = 54,
 				}),
-				
-				
-				
-				
-				
-				
-				
-			-- End of Zone Achievement Quests
+			-- The Empty Throne
+				q(59011, {	-- In Death We Are Truly Tested
+					["provider"] = { "n", 162801 },	-- Alexandros Mograine
+					["coord"] = { 41.3, 60.5, 1536 },
+					["sourceQuest"] = 59974,	-- A Soul Saved
+					["lvl"] = 54,
+					["g"] = {
+						i(176277),	-- Ruthless Contender's Dagger
+						i(181529),	-- Ruthless Contender's Blade
+						i(176278),	-- Ruthless Contender's Hammer
+						i(176280),	-- Ruthless Contender's Sword
+						i(181531),	-- Ruthless Contender's Spellblade
+						i(176444),	-- Ruthless Contender's Steel
+						i(176282),	-- Ruthless Contender's Wand
+						i(176286),	-- Ruthless Contender's Warglaive
+						i(176281),	-- Ruthless Contender's Crossbow
+						i(176279),	-- Ruthless Contender's Staff
+						i(181534),	-- Ruthless Contender's Rod
+						i(176283),	-- Ruthless Contender's Claymore
+						i(176285),	-- Ruthless Contender's Tome
+						i(176284),	-- Ruthless Contender's Shield
+					},
+				}),
+				q(60737, {	-- The Door to the Unknown
+					["provider"] = { "n", 170309 },	-- Baroness Draka
+					["coord"] = { 50.5, 67.8, 1536 },
+					["sourceQuest"] = 59011,	-- In Death We Are Truly Tested
+					["lvl"] = 54,
+				}),
+				q(59206, {	-- Words of the Primus
+					["provider"] = { "n", 167903 },	-- Baroness Draka
+					["coord"] = { 39.1, 49.9, 1536 },
+					["sourceQuest"] = 60737,	-- The Door to the Unknown
+					["lvl"] = 54,
+				}),
+				-- End of Zone Achievement Quests				
 				q(59430, {	-- Plagues Aid
 					["provider"] = { "n", 165049 },	-- Judas Sneap
 					["coord"] = { 58.0, 72.1, 1536 },

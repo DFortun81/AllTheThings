@@ -7,6 +7,7 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1648, {	-- The Maw
 			n(QUESTS, {
+			-- Shadowlands Intro Questline
 				q(60545, { -- A Chilling Summons (A)
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -163,6 +164,57 @@ _.Zones =
 					["g"] = {
 						ach(14334),	-- Into the Maw
 					},
+				}),
+			-- Ritual for the Dammed (Maldraxxus Storyline)
+				q(60972, {	-- The Hunt for the Baron
+					["sourceQuest"] = 59897,	-- Seeking the Baron
+					["lvl"] = 54,
+				}),
+				q(59960, {	-- A Cooling Trail
+					["sourceQuest"] = 60972,	-- The Hunt for the Baron
+					["lvl"] = 54,
+				}),
+				q(59959, {	-- The Brand Holds the Key
+				--	["provider"] = { "o", ?? },	-- Cage							-- Need to add the Object
+					["coord"] = { 38.3, 48.5, 1648 },
+					["sourceQuest"] = 59960,	-- A Cooling Trail
+					["lvl"] = 54,
+					["g"] = {
+						i(175528),	-- Epidemiologist's Trousers
+						i(175530),	-- Deceitful Agent's Legwraps
+						i(175529),	-- Flesh Architect's Greaves
+						i(175527),	-- Cruel Executioner's Greaves
+					},
+				}),
+				q(59962, {	-- Hope Never Dies
+					["provider"] = { "n", 171770 },	-- Ve'nari
+					["coord"] = { 36.5, 50.7, 1648 },
+					["sourceQuest"] = 59959,	-- The Brand Holds the Key
+					["lvl"] = 54,
+				}),
+				q(59966, {	-- Delving Deeper
+					["provider"] = { "n", 171770 },	-- Ve'nari
+					["coord"] = { 36.2, 55.7, 1648 },
+					["sourceQuest"] = 59962,	-- Hope Never Dies
+					["lvl"] = 54,
+				}),
+				q(59973, {	-- A Bond Beyond Death
+					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
+					["coord"] = { 32.9, 66.4, 1648 },
+					["sourceQuest"] = 59962,	-- Hope Never Dies
+					["lvl"] = 54,
+					["g"] = {
+						i(175524),	-- Epidemiologist's Cowl
+						i(175526),	-- Deceitful Agent's Cover
+						i(175525),	-- Flesh Architect's Cowl
+						i(175511),	-- Cruel Executioner's Headguard
+					},
+				}),
+				q(61190, {	-- Wake of Ashes
+					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
+					["coord"] = { 32.9, 66.4, 1648 },
+					["sourceQuest"] = 59973,	-- A Bond Beyond Death
+					["lvl"] = 54,
 				}),
 			}),
 		}),

@@ -77,6 +77,25 @@ _.Zones =
 					["sourceQuest"] = 61107,	-- A Land of Strife
 					["lvl"] = 50,
 				}),
+			-- From Maldraxxus to Ardenweald
+				q(61715, {	-- Request of the Highlord
+					["provider"] = { "n", 162928 },	-- Overseer Kah-Delen
+					["coord"] = { 54.4, 54.2, 1670 },
+					["sourceQuest"] = 59206,	-- Words of the Primus
+					["lvl"] = 54,
+				}),
+				q(61716, {	-- A Glimpse into Darkness
+					["provider"] = { "n", 173384 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 40.3, 68.7, 1670 },
+					["sourceQuest"] = 61715,	-- Request of the Highlord
+					["lvl"] = 54,
+				}),
+				q(60338, {	-- Journey to Ardenweald
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 69.9, 1670 },
+					["sourceQuest"] = 61715,	-- Request of the Highlord
+					["lvl"] = 54,
+				}),
 			}),
 		}),
 	}),
