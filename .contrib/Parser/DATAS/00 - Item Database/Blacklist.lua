@@ -24,6 +24,7 @@ i(13508);	-- Eye of Arachnida
 i(129210);	-- Fel Crystal Fragments
 i(127768);	-- Fel Petal
 i(37431);	-- Fetch Ball
+i(139792);	-- Fruitful Bauble
 i(44618);	-- Glass of Aged Dalaran Red
 i(18269);	-- Gordok Green Grog
 i(19296);	-- Greater Darkmoon Prize
@@ -63,6 +64,7 @@ i(143857);	-- Twilight Cultist Mantle
 i(143855);	-- Twilight Cultist Robe
 i(168003);	-- Unstable Manapearl
 i(13514);	-- Wail of the Banshee
+i(85266);	-- Winter Blossom Tree
 i(128851);	-- Roasted juicycrunch carrots
 
 
