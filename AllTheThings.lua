@@ -1284,7 +1284,7 @@ local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 		-- working Quest Link Example from Wowhead
 		-- /script DEFAULT_CHAT_FRAME:AddMessage("\124cffffff00\124Hquest:48615:110\124h[War Never Changes]\124h\124r");
 		-- /script DEFAULT_CHAT_FRAME:AddMessage("\124cffff0000\124Hquest:48615\124h[VisibleText]\124h\124r");
-		QuestHarvester:SetHyperlink("\124cffffff00\124Hquest:".. id .."\124h[".. title .. "]\124h\124r");
+		-- QuestHarvester:SetHyperlink("\124cffffff00\124Hquest:".. id .."\124h[".. title .. "]\124h\124r");
 		rawset(questRetries, id, nil);
 		rawset(t, id, title);
 		return title
@@ -3563,12 +3563,6 @@ local function PopulateQuestObject(questObject)
 		end
 	end
 	
-	-- Query quest name
-	local harvestedName = QuestTitleFromID[questObject.questID];
-	if harvestedName and harvestedName ~= RETRIEVING_DATA then
-		questObject.text = harvestedName;
-	end
-	
 	-- Check for provider info
 	if questObject.qgs and #questObject.qgs == 1 then
 		for j,qg in ipairs(questObject.qgs) do
@@ -3747,6 +3741,15 @@ local function PopulateQuestObject(questObject)
 			end
 		end
 	end
+	
+	-- Query quest name if not existing
+	-- This messes up World Bosses somehow, and not sorting on quest names, so don't need to pull it right here
+	-- if not questObject.text then
+		-- local harvestedName = QuestTitleFromID[questObject.questID];
+		-- if harvestedName and harvestedName ~= RETRIEVING_DATA then
+			-- -- questObject.text = harvestedName;
+		-- end
+	-- end
 end
 -- Returns a questObject containing a lot of Quest information for displaying in a row
 local function GetPopulatedQuestObject(questID)
@@ -13095,6 +13098,13 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						end
 					end
 					if #mapObject.g > 0 then
+						table.sort(mapObject.g, self.Sort);
+						-- Sort the map groups as well
+						for i,mapGrp in ipairs(mapObject.g) do
+							if (mapGrp.mapID and mapGrp.g and #mapGrp.g > 1) then
+								table.sort(mapGrp.g, self.Sort);
+							end
+						end
 						MergeObject(temp, mapObject);
 					end
 				end
@@ -13144,7 +13154,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					local pois = C_TaskQuest.GetQuestsForPlayerByMapID(mapID);
 					if pois then
 						for i,poi in ipairs(pois) do
-							local questObject = GetPopulatedQuestObject(poi.questId);-- {questID=poi.questId,g={},progress=0,total=0};
+							local questObject = GetPopulatedQuestObject(poi.questId);
 							
 							-- see if need to retry based on missing data
 							retry = retry or questObject.missingData;
@@ -13207,6 +13217,13 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					
 					-- Merge everything for this map into the list
 					if #mapObject.g > 0 then
+						table.sort(mapObject.g, self.Sort);
+						-- Sort the map groups as well
+						for i,mapGrp in ipairs(mapObject.g) do
+							if (mapGrp.mapID and mapGrp.g and #mapGrp.g > 1) then
+								table.sort(mapGrp.g, self.Sort);
+							end
+						end
 						MergeObject(temp, mapObject);
 					end
 				end
@@ -13364,11 +13381,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					});
 				
 				for i,o in ipairs(temp) do
-					-- Sort the objects contained
-					if (o.g and #o.g > 1) then
-						-- print("Sorting",o.text);
-						table.sort(o.g, self.Sort);
-					end
 					UnsetNotCollectible(o);
 					MergeObject(self.rawData, o);
 				end
@@ -13380,35 +13392,40 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 			self.Sort = function(a, b)
 				-- If either object doesn't exist
 				if not a then
+					-- print("a-nil");
 					if not b then
+						-- print("b-nil");
 						return false;
 					else
 						return false;
 					end
 				elseif not b then
+					-- print("b-nil");
 					return true;
 				end
-				-- Raids 1st
+				-- Raids/Encounter 1st
 				if a.isRaid then
+					-- print("a-raid",a.text);
 					if not b.isRaid then
 						return true;
 					end
+					-- print("b-raid",b.text);
 					-- both Raid, compare on text
-					return string.lower(a.text or "") < string.lower(b.text or "");
+					-- print("raid",a.text,b.text);
+					return string.lower(a.text or "") <= string.lower(b.text or "");
 				elseif b.isRaid then
+					-- print("b-raid",b.text);
 					return false;
 				end
 				-- Quests 2nd
 				if a.questID then
+					-- print("a-quest",a.text);
 					if not b.questID then
 						return true;
 					end
-					-- both Quest, compare on text if their names have been populated
-					if a.text and b.text then
-						return string.lower(a.text or "") < string.lower(b.text or "");
-					else
-						return a.questID <= b.questID;
-					end
+					-- both Quest
+					-- print("quest",a.questID,b.questID);
+					return a.questID <= b.questID;
 				elseif b.questID then
 					return false;
 				end
@@ -13418,7 +13435,8 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						return true;
 					end
 					-- both Map, compare on text
-					return string.lower(a.text or "") < string.lower(b.text or "");
+					--print("map",a.text,b.text);
+					return string.lower(a.text or "") <= string.lower(b.text or "");
 				elseif b.mapID then
 					return false;
 				end
@@ -13430,17 +13448,32 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					-- both Level, compare on level
 					-- equal Level, compare on text
 					if (a.lvl == b.lvl) then
-						return string.lower(a.text or "") < string.lower(b.text or "");
+					-- print("lvl",a.text,b.text);
+						return string.lower(a.text or "") <= string.lower(b.text or "");
 					end
+					-- print("lvl",a.lvl,b.lvl);
 					return a.lvl <= b.lvl;
 				elseif b.lvl then
 					return false;
 				end
-				-- Anything else
+				-- Items 5th
+				if a.itemID then
+					if not b.itemID then
+						return true;
+					end
+					-- both Item
+					-- print("item",a.itemID,b.itemID);
+					return a.itemID <= b.itemID;
+				elseif b.itemID then
+					return false;
+				end
+				-- Anything else with text
 				if a.text and b.text then
-					return string.lower(a.text or "") < string.lower(b.text or "");
+					-- print("text",a.text,b.text);
+					return string.lower(a.text or "") <= string.lower(b.text or "");
 				end
 				-- false here may cause 'invalid order function' error when no other conditions match
+				-- print("a-b",a.key,b.key);
 				return a.key <= b.key;
 			end;
 		end
