@@ -22,6 +22,7 @@ local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
 local C_ToyBox_GetToyLink = C_ToyBox.GetToyLink;
 local C_Map_GetMapDisplayInfo = C_Map.GetMapDisplayInfo;
 local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
+local C_Map_GetMapInfo = C_Map.GetMapInfo;
 local SetPortraitTexture = _G["SetPortraitTexture"];
 local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
 local EJ_GetCreatureInfo = _G["EJ_GetCreatureInfo"];
@@ -1006,7 +1007,9 @@ local function GetDisplayID(data)
 	end
 end
 local function GetUnobtainableTexture(group)
-	local index = L["UNOBTAINABLE_ITEM_REASONS"][group.u or 1][1];
+	-- old reasons are set to 0, so use 1 instead
+	-- if unobtainable stuff changes again, this logic may need to adjust
+	local index = math.max(L["UNOBTAINABLE_ITEM_REASONS"][group.u or 1][1],1);
 	if group.itemID or group.spellID then
 		if not group.b or group.b == 2 or group.b == 3 then
 			index = 3;
@@ -1153,6 +1156,7 @@ local function GetFixedItemSpecInfo(itemID)
 				end
 			end
 		end
+		table.sort(specs);
 	else
 		FilterSpecs(specs);
 	end
@@ -1270,11 +1274,17 @@ end
 local questRetries = {};
 local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
 local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
+	if not id then return nil; end
 	QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
 	QuestHarvester:SetHyperlink("quest:"..id);
+	-- QuestHarvester:SetHyperlink("\124cffaaaaaa\124Hquest:".. id.."\124h[QUEST:".. id .. "]\124h\124r");
 	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetQuestInfo(id);
 	QuestHarvester:Hide()
 	if title and title ~= RETRIEVING_DATA then
+		-- working Quest Link Example from Wowhead
+		-- /script DEFAULT_CHAT_FRAME:AddMessage("\124cffffff00\124Hquest:48615:110\124h[War Never Changes]\124h\124r");
+		-- /script DEFAULT_CHAT_FRAME:AddMessage("\124cffff0000\124Hquest:48615\124h[VisibleText]\124h\124r");
+		QuestHarvester:SetHyperlink("\124cffffff00\124Hquest:".. id .."\124h[".. title .. "]\124h\124r");
 		rawset(questRetries, id, nil);
 		rawset(t, id, title);
 		return title
@@ -3503,25 +3513,27 @@ local function PopulateQuestObject(questObject)
 	
 	-- Check for a Task-specific icon
 	local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = GetQuestTagInfo(questObject.questID);
-	if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
-		questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-	elseif worldQuestType == LE_QUEST_TAG_TYPE_PET_BATTLE then
-		questObject.icon = "Interface\\Icons\\PetJournalPortrait";
-	elseif worldQuestType == LE_QUEST_TAG_TYPE_PROFESSION then
-		questObject.icon = "Interface\\Icons\\Trade_BlackSmithing";
-	elseif worldQuestType == LE_QUEST_TAG_TYPE_DUNGEON or tagID == 137 then
-		-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-		-- TODO: Add the relevent dungeon icon. (DONE! IN REWARDS!)
-	elseif worldQuestType == LE_QUEST_TAG_TYPE_RAID then
-		-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-		-- TODO: Add the relevent dungeon icon.
-	elseif worldQuestType == LE_QUEST_TAG_TYPE_INVASION or worldQuestType == LE_QUEST_TAG_TYPE_INVASION_WRAPPER then
-		questObject.icon = "Interface\\Icons\\achievements_zone_brokenshore";
-	--elseif worldQuestType == LE_QUEST_TAG_TYPE_TAG then
-		-- completely useless
-		--questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-	--elseif worldQuestType == LE_QUEST_TAG_TYPE_NORMAL then
-	--	questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
+	if worldQuestType then
+		if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
+			questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
+		elseif worldQuestType == LE_QUEST_TAG_TYPE_PET_BATTLE then
+			questObject.icon = "Interface\\Icons\\PetJournalPortrait";
+		elseif worldQuestType == LE_QUEST_TAG_TYPE_PROFESSION then
+			questObject.icon = "Interface\\Icons\\Trade_BlackSmithing";
+		elseif worldQuestType == LE_QUEST_TAG_TYPE_DUNGEON or tagID == 137 then
+			-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
+			-- TODO: Add the relevent dungeon icon. (DONE! IN REWARDS!)
+		elseif worldQuestType == LE_QUEST_TAG_TYPE_RAID then
+			-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
+			-- TODO: Add the relevent dungeon icon.
+		elseif worldQuestType == LE_QUEST_TAG_TYPE_INVASION or worldQuestType == LE_QUEST_TAG_TYPE_INVASION_WRAPPER then
+			questObject.icon = "Interface\\Icons\\achievements_zone_brokenshore";
+		--elseif worldQuestType == LE_QUEST_TAG_TYPE_TAG then
+			-- completely useless
+			--questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
+		--elseif worldQuestType == LE_QUEST_TAG_TYPE_NORMAL then
+		--	questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
+		end
 	end
 	
 	-- Update Quest info from cache
@@ -3549,6 +3561,12 @@ local function PopulateQuestObject(questObject)
 				end
 			end
 		end
+	end
+	
+	-- Query quest name
+	local harvestedName = QuestTitleFromID[questObject.questID];
+	if harvestedName and harvestedName ~= RETRIEVING_DATA then
+		questObject.text = harvestedName;
 	end
 	
 	-- Check for provider info
@@ -3735,6 +3753,31 @@ local function GetPopulatedQuestObject(questID)
 	local questObject = {questID=questID,g={},progress=0,total=0};	
 	PopulateQuestObject(questObject);	
 	return questObject;
+end
+-- Returns a mapObject containing basic map information
+local function GetPopulatedMapObject(mapID)
+	local mapObject = { mapID=mapID,g={},progress=0,total=0};
+	cache = fieldCache["mapID"][mapID];
+	if cache then
+		for _,data in ipairs(cache) do
+			if data.mapID and data.icon then
+				mapObject.text = data.text;
+				mapObject.icon = data.icon;
+				mapObject.lvl = data.lvl;
+				mapObject.description = data.description;
+				break;
+			end
+		end
+	end
+	
+	if not mapObject.text then
+		local mapInfo = C_Map_GetMapInfo(mapID);
+		if mapInfo then
+			mapObject.text = mapInfo.name;
+		end
+	end
+	
+	return mapObject;
 end
 local function ExportDataRecursively(group, indent)
 	if group.itemID then return ""; end
@@ -4059,7 +4102,7 @@ end
 app.GetCurrentMapID = function()
 	local uiMapID = C_Map_GetBestMapForUnit("player");
 	if uiMapID then
-		local map = C_Map.GetMapInfo(uiMapID);
+		local map = C_Map_GetMapInfo(uiMapID);
 		if map and (map.mapType == 0 or map.mapType == 1 or map.mapType == 2) then
 			-- Onyxia's Lair fix
 			local text_to_mapID = app.L["ZONE_TEXT_TO_MAP_ID"];
@@ -4074,7 +4117,7 @@ app.GetCurrentMapID = function()
 end
 app.GetMapName = function(mapID)
 	if mapID and mapID > 0 then
-		local info = C_Map.GetMapInfo(mapID);
+		local info = C_Map_GetMapInfo(mapID);
 		return (info and info.name) or ("Map ID #" .. mapID);
 	else
 		return "Map ID #???";
@@ -6707,6 +6750,8 @@ app.BaseQuest = {
 			return QuestTitleFromID[questID];
 		elseif key == "link" then
 			return "quest:" .. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID);
+			-- this generates a link but it doesn't actually allow it to post in a chat channel...
+			-- return "\124cffffff00\124Hquest:".. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID) ..":".. (t.lvl or "0") .."\124h[".. t.questName .. "]\124h\124r";
 		elseif key == "icon" or key == "preview" then
 			if t.providers then
 				for k,v in pairs(t.providers) do
@@ -7882,7 +7927,7 @@ UpdateGroup = function(parent, group)
 				elseif app.ShowIncompleteThings(group) then
 					group.visible = not group.saved;
 				else
-					group.visible = false;
+					group.visible = (group.visible or 0) == 1;
 				end
 			else
 				-- Hide this group. We aren't filtering for it.
@@ -7905,7 +7950,11 @@ UpdateGroup = function(parent, group)
 				elseif group.trackable then
 					-- If this group is trackable, then we should show it.
 					if app.ShowIncompleteThings(group) then
-						group.visible = not group.saved;
+						if not group.saved then
+							group.visible = true;
+							-- Ensure that the parent does not hide a visible, incomplete thing (switched from 1 to true in group filtering so as to not overwrite based on the group filtering)
+							parent.visible = 1;
+						end
 					else
 						-- Hide this group. We aren't filtering for it.
 						group.visible = false;
@@ -9383,8 +9432,14 @@ local function RowOnEnter(self)
 		-- Miscellaneous fields
 		if GameTooltip:NumLines() < 1 then GameTooltip:AddLine(self.Label:GetText()); end
 		if app.Settings:GetTooltipSetting("Progress") then
-			if reference.trackable and reference.total and reference.total >= 2 then
-				GameTooltip:AddDoubleLine("Tracking Progress", GetCompletionText(reference.saved));
+			if reference.total and reference.total >= 2 then
+				-- if collecting this reference type, then show Collection State
+				if reference.collectible then
+					GameTooltip:AddDoubleLine("Collection Progress", GetCollectionText(reference.collected or reference.saved));
+				-- if completion/tracking is available, show Completion State
+				elseif reference.trackable then
+					GameTooltip:AddDoubleLine("Tracking Progress", GetCompletionText(reference.saved));
+				end
 			end
 		end
 		
@@ -10985,7 +11040,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 				
 				-- Go through all of the possible maps
 				for mapID=1,3000,1 do
-					local mapInfo = C_Map.GetMapInfo(mapID);
+					local mapInfo = C_Map_GetMapInfo(mapID);
 					if mapInfo then
 						local results = SearchForField("mapID", mapID);
 						local mapObject = { ["mapID"] = mapID, ["collectible"] = true };
@@ -10998,7 +11053,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 						-- Recurse up the map chain and build the full hierarchy
 						local parentMapID = mapInfo.parentMapID;
 						while parentMapID do
-							mapInfo = C_Map.GetMapInfo(parentMapID);
+							mapInfo = C_Map_GetMapInfo(parentMapID);
 							if mapInfo then
 								mapObject = { ["mapID"] = parentMapID, ["collectible"] = true, ["g"] = { mapObject } };
 								parentMapID = mapInfo.parentMapID;
@@ -11347,11 +11402,11 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- If we don't have any map data on this area, report it to the chat window.
 			if not results or not results.g or #results.g < 1 then
 				local mapID = self.mapID;
-				local mapInfo = C_Map.GetMapInfo(mapID);
+				local mapInfo = C_Map_GetMapInfo(mapID);
 				local mapPath = mapInfo.name or ("Map ID #" .. mapID);
 				mapID = mapInfo.parentMapID;
 				while mapID do
-					mapInfo = C_Map.GetMapInfo(mapID);
+					mapInfo = C_Map_GetMapInfo(mapID);
 					if mapInfo then
 						mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " -> " .. mapPath;
 						mapID = mapInfo.parentMapID;
@@ -12995,7 +13050,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				wipe(self.data.g);
 				wipe(self.rawData);
 				tinsert(self.data.g, temp);
-				-- self:Rebuild(); -- clearing data probably shouldn't include putting it all back...
 				self:Update();
 			end
 			self.Rebuild = function(self, no)
@@ -13008,18 +13062,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				for _,pair in ipairs(emissaryMapIDs) do
 					local mapID = pair[1];
 					-- print("WQ.EmissaryMapIDs." .. tostring(mapID))
-					local mapObject = { mapID=mapID,g={},progress=0,total=0};
-					local cache = fieldCache["mapID"][mapID];
-					if cache then
-						for _,data in ipairs(cache) do
-							if data.mapID and data.icon then
-								mapObject.icon = data.icon;
-								mapObject.lvl = data.lvl;
-								mapObject.description = data.description;
-								break;
-							end
-						end
-					end
+					local mapObject = GetPopulatedMapObject(mapID);
 					local bounties = GetQuestBountyInfoForMapID(pair[2]);
 					if bounties and #bounties > 0 then
 						for i,bounty in ipairs(bounties) do
@@ -13060,18 +13103,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				for _,pair in ipairs(worldMapIDs) do
 					local mapID = pair[1];
 					-- print("WQ.WorldMapIDs." .. tostring(mapID))
-					local mapObject = { mapID=mapID,g={},progress=0,total=0};					
-					local cache = fieldCache["mapID"][mapID];
-					if cache then
-						for _,data in ipairs(cache) do
-							if data.mapID and data.icon then
-								mapObject.icon = data.icon;
-								mapObject.lvl = data.lvl;
-								mapObject.description = data.description;
-								break;
-							end
-						end
-					end
+					local mapObject = GetPopulatedMapObject(mapID);					
 					
 					-- Invasions
 					local mapIDPOIPairs = pair[2];
@@ -13082,18 +13114,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 									local timeLeft = C_AreaPoiInfo.GetAreaPOISecondsLeft(arr[2]);
 									if timeLeft and timeLeft > 0 then
 										local mapID = arr[1];
-										local subMapObject = { mapID=mapID,g={},progress=0,total=0};
-										local cache = fieldCache["mapID"][mapID];
-										if cache then
-											for _,data in ipairs(cache) do
-												if data.mapID and data.icon then
-													subMapObject.icon = data.icon;
-													subMapObject.lvl = data.lvl;
-													subMapObject.description = data.description;
-													break;
-												end
-											end
-										end
+										local subMapObject = GetPopulatedMapObject(mapID);
 										local questObject = GetPopulatedQuestObject(questID);
 										
 										-- Custom time remaining based on the map POI since the quest itself does not indicate time remaining
@@ -13131,18 +13152,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							--print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID, timeRemaining);
 							--print(tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft);
 							if poi.mapID ~= mapID then
-								local subMapObject = { mapID=poi.mapID,g={},progress=0,total=0};
-								cache = fieldCache["mapID"][poi.mapID];
-								if cache then
-									for _,data in ipairs(cache) do
-										if data.mapID and data.icon then
-											subMapObject.icon = data.icon;
-											subMapObject.lvl = data.lvl;
-											subMapObject.description = data.description;
-											break;
-										end
-									end
-								end
+								local subMapObject = GetPopulatedMapObject(poi.mapID);
 								MergeObject(subMapObject.g, questObject);
 								MergeObject(mapObject.g, subMapObject);
 							else
@@ -13163,8 +13173,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								if not questLine.hidden then
 									local questObject = GetPopulatedQuestObject(questLine.questID);
 									MergeObject(mapObject.g, questObject);
-								else
-									print("hiddenQuestline:",questLine.questLineName);
 								end
 							end
 						else
@@ -13176,18 +13184,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						local mapChildInfos = C_Map.GetMapChildrenInfo(mapID, 3, false)
 						if mapChildInfos then
 							for i,mapInfo in ipairs(mapChildInfos) do
-								local subMapObject = { mapID=mapInfo.mapID,g={},progress=0,total=0};
-								cache = fieldCache["mapID"][mapInfo.mapID];
-								if cache then
-									for _,data in ipairs(cache) do
-										if data.mapID and data.icon then
-											subMapObject.icon = data.icon;
-											subMapObject.lvl = data.lvl;
-											subMapObject.description = data.description;
-											break;
-										end
-									end
-								end					
+								local subMapObject = GetPopulatedMapObject(mapInfo.mapID);
 								C_QuestLine.RequestQuestLinesForMap(mapInfo.mapID);
 								local questLines = C_QuestLine.GetAvailableQuestLines(mapInfo.mapID)
 								if questLines then
@@ -13196,8 +13193,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 										if not questLine.hidden then
 											local questObject = GetPopulatedQuestObject(questLine.questID);
 											MergeObject(subMapObject.g, questObject);
-										else
-											print("hiddenQuestline:",questLine.questLineName);
 										end
 									end
 								else
@@ -13212,25 +13207,13 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					
 					-- Merge everything for this map into the list
 					if #mapObject.g > 0 then
-						table.sort(mapObject.g, self.Sort);
 						MergeObject(temp, mapObject);
 					end
 				end
 				
 				-- Heroic Deeds
 				if not (CompletedQuests[32900] or CompletedQuests[32901]) then
-					local mapObject = { mapID=424,g={},progress=0,total=0};
-					local cache = fieldCache["mapID"][424];
-					if cache then
-						for _,data in ipairs(cache) do
-							if data.mapID and data.icon then
-								mapObject.icon = data.icon;
-								mapObject.lvl = data.lvl;
-								mapObject.description = data.description;
-								break;
-							end
-						end
-					end
+					local mapObject = GetPopulatedMapObject(424);
 					cache = fieldCache["questID"][app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901];
 					if cache then
 						for _,data in ipairs(cache) do
@@ -13294,7 +13277,8 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 														local parent = data.parent;
 														while parent do
 															if parent.instanceID then
-																questObject.icon = parent.icon;
+																-- this referenced questObject.icon, but that variable isn't part of the group finder section, so using header instead...
+																header.icon = parent.icon;
 																break;
 															end
 															parent = parent.parent;
@@ -13380,6 +13364,11 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					});
 				
 				for i,o in ipairs(temp) do
+					-- Sort the objects contained
+					if (o.g and #o.g > 1) then
+						-- print("Sorting",o.text);
+						table.sort(o.g, self.Sort);
+					end
 					UnsetNotCollectible(o);
 					MergeObject(self.rawData, o);
 				end
@@ -13389,34 +13378,70 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				if not no then self:Update(); end
 			end
 			self.Sort = function(a, b)
-				if a.isRaid then
-					if b.isRaid then
+				-- If either object doesn't exist
+				if not a then
+					if not b then
 						return false;
 					else
+						return false;
+					end
+				elseif not b then
+					return true;
+				end
+				-- Raids 1st
+				if a.isRaid then
+					if not b.isRaid then
 						return true;
 					end
+					-- both Raid, compare on text
+					return string.lower(a.text or "") < string.lower(b.text or "");
 				elseif b.isRaid then
 					return false;
 				end
+				-- Quests 2nd
 				if a.questID then
-					if b.questID then
-						return a.questID < b.questID;
-					else
+					if not b.questID then
 						return true;
 					end
+					-- both Quest, compare on text if their names have been populated
+					if a.text and b.text then
+						return string.lower(a.text or "") < string.lower(b.text or "");
+					else
+						return a.questID <= b.questID;
+					end
+				elseif b.questID then
+					return false;
 				end
+				-- Maps 3rd
 				if a.mapID then
-					if b.mapID then
-						if a.text and b.text then
-							return a.text < b.text;
-						else
-							return a.mapID < b.mapID;
-						end
-					else
+					if not b.mapID then
 						return true;
 					end
+					-- both Map, compare on text
+					return string.lower(a.text or "") < string.lower(b.text or "");
+				elseif b.mapID then
+					return false;
 				end
-				return false;
+				-- Level 4th
+				if a.lvl then
+					if not b.lvl then
+						return true;
+					end
+					-- both Level, compare on level
+					-- equal Level, compare on text
+					if (a.lvl == b.lvl) then
+						return string.lower(a.text or "") < string.lower(b.text or "");
+					end
+					return a.lvl <= b.lvl;
+				elseif b.lvl then
+					return false;
+				end
+				-- Anything else
+				if a.text and b.text then
+					return string.lower(a.text or "") < string.lower(b.text or "");
+				end
+				-- false here may cause 'invalid order function' error when no other conditions match
+				return a.key <= b.key;
 			end;
 		end
 		
@@ -13520,7 +13545,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 					info.coord = { px * 100, py * 100, mapID };
 				end
 				repeat
-					mapInfo = C_Map.GetMapInfo(mapID);
+					mapInfo = C_Map_GetMapInfo(mapID);
 					if mapInfo then
 						info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
 						mapID = mapInfo.parentMapID
@@ -13554,7 +13579,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 				local mapID = app.GetCurrentMapID();
 				if mapID then
 					repeat
-						mapInfo = C_Map.GetMapInfo(mapID);
+						mapInfo = C_Map_GetMapInfo(mapID);
 						if mapInfo then
 							info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
 							mapID = mapInfo.parentMapID
