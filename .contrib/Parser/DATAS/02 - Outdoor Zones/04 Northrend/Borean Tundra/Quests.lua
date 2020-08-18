@@ -254,7 +254,8 @@ _.Zones =
 					["requireSkill"] = TAILORING,
 				}),
 				q(13270, {	-- Cloth Scavenging (H)
-					["altQuests"] = { 
+					["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable
+					["altQuests"] = {
 						13269,	-- Cloth Scavenging (H, Howling Fjord)
 						13272,	-- Cloth Scavenging (Neutral)
 					},

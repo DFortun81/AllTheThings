@@ -276,6 +276,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(13268, {	-- Cloth Scavenging (A)
+					["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable
 					["altQuests"] = {
 						13265,	-- Cloth Scavenging (A, Borean Tundra)
 						13272,	-- Cloth Scavenging (Neutral)
