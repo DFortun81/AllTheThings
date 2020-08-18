@@ -7953,8 +7953,8 @@ UpdateGroup = function(parent, group)
 				elseif group.trackable then
 					-- If this group is trackable, then we should show it.
 					if app.ShowIncompleteThings(group) then
-						if not group.saved then
-							group.visible = true;
+						group.visible = not group.saved;
+						if group.visible then
 							-- Ensure that the parent does not hide a visible, incomplete thing (switched from 1 to true in group filtering so as to not overwrite based on the group filtering)
 							parent.visible = 1;
 						end
