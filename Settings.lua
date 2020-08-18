@@ -464,6 +464,7 @@ settings.UpdateMode = function(self)
 		app.SeasonalItemFilter = app.NoFilter;
 		app.UnobtainableItemFilter = app.NoFilter;
 		app.VisibilityFilter = app.NoFilter;
+		app.ShowIncompleteThings = app.NoFilter;
 		
 		app.AccountWideAchievements = true;
 		app.AccountWideBattlePets = true;
@@ -507,6 +508,11 @@ settings.UpdateMode = function(self)
 			app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
 		else
 			app.UnobtainableItemFilter = app.NoFilter;
+		end
+		if self:Get("Show:IncompleteThings") then
+			app.ShowIncompleteThings = app.FilterItemTrackable;
+		else
+			app.ShowIncompleteThings = app.Filter;
 		end
 		
 		app.AccountWideAchievements = self:Get("AccountWide:Achievements");
@@ -561,11 +567,6 @@ settings.UpdateMode = function(self)
 	else
 		app.CollectedItemVisibilityFilter = app.Filter;
 	end
-	if self:Get("Show:IncompleteThings") or self:Get("DebugMode") then
-		app.ShowIncompleteThings = app.FilterItemTrackable;
-	else
-		app.ShowIncompleteThings = app.Filter;
-	end
 	if self:Get("AccountWide:Achievements") then
 		app.AchievementFilter = 4;
 	else
@@ -575,8 +576,7 @@ settings.UpdateMode = function(self)
 		app.RecipeChecker = app.GetDataSubMember;
 	else
 		app.RecipeChecker = app.GetTempDataSubMember;
-	end
-	
+	end	
 	if self:Get("Filter:BoEs") then
 		app.ItemBindFilter = app.FilterItemBind;
 	else
@@ -588,7 +588,7 @@ settings.UpdateMode = function(self)
 		app.RequireBindingFilter = app.NoFilter;
 	end
 	app:UnregisterEvent("PLAYER_LEVEL_UP");
-	if self:Get("Filter:ByLevel") or self:Get("DebugMode") then
+	if self:Get("Filter:ByLevel") and not self:Get("DebugMode") then
 		app:RegisterEvent("PLAYER_LEVEL_UP");
 		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
 	else
