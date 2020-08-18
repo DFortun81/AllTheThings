@@ -57,6 +57,7 @@ i(141013);	-- Scroll of Town Portal: Shala'nir
 i(141655);	-- Shimmering Ancient Mana Cluster
 i(169856);	-- Spark-1351
 i(1187);	-- Spiked Collar
+i(168271);	-- Stolen Ramkahen Banner
 i(15723);	-- Tea with Sugar
 i(169860);	-- Tiny Dapper Hat
 i(143858);	-- Twilight Cultist Cowl
