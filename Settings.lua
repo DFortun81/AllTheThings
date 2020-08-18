@@ -561,7 +561,7 @@ settings.UpdateMode = function(self)
 	else
 		app.CollectedItemVisibilityFilter = app.Filter;
 	end
-	if self:Get("Show:IncompleteThings") then
+	if self:Get("Show:IncompleteThings") or self:Get("DebugMode") then
 		app.ShowIncompleteThings = app.FilterItemTrackable;
 	else
 		app.ShowIncompleteThings = app.Filter;
@@ -588,7 +588,7 @@ settings.UpdateMode = function(self)
 		app.RequireBindingFilter = app.NoFilter;
 	end
 	app:UnregisterEvent("PLAYER_LEVEL_UP");
-	if self:Get("Filter:ByLevel") then
+	if self:Get("Filter:ByLevel") or self:Get("DebugMode") then
 		app:RegisterEvent("PLAYER_LEVEL_UP");
 		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
 	else
