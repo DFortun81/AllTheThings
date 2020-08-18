@@ -1385,7 +1385,7 @@ function(self)
 	settings:UpdateMode();
 	app:RefreshData();
 end);
-ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
+ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
 ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", ShowCompletedGroupsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowIncompleteThingsCheckBox = settings:CreateCheckBox("Show Incomplete Things",
