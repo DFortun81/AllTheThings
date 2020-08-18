@@ -206,7 +206,9 @@ _.Zones =
 						["classes"] = TANKS,
 						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
 						["g"] = {
-							az(25, 3),	-- Aegis of the Deep (Rank 3)
+							az(25, 3, {	-- Aegis of the Deep
+								["classes"] = TANKS,
+							}),
 						},
 					}),
 					i(168928, {	-- Tablet of the Balancing Tides (Rank 1)
@@ -1087,7 +1089,9 @@ _.Zones =
 						["classes"] = TANKS,
 						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
 						["g"] = {
-							az(25, 3),	-- Aegis of the Deep (Rank 3)
+							az(25, 3, {	-- Aegis of the Deep
+								["classes"] = TANKS,
+							}),
 						},
 					}),
 					i(168928, {	-- Tablet of the Balancing Tides (Rank 1)

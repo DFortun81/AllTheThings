@@ -1470,7 +1470,9 @@ _.ExpansionFeatures =
 								["classes"] = TANKS,
 								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
 								["g"] = {
-									az(33, 3),	-- Touch of the Everlasting (Rank 3)
+									az(33, 3, {	-- Touch of the Everlasting (Rank 3)
+										["classes"] = TANKS,
+									}),
 								},
 							}),
 							i(174649, {	-- Rajani Warserpent

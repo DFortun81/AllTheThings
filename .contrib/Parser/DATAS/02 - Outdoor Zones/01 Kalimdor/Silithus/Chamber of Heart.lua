@@ -842,7 +842,9 @@ _.Zones =
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
 										["g"] = {
-											az(25, 3),	-- Aegis of the Deep
+											az(25, 3, {	-- Aegis of the Deep
+												["classes"] = TANKS,
+											}),
 										},
 									}),
 									i(168559, {	-- Fetish of the Hidden Labyrinths
@@ -1014,7 +1016,9 @@ _.Zones =
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
 										["g"] = {
-											az(33, 3),	-- Touch of the Everlasting
+											az(33, 3, {	-- Touch of the Everlasting
+												["classes"] = TANKS,
+											}),
 										},
 									}),
 									i(168938, {	-- Ward of Mutual Aid
@@ -1067,7 +1071,9 @@ _.Zones =
 										["classes"] = TANKS,
 										["cost"] = { { "c", 1719, 10 } },		-- 10x Corrupted Mementos
 										["g"] = {
-											az(34, 4),	-- Strength of the Warden (Rank 4)
+											az(34, 4, {	-- Strength of the Warden (Rank 4)
+												["classes"] = TANKS,
+											}),
 										},
 									}),
 									i(168940, {	-- Ward of Unimaginable Brilliance (Rank 4)
