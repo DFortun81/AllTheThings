@@ -554,36 +554,177 @@ _.Zones =
 					["sourceQuest"] = 58593,	-- End of the Dream
 					["lvl"] = 56,
 				}),				
-				
-				
-				
-				
-				
-				
+				q(58720, {	-- Missing!
+					["provider"] = { "n", 160894 },	-- Droman Aliothe
+					["coord"] = { 60.1, 53.8, 1565 },
+					["sourceQuests"] = {
+						58714,	-- The Forest Has Eyes
+						58719,	-- The Droman's Call
+					},
+					["lvl"] = 56,
+				}),	
+				q(60621, {	-- Enemies at the Gates
+					["provider"] = { "n", 162541 },	-- Hunt-Captain Korayn
+					["coord"] = { 55.9, 57.6, 1565 },
+					["sourceQuest"] = 58720,	-- Missing!
+					["lvl"] = 56,
+				}),
+				q(58869, {	-- Battle for Hibernal Hollow
+					["provider"] = { "n", 169541 },	-- Droman Aliothe
+					["coord"] = { 59.9, 53.1, 1565 },
+					["sourceQuest"] = 60621,	-- Enemies at the Gates
+					["lvl"] = 56,
+				}),
+				q(60661, {	-- Dying Dreams
+					["provider"] = { "n", 161847 },	-- Lady Moonberry
+					["coord"] = { 60.0, 53.0, 1565 },
+					["sourceQuest"] = 58869,	-- Battle for Hibernal Hollow
+					["lvl"] = 56,
+				}),
+				q(58721, {	-- Awaken the Dreamer
+					["provider"] = { "n", 169869 },	-- Lord Herne
+					["coord"] = { 47.9, 53.8, 1565 },
+					["sourceQuest"] = 60661,	-- Dying Dreams!
+					["lvl"] = 56,
+				}),
+				q(58723, {	-- The Court of Winter
+					["provider"] = { "n", 162968 },	-- Winter Queen
+					["coord"] = { 45.2, 63.0, 1565 },
+					["sourceQuest"] = 58721,	-- Awaken the Dreamer
+					["lvl"] = 56,
+					["g"] = {
+						i(175710),	-- Night Courtier's Ring
+					},
+				}),
+				q(58724, {	-- The Queen's Request
+					["provider"] = { "n", 161847 },	-- Winter Queen
+					["coord"] = { 48.9, 33.5, 1565 },
+					["sourceQuest"] = 58723,	-- The Court of Winter!
+					["lvl"] = 56,
+				}),
+			-- End of Zone Achievement Quests	
 				q(58265, {	-- Blooming Villains
 					["provider"] = { "n", 160929 },	-- Guardian Molan
 					["coord"] = { 60.6, 51.3, 1565 },
 					["sourceQuest"] = 58524,	-- Sparkles Rain from Above
 					["lvl"] = 56,
 				}),
-				
-				
 				q(57651, {	-- Trouble in the Banks
 					["provider"] = { "n", 158345 },	-- Lady of the Falls
 					["coord"] = { 51.1, 33.8, 1565 },
 					["sourceQuest"] = 60522,	-- Return to Tirna Vaal
 					["lvl"] = 55,
 				}),
+				q(59621, {	-- Breaking A Few Eggs
+					["provider"] = { "n", 158422 },	-- Foreman Thorodir
+					["coord"] = { 46.6, 29.4, 1565 },
+					["sourceQuest"] = 57651,	-- Trouble in the Banks
+					["lvl"] = 55,
+				}),
+				q(59622, {	-- Tending to the Tenders
+					["provider"] = { "n", 158422 },	-- Foreman Thorodir
+					["coord"] = { 46.6, 29.4, 1565 },
+					["sourceQuest"] = 57651,	-- Trouble in the Banks
+					["lvl"] = 55,
+				}),
+				q(57653, {	-- Unsafe Workplace
+					["provider"] = { "n", 158422 },	-- Foreman Thorodir
+					["coord"] = { 46.6, 29.4, 1565 },
+					["sourceQuests"] = {	
+						59621,	-- Breaking A Few Eggs
+						59622,	-- Tending to the Tenders
+					},
+					["lvl"] = 55,
+				}),
+				q(57656, {	-- Gifts of the Forest
+					["provider"] = { "n", 158489 },	-- Fluttercatch
+					["coord"] = { 48.0, 24.3, 1565 },
+					["lvl"] = 55,
+				}),
+				q(57657, {	-- Tied Totem Toter
+					["provider"] = { "n", 158489 },	-- Fluttercatch
+					["coord"] = { 48.0, 24.3, 1565 },
+					["sourceQuest"] = 57656,	-- Gifts of the Forest
+					["lvl"] = 55,
+				}),
+				q(59656, {	-- Well, Tell the Lady
+					["provider"] = { "n", 158422 },	-- Foreman Thorodir
+					["coord"] = { 46.6, 29.4, 1565 },
+					["sourceQuests"] = {
+						57653,	-- Unsafe Workplace
+						57657,	-- Tied Totem Toter
+					},
+					["lvl"] = 55,
+				}),
+				q(57865, {	-- Ages-Echoing Wisdom
+					["provider"] = { "n", 158489 },	-- Lady of the Falls
+					["coord"] = { 51.1, 33.8, 1565 },
+					["sourceQuest"] = 59656,	-- Well, Tell the Lady
+					["lvl"] = 55,
+				}),
+				q(57866, {	-- Idle Hands
+					["provider"] = { "n", 158489 },	-- Lady of the Falls
+					["coord"] = { 51.1, 33.8, 1565 },
+					["sourceQuest"] = 59656,	-- Well, Tell the Lady
+					["lvl"] = 55,
+				}),
+				q(57867, {	-- The Sweat of Our Brow
+					["provider"] = { "n", 160045 },	-- Helpful Faerie
+					["coord"] = { 53.8, 27.5, 1565 },
+					["lvl"] = 55,
+				}),
+				q(57869, {	-- Spirit-Gathering Labor
+					["provider"] = { "n", 159428 },	-- Groonoomcrooek
+					["coord"] = { 56.4, 29.2, 1565 },
+					["lvl"] = 55,
+				}),
+				q(57870, {	-- The Games We Play
+					["provider"] = { "n", 159465 },	-- Elder Gwenna
+					["coord"] = { 59.0, 24.3, 1565 },
+					["lvl"] = 55,
+				}),
+				q(57871, {	-- Outplayed
+					["provider"] = { "n", 159465 },	-- Elder Gwenna
+					["coord"] = { 59.0, 24.3, 1565 },
+					["sourceQuest"] = 57870,	-- The Games We Play
+					["lvl"] = 55,
+				}),
+				q(57868, {	-- Craftsman Needs No Tools
+					["provider"] = { "n", 159427 },	-- Elder Finnan
+					["coord"] = { 55.8, 23.4, 1565 },
+					["lvl"] = 55,
+				}),
 				
-				
-				
-				
-				
-				
-				
-				
-				
-				
+				q(57652, {	-- Supplies Needed: Amber Grease
+				--	["provider"] = { "o", ?? },	-- Muddy Scroll (?)								-- Need to add the ObjectID
+					["coord"] = { 46.9, 27.6, 1565 },
+					["lvl"] = 55,
+				}),
+				q(57655, {	-- Supplies Needed: Amber Grease
+				--	["provider"] = { "o", ?? },	-- Discarded Scroll (?)							-- Need to add the ObjectID
+					["coord"] = { 47.5, 26.2, 1565 },
+					["lvl"] = 55,
+				}),
+				q(59623, {	-- Well, Tell the Lady
+					["provider"] = { "n", 165382 },	-- Gormsmith Cavina
+					["coord"] = { 51.5, 34.0, 1565 },
+					["sourceQuests"] = {
+						57652,	-- Supplies Needed: Amber Grease
+						57655,	-- Supplies Needed: Amber Grease
+					},
+					["lvl"] = 55,
+					["g"] = {
+						i(178024),	-- Gormhusk Bludgeon
+						i(178021),	-- Culexwood Longbow
+						i(178022),	-- Culexwood Knife
+						i(178023),	-- Gormhusk Basher
+						i(178025),	-- Gormstinger Spear
+						i(178027),	-- Gormstinger Sword
+						i(178030),	-- Gormstinger Warglaive
+						i(180474),	-- Culexwood Dagger
+						i(180473),	-- Culexwood Spellmace
+					},
+				}),
 				q(58161, {	-- Forest Disappearances
 					["provider"] = { "n", 160440 },	-- Brigdin
 					["coord"] = { 64.4, 35.2, 1565 },

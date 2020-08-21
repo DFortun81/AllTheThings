@@ -216,6 +216,28 @@ _.Zones =
 					["sourceQuest"] = 59973,	-- A Bond Beyond Death
 					["lvl"] = 54,
 				}),
+			-- The Prince and the Tower (Prince Renathal) (Revendreth Storyline)
+				q(57690, {	-- Cages For All Occasions
+					["provider"] = { "n", 158649 },	-- Vorpalia
+					["coord"] = { 38.7, 28.3, 1543 },
+					["sourceQuest"] = 57689,	-- Prince Renathal
+					["lvl"] = 57,
+				}),
+				q(57691, {	-- A Royal Key
+					["provider"] = { "n", 158645 },	-- Prince Renathal
+					["coord"] = { 34.6, 18.6, 1543 },
+					["sourceQuest"] = 57690,	-- Cages For All Occasions
+					["lvl"] = 57,
+				}),
+				q(57693, {	-- Torghast, Tower of the Damned
+					["provider"] = { "n", 158645 },	-- Prince Renathal
+					["coord"] = { 34.6, 18.6, 1543 },
+					["sourceQuest"] = 57691,	-- A Royal Key
+					["lvl"] = 57,
+					["g"] = {
+						i(175731),	-- Stolen Maw Badge
+					},
+				}),
 			}),
 		}),
 	}),
