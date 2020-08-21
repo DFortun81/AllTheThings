@@ -6106,6 +6106,13 @@ end
 (function()
 local itemFields = {
 	["key"] = function(t) return "itemID"; end,
+	["achievementID"] = function(t)
+		local achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
+		if achievementID then
+			rawset(t, "achievementID", achievementID);
+			return achievementID;
+		end
+	end,
 	["b"] = function(t)
 		return 2;
 	end,
@@ -6120,6 +6127,7 @@ local itemFields = {
 			return 1;
 		end
 		cache = rawget(t, "factionID");
+		-- if the item is collectible because it's tied to a factionID
 		if cache then
 			if t.repeatable then
 				-- This is used by reputation tokens.
@@ -6207,6 +6215,16 @@ local itemFields = {
 		return rawget(t, "questID");
 	end,
 	["saved"] = function(t)
+		-- if the item is incompletable or saved because it's tied to an achievementID (i.e. having the achievement means the Item can no longer drop (Garrison Shipyard blueprints))
+		-- sometimes Account-wide things save the questID on the completed character, but flag an achievementID for the Account where
+		-- no other characters on the Account will ever receive that item drop again, but the questID is NOT flagged on all other characters on the Account
+		local achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
+		if achievementID then
+			local collectedViaAchievement = select(4, GetAchievementInfo(achievementID));
+			if collectedViaAchievement then
+				return collectedViaAchievement;
+			end
+		end
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
 	["specs"] = function(t)

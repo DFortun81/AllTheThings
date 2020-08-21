@@ -23,6 +23,7 @@ _.Zones =
 						i(127650), 	-- Belgork's Bastion 
 						i(126950, {	-- Equipment Blueprint: Bilge Pump
 							["questID"] = 38932,	-- Equipment Blueprint: Bilge Pump
+							["achievementID"] = 10372,	-- <DND> Player has learned Blige Pump
 						}),
 					},
 				}),
@@ -91,6 +92,7 @@ _.Zones =
 						i(127659),	-- Ghostly Iron Buccaneer's Hat Toy
 						i(128257, {	-- Equipment Blueprint: Ghostly Spyglass
 							["questID"] = 39365,	-- Equipment Blueprint: Ghostly Spyglass
+							["achievementID"] = 10375,	-- <DND> Player has learned Ghostly Spyglass
 						}),
 					},
 				}),
@@ -113,6 +115,7 @@ _.Zones =
 						i(127660),	-- Contained Flame
 						i(128255, {	-- Equipment Blueprint: Ice Cutter
 							["questID"] = 39363,	-- Equipment Blueprint: Ice Cutter
+							["achievementID"] = 10377,	-- <DND> Player has learned Ice Cutter
 						}),
 					},
 				}),
@@ -233,6 +236,7 @@ _.Zones =
 						i(127302),	-- Chemical Resistant Apron
 						i(128258, {	-- Equipment Blueprint: Felsmoke Launchers
 							["questID"] = 39366,	-- Equipment Blueprint: Felsmoke Launchers
+							["achievementID"] = 10373,	-- <DND> Player has learned Felsmoke
 						}),
 					},
 				}),
@@ -481,6 +485,7 @@ _.Zones =
 					["g"] = {
 						i(128231, {	-- Equipment Blueprint: Trained Shark Tank
 							["questID"] = 39355,	-- Equipment Blueprint: Trained Shark Tank
+							["achievementID"] = 10378,	-- <DND> Player has learned Trained Shark Tank
 						}),
 					},
 				}),
@@ -650,6 +655,7 @@ _.Zones =
 						i(127658),	-- Eye of the Beholder 
 						i(128232, {	-- Equipment Blueprint: High Intensity Fog Lights
 							["questID"] = 39356,	-- Equipment Blueprint: High Intensity Fog Lights
+							["achievementID"] = 10374,	-- <DND> Player has learned Fog Lights
 						}),
 					},
 				}),
@@ -677,6 +683,7 @@ _.Zones =
 						i(127308),	-- Zoug's Lifting Belt
 						i(128252, {	-- Equipment Blueprint: True Iron Rudder
 							["questID"] = 39360,	-- Equipment Blueprint: True Iron Rudder
+							["achievementID"] = 10379,	-- <DND> Player has learned True Iron Rudder
 						}),
 					},
 				}),

@@ -111,6 +111,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						cr(90284, e(1425, {	-- Iron Reaver
 							i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 								["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
+								["achievementID"] = 10376,	-- <DND> Player has learned Gyroscopic Internal Stabilizer
 							}),
 							i(128094),	-- Spiked Torque Wrench
 							i(128118),	-- Demonhorn Buckler
@@ -410,6 +411,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(90284, e(1425, {	-- Iron Reaver
 					i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 						["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
+						["achievementID"] = 10376,	-- <DND> Player has learned Gyroscopic Internal Stabilizer
 					}),
 					i(124373),	-- Iron Skullcrusher
 					i(124354),	-- Felforged Aegis
@@ -821,6 +823,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(90284, e(1425, {	-- Iron Reaver
 					i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 						["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
+						["achievementID"] = 10376,	-- <DND> Player has learned Gyroscopic Internal Stabilizer
 					}),
 					i(124373),	-- Iron Skullcrusher
 					i(124354),	-- Felforged Aegis
@@ -1229,6 +1232,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(90284, e(1425, {	-- Iron Reaver
 					i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 						["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
+						["achievementID"] = 10376,	-- <DND> Player has learned Gyroscopic Internal Stabilizer
 					}),
 					i(124373),	-- Iron Skullcrusher
 					i(124354),	-- Felforged Aegis
