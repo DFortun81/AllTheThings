@@ -183,7 +183,7 @@ _.Zones =
 					["provider"] = { "n", 10665 },	-- Junior Apothecary Holland
 					["coord"] = { 60.1, 52.6, 18 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 27980 },	-- The Scarlet Palisade
+					["sourceQuests"] = { 24980 },	-- The Scarlet Palisade
 				}),
 				q(354,   {	-- Deaths in the Family
 					["u"] = REMOVED_FROM_GAME,
@@ -231,7 +231,7 @@ _.Zones =
 				q(24992, {	-- Escaped From Gilneas
 					["races"] = HORDE_ONLY,
 					["description"] = "Quest is granted by getting a Cursed Darkhound to low health and letting it cast Leaping Bite on you during or after completing |cFFFFD700Darkhound Pounding|r.",
-					["sourceQuests"] = { 27980 },	-- The Scarlet Palisade
+					["sourceQuests"] = { 24980 },	-- The Scarlet Palisade
 				}),
 				q(24974, {	-- Ever So Lonely
 					["provider"] = { "n", 38925 },	-- Sidrick Calston
@@ -331,7 +331,7 @@ _.Zones =
 					["coord"] = { 61.9, 52.0, 18 },
 					["races"] = HORDE_ONLY,
 					["description"] = "Available if you abandon |cFFFFD700Escaped From Gilneas|r.",
-					["sourceQuests"] = { 27980 },	-- The Scarlet Palisade
+					["sourceQuests"] = { 24980 },	-- The Scarlet Palisade
 				}),
 				q(25031, {	-- Head for the Mills
 					["provider"] = { "n", 38977 },	-- Apothecary Jerrod
