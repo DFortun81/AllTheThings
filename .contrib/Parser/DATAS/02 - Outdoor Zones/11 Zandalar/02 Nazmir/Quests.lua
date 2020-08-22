@@ -469,7 +469,7 @@ _.Zones =
 				
 				q(48492, {	-- Getting a Leg Up
 					["sourceQuests"] = { 49477 },	-- Surprise Backup
-					["provider"] = { "n", 126346 },	-- Chadwick Paxton
+					["provider"] = { "n", 126289 },	-- Chadwick Paxton (with no legs)
 					["coord"] = { 28.6, 43.8, 863 },
 					["races"] = HORDE_ONLY,
 				}),

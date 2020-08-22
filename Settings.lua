@@ -464,6 +464,7 @@ settings.UpdateMode = function(self)
 		app.SeasonalItemFilter = app.NoFilter;
 		app.UnobtainableItemFilter = app.NoFilter;
 		app.VisibilityFilter = app.NoFilter;
+		app.ShowIncompleteThings = app.NoFilter;
 		
 		app.AccountWideAchievements = true;
 		app.AccountWideBattlePets = true;
@@ -507,6 +508,11 @@ settings.UpdateMode = function(self)
 			app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
 		else
 			app.UnobtainableItemFilter = app.NoFilter;
+		end
+		if self:Get("Show:IncompleteThings") then
+			app.ShowIncompleteThings = app.FilterItemTrackable;
+		else
+			app.ShowIncompleteThings = app.Filter;
 		end
 		
 		app.AccountWideAchievements = self:Get("AccountWide:Achievements");
@@ -561,11 +567,6 @@ settings.UpdateMode = function(self)
 	else
 		app.CollectedItemVisibilityFilter = app.Filter;
 	end
-	if self:Get("Show:IncompleteThings") then
-		app.ShowIncompleteThings = app.FilterItemTrackable;
-	else
-		app.ShowIncompleteThings = app.Filter;
-	end
 	if self:Get("AccountWide:Achievements") then
 		app.AchievementFilter = 4;
 	else
@@ -575,8 +576,7 @@ settings.UpdateMode = function(self)
 		app.RecipeChecker = app.GetDataSubMember;
 	else
 		app.RecipeChecker = app.GetTempDataSubMember;
-	end
-	
+	end	
 	if self:Get("Filter:BoEs") then
 		app.ItemBindFilter = app.FilterItemBind;
 	else
@@ -588,7 +588,7 @@ settings.UpdateMode = function(self)
 		app.RequireBindingFilter = app.NoFilter;
 	end
 	app:UnregisterEvent("PLAYER_LEVEL_UP");
-	if self:Get("Filter:ByLevel") then
+	if self:Get("Filter:ByLevel") and not self:Get("DebugMode") then
 		app:RegisterEvent("PLAYER_LEVEL_UP");
 		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
 	else
@@ -1385,7 +1385,7 @@ function(self)
 	settings:UpdateMode();
 	app:RefreshData();
 end);
-ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
+ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
 ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", ShowCompletedGroupsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowIncompleteThingsCheckBox = settings:CreateCheckBox("Show Incomplete Things",
