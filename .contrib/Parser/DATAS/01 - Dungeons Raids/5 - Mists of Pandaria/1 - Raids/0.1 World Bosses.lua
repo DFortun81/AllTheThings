@@ -38,6 +38,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(95970),	-- Abandoned Zandalari Silentbelt
 						i(95973),	-- Abandoned Zandalari Waterchain
 						i(95979),	-- Columnbreaker Stompers [Crieve got November 24, 2018 on stream]
+						i(95966),	-- Deeproot Treads
 						i(94295),	-- Primal Egg
 						i(44984),	-- Ammen Vale Lashling
 						i(54436),	-- Blue Clockwork Rocket Bot
