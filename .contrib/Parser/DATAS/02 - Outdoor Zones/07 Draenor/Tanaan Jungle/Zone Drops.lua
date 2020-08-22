@@ -7,7 +7,6 @@ _.Zones =
 		m(534, {	-- Tanaan Jungle
 			n(ZONEDROPS, {
 				["g"] = {
-					--[[-- these Equipment Blueprint items are already sourced on their specific drop locations in the Zone and HFC
 					i(126950, {	-- Equipment Blueprint: Bilge Pump
 						["questID"] = 38932,	-- Equipment Blueprint: Bilge Pump
 					}),
@@ -28,7 +27,7 @@ _.Zones =
 					}),
 					i(128252, {	-- Equipment Blueprint: True Iron Rudder
 						["questID"] = 39360,	-- Equipment Blueprint: True Iron Rudder
-					}), --]]
+					}),
 					i(128225),	-- Empowered Apexis Fragment
 					i(124562, {	-- Baleful Armament	
 						["crs"] = { 96130 },	-- Ravenspeaker Thelnaas <Order of the Awakened>
