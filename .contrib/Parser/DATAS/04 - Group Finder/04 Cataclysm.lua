@@ -25,7 +25,7 @@ _.GroupFinder =
 				i(113703),	-- Sparkmail Bracers
 				i(113699),	-- Sparkmail Headguard
 				i(113697),	-- Sparkmail Helm
-				i(113775),	-- Sparkmail Sabatons
+				i(113775),	-- Sparkmail Sabatons			— Confirmed by Shorty on Discord on August 20, 2020
 				i(113704),	-- Sparkmail Wristguards
 				i(113711),	-- Sparkmail Legguards*
 				i(113713),	-- Emberspark Chestplate*
