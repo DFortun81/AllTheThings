@@ -28,7 +28,7 @@ _.GroupFinder =
 				i(113753),	-- Venomtail Shoulderguards *
 				i(113741),	-- Venomtail Chestguard*
 				i(113747),	-- Venomtail Gauntlets*
-				i(113779),	-- Venomtail Girdle*
+				i(113779),	-- Venomtail Girdle			— Confirmed by Shorty on Discord on August 23, 2020
 				i(113778),	-- Venomtail Belt*
 				i(113777),	-- Venomtail Boots
 				i(113776),	-- Venomtail Treads
