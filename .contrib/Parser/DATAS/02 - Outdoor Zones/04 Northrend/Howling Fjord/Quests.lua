@@ -1427,7 +1427,10 @@ _.Zones =
 					["coord"] = { 60.1, 61.0, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23548 },	-- Beltrand McSorf
-					["sourceQuest"] = 11278,	-- Return to Valgarde
+					["sourceQuests"] = {
+						11278,	-- Return to Valgarde
+						11478,	-- Outpost Over Yonder...
+					},
 				}),
 				q(11314, {	-- The Fallen Sisters
 					["provider"] = { "n", 24117 },	-- Lurielle
@@ -1699,10 +1702,7 @@ _.Zones =
 					["coord"] = { 75.0, 65.5, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24807 },	-- Walt
-					["sourceQuests"] = {
-						11478,	-- Outpost Over Yonder...
-						11474,	-- Problems on the High Bluff
-					},
+					["sourceQuest"] = 11474,	-- Problems on the High Bluff
 				}),
 				q(11245, {	-- Towers of Certain Doom (A)
 					["coord"] = { 44.8, 31.4, 117 },
