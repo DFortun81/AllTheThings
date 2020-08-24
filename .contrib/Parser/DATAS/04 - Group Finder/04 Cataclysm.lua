@@ -15,6 +15,7 @@ _.GroupFinder =
 				i(113761),	-- Smoldercloth Leggings*
 				i(113762),	-- Smoldercloth Robe*
 				i(113786),	-- Smoldercloth Slippers*
+				i(113727),	-- Smoldering Slagstone Ring	— Confirmed by milotic on GitHub on August 24, 2020
 				i(113769),	-- Ravaged Leather Boots*
 				i(113705),	-- Ravaged Leather Bracers*
 				i(113698),	-- Ravaged Leather Cap*
@@ -30,9 +31,9 @@ _.GroupFinder =
 				i(113711),	-- Sparkmail Legguards*
 				i(113713),	-- Emberspark Chestplate*
 				i(113780),	-- Emberspark Plate Boots
-				i(113701),	-- Emberspark Plate Bracers*	— confirmed by Carbion on discord on April 20, 2020 (blaze it)
+				i(113701),	-- Emberspark Plate Bracers*	— confirmed by Carbion on Discord on April 20, 2020 (blaze it)
 				i(113696),	-- Emberspark Plate Headguard
-				i(113695),	-- Emberspark Plate Helm*		— confirmed by Carbion on discord on April 21, 2020
+				i(113695),	-- Emberspark Plate Helm*		— confirmed by Carbion on Discord on April 21, 2020
 				i(113707),	-- Emberspark Plate Leggings*
 				i(113781),	-- Emberspark Plate Sabatons*
 				i(113702),	-- Emberspark Plate Wristguards

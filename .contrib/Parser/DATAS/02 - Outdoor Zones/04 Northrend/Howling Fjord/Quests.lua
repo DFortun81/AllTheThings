@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --         Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, {	-- Northrend
@@ -1598,8 +1599,8 @@ _.Zones =
 				q(11288, {	-- The Shining Light
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24189 },	-- Ares the Oathbound
-					["description"] = "Inside the |cFFFFD700Utgarde Catacombs|r.",
-					["sourceQuest"] = 11420,	-- The Path to Payback
+					["description"] = "Inside the |cFFFFD700Utgarde Catacombs|r. You need to pick up |cFFFFD700The Path to Payback|r first to see this quest.",
+					["sourceQuest"] = 11244,	-- Rescuing the Rescuers
 					["coords"] = {
 						{ 56.6, 49.5, 117 },	-- Catacombs entrance
 						{ 59.3, 55.4, 117 },	-- NPC
