@@ -813,7 +813,11 @@ _.Zones =
 						i(175719),	-- Agitha's Void-Tinged Speartip
 					},
 				}),
-				
+				q(62170, {	-- You'll Never Walk Alone
+					["provider"] = { "i", 182693 },	-- Lost Disciple's Notes
+					["coord"] = { 59.3, 60.9, 1533 },
+					["lvl"] = 51,
+				}),
 				
 				
 				

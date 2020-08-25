@@ -35,6 +35,19 @@ _.Achievements =
 						crit(8),		-- Tour of Duty: Tiragarde Sound [A] / [H]
 						crit(9),		-- Tour of Duty: Zuldazar [A] / [H]
 					}),
+					ach(14520, {	-- Deathbringer
+						title(424),	-- Deathbringer <Name>
+						ach(14519),	-- Covenant Combat
+						ach(14518, {	-- The Many Trials of Zo'Sorg
+							ach(14517),	-- First Trial, First Try
+						}),
+						ach(14516),	-- Impressing Zo'Sorg
+						ach(14514),	-- Tour of Duty: Bastion
+						ach(14513),	-- Tour of Duty: Maldraxxus
+						ach(14512),	-- Tour of Duty: Revendreth
+						ach(14511),	-- Tour of Duty: Ardenweald
+						
+					}),
 					ach(12863, {	-- Dueling Master
 						i(163055),		-- Dueler's Tabard
 						ach(12860),		-- Contender
@@ -81,13 +94,13 @@ _.Achievements =
 						crit(11),		-- Warlock
 						crit(12),		-- Warrior
 					}),
-					ach(12579),		-- Tour of Duty: Drustvar
-					ach(12574),		-- Tour of Duty: Nazmir
-					ach(12578),		-- Tour of Duty: Stormsong Valley
-					ach(12577),		-- Tour of Duty: Tiragarde Sound
-					ach(12576),		-- Tour of Duty: Vol'dun
-					ach(12575),		-- Tour of Duty: Zuldazar
-					ach(12572),		-- War Supplied
+					ach(12579),	-- Tour of Duty: Drustvar
+					ach(12574),	-- Tour of Duty: Nazmir
+					ach(12578),	-- Tour of Duty: Stormsong Valley
+					ach(12577),	-- Tour of Duty: Tiragarde Sound
+					ach(12576),	-- Tour of Duty: Vol'dun
+					ach(12575),	-- Tour of Duty: Zuldazar
+					ach(12572),	-- War Supplied
 				},
 			}),
 		},

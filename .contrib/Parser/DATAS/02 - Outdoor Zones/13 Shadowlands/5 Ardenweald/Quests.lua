@@ -602,7 +602,203 @@ _.Zones =
 					["sourceQuest"] = 58723,	-- The Court of Winter!
 					["lvl"] = 56,
 				}),
-			-- End of Zone Achievement Quests	
+		-- End of Zone Achievement Quests
+		-- Start of the Covernant Quests
+			-- For Queen and Grove!
+				q(61479, {	-- The Boon of Shapes
+					["provider"] = { "n", 172431 },	-- Lady Moonberry
+					["coord"] = { 39.7, 60.8, 1565 },
+					["sourceQuest"] = 61475,	-- The Heart of the Forest
+					["lvl"] = 60,
+				}),
+				q(61541, {	-- The Forge of Bonds
+					["provider"] = { "n", 172431 },	-- Lady Moonberry
+					["coord"] = { 49.2, 39.9, 1565 },
+					["sourceQuest"] = 61475,	-- The Heart of the Forest
+					["lvl"] = 60,
+				}),
+				q(61542, {	-- The Boon of Binding
+					["provider"] = { "n", 158553 },	-- Flutterby
+					["coord"] = { 33.9, 43.4, 1565 },
+					["sourceQuest"] = 61541,	-- The Forge of Bonds
+					["lvl"] = 60,
+				}),
+				q(61550, {	-- Strengthening the Bond
+					["provider"] = { "n", 172677 },	-- Niya
+					["coord"] = { 33.4, 45.2, 1565 },
+					["sourceQuest"] = 61542,	-- The Boon of Binding
+					["lvl"] = 60,
+				}),
+				q(61552, {	-- The Hunt Watches
+					["provider"] = { "n", 172677 },	-- Niya
+					["coord"] = { 33.4, 45.2, 1565 },
+					["sourceQuest"] = 61550,	-- Strengthening the Bond
+					["lvl"] = 60,
+				}),
+				q(61553, {	-- Know Where to Strike
+					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+					["coord"] = { 44.6, 56.2, 1565 },
+					["sourceQuest"] = 61552,	-- The Hunt Watches
+					["lvl"] = 60,
+				}),
+				q(61554, {	-- The Play's The Thing
+					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+					["coord"] = { 44.6, 56.2, 1565 },
+					["sourceQuest"] = 61553,	-- Know Where to Strike
+					["lvl"] = 60,
+				}),
+				q(58104, {	-- Show, Don't Tell
+					["provider"] = { "n", 161509 },	-- Lady Moonberry
+					["coord"] = { 44.9, 35.7, 1565 },
+					["sourceQuest"] = 61554,	-- The Play's The Thing
+					["lvl"] = 60,
+				}),
+				q(58157, {	-- Break a Leg
+					["provider"] = { "n", 160484 },	-- Featherlight
+					["coord"] = { 40.7, 42.7, 1565 },
+					["sourceQuest"] = 58104,	-- Show, Don't Tell
+					["lvl"] = 60,
+				}),
+				q(58158, {	-- The Fourth Wall, er, War
+					["provider"] = { "n", 160484 },	-- Featherlight
+					["coord"] = { 40.7, 42.7, 1565 },
+					["sourceQuest"] = 58157,	-- Break a Leg
+					["lvl"] = 60,
+				}),
+				q(58159, {	-- What's My Motivation?
+					["provider"] = { "n", 160484 },	-- Featherlight
+					["coord"] = { 40.7, 42.7, 1565 },
+					["sourceQuest"] = 58158,	-- The Fourth Wall, er, War
+					["lvl"] = 60,
+					["g"] = {
+						i(180263),	-- Dreamlight Runedeer
+					},
+				}),
+				q(58160, {	-- For Queen and Grove!
+					["provider"] = { "n", 160500 },	-- Ysera
+					["coord"] = { 42.4, 45.2, 1565 },
+					["sourceQuest"] = 58159,	-- What's My Motivation?
+					["lvl"] = 60,
+					["g"] = {
+						spell(338946),	-- World Quests
+					},
+				}),
+			-- Return to the Maw
+				q(60233, {	-- Souls of the Damned
+					["provider"] = { "n", 158553 },	-- Flutterby
+					["coord"] = { 33.9, 43.5, 1565 },
+					["sourceQuest"] = 58160,	-- For Queen and Grove!
+					["lvl"] = 60,
+				}),
+				
+				q(62624, {	-- The Queen's Conservatory
+					["provider"] = { "n", 173171 },	-- Conservator Saola
+					["coord"] = { 53.2, 43.5, 1565 },
+					["sourceQuest"] = 58160,	-- For Queen and Grove!
+					["lvl"] = 60,
+				}),
+				
+				
+				
+			-- Dailys
+				q(61984, {	-- Replenish the Reservoir
+					["provider"] = { "n", 158553 },	-- Flutterby
+					["coord"] = { 33.9, 43.5, 1565 },
+					["sourceQuest"] = 58160,	-- For Queen and Grove!
+					["isDaily"] = true,
+					["lvl"] = 60,
+				}),
+				q(61331, {	-- Return Lost Souls
+					["provider"] = { "n", 158553 },	-- Flutterby
+					["coord"] = { 33.9, 43.5, 1565 },
+					["sourceQuest"] = 58160,	-- For Queen and Grove!
+					["isDaily"] = true,
+					["lvl"] = 60,
+				}),
+				
+			-- Calling Quest
+				-- These can be done when you finish the Quest "For Queen and Grove!" and unlock the World Quests
+				q(60462, {	-- Anima Appeal
+					["provider"] = { "n", 167196 },	-- Sesselie
+					["coord"] = { 48.9, 39.3, 1565 },
+					["repeatable"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(181475),	-- Tribute of the Grove Wardens
+					},
+				}),
+				q(60418, {	-- A Call to Bastion
+					["provider"] = { "n", 167193 },	-- Featherlight
+					["coord"] = { 59.7, 31.3, 1565 },
+					["repeatable"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(181475),	-- Tribute of the Grove Wardens
+					},
+				}),
+				q(60421, {	-- A Call to Revendreth
+					["provider"] = { "n", 167193 },	-- Featherlight
+					["coord"] = { 59.7, 31.3, 1565 },
+					["repeatable"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(181475),	-- Tribute of the Grove Wardens
+					},
+				}),
+				q(60373, {	-- A Source of Sorrowvine
+					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
+					["coord"] = { 16.5, 52.4, 1565 },
+					["repeatable"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(181475),	-- Tribute of the Grove Wardens
+					},
+				}),
+				q(60388, {	-- Training Our Forces
+					["provider"] = { "n", 158544 },	-- Lord Herne
+					["coord"] = { 40.9, 72.4, 1565 },
+					["repeatable"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(181475),	-- Tribute of the Grove Wardens
+					},
+				}),
+				q(60364, {	-- Gildenite Grab
+					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
+					["coord"] = { 16.5, 52.4, 1565 },
+					["repeatable"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(181475),	-- Tribute of the Grove Wardens
+					},
+				}),
+				q(60384, {	-- Aiding Bastion
+					["provider"] = { "n", 167195 },	-- Blodwyn
+					["coord"] = { 46.4, 50.6, 1565 },
+					["repeatable"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(181475),	-- Tribute of the Grove Wardens
+					},
+				}),
+			-- Covernant progress
+				q(61852, {	-- Adventurer: Guardian Kota (Rank 2)
+					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+					["coord"] = { 29.6, 81.6, 1565 },
+					["g"] = {
+						follower(338543),	-- Follower: Guardian Kota
+					},
+				}),
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 				q(58265, {	-- Blooming Villains
 					["provider"] = { "n", 160929 },	-- Guardian Molan
 					["coord"] = { 60.6, 51.3, 1565 },
@@ -786,7 +982,7 @@ _.Zones =
 						i(175652),	-- Grove Warden's Warboots
 					},
 				}),
-				-- Bonus Objective			
+				-- Bonus Objective´
 				q(60840, {	-- Wild Hunt Offensive
 					["lvl"] = 56,
 				}),

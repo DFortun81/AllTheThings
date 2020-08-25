@@ -9,8 +9,8 @@ _.Zones =
 			m(1656, {	-- Torghast
 				["maps"] = {
 					1656,	-- Floor 10
-					1751,	-- Floor 14
-					1752,	-- Floor 16
+					1751,	-- Floor 13
+					1752,	-- Floor 14
 					1753,	-- Floor 18
 				},
 			}),

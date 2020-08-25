@@ -78,6 +78,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2414, {	-- Oryphrion
 						["crs"] = { 162060 },	-- Oryphrion
 						["g"] = {
+							ach(14331),	-- Goliath Offline
 						},
 					}),	
 					e(2412, {	-- 	Devos, Paragon of Doubt

@@ -282,3 +282,9 @@ i(174754, 316276);	-- Wastewander Skyterror
 i(174770, 316340);	-- Wicked Swarmer
 i(174861, 316343);	-- Wriggling Parasite
 i(174840, 316723);	-- Xinlao
+
+-----------------
+-- PATCH 9.0.1 --
+-----------------
+i(180263, 312759);	-- Dreamlight Runedeer
+i(182596, 332903);	-- Nathria Rampart Screecher

@@ -5,9 +5,9 @@
 _.Zones =
 {
 	m(1550, {	-- Shadowlands
-		m(1525, {	-- Ardenweald
+		m(1525, {	-- Revendreth
 			n(ACHIEVEMENTS, {
-				ach(13878, {	-- The Master of Revendret
+				ach(13878, {	-- The Master of Revendreth
 					crit(1, {	-- Welcome to Revendreth
 						["sourceQuest"] = 56978,	-- To Darkhaven
 					}),

@@ -948,6 +948,12 @@ app.L = {
 		[-10080] = "Interface\\Icons\\trade_alchemy_potiond2",						-- Horrific Visions
 		[-10081] = "Interface\\Icons\\spell_shadow_shadowmend",						-- Corrupted Area (Vision Scenario)
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
+		
+		[-10100] = "Interface\\Icons\\Paladin_Protection",							-- Shadowlands
+		[-10101] = "Interface\\Icons\\Paladin_Protection",							-- Shadowlands Dungeon
+		[-10102] = "Interface\\Icons\\Paladin_Protection",							-- Shadowlands Raid
+		[-10103] = "Interface\\Icons\\Paladin_Protection",							-- The Maw and Torghast
+		[-10104] = "Interface\\Icons\\Paladin_Protection",							-- Covenant Sanctums
 
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1856,6 +1862,12 @@ app.L = {
 		[-10080] = "Horrific Visions",
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
+		
+		[-10100] = select(1,GetCategoryInfo(15422)),	-- Shadowlands
+		[-10101] = select(1,GetCategoryInfo(15428)),	-- Shadowlands Dungeon
+		[-10102] = select(1,GetCategoryInfo(15438)),	-- Shadowlands Raids
+		[-10103] = select(1,GetCategoryInfo(15440)),	-- The Maw and Torghast
+		[-10104] = select(1,GetCategoryInfo(15441)),	-- Covenant Sanctums
 	},
 
 	["OBJECT_ID_ICONS"] = {

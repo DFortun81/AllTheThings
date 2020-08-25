@@ -11,6 +11,7 @@ _.Zones =
 			["maps"] = {
 				1701,	-- Heart of the Forest
 				1702,	-- Heart of the Forest
+				1703,	-- Heart of the Forest
 			},
 		}),
 	}),
