@@ -1770,6 +1770,8 @@ _.NeverImplemented =
 		q(57703),	-- /
 		q(56113),	-- triggered after Honeyback Harvester event that got to round 23 or 24
 		q(57700),	-- triggered after Honeyback Harvester event that got to round 23 or 24
+		q(56114),	-- triggered after Honeyback Harvester event that completed round 29
+		q(57699),	-- triggered after Honeyback Harvester event that completed round 29
 		--	58013 ALSO triggered after my first time killing Honey Smasher, but that also popped for me while doing the Alliance war campaign "This Ain't Mine."  so wtf lol
 		q(56171),	-- not sure -- i had just done a Honeyback Harvester event and Gurg the Hivethief spawned but ran away because there wasn't enough DPS to kill him.  looted the jelly after the event, then ran to turn in since i was closeby.  fed the bee ~13 - 14 Thin Jelly (brought me to 1700 Friendly) and ran out of the cave and saw this and 57701 pop in chat.
 		q(57701),	-- same as above
