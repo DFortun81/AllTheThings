@@ -1812,9 +1812,8 @@ _.Zones =
 					["provider"] = { "n", 134098 },	-- Torka
 					["sourceQuests"] = { 51772 },	-- The Tortaka Tribe
 				}),
-				q(51165, {	-- WANTED: Sandscout Vesarik -- aa
+				q(51165, {	-- WANTED: Sandscout Vesarik
 					["coord"] = { 26.9, 52.7, 864 },	-- Terrace of the Devoted
-					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 287441 },	-- Wanted: Sandscout Vesarik
 				}),
 				q(47576, {	-- Wrath of the Tiger
