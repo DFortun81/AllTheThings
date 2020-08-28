@@ -302,15 +302,31 @@ _.Zones =
 					["sourceQuests"] = { 51773 },	-- The Ashvane Threat
 					["provider"] = { "n", 124468 },	-- Randall Redmond
 					["coord"] = { 45.6, 82.3, 864 },
-					["g"] = {
-						i(161168),	-- Scorching Sands Grasps
-						i(161169),	-- Exiled Veteran's Grasps
-						i(161170),	-- Lastwind Grasps
-						i(161171),	-- Resilient Outcast's Grasps
-						i(160000),	-- Exiled Veteran's Waistguard
-						i(160001),	-- Lastwind Cinch
-						i(160002),	-- Scorching Sands Waistband
-						i(160003),	-- Resilient Outcast's Girdle
+					["g"] = {	-- quest is neutral, but rewards are horde-only
+						i(161168, {	-- Scorching Sands Grasps
+							["races"] = HORDE_ONLY,
+						}),
+						i(161169, {	-- Exiled Veteran's Grasps
+							["races"] = HORDE_ONLY,
+						}),
+						i(161170, {	-- Lastwind Grasps
+							["races"] = HORDE_ONLY,
+						}),
+						i(161171, {	-- Resilient Outcast's Grasps
+							["races"] = HORDE_ONLY,
+						}),
+						i(160000, {	-- Exiled Veteran's Waistguard
+							["races"] = HORDE_ONLY,
+						}),
+						i(160001, {	-- Lastwind Cinch
+							["races"] = HORDE_ONLY,
+						}),
+						i(160002, {	-- Scorching Sands Waistband
+							["races"] = HORDE_ONLY,
+						}),
+						i(160003, {	-- Resilient Outcast's Girdle
+							["races"] = HORDE_ONLY,
+						}),
 					},
 				}),
 
