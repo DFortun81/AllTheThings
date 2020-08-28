@@ -230,7 +230,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 124468 },	-- Randall Redmond
 					["coord"] = { 44.6, 86.9, 864 },
-					["races"] = HORDE_ONLY,
 				}),
 
 
@@ -303,7 +302,6 @@ _.Zones =
 					["sourceQuests"] = { 51773 },	-- The Ashvane Threat
 					["provider"] = { "n", 124468 },	-- Randall Redmond
 					["coord"] = { 45.6, 82.3, 864 },
-					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(161168),	-- Scorching Sands Grasps
 						i(161169),	-- Exiled Veteran's Grasps
@@ -960,7 +958,6 @@ _.Zones =
 					["sourceQuests"] = { 51773 },	-- The Ashvane Threat
 					["provider"] = { "n", 124468 },	-- Randall Redmond
 					["coord"] = { 45.6, 82.3, 864 },
-					["races"] = HORDE_ONLY,
 				}),
 
 
