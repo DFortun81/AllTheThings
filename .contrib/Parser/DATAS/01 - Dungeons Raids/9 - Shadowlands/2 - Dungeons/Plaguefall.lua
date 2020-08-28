@@ -31,22 +31,48 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2419, {	-- Globgrog
 					["crs"] = { 164255 },	-- Globgrog
 					["g"] = {
+						i(178753),	-- Surgical Pustule Extractor
+						i(178756),	-- Stradama's Misplaced Slippers
+						i(178760),	-- Disgested Interrogator's Gaze
+						i(178762),	-- Blightborne Chain Legguards
+						i(178773),	-- Plague Handler's Greathelm
+						i(178770),	-- Slimy Consumptive Organ
 					},
 				}),
 				e(2403, {	-- Doctor Ickus
 					["crs"] = { 164967 },	-- Doctor Ickus
 					["g"] = {
+						i(178752),	-- Sophisticated Bonecracker
+						i(178759),	-- Depraved Physician's Mask
+						i(178763),	-- Malodorous Gristle-Sown Spaulders
+						i(178767),	-- Tortured Assistant's Bindings
+						i(178775),	-- Fleshfused Crushers
+						i(178771),	-- Phial of Putrefaction
 					},
 				}),
 				e(2423, {	-- Domina Venomblade
 					["crs"] = { 164266 },	-- Domina Venomblade
 					["g"] = {
+						i(178929),	-- Halberd of the Aranakk
+						i(178928),	-- Domina's Oozing Shiv
+						i(178930),	-- Mitts of Flawless Duplication
+						i(178934),	-- Fastened Venombarb Binds
+						i(178932),	-- Belt of Wretched Manipulations
+						i(178931),	-- Scarred Bloodbound Girdle
+						i(178933),	-- Arachnid Cipher Ring
 					},
 				}),	
 				e(2404, {	-- Margrave Stradama
 					["crs"] = { 164267 },	-- Margrave Stradama
 					["g"] = {
 						ach(14369),	-- Plaguefall
+						i(178754),	-- Poxstorm, Longsword of Pestilence
+						i(178755),	-- Blighted Margrave's Cloak
+						i(178761),	-- Leggings of the Erudite Scholar
+						i(178757),	-- Gloves of Obscure Rituals
+						i(178764),	-- Plagueborne Shoulderguards
+						i(178774),	-- Muckwallow Stompers
+						i(178769),	-- Infinitely Divisible Ooze
 					},
 				}),
 			}),
@@ -56,22 +82,48 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2419, {	-- Globgrog
 						["crs"] = { 164255 },	-- Globgrog
 						["g"] = {
+							i(178753),	-- Surgical Pustule Extractor
+							i(178756),	-- Stradama's Misplaced Slippers
+							i(178760),	-- Disgested Interrogator's Gaze
+							i(178762),	-- Blightborne Chain Legguards
+							i(178773),	-- Plague Handler's Greathelm
+							i(178770),	-- Slimy Consumptive Organ
 						},
 					}),
 					e(2403, {	-- Doctor Ickus
 						["crs"] = { 164967 },	-- Doctor Ickus
 						["g"] = {
+							i(178752),	-- Sophisticated Bonecracker
+							i(178759),	-- Depraved Physician's Mask
+							i(178763),	-- Malodorous Gristle-Sown Spaulders
+							i(178767),	-- Tortured Assistant's Bindings
+							i(178775),	-- Fleshfused Crushers
+							i(178771),	-- Phial of Putrefaction
 						},
 					}),
 					e(2423, {	-- Domina Venomblade
 						["crs"] = { 164266 },	-- Domina Venomblade
 						["g"] = {
+							i(178929),	-- Halberd of the Aranakk
+							i(178928),	-- Domina's Oozing Shiv
+							i(178930),	-- Mitts of Flawless Duplication
+							i(178934),	-- Fastened Venombarb Binds
+							i(178932),	-- Belt of Wretched Manipulations
+							i(178931),	-- Scarred Bloodbound Girdle
+							i(178933),	-- Arachnid Cipher Ring
 						},
 					}),	
 					e(2404, {	-- Margrave Stradama
 						["crs"] = { 164267 },	-- Margrave Stradama
 						["g"] = {
 							ach(14414),	-- Heroic: Plaguefall
+							i(178754),	-- Poxstorm, Longsword of Pestilence
+							i(178755),	-- Blighted Margrave's Cloak
+							i(178761),	-- Leggings of the Erudite Scholar
+							i(178757),	-- Gloves of Obscure Rituals
+							i(178764),	-- Plagueborne Shoulderguards
+							i(178774),	-- Muckwallow Stompers
+							i(178769),	-- Infinitely Divisible Ooze
 						},
 					}),
 				},
@@ -87,23 +139,49 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["crs"] = { 164255 },	-- Globgrog
 						["g"] = {
 							ach(14347),	-- Full Gores Meal
+							i(178753),	-- Surgical Pustule Extractor
+							i(178756),	-- Stradama's Misplaced Slippers
+							i(178760),	-- Disgested Interrogator's Gaze
+							i(178762),	-- Blightborne Chain Legguards
+							i(178773),	-- Plague Handler's Greathelm
+							i(178770),	-- Slimy Consumptive Organ
 						},
 					}),
 					e(2403, {	-- Doctor Ickus
 						["crs"] = { 164967 },	-- Doctor Ickus
 						["g"] = {
 							ach(14296),	-- Going Viral
+							i(178752),	-- Sophisticated Bonecracker
+							i(178759),	-- Depraved Physician's Mask
+							i(178763),	-- Malodorous Gristle-Sown Spaulders
+							i(178767),	-- Tortured Assistant's Bindings
+							i(178775),	-- Fleshfused Crushers
+							i(178771),	-- Phial of Putrefaction
 						},
 					}),
 					e(2423, {	-- Domina Venomblade
 						["crs"] = { 164266 },	-- Domina Venomblade
 						["g"] = {
+							i(178929),	-- Halberd of the Aranakk
+							i(178928),	-- Domina's Oozing Shiv
+							i(178930),	-- Mitts of Flawless Duplication
+							i(178934),	-- Fastened Venombarb Binds
+							i(178932),	-- Belt of Wretched Manipulations
+							i(178931),	-- Scarred Bloodbound Girdle
+							i(178933),	-- Arachnid Cipher Ring
 						},
 					}),	
 					e(2404, {	-- Margrave Stradama
 						["crs"] = { 164267 },	-- Margrave Stradama
 						["g"] = {
 							ach(14415),	-- Mythic: Plaguefall
+							i(178754),	-- Poxstorm, Longsword of Pestilence
+							i(178755),	-- Blighted Margrave's Cloak
+							i(178761),	-- Leggings of the Erudite Scholar
+							i(178757),	-- Gloves of Obscure Rituals
+							i(178764),	-- Plagueborne Shoulderguards
+							i(178774),	-- Muckwallow Stompers
+							i(178769),	-- Infinitely Divisible Ooze
 						},
 					}),
 				},

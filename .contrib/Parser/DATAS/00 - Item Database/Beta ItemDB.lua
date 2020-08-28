@@ -9,6 +9,9 @@ i(176335, 1);	-- Chime of Melodic Reflection
 i(176285, 1);	-- Ruthless Contender's Tome
 i(178029, 1);	-- Meadow Guardian's Focus
 i(177634, 1);	-- Vial of Volatile Essence
+i(178828, 1);	-- Nathrian Tabernacle
+i(178852, 1);	-- Vessel of Shining Radiance
+i(178868, 1);	-- Deathwalker's Promise
 
 -- Cloaks
 i(178732, 3);	-- Abominable Visage
@@ -17,6 +20,10 @@ i(175763, 3);	-- Salvaged Mercenary's Drape
 i(175767, 3);	-- Glitterwing Greatcloak
 i(175766, 3);	-- Ilka's Hunting Cloak
 i(175765, 3);	-- Dredwing Shroud
+i(179349, 3);	-- Dealer Xy'exa's Cape
+i(178851, 3);	-- Cloak of Enveloping Manifestations
+i(178755, 3);	-- Blighted Margrave's Cloak
+i(180123, 3);	-- Drape of Twisted Loyalties
 
 -- Cloth
 i(178735, 4);	-- Blight Belcher
@@ -60,6 +67,33 @@ i(175485, 4);	-- Shoes of Pained Absolution
 i(175425, 4);	-- Handwraps of Pained Absolution
 i(175480, 4);	-- Robe of Pained Absolution
 i(175492, 4);	-- Cowl of Pained Absolution
+i(179322, 4);	-- Windscale Moccasins
+i(179335, 4);	-- Manastorm's Magnificent Threads
+i(179343, 4);	-- Sash of Exquisite Acquisitions
+i(179351, 4);	-- Mueh'zala's Hexthread Sarong
+i(178813, 4);	-- Sinlight Shroud
+i(178833, 4);	-- Stonefiend Shaper's Mitts
+i(178822, 4);	-- Cord of the Dark Word
+i(178831, 4);	-- Slippers of Leavened Station
+i(178696, 4);	-- Ingra Maloch's Mantle
+i(178704, 4);	-- Deathshackle Wristwraps
+i(178705, 4);	-- Tricksprite Gloves
+i(178844, 4);	-- Essence Surgers Cuffs
+i(178859, 4);	-- Castigator's Mantle
+i(178838, 4);	-- Beryllia's Leggings of Endless Torment
+i(178860, 4);	-- Cowl of the Devoted General
+i(178756, 4);	-- Stradama's Misplaced Slippers
+i(178759, 4);	-- Depraved Physician's Mask
+i(178930, 4);	-- Mitts of Flawless Duplication
+i(178761, 4);	-- Leggings of the Erudite Scholar
+i(180109, 4);	-- Kin-Tara's Baleful Cord
+i(180102, 4);	-- Dark Stride Footwraps
+i(180107, 4);	-- Purge Protocol Legwraps
+i(180098, 4);	-- Sinister Requiem Vestments
+i(178803, 4);	-- Plague-Licked Amice
+i(178806, 4);	-- Contaminated Gauze Wristwraps
+i(178792, 4);	-- Soulsewn Vestments
+i(178804, 4);	-- Fallen Empress' Cord
 
 -- Leather
 i(178731, 5);	-- Viscera-Stitched Footpads
@@ -103,6 +137,32 @@ i(175487, 5);	-- Nightcloaked Shoes
 i(175423, 5);	-- Nightcloaked Gloves
 i(175483, 5);	-- Nightcloaked Chestpiece
 i(175494, 5);	-- Nightcloaked Helm
+i(179324, 5);	-- Soulfeather Breeches
+i(179336, 5);	-- Rocket Chicken Handlers
+i(179344, 5);	-- Far Traveler's Shoulderpads
+i(179352, 5);	-- Primeval Soul's Ankleguards
+i(178817, 5);	-- Hood of Refracted Shadows
+i(178819, 5);	-- Skyterror's Stonehide Leggings
+i(178832, 5);	-- Gloves of Haunting Fixation
+i(178823, 5);	-- Waistcord of Dark Devotion
+i(178698, 5);	-- Rainshadow Hauberk
+i(178691, 5);	-- Hood of the Hidden Path
+i(178835, 5);	-- Anima-Splattered Hide
+i(178837, 5);	-- Sinsoaked Waders
+i(178847, 5);	-- Radiant Light Binders
+i(178858, 5);	-- Wicked Bladewing Pauldrons
+i(178760, 5);	-- Disgested Interrogator's Gaze
+i(178763, 5);	-- Malodorous Gristle-Sown Spaulders
+i(178934, 5);	-- Fastened Venombarb Binds
+i(178757, 5);	-- Gloves of Obscure Rituals
+i(180103, 5);	-- Winged Hunters' Gloves
+i(180111, 5);	-- Shadowhirl Waistwrap
+i(180106, 5);	-- Vicious Surge Faceguard
+i(180108, 5);	-- Abyssal Disharmony Breeches
+i(178795, 5);	-- Vest of Concealed Secrets
+i(178801, 5);	-- Fearless Challenger's Leggings
+i(178805, 5);	-- Girdle of Shattered Dreams
+i(178797, 5);	-- Vanquished Usurper's Footpads
 
 -- Mail
 i(178733, 6);	-- Blightbone Spaulders
@@ -146,6 +206,33 @@ i(175486, 6);	-- Soul Hunter's Boots
 i(175426, 6);	-- Soul Hunter's Gauntlets
 i(175482, 6);	-- Soul Hunter's Vest
 i(175493, 6);	-- Soul Hunter's Headgear
+i(179325, 6);	-- Hakkari Revenant's Grips
+i(179337, 6);	-- Techno-Coil Legguards
+i(179345, 6);	-- Spatial Rift Striders
+i(179353, 6);	-- Harness of Twisted Whims
+i(178830, 6);	-- Shardskin Sabatons
+i(178815, 6);	-- Soaring Decimator's Hauberk
+i(178821, 6);	-- Mantle of Ephemeral Visages
+i(178816, 6);	-- Nathrian Usurper's Mask
+i(178692, 6);	-- Soulthorn Visage
+i(178700, 6);	-- Clasp of Waning Shadow
+i(178695, 6);	-- Wintersnap Shoulderguards
+i(178846, 6);	-- Shackles of Alluring Vitality
+i(178843, 6);	-- Executor's Prideful Girdle
+i(178841, 6);	-- Iron Spiked Handgrips
+i(178839, 6);	-- Wind Dancer's Legguards
+i(178762, 6);	-- Blightborne Chain Legguards
+i(178767, 6);	-- Tortured Assistant's Bindings
+i(178932, 6);	-- Belt of Wretched Manipulations
+i(178764, 6);	-- Plagueborne Shoulderguards
+i(180100, 6);	-- Forsworn Stalker's Hauberk
+i(180110, 6);	-- Dark Praetorian's Clasp
+i(180105, 6);	-- Absonant Construct's Handguards
+i(180114, 6);	-- Fallen Paragon's Armguards
+i(178799, 6);	-- Amphitheater Stalker's Hood
+i(178798, 6);	-- Grips of Overwhelming Beatings
+i(178794, 6);	-- Triumphant Combatant's Chainmail
+i(178796, 6);	-- Boots of Shuddering Matter
 
 -- Plate
 i(178734, 7);	-- Fused Bone Greatbelt
@@ -190,6 +277,33 @@ i(175484, 7);	-- Stoneforged Sabatons
 i(175424, 7);	-- Stoneforged Grips
 i(175481, 7);	-- Stoneforged Hauberk
 i(175479, 7);	-- Stoneforged Cover
+i(179326, 7);	-- Girdle of the Soulflayer
+i(179338, 7);	-- Dynamo Doomstompers
+i(179346, 7);	-- Breastplate of Fatal Contrivances
+i(179354, 7);	-- Reality-Shatter Vambraces
+i(178818, 7);	-- Halkias' Towering Pillars
+i(178812, 7);	-- Wing Commander's Helmet
+i(178814, 7);	-- Breastplate of Otherworldly Influence
+i(178820, 7);	-- Pauldrons of Unleashed Pride
+i(178694, 7);	-- Wrathbark Greathelm
+i(178697, 7);	-- Prankster's Pauldrons
+i(178706, 7);	-- Fogweaver Gauntlets
+i(178836, 7);	-- Sabatons of the Rushing Juggernaut
+i(178845, 7);	-- Vambraces of the Depraved Warden
+i(178842, 7);	-- Waistguard of Expurged Anguish
+i(178840, 7);	-- Guilewind Stone Talons
+i(178773, 7);	-- Plague Handler's Greathelm
+i(178775, 7);	-- Fleshfused Crushers
+i(178931, 7);	-- Scarred Bloodbound Girdle
+i(178774, 7);	-- Muckwallow Stompers
+i(180101, 7);	-- Warboots of Ruthless Conviction
+i(180104, 7);	-- Distorted Construct's Gauntlets
+i(180113, 7);	-- Thunderous Echo Vambraces
+i(180099, 7);	-- Breastplate of Brutal Dissonance
+i(178800, 7);	-- Galvanized Oxxein Legguards
+i(178793, 7);	-- Abdominal Securing Chestguard
+i(178807, 7);	-- Pit Fighter's Wristguards
+i(178802, 7);	-- Unyielding Combatant's Pauldrons
 
 -- Shields
 i(178750, 8);	-- Encrusted Canopic Lid
@@ -197,6 +311,8 @@ i(176333, 8);	-- Melody Defender's Bulwark
 i(176284, 8);	-- Ruthless Contender's Shield
 i(175990, 8);	-- Meadow Guardian's Shield
 i(177633, 8);	-- Steelbound Heater Shield
+i(178712, 8);	-- Acidslough Bulwark
+i(178867, 8);	-- Barricade of the Endless Empire
 
 -- Daggers
 i(178743, 20);	-- Stitchflesh's Scalpel
@@ -211,13 +327,20 @@ i(178022, 20);	-- Culexwood Knife
 i(177646, 20);	-- Vicious Dredblade
 i(177642, 20);	-- Sinfall Darkblade
 i(177641, 20);	-- Sinfall Inquisitor's Dagger
-
+i(178853, 20);	-- Voracious Gorger Spine
+i(178753, 20);	-- Surgical Pustule Extractor
+i(178928, 20);	-- Domina's Oozing Shiv
+i(178789, 20);	-- Fleshcrafter's Knife
 
 -- 1H Axes
--- i(XXX, 21);	-- Item
+i(178711, 21);	-- Axe of the Deadgrove
+i(178857, 21);	-- Stone General's Edge
+i(180095, 21);	-- Penitent Edge
+i(178863, 21);	-- Gorestained Cleaver
 
--- 2H Axes		
--- i(XXX, 22);	-- Item
+-- 2H Axes
+i(178713, 22);	-- Drustlord's Greataxe
+i(178866, 22);	-- Dessia's Decimating Decapitator
 
 -- 1H Maces
 i(178730, 23);	-- Engorged Worm Smasher
@@ -230,6 +353,13 @@ i(175985, 23);	-- Grove Defender's Pummeler
 i(178023, 23);	-- Gormhusk Basher
 i(180473, 23);	-- Culexwood Spellmace
 i(177635, 23);	-- Sinfall Legion Smasher
+i(179340, 23);	-- Supercollider
+i(178834, 23);	-- Stoneguardian's Morningstar
+i(178709, 23);	-- Scithewood Scepter
+i(178710, 23);	-- Tanglewood Thorn
+i(178855, 23);	-- Sinsmasher
+i(178752, 23);	-- Sophisticated Bonecracker
+i(178864, 23);	-- Gorebound Predator's Gavel
 
 -- 2H Maces
 i(178024, 24);	-- Gormhusk Bludgeon
@@ -250,12 +380,16 @@ i(177651, 25);	-- Nimble Hopebreaker's Rapier
 i(177650, 25);	-- Stalwart Hopebreaker's Rapier
 i(177643, 25);	-- Sinfall Duelist's Rapier
 i(177639, 25);	-- Sinfall Guardian's Rapier
+i(179328, 25);	-- Bloodspiller
+i(178856, 25);	-- Kaal's Gloomblade
+i(178754, 25);	-- Poxstorm, Longsword of Pestilence
 
 -- 2H Swords
 i(178780, 26);	-- Rimebinder's Runeblade
 i(176338, 26);	-- Skytone Greatsword
 i(180823, 26);	-- Bonefused Greatsword
 i(176283, 26);	-- Ruthless Contender's Claymore
+i(179330, 26);	-- Zin'khas, Blade of the Fallen God
 		
 -- Wands
 i(176282, 27);	-- Ruthless Contender's Wand
@@ -266,11 +400,19 @@ i(176279, 28);	-- Ruthless Contender's Staff
 i(181534, 28);	-- Ruthless Contender's Rod
 i(175988, 28);	-- Meadow Guardian's Staff
 i(177636, 28);	-- Sinfall Legionaire's Barbed Staff
+i(179339, 28);	-- Whizblast Walking Stick
+i(179347, 28);	-- Collector's Pulse Staff
+i(178829, 28);	-- Nathrian Ferula
+i(178714, 28);	-- Lakali's Spire of Knowledge
+i(180097, 28);	-- Quarterstaff of Discordant Ethic
 
 -- Polearms
 i(176334, 29);	-- Silverchime Longspear
 i(175987, 29);	-- Grove Defender's Spear
 i(178025, 29);	-- Gormstinger Spear
+i(178929, 29);	-- Halberd of the Aranakk
+i(180096, 29);	-- Devos' Cacophonous Poleaxe
+i(178865, 29);	-- Xav's Pike of Authority
 
 -- Spears
 -- i(XXX, 30);	-- Item
@@ -278,6 +420,7 @@ i(178025, 29);	-- Gormstinger Spear
 -- Guns
 i(178735, 31);	-- Blight Belcher
 i(177637, 31);	-- Sinfall Arquebus
+i(180112, 31);	-- The Philosopher
 
 -- Bows
 i(175983, 32);	-- Heartwood Bow
@@ -286,6 +429,7 @@ i(175983, 32);	-- Heartwood Bow
 i(176330, 31);	-- Guidenote Crossbow
 i(180822, 31);	-- Bonefused Crossbow
 i(176281, 31);	-- Ruthless Contender's Crossbow
+i(179348, 31);	-- Xy Cartel Crossbow
 
 -- Fist Weapons
 i(176336, 34);	-- Guidenote Grip
@@ -297,12 +441,15 @@ i(175992, 35);	-- Heartwood Warglaive
 i(178030, 35);	-- Gormstinger Warglaive
 i(177648, 35);	-- Honed Dredglaive
 i(177638, 35);	-- Sinfall Edgemaster's Blade
+i(178854, 35);	-- Hungering Devourer's Twinblade
 
 -- Neck
 i(175739, 51);	-- Reclaimed Maldraxxi Choker
 i(175741, 51);	-- Gormgris Gorget
 i(175737, 51);	-- Samu's Inkwell Pendant
-						
+i(178827, 51);	-- Sin Stained Pendant			
+i(178707, 51);	-- Trailspinner Pendant
+i(180115, 51);	-- Azure-Venom Choker
 
 -- Finger
 i(178736, 52);	-- Stitchflesh's Misplaced Signet
@@ -313,7 +460,16 @@ i(175706, 52);	-- Mind-Torn Band
 i(175710, 52);	-- Night Courtier's Ring
 i(175714, 52);	-- The Chamberlain's Tarnished Signet
 i(175715, 52);	-- Gargon Eye Ring
-			
+i(179355, 52);	-- Death God's Signet
+i(178826, 52);	-- Sunblood Amethyst
+i(178824, 52);	-- Signet of the False Accuser
+i(178848, 52);	-- Entwined Gorger Tendril
+i(178933, 52);	-- Arachnid Cipher Ring
+i(178871, 52);	-- Bloodoath Signet
+i(178869, 52);	-- Fleshfused Circle
+i(178870, 52);	-- Ritual Bone Band
+i(178872, 52);	-- Ring of Perpetual Conflict
+
 -- Trinket
 i(178742, 53);	-- Bottled Chimera Toxin
 i(178751, 53);	-- Spare Meat Hook
@@ -325,18 +481,28 @@ i(175722, 53);	-- Vial of Caustic Liquid
 i(175723, 53);	-- Rejuvenating Serum
 i(175730, 53);	-- Master Duelist's Chit
 i(175732, 53);	-- Tablet of Despair
-
-
-
-
-
-
-
-
-
-
-
-
+i(179331, 53);	-- Blood-Spattered Scale
+i(179342, 53);	-- Overwhelming Power Crystal
+i(179350, 53);	-- Inscrutable Quantum Device
+i(179356, 53);	-- Shadowgrasp Totem
+i(178825, 53);	-- Pulsating Stoneheart
+i(178708, 53);	-- Unbound Changeling
+i(178715, 53);	-- Mistcaller Ocarina
+i(178849, 53);	-- Overflowing Anima Prison
+i(178850, 53);	-- Lingering Sunmote
+i(178862, 53);	-- Bladedancer's Armor Kit
+i(178861, 53);	-- Decanter of Anima-Charged Winds
+i(178770, 53);	-- Slimy Consumptive Organ
+i(178771, 53);	-- Phial of Putrefaction
+i(178769, 53);	-- Infinitely Divisible Ooze
+i(180116, 53);	-- Overcharged Anima Battery
+i(180118, 53);	-- Anima Field Emitter
+i(180117, 53);	-- Empyreal Ordnance
+i(180119, 53);	-- Boon of the Archon
+i(178808, 53);	-- Viscera of Coalesced Hatred
+i(178810, 53);	-- Vial of Vampiric Essence
+i(178809, 53);	-- Soulletting Ruby
+i(178811, 53);	-- Grim Codex
 
 
 

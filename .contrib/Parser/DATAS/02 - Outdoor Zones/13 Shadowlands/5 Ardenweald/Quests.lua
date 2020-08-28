@@ -763,6 +763,15 @@ _.Zones =
 						i(181475),	-- Tribute of the Grove Wardens
 					},
 				}),
+				q(60419, {	-- Troubles at Home
+					["provider"] = { "n", 167193 },	-- Featherlight
+					["coord"] = { 59.7, 31.3, 1565 },
+					["repeatable"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(181475),	-- Tribute of the Grove Wardens
+					},
+				}),
 				q(60364, {	-- Gildenite Grab
 					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
 					["coord"] = { 16.5, 52.4, 1565 },
