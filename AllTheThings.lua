@@ -5589,7 +5589,7 @@ local function GetHolidayCache()
 		cache = {};
 		SetTempDataMember("HOLIDAY_CACHE", cache);
 		SetDataMember("HOLIDAY_CACHE", cache);
-		local date = C_Calendar.GetDate();
+		local date = C_DateAndTime.GetCurrentCalendarTime();
 		if date.month > 8 then
 			C_Calendar.SetAbsMonth(date.month - 8, date.year);
 		else
