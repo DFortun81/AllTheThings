@@ -9057,6 +9057,10 @@ end
 local function RowOnEnter(self)
 	local reference = self.ref; -- NOTE: This is the good ref value, not the parasitic one.
 	if reference and GameTooltip then
+		if ArkInventory then
+			GameTooltip.OldItemCountEnable = ArkInventory.db.option.tooltip.itemcount.enable;
+			ArkInventory.db.option.tooltip.itemcount.enable = false;
+		end
 		GameTooltipIcon.icon.Background:Hide();
 		GameTooltipIcon.icon.Border:Hide();
 		GameTooltipIcon:Hide();
@@ -9599,6 +9603,9 @@ local function RowOnEnter(self)
 			end
 		end
 		GameTooltip:Show();
+		if ArkInventory then
+			ArkInventory.db.option.tooltip.itemcount.enable = GameTooltip.OldItemCountEnable;
+		end
 	end
 end
 local function RowOnLeave(self)
