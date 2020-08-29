@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
+
 _.GearSets =
 {
 	n(-5350, {	-- Class Trial Item Sets
@@ -8,7 +9,7 @@ _.GearSets =
 			["description"] = "These are obtained by creating a Level 90 Class Trial for each class and specialization.",
 			["icon"] = "Interface\\Icons\\achievement_level_90",
 			["lvl"] = 90,
-			["groups"] = bubbleDown({["u"] = 2}, {
+			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 				n(-9980, {	-- Mists of Pandaria. This gear was awarded if you used your Lv90 boost before 6.0.1
 					n(-140, {	-- Communal
 						["classes"] = { PRIEST },

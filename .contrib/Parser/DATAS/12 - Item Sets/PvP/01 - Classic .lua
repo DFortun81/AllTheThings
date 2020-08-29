@@ -1,13 +1,14 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
+
 _.GearSets =
 {
 	n(-4189, {	-- PvP Item Sets
 		n(-4190, {
 			["description"] = "These items were available during Burning Crusade as Level 70 Pre-Season 1 rewards in Netherstorm. They cannot be transmogged, not even if you were a High Warlord or Grand Marshall. Replica items were introduced in their place.",
 			["u"] = REMOVED_FROM_GAME,
-			["groups"] = bubbleDown({["u"] = 2 }, {
+			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 				n(-319, {	-- Weapons
 					i(28940),	-- Grand Marshal's Barricade
 					i(28941),	-- Grand Marshal's Battletome
