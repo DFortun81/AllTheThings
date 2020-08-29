@@ -24,6 +24,9 @@ i(179349, 3);	-- Dealer Xy'exa's Cape
 i(178851, 3);	-- Cloak of Enveloping Manifestations
 i(178755, 3);	-- Blighted Margrave's Cloak
 i(180123, 3);	-- Drape of Twisted Loyalties
+i(183034, 3);	-- Cowled Batwing Cloak
+i(183033, 3);	-- Mantle of Manifest Sins
+i(183032, 3);	-- Crest of the Legionnaire General
 
 -- Cloth
 i(178735, 4);	-- Blight Belcher
@@ -94,6 +97,18 @@ i(178803, 4);	-- Plague-Licked Amice
 i(178806, 4);	-- Contaminated Gauze Wristwraps
 i(178792, 4);	-- Soulsewn Vestments
 i(178804, 4);	-- Fallen Empress' Cord
+i(182979, 4);	-- Slippers of the Forgotten Heretic
+i(182996, 4);	-- Grim Pursuant's Maille
+i(182986, 4);	-- High Torturer's Smock
+i(183004, 4);	-- Shadewarped Sash
+i(183028, 4);	-- Cinch of Infinite Tightness
+i(183021, 4);	-- Confidant's Favored Cap
+i(183011, 4);	-- Courtier's Costume Trousers
+i(183023, 4);	-- Sparkling Glass Slippers
+i(183022, 4);	-- Impossibly Oversized Mitts
+i(182981, 4);	-- Leggings of Lethal Reverberations
+i(182998, 4);	-- Robes of the Cursed Commando
+i(183020, 4);	-- Shawl of the Penitent
 
 -- Leather
 i(178731, 5);	-- Viscera-Stitched Footpads
@@ -163,6 +178,18 @@ i(178795, 5);	-- Vest of Concealed Secrets
 i(178801, 5);	-- Fearless Challenger's Leggings
 i(178805, 5);	-- Girdle of Shattered Dreams
 i(178797, 5);	-- Vanquished Usurper's Footpads
+i(182993, 5);	-- Chiropteran Leggings
+i(182995, 5);	-- Spell-Woven Tourniquet
+i(183007, 5);	-- Bleakwing Assassin's Grips
+i(183019, 5);	-- Precisely Calibrated Chronometer
+i(183009, 5);	-- Miasma-lacquered Jerkin
+i(183024, 5);	-- Volatile Shadestitch Legguards
+i(183026, 5);	-- Gloves of Phantom Shadows
+i(182989, 5);	-- Corset of the Deft Duelist
+i(183030, 5);	-- Enchanted Toe-Tappers
+i(183005, 5);	-- Heedless Pugilist's Harness
+i(183029, 5);	-- Wicked Flanker's Gorget
+i(182980, 5);	-- Sadist's Sinister Mask
 
 -- Mail
 i(178733, 6);	-- Blightbone Spaulders
@@ -233,6 +260,18 @@ i(178799, 6);	-- Amphitheater Stalker's Hood
 i(178798, 6);	-- Grips of Overwhelming Beatings
 i(178794, 6);	-- Triumphant Combatant's Chainmail
 i(178796, 6);	-- Boots of Shuddering Matter
+i(182976, 6);	-- Double-Chained Utility Belt
+i(182988, 6);	-- Master Huntsman's Bandolier
+i(182977, 6);	-- Bangles of Errant Pride
+i(183012, 6);	-- Greaves of Enigmatic Energies
+i(183000, 6);	-- Consumptive Chainmail Carapace
+i(183001, 6);	-- Helm of Insatiable Appetite
+i(182985, 6);	-- Memento-Laden Cuisses
+i(183014, 6);	-- Castellan's Chainlink Grips
+i(183016, 6);	-- Load-Bearing Belt
+i(183006, 6);	-- Stoneclas Stompers
+i(182991, 6);	-- Oathsworn Soldier's Gauntlets
+i(183003, 6);	-- Pauldrons of Fatal Finality
 
 -- Plate
 i(178734, 7);	-- Fused Bone Greatbelt
@@ -304,6 +343,18 @@ i(178800, 7);	-- Galvanized Oxxein Legguards
 i(178793, 7);	-- Abdominal Securing Chestguard
 i(178807, 7);	-- Pit Fighter's Wristguards
 i(178802, 7);	-- Unyielding Combatant's Pauldrons
+i(183027, 7);	-- Errant Crusader's Greaves
+i(183018, 7);	-- Hellhound Cuffs
+i(183025, 7);	-- Stoic Guardsman's Belt
+i(182987, 7);	-- Breastplate of Cautious Calculation
+i(182994, 7);	-- Epaulettes of Overwhelming Force
+i(182992, 7);	-- Endlessly Gluttonous Greaves
+i(183015, 7);	-- Binding of Warped Desires
+i(182983, 7);	-- Stoneguard Attendant's Boots
+i(182999, 7);	-- Rampaging Giant's Chestplate
+i(182984, 7);	-- Colossal Plate Gauntlets
+i(183002, 7);	-- Ceremonial Parade Legguards
+i(182997, 7);	-- Diadem of Imperious Desire
 
 -- Shields
 i(178750, 8);	-- Encrusted Canopic Lid
@@ -450,6 +501,8 @@ i(175737, 51);	-- Samu's Inkwell Pendant
 i(178827, 51);	-- Sin Stained Pendant			
 i(178707, 51);	-- Trailspinner Pendant
 i(180115, 51);	-- Azure-Venom Choker
+i(183040, 51);	-- Charm of Eternal Winter
+i(183039, 51);	-- Noble's Birthstone Pendant
 
 -- Finger
 i(178736, 52);	-- Stitchflesh's Misplaced Signet
@@ -469,6 +522,7 @@ i(178871, 52);	-- Bloodoath Signet
 i(178869, 52);	-- Fleshfused Circle
 i(178870, 52);	-- Ritual Bone Band
 i(178872, 52);	-- Ring of Perpetual Conflict
+i(183038, 52);	-- Hyperlight Band
 
 -- Trinket
 i(178742, 53);	-- Bottled Chimera Toxin

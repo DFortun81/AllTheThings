@@ -754,6 +754,15 @@ _.Zones =
 						i(181475),	-- Tribute of the Grove Wardens
 					},
 				}),
+				q(60374, {	-- Bonemetal Bonanza
+					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
+					["coord"] = { 16.5, 52.4, 1565 },
+					["repeatable"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(181475),	-- Tribute of the Grove Wardens
+					},
+				}),
 				q(60388, {	-- Training Our Forces
 					["provider"] = { "n", 158544 },	-- Lord Herne
 					["coord"] = { 40.9, 72.4, 1565 },
@@ -790,12 +799,21 @@ _.Zones =
 						i(181475),	-- Tribute of the Grove Wardens
 					},
 				}),
+				q(60382, {	-- Aiding Revendreth
+					["provider"] = { "n", 167195 },	-- Blodwyn
+					["coord"] = { 46.4, 50.6, 1565 },
+					["repeatable"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(181475),	-- Tribute of the Grove Wardens
+					},
+				}),
 			-- Covernant progress
 				q(61852, {	-- Adventurer: Guardian Kota (Rank 2)
 					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 					["coord"] = { 29.6, 81.6, 1565 },
 					["g"] = {
-						follower(338543),	-- Follower: Guardian Kota
+						spell(338543),	-- Follower: Guardian Kota
 					},
 				}),
 				
