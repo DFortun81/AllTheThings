@@ -212,7 +212,6 @@ _.Zones =
 					}),
 					q(29203, {	-- Into the Depths
 						["provider"] = { "n", 52135 },	-- Malfurion Stormrage
-						["provider"] = { "n", 53881 },	-- Ayla Shadowstorm
 						["coord"] = { 47.0, 90.0, 338 },
 						["sourceQuest"] = 29280,	-- Nourishing Waters
 						["g"] = {
