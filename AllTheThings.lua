@@ -12339,8 +12339,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				for i = 1,#recipeIDs do
-					local spellRecipeInfo = {};
-					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
+					local spellRecipeInfo = C_TradeSkillUI.GetRecipeInfo(recipeIDs[i]);
+					if spellRecipeInfo then
 						currentCategoryID = spellRecipeInfo.categoryID;
 						if not categories[currentCategoryID] then
 							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
@@ -13635,8 +13635,8 @@ app:GetWindow("Debugger", UIParent, function(self)
 				
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				for i = 1,#recipeIDs do
-					local spellRecipeInfo = {};
-					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
+					local spellRecipeInfo = C_TradeSkillUI.GetRecipeInfo(recipeIDs[i]);
+					if spellRecipeInfo then
 						currentCategoryID = spellRecipeInfo.categoryID;
 						if not categories[currentCategoryID] then
 							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
