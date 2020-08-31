@@ -68,7 +68,7 @@ _.Zones =
 							i(146764),	-- Plate
 						})),
 						un(REMOVED_FROM_GAME, i(147837, {	-- Relinquished Relics
-							un(REMOVED_FROM_GAME, i(140086)),	-- Intact Infernal Palm (Fel)
+						--	un(REMOVED_FROM_GAME, i(140086)),	-- Intact Infernal Palm (Fel)
 						})),
 					},
 				}),
