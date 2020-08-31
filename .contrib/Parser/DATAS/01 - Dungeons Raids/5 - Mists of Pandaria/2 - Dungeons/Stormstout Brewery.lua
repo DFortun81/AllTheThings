@@ -62,7 +62,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					ach(6457),	-- Stormstout Brewery
 					i(144124),	-- Wort Stirring Rod
 					i(144085),	-- Gao's Keg Tapper
-					i(144217),	-- Inelava, Spirit of Inebriation
+					un(NEVER_IMPLEMENTED, i(144217)),	-- Gao's Keg Tapper (unconfirmed)
+					-- Looks like while they updated the items in 7.1, they continued to use the old epic version
 					i(87545),	-- Inelava, Spirit of Inebriation — dropped for Carbion in Normal difficulty as well
 					i(144089),	-- Yan-Zhu's Pressure Valve
 					i(143969),	-- Fizzy Spaulders
