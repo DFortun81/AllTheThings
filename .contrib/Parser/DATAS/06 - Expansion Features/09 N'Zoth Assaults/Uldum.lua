@@ -571,7 +571,7 @@ _.ExpansionFeatures =
 				}),
 				n(RARES, {
 					n(154578, {	-- Aqir Flayer
-						["description"] = "Shares a spawn with Aqir Goliath.  Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
+						["description"] = "Shares a spawn with Aqir Hive Worker and Aqir Reaper.  Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
 						["questID"] = 58612,
 						["isDaily"] = true,
 						["coords"] = {

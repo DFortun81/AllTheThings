@@ -8,10 +8,6 @@ _.Zones =
 			n(-34,  {	-- World Quests
 				n(QUESTS, {
 	--[[	raw quest list to check against
-					q(53343, {	-- Censership
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53318, {	-- Ductile Platinum
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -32,9 +28,6 @@ _.Zones =
 						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
-						["g"] = {
-							i(163601),	-- Overgrown Anchor Weed (QI)
-						},	
 					}),
 					q(53012, {	-- Put Away Your Toys
 						["isWorldQuest"] = true,
@@ -227,11 +220,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							i(163212, {	-- Cleansing Thurible
-								["isWorldQuest"] = true,	-- putting it here so it doesn't show as unsorted
-							}),
-						},
+					}),
+					q(53343, {	-- Censership
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52882, {	-- Controlled Burn
 						["isWorldQuest"] = true,
@@ -871,9 +864,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							i(164731)	-- Enchanted Shroud (QI)
-						},
 					}),
 					q(52459, {	-- Whirlwing
 						["isWorldQuest"] = true,

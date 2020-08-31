@@ -57,18 +57,12 @@ _.Zones =
 						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
-						["g"] = {
-							i(163601),	-- Overgrown Anchor Weed (QI)
-						},
 					}),
 					q(53282, {	-- Overgrown Anchor Weed
 						["isWorldQuest"] = true,
 						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
-						["g"] = {
-							i(163601),	-- Overgrown Anchor Weed (QI)
-						},
 					}),
 					q(54627),	-- Paragon of the Order of Embers
 					q(48515, {	-- Silver Blades

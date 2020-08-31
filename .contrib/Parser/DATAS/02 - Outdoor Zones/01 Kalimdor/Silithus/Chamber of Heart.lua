@@ -173,7 +173,6 @@ _.Zones =
 							["provider"] = { "n", 152385 },	-- Highmountain Shaman (Ebonhorn)
 							["coord"] = { 18.9, 58.0, 1472 },
 							["sourceQuest"] = 55425,	-- Dominating the Indomitable
-							["cost"] = { { "i", 167830, 1 } },	-- Petrified Ebony Scale (QI)
 							["lvl"] = 120,
 							["maps"] = { 1472 },	-- The Dragon's Spine
 						}),
@@ -181,7 +180,6 @@ _.Zones =
 							["provider"] = { "n", 152194 },	-- MOTHER
 							["coord"] = { 48.1, 72.4, 1473 },
 							["sourceQuest"] = 55497,	-- A Friendly Face
-							["cost"] = { { "i", 169325, 1 } },	-- Petrified Ebony Scale (QI)
 							["g"] = {
 								i(168611, {	-- Petrified Ebony Scale
 									az(12, 1),	-- The Crucible of Flame (Rank 1)
@@ -275,7 +273,6 @@ _.Zones =
 							["provider"] = { "n", 151825 },	-- Merithra of the Dream
 							["coord"] = { 46.5, 39.7, 1475 },
 							["sourceQuest"] = 55397,	-- Before I Wake
-							["cost"] = { { "i", 167875, 1 } },	-- Reforged Dreamglow Dragonscale (QI)
 							["lvl"] = 120,
 							["maps"] = { 1475 },	-- The Emerald Dream
 							["g"] = {
@@ -346,7 +343,6 @@ _.Zones =
 							["provider"] = { "n", 152720 },	-- Kalecgos
 							["coord"] = { 36.0, 50.5, 241 },
 							["sourceQuest"] = 56167,	-- Investigating the Highlands
-							["cost"] = { { "i", 168280, 1 } },	-- Lost Scale of the Scarlet Broodmother (QI)
 							["lvl"] = 120,
 							["maps"] = { 
 								241,	-- Twilight Highlands
@@ -429,7 +425,6 @@ _.Zones =
 								56263,	-- Unlocking the Power (A)
 								56260,	-- Unlocking the Power (H)
 							},
-							["cost"] = { { "i", 169292, 1 } },	-- Charged Scale of the Blue Aspect (QI)
 							["g"] = { 
 								i(168614, {	-- Charged Scale of the Blue Aspect
 									az(12, 4),	-- The Crucible of Flame (Rank 4)

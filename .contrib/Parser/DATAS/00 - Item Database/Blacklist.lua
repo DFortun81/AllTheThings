@@ -71,13 +71,65 @@ i(128851);	-- Roasted juicycrunch carrots
 
 
 -- Quest Items
+i(164778);	-- Abyssal Scepter
+i(162579);	-- Abyssal Scepter
+i(169251);	-- Ancient Insect
+i(168234);	-- Ancient Runestone
+i(169224);	-- Big Red Button
+i(169248);	-- Broken Sandals
+i(169391);	-- Bubble-eyed Rolly
+i(169292);	-- Charged Scale of the Blue Aspect
+i(163212);	-- Cleansing Thurible
+i(169235);	-- Confusing Spring Box
 i(12843);	-- Corruptor's Scourgestone
+i(169250);	-- Crude Eating Utensil
 i(9265);	-- Cuergo's Hidden Treasure
+i(169232);	-- Dud Blast Canister
+i(164731);	-- Enchanted Shroud
+i(169778);	-- Enchanting Crystal
+i(169229);	-- Exhaust Aromatics
+i(169164);	-- Father's Bones
+i(169166);	-- Father's Clothes
+i(169165);	-- Father's Sword
+i(169228);	-- Hazardous Container
+i(168236);	-- Hearthstone Card
+i(158913);	-- Huge Dragon Kite
+i(169240);	-- Idea Starter
+i(169233);	-- Infinite Loop Spring
+i(169227);	-- Irradiated Bolts
+i(169257);	-- Jagged Rune
+i(169236);	-- Latch-and-Lock Trigger
+i(168280);	-- Lost Scale of the Scarlet Broodmother
+i(169238);	-- Modified Radio Receiver
+i(169222);	-- Murloc Treasure
+i(168223);	-- Old Parchment
+i(169231);	-- Optical Override Drive
+i(163601);	-- Overgrown Anchor Weed
+i(167830);	-- Petrified Ebony Scale
+i(169325);	-- Petrified Ebony Scale
+i(169237);	-- Pulsating Marble
+i(168184);	-- Rare Metal
+i(169230);	-- Reflective Plating
+i(167875);	-- Reforged Dreamglow Dragonscale
+i(169252);	-- Resonant Pearl
 i(18149);	-- Rune of Recall
+i(157539);	-- Scroll of Storm Control
 i(17224);	-- Scrying Scope
 i(17364);	-- Scrying Scope
+i(169249);	-- Shark Tooth Necklace
+i(169253);	-- Shell Horn
+i(168817);	-- Siphoning Crystal
+i(169246);	-- Strangely Seasoned Meat
+i(169247);	-- Throwing Rocks
+i(169226);	-- Torn Sheet Music
+i(169255);	-- Tuft of Red Fur
 i(12812);	-- Unfired Plate Gauntlets
 i(12806);	-- Unforged Rune Covered Breastplate
+i(169239);	-- Unknowable Cube
+i(169225);	-- Unstoppable Countdown Clock
+i(169867);	-- Visual Holo Sphere
+i(156926);	-- Witchrend
+i(164761);	-- Xal'atath, Blade of the Black Empire
 i(17384);	-- Zinfizzlex's Portable Shredder Unit
 i(17410);	-- Zinfizzlex's Portable Shredder Unit
 

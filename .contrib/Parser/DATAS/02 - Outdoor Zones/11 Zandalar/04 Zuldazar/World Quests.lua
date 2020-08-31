@@ -368,9 +368,6 @@ _.Zones =
 						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
-						["g"] = {
-							i(163601),	-- Overgrown Anchor Weed (QI)
-						},	
 					}),
 					q(54535, {	-- Portal Keeper Romiir (Faction Assault WQ)
 						["lvl"] = 110,
