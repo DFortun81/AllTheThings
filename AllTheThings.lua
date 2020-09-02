@@ -6106,6 +6106,13 @@ end
 (function()
 local itemFields = {
 	["key"] = function(t) return "itemID"; end,
+	-- ["achievementID"] = function(t)
+		-- local achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
+		-- if achievementID then
+			-- rawset(t, "achievementID", achievementID);
+			-- return achievementID;
+		-- end
+	-- end,
 	["b"] = function(t)
 		return 2;
 	end,
@@ -6120,6 +6127,7 @@ local itemFields = {
 			return 1;
 		end
 		cache = rawget(t, "factionID");
+		-- if the item is collectible because it's tied to a factionID
 		if cache then
 			if t.repeatable then
 				-- This is used by reputation tokens.
@@ -14960,6 +14968,15 @@ app.events.VARIABLES_LOADED = function()
 			{ 13157, { 54706, 55039, 55043, 54708, 54721, 54723, 54725, 54726, 54727, 54728, 54730, 54731, 54729, 54732, 55136, 54733, 54734, 54735, 54851, 53720 } },	-- Allied Races: Kul Tiran
 			{ 14012, { 57486, 57487, 57488, 57490, 57491, 57492, 57493, 57494, 57496, 57495, 57497 } },	-- Allied Races: Mechagnome
 			{ 13207, { 53870, 53889, 53890, 53891, 53892, 53893, 53894, 53895, 53897, 53898, 54026, 53899, 58087, 53901, 53900, 53902, 54027, 53903, 53904, 53905, 54036, 53906, 53907, 53908, 57448 } },	-- Allied Races: Vulpera
+			-- Garrison Shipyard Equipment Blueprints
+			{ 10372, { 38932 } }, -- Equipment Blueprint: Bilge Pump
+			{ 10373, { 39366 } }, -- Equipment Blueprint: Felsmoke Launchers
+			{ 10374, { 39356 } }, -- Equipment Blueprint: High Intensity Fog Lights
+			{ 10375, { 39365 } }, -- Equipment Blueprint: Ghostly Spyglass
+			{ 10376, { 39364 } }, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
+			{ 10377, { 39363 } }, -- Equipment Blueprint: Ice Cutter
+			{ 10378, { 39355 } }, -- Equipment Blueprint: Trained Shark Tank
+			{ 10379, { 39360 } }, -- Equipment Blueprint: True Iron Rudder
 		}) do
 			-- If you completed the achievement, then mark the associated quests.
 			if select(4, GetAchievementInfo(achievementQuests[1])) then
