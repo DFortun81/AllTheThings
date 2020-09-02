@@ -13247,36 +13247,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							-- end
 						end
 					end
-				
-					-- Heroic Deeds
-					if includePermanent and not (CompletedQuests[32900] or CompletedQuests[32901]) then
-						local mapObject = GetPopulatedMapObject(424);
-						cache = fieldCache["questID"][app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901];
-						if cache then
-							for _,data in ipairs(cache) do
-								data = CreateObject(data);
-								if data.g then
-									for _,entry in ipairs(data.g) do
-										local resolved = ResolveSymbolicLink(entry);
-										if resolved then
-											entry = CreateObject(entry);
-											if entry.g then
-												MergeObjects(entry.g, resolved);
-											else
-												entry.g = resolved;
-											end
-										end
-										MergeObject(data.g, entry);
-									end
-								end
-								MergeObject(mapObject.g, data);
-							end
-						end
-						if #mapObject.g > 0 then
-							MergeObject(temp, mapObject);
-						end
-					end
-					
+									
 					-- Merge everything for this map into the list
 					if #mapObject.g > 0 then
 						table.sort(mapObject.g, self.Sort);
@@ -13286,6 +13257,35 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								table.sort(mapGrp.g, self.Sort);
 							end
 						end
+						MergeObject(temp, mapObject);
+					end
+				end
+				
+				-- Heroic Deeds
+				if includePermanent and not (CompletedQuests[32900] or CompletedQuests[32901]) then
+					local mapObject = GetPopulatedMapObject(424);
+					cache = fieldCache["questID"][app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901];
+					if cache then
+						for _,data in ipairs(cache) do
+							data = CreateObject(data);
+							if data.g then
+								for _,entry in ipairs(data.g) do
+									local resolved = ResolveSymbolicLink(entry);
+									if resolved then
+										entry = CreateObject(entry);
+										if entry.g then
+											MergeObjects(entry.g, resolved);
+										else
+											entry.g = resolved;
+										end
+									end
+									MergeObject(data.g, entry);
+								end
+							end
+							MergeObject(mapObject.g, data);
+						end
+					end
+					if #mapObject.g > 0 then
 						MergeObject(temp, mapObject);
 					end
 				end
