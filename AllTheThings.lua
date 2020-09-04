@@ -2900,7 +2900,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		
 		if group.isLimited then
-			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = true, color = "ff66ccff" });
+			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
 		end
 		
 		if group.g and #group.g > 0 then
@@ -9660,7 +9660,11 @@ local function RowOnEnter(self)
 					if i > 1 then str = str .. ", "; end
 					str = str .. C_CreatureInfo.GetRaceInfo(race).raceName;
 				end
-				GameTooltip:AddDoubleLine("Races", str);
+				if #reference.races > 4 then
+					GameTooltip:AddLine("Races " .. str, nil, nil, nil, 1);
+				else				
+					GameTooltip:AddDoubleLine("Races", str);
+				end
 			elseif reference.r and reference.r > 0 then
 				GameTooltip:AddDoubleLine("Races", (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
 			end
@@ -10659,6 +10663,9 @@ function app:GetDataCache()
 		table.insert(g, app.CreateUnit("player", {
 			["collected"] = 1,
 			["description"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.",
+			["races"] = { app.RaceID },
+			["c"] = { app.ClassIndex },
+			["factionID"] = app.FactionID,
 		}));
 		
 		-- The Main Window's Data
@@ -14698,10 +14705,10 @@ app.events.VARIABLES_LOADED = function()
 	end
 	
 	-- Cache information about the player.
-	local _, class, classIndex = UnitClass("player");
-	local raceName, race = UnitRace("player");
+	local class, classID = UnitClassBase("player");
+	local raceName, race, raceID = UnitRace("player");
 	app.Class = class;
-	app.ClassIndex = classIndex;
+	app.ClassIndex = classID;
 	app.Level = UnitLevel("player");
 	local raceIndex = app.RaceDB[race];
 	if type(raceIndex) == "table" then
@@ -14709,9 +14716,10 @@ app.events.VARIABLES_LOADED = function()
 		raceIndex = raceIndex[factionGroup];
 	end
 	app.Race = race;
+	app.RaceID = raceID;
 	app.RaceIndex = raceIndex;
 	local name, realm = UnitName("player");
-	local _, id = GetClassInfo(classIndex);
+	local _, id = GetClassInfo(classID);
 	app.GUID = UnitGUID("player");
 	app.Me = "|c" .. RAID_CLASS_COLORS[id].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
 	app.Faction = UnitFactionGroup("player");

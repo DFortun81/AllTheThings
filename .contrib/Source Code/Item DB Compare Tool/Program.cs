@@ -6,23 +6,42 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using System.CodeDom;
+using System.Threading;
 
 namespace ATT
 {
     class Program
     {
+        const string DBSuffix = ".json";
+
         static void Main(string[] args)
         {
-            // Step 1: Load the Files
-            if(!(MiniJSON.Json.Deserialize(File.ReadAllText("itemDB.json")) as Dictionary<string, object>).TryGetValue("items", out List<object> newItems))
+            string db1 = "itemDB";
+            string db2 = "oldItemDB";
+
+            if (args.Length > 1)
             {
-                Console.WriteLine("Could not read itemDB");
+                db1 = args[0];
+                db2 = args[1];
+            }
+
+            if (!db1.Contains(DBSuffix))
+                db1 += DBSuffix;
+            if (!db2.Contains(DBSuffix))
+                db2 += DBSuffix;
+
+            Console.WriteLine("Comparing:" + db1 + " & " + db2);
+
+            // Step 1: Load the Files
+            if (!(MiniJSON.Json.Deserialize(File.ReadAllText(db1)) as Dictionary<string, object>).TryGetValue("items", out List<object> newItems))
+            {
+                Console.WriteLine("Could not read " + db1);
                 Console.ReadLine();
                 return;
             }
-            if (!(MiniJSON.Json.Deserialize(File.ReadAllText("oldItemDB.json")) as Dictionary<string, object>).TryGetValue("items", out List<object> oldItems))
+            if (!(MiniJSON.Json.Deserialize(File.ReadAllText(db2)) as Dictionary<string, object>).TryGetValue("items", out List<object> oldItems))
             {
-                Console.WriteLine("Could not read oldItemDB");
+                Console.WriteLine("Could not read " + db2);
                 Console.ReadLine();
                 return;
             }
@@ -39,7 +58,7 @@ namespace ATT
 
             // Step 3: Load the content of the new items into a Dictionary.
             var newItemsByID = new Dictionary<int, Dictionary<string, object>>();
-            foreach(var o in newItems)
+            foreach (var o in newItems)
             {
                 if (o is Dictionary<string, object> item && item.TryGetValue("itemID", out int id))
                 {
@@ -53,6 +72,10 @@ namespace ATT
             oldIDs.Sort();
             newIDs.Sort();
 
+            bool additions = false;
+            bool changes = false;
+            bool removals = false;
+
             // Step 5: Loop through the lists and determine which ones are different.
             var missingIDs = new List<int>();
             foreach (var id in oldIDs)
@@ -64,40 +87,47 @@ namespace ATT
             {
                 if (!oldItemsByID.ContainsKey(id)) brandNewIDs.Add(id);
             }
-            if (missingIDs.Any())
+
+            if (missingIDs.Any()) removals = true;
+            if (brandNewIDs.Any()) additions = true;
+
+            //if (missingIDs.Any())
+            //{
+            Console.Write(missingIDs.Count);
+            Console.WriteLine(" Missing Items in the New DB compared to the Old DB.");
+            //System.Threading.Thread.Sleep(1000);
+            bool comma = false;
+            foreach (var id in missingIDs)
             {
-                Console.Write("Missing ");
-                Console.Write(missingIDs.Count);
-                Console.WriteLine(" Items in the New DB compared to the Old DB.");
-                System.Threading.Thread.Sleep(1000);
-                int i = 0;
-                foreach (var id in missingIDs)
-                {
-                    if (i++ > 0) Console.Write(", ");
-                    Console.Write(id);
-                }
-                Console.WriteLine();
+                if (comma)
+                    Console.Write(", ");
+                Console.Write(id);
+                comma = true;
             }
-            else Console.WriteLine("No items missing.");
-            if (brandNewIDs.Any())
+            Console.WriteLine();
+            //}
+            //else Console.WriteLine("No items missing.");
+            //if (brandNewIDs.Any())
+            //{
+            Console.Write(brandNewIDs.Count);
+            Console.WriteLine(" Brand New Items in the New DB compared to the Old DB.");
+            //System.Threading.Thread.Sleep(1000);
+            comma = false;
+            foreach (var id in brandNewIDs)
             {
-                Console.Write(missingIDs.Count);
-                Console.Write(" Brand New Items in the New DB compared to the Old DB.");
-                System.Threading.Thread.Sleep(1000);
-                int i = 0;
-                foreach (var id in brandNewIDs)
-                {
-                    if (i++ > 0) Console.Write(", ");
-                    Console.Write(id);
-                }
-                Console.WriteLine();
+                if (comma)
+                    Console.Write(", ");
+                Console.Write(id);
+                comma = true;
             }
-            else Console.WriteLine("No brand new items found.");
+            Console.WriteLine();
+            //}
+            //else Console.WriteLine("No brand new items found.");
 
             // Step 7: Compare the Items directly.
-            foreach(var id in oldIDs)
+            foreach (var id in oldIDs)
             {
-                if (newItemsByID.TryGetValue(id, out Dictionary<string, object> newItem) 
+                if (newItemsByID.TryGetValue(id, out Dictionary<string, object> newItem)
                     && oldItemsByID.TryGetValue(id, out Dictionary<string, object> oldItem))
                 {
                     var missingKeys = new List<string>();
@@ -122,60 +152,79 @@ namespace ATT
                     {
                         if (!oldItem.ContainsKey(key)) brandNewKeys.Add(key);
                     }
-                    if (missingKeys.Any())
+                    bool missing = missingKeys.Any();
+                    bool added = brandNewKeys.Any();
+                    if (missing || added)
                     {
-                        Console.Write("Missing ");
-                        Console.Write(missingKeys.Count);
-                        Console.Write(" Keys for Item #");
-                        Console.Write(id);
-                        Console.Write(": ");
-                        System.Threading.Thread.Sleep(1000);
-                        int i = 0;
-                        foreach (var key in missingKeys)
-                        {
-                            if (i++ > 0) Console.Write(", ");
-                            Console.Write(key);
-                        }
-                        Console.WriteLine();
-                    }
-                    if (brandNewKeys.Any())
-                    {
-                        Console.Write(brandNewKeys.Count);
-                        Console.Write(" Brand New Keys for Item #");
-                        Console.Write(id);
-                        Console.Write(": ");
-                        int i = 0;
-                        foreach (var key in brandNewKeys)
-                        {
-                            if (i++ > 0) Console.Write(", ");
-                            Console.Write(key);
-                        }
-                        Console.WriteLine();
-                    }
-                    foreach(var key in oldKeys)
-                    {
-                        if (newItem.TryGetValue(key, out object newValue)
-                            && oldItem.TryGetValue(key, out object oldValue)
-                            && !CompareValues(oldValue, newValue))
-                        {
-                            Console.Write("NEW VALUE FOR KEY ");
-                            Console.Write(key);
-                            Console.Write(" FOR ITEM #");
-                            Console.Write(id);
-                            Console.WriteLine(":");
+                        Console.Write("Item #" + id.ToString());
 
-                            Console.Write(" OLD: ");
-                            Console.WriteLine(MiniJSON.Json.Serialize(oldValue));
-                            Console.Write(" NEW: ");
-                            Console.WriteLine(MiniJSON.Json.Serialize(newValue));
-                            Console.ReadLine();
+                        if (missing)
+                        {
+                            removals = true;
+                            Console.WriteLine();
+                            Console.Write("- EMPTY : ");
+                            comma = false;
+                            foreach (var key in missingKeys)
+                            {
+                                if (comma)
+                                    Console.Write(", ");
+                                Console.Write(key);
+                                comma = true;
+                            }
+                            //Console.WriteLine();
                         }
+                        if (added)
+                        {
+                            additions = true;
+                            Console.WriteLine();
+                            Console.Write("- ADDED : ");
+                            comma = false;
+                            foreach (var key in brandNewKeys)
+                            {
+                                if (comma)
+                                    Console.Write(", ");
+                                Console.Write(key);
+                                comma = true;
+                            }
+                        }
+                        foreach (var key in oldKeys)
+                        {
+                            if (newItem.TryGetValue(key, out object newValue)
+                                && oldItem.TryGetValue(key, out object oldValue)
+                                && !CompareValues(oldValue, newValue))
+                            {
+                                changes = true;
+                                Console.WriteLine();
+                                Console.Write("- CHANGE: " + key + ": " + MiniJSON.Json.Serialize(oldValue) + " --> " + MiniJSON.Json.Serialize(newValue));
+                                //Console.WriteLine();
+                                //Console.Write("NEW VALUE FOR KEY ");
+                                //Console.Write(key);
+                                //Console.Write(" FOR ITEM #");
+                                //Console.Write(id);
+                                //Console.WriteLine(":");
+
+                                //Console.Write(" OLD: ");
+                                //Console.WriteLine(MiniJSON.Json.Serialize(oldValue));
+                                //Console.Write(" NEW: ");
+                                //Console.WriteLine(MiniJSON.Json.Serialize(newValue));
+                                //Console.ReadLine();
+                            }
+                        }
+                        Console.WriteLine();
                     }
                 }
             }
 
+            Console.WriteLine("=== Summary ===");
+            if (additions)
+                Console.WriteLine("- ADDITIONS");
+            if (changes)
+                Console.WriteLine("- CHANGES");
+            if (removals)
+                Console.WriteLine("- REMOVALS");
+
             Console.WriteLine("Press Enter to Close");
-            Console.ReadLine();
+            //Console.ReadLine();
         }
 
         private static bool CompareValues(object oldValue, object newValue)

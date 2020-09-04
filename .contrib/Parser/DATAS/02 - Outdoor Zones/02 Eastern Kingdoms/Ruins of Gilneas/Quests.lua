@@ -60,7 +60,7 @@ _.Zones =
 						},
 					}),
 					q(27322, {	-- Korok's Second Head
-						["crs"] = { 45301 },	-- Korok the Colossus
+						["crs"] = { 45301, 46657 },	-- Korok the Colossus
 						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 60956 },	-- Korok's Second Head
 						["sourceQuests"] = { 27290 }, 	-- To Forsaken Forward Command
