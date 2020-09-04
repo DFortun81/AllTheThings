@@ -587,6 +587,7 @@ _.NeverImplemented =
 		q(31639),	-- Shado-Pan Monastery Challenge Mode - Silver Addition (Nth)
 		q(35319),	-- Shado-Pan Monastery normal clear
 		q(35320),	-- Shado-Pan Monastery Reward Quest
+		q(35461),	-- Siege of Niuzao Reward Quest
 		q(31633),	-- Siege of Niuzao Temple Challenge Mode - Bronze Addition (Nth)
 		q(31626),	-- Siege of Niuzao Temple Challenge Mode - Consolation (Nth)
 		q(31647),	-- Siege of Niuzao Temple Challenge Mode - Gold Addition (Nth)
