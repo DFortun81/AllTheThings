@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -16,7 +17,7 @@ _.Zones =
 					ql(q(30093, {	-- Assassinate Creed
 						["provider"] = { "n", 57770 },	-- Zazzo Twinklefingers
 						["coord"] = { 70.0, 40.8, 21 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["lvl"] = 85,
 						["sourceQuests"] = { 30092 },	-- Our Man in Gilneas
 					})),
@@ -93,7 +94,7 @@ _.Zones =
 						["provider"] = { "n", 57770 },	-- Zazzo Twinklefingers
 						["lvl"] = 85,
 						["coord"] = { 70.0, 40.8, 21 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["sourceQuests"] = { 30093 },	-- Assassinate Creed
 						["g"] = {
 							i(77945),	-- Fear
