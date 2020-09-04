@@ -3742,6 +3742,9 @@ local function PopulateQuestObject(questObject)
 		end
 	end
 	
+	-- Since this is not a metatable yet, create a raw isRepeatable value for use prior to that
+	questObject.isRepeatable = questObject.isDaily or questObject.isWeekly or questObject.isMonthly or questObject.isYearly;
+	
 	-- Query quest name if not existing
 	-- This messes up World Bosses somehow, and not sorting on quest names, so don't need to pull it right here
 	-- if not questObject.text then
@@ -12967,7 +12970,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 			self.data = {
 				['text'] = "World Quests",
 				['icon'] = "Interface\\Icons\\INV_Misc_Map08.blp", 
-				["description"] = "These are World Quests that are currently available somewhere. Go get 'em!",
+				["description"] = "These are World Quests and other time-limited Things that are currently available somewhere. Go get 'em!",
 				['visible'] = true, 
 				['expanded'] = true,
 				["indent"] = 0,
@@ -12976,7 +12979,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					{
 						['text'] = "Update World Quests Now",
 						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!",
+						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!\n\nAlt + Click to include currently-available Things which may not be time-limited",
 						['hash'] = "funUpdateWorldQuests",
 						['OnClick'] = function(data, button)
 							Push(self, "WorldQuests-Rebuild", self.Rebuild);
@@ -13074,7 +13077,11 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				-- Rebuild all World Quest data
 				local retry = false;
 				local temp = {};
-				local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
+				-- options when refreshing the list
+				local includeAll = app.Settings:Get("DebugMode");
+				local includeQuests = app.Settings:Get("Thing:Quests") or includeAll;
+				local includePermanent = IsAltKeyDown() or includeAll;
+				local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies") or includeAll;
 				
 				-- Acquire all of the emissary quests
 				for _,pair in ipairs(emissaryMapIDs) do
@@ -13174,66 +13181,92 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							-- see if need to retry based on missing data
 							retry = retry or questObject.missingData;
 							
-							--print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID, timeRemaining);
+							--print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID,#questObject.g,questObject.repeatable,questObject.timeRemaining);
 							--print(tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft);
-							if poi.mapID ~= mapID then
-								local subMapObject = GetPopulatedMapObject(poi.mapID);
-								MergeObject(subMapObject.g, questObject);
-								MergeObject(mapObject.g, subMapObject);
-							else
-								MergeObject(mapObject.g, questObject);
-							end
-						end
-					end
-					
-					-- Available Quest Lines, only pull this info if Quest tracking or Debug is enabled
-					if app.Settings:Get("Thing:Quests") or app.Settings:Get("DebugMode") then	
-
-						-- Look for quest lines on the provided map
-						C_QuestLine.RequestQuestLinesForMap(mapID);
-						local questLines = C_QuestLine.GetAvailableQuestLines(mapID)
-						if questLines then
-							for id,questLine in pairs(questLines) do
-								-- dont show 'hidden' quest lines... not sure what this is exactly
-								if not questLine.hidden then
-									local questObject = GetPopulatedQuestObject(questLine.questID);
+							
+							-- only merge POIs with time remaining, or collectible rewards unless shift is held down (bonus objectives are POIs but not time-limited)
+							-- repeatable tasks usually indicate quests which are also up for long durations of time, but will expire (warfront scenario, etc.)
+							if includeAll or
+								-- include the quest in the list if holding shift and tracking quests
+								(includePermanent and includeQuests) or 
+								-- or if it has a collectible and is repeatable (i.e. one attempt per day/week/year)
+								(#questObject.g > 0 and questObject.isRepeatable) or 
+								-- or if it has time remaining
+								(questObject.timeRemaining or 0 > 0) then
+								if poi.mapID ~= mapID then
+									local subMapObject = GetPopulatedMapObject(poi.mapID);
+									MergeObject(subMapObject.g, questObject);
+									MergeObject(mapObject.g, subMapObject);
+								else
 									MergeObject(mapObject.g, questObject);
 								end
 							end
-						else
-							-- print("No questline data yet for mapID:",mapID);
-							retry = true;
-						end
-						
-						-- look for quest lines on 'Zone' map child maps as well
-						local mapChildInfos = C_Map.GetMapChildrenInfo(mapID, 3, false)
-						if mapChildInfos then
-							for i,mapInfo in ipairs(mapChildInfos) do
-								local subMapObject = GetPopulatedMapObject(mapInfo.mapID);
-								C_QuestLine.RequestQuestLinesForMap(mapInfo.mapID);
-								local questLines = C_QuestLine.GetAvailableQuestLines(mapInfo.mapID)
-								if questLines then
-									for id,questLine in pairs(questLines) do
-										-- dont show 'hidden' quest lines... not sure what this is exactly
-										if not questLine.hidden then
-											local questObject = GetPopulatedQuestObject(questLine.questID);
-											MergeObject(subMapObject.g, questObject);
-										end
-									end
-								else
-									-- print("No questline data yet for mapInfo.mapID:",mapInfo.mapID);
-									retry = true;
-								end
-								
-								MergeObject(mapObject.g, subMapObject);
-							end
 						end
 					end
 					
+					-- Available Quest Lines/Map Quest Icons
+					-- Look for quest lines on the provided map
+					C_QuestLine.RequestQuestLinesForMap(mapID);
+					local questLines = C_QuestLine.GetAvailableQuestLines(mapID)
+					if questLines then
+						for id,questLine in pairs(questLines) do
+							-- dont show 'hidden' quest lines... not sure what this is exactly
+							if not questLine.hidden then
+								local questObject = GetPopulatedQuestObject(questLine.questID);
+								if includeAll or
+									-- include the quest in the list if holding shift and tracking quests
+									(includePermanent and includeQuests) or 
+									-- or if it has a collectible and is repeatable (i.e. one attempt per day/week/year)
+									(#questObject.g > 0 and questObject.isRepeatable) or 
+									-- or if it has time remaining
+									(questObject.timeRemaining or 0 > 0) then
+									MergeObject(mapObject.g, questObject);
+								end
+							end
+						end
+					else
+						-- print("No questline data yet for mapID:",mapID);
+						retry = true;
+					end
+					
+					-- look for quest lines on 'Zone' map child maps as well
+					local mapChildInfos = C_Map.GetMapChildrenInfo(mapID, 3, false)
+					if mapChildInfos then
+						for i,mapInfo in ipairs(mapChildInfos) do
+							local subMapObject = GetPopulatedMapObject(mapInfo.mapID);
+							C_QuestLine.RequestQuestLinesForMap(mapInfo.mapID);
+							local questLines = C_QuestLine.GetAvailableQuestLines(mapInfo.mapID)
+							if questLines then
+								for id,questLine in pairs(questLines) do
+									-- dont show 'hidden' quest lines... not sure what this is exactly
+									if not questLine.hidden then
+										local questObject = GetPopulatedQuestObject(questLine.questID);
+										if includeAll or
+											-- include the quest in the list if holding shift and tracking quests
+											(includePermanent and includeQuests) or 
+											-- or if it has a collectible and is repeatable (i.e. one attempt per day/week/year)
+											(#questObject.g > 0 and questObject.isRepeatable) or 
+											-- or if it has time remaining
+											(questObject.timeRemaining or 0 > 0) then
+											MergeObject(subMapObject.g, questObject);
+										end
+									end
+								end
+							else
+								-- print("No questline data yet for mapInfo.mapID:",mapInfo.mapID);
+								retry = true;
+							end
+							
+							-- if #subMapObject.g > 0 then
+							MergeObject(mapObject.g, subMapObject);
+							-- end
+						end
+					end
+									
 					-- Merge everything for this map into the list
 					if #mapObject.g > 0 then
 						table.sort(mapObject.g, self.Sort);
-						-- Sort the map groups as well
+						-- Sort the sub-groups as well
 						for i,mapGrp in ipairs(mapObject.g) do
 							if (mapGrp.mapID and mapGrp.g and #mapGrp.g > 1) then
 								table.sort(mapGrp.g, self.Sort);
@@ -13244,7 +13277,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				end
 				
 				-- Heroic Deeds
-				if not (CompletedQuests[32900] or CompletedQuests[32901]) then
+				if includePermanent and not (CompletedQuests[32900] or CompletedQuests[32901]) then
 					local mapObject = GetPopulatedMapObject(424);
 					cache = fieldCache["questID"][app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901];
 					if cache then
