@@ -1233,6 +1233,15 @@ _.NeverImplemented =
 		q(44427),	-- Monk Order Hall - Brewmaster Chosen
 		q(44646),	-- Monk Order Hall - Tracking Quest: 7.0 Class Hall - Monk - Pacing Mission 1 - Unlocks Ch 2
 
+		-- Paladin class campaign
+		q(38713),	-- The Crusade Calls. Triggered with An Urgent Gathering 38710
+		q(40409),	-- Ashbringer Chosen (Retribution)
+		q(42495),	-- Ashbringer Chosen (Retribution)
+		q(40410),	-- Silver Hand Chosen (Holy)
+		q(42497),	-- Silver Hand Chosen (Holy)
+		q(40411),	-- Truthguard Chosen (Protection)
+		q(42496),	-- Truthguard Chosen (Protection)
+
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second
 		q(44376),	-- Rogue Order Hall - Assassination Chosen
