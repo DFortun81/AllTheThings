@@ -1830,7 +1830,7 @@ end);
 seasonalEnable:SetPoint("TOPLEFT", seasonalFrame, "TOPLEFT", 4, -4);
 
 -- seasonal Everything
-local seasonalAll = child:CreateCheckBox("Enable All Seasonal",
+local seasonalAll = child:CreateCheckBox("Toggle All Seasonal",
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("SeasonalFilters")
@@ -1933,7 +1933,7 @@ end);
 unobtainableEnable:SetPoint("TOPLEFT",unobtainable,5,-20)
 
 -- unobtainable Everything
-local unobtainableAll = child:CreateCheckBox("Enable All Unobtainable",
+local unobtainableAll = child:CreateCheckBox("Toggle All Unobtainable",
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
@@ -1976,7 +1976,7 @@ noChanceFrame:SetPoint("RIGHT", child, -4, 0);
 noChanceFrame:SetHeight(120);
 
 -- no chance Everything
-local noChanceAll = child:CreateCheckBox("Enable All \"No Chance\"",
+local noChanceAll = child:CreateCheckBox("Toggle All \"No Chance\"",
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
@@ -2057,7 +2057,7 @@ highChanceFrame:SetPoint("RIGHT", child, -4, 0);
 highChanceFrame:SetHeight(90);
 
 -- high Everything
-local highChanceAll = child:CreateCheckBox("Enable All \"High Chance\"",
+local highChanceAll = child:CreateCheckBox("Toggle All \"High Chance\"",
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
