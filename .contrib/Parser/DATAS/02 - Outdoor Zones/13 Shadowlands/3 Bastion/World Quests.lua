@@ -19,6 +19,30 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
+				q(59601, {	-- Assault on the Vestibule
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(59717, {	-- Things Remembered
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(62258, {	-- Soaring Over Bastion
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(61967, {	-- Remedial Lessons
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(62235, {	-- Allay Their Fears
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(60565, {	-- A Steward for Every Occasion
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
 			}),
 		}),
 	}),

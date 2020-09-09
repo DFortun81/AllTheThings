@@ -673,3 +673,7 @@ t(174873);	-- Trans-mogu-rifier
 t(174995);	-- Void Tendril Pet Leash
 t(174921);	-- Void-Touched Skull
 t(174924);	-- Void-Touched Souvenir Totem
+
+
+-- Beta Toys
+t(182729);	-- Hearty Dragon Plume

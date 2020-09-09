@@ -12,6 +12,7 @@ i(177634, 1);	-- Vial of Volatile Essence
 i(178828, 1);	-- Nathrian Tabernacle
 i(178852, 1);	-- Vessel of Shining Radiance
 i(178868, 1);	-- Deathwalker's Promise
+i(179564, 1);	-- Faesworn Channeling Root
 
 -- Cloaks
 i(178732, 3);	-- Abominable Visage
@@ -27,6 +28,7 @@ i(180123, 3);	-- Drape of Twisted Loyalties
 i(183034, 3);	-- Cowled Batwing Cloak
 i(183033, 3);	-- Mantle of Manifest Sins
 i(183032, 3);	-- Crest of the Legionnaire General
+i(181301, 3);	-- Faewoven Branches
 
 -- Cloth
 i(178735, 4);	-- Blight Belcher
@@ -109,6 +111,10 @@ i(183022, 4);	-- Impossibly Oversized Mitts
 i(182981, 4);	-- Leggings of Lethal Reverberations
 i(182998, 4);	-- Robes of the Cursed Commando
 i(183020, 4);	-- Shawl of the Penitent
+i(175586, 4);	-- Faewoven Handwraps
+i(179657, 4);	-- Faewoven Tunic
+i(175576, 4);	-- Faewoven Raiment
+i(175581, 4);	-- Faewoven Sandals
 
 -- Leather
 i(178731, 5);	-- Viscera-Stitched Footpads
@@ -190,6 +196,13 @@ i(183030, 5);	-- Enchanted Toe-Tappers
 i(183005, 5);	-- Heedless Pugilist's Harness
 i(183029, 5);	-- Wicked Flanker's Gorget
 i(182980, 5);	-- Sadist's Sinister Mask
+i(181185, 5);	-- Soulstalker Breeches
+i(181187, 5);	-- Soulstalker Bindings
+i(181671, 5);	-- Corpsehide Spaulders
+i(179767, 5);	-- Oakheart Armguards
+i(179765, 5);	-- Oakheart Tunic
+i(179774, 5);	-- Oakheart Vestment
+i(179766, 5);	-- Oakheart Anklewraps
 
 -- Mail
 i(178733, 6);	-- Blightbone Spaulders
@@ -272,6 +285,10 @@ i(183016, 6);	-- Load-Bearing Belt
 i(183006, 6);	-- Stoneclas Stompers
 i(182991, 6);	-- Oathsworn Soldier's Gauntlets
 i(183003, 6);	-- Pauldrons of Fatal Finality
+i(181911, 6);	-- Runewarden's Gloves
+i(181909, 6);	-- Runewarden's Hauberk
+i(181979, 6);	-- Runewarden's Vestment
+i(181910, 6);	-- Runewarden's Boots
 
 -- Plate
 i(178734, 7);	-- Fused Bone Greatbelt
@@ -355,6 +372,9 @@ i(182999, 7);	-- Rampaging Giant's Chestplate
 i(182984, 7);	-- Colossal Plate Gauntlets
 i(183002, 7);	-- Ceremonial Parade Legguards
 i(182997, 7);	-- Diadem of Imperious Desire
+i(179890, 7);	-- Queensguard Gauntlets
+i(179888, 7);	-- Queensguard Chestplate
+i(179889, 7);	-- Queensguard Sabatons
 
 -- Shields
 i(178750, 8);	-- Encrusted Canopic Lid
@@ -382,6 +402,8 @@ i(178853, 20);	-- Voracious Gorger Spine
 i(178753, 20);	-- Surgical Pustule Extractor
 i(178928, 20);	-- Domina's Oozing Shiv
 i(178789, 20);	-- Fleshcrafter's Knife
+i(179498, 20);	-- Faesworn Barb
+i(182323, 20);	-- Faesworn Spellblade
 
 -- 1H Axes
 i(178711, 21);	-- Axe of the Deadgrove
@@ -411,11 +433,14 @@ i(178710, 23);	-- Tanglewood Thorn
 i(178855, 23);	-- Sinsmasher
 i(178752, 23);	-- Sophisticated Bonecracker
 i(178864, 23);	-- Gorebound Predator's Gavel
+i(179546, 23);	-- Faesworn Warclub
+i(182322, 23);	-- Faesworn Gavel
 
 -- 2H Maces
 i(178024, 24);	-- Gormhusk Bludgeon
 i(177652, 24);	-- Splinterball Morningstar
 i(177644, 24);	-- Sinfall Reclaimer's Greatmace
+i(179536, 24);	-- Faesworn Warmaul
 
 -- 1H Swords
 i(178737, 25);	-- Amarth's Spellblade
@@ -434,6 +459,7 @@ i(177639, 25);	-- Sinfall Guardian's Rapier
 i(179328, 25);	-- Bloodspiller
 i(178856, 25);	-- Kaal's Gloomblade
 i(178754, 25);	-- Poxstorm, Longsword of Pestilence
+i(179515, 25);	-- Faesworn Falchion
 
 -- 2H Swords
 i(178780, 26);	-- Rimebinder's Runeblade
@@ -464,6 +490,8 @@ i(178025, 29);	-- Gormstinger Spear
 i(178929, 29);	-- Halberd of the Aranakk
 i(180096, 29);	-- Devos' Cacophonous Poleaxe
 i(178865, 29);	-- Xav's Pike of Authority
+i(179531, 29);	-- Faesworn Reaper
+i(181209, 29);	-- Devourer's Bite
 
 -- Spears
 -- i(XXX, 30);	-- Item
@@ -475,6 +503,7 @@ i(180112, 31);	-- The Philosopher
 
 -- Bows
 i(175983, 32);	-- Heartwood Bow
+i(179583, 32);	-- Faesworn Warbow
 
 -- Crossbows
 i(176330, 31);	-- Guidenote Crossbow
@@ -493,6 +522,8 @@ i(178030, 35);	-- Gormstinger Warglaive
 i(177648, 35);	-- Honed Dredglaive
 i(177638, 35);	-- Sinfall Edgemaster's Blade
 i(178854, 35);	-- Hungering Devourer's Twinblade
+i(179511, 35);	-- Faesworn Glaive
+i(179510, 35);	-- Dreamsong Warglaive
 
 -- Neck
 i(175739, 51);	-- Reclaimed Maldraxxi Choker

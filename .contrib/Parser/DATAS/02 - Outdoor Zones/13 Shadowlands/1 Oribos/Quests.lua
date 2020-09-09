@@ -110,13 +110,13 @@ _.Zones =
 				-- Choosing Your Covenant
 				q(57877, {	-- The Looming Dark
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1525 },
+					["coord"] = { 38.8, 70.0, 1670 },
 					["sourceQuest"] = 57876,	-- The End of the Beginning
 					["lvl"] = 60,
 				}),
 				q(57878, {	-- Choosing Your Purpose
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1525 },
+					["coord"] = { 38.8, 70.0, 1670 },
 					["sourceQuest"] = 57877,	-- The Looming Dark
 					["lvl"] = 60,
 					["g"] = {
@@ -125,28 +125,44 @@ _.Zones =
 				}),
 				q(59314, {	-- Sinfall
 					["provider"] = { "n", 171589 },	-- General Draven
-					["coord"] = { 44.8, 68.9, 1525 },
+					["coord"] = { 44.8, 68.9, 1670 },
 					["sourceQuest"] = 57878,	-- Choosing Your Purpose
 					["lvl"] = 60,
 				}),
 				q(60491, {	-- Among the Kyrian
 					["provider"] = { "n", 171787 },	-- Polemarch Adrestes
-					["coord"] = { 36.1, 64.1, 1525 },
+					["coord"] = { 36.1, 64.1, 1670 },
 					["sourceQuest"] = 57878,	-- Choosing Your Purpose
 					["lvl"] = 60,
 				}),
 				q(58609, {	-- Taking The Seat
 					["provider"] = { "n", 171821 },	-- Baroness Draka
-					["coord"] = { 42.9, 74.1, 1525 },
+					["coord"] = { 42.9, 74.1, 1670 },
 					["sourceQuest"] = 57878,	-- Choosing Your Purpose
 					["lvl"] = 60,
 				}),
 				q(61475, {	-- The Heart of the Forest
 					["provider"] = { "n", 171795 },	-- Lady Moonberry
-					["coord"] = { 39.7, 60.8, 1525 },
+					["coord"] = { 39.7, 60.8, 1670 },
 					["sourceQuest"] = 57878,	-- Choosing Your Purpose
 					["lvl"] = 60,
 				}),
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				q(60286, {	-- A Token of Our Admiration
+					["provider"] = { "n", 168432 },	-- Ve'rayn
+					["coord"] = { 33.2, 48.9, 1670 },
+					["lvl"] = 60,
+				}),
+				
+				
 			}),
 		}),
 	}),

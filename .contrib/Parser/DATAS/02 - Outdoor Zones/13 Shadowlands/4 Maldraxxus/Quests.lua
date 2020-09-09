@@ -475,7 +475,10 @@ _.Zones =
 				q(59974, {	-- A Soul Saved
 					["provider"] = { "n", 167903 },	-- Baroness Draka
 					["coord"] = { 39.1, 49.9, 1670 },
-					["sourceQuest"] = 61190,	-- Wake of Ashes
+					["sourceQuests"] = {
+						61190,	-- Wake of Ashes
+						62654,	-- Maw Walker
+					},
 					["lvl"] = 54,
 				}),
 			-- The Empty Throne

@@ -266,6 +266,7 @@ end
 		[2480] = 171,	-- Draenor Alchemy [8.0.1]
 		[2479] = 171,	-- Legion Alchemy [8.0.1]
 		[2478] = 171,	-- Kul Tiran Alchemy [8.0.1]
+		[2750] = 171,	-- Shadowlands Alchemy [9.0.1]
 		
 		-- Archaeology Skills
 		[794] = 794,	-- Archaeology [7.3.5]
@@ -280,6 +281,7 @@ end
 		[2472] = 164,	-- Draenor Blacksmithing [8.0.1]
 		[2454] = 164,	-- Legion Blacksmithing [8.0.1]
 		[2437] = 164,	-- Kul Tiran Blacksmithing [8.0.1]
+		[2751] = 164,	-- Shadowlands Blacksmithing [9.0.1]
 		
 		-- Cooking Skills
 		[185] = 185,	-- Cooking [7.3.5]
@@ -297,6 +299,7 @@ end
 		[2543] = 185,	-- Draenor Cooking [8.0.1]
 		[2542] = 185,	-- Legion Cooking [8.0.1]
 		[2541] = 185,	-- Kul Tiran Cooking [8.0.1]
+		[2752] = 185,	-- Shadowlands Cooking [9.0.1]
 		
 		-- Enchanting Skills
 		[333] = 333,	-- Enchanting [7.3.5]
@@ -308,6 +311,7 @@ end
 		[2488] = 333,	-- Draenor Enchanting [8.0.1]
 		[2487] = 333,	-- Legion Enchanting [8.0.1]
 		[2486] = 333,	-- Kul Tiran Enchanting [8.0.1]
+		[2753] = 333,	-- Shadowlands Enchanting [8.0.1]
 		
 		-- Engineering Skills
 		[202] = 202,	-- Engineering [7.3.5]
@@ -319,6 +323,7 @@ end
 		[2501] = 202,	-- Draenor Engineering [8.0.1]
 		[2500] = 202,	-- Legion Engineering [8.0.1]
 		[2499] = 202,	-- Kul Tiran Engineering [8.0.1]
+		[2755] = 202,	-- Shadowlands Engineering [9.0.1]
 		
 		-- First Aid Skills
 		[129] = 129,	-- First Aid [7.3.5] [REMOVED FROM GAME]
@@ -333,6 +338,7 @@ end
 		[2587] = 356,	-- Draenor Fishing [8.0.1]
 		[2586] = 356,	-- Legion Fishing [8.0.1]
 		[2585] = 356,	-- Kul Tiran Fishing [8.0.1]
+		[2754] = 356,	-- Shadowlands Fishing [9.0.1]
 		
 		-- Herbalism Skills
 		[182] = 182,	-- Herbalism [7.3.5]
@@ -344,6 +350,7 @@ end
 		[2551] = 182,	-- Draenor Herbalism [8.0.1]
 		[2550] = 182,	-- Legion Herbalism [8.0.1]
 		[2549] = 182,	-- Kul Tiran Herbalism [8.0.1]
+		[2760] = 182,	-- Shadowlands Herbalism [9.0.1]
 		
 		-- Inscription Skills
 		[773] = 773,	-- Inscription [7.3.5]
@@ -355,6 +362,7 @@ end
 		[2509] = 773,	-- Draenor Inscription [8.0.1]
 		[2508] = 773,	-- Legion Inscription [8.0.1]
 		[2507] = 773,	-- Kul Tiran Inscription [8.0.1]
+		[2756] = 773,	-- Shadowlands Inscription [8.0.1]
 		
 		-- Jewelcrafting Skills
 		[755] = 755,	-- Jewelcrafting [7.3.5]
@@ -366,6 +374,7 @@ end
 		[2519] = 755,	-- Draenor Jewelcrafting [8.0.1]
 		[2518] = 755,	-- Legion Jewelcrafting [8.0.1]
 		[2517] = 755,	-- Kul Tiran Jewelcrafting [8.0.1]
+		[2757] = 755,	-- Shadowlands Jewelcrafting [9.0.1]
 		
 		-- Leatherworking Skills
 		[165] = 165,	-- Leatherworking [7.3.5]
@@ -377,6 +386,7 @@ end
 		[2527] = 165,	-- Draenor Leatherworking [8.0.1]
 		[2526] = 165,	-- Legion Leatherworking [8.0.1]
 		[2525] = 165,	-- Kul Tiran Leatherworking [8.0.1]
+		[2758] = 165,	-- Shadowlands Leatherworking [9.0.1]
 		
 		-- Mining Skills
 		[186] = 186,	-- Mining [7.3.5]
@@ -388,6 +398,7 @@ end
 		[2567] = 186,	-- Draenor Mining [8.0.1]
 		[2566] = 186,	-- Legion Mining [8.0.1]
 		[2565] = 186,	-- Kul Tiran Mining [8.0.1]
+		[2761] = 186,	-- Shadowlands Mining [9.0.1]
 		
 		-- Skinning Skills
 		[393] = 393,	-- Skinning [7.3.5]
@@ -399,6 +410,7 @@ end
 		[2559] = 393,	-- Draenor Skinning [8.0.1]
 		[2558] = 393,	-- Legion Skinning [8.0.1]
 		[2557] = 393,	-- Kul Tiran Skinning [8.0.1]
+		[2762] = 393,	-- Shadowlands Skinning [9.0.1]
 		
 		-- Tailoring Skills
 		[197] = 197,	-- Tailoring [7.3.5]
@@ -410,6 +422,7 @@ end
 		[2535] = 197,	-- Draenor Tailoring [8.0.1]
 		[2534] = 197,	-- Legion Tailoring [8.0.1]
 		[2533] = 197,	-- Kul Tiran Tailoring [8.0.1]
+		[2759] = 197,	-- Shadowlands Tailoring [9.0.1]
 	};
 	app.GetBaseTradeSkillID = function(skillID)
 		return tradeSkillMap[skillID] or skillID;
@@ -6810,7 +6823,7 @@ end)();
 		"Interface\\Icons\\Achievement_boss_hellfire_archimonde",	-- WoD
 		"Interface\\Icons\\achievements_zone_brokenshore",			-- Legion
 		"Interface\\Icons\\achievement_cloudnine",					-- Battle For Azeroth
-		"Interface\\Icons\\Spell_shadow_twilight",					-- Shadowlands (Placeholder)
+		"Interface\\Icons\\inv_torghast",							-- Shadowlands
 	};
 	local tierLevel = {
 		1, 		-- Classic
@@ -14926,6 +14939,22 @@ app.events.VARIABLES_LOADED = function()
 			-- If you completed the achievement, then mark the associated quests.
 			if select(4, GetAchievementInfo(achievementQuests[1])) then
 				for j,questID in ipairs(achievementQuests[2]) do
+					rawset(CompletedQuests, questID, 2);
+					if not myQuests[questID] then
+						myQuests[questID] = 2;
+						quests[questID] = 1;
+					end
+				end
+			end
+		end
+		-- Cache some collection states for account wide quests that aren't actually account wide. (Secrets) 
+		for i,appearanceQuests in ipairs({
+			{ 98614, { 52829, 52830, 52831, 52898, 52899, 52900, 52901, 52902, 52903, 52904, 52905, 52906, 52907, 52908, 52909, 52910, 52911, 52912, 52913, 52914, 52915, 52916, 52917, 52918, 52919, 52920, 52921, 52922, 52822, 52823, 52824, 52826} },	-- Waist of Time
+		}) do
+			-- If you have the appearance, then mark the associated quests.
+			local SourceInfo = C_TransmogCollection_GetSourceInfo(appearanceQuests[1]);
+			if SourceInfo.isCollected then
+				for j,questID in ipairs(appearanceQuests[2]) do
 					rawset(CompletedQuests, questID, 2);
 					if not myQuests[questID] then
 						myQuests[questID] = 2;

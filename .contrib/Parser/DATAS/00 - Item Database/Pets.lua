@@ -884,4 +884,7 @@ pet(166455, 2550);	-- Zur'aj the Depleted
 
 
 -- Beta Pets
-pet(173891, 2798);	-- 	Plagueborn Slime
+pet(173891, 2798);	-- Plagueborn Slime
+pet(182673, 3022);	-- Shimmerbough Hoarder
+pet(180642, 2909);	-- Downfeather Ragewing
+pet(180630, 2921);	-- Gorm Harrier

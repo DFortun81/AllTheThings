@@ -5,8 +5,9 @@
 _.Instances = { tier(9, {	-- Shadowlands
 	inst(1186, {	-- Spires of Ascension
 		["coord"] = { 58.5, 28.5, 1533 },
---		["maps"] = {
---		},
+		["maps"] = {
+			1692,	-- Honor's Ascent
+		},
 		["lvl"] = 50,
 		["g"] = {					
 			d(1, {	-- Normal

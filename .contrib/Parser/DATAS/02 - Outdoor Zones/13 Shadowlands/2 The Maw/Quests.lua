@@ -216,6 +216,12 @@ _.Zones =
 					["sourceQuest"] = 59973,	-- A Bond Beyond Death
 					["lvl"] = 54,
 				}),
+				q(62654, {	-- Maw Walker
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 49.9, 41.6, 1543 },
+					["sourceQuest"] = 59973,	-- A Bond Beyond Death
+					["lvl"] = 60,
+				}),
 			-- The Prince and the Tower (Prince Renathal) (Revendreth Storyline)
 				q(57690, {	-- Cages For All Occasions
 					["provider"] = { "n", 158649 },	-- Vorpalia
@@ -237,6 +243,180 @@ _.Zones =
 					["g"] = {
 						i(175731),	-- Stolen Maw Badge
 					},
+				}),
+				
+				
+			-- These Quests should be sorted in the zones tab
+				q(60232, {	-- Souls of the Damned (Bastion)
+					["provider"] = { "n", 160212 },	-- Soulguide Daelia
+					["coord"] = { 33.9, 43.5, 1533 },
+					["sourceQuest"] = 57905,	-- A Unique Opportunity
+					["lvl"] = 60,
+				}),
+				q(60130, {	-- Souls of the Damned (Maldraxxus)
+					["provider"] = { "n", 167748 },	-- Osbourne Black
+				--	["coord"] = { 33.9, 43.5, 1536 },
+					["sourceQuest"] = 61397,	-- Opportunity Strikes
+					["lvl"] = 60,
+				}),
+				q(60234, {	-- Souls of the Damned (Revendreth)
+					["provider"] = { "n", 164738 },	-- Tenaval
+					["coord"] = { 46.6, 28.6, 1525 },
+					["sourceQuest"] = 59320,	-- Souls to Save
+					["lvl"] = 60,
+				}),
+				q(61508, {	-- Soul Salvation (Bastion)
+				--	["provider"] = { "n", 158553 },	-- Flutterby
+				--	["coord"] = { 33.9, 43.5, 1533 },
+					["sourceQuest"] = 60232,	-- Souls of the Damned (Bastion)
+					["lvl"] = 60,
+				}),
+				q(61513, {	-- Soul Salvation (Maldraxxus)
+				--	["provider"] = { "n", 158553 },	-- Flutterby
+				--	["coord"] = { 33.9, 43.5, 1536 },
+					["sourceQuest"] = 60130,	-- Souls of the Damned (Maldraxxus)
+					["lvl"] = 60,
+				}),
+				q(61515, {	-- Soul Salvation (Revendreth)
+					["provider"] = { "n", 158553 },	-- Tenaval
+					["coord"] = { 33.9, 43.5, 1525 },
+					["sourceQuest"] = 60234,	-- Souls of the Damned (Revendreth)
+					["lvl"] = 60,
+				}),
+
+
+
+				q(61496, {	-- A Familiar Energy
+					["provider"] = { "n", 172543 },	-- Rescued Soul
+					["coords"] = {
+						{ 33.8, 42.5, 1565 },	-- Ardenweald
+					--	{ 33.8, 42.5, 1533 },	-- Bastion
+					--	{ 33.8, 42.5, 1536 },	-- Maldraxxus
+					--	{ 33.8, 42.5, 1525 },	-- Revendreth
+					},
+					["sourceQuests"] = {
+						61508,	-- Soul Salvation (Ardenweald)
+						61508,	-- Soul Salvation (Bastion)
+						61513,	-- Soul Salvation (Maldraxxus)
+						61515,	-- Soul Salvation (Revendreth)
+					},
+					["lvl"] = 60,
+				}),
+				q(60234, {	-- Rule 1: Have an Escape Plan
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+					["sourceQuest"] = 61496,	-- A Familiar Energy
+					["lvl"] = 60,
+				}),
+				q(61391, {	-- The Eye of the Jailer
+					["sourceQuest"] = 61496,	-- A Familiar Energy
+					["lvl"] = 60,
+				}),
+				q(61355, {	-- Rule 2: Keep a Low Profile
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+					["sourceQuests"] = {
+						60234,	-- Rule 1: Have an Escape Plan
+						61391,	-- The Eye of the Jailer
+					},
+					["lvl"] = 60,
+				}),
+				q(60289, {	-- Rule 3: Trust is Earned
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+					["sourceQuest"] = 61355,	-- Rule 2: Keep a Low Profile
+					["lvl"] = 60,
+				}),
+				q(60134, {	-- A Tauren in Trade
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+					["sourceQuest"] = 60289,	-- Rule 3: Trust is Earned
+					["lvl"] = 60,
+				}),
+				q(60136, {	-- Into Torghast
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, 1670 },
+					["sourceQuest"] = 60134,	-- A Tauren in Trade
+					["lvl"] = 60,
+					["g"] = {
+						spell(334746),	-- Torghast
+					},
+				}),
+			-- Daughter of the Night Warrior (Ardenweald Covenant Questline)	
+				q(59181, {	-- Into the Maw
+					["provider"] = { "n", 164277 },	-- Shandris Feathermoon
+					["coord"] = { 39.2, 67.2, 1670 },
+					["sourceQuests"] = {
+						59246,	-- Daughter of the Night Warrior (Horde)
+						59179,	-- Daughter of the Night Warrior (Alliance)
+					},
+					["lvl"] = 60,
+				}),
+				q(60134, {	-- On the Trail
+					["provider"] = { "n", 174833 },	-- Shandris Feathermoon
+					["coord"] = { 44.3, 41.1, 1543 },
+					["sourceQuest"] = 59181,	-- Into the Maw
+					["lvl"] = 60,
+				}),
+				q(60530, {	-- The Sea of Souls
+					["provider"] = { "n", 168929 },	-- Shandris Feathermoon
+					["coord"] = { 30.1, 36.4, 1543 },
+					["sourceQuest"] = 60134,	-- On the Trail
+					["lvl"] = 60,
+				}),				
+				q(59189, {	-- The Recovery of Tyrande Whisperwind
+					["provider"] = { "n", 174834 },	-- Shandris Feathermoon
+					["coord"] = { 46.8, 41.7, 1543 },
+					["sourceQuest"] = 60530,	-- The Sea of Souls
+					["lvl"] = 60,
+					["maps"] = { 1720 },	-- Torghast Scenario
+				}),	
+				q(59242, {	-- Their New Home
+					["provider"] = { "n", 174834 },	-- Shandris Feathermoon
+					["coord"] = { 46.8, 41.7, 1543 },
+					["sourceQuest"] = 59189,	-- The Recovery of Tyrande Whisperwind
+					["lvl"] = 60,
+					["g"] = {
+						i(179498),	-- Faesworn Barb
+						i(182323),	-- Faesworn Spellblade
+						i(179546),	-- Faesworn Warclub
+						i(182322),	-- Faesworn Gavel
+						i(179515),	-- Faesworn Falchion
+						i(179511),	-- Faesworn Glaive
+						i(179583),	-- Faesworn Warbow
+						i(179536),	-- Faesworn Warmaul
+						i(179531),	-- Faesworn Reaper
+						i(179564),	-- Faesworn Channeling Root
+					},
+				}),
+				
+				
+				
+				
+			-- Dailys
+				q(61088, {	-- Dust to Dust
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+					["sourceQuest"] = 60289,	-- Rule 3: Trust is Earned
+					["isDaily"] = true,
+					["lvl"] = 60,
+				}),
+				q(61103, {	-- Thin Their Numbers
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+					["sourceQuest"] = 60289,	-- Rule 3: Trust is Earned
+					["isDaily"] = true,
+					["lvl"] = 60,
+				}),
+			-- Bonus Objectives
+				q(59007, {	-- Soul Well
+					["lvl"] = 60,
+				}),
+			-- Bonus Objectives ?? Rares or WQ
+				q(59441, {	-- The Soulsmith
+					["coord"] = { 36.2, 37.4, 1543 },
+					["isDaily"] = true,
+					["lvl"] = 60,
 				}),
 			}),
 		}),
