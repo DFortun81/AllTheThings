@@ -1,12 +1,13 @@
----------------------------------------------------
+-------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
----------------------------------------------------
+-------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		m(24, {	-- Light's Hope Chapel
-			cl(2, {	-- Sanctum of Light (Paladin)
-				["classes"] = { 2 },	-- Paladin
+			cl(PALADIN, {	-- Sanctum of Light
+				["classes"] = { PALADIN },
 				["lvl"] = 98,
 				["g"] = {
 					n(QUESTS, {
@@ -70,8 +71,6 @@ _.ExpansionFeatures =
 						q(42886),	-- To Faronaar
 						q(43489),	-- To Felblaze Ingress (also warrior?)
 						q(43535),	-- Translation: Danger!
-						q(38576),	-- We Meet at Light's Hope
-						q(42811),	-- We Meet at Light's Hope
 						q(40408),	-- Weapons of Legend
 						q(46069),	-- Worthy of the Title
 						q(42849),	-- Wrath and Justice
@@ -90,7 +89,7 @@ _.ExpansionFeatures =
 						}),
 						q(45770, {	-- Stirring in the Shadows
 							["lvl"] = 110,
-							["classes"] = {2},
+							["classes"] = { PALADIN },
 							["g"] = {
 								i(143502),	-- Highlord's Golden Charge
 							},
@@ -119,7 +118,7 @@ _.ExpansionFeatures =
 						q(43541, {	-- United As One
 							i(139697),	-- Bindings of the Silver Hand
 						}),
-						--Followers  Sort to other quests later.
+						-- Followers TODO: Sort to other quests later.
 						q(43492, {	-- Champion: Aponi Brightmane
 							["provider"] = { "n", 90251 },		-- Aponi Brightmane <Sunwalker Chieftain>
 							["g"] = {
@@ -193,7 +192,7 @@ _.ExpansionFeatures =
 					}),
 					n(VENDORS, {
 						n(99976,  {	--  Crusader Lord Dalfors
-							["classes"] = {2},
+							["classes"] = { PALADIN },
 							["description"] = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign.",
 							["sourceQuest"] = 45770,	-- Stirring in the Shadows
 							["g"] = {
@@ -264,7 +263,7 @@ _.ExpansionFeatures =
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(140547),	-- Warhammer of the Silver Hand
-						}),		
+						}),
 						n(91190, {	-- Sister Elda <Keeper of the Ancient Tomes>
 							["description"] = "Your spec must be Retribution for her to respond to your books. Bring both of the books to her and she'll give you the completed book to use in the next part.",
 							["g"] = {

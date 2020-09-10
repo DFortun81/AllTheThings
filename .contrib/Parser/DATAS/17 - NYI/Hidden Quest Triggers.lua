@@ -1241,6 +1241,7 @@ _.NeverImplemented =
 		q(42497),	-- Silver Hand Chosen (Holy)
 		q(40411),	-- Truthguard Chosen (Protection)
 		q(42496),	-- Truthguard Chosen (Protection)
+		q(42812),	-- We Meet at Light's Hope. Triggered together with 42811 version
 
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second
