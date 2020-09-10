@@ -81,6 +81,7 @@ local GeneralSettingsBase = {
 		["Repeatable"] = false,
 		["RepeatableFirstTime"] = false,
 		["AccountWide:Achievements"] = true,
+		["AccountWide:AzeriteEssences"] = false,
 		-- ["AccountWide:BattlePets"] = true,
 		["AccountWide:FlightPaths"] = true,
 		["AccountWide:Followers"] = true,
@@ -96,6 +97,7 @@ local GeneralSettingsBase = {
 		-- ["AccountWide:Toys"] = true,
 		-- ["AccountWide:Transmog"] = true,
 		["Thing:Achievements"] = true,
+		["Thing:AzeriteEssences"] = true,
 		["Thing:BattlePets"] = true,
 		["Thing:FlightPaths"] = true,
 		["Thing:Followers"] = true,
@@ -467,6 +469,7 @@ settings.UpdateMode = function(self)
 		app.ShowIncompleteThings = app.NoFilter;
 		
 		app.AccountWideAchievements = true;
+		app.AccountWideAzeriteEssences = true;
 		app.AccountWideBattlePets = true;
 		app.AccountWideFlightPaths = true;
 		app.AccountWideFollowers = true;
@@ -482,6 +485,7 @@ settings.UpdateMode = function(self)
 		app.AccountWideTransmog = true;
 		
 		app.CollectibleAchievements = true;
+		app.CollectibleAzeriteEssences = true;
 		app.CollectibleBattlePets = true;
 		app.CollectibleFlightPaths = true;
 		app.CollectibleFollowers = true;
@@ -516,6 +520,7 @@ settings.UpdateMode = function(self)
 		end
 		
 		app.AccountWideAchievements = self:Get("AccountWide:Achievements");
+		app.AccountWideAzeriteEssences = self:Get("AccountWide:AzeriteEssences");
 		app.AccountWideBattlePets = self:Get("AccountWide:BattlePets");
 		app.AccountWideFlightPaths = self:Get("AccountWide:FlightPaths");
 		app.AccountWideFollowers = self:Get("AccountWide:Followers");
@@ -531,6 +536,7 @@ settings.UpdateMode = function(self)
 		app.AccountWideTransmog = self:Get("AccountWide:Transmog");
 		
 		app.CollectibleAchievements = self:Get("Thing:Achievements");
+		app.CollectibleAzeriteEssences = self:Get("Thing:AzeriteEssences");
 		app.CollectibleBattlePets = self:Get("Thing:BattlePets");
 		app.CollectibleFlightPaths = self:Get("Thing:FlightPaths");
 		app.CollectibleFollowers = self:Get("Thing:Followers");
@@ -674,7 +680,7 @@ function(self)
 	settings:SetDebugMode(self:GetChecked());
 end);
 DebugModeCheckBox:SetATTTooltip("Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.");
-DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -8);
+DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -1);
 
 local CompletionistModeCheckBox = settings:CreateCheckBox("|CFFADD8E6Completionist Mode|r (All Sources)",
 function(self)
@@ -818,7 +824,7 @@ function(self)
 	app:RefreshData();
 end);
 AchievementsCheckBox:SetATTTooltip("Enable this option to track achievements.");
-AchievementsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -8);
+AchievementsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -1);
 
 local AchievementsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
@@ -873,6 +879,47 @@ function(self)
 end);
 TransmogAccountWideCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "TOPLEFT", 220, 0);
 
+local AzeriteEssencesCheckBox = settings:CreateCheckBox("Azerite Essences",
+function(self)
+	self:SetChecked(settings:Get("Thing:AzeriteEssences"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:AzeriteEssences", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+AzeriteEssencesCheckBox:SetATTTooltip("Enable this option to track Azerite Essences.\n\nTracked per character by default.");
+AzeriteEssencesCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "BOTTOMLEFT", 0, 4);
+
+local AzeriteEssencesAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(settings:Get("AccountWide:AzeriteEssences"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:AzeriteEssences") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+	--	replace when account-wide tracking is available
+	--	self:Enable();
+	--	self:SetAlpha(1);
+		self:Disable();
+		self:SetAlpha(0.2);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:AzeriteEssences", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+AzeriteEssencesAccountWideCheckBox:SetATTTooltip("Azerite Essences cannot technically be collected and used account-wide, but if you only care about collecting them on your main character then you may prefer tracking them account-wide.");
+AzeriteEssencesAccountWideCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "TOPLEFT", 220, 0);
+
 local BattlePetsCheckBox = settings:CreateCheckBox("Battle Pets / Companions",
 function(self)
 	self:SetChecked(settings:Get("Thing:BattlePets"));
@@ -890,7 +937,7 @@ function(self)
 	app:RefreshData();
 end);
 BattlePetsCheckBox:SetATTTooltip("Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.\n\nTracked Account Wide by Default.");
-BattlePetsCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "BOTTOMLEFT", 0, 4);
+BattlePetsCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local BattlePetsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)

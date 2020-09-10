@@ -4782,7 +4782,7 @@ app.BaseAzeriteEssence = {
 		if key == "key" then
 			return "azeriteEssenceID";
 		elseif key == "collectible" then
-			return true;
+			return app.CollectibleAzeriteEssences;
 		elseif key == "collected" then
 			local info = t.info;
 			if info and info.unlocked then
