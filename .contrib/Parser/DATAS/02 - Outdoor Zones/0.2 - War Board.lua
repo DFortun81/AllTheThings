@@ -19,6 +19,7 @@ _.Zones =
 			q(29390, {	-- Guardians of Hyjal: Call of the Ancients
 				["isBreadcrumb"] = true,
 				["lvl"] = 85,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29388, {	-- Guardians of Hyjal: Firelands Invasion!
 				["isBreadcrumb"] = true,
@@ -270,6 +271,7 @@ _.Zones =
 			q(29391, {	-- Guardians of Hyjal: Call of the Ancients
 				["isBreadcrumb"] = true,
 				["lvl"] = 85,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29387, {	-- Guardians of Hyjal: Firelands Invasion!
 				["isBreadcrumb"] = true,
