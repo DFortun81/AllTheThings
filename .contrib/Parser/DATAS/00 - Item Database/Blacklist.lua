@@ -147,7 +147,9 @@ i(9282);	-- Blue Punch Card
 i(171987);	-- Champions of Azeroth Survival Kit
 i(6351);	-- Dented Crate
 i(2460);	-- Elixir of Tongues
+i(151754);	-- Gold Plated Cage Head Key
 i(13874);	-- Heavy Crate
+i(151757);	-- Limited Run Blight Boar Poster
 i(72201);	-- Plump Intestines
 i(9316);	-- Prismatic Punch Card
 i(6357);	-- Sealed Crate
