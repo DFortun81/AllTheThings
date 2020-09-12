@@ -9,8 +9,22 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["lvl"] = 100,
 		["mapID"] = 612,
 		["maps"] = { 610, 611, 613, 614, 615 },
-		["coord"] = { 32.96, 38.36, 550 },	-- Nagrand, Draenor
+		["coord"] = { 32.9, 38.3, 550 },	-- Nagrand, Draenor
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
+					["collectible"] = false,
+					["g"] = {
+						crit(9),	-- Kargath Bladefist
+						crit(10),	-- The Butcher
+						crit(11),	-- Brackenspore
+						crit(12),	-- Tectus, the Living Mountain
+						crit(13),	-- Twin Ogron
+						crit(14),	-- Ko'ragh
+						crit(15),	-- Imperator Mar'gok
+					},
+				}),
+			}),
 			d(17, {	-- LFR
 				n(ZONEDROPS, {
 					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone

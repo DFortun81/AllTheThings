@@ -916,6 +916,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
 							i(174226)	-- Paragon's Will
 						},
 					}),
@@ -934,6 +935,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
 							i(174226)	-- Paragon's Will
 						},
 					}),
@@ -973,6 +975,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
 							i(174226)	-- Paragon's Will
 						},
 					}),
@@ -1001,6 +1004,7 @@ _.ExpansionFeatures =
 						["coord"] = { 18.2, 09.9, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174220),	-- Ambered Greatstaff
 							i(174226)	-- Paragon's Will
 						},
 					}),
@@ -1016,6 +1020,7 @@ _.ExpansionFeatures =
 						},
 						["g"] = {
 							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
 							i(174226)	-- Paragon's Will
 						},
 					}),
@@ -1035,6 +1040,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174220),	-- Ambered Greatstaff
+							i(174226)	-- Paragon's Will
 						},
 					}),
 				}),
