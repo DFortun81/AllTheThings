@@ -570,6 +570,54 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(RARES, {
+					i(174224, {	-- Greatsword of Cruelty
+						["crs"] = {
+							154578,	-- Aqir Flayer
+							154576,	-- Aqir Titanus
+							162147,	-- Corpse Eater
+							162163,	-- High Priest Ytaessis
+							155531,	-- Infested Wastewander Captain
+							154604,	-- Lord Aj'qirai
+							156078,	-- Magus Rehleth
+							162142,	-- Qho
+							162173,	-- R'krox the Runt
+							162140,	-- Skikx'traz
+							162170,	-- Warcaster Xeshro
+							162141,	-- Zuythiz
+						},
+					}),
+					i(174222, {	-- Unspeakable Bloodletter
+						["crs"] = {
+							154578,	-- Aqir Flayer
+							154576,	-- Aqir Titanus
+							162147,	-- Corpse Eater
+							162163,	-- High Priest Ytaessis
+							155531,	-- Infested Wastewander Captain
+							154604,	-- Lord Aj'qirai
+							156078,	-- Magus Rehleth
+							162142,	-- Qho
+							162173,	-- R'krox the Runt
+							162140,	-- Skikx'traz
+							162170,	-- Warcaster Xeshro
+							162141,	-- Zuythiz
+						},
+					}),
+					i(174227, {	-- Writhing Feeler
+						["crs"] = {
+							154578,	-- Aqir Flayer
+							154576,	-- Aqir Titanus
+							162147,	-- Corpse Eater
+							162163,	-- High Priest Ytaessis
+							155531,	-- Infested Wastewander Captain
+							154604,	-- Lord Aj'qirai
+							156078,	-- Magus Rehleth
+							162142,	-- Qho
+							162173,	-- R'krox the Runt
+							162140,	-- Skikx'traz
+							162170,	-- Warcaster Xeshro
+							162141,	-- Zuythiz
+						},
+					}),
 					n(154578, {	-- Aqir Flayer
 						["description"] = "Shares a spawn with Aqir Hive Worker and Aqir Reaper.  Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
 						["questID"] = 58612,
@@ -586,11 +634,6 @@ _.ExpansionFeatures =
 							{ 34.8, 68.8, 1527 },
 							{ 42.4, 60.2, 1527 },
 							{ 47.0, 56.2, 1527 },
-						},
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174222),	-- Unspeakable Bloodletter
-							i(174227),	-- Writhing Feeler
 						},
 					}),
 					n(154576, {	-- Aqir Titanus
@@ -613,10 +656,6 @@ _.ExpansionFeatures =
 							{ 29.6, 66.6, 1527 },
 							{ 35.0, 66.6, 1527 },
 						},
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174227),	-- Writhing Feeler
-						},
 					}),
 					n(162171, {	-- Captain Dunewalker
 						["questID"] = 58699,
@@ -630,9 +669,6 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174769),	-- Malevolent Drone
-							i(174224),	-- Greatsword of Cruelty
-							i(174222),	-- Unspeakable Bloodletter
-							i(174227),	-- Writhing Feeler
 						},
 					}),
 					n(162163, {	-- High Priest Ytaessis
@@ -644,11 +680,6 @@ _.ExpansionFeatures =
 							{ 45.7, 56.0, 1527 },
 							{ 43.8, 57.8, 1527 },
 						},
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174222),	-- Unspeakable Bloodletter
-							i(174227),	-- Writhing Feeler
-						},
 					}),
 					n(155531, {	-- Infested Wastewander Captain
 						["description"] = "Shares a spawn with Wastewander Host.  Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
@@ -658,21 +689,13 @@ _.ExpansionFeatures =
 							{ 17.6, 60.2, 1527 },
 							{ 25.6, 64.0, 1527 },
 						},
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174222),	-- Unspeakable Bloodletter
-							i(174227),	-- Writhing Feeler
-						},
 					}),
 					n(154604, {	-- Lord Aj'qirai
 						["questID"] = 56340,
 						["coord"] = { 34.67, 18.90, 1527 },
 						["isDaily"] = true,
 						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
 							i(174475),	-- Stinky Sack (pet)
-							i(174222),	-- Unspeakable Bloodletter
-							i(174227),	-- Writhing Feeler
 						},
 						["description"] = "He is underground.",
 					}),
@@ -681,20 +704,11 @@ _.ExpansionFeatures =
 						["description"] = "Spawns in Ruins of Ammon.",
 						["coord"] = { 31.31, 66.01, 1527 },
 						["isDaily"] = true,
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174227),	-- Writhing Feeler
-						},
 					}),
 					n(162142, {	-- Qho
 						["questID"] = 58693,
 						["coord"] = { 37.5, 60.4, 1527 },
 						["isDaily"] = true,
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174222),	-- Unspeakable Bloodletter
-							i(174227),	-- Writhing Feeler
-						},
 					}),
 					n(162173, {	-- R'krox the Runt
 						["questID"] = 58864,
@@ -703,10 +717,6 @@ _.ExpansionFeatures =
 							{ 36.4, 10.3, 1527 },
 							{ 34.0, 11.2, 1527 },
 							{ 24.8, 6.5, 1527 },
-						},
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174227),	-- Writhing Feeler
 						},
 					}),
 					n(162140, {	-- Skikx'traz
@@ -719,30 +729,17 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174476),	-- Black Chitinous Plate (pet)
-							i(174224),	-- Greatsword of Cruelty
-							i(174222),	-- Unspeakable Bloodletter
-							i(174227),	-- Writhing Feeler
 						},
 					}),
 					n(162170, {	-- Warcaster Xeshro
 						["questID"] = 58702,
 						["isDaily"] = true,
 						["coord"] = { 33.7, 25.4, 1527 },
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174222),	-- Unspeakable Bloodletter
-							i(174227),	-- Writhing Feeler
-						},
 					}),
 					n(162141, {	-- Zuythiz
 						["questID"] = 58695,
 						["coord"] = { 41.1, 41.8, 1527 }, -- probably circles around Orsis
 						["isDaily"] = true,
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174222),	-- Unspeakable Bloodletter
-							i(174227),	-- Writhing Feeler
-						},
 					}),
 				}),
 				n(-34,	{	-- World Quests
@@ -1893,14 +1890,31 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(RARES, {
+					i(174224, {	-- Greatsword of Cruelty
+						["crs"] = {
+							155703,	-- Anq'uri the Titanic
+							162172,	-- Aqir Warcaster
+							162196, -- Obsidian Annihilator
+						},
+					}),
+					i(174222, {	-- Unspeakable Bloodletter
+						["crs"] = {
+							155703,	-- Anq'uri the Titanic
+							162172,	-- Aqir Warcaster
+							162196, -- Obsidian Annihilator
+						},
+					}),
+					i(174227, {	-- Writhing Feeler
+						["crs"] = {
+							155703,	-- Anq'uri the Titanic
+							162172,	-- Aqir Warcaster
+							162196, -- Obsidian Annihilator
+						},
+					}),
 					n(155703, {	-- Anq'uri the Titanic
 						["questID"] = 56834,
 						["coord"] = { 32.4, 64.6, 1527 },
 						["isDaily"] = true,
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174227),	-- Writhing Feeler
-						},
 					}),
 					n(162172, {	-- Aqir Warcaster
 						["description"] = "Shares a spawn with Aqir Voidcaster.  Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
@@ -1922,11 +1936,6 @@ _.ExpansionFeatures =
 							{ 24.6, 58.4, 1527 },
 							{ 18.0, 63.0, 1527 },
 						},
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174222),	-- Unspeakable Bloodletter
-							i(174227),	-- Writhing Feeler
-						},
 					}),
 					n(162370, {	-- Armagedillo
 						["questID"] = 58718,
@@ -1945,11 +1954,6 @@ _.ExpansionFeatures =
 						["questID"] = 58681,
 						["coord"] = { 35.1, 17.3, 249 },
 						["isDaily"] = true,
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174222),	-- Unspeakable Bloodletter
-							i(174227),	-- Writhing Feeler
-						},
 					}),
 					n(162372, {	-- Spirit of Cyrus the Black
 						["questID"] = 58715,
