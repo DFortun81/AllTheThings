@@ -106,6 +106,7 @@ _.PetJournal =
 		p(1457),			-- Icespine Hatchling
 		p(2089),			-- Infernal Pyreclaw
 		p(2852),			-- Jade Defender
+		p(2795),			-- Jenafur
 		p(699),				-- Jumping Spider
 		p(678),				-- Jungle Grub
 		p(438),				-- King Snake

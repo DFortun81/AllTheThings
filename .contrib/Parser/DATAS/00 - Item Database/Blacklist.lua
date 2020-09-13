@@ -143,21 +143,36 @@ i(171315); 	-- Reuse me (MTMM)
 
 
 -- "Toy"
+i(173791);	-- Baguette
 i(9282);	-- Blue Punch Card
+i(160364);	-- Bunch of Berries
 i(171987);	-- Champions of Azeroth Survival Kit
+i(173789);	-- Cross Bun
 i(6351);	-- Dented Crate
+i(173788);	-- Dusty Bun
 i(2460);	-- Elixir of Tongues
+i(173786);	-- Ghostly Pale Ale
 i(151754);	-- Gold Plated Cage Head Key
 i(13874);	-- Heavy Crate
+i(173785);	-- Hidden Banana
+i(173784);	-- Hoppy Mead
+i(173782);	-- Karaweizen
 i(151757);	-- Limited Run Blight Boar Poster
+i(173781);	-- Lost Watermelon
+i(173771);	-- Old Apple
+i(173778);	-- Orange Orange
 i(72201);	-- Plump Intestines
 i(9316);	-- Prismatic Punch Card
 i(6357);	-- Sealed Crate
 i(88496);	-- Sealed Crate
+i(173776);	-- Stale Loaf
 i(67495);	-- Strange Bloated Stomach
+i(160378);	-- Strongarm Stout
 i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate
 i(9279);	-- White Punch Card
+i(160376);	-- Wilderbew Special
+i(173773);	-- Yeasty Hunk
 
 
 
