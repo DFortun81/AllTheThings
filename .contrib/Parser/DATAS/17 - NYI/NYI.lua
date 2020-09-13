@@ -460,6 +460,10 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(81034)),	-- Scavenger's Satin Gloves
 			un(NEVER_IMPLEMENTED, i(81042)),	-- Scavenger's Silk Cuffs
 			un(NEVER_IMPLEMENTED, i(81043)),	-- Scavenger's Satin Cuffs
+			un(NEVER_IMPLEMENTED, i(97077)),	-- Abandoned Zandalari Firecord (Heroic Thunderforged)
+			un(NEVER_IMPLEMENTED, i(97078)),	-- Abandoned Zandalari Shadowgirdle (Heroic Thunderforged)
+			un(NEVER_IMPLEMENTED, i(97079)),	-- Silentflame Sandals (Heroic Thunderforged)
+			un(NEVER_IMPLEMENTED, i(97081)),	-- Home-Warding Slippers (Heroic Thunderforged)
 		}),
 		n(-44, {	-- Leather
 			cl(11, {	-- Druid

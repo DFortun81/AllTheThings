@@ -2537,6 +2537,9 @@ _.NeverImplemented =
 		--	Uldir
 		q(53269),	-- killed Taloc the Corrupted in LFR
 		q(51730),	-- killed Mythrax the Unraveler on Mythic
+		q(51732),	-- reported as triggering after doing "What's in the Box?" achievement, perhaps a kill quest
+		q(51731),	-- reported as triggering after doing "Edgelords" achievement, perhaps a kill quest
+		q(51729),	-- reported as triggering after doing "Double Dribble" achievement, perhaps a kill quest
 
 		--	Battle of Dazar'alor
 		q(54963),	-- LFR, cinematic at the start of Siege of Dazar'alor wing
