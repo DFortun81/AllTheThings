@@ -1132,6 +1132,28 @@ _.ExpansionFeatures =
 					i(174760),	-- Mantid Relic Fragment
 				}),
 			}),
+			n(-169, { 	-- Emissary Quests
+				q(58096, {	-- Supplies from the Rajani
+					["repeatable"] = true,
+					["g"] = {
+						i(174483, {	-- Rajani Supplies
+							i(168816, {	-- Pulsing Star Heart (Rank 4)
+								["classes"] = HEALERS,
+								["g"] = {
+									az(24, 4),	-- Spirit of Preservation (Rank 4)
+								},
+							}),
+							i(168576, {	-- Roots of Magnificent Revival (Rank 4)
+								["classes"] = TANKS,
+								["g"] = {
+									az(33, 4),	-- Touch of the Everlasting (Rank 4)
+								},
+							}),
+							i(174479),	-- Jade Defender (PET!)
+						}),
+					},
+				}),
+			}),
 			n(-10072, {	-- N'Zoth Assault
 				n(-4,   {	-- Achievements
 					ach(14159, {	-- Combating the Corruption -- TODO::  Add coords. -- Is attaching questID's to these really the best way to track the quest?
@@ -1319,28 +1341,6 @@ _.ExpansionFeatures =
 						["crs"] = { 162506 },
 					}),
 					p(2865, {	-- Voidskimmer
-					}),
-				}),
-				n(-169, { 	-- Emissary Quests
-					q(58096, {	-- Supplies from the Rajani
-						["repeatable"] = true,
-						["g"] = {
-							i(174483, {	-- Rajani Supplies
-								i(168816, {	-- Pulsing Star Heart (Rank 4)
-									["classes"] = HEALERS,
-									["g"] = {
-										az(24, 4),	-- Spirit of Preservation (Rank 4)
-									},
-								}),
-								i(168576, {	-- Roots of Magnificent Revival (Rank 4)
-									["classes"] = TANKS,
-									["g"] = {
-										az(33, 4),	-- Touch of the Everlasting (Rank 4)
-									},
-								}),
-								i(174479),	-- Jade Defender (PET!)
-							}),
-						},
 					}),
 				}),
 				n(-38,  {	-- Professions

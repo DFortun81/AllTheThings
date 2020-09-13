@@ -1263,6 +1263,19 @@ _.ExpansionFeatures =
 					i(174758),	-- Voidwarped Relic Fragment
 				}),
 			}),
+			n(-169, { 	-- Emissary Quests
+				q(58097, {	-- Supplies from the Uldum Accord
+					["repeatable"] = true,
+					["g"] = {
+						i(173283, {	-- Token of a Brilliant Death (Rank 4)
+							az(35, 4),	-- Breath of the Dying (Rank 4)
+						}),
+						i(174484, {	-- Uldum Accord Supplies
+							i(174481),	-- Cursed Dune Watcher
+						}),
+					},
+				}),
+			}),
 			n(-10072, {	-- N'Zoth Assault
 				n(-4,	{	-- Achievements
 					ach(14159, {	-- Combating the Corruption
@@ -1529,19 +1542,6 @@ _.ExpansionFeatures =
 					pet(2863, {	-- Oasis Void-Duster
 					}),
 					pet(2864, {	-- Void-Scarred Locust
-					}),
-				}),
-				n(-169, { 	-- Emissary Quests
-					q(58097, {	-- Supplies from the Uldum Accord
-						["repeatable"] = true,
-						["g"] = {
-							i(173283, {	-- Token of a Brilliant Death (Rank 4)
-								az(35, 4),	-- Breath of the Dying (Rank 4)
-							}),
-							i(174484, {	-- Uldum Accord Supplies
-								i(174481),	-- Cursed Dune Watcher
-							}),
-						},
 					}),
 				}),
 				n(-38,	{	-- Professions
