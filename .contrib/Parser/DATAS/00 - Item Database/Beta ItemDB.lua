@@ -13,6 +13,7 @@ i(178828, 1);	-- Nathrian Tabernacle
 i(178852, 1);	-- Vessel of Shining Radiance
 i(178868, 1);	-- Deathwalker's Promise
 i(179564, 1);	-- Faesworn Channeling Root
+i(180671, 1);	-- War Scholar's Tome
 
 -- Cloaks
 i(178732, 3);	-- Abominable Visage
@@ -115,6 +116,8 @@ i(175586, 4);	-- Faewoven Handwraps
 i(179657, 4);	-- Faewoven Tunic
 i(175576, 4);	-- Faewoven Raiment
 i(175581, 4);	-- Faewoven Sandals
+i(175517, 4);	-- Corpse-Stitcher's Slippers
+i(177656, 4);	-- Boot-a-Charge Flyers
 
 -- Leather
 i(178731, 5);	-- Viscera-Stitched Footpads
@@ -203,6 +206,12 @@ i(179767, 5);	-- Oakheart Armguards
 i(179765, 5);	-- Oakheart Tunic
 i(179774, 5);	-- Oakheart Vestment
 i(179766, 5);	-- Oakheart Anklewraps
+i(181407, 5);	-- Runetender Mitts
+i(179594, 5);	-- Witherscorn Guise
+i(181577, 5);	-- Soulbearer's Vest
+i(175519, 5);	-- Deceitful Agent's Treads
+i(181205, 5);	-- Soulstalker Epaulets
+i(177655, 5);	-- Air Bootuses
 
 -- Mail
 i(178733, 6);	-- Blightbone Spaulders
@@ -289,6 +298,8 @@ i(181911, 6);	-- Runewarden's Gloves
 i(181909, 6);	-- Runewarden's Hauberk
 i(181979, 6);	-- Runewarden's Vestment
 i(181910, 6);	-- Runewarden's Boots
+i(175518, 6);	-- Flesh Architect's Galoshes
+i(177654, 6);	-- Bootus Shocks
 
 -- Plate
 i(178734, 7);	-- Fused Bone Greatbelt
@@ -375,6 +386,8 @@ i(182997, 7);	-- Diadem of Imperious Desire
 i(179890, 7);	-- Queensguard Gauntlets
 i(179888, 7);	-- Queensguard Chestplate
 i(179889, 7);	-- Queensguard Sabatons
+i(175516, 7);	-- Cruel Executioner's Stompers
+i(177653, 7);	-- Bootus Hardeneds
 
 -- Shields
 i(178750, 8);	-- Encrusted Canopic Lid
@@ -384,6 +397,8 @@ i(175990, 8);	-- Meadow Guardian's Shield
 i(177633, 8);	-- Steelbound Heater Shield
 i(178712, 8);	-- Acidslough Bulwark
 i(178867, 8);	-- Barricade of the Endless Empire
+i(180670, 8);	-- Cruel Executioner's Bulwark
+i(180749, 8);	-- Hauk's Battle-Scarred Bulwark
 
 -- Daggers
 i(178743, 20);	-- Stitchflesh's Scalpel
@@ -404,6 +419,8 @@ i(178928, 20);	-- Domina's Oozing Shiv
 i(178789, 20);	-- Fleshcrafter's Knife
 i(179498, 20);	-- Faesworn Barb
 i(182323, 20);	-- Faesworn Spellblade
+i(180791, 20);	-- Reanimated Executioner's Shank
+i(180663, 20);	-- War Scholar's Bonesaw
 
 -- 1H Axes
 i(178711, 21);	-- Axe of the Deadgrove
@@ -435,6 +452,7 @@ i(178752, 23);	-- Sophisticated Bonecracker
 i(178864, 23);	-- Gorebound Predator's Gavel
 i(179546, 23);	-- Faesworn Warclub
 i(182322, 23);	-- Faesworn Gavel
+i(180664, 23);	-- Reanimated Executioner's Crusher
 
 -- 2H Maces
 i(178024, 24);	-- Gormhusk Bludgeon
@@ -460,6 +478,10 @@ i(179328, 25);	-- Bloodspiller
 i(178856, 25);	-- Kaal's Gloomblade
 i(178754, 25);	-- Poxstorm, Longsword of Pestilence
 i(179515, 25);	-- Faesworn Falchion
+i(179512, 25);	-- Dreamsong Saber
+i(180666, 25);	-- Bonebender's Warblade
+i(180792, 25);	-- War Scholar's Shortsword
+i(180673, 25);	-- Reanimated Executioner's Sword
 
 -- 2H Swords
 i(178780, 26);	-- Rimebinder's Runeblade
@@ -467,9 +489,11 @@ i(176338, 26);	-- Skytone Greatsword
 i(180823, 26);	-- Bonefused Greatsword
 i(176283, 26);	-- Ruthless Contender's Claymore
 i(179330, 26);	-- Zin'khas, Blade of the Fallen God
-		
+i(180669, 26);	-- Reanimated Executioner's Greatsword
+
 -- Wands
 i(176282, 27);	-- Ruthless Contender's Wand
+i(180668, 27);	-- War Scholar's Wand
 
 -- Staffs
 i(180820, 28);	-- Bonefused Greatstaff
@@ -482,6 +506,8 @@ i(179347, 28);	-- Collector's Pulse Staff
 i(178829, 28);	-- Nathrian Ferula
 i(178714, 28);	-- Lakali's Spire of Knowledge
 i(180097, 28);	-- Quarterstaff of Discordant Ethic
+i(180665, 28);	-- Grasping Greatstaff
+i(180790, 28);	-- War Scholar's Stave
 
 -- Polearms
 i(176334, 29);	-- Silverchime Longspear
@@ -510,6 +536,7 @@ i(176330, 31);	-- Guidenote Crossbow
 i(180822, 31);	-- Bonefused Crossbow
 i(176281, 31);	-- Ruthless Contender's Crossbow
 i(179348, 31);	-- Xy Cartel Crossbow
+i(180667, 31);	-- Enlarged Jawbone Crossbow
 
 -- Fist Weapons
 i(176336, 34);	-- Guidenote Grip
@@ -524,6 +551,7 @@ i(177638, 35);	-- Sinfall Edgemaster's Blade
 i(178854, 35);	-- Hungering Devourer's Twinblade
 i(179511, 35);	-- Faesworn Glaive
 i(179510, 35);	-- Dreamsong Warglaive
+i(180672, 35);	-- Bonebender's Warglaive
 
 -- Neck
 i(175739, 51);	-- Reclaimed Maldraxxi Choker
@@ -534,6 +562,7 @@ i(178707, 51);	-- Trailspinner Pendant
 i(180115, 51);	-- Azure-Venom Choker
 i(183040, 51);	-- Charm of Eternal Winter
 i(183039, 51);	-- Noble's Birthstone Pendant
+i(175708, 51);	-- Reconstructed Family Locket
 
 -- Finger
 i(178736, 52);	-- Stitchflesh's Misplaced Signet
@@ -554,6 +583,7 @@ i(178869, 52);	-- Fleshfused Circle
 i(178870, 52);	-- Ritual Bone Band
 i(178872, 52);	-- Ring of Perpetual Conflict
 i(183038, 52);	-- Hyperlight Band
+i(175707, 52);	-- Signet of the Learned
 
 -- Trinket
 i(178742, 53);	-- Bottled Chimera Toxin

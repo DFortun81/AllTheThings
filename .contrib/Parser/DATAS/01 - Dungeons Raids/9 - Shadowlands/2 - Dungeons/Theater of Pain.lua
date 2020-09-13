@@ -12,6 +12,15 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["g"] = {					
 --			n(-34, {	-- World Quests
 --			}),
+			n(QUESTS, {
+				q(58095, {	-- Theater of Pain: Help Wanted
+					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
+					["coord"] = { 54.0, 50.8, 1536 },
+					["sourceQuest"] = 58090,	-- Side Effects
+					["lvl"] = 60,
+					["maps"] = { 1536 },	-- Maldraxxus
+				}),
+			}),
 			d(1, {	-- Normal
 				e(2397, {	-- 	An Affront of Challengers
 					["crs"] = { 

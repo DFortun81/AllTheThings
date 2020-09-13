@@ -9,7 +9,14 @@ _.Instances = { tier(9, {	-- Shadowlands
 			1674,	-- Plaguefall
 		},
 		["lvl"] = 50,
-		["g"] = {					
+		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(14634, {	-- Nine Afterlives
+					crit(1, {	-- Hairball
+						["description"] = "Hairball in the hallway in the opposite direction of the endboss, go through the slime in the hallway to the left and turn left to pet her.",
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(59520, {	-- Plaguefall: Knee Deep In It
 					["provider"] = { "n", 165052 },	-- Vial Master Lurgy

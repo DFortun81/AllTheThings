@@ -2762,5 +2762,8 @@ _.NeverImplemented =
 		-- Revendreth WQ
 		q(59858),	-- Tea Tales: Theotar Achievement criteria
 		q(59858),	-- Tea Tales: Theotar Achievement criteria
+		
+		-- Dungeons
+		q(62658),	-- Shadowlands Dungeon Reward Quest
 	}),
 };

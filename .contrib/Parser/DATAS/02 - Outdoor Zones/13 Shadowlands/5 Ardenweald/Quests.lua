@@ -875,16 +875,6 @@ _.Zones =
 					},
 				}),
 				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
 			-- The Queen's Conservatory
 				q(62624, {	-- The Queen's Conservatory
 					["provider"] = { "n", 173171 },	-- Conservator Saola
@@ -948,188 +938,57 @@ _.Zones =
 					["lvl"] = 60,
 				}),
 ]]--				
-			-- Dailys
+				q(62447, {	-- A Rare and Unusual Spirit
+					["provider"] = { "n", 171107 },	-- Cultivator Blaithin
+					["coord"] = { 42.2, 52.9, 1662 },
+					["lvl"] = 60,
+					["maps"] = { 1669 },	-- Mists of Tirna Scithe
+					["g"] = {
+						i(183704),	-- Shifting Spirit of Knowledge
+					},
+				}),
+
+
+
+			-- Dailys / Weelkys
 				q(61984, {	-- Replenish the Reservoir
 					["provider"] = { "n", 158553 },	-- Flutterby
 					["coord"] = { 33.9, 43.5, 1565 },
 					["sourceQuest"] = 58160,	-- For Queen and Grove!
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["lvl"] = 60,
 				}),
 				q(61331, {	-- Return Lost Souls
 					["provider"] = { "n", 158553 },	-- Flutterby
 					["coord"] = { 33.9, 43.5, 1565 },
 					["sourceQuest"] = 58160,	-- For Queen and Grove!
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["lvl"] = 60,
 				}),
-				q(62411, {	-- Fair Exchange for a Soul
+				q(62441, {	-- Fair Exchange for a Soul
 					["provider"] = { "n", 166476 },	-- Warden Casad
 					["coord"] = { 33.4, 62.0, 1662 },
 					["sourceQuest"] = 59873,	-- Greeting a God
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["lvl"] = 60,
 				}),
-				
-			-- Calling Quest
-				-- These can be done when you finish the Quest "For Queen and Grove!" and unlock the World Quests
-				q(60462, {	-- Anima Appeal
-					["provider"] = { "n", 167196 },	-- Sesselie
-					["coord"] = { 48.9, 39.3, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181475),	-- Tribute of the Grove Wardens
-					},
-				}),
-				q(60418, {	-- A Call to Bastion
-					["provider"] = { "n", 167193 },	-- Featherlight
-					["coord"] = { 59.7, 31.3, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181475),	-- Tribute of the Grove Wardens
-					},
-				}),
-				q(60421, {	-- A Call to Revendreth
-					["provider"] = { "n", 167193 },	-- Featherlight
-					["coord"] = { 59.7, 31.3, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181475),	-- Tribute of the Grove Wardens
-					},
-				}),
-				q(60373, {	-- A Source of Sorrowvine
-					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-					["coord"] = { 16.5, 52.4, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181475),	-- Tribute of the Grove Wardens
-					},
-				}),
-				q(60374, {	-- Bonemetal Bonanza
-					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-					["coord"] = { 16.5, 52.4, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181475),	-- Tribute of the Grove Wardens
-					},
-				}),
-				q(60457, {	-- Soul Salvage (Ardenweald)
-					["provider"] = { "n", 158553 },	-- Flutterby
-					["coord"] = { 33.9, 43.5, 1565 },
-					["isDaily"] = true,
-					["lvl"] = 60,
-				}),
-				q(60452, {	-- Storm the Maw (Ardenweald)
-					["provider"] = { "n", 158553 },	-- Flutterby
-					["coord"] = { 33.9, 43.5, 1565 },
-					["isDaily"] = true,
-					["lvl"] = 60,
-				}),
-				q(60388, {	-- Training Our Forces
-					["provider"] = { "n", 158544 },	-- Lord Herne
-					["coord"] = { 40.9, 72.4, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181475),	-- Tribute of the Grove Wardens
-					},
-				}),
-				q(60387, {	-- Training in Bastion
-					["provider"] = { "n", 158544 },	-- Lord Herne
-					["coord"] = { 40.9, 72.4, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181475),	-- Tribute of the Grove Wardens
-					},
-				}),
-				q(60386, {	-- Training in Maldraxxus
-					["provider"] = { "n", 158544 },	-- Lord Herne
-					["coord"] = { 40.9, 72.4, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181475),	-- Tribute of the Grove Wardens
-					},
-				}),
-				q(60419, {	-- Troubles at Home
-					["provider"] = { "n", 167193 },	-- Featherlight
-					["coord"] = { 59.7, 31.3, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181475),	-- Tribute of the Grove Wardens
-					},
-				}),
-				q(60364, {	-- Gildenite Grab
-					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-					["coord"] = { 16.5, 52.4, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181475),	-- Tribute of the Grove Wardens
-					},
-				}),
-				q(60414, {	-- Rare Resources
-					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-					["coord"] = { 16.5, 52.4, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181475),	-- Tribute of the Grove Wardens
-					},
-				}),
-				q(60384, {	-- Aiding Bastion
-					["provider"] = { "n", 167195 },	-- Blodwyn
-					["coord"] = { 46.4, 50.6, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181475),	-- Tribute of the Grove Wardens
-					},
-				}),
-				q(60382, {	-- Aiding Revendreth
-					["provider"] = { "n", 167195 },	-- Blodwyn
-					["coord"] = { 46.4, 50.6, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181475),	-- Tribute of the Grove Wardens
-					},
-				}),
-				q(60435, {	-- Challenges in Revendreth
-					["provider"] = { "n", 167206 },	-- Yanlar
-					["coord"] = { 36.8, 24.8, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181476),	-- Tribute of the Wild Hunt
-					},
-				}),
-				q(60436, {	-- Challenges in Maldraxxus
-					["provider"] = { "n", 167206 },	-- Yanlar
-					["coord"] = { 36.8, 24.8, 1565 },
-					["repeatable"] = true,
-					["lvl"] = 60,
-					["g"] = {
-						i(181476),	-- Tribute of the Wild Hunt
-					},
-				}),
+
+
 			-- Covernant progress
 				q(61852, {	-- Adventurer: Guardian Kota (Rank 2)
 					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 					["coord"] = { 29.6, 81.6, 1565 },
 					["g"] = {
-						spell(338543),	-- Follower: Guardian Kota
+						follower(1283),	-- Guardian Kota
 					},
 				}),
-				
-				
+				q(61853, {	-- Adventurer: Te'zan (Rank ?)
+					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+					["coord"] = { 29.6, 81.6, 1565 },
+					["g"] = {
+						follower(1285),	-- Te'zan
+					},
+				}),
 				
 				
 				
@@ -1233,12 +1092,12 @@ _.Zones =
 				}),
 			-- Supplies Needed
 				q(57652, {	-- Supplies Needed: Amber Grease
-				--	["provider"] = { "o", ?? },	-- Muddy Scroll (?)								-- Need to add the ObjectID
+					["provider"] = { "o", 348747 },	-- Muddy Scroll							-- Need to add the Object
 					["coord"] = { 46.9, 27.6, 1565 },
 					["lvl"] = 55,
 				}),
 				q(57655, {	-- Supplies Needed: Amber Grease
-				--	["provider"] = { "o", ?? },	-- Discarded Scroll (?)							-- Need to add the ObjectID
+					["provider"] = { "o", 336415 },	-- Discarded Scroll						-- Need to add the Object
 					["coord"] = { 47.5, 26.2, 1565 },
 					["lvl"] = 55,
 				}),
@@ -1282,7 +1141,7 @@ _.Zones =
 					["lvl"] = 55,
 				}),
 				q(58163, {	-- A Desperate Solution
-				--	["provider"] = { "o", ?? },	-- Tattered Journal(?)									-- Need to add the Object
+					["provider"] = { "o", 349515 },	-- Battered Journal									-- Need to add the Object
 					["coord"] = { 70.3, 32.5, 1565 },
 					["sourceQuest"] = 58161,	-- Forest Disappearances
 					["lvl"] = 55,
@@ -1337,7 +1196,7 @@ _.Zones =
 					["lvl"] = 55,
 				}),
 				q(60062, {	-- The Shattered Harp
-				--	["provider"] = { "o", ?? },	-- Broken Harp							-- Need to add the ObjectID
+				--	["provider"] = { "o", 350804 },	-- Broken Harp							-- Need to add the Object
 					["coord"] = { 38.1, 28.7, 1565 },
 					["sourceQuest"] = 57661,	-- Silk Shortage
 					["lvl"] = 55,
@@ -1370,6 +1229,68 @@ _.Zones =
 					},
 					["lvl"] = 55,
 				}),
+			-- Saving the Stalks (Transport Network Tier 1)
+				q(57454, {	-- Silence in the Stalks
+					["provider"] = { "n", 158556 },	-- Aithlyn
+					["coords"] = {
+						{ 59.4, 31.6, 1565 },
+						{ 48.4, 50.4, 1565 },
+					},
+					["lvl"] = 60,
+				}),
+				q(57455, {	-- Mushroom For Improvement
+					["provider"] = { "n", 157710 },	-- Cortinarius
+					["coord"] = { 33.2, 36.3, 1565 },
+					["sourceQuest"] = 57454,	-- Silence in the Stalks
+					["lvl"] = 60,
+				}),
+				q(57458, {	-- Ring Repairs
+					["provider"] = { "n", 157710 },	-- Cortinarius
+					["coord"] = { 33.2, 36.3, 1565 },
+					["sourceQuest"] = 57454,	-- Silence in the Stalks
+					["lvl"] = 60,
+				}),
+				q(57459, {	-- Fighting For Fungus
+					["provider"] = { "n", 157710 },	-- Cortinarius
+					["coord"] = { 33.2, 36.3, 1565 },
+					["sourceQuests"] = {
+						57455,	-- Mushroom For Improvement
+						57458,	-- Ring Repairs
+					},
+					["lvl"] = 60,
+				}),
+				q(57463, {	-- My Way or the Hyphae
+					["provider"] = { "n", 166982 },	-- Marasmius		
+					["coord"] = { 29.5, 34.6, 1565 },
+					["sourceQuest"] = 57454,	-- Silence in the Stalks
+					["lvl"] = 60,
+				}),
+				q(57583, {	-- Through the Veil
+					["provider"] = { "n", 166982 },	-- Marasmius
+					["coord"] = { 29.5, 34.6, 1565 },
+					["sourceQuest"] = 57454,	-- Silence in the Stalks
+					["lvl"] = 60,
+				}),
+				q(62611, {	-- Hyphae Patrol: Heartwood Grove
+					["provider"] = { "n", 167455 },	-- Marasmius
+					["coord"] = { 52.7, 56.1, 1565 },
+					["sourceQuest"] = 57583,	-- Through the Veil
+					["lvl"] = 60,
+				}),
+			-- Anima Conductor Tier 1
+				q(60723, {	-- The Roots Thirst
+					["provider"] = { "n", 167196 },	-- Sesselie
+					["coord"] = { 49.1, 39.1, 1565 },
+					["lvl"] = 60,
+				}),
+			-- Other Quests
+				q(62807, {	-- Forest Refugees
+					["provider"] = { "n", 160894 },	-- Droman Aliothe
+					["coord"] = { 60.0, 53.9, 1565 },
+					["lvl"] = 57,
+				}),
+				
+				
 				
 				
 				

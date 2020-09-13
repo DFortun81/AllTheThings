@@ -477,19 +477,18 @@ _.Zones =
 					["lvl"] = 60,
 				}),
 			-- End of Zone Achievement Quests
-				q(60509, {	-- Not My Job
-					["provider"] = { "n", 158057 },	-- Rendle
-					["coord"] = { 67.5, 68.5, 1525 },
-					["sourceQuest"] = 56942,	-- On The Road Again
-					["lvl"] = 57,
-				}),
-				q(57471, {	-- It's a Dirty Job
-				--	["provider"] = { "n", 158057 },	-- Rendle 
-				--	["coord"] = { 67.5, 68.5, 1525 },
-					["sourceQuest"] = 60509,	-- Not My Job
+			-- The Duelist's Debt
+				q(59710, {	-- A Curious Invitation
+					["provider"] = { "n", 165859 },	-- Dimwiddle
+					["coord"] = { 60.7, 62.5, 1525 },
+					["sourceQuest"] = 57174,	-- The Stoneborn
 					["lvl"] = 57,
 				}),
 				
+				
+				
+				
+			-- Tithes of Darkhaven
 				q(60176, {	-- Bring Out Your Tithe
 					["provider"] = { "n", 156822 },	-- Mistress Mihaela
 					["coord"] = { 61.3, 63.7, 1525 },
@@ -512,12 +511,51 @@ _.Zones =
 						i(175737),	-- Samu's Inkwell Pendant
 					},
 				}),
-				q(59710, {	-- A Curious Invitation
-					["provider"] = { "n", 165859 },	-- Dimwiddle
-					["coord"] = { 60.7, 62.5, 1525 },
-					["sourceQuest"] = 57174,	-- The Stoneborn
+			-- Dirty Jobs
+				q(60509, {	-- Not My Job
+					["provider"] = { "n", 158057 },	-- Rendle
+					["coord"] = { 67.5, 68.5, 1525 },
+					["sourceQuest"] = 56942,	-- On The Road Again
 					["lvl"] = 57,
 				}),
+				q(57471, {	-- It's a Dirty Job
+					["provider"] = { "n", 157846 },	-- Rendle 
+					["coord"] = { 72.5, 73.2, 1525 },
+					["sourceQuest"] = 60509,	-- Not My Job
+					["lvl"] = 57,
+				}),
+				q(57474, {	-- Dredger Duty
+					["provider"] = { "n", 157846 },	-- Rendle 
+					["coord"] = { 72.5, 73.2, 1525 },
+					["sourceQuest"] = 57471,	-- It's a Dirty Job
+					["lvl"] = 57,
+				}),
+				q(57477, {	-- We're Gonna Need a Bigger Dredger
+					["provider"] = { "n", 157846 },	-- Rendle 
+					["coord"] = { 72.5, 73.2, 1525 },
+					["sourceQuest"] = 57474,	-- Dredger Duty
+					["lvl"] = 57,
+				}),
+				q(57481, {	-- Running a Muck
+					["provider"] = { "n", 157898 },	-- Bootus 
+					["coord"] = { 72.8, 73.9, 1525 },
+					["sourceQuest"] = 57477,	-- We're Gonna Need a Bigger Dredger
+					["lvl"] = 57,
+					["g"] =  {
+						i(177656),	-- Boot-a-Charge Flyers
+						i(177655),	-- Air Bootuses
+						i(177654),	-- Bootus Shocks
+						i(177653),	-- Bootus Hardeneds
+					},
+				}),
+			-- The Final Atonement
+			-- Mirror Maker of the Master
+			-- Revelations of the Light
+				
+			
+				
+				
+				
 				
 				q(60275, {	-- WANTED: Enforcer Kristof									-- Need to add the Object
 					["provider"] = { "o", 351874 },	-- Wanted: Enforcer Kristof

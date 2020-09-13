@@ -676,4 +676,12 @@ t(174924);	-- Void-Touched Souvenir Totem
 
 
 -- Beta Toys
+t(180993);	-- Bat Visage Bobber
 t(182729);	-- Hearty Dragon Plume
+t(179393);	-- Mirror of Envious Dreams
+t(182780);	-- Muckpool Cookpot
+t(181825);	-- Phial of Ravenous Slime
+t(173984);	-- Scroll of Aeons
+t(184075);	-- Stonewrought Sentry
+t(182694);	-- Stylish Black Parasol
+t(182732);	-- The Necronom-i-nom

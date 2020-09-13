@@ -7,20 +7,11 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
 			n(-34,  {	-- World Quests
-				q(61545, {	-- Herbalism: Engorged Marrowroot
-					["requireSkill"] = HERBALISM,
-					["isWorldQuest"] = true,
-					["lvl"] = 60,
-				}),
-				q(58207, {	-- Buggin' Out
-					["isWorldQuest"] = true,
-					["lvl"] = 60,
-				}),
 				q(61352, {	-- All Will Be Consumed
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
-				q(61060, {	-- Spore Losers
+				q(58605, {	-- Amateur Night
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
@@ -28,7 +19,32 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
+				q(58207, {	-- Buggin' Out
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
 				q(60531, {	-- Chosen Champions
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(61867, {	-- Extra Pieces
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(61667, {	-- Forged in Secret
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(61189, {	-- Further Gelatinous Research
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(61545, {	-- Herbalism: Engorged Marrowroot
+					["requireSkill"] = HERBALISM,
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(58437, {	-- Parts to a Whole
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
@@ -36,7 +52,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
-				q(61189, {	-- Further Gelatinous Research
+				q(61060, {	-- Spore Losers
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(60231, {	-- State of Decay
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),

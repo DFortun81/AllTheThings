@@ -9,7 +9,15 @@ _.Instances = { tier(9, {	-- Shadowlands
 			1669,	-- Mists of Tirna Scithe
 		},
 		["lvl"] = 50,
-		["g"] = {					
+		["g"] = {
+			n(QUESTS, {
+				q(62371, {	-- Tirna Scithe: A Warning Silence
+					["provider"] = { "n", 168032 },	-- Flwngyrr
+					["coord"] = { 48.3, 50.5, 1565 },
+					["lvl"] = 60,
+					["maps"] = { 1565 },	-- Ardenweald
+				}),
+			}),
 			d(1, {	-- Normal
 				e(2400, {	-- Ingra Maloch
 					["crs"] = { 164567 },	-- Ingra Maloch

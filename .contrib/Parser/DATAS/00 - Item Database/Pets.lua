@@ -884,7 +884,12 @@ pet(166455, 2550);	-- Zur'aj the Depleted
 
 
 -- Beta Pets
-pet(173891, 2798);	-- Plagueborn Slime
-pet(182673, 3022);	-- Shimmerbough Hoarder
+pet(180640, 2911);	-- Amber Glitterwing
+pet(180645, 2905);	-- Dodger
 pet(180642, 2909);	-- Downfeather Ragewing
 pet(180630, 2921);	-- Gorm Harrier
+pet(182613, 3008);	-- Lost Quill
+pet(173891, 2798);	-- Plagueborn Slime
+pet(183515, 3045);	-- Reanimated Plague
+pet(182673, 3022);	-- Shimmerbough Hoarder
+pet(182612, 3009);	-- The Count

@@ -7,11 +7,27 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(-34,  {	-- World Quests
-				q(59789, {	-- Tithe and Taxes
+				q(58144, {	-- Battered and Bruised
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
-				q(60602, {	-- Secret Service
+				q(60531, {	-- Chosen Champions
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(60532, {	-- Destroy the Dominant
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(57465, {	-- Dirty Job: Wood Work
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(61885, {	-- Eyegor's Special Friends
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(59803, {	-- For Honor
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
@@ -19,19 +35,17 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
-				q(59848, {	-- Tea Tales: Theotar
+				q(61883, {	-- Resilient Survivors
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
-					["g"] = {
-						ach(14233, crit(1)),	-- Tea Tales: Theotar
-					},
 				}),
-				q(59850, {	-- Tea Tales: Vulca
+				q(60602, {	-- Secret Service
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
-					["g"] = {
-						ach(14233, crit(2)),	-- Tea Tales: Vulca
-					},
+				}),
+				q(59617, {	-- Stone Fiend Saboteurs
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
 				}),
 				q(59852, {	-- Tea Tales: Gubbins and Tubbins
 					["isWorldQuest"] = true,
@@ -47,19 +61,39 @@ _.Zones =
 						ach(14233, crit(4)),	-- Tea Tales: Lost Sybille
 					},
 				}),
-				q(60532, {	-- Destroy the Dominant
+				q(59848, {	-- Tea Tales: Theotar
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						ach(14233, crit(1)),	-- Tea Tales: Theotar
+					},
+				}),
+				q(59850, {	-- Tea Tales: Vulca
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						ach(14233, crit(2)),	-- Tea Tales: Vulca
+					},
+				}),
+				q(59581, {	-- The Strength of Sinfall
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
-				q(60531, {	-- Chosen Champions
+				q(59789, {	-- Tithe and Taxes
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(57328, {	-- Trashin' the Camp
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
 				
-				
+
+				i(181209),	-- Devourer's Bite
+				i(181205),	-- Soulstalker Epaulets
 				i(181185),	-- Soulstalker Breeches
 				i(181187),	-- Soulstalker Bindings
-				i(181209),	-- Devourer's Bite
+				
 			}),
 		}),
 	}),

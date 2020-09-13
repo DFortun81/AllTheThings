@@ -639,6 +639,7 @@ app.L = {
 		[-859] = "Interface\\Icons\\inv_tinyazeritesplinter",								-- Rank 2
 		[-860] = "Interface\\Icons\\inv_smallazeriteshard",									-- Rank 3
 		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
+		[-901] = "Interface\\Icons\\inv_misc_covenant_renown",								-- Covenant Callings
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1418,6 +1419,11 @@ app.L = {
 		[-860] = "Rank 3",														-- Rank 3
 		[-861] = "Rank 4",														-- Rank 4
 
+-- Shadowlands Header
+	--	[-900] = 																-- Covenant Sanctrum
+		[-901] = GetSpellInfo(339041),											-- Covenant Callings
+
+
 -- Temporarily Header
 
 
@@ -1863,6 +1869,7 @@ app.L = {
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
 		
+-- Shadowlands Achievement Header		
 		[-10100] = select(1,GetCategoryInfo(15422)),	-- Shadowlands
 		[-10101] = select(1,GetCategoryInfo(15428)),	-- Shadowlands Dungeon
 		[-10102] = select(1,GetCategoryInfo(15438)),	-- Shadowlands Raids

@@ -517,10 +517,177 @@ _.Zones =
 					["lvl"] = 54,
 				}),
 			-- End of Zone Achievement Quests				
-				q(59430, {	-- Plagues Aid
+			-- Sojourner of Maldraxxus
+			-- Theater of Pain	
+				q(62785, {	-- I Could Be A Contender
+					["provider"] = { "n", 161733 },	-- Anzio The Infallible
+					["coord"] = { 50.5, 51.6, 1536 },
+					["isBreadcrumb"] = true,
+					["lvl"] = 53,
+				}),
+				q(59781, {	-- The Last Guy
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, 1536 },
+					["sourceQuest"] = 62785,	-- I Could Be A Contender
+					["lvl"] = 53,
+				}),
+				q(59750, {	-- How To Get A Head
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, 1536 },
+					["lvl"] = 53,
+				}),
+				q(58575, {	-- Stuff We All Get
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, 1536 },
+					["sourceQuests"] = {
+						59781,	-- The Last Guy
+						59750,	-- How To Get A Head
+					},
+					["lvl"] = 53,
+				}),
+				q(59800, {	-- Team Spirit
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, 1536 },
+					["sourceQuests"] = {
+						59781,	-- The Last Guy
+						59750,	-- How To Get A Head
+					},
+					["lvl"] = 53,
+				}),
+				q(58947, {	-- Test Your Mettle
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, 1536 },
+					["sourceQuests"] = {
+						58575,	-- Stuff We All Get
+						59800,	-- Team Spirit
+					},
+					["lvl"] = 53,
+				}),
+				q(59879, {	-- This Thing Of Ours
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, 1536 },
+					["sourceQuest"] = 58947,	-- Test Your Mettle
+					["lvl"] = 53,
+				}),
+				q(59203, {	-- Leave Me a Loan
+					["provider"] = { "n", 159830 },	-- Au'narim
+					["coord"] = { 53.6, 47.5, 1536 },
+					["sourceQuest"] = 58947,	-- Test Your Mettle
+					["lvl"] = 55,
+				}),
+				q(59837, {	-- Working For The Living
+					["provider"] = { "n", 159830 },	-- Au'narim
+					["coord"] = { 53.6, 47.5, 1536 },
+					["sourceQuest"] = 59203,	-- Leave Me a Loan
+					["lvl"] = 55,
+					["maps"] = { 1691 },	-- Shattered Grove
+				}),
+				q(58900, {	-- A Sure Bet									triggers 59843 too
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, 1536 },
+					["sourceQuest"] = 59837,	-- Working For The Living
+					["lvl"] = 55,
+				}),
+				q(57316, {	-- The Ladder
+					["provider"] = { "n", 161733 },	-- Anzio The Infallible
+					["coord"] = { 50.5, 51.6, 1536 },
+					["sourceQuest"] = 59837,	-- Working For The Living
+					["lvl"] = 55,
+					["g"] = {
+						i(180791),	-- Reanimated Executioner's Shank
+						i(180663),	-- War Scholar's Bonesaw
+						i(180666),	-- Bonebender's Warblade
+						i(180664),	-- Reanimated Executioner's Crusher
+						i(180792),	-- War Scholar's Shortsword
+						i(180673),	-- Reanimated Executioner's Sword
+						i(180668),	-- War Scholar's Wand
+						i(180672),	-- Bonebender's Warglaive
+						i(180667),	-- Enlarged Jawbone Crossbow
+						i(180665),	-- Grasping Greatstaff
+						i(180790),	-- War Scholar's Stave
+						i(180669),	-- Reanimated Executioner's Greatsword
+						i(180671),	-- War Scholar's Tome
+						i(180670),	-- Cruel Executioner's Bulwark
+					},
+				}),	
+				q(58068, {	-- ...Even The Most Ridiculous Request!
+					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
+					["coord"] = { 54.0, 50.8, 1536 },
+					["lvl"] = 52,
+				}),
+				q(58088, {	-- Juicing Up
+					["provider"] = { "n", 159827 },	-- Scrapper Minoire
+					["coord"] = { 53.8, 50.5, 1536 },
+					["sourceQuest"] = 58068,	-- ...Even The Most Ridiculous Request!
+					["lvl"] = 52,
+				}),
+				q(58090, {	-- Side Effects
+					["provider"] = { "n", 159833 },	-- So'narynar
+					["coord"] = { 53.7, 47.8, 1536 },
+					["sourceQuest"] = 58088,	-- Juicing Up
+					["lvl"] = 53,
+				}),
+			-- Archival Protection
+				q(58619, {	-- Read Between the Lines
+					["provider"] = { "n", 162615 },	-- Ta'eran
+					["coord"] = { 40.6, 33.0, 1536 },
+					["lvl"] = 53,
+				}),
+				q(58621, {	-- Repeat After Me
+					["provider"] = { "n", 166664 },	-- Ta'eran
+					["coord"] = { 43.0, 25.1, 1536 },
+					["sourceQuest"] = 58619,	-- Read Between the Lines
+					["lvl"] = 53,
+					["g"] = {
+						i(175707),	-- Signet of the Learned
+					},
+				}),
+				q(59917, {	-- Kill Them Of Course
+					["provider"] = { "n", 166664 },	-- Ta'eran
+					["coord"] = { 43.0, 25.1, 1536 },
+					["sourceQuest"] = 58619,	-- Read Between the Lines
+					["lvl"] = 53,
+				}),
+				q(58620, {	-- Slaylines
+					["provider"] = { "n", 166664 },	-- Ta'eran
+					["coord"] = { 43.0, 25.1, 1536 },
+					["sourceQuest"] = 58621,	-- Repeat After Me
+					["lvl"] = 53,
+				}),
+				q(58622, {	-- Secrets Among the Shelves
+					["provider"] = { "n", 166664 },	-- Ta'eran
+					["coord"] = { 43.0, 25.1, 1536 },
+					["sourceQuest"] = 58620,	-- Slaylines
+					["lvl"] = 53,
+				}),
+				q(60900, {	-- Archival Protection
+					["provider"] = { "n", 170667 },	-- Ta'eran
+					["coord"] = { 41.7, 23.6, 1536 },
+					["sourceQuest"] = 58622,	-- Secrets Among the Shelves
+					["lvl"] = 53,
+				}),
+				q(59994, {	-- Trust Fall
+					["provider"] = { "n", 162476 },	-- Ta'eran
+					["sourceQuest"] = 60900,	-- Archival Protection
+					["lvl"] = 53,
+					["g"] = {
+						i(175517),	-- Corpse-Stitcher's Slippers
+						i(175519),	-- Deceitful Agent's Treads
+						i(175518),	-- Flesh Architect's Galoshes
+						i(175516),	-- Cruel Executioner's Stompers
+					},
+				}),
+				q(58623, {	-- A Complete Set
+					["provider"] = { "n", 166664 },	-- Ta'eran
+					["coord"] = { 43.0, 25.1, 1536 },
+					["sourceQuest"] = 59994,	-- Trust Fall
+					["lvl"] = 53,
+				}),
+			-- Mixing Monstrosities	
+				q(59430, {	-- A Plague On Your House
 					["provider"] = { "n", 165049 },	-- Judas Sneap
 					["coord"] = { 58.0, 72.1, 1536 },
-					["lvl"] = 52,
+					["lvl"] = 53,
 				}),
 				q(58431, {	-- Pool of Potions
 					["provider"] = { "n", 157945 },	-- Boil Master Yetch
@@ -533,6 +700,26 @@ _.Zones =
 					["coord"] = { 58.5, 73.4, 1536 },
 					["sourceQuest"] = 58431,	-- Pool of Potions
 					["isWeekly"] = true,
+					["lvl"] = 52,
+				}),
+			-- Wasteland Work
+				q(58785, {	-- Smack And Grab
+					["provider"] = { "n", 162615 },	-- Caleesy
+					["coord"] = { 47.0, 49.0, 1536 },
+					["lvl"] = 52,
+				}),
+				q(58750, {	-- Take The Bull By The Horns
+					["provider"] = { "n", 162474 },	-- Dundae
+					["coord"] = { 46.8, 48.5, 1536 },
+					["lvl"] = 52,
+				}),
+				q(58794, {	-- Stabbing Wasteward
+					["provider"] = { "n", 162474 },	-- Dundae
+					["coord"] = { 46.8, 48.5, 1536 },
+					["sourceQuests"] = {
+						58785,	-- Smack And Grab
+						58750,	-- Take The Bull By The Horns
+					},
 					["lvl"] = 52,
 				}),
 			}),
