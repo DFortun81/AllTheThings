@@ -1571,6 +1571,10 @@ _.Zones =
 					["coord"] = { 61.2, 37.4, 1462 },
 					["repeatable"] = true,	-- repeatable when the tower is up to craft filled energy cells
 				}),
+				q(55979, { -- Iteration is Key
+					["requireSkill"] = ENGINEERING,
+					["cost"] = { { "i", 164740, 1 }, },	-- Ub3r-Spanner
+				}),
 			}),
 		}),
 	}),
