@@ -1388,8 +1388,8 @@ _.NeverImplemented =
 		q(44897),	-- Calamir bonus roll
 		q(44503),	-- Drugon the Frostblood killID
 		q(44898),	-- Drugon the Frostblood bonus roll
-		--	q(),	-- Flotsam killID
-		--	q(),	-- Flotsam bonus roll
+		q(44504),	-- Flotsam killID
+		q(44899),	-- Flotsam bonus roll
 		q(44505),	-- Humongris killID
 		q(44900),	-- Humongris bonus roll
 		q(44506),	-- Levantus killID
@@ -1715,6 +1715,7 @@ _.NeverImplemented =
 		q(53122),	-- A Season for Celebration — unused version of hallow's end quest?  triggered when i turned in the alliance version along with the other horde one
 		q(57244),	-- triggered when turning in #55618, "The Heart Forge"
 		q(55492),	-- not sure if this was when i hit Rank 8 with brawler's guild, when i purchased the ensemble, or when i handed in bag of chipped dice to the bouncer
+		q(55493),	-- Completed after killing Hexos in a random brawl.
 		q(54526),	-- triggered along with 54636 when looting Gorilla Bot Loot during Vol'dun invasion
 		q(54777),	-- triggered when turning in #54134, "Many Fine Heroes," vol'dun assault.  had WM on but i'm not sure if that's relevant
 		q(54315),	-- triggered when turning in #54134, "Many Fine Heroes," vol'dun assault.  had WM off, but i think it was the first time i did the assault on this character
