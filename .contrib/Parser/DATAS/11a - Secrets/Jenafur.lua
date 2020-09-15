@@ -15,6 +15,7 @@ _.Secrets =
 			}),
 			o(339211, {	-- Step 2: Empty Dish
 				["description"] = "|cFFFFFFFFStep 2:|r Go inside the house at |cFFFFFFFF44.2, 53.0|r in Elwynn Forest to find the |cFFFFD700Empty Dish|r.\n",
+				["altQuests"] = { 58099 },	-- Amara's Wish (interacting with Empty Dish is optional)
 				["questID"] = 58098,	-- Step 2: Find the empty dish bowl
 				["coord"] = { 44.2, 53.0, 37 },	-- Elwynn Forest
 			}),
