@@ -913,6 +913,9 @@ _.NeverImplemented =
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
 		q(34968),	-- Treasure: Ice-Covered Supplies (secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge)
 		q(34184),	-- Vignette: Aarkos - Killed Boss — first quest that triggers before looting Aarko's Family Treasure in Talador (we have the loot quest attached to the treasure)
+		q(35381),	-- Treasure: Pippers' Buried Supplies [This is right next to the Town Hall in the level 1 Garrison.] (Alliance)
+		q(35382),	-- Treasure: Pippers' Buried Supplies [This is behind the hut next to the flight master in the level 1 Garrison.] (Alliance)
+		q(35384),	-- Treasure: Pippers' Buried Supplies [This is at the base of a tree off to the right of the South exit in the level 1 Garrison.] (Alliance)
 
 		--	WORLD BOSSES (probably?  'short-supply reward' is usually a bonus roll)
 		q(37460),	-- Gorgrond - Short-Supply Reward (Drov the Ruiner killed)
