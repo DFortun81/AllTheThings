@@ -960,6 +960,7 @@ _.NeverImplemented =
 		q(33965),	-- Tanaan Flowerpicker
 		q(39128),	-- Tanaan Vignette
 		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
+		q(34024),	-- Tracking Quest. This completes when you kill the Windfang Matriarch after helping Romuul.
 
 		--	PvP Set Completed
 		q(43092),	-- Primal Combatant's Felweave Armor (Alliance, Warlock)
