@@ -464,6 +464,19 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(97078)),	-- Abandoned Zandalari Shadowgirdle (Heroic Thunderforged)
 			un(NEVER_IMPLEMENTED, i(97079)),	-- Silentflame Sandals (Heroic Thunderforged)
 			un(NEVER_IMPLEMENTED, i(97081)),	-- Home-Warding Slippers (Heroic Thunderforged)
+			un(NEVER_IMPLEMENTED, i(114247)),	-- Firefly Bracers
+			un(NEVER_IMPLEMENTED, i(114254)),	-- Firefly Robes
+			un(NEVER_IMPLEMENTED, i(114255)),	-- Firefly Sandals
+			un(NEVER_IMPLEMENTED, i(114259)),	-- Firefly Gloves
+			un(NEVER_IMPLEMENTED, i(114263)),	-- Firefly Hood
+			un(NEVER_IMPLEMENTED, i(114267)),	-- Firefly Trousers
+			un(NEVER_IMPLEMENTED, i(114271)),	-- Firefly Mantle
+			un(NEVER_IMPLEMENTED, i(114275)),	-- Firefly Cord
+			un(NEVER_IMPLEMENTED, i(114297)),	-- Feather-Cord Cloak
+			un(NEVER_IMPLEMENTED, i(114298)),	-- Cloak of Bent Dreams
+			un(NEVER_IMPLEMENTED, i(114299)),	-- Suture-Slice Cloak
+			un(NEVER_IMPLEMENTED, i(114300)),	-- Grimchop Greatcloak
+			un(NEVER_IMPLEMENTED, i(114301)),	-- Axebreak Darkcloak
 		}),
 		n(-44, {	-- Leather
 			cl(11, {	-- Druid

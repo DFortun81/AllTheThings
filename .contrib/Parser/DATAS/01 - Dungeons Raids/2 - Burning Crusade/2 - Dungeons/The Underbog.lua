@@ -9,36 +9,30 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["coord"] = { 54.24, 34.45, 102 },	-- The Underbog, Zangarmarsh
 		["g"] = {
 			n(QUESTS, {
-				{	-- A Necessary Evil
-					["questID"] = 29568,	-- A Necessary Evil
-					["provider"] = { "n", 54678 },			-- Naturalist Bite
-				},
-				{	-- Bring Me A Shrubbery!
-					["questID"] = 29691,	-- Bring Me A Shrubbery!
-					["provider"] = { "n", 54674 },			-- T'shu
-				},
-				{	-- Bring Me Another Shrubbery!
-					["questID"] = 29692,		-- Bring Me Another Shrubbery!
+				q(29568, {	-- A Necessary Evil
+					["provider"] = { "n", 54678 },	-- Naturalist Bite
+				}),
+				q(29691, {	-- Bring Me A Shrubbery!
+					["provider"] = { "n", 54674 },	-- T'shu
+				}),
+				q(29692, {	-- Bring Me Another Shrubbery!
 					["sourceQuest"] = 29691,	-- Bring Me A Shrubbery!
 					["repeatable"] = true,
 					["provider"] = { "n", 54674 },	-- T'shu
-				},
-				{	-- Rescuing the Expedition
-					["questID"] = 29570,	-- Rescuing the Expedition
-					["provider"] = { "n", 54675 },			-- Watcher Jhang
-				},
-				{	-- Stalk the Stalker
-					["questID"] = 29567,	-- Stalk the Stalker
-					["provider"] = { "n", 54674 },			-- T'shu
+				}),
+				q(29570, {	-- Rescuing the Expedition
+					["provider"] = { "n", 54675 },	-- Watcher Jhang
+				}),
+				q(29567, {	-- Stalk the Stalker
+					["provider"] = { "n", 54674 },	-- T'shu
 					["g"] = {
-						{	-- Essence Infused Mushroom
-							["itemID"] = 28109,	-- Essence Infused Mushroom
-						},
-						{	-- Power Infused Mushroom
-							["itemID"] = 28108,	-- Power Infused Mushroom
-						},
+						i(28109),	-- Essence Infused Mushroom
+						i(28108),	-- Power Infused Mushroom
 					},
-				},
+				}),
+			}),
+			n(ZONEDROPS, {
+				i(24246),	-- Sanguine Hibiscus
 			}),
 			d(1, {	-- Normal
 				cr(17770, e(576, {	-- Hungarfen
@@ -166,11 +160,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(27896),	-- Alembic of Infernal Power
 						i(27770),	-- Argussian Compass
 					})),
-				},
-			}),
-			n(ZONEDROPS, {
-				["g"] = {
-					i(24246),	-- Sanguine Hibiscus
 				},
 			}),
 		},
