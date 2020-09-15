@@ -961,6 +961,7 @@ _.NeverImplemented =
 		q(39128),	-- Tanaan Vignette
 		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
 		q(34024),	-- Tracking Quest. This completes when you kill the Windfang Matriarch after helping Romuul.
+		q(33786),	-- ??????. This was completed around Fiona's caravan in Shadowmoon Valley - Draenor (not entirely sure what triggered it.)
 
 		--	PvP Set Completed
 		q(43092),	-- Primal Combatant's Felweave Armor (Alliance, Warlock)
