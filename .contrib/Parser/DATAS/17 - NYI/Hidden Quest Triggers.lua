@@ -2457,6 +2457,7 @@ _.NeverImplemented =
 		q(57169),	-- triggered when completing WQ to kill Alzana, Arrow of Thunder (not WQ ID)
 
 		--	Mechagon
+		q(56329),	-- Triggered when completing 'Do Not Drink'(56328) the first time
 		q(56089),	-- triggered on first rare kill — possibly blueprint looting?
 		q(56506),	-- triggered on third rare kill — was Mr. Fixthis for me, but someone else had it trigger on Arachnoid Harvester.  looted Performant Refined Logic Board and a Chain Ignitercoil
 		q(57132),	-- Reclamation Rig normal — putting here because with both quests attached with altQuests it doesn't roll over like dailies should
