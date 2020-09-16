@@ -18,6 +18,7 @@ i(23122);	-- Consecrated Sharpening Stone
 i(143542);	-- Crown Co. "Kure-Everything" Tonic
 i(173810);	-- Darksight Potion
 i(142264);	-- Drudge Fluid
+i(120257);	-- Drums of Fury
 i(142262);	-- Electrified Key
 i(168222);	-- Encrypted Black Market Radio
 i(13508);	-- Eye of Arachnida
