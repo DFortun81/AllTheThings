@@ -164,6 +164,7 @@ _.Zones =
 							["maps"] = { 680 },	-- Suramar
 							["g"] = {
 								cl(WARRIOR, {
+									["classes"] = { WARRIOR },
 									["g"] = {
 										artifact(805),
 										artifact(669),
@@ -171,6 +172,7 @@ _.Zones =
 									}
 								}),
 								cl(PALADIN, {
+									["classes"] = { PALADIN },
 									["g"] = {
 										artifact(16),
 										artifact(545),
@@ -178,6 +180,7 @@ _.Zones =
 									}
 								}),
 								cl(HUNTER, {
+									["classes"] = { HUNTER },
 									["g"] = {
 										artifact(219),
 										artifact(462),
@@ -185,6 +188,7 @@ _.Zones =
 									}
 								}),
 								cl(ROGUE, {
+									["classes"] = { ROGUE },
 									["g"] = {
 										artifact(237),
 										artifact(765),
@@ -192,6 +196,7 @@ _.Zones =
 									}
 								}),
 								cl(PRIEST, {
+									["classes"] = { PRIEST },
 									["g"] = {
 										artifact(735),
 										artifact(753),
@@ -199,6 +204,7 @@ _.Zones =
 									}
 								}),
 								cl(DEATHKNIGHT, {
+									["classes"] = { DEATHKNIGHT },
 									["g"] = {
 										artifact(368),
 										artifact(371),
@@ -206,6 +212,7 @@ _.Zones =
 									}
 								}),
 								cl(SHAMAN, {
+									["classes"] = { SHAMAN },
 									["g"] = {
 										artifact(310),
 										artifact(682),
@@ -213,6 +220,7 @@ _.Zones =
 									}
 								}),
 								cl(MAGE, {
+									["classes"] = { MAGE },
 									["g"] = {
 										artifact(184),
 										artifact(499),
@@ -220,6 +228,7 @@ _.Zones =
 									}
 								}),
 								cl(WARLOCK, {
+									["classes"] = { WARLOCK },
 									["g"] = {
 										artifact(198),
 										artifact(329),
@@ -227,6 +236,7 @@ _.Zones =
 									}
 								}),
 								cl(MONK, {
+									["classes"] = { MONK },
 									["g"] = {
 										artifact(517),
 										artifact(348),
@@ -234,6 +244,7 @@ _.Zones =
 									}
 								}),
 								cl(DRUID, {
+									["classes"] = { DRUID },
 									["g"] = {
 										artifact(419),
 										artifact(54),
@@ -242,6 +253,7 @@ _.Zones =
 									}
 								}),
 								cl(DEMONHUNTER, {
+									["classes"] = { DEMONHUNTER },
 									["g"] = {
 										artifact(36),
 										artifact(563),
