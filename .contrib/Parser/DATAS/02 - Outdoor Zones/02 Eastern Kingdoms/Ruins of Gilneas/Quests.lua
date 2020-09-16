@@ -86,7 +86,7 @@ _.Zones =
 					}),
 					q(27423, {	-- Resistance is Futile
 						["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
-						["coord"] = { 57.5, 18.2, 21 },
+						["coord"] = { 57.5, 18.2, 217 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27405 },	-- Fall Back!
 					}),
@@ -109,7 +109,7 @@ _.Zones =
 					}),
 					q(27438, {	-- The Great Escape (awards "Ruins of Gilneas" criteria for zone achievement)
 						["provider"] = { "n", 45312 },	-- Deathstalker Commander Belmont
-						["coord"] = { 79.7, 75.7, 21 },
+						["coord"] = { 79.7, 75.7, 217 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							27406,	-- A Man Named Godfrey
