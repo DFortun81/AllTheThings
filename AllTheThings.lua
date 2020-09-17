@@ -4800,7 +4800,9 @@ app.BaseAzeriteEssence = {
 				else
 					return 1;
 				end
-			elseif app.AccountWideAzeriteEssences and accountRank >= t.rank then
+			end
+			
+			if app.AccountWideAzeriteEssences and accountRank >= t.rank then
 				return 2;
 			end
 		elseif key == "text" then
