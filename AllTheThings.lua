@@ -4784,15 +4784,24 @@ app.BaseAzeriteEssence = {
 		elseif key == "collectible" then
 			return app.CollectibleAzeriteEssences;
 		elseif key == "collected" then
+			if (GetTempDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID) or 0) >= t.rank then
+				return 1;
+			end
+			
+			local accountRank = GetDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID) or 0;
 			local info = t.info;
 			if info and info.unlocked then
 				if t.rank and info.rank then
 					if info.rank >= t.rank then
+						SetTempDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID, info.rank);
+						if info.rank > accountRank then SetDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID, info.rank); end
 						return 1;
 					end
 				else
 					return 1;
 				end
+			elseif app.AccountWideAzeriteEssences and accountRank >= t.rank then
+				return 2;
 			end
 		elseif key == "text" then
 			return t.link;
@@ -14904,11 +14913,22 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("ArtifactRelicItemLevels", myArtifactRelicItemLevels);
 	end
 	
+	-- Cache your character's azerite essence rank data.
+	local azeriteEssenceRanks = GetDataMember("AzeriteEssenceRanksPerCharacter", {});
+	local myAzeriteEssenceRanks = GetTempDataMember("AzeriteEssenceRanks", azeriteEssenceRanks[app.GUID]);
+	if not myAzeriteEssenceRanks then
+		myAzeriteEssenceRanks = {};
+		azeriteEssenceRanks[app.GUID] = myAzeriteEssenceRanks;
+		SetTempDataMember("AzeriteEssenceRanks", myAzeriteEssenceRanks);
+	end
+	
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
 		"ArtifactRelicItemLevelsPerCharacter",
 		"ArtifactRelicItemLevels",
+		"AzeriteEssenceRanksPerCharacter",
+		"AzeriteEssenceRanks",
 		"Categories",
 		"Characters",
 		"CollectedAchievements",

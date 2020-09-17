@@ -905,11 +905,8 @@ function(self)
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
-	--	replace when account-wide tracking is available
-	--	self:Enable();
-	--	self:SetAlpha(1);
-		self:Disable();
-		self:SetAlpha(0.2);
+		self:Enable();
+		self:SetAlpha(1);
 	end
 end,
 function(self)
