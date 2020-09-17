@@ -1018,8 +1018,8 @@ _.NeverImplemented =
 		q(41306),	-- The Fallen Lion. Triggers with regular "The Fallen Lion" 40517
 		q(33079),	-- Triggers with "Demons Among Us" 40593
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
-		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior (all classes?)
-		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior (all classes?)
+		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin (all classes?)
+		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin (all classes?)
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
 		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
@@ -1116,6 +1116,7 @@ _.NeverImplemented =
 		q(46717),	-- got achievement Burning Bridges and looted Qa'pla, Eredun War Order legendary, so one of the two
 		q(46835),	-- Whispers of a Frightened World Tracking, while doing quest 46206
 		q(43659),	-- Mage - learned the Felo'melorn appearance from The Stars' Design (maybe put this on the appearance item?)
+		q(44426),	-- Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
 
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
