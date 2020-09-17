@@ -176,6 +176,21 @@ i(9279);	-- White Punch Card
 i(160376);	-- Wilderbew Special
 i(173773);	-- Yeasty Hunk
 
+i(4407);	-- accurate scope
+i(15869);	-- silver skeletoon key
+i(15870);	-- golden skeleton key
+i(15871);	-- truesilver skeleton key
+i(15872);	-- arcanite skeleton key
+i(18262);	-- elemental sharpning stone
+i(18283);	-- biznicks 247x128 accu scope-- Grey
+i(158931);	-- shiny object
+i(158932);	-- lucky charm
+i(159621);	-- personal anchor
+i(162126);	-- river clam meat-- Suramar Mana Gems
+i(139890);	-- ancient mana gem
+i(140236);	-- a mrglmrl mlrglr
+i(140239);	-- excavated highborne artifact
+i(140240);	-- enchanted moonweel waters
 
 
 -- "Weekly Holidays"
