@@ -129,6 +129,7 @@ i(12806);	-- Unforged Rune Covered Breastplate
 i(169239);	-- Unknowable Cube
 i(169225);	-- Unstoppable Countdown Clock
 i(169867);	-- Visual Holo Sphere
+i(146702);	-- White Lightningsteel
 i(156926);	-- Witchrend
 i(164761);	-- Xal'atath, Blade of the Black Empire
 i(17384);	-- Zinfizzlex's Portable Shredder Unit
