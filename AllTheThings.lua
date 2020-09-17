@@ -4178,6 +4178,7 @@ end
 local function AttachTooltip(self)
 	if not self.AllTheThingsProcessing then
 		self.AllTheThingsProcessing = true;
+		self.UpdateTooltip = function(self) return true; end
 		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			local numLines = self:NumLines();
 			if numLines > 0 then
@@ -4357,6 +4358,7 @@ local function AttachBattlePetTooltip(self, data, quantity, detail)
 end
 local function ClearTooltip(self)
 	self.AllTheThingsProcessing = nil;
+	self.UpdateTooltip = nil;
 end
 
 -- Tooltip Hooks
