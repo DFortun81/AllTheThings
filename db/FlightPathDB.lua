@@ -1865,7 +1865,9 @@ select(2, ...).FlightPathDB = {
 	[1849] = {
 		["u"] = 1,
 		["name"] = "Dalaran",
-		["c"] = 3,
+		["c"] = {
+			3,
+		},
 	},
 	[1850] = {
 		["name"] = "Eastern Highmountain",
