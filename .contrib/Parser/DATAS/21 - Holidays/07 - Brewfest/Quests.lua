@@ -304,6 +304,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["coord"] = { 41.2, 18.4, 1 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
+					["isYearly"] = true,
 				}),
 				q(11412, {	-- There and Back Again (H)
 					["provider"] = { "n", 24497 },	-- Ram Master Ray
