@@ -2329,6 +2329,7 @@ select(2, ...).FlightPathDB = {
 	[1760] = {
 		["name"] = "Trueshot Lodge, Highmountain",
 		["faction"] = 0,
+		["c"] = { 3 },
 	},
 	[1505] = {
 		["name"] = "Riverside Post, Nagrand",
