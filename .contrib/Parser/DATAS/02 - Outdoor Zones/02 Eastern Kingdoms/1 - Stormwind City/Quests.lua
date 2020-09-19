@@ -1135,6 +1135,12 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["lvl"] = 90,
 				}),
+				q(54402, {	-- Shifting Gears
+					["provider"] = { "n", 147939 },	-- Ace Pilot Stormcog
+					["coord"] = { 54.6, 18.4, 84 },
+					["races"] = { GNOME },
+					["minReputation"] = { 54, EXALTED }, -- Gnomeregan
+				}),
 				q(28401, {	-- Slaves of the Firelord
 					["provider"] = { "n", 20407 },	-- Farseer Umbrua
 					["coord"] = { 64.6, 33.0, 84 },
