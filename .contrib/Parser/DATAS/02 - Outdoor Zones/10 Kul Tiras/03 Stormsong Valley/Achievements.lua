@@ -85,6 +85,7 @@ _.Zones =
 					o(293350, {	-- Carved Wooden Chest	
 						["questID"] = 52429,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = {	44.44, 73.53 },
 						["g"] = {
 							i(162000),	-- Pig Nose
 						},
@@ -102,10 +103,12 @@ _.Zones =
 					o(294174, {	-- Forgotten Chest	
 						["questID"] = 52980,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 46.00, 30.69 },
 					}),
 					o(281494, {	-- Frosty Treasure Chest	
 						["questID"] = 50526,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 48.96, 84.07 },
 					}),
 					o(284448, {	-- Hidden Scholar's Chest	
 						["questID"] = 50937,
@@ -125,14 +128,17 @@ _.Zones =
 					o(282153, {	-- Sunken Strongbox	
 						["questID"] = 50734,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 67.22, 43.2 },
 					}),
 					o(294173, {	-- Venture Co. Supply Chest	
 						["questID"] = 52976,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 36.69, 23.23 },
 					}),
 					o(289647, {	-- Weathered Treasure Chest	
 						["questID"] = 51449,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 66.92, 12.03 },
 					}),
 				}),
 			}),
