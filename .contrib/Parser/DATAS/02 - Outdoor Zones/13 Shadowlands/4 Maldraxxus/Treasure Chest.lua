@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(1550, {	-- Shadowlands
-		m(1565, {	-- Ardenweald
+		m(1536, {	-- Maldraxxus
 			n(-212, {	-- Treasure Chest
 				o(352086, {	-- Blackhound Cache
 					["coord"] = { 44.0, 39.8, 1536 },

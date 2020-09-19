@@ -12,7 +12,56 @@ _.Zones =
 					["questID"] = 58526,
 					["isDaily"] = true,
 					["g"] = {
+						ach(14307, crit(26)),	-- Adventurer of Bastion / Aethon
 						i(179487),	-- Aethon's Horn
+					},
+				}),
+				n(171211, { -- Aspirant Eolis
+					["coord"] = { 32.6, 23.4, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(22)),	-- Adventurer of Bastion / Aspirant Eolis
+					},
+				}),
+				n(160629, { -- Baedos
+					["coord"] = { 51.2, 40.6, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(6)),	-- Adventurer of Bastion / Baedos
+					},
+				}),
+				n(170659, { -- Basilofos, King of the Hill
+					["coord"] = { 48.4, 50.4, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(11)),	-- Adventurer of Bastion / Basilofos, King of the Hill
+					},
+				}),
+				n(171189, { -- Bookkeeper Mnemis
+					["coord"] = { 57.2, 62.4, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(21)),	-- Adventurer of Bastion / Bookkeeper Mnemis
+					},
+				}),
+				n(170832, { -- Champion of Loyalty								
+					--["coord"] = { 43.0, 82.6, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(28)),	-- Adventurer of Bastion / Champion of Loyalty
+					},
+				}),
+				n(170932, { -- Cloudfeather Guardian
+					["coord"] = { 50.6, 59.6, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(13)),	-- Adventurer of Bastion / Cloudfeather Guardian
 					},
 				}),
 				n(161530, { -- Cloudtail
@@ -24,6 +73,99 @@ _.Zones =
 						i(179488),	-- Cloudtail's Paw
 					},
 				}),
+				n(171014, { -- Collector Astorestes
+					--["coord"] = { 41.8, 55.4, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(19)),	-- Adventurer of Bastion / Collector Astorestes
+					},
+				}),
+				n(171010, { -- Corrupted Clawguard
+					--["coord"] = { 46.8, 64.0, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(24)),	-- Adventurer of Bastion / Corrupted Clawguard
+					},
+				}),
+				n(170623, { -- Dark Watcher
+					["coord"] = { 27.8, 30.0, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(12)),	-- Adventurer of Bastion / Dark Watcher
+					},
+				}),
+				n(171011, { -- Demi the Relic Hoarder
+					["coord"] = { 38.8, 40.8, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(20)),	-- Adventurer of Bastion / Demi the Relic Hoarder
+					},
+				}),
+				n(163460, { -- Dionae
+					--["coord"] = { 51.8, 68.6, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(9)),	-- Adventurer of Bastion / Dionae
+					},
+				}),
+				n(171255, { -- Echo of Aella <Hand of Courage>
+					["coord"] = { 46.8, 64.0, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(23)),	-- Adventurer of Bastion / Echo of Aella <Hand of Courage>
+					},
+				}),
+				n(171013, { -- Embodied Hunger
+					["coords"] = { 
+						{ 55.8, 14.4, 1533},
+						{ 47.6, 42.8, 1533},
+						{ 59.8, 52.0, 1533},
+					},
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(16)),	-- Adventurer of Bastion / Embodied Hunger
+					},
+				}),
+				n(171009, { -- Enforcer Aegeon
+					["coord"] = { 50.8, 19.6, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(14)),	-- Adventurer of Bastion / Enforcer Aegeon
+					},
+				}),
+				n(160721, { -- Fallen Acolyte Erisne
+					["coord"] = { 60.5, 73.4, 1533 },
+					["questID"] = 58222,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(2)),	-- Adventurer of Bastion / Fallen Acolyte Erisne
+						i(180444),	-- Harmonia's Chosen Belt
+					},
+				}),
+				n(158659, { -- Herculon											
+					["coord"] = { 43.0, 82.6, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(1)),	-- Adventurer of Bastion / Herculon
+					},
+				}),
+				n(156340, { -- Larionrider Orstus									
+					--["coord"] = { 43.0, 82.6, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(27)),	-- Adventurer of Bastion / Larionrider Orstus
+					},
+				}),
 				n(161529, { -- Nemaeus											-- Something is wrong here ... QuestID and/or crit
 					["coord"] = { 55.3, 80.3, 1533 },
 					["questID"] = 50570,
@@ -31,6 +173,22 @@ _.Zones =
 					["g"] = {
 						ach(14307, crit(5)),	-- Adventurer of Bastion / Nemaeus
 						i(179485),	-- Fang of Nemaeus
+					},
+				}),
+				n(160882, { -- Nikara Blackheart
+					["coord"] = { 51.8, 68.6, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(8)),	-- Adventurer of Bastion / Nikara Blackheart
+					},
+				}),
+				n(171327, { -- Reekmonger
+					--["coord"] = { 46.8, 64.0, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(25)),	-- Adventurer of Bastion / Reekmonger
 					},
 				}),
 				n(161527, { -- Sigilback
@@ -42,13 +200,52 @@ _.Zones =
 						i(179486),	-- Sigilback's Smashshell
 					},
 				}),
-				n(160721, { -- Fallen Acolyte Erisne
-					["coord"] = { 60.5, 73.4, 1533 },
-					["questID"] = 58222,
+				n(170548, { -- Sundancer
+					--["coord"] = { 51.8, 68.6, 1533 },
+					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(2)),	-- Adventurer of Bastion / Fallen Acolyte Erisne
-						i(180444),	-- Harmonia's Chosen Belt
+						ach(14307, crit(10)),	-- Adventurer of Bastion / Sundancer
+					},
+				}),
+				n(171008, { -- Unstable Memory
+					--["coord"] = { 50.8, 19.6, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(15)),	-- Adventurer of Bastion / Unstable Memory
+					},
+				}),
+				n(167078, { -- Wingflayer the Cruel
+					["coord"] = { 41.8, 55.4, 1533 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(7)),	-- Adventurer of Bastion / Wingflayer the Cruel
+					},
+				}),
+				n(171041, { -- Worldfeaster Chronn
+					["coords"] = {
+						{ 56.0, 14.6, 1533 },
+						{ 52.2, 31.6, 1533 },
+						{ 47.8, 42.8, 1533 },
+					},
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(18)),	-- Adventurer of Bastion / Worldfeaster Chronn
+					},
+				}),
+				n(171040, { -- Xixin the Ravening
+					["coords"] = {
+						{ 47.6, 43.0, 1533 },
+						{ 63.6, 35.8, 1533 },
+						{ 59.8, 51.6, 1533 },
+					},
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14307, crit(17)),	-- Adventurer of Bastion / Xixin the Ravening
 					},
 				}),
 			}),

@@ -10,6 +10,7 @@ _.Zones =
 			["maps"] = {
 				1613,	-- Oribos
 				1671,	-- Oribos
+				1672,	-- Oribos lower level
 			},
 		}),
 	}),
