@@ -4178,7 +4178,7 @@ end
 local function AttachTooltip(self)
 	if not self.AllTheThingsProcessing then
 		self.AllTheThingsProcessing = true;
-		self.UpdateTooltip = function(self) return true; end
+		self.UpdateTooltip = function(self) return; end
 		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			local numLines = self:NumLines();
 			if numLines > 0 then
