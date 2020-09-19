@@ -9,23 +9,20 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["coord"] = { 48.95, 35.84, 102 },	-- The Slave Pens, Zangarmarsh
 		["g"] = {
 			n(QUESTS, {
-				{	-- A Brother Betrayed
-					["questID"] = 29564,	-- A Brother Betrayed
+				q(29564, {	-- A Brother Betrayed
 					["provider"] = { "n", 54668 },	-- Nahuud
-				},
-				{	-- Lost in Action
-					["questID"] = 29563,	-- Lost in Action
+				}),
+				q(29563, {	-- Lost in Action
 					["provider"] = { "n", 54667 },	-- Watcher Jhang
-				},
-				{	-- The Heart of the Matter
-					["questID"] = 29565,	-- The Heart of the Matter
+				}),
+				q(29565, {	-- The Heart of the Matter
 					["provider"] = { "n", 54667 },	-- Watcher Jhang
 					["g"]	= {
 						i(25541),	-- Cenarion Ring of Casting
 						i(28029),	-- Goldenvine Wraps
 						i(25540),	-- Dark Cloak of the Marsh
 					},
-				},
+				}),
 			}),
 			d(1, {	-- Normal
 				cr(17941, e(570, {	-- Mennu the Betrayer
@@ -180,9 +177,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(127201),	-- Quagmirran's Eye
 					})),
 				},
-			}),
-			n(ZONEDROPS, {
-				-- Note!! Blank so when map merges into the list it's in this spot rather than top
 			}),
 		},
 	}),

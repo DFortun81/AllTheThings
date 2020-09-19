@@ -81,6 +81,7 @@ local GeneralSettingsBase = {
 		["Repeatable"] = false,
 		["RepeatableFirstTime"] = false,
 		["AccountWide:Achievements"] = true,
+		["AccountWide:AzeriteEssences"] = false,
 		-- ["AccountWide:BattlePets"] = true,
 		["AccountWide:FlightPaths"] = true,
 		["AccountWide:Followers"] = true,
@@ -96,6 +97,7 @@ local GeneralSettingsBase = {
 		-- ["AccountWide:Toys"] = true,
 		-- ["AccountWide:Transmog"] = true,
 		["Thing:Achievements"] = true,
+		["Thing:AzeriteEssences"] = true,
 		["Thing:BattlePets"] = true,
 		["Thing:FlightPaths"] = true,
 		["Thing:Followers"] = true,
@@ -464,8 +466,10 @@ settings.UpdateMode = function(self)
 		app.SeasonalItemFilter = app.NoFilter;
 		app.UnobtainableItemFilter = app.NoFilter;
 		app.VisibilityFilter = app.NoFilter;
+		app.ShowIncompleteThings = app.NoFilter;
 		
 		app.AccountWideAchievements = true;
+		app.AccountWideAzeriteEssences = true;
 		app.AccountWideBattlePets = true;
 		app.AccountWideFlightPaths = true;
 		app.AccountWideFollowers = true;
@@ -481,6 +485,7 @@ settings.UpdateMode = function(self)
 		app.AccountWideTransmog = true;
 		
 		app.CollectibleAchievements = true;
+		app.CollectibleAzeriteEssences = true;
 		app.CollectibleBattlePets = true;
 		app.CollectibleFlightPaths = true;
 		app.CollectibleFollowers = true;
@@ -508,8 +513,14 @@ settings.UpdateMode = function(self)
 		else
 			app.UnobtainableItemFilter = app.NoFilter;
 		end
+		if self:Get("Show:IncompleteThings") then
+			app.ShowIncompleteThings = app.FilterItemTrackable;
+		else
+			app.ShowIncompleteThings = app.Filter;
+		end
 		
 		app.AccountWideAchievements = self:Get("AccountWide:Achievements");
+		app.AccountWideAzeriteEssences = self:Get("AccountWide:AzeriteEssences");
 		app.AccountWideBattlePets = self:Get("AccountWide:BattlePets");
 		app.AccountWideFlightPaths = self:Get("AccountWide:FlightPaths");
 		app.AccountWideFollowers = self:Get("AccountWide:Followers");
@@ -525,6 +536,7 @@ settings.UpdateMode = function(self)
 		app.AccountWideTransmog = self:Get("AccountWide:Transmog");
 		
 		app.CollectibleAchievements = self:Get("Thing:Achievements");
+		app.CollectibleAzeriteEssences = self:Get("Thing:AzeriteEssences");
 		app.CollectibleBattlePets = self:Get("Thing:BattlePets");
 		app.CollectibleFlightPaths = self:Get("Thing:FlightPaths");
 		app.CollectibleFollowers = self:Get("Thing:Followers");
@@ -561,11 +573,6 @@ settings.UpdateMode = function(self)
 	else
 		app.CollectedItemVisibilityFilter = app.Filter;
 	end
-	if self:Get("Show:IncompleteThings") then
-		app.ShowIncompleteThings = app.FilterItemTrackable;
-	else
-		app.ShowIncompleteThings = app.Filter;
-	end
 	if self:Get("AccountWide:Achievements") then
 		app.AchievementFilter = 4;
 	else
@@ -575,8 +582,7 @@ settings.UpdateMode = function(self)
 		app.RecipeChecker = app.GetDataSubMember;
 	else
 		app.RecipeChecker = app.GetTempDataSubMember;
-	end
-	
+	end	
 	if self:Get("Filter:BoEs") then
 		app.ItemBindFilter = app.FilterItemBind;
 	else
@@ -588,7 +594,7 @@ settings.UpdateMode = function(self)
 		app.RequireBindingFilter = app.NoFilter;
 	end
 	app:UnregisterEvent("PLAYER_LEVEL_UP");
-	if self:Get("Filter:ByLevel") then
+	if self:Get("Filter:ByLevel") and not self:Get("DebugMode") then
 		app:RegisterEvent("PLAYER_LEVEL_UP");
 		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
 	else
@@ -674,7 +680,7 @@ function(self)
 	settings:SetDebugMode(self:GetChecked());
 end);
 DebugModeCheckBox:SetATTTooltip("Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.");
-DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -8);
+DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -1);
 
 local CompletionistModeCheckBox = settings:CreateCheckBox("|CFFADD8E6Completionist Mode|r (All Sources)",
 function(self)
@@ -818,7 +824,7 @@ function(self)
 	app:RefreshData();
 end);
 AchievementsCheckBox:SetATTTooltip("Enable this option to track achievements.");
-AchievementsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -8);
+AchievementsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -1);
 
 local AchievementsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
@@ -873,6 +879,44 @@ function(self)
 end);
 TransmogAccountWideCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "TOPLEFT", 220, 0);
 
+local AzeriteEssencesCheckBox = settings:CreateCheckBox("Azerite Essences",
+function(self)
+	self:SetChecked(settings:Get("Thing:AzeriteEssences"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:AzeriteEssences", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+AzeriteEssencesCheckBox:SetATTTooltip("Enable this option to track Azerite Essences.\n\nTracked per character by default.");
+AzeriteEssencesCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "BOTTOMLEFT", 0, 4);
+
+local AzeriteEssencesAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(settings:Get("AccountWide:AzeriteEssences"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:AzeriteEssences") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:AzeriteEssences", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+AzeriteEssencesAccountWideCheckBox:SetATTTooltip("Azerite Essences cannot technically be collected and used account-wide, but if you only care about collecting them on your main character then you may prefer tracking them account-wide.");
+AzeriteEssencesAccountWideCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "TOPLEFT", 220, 0);
+
 local BattlePetsCheckBox = settings:CreateCheckBox("Battle Pets / Companions",
 function(self)
 	self:SetChecked(settings:Get("Thing:BattlePets"));
@@ -890,7 +934,7 @@ function(self)
 	app:RefreshData();
 end);
 BattlePetsCheckBox:SetATTTooltip("Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.\n\nTracked Account Wide by Default.");
-BattlePetsCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "BOTTOMLEFT", 0, 4);
+BattlePetsCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local BattlePetsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
@@ -1385,7 +1429,7 @@ function(self)
 	settings:UpdateMode();
 	app:RefreshData();
 end);
-ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
+ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
 ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", ShowCompletedGroupsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowIncompleteThingsCheckBox = settings:CreateCheckBox("Show Incomplete Things",
@@ -1424,7 +1468,7 @@ function(self)
 	app:RefreshData();
 end);
 ShowRepeatableThingsCheckBox:SetATTTooltip("Enable this option if you want to treat repeatable daily, weekly, and yearly quests as collectible. They will appear in the list like a regular collectible quest.\n\nNOTE: This is NOT intended to be used all the time, but if you're doing a set of dailies in a zone you've otherwise completed and need to be reminded of what is there, you can use this to see them.");
-ShowRepeatableThingsCheckBox:SetPoint("TOPLEFT", ShowIncompleteThingsCheckBox, "BOTTOMLEFT", 4, 4);
+ShowRepeatableThingsCheckBox:SetPoint("TOPLEFT", ShowIncompleteThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowRepeatableThingsFirstTimeCheckBox = settings:CreateCheckBox("Only first time",
 function(self)
@@ -1830,7 +1874,7 @@ end);
 seasonalEnable:SetPoint("TOPLEFT", seasonalFrame, "TOPLEFT", 4, -4);
 
 -- seasonal Everything
-local seasonalAll = child:CreateCheckBox("Enable All Seasonal",
+local seasonalAll = child:CreateCheckBox("Toggle All Seasonal",
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("SeasonalFilters")
@@ -1933,7 +1977,7 @@ end);
 unobtainableEnable:SetPoint("TOPLEFT",unobtainable,5,-20)
 
 -- unobtainable Everything
-local unobtainableAll = child:CreateCheckBox("Enable All Unobtainable",
+local unobtainableAll = child:CreateCheckBox("Toggle All Unobtainable",
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
@@ -1976,7 +2020,7 @@ noChanceFrame:SetPoint("RIGHT", child, -4, 0);
 noChanceFrame:SetHeight(120);
 
 -- no chance Everything
-local noChanceAll = child:CreateCheckBox("Enable All \"No Chance\"",
+local noChanceAll = child:CreateCheckBox("Toggle All \"No Chance\"",
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
@@ -2057,7 +2101,7 @@ highChanceFrame:SetPoint("RIGHT", child, -4, 0);
 highChanceFrame:SetHeight(90);
 
 -- high Everything
-local highChanceAll = child:CreateCheckBox("Enable All \"High Chance\"",
+local highChanceAll = child:CreateCheckBox("Toggle All \"High Chance\"",
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")

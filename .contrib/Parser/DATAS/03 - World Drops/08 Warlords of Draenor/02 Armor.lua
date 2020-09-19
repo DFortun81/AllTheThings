@@ -16,6 +16,7 @@ _.WorldDrops =
 				i(118829),	-- Treasure Hunter's Bandana
 			}),
 			filter(51, {	-- Neck
+				i(118847),	-- Amulet of Quel'Riq
 				i(116686),	-- Ancestral Amulet
 				i(116677),	-- Coldsinger Amulet
 				i(116679),	-- Growthshaper Amulet

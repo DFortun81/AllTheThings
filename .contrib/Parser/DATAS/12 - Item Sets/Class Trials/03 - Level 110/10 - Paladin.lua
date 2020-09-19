@@ -1,191 +1,70 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-_.GearSets = 
+
+_.GearSets =
 {
 	n(-5350, {	-- Class Trial Item Sets
 		n(-154, {	-- Level 110
-			["groups"] = {
-				n(-149, {	-- Sunsoul [Paladin]
-					["classes"] = {
-						2,	-- Paladin
-					},
-					["g"] = {
-						{	-- Adventurer's Footlocker
-							["itemID"] = 160439,	-- Adventurer's Footlocker
-							["g"] = {
-								{	-- Sunsoul Bulwark
-									["itemID"] = 153892,	-- Sunsoul Bulwark
-								},
-								{	-- Sunsoul Scepter
-									["itemID"] = 153889,	-- Sunsoul Scepter
-								},
-								{	-- Sunsoul Sword
-									["itemID"] = 153891,	-- Sunsoul Sword
-								},
-							},
-						},
-						{	-- Sunsoul Warmaul
-							["itemID"] = 153893,	-- Sunsoul Warmaul
-						},
-						{	-- Sunsoul Faceguard
-							["itemID"] = 153904,	-- Sunsoul Faceguard
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Protection Paladin.
-						},
-						{	-- Sunsoul Headpiece
-							["itemID"] = 153879,	-- Sunsoul Headpiece
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Holy Paladin.
-						},
-						{	-- Sunsoul Helm
-							["itemID"] = 153870,	-- Sunsoul Helm
-						},
-						{	-- Sunsoul Amulet
-							["itemID"] = 153906,	-- Sunsoul Amulet
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Protection Paladin.
-						},
-						{	-- Sunsoul Necklace
-							["itemID"] = 153881,	-- Sunsoul Necklace
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Holy Paladin.
-						},
-						{	-- Sunsoul Pendant
-							["itemID"] = 153895,	-- Sunsoul Pendant
-						},
-						{	-- Sunsoul Pauldrons
-							["itemID"] = 153872,	-- Sunsoul Pauldrons
-						},
-						{	-- Sunsoul Shoulderguards
-							["itemID"] = 153911,	-- Sunsoul Shoulderguards
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Protection Paladin.
-						},
-						{	-- Sunsoul Spaulders
-							["itemID"] = 153886,	-- Sunsoul Spaulders
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Holy Paladin.
-						},
-						{	-- Sunsoul Cloak of Battle
-							["itemID"] = 153894,	-- Sunsoul Cloak of Battle
-						},
-						{	-- Sunsoul Cloak of Stoicism
-							["itemID"] = 153901,	-- Sunsoul Cloak of Stoicism
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Protection Paladin.
-						},
-						{	-- Sunsoul Cloak of Wisdom
-							["itemID"] = 153876,	-- Sunsoul Cloak of Wisdom
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Holy Paladin.
-						},
-						{	-- Sunsoul Battleplate
-							["itemID"] = 153867,	-- Sunsoul Battleplate
-						},
-						{	-- Sunsoul Breastplate
-							["itemID"] = 153875,	-- Sunsoul Breastplate
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Holy Paladin.
-						},
-						{	-- Sunsoul Chestguard
-							["itemID"] = 153900,	-- Sunsoul Chestguard
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Protection Paladin.
-						},
-						{	-- Sunsoul Armguards
-							["itemID"] = 153913,	-- Sunsoul Armguards
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Protection Paladin.
-						},
-						{	-- Sunsoul Armplates
-							["itemID"] = 153888,	-- Sunsoul Armplates
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Holy Paladin.
-						},
-						{	-- Sunsoul Vambraces
-							["itemID"] = 153874,	-- Sunsoul Vambraces
-						},
-						{	-- Sunsoul Gauntlets
-							["itemID"] = 153869,	-- Sunsoul Gauntlets
-						},
-						{	-- Sunsoul Gloves
-							["itemID"] = 153878,	-- Sunsoul Gloves
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Holy Paladin.
-						},
-						{	-- Sunsoul Handguards
-							["itemID"] = 153903,	-- Sunsoul Handguards
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Protection Paladin.
-						},
-						{	-- Sunsoul Belt
-							["itemID"] = 153887,	-- Sunsoul Belt
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Protection Paladin.
-						},
-						{	-- Sunsoul Girdle
-							["itemID"] = 153873,	-- Sunsoul Girdle
-						},
-						{	-- Sunsoul Waistband
-							["itemID"] = 153912,	-- Sunsoul Waistband
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Holy Paladin.
-						},
-						{	-- Sunsoul Leggings
-							["itemID"] = 153880,	-- Sunsoul Leggings
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Holy Paladin.
-						},
-						{	-- Sunsoul Legguards
-							["itemID"] = 153905,	-- Sunsoul Legguards
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Protection Paladin.
-						},
-						{	-- Sunsoul Legplates
-							["itemID"] = 153871,	-- Sunsoul Legplates
-						},
-						{	-- Sunsoul Boots
-							["itemID"] = 153877,	-- Sunsoul Boots
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Holy Paladin.
-						},
-						{	-- Sunsoul Greaves
-							["itemID"] = 153902,	-- Sunsoul Greaves
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Protection Paladin.
-						},
-						{	-- Sunsoul Sabatons
-							["itemID"] = 153868,	-- Sunsoul Sabatons
-						},
-						{	-- Sunsoul Band of Might
-							["itemID"] = 153897,	-- Sunsoul Band of Might
-						},
-						{	-- Sunsoul Band of Stoicism
-							["itemID"] = 153909,	-- Sunsoul Band of Stoicism
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Protection Paladin.
-						},
-						{	-- Sunsoul Band of Wisdom
-							["itemID"] = 153884,	-- Sunsoul Band of Wisdom
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Holy Paladin.
-						},
-						{	-- Sunsoul Ring of Might
-							["itemID"] = 153896,	-- Sunsoul Ring of Might
-						},
-						{	-- Sunsoul Ring of Stoicism
-							["itemID"] = 153908,	-- Sunsoul Ring of Stoicism
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Protection Paladin.
-						},
-						{	-- Sunsoul Ring of Wisdom
-							["itemID"] = 153883,	-- Sunsoul Ring of Wisdom
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Holy Paladin.
-						},
-						{	-- Sunsoul Stone of Battle
-							["itemID"] = 153898,	-- Sunsoul Stone of Battle
-						},
-						{	-- Sunsoul Stone of Wisdom
-							["itemID"] = 153885,	-- Sunsoul Stone of Wisdom
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Holy Paladin.
-						},
-						{	-- Sunsoul Idol of Battle
-							["itemID"] = 153899,	-- Sunsoul Idol of Battle
-						},
-						{	-- Sunsoul Idol of Wisdom
-							["itemID"] = 153882,	-- Sunsoul Idol of Wisdom
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Holy Paladin.
-						},
-						{	-- Sunsoul Defender Idol
-							["itemID"] = 153907,	-- Sunsoul Defender Idol
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Protection Paladin.
-						},
-						{	-- Sunsoul Defender Stone
-							["itemID"] = 153910,	-- Sunsoul Defender Stone
-							["u"] = REMOVED_FROM_GAME,	-- Only available if you boosted a Protection Paladin.
-						},
-					},
-					["classes"] = { 2 }
-				}),
-			},
+			n(-149, {	-- Sunsoul
+				["classes"] = { PALADIN },
+				["g"] = {
+					n(-9942, bubbleDown({["u"] = REMOVED_FROM_GAME}, {	-- Holy
+						i(153879),	-- Sunsoul Headpiece
+						i(153881),	-- Sunsoul Necklace
+						i(153886),	-- Sunsoul Spaulders
+						i(153876),	-- Sunsoul Cloak of Wisdom
+						i(153875),	-- Sunsoul Breastplate
+						i(153888),	-- Sunsoul Armplates
+						i(153878),	-- Sunsoul Gloves
+						i(153912),	-- Sunsoul Waistband
+						i(153880),	-- Sunsoul Leggings
+						i(153877),	-- Sunsoul Boots
+						i(153884),	-- Sunsoul Band of Wisdom
+						i(153883),	-- Sunsoul Ring of Wisdom
+						i(153885),	-- Sunsoul Stone of Wisdom
+						i(153882),	-- Sunsoul Idol of Wisdom
+					})),
+					n(-9943, bubbleDown({["u"] = REMOVED_FROM_GAME}, {	-- Protection
+						i(153904),	-- Sunsoul Faceguard
+						i(153906),	-- Sunsoul Amulet
+						i(153911),	-- Sunsoul Shoulderguards
+						i(153901),	-- Sunsoul Cloak of Stoicism
+						i(153900),	-- Sunsoul Chestguard
+						i(153913),	-- Sunsoul Armguards
+						i(153903),	-- Sunsoul Handguards
+						i(153887),	-- Sunsoul Belt
+						i(153905),	-- Sunsoul Legguards
+						i(153902),	-- Sunsoul Greaves
+						i(153909),	-- Sunsoul Band of Stoicism
+						i(153908),	-- Sunsoul Ring of Stoicism
+						i(153907),	-- Sunsoul Defender Idol
+						i(153910),	-- Sunsoul Defender Stone
+					})),
+					n(-9944, {	-- Retribution
+						i(160439, {	-- Adventurer's Footlocker
+							i(153892),	-- Sunsoul Bulwark
+							i(153889),	-- Sunsoul Scepter
+							i(153891),	-- Sunsoul Sword
+						}),
+						i(153893),	-- Sunsoul Warmaul
+						i(153870),	-- Sunsoul Helm
+						i(153895),	-- Sunsoul Pendant
+						i(153872),	-- Sunsoul Pauldrons
+						i(153894),	-- Sunsoul Cloak of Battle
+						i(153867),	-- Sunsoul Battleplate
+						i(153874),	-- Sunsoul Vambraces
+						i(153869),	-- Sunsoul Gauntlets
+						i(153873),	-- Sunsoul Girdle
+						i(153871),	-- Sunsoul Legplates
+						i(153868),	-- Sunsoul Sabatons
+						i(153897),	-- Sunsoul Band of Might
+						i(153896),	-- Sunsoul Ring of Might
+						i(153898),	-- Sunsoul Stone of Battle
+						i(153899),	-- Sunsoul Idol of Battle
+					}),
+				},
+			}),
 		}),
 	}),
 };

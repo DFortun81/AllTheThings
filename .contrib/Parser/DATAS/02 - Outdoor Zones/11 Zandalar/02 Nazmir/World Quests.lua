@@ -383,9 +383,6 @@ _.Zones =
 						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
-						["g"] = {
-							i(163601),	-- Overgrown Anchor Weed (QI)
-						},
 					}),
 					q(54671, {	-- Overgrown Ancient
 						["lvl"] = 120,

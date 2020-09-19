@@ -35,9 +35,6 @@ _.Zones =
 					{ 32.8, 39.5, 1355 },
 					{ 55.2, 48.8, 1355 },
 				},
-				["g"] = {
-					i(169778),	-- Enchanting Crystal (QI)
-				},
 			}),
 			q(56560, {	-- A Curious Discovery (H)
 				["races"] = HORDE_ONLY,
@@ -46,9 +43,6 @@ _.Zones =
 				["coords"] = {
 					{ 32.8, 39.5, 1355 },
 					{ 55.2, 48.8, 1355 },
-				},
-				["g"] = {
-					i(169778),	-- Enchanting Crystal (QI)
 				},
 			}),
 			q(56787, {	-- Additional Supplies
@@ -1047,9 +1041,6 @@ _.Zones =
 					55092,	-- Distruption of Power
 					54012,	-- Fortunate Souls
 					56063,	-- Dark Tides
-				},
-				["g"] = {
-					i(168817),	-- Siphoning Crystal (QI)
 				},
 			}),
 			q(55593, {	-- Insight into Our Enemies

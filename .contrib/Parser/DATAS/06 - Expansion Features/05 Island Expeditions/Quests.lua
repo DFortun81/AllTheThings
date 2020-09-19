@@ -62,12 +62,25 @@ _.ExpansionFeatures =
 					i(166999),	-- Treasure Map
 					i(169764, {	-- Worldvein Intelligence Reports
 						["questID"] = 56533,	-- Worldvein Rumors
+					}),
+					mi(2158, {	-- Investigating the Rumors
+						["questID"] = 56528,	-- procs when completing Investigating the Rumors on Alliance
 						["g"] = {
-							i(168617, {	-- Fluctuating Worldvein (Rank 3)
-								["modID"] = 14,
-								["g"] = {
-									az(4, 3),	-- Worldvein Resonance (Rank 3)
-								},
+							i(171985),	-- Captured Documents
+						},
+					}),
+					mi(2161, {	-- Finding a Key
+						["questID"] = 56529,	-- procs when completing Finding a Key on Alliance
+						["g"] = {
+							i(171986, {	-- Resonance Locator
+								mi(2162, {	-- Tracking the Worldvein
+									i(168617, {	-- Fluctuating Worldvein (Rank 3)
+										["modID"] = 14,
+										["g"] = {
+											az(4, 3),	-- Worldvein Resonance (Rank 3)
+										},
+									}),
+								}),
 							}),
 						},
 					}),
@@ -93,12 +106,25 @@ _.ExpansionFeatures =
 					i(166999),	-- Treasure Map
 					i(169765, {	-- Worldvein Intelligence Reports
 						["questID"] = 56534,	-- Worldvein Rumors
+					}),
+					mi(2159, {	-- Investigating the Rumors
+					--	["questID"] = ,	-- procs when completing Investigating the Rumors on Horde
 						["g"] = {
-							i(168617, {	-- Fluctuating Worldvein (Rank 3)
-								["modID"] = 14,
-								["g"] = {
-									az(4, 3),	-- Worldvein Resonance (Rank 3)
-								},
+							i(171985),	-- Captured Documents
+						},
+					}),
+					mi(2161, {	-- Finding a Key
+					--	["questID"] = ,	-- procs when completing Finding a Key on Horde
+						["g"] = {
+							i(171986, {	-- Resonance Locator
+								mi(2162, {	-- Tracking the Worldvein
+									i(168617, {	-- Fluctuating Worldvein (Rank 3)
+										["modID"] = 14,
+										["g"] = {
+											az(4, 3),	-- Worldvein Resonance (Rank 3)
+										},
+									}),
+								}),
 							}),
 						},
 					}),

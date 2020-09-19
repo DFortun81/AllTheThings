@@ -8,6 +8,14 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 574, 575, 576 },
 		["coord"] = { 31.91, 42.55, 539 },	-- Shadowmoon Valley, Draenor
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
+					["collectible"] = false,
+					["g"] = {
+						crit(7),	-- Ner'zhul
+					},
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					75509,	-- Sadana Bloodfury

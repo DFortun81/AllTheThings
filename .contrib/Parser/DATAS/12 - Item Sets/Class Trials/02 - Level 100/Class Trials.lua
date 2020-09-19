@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
+
 _.GearSets =
 {
 	n(-5350, {	-- Class Trial Item Sets
@@ -8,7 +9,7 @@ _.GearSets =
 			["description"] = "These are obtained by creating a Level 100 Class Trial for each class and specialization.",
 			["icon"] = "Interface\\Icons\\achievement_level_100",
 			["lvl"] = 100,
-			["groups"] = bubbleDown({["u"] = 2}, {
+			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 				n(-140, {	-- Communal
 					["classes"] = { PRIEST },
 					["groups"] = {

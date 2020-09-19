@@ -1391,7 +1391,6 @@ _.Zones =
 						i(158628),	-- Banisher Wristwraps
 						i(158629),	-- Crone-Seeker's Shackles
 						i(158630),	-- Waycrest Militia Armplates
-						i(156926),	-- Witchrend (Quest Item)
 					},
 				}),
 				q(50530, {	-- Witch Way Out?

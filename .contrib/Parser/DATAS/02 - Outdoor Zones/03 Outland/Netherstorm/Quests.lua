@@ -349,8 +349,8 @@ _.Zones =
 							["model"] = 201097,
 							["g"] = {
 								q(10314, {	-- A Lingering Suspicion
-									["coord"] = { 60,3, 78.0, 109 },
-									["sourceQuests"] = 10316,	-- Searching for Evidence
+									["coord"] = { 60.3, 78.0, 109 },
+									["sourceQuest"] = 10316,	-- Searching for Evidence
 								}),
 							},
 						}),

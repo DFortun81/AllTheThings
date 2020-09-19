@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --         Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, {	-- Northrend
@@ -276,6 +277,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(13268, {	-- Cloth Scavenging (A)
+					["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable
 					["altQuests"] = {
 						13265,	-- Cloth Scavenging (A, Borean Tundra)
 						13272,	-- Cloth Scavenging (Neutral)
@@ -1425,7 +1427,10 @@ _.Zones =
 					["coord"] = { 60.1, 61.0, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23548 },	-- Beltrand McSorf
-					["sourceQuest"] = 11278,	-- Return to Valgarde
+					["sourceQuests"] = {
+						11278,	-- Return to Valgarde
+						11478,	-- Outpost Over Yonder...
+					},
 				}),
 				q(11314, {	-- The Fallen Sisters
 					["provider"] = { "n", 24117 },	-- Lurielle
@@ -1597,8 +1602,8 @@ _.Zones =
 				q(11288, {	-- The Shining Light
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24189 },	-- Ares the Oathbound
-					["description"] = "Inside the |cFFFFD700Utgarde Catacombs|r.",
-					["sourceQuest"] = 11420,	-- The Path to Payback
+					["description"] = "Inside the |cFFFFD700Utgarde Catacombs|r. You need to pick up |cFFFFD700The Path to Payback|r first to see this quest.",
+					["sourceQuest"] = 11244,	-- Rescuing the Rescuers
 					["coords"] = {
 						{ 56.6, 49.5, 117 },	-- Catacombs entrance
 						{ 59.3, 55.4, 117 },	-- NPC
@@ -1697,10 +1702,7 @@ _.Zones =
 					["coord"] = { 75.0, 65.5, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24807 },	-- Walt
-					["sourceQuests"] = {
-						11478,	-- Outpost Over Yonder...
-						11474,	-- Problems on the High Bluff
-					},
+					["sourceQuest"] = 11474,	-- Problems on the High Bluff
 				}),
 				q(11245, {	-- Towers of Certain Doom (A)
 					["coord"] = { 44.8, 31.4, 117 },

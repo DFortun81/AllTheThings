@@ -478,17 +478,25 @@ namespace ATT
         {
             // Pull all changes from Git
             Console.WriteLine("PULL >> ");
-            using (Process p = new Process())
+            try
             {
-                var startInfo = new ProcessStartInfo("git", "pull")
+                using (Process p = new Process())
                 {
-                    UseShellExecute = false,
-                    RedirectStandardOutput = true,
-                    WorkingDirectory = Path.GetDirectoryName("../..")
-                };
-                p.StartInfo = startInfo;
-                p.Start();
-                p.WaitForExit();
+                    var startInfo = new ProcessStartInfo("git", "pull")
+                    {
+                        UseShellExecute = false,
+                        RedirectStandardOutput = true,
+                        WorkingDirectory = Path.GetDirectoryName("../..")
+                    };
+                    p.StartInfo = startInfo;
+                    p.Start();
+                    p.WaitForExit();
+                }
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Could not find Git! Install Git for your computer!");
+                Console.ReadLine();
             }
         }
 

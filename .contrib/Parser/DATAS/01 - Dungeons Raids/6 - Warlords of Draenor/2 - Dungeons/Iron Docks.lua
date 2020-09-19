@@ -8,6 +8,14 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["coord"] = { 45.36, 13.52, 543 },	-- Gorgrond, Draenor
 		["lvl"] = 92,
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
+					["collectible"] = false,
+					["g"] = {
+						crit(2),	-- Skulloc, Son of Gruul
+					},
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					81297,	-- Dreadfang (Fleshrender Nok'gar)

@@ -1,12 +1,13 @@
----------------------------------------------------
+-------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
----------------------------------------------------
+-------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		m(24, {	-- Light's Hope Chapel
-			cl(2, {	-- Sanctum of Light (Paladin)
-				["classes"] = { 2 },	-- Paladin
+			cl(PALADIN, {	-- Sanctum of Light
+				["classes"] = { PALADIN },
 				["lvl"] = 98,
 				["g"] = {
 					n(QUESTS, {
@@ -15,8 +16,6 @@ _.ExpansionFeatures =
 						q(43700),	-- A Light in the Darkness
 						q(43934),	-- A New Path (also warrior?)
 						q(42866),	-- A Sign From The Sky
-						q(39756),	-- A Sound Plan
-						q(38566),	-- A United Force
 						q(43491),	-- Allies of the Light
 						q(38710),	-- An Urgent Gathering
 						q(45974),	-- An Urgent Warning
@@ -36,12 +35,10 @@ _.ExpansionFeatures =
 						q(44219),	-- Fate's Blessing
 						q(45147),	-- Felstone Destruction (and warrior?)
 						q(39722),	-- Forging New Strength
-						q(42844),	-- Growing Power
 						q(42774),	-- Hope Prevails
 						q(45975),	-- Investigate the Broken Shore
 						q(45143),	-- Judgment Awaits
 						q(46074),	-- Leather to Legendary
-						q(38933),	-- Logistical Matters
 						q(43698),	-- Lumenstone
 						q(42867),	-- Meeting of the Silver Hand
 						q(45145),	-- Moonfang Family Relics
@@ -70,17 +67,30 @@ _.ExpansionFeatures =
 						q(42886),	-- To Faronaar
 						q(43489),	-- To Felblaze Ingress (also warrior?)
 						q(43535),	-- Translation: Danger!
-						q(38576),	-- We Meet at Light's Hope
-						q(42811),	-- We Meet at Light's Hope
 						q(40408),	-- Weapons of Legend
 						q(46069),	-- Worthy of the Title
 						q(42849),	-- Wrath and Justice
 						]]--
+						q(39756, {	-- A Sound Plan
+							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+							["sourceQuest"] = 38933,	-- Logistical Matters
+						}),
+						q(38566, {	-- A United Force
+							["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
+							["sourceQuests"] = {
+								38576,	-- We Meet at Light's Hope
+								42811,	-- We Meet at Light's Hope
+							},
+						}),
 						q(44250, {	-- Champion of the Light
 							i(139693),	-- Crown of the Silver Hand
 						}),
 						q(46151, {	-- Furthering Knowledge
 							["u"] = REMOVED_FROM_GAME,
+						}),
+						q(42844, {	-- Growing Power
+							["provider"] = { "n", 112701 },	-- Justicar Julia Celeste
+							["isBreadcrumb"] = true,
 						}),
 						q(43883, {	-- Hitting the Books
 							["u"] = REMOVED_FROM_GAME,
@@ -88,14 +98,18 @@ _.ExpansionFeatures =
 						q(46132, {	-- Knowledge is Power
 							["u"] = REMOVED_FROM_GAME,
 						}),
+						q(38933, {	-- Logistical Matters
+							["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
+							["sourceQuest"] = 38566,	-- A United Force
+						}),
 						q(45770, {	-- Stirring in the Shadows
 							["lvl"] = 110,
-							["classes"] = {2},
+							["classes"] = { PALADIN },
 							["g"] = {
 								i(143502),	-- Highlord's Golden Charge
 							},
 						}),
-						q(42005, {	--  The End of the Saga [Moved from Howling Fjord]
+						q(42005, {	-- The End of the Saga [Moved from Howling Fjord]
 							["lvl"] = 98,
 							["provider"] = { "n", 105724 },	-- Orik Trueheart
 						}),
@@ -119,7 +133,7 @@ _.ExpansionFeatures =
 						q(43541, {	-- United As One
 							i(139697),	-- Bindings of the Silver Hand
 						}),
-						--Followers  Sort to other quests later.
+						-- Followers TODO: Sort to other quests later.
 						q(43492, {	-- Champion: Aponi Brightmane
 							["provider"] = { "n", 90251 },		-- Aponi Brightmane <Sunwalker Chieftain>
 							["g"] = {
@@ -152,6 +166,7 @@ _.ExpansionFeatures =
 						}),
 						q(39696, {	-- Rise, Champions
 							["provider"] = { "n", 90259 },		-- Lord Maxwell Tyrosus
+							["sourceQuest"] = 42844,	-- Growing Power
 							["g"] = {
 								follower(480),	-- Lord Maxwell Tyrosus
 							},
@@ -193,7 +208,7 @@ _.ExpansionFeatures =
 					}),
 					n(VENDORS, {
 						n(99976,  {	--  Crusader Lord Dalfors
-							["classes"] = {2},
+							["classes"] = { PALADIN },
 							["description"] = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign.",
 							["sourceQuest"] = 45770,	-- Stirring in the Shadows
 							["g"] = {
@@ -264,7 +279,7 @@ _.ExpansionFeatures =
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(140547),	-- Warhammer of the Silver Hand
-						}),		
+						}),
 						n(91190, {	-- Sister Elda <Keeper of the Ancient Tomes>
 							["description"] = "Your spec must be Retribution for her to respond to your books. Bring both of the books to her and she'll give you the completed book to use in the next part.",
 							["g"] = {

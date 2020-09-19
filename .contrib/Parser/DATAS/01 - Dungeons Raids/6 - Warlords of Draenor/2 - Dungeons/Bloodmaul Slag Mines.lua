@@ -8,6 +8,14 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["mapID"] = 573,
 		["coord"] = { 49.93, 24.8, 525 },	-- Frostfire Ridge, Draenor
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
+					["collectible"] = false,
+					["g"] = {
+						crit(1),	-- Gug'rokk
+					},
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					74787,	-- Slave Watcher Crushto

@@ -1327,7 +1327,10 @@ _.Zones =
 					["provider"] = { "n", 44024 },	-- Artesh
 					["coord"] = { 73.8, 53.8, 241 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 26784,	-- Muddied Waters
+					["sourceQuests"] = {
+						26784,	-- Muddied Waters
+						26788,	-- Cementing Our Victory
+					},
 				}),
 				q(27341, {	-- Scouting the Shore (A)
 					["sourceQuests"] = { 27338 },	-- Our Boys on the Shore

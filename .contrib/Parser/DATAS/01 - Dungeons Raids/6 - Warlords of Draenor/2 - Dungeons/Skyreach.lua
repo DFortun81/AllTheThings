@@ -6,8 +6,16 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 	inst(476, {	-- Skyreach
 		["lvl"] = 96,
 		["maps"] = { 601, 602 },
-		["coord"] = { 35.58, 33.6, 542 },	-- Spires of Arak, Draenor
+		["coord"] = { 35.5, 33.6, 542 },	-- Spires of Arak, Draenor
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
+					["collectible"] = false,
+					["g"] = {
+						crit(6),	-- High Sage Viryx
+					},
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					75964,	-- Ranjit

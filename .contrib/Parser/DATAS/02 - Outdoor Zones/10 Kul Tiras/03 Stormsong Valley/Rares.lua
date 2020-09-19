@@ -182,7 +182,7 @@ _.Zones =
 					}),
 				}),
 				n(155069, {	-- Honeyback Harvester
-					["description"] = "You can participate in Honeyback Harvester events as many times a day as you want, but there is a one-hour cooldown on being able to loot the final jelly left behind after the event ends.  If you can see the vignette star for the Harvester or a treasure icon surrounded by a spiky star, you are eligible for hourly loot.\n\nThe quests that drop from rares are weekly, but the rares may drop jelly even during the one-hour cooldown and even if you have already completed the specific rare's weekly quest.",
+					["description"] = "You can participate in Honeyback Harvester events as many times a day as you want, but you can only loot the final jelly once per hour (loot eligibility resets on the hour, not based upon your last kill).  If you can see the vignette star for the Harvester or a treasure icon surrounded by a spiky star, you are eligible for hourly loot.\n\nThe quests that drop from rares are weekly, but the rares may drop jelly even during the cooldown period and even if you have already completed the specific rare's weekly quest.",
 					["coords"] = {
 						{ 25.6, 73.2, 942 },
 						{ 33.4, 32.8, 942 },

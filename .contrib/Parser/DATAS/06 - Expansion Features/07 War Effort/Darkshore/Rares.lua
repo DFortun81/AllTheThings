@@ -5,12 +5,6 @@ _.ExpansionFeatures =
 {
 	n(-10057, {	-- War Effort
 		m(62, {	-- Darkshore
-			["lvl"] = 120,
-			["maps"] = {
-				1333,	-- Horde Intro Quest Map
-			},
-			["achievementID"] = 13296,	-- War for the Shore
-			["description"] = "|cff66ccffThe Battle for Darkshore is the second warfront in Battle for Azeroth where the Forsaken and the night elves struggle for control of a staging area near the former night elven capital region of Teldrassil.|r", 
 			["g"] = {
 				n(RARES, {
 					["g"] = {

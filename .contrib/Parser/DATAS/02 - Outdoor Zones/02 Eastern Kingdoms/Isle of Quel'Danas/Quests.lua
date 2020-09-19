@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -109,6 +110,12 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(11546, {	-- Open for Business
+					["provider"] = { "n", 24975 },	-- Mar'nah
+					["coord"] = { 51.4, 32.4, 122 },
+					["isDaily"] = true,
+				}),
+				q(11520, {	-- Discovering Your Roots
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 24975 },	-- Mar'nah
 					["coord"] = { 51.4, 32.4, 122 },
 					["isDaily"] = true,

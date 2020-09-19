@@ -570,59 +570,14 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(RARES, {
-					n(154578, {	-- Aqir Flayer
-						["description"] = "Shares a spawn with Aqir Goliath.  Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
-						["questID"] = 58612,
-						["isDaily"] = true,
-						["coords"] = {
-							{ 30.6, 14.8, 1527 },
-							{ 41.2, 24.8, 1527 },
-							{ 40.8, 38.2, 1527 },
-							{ 37.6, 47.8, 1527 },
-							{ 31.4, 51.2, 1527 },
-							{ 27.6, 55.0, 1527 },
-							{ 27.0, 58.6, 1527 },
-							{ 30.2, 63.6, 1527 },
-							{ 34.8, 68.8, 1527 },
-							{ 42.4, 60.2, 1527 },
-							{ 47.0, 56.2, 1527 },
-						},
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174222),	-- Unspeakable Bloodletter
-							i(174227),	-- Writhing Feeler
-						},
-					}),
-					n(154576, {	-- Aqir Titanus
-						["description"] = "Shares a spawn with Aqir Goliath.  Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
-						["questID"] = 58614,
-						["isDaily"] = true,
-						["coords"] = {
-							{ 34.6, 18.4, 1527 },
-							{ 39.2, 22.2, 1527 },
-							{ 39.8, 35.2, 1527 },
-							{ 41.0, 42.6, 1527 },
-							{ 34.8, 44.8, 1527 },
-							{ 37.8, 49.6, 1527 },
-							{ 33.8, 51.2, 1527 },
-							{ 33.6, 58.0, 1527 },
-							{ 37.2, 53.0, 1527 },
-							{ 37.4, 58.8, 1527 },
-							{ 44.8, 58.6, 1527 },
-							{ 27.0, 51.6, 1527 },
-							{ 29.6, 66.6, 1527 },
-							{ 35.0, 66.6, 1527 },
-						},
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174227),	-- Writhing Feeler
-						},
-					}),
 					n(162171, {	-- Captain Dunewalker
 						["questID"] = 58699,
 						["coord"] = { 45.61, 57.79, 1527 },
 						["isDaily"] = true,
 						["description"] = "He is inside the Chamber of the Sun.",
+						["g"] = {
+							i(174227),	-- Writhing Feeler
+						},
 					}),
 					n(162147, {	-- Corpse Eater
 						["questID"] = 58696,
@@ -1308,6 +1263,19 @@ _.ExpansionFeatures =
 					i(174758),	-- Voidwarped Relic Fragment
 				}),
 			}),
+			n(-169, { 	-- Emissary Quests
+				q(58097, {	-- Supplies from the Uldum Accord
+					["repeatable"] = true,
+					["g"] = {
+						i(173283, {	-- Token of a Brilliant Death (Rank 4)
+							az(35, 4),	-- Breath of the Dying (Rank 4)
+						}),
+						i(174484, {	-- Uldum Accord Supplies
+							i(174481),	-- Cursed Dune Watcher
+						}),
+					},
+				}),
+			}),
 			n(-10072, {	-- N'Zoth Assault
 				n(-4,	{	-- Achievements
 					ach(14159, {	-- Combating the Corruption
@@ -1574,19 +1542,6 @@ _.ExpansionFeatures =
 					pet(2863, {	-- Oasis Void-Duster
 					}),
 					pet(2864, {	-- Void-Scarred Locust
-					}),
-				}),
-				n(-169, { 	-- Emissary Quests
-					q(58097, {	-- Supplies from the Uldum Accord
-						["repeatable"] = true,
-						["g"] = {
-							i(173283, {	-- Token of a Brilliant Death (Rank 4)
-								az(35, 4),	-- Breath of the Dying (Rank 4)
-							}),
-							i(174484, {	-- Uldum Accord Supplies
-								i(174481),	-- Cursed Dune Watcher
-							}),
-						},
 					}),
 				}),
 				n(-38,	{	-- Professions
@@ -1899,6 +1854,55 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
+							i(174227),	-- Writhing Feeler
+						},
+					}),
+					n(154578, {	-- Aqir Flayer
+						["description"] = "Shares a spawn with Aqir Hive Worker and Aqir Reaper.  Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
+						["questID"] = 58612,
+						["isDaily"] = true,
+						["coords"] = {
+							{ 30.6, 14.8, 1527 },
+							{ 41.2, 24.8, 1527 },
+							{ 40.8, 38.2, 1527 },
+							{ 37.6, 47.8, 1527 },
+							{ 31.4, 51.2, 1527 },
+							{ 27.6, 55.0, 1527 },
+							{ 27.0, 58.6, 1527 },
+							{ 30.2, 63.6, 1527 },
+							{ 34.8, 68.8, 1527 },
+							{ 42.4, 60.2, 1527 },
+							{ 47.0, 56.2, 1527 },
+						},
+						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
+							i(174222),	-- Unspeakable Bloodletter
+							i(174227),	-- Writhing Feeler
+						},
+					}),
+					n(154576, {	-- Aqir Titanus
+						["description"] = "Shares a spawn with Aqir Goliath.  Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
+						["questID"] = 58614,
+						["isDaily"] = true,
+						["coords"] = {
+							{ 34.6, 18.4, 1527 },
+							{ 39.2, 22.2, 1527 },
+							{ 39.8, 35.2, 1527 },
+							{ 41.0, 42.6, 1527 },
+							{ 34.8, 44.8, 1527 },
+							{ 37.8, 49.6, 1527 },
+							{ 33.8, 51.2, 1527 },
+							{ 33.6, 58.0, 1527 },
+							{ 37.2, 53.0, 1527 },
+							{ 37.4, 58.8, 1527 },
+							{ 44.8, 58.6, 1527 },
+							{ 27.0, 51.6, 1527 },
+							{ 29.6, 66.6, 1527 },
+							{ 35.0, 66.6, 1527 },
+						},
+						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
+							i(174222),	-- Unspeakable Bloodletter
 							i(174227),	-- Writhing Feeler
 						},
 					}),

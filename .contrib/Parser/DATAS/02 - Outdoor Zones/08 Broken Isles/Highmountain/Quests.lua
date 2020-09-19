@@ -655,7 +655,6 @@ _.Zones =
 					["coord"] = { 52.3, 61.6, 659 },	-- Stonedark Grotto
 					["provider"] = { "n", 95799 },	-- Damrul the Stronk
 				}),
-
 				q(40071, {	-- Tamer Takedown
 					["coord"] = { 50.9, 36.6, 650 },
 					["provider"] = { "n", 94068 },	-- Oren Windstrider

@@ -146,8 +146,10 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 43116 },	-- Pebble
 					["sourceQuests"] = {
-						26436,	-- Entrenched
+						26437,	-- Making Things Crystal Clear
+						26438,	-- Intervention
 						28869,	-- Pebble
+						26439,	-- Putting the Pieces Together
 					},
 					["g"] = {
 						i(61425),	-- Bracers of the Energetic Elemental
@@ -538,7 +540,11 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 42469 },	-- Kor the Immovable
 					["coord"] = { 34.4, 34.4, 207 },
-					["sourceQuests"] = { 26439 },	-- Putting the Pieces Together
+					["sourceQuests"] = { 
+						26437,	-- Making Things Crystal Clear
+						26438,	-- Intervention
+						26439,	-- Putting the Pieces Together
+					},
 					["isBreadcrumb"] = true,
 				}),
 				q(26507, {	-- Petrified Delicacies

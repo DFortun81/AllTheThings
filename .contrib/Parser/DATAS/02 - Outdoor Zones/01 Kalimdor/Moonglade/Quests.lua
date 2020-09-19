@@ -12,7 +12,7 @@ _.Zones =
 					["lvl"] = 56,
 				}),
 				q(29298, {	-- A Smoke-Stained Locket
-					["provider"] = { "i", 69854 },	-- Smoke-Stained Locked
+					["provider"] = { "i", 69854 },	-- Smoke-Stained Locket
 				}),
 				q(5061,  {	-- Aquatic Form
 					["hordeQuestID"] = 31,

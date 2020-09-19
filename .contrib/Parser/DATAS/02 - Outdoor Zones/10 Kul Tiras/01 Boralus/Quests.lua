@@ -302,6 +302,7 @@ _.Zones =
 					},
 				}),
 				n(-397, {	-- Outposts
+				--	commented out SQs for the one-time-per account ones, because having SQs and altQs created a weird infinite loop that caused lua errors
 					["description"] = "Alliance Outposts allow you to set up additional bases in Zandalar.  You can buy Scouting Reports from Vindicator Jaelaana, the vendor next to Wind's Redemption.  Each one will start a mission on your Mission Command Table.  After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 					["g"] = {
 						i(165880, {	-- Outpost Upgrade: Arom's Stand
@@ -399,15 +400,14 @@ _.Zones =
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(53007, {	-- Grimwatt's Crash
-									["sourceQuests"] = { 53006 },	-- Mission Report: Grimwatt's Crash
+								--	["sourceQuests"] = { 53006 },	-- Mission Report: Grimwatt's Crash
 									["altQuests"] = { 53186 },	-- Mission Report: Ambush at Grimwatt's Crash
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 									["races"] = ALLIANCE_ONLY,
 								}),
 								mi(2096, {	-- Ambush at Grimwatt's Crash
-									["sourceQuests"] = { 53007 },	-- Grimwatt's Crash
-									["altQuests"] = { 53186 },	-- Mission Report: Ambush at Grimwatt's Crash
+								--	["sourceQuests"] = { 53007 },	-- Grimwatt's Crash
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										q(53186, {	-- Mission Report: Ambush at Grimwatt's Crash
@@ -419,7 +419,7 @@ _.Zones =
 									},
 								}),
 								q(53187, {	-- An Unexpected Guest
-									["sourceQuests"] = { 53186 },	-- Mission Report: Ambush at Grimwatt's Crash
+								--	["sourceQuests"] = { 53186 },	-- Mission Report: Ambush at Grimwatt's Crash
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 									["races"] = ALLIANCE_ONLY,
@@ -446,14 +446,14 @@ _.Zones =
 									["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
 								}),
 								q(52963, {	-- Mistvine Ledge
-									["sourceQuests"] = { 52962 },	-- Mission Report: Mistvine Ledge
+								--	["sourceQuests"] = { 52962 },	-- Mission Report: Mistvine Ledge
 									["altQuests"] = { 53306 },	-- Jungle Escort
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
 									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 								}),
 								mi(2100, {	-- Jungle Escort
-									["sourceQuests"] = { 52963 },	-- Mistvine Ledge
+								--	["sourceQuests"] = { 52963 },	-- Mistvine Ledge
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										q(53306, {	-- Mission Report: Jungle Escort
@@ -464,7 +464,7 @@ _.Zones =
 									},
 								}),
 								q(53307, {	-- Jungle Escort
-									["sourceQuests"] = { 53306 },	-- Mission Report: Jungle Escort
+								--	["sourceQuests"] = { 53306 },	-- Mission Report: Jungle Escort
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
 									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
@@ -478,38 +478,41 @@ _.Zones =
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mi(2069, {	-- Mugamba Overlook
-									--["questID"] = ,	-- Triggers when completed
+								--	["sourceQuests"] = {  },	-- Mission Start Trigger
+									["altQuests"] = { 53275 },	-- Mission Report: Spare Parts
+								--	["questID"] = ,	-- Triggers when completed
 									["races"] = ALLIANCE_ONLY,
-									--["sourceQuests"] = {  },	-- Mission Start Trigger
 								}),
 								q(52851, {	-- Mission Report: Mugamba Overlook
-									["provider"] = { "n", 138704 },		-- Mission Command Table
+								--	["sourceQuests"] = {  },	-- Mugamba Overlook Mission Complete
+									["altQuests"] = { 53275 },	-- Mission Report: Spare Parts
+									["provider"] = { "n", 138704 },	-- Mission Command Table
 									["races"] = ALLIANCE_ONLY,
 									["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
-									--["sourceQuests"] = {  },	-- Mugamba Overlook Mission Complete
 								}),
 								q(52852, {	-- Mugamba Overlook
-									["provider"] = { "n", 135612 },		-- Halford Wyrmbane
+								--	["sourceQuests"] = { 52851 },	-- Mission Report: Mugamba Overlook
+									["altQuests"] = { 53275 },	-- Mission Report: Spare Parts
+									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
 									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
-									["sourceQuests"] = { 52851 },		-- Mission Report: Mugamba Overlook
 								}),
 								mi(2099, {	-- Spare Parts
-									--["questID"] = ,	-- Triggers when completed
+								--	["sourceQuests"] = { 52852 },	-- Mugamba Overlook
 									["races"] = ALLIANCE_ONLY,
-									["sourceQuests"] = { 52852 },		-- Mugamba Overlook
-								}),
-								q(53275, {	-- Mission Report: Spare Parts
-									["provider"] = { "n", 138704 },		-- Mission Command Table
-									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
-									--["sourceQuests"] = {  },	-- Spare Parts Mission Complete
+									["g"] = {
+										q(53275, {	-- Mission Report: Spare Parts
+											["provider"] = { "n", 138704 },	-- Mission Command Table
+											["races"] = ALLIANCE_ONLY,
+											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+										}),
+									},
 								}),
 								q(53276, {	-- Spare Parts
-									["provider"] = { "n", 135612 },		-- Halford Wyrmbane
+								--	["sourceQuests"] = { 53275 },	-- Mission Report: Spare Parts
+									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
 									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
-									["sourceQuests"] = { 53275 },		-- Mission Report: Spare Parts
 								}),
 							},
 						}),
@@ -539,44 +542,47 @@ _.Zones =
 							},
 						}),
 						i(163046, {	-- Scouting Report: Verdant Hollow
-							--["questID"] = ,	-- Mission Start Trigger
+						--	["questID"] = ,	-- Mission Start Trigger
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mi(2070, {	-- Verdant Hollow
-									--["questID"] = ,	-- Triggers when completed
+								--	["sourceQuests"] = {  },	-- Mission Start Trigger
+									["altQuests"] = { 53267 },	-- Dino Research
+								--	["questID"] = ,	-- Triggers when completed
 									["races"] = ALLIANCE_ONLY,
-									--["sourceQuests"] = {  },	-- Mission Start Trigger
 								}),
 								q(52886, {	-- Mission Report: Verdant Hollow
-									["provider"] = { "n", 138704 },		-- Mission Command Table
+								--	["sourceQuests"] = {  },	-- Verdant Hollow Mission Complete
+									["altQuests"] = { 53267 },	-- Dino Research
+									["provider"] = { "n", 138704 },	-- Mission Command Table
 									["races"] = ALLIANCE_ONLY,
 									["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
-									--["sourceQuests"] = {  },	-- Verdant Hollow Mission Complete
 								}),
 								q(52888, {	-- Verdant Hollow
-									["provider"] = { "n", 135612 },		-- Halford Wyrmbane
+								--	["sourceQuests"] = { 52886 },	-- Mission Report: Verdant Hollow
+									["altQuests"] = { 53267 },	-- Dino Research
+									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
 									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
-									["sourceQuests"] = { 52886 },		-- Mission Report: Verdant Hollow
 								}),
 								mi(2098, {	-- Dino Research
-									--["questID"] = ,	-- Triggers when completed
+								--	["sourceQuests"] = { 52888 },	-- Verdant Hollow
 									["races"] = ALLIANCE_ONLY,
-									["sourceQuests"] = { 52888 },		-- Verdant Hollow
-								}),
-								q(53267, {	-- Mission Report: Dino Research
-									["provider"] = { "n", 138704 },		-- Mission Command Table
-									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
-									--["sourceQuests"] = {  },	-- Dino Research Mission Complete
+									["g"] = {
+										q(53267, {	-- Mission Report: Dino Research
+											["provider"] = { "n", 138704 },	-- Mission Command Table
+											["races"] = ALLIANCE_ONLY,
+											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+										}),
+									},
 								}),
 								q(53268, {	-- Dino Research
-									["provider"] = { "n", 135612 },		-- Halford Wyrmbane
+								--	["sourceQuests"] = { 53267 },	-- Mission Report: Dino Research
+									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
 									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
-									["sourceQuests"] = { 53267 },		-- Mission Report: Dino Research
 								}),
 							},
 						}),
@@ -587,38 +593,41 @@ _.Zones =
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mi(2091, {	-- Vulture's Nest
-									--["questID"] = ,	-- Triggers when completed
+								--	["sourceQuests"] = {  },	-- Mission Start Trigger
+									["altQuests"] = { 53221 },	-- Mission Report: Missing Supplies
+								--	["questID"] = ,	-- Triggers when completed
 									["races"] = ALLIANCE_ONLY,
-									--["sourceQuests"] = {  },	-- Mission Start Trigger
 								}),
 								q(53043, {	-- Mission Report: Vulture's Nest
-									["provider"] = { "n", 138704 },		-- Mission Command Table
+								--	["sourceQuests"] = {  },	-- Vulture's Nest Mission Complete
+									["altQuests"] = { 53221 },	-- Mission Report: Missing Supplies
+									["provider"] = { "n", 138704 },	-- Mission Command Table
 									["races"] = ALLIANCE_ONLY,
 									["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
-									--["sourceQuests"] = {  },	-- Vulture's Nest Mission Complete
 								}),
 								q(53044, {	-- Vulture's Nest
-									["provider"] = { "n", 135612 },		-- Halford Wyrmbane
+								--	["sourceQuests"] = { 53043 },	-- Mission Report: Vulture's Nest
+									["altQuests"] = { 53221 },	-- Mission Report: Missing Supplies
+									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
 									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
-									["sourceQuests"] = { 53043 },		-- Mission Report: Vulture's Nest
 								}),
 								mi(2097, {	-- Missing Supplies
-									--["questID"] = ,	-- Triggers when completed
+								--	["sourceQuests"] = { 53044 },	-- Vulture's Nest
 									["races"] = ALLIANCE_ONLY,
-									["sourceQuests"] = { 53044 },		-- Vulture's Nest
-								}),
-								q(53221, {	-- Mission Report: Missing Supplies
-									["provider"] = { "n", 138704 },		-- Mission Command Table
-									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
-									--["sourceQuests"] = {  },	-- Missing Supplies Mission Complete
+									["g"] = {
+										q(53221, {	-- Mission Report: Missing Supplies
+											["provider"] = { "n", 138704 },	-- Mission Command Table
+											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["races"] = ALLIANCE_ONLY,
+										}),
+									},
 								}),
 								q(53222, {	-- Necessary Supplies
-									["provider"] = { "n", 135612 },		-- Halford Wyrmbane
+								--	["sourceQuests"] = { 53221 },	-- Mission Report: Missing Supplies
+									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
 									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
-									["sourceQuests"] = { 53221 },		-- Mission Report: Missing Supplies
 								}),
 							},
 						}),
@@ -760,9 +769,6 @@ _.Zones =
 					["coord"] = { 40.4, 36.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 135793 },	-- Collector Kojo
-					["g"] = {
-						i(164761),	-- Xal'atath, Blade of the Black Empire (QI)
-					},
 				}),
 				q(54265, {	-- Orders from Azshara
 					["sourceQuest"] = 54172,	-- The Azsharan Medallion
@@ -959,9 +965,6 @@ _.Zones =
 						["classes"] = exclude(PRIEST, ALL_CLASSES),
 						["coord"] = { 34.2, 31.8, 942 },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(164761),	-- Xal'atath, Blade of the Black Empire (QI)
-						},
 					}),
 					q(54114, {	-- Every Little Death Helps
 						["sourceQuests"] = {
@@ -980,9 +983,6 @@ _.Zones =
 						["coords"] = {
 							{ 78.0, 36.7, 862 },
 							{ 34.2, 31.8, 942 },
-						},
-						["g"] = {
-							i(164761),	-- Xal'atath, Blade of the Black Empire (QI)
 						},
 					}),
 					q(54058, {	-- Unintended Consequences

@@ -27,7 +27,13 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					81252,	-- Drov the Ruiner
 					87437,	-- Drov the Ruiner
 				},
-				["g"] = {	
+				["g"] = {
+					ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
+						["collectible"] = false,
+						["g"] = {
+							crit(27),	-- Drov the Ruiner
+						},
+					}),
 					i(120086),	-- Bone Charm Chain
 					i(120084),	-- Braided Magnaron Plait
 					i(120087),	-- Drov's Durable Gorget
@@ -55,6 +61,12 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					83746,	-- Rukhmar (Crieve)
 				},
 				["g"] = {
+					ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
+						["collectible"] = false,
+						["g"] = {
+							crit(28),	-- Rukhmar
+						},
+					}),
 					i(116771),	-- Solar Spirehawk (MOUNT!)
 					i(127775, {	-- Gemcutter Module: Stamina
 						["requireSkill"] = JEWELCRAFTING,
@@ -120,7 +132,13 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					549,	-- Cragplume Cauldron
 				},
 				["cr"] = 81535,	-- Tarlna the Ageless
-				["g"] = {	
+				["g"] = {
+					ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
+						["collectible"] = false,
+						["g"] = {
+							crit(26),	-- Tarlna the Ageless
+						},
+					}),
 					i(120089),	-- Chestguard of Rejuvenation
 					i(120090),	-- Falling Leaf Breastplate
 					i(120091),	-- Robes of the Ageless

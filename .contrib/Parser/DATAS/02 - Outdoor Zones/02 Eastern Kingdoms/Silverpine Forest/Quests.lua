@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -620,13 +621,12 @@ _.Zones =
 					["sourceQuests"] = {
 						27226,	-- Hair of the Dog
 						27195,	-- Nowhere to Run
-						27290,	-- To Forsaken Forward Command
 					},
 				}),
 				q(9601, {	-- To The Bulwark
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
 				}),
 				q(27512, {	-- Transdimensional Warfare: Chapter I

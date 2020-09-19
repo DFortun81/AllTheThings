@@ -916,6 +916,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
 							i(174226)	-- Paragon's Will
 						},
 					}),
@@ -934,6 +935,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
 							i(174226)	-- Paragon's Will
 						},
 					}),
@@ -973,6 +975,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
 							i(174226)	-- Paragon's Will
 						},
 					}),
@@ -1001,6 +1004,7 @@ _.ExpansionFeatures =
 						["coord"] = { 18.2, 09.9, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174220),	-- Ambered Greatstaff
 							i(174226)	-- Paragon's Will
 						},
 					}),
@@ -1016,6 +1020,7 @@ _.ExpansionFeatures =
 						},
 						["g"] = {
 							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
 							i(174226)	-- Paragon's Will
 						},
 					}),
@@ -1035,6 +1040,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174220),	-- Ambered Greatstaff
+							i(174226)	-- Paragon's Will
 						},
 					}),
 				}),
@@ -1124,6 +1130,28 @@ _.ExpansionFeatures =
 				}),
 				n(ZONEDROPS, {
 					i(174760),	-- Mantid Relic Fragment
+				}),
+			}),
+			n(-169, { 	-- Emissary Quests
+				q(58096, {	-- Supplies from the Rajani
+					["repeatable"] = true,
+					["g"] = {
+						i(174483, {	-- Rajani Supplies
+							i(168816, {	-- Pulsing Star Heart (Rank 4)
+								["classes"] = HEALERS,
+								["g"] = {
+									az(24, 4),	-- Spirit of Preservation (Rank 4)
+								},
+							}),
+							i(168576, {	-- Roots of Magnificent Revival (Rank 4)
+								["classes"] = TANKS,
+								["g"] = {
+									az(33, 4),	-- Touch of the Everlasting (Rank 4)
+								},
+							}),
+							i(174479),	-- Jade Defender (PET!)
+						}),
+					},
 				}),
 			}),
 			n(-10072, {	-- N'Zoth Assault
@@ -1315,28 +1343,6 @@ _.ExpansionFeatures =
 					p(2865, {	-- Voidskimmer
 					}),
 				}),
-				n(-169, { 	-- Emissary Quests
-					q(58096, {	-- Supplies from the Rajani
-						["repeatable"] = true,
-						["g"] = {
-							i(174483, {	-- Rajani Supplies
-								i(168816, {	-- Pulsing Star Heart (Rank 4)
-									["classes"] = HEALERS,
-									["g"] = {
-										az(24, 4),	-- Spirit of Preservation (Rank 4)
-									},
-								}),
-								i(168576, {	-- Roots of Magnificent Revival (Rank 4)
-									["classes"] = TANKS,
-									["g"] = {
-										az(33, 4),	-- Touch of the Everlasting (Rank 4)
-									},
-								}),
-								i(174479),	-- Jade Defender (PET!)
-							}),
-						},
-					}),
-				}),
 				n(-38,  {	-- Professions
 					prof(FISHING, {
 						i(174456, {	-- Bottle of Gloop (pet)
@@ -1470,7 +1476,9 @@ _.ExpansionFeatures =
 								["classes"] = TANKS,
 								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
 								["g"] = {
-									az(33, 3),	-- Touch of the Everlasting (Rank 3)
+									az(33, 3, {	-- Touch of the Everlasting (Rank 3)
+										["classes"] = TANKS,
+									}),
 								},
 							}),
 							i(174649, {	-- Rajani Warserpent

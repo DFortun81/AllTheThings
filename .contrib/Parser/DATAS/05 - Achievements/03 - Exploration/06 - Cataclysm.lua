@@ -173,10 +173,10 @@ _.Achievements =
 						crit(20),	-- Shimmering Grotto
 						crit(21),	-- Silver Tide Hollow
 					}),
-					ach(4975),	-- From Hell's Heart I Stab at Thee
+					ach(4975, {	-- From Hell's Heart I Stab at Thee
+						["cr"] = 40728,	-- Whale Shark
+					}),
 					ach(5518, {	-- Stood in the Fire
-						["groups"] = {
-						},
 						["description"] = "Achievement can be completed in Dragon Soul.",
 					}),
 					ach(4827, {	-- Surveying the Damage

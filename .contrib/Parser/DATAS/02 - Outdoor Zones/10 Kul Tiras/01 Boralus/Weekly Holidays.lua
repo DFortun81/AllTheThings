@@ -31,6 +31,13 @@ _.Zones =
 						}),
 					},
 				}),
+				q(53036, {	-- A Call to Battle
+					["providers"] = {
+						{ "n", 144384 },	-- Chronicler Shoopa
+						{ "n", 144383 },	-- Chronicler Toopa
+					},
+					["isWeekly"] = true,
+				}),
 				q(53033, {	-- A Frozen Path Through Time (WotLK Timewalking)
 					["providers"] = {
 						{ "n", 144384 },	-- Chronicler Shoopa

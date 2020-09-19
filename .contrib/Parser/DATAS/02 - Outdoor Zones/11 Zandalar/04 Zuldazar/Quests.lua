@@ -421,7 +421,6 @@ _.Zones =
 						i(158441),	-- Zanchuli Cord
 						i(158442),	-- Torcalin Belt
 						i(158443),	-- Jambani Belt
-						i(157539),	-- Scroll of Storm Control (QI)
 					},
 				}),
 				q(51679, {	-- A Strange Port of Call

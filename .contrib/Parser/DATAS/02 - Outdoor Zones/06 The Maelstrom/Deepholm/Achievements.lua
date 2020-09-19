@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(948, {	-- The Maelstrom
 		m(207, {	-- Deepholm
-			n(-4, {		-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -32,13 +33,13 @@ _.Zones =
 					}),
 					crit(4, {	-- Mending the Wound
 						["sourceQuest"] = 26971,	-- The Binding
-					}),					
+					}),
 				}),
 				ach(5450),	-- Fungal Frenzy
 				ach(5445),	-- Fungalophobia
 				ach(5447),	-- My Very Own Broodmother
 				ach(5446),	-- The Glop Family Line
 			}),
-		}),		
+		}),
 	}),
 };

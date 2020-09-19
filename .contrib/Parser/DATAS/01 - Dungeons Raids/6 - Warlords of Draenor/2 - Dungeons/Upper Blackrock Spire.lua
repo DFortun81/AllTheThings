@@ -9,6 +9,14 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 616, 617, 618 },
 		["lvl"] = 100,
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
+					["collectible"] = false,
+					["g"] = {
+						crit(3),	-- Warlord Zaela
+					},
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					76413,	-- Orebender Gor'ashan

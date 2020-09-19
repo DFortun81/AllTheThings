@@ -424,9 +424,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							i(163601),	-- Overgrown Anchor Weed (QI)
-						},
 					}),
 					q(51850, {	-- Preserve the Oasis
 						["lvl"] = 120,

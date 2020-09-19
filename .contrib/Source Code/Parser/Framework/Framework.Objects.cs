@@ -593,7 +593,12 @@ namespace ATT
             public static void AssignFactionID(Dictionary<string, object> data)
             {
                 // If an object already has a faction ID assigned and the ID is valid, ignore it.
-                //if (data.TryGetValue("r", out object temp) && Convert.ToInt32(temp) > 0) return;
+                if (data.TryGetValue("r", out object temp) && int.TryParse(temp?.ToString(), out int i) && i > 0)
+                {
+                    // no items tagged for faction AND specific races... ?
+                    data.Remove("races");
+                    return;
+                }
 
                 // Calculate the faction ID. (0 is no faction)
                 if (data.TryGetValue("races", out object racesRef) && racesRef is List<object> races)
