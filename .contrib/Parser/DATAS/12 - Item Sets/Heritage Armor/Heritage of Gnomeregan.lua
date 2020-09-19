@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	n(-254, {	-- Heritage Armor
+	--[[n(-254, {	-- Heritage Armor
 		gs(1828, {	-- Heritage of Gnomeregan
 			["races"] = { GNOME },
 			["g"] = {
@@ -19,5 +19,5 @@ _.GearSets =
 				i(168862),	-- G.E.A.R. Tracking Beacon (not collectible, just here so it's not in Unsorted)
 			},
 		}),
-	}),
+	}),]]
 };
