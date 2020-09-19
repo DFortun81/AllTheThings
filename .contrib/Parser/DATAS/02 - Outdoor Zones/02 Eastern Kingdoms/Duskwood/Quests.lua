@@ -43,6 +43,13 @@ _.Zones =
 						i(157003),	-- Corpseweed Hewer
 					},
 				}),
+				q(54980, {	-- Bane of the Nightbane
+					["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
+					["coord"] = { 18.1, 57.2, 47 },
+					["races"] = { WORGEN },
+					["sourceQuest"] = 54977, -- Into Duskwood
+					["minReputation"] = { 1134, EXALTED }, -- Gilneas
+				}),
 				q(26787, {	-- Bear In Mind
 					["provider"] = { "n", 288 },	-- Jitters
 					["coord"] = { 18.6, 58.3, 47 },
@@ -118,6 +125,13 @@ _.Zones =
 						i(60930),	-- Shield of Darkshire
 						i(131597),	-- Curse Breaker's Bindings
 					},
+				}),
+				q(54981, {	-- Cry to the Moon
+					["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
+					["coord"] = { 18.1, 57.2, 47 },
+					["races"] = { WORGEN },
+					["sourceQuest"] = 54980, -- Bane of the Nightbane
+					["minReputation"] = { 1134, EXALTED }, -- Gilneas
 				}),
 				q(26655, {	-- Deliver the Thread
 					["provider"] = { "n", 265 },	-- Madame Eva
@@ -215,6 +229,13 @@ _.Zones =
 						i(60904),	-- Ring of the Fool
 						i(131579),	-- Retired Linked Pants
 					},
+				}),
+				q(54984, {	-- Let Sleeping Wolves Lie
+					["provider"] = { "n", 150106 },	-- Goldrinn
+					["coord"] = { 46.6, 36.6, 47 },
+					["races"] = { WORGEN },
+					["sourceQuest"] = 54983, -- Waking a Dreamer
+					["minReputation"] = { 1134, EXALTED }, -- Gilneas
 				}),
 				q(181,   {	-- Look to the Stars
 					["u"] = REMOVED_FROM_GAME,
@@ -424,6 +445,24 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(2043)),	-- Ring of Forlorn Spirits
 					},
 				}),
+				q(54990, {	-- The New Guard
+					["provider"] = { "n", 150115 },	-- Princess Tess Greymane
+					["coord"] = { 46.3, 37.0, 47 },
+					["races"] = { WORGEN },
+					["sourceQuest"] = 54984, -- Let Sleeping Wolves Lie
+					["minReputation"] = { 1134, EXALTED }, -- Gilneas
+					["g"] = {
+						i(173999),	-- Greyguard Buckle
+						i(174000),	-- Greyguard Ceremonial Shoulderguards
+						i(174003),	-- Greyguard Dueling Gloves
+						i(174005),	-- Greyguard Formal Overcoat
+						i(174006),	-- Greyguard Formal Robe
+						i(174001),	-- Greyguard Formal Trousers
+						i(174004),	-- Greyguard Stompers
+						i(174002),	-- Greyguard Tophat
+						i(173998),	-- Greyguard Wristbands
+					},
+				}),
 				q(58,    {	-- The Night Watch
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 264 },	-- Commander Althea Ebonlocke <Leader of The Night Watch>
@@ -501,6 +540,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26688,	-- Worgen in the Woods
 				}),
+				q(54982, {	-- The Spirit of the Hunter
+					["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
+					["coord"] = { 18.1, 57.2, 47 },
+					["races"] = { WORGEN },
+					["sourceQuest"] = 54980, -- Bane of the Nightbane
+					["minReputation"] = { 1134, EXALTED }, -- Gilneas
+				}),
 				q(26667, {	-- The Stolen Letters
 					["provider"] = { "n", 267 },	-- Clerk Daltry
 					["coord"] = { 72.4, 46.9, 47 },
@@ -513,6 +559,13 @@ _.Zones =
 						i(131575),	-- Brightwood Gauntlets
 						i(156973),	-- Archivist's Staff
 						i(156974),	-- Archivist's Walking Stick
+					},
+				}),
+				q(101,   {	-- The Totem of Infliction
+					["u"] = REMOVED_FROM_GAME,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(REMOVED_FROM_GAME, i(1131)),	-- Totem of Infliction
 					},
 				}),
 				q(26793, {	-- The Weathered Grave
@@ -538,12 +591,15 @@ _.Zones =
 					["coord"] = { 45.1, 67.0, 47 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(101,   {	-- The Totem of Infliction
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(1131)),	-- Totem of Infliction
+				q(54983, {	-- Waking a Dreamer
+					["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
+					["coord"] = { 46.4, 36.9, 47 },
+					["races"] = { WORGEN },
+					["sourceQuests"] = {
+						54981,		-- Cry to the Moon
+						54982,		-- The Spirit of the Hunter
 					},
+					["minReputation"] = { 1134, EXALTED }, -- Gilneas
 				}),
 				q(26618, {	-- Wolves at Our Heels
 					["provider"] = { "n", 264 },	-- Commander Althea Ebonlocke

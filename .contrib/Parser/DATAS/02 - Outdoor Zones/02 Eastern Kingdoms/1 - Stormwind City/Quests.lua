@@ -880,6 +880,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 98,
 				}),
+				q(54977, {	-- Into Duskwood
+					["provider"] = { "n", 151784 },	-- Mia Greymane
+					["coord"] = { 82.3, 27.8, 84 },
+					["races"] = { WORGEN },
+					["sourceQuest"] = 54976, -- The Shadow of Gilneas
+					["minReputation"] = { 1134, EXALTED }, -- Gilneas
+				}),
 				q(14481, {	-- Into The Abyss
 					["provider"] = { "n", 36674 },	-- Nambria
 					["coord"] = { 41.4, 47.6, 84 },
@@ -1383,6 +1390,12 @@ _.Zones =
 					["g"] = {
 						i(65620),	-- Hood of the Royal Wizard
 					},
+				}),
+				q(54976, {	-- The Shadow of Gilneas
+					["provider"] = { "n", 150200 },	-- Courier Claridge
+					["coord"] = { 54.6, 18.4, 84 },
+					["races"] = { WORGEN },
+					["minReputation"] = { 1134, EXALTED }, -- Gilneas
 				}),
 				q(1790,  {	-- The Symbol of Life
 					["provider"] = { "n", 6171 },	-- Duthorian Rall
