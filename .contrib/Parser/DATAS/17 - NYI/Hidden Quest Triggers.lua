@@ -2800,5 +2800,25 @@ _.NeverImplemented =
 		
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest
+		
+		-- Pre-launch event
+		q(60490),	-- Triggers after completing "Advancing the Effort" and unlocking Icecrown dailies. Also triggered when starting the new phase at Ironwall Rampart. Maybe it's the zone story daily progression tracker?
+		q(60541),	-- 
+		q(60511),	-- Icecrown story - Advancing the effort (phase 2?). triggered after completing "Only Shadows Remain"
+		
+		-- Exile's Reach
+		q(58418),	-- Triggers shortly after login. Possibly some kind of indicator for the account having done it at least once per faction?
+		q(54927),	-- Triggers after the cinematic. You can't move until this quest triggers
+		q(54937),	-- Triggers after the cinematic. You can't move until this quest triggers
+		q(59699),	-- Defeat Private Cole(A) or Grunt Throg(H) during "Stand Your Ground". Coincides with hitting level 2
+		q(58882),	-- Triggered after looting white-quality chestpiece. loot controller so they don't drop twice
+		q(58883),	-- Triggered after looting white-quality boots. loot controller so they don't drop twice
+		q(54928),	-- Triggered after getting 3 holy power and striking Warlord Grimaxe with the first major combat ability. Didn't trigger at all on an alliance priest
+		q(58336),	-- Triggered at the same time as 54928. Possibly dialog-related?
+		q(55607),	-- Triggered while killing quilboars in Quilboar Briarpatch on an alliance priest. Did not see it trigger as horde
+		q(59610),	-- Triggered after killing Torgok. Loot controller for "Torgok's Reagent Pouch"
+		q(59143),	-- Triggered after looting the Runetusk Necklace from ogres in Darkmaul Citadel
+		q(59139),	-- Triggered after looting the Spider-Eye Ring from spiders in Hrun's Barrow
+		q(60167),	-- Triggered right after Warlord Grimaxe tells Shuja to heal during the Tunk encounter
 	}),
 };
