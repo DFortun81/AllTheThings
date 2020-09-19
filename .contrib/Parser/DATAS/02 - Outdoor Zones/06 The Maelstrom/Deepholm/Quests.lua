@@ -145,7 +145,12 @@ _.Zones =
 				q(26440, {	-- Clingy
 					["lvl"] = 82,
 					["provider"] = { "n", 43116 },	-- Pebble
-					["sourceQuest"] = 28869,	-- Pebble
+					["sourceQuests"] = {
+						26437,	-- Making Things Crystal Clear
+						26438,	-- Intervention
+						28869,	-- Pebble
+						26439,	-- Putting the Pieces Together
+					},
 					["g"] = {
 						i(61425),	-- Bracers of the Energetic Elemental
 						i(61426),	-- Crystalmuncher Necklace
