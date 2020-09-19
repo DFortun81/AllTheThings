@@ -393,8 +393,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["sourceQuests"] = {
-						26978,	-- Who Needs Cauldrons?
 						26930,	-- After the Crusade
+						26933,	-- Foes Before Hoes
+						26978,	-- Who Needs Cauldrons?
 					},
 				}),
 				q(24998, {	-- Maggot Eye
