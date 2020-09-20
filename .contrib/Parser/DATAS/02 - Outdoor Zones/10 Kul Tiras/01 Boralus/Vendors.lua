@@ -1760,101 +1760,156 @@ _.Zones =
 					},
 				}),
 				n(143560, {	-- Marshal Gabriel
-					["sourceQuests"] = { 56499 },	-- Storming the Battlefields
 					["coord"] = { 56.2, 25.7, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
-							["sourceQuests"] = { 56499 },	-- Storming the Battlefields
-							["classes"] = HEALERS,
-							["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
+						q(56499, {	-- Storming the Battlefields
+							["provider"] = { "n", 143560 },	-- -- Marshal Gabriel
+							["coord"] = { 56.2, 25.7, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
 							["g"] = {
-								az(18, 1),	-- Artifice of Time (Rank 1)
+								i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
+									["sourceQuests"] = { 56499 },	-- Storming the Battlefields
+									["classes"] = HEALERS,
+									["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
+									["g"] = {
+										az(18, 1),	-- Artifice of Time (Rank 1)
+									},
+								}),
+								i(168921, {	-- Azerite-Infused Timequartz (Rank 2)
+									["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
+									["classes"] = HEALERS,
+									["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+									["g"] = {
+										az(18, 2),	-- Artifice of Time (Rank 2)
+									},
+								}),
+								i(168922, {	-- Azerite-Fueled Timequartz (Rank 3)
+									["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
+									["classes"] = HEALERS,
+									["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+									["g"] = {
+										az(18, 3),	-- Artifice of Time (Rank 3)
+									},
+								}),
+								i(168923, {	-- Unburdened Azerite Timequartz (Rank 4)
+									["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
+									["classes"] = HEALERS,
+									["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
+									["g"] = {
+										az(18, 4),	-- Artifice of Time (Rank 4)
+									},
+								}),
+								i(168442, {	-- Roiling Blood of the Vanquished (Rank 1)
+									["sourceQuests"] = { 56499 },	-- Storming the Battlefields
+									["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
+									["g"] = {
+										az(23, 1),	-- Blood of the Enemy (Rank 1)
+									},
+								}),
+								i(168443, {	-- Agitated Blood of the Dominated (Rank 2)
+									["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
+									["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+									["g"] = {
+										az(23, 2),	-- Blood of the Enemy (Rank 2)
+									},
+								}),
+								i(168444, {	-- Churning Blood of the Conquered (Rank 3)
+									["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
+									["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
+									["g"] = {
+										az(23, 3),	-- Blood of the Enemy (Rank 3)
+									},
+								}),
+								i(168814, {	-- Animated Blood of the Decimated (Rank 4)
+									["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
+									["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
+									["g"] = {
+										az(23, 4),	-- Blood of the Enemy (Rank 4)
+									},
+								}),
+								i(168578, {	-- Sphere of Suppressed Force (Rank 1)
+									["sourceQuests"] = { 56499 },	-- Storming the Battlefields
+									["classes"] = TANKS,
+									["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
+									["g"] = {
+										az(3, 1),	-- Sphere of Suppression (Rank 1)
+									},
+								}),
+								i(168579, {	-- Sphere of Unrestrained Fury (Rank 2)
+									["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
+									["classes"] = TANKS,
+									["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+									["g"] = {
+										az(3, 2),	-- Sphere of Suppression (Rank 2)
+									},
+								}),
+								i(168580, {	-- Sphere of Leeched Mobility (Rank 3)
+									["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
+									["classes"] = TANKS,
+									["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
+									["g"] = {
+										az(3, 3),	-- Sphere of Suppression (Rank 3)
+									},
+								}),
+								i(168581, {	-- Sphere of Incandescent Neutralization (Rank 4)
+									["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
+									["classes"] = TANKS,
+									["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
+									["g"] = {
+										az(3, 4),	-- Sphere of Suppression (Rank 4)
+									},
+								}),
 							},
 						}),
-						i(168921, {	-- Azerite-Infused Timequartz (Rank 2)
-							["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
-							["classes"] = HEALERS,
-							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-							["g"] = {
-								az(18, 2),	-- Artifice of Time (Rank 2)
-							},
+						i(180178, {	-- Ensemble: Dread Aspirant's Cloth Armor (A) s1
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						}),
-						i(168922, {	-- Azerite-Fueled Timequartz (Rank 3)
-							["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
-							["classes"] = HEALERS,
-							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-							["g"] = {
-								az(18, 3),	-- Artifice of Time (Rank 3)
-							},
+						i(180180, {	-- Ensemble: Dread Aspirant's Leather Armor (A) s1
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						}),
-						i(168923, {	-- Unburdened Azerite Timequartz (Rank 4)
-							["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
-							["classes"] = HEALERS,
-							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-							["g"] = {
-								az(18, 4),	-- Artifice of Time (Rank 4)
-							},
+						i(180182, {	-- Ensemble: Dread Aspirant's Mail Armor (A) s1
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						}),
-						i(168442, {	-- Roiling Blood of the Vanquished (Rank 1)
-							["sourceQuests"] = { 56499 },	-- Storming the Battlefields
-							["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
-							["g"] = {
-								az(23, 1),	-- Blood of the Enemy (Rank 1)
-							},
+						i(180184, {	-- Ensemble: Dread Aspirant's Plate Armor (A) s1
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						}),
-						i(168443, {	-- Agitated Blood of the Dominated (Rank 2)
-							["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
-							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-							["g"] = {
-								az(23, 2),	-- Blood of the Enemy (Rank 2)
-							},
+						i(180188, {	-- Ensemble: Sinister Aspirant's Leather Armor (A) s2
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						}),
-						i(168444, {	-- Churning Blood of the Conquered (Rank 3)
-							["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
-							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-							["g"] = {
-								az(23, 3),	-- Blood of the Enemy (Rank 3)
-							},
+						i(180190, {	-- Ensemble: Sinister Aspirant's Mail Armor (A) s2
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						}),
-						i(168814, {	-- Animated Blood of the Decimated (Rank 4)
-							["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
-							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-							["g"] = {
-								az(23, 4),	-- Blood of the Enemy (Rank 4)
-							},
+						i(180192, {	-- Ensemble: Sinister Aspirant's Plate Armor (A) s2
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						}),
-						i(168578, {	-- Sphere of Suppressed Force (Rank 1)
-							["sourceQuests"] = { 56499 },	-- Storming the Battlefields
-							["classes"] = TANKS,
-							["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
-							["g"] = {
-								az(3, 1),	-- Sphere of Suppression (Rank 1)
-							},
+						i(180186, {	-- Ensemble: Sinister Aspirant's Cloth Armor (A) s2
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						}),
-						i(168579, {	-- Sphere of Unrestrained Fury (Rank 2)
-							["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
-							["classes"] = TANKS,
-							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-							["g"] = {
-								az(3, 2),	-- Sphere of Suppression (Rank 2)
-							},
+						i(180194, {	-- Ensemble: Notorious Aspirant's Cloth Armor (A) s3
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						}),
-						i(168580, {	-- Sphere of Leeched Mobility (Rank 3)
-							["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
-							["classes"] = TANKS,
-							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-							["g"] = {
-								az(3, 3),	-- Sphere of Suppression (Rank 3)
-							},
+						i(180196, {	-- Ensemble: Notorious Aspirant's Leather Armor (A) s3
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						}),
-						i(168581, {	-- Sphere of Incandescent Neutralization (Rank 4)
-							["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
-							["classes"] = TANKS,
-							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-							["g"] = {
-								az(3, 4),	-- Sphere of Suppression (Rank 4)
-							},
+						i(180198, {	-- Ensemble: Notorious Aspirant's Mail Armor (A) s3
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						}),
+						i(180200, {	-- Ensemble: Notorious Aspirant's Plate Armor (A) s3
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						}),
+						i(180206, {	-- Ensemble: Corrupted Aspirant's Plate Armor (A) s4
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						}),
+						i(180203, {	-- Ensemble: Corrupted Aspirant's Cloth Armor (A) s4
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						}),
+						i(180205, {	-- Ensemble: Corrupted Aspirant's Mail Armor (A) s4
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						}),
+						i(180204, {	-- Ensemble: Corrupted Aspirant's Leather Armor (A) s4
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						}),
 					},
 				}),
