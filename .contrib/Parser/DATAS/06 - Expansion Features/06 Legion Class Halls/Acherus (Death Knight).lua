@@ -21,6 +21,12 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 39757, -- Keeping Your Edge
 						["u"] = REMOVED_FROM_GAME,
 					}),
+					q(42708, {	-- A Personal Request
+						["provider"] = { "n", 93456 }, -- Thassarian
+						["coord"] = { 56.0, 30.7, 648 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42537, -- The King Rises
+					}),
 					q(44217, {	-- Armor Fit For A Deathlord
 						i(139676),	-- Head
 					}),
@@ -102,6 +108,9 @@ _.ExpansionFeatures =
 					}),
 					q(44244, {	-- Champion: Koltira Deathweaver
 						["provider"] = { "n", 93453 },		-- Koltira Deathweaver
+						["coord"] = { 66.3, 64.6, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42708, -- A Personal Request
 						["g"] = {
 							follower(599),	-- Koltira Deathweaver
 						},
@@ -144,9 +153,24 @@ _.ExpansionFeatures =
 					}),
 					q(44243, {	-- Champion: Thoras Trollbane
 						["provider"] = { "n", 113419 },	-- King Thoras Trollbane
+						["coord"] = { 59.5, 34.0, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42537, -- The King Rises
 						["g"] = {
 							follower(838),	-- Thoras Trollbane
 						},
+					}),
+					q(44082, {	-- Knights of the Ebon Blade
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42708, -- A Personal Request
+					}),
+					q(43571, {	-- Neltharion's Lair: Braid of the Underking
+						["provider"] = { "n", 111480 }, -- Salanar the Horseman
+						["coord"] = { 36.2, 56.1, 648 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42708, -- A Personal Request
 					}),
 					q(39799, {	-- Our Next Move
 						["provider"] = { "n", 93437 }, -- Siouxsie the Banshee
@@ -190,6 +214,12 @@ _.ExpansionFeatures =
 							39816, -- Champion: Thassarian
 							43264, -- Rise, Champions
 						},
+					}),
+					q(43899, {	-- Steeds of the Damned
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42708, -- A Personal Request
 					}),
 					q(43268, {	-- Tech It Up A Notch
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
