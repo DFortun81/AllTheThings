@@ -9,6 +9,7 @@ _.Toys =
 		i(86589),		-- Ai-Li's Skymirror
 		i(175140),		-- All-Seeing Eyes
 		i(153204),  	-- All-Seer's Eye
+		i(184292),		-- Ancient Elethium Coin
 		i(141296), 		-- Ancient Mana Basin
 		i(113570), 		-- Ancient's Bloom
 		i(117550),		-- Angry Beehive
@@ -27,6 +28,7 @@ _.Toys =
 		i(119178), 		-- Black Whirlwind
 		i(104302),		-- Blackflame Daggers
 		i(153179),  	-- Blue Conservatory Scroll
+		i(184312),		-- Borr-Geth's Fiery Brimstone
 		i(119432), 		-- Botani Camouflage
 		i(134023),		-- Bottled Tornado
 		i(128223),		-- Bottomless Stygana Mushroom Brew
@@ -72,6 +74,7 @@ _.Toys =
 		i(127659), 		-- Ghostly Iron Buccaneer's Hat
 		i(117569), 		-- Giant Deathweb Egg
 		i(161342),		-- Gem of Acquiescence
+		i(174445),		-- Glimmerfly Cocoon
 		i(119211), 		-- Golden Hearthstone Card: Lord Jaraxxus
 		i(118716), 		-- Goren Garb
 		i(119180), 		-- Goren "Log" Roller
@@ -79,6 +82,7 @@ _.Toys =
 		i(163742),		-- Heartsbane Grimoire
 		i(86594), 		-- Helpful Wikky's Whistle
 		i(166790),		-- Highborne Memento
+		i(182655),		-- Hill King's Roarbox
 		i(86593),		-- Hozen Beach Ball
 		i(113631),		-- Hypnosis Goggles
 		i(118244),		-- Iron Buccaneer's Hat
@@ -111,6 +115,7 @@ _.Toys =
 		i(163795), 		-- Oomgut Ritual Drum
 		i(1973),		-- Orb of Deception
 		i(35275),		-- Orb of the Sin'dorei
+		i(181794),		-- Orophea's Lyre
 		i(120276),		-- Outrider's Bridle Chain
 		i(174926),		-- Overly Sensitive Void Spectacles
 		i(86588),		-- Pandaren Firework Launcher
@@ -142,6 +147,7 @@ _.Toys =
 			["classes"] = { DEMONHUNTER },
 		}),
 		i(127669), 		-- Skull of the Mad Chief
+		i(180873),		-- Smolderheart
 		i(119163),		-- Soul Inhaler
 		i(163736),		-- Spectral Visage
 		i(153124),  	-- Spire of Spite

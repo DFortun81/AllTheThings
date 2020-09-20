@@ -5,6 +5,7 @@
 _.Toys =
 {
 	n(QUESTS, {
+		i(183847),		-- Acolyte's Guise
 		i(147838), 		-- Akazamzarak's Spare Hat
 		i(119217),		-- Alliance Flag of Victory (Alliance)
 		i(175063),		-- Aqir Egg Cluster
@@ -31,6 +32,7 @@ _.Toys =
 		i(119145),		-- Firefury Totem (Horde)
 		i(119083),		-- Fruit Basket
 		i(118937), 		-- Gamon's Braid
+		i(177951),		-- Glimmerflies on Strings
 		i(95589),		-- Glorious Standard of the Kirin Tor Offensive (Alliance)
 		i(95590),		-- Glorious Standard of the Sunreaver Onslaught (Horde)
 		i(88417),		-- Gokk'lok's Shell
@@ -41,6 +43,7 @@ _.Toys =
 		i(156833),		-- Katys's Stampwhistle
 		i(88580),		-- Ken-Ken's Mask
 		i(95567),		-- Kirin Tor Beacon (Alliance)
+		i(174286),		-- Kyrian Ritual Vestments
 		i(88531),		-- Lao Chin's Last Mug
 		i(71259), 		-- Leyara's Locket
 		i(119039), 		-- Lilian's Warning Sign
@@ -51,6 +54,7 @@ _.Toys =
 		i(52201), 		-- Muradin's Favor
 		i(119001), 		-- Mystery Keg
 		i(138873),		-- Mystical Frosh Hat
+		i(183856),		-- Mystical Orb of Meditation
 		i(173951),		-- N'lyeth, Sliver of N'Zoth
 		i(130209), 		-- Never Ending Toy Chest
 		i(173727),		-- Nomi's Vintage
@@ -67,11 +71,13 @@ _.Toys =
 		i(122674),		-- S.E.L.F.I.E. Camera MkII
 		i(88387), 		-- Shushen's Spittoon
 		i(88381), 		-- Silversage Incense
+		i(177665),		-- Spectral Hankerchief
 		i(156871),		-- Spitzy
 		i(95568),		-- Sunreaver Beacon (Horde)
 		i(52253), 		-- Sylvanas' Music Box
 		i(80822), 		-- The Golden Banana
 		i(142497),		-- Tiny Pack
+		i(180947),		-- Tithe Collector's Vessel
 		i(88584), 		-- Totem of Harmony
 		i(119144),		-- Touch of the Naaru (Alliance)
 		i(115506), 		-- Treessassin's Guise

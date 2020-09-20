@@ -27,6 +27,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(116665),	-- Armored Irontusk
+		i(181821),	-- Armored Plaguerot Tauralus
 		i(44689),	-- Armored Snowy Gryphon
 		i(103638),	-- Ashhide Mushan Beast
 		i(87781),	-- Azure Riding Crane
@@ -122,6 +123,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(123974),	-- Corrupted Dreadwing
+		i(183518),	-- Court Sinrunner
 		i(95565),	-- Crimson Primal Direhorn
 		i(169202),	-- Crimson Tidestallion
 		i(87791),	-- Crimson Water Strider
@@ -150,6 +152,7 @@ _.Mounts =
 		i(65356, {	-- Drake of the West Wind [Horde Only]
 			["races"] = HORDE_ONLY,
 		}),
+		i(180729),	-- Duskflutter Ardenmoth
 		i(116664),	-- Dusky Rockhide
 		i(161908, {	-- Dusky Waycrest Gryphon
 			["races"] = ALLIANCE_ONLY,
@@ -162,6 +165,7 @@ _.Mounts =
 		i(45590),	-- Exodar Elekk
 		i(45597),	-- Forsaken Warhorse
 		i(19029),	-- Frostwolf Howler
+		i(183740),	-- Gilded Prowler
 		i(45589),	-- Gnomeregan Mechanostrider
 		i(62461),	-- Goblin Trike
 		i(62462),	-- Goblin Turbo-Trike
@@ -262,6 +266,7 @@ _.Mounts =
 		i(142369),	-- Ivory Hawkstrider
 		i(67107),	-- Kor'kron Annihilator
 		i(152788),	-- Lightforged Warframe Mount
+		i(182082),	-- Lurid Bloodtusk
 		i(163042),	-- Mighty Caravan Brutosaur
 		i(116768),	-- Mosshide Riverwallow
 		i(73838),	-- Mountain Horse
@@ -337,6 +342,7 @@ _.Mounts =
 			["classes"] = { ROGUE },	
 		}),
 		i(116772),	-- Shadowmane Charger
+		i(180748),	-- Silky Shimmermoth
 		i(166745, {	-- Siltwing Albatross
 			["cost"] = { { "c", 1710, 1000 }, },	-- 1000x Seafarer's Dubloon
 		}),
@@ -469,8 +475,10 @@ _.Mounts =
 		}),
 		i(8591),	-- Turquoise Raptor
 		i(152796),	-- Umber Ruinstrider
+		i(183053),	-- Umbral Scythehorn
 		i(13322),	-- Unpainted Mechanostrider
 		i(167170),	-- Unshackled Waveray
+		i(183801),	-- Vibrant Flutterwing
 		i(8592),	-- Violet Raptor
 		i(161667, {	-- Voldunai Dunescraper
 			["races"] = HORDE_ONLY,

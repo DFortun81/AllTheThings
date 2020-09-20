@@ -44,6 +44,7 @@ _.Toys =
 		i(129149),		-- Death's Door Charm
 		i(163463),		-- Dead Ringer
 		i(159753),		-- Desert Flute
+		i(183989),		-- Dredger Barrow Racer
 		i(129279), 		-- Enchanted Stone Whistle
 		i(134007),		-- Eternal Black Diamond Ring
 		i(45020),		-- Exodar Banner (Alliance)
@@ -95,6 +96,7 @@ _.Toys =
 		i(136849, {		-- Nature's Beacon -- only Druid
 			["classes"] = { DRUID },
 		}),
+		i(182773),		-- Necrolord Hearthstone
 		i(134004),		-- Noble's Eternal Elementium Signet
 		i(45014),		-- Orgrimmar Banner (Horde)
 		i(158149, {		-- Overtuned Corgi Goggles
@@ -107,9 +109,11 @@ _.Toys =
 		i(115472),		-- Permanent Time Bubble (Alliance)
 		i(127864),		-- Personal Spotlight
 		i(140309),		-- Prismatic Bauble
+		i(183876),		-- Quill of Correspondence
 		i(136934, { 	-- Raging Elemental Stone
 			["classes"] = { SHAMAN },
 		}),
+		i(182890),		-- Rapid Recitation Quill
 		i(44820),		-- Red Ribbon Pet Leash
 		i(164983),		-- Rhan'ka's Escape Plan
 		i(37460),		-- Rope Pet Leash
@@ -122,6 +126,7 @@ _.Toys =
 		i(97942), 		-- Sen'jin Spirit Drum
 		i(119421),		-- Sha'tari Defender's Medallion (Alliance)
 		i(45017),		-- Silvermoon City Banner (Horde)
+		i(183900),		-- Sinvyr Tea Set
 		i(137663),		-- Soft Foam Sword
 		i(119182),		-- Soul Evacuation Crystal (Alliance)
 		i(127695),		-- Spirit Wand
@@ -149,11 +154,13 @@ _.Toys =
 		i(64997),		-- Tol Barad Searchlight (Horde)
 		i(130191), 		-- Trapped Treasure Chest Kit
 		i(45016),		-- Undercity Banner (Horde)
+		i(183716),		-- Venthyr Sinstone
 		i(174995),		-- Void Tendril Pet Leash
 		i(136937, { 	-- Vol'jin's Serpent Totem -- only Shaman
 			["classes"] = { SHAMAN },
 		}),
 		i(129367),		-- Vrykul Toy Boat Kit
+		i(184218),		-- Vulgarity Arbiter
 		i(150744),		-- Walking Kalimdor with the Earthmother (Horde)
 		i(138490, {		-- Waterspeaker's Totem -- only Shaman
 			["classes"] = { SHAMAN },

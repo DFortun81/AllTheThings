@@ -8,10 +8,14 @@ _.Mounts =
 		i(152904),	-- Acid Belcher
 		i(168830),	-- Aerial Unit R-21/X
 		i(69747),	-- Amani Battle Bear
+		i(183800),	-- Amber Ardenmoth
 		i(94230),	-- Amber Primordial Direhorn
 		i(152816),	-- Antoran Charhound
+		i(182650),	-- Arboreal Gulper
+		i(181815),	-- Armored Bonehoof Tauralus
 		i(116669),	-- Armored Razorback
 		i(68823),	-- Armored Razzashi Raptor
+		i(183741),	-- Ascended Skymane
 		i(166432),	-- Ashenvale Chimaera
 		i(32458),	-- Ashes of Al'ar
 		i(87777),	-- Astral Cloud Serpent
@@ -21,8 +25,11 @@ _.Mounts =
 		i(43986),	-- Black Drake
 		i(166428),	-- Blackpaw
 		i(94292),	-- Black Primal Raptor
+		i(182614),	-- Blanchy's Reins
 		i(77067),	-- Blazing Drake
 		i(153043),	-- Blessed Felcrusher Mount
+		i(182085),	-- Blisterback Bloodtusk
+		i(182083),	-- Bonecleaver's Skullboar
 		i(166468),	-- Bloodgorged Hunter
 		i(116659),	-- Bloodhoof Bull
 		i(43953),	-- Blue Drake
@@ -30,6 +37,8 @@ _.Mounts =
 		i(21218),	-- Blue Qiraji Battle Tank
 		i(163578), 	-- Broken Highland Mustang
 		i(43951),	-- Bronze Drake
+		i(184160),	-- Bulbous Necroray
+		i(181818),	-- Chewed Reins of the Callow Flayedwing
 		i(147806),	-- Cloudwing Hippogryph
 		i(173887),	-- Clutch of Ha-Li
 		i(95059),	-- Clutch of Ji-Kun
@@ -42,6 +51,7 @@ _.Mounts =
 		i(63041),	-- Drake of the South Wind
 		i(163576),	-- Dune Scavenger
 		i(174860),	-- Elusive Quickhoof
+		i(180582),	-- Endmire Flyer Tether
 		i(78919),	-- Experiment 12-B
 		i(169201),	-- Fabious
 		i(138201),	-- Fathom Dweller
@@ -57,7 +67,9 @@ _.Mounts =
 		i(166705),	-- Glacial Tidestorm
 		i(153042),	-- Glorious Felcrusher Mount
 		i(166518),	-- G.M.O.D.
+		i(184062),	-- Gnawed Reins of the Battle-Bound Warhound(Battle-Bound Warhound in journal)
 		i(163573),	-- Goldenmane's Rein's
+		i(182084),	-- Gorespine
 		i(43959),	-- Grand Black War Mammoth (Alliance)
 		i(44083),	-- Grand Black War Mammoth (Horde)
 		i(116674),	-- Great Greytusk
@@ -69,6 +81,8 @@ _.Mounts =
 		i(137575),	-- Hellfire Infernal
 		i(163579),	-- Highland Mustang
 		i(147807),	-- Highmountain Elderhorn
+		i(180461),	-- Horrid Dredwing
+		i(184161),	-- Infested Necroray
 		i(50818),	-- Invincible
 		i(116660),	-- Ironhoof Destroyer
 		i(166467),	-- Island Thunderscale
@@ -86,6 +100,7 @@ _.Mounts =
 		i(151623),	-- Lucid Nightmare Mount [Note: Drop's from Puzzler's Demise; a puzzle mount similar  to Kosumoth, Riddler's Mind Worm and Sun Darter Hatchling]
 		i(152814),	-- Maddened Chaorunner
 		i(174653),	-- Mail Muncher
+		i(184167),	-- Mawsworn Soulhunter
 		i(174769),	-- Malevolent Drone
 		i(168826),	-- Mechagon Peacekeeper
 		i(142236),	-- Midnight
@@ -98,12 +113,15 @@ _.Mounts =
 		}),
 		i(174872),	-- Ny'alotha Allseer
 		i(49636),	-- Onyxian Drake
+		i(184162),	-- Pestilent Necroray
 		i(63042),	-- Phosphorescent Stone Drake
+		i(182080),	-- Predatory Plagueroc
 		i(69224),	-- Pureblood Fire Hawk
 		i(163582),  -- Qinsho's Eternal Hound
 		i(32768),	-- Raven Lord
 		i(94291),	-- Red Primal Raptor
 		i(21321),	-- Red Qiraji Battle Tank
+		i(182081),	-- Reins of the Colossal Slaughterclaw(Colossal Slaughterclaw in journal)
 		i(174841),	-- Ren's Stalwart Hound
 		i(147835),	-- Riddler's Mind-Worm
 		i(166466),	-- Risen Mare
@@ -114,22 +132,28 @@ _.Mounts =
 		i(152840),	-- Scintillating Mana Ray Mount
 		i(152789),	-- Shackled Ur'zul
 		i(116663),	-- Shadowhide Pearltusk
+		i(180727),	-- Shimmermist Runner
 		i(169163),	-- Silent Glider
+		i(180772),	-- Silverwind Larion
 		i(163645),	-- Skullripper
 		i(94229),	-- Slate Primordial Direhorn
+		i(182079),	-- Slime-Covered Reins of the Hulking Deathroc
 		i(116786),	-- Smoky Direwolf
 		i(142552),	-- Smoldering Ember Wyrm
 		i(116771),	-- Solar Spirehawk
 		i(89783),	-- Son of Galleon
 		i(163586),  -- Squawks
 		i(93666),	-- Spawn of Horridon
+		i(180725),	-- Spinemaw Gladechewer
 		i(166470),	-- Stonehide Elderhorn
 		i(67151),	-- Subdued Seahorse
 		i(159842),	-- Summon Sharkbait
+		i(180773),	-- Sundancer
 		i(116792),	-- Sunhide Gronnling
 		i(163585),  -- Surf Jelly
 		i(163644),	-- Swift Albino Raptor
 		i(116773),	-- Swift Breezestrider
+		i(180728),	-- Swift Gloomhoof
 		i(35513),	-- Swift White Hawkstrider
 		i(68824),	-- Swift Zulian Panther
 		i(163574),	-- Terrified Pack Mule
@@ -139,6 +163,7 @@ _.Mounts =
 		i(90655),	-- Thundering Ruby Cloud Serpent
 		i(44168),	-- Time-Lost Proto-Drake
 		i(159921), 	-- Tomb Stalker
+		i(184168),	-- Tower Shadehound
 		i(116658),	-- Tundra Icehoof
 		i(163584),  -- Twilight Avenger
 		i(43954),	-- Twilight Drake
@@ -152,6 +177,8 @@ _.Mounts =
 		i(116780),	-- Warsong Direfang
 		i(174753),	-- Waste Marauder
 		i(147804),	-- Wild Dreamrunner
+		i(180730),	-- Wild Glimmerfur Prowler
+		i(180731),	-- Wildseed Cradle
 		i(163706),	-- Witherbark Direwing
 		i(174840),	-- Xinlao
 		i(21324),	-- Yellow Qiraji Battle Tank

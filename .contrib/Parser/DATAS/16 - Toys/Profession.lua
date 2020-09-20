@@ -49,6 +49,7 @@ _.Toys =
 			i(168807),		-- Wormhole Generator: Kul Tiras
 			i(48933), 		-- Wormhole Generator: Northrend
 			i(87215),		-- Wormhole Generator: Pandaria
+			i(172924),		-- Wormhole Generator: Shadowlands
 			i(168808),		-- Wormhole Generator: Zandalar
 			n(-178, {		-- Goblin Engineering
 				i(30542),		-- Dimensional Ripper - Area 52
@@ -93,7 +94,7 @@ _.Toys =
 			i(130251),		-- JewelCraft
 		}),
 		n(-175, {	-- Junkyard Tinkering
-			i(168907),	-- Holographic Digitalization Hearthstone
+			i(168907),		-- Holographic Digitalization Hearthstone
 		}),
 		n(-187, { 	-- Leatherworking
 			i(129961),		-- Flaming Hoop
