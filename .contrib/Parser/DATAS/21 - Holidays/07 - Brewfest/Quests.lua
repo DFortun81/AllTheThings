@@ -137,6 +137,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["isYearly"] = true,
 				}),
 				q(11118, {	-- Pink Elekks On Parade (A)
+					["description"] = "This quest is not available to EU players.",
 					["provider"] = { "n", 23486 },	-- Goldark Snipehunter
 					["coord"] = { 55.2, 37.8, 27 },
 					["races"] = ALLIANCE_ONLY,
@@ -300,6 +301,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["isYearly"] = true,
 				}),
 				q(11120, {	-- Pink Elekks On Parade (H)
+					["description"] = "This quest is not available to EU players",
 					["provider"] = { "n", 24657 },	-- Glodrak Huntsniper
 					["coord"] = { 41.2, 18.4, 1 },
 					["races"] = HORDE_ONLY,
