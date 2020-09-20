@@ -113,7 +113,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(39818, {	-- Champion: Nazgrim
-						["provider"] = { "n", 108975 },	-- Rottgut
+						["provider"] = { "n", 109890 },	-- Nazgrim
+						["coord"] = { 39.6, 68.2, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuests"] = {
+							42484, -- The Firstborn Rises
+							44550, -- Called to Acherus [Breadcrumb]
+						},
 						["g"] = {
 							follower(586),	-- Nazgrim
 						},
@@ -125,7 +131,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(39816, {	-- Champion: Thassarian
-						--["provider"] = { "n",  },		-- Cant find QG
+						["provider"] = { "n", 93456 },	-- Thassarian
+						["coord"] = { 56.1, 30.5, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuests"] = {
+							42484, -- The Firstborn Rises
+							44550, -- Called to Acherus [Breadcrumb]
+						},
 						["g"] = {
 							follower(584),	-- Thassarian
 						},
@@ -142,6 +154,12 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 39832, -- Plans and Preparations
 					}),
+					q(43266, {	-- Recruiting the Troops
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 43265, -- Spread the Word
+					}),
 					q(42449, {	-- Return of the Four Horseman
 						["provider"] = { "n", 93658 }, -- Highlord Darion Mograine
 						["coord"] = { 51.6, 50.0, 647 },
@@ -157,6 +175,16 @@ _.ExpansionFeatures =
 							44550, -- Called to Acherus [Breadcrumb]
 						},
 					}),
+					q(43265, {	-- Spread the Word
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuests"] = {
+							39818, -- Champion: Nazgrim
+							39816, -- Champion: Thassarian
+							43264, -- Rise, Champions
+						},
+					}),
 					q(38990, {	-- The Call of Icecrown [Frost]
 						["classes"] = { DEATHKNIGHT },
 						["g"] = {
@@ -168,6 +196,12 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(128402), -- Maw of the Damned
 						},
+					}),
+					q(43267, {	-- Troops in the Field
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 43266, -- Recruiting the Troops
 					}),
 				}),
 				--[[
