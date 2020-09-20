@@ -7,6 +7,7 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1648, {	-- The Maw
 			m(1627, {	-- Torghast
+				["icon"] = 3642306,
 				["maps"] = {
 					1705,	-- Torghast Entrance
 					1621,	-- Torghast

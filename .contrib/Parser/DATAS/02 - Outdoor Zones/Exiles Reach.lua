@@ -5,6 +5,7 @@
 _.Zones =
 {
 	m(1409, {	-- Exile's Reach
+		["icon"] = 3567434,
 		["maps"] = {
 			1726,	-- North Sea (Alliance)
 			1727,	-- North Sea (Horde)

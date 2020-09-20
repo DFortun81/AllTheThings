@@ -66,34 +66,85 @@ _.Zones =
 						},
 					}),
 					crit(2, {	-- Vesper of Virtues
+						["coord"] = { 58.6, 71.4, 1536 },
+						["g"] = {
+							i(179982),	-- Kyrian Bell
+						},
 					}),
 					crit(3, {	-- Purifying Draught
+						["coord"] = { 52.1, 86.1, 1536 },
+						["g"] = {
+							i(174007),	-- Purifying Draught
+						},
 					}),
 					crit(4, {	-- Lost Disciple's Notes
+						["coord"] = { 59.3, 61.0, 1536 },
+						["g"] = {
+							i(182693),	-- Lost Disciple's Notes
+						},
 					}),
 					crit(5, {	-- Larion Tamer's Harness
+						["coord"] = { 58.2, 40.0, 1536 },
+						["g"] = {
+							i(182652),	-- Larion Tamer's Harness
+						},
 					}),
 					crit(6, {	-- Stolen Equipment
+						["coord"] = { 40.5, 49.9, 1536 },
+						["g"] = {
+							i(182561),	-- Fallen Disciple's Cloak
+						},
 					}),
 					crit(7, {	-- Abandoned Stockpile
+						["coord"] = { 46.1, 45.4, 1536 },
 					}),
 					crit(8, {	-- Experimental Construct Part
+						["coord"] = { 51.5, 18.0, 1536 },
+						["g"] = {
+							i(183609),	-- Re-Powered Golliath Fists
+						},
 					}),
 					crit(9, {	-- Broken Flute
+						["coord"] = { 35.9, 48.1, 1536 },
+						["g"] = {
+							i(180064),	-- Ascended Flute
+						},
 					}),
 					crit(10, {	-- Memorial Offering
+						["coord"] = { 56.5, 17.2, 1536 },
 					}),
 					crit(11, {	-- Vesper of the Silver Wind
+						["coord"] = { 36.0, 26.5, 1536 },
+						["g"] = {
+							i(180772),	-- Silverwind Larion
+						},
 					}),
 					crit(12, {	-- Gift of Agthia
+						["coord"] = { 35.1, 58.1, 1536 },
+						["g"] = {
+							i(180063),	-- Unearthly Chime
+						},
 					}),
 					crit(13, {	-- Gift of Vesiphone
+						["coord"] = { 64.9, 71.1, 1536 },
+						["g"] = {
+							i(180859),	-- White Vulpin
+						},
 					}),
 					crit(14, {	-- Gift of Chyrus
+						["coord"] = { 70.5, 36.5, 1536 },
 					}),
 					crit(15, {	-- Gift of Thenios
+						["coords"] = {
+							{ 40.6, 18.9, 1536 },
+							{ 41.7, 23.3, 1536 },
+						},
 					}),
 					crit(16, {	-- Gift of Devos
+						["coord"] = { 27.6, 21.8, 1536 },
+						["g"] = {
+							i(179977),	-- Benevolent Gong
+						},
 					}),
 				}),
 			}),
