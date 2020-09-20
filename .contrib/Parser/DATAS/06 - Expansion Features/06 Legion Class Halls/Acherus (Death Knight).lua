@@ -14,6 +14,16 @@ _.ExpansionFeatures =
 			["lvl"] = 98,
 			["g"] = {
 				n(QUESTS, {
+					q(44401, {	-- A Weapon For Every Occasion
+						["provider"] = { "n", 109788 }, -- Duke Lankral
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 43962, -- Blades of Destiny
+					}),
+					q(43962, {	-- Blades of Destiny
+						["provider"] = { "n", 109788 }, -- Duke Lankral
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 40715, -- A Pact of Necessity
+					}),
 					q(43877, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
 					}),
@@ -101,6 +111,21 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 113419 },	-- King Thoras Trollbane
 						["g"] = {
 							follower(838),	-- Thoras Trollbane
+						},
+					}),
+					q(40930, {	-- Apocalypse [Unholy]
+						["classes"] = { DEATHKNIGHT },
+					}),
+					q(38990, {	-- The Call of Icecrown [Frost]
+						["classes"] = { DEATHKNIGHT },
+						["g"] = {
+							i(128292), -- Blades of the Fallen Prince
+						},
+					}),
+					q(40740, {	-- The Dead and the Damned [Blood]
+						["classes"] = { DEATHKNIGHT },
+						["g"] = {
+							i(128402), -- Maw of the Damned
 						},
 					}),
 				}),

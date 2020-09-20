@@ -5,13 +5,14 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms		
 		m(42, {	-- Deadwind Pass
-			n(QUESTS, {
---[[			
+			n(QUESTS, {		
 				q(40933, {	-- A Grisly Task
-					["provider"] = { "n", 100729 },	-- 
-					["classes"] = {6},
+					["provider"] = { "n", 100729 },	-- Revil Kost
+					["coord"] = { 52.3, 34.5, 42 },
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 40932,	-- Disturbing the Past
 				}),
-				q(44421, {	-- Anomalous Anomalies
+				--[[q(44421, {	-- Anomalous Anomalies
 					["provider"] = { "n", 113986 },	-- 
 				}),
 				]]--
@@ -63,6 +64,12 @@ _.Zones =
 					["provider"] = { "n", 114631 },	-- Archmage Karlain
 					["coord"] = { 46.9, 75.3, 42 },
 				}),
+				q(40934, {	-- The Dark Riders
+					["provider"] = { "n", 100812 },	-- Revil Kost
+					["coord"] = { 49.4, 74.6, 42 },
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 40933, -- A Grisly Task
+				}),
 				q(44764, {	-- Demon in Disguise
 					["provider"] = { "n", 114631 },	-- Archmage Karlain <Kirin Tor>
 					["lvl"] = 110,
@@ -76,22 +83,18 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["sourceQuest"] = 40588,	-- Following the Curse
 				}),
-				--[[
 				q(40932, {	-- Disturbing the Past
-					["provider"] = { "n", 100729 },	-- 
-					["classes"] = {6},
+					["provider"] = { "n", 100729 },	-- Revil Kost
+					["coord"] = { 52.3, 34.5, 42 },
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 40931,	-- Following the Curse
 				}),
-]]--
 				q(44557, {	-- Finite Numbers
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar
 					["lvl"] = 110,
 					["coord"] = { 47.0, 75.2, 42 },
 				}),
 --[[
-				q(40931, {	-- Following the Curse
-					["provider"] = { "n", 100323 },	-- 
-					["classes"] = {6},
-				}),
 				q(40588, {	-- Following the Curse
 					["provider"] = { "n", 100323 },	-- 
 					["classes"] = {9},
@@ -225,16 +228,8 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				--[[
-				q(40935, {	-- The Call of Vengeance (map blank
-					["provider"] = { "n", 101282 },	-- 
-					["classes"] = {6},
-				}),
 				q(40987, {	-- The Call of Vengeance (map blank
 					["provider"] = { "n", 101282 },	-- 
-					["classes"] = {6},
-				}),
-				q(40934, {	-- The Dark Riders
-					["provider"] = { "n", 100812 },	-- 
 					["classes"] = {6},
 				}),
 				q(40986, {	-- The Dark Riders
@@ -287,6 +282,14 @@ _.Zones =
 						44684,	-- Corruption Runs Deep
 						44557,	-- Finite Numbers
 						44683,	-- Holding the Lines
+					},
+				}),
+				q(40935, {	-- The Call of Vengeance
+					["provider"] = { "n", 101282 },	-- Revil Kost
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 40934, -- The Dark Riders
+					["g"] = {
+						i(128403), -- Apocalypse (Artifact)
 					},
 				}),
 				q(9860, {	-- The New Directive
