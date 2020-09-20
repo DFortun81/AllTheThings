@@ -175,6 +175,12 @@ _.ExpansionFeatures =
 							44550, -- Called to Acherus [Breadcrumb]
 						},
 					}),
+					q(43539, {	-- Salanar the Horseman
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 43267, -- Troops in the Field
+					}),
 					q(43265, {	-- Spread the Word
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
 						["coord"] = { 49.7, 51.3, 647 },
@@ -184,6 +190,12 @@ _.ExpansionFeatures =
 							39816, -- Champion: Thassarian
 							43264, -- Rise, Champions
 						},
+					}),
+					q(43268, {	-- Tech It Up A Notch
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 43267, -- Troops in the Field
 					}),
 					q(38990, {	-- The Call of Icecrown [Frost]
 						["classes"] = { DEATHKNIGHT },
@@ -195,6 +207,15 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 						["g"] = {
 							i(128402), -- Maw of the Damned
+						},
+					}),
+					q(42533, {	-- The Ruined Kingdom
+						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
+						["coord"] = { 51.6, 50.0, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuests"] = {
+							43539, -- Salanar the Horseman
+							43268, -- Tech It Up A Notch
 						},
 					}),
 					q(43267, {	-- Troops in the Field
