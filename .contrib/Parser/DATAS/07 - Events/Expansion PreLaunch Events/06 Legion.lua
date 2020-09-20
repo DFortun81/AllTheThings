@@ -239,10 +239,12 @@ _.WorldEvents =
 						q(40717, {	-- Calling of the Council
 							["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
 							["races"] = { 1, 3, 4, 7, 11, 22, 25, 29, 30 },	-- Alliance Races
+							["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
 						}),
 						q(40718, {	-- Calling of the Council
 							["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
 							["races"] = { 2, 5, 6, 8, 9, 10, 26, 27, 28 },	-- Horde Races
+							["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
 						}),
 						q(44182, {	-- City Under Siege
 							["provider"] = { "n", 114561 },	-- Khadgar's Upgraded Servant
