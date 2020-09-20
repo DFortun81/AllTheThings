@@ -14,6 +14,19 @@ _.ExpansionFeatures =
 			["lvl"] = 98,
 			["g"] = {
 				n(QUESTS, {
+					q(39761, {	-- Advanced Runecarving
+						["provider"] = { "n", 97072 }, -- Grand Master Siegesmith Corvus
+						["coord"] = { 60.2, 60.0, 648 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 39757, -- Keeping Your Edge
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(44217, {	-- Armor Fit For A Deathlord
+						i(139676),	-- Head
+					}),
+					q(40930, {	-- Apocalypse [Unholy]
+						["classes"] = { DEATHKNIGHT },
+					}),
 					q(44401, {	-- A Weapon For Every Occasion
 						["provider"] = { "n", 109788 }, -- Duke Lankral
 						["classes"] = { DEATHKNIGHT },
@@ -27,8 +40,21 @@ _.ExpansionFeatures =
 					q(43877, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
 					}),
+					q(39757, {	-- Keeping Your Edge
+						["provider"] = { "n", 97111 }, -- Illanna Dreadmoore
+						["coord"] = { 49.6, 52.6, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 40715, -- A Pact of Necessity
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(46108, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(39832, {	-- Plans and Preparations
+						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
+						["coord"] = { 51.6, 50.0, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 40715, -- A Pact of Necessity
 					}),
 					n(111093, {	-- Stitchwork
 						["questID"] = 44188,	-- Hidden Tracking
@@ -48,9 +74,6 @@ _.ExpansionFeatures =
 					}),
 					q(46940, {	-- Using Lost Knowledge
 						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(44217, {	-- Armor Fit For A Deathlord
-						i(139676),	-- Head
 					}),
 					q(43686, {	-- The Fourth Horseman
 						i(139673),	-- Chest
@@ -113,8 +136,17 @@ _.ExpansionFeatures =
 							follower(838),	-- Thoras Trollbane
 						},
 					}),
-					q(40930, {	-- Apocalypse [Unholy]
+					q(39799, {	-- Our Next Move
+						["provider"] = { "n", 93437 }, -- Siouxsie the Banshee
+						["coord"] = { 50.6, 51.6, 647 },
 						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 39832, -- Plans and Preparations
+					}),
+					q(42449, {	-- Return of the Four Horseman
+						["provider"] = { "n", 93658 }, -- Highlord Darion Mograine
+						["coord"] = { 51.6, 50.0, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 39799, -- Our Next Move
 					}),
 					q(38990, {	-- The Call of Icecrown [Frost]
 						["classes"] = { DEATHKNIGHT },
