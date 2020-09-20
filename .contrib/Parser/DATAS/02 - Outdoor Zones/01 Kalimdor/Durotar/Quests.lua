@@ -567,6 +567,7 @@ _.Zones =
 				}),
 				q(42484, {	-- The Firstborn Rises
 					["provider"] = { "n", 107554 },	-- Thassarian
+					["coord"] = { 47.3, 17.7, 1 },
 					["classes"] = { DEATHKNIGHT },
 				}),
 				q(2936, {	-- The Spider God

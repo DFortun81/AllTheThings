@@ -442,6 +442,12 @@ _.Zones =
 						{ "n", 103741 },	-- Courier Larkspur
 					},
 				}),
+				q(44550, {	-- Called to Acherus
+					["provider"] = { "n", 114282 }, -- Dread Commander Thalanor
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 42449, -- Return of the Four Horseman
+					["isBreadcrumb"] = true,
+				}),
 				q(48021, {	-- Chromie
 					["providers"] = {
 						{ "n", 90417 },	-- Archmage Khadgar

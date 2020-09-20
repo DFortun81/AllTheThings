@@ -148,6 +148,15 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 39799, -- Our Next Move
 					}),
+					q(43264, {	-- Rise, Champions
+						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
+						["coord"] = { 51.6, 50.0, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuests"] = {
+							42484, -- The Firstborn Rises
+							44550, -- Called to Acherus [Breadcrumb]
+						},
+					}),
 					q(38990, {	-- The Call of Icecrown [Frost]
 						["classes"] = { DEATHKNIGHT },
 						["g"] = {
