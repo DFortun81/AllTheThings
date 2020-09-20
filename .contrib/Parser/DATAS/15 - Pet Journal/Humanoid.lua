@@ -16,12 +16,15 @@ _.PetJournal =
 		p(1343),			-- Bonkers
 		p(2457),			-- Coldlight Surfrunner
 		p(1149),			-- Corefire Imp
+		p(2899),			-- Court Messenger
 		p(1688),			-- Crusher
 		un(20, p(225)),		-- Curious Oracle Hatchling
 		un(20, p(226)),		-- Curious Wolvar Hatchling
 		p(2850),			-- Cursed Dune Watcher
+		p(2900),			-- Dal
 		p(1329),			-- Dandelion Frolicker
 		un(REMOVED_FROM_GAME, p(294)),		-- Deathy
+		p(2967),			-- Dredger Butler
 		p(1979, {			-- Dutiful Gruntling
 			["races"] = HORDE_ONLY,
 		}),
@@ -114,6 +117,7 @@ _.PetJournal =
 		p(1073),			-- Terky
 		p(2469),			-- Thistlebrush Bud
 		p(1803),			-- Thistleleaf Adventurer
+		p(2901),			-- Trapped Stonefiend
 		un(REMOVED_FROM_GAME, p(1365)),		-- Treasure Goblin
 		p(2022),			-- Tylarr Gronnden
 		p(2136), 			-- Uuna
