@@ -17,7 +17,7 @@ _.Zones =
 					q(29078, {	-- Beating Them Back!
 						["provider"] = { "n", 197 },	-- Marshal McBrideMarshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = exclude(HUMAN, ALLIANCE_ONLY),
+						["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 					}),
 					q(28767, {	-- Beating Them Back!
 						["provider"] = { "n", 197 },	-- Marshal McBride
@@ -64,7 +64,7 @@ _.Zones =
 					q(26389, {	-- Blackrock Invasion
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
 						["sourceQuests"] = {
 							28819,	-- The Rear is Clear (human paladin)
 							28822,	-- The Rear is Clear (human warlock)
@@ -80,13 +80,13 @@ _.Zones =
 					q(26390, {	-- Ending the Invasion!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
 						["sourceQuest"] = 26389,	-- Blackrock Invasion
 					}),
 					q(26391, {	-- Extinguishing Hope
 						["provider"] = { "n", 9296 },	-- Milly Osworth
 						["coord"] = { 33.3, 54.6, 425 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
 						["sourceQuests"] = {
 							28819,	-- The Rear is Clear (human paladin)
 							28822,	-- The Rear is Clear (human warlock)
@@ -151,13 +151,13 @@ _.Zones =
 					q(29082, {	-- Fear No Evil
 						["provider"] = { "n", 951 },	-- Brother Paxton
 						["coord"] = { 35.3, 37.9, 425 },
-						["races"] = exclude({ HUMAN, KULTIRAN }, ALLIANCE_ONLY),
+						["races"] = exclude({ HUMAN, KULTIRAN, MECHAGNOME }, ALLIANCE_ONLY),
 						["sourceQuest"] = 29080,	-- Join the Battle!
 					}),
 					q(29080, {	-- Join the Battle!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = exclude(HUMAN, ALLIANCE_ONLY),
+						["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						["sourceQuest"] = 29079,	-- Lions for Lambs
 					}),
 					q(28789, {	-- Join the Battle!
@@ -254,7 +254,7 @@ _.Zones =
 					q(29079, {	-- Lions for Lambs
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = exclude(HUMAN, ALLIANCE_ONLY),
+						["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						["sourceQuest"] = 29078,	-- Beating Them Back!
 					}),
 					q(31140, {	-- Lions for Lambs
@@ -281,7 +281,7 @@ _.Zones =
 					q(54,    {	-- Report to Goldshire
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
 						["sourceQuest"] = 26390,	-- Ending the Invasion
 					}),
 					q(346,   {	-- Return to Kristoff
@@ -352,7 +352,7 @@ _.Zones =
 					q(29083, {	-- The Rear is Clear
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = exclude(HUMAN, ALLIANCE_ONLY),
+						["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						["sourceQuest"] = 29081,	-- They Sent Assassin
 					}),
 					q(28792, {	-- They Sent Assassins
@@ -414,7 +414,7 @@ _.Zones =
 					q(29081, {	-- They Sent Assassins
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = exclude(HUMAN, ALLIANCE_ONLY),
+						["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						["sourceQuest"] = 29080,	-- Join the Battle!
 					}),
 				}),
