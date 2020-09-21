@@ -11,6 +11,14 @@ _.Zones =
 					["coord"] = { 44.0, 39.8, 1536 },
 					["questID"] = 60368,
 				}),
+				o(348521, {	-- Strange Growth
+					["coord"] = { 55.9, 38.9, 1536 },
+					["g"] = {
+						i(182607, {	-- Hairy Egg
+							i(182606),	-- Bloodlouse Larva
+						}),
+					},
+				}),
 			}),
 		}),
 	}),

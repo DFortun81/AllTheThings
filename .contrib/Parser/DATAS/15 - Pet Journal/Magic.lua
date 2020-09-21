@@ -10,6 +10,7 @@ _.PetJournal =
 		p(2842),	-- Anomalus
 		p(1160),	-- Arcane Eye
 		p(2131),	-- Arcane Gorger
+		p(3054),	-- Archivist's Quill
 		p(2439), 	-- Azerite Puddle
 		p(2352),	-- Baa'l
 		p(2582),	-- Baoh-Xi
@@ -67,7 +68,6 @@ _.PetJournal =
 		p(1243),	-- Living Fluid
 		p(1159),	-- Lofty Libram
 		p(341),		-- Lunar Lantern
-		p(3036),	-- Projection of Remornia
 		p(292),		-- Magic Lamp
 		p(2158),	-- Mailemental
 		p(136),		-- Mana Wyrmling
@@ -82,6 +82,8 @@ _.PetJournal =
 		p(547),		-- Nordrassil Wisp
 		p(530),		-- Oily Slimeling
 		un(REMOVED_FROM_GAME, p(240)),	-- Onyx Panther
+		p(2798),	-- Plagueborn Slime
+		p(3036),	-- Projection of Remornia
 		p(2844),	-- Reek
 		p(1958),	-- Sanctum Cub
 		p(846),		-- Sapphire Cub
@@ -89,6 +91,7 @@ _.PetJournal =
 		un(35, p(2062)),	-- Shadow
 		p(229),		-- Shimmering Wyrmling
 		p(2750),	-- Shrieker
+		p(2961),	-- Sludge Feeler
 		un(REMOVED_FROM_GAME, p(1127)),	-- Spectral Cub
 		p(1185),	-- Spectral Porcupette
 		un(10, p(242)),		-- Spectral Tiger Cub

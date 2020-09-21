@@ -10,6 +10,7 @@ _.PetJournal =
 		p(724),				-- Alpine Foxling
 		p(725),				-- Alpine Foxling Kit
 		un(35, p(1363)),	-- Alterac Brew-Pup
+		p(2911),			-- Amber Glitterwing(probably flying pet)
 		p(716),				-- Amethyst Spiderling
 		p(2122),			-- Antoran Bile Larva
 		p(558),				-- Arctic Fox Kit
@@ -31,10 +32,12 @@ _.PetJournal =
 		p(75),				-- Black Kingsnake
 		p(42),				-- Black Tabby Cat
 		p(1743),			-- Black-Footed Fox Kit
+		p(3013),			-- Bloodlouse Larva
 		p(2388),			-- Bloodfever Tarantula
 		p(2451),			-- Bloodstone Tunneler
 		p(1577),			-- Bloodthorn Hatchling
 		p(40),				-- Bombay Cat
+		p(2948),			-- Boneweave Hatchling
 		p(77),				-- Brown Snake
 		p(380),				-- Bucktooth Flapper
 		p(1726),			-- Burrow Spiderling
@@ -46,6 +49,7 @@ _.PetJournal =
 		p(2418),			-- Child of Jani
 		p(1662),			-- Cinder Pup
 		p(518),				-- Clefthoof Runt
+		p(2817),			-- Gloober, as G-huun
 		p(742),				-- Clouded Hedgehog
 		p(197),				-- Cobra Hatchling
 		p(562),				-- Coral Adder
@@ -73,7 +77,9 @@ _.PetJournal =
 		p(504),				-- Diemetradon Hatchling
 		p(2197),			-- Direhorn Hatchling
 		p(1205),			-- Direhorn Runt
+		p(2905),			-- Dodger
 		un(35, p(2623)),	-- Dottie
+		p(2909),			-- Downfeather Ragewing(possibly flying pet)
 		p(1952),			-- Dreadmaw
 		p(2406),			-- Drustvar Piglet
 		p(205),				-- Dun Morogh Cub
@@ -90,13 +96,16 @@ _.PetJournal =
 		p(714),				-- Feverbite Hatchling
 		p(529),				-- Fjord Worg Pup
 		p(1595),			-- Flat-Tooth Calf
+		p(2910),			-- Floofa
 		p(407),				-- Forest Spiderling
 		p(2121),			-- Fossorial Bile Larva
 		p(278),				-- Fox Kit
 		p(1542),			-- Frostwolf Pup
 		p(2432),			-- Fuzzy Creepling
+		p(2913),			-- Fuzzy Shimmermoth(possibly flying pet)
 		p(475),				-- Giraffe Calf
 		p(2711),			-- Golden Snorf
+		p(2920),			-- Gorm Needler(possibly flying pet)
 		p(571),				-- Grove Viper
 		p(1705),			-- Grumpy
 		p(2190),			-- Guardian Cobra Hatchling
@@ -169,6 +178,7 @@ _.PetJournal =
 		p(482),				-- Rock Viper
 		p(1749),			-- Rose Taipan
 		p(2847),			-- Rotbreath
+		p(3020),			-- Runelight Leaper
 		p(2661),			-- Rustyroot Snooter
 		p(491),				-- Sand Kitten
 		p(1692),			-- Savage Cub
@@ -199,6 +209,7 @@ _.PetJournal =
 		p(1763),			-- Spiketail Beaver
 		p(433),				-- Spiky Lizard
 		p(466),				-- Spiny Lizard
+		p(2914),			-- Starry Dreamfoal
 		p(2579),			-- Stoneclaw
 		p(432),				-- Stripe-Tailed Scorpid
 		p(1184),			-- Stunted Direhorn
@@ -218,6 +229,7 @@ _.PetJournal =
 		p(2529),			-- Thunder Lizard Runt
 		p(2412),			-- Tiny Direhorn
 		p(1236),			-- Tito
+		p(2924),			-- Tranquil Wader(probably flying pet)
 		p(2539, {			-- Trecker
 			["races"] = ALLIANCE_ONLY,
 		}),
@@ -238,6 +250,7 @@ _.PetJournal =
 		p(46),				-- White Kitten
 		p(2851),			-- Wicked Lurker
 		p(400),				-- Widow Spiderling
+		p(2915),			-- Willowbreeze
 		un(REMOVED_FROM_GAME, p(246)),		-- Wind Rider Cub
 		p(306),				-- Winterspring Cub
 		p(89),				-- Worg Pup

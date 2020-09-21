@@ -130,6 +130,7 @@ _.PetJournal =
 		p(568),		-- Silkbead Snail
 		un(REMOVED_FROM_GAME, p(171)),	-- Silver Pig
 		p(820),		-- Singing Cricket
+		p(3023),	-- Sir Reginald
 		p(397),		-- Skunk
 		p(2063),	-- Sneaky Marmot
 		p(640),		-- Snowshoe Hare

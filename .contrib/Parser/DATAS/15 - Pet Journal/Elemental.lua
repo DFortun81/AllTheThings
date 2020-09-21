@@ -44,6 +44,7 @@ _.PetJournal =
 		p(1430),	-- Forest Sproutling
 		p(2440),	-- Fozling
 		p(253),		-- Frigid Frostling
+		p(3016),	-- Fun Guss
 		p(2466),	-- Giggling Flame
 		p(1332),	-- Gooey Sha-ling
 		p(834),		-- Grinder
@@ -61,6 +62,7 @@ _.PetJournal =
 		p(199),		-- Kirin Tor Familiar
 		p(2468),	-- Laughing Stoneskin
 		p(423),		-- Lava Crab
+		p(3017),	-- Leafadore
 		un(35, p(297)),		-- Lil' Ragnaros
 		p(1177),	-- Living Sandling
 		p(337),		-- Lumpy
@@ -108,6 +110,7 @@ _.PetJournal =
 		p(117),		-- Tiny Snowman
 		p(445),		-- Tiny Twister
 		p(480),		-- Topaz Shale Hatchling
+		p(3018),	-- Trootie
 		p(2092), 	-- Unstable Tendril
 		p(855),		-- Venus
 		p(2870),	-- Wailing Lasher

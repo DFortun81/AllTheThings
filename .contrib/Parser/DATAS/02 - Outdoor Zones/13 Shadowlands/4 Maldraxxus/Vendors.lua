@@ -107,6 +107,53 @@ _.Zones =
 						}),
 					},
 				}),
+				n(159238, {	-- Atticus <Supplies & Acquisitions>
+					["coord"] = { 55.2, 68.2, 1536 },
+					["g"] = {
+						i(178535),	-- Suspicious Slime Shot
+						i(178546),	-- Questionable Meat Product
+						i(178547),	-- Questionable Fried Poultry
+						i(180726, {	-- Pale Acidmaw
+							["cost"] = { { "i", 178061, 500 } },
+						}),
+						i(181300, {	-- Pale Acidmaw
+							["cost"] = { { "i", 178061, 500 } },
+						}),
+						i(180726, {	-- Gruesome Flayedwing
+							["cost"] = { { "i", 178061, 500 } },
+						}),
+						i(181316, {	-- Silvertip Dredwing
+							["cost"] = { { "i", 178061, 500 } },
+						}),
+						i(181317, {	-- Dauntless Duskrunner
+							["cost"] = { { "i", 178061, 500 } },
+						}),
+						i(180603, {	-- Violet Dredwing Pup
+							["cost"] = { { "i", 178061, 350 } },
+						}),
+						i(180628, {	-- Pearlwing Heron
+							["cost"] = { { "i", 178061, 350 } },
+						}),
+						i(180639, {	-- Dusty Sporeflutterer
+							["cost"] = { { "i", 178061, 350 } },
+						}),
+						i(180814, {	-- Black Vulpin
+							["cost"] = { { "i", 178061, 350 } },
+						}),
+						i(180815, {	-- Pink Dragon Turtle
+							["cost"] = { { "i", 178061, 350 } },
+						}),
+						i(181168, {	-- Corpulent Bonetusk
+							["cost"] = { { "i", 178061, 350 } },
+						}),
+						i(181264, {	-- Plaguelouse Hatchling
+							["cost"] = { { "i", 178061, 350 } },
+						}),
+						i(181315, {	-- Bloodfeaster Spiderling
+							["cost"] = { { "i", 178061, 350 } },
+						}),
+					},
+				}),
 			}),
 		}),
 	}),

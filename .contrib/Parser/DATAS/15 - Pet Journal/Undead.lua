@@ -53,8 +53,10 @@ _.PetJournal =
 		p(1145),	-- Mr. Bigglesworth
 		p(2002), 	-- Naxxy
 		p(1954),	-- Nerubian Swarmer
+		p(2844),	-- Oonar's Arm
 		p(3046),	-- Putrid Geist
 		p(2080), 	-- Rattlejaw
+		p(3045),	-- Reanimated Plague
 		p(439),		-- Restless Shadeling
 		p(2199),	-- Restored Revenant
 		p(2394),	-- Returned Hatchling
@@ -72,6 +74,7 @@ _.PetJournal =
 		p(1629),	-- Stinkrot
 		p(1146),	-- Stitched Pup
 		p(1750),	-- Tiny Apparition
+		p(2962),	-- Toenail
 		p(1238),	-- Unborn Val'kyr
 		un(REMOVED_FROM_GAME, p(187)),	-- Vampiric Batling
 		p(2037),	-- Vilebrood Whelpling

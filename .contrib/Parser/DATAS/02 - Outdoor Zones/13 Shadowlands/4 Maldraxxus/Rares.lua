@@ -129,6 +129,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(6)),	-- Adventurer of Maldraxxus / Sister Chelicerae
+						i(181172),	-- Boneweave Hatchling
 					},
 				}),
 				n(168147, { -- Sabriel the Bonecleaver

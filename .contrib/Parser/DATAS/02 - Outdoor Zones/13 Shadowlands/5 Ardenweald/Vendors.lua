@@ -257,6 +257,117 @@ _.Zones =
 						}),
 					},
 				}),
+				n(174766, {	-- Cortinarius
+					["coords"] = {
+						{ 33.2, 36.4, 1565 },
+						{ 29.6, 34.8, 1565 },
+					},
+					["g"] = {
+						i(181303, {	-- Night Courtier's Branches
+							["cost"] = { { "c", 1813, 2500 } },
+						}),
+						i(181305, {	-- Faewoven Bulb
+							["cost"] = { { "c", 1813, 2500 } },
+						}),
+						i(180724, {	-- Enchanted Winterborn Runestag
+							["cost"] = { { "c", 1813, 5000 } },
+						}),
+						i(183801, {	-- Vibrant Flutterwing
+							["cost"] = { { "c", 1813, 5000 } },
+						}),
+						i(184118, {	-- Arsenal: Winterborn Weapons
+							["cost"] = { { "c", 1813, 8000 } },
+						}),
+						i(180638, {	-- Fuzzy Shimmermoth
+							["cost"] = { { "i", 163036, 250 } },
+						}),
+						i(182166, {	-- Ursine Soul
+							["cost"] = { { "c", 1813, 1500 } },
+						}),
+						i(182181, {	-- Tiger Soul
+							["cost"] = { { "c", 1813, 1500 } },
+						}),
+						i(182661, {	-- Fun Guss
+							["cost"] = { { "i", 163036, 250 } },
+						}),
+						i(182674, {	-- Sir Reginald
+							["cost"] = { { "i", 163036, 250 } },
+						}),
+					},
+				}),
+				n(163714, {	-- Master Clerk Salorn <Ampitheater Ticket Vendor>
+					["coord"] = { 43.0, 47.0, 1565 },
+					["g"] = {
+						i(181304, {	-- Winterwoven Branches
+							["cost"] = { { "c", 1813, 2500 } },
+						}),
+						i(180416, {	-- Mistcaller's Aria
+							["cost"] = 1000000,	-- 100g
+						}),
+						i(180417, {	-- Mistcaller's Ballad
+							["cost"] = 1000000,	-- 100g
+						}),
+						i(180418, {	-- Mistcaller's March
+							["cost"] = 1000000,	-- 100g
+						}),
+						i(180419, {	-- Mistcaller's Dirge
+							["cost"] = 1000000,	-- 100g
+						}),
+						i(180748, {	-- Silky Shimmermoth
+							["cost"] = { { "c", 1813, 5000 } },
+						}),
+						i(175069, {	-- Theater Ticket
+						--	["cost"] = { { "c", 1813, 2500 } },
+						}),
+						i(175095, {	-- Book of Tickets
+							--["cost"] = { { "c", 1813, 2500 } },
+						}),
+						i(180634, {	-- Gloober, as G'huun
+							["cost"] = { { "i", 163036, 250 } },
+						}),
+						i(182175, {	-- Moose Soul
+							["cost"] = { { "c", 1813, 1500 } },
+						}),
+						i(182662, {	-- Leafadore
+							["cost"] = { { "i", 163036, 250 } },
+						}),
+						i(183969, {	-- Theater Prop Kris
+							["cost"] = { { "c", 1813, 500 } },
+						}),
+					},
+				}),
+				n(162447, {	-- Spindlenose <Assistant Craftsmaster>
+					["coord"] = { 60.8, 54.2, 1565 },
+					["g"] = {
+						i(181308, {	-- Winterwoven Bulb
+							["cost"] = { { "c", 1813, 2500 } },
+						}),
+						i(181312, {	-- Winterwoven Pack
+							["cost"] = { { "c", 1813, 2500 } },
+						}),
+						i(180415, {	-- Winterborn Runestag
+							["cost"] = { { "c", 1813, 5000 } },
+						}),
+						i(183053, {	-- Umbral Scythehorn
+							["cost"] = { { "c", 1813, 5000 } },
+						}),
+						i(180636, {	-- Willowbreeze
+							["cost"] = { { "i", 163036, 250 } },
+						}),
+						i(182174, {	-- Leonine Soul
+							["cost"] = { { "c", 1813, 1500 } },
+						}),
+						i(182182, {	-- Lupine Soul
+							["cost"] = { { "c", 1813, 1500 } },
+						}),
+						i(182664, {	-- Stemmins
+							["cost"] = { { "i", 163036, 250 } },
+						}),
+						i(184117, {	-- Ensemble: Winterborn Warbark
+							["cost"] = { { "c", 1813, 10000 } },
+						}),
+					},
+				}),
 			}),
 		}),
 	}),

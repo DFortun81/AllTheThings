@@ -189,6 +189,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178764),	-- Plagueborne Shoulderguards
 							i(178774),	-- Muckwallow Stompers
 							i(178769),	-- Infinitely Divisible Ooze
+							i(181271),	-- Sludge Feeler
 						},
 					}),
 				},

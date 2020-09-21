@@ -29,6 +29,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14309, crit(7)),	-- Adventurer of Ardenweald / Deifir the Untamed
+						i(180631),	-- Gorm Needler
 					},
 				}),
 				n(166145, {	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>

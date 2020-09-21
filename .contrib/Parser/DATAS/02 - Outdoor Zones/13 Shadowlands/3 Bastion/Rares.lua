@@ -62,6 +62,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14307, crit(13)),	-- Adventurer of Bastion / Cloudfeather Guardian
+						i(180812),	-- Golden Teroclaw
 					},
 				}),
 				n(161530, { -- Cloudtail
