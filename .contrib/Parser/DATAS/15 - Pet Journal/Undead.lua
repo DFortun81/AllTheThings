@@ -4,6 +4,7 @@
 _.PetJournal =
 {
 	pa(242, { 	-- Undead
+		p(2958),	-- Backbone
 		p(2456),	-- Barnaby
 		p(2408),	-- Bilefang Skitter
 		p(1965),	-- Blightbreath
@@ -16,6 +17,7 @@ _.PetJournal =
 		p(2767),	-- Burnout
 		p(2455),	-- Captain Nibs
 		p(3025),	-- Carpal
+		p(2950),	-- Clutch
 		p(264),		-- Crawling Claw
 		p(321),		-- Creepy Crate
 		p(2749),	-- Crypt Fiend
@@ -69,6 +71,7 @@ _.PetJournal =
 		p(2553),	-- Rotting Ghoul
 		p(538),		-- Scourged Whelpling
 		p(2042),	-- Scraps
+		p(2957),	-- Writhing Spine
 		p(218),		-- Sen'jin Fetish
 		p(2189),	-- Smoochums
 		p(1574),	-- Son of Sethe

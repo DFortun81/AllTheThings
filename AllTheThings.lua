@@ -4505,6 +4505,10 @@ end
 		[55348] = 170061,	-- Rustbolt // Supplies from the Rustbolt Resistance
 		[58096] = 174483,	-- Rajani // Supplies from the Rajani
 		[58097] = 174484,	-- Uldum Accord // Supplies from the Uldum Accord
+		[61095] = 180646,	-- Undying Army // Supplies from The Undying Army
+		[61098] = 180649,	-- Wild Hunt // Supplies from The Wild Hunt
+		[61100] = 180648,	-- Court of Harvesters // Supplies from the Court of Harvesters
+		[61097] = 180647,	-- The Ascended // Supplies from The Ascended
 	};
 	hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
 		-- Let's make sure the user isn't in combat and if they are do they have In Combat turned on.  Finally check to see if Tootltips are turned on.

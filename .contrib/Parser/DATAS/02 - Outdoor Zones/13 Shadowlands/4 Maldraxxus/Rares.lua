@@ -148,6 +148,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(2)),	-- Adventurer of Maldraxxus / Scunner
+						i(181267),	-- Writhing Spine
 					},
 				}),
 				n(162528, { -- Smorgas the Feaster
@@ -156,6 +157,8 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(11)),	-- Adventurer of Maldraxxus / Smorgas the Feaster
+						i(181265),	-- Corpselouse Hatchling
+						i(181266),	-- Bloodlouse Hatchling
 					},
 				}),
 				n(162586, { -- Tahonta

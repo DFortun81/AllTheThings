@@ -7,6 +7,13 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(-34,  {	-- World Quests
+				q(60655, {	-- A Stolen Stone Fiend
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(183859),	-- Dal's Courier Badge
+					},
+				}),
 				q(58144, {	-- Battered and Bruised
 					["isWorldQuest"] = true,
 					["lvl"] = 60,

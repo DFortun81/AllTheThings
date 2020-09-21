@@ -1,0 +1,79 @@
+unsourced pet items
+-- already in ATT pet journal
+i(183395)	-- Projection of Remornia
+i(180637)	-- Starry Dreamfoal
+i(180645)	-- Dodger
+i(181164)	-- Oonar's Arm
+i(182671)	-- Runelight Leaper
+i(182683)	-- Dredger Butler's Contract(probably Temel vendor)
+i(180627)	-- Tranquil Wader
+i(183107)	-- Pile of Ashen Dust(Ashen Amalaganation drop)
+i(180629)	-- Thumbbiter
+i(181282)	-- Mu'dud(profession abom stitching)
+i(182672)	-- Misty Leaper(pet battle arden)
+i(175114)	-- Renny
+i(180602)	-- Crimson Dredwing Pup(dredbats in raven)
+i(181171)	-- Luminous Webspinner(cache of eyes in mald)
+i(180589)	-- Soullocked Sinstone(hidden crypt in raven)
+i(180601)	-- Stonewing Dredwing Pup(court of harvesters tribute)
+i(180603)	-- Violet Dredwing Pup(Rendle and Cudgelface hastily wrapped gift)
+i(180632)	-- Gorm Rootstinger(pet battle arden)
+i(180872)	-- Spirited Skyfoal(adventurers shadowlands)
+i(181170)	-- Pernicious Bonetusk(adventureres shadowlands)
+i(181173)	-- Skittering Venomspitter
+i(181259)	-- Clutch(mald)
+i(181268)	-- Backbone(abom stitching)
+i(183714)	-- Swamp Reed(raven)
+i(183855)	-- Stony's Infused Ruby(venthyr, repaired mirror in raven)
+i()
+
+
+
+
+
+-- not in journal
+i(180208)	-- PHA7-YNX(sourced)
+i(180859)	-- White Vulpin
+i(183117)	-- Severs
+i(180812)	-- Golden Teroclaw(sourced)
+i(183853)	-- Baby Sinfall Screecher
+i(180857)	-- Golden Vulpin
+i(183192)	-- Frenzied Mawrat
+i(180814)	-- Black Vulpin(sourced)
+i(180815)	-- Pink Dragon Turtle
+i(180840)	-- Pink Glimmerfly
+i(180860)	-- Orange Vulpin
+i(180861)	-- Red Vulpin
+i(180867)	-- Silver Crane
+i(183193)	-- Contained Ashen Chomper
+i(183195)	-- Torghast Lurker
+i(183407)	-- Contained Essence of Dread
+i(183409)	-- Decaying Mawrat
+i(180813)	-- Silver Teroclaw
+i(180837)	-- Blue Glimmerfly
+i(180838)	-- Blue Etherwyrm
+i(180839)	-- Dark Glimmerfly
+i(180841)	-- Olive Dragon Turtle
+i(180856)	-- White Dragon Turtle
+i(180866)	-- Golden Crane
+i(180869)	-- Purple Crane
+i(180871)	-- Indigo
+i(181262)	-- Bubbling Pustule
+i(183115)	-- Torghast Roach
+i(183116)	-- Phantasmal Roach
+i(183191)	-- Maw Crawler
+i(183194)	-- Maw Stalker
+i(183408)	-- Deathsworn Cockroach
+i(183410)	-- Sharpclaw
+i()
+i()
+i()
+i()
+i()
+i()
+i()
+i()
+i()
+i()
+i()
+i()

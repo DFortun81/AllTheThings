@@ -103,6 +103,7 @@ _.PetJournal =
 		un(10, p(242)),		-- Spectral Tiger Cub
 		p(1969),	-- Stardust
 		p(2393),	-- Sticky Oozeling
+		p(2959),	-- Suspended Corpse
 		p(1478),	-- Syd the Squid
 		p(2435),	-- Teeny Titan Orb
 		p(251),		-- Toxic Wasteling

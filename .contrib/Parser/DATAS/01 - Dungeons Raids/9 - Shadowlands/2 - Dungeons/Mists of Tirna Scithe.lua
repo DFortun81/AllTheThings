@@ -162,6 +162,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178699),	-- Sapgorger Belt
 							i(178703),	-- Hiveswarm Bracers
 							i(178701),	-- Gormshell Greaves
+							i(183623),	-- Spinemaw Larva(not confirmed mythic only)
 						},
 					}),
 				},

@@ -136,6 +136,7 @@ _.PetJournal =
 		p(2063),	-- Sneaky Marmot
 		p(640),		-- Snowshoe Hare
 		p(72),		-- Snowshoe Rabbit
+		p(3044),	-- Spinemaw Larva
 		p(2653),	-- Spireshell Snail
 		p(200),		-- Spring Rabbit
 		p(379),		-- Squirrel

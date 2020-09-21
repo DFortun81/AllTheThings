@@ -7,17 +7,16 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
 			n(-169, {	-- Emissary Quests
-				--[[q(180649, {	-- Supplies from The Wild Hunt
-					--["provider"] = { "n", 134345 },	-- Collector Kojo
+				q(61097, {	-- Supplies from The Ascended
+					["provider"] = { "n", 160470 },	-- Adjutant Nikos <Quartermaster>
 					["lvl"] = 60,
-					--["coord"] = { 71.51, 30.35, 862 },
+					["coord"] = { 52.2, 47.0, 1533 },
 					["repeatable"] = true,
 					["g"] = {
-						i(180649, {	-- Wild Hunt Supplies
-							i(180635),	-- Hungry Burrower
+						i(180647, {	-- Ascended Supplies
 						}),
 					},
-				}),]]
+				}),
 			}),
 		}),
 	}),

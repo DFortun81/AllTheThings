@@ -7,10 +7,10 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1565, {	-- Ardenweald
 			n(-169, {	-- Emissary Quests
-				q(180649, {	-- Supplies from The Wild Hunt
-					--["provider"] = { "n", 134345 },	-- Collector Kojo
+				q(61098, {	-- Supplies from The Wild Hunt
+					["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
 					["lvl"] = 60,
-					--["coord"] = { 71.51, 30.35, 862 },
+					["coord"] = { 48.4, 50.4, 1565 },
 					["repeatable"] = true,
 					["g"] = {
 						i(180649, {	-- Wild Hunt Supplies

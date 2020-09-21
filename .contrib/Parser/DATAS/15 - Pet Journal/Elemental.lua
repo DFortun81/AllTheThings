@@ -121,6 +121,7 @@ _.PetJournal =
 		p(2870),	-- Wailing Lasher
 		p(535),		-- Water Waveling
 		p(1959),	-- Winter Rageling
+		p(3015),	-- Withering Mire Creeper
 		p(220),		-- Withers
 		p(2084), 	-- Zephyrian Prince
 	}),
