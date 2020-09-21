@@ -37,6 +37,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(17)),	-- Adventurer of Maldraxxus / Deadly Dapperling
+						i(181263),	-- Shy Melvin
 					},
 				}),
 				n(162797, {	-- Deepscar <Pit Hound>
@@ -121,6 +122,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(5)),	-- Adventurer of Maldraxxus / Ravenomous
+						i(181283),	-- Foulwing Hatchling
 					},
 				}),
 				n(159886, { -- Sister Chelicerae

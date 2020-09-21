@@ -12,12 +12,15 @@ _.PetJournal =
 		p(2035),	-- Bloodbrood Whelpling
 		p(1600),	-- Bone Serpent
 		p(1963),	-- Boneshard
+		p(2894),	-- Burdened Soul
 		p(2767),	-- Burnout
 		p(2455),	-- Captain Nibs
+		p(3025),	-- Carpal
 		p(264),		-- Crawling Claw
 		p(321),		-- Creepy Crate
 		p(2749),	-- Crypt Fiend
 		p(1521),	-- Cursed Birman
+		p(2960),	-- Decaying Oozewalker
 		p(2546),	-- Detective Ray
 		p(2710),	-- Drowned Hatchling
 		p(1967),	-- Drudge Ghoul
@@ -47,10 +50,12 @@ _.PetJournal =
 		p(2532),	-- Leper Rat
 		un(10, p(249)),		-- Lil' K.T.
 		p(458),		-- Lost of Lordaeron
+		p(2895),	-- Lost Soul
 		p(1351),	-- Macabre Marionette
 		p(2202), 	-- Miimii
 		p(2638),	-- Minimancer
 		p(1145),	-- Mr. Bigglesworth
+		p(2963),	-- Mu'dud
 		p(2002), 	-- Naxxy
 		p(1954),	-- Nerubian Swarmer
 		p(2844),	-- Oonar's Arm

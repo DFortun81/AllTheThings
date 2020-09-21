@@ -388,6 +388,57 @@ _.Zones =
 						}),
 					},
 				}),
+				n(156218, {	-- Deadfoot <General Goods, Repairs, & Boots>
+					["coord"] = { 48.6, 68.6, 1525 },
+					["g"] = {
+						i(183416, {	-- Mail Courier's Left Runner
+							["cost"] = { { "c", 1820, 10 } },
+							["g"] = {
+								spell(341505, {
+									i(182719, {	-- Mail Courier's Runners
+										["cost"] = { 
+											{ "i", 183416, 1 },	-- Mail Courier's Left Runner
+											{ "i", 183417, 1 },	-- Mail Courier's Right Runner
+										},
+									}),
+								}),
+							},
+						}),
+						i(183419, {	-- Hopebreaker's Left Boot
+							["cost"] = { { "c", 1820, 10 } },
+							["g"] = {
+								i(183418, {	-- Hopebreaker's Boots
+									["cost"] = { 
+										{ "i", 183419, 1 },	-- Hopebreaker's Left Boot
+										{ "i", 183420, 1 },	-- Hopebreaker's Right Boot
+									},
+								}),
+							},
+						}),
+						i(183422, {	-- Stone Legion Left Sabaton
+							["cost"] = { { "c", 1820, 10 } },
+							["g"] = {
+								i(183421, {	-- Stone Legion Sabatons
+									["cost"] = { 
+										{ "i", 183422, 1 },	-- Stone Legion Left Sabaton
+										{ "i", 183423, 1 },	-- Stone Legion Right Sabaton
+									},
+								}),
+							},
+						}),
+						i(183427, {	-- Researcher's Left Slipper
+							["cost"] = { { "c", 1820, 10 } },
+							["g"] = {
+								i(183425, {	-- Researcher's Slippers
+									["cost"] = { 
+										{ "i", 183427, 1 },	-- Researcher's Left Slipper
+										{ "i", 183430, 1 },	-- Researcher's Right Slipper
+									},
+								}),
+							},
+						}),
+					},
+				}),
 			}),
 		}),
 	}),

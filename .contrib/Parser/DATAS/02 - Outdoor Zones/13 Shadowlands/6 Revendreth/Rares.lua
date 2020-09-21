@@ -21,6 +21,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(13)),	-- Adventurer of Revendreth / Amalgamation of Light
+						i(180586),	-- Lightbinders
 					},
 				}),
 				n(170434, {	-- Amalgamation of Sin
@@ -45,6 +46,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(20)),	-- Adventurer of Revendreth / Bog Beast
+						i(180588),	-- Bucket of Primordial Sludge
 					},
 				}),
 				n(165206, {	-- Endlurker
@@ -133,6 +135,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(11)),	-- Adventurer of Revendreth / Leeched Soul
+						i(180585),	-- Bottled Up Emotions
 					},
 				}),
 				n(161891, {	-- Lord Mortegore
@@ -149,6 +152,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(24)),	-- Adventurer of Revendreth / Manifestation of Wrath
+						i(180591),	-- Vial of Roiling Emotions
 					},
 				}),
 				n(160675, {	-- Scrivener Lenua
@@ -157,6 +161,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(2)),	-- Adventurer of Revendreth / Scrivener Lenua
+						i(180587),	-- Animated Tome
 					},
 				}),
 				n(162481, {	-- Sinstone Hoarder
@@ -205,6 +210,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(4)),	-- Adventurer of Revendreth / Tomb Burster <Dread Crawler Queen>
+						i(180584),	-- Rose Spiderling
 					},
 				}),
 				n(160821, {	-- Worldedge Gorger

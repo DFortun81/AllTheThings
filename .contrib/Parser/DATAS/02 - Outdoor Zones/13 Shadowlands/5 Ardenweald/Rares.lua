@@ -86,6 +86,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14309, crit(25)),	-- Adventurer of Ardenweald / Gormbore
+						i(183196),	-- Lavender Nibbler
 					},
 				}),
 				n(164107, {	-- Gormtamer Tizo
@@ -118,6 +119,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14309, crit(3)),	-- Adventurer of Ardenweald / Macabre
+						i(180644),	-- Rocky
 					},
 				}),
 				n(166138, {	-- Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
@@ -166,6 +168,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14309, crit(8)),	-- Adventurer of Ardenweald / Old Ardeite
+						i(180643),	-- Chirpy Valeshrieker
 					},
 				}),
 				n(167726, {	-- Rootwrithe

@@ -14,6 +14,12 @@ _.Zones =
 						i(182744),	-- Ornate Belt Buckle
 					},
 				}),
+				--o(??????, {	-- Bleakwood Chest
+				--	["coord"] = { 32.0, 19.0, 1525 },
+				--	["g"] = {
+						i(180592),	-- Trapped Stonefiend
+				--	},
+				--}),
 				o(349565, {	-- Chest of Envious Desires
 					["coord"] = { 69.3, 77.9, 1525 },
 					["questID"] = 59833,

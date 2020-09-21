@@ -92,6 +92,15 @@ _.Zones =
 						}),
 						i(183112, {	-- Animated Radius
 							["cost"] = { { "i", 163036, 250 } },
+							["g"] = {
+								i(183114, {	-- Carpal
+									["cost"] = { 
+										{ "i", 183112, 1 },	-- Animated Radius
+										{ "i", 183111, 1 },	-- Animated Ulna
+										{ "i", 183113, 1 },	-- Flexing Phalanges
+									},
+								}),
+							},
 						}),
 						i(183189, {	-- Illusion: Undying Spirit
 							["cost"] = 12500000, -- 1,250g

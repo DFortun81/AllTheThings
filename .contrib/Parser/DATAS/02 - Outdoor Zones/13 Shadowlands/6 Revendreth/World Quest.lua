@@ -47,6 +47,16 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
+				q(60654, {	-- Swarming Souls
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(180590),	-- Lost Soul
+						n(170048, {	-- Manifestation of Wrath
+							i(180591),	-- Vial of Roiling Emotions
+						}),
+					},
+				}),
 				q(59852, {	-- Tea Tales: Gubbins and Tubbins
 					["isWorldQuest"] = true,
 					["lvl"] = 60,

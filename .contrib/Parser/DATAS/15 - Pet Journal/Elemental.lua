@@ -14,11 +14,13 @@ _.PetJournal =
 		p(2086), 	-- Blazehound
 		p(1517),	-- Blazing Cindercrawler
 		un(35, p(1248)),	-- Blossoming Ancient
+		p(2892),	-- Bound Lightspawn
 		p(2082), 	-- Bound Stream
 		p(2706),	-- Brinestone Algan
 		p(1777),	-- Broot
 		p(2707),	-- Budding Algan
 		p(2428),	-- Carnivorous Lasher
+		p(3024),	-- Char
 		un(35, p(1117)),	-- Cinder Kitten
 		p(2087), 	-- Cinderweb Recluse
 		p(2708),	-- Coral Lashling
@@ -35,6 +37,7 @@ _.PetJournal =
 		p(1179),	-- Electrified Razortooth
 		p(293),		-- Elementium Geode
 		p(837),		-- Emerald Shale Hatchling
+		p(2897),	-- Emotional Leecher
 		p(2548),	-- Everburning Treant
 		p(1998),	-- Everliving Spore
 		p(519),		-- Fel Flame
@@ -82,6 +85,7 @@ _.PetJournal =
 		p(175),		-- Phoenix Hatchling
 		p(2465),	-- Playful Frostkin
 		p(2590),	-- Ravenous Prideling
+		p(2898),	-- Raw Emotion
 		p(1328),	-- Ruby Droplet
 		p(460),		-- Ruby Sapling
 		p(2703),	-- Sandkeep
@@ -95,6 +99,7 @@ _.PetJournal =
 		p(1569),	-- Soul of the Forge
 		p(128),		-- Spirit of Summer
 		p(2584),	-- Spirit of the Spring
+		p(3019),	-- Stemmins
 		p(1917),	-- Stormstruck Beaver
 		p(2702),	-- Stormwrath
 		p(1518),	-- Stout Alemental

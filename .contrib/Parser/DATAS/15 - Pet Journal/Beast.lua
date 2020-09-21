@@ -34,6 +34,7 @@ _.PetJournal =
 		p(1743),			-- Black-Footed Fox Kit
 		p(3013),			-- Bloodlouse Larva
 		p(2388),			-- Bloodfever Tarantula
+		p(2965),			-- Bloodfeaster Spiderling
 		p(2451),			-- Bloodstone Tunneler
 		p(1577),			-- Bloodthorn Hatchling
 		p(40),				-- Bombay Cat
@@ -47,6 +48,7 @@ _.PetJournal =
 		p(1999),			-- Cavern Moccasin
 		p(474),				-- Cheetah Cub
 		p(2418),			-- Child of Jani
+		p(2908),			-- Chirpy Valeshrieker(probably flying pet)
 		p(1662),			-- Cinder Pup
 		p(518),				-- Clefthoof Runt
 		p(2817),			-- Gloober, as G-huun
@@ -57,6 +59,7 @@ _.PetJournal =
 		p(1890),			-- Corgi Pup
 		p(1929),			-- Corgnelius
 		p(41),				-- Cornish Rex Cat
+		p(2945),			-- Corpulent Bonetusk
 		p(2448),			-- Craghoof Kid
 		p(78),				-- Crimson Snake
 		p(745),				-- Crunchy Scorpion
@@ -86,6 +89,7 @@ _.PetJournal =
 		p(207),				-- Durotar Scorpion
 		p(396),				-- Dusk Spiderling
 		p(2662),			-- Duskytooth Snooter
+		p(2912),			-- Dusty Sporeflutterer(probably flying pet)
 		p(1181),			-- Elder Python
 		p(631),				-- Emerald Boa
 		p(1760),			-- Fel Piglet
@@ -105,12 +109,16 @@ _.PetJournal =
 		p(2913),			-- Fuzzy Shimmermoth(possibly flying pet)
 		p(475),				-- Giraffe Calf
 		p(2711),			-- Golden Snorf
+		p(2921),			-- Gorm Harrier(possibly flying pet)
 		p(2920),			-- Gorm Needler(possibly flying pet)
+		p(2919),			-- Gorm Rootstinger(possibly flying pet)
 		p(571),				-- Grove Viper
+		p(2918),			-- Grubby
 		p(1705),			-- Grumpy
 		p(2190),			-- Guardian Cobra Hatchling
 		p(234),				-- Gundrak Hatchling
 		p(851),				-- Horned Lizard
+		p(2916),			-- Hungry Burrower
 		p(317),				-- Hyjal Bear Cub
 		p(1457),			-- Icespine Hatchling
 		p(2089),			-- Infernal Pyreclaw
@@ -133,6 +141,7 @@ _.PetJournal =
 		p(408),				-- Lizard Hatchling
 		p(2558),			-- Lord Woofington
 		p(1661),			-- Lost Netherpup
+		p(2847),			-- Luminous Webspinner
 		p(1922),			-- Lurking Owl Kitten
 		p(450),				-- Maggot
 		p(1446),			-- Meadowstomper Calf
@@ -155,8 +164,10 @@ _.PetJournal =
 		un(REMOVED_FROM_GAME, p(92)),		-- Panda Cub
 		p(301),				-- Panther Cub
 		p(1615),			-- Parched Lizard
+		p(2923),			-- Pearlwing Heron(probably flying pet)
 		p(1663),			-- Periwinkle Calf
 		p(726),				-- Plains Monitor
+		p(2954),			-- Plaguelouse Hatchling
 		p(2188),			-- Poda
 		un(REMOVED_FROM_GAME, p(124)),		-- Poley
 		p(2849),			-- Pygmy Camel
@@ -170,12 +181,15 @@ _.PetJournal =
 		p(239),				-- Razzashi Hatchling
 		p(1176),			-- Red Panda
 		p(2525),			-- Redridge Tarantula
+		p(2878),			-- Renny
 		p(1756),			-- Ridgeback Piglet
 		p(2776, {			-- Rikki
 			["u"] = REMOVED_FROM_GAME,
 		}),
 		p(1453),			-- River Calf
 		p(482),				-- Rock Viper
+		p(2907),			-- Rocky
+		p(2891),			-- Rose Spiderling
 		p(1749),			-- Rose Taipan
 		p(2847),			-- Rotbreath
 		p(3020),			-- Runelight Leaper
@@ -226,6 +240,7 @@ _.PetJournal =
 		p(1759),			-- Thaumaturgical Piglet
 		p(1456),			-- Thicket Skitterer
 		p(1810),			-- Thornclaw Broodling
+		p(2922),			-- Thumbbiter
 		p(2529),			-- Thunder Lizard Runt
 		p(2412),			-- Tiny Direhorn
 		p(1236),			-- Tito

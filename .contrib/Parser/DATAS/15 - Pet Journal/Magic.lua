@@ -7,6 +7,7 @@ _.PetJournal =
 	pa(243, { 	-- Magic
 		p(1624),	-- Abyssius
 		p(2420),	-- Accursed Hexxer
+		p(2893),	-- Animated Tome
 		p(2842),	-- Anomalus
 		p(1160),	-- Arcane Eye
 		p(2131),	-- Arcane Gorger
@@ -25,6 +26,7 @@ _.PetJournal =
 		p(1962),	-- Creeping Tentacle
 		p(2115), 	-- Cross Gazer
 		p(1063),	-- Darkmoon Eye
+		p(3041),	-- Death Seeker
 		p(114),		-- Disgusting Oozeling
 		p(2721),	-- Echoing Oozeling
 		p(1774),	-- Eidritch Manafiend
@@ -67,6 +69,7 @@ _.PetJournal =
 		p(2589),	-- Living Amber
 		p(1243),	-- Living Fluid
 		p(1159),	-- Lofty Libram
+		p(3008),	-- Lost Quill
 		p(341),		-- Lunar Lantern
 		p(292),		-- Magic Lamp
 		p(2158),	-- Mailemental
@@ -74,6 +77,7 @@ _.PetJournal =
 		p(500),		-- Minfernal
 		un(REMOVED_FROM_GAME, p(93)),	-- Mini Diablo
 		p(1156),	-- Mini Mindslayer
+		p(3021),	-- Misty Leaper(critter or beast pet?)
 		p(2832),	-- Muar
 		p(1604),	-- Nethaera's Light
 		p(1228),	-- Netherspace Abyssal
@@ -83,6 +87,7 @@ _.PetJournal =
 		p(530),		-- Oily Slimeling
 		un(REMOVED_FROM_GAME, p(240)),	-- Onyx Panther
 		p(2798),	-- Plagueborn Slime
+		p(2896),	-- Primordial Sludge
 		p(3036),	-- Projection of Remornia
 		p(2844),	-- Reek
 		p(1958),	-- Sanctum Cub
@@ -91,6 +96,7 @@ _.PetJournal =
 		un(35, p(2062)),	-- Shadow
 		p(229),		-- Shimmering Wyrmling
 		p(2750),	-- Shrieker
+		p(2953),	-- Shy Melvin
 		p(2961),	-- Sludge Feeler
 		un(REMOVED_FROM_GAME, p(1127)),	-- Spectral Cub
 		p(1185),	-- Spectral Porcupette
