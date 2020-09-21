@@ -67,6 +67,7 @@ _.PetJournal =
 		p(1243),	-- Living Fluid
 		p(1159),	-- Lofty Libram
 		p(341),		-- Lunar Lantern
+		p(3036),	-- Projection of Remornia
 		p(292),		-- Magic Lamp
 		p(2158),	-- Mailemental
 		p(136),		-- Mana Wyrmling
