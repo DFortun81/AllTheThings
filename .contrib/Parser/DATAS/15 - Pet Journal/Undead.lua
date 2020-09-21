@@ -53,6 +53,7 @@ _.PetJournal =
 		p(1145),	-- Mr. Bigglesworth
 		p(2002), 	-- Naxxy
 		p(1954),	-- Nerubian Swarmer
+		p(3046),	-- Putrid Geist
 		p(2080), 	-- Rattlejaw
 		p(439),		-- Restless Shadeling
 		p(2199),	-- Restored Revenant
