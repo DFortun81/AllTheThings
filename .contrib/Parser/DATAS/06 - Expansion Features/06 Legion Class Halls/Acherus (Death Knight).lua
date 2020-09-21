@@ -21,6 +21,18 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 39757, -- Keeping Your Edge
 						["u"] = REMOVED_FROM_GAME,
 					}),
+					q(43573, {	-- Advancing the War Effort
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42824, -- The Zealot Rises
+					}),
+					q(43928, {	-- Aggregates of Anguish
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42824, -- The Zealot Rises
+					}),
 					q(42708, {	-- A Personal Request
 						["provider"] = { "n", 93456 }, -- Thassarian
 						["coord"] = { 56.0, 30.7, 648 },
@@ -96,6 +108,9 @@ _.ExpansionFeatures =
 					}),
 					q(44245, {	-- Champion: High Inquisitor Whitemane
 						["provider"] = { "n", 113481 },	-- High Inquisitor Whitemane
+						["coord"] = { 44.8, 72.9, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42824, -- The Zealot Rises
 						["g"] = {
 							follower(839),	-- High Inquisitor Whitemane
 						},
@@ -159,6 +174,12 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(838),	-- Thoras Trollbane
 						},
+					}),
+					q(43571, {	-- Darkheart Thicket: The Nightmare Lash
+						["provider"] = { "n", 111480 }, -- Salanar the Horseman
+						["coord"] = { 36.2, 56.1, 648 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 43571, -- Neltharion's Lair: Braid of the Underking
 					}),
 					q(44082, {	-- Knights of the Ebon Blade
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
@@ -248,11 +269,23 @@ _.ExpansionFeatures =
 							43268, -- Tech It Up A Notch
 						},
 					}),
+					q(42818, {	-- The Scarlet Assault
+						["provider"] = { "n", 93658 }, -- Highlord Darion Mograine
+						["coord"] = { 51.6, 50.0, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 43899, -- Steeds of the Damned
+					}),
 					q(43267, {	-- Troops in the Field
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
 						["coord"] = { 49.7, 51.3, 647 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 43266, -- Recruiting the Troops
+					}),
+					q(44286, {	-- Vault of the Wardens: A Masterpiece of Flesh
+						["provider"] = { "n", 93491 }, -- Lord Thorval
+						["coord"] = { 63.1, 69.4, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42824, -- The Zealot Rises
 					}),
 				}),
 				--[[
