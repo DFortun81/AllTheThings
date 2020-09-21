@@ -621,7 +621,10 @@ _.WorldEvents =
 					n(165840, {	-- Quartermaster Lungren
 						["coord"] = { 53.1, 76.9, 85 },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["maps"] = {
+							85,	-- Orgrimmar
+						},
+						["g"] = bubbleDown({["cost"] = { { "c", 1754, 15 } }}, {
 							i(183555),	-- PH Prologue Horde Cloth Cloak
 							i(183538),	-- PH Prologue Horde Cloth Feet
 							i(183576),	-- PH Prologue Horde Cloth Hand
@@ -655,11 +658,18 @@ _.WorldEvents =
 							i(183589),	-- PH Prologue Horde Plate Shoulder
 							i(183595),	-- PH Prologue Horde Plate Waist
 							i(183542),	-- PH Prologue Horde Plate Wrist
-						},
+							i(180454),	-- Anti-Doom Broom
+							i(183621, {	-- Putrid Geist
+								["cost"] = { { "c", 1754, 20 } },
+							}),
+						}),
 					}),
 					n(173791, {	-- Crusader Adevald Ironbeard
 						["coord"] = { 44.9, 44.5, 118 },
-						["g"] = {
+						["maps"] = {
+							118,	-- Icecrown
+						},
+						["g"] = bubbleDown({["cost"] = { { "c", 1754, 15 } }}, {
 							i(183555),	-- PH Prologue Horde Cloth Cloak
 							i(183538),	-- PH Prologue Horde Cloth Feet
 							i(183576),	-- PH Prologue Horde Cloth Hand
@@ -693,7 +703,59 @@ _.WorldEvents =
 							i(183589),	-- PH Prologue Horde Plate Shoulder
 							i(183595),	-- PH Prologue Horde Plate Waist
 							i(183542),	-- PH Prologue Horde Plate Wrist
+							i(180454),	-- Anti-Doom Broom
+							i(183621, {	-- Putrid Geist
+								["cost"] = { { "c", 1754, 20 } },
+							}),
+						}),
+					}),
+					n(165839, {	-- Quartermaster Renick <The Argent Crusade>
+						["coord"] = { 65.4, 76.8, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["maps"] = {
+							84,	-- Stormwind City
 						},
+						["g"] = bubbleDown({["cost"] = { { "c", 1754, 15 } }}, {
+							i(183524),	-- Argent Conscript's Drape
+							i(183525),	-- Argent Conscript's Robe
+							i(183526),	-- Argent Conscript's Tunic
+							i(183527),	-- Argent Conscript's Treads
+							i(183528),	-- Argent Conscript's Grips
+							i(183529),	-- Argent Conscript's Leggings
+							i(183530),	-- Argent Conscript's Pants
+							i(183531),	-- Argent Conscript's Leggings
+							i(183532),	-- Argent Conscript's Bracers
+							i(183533),	-- Argent Conscript's Wristclamps
+							i(183534),	-- Argent Conscript's Wriststraps
+							i(183545),	-- Argent Conscript's Mantle
+							i(183546),	-- Argent Conscript's Circlet
+							i(183547),	-- Argent Conscript's Gloves
+							i(183548),	-- Argent Conscript's Cord
+							i(183549),	-- Argent Conscript's Cloak
+							i(183551),	-- Argent Conscript's Lined Cloak
+							i(183556),	-- Argent Conscript's Pauldrons
+							i(183557),	-- Argent Conscript's Cowl
+							i(183558),	-- Argent Conscript's Boots
+							i(183559),	-- Argent Conscript's Belt
+							i(183560),	-- Argent Conscript's Shoulderguards
+							i(183561),	-- Argent Conscript's Helmet
+							i(183562),	-- Argent Conscript's Overgloves
+							i(183563),	-- Argent Conscript's Mail Shirt
+							i(183564),	-- Argent Conscript's Folded Boots
+							i(183565),	-- Argent Conscript's Cinch
+							i(183566),	-- Argent Conscript's Wristplates
+							i(183567),	-- Argent Conscript's Spaulders
+							i(183568),	-- Argent Conscript's Greaves
+							i(183569),	-- Argent Conscript's Greathelm
+							i(183570),	-- Argent Conscript's Gauntlets
+							i(183571),	-- Argent Conscript's Breastplate
+							i(183572),	-- Argent Conscript's Greaves
+							i(183573),	-- Argent Conscript's Buckle
+							i(180454),	-- Anti-Doom Broom
+							i(183621, {	-- Putrid Geist
+								["cost"] = { { "c", 1754, 20 } },
+							}),
+						}),
 					}),
 				}),
 			}),
