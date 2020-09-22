@@ -38,11 +38,6 @@ _.Zones =
 					["sourceQuest"] = 59773,	-- Seek the Ascended
 					["lvl"] = 50,
 				}),
-				q(60466, {	-- An Act of Service
-					["provider"] = { "n", 160598 },	-- Klystere
-					["coord"] = { 47.8, 73.2, 1533 },
-					["lvl"] = 50,
-				}),
 				q(57676, {	-- The Things That Haunt Us
 					["provider"] = { "n", 165107 },	-- Kleia
 					["coord"] = { 48.3, 72.7, 1533 },
@@ -452,6 +447,12 @@ _.Zones =
 					["coord"] = { 57.2, 55.3, 1533 },
 					["sourceQuest"] = 58978,	-- Lysonia's Truth
 					["lvl"] = 50,
+					["g"] = {
+						i(173329),	-- Pure Aspirant's Hood
+						i(173331),	-- Courageous Aspirant's Helm
+						i(173330),	-- Humble Aspirant's Helm
+						i(173315),	-- Judicious Aspirant's Helm
+					},
 				}),
 				q(58980, {	-- Mnemis, At Your Service
 					["provider"] = { "n", 167035 },	-- Locus-Keeper Mnemis
@@ -580,10 +581,10 @@ _.Zones =
 					},
 					["lvl"] = 50,
 					["g"] = {
-						i(173329),	-- Pure Aspirant's Hood
-						i(173331),	-- Courageous Aspirant's Helm
-						i(173330),	-- Humble Aspirant's Helm
-						i(173315),	-- Judicious Aspirant's Helm
+						i(173338),	-- Waylight Shoulderpads
+						i(173336),	-- Waylight Epaulets
+						i(173339),	-- Waylight Shoulderguards
+						i(173337),	-- Waylight Pauldrons
 					},
 				}),
 				q(60055, {	-- A Time for Courage
@@ -823,7 +824,70 @@ _.Zones =
 						i(180633),	-- Grubby
 					},
 				}),
-				
+				q(57712, {	-- Suggested Reading
+					["provider"] = { "n", 157138 },	-- Aspirant Akimos
+					["coord"] = { 55.4, 83.4, 1533 },
+					["lvl"] = 51,
+				}),
+				q(60466, {	-- The Old Ways
+					["provider"] = { "n", 160598 },	-- Klystere
+					["coord"] = { 47.8, 73.2, 1533 },
+					["lvl"] = 50,
+				}),
+				q(62714, {	-- A Gift for An Acolyte
+					["sourceQuest"] = 60466,	-- The Old Ways
+					["provider"] = { "n", 160598 },	-- Klystere
+					["coord"] = { 47.8, 73.2, 1533 },
+					["lvl"] = 50,
+				}),
+				q(62715, {	-- More Than A Gift
+					["sourceQuest"] = 62714,	-- A Gift for An Acolyte
+					["provider"] = { "n", 174900 },	-- Acolyte Amalthina
+					["coord"] = { 53.8, 73.8, 1533 },
+					["lvl"] = 50,
+				}),
+				-- start in the garden of respite
+				q(57529, {	-- Garden in Turmoil
+					--["sourceQuest"] = 62714,	-- A Gift for An Acolyte
+					["provider"] = { "n", 158005 },	-- Tamesis
+					["coord"] = { 52.4, 61.4, 1533 },
+					["lvl"] = 51,
+				}),
+				q(57547, {	-- A Test of Courage
+					["sourceQuests"] = {
+						57538,	-- Disturbing the Peace
+						57545,	-- Distractions for Kala
+					},
+					["provider"] = { "n", 158004 },	-- Zosime
+					["coord"] = { 51.2, 59.6, 1533 },
+					["lvl"] = 51,
+				}),
+				q(57545, {	-- Distractions for Kala
+					["sourceQuest"] = 57529,	-- Garden in Turmoil
+					["provider"] = { "n", 158004 },	-- Zosime
+					["coord"] = { 51.2, 59.6, 1533 },
+					["lvl"] = 51,
+				}),
+				q(57538, {	-- Disturbing the Peace
+					["sourceQuest"] = 57529,	-- Garden in Turmoil
+					["provider"] = { "n", 158004 },	-- Zosime
+					["coord"] = { 51.2, 59.6, 1533 },
+					["lvl"] = 51,
+				}),
+				q(57568, {	-- Tough Love
+					["sourceQuest"] = 57547,	-- A Test of Courage
+					["provider"] = { "n", 158004 },	-- Zosime
+					["coord"] = { 51.2, 59.6, 1533 },
+					["lvl"] = 51,
+					["g"] = {
+						i(175618),	-- Pure Aspirant's Gloves
+						i(175616),	-- Courageous Aspirant's Gloves
+						i(175619),	-- Humble Aspirant's Gauntlets
+						i(175617),	-- Judicious Aspirant's Gauntlets
+						i(175762),	-- Larion Tamer's Cloak
+					},
+				}),
+				-- end in the garden of respite
 				
 				
 				

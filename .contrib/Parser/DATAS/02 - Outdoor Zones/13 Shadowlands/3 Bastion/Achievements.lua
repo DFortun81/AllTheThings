@@ -67,6 +67,8 @@ _.Zones =
 					}),
 					crit(2, {	-- Vesper of Virtues
 						["coord"] = { 58.6, 71.4, 1536 },
+						["questID"] = 60478,	-- both triggered
+						--["questID"] = 62841,
 						["g"] = {
 							i(179982),	-- Kyrian Bell
 						},
@@ -79,6 +81,7 @@ _.Zones =
 					}),
 					crit(4, {	-- Lost Disciple's Notes
 						["coord"] = { 59.3, 61.0, 1536 },
+						["questID"] = 61048,
 						["g"] = {
 							i(182693),	-- Lost Disciple's Notes
 						},
@@ -91,6 +94,7 @@ _.Zones =
 					}),
 					crit(6, {	-- Stolen Equipment
 						["coord"] = { 40.5, 49.9, 1536 },
+						["questID"] = 61044,
 						["g"] = {
 							i(182561),	-- Fallen Disciple's Cloak
 						},

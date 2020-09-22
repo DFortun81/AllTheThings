@@ -58,7 +58,8 @@ _.Zones =
 				}),
 				n(170932, { -- Cloudfeather Guardian
 					["coord"] = { 50.6, 59.6, 1533 },
-					--["questID"] = ,
+					["questID"] = 60978,	-- Both procced on kill
+					--["questID"] = 62191,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14307, crit(13)),	-- Adventurer of Bastion / Cloudfeather Guardian
@@ -82,9 +83,9 @@ _.Zones =
 						ach(14307, crit(19)),	-- Adventurer of Bastion / Collector Astorestes
 					},
 				}),
-				n(171010, { -- Corrupted Clawguard
-					--["coord"] = { 46.8, 64.0, 1533 },
-					--["questID"] = ,
+				n(171010, { -- Corrupted Clawguard(possibly lvl 60 only)
+					["coord"] = { 56.8, 47.6, 1533 },
+					["questID"] = 60999,	-- Malfunction Clawguard
 					["isDaily"] = true,
 					["g"] = {
 						ach(14307, crit(24)),	-- Adventurer of Bastion / Corrupted Clawguard
@@ -116,10 +117,13 @@ _.Zones =
 				}),
 				n(171255, { -- Echo of Aella <Hand of Courage>
 					["coord"] = { 46.8, 64.0, 1533 },
-					--["questID"] = ,
+					["questID"] = 61082,	-- upon kill
+					--["questID"] = 61091,	-- upon chest loot
+					--["questID"] = 62251,	-- upon chest loot
 					["isDaily"] = true,
 					["g"] = {
 						ach(14307, crit(23)),	-- Adventurer of Bastion / Echo of Aella <Hand of Courage>
+						i(180062),	-- Heavenly Drum
 					},
 				}),
 				n(171013, { -- Embodied Hunger
