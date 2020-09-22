@@ -602,8 +602,9 @@ _.Zones =
 					-- Some people are still able to get this.  Not sure what the exact criteria are that need to be met.
 					["provider"] = { "n", 28126 },	-- Don Carlos
 					["coord"] = { 50.7, 27.5, 71 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
+				--	["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,	-- Removed Version, unclear when exactly.
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(38276, {	-- Haliscan Brimmed Hat
 							["ignoreSource"] = true,	-- White Item
@@ -614,7 +615,7 @@ _.Zones =
 					-- CRIEVE NOTE: Got this on Druid, who doesn't have 12513 completed. [5/4/2019]
 					["provider"] = { "n", 28126 },	-- Don Carlos
 					["coord"] = { 50.7, 27.5, 71 },
-					["races"] = HORDE_ONLY,
+				--	["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["g"] = {
 						i(38276, {	-- Haliscan Brimmed Hat
