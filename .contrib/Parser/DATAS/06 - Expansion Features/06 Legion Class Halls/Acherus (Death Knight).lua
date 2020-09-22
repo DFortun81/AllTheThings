@@ -33,6 +33,15 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42824, -- The Zealot Rises
 					}),
+					q(43407, {	-- A Hero's Weapon
+						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
+						["coord"] = { 56.9, 58.5, 648 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 44248, -- Champion: Darion Mograine
+						["g"] = {
+							spell(219663), -- Heroic Weapons (Artifact Appearances)
+						},
+					}),
 					q(42708, {	-- A Personal Request
 						["provider"] = { "n", 93456 }, -- Thassarian
 						["coord"] = { 56.0, 30.7, 648 },
@@ -75,6 +84,9 @@ _.ExpansionFeatures =
 					}),
 					q(44248, {	-- Champion: Darion Mograine
 						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
+						["coord"] = { 27.0, 28.9, 648 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 43686, -- The Fourth Horseman
 						["g"] = {
 							follower(855),	-- Highlord Darion Mograine
 						},
@@ -282,6 +294,16 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 						["g"] = {
 							i(128402), -- Maw of the Damned
+						},
+					}),
+					q(43686, {	-- The Fourth Horseman
+						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
+						["coord"] = { 51.6, 50.0, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 43574, -- Maw of Souls: Maul of the Dead
+						["g"] = {
+							title(328),	-- Deathlord
+							i(139673), 	-- Deathlord's Chestguard
 						},
 					}),
 					q(42533, {	-- The Ruined Kingdom
