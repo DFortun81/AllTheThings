@@ -302,14 +302,20 @@ _.Zones =
 					},
 					["lvl"] = 60,
 				}),
-				q(60234, {	-- Rule 1: Have an Escape Plan
+				q(62882, {	-- Setting the Ground Rules
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 					["sourceQuest"] = 61496,	-- A Familiar Energy
 					["lvl"] = 60,
 				}),
+				q(60234, {	-- Rule 1: Have an Escape Plan
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+					["sourceQuest"] = 62882,	-- Setting the Ground Rules
+					["lvl"] = 60,
+				}),
 				q(61391, {	-- The Eye of the Jailer
-					["sourceQuest"] = 61496,	-- A Familiar Energy
+					["sourceQuest"] = 62882,	-- Setting the Ground Rules
 					["lvl"] = 60,
 				}),
 				q(61355, {	-- Rule 2: Keep a Low Profile
@@ -325,6 +331,18 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 					["sourceQuest"] = 61355,	-- Rule 2: Keep a Low Profile
+					["lvl"] = 60,
+				}),
+				q(62837, {	-- Hopeful News
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+					["sourceQuest"] = 60289,	-- Rule 3: Trust is Earned
+					["lvl"] = 60,
+				}),
+				q(62838, {	-- Soulful Recovery
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, 1670 },
+					["sourceQuest"] = 60289,	-- Rule 3: Trust is Earned
 					["lvl"] = 60,
 				}),
 				q(60134, {	-- A Tauren in Trade

@@ -15,6 +15,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
+				q(61343, {	-- Battles Won Long Ago
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
 				q(57650, {	-- Better Off Dead
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
@@ -64,9 +68,13 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
-				
+				q(61868, {	-- Uncomfortably Undercover
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
 				
 				i(181671),	-- Corpsehide Spaulders
+				i(181625),	-- Gorewrought Medallion
 			}),
 		}),
 	}),

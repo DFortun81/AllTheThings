@@ -88,6 +88,15 @@ _.Zones =
 						i(181475),	-- Tribute of the Grove Wardens
 					},
 				}),
+				q(60385, {	-- Training in Revendreth
+					["provider"] = { "n", 158544 },	-- Lord Herne
+					["coord"] = { 40.9, 72.4, 1565 },
+					["repeatable"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(181475),	-- Tribute of the Grove Wardens
+					},
+				}),
 				q(60419, {	-- Troubles at Home
 					["provider"] = { "n", 167193 },	-- Featherlight
 					["coord"] = { 59.7, 31.3, 1565 },
@@ -98,6 +107,15 @@ _.Zones =
 					},
 				}),
 				q(60364, {	-- Gildenite Grab
+					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
+					["coord"] = { 16.5, 52.4, 1565 },
+					["repeatable"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(181475),	-- Tribute of the Grove Wardens
+					},
+				}),
+				q(60369, {	-- A Wealth of Wealdwood
 					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
 					["coord"] = { 16.5, 52.4, 1565 },
 					["repeatable"] = true,
@@ -151,7 +169,7 @@ _.Zones =
 						i(181476),	-- Tribute of the Wild Hunt
 					},
 				}),
-				q(60436, {	-- Challenges in Maldraxxus
+				q(60438, {	-- Challenges in Aredenweald
 					["provider"] = { "n", 167206 },	-- Yanlar
 					["coord"] = { 36.8, 24.8, 1565 },
 					["repeatable"] = true,
@@ -161,6 +179,15 @@ _.Zones =
 					},
 				}),
 				q(60437, {	-- Challenges in Bastion
+					["provider"] = { "n", 167206 },	-- Yanlar
+					["coord"] = { 36.8, 24.8, 1565 },
+					["repeatable"] = true,
+					["lvl"] = 60,
+					["g"] = {
+						i(181476),	-- Tribute of the Wild Hunt
+					},
+				}),
+				q(60436, {	-- Challenges in Maldraxxus
 					["provider"] = { "n", 167206 },	-- Yanlar
 					["coord"] = { 36.8, 24.8, 1565 },
 					["repeatable"] = true,

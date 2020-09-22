@@ -677,6 +677,7 @@ t(174924);	-- Void-Touched Souvenir Totem
 
 -- Beta Toys
 t(180993);	-- Bat Visage Bobber
+t(183986);	-- Bondable Sinstone
 t(182729);	-- Hearty Dragon Plume
 t(179393);	-- Mirror of Envious Dreams
 t(182780);	-- Muckpool Cookpot

@@ -26,6 +26,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
+				q(57443, {	-- Dirty Job: Demolition Detail
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
 				q(57465, {	-- Dirty Job: Wood Work
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
@@ -39,6 +43,10 @@ _.Zones =
 					["lvl"] = 60,
 				}),
 				q(59643, {	-- It's Race Day in the Ramparts!
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(60659, {	-- Light Defense
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),

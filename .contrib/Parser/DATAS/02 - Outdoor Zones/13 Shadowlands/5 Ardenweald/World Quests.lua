@@ -68,6 +68,14 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
+				q(60533, {	-- Terrors in Tirna Scithe
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(60564, {	-- Three Gorm Enter, No One Leaves
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
 				q(60842, {	-- To Serve Spriggan
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
@@ -80,6 +88,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
+				q(60475, {	-- We'll Workshop It
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
 				q(60609, {	-- Who Devours the Devourers?
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
@@ -89,6 +101,7 @@ _.Zones =
 					["lvl"] = 60,
 				}),
 				i(181407),	-- Runetender Mitts
+				i(175740),	-- Valeshroud Torque
 			}),
 		}),
 	}),

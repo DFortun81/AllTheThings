@@ -893,3 +893,4 @@ pet(173891, 2798);	-- Plagueborn Slime
 pet(183515, 3045);	-- Reanimated Plague
 pet(182673, 3022);	-- Shimmerbough Hoarder
 pet(182612, 3009);	-- The Count
+pet(180859, 2935);	-- White Vulpin

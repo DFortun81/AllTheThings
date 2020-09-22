@@ -30,6 +30,7 @@ i(183034, 3);	-- Cowled Batwing Cloak
 i(183033, 3);	-- Mantle of Manifest Sins
 i(183032, 3);	-- Crest of the Legionnaire General
 i(181301, 3);	-- Faewoven Branches
+i(182561, 3);	-- Fallen Disciple's Cloak
 
 -- Cloth
 i(178735, 4);	-- Blight Belcher
@@ -540,6 +541,7 @@ i(180667, 31);	-- Enlarged Jawbone Crossbow
 
 -- Fist Weapons
 i(176336, 34);	-- Guidenote Grip
+i(183609, 34);	-- Re-Powered Golliath Fists
 
 -- Warglaives
 i(176332, 35);	-- Silverchime Warglaive
@@ -563,6 +565,7 @@ i(180115, 51);	-- Azure-Venom Choker
 i(183040, 51);	-- Charm of Eternal Winter
 i(183039, 51);	-- Noble's Birthstone Pendant
 i(175708, 51);	-- Reconstructed Family Locket
+i(181625, 51);	-- Gorewrought Medallion
 
 -- Finger
 i(178736, 52);	-- Stitchflesh's Misplaced Signet
@@ -584,6 +587,7 @@ i(178870, 52);	-- Ritual Bone Band
 i(178872, 52);	-- Ring of Perpetual Conflict
 i(183038, 52);	-- Hyperlight Band
 i(175707, 52);	-- Signet of the Learned
+i(175712, 52);	-- Shimmerbough Loop
 
 -- Trinket
 i(178742, 53);	-- Bottled Chimera Toxin

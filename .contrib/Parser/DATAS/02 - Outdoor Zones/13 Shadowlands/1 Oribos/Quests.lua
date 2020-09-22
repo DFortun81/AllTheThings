@@ -8,6 +8,7 @@ _.Zones =
 		m(1670, {	-- Oribos
 			n(QUESTS, {
 				q(60129, {	-- Stranger in an Even Stranger Land
+					["sourceQuest"] = 59770,	-- Stand as One
 					["lvl"] = 50,
 				}),
 				q(60148, {	-- No Place for the Living
@@ -58,6 +59,82 @@ _.Zones =
 					["sourceQuest"] = 60156,	-- The Path to Bastion
 					["lvl"] = 50,
 				}),
+			-- Skip Quests
+				q(62801, {	-- The Call of Fate
+					["sourceQuest"] = 59770,	-- Stand as One
+					["isBreadcrumb"] = true,
+					["lvl"] = 50,
+				}),
+				q(62704, {	-- The Threads of Fate
+					["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
+					["coord"] = { 19.6, 50.2, 1670 },
+					["sourceQuest"] = 59770,	-- Stand as One
+					["lvl"] = 50,
+				}),
+				q(62716, {	-- Re-Introductionse
+					["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
+					["coord"] = { 19.6, 50.2, 1670 },
+					["sourceQuest"] = 62704,	-- The Threads of Fate
+					["lvl"] = 50,
+				}),
+				q(62000, {	-- Choosing Your Purpose
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
+					["sourceQuest"] = 62716,	-- Re-Introductionse
+					["lvl"] = 60,
+					["g"] = {
+						ach(14627),	-- Choosing your Purpose
+					},
+				}),
+				q(62159, {	-- Aiding the Shadowlands
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
+					["sourceQuest"] = 62000,	-- Choosing Your Purpose
+					["lvl"] = 50,
+				}),
+				q(62277, {	-- Ardenweald
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
+					["sourceQuest"] = 62159,	-- Aiding the Shadowlands
+					["lvl"] = 50,
+				}),
+				q(62275, {	-- Bastion
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
+					["sourceQuest"] = 62159,	-- Aiding the Shadowlands
+					["lvl"] = 50,
+				}),
+				q(62707, {	-- The Elysian Fields
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
+					["sourceQuest"] = 62275,	-- Bastion
+					["lvl"] = 50,
+				}),
+				q(62723, {	-- Bolstering Bastion
+					["provider"] = { "n", 163427 },	-- Kalisthene
+					["coord"] = { 51.1, 43.7, 1533 },
+					["sourceQuest"] = 62707,	-- The Elysian Fields
+					["lvl"] = 50,
+				}),
+				q(62729, {	-- Return to Oribos
+					["provider"] = { "n", 159478 },	-- Kalisthene
+					["coord"] = { 51.1, 43.7, 1533 },
+					["sourceQuest"] = 62723,	-- Bolstering Bastion
+					["lvl"] = 50,
+				}),
+				q(62278, {	-- Maldraxxus
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
+					["sourceQuest"] = 62159,	-- Aiding the Shadowlands
+					["lvl"] = 50,
+				}),
+				q(62279, {	-- Revendreth
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
+					["sourceQuest"] = 62159,	-- Aiding the Shadowlands
+					["lvl"] = 50,
+				}),
+			
 			-- From Bastion to Maldraxxus
 				q(61096, {	-- The Arbiter's Will
 					["provider"] = { "n", 159478 },	-- Tal-Inara

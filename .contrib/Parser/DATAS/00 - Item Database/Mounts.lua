@@ -289,4 +289,5 @@ i(174840, 316723);	-- Xinlao
 i(182614, 339588);	-- Blanchy's Reins
 i(180263, 312759);	-- Dreamlight Runedeer
 i(182596, 332903);	-- Nathria Rampart Screecher
+i(180772, 334433);	-- Silverwind Larion
 i(180731, 334352);	-- Wildseed Cradle

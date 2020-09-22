@@ -109,6 +109,9 @@ _.Zones =
 						},
 						["description"] = "Use the Ingress And Egress Rites at |cFFFFFFFF63.0, 72.1|r that you can see the Chest.",
 						["questID"] = 62199,
+						["g"] = {
+							i(183986),	-- Bondable Sinstone
+						},
 					}),
 					crit(8, {	-- Blanchy Assisted
 					--	["objectID"] = 354646,	-- Ancient Cloudfeather Egg

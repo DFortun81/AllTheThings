@@ -15,6 +15,26 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
+				q(59601, {	-- Assault on the Vestibule
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(60565, {	-- A Steward for Every Occasion
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(61784, {	-- Cliffs of Bastion
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(61549, {	-- Drought Conditions
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(61520, {	-- Enemy of My Mnemis
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
 				q(60844, {	-- Flight School: Falling With Style
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
@@ -41,11 +61,27 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
+				q(59771, {	-- History of Corruption
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
 				q(61337, {	-- March of the Eternal Protector
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
 				q(61787, {	-- Micro Defense Force
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(61967, {	-- Remedial Lessons
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(62258, {	-- Soaring Over Bastion
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+				}),
+				q(59717, {	-- Things Remembered
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),

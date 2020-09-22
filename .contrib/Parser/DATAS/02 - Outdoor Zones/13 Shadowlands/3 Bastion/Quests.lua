@@ -274,12 +274,6 @@ _.Zones =
 					 },
 					["lvl"] = 50,
 				}),
-				q(60316, {	-- WANTED: Altered Sentinel
-				--	["provider"] = { "o", 352027 },	-- Wanted Scroll			-- Need to add the Object 352027 or 352028
-					["coord"] = { 49.1, 72.8, 1533 },
-					["sourceQuest"] = 58174,	-- All An Aspirant Can Do
-					["lvl"] = 50,
-				}),
 			-- The Temple of Purity
 				q(57270, {	-- The Temple of Purity
 					["provider"] = { "n", 157673 },	-- Disciple Kosmas
@@ -341,7 +335,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(57719, {	-- Dangerous Discourse
-				--	["provider"] = { "o",  },	-- Dark Sermon							-- Need to add the ObjectID
+					["provider"] = { "o", 344726  },	-- Dark Sermon							-- Need to add the Object
 					["coord"] = { 57.2, 71.8, 1533 },
 					["sourceQuest"] = 57717,	-- Step Back From That Ledge, My Friend
 					["lvl"] = 50,
@@ -600,6 +594,32 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 			-- End of Zone Achievement Quests
+			
+			-- An Act of Service
+				q(60466, {	-- The Old Ways
+					["provider"] = { "n", 160598 },	-- Klystere
+					["coord"] = { 47.8, 73.2, 1533 },
+					["lvl"] = 50,
+				}),
+				q(62714, {	-- A Gift for An Acolyte
+					["provider"] = { "n", 160598 },	-- Klystere
+					["coord"] = { 47.8, 73.2, 1533 },
+					["sourceQuest"] = 60466,	-- The Old Ways
+					["lvl"] = 50,
+				}),
+				q(62715, {	-- More Than A Gift
+					["provider"] = { "n", 174900 },	-- Acolyte Amalthina
+					["coord"] = { 47.8, 73.2, 1533 },
+					["sourceQuest"] = 62714,	-- A Gift for An Acolyte
+					["lvl"] = 50,
+				}),
+				
+				q(60316, {	-- WANTED: Altered Sentinel
+				--	["provider"] = { "o", 352027 },	-- Wanted Scroll			-- Need to add the Object 352027 or 352028
+					["coord"] = { 49.1, 72.8, 1533 },
+					["lvl"] = 50,
+				}),
+			-- 
 				q(60315, {	-- WANTED: Gorgebeak
 				--	["provider"] = { "o", 352028 },	-- Wanted Scroll			-- Need to add the Object 352027 or 352028
 					["coord"] = { 53.2, 46.4, 1533 },
@@ -819,16 +839,6 @@ _.Zones =
 					["coord"] = { 59.3, 60.9, 1533 },
 					["lvl"] = 51,
 				}),
-				q(61135, {	-- Heart of the Crest
-					["g"] = {
-						i(180633),	-- Grubby
-					},
-				}),
-				q(57712, {	-- Suggested Reading
-					["provider"] = { "n", 157138 },	-- Aspirant Akimos
-					["coord"] = { 55.4, 83.4, 1533 },
-					["lvl"] = 51,
-				}),
 				q(60466, {	-- The Old Ways
 					["provider"] = { "n", 160598 },	-- Klystere
 					["coord"] = { 47.8, 73.2, 1533 },
@@ -846,48 +856,9 @@ _.Zones =
 					["coord"] = { 53.8, 73.8, 1533 },
 					["lvl"] = 50,
 				}),
-				-- start in the garden of respite
-				q(57529, {	-- Garden in Turmoil
-					--["sourceQuest"] = 62714,	-- A Gift for An Acolyte
-					["provider"] = { "n", 158005 },	-- Tamesis
-					["coord"] = { 52.4, 61.4, 1533 },
-					["lvl"] = 51,
-				}),
-				q(57547, {	-- A Test of Courage
-					["sourceQuests"] = {
-						57538,	-- Disturbing the Peace
-						57545,	-- Distractions for Kala
-					},
-					["provider"] = { "n", 158004 },	-- Zosime
-					["coord"] = { 51.2, 59.6, 1533 },
-					["lvl"] = 51,
-				}),
-				q(57545, {	-- Distractions for Kala
-					["sourceQuest"] = 57529,	-- Garden in Turmoil
-					["provider"] = { "n", 158004 },	-- Zosime
-					["coord"] = { 51.2, 59.6, 1533 },
-					["lvl"] = 51,
-				}),
-				q(57538, {	-- Disturbing the Peace
-					["sourceQuest"] = 57529,	-- Garden in Turmoil
-					["provider"] = { "n", 158004 },	-- Zosime
-					["coord"] = { 51.2, 59.6, 1533 },
-					["lvl"] = 51,
-				}),
-				q(57568, {	-- Tough Love
-					["sourceQuest"] = 57547,	-- A Test of Courage
-					["provider"] = { "n", 158004 },	-- Zosime
-					["coord"] = { 51.2, 59.6, 1533 },
-					["lvl"] = 51,
-					["g"] = {
-						i(175618),	-- Pure Aspirant's Gloves
-						i(175616),	-- Courageous Aspirant's Gloves
-						i(175619),	-- Humble Aspirant's Gauntlets
-						i(175617),	-- Judicious Aspirant's Gauntlets
-						i(175762),	-- Larion Tamer's Cloak
-					},
-				}),
-				-- end in the garden of respite
+				
+				
+				
 				
 				
 				

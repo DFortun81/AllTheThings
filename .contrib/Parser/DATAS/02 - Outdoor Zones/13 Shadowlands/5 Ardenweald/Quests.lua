@@ -875,6 +875,59 @@ _.Zones =
 					},
 				}),
 				
+				q(52883, {	-- The Forest Will Sing Your Name
+					["provider"] = { "n", 156634 },	-- Winter Queen
+					["coord"] = { 51.8, 28.1, 1565 },
+					["sourceQuest"] = 58160,	-- For Queen and Grove!
+					["lvl"] = 60,
+				}),
+				q(62884, {	-- Who Shapes the Forest
+					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+					["coord"] = { 40.7, 33.1, 1565 },
+					["sourceQuest"] = 52883,	-- The Forest Will Sing Your Name
+					["lvl"] = 60,
+				}),
+				q(62697, {	-- A Call to Service
+					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+					["coord"] = { 40.7, 33.1, 1565 },
+					["sourceQuest"] = 62884,	-- Who Shapes the Forest
+					["lvl"] = 60,
+				}),
+				q(62693, {	-- A Calling in Ardenweald
+					["provider"] = { "n", 165702 },	-- Blodwyn
+					["coord"] = { 46.4, 50.6, 1565 },
+					["sourceQuest"] = 62884,	-- Who Shapes the Forest
+					["lvl"] = 60,
+					["g"] = {
+						i(181475),	-- Tribute of the Grove Wardens
+					},
+				}),
+				q(62890, {	-- The Life-blood of the Forest
+					["provider"] = { "n", 165702 },	-- Blodwyn
+					["coord"] = { 46.4, 50.6, 1565 },
+					["sourceQuest"] = 62693,	-- A Calling in Ardenweald
+					["lvl"] = 60,
+				}),
+				q(62891, {	-- Into the Reservoir
+					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+					["coord"] = { 40.7, 33.2, 1565 },
+					["sourceQuest"] = 62890,	-- The Life-blood of the Forest
+					["lvl"] = 60,
+				}),
+				q(62892, {	-- Recover the Lost
+					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+					["coord"] = { 40.7, 33.2, 1565 },
+					["sourceQuest"] = 62891,	-- Into the Reservoir
+					["lvl"] = 60,
+				}),
+				q(62893, {	-- Do What We Cannot
+					["provider"] = { "n", 158553 },	-- Flutterby
+					["coord"] = { 33.9, 43.4, 1565 },
+					["sourceQuest"] = 62892,	-- Recover the Lost
+					["lvl"] = 60,
+				}),
+				
+				
 			-- The Queen's Conservatory
 				q(62624, {	-- The Queen's Conservatory
 					["provider"] = { "n", 173171 },	-- Conservator Saola
@@ -947,7 +1000,32 @@ _.Zones =
 						i(183704),	-- Shifting Spirit of Knowledge
 					},
 				}),
-
+				q(62603, {	-- A Rare and Unusual Spirit
+					["provider"] = { "n", 171107 },	-- Cultivator Blaithin
+					["coord"] = { 42.2, 52.9, 1662 },
+					["lvl"] = 60,
+					["maps"] = { 1669 },	-- Mists of Tirna Scithe
+					["g"] = {
+						i(183805),	-- Tranquil Spirit of the Cosmos
+					},
+				}),
+				q(62625, {	-- A Rare and Unusual Spirit
+					["provider"] = { "n", 171107 },	-- Cultivator Blaithin
+					["coord"] = { 42.2, 52.9, 1662 },
+					["lvl"] = 60,
+					["maps"] = { 1669 },	-- Mists of Tirna Scithe
+					["g"] = {
+						i(183806),	-- Energetic Spirit of Curiosity
+					},
+				}),
+				q(62454, {	-- A Rare and Unusual Spirit
+					["provider"] = { "n", 174329 },	-- Falir the Shifting
+					["coord"] = { 24.0, 53.3, 1662 },
+					["lvl"] = 60,
+					["g"] = {
+						i(183806),	-- Energetic Spirit of Curiosity
+					},
+				}),
 
 
 			-- Dailys / Weelkys
@@ -975,6 +1053,13 @@ _.Zones =
 
 
 			-- Covernant progress
+				q(62900, {	-- Adventurer: Guardian Kota (Rank 2)
+					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+					["coord"] = { 29.6, 81.6, 1565 },
+					["g"] = {
+						follower(1283),	-- Guardian Kota
+					},
+				}),
 				q(61852, {	-- Adventurer: Guardian Kota (Rank 2)
 					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 					["coord"] = { 29.6, 81.6, 1565 },
@@ -995,13 +1080,33 @@ _.Zones =
 				
 				
 				
-				
+			-- Sojourner of Ardenweald Achievenemt	
 			-- Wicked Plan
 				q(58265, {	-- Blooming Villains
 					["provider"] = { "n", 160929 },	-- Guardian Molan
 					["coord"] = { 60.6, 51.3, 1565 },
 					["sourceQuest"] = 58524,	-- Sparkles Rain from Above
-					["lvl"] = 56,
+					["lvl"] = 57,
+				}),
+				q(58266, {	-- Break It Down
+					["provider"] = { "n", 160749 },	-- Primrose
+					["coord"] = { 53.4, 58.7, 1565 },
+					["sourceQuest"] = 58265,	-- Blooming Villains
+					["lvl"] = 57,
+				}),
+				q(58264, {	-- Wake Up, Get Up, Get Out There
+					["provider"] = { "n", 160749 },	-- Primrose
+					["coord"] = { 53.4, 58.7, 1565 },
+					["sourceQuest"] = 58265,	-- Blooming Villains
+					["lvl"] = 57,
+				}),
+				q(58267, {	-- Beneath the Mask
+					["provider"] = { "n", 160749 },	-- Primrose
+					["sourceQuest"] = 58264,	-- Wake Up, Get Up, Get Out There
+					["lvl"] = 57,
+					["g"] = {
+						i(175712),	-- Shimmerbough Loop
+					},
 				}),
 			-- Trouble at the Gormling Corral
 				q(57651, {	-- Trouble in the Banks
