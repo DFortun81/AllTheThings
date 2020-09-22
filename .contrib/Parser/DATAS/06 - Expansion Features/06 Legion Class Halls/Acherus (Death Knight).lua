@@ -39,11 +39,20 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42537, -- The King Rises
 					}),
+					q(40930, {	-- Apocalypse [Unholy]
+						["classes"] = { DEATHKNIGHT },
+					}),
 					q(44217, {	-- Armor Fit For A Deathlord
 						i(139676),	-- Head
 					}),
-					q(40930, {	-- Apocalypse [Unholy]
+					q(44690, {	-- A Thirst For Blood
+						["provider"] = { "n", 93491 }, -- Lord Thorval
+						["coord"] = { 63.1, 69.4, 647 },
 						["classes"] = { DEATHKNIGHT },
+						["sourceQuests"] = {
+							43573, -- Advancing the War Effort
+							43928, -- Aggregates of Anguish
+						},
 					}),
 					q(44401, {	-- A Weapon For Every Occasion
 						["provider"] = { "n", 109788 }, -- Duke Lankral
@@ -54,6 +63,94 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 109788 }, -- Duke Lankral
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 40715, -- A Pact of Necessity
+					}),
+					q(44247, {	-- Champion: Amal'thazad
+						["provider"] = { "n", 93555 }, -- Amal'thazad
+						["coord"] = { 58.1, 31.1, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 44282, -- Eye of Azshara: The Frozen Soul
+						["g"] = {
+							follower(854),	-- Amal'thazad
+						},
+					}),
+					q(44248, {	-- Champion: Darion Mograine
+						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
+						["g"] = {
+							follower(855),	-- Highlord Darion Mograine
+						},
+					}),
+					q(44245, {	-- Champion: High Inquisitor Whitemane
+						["provider"] = { "n", 113481 },	-- High Inquisitor Whitemane
+						["coord"] = { 44.8, 72.9, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42824, -- The Zealot Rises
+						["g"] = {
+							follower(839),	-- High Inquisitor Whitemane
+						},
+					}),
+					q(44244, {	-- Champion: Koltira Deathweaver
+						["provider"] = { "n", 93453 },		-- Koltira Deathweaver
+						["coord"] = { 66.3, 64.6, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42708, -- A Personal Request
+						["g"] = {
+							follower(599),	-- Koltira Deathweaver
+						},
+					}),
+					q(46050, {	-- Champion: Minerva Ravensorrow
+						["provider"] = { "n", 95900 },		-- Minerva Ravensorrow
+						["g"] = {
+							follower(1003),	-- Minerva Ravensorrow
+						},
+					}),
+					q(39818, {	-- Champion: Nazgrim
+						["provider"] = { "n", 109890 },	-- Nazgrim
+						["coord"] = { 39.6, 68.2, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuests"] = {
+							42484, -- The Firstborn Rises
+							44550, -- Called to Acherus [Breadcrumb]
+						},
+						["g"] = {
+							follower(586),	-- Nazgrim
+						},
+					}),
+					q(44246, {	-- Champion: Rottgut
+						["provider"] = { "n", 108975 }, -- Rottgut [Spawns next to Lord Thorval after completing the listed source quest.]
+						["coord"] = { 64.1, 69.5, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 44286, -- Vault of the Wardens: A Masterpiece of Flesh
+						["g"] = {
+							i(139680),		-- Deathlord's Bracers
+							follower(853),	-- Rottgut
+						},
+					}),
+					q(39816, {	-- Champion: Thassarian
+						["provider"] = { "n", 93456 },	-- Thassarian
+						["coord"] = { 56.1, 30.5, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuests"] = {
+							42484, -- The Firstborn Rises
+							44550, -- Called to Acherus [Breadcrumb]
+						},
+						["g"] = {
+							follower(584),	-- Thassarian
+						},
+					}),
+					q(44243, {	-- Champion: Thoras Trollbane
+						["provider"] = { "n", 113419 },	-- King Thoras Trollbane
+						["coord"] = { 59.5, 34.0, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42537, -- The King Rises
+						["g"] = {
+							follower(838),	-- Thoras Trollbane
+						},
+					}),
+					q(44282, {	-- Eye of Azshara: The Frozen Soul
+						["provider"] = { "n", 93555 }, -- Amal'thazad
+						["coord"] = { 58.1, 31.1, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 43928, -- Aggregates of Anguish
 					}),
 					q(43877, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
@@ -96,85 +193,6 @@ _.ExpansionFeatures =
 					q(43686, {	-- The Fourth Horseman
 						i(139673),	-- Chest
 					}),
-					q(44246, {	-- Champion: Rottgut
-						i(139680),	-- Bracers
-					}),
-					-- TODO: Followers Sort Later
-					q(44247, {	-- Champion: Amal'thazad
-						["provider"] = { "n", 93555 },		-- Amal'thazad
-						["g"] = {
-							follower(854),	-- Amal'thazad
-						},
-					}),
-					q(44245, {	-- Champion: High Inquisitor Whitemane
-						["provider"] = { "n", 113481 },	-- High Inquisitor Whitemane
-						["coord"] = { 44.8, 72.9, 647 },
-						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 42824, -- The Zealot Rises
-						["g"] = {
-							follower(839),	-- High Inquisitor Whitemane
-						},
-					}),
-					q(44248, {	-- Champion: Darion Mograine
-						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
-						["g"] = {
-							follower(855),	-- Highlord Darion Mograine
-						},
-					}),
-					q(44244, {	-- Champion: Koltira Deathweaver
-						["provider"] = { "n", 93453 },		-- Koltira Deathweaver
-						["coord"] = { 66.3, 64.6, 647 },
-						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 42708, -- A Personal Request
-						["g"] = {
-							follower(599),	-- Koltira Deathweaver
-						},
-					}),
-					q(46050, {	-- Champion: Minerva Ravensorrow
-						["provider"] = { "n", 95900 },		-- Minerva Ravensorrow
-						["g"] = {
-							follower(1003),	-- Minerva Ravensorrow
-						},
-					}),
-					q(39818, {	-- Champion: Nazgrim
-						["provider"] = { "n", 109890 },	-- Nazgrim
-						["coord"] = { 39.6, 68.2, 647 },
-						["classes"] = { DEATHKNIGHT },
-						["sourceQuests"] = {
-							42484, -- The Firstborn Rises
-							44550, -- Called to Acherus [Breadcrumb]
-						},
-						["g"] = {
-							follower(586),	-- Nazgrim
-						},
-					}),
-					q(44246, {	-- Champion: Rottgut
-						--["provider"] = { "n",  },		-- Cant find QG
-						["g"] = {
-							follower(853),	-- Rottgut
-						},
-					}),
-					q(39816, {	-- Champion: Thassarian
-						["provider"] = { "n", 93456 },	-- Thassarian
-						["coord"] = { 56.1, 30.5, 647 },
-						["classes"] = { DEATHKNIGHT },
-						["sourceQuests"] = {
-							42484, -- The Firstborn Rises
-							44550, -- Called to Acherus [Breadcrumb]
-						},
-						["g"] = {
-							follower(584),	-- Thassarian
-						},
-					}),
-					q(44243, {	-- Champion: Thoras Trollbane
-						["provider"] = { "n", 113419 },	-- King Thoras Trollbane
-						["coord"] = { 59.5, 34.0, 647 },
-						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 42537, -- The King Rises
-						["g"] = {
-							follower(838),	-- Thoras Trollbane
-						},
-					}),
 					q(43571, {	-- Darkheart Thicket: The Nightmare Lash
 						["provider"] = { "n", 111480 }, -- Salanar the Horseman
 						["coord"] = { 36.2, 56.1, 648 },
@@ -186,6 +204,12 @@ _.ExpansionFeatures =
 						["coord"] = { 49.7, 51.3, 647 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42708, -- A Personal Request
+					}),
+					q(43574, {	-- Maw of Souls: Maul of the Dead
+						["provider"] = { "n", 111480 }, -- Salanar the Horseman
+						["coord"] = { 36.2, 56.1, 648 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 44286, -- Vault of the Wardens: A Masterpiece of Flesh
 					}),
 					q(43571, {	-- Neltharion's Lair: Braid of the Underking
 						["provider"] = { "n", 111480 }, -- Salanar the Horseman
