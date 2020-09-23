@@ -883,14 +883,122 @@ pet(137298, 1903); 	-- Zoom
 pet(166455, 2550);	-- Zur'aj the Depleted
 
 
--- Beta Pets
+-----------------
+-- PATCH 9.0.1 --
+-----------------
 pet(180640, 2911);	-- Amber Glitterwing
+pet(180587, 2893);	-- Animated Tome
+pet(184221, 3054);	-- Archivist's Quill
+--pet(183853, );	-- Baby Sinfall Screecher
+pet(181268, 2958);	-- Backbone
+pet(183854, 3011);	-- Battie's Pendant // Battie
+--pet(180814, );	-- Black Vulpin
+pet(181315, 2965);	-- Bloodfeaster Spiderling
+pet(181266, 2956);	-- Bloodlouse Hatchling
+pet(182606, 3013);	-- Bloodlouse Larva
+--pet(180838, );	-- Blue Etherwyrm
+--pet(180837, );	-- Blue Glimmerfly
+pet(181172, 2948);	-- Boneweave Hatchling
+pet(180585, 2897);	-- Bottled Up Emotions // Emotional Leecher
+--pet(181262, );	-- Bubbling Pustule
+pet(180588, 2896);	-- Bucket of Primordial Sludge // Primordial Sludge
+pet(183114, 3025);	-- Carpal
+pet(180643, 2908);	-- Chirpy Valeshrieker
+pet(181259, 2950);	-- Clutch
+--pet(183193, );	-- Contained Ashen Chomper
+--pet(183407, );	-- Contained Essence of Dread
+pet(181265, 2955);	-- Corpselouse Hatchling
+pet(181168, 2945);	-- Corpulent Bonetusk
+pet(180593, 2899);	-- Court Messenger Scroll // Court Messenger
+pet(180602, 2903);	-- Crimson Dredwing Pup
+pet(183859, 2900);	-- Dal's Courier Badge // Dal
+--pet(180839, );	-- Dark Glimmerfly
+pet(183412, 3041);	-- Death Seeker
+--pet(183408, );	-- Deathsworn Cockroach
+--pet(183409, );	-- Decaying Mawrat
+pet(181270, 2960);	-- Decaying Oozewalker
 pet(180645, 2905);	-- Dodger
 pet(180642, 2909);	-- Downfeather Ragewing
+pet(182683, 2967);	-- Dredger Butler's Contract // Dredger Butler
+pet(180639, 2912);	-- Dusty Sporeflutterer
+pet(180641, 2910);	-- Floofa
+pet(181283, 2964);	-- Foulwing Hatchling
+--pet(183192, );	-- Frenzied Mawrat
+pet(182661, 3016);	-- Fun Guss
+pet(180638, 2913);	-- Fuzzy Shimmermoth
+pet(180634, 2917);	-- Gloober, as G'huun
+--pet(180866, );	-- Golden Crane
+--pet(180812, );	-- Golden Teroclaw
+--pet(180857, );	-- Golden Vulpin
 pet(180630, 2921);	-- Gorm Harrier
-pet(182613, 3008);	-- Lost Quill
+pet(180631, 2920);	-- Gorm Needler
+pet(180632, 2919);	-- Gorm Rootstinger
+pet(180633, 2918);	-- Grubby
+pet(180635, 2916);	-- Hungry Burrower
+--pet(180871, );	-- Indigo
+--pet(183601, );	-- Jelly Cat
+pet(183196, 3035);	-- Lavender Nibbler
+pet(182662, 3017);	-- Leafadore 
+pet(180586, 2892);	-- Lightbinders // Bound Lightspawn
+pet(180590, 2895);	-- Lost Soul 
+pet(181171, 2947);	-- Luminous Webspinner
+--pet(183191, );	-- Maw Crawler
+--pet(183194, );	-- Maw Stalker 
+pet(182672, 3021);	-- Misty Leaper 
+pet(181282, 2963);	-- Mu'dud 
+--pet(180841, );	-- Olive Dragon Turtle 
+pet(181164, 2944);	-- Oonar's Arm 
+--pet(180860, );	-- Orange Vulpin 
+pet(180628, 2923);	-- Pearlwing Heron 
+pet(181170, 2946);	-- Pernicious Bonetusk 
+--pet(180208, );	-- PHA7-YNX
+--pet(183116, );	-- Phantasmal Roach 
+pet(183107, 3024);	-- Pile of Ashen Dust // Char
+--pet(180815, );	-- Pink Dragon Turtle 
+--pet(180840, );	-- Pink Glimmerfly 
 pet(173891, 2798);	-- Plagueborn Slime
+pet(181264, 2954);	-- Plaguelouse Hatchling
+pet(183395, 3036);	-- Projection of Remornia 
+--pet(180869, );	-- Purple Crane 
+pet(183621, 3046);	-- Putrid Geist
 pet(183515, 3045);	-- Reanimated Plague
+--pet(180861, );	-- Red Vulpin
+pet(182613, 3008);	-- Refilling Inkwell // Lost Quill
+pet(175114, 2878);	-- Renny 
+pet(180644, 2907);	-- Rocky
+pet(180584, 2891);	-- Rose Spiderling 
+pet(182671, 3020);	-- Runelight Leaper 
+--pet(183117, );	-- Severs 
+--pet(183410, );	-- Sharpclaw 
 pet(182673, 3022);	-- Shimmerbough Hoarder
-pet(182612, 3009);	-- The Count
+pet(181263, 2953);	-- Shy Melvin 
+--pet(180867, );	-- Silver Crane 
+--pet(180813, );	-- Silver Teroclaw 
+pet(181555, 2966);	-- Sinheart 
+pet(182674, 3023);	-- Sir Reginald 
+--pet(181173, );	-- Skittering Venomspitter 
+pet(181271, 2961);	-- Sludge Feeler 
+pet(180589, 2894);	-- Soullocked Sinstone 
+pet(183623, 3044);	-- Spinemaw Larva 
+pet(180872, 2942);	-- Spirited Skyfoal 
+pet(180637, 2914);	-- Starry Dreamfoal 
+pet(182664, 3019);	-- Stemmins 
+pet(180601, 3006);	-- Stonewing Dredwing Pup // Stoneskin Dredwing Pup 
+pet(183855, 3012);	-- Stony's Infused Ruby // Stony
+pet(181269, 2959);	-- Suspended Corpse
+pet(183714, 3015);	-- Swamp Reed // Withering Mire Creeper
+pet(182612, 3009);	-- The Count's Pendant // The Count
+pet(180629, 2922);	-- Thumbbiter
+pet(181272, 2962);	-- Toenail
+--pet(183195, );	-- Torghast Lurker
+--pet(183115, );	-- Torghast Roach
+pet(180627, 2924);	-- Tranquil Wader
+pet(180592, 2901);	-- Trapped Stonefiend
+pet(182663, 3018);	-- Trootie
+pet(180591, 2898);	-- Vial of Roiling Emotions // Raw Emotion
+pet(180603, 2904);	-- Violet Dredwing Pup
+--pet(180856, );	-- White Dragon Turtle
 pet(180859, 2935);	-- White Vulpin
+pet(180636, 2915);	-- Willowbreeze
+pet(181267, 2957);	-- Writhing Spine
+
