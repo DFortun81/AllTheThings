@@ -640,7 +640,34 @@ _.NeverImplemented =
 		--	TIMELESS ISLE
 		-- RARES
 		q(44696),	-- Tracking Quest - Daily - Watcher Osu — alternate Watcher Osu daily quest
+		q(33288),	-- Tracking Quest - First - Archiereus of Flame
+		q(33276),	-- Tracking Quest - First - Bufo
+		q(33274),	-- Tracking Quest - First - Champion of the Black Flame
+		q(33318),	-- Tracking Quest - First - Chelon
+		q(33286),	-- Tracking Quest - First - Cinderfall
+		q(33319),	-- Tracking Quest - First - Cranegnasher
 		q(33290),	-- Tracking Quest - First - Dread Ship Vazuvius — presumably first kill only.  didn't pop on my first kill of the week.
+		q(33261),	-- Tracking Quest - First - Emerald Gander
+		q(33289),	-- Tracking Quest - First - Evermaw
+		q(33285),	-- Tracking Quest - First - Flintlord Gairan
+		q(33275),	-- Tracking Quest - First - Garnia
+		q(33291),	-- Tracking Quest - First - Golganarr
+		q(33272),	-- Tracking Quest - First - Great Turtle Furyshell
+		q(33260),	-- Tracking Quest - First - Gu'chi the Swarmbringer
+		q(33287),	-- Tracking Quest - First - Huolon
+		q(33278),	-- Tracking Quest - First - Imperial Python
+		q(33270),	-- Tracking Quest - First - Ironfur Steelhorn
+		i(33281),	-- Tracking Quest - First - Jakur of Ordon
+		i(33258),	-- Tracking Quest - First - Karkanos
+		i(33273),	-- Tracking Quest - First - Leafmender
+		i(33277),	-- Tracking Quest - First - Monstrous Spineclaw
+		i(33283),	-- Tracking Quest - First - Rock Moss
+		i(33259),	-- Tracking Quest - First - Spirit of Jadefire
+		i(33280),	-- Tracking Quest - First - Stinkbraid
+		i(33597),	-- Tracking Quest - First - The Obliterator
+		i(33279),	-- Tracking Quest - First - Tsavo'ka
+		i(33284),	-- Tracking Quest - First - Urdur the Cauterizer
+		i(33321),	-- Tracking Quest - First - Watcher Osu
 		q(32997),	-- Tracking Quest - First - Zesqua
 		q(33317),	-- Tracking Quest - First - Zhu-Gon the Bitter/Skunky Beer
 		q(33162),	-- Weekly Vignette Boss Kill - Tracking Quest — popped upon arriving to timeless isle and killing evermaw (first rare of the week)

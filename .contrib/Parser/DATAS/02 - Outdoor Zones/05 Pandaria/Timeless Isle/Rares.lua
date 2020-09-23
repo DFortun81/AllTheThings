@@ -447,7 +447,7 @@ _.Zones =
 					},
 				}),
 				n(71864,  {	-- Spelurk
-					["description"] = "You will need to either Blink (Mage) or Displacer Beast (Druid) in order to get inside the cave and open it up to spawn the rare.  Using a toy chair like the Mushroom Chair or the Leather Love Seat may also work.",
+					["description"] = "Classes that can snap/jump forward abruptly (like Mage Blink) can force their way into the cave and spawn the rare.  Using a toy like the Mushroom Chair or the Leather Love Seat may also work.",
 					["questID"] = 32960,
 					["isDaily"] = true,
 					["coord"] = { 59.5, 48.9, 554 },
