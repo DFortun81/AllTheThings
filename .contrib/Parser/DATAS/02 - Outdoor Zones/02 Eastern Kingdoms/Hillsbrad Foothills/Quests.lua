@@ -526,6 +526,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						28197,	-- Discretion is Key
+						28199,	-- For Science
 						28196,	-- The Battle for Hillsbrad
 					},
 				}),

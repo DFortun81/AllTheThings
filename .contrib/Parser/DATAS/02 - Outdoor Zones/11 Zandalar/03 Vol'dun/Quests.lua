@@ -25,6 +25,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 
+				
+				q(50817, {	-- A Charming Tail
+					["sourceQuests"] = { 50818 },	-- A Lost Flute
+					["provider"] = { "n", 135400 },	-- Jenoh
+					["coord"] = { 29.5, 59.3, 864 },
+					["races"] = HORDE_ONLY,
+				}),
+				
 
 				q(48322, {	-- A Goldtusk Greeting
 					["sourceQuests"] = {
@@ -38,6 +46,13 @@ _.Zones =
 				}),
 
 
+				q(50818, {	-- A Lost Flute
+					["provider"] = { "o", 282498 },	-- Desert Flute
+					["coord"] = { 28.9, 54.6, 864 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(50755, {	-- A Meal for Birds
 					["provider"] = { "n", 137629 },	-- Mekaru
 					["coord"] = { 54.8, 42.4, 864 },	-- The Brine Basin (Vol'dun)
@@ -182,6 +197,17 @@ _.Zones =
 				}),
 
 
+				q(50812, {	-- Awakened Elements
+					["provider"] = { "n", 135180 },	-- Nerin Solvis
+					["coord"] = { 26.1, 73.6, 864 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						51991,	-- Charging the Batteries
+						50775,	-- Get Us Some Beach
+					},
+				}),
+				
+				
 				q(51602, {	-- Bandit Blades
 					["sourceQuests"] = { 48846 },	-- Liquid Motivation
 					["provider"] = { "n", 126576 },	-- Razgaji
@@ -198,6 +224,14 @@ _.Zones =
 				}),
 
 
+				q(50771, {	-- Calldown: Cleaner
+					["sourceQuests"] = { 50834 },	-- Keep It Down! (breadcrumb)
+					["provider"] = { "n", 135179 },	-- Merd Archfeld
+					["coord"] = { 26.2, 73.6, 864 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(51775, {	-- Camp Lastwind
 					["sourceQuests"] = { 51668 },	-- Mojambo
 					["isBreadcrumb"] = true,
@@ -233,6 +267,14 @@ _.Zones =
 				}),
 
 
+				q(51991, {	-- Charging the Batteries
+					["sourceQuests"] = { 52129 },	-- Power Problems
+					["provider"] = { "n", 140046 },	-- Rozzy
+					["coord"] = { 28.5, 68.5, 864 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(48887, {	-- Cleanse the Mind
 					["sourceQuests"] = {
 						48993,	-- Powerful Conductors
@@ -507,6 +549,14 @@ _.Zones =
 				}),
 
 
+				q(50775, {	-- Get Us Some Beach
+					["sourceQuests"] = { 50834 },	-- Keep It Down! (breadcrumb)
+					["provider"] = { "n", 135179 },	-- Merd Archfeld
+					["coord"] = { 26.2, 73.6, 864 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(47503, {	-- Gozda'kun the Slaver
 					["sourceQuests"] = {
 						47501,	-- Dirty Work for Dirty Drinks
@@ -617,6 +667,23 @@ _.Zones =
 				}),
 
 
+				q(50979, {	-- Just a Nip
+					["sourceQuests"] = { 50818 },	-- A Lost Flute
+					["provider"] = { "n", 135400 },	-- Jenoh
+					["coord"] = { 29.5, 59.3, 864 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(50834, {	-- Keep It Down!
+					["sourceQuests"] = { 50980 },	-- My Hungry Neighbor
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 135400 },	-- Jenoh
+					["coord"] = { 29.5, 59.3, 864 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(47321, {	-- Knickknack Takeback
 					["sourceQuests"] = { 47320 },	-- A Balm to Calm
 					["provider"] = { "n", 123586 },	-- Kiro
@@ -747,6 +814,25 @@ _.Zones =
 				}),
 
 
+				q(50980, {	-- My Hungry Neighbor
+					["sourceQuests"] = {
+						50817,	-- A Charming Tail
+						50979,	-- Just a Nip
+					},
+					["provider"] = { "n", 135400 },	-- Jenoh
+					["coord"] = { 29.5, 59.3, 864 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(160847),	-- Snake Charmer's Flute (PET!)
+						i(160005),	-- Exiled Veteran's Footguards
+						i(160006),	-- Lastwind Treads
+						i(160007),	-- Resilient Outcast's Treads
+						i(160008),	-- Scorching Sands Footwraps
+						i(160004),	-- Cobra Charmer's Ring
+					},
+				}),
+				
+				
 				q(51056, {	-- My Last Day Alive
 					["sourceQuests"] = { 51054 },	-- Overdue Mutiny
 					["provider"] = { "n", 136309 },	-- First Mate Jamboya
@@ -821,6 +907,14 @@ _.Zones =
 				}),
 
 
+				q(52129, {	-- Power Problems
+					["sourceQuests"] = { 50834 },	-- Keep It Down! (breadcrumb)
+					["provider"] = { "n", 135179 },	-- Merd Archfeld
+					["coord"] = { 26.2, 73.6, 864 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(48993, {	-- Powerful Conductors
 					["sourceQuests"] = { 48895 },	-- The Perfect Offering
 					["provider"] = { "n", 127992 },	-- Akunda the Exalted
@@ -1587,31 +1681,11 @@ _.Zones =
 
 
 
-				q(50817, {	-- A Charming Tail
-					["provider"] = { "n", 135400 },	-- Jenoh
-					["coord"] = { 29.5, 59.3, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50818 },	-- A Lost Flute
-				}),
-				q(50818, {	-- A Lost Flute -- aa
-					["coord"] = { 28.9, 54.6, 864 },
-					["provider"] = { "o", 282498 },	-- Desert Flute
-					["races"] = HORDE_ONLY,
-				}),
 				q(47574, {	-- All Webbed Up
 					["provider"] = { "n", 134134 },	-- Tulu
 					["coord"] = { 58.5, 11.8, 864 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 47965 },	-- The Ruined Temple
-				}),
-				q(50812, {	-- Awakened Elements
-					["provider"] = { "n", 135180 },	-- Nerin Solvis
-					["coord"] = { 26.1, 73.6, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						51991,	-- Charging the Batteries
-						50775,	-- Get Us Some Beach
-					},
 				}),
 				q(48329, {	-- Beaten But Not Broken
 					["cr"] = 130603,	-- Beastbreaker Hakid
@@ -1634,18 +1708,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 128691 },	-- Izarn
 				}),
-				q(50771, {	-- Calldown: Cleaner -- aa
-					["provider"] = { "n", 135179 },	-- Merd Archfeld
-					["coord"] = { 26.2, 73.6, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50834 },	-- Keep It Down! (breadcrumb)
-				}),
-				q(51991, {	-- Charging the Batteries
-					["coord"] = { 28.5, 68.5, 864 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 140046 },	-- Rozzy
-					["sourceQuests"] = { 52129 },	-- Power Problems
-				}),
 				q(47943, {	-- Crab Trapping -- aa
 					["coord"] = { 61.9, 22.1, 864 },
 					["races"] = HORDE_ONLY,
@@ -1657,12 +1719,6 @@ _.Zones =
 					["coord"] = { 36.2, 36.8, 864 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 51142 },	-- Pests
-				}),
-				q(50775, {	-- Get Us Some Beach -- aa
-					["provider"] = { "n", 135179 },	-- Merd Archfeld
-					["coord"] = { 26.2, 73.6, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50834 },	-- Keep It Down! (breadcrumb)
 				}),
 				q(47570, {	-- Hidden Motives -- aa
 					["provider"] = { "n", 134098 },	-- Torka
@@ -1701,41 +1757,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 47965 },	-- The Ruined Temple
 				}),
-				q(50979, {	-- Just a Nip
-					["provider"] = { "n", 135400 },	-- Jenoh
-					["coord"] = { 29.5, 59.3, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50818 },	-- A Lost Flute
-				}),
-				q(50834, {	-- Keep It Down!
-					["provider"] = { "n", 135400 },	-- Jenoh
-					["coord"] = { 29.5, 59.3, 864 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["sourceQuests"] = { 50980 },	-- My Hungry Neighbor
-				}),
 				q(47578, {	-- Mark of the Loa
 					["provider"] = { "n", 123052 },	-- Kimbul
 					["coord"] = { 56.6, 10.3, 864 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 47576 },	-- Wrath of the Tiger
-				}),
-				q(50980, {	-- My Hungry Neighbor
-					["provider"] = { "n", 135400 },	-- Jenoh
-					["coord"] = { 29.5, 59.3, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						50817,	-- A Charming Tail
-						50979,	-- Just a Nip
-					},
-					["g"] = {
-						i(160847),	-- Snake Charmer's Flute
-						i(160005),	-- Exiled Veteran's Footguards
-						i(160006),	-- Lastwind Treads
-						i(160007),	-- Resilient Outcast's Treads
-						i(160008),	-- Scorching Sands Footwraps
-						i(160004),	-- Cobra Charmer's Ring
-					},
 				}),
 				q(47928, {	-- Offering for the Loa
 					["provider"] = { "n", 134133 },	-- Teekcha
@@ -1751,12 +1777,6 @@ _.Zones =
 					["provider"] = { "n", 136562 },	-- Quartermaster Alfin
 					["coord"] = { 36.6, 32.4, 864 },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52129, {	-- Power Problems -- aa
-					["provider"] = { "n", 135179 },	-- Merd Archfeld
-					["coord"] = { 26.2, 73.6, 864 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50834 },	-- Keep It Down! (breadcrumb)
 				}),
 				q(50656, {	-- Risky Rescue -- aa
 					["coord"] = { 32.6, 48.4, 864 },

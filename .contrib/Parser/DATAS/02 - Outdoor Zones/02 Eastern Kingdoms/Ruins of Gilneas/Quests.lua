@@ -33,7 +33,7 @@ _.Zones =
 					}),
 					q(27350, {	-- Break in Communications: Rutsak's Guard
 						["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
-						["coord"] = { 57.5, 18.2, 21 },
+						["coord"] = { 57.5, 18.2, 217 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27349 },	-- Break in Communications: Dreadwatch Outpost
 					}),
@@ -80,7 +80,7 @@ _.Zones =
 					}),
 					q(27364, {	-- On Whose Orders?
 						["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
-						["coord"] = { 57.5, 18.2, 21 },
+						["coord"] = { 57.5, 18.2, 217 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27350 },	-- Break in Communications: Rutsak's Guard
 					}),
