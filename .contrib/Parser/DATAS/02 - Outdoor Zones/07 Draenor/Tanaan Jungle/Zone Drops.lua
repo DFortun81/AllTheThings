@@ -72,7 +72,9 @@ _.Zones =
 							i(124589),	-- Axeclaw Spaulders
 							i(128351),	-- Axeclaw Spaulders [Warforged]
 							i(124590),	-- Felbane Shoulderguard
-							i(128352),	-- Felbane Shoulderguard [Warforged]
+							i(128352, {	-- Felbane Shoulderguard [Warforged]
+								["u"] = REMOVED_FROM_GAME,	-- tons of complaints about this one, and we've received 0 confirmation that it drops.  hopefully with removed tag, if it shows up somebody will report it.
+							}),
 						},
 					}),
 					i(128348, {	-- Baleful Spaulders
@@ -85,7 +87,9 @@ _.Zones =
 							i(124589),	-- Axeclaw Spaulders
 							i(128351),	-- Axeclaw Spaulders [Warforged]
 							i(124590),	-- Felbane Shoulderguard
-							i(128352),	-- Felbane Shoulderguard [Warforged]
+							i(128352, {	-- Felbane Shoulderguard [Warforged]
+								["u"] = REMOVED_FROM_GAME,	-- tons of complaints about this one, and we've received 0 confirmation that it drops.  hopefully with removed tag, if it shows up somebody will report it.
+							}),
 						},
 					}),
 					i(124560, {	-- Baleful Cloak

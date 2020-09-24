@@ -752,8 +752,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(19017, {	-- Essence of the Firelord
 					["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
 				}),
-				{	-- Eye of Sulfuras
-					["itemID"] = 17204,	-- Eye of Sulfuras
+				i(17204, {	-- Eye of Sulfuras
 					["classes"] = {
 						DEATHKNIGHT,
 						DRUID,
@@ -761,21 +760,14 @@ _.Instances = { tier(1, {	-- Classic
 						SHAMAN,
 						WARRIOR,
 					},
+					["cost"] = { { "i", 17193, 1 } },	-- Sulfuron Hammer
 					["f"] = 24,	-- To match Sulfuras, Hand of Ragnaros and cause it to display even if Quest Items are filtered
-					["cost"] = {
-						{ "i", 17193, 1 },	-- Sulfuron Hammer
-					},
 					["g"] = {
-						{	-- Sulfuras, Hand of Ragnaros
-							["itemID"] = 17182,	-- Sulfuras, Hand of Ragnaros
-							["g"] = {
-								{	-- Sulfuras, Hand of Ragnaros
-									["achievementID"] = 429,	-- Sulfuras, Hand of Ragnaros
-								},
-							},
-						},
+						i(17182, {	-- Sulfuras, Hand of Ragnaros
+							ach(429),	-- Sulfuras, Hand of Ragnaros
+						}),
 					},
-				},
+				}),
 				i(138833),	-- Illusion: Flametongue (Shaman)
 				i(17076),	-- Bonereaver's Edge
 				i(17104),	-- Spinal Reaper

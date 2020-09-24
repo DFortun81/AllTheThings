@@ -133,7 +133,7 @@ _.Instances = { tier(1, {	-- Classic
 							ach(4402),	-- More Dots! (10 player)
 							ach(4396),	-- Onyxia's Lair (10 player)
 							ach(4404),	-- She Deep Breaths More (10 player)
-							i(49644, {		-- Head of Onyxia (A)
+							i(49644, {	-- Head of Onyxia (A)
 								["questID"] = 24428,	-- A Most Puzzling Circumstance (A)
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 80,
@@ -149,8 +149,8 @@ _.Instances = { tier(1, {	-- Classic
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 60,
 										["g"] = {
-											recipe(19093),		-- Onyxia Scale Cloak
-											un(REMOVED_FROM_GAME, i(15769)), 	-- Pattern: Onyxia Scale Cloak
+											recipe(19093),	-- Onyxia Scale Cloak
+											un(REMOVED_FROM_GAME, i(15769)),	-- Pattern: Onyxia Scale Cloak
 										},
 									}),
 								},
@@ -160,9 +160,9 @@ _.Instances = { tier(1, {	-- Classic
 								["races"] = HORDE_ONLY,
 								["lvl"] = 80,
 								["g"] = {
-									i(49486),		-- Polished Dragonslayer's Signet
-									i(49485),		-- Sparkling Onyxia Tooth Pendant
-									i(49487),		-- Purified Onyxia Blood Talisman
+									i(49486),	-- Polished Dragonslayer's Signet
+									i(49485),	-- Sparkling Onyxia Tooth Pendant
+									i(49487),	-- Purified Onyxia Blood Talisman
 									q(7493, {	-- The Journey Has Just Begun (H)
 										["provider"] = { "n", 14392 },	-- Overlord Natoj
 										["coord"] = { 52.2, 75.8, 84 },
@@ -229,7 +229,7 @@ _.Instances = { tier(1, {	-- Classic
 							ach(4405),	-- More Dots! (25 player)
 							ach(4397),	-- Onyxia's Lair (25 player)
 							ach(4407),	-- She Deep Breaths More (25 player)
-							i(49644, {		-- Head of Onyxia (A)
+							i(49644, {	-- Head of Onyxia (A)
 								["questID"] = 24428,	-- A Most Puzzling Circumstance (A)
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 80,
@@ -245,7 +245,7 @@ _.Instances = { tier(1, {	-- Classic
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 60,
 										["g"] = {
-											recipe(19093),		-- Onyxia Scale Cloak
+											recipe(19093),	-- Onyxia Scale Cloak
 											un(REMOVED_FROM_GAME, i(15769)), 	-- Pattern: Onyxia Scale Cloak
 										},
 									}),
@@ -256,9 +256,9 @@ _.Instances = { tier(1, {	-- Classic
 								["races"] = HORDE_ONLY,
 								["lvl"] = 80,
 								["g"] = {
-									i(49486),		-- Polished Dragonslayer's Signet
-									i(49485),		-- Sparkling Onyxia Tooth Pendant
-									i(49487),		-- Purified Onyxia Blood Talisman
+									i(49486),	-- Polished Dragonslayer's Signet
+									i(49485),	-- Sparkling Onyxia Tooth Pendant
+									i(49487),	-- Purified Onyxia Blood Talisman
 									q(7493, {	-- The Journey Has Just Begun (H)
 										["provider"] = { "n", 14392 },	-- Overlord Natoj
 										["coord"] = { 52.2, 75.8, 84 },
