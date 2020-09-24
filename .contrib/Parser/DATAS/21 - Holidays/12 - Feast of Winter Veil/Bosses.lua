@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 _.Holidays = bubbleDown({["u"] = 29},
 {
 	holiday(235485, {	-- Feast of Winter Veil
@@ -19,7 +20,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						n(29310, {	-- Jedoga Shadowseeker
 							un(29, ig(21524, {	-- Red Winter Hat
 								["maps"] = { 132 },
-							})), 
+							})),
 						}),
 					}),
 					inst(281, {	-- The Nexus
@@ -249,7 +250,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 							n(133298, {	-- Fetid Devourer
 								un(29, i(139299, {	-- Finely-Tailored Red Holiday Hat
 									["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-									["maps"] = {	
+									["maps"] = {
 										1148,	-- Ruin's Descent
 										1149,	-- Hall of Sanitation
 										1150,	-- Ring of Containment

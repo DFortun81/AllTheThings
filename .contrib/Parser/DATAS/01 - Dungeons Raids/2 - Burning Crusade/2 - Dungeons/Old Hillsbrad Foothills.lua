@@ -66,7 +66,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						17820,	-- Durnholde Rifleman
 					},
 				}),
-			}),	
+			}),
 			d(1, {	-- Normal
 				cr(17848, e(538, {	-- Lieutenant Drake
 					i(28210),	-- Bloodskull Destroyer
@@ -127,7 +127,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["groups"] = {
 					n(28132, {	-- Don Carlos
 						["description"] = "This is a neutral mob that wanders the road.",
-						["groups"] = {	
+						["groups"] = {
 							i(134019),	-- Don Carlos' Famous Hat (TOY!)
 						},
 					}),

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -1365,7 +1366,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38421,	-- Garrison Campaign: Onslaught at Auchindoun
 					["g"] = {
-						i(124552, {	 -- Baleful Treads
+						i(124552, {	-- Baleful Treads
 							i(124573),  -- Axeclaw Boots
 							i(124572),	-- Bladefang Boots
 							i(124574),	-- Felbane Greaves
@@ -1379,7 +1380,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 38415,	-- Garrison Campaign: Onslaught at Auchindoun
 					["g"] = {
-						i(124552, {	 -- Baleful Treads
+						i(124552, {	-- Baleful Treads
 							i(124573),  -- Axeclaw Boots
 							i(124572),	-- Bladefang Boots
 							i(124574),	-- Felbane Greaves

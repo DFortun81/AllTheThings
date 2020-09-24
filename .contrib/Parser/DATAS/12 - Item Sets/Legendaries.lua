@@ -1,57 +1,58 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-_.GearSets = 
+
+_.GearSets =
 {
 	n(-364, {	-- Legendaries
 		["achievementID"] = 5010,	-- The Ultimate Collection
-		["g"] = {	
+		["g"] = {
 			n(-319, {	-- Weapons
-				un(REMOVED_FROM_GAME, i(22632, {	-- Atiesh, Greatstaff of the Guardian (Druid)
-					["classes"] = { 11 }
+				un(REMOVED_FROM_GAME, i(22632, {	-- Atiesh, Greatstaff of the Guardian
+					["classes"] = { DRUID }
 				})),
-				un(REMOVED_FROM_GAME, i(22589, {	-- Atiesh, Greatstaff of the Guardian (Mage)
-					["classes"] = { 8 }
+				un(REMOVED_FROM_GAME, i(22589, {	-- Atiesh, Greatstaff of the Guardian
+					["classes"] = { MAGE }
 				})),
-				un(REMOVED_FROM_GAME, i(22631, {	-- Atiesh, Greatstaff of the Guardian (Priest)
-					["classes"] = { 5 }
+				un(REMOVED_FROM_GAME, i(22631, {	-- Atiesh, Greatstaff of the Guardian
+					["classes"] = { PRIEST }
 				})),
-				un(REMOVED_FROM_GAME, i(22630, {	-- Atiesh, Greatstaff of the Guardian (WL)
-					["classes"] = { 9 }
+				un(REMOVED_FROM_GAME, i(22630, {	-- Atiesh, Greatstaff of the Guardian
+					["classes"] = { WARLOCK }
 				})),
-				i(71086, {	-- Dragonwrath, Tarecgosa's Rest (Priest, Mage, Lock, Druid, Shaman)
-					["classes"] = { 5, 8, 9, 11, 7 }
+				i(71086, {	-- Dragonwrath, Tarecgosa's Rest
+					["classes"] = { PRIEST, MAGE, WARLOCK, DRUID, SHAMAN }
 				}),
 				i(77949, {	-- Golad, Twilight of Aspects
-					["classes"] = { 4 }
+					["classes"] = { ROGUE }
 				}),
 				i(49623, {	-- Shadowmourne
-					["classes"] = { 1, 2, 6 }
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT }
 				}),
 				i(17182, {	-- Sulfuras
-					["classes"] = { 1, 2, 6, 7, 11 }
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT, SHAMAN, DRUID }
 				}),
 				i(19019, {	-- Thunderfury
-					["classes"] = { 1, 9, 8, 4, 10, 12, 3, 2, 6 }
+					["classes"] = { WARRIOR, WARLOCK, MAGE, ROGUE, MONK, DEMONHUNTER, HUNTER, PALADIN, DEATHKNIGHT }
 				}),
 				i(34334, {	-- Thori'dal, the Stars' Fury
-					["classes"] = { 1, 3, 4, }
+					["classes"] = { WARRIOR, HUNTER, ROGUE }
 				}),
 				i(77950, {	-- Tiriosh, Nightmare of Ages
-					["classes"] = { 4 }
+					["classes"] = { ROGUE }
 				}),
-				i(46017, {	-- Val'anyr, Hammer of Ancient Kings (Priest, Druid, Monk, Shaman, Paladin)
-					["classes"] = { 5, 11, 10, 7, 2 }
+				i(46017, {	-- Val'anyr, Hammer of Ancient Kings
+					["classes"] = { PRIEST, DRUID, MONK, SHAMAN, PALADIN }
 				}),
-				i(32837, {	-- Warglaive of Azzinoth 
-					["classes"] = { 1, 4, 10, 12, 6 }
+				i(32837, {	-- Warglaive of Azzinoth
+					["classes"] = { WARRIOR, ROGUE, MONK, DEMONHUNTER, DEATHKNIGHT }
 				}),
-				i(32838, {	-- Warglaive of Azzinoth 
-					["classes"] = { 1, 4, 10, 12, 6 }
+				i(32838, {	-- Warglaive of Azzinoth
+					["classes"] = { WARRIOR, ROGUE, MONK, DEMONHUNTER, DEATHKNIGHT }
 				}),
 			}),
 			n(-163, {	-- Armor
-				cl(12, { 	-- Demon Hunter 
+				cl(DEMONHUNTER, {
 					i(137061),	-- Raddon's Cascading Eyes
 					i(144279),	-- Delusions of Grandeur
 					i(137071),	-- Runemaster's Pauldrons
@@ -63,12 +64,12 @@ _.GearSets =
 					i(144292),	-- Spirit of the Darkness Flame
 					i(151799),	-- Obilivion's Embrace
 					i(138949),	-- Kirel Narak
-					i(137022),	-- Loramus Thalipedes' Sacrifice			
+					i(137022),	-- Loramus Thalipedes' Sacrifice
 					i(137038),	-- Anger of the Half-Giants
 					i(138854),	-- Fragment of the Betrayer's Prison
 					i(151639),	-- Soul of the Slayer
 				}),
-				cl(6, { 	-- Death Knight
+				cl(DEATHKNIGHT, {
 					i(132459),	-- Perseverance of the Ebon Martyr
 					i(144280),	-- Death March
 					i(144281),	-- Skullflower's Haemostasis
@@ -80,16 +81,16 @@ _.GearSets =
 					i(132448),	-- The Instructor's Fourth Lesson
 					i(132458),	-- Toravon's Whiteout Bindings
 					i(132441),	-- Draugr, Girdle of the Everlasting King
-					i(132366),	-- Koltira's Newfound Will				
+					i(132366),	-- Koltira's Newfound Will
 					i(132367),	-- Service of Gorefiend
 					i(144293),	-- Consort's Cold Core
-					i(132453),	-- Rattlegore Bone Legplates			
+					i(132453),	-- Rattlegore Bone Legplates
 					i(133974),	-- Lana'thel's Lament
 					i(137037),	-- Uvanimor, the Unbeautiful
 					i(137223),	-- Seal of Necrofantasia
 					i(151640),	-- Soul of the Deahtlord
-				}),	
-				cl(11, {	-- Druid
+				}),
+				cl(DRUID, {
 					i(151801),	-- Behemoth Headdress
 					i(151783),	-- Chameleon Song
 					i(144432),	-- Oakheart's Puny Quods
@@ -117,7 +118,7 @@ _.GearSets =
 					i(151800),	-- Radiant Moonlight
 					i(151802),	-- Fury of Nature
 				}),
-				cl(3, { 	-- Hunter
+				cl(HUNTER, {
 					i(137064),	-- The Shadow Hunter's Voodoo Mask
 					i(144326),	-- The Mantle of Command
 					i(151803),	-- Celerity of the Windrunners
@@ -138,7 +139,7 @@ _.GearSets =
 					i(137382),	-- The Apex Predator's Claw
 					i(151641),	-- Soul of the Huntmaster
 				}),
-				cl(8, {		-- Mage
+				cl(MAGE, {
 					i(132863),	-- Darckli's Dragonfire Diadem
 					i(144274),	-- Gravity Seal
 					i(151810),	-- Shattered Fragments of Sindragosa
@@ -158,7 +159,7 @@ _.GearSets =
 					i(132410),	-- Shard of the Exodar
 					i(151642),	-- Soul of the Archmage
 				}),
-				cl(10, { 	-- Monk				
+				cl(MONK, {
 					i(137063),	-- Fundamental Observation
 					i(151811),	-- The Wind Blows
 					i(151788),	-- Stormstout's Last Gasp
@@ -183,7 +184,7 @@ _.GearSets =
 					i(144340),	-- Shelter of Rin
 					i(144239),	-- The Emperor's Capacitor
 				}),
-				cl(2, { 	-- Paladin		
+				cl(PALADIN, {
 					i(137065),	-- Justice Gaze
 					i(144275),	-- Saruan's Resolve
 					i(151782),	-- The Topless Tower
@@ -204,7 +205,7 @@ _.GearSets =
 					i(137048),	-- Liadrin's Fury Unleashed
 					i(151644),	-- Soul of the Highlord
 				}),
-				cl(5, { 	-- Priest
+				cl(PRIEST, {
 					i(144244),	-- Kam Xi'raff
 					i(151787),	-- The Alabaster Lady
 					i(133971),	-- Zenk'aram, Iridi's Anadem
@@ -213,7 +214,7 @@ _.GearSets =
 					i(137109),	-- X'anshi, Shroud of Archbishop Benedictus
 					i(144438),	-- Zeks Exterminatus
 					i(132861),	-- Estel, Dejahna's Inspiration
-					i(151814),	-- Heart of the Void					
+					i(151814),	-- Heart of the Void
 					i(132409),	-- Anund's Seared Shackles
 					i(132450),	-- Muze's Unwavering Will
 					i(132436),	-- Skjoldr, Sanctuary of Ivangont
@@ -228,7 +229,7 @@ _.GearSets =
 					i(151646),	-- Soul of the High Priest
 					i(132449),	-- Phyrix's Embrace
 				}),
-				cl(4, { 	-- Rogue		
+				cl(ROGUE, {
 					i(151815),	-- The Empty Crown
 					i(144236),	-- Mantle of the Master Assassin
 					i(151817),	-- The Curse of Restlessness
@@ -245,7 +246,7 @@ _.GearSets =
 					i(137049),	-- Insignia of Ravenholdt
 					i(150936),	-- Soul of the Shadowblade
 				}),
-				cl(7, { 	-- Shaman
+				cl(SHAMAN, {
 					i(143732),	-- Uncertain Reminder
 					i(137074),	-- Echoes of the Great Sundering
 					i(137616),	-- Emalon's Charged Core
@@ -265,7 +266,7 @@ _.GearSets =
 					i(137051),	-- Focuser of Jonat, the Elder
 					i(151647),	-- Soul of the Farseer
 				}),
-				cl(9, { 	-- Warlock				
+				cl(WARLOCK, {
 					i(132394),	-- Hood of Eternal Disdain
 					i(144385),	-- Wakener's Loyalty
 					i(144369),	-- Lessons of Space-Time
@@ -285,7 +286,7 @@ _.GearSets =
 					i(132460),	-- Alythess's Pyrogenics
 					i(151649),	-- Soul of the Netherlord
 				}),
-				cl(1, { 	-- Warrior
+				cl(WARRIOR, {
 					i(137088),	-- Ceann-Ar Charger
 					i(151823),	-- The Great Storm's Eye
 					i(143728),	-- Timeless Stratagem
@@ -295,62 +296,62 @@ _.GearSets =
 					i(137060),	-- Archavon's Heavy Hand
 					i(137108),	-- Kakushan's Stormscale Gauntlets
 					i(137087),	-- Naj'entus's Vertebrae
-					i(137089),	-- Thundergod's Vigor 
+					i(137089),	-- Thundergod's Vigor
 					i(151822),	-- Ararat's Bloodmirror
 					i(151824),	-- Valarjar Berserkers
 					i(137077),	-- Weight of the Earth
 					i(137052),	-- Ayala's Stone Heart
 					i(137054),	-- The Walls Fell
 				}),
-			-- Legion
-			i(132443, {	-- Aggramar's Stride
-				["classes"] = { 1, 2, 6 }
-			}),
-			i(146666, {	-- Celumbra, the Night's Dichotomy (Mage, Priest, Lock)
-				["classes"] = { 5, 9, 8 }
-			}),
-			i(133976, {	-- Cinidaria, the Symbiote 
-				["classes"] = { 11, 4, 10, 12 }
-			}),
-			i(132455, {	-- Norgannon's Foresigh (Priest, Mage, Lock)
-				["classes"] = { 5, 9, 8 }
-			}),
-			i(146667, {	-- Rethu's Incessant Courage
-				["classes"] = { 1, 2, 6 }
-			}),
-			i(132466, {	-- Roots of Shaladrassil
-				["classes"] = { 3, 7 }
-			}),
-			i(146669, {	-- The Sentinel's Eternal Refuge
-				["classes"] = { 11, 4, 10, 12 }
-			}),
-			i(146668, {	-- Vigilance Perch 
-				["classes"] = { 3, 7 }
-			}),
-			i(132444),	-- Prydaz, Xavric's Magnum Opus
-			i(152626),	-- Insignia of the Grand Army
-			i(132452),	-- Sephuz's Secret
-			i(144249, {	-- Archimonde's Hatred Reborn
-				["classes"] = { 1, 2, 6, 10, 11, 12 }
-			}),
-			i(154172),	-- Aman'Thul's Vision
-			i(144259),  -- Kil'jaeden's Burning Wish
-			i(144258, {	-- Velen's Future Sight
-				["classes"] = { 2, 5, 7, 10, 11 }
-			}),
-			-- Warlords of Draenor
-			un(REMOVED_FROM_GAME, i(124634)),	-- Thorasus, the Stone Heart of Draenor
-			un(REMOVED_FROM_GAME, i(124635)),	-- Nithramus, the All-Seer
-			un(REMOVED_FROM_GAME, i(124636)),	-- Maalus, the Blood Drinker
-			un(REMOVED_FROM_GAME, i(124637)),	-- Sanctus, Sigil of the Unbroken
-			un(REMOVED_FROM_GAME, i(124638)),	-- Etheralus, the Eternal Reward
-			-- Mists of Pandaria
-			un(38, i(102248)),	-- Fen-Yu, Fury of Xuen
-			un(38, i(102249)),	-- Gon-Lu, Strength of Xuen
-			un(38, i(102247)),	-- Jina-Kang, Kindness of Chi-Ji
-			un(38, i(102245)),	-- Qian-Le, Courage of Niuzao
-			un(38, i(102250)),	-- Qian-Ying, Fortitude of Niuzao
-			un(38, i(102246)),	-- Xing-Ho, Breath of Yu'lon
+				-- Legion
+				i(132443, {	-- Aggramar's Stride
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT }
+				}),
+				i(146666, {	-- Celumbra, the Night's Dichotomy
+					["classes"] = { MAGE, PRIEST, WARLOCK }
+				}),
+				i(133976, {	-- Cinidaria, the Symbiote
+					["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER }
+				}),
+				i(132455, {	-- Norgannon's Foresigh
+					["classes"] = { PRIEST, MAGE, WARLOCK }
+				}),
+				i(146667, {	-- Rethu's Incessant Courage
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT }
+				}),
+				i(132466, {	-- Roots of Shaladrassil
+					["classes"] = { HUNTER, SHAMAN }
+				}),
+				i(146669, {	-- The Sentinel's Eternal Refuge
+					["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER }
+				}),
+				i(146668, {	-- Vigilance Perch
+					["classes"] = { HUNTER, SHAMAN }
+				}),
+				i(132444),	-- Prydaz, Xavric's Magnum Opus
+				i(152626),	-- Insignia of the Grand Army
+				i(132452),	-- Sephuz's Secret
+				i(144249, {	-- Archimonde's Hatred Reborn
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT, MONK, DRUID, DEMONHUNTER }
+				}),
+				i(154172),	-- Aman'Thul's Vision
+				i(144259),  -- Kil'jaeden's Burning Wish
+				i(144258, {	-- Velen's Future Sight
+					["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID }
+				}),
+				-- Warlords of Draenor
+				un(REMOVED_FROM_GAME, i(124634)),	-- Thorasus, the Stone Heart of Draenor
+				un(REMOVED_FROM_GAME, i(124635)),	-- Nithramus, the All-Seer
+				un(REMOVED_FROM_GAME, i(124636)),	-- Maalus, the Blood Drinker
+				un(REMOVED_FROM_GAME, i(124637)),	-- Sanctus, Sigil of the Unbroken
+				un(REMOVED_FROM_GAME, i(124638)),	-- Etheralus, the Eternal Reward
+				-- Mists of Pandaria
+				un(38, i(102248)),	-- Fen-Yu, Fury of Xuen
+				un(38, i(102249)),	-- Gon-Lu, Strength of Xuen
+				un(38, i(102247)),	-- Jina-Kang, Kindness of Chi-Ji
+				un(38, i(102245)),	-- Qian-Le, Courage of Niuzao
+				un(38, i(102250)),	-- Qian-Ying, Fortitude of Niuzao
+				un(38, i(102246)),	-- Xing-Ho, Breath of Yu'lon
 			}),
 		},
 	}),

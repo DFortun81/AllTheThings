@@ -14,55 +14,48 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			d(1, {	-- Normal (Legacy)
 				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
-					n(QUESTS, { 
-						{
-							["questID"] = 11165,	-- A Troll Among Trolls
+					n(QUESTS, {
+						q(11165, {	-- A Troll Among Trolls
 							["provider"] = { "n", 23761 },	-- Quest Giver: Prigmon
 							["sourceQuest"] = 11164,	-- Source Quest: Tuskin' Raiders
 							["u"] = REMOVED_FROM_GAME,
-						},
-						{
-							["questID"] = 11171,	-- Hex Lord? Hah!
+						}),
+						q(11171, {	-- Hex Lord? Hah!
 							["provider"] = { "n", 23559 },	-- Quest Giver: Budd
 							["sourceQuest"] = 11166,	-- Source Quest: X Marks... Your Doom!
 							["u"] = REMOVED_FROM_GAME,
-						},
-						{
-							["questID"] = 11130, 	-- Oooh, Shinies!
+						}),
+						q(11130, {	-- Oooh, Shinies!
 							["provider"] = { "n", 19227 },	-- Quest Giver: Griftah (Shattrath)
 							["u"] = REMOVED_FROM_GAME,
 							["isBreadcrumb"] = true,
-						},
-						{
-							["questID"] = 11195,	-- Playin' With Dolls
+						}),
+						q(11195, {	-- Playin' With Dolls
 							["provider"] = { "n", 23897 },	-- Quest Giver: Zungam
 							["sourceQuest"] = 11165,	-- Source Quest: A Troll Among Trolls
 							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(REMOVED_FROM_GAME, i(34256)),	-- Charmed Amani Jewel
 							},
-						},
-						{
-							["questID"] = 11132,	-- Promises, Promises...
+						}),
+						q(11132, {	-- Promises, Promises...
 							["provider"] = { "n", 23559 },	-- Quest Giver: Budd
 							["sourceQuest"] = 11130,	-- Source Quest: Oooh, Shinies!
 							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(REMOVED_FROM_GAME, i(34067)),	-- Tattered Hexcloth Sack
 							},
-						},
-						{
-							["questID"] = 11164,	-- Tuskin' Raiders
+						}),
+						q(11164, {	-- Tuskin' Raiders
 							["provider"] = { "n", 23761 },	-- Quest Giver: Prigmon
 							["sourceQuest"] = 11130,	-- Source Quest: Oooh, Shinies!
 							["u"] = REMOVED_FROM_GAME,
-						},
-						{
-							["questID"] = 11166,	-- X Marks... Your Doom!
+						}),
+						q(11166, {	-- X Marks... Your Doom!
 							["provider"] = { "n", 23559 },	-- Quest Giver: Budd
 							["sourceQuest"] = 11132,	-- Source Quest: Promises, Promises...
 							["u"] = REMOVED_FROM_GAME,
-						},
+						}),
 					}),
 					n(ZONEDROPS, {
 						i(33865, {	-- Amani Hex Stick

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -419,7 +420,7 @@ _.Zones =
 						i(106498),	-- Steamscar Bindings
 						-- Hands
 						i(106516),	-- Highland Gauntlets
-						i(106508),	-- Mandragoran Handwraps						
+						i(106508),	-- Mandragoran Handwraps
 						i(106490),	-- Shardback Gauntlets
 						i(106501),	-- Steamscar Gloves
 						-- Waist
@@ -498,7 +499,7 @@ _.Zones =
 						i(106498),	-- Steamscar Bindings
 						-- Hands
 						i(106516),	-- Highland Gauntlets
-						i(106508),	-- Mandragoran Handwraps						
+						i(106508),	-- Mandragoran Handwraps
 						i(106490),	-- Shardback Gauntlets
 						i(106501),	-- Steamscar Gloves
 						-- Waist
@@ -620,7 +621,7 @@ _.Zones =
 						i(106498),	-- Steamscar Bindings
 						-- Hands
 						i(106516),	-- Highland Gauntlets
-						i(106508),	-- Mandragoran Handwraps						
+						i(106508),	-- Mandragoran Handwraps
 						i(106490),	-- Shardback Gauntlets
 						i(106501),	-- Steamscar Gloves
 						-- Waist
@@ -706,7 +707,7 @@ _.Zones =
 						i(106498),	-- Steamscar Bindings
 						-- Hands
 						i(106516),	-- Highland Gauntlets
-						i(106508),	-- Mandragoran Handwraps						
+						i(106508),	-- Mandragoran Handwraps
 						i(106490),	-- Shardback Gauntlets
 						i(106501),	-- Steamscar Gloves
 						-- Waist
@@ -725,9 +726,9 @@ _.Zones =
 						i(106495),	-- Shardback Sabatons
 						i(106499),	-- Steamscar Boots
 						-- Finger
-						i(116704),	-- Evermorn Ring			
+						i(116704),	-- Evermorn Ring
 					},
-				}),	
+				}),
 				o(236158, {	-- Sniper's Crossbow
 					["questID"] = 36634,
 					["coord"] = { 45.0, 42.6, 543 },
@@ -738,7 +739,7 @@ _.Zones =
 				o(236092, {	-- Stashed Emergency Rucksack
 					["questID"] = 36604,
 					["coord"] = { 48.1, 93.4, 543 },
-					["g"] = {	
+					["g"] = {
 						-- Weapons
 						i(116508),	-- Creeperclaw Axe
 						i(116510),	-- Creeperclaw Bow
@@ -785,7 +786,7 @@ _.Zones =
 						i(106498),	-- Steamscar Bindings
 						-- Hands
 						i(106516),	-- Highland Gauntlets
-						i(106508),	-- Mandragoran Handwraps						
+						i(106508),	-- Mandragoran Handwraps
 						i(106490),	-- Shardback Gauntlets
 						i(106501),	-- Steamscar Gloves
 						-- Waist
@@ -804,7 +805,7 @@ _.Zones =
 						i(106495),	-- Shardback Sabatons
 						i(106499),	-- Steamscar Boots
 						-- Finger
-						i(116704),	-- Evermorn Ring			
+						i(116704),	-- Evermorn Ring
 					},
 				}),
 				o(231069, {	-- Strange Looking Dagger
@@ -840,8 +841,8 @@ _.Zones =
 					["coord"] = { 48.9, 47.3, 543 },
 					["g"] = {
 						i(118705, {	-- Warm Goren Egg
-							["description"] = "The egg hatches into a toy after 7 days.",	
-							["g"] = {	
+							["description"] = "The egg hatches into a toy after 7 days.",
+							["g"] = {
 								i(118716),	-- Goren Garb (TOY!)
 							},
 						}),

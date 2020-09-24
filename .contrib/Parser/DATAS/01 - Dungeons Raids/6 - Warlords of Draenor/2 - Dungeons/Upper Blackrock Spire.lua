@@ -443,7 +443,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						79912,	-- Commander Tharbek
 						80098,	-- Ironbarb Skyreaver
 					},
-					["g"] = {	
+					["g"] = {
 						i(118726),	-- Tharbek's Brutal Possessor
 						i(118725),	-- Tharbek's Unholy Charge
 						i(109898),	-- Blackwater Wrap

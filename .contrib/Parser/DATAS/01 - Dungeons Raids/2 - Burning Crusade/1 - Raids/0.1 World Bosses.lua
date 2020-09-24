@@ -8,7 +8,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["ordered"] = true,
 		["isRaid"] = true,
 		["lvl"] = 70,
-		["g"] = { 
+		["g"] = {
 			n(18728, { 	-- Doom Lord Kazzak
 				["description"] = "Originally known just as Lord Kazzak, but after he found an artifact to reopen the Dark Portal and travelled through it, he was promoted. He now commands the Legion war effort in Outland in the name of his master, Kil'jaeden. Lord Kazzak's replacement on Azeroth after the re-opening of the Dark Portal is Highlord Kruul, one of Kazzak's minions.",
 				["modelScale"] = 3.8,
@@ -45,7 +45,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(30725),	-- Anger-Spark Gloves
 					i(30727),	-- Gilded Trousers of Benediction
 				},
-			}),	
+			}),
 		},
 	}),
 })};

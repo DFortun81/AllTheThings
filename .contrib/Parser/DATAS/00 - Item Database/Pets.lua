@@ -12,11 +12,11 @@ end
 -- This number can be found in the "Summoned by" tab on Wowhead.
 -- To manually collect the speciesID in-game (live or PTR):
 	-- /dump C_PetJournal.FindPetIDByName("petName")
--- The speciesID can also be found via various addons — the slumber-approved addon is Rematch.  
+-- The speciesID can also be found via various addons — the slumber-approved addon is Rematch.
 	-- In the Rematch options, make sure "Show Species ID & Ability ID" is checked.
 	-- The speciesID is the number by the icon that looks like a cogwheel on the card that pops up when you hover over a pet.
 
-	
+
 pet(19450, 106); 	-- A Jubling's Tiny Home (Jubling)
 pet(129205, 1660); 	-- A Tiny Infernal Collar (Fel Pup)
 pet(163489, 2403);	-- Abyssal Eel
@@ -881,4 +881,3 @@ pet(49664, 247);	-- Zipao Tiger
 pet(113554, 1428);	-- Zomstrok
 pet(137298, 1903); 	-- Zoom
 pet(166455, 2550);	-- Zur'aj the Depleted
-

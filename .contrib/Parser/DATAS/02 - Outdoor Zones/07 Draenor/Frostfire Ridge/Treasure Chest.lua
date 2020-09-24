@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -54,7 +55,7 @@ _.Zones =
 					["modelID"] = 65118,
 					["questID"] = 33940,
 					["coord"] = { 42.65, 31.74, 525 },
-					["g"] = {	
+					["g"] = {
 						i(112187),	-- Crag-Leaping Boots
 					},
 				}),
@@ -107,7 +108,7 @@ _.Zones =
 				o(230425, {	-- Gnawed Bone
 					["questID"] = 34648,
 					["coord"] = { 25.5, 20.4, 525 },
-					["g"] = {	
+					["g"] = {
 						i(111415),	-- Gnawbone Knife
 					},
 				}),
@@ -154,7 +155,7 @@ _.Zones =
 					["questID"] = 33926,
 					["model"] = "World\\Dungeon\\WellofEternity\\WOE_Fountain_Pool.mdx",
 					["coord"] = { 21.7, 9.61, 525 },
-					["g"] = {	
+					["g"] = {
 						i(108738, {	-- Giant Draenor Clam
 							i(108739),	-- Pretty Draenor Pearl Toy
 						}),

@@ -1,7 +1,8 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
--- Add icons to each Item Set header
+
+-- TODO: Add icons to each Item Set header
 _.ExpansionFeatures =
 {
 	n(-3338, {	-- Island Expeditions
@@ -88,7 +89,7 @@ _.ExpansionFeatures =
 						i(168618, {	-- Brilliant Worldvein (Rank 4)
 							--["modID"] = 31,
 							az(4, 4),	-- Worldvein Resonance (Rank 4)
-						}),	
+						}),
 					}),
 				},
 			}),
@@ -131,12 +132,12 @@ _.ExpansionFeatures =
 					i(170149, {	-- Map to the Last Worldvein
 						i(168618, {	-- Brilliant Worldvein (Rank 4)
 							az(4, 4),	-- Worldvein Resonance (Rank 4)
-						}),	
+						}),
 					}),
 				},
 			}),
 			-- Item drop quests
-			i(163470, {	 -- Ancient Crypt Key
+			i(163470, {	-- Ancient Crypt Key
 				["coord"] = { 83.2, 29.6, 390 },
 				["g"] = {
 					q(53160, {	-- Ancient Crypt Key
@@ -147,7 +148,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163478, {	 -- Battered Twilight Scale
+			i(163478, {	-- Battered Twilight Scale
 				["coord"] = { 20.2, 54.6, 241 },
 				["g"] = {
 					q(53171, {	-- Battered Twilight Scale
@@ -158,7 +159,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163472, {	 -- Bloodwake Drinking Horn
+			i(163472, {	-- Bloodwake Drinking Horn
 				["coord"] = { 68.4, 54.2, 634 },
 				["g"] = {
 					q(53163, {	-- Bloodwake Drinking Horn
@@ -170,7 +171,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163482, {	 -- Broken Compass
+			i(163482, {	-- Broken Compass
 				["coord"] = { 42.0, 74.6, 210 },
 				["g"] = {
 					q(53177, {	-- Broken Compass
@@ -181,7 +182,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163485, {	 -- Druidic Fur
+			i(163485, {	-- Druidic Fur
 				["coord"] = { 52.6, 40.6, 80 },
 				["g"] = {
 					q(53181, {	-- Druidic Fur
@@ -192,7 +193,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163476, {	 -- Elemental Core
+			i(163476, {	-- Elemental Core
 				["coord"] = { 92.7, 42.0, 76 },	-- Verify Coords/npcid
 				["g"] = {
 					q(53169, {	-- Elemental Core
@@ -203,7 +204,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163481, {	 -- Glittering Scarab
+			i(163481, {	-- Glittering Scarab
 				["coord"] = { 58.8, 46.2, 249 },
 				["g"] = {
 					q(53176, {	-- Glittering Scarab
@@ -214,7 +215,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163474, {	 -- Icetusk Fur Cloak
+			i(163474, {	-- Icetusk Fur Cloak
 				["coord"] = { 48.0, 76.0, 115 },
 				["g"] = {
 					q(53167, {	-- Icetusk Fur Cloak
@@ -225,7 +226,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163475, {	 -- Magical Spyglass
+			i(163475, {	-- Magical Spyglass
 				["coord"] = { 41.0, 73.0, 210 },
 				["g"] = {
 					q(53168, {	-- Magical Spyglass
@@ -236,7 +237,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163480, {	 -- Murloc Eye
+			i(163480, {	-- Murloc Eye
 				["coords"] = {
 					{ 42.6, 10.8, 650 },
 					{ 49.6, 15.8, 650 },
@@ -250,7 +251,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163466, {	 -- Notched Coin
+			i(163466, {	-- Notched Coin
 				["coord"] = { 55.2, 19.2, 371 },
 				["g"] = {
 					q(53155, {	-- Notched Coin
@@ -261,7 +262,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163483, {	 -- Razorfin Hunting Spear
+			i(163483, {	-- Razorfin Hunting Spear
 				["coord"] = { 29.6, 39.0, 418 },
 				["g"] = {
 					q(53178, {	-- Razorfin Hunting Spear
@@ -272,7 +273,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163471, {	 -- Ring of the Reefs
+			i(163471, {	-- Ring of the Reefs
 				["coord"] = { 60.2, 51.2, 634 },
 				["g"] = {
 					q(53161, {	-- Ring of the Reefs
@@ -283,7 +284,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163473, {	 -- Sonic Stone
+			i(163473, {	-- Sonic Stone
 				["coord"] = { 39.4, 62.0, 388 },
 				["g"] = {
 					q(53164, {	-- Sonic Stone
@@ -294,7 +295,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163486, {	 -- Strangling Root
+			i(163486, {	-- Strangling Root
 				["coord"] = { 36.2, 41.8, 80 },
 				["g"] = {
 					q(53182, {	-- Strangling Root
@@ -305,7 +306,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163477, {	 -- Unscarred Black Scale
+			i(163477, {	-- Unscarred Black Scale
 				["coord"] = { 47.8, 68.8, 36 },	-- Verify map/npc id
 				["g"] = {
 					q(53170, {	-- Unscarred Black Scale
@@ -316,7 +317,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163479, {	 -- Venture Co. Business Plan
+			i(163479, {	-- Venture Co. Business Plan
 				["coords"] = {
 					{ 50.2, 59.2, 10 },
 					{ 66.8, 72.6, 10 },
@@ -331,7 +332,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163484, {	 -- Vorus'arak's Carapace
+			i(163484, {	-- Vorus'arak's Carapace
 				["coord"] = { 26.2, 50.6, 115 },
 				["cr"] = 139889,	-- Vorus'arak
 				["g"] = {
@@ -343,7 +344,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163488, {	 -- Weathered Pamphlet
+			i(163488, {	-- Weathered Pamphlet
 				["coord"] = { 52.0, 30.0, 71 },
 				["g"] = {
 					q(53184, {	-- Weathered Pamphlet
@@ -354,7 +355,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			i(163487, {	 -- Wriggling Mass
+			i(163487, {	-- Wriggling Mass
 				["description"] = "Can be turned in at old or new Silithus.",
 				["coord"] = { 40.0, 76.6, 81 },
 				["g"] = {

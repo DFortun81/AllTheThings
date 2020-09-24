@@ -1,6 +1,7 @@
- ---------------------------------------------------
+---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -371,7 +372,7 @@ _.Zones =
 					["coord"] = { 36.7, 31.0, 634 },
 					["sourceQuests"] = { 38362 },	-- A Grim Trophy
 				}),
-				q(40568, {	-- Fury of the Storm	
+				q(40568, {	-- Fury of the Storm
 					["providers"] = {
 						{ "n", 91249 },	-- Vethir
 						{ "n", 96465 },	-- Vethir
@@ -1189,8 +1190,8 @@ _.Zones =
 							}),
 						},
 					}),
-				}),				  
-			--[[ These quests will be organized soon™
+				}),
+			--[[ TODO: These quests will be organized soon™
 				q(45534, {	-- A Common Enemy
 					["provider"] = { "n", 117394 },	-- Sigryn
 				}),
@@ -1290,6 +1291,6 @@ _.Zones =
 				SOON™
 				--]]
 			}),
-		}),	
+		}),
 	}),
 };

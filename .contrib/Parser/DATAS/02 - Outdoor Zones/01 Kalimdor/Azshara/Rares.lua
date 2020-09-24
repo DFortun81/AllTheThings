@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(76, {	-- Azshara
-			n(RARES, {	
+			n(RARES, {
 				n(6648, {	-- Antilos
 					["coord"] = { 45.2, 27.2, 76 },
 				}),
@@ -20,7 +21,7 @@ _.Zones =
 				n(6651, {	-- Gatekeeper Rageroar
 					["description"] = "|cff66ccff-125 Timbermaw Reputation if you kill (until exalted).|r",
 					["coord"] = { 33.0, 32.6, 76 },
-				}), 
+				}),
 				n(6650, {	-- General Fangferror
 					["coords"] = {
 						{ 59.4, 77.6, 76 },
@@ -32,10 +33,10 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(17054)),	-- Joonho's Mercy
 					},
-				}), 
+				}),
 				n(6649, {	-- Lady Sesspira
 					["coord"] = { 44.0, 59.8, 76 },
-				}), 
+				}),
 				n(13896, {	-- Scalebeard
 					["coords"] = {
 						{ 43.6, 52.6, 76 },
@@ -43,13 +44,13 @@ _.Zones =
 						{ 42.8, 47.2, 76 },
 						{ 42.6, 46.4, 76 },
 					},
-				}), 
+				}),
 				n(8660, {	-- The Evalcharr
-					["coords"] = { 
+					["coords"] = {
 						{ 14.2, 50.6, 76 },
 						{ 15.0, 58.2, 76 },
 					},
-				}), 
+				}),
 				n(6118, {	-- Varo'then's Ghost
 					["coords"] = {
 						{ 34.4, 76.8, 76 },
@@ -58,7 +59,7 @@ _.Zones =
 						{ 36.4, 71.6, 76 },
 						{ 37.4, 74.6, 76 },
 					},
-				}), 
+				}),
 --				n(107477, { 	-- N.U.T.Z. -- mob to tame			}),
 			}),
 		}),

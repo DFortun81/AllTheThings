@@ -20,7 +20,7 @@ _.Instances = { tier(7, {	-- Legion
 					["provider"] = { "n", 114263 },	-- Odyn
 					["g"] = {
 						i(143506, {	-- Ensemble: Vestment of the Chosen Dead
-							["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warock
+							["classes"] = { PRIEST, MAGE, WARLOCK },
 							["g"] = {
 								i(143346),	-- Circlet of the Chosen Dead
 								i(143356),	-- Mantle of the Chosen Dead
@@ -32,10 +32,10 @@ _.Instances = { tier(7, {	-- Legion
 								i(143350),	-- Pantaloons of the Chosen Dead
 								i(143338),	-- Sandals of the Chosen Dead
 							},
-						}),		
+						}),
 						i(143510, {	-- Ensemble: Garb of the Chosen Dead
-							["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
-							["g"] = {	
+							["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+							["g"] = {
 								i(143348),	-- Hood of the Chosen Dead
 								i(143354),	-- Shoulderpads of the Chosen Dead
 								i(143366),	-- Wrap of the Chosen Dead
@@ -46,9 +46,9 @@ _.Instances = { tier(7, {	-- Legion
 								i(143352),	-- Leggings of the Chosen Dead
 								i(143340),	-- Boots of the Chosen Dead
 							},
-						}),		
+						}),
 						i(143514, {	-- Ensemble: Chains of the Chosen Dead
-							["classes"] = { 3, 7 },	-- Hunter, Shaman
+							["classes"] = { HUNTER, SHAMAN },
 							["g"] = {
 								i(143347),	-- Coif of the Chosen Dead
 								i(143357),	-- Pauldrons of the Chosen Dead
@@ -60,9 +60,9 @@ _.Instances = { tier(7, {	-- Legion
 								i(143351),	-- Chain Leggings of the Chosen Dead
 								i(143339),	-- Sabatons of the Chosen Dead
 							},
-						}),		
+						}),
 						i(143518, {	-- Ensemble: Funerary Plate of the Chosen Dead
-							["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
+							["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
 							["g"] = {
 								i(143345),	-- Visor of the Chosen Dead
 								i(143355),	-- Shoulderplates of the Chosen Dead
@@ -74,8 +74,8 @@ _.Instances = { tier(7, {	-- Legion
 								i(143349),	-- Legplates of the Chosen Dead
 								i(143337),	-- Treads of the Chosen Dead
 							},
-						}),	
-					},							
+						}),
+					},
 				}),
 			}),
 			d(17,  {	-- LFR
@@ -95,8 +95,8 @@ _.Instances = { tier(7, {	-- Legion
 					},
 					["g"] = {
 						i(143509, {	-- Ensemble: Vestment of the Chosen Dead
-							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic difficulties",
-							["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warlock
+							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic difficulties.",
+							["classes"] = { PRIEST, MAGE, WARLOCK },
 							["crs"] = { 116242 },	-- Aspiring Champion of the Chosen Dead
 							["g"] = {
 								i(143346),	-- Circlet of the Chosen Dead
@@ -109,12 +109,12 @@ _.Instances = { tier(7, {	-- Legion
 								i(143350),	-- Pantaloons of the Chosen Dead
 								i(143338),	-- Sandals of the Chosen Dead
 							},
-						}),		
+						}),
 						i(143513, {	-- Ensemble: Garb of the Chosen Dead
-							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic difficulties",
-							["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
+							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic difficulties.",
+							["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
 							["crs"] = { 116242 },	-- Aspiring Champion of the Chosen Dead
-							["g"] = {	
+							["g"] = {
 								i(143348),	-- Hood of the Chosen Dead
 								i(143354),	-- Shoulderpads of the Chosen Dead
 								i(143366),	-- Wrap of the Chosen Dead
@@ -125,10 +125,10 @@ _.Instances = { tier(7, {	-- Legion
 								i(143352),	-- Leggings of the Chosen Dead
 								i(143340),	-- Boots of the Chosen Dead
 							},
-						}),		
-						i(143517, {	-- Ensemble: Chains of the Chosen Dead	
-							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic difficulties",
-							["classes"] = { 3, 7 },	-- Hunter, Shaman
+						}),
+						i(143517, {	-- Ensemble: Chains of the Chosen Dead
+							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic difficulties.",
+							["classes"] = { HUNTER, SHAMAN },
 							["crs"] = { 116242 },	-- Aspiring Champion of the Chosen Dead
 							["g"] = {
 								i(143347),	-- Coif of the Chosen Dead
@@ -141,10 +141,10 @@ _.Instances = { tier(7, {	-- Legion
 								i(143351),	-- Chain Leggings of the Chosen Dead
 								i(143339),	-- Sabatons of the Chosen Dead
 							},
-						}),		
+						}),
 						i(143521, {	-- Ensemble: Funerary Plate of the Chosen Dead
-							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic, difficulties",
-							["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
+							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic, difficulties.",
+							["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
 							["crs"] = { 116242 },	-- Aspiring Champion of the Chosen Dead
 							["g"] = {
 								i(143345),	-- Visor of the Chosen Dead
@@ -157,7 +157,7 @@ _.Instances = { tier(7, {	-- Legion
 								i(143349),	-- Legplates of the Chosen Dead
 								i(143337),	-- Treads of the Chosen Dead
 							},
-						}),	
+						}),
 					},
 				}),
 				ach(11394, { 	-- Trial of Valor
@@ -302,8 +302,8 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				n(COMMON_BOSS_DROPS, {
 					i(143507, {	-- Ensemble: Vestment of the Chosen Dead
-						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties",
-						["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warlock
+						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties.",
+						["classes"] = { PRIEST, MAGE, WARLOCK },
 						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
 						["g"] = {
 							i(143346),	-- Circlet of the Chosen Dead
@@ -316,12 +316,12 @@ _.Instances = { tier(7, {	-- Legion
 							i(143350),	-- Pantaloons of the Chosen Dead
 							i(143338),	-- Sandals of the Chosen Dead
 						},
-					}),		
+					}),
 					i(143511, {	-- Ensemble: Garb of the Chosen Dead
-						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties",
-						["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
+						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties.",
+						["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
 						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
-						["g"] = {	
+						["g"] = {
 							i(143348),	-- Hood of the Chosen Dead
 							i(143354),	-- Shoulderpads of the Chosen Dead
 							i(143366),	-- Wrap of the Chosen Dead
@@ -332,10 +332,10 @@ _.Instances = { tier(7, {	-- Legion
 							i(143352),	-- Leggings of the Chosen Dead
 							i(143340),	-- Boots of the Chosen Dead
 						},
-					}),		
+					}),
 					i(143515, {	-- Ensemble: Chains of the Chosen Dead
-						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties",
-						["classes"] = { 3, 7 },	-- Hunter, Shaman
+						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties.",
+						["classes"] = { HUNTER, SHAMAN },
 						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
 						["g"] = {
 							i(143347),	-- Coif of the Chosen Dead
@@ -348,10 +348,10 @@ _.Instances = { tier(7, {	-- Legion
 							i(143351),	-- Chain Leggings of the Chosen Dead
 							i(143339),	-- Sabatons of the Chosen Dead
 						},
-					}),		
+					}),
 					i(143519, {	-- Ensemble: Funerary Plate of the Chosen Dead
-						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties",
-						["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
+						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties.",
+						["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
 						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
 						["g"] = {
 							i(143345),	-- Visor of the Chosen Dead
@@ -364,7 +364,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(143349),	-- Legplates of the Chosen Dead
 							i(143337),	-- Treads of the Chosen Dead
 						},
-					}),	
+					}),
 				}),
 				cr(114263, e(1819, {	-- Odyn
 					ach(11394, crit(1)),	-- Trial of Valor / Odyn
@@ -515,7 +515,7 @@ _.Instances = { tier(7, {	-- Legion
 								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(143508, {	-- Ensemble: Vestment of the Chosen Dead
-								["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warlock
+								["classes"] = { PRIEST, MAGE, WARLOCK },
 								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									i(143346),	-- Circlet of the Chosen Dead
@@ -528,11 +528,11 @@ _.Instances = { tier(7, {	-- Legion
 									i(143350),	-- Pantaloons of the Chosen Dead
 									i(143338),	-- Sandals of the Chosen Dead
 								},
-							}),		
+							}),
 							i(143512, {	-- Ensemble: Garb of the Chosen Dead
-								["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
+								["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {	
+								["g"] = {
 									i(143348),	-- Hood of the Chosen Dead
 									i(143354),	-- Shoulderpads of the Chosen Dead
 									i(143366),	-- Wrap of the Chosen Dead
@@ -543,9 +543,9 @@ _.Instances = { tier(7, {	-- Legion
 									i(143352),	-- Leggings of the Chosen Dead
 									i(143340),	-- Boots of the Chosen Dead
 								},
-							}),		
+							}),
 							i(143516, {	-- Ensemble: Chains of the Chosen Dead
-								["classes"] = { 3, 7 },	-- Hunter, Shaman
+								["classes"] = { HUNTER, SHAMAN },
 								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									i(143347),	-- Coif of the Chosen Dead
@@ -558,9 +558,9 @@ _.Instances = { tier(7, {	-- Legion
 									i(143351),	-- Chain Leggings of the Chosen Dead
 									i(143339),	-- Sabatons of the Chosen Dead
 								},
-							}),		
+							}),
 							i(143520, {	-- Ensemble: Funerary Plate of the Chosen Dead
-								["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
+								["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
 								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									i(143345),	-- Visor of the Chosen Dead
@@ -573,7 +573,7 @@ _.Instances = { tier(7, {	-- Legion
 									i(143349),	-- Legplates of the Chosen Dead
 									i(143337),	-- Treads of the Chosen Dead
 								},
-							}),	
+							}),
 						},
 					}),
 					i(142112),	-- Vantus Rune Technique: Helya [Rank 1]

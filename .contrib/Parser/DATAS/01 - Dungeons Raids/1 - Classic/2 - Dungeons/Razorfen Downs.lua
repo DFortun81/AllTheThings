@@ -229,7 +229,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			e(1141,  {	-- Amnennar the Coldbringer
-				["crs"] = { 
+				["crs"] = {
 					74876,	-- Amnennar's Phylactery
 					74434,	-- Amnennar the Coldbringer
 				},

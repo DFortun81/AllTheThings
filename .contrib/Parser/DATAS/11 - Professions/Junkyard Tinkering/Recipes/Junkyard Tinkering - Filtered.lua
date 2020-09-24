@@ -1,7 +1,7 @@
 -- use this file only to override data from the _Automation.lua file
 profession(2720, {	-- Junkyard Tinkering
 	filter(200, {	-- Recipes
-		{	
+		{
 			["name"] = "Junkyard Tinkering",
 			["categoryID"] = 1257,	-- Junkyard Tinkering
 			["g"] = {
@@ -28,7 +28,7 @@ profession(2720, {	-- Junkyard Tinkering
 						},
 					}
 				},
-				--[[{	
+				--[[{
 					["name"] = "Rustbolt Upgrades",	-- Cant figure out this categoryID
 					["g"] = {
 						{	-- Rustbolt Gramophone	-- Removed once you do the quest.
