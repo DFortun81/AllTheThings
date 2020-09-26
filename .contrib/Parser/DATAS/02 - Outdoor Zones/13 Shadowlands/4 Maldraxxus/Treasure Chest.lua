@@ -10,6 +10,9 @@ _.Zones =
 				o(352086, {	-- Blackhound Cache
 					["coord"] = { 44.0, 39.8, 1536 },
 					["questID"] = 60368,
+					["g"] = {
+						i(183619),	-- Everlasting Boneforged Greataxe
+					},
 				}),
 				o(348521, {	-- Strange Growth
 					["coord"] = { 55.9, 38.9, 1536 },

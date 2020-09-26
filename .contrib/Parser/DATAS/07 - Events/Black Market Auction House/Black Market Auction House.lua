@@ -14,6 +14,7 @@ _.WorldEvents =
 			626,	-- Dalaran: Rogue Class Hall
 			628,	-- Dalaran: The Underbelly
 			862,	-- Dazar'alor
+			1525,	-- Ravendreth
 			--590,	-- Frostwall
 			--582,	-- Lunarfall
 		},
@@ -22,6 +23,7 @@ _.WorldEvents =
 			103791,	-- Madam Gosu [Rogue Class Hall]
 			135709,	-- Madam Goya [Dazar'alor - Horde]
 			100986,	-- Madam Goya [Underbelly]
+			160081,	-- Ta'xera <Matron of the Market>
 			94829,	-- Zhang Yeoh [Garrison]
 		},
 		["coords"] = {
@@ -29,6 +31,7 @@ _.WorldEvents =
 			{ 57.91, 46.28, 626 },	-- Madam Gosu, Dalaran: Rogue Class Hall
 			{ 71.37, 17.93, 628 },	-- Madam Goya, Dalaran: The Underbelly
 			{ 63.54, 62.68, 862 },	-- Madam Goya, Dazar'alor
+			{ 52.40, 83.80, 1525 },	-- Ta'xera <Matron of the Market>
 			--{ 44.96, 50.07, 590 },	-- Zhang Yeoh, Frostwall
 		},
 		["g"] = {
