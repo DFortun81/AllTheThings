@@ -177,6 +177,12 @@ _.ExpansionFeatures =
 					q(46108, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
 					}),
+					q(45240, {	-- Making Preparations
+						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
+						["coord"] = { 27.0, 28.9, 648 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 46734, -- Assault on Broken Shore
+					}),
 					q(39832, {	-- Plans and Preparations
 						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
 						["coord"] = { 51.6, 50.0, 647 },
@@ -305,6 +311,12 @@ _.ExpansionFeatures =
 							title(328),	-- Deathlord
 							i(139673), 	-- Deathlord's Chestguard
 						},
+					}),
+					q(44775, {	-- The Peak of Bones
+						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
+						["coord"] = { 27.0, 28.9, 648 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 45331, -- Return to Acherus
 					}),
 					q(42533, {	-- The Ruined Kingdom
 						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine

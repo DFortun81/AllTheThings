@@ -372,6 +372,12 @@ _.Zones =
 					["coord"] = { 36.7, 31.0, 634 },
 					["sourceQuests"] = { 38362 },	-- A Grim Trophy
 				}),
+				q(44783, {	-- From Bones They Rise
+					["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
+					["coord"] = { 51.3, 84.3, 648 },
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 44775, -- The Peak of Bones
+				}),
 				q(40568, {	-- Fury of the Storm
 					["providers"] = {
 						{ "n", 91249 },	-- Vethir
