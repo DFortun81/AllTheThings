@@ -287,7 +287,6 @@ _.Instances = { tier(7, {	-- Legion
 						i(137381),	-- Pact of Vengeful Service
 						i(137380),	-- Rage of the Tides
 						i(137379),	-- Tempestbinder's Crystal
-						i(146688),	-- Waterlogged Handmaiden's Gloves (Leatherworking QI)
 					})),
 				},
 			})

@@ -254,7 +254,6 @@ _.Instances = { tier(7, {	-- Legion
 							i(139269),	-- Crystallized Drop of Eternity
 							i(139266),	-- Fragment of Eternal Spite
 							i(139268),	-- Nightmarish Elm Branch
-							i(146690),	-- Xavius' Torn Spellsash (Leatherworking QI)
 						})),
 					},
 				}),
@@ -502,7 +501,6 @@ _.Instances = { tier(7, {	-- Legion
 					i(139269),	-- Crystallized Drop of Eternity
 					i(139266),	-- Fragment of Eternal Spite
 					i(139268),	-- Nightmarish Elm Branch
-					i(146690),	-- Xavius' Torn Spellsash (Leatherworking QI)
 				})),
 			}),
 			d(15, {	-- Heroic
@@ -746,7 +744,6 @@ _.Instances = { tier(7, {	-- Legion
 					i(139269),	-- Crystallized Drop of Eternity
 					i(139266),	-- Fragment of Eternal Spite
 					i(139268),	-- Nightmarish Elm Branch
-					i(146690),	-- Xavius' Torn Spellsash (Leatherworking QI)
 				})),
 			}),
 			d(16, {	-- Mythic
@@ -1001,7 +998,6 @@ _.Instances = { tier(7, {	-- Legion
 					i(139269),	-- Crystallized Drop of Eternity
 					i(139266),	-- Fragment of Eternal Spite
 					i(139268),	-- Nightmarish Elm Branch
-					i(146690),	-- Xavius' Torn Spellsash (Leatherworking QI)
 				})),
 			}),
 		},

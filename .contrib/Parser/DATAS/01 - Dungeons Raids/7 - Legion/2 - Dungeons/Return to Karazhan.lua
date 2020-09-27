@@ -438,7 +438,6 @@ _.Instances = { tier(7, {	-- Legion
 						i(142142),	-- Unbound Reality Mask
 						i(142306),	-- Rift Stabilization Shard
 						i(142182),	-- Viz'aduum's Mindstone
-						i(146698),	-- Torn Bracers of the First War (Leatherworking QI)
 					},
 				}),
 			}),

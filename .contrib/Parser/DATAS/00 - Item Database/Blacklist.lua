@@ -74,13 +74,19 @@ i(128851);	-- Roasted juicycrunch carrots
 -- Quest Items
 i(164778);	-- Abyssal Scepter
 i(162579);	-- Abyssal Scepter
+i(146692);	-- Ancient Dreadleather Armor
+i(146700);	-- Ancient Gravenscale Armor
 i(169251);	-- Ancient Insect
 i(168234);	-- Ancient Runestone
+i(147438);	-- Bag of Wisp-Touched Elderhide
 i(169224);	-- Big Red Button
+i(147439);	-- Box of Completed Prime Wardenscale
 i(169248);	-- Broken Sandals
 i(169391);	-- Bubble-eyed Rolly
 i(169292);	-- Charged Scale of the Blue Aspect
+i(146694);	-- Chipped Felsong Mantle
 i(163212);	-- Cleansing Thurible
+i(146686);	-- Colorless Shroud of Xavius
 i(169235);	-- Confusing Spring Box
 i(12843);	-- Corruptor's Scourgestone
 i(169250);	-- Crude Eating Utensil
@@ -100,7 +106,11 @@ i(169233);	-- Infinite Loop Spring
 i(169227);	-- Irradiated Bolts
 i(169257);	-- Jagged Rune
 i(169236);	-- Latch-and-Lock Trigger
+i(146952);	-- Legendary Tailor's Materials
+i(146977);	-- Legendary Tanner's Kit
+i(147209);	-- Legendary Wardenscale Supplies
 i(168280);	-- Lost Scale of the Scarlet Broodmother
+i(146680);	-- Melandrus' Star-Touched Bracers
 i(169238);	-- Modified Radio Receiver
 i(169222);	-- Murloc Treasure
 i(168223);	-- Old Parchment
@@ -114,14 +124,19 @@ i(169230);	-- Reflective Plating
 i(167875);	-- Reforged Dreamglow Dragonscale
 i(169252);	-- Resonant Pearl
 i(18149);	-- Rune of Recall
+i(146696);	-- Rusted Legplates of Mephistroth
+i(147437);	-- Satchel of Starweave and Shadowcloth
 i(157539);	-- Scroll of Storm Control
 i(17224);	-- Scrying Scope
 i(17364);	-- Scrying Scope
 i(169249);	-- Shark Tooth Necklace
 i(169253);	-- Shell Horn
 i(168817);	-- Siphoning Crystal
+i(147075);	-- Spirit Net
 i(169246);	-- Strangely Seasoned Meat
+i(146682);	-- Suramari Soul-Wraps
 i(169247);	-- Throwing Rocks
+i(146698);	-- Torn Bracers of the First War
 i(169226);	-- Torn Sheet Music
 i(169255);	-- Tuft of Red Fur
 i(12812);	-- Unfired Plate Gauntlets
@@ -129,9 +144,11 @@ i(12806);	-- Unforged Rune Covered Breastplate
 i(169239);	-- Unknowable Cube
 i(169225);	-- Unstoppable Countdown Clock
 i(169867);	-- Visual Holo Sphere
+i(146688);	-- Waterlogged Handmaiden's Gloves
 i(146702);	-- White Lightningsteel
 i(156926);	-- Witchrend
 i(164761);	-- Xal'atath, Blade of the Black Empire
+i(146690);	-- Xavius' Torn Spellsash
 i(17384);	-- Zinfizzlex's Portable Shredder Unit
 i(17410);	-- Zinfizzlex's Portable Shredder Unit
 

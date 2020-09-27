@@ -241,7 +241,6 @@ _.Instances = { tier(7, {	-- Legion
 						i(137314),	-- Wristbands of Cursed Torment
 						i(137315),	-- Writhing Heart of Darkness
 						i(137317),	-- Xavius' Mad Whispers
-						i(146686),	-- Colorless Shroud of Xavius (Leatherworking QI)
 					})),
 				},
 			}),

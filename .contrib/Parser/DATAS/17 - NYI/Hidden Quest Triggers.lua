@@ -2480,6 +2480,7 @@ _.NeverImplemented =
 		q(56605),	-- Toxigore the Alpha first kill
 		q(56584),	-- Urduu first kill
 		q(57083),	-- Wayward Algan Benthic loot
+		q(57096),	-- reported as triggering upon snapping a photo to collect Fabious
 		q(57166),	-- triggered when completing #55891, "Champion Aldrantiss, Defender of Her Kingdom," in nazjatar
 		q(57165),	-- triggered when completing #55892, "Champion Eldanar, Shield of Her Glory," in nazjatar
 		q(57168),	-- triggered when completing #55889, "Champion Kyx'zhul the Deepspeaker," in nazjatar

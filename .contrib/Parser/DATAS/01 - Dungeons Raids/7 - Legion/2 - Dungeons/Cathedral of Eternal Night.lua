@@ -206,7 +206,6 @@ _.Instances = { tier(7, {	-- Legion
 					i(144465),	-- Essence of the Legion Tempest
 					i(144464),	-- Mephistroth's Nail
 					i(144463),	-- Shard of Kaldorei Stained Glass
-					i(146696),	-- Rusted Legplates of Mephistroth (Leatherworking QI)
 				})),
 			}),
 		},

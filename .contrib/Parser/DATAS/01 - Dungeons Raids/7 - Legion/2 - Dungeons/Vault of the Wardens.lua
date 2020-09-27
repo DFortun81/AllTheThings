@@ -271,7 +271,6 @@ _.Instances = { tier(7, {	-- Legion
 						i(137548),	-- Elune's Light
 						i(137550),	-- Moonglaive Dervish
 						i(137549),	-- Shade of the Vault
-						i(146694),	-- Chipped Felsong Mantle (Leatherworking QI)
 					})),
 				},
 			})
