@@ -912,6 +912,12 @@ _.Zones =
 					["coord"] = { 37.8, 21.6, 634 },
 					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
 				}),
+				q(46305, {	-- Thorim's Flame
+					["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
+					["coord"] = { 51.3, 84.3, 648 },
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 44775, -- The Peak of Bones
+				}),
 				q(39059, {	-- To Catch a Banshee
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
 					["races"] = ALLIANCE_ONLY,
