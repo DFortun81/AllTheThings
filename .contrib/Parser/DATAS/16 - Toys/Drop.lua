@@ -77,6 +77,7 @@ _.Toys =
 		i(119180), 		-- Goren "Log" Roller
 		i(86584),		-- Hardened Shell
 		i(163742),		-- Heartsbane Grimoire
+		i(169303),		-- Hell-Bent Bracers
 		i(86594), 		-- Helpful Wikky's Whistle
 		i(166790),		-- Highborne Memento
 		i(86593),		-- Hozen Beach Ball
