@@ -657,17 +657,17 @@ _.NeverImplemented =
 		q(33287),	-- Tracking Quest - First - Huolon
 		q(33278),	-- Tracking Quest - First - Imperial Python
 		q(33270),	-- Tracking Quest - First - Ironfur Steelhorn
-		i(33281),	-- Tracking Quest - First - Jakur of Ordon
-		i(33258),	-- Tracking Quest - First - Karkanos
-		i(33273),	-- Tracking Quest - First - Leafmender
-		i(33277),	-- Tracking Quest - First - Monstrous Spineclaw
-		i(33283),	-- Tracking Quest - First - Rock Moss
-		i(33259),	-- Tracking Quest - First - Spirit of Jadefire
-		i(33280),	-- Tracking Quest - First - Stinkbraid
-		i(33597),	-- Tracking Quest - First - The Obliterator
-		i(33279),	-- Tracking Quest - First - Tsavo'ka
-		i(33284),	-- Tracking Quest - First - Urdur the Cauterizer
-		i(33321),	-- Tracking Quest - First - Watcher Osu
+		q(33281),	-- Tracking Quest - First - Jakur of Ordon
+		q(33258),	-- Tracking Quest - First - Karkanos
+		q(33273),	-- Tracking Quest - First - Leafmender
+		q(33277),	-- Tracking Quest - First - Monstrous Spineclaw
+		q(33283),	-- Tracking Quest - First - Rock Moss
+		q(33259),	-- Tracking Quest - First - Spirit of Jadefire
+		q(33280),	-- Tracking Quest - First - Stinkbraid
+		q(33597),	-- Tracking Quest - First - The Obliterator
+		q(33279),	-- Tracking Quest - First - Tsavo'ka
+		q(33284),	-- Tracking Quest - First - Urdur the Cauterizer
+		q(33321),	-- Tracking Quest - First - Watcher Osu
 		q(32997),	-- Tracking Quest - First - Zesqua
 		q(33317),	-- Tracking Quest - First - Zhu-Gon the Bitter/Skunky Beer
 		q(33162),	-- Weekly Vignette Boss Kill - Tracking Quest — popped upon arriving to timeless isle and killing evermaw (first rare of the week)
