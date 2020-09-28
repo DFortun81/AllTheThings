@@ -796,6 +796,14 @@ _.Zones =
 						i(132788),	-- Yotnar's Turmoil
 					},
 				}),
+				q(44787, {	-- The Bonemother
+					["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuests"] = {
+						44783, -- From Bones They Rise
+						46305, -- Thorim's Flame
+					},
+				}),
 				q(42431, {	-- The Brood of Nithogg (Bonus Objective)
 					["coord"] = { 45.2, 36.8, 634 },
 				}),

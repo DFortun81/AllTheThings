@@ -16,26 +16,26 @@ _.ExpansionFeatures =
 				n(QUESTS, {
 					q(39761, {	-- Advanced Runecarving
 						["provider"] = { "n", 97072 }, -- Grand Master Siegesmith Corvus
-						["coord"] = { 60.2, 60.0, 648 },
+						["coord"] = { 60.2, 60.0, 647 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 39757, -- Keeping Your Edge
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(43573, {	-- Advancing the War Effort
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 647 },
+						["coord"] = { 49.7, 51.3, 648 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42824, -- The Zealot Rises
 					}),
 					q(43928, {	-- Aggregates of Anguish
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 647 },
+						["coord"] = { 49.7, 51.3, 648 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42824, -- The Zealot Rises
 					}),
 					q(43407, {	-- A Hero's Weapon
 						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
-						["coord"] = { 56.9, 58.5, 648 },
+						["coord"] = { 56.9, 58.5, 647 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 44248, -- Champion: Darion Mograine
 						["g"] = {
@@ -111,6 +111,9 @@ _.ExpansionFeatures =
 					}),
 					q(46050, {	-- Champion: Minerva Ravensorrow
 						["provider"] = { "n", 95900 },		-- Minerva Ravensorrow
+						["coord"] = { 25.6, 34.2, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 45103, -- We Ride!
 						["g"] = {
 							follower(1003),	-- Minerva Ravensorrow
 						},
@@ -213,27 +216,33 @@ _.ExpansionFeatures =
 					}),
 					q(43571, {	-- Darkheart Thicket: The Nightmare Lash
 						["provider"] = { "n", 111480 }, -- Salanar the Horseman
-						["coord"] = { 36.2, 56.1, 648 },
+						["coord"] = { 36.2, 56.1, 647 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 43571, -- Neltharion's Lair: Braid of the Underking
 					}),
 					q(44082, {	-- Knights of the Ebon Blade
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 647 },
+						["coord"] = { 49.7, 51.3, 648 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42708, -- A Personal Request
 					}),
 					q(43574, {	-- Maw of Souls: Maul of the Dead
 						["provider"] = { "n", 111480 }, -- Salanar the Horseman
-						["coord"] = { 36.2, 56.1, 648 },
+						["coord"] = { 36.2, 56.1, 647 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 44286, -- Vault of the Wardens: A Masterpiece of Flesh
 					}),
 					q(43571, {	-- Neltharion's Lair: Braid of the Underking
 						["provider"] = { "n", 111480 }, -- Salanar the Horseman
-						["coord"] = { 36.2, 56.1, 648 },
+						["coord"] = { 36.2, 56.1, 647 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42708, -- A Personal Request
+					}),
+					q(45243, {	-- On Daumyr's Wings
+						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
+						["coord"] = { 27.0, 28.9, 648 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 44787, -- The Bonemother
 					}),
 					q(39799, {	-- Our Next Move
 						["provider"] = { "n", 93437 }, -- Siouxsie the Banshee
@@ -243,7 +252,7 @@ _.ExpansionFeatures =
 					}),
 					q(43266, {	-- Recruiting the Troops
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 647 },
+						["coord"] = { 49.7, 51.3, 648 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 43265, -- Spread the Word
 					}),
@@ -264,13 +273,13 @@ _.ExpansionFeatures =
 					}),
 					q(43539, {	-- Salanar the Horseman
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 647 },
+						["coord"] = { 49.7, 51.3, 648 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 43267, -- Troops in the Field
 					}),
 					q(43265, {	-- Spread the Word
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 647 },
+						["coord"] = { 49.7, 51.3, 648 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuests"] = {
 							39818, -- Champion: Nazgrim
@@ -280,13 +289,13 @@ _.ExpansionFeatures =
 					}),
 					q(43899, {	-- Steeds of the Damned
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 647 },
+						["coord"] = { 49.7, 51.3, 648 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42708, -- A Personal Request
 					}),
 					q(43268, {	-- Tech It Up A Notch
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 647 },
+						["coord"] = { 49.7, 51.3, 648 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 43267, -- Troops in the Field
 					}),
@@ -335,7 +344,7 @@ _.ExpansionFeatures =
 					}),
 					q(43267, {	-- Troops in the Field
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 647 },
+						["coord"] = { 49.7, 51.3, 648 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 43266, -- Recruiting the Troops
 					}),

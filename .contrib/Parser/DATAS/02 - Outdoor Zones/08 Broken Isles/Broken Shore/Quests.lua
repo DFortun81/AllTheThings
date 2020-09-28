@@ -510,6 +510,12 @@ _.Zones =
 					["coord"] = { 39.6, 71.7, 646 },
 					["lvl"] = 110,
 				}),
+				q(45103, {	-- We Ride!
+					["provider"] = { "n", 116128 },	-- Highlord Darion Mograine
+					["coord"] = { 51.6, 21.8, 646 },
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 45243,		-- On Daumyr's Wings
+				}),
 				q(53778, {	-- Where He Fell
 					["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
 					["lvl"] = 120,
