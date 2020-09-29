@@ -1,0 +1,1 @@
+"Blizzard API Harvester.exe" > HARVEST_ALL.log

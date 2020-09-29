@@ -54,7 +54,7 @@ namespace ATT
             /// <summary>
             /// All of the Quests that are in the database.
             /// </summary>
-            public static IDictionary<long, Dictionary<string, object>> AllQuests { get; } = new Dictionary<long, Dictionary<string, object>>();
+            public static IDictionary<int, Dictionary<string, object>> AllQuests { get; } = new Dictionary<int, Dictionary<string, object>>();
 
             #endregion
             #region Filters
@@ -606,7 +606,7 @@ namespace ATT
                     var allRaces = new List<object>(races);
                     var allianceDictionary = new Dictionary<object, bool>(ALLIANCE_ONLY_DICT);
                     var allianceRaces = new List<object>();
-                    foreach(var raceID in races)
+                    foreach (var raceID in races)
                     {
                         if (allianceDictionary.Remove(raceID))
                         {
@@ -706,7 +706,7 @@ namespace ATT
                 {
                     if (entry is Dictionary<string, object> o)
                     {
-                        if(o.TryGetValue("itemID", out int itemID))
+                        if (o.TryGetValue("itemID", out int itemID))
                         {
                             var itemData = Items.GetNull(itemID);
                             if (itemData != null && itemData.TryGetValue("name", out object nameRef)) o["name"] = nameRef;
@@ -762,7 +762,7 @@ namespace ATT
                             if (!item.TryGetValue("f", out int f)) f = 0;
 
                             // Write the Item Name to the correct Binding Filtered Dictionary List.
-                            if(!bindingSpecification.TryGetValue(b, out Dictionary<int, List<string>> filterSpecification))
+                            if (!bindingSpecification.TryGetValue(b, out Dictionary<int, List<string>> filterSpecification))
                             {
                                 bindingSpecification[b] = filterSpecification = new Dictionary<int, List<string>>();
                             }
@@ -797,7 +797,7 @@ namespace ATT
                                 builder2.Append("Filter Type ").Append(f);
                             }
                             builder2.AppendLine();
-                            foreach(var item in filterSpecification[f])
+                            foreach (var item in filterSpecification[f])
                             {
                                 builder2.Append('\t').Append(item);
                             }
@@ -835,7 +835,7 @@ namespace ATT
                     var sortedNPCIDs = allLocalizedNPCIDs.Keys.ToList();
                     sortedNPCIDs.Sort();
                     sortedNPCIDs.Reverse();
-                    foreach(int sortedNPCID in sortedNPCIDs)
+                    foreach (int sortedNPCID in sortedNPCIDs)
                     {
                         if (NPCS_WITH_REFERENCES.ContainsKey(sortedNPCID)) continue;
                         Trace.Write("Custom NPC ID [");
@@ -881,7 +881,7 @@ namespace ATT
                     var entry = db[key];
                     if (entry.Any())
                     {
-                        if(entry.TryGetValue("name", out object entryName))
+                        if (entry.TryGetValue("name", out object entryName))
                         {
                             entry.Remove("name");
                         }
@@ -948,7 +948,7 @@ namespace ATT
                                 if (data.TryGetValue("modID", out object modIDRef)) modID = Convert.ToInt32(modIDRef);
                                 if (itemData.TryGetValue("m", out object sourceIDRefs))
                                 {
-                                    (sourceIDRefs as Dictionary<int, object>)[modID] = pair.Value; 
+                                    (sourceIDRefs as Dictionary<int, object>)[modID] = pair.Value;
                                 }
                                 else
                                 {
@@ -997,9 +997,9 @@ namespace ATT
                 }
 
                 // Only include whitelisted fields.
-                foreach(var pair in data)
+                foreach (var pair in data)
                 {
-                    switch(pair.Key)
+                    switch (pair.Key)
                     {
                         case "name":
                         case "text":
@@ -1300,6 +1300,7 @@ namespace ATT
                     case "ilvl":
                     case "lvl":
                     case "q":
+                    case "r":
                         {
                             item[field] = Convert.ToInt32(value);
                             break;
@@ -1416,7 +1417,7 @@ namespace ATT
                     // List O' List O' Objects Data Type Fields that could also be numberical values.
                     case "cost":
                         {
-                            
+
                             // Convert the data to a list of generic objects.
                             var newListOfLists = value as List<List<object>>;
                             if (newListOfLists == null)
@@ -1428,7 +1429,7 @@ namespace ATT
                                     if (dict == null)
                                     {
                                         var cost = Convert.ToInt64(value);
-                                        if(cost > 0) item[field] = cost;
+                                        if (cost > 0) item[field] = cost;
                                         return;
                                     }
                                     else newList = dict.Values.ToList();
@@ -1492,14 +1493,14 @@ namespace ATT
                             };
                             if (item.TryGetValue("providers", out object providersRef) && providersRef is List<object> providers)
                             {
-                                foreach(var providerRef in providers)
+                                foreach (var providerRef in providers)
                                 {
                                     if (providerRef is List<object> oldprovider)
                                     {
-                                        if(oldprovider.Count == newProvider.Count)
+                                        if (oldprovider.Count == newProvider.Count)
                                         {
                                             bool match = true;
-                                            for(int i = 0; i < newProvider.Count;++i)
+                                            for (int i = 0; i < newProvider.Count; ++i)
                                             {
                                                 if (oldprovider[i] == newProvider[i]) continue;
                                                 match = false;
@@ -1626,6 +1627,10 @@ namespace ATT
                     // Report all other fields.
                     default:
                         {
+                            // ignore fields starting with _ since those will be used for metadata in some scenarios
+                            if (field.StartsWith("_"))
+                                break;
+
                             // Integer Data Type Fields
                             if (ATT.Export.ObjectData.ContainsObjectType(field))
                             {
@@ -1686,6 +1691,16 @@ namespace ATT
                 Dictionary<string, object> data2 = new Dictionary<string, object>();
                 foreach (var pair in data) data2[ConvertFieldName(pair.Key.ToString())] = pair.Value;
 
+                Merge(container, data2);
+            }
+
+            /// <summary>
+            /// Merge the string-keyed data into the container.
+            /// </summary>
+            /// <param name="container">The container to merge into.</param>
+            /// <param name="data">The data to merge into the container.</param>
+            public static void Merge(List<object> container, Dictionary<string, object> data2)
+            {
                 // Find the Object Dictionary that matches the data.
                 Dictionary<string, object> entry = null;
 
@@ -1694,7 +1709,7 @@ namespace ATT
                 {
                     // If there is no most significant ID field, then complain.
                     Trace.WriteLine("No Most Significant ID for:");
-                    Trace.WriteLine(ToJSON(data));
+                    Trace.WriteLine(ToJSON(data2));
                 }
                 else
                 {
@@ -1769,7 +1784,7 @@ namespace ATT
                                 }
                             }
                         }
-                        else 
+                        else
                         {
                             // The item does not have a Bonus ID or a Mod ID, so we can simply merge with the first one.
                             foreach (var entryRef in container)
@@ -1906,14 +1921,20 @@ namespace ATT
                 Merge(entry, data2);
 
                 // Add quest entry to AllQuest collection
-                if (entry.TryGetValue("questID", out long questID))
+                if (entry.TryGetValue("questID", out int questID))
                 {
+                    // merge any quest information from the quest DB
+                    if (QUESTS.TryGetValue(questID, out Dictionary<string, object> dbQuest))
+                    {
+                        Merge(entry, dbQuest);
+                    }
+
                     if (!AllQuests.ContainsKey(questID))
                     {
                         AllQuests.Add(questID, entry);
                     }
                 }
-                if (entry.TryGetValue("altQuestID", out long altQuestID))
+                if (entry.TryGetValue("altQuestID", out int altQuestID))
                 {
                     if (!AllQuests.ContainsKey(altQuestID))
                     {
@@ -1933,6 +1954,7 @@ namespace ATT
                 foreach (var data in list)
                 {
                     if (data is Dictionary<object, object> oDict) Merge(container, oDict);
+                    else if (data is Dictionary<string, object> sDict) Merge(container, sDict);
                     else
                     {
                         Trace.Write("MERGE CONFUSION: ");
