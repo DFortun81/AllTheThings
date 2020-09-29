@@ -847,7 +847,7 @@ _.Zones =
 					["provider"] = { "n", 150567 },	-- Gazlowe
 					["coord"] = { 74.0, 36.8, 1355 },
 					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
+					["isDaily"] = true,
 				}),
 				q(54929, {	-- Ready to Rumble
 					["provider"] = { "n", 150573 },	-- Recycler Kerchunk
