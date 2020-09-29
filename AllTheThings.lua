@@ -9185,7 +9185,7 @@ local function StopMovingOrSizing(self)
 	end
 end
 local function StartMovingOrSizing(self, fromChild)
-	if not self:IsMovable() and not self:IsResizable() then
+	if not self:IsMovable() and not self:IsResizable() or self.isLocked then
 		return
 	end
 	if self.isMoving then
@@ -9213,6 +9213,7 @@ local function StartMovingOrSizing(self, fromChild)
 		end
 	end
 end
+local RowOnEnter, RowOnLeave;
 local function RowOnClick(self, button)
 	local reference = self.ref;
 	if reference then
@@ -9398,6 +9399,28 @@ local function RowOnClick(self, button)
 			else
 				-- Allow the First Frame to move the parent.
 				local owner = self:GetParent():GetParent();
+				-- Toggle lock/unlock by holding Alt when clicking the header of a Window
+				if IsAltKeyDown() then
+					local locked = not owner.isLocked;
+					owner.isLocked = locked;
+					-- only certain window locks may be persisted
+					if owner.lockPersistable and owner.Suffix then
+						local lockedWindows = GetDataMember("LockedWindows", {});
+						local lockedName = owner.Suffix;
+						if locked then
+							-- windows would be locked for all characters, but position can be changed per character
+							lockedWindows[lockedName] = 1;
+						else
+							lockedWindows[lockedName] = nil;
+						end
+						SetDataMember("LockedWindows", lockedWindows);
+					end
+					-- force tooltip to refresh since locked state drives tooltip content
+					if GameTooltip then
+						RowOnLeave(self);
+						RowOnEnter(self);
+					end
+				end
 				self:SetScript("OnMouseUp", function(self)
 					self:SetScript("OnMouseUp", nil);
 					StopMovingOrSizing(owner);
@@ -9407,7 +9430,7 @@ local function RowOnClick(self, button)
 		end
 	end
 end
-local function RowOnEnter(self)
+RowOnEnter = function (self)
 	local reference = self.ref; -- NOTE: This is the good ref value, not the parasitic one.
 	if reference and GameTooltip then
 		GameTooltipIcon.icon.Background:Hide();
@@ -9937,10 +9960,19 @@ local function RowOnEnter(self)
 				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
 			end
 		end
+		-- Add info in tooltip for the header of a Window for whether it is locked or not
+		if self.index == 0 then
+			local owner = self:GetParent():GetParent();
+			if owner and owner.isLocked then
+				GameTooltip:AddLine(L["TOP_ROW_TO_UNLOCK"], 1, 1, 1);
+			else
+				GameTooltip:AddLine(L["TOP_ROW_TO_LOCK"], 1, 1, 1);
+			end
+		end
 		GameTooltip:Show();
 	end
 end
-local function RowOnLeave(self)
+RowOnLeave = function (self)
 	if GameTooltip then
 		GameTooltip:ClearLines();
 		GameTooltip:Hide();
@@ -10840,6 +10872,12 @@ function app:GetWindow(suffix, parent, onUpdate)
 				}
 			}
 		};
+		
+		-- set whether this window lock is persistable between sessions
+		if suffix == "Prime" or suffix == "CurrentInstance" or suffix == "RaidAssistant" or suffix == "WorldQuests" then
+			window.lockPersistable = true;
+		end
+		
 		window:Hide();
 		
 		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
@@ -10890,6 +10928,18 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window:Update(true);
 	end
 	return window;
+end
+function app:ApplyLockedWindows()
+	local lockedWindows = GetDataMember("LockedWindows", nil);
+	if lockedWindows then
+		for name,lock in pairs(lockedWindows) do
+			-- only saving locks, so lock is irrelevant mostly
+			local window = app.Windows[name];
+			if window then
+				window.isLocked = true;
+			end
+		end
+	end
 end
 function app:BuildSearchResponse(groups, field, value)
 	if groups then
@@ -14967,6 +15017,7 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedToys",
 		"FilterSeasonal",
 		"FilterUnobtainableItems",
+		"LockedWindows",
 		"lockouts",
 		"Position",
 		"RandomSearchFilter",
@@ -14984,7 +15035,10 @@ app.events.VARIABLES_LOADED = function()
 	for key,value in pairs(oldsettings) do
 		rawset(AllTheThingsAD, key, value);
 	end
-
+	
+	-- Apply Locked Window Settings
+	app:ApplyLockedWindows();
+	
 	-- Refresh Achievements
 	RefreshAchievementCollection();
 	
