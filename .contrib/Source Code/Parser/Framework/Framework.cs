@@ -152,9 +152,14 @@ namespace ATT
                         }
                         foreach (var key in dict)
                         {
-                            // don't merge in the text name of a quest since the parser doesn't understand it anyway
-                            if (key.Key != "text")
+                            if (key.Key == "text")
+                            {
+                                quest["_text"] = key.Value;
+                            }
+                            else
+                            {
                                 quest[key.Key] = key.Value;
+                            }
                         }
                     }
                 }
@@ -891,7 +896,7 @@ namespace ATT
                 for (int i = 1; i <= maxQuestID; i++)
                 {
                     // add any quest information which is not referenced but includes more than just a questID into the Unsorted category
-                    if (!QUESTS_WITH_REFERENCES.ContainsKey(i) && QUESTS.TryGetValue(i, out Dictionary<string, object> questRef) && questRef.Count > 1)
+                    if (!QUESTS_WITH_REFERENCES.ContainsKey(i) && QUESTS.TryGetValue(i, out Dictionary<string, object> questRef))
                     {
                         var entry = new Dictionary<string, object>() { { "questID", i } };
 
@@ -899,8 +904,16 @@ namespace ATT
                         questRef.TryGetValue("_type", out string qType);
                         questRef.TryGetValue("_area", out string qArea);
                         questRef.TryGetValue("_category", out string qCategory);
+                        questRef.TryGetValue("_text", out string qText);
 
                         List<string> metaData = new List<string>();
+                        if (qText != null)
+                        {
+                            if (!entry.ContainsKey("name"))
+                                entry["name"] = qText;
+
+                            metaData.Add("Name: |cFFf09f26" + qText + "|r");
+                        }
                         if (qType != null)
                             metaData.Add("Type: |cFFf09f26" + qType + "|r");
                         if (qArea != null)
@@ -908,12 +921,13 @@ namespace ATT
                         if (qCategory != null)
                             metaData.Add("Category: |cFFf09f26" + qCategory + "|r");
 
-                        questRef["description"] = string.Join("\n", metaData);
+                        if (metaData.Any())
+                            questRef["description"] = string.Join("\n", metaData);
 
                         // merge any quest information from the quest DB so that field names in the questRef are accurate
                         Objects.Merge(entry, questRef);
                         // do not include any sub-groups for unsorted quests since this is very bloaty and not useful in most cases
-                        entry.Remove("g");
+                        //entry.Remove("g");
                         unsortedQuests.Add(entry);
                     }
                 }
