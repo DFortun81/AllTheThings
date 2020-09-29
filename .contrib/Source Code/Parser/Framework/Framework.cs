@@ -1753,7 +1753,9 @@ namespace ATT
             if (outputFolder.Exists)
             {
                 // Export various debug information to the output folder.
+                ATT.Export.IncludeRawNewlines = false;
                 Objects.Export(outputFolder.FullName);
+                ATT.Export.IncludeRawNewlines = true;
             }
         }
     }
