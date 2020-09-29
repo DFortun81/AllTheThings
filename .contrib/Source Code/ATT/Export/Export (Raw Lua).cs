@@ -9,6 +9,11 @@ namespace ATT
     partial class Export
     {
         /// <summary>
+        /// Allows to define whether raw LUA will include newlines or not
+        /// </summary>
+        public static bool IncludeRawNewlines { get; set; } = true;
+
+        /// <summary>
         /// Export the data to the builder in a raw, longhand Lua format.
         /// Standardized formatting applies here.
         /// </summary>
@@ -55,7 +60,7 @@ namespace ATT
             }
 
             // Increase the indent by 1 tab.
-            var subindent = indent + '\t';
+            var subindent = IncludeRawNewlines ? indent + '\t' : string.Empty;
 
             // Clone this and calculate most significant.
             bool hasG = false;
@@ -98,14 +103,15 @@ namespace ATT
                 builder.Append(" -- ").Append(commentName);
 
             // move down for data
-            builder.AppendLine();
+            if (IncludeRawNewlines)
+                builder.AppendLine();
 
             // Export Fields
             int fieldCount = 0;
             foreach (var pair in data2)
             {
                 // If this is NOT the first field, move to the next line
-                if (fieldCount++ > 0) builder.AppendLine();
+                if (fieldCount++ > 0 && IncludeRawNewlines) builder.AppendLine();
 
 
                 // special things
@@ -176,7 +182,12 @@ namespace ATT
             if (hasG)
             {
                 // If this is NOT the first field, append a comma.
-                if (fieldCount++ > 0) builder.Append(',').AppendLine();
+                if (fieldCount++ > 0)
+                {
+                    builder.Append(',');
+                    if (IncludeRawNewlines)
+                        builder.AppendLine();
+                }
 
                 // Append the Sub-Indent and the Field Name
                 builder.Append(subindent).Append("[\"g\"] = ");
@@ -186,7 +197,10 @@ namespace ATT
             }
 
             // Close Bracket for the end of the Dictionary.
-            builder.AppendLine().Append(indent).Append('}');
+
+            if (IncludeRawNewlines)
+                builder.AppendLine();
+            builder.Append(indent).Append('}');
 
             if (useShortcut)
                 builder.Append(')');
@@ -227,16 +241,23 @@ namespace ATT
             }
 
             // Increase the indent by 1 tab.
-            var subindent = indent + '\t';
+            var subindent = IncludeRawNewlines ? indent + '\t' : string.Empty;
 
             // Open Bracket for beginning of the List.
-            builder.Append('{').AppendLine();
+            builder.Append('{');
+            if (IncludeRawNewlines)
+                builder.AppendLine();
 
             // Export Fields
             for (int i = 0; i < count; ++i)
             {
                 // If this is NOT the first field, append a comma.
-                if (i > 0) builder.Append(',').AppendLine();
+                if (i > 0)
+                {
+                    builder.Append(',');
+                    if (IncludeRawNewlines)
+                        builder.AppendLine();
+                }
 
                 // Append the Sub-Indent
                 builder.Append(subindent);
@@ -246,7 +267,10 @@ namespace ATT
             }
 
             // Close Bracket for the end of the List.
-            builder.AppendLine().Append(indent).Append('}');
+
+            if (IncludeRawNewlines)
+                builder.AppendLine();
+            builder.Append(indent).Append('}');
         }
 
         /// <summary>
