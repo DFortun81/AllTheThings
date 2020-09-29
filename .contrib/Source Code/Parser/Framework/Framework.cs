@@ -926,9 +926,9 @@ namespace ATT
 
                         // merge any quest information from the quest DB so that field names in the questRef are accurate
                         Objects.Merge(entry, questRef);
-                        // do not include any sub-groups for unsorted quests since this is very bloaty and not useful in most cases
-                        //entry.Remove("g");
-                        unsortedQuests.Add(entry);
+                        // dont bother adding quests which literally have nothing useful in them
+                        if (entry.Count > 1)
+                            unsortedQuests.Add(entry);
                     }
                 }
                 if (unsortedQuests.Count > 0)
