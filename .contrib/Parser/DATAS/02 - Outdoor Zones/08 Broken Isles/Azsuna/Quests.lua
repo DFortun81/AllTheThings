@@ -834,7 +834,6 @@ _.Zones =
 				q(40526),	-- Finishing Touches
 				q(45848),	-- Fit For a Pirate
 				q(41175),	-- Fit for an Elven Queen
-				q(40193),	-- Getting the Kinks Out
 				q(40144),	-- Glielle
 				q(41177),	-- Goblin Archaeology
 				q(40872),	-- Going Out With a Bang

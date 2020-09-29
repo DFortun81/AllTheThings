@@ -281,6 +281,12 @@ _.Zones =
 							i(162321), 	-- Schematic: Incendiary Ammunition [Rank 3]
 						},
 					}),
+					q(51013, {	-- Work Order: Mistscale
+						["requireSkill"] = SKINNING,
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
 					q(51000, {	-- Work Order: Star Moss
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,

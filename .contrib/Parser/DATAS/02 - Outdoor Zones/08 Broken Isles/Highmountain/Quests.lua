@@ -978,7 +978,6 @@ _.Zones =
 				q(40347),	-- Gurbog da Basher
 				q(39436),	-- Haglands Treasure
 				q(39827),	-- Haglands Treasure
-				q(40190),	-- Hardening the Hide
 				q(40134),	-- Highmountain Hides
 				q(42403),	-- Highmountain Hunters
 				q(42929),	-- Highmountain Salmon

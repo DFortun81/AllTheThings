@@ -72,6 +72,8 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 					}),
 					q(53975, {	-- Flying at Night
+					--	unsure what the SQs are for this, if anything.
+					--	originally it was set to "druids of gloomtide," with a comment saying "glaiveworks for me" is not a SQ.  got a report on discord that "druids of gloomtide" is also not required
 						["provider"] = { "n", 144786 },	-- Archmage Mordent Evenshade
 						["coord"] = { 49.4, 34.6, 1203 },
 						["sourceQuest"] = 53974,	-- Druids of Gloomtide -- It's not "Glaiveworks For Me" so I'm guessing this one if anything

@@ -101,7 +101,11 @@ _.Zones =
 					["provider"] = { "n", 36752 },	-- Private Worcester
 					["coord"] = { 29.4, 66.8, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14194,	-- Refleshification
+					["sourceQuests"] = {
+						14197,	-- A Quota to Meet
+						14161,	-- Basilisk Bashin'
+						14194,	-- Refleshification
+					},
 				}),
 				q(14155, {	-- Arborcide
 					["races"] = HORDE_ONLY,

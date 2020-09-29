@@ -753,7 +753,7 @@ _.Zones =
 				}),
 				q(1271,  {	-- Feast at the Blue Recluse
 					["provider"] = { "n", 1141 },	-- Angus Stern
-					["coord"] = { 49.6, 44.8, 84 },
+					["coord"] = { 51.7, 93.6, 84 },
 					["sourceQuest"] = 1222,	-- Stinky's Escape
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,

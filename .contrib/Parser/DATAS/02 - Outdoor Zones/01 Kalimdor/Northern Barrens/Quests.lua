@@ -703,7 +703,10 @@ _.Zones =
 				}),
 				q(876,   {	-- Serena Bloodfeather
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 875,	-- Harpy Lieutenants
+					["sourceQuests"] = {
+						875,	-- Harpy Lieutenants
+						867,	-- Harpy Raiders
+					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(5321)),	-- 	Elegant Shortsword
 						un(REMOVED_FROM_GAME, i(5279)),	-- 	Harpy Skinner
@@ -863,6 +866,7 @@ _.Zones =
 					["sourceQuests"] = {
 						29086,	-- Competition Schmompetition
 						29015,	-- Miner's Fortune
+						14006,	-- Read the Manual
 					},
 					["g"] = {
 						i(69217),	-- Test Pilot Britches
