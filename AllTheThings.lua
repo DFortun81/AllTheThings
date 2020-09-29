@@ -4178,6 +4178,7 @@ end
 local function AttachTooltip(self)
 	if not self.AllTheThingsProcessing then
 		self.AllTheThingsProcessing = true;
+		self.UpdateTooltip = function(self) return; end
 		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			local numLines = self:NumLines();
 			if numLines > 0 then
@@ -4357,6 +4358,7 @@ local function AttachBattlePetTooltip(self, data, quantity, detail)
 end
 local function ClearTooltip(self)
 	self.AllTheThingsProcessing = nil;
+	self.UpdateTooltip = nil;
 end
 
 -- Tooltip Hooks
@@ -9433,21 +9435,30 @@ end
 RowOnEnter = function (self)
 	local reference = self.ref; -- NOTE: This is the good ref value, not the parasitic one.
 	if reference and GameTooltip then
-		GameTooltipIcon.icon.Background:Hide();
-		GameTooltipIcon.icon.Border:Hide();
-		GameTooltipIcon:Hide();
-		GameTooltipModel:Hide();
+		local initialBuild = not GameTooltip.IsRefreshing;
+		GameTooltip.IsRefreshing = true;
+		
+		if initialBuild then
+			GameTooltipIcon.icon.Background:Hide();
+			GameTooltipIcon.icon.Border:Hide();
+			GameTooltipIcon:Hide();
+			GameTooltipIcon:ClearAllPoints();
+			GameTooltipModel:Hide();
+			GameTooltipModel:ClearAllPoints();
+		end
 		GameTooltip:ClearLines();
-		GameTooltipIcon:ClearAllPoints();
-		GameTooltipModel:ClearAllPoints();
 		if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
 			GameTooltip:SetOwner(self, "ANCHOR_LEFT");
-			GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-			GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
+			if initialBuild then
+				GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
+				GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
+			end
 		else
 			GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
-			GameTooltipIcon:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
-			GameTooltipModel:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
+			if initialBuild then
+				GameTooltipIcon:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
+				GameTooltipModel:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
+			end
 		end
 		
 		-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
@@ -9712,7 +9723,7 @@ RowOnEnter = function (self)
 		elseif reference.isMontly then GameTooltip:AddLine("This can be completed monthly.");
 		elseif reference.isYearly then GameTooltip:AddLine("This can be completed yearly.");
 		elseif reference.repeatable then GameTooltip:AddLine("This can be repeated multiple times."); end
-		if not GameTooltipModel:TrySetModel(reference) and reference.icon then
+		if initialBuild and not GameTooltipModel:TrySetModel(reference) and reference.icon then
 			if app.Settings:GetTooltipSetting("iconPath") then
 				GameTooltip:AddDoubleLine("Icon", reference.icon);
 			end
@@ -9980,6 +9991,7 @@ RowOnLeave = function (self)
 		GameTooltipIcon.icon.Border:Hide();
 		GameTooltipIcon:Hide();
 		GameTooltipModel:Hide();
+		GameTooltip.IsRefreshing = nil;
 	end
 end
 CreateRow = function(self)
@@ -10045,6 +10057,9 @@ CreateRow = function(self)
 	row.Texture.Border:SetPoint("BOTTOM");
 	row.Texture.Border:SetPoint("TOP");
 	row.Texture.Border:SetWidth(row:GetHeight());
+	
+	-- Forced/External Update of a Tooltip produced by an ATT row to use the same function which created it
+	row.UpdateTooltip = RowOnEnter;
 	
 	-- Clear the Row Data Initially
 	ClearRowData(row);
