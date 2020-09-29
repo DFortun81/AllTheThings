@@ -10711,6 +10711,17 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.g = app.Categories.NeverImplemented;
 			db.text = "Never Implemented";
+			db.description = "Items here technically exist within the game but have never been made available to players";
+			table.insert(g, db);
+		end
+		
+		-- Hidden Quest Triggers
+		if app.Categories.HiddenQuestTriggers then
+			db = {};
+			db.expanded = false;
+			db.g = app.Categories.HiddenQuestTriggers;
+			db.text = "Hidden Quest Triggers";
+			db.description = "These are Quests which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
 			table.insert(g, db);
 		end
 		
@@ -10720,6 +10731,7 @@ function app:GetDataCache()
 			db.g = app.Categories.Unsorted;
 			db.expanded = false;
 			db.text = "Unsorted";
+			db.description = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
 			table.insert(g, db);
 		end
 		BuildGroups(allData, allData.g);
