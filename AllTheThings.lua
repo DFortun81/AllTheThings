@@ -1188,10 +1188,27 @@ local IsQuestFlaggedCompleted = function(questID)
 	return questID and CompletedQuests[questID];
 end
 local IsQuestFlaggedCompletedForObject = function(t)
-	-- If the quest or altQuestID is completed, then return completed.
-	if IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID) then
+	-- If the quest is completed for this character, return completed.
+	if IsQuestFlaggedCompleted(t.questID) then
 		return 1;
 	end
+	-- if not considering account-wide tracking, this quest cannot be obtained if any altQuest is completed
+	if not app.AccountWideQuests then
+		-- If the quest has an altQuest which was completed on this character, return shared completed
+		if IsQuestFlaggedCompleted(t.altQuestID) then
+			return 2;
+		end
+		-- If the quest has multiple altQuests and one of them is completed on this character, return shared completed
+		if t.altQuests then
+			for i,questID in ipairs(t.altQuests) do
+				-- any altQuest completed on this character, return shared completion
+				if IsQuestFlaggedCompleted(questID) then
+					return 2;
+				end
+			end
+		end
+	end
+	-- If the quest is repeatable, then check other things to determine if it has ever been completed
 	if t.repeatable and app.Settings:GetTooltipSetting("RepeatableFirstTime") then
 		if t.questID and GetTempDataSubMember("CollectedQuests", t.questID) then
 			return 1;
@@ -1254,18 +1271,9 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		end
 	end
 	if not t.repeatable and app.AccountWideQuests then
+		-- any character has completed this specific quest, return shared completion
 		if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
 			return 2;
-		end
-		if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
-			return 2;
-		end
-	end
-	if t.altQuests then
-		for i,questID in ipairs(t.altQuests) do
-			if IsQuestFlaggedCompleted(questID) then
-				return 2;
-			end
 		end
 	end
 end
