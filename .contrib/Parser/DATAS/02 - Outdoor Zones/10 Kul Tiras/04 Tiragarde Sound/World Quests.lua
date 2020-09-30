@@ -34,19 +34,11 @@ _.Zones =
 					q(49661, {	-- Locally Sourced Eggs
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52124, {	-- Losers Weepers
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(54618, {	-- Paragon of the 7th Legion
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(54629, {	-- Paragon of the Proudmoore Admiralty
 						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51462, {	-- Paratroopers
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
 					}),
 					q(49408, {	-- Pirate Dice
 						["races"] = ALLIANCE_ONLY,
@@ -414,6 +406,10 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(51664, {	-- Kulett the Ornery
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
 					q(52760, {	-- Like Fish in a Barrel
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -434,9 +430,9 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51664, {	-- Kulett the Ornery
-						["lvl"] = 120,
+					q(52124, {	-- Losers Weepers
 						["isWorldQuest"] = true,
+						["lvl"] = 120,
 					}),
 					q(51670, {	-- Lumberjack Sentinel
 						["lvl"] = 120,
@@ -488,6 +484,10 @@ _.Zones =
 					q(51660, {	-- Pack Leader Asenya
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
+					}),
+					q(51462, {	-- Paratroopers
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
 					}),
 					q(50324, {	-- Picturesque Fizzsprings Resort
 						["lvl"] = 120,
