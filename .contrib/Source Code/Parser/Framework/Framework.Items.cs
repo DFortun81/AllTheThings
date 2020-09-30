@@ -64,13 +64,13 @@ namespace ATT
                 get
                 {
                     var keys = new List<int>();
-                    foreach(var itemID in ITEMS.Keys)
+                    foreach (var itemID in ITEMS.Keys)
                     {
                         if (ITEMS_WITH_REFERENCES.ContainsKey(itemID)) continue;
                         keys.Add(itemID);
                     }
                     keys.Sort();
-                    foreach(var itemID in keys)
+                    foreach (var itemID in keys)
                     {
                         yield return ITEMS[itemID];
                     }
@@ -170,12 +170,12 @@ namespace ATT
                 {
                     var builder = ATT.Export.ExportRawLua(group.Value);
                     builder.AppendLine().AppendLine();
-                    foreach(var item in group.Value)
+                    foreach (var item in group.Value)
                     {
                         if (item.TryGetValue("itemID", out object id))
                         {
                             builder.Append("i(").Append(id).Append(");");
-                            if(item.TryGetValue("name", out object name))
+                            if (item.TryGetValue("name", out object name))
                             {
                                 builder.Append("\t\t--[[").Append(name).Append("]]");
                             }
@@ -361,7 +361,6 @@ namespace ATT
                     // Integer Data Type Fields
                     case "altItemID":
                     case "altAchID":
-                    case "altQuestID":
                     case "altSpeciesID":
                     case "buildingID":
                     case "questID":
@@ -448,7 +447,7 @@ namespace ATT
                                     else return;
                                 }
                                 newListOfLists = new List<List<object>>();
-                                foreach(var o in newList)
+                                foreach (var o in newList)
                                 {
                                     var list = o as List<object>;
                                     if (list == null)
@@ -785,7 +784,7 @@ namespace ATT
                 // Merge the item with the data dictionary.
                 MergeInto(itemID, item, data);
             }
-            
+
             /// <summary>
             /// Merge information about the item matching the data's itemID into the dictionary.
             /// If the source dictionary does not contain an itemID, this method does nothing.

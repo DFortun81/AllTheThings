@@ -1281,7 +1281,6 @@ namespace ATT
                     //case "musicRollID":
                     //case "illusionID":
                     case "altAchID":
-                    case "altQuestID":
                     case "altSpeciesID":
                     case "requireSkill":
                     case "class":
@@ -1316,6 +1315,13 @@ namespace ATT
                             });
                             break;
                         }
+                    case "altQuestID":
+                        // Convert a single altQuestID into an altQuests list.
+                        Merge(item, "altQuests", new List<object>
+                            {
+                                Convert.ToInt32(value)
+                            });
+                        break;
                     case "qg":
                         {
                             // Convert a single qg to a qgs list.

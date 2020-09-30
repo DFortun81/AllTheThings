@@ -1193,28 +1193,25 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		return 1;
 	end
 	-- if not considering account-wide tracking, this quest cannot be obtained if any altQuest is completed
-	if not app.AccountWideQuests then
-		-- If the quest has an altQuest which was completed on this character, return shared completed
-		if IsQuestFlaggedCompleted(t.altQuestID) then
-			return 2;
-		end
-		-- If the quest has multiple altQuests and one of them is completed on this character, return shared completed
-		if t.altQuests then
-			for i,questID in ipairs(t.altQuests) do
-				-- any altQuest completed on this character, return shared completion
-				if IsQuestFlaggedCompleted(questID) then
-					return 2;
-				end
-			end
-		end
+	-- If the quest has an altQuest which was completed on this character, return shared completed
+	if not app.AccountWideQuests and t.altcollected and t.altcollected > 0 then
+		return 2;
 	end
 	-- If the quest is repeatable, then check other things to determine if it has ever been completed
 	if t.repeatable and app.Settings:GetTooltipSetting("RepeatableFirstTime") then
 		if t.questID and GetTempDataSubMember("CollectedQuests", t.questID) then
 			return 1;
 		end
-		if t.altQuestID and GetTempDataSubMember("CollectedQuests", t.altQuestID) then
-			return 1;
+		-- can an alt quest of a repeatable quest be permanent?
+		-- if not considering account-wide tracking, consider the quest completed once if any altquest was also completed
+		if not app.AccountWideQuests and t.altQuests then
+			-- If the quest has an altQuest which was completed on this character, return shared completed
+			for i,questID in ipairs(t.altQuests) do
+				-- any altQuest completed on this character, return shared completion
+				if GetTempDataSubMember("CollectedQuests", questID) then
+					return 2;
+				end
+			end
 		end
 		if Grail then 
 			-- Import previously completed repeatable quest from Grail addon data
@@ -1223,10 +1220,19 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				SetTempDataSubMember("CollectedQuests", t.questID, 1);
 				return 1;
 			end
-			if Grail:HasQuestEverBeenCompleted(t.altQuestID) then
-				SetDataSubMember("CollectedQuests", t.altQuestID, 1);
-				SetTempDataSubMember("CollectedQuests", t.altQuestID, 1);
-				return 1;
+			-- if not considering account-wide tracking, consider the quest completed once if any altquest was also completed
+			if not app.AccountWideQuests and t.altQuests then
+				-- If the quest has an altQuest which was completed on this character, return shared completed
+				local isCollected;
+				for i,questID in ipairs(t.altQuests) do
+					-- any altQuest completed on this character, return shared completion
+					if Grail:HasQuestEverBeenCompleted(questID) then
+						SetDataSubMember("CollectedQuests", questID, 1);
+						SetTempDataSubMember("CollectedQuests", questID, 1);
+						isCollected = 2;
+					end
+				end
+				if isCollected then return isCollected; end
 			end
 		end
 		if WorldQuestTrackerAddon then
@@ -1241,33 +1247,55 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				return 1;
 			end
 			
-			if wqt_local and wqt_local[altQuestID] and wqt_local[altQuestID] > 0 then
-				SetDataSubMember("CollectedQuests", t.altQuestID, 1);
-				SetTempDataSubMember("CollectedQuests", t.altQuestID, 1);
-				return 1;
+			if wqt_local then
+				local isCollected;
+				for i,questID in ipairs(t.altQuests) do
+					-- any altQuest completed on this character, return shared completion
+					if wqt_local[questID] and wqt_local[questID] > 0 then
+						SetDataSubMember("CollectedQuests", questID, 1);
+						SetTempDataSubMember("CollectedQuests", questID, 1);
+						isCollected = 2;
+					end
+				end
+				if isCollected then return isCollected; end
 			end
 			
+			-- quest completed on any character, return shared completion
 			if wqt_global and wqt_global[questID] and wqt_global[questID] > 0 then
 				SetDataSubMember("CollectedQuests", t.questID, 1);
-				if app.AccountWideQuests then
+				-- only return as completed if not tracking account wide
+				if not app.AccountWideQuests then
 					return 2;
 				end
 			end
 		
-			if wqt_global and wqt_global[altQuestID] and wqt_global[altQuestID] > 0 then
-				SetDataSubMember("CollectedQuests", t.altQuestID, 1);
-				if app.AccountWideQuests then
-					return 2;
-				end
-			end
+			-- any alt quest completed on any character means nothing towards the specific quest for this character
+			-- if wqt_global then
+				-- for i,questID in ipairs(t.altQuests) do
+					-- -- any altQuest completed on this account, return shared completion
+					-- if wqt_global[questID] and wqt_global[questID] > 0 then
+						-- SetDataSubMember("CollectedQuests", questID, 1);
+						-- SetTempDataSubMember("CollectedQuests", questID, 1);
+						-- if app.AccountWideQuests then
+							-- return 2;
+						-- end
+					-- end
+				-- end
+				
+				-- SetDataSubMember("CollectedQuests", t.altQuestID, 1);
+				-- if app.AccountWideQuests then
+					-- return 2;
+				-- end
+			-- end
 		end
+		-- quest completed on any character and tracking account-wide, return shared completion
 		if app.AccountWideQuests then
 			if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
 				return 2;
 			end
-			if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
-				return 2;
-			end
+			-- if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
+				-- return 2;
+			-- end
 		end
 	end
 	if not t.repeatable and app.AccountWideQuests then
@@ -6822,6 +6850,21 @@ app.BaseQuest = {
 			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
 		elseif key == "saved" or key == "collected" then
 			return IsQuestFlaggedCompletedForObject(t);
+		elseif key == "altcollected" then
+			if not rawget(t,"altcollected") then
+				rawset(t,"altcollected",0);
+				-- determine if an altQuest is considered completed for this quest for this character
+				if t.altQuests then
+					for i,questID in ipairs(t.altQuests) do
+						-- any altQuest completed on this character, mark the altQuestID
+						if IsQuestFlaggedCompleted(questID) then
+							-- print("complete altquest found",questID,"=>",t.questID);
+							rawset(t, "altcollected", questID);
+						end
+					end
+				end
+			end
+			return rawget(t, "altcollected");
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -9673,10 +9716,15 @@ RowOnEnter = function (self)
 			GameTooltip:AddDoubleLine(" ", L[IsTitleKnown(reference.titleID) and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
 			AttachTooltipSearchResults(GameTooltip, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID, true);
 		end
-		if reference.questID then
-			if app.Settings:GetTooltipSetting("questID") then
-				GameTooltip:AddDoubleLine(L["QUEST_ID"], tostring(reference.questID));
-				if reference.altQuestID then GameTooltip:AddDoubleLine(" ", tostring(reference.altQuestID)); end
+		if reference.questID and app.Settings:GetTooltipSetting("questID") then
+			GameTooltip:AddDoubleLine(L["QUEST_ID"], tostring(reference.questID));
+			if reference.altQuests and #reference.altQuests > 0 then
+				local altQuests="";
+				for i,questID in ipairs(reference.altQuests) do
+					if (i > 1) then altQuests = altQuests .. ","; end
+					altQuests = altQuests .. tostring(questID);
+				end
+				GameTooltip:AddDoubleLine(" ", "[" .. altQuests .. "]"); 
 			end
 		end
 		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
