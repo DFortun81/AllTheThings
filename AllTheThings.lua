@@ -5975,65 +5975,61 @@ local function GetHolidayCache()
 		SetTempDataMember("HOLIDAY_CACHE", cache);
 		SetDataMember("HOLIDAY_CACHE", cache);
 		local date = C_Calendar.GetDate();
-		if date.month > 8 then
-			C_Calendar.SetAbsMonth(date.month - 8, date.year);
-		else
-			C_Calendar.SetAbsMonth(date.month + 4, date.year - 1);
-		end
-		
 		for month=1,12,1 do
-			C_Calendar.SetMonth(1);
-			local monthInfo = C_Calendar.GetMonthInfo();
+			-- We kick off the search from January 1 at the start of the year using SetAbsMonth/GetMonthInfo. All successive functions are built from the returns of these.
+			local absMonth = C_Calendar.SetAbsMonth(month, date.year);
+			local monthInfo = C_Calendar.GetMonthInfo(absMonth);
 			for day=1,monthInfo.numDays,1 do
 				local numEvents = C_Calendar.GetNumDayEvents(0, day);
 				if numEvents > 0 then
 					for index=1,numEvents,1 do
-						local event = C_Calendar.GetDayEvent(0, day, index)
-						if event and event.calendarType == "HOLIDAY" and (not event.sequenceType or event.sequenceType == "" or event.sequenceType == "START") then
-							if event.iconTexture then
-								local t = cache[event.iconTexture];
-								if not t then
-									t = {
-										["name"] = event.title,
-										["icon"] = event.iconTexture,
-										["times"] = {},
-									};
-									cache[event.iconTexture] = t;
-								elseif event.iconTexture == 235465 then
-									-- Harvest Festival and Pilgrims Bounty use the same icon...
-									t = {
-										["name"] = event.title,
-										["icon"] = event.iconTexture,
-										["times"] = {},
-									};
-									cache[235466] = t;
+						local event = C_Calendar.GetDayEvent(0, day, index);
+						if event then -- If this is nil, then attempting to index it on the same line will toss an error.
+							if event.calendarType == "HOLIDAY" and (not event.sequenceType or event.sequenceType == "" or event.sequenceType == "START") then
+								if event.iconTexture then
+									local t = cache[event.iconTexture];
+									if not t then
+										t = {
+											["name"] = event.title,
+											["icon"] = event.iconTexture,
+											["times"] = {},
+										};
+										cache[event.iconTexture] = t;
+									elseif event.iconTexture == 235465 then
+										-- Harvest Festival and Pilgrims Bounty use the same icon...
+										t = {
+											["name"] = event.title,
+											["icon"] = event.iconTexture,
+											["times"] = {},
+										};
+										cache[235466] = t;
+									end
+									tinsert(t.times,
+									{
+										["start"] = time({
+											year=event.startTime.year,
+											month=event.startTime.month,
+											day=event.startTime.monthDay,
+											hour=event.startTime.hour,
+											minute=event.startTime.minute,
+										}),
+										["end"] = time({
+											year=event.endTime.year,
+											month=event.endTime.month,
+											day=event.endTime.monthDay,
+											hour=event.endTime.hour,
+											minute=event.endTime.minute,
+										}),
+										["startTime"] = event.startTime,
+										["endTime"] = event.endTime,
+									});
 								end
-								tinsert(t.times,
-								{
-									["start"] = time({
-										year=event.startTime.year,
-										month=event.startTime.month,
-										day=event.startTime.monthDay,
-										hour=event.startTime.hour,
-										minute=event.startTime.minute,
-									}),
-									["end"] = time({
-										year=event.endTime.year,
-										month=event.endTime.month,
-										day=event.endTime.monthDay,
-										hour=event.endTime.hour,
-										minute=event.endTime.minute,
-									}),
-									["startTime"] = event.startTime,
-									["endTime"] = event.endTime,
-								});
 							end
 						end
 					end
 				end
 			end
 		end
-		C_Calendar.SetAbsMonth(date.month, date.year);
 	end
 	return cache;
 end
