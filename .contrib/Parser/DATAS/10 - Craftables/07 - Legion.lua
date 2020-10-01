@@ -187,7 +187,7 @@ _.Craftables =
 				i(132519),	-- Trigger*
 			}),
 			filter(102, {	-- Toys
-				i(132518),	-- Blingtron's Circuit Design Tutorial*					
+				i(132518),	-- Blingtron's Circuit Design Tutorial*
 				i(151652),	-- Wormhole Generator: Argus*
 			}),
 			n(-318, {	-- Armour
@@ -209,11 +209,11 @@ _.Craftables =
 				i(136688),	-- Shockinator*
 			}),
 			n(-494, {	-- Miscellaneous
-				n(101527, {	-- Blingtron 6000
-					i(132892, {	-- Blingtron 6000 Gift Package
-						["questID"] = 40753,
-						["isDaily"] = true,
-						["groups"] = {
+				q(40753, { -- Blingtron 6000
+					["isDaily"] = true,
+					["provider"] = { "n", 101527 },    -- Blingtron 6000
+					["g"] ={
+						i(132892, {	-- Blingtron 6000 Gift Package
 							i(87250),	-- Depleted-Kyparium Rocket Mount
 							i(87251),	-- Geosynchronous World Spinner Mount
 							i(41508),	-- Mechano-Hog Mount
@@ -231,9 +231,9 @@ _.Craftables =
 							i(136630),	-- "Twirling Bottom" Repeaater"
 							i(136629),	-- Felgibber Shotgun
 							i(136632),	-- Chaos Blaster
-						},
-					}),
-				}),
+						}),
+					},
+				})
 			}),
 			{
 				["name"] = "Robotics",
@@ -337,7 +337,7 @@ _.Craftables =
 			}),
 		}),
 		n(-187, {	-- Leatherworking
-			n(-349, { 	-- Cosmetic		
+			n(-349, { 	-- Cosmetic
 				un(29, i(151791)),	-- Winter Boots
 			}),
 			n(-44, { 	-- Leather

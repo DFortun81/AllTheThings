@@ -47,17 +47,17 @@ _.Craftables =
 		}),
 		n(-183, { 	-- Engineering
 			filter(101, {	-- Pets
-				i(112057),	-- Lifelike Mechanical Frostboar*		
+				i(112057),	-- Lifelike Mechanical Frostboar*
 				i(111402),	-- Mechanical Axebeak*
 				i(118741),	-- Mechanical Scorpid*
 			}),
 			filter(102, {	-- Toys
 				i(111821, {	-- Blingtron 5000*
-					n(77789, {	-- Blingtron 5000
-						i(113258, {	-- Blingtron 5000 Gift Package
-							["questID"] = 34774,
-							["isDaily"] = true,
-							["groups"] = {
+					q(34774, { -- Blingtron 5000
+						["provider"] = { "n", 77789 },    -- Blingtron 5000
+						["isDaily"] = true,
+						["g"] = {
+							i(113258, {	-- Blingtron 5000 Gift Package
 								i(87250),	-- Depleted-Kyparium Rocket Mount
 								i(87251), 	-- Geosynchronous World Spinner Mount
 								i(41508), 	-- Mechano-Hog Mount
@@ -70,8 +70,8 @@ _.Craftables =
 								i(115483), 	-- Sky-Bo Pet
 								i(21277), 	-- Tranquil Mechanical Yeti Pet
 								i(123851), 	-- Photo B.O.M.B. Toy
-							},							
-						}),
+							}),
+						},
 					}),
 				}),
 				i(109167),	-- Findle's Loot-A-Rang*
