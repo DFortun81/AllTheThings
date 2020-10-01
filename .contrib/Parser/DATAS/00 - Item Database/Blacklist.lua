@@ -95,6 +95,7 @@ i(9265);	-- Cuergo's Hidden Treasure
 i(169232);	-- Dud Blast Canister
 i(164731);	-- Enchanted Shroud
 i(169778);	-- Enchanting Crystal
+i(132560);	-- Essence of the Whirlwind
 i(169229);	-- Exhaust Aromatics
 i(169164);	-- Father's Bones
 i(169166);	-- Father's Clothes
