@@ -1548,8 +1548,8 @@ MergeObjects = function(g, g2)
 						end
 					end
 					for k,v in pairs(o) do
-						if k ~= "expanded" then
-							rawset(t, k, v);
+						if k ~= "expanded" and (k ~= "parent" or not rawget(o, k)) then
+							rawset(o, k, v);
 						end
 					end
 				else
@@ -1581,7 +1581,7 @@ MergeObject = function(g, t, index)
 					end
 				end
 				for k,v in pairs(t) do
-					if k ~= "expanded" then
+					if k ~= "expanded" and (k ~= "parent" or not rawget(o, k)) then
 						rawset(o, k, v);
 					end
 				end
@@ -2251,16 +2251,23 @@ ResolveSymbolicLink = function(o)
 end
 end)();
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
+	local total = 0;
+	local progress = 0;
 	for i,group in ipairs(groups) do
+		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
 		if app.RecursiveGroupRequirementsFilter(group) then
 			local right = nil;
 			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
+				total = total + group.total;
+				progress = progress + (group.progress or 0);
 				if (group.progress / group.total) < 1 or app.Settings:Get("Show:CompletedGroups") then
 					right = GetProgressColorText(group.progress, group.total);
 				end
 			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
 				if group.collectible then
+					total = total + 1;
 					if group.collected then
+						progress = progress + 1;
 						if app.Settings:Get("Show:CollectedThings") then
 							right = GetCollectionIcon(group.collected);
 						end
@@ -2287,7 +2294,6 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				-- Insert into the display.
 				local o = { prefix = indent, group = group, right = right };
 				if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. GetUnobtainableTexture(group) .. ":0|t "; end
-				-- print("showing",group.itemID);
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
@@ -2295,9 +2301,13 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
 				end
 			end
-		else
-			-- print("not including itemID due to filter",group.itemID);
 		end
+	end
+	if (total > 0) then
+		local data = {};
+		data.total = total;
+		data.progress = progress;
+		return data;
 	end
 end
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
@@ -2487,7 +2497,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						itemID = tonumber(itemID2); 
 						paramA = "itemID";
 						paramB = itemID;
-						-- print("item tooltip",itemID);
 					end
 					if #group > 0 then
 						for i,j in ipairs(group) do
@@ -2886,6 +2895,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- Create an unlinked version of the object.
 		if not group.g then
 			local merged = {};
+			-- TODO: can probably make this merging faster instead of double loop
+			-- First merge only groups which meet the current filters
+			for i,o in ipairs(group) do
+				if app.RecursiveGroupRequirementsFilter(o) then
+					MergeObject(merged, CreateObject(o));
+				end
+			end
+			-- then merge any filtered groups
 			for i,o in ipairs(group) do
 				MergeObject(merged, CreateObject(o));
 			end
@@ -2944,6 +2961,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
 		end
 		
+		local collectionData;
 		if group.g and #group.g > 0 then
 			--[[
 			if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
@@ -2956,7 +2974,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			]]--
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
 				local entries, left, right = {};
-				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+				collectionData = BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
 					tinsert(info, { left = "Contains:" });
 					if #entries < 26 then
@@ -3023,7 +3041,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		
 		-- If the user wants to show the progress of this search result, do so.
 		if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
-			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
+			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(collectionData or group);
 		end
 		
 		-- If there was any informational text generated, then attach that info.
