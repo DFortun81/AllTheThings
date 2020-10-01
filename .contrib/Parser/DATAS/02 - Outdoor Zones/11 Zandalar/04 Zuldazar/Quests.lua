@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(875, {	-- Zandalar
@@ -148,7 +149,7 @@ _.Zones =
 								i(169614),	-- Call to Arms Distinction
 							},
 						}),
-						q(52956, {	-- Call to Arms: Tirigarde Sound
+						q(52956, {	-- Call to Arms: Tiragarde Sound
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
 							["isWeekly"] = true,
 							["coord"] = { 51.5, 58.1, 862 },

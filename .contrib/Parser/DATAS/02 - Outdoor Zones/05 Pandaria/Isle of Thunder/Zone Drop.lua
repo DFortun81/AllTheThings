@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -59,7 +60,7 @@ _.Zones =
 					70236,	-- Zandalari Storm-Caller
 					69390,	-- Zandalari Storm-Caller
 					69911,	-- Zandalari Warlord
-				},	
+				},
 				["maps"] = {
 					508,	-- Overgrown Statuary
 					509,	-- Royal Amphitheater

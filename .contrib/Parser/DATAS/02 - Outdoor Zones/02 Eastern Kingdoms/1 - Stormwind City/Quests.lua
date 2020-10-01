@@ -662,7 +662,7 @@ _.Zones =
 					["coord"] = { 41.4, 47.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(168,   {	-- Collecting Memories
 					["provider"] = { "n", 656 },	-- Wilder Thistlenettle
@@ -894,7 +894,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30987, {	-- Joining the Alliance
 					["provider"] = { "n", 60566 },	-- Aysa Cloudsinger
