@@ -7,7 +7,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 90,
-		["mapID"] = 456,
+		["maps"] = { 
+			456,	-- Raid Map
+			728,	-- Monk: Legion Class Campaign Map
+		},
 		["coord"] = { 48.4, 61.4, 433 },	-- Terrace of Endless Spring, The Veiled Stair
 		["groups"] = {
 			d(7, {	-- LFR
