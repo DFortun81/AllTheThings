@@ -2104,7 +2104,8 @@ _.Zones =
 						i(161587, {	-- Legguards of the Storm Battalion
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(163778, {	-- Lil'Siege (PET!)
+						i(163778, {	-- Lil' Siege Tower (PET!)
+							["races"] = ALLIANCE_ONLY,
 							["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 						}),
 						i(161584, {	-- Medical Corps Slippers

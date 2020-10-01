@@ -2287,6 +2287,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				-- Insert into the display.
 				local o = { prefix = indent, group = group, right = right };
 				if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. GetUnobtainableTexture(group) .. ":0|t "; end
+				-- print("showing",group.itemID);
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
@@ -2294,6 +2295,8 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
 				end
 			end
+		else
+			-- print("not including itemID due to filter",group.itemID);
 		end
 	end
 end
@@ -2484,6 +2487,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						itemID = tonumber(itemID2); 
 						paramA = "itemID";
 						paramB = itemID;
+						-- print("item tooltip",itemID);
 					end
 					if #group > 0 then
 						for i,j in ipairs(group) do
@@ -2723,6 +2727,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 					]]--
+					-- print("has reagents");
 					if select(14, GetItemInfo(itemID)) == 1 and not app.Settings:Get("DebugMode") then
 						if not app.AppliedSkillIDToNPCIDs then
 							app.AppliedSkillIDToNPCIDs = true;
@@ -2954,7 +2959,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
 					tinsert(info, { left = "Contains:" });
-					if #entries < 25 then
+					if #entries < 26 then
 						for i,item in ipairs(entries) do
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
@@ -2972,7 +2977,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							tinsert(info, { left = item.prefix .. left, right = right });
 						end
 					else
-						for i=1,math.min(25, #entries) do
+						for i=1,25 do
 							local item = entries[i];
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
@@ -2990,7 +2995,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							tinsert(info, { left = item.prefix .. left, right = right });
 						end
 						local more = #entries - 25;
-						if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
+						tinsert(info, { left = "And " .. more .. " more..." });
 					end
 				end
 			end
@@ -3745,16 +3750,14 @@ local function PopulateQuestObject(questObject)
 								item.g = {};
 								item.progress = 0;
 								item.total = 0;
-								item.OnUpdate = OnUpdateForItem;
 							end
-							MergeObjects(item.g, data.g);
+							MergeObject(item.g, data);
 						end
 					end
 					if not item.g then
 						item.g = {};
 						item.progress = 0;
 						item.total = 0;
-						item.OnUpdate = OnUpdateForItem;
 					end
 					MergeObject(questObject.g, item);
 				end
@@ -5760,7 +5763,7 @@ end
 
 -- Heirloom Lib
 (function()
-local isWeapon = { 20, 29, 28,  21, 22, 23, 24, 25, 26,  50, 57, 34, 35, 27,  33, 32, 31 };
+local isWeapon = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
 local armorTextures = {
 	"Interface/ICONS/INV_Icon_HeirloomToken_Armor01",
 	"Interface/ICONS/INV_Icon_HeirloomToken_Armor02",
@@ -5778,7 +5781,7 @@ app.BaseHeirloomUnlocked = {
 		if key == "collectible" then
 			return app.CollectibleHeirlooms;
 		elseif key == "collected" then
-			return C_Heirloom.PlayerHasHeirloom(t.parent.itemID);
+			return t.parent.itemID and C_Heirloom.PlayerHasHeirloom(t.parent.itemID);
 		elseif key == "text" then
 			return "Unlocked Heirloom";
 		elseif key == "description" then
@@ -5796,6 +5799,7 @@ app.BaseHeirloomLevel = {
 		if key == "collectible" then
 			return app.CollectibleHeirlooms;
 		elseif key == "collected" then
+			if not t.parent.itemID then return; end
 			local level = GetDataSubMember("HeirloomUpgradeRanks", t.parent.itemID, 0);
 			if t.level <= level then return true; end
 			level = select(5, C_Heirloom.GetHeirloomInfo(t.parent.itemID));
@@ -5936,10 +5940,12 @@ app.BaseHeirloom = {
 						item.g = {};
 					end
 					g = {};
-					tinsert(g, setmetatable({ ["parent"] = t }, app.BaseHeirloomUnlocked));
+					local heirhashpre = "hl" .. tostring(t.itemID)
+					tinsert(g, setmetatable({ ["parent"] = t, ["hash"] = heirhashpre }, app.BaseHeirloomUnlocked));
 					for i=1,total,1 do
-						local l = setmetatable({ ["level"] = i, ["parent"] = t, ["u"] = t.u }, app.BaseHeirloomLevel);
-						local c = setmetatable({ ["level"] = i, ["itemID"] = t.itemID, ["parent"] = t, ["u"] = t.u, ["f"] = t.f }, app.BaseHeirloomLevel);
+						local hLvlhash = heirhashpre .. ":" .. tostring(i);
+						local l = setmetatable({ ["level"] = i, ["parent"] = t, ["u"] = t.u, ["hash"] = hLvlhash }, app.BaseHeirloomLevel);
+						local c = setmetatable({ ["level"] = i, ["itemID"] = t.itemID, ["parent"] = t, ["u"] = t.u, ["f"] = t.f, ["hash"] = hLvlhash }, app.BaseHeirloomLevel);
 						if l.isWeapon then
 							tinsert(weaponTokens[total + 1 - i].g, c);
 						else
@@ -13193,11 +13199,12 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				-- { 905 },	-- Argus, already has individual zones above
 				{ 948 },	-- The Maelstrom	
 			};
-			local OnUpdateForItem = function(self)
-				for i,o in ipairs(self.g) do
-					o.visible = false;
-				end
-			end;
+			-- local OnUpdateForItem = function(self)
+				-- print("update on group",self.key, self[self.key]);
+				-- for i,o in ipairs(self.g) do
+					-- o.visible = false;
+				-- end
+			-- end;
 			function UnsetNotCollectible(o)
 				if o.collectible == false then o.collectible = nil; end
 				if o.g then
@@ -13324,10 +13331,10 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							--print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID,#questObject.g,questObject.repeatable,questObject.timeRemaining);
 							--print(tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft);
 							
-							-- only merge POIs with time remaining, or collectible rewards unless shift is held down (bonus objectives are POIs but not time-limited)
+							-- only merge POIs with time remaining, or collectible rewards unless alt is held down (bonus objectives are POIs but not time-limited)
 							-- repeatable tasks usually indicate quests which are also up for long durations of time, but will expire (warfront scenario, etc.)
 							if includeAll or
-								-- include the quest in the list if holding shift and tracking quests
+								-- include the quest in the list if holding alt and tracking quests
 								(includePermanent and includeQuests) or 
 								-- or if it has a collectible and is repeatable (i.e. one attempt per day/week/year)
 								(#questObject.g > 0 and questObject.isRepeatable) or 
@@ -13382,7 +13389,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 									if not questLine.hidden then
 										local questObject = GetPopulatedQuestObject(questLine.questID);
 										if includeAll or
-											-- include the quest in the list if holding shift and tracking quests
+											-- include the quest in the list if holding alt and tracking quests
 											(includePermanent and includeQuests) or 
 											-- or if it has a collectible and is repeatable (i.e. one attempt per day/week/year)
 											(#questObject.g > 0 and questObject.isRepeatable) or 
@@ -13496,9 +13503,8 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 													item.g = {};
 													item.progress = 0;
 													item.total = 0;
-													item.OnUpdate = OnUpdateForItem;
 												end
-												MergeObjects(item.g, data.g);
+												MergeObject(item.g, data);
 											end
 										end
 									end
@@ -13523,18 +13529,11 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 														item.g = {};
 														item.progress = 0;
 														item.total = 0;
-														item.OnUpdate = OnUpdateForItem;
 													end
-													MergeObjects(item.g, data.g);
+													MergeObject(item.g, data);
 												end
 											end
 										end
-									end
-									if not item.g then
-										item.g = {};
-										item.progress = 0;
-										item.total = 0;
-										item.OnUpdate = OnUpdateForItem;
 									end
 									MergeObject(header.g, item);
 								end
@@ -13549,7 +13548,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				
 				if retry == true
 				then
-					--print("Missing API quest data on this World Quest refresh");
+					-- print("Missing API quest data on this World Quest refresh");
 					return true;
 				end
 				

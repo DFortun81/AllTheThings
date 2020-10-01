@@ -20,7 +20,6 @@ _.Zones =
 						}),
 						i(163492, {	-- Drustvar Piglet
 							["sourceQuests"] = { 47950 },	-- Cured Ham
-							["races"] = ALLIANCE_ONLY,
 							["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 						}),
 						i(160708, {	-- Smoochums' Bloody Heart

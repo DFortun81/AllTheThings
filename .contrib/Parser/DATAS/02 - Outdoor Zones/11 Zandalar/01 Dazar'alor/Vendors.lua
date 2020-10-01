@@ -1355,6 +1355,7 @@ _.Zones =
 							["collectible"] = false,
 						}),
 						i(163779, {	-- Lil' War Machine (PET!)
+							["races"] = HORDE_ONLY,
 							["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 						}),
 						i(161550, {	-- Lustful Warbringer's Legplates
