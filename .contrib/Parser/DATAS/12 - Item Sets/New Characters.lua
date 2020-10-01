@@ -111,6 +111,7 @@ _.GearSets =
 					i(157678),	-- Heartbonded Legguards
 					i(157675),	-- Heartbonded Greaves
 					i(157649),	-- Goldstring Recurve
+					i(157622),	-- Silverscope Longrifle
 				},
 			}),
 			cl(7,  {	-- Shaman

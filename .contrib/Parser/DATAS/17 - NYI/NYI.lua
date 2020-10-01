@@ -64,7 +64,6 @@ _.NeverImplemented =
 
 
 		-- Scrapped Lv20 Gear (??)
-		un(NEVER_IMPLEMENTED, i(157622)),	-- Silverscope Longrifle (Level 20 Kul Tiran Hunter Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157644)),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
 		un(NEVER_IMPLEMENTED, i(157621)),	-- Staff of Regrowth (Lv20 Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157623)),	-- Frostcore Staff (Lv20 Start Gear?)
