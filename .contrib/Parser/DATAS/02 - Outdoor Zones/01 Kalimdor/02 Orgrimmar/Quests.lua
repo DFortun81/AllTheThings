@@ -1914,7 +1914,6 @@ _.Zones =
 					["provider"] = { "n", 55382 },	-- Darkmoon Faire Mystic Mage
 					["coord"] = { 48.0, 62.0, 85 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 					["g"] = {
 						currency(515),	-- Darkmoon Prize Ticket
 					},

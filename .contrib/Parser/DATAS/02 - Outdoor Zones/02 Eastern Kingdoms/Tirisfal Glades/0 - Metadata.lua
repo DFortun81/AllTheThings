@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -12,7 +13,6 @@ _.Zones =
 				466,	-- Night Web's Hollow
 				908,	-- Ruins of Lordaeron (Battle for Lordaeron scenario)
 			},
-			["lvl"] = 1,
 		}),
 	}),
 };

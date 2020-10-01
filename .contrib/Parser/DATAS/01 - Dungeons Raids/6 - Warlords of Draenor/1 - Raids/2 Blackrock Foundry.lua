@@ -277,7 +277,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				n(QUESTS, {
 					q(37029, {	-- Sigil of the Black Hand
 						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-						["altQuests"] = { 
+						["altQuests"] = {
 							37030,	-- Sigil of the Black Hand (Heroic)
 							37031,	-- Sigil of the Black Hand (Mythic)
 						},
@@ -374,7 +374,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					}),
 					i(118382, {	-- Ember of the Mountain
 						["questID"] = 37029,	-- Sigil of the Black Hand
-						["altQuests"] = { 
+						["altQuests"] = {
 							37030,	-- Sigil of the Black Hand [Heroic]
 							37031,	-- Sigil of the Black Hand [Mythic]
 						},
@@ -477,7 +477,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					}),
 					i(118383, {	-- Heart of Stone
 						["questID"] = 37029,	-- Sigil of the Black Hand
-						["altQuests"] = { 
+						["altQuests"] = {
 							37030,	-- Sigil of the Black Hand [Heroic]
 							37031,	-- Sigil of the Black Hand [Mythic]
 						},
@@ -592,7 +592,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						}),
 						i(118384, {	-- Sliver of Iron
 							["questID"] = 37029,	-- Sigil of the Black Hand
-							["altQuests"] = { 
+							["altQuests"] = {
 								37030,	-- Sigil of the Black Hand [Heroic]
 								37031,	-- Sigil of the Black Hand [Mythic]
 							},

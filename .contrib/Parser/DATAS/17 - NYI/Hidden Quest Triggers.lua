@@ -162,6 +162,11 @@ _.HiddenQuestTriggers =
 		q(49847),	-- Selected Pandaria at level 80 Special Duty Assignment" on horde
 		q(57668),	-- Triggering when using a portal to Orgrimmar as Horde/to Ironforge as Alliance after Dec 25th during the Feast of Winter Veil 2019
 		--- (seems to trigger only the first time you go there that day). Possibly used to determine loot eligibility?
+		q(31878),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
+		q(31879),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
+		q(31880),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
+		q(31881),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
+		q(31990),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
 
 		-- Events/Holidays
 		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
