@@ -100,7 +100,6 @@ _.Zones =
 						i(106748),	-- Packrunner Greaves
 						i(106726),	-- Stonecrag Sabatons
 						-- Finger
-						i(116725),	-- Oshu'gun Ring
 						i(116920, {	-- True Steel Lockbox
 							-- Weapons
 							i(116721),	-- Ancestral Branch
