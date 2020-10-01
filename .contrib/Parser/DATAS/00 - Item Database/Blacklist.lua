@@ -79,6 +79,7 @@ i(146700);	-- Ancient Gravenscale Armor
 i(169251);	-- Ancient Insect
 i(168234);	-- Ancient Runestone
 i(147438);	-- Bag of Wisp-Touched Elderhide
+i(146308);	-- Barrel of Storm Brew
 i(169224);	-- Big Red Button
 i(147439);	-- Box of Completed Prime Wardenscale
 i(169248);	-- Broken Sandals
