@@ -8,7 +8,10 @@ _.Instances = { tier(1, {	-- Classic
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 50,
-		["mapID"] = 232,
+		["maps"] = {
+			232,
+			1160,	-- Dark Iron Dwarf: Unlock Scenario Map
+		},
 		["crs"] = {
 			14387,	-- Lothos Riftwaker
 		},
