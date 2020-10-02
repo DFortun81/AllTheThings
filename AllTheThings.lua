@@ -1204,7 +1204,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		end
 		-- can an alt quest of a repeatable quest be permanent?
 		-- if not considering account-wide tracking, consider the quest completed once if any altquest was also completed
-		if not app.AccountWideQuests and t.altQuests then
+		if not app.AccountWideQuests and t.altQuests and #t.altQuests > 0 then
 			-- If the quest has an altQuest which was completed on this character, return shared completed
 			for i,questID in ipairs(t.altQuests) do
 				-- any altQuest completed on this character, return shared completion
@@ -1221,7 +1221,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				return 1;
 			end
 			-- if not considering account-wide tracking, consider the quest completed once if any altquest was also completed
-			if not app.AccountWideQuests and t.altQuests then
+			if not app.AccountWideQuests and t.altQuests and #t.altQuests > 0 then
 				-- If the quest has an altQuest which was completed on this character, return shared completed
 				local isCollected;
 				for i,questID in ipairs(t.altQuests) do
@@ -1247,7 +1247,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				return 1;
 			end
 			
-			if wqt_local then
+			if wqt_local and t.altQuests and #t.altQuests > 0 then
 				local isCollected;
 				for i,questID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, return shared completion
