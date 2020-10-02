@@ -2981,6 +2981,7 @@ app.L = {
 		[215844] = "Flagpole",
 		[216322] = "Bounty Board",
 		[218750] = "Work Orders",
+		[218949] = "Lei Shen's Burial Trove",
 		[220641] = "Thunderlord's Cache",
 		[220820] = "|cFFFFFFFFStep 6:|r Page 1127",
 		[220821] = "|cFFFFFFFFStep 5:|r Page 845",
