@@ -3558,6 +3558,8 @@ local function AddTomTomWaypoint(group, auto)
 			for i,subgroup in ipairs(group.g) do
 				AddTomTomWaypoint(subgroup, auto);
 			end
+			-- point arrow at closest waypoint
+			TomTom:SetClosestWaypoint();
 		end
 	end
 end
