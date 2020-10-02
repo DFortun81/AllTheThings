@@ -4,7 +4,7 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["groups"] = {
+		["g"] = {
 			n(-553, {	-- 2006 ICoke Promotion
 				n(-548, {	-- China Only
 					un(REMOVED_FROM_GAME, i(19055)),	-- Green Dragon Orb (Tiny Green Dragon)
@@ -13,6 +13,5 @@ _.WorldEvents =
 				}),
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_general",
 	}),
 };

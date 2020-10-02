@@ -3,9 +3,7 @@
 -----------------------------------------------------
 _.WorldEvents =
 {
-	n(-65, {	-- Blizzard Promotions
-		["icon"] = "Interface\\Icons\\achievement_general",
-		["u"] = REMOVED_FROM_GAME,
+	n(-65, { -- Blizzard Promotions
 		["g"] = {
 			n(-546, { 	-- Recruit A Friend
 				un(REMOVED_FROM_GAME, ach(1436, {	-- Friends In High Places
@@ -33,27 +31,27 @@ _.WorldEvents =
 				}),
 				un(REMOVED_FROM_GAME, i(49664)), 	-- Zipao Tiger
 				i(173300, {	-- Ensemble: Renowned Explorer's Attire
-					["u"] = REMOVED_FROM_GAME,
+					["u"] = BLIZZARD_BALANCE,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(171324)),	-- Renowned Explorer's Akubra
-						un(REMOVED_FROM_GAME, i(171329)),	-- Renowned Explorer's Canteen Pouch
-						un(REMOVED_FROM_GAME, i(171332)),	-- Renowned Explorer's Dustcover
-						un(REMOVED_FROM_GAME, i(171328)),	-- Renowned Explorer's Lucky Bangle
-						un(REMOVED_FROM_GAME, i(171327)),	-- Renowned Explorer's Mantle
-						un(REMOVED_FROM_GAME, i(171325)),	-- Renowned Explorer's Muckwaders
-						un(REMOVED_FROM_GAME, i(171330)),	-- Renowned Explorer's Treasure-Snatchers
-						un(REMOVED_FROM_GAME, i(171326)),	-- Renowned Explorer's Trousers
-						un(REMOVED_FROM_GAME, i(171331)),	-- Renowned Explorer's Versatile Vest
+						un(BLIZZARD_BALANCE, i(171324)),	-- Renowned Explorer's Akubra
+						un(BLIZZARD_BALANCE, i(171329)),	-- Renowned Explorer's Canteen Pouch
+						un(BLIZZARD_BALANCE, i(171332)),	-- Renowned Explorer's Dustcover
+						un(BLIZZARD_BALANCE, i(171328)),	-- Renowned Explorer's Lucky Bangle
+						un(BLIZZARD_BALANCE, i(171327)),	-- Renowned Explorer's Mantle
+						un(BLIZZARD_BALANCE, i(171325)),	-- Renowned Explorer's Muckwaders
+						un(BLIZZARD_BALANCE, i(171330)),	-- Renowned Explorer's Treasure-Snatchers
+						un(BLIZZARD_BALANCE, i(171326)),	-- Renowned Explorer's Trousers
+						un(BLIZZARD_BALANCE, i(171331)),	-- Renowned Explorer's Versatile Vest
 					},
 				}),
-				un(REMOVED_FROM_GAME, i(171363)),	-- Illusion: Stinging Sands
-				un(REMOVED_FROM_GAME, i(173299)),	-- Keys to the Explorer's Jungle Hopper (MOUNT!)
-				un(REMOVED_FROM_GAME, i(173297)),	-- Reins of the Explorer's Dunetrekker (MOUNT!)
-				un(REMOVED_FROM_GAME,title(410)),	-- Renowned Explorer <Name>
-				un(REMOVED_FROM_GAME, i(171333)),	-- Renowned Explorer's Rucksack
-				un(REMOVED_FROM_GAME, i(171361)),	-- Renowned Explorer's Tabard
-				un(REMOVED_FROM_GAME, i(173296)),	-- Rikki's Pith Helmet (PET!)
-				un(REMOVED_FROM_GAME, i(173301)),	-- Game Time
+				un(BLIZZARD_BALANCE, i(171363)),	-- Illusion: Stinging Sands
+				un(BLIZZARD_BALANCE, i(173299)),	-- Keys to the Explorer's Jungle Hopper (MOUNT!)
+				un(BLIZZARD_BALANCE, i(173297)),	-- Reins of the Explorer's Dunetrekker (MOUNT!)
+				un(BLIZZARD_BALANCE, title(410)),	-- Renowned Explorer <Name>
+				un(BLIZZARD_BALANCE, i(171333)),	-- Renowned Explorer's Rucksack
+				un(BLIZZARD_BALANCE, i(171361)),	-- Renowned Explorer's Tabard
+				un(BLIZZARD_BALANCE, i(173296)),	-- Rikki's Pith Helmet (PET!)
+				un(BLIZZARD_BALANCE, i(173301)),	-- Game Time
 			}),
 		},
 	}),

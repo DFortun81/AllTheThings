@@ -4,8 +4,7 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["icon"] = "Interface\\Icons\\achievement_general",
-		["groups"] = {
+		["g"] = {
 			{	-- Contest Winner's Tabard
 				["itemID"] = 19160,	-- Contest Winner's Tabard
 				["description"] = "This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",

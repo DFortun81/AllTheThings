@@ -4,7 +4,7 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["groups"] = {
+		["g"] = {
 			n(-561, {	-- 2007 Worldwide Invitational
 				n(-549, {	-- Korea Only
 					un(REMOVED_FROM_GAME, i(32498)),	-- Fortune Cookie (Lucky)
@@ -12,6 +12,5 @@ _.WorldEvents =
 				}),
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_general",
 	}),
 };

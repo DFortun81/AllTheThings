@@ -4,20 +4,20 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["groups"] = {
+		["g"] = {
 			n(-538, {	-- Diablo 20th Anniversary Promotion
 				["maps"] = {
 					47,	-- Duskwood [Where event takes place]
 				},
-				["groups"] = {
+				["g"] = {
 					n(116041, {		-- Treasure Goblin
-						["groups"] = {
+						["g"] = {
 							un(REMOVED_FROM_GAME, i(142544)),	-- Horadric Satchel
 							n(116034, {	-- The Cow King
 								un(REMOVED_FROM_GAME, i(143543)),	-- Twelve String Guitar
 								un(REMOVED_FROM_GAME, i(142543, {	-- Scroll of Town Portal
 									un(REMOVED_FROM_GAME, i(143628, {	-- Blank Diabolic Tome
-										["groups"] = {
+										["g"] = {
 											un(REMOVED_FROM_GAME, i(142542)),	-- Tome of Town Portal
 										},
 										["description"] = "Combine 10x Scroll of Town Portals with 1x Blank Diabolic Tome (dropped from Treasure Goblin) to create Tome of Town Portal.",

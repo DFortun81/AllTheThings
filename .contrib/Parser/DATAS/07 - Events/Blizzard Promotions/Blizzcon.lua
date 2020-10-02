@@ -4,7 +4,6 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["icon"] = "Interface\\Icons\\achievement_general",
 		["g"] = {
 			n(-545, { 	-- Blizzcon
 				un(REMOVED_FROM_GAME, ach(411, {	-- Blizzcon 2005 - Murky

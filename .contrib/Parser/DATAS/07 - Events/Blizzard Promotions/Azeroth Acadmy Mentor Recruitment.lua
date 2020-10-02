@@ -4,11 +4,10 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["icon"] = "Interface\\Icons\\achievement_general",
-		["groups"] = {
+		["g"] = {
 			n(-569, {	-- Azeroth Academy Mentor Recruitment Promotion
 				["u"] = REMOVED_FROM_GAME,
-				["groups"] = {
+				["g"] = {
 					n(-548, {	-- China Only
 						i(103632, {	-- Lucky Box of Greatness
 							i(103630),	-- Lucky Riding Turtle

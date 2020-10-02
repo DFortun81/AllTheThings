@@ -98,7 +98,7 @@ _.PetJournal =
 		un(REMOVED_FROM_GAME, p(107)),		-- Murky
 		p(2682),			-- Necrofin Tadpole
 		p(1495),			-- Ore Eater
-		un(35, p(248)),		-- Pandaren Monk
+		un(BLIZZARD_BALANCE, p(248)),		-- Pandaren Monk
 		p(122),				-- Peddlefeet
 		p(513),				-- Qiraji Guardling
 		p(2417),			-- Ranishu Runt
@@ -118,7 +118,7 @@ _.PetJournal =
 		p(2022),			-- Tylarr Gronnden
 		p(2136), 			-- Uuna
 		p(2833),			-- Void-Scarred Anubisath
-		un(35, p(2184)),	-- Whomper
+		un(BLIZZARD_BALANCE, p(2184)),	-- Whomper
 		p(120),				-- Winter's Little Helper
 		p(1634),			-- Wretched Servant
 		p(1887),			-- Wyrmy Tunkins

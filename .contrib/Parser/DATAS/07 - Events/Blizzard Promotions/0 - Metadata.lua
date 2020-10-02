@@ -4,12 +4,6 @@
 _.WorldEvents =
 {
 	n(-65, { -- Blizzard Promotions
-		["g"] = {
-			n(-533, { -- Hearthstone Promotion
-				un(BLIZZARD_BALANCE, ach(8345, {	-- Hearthstoned
-					un(BLIZZARD_BALANCE, i(98618)), -- Hearthsteed
-				})),
-			}),
-		},
+		["icon"] = "Interface\\Glues\\MainMenu\\glues-blizzardlogo",
 	}),
 };

@@ -13,13 +13,13 @@ _.PetJournal =
 		p(2429),	-- Azeriti
 		p(2086), 	-- Blazehound
 		p(1517),	-- Blazing Cindercrawler
-		un(35, p(1248)),	-- Blossoming Ancient
+		un(BLIZZARD_BALANCE, p(1248)),	-- Blossoming Ancient
 		p(2082), 	-- Bound Stream
 		p(2706),	-- Brinestone Algan
 		p(1777),	-- Broot
 		p(2707),	-- Budding Algan
 		p(2428),	-- Carnivorous Lasher
-		un(35, p(1117)),	-- Cinder Kitten
+		un(BLIZZARD_BALANCE, p(1117)),	-- Cinder Kitten
 		p(2087), 	-- Cinderweb Recluse
 		p(2708),	-- Coral Lashling
 		p(244),		-- Core Hound Pup
@@ -61,7 +61,7 @@ _.PetJournal =
 		p(199),		-- Kirin Tor Familiar
 		p(2468),	-- Laughing Stoneskin
 		p(423),		-- Lava Crab
-		un(35, p(297)),		-- Lil' Ragnaros
+		un(BLIZZARD_BALANCE, p(297)),		-- Lil' Ragnaros
 		p(1177),	-- Living Sandling
 		p(337),		-- Lumpy
 		p(1955),	-- Magma Rageling

@@ -4,17 +4,16 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["groups"] = {
+		["g"] = {
 			n(-573, {	-- Scroll of Resurrection
 				un(REMOVED_FROM_GAME, i(77956, {	-- Spectral Mount Crate
 					["description"] = "TO: (Character Name)\nFROM:  Your Favorite Spirit Healer\nCONTENTS OF CRATE:\n- One (1) Spectral Mount\nWARNING: DO NOT PLUG AIRHOLES\n\nActually. Never mind. It's already dead.",
-					["groups"] = {
+					["g"] = {
 						a(un(REMOVED_FROM_GAME, i(76889))),	-- Spectral Gryphon
 						h(un(REMOVED_FROM_GAME, i(76902))),	-- Spectral Wind Rider
 					},
 				})),
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_general",
 	}),
 };

@@ -4,7 +4,7 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["groups"] = {
+		["g"] = {
 			n(-557, {	-- Korea World Event
 				n(-549, {	--Korea Only
 					un(REMOVED_FROM_GAME, ach(3896, {	-- Onyx Panther
@@ -13,6 +13,5 @@ _.WorldEvents =
 				}),
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_general",
 	}),
 };

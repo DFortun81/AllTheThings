@@ -4,7 +4,7 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["groups"] = {
+		["g"] = {
 			n(-531, {	-- 2008 Spirit of Competition Event
 				un(REMOVED_FROM_GAME, ach(1637, {		-- Spirit of Competition
 					un(REMOVED_FROM_GAME, i(37297)),	-- Gold Medallion (Spirit of Competition)
@@ -17,6 +17,5 @@ _.WorldEvents =
 				})),
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_general",
 	}),
 };

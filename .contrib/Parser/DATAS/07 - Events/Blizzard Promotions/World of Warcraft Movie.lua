@@ -4,7 +4,7 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["groups"] = {
+		["g"] = {
 			n(-577, {	-- World of Warcraft Movie
 				un(REMOVED_FROM_GAME, a(ach(11210, {	-- Fight for the Alliance
 					un(REMOVED_FROM_GAME, i(140997, {	-- Alliance Strongbox
@@ -20,6 +20,5 @@ _.WorldEvents =
 				}))),
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_general",
 	}),
 };

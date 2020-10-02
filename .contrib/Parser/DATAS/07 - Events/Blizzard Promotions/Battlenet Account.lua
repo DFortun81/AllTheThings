@@ -4,7 +4,7 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["groups"] = {
+		["g"] = {
 			n(-382, {	-- BattleTag
 				{	-- Unhatched Mr. Chilly
 					["itemID"] = 41133,	-- Unhatched Mr. Chilly
@@ -17,6 +17,5 @@ _.WorldEvents =
 				},
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_general",
 	}),
 };

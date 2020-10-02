@@ -4,13 +4,12 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["groups"] = {
+		["g"] = {
 			n(-554, {	-- EU Fansite Promotion
 				n(-547, {	-- EU Only
 					un(REMOVED_FROM_GAME, i(22114)),	-- Pink Murloc Egg (Gurky)
 				}),
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_general",
 	}),
 };

@@ -4,11 +4,10 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["icon"] = "Interface\\Icons\\achievement_general",
-		["groups"] = {
+		["g"] = {
 			n(-539, {	-- The Scepter of the Shifting Sands
 				["description"] = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
-				["groups"] = {
+				["g"] = {
 					{
 						["questID"] = 8519,	-- A Pawn on the Eternal Board
 						-- objectID:180633 -- Crystalline Tear
@@ -26,9 +25,9 @@ _.WorldEvents =
 						["sourceQuest"] = 8742,	-- The Might of Kalimdor
 						-- objectID:180717 -- The Scarab Gong
 						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
+						["g"] = {
 							un(REMOVED_FROM_GAME, ach(416, {	-- Scarab Lord
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, title(33)),	-- Scarab Lord Title
 									un(REMOVED_FROM_GAME, i(21176)),	-- Black Qiraji Resonating Crystal
 									un(REMOVED_FROM_GAME, { ["mountID"] = 239770, ["questID"] = 8743 }),	-- Black Qiraji War Tank (No item available.)
@@ -47,7 +46,7 @@ _.WorldEvents =
 						["sourceQuest"] = 8585,	-- The Isle of Dread!
 						["provider"] = { "n", 8125 },	-- Dirge Quikcleave <Butcher>
 						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
+						["g"] = {
 							un(REMOVED_FROM_GAME, i(21025)),	-- Recipe: Dirge's Kickin' Chimaerok Chops
 						},
 					},
@@ -74,7 +73,7 @@ _.WorldEvents =
 						["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
 						["provider"] = { "n", 13020 },	-- Vaelastrasz the Corrupt
 						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
+						["g"] = {
 							un(REMOVED_FROM_GAME, i(21529)),	-- Amulet of Shadow Shielding
 							un(REMOVED_FROM_GAME, i(21530)),	-- Onyx Embedded Leggings
 						},
@@ -152,7 +151,7 @@ _.WorldEvents =
 						["sourceQuest"] = 8735,	-- The Nightmare's Corruption
 						["provider"] = { "n", 11832 },	-- Keeper Remulos
 						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
+						["g"] = {
 							un(REMOVED_FROM_GAME, i(21531)),	-- Drake Tooth Necklace
 							un(REMOVED_FROM_GAME, i(21532)),	-- Drudge Boots
 						}
@@ -168,7 +167,7 @@ _.WorldEvents =
 						["sourceQuest"] = 8606,	-- Decoy!
 						["provider"] = { "n", 11811 },	-- Narain Soothfancy
 						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
+						["g"] = {
 							un(REMOVED_FROM_GAME, i(21517)),	-- Gnomish Turban of Psychic Might
 						},
 					},
@@ -177,7 +176,7 @@ _.WorldEvents =
 						["sourceQuest"] = 8728,	-- The Good News and The Bad News
 						["provider"] = { "n", 11811 },	-- Narain Soothfancy
 						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
+						["g"] = {
 							un(REMOVED_FROM_GAME, i(21526)),	-- Band of Icy Depths
 							un(REMOVED_FROM_GAME, i(21527)),	-- Darkwater Robes
 						},
@@ -193,7 +192,7 @@ _.WorldEvents =
 						["sourceQuest"] = 8742,	-- The Might of Kalimdor
 						["provider"] = { "n", 15693 },	-- Jonathan the Revelator
 						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
+						["g"] = {
 							un(REMOVED_FROM_GAME, ach(5533)),	-- Veteran of the Shifting Sands
 							un(REMOVED_FROM_GAME, i(21523)),	-- Fang of Krialstrasz
 							un(REMOVED_FROM_GAME, i(21520)),	-- Ravencrest's Legacy
