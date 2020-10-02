@@ -632,7 +632,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 98646 },	-- Jace Darkweaver
 						["classes"] = { DEMONHUNTER },
 						["coord"] = { 59.0, 74.0, 721 },
-						["maps"] = { 714 },	-- Niskara
 						["lvl"] = 110,
 					}),
 					q(42809, {	-- The Invasion of Niskara (Kayn)
@@ -640,7 +639,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 98646 },	-- Jace Darkweaver
 						["classes"] = { DEMONHUNTER },
 						["coord"] = { 59.0, 74.0, 721 },
-						["maps"] = { 714 },	-- Niskara
 						["lvl"] = 110,
 					}),
 					q(40816, {	-- The Power to Survive (Altruis)
