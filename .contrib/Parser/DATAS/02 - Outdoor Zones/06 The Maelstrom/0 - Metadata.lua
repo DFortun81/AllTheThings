@@ -9,6 +9,7 @@ _.Zones =
 		["icon"] = "Interface\\Icons\\Achievement_Zone_Cataclysm",
 		["maps"] = {
 			276,	-- The Maelstrom
+			839,	-- Priest: Legion Class Mount Map
 		},
 		["ordered"] = true,
 	}),
