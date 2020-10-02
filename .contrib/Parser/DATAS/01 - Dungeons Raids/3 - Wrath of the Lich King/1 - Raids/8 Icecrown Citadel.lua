@@ -78,19 +78,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(50375, {	-- Ashen Band of Courage
-								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 							i(50377, {	-- Ashen Band of Destruction
-								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 							}),
 							i(52569, {	-- Ashen Band of Might
-								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 							i(50376, {	-- Ashen Band of Vengeance
-								["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+								["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 							}),
 							i(50378, {	-- Ashen Band of Wisdom
-								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 							}),
 						},
 					}),
@@ -98,33 +98,33 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					q(24827, {	-- Path of Courage (Honored)
 						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 						["sourceQuest"] = 24815,	-- Choose Your Path
-						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(50388, {	-- Ashen Band of Greater Courage
-								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 						},
 					}),
 					q(24834, {	-- Path of Courage (Revered)
 						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
 						["sourceQuest"] = 24827,	-- Path of Courage (Honored)
-						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(50403, {	-- Ashen Band of Unmatched Courage
-								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 						},
 					}),
 					q(24835, {	-- Path of Courage (Exalted)
 						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
 						["sourceQuest"] = 24834,	-- Path of Courage (Revered)
-						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(50404, {	-- Ashen Band of Endless Courage
-								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 						},
 					}),
@@ -132,33 +132,33 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					q(24828, {	-- Path of Destruction (Honored)
 						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 						["sourceQuest"] = 24815,	-- Choose Your Path
-						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(50384, {	-- Ashen Band of Greater Destruction
-								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 							}),
 						},
 					}),
 					q(24823, {	-- Path of Destruction (Revered)
 						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
 						["sourceQuest"] = 24828,	-- Path of Destruction [Honored]
-						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(50397, {	-- Ashen Band of Unmatched Destruction
-								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 							}),
 						},
 					}),
 					q(24829, {	-- Path of Destruction (Exalted)
 						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
 						["sourceQuest"] = 24823,	-- Path of Destruction (Revered)
-						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(50398, {	-- Ashen Band of Endless Destruction
-								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 							}),
 						},
 					}),
@@ -166,11 +166,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					q(25239, {	-- Path of Might (Honored)
 						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 						["sourceQuest"] = 24815,	-- Choose Your Path
-						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["g"] = {
 							i(52570, {	-- Ashen Band of Greater Might
-								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 						},
 					}),
@@ -178,10 +178,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 25239,	-- Path of Might [Honored]
-						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 						["g"] = {
 							i(52571, {	-- Ashen Band of Unmatched Might
-								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 						},
 					}),
@@ -189,10 +189,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 25240,	-- Path of Might [Revered]
-						["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 						["g"] = {
 							i(52572, {	-- Ashen Band of Endless Might
-								["classes"] = { 1, 2, 6 },	-- Warrior, Paladin, Death Knight
+								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 						},
 					}),
@@ -201,10 +201,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24815,	-- Choose Your Path
-						["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+						["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 						["g"] = {
 							i(50387, {	-- Ashen Band of Greater Vengeance
-								["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+								["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 							}),
 						},
 					}),
@@ -212,10 +212,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24826,	-- Path of Vengeance [Honored]
-						["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+						["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 						["g"] = {
 							i(50401, {	-- Ashen Band of Unmatched Vengeance
-								["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+								["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 							}),
 						},
 					}),
@@ -223,10 +223,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24832,	-- Path of Vengeance [Revered]
-						["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+						["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 						["g"] = {
 							i(50402, {	-- Ashen Band of Endless Vengeance
-								["classes"] = { 11, 3, 4, 7, 10, 12 },	-- Druid, Hunter, Rogue, Shaman, Monk, Demon Hunter
+								["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 							}),
 						},
 					}),
@@ -235,10 +235,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24815,	-- Choose Your Path
-						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 						["g"] = {
 							i(50386, {	-- Ashen Band of Greater Wisdom
-								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 							}),
 						},
 					}),
@@ -246,10 +246,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24825,	-- Path of Wisdom [Honored]
-						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 						["g"] = {
 							i(50399, {	-- Ashen Band of Unmatched Wisdom
-								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 							}),
 						},
 					}),
@@ -257,69 +257,69 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 						["sourceQuest"] = 24830,	-- Path of Wisdom [Revered]
-						["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 						["g"] = {
 							i(50400, {	-- Ashen Band of Endless Wisdom
-								["classes"] = { 2, 8, 11, 5, 7, 9, 10 },	-- Paladin, Mage, Druid, Priest, Shaman, Warlock, Monk
+								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 							}),
 						},
 					}),
-					q(24818, { -- A Change of Heart 
+					q(24818, { -- A Change of Heart
 						["u"] = NEVER_IMPLEMENTED,
 					}),
-					q(24819, { -- A Change of Heart 
+					q(24819, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
-					q(24820, { -- A Change of Heart 
+					q(24820, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
-					q(24821, { -- A Change of Heart 
+					q(24821, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
-					q(24822, { -- A Change of Heart 
+					q(24822, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
-					q(24836, { -- A Change of Heart 
+					q(24836, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
-					q(24837, { -- A Change of Heart 
+					q(24837, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
-					q(24838, { -- A Change of Heart 
+					q(24838, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
-					q(24839, { -- A Change of Heart 
+					q(24839, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
-					q(24840, { -- A Change of Heart 
+					q(24840, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
-					q(24841, { -- A Change of Heart 
+					q(24841, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
-					q(24844, { -- A Change of Heart 
+					q(24844, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
-					q(24845, { -- A Change of Heart 
+					q(24845, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
-					q(24846, { -- A Change of Heart 
+					q(24846, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
-					q(24847, { -- A Change of Heart 
+					q(24847, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
@@ -327,7 +327,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			n(-10066, {	-- Legendary Questline
 				["description"] = "These quests can only be completed on 25-Man Normal or Heroic difficulty.",
-				["classes"] = { 1, 2, 6 }, 	-- Warrior, Paladin, DK
+				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 				["title"] = "Shadowmourne",
 				["icon"] = "Interface\\Icons\\INV_Axe_113",
 				["isRaid"] = true,
@@ -342,11 +342,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							i(50226, {	-- Festergut's Acidic Blood
 								["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
-								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 							i(50231, {	-- Rotface's Acidic Blood
 								["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
-								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 						},
 					}),
@@ -1135,7 +1135,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							},
 						}),
 					},
-				}),	
+				}),
 				n(38858, { 	-- Goodman the "Closer" <Legacy Justice Quartermaster>
 					i(50993),	-- Band of the Night Raven
 					i(50996),	-- Belt of Omission
@@ -1218,7 +1218,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(40790),	-- Relentless Gladiator's Plate Chestpiece
 						i(40810),	-- Relentless Gladiator's Plate Gauntlets
 						i(40850),	-- Relentless Gladiator's Plate Legguards
-					}),	
+					}),
 					gs(772, {	-- Relentless Gladiator's Ringmail Armor
 						i(41152),	-- Relentless Gladiator's Linked Helm
 						i(41212),	-- Relentless Gladiator's Linked Spaulders
@@ -1417,7 +1417,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(50090),	-- Shadowblade Legplates
 						i(50105),	-- Shadowblade Pauldrons
 					},
-				}),		
+				}),
 				n(38840, { 	-- Jedebia <Shaman Armor>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2361,7 +2361,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							},
 						}),
 					},
-				}),	
+				}),
 				n(38841, { 	-- Vol'guk <Shaman Armor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -3622,7 +3622,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["g"] = {
 							i(50226, {	-- Festergut's Acidic Blood
 								["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
-								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 							crit(1, {	-- Festergut
 								["achievementID"] = 4605,	-- The Plagueworks (25 player)
@@ -3651,7 +3651,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["g"] = {
 							i(50231, {	-- Rotface's Acidic Blood
 								["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
-								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 							crit(2, {	-- Rotface
 								["achievementID"] = 4605,	-- The Plagueworks (25 player)
@@ -4144,7 +4144,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic) 
+							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142095),	-- Remains of a Blood Beast (PET!)
 							i(50672),	-- Bloodvenom Blade
 							i(50668),	-- Greatcloak of the Turned Champion
@@ -4163,7 +4163,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(49926),	-- Brazie's Black Book of Secrets
 						},
 					}),
-				}),	
+				}),
 				n(-394, {	-- The Plagueworks
 					ach(4633),	-- Heroic: The Plagueworks (25 player)
 					n(37217, {	-- Precious
@@ -4174,7 +4174,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["g"] = {
 							i(50226, {	-- Festergut's Acidic Blood
 								["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
-								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 							crit(1, {	-- Festergut
 								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
@@ -4203,7 +4203,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["g"] = {
 							i(50231, {	-- Rotface's Acidic Blood
 								["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
-								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
 							crit(2, {	-- Rotface
 								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)

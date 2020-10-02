@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
@@ -111,14 +112,14 @@ _.WorldEvents =
 						})),
 					}),
 					tier(9, {	-- Shadowlands
-						un(REMOVED_FROM_GAME, mount(307932)),	-- Ensorcelled Everwyrm
-						un(REMOVED_FROM_GAME, p(2779)),			-- Anima Wyrmling
-						un(REMOVED_FROM_GAME, i(172179)),		-- Eternal Traveler's Hearthstone
-						un(REMOVED_FROM_GAME, i(172177)),		-- Illusion: Wraithchill
+						un(BLIZZARD_BALANCE, mount(307932)),	-- Ensorcelled Everwyrm
+						un(BLIZZARD_BALANCE, p(2779)),			-- Anima Wyrmling
+						un(BLIZZARD_BALANCE, i(172179)),		-- Eternal Traveler's Hearthstone
+						un(BLIZZARD_BALANCE, i(172177)),		-- Illusion: Wraithchill
 						q(57686, {	-- The Eternal Traveler
 							["provider"] = { "n", 158635 },		-- Xolartios <Eternal Traveler>
 							["description"] = "You need to purchase a Collector's Edition of Shadowlands to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
-							["u"] = REMOVED_FROM_GAME,
+							["u"] = BLIZZARD_BALANCE,
 							["g"] = {
 								spell(309452, {	-- Vestments of the Eternal Traveler
 									i(172075),	-- Eternal Traveler's Guise

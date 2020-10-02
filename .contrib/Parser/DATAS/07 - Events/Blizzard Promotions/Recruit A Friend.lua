@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.WorldEvents =
 {
 	n(-65, { -- Blizzard Promotions
@@ -47,7 +48,10 @@ _.WorldEvents =
 				un(BLIZZARD_BALANCE, i(171363)),	-- Illusion: Stinging Sands
 				un(BLIZZARD_BALANCE, i(173299)),	-- Keys to the Explorer's Jungle Hopper (MOUNT!)
 				un(BLIZZARD_BALANCE, i(173297)),	-- Reins of the Explorer's Dunetrekker (MOUNT!)
-				un(BLIZZARD_BALANCE, title(410)),	-- Renowned Explorer <Name>
+				i(173298, {	-- Explorer's Certification
+					["u"] = BLIZZARD_BALANCE,
+					un(BLIZZARD_BALANCE, title(410)),	-- Renowned Explorer <Name>
+				}),
 				un(BLIZZARD_BALANCE, i(171333)),	-- Renowned Explorer's Rucksack
 				un(BLIZZARD_BALANCE, i(171361)),	-- Renowned Explorer's Tabard
 				un(BLIZZARD_BALANCE, i(173296)),	-- Rikki's Pith Helmet (PET!)

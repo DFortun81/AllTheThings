@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
@@ -28,7 +29,7 @@ _.WorldEvents =
 						},
 						["description"] = "Can be found after killing the last boss in a dungeon or randomly in Legion zones, especially often in the Dalaran Underbelly. Kill him and enter his portal to fight The Cow King.",
 					}),
-				}, 
+				},
 				["achievementID"] = 11395,	-- Diablo's 20th Anniversary
 				["u"] = REMOVED_FROM_GAME,
 			}),
