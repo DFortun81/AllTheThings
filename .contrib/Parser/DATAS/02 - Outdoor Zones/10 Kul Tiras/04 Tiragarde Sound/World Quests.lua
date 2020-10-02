@@ -20,10 +20,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52757, {	-- Grimestone Crimes
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(54119, {	-- Hartford Sternbach
 						["isWorldQuest"] = true,
 						["lvl"] = 110,
@@ -369,6 +365,10 @@ _.Zones =
 					q(51318, {	-- Go For the Boat
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(52757, {	-- Grimestone Crimes
+						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
 					q(51317, {	-- Grounding the Grimestone
