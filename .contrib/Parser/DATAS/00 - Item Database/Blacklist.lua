@@ -113,6 +113,7 @@ i(146952);	-- Legendary Tailor's Materials
 i(146977);	-- Legendary Tanner's Kit
 i(147209);	-- Legendary Wardenscale Supplies
 i(168280);	-- Lost Scale of the Scarlet Broodmother
+i(147582);	-- Mark of the Sentinax
 i(146680);	-- Melandrus' Star-Touched Bracers
 i(169238);	-- Modified Radio Receiver
 i(169222);	-- Murloc Treasure
@@ -132,6 +133,15 @@ i(147437);	-- Satchel of Starweave and Shadowcloth
 i(157539);	-- Scroll of Storm Control
 i(17224);	-- Scrying Scope
 i(17364);	-- Scrying Scope
+i(146906);	-- Sentinax Beacon of Carnage
+i(146912);	-- Sentinax Beacon of Greater Carnage
+i(146903);	-- Sentinax Beacon of Domination
+i(146908);	-- Sentinax Beacon of Engineering
+i(146914);	-- Sentinax Beacon of Greater Engineering
+i(146910);	-- Sentinax Beacon of Greater Domination
+i(146915);	-- Sentinax Beacon of Greater Torment
+i(146909);	-- Sentinax Beacon of Torment
+i(146907);	-- Sentinax Beacon of Warbeasts
 i(169249);	-- Shark Tooth Necklace
 i(169253);	-- Shell Horn
 i(168817);	-- Siphoning Crystal
