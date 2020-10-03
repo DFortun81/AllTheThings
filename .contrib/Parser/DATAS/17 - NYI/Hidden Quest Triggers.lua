@@ -939,6 +939,7 @@ _.HiddenQuestTriggers =
 		q(39413),
 		q(39415),
 		q(39710),
+		q(39711),	-- Tracking Quest: Garrison/Shipyard Mission Table
 
 		--	TREASURES
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
