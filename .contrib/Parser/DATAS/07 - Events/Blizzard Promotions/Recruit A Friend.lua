@@ -31,8 +31,7 @@ _.WorldEvents =
 					}),
 				}),
 				un(REMOVED_FROM_GAME, i(49664)), 	-- Zipao Tiger
-				i(173300, {	-- Ensemble: Renowned Explorer's Attire
-					["u"] = BLIZZARD_BALANCE,
+				un(BLIZZARD_BALANCE, i(173300, {	-- Ensemble: Renowned Explorer's Attire
 					["g"] = {
 						un(BLIZZARD_BALANCE, i(171324)),	-- Renowned Explorer's Akubra
 						un(BLIZZARD_BALANCE, i(171329)),	-- Renowned Explorer's Canteen Pouch
@@ -44,14 +43,13 @@ _.WorldEvents =
 						un(BLIZZARD_BALANCE, i(171326)),	-- Renowned Explorer's Trousers
 						un(BLIZZARD_BALANCE, i(171331)),	-- Renowned Explorer's Versatile Vest
 					},
-				}),
+				})),
 				un(BLIZZARD_BALANCE, i(171363)),	-- Illusion: Stinging Sands
 				un(BLIZZARD_BALANCE, i(173299)),	-- Keys to the Explorer's Jungle Hopper (MOUNT!)
 				un(BLIZZARD_BALANCE, i(173297)),	-- Reins of the Explorer's Dunetrekker (MOUNT!)
-				i(173298, {	-- Explorer's Certification
-					["u"] = BLIZZARD_BALANCE,
+				un(BLIZZARD_BALANCE, i(173298, {	-- Explorer's Certification
 					un(BLIZZARD_BALANCE, title(410)),	-- Renowned Explorer <Name>
-				}),
+				})),
 				un(BLIZZARD_BALANCE, i(171333)),	-- Renowned Explorer's Rucksack
 				un(BLIZZARD_BALANCE, i(171361)),	-- Renowned Explorer's Tabard
 				un(BLIZZARD_BALANCE, i(173296)),	-- Rikki's Pith Helmet (PET!)

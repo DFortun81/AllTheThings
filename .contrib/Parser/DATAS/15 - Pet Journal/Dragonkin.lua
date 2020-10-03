@@ -59,9 +59,9 @@ _.PetJournal =
 			["u"] = 20,	-- Children's Week
 		}),
 		p(144),		-- Silver Dragonhawk Hatchling
-		p(347, {	-- Soul of the Aspects
+		un(BLIZZARD_BALANCE, p(347, {	-- Soul of the Aspects
 			["u"] = 35,	-- In-Game Store
-		}),
+		})),
 		p(489),		-- Spawn of Onyxia
 		p(179, {	-- Spirit of Competition
 			["u"] = REMOVED_FROM_GAME,

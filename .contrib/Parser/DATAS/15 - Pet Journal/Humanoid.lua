@@ -82,14 +82,12 @@ _.PetJournal =
 		p(1226),			-- Lil' Bad Wolf
 		un(REMOVED_FROM_GAME, p(111)),		-- Lurky
 		un(REMOVED_FROM_GAME, p(189)),		-- Mini Tyrael
-		p(296, {	-- Moonkin Hatchling (Alliance)
-			["u"] = 35,
+		un(BLIZZARD_BALANCE, p(296, {	-- Moonkin Hatchling (Alliance)
 			["races"] = ALLIANCE_ONLY,
-		}),
-		p(298, {	-- Moonking Hatchling (Horde)
-			["u"] = 35,
+		})),
+		un(BLIZZARD_BALANCE, p(298, {	-- Moonkin Hatchling (Horde)
 			["races"] = HORDE_ONLY,
-		}),
+		})),
 		p(2681),			-- Murgle
 		un(REMOVED_FROM_GAME, p(329)),		-- Murkablo
 		un(REMOVED_FROM_GAME, p(1364)),		-- Murkalot

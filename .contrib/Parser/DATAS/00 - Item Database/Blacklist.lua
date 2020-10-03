@@ -137,11 +137,17 @@ i(146906);	-- Sentinax Beacon of Carnage
 i(146912);	-- Sentinax Beacon of Greater Carnage
 i(146903);	-- Sentinax Beacon of Domination
 i(146908);	-- Sentinax Beacon of Engineering
+i(146922);	-- Sentinax Beacon of Fel Growth
 i(146914);	-- Sentinax Beacon of Greater Engineering
 i(146910);	-- Sentinax Beacon of Greater Domination
 i(146915);	-- Sentinax Beacon of Greater Torment
+i(146913);	-- Sentinax Beacon of Greater Warbeasts
+i(146923);	-- Sentinax Beacon of Petrification
 i(146909);	-- Sentinax Beacon of Torment
 i(146907);	-- Sentinax Beacon of Warbeasts
+i(147355);	-- Sentinax Beacon of the Bloodstrike
+i(146905);	-- Sentinax Beacon of the Firestorm
+i(146911);	-- Sentinax Beacon of the Greater Firestorm
 i(169249);	-- Shark Tooth Necklace
 i(169253);	-- Shell Horn
 i(168817);	-- Siphoning Crystal

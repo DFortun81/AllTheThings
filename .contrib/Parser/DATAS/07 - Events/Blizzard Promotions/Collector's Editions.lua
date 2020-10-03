@@ -116,10 +116,9 @@ _.WorldEvents =
 						un(BLIZZARD_BALANCE, p(2779)),			-- Anima Wyrmling
 						un(BLIZZARD_BALANCE, i(172179)),		-- Eternal Traveler's Hearthstone
 						un(BLIZZARD_BALANCE, i(172177)),		-- Illusion: Wraithchill
-						q(57686, {	-- The Eternal Traveler
+						un(BLIZZARD_BALANCE, q(57686, {			-- The Eternal Traveler
 							["provider"] = { "n", 158635 },		-- Xolartios <Eternal Traveler>
 							["description"] = "You need to purchase a Collector's Edition of Shadowlands to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
-							["u"] = BLIZZARD_BALANCE,
 							["g"] = {
 								spell(309452, {	-- Vestments of the Eternal Traveler
 									i(172075),	-- Eternal Traveler's Guise
@@ -133,7 +132,7 @@ _.WorldEvents =
 									i(172083),	-- Eternal Traveler's Treads
 								}),
 							},
-						}),
+						})),
 					}),
 				}),
 			}),
