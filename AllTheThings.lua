@@ -1548,7 +1548,7 @@ MergeObjects = function(g, g2)
 						end
 					end
 					for k,v in pairs(o) do
-						if k ~= "expanded" and (k ~= "parent" or not rawget(o, k)) then
+						if k ~= "expanded" and (k ~= "parent" or not rawget(o, k) or app.RecursiveGroupRequirementsFilter(v)) then
 							rawset(o, k, v);
 						end
 					end
@@ -1581,7 +1581,7 @@ MergeObject = function(g, t, index)
 					end
 				end
 				for k,v in pairs(t) do
-					if k ~= "expanded" and (k ~= "parent" or not rawget(o, k)) then
+					if k ~= "expanded" and (k ~= "parent" or not rawget(o, k) or app.RecursiveGroupRequirementsFilter(v)) then
 						rawset(o, k, v);
 					end
 				end
@@ -2250,6 +2250,13 @@ ResolveSymbolicLink = function(o)
 	end
 end
 end)();
+-- local function RecurseGroupParent(group)
+	-- if not group.parent then
+		-- return "ATT";
+	-- else
+		-- return RecurseGroupParent(group.parent) .. "->" .. (group.key .. ":" .. group[group.key]);
+	-- end
+-- end
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	local total = 0;
 	local progress = 0;
@@ -2301,6 +2308,8 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
 				end
 			end
+		-- else
+			-- print("ex",group.key,group[group.key],RecurseGroupParent(group));
 		end
 	end
 	if (total > 0) then
@@ -2895,15 +2904,20 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- Create an unlinked version of the object.
 		if not group.g then
 			local merged = {};
-			-- TODO: can probably make this merging faster instead of double loop
-			-- First merge only groups which meet the current filters
+			local skipped = {};
+			-- First add only groups which meet the current filters
 			for i,o in ipairs(group) do
 				if app.RecursiveGroupRequirementsFilter(o) then
+					-- print("add",RecurseGroupParent(o));
 					MergeObject(merged, CreateObject(o));
+				else
+					-- print("skip",RecurseGroupParent(o));
+					tinsert(skipped, o);
 				end
 			end
-			-- then merge any filtered groups
-			for i,o in ipairs(group) do
+			-- then merge any skipped groups
+			for i,o in ipairs(skipped) do
+				-- print("merge",RecurseGroupParent(o));
 				MergeObject(merged, CreateObject(o));
 			end
 			if #merged == 1 and merged[1][paramA] == paramB then

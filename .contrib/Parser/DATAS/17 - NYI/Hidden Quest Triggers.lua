@@ -929,6 +929,7 @@ _.HiddenQuestTriggers =
 		q(36294),	-- Lumber Mill — Phylarch the Evergreen first attack
 		q(36295),	-- Lumber Mill — Phylarch the Evergreen second attack
 		q(39414),	-- Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
+		q(36058),	-- Seal of Tempered Fate: Armory
 
 		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
 		q(36809), 	-- Missive completion: Assault on the Heart of Shattrath
