@@ -12,6 +12,14 @@ _.Zones =
 						["coord"] = { 67.0, 42.3, 465 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24970 },	-- No Better Than the Zombies
+						["g"] = {
+							i(3277, {	-- Executor Staff
+								["collectible"] = false,	-- White item
+							}),
+							i(3276, {	-- Deathguard Buckler
+								["collectible"] = false,	-- White item
+							}),
+						},
 					}),
 					q(25089, {	-- Beyond the Graves
 						["provider"] = { "n", 2307 },	-- Caretaker Caice
