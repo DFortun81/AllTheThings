@@ -14270,7 +14270,7 @@ local ProcessAuctionData = function()
 			["description"] = "All items that can be used to obtain achievements that you are missing are displayed here.",
 			["priority"] = 1,
 		}, app.BaseNPC),
-		["s"] = setmetatable({	-- Appearances
+		["s"] = setmetatable({			-- Appearances
 			["npcID"] = -10032,
 			["description"] = "All appearances that you need are displayed here.",
 			["priority"] = 2,
@@ -14280,7 +14280,7 @@ local ProcessAuctionData = function()
 			["description"] = "All mounts that you have not collected yet are displayed here.",
 			["priority"] = 3,
 		}, app.BaseFilter),
-		["speciesID"] = setmetatable({	-- Pets
+		["speciesID"] = setmetatable({	-- Battle Pets
 			["filterID"] = 101,
 			["description"] = "All pets that you have not collected yet are displayed here.",
 			["priority"] = 4,
@@ -14295,18 +14295,18 @@ local ProcessAuctionData = function()
 			["description"] = "All recipes that you have not collected yet are displayed here.",
 			["priority"] = 6,
 		}, app.BaseFilter),
-		["itemID"] = {	-- Non-Collectible Items
+		["itemID"] = {					-- Non-Collectible Items
 			["text"] = "Non-Collectible Items",
 			["icon"] = "Interface/ICONS/ACHIEVEMENT_GUILDPERK_BARTERING",
 			["description"] = "All items that can be used to earn other collectible items, but are not necessarily collectible themselves are displayed here.",
 			["priority"] = 7,
 		},
-		["reagentID"] = {	-- Reagents
-			["text"] = "Reagents",
-			["icon"] = "Interface/ICONS/INV_Enchant_DustIllusion",
+		["reagentID"] = setmetatable({	-- Reagent
+			["filterID"] = 56,
+			["icon"] = "Interface/ICONS/SPELL_FROST_FROZENCORE",
 			["description"] = "All items that can be used to craft an item using a profession on your account.",
 			["priority"] = 8,
-		},
+		}, app.BaseFilter),
 	};
 	
 	-- Display Test for Raw Data + Filtering
@@ -14442,7 +14442,7 @@ app.OpenAuctionModule = function(self)
 										app.StartAuctionScan();
 									else
 										print(L["TITLE"] .. ": Throttled scan! Please wait " .. RoundNumber(((AllTheThingsAuctionConfig.LastScan+900)-time()), 0) .. " before running another.");
-										ProcessAuctions();
+										StartCoroutine("ProcessAuctionData", ProcessAuctionData);
 									end
 								end
 							end,
