@@ -126,10 +126,16 @@ _.Zones =
 							i(182732),	-- The Necronom-i-nom
 						},
 					}),
-					crit(7, {	-- Sword of Oonar
+					crit(7, {	-- Sword of Oonar -- needs detailed description
 					--	["objectID"] = ,	-- Sword of Oonar
 					--	["coord"] = { 51.42, 48.47, 1536 },
 					--	["questID"] = ,
+						["g"] = {
+							i(181164),	-- Oonar's Arm
+							i(180273,	{	-- Sorrowbane
+								ach(14626),	-- Harvester of Sorrow
+							}),
+						},
 					}),
 					crit(8, {	-- Forgotten Momentos
 						["objectID"] = 341424,	-- Forgotten Momentos

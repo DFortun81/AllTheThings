@@ -31,6 +31,9 @@ _.Zones =
 						i(183870, {	-- Recipe: Crafter's Mark II
 							["cost"] = 20000000, -- 2,000g
 						}),
+						i(180857, {	-- Goldenpaw Kit
+							["cost"] = 17650000, -- 1,765g
+						}),
 					},
 				}),
 			}),

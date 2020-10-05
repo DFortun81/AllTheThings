@@ -10,7 +10,6 @@ _.PetJournal =
 		p(724),				-- Alpine Foxling
 		p(725),				-- Alpine Foxling Kit
 		un(35, p(1363)),	-- Alterac Brew-Pup
-		p(2911),			-- Amber Glitterwing(probably flying pet)
 		p(716),				-- Amethyst Spiderling
 		p(2122),			-- Antoran Bile Larva
 		p(558),				-- Arctic Fox Kit
@@ -49,7 +48,6 @@ _.PetJournal =
 		p(1999),			-- Cavern Moccasin
 		p(474),				-- Cheetah Cub
 		p(2418),			-- Child of Jani
-		p(2908),			-- Chirpy Valeshrieker(probably flying pet)
 		p(1662),			-- Cinder Pup
 		p(518),				-- Clefthoof Runt
 		p(2817),			-- Gloober, as G-huun
@@ -84,14 +82,12 @@ _.PetJournal =
 		p(1205),			-- Direhorn Runt
 		p(2905),			-- Dodger
 		un(35, p(2623)),	-- Dottie
-		p(2909),			-- Downfeather Ragewing(possibly flying pet)
 		p(1952),			-- Dreadmaw
 		p(2406),			-- Drustvar Piglet
 		p(205),				-- Dun Morogh Cub
 		p(207),				-- Durotar Scorpion
 		p(396),				-- Dusk Spiderling
 		p(2662),			-- Duskytooth Snooter
-		p(2912),			-- Dusty Sporeflutterer(probably flying pet)
 		p(1181),			-- Elder Python
 		p(631),				-- Emerald Boa
 		p(1760),			-- Fel Piglet
@@ -108,12 +104,9 @@ _.PetJournal =
 		p(278),				-- Fox Kit
 		p(1542),			-- Frostwolf Pup
 		p(2432),			-- Fuzzy Creepling
-		p(2913),			-- Fuzzy Shimmermoth(possibly flying pet)
 		p(475),				-- Giraffe Calf
 		p(2711),			-- Golden Snorf
-		p(2921),			-- Gorm Harrier(possibly flying pet)
-		p(2920),			-- Gorm Needler(possibly flying pet)
-		p(2919),			-- Gorm Rootstinger(possibly flying pet)
+		p(2934),			-- Goldenpaw Kit
 		p(571),				-- Grove Viper
 		p(2918),			-- Grubby
 		p(1705),			-- Grumpy
@@ -123,6 +116,7 @@ _.PetJournal =
 		p(2916),			-- Hungry Burrower
 		p(317),				-- Hyjal Bear Cub
 		p(1457),			-- Icespine Hatchling
+		p(2941),			-- Indigo
 		p(2089),			-- Infernal Pyreclaw
 		p(2852),			-- Jade Defender
 		p(2795),			-- Jenafur
@@ -166,13 +160,13 @@ _.PetJournal =
 		un(REMOVED_FROM_GAME, p(92)),		-- Panda Cub
 		p(301),				-- Panther Cub
 		p(1615),			-- Parched Lizard
-		p(2923),			-- Pearlwing Heron(probably flying pet)
 		p(1663),			-- Periwinkle Calf
 		p(2946),			-- Pernicious Bonetusk
 		p(726),				-- Plains Monitor
 		p(2954),			-- Plaguelouse Hatchling
 		p(2188),			-- Poda
 		un(REMOVED_FROM_GAME, p(124)),		-- Poley
+		p(2935),			-- Purity
 		p(2849),			-- Pygmy Camel
 		p(1200),			-- Pygmy Direhorn
 		p(2437),			-- Ragepeep
@@ -197,6 +191,7 @@ _.PetJournal =
 		p(2847),			-- Rotbreath
 		p(3020),			-- Runelight Leaper
 		p(2661),			-- Rustyroot Snooter
+		p(2933),			-- Sable
 		p(491),				-- Sand Kitten
 		p(1692),			-- Savage Cub
 		p(2436),			-- Scabby
@@ -249,7 +244,6 @@ _.PetJournal =
 		p(2529),			-- Thunder Lizard Runt
 		p(2412),			-- Tiny Direhorn
 		p(1236),			-- Tito
-		p(2924),			-- Tranquil Wader(probably flying pet)
 		p(2539, {			-- Trecker
 			["races"] = ALLIANCE_ONLY,
 		}),

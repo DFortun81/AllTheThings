@@ -156,7 +156,7 @@ _.Zones =
 						["coord"] = { 64.9, 71.1, 1536 },
 					--	["questID"] = ,
 						["g"] = {
-							i(180859),	-- White Vulpin
+							i(180859),	-- Purity
 						},
 					}),
 					crit(14, {	-- Gift of Chyrus

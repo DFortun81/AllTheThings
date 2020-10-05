@@ -19,7 +19,7 @@ _.Zones =
 						i(183462, {	-- Illusion: Unbreakable Resolve
 							["cost"] = { { "c", 1813, 2000 } },
 						}),
-						i(183601, {	-- Jelly Cat
+						i(183601, {	-- Jiggles
 							["cost"] = { { "c", 1813, 1500 } },
 						}),
 						i(182076, {	-- Plaguerot Tauralus
@@ -146,10 +146,10 @@ _.Zones =
 						i(180639, {	-- Dusty Sporeflutterer
 							["cost"] = { { "i", 178061, 350 } },
 						}),
-						i(180814, {	-- Black Vulpin
+						i(180814, {	-- Sable
 							["cost"] = { { "i", 178061, 350 } },
 						}),
-						i(180815, {	-- Pink Dragon Turtle
+						i(180815, {	-- Brightscale Hatchling
 							["cost"] = { { "i", 178061, 350 } },
 						}),
 						i(181168, {	-- Corpulent Bonetusk

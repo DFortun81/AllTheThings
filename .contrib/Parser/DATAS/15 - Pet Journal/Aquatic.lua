@@ -19,6 +19,7 @@ _.PetJournal =
 		p(1666), 	-- Blorp
 		p(2398),	-- Boghopper
 		p(2688),	-- Brilliant Glimmershell
+		p(2931),	-- Brightscale Hatchling
 		p(2479, {	-- Bucketshell
 			["races"] = HORDE_ONLY,
 		}),
@@ -128,6 +129,7 @@ _.PetJournal =
 		p(2478, {	-- Sir Snips
 			["races"] = ALLIANCE_ONLY,
 		}),
+		p(2932),	-- Silvershell Snapper
 		p(2709),	-- Skittering Eel
 		p(2758),	-- Slimy Eel
 		p(2761),	-- Slimy Fangtooth

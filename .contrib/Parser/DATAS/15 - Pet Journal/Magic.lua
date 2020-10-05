@@ -17,6 +17,7 @@ _.PetJournal =
 		p(2582),	-- Baoh-Xi
 		p(1964),	-- Blood Boil
 		un(35, p(1466)),	-- Brightpaw
+		p(2952),	-- Bubbling Pustule
 		p(1888),	-- Celestial Calf
 		p(1633),	-- Chaos Pup
 		p(1232),	-- Coilfang Stalker
@@ -74,6 +75,7 @@ _.PetJournal =
 		p(292),		-- Magic Lamp
 		p(2158),	-- Mailemental
 		p(136),		-- Mana Wyrmling
+		p(3033),	-- Maw Stalker
 		p(500),		-- Minfernal
 		un(REMOVED_FROM_GAME, p(93)),	-- Mini Diablo
 		p(1156),	-- Mini Mindslayer
@@ -88,7 +90,7 @@ _.PetJournal =
 		un(REMOVED_FROM_GAME, p(240)),	-- Onyx Panther
 		p(2798),	-- Plagueborn Slime
 		p(2896),	-- Primordial Sludge
-		p(3036),	-- Projection of Remornia
+		p(3036),	-- Will of Remornia
 		p(2844),	-- Reek
 		p(1958),	-- Sanctum Cub
 		p(846),		-- Sapphire Cub

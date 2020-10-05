@@ -33,6 +33,7 @@ _.PetJournal =
 		p(270),		-- Dark Phoenix Hatchling
 		p(1564),	-- Doom Bloom
 		p(2085), 	-- Drafty
+		p(3037),	-- Dread
 		p(1331),	-- Droplet of Y'Shaarj
 		p(1179),	-- Electrified Razortooth
 		p(293),		-- Elementium Geode

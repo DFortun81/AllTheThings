@@ -192,6 +192,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183003),	-- Pauldrons of Fatal Finality
 						i(182997),	-- Diadem of Imperious Desire
 						i(183036),	-- Most Regal Signet of Sire Denathrius
+						i(183395),	-- Pommel Jewel of Remornia
 					},
 				}),
 			}),
@@ -383,6 +384,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183003),	-- Pauldrons of Fatal Finality
 						i(182997),	-- Diadem of Imperious Desire
 						i(183036),	-- Most Regal Signet of Sire Denathrius
+						i(183395),	-- Pommel Jewel of Remornia
 					},
 				}),
 			}),
@@ -575,6 +577,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183003),	-- Pauldrons of Fatal Finality
 						i(182997),	-- Diadem of Imperious Desire
 						i(183036),	-- Most Regal Signet of Sire Denathrius
+						i(183395),	-- Pommel Jewel of Remornia
 					},
 				}),
 			}),
@@ -782,6 +785,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(183003),	-- Pauldrons of Fatal Finality
 							i(182997),	-- Diadem of Imperious Desire
 							i(183036),	-- Most Regal Signet of Sire Denathrius
+							i(183395),	-- Pommel Jewel of Remornia
 						},
 					}),
 				},
