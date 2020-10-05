@@ -14568,13 +14568,6 @@ app.OpenAuctionModule = function(self)
 		button:SetScript("OnClick", function(self) -- This is the "ATT" button at the bottom of the auction house frame
 			if self:GetID() == n then
 				window:Show();
-				--[[if not self.InitialProcess then
-					StartCoroutine("ProcessAuctionData", ProcessAuctionData);
-					self.InitialProcess = true;
-					window:Show();
-				else
-					window:Show();
-				end]]
 			end
 		end);
 	end
