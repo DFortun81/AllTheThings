@@ -14378,6 +14378,7 @@ end
 
 app.OpenAuctionModule = function(self)
 	if app.Blizzard_AuctionHouseUILoaded then
+		if not AllTheThingsAuctionConfig then AllTheThingsAuctionConfig = {} end
 		-- Create the Auction Tab for ATT.
 		local n = AuctionHouseFrame.numTabs + 1;
 		local button = CreateFrame("Button", "AuctionHouseFrameTab" .. n, AuctionHouseFrame, "AuctionHouseFrameDisplayModeTabTemplate");
