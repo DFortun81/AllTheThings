@@ -14373,7 +14373,8 @@ app.AuctionScan = function()
 	if not next(items) then
 		items = {};
 	end
-	ProcessAuctions();
+	print(L["TITLE"] .. ": Successfully scanned " .. auctionItems .. " item(s).");
+	StartCoroutine("ProcessAuctionData", ProcessAuctionData);
 end
 
 app.OpenAuctionModule = function(self)
@@ -14410,7 +14411,7 @@ app.OpenAuctionModule = function(self)
 							["icon"] = "INTERFACE/ICONS/INV_firstAid_Sun-Bleached Linen",
 							["description"] = "Click this button to wipe out all of the previous scan data.",
 							["visible"] = true,
-							["priority"] = -5,
+							["priority"] = -4,
 							["OnClick"] = function()
 								if AllTheThingsAuctionData then
 									local window = app:GetWindow("AuctionData");
@@ -14430,9 +14431,9 @@ app.OpenAuctionModule = function(self)
 						{
 							["text"] = "Perform a Full Scan",
 							["icon"] = "INTERFACE/ICONS/INV_DARKMOON_EYE",
-							["description"] = "Click this button to perform a full scan of the auction house. The game will freeze up for a second.\n\nClick 'Refresh' afterward.",
+							["description"] = "Click this button to perform a full scan of the auction house. The game may or may not freeze depending on the size of the auction house.\n\nData should populate automatically.",
 							["visible"] = true,
-							["priority"] = -4,
+							["priority"] = -3,
 							["OnClick"] = function() 
 								if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
 								if AllTheThingsAuctionConfig then
@@ -14454,7 +14455,7 @@ app.OpenAuctionModule = function(self)
 							["icon"] = "INTERFACE/ICONS/INV_Scarab_Crystal",
 							["description"] = "Click this button to toggle debug mode to show everything regardless of filters!",
 							["visible"] = true,
-							["priority"] = -3,
+							["priority"] = -2,
 							["OnClick"] = function() 
 								app.Settings:ToggleDebugMode();
 							end,
@@ -14475,7 +14476,7 @@ app.OpenAuctionModule = function(self)
 							["icon"] = "INTERFACE/ICONS/INV_Misc_Book_01",
 							["description"] = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.",
 							["visible"] = true,
-							["priority"] = -2,
+							["priority"] = -1,
 							["OnClick"] = function() 
 								app.Settings:ToggleAccountMode();
 							end,
@@ -14495,7 +14496,7 @@ app.OpenAuctionModule = function(self)
 							["icon"] = "INTERFACE/ICONS/INV_Misc_Book_01",
 							["description"] = "Turn this setting on if you want to show Unobtainable items.",
 							["visible"] = true,
-							["priority"] = -1,
+							["priority"] = 0,
 							["OnClick"] = function()
 								local val = app.GetDataMember("UnobtainableItemFilters");
 								val[7] = not val[7];
@@ -14512,28 +14513,6 @@ app.OpenAuctionModule = function(self)
 									data.trackable = nil;
 									data.saved = nil;
 								end
-							end,
-						},
-						{
-							["text"] = "Refresh",
-							["icon"] = "INTERFACE/ICONS/inv_food_christmasfruitcake_01",
-							["description"] = "Click this button to refresh and populate the window.",
-							["visible"] = true,
-							["priority"] = 0,
-							["OnClick"] = function()
-								local count = 0;
-								if not AllTheThingsAuctionData then return end -- No auction data variable, so just return
-								for _ in pairs(AllTheThingsAuctionData) do count = count + 1 end
-								if count < 1 then
-									print(L["TITLE"] .. " No auction data detected. Please do a full scan.");
-								else
-									StartCoroutine("ProcessAuctionData", ProcessAuctionData);
-									self.InitialProcess = true;
-									--ProcessAuctions();
-								end
-							end,
-							['OnUpdate'] = function(data)
-								data.visible = true;
 							end,
 						},
 					},
