@@ -17,14 +17,14 @@ _.Zones =
 							["criteriaID"] = 56,		-- Admiral Rel'var
 						},
 						i(153324),	-- Mac'Aree Vigilant's Bastion
-						i(152886),	-- Zealous Felslinger's Visage
-						i(152888),	-- Zealous Felslinger's Epaulets
-						i(152884),	-- Zealous Felslinger's Robe
-						i(152889),	-- Zealous Felslinger's Cuffs
-						i(152885),	-- Zealous Felslinger's Handwraps
-						i(152881),	-- Zealous Felslinger's Girdle
-						i(152887),	-- Zealous Felslinger's Leggings
 						i(152883),	-- Zealous Felslinger's Boots
+						i(152889),	-- Zealous Felslinger's Cuffs
+						i(152888),	-- Zealous Felslinger's Epaulets
+						i(152881),	-- Zealous Felslinger's Girdle
+						i(152885),	-- Zealous Felslinger's Handwraps
+						i(152887),	-- Zealous Felslinger's Leggings
+						i(152884),	-- Zealous Felslinger's Robe
+						i(152886),	-- Zealous Felslinger's Visage
 					},
 				}),
 				n(127096, {	-- All-Seer Xanarian
@@ -144,14 +144,14 @@ _.Zones =
 						{ 67.6, 62.3, 885 },
 					},
 					["groups"] = {
-						i(153340),	-- Triumvirate High Guard's Breastplate
 						i(153344),	-- Triumvirate High Guard's Bracers
+						i(153340),	-- Triumvirate High Guard's Breastplate
 						i(153343),	-- Triumvirate High Guard's Gauntlets
 						i(153345),	-- Triumvirate High Guard's Warboots
-						i(152886),	-- Zealous Felslinger's Visage
 						i(152888),	-- Zealous Felslinger's Epaulets
 						i(152885),	-- Zealous Felslinger's Handwraps
 						i(152887),	-- Zealous Felslinger's Leggings
+						i(152886),	-- Zealous Felslinger's Visage
 					},
 				}),
 				o(273521, {	-- Legion War Supplies (around Spirit Crucible)
@@ -169,14 +169,14 @@ _.Zones =
 						{ 51.8, 34.0, 885 },
 					},
 					["groups"] = {
-						i(153340),	-- Triumvirate High Guard's Breastplate
 						i(153344),	-- Triumvirate High Guard's Bracers
+						i(153340),	-- Triumvirate High Guard's Breastplate
 						i(153343),	-- Triumvirate High Guard's Gauntlets
 						i(153338),	-- Triumvirate High Guard's Leggings
 						i(153345),	-- Triumvirate High Guard's Warboots
-						i(152888),	-- Zealous Felslinger's Epaulets
-						i(152889),	-- Zealous Felslinger's Cuffs
 						i(152883),	-- Zealous Felslinger's Boots
+						i(152889),	-- Zealous Felslinger's Cuffs
+						i(152888),	-- Zealous Felslinger's Epaulets
 					},
 				}),
 				o(273523, {	-- Legion War Supplies (north central, possibly only in cave)
@@ -191,12 +191,13 @@ _.Zones =
 						{ 66.6, 17.2, 885 },
 					},
 					["groups"] = {
-						i(153339),	-- Triumvirate High Guard's Casque
-						i(153342),	-- Triumvirate High Guard's Pauldrons
 						i(153344),	-- Triumvirate High Guard's Bracers
+						i(153339),	-- Triumvirate High Guard's Casque
 						i(153343),	-- Triumvirate High Guard's Gauntlets
-						i(152886),	-- Zealous Felslinger's Visage
+						i(153342),	-- Triumvirate High Guard's Pauldrons
 						i(152889),	-- Zealous Felslinger's Cuffs
+						i(152884),	-- Zealous Felslinger's Robe
+						i(152886),	-- Zealous Felslinger's Visage
 					},
 				}),
 				o(273524, {	-- Legion War Supplies (southernmost point of wide green river, close to Felfire Armory)
@@ -211,12 +212,13 @@ _.Zones =
 						{ 55.5, 47.5, 885 },
 					},
 					["groups"] = {
-						i(153342),	-- Triumvirate High Guard's Pauldrons
 						i(153338),	-- Triumvirate High Guard's Leggings
-						i(152888),	-- Zealous Felslinger's Epaulets
+						i(153342),	-- Triumvirate High Guard's Pauldrons
 						i(152889),	-- Zealous Felslinger's Cuffs
+						i(152888),	-- Zealous Felslinger's Epaulets
 						i(152881),	-- Zealous Felslinger's Girdle
 						i(152887),	-- Zealous Felslinger's Leggings
+						i(152884),	-- Zealous Felslinger's Robe
 					},
 				}),
 				o(273527, {	-- Legion War Supplies (northeast, to the right of bridges)
@@ -234,6 +236,7 @@ _.Zones =
 					["groups"] = {
 						i(153339),	-- Triumvirate High Guard's Casque
 						i(153342),	-- Triumvirate High Guard's Pauldrons
+						i(152884),	-- Zealous Felslinger's Robe
 					},
 				}),
 				o(273528, {	-- Legion War Supplies (southeast, around Terminus)
@@ -251,13 +254,14 @@ _.Zones =
 						{ 82.6, 65.1, 885 },
 					},
 					["groups"] = {
-						i(153339),	-- Triumvirate High Guard's Casque
-						i(153340),	-- Triumvirate High Guard's Breastplate
 						i(153344),	-- Triumvirate High Guard's Bracers
+						i(153340),	-- Triumvirate High Guard's Breastplate
+						i(153339),	-- Triumvirate High Guard's Casque
 						i(153343),	-- Triumvirate High Guard's Gauntlets
 						i(153345),	-- Triumvirate High Guard's Warboots
-						i(152885),	-- Zealous Felslinger's Handwraps
 						i(152883),	-- Zealous Felslinger's Boots
+						i(152885),	-- Zealous Felslinger's Handwraps
+						i(152884),	-- Zealous Felslinger's Robe
 					},
 				}),
 				o(273533, {	-- Legion War Supplies (north - northeast of Spirit Crucible, west of bridges)
@@ -311,11 +315,12 @@ _.Zones =
 						{ 60.6, 40.9, 885 },
 					},
 					["groups"] = {
-						i(153342),	-- Triumvirate High Guard's Pauldrons
 						i(153340),	-- Triumvirate High Guard's Breastplate
+						i(153342),	-- Triumvirate High Guard's Pauldrons
 						i(153345),	-- Triumvirate High Guard's Warboots
-						i(152885),	-- Zealous Felslinger's Handwraps
 						i(152881),	-- Zealous Felslinger's Girdle
+						i(152885),	-- Zealous Felslinger's Handwraps
+						i(152884),	-- Zealous Felslinger's Robe
 					},
 				}),
 				n(126254, {	-- Lieutenant Xakaar
@@ -465,14 +470,14 @@ _.Zones =
 							["criteriaID"] = 53,		-- Void Warden Valsuran
 						},
 						i(153319),	-- Ardent Vindicator's Greatmace
-						i(152886),	-- Zealous Felslinger's Visage
-						i(152888),	-- Zealous Felslinger's Epaulets
-						i(152884),	-- Zealous Felslinger's Robe
-						i(152889),	-- Zealous Felslinger's Cuffs
-						i(152885),	-- Zealous Felslinger's Handwraps
-						i(152881),	-- Zealous Felslinger's Girdle
-						i(152887),	-- Zealous Felslinger's Leggings
 						i(152883),	-- Zealous Felslinger's Boots
+						i(152889),	-- Zealous Felslinger's Cuffs
+						i(152888),	-- Zealous Felslinger's Epaulets
+						i(152881),	-- Zealous Felslinger's Girdle
+						i(152885),	-- Zealous Felslinger's Handwraps
+						i(152887),	-- Zealous Felslinger's Leggings
+						i(152884),	-- Zealous Felslinger's Robe
+						i(152886),	-- Zealous Felslinger's Visage
 					},
 				}),
 				n(126199, {	-- Vrax'thul
@@ -509,14 +514,14 @@ _.Zones =
 							["criteriaID"] = 2,			-- Worldsplitter Skuul
 						},
 						i(153312),	-- Praetor's Ornamental Greatsword
-						i(152886),	-- Zealous Felslinger's Visage
-						i(152888),	-- Zealous Felslinger's Epaulets
-						i(152884),	-- Zealous Felslinger's Robe
-						i(152889),	-- Zealous Felslinger's Cuffs
-						i(152885),	-- Zealous Felslinger's Handwraps
-						i(152881),	-- Zealous Felslinger's Girdle
-						i(152887),	-- Zealous Felslinger's Leggings
 						i(152883),	-- Zealous Felslinger's Boots
+						i(152889),	-- Zealous Felslinger's Cuffs
+						i(152888),	-- Zealous Felslinger's Epaulets
+						i(152881),	-- Zealous Felslinger's Girdle
+						i(152885),	-- Zealous Felslinger's Handwraps
+						i(152887),	-- Zealous Felslinger's Leggings
+						i(152884),	-- Zealous Felslinger's Robe
+						i(152886),	-- Zealous Felslinger's Visage
 					},
 				}),
 				n(126338, {	-- Wrath-Lord Yarez
