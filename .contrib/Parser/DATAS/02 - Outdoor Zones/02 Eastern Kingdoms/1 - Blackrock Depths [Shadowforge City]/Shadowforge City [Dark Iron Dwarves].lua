@@ -9,7 +9,7 @@ _.Zones =
 			q(51486, {	-- Fer the Alliance
 				["provider"] = { "n", 144152 },	-- Moira Thaurissan
 				["coord"] = { 56.6, 31.8, 1186 },
-				["races"] = { 34 },	-- Dark Iron Dwarf
+				["races"] = { DARKIRON },
 				["lvl"] = 20,
 				["g"] = {
 					i(161329),	-- Tabard of the Dark Iron
@@ -19,7 +19,7 @@ _.Zones =
 			q(51483, {	-- Heritage o' the Dark Iron
 				["provider"] = { "n", 144152 },	-- Moira Thaurissan
 				["coord"] = { 56.6, 31.8, 1186 },
-				["races"] = { 34 },	-- Dark Iron Dwarf
+				["races"] = { DARKIRON },
 				["lvl"] = 110,
 				["g"] = {
 					ach(13076, {	-- Heritage of the Dark Iron
@@ -42,7 +42,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53591,
 							["coord"] = { 52.89, 55.76, 78 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 78 },	-- Un'goro Crater
 						}),
@@ -50,7 +50,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53600,
 							["coord"] = { 39.11, 09.31, 199 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["maps"] = { 199 },	-- Southern Barrens
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 						}),
@@ -58,7 +58,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53601,
 							["coord"] = { 57.16, 77.09, 198 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 198 },	-- Mount Hyjal
 						}),
@@ -71,7 +71,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53585,
 							["coord"] = { 13.52, 46.81, 26 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 26 },	-- The Hinterlands
 						}),
@@ -79,7 +79,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53587,
 							["coord"] = { 33.4, 24.7, 35 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 35 },	-- Blackrock Mountain
 						}),
@@ -87,7 +87,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53594,
 							["coord"] = { 61.82, 12.74, 17 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 17 },	-- Blasted Lands
 						}),
@@ -100,7 +100,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53599,
 							["coord"] = { 50.77, 35.28, 104 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 104 },	-- Shadowmoon Valley [Outlands]
 						}),
@@ -108,7 +108,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53597,
 							["coord"] = { 72.41, 17.65, 105 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 105 },	-- Blade's Edge Mountain
 						}),
@@ -121,7 +121,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53586,
 							["coord"] = { 76.97, 18.68, 118 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 118 },	-- Icecrown
 						}),
@@ -129,7 +129,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53596,
 							["coord"] = { 45.34, 49.92, 115 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 115 },	-- Dragonblight
 						}),
@@ -142,7 +142,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53595,
 							["coord"] = { 57.68, 62.81, 379 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 379 },	-- Kun-Lai Summit
 						}),
@@ -150,7 +150,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53598,
 							["coord"] = { 31.51, 73.57, 376 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 376 },	-- Valley of the Four Winds
 						}),
@@ -163,7 +163,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53590,
 							["coord"] = { 65.74, 08.24, 550 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 550 },	-- Nagrand
 						}),
@@ -171,7 +171,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53588,
 							["coord"] = { 46.69, 38.75, 543 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 543 },	-- Gorgrond
 						}),
@@ -184,7 +184,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53589,
 							["coord"] = { 71.68, 48.01, 646 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 646 },	-- Broken Shore
 						}),
@@ -192,7 +192,7 @@ _.Zones =
 							["collectible"] = true,
 							["questID"] = 53593,
 							["coord"] = { 44.66, 72.87, 650 },
-							["races"] = { 34 },	-- Dark Iron Dwarf
+							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 							["maps"] = { 650 },	-- Highmountain
 						}),

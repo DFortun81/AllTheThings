@@ -132,7 +132,7 @@ _.Zones =
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
@@ -284,7 +284,7 @@ _.Zones =
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 5 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
@@ -306,7 +306,7 @@ _.Zones =
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 9 },	-- Goblin
+					["races"] = { GOBLIN },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
@@ -314,7 +314,7 @@ _.Zones =
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
@@ -346,7 +346,7 @@ _.Zones =
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
 					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
@@ -362,7 +362,7 @@ _.Zones =
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coords"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
@@ -370,10 +370,7 @@ _.Zones =
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = {
-						8,	-- Troll
-						31,	-- Zandalari Troll
-					},
+					["races"] = { TROLL, ZANDALARI },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
@@ -381,7 +378,7 @@ _.Zones =
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
 					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
@@ -389,7 +386,7 @@ _.Zones =
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
@@ -405,7 +402,7 @@ _.Zones =
 					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
 					["coords"] = { 57.8, 91.6, 90 },
 					["sourceQuest"] = 9621,	-- Envoy to the Horde
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 				}),
 				q(9813,  {	-- Meeting the Orcs
 					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
@@ -428,7 +425,7 @@ _.Zones =
 					["provider"] = { "n", 4556 },	-- Gordon Wendham
 					["coords"] = { 61.8, 42.0, 90 },
 					["sourceQuest"] = 6323,	-- Ride to the Undercity
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 				}),
 				q(28289, {	-- Moonglade Calls
 					["provider"] = { "n", 52319 },	-- Mala Skywatcher
@@ -472,7 +469,7 @@ _.Zones =
 				}),
 				q(366,   {	-- Return the Book
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 2, 5, 8, },	-- Orc, Undead, Troll
+					["races"] = { ORC, UNDEAD, TROLL },
 					["provider"] = { "n", 1498 },	-- Bethor Iceshard
 					["sourceQuest"] = 357,	-- The Lich's Identity
 				}),
@@ -480,7 +477,7 @@ _.Zones =
 					["provider"] = { "n", 4551 },	-- Michael Garrett
 					["coords"] = { 63.0, 48.2, 90 },
 					["sourceQuest"] = 6322,	-- Michael Garrett
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 				}),
 				q(1358,  {	-- Sample for Helbrim
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
@@ -497,7 +494,7 @@ _.Zones =
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 9 },	-- Goblin
+					["races"] = { GOBLIN },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
@@ -505,7 +502,7 @@ _.Zones =
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
 					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
 				}),
@@ -513,7 +510,7 @@ _.Zones =
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 8 },	-- Troll
+					["races"] = { TROLL },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
@@ -689,7 +686,7 @@ _.Zones =
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),

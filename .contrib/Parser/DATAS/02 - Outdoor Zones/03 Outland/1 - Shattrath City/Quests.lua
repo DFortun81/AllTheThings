@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -8,23 +9,23 @@ _.Zones =
 			n(QUESTS, {
 				q(12753, {	-- A Desperate Alliance
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 3 },	-- Dwarf
+					["races"] = { DWARF },
 				}),
 				q(12753, {	-- A Desperate Alliance
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 				}),
 				q(12775, {	-- A Desperate Alliance
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 1 },	-- Human
+					["races"] = { HUMAN },
 				}),
 				q(12777, {	-- A Desperate Alliance
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 				}),
 				q(12808, {	-- A Desperate Alliance
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 7 },	-- Gnome
+					["races"] = { GNOME },
 				}),
 				q(10210, {	-- A'dal
 					["provider"] = { "n", 19684 },	-- Haggard War Veteran
@@ -69,29 +70,29 @@ _.Zones =
 				}),
 				q(12773, {	-- Darnassus
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 					["provider"] = { "n", 29087 },	-- Bishop Lazaril
 					["sourceQuest"] = 12753,	-- A Desperate Alliance
 				}),
 				q(12783, {	-- Desperate Research
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 8 },	-- Troll
+					["races"] = { TROLL },
 				}),
 				q(12752, {	-- Desperate Research
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 				}),
 				q(12782, {	-- Desperate Research
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 				}),
 				q(12784, {	-- Desperate Research
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 				}),
 				q(12811, {	-- Desperate Research
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 6 },	-- Orc
+					["races"] = { ORC },
 				}),
 				q(47523, {	-- Disturbance Detected: Black Temple (EVENT: TIMEWALKING)
 					["provider"] = { "n", 123252 },	-- Vormu
@@ -136,13 +137,13 @@ _.Zones =
 				}),
 				q(12771, {	-- Ironforge (Dwarf)
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 3 },	-- Dwarf
+					["races"] = { DWARF },
 					["provider"] = { "n", 29087 },	-- Bishop Lazaril
 					["sourceQuest"] = 12753,	-- A Desperate Alliance
 				}),
 				q(12809, {	-- Ironforge (Gnome)
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 7 },	-- Gnome
+					["races"] = { GNOME },
 					["provider"] = { "n", 29087 },	-- Bishop Lazaril
 					["sourceQuest"] = 12808,	-- A Desperate Alliance
 				}),
@@ -176,13 +177,13 @@ _.Zones =
 				}),
 				q(12785, {	-- Orgrimmar (Troll)
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 8 },	-- Troll
+					["races"] = { TROLL },
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12783,	-- Desperate Research
 				}),
 				q(12812, {	-- Orgrimmar (Orc)
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 2 },	-- Orc
+					["races"] = { ORC },
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12811,	-- Desperate Research
 				}),
@@ -218,7 +219,7 @@ _.Zones =
 				}),
 				q(12788, {	-- Silvermoon
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12782,	-- Desperate Research
 				}),
@@ -248,7 +249,7 @@ _.Zones =
 				}),
 				q(12774, {	-- Stormwind
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 1 },	-- Human
+					["races"] = { HUMAN },
 					["provider"] = { "n", 29087 },	-- Bishop Lazaril
 					["sourceQuest"] = 12775,	-- A Desperate Alliance
 				}),
@@ -287,7 +288,7 @@ _.Zones =
 				}),
 				q(12776, {	-- The Exodar
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 11 },	-- Night Elf
+					["races"] = { DRAENEI },
 					["provider"] = { "n", 29087 },	-- Bishop Lazaril
 					["sourceQuest"] = 12777,	-- A Desperate Alliance
 				}),
@@ -302,13 +303,13 @@ _.Zones =
 				}),
 				q(12787, {	-- The Undercity
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12752,	-- Desperate Research
 				}),
 				q(12786, {	-- Thunder Bluff
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12784,	-- Desperate Research
 				}),

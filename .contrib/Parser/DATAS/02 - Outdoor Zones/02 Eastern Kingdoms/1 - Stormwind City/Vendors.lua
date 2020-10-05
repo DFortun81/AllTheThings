@@ -3635,51 +3635,51 @@ _.Zones =
 					["g"] = {
 						i(87795), 	-- Black Dragon Turtle
 						i(91008, { 	-- Black Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87796), 	-- Blue Dragon Turtle
 						i(91009, {	-- Blue Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87797), 	-- Brown Dragon Turtle
 						i(91005, { 	-- Brown Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87802),	-- Great Black Dragon Turtle
 						i(91011, {	-- Great Black Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87803),	-- Great Blue Dragon Turtle
 						i(91013, {	-- Great Blue Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87804),	-- Great Brown Dragon Turtle
 						i(91014, {	-- Great Brown Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87801),	-- Great Green Dragon Turtle
 						i(91012, {	-- Great Green Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87805),	-- Great Purple Dragon Turtle
 						i(91015, {	-- Great Purple Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(82811),	-- Great Red Dragon Turtle
 						i(91010, {	-- Great Red Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(82765),	-- Green Dragon Turtle
 						i(91004, {	-- Green Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87799),	-- Purple Dragon Turtle
 						i(91006, {	-- Purple Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87800),	-- Red Dragon Turtle
 						i(91007, {	-- Red Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(91016, {	-- Reins of the Great Red Dragon Turtle
 							["u"] = NEVER_IMPLEMENTED,

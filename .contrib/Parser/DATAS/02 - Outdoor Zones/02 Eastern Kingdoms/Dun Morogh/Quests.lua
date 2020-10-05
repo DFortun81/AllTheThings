@@ -145,7 +145,7 @@ _.Zones =
 				}),
 				q(5625,  {	-- Garments of the Light
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 3 },	-- Dwarf
+					["races"] = { DWARF },
 					["classes"] = { PRIEST },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(16605)),	-- Friar's Robes of the Light
@@ -196,10 +196,7 @@ _.Zones =
 				q(6387,  {	-- Honor Students
 					["provider"] = { "n", 1699 },	-- Gremlock Pilsnor
 					["coord"] = { 54.7, 50.5, 27 },
-					["races"] = {
-						3,	-- Dwarf
-						7,	-- Gnome
-					},
+					["races"] = { DWARF, GNOME },
 				}),
 				q(4126,  {	-- Hurley Blackbreath
 					["u"] = REMOVED_FROM_GAME,
@@ -216,24 +213,24 @@ _.Zones =
 					["sourceQuest"] = 25882,	-- A Hand at the Ranch
 				}),
 				q(32663, {	-- Learn To Ride
-					["races"] = { 7 },
+					["races"] = { GNOME },
 					["description"] = "This quest is available to Gnomes upon reaching level 20.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 				}),
 				q(32662, {	-- Learn To Ride
-					["races"] = { 3 },
+					["races"] = { DWARF },
 					["description"] = "This quest is available to Dwarves upon reaching level 20.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 				}),
 				q(14084, {	-- Learn to Ride in Dun Morogh
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 7 },	-- gnome
+					["races"] = { GNOME },
 				}),
 				q(14083, {	-- Learn to Ride in Dun Morogh
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 3 },	-- dwarf
+					["races"] = { DWARF },
 				}),
 				q(412,   {	-- Operation Recombobulation
 					["provider"] = { "n", 1269 },	-- Razzle Sprysprocket
@@ -329,10 +326,7 @@ _.Zones =
 					["provider"] = { "n", 43701 },	-- Brolan Galebeard
 					["coord"] = { 53.8, 52.6, 27 },
 					["sourceQuest"] = 6387,	-- Honor Students
-					["races"] = {
-						3,	-- Dwarf
-						7,	-- Gnome
-					},
+					["races"] = { DWARF, GNOME },
 				}),
 				q(466,   {	-- Search for Incendicite
 					["u"] = REMOVED_FROM_GAME,
@@ -344,7 +338,7 @@ _.Zones =
 				q(317,   {	-- Stocking Jetsteam
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1378 },	-- Pilot Bellowfiz
-					["races"] = { 3, 7 },	-- Dwarf, Gnome
+					["races"] = { DWARF, GNOME },
 				}),
 				q(25841, {	-- Strike From Above
 					["provider"] = { "n", 41298 },	-- Slamp Wobblecog
@@ -366,7 +360,7 @@ _.Zones =
 				q(24528, {	-- The Power of the Light
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 926 },	-- Bromos Grummner
-					["races"] = { 3 },	-- Dwarf
+					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 				}),
 				q(433,   { 	-- The Public Servant

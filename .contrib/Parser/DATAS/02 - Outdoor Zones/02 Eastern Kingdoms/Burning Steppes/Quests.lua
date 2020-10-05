@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -118,49 +119,49 @@ _.Zones =
 				q(28202, {	-- A Perfect Costume
 					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
-					["races"] = { 3, 29 },	-- Dwarf, Void Elf
+					["races"] = { DWARF, VOIDELF },
 					["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 				}),
 				q(28203, {	-- A Perfect Costume
 					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
-					["races"] = { 11, 22 },	-- Draenei, Worgen, Lightforged Draenei
+					["races"] = { DRAENEI, WORGEN },	-- Lightforged Draenei too?
 					["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 				}),
 				q(28204, {	-- A Perfect Costume
 					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
-					["races"] = { 7 },	-- Gnome
+					["races"] = { GNOME },
 					["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 				}),
 				q(28205, {	-- A Perfect Costume
 					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 					["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 				}),
 				q(28428, {	-- A Perfect Costume
 					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
-					["races"] = { 2, 5 },	-- Orc, Undead
+					["races"] = { ORC, UNDEAD },
 					["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 				}),
 				q(28429, {	-- A Perfect Costume (NEEDS CONFIRMATION ON HIGHMOUNTAIN TAUREN)
 					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
-					["races"] = { 6, 26, 28 },	-- Tauren, Pandaren, Highmountain Tauren (UNCONFIRMED)
+					["races"] = { TAUREN, PANDAREN_HORDE, HIGHMOUNTAIN },	-- Highmountain Tauren is UNCONFIRMED
 					["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 				}),
 				q(28430, {	-- A Perfect Costume
 					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
-					["races"] = { 9 },	-- Goblin
+					["races"] = { GOBLIN },
 					["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 				}),
 				q(28431, {	-- A Perfect Costume
 					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, 36 },
-					["races"] = { 8, 10, 27 },	-- Troll, Blood Elf, Nightborne
+					["races"] = { TROLL, BLOODELF, NIGHTBORNE },
 					["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 				}),
 				q(4022, {	-- A Taste of Flame
@@ -590,7 +591,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
 						{ "i", 11734, 1 },	-- Libram of Tenacity
-						{ "i", 11564, 4 },	-- Crystal Ward 
+						{ "i", 11564, 4 },	-- Crystal Ward
 						{ "i", 11753, 1 },	-- Eye of Kajal
 						{ "g", 300000 },   -- 30g
 					},
@@ -684,7 +685,7 @@ _.Zones =
 					["sourceQuests"] = { 28418 },	-- Burning Vengeance
 					["g"] = {
 						i(64506),	-- Obsidian-Flecked Cowl
-					},						
+					},
 				}),
 				q(28491, {	-- Not Fireflies, Flameflies
 					["provider"] = { "n", 10260 },	-- Kibler
@@ -806,7 +807,7 @@ _.Zones =
 					["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance
 					["g"] = {
 						i(64501),	-- Sharp Scorpid Barb
-						i(156965),	-- Enchanted Scorpid Tail 
+						i(156965),	-- Enchanted Scorpid Tail
 						i(157011),	-- Envenomed Scorpid Tail
 					},
 				}),

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(948, {	-- The Maelstrom
@@ -200,7 +201,7 @@ _.Zones =
 				q(25267, {	-- Message for Saurfang
 					["maps"] = { 1 },	-- Durotar
 					["coord"] = { 57.6, 9.7, 1 },
-					["races"] = { 9 },	-- Goblin
+					["races"] = { GOBLIN },
 					["provider"] = { "n", 86884 },	-- Darkspear Loyalist
 					["sourceQuests"] = { 25266 },	-- Warchief's Emissary
 				}),

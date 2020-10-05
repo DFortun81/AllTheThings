@@ -1,6 +1,7 @@
 ---------------------------------------------
 --       M O U N T S     M O D U L E       --
 ---------------------------------------------
+
 _.Mounts =
 {
 	n(VENDORS, {
@@ -245,10 +246,10 @@ _.Mounts =
 		i(87788),	-- Grey Riding Yak
 		i(87774),	-- Heavenly Golden Cloud Serpent
 		i(142228, {	-- Huntmaster's Dire Wolfhawk (Hunter)
-			["classes"] = { HUNTER },	
+			["classes"] = { HUNTER },
 		}),
 		i(142226, {	-- Huntmaster's Fierce Wolfhawk (Hunter)
-			["classes"] = { HUNTER },	
+			["classes"] = { HUNTER },
 		}),
 		i(43958, {	-- Ice Mammoth [Alliance Only]
 			["races"] = ALLIANCE_ONLY,
@@ -328,13 +329,13 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(143491, {	-- Shadowblade's Baneful Omen (Rogue)
-			["classes"] = { ROGUE },	
+			["classes"] = { ROGUE },
 		}),
 		i(143490, {	-- Shadowblade's Crimson Omen (Rogue)
-			["classes"] = { ROGUE },	
+			["classes"] = { ROGUE },
 		}),
 		i(143492, {	-- Shadowblade's Lethal Omen (Rogue)
-			["classes"] = { ROGUE },	
+			["classes"] = { ROGUE },
 		}),
 		i(116772),	-- Shadowmane Charger
 		i(166745, {	-- Siltwing Albatross
@@ -389,7 +390,7 @@ _.Mounts =
 		i(116785),	-- Swift Frostwolf
 		i(18787),	-- Swift Gray Ram
 		i(46752, {	-- Swift Gray Steed (human)
-			["races"] = { HUMAN },	
+			["races"] = { HUMAN },
 		}),
 		i(46758, {	-- Swift Grey Steed [Alliance, except Human]
 			["races"] = exclude({ HUMAN }, ALLIANCE_ONLY),
@@ -401,7 +402,7 @@ _.Mounts =
 		i(25531),	-- Swift Green Wind Rider
 		i(18767),	-- Swift Mistsaber
 		i(46744, {	-- Swift Moonsaber (night elf)
-			["races"] = { NIGHTELF },	
+			["races"] = { NIGHTELF },
 		}),
 		i(46759, {	-- Swift Moonsaber (alliance, except night elf)
 			["races"] = exclude({ NIGHTELF }, ALLIANCE_ONLY),
@@ -417,7 +418,7 @@ _.Mounts =
 		i(25533),	-- Swift Purple Wind Rider
 		i(25527),	-- Swift Red Gryphon
 		i(46751, {	-- Swift Red Hawkstrider (blood elf)
-			["races"] = { BLOODELF },	-- Blood Elves
+			["races"] = { BLOODELF },
 		}),
 		i(46761, {	-- Swift Red Hawkstrider (Horde, except blood elf)
 			["races"] = exclude({ BLOODELF }, HORDE_ONLY),

@@ -212,7 +212,7 @@ _.Zones =
 				q(32724, {	-- Forge Ahead! (A)
 					["isDaily"] = true,
 					["classes"] = { PALADIN, WARLOCK },
-					["races"] = { 11, 22 },	-- Draenei, Worgen
+					["races"] = { DRAENEI, WORGEN },
 				}),
 				q(32587, {	-- Forge Ahead! (A)
 					["isDaily"] = true,
@@ -221,7 +221,7 @@ _.Zones =
 				}),
 				q(32722, {	-- Forge Ahead! (H)
 					["isDaily"] = true,
-					["races"] = { 10, 2, 5 },	-- Blood Elf, Orc, Undead
+					["races"] = { BLOODELF, ORC, UNDEAD },
 				}),
 				q(32292, {	-- Forge Ahead! (H)
 					["isDaily"] = true,

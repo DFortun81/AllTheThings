@@ -25,30 +25,30 @@ _.Zones =
 					q(25089, {	-- Beyond the Graves
 						["provider"] = { "n", 2307 },	-- Caretaker Caice
 						["coord"] = { 45.9, 80.4, 465 },
-						["races"] = { 5 },	-- undead
+						["races"] = { UNDEAD },
 						["sourceQuests"] = { 24960 },	-- The Wakening
 					}),
 					q(28652, {	-- Caretaker Caice
 						["provider"] = { "n", 1568 },	-- Undertaker Mordo
 						["coord"] = { 43.4, 79.9, 465 },
-						["races"] = { 5 },	-- undead
+						["races"] = { UNDEAD },
 						["sourceQuests"] = { 26799 },	-- Those That Couldn't Be Saved
 						["isBreadcrumb"] = true,
 					}),
 					q(3096,  {	-- Encrypted Scroll
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
-						["races"] = { 5 },	-- undead
+						["races"] = { UNDEAD },
 						["classes"] = { ROGUE },
 					}),
 					q(24959, {	-- Fresh out of the Grave
 						["provider"] = { "n", 49044 },	-- Agatha
 						["coord"] = { 40.7, 78.4, 465 },
-						["races"] = { 5 },	-- undead
+						["races"] = { UNDEAD },
 					}),
 					q(5650,  {	-- Garments of Darkness
 						["u"] = REMOVED_FROM_GAME,
-						["races"] =  { 5 },	-- Undead
+						["races"] = { UNDEAD },
 						["classes"] = { PRIEST },
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(16607)),	-- Garments of Darkness
@@ -59,24 +59,21 @@ _.Zones =
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
 						["sourceQuests"] = { 26800 },	-- Recruitment
 						["classes"] = { MAGE },
-						["races"] = { 5 },	-- undead
+						["races"] = { UNDEAD },
 					}),
 					q(3097,  {	-- Hallowed Scroll
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
 						["sourceQuests"] = { 26800 },	-- Recruitment
 						["classes"] = { PRIEST },
-						["races"] = {
-							5,	-- Undead
-							10,	-- Blood Elf
-						},
+						["races"] = { UNDEAD, BLOODELF },
 					}),
 					q(24965, {	-- Magic Training
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2124 },	-- Isabella
 						["sourceQuests"] = { 3098 },	-- Glyphic Scroll
 						["classes"] = { MAGE },
-						["races"] = { 5 },	-- Undead
+						["races"] = { UNDEAD },
 					}),
 					q(6395, {	-- Marla's Last Wish
 						["u"] = REMOVED_FROM_GAME,
@@ -116,7 +113,7 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2123 },	-- Dark Cleric Duesten
 						["sourceQuests"] = { 3097 },	-- Hallowed Scroll
-						["races"] = { 5 },	-- undead
+						["races"] = { UNDEAD },
 						["classes"] = { PRIEST },
 					}),
 					q(3901, {	-- Rattling the Rattlecages
@@ -128,7 +125,7 @@ _.Zones =
 					q(26800, {	-- Recruitment
 						["provider"] = { "n", 26800 },	-- Deathguard Saltain
 						["coord"] = { 49.9, 56.3, 465 },
-						["races"] = { 5 },	-- undead
+						["races"] = { UNDEAD },
 						["sourceQuests"] = { 25089 },	-- Beyond the Graves
 					}),
 					q(3902, {	-- Scavenging Deathknell
@@ -146,20 +143,20 @@ _.Zones =
 					q(28653, {	-- Shadow Priest Sarvis
 						["provider"] = { "n", 1740 },	-- Deathguard Saltain
 						["coord"] = { 49.9, 56.3, 465 },
-						["races"] = { 5 },	-- undead
+						["races"] = { UNDEAD },
 						["sourceQuests"] = { 26800 },	-- Recruitment
 						["isBreadcrumb"] = true,
 					}),
 					q(3095,  {	-- Simple Scroll
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
-						["races"] = { 5 },	-- undead
+						["races"] = { UNDEAD },
 						["classes"] = { WARRIOR },
 					}),
 					q(3099,  {	-- Tainted Scroll
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
-						["races"] = { 5 },	-- undead
+						["races"] = { UNDEAD },
 						["classes"] = { WARLOCK },
 					}),
 					q(376,   {	-- The Damned
@@ -195,7 +192,7 @@ _.Zones =
 						["provider"] = { "n", 1568 },	-- Undertaker Mordo
 						["coord"] = { 43.4, 79.9, 465 },
 						["sourceQuests"] = { 24959 },	-- Fresh out of the Grave
-						["races"] = { 5 },	-- undead
+						["races"] = { UNDEAD },
 					}),
 					q(381,   {	-- The Scarlet Crusade
 						["u"] = REMOVED_FROM_GAME,
@@ -212,13 +209,13 @@ _.Zones =
 					q(24960, {	-- The Wakening
 						["provider"] = { "n", 2307 },	-- Caretaker Caice
 						["coord"] = { 45.9, 80.4, 465 },
-						["races"] = { 5 },	-- undead
+						["races"] = { UNDEAD },
 						["sourceQuests"] = { 28652 },	-- Caretaker Caice
 					}),
 					q(26799, {	-- Those That Couldn't Be Saved
 						["provider"] = { "n", 1568 },	-- Undertaker Mordo
 						["coord"] = { 43.4, 79.9, 465 },
-						["races"] = { 5 },	-- undead
+						["races"] = { UNDEAD },
 						["sourceQuests"] = { 28608 },	-- The Shadow Grave
 					}),
 					q(383,   {	-- Vital Intelligence

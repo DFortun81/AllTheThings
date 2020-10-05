@@ -11,7 +11,7 @@ _.Zones =
 					q(28762, {	-- Beating Them Back!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { PALADIN },
 					}),
 					q(29078, {	-- Beating Them Back!
@@ -22,43 +22,43 @@ _.Zones =
 					q(28767, {	-- Beating Them Back!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { HUNTER },
 					}),
 					q(28766, {	-- Beating Them Back!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { WARRIOR },
 					}),
 					q(28763, {	-- Beating Them Back!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { PRIEST },
 					}),
 					q(28764, {	-- Beating Them Back!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { ROGUE },
 					}),
 					q(28757, {	-- Beating Them Back!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { MAGE },
 					}),
 					q(28765, {	-- Beating Them Back!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { WARLOCK },
 					}),
 					q(31139, {	-- Beating Them Back!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { MONK },
 					}),
 					q(26389, {	-- Blackrock Invasion
@@ -102,49 +102,49 @@ _.Zones =
 					q(28811, {	-- Fear No Evil
 						["provider"] = { "n", 951 },	-- Brother Paxton
 						["coord"] = { 35.3, 37.9, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { ROGUE },
 						["sourceQuest"] = 28787,	-- Join the Battle!
 					}),
 					q(28812, {	-- Fear No Evil
 						["provider"] = { "n", 951 },	-- Brother Paxton
 						["coord"] = { 35.3, 37.9, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { WARLOCK },
 						["sourceQuest"] = 28788,	-- Join the Battle!
 					}),
 					q(28810, {	-- Fear No Evil
 						["provider"] = { "n", 951 },	-- Brother Paxton
 						["coord"] = { 35.3, 37.9, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { PRIEST },
 						["sourceQuest"] = 28786,	-- Join the Battle!
 					}),
 					q(28813, {	-- Fear No Evil
 						["provider"] = { "n", 951 },	-- Brother Paxton
 						["coord"] = { 35.3, 37.9, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { WARRIOR },
 						["sourceQuest"] = 28789,	-- Join the Battle!
 					}),
 					q(28806, {	-- Fear No Evil
 						["provider"] = { "n", 951 },	-- Brother Paxton
 						["coord"] = { 35.3, 37.9, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { HUNTER },
 						["sourceQuest"] = 28780,	-- Join the Battle!
 					}),
 					q(28808, {	-- Fear No Evil
 						["provider"] = { "n", 951 },	-- Brother Paxton
 						["coord"] = { 35.3, 37.9, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { MAGE },
 						["sourceQuest"] = 28784,	-- Join the Battle!
 					}),
 					q(28809, {	-- Fear No Evil
 						["provider"] = { "n", 951 },	-- Brother Paxton
 						["coord"] = { 35.3, 37.9, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { PALADIN },
 						["sourceQuest"] = 28785,	-- Join the Battle!
 					}),
@@ -163,91 +163,91 @@ _.Zones =
 					q(28789, {	-- Join the Battle!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { WARRIOR },
 						["sourceQuest"] = 28774,	-- Lions for Lambs
 					}),
 					q(28786, {	-- Join the Battle!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { PRIEST },
 						["sourceQuest"] = 28771,	-- Lions for Lambs
 					}),
 					q(28785, {	-- Join the Battle!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { PALADIN },
 						["sourceQuest"] = 28770,	-- Lions for Lambs
 					}),
 					q(28787, {	-- Join the Battle!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { ROGUE },
 						["sourceQuest"] = 28772,	-- Lions for Lambs
 					}),
 					q(28784, {	-- Join the Battle!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { MAGE },
 						["sourceQuest"] = 28769,	-- Lions for Lambs
 					}),
 					q(28780, {	-- Join the Battle!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { HUNTER },
 						["sourceQuest"] = 28759,	-- Lions for Lambs
 					}),
 					q(28788, {	-- Join the Battle!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { WARLOCK },
 						["sourceQuest"] = 28773,	-- Lions for Lambs
 					}),
 					q(31143, {	-- Join the Battle!
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { MONK },
 						["sourceQuest"] = 31140,	-- Lions for Lambs
 					}),
 					q(28771, {	-- Lions for Lambs
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { PRIEST },
 						["sourceQuest"] = 28763,	-- Beating Them Back!
 					}),
 					q(28772, {	-- Lions for Lambs
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { ROGUE },
 						["sourceQuest"] = 28764,	-- Beating Them Back!
 					}),
 					q(28773, {	-- Lions for Lambs
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { WARLOCK },
 						["sourceQuest"] = 28765,	-- Beating Them Back!
 					}),
 					q(28774, {	-- Lions for Lambs
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { WARRIOR },
 						["sourceQuest"] = 28766,	-- Beating Them Back!
 					}),
 					q(28759, {	-- Lions for Lambs
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { HUNTER },
 						["sourceQuest"] = 28767,	-- Beating Them Back
 					}),
@@ -260,21 +260,21 @@ _.Zones =
 					q(31140, {	-- Lions for Lambs
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { MONK },
 						["sourceQuest"] = 31139,	-- Beating Them Back!
 					}),
 					q(28769, {	-- Lions for Lambs
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { MAGE },
 						["sourceQuest"] = 28757,	-- Beating Them Back!
 					}),
 					q(28770, {	-- Lions for Lambs
 						["provider"] = { "n", 197 },	-- Marshal McBride
 						["coord"] = { 33.5, 53.0, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { PALADIN },
 						["sourceQuest"] = 28762,	-- Beating Them Back!
 					}),
@@ -296,56 +296,56 @@ _.Zones =
 					q(28819, {	-- The Rear is Clear
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { PALADIN },
 						["sourceQuest"] = 28793,	-- They Sent Assassins
 					}),
 					q(28822, {	-- The Rear is Clear
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { WARLOCK },
 						["sourceQuest"] = 28796,	-- They Sent Assassins
 					}),
 					q(31145, {	-- The Rear is Clear
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { MONK },
 						["sourceQuest"] = 31144,	-- They Sent Assassins
 					}),
 					q(28821, {	-- The Rear is Clear
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { ROGUE },
 						["sourceQuest"] = 28795,	-- They Sent Assassins
 					}),
 					q(28817, {	-- The Rear is Clear
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { HUNTER },
 						["sourceQuest"] = 28791,	-- They Sent Assassins
 					}),
 					q(28823, {	-- The Rear is Clear
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { WARRIOR },
 						["sourceQuest"] = 28797,	-- They Sent Assassins
 					}),
 					q(28820, {	-- The Rear is Clear
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { PRIEST },
 						["sourceQuest"] = 28794,	-- They Sent Assassins
 					}),
 					q(28818, {	-- The Rear is Clear
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { MAGE },
 						["sourceQuest"] = 28792,	-- They Sent Assassins
 					}),
@@ -358,56 +358,56 @@ _.Zones =
 					q(28792, {	-- They Sent Assassins
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { MAGE },
 						["sourceQuest"] = 28784,	-- Join the Battle!
 					}),
 					q(31144, {	-- They Sent Assassins
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { MONK },
 						["sourceQuest"] = 31143,	-- Join the Battle!
 					}),
 					q(28794, {	-- They Sent Assassins
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { PRIEST },
 						["sourceQuest"] = 28786,	-- Join the Battle!
 					}),
 					q(28793, {	-- They Sent Assassins
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { PALADIN },
 						["sourceQuest"] = 28785,	-- Join the Battle!
 					}),
 					q(28795, {	-- They Sent Assassins
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { ROGUE },
 						["sourceQuest"] = 28787,	-- Join the Battle!
 					}),
 					q(28797, {	-- They Sent Assassins
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { WARRIOR },
 						["sourceQuest"] = 28789,	-- Join the Battle!
 					}),
 					q(28791, {	-- They Sent Assassins
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { HUNTER },
 						["sourceQuest"] = 28780,	-- Join the Battle!
 					}),
 					q(28796, {	-- They Sent Assassins
 						["provider"] = { "n", 823 },	-- Sergeant Willem
 						["coord"] = { 35.7, 39.7, 425 },
-						["races"] = { 1 },	-- Human
+						["races"] = { HUMAN },
 						["classes"] = { WARLOCK },
 						["sourceQuest"] = 28788,	-- Join the Battle!
 					}),

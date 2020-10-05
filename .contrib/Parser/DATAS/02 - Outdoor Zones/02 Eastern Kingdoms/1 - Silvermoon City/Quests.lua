@@ -9,7 +9,7 @@ _.Zones =
 			n(QUESTS, {
 				q(9725,  {	-- A Demonstration of Loyalty
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9723,	-- A Gesture of Commitment
@@ -36,21 +36,21 @@ _.Zones =
 				}),
 				q(9723,  {	-- A Gesture of Commitment
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9722,	-- The Master's Path
 				}),
 				q(9681, {	-- A Study in Power
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9678,	-- The First Trial
 				}),
 				q(9721,  {	-- A Summons from Lord Solanar
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 				}),
@@ -64,7 +64,7 @@ _.Zones =
 				}),
 				q(9684, {	-- Claiming the Light
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 17718 },	-- Magister Astalor Bloodsworn
 					["sourceQuest"] = 9681,	-- A Study in Power
@@ -73,19 +73,19 @@ _.Zones =
 					["provider"] = { "n", 16658 },	-- Aldrae
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(9189, {	-- Delivery to the Sepulcher
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 				}),
 				q(9621,  {	-- Envoy to the Horde
 					["provider"] = { "n", 16802 },	-- Lor'themar Theron
 					["coords"] = { 54.0, 20.4, 110 },
 					["sourceQuest"] = 9328,	-- Hero of the Sin'dorei
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 				}),
 				q(9812,  {	-- Envoy to the Horde
 					["provider"] = { "n", 16802 },	-- Lor'themar Theron
@@ -95,7 +95,7 @@ _.Zones =
 				}),
 				q(9707, {	-- Forging the Weapon
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9692,	-- The Path of the Adept
@@ -120,7 +120,7 @@ _.Zones =
 					["provider"] = { "n", 16658 },	-- Aldrae
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
-					["races"] = { 5 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
@@ -137,7 +137,7 @@ _.Zones =
 					["provider"] = { "n", 16658 },	-- Aldrae
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
-					["races"] = { 9 },	-- Goblin
+					["races"] = { GOBLIN },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
@@ -145,7 +145,7 @@ _.Zones =
 					["provider"] = { "n", 16658 },	-- Aldrae
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
@@ -177,7 +177,7 @@ _.Zones =
 					["provider"] = { "n", 16681 },	-- Champion Bachi
 					["coord"] = { 92.0, 37.2, 110 },	-- Champion Bachi (Silvermoon City)
 					["isBreadcrumb"] = true,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
@@ -193,10 +193,7 @@ _.Zones =
 					["provider"] = { "n", 16658 },	-- Aldrae
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
-					["races"] = {
-						8,	-- Troll
-						31,	-- Zandalari Troll
-					},
+					["races"] = { TROLL, ZANDALARI },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
@@ -212,7 +209,7 @@ _.Zones =
 					["provider"] = { "n", 16658 },	-- Aldrae
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
@@ -226,7 +223,7 @@ _.Zones =
 				}),
 				q(9685, {	-- Redeeming the Dead
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9684,	-- Claiming the Light
@@ -235,7 +232,7 @@ _.Zones =
 					["provider"] = { "n", 16681 },	-- Champion Bachi
 					["coord"] = { 92.0, 37.2, 110 },	-- Champion Bachi (Silvermoon City)
 					["isBreadcrumb"] = true,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
 				}),
@@ -243,7 +240,7 @@ _.Zones =
 					["provider"] = { "n", 16658 },	-- Aldrae
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
-					["races"] = { 8 },	-- Troll
+					["races"] = { TROLL },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
@@ -251,11 +248,11 @@ _.Zones =
 					["provider"] = { "n", 16191 },	-- Sathren Azuredawn
 					["coord"] = { 53.9, 71.0, 110 },
 					["sourceQuest"] = 9133,	-- Fly to Silvermoon City
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 				}),
 				q(9710, {	-- The Blood-Tempered Ranseur
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 16669 },	-- Bemarrin
 					["sourceQuest"] = 9707,	-- Forging the Weapon
@@ -273,28 +270,28 @@ _.Zones =
 				}),
 				q(9678, {	-- The First Trial
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9677,	-- Summons from Knight-Lord Bloodvalor
 				}),
 				q(9722,  {	-- The Master's Path
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9721,	-- A Summons from Lord Solanar
 				}),
 				q(9692, {	-- The Path of the Adept
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9691,	-- Return to Silvermoon
 				}),
 				q(9690, {	-- The Second Trial
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 				}),
@@ -302,7 +299,7 @@ _.Zones =
 					["provider"] = { "n", 16658 },	-- Aldrae
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
@@ -316,21 +313,21 @@ _.Zones =
 				}),
 				q(9735,  {	-- True Masters of the Light
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9725,	-- A Demonstration of Loyalty
 				}),
 				q(9736,  {	-- True Masters of the Light
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9735,	-- True Masters of the Light
 				}),
 				q(9737,  {	-- True Masters of the Light
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
 					["g"] = {

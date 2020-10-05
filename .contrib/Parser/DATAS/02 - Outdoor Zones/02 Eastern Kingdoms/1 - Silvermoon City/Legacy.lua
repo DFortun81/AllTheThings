@@ -10,7 +10,7 @@ _.Zones =
 				n(QUESTS, {
 					q(9489, {	-- Cleansing the Scar
 						["classes"] = { PRIEST },
-						["races"] = { 10 },	-- Blood Elf
+						["races"] = { BLOODELF },
 						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(23924)),	-- Robes of Silvermoon
@@ -18,7 +18,7 @@ _.Zones =
 					}),
 					q(9673, {	-- Beast Training
 						["classes"] = { HUNTER },
-						["races"] = { 10 },	-- Blood Elf
+						["races"] = { BLOODELF },
 						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(24136)),	-- Farstrider's Bow

@@ -39,7 +39,7 @@ _.Zones =
 						}),
 					}),
 				},
-				["races"]  = { 27 },	-- Nightborne
+				["races"] = { NIGHTBORNE },
 			}),
 		}),
 	}),

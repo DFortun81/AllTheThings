@@ -619,7 +619,7 @@ _.Zones =
 				}),
 				q(9425, {	-- Report to Tarren Mill
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elves
+					["races"] = { BLOODELF },
 				}),
 				q(1067,  {	-- Return to Thunder Bluff
 					["u"] = REMOVED_FROM_GAME,

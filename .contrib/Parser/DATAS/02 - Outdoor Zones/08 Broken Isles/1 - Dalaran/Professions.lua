@@ -105,15 +105,11 @@ _.Zones =
 					q(39566, {	-- The Search for Knowledge
 						["provider"] = { "n", 92458 },	-- Deucus Valdera
 						["classes"] = {	-- not sure if this is a breadcrumb, or if it's mandatory for the classes/races below!
-							12,	-- Demon Hunter
-							5,	-- Priest
-							4,	-- Rogue
+							DEMONHUNTER,
+							PRIEST,
+							ROGUE,
 						},
-						["races"] = {
-							4,	-- Night Elf
-							29,	-- Void Elf
-							22,	-- Worgen
-						},
+						["races"] = { NIGHELF, VOIDELF, WORGEN },
 					}),
 					q(39327, {	-- There's a Scribe for That
 						["sourceQuests"] = { 39390 },	-- A Mysterious Text

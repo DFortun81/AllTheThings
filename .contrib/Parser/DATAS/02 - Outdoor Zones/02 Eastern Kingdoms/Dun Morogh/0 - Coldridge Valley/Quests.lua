@@ -36,7 +36,7 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 37087 },	-- Jona Ironstock
 						["coord"] = { 61.4, 19.4, 427 },
-						["races"] = { 3 },	-- Dwarf
+						["races"] = { DWARF },
 						["classes"] = { MAGE },
 					}),
 					q(24493, {	-- Don't Forget About Us
@@ -57,21 +57,21 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 37087 },	-- Jona Ironstock
 						["coord"] = { 61.4, 19.4, 427 },
-						["races"] = { 3 },	-- Dwarf
+						["races"] = { DWARF },
 						["classes"] = { MONK },
 					}),
 					q(3109,  {	-- Encrypted Rune
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 37087 },	-- Jona Ironstock
 						["coord"] = { 61.4, 19.4, 427 },
-						["races"] = { 3, 7 },	-- Dwarf, Gnome
+						["races"] = { DWARF, GNOME },
 						["classes"] = { ROGUE },
 					}),
 					q(24532, {	-- Evisceratin' the Enemy
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 916 },	-- Solm Hargin
 						["coord"] = { 59.5, 20.4, 427 },
-						["races"] = { 3 },	-- Dwarf
+						["races"] = { DWARF },
 						["classes"] = { ROGUE },
 						["sourceQuest"] = 3109,	-- Encrypted Rune
 					}),
@@ -163,7 +163,7 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 837 },	-- Branstock Khalder
 						["coord"] = { 60.7, 14.6, 427 },
-						["races"] = { 3 },	-- Dwarf
+						["races"] = { DWARF },
 						["classes"] = { PRIEST },
 					}),
 				}),
