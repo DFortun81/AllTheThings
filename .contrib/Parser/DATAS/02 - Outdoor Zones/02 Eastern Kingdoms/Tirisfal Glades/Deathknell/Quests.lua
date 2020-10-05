@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -38,7 +39,7 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
 						["races"] = { 5 },	-- undead
-						["classes"] = { 4 },	-- rogue
+						["classes"] = { ROGUE },
 					}),
 					q(24959, {	-- Fresh out of the Grave
 						["provider"] = { "n", 49044 },	-- Agatha
@@ -48,7 +49,7 @@ _.Zones =
 					q(5650,  {	-- Garments of Darkness
 						["u"] = REMOVED_FROM_GAME,
 						["races"] =  { 5 },	-- Undead
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(16607)),	-- Garments of Darkness
 						},
@@ -57,14 +58,14 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
 						["sourceQuests"] = { 26800 },	-- Recruitment
-						["classes"] = { 8 },	-- mage
+						["classes"] = { MAGE },
 						["races"] = { 5 },	-- undead
 					}),
 					q(3097,  {	-- Hallowed Scroll
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
 						["sourceQuests"] = { 26800 },	-- Recruitment
-						["classes"] = { 5 },	-- priest
+						["classes"] = { PRIEST },
 						["races"] = {
 							5,	-- Undead
 							10,	-- Blood Elf
@@ -74,7 +75,7 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2124 },	-- Isabella
 						["sourceQuests"] = { 3098 },	-- Glyphic Scroll
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["races"] = { 5 },	-- Undead
 					}),
 					q(6395, {	-- Marla's Last Wish
@@ -116,7 +117,7 @@ _.Zones =
 						["provider"] = { "n", 2123 },	-- Dark Cleric Duesten
 						["sourceQuests"] = { 3097 },	-- Hallowed Scroll
 						["races"] = { 5 },	-- undead
-						["classes"] = { 5 },	-- priest
+						["classes"] = { PRIEST },
 					}),
 					q(3901, {	-- Rattling the Rattlecages
 						["u"] = REMOVED_FROM_GAME,
@@ -153,13 +154,13 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
 						["races"] = { 5 },	-- undead
-						["classes"] = { 1 },	-- warrior
+						["classes"] = { WARRIOR },
 					}),
 					q(3099,  {	-- Tainted Scroll
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
 						["races"] = { 5 },	-- undead
-						["classes"] = { 9 },	-- warlock
+						["classes"] = { WARLOCK },
 					}),
 					q(376,   {	-- The Damned
 						["u"] = REMOVED_FROM_GAME,

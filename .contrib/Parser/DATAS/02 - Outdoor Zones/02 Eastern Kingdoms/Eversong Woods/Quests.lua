@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -120,7 +121,7 @@ _.Zones =
 					["provider"] = { "n", 15970 },	-- Instructor Antheol
 					["coord"] = { 55.7, 54.5, 94 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(8884,  {	-- Fish Heads, Fish Heads...
 					["provider"] = { "n", 15920 },	-- Hathvelion Sungaze
@@ -215,7 +216,7 @@ _.Zones =
 					["provider"] = { "n", 15970 },	-- Instructor Antheol
 					["coord"] = { 55.7, 54.5, 94 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["sourceQuest"] = 9403,	-- The Purest Water
 					["g"] = {
 						i(9513),	-- Ley Staff
@@ -237,7 +238,7 @@ _.Zones =
 				q(9691, {	-- Return to Silvermoon
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17807 },	-- Master Kelerun Bloodmourn
 					["sourceQuest"] = 9686,	-- The Second Trial
 				}),
@@ -281,7 +282,7 @@ _.Zones =
 				q(9677, {	-- Summons from Knight-Lord Bloodvalor
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 16275 },	-- Noellene
 				}),
 				q(9066,  {	-- Swift Discipline
@@ -328,7 +329,7 @@ _.Zones =
 				q(9403,  {	-- The Purest Water
 					["provider"] = { "n", 15970 },	-- Instructor Antheol
 					["coord"] = { 55.7, 54.5, 94 },
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9402,	-- Fetch!
 				}),
@@ -347,7 +348,7 @@ _.Zones =
 				q(9686, {	-- The Second Trial
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17807 },	-- Master Kelrun Bloodmourn
 					["sourceQuest"] = 9690,	-- The Second Trial
 				}),

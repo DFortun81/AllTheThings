@@ -10,7 +10,7 @@ _.Zones =
 				o(248854, {	-- Desmond's Lockbox
 					["questID"] = 41929,
 					["coord"] = { 28.7, 64.4, 627 },
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 				}),
 			}),
 		}),

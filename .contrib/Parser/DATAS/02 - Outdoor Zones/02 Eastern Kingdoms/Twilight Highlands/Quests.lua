@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -1784,7 +1785,7 @@ _.Zones =
 				}),
 				ql(q(29934, {	-- To Ravenholdt
 					["provider"] = { "n", 55488 },	-- Corastrasza
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["sourceQuests"] = { 29802 },	-- A Hidden Message
 				})),
 				q(27299, {	-- Torn Ground

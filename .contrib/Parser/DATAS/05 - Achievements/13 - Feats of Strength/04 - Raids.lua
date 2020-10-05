@@ -2,7 +2,6 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
--- TODO: replace class numbers with names
 _.Achievements =
 {
 	n(-9969, {	-- Feats of Strength
@@ -60,11 +59,11 @@ _.Achievements =
 					un(REMOVED_FROM_GAME, ach(7485)),		-- Cutting Edge: Will of the Emperor
 					un(REMOVED_FROM_GAME, ach(11191)),		-- Cutting Edge: Xavius
 					ach(5839, {				-- Dragonwrath, Tarecgosa's Rest
-						["classes"] = {5,7,8,9,10,11},
+						["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, MONK, DRUID },
 					}),
 					un(9, ach(11744)),		-- Drop Dead, Gorgeous
 					ach(6181, {				-- Fangs of the Father
-						["classes"] = {4},
+						["classes"] = { ROGUE },
 					}),
 					un(REMOVED_FROM_GAME, ach(3004)),		-- He Feeds On Your Tears (10 player)
 					un(REMOVED_FROM_GAME, ach(3005)),		-- He Feeds On Your Tears (25 player)
@@ -75,31 +74,31 @@ _.Achievements =
 					un(REMOVED_FROM_GAME, ach(8089)),		-- I Thought He Was Supposed to Be Hard?
 					ach(11869, {			-- I'll Hold These For You Until You Get Out
 						i(150372, {				-- Arsenal: The Warglaives of Azzinoth
-							["classes"] = {12},
+							["classes"] = { DEMONHUNTER },
 						}),
 					}),
 					ach(4623, {				-- Shadowmourne
-						["classes"] = {1,2,6},
+						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 					}),
 					ach(429, {				-- Sulfuras, Hand of Ragnaros
-						["classes"] = {1,2,6},
+						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 					}),
 					un(REMOVED_FROM_GAME, ach(11387, {		-- The Chosen
 						un(REMOVED_FROM_GAME, title(347)),	-- the Chosen
 					})),
 					un(REMOVED_FROM_GAME, ach(2496)),		-- The Fifth Element
 					ach(725, {				-- Thori'dal, the Stars' Fury
-						["classes"] = {3},
+						["classes"] = { HUNTER },
 					}),
 					ach(428, {				-- Thunderfury, Blessed Blade of the Windseeker
-						["classes"] = {4,10,12},
+						["classes"] = { ROGUE, MONK, DEMONHUNTER },
 					}),
 					un(REMOVED_FROM_GAME, ach(9680)),		-- Time is a Flat Circle
 					ach(3142, {				-- Val'anyr, Hammer of Ancient Kings
-						["classes"] = {2,5,7,10,11},
+						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
 					}),
 					ach(426, {				-- Warglaives of Azzinoth
-						["classes"] = {1,4,6,10,12},
+						["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, MONK, DEMONHUNTER },
 					}),
 				},
 			}),

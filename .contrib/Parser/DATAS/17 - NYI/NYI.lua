@@ -120,23 +120,23 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, ach(13995)),	-- Twilight over the White City
 	}),
 	n(-220, {	-- Class
-		cl(12, {	-- DH
+		cl(DEMONHUNTER, {
 			un(NEVER_IMPLEMENTED, i(129738)),	-- Verus
 		}),
-		cl(3, {	-- Hunter
+		cl(HUNTER, {
 			un(NEVER_IMPLEMENTED, i(147770)),	-- Tome of the PTR Beast
 		}),
-		cl(8, {	-- Mage
+		cl(MAGE, {
 			un(NEVER_IMPLEMENTED, i(44600)),	-- Tome of Polymorph: Serpent (Never made it out of beta)
 			un(NEVER_IMPLEMENTED, i(44811)),	-- Tome of Polymorph: Turkey
 		}),
-		cl(7, {	-- Shaman
+		cl(SHAMAN, {
 			un(NEVER_IMPLEMENTED, i(136971)),	-- Tome of Hex: Snake
 		}),
 	}),
 	n(-163, {	-- Armor
 		n(-43, {	-- Cloth
-			cl(8, {	-- Mage
+			cl(MAGE, {
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				un(NEVER_IMPLEMENTED, i(150651)),	-- Mountainsage Cord
 				un(NEVER_IMPLEMENTED, i(77780)),	-- Replica Lieutenant Commander's Silk Mantle
@@ -193,7 +193,7 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(88254)),	-- gladiators silk robe
 				un(NEVER_IMPLEMENTED, i(88255)),	-- gladiators silk trousers
 			}),
-			cl(5, {	-- Priest
+			cl(PRIEST, {
 				un(NEVER_IMPLEMENTED, i(46230)),    -- Circlet of Sanctification
 				un(NEVER_IMPLEMENTED, i(46231)),    -- Cowl of Sanctification
 				un(NEVER_IMPLEMENTED, i(46247)),    -- Gloves of Sanctification
@@ -292,7 +292,7 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(153941)), -- Communal Mantle
 				un(NEVER_IMPLEMENTED, i(153935)), -- Communal Communal Cloak of Destruction
 			}),
-			cl(9, {	-- Warlock
+			cl(WARLOCK, {
 				un(NEVER_IMPLEMENTED, i(32093)),	-- Chancellor's Dreadweave Gloves
 				un(NEVER_IMPLEMENTED, i(32094)),	-- Chancellor's Dreadweave Hood
 				un(NEVER_IMPLEMENTED, i(32095)),	-- Chancellor's Dreadweave Legs
@@ -478,7 +478,7 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(114301)),	-- Axebreak Darkcloak
 		}),
 		n(-44, {	-- Leather
-			cl(11, {	-- Druid
+			cl(DRUID, {
 				un(NEVER_IMPLEMENTED, i(77751)),	-- Replicate Knight Captains Dragonhide Chestpiece
 				un(NEVER_IMPLEMENTED, i(48769)),	-- Runetotem's Handguards of Conquest
 				un(NEVER_IMPLEMENTED, i(48770)),	-- Runetotem's Headpiece of Conquest
@@ -566,7 +566,7 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(96225)), -- Breeches of the Haunted Forest
 				un(NEVER_IMPLEMENTED, i(96226)), -- Shoulderguards of the Haunted Forest
 			}),
-			cl(4, {	-- Rogue
+			cl(ROGUE, {
 				un(NEVER_IMPLEMENTED, i(48804)),	-- Garona's Breastplate of Conquest
 				un(NEVER_IMPLEMENTED, i(48805)),	-- Garona's Gauntlets of Conquest
 				un(NEVER_IMPLEMENTED, i(48806)),	-- Garona's Helmet of Conquest
@@ -604,7 +604,7 @@ _.NeverImplemented =
 				-- Transmog set item that never became available
 				un(NEVER_IMPLEMENTED, i(130327)),	-- Artful Britches
 			}),
-			cl(10, {	-- Monk
+			cl(MONK, {
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
 				un(NEVER_IMPLEMENTED, i(97011)), -- Fire-Charm Tunic
 				un(NEVER_IMPLEMENTED, i(97012)), -- Fire-Charm Grips
@@ -790,7 +790,7 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(120363)),	-- Unknown
 		}),
 		n(-45, {	-- Mail
-			cl(7, {	-- Shaman
+			cl(SHAMAN, {
 				un(NEVER_IMPLEMENTED, i(157725)),	-- Totem Caller Coif (Sham Future Boost Gear)
 				un(NEVER_IMPLEMENTED, i(157727)),	-- Totem Caller Pauldrons (Sham Future Boost Gear)
 				un(NEVER_IMPLEMENTED, i(32138)),	-- Chancellor's Linked Armor
@@ -980,7 +980,7 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(123350)),	-- Stormseeker gordöe
 				un(NEVER_IMPLEMENTED, i(123351)),	-- Stormseeker bracers
 			}),
-			cl(3, {	-- Hunter
+			cl(HUNTER, {
 				un(NEVER_IMPLEMENTED, i(32133)),	-- Chancellor's Chain Armor
 				un(NEVER_IMPLEMENTED, i(32134)),	-- Chancellor's Chain Gauntlets
 				un(NEVER_IMPLEMENTED, i(32135)),	-- Chancellor's Chain Helm
@@ -1199,7 +1199,7 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(37454)),	-- HF28 Mail Physical Chest4
 		}),
 		n(-46, {	-- Plate
-			cl(6, {	-- DK
+			cl(DEATHKNIGHT, {
 				un(NEVER_IMPLEMENTED, i(48880)),	-- Koltira's Battleplate of Conquest
 				un(NEVER_IMPLEMENTED, i(48881)),	-- Koltira's Gauntlets of Conquest
 				un(NEVER_IMPLEMENTED, i(48882)),	-- Koltira's Helmet of Conquest
@@ -1252,7 +1252,7 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(96205)), -- Legguards of the All-Consuming Maw
 				un(NEVER_IMPLEMENTED, i(96206)), -- Shoulderguards of the All-Consuming Maw
 			}),
-			cl(2, {	-- Paladin
+			cl(PALADIN, {
 				un(NEVER_IMPLEMENTED, i(48905)),	-- Liadrin's Tunic of Conquest
 				un(NEVER_IMPLEMENTED, i(48906)),	-- Liadrin's Spaulders of Conquest
 				un(NEVER_IMPLEMENTED, i(48907)),	-- Liadrin's Headpiece of Conquest
@@ -1321,7 +1321,7 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(96295)), -- Lightning Emperor's Legguards
 				un(NEVER_IMPLEMENTED, i(96296)), -- Lightning Emperor's Shoulderguards
 			}),
-			cl(1, {	-- Warrior
+			cl(WARRIOR, {
 				un(NEVER_IMPLEMENTED, i(48860)),	-- Hellscream's Battleplate of Conquest
 				un(NEVER_IMPLEMENTED, i(48861)),	-- Hellscream's Gauntlets of Conquest
 				un(NEVER_IMPLEMENTED, i(48862)),	-- Hellscream's Helmet of Conquest

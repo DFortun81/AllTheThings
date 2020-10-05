@@ -1,7 +1,7 @@
-
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.WorldEvents =
 {
 	n(-520, { 	-- Expansion Prelaunch Events
@@ -13,7 +13,7 @@ _.WorldEvents =
 				["g"] = {
 					n(QUESTS, {
 						-- Attaching the quests to each zone that is involved in the "War of the Thorns" Campaign.  Excluding Undercity, Stomrwind and Northern Barrens due to only one quest taking place in these zones and it's not relevant to link for just the one.
-						["maps"] = { 
+						["maps"] = {
 							63,	-- Ashenvale
 							89,	-- Darnassus
 							62,	-- Darkshore
@@ -29,7 +29,7 @@ _.WorldEvents =
 								["provider"] = { "n", 134578 },	-- Captain Delaryn Summermoon
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 52257 },	-- "Rock" The World
-							}),	
+							}),
 							q(52058, {	-- A Short-Lived Peace
 								["races"] = ALLIANCE_ONLY,
 							}),
@@ -39,8 +39,8 @@ _.WorldEvents =
 								["sourceQuests"] = {
 									52072,	-- The Light of Elune
 									53616,	-- Knives of the Forsaken
-								}, 
-							}),	
+								},
+							}),
 							q(53619, {	-- Azerite Denial
 								["provider"] = { "n", 134578 },	-- Captain Delaryn Summermoon
 								["races"] = ALLIANCE_ONLY,
@@ -55,15 +55,15 @@ _.WorldEvents =
 								["provider"] = { "n", 33072 },	-- Onu <Ancient of Lore>
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 52240 },	-- Garden Grove
-							}),	
+							}),
 							q(52240, {	-- Garden Grove
 								["provider"] = { "n", 134578 },	-- Captain  Delaryn Summermoon
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuests"] = { 
+								["sourceQuests"] = {
 									52234,	-- Hidden Amongst the Leaves
 									53617,	-- Mercy for the Mad
-								}, 
-							}),	
+								},
+							}),
 							q(52234, {	-- Hidden Amongst the Leaves
 								["provider"] = { "n", 133693 },	-- Malfurion Stormrage
 								["races"] = ALLIANCE_ONLY,
@@ -73,7 +73,7 @@ _.WorldEvents =
 								["provider"] = { "n", 134578 },	-- Captain Delaryn Summermoon
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 52062 },	-- A Disturbancee in Ashenvale
-							}),	
+							}),
 							q(52197, {	-- Long Away
 								["provider"] = { "n", 133693 },	-- Malfurion Stormrage
 								["races"] = ALLIANCE_ONLY,
@@ -82,21 +82,21 @@ _.WorldEvents =
 							q(52256, {	-- Malfurion Returns
 								["provider"] = { "n", 134578 },	-- Captain Delaryn Summermoon
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuests"] = { 
+								["sourceQuests"] = {
 									53619,	-- Azerite Denial
 									53621,	-- No Horde Allowed
 								},
-							}),	
+							}),
 							q(52060, {	-- The Horde Uprising
 								["provider"] = { "n", 107574 },	-- Anduin Wrynn
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 52058 },	-- A Short-Lived Pace
-							}),	
+							}),
 							q(53617, {	-- Mercy for the Mad
 								["provider"] = { "n", 133693 },	-- Malfurion Stormrage
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 52116 },	-- A Soft Glow
-							}),	
+							}),
 							q(53621, {	-- No Horde Allowed
 								["provider"] = { "n", 134578 },	-- Captain Delaryn Summermoon
 								["races"] = ALLIANCE_ONLY,
@@ -106,19 +106,19 @@ _.WorldEvents =
 								["provider"] = { "n", 133693 },	-- Malfurion Stormrage
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 52256 },	-- Malufrion Returns
-							}),	
+							}),
 							q(52072, {	-- The Light of Elune
 								["provider"] = { "n", 134578 },	-- Captain Delaryn Summermoon
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 52062 },	-- A Disturbancee in Ashenvale
-							}),	
+							}),
 							q(52242, {	-- The Wake of Something New
 								["provider"] = { "n", 33072 },	-- Onu <Ancient of Lore>
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {
 									52245,	-- Enraged Furblogs
 									53551,	-- Elves in the Machine
-								}, 
+								},
 							}),
 							q(52220, {	-- Dragon Attack
 								["u"] = NEVER_IMPLEMENTED,
@@ -129,50 +129,50 @@ _.WorldEvents =
 							q(52973, {	-- A Threat From the North
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 52279 },	-- A Looming Threat
-							}),	
+							}),
 							q(52974, {	-- Rescue Effort
 								["provider"] = { "n", 140877 },	-- Malfurion Stormrage
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 52973 },	-- A Threat From the North
-							}),	
+							}),
 							q(53622, {	-- Defending Lor'danel
 								["provider"] = { "n", 140877 },	-- Malfurion Stormrage
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 52973 },	-- A Threat From the North
-							}),	
+							}),
 							q(52975, {	-- Action This Day
 								["provider"] = { "n", 134578 },	-- Captain Delaryn Summermoon
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 52973 },	-- A Threat From the North
-							}),	
+							}),
 							q(52977, {	-- The Guidance of Our Shan'do
 								["provider"] = { "n", 134578 },	-- Captain Delaryn Summermoon
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuests"] = { 
+								["sourceQuests"] = {
 									52974,	-- Rescue Effort
 									53622,	-- Defending Lor'danel
 									52975,	-- Action This Day
 								},
-							}),	
+							}),
 							q(53095, {	-- A Flicker of Hope
 								["provider"] = { "n", 142978 },	-- Mia Greymane <Queen of Gilneas>
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 52977 },	-- The Guidance of Our Shan'do
 								["description"] = "You do not have to save all 982 people.  Once timer runs out this quest is removed and next one is auto-accepted.",
-							}),	
+							}),
 							q(53310, {	-- From the Ashes… [Note: Final Quest for Part 2]
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 53095 },	-- A Flicker of Hope
 								["description"] = "Upon either failing or completing \"A Flicker of Hope\" this quest is auto-accepted",
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(163127)),	-- Smoldering Reeins of the Teldrassil Hippogryph
-								}, 
-							}),	
+								},
+							}),
 							-- Horde Part I
 							q(53627, {	-- A Gift of Azerite
 								["provider"] = { "n", 144346 },	-- Jux Burstkix
 								["races"] = HORDE_ONLY,
-								["sourceQuests"] = { 
+								["sourceQuests"] = {
 									53608,	-- Fueling the Horde War Machine
 									53609,	-- A Very Clear Message
 								},
@@ -181,7 +181,7 @@ _.WorldEvents =
 								["provider"] = { "n", 134554 },	-- Lady Sylvanas Windrunner
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 50880 },	-- An Unstoppable Force
-							}),	
+							}),
 							q(52806, {	-- A Looming Threat [Note: Final Quest for Part 1]
 								["provider"] = { "n", 134554 },	-- Lady Sylvanas Windrunner
 								["races"] = HORDE_ONLY,
@@ -191,17 +191,17 @@ _.WorldEvents =
 								["provider"] = { "n", 134574 },	-- High Overlord Saurfang
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 50642 },	-- The Warchief Commands
-							}),	
+							}),
 							q(50837, {	-- A Quick Flyover
 								["provider"] = { "n", 134554 },	-- Lady Sylvanas Windrunner
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 50823 },	-- Ripe for the Picking
-							}),	
+							}),
 							q(50738, {	-- A Timely Arrival
 								["provider"] = { "n", 134573 },	-- Lorash
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 50647 },	-- Everybody Has a Price
-							}),	
+							}),
 							q(53609, {	-- A Very Clear Message
 								["provider"] = { "n", 144346 },	-- Jux Burstkix
 								["races"] = HORDE_ONLY,
@@ -211,7 +211,7 @@ _.WorldEvents =
 								["provider"] = { "n", 135003 },	-- Lady Sylvanas Windrunner
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 52436 },	-- The Blackwood Den
-							}),	
+							}),
 							q(52438, {	-- A Wild Ride
 								["provider"] = { "n", 135501 },	-- Zarvik Blastwix
 								["races"] = HORDE_ONLY,
@@ -229,12 +229,12 @@ _.WorldEvents =
 									53604,	-- Clearing Them Out
 									53605,	-- A Glaive Misunderstanding
 								},
-							}),	
+							}),
 							q(53604, {	-- Clearing Them Out
 								["provider"] = { "n", 134554 },	-- Lady Sylvanas Windrunner
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 50880 },	-- An Unstoppable Force
-							}),	
+							}),
 							q(50647, {	-- Everybody Has a Price
 								["provider"] = { "n", 134573 },	-- Lorash
 								["races"] = HORDE_ONLY,
@@ -249,12 +249,12 @@ _.WorldEvents =
 								["provider"] = { "n", 134554 },	-- Lady Sylvanas Windrunner
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 50772 },	-- On The Prowl
-							}),	
+							}),
 							q(50772, {	-- On The Prowl
 								["provider"] = { "n", 134574 },	-- High Overlord Saurfang
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 50740 },	-- Zoram'gar Outpost
-							}),	
+							}),
 							q(50823, {	-- Ripe for the Picking
 								["provider"] = { "n", 134554 },	-- Lady Sylvanas Windrunner
 								["races"] = HORDE_ONLY,
@@ -264,20 +264,20 @@ _.WorldEvents =
 								["provider"] = { "n", 135003 },	-- Lady Sylvanas Windrunner
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 50879 },	-- The Trees Have Ears
-							}),	
+							}),
 							q(52437, {	-- The Start of Something Good
 								["provider"] = { "n", 135003 },	-- Lady Sylvanas Windrunner
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = {
 									52436,	-- The Blackwood Den
 									53606,	-- Aggressive Inspiration
-								}, 
-							}),	
+								},
+							}),
 							q(50879, {	-- The Trees Have Ears
 								["provider"] = { "n", 135003 },	-- Lady Sylvanas Windrunner
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 50878 },	-- Blurred Vision
-							}),	
+							}),
 							q(50476, {	-- The Warchief Awaits
 								["races"] = HORDE_ONLY,
 							}),
@@ -285,12 +285,12 @@ _.WorldEvents =
 								["provider"] = { "n", 134554 },	-- Lady Sylvanas Windrunner
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 50476 },	-- The Warchief Awaits
-							}),	
+							}),
 							q(50740, {	-- Zoram'gar Outpost
 								["provider"] = { "n", 135003 },	-- Lady Sylvanas Windrunner
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 50738 },	-- A Timely Arrival
-							}),	
+							}),
 							q(53550, {	-- A Change in Leadership
 								["u"] = NEVER_IMPLEMENTED,
 								["races"] = HORDE_ONLY,
@@ -300,22 +300,22 @@ _.WorldEvents =
 							q(52967, {	-- Saurfang Returns
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 52806 },	-- A Looming Threat
-							}),	
+							}),
 							q(52970, {	-- No Small Mercy
 								["provider"] = { "n", 142310 },	-- High Overlord Saurfang
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 52967 },	-- Saurfang Returns
-							}),	
+							}),
 							q(52971, {	-- Seaside Rendezvous
 								["provider"] = { "n", 142310 },	-- High Overlord Saurfang
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 52967 },	-- Saurfang Returns
-							}),	
+							}),
 							q(53610, {	-- Driving Them Out
 								["provider"] = { "n", 142310 },	-- High Overlord Saurfang
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 52967 },	-- Saurfang Returns
-							}),	
+							}),
 							q(52981, {	-- Killer Queen [Note: Final Quest for Part 2]
 								["provider"] = { "n", 142310 },	-- High Overlord Saurfang
 								["races"] = HORDE_ONLY,
@@ -323,7 +323,7 @@ _.WorldEvents =
 									52970,	-- No Small Mercy
 									52971,	-- Seaside Rendezvous
 									53610,	-- Driving Them Out
-								}, 
+								},
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(163128)),	-- War-Torn Reins of the Undercity Plaguebat
 								},
@@ -417,7 +417,7 @@ _.WorldEvents =
 									}),
 								}),
 							}),
-							cl(5, {	-- Priest
+							cl(PRIEST, {
 								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162830),	-- Faithsworn Armwraps
 									i(162827),	-- Faithsworn Frock
@@ -430,7 +430,7 @@ _.WorldEvents =
 									i(162823),	-- Faithsworn Treads
 								}),
 							}),
-							cl(8, {	-- Mage
+							cl(MAGE, {
 								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162805),	-- Spell-Splintered Cord
 									i(162801),	-- Spell-Splintered Cowl
@@ -443,7 +443,7 @@ _.WorldEvents =
 									i(162806),	-- Spell-Splintered Wristwraps
 								}),
 							}),
-							cl(9, {	-- Warlock
+							cl(WARLOCK, {
 								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162853),	-- Unshackled Belt
 									i(162849),	-- Unshackled Crown
@@ -456,7 +456,7 @@ _.WorldEvents =
 									i(162854),	-- Unshackled Wrappings
 								}),
 							}),
-							cl(11, {	-- Druid
+							cl(DRUID, {
 								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162789),	-- Rootweave Binding
 									i(162787),	-- Rootweave Britches
@@ -471,7 +471,7 @@ _.WorldEvents =
 									i(162790),	-- Rootweave Wraps
 								}),
 							}),
-							cl(4, {	-- Rogue
+							cl(ROGUE, {
 								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162835),	-- Ambuscade Breeches
 									i(163000),	-- Ambuscade Dagger
@@ -485,7 +485,7 @@ _.WorldEvents =
 									i(162831),	-- Ambuscade Tunic
 								}),
 							}),
-							cl(10, {	-- Monk
+							cl(MONK, {
 								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162808),	-- Serene Disciple's Anklewraps
 									i(162813),	-- Serene Disciple's Cord
@@ -500,7 +500,7 @@ _.WorldEvents =
 									i(162811),	-- Serene Disciple's Wrappings
 								}),
 							}),
-							cl(12, {	-- Demon Hunter
+							cl(DEMONHUNTER, {
 								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(163226),	-- Felbound Armguards
 									i(163237),	-- Felbound Armguards
@@ -521,7 +521,7 @@ _.WorldEvents =
 									i(163072),	-- Felbound Warglaive
 								}),
 							}),
-							cl(3, {	-- Hunter
+							cl(HUNTER, {
 								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162792),	-- Wildguard Boots
 									i(162798),	-- Wildguard Bracers
@@ -535,7 +535,7 @@ _.WorldEvents =
 									i(162797),	-- Wildguard Studded Belt
 								}),
 							}),
-							cl(7, {	-- Shaman
+							cl(SHAMAN, {
 								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162839),	-- Earthpyre Chain Shirt
 									i(163004),	-- Earthpyre Claws
@@ -551,7 +551,7 @@ _.WorldEvents =
 									i(162846),	-- Earthpyre Wristguards
 								}),
 							}),
-							cl(2, {	-- Paladin
+							cl(PALADIN, {
 								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162818),	-- Sacrosanct Barbute
 									i(162815),	-- Sacrosanct Breastplate
@@ -567,7 +567,7 @@ _.WorldEvents =
 									i(162995),	-- Sacrosanct Warmaul
 								}),
 							}),
-							cl(1, {	-- Warrior
+							cl(WARRIOR, {
 								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(163169),	-- Bladeplate Barrier
 									i(163007),	-- Bladeplate Battleaxe
@@ -582,7 +582,7 @@ _.WorldEvents =
 									i(162861),	-- Bladeplate Waistguard
 								}),
 							}),
-							cl(6, {	-- Death Knight
+							cl(DEATHKNIGHT, {
 								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
 									i(162782),	-- Gravewalker's Bindings
 									i(162775),	-- Gravewalker's Chestplate

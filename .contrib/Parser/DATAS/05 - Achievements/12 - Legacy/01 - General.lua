@@ -69,7 +69,7 @@ _.Achievements =
 					un(REMOVED_FROM_GAME, ach(2358, {		-- Charger
 						["groups"] = {
 						},
-						["classes"] = { 2 },
+						["classes"] = { PALADIN },
 					})),
 					un(REMOVED_FROM_GAME, h(ach(8307, {	-- Darkspear Revolutionary
 						un(REMOVED_FROM_GAME, h(title(228))),	-- Darkspear Revolutionary
@@ -116,7 +116,7 @@ _.Achievements =
 					un(REMOVED_FROM_GAME, ach(2357, {		-- Dreadsteed of Xoroth
 						["groups"] = {
 						},
-						["classes"] = { 9 },
+						["classes"] = { WARLOCK },
 					})),
 					un(REMOVED_FROM_GAME, ach(2716)),		-- Dual Talent Specialization
 					un(REMOVED_FROM_GAME, ach(7315)),		-- Eternally in the Vale
@@ -138,7 +138,7 @@ _.Achievements =
 							crit(3),			-- Slay God-Hulk Gulkan
 							crit(4),			-- Reach Tenwu of the Red Smoke
 						},
-						["classes"] = { 4 },
+						["classes"] = { ROGUE },
 					}),
 					un(REMOVED_FROM_GAME, ach(2923)),		-- Iron Dwarf, Medium Rare (10 player)
 					un(REMOVED_FROM_GAME, ach(2924)),		-- Iron Dwarf, Medium Rare (25 player)
@@ -175,17 +175,17 @@ _.Achievements =
 					un(REMOVED_FROM_GAME, ach(2359, {		-- Swift Flight Form
 						["groups"] = {
 						},
-						["classes"] = { 11 },
+						["classes"] = { DRUID },
 					})),
 					un(REMOVED_FROM_GAME, ach(11296, {		-- The Ancient Keeper
 						["groups"] = {
 						},
-						["classes"] = { 3 },
+						["classes"] = { HUNTER },
 					})),
 					un(REMOVED_FROM_GAME, ach(11297, {		-- The Balance of Light and Shadow
 						["groups"] = {
 						},
-						["classes"] = { 5 },
+						["classes"] = { PRIEST },
 					})),
 					un(REMOVED_FROM_GAME, a(ach(7940))),	-- The Second Rule of Brawler's Guild (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
 					un(REMOVED_FROM_GAME, h(ach(7939))),	-- The Second Rule of Brawler's Guild (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**

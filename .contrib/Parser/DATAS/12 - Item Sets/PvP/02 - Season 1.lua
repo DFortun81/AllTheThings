@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
+
 _.GearSets =
 {
 	n(-4189, {	-- PvP Item Sets
@@ -29,7 +30,7 @@ _.GearSets =
 							i(32975),	-- General's Mooncloth Slippers
 						}),
 					},
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 				}),
 				gs(975, {	-- Gladiator's Silk Armor
 					["groups"] = {
@@ -41,7 +42,7 @@ _.GearSets =
 						i(25858),	-- Gladiator's Silk Trousers
 						i(28410),	-- General's Silk Footguards
 					},
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 				}),
 				gs(970, {	-- Gladiator's Felweave Armor
 					["groups"] = {
@@ -54,7 +55,7 @@ _.GearSets =
 						i(30201),	-- Gladiator's Felweave Trousers
 						i(147616),	-- General's Felweave Boots
 					},
-					["classes"] = { 9 },
+					["classes"] = { WARLOCK },
 				}),
 				gs(977, {	-- Gladiator's Dragonhide Armor
 					["groups"] = {
@@ -86,7 +87,7 @@ _.GearSets =
 							i(31595),	-- General's Kodohide Boots
 						}),
 					},
-					["classes"] = { 11 },
+					["classes"] = { DRUID },
 				}),
 				gs(972, {	-- Gladiator's Leather Armor
 					["groups"] = {
@@ -98,7 +99,7 @@ _.GearSets =
 						i(25833),	-- Gladiator's Leather Legguards
 						i(28422),	-- General's Leather Boots
 					},
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 				}),
 				gs(976, {	-- Gladiator's Chain Armor
 					["groups"] = {
@@ -110,7 +111,7 @@ _.GearSets =
 						i(28332),	-- Gladiator's Chain Leggings
 						i(28449),	-- General's Chain Sabatons
 					},
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 				}),
 				gs(971, {	-- Gladiator's Ringmail Armor
 					["groups"] = {
@@ -142,7 +143,7 @@ _.GearSets =
 							i(32993),	-- Generals Ringmail Sabatons
 						}),
 					},
-					["classes"] = { 7 },
+					["classes"] = { SHAMAN },
 				}),
 				gs(974, {	-- Gladiator's Scaled Armor
 					["groups"] = {
@@ -174,7 +175,7 @@ _.GearSets =
 							i(28645),	-- General's Scaled Greaves
 						}),
 					},
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 				}),
 				gs(381, {	-- Gladiator's Plate Armor
 					["groups"] = {
@@ -186,7 +187,7 @@ _.GearSets =
 						i(24547),	-- Gladiator's Plate Legguards
 						i(28383),	-- General's Plate Greaves
 					},
-					["classes"] = { 1 },
+					["classes"] = { WARRIOR },
 				}),
 			},
 			["achievementID"] = 11706,	-- The Original

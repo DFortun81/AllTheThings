@@ -77,7 +77,7 @@ _.Instances = { tier(7, {	-- Legion
 				cr(98207, e(1500, {	-- Nal'tira
 					i(136969, {	-- Tome of Hex: Spider
 						["spellID"] = 211004,	-- Hex(Spider)
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 					}),
 					i(134472),	-- Arcane Exterminator's Shoulderguards
 					i(134410),	-- Cloak of Mana-Spun Silk
@@ -157,7 +157,7 @@ _.Instances = { tier(7, {	-- Legion
 				cr(98207, e(1500, {	-- Nal'tira
 					i(136969, {	-- Tome of Hex: Spider
 						["spellID"] = 211004,	-- Hex(Spider)
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 					}),
 					i(134472),	-- Arcane Exterminator's Shoulderguards
 					i(134410),	-- Cloak of Mana-Spun Silk

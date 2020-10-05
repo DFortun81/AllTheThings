@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -188,7 +189,7 @@ _.Zones =
 				n(119629, {	-- Lord Hel'Nurath
 					["description"] = "|cff66ccffThis mount is only available to warlocks who have completed|r |cFFFFD700The Wrathsteed of Xoroth|r |cff66ccffquest from the class mount campaign. \nOnce completed you can kill Lord Hel'Nurath for a 100% chance at getting the mount skin.|r",
 					["questID"] = 46304,	-- Rare Elite 15
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["isDaily"] = true,
 					["coord"] = { 45.0, 51.3, 646 },
 					["g"] = {

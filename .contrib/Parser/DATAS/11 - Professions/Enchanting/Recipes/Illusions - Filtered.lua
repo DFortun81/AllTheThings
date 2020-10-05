@@ -20,7 +20,7 @@ profession(ENCHANTING, {
 				},
 				{
 					["recipeID"] = 175076,--[[Illusion: Earthliving]]
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 				},
 				{
 					["recipeID"] = 173721,--[[Illusion: Elemental Force]]
@@ -33,11 +33,11 @@ profession(ENCHANTING, {
 				},
 				{
 					["recipeID"] = 175072,--[[Illusion: Flametongue]]
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 				},
 				{
 					["recipeID"] = 175071,--[[Illusion: Frostbrand]]
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 				},
 				{
 					["recipeID"] = 173719,--[[Illusion: Greater Spellpower]]
@@ -67,7 +67,7 @@ profession(ENCHANTING, {
 				},
 				{
 					["recipeID"] = 173728,--[[Illusion: Poisoned]]
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 				},
 				{
 					["recipeID"] = 173729,--[[Illusion: Power Torrent]]
@@ -77,7 +77,7 @@ profession(ENCHANTING, {
 				},
 				{
 					["recipeID"] = 175078,--[[Illusion: Rockbiter]]
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 				},
 				{
 					["recipeID"] = 173730,--[[Illusion: Spellsurge]]
@@ -90,7 +90,7 @@ profession(ENCHANTING, {
 				},
 				{
 					["recipeID"] = 175074,--[[Illusion: Windfury]]
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 				}
 			}
 		},

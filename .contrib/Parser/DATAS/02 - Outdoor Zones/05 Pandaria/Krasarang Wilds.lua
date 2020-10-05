@@ -1958,7 +1958,7 @@ _.Zones =
 							i(89401),	-- Angler's Tabard
 							i(168416),	-- Angler's Water Striders
 							i(107950, {	-- Bipsi's Bobbing Berg
-								["classes"] = { 8 },	-- Mage
+								["classes"] = { MAGE },
 								["cost"] = 10000000,	-- 1,000g
 							}),
 							i(84661),	-- Dragon Fishing Pole -- NOT MOGGABLE

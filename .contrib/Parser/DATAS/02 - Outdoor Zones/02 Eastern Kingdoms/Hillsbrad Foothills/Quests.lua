@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -157,7 +158,7 @@ _.Zones =
 				ql(q(30107, {	-- Cluster Clutch
 					["provider"] = { "n", 57777 },	-- Wrathion
 					["coord"] = { 71.4, 45.6, 25 },
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["sourceQuests"] = { 30106 },	-- The Deed is Done
 				})),
 				q(28146, {	-- Coastal Delicacies!
@@ -570,13 +571,13 @@ _.Zones =
 				ql(q(30092, {	-- Our Man in Gilneas
 					["provider"] = { "n", 57777 },	-- Wrathion
 					["coord"] = { 71.4, 45.6, 25 },
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["sourceQuests"] = { 29847 },	-- To Catch a Thief
 				})),
 				ql(q(30108, {	-- Our Man in Karazhan
 					["provider"] = { "n", 57777 },	-- Wrathion
 					["coord"] = { 71.4, 45.6, 25 },
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["sourceQuests"] = { 30107 },	-- Cluster Clutch
 				})),
 				q(28115, {	-- Past Their Prime
@@ -629,7 +630,7 @@ _.Zones =
 				ql(q(30116, {	-- Sharpening Your Fangs
 					["provider"] = { "n", 57777 },	-- Wrathion
 					["coord"] = { 71.4, 45.6, 25 },
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["sourceQuests"] = { 30113 },	-- Victory in the Depths
 				})),
 				q(28636, {	-- Silence of the Dwarves
@@ -866,7 +867,7 @@ _.Zones =
 				ql(q(29847, {	-- To Catch a Thief
 					["provider"] = { "n", 56375 },	-- Mostrasz
 					["coord"] = { 67.8, 45.2, 25 },
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["sourceQuests"] = { 29934 },	-- To Ravenholdt
 				})),
 				q(28330, {	-- Trail of Filth
@@ -968,7 +969,7 @@ _.Zones =
 				}),
 				q(1792,  {	-- Whirlwind Weapon
 					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6975)),	-- Whirlwind Axe
 						un(REMOVED_FROM_GAME, i(6977)),	-- Whirlwind Sword

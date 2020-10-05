@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -73,49 +74,49 @@ _.Zones =
 						["provider"] = { "n", 42366 },	-- Kelsey Steelspark
 						["coord"] = { 38.0, 33.6, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["sourceQuest"] = 26206,	-- The Future of Gnomeregan
 					}),
 					q(31137, {	-- Meet the High Tinker
 						["provider"] = { "n", 63238 },	-- Xi, Friend to the Small
 						["coord"] = { 40.1, 35.6, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 10 },	-- Monk
+						["classes"] = { MONK },
 						["sourceQuest"] = 31135,	-- The Future of Gnomeregan
 					}),
 					q(26422, {	-- Meet the High Tinker
 						["provider"] = { "n", 42323 },	-- "Doc" Cogspin
 						["coord"] = { 39.4, 28.4, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["sourceQuest"] = 26199,	-- The Future of Gnomeregan
 					}),
 					q(26421, {	-- Meet the High Tinker
 						["provider"] = { "n", 42331 },	-- Bipsi Frostflinger
 						["coord"] = { 41.1, 29.1, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["sourceQuest"] = 26197,	-- The Future of Gnomeregan
 					}),
 					q(26425, {	-- Meet the High Tinker
 						["provider"] = { "n", 42324 },	-- Drill Sergeant Steamcrank
 						["coord"] = { 40.6, 36.1, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["sourceQuest"] = 26203,	-- The Future of Gnomeregan
 					}),
 					q(26424, {	-- Meet the High Tinker
 						["provider"] = { "n", 460 },	-- Alamar Grimm
 						["coord"] = { 37.7, 38.0, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["sourceQuest"] = 26202,	-- The Future of Gnomeregan
 					}),
 					q(41218, {	-- Meet the High Tinker
 						["provider"] = { "n", 103614 },	-- Muffinus Chromebrew
 						["coord"] = { 41.9, 31.6, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["sourceQuest"] = 41217,	-- The Future of Gnomeregan
 					}),
 					q(26284, {	-- Missing in Action
@@ -180,7 +181,7 @@ _.Zones =
 					q(31138, {	-- The Arts of a Monk
 						["u"] = REMOVED_FROM_GAME,
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["g"] = {
 							i(59042), 	-- Electro-Staff NOTE: Item is still in game and obtainable via quest 26197 for Mages (do not flag as unobtainable), Monk quest listed here is not available upon testing
 						},
@@ -190,7 +191,7 @@ _.Zones =
 						["provider"] = { "n", 42366 },	-- Kelsey Steelspark
 						["coord"] = { 38.0, 33.5, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 					}),
 					q(26208, {	-- The Fight Continues
 						["provider"] = { "n", 42317 },	-- High Tinker Mekkatorque
@@ -210,7 +211,7 @@ _.Zones =
 						["provider"] = { "n", 42396 },	-- Nevin Twistwrench
 						["coord"] = { 39.4, 38.3, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["sourceQuest"] = 27674,	-- To the Surface
 						["g"] = {
 							i(59042),	-- Electro-Staff
@@ -220,7 +221,7 @@ _.Zones =
 						["provider"] = { "n", 42396 },	-- Nevin Twistwrench
 						["coord"] = { 39.4, 38.3, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["sourceQuest"] = 27674,	-- To the Surface
 						["g"] = {
 							i(59040),	-- Staff of the Force
@@ -230,7 +231,7 @@ _.Zones =
 						["provider"] = { "n", 42396 },	-- Nevin Twistwrench
 						["coord"] = { 39.4, 38.3, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["sourceQuest"] = 27674,	-- To the Surface
 						["g"] = {
 							i(59041),	-- Vibro Knife
@@ -240,7 +241,7 @@ _.Zones =
 						["provider"] = { "n", 42396 },	-- Nevin Twistwrench
 						["coord"] = { 39.4, 38.3, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["sourceQuest"] = 27674,	-- To the Surface
 						["g"] = {
 							i(59039),	-- Very Light Sabre
@@ -250,7 +251,7 @@ _.Zones =
 						["provider"] = { "n", 42396 },	-- Nevin Twistwrench
 						["coord"] = { 39.4, 38.3, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["sourceQuest"] = 27674,	-- To the Surface
 						["g"] = {
 							i(59043),	-- Death Star
@@ -261,14 +262,14 @@ _.Zones =
 						["provider"] = { "n", 42396 },	-- Nevin Twistwrench
 						["coord"] = { 39.4, 38.3, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 10 },	-- Monk
+						["classes"] = { MONK },
 						["sourceQuest"] = 27674,	-- To the Surface
 					}),
 					q(41217, {	-- The Future of Gnomeregan
 						["provider"] = { "n", 42396 },	-- Nevin Twistwrench
 						["coord"] = { 39.4, 38.3, 469 },
 						["races"] = { 7 },	-- Gnome
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["sourceQuest"] = 27674,	-- To the Surface
 						["g"] = {
 							i(134123),	-- "Reliable" Boom-O-Tronic

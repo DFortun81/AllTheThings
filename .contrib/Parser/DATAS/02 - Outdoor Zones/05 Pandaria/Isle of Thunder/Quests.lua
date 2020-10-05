@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -48,7 +49,7 @@ _.Zones =
 				{	---------- An Unusual Tome
 					["questID"] = 32295,	-- An Unusual Tome
 					["description"] = "This is part of the Warlock's green fire questline, and is available after you combine Sealed Tome of the Lost Legion with a healthstone.",
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["itemID"] = 92441,	-- The Codex of Xerrath
 				},
 				q(32525, {	-- Ashes of the Enemy (A)
@@ -210,13 +211,13 @@ _.Zones =
 				}),
 				q(32724, {	-- Forge Ahead! (A)
 					["isDaily"] = true,
-					["classes"] = { 2, 9 },	-- Paladin, Warlock
+					["classes"] = { PALADIN, WARLOCK },
 					["races"] = { 11, 22 },	-- Draenei, Worgen
 				}),
 				q(32587, {	-- Forge Ahead! (A)
 					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
-				--	possibly races other than Draenei / Worgen and classes other than Paladin and Warlock?	
+				--	possibly races other than Draenei / Worgen and classes other than Paladin and Warlock?
 				}),
 				q(32722, {	-- Forge Ahead! (H)
 					["isDaily"] = true,
@@ -225,7 +226,7 @@ _.Zones =
 				q(32292, {	-- Forge Ahead! (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-				--	possibly Horde races other than Blood Elf, Orc, and Undead?	
+				--	possibly Horde races other than Blood Elf, Orc, and Undead?
 				}),
 				q(32527, {	-- Grave Circumstances (A)
 					["isDaily"] = true,
@@ -431,7 +432,7 @@ _.Zones =
 				}),
 				q(32307, {	-- Reader for the Dead Tongue
 					["description"] = "This is part of the Warlock's green fire questline. It will be offered after the player summons their demons and speaks to them about The Codex of Xerrath.",
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 				}),
 				q(32532, {	-- Rise No More! (A)
 					["isDaily"] = true,

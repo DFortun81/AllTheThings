@@ -610,7 +610,7 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			cr(12057, e(1522, {	-- Garr
 				i(18564, {	-- Bindings of the Windseeker (Right)
-					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
+					["classes"] = { DEMONHUNTER, DEATHKNIGHT, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
 				}),
 				i(18822),	-- Obsidian Edged Blade
 				i(17105),	-- Aurastone Hammer
@@ -658,7 +658,7 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			cr(12056, e(1524, {	-- Baron Geddon
 				i(18563, {	-- Bindings of the Windseeker (Left)
-					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
+					["classes"] = { DEMONHUNTER, DEATHKNIGHT, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
 				}),
 				i(18822),	-- Obsidian Edged Blade
 				i(19142),	-- Fire Runed Grimoire

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1031, { 	-- Uldir
 		["order"] = "02",
@@ -446,7 +447,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["itemID"] = 166502,	-- Blood-Soaked Tome of Dark Whispers
 						--	["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
 							["questID"] = 54753,
-							["classes"] = { 3 },	-- Hunter
+							["classes"] = { HUNTER },
 						},
 					},
 				}),
@@ -647,7 +648,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["itemID"] = 166502,	-- Blood-Soaked Tome of Dark Whispers
 						--	["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
 							["questID"] = 54753,
-							["classes"] = { 3 },	-- Hunter
+							["classes"] = { HUNTER },
 						},
 					},
 				}),
@@ -861,7 +862,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["itemID"] = 166502,	-- Blood-Soaked Tome of Dark Whispers
 						--	["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
 							["questID"] = 54753,
-							["classes"] = { 3 },	-- Hunter
+							["classes"] = { HUNTER },
 						},
 					},
 				}),

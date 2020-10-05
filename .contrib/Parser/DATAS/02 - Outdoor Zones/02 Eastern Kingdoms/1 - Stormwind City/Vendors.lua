@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -88,7 +89,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(16397)),	-- Knight-Lieutenant's Dragonhide Gloves
 						un(REMOVED_FROM_GAME, i(16423)),	-- Lieutenant Commander's Dragonhide Epaulets
 						un(REMOVED_FROM_GAME, i(16424)),	-- Lieutenant Commander's Dragonhide Shroud
-					},						
+					},
 				}),
 				n(69975, {	-- Captain Dirgehammer <Cataclysmic Gladiator>
 					["coord"] = { 75.0, 67.5, 84 },
@@ -1874,7 +1875,7 @@ _.Zones =
 						i(67064, {	-- Pattern: Vicious Charscale Belt
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
-						i(67063, {	-- Pattern: Vicious Charscale Boots	
+						i(67063, {	-- Pattern: Vicious Charscale Boots
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
 						i(67049, {	-- Pattern: Vicious Charscale Bracers
@@ -1952,7 +1953,7 @@ _.Zones =
 						i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
-						i(67075, {	-- Pattern: Vicious Wyrmhide Chest	
+						i(67075, {	-- Pattern: Vicious Wyrmhide Chest
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
 						i(67056, {	-- Pattern: Vicious Wyrmhide Gloves
@@ -2168,7 +2169,7 @@ _.Zones =
 						i(66121, {	-- Plans: Vicious Pyrium Shoulders
 							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
 						}),
-					},	
+					},
 				}),
 				n(5512, {	-- Kaita Deepforge
 					["coord"] = { 63.2, 37.6, 84 },
@@ -2323,14 +2324,14 @@ _.Zones =
 					},
 					["g"] = {
 						n(-4178, {	-- Old Season 11 (Header Missing, need new Header)
-							cl(6, {	-- Death Knight
+							cl(DEATHKNIGHT, {
 								un(REMOVED_FROM_GAME, i(72332)), -- Ruthless Gladiator's Dreadplate Chestpiece
 								un(REMOVED_FROM_GAME, i(72333)), -- Ruthless Gladiator's Dreadplate Gauntlets
 								un(REMOVED_FROM_GAME, i(72334)), -- Ruthless Gladiator's Dreadplate Helm
 								un(REMOVED_FROM_GAME, i(72335)), -- Ruthless Gladiator's Dreadplate Legguards
 								un(REMOVED_FROM_GAME, i(72336)), -- Ruthless Gladiator's Dreadplate Shoulders
 							}),
-							cl(11, {	-- Druid
+							cl(DRUID, {
 								un(REMOVED_FROM_GAME, i(72337)), -- Ruthless Gladiator's Dragonhide Gloves
 								un(REMOVED_FROM_GAME, i(72338)), -- Ruthless Gladiator's Dragonhide Helm
 								un(REMOVED_FROM_GAME, i(72339)), -- Ruthless Gladiator's Dragonhide Legguards
@@ -2347,21 +2348,21 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(72356)), -- Ruthless Gladiator's Wyrmhide Robes
 								un(REMOVED_FROM_GAME, i(72357)), -- Ruthless Gladiator's Wyrmhide Spaulders
 							}),
-							cl(3, {	-- Hunter
+							cl(HUNTER, {
 								un(REMOVED_FROM_GAME, i(72368)), -- Ruthless Gladiator's Chain Armor
 								un(REMOVED_FROM_GAME, i(72369)), -- Ruthless Gladiator's Chain Gauntlets
 								un(REMOVED_FROM_GAME, i(72370)), -- Ruthless Gladiator's Chain Helm
 								un(REMOVED_FROM_GAME, i(72371)), -- Ruthless Gladiator's Chain Leggings
 								un(REMOVED_FROM_GAME, i(72372)), -- Ruthless Gladiator's Chain Spaulders
 							}),
-							cl(8, {	-- Mage
+							cl(MAGE, {
 								un(REMOVED_FROM_GAME, i(72373)), -- Ruthless Gladiator's Silk Handguards
 								un(REMOVED_FROM_GAME, i(72374)), -- Ruthless Gladiator's Silk Cowl
 								un(REMOVED_FROM_GAME, i(72375)), -- Ruthless Gladiator's Silk Trousers
 								un(REMOVED_FROM_GAME, i(72376)), -- Ruthless Gladiator's Silk Robe
 								un(REMOVED_FROM_GAME, i(72377)), -- Ruthless Gladiator's Silk Amice
 							}),
-							cl(2, {	-- Paladin
+							cl(PALADIN, {
 								un(REMOVED_FROM_GAME, i(72378)), -- Ruthless Gladiator's Scaled Chestpiece
 								un(REMOVED_FROM_GAME, i(72379)), -- Ruthless Gladiator's Scaled Gauntlets
 								un(REMOVED_FROM_GAME, i(72380)), -- Ruthless Gladiator's Scaled Helm
@@ -2373,7 +2374,7 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(72392)), -- Ruthless Gladiator's Ornamented Legplates
 								un(REMOVED_FROM_GAME, i(72393)), -- Ruthless Gladiator's Ornamented Spaulders
 							}),
-							cl(5, {	-- Priest
+							cl(PRIEST, {
 								un(REMOVED_FROM_GAME, i(72400)), -- Ruthless Gladiator's Mooncloth Gloves
 								un(REMOVED_FROM_GAME, i(72401)), -- Ruthless Gladiator's Mooncloth Helm
 								un(REMOVED_FROM_GAME, i(72402)), -- Ruthless Gladiator's Mooncloth Leggings
@@ -2385,14 +2386,14 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(72408)), -- Ruthless Gladiator's Satin Robe
 								un(REMOVED_FROM_GAME, i(72409)), -- Ruthless Gladiator's Satin Mantle
 							}),
-							cl(4, {	-- Rogue
+							cl(ROGUE, {
 								un(REMOVED_FROM_GAME, i(72422)), -- Ruthless Gladiator's Leather Tunic
 								un(REMOVED_FROM_GAME, i(72423)), -- Ruthless Gladiator's Leather Gloves
 								un(REMOVED_FROM_GAME, i(72424)), -- Ruthless Gladiator's Leather Helm
 								un(REMOVED_FROM_GAME, i(72425)), -- Ruthless Gladiator's Leather Legguards
 								un(REMOVED_FROM_GAME, i(72426)), -- Ruthless Gladiator's Leather Spaulders
 							}),
-							cl(7, {	-- Shaman
+							cl(SHAMAN, {
 								un(REMOVED_FROM_GAME, i(72432)),	-- Ruthless Gladiator's Ringmail Armor
 								un(REMOVED_FROM_GAME, i(72433)),	-- Ruthless Gladiator's Ringmail gauntlets
 								un(REMOVED_FROM_GAME, i(72434)),	-- Ruthless Gladiator's Ringmail Helm
@@ -2409,14 +2410,14 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Legs
 								un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Spaulders
 							}),
-							cl(9, {	-- Warlock
+							cl(WARLOCK, {
 								un(REMOVED_FROM_GAME, i(72459)), -- Ruthless Gladiator's Felweave Handguards
 								un(REMOVED_FROM_GAME, i(72460)), -- Ruthless Gladiator's Felweave Cowl
 								un(REMOVED_FROM_GAME, i(72461)), -- Ruthless Gladiator's Felweave Trousers
 								un(REMOVED_FROM_GAME, i(72462)), -- Ruthless Gladiator's Felweave Raiment
 								un(REMOVED_FROM_GAME, i(72463)), -- Ruthless Gladiator's Felweave Amice
 							}),
-							cl(1, {	-- Warrior
+							cl(WARRIOR, {
 								un(REMOVED_FROM_GAME, i(72464)), -- Ruthless Gladiator's Plate Chestpiece
 								un(REMOVED_FROM_GAME, i(72465)), -- Ruthless Gladiator's Plate Gauntlets
 								un(REMOVED_FROM_GAME, i(72466)), -- Ruthless Gladiator's Plate Helm
@@ -2676,7 +2677,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(41589)),	-- battlemaster's resolve
 						un(REMOVED_FROM_GAME, i(41590)),	-- battlemaster's courage
 						un(REMOVED_FROM_GAME, i(33056)),	-- Veteran's Band of Dominance
-						un(REMOVED_FROM_GAME, i(33057)),	-- Veteran's Band of Triumph 
+						un(REMOVED_FROM_GAME, i(33057)),	-- Veteran's Band of Triumph
 						un(REMOVED_FROM_GAME, i(33064)),	-- Veteran's Band of Salvation
 						un(REMOVED_FROM_GAME, i(33853)),	-- Vindicator's Band of Dominance
 						un(REMOVED_FROM_GAME, i(35320)),	-- Vindicator's Band of subjugation
@@ -2752,7 +2753,7 @@ _.Zones =
 							un(REMOVED_FROM_GAME, i(70642)),	-- Vicious Gladiator's Sabatons of Medi. S10 Version
 							un(REMOVED_FROM_GAME, i(70665)),	-- Vicious Gladiator's Waistguard of Cruelty. S10 Version
 							un(REMOVED_FROM_GAME, i(70666)),	-- Vicious Gladiator's Waistguard of Medi. S10 Version
-							un(REMOVED_FROM_GAME, i(70513)),	-- Vicious Gladiator's armplates of alacrity. S10 Version 
+							un(REMOVED_FROM_GAME, i(70513)),	-- Vicious Gladiator's armplates of alacrity. S10 Version
 							un(REMOVED_FROM_GAME, i(70514)),	-- Vicious Gladiator's armplates of proficiency. S10 Version
 							un(REMOVED_FROM_GAME, i(70529)),	-- Vicious Gladiator's bracers of meditation. S10 Version
 							un(REMOVED_FROM_GAME, i(70530)),	-- Vicious Gladiator's bracers of prowess. S10 Version
@@ -2824,7 +2825,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(54660, {	-- Lieutenant Tristia <Vicious Gladiator> 
+				n(54660, {	-- Lieutenant Tristia <Vicious Gladiator>
 					-- The NPC ID got reused — she was also >S11< Elite Vendor
 					["coord"] = { 75.0, 67.0, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -3516,7 +3517,7 @@ _.Zones =
 								{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
 							},
 						}),
-					},	
+					},
 				}),
 				n(1313, {	-- Maria Lumere
 					["coord"]= { 55.7, 85.6, 84 },
@@ -3556,7 +3557,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(30351)),	-- medallion of the alliance (shaman)
 						un(REMOVED_FROM_GAME, i(37864)),	-- medallion of the alliance (epic)
 						un(REMOVED_FROM_GAME, i(38589)),	-- Medallion of the alliance (dk)
-						un(REMOVED_FROM_GAME, i(69861)),	-- Medallion of the alliance 
+						un(REMOVED_FROM_GAME, i(69861)),	-- Medallion of the alliance
 						un(REMOVED_FROM_GAME, i(34576)),	-- battlemaster's cruelty
 						un(REMOVED_FROM_GAME, i(34577)),	-- battlemaster's depravity
 						un(REMOVED_FROM_GAME, i(34578)),	-- battlemaster's determination
@@ -3635,11 +3636,11 @@ _.Zones =
 						i(87795), 	-- Black Dragon Turtle
 						i(91008, { 	-- Black Dragon Turtle (Panda)
 							["races"] = { 25, 26 },
-						}),			
+						}),
 						i(87796), 	-- Blue Dragon Turtle
 						i(91009, {	-- Blue Dragon Turtle (Panda)
 							["races"] = { 25, 26 },
-						}),			
+						}),
 						i(87797), 	-- Brown Dragon Turtle
 						i(91005, { 	-- Brown Dragon Turtle (Panda)
 							["races"] = { 25, 26 },
@@ -3647,12 +3648,12 @@ _.Zones =
 						i(87802),	-- Great Black Dragon Turtle
 						i(91011, {	-- Great Black Dragon Turtle (Panda)
 							["races"] = { 25, 26 },
-						}),			
-						i(87803),	-- Great Blue Dragon Turtle		
+						}),
+						i(87803),	-- Great Blue Dragon Turtle
 						i(91013, {	-- Great Blue Dragon Turtle (Panda)
 							["races"] = { 25, 26 },
-						}),	
-						i(87804),	-- Great Brown Dragon Turtle							
+						}),
+						i(87804),	-- Great Brown Dragon Turtle
 						i(91014, {	-- Great Brown Dragon Turtle (Panda)
 							["races"] = { 25, 26 },
 						}),
@@ -3664,7 +3665,7 @@ _.Zones =
 						i(91015, {	-- Great Purple Dragon Turtle (Panda)
 							["races"] = { 25, 26 },
 						}),
-						i(82811),	-- Great Red Dragon Turtle							
+						i(82811),	-- Great Red Dragon Turtle
 						i(91010, {	-- Great Red Dragon Turtle (Panda)
 							["races"] = { 25, 26 },
 						}),
@@ -5074,5 +5075,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),					
+	}),
 };

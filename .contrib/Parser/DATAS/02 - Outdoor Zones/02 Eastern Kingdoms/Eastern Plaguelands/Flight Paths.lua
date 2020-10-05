@@ -1,13 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(23, {	-- Eastern Plaguelands
 			n(-228, {	-- Flight Path
 				fp(315, {	-- Acherus: The Ebon Hold
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
 					["coord"] = { 83.8, 50.2, 23 },
 				}),
 				fp(87, {	-- Crown Guard Tower, Eastern Plaguelands

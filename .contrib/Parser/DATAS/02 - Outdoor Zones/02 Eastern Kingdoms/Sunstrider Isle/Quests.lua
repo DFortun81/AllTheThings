@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -33,19 +34,19 @@ _.Zones =
 				q(27091, {	-- Charge!
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["provider"] = { "n", 43010 },	-- Delios Silverblade
 				}),
 				q(10073,  {	-- Corruption
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["provider"] = { "n", 15283 },	-- Summoner Teli'Larien
 				}),
 				q(10071,  {	-- Evisceration
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 15285 },	-- Pathstalker Kariel
 				}),
 				q(8335,  {	-- Felendren the Banished
@@ -57,19 +58,19 @@ _.Zones =
 				q(10068,  {	-- Frost Nova
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["provider"] = { "n", 15279 },	-- Julia Sunstiker
 				}),
 				q(10072,  {	-- Learning the Word
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["provider"] = { "n", 15284 },	-- Matron Arena
 				}),
 				q(9676, {	-- Paladin Training
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 15278 },	-- Magistrix Erona
 				}),
 				q(8325,  {	-- Reclaiming Sunstrider Isle
@@ -97,7 +98,7 @@ _.Zones =
 				q(10070,  {	-- Steady Shot
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["provider"] = { "n", 15513 },	-- Ranger Sallina
 				}),
 				q(8338,  {	-- Tainted Arcane Sliver
@@ -136,7 +137,7 @@ _.Zones =
 				q(10069,  {	-- Ways of the Light
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 15280 },	-- Jesthenis Sunstriker
 				}),
 			}),

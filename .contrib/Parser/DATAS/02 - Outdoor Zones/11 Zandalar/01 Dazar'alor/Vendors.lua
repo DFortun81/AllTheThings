@@ -1209,12 +1209,12 @@ _.Zones =
 						}),
 						i(162623, {	-- Tome of Hex: Zandalari Tendonripper
 							["spellID"] = 277778,	-- Hex(Zandalari Tendonripper)
-							["classes"] = { 7 },	-- Shaman
+							["classes"] = { SHAMAN },
 							["cost"] = 18000000,	-- 1,800g
 						}),
 						i(162625, {	-- Tome of Polymorph: Direhorn
 							["spellID"] = 277787,	-- Polymorph(Direhorn)
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 							["cost"] = 18000000,	-- 1,800g
 						}),
 						i(161524, {	-- Torcali's Grips of the Bounty

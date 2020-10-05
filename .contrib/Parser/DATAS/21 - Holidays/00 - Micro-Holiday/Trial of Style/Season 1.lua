@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 _.Holidays =
 {
 	{	-- Trial of Style
@@ -27,9 +28,9 @@ _.Holidays =
 								["itemID"] = 151117,	-- Ensemble: Mana-Etched Regalia
 								["description"] = "Cost: 60 Trial of Style Tokens",
 								["classes"] = {
-									5,	-- Priest
-									8,	-- Mage
-									9,	-- Warlock
+									PRIEST,
+									MAGE,
+									WARLOCK,
 								},
 								["g"] = {
 									{	-- Mana-Etched Crown
@@ -59,10 +60,10 @@ _.Holidays =
 								["itemID"] = 151118,	-- Ensemble: Obsidian Prowler's Garb
 								["description"] = "Cost: 60 Trial of Style Tokens",
 								["classes"] = {
-									11,	-- Druid
-									4,	-- Rogue
-									10,	-- Monk
-									12,	-- Demon Hunter
+									DRUID,
+									ROGUE,
+									MONK,
+									DEMONHUNTER,
 								},
 								["g"] = {
 									{	-- Savage Mask of the Lynx Lord
@@ -92,8 +93,8 @@ _.Holidays =
 								["itemID"] = 151119,	-- Ensemble: Der'izu Armor
 								["description"] = "Cost: 60 Trial of Style Tokens",
 								["classes"] = {
-									3,	-- Hunter
-									7,	-- Shaman
+									HUNTER,
+									SHAMAN,
 								},
 								["g"] = {
 									{	-- Der'izu Helm
@@ -126,9 +127,9 @@ _.Holidays =
 								["itemID"] = 151120,	-- Ensemble: Righteous Battleplate
 								["description"] = "Cost: 60 Trial of Style Tokens",
 								["classes"] = {
-									2,	-- Paladin
-									1,	-- Warrior
-									6,	-- Death Knight
+									PALADIN,
+									WARRIOR,
+									DEATHKNIGHT,
 								},
 								["g"] = {
 									{	-- Helm of the Righteous

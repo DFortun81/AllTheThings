@@ -1,11 +1,12 @@
----------------------------------------------------
+-------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
----------------------------------------------------
+-------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
-		cl(10, {	-- The Wandering Isle (Monk)
-			["classes"] = { 10 },	-- Monk
+		cl(MONK, {
+			["classes"] = { MONK },
 			["lvl"] = 98,
 			["mapID"] = 709,
 			["g"] = {
@@ -345,7 +346,7 @@ _.ExpansionFeatures =
 					}),
 					q(41905, {	-- Report from Tian Monastery
 						["classes"] = { MONK },
-						["lvl"] = 101,						
+						["lvl"] = 101,
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 42191 } -- Tech It Up a Notch
 					}),
@@ -437,7 +438,7 @@ _.ExpansionFeatures =
 					}),
 					q(41003, {	-- The Emperor's Gift
 						["classes"] = { MONK },
-						["lvl"] = 98,						
+						["lvl"] = 98,
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 40636 },	-- Prepare To Strike
 					}),
@@ -452,7 +453,7 @@ _.ExpansionFeatures =
 						["lvl"] = 103,
 						["provider"] = { "n", 104850 },	-- The Monkey King
 						["sourceQuests"] = { 41729, 41730, 41731 },	-- Slowing the Spread, Desperate Strike, Storm Earth and Fire
-						["maps"] = { 371 },	-- Jade Forest					
+						["maps"] = { 371 },	-- Jade Forest
 					}),
 					q(41849, {	-- The Iron Fist
 						["classes"] = { MONK },
@@ -464,7 +465,7 @@ _.ExpansionFeatures =
 						["classes"] = { MONK },
 						["lvl"] = 98,
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
-						["sourceQuests"] = { 40636 },	-- Prepare To Strike						
+						["sourceQuests"] = { 40636 },	-- Prepare To Strike
 					}),
 					q(41850, {	-- The Master of Swords
 						["classes"] = { MONK },
@@ -601,15 +602,15 @@ _.ExpansionFeatures =
 					}),
 
 					--[[
-					q(, {	-- 
+					q(, {	--
 						["classes"] = { MONK },
 						["lvl"] = ,
-						["provider"] = { "n",  },	-- 
-						["sourceQuests"] = {  },	-- 
-						["maps"] = {  },	-- 
-					}),	
+						["provider"] = { "n",  },	--
+						["sourceQuests"] = {  },	--
+						["maps"] = {  },	--
+					}),
 					--]]
-					
+
 					--[[
 					q(44057),	-- A "Noble" Event
 					q(43359),	-- A Hero's Weapon

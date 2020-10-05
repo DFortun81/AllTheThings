@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -48,7 +49,7 @@ _.Zones =
 					["g"] = {
 						i(2889),	-- Recipe: Beer Basted Boar Ribs
 					},
-				}),	
+				}),
 				q(7674,  {	-- Black Ram Exchange
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1261 },	-- Veron Amberstill
@@ -106,7 +107,7 @@ _.Zones =
 				q(25978, {	-- Entombed in Ice
 					["provider"] = { "n", 41786 },	-- Sergeant Bahrum
 					["coord"] = { 82.8, 48.4, 27 },
-					["races"] = ALLIANCE_ONLY,	
+					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25986,	-- Trouble at the Lake
 				}),
 				q(318,   {	-- Evershine
@@ -115,10 +116,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26078, {	-- Extinguish the Fires
-					["provider"] = { "n", 41853 },	-- Commander Stonebreaker			
+					["provider"] = { "n", 41853 },	-- Commander Stonebreaker
 					["coord"] = { 78.2, 20.5, 27 },
 					["sourceQuest"] = 25998,	-- Get to the Airfield
-					["races"] = ALLIANCE_ONLY,	
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(313,   {	-- Forced to Watch from Afar
 					["provider"] = { "n", 40950 },	-- Captain Tharran
@@ -145,7 +146,7 @@ _.Zones =
 				q(5625,  {	-- Garments of the Light
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 3 },	-- Dwarf
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(16605)),	-- Friar's Robes of the Light
 					},
@@ -154,7 +155,7 @@ _.Zones =
 					["provider"] = { "n", 41786 },	-- Sergeant Bahrum
 					["coord"] = { 82.8, 48.4, 27 },
 					["sourceQuest"] = 25997,	-- Dark Iron Scheming
-					["races"] = ALLIANCE_ONLY,	
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26102, {	-- Grimaxe's Demise
 					["provider"] = { "n", 41853 },	-- Commander Stonebreaker
@@ -301,7 +302,7 @@ _.Zones =
 					["provider"] = { "n", 41853 },	-- Commander Stonebreaker
 					["coord"] = { 78.2, 20.5, 27 },
 					["sourceQuest"] = 26078,	-- Extinguish the Fires
-					["races"] = ALLIANCE_ONLY,	
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25905, {	-- Rams on the Lam
 					["provider"] = { "n", 1261 },	-- Veron Amberstill
@@ -355,7 +356,7 @@ _.Zones =
 					["provider"] = { "n", 41853 },	-- Commander Stonebreaker
 					["coord"] = { 78.2, 20.5, 27 },
 					["sourceQuest"] = 26085,	-- Rallying the Defenders
-					["races"] = ALLIANCE_ONLY,	
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(315,   {	-- The Perfect Stout
 					["provider"] = { "n", 1374 },	-- Rejold Barleybrew
@@ -366,7 +367,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 926 },	-- Bromos Grummner
 					["races"] = { 3 },	-- Dwarf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 				}),
 				q(433,   { 	-- The Public Servant
 					["provider"] = { "n", 1977 },	-- Senator Mehr Stonehallow
@@ -379,7 +380,7 @@ _.Zones =
 						i(131208),	-- Senator's Handsome Leggings
 						i(131209),	-- Stonehallow's Pressed Cuffs
 					},
-				}),	
+				}),
 				q(291,   {	-- The Reports
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1252 },	-- Senir Whitebeard
@@ -410,7 +411,7 @@ _.Zones =
 				q(25986, {	-- Trouble at the Lake
 					["provider"] = { "n", 1977 },	-- Senator Mehr Stonehallow
 					["coord"] = { 75.8, 54.2, 27 },
-					["races"] = ALLIANCE_ONLY,	
+					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						25937,	-- Priceless Treasures

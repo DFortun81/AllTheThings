@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
@@ -9,7 +10,7 @@ _.Zones =
 				q(9725,  {	-- A Demonstration of Loyalty
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9723,	-- A Gesture of Commitment
 				}),
@@ -36,21 +37,21 @@ _.Zones =
 				q(9723,  {	-- A Gesture of Commitment
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9722,	-- The Master's Path
 				}),
 				q(9681, {	-- A Study in Power
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9678,	-- The First Trial
 				}),
 				q(9721,  {	-- A Summons from Lord Solanar
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 				}),
 				q(27277, {	-- An Audience with Ureda
@@ -58,13 +59,13 @@ _.Zones =
 					["coord"] = { 53.0, 19.6, 110 },	-- Inethven (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 20,
 				}),
 				q(9684, {	-- Claiming the Light
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17718 },	-- Magister Astalor Bloodsworn
 					["sourceQuest"] = 9681,	-- A Study in Power
 				}),
@@ -73,7 +74,7 @@ _.Zones =
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = { 5 },	-- Undead
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(9189, {	-- Delivery to the Sepulcher
@@ -95,7 +96,7 @@ _.Zones =
 				q(9707, {	-- Forging the Weapon
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9692,	-- The Path of the Adept
 				}),
@@ -104,7 +105,7 @@ _.Zones =
 					["coord"] = { 81.0, 37.8, 110 },	-- Alsudar the Bastion (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 				}),
 				q(27278, {	-- Grimshot's Call
@@ -112,7 +113,7 @@ _.Zones =
 					["coord"] = { 84.4, 28.0, 110 },	-- Zandine (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 20,
 				}),
 				q(27335, {	-- Journey to Orgrimmar
@@ -120,7 +121,7 @@ _.Zones =
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = { 5 },	-- Blood Elf
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(27282, {	-- Kranosh's Behest
@@ -128,7 +129,7 @@ _.Zones =
 					["coord"] = { 73.2, 45.2, 110 },	-- Zanien (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["maps"] = { 88, 90, 110 },
 					["lvl"] = 20,
 				}),
@@ -137,7 +138,7 @@ _.Zones =
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = { 9 },	-- Goblin
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28304, {	-- Meet with Dark Cleric Cecille
@@ -145,7 +146,7 @@ _.Zones =
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = { 5 },	-- Undead
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28298, {	-- Meet with Gordul
@@ -153,7 +154,7 @@ _.Zones =
 					["coord"] = { 79.4, 52.0, 110 },	-- Zelanis (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 50,
 				}),
 				q(28290, {	-- Meet with Grezz Ragefist
@@ -161,7 +162,7 @@ _.Zones =
 					["coord"] = { 81.0, 37.8, 110 },	-- Alsudar the Bastion (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 				}),
 				q(28299, {	-- Meet with Kranosh
@@ -169,7 +170,7 @@ _.Zones =
 					["coord"] = { 73.2, 45.2, 110 },	-- Zanien (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 50,
 				}),
 				q(28303, {	-- Meet with Master Pyreanor
@@ -177,7 +178,7 @@ _.Zones =
 					["coord"] = { 92.0, 37.2, 110 },	-- Champion Bachi (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
 				q(28297, {	-- Meet with Ormak Grimshot
@@ -185,7 +186,7 @@ _.Zones =
 					["coord"] = { 84.4, 28.0, 110 },	-- Zandine (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
 				q(28309, {	-- Meet with Shadow-Walker Zuru
@@ -196,7 +197,7 @@ _.Zones =
 						8,	-- Troll
 						31,	-- Zandalari Troll
 					},
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28301, {	-- Meet with Terga Earthbreaker
@@ -204,7 +205,7 @@ _.Zones =
 					["coord"] = { 71.8, 56.0, 110 },	-- Gez'li (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 				}),
 				q(28307, {	-- Meet with Tyelis
@@ -212,7 +213,7 @@ _.Zones =
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28300, {	-- Meet with Ureda
@@ -220,13 +221,13 @@ _.Zones =
 					["coord"] = { 53.0, 19.6, 110 },	-- Inethven (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 50,
 				}),
 				q(9685, {	-- Redeeming the Dead
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9684,	-- Claiming the Light
 				}),
@@ -235,7 +236,7 @@ _.Zones =
 					["coord"] = { 92.0, 37.2, 110 },	-- Champion Bachi (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladon
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 				}),
 				q(27332, {	-- Seek the Shadow-Walker
@@ -243,7 +244,7 @@ _.Zones =
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = { 8 },	-- Troll
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(9134,  {	-- Skymistress Gloaming
@@ -255,7 +256,7 @@ _.Zones =
 				q(9710, {	-- The Blood-Tempered Ranseur
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 16669 },	-- Bemarrin
 					["sourceQuest"] = 9707,	-- Forging the Weapon
 					["g"] = {
@@ -267,34 +268,34 @@ _.Zones =
 					["coord"] = { 71.8, 56.0, 110 },	-- Gez'li (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 20,
 				}),
 				q(9678, {	-- The First Trial
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9677,	-- Summons from Knight-Lord Bloodvalor
 				}),
 				q(9722,  {	-- The Master's Path
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9721,	-- A Summons from Lord Solanar
 				}),
 				q(9692, {	-- The Path of the Adept
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9691,	-- Return to Silvermoon
 				}),
 				q(9690, {	-- The Second Trial
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 				}),
 				q(27331, {	-- The Seer's Call
@@ -302,7 +303,7 @@ _.Zones =
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = { 6 },	-- Tauren
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(27279, {	-- The Shattered Hand
@@ -310,27 +311,27 @@ _.Zones =
 					["coord"] = { 79.4, 52.0, 110 },	-- Zelanis (Silvermoon City)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 20,
 				}),
 				q(9735,  {	-- True Masters of the Light
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9725,	-- A Demonstration of Loyalty
 				}),
 				q(9736,  {	-- True Masters of the Light
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9735,	-- True Masters of the Light
 				}),
 				q(9737,  {	-- True Masters of the Light
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
 					["g"] = {
 						i(25549),	-- Blood Knight Tabard

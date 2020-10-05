@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -10,7 +11,7 @@ _.Zones =
 					["coord"] = { 70.6, 47.6, 646 },
 				}),
 				fp(1862, {	-- Acherus: The Ebon Hold
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
 					["coord"] = { 97.4, 56.0, 646 },
 				}),
 				fp(1941, {	-- Deliverance Point, Broken Shore

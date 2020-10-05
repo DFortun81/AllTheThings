@@ -911,7 +911,7 @@ _.Zones =
 						["provider"] = { "n", 97359 },	-- Raethan
 					}),
 					q(40056, {	-- Our New Allies
-						["classes"] = { 12 },
+						["classes"] = { DEMONHUNTER },
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 					}),
 					q(39934, {	-- Our New Allies
@@ -1310,7 +1310,7 @@ _.Zones =
 					}),
 					q(39830, {	-- Hellfire Citadel: Hellfire and Brimstone
 						["coord"] = { 46.1, 26.6, 627 },
-						["classes"] = { 1, 3 },
+						["classes"] = { WARRIOR, HUNTER },
 						["provider"] = { "n", 93189 },	-- Mama Diggs
 						["g"] = {
 							recipe(191970),	-- Infernal Brimstone (Rank 3)
@@ -1318,7 +1318,7 @@ _.Zones =
 					}),
 					q(38807, {	-- Infernal Brimstone Analysis
 						["coord"] = { 46.1, 26.6, 627 },
-						["classes"] = { 2, 3 },
+						["classes"] = { PALADIN, HUNTER },
 						["provider"] = { "n", 93189 },	-- Mama Diggs
 						["g"] = {
 							recipe(184505),	-- Infernal Brimstone (Rank 2)

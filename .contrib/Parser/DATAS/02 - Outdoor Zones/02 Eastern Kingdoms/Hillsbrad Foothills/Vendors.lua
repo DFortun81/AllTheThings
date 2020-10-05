@@ -1,6 +1,7 @@
-				---------------------------------------------------
+---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -146,7 +147,7 @@ _.Zones =
 					},
 				}),
 				n(6779,   {	-- Smudge Thunderwood <Poison Supplies>
-					["classes"] = {4},	-- Rogue Only
+					["classes"] = { ROGUE },
 					["coord"] = { 71.0, 45.8, 25 },
 					["g"] = {
 						i(18160),	-- Recipe: Thistle Tea

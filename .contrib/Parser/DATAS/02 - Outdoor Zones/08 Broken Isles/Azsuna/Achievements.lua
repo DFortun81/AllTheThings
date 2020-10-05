@@ -44,7 +44,7 @@ _.Zones =
 									42137,	-- Champion: Yalia Sagewhisper
 									42138,	-- Champion: Zabra Hexx
 								},
-								["classes"] = { 5 },
+								["classes"] = { PRIEST },
 								["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
 							}),
 							q(43374, {	-- Murloc Mind Control
