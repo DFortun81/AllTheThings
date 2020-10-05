@@ -4350,6 +4350,7 @@ local function AttachTooltip(self)
 				if link then
 					local itemString = string.match(link, "item[%-?%d:]+");
 					local itemID = GetItemInfoInstant(itemString);
+					if not AllTheThingsAuctionData then return end;
 					if AllTheThingsAuctionData[itemID] then
 						self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
 					end
@@ -14266,12 +14267,14 @@ local ProcessAuctionData = function()
 	
 	local ObjectTypeMetas = {
 		["criteriaID"] = setmetatable({	-- Achievements
-			["npcID"] = -4,
+			["filterID"] = 105,
+			["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_BOSS_LICHKING",
 			["description"] = "All items that can be used to obtain achievements that you are missing are displayed here.",
 			["priority"] = 1,
-		}, app.BaseNPC),
+		}, app.BaseFilter),
 		["s"] = setmetatable({			-- Appearances
 			["npcID"] = -10032,
+			["icon"] = "INTERFACE/ICONS/INV_SWORD_06",
 			["description"] = "All appearances that you need are displayed here.",
 			["priority"] = 2,
 		}, app.BaseNPC),
@@ -14287,23 +14290,25 @@ local ProcessAuctionData = function()
 		}, app.BaseFilter),
 		["questID"] = setmetatable({	-- Quests
 			["npcID"] = -9956,
+			["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_GENERAL_100KQUESTS",
 			["description"] = "All quests that have objective or starting items that can be sold on the auction house are displayed here.",
 			["priority"] = 5,
 		}, app.BaseNPC),
 		["recipeID"] = setmetatable({	-- Recipes
 			["filterID"] = 200,
+			["icon"] = "INTERFACE/ICONS/INV_SCROLL_06",
 			["description"] = "All recipes that you have not collected yet are displayed here.",
 			["priority"] = 6,
 		}, app.BaseFilter),
-		["itemID"] = {					-- Non-Collectible Items
-			["text"] = "Non-Collectible Items",
-			["icon"] = "Interface/ICONS/ACHIEVEMENT_GUILDPERK_BARTERING",
-			["description"] = "All items that can be used to earn other collectible items, but are not necessarily collectible themselves are displayed here.",
+		["itemID"] = {					-- General Items
+			["text"] = "General Items",
+			["icon"] = "INTERFACE/ICONS/INV_MISC_FROSTEMBLEM_01",
+			["description"] = "Illusions, toys, and other items that can be used to earn collectible items are displayed here.",
 			["priority"] = 7,
 		},
 		["reagentID"] = setmetatable({	-- Reagent
 			["filterID"] = 56,
-			["icon"] = "Interface/ICONS/SPELL_FROST_FROZENCORE",
+			["icon"] = "INTERFACE/ICONS/SPELL_FROST_FROZENCORE",
 			["description"] = "All items that can be used to craft an item using a profession on your account.",
 			["priority"] = 8,
 		}, app.BaseFilter),
