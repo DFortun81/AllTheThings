@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, { 	-- Northrend
 		m(116, {	-- Grizzly Hills
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(37, {	-- Fo' Grizzle My Shizzle (A)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

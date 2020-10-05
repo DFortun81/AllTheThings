@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(47, {	-- Duskwood
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(12430, {	-- Duskwood Quests
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

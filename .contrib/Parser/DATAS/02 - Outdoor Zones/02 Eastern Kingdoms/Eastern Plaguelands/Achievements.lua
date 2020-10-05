@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(23, {	-- Eastern Plaguelands
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4892, {	-- Eastern Plaguelands Quests
 					crit(1, {	-- The Paladin Pals
 						["sourceQuest"] = 27373,	-- Onward, to Light's Hope Chapel

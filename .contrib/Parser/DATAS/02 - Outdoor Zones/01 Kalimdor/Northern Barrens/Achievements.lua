@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(10, {	-- Northern Barrens
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4933, {	-- Northern Barrens Quests
 					["races"] = HORDE_ONLY,
 					["g"] = {

@@ -1,6 +1,7 @@
 -----------------------------------------------
 --     P L A Y E R   V S   P L A Y E R       --
 -----------------------------------------------
+
 _.PVP =
 {
 	n(-304, {	-- Battlegrounds
@@ -8,7 +9,7 @@ _.PVP =
 			["achievementID"] = 1752,	--  Master of Wintergrasp
 		--	["description"] =
 			["g"] = {
-				n(-4,  { 	-- Achievement
+				n(ACHIEVEMENTS, {
 					ach(1752, {	-- Master of Wintergrasp
 						{	-- Destruction Derby
 							["allianceAchievementID"] = 1737,	-- Destruction  [Alliance]

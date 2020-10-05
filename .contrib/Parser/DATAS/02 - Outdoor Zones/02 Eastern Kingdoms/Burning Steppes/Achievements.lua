@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(36, {	-- Burning Steppes
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4901, {	-- Burning Steppes Quests
 					crit(1, {	-- Preparation
 						["sourceQuests"] = {

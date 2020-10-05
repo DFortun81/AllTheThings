@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -12,7 +13,7 @@ _.Zones =
 							["provider"] = { "n", 3009 },	-- Bena Winterhoof (Thunder Bluff)
 							["coord"] = { 46.8, 33.6, 88 },	-- Bena Winterhoof (Thunder Bluff)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,	
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -21,7 +22,7 @@ _.Zones =
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},]]								
+							},]]
 						}),
 						q(29067, {	-- Potion Master
 							["provider"] = { "n", 3009 },	-- Bena Winterhoof (Thunder Bluff)
@@ -51,12 +52,12 @@ _.Zones =
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},]]							
+							},]]
 						}),
 					}),
 				}),
 				prof(COOKING, {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5843, {	-- Let's Do Lunch: Thunder Bluff
 							["races"] = HORDE_ONLY,
 						}),
@@ -157,7 +158,7 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5849, {	-- Fish or Cut Bait: Thunder Bluff
 							["races"] = HORDE_ONLY,
 						}),

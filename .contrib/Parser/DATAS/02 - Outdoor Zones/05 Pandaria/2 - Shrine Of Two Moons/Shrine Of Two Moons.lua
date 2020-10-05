@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -13,7 +14,7 @@ _.Zones =
 			["maps"] = { 392 },	-- upper level
 			["lvl"] = 78,
 			["g"] = {
-				n(-4,  {	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(7285),	-- Every Day I'm Pand-a-ren
 				}),
 				n(QUESTS, {

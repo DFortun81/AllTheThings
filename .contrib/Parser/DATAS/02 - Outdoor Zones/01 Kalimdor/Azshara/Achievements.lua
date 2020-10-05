@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(76, {	-- Azshara
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4927, {	-- Azshara Quests
 					["races"] = HORDE_ONLY,
 					["g"] = {

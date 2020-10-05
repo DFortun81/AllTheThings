@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(161, {	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-4, {	-- Achievements
+						n(ACHIEVEMENTS, {
 							ach(9639),	-- Fight, Kill, Salute!
 							ach(9509, {	-- Nemesis: Draenei Destroyer
 								title(267),		-- ,Draenei Destroyer

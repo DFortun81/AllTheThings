@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(161, {	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-4, {	-- Achievements
+						n(ACHIEVEMENTS, {
 							ach(9639),	-- Fight, Kill, Salute!
 							ach(9517, {	-- Nemesis: Death Stalker
 								title(272),		-- the Death Stalker

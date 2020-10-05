@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
 		m(100, {	-- Hellfire Peninsula
-			n(-4, {		-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -94,7 +95,7 @@ _.Zones =
 								9397,	-- Birds of a Feather
 								9370,	-- The Cleansing Must Be Stopped
 								-- all quests below need to be confirmed
-								9472,	-- Arelion's Mistress 
+								9472,	-- Arelion's Mistress
 								9391,	-- Marking the Path
 								9387,	-- Source of the Corruption
 							},

@@ -158,7 +158,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["lvl"] = 85,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5296),	-- Faster Than the Speed of Light
 					}),
 					n(ZONEDROPS, {

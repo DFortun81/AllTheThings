@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
 		m(534, {	-- Tanaan Jungle
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(10068, 10075, { -- Draenor's Last Stand(Tanaan Jungle) [A] / [H]
 					crit(1),	-- Ironhold Harbor [A] / [H]
 					crit(2),	-- Ruins of Kra'nak [A] / [H]

@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(71, {	-- Tanaris
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4935, {	-- Tanaris Quests
 					crit(1, {	-- Southsea Pirates
 						["races"] = ALLIANCE_ONLY,

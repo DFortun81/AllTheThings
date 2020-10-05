@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
-			n(-4, {		-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(11261),		-- Adventurer of Azsuna
 				ach(10994, {	-- A Glorious Campaign
 					cl(PRIEST, {

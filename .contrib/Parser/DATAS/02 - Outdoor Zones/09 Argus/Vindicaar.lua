@@ -19,7 +19,7 @@ _.Zones =
 			["lvl"] = 110,
 			["isRaid"] = true,
 			["g"] = {
-				n(-4,   {	-- Achievement
+				n(ACHIEVEMENTS, {
 				}),
 				n(-169, {	-- Emissary Quests
 					q(48642, {	-- Argussian Reach

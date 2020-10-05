@@ -1,9 +1,10 @@
 ---------------------------------------------
 --       M O U N T S     M O D U L E       --
 ---------------------------------------------
+
 _.Mounts =
 {
-	n(-4, { 	-- Achievement
+	n(ACHIEVEMENTS, {
 		i(152815),	-- Antoran Gloomhound
 		i(44178),	-- Albino Drake
 		i(98259),	-- Armored Blue Dragonhawk

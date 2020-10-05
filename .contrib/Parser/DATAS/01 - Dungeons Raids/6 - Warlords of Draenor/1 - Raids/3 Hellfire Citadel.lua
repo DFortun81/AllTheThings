@@ -11,7 +11,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 662, 663, 664, 665, 666, 667, 668, 669, 670 },
 		["coord"] = { 45.56, 53.61, 534 },	-- Tanaan Jungle, Draenor
 		["g"] = {
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(10149, {	-- Glory of the Hellfire Raider
 					i(127140),	-- Infernal Direwolf
 					ach(10026, {	-- Nearly Indestructible
@@ -670,7 +670,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124158),	-- Countenance of the Revenant
 					i(124260),	-- Hood of Unknowable Secrets
 					i(124295),	-- Sinister Felborne Helmet
-					i(124212),	-- Vial of Immiscible Liquid			
+					i(124212),	-- Vial of Immiscible Liquid
 					i(124147),	-- Void Lord's Wizened Cloak
 					i(124353),	-- Breach-Scarred Wristplates
 					i(124199),	-- Loop of Beckoned Shadows
@@ -1531,7 +1531,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124230),	-- Prophecy of Fear
 				})),
 				cr(91331, e(1438, {	-- Archimonde
-					ig(123890),	-- Felsteel Annihilator (Mount) 
+					ig(123890),	-- Felsteel Annihilator (Mount)
 					i(124389),	-- Calamity's Edge
 					i(124382),	-- Edict of Argus
 					i(124372),	-- Gavel of the Eredar

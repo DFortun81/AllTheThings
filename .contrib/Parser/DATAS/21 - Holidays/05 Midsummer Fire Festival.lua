@@ -14,7 +14,7 @@
 _.Holidays =  bubbleDown({["u"] = 21},
 {
 	holiday(235474, {	-- Midsummer Fire Festival
-		n(-4,   {	-- Achievements
+		n(ACHIEVEMENTS, {
 			ach(1038,  {	-- The Flame Warden
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {

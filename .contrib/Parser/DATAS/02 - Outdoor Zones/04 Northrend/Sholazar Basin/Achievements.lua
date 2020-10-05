@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, {	-- Northrend
 		m(119, {	-- Sholazar Basin
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(961),	-- Honorary Frenzyheart
 				ach(39, {	-- Into the Basin
 					crit(1, {	-- Hunting Bigger Game

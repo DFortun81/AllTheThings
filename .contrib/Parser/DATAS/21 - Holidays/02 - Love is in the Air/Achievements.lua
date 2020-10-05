@@ -1,10 +1,11 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 _.Holidays = bubbleDown({["u"] = 18},
 {
 	holiday(235468, {	-- Love is in the Air
-		n(-4, {	-- Achievements
+		n(ACHIEVEMENTS, {
 			ach(1693, {			-- Fool For Love
 				title(103),		-- the Love Fool
 				ach(260),		-- Charming

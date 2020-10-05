@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(646, {	-- Broken Shore
-			n(-4, {		-- Achievement
+			n(ACHIEVEMENTS, {
 				ach(11546, {	-- Breaching the Tomb
 					crit(1,  {	-- Armies of Legionfall
 						["sourceQuests"] = { 46730 },	-- Armies of Legionfall

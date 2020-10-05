@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(51, {	-- Swamp of Sorrows
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4904, {	-- Swamp of Sorrows Quests
 					crit(1, {	-- Bogpaddle
 						["sourceQuest"] = 27600,	-- In With a Bang

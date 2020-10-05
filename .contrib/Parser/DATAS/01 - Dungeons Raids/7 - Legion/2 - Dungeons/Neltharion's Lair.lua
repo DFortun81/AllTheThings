@@ -8,7 +8,7 @@ _.Instances = { tier(7, {	-- Legion
 		["mapID"] = 731,
 		["coord"] = { 49.5, 68.5, 650 },
 		["g"] = {
-			n(-4,  {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(10996, {	-- Got to Ketchum All
 					["description"] = "As soon as you jump into the hole at the start of the dungeon, follow the cliff's path near |cFFFFD700Spiritwalker Ebonhorn|r to a hidden grotto and buy a |cFFFFD700Ketchum Tablet|r from the |cFFFFD700Mushroom Merchant|r.",
 					["crs"] = { 111746	},	-- Mushroom Merchant

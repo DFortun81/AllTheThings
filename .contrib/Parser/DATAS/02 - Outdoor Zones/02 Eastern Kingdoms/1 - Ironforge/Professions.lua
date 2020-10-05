@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -21,7 +22,7 @@ _.Zones =
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},]]							
+							},]]
 						}),
 						q(29067, {	-- Potion Master
 							["provider"] = { "n", 5177 },	-- Tally Berryfizz (Ironfoge)
@@ -51,12 +52,12 @@ _.Zones =
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},]]							
+							},]]
 						}),
 					}),
 				}),
 				prof(COOKING, {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5841, {	-- Let's Do Lunch: Ironforge
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -187,7 +188,7 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5847, {	-- Fish or Cut Bait: Ironforge
 							["races"] = ALLIANCE_ONLY,
 						}),

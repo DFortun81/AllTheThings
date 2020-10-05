@@ -1277,7 +1277,7 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-10072, {	-- N'Zoth Assault
-				n(-4,	{	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(14159, {	-- Combating the Corruption
 						crit(1,  {		-- Corrupted Acolyte slain
 							["description"] = "Shares a spawn with Acolyte of N'Zoth.",

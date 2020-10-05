@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(627, { 	-- Dalaran
-			n(-4, {		-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(9696, {		-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet

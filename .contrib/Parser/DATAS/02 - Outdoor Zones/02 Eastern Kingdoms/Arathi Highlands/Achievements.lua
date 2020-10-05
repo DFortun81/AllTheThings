@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(14, {	-- Arathi Highlands
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4896, {	-- Arathi Highlands Quests
 					crit(1, {	-- Faldir's Cove
 						["sourceQuest"] = 26628,	-- Death From Below

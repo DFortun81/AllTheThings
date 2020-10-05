@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, {	-- Northrend
 		m(123, {	-- Wintergrasp
-			n(-4,  { 	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(1752, {	-- Master of Wintergrasp
 					ach(2080),	-- Black War Mammoth
 					{	-- Destruction Derby

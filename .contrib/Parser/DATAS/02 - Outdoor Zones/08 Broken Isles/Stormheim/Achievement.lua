@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
-			n(-4,     {	-- Achievement
+			n(ACHIEVEMENTS, {
 				ach(9696, {	-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet

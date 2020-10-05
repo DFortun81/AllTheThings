@@ -85,7 +85,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 			}),
 			d(23, {	-- Mythic
-				n(-4, {	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(10611),	-- Dropping some Eaves
 				}),
 				cr(104215, e(1718, {	-- Patrol Captain Gerdo

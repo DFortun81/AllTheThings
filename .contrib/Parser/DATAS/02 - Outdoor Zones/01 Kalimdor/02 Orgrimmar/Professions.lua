@@ -125,7 +125,7 @@ _.Zones =
 					}),
 				}),
 				prof(COOKING, {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5475, {	-- Let's Do Lunch: Orgrimmar
 							["races"] = HORDE_ONLY,
 						}),
@@ -253,7 +253,7 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5477, {	-- Fish or Cut Bait: Orgrimmar
 							["races"] = HORDE_ONLY,
 						}),

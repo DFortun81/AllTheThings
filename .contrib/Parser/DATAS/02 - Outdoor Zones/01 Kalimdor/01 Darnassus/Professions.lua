@@ -1,10 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
-		m(89, {	-- Darnassus			
+		m(89, {	-- Darnassus
 			n(-38, {	-- Professions
 				prof(ALCHEMY, {
 					n(QUESTS, {
@@ -21,7 +22,7 @@ _.Zones =
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},]]							
+							},]]
 						}),
 						q(29067, {	-- Potion Master
 							["provider"] = { "n", 4160 },	-- Ainethil (Darnassus)
@@ -36,7 +37,7 @@ _.Zones =
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},]]	
+							},]]
 						}),
 						q(29482, {	-- Transmutation Master
 							["provider"] = { "n", 4160 },	-- Ainethil (Darnassus)
@@ -51,12 +52,12 @@ _.Zones =
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},]]								
+							},]]
 						}),
 					}),
 				}),
 				prof(COOKING, {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5842, {	-- Let's Do Lunch: Darnassus
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -103,7 +104,7 @@ _.Zones =
 								}),
 								currency(81),	-- Epicurean's Award
 							},
-						}),	
+						}),
 						q(29357, {	-- Spice Bread Aplenty
 							["provider"] = { "n", 4210 },	-- Alegorn
 							["coord"] = { 50.0, 36.6, 89 },
@@ -135,7 +136,7 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5848, {	-- Fish or Cut Bait: Darnassus
 							["races"] = ALLIANCE_ONLY,
 						}),

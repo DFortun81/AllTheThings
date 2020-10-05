@@ -241,7 +241,7 @@ _.Instances = { tier(7, {	-- Legion
 			d(23, {	-- Mythic
 				["lvl"] = 110,
 				["g"] = {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(10542),	-- I Got What You Mead
 						ach(10544),	-- Stag Party
 					}),
