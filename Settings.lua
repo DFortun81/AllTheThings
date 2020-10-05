@@ -2802,13 +2802,13 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("Auto:AH", self:GetChecked());
-	if app.Blizzard_AuctionUILoaded then
+	if app.Blizzard_AuctionHouseUILoaded then
 		if app.AuctionModuleTabID then
 			if self:GetChecked() then
-				PanelTemplates_EnableTab(AuctionFrame, app.AuctionModuleTabID);
+				PanelTemplates_EnableTab(AuctionHouseFrame, app.AuctionModuleTabID);
 				app:OpenAuctionModule();
 			else
-				PanelTemplates_DisableTab(AuctionFrame, app.AuctionModuleTabID);
+				PanelTemplates_DisableTab(AuctionHouseFrame, app.AuctionModuleTabID);
 			end
 		else
 			app:OpenAuctionModule();
