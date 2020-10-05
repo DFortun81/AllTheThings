@@ -59,9 +59,7 @@ _.Zones =
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(12515, {	-- Allied Races: Dark Iron Dwarf
-												h(i(161331)),	-- Dark Iron Core Hound
-											}),
+											ach(12515),	-- Allied Races: Dark Iron Dwarf
 										},
 									}),
 									-- Dark Iron Dwarf Starter Quests
@@ -223,9 +221,7 @@ _.Zones =
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(13163, {	-- Allied Races: Kul Tiran
-												a(i(164762)),	-- Kul Tiran Charger
-											}),
+											ach(13163),	-- Allied Races: Kul Tiran
 										},
 									}),
 								}),
@@ -251,9 +247,7 @@ _.Zones =
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(12243, {	-- Allied Races: Lightforged Draenei
-												a(i(155656)),	-- Lightforged Felcrusher
-											}),
+											ach(12243),	-- Allied Races: Lightforged Draenei
 										},
 									}),
 									-- Lightforged Draenei Starter Quests
@@ -381,9 +375,7 @@ _.Zones =
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(12242, {	-- Allied Races: Void Elf
-												a(i(156486)),	-- Starcursed Voidstrider
-											}),
+											ach(12242),	-- Allied Races: Void Elf
 										},
 									}),
 									-- Void Elf Starter Quests

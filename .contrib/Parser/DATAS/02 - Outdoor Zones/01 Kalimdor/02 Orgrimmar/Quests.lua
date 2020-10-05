@@ -141,9 +141,7 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 										["lvl"] = 110,
 										["g"] = {
-											ach(12245, {	-- Allied Races: Highmountain Tauren
-												h(i(155662)),	-- Highmountain Thunderhoof
-											}),
+											ach(12245),	-- Allied Races: Highmountain Tauren
 										},
 									}),
 									-- Highmountain Tauren Starter Quest
@@ -193,9 +191,7 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 										["lvl"] = 110,
 										["g"] = {
-											ach(12244, {	-- Allied Races: Nightborne
-												i(156487),	-- Nightborne Manasaber
-											}),
+											ach(12244),	-- Allied Races: Nightborne
 										},
 									}),
 									-- Nightborne Starter Quest
@@ -290,9 +286,7 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(12518, {	-- Allied Races: Mag'har Orc
-												i(161330),	-- Mag'har Direwolf
-											}),
+											ach(12518),	-- Allied Races: Mag'har Orc
 										},
 									}),
 									-- Mag'har Orc Starter Quest
@@ -446,9 +440,7 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(13161, {	-- Allied Races: Zandalari Troll
-												i(157870),	-- Zandalari Direhorn
-											}),
+											ach(13161),	-- Allied Races: Zandalari Troll
 										},
 									}),
 									-- Zandalari Troll Starter Quest
@@ -669,9 +661,7 @@ _.Zones =
 										["provider"] = { "n", 145424 },	-- Baine Bloodhoof
 										["sourceQuest"] = 53908,	-- Awaiting Our Arrival
 										["g"] = {
-											ach(13206, {	-- Allied Races: Vulpera
-												i(174066),	-- Caravan Hyena
-											}),
+											ach(13206),	-- Allied Races: Vulpera
 										},
 									}),
 									-- Vulpera starter quests
