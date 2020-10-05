@@ -14411,14 +14411,16 @@ app.OpenAuctionModule = function(self)
 							["description"] = "Click this button to wipe out all of the previous scan data.",
 							["visible"] = true,
 							["priority"] = -5,
-							["OnClick"] = function() 
-								local window = app:GetWindow("AuctionData");
-								wipe(AllTheThingsAuctionData);
-								wipe(window.data.g);
-								for i,option in ipairs(window.data.options) do
-									table.insert(window.data.g, option);
+							["OnClick"] = function()
+								if AllTheThingsAuctionData then
+									local window = app:GetWindow("AuctionData");
+									wipe(AllTheThingsAuctionData);
+									wipe(window.data.g);
+									for i,option in ipairs(window.data.options) do
+										table.insert(window.data.g, option);
+									end
+									window:Update();
 								end
-								window:Update();
 							end,
 							['OnUpdate'] = function(data)
 								local window = app:GetWindow("AuctionData");
