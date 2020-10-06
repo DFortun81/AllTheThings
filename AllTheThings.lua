@@ -4350,10 +4350,10 @@ local function AttachTooltip(self)
 				if link then
 					local itemString = string.match(link, "item[%-?%d:]+");
 					local itemID = GetItemInfoInstant(itemString);
-					if not AllTheThingsAuctionData then return end;
+					--[[if not AllTheThingsAuctionData then return end;
 					if AllTheThingsAuctionData[itemID] then
 						self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
-					end
+					end]]
 					AttachTooltipSearchResults(self, link, SearchForLink, link);
 				end
 				
