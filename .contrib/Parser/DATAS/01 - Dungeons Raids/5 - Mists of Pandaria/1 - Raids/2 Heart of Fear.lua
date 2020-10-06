@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(330, {	-- Heart of Fear
 		["order"] = "02",
@@ -614,7 +615,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(87410),	-- Plans: Ornate Battleplate of the Master
 							i(87408),	-- Plans: Unyielding Bloodplate
 						},
-					}),						
+					}),
 					cr(62980, e(745, {	-- Imperial Vizier Zor'lok
 						ach(6725),	-- Heroic: Imperial Vizier Zor'lok
 						ach(6937),	-- Overzealous

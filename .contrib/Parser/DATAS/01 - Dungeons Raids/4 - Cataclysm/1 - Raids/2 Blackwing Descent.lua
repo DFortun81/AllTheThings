@@ -149,23 +149,23 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["creatureID"] = 41376,
 						["groups"] = {
 							ach(4849),	-- Keeping it in the Family
-							i(63683, {	-- Helm of the Forlorn Conqueror	
+							i(63683, {	-- Helm of the Forlorn Conqueror
 								i(60249),	-- Shadowflame Hood
 								i(60346),	-- Reinforced Sapphirium Helmet
 								i(60359),	-- Reinforced Sapphirium Headguard
 								i(60356),	-- Reinforced Sapphirium Faceguard
 								i(60256),	-- Mercurial Hood
 								i(60258),	-- Mercurial Cowl
-							}),		
-							i(63684, {	-- Helm of the Forlorn Protector	
+							}),
+							i(63684, {	-- Helm of the Forlorn Protector
 								i(60303),	-- Lightning-Charged Headguard
 								i(60320),	-- Helmet of the Raging Elements
 								i(60315),	-- Headpiece of the Raging Elements
 								i(60308),	-- Faceguard of the Raging Elements
 								i(60325),	-- Earthen Helemt
 								i(60328),	-- Earthen Faceguard
-							}),	
-							i(63682, {	-- Helm of the Forlorn Vanquisher	
+							}),
+							i(63682, {	-- Helm of the Forlorn Vanquisher
 								i(60299),	-- Wind Dancer's Helmet
 								i(60277),	-- Stormrider's Helm
 								i(60286),	-- Stormrider's Headpiece
@@ -189,7 +189,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(59450),	-- Belt of the Blackhand
 							i(59321),	-- Belt of the Nightmare
 							i(59441),	-- Prestor's Talisman of Machination
-							i(122195),	-- Music Roll: Legends of Azeroth		
+							i(122195),	-- Music Roll: Legends of Azeroth
 						},
 					}),
 				},

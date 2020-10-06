@@ -1,4 +1,4 @@
------------------------------------------------------
+-------------------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
@@ -120,23 +120,23 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["creatureID"] = 43324,
 						["groups"] = {
 							ach(5312),	-- The Abyss Will Gaze Back Into You
-							i(64315, {	-- Mantle of the Forlorn Conqueror	
+							i(64315, {	-- Mantle of the Forlorn Conqueror
 								i(60252),	-- Shadowflame Mantle
 								i(60358),	-- Reinforced Sapphirium Shoulderguards
 								i(60348),	-- Reinforced Sapphirium Pauldrons
 								i(60362),	-- Reinforced Sapphirium Mantle
 								i(60253),	-- Mercurial Shoulderwraps
 								i(60262),	-- Mercurial Mantle
-							}),		
-							i(64316, {	-- Mantle of the Forlorn Protector	
+							}),
+							i(64316, {	-- Mantle of the Forlorn Protector
 								i(60322),	-- Spaulders of the Raging Elements
 								i(60317),	-- Shoulderwraps of the Raging Elements
 								i(60311),	-- Mantle of the Raging Elements
 								i(60306),	-- Lightning-Charged Spulders
 								i(60331),	-- Earthen Shoulderguards
 								i(60327),	-- Earthen Pauldrons
-							}),		
-							i(64314, {	-- Mantle of the Forlorn Vanquisher	
+							}),
+							i(64314, {	-- Mantle of the Forlorn Vanquisher
 								i(60302),	-- Wind Dancer's Spaulders
 								i(60289),	-- Stormrider's Spaulders
 								i(60284),	-- Stormrider's Shoulderwraps

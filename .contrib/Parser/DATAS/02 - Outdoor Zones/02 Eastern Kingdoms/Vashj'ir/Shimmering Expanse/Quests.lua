@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -661,7 +662,7 @@ _.Zones =
 					}),
 					q(25752, {	-- Swift Action (A)
 						["provider"] = { "n", 40643 },	-- Admiral Dvorek
-						["coord"] = { 49.1, 56.9, 205 }, 
+						["coord"] = { 49.1, 56.9, 205 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							25748,	-- Clear Goals

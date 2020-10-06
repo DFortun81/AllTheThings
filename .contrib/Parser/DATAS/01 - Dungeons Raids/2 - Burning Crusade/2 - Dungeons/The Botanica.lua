@@ -64,7 +64,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				cr(17977, e(562, {	-- Warp Splinter
 					ach(659),	-- The Botanica
 					i(28370),	-- Bangle of Endless Blessings
-				 -- i(28228),	-- Beast Lord Cuirass (7.3.5 - Moved to High Botanist Freywinn)
+					-- i(28228),	-- Beast Lord Cuirass (7.3.5 - Moved to High Botanist Freywinn)
 					i(29258),	-- Boots of Ethereal Manipulation
 					i(29262),	-- Boots of the Endless Hunt
 					i(29359),	-- Feral Staff of Lashing
@@ -72,14 +72,14 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28367),	-- Greatsword of Forlorn Visions
 					i(28229),	-- Incanter's Robe
 					i(28343),	-- Jagged Bark Pendant
-				 -- i(28348),	-- Moonglade Cowl (7.3.5 - Moved to High Botanist Freywinn)	
+					-- i(28348),	-- Moonglade Cowl (7.3.5 - Moved to High Botanist Freywinn)
 					i(28371),	-- Netherfury Cape
 					i(24311),	-- Pattern: Whitemend Hood
-				 -- i(28349),	-- Tidefury Helm (7.3.5 - Moved to Laj)
-				 -- i(28350),	-- Warhelm of the Bold (7.3.5 - Moved to Commander Sarannis)
+					-- i(28349),	-- Tidefury Helm (7.3.5 - Moved to Laj)
+					-- i(28350),	-- Warhelm of the Bold (7.3.5 - Moved to Commander Sarannis)
 					i(28342),	-- Warp Infused Drape
 					i(28345),	-- Warp Splinter's Thorn
-				 -- i(28347),	-- Warpscale Leggings (7.3.5 - Moved to Commander Sarannis)
+					-- i(28347),	-- Warpscale Leggings (7.3.5 - Moved to Commander Sarannis)
 					i(28341),	-- Warpstaff of Arcanum
 				})),
 			}),
@@ -100,7 +100,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(28228),	-- Beast Lord Cuirass (7.3.5 - Moved from Warp Splinter)
 						i(28321),	-- Enchanted Thorium Torque
 						i(28317),	-- Energis Armwraps
-						i(28348),	-- Moonglade Cowl (7.3.5 - Moved from Warp Splinter)	
+						i(28348),	-- Moonglade Cowl (7.3.5 - Moved from Warp Splinter)
 						i(28318),	-- Obsidian Clodstompers
 						i(23617),	-- Plans: Earthpeace Breastplate
 						i(28315),	-- Stormreaver Warblades
@@ -124,7 +124,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					cr(17977, e(562, {	-- Warp Splinter
 						ach(680),	-- Heroic: The Botanica
 						i(28370),	-- Bangle of Endless Blessings
-					 -- i(28228),	-- Beast Lord Cuirass (7.3.5 - Moved to High Botanist Freywinn)
+						-- i(28228),	-- Beast Lord Cuirass (7.3.5 - Moved to High Botanist Freywinn)
 						i(29258),	-- Boots of Ethereal Manipulation
 						i(29262),	-- Boots of the Endless Hunt
 						i(29359),	-- Feral Staff of Lashing
@@ -132,14 +132,14 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(28367),	-- Greatsword of Forlorn Visions
 						i(28229),	-- Incanter's Robe
 						i(28343),	-- Jagged Bark Pendant
-					 -- i(28348),	-- Moonglade Cowl (7.3.5 - Moved to High Botanist Freywinn)	
+						-- i(28348),	-- Moonglade Cowl (7.3.5 - Moved to High Botanist Freywinn)
 						i(28371),	-- Netherfury Cape
 						i(24311),	-- Pattern: Whitemend Hood
-					 -- i(28349),	-- Tidefury Helm (7.3.5 - Moved to Laj)
-					 -- i(28350),	-- Warhelm of the Bold (7.3.5 - Moved to Commander Sarannis)
+						-- i(28349),	-- Tidefury Helm (7.3.5 - Moved to Laj)
+						-- i(28350),	-- Warhelm of the Bold (7.3.5 - Moved to Commander Sarannis)
 						i(28342),	-- Warp Infused Drape
 						i(28345),	-- Warp Splinter's Thorn
-					 -- i(28347),	-- Warpscale Leggings (7.3.5 - Moved to Commander Sarannis)
+						-- i(28347),	-- Warpscale Leggings (7.3.5 - Moved to Commander Sarannis)
 						i(28341),	-- Warpstaff of Arcanum
 					}))
 				}

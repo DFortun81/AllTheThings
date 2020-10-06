@@ -1587,7 +1587,7 @@ _.Instances = { tier(1, {	-- Classic
 			un(REMOVED_FROM_GAME, n(14834, {	-- Hakkar the Soulflayer
 				{
 					["itemID"] = 19802,	-- Heart of Hakkar
-					["u"] = REMOVED_FROM_GAME,		
+					["u"] = REMOVED_FROM_GAME,
 					["questID"] = 8183,	-- The Heart of Hakkar
 				},
 				un(REMOVED_FROM_GAME, i(19862)),	-- Aegis of the Blood God

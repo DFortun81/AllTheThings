@@ -137,7 +137,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(47214),	-- Banner of Victory
 				})),
 				cr(35451, e(637, {	-- The Black Knight
-					{	-- The Black Knight 
+					{	-- The Black Knight
 						["allianceAchievementID"] = 4296, 	-- Trial of the Champion [Alliance]
 						["hordeAchievementID"] = 3778, 		-- Trial of the Champion [Horde]
 						["creatureID"] = 35451,				-- The Black Knight [Alliance] // [Horde]
@@ -207,7 +207,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["hordeAchievementID"] = 4297, 	-- Heroic: Trial of the Champion [Horde]
 								["criteriaID"] = 3,	-- Runok Wildmane [Alliance] // Colosos [Horde]
 							},
-							
 							{	-- Zul'tore [Alliance] // Jaelyne Evensong [Horde]
 								["allianceAchievementID"] = 4298, 	-- Heroic: Trial of the Champion [Alliance]
 								["hordeAchievementID"] = 4297, 	-- Heroic: Trial of the Champion [Horde]

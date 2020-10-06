@@ -1,13 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(320, {	-- Terrace of Endless Spring
 		["order"] = "03",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 90,
-		["maps"] = { 
+		["maps"] = {
 			456,	-- Raid Map
 			728,	-- Monk: Legion Class Campaign Map
 		},

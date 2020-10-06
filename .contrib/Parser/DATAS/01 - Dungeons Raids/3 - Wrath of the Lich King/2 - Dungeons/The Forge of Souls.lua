@@ -8,7 +8,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["coord"] = { 52.3, 89.3, 118 },
 		["lvl"] = 75,
 		["g"] = {
-			n(QUESTS, { 
+			n(QUESTS, {
 				q(24499, {	-- Echoes of Tortured Souls
 					["sourceQuest"] = 24510,	-- Inside the Frozen Citadel
 					["provider"] = { "n", 37597 },	-- Lady Jaina Proudmoore

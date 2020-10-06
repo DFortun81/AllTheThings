@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -14,7 +15,7 @@ _.Zones =
 					["crs"] = { 1561 },    -- Bloodsail Raider
 				}),
 				i(8494),	-- Parrot Cage (Hyacinth Macaw)
-				i(48126),	-- Razzashi Hatchling						
+				i(48126),	-- Razzashi Hatchling
 			}),
 		}),
 	}),

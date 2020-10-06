@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -43,7 +44,7 @@ _.Zones =
 				i(5755, {	-- Onyx Shredder Plate
 					["crs"] = { 4260 },	-- Venture Co. Shredder
 				}),
-				i(1703, {	-- Crystal Basilisk Spine 
+				i(1703, {	-- Crystal Basilisk Spine
 					["crs"] = { 689 },	-- Crystal Spine Basilisk
 				}),
 				i(48126), 	-- Razzashi Hatchling

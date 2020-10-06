@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1030, {	-- Temple of Sethraliss
 		["coord"] = { 51.9, 25.4, 864 },

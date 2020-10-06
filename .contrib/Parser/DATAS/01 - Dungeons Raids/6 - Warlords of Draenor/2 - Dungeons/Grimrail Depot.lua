@@ -87,7 +87,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				e(1163, {	-- Nitrogg Thundertower
-					["crs"] = { 
+					["crs"] = {
 						79548,	-- Assault Cannon
 						79545,	-- Nitrogg Thundertower
 					},
@@ -268,7 +268,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				e(1163, {	-- Nitrogg Thundertower
-					["crs"] = { 
+					["crs"] = {
 						79548,	-- Assault Cannon
 						79545,	-- Nitrogg Thundertower
 					},
@@ -445,7 +445,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				e(1163, {	-- Nitrogg Thundertower
-					["crs"] = { 
+					["crs"] = {
 						79548,	-- Assault Cannon
 						79545,	-- Nitrogg Thundertower
 					},
