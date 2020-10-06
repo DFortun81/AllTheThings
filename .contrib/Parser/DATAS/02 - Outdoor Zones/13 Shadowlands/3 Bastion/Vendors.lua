@@ -36,6 +36,17 @@ _.Zones =
 						}),
 					},
 				}),
+				n(171981,	{	-- Zeleskos <Pet Vendor>
+					--["coord"] = { 52.2, 47.0, 1533 },
+					["g"] = {
+						i(184398),	-- Steward Featherling
+						i(180871),	-- Indigo
+						i(180628),	-- Pearlwing Heron
+						i(180639),	-- Dusty Sporeflutterer
+						i(180814),	-- Sable
+						i(180815),	-- Brightscale Hatchling
+					},
+				}),
 			}),
 		}),
 	}),

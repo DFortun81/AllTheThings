@@ -57,6 +57,7 @@ _.PetJournal =
 		p(569), 	-- Garden Frog
 		p(2077), 	-- Ghost Shark
 		p(1665), 	-- Ghostshell Crab
+		p(2930),	-- Glimmerpool Hatchling
 		p(2647),	-- Glimmershell Scuttler
 		p(2684),	-- Glittering Diamondshell
 		p(749), 	-- Golden Civet

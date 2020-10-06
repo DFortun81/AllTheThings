@@ -7,6 +7,7 @@ _.PetJournal =
 	pa(243, { 	-- Magic
 		p(1624),	-- Abyssius
 		p(2420),	-- Accursed Hexxer
+		p(3051),	-- Animated Cruor
 		p(2893),	-- Animated Tome
 		p(2842),	-- Anomalus
 		p(1160),	-- Arcane Eye
@@ -60,6 +61,7 @@ _.PetJournal =
 		p(1718),	-- Hateful Eye
 		p(1926),	-- Hungering Claw
 		p(1631),	-- Hyjal Wisp
+		p(2960),	-- Invertebrate Oil
 		p(446),		-- Jade Oozeling
 		p(845),		-- Jade Owl
 		un(REMOVED_FROM_GAME, p(231)),	-- Jade Tiger

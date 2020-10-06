@@ -53,6 +53,7 @@ _.PetJournal =
 		p(2817),			-- Gloober, as G-huun
 		p(742),				-- Clouded Hedgehog
 		p(197),				-- Cobra Hatchling
+		p(2936),			-- Copperfur Kit
 		p(562),				-- Coral Adder
 		p(488),				-- Coral Snake
 		p(1890),			-- Corgi Pup
@@ -188,6 +189,7 @@ _.PetJournal =
 		p(2907),			-- Rocky
 		p(2891),			-- Rose Spiderling
 		p(1749),			-- Rose Taipan
+		p(3007),			-- Rosetipped Spiderling
 		p(2847),			-- Rotbreath
 		p(3020),			-- Runelight Leaper
 		p(2661),			-- Rustyroot Snooter

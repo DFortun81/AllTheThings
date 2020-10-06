@@ -82,6 +82,7 @@ _.PetJournal =
 			["races"] = HORDE_ONLY,
 		}),
 		p(1226),			-- Lil' Bad Wolf
+		p(3062),			-- Lost Featherling
 		un(REMOVED_FROM_GAME, p(111)),		-- Lurky
 		un(REMOVED_FROM_GAME, p(189)),		-- Mini Tyrael
 		p(296, {	-- Moonkin Hatchling (Alliance)
@@ -112,6 +113,7 @@ _.PetJournal =
 		p(1953),			-- Snobold Runt
 		p(515),				-- Sporeling Sprout
 		p(1935),			-- Squirky
+		p(3061),			-- Steward Featherling
 		p(1158),			-- Stunted Yeti
 		p(1885),			-- Sunborne Val'kyr
 		p(1073),			-- Terky

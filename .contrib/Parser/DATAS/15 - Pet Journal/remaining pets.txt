@@ -19,7 +19,8 @@ i(181268)	-- Backbone(abom stitching)
 i(183714)	-- Swamp Reed(raven)
 i(183855)	-- Stony's Infused Ruby(venthyr, repaired mirror in raven)
 i(180869)	-- Devoured Wader
-i(180871)	-- Indigo
+i(184400)	-- Courage/drop from Courage in Bastion
+i(184397)	-- Lost Featherling/Drop in Bastion
 i()
 
 
@@ -29,6 +30,6 @@ i()
 -- not in journal
 
 i(183853)	-- Baby Sinfall Screecher
-i(180860)	-- Orange Vulpin
-i(180861)	-- Red Vulpin
+
+
 i(180841)	-- Olive Dragon Turtle

@@ -54,6 +54,7 @@ _.PetJournal =
 		p(2405, {			-- Corlain Falcon
 			["races"] = ALLIANCE_ONLY,
 		}),
+		p(3065),			-- Courage
 		p(1997),			-- Crackers
 		p(507),				-- Crested Owl
 		p(2567),			-- Crimson Bat Pup
@@ -73,6 +74,7 @@ _.PetJournal =
 		p(537),				-- Dragonbone Hatchling
 		un(REMOVED_FROM_GAME, p(1386)),		-- Dread Hatchling
 		p(2431),			-- Dreadtick Leecher
+		p(2902),			-- Dusky Dredwing Pup
 		p(2912),			-- Dusty Sporeflutterer
 		p(1588),			-- Dusty Sporewing
 		p(1761),			-- Echo Batling
@@ -137,6 +139,7 @@ _.PetJournal =
 		p(1469),			-- Junglebeak
 		p(1597),			-- Kaliri Hatchling
 		p(2585),			-- Kor'thik Swarmling
+		p(3063),			-- Larion Pouncer
 		p(2390),			-- Leafy Flutterwing
 		p(2552),			-- Leatherwing Screecher
 		p(1713),			-- Long-Eared Owl

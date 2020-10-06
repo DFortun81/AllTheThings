@@ -7,7 +7,16 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			filter(101, {	-- Battle Pets
 				i(181259, {	-- Clutch
-					--["crs"] = {  },	-- Vibrant Glimmerfly
+					--["crs"] = {  },
+				}),
+				p(3051, {	-- Animated Cruor
+					--["crs"] = {  },
+				}),
+				p(3050,	{	-- Bleak Skitterer
+					--["crs"] = {  },
+				}),
+				p(3049,	{	-- Pulsating Maggot
+					--["crs"] = {  },
 				}),
 			}),
 		}),

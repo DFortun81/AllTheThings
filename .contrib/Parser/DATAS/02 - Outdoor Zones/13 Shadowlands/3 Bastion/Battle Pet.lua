@@ -21,6 +21,15 @@ _.Zones =
 				i(180867, {	-- Wader Chick
 					["crs"] = { 171712 },	-- Wader Chick
 				}),
+				i(180860,	{	-- Copperfur Kit
+					--["crs"] = {  },	-- Fledgling Teroclaw
+				}),
+				p(2930, {	-- Glimmerpool Hatchling // Olive Dragon Turtle??
+					--["crs"] = {  },	-- Fledgling Teroclaw
+				}),
+				i(180861, {	-- Rustfur Kit // Red Vulpin??
+					--["crs"] = {  },	-- Fledgling Teroclaw
+				}),
 			}),
 		}),
 	}),

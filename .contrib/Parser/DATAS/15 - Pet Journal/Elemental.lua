@@ -71,6 +71,7 @@ _.PetJournal =
 		p(1177),	-- Living Sandling
 		p(337),		-- Lumpy
 		p(1955),	-- Magma Rageling
+		p(3014),	-- Mire Creeper
 		p(2467),	-- Mischievous Zephyr
 		un(31, p(1451)),	-- Molten Corgi
 		p(1932),	-- Nightmare Lasher

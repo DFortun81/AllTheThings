@@ -169,6 +169,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14307, crit(27)),	-- Adventurer of Bastion / Larionrider Orstus
+						i(184401),	-- Larion Pouncer
 					},
 				}),
 				n(161529, { -- Nemaeus											-- Something is wrong here ... QuestID and/or crit
