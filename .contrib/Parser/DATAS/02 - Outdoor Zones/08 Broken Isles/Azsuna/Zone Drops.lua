@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -154,7 +155,7 @@ _.Zones =
 						107625,	-- Vengeful Soul
 						107624,	-- Vengeful Soul
 						107628,	-- Vengeful Soul
-						111633,	-- Wandering Shellback								
+						111633,	-- Wandering Shellback
 						90379,	-- Withered Exile
 						90318,	-- Withered Fanatic
 						90380,	-- Withered Mana-Rager
@@ -2486,7 +2487,7 @@ _.Zones =
 						89801,	-- Withered Scavenger
 						121039,	-- Wrathguard Harbinger
 					},
-				}),						
+				}),
 				i(121051, {	-- Temporal Scholar's Leggings
 					["bonusID"] = 1812,
 					["crs"] = {

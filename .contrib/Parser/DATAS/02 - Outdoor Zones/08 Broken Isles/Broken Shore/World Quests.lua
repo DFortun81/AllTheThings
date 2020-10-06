@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -205,7 +206,7 @@ _.Zones =
 					["lvl"] = 110,
 					["classes"] = { MAGE },
 					["isWorldQuest"] = true,
-				}),				
+				}),
 				q(46948, {	-- Malificus
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
@@ -456,10 +457,8 @@ _.Zones =
 				}),
 				--[[
 				n(-386,  {	-- Trinkets
-					
 				}),
 				n(-387,  {	-- Relics
-					
 				}),
 				]]--
 			}),

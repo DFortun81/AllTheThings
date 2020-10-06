@@ -1,12 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(641, {	-- Val'sharah
 			n(-34,  {	-- World Quests
---[[	raw quest list to check against
+				--[[	raw quest list to check against
 				-- Unknown
 				q(38693),	-- [DEPRECATED] Kill Feral Dogs
 				q(39032),	-- A Summons from Saylanna
@@ -58,7 +59,7 @@ _.Zones =
 				q(44825),	-- Wisp in the Willows
 				q(46819),	-- Wrecked Cart
 				q(39420),	-- Xavius Event TRACKING
-]]--			
+				]]--
 				q(45924, {	-- Abyssal Monstrosity (Invasion WQ)
 					["lvl"] = 98,
 					["isWorldQuest"] = true,
@@ -960,6 +961,6 @@ _.Zones =
 					i(143682),	-- Viscous Terror
 				}),
 			}),
-		}),	
+		}),
 	}),
 };

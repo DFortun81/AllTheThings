@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -64,7 +65,7 @@ _.Zones =
 						},
 						["repeatable"] = true,
 						["requireSkill"] = BLACKSMITHING,
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 147207, 1 },	-- 1x Legendary Blacksmithing Supplies
 							{ "i", 147443, 1 },	-- 1x Carrying Case For Hammer of Forgotten Heroes
 						},
@@ -215,7 +216,7 @@ _.Zones =
 						["coord"] = { 41.2, 59.4, 646 },
 						["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
 						["repeatable"] = true,
-						["requireSkill"] = LEATHERWORKING, 
+						["requireSkill"] = LEATHERWORKING,
 					}),
 					q(46694, {	-- Mail of the Ancients
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
