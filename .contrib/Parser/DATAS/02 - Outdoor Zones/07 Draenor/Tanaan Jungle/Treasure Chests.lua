@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -99,8 +100,8 @@ _.Zones =
 					["coord"] = { 63.3, 28.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["description"] = "You need to be on the quest above or have completed it to loot this item.",
 					["g"] = {
-						q(39394,{	-- The Cipher of Damnation 
-							i(128309),  -- Shard of Cyrukh Pet	
+						q(39394,{	-- The Cipher of Damnation
+							i(128309),  -- Shard of Cyrukh Pet
 						}),
 					},
 				}),
@@ -119,7 +120,7 @@ _.Zones =
 					["questID"] = 38593,
 					["coord"] = { 54.8, 69.31, 534 },
 					["g"] = {
-						i(127334),	-- Ravager Hunting Spear 
+						i(127334),	-- Ravager Hunting Spear
 					},
 				}),
 				o(241565, {	-- Looted Bleeding Hollow Treasure
@@ -146,7 +147,7 @@ _.Zones =
 						{ 44.6, 77.5, 534 },	-- Cave Entrance
 					},
 					["g"] = {
-						i(127337),	-- Emanating Staff of Shadow 
+						i(127337),	-- Emanating Staff of Shadow
 					},
 				}),
 				o(241656, {	-- Overgrown Relic
@@ -158,7 +159,7 @@ _.Zones =
 				}),
 				o(241566, {	-- Rune Etched Femur
 					["questID"] = 38686,
-					["coord"] = { 51.7, 24.3, 534 },		
+					["coord"] = { 51.7, 24.3, 534 },
 					["g"] = {
 						i(127341),	-- Rune-Etched Femur
 					},
@@ -174,7 +175,7 @@ _.Zones =
 					["questID"] = 38703,
 					["coord"] = { 49.9, 79.6, 534 },
 					["g"] = {
-						i(127354),	-- Scout's Spy Cloak 
+						i(127354),	-- Scout's Spy Cloak
 					},
 				}),
 				o(241674, {	-- Skull of the Mad Chief
@@ -187,7 +188,7 @@ _.Zones =
 				o(241521, {	-- Snake Charmer's Flute
 					["questID"] = 38638,
 					["coord"] = { 40.6, 79.8, 534 },
-					["g"] = {					
+					["g"] = {
 						i(127333),	-- Ogra'mal Snake Charming Flute
 					},
 				}),
@@ -195,17 +196,17 @@ _.Zones =
 					["questID"] = 38701,
 					["description"] = "Click on Loose Soil and throw it into the tree to grab the strange fruit.",
 					["coord"] = { 64.7, 42.8, 534 },
-					["g"] = {					
+					["g"] = {
 						i(127396,{ 		-- Strange Green Fruit
 							["description"] = "After 14 days, the fruit will ripen into the toy.",
 							["g"] = {
-								i(127395, {	-- Ripened Strange Fruit	
+								i(127395, {	-- Ripened Strange Fruit
 									i(127394),	-- Podling Camouflage (TOY!)
 								}),
 							},
 						}),
 					},
-				}),			
+				}),
 				o(240003, {	-- Strange Sapphire
 					["questID"] = 37956,
 					["coord"] = { 36.4, 43.5, 534 },
@@ -216,8 +217,8 @@ _.Zones =
 				o(240577, {	-- The Blade of Kra'nak
 					["questID"] = 38320,
 					["coord"] = { 19.2, 40.9, 534 },
-					["g"] = {					
-						i(127338),	-- Guardian Swiftblade of Kra'nak 
+					["g"] = {
+						i(127338),	-- Guardian Swiftblade of Kra'nak
 					},
 				}),
 				o(241847, {	-- The Commander's Shield
@@ -238,7 +239,7 @@ _.Zones =
 					["questID"] = 38639,
 					["coord"] = { 40.8, 75.6, 534 },
 					["description"] = "Eat |cFFFFD700Mysterious Fruit|r until you get the |cFFFFD700Pollen Protection|r buff.",
-					["g"] = {				
+					["g"] = {
 						i(127766),	-- The Perfect Blossom Toy
 					},
 				}),
@@ -246,14 +247,14 @@ _.Zones =
 					["questID"] = 38426,
 					["coord"] = { 32.4, 70.4, 534 },
 					["g"] = {
-						i(127670),	-- Accursed Tome of the Sargerei Toy 	
+						i(127670),	-- Accursed Tome of the Sargerei Toy
 					},
 				}),
 				o(240289, {	-- Weathered Axe
 					["questID"] = 38208,
 					["coord"] = { 15.9, 49.7, 534 },
-					["g"] = {				
-						i(127324),	-- Weathered Memento Axe 
+					["g"] = {
+						i(127324),	-- Weathered Memento Axe
 					},
 				}),
 			}),

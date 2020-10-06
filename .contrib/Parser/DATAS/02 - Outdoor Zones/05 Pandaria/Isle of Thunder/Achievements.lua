@@ -2,6 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
+-- TODO: formatting
 _.Zones =
 {
 	m(424, {	-- Pandaria

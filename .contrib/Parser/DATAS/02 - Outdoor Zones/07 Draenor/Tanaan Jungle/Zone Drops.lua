@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -29,7 +30,7 @@ _.Zones =
 						["questID"] = 39360,	-- Equipment Blueprint: True Iron Rudder
 					}),
 					i(128225),	-- Empowered Apexis Fragment
-					i(124562, {	-- Baleful Armament	
+					i(124562, {	-- Baleful Armament
 						["crs"] = { 96130 },	-- Ravenspeaker Thelnaas <Order of the Awakened>
 						["g"] = {
 							i(124627),	-- Baleful Dagger - Rogue

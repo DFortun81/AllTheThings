@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, { 	-- Pandaria
@@ -432,7 +433,7 @@ _.Zones =
 					["coords"] = {
 						{ 44.0, 30.9, 555 },	-- actual spawn, in Cavern of Lost Spirits
 						{ 43.1, 41.2, 554 },	-- entrance
-					},	
+					},
 					["g"] = {
 						i(104312, {	-- Strange Glowing Mushroom
 							crit(19, {	-- Strange Glowing Mushroom

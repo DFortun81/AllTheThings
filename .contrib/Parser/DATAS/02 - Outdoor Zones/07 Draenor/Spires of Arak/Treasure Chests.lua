@@ -1,6 +1,8 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
+-- TODO: make real gear categories, not just comments
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -213,7 +215,7 @@ _.Zones =
 						i(116718),	-- Ruhkmari Bowl
 						i(116602),	-- Ruhkmari Scepter
 						i(116598),	-- Ruhkmari Spellblade
-						i(116609),	-- Ruhkmari Wand	
+						i(116609),	-- Ruhkmari Wand
 						i(106661),	-- Talon Guard Shield
 						-- Head
 						i(106667),	-- Breezestrider Hood
@@ -248,7 +250,7 @@ _.Zones =
 						i(106670),	-- Breezestrider Waistband
 						i(106679),	-- Snarlthorn Belt
 						i(106656),	-- Talon Guard Girdle
-						i(106671),	-- Windswept Cord	
+						i(106671),	-- Windswept Cord
 						-- Legs
 						i(106665),	-- Breezestrider Britches
 						i(106684),	-- Snarlthorn Legguards
@@ -296,7 +298,7 @@ _.Zones =
 							i(106708),	-- Voidwrap Robe
 							-- Wrist
 							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers							
+							i(106713),	-- Sunspring Bracers
 							i(106711),	-- Voidwrap Wristwraps
 							-- Hands
 							i(106747),	-- Packrunner Gauntlets
@@ -341,7 +343,7 @@ _.Zones =
 						i(116718),	-- Ruhkmari Bowl
 						i(116602),	-- Ruhkmari Scepter
 						i(116598),	-- Ruhkmari Spellblade
-						i(116609),	-- Ruhkmari Wand	
+						i(116609),	-- Ruhkmari Wand
 						i(106661),	-- Talon Guard Shield
 						-- Head
 						i(106667),	-- Breezestrider Hood
@@ -376,7 +378,7 @@ _.Zones =
 						i(106670),	-- Breezestrider Waistband
 						i(106679),	-- Snarlthorn Belt
 						i(106656),	-- Talon Guard Girdle
-						i(106671),	-- Windswept Cord	
+						i(106671),	-- Windswept Cord
 						-- Legs
 						i(106665),	-- Breezestrider Britches
 						i(106684),	-- Snarlthorn Legguards
@@ -424,7 +426,7 @@ _.Zones =
 							i(106708),	-- Voidwrap Robe
 							-- Wrist
 							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers							
+							i(106713),	-- Sunspring Bracers
 							i(106711),	-- Voidwrap Wristwraps
 							-- Hands
 							i(106747),	-- Packrunner Gauntlets
@@ -443,7 +445,7 @@ _.Zones =
 							i(106697),	-- Sabermaw Boots
 							i(106726),	-- Stonecrag Sabatons
 							-- Trinket
-						}),					
+						}),
 					},
 				}),
 				o(235168, {	-- Outcast's Pouch
@@ -469,7 +471,7 @@ _.Zones =
 						i(116718),	-- Ruhkmari Bowl
 						i(116602),	-- Ruhkmari Scepter
 						i(116598),	-- Ruhkmari Spellblade
-						i(116609),	-- Ruhkmari Wand	
+						i(116609),	-- Ruhkmari Wand
 						i(106661),	-- Talon Guard Shield
 						-- Head
 						i(106667),	-- Breezestrider Hood
@@ -504,7 +506,7 @@ _.Zones =
 						i(106670),	-- Breezestrider Waistband
 						i(106679),	-- Snarlthorn Belt
 						i(106656),	-- Talon Guard Girdle
-						i(106671),	-- Windswept Cord	
+						i(106671),	-- Windswept Cord
 						-- Legs
 						i(106665),	-- Breezestrider Britches
 						i(106684),	-- Snarlthorn Legguards
@@ -552,7 +554,7 @@ _.Zones =
 							i(106708),	-- Voidwrap Robe
 							-- Wrist
 							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers							
+							i(106713),	-- Sunspring Bracers
 							i(106711),	-- Voidwrap Wristwraps
 							-- Hands
 							i(106747),	-- Packrunner Gauntlets
@@ -571,9 +573,9 @@ _.Zones =
 							i(106697),	-- Sabermaw Boots
 							i(106726),	-- Stonecrag Sabatons
 							-- Trinket
-						}),					
+						}),
 					},
-				}),	
+				}),
 				o(234449, {	-- Relics of the Outcasts
 					["questID"] = 36355,
 					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
@@ -657,7 +659,7 @@ _.Zones =
 							i(106708),	-- Voidwrap Robe
 							-- Wrist
 							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers							
+							i(106713),	-- Sunspring Bracers
 							i(106711),	-- Voidwrap Wristwraps
 							-- Hands
 							i(106747),	-- Packrunner Gauntlets
@@ -677,9 +679,9 @@ _.Zones =
 							i(106726),	-- Stonecrag Sabatons
 							-- Finger
 							-- Trinket
-						}),				
+						}),
 					},
-				}),							
+				}),
 				o(235135, {	-- Smuggled Apexis Artifacts
 					["questID"] = 36433,
 					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
@@ -721,7 +723,7 @@ _.Zones =
 						i(116718),	-- Ruhkmari Bowl
 						i(116602),	-- Ruhkmari Scepter
 						i(116598),	-- Ruhkmari Spellblade
-						i(116609),	-- Ruhkmari Wand	
+						i(116609),	-- Ruhkmari Wand
 						i(106661),	-- Talon Guard Shield
 						-- Head
 						i(106667),	-- Breezestrider Hood
@@ -756,7 +758,7 @@ _.Zones =
 						i(106670),	-- Breezestrider Waistband
 						i(106679),	-- Snarlthorn Belt
 						i(106656),	-- Talon Guard Girdle
-						i(106671),	-- Windswept Cord	
+						i(106671),	-- Windswept Cord
 						-- Legs
 						i(106665),	-- Breezestrider Britches
 						i(106684),	-- Snarlthorn Legguards
@@ -804,7 +806,7 @@ _.Zones =
 							i(106708),	-- Voidwrap Robe
 							-- Wrist
 							i(106729),	-- Meadowstomper Bindings
-							i(106713),	-- Sunspring Bracers							
+							i(106713),	-- Sunspring Bracers
 							i(106711),	-- Voidwrap Wristwraps
 							-- Hands
 							i(106747),	-- Packrunner Gauntlets

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -61,7 +62,7 @@ _.Zones =
 				}),
 				n(-247, {	-- Riches of Pandaria
 					o(213366, {	-- Ancient Pandaren Tea Pot
-						["questID"] = 31400, 
+						["questID"] = 31400,
 						["coord"] = { 26.22, 32.35, 371 },
 						["g"] = {
 							i(85780),	-- Ancient Pandaren Tea Pot
