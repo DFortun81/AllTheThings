@@ -1,6 +1,7 @@
---------------------------------------------------
---          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+
 _.Zones =
 {
 	m(875, {	-- Zandalar
@@ -13,7 +14,7 @@ _.Zones =
 						["coord"] = { 26.3, 47.3, 864 },
 						["sourceQuests"] = {
 							53947,	-- In the Dunes (A)
-							53783,	-- In the Dunes (H)	
+							53783,	-- In the Dunes (H)
 						},
 						["requireSkill"] = ENGINEERING,
 						["lvl"] = 120,
@@ -23,7 +24,7 @@ _.Zones =
 						["coord"] = { 26.3, 47.3, 864 },
 						["sourceQuests"] = {
 							53947,	-- In the Dunes (A)
-							53783,	-- In the Dunes (H)	
+							53783,	-- In the Dunes (H)
 						},
 						["requireSkill"] = ENGINEERING,
 						["lvl"] = 120,
@@ -33,7 +34,7 @@ _.Zones =
 						["coord"] = { 26.3, 47.3, 864 },
 						["sourceQuests"] = {
 							53947,	-- In the Dunes (A)
-							53783,	-- In the Dunes (H)	
+							53783,	-- In the Dunes (H)
 						},
 						["requireSkill"] = ENGINEERING,
 						["lvl"] = 120,
@@ -208,7 +209,7 @@ _.Zones =
 						["g"] = {
 							recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
 						},
-					}),	
+					}),
 				}),
 			}),
 		}),

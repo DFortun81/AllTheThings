@@ -1,13 +1,14 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(-34,  {	-- World Quests
 				n(QUESTS, {
-	--[[	raw quest list to check against
+					--[[	raw quest list to check against
 					q(53318, {	-- Ductile Platinum
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -51,7 +52,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-]]--				
+					]]--
 					q(52180, {	-- A Brennadam Shame
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -1017,7 +1018,7 @@ _.Zones =
 						-- Include the cloak.
 						{"select", "itemID", 166668},	-- Battalion Veteran's Greatcloak
 						{"finalize"},	-- Push the items to the finalized list.
-						
+
 						{"select", "mapID", 942},	-- Stormsong Valley
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "npcID", -34 },	-- Select the World Quests Header.
@@ -1026,7 +1027,7 @@ _.Zones =
 						{"pop"},	-- Discard the Item Set Header and acquire the children.
 						{"is", "itemID" },	-- Select the Items.
 						{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.
-						
+
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},

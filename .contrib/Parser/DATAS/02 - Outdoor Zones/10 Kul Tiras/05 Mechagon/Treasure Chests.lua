@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
@@ -31,7 +32,7 @@ _.Zones =
 						},
 						["g"] = {
 							i(170146, {	-- Paint Bottle: Nukular Red
-								["questID"] = 56907,									
+								["questID"] = 56907,
 							}),
 						},
 					}),
@@ -108,7 +109,7 @@ _.Zones =
 							{ 66.5, 22.5, 1462 },
 							{ 57.3, 22.9, 1462 },	-- Possibly bloat from another chest
 						},
-					}),	
+					}),
 					o(325665, {	-- Mechanized Chest
 						["questID"] = 55553,
 						["isDaily"] = true,
@@ -150,7 +151,7 @@ _.Zones =
 							{ 21.7, 83.0, 1462 },
 							{ 12.2, 85.8, 1462 },
 						},
-					}),				
+					}),
 					i(169850, {	-- Azeroth Mini Pack Mini Pack: Mechagon
 						i(169844, {	-- Azeroth Mini: Overspark
 							crit(4, {	-- Overspark

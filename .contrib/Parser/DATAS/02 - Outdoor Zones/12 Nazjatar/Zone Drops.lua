@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
@@ -565,7 +566,7 @@ _.Zones =
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				},
-			}),				
+			}),
 			i(170199, {	-- Zanj'ir Weapon Rack
 				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 					153299,	-- Bonebreaker Szun
@@ -600,7 +601,7 @@ _.Zones =
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				},
-			}),				
+			}),
 		--	Recipes
 			i(169495),	-- Recipe: Superior Battle Potion of Agility (Rank 3)
 			i(169499),	-- Recipe: Superior Battle Potion of Strength (Rank 3)

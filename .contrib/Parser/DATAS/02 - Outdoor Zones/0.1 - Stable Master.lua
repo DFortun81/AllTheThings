@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	n(-48, { 	-- Stable Master
@@ -209,7 +210,6 @@ _.Zones =
 					49755,	-- Zay'hana
 				},
 			}),
-
 		},
 		["description"] = "Any one of the 300+ Stable Masters out in the world can get you this item.",
 		["icon"] = "Interface\\Icons\\garrison_building_stables",

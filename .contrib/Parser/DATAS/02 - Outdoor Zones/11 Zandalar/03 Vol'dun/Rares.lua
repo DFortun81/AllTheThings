@@ -1,6 +1,7 @@
---------------------------------------------------
---          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+
 _.Zones =
 {
 	m(875, {	-- Zandalar
@@ -85,7 +86,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(134643, {	-- Brgl-Lrgl the Basher							
+				n(134643, {	-- Brgl-Lrgl the Basher
 					["questID"] = 50663,
 					["lvl"] = 120,	-- Note!! This is due to him being tied to the WQ
 					["coord"] = { 29.78, 46.47, 864 },

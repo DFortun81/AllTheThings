@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(875, {	-- Zandalar
@@ -729,7 +730,7 @@ _.Zones =
 						-- Include the one extra.
 						{"select", "itemID", 158150},	-- Loa-Pledged Drape
 						{"finalize"},	-- Push the items to the finalized list.
-						
+
 						{"select", "mapID", 862},	-- Zuldazar
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "npcID", -34 },	-- Select the World Quests Header.
@@ -738,7 +739,7 @@ _.Zones =
 						{"pop"},	-- Discard the Item Set Header and acquire the children.
 						{"is", "itemID" },	-- Select the Items.
 						{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.
-						
+
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
