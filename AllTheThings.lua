@@ -3560,10 +3560,11 @@ local function AddTomTomWaypoint(group, auto)
 	if TomTom and (group.visible or (group.objectiveID and not group.saved) or (app.Settings:Get("DebugMode"))) then
 		if group.coords or group.coord then
 			local opt = {
-				title = group.text or group.link,
+				title = group.text or group.name or group.link,
 				persistent = nil,
 				minimap = true,
-				world = true
+				world = true,
+				from = "ATT",
 			};
 			if group.title then opt.title = opt.title .. "\n" .. group.title; end
 			if group.criteriaID then opt.title = opt.title .. "\nCriteria for " .. GetAchievementLink(group.achievementID); end
@@ -3586,11 +3587,14 @@ local function AddTomTomWaypoint(group, auto)
 		end
 		if group.g then
 			for i,subgroup in ipairs(group.g) do
-				AddTomTomWaypoint(subgroup, auto);
+				-- only automatically plot subGroups if they are not quests with incomplete source quests
+				if not subgroup.sourceQuests or subgroup.sourceQuestsCompleted then
+					AddTomTomWaypoint(subgroup, auto);
+				end
 			end
-			-- point arrow at closest waypoint
-			TomTom:SetClosestWaypoint();
 		end
+		-- point arrow at closest waypoint
+		TomTom:SetClosestWaypoint();
 	end
 end
 -- Populates/replaces data within a questObject for displaying in a row
@@ -6925,6 +6929,18 @@ app.BaseQuest = {
 				end
 			end
 			return rawget(t, "altcollected");
+		elseif key == "sourceQuestsCompleted" then
+			if t.sourceQuests and #t.sourceQuests > 0 then
+				local anySourceIncomplete = false;
+				for i,sourceQuestID in ipairs(t.sourceQuests) do
+					if not anySourceIncomplete and not IsQuestFlaggedCompleted(sourceQuestID) then
+						anySourceIncomplete = true;
+					end
+				end
+				return not anySourceIncomplete;
+			end
+			-- nil if no sourceQuests
+			return;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
