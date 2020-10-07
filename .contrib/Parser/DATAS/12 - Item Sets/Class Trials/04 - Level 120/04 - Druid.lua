@@ -41,7 +41,7 @@ _.GearSets =
 						un(NEVER_IMPLEMENTED, i(170627)),	-- Springrain Choker
 						un(NEVER_IMPLEMENTED, i(170606)),	-- Springrain Choker
 						un(NEVER_IMPLEMENTED, i(170619)),	-- Springrain Necklace
-						i(170888),	-- Springrain Pauldrons *LA0422Feral
+						i(170788),	-- Springrain Pauldrons *LA0422Feral
 						un(NEVER_IMPLEMENTED, i(170626)),	-- Springrain Cloak of Durability [NYI]
 						i(170605),	-- Springrain Cloak of Rage *LA0422Feral
 						i(170783),	-- Springrain Vest *LA0422Feral
