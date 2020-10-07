@@ -4181,21 +4181,57 @@ local function RefreshMountCollection()
 		wipe(searchCache);
 	end);
 end
-local function SortAlphabetically(group)
-	if group.visible and group.g then
-		local txtA, txtB;
-		table.sort(group.g, function(a, b)
-			txtA = a.name;
-			txtB = b.name;
-			if txtA then
-				if txtB then return txtA < txtB; end
-				return true;
+local function GetGroupSortValue(group)
+	if group.g then
+		if group.total and group.total > 1 then
+			if group.progress and group.progress > 0 then
+				return (2 + (group.progress / group.total));
 			end
-			return false;
-		end);
-		for i,o in ipairs(group.g) do
-			SortAlphabetically(o);
+			return (1 / group.total);
 		end
+		return 0;
+	elseif group.collectible then
+		if group.collected then
+			return -1;
+		elseif group.sortProgress then
+			return (-2 + group.sortProgress);
+		end
+		return -2;
+	end
+	return -3;
+end
+local function SortGroup(group, sortType)
+	if group.visible and group.g then
+		if not sortType or sortType == "name" then
+			local txtA, txtB;
+			table.sort(group.g, function(a, b)
+				txtA = a.name;
+				txtB = b.name;
+				if txtA then
+					if txtB then return txtA < txtB; end
+					return true;
+				end
+				return false;
+			end);
+			for i,o in ipairs(group.g) do
+				SortGroup(o, "name");
+			end
+		elseif sortType == "progress" then
+			local progA, progB;
+			table.sort(group.g, function(a, b)
+				progA = GetGroupSortValue(a);
+				progB = GetGroupSortValue(b);
+				if progA then
+					if progB then return progA > progB; end
+					return true;
+				end
+				return false;
+			end);
+			for i,o in ipairs(group.g) do
+				SortGroup(o, "progress");
+			end
+		end
+		-- other sort types?
 	end
 end
 app.GetCurrentMapID = function()
@@ -4680,6 +4716,30 @@ app.BaseAchievement = {
 			else
 				return select(app.AchievementCharCompletedIndex, GetAchievementInfo(t.achievementID))
 			end
+		elseif key == "statistic" then
+			if GetAchievementNumCriteria(t.achievementID) == 1 then
+				local quantity, reqQuantity = select(4, GetAchievementCriteriaInfo(t.achievementID, 1));
+				if quantity and reqQuantity and reqQuantity > 1 then
+					return tostring(quantity) .. " / " .. tostring(reqQuantity);
+				end
+			end
+			local statistic = GetStatistic(t.achievementID);
+			if statistic and statistic ~= '0' then
+				return statistic;
+			end
+		elseif key == "sortProgress" then
+			if t.collected then
+				return 1;
+			end
+			-- only calculate achievement progress using achievements where the single criteria is the 'progress bar'
+			if GetAchievementNumCriteria(t.achievementID) == 1 then
+				local quantity, reqQuantity = select(4, GetAchievementCriteriaInfo(t.achievementID, 1));
+				if quantity and reqQuantity and reqQuantity > 1 then
+					-- print("ach-prog",t.achievementID,quantity,reqQuantity);
+					return (quantity / reqQuantity);
+				end
+			end
+			return 0;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -9356,8 +9416,14 @@ local function RowOnClick(self, button)
 			if IsAltKeyDown() then
 				AddTomTomWaypoint(reference, false);
 			elseif IsShiftKeyDown() then
-				app.print("Sorting selection...");
-				SortAlphabetically(reference);
+				if app.Settings:GetTooltipSetting("Sort:Progress") then
+					app.print("Sorting selection by total progress...");
+					SortGroup(reference, "progress");
+				else
+					app.print("Sorting selection alphabetically...");
+					SortGroup(reference, "name");
+				end
+				self:GetParent():GetParent():Update();
 				app.print("Finished Sorting.");
 			else
 				if self.index > 0 then
@@ -9631,9 +9697,8 @@ RowOnEnter = function (self)
 		
 		-- achievement progress. If it has a measurable statistic, show it under the achievement description
 		if reference.achievementID then
-			local statistic = GetStatistic(reference.achievementID)
-			if statistic and statistic ~= '0' then
-				GameTooltip:AddDoubleLine('Progress', statistic)
+			if reference.statistic then
+				GameTooltip:AddDoubleLine("Progress", reference.statistic)
 			end
 		end
 		
