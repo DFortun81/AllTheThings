@@ -23,23 +23,19 @@ _.Achievements =
 				ach(14167),	-- Masked Trio
 				ach(14168),	-- Masked Quartet
 			}),
-			ach(14067, {	-- The Most Horrific Vision of Orgrimmar
-				ach(14065),	-- The Even More Horrific Vision of Orgrimmar
-				ach(14063),	-- Horrific Vision of Orgrimmar
-			}),
-			ach(14066, {	-- The Most Horrific Vision of Stormwind
-				ach(14064),	-- The Even More Horrific Vision of Stormwind
-				ach(14062),	-- Horrific Vision of Stormwind
-			}),
 			ach(13994, {	-- Through the Depths of Visions
 				i(174654),	-- Black Serpent of N'Zoth
-				crit(1),	-- The Most Horrific Vision of Stormwind
-				crit(2),	-- The Most Horrific Vision of Orgrimmar
-				crit(3),	-- Unwavering Resolve
-				crit(4),	-- We Have the Technology
+				ach(14066, {	-- The Most Horrific Vision of Stormwind
+					ach(14064),	-- The Even More Horrific Vision of Stormwind
+					ach(14062),	-- Horrific Vision of Stormwind
+				}),
+				ach(14067, {	-- The Most Horrific Vision of Orgrimmar
+					ach(14065),	-- The Even More Horrific Vision of Orgrimmar
+					ach(14063),	-- Horrific Vision of Orgrimmar
+				}),
+				ach(14060),		-- Unwavering Resolve
+				ach(14061),		-- We have the Technology
 			}),
-			ach(14060),		-- Unwavering Resolve
-			ach(14061),		-- We have the Technology
 		}),
 	}),
 };
