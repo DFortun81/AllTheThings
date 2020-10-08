@@ -25,9 +25,7 @@ _.Zones =
 								{"is", "npcID"},	-- Ignore all of the non-npcID entries. (set headers only)
 							},
 							["g"] = {
-								i(140495, {	-- Torn Invitation [Fox Mount Quest]
-									i(137573),	-- Reins of the Llothien Prowler
-								}),
+								i(140495),	-- Torn Invitation [Fox Mount Quest]
 								i(140013),	-- Night Commander's Pauldrons
 							},
 						}),
@@ -63,9 +61,7 @@ _.Zones =
 						["g"] = {
 							i(152105, {	-- Nightfallen Cache
 								i(143764),	-- Leywoven Flying Carpet
-								i(140495, {	-- Torn Invitation [Fox Mount Quest]
-									i(137573),	-- Reins of the Llothien Prowler
-								}),
+								i(140495),	-- Torn Invitation [Fox Mount Quest]
 							}),
 							un(REMOVED_FROM_GAME, i(146900, {	-- Nightfallen Cache
 								["sym"] = {

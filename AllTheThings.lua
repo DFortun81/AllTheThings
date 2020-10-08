@@ -2301,14 +2301,12 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 						right = L["NOT_COLLECTED_ICON"];
 					end
 				elseif group.trackable then
-					if isDebug or showComThgs then
-						if group.saved then
-							if isDebug or showComThgs  then
-								right = L["COMPLETE_ICON"];
-							end
-						else
-							right = L["NOT_COLLECTED_ICON"];
+					if group.saved then
+						if isDebug or showComThgs then
+							right = L["COMPLETE_ICON"];
 						end
+					elseif isDebug then
+						right = L["NOT_COLLECTED_ICON"];
 					end
 				elseif group.visible then
 					right = group.count and (group.count .. "x") or "---";
