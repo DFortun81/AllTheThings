@@ -1,6 +1,7 @@
----------------------------------------------
---     S E C R E T S     M O D U L E       --
----------------------------------------------
+-------------------------------------------
+--     S E C R E T S     M O D U L E     --
+-------------------------------------------
+
 --[[ commenting out until secret is finished
 _.Secrets =
 {
@@ -117,7 +118,7 @@ _.Secrets =
 						["description"] = "Fish NPCs across Vashj'ir sell sea-themed currencies which need to be exchanged between the various NPCs in order to obtain the currencies required to purchase the |cFFFFD700Red Crystal Monocle|r.\n\nThe currencies expire after a period of time so it is advised that you purchase the items in the order listed.\n",
 						["icon"] = "Interface\\Icons\\inv_helmet_44",
 						["g"] = {
-							o(13000002, { -- Scintillating Murloc Skin Lotion	
+							o(13000002, { -- Scintillating Murloc Skin Lotion
 								["description"] = "Exchange the following items with the NPC until you receive 5 |cFFFFD700Scintillating Murloc Skin Lotion|r.\n",
 								["g"] = {
 									o(13000003, { -- Glittergill Glitter
@@ -178,7 +179,7 @@ _.Secrets =
 											}),
 										},
 									}),
-									o(13000017, {	-- Scintillating Murloc Skin Lotion	
+									o(13000017, {	-- Scintillating Murloc Skin Lotion
 										["coord"] = { 44.6, 20.2, 205 },	-- Shimmering Expanse, Vashj'ir
 										["description"] = "Exchange the |cFFFFD700Glittergill Glitter|r and |cFFFFD700Symbiotic Plankton|r for 5 |cFFFFD700Scintillating Murloc Skin Lotion|r with |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
 									}),
@@ -235,7 +236,7 @@ _.Secrets =
 									}),
 								},
 							}),
-							o(13000030, { -- Buy the Red Crystal Monocle	
+							o(13000030, { -- Buy the Red Crystal Monocle
 								["coord"] = { 44.6, 20.2, 205 },	-- Shimmering Expanse, Vashj'ir
 								["description"] = "Exchange the 3 items with |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir for the |cFFFFD700Red Crystal Monocle|r.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
 								["g"] = {

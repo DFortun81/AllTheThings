@@ -1,6 +1,7 @@
----------------------------------------------------
---          Z O N E S        M O D U L E         --
----------------------------------------------------
+-------------------------------------------------------------------
+--      E X P A N S I O N   F E A T U R E S    M O D U L E       --
+-------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-10057, {	-- War Effort
@@ -100,7 +101,7 @@ _.ExpansionFeatures =
 					i(163422),	-- 7th Legionnaire's Greatbelt
 					i(163409),	-- 7th Legionnaire's Legguards
 					i(163421),	-- 7th Legionnaire's Greaves
-					
+
 					-- HORDE SET --
 					i(163878),	-- Honorbound Barrier
 					i(163870),	-- Honorbound Bonebreaker

@@ -1,6 +1,7 @@
 -----------------------------------------------
---     P L A Y E R   V S   P L A Y E R		 --
+--      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 _.PVP =
 {
 	n(-10052, {	-- Battle for Azeroth
@@ -40,9 +41,9 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(162894)),	-- Dread Aspirant's Spellblade (H)
 					un(REMOVED_FROM_GAME, i(162874)),	-- Dread Aspirant's Staff (H)
 					un(REMOVED_FROM_GAME, i(162876)),	-- Dread Aspirant's Wand (H)
-					un(REMOVED_FROM_GAME, i(162880)),	-- Dread Aspirant's Warglaive (H)				
-				}),					
-				n(-43, {	-- Cloth					
+					un(REMOVED_FROM_GAME, i(162880)),	-- Dread Aspirant's Warglaive (H)
+				}),
+				n(-43, {	-- Cloth
 					un(REMOVED_FROM_GAME, i(162925)),	-- Dread Aspirant's Silk Cord (A)
 					un(REMOVED_FROM_GAME, i(162928)),	-- Dread Aspirant's Silk Cuffs (A)
 					un(REMOVED_FROM_GAME, i(162911)),	-- Dread Aspirant's Silk Gloves (A)
@@ -114,7 +115,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(162953)),	-- Dread Aspirant's Plate Pauldrons (H)
 					un(REMOVED_FROM_GAME, i(162937)),	-- Dread Aspirant's Plate Warboots (H)
 				}),
-				n(-322, {	-- Back					
+				n(-322, {	-- Back
 					un(REMOVED_FROM_GAME, i(163724)),	-- Dread Aspirant's Cape (A)
 					un(REMOVED_FROM_GAME, i(163721)),	-- Dread Aspirant's Cloak (A)
 					un(REMOVED_FROM_GAME, i(163723)),	-- Dread Aspirant's Drape (A)
@@ -332,7 +333,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(161676)),	-- Dread Gladiator's Insignia
 					un(REMOVED_FROM_GAME, i(161674)),	-- Dread Gladiator's Medallion
 				}),
-			}),	
+			}),
 			un(REMOVED_FROM_GAME, i(159570)),	-- Battleborn Sigil Dread Combatant
 			un(REMOVED_FROM_GAME, i(155622)),	-- Warlord's Trophy Dread Combatant
 			un(REMOVED_FROM_GAME, i(164580)),	-- Battleborn Sigil Dread Challenger

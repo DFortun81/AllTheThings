@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+
+_.WorldDrops =
 {
 	tier(3, {	-- Wrath of the Lich King
 		f(200, {	-- Recipes
@@ -78,5 +79,5 @@ _.WorldDrops =
 				i(42178),	-- Pattern: Rustic Workman's Shirt
 			}),
 		}),
-	}),	
+	}),
 };

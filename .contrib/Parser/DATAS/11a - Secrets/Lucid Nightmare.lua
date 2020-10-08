@@ -1,7 +1,8 @@
----------------------------------------------
---     S E C R E T S     M O D U L E       --
----------------------------------------------
-_.Secrets = 
+-------------------------------------------
+--     S E C R E T S     M O D U L E     --
+-------------------------------------------
+
+_.Secrets =
 {
 	n(-800, {	-- Lucid Nightmare
 		["description"] = "***Quest tracking enabled is required to see all the steps.***",
@@ -47,7 +48,7 @@ _.Secrets =
 			o(272163, {	-- Step 5: Strange Skull
 				["model"] = 985300,
 				["questID"] = 47849,
-				["coords"] = { 
+				["coords"] = {
 					{ 63.7, 22.6, 207 },	-- Deepholm
 					{ 58.3, 25.6, 207 },	-- Deepholm
 				},

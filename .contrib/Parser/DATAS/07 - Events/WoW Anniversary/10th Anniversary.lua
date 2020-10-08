@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
+-- TODO: fromatting
 _.WorldEvents =
 {
 	{	-- 10th Anniversary
@@ -38,7 +40,7 @@ _.WorldEvents =
 						["g"] = {
 							{	-- Core Hound Chain
 								["itemID"] = 115484,	-- Core Hound Chain
-								["u"] = 9,				-- Black Market AH Filter 
+								["u"] = 9,				-- Black Market AH Filter
 								--Note!! We use BMAH instead of Anniversary since it can still be purchased there and filters correctly.
 							},
 						},

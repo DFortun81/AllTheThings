@@ -2,6 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
+-- TODO: formatting
 local modTest = function(o)
 	local group = {};
 	for i=1,50,1 do

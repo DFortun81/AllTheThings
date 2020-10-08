@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
--- TODO: refactor some items here accroding to new format standarts.
+-- TODO: refactor some items here according to new format standarts.
 _.WorldEvents =
 {
 	n(-94, { 	-- Black Market AH

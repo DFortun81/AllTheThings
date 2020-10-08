@@ -119,7 +119,7 @@ _.Toys =
 		i(118221),		-- Petrification Stone
 		i(13379),		-- Piccolo of the Flaming Fire
 		i(147867), 		-- Pilfered Sweeper
-		i(140363, {	-- Pocket Fel Spreader
+		i(140363, {		-- Pocket Fel Spreader
 			["timeline"] = {
 				"added 7.0.3.22248",
 				"removed 7.0.3.22810",

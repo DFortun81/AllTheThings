@@ -796,7 +796,7 @@ profession(ARCHAEOLOGY, {
 	}),
 	currency(1172, {	-- Highborne
 		prof(INSCRIPTION, {
-			i(137782),	-- Vantus Rune Technique: Grand Magistrix Elisande (Rank 3)			
+			i(137782),	-- Vantus Rune Technique: Grand Magistrix Elisande (Rank 3)
 		}),
 		f(50,     {	-- Miscellaneous
 			i(130907),	-- Inert Leystone Charm

@@ -1,10 +1,11 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+
+_.WorldDrops =
 {
 	tier(1, {	-- Classic
-		n(-319, {	-- Weapons		
+		n(-319, {	-- Weapons
 			n(-334, {	-- 1H Axes
 				i(13014),	-- Axe of Rin'ji
 				i(811),		-- Axe of the Deep Woods
@@ -56,7 +57,7 @@ _.WorldDrops =
 				i(15272),	-- Razor Axe
 				i(4562),	-- Severing Axe
 				i(15268),	-- Twin-Bladed Axe
-			}),	
+			}),
 			n(-346, {	-- Bows
 				i(15285),	-- Archer's Longbow
 				i(15289),	-- Archstrike Bow
@@ -89,8 +90,8 @@ _.WorldDrops =
 				i(13040),	-- Heartseeking Crossbow
 				i(13039),	-- Skull Splitting Crossbow
 				i(13038),	-- Swiftwind
-			}),			
-			n(-333, {	-- Daggers	
+			}),
+			n(-333, {	-- Daggers
 				i(14555),	-- Alcor's Sunrazor
 				i(15241),	-- Battle Knife
 				i(2236),	-- Blackfang
@@ -138,7 +139,7 @@ _.WorldDrops =
 				i(15322),	-- Smoothbore Gun
 				i(3430),	-- Sniper Rifle
 				i(13138),	-- The Silencer
-			}),			
+			}),
 			n(-331, {	-- Held in Off-hand
 				i(9944),	-- Abjurer's Crystal
 				i(15971),	-- Aboriginal Rod
@@ -286,7 +287,7 @@ _.WorldDrops =
 				i(1726),	-- Poison-Tipped Bone Spear
 				i(13059),	-- Stoneraven
 				i(13060),	-- The Needler
-			}),			
+			}),
 			n(-332, {	-- Shield
 				i(1203),	-- Aegis of Stormwind
 				i(8320),	-- Alabaster Shield
@@ -460,7 +461,7 @@ _.WorldDrops =
 					["g"] = {
 						i(9718),  -- Reforged Blade of Heroes
 					},
-				}), 
+				}),
 				i(15218),	-- Crystal Sword
 				i(869),		-- Dazzling Longsword
 				i(3740),	-- Decapitating Sword
@@ -553,5 +554,5 @@ _.WorldDrops =
 				i(15280),	-- Wizard's Hand
 			}),
 		}),
-	}),	
+	}),
 };

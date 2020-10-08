@@ -5,10 +5,8 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["g"] = {
-			n(-574, {	-- Diablo III Annual Pass
-				un(REMOVED_FROM_GAME, i(76755)),	-- Tyrael's Charger
-			}),
-		},
+		n(-574, {	-- Diablo III Annual Pass
+			un(REMOVED_FROM_GAME, i(76755)),	-- Tyrael's Charger
+		}),
 	}),
 };

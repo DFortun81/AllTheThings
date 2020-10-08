@@ -1,5 +1,5 @@
 -----------------------------------------------
---     P L A Y E R   V S   P L A Y E R       --
+--      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
 _.PVP =
@@ -7,7 +7,7 @@ _.PVP =
 	n(-304, {	-- Battlegrounds
 		m(1334, {	-- Wintergrasp
 			["achievementID"] = 1752,	--  Master of Wintergrasp
-		--	["description"] =
+			--	["description"] =
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(1752, {	-- Master of Wintergrasp

@@ -5,12 +5,10 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["g"] = {
-			n(-555, {	-- Korean Promotional Event
-				n(-549, {	-- Korea Only
-					un(REMOVED_FROM_GAME, i(20651)),	-- Orange Murloc Egg (Murki)
-				}),
+		n(-555, {	-- Korean Promotional Event
+			n(-549, {	-- Korea Only
+				un(REMOVED_FROM_GAME, i(20651)),	-- Orange Murloc Egg (Murki)
 			}),
-		},
+		}),
 	}),
 };

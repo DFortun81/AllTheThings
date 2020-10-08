@@ -7,10 +7,10 @@ profession(960, {	-- Runeforging
 			["g"] = {
 				{
 					["recipeID"] = 53343,  --Rune of Razorice
-				}, 
+				},
 				{
 					["recipeID"] = 53344,  --Rune of the Fallen Crusader
-				}, 
+				},
 				{
 					["recipeID"] = 62158,  --Rune of the Stoneskin Gargoyle
 				},

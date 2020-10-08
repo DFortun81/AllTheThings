@@ -1,6 +1,7 @@
------------------------------------------------------
---     W O R L D   E V E N T S   M O D U L E       --
------------------------------------------------------
+---------------------------------------------
+--    C R A F T A B L E S   M O D U L E    --
+---------------------------------------------
+
 _.Craftables =
 {
 	tier(2, {	-- The Burning Crusade
@@ -400,7 +401,7 @@ _.Craftables =
 				-- Trinket
 				i(23835),	-- Gnomish Poultryizer*
 				i(23836),	-- Goblin Rocket Launcher*
-			}),				
+			}),
 			filter(113, {	-- Bags
 				i(23774),	-- Fel Iron Toolbox
 			}),
@@ -416,7 +417,7 @@ _.Craftables =
 				i(31887),	-- Six of Blessings
 				i(31886),	-- Seven of Blessings
 				i(31883),	-- Eight of Blessings
-				
+
 				-- Furies Deck
 				i(31901),	-- Ace of Furies
 				i(31909),	-- Two of Furies
@@ -426,7 +427,7 @@ _.Craftables =
 				i(31906),	-- Six of Furies
 				i(31905),	-- Seven of Furies
 				i(31902),	-- Eight of Furies
-				
+
 				-- Lunacy Deck
 				i(31910),	-- Ace of Lunacy
 				i(31918),	-- Two of Lunacy
@@ -436,7 +437,7 @@ _.Craftables =
 				i(31916),	-- Six of Lunacy
 				i(31915),	-- Seven of Lunacy
 				i(31911),	-- Eight of Lunacy
-				
+
 				-- Storms Deck
 				i(31892),	-- Ace of Storms
 				i(31900),	-- Two of Storms
@@ -544,7 +545,7 @@ _.Craftables =
 						"added 2.0.1.6180",
 					},
 				}),
-			}),	
+			}),
 			n(-322, { 	-- Cloak
 				i(33122, {	-- Cloak of Darkness
 					["timeline"] = {
@@ -736,7 +737,7 @@ _.Craftables =
 				i(21876),	-- Primal Mooncloth Bag
 				i(22252),	-- Satchel of Cenarius
 				i(21858),	-- Spellfire Bag
-			}),	
+			}),
 			n(-323, {	-- Chest
 				i(21868),	-- Arcanoweave Robe
 				i(30839),	-- Flameheart Vest

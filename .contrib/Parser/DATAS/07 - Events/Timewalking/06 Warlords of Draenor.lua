@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
+-- TODOL fromatting
 _.WorldEvents =
 {
 	d(24, {  -- Timewalking
@@ -60,7 +62,7 @@ _.WorldEvents =
 						i(167927),	-- Commendation of the Saberstalkers
 						i(167928),	-- Commendation of the Frostwolf Orcs - 50
 						i(167930),	-- Commendation of the Laughing Skull Orcs - 50
-						i(168017),	-- Commendation of Vol'jin's Headhunters - 50	
+						i(168017),	-- Commendation of Vol'jin's Headhunters - 50
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
 								{ "g", 5000000 },		-- 500g
@@ -145,7 +147,7 @@ _.WorldEvents =
 						i(167894),	-- Beastlord's Irontusk
 						i(167895),	-- Beastlord's Warwolf
 						i(168012),	-- Apexis Focusing Shard
-						i(168014),	-- Banner of the Burning Blade 
+						i(168014),	-- Banner of the Burning Blade
 						i(119396),	-- Shadowspeaker's Shard - 50
 						i(113287),	-- Shard of Scorn - 50
 						i(119226),	-- Blammo's Blammer - 100
@@ -172,7 +174,7 @@ _.WorldEvents =
 						i(167927),	-- Commendation of the Saberstalkers
 						i(167929),	-- Commendation of the Council of Exarchs - 50
 						i(167932),	-- Commendation of the Sha'tari Defense - 50
-						i(168018),	-- Commendation of the Hand of the Prophet - 50	
+						i(168018),	-- Commendation of the Hand of the Prophet - 50
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
 								{ "g", 5000000 },		-- 500g

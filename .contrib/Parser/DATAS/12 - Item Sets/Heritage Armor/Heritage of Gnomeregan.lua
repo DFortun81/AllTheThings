@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-_.GearSets = 
+
+_.GearSets =
 {
 	n(-254, {	-- Heritage Armor
 		gs(1828, {	-- Heritage of Gnomeregan

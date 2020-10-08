@@ -5,13 +5,11 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["g"] = {
-			n(-561, {	-- 2007 Worldwide Invitational
-				n(-549, {	-- Korea Only
-					un(REMOVED_FROM_GAME, i(32498)),	-- Fortune Cookie (Lucky)
-					un(REMOVED_FROM_GAME, i(32465)),	-- Fortune Cookie (Lucky)
-				}),
+		n(-561, {	-- 2007 Worldwide Invitational
+			n(-549, {	-- Korea Only
+				un(REMOVED_FROM_GAME, i(32498)),	-- Fortune Cookie (Lucky)
+				un(REMOVED_FROM_GAME, i(32465)),	-- Fortune Cookie (Lucky)
 			}),
-		},
+		}),
 	}),
 };
