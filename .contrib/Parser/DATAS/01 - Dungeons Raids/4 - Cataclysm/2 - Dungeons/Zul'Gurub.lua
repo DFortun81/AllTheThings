@@ -214,8 +214,14 @@ _.Instances = { tier(4, {	-- Cataclysm
 							},
 							["g"] = {
 								i(133997),	-- Black Ice
-								i(69863, {			-- Golden Necklace
-									["collectible"] = false,	-- Yay, Blizzard gave these sourceIDs
+								i(69863, {	-- Golden Necklace
+									["ignoreSource"] = true,	-- Yay, Blizzard gave these sourceIDs
+								}),
+								i(69865, {	-- Gem-Studded Bracelets
+									["ignoreSource"] = true,	-- Yay, Blizzard gave these sourceIDs
+								}),
+								i(69864, {	-- Tarnished Crown
+									["ignoreSource"] = true,	-- Yay, Blizzard gave these sourceIDs
 								}),
 							},
 						}),
@@ -232,13 +238,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 							["g"] = {
 								i(133997),	-- Black Ice
 								i(69863, {	-- Golden Necklace
-									["collectible"] = false,	-- Yay, Blizzard gave these sourceIDs
+									["ignoreSource"] = true,	-- Yay, Blizzard gave these sourceIDs
 								}),
 								i(69865, {	-- Gem-Studded Bracelets
-									["collectible"] = false,	-- Yay, Blizzard gave these sourceIDs
+									["ignoreSource"] = true,	-- Yay, Blizzard gave these sourceIDs
 								}),
 								i(69864, {	-- Tarnished Crown
-									["collectible"] = false,	-- Yay, Blizzard gave these sourceIDs
+									["ignoreSource"] = true,	-- Yay, Blizzard gave these sourceIDs
 								}),
 							},
 						}),
