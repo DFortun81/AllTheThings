@@ -115,11 +115,17 @@ _.Achievements =
 				ach(14468),	-- Torghast: Twisting Corridors: Layer 1
 				ach(14469),	-- Torghast: Twisting Corridors: Layer 2
 				ach(14470),	-- Torghast: Twisting Corridors: Layer 3
-				ach(14471),	-- Torghast: Twisting Corridors: Layer 4
+				ach(14471, {	-- Torghast: Twisting Corridors: Layer 4
+					i(184223),	-- Helm of the Dominated
+				}),
 				ach(14472),	-- Torghast: Twisting Corridors: Layer 5
-				ach(14568),	-- Torghast: Twisting Corridors: Layer 6
+				ach(14568, {	-- Torghast: Twisting Corridors: Layer 6
+					title(438),	-- Spirestalker
+				}),
 				ach(14569),	-- Torghast: Twisting Corridors: Layer 7
-				ach(14570),	-- Torghast: Twisting Corridors: Layer 8
+				ach(14570, {	-- Torghast: Twisting Corridors: Layer 8
+					i(184166),	-- Corridor Creeper
+				}),
 			}),
 		}),
 	}),

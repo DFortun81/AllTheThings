@@ -6,6 +6,7 @@ _.Achievements =
 {
 	n(-9957, {	-- Exploration
 		n(-10100, {	-- Shadowlands
+			ach(14274),	-- Absolution for All
 			ach(14309, {	-- Adventurer of Ardenweald
 				crit(1),	-- Deathbinder Hroth
 				crit(2),	-- Mystic Rainbowhorn
@@ -202,6 +203,7 @@ _.Achievements =
 				crit(6),	-- Amethystine Dye
 				crit(7),	-- Ritualist's Mantle
 			}),
+			ach(14273),	-- Crypt Kicker
 			ach(14761),	-- Deciphering Death's Intentions
 			ach(14304, {	-- Explore Ardenweald
 				crit(1),	-- Dusty Burrows
@@ -307,10 +309,33 @@ _.Achievements =
 				crit(15),	-- Mawrat Brood Mother
 				crit(16),	-- Valis the Cruel
 			}),
+			ach(14626),	-- Harvester of Sorrow
 			ach(14738, {	-- Hunting Party
 				crit(1),	-- Complete Hunt: Shadehounds
 				crit(2),	-- Complete Hunt: Soul Eaters
 				crit(3),	-- Complete Hunt: Death Elemental
+			}),
+			ach(14276, {	-- It's Always Sinny in Revendreth
+				crit(1),	-- Inquisitor Otilia
+				crit(2),	-- Inquisitor Petre
+				crit(3),	-- Inquisitor Sorin
+				crit(4),	-- Inquisitor Traian
+				crit(5),	-- High Inquisitor Dacian
+				crit(6),	-- High Inquisitor Gabi
+				crit(7),	-- High Inquisitor Magda
+				crit(8),	-- High Inquisitor Radu
+				crit(9),	-- Grand Inquisitor Aurica
+				crit(10),	-- Grand Inquisitor Nicu
+			}),
+			ach(14721, {	-- It's in the Mix
+				i(183903),	-- Smelly Jelly
+				crit(1),	-- Pulsing Leech
+				crit(2),	-- Gelloh
+				crit(3),	-- Oily Invertebrate
+				crit(4),	-- Boneslurp
+				crit(5),	-- Violet Mistake
+				crit(6),	-- Burnblister
+				crit(7),	-- Corrupted Sediment
 			}),
 			ach(14747),	-- Make it Double!
 			ach(14301, {	-- Maldraxxus Mastered
@@ -321,6 +346,7 @@ _.Achievements =
 				crit(5),	-- Blade of the Primus
 			}),
 			ach(14634, {	-- Nine Afterlives
+				i(184449),	-- Jiggles's Favorite Toy
 				crit(1),	-- Hairball
 				crit(2),	-- Snots
 				crit(3),	-- Pus-In-Boots
@@ -352,6 +378,12 @@ _.Achievements =
 			ach(14339),	-- Shard Labor
 			ach(14658),	-- Soulkeeper's Burden
 			ach(14771),	-- The Afterlife Express
+			ach(14277, {	-- The Accuser's Avowed
+				title(423),	-- Cryptkeeper
+				crit(1),	-- Crypt Kicker
+				crit(2),	-- Absolution for All
+				crit(3),	-- It's Always Sinny in Revendreth
+			}),
 			ach(14731),	-- To All the Squirrels I've Loved and Lost
 			ach(14313, {	-- Treasures of Ardenweald
 				crit(1),	-- Aerto's Body

@@ -28,16 +28,13 @@ _.Achievements =
 				ach(13878),	-- The Master of Revendreth
 			}),
 			ach(14276),	-- It's Always Sinny in Revendreth
-			ach(14766),	-- Parasoling
+			ach(14766, {	-- Parasoling
+				i(182695),	-- Weathered Purple Parasol
+			}),
 			ach(14765),	-- Ramparts Racer
 			ach(14671),	-- Something's Not Quite Right....
 			ach(14756),	-- Stygian Sample
 			ach(14233),	-- Tea Tales
-			ach(14277, {	-- The Accuser's Avowed
-				ach(14274),	-- Absolution for All
-				ach(14273),	-- Crypt Kicker
-				ach(14626),	-- Harvester of Sorrow
-			}),
 			ach(14758),	-- The World Beyond
 			ach(14737),	-- What Bastion Remembered	
 		}),

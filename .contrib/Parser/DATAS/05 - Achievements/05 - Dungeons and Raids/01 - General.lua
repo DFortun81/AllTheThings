@@ -557,7 +557,7 @@ _.Achievements =
 				crit(16),		-- Just Can't Get Enough (25 player)
 			}),
 			ach(14322, {	-- Glory of the Shadowlands Hero
-			--	i(??),			-- ??										-- The Mount is missing here
+				i(184183),		-- Voracious Gorger
 				crit(1),		-- Bountiful Harvest
 				crit(2),		-- Surgeon's Supplies
 				crit(3),		-- Ready for Raiding VII

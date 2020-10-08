@@ -481,6 +481,9 @@ _.Achievements =
 					un(REMOVED_FROM_GAME, ach(10100)),		-- Rival: Warlords Season 2
 					un(REMOVED_FROM_GAME, ach(10112)),		-- Rival: Warlords Season 3
 					un(REMOVED_FROM_GAME, ach(6124)),		-- Ruthless Gladiator
+					ach(14690, {	-- Sinful Gladiator: Shadowlands Season 1
+						title(434),	-- Sinful Gladiator
+					}),
 					un(REMOVED_FROM_GAME, a(ach(11024))),	-- Soldier of the Alliance: Legion Season 1
 					un(REMOVED_FROM_GAME, a(ach(11036))),	-- Soldier of the Alliance: Legion Season 2
 					un(REMOVED_FROM_GAME, a(ach(11049))),	-- Soldier of the Alliance: Legion Season 3
