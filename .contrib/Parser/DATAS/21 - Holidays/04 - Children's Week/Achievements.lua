@@ -2,6 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
+-- TODO: formatting
 _.Holidays =
 {
 	{	-- Children's Week
