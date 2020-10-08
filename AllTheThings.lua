@@ -2276,6 +2276,9 @@ end)();
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	local total = 0;
 	local progress = 0;
+	local isDebug = app.Settings:Get("DebugMode");
+	local showComGrps = app.Settings:Get("Show:CompletedGroups");
+	local showComThgs = app.Settings:Get("Show:CollectedThings");
 	for i,group in ipairs(groups) do
 		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
 		if app.RecursiveGroupRequirementsFilter(group) then
@@ -2283,7 +2286,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
 				total = total + group.total;
 				progress = progress + (group.progress or 0);
-				if (group.progress / group.total) < 1 or app.Settings:Get("Show:CompletedGroups") then
+				if isDebug or showComGrps or (group.progress / group.total) < 1 then
 					right = GetProgressColorText(group.progress, group.total);
 				end
 			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
@@ -2291,16 +2294,16 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					total = total + 1;
 					if group.collected then
 						progress = progress + 1;
-						if app.Settings:Get("Show:CollectedThings") then
+						if isDebug or showComThgs then
 							right = GetCollectionIcon(group.collected);
 						end
 					else
 						right = L["NOT_COLLECTED_ICON"];
 					end
 				elseif group.trackable then
-					if app.Settings:Get("Show:IncompleteThings") then
+					if isDebug or showComThgs then
 						if group.saved then
-							if app.Settings:Get("Show:CollectedThings") then
+							if isDebug or showComThgs  then
 								right = L["COMPLETE_ICON"];
 							end
 						else
@@ -2875,17 +2878,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if j.parent and not j.parent.hideText and j.parent.parent
 					and (app.Settings:GetTooltipSetting("SourceLocations:Completed") or not app.IsComplete(j)) then
 					local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
-					for source,replacement in pairs(abbrevs) do
-						text = string.gsub(text, source,replacement);
-					end
-					if j.u then
-						tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
-					elseif not app.RecursiveClassAndRaceFilter(j.parent) then
-						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
-					elseif not app.RecursiveUnobtainableFilter(j.parent) then
-						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
-					else
-						tinsert(temp, text);
+					if not string.match(text, "Unsorted") and not string.match(text, "Hidden Quest Triggers") then
+						for source,replacement in pairs(abbrevs) do
+							text = string.gsub(text, source,replacement);
+						end
+						if j.u then
+							tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
+						elseif not app.RecursiveClassAndRaceFilter(j.parent) then
+							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
+						elseif not app.RecursiveUnobtainableFilter(j.parent) then
+							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
+						else
+							tinsert(temp, text);
+						end
 					end
 				end
 			end
