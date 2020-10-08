@@ -9863,7 +9863,7 @@ RowOnEnter = function (self)
 				local altQuests="";
 				for i,questID in ipairs(reference.altQuests) do
 					if (i > 1) then altQuests = altQuests .. ","; end
-					altQuests = altQuests .. tostring(questID);
+					altQuests = altQuests .. tostring(questID) .. GetCompletionIcon(questID);
 				end
 				GameTooltip:AddDoubleLine(" ", "[" .. altQuests .. "]"); 
 			end
