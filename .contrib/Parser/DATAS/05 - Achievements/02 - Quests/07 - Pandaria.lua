@@ -45,12 +45,6 @@ _.Achievements =
 						crit(11),		-- The Purge of Dalaran
 						crit(12),		-- Breath of Darkest Shadow
 					})),
-					ach(6540, {		-- Dread Haste Makes Dread Waste
-						crit(1),		-- The First Paragons
-						crit(2),		-- The Might of the Klaxxi
-						crit(3),		-- Taste of Amber
-						crit(4),		-- Like a Deck Boss
-					}),
 					ach(7285),		-- Every Day I'm Pand-a-ren
 					ach(7286, {		-- Finish Them! (Temple of the White Tiger)
 						crit(1),		-- Brewmaster Chani
@@ -125,34 +119,94 @@ _.Achievements =
 						crit(3),		-- Blackguard Defenders
 					}),
 					ach(6541, {		-- Loremaster of Pandaria
-						crit(1),		-- Rally the Valley
-						crit(2),		-- One Steppe Forward, Two Steppes Back
-						crit(3),		-- Dread Haste Makes Dread Waste
-						crit(4),		-- Upjade Complete
-						crit(5),		-- Mighty Roamin' Krasaranger
-						crit(6),		-- Slum It in the Summit
+						ach(6301, {		-- Rally the Valley
+							crit(1),		-- Thunderfoot Fields
+							crit(2),		-- Mudmug's Place
+							crit(3),		-- Chen's Masterpiece
+							crit(4),		-- The Stormstout Brewery
+							crit(5),		-- The Hidden Master
+							crit(6),		-- Nesingwary's Safari
+						}),
+						ach(6539, {		-- One Steppe Forward, Two Steppes Back
+							crit(1),		-- Fire Camp Osul
+							crit(2),		-- Mistlurkers in the Sumprushes
+							crit(3),		-- On Hatred's Path
+							crit(4),		-- The Sha of Hatred
+							crit(5),		-- Tai Ho's Investigation
+						}),
+						ach(6540, {		-- Dread Haste Makes Dread Waste
+							crit(1),		-- The First Paragons
+							crit(2),		-- The Might of the Klaxxi
+							crit(3),		-- Taste of Amber
+							crit(4),		-- Like a Deck Boss
+						}),
+						a(ach(6300, {	-- Upjade Complete (Alliance)
+							crit(1),		-- Paw'don Village
+							crit(2),		-- The Waterspeaking Ceremony
+							crit(3),		-- The White Pawn
+							crit(4),		-- Pearlfin Village
+							crit(5),		-- Dawn's Blossom
+							crit(6),		-- Greenstone Quarry
+							crit(7),		-- Tian Monastery
+							crit(8),		-- Terrace of Ten Thunders
+							crit(9),		-- The Temple of the Jade Serpent
+							crit(10),			-- Nectarbreeze Orchard
+							crit(11),		-- The Battle for the Forest
+							crit(12),		-- Overcoming Doubt
+						})),
+						h(ach(6534, {	-- Upjade Complete (Horde)
+							crit(1),		-- The Remains of Hellscream's Fist
+							crit(2),		-- First Contact
+							crit(3),		-- Strange Bedfellows
+							crit(4),		-- Grookin Hill
+							crit(5),		-- Dawn's Blossom
+							crit(6),		-- Greenstone Quarry
+							crit(7),		-- The Temple of the Jade Serpent
+							crit(8),		-- Tian Monastery
+							crit(9),		-- Terrace of Ten Thunders
+							crit(10),		-- Nectarbreeze Orchard
+							crit(11),		-- The Battle for the Forest
+							crit(12),		-- Overcoming Doubt
+						})),
+						a(ach(6535, {	-- Mighty Roamin' Krasaranger (Alliance)
+							crit(1),		-- Zhu's Watch
+							crit(2),		-- The Incursion
+							crit(3),		-- Nayeli Lagoon
+							crit(4),		-- Temple of the Red Crane
+							crit(5),		-- The Waters of Youth
+						})),
+						h(ach(6536, {	-- Mighty Roamin' Krasaranger (Horde)
+							crit(1),		-- Zhu's Watch
+							crit(2),		-- Thunder Cleft
+							crit(3),		-- Nayeli Lagoon
+							crit(4),		-- Temple of the Red Crane
+							crit(5),		-- Dawnchaser Retreat
+						})),
+						a(ach(6537, {	-- Slum It in the Summit (Alliance)
+							crit(1),		-- Westwind Rest
+							crit(2),		-- The Yaungol Invasion
+							crit(3),		-- Inkgill Mere
+							crit(4),		-- The Yak Wash
+							crit(5),		-- The Burlap Trail
+							crit(6),		-- Kota Peak
+							crit(7),		-- The Thunder King
+							crit(8),		-- Temple of the White Tiger
+							crit(9),		-- Zouchin Village
+							crit(10),		-- The Shado-Pan
+						})),
+						h(ach(6538, {	-- Slum It in the Summit (Horde)
+							crit(1),		-- Eastwind Rest
+							crit(2),		-- The Yaungol Invasion
+							crit(3),		-- Inkgill Mere
+							crit(4),		-- The Yak Wash
+							crit(5),		-- The Burlap Trail
+							crit(6),		-- Kota Peak
+							crit(7),		-- The Thunder King
+							crit(8),		-- Temple of the White Tiger
+							crit(9),		-- Zouchin Village
+							crit(10),		-- The Shado-Pan
+						})),
 					}),
-					ach(6535, 6536, {  -- Mighty Roamin' Krasaranger (Alliance) / (Horde)
-						crit(1),		-- Zhu's Watch  [A] / [H]
-						crit(2),		-- The Incursion [A] / Thunder Cleft [H]
-						crit(3),		-- Nayeli Lagoon [A] / [H]
-						crit(4),		-- Temple of the Red Crane [A] / [H]
-						crit(5),		-- The Waters of Youth [A] / Dawnchaser Retreat [H]
-					}),
-					--[[a(ach(6535, {	-- Mighty Roamin' Krasaranger (Alliance)
-						crit(1),		-- Zhu's Watch
-						crit(2),		-- The Incursion
-						crit(3),		-- Nayeli Lagoon
-						crit(4),		-- Temple of the Red Crane
-						crit(5),		-- The Waters of Youth
-					})),
-					h(ach(6536, {	-- Mighty Roamin' Krasaranger (Horde)
-						crit(1),		-- Zhu's Watch
-						crit(2),		-- Thunder Cleft
-						crit(3),		-- Nayeli Lagoon
-						crit(4),		-- Temple of the Red Crane
-						crit(5),		-- Dawnchaser Retreat
-					})),]]
 					ach(7317, {		-- One Many Army (Vale of Eternal Blossoms)
 						crit(1),		-- Cracklefang
 						crit(2),		-- Vicejaw
@@ -174,13 +228,6 @@ _.Achievements =
 					ach(7324, {		-- One Step at a Time
 						crit(1),		-- Complete The Crumbling Hall without taking any damage.
 						crit(2),		-- Complete The Thunder Below without taking any damage.
-					}),
-					ach(6539, {		-- One Steppe Forward, Two Steppes Back
-						crit(1),		-- Fire Camp Osul
-						crit(2),		-- Mistlurkers in the Sumprushes
-						crit(3),		-- On Hatred's Path
-						crit(4),		-- The Sha of Hatred
-						crit(5),		-- Tai Ho's Investigation
 					}),
 					a(ach(7928, {	-- Operation: Shieldwall Campaign [Not entered to Pandaria Outdoor Zones files, these criteria are spread over not only the Pandaria zones but also Classic]
 						i(93385),		-- Grand Gryphon
@@ -230,14 +277,6 @@ _.Achievements =
 						crit(8),		-- Tenwu of the Red Smoke
 						crit(9),		-- Hawkmaster Nurong
 					}),
-					ach(6301, {		-- Rally the Valley
-						crit(1),		-- Thunderfoot Fields
-						crit(2),		-- Mudmug's Place
-						crit(3),		-- Chen's Masterpiece
-						crit(4),		-- The Stormstout Brewery
-						crit(5),		-- The Hidden Master
-						crit(6),		-- Nesingwary's Safari
-					}),
 					ach(8107),		-- Ready for RAAAAIIIIDDD?!?ing
 					ach(7319, {		-- Ready for Raiding III
 						crit(1),		-- Survival Ring: Flames
@@ -247,42 +286,6 @@ _.Achievements =
 					ach(7502),		-- Savior of Stoneplow
 					ach(7289),		-- Shadow Hopper (Jade Forest)
 					ach(7307),		-- Silent Assassin (Townlong Steppes)
-					ach(6537, 6538, {  -- Slum It in the Summit (Alliance) / (Horde)
-						crit(1),		-- Westwind Rest [A] / Eastwind Rest [H]
-						crit(2),		-- The Yaungol Invasion [A] / [H]
-						crit(3),		-- Inkgill Mere [A] / [H]
-						crit(4),		-- The Yak Wash [A] / [H]
-						crit(5),		-- The Burlap Trail [A] / [H]
-						crit(6),		-- Kota Peak [A] / [H]
-						crit(7),		-- The Thunder King [A] / [H]
-						crit(8),		-- Temple of the White Tiger [A] / [H]
-						crit(9),		-- Zouchin Village [A] / [H]
-						crit(10),		-- The Shado-Pan [A] / [H]
-					}),
-					--[[a(ach(6537, {	-- Slum It in the Summit (Alliance)
-						crit(1),		-- Westwind Rest
-						crit(2),		-- The Yaungol Invasion
-						crit(3),		-- Inkgill Mere
-						crit(4),		-- The Yak Wash
-						crit(5),		-- The Burlap Trail
-						crit(6),		-- Kota Peak
-						crit(7),		-- The Thunder King
-						crit(8),		-- Temple of the White Tiger
-						crit(9),		-- Zouchin Village
-						crit(10),		-- The Shado-Pan
-					})),
-					h(ach(6538, {	-- Slum It in the Summit (Horde)
-						crit(1),		-- Eastwind Rest
-						crit(2),		-- The Yaungol Invasion
-						crit(3),		-- Inkgill Mere
-						crit(4),		-- The Yak Wash
-						crit(5),		-- The Burlap Trail
-						crit(6),		-- Kota Peak
-						crit(7),		-- The Thunder King
-						crit(8),		-- Temple of the White Tiger
-						crit(9),		-- Zouchin Village
-						crit(10),		-- The Shado-Pan
-					})),]]
 					ach(8115),		-- Speed Metal
 					ach(7321),		-- Spreading the Warmth
 					ach(7313, {		-- Stay Klaxxi (Dread Wastes)
@@ -328,48 +331,6 @@ _.Achievements =
 					ach(8111),		-- This Isn't Even My Final Form
 					ach(8104),		-- Thunder Plunder
 					ach(7293),		-- Till the Break of Dawn (Halfhill)
-					ach(6300, 6534, {  -- Upjade Complete (Alliance) / (Horde)
-						crit(1),		-- Paw'don Village [A] / The Remains of Hellscream's Fist [H]
-						crit(2),		-- The Waterspeaking Ceremony [A] / First Contact [H]
-						crit(3),		-- The White Pawn [A] / Strange Bedfellows [H]
-						crit(4),		-- Pearlfin Village [A] / Grookin Hill [H]
-						crit(5),		-- Dawn's Blossom [A] / [H]
-						crit(6),		-- Greenstone Quarry [A] / [H]
-						crit(7),		-- Tian Monastery [A] / The Temple of the Jade Serpent [H]
-						crit(8),		-- Terrace of Ten Thunders [A] /  Tian Monastery [H]
-						crit(9),		-- The Temple of the Jade Serpent [A] /  Terrace of Ten Thunders [H]
-						crit(10),		-- Nectarbreeze Orchard [A] / [H]
-						crit(11),		-- The Battle for the Forest [A] / [H]
-						crit(12),		-- Overcoming Doubt [A] / [H]
-					}),
-					--[[a(ach(6300, {	-- Upjade Complete (Alliance)
-						crit(1),		-- Paw'don Village
-						crit(2),		-- The Waterspeaking Ceremony
-						crit(3),		-- The White Pawn
-						crit(4),		-- Pearlfin Village
-						crit(5),		-- Dawn's Blossom
-						crit(6),		-- Greenstone Quarry
-						crit(7),		-- Tian Monastery
-						crit(8),		-- Terrace of Ten Thunders
-						crit(9),		-- The Temple of the Jade Serpent
-						crit(10),			-- Nectarbreeze Orchard
-						crit(11),		-- The Battle for the Forest
-						crit(12),		-- Overcoming Doubt
-					})),
-					h(ach(6534, {	-- Upjade Complete (Horde)
-						crit(1),		-- The Remains of Hellscream's Fist
-						crit(2),		-- First Contact
-						crit(3),		-- Strange Bedfellows
-						crit(4),		-- Grookin Hill
-						crit(5),		-- Dawn's Blossom
-						crit(6),		-- Greenstone Quarry
-						crit(7),		-- The Temple of the Jade Serpent
-						crit(8),		-- Tian Monastery
-						crit(9),		-- Terrace of Ten Thunders
-						crit(10),		-- Nectarbreeze Orchard
-						crit(11),		-- The Battle for the Forest
-						crit(12),		-- Overcoming Doubt
-					})),]]
 					ach(8108, {		-- When in Ihgaluk, Do as the Skumblade Do
 						crit(1),		-- Kroshik Egg
 						crit(2),		-- Baby Kroshik

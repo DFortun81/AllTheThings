@@ -19,24 +19,8 @@ _.Achievements =
 					ach(11732, {	-- A Magnificent Contribution (Broken Shore)
 						ach(11731),		-- A Magic Contribution
 					}),
-					ach(10059, {	-- Ain't No Mountain High Enough
-						crit(1),		-- The Rivermane Tribe
-						crit(2),		-- Riverbend
-						crit(3),		-- The Skyhorn Tribe
-						crit(4),		-- The Bloodtotem Tribe
-						crit(5),		-- Huln's War
-						crit(6),		-- Secrets of Highmountain
-						crit(7),		-- Battle of Snowblind Mesa
-					}),
 					ach(11736, {	-- Assume Command (Broken Shore)
 						ach(11735),		-- Take Command
-					}),
-					ach(10763, {	-- Azsuna Matata
-						crit(1),		-- Behind Legion Lines
-						crit(2),		-- Defending Azurewing Repose
-						crit(3),		-- Azsuna versus Azshara
-						crit(4),		-- Against the Giants
-						crit(5),		-- Mak'rana and the Fate of the Queen's Reprisal
 					}),
 					ach(11546, {	-- Breaching the Tomb (Broken Shore)
 						crit(1),		-- Armies of Legionfall
@@ -64,19 +48,6 @@ _.Achievements =
 						crit(4),		-- Battle for Val'sharah
 					}),
 					ach(10398),		-- Drum Circle (Highmountain)
-					ach(11124, {	-- Good Suramaritan
-						crit(1),		-- An Ancient Gift
-						crit(2),		-- The Waning Crescent
-						crit(3),		-- Blood and Wine
-						crit(4),		-- Statecraft
-						crit(5),		-- A Growing Crisis
-						crit(6),		-- A Change of Seasons
-						crit(7),		-- Breaking The Lightbreaker
-						crit(8),		-- Moon Guard Stronghold
-						crit(9),		-- Tidying Tel'anor
-						crit(10),		-- Eminent Grow-main
-						crit(11),		-- Jandvik's Jarl
-					}),
 					ach(11240, {	-- Harbinger
 						crit(1),		-- Waterlogged Tome (Deadwind Pass - near Karazhan - Master's Cellar)
 						crit(2),		-- Fel-Ravaged Tome (Vault of the Wardens)
@@ -119,11 +90,54 @@ _.Achievements =
 						crit(4),		-- Shroud of Arcane Echoes
 					}),
 					ach(11157, {	-- Loremaster of Legion (another where the criteria show up with blank names)
-						ach(10763),		-- Azsuna Matata
-						ach(10698),		-- That's Val'sharah Folks!
-						ach(10790),		-- Vrykul Story, Bro
-						ach(10059),		-- Ain't No Mountain High Enough
-						ach(11124),		-- Good Suramaritan
+						ach(10763, {	-- Azsuna Matata
+							crit(1),		-- Behind Legion Lines
+							crit(2),		-- Defending Azurewing Repose
+							crit(3),		-- Azsuna versus Azshara
+							crit(4),		-- Against the Giants
+							crit(5),		-- Mak'rana and the Fate of the Queen's Reprisal
+						}),
+						ach(10698, {	-- That's Val'sharah Folks!
+							crit(1),		-- Archdruid of the Vale
+							crit(2),		-- Archdruid of the Claw
+							crit(3),		-- Archdruid of Lore
+							crit(4),		-- Into the Nightmare
+							crit(5),		-- All Nightmare Long
+							crit(6),		-- Bradensbrook
+							crit(7),		-- Black Rook Hold
+						}),
+						ach(10790, {	-- Vrykul Story, Bro
+							crit(1),		-- Greymane's Gambit
+							crit(2),		-- The Aftermath
+							crit(3),		-- The Trial of Might
+							crit(4),		-- The Trial of Will
+							crit(5),		-- The Trial of Valor
+							crit(6),		-- To Helheim and Back
+							crit(7),		-- Secrets of the Shieldmaidens
+							crit(8),		-- The Champion of Stormheim
+						}),
+						ach(10059, {	-- Ain't No Mountain High Enough
+							crit(1),		-- The Rivermane Tribe
+							crit(2),		-- Riverbend
+							crit(3),		-- The Skyhorn Tribe
+							crit(4),		-- The Bloodtotem Tribe
+							crit(5),		-- Huln's War
+							crit(6),		-- Secrets of Highmountain
+							crit(7),		-- Battle of Snowblind Mesa
+						}),
+						ach(11124, {	-- Good Suramaritan
+							crit(1),		-- An Ancient Gift
+							crit(2),		-- The Waning Crescent
+							crit(3),		-- Blood and Wine
+							crit(4),		-- Statecraft
+							crit(5),		-- A Growing Crisis
+							crit(6),		-- A Change of Seasons
+							crit(7),		-- Breaking The Lightbreaker
+							crit(8),		-- Moon Guard Stronghold
+							crit(9),		-- Tidying Tel'anor
+							crit(10),		-- Eminent Grow-main
+							crit(11),		-- Jandvik's Jarl
+						}),
 					}),
 					ach(10617, {	-- Nightfallen But Not Forgotten (Unlocks Suramar WQs)
 						crit(1),		-- Nightfall
@@ -159,28 +173,9 @@ _.Achievements =
 						crit(3),		-- Val'sharah
 						crit(4),		-- Stormheim
 					}),
-					ach(10698, {	-- That's Val'sharah Folks!
-						crit(1),		-- Archdruid of the Vale
-						crit(2),		-- Archdruid of the Claw
-						crit(3),		-- Archdruid of Lore
-						crit(4),		-- Into the Nightmare
-						crit(5),		-- All Nightmare Long
-						crit(6),		-- Bradensbrook
-						crit(7),		-- Black Rook Hold
-					}),
 					ach(12416),		-- The Total Package (Dalaran)
 					ach(11607),		-- They See Me Rolling (Broken Shore)
 					ach(11189),		-- Variety is the Spice of Life
-					ach(10790, {	-- Vrykul Story, Bro
-						crit(1),		-- Greymane's Gambit
-						crit(2),		-- The Aftermath
-						crit(3),		-- The Trial of Might
-						crit(4),		-- The Trial of Will
-						crit(5),		-- The Trial of Valor
-						crit(6),		-- To Helheim and Back
-						crit(7),		-- Secrets of the Shieldmaidens
-						crit(8),		-- The Champion of Stormheim
-					}),
 					ach(10793),		-- What a Ripoff! (Stormheim)
 					ach(11133),		-- Why Can't I Hold All This Mana? (Suramar)
 					ach(12066, {	-- You Are Now Prepared! (Argus)

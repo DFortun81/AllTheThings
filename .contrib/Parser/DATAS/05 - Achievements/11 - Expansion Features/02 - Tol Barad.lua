@@ -2,6 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
+-- TODO: revisit this and update to standards
 _.Achievements =
 {
 	n(-10055, {	-- Expansion Features
