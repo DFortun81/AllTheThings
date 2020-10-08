@@ -345,7 +345,7 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Ice Deflector",
 							["recipeID"] = 3957,
-							["u"] = 7
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["name"] = "Lifelike Mechanical Toad",

@@ -531,6 +531,10 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(52763, {	-- Siege of Boralus: Breaking Their Ranks
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+					}),
 					q(51626, {	-- Shell Game
 						["lvl"] = 120,
 						["isWorldQuest"] = true,

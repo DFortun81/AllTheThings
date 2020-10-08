@@ -13,10 +13,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51996, {	-- Earthcaller's Abode
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53283, {	-- Flourishing Sea Stalks
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -267,6 +263,10 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51996, {	-- Earthcaller's Abode
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
 					}),
 					q(53027, {	-- Edge of Glory
 						["isWorldQuest"] = true,

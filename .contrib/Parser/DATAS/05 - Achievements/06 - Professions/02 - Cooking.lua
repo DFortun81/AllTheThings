@@ -2,14 +2,7 @@
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-TODO:
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
+-- TODO: revisit
 _.Achievements =
 {
 	n(-9960, {	-- Professions
@@ -22,7 +15,6 @@ _.Achievements =
 			}),
 			ach(5845),		-- A Bunch of Lunch
 			ach(10591),		-- All Grown Up
-			ach(1801),		-- Captain Rumsey's Lager
 			ach(4916),		-- Cataclysmic Cook
 			ach(12747),		-- Catering for Combat
 			ach(123, {		-- Classic Cook
@@ -30,28 +22,123 @@ _.Achievements =
 				ach(121),		-- Journeyman Cook
 			}),
 			ach(3296),		-- Cooking with Style
-			ach(1781),		-- Critter Gitter
-			ach(1785, {		-- Dinner Impossible
-				crit(1),		-- ALterac Valley
-				crit(2),		-- Arathi Basin
-				crit(3),		-- Warsong Gulch
-				crit(4),		-- Eye of the Storm
-			}),
 			ach(9500),		-- Draenor Cook
 			ach(10593),		-- Everything Tastes Better
 			ach(1563, {		-- Hail to the Chef
 				title(52),		-- Chef
-				crit(1),		-- Northrend Cook
-				crit(2),		-- The Cake Is Not A Lie
-				crit(3),		-- Kickin' It Up a Notch
-				crit(4),		-- The Northrend Gourmet
-				crit(5),		-- Second That Emotion
-				crit(6),		-- Critter Gitter
-				crit(7),		-- Our Daily Bread
-				crit(8),		-- Dinner Impossible
-				crit(9),		-- Sous Chef
-				crit(10),		-- Captain Rumsey's Lager
-				crit(11),		-- The Outland Gourmet
+				ach(125),		-- Northrend Cook
+				ach(877),		-- The Cake Is Not A Lie
+				ach(906, {		-- Kickin' It Up a Notch
+					crit(1),		-- Revenge is Tasty
+					crit(2),		-- Super Hot Stew
+					crit(3),		-- Manalicious
+					crit(4),		-- Soup for the Soup
+				}),
+				ach(1779, {		-- The Northrend Gourmet (45)
+					crit(1),		-- Bad Clams
+					crit(2),		-- Baked Manta Ray
+					crit(3),		-- Blackened Dragonfin
+					crit(4),		-- Blackened Worg Steak
+					crit(5),		-- Critter Bites
+					crit(6),		-- Cuttlesteak
+					crit(7),		-- Dalaran Clam Chowder
+					crit(8),		-- Dragonfin Filet
+					crit(9),		-- Firecracker Salmon
+					crit(10),		-- Fish Feast
+					crit(11),		-- Gigantic Feast
+					crit(12),		-- Great Feast
+					crit(13),		-- Grilled Bonescale
+					crit(14),		-- Grilled Sculpin
+					crit(15),		-- Haunted Herring
+					crit(16),		-- Hearty Rhino
+					crit(17),		-- Imperial Manta Steak
+					crit(18),		-- Kungaloosh
+					crit(19),		-- Last Week's Mammoth
+					crit(20),		-- Mammoth Meal
+					crit(21),		-- Mega Mammoth Meal
+					crit(22),		-- Mighty Rhino Dogs
+					crit(23),		-- Northern Stew
+					crit(24),		-- Pickled Fangtooth
+					crit(25),		-- Poached Nettlefish
+					crit(26),		-- Poached Northern Sculpin
+					crit(27),		-- Rhino Dogs
+					crit(28),		-- Rhinolicious Wormsteak
+					crit(29),		-- Roasted Worg
+					crit(30),		-- Sauteed Goby
+					crit(31),		-- Shoveltusk Steak
+					crit(32),		-- Small Feast
+					crit(33),		-- Smoked Rockfin
+					crit(34),		-- Smoked Salmon
+					crit(35),		-- Snapper Extreme
+					crit(36),		-- Spiced Mammoth Treats
+					crit(37),		-- Spiced Worm Burger
+					crit(38),		-- Spicy Blue Nettlefish
+					crit(39),		-- Spicy Fried Herring
+					crit(40),		-- Tasty Cupcake
+					crit(41),		-- Tender Shoveltusk Steak
+					crit(42),		-- Tracker Snacks
+					crit(43),		-- Very Burnt Worg
+					crit(44),		-- Worg Tartare
+					crit(45),		-- Worm Delight
+					ach(1778),		-- The Northrend Gourmet (30)
+					ach(1777),		-- The Northrend Gourmet (15)
+				}),
+				ach(1780, {		-- Second That Emotion
+					crit(1),		-- Bad Clams
+					crit(2),		-- Haunted Herring
+					crit(3),		-- Last Week's Mammoth
+					crit(4),		-- Tasty Cupcake
+				}),
+				ach(1781),		-- Critter Gitter
+				a(ach(1782, {	-- Our Daily Bread [A]
+					crit(1),	-- Infused Mushroom Meatloaf
+					crit(2),	-- Convention at the Legerdemain
+					crit(3),	-- Sewer Stew
+					crit(4),	-- Cheese for Glowergold
+					crit(5),	-- Mustard Dogs!
+				})),
+				h(ach(1783, {	-- Our Daily Bread [H]
+					crit(1),	-- Infused Mushroom Meatloaf
+					crit(2),	-- Convention at the Legerdemain
+					crit(3),	-- Sewer Stew
+					crit(4),	-- Cheese for Glowergold
+					crit(5),	-- Mustard Dogs!
+				})),
+				ach(1785, {		-- Dinner Impossible
+					crit(1),		-- ALterac Valley
+					crit(2),		-- Arathi Basin
+					crit(3),		-- Warsong Gulch
+					crit(4),		-- Eye of the Storm
+				}),
+				ach(1798),		-- Sous Chef (1798)
+				ach(1801),		-- Captain Rumsey's Lager
+				ach(1800, {		-- The Outland Gourmet
+					crit(1),		-- Delicious Chocolate Cake
+					crit(2),		-- Blackened Trout
+					crit(3),		-- Buzzard Bites
+					crit(4),		-- Clam Bar
+					crit(5),		-- Feltail Delight
+					crit(6),		-- Ravager Dog
+					crit(7),		-- Stormchops
+					crit(8),		-- Blackened Sporefish
+					crit(9),		-- Blackened Basilisk
+					crit(10),		-- Grilled Mudfish
+					crit(11),		-- Poached Bluefish
+					crit(12),		-- Broiled Bloodfin
+					crit(13),		-- Golden Fish Sticks
+					crit(14),		-- Kibler's Bits
+					crit(15),		-- Roasted Clefthoof
+					crit(16),		-- Talbuk Steak
+					crit(17),		-- Warp Burger
+					crit(18),		-- Crunchy Serpent
+					crit(19),		-- Mok'Nathal Shortribs
+					crit(20),		-- Fisherman's Feast
+					crit(21),		-- Hot Buttered Trout
+					crit(22),		-- Skullfish Soup
+					crit(23),		-- Spicy Crawdad
+					crit(24),		-- Spicy Hot Talbuk
+					crit(25),		-- Stewed Trout
+				}),
 			}),
 			ach(7328, {		-- Ironpaw Chef(240)
 				ach(5471),		-- Iron Chef (200)
@@ -61,16 +148,8 @@ _.Achievements =
 				ach(1796),		-- Short Order Cook (50)
 				ach(1795),		-- Lunch Lady (25)
 			}),
-			ach(906, {		-- Kickin' It Up a Notch
-				crit(1),		-- Revenge is Tasty
-				crit(2),		-- Super Hot Stew
-				crit(3),		-- Manalicious
-				crit(4),		-- Soup for the Soup
-			}),
-			{
-				["allianceAchievementID"] = 12742,	-- Kul Tiran Cook [Alliance]
-				["hordeAchievementID"] = 12743,		-- Zandalari Cook [Horde]
-			},
+			a(ach(12742)),	-- Kul Tiran Cook [Alliance]
+			h(ach(12743)),	-- Zandalari Cook [Horde]
 			ach(10589),		-- Legion Cook
 			{  -- Let's Do Lunch: Darnassus/Undercity
 				["allianceAchievementID"] = 5842,	-- Let's Do Lunch: Darnassus [Alliance]
@@ -174,57 +253,12 @@ _.Achievements =
 				ach(7304),		-- Master of the Oven
 				ach(7305),		-- Master of the Brew
 			}),
-			ach(7305),		-- Master of the Brew
-			ach(7300),		-- Master of the Grill
-			ach(7304),		-- Master of the Oven
-			ach(7302),		-- Master of the Pot
-			ach(7303),		-- Master of the Steamer
-			ach(7301),		-- Master of the Wok
 			ach(10592),		-- Never A Day's Rest
-			ach(125),		-- Northrend Cook
 			ach(7325, {		-- Now I Am the Master
 				crit(1),		-- Obtain the Cooking School Bell
 				crit(2),		-- Train your student to become an Expert in Cooking (Exalted)
 			}),
-			{  -- Our Daily Bread [Alliance] // [Horde]
-				["allianceAchievementID"] = 1782,	-- Our Daily Bread [Alliance]
-				["hordeAchievementID"] = 1783,		-- Our Daily Bread [Horde]
-				["g"] = {
-					{
-						["allianceAchievementID"] = 1782,	-- Our Daily Bread [Alliance]
-						["hordeAchievementID"] = 1783,		-- Our Daily Bread [Horde]
-						["criteriaID"] = 1,	-- Infused Mushroom Meatloaf [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 1782,	-- Our Daily Bread [Alliance]
-						["hordeAchievementID"] = 1783,		-- Our Daily Bread [Horde]
-						["criteriaID"] = 2,	-- Convention at the Legerdemain [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 1782,	-- Our Daily Bread [Alliance]
-						["hordeAchievementID"] = 1783,		-- Our Daily Bread [Horde]
-						["criteriaID"] = 3,	-- Sewer Stew [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 1782,	-- Our Daily Bread [Alliance]
-						["hordeAchievementID"] = 1783,		-- Our Daily Bread [Horde]
-						["criteriaID"] = 4,	-- Cheese for Glowergold [Alliance] // [Horde]
-					},
-					{
-						["allianceAchievementID"] = 1782,	-- Our Daily Bread [Alliance]
-						["hordeAchievementID"] = 1783,		-- Our Daily Bread [Horde]
-						["criteriaID"] = 5,	-- Mustard Dogs! [Alliance] // [Horde]
-					},
-				},
-			},
 			ach(124),		-- Outland Cook
-			ach(1780, {		-- Second That Emotion
-				crit(1),		-- Bad Clams
-				crit(2),		-- Haunted Herring
-				crit(3),		-- Last Week's Mammoth
-				crit(4),		-- Tasty Cupcake
-			}),
-			ach(877),		-- The Cake Is Not A Lie
 			ach(5473, {		-- The Cataclysmic Gourmet (30)
 				crit(1),		-- Baked Rockfish
 				crit(2),		-- Basilisk Liverdog
@@ -372,82 +406,6 @@ _.Achievements =
 				crit(19),		-- Hearty Feast
 				crit(20),		-- Lavish Suramar Feast
 				crit(21),		-- Crispy Bacon
-			}),
-			ach(1779, {		-- The Northrend Gourmet (45)
-				crit(1),		-- Bad Clams
-				crit(2),		-- Baked Manta Ray
-				crit(3),		-- Blackened Dragonfin
-				crit(4),		-- Blackened Worg Steak
-				crit(5),		-- Critter Bites
-				crit(6),		-- Cuttlesteak
-				crit(7),		-- Dalaran Clam Chowder
-				crit(8),		-- Dragonfin Filet
-				crit(9),		-- Firecracker Salmon
-				crit(10),		-- Fish Feast
-				crit(11),		-- Gigantic Feast
-				crit(12),		-- Great Feast
-				crit(13),		-- Grilled Bonescale
-				crit(14),		-- Grilled Sculpin
-				crit(15),		-- Haunted Herring
-				crit(16),		-- Hearty Rhino
-				crit(17),		-- Imperial Manta Steak
-				crit(18),		-- Kungaloosh
-				crit(19),		-- Last Week's Mammoth
-				crit(20),		-- Mammoth Meal
-				crit(21),		-- Mega Mammoth Meal
-				crit(22),		-- Mighty Rhino Dogs
-				crit(23),		-- Northern Stew
-				crit(24),		-- Pickled Fangtooth
-				crit(25),		-- Poached Nettlefish
-				crit(26),		-- Poached Northern Sculpin
-				crit(27),		-- Rhino Dogs
-				crit(28),		-- Rhinolicious Wormsteak
-				crit(29),		-- Roasted Worg
-				crit(30),		-- Sauteed Goby
-				crit(31),		-- Shoveltusk Steak
-				crit(32),		-- Small Feast
-				crit(33),		-- Smoked Rockfin
-				crit(34),		-- Smoked Salmon
-				crit(35),		-- Snapper Extreme
-				crit(36),		-- Spiced Mammoth Treats
-				crit(37),		-- Spiced Worm Burger
-				crit(38),		-- Spicy Blue Nettlefish
-				crit(39),		-- Spicy Fried Herring
-				crit(40),		-- Tasty Cupcake
-				crit(41),		-- Tender Shoveltusk Steak
-				crit(42),		-- Tracker Snacks
-				crit(43),		-- Very Burnt Worg
-				crit(44),		-- Worg Tartare
-				crit(45),		-- Worm Delight
-				ach(1778),		-- The Northrend Gourmet (30)
-				ach(1777),		-- The Northrend Gourmet (15)
-			}),
-			ach(1800, {		-- The Outland Gourmet
-				crit(1),		-- Delicious Chocolate Cake
-				crit(2),		-- Blackened Trout
-				crit(3),		-- Buzzard Bites
-				crit(4),		-- Clam Bar
-				crit(5),		-- Feltail Delight
-				crit(6),		-- Ravager Dog
-				crit(7),		-- Stormchops
-				crit(8),		-- Blackened Sporefish
-				crit(9),		-- Blackened Basilisk
-				crit(10),		-- Grilled Mudfish
-				crit(11),		-- Poached Bluefish
-				crit(12),		-- Broiled Bloodfin
-				crit(13),		-- Golden Fish Sticks
-				crit(14),		-- Kibler's Bits
-				crit(15),		-- Roasted Clefthoof
-				crit(16),		-- Talbuk Steak
-				crit(17),		-- Warp Burger
-				crit(18),		-- Crunchy Serpent
-				crit(19),		-- Mok'Nathal Shortribs
-				crit(20),		-- Fisherman's Feast
-				crit(21),		-- Hot Buttered Trout
-				crit(22),		-- Skullfish Soup
-				crit(23),		-- Spicy Crawdad
-				crit(24),		-- Spicy Hot Talbuk
-				crit(25),		-- Stewed Trout
 			}),
 			ach(7327, {		-- The Pandaren Gourmet (30
 				crit(1),		-- Black Pepper Ribs and Shrimp

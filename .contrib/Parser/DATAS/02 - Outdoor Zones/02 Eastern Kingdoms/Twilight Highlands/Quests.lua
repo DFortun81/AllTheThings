@@ -1764,7 +1764,7 @@ _.Zones =
 					["coord"] = { 53.2, 42.7, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27945,	-- Paint it Black
-					--["isBreadcrumb"] = true,
+					["isBreadcrumb"] = true,
 				}),
 				q(27378, {	-- The Worldbreaker
 					["sourceQuests"] = { 27377 },	-- Devoured
