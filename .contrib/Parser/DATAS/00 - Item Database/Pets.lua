@@ -954,6 +954,7 @@ pet(182662, 3017);	-- Leafadore
 pet(180586, 2892);	-- Lightbinders // Bound Lightspawn
 pet(184397, 3062);	-- Lost Featherling
 pet(180590, 2895);	-- Lost Soul 
+--pet(3066);	-- Lucy
 pet(181171, 2947);	-- Luminous Webspinner
 pet(183191, 3029);	-- Maw Crawler
 pet(183194, 3033);	-- Maw Stalker 

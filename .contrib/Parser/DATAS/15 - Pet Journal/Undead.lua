@@ -53,6 +53,7 @@ _.PetJournal =
 		un(10, p(249)),		-- Lil' K.T.
 		p(458),		-- Lost of Lordaeron
 		p(2895),	-- Lost Soul
+		p(3066),	-- Lucy
 		p(1351),	-- Macabre Marionette
 		p(3029),	-- Maw Crawler
 		p(2202), 	-- Miimii

@@ -21,6 +21,7 @@ i(183855)	-- Stony's Infused Ruby(venthyr, repaired mirror in raven)
 i(180869)	-- Devoured Wader
 i(184400)	-- Courage/drop from Courage in Bastion
 i(184397)	-- Lost Featherling/Drop in Bastion
+p(3066)		-- Lucy
 i()
 
 
