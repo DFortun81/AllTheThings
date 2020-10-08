@@ -193,6 +193,6 @@ _.Achievements =
 					crit(8),		-- Umbranse's Deliverance
 				}),
 			}),
-		},
+		}),
 	}),
 };
