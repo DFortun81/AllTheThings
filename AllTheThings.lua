@@ -2323,8 +2323,22 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				-- Only go down one more level.
 				if layer < 2 and group.g and (not group.achievementID or paramA == "creatureID") and not group.parent.difficultyID and #group.g > 0 and not (group.g[1].artifactID or group.filterID == 109) and not group.symbolized then
 					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
+				-- else
+					-- print("skipped sub-contains");
 				end
+			-- If this group is a Quest, then it may be a source Quest to another Quest which has a Nested Collectible that needs to be shown
+			-- This is just too laggy in some situations to search for sourceQuests repeatedly... maybe if it can be coroutined in the tooltip...?
+			-- elseif group.questID and not group.isBreadcrumb then
+				-- -- print("check if is a sourceQuest for",group.questID);
+				-- local search = app.SearchForField("sourceQuests", group.questID);
+				-- if search then
+					-- -- for i,g in ipairs(search) do
+						-- -- print("has sq",RecurseGroupParent(g));
+					-- -- end
+					-- BuildContainsInfo(search, entries, paramA, paramB, indent .. " ", layer);
+				-- end
 			end
+			-- print("total",tostring(total),"progress",tostring(progress));
 		-- else
 			-- print("ex",group.key,group[group.key],RecurseGroupParent(group));
 		end
@@ -3365,11 +3379,33 @@ local function SearchForFieldRecursively(group, field, value)
 			else
 				return { group };
 			end
+		-- elseif group[field] and #group[field] > 0 then
+			-- for i,v in ipairs(group[field]) do
+				-- if v == value then
+				-- -- OH BOY, WE FOUND IT WHICH CONTAINS THE TABLE CONTAINING IT!
+					-- if first then
+						-- return tinsert(first, group);
+					-- else
+						-- return { group };
+					-- end
+				-- end
+			-- end
 		end
 		return first;
 	elseif group[field] == value then
 		-- OH BOY, WE FOUND IT!
 		return { group };
+	-- elseif group[field] and #group[field] > 0 then
+		-- for i,v in ipairs(group[field]) do
+			-- if v == value then
+			-- -- OH BOY, WE FOUND IT WHICH CONTAINS THE TABLE CONTAINING IT!
+				-- if first then
+					-- return tinsert(first, group);
+				-- else
+					-- return { group };
+				-- end
+			-- end
+		-- end
 	end
 end
 local function SearchForFieldContainer(field)
@@ -3377,10 +3413,9 @@ local function SearchForFieldContainer(field)
 end
 local function SearchForField(field, id)
 	if field and id then
-		local group = app:GetDataCache();
 		_cache = rawget(fieldCache, field);
 		if _cache then return rawget(_cache, id), field, id; end
-		return SearchForFieldRecursively(group, field, id), field, id;
+		return SearchForFieldRecursively(app:GetDataCache(), field, id), field, id;
 	end
 end
 app.SearchForField = SearchForField;
