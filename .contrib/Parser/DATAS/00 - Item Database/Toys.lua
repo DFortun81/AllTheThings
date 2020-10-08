@@ -690,6 +690,7 @@ t(182729);	-- Hearty Dragon Plume
 t(184223);	-- Helm of the Dominated
 t(182655);	-- Hill King's Roarbox
 t(174286);	-- Kyrian Ritual Vestments
+t(184508);	-- Mawsworn Pet Leash
 t(179393);	-- Mirror of Envious Dreams
 t(182780);	-- Muckpool Cookpot
 t(183856);	-- Mystical Orb of Meditation

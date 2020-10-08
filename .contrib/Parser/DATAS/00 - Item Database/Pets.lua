@@ -990,6 +990,7 @@ pet(181173, 2949);	-- Skittering Venomspitter
 pet(181271, 2961);	-- Sludge Feeler 
 pet(183623, 3044);	-- Spinemaw Larva 
 pet(180872, 2942);	-- Spirited Skyfoal 
+pet(184509, 3067);	-- Spriggan Trickster
 pet(180637, 2914);	-- Starry Dreamfoal 
 pet(182664, 3019);	-- Stemmins 
 pet(184398, 3061);	-- Steward Featherling
@@ -1012,6 +1013,7 @@ pet(180603, 2904);	-- Violet Dredwing Pup
 pet(180867, 2939);	-- Wader Chick
 pet(180838, 2943);	-- Wild Etherwyrm
 pet(180636, 2915);	-- Willowbreeze
+pet(184512, 3079);	-- Winterleaf Spriggan
 pet(181267, 2957);	-- Writhing Spine
 
 -- pets in journal

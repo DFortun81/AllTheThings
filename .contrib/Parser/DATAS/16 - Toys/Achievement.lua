@@ -14,6 +14,7 @@ _.Toys =
 		i(87528),		-- Honorary Brewmaster Keg
 		i(134026),		-- Honorable Pennant
 		i(163697),		-- Laser Pointer
+		i(184508),		-- Mawsworn Pet Leash
 		i(174871),		-- Mayhem Mind Melder
 		un(REMOVED_FROM_GAME, i(89205)),	-- Mini Mana Bomb (Horde) No Longer Available
 		i(143660), 		-- Mrgrglhjorn

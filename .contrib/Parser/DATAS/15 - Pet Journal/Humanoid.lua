@@ -112,6 +112,7 @@ _.PetJournal =
 		p(2762),			-- Slimy Darkhunter
 		p(1953),			-- Snobold Runt
 		p(515),				-- Sporeling Sprout
+		p(3067),			-- Spriggan Trickster
 		p(1935),			-- Squirky
 		p(3061),			-- Steward Featherling
 		p(1158),			-- Stunted Yeti
@@ -126,6 +127,7 @@ _.PetJournal =
 		p(2833),			-- Void-Scarred Anubisath
 		un(35, p(2184)),	-- Whomper
 		p(120),				-- Winter's Little Helper
+		p(3079),			-- Winterleaf Spriggan
 		p(1634),			-- Wretched Servant
 		p(1887),			-- Wyrmy Tunkins
 		p(2680),			-- Zanj'ir Poker
