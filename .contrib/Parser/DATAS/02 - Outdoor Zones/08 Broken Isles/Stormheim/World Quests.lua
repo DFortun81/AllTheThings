@@ -14,21 +14,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(20, {	-- All Howl, No Bite
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41948, {	-- All Pets Go to Heaven
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(24, {	-- All Pets Go to Heaven
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(45439, {	-- An Invasion of... Murlocs? (Invasion wq)
 					["lvl"] = 98,
@@ -72,11 +62,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(25, {	-- Beasts of Burden
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(46010, {	-- Bonecrusher Korgolath (Invasion wq)
 					["lvl"] = 98,
@@ -370,11 +355,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(23, {	-- My Beasts's Bidding
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(44943, {	-- Now That's Just Clawful!
 					["lvl"] = 110,
@@ -384,11 +364,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(22, {	-- Oh, Ominitron
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(43751, {	-- Oh, Ship! (A)
 					["lvl"] = 110,

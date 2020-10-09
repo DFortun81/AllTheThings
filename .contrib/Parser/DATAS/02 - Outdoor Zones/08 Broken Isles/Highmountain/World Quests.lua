@@ -283,11 +283,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(17, {	-- It's Illid... Wait.
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(46186, {	-- Ix'dreloth (Invasion WQ)
 					["isWorldQuest"] = true,
@@ -441,11 +436,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(19, {	-- Rocko Needs a Shave
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41200, {	-- Rough Leystone Outcropping
 					["lvl"] = 110,
@@ -492,11 +482,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(18, {	-- Snail Fight!
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(44892, {	-- Snowfeather Swarm!
 					["lvl"] = 110,
@@ -551,21 +536,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(15, {	-- Tiny Poacher, Tiny Animals
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(40280, {	-- Training with Bredda
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(14, {	-- Training with Bredda
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(46190, {	-- Ulgrom (Invasion WQ)
 					["lvl"] = 98,
@@ -718,11 +693,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(16, {	-- Wildlife Protection Force
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41525, {	-- Wispy Foxflower
 					["lvl"] = 110,

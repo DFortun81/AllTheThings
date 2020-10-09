@@ -192,11 +192,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
-						crit(37, {	-- Dealing with Satyrs
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(44884, {	-- Defense of Emerald Bay (Invasion WQ)
 					["lvl"] = 98,
@@ -431,11 +426,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
-						crit(34, {	-- Meet The Maw
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41334, {	-- Musky Bear Hide
 					["isWorldQuest"] = true,
@@ -450,11 +440,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
-						crit(33, {	-- Only Pets Can Prevent Forest Fires
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(42145, {	-- Out of the Woodwork
 					["lvl"] = 110,
@@ -535,11 +520,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
-						crit(35, {	-- Stand Up to Bullies
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41441, {	-- Superior Leystone Deposits
 					["isWorldQuest"] = true,
@@ -601,11 +581,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
-						crit(32, {	-- Training with Durian
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41992, {	-- Twisted Ash
 					["lvl"] = 110,
@@ -736,11 +711,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
-						crit(36, {	-- Wildlife Conservationist
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41652, {	-- Work Order: Deep Amber Loop
 					["lvl"] = 110,

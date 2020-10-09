@@ -213,45 +213,117 @@ _.Achievements =
 						i(139003, {	-- Pocket Pet Portal
 							["questID"] = 43016,
 						}),
-						crit(1),	-- Size Doesn't Matter (Azsuna)
-						crit(2),	-- Azsuna Specimens (Azsuna)
-						crit(3),	-- Dazed and Confused and Adorable (Azsuna)
-						crit(4),	-- Training with the Nightwatchers (Azsuna)
-						crit(5),	-- The Wine's Gone Bad (Azsuna)
-						crit(6),	-- Help a Whelp (Azsuna)
-						crit(7),	-- Fight Night: Amalia (Dalaran)
-						crit(8),	-- Fight Night: Bodhi Sunwayver (Dalaran)
-						crit(9),	-- Fight Night: Heliosus (Dalaran)
-						crit(10),	-- Fight Night: Sir Galveston (Dalaran)
-						crit(11),	-- Fight Night: Rats! (Dalaran)
-						crit(12),	-- Fight Night: Stitches Jr. Jr. (Dalaran)
-						crit(13),	-- Fight Night: Tiffany Nelson (Dalaran)
-						crit(14),	-- Training with Bredda (Highmountain)
-						crit(15),	-- Tiny Poacher, Tiny Animals (Highmountain)
-						crit(16),	-- Wildlife Protection Force (Highmountain)
-						crit(17),	-- It's Illid... Wait. (Highmountain)
-						crit(18),	-- Snail Fight! (Highmountain)
-						crit(19),	-- Rocko Needs a Shave (Highmountain)
-						crit(20),	-- All Howl, No Bite (Stormheim)
-						crit(21, {	-- Jarrun's Ladder (Stormheim)
-							["questID"] = 41944,	-- Jarrun's Ladder
+						crit(1, {	-- Size Doesn't Matter (Azsuna)
+							["questID"] = 42063,
 						}),
-						crit(22),	-- Oh, Ominitron (Stormheim)
-						crit(23),	-- My Beasts's Bidding (Stormheim)
-						crit(24),	-- All Pets Go to Heaven (Stormheim)
-						crit(25),	-- Beasts of Burden (Stormheim)
-						crit(26),	-- The Master of Pets (Suramar)
-						crit(27),	-- Clear the Catacombs (Suramar)
-						crit(28),	-- Chopped (Suramar)
-						crit(29),	-- Flummoxed (Suramar)
-						crit(30),	-- Threads of Fate (Suramar)
-						crit(31),	-- Mana Tap (Suramar)
-						crit(32),	-- Training with Durian (Val'sharah)
-						crit(33),	-- Only Pets Can Prevent Forest Fires (Val'sharah)
-						crit(34),	-- Meet The Maw (Val'sharah)
-						crit(35),	-- Stand Up to Bullies (val'sharah)
-						crit(36),	-- Wildlife Conservationist (val'sharah)
-						crit(37),	-- Dealing with Satyrs (Val'sharah)
+						crit(2, {	-- Azsuna Specimens (Azsuna)
+							["questID"] = 42165,
+						}),
+						crit(3, {	-- Dazed and Confused and Adorable (Azsuna)
+							["questID"] = 42146,
+						}),
+						crit(4, {	-- Training with the Nightwatchers (Azsuna)
+							["questID"] = 42159,
+						}),
+						crit(5, {	-- The Wine's Gone Bad (Azsuna)
+							["questID"] = 42148,
+						}),
+						crit(6, {	-- Help a Whelp (Azsuna)
+							["questID"] = 42154,
+						}),
+						crit(7, {	-- Fight Night: Amalia (Dalaran)
+							["questID"] = 42442,
+						}),
+						crit(8, {	-- Fight Night: Bodhi Sunwayver (Dalaran)
+							["questID"] = 40299,
+						}),
+						crit(9, {	-- Fight Night: Heliosus (Dalaran)
+							["questID"] = 41881,
+						}),
+						crit(10, {	-- Fight Night: Sir Galveston (Dalaran)
+							["questID"] = 40298,
+						}),
+						crit(11, {	-- Fight Night: Rats! (Dalaran)
+							["questID"] = 41886,
+						}),
+						crit(12, {	-- Fight Night: Stitches Jr. Jr. (Dalaran)
+							["questID"] = 42062,
+						}),
+						crit(13, {	-- Fight Night: Tiffany Nelson (Dalaran)
+							["questID"] = 40277,
+						}),
+						crit(14, {	-- Training with Bredda (Highmountain)
+							["questID"] = 40280,
+						}),
+						crit(15, {	-- Tiny Poacher, Tiny Animals (Highmountain)
+							["questID"] = 40282,
+						}),
+						crit(16, {	-- Wildlife Protection Force (Highmountain)
+							["questID"] = 41766,
+						}),
+						crit(17, {	-- It's Illid... Wait. (Highmountain)
+							["questID"] = 42064,
+						}),
+						crit(18, {	-- Snail Fight! (Highmountain)
+							["questID"] = 41687,
+						}),
+						crit(19, {	-- Rocko Needs a Shave (Highmountain)
+							["questID"] = 41624,
+						}),
+						crit(20, {	-- All Howl, No Bite (Stormheim)
+							["questID"] = 42067,
+						}),
+						crit(21, {	-- Jarrun's Ladder (Stormheim)
+							["questID"] = 41944,
+						}),
+						crit(22, {	-- Oh, Ominitron (Stormheim)
+							["questID"] = 41958,
+						}),
+						crit(23, {	-- My Beasts's Bidding (Stormheim)
+							["questID"] = 40278,
+						}),
+						crit(24, {	-- All Pets Go to Heaven (Stormheim)
+							["questID"] = 41948,
+						}),
+						crit(25, {	-- Beasts of Burden (Stormheim)
+							["questID"] = 41935,
+						}),
+						crit(26, {	-- The Master of Pets (Suramar)
+							["questID"] = 41895,
+						}),
+						crit(27, {	-- Clear the Catacombs (Suramar)
+							["questID"] = 41914,
+						}),
+						crit(28, {	-- Chopped (Suramar)
+							["questID"] = 41990,
+						}),
+						crit(29, {	-- Flummoxed (Suramar)
+							["questID"] = 40337,
+						}),
+						crit(30, {	-- Threads of Fate (Suramar)
+							["questID"] = 42015,
+						}),
+						crit(31, {	-- Mana Tap (Suramar)
+							["questID"] = 41931,
+						}),
+						crit(32, {	-- Training with Durian (Val'sharah)
+							["questID"] = 40279,
+						}),
+						crit(33, {	-- Only Pets Can Prevent Forest Fires (Val'sharah)
+							["questID"] = 41862,
+						}),
+						crit(34, {	-- Meet The Maw (Val'sharah)
+							["questID"] = 41861,
+						}),
+						crit(35, {	-- Stand Up to Bullies (val'sharah)
+							["questID"] = 41855,
+						}),
+						crit(36, {	-- Wildlife Conservationist (val'sharah)
+							["questID"] = 42190,
+						}),
+						crit(37, {	-- Dealing with Satyrs (Val'sharah)
+							["questID"] = 41860,
+						}),
 					}),
 					ach(12936, {	-- Battle on Zandalar and Kul Tiras
 						i(163697),	-- Laser Pointer
