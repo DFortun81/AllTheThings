@@ -854,6 +854,8 @@ _.HiddenQuestTriggers =
 		q(39171),	-- Fel Legendary Pet Tracking Quest 13 — Netherfist
 		q(39172),	-- Fel Legendary Pet Tracking Quest 14 — Skrillix
 		q(39173),	-- Fel Legendary Pet Tracking Quest 15 — Defiled Earth
+		q(39184),	-- learning Immaculate Haste Taladite at an Apexis Gemcutter
+		q(39187),	-- learning Immaculate Stamina Taladite
 
 		--	DUNGEONS & RAIDS
 		q(35960),	-- Auchindoun Reward Quest
@@ -1547,6 +1549,7 @@ _.HiddenQuestTriggers =
 		q(45511),	-- Highmountain - WQ rare: Olokk the Shipbreaker
 		q(44039),	-- Highmountain - WQ rare: Sea King Tidross
 		q(44879),	-- Highmountain - WQ rare: Snowfeather Matriarch
+		q(40601),	-- 7.0 Highmountain - Vignette - Pinerock Basin - Highmountain Beastmaster See Treasure (JLW) — looting treasure after Arru
 		q(44880),	-- Stormheim - WQ rare: Direbeak Matriarch
 		q(45478),	-- Suramar - WQ rare: Achronos
 		q(45504),	-- Suramar - WQ rare: Alteria

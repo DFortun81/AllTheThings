@@ -64,7 +64,7 @@ _.Zones =
 					n(QUESTS, {
 						q(29317, {	-- Fish Head
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 80.7, 31.2, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -82,7 +82,7 @@ _.Zones =
 						}),
 						q(29320, {	-- Like Pike?
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 80.7, 31.2, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -100,7 +100,7 @@ _.Zones =
 						}),
 						q(29361, {	-- Moat Monster!
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 80.7, 31.2, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -118,7 +118,7 @@ _.Zones =
 						}),
 						q(29319, {	-- Tadpole Terror
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 80.7, 31.2, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -136,7 +136,7 @@ _.Zones =
 						}),
 						q(29322, {	-- Time for Slime
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 80.7, 31.2, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
