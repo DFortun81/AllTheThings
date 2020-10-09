@@ -307,11 +307,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(21, {	-- Jarrun's Ladder
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
+					["coord"] = { 56.8, 46.2, 634 },
 				}),
 				q(43769, {	-- Ley Race
 					["lvl"] = 110,

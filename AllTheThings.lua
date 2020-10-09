@@ -1450,7 +1450,7 @@ local function CreateHash(t)
 	local key = t.key or GetKey(t);
 	if key then
 		local hash = key .. (rawget(t, key) or t[key]);
-		if key == "criteriaID" and t.achID then hash = hash .. ":" .. t.achID; end
+		if key == "criteriaID" and t.achievementID then hash = hash .. ":" .. t.achievementID; end
 		rawset(t, "hash", hash);
 		return hash;
 	end
@@ -3673,25 +3673,31 @@ local function PopulateQuestObject(questObject)
 	cache = fieldCache["questID"][questObject.questID];
 	if cache then
 		for _,data in ipairs(cache) do
-			for key,value in pairs(data) do
-				if not (key == "g" or key == "parent") then
-					questObject[key] = value;
-				end
-			end
-			if data.isVignette then questObject.isVignette = true; end
-			if data.g then
-				for _,entry in ipairs(data.g) do
-					local resolved = ResolveSymbolicLink(entry);
-					if resolved then
-						entry = CreateObject(entry);
-						if entry.g then
-							MergeObjects(entry.g, resolved);
-						else
-							entry.g = resolved;
-						end
+			-- only merge into the WQ quest object properties from a quest object in cache
+			if data.key == "questID" then
+				for key,value in pairs(data) do
+					if not (key == "g" or key == "parent") then
+						questObject[key] = value;
 					end
-					tinsert(questObject.g, entry);
 				end
+				if data.isVignette then questObject.isVignette = true; end
+				if data.g then
+					for _,entry in ipairs(data.g) do
+						local resolved = ResolveSymbolicLink(entry);
+						if resolved then
+							entry = CreateObject(entry);
+							if entry.g then
+								MergeObjects(entry.g, resolved);
+							else
+								entry.g = resolved;
+							end
+						end
+						tinsert(questObject.g, entry);
+					end
+				end
+			-- otherwise this is a non-quest object flagged with this questID so it should be added under the quest
+			else
+				MergeObject(questObject.g, data);
 			end
 		end
 	end

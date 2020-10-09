@@ -22,6 +22,7 @@ _.Zones =
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
+									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -36,6 +37,7 @@ _.Zones =
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
+									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -50,6 +52,7 @@ _.Zones =
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
+									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -64,6 +67,7 @@ _.Zones =
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
+									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -78,6 +82,7 @@ _.Zones =
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
+									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -92,6 +97,7 @@ _.Zones =
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
+									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -106,6 +112,7 @@ _.Zones =
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
+									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -120,6 +127,7 @@ _.Zones =
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
+									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -134,6 +142,7 @@ _.Zones =
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
+									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -148,6 +157,7 @@ _.Zones =
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
+									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),

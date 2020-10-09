@@ -233,7 +233,9 @@ _.Achievements =
 						crit(18),	-- Snail Fight! (Highmountain)
 						crit(19),	-- Rocko Needs a Shave (Highmountain)
 						crit(20),	-- All Howl, No Bite (Stormheim)
-						crit(21),	-- Jarrun's Ladder (Stormheim)
+						crit(21, {	-- Jarrun's Ladder (Stormheim)
+							["questID"] = 41944,	-- Jarrun's Ladder
+						}),
 						crit(22),	-- Oh, Ominitron (Stormheim)
 						crit(23),	-- My Beasts's Bidding (Stormheim)
 						crit(24),	-- All Pets Go to Heaven (Stormheim)
