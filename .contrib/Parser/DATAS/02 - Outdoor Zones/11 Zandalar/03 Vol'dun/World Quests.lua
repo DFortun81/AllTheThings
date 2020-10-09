@@ -164,11 +164,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(2, {	-- Square
-								["achievementID"] = 13512,	-- Master Calligrapher
-							}),
-						},
 					}),
 					q(53325, {	-- Coarse Storm Silver
 						["lvl"] = 120,
@@ -198,11 +193,6 @@ _.Zones =
 						["provider"] = { "n", 142054 },	-- Kusa
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(20, {	-- Desert Survivors
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(51780, {	-- Dinner for Dolly and Dot
 						["lvl"] = 120,
@@ -330,14 +320,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(3, {	-- 	Isolated Victory
-								["achievementID"] = 13284,	-- Frontline Warrior
-							}),
-							crit(3, {	-- 	Isolated Victory
-								["achievementID"] = 13388,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(54574, {	-- Jin'tago (Faction Assault WQ)
 						["lvl"] = 110,
@@ -360,11 +342,6 @@ _.Zones =
 						["provider"] = { "n", 141879 },	-- Keeyo
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(17, {	-- Keeyo's Champions of Vol'dun
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(51429, {	-- King Clickyclack
 						["lvl"] = 120,
@@ -383,14 +360,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(4, {	-- Many Fine Heroes
-								["achievementID"] = 13283,	-- Frontline Warrior
-							}),
-							crit(4, {	-- Many Fine Heroes
-								["achievementID"] = 13387,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(50851, {	-- Mor'fani the Exile
 						["lvl"] = 120,
@@ -533,11 +502,6 @@ _.Zones =
 						["provider"] = { "n", 141945 },	-- Sizzik
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(18, {	-- Snakes on a Terrace
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(51106, {	-- Songstress Nahjeen
 						["lvl"] = 120,
@@ -661,11 +625,6 @@ _.Zones =
 						["provider"] = { "n", 141969 },	-- Spineleaf
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(19, {	-- What Do You Mean, Mind Controlling Plants?
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(51315, {	-- Wild Flutterbies
 						["lvl"] = 120,

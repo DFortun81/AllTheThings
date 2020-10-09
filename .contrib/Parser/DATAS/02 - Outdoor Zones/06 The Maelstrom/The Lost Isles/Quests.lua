@@ -198,13 +198,6 @@ _.Zones =
 					["provider"] = { "n", 36145 },	-- Thrall
 					["sourceQuests"] = { 14242 },	-- Precious Cargo
 				}),
-				q(25267, {	-- Message for Saurfang
-					["maps"] = { 1 },	-- Durotar
-					["coord"] = { 57.6, 9.7, 1 },
-					["races"] = { GOBLIN },
-					["provider"] = { "n", 86884 },	-- Darkspear Loyalist
-					["sourceQuests"] = { 25266 },	-- Warchief's Emissary
-				}),
 				q(25058, {	-- Mine Disposal, the Goblin Way
 					["coord"] = { 37.3, 41.9, 174 },
 					["provider"] = { "n", 38387 },	-- Sassy Hardwrench

@@ -854,6 +854,8 @@ _.HiddenQuestTriggers =
 		q(39171),	-- Fel Legendary Pet Tracking Quest 13 — Netherfist
 		q(39172),	-- Fel Legendary Pet Tracking Quest 14 — Skrillix
 		q(39173),	-- Fel Legendary Pet Tracking Quest 15 — Defiled Earth
+		q(39184),	-- learning Immaculate Haste Taladite at an Apexis Gemcutter
+		q(39187),	-- learning Immaculate Stamina Taladite
 
 		--	DUNGEONS & RAIDS
 		q(35960),	-- Auchindoun Reward Quest
@@ -946,9 +948,6 @@ _.HiddenQuestTriggers =
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
 		q(34968),	-- Treasure: Ice-Covered Supplies (secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge)
 		q(34184),	-- Vignette: Aarkos - Killed Boss — first quest that triggers before looting Aarko's Family Treasure in Talador (we have the loot quest attached to the treasure)
-		q(35381),	-- Treasure: Pippers' Buried Supplies [This is right next to the Town Hall in the level 1 Garrison.] (Alliance)
-		q(35382),	-- Treasure: Pippers' Buried Supplies [This is behind the hut next to the flight master in the level 1 Garrison.] (Alliance)
-		q(35384),	-- Treasure: Pippers' Buried Supplies [This is at the base of a tree off to the right of the South exit in the level 1 Garrison.] (Alliance)
 
 		--	WORLD BOSSES (probably?  'short-supply reward' is usually a bonus roll)
 		q(37460),	-- Gorgrond - Short-Supply Reward (Drov the Ruiner killed)
@@ -1547,6 +1546,7 @@ _.HiddenQuestTriggers =
 		q(45511),	-- Highmountain - WQ rare: Olokk the Shipbreaker
 		q(44039),	-- Highmountain - WQ rare: Sea King Tidross
 		q(44879),	-- Highmountain - WQ rare: Snowfeather Matriarch
+		q(40601),	-- 7.0 Highmountain - Vignette - Pinerock Basin - Highmountain Beastmaster See Treasure (JLW) — looting treasure after Arru
 		q(44880),	-- Stormheim - WQ rare: Direbeak Matriarch
 		q(45478),	-- Suramar - WQ rare: Achronos
 		q(45504),	-- Suramar - WQ rare: Alteria
@@ -2185,6 +2185,7 @@ _.HiddenQuestTriggers =
 		q(49368, {	-- killed a Vilebone Ravager while on the "Agent of Death" WQ, and this quest popped.  not sure if it had to do with entering the area or killing the mob
 			["isWorldQuest"] = true,	-- for some reason, this shows up in /attwq for characters who haven't done it.  haunted!
 		}),
+		q(49369),	-- reported as appearing after clicking on a Saurolisk Tail in Nazmir.  It also was after two messages from NPCs shortly after the one from 49367, so it may actually be related to that ("De voice... he is calling to [...] we must obey!" and "Do you hear it?  It's Bwonsamdi's call!  Eternity is near!") -- unsure if this erroneously shows up in /attwq like the others; if so, it needs to be marked as a WQ
 
 		--	Stormsong Valley
 		-- Bonus Objectives
@@ -2250,6 +2251,7 @@ _.HiddenQuestTriggers =
 		q(50166),	-- Tiragarde Sound repeatable random chest
 		q(50952),	-- Tiragarde Sound repeatable random chest
 		q(53630),	-- Tiragarde Sound repeatable random chest (possibly different from others, it was Forgotten Treasure Chest at 79.57 20.22 in a small cave)
+		q(53631),	-- reported as "opening a chest in Tiragarde Sound"
 		q(48594),	-- Tiragarde Sound Tol Dagor chest
 		-- Various
 		q(55627),	-- triggered additionally when completing the WQ to kill P4-N73R4.  this is not the first-time kill tracking quest for the rare, so i'm not sure what it's for
@@ -2326,6 +2328,8 @@ _.HiddenQuestTriggers =
 		q(51346),	-- Zuldazar repeatable random chest
 		q(50729),	-- looted a chest in Zuldazar at 58.6, 81.1
 		q(51363),	-- Weekly m+ chest looted (Horde, probably alliance too?)
+		-- Rares
+		q(50856),	-- Old R'gal first time kill quest
 		-- Various
 		q(50931),	-- Spoke to talanji when meeting with Rastakhan for the first time
 		q(55413),	-- War Mode supply drop in Zuldazar
@@ -2477,6 +2481,7 @@ _.HiddenQuestTriggers =
 		q(56592),	-- Rockweed Shambler first kill
 		q(56917),	-- Rockweed Shambler additional loot (Benthic/Manapearls)
 		q(56606),	-- Sandclaw Stonoeshell first kill
+		q(57142),	-- looting Giant Crab Leg + Brinestone Pickaxe from Sandclaw Stoneshell
 		q(56590),	-- Scale Matriarch Vynara first kill
 		q(56589),	-- Scale Matriarch Zodia first kill
 		q(56588),	-- Shassera first kill

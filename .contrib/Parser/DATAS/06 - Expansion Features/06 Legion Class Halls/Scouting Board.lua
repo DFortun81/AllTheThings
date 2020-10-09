@@ -153,7 +153,10 @@ _.ExpansionFeatures =
 							un(REMOVED_FROM_GAME, i(141183)),	-- Bag of Confiscated Materials (Mythic)
 						})),
 						q(44058,  {  -- Volpin the Elusive
-							i(137573),	-- Reins of the Llothien Prowler
+							["sourceQuests"] = { 44057 },	-- A "Noble" Event
+							["g"] = {
+								i(137573),	-- Reins of the Llothien Prowler
+							},
 						}),
 						--[[q(45312, {	-- You Beat the Ball of Meat
 							["provider"] = { "i", 143590 },	-- Hunk of Meatball

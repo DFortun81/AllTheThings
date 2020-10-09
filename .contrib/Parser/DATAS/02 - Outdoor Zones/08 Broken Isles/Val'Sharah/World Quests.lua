@@ -87,11 +87,6 @@ _.Zones =
 				q(42023, {	-- Black Rook Rumble
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["g"] = {
-						crit(3, {	-- Off the Top Rook
-							["achievementID"] = 11474,	-- Free For All, More For Me
-						}),
-					},
 				}),
 				q(41955, {	-- Bloodline of Stone
 					["lvl"] = 110,
@@ -125,11 +120,6 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(12, {	-- Buoy Fishing
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41532, {	-- Bushy Dreamleaf
 					["lvl"] = 110,
@@ -193,11 +183,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
-						crit(37, {	-- Dealing with Satyrs
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(44884, {	-- Defense of Emerald Bay (Invasion WQ)
 					["lvl"] = 98,
@@ -300,31 +285,16 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(1, {	-- Huge Mossgill Perch
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41613, {	-- Huge Mossgill Perch
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(1, {	-- Huge Mossgill Perch
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41270, {	-- Huge Mossgill Perch
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(1, {	-- Huge Mossgill Perch
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(45804, {	-- Impvasion! (Invasion wq)
 					["isWorldQuest"] = true,
@@ -338,11 +308,6 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(16, {	-- Cave Fishing
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41531, {	-- Iridescent Dreamleaf
 					["lvl"] = 110,
@@ -389,31 +354,16 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(19, {	-- Lively Mossgill Perch
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41600, {	-- Lively Mossgill Perch
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(19, {	-- Lively Mossgill Perch
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41269, {	-- Lively Mosgill Perch
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(19, {	-- Lively Mossgill Perch
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(44011, {	-- Lost Wisp
 					["lvl"] = 110,
@@ -432,11 +382,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
-						crit(34, {	-- Meet The Maw
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41334, {	-- Musky Bear Hide
 					["isWorldQuest"] = true,
@@ -451,11 +396,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
-						crit(33, {	-- Only Pets Can Prevent Forest Fires
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(42145, {	-- Out of the Woodwork
 					["lvl"] = 110,
@@ -536,11 +476,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
-						crit(35, {	-- Stand Up to Bullies
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41441, {	-- Superior Leystone Deposits
 					["isWorldQuest"] = true,
@@ -602,11 +537,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
-						crit(32, {	-- Training with Durian
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41992, {	-- Twisted Ash
 					["lvl"] = 110,
@@ -737,11 +667,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["groups"] = {
-						crit(36, {	-- Wildlife Conservationist
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41652, {	-- Work Order: Deep Amber Loop
 					["lvl"] = 110,
@@ -773,11 +698,6 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(22, {	-- Work Order: Mossgill Perch
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41676, {	-- Work Order: Pump-Action Bandage Gun
 					["requireSkill"] = ENGINEERING,

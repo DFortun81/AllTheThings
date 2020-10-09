@@ -387,6 +387,10 @@ _.WorldEvents =
 					}),
 				},
 			}),
+			q(29472, {	-- Eyes on the Prizes
+				["requireSkill"] = TAILORING,
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			q(36481, {	-- Firebird's Challenge
 				["provider"] = { "n", 85546 },	-- Ziggie Sparks
 				["isMonthly"] = true,
@@ -657,6 +661,10 @@ _.WorldEvents =
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
+			}),
+			q(29470, {	-- Tan My Hide
+				["requireSkill"] = SKINNING,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29455, {	-- Target: Turtle
 				["provider"] = { "n", 54485 },	-- Jessica Rogers

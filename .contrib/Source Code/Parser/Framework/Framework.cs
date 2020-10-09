@@ -103,6 +103,11 @@ namespace ATT
         private static IDictionary<string, Dictionary<int, object>> NAMES_BY_TYPE = new Dictionary<string, Dictionary<int, object>>();
 
         /// <summary>
+        /// Represents the current parent group when processing the 'g' subgroup
+        /// </summary>
+        private static KeyValuePair<string, object>? CurrentParentGroup { get; set; }
+
+        /// <summary>
         /// Merge the data into the database.
         /// </summary>
         /// <param name="listing">The listing.</param>
@@ -366,6 +371,80 @@ namespace ATT
                     altQuests.Remove(questID);
                 }
             }
+            else if (data.TryGetValue("_quests", out object quests))
+            {
+                var questIDs = quests as List<object>;
+                data.Remove("_quests");
+                var clone = new Dictionary<string, object>(data);
+                if (questIDs != null && ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out ATT.Export.ObjectData objectData))
+                {
+                    switch (objectData.ObjectType)
+                    {
+                        case "criteriaID":
+                            if (CurrentParentGroup != null)
+                            {
+                                var parent = CurrentParentGroup.Value;
+                                // duplicate from an achID/criteriaID source
+                                if (parent.Key == "achID")
+                                {
+                                    if (!clone.ContainsKey(parent.Key))
+                                    {
+                                        clone.Add(parent.Key, parent.Value);
+                                    }
+                                    else
+                                    {
+                                        // child already contains the parent key value? weird but replace anyway
+                                        clone[parent.Key] = parent.Value;
+                                    }
+                                }
+                            }
+
+                            // verify the criteria has the achieve information before duplicating
+                            if (clone.ContainsKey("achID"))
+                            {
+                                List<object> critList = new List<object>() { clone };
+                                foreach (object dupeQuestID in questIDs)
+                                {
+                                    try
+                                    {
+                                        int questIDint = Convert.ToInt32(dupeQuestID);
+                                        // push the clone data into the 'g' of the matching quest objects
+                                        if (Objects.AllQuests.TryGetValue(questIDint, out Dictionary<string, object> questg))
+                                        {
+                                            Objects.Merge(questg, "g", critList);
+                                        }
+                                    }
+                                    catch
+                                    {
+                                        Trace.WriteLine("Non-integer QuestID used in _quests property:" + dupeQuestID?.ToString());
+                                    }
+                                }
+                            }
+                            break;
+                        case "achID":
+                            List<object> achList = new List<object>() { clone };
+                            foreach (object dupeQuestID in questIDs)
+                            {
+                                try
+                                {
+                                    int questIDint = Convert.ToInt32(dupeQuestID);
+                                    // push the clone data into the 'g' of the matching quest objects
+                                    if (Objects.AllQuests.TryGetValue(questIDint, out Dictionary<string, object> questg))
+                                    {
+                                        Objects.Merge(questg, "g", achList);
+                                    }
+                                }
+                                catch
+                                {
+                                    Trace.WriteLine("Non-integer QuestID used in _quests property:" + dupeQuestID?.ToString());
+                                }
+                            }
+
+                            break;
+                            // handle other types of duplication sources if necessary
+                    }
+                }
+            }
 
             // Throw away automatic Spell ID assignments for certain filter types.
             if (data.TryGetValue("spellID", out f))
@@ -440,7 +519,11 @@ namespace ATT
             // If this container has groups, then process those groups as well.
             if (data.TryGetValue("g", out List<object> groups))
             {
+                var previousParent = CurrentParentGroup;
+                if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out ATT.Export.ObjectData objectData))
+                    CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, data[objectData.ObjectType]);
                 Process(groups, modID, minLevel);
+                CurrentParentGroup = previousParent;
             }
 
             if (data.TryGetValue("cost", out object costRef) && costRef is List<List<object>> cost)
@@ -521,6 +604,14 @@ namespace ATT
                     names[id] = name;
                     data.Remove("name");
                 }
+            }
+
+            // clean up any metadata tags
+            List<string> keys = data.Keys.ToList();
+            for (int i = 1; i < data.Count; i++)
+            {
+                if (keys[i].StartsWith("_"))
+                    data.Remove(keys[i]);
             }
 
             return true;

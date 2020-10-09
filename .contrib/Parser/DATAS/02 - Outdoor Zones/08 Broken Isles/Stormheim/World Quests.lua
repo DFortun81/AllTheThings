@@ -15,21 +15,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(20, {	-- All Howl, No Bite
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41948, {	-- All Pets Go to Heaven
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(24, {	-- All Pets Go to Heaven
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(45439, {	-- An Invasion of... Murlocs? (Invasion wq)
 					["lvl"] = 98,
@@ -59,11 +49,6 @@ _.Zones =
 				q(42025, {	-- Bareback Brawl
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["g"] = {
-						crit(2, {	-- Saddle Sore
-							["achievementID"] = 11474,	-- Free For All, More For Me
-						}),
-					},
 				}),
 				q(45072, {	-- Barrels o' Fun
 					["lvl"] = 110,
@@ -73,11 +58,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(25, {	-- Beasts of Burden
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(46010, {	-- Bonecrusher Korgolath (Invasion wq)
 					["lvl"] = 98,
@@ -274,31 +254,16 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(14, {	-- Huge Stormrays
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41275, {	-- Huge Stormrays
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(14, {	-- Huge Stormrays
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41615, {	-- Huge Stormrays
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(14, {	-- Huge Stormrays
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(46015, {	-- Idra'zuul (Invasion wq)
 					["lvl"] = 98,
@@ -308,11 +273,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(21, {	-- Jarrun's Ladder
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
+					["coord"] = { 56.8, 46.2, 634 },
 				}),
 				q(43769, {	-- Ley Race
 					["lvl"] = 110,
@@ -341,31 +302,16 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(10, {	-- Lively Stormrays
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41274, {	-- Lively Stormrays
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(10, {	-- Lively Stormrays
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41603, {	-- Lively Stormrays
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(10, {	-- Lively Stormrays
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(46016, {	-- Magdrezoth (Invasion wq)
 					["lvl"] = 98,
@@ -375,11 +321,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(23, {	-- My Beasts's Bidding
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(44943, {	-- Now That's Just Clawful!
 					["lvl"] = 110,
@@ -389,11 +330,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(22, {	-- Oh, Ominitron
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(43751, {	-- Oh, Ship! (A)
 					["lvl"] = 110,
@@ -449,11 +385,6 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(21, {	-- Rocket Boot Fishing
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41927, {	-- Ruining the Runewood
 					["lvl"] = 110,
@@ -499,11 +430,6 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(15, {	-- Slippery Stormrays
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41343, {	-- Solid Crabshell Fragment
 					["lvl"] = 110,
@@ -746,11 +672,6 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(17, {	-- Work Order: Stormrays
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41344, {	-- Work Order: Stormscales
 					["lvl"] = 110,

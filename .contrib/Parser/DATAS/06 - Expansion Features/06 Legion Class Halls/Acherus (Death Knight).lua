@@ -218,7 +218,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 111480 }, -- Salanar the Horseman
 						["coord"] = { 36.2, 56.1, 647 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 43571, -- Neltharion's Lair: Braid of the Underking
+						["sourceQuest"] = 43899, -- Steeds of the Damned
 					}),
 					q(44082, {	-- Knights of the Ebon Blade
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee

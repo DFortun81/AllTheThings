@@ -1622,19 +1622,36 @@ namespace ATT
                             return;
                         }
 
+                    case "_quests":
+                        if (value is Dictionary<object, object> quests)
+                        {
+                            item[field] = quests.Values.ToList();
+                        }
+                        else
+                        {
+                            Trace.Write("Parser is ignoring field '");
+                            Trace.Write(field);
+                            Trace.WriteLine("' for objects.");
+                            Trace.Write("  [");
+                            Trace.Write(MiniJSON.Json.Serialize(value));
+                            Trace.WriteLine("]");
+                            Trace.WriteLine(MiniJSON.Json.Serialize(item));
+                        }
+                        break;
+
                     // Report all other fields.
                     default:
                         {
-                            // ignore fields starting with _ since those will be used for metadata in some scenarios
-                            if (field.StartsWith("_"))
-                                break;
-
                             // Integer Data Type Fields
                             if (ATT.Export.ObjectData.ContainsObjectType(field))
                             {
                                 item[field] = Convert.ToInt32(value);
                                 return;
                             }
+
+                            // ignore fields starting with _ since those will be used for metadata in some scenarios
+                            if (field.StartsWith("_"))
+                                break;
 
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;

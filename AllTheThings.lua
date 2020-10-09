@@ -1450,7 +1450,7 @@ local function CreateHash(t)
 	local key = t.key or GetKey(t);
 	if key then
 		local hash = key .. (rawget(t, key) or t[key]);
-		if key == "criteriaID" and t.achID then hash = hash .. ":" .. t.achID; end
+		if key == "criteriaID" and t.achievementID then hash = hash .. ":" .. t.achievementID; end
 		rawset(t, "hash", hash);
 		return hash;
 	end
@@ -2276,6 +2276,9 @@ end)();
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	local total = 0;
 	local progress = 0;
+	local isDebug = app.Settings:Get("DebugMode");
+	local showComGrps = app.Settings:Get("Show:CompletedGroups");
+	local showComThgs = app.Settings:Get("Show:CollectedThings");
 	for i,group in ipairs(groups) do
 		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
 		if app.RecursiveGroupRequirementsFilter(group) then
@@ -2283,7 +2286,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
 				total = total + group.total;
 				progress = progress + (group.progress or 0);
-				if (group.progress / group.total) < 1 or app.Settings:Get("Show:CompletedGroups") then
+				if isDebug or showComGrps or (group.progress / group.total) < 1 then
 					right = GetProgressColorText(group.progress, group.total);
 				end
 			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
@@ -2291,21 +2294,19 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					total = total + 1;
 					if group.collected then
 						progress = progress + 1;
-						if app.Settings:Get("Show:CollectedThings") then
+						if isDebug or showComThgs then
 							right = GetCollectionIcon(group.collected);
 						end
 					else
 						right = L["NOT_COLLECTED_ICON"];
 					end
 				elseif group.trackable then
-					if app.Settings:Get("Show:IncompleteThings") then
-						if group.saved then
-							if app.Settings:Get("Show:CollectedThings") then
-								right = L["COMPLETE_ICON"];
-							end
-						else
-							right = L["NOT_COLLECTED_ICON"];
+					if group.saved then
+						if isDebug or showComThgs then
+							right = L["COMPLETE_ICON"];
 						end
+					elseif isDebug then
+						right = L["NOT_COLLECTED_ICON"];
 					end
 				elseif group.visible then
 					right = group.count and (group.count .. "x") or "---";
@@ -2322,8 +2323,22 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				-- Only go down one more level.
 				if layer < 2 and group.g and (not group.achievementID or paramA == "creatureID") and not group.parent.difficultyID and #group.g > 0 and not (group.g[1].artifactID or group.filterID == 109) and not group.symbolized then
 					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
+				-- else
+					-- print("skipped sub-contains");
 				end
+			-- If this group is a Quest, then it may be a source Quest to another Quest which has a Nested Collectible that needs to be shown
+			-- This is just too laggy in some situations to search for sourceQuests repeatedly... maybe if it can be coroutined in the tooltip...?
+			-- elseif group.questID and not group.isBreadcrumb then
+				-- -- print("check if is a sourceQuest for",group.questID);
+				-- local search = app.SearchForField("sourceQuests", group.questID);
+				-- if search then
+					-- -- for i,g in ipairs(search) do
+						-- -- print("has sq",RecurseGroupParent(g));
+					-- -- end
+					-- BuildContainsInfo(search, entries, paramA, paramB, indent .. " ", layer);
+				-- end
 			end
+			-- print("total",tostring(total),"progress",tostring(progress));
 		-- else
 			-- print("ex",group.key,group[group.key],RecurseGroupParent(group));
 		end
@@ -2875,17 +2890,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if j.parent and not j.parent.hideText and j.parent.parent
 					and (app.Settings:GetTooltipSetting("SourceLocations:Completed") or not app.IsComplete(j)) then
 					local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
-					for source,replacement in pairs(abbrevs) do
-						text = string.gsub(text, source,replacement);
-					end
-					if j.u then
-						tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
-					elseif not app.RecursiveClassAndRaceFilter(j.parent) then
-						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
-					elseif not app.RecursiveUnobtainableFilter(j.parent) then
-						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
-					else
-						tinsert(temp, text);
+					if not string.match(text, "Unsorted") and not string.match(text, "Hidden Quest Triggers") then
+						for source,replacement in pairs(abbrevs) do
+							text = string.gsub(text, source,replacement);
+						end
+						if j.u then
+							tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
+						elseif not app.RecursiveClassAndRaceFilter(j.parent) then
+							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
+						elseif not app.RecursiveUnobtainableFilter(j.parent) then
+							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
+						else
+							tinsert(temp, text);
+						end
 					end
 				end
 			end
@@ -3362,11 +3379,33 @@ local function SearchForFieldRecursively(group, field, value)
 			else
 				return { group };
 			end
+		-- elseif group[field] and #group[field] > 0 then
+			-- for i,v in ipairs(group[field]) do
+				-- if v == value then
+				-- -- OH BOY, WE FOUND IT WHICH CONTAINS THE TABLE CONTAINING IT!
+					-- if first then
+						-- return tinsert(first, group);
+					-- else
+						-- return { group };
+					-- end
+				-- end
+			-- end
 		end
 		return first;
 	elseif group[field] == value then
 		-- OH BOY, WE FOUND IT!
 		return { group };
+	-- elseif group[field] and #group[field] > 0 then
+		-- for i,v in ipairs(group[field]) do
+			-- if v == value then
+			-- -- OH BOY, WE FOUND IT WHICH CONTAINS THE TABLE CONTAINING IT!
+				-- if first then
+					-- return tinsert(first, group);
+				-- else
+					-- return { group };
+				-- end
+			-- end
+		-- end
 	end
 end
 local function SearchForFieldContainer(field)
@@ -3374,10 +3413,9 @@ local function SearchForFieldContainer(field)
 end
 local function SearchForField(field, id)
 	if field and id then
-		local group = app:GetDataCache();
 		_cache = rawget(fieldCache, field);
 		if _cache then return rawget(_cache, id), field, id; end
-		return SearchForFieldRecursively(group, field, id), field, id;
+		return SearchForFieldRecursively(app:GetDataCache(), field, id), field, id;
 	end
 end
 app.SearchForField = SearchForField;
@@ -3635,25 +3673,31 @@ local function PopulateQuestObject(questObject)
 	cache = fieldCache["questID"][questObject.questID];
 	if cache then
 		for _,data in ipairs(cache) do
-			for key,value in pairs(data) do
-				if not (key == "g" or key == "parent") then
-					questObject[key] = value;
-				end
-			end
-			if data.isVignette then questObject.isVignette = true; end
-			if data.g then
-				for _,entry in ipairs(data.g) do
-					local resolved = ResolveSymbolicLink(entry);
-					if resolved then
-						entry = CreateObject(entry);
-						if entry.g then
-							MergeObjects(entry.g, resolved);
-						else
-							entry.g = resolved;
-						end
+			-- only merge into the WQ quest object properties from a quest object in cache
+			if data.key == "questID" or data["encounterID"] then
+				for key,value in pairs(data) do
+					if not (key == "g" or key == "parent") then
+						questObject[key] = value;
 					end
-					tinsert(questObject.g, entry);
 				end
+				if data.isVignette then questObject.isVignette = true; end
+				if data.g then
+					for _,entry in ipairs(data.g) do
+						local resolved = ResolveSymbolicLink(entry);
+						if resolved then
+							entry = CreateObject(entry);
+							if entry.g then
+								MergeObjects(entry.g, resolved);
+							else
+								entry.g = resolved;
+							end
+						end
+						tinsert(questObject.g, entry);
+					end
+				end
+			-- otherwise this is a non-quest object flagged with this questID so it should be added under the quest
+			else
+				MergeObject(questObject.g, data);
 			end
 		end
 	end
@@ -14366,6 +14410,7 @@ local ProcessAuctionData = function()
 		}, app.BaseFilter),
 		["speciesID"] = setmetatable({	-- Battle Pets
 			["filterID"] = 101,
+			["icon"] = "INTERFACE/ICONS/ICON_PETFAMILY_CRITTER",
 			["description"] = "All pets that you have not collected yet are displayed here.",
 			["priority"] = 4,
 		}, app.BaseFilter),
@@ -14381,8 +14426,8 @@ local ProcessAuctionData = function()
 			["description"] = "All recipes that you have not collected yet are displayed here.",
 			["priority"] = 6,
 		}, app.BaseFilter),
-		["itemID"] = {					-- General Items
-			["text"] = "General Items",
+		["itemID"] = {					-- General
+			["text"] = "General",
 			["icon"] = "INTERFACE/ICONS/INV_MISC_FROSTEMBLEM_01",
 			["description"] = "Illusions, toys, and other items that can be used to earn collectible items are displayed here.",
 			["priority"] = 7,
@@ -14464,21 +14509,27 @@ app.AuctionScan = function()
 end
 
 app.OpenAuctionModule = function(self)
+	if IsAddOnLoaded("TradeSkillMaster") then -- Why, TradeSkillMaster, why are you like this?
+		C_Timer.After(2, function() end);
+	end
 	if app.Blizzard_AuctionHouseUILoaded then
 		if not AllTheThingsAuctionConfig then AllTheThingsAuctionConfig = {} end
-		-- Create the Auction Tab for ATT.
-		local n = AuctionHouseFrame.numTabs + 1;
-		local button = CreateFrame("Button", "AuctionHouseFrameTab" .. n, AuctionHouseFrame, "AuctionHouseFrameDisplayModeTabTemplate");
-		button:SetID(n);
-		button:SetText(L["AUCTION_TAB"]);
-		button:SetPoint("LEFT", AuctionHouseFrameAuctionsTab, "RIGHT", -14, 0);
 		
-		PanelTemplates_SetNumTabs (AuctionHouseFrame, n);
-		PanelTemplates_EnableTab  (AuctionHouseFrame, n);
+		-- Create the Auction Tab for ATT.
+		local tabID = AuctionHouseFrame.numTabs+1;
+		local button = CreateFrame("Button", "AuctionHouseFrameTab"..tabID, AuctionHouseFrame, "AuctionHouseFrameDisplayModeTabTemplate");
+		button:SetID(tabID);
+		button:SetText(L["AUCTION_TAB"]);
+		button:SetNormalFontObject(GameFontHighlightSmall);
+		button:SetPoint("LEFT", AuctionHouseFrame.Tabs[tabID-1], "RIGHT", -15, 0);
+		tinsert(AuctionHouseFrame.Tabs, button);
+		
+		PanelTemplates_SetNumTabs (AuctionHouseFrame, tabID);
+		PanelTemplates_EnableTab  (AuctionHouseFrame, tabID);
 		
 		-- Garbage collect the function after this is executed.
 		app.OpenAuctionModule = function() end;
-		app.AuctionModuleTabID = n;
+		app.AuctionModuleTabID = tabID;
 		
 		-- Create the movable Auction Data window.
 		window = app:GetWindow("AuctionData", AuctionHouseFrame, function(self)
@@ -14494,7 +14545,7 @@ app.OpenAuctionModule = function(self)
 					["options"] = {
 						{
 							["text"] = "Wipe Scan Data",
-							["icon"] = "INTERFACE/ICONS/INV_firstAid_Sun-Bleached Linen",
+							["icon"] = "INTERFACE/ICONS/INV_FIRSTAID_SUN-BLEACHED LINEN",
 							["description"] = "Click this button to wipe out all of the previous scan data.",
 							["visible"] = true,
 							["priority"] = -4,
@@ -14515,9 +14566,9 @@ app.OpenAuctionModule = function(self)
 							end,
 						},
 						{
-							["text"] = "Perform a Full Scan",
+							["text"] = "Scan or Load Last Save",
 							["icon"] = "INTERFACE/ICONS/INV_DARKMOON_EYE",
-							["description"] = "Click this button to perform a full scan of the auction house. The game may or may not freeze depending on the size of the auction house.\n\nData should populate automatically.",
+							["description"] = "Click this button to perform a full scan of the auction house or load the last scan conducted within 15 minutes. The game may or may not freeze depending on the size of your auction house.\n\nData should populate automatically.",
 							["visible"] = true,
 							["priority"] = -3,
 							["OnClick"] = function() 
@@ -14527,7 +14578,7 @@ app.OpenAuctionModule = function(self)
 										AllTheThingsAuctionConfig.LastScan = time();
 										app.StartAuctionScan();
 									else
-										print(L["TITLE"] .. ": Throttled scan! Please wait " .. RoundNumber(((AllTheThingsAuctionConfig.LastScan+900)-time()), 0) .. " before running another.");
+										print(L["TITLE"] .. ": Throttled scan! Please wait " .. RoundNumber(((AllTheThingsAuctionConfig.LastScan+900)-time()), 0) .. " before running another. Loading last save instead...");
 										StartCoroutine("ProcessAuctionData", ProcessAuctionData);
 									end
 								end
@@ -14652,7 +14703,7 @@ app.OpenAuctionModule = function(self)
 		end
 
 		button:SetScript("OnClick", function(self) -- This is the "ATT" button at the bottom of the auction house frame
-			if self:GetID() == n then
+			if self:GetID() == tabID then
 				window:Show();
 			end
 		end);

@@ -103,14 +103,6 @@ _.Zones =
 						["isDaily"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(3, {	-- A Drust Cause
-								["achievementID"] = 13283,	-- Frontline Warrior
-							}),
-							crit(3, {	-- A Drust Cause
-								["achievementID"] = 13387,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(51616, {	-- A Final Rest
 						["lvl"] = 120,
@@ -276,11 +268,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(2, {	-- Master Calligrapher (Square)
-								["achievementID"] = 13512,	-- Master Calligrapher
-							}),
-						},
 					}),
 					q(51528, {	-- Captain Leadfist
 						["lvl"] = 120,
@@ -293,11 +280,6 @@ _.Zones =
 					q(52009, {	-- Crab People
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(1, {	-- Battle on Zandalar and Kul Tiras (Crab People)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(51706, { 	-- Deadwood
 						["lvl"] = 120,
@@ -430,14 +412,6 @@ _.Zones =
 						["isDaily"] = true,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(5, {	-- In Every Dark Corner
-								["achievementID"] = 13284,	-- Frontline Warrior
-							}),
-							crit(5, {	-- In Every Dark Corner
-								["achievementID"] = 13388,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(54688, {	-- Inquisitor Erik (Faction Assault WQ)
 						["lvl"] = 110,
@@ -535,11 +509,6 @@ _.Zones =
 					q(52218, {	-- Night Horrors
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(4, {	-- Night Horrors
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(54089, {	-- Omgar Doombow (Faction Assault WQ)
 						["lvl"] = 110,
@@ -587,11 +556,6 @@ _.Zones =
 					q(52278, {	-- Rogue Azerite
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(5, {	-- Rogue Azerite (Battle on Zandalar and Kul Tiras)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(49397, {	-- Sausage Party
 						["lvl"] = 120,
@@ -714,11 +678,6 @@ _.Zones =
 					q(52297, {	-- What's the Buzz?
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(6, {	-- What's the Buzz? — Battle on Zandalar and Kul Tiras
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(51676, {	-- What a Gull Wants
 						["lvl"] = 120,
