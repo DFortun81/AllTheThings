@@ -2185,6 +2185,7 @@ _.HiddenQuestTriggers =
 		q(49368, {	-- killed a Vilebone Ravager while on the "Agent of Death" WQ, and this quest popped.  not sure if it had to do with entering the area or killing the mob
 			["isWorldQuest"] = true,	-- for some reason, this shows up in /attwq for characters who haven't done it.  haunted!
 		}),
+		q(49369),	-- reported as appearing after clicking on a Saurolisk Tail in Nazmir.  It also was after two messages from NPCs shortly after the one from 49367, so it may actually be related to that ("De voice... he is calling to [...] we must obey!" and "Do you hear it?  It's Bwonsamdi's call!  Eternity is near!") -- unsure if this erroneously shows up in /attwq like the others; if so, it needs to be marked as a WQ
 
 		--	Stormsong Valley
 		-- Bonus Objectives
@@ -2250,6 +2251,7 @@ _.HiddenQuestTriggers =
 		q(50166),	-- Tiragarde Sound repeatable random chest
 		q(50952),	-- Tiragarde Sound repeatable random chest
 		q(53630),	-- Tiragarde Sound repeatable random chest (possibly different from others, it was Forgotten Treasure Chest at 79.57 20.22 in a small cave)
+		q(53631),	-- reported as "opening a chest in Tiragarde Sound"
 		q(48594),	-- Tiragarde Sound Tol Dagor chest
 		-- Various
 		q(55627),	-- triggered additionally when completing the WQ to kill P4-N73R4.  this is not the first-time kill tracking quest for the rare, so i'm not sure what it's for
@@ -2326,6 +2328,8 @@ _.HiddenQuestTriggers =
 		q(51346),	-- Zuldazar repeatable random chest
 		q(50729),	-- looted a chest in Zuldazar at 58.6, 81.1
 		q(51363),	-- Weekly m+ chest looted (Horde, probably alliance too?)
+		-- Rares
+		q(50856),	-- Old R'gal first time kill quest
 		-- Various
 		q(50931),	-- Spoke to talanji when meeting with Rastakhan for the first time
 		q(55413),	-- War Mode supply drop in Zuldazar
@@ -2477,6 +2481,7 @@ _.HiddenQuestTriggers =
 		q(56592),	-- Rockweed Shambler first kill
 		q(56917),	-- Rockweed Shambler additional loot (Benthic/Manapearls)
 		q(56606),	-- Sandclaw Stonoeshell first kill
+		q(57142),	-- looting Giant Crab Leg + Brinestone Pickaxe from Sandclaw Stoneshell
 		q(56590),	-- Scale Matriarch Vynara first kill
 		q(56589),	-- Scale Matriarch Zodia first kill
 		q(56588),	-- Shassera first kill

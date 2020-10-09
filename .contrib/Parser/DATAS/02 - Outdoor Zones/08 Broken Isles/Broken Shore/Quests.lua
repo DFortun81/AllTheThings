@@ -650,7 +650,6 @@ _.Zones =
 				q(45827),	-- Monk
 				q(44264),	-- Neltharion's Lair
 				q(44265),	-- Neltharion's Lair
-				q(43571),	-- Neltharion's Lair: Braid of the Underking
 				q(42730),	-- Noggenfogger's Reasonable Request
 				q(44269),	-- Odyn's Challenge
 				q(44268),	-- Odyn's Challenge
