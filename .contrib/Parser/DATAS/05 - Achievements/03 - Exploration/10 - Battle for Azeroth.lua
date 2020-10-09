@@ -671,23 +671,53 @@ _.Achievements =
 						crit(3),		-- Portakillo killed
 						crit(4),		-- Toadcruel killed
 					}),
-					ach(13704, 13645),	-- Nautical Battlefield Training
-					ach(13690, {	-- Nazjatarget Eliminated
-						crit(1),	-- Szun, Breaker of Slaves
-						crit(2),	-- Frozen Winds of Zhiela
-						crit(3),	-- Zoko, Her Iron Defender
-						crit(4),	-- Tempest-Speaker Shalan'ali
-						crit(5),	-- Starseeker of the Shirakess
-						crit(6),	-- Azanz, the Slighterblade
-						crit(7),	-- Undana, Chilling Assassin
-						crit(8),	-- Kassar, Wielder of Dark Blades
-						crit(9),	-- The Zanj'ir Brutalizer
-						crit(10),	-- Champion Aldrantiss, Defender of her Kingdom
-						crit(11),	-- Champion Alzana, Arrow of Thunder
-						crit(12),	-- Champion Eldanar, Shield of Her Glory
-						crit(13),	-- Champion Kyx'zhul the Deepspeaker
-						crit(14),	-- Champion Qalina, Spear of Ice
-						crit(15),	-- Champion Vyz'olgo the Mind-Taker
+					ach(13704, 13645),	-- Nautical Battlefield Training					
+					ach(13690, {		-- Nazjatarget Elminated
+						crit(1, { 	-- Szun, Breaker of Slaves
+							["altQuests"]  = { 55897 },
+						}),
+						crit(2, { 	-- Frozen Winds of Zhiela
+							["altQuests"]  = { 55895 },
+						}),
+						crit(3, { 	-- Zoko, Her Iron Defender
+							["altQuests"]  = { 55894 },
+						}),
+						crit(4, { 	-- Tempest-Speaker Shalan'ali
+							["altQuests"]  = { 55898 },
+						}),
+						crit(5, { 	-- Starseeker of the Shirakess
+							["altQuests"]  = { 55899 },
+						}),
+						crit(6, { 	-- Azanz, the Slitherblade
+							["altQuests"]  = { 55893 },
+						}),
+						crit(7, { 	-- Undana, Chilling Assassin
+							["altQuests"]  = { 55896 },
+						}),
+						crit(8, { 	-- Kassar, Wielder of Dark Blades
+							["altQuests"]  = { 55900 },
+						}),
+						crit(9, { 	-- The Zanj'ir Brutalizer
+							["altQuests"]  = { 55886 },
+						}),
+						crit(10, {	-- Champion Aldrantiss, Defender of Her Kingdom
+							["altQuests"]  = { 55891 },
+						}),
+						crit(11, {	-- Champion Alzana, Arrow of Thunder
+							["altQuests"]  = { 55887 },
+						}),
+						crit(12, {	-- Champion Eldanar, Shield of Her Glory
+							["altQuests"]  = { 55892 },
+						}),
+						crit(13, {	-- Champion Kyx'zhul the Deepspeaker
+							["altQuests"]  = { 55889 },
+						}),
+						crit(14, {	-- Champion Qalina, Spear of Ice
+							["altQuests"]  = { 55888 },
+						}),
+						crit(15, {	-- Champion Vyz'olgo the Mind-Taker
+							["altQuests"]  = { 55890 },
+						}),
 					}),
 					ach(13713),		-- Nothing to Scry About
 					ach(13556, {	-- Outside Influences
@@ -740,27 +770,69 @@ _.Achievements =
 						crit(13),	-- Salgos the Eternal
 					}),
 					ach(13764, {	-- Puzzle Performer
-						crit(1),	-- Easy Leylocked Chest
-						crit(2),	-- Medium Leylocked Chest
-						crit(3),	-- Hard Leylocked Chest
-						crit(4),	-- Hard Runelocked Chest: Yellow
-						crit(5),	-- Hard Runelocked Chest: Red
-						crit(6),	-- Hard Runelocked Chest: Purple
-						crit(7),	-- Hard Runelocked Chest: Orange
-						crit(8),	-- Hard Runelocked Chest: Green
-						crit(9),	-- Hard Runelocked Chest: Blue
-						crit(10),	-- Medium Runelocked Chest: Yellow
-						crit(11),	-- Medium Runelocked Chest: Red
-						crit(12),	-- Medium Runelocked Chest: Purple
-						crit(13),	-- Medium Runelocked Chest: Orange
-						crit(14),	-- Medium Runelocked Chest: Green
-						crit(15),	-- Medium Runelocked Chest: Blue
-						crit(16),	-- Medium Runelocked Chest: Blue
-						crit(17),	-- Medium Runelocked Chest: Purple
-						crit(18),	-- Medium Runelocked Chest: Yellow
-						crit(19),	-- Medium Runelocked Chest: Red
-						crit(20),	-- Medium Runelocked Chest: Orange
-						crit(21),	-- Medium Runelocked Chest: Green
+						crit(1, {	-- Easy Leylocked Chest
+							["altQuests"] = { 56025 },
+						}),
+						crit(2, {	-- Medium Leylocked Chest
+							["altQuests"] = { 56024 },
+						}),
+						crit(3, {	-- Hard Leylocked Chest
+							["altQuests"] = { 56023 },
+						}),
+						crit(4, {	-- Hard Runelocked Chest: Yellow
+							["altQuests"] = { 56022 },
+						}),
+						crit(5, {	-- Hard Runelocked Chest: Red
+							["altQuests"] = { 56021 },
+						}),
+						crit(6, {	-- Hard Runelocked Chest: Purple
+							["altQuests"] = { 56020 },
+						}),
+						crit(7, {	-- Hard Runelocked Chest: Orange
+							["altQuests"] = { 56019 },
+						}),
+						crit(8, {	-- Hard Runelocked Chest: Green
+							["altQuests"] = { 56018 },
+						}),
+						crit(9, {	-- Hard Runelocked Chest: Blue
+							["altQuests"] = { 56017 },
+						}),
+						crit(10, {	-- Medium Runelocked Chest: Yellow
+							["altQuests"] = { 56016 },
+						}),
+						crit(11, {	-- Medium Runelocked Chest: Red
+							["altQuests"] = { 56007 },
+						}),
+						crit(12, {	-- Medium Runelocked Chest: Purple
+							["altQuests"] = { 56014 },
+						}),
+						crit(13, {	-- Medium Runelocked Chest: Orange
+							["altQuests"] = { 56013 },
+						}),
+						crit(14, {	-- Medium Runelocked Chest: Green
+							["altQuests"] = { 56012 },
+						}),
+						crit(15, {	-- Medium Runelocked Chest: Blue
+							["altQuests"] = { 56011 },
+						}),
+						crit(16, {	-- Medium Runelocked Chest: Blue
+							["altQuests"] = { 56010 },
+						}),
+						crit(17, {	-- Medium Runelocked Chest: Purple
+							["altQuests"] = { 56009 },
+						}),
+						crit(18, {	-- Medium Runelocked Chest: Yellow
+							["altQuests"] = { 56008 },
+						}),
+						crit(19, {	-- Medium Runelocked Chest: Red
+							["altQuests"] = { 56015 },
+						}),
+						crit(20, {	-- Medium Runelocked Chest: Orange
+							["altQuests"] = { 56006 },
+						}),
+						crit(21, {	-- Medium Runelocked Chest: Green
+							["altQuests"] = { 56003 },
+						}),
 					}),
 					ach(14160),		-- Rare to Well Done -- TODO:: update criteria when they get added
 					ach(13470, {	-- Rest In Pistons
@@ -1463,7 +1535,25 @@ _.Achievements =
 						crit(1),	-- Complete an Emissary for your ally in Nazjatar
 						crit(2),	-- Defeat one of the World Bosses of Nazjatar
 						crit(3),	-- Learn about the Scrying Stones of Nazjatar
-						crit(4),	-- Defeat one of Azshara's Champions
+						crit(4, { 	-- Defeat one of Azshara's Champions
+							["altQuests"]  = { 
+								55893,	-- Azanz, the Slitherblade
+								55891,	-- Champion Aldrantiss, Defender of Her Kingdom
+								55887,	-- Champion Alzana, Arrow of Thunder
+								55892,	-- Champion Eldanar, Shield of Her Glory
+								55889,	-- Champion Kyx'zhul the Deepspeaker
+								55888,	-- Champion Qalina, Spear of Ice
+								55890,	-- Champion Vyz'olgo the Mind-Taker
+								55895,	-- Frozen Winds of Zhiela
+								55900,	-- Kassar, Wielder of Dark Blades
+								55899,	-- Starseeker of the Shirakess
+								55897,	-- Szun, Breaker of Slaves
+								55898,	-- Tempest-Speaker Shalan'ali
+								55886,	-- The Zanj'ir Brutalizer
+								55896,	-- Undana, Chilling Assassin
+								55894,	-- Zoko, Her Iron Defender
+							},
+						}),
 						crit(5),	-- Level a Nazjatar Ally to Level 5
 						crit(6),	-- Defeat one of Mardivas's Laboratory Creations
 						crit(7),	-- Find and Assist Mrrl

@@ -187,11 +187,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(3, {	-- Master Calligrapher (Triangle)
-								["achievementID"] = 13512,	-- Master Calligrapher
-							}),
-						},
 					}),
 					q(53857, {	-- Cap'n Gorok (Faction Assault WQ)
 						["lvl"] = 110,
@@ -370,14 +365,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(6, {	-- Horde of Heroes
-								["achievementID"] = 13284,	-- Frontline Warrior
-							}),
-							crit(6, {	-- Horde of Heroes
-								["achievementID"] = 13388,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(52988, {	-- House Cleaning
 						["lvl"] = 120,
@@ -746,14 +733,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(2, {	-- Storm's Rage
-								["achievementID"] = 13283,	-- Frontline Warrior
-							}),
-							crit(2, {	-- Storm's Rage
-								["achievementID"] = 13387,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(52380, {	-- Supplies Needed: Frenzied Fangtooth
 						["isWorldQuest"] = true,

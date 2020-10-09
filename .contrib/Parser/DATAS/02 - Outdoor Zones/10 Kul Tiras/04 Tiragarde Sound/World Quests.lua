@@ -84,14 +84,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(1, {	-- A Sound Defense
-								["achievementID"] = 13283,	-- Frontline Warrior
-							}),
-							crit(1, {	-- A Sound Defense
-								["achievementID"] = 13387,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(51385, {	-- A Supply of Stingers
 						["lvl"] = 120,
@@ -189,14 +181,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(1, {	-- Breaching Boralus
-								["achievementID"] = 13284,	-- Frontline Warrior
-							}),
-							crit(1, {	-- Breaching Boralus
-								["achievementID"] = 13388,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(52755, {	-- Bringing the Heat
 						["lvl"] = 120,
@@ -211,11 +195,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(1, {	-- Master of Calligraphy (Circle)
-								["achievementID"] = 13512,	-- Master Calligrapher
-							}),
-						},
 					}),
 					q(54257, {	-- Captain Greensails (Faction Assault WQ)
 						["lvl"] = 110,

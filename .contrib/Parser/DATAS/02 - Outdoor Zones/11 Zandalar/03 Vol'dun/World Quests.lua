@@ -163,11 +163,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(2, {	-- Square
-								["achievementID"] = 13512,	-- Master Calligrapher
-							}),
-						},
 					}),
 					q(53325, {	-- Coarse Storm Silver
 						["lvl"] = 120,
@@ -329,14 +324,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(3, {	-- 	Isolated Victory
-								["achievementID"] = 13284,	-- Frontline Warrior
-							}),
-							crit(3, {	-- 	Isolated Victory
-								["achievementID"] = 13388,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(54574, {	-- Jin'tago (Faction Assault WQ)
 						["lvl"] = 110,
@@ -382,14 +369,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(4, {	-- Many Fine Heroes
-								["achievementID"] = 13283,	-- Frontline Warrior
-							}),
-							crit(4, {	-- Many Fine Heroes
-								["achievementID"] = 13387,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(50851, {	-- Mor'fani the Exile
 						["lvl"] = 120,

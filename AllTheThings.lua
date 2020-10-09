@@ -9755,6 +9755,11 @@ RowOnEnter = function (self)
 			end
 		end
 		
+		-- Criteria Info
+		if reference.criteriaID and reference.achievementID then
+			GameTooltip:AddDoubleLine("Criteria for", GetAchievementLink(reference.achievementID));
+		end
+		
 		local title = reference.title;
 		if title then
 			local left, right = strsplit(DESCRIPTION_SEPARATOR, title);
@@ -10006,9 +10011,6 @@ RowOnEnter = function (self)
 				local amount = GetMoneyString(reference.cost)
 				GameTooltip:AddDoubleLine("Cost", amount);
 			end
-		end
-		if reference.criteriaID and reference.achievementID then
-			GameTooltip:AddDoubleLine("Criteria for", GetAchievementLink(reference.achievementID));
 		end
 		if reference.achievementID then AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID, reference.criteriaID); end
 		if app.Settings:GetTooltipSetting("Progress") then

@@ -48,11 +48,6 @@ _.Zones =
 				q(42025, {	-- Bareback Brawl
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["g"] = {
-						crit(2, {	-- Saddle Sore
-							["achievementID"] = 11474,	-- Free For All, More For Me
-						}),
-					},
 				}),
 				q(45072, {	-- Barrels o' Fun
 					["lvl"] = 110,

@@ -154,11 +154,6 @@ _.Zones =
 				q(41013, {	-- Darkbrul Arena
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["g"] = {
-						crit(4, {	-- The Darkbrul-Oh
-							["achievementID"] = 11474,	-- Free For All, More For Me
-						}),
-					},
 				}),
 				q(41835, {	-- Deworming
 					["lvl"] = 110,

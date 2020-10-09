@@ -103,14 +103,6 @@ _.Zones =
 						["isDaily"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(3, {	-- A Drust Cause
-								["achievementID"] = 13283,	-- Frontline Warrior
-							}),
-							crit(3, {	-- A Drust Cause
-								["achievementID"] = 13387,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(51616, {	-- A Final Rest
 						["lvl"] = 120,
@@ -276,11 +268,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(2, {	-- Master Calligrapher (Square)
-								["achievementID"] = 13512,	-- Master Calligrapher
-							}),
-						},
 					}),
 					q(51528, {	-- Captain Leadfist
 						["lvl"] = 120,
@@ -430,14 +417,6 @@ _.Zones =
 						["isDaily"] = true,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(5, {	-- In Every Dark Corner
-								["achievementID"] = 13284,	-- Frontline Warrior
-							}),
-							crit(5, {	-- In Every Dark Corner
-								["achievementID"] = 13388,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(54688, {	-- Inquisitor Erik (Faction Assault WQ)
 						["lvl"] = 110,

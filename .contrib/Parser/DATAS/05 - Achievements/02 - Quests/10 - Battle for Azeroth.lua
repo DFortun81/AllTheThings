@@ -80,20 +80,44 @@ _.Achievements =
 					a(ach(13059)),	-- Drag Race
 					ach(13045),		-- Every Day I'm Truffling
 					a(ach(13283, {	-- Frontline Warrior (A)
-						crit(1),		-- A Sound Defense
-						crit(2),		-- Storm's Rage
-						crit(3),		-- A Drust Cause
-						crit(4),		-- Many Fine Heroes
-						crit(5),		-- March on the Marsh
-						crit(6),		-- Ritual Rampage
+						crit(1, {		-- A Sound Defense
+							["altQuests"] = { 53711 },	-- A Sound Defense (Faction Assault WQ)
+						}),
+						crit(2, {		-- Storm's Rage
+							["altQuests"] = { 51982 },	-- Storm's Rage (Faction Assault WQ)
+						}),
+						crit(3, {		-- A Drust Cause
+							["altQuests"] = { 53701 },	-- A Drust Cause (Faction Assault WQ)
+						}),
+						crit(4, {		-- Many Fine Heroes
+							["altQuests"] = { 54134 },	-- Many Fine Heroes (Faction Assault WQ)
+						}),
+						crit(5, {		-- March on the Marsh
+							["altQuests"] = { 54136 },	-- March on the Marsh (Faction Assault WQ)
+						}),
+						crit(6, {		-- Ritual Rampage
+							["altQuests"] = { 54138 },	-- Ritual Rampage (Faction Assault WQ)
+						}),
 					})),
 					h(ach(13284, {	-- Frontline Warrior (H)
-						crit(1),		-- Breaching Boralus
-						crit(2),		-- Romp in the Swamp
-						crit(3),		-- Isolated Victory
-						crit(4),		-- Shores of Zuldazar
-						crit(5),		-- In Every Dark Corner
-						crit(6),		-- Horde of Heroes
+						crit(1, {		-- Breaching Boralus
+							["altQuests"] = { 53939 },	-- Breaching Boralus (Faction Assault WQ)
+						}),
+						crit(2, {		-- Romp in the Swamp
+							["altQuests"] = { 54135 },	-- Romp in the Swamp (Faction Assault WQ)
+						}),
+						crit(3, {		-- Isolated Victory
+							["altQuests"] = { 53885 },	-- Isolated Victory (Faction Assault WQ)
+						}),
+						crit(4, {		-- Shores of Zuldazar
+							["altQuests"] = { 53883 },	-- Shores of Zuldazar (Faction Assault WQ)
+						}),
+						crit(5, {		-- In Every Dark Corner
+							["altQuests"] = { 54137 },	-- In Every Dark Corner (Faction Assault WQ)
+						}),
+						crit(6, {		-- Horde of Heroes
+							["altQuests"] = { 54132 },	-- Horde of Heroes (Faction Assault WQ)
+						}),
 					})),
 					ach(14161),		-- Get In My Belly!
 					ach(12918),		-- Have a Heart
@@ -241,9 +265,24 @@ _.Achievements =
 						crit(12),		-- Drive it Away Today
 					}),
 					ach(13512, {	-- Master Calligrapher
-						crit(1),		-- Master of Calligraphy - Circle
-						crit(2),		-- Master of Calligraphy - Square
-						crit(3),		-- Master of Calligraphy - Triangle
+						crit(1, {		-- Master of Calligraphy - Circle
+							["altQuests"] = { 
+								55340,	-- Calligraphy [A]
+								55342,	-- Calligraphy [H]
+							},
+						}),
+						crit(2, {		-- Master of Calligraphy - Square
+							["altQuests"] = { 
+								55264,	-- Calligraphy [A]
+								55343,	-- Calligraphy [H]
+							},
+						}),
+						crit(3, {		-- Master of Calligraphy - Triangle
+							["altQuests"] = { 
+								55341,	-- Calligraphy [A]
+								55344,	-- Calligraphy [H]
+							},
+						}),
 					}),
 					h(ach(13039)),	-- Paku'ai
 					a(ach(13440)),	-- Pushing the Payload (A)

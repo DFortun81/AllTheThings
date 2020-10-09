@@ -131,11 +131,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(1, {	-- Circle
-								["achievementID"] = 13512,	-- Master Calligrapher
-							}),
-						},
 					}),
 					q(50665, {	-- Cancel the Blood Troll Apocalypse
 						["lvl"] = 120,
@@ -336,14 +331,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(5, {	-- Frontline Warrior (March on the Marsh)
-								["achievementID"] = 13283,	-- Frontline Warrior
-							}),
-							crit(5, {	-- Frontline Veteran (March on the Marsh)
-								["achievementID"] = 13387,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(52754, {	-- Marshdwellers
 						["lvl"] = 120,
@@ -452,14 +439,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(2, {	-- Frontline Warrior (Romp in the Swamp)
-								["achievementID"] = 13284,	-- Frontline Warrior
-							}),
-							crit(2, {	-- Frontline Veteran (Romp in the Swamp)
-								["achievementID"] = 13388,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(50961, {	-- Save Our Scrolls!
 						["lvl"] = 120,

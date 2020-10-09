@@ -107,11 +107,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(3, {	-- Master of Calligraphy - Triangle
-								["achievementID"] = 13512,	-- Master Calligrapher
-							}),
-						},
 					}),
 					q(50966, {	-- Cleanup Crew
 						["lvl"] = 120,
@@ -427,14 +422,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(6, {	-- Ritual Rampage
-								["achievementID"] = 13283,	-- Frontline Warrior
-							}),
-							crit(6, {	-- Ritual Rampage
-								["achievementID"] = 13387,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(52250, {	-- Saving Xibala
 						["lvl"] = 120,
@@ -465,14 +452,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(4, {	-- Shores of Zuldazar
-								["achievementID"] = 13284,	-- Frontline Warrior
-							}),
-							crit(4, {	-- Shores of Zuldazar
-								["achievementID"] = 13388,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(54522, {	-- Short for an Orc (Faction Assault WQ)
 						["lvl"] = 110,
