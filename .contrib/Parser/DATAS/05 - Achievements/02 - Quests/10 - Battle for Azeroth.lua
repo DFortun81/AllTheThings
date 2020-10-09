@@ -81,42 +81,42 @@ _.Achievements =
 					ach(13045),		-- Every Day I'm Truffling
 					a(ach(13283, {	-- Frontline Warrior (A)
 						crit(1, {		-- A Sound Defense
-							["altQuests"] = { 53711 },	-- A Sound Defense (Faction Assault WQ)
+							["_quests"] = { 53711 },	-- A Sound Defense (Faction Assault WQ)
 						}),
 						crit(2, {		-- Storm's Rage
-							["altQuests"] = { 51982 },	-- Storm's Rage (Faction Assault WQ)
+							["_quests"] = { 51982 },	-- Storm's Rage (Faction Assault WQ)
 						}),
 						crit(3, {		-- A Drust Cause
-							["altQuests"] = { 53701 },	-- A Drust Cause (Faction Assault WQ)
+							["_quests"] = { 53701 },	-- A Drust Cause (Faction Assault WQ)
 						}),
 						crit(4, {		-- Many Fine Heroes
-							["altQuests"] = { 54134 },	-- Many Fine Heroes (Faction Assault WQ)
+							["_quests"] = { 54134 },	-- Many Fine Heroes (Faction Assault WQ)
 						}),
 						crit(5, {		-- March on the Marsh
-							["altQuests"] = { 54136 },	-- March on the Marsh (Faction Assault WQ)
+							["_quests"] = { 54136 },	-- March on the Marsh (Faction Assault WQ)
 						}),
 						crit(6, {		-- Ritual Rampage
-							["altQuests"] = { 54138 },	-- Ritual Rampage (Faction Assault WQ)
+							["_quests"] = { 54138 },	-- Ritual Rampage (Faction Assault WQ)
 						}),
 					})),
 					h(ach(13284, {	-- Frontline Warrior (H)
 						crit(1, {		-- Breaching Boralus
-							["altQuests"] = { 53939 },	-- Breaching Boralus (Faction Assault WQ)
+							["_quests"] = { 53939 },	-- Breaching Boralus (Faction Assault WQ)
 						}),
 						crit(2, {		-- Romp in the Swamp
-							["altQuests"] = { 54135 },	-- Romp in the Swamp (Faction Assault WQ)
+							["_quests"] = { 54135 },	-- Romp in the Swamp (Faction Assault WQ)
 						}),
 						crit(3, {		-- Isolated Victory
-							["altQuests"] = { 53885 },	-- Isolated Victory (Faction Assault WQ)
+							["_quests"] = { 53885 },	-- Isolated Victory (Faction Assault WQ)
 						}),
 						crit(4, {		-- Shores of Zuldazar
-							["altQuests"] = { 53883 },	-- Shores of Zuldazar (Faction Assault WQ)
+							["_quests"] = { 53883 },	-- Shores of Zuldazar (Faction Assault WQ)
 						}),
 						crit(5, {		-- In Every Dark Corner
-							["altQuests"] = { 54137 },	-- In Every Dark Corner (Faction Assault WQ)
+							["_quests"] = { 54137 },	-- In Every Dark Corner (Faction Assault WQ)
 						}),
 						crit(6, {		-- Horde of Heroes
-							["altQuests"] = { 54132 },	-- Horde of Heroes (Faction Assault WQ)
+							["_quests"] = { 54132 },	-- Horde of Heroes (Faction Assault WQ)
 						}),
 					})),
 					ach(14161),		-- Get In My Belly!
@@ -266,19 +266,19 @@ _.Achievements =
 					}),
 					ach(13512, {	-- Master Calligrapher
 						crit(1, {		-- Master of Calligraphy - Circle
-							["altQuests"] = { 
+							["_quests"] = { 
 								55340,	-- Calligraphy [A]
 								55342,	-- Calligraphy [H]
 							},
 						}),
 						crit(2, {		-- Master of Calligraphy - Square
-							["altQuests"] = { 
+							["_quests"] = { 
 								55264,	-- Calligraphy [A]
 								55343,	-- Calligraphy [H]
 							},
 						}),
 						crit(3, {		-- Master of Calligraphy - Triangle
-							["altQuests"] = { 
+							["_quests"] = { 
 								55341,	-- Calligraphy [A]
 								55344,	-- Calligraphy [H]
 							},

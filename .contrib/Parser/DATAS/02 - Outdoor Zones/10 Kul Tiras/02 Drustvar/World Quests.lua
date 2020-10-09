@@ -280,11 +280,6 @@ _.Zones =
 					q(52009, {	-- Crab People
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(1, {	-- Battle on Zandalar and Kul Tiras (Crab People)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(51706, { 	-- Deadwood
 						["lvl"] = 120,
@@ -514,11 +509,6 @@ _.Zones =
 					q(52218, {	-- Night Horrors
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(4, {	-- Night Horrors
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(54089, {	-- Omgar Doombow (Faction Assault WQ)
 						["lvl"] = 110,
@@ -566,11 +556,6 @@ _.Zones =
 					q(52278, {	-- Rogue Azerite
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(5, {	-- Rogue Azerite (Battle on Zandalar and Kul Tiras)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(49397, {	-- Sausage Party
 						["lvl"] = 120,
@@ -693,11 +678,6 @@ _.Zones =
 					q(52297, {	-- What's the Buzz?
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(6, {	-- What's the Buzz? — Battle on Zandalar and Kul Tiras
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(51676, {	-- What a Gull Wants
 						["lvl"] = 120,

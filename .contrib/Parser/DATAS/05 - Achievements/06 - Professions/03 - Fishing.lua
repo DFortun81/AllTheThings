@@ -193,76 +193,76 @@ _.Achievements =
 			}),
 			ach(10598, {	-- Fishing 'Round the Isles
 				crit(1, {		-- Huge Mossgill Perch
-					["altQuests"] = { 41612, 41613, 41270 },
+					["_quests"] = { 41612, 41613, 41270 },
 				}),
 				crit(2, {		-- Work Order: Cursed Queenfish
-					["questID"] = 41267,
+					["_quests"] = { 41267 },
 				}),
 				crit(3, {		-- Lively Runescale Koi
-					["altQuests"] = { 41279, 41605, 41604 },
+					["_quests"] = { 41279, 41605, 41604 },
 				}),
 				crit(4, {		-- Lively Cursed Queenfish
-					["altQuests"] = { 41598, 41599, 41264 },
+					["_quests"] = { 41598, 41599, 41264 },
 				}),
 				crit(5, {		-- Queen Queenfish
-					["questID"] = 41268,
+					["_quests"] = { 41268 },
 				}),
 				crit(6, {		-- Wild Northern Barracuda
-					["questID"] = 41252,
+					["_quests"] = { 41252 },
 				}),
 				crit(7, {		-- Huge Cursed Queenfish
-					["altQuests"] = { 41611, 41265, 41610 },
+					["_quests"] = { 41611, 41265, 41610 },
 				}),
 				crit(8, {		-- Huge Runescale Koi
-					["altQuests"] = { 41280, 41616, 41617 },
+					["_quests"] = { 41280, 41616, 41617 },
 				}),
 				crit(9, {		-- Lively Highmountain Salmon
-					["altQuests"] = { 41596, 41244, 41597 },
+					["_quests"] = { 41596, 41244, 41597 },
 				}),
 				crit(10, {		-- Lively Stormrays
-					["altQuests"] = { 41602, 41274, 41603 },
+					["_quests"] = { 41602, 41274, 41603 },
 				}),
 				crit(11, {		-- Huge Highmountain Salmon
-					["altQuests"] = { 41609, 41243 },
+					["_quests"] = { 41609, 41243 },
 				}),
 				crit(12, {		-- Buoy Fishing
-					["questID"] = 41273,
+					["_quests"] = { 41273 },
 				}),
 				crit(13, {		-- Raft Fishing
-					["questID"] = 41266,
+					["_quests"] = { 41266 },
 				}),
 				crit(14, {		-- Huge Stormrays
-					["altQuests"] = { 41614, 41275, 41615 },
+					["_quests"] = { 41614, 41275, 41615 },
 				}),
 				crit(15, {		-- Slippery Stormrays
-					["questID"] = 41278,
+					["_quests"] = { 41278 },
 				}),
 				crit(16, {		-- Cave Fishing
-					["questID"] = 41271,	-- Into the Whirlpool
+					["_quests"] = { 41271 },	-- Into the Whirlpool
 				}),
 				crit(17, {		-- Work Order: Stormrays
-					["questID"] = 41277,
+					["_quests"] = { 41277 },
 				}),
 				crit(18, {		-- Work Order: Highmountain Salmon
-					["questID"] = 41240,
+					["_quests"] = { 41240 },
 				}),
 				crit(19, {		-- Lively Mossgill Perch
-					["altQuests"] = { 41601, 41600, 41269 },
+					["_quests"] = { 41601, 41600, 41269 },
 				}),
 				crit(20, {		-- Migrating Highmountain Salmon
-					["questID"] = 41253,
+					["_quests"] = { 41253 },
 				}),
 				crit(21, {		-- Rocket Boot Fishing
-					["questID"] = 41276,
+					["_quests"] = { 41276 },
 				}),
 				crit(22, {		-- Work Order: Mossgill Perch
-					["questID"] = 41272,
+					["_quests"] = { 41272 },
 				}),
 				crit(23, {		-- Work Order: Runescale Koi
-					["questID"] = 41282,
+					["_quests"] = { 41282 },
 				}),
 				crit(24, {		-- The Angler Mangler
-					["questID"] = 41283,
+					["_quests"] = { 41283 },
 				}),
 			}),
 			ach(5851,  {	-- Gone Fishin'

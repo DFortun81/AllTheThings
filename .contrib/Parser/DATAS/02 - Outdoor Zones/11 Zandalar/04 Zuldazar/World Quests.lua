@@ -11,11 +11,6 @@ _.Zones =
 						["provider"] = { "n", 142114 },	-- Talia Sparkbrow
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(22, {	-- Add More to the Collection
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(50864, {	-- Atal'zul Gotaka
 						["lvl"] = 120,
@@ -144,11 +139,6 @@ _.Zones =
 					q(52892, {	-- Critters are Friends, Not Food
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(21, {	-- Critters are Friends, Not Food
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(50651, {	-- Cut Off Potential
 						["lvl"] = 120,
@@ -462,11 +452,6 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 						["filter"] = 101,	-- Pet Battles
-						["g"] = {
-							crit(24, {	-- Small Beginnings
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(54712, {	-- Spell Components (Faction Assault WQ)
 						["lvl"] = 110,
@@ -681,11 +666,6 @@ _.Zones =
 					q(52937, {	-- You've Never Seen Jammer Upset
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(23, {	-- You've Never Seen Jammer Upset
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(50866, {	-- Zayoos
 						["lvl"] = 120,

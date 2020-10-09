@@ -450,11 +450,6 @@ _.Zones =
 						["provider"] = { "n", 141077 },	-- Kwint
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(9, {	-- Battle on Zandalar and Kul Tiras (Not So Bad Down Here)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(51843, {	-- P4-N73R4
 						["lvl"] = 120,
@@ -596,11 +591,6 @@ _.Zones =
 						["provider"] = { "n", 141479 },	-- Burly
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(12, {	-- Battle on Zandalar and Kul Tiras (Strange Looking Dogs)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(54091, {	-- Strong Arm John (Faction Assault WQ)
 						["lvl"] = 110,
@@ -669,11 +659,6 @@ _.Zones =
 						["provider"] = { "n", 141292 },	-- Delia Hanako
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(11, {	-- Battle on Zandalar and Kul Tiras (That's a Big Carcass)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(54251, {	-- The Ambassador (Faction Assault WQ)
 						["lvl"] = 110,
@@ -749,11 +734,6 @@ _.Zones =
 						["provider"] = { "n", 141215 },	-- Chitara
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(10, {	-- Battle on Zandalar and Kul Tiras (Unbreakable)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(52752, {	-- Vigilant Lookouts
 						["isWorldQuest"] = true,

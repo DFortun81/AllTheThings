@@ -71,17 +71,14 @@ _.Zones =
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
-									["questID"] = 40280,	-- Training with Bredda
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
 									["coord"] = { 41.8, 35.8, 650 },
-									["questID"] = 40282,	-- Tiny Poacher, Tiny Animals
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
 									["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
-									["questID"] = 41687,	-- Snail Fight!
 								}),
 							},
 						}),
@@ -92,17 +89,14 @@ _.Zones =
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
-									["questID"] = 40280,	-- Training with Bredda
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
 									["coord"] = { 41.8, 35.8, 650 },
-									["questID"] = 40282,	-- Tiny Poacher, Tiny Animals
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
 									["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
-									["questID"] = 41687,	-- Snail Fight!
 								}),
 							},
 						}),
@@ -113,17 +107,14 @@ _.Zones =
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
-									["questID"] = 40280,	-- Training with Bredda
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
 									["coord"] = { 41.8, 35.8, 650 },
-									["questID"] = 40282,	-- Tiny Poacher, Tiny Animals
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
 									["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
-									["questID"] = 41687,	-- Snail Fight!
 								}),
 							},
 						}),
@@ -134,17 +125,14 @@ _.Zones =
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
-									["questID"] = 40280,	-- Training with Bredda
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
 									["coord"] = { 41.8, 35.8, 650 },
-									["questID"] = 40282,	-- Tiny Poacher, Tiny Animals
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
 									["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
-									["questID"] = 41687,	-- Snail Fight!
 								}),
 							},
 						}),
@@ -155,17 +143,14 @@ _.Zones =
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
-									["questID"] = 40280,	-- Training with Bredda
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
 									["coord"] = { 41.8, 35.8, 650 },
-									["questID"] = 40282,	-- Tiny Poacher, Tiny Animals
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
 									["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
-									["questID"] = 41687,	-- Snail Fight!
 								}),
 							},
 						}),
@@ -176,17 +161,14 @@ _.Zones =
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
-									["questID"] = 40280,	-- Training with Bredda
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
 									["coord"] = { 41.8, 35.8, 650 },
-									["questID"] = 40282,	-- Tiny Poacher, Tiny Animals
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
 									["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
-									["questID"] = 41687,	-- Snail Fight!
 								}),
 							},
 						}),
@@ -197,17 +179,14 @@ _.Zones =
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
-									["questID"] = 40280,	-- Training with Bredda
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
 									["coord"] = { 41.8, 35.8, 650 },
-									["questID"] = 40282,	-- Tiny Poacher, Tiny Animals
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
 									["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
-									["questID"] = 41687,	-- Snail Fight!
 								}),
 							},
 						}),
@@ -218,17 +197,14 @@ _.Zones =
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
-									["questID"] = 40280,	-- Training with Bredda
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
 									["coord"] = { 41.8, 35.8, 650 },
-									["questID"] = 40282,	-- Tiny Poacher, Tiny Animals
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
 									["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
-									["questID"] = 41687,	-- Snail Fight!
 								}),
 							},
 						}),
@@ -239,17 +215,14 @@ _.Zones =
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
-									["questID"] = 40280,	-- Training with Bredda
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
 									["coord"] = { 41.8, 35.8, 650 },
-									["questID"] = 40282,	-- Tiny Poacher, Tiny Animals
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
 									["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
-									["questID"] = 41687,	-- Snail Fight!
 								}),
 							},
 						}),
@@ -260,17 +233,14 @@ _.Zones =
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
-									["questID"] = 40280,	-- Training with Bredda
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
 									["coord"] = { 41.8, 35.8, 650 },
-									["questID"] = 40282,	-- Tiny Poacher, Tiny Animals
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
 									["coord"] = { 44.6, 22.6, 659 },	-- mapID needs confirmation
-									["questID"] = 41687,	-- Snail Fight!
 								}),
 							},
 						}),

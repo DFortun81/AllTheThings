@@ -20,11 +20,6 @@ _.Zones =
 					q(52803, {	-- Accidental Dread
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(16, {	-- Accidental Dread
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(50718, {	-- Agent of Death
 						["lvl"] = 120,
@@ -176,11 +171,6 @@ _.Zones =
 					q(52779, {	-- Crawg in the Bog
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(14, {	-- Crawg in the Bog
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(50492, {	-- Cursed Chest
 						["lvl"] = 120,
@@ -336,11 +326,6 @@ _.Zones =
 						["lvl"] = 120,
 						["provider"] = { "n", 141529 },	-- Lozu
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(13, {	-- Marshdwellers
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(54267, {	-- Naga Attack!
 						["lvl"] = 120,
@@ -383,11 +368,6 @@ _.Zones =
 						["provider"] = { "n", 141799 },	-- Grady Prett
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(15, {	-- Pack Leader
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(50667, {	-- Past Due
 						["lvl"] = 120,

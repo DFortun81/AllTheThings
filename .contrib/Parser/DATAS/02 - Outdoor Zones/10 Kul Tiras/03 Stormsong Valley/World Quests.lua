@@ -91,11 +91,6 @@ _.Zones =
 						["lvl"] = 120,
 						["coord"] = { 36.61, 33.61, 942 },
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(3, {	-- Battle on Zandalar and Kul Tiras (Automated Chaos)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(52986, {	-- A Wicked Vessel
 						["isWorldQuest"] = true,
@@ -201,11 +196,6 @@ _.Zones =
 						["provider"] = { "n", 141046 },	-- Leana Darkwind
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(8, {	-- Battle on Zandalar and Kul Tiras (Captured Evil)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(53106, {	-- Censership
 						["lvl"] = 120,
@@ -310,17 +300,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13429),	-- Azerfighter
-						},
 					}),
 					q(53769, {	-- Furious Fracas (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13429),	-- Azerfighter
-						},
 					}),
 					q(54414, {	-- Gale's Unrest (Faction Assault WQ)
 						["lvl"] = 110,
@@ -634,11 +618,6 @@ _.Zones =
 						["provider"] = { "n", 141002 },	-- Ellie Vern
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(7, {	-- Battle on Zandalar and Kul Tiras (Sea Creatures Are Weird)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(52271, {	-- Sea Salt Flavored (A)
 						["lvl"] = 120,
@@ -776,11 +755,6 @@ _.Zones =
 						["coord"] = { 42.41, 76.61, 942 },
 						["isWorldQuest"] = true,
 						["filter"] = 101,	-- Pet Battles
-						["g"] = {
-							crit(2, {	-- Battle on Zandalar and Kul Tiras (This Little Piggy Has Sharp Tusks)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(54403, {	-- Tidesage Clarissa (Faction Assault WQ)
 						["lvl"] = 110,

@@ -18,12 +18,10 @@ _.Zones =
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
 									["coord"] = { 78.4, 57.2, 634 },
-									["questID"] = 40278,	-- My Beasts's Bidding
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
-									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -34,12 +32,10 @@ _.Zones =
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
 									["coord"] = { 78.4, 57.2, 634 },
-									["questID"] = 40278,	-- My Beasts's Bidding
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
-									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -50,12 +46,10 @@ _.Zones =
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
 									["coord"] = { 78.4, 57.2, 634 },
-									["questID"] = 40278,	-- My Beasts's Bidding
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
-									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -66,12 +60,10 @@ _.Zones =
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
 									["coord"] = { 78.4, 57.2, 634 },
-									["questID"] = 40278,	-- My Beasts's Bidding
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
-									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -82,12 +74,10 @@ _.Zones =
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
 									["coord"] = { 78.4, 57.2, 634 },
-									["questID"] = 40278,	-- My Beasts's Bidding
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
-									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -98,12 +88,10 @@ _.Zones =
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
 									["coord"] = { 78.4, 57.2, 634 },
-									["questID"] = 40278,	-- My Beasts's Bidding
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
-									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -114,12 +102,10 @@ _.Zones =
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
 									["coord"] = { 78.4, 57.2, 634 },
-									["questID"] = 40278,	-- My Beasts's Bidding
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
-									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -130,12 +116,10 @@ _.Zones =
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
 									["coord"] = { 78.4, 57.2, 634 },
-									["questID"] = 40278,	-- My Beasts's Bidding
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
-									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -146,12 +130,10 @@ _.Zones =
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
 									["coord"] = { 78.4, 57.2, 634 },
-									["questID"] = 40278,	-- My Beasts's Bidding
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
-									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),
@@ -162,12 +144,10 @@ _.Zones =
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
 									["coord"] = { 78.4, 57.2, 634 },
-									["questID"] = 40278,	-- My Beasts's Bidding
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
 									["coord"] = { 56.8, 46.2, 634 },
-									["questID"] = 41944,	-- Jarrun's Ladder
 								}),
 							},
 						}),

@@ -8,6 +8,12 @@ _.Achievements =
 		["groups"] = {
 			n(-10058, {	-- World
 				["groups"] = {
+					ach(13429, {	-- Azerfighter
+						["_quests"] = {
+							53768,	-- Furious Fracas (Faction Assault WQ) [A]
+							53769,	-- Furious Fracas (Faction Assault WQ) [H]
+						},
+					}),
 					ach(12605, 12604, {	-- Conqueror of Azeroth [A] / [H]
 						title(377),		-- , Conqueror of Azeroth [A] / [H]
 						ach(12573, {	-- Band of Brothers
@@ -35,16 +41,16 @@ _.Achievements =
 						a(i(129280)),	-- Reins of the Prestigious War Steed
 						h(i(143864)),	-- Reins of the Prestigious War Wolf
 						ach(11475, {		-- Mission Accomplished
-							["altQuests"] = { 41896 },	-- Operation Murloc Freedom
+							["_quests"] = { 41896 },	-- Operation Murloc Freedom
 						}),
 						ach(11476, {		-- Saddle Sore
-							["altQuests"] = { 42025 },	-- Bareback Brawl
+							["_quests"] = { 42025 },	-- Bareback Brawl
 						}),
 						ach(11477, {		-- Off the Top Rook
-							["altQuests"] = { 42023 },	-- Black Rook Rumble
+							["_quests"] = { 42023 },	-- Black Rook Rumble
 						}),
 						ach(11478, {		-- The Darkbrul-oh
-							["altQuests"] = { 41013 },	-- Darkbrul Arena
+							["_quests"] = { 41013 },	-- Darkbrul Arena
 						}),
 					}),
 					ach(12861, {	-- Master of Duels
@@ -74,42 +80,42 @@ _.Achievements =
 					}),
 					a(ach(13387, bubbleDown({["description"] = "Requires War Mode Active" }, {	-- Frontline Veteran [A]
 						crit(1, {		-- A Sound Defense
-							["altQuests"] = { 53711 },	-- A Sound Defense (Faction Assault WQ)
+							["_quests"] = { 53711 },	-- A Sound Defense (Faction Assault WQ)
 						}),
 						crit(2, {		-- Storm's Rage
-							["altQuests"] = { 51982 },	-- Storm's Rage (Faction Assault WQ)
+							["_quests"] = { 51982 },	-- Storm's Rage (Faction Assault WQ)
 						}),
 						crit(3, {		-- A Drust Cause
-							["altQuests"] = { 53701 },	-- A Drust Cause (Faction Assault WQ)
+							["_quests"] = { 53701 },	-- A Drust Cause (Faction Assault WQ)
 						}),
 						crit(4, {		-- Many Fine Heroes
-							["altQuests"] = { 54134 },	-- Many Fine Heroes (Faction Assault WQ)
+							["_quests"] = { 54134 },	-- Many Fine Heroes (Faction Assault WQ)
 						}),
 						crit(5, {		-- March on the Marsh
-							["altQuests"] = { 54136 },	-- March on the Marsh (Faction Assault WQ)
+							["_quests"] = { 54136 },	-- March on the Marsh (Faction Assault WQ)
 						}),
 						crit(6, {		-- Ritual Rampage
-							["altQuests"] = { 54138 },	-- Ritual Rampage (Faction Assault WQ)
+							["_quests"] = { 54138 },	-- Ritual Rampage (Faction Assault WQ)
 						}),
 					}))),
 					h(ach(13388, bubbleDown({["description"] = "Requires War Mode Active" }, {	-- Frontline Veteran [H]
 						crit(1, {		-- Breaching Boralus
-							["altQuests"] = { 53939 },	-- Breaching Boralus (Faction Assault WQ)
+							["_quests"] = { 53939 },	-- Breaching Boralus (Faction Assault WQ)
 						}),
 						crit(2, {		-- Romp in the Swamp
-							["altQuests"] = { 54135 },	-- Romp in the Swamp (Faction Assault WQ)
+							["_quests"] = { 54135 },	-- Romp in the Swamp (Faction Assault WQ)
 						}),
 						crit(3, {		-- Isolated Victory
-							["altQuests"] = { 53885 },	-- Isolated Victory (Faction Assault WQ)
+							["_quests"] = { 53885 },	-- Isolated Victory (Faction Assault WQ)
 						}),
 						crit(4, {		-- Shores of Zuldazar
-							["altQuests"] = { 53883 },	-- Shores of Zuldazar (Faction Assault WQ)
+							["_quests"] = { 53883 },	-- Shores of Zuldazar (Faction Assault WQ)
 						}),
 						crit(5, {		-- In Every Dark Corner
-							["altQuests"] = { 54137 },	-- In Every Dark Corner (Faction Assault WQ)
+							["_quests"] = { 54137 },	-- In Every Dark Corner (Faction Assault WQ)
 						}),
 						crit(6, {		-- Horde of Heroes
-							["altQuests"] = { 54132 },	-- Horde of Heroes (Faction Assault WQ)
+							["_quests"] = { 54132 },	-- Horde of Heroes (Faction Assault WQ)
 						}),
 					}))),
 				},
