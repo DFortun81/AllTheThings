@@ -192,30 +192,78 @@ _.Achievements =
 				crit(6),		-- Keeper Raynae
 			}),
 			ach(10598, {	-- Fishing 'Round the Isles
-				crit(1),		-- Huge Mossgill Perch
-				crit(2),		-- Work Order: Cursed Queenfish
-				crit(3),		-- Lively Runescale Koi
-				crit(4),		-- Lively Cursed Queenfish
-				crit(5),		-- Queen Queenfish
-				crit(6),		-- Wild Northern Barracuda
-				crit(7),		-- Huge Cursed Queenfish
-				crit(8),		-- Huge Runescale Koi
-				crit(9),		-- Lively Highmountain Salmon
-				crit(10),		-- Lively Stormrays
-				crit(11),		-- Huge Highmountain Salmon
-				crit(12),		-- Buoy Fishing
-				crit(13),		-- Raft Fishing
-				crit(14),		-- Huge Stormrays
-				crit(15),		-- Slippery Stormrays
-				crit(16),		-- Cave Fishing
-				crit(17),		-- Work Order: Stormrays
-				crit(18),		-- Work Order: Highmountain Salmon
-				crit(19),		-- Lively Mossgill Perch
-				crit(20),		-- Migrating Highmountain Salmon
-				crit(21),		-- Rocket Boot Fishing
-				crit(22),		-- Work Order: Mossgill Perch
-				crit(23),		-- Work Order: Runescale Koi
-				crit(24),		-- The Angler Mangler
+				crit(1, {		-- Huge Mossgill Perch
+					["altQuests"] = { 41612, 41613, 41270 },
+				}),
+				crit(2, {		-- Work Order: Cursed Queenfish
+					["questID"] = 41267,
+				}),
+				crit(3, {		-- Lively Runescale Koi
+					["altQuests"] = { 41279, 41605, 41604 },
+				}),
+				crit(4, {		-- Lively Cursed Queenfish
+					["altQuests"] = { 41598, 41599, 41264 },
+				}),
+				crit(5, {		-- Queen Queenfish
+					["questID"] = 41268,
+				}),
+				crit(6, {		-- Wild Northern Barracuda
+					["questID"] = 41252,
+				}),
+				crit(7, {		-- Huge Cursed Queenfish
+					["altQuests"] = { 41611, 41265, 41610 },
+				}),
+				crit(8, {		-- Huge Runescale Koi
+					["altQuests"] = { 41280, 41616, 41617 },
+				}),
+				crit(9, {		-- Lively Highmountain Salmon
+					["altQuests"] = { 41596, 41244, 41597 },
+				}),
+				crit(10, {		-- Lively Stormrays
+					["altQuests"] = { 41602, 41274, 41603 },
+				}),
+				crit(11, {		-- Huge Highmountain Salmon
+					["altQuests"] = { 41609, 41243 },
+				}),
+				crit(12, {		-- Buoy Fishing
+					["questID"] = 41273,
+				}),
+				crit(13, {		-- Raft Fishing
+					["questID"] = 41266,
+				}),
+				crit(14, {		-- Huge Stormrays
+					["altQuests"] = { 41614, 41275, 41615 },
+				}),
+				crit(15, {		-- Slippery Stormrays
+					["questID"] = 41278,
+				}),
+				crit(16, {		-- Cave Fishing
+					["questID"] = 41271,	-- Into the Whirlpool
+				}),
+				crit(17, {		-- Work Order: Stormrays
+					["questID"] = 41277,
+				}),
+				crit(18, {		-- Work Order: Highmountain Salmon
+					["questID"] = 41240,
+				}),
+				crit(19, {		-- Lively Mossgill Perch
+					["altQuests"] = { 41601, 41600, 41269 },
+				}),
+				crit(20, {		-- Migrating Highmountain Salmon
+					["questID"] = 41253,
+				}),
+				crit(21, {		-- Rocket Boot Fishing
+					["questID"] = 41276,
+				}),
+				crit(22, {		-- Work Order: Mossgill Perch
+					["questID"] = 41272,
+				}),
+				crit(23, {		-- Work Order: Runescale Koi
+					["questID"] = 41282,
+				}),
+				crit(24, {		-- The Angler Mangler
+					["questID"] = 41283,
+				}),
 			}),
 			ach(5851,  {	-- Gone Fishin'
 				crit(1),		-- Darnassus/Undercity
