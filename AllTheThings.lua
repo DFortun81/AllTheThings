@@ -9755,11 +9755,6 @@ RowOnEnter = function (self)
 			end
 		end
 		
-		-- Criteria Info
-		if reference.criteriaID and reference.achievementID then
-			GameTooltip:AddDoubleLine("Criteria for", GetAchievementLink(reference.achievementID));
-		end
-		
 		local title = reference.title;
 		if title then
 			local left, right = strsplit(DESCRIPTION_SEPARATOR, title);
@@ -10011,6 +10006,9 @@ RowOnEnter = function (self)
 				local amount = GetMoneyString(reference.cost)
 				GameTooltip:AddDoubleLine("Cost", amount);
 			end
+		end
+		if reference.criteriaID and reference.achievementID then
+			GameTooltip:AddDoubleLine("Criteria for", GetAchievementLink(reference.achievementID));
 		end
 		if reference.achievementID then AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID, reference.criteriaID); end
 		if app.Settings:GetTooltipSetting("Progress") then
@@ -14412,6 +14410,7 @@ local ProcessAuctionData = function()
 		}, app.BaseFilter),
 		["speciesID"] = setmetatable({	-- Battle Pets
 			["filterID"] = 101,
+			["icon"] = "INTERFACE/ICONS/ICON_PETFAMILY_CRITTER",
 			["description"] = "All pets that you have not collected yet are displayed here.",
 			["priority"] = 4,
 		}, app.BaseFilter),
@@ -14427,8 +14426,8 @@ local ProcessAuctionData = function()
 			["description"] = "All recipes that you have not collected yet are displayed here.",
 			["priority"] = 6,
 		}, app.BaseFilter),
-		["itemID"] = {					-- General Items
-			["text"] = "General Items",
+		["itemID"] = {					-- General
+			["text"] = "General",
 			["icon"] = "INTERFACE/ICONS/INV_MISC_FROSTEMBLEM_01",
 			["description"] = "Illusions, toys, and other items that can be used to earn collectible items are displayed here.",
 			["priority"] = 7,
@@ -14510,21 +14509,27 @@ app.AuctionScan = function()
 end
 
 app.OpenAuctionModule = function(self)
+	if IsAddOnLoaded("TradeSkillMaster") then -- Why, TradeSkillMaster, why are you like this?
+		C_Timer.After(2, function() end);
+	end
 	if app.Blizzard_AuctionHouseUILoaded then
 		if not AllTheThingsAuctionConfig then AllTheThingsAuctionConfig = {} end
-		-- Create the Auction Tab for ATT.
-		local n = AuctionHouseFrame.numTabs + 1;
-		local button = CreateFrame("Button", "AuctionHouseFrameTab" .. n, AuctionHouseFrame, "AuctionHouseFrameDisplayModeTabTemplate");
-		button:SetID(n);
-		button:SetText(L["AUCTION_TAB"]);
-		button:SetPoint("LEFT", AuctionHouseFrameAuctionsTab, "RIGHT", -14, 0);
 		
-		PanelTemplates_SetNumTabs (AuctionHouseFrame, n);
-		PanelTemplates_EnableTab  (AuctionHouseFrame, n);
+		-- Create the Auction Tab for ATT.
+		local tabID = AuctionHouseFrame.numTabs+1;
+		local button = CreateFrame("Button", "AuctionHouseFrameTab"..tabID, AuctionHouseFrame, "AuctionHouseFrameDisplayModeTabTemplate");
+		button:SetID(tabID);
+		button:SetText(L["AUCTION_TAB"]);
+		button:SetNormalFontObject(GameFontHighlightSmall);
+		button:SetPoint("LEFT", AuctionHouseFrame.Tabs[tabID-1], "RIGHT", -15, 0);
+		tinsert(AuctionHouseFrame.Tabs, button);
+		
+		PanelTemplates_SetNumTabs (AuctionHouseFrame, tabID);
+		PanelTemplates_EnableTab  (AuctionHouseFrame, tabID);
 		
 		-- Garbage collect the function after this is executed.
 		app.OpenAuctionModule = function() end;
-		app.AuctionModuleTabID = n;
+		app.AuctionModuleTabID = tabID;
 		
 		-- Create the movable Auction Data window.
 		window = app:GetWindow("AuctionData", AuctionHouseFrame, function(self)
@@ -14540,7 +14545,7 @@ app.OpenAuctionModule = function(self)
 					["options"] = {
 						{
 							["text"] = "Wipe Scan Data",
-							["icon"] = "INTERFACE/ICONS/INV_firstAid_Sun-Bleached Linen",
+							["icon"] = "INTERFACE/ICONS/INV_FIRSTAID_SUN-BLEACHED LINEN",
 							["description"] = "Click this button to wipe out all of the previous scan data.",
 							["visible"] = true,
 							["priority"] = -4,
@@ -14561,9 +14566,9 @@ app.OpenAuctionModule = function(self)
 							end,
 						},
 						{
-							["text"] = "Perform a Full Scan",
+							["text"] = "Scan or Load Last Save",
 							["icon"] = "INTERFACE/ICONS/INV_DARKMOON_EYE",
-							["description"] = "Click this button to perform a full scan of the auction house. The game may or may not freeze depending on the size of the auction house.\n\nData should populate automatically.",
+							["description"] = "Click this button to perform a full scan of the auction house or load the last scan conducted within 15 minutes. The game may or may not freeze depending on the size of your auction house.\n\nData should populate automatically.",
 							["visible"] = true,
 							["priority"] = -3,
 							["OnClick"] = function() 
@@ -14573,7 +14578,7 @@ app.OpenAuctionModule = function(self)
 										AllTheThingsAuctionConfig.LastScan = time();
 										app.StartAuctionScan();
 									else
-										print(L["TITLE"] .. ": Throttled scan! Please wait " .. RoundNumber(((AllTheThingsAuctionConfig.LastScan+900)-time()), 0) .. " before running another.");
+										print(L["TITLE"] .. ": Throttled scan! Please wait " .. RoundNumber(((AllTheThingsAuctionConfig.LastScan+900)-time()), 0) .. " before running another. Loading last save instead...");
 										StartCoroutine("ProcessAuctionData", ProcessAuctionData);
 									end
 								end
@@ -14698,7 +14703,7 @@ app.OpenAuctionModule = function(self)
 		end
 
 		button:SetScript("OnClick", function(self) -- This is the "ATT" button at the bottom of the auction house frame
-			if self:GetID() == n then
+			if self:GetID() == tabID then
 				window:Show();
 			end
 		end);
