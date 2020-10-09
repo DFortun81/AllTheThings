@@ -1,7 +1,6 @@
---
----------------------------------------------------
---          Z O N E S        M O D U L E         --
----------------------------------------------------
+-------------------------------------------------------------------
+--      E X P A N S I O N   F E A T U R E S    M O D U L E       --
+-------------------------------------------------------------------
 
 _.ExpansionFeatures =
 {
@@ -9,7 +8,7 @@ _.ExpansionFeatures =
 		n(-236, {	-- Alliance War Campaign
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-		--	!! NEED LEATHER/PLATE REWARDS FOR "MISCHIEF MANAGED" QUEST.
+			--	!! NEED LEATHER/PLATE REWARDS FOR "MISCHIEF MANAGED" QUEST.
 				ach(12510, {	-- Ready for War
 					["collectible"] = false,
 					["races"] = ALLIANCE_ONLY,

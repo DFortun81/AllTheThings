@@ -540,7 +540,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 42469 },	-- Kor the Immovable
 					["coord"] = { 34.4, 34.4, 207 },
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						26437,	-- Making Things Crystal Clear
 						26438,	-- Intervention
 						26439,	-- Putting the Pieces Together

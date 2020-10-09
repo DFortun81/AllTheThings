@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -870,7 +871,7 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["lvl"] = 90,
 					["cost"] = { { "i", 92556, 1 } },	-- Empowered Soulcore
-					["maps"] = { 
+					["maps"] = {
 						490,	-- The Black Temple (Illidari Training Grounds)
 						491,	-- The Black Temple (Karabor Sewers)
 						492,	-- The Black Temple (Sanctuary of Shadows)
@@ -888,7 +889,7 @@ _.Zones =
 					["sourceQuest"] = 32325,	-- Infiltrating the Black Temple
 					["classes"] = { WARLOCK },
 					["lvl"] = 90,
-					["maps"] = { 
+					["maps"] = {
 						490,	-- The Black Temple (Illidari Training Grounds)
 						491,	-- The Black Temple (Karabor Sewers)
 						492,	-- The Black Temple (Sanctuary of Shadows)
@@ -903,7 +904,7 @@ _.Zones =
 					["sourceQuest"] = 32325,	-- Infiltrating the Black Temple
 					["classes"] = WARLOCK,
 					["lvl"] = 90,
-					["maps"] = { 
+					["maps"] = {
 						490,	-- The Black Temple (Illidari Training Grounds)
 						491,	-- The Black Temple (Karabor Sewers)
 						492,	-- The Black Temple (Sanctuary of Shadows)

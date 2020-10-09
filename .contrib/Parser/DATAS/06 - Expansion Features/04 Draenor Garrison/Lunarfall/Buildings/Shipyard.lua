@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
@@ -10,7 +11,7 @@ _.ExpansionFeatures =
 					["maps"] = { 539 },	-- Shadowmoon Valley
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-4, {	-- Achievements
+						n(ACHIEVEMENTS, {
 							ach(10165, {	-- Ironsides
 								crit(1),	-- Destroyer
 								crit(2),	-- Submarine
@@ -164,7 +165,7 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 39024,	-- Call of the Archmage
 							}),
 						}),
-					
+
 			--[[ Too mean
 						i(127134, {	-- Ship: Battleship
 							["g"] = {

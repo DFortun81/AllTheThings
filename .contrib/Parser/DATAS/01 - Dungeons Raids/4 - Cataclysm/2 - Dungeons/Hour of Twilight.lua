@@ -54,7 +54,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				},
 				["g"] = {
 					i(76160),	-- Drapes of the Dragonshrine
-					i(76161),	-- Gauntlets of the Twilight Hour		
+					i(76161),	-- Gauntlets of the Twilight Hour
 					i(76162),	-- Twilight Amulet
 				},
 			}),

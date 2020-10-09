@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -22,7 +23,7 @@ _.Zones =
 					},
 				}),
 				n(29587, {	-- Dread Commander Thalanor
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
 					["coord"] = { 84.0, 49.8, 23 },
 					["g"] = {
 						i(40775),	-- Winged Steed of the Ebon Blade
@@ -66,7 +67,7 @@ _.Zones =
 					},
 				}),
 				n(28512, {	-- Quartermaster Ozorg
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
 					["coord"] = { 81.9, 48.4, 23 },
 					["g"] = {
 						i(34649),	-- Archerus Knight's Gauntlets

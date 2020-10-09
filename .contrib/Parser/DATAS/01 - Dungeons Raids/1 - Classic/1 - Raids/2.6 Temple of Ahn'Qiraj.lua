@@ -726,7 +726,6 @@ _.Instances = { tier(1, {	-- Classic
 								i(21273),	-- Blessed Qiraji Acolyte Staff
 								i(21275),	-- Blessed Qiraji Augur Staff
 								i(21268),	-- Blessed Qiraji War Hammer
-								
 							},
 						}),
 						q(8579, {	-- Mortal Champions

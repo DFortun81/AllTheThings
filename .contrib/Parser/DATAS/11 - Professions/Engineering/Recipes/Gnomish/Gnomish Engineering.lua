@@ -144,7 +144,7 @@ profession(20219, {	-- Gnomish Engineering
 							["name"] = "Gnomish Battle Chicken",
 							["recipeID"] = 12906,
 							["requireSkill"] = 20219,
-						},	
+						},
 						{
 							["name"] = "Gnomish Death Ray",
 							["recipeID"] = 12759,
@@ -155,7 +155,6 @@ profession(20219, {	-- Gnomish Engineering
 							["recipeID"] = 12903,
 							["requireSkill"] = 20219,
 						},
-						
 						{
 							["name"] = "Gnomish Mind Control Cap",
 							["recipeID"] = 12907,

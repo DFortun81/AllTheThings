@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -28,7 +29,7 @@ _.Zones =
 						i(25528),	-- Swift Green Gryphon Mount
 						i(25529),	-- Swift Purple Gryphon Mount
 						i(25527),	-- Swift Red Gryphon Mount
-					},	
+					},
 				}),
 				n(19351, {	-- Daggle Ironshaper
 					["coord"] = { 36.8, 54.4, 104 },

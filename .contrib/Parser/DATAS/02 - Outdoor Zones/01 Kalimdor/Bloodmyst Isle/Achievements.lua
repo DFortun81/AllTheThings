@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(106, {	-- Bloodmyst Isle
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4926, {	-- Bloodmyst Isle Quests
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

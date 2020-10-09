@@ -9,7 +9,7 @@ _.Zones =
 			["maps"] = { 118 },	-- Icecrown
 			["lvl"] = 67,
 			["g"] = {
-				n(-4, {	-- Achievements
+				n(ACHIEVEMENTS, {
 					-- TODO:: add all achievements here?
 					ach(2756, {	-- Argent Aspiration
 						["sourceQuest"] = 13668,	-- The Argent Tournament

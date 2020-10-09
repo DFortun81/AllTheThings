@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1178, {	-- Operation: Mechagon
 		["coord"] = { 73.1, 36.3, 1462 },
@@ -186,7 +187,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 								i(168968),	-- Flame-Seared Leggings
 								i(168972),	-- Pyroclastic Greatboots
 								i(169529),	-- Recipe: Monelite Reinforced Chassis (Rank 3)
-								i(169609),	-- Schematic: Super-Charged Engine (Rank 3)					
+								i(169609),	-- Schematic: Super-Charged Engine (Rank 3)
 							},
 						}),
 						e(2348, {	-- Machinist's Garden
@@ -393,7 +394,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 								i(168968),	-- Flame-Seared Leggings
 								i(168972),	-- Pyroclastic Greatboots
 								i(169529),	-- Recipe: Monelite Reinforced Chassis (Rank 3)
-								i(169609),	-- Schematic: Super-Charged Engine (Rank 3)					
+								i(169609),	-- Schematic: Super-Charged Engine (Rank 3)
 							},
 						}),
 						e(2348, {	-- Machinist's Garden

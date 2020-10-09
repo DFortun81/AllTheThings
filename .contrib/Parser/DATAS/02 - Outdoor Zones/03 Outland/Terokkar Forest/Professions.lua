@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -33,7 +34,7 @@ _.Zones =
 								crit(1, {	-- Crocolisks in the City
 									["achievementID"] = 905,	-- Old Man Barlowned
 								}),
-							},	
+							},
 						}),
 						q(11669, {	-- Felblood Fillet
 							["provider"] = { "n", 25580 },	-- Old Man Barlo

@@ -1,12 +1,12 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(1161, {	-- Boralus
-			n(-4, {		-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(12891, {	-- A Nation United
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

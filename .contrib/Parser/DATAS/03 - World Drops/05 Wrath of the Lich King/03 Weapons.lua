@@ -1,10 +1,11 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+
+_.WorldDrops =
 {
 	tier(3, {	-- Wrath of the Lich King
-		n(-319, {	-- Weapons		
+		n(-319, {	-- Weapons
 			n(-334, {	-- 1H Axes
 				i(36571),	-- Splicing Axe
 				i(36572),	-- Dinged Cleaver
@@ -37,7 +38,7 @@ _.WorldDrops =
 				i(36597),	-- Ice-Splintering Axe
 				i(36598),	-- Scarlet Battle Axe
 				i(37811),	-- Captain Carver's Persuader
-			}),	
+			}),
 			n(-346, {	-- Bows
 				i(36613),	-- Honorable Longbow
 				i(36614),	-- Yew Bow
@@ -68,8 +69,8 @@ _.WorldDrops =
 				i(36638),	-- Bloody Crossbow
 				i(36639),	-- Brutal Ballista
 				i(36640),	-- Scourge Crossbow
-			}),			
-			n(-333, {	-- Daggers	
+			}),
+			n(-333, {	-- Daggers
 				i(36473),	-- Pioneer's Dagger
 				i(36474),	-- Engraved Dagger
 				i(36475),	-- Seal Shortblade
@@ -102,7 +103,7 @@ _.WorldDrops =
 				i(43613),	-- The Dusk Blade
 				i(44310),	-- Namlak's Supernumerary Sticker
 			}),
-			n(-348, {	-- Fist Weapons	
+			n(-348, {	-- Fist Weapons
 				i(36557),	-- Meat Ripper
 				i(36558),	-- Curved Scratcher
 				i(36559),	-- Prized Handscythes
@@ -134,7 +135,7 @@ _.WorldDrops =
 				i(36653),	-- Precipice Longrifle
 				i(36654),	-- Harsh-Winter Rifle
 				i(50444),	-- Rowan's Rifle of Silver Bullets
-			}),			
+			}),
 			n(-331, {	-- Held in Off-hand
 				i(36459),	-- Icy Orb
 				i(36460),	-- Northern Star
@@ -215,7 +216,7 @@ _.WorldDrops =
 				i(36611),	-- Bleak Scythe
 				i(36612),	-- Scourge War Spear
 				i(37813),	-- Banner Slicer
-			}),			
+			}),
 			n(-332, {	-- Shield
 				i(36445),	-- Riveted Shield
 				i(36446),	-- Forged-Iron Shield

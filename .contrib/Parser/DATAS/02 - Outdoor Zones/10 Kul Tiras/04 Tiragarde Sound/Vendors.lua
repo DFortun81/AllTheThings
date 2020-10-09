@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
@@ -14,7 +15,7 @@ _.Zones =
 					},
 				}),
 				n(128702, {	-- Roko <Wandering Merchant>
-				--	this vendor has a quest unlock requirement; need to figure out precisely which one and attach it.  wowhead comments just say "unlock freehold," which isn't very specific.
+					--	this vendor has a quest unlock requirement; need to figure out precisely which one and attach it.  wowhead comments just say "unlock freehold," which isn't very specific.
 					["coord"] = { 79.6, 81.8, 895 },
 					["g"] = {
 						i(141042),	-- Technique: Glyph of Autumnal Bloom

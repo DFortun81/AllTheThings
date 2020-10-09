@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
@@ -9,7 +10,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(164,  {	-- Goblin Workshop (rank 1: 162, rank 2: 163, rank 3: 164)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-4, {	-- Achievements
+						n(ACHIEVEMENTS, {
 							ach(9527, {		-- Terrific Technology
 								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 								["g"] = {

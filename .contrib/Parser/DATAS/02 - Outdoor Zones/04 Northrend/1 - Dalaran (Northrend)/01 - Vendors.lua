@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, {	-- Northrend
@@ -559,13 +560,13 @@ _.Zones =
 							["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
 						}),
 						i(46177, {	-- Conqueror's Aegis Shoulderguards
-							["cost"] = { { "i", 45656, 1 }, },	--Mantle of the Wayward Conqueror 
+							["cost"] = { { "i", 45656, 1 }, },	--Mantle of the Wayward Conqueror
 						}),
 						i(46152, {	-- Conqueror's Aegis Shoulderplates
-							["cost"] = { { "i", 45656, 1 }, },	--Mantle of the Wayward Conqueror 
+							["cost"] = { { "i", 45656, 1 }, },	--Mantle of the Wayward Conqueror
 						}),
 						i(46182, {	-- Conqueror's Aegis Spaulders
-							["cost"] = { { "i", 45656, 1 }, },	--Mantle of the Wayward Conqueror 
+							["cost"] = { { "i", 45656, 1 }, },	--Mantle of the Wayward Conqueror
 						}),
 						i(46178, {	-- Conqueror's Aegis Tunic
 							["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
@@ -707,28 +708,28 @@ _.Zones =
 							["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
 						}),
 						i(45336, {	-- Valorous Darkruned Faceguard
-							["cost"] = { { "i", 45649, 1 }, },	-- Helm 
+							["cost"] = { { "i", 45649, 1 }, },	-- Helm
 						}),
 						i(45341, {	-- Valorous Darkruned Gauntlets
-							["cost"] = { { "i", 45646, 1 }, },	-- Gloves 
+							["cost"] = { { "i", 45646, 1 }, },	-- Gloves
 						}),
 						i(45337, {	-- Valorous Darkruned Handguards
-							["cost"] = { { "i", 45646, 1 }, },	-- Gloves 
+							["cost"] = { { "i", 45646, 1 }, },	-- Gloves
 						}),
 						i(45342, {	-- Valorous Darkruned Helmet
-							["cost"] = { { "i", 45649, 1 }, },	-- Helm 
+							["cost"] = { { "i", 45649, 1 }, },	-- Helm
 						}),
 						i(45338, {	-- Valorous Darkruned Legguards
-							["cost"] = { { "i", 45652, 1 }, },	-- Leggings 
+							["cost"] = { { "i", 45652, 1 }, },	-- Leggings
 						}),
 						i(45343, {	-- Valorous Darkruned Legplates
-							["cost"] = { { "i", 45652, 1 }, },	-- Leggings 
+							["cost"] = { { "i", 45652, 1 }, },	-- Leggings
 						}),
 						i(45339, {	-- Valorous Darkruned Pauldrons
-							["cost"] = { { "i", 45661, 1 }, },	-- Spaulders 
+							["cost"] = { { "i", 45661, 1 }, },	-- Spaulders
 						}),
 						i(45344, {	-- Valorous Darkruned Shoulderplates
-							["cost"] = { { "i", 45661, 1 }, },	-- Spaulders 
+							["cost"] = { { "i", 45661, 1 }, },	-- Spaulders
 						}),
 						i(45429, {	-- Valorous Siegebreaker Battleplate
 							["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
@@ -778,28 +779,28 @@ _.Zones =
 						i(82470, {	-- Ancient Tome of Portal: Dalaran
 							["isLimited"] = true,
 							["spellID"] = 120146,	-- Ancient Portal: Dalaran
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 						}),
 						i(137294, {	-- Dalaran Initiates' Pin (TOY!)
 							["isLimited"] = true,
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 						}),
 						i(136846, {	-- Familiar Stone (TOY!)
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 						}),
 						i(136797, {	-- Mystical Tome: Arcane Linguist
 							["spellID"] = 210086,	-- Arcane Linguist
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 						}),
 						i(136799, {	-- Mystical Tome: Illusion
 							["spellID"] = 131784,	-- Illusion
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 						}),
 						i(167733, {	-- Technique: Glyph of Dalaran Brilliance
 							["isLimited"] = true,
 						}),
 						i(44714, {	-- Tome of Dalaran Brilliance
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 							["u"] = REMOVED_FROM_GAME,	-- removed in 7.0.3
 							["g"] = {
 								i(44602),	-- Magic Consumed Book
@@ -808,7 +809,7 @@ _.Zones =
 						i(44709, {	-- Tome of Polymorph: Black Cat
 							["isLimited"] = true,
 							["spellID"] = 61305,	-- Polymorph
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 						}),
 					},
 				}),

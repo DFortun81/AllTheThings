@@ -86,7 +86,7 @@ _.Achievements =
 				crit(2),		-- Exalted with Cenarion Expedition
 			}),
 			ach(12415, {	-- Heritage of Highmountain
-				["races"] = { 28 },	-- Highmountain Tauren
+				["races"] = { HIGHMOUNTAIN },
 				["g"] = {
 					i(156668),	-- Highmountain Headdress
 					i(156669),	-- Highmountain Shoulderguards
@@ -99,7 +99,7 @@ _.Achievements =
 				},
 			}),
 			ach(13076, {	-- Heritage of the Dark Iron
-				["races"] = { 34 },	-- Dark Iron Dwarf
+				["races"] = { DARKIRON },
 				["g"] = {
 					i(161015),	-- Dark Iron Bracers
 					i(161014),	-- Dark Iron Boots
@@ -112,7 +112,7 @@ _.Achievements =
 				},
 			}),
 			ach(13504, {	-- Heritage of the Kul Tirans
-				["races"] = { 32 },	-- Kul Tiran
+				["races"] = { KULTIRAN },
 				["g"] = {
 					i(165002),	-- Kul'Tiran Bicorne
 					i(165003),	-- Kul'Tiran Tasseled Pauldron
@@ -126,11 +126,11 @@ _.Achievements =
 				},
 			}),
 			ach(12414, {	-- Heritage of the Lightforged
-				["races"] = { 30 },	-- Lightforged Draenei
+				["races"] = { LIGHTFORGED },
 				--Note!! Removed the items you get since they are now linked to the quest and grants +2 rather than +3
 			}),
 			ach(13077, {	-- Heritage of the Mag'har
-				["races"] = { 36 },	-- Mag'har Orc
+				["races"] = { MAGHAR },
 				["g"] = {
 					i(161003),	-- Warsong Clan Bracers
 					i(160993),	-- Warsong Clan Pauldrons
@@ -159,7 +159,7 @@ _.Achievements =
 				},
 			}),
 			ach(14014, {	-- Heritage of the Mechagnome
-				["races"] = { 37 },	-- Mechagnome
+				["races"] = { MECHAGNOME },
 				["g"] = {
 					i(173961),	-- Mechagnome Heritage Helmet
 					i(173963),	-- Mechagnome Heritage Shouldergaurds
@@ -171,7 +171,7 @@ _.Achievements =
 			}),
 			ach(12413, {	-- Heritage of the Nightborne
 				["questID"] = 49784,	-- Heritage of the Nightborne
-				["races"] = { 27 },	-- Nightborne
+				["races"] = { NIGHTBORNE },
 				["g"] = {
 					i(156675),	-- Shal'dorei Crown
 					i(156676),	-- Shal'dorei Mantle
@@ -184,7 +184,7 @@ _.Achievements =
 				},
 			}),
 			ach(12291, {	-- Heritage of the Void
-				["races"] = { 29 },	-- Void Elf
+				["races"] = { VOIDELF },
 				["g"] = {
 					i(156690),	-- Ren'dorei Helm
 					i(156691),	-- Ren'dorei Pauldrons
@@ -197,7 +197,7 @@ _.Achievements =
 				},
 			}),
 			ach(14002, {	-- Heritage of the Vulpera
-				["races"] = { 35 },	-- Vulpera
+				["races"] = { VULPERA },
 				["g"] = {
 					i(173968),	-- Vulpera Heritage Shawl
 					i(173971),	-- Vulpera Heritage Shoulderpads
@@ -209,7 +209,7 @@ _.Achievements =
 				},
 			}),
 			ach(13503, {	-- Heritage of the Zandalari
-				["races"] = { 31 },	-- Zandalari Troll
+				["races"] = { ZANDALARI },
 				["g"] = {
 					i(164993),	-- Zandalari Mask
 					i(164994),	-- Zandalari Pauldrons

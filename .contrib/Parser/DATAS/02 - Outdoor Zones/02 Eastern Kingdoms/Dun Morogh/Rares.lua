@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -14,7 +15,7 @@ _.Zones =
 						{ 66.2, 59.8, 27 },
 					},
 				}),
-				n(1137, { 	-- Edan the Howler	
+				n(1137, { 	-- Edan the Howler
 				}),
 				n(1119, {	-- Hammerspine
 					["description"] = "Spawns at the very end of the cave.",

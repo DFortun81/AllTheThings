@@ -34,7 +34,7 @@ _.Instances = { tier(7, {	-- Legion
 				n(ZONEDROPS, {
 					i(147117, {	-- Orb of the Fel Temptress
 						["cr"] = 118714,  -- Hellblaze Temptress
-						["classes"] = {9},	-- Warlock
+						["classes"] = { WARLOCK },
 					}),
 				}),
 				cr(117193, e(1905, {	-- Agronox
@@ -144,7 +144,7 @@ _.Instances = { tier(7, {	-- Legion
 					}),
 					i(147117, {	-- Orb of the Fel Temptress
 						["cr"] = 120366,  -- Hellblaze Temptress
-						["classes"] = {9},	-- Warlock
+						["classes"] = { WARLOCK },
 					}),
 				}),
 				cr(117193, e(1905, {	-- Agronox

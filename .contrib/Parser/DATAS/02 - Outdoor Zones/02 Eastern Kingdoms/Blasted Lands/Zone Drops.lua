@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -66,7 +67,7 @@ _.Zones =
 									i(10185),	-- Swashbuckler's Cape
 									i(10063),	-- Duskwoven Amice
 									i(10242),	-- Heavy Lamellar Gauntlets
-									i(10084),	-- Lord's Legguards	
+									i(10084),	-- Lord's Legguards
 									i(10072),	-- Righteous Gloves
 								}),
 							},

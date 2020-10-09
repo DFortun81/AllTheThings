@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+
+_.WorldDrops =
 {
 	tier(8, {	-- Battle for Azeroth
 		n(-319, {	-- Weapons [Epic -- No adjustments]

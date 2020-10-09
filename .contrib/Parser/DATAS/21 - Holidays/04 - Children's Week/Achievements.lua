@@ -1,14 +1,15 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = 
+
+-- TODO: formatting
+_.Holidays =
 {
 	{	-- Children's Week
 		["holidayID"] = 235445,	-- Children's Week
 		["u"] = 20,				-- Children's Week Filter
 		["g"] = {
-			{	-- Achievements
-				["npcID"] = -4,	-- Achievements
+			n(ACHIEVEMENTS, {
 				["g"] = {
 					{	-- For the Children
 						["achievementID"] = 1793,	-- For the Children
@@ -248,7 +249,7 @@ _.Holidays =
 						},
 					},
 				},
-			},
+			}),
 		},
 	},
 };

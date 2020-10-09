@@ -556,7 +556,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["creatureID"] = 35013,
 					["groups"] = {
 						ach(3837),		-- Koralon the Flame Watcher (25 player)
-						
 						i(42044),	-- Relentless Gladiator's Pendant of Ascendancy
 						i(42046),	-- Relentless Gladiator's Pendant of Deliverance
 						i(42043),	-- Relentless Gladiator's Pendant of Dominance

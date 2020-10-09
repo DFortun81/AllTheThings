@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -12,7 +13,7 @@ _.Zones =
 							["provider"] = { "n", 3347 },	-- Yelmak (Orgrimmar)
 							["coord"] = { 55.6, 45.8, 85 },	-- Yelmak (Orgrimmar)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,	
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -21,7 +22,7 @@ _.Zones =
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},]]							
+							},]]
 						}),
 						q(29067, {	-- Potion Master
 							["provider"] = { "n", 3347 },	-- Yelmak (Orgrimmar)
@@ -51,7 +52,7 @@ _.Zones =
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},]]							
+							},]]
 						}),
 					}),
 				}),
@@ -124,7 +125,7 @@ _.Zones =
 					}),
 				}),
 				prof(COOKING, {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5475, {	-- Let's Do Lunch: Orgrimmar
 							["races"] = HORDE_ONLY,
 						}),
@@ -194,18 +195,7 @@ _.Zones =
 							["coord"] = { 56.5, 62.5, 85 },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
-							["races"] = {
-								2,	-- Orc
-								5,	-- Undead
-								6,	-- Tauren
-								9,	-- Goblin
-								10,	-- Blood Elf
-								26,	-- Pandaren
-								27,	-- Nightborne
-								28,	-- Highmountain Tauren
-								31,	-- Zandalari Troll
-								36,	-- Mag'har Orc
-							},
+							["races"] = exclude(TROLL, HORDE_ONLY),
 							["groups"] = {
 								crit(5, {	-- Stealing From Our Own
 									["achievementID"] = 5475,	-- Let's Do Lunch: Orgrimmar
@@ -263,7 +253,7 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5477, {	-- Fish or Cut Bait: Orgrimmar
 							["races"] = HORDE_ONLY,
 						}),
@@ -440,7 +430,7 @@ _.Zones =
 							["g"] = {
 								currency(361),	-- Illustrious Jewelcrafter's Token
 							},
-						}),	
+						}),
 					}),
 				}),
 				prof(LEATHERWORKING, {

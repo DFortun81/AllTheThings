@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -121,7 +122,7 @@ _.Zones =
 					["provider"] = { "n", 17555 },	-- Stephanos
 					["coord"] = { 54.8, 35.8, 103 },
 					["sourceQuest"] = 9605,	-- Hippogryph Master Stephanos
-					["races"] = { 11 }, -- Draenei
+					["races"] = { DRAENEI },
 					["lvl"] = 5,
 				}),
 				q(9762, {	-- The Unwritten Prophecy

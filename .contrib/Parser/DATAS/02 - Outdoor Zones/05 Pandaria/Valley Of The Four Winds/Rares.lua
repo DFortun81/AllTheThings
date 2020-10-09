@@ -1,10 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
-		m(376, {	-- Valley of the Four Winds				
+		m(376, {	-- Valley of the Four Winds
 			n(RARES, {
 				n(51059, {	-- Blackhoof
 					["coords"] = {
@@ -150,7 +151,6 @@ _.Zones =
 						{ 60.2, 39.2, 376 },
 					},
 					["g"] = {
-							
 						i(86580, {	-- Wilted Lilypad
 							crit(8, {	-- Overgrown Lilypad
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag

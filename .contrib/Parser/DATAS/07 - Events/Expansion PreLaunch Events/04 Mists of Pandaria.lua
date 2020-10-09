@@ -2,6 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
+-- TODO: formatting
 _.WorldEvents =
 {
 	{	-- Expansion Prelaunch Events

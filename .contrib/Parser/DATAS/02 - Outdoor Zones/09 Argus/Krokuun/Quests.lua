@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(905, { 	-- Argus
@@ -284,23 +285,6 @@ _.Zones =
 						["provider"] = { "n", 124595 },	-- Magni Bronzebeard
 						["coord"] = { 56.6, 67.4, 830 },
 					}),
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
 					n(-168, {	-- Other Quests
 						q(49015, {	-- Antorus, the Burning Throne: The Death of a Titan
 							["groups"] = {

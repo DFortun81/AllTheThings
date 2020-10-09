@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -35,8 +36,8 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 37087 },	-- Jona Ironstock
 						["coord"] = { 61.4, 19.4, 427 },
-						["races"] = { 3 },	-- Dwarf
-						["classes"] = { 8 },	-- Mage
+						["races"] = { DWARF },
+						["classes"] = { MAGE },
 					}),
 					q(24493, {	-- Don't Forget About Us
 						["provider"] = { "n", 37087 },	-- Jona Ironstock
@@ -56,22 +57,22 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 37087 },	-- Jona Ironstock
 						["coord"] = { 61.4, 19.4, 427 },
-						["races"] = { 3 },	-- Dwarf
-						["classes"] = { 10 },	-- Monk
+						["races"] = { DWARF },
+						["classes"] = { MONK },
 					}),
 					q(3109,  {	-- Encrypted Rune
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 37087 },	-- Jona Ironstock
 						["coord"] = { 61.4, 19.4, 427 },
-						["races"] = { 3, 7 },	-- Dwarf, Gnome
-						["classes"] = { 4 },	-- Rogue
+						["races"] = { DWARF, GNOME },
+						["classes"] = { ROGUE },
 					}),
 					q(24532, {	-- Evisceratin' the Enemy
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 916 },	-- Solm Hargin
 						["coord"] = { 59.5, 20.4, 427 },
-						["races"] = { 3 },	-- Dwarf
-						["classes"] = { 4 },	-- Rogue
+						["races"] = { DWARF },
+						["classes"] = { ROGUE },
 						["sourceQuest"] = 3109,	-- Encrypted Rune
 					}),
 					q(24474, {	-- First Things First: We're Gonna Need Some Beer
@@ -111,7 +112,7 @@ _.Zones =
 						["provider"] = { "n", 63285 },	-- Lo
 						["coord"] = { 63.2, 22.3, 427 },
 						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 10 },	-- Monk
+						["classes"] = { MONK },
 					}),
 					q(24473, {	-- Lockdown in Anvilmar
 						["provider"] = { "n", 37081 },	-- Joren Ironstock
@@ -162,8 +163,8 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 837 },	-- Branstock Khalder
 						["coord"] = { 60.7, 14.6, 427 },
-						["races"] = { 3 },	-- Dwarf
-						["classes"] = { 5 },	-- Priest
+						["races"] = { DWARF },
+						["classes"] = { PRIEST },
 					}),
 				}),
 			}),

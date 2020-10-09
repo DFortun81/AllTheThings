@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, {	-- Northrend
@@ -22,7 +23,7 @@ _.Zones =
 					["lvl"] = 98,
 					["coord"] = { 56.7, 69.1, 115 },
 					["model"] = 192568,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["provider"] = { "o", 248398 },	-- Ethereal Communication Device
 				}),
 				q(12067, {	-- A Letter for Home (A)
@@ -111,7 +112,7 @@ _.Zones =
 				q(43388, {	-- Apostate Liberation
 					["lvl"] = 110,
 					["coord"] = { 71.4, 71.8, 115 },
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["provider"] = { "n", 110683 },	-- Mariella the Heretic
 				}),
 				q(12077, {	-- Apply This Twice A Day
@@ -157,13 +158,13 @@ _.Zones =
 				q(12172, {	-- Attunement to Dalaran (A)
 					["coord"] = { 28.9, 55.4, 115 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["provider"] = { "n", 26673 },	-- Image of Archmage Modera
 				}),
 				q(12173, {	-- Attunement to Dalaran (H)
 					["coord"] = { 38.0, 46.2, 115 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
 				}),
 				q(12495, {	-- Audience With The Dragon Queen (A)
@@ -1065,7 +1066,7 @@ _.Zones =
 				q(43387, {	-- Scarlet Redemption
 					["lvl"] = 110,
 					["coord"] = { 71.4, 71.8, 115 },
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["provider"] = { "n", 110683 },	-- Mariella the Heretic
 				}),
 				q(12455, {	-- Scattered To The Wind

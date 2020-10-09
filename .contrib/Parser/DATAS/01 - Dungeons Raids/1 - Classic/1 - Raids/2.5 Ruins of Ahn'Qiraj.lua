@@ -504,7 +504,6 @@ _.Instances = { tier(1, {	-- Classic
 						i(21297),	-- Manual of Heroic Strike IX
 						i(21299),	-- Manual of Revenge VI
 					})),
-					
 					-- Enchants
 					i(20729),	-- Formula: Enchant Gloves - Fire Power
 					i(20728),	-- Formula: Enchant Gloves - Frost Power

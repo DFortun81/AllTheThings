@@ -1611,7 +1611,7 @@ _.Zones =
 				}),
 
 				spell(229385, {	-- Ban-Lu, Grandmaster's Companion
-					["classes"] = { 10 },	-- Monk
+					["classes"] = { MONK },
 					["lvl"] = 110,
 					["g"] = {
 						q(46343, {	-- The Trail of Ban-Lu

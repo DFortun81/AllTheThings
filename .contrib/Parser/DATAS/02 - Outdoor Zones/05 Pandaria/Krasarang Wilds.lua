@@ -15,7 +15,7 @@ _.Zones =
 			["lvl"] = 81,
 			["g"] = {
 			--	if you add coordinates to any part of this file, make sure you verify them manually!  the coordinates listed on wowhead (as of september 2019) are incorrect and probably based on an older version of the krasarang map.  if you use those coordinates instead of manually confirming them, they'll place you outside of /tar range.
-				n(-4, {	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(9069, {	-- An Awfully Big Adventure
 						["collectible"] = false,
 						["filterID"] = 101,	-- Battle Pet
@@ -1958,7 +1958,7 @@ _.Zones =
 							i(89401),	-- Angler's Tabard
 							i(168416),	-- Angler's Water Striders
 							i(107950, {	-- Bipsi's Bobbing Berg
-								["classes"] = { 8 },	-- Mage
+								["classes"] = { MAGE },
 								["cost"] = 10000000,	-- 1,000g
 							}),
 							i(84661),	-- Dragon Fishing Pole -- NOT MOGGABLE

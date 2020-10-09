@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -54,11 +55,11 @@ _.Zones =
 				q(46177, {	-- A Portal Away
 					["provider"] = { "n", 116048 },	-- Joanna
 					["classes"] = {
-						6,	-- Death Knight (Frost)
-						12,	-- Demon Hunter (Havoc)
-						3,	-- Hunter (Survival)
-						4,	-- Rogue (Subtlety)
-						1,	-- Warrior (Arms)
+						DEATHKNIGHT,	-- Frost
+						DEMONHUNTER,	-- Havoc
+						HUNTER,			-- Survival
+						ROGUE,			-- Subtlety
+						WARRIOR,		-- Arms
 					},
 					["coord"] = { 25.2, 37.9, 76 },
 					["lvl"] = 110,
@@ -609,11 +610,11 @@ _.Zones =
 					["sourceQuest"] = 44915,	-- Professionally Good looking
 					["provider"] = { "n", 115791 },	-- Joanna
 					["classes"] = {
-						6,	-- Death Knight (Frost)
-						12,	-- Demon Hunter (Havoc)
-						3,	-- Hunter (Survival)
-						4,	-- Rogue (Subtlety)
-						1,	-- Warrior (Arms)
+						DEATHKNIGHT,	-- Frost
+						DEMONHUNTER,	-- Havoc
+						HUNTER,			-- Survival
+						ROGUE,			-- Subtlety
+						WARRIOR,		-- Arms
 					},
 					["coord"] = { 25.0, 38.6, 76 },
 					["lvl"] = 110,
@@ -661,11 +662,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 115791 },	-- Joanna
 					["classes"] = {
-						6,	-- Death Knight (Frost)
-						12,	-- Demon Hunter (Havoc)
-						3,	-- Hunter (Survival)
-						4,	-- Rogue (Subtlety)
-						1,	-- Warrior (Arms)
+						DEATHKNIGHT,	-- Frost
+						DEMONHUNTER,	-- Havoc
+						HUNTER,			-- Survival
+						ROGUE,			-- Subtlety
+						WARRIOR,		-- Arms
 					},
 					["coord"] = { 25.0, 38.6, 76 },
 					["lvl"] = 110,
@@ -901,11 +902,11 @@ _.Zones =
 				q(44924, {	-- The Archmage Accosted
 					["sourceQuest"] = 44920,	-- Order of Incantations
 					["classes"] = {
-						6,	-- Death Knight (Frost)
-						12,	-- Demon Hunter (Havoc)
-						3,	-- Hunter (Survival)
-						4,	-- Rogue (Subtlety)
-						1,	-- Warrior (Arms)
+						DEATHKNIGHT,	-- Frost
+						DEMONHUNTER,	-- Havoc
+						HUNTER,			-- Survival
+						ROGUE,			-- Subtlety
+						WARRIOR,		-- Arms
 					},
 					["coord"] = { 25.1, 38.5, 76 },
 					["lvl"] = 110,

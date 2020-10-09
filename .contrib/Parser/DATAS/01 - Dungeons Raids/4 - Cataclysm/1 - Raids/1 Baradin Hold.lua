@@ -120,7 +120,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(60593),	-- Vicious Gladiator's Boots of Alacrity
 					i(60587),	-- Vicious Gladiator's Boots of Cruelty
 					i(60607),	-- Vicious Gladiator's Footguards of Alacrity
-					i(60581),	-- Vicious Gladiator's Footguards of Meditation							
+					i(60581),	-- Vicious Gladiator's Footguards of Meditation
 					i(60516),	-- Vicious Gladiator's Greaves of Alacrity
 					i(60540),	-- Vicious Gladiator's Greaves of Meditation
 					i(60567),	-- Vicious Gladiator's Sabatons of Alacrity
@@ -131,7 +131,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(60613),	-- Vicious Gladiator's Treads of Cruelty
 					i(60636),	-- Vicious Gladiator's Treads of Meditation
 					i(60513),	-- Vicious Gladiator's Warboots of Alacrity
-					i(60509),	-- Vicious Gladiator's Warboots of Cruelty							
+					i(60509),	-- Vicious Gladiator's Warboots of Cruelty
 					i(60647),	-- Vicious Gladiator's Band of Accuracy
 					i(60645),	-- Vicious Gladiator's Band of Cruelty
 					i(60649),	-- Vicious Gladiator's Band of Meditation

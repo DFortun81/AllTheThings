@@ -1,6 +1,6 @@
----------------------------------------------------
---          Z O N E S        M O D U L E         --
----------------------------------------------------
+-------------------------------------------------------------------
+--      E X P A N S I O N   F E A T U R E S    M O D U L E       --
+-------------------------------------------------------------------
 
 _.ExpansionFeatures =
 {
@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		n(-253, {	-- Horde War Campaign
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				n(-4, {	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(12509, {	-- Ready for War
 						["races"] = HORDE_ONLY,
 						["maps"] = { 1163, 1164, 1165 },	-- Dazar'alor
@@ -58,10 +58,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					ach(13924, {	-- The Fourth War
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							57095,	-- Old Soldier
 							57152,	-- Most Loyal
-						},	
+						},
 						["g"] = {
 							crit(1),	-- Ready for War
 							crit(2),	-- Tides of Vengeance
@@ -1202,7 +1202,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 54178,	-- Catching a Ride
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
-						["maps"] = { 
+						["maps"] = {
 							895,	-- Tiragarde Sound
 							1349,	-- Tol Dagor (Scenario)
 							1350,	-- Tol Dagor (Scenario)
@@ -1441,7 +1441,7 @@ _.ExpansionFeatures =
 						["altQuests"] = { 55034 },	-- Under False Colors
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
-						["maps"] = { 70 },	-- Dustwallow Marsh 
+						["maps"] = { 70 },	-- Dustwallow Marsh
 					}),
 					q(55034, {	-- Under False Colors (Sylvanas Version)
 						["provider"] = { "n", 150311 },	-- Thomas Zelling
@@ -1453,7 +1453,7 @@ _.ExpansionFeatures =
 						["altQuests"] = { 54999 },	-- Under False Colors
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
-						["maps"] = { 70 },	-- Dustwallow Marsh 
+						["maps"] = { 70 },	-- Dustwallow Marsh
 					}),
 					-- The Warfang Event (Baine's imprisoning)
 					q(55047, {	-- Securing Warfang Hold
@@ -1551,7 +1551,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 55781,	-- Old Allies
 						["altQuests"] = { 55782 },	-- Stay of Execution
 						["lvl"] = 120,
-						["maps"] = { 
+						["maps"] = {
 							85,	-- Orgrimmar
 							1479,	-- Baine Rescue (Scenario)
 						},
@@ -1563,7 +1563,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 55780,	-- Old Allies (Sylvanas Version)
 						["altQuests"] = { 55779 },	-- Stay of Execution
 						["lvl"] = 120,
-						["maps"] = { 
+						["maps"] = {
 							85,	-- Orgrimmar
 							1479,	-- Baine Rescue (Scenario)
 						},
@@ -1659,9 +1659,9 @@ _.ExpansionFeatures =
 							1535,	-- Durotar (Scenario)
 						},
 					}),
-					
+
 					--	unsorted below this point
-				
+
 					-- Escape of Saurfang
 					q(54097, {	-- The Dark Lady Calls
 						["provider"] = { "n", 146013 },	-- Dark Ranger Alina
@@ -1776,4 +1776,4 @@ _.ExpansionFeatures =
 			},
 		}),
 	}),
-};		
+};

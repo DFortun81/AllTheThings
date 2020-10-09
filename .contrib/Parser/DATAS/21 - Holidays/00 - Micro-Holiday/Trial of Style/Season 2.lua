@@ -1,6 +1,8 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
+-- TODO: formatting
 _.Holidays =
 {
 	{	-- Trial of Style
@@ -18,9 +20,9 @@ _.Holidays =
 								["itemID"] = 157573,	-- Ensemble: Mindwrack Raiment
 								["description"] = "Cost: 60 Trial of Style Tokens",
 								["classes"] = {
-									5,	-- Priest
-									8,	-- Mage
-									9,	-- Warlock
+									PRIEST,
+									MAGE,
+									WARLOCK,
 								},
 								["g"] = {
 									{	-- Mindwrack Cowl
@@ -53,10 +55,10 @@ _.Holidays =
 								["itemID"] = 157574,	-- Ensemble: Tundraspite Armor
 								["description"] = "Cost: 60 Trial of Style Tokens",
 								["classes"] = {
-									11,	-- Druid
-									4,	-- Rogue
-									10,	-- Monk
-									12,	-- Demon Hunter
+									DRUID,
+									ROGUE,
+									MONK,
+									DEMONHUNTER,
 								},
 								["g"] = {
 									{	-- Tundraspite Helm
@@ -89,8 +91,8 @@ _.Holidays =
 								["itemID"] = 157576,	-- Ensemble: Crimson Sentinel Garb
 								["description"] = "Cost: 60 Trial of Style Tokens",
 								["classes"] = {
-									3,	-- Hunter
-									7,	-- Shaman
+									HUNTER,
+									SHAMAN,
 								},
 								["g"] = {
 									{	-- Crimson Sentinel Cap
@@ -123,9 +125,9 @@ _.Holidays =
 								["itemID"] = 157577,	-- Ensemble: Goldspine Plate
 								["description"] = "Cost: 60 Trial of Style Tokens",
 								["classes"] = {
-									2,	-- Paladin
-									1,	-- Warrior
-									6,	-- Death Knight
+									PALADIN,
+									WARRIOR,
+									DEATHKNIGHT,
 								},
 								["g"] = {
 									{	-- Goldspine Helm

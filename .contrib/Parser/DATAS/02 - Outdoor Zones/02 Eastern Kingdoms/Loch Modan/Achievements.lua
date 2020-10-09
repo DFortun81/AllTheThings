@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(48, {	-- Loch Modan
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4899, {	-- Loch Modan Quests
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

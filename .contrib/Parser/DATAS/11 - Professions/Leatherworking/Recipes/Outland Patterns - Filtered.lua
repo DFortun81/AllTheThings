@@ -92,7 +92,6 @@ profession(LEATHERWORKING, {
 							["recipeID"] = 35588,
 							["u"] = REMOVED_FROM_GAME,
 						},
-						
 					}
 				},
 				{

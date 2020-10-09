@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(22, {	-- Western Plaguelands
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4893, {	-- Western Plaguelands Quests
 					crit(1, {	-- The First Battle for Andorhal
 						["sourceQuests"] = {

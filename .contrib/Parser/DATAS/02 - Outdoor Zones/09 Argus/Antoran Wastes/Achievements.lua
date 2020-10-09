@@ -1,12 +1,12 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
 {
 	m(905, { 	-- Argus
 		m(885, {	-- Antoran Wastes
-			n(-4, { 	-- Achievement
+			n(ACHIEVEMENTS, {
 				ach(12084),	-- Infused and Abused
 				ach(12074, {	-- Shoot First, Loot Later
 					o(277205, {	-- Ancient Legion War Cache

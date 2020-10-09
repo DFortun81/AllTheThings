@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.WorldEvents =
 {
 	n(-5364, {	-- 15th Anniversary
@@ -900,7 +901,7 @@ _.WorldEvents =
 										}),
 										i(171581, {	-- Baelgun's Heavy Crossbow
 											["races"] = ALLIANCE_ONLY,
-										}),									
+										}),
 										i(171527, {	-- Band of the Traitor King
 											["races"] = HORDE_ONLY,
 										}),
@@ -1144,13 +1145,13 @@ _.WorldEvents =
 								e(167, {	-- Cho'gall — WoW anniversary only
 									["cr"] = 43324,
 									["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
-									-- Old tier Items
+										-- Old tier Items
 										i(171856),	-- Shadowflame Mantle
 										i(171872),	-- Reinforced Sapphirium Shoulderguards
 										i(171870),	-- Reinforced Sapphirium Pauldrons
 										i(171873),	-- Reinforced Sapphirium Mantle
 										i(171857),	-- Mercurial Shoulderwraps
-										i(171858),	-- Mercurial Mantle	
+										i(171858),	-- Mercurial Mantle
 										i(171866),	-- Spaulders of the Raging Elements
 										i(171865),	-- Shoulderwraps of the Raging Elements
 										i(171864),	-- Mantle of the Raging Elements
@@ -1182,7 +1183,7 @@ _.WorldEvents =
 								e(174, {	-- Nefarian's End — items available outside of anniversary event
 									["cr"] = 41376,
 									["g"] = {
-										i(122195),	-- Music Roll: Legends of Azeroth		
+										i(122195),	-- Music Roll: Legends of Azeroth
 									},
 								}),
 								e(174, {	-- Nefarian's End — WoW anniversary only
@@ -1194,7 +1195,7 @@ _.WorldEvents =
 										i(171892),	-- Reinforced Sapphirium Headguard
 										i(171891),	-- Reinforced Sapphirium Faceguard
 										i(171876),	-- Mercurial Hood
-										i(171877),	-- Mercurial Cowl	
+										i(171877),	-- Mercurial Cowl
 										i(171882),	-- Lightning-Charged Headguard
 										i(171885),	-- Helmet of the Raging Elements
 										i(171884),	-- Headpiece of the Raging Elements
@@ -1272,13 +1273,13 @@ _.WorldEvents =
 					["maps"] = {
 						1553,	-- Caverns of Time
 					--	BC
-						
+
 					--	WotLK
 						1557,	-- Naxxramas
 						1563,	-- Trial of the Crusader
 						1558,	-- Icecrown Citadel
 					--	Cata
-						
+
 					},
 					["u"] = 31,	-- WoW Anniversary
 					["g"] = {
@@ -1570,7 +1571,7 @@ _.WorldEvents =
 										i(171870),	-- Reinforced Sapphirium Pauldrons
 										i(171873),	-- Reinforced Sapphirium Mantle
 										i(171857),	-- Mercurial Shoulderwraps
-										i(171858),	-- Mercurial Mantle	
+										i(171858),	-- Mercurial Mantle
 										i(171866),	-- Spaulders of the Raging Elements
 										i(171865),	-- Shoulderwraps of the Raging Elements
 										i(171864),	-- Mantle of the Raging Elements
@@ -1603,14 +1604,14 @@ _.WorldEvents =
 							e(174, {	-- Nefarian's End
 								["cr"] = 41376,
 								["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
-								--	ach(4849),	-- Keeping it in the Family	
+								--	ach(4849),	-- Keeping it in the Family
 									-- Old tier Items
 									i(171875),	-- Shadowflame Hood
 								--	i(60346),	-- Reinforced Sapphirium Helmet
 									i(171892),	-- Reinforced Sapphirium Headguard
 									i(171891),	-- Reinforced Sapphirium Faceguard
 									i(171876),	-- Mercurial Hood
-									i(171877),	-- Mercurial Cowl	
+									i(171877),	-- Mercurial Cowl
 									i(171882),	-- Lightning-Charged Headguard
 									i(171885),	-- Helmet of the Raging Elements
 									i(171884),	-- Headpiece of the Raging Elements
@@ -1638,7 +1639,7 @@ _.WorldEvents =
 									i(171635),	-- Belt of the Blackhand
 									i(171628),	-- Belt of the Nightmare
 									i(171631),	-- Prestor's Talisman of Machination
-								--	i(122195),	-- Music Roll: Legends of Azeroth		
+								--	i(122195),	-- Music Roll: Legends of Azeroth
 								}),
 							}),
 							e(198, {	-- Ragnaros

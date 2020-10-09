@@ -1,10 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
-		m(376, {	-- Valley of the Four Winds				
+		m(376, {	-- Valley of the Four Winds
 			n(-228, {	-- Flight Paths
 				fp(1052, {	-- Grassy Cline, Valley of the Four Winds
 					["coord"] = { 70.8, 24.2, 376 },

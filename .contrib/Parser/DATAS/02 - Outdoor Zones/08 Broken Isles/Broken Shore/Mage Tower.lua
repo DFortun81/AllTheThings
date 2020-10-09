@@ -12,12 +12,12 @@ _.Zones =
 				["g"] = bubbleDown({["u"] = 41}, {	-- Mage Tower Appearances
 					q(46065, {	-- An Impossible Foe
 						["classes"] = {
-							6,	-- Unholy Death Knight
-							11,	-- Feral Druid
-							8,	-- Fire Mage
-							4,	-- Outlaw Rogue
-							7,	-- Elemental Shaman
-							1,	-- Fury Warrior
+							DEATHKNIGHT,	-- Unholy
+							DRUID,			-- Feral
+							MAGE,			-- Fire
+							ROGUE,			-- Outlaw
+							SHAMAN,			-- Elemental
+							WARRIOR,		-- Fury
 						},
 						["provider"] = { "n", 117871 },	-- War Councilor Victoria
 						["crs"] = {
@@ -29,32 +29,32 @@ _.Zones =
 						},
 						["g"] = {
 							artifact(947, {	-- Apocalypse
-								["classes"] = { 6 },	-- Death Knight
+								["classes"] = { DEATHKNIGHT },
 							}),
 							artifact(435, {	-- Fangs of Ashamane
-								["classes"] = { 11 },	-- Druid
+								["classes"] = { DRUID },
 							}),
 							artifact(489, {	-- Felo'melorn
-								["classes"] = { 8 },	-- Mage
+								["classes"] = { MAGE },
 							}),
 							artifact(702, {	-- The Dreadblades
-								["classes"] = { 4 },	-- Rogue
+								["classes"] = { ROGUE },
 							}),
 							artifact(684, {	-- The Fist of Ra-den
-								["classes"] = { 7 },	-- Shaman
+								["classes"] = { SHAMAN },
 							}),
 							artifact(665, {	-- Warswords of the Valarjar
-								["classes"] = { 1 },	-- Warrior
+								["classes"] = { WARRIOR },
 							}),
 						},
 					}),
 					q(44925, {	-- Closing the Eye
 						["classes"] = {
-							6,	-- Frost Death Knight
-							12,	-- Havoc Demon Hunter
-							HUNTER,	-- Survival
-							4,	-- Subtlety Rogue
-							1,	-- Arms Warrior
+							DEATHKNIGHT,	-- Frost
+							DEMONHUNTER,	-- Havoc
+							HUNTER,			-- Survival
+							ROGUE,			-- Subtlety
+							WARRIOR,		-- Arms
 						},
 						["provider"] = { "n", 117871 },	-- War Councilor Victoria
 						["crs"] = {
@@ -63,29 +63,29 @@ _.Zones =
 						},
 						["g"] = {
 							artifact(383, {	-- Blades of the Fallen Prince
-								["classes"] = { 6 },	-- Death Knight
+								["classes"] = { DEATHKNIGHT },
 							}),
 							artifact(39, {	-- Twinblades of the Deceiver
-								["classes"] = { 12 },	-- Demon Hunter
+								["classes"] = { DEMONHUNTER },
 							}),
 							artifact(973, {	-- Talonclaw
-								["classes"] = { 3 },	-- Hunter
+								["classes"] = { HUNTER },
 							}),
 							artifact(84, {	-- Fangs of the Devourer
-								["classes"] = { 4 },	-- Rogue
+								["classes"] = { ROGUE },
 							}),
 							artifact(806, {	-- Strom'kar, the Warbreaker
-								["classes"] = { 1 },	-- Warrior
+								["classes"] = { WARRIOR },
 							}),
 						},
 					}),
 					q(46035, {	-- End of the Risen Threat
 						["classes"] = {
-							11,	-- Restoration Druid
-							2,	-- Holy Paladin
-							10,	-- Mistweaver Monk
-							5,	-- Holy Priest
-							7,	-- Restoration Shaman
+							DRUID,		-- Restoration
+							PALADIN,	-- Holy
+							MONK,		-- Mistweaver
+							PRIEST,		-- Holy
+							SHAMAN,		-- Restoration
 						},
 						["provider"] = { "n", 117871 },	-- War Councilor Victoria
 						["crs"] = {
@@ -99,28 +99,28 @@ _.Zones =
 						},
 						["g"] = {
 							artifact(875, { 	-- G'Hanir, the Mother Tree
-								["classes"] = { 11 },	-- Druid
+								["classes"] = { DRUID },
 							}),
 							artifact(584, { 	-- The Silver Hand
-								["classes"] = { 2 },	-- Paladin
+								["classes"] = { PALADIN },
 							}),
 							artifact(933, { 	-- Sheilun, Staff of the Mists
-								["classes"] = { 10 },	-- Monk
+								["classes"] = { MONK },
 							}),
 							artifact(758, { 	-- T'uure, Beacon of the Naaru
-								["classes"] = { 5 },	-- Priest
+								["classes"] = { PRIEST },
 							}),
 							artifact(787, { 	-- Sharas'dal, Scepter of Tides
-								["classes"] = { 7 },	-- Shaman
+								["classes"] = { SHAMAN },
 							}),
 						},
 					}),
 					q(45627, {	-- Feltotem's Fall
 						["classes"] = {
-							3,	-- Beast Mastery Hunter
-							10,	-- Windwalker Monk
-							5,	-- Discipline Priest
-							9,	-- Destruction Warlock
+							HUNTER,		-- Beast Mastery
+							MONK,		-- Windwalker
+							PRIEST,		-- Discipline
+							WARLOCK,	-- Destruction
 						},
 						["provider"] = { "n", 117871 },	-- War Councilor Victoria
 						["crs"] = {
@@ -129,26 +129,26 @@ _.Zones =
 						},
 						["g"] = {
 							artifact(466, {	-- Titanstrike
-								["classes"] = { 3 },	-- Hunter
+								["classes"] = { HUNTER },
 							}),
 							artifact(941, {	-- Fists of the Heavens
-								["classes"] = { 10 },	-- Monk
+								["classes"] = { MONK },
 							}),
 							artifact(956, {	-- Light's Wrath
-								["classes"] = { 5 },	-- Priest
+								["classes"] = { PRIEST },
 							}),
 							artifact(915, {	-- Scepter of Sargeras
-								["classes"] = { 9 },	-- Warlock
+								["classes"] = { WARLOCK },
 							}),
 						},
 					}),
 					q(45526, {	-- The God-Queen's Fury
 						["classes"] = {
-							8,	-- Arcane Mage
-							2,	-- Retribution Paladin
-							4,	-- Assassination Rogue
-							7,	-- Enhancemeent Shaman
-							9,	-- Demonology Warlock
+							MAGE,		-- Arcane
+							PALADIN,	-- Retribution
+							ROGUE,		-- Assassination
+							SHAMAN,		-- Enhancemeent
+							WARLOCK,	-- Demonology
 						},
 						["provider"] = { "n", 117871 },	-- War Councilor Victoria
 						["crs"] = {
@@ -158,30 +158,30 @@ _.Zones =
 						},
 						["g"] = {
 							artifact(144, {	-- Aluneth
-								["classes"] = { 8 },	-- Mage
+								["classes"] = { MAGE },
 							}),
 							artifact(23, {	-- Ashbringer
-								["classes"] = { 2 },	-- Paladin
+								["classes"] = { PALADIN },
 							}),
 							artifact(901, {	-- The Kingslayers
-								["classes"] = { 4 },	-- Rogue
+								["classes"] = { ROGUE },
 							}),
 							artifact(301, {	-- Doomhammer
-								["classes"] = { 7 },	-- Shaman
+								["classes"] = { SHAMAN },
 							}),
 							artifact(828, {	-- Skull of the Man'ari
-								["classes"] = { 9 },	-- Warlock
+								["classes"] = { WARLOCK },
 							}),
 						},
 					}),
 					q(45416, {	-- The Highlord's Return
 						["classes"] = {
-							6,	-- Blood Death Knight
-							12,	-- Vengeance Demon Hunter
-							11,	-- Guardian Druid
-							10,	-- Brewmaster Monk
-							2,	-- Protection Paladin
-							1,	-- Protection Warrior
+							DEATHKNIGHT,	-- Blood
+							DEMONHUNTER,	-- Vengeance
+							DRUID,			-- Guardian
+							MONK,			-- Brewmaster
+							PALADIN,		-- Protection
+							WARRIOR,		-- Protection
 						},
 						["provider"] = { "n", 117871 },	-- War Councilor Victoria
 						["crs"] = {
@@ -193,32 +193,32 @@ _.Zones =
 						},
 						["g"] = {
 							artifact(364, {	-- Maw of the Damned
-								["classes"] = { 6 },	-- Death Knight
+								["classes"] = { DEATHKNIGHT },
 							}),
 							artifact(857, {	-- Aldrachi Warblades
-								["classes"] = { 12 },	-- Demon Hunter
+								["classes"] = { DEMONHUNTER },
 							}),
 							artifact(990, {	-- Claws of Ursoc
-								["classes"] = { 11 },	-- Druid
+								["classes"] = { DRUID },
 							}),
 							artifact(352, {	-- Fu Zan, the Wanderer's Companion
-								["classes"] = { 10 },	-- Monk
+								["classes"] = { MONK },
 							}),
 							artifact(718, {	-- Truthguard
-								["classes"] = { 2 },	-- Paladin
+								["classes"] = { PALADIN },
 							}),
 							artifact(861, {	-- Scale of the Earth-Warder
-								["classes"] = { 1 },	-- Warrior
+								["classes"] = { WARRIOR },
 							}),
 						},
 					}),
 					q(46127, {	-- Thwarting the Twins
 						["classes"] = {
-							11,	-- Balance Druid
-							3,	-- Marksmanship Hunter
-							8,	-- Frost Mage
-							5,	-- Shadow Priest
-							9,	-- Affliction Warlock
+							DRUID,		-- Balance
+							HUNTER,		-- Marksmanship
+							MAGE,		-- Frost
+							PRIEST,		-- Shadow
+							WARLOCK,	-- Affliction
 						},
 						["provider"] = { "n", 117871 },	-- War Councilor Victoria
 						["crs"] = {
@@ -229,19 +229,19 @@ _.Zones =
 						},
 						["g"] = {
 							artifact(929, {	-- Scythe of Elune
-								["classes"] = { 11 },	-- Druid
+								["classes"] = { DRUID },
 							}),
 							artifact(965, {	-- Thas'dorah, Legacy of the Windrunners
-								["classes"] = { 3 },	-- Hunter
+								["classes"] = { HUNTER },
 							}),
 							artifact(885, {	-- Ebonchill
-								["classes"] = { 8 },	-- Mage
+								["classes"] = { MAGE },
 							}),
 							artifact(261, {	-- Xal'atath, Blade of the Black Empire
-								["classes"] = { 5 },	-- Priest
+								["classes"] = { PRIEST },
 							}),
 							artifact(972, {	-- Ulthalesh, the Deadwind Harvester
-								["classes"] = { 9 },	-- Warlock
+								["classes"] = { WARLOCK },
 							}),
 						},
 					}),

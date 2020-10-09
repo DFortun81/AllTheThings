@@ -588,21 +588,21 @@ _.Zones =
 				q(42736, {	-- Rune Ruination
 					["sourceQuests"] = { 42735 },	-- Malace in Vrykul Land
 					["provider"] = { "n", 108576 },	-- Malace Shade
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 64.9, 59.0, 634 },
 					["lvl"] = 110,
 				}),
 				q(42738, {	-- Rune Ruination: Runelord Ragnar
 					["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
 					["provider"] = { "o", 251220 },	-- Ragnar's Runestone
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 64.9, 58.9, 634 },
 					["lvl"] = 110,
 				}),
 				q(42739, {	-- Rune Ruination: Runesage Floki
 					["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
 					["provider"] = { "o", 251221 },	-- Floki's Runestone
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 64.9, 58.9, 634 },
 					["lvl"] = 110,
 				}),
@@ -610,7 +610,7 @@ _.Zones =
 					["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
 					["description"] = "If the game doesn't properly display the mob's location, Rollo can be found in the cliffside room at 71.4, 39.0.",
 					["provider"] = { "o", 251218 },	-- Rollo's Runestone
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 64.9, 58.9, 634 },
 					["lvl"] = 110,
 				}),
@@ -742,7 +742,7 @@ _.Zones =
 						42737,	-- Rune Ruination: Runeskelt Rollo
 					},
 					["provider"] = { "n", 108576 },	-- Malace Shade
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 64.9, 58.9, 634 },
 					["lvl"] = 110,
 				}),
@@ -1037,12 +1037,12 @@ _.Zones =
 				}),
 				q(42752, {	-- Vault of the Wardens: Vault Break-In (not sure why there are 2 versions, but they complete each other)
 					["sourceQuests"] = { 42749 },	-- Strange Bedfellows
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["lvl"] = 110,
 				}),
 				q(42753, {	-- Vault of the Wardens: Vault Break-In (not sure why there are 2 versions, but they complete each other)
 					["sourceQuests"] = { 42749 },	-- Strange Bedfellows
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["lvl"] = 110,
 				}),
 				q(38815, {	-- Waking the Shieldmaiden

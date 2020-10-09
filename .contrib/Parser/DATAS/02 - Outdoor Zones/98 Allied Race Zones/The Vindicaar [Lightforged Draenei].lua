@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -8,14 +8,14 @@ _.Zones =
 		m(830, {	-- Krokuun
 			m(940, {	-- Upper Deck [The Vindicaar]
 				["maps"] = { 941 },	-- Lower Deck [The Vindicaar]
-				["races"] = { 30 },	-- Lightforge Draenei
+				["races"] = { LIGHTFORGED },
 				["icon"] = "Interface\\Icons\\INV_LightforgedMechSuit",
 				["description"] = "For untold millennia, the Army of the Light waged war against the Burning Legion throughout the Twisting Nether. The draenei most committed to their long crusade would undergo a ritual to become Lightforged, infusing their bodies with the very essence of the Holy Light. After finally achieving victory on Argus, the Lightforged draenei have undertaken a new mission: protecting Azeroth from rising threats and helping the Alliance push back against Horde aggression.",
 				["g"] = {
 					q(49772, {	-- For the Alliance
 						["provider"] = { "n", 130993 },	-- Captain Fareeya
 						["coord"] = { 42.96, 24.16, 940 },
-						["races"] = { 30 },	-- Lightforge Draenei
+						["races"] = { LIGHTFORGED },
 						["lvl"] = 20,
 						["g"] = {
 							i(157756),	-- Lightforged Tabard
@@ -25,7 +25,7 @@ _.Zones =
 					q(49782, {	-- Heritage of the Lightforged
 						["provider"] = { "n", 130993 },	-- Captain Fareeya
 						["coord"] = { 42.96, 24.16, 940 },
-						["races"] = { 30 },	-- Lightforge Draenei
+						["races"] = { LIGHTFORGED },
 						["lvl"] = 110,
 						["g"] = {
 							ach(12414, {	-- Heritage of the Lightforged

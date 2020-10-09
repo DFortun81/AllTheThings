@@ -1,13 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(23, {	-- Eastern Plaguelands
 			m(124, {	-- The Scarlet Enclave
 				n(QUESTS, {
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
 					["g"] = {
 						q(12738, {	-- A Cry For Vengeance!
 							["provider"] = { "n", 28913 },	-- Thassarian

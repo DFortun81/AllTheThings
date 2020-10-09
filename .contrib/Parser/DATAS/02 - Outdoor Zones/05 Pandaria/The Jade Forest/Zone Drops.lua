@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -124,7 +125,7 @@ _.Zones =
 				}),
 				i(120138, {	-- Tome of Polymorph: Monkey
 					["spellID"] = 161354,	-- Polymorph(Monkey)
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["crs"] = {
 						55470,	-- Hozen Groundpounder
 						57119,	-- Hozen Ravager
@@ -139,7 +140,7 @@ _.Zones =
 				}),
 				i(120140, {	-- Tome of Polymorph: Porcupine
 					["spellID"] = 126819,	-- Polymorph(Porcupine)
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["crs"] = {
 						54896,	-- Glade Porcupine
 						59772,	-- Smoky Porcupine

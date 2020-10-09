@@ -191,7 +191,7 @@ _.Instances = { tier(7, {	-- Legion
 			d(23, {	-- Mythic
 				["lvl"] = 110,
 				["g"] = {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(10707, {	-- A Specter, Illuminated
 							["description"] = "After killing |cFFFFD700Cordana Felsong|r, take Elune's Light to the hallway connecting |cFFFFD700Glazer|r and |cFFFFD700Ash'golm|r and follow the spirit until it reaches the end of the hall. Kill the spectre that spawns, then repeat the process 2 more times.",
 						}),

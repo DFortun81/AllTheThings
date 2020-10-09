@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(56, { -- Wetlands
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(12429, {	-- Wetlands Quests
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -25,7 +26,7 @@ _.Zones =
 							},
 						}),
 						crit(3, {	-- Engineers and Archaeologists
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								25857,	-- Hunting Horrorjaw
 								26189,	-- The Angerfang Menace
 								25868,	-- Yorla Darksnare

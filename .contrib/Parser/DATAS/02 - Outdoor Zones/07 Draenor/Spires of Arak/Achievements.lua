@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
 		m(542, {	-- Spires of Arak
-			n(-4, {		-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -145,6 +146,6 @@ _.Zones =
 				}),
 				ach(9432),		-- Would You Like a Pamphlet? (Shadowmoon Enclave)
 			}),
-		}),	
+		}),
 	}),
 };

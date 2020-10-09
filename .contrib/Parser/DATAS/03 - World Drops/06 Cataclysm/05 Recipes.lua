@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+
+_.WorldDrops =
 {
 	tier(4, {	-- Cataclysm
 		f(200, {	-- Recipes
@@ -50,5 +51,5 @@ _.WorldDrops =
 				i(67541),	-- Pattern: High Society Top Hat (drops from rare elites)
 			}),
 		}),
-	}),	
+	}),
 };

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -235,11 +236,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3052 },	-- Skorn Whitecloud
 					["coord"] = { 49.6, 17.2, 7 },
-					["races"] = {
-						6,	-- Tauren
-						8,	-- Troll
-						10,	-- Blood Elf
-					},
+					["races"] = { TAUREN, TROLL, BLOODELF },
 				}),
 				q(749,   {	-- The Ravaged Caravan
 					["provider"] = { "n", 2988 },	-- Morin Cloudstalker

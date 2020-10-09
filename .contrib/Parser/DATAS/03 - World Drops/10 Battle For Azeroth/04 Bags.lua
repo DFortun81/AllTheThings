@@ -1,7 +1,9 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
---[[_.WorldDrops = 
+
+-- TODO: what's this?
+--[[_.WorldDrops =
 {
 	tier(8, {	-- Battle for Azeroth
 		f(113, {	-- Bags

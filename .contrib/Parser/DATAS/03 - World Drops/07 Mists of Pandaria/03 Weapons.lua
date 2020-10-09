@@ -1,10 +1,11 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+
+_.WorldDrops =
 {
 	tier(5, {	-- Mists of Pandaria
-		n(-319, {	-- Weapons		
+		n(-319, {	-- Weapons
 			n(-334, {	-- 1H Axes
 				i(82020),	-- Polished Axe
 				i(82045),	-- Bronzed Axe
@@ -26,7 +27,7 @@ _.WorldDrops =
 				i(82267),	-- Engraved Broadaxe
 				i(87421),	-- Fellworth's Repetitive Greataxe
 				i(94100),	-- Weighty Stone Axe
-			}),	
+			}),
 			n(-346, {	-- Bows
 				i(82018),	-- Polished Bow
 				i(82046),	-- Bronzed Bow
@@ -44,8 +45,8 @@ _.WorldDrops =
 				i(82158),	-- Rigid Crossbow
 				i(82213),	-- Inlaid Crossbow
 				i(82268),	-- Engraved Crossbow
-			}),			
-			n(-333, {	-- Daggers	
+			}),
+			n(-333, {	-- Daggers
 				i(82003),	-- Intricate Spellblade
 				i(82015),	-- Polished Dagger
 				i(82049),	-- Bronzed Dagger
@@ -65,7 +66,7 @@ _.WorldDrops =
 				i(94102),	-- Chiseled Fangs
 				i(94215),	-- Saurjaw Dagger
 			}),
-			n(-348, {	-- Fist Weapons	
+			n(-348, {	-- Fist Weapons
 				i(82013),	-- Polished Knuckles
 				i(82054),	-- Bronzed Knuckles
 				i(82109),	-- Barbarian Knuckles
@@ -85,7 +86,7 @@ _.WorldDrops =
 				i(87476),	-- Wall Guardian's Longrifle
 				i(87477),	-- Penate's Penance-Procuring Pistol
 				i(94094),	-- Hexbelcher Rifle
-			}),			
+			}),
 			n(-331, {	-- Held in Off-hand
 				i(82010),	-- Intricate Crystal
 				i(82062),	-- Gemmed Crystal
@@ -133,7 +134,7 @@ _.WorldDrops =
 				i(82276),	-- Engraved Spear
 				i(87420),	-- Ritter's Rat Render
 				i(94103),	-- Ritual Headcleaver Halberd
-			}),			
+			}),
 			n(-332, {	-- Shield
 				i(82004),	-- Wall Shield
 				i(82074),	-- Brick Shield

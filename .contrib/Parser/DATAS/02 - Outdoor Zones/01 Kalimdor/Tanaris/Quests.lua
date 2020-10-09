@@ -1262,7 +1262,7 @@ _.Zones =
 						i(29305),	-- Band of the Eternal Sage
 						i(29309),	-- Band of the Eternal Restorer
 					},
-					["classes"] = { 1, 2, 6, 10, 11, 12 },
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT, MONK, DRUID, DEMONHUNTER },
 				}),
 				q(11104, {	-- Restorer No More
 					["provider"] = { "n", 19935 },	-- Soridormi

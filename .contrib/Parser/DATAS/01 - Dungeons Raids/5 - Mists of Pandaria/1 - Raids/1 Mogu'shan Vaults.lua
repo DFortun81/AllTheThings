@@ -12,7 +12,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["maps"] = { 472, 473 },	-- 2nd LFR Wing
 		["coord"] = { 59.6, 39.1, 379 },	-- Kun-Lai Summit (Mogu'shan Terrace)
 		["groups"] = {
-			d(7, {	-- LFR	
+			d(7, {	-- LFR
 				["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from the Elegon chest is NOT tradeable to others in group.|r",
 				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
 				["ignoreBonus"] = true,
@@ -367,7 +367,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(85989),	-- Hood of Cursed Dreams
 							i(85984),	-- Nullification Greathelm
 							i(85986),	-- Amulet of Seven Curses
-							{	-- Arrow Breaking Windcloak	
+							{	-- Arrow Breaking Windcloak
 								["itemID"] = 86082,	-- Arrow Breaking Windcloak
 								["description"] = "|CFFFF0000This cloak only drops in 10 Man Normal|r",
 							},

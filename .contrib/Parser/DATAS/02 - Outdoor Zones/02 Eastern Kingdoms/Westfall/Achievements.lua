@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(52, {	-- Westfall
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4903, {	-- Westfall Quests
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

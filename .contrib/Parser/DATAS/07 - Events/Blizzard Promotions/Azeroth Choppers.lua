@@ -5,12 +5,10 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["g"] = {
-			n(-563, {	-- Azeroth Choppers
-				un(REMOVED_FROM_GAME, ach(9496, {		-- Warlord's Deathwheel
-					un(REMOVED_FROM_GAME, h(i(116788))),	-- Warlord's Deathwheel
-				})),
-			}),
-		},
+		n(-563, {	-- Azeroth Choppers
+			un(REMOVED_FROM_GAME, ach(9496, {		-- Warlord's Deathwheel
+				un(REMOVED_FROM_GAME, h(i(116788))),	-- Warlord's Deathwheel
+			})),
+		}),
 	}),
 };

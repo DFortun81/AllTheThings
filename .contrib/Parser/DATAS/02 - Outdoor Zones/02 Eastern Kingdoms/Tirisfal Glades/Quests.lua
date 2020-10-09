@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -287,8 +288,8 @@ _.Zones =
 				}),
 				q(5650,  {	-- Garments of Darkness
 					["u"] = REMOVED_FROM_GAME,
-					["races"] =  { 5 },	-- Undead
-					["classes"] = { 5 },	-- Priest
+					["races"] = { UNDEAD },
+					["classes"] = { PRIEST },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(16607)),	-- Garments of Darkness
 					},
@@ -342,7 +343,7 @@ _.Zones =
 				q(1822,  {	-- Heirloom Weapon
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1500 },	-- Coleman Farthing
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7115)),	-- Heirloom Axe
 						un(REMOVED_FROM_GAME, i(7117)),	-- Heirloom Hammer
@@ -380,7 +381,7 @@ _.Zones =
 				q(32672, {	-- Learn to Ride
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is available to Undead characters upon reaching level 20.",
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 					["lvl"] = 20,
 				}),
 				q(14089, {	-- Learn to Ride in Tirisfal Glades
@@ -453,8 +454,8 @@ _.Zones =
 				}),
 				q(10590,  {	-- Prove  Your Hatred
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17099 },	-- Mehlar Dawnblade
 				}),
 				q(409,   {	-- Proving Allegiance
@@ -494,7 +495,7 @@ _.Zones =
 					["provider"] = { "n", 43124 },	-- Anette Williams
 					["coord"] = { 58.8, 51.8, 18 },
 					["sourceQuest"] = 6321,	-- Supplying Brill
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 				}),
 				q(5096, {	-- Scarlet Diversions
 					["u"] = REMOVED_FROM_GAME,
@@ -542,7 +543,7 @@ _.Zones =
 				q(6321,  {	-- Supplying Brill
 					["provider"] = { "n", 1745 },	-- Deathguard Morris
 					["coord"] = { 60.2, 52.4, 18 },
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 				}),
 				q(25012, {	-- Take to the Skies
 					["provider"] = { "n", 37915 },	-- Timothy Cunningham
@@ -736,8 +737,8 @@ _.Zones =
 				}),
 				q(10592,  {	-- Wisdom of the Banshee Queen
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	 -- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17099 },	-- Mehlar Dawnblade
 					["sourceQuest"] = 10590,	-- Prove Your Hatred
 				}),

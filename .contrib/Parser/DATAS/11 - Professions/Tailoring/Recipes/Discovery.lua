@@ -162,7 +162,7 @@ profession(TAILORING, {
 								},
 							},
 						},
-					},	
+					},
 				}),
 			},
 		},

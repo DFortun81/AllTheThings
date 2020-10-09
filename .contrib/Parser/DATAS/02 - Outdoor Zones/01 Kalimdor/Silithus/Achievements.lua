@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(81, {	-- Silithus
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4934, {	-- Silithus Quests
 					crit(1, {	-- Twilight's Run
 						["sourceQuest"] = 8321,	-- Vyral the Vile

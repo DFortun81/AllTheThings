@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, {	-- Northrend
@@ -287,14 +288,14 @@ _.Zones =
 						},
 						["g"] = {
 							n(-4178, {	-- Old Season 11 (Header Missing, need new Header)
-								cl(6, {	-- Death Knight
+								cl(DEATHKNIGHT, {
 									un(REMOVED_FROM_GAME, i(72332)), -- Ruthless Gladiator's Dreadplate Chestpiece
 									un(REMOVED_FROM_GAME, i(72333)), -- Ruthless Gladiator's Dreadplate Gauntlets
 									un(REMOVED_FROM_GAME, i(72334)), -- Ruthless Gladiator's Dreadplate Helm
 									un(REMOVED_FROM_GAME, i(72335)), -- Ruthless Gladiator's Dreadplate Legguards
 									un(REMOVED_FROM_GAME, i(72336)), -- Ruthless Gladiator's Dreadplate Shoulders
 								}),
-								cl(11, {	-- Druid
+								cl(DRUID, {
 									un(REMOVED_FROM_GAME, i(72337)), -- Ruthless Gladiator's Dragonhide Gloves
 									un(REMOVED_FROM_GAME, i(72338)), -- Ruthless Gladiator's Dragonhide Helm
 									un(REMOVED_FROM_GAME, i(72339)), -- Ruthless Gladiator's Dragonhide Legguards
@@ -311,21 +312,21 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(72356)), -- Ruthless Gladiator's Wyrmhide Robes
 									un(REMOVED_FROM_GAME, i(72357)), -- Ruthless Gladiator's Wyrmhide Spaulders
 								}),
-								cl(3, {	-- Hunter
+								cl(HUNTER, {
 									un(REMOVED_FROM_GAME, i(72368)), -- Ruthless Gladiator's Chain Armor
 									un(REMOVED_FROM_GAME, i(72369)), -- Ruthless Gladiator's Chain Gauntlets
 									un(REMOVED_FROM_GAME, i(72370)), -- Ruthless Gladiator's Chain Helm
 									un(REMOVED_FROM_GAME, i(72371)), -- Ruthless Gladiator's Chain Leggings
 									un(REMOVED_FROM_GAME, i(72372)), -- Ruthless Gladiator's Chain Spaulders
 								}),
-								cl(8, {	-- Mage
+								cl(MAGE, {
 									un(REMOVED_FROM_GAME, i(72373)), -- Ruthless Gladiator's Silk Handguards
 									un(REMOVED_FROM_GAME, i(72374)), -- Ruthless Gladiator's Silk Cowl
 									un(REMOVED_FROM_GAME, i(72375)), -- Ruthless Gladiator's Silk Trousers
 									un(REMOVED_FROM_GAME, i(72376)), -- Ruthless Gladiator's Silk Robe
 									un(REMOVED_FROM_GAME, i(72377)), -- Ruthless Gladiator's Silk Amice
 								}),
-								cl(2, {	-- Paladin
+								cl(PALADIN, {
 									un(REMOVED_FROM_GAME, i(72378)), -- Ruthless Gladiator's Scaled Chestpiece
 									un(REMOVED_FROM_GAME, i(72379)), -- Ruthless Gladiator's Scaled Gauntlets
 									un(REMOVED_FROM_GAME, i(72380)), -- Ruthless Gladiator's Scaled Helm
@@ -337,7 +338,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(72392)), -- Ruthless Gladiator's Ornamented Legplates
 									un(REMOVED_FROM_GAME, i(72393)), -- Ruthless Gladiator's Ornamented Spaulders
 								}),
-								cl(5, {	-- Priest
+								cl(PRIEST, {
 									un(REMOVED_FROM_GAME, i(72400)), -- Ruthless Gladiator's Mooncloth Gloves
 									un(REMOVED_FROM_GAME, i(72401)), -- Ruthless Gladiator's Mooncloth Helm
 									un(REMOVED_FROM_GAME, i(72402)), -- Ruthless Gladiator's Mooncloth Leggings
@@ -349,14 +350,14 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(72408)), -- Ruthless Gladiator's Satin Robe
 									un(REMOVED_FROM_GAME, i(72409)), -- Ruthless Gladiator's Satin Mantle
 								}),
-								cl(4, {	-- Rogue
+								cl(ROGUE, {
 									un(REMOVED_FROM_GAME, i(72422)), -- Ruthless Gladiator's Leather Tunic
 									un(REMOVED_FROM_GAME, i(72423)), -- Ruthless Gladiator's Leather Gloves
 									un(REMOVED_FROM_GAME, i(72424)), -- Ruthless Gladiator's Leather Helm
 									un(REMOVED_FROM_GAME, i(72425)), -- Ruthless Gladiator's Leather Legguards
 									un(REMOVED_FROM_GAME, i(72426)), -- Ruthless Gladiator's Leather Spaulders
 								}),
-								cl(7, {	-- Shaman
+								cl(SHAMAN, {
 									un(REMOVED_FROM_GAME, i(72432)),	-- Ruthless Gladiator's Ringmail Armor
 									un(REMOVED_FROM_GAME, i(72433)),	-- Ruthless Gladiator's Ringmail gauntlets
 									un(REMOVED_FROM_GAME, i(72434)),	-- Ruthless Gladiator's Ringmail Helm
@@ -373,14 +374,14 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Legs
 									un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Spaulders
 								}),
-								cl(9, {	-- Warlock
+								cl(WARLOCK, {
 									un(REMOVED_FROM_GAME, i(72459)), -- Ruthless Gladiator's Felweave Handguards
 									un(REMOVED_FROM_GAME, i(72460)), -- Ruthless Gladiator's Felweave Cowl
 									un(REMOVED_FROM_GAME, i(72461)), -- Ruthless Gladiator's Felweave Trousers
 									un(REMOVED_FROM_GAME, i(72462)), -- Ruthless Gladiator's Felweave Raiment
 									un(REMOVED_FROM_GAME, i(72463)), -- Ruthless Gladiator's Felweave Amice
 								}),
-								cl(1, {	-- Warrior
+								cl(WARRIOR, {
 									un(REMOVED_FROM_GAME, i(72464)), -- Ruthless Gladiator's Plate Chestpiece
 									un(REMOVED_FROM_GAME, i(72465)), -- Ruthless Gladiator's Plate Gauntlets
 									un(REMOVED_FROM_GAME, i(72466)), -- Ruthless Gladiator's Plate Helm

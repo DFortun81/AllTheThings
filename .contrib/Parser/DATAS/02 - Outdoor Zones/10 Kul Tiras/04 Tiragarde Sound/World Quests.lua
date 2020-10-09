@@ -1,13 +1,14 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(895, {	-- Tiragarde Sound
 			n(-34, {	-- World Quests
 				n(QUESTS, {
---[[	raw quest list to check against
+					--[[	raw quest list to check against
 					-- Unknown
 					q(48104, {	-- A Greater Challenge
 						["races"] = ALLIANCE_ONLY,
@@ -68,7 +69,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-]]--
+					]]--
 					q(53812, {	-- A Carefully Laid Trap (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,

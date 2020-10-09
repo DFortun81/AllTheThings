@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
@@ -101,10 +102,10 @@ _.Zones =
 						}),
 					},
 				}),
-				n(140925, {	-- Doc Marrtens	
-				--	doc marrtens and jakala both complete one another's quests.  it's unclear which quest specifically belongs to which rare.
-				--	on wowhead both quests are attached to the criteria as "doc marrtens or jakala the cruel," so it probably doesn't matter.
-				--	unsure if phasing issues affect horde from seeing this NPC.  alliance players have to trigger a cutscene before the rare is available (see jakala's description).
+				n(140925, {	-- Doc Marrtens
+					--	doc marrtens and jakala both complete one another's quests.  it's unclear which quest specifically belongs to which rare.
+					--	on wowhead both quests are attached to the criteria as "doc marrtens or jakala the cruel," so it probably doesn't matter.
+					--	unsure if phasing issues affect horde from seeing this NPC.  alliance players have to trigger a cutscene before the rare is available (see jakala's description).
 					["questID"] = 52323,	-- also completes 52324
 					["coord"] = { 53.3, 64.4, 942 },
 					["races"] = HORDE_ONLY,
@@ -220,10 +221,10 @@ _.Zones =
 						i(172405),	-- Tome of Hex: Living Honey
 					},
 				}),
-				n(141043, {	-- Jakala the Cruel	
+				n(141043, {	-- Jakala the Cruel
 					["description"] = "Due to phasing issues, in order to see this rare you need to enter Brennadam from the southern bridge at 57.6, 66.5.  This will trigger a cutscene and place you in the phase with the rare.",
-				--	doc marrtens and jakala both complete one another's quests.  it's unclear which quest specifically belongs to which rare.
-				--	on wowhead both quests are attached to the criteria as "doc marrtens or jakala the cruel," so it probably doesn't matter.
+					--	doc marrtens and jakala both complete one another's quests.  it's unclear which quest specifically belongs to which rare.
+					--	on wowhead both quests are attached to the criteria as "doc marrtens or jakala the cruel," so it probably doesn't matter.
 					["questID"] = 52324,	-- also completes 52323
 					["coord"] = { 53.3, 64.4, 942 },
 					["races"] = ALLIANCE_ONLY,
@@ -305,7 +306,7 @@ _.Zones =
 					["repeatable"] = true,
 					["coord"] = { 69.6, 51.0, 942 },
 				}),
-				n(139328, {	-- Sabertron	
+				n(139328, {	-- Sabertron
 					["questID"] = 51956,
 					["coord"] = { 34.6, 32.4, 942 },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {

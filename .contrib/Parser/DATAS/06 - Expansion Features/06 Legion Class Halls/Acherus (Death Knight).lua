@@ -1,12 +1,12 @@
 -------------------------------------------------------------------
---      E X P A N S I O N   F E A T U R E S    M O D U L E      	--
+--      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
-		cl(6, { 	-- Acherus: The Ebon Hold (Death Knight)
-			["classes"] = { 6 },	-- Death Knight
+		cl(DEATHKNIGHT, {
+			["classes"] = { DEATHKNIGHT },
 			["maps"] = {
 				647,	-- Acherus: The Ebon Hold (Death Knight) (Upper Level)
 				648,	-- Acherus: The Ebon Hold (Death Knight) (Lower Level)
@@ -194,7 +194,7 @@ _.ExpansionFeatures =
 					}),
 					n(111093, {	-- Stitchwork
 						["questID"] = 44188,	-- Hidden Tracking
-						["classes"] = { 6 },	-- Death Knight Only!
+						["classes"] = { DEATHKNIGHT },
 						["maps"] = { 186, 187, 188, 189, 190, 191, 192, 193 },	-- Icecrown Citadel
 						["lvl"] = 110,
 						["collectible"] = false,

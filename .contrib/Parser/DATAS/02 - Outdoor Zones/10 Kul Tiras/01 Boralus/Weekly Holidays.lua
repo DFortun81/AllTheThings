@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -176,7 +176,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(53039, {	-- The Arena Calls 
+				q(53039, {	-- The Arena Calls
 					["provider"] = { "n", 144383 },	-- Chronicler Toopa
 					["coord"] = { 74.11, 14.19, 1161 },
 					["races"] = ALLIANCE_ONLY,

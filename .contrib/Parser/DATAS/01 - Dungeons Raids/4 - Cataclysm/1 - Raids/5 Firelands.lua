@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(78, { 	-- Firelands
 		["order"] = "05",
@@ -11,7 +12,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["g"] = {
 			ach(5802),	-- Firelands
 			n(-10066, {	-- Legendary Questline
-				["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
+				["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
 				["title"] = "Dragonwrath, Tarecgosa's Rest",
 				["icon"] = "Interface\\Icons\\Stave_2H_Tarecgosa_E_01StageFinal",
 				["isRaid"] = true,
@@ -339,7 +340,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71032),	-- Widow's Kiss
 							i(68981),	-- Spidersilk Spindle
 						},
-					}),	
+					}),
 					e(193, {	-- Lord Rhyolith
 						["creatureID"] = 52558,
 						["g"] = {
@@ -358,7 +359,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71007),	-- Grips of the Raging Giant
 							i(70912),	-- Cracked Obsidian Stompers
 						},
-					}),	
+					}),
 					e(194, {	-- Alysrazor
 						["creatureID"] = 52530,
 						["g"] = {
@@ -384,7 +385,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(70738),	-- Alysrazor's Band
 							i(68983),	-- Eye of Blazing Power
 						},
-					}),	
+					}),
 					e(195, {	-- Shannox
 						["creatureID"] = 53691,
 						["g"] = {
@@ -411,7 +412,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71027),	-- Treads of Implicit Obedience
 							i(71024),	-- Crystal Prison Band
 						},
-					}),	
+					}),
 					e(196, {	-- Baleroc, the Gatekeeper
 						["creatureID"] = 53494,
 						["g"] = {
@@ -431,7 +432,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71315),	-- Decimation Treads
 							i(68982),	-- Necromantic Focus
 						},
-					}),	
+					}),
 					e(197, {	-- Majordomo Staghelm
 						["creatureID"] = 52571,
 						["g"] = {
@@ -447,7 +448,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(71095),	-- Immolation Mantle
 								i(71067),	-- Immolation Pauldrons
 								i(70946),	-- Immolation Shoulderguards
-							}),	
+							}),
 							i(71688, {	-- Mantle of the Fiery Protector
 								i(71053),	-- Flamewaker's Spaulders
 								i(71305),	-- Erupting Volcanic Spaulders
@@ -455,7 +456,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(71300),	-- Erupting Volcanic Mantle
 								i(71072),	-- Pauldrons of the Molten Giant
 								i(70941),	-- Shoulderguards of the Molten Giant
-							}),	
+							}),
 							i(71674, {	-- Mantle of the Fiery Vanquisher
 								i(71290),	-- Firehawk Mantle
 								i(71101),	-- Obsidian Arborweave Spaulders
@@ -464,7 +465,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(71049),	-- Dark Phoenix Spaulders
 								i(70951),	-- Elementium Deathplate Shoulderguards
 								i(71062),	-- Elementium Deathplate Pauldrons
-							}),	
+							}),
 							i(69897),	-- Fandral's Flamescythe
 							i(71347),	-- Stinger of the Flaming Scorpion
 							i(71348),	-- Flowform Choker
@@ -478,7 +479,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(68926),	-- Jaws of Defeat
 							i(68927),	-- The Hungerer
 						},
-					}),	
+					}),
 					e(198, {	-- Ragnaros
 						["creatureID"] = 52409,
 						["g"] = {
@@ -525,7 +526,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(68925),	-- Variable Pulse Lightning Capacitor
 							i(68995),	-- Vessel of Acceleration
 						},
-					}),	
+					}),
 				},
 			}),
 			d(15,  {	-- Heroic
@@ -551,7 +552,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 											i(69113),	-- Apparatus of Khaz'goroth
 										}),
 										i(71359, {	-- Chelley's Sterilized Scalpel
-											i(71560),	-- Chelley's Sterilized Scalpel				
+											i(71560),	-- Chelley's Sterilized Scalpel
 										}),
 										i(70929, {  -- Firebound Gorget
 											i(71563),	-- Firebound Gorget
@@ -563,7 +564,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 											i(71558),	-- Lava Bolt Crossbow
 										}),
 										i(71362, {	-- Obsidium Cleaver
-											i(71562),	-- Obsidium Cleaver				
+											i(71562),	-- Obsidium Cleaver
 										}),
 										i(71361, {	-- Ranseur of Hatred
 											i(71557),	-- Ranseur of Hatred
@@ -633,7 +634,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71401),	-- Widow's Kiss
 							i(69138),	-- Spidersilk Spindle
 						},
-					}),	
+					}),
 					e(193, {	-- Lord Rhyolith
 						["creatureID"] = 52558,
 						["g"] = {
@@ -653,7 +654,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71426),	-- Grips of the Raging Giant
 							i(71420),	-- Cracked Obsidian Stompers
 						},
-					}),	
+					}),
 					e(194, {	-- Alysrazor
 						["creatureID"] = 52530,
 						["g"] = {
@@ -705,7 +706,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71433),	-- Alysrazor's Band
 							i(69149),	-- Eye of Blazing Power
 						},
-					}),	
+					}),
 					e(195, {	-- Shannox
 						["creatureID"] = 53691,
 						["g"] = {
@@ -758,7 +759,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71451),	-- Treads of Implicit Obedience
 							i(71449),	-- Crystal Prison Band
 						},
-					}),	
+					}),
 					e(196, {	-- Baleroc, the Gatekeeper
 						["creatureID"] = 53494,
 						["g"] = {
@@ -804,7 +805,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71457),	-- Decimation Treads
 							i(69139),	-- Necromantic Focus
 						},
-					}),	
+					}),
 					e(197, {	-- Majordomo Staghelm
 						["creatureID"] = 52571,
 						["g"] = {
@@ -852,7 +853,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(69111),	-- Jaws of Defeat
 							i(69112),	-- The Hungerer
 						},
-					}),	
+					}),
 					e(198, {	-- Ragnaros
 						["creatureID"] = 52409,
 						["g"] = {
@@ -902,7 +903,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(69110),	-- Variable Pulse Lightning Capacitor
 							i(69167),	-- Vessel of Acceleration
 						},
-					}),	
+					}),
 				},
 			}),
 			d(24, {	-- Timewalking
@@ -951,7 +952,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(171699),	-- Widow's Kiss
 							i(171643),	-- Spidersilk Spindle
 						},
-					}),	
+					}),
 					e(193, {	-- Lord Rhyolith
 						["creatureID"] = 52558,
 						["g"] = {
@@ -969,7 +970,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(171678),	-- Grips of the Raging Giant
 							i(171656),	-- Cracked Obsidian Stompers
 						},
-					}),	
+					}),
 					e(194, {	-- Alysrazor
 						["creatureID"] = 52530,
 						["g"] = {
@@ -1008,7 +1009,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(171654),	-- Alysrazor's Band
 							i(171645),	-- Eye of Blazing Power
 						},
-					}),	
+					}),
 					e(195, {	-- Shannox
 						["creatureID"] = 53691,
 						["g"] = {
@@ -1047,7 +1048,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(171694),	-- Treads of Implicit Obedience
 							i(171691),	-- Crystal Prison Band
 						},
-					}),	
+					}),
 					e(196, {	-- Baleroc, the Gatekeeper
 						["creatureID"] = 53494,
 						["g"] = {
@@ -1085,7 +1086,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(171710),	-- Decimation Treads
 							i(171644),	-- Necromantic Focus
 						},
-					}),	
+					}),
 					e(197, {	-- Majordomo Staghelm
 						["creatureID"] = 52571,
 						["g"] = {
@@ -1126,7 +1127,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(171641),	-- Jaws of Defeat
 							i(171642),	-- The Hungerer
 						},
-					}),	
+					}),
 					e(198, {	-- Ragnaros
 						["creatureID"] = 52409,
 						["g"] = {
@@ -1164,7 +1165,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(171640),	-- Variable Pulse Lightning Capacitor
 							i(171647),	-- Vessel of Acceleration
 						},
-					}),	
+					}),
 				},
 			}),
 		},

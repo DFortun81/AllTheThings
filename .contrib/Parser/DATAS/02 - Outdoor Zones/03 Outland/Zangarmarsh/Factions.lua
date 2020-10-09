@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -115,7 +116,7 @@ _.Zones =
 								["repeatable"] = true,
 								["maxReputation"] = { 970, FRIENDLY },
 							}),
-							q(9809, {	-- More Glowcaps 
+							q(9809, {	-- More Glowcaps
 								["provider"] = { "n", 17924 },	-- Mshii'fn
 								["coord"] = { 19.7, 52.1, 102 },
 								["sourceQuest"] = 9808,	-- Glowcap Mushrooms

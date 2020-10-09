@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	n(-7, {	-- World Bosses
 		["order"] = "01",
@@ -75,7 +76,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["cr"] = 138794,	-- Dunegorger Kraulok
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(5, {	-- Dunegorger Kraulok
-						["achievementID"] = 12587,	-- Unbound Monstrosities 
+						["achievementID"] = 12587,	-- Unbound Monstrosities
 					}),
 					i(174842),	-- Slightly Damp Pile of Fur (Mollie)
 					i(161404),	-- Hood of the Sinuous Devilsaur
@@ -258,7 +259,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["coord"] = { 84.2, 35.9, 1355 },
 				["maps"] = {	-- all Nazjatar maps
 					1355,	-- Nazjatar
-					1499,	-- 
+					1499,	--
 					1500,	-- Chitterspine Grotto
 					1524,	-- Deepsea Slave Pen
 					1528,	-- The Eternal Palace
@@ -333,7 +334,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["coord"] = { 42.8, 77.9, 1355 },
 				["maps"] = {	-- all Nazjatar maps
 					1355,	-- Nazjatar
-					1499,	-- 
+					1499,	--
 					1500,	-- Chitterspine Grotto
 					1524,	-- Deepsea Slave Pen
 					1528,	-- The Eternal Palace

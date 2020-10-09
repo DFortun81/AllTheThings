@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -552,7 +553,7 @@ _.Zones =
 						i(67064, {	-- Pattern: Vicious Charscale Belt
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
-						i(67063, {	-- Pattern: Vicious Charscale Boots	
+						i(67063, {	-- Pattern: Vicious Charscale Boots
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
 						i(67049, {	-- Pattern: Vicious Charscale Bracers
@@ -630,7 +631,7 @@ _.Zones =
 						i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
-						i(67075, {	-- Pattern: Vicious Wyrmhide Chest	
+						i(67075, {	-- Pattern: Vicious Wyrmhide Chest
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
 						i(67056, {	-- Pattern: Vicious Wyrmhide Gloves

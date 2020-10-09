@@ -1,6 +1,7 @@
 -----------------------------------------------
---     P L A Y E R   V S   P L A Y E R		 --
+--      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 _.PVP =
 {
 	n(-10003, {	-- The Burning Crusade
@@ -92,649 +93,649 @@ _.PVP =
 						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 					}),
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					i(146619, {	-- Ensemble: Merciless Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 11 }, },
 					}),
 					i(31967, {	-- Merciless Gladiator's Dragonhide Gloves
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31093, 1 },	-- 1x Gloves of the Forgotten Vanquisher
 							{ "i", 30240, 1 },	-- 1x Gloves of the Vanquished Defender
 						},
 					}),
 					i(31968, {	-- Merciless Gladiator's Dragonhide Helm
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31096, 1 },	-- 1x Helm of the Forgotten Vanquisher
 							{ "i", 30243, 1 },	-- 1x Helm of the Vanquished Defender
 						},
 					}),
 					i(31969, {	-- Merciless Gladiator's Dragonhide Legguards
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31099, 1 },	-- 1x Leggings of the Forgotten Vanquisher
 							{ "i", 30246, 1 },	-- 1x Leggings of the Vanquished Defender
 						},
 					}),
 					i(31971, {	-- Merciless Gladiator's Dragonhide Spaulders
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31102, 1 },	-- 1x Pauldrons of the Forgotten Vanquisher
 							{ "i", 30249, 1 },	-- 1x Pauldrons of the Vanquished Defender
 						},
 					}),
 					i(31972, {	-- Merciless Gladiator's Dragonhide Tunic
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31090, 1 },	-- 1x Chestguard of the Forgotten Vanquisher
 							{ "i", 30237, 1 },	-- 1x Chestguard of the Vanquished Defender
 						},
 					}),
 					i(31987, {	-- Merciless Gladiator's Kodohide Gloves
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31093, 1 },	-- 1x Gloves of the Forgotten Vanquisher
 							{ "i", 30240, 1 },	-- 1x Gloves of the Vanquished Defender
 						},
 					}),
 					i(31988, {	-- Merciless Gladiator's Kodohide Helm
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31096, 1 },	-- 1x Helm of the Forgotten Vanquisher
 							{ "i", 30243, 1 },	-- 1x Helm of the Vanquished Defender
 						},
 					}),
 					i(31989, {	-- Merciless Gladiator's Kodohide Legguards
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31099, 1 },	-- 1x Leggings of the Forgotten Vanquisher
 							{ "i", 30246, 1 },	-- 1x Leggings of the Vanquished Defender
 						},
 					}),
 					i(31990, {	-- Merciless Gladiator's Kodohide Spaulders
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31102, 1 },	-- 1x Pauldrons of the Forgotten Vanquisher
 							{ "i", 30249, 1 },	-- 1x Pauldrons of the Vanquished Defender
 						},
 					}),
 					i(31991, {	-- Merciless Gladiator's Kodohide Tunic
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31090, 1 },	-- 1x Chestguard of the Forgotten Vanquisher
 							{ "i", 30237, 1 },	-- 1x Chestguard of the Vanquished Defender
 						},
 					}),
 					i(32056, {	-- Merciless Gladiator's Wyrmhide Gloves
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31093, 1 },	-- 1x Gloves of the Forgotten Vanquisher
 							{ "i", 30240, 1 },	-- 1x Gloves of the Vanquished Defender
 						},
 					}),
 					i(32057, {	-- Merciless Gladiator's Wyrmhide Helm
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31096, 1 },	-- 1x Helm of the Forgotten Vanquisher
 							{ "i", 30243, 1 },	-- 1x Helm of the Vanquished Defender
 						},
 					}),
 					i(32058, {	-- Merciless Gladiator's Wyrmhide Legguards
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31099, 1 },	-- 1x Leggings of the Forgotten Vanquisher
 							{ "i", 30246, 1 },	-- 1x Leggings of the Vanquished Defender
 						},
 					}),
 					i(32059, {	-- Merciless Gladiator's Wyrmhide Spaulders
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31102, 1 },	-- 1x Pauldrons of the Forgotten Vanquisher
 							{ "i", 30249, 1 },	-- 1x Pauldrons of the Vanquished Defender
 						},
 					}),
 					i(32060, {	-- Merciless Gladiator's Wyrmhide Tunic
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31090, 1 },	-- 1x Chestguard of the Forgotten Vanquisher
 							{ "i", 30237, 1 },	-- 1x Chestguard of the Vanquished Defender
 						},
 					}),
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					i(146618, {	-- Ensemble: Merciless Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 3 }, },
 					}),
 					i(31960, {	-- Merciless Gladiator's Chain Armor
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31091, 1 },	-- 1x Chestguard of the Forgotten Protector
 							{ "i", 30238, 1 },	-- 1x Chestguard of the Vanquished Hero
 						},
 					}),
 					i(31961, {	-- Merciless Gladiator's Chain Gauntlets
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31094, 1 },	-- 1x Gloves of the Forgotten Protector
 							{ "i", 30241, 1 },	-- 1x Gloves of the Vanquished Hero
 						},
 					}),
 					i(31962, {	-- Merciless Gladiator's Chain Helm
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31095, 1 },	-- 1x Helm of the Forgotten Protector
 							{ "i", 30244, 1 },	-- 1x Helm of the Vanquished Hero
 						},
 					}),
 					i(31963, {	-- Merciless Gladiator's Chain Leggings
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31100, 1 },	-- 1x Leggings of the Forgotten Protector
 							{ "i", 30247, 1 },	-- 1x Leggings of the Vanquished Hero
 						},
 					}),
 					i(31964, {	-- Merciless Gladiator's Chain Spaulders
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31103, 1 },	-- 1x Pauldrons of the Forgotten Protector
 							{ "i", 30250, 1 },	-- 1x Pauldrons of the Vanquished Hero
 						},
 					}),
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					i(146627, {	-- Ensemble: Merciless Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 8 }, },
 					}),
 					i(32047, {	-- Merciless Gladiator's Silk Amice
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31102, 1 },	-- 1x Pauldrons of the Forgotten Vanquisher
 							{ "i", 30250, 1 },	-- 1x Pauldrons of the Vanquished Hero
 						},
 					}),
 					i(32048, {	-- Merciless Gladiator's Silk Cowl
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31096, 1 },	-- 1x Helm of the Forgotten Vanquisher
 							{ "i", 30244, 1 },	-- 1x Helm of the Vanquished Hero
 						},
 					}),
 					i(32049, {	-- Merciless Gladiator's Silk Handguards
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31093, 1 },	-- 1x Gloves of the Forgotten Vanquisher
 							{ "i", 30241, 1 },	-- 1x Gloves of the Vanquished Hero
 						},
 					}),
 					i(32050, {	-- Merciless Gladiator's Silk Raiment
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31090, 1 },	-- 1x Chestguard of the Forgotten Vanquisher
 							{ "i", 30238, 1 },	-- 1x Chestguard of the Vanquished Hero
 						},
 					}),
 					i(32051, {	-- Merciless Gladiator's Silk Trousers
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31099, 1 },	-- 1x Leggings of the Forgotten Vanquisher
 							{ "i", 30247, 1 },	-- 1x Leggings of the Vanquished Hero
 						},
 					}),
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					i(146626, {	-- Ensemble: Merciless Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 2 }, },
 					}),
 					i(31992, {	-- Merciless Gladiator's Lamellar Chestpiece
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31089, 1 },	-- 1x Chestguard of the Forgotten Conqueror
 							{ "i", 30236, 1 },	-- 1x Chestguard of the Vanquished Champion
 						},
 					}),
 					i(31993, {	-- Merciless Gladiator's Lamellar Gauntlets
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31092, 1 },	-- 1x Gloves of the Forgotten Conqueror
 							{ "i", 30239, 1 },	-- 1x Gloves of the Vanquished Champion
 						},
 					}),
 					i(31997, {	-- Merciless Gladiator's Lamellar Helm
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31097, 1 },	-- 1x Helm of the Forgotten Conqueror
 							{ "i", 30242, 1 },	-- 1x Helm of the Vanquished Champion
 						},
 					}),
 					i(31995, {	-- Merciless Gladiator's Lamellar Legguards
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31098, 1 },	-- 1x Leggings of the Forgotten Conqueror
 							{ "i", 30245, 1 },	-- 1x Leggings of the Vanquished Champion
 						},
 					}),
 					i(31996, {	-- Merciless Gladiator's Lamellar Shoulders
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31101, 1 },	-- 1x Pauldrons of the Forgotten Conqueror
 							{ "i", 30248, 1 },	-- 1x Pauldrons of the Vanquished Champion
 						},
 					}),
 					i(32020, {	-- Merciless Gladiator's Ornamented Chestguard
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31089, 1 },	-- 1x Chestguard of the Forgotten Conqueror
 							{ "i", 30236, 1 },	-- 1x Chestguard of the Vanquished Champion
 						},
 					}),
 					i(32021, {	-- Merciless Gladiator's Ornamented Gloves
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31092, 1 },	-- 1x Gloves of the Forgotten Conqueror
 							{ "i", 30239, 1 },	-- 1x Gloves of the Vanquished Champion
 						},
 					}),
 					i(32022, {	-- Merciless Gladiator's Ornamented Headcover
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31097, 1 },	-- 1x Helm of the Forgotten Conqueror
 							{ "i", 30242, 1 },	-- 1x Helm of the Vanquished Champion
 						},
 					}),
 					i(32023, {	-- Merciless Gladiator's Ornamented Legplates
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31098, 1 },	-- 1x Leggings of the Forgotten Conqueror
 							{ "i", 30245, 1 },	-- 1x Leggings of the Vanquished Champion
 						},
 					}),
 					i(32024, {	-- Merciless Gladiator's Ornamented Spaulders
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31101, 1 },	-- 1x Pauldrons of the Forgotten Conqueror
 							{ "i", 30248, 1 },	-- 1x Pauldrons of the Vanquished Champion
 						},
 					}),
 					i(32039, {	-- Merciless Gladiator's Scaled Chestpiece
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31089, 1 },	-- 1x Chestguard of the Forgotten Conqueror
 							{ "i", 30236, 1 },	-- 1x Chestguard of the Vanquished Champion
 						},
 					}),
 					i(32040, {	-- Merciless Gladiator's Scaled Gauntlets
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31092, 1 },	-- 1x Gloves of the Forgotten Conqueror
 							{ "i", 30239, 1 },	-- 1x Gloves of the Vanquished Champion
 						},
 					}),
 					i(32041, {	-- Merciless Gladiator's Scaled Helm
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31097, 1 },	-- 1x Helm of the Forgotten Conqueror
 							{ "i", 30242, 1 },	-- 1x Helm of the Vanquished Champion
 						},
 					}),
 					i(32042, {	-- Merciless Gladiator's Scaled Legguards
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31098, 1 },	-- 1x Leggings of the Forgotten Conqueror
 							{ "i", 30245, 1 },	-- 1x Leggings of the Vanquished Champion
 						},
 					}),
 					i(32043, {	-- Merciless Gladiator's Scaled Shoulders
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31101, 1 },	-- 1x Pauldrons of the Forgotten Conqueror
 							{ "i", 30248, 1 },	-- 1x Pauldrons of the Vanquished Champion
 						},
 					}),
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					i(146625, {	-- Ensemble: Merciless Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 5 }, },
 					}),
 					i(32015, {	-- Merciless Gladiator's Mooncloth Gloves
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31092, 1 },	-- 1x Gloves of the Forgotten Conqueror
 							{ "i", 30240, 1 },	-- 1x Gloves of the Vanquished Defender
 						},
 					}),
 					i(32016, {	-- Merciless Gladiator's Mooncloth Hood
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31097, 1 },	-- 1x Helm of the Forgotten Conqueror
 							{ "i", 30243, 1 },	-- 1x Helm of the Vanquished Defender
 						},
 					}),
 					i(32017, {	-- Merciless Gladiator's Mooncloth Leggings
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31098, 1 },	-- 1x Leggings of the Forgotten Conqueror
 							{ "i", 30246, 1 },	-- 1x Leggings of the Vanquished Defender
 						},
 					}),
 					i(32018, {	-- Merciless Gladiator's Mooncloth Mantle
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31101, 1 },	-- 1x Pauldrons of the Forgotten Conqueror
 							{ "i", 30249, 1 },	-- 1x Pauldrons of the Vanquished Defender
 						},
 					}),
 					i(32019, {	-- Merciless Gladiator's Mooncloth Robe
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31089, 1 },	-- 1x Chestguard of the Forgotten Conqueror
 							{ "i", 30237, 1 },	-- 1x Chestguard of the Vanquished Defender
 						},
 					}),
-					i(32034, {	-- Merciless Gladiator's Satin Gloves	
-						["cost"] = { 
+					i(32034, {	-- Merciless Gladiator's Satin Gloves
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31092, 1 },	-- 1x Gloves of the Forgotten Conqueror
 							{ "i", 30240, 1 },	-- 1x Gloves of the Vanquished Defender
 						},
 					}),
 					i(32035, {	-- Merciless Gladiator's Satin Hood
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31097, 1 },	-- 1x Helm of the Forgotten Conqueror
 							{ "i", 30243, 1 },	-- 1x Helm of the Vanquished Defender
 						},
 					}),
 					i(32036, {	-- Merciless Gladiator's Satin Leggings
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31098, 1 },	-- 1x Leggings of the Forgotten Conqueror
 							{ "i", 30246, 1 },	-- 1x Leggings of the Vanquished Defender
 						},
 					}),
 					i(32037, {	-- Merciless Gladiator's Satin Mantle
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31101, 1 },	-- 1x Pauldrons of the Forgotten Conqueror
 							{ "i", 30249, 1 },	-- 1x Pauldrons of the Vanquished Defender
 						},
 					}),
 					i(32038, {	-- Merciless Gladiator's Satin Robe
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31089, 1 },	-- 1x Chestguard of the Forgotten Conqueror
 							{ "i", 30237, 1 },	-- 1x Chestguard of the Vanquished Defender
 						},
 					}),
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					i(146622, {	-- Ensemble: Merciless Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 4 }, },
 					}),
 					i(31998, {	-- Merciless Gladiator's Leather Gloves
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31093, 1 },	-- 1x Gloves of the Forgotten Vanquisher
 							{ "i", 30239, 1 },	-- 1x Gloves of the Vanquished Champion
 						},
 					}),
 					i(31999, {	-- Merciless Gladiator's Leather Helm
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31096, 1 },	-- 1x Helm of the Forgotten Vanquisher
 							{ "i", 30242, 1 },	-- 1x Helm of the Vanquished Champion
 						},
 					}),
 					i(32000, {	-- Merciless Gladiator's Leather Legguards
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31099, 1 },	-- 1x Leggings of the Forgotten Vanquisher
 							{ "i", 30245, 1 },	-- 1x Leggings of the Vanquished Champion
 						},
 					}),
 					i(32001, {	-- Merciless Gladiator's Leather Spaulders
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31102, 1 },	-- 1x Pauldrons of the Forgotten Vanquisher
 							{ "i", 30248, 1 },	-- 1x Pauldrons of the Vanquished Champion
 						},
 					}),
 					i(32002, {	-- Merciless Gladiator's Leather Tunic
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31090, 1 },	-- 1x Chestguard of the Forgotten Vanquisher
 							{ "i", 30236, 1 },	-- 1x Chestguard of the Vanquished Champion
 						},
 					}),
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					i(146624, {	-- Ensemble: Merciless Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 7 }, },
 					}),
 					i(32004, {	-- Merciless Gladiator's Linked Armor
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31091, 1 },	-- 1x Chestguard of the Forgotten Protector
 							{ "i", 30236, 1 },	-- 1x Chestguard of the Vanquished Champion
 						},
 					}),
 					i(32005, {	-- Merciless Gladiator's Linked Gauntlets
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31094, 1 },	-- 1x Gloves of the Forgotten Protector
 							{ "i", 30239, 1 },	-- 1x Gloves of the Vanquished Champion
 						},
 					}),
 					i(32006, {	-- Merciless Gladiator's Linked Helm
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31095, 1 },	-- 1x Helm of the Forgotten Protector
 							{ "i", 30242, 1 },	-- 1x Helm of the Vanquished Champion
 						},
 					}),
 					i(32007, {	-- Merciless Gladiator's Linked Leggings
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31100, 1 },	-- 1x Leggings of the Forgotten Protector
 							{ "i", 30245, 1 },	-- 1x Leggings of the Vanquished Champion
 						},
 					}),
 					i(32008, {	-- Merciless Gladiator's Linked Spaulders
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31103, 1 },	-- 1x Pauldrons of the Forgotten Protector
 							{ "i", 30248, 1 },	-- 1x Pauldrons of the Vanquished Champion
 						},
 					}),
 					i(32009, {	-- Merciless Gladiator's Mail Armor
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31091, 1 },	-- 1x Chestguard of the Forgotten Protector
 							{ "i", 30236, 1 },	-- 1x Chestguard of the Vanquished Champion
 						},
 					}),
 					i(32010, {	-- Merciless Gladiator's Mail Gauntlets
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31094, 1 },	-- 1x Gloves of the Forgotten Protector
 							{ "i", 30239, 1 },	-- 1x Gloves of the Vanquished Champion
 						},
 					}),
 					i(32011, {	-- Merciless Gladiator's Mail Helm
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31095, 1 },	-- 1x Helm of the Forgotten Protector
 							{ "i", 30242, 1 },	-- 1x Helm of the Vanquished Champion
 						},
 					}),
 					i(32012, {	-- Merciless Gladiator's Mail Leggings
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31100, 1 },	-- 1x Leggings of the Forgotten Protector
 							{ "i", 30245, 1 },	-- 1x Leggings of the Vanquished Champion
 						},
 					}),
 					i(32013, {	-- Merciless Gladiator's Mail Spaulders
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31103, 1 },	-- 1x Pauldrons of the Forgotten Protector
 							{ "i", 30248, 1 },	-- 1x Pauldrons of the Vanquished Champion
 						},
 					}),
 					i(32029, {	-- Merciless Gladiator's Ringmail Armor
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31091, 1 },	-- 1x Chestguard of the Forgotten Protector
 							{ "i", 30236, 1 },	-- 1x Chestguard of the Vanquished Champion
 						},
 					}),
 					i(32030, {	-- Merciless Gladiator's Ringmail Gauntlets
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31094, 1 },	-- 1x Gloves of the Forgotten Protector
 							{ "i", 30239, 1 },	-- 1x Gloves of the Vanquished Champion
 						},
 					}),
 					i(32031, {	-- Merciless Gladiator's Ringmail Helm
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31095, 1 },	-- 1x Helm of the Forgotten Protector
 							{ "i", 30242, 1 },	-- 1x Helm of the Vanquished Champion
 						},
 					}),
 					i(32032, {	-- Merciless Gladiator's Ringmail Leggings
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31100, 1 },	-- 1x Leggings of the Forgotten Protector
 							{ "i", 30245, 1 },	-- 1x Leggings of the Vanquished Champion
 						},
 					}),
 					i(32033, {	-- Merciless Gladiator's Ringmail Spaulders
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31103, 1 },	-- 1x Pauldrons of the Forgotten Protector
 							{ "i", 30248, 1 },	-- 1x Pauldrons of the Vanquished Champion
 						},
 					}),
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					i(146621, {	-- Ensemble: Merciless Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 9 }, },
 					}),
 					i(31973, {	-- Merciless Gladiator's Dreadweave Gloves
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31092, 1 },	-- 1x Gloves of the Forgotten Conqueror
 							{ "i", 30241, 1 },	-- 1x Gloves of the Vanquished Hero
 						},
 					}),
 					i(31974, {	-- Merciless Gladiator's Dreadweave Hood
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31097, 1 },	-- 1x Helm of the Forgotten Conqueror
 							{ "i", 30244, 1 },	-- 1x Helm of the Vanquished Hero
 						},
 					}),
 					i(31975, {	-- Merciless Gladiator's Dreadweave Leggings
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31098, 1 },	-- 1x Leggings of the Forgotten Conqueror
 							{ "i", 30247, 1 },	-- 1x Leggings of the Vanquished Hero
 						},
 					}),
 					i(31976, {	-- Merciless Gladiator's Dreadweave Mantle
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31101, 1 },	-- 1x Pauldrons of the Forgotten Conqueror
 							{ "i", 30250, 1 },	-- 1x Pauldrons of the Vanquished Hero
 						},
 					}),
 					i(31977, {	-- Merciless Gladiator's Dreadweave Robe
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31089, 1 },	-- 1x Chestguard of the Forgotten Conqueror
 							{ "i", 30238, 1 },	-- 1x Chestguard of the Vanquished Hero
 						},
 					}),
 					i(31979, {	-- Merciless Gladiator's Felweave Amice
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31097, 1 },	-- 1x Helm of the Forgotten Conqueror
 							{ "i", 30244, 1 },	-- 1x Helm of the Vanquished Hero
 						},
 					}),
 					i(31980, {	-- Merciless Gladiator's Felweave Cowl
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31101, 1 },	-- 1x Pauldrons of the Forgotten Conqueror
 							{ "i", 30250, 1 },	-- 1x Pauldrons of the Vanquished Hero
 						},
 					}),
 					i(31981, {	-- Merciless Gladiator's Felweave Handguards
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31092, 1 },	-- 1x Gloves of the Forgotten Conqueror
 							{ "i", 30241, 1 },	-- 1x Gloves of the Vanquished Hero
 						},
 					}),
 					i(31982, {	-- Merciless Gladiator's Felweave Raiment
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31089, 1 },	-- 1x Chestguard of the Forgotten Conqueror
 							{ "i", 30238, 1 },	-- 1x Chestguard of the Vanquished Hero
 						},
 					}),
 					i(31983, {	-- Merciless Gladiator's Felweave Trousers
-							["cost"] = { 
+							["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31098, 1 },	-- 1x Leggings of the Forgotten Conqueror
 							{ "i", 30247, 1 },	-- 1x Leggings of the Vanquished Hero
 						},
 					}),
 				}),
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					i(146623, {	-- Ensemble: Merciless Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 1 }, },
 					}),
 					i(30486, {	-- Merciless Gladiator's Plate Chestpiece
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31091, 1 },	-- 1x Chestguard of the Forgotten Protector
 							{ "i", 30237, 1 },	-- 1x Chestguard of the Vanquished Defender
 						},
 					}),
 					i(30487, {	-- Merciless Gladiator's Plate Gauntlets
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31094, 1 },	-- 1x Gloves of the Forgotten Protector
 							{ "i", 30240, 1 },	-- 1x Gloves of the Vanquished Defender
 						},
 					}),
 					i(30488, {	-- Merciless Gladiator's Plate Helm
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31095, 1 },	-- 1x Helm of the Forgotten Protector
 							{ "i", 30243, 1 },	-- 1x Helm of the Vanquished Defender
 						},
 					}),
 					i(30489, {	-- Merciless Gladiator's Plate Legguards
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 3 },	-- 3x Mark of Honor
 							{ "i", 31100, 1 },	-- 1x Leggings of the Forgotten Protector
 							{ "i", 30246, 1 },	-- 1x Leggings of the Vanquished Defender
 						},
 					}),
 					i(30490, {	-- Merciless Gladiator's Plate Shoulders
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 137642, 2 },	-- 2x Mark of Honor
 							{ "i", 31103, 1 },	-- 1x Pauldrons of the Forgotten Protector
 							{ "i", 30249, 1 },	-- 1x Pauldrons of the Vanquished Defender

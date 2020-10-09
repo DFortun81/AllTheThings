@@ -211,7 +211,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(23, {	-- Mythic
-				n(-4, {	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(11433, {	-- Burn After Reading
 						crit(1, {	-- Legacy of the Mountain King
 							["itemID"] = 142049,	-- Legacy of the Mountain King

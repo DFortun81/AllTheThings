@@ -1,6 +1,7 @@
- ---------------------------------------------------
+---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -8,7 +9,7 @@ _.Zones =
 			n(-10067, {	-- Artifacts
 				q(43560, {	-- Audience with the Windlord
 					["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
-					["classes"] = { 4 },	-- Rogue Only
+					["classes"] = { ROGUE },
 					["sourceQuests"] = { 43558 },	-- Bindings of the Windlord
 					["groups"] = {
 						i(139536, {	-- Emanation of the Winds
@@ -19,7 +20,7 @@ _.Zones =
 				q(43558, {	-- Bindings of the Windlord
 					["description"] = "You need to first collect the two bindings and then be in Outlaw spec to get this quest.",
 					["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
-					["classes"] = { 4 },	-- Rogue Only
+					["classes"] = { ROGUE },
 					["sourceQuests"] = { 39652 },	-- Where Dragons Rule
 					["groups"] = {
 						i(139468),	-- Bindings of the Windlord
@@ -27,6 +28,6 @@ _.Zones =
 					},
 				}),
 			}),
-		}),	
+		}),
 	}),
 };

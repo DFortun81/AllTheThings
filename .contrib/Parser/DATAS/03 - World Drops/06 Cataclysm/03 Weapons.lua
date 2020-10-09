@@ -1,10 +1,11 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+
+_.WorldDrops =
 {
 	tier(4, {	-- Cataclysm
-		n(-319, {	-- Weapons		
+		n(-319, {	-- Weapons
 			n(-334, {	-- 1H Axes
 				i(55283),	-- Angerfang Axe
 				i(66981),	-- Axe of the Deadly Price
@@ -27,7 +28,7 @@ _.WorldDrops =
 				i(55294),	-- Splinterspear Broadaxe
 				i(55291),	-- Steelspark Broadaxe
 				i(66985),	-- Termination Axe
-			}),	
+			}),
 			n(-346, {	-- Bows
 				i(55301),	-- Angerfang Bow
 				i(55305),	-- Bladefist Bow
@@ -48,8 +49,8 @@ _.WorldDrops =
 				i(55317),	-- Razorwind Crossbow
 				i(55321),	-- Splinterspear Crossbow
 				i(55318),	-- Steelspark Crossbow
-			}),			
-			n(-333, {	-- Daggers	
+			}),
+			n(-333, {	-- Daggers
 				i(55328),	-- Angerfang Dagger
 				i(55441),	-- Blackwolf Spellblade
 				i(55332),	-- Bladefist Dagger
@@ -70,7 +71,7 @@ _.WorldDrops =
 				i(55440),	-- Thondroril Spellblade
 				i(66956),	-- Trek's Shiv
 			}),
-			n(-348, {	-- Fist Weapons	
+			n(-348, {	-- Fist Weapons
 				i(55346),	-- Angerfang Knuckles
 				i(55350),	-- Bladefist Knuckles
 				i(66972),	-- Crystalline Geoknife
@@ -92,7 +93,7 @@ _.WorldDrops =
 				i(55357),	-- Splinterspear Gun
 				i(55354),	-- Steelspark Gun
 				i(66953),	-- Snub-Nosed Pistol
-			}),			
+			}),
 			n(-331, {	-- Held in Off-hand
 				i(55378),	-- Blackwolf Crystal
 				i(67125),	-- Bone-Inlaid Sarcophagus Key
@@ -148,7 +149,7 @@ _.WorldDrops =
 				i(66964),	-- Sand Tracker's Spear
 				i(55411),	-- Splinterspear Spear
 				i(55408),	-- Steelspark Spear
-			}),			
+			}),
 			n(-332, {	-- Shields
 				i(67145),	-- Blockade's Lost Shield
 				i(67061),	-- Bulwark of the Scorned Man

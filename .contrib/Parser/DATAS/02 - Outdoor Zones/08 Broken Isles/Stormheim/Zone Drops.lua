@@ -1,10 +1,11 @@
- ---------------------------------------------------
+---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
-		m(634, {	-- Stormheim		
+		m(634, {	-- Stormheim
 			n(ZONEDROPS, {
 				["groups"] = {
 					i(144309),	-- Formula: Enchant Neck - Mark of the Master (Rank 2)
@@ -287,6 +288,6 @@ _.Zones =
 					107803,	-- Wild Plains Runehorn
 				},
 			}),
-		}),	
+		}),
 	}),
 };

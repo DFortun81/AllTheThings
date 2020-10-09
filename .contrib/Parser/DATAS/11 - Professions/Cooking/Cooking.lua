@@ -429,7 +429,7 @@ profession(COOKING, {
 				recipe(28267),	-- Crunchy Spider Surprise
 				{
 					["recipeID"] = 9513,	-- Thistle Tea
-					["classes"] = {4},		-- Rogue Only
+					["classes"] = { ROGUE },
 				},
 				recipe(2544),	-- Crab Cake
 				recipe(3370),	-- Crocolisk Steak

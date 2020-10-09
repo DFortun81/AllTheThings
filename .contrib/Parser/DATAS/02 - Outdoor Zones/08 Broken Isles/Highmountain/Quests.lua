@@ -52,10 +52,10 @@ _.Zones =
 				}),
 				q(45841, {	-- A Triumphant Report
 					["classes"] = {
-						3,	-- Hunter (Beast Mastery)
-						10,	-- Monk (Windwalker)
-						5,	-- Priest (Discipline)
-						9,	-- Warlock (Destruction)
+						HUNTER,		-- Beast Mastery
+						MONK,		-- Windwalker
+						PRIEST,		-- Discipline
+						WARLOCK,	-- Destruction
 					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
@@ -752,7 +752,7 @@ _.Zones =
 				}),
 				q(40385, {	-- The Spear in the Shadow
 					["sourceQuests"] = { 39427 },	-- The Eagle Spirit's Blessing
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["providers"] = {
 						{ "n", 110821 },	-- Apata Highmountain
 						{ "n", 110986 },	-- Apata Highmountain

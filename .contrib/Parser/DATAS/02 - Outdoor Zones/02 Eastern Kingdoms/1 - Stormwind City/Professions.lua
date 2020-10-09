@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -21,7 +22,7 @@ _.Zones =
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},]]								
+							},]]
 						}),
 						q(29067, {	-- Potion Master
 							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze (Stormwind)
@@ -51,7 +52,7 @@ _.Zones =
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},]]							
+							},]]
 						}),
 					}),
 				}),
@@ -79,11 +80,11 @@ _.Zones =
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(9367)),	-- Plans: Golden Scale Gauntlets
 							},
-						}),	
+						}),
 					}),
 				}),
 				prof(COOKING, {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5474, {	-- Let's Do Lunch: Stormwind
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -182,7 +183,7 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5476, {	-- Fish or Cut Bait: Stormwind
 							["races"] = ALLIANCE_ONLY,
 						}),

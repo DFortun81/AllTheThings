@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+
+_.WorldDrops =
 {
 	tier(1, {	-- Classic
 		f(113, {	-- Bags
@@ -12,5 +13,5 @@ _.WorldDrops =
 			i(21342),	-- Core Felcloth Bag
 			i(4500),	-- Traveler's Backpack
 		}),
-	}),	
+	}),
 };
