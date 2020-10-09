@@ -3674,7 +3674,7 @@ local function PopulateQuestObject(questObject)
 	if cache then
 		for _,data in ipairs(cache) do
 			-- only merge into the WQ quest object properties from a quest object in cache
-			if data.key == "questID" then
+			if data.key == "questID" or data["encounterID"] then
 				for key,value in pairs(data) do
 					if not (key == "g" or key == "parent") then
 						questObject[key] = value;

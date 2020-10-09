@@ -132,6 +132,7 @@ _.Zones =
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
 									["coord"] = { 46.4, 40.4, 630 },
+									["questID"] = 42159,	-- Training with the Nightwatchers
 								}),
 							},
 						}),
@@ -142,6 +143,7 @@ _.Zones =
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
 									["coord"] = { 46.4, 40.4, 630 },
+									["questID"] = 42159,	-- Training with the Nightwatchers
 								}),
 							},
 						}),
@@ -152,6 +154,7 @@ _.Zones =
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
 									["coord"] = { 46.4, 40.4, 630 },
+									["questID"] = 42159,	-- Training with the Nightwatchers
 								}),
 							},
 						}),
@@ -162,6 +165,7 @@ _.Zones =
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
 									["coord"] = { 46.4, 40.4, 630 },
+									["questID"] = 42159,	-- Training with the Nightwatchers
 								}),
 							},
 						}),
@@ -172,6 +176,7 @@ _.Zones =
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
 									["coord"] = { 46.4, 40.4, 630 },
+									["questID"] = 42159,	-- Training with the Nightwatchers
 								}),
 							},
 						}),
@@ -182,6 +187,7 @@ _.Zones =
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
 									["coord"] = { 46.4, 40.4, 630 },
+									["questID"] = 42159,	-- Training with the Nightwatchers
 								}),
 							},
 						}),
@@ -192,6 +198,7 @@ _.Zones =
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
 									["coord"] = { 46.4, 40.4, 630 },
+									["questID"] = 42159,	-- Training with the Nightwatchers
 								}),
 							},
 						}),
@@ -202,6 +209,7 @@ _.Zones =
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
 									["coord"] = { 46.4, 40.4, 630 },
+									["questID"] = 42159,	-- Training with the Nightwatchers
 								}),
 							},
 						}),
@@ -212,6 +220,7 @@ _.Zones =
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
 									["coord"] = { 46.4, 40.4, 630 },
+									["questID"] = 42159,	-- Training with the Nightwatchers
 								}),
 							},
 						}),
@@ -222,6 +231,7 @@ _.Zones =
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
 									["coord"] = { 46.4, 40.4, 630 },
+									["questID"] = 42159,	-- Training with the Nightwatchers
 								}),
 							},
 						}),

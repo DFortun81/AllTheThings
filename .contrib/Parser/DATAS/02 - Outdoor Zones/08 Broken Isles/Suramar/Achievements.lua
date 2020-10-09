@@ -19,14 +19,17 @@ _.Zones =
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
 									["coord"] = { 52.0, 54.8, 680 },
+									["questID"] = 41895,	-- The Master of Pets
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
 									["coord"] = { 25.2, 62.6, 680 },
+									["questID"] = 40337,	-- Flummoxed
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
 									["coord"] = { 63.0, 60.6, 680 },
+									["questID"] = 41990,	-- Chopped
 								}),
 							},
 						}),
@@ -37,14 +40,17 @@ _.Zones =
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
 									["coord"] = { 52.0, 54.8, 680 },
+									["questID"] = 41895,	-- The Master of Pets
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
 									["coord"] = { 25.2, 62.6, 680 },
+									["questID"] = 40337,	-- Flummoxed
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
 									["coord"] = { 63.0, 60.6, 680 },
+									["questID"] = 41990,	-- Chopped
 								}),
 							},
 						}),
@@ -55,14 +61,17 @@ _.Zones =
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
 									["coord"] = { 52.0, 54.8, 680 },
+									["questID"] = 41895,	-- The Master of Pets
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
 									["coord"] = { 25.2, 62.6, 680 },
+									["questID"] = 40337,	-- Flummoxed
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
 									["coord"] = { 63.0, 60.6, 680 },
+									["questID"] = 41990,	-- Chopped
 								}),
 							},
 						}),
@@ -73,14 +82,17 @@ _.Zones =
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
 									["coord"] = { 52.0, 54.8, 680 },
+									["questID"] = 41895,	-- The Master of Pets
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
 									["coord"] = { 25.2, 62.6, 680 },
+									["questID"] = 40337,	-- Flummoxed
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
 									["coord"] = { 63.0, 60.6, 680 },
+									["questID"] = 41990,	-- Chopped
 								}),
 							},
 						}),
@@ -91,14 +103,17 @@ _.Zones =
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
 									["coord"] = { 52.0, 54.8, 680 },
+									["questID"] = 41895,	-- The Master of Pets
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
 									["coord"] = { 25.2, 62.6, 680 },
+									["questID"] = 40337,	-- Flummoxed
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
 									["coord"] = { 63.0, 60.6, 680 },
+									["questID"] = 41990,	-- Chopped
 								}),
 							},
 						}),
@@ -109,14 +124,17 @@ _.Zones =
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
 									["coord"] = { 52.0, 54.8, 680 },
+									["questID"] = 41895,	-- The Master of Pets
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
 									["coord"] = { 25.2, 62.6, 680 },
+									["questID"] = 40337,	-- Flummoxed
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
 									["coord"] = { 63.0, 60.6, 680 },
+									["questID"] = 41990,	-- Chopped
 								}),
 							},
 						}),
@@ -127,14 +145,17 @@ _.Zones =
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
 									["coord"] = { 52.0, 54.8, 680 },
+									["questID"] = 41895,	-- The Master of Pets
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
 									["coord"] = { 25.2, 62.6, 680 },
+									["questID"] = 40337,	-- Flummoxed
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
 									["coord"] = { 63.0, 60.6, 680 },
+									["questID"] = 41990,	-- Chopped
 								}),
 							},
 						}),
@@ -145,14 +166,17 @@ _.Zones =
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
 									["coord"] = { 52.0, 54.8, 680 },
+									["questID"] = 41895,	-- The Master of Pets
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
 									["coord"] = { 25.2, 62.6, 680 },
+									["questID"] = 40337,	-- Flummoxed
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
 									["coord"] = { 63.0, 60.6, 680 },
+									["questID"] = 41990,	-- Chopped
 								}),
 							},
 						}),
@@ -163,14 +187,17 @@ _.Zones =
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
 									["coord"] = { 52.0, 54.8, 680 },
+									["questID"] = 41895,	-- The Master of Pets
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
 									["coord"] = { 25.2, 62.6, 680 },
+									["questID"] = 40337,	-- Flummoxed
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
 									["coord"] = { 63.0, 60.6, 680 },
+									["questID"] = 41990,	-- Chopped
 								}),
 							},
 						}),
@@ -181,14 +208,17 @@ _.Zones =
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
 									["coord"] = { 52.0, 54.8, 680 },
+									["questID"] = 41895,	-- The Master of Pets
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
 									["coord"] = { 25.2, 62.6, 680 },
+									["questID"] = 40337,	-- Flummoxed
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
 									["coord"] = { 63.0, 60.6, 680 },
+									["questID"] = 41990,	-- Chopped
 								}),
 							},
 						}),

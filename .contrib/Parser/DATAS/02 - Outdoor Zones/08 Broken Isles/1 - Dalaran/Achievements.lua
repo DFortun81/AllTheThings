@@ -18,18 +18,22 @@ _.Zones =
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40299,	-- Fight Night: Bodhi Sunwayver
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40277,	-- Fight Night: Tiffany Nelson
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 42442,	-- Fight Night: Amalia
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40298,	-- Fight Night: Sir Galveston
 								}),
 							},
 						}),
@@ -40,18 +44,22 @@ _.Zones =
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40299,	-- Fight Night: Bodhi Sunwayver
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40277,	-- Fight Night: Tiffany Nelson
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 42442,	-- Fight Night: Amalia
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40298,	-- Fight Night: Sir Galveston
 								}),
 							},
 						}),
@@ -62,18 +70,22 @@ _.Zones =
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40299,	-- Fight Night: Bodhi Sunwayver
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40277,	-- Fight Night: Tiffany Nelson
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 42442,	-- Fight Night: Amalia
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40298,	-- Fight Night: Sir Galveston
 								}),
 							},
 						}),
@@ -84,18 +96,22 @@ _.Zones =
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40299,	-- Fight Night: Bodhi Sunwayver
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40277,	-- Fight Night: Tiffany Nelson
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 42442,	-- Fight Night: Amalia
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40298,	-- Fight Night: Sir Galveston
 								}),
 							},
 						}),
@@ -106,18 +122,22 @@ _.Zones =
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40299,	-- Fight Night: Bodhi Sunwayver
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40277,	-- Fight Night: Tiffany Nelson
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 42442,	-- Fight Night: Amalia
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40298,	-- Fight Night: Sir Galveston
 								}),
 							},
 						}),
@@ -128,18 +148,22 @@ _.Zones =
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40299,	-- Fight Night: Bodhi Sunwayver
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40277,	-- Fight Night: Tiffany Nelson
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 42442,	-- Fight Night: Amalia
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40298,	-- Fight Night: Sir Galveston
 								}),
 							},
 						}),
@@ -150,18 +174,22 @@ _.Zones =
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40299,	-- Fight Night: Bodhi Sunwayver
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40277,	-- Fight Night: Tiffany Nelson
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 42442,	-- Fight Night: Amalia
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40298,	-- Fight Night: Sir Galveston
 								}),
 							},
 						}),
@@ -172,18 +200,22 @@ _.Zones =
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40299,	-- Fight Night: Bodhi Sunwayver
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40277,	-- Fight Night: Tiffany Nelson
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 42442,	-- Fight Night: Amalia
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40298,	-- Fight Night: Sir Galveston
 								}),
 							},
 						}),
@@ -194,18 +226,22 @@ _.Zones =
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40299,	-- Fight Night: Bodhi Sunwayver
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40277,	-- Fight Night: Tiffany Nelson
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 42442,	-- Fight Night: Amalia
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40298,	-- Fight Night: Sir Galveston
 								}),
 							},
 						}),
@@ -216,18 +252,22 @@ _.Zones =
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40299,	-- Fight Night: Bodhi Sunwayver
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40277,	-- Fight Night: Tiffany Nelson
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 42442,	-- Fight Night: Amalia
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
 									["coord"] = { 28.0, 23.6, 627 },
+									["questID"] = 40298,	-- Fight Night: Sir Galveston
 								}),
 							},
 						}),

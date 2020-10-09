@@ -17,10 +17,12 @@ _.Zones =
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 									["coord"] = { 47.0, 39.6, 641 },
+									["questID"] = 40279,	-- Training with Durian
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
 									["coord"] = { 63.6, 60.6, 641 },
+									["questID"] = 41860,	-- Dealing with Satyrs
 								}),
 							},
 						}),
@@ -31,10 +33,12 @@ _.Zones =
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 									["coord"] = { 47.0, 39.6, 641 },
+									["questID"] = 40279,	-- Training with Durian
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
 									["coord"] = { 63.6, 60.6, 641 },
+									["questID"] = 41860,	-- Dealing with Satyrs
 								}),
 							},
 						}),
@@ -45,10 +49,12 @@ _.Zones =
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 									["coord"] = { 47.0, 39.6, 641 },
+									["questID"] = 40279,	-- Training with Durian
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
 									["coord"] = { 63.6, 60.6, 641 },
+									["questID"] = 41860,	-- Dealing with Satyrs
 								}),
 							},
 						}),
@@ -59,10 +65,12 @@ _.Zones =
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 									["coord"] = { 47.0, 39.6, 641 },
+									["questID"] = 40279,	-- Training with Durian
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
 									["coord"] = { 63.6, 60.6, 641 },
+									["questID"] = 41860,	-- Dealing with Satyrs
 								}),
 							},
 						}),
@@ -73,10 +81,12 @@ _.Zones =
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 									["coord"] = { 47.0, 39.6, 641 },
+									["questID"] = 40279,	-- Training with Durian
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
 									["coord"] = { 63.6, 60.6, 641 },
+									["questID"] = 41860,	-- Dealing with Satyrs
 								}),
 							},
 						}),
@@ -87,10 +97,12 @@ _.Zones =
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 									["coord"] = { 47.0, 39.6, 641 },
+									["questID"] = 40279,	-- Training with Durian
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
 									["coord"] = { 63.6, 60.6, 641 },
+									["questID"] = 41860,	-- Dealing with Satyrs
 								}),
 							},
 						}),
@@ -101,10 +113,12 @@ _.Zones =
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 									["coord"] = { 47.0, 39.6, 641 },
+									["questID"] = 40279,	-- Training with Durian
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
 									["coord"] = { 63.6, 60.6, 641 },
+									["questID"] = 41860,	-- Dealing with Satyrs
 								}),
 							},
 						}),
@@ -115,10 +129,12 @@ _.Zones =
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 									["coord"] = { 47.0, 39.6, 641 },
+									["questID"] = 40279,	-- Training with Durian
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
 									["coord"] = { 63.6, 60.6, 641 },
+									["questID"] = 41860,	-- Dealing with Satyrs
 								}),
 							},
 						}),
@@ -129,10 +145,12 @@ _.Zones =
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 									["coord"] = { 47.0, 39.6, 641 },
+									["questID"] = 40279,	-- Training with Durian
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
 									["coord"] = { 63.6, 60.6, 641 },
+									["questID"] = 41860,	-- Dealing with Satyrs
 								}),
 							},
 						}),
@@ -143,10 +161,12 @@ _.Zones =
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
 									["coord"] = { 47.0, 39.6, 641 },
+									["questID"] = 40279,	-- Training with Durian
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
 									["coord"] = { 63.6, 60.6, 641 },
+									["questID"] = 41860,	-- Dealing with Satyrs
 								}),
 							},
 						}),
