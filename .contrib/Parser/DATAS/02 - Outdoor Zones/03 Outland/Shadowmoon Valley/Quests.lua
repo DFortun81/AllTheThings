@@ -882,7 +882,7 @@ _.Zones =
 						497,	-- The Black Temple (Temple Summit)
 					},
 					["g"] = {
-						spell(101508),	-- The Codex of Xerrath
+						sp(101508), -- The Codex of Xerrath
 					},
 				}),
 				q(32340, {	-- Plunder the Black Temple

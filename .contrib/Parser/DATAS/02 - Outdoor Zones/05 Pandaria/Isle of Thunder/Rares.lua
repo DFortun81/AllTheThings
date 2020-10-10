@@ -202,6 +202,7 @@ _.Zones =
 					},
 				}),
 				i(92426, {	-- Sealed Tome of the Lost Legion
+					["spellID"] = 101508, -- The Codex of Xerrath
 					["collectible"] = true,
 					["classes"] = { WARLOCK },
 					["crs"] = {
@@ -215,9 +216,6 @@ _.Zones =
 						70003,	-- Molthor
 						69664,	-- Mumta
 						69997,	-- Progenitus
-					},
-					["g"] = {
-						sp(101508),	-- The Codex of Xerrath
 					},
 				}),
 				i(94221, {	-- Shan'ze Ritual Stone

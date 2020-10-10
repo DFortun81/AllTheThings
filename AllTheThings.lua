@@ -14322,15 +14322,18 @@ local ProcessAuctionData = function()
 	if searchResultsByKey.spellID then
 		local filteredItems = {};
 		for key,entry in pairs(searchResultsByKey.spellID) do
-			if entry.filterID then
-				local filterData = filteredItems[entry.filterID];
-				if not filterData then
-					filterData = {};
-					filteredItems[entry.filterID] = filterData;
+			local filterID = entry.filterID or entry.f;
+			if filterID then
+				if filterID ~= 0 then
+					local filterData = filteredItems[filterID];
+					if not filterData then
+						filterData = {};
+						filteredItems[filterID] = filterData;
+					end
+					filterData[key] = entry;
 				end
-				filterData[key] = entry;
 			else
-				print("Spell " .. entry.spellID .. " (Item ID #" .. (entry.itemID or "???") .. " is missing a filterID?");
+				print("Spell " .. entry.spellID .. " (Item ID #" .. (entry.itemID or "???") .. ") is missing a filterID?");
 			end
 		end
 		
