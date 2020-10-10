@@ -46,12 +46,11 @@ _.Zones =
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				{	---------- An Unusual Tome
-					["questID"] = 32295,	-- An Unusual Tome
+				q(32295, {	-- An Unusual Tome
+					["provider"] = { "i", 92441 },	-- The Codex of Xerrath
 					["description"] = "This is part of the Warlock's green fire questline, and is available after you combine Sealed Tome of the Lost Legion with a healthstone.",
 					["classes"] = { WARLOCK },
-					["itemID"] = 92441,	-- The Codex of Xerrath
-				},
+				}),
 				q(32525, {	-- Ashes of the Enemy (A)
 					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,

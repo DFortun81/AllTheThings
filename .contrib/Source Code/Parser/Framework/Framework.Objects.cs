@@ -1184,27 +1184,27 @@ namespace ATT
                                 item["g"] = groups;
                             }
 
-                            try
+                            //try
+                            //{
+                            // Attempt to merge the sub groups together.
+                            if (value is List<object> list)
                             {
-                                // Attempt to merge the sub groups together.
-                                if (value is List<object> list)
-                                {
-                                    Merge(groups, list);
-                                }
-                                else if (value is Dictionary<object, object> dict)
-                                {
-                                    Merge(groups, dict.Values.ToList());
-                                }
-                                else
-                                {
-                                    Trace.WriteLine(ToJSON(value));
-                                    Console.ReadLine();
-                                }
+                                Merge(groups, list);
                             }
-                            catch
+                            else if (value is Dictionary<object, object> dict)
+                            {
+                                Merge(groups, dict.Values.ToList());
+                            }
+                            else
                             {
                                 Trace.WriteLine(ToJSON(value));
+                                Console.ReadLine();
                             }
+                            //}
+                            //catch
+                            //{
+                            //    Trace.WriteLine(ToJSON(value));
+                            //}
                             break;
                         }
 
@@ -1443,8 +1443,13 @@ namespace ATT
                                         else list = dict.Values.ToList();
                                     }
 
+                                    string costType = list[0].ToString();
+                                    // ensure the cost has the appropriate number of objects based on type
+                                    if ((costType == "i" || costType == "c") && list.Count != 3)
+                                        throw new InvalidDataException("'cost' tag expects a list of sub-lists of 2 (for gold amounts) or 3 values each, i.e. [\"cost\"] = { { type, id, count }, { \"g\", 100000 }, ... }");
+
                                     // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                                    if (list[0].ToString() == "i")
+                                    if (costType == "i")
                                     {
                                         int itemID = Convert.ToInt32(list[1]);
                                         Items.MarkItemAsReferenced(itemID);
