@@ -14589,7 +14589,7 @@ app.OpenAuctionModule = function(self)
 						},
 						{
 							["text"] = "Toggle Debug Mode",
-							["icon"] = "INTERFACE/ICONS/INV_Scarab_Crystal",
+							["icon"] = "INTERFACE/ICONS/INV_MISC_WRENCH_02",
 							["description"] = "Click this button to toggle debug mode to show everything regardless of filters!",
 							["visible"] = true,
 							["priority"] = -2,
@@ -14610,7 +14610,7 @@ app.OpenAuctionModule = function(self)
 						},
 						{
 							["text"] = "Toggle Account Mode",
-							["icon"] = "INTERFACE/ICONS/INV_Misc_Book_01",
+							["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_GUILDPERK_HAVEGROUP WILLTRAVEL",
 							["description"] = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.",
 							["visible"] = true,
 							["priority"] = -1,
@@ -14630,13 +14630,19 @@ app.OpenAuctionModule = function(self)
 						},
 						{
 							["text"] = "Toggle Unobtainable Items",
-							["icon"] = "INTERFACE/ICONS/INV_Misc_Book_01",
-							["description"] = "Turn this setting on if you want to show Unobtainable items.",
+							["icon"] = "INTERFACE/ICONS/SPELL_BROKENHEART",
+							["description"] = "Click this button to see currently unobtainable items in the auction data.",
 							["visible"] = true,
 							["priority"] = 0,
 							["OnClick"] = function()
-								local val = app.GetDataMember("UnobtainableItemFilters");
-								val[7] = not val[7];
+								local val = app.GetDataMember("UnobtainableItemFilters")
+								if val[7] then val[7] = false else val[7] = true end
+								for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+									if v[1] == 1 or v[1] == 2 or v[1] == 3 then
+										if k == 7 then -- Do nothing for id 7
+										elseif val[k] then val[k] = not val[k] else val[k] = true end
+									end
+								end
 								app.Settings:Refresh();
 								app:RefreshData();
 							end,
