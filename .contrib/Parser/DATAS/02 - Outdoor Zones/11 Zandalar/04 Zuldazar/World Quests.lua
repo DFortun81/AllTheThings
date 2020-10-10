@@ -568,6 +568,12 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(51010, {	-- Work Order: Coarse Leather
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = SKINNING,
+						["isWorldQuest"] = true,
+					}),
 					q(52393, {	-- Work Order: Contract: Tortollan Seekers
 						["lvl"] = 120,
 						["requireSkill"] = INSCRIPTION,
