@@ -14270,38 +14270,48 @@ local ProcessAuctionData = function()
 	for i=0,60,1 do coroutine.yield(); end
 	
 	-- Search the ATT Database for information related to the auction links (items, species, etc)
+	local filterID;
 	local searchResultsByKey, searchResult, searchResults, key, keys, value, data = {};
 	for k,v in pairs(AllTheThingsAuctionData) do
 		searchResults = SearchForLink(v.itemLink);
-		if searchResults and #searchResults > 0 then
-			searchResult = searchResults[1];
-			key = searchResult.key;
-			if key == "npcID" then
-				if searchResult.itemID then
-					key = "itemID";
+		if searchResults then
+			if #searchResults > 0 then
+				searchResult = searchResults[1];
+				key = searchResult.key;
+				if key == "npcID" then
+					if searchResult.itemID then
+						key = "itemID";
+					end
+				elseif key == "spellID" then
+					local AuctionDataItemKeyOverrides = {
+						[92426] = "itemID", -- Sealed Tome of the Lost Legion
+					};
+					if AuctionDataItemKeyOverrides[searchResult.itemID] then
+						key = AuctionDataItemKeyOverrides[searchResult.itemID]
+					end
 				end
-			end
-			value = searchResult[key];
-			keys = searchResultsByKey[key];
-			
-			-- Make sure that the key type is represented.
-			if not keys then
-				keys = {};
-				searchResultsByKey[key] = keys;
-			end
-			
-			-- First time this key value was used.
-			data = keys[value];
-			if not data then
-				data = CreateObject(searchResult);
-				for i=2,#searchResults,1 do
-					MergeObject(data, CreateObject(searchResults[i]));
+				value = searchResult[key];
+				keys = searchResultsByKey[key];
+				
+				-- Make sure that the key type is represented.
+				if not keys then
+					keys = {};
+					searchResultsByKey[key] = keys;
 				end
-				if data.key == "npcID" then setmetatable(data, app.BaseItem); end
-				data.auctions = {};
-				keys[value] = data;
+				
+				-- First time this key value was used.
+				data = keys[value];
+				if not data then
+					data = CreateObject(searchResult);
+					for i=2,#searchResults,1 do
+						MergeObject(data, CreateObject(searchResults[i]));
+					end
+					if data.key == "npcID" then setmetatable(data, app.BaseItem); end
+					data.auctions = {};
+					keys[value] = data;
+				end
+				table.insert(data.auctions, v.itemLink);
 			end
-			table.insert(data.auctions, v.itemLink);
 		end
 	end
 	
@@ -14322,23 +14332,21 @@ local ProcessAuctionData = function()
 	if searchResultsByKey.spellID then
 		local filteredItems = {};
 		for key,entry in pairs(searchResultsByKey.spellID) do
-			local filterID = entry.filterID or entry.f;
+			filterID = entry.filterID or entry.f;
 			if filterID then
-				if filterID ~= 0 then
-					local filterData = filteredItems[filterID];
-					if not filterData then
-						filterData = {};
-						filteredItems[filterID] = filterData;
-					end
-					filterData[key] = entry;
+				local filterData = filteredItems[filterID];
+				if not filterData then
+					filterData = {};
+					filteredItems[filterID] = filterData;
 				end
+				filterData[key] = entry;
 			else
 				print("Spell " .. entry.spellID .. " (Item ID #" .. (entry.itemID or "???") .. ") is missing a filterID?");
 			end
 		end
 		
 		if filteredItems[100] then searchResultsByKey.mountID = filteredItems[100]; end	-- Mounts
-		if filteredItems[200] then searchResultsByKey.recipeID = filteredItems[200]; end	-- Recipes
+		if filteredItems[200] then searchResultsByKey.recipeID = filteredItems[200]; end -- Recipes
 		searchResultsByKey.spellID = nil;
 	end
 	
@@ -14347,11 +14355,12 @@ local ProcessAuctionData = function()
 		local cachedS = searchResultsByKey.s;
 		searchResultsByKey.s = {};
 		for sourceID,entry in pairs(cachedS) do
-			if entry.f then
+			filterID = entry.filterID or entry.f;
+			if filterID then
 				local filterData = filteredItems[entry.f];
 				if not filterData then
-					filterData = setmetatable({ ["filterID"] = entry.f, ["g"] = {} }, app.BaseFilter);
-					filteredItems[entry.f] = filterData;
+					filterData = setmetatable({ ["filterID"] = filterID, ["g"] = {} }, app.BaseFilter);
+					filteredItems[filterID] = filterData;
 					table.insert(searchResultsByKey.s, filterData);
 				end
 				table.insert(filterData.g, entry);
