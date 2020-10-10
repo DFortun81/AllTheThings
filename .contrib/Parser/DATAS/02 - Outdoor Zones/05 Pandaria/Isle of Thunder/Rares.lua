@@ -216,6 +216,9 @@ _.Zones =
 						69664,	-- Mumta
 						69997,	-- Progenitus
 					},
+					["g"] = {
+						sp(101508),	-- The Codex of Xerrath
+					},
 				}),
 				i(94221, {	-- Shan'ze Ritual Stone
 					["description"] = "You will need 3 stones to summon these rares at their specific spawn points.",
