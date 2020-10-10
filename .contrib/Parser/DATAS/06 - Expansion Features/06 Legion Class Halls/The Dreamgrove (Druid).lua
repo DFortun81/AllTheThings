@@ -1019,9 +1019,13 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 46318 },	-- Defense of Aviana
 							["classes"] = { DRUID },
 							["g"] = {
+								--[[ Lightsky: The spellID associated with this item, 231437, isn't taught to the player. It's cast on the player
+									changing the model of the flight form. There are several spell IDs for this 'mount', so not sure if all races
+									use the same spell or differing spells per model.
 								i(143638, {	-- Archdruid's Lunarwing Form (Druid)
 									["classes"] = { DRUID },
 								}),
+								]]
 							},
 						}),
 					}),
