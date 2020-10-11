@@ -3111,6 +3111,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		
 		-- Cache the result for a while depending on if there is more work to be done.
+		group.working = working;
 		cache[2] = (working and 0.01) or 100000000;
 		cache[3] = group;
 		return group;
@@ -4344,15 +4345,17 @@ local function AttachTooltipRawSearchResults(self, group)
 				rightSide:Show();
 			end
 		end
+		
+		self.AttachComplete = not group.working;
 	end
 end
 local function AttachTooltipSearchResults(self, search, method, paramA, paramB, ...)
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 end
 local function AttachTooltip(self)
+	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
 	if not self.AllTheThingsProcessing then
 		self.AllTheThingsProcessing = true;
-		self.UpdateTooltip = function(self) return; end
 		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			local numLines = self:NumLines();
 			if numLines > 0 then
@@ -4383,6 +4386,10 @@ local function AttachTooltip(self)
 								return true;
 							end
 						end
+					end
+					if not owner.UpdateTooltip then
+						-- print("Attach-SetSelfUpdate");
+						self.UpdateTooltip = function(self) return; end
 					end
 				end
 				
@@ -4422,12 +4429,14 @@ local function AttachTooltip(self)
 				-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
 				local spellID = select(2, self:GetSpell());
 				if spellID then
+					-- print("Search spellID",spellID);
 					AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForField, "spellID", spellID);
-					self:Show();
+					-- self:Show();
 					if owner and owner.ActiveTexture then
+						-- print("Stop Processing");
 						self.AllTheThingsProcessing = nil;
 					end
-					return true;
+					-- return true;
 				end
 				
 				-- Does the tooltip have an itemlink?
@@ -4439,13 +4448,16 @@ local function AttachTooltip(self)
 					if AllTheThingsAuctionData[itemID] then
 						self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
 					end]]
+					-- print("Search Item",itemID);
 					AttachTooltipSearchResults(self, link, SearchForLink, link);
 				end
 				
 				-- Does the tooltip have an owner?
 				if owner then
 					-- If the owner has a ref, it's an ATT row. Ignore it.
-					if owner.ref then return true; end
+					if owner.ref then 
+						-- print("owner-ATT-row");
+						return true; end
 					
 					--[[--
 					-- Debug all of the available fields on the owner.
@@ -4501,12 +4513,14 @@ local function AttachTooltip(self)
 						self:AddDoubleLine(L["TITLE"], GetProgressColorText(reference.progress, reference.total), 1, 1, 1);
 						self:AddDoubleLine(app.Settings:GetModeString(), app.GetNumberOfItemsUntilNextPercentage(reference.progress, reference.total), 1, 1, 1);
 						self:AddLine(reference.description, 0.4, 0.8, 1, 1);
+						self.AttachComplete = true;
 						return true;
 					end
 				end
 			end
 		end
 	end
+	-- print("AttachTooltip-Return");
 end
 local function AttachBattlePetTooltip(self, data, quantity, detail)
 	if not data or data.att or not data.speciesID then return end
@@ -4539,8 +4553,12 @@ local function AttachBattlePetTooltip(self, data, quantity, detail)
 	return true;
 end
 local function ClearTooltip(self)
+	-- print("Clear Tooltip");
 	self.AllTheThingsProcessing = nil;
+	self.AttachComplete = nil;
+	self.MiscFieldsComplete = nil;
 	self.UpdateTooltip = nil;
+	-- return nil + 1;
 end
 
 -- Tooltip Hooks
@@ -9677,26 +9695,32 @@ RowOnEnter = function (self)
 		GameTooltip.IsRefreshing = true;
 		
 		if initialBuild then
+			-- print("RowOnEnter-Initial");
 			GameTooltipIcon.icon.Background:Hide();
 			GameTooltipIcon.icon.Border:Hide();
 			GameTooltipIcon:Hide();
 			GameTooltipIcon:ClearAllPoints();
 			GameTooltipModel:Hide();
 			GameTooltipModel:ClearAllPoints();
-		end
-		GameTooltip:ClearLines();
-		if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
-			GameTooltip:SetOwner(self, "ANCHOR_LEFT");
-			if initialBuild then
+			
+			if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
+				GameTooltip:SetOwner(self, "ANCHOR_LEFT");
 				GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 				GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-			end
-		else
-			GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
-			if initialBuild then
+			else
+				GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
 				GameTooltipIcon:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
 				GameTooltipModel:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
 			end
+		else
+			-- print("RowOnEnter-IsRefreshing");
+			-- complete tooltip already exists and hasn't been cleared elsewhere, don' touch it
+			if GameTooltip.AttachComplete and GameTooltip.MiscFieldsComplete and GameTooltip:NumLines() > 0 then 
+				-- print("RowOnEnter, complete"); 
+				return;
+			end
+			-- need to clear the tooltip if it is being refreshed, setting the same link again will hide it instead
+			GameTooltip:ClearLines();
 		end
 		
 		-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
@@ -9722,12 +9746,21 @@ RowOnEnter = function (self)
 				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
 			elseif not (reference.encounterID or reference.followerID) then
 				local link = reference.link;
-				if link then pcall(GameTooltip.SetHyperlink, GameTooltip, link); end
+				if link then 
+					-- print("OnRowEnter-Setlink",link); 
+					pcall(GameTooltip.SetHyperlink, GameTooltip, link);
+				end
 			end
 		end
 		
 		-- Miscellaneous fields
-		if GameTooltip:NumLines() < 1 then GameTooltip:AddLine(self.Label:GetText()); end
+		-- print("Adding misc fields");
+		if GameTooltip:NumLines() < 1 then
+			-- nothing in the tooltip yet, so it will simply be a basic one-pass tooltip
+			-- print("empty, one-pass");
+			GameTooltip.AttachComplete = true;
+			GameTooltip:AddLine(self.Label:GetText());
+		end
 		if app.Settings:GetTooltipSetting("Progress") then
 			if reference.total and reference.total >= 2 then
 				-- if collecting this reference type, then show Collection State
@@ -10222,7 +10255,10 @@ RowOnEnter = function (self)
 				GameTooltip:AddLine(L["TOP_ROW_TO_LOCK"], 1, 1, 1);
 			end
 		end
+		-- print("OnRowEnter-Show");
+		GameTooltip.MiscFieldsComplete = true;
 		GameTooltip:Show();
+		-- print("OnRowEnter-Return");
 	end
 end
 RowOnLeave = function (self)
@@ -14228,6 +14264,7 @@ hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, itemID, reage
 		self:Show();
 	end
 end)
+-- GameTooltip:HookScript("OnShow", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
@@ -14251,7 +14288,7 @@ WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipCleared", ClearTooltip)
 WorldMapTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 WorldMapTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
-WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
+-- WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnShow", AttachTooltip);
 
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
