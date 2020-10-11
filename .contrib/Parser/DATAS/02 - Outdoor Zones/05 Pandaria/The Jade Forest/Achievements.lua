@@ -40,7 +40,7 @@ _.Zones =
 						["coord"] = { 55.88, 56.84, 371 },
 					}),
 				}),
-				ach(6300, {	-- Upjade Complete [Alliance]
+				ach(6300, {	-- Upjade Complete (A)
 					["races"] = ALLIANCE_ONLY,	-- Alliance
 					["g"] = {
 						crit(1,  {	-- Paw'don Village
@@ -50,7 +50,7 @@ _.Zones =
 							["sourceQuests"] = { 29894 },	-- Spirits of the Water
 						}),
 						crit(3,  {	-- The White Pawn
-						--	["sourceQuests"] = { },	-- 
+							["sourceQuests"] = { 29901 },	-- Anduin's Decision
 						}),
 						crit(4,  {	-- Pearlfin Village
 							["sourceQuests"] = {
@@ -61,8 +61,9 @@ _.Zones =
 						crit(5,  {	-- Dawn's Blossom
 							["sourceQuests"] = {
 								29920,	-- Getting Permission
-								29882,	-- Quill of Stingers
-								-- TODO: this is missing quests. Possibilities:
+								29882,	-- Quill of Stingers (definitely required, attached to criteria on wowhead as 'final quest')
+								29723,	-- The Jade Witch (definitely required, triggered when i turned this in)
+								-- TODO: possibly also requires the following quest:
 								-- 29881,	-- The Perfect Color
 							},
 						}),
@@ -83,6 +84,7 @@ _.Zones =
 							["sourceQuests"] = { 30000 },	-- The Jade Serpent
 						}),
 						crit(10, {	-- Nectarbreeze Orchard
+						--	TODO: possibly also requires "Unbound" (#29587), turned in at the same time as Maul Gormal
 							["sourceQuests"] = { 29670 },	-- Maul Gormal
 						}),
 						crit(11, {	-- The Battle for the Forest
@@ -97,7 +99,7 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(6534, {	-- Upjade Complete [Horde]
+				ach(6534, {	-- Upjade Complete (H)
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1,  {	-- The Remains of Hellscream's Fist
@@ -115,8 +117,9 @@ _.Zones =
 						crit(5,  {	-- Dawn's Blossom
 							["sourceQuests"] = {
 								29920,	-- Getting Permission
-								29882,	-- Quill of Stingers
-								-- TODO: this is missing quests. Possibilities:
+								29882,	-- Quill of Stingers (definitely required, attached to criteria on wowhead as 'final quest')
+								29723,	-- The Jade Witch (definitely required, triggered when i turned this in)
+								-- TODO: possibly also requires the following quest:
 								-- 29881,	-- The Perfect Color
 							},
 						}),
