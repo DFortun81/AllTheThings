@@ -390,9 +390,9 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52321, {	-- Kickers
-						["npcID"] = 141029,	-- Kickers
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
+						["crs"] = { 141029 },	-- Kickers
 					}),
 					q(54328, {	-- Knight-Captain Joesiph (Faction Assault WQ)
 						["lvl"] = 110,

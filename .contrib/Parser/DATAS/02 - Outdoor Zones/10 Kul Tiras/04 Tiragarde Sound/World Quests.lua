@@ -505,6 +505,10 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(52780, {	-- Siege of Boralus: Breaking The Alliance
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+					}),
 					q(52763, {	-- Siege of Boralus: Breaking Their Ranks
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
