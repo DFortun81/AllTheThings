@@ -952,6 +952,7 @@ _.Zones =
 									i(164271),	-- Plundered Torga Blessed Bulwark
 								}),
 								n(-319, {	-- Weapons
+									i(164301),	-- Plundered Barb-Edged Dagger
 									i(164270),	-- Plundered Berserker's Poleaxe
 									i(164364),	-- Plundered Carapace Linked Longsword
 									i(164275),	-- Plundered Desert Hexxer

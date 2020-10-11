@@ -50,10 +50,13 @@ _.Zones =
 							["sourceQuests"] = { 29894 },	-- Spirits of the Water
 						}),
 						crit(3,  {	-- The White Pawn
-						--	["sourceQuests"] = {  },	--
+						--	["sourceQuests"] = { },	-- 
 						}),
 						crit(4,  {	-- Pearlfin Village
-						--	["sourceQuests"] = {  },	--
+							["sourceQuests"] = {
+								29906,	-- Carp Diem
+								29905,	-- Let Them Burn
+							},
 						}),
 						crit(5,  {	-- Dawn's Blossom
 							["sourceQuests"] = {
