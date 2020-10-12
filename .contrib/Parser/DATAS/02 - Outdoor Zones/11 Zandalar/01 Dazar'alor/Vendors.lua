@@ -194,6 +194,7 @@ _.Zones =
 										}),
 									},
 								}),
+								i(173736),	-- Layered Information Kernel of E-steam (looted on Alliance -- is there one for each faction, or just two of the same rep token?)
 								i(163621, {	-- Rusted Horde Insignia
 									["description"] = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
 									["coord"] = { 58, 62.6, 862 },
