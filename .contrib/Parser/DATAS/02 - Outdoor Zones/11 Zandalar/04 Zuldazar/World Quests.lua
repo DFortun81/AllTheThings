@@ -636,6 +636,12 @@ _.Zones =
 							i(162290),	-- Recipe: Ravenberry Tarts [Rank 3]
 						},
 					}),
+					q(52420, {	-- Work Order: Shimmerscale Diving Suit
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = LEATHERWORKING,
+						["isWorldQuest"] = true,
+					}),
 					q(52351, {	-- Work Order: Spiced Snapper [Rank 3]
 						["lvl"] = 120,
 						["requireSkill"] = COOKING,

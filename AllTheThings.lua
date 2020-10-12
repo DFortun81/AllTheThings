@@ -4352,6 +4352,25 @@ end
 local function AttachTooltipSearchResults(self, search, method, paramA, paramB, ...)
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 end
+-- local function CheckAttachTooltip(self, elapsed)
+	-- -- print("OnUpdate",elapsed);
+	-- -- run the UpdateTooltip if it exists
+	-- if self.UpdateTooltip then
+		-- -- only allow OnUpdate to process 4x per second, very slow
+		-- self.NextUpdate = (self.NextUpdate or .25) - elapsed;
+		-- -- print("NextUpdate",self.NextUpdate);
+		-- if self.NextUpdate > 0 then return; end
+		-- -- reset update frequency
+		-- self.NextUpdate = nil;
+		-- self.AllTheThingsProcessing = nil;
+		-- print(":UpdateTooltip()");
+		-- self:UpdateTooltip();
+		-- -- print(".UpdateTooltip(self)");
+		-- -- self:UpdateTooltip(self);
+		-- -- print(".UpdateTooltip(self)");
+		-- -- self.UpdateTooltip(self);
+	-- end
+-- end
 local function AttachTooltip(self)
 	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
 	if not self.AllTheThingsProcessing then
@@ -4387,12 +4406,13 @@ local function AttachTooltip(self)
 							end
 						end
 					end
-					if not owner.UpdateTooltip then
-						-- print("Attach-SetSelfUpdate");
-						self.UpdateTooltip = function(self) return; end
-					end
 				end
-				
+			
+				if not owner or not owner.UpdateTooltip then
+					-- print("Attach-SetSelfUpdate");
+					self.UpdateTooltip = AttachTooltip;
+				end
+			
 				-- Does the tooltip have a target?
 				local target = select(2, self:GetUnit());
 				if target then
@@ -4454,6 +4474,7 @@ local function AttachTooltip(self)
 				
 				-- Does the tooltip have an owner?
 				if owner then
+					-- print("AttachTooltip-HasOwner");
 					-- If the owner has a ref, it's an ATT row. Ignore it.
 					if owner.ref then 
 						-- print("owner-ATT-row");
@@ -4518,6 +4539,14 @@ local function AttachTooltip(self)
 					end
 				end
 			end
+		end
+		if self.AttachComplete then
+			-- print("AttachTooltip-Complete");
+			self.UpdateTooltip = nil;
+			-- self.AllTheThingsProcessing = nil;
+		-- else
+			-- print("AttachTooltip-Working");
+			-- self.AllTheThingsProcessing = false;
 		end
 	end
 	-- print("AttachTooltip-Return");
@@ -14265,6 +14294,7 @@ hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, itemID, reage
 	end
 end)
 -- GameTooltip:HookScript("OnShow", AttachTooltip);
+-- GameTooltip:HookScript("OnUpdate", CheckAttachTooltip);
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
