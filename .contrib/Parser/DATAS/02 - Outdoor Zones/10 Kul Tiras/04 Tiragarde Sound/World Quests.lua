@@ -17,10 +17,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53874, {	-- End Their Vigil
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(54119, {	-- Hartford Sternbach
 						["isWorldQuest"] = true,
 						["lvl"] = 110,
@@ -250,6 +246,10 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(53874, {	-- End Their Vigil
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
 					}),
 					q(51311, {	-- Energizing Extract
 						["lvl"] = 120,
