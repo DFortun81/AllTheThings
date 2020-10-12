@@ -130,7 +130,7 @@ _.Zones =
 						29899,	-- Rest in Peace
 						29898,	-- Sacred Waters
 					},
-					["description"] = "Automatically given when prequisites have been fulfilled.",
+					["description"] = "Automatically given when prerequisites have been fulfilled.",
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30065, {	-- Arrows of Fortune
@@ -291,7 +291,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31486, {	-- Everything I Know About Cooking (A)
-				--	this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
+					--	this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
 					["requireSkill"] = COOKING,	-- this is technically a 'cooking' quest, but can be picked up by characters without the profession.
 					["provider"] = { "n", 56707 },	-- Chin
 					["coord"] = { 46.2, 45.4, 371 },
@@ -684,7 +684,7 @@ _.Zones =
 					["coord"] = { 48.5, 20.6, 371 },
 				}),
 				q(29882, {	-- Quill of Stingers
-				--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy,' but may be available sooner
+					--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy,' but may be available sooner
 					["sourceQuests"] = { 29866 },	-- The Threads That Stick
 					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
 					["coord"] = { 55.3, 45.3, 371 },
@@ -950,7 +950,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29881, {	-- The Perfect Color
-				--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy,' but may be available sooner
+					--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy,' but may be available sooner
 					["sourceQuests"] = { 29866 },	-- The Threads That Stick
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 					["coord"] = { 54.8, 45.3, 371 },
