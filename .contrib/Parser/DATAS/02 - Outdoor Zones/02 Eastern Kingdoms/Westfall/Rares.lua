@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -75,7 +76,7 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6205)),		-- Burrowing Shovel
 					},
-				}),			
+				}),
 				n(506,  {	-- Sergeant Brashclaw
 					["coords"] = {
 						{ 64.0, 73.8, 52 },

@@ -1,6 +1,7 @@
------------------------------------------------------
---     W O R L D   E V E N T S   M O D U L E       --
------------------------------------------------------
+---------------------------------------------
+--    C R A F T A B L E S   M O D U L E    --
+---------------------------------------------
+
 _.Craftables =
 {
 	tier(8, {	-- Battle For Azeroth
@@ -13,6 +14,28 @@ _.Craftables =
 			}),
 			filter(101, {	-- Battle Pets
 				i(165849),	-- Mechantula
+			}),
+			filter(102, {	-- Toys
+				i(168667, { -- Blingtron 7000
+					q(56042, { -- Blingtron 7000
+						["provider"] = { "n", 153897 },    -- Blingtron 7000
+						["isDaily"] = true,
+						["g"] = {
+							i(168740, {	-- Blingtron 7000 Gift Package
+								i(87250),	-- Depleted-Kyparium Rocket Mount
+								i(87251),	-- Geosynchronous World Spinner Mount
+								i(112057),	-- Lifelike Mechanical Frostboar Pet
+								i(136911),	-- Knockoff Blingtron -- https://www.wowhead.com/item=168740/blingtron-7000-gift-package#comments:id=3210510
+								i(103670),	-- Lil' Bling Pet
+								i(41508),	-- Mechano-Hog Mount
+								i(44413),	-- Mekgineer's Chopper Mount
+								--i(115483),	-- Sky-Bo Pet -- one random report with no screenshot
+							}),
+						},
+					}),
+				}),
+				i(168807),	-- Wormhole Generator: Kul Tiras
+				i(168808),	-- Wormhole Generator: Zandalar
 			}),
 			filter(23, {	-- 1H Maces
 				i(159937),	-- Honorable Combatant's Discombobulator
@@ -147,26 +170,6 @@ _.Craftables =
 						i(165915),	-- Schematic: SP1-R1-73D Orthogonal Optics
 					}),
 				}),
-			}),
-			n(-494, {	-- Miscellaneous
-				n(153897, {	-- Blingtron 7000
-					i(168740, {	-- Blingtron 7000 Gift Package
-						["questID"] = 56042,
-						["isDaily"] = true,
-						["g"] = {
-							i(87250),	-- Depleted-Kyparium Rocket Mount
-							i(112057),	-- Lifelike Mechanical Frostboar Pet
-							i(103670),	-- Lil' Bling Pet
-							i(41508),	-- Mechano-Hog Mount
-							i(44413),	-- Mekgineer's Chopper Mount
-						},
-					}),
-				}),
-			}),
-			filter(102, {	-- Toys
-				i(168667),	-- Blingtron 7000
-				i(168807),	-- Wormhole Generator: Kul Tiras
-				i(168808),	-- Wormhole Generator: Zandalar
 			}),
 		}),
 	}),

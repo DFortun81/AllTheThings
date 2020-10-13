@@ -63,11 +63,11 @@ _.Zones =
 						i(53570),	-- Bloodpetal Cloak
 					},
 				}),
-				q(24698, {	-- Adventures in Archaeology -- TODO:: determine the specific questIDs that unlock this
+				q(24698, {	-- Adventures in Archaeology
+					["isBreadcrumb"] = true,
+					["sourceQuest"] = 24693,	-- Mossy Pile
 					["provider"] = { "n", 38270 },	-- Nolen Tacker
 					["coord"] = { 55.0, 60.5, 78 },
-					["description"] = "Available after completing all quests at Mossy Pile.",
-					["isBreadcrumb"] = true,
 				}),
 				q(3883, {	-- Alien Ecology
 					["u"] = REMOVED_FROM_GAME,
@@ -469,7 +469,7 @@ _.Zones =
 					},
 				}),
 				q(24794, {	-- Speak With Spraggle
-					["description"] = "This quest won't be available if you complete |cFFFFD700Mossy Pile|r first.",
+					["description"] = "This quest won't be available if you complete |cFFFFD700Shizzle's Flyer|r first.",
 					["provider"] = { "n", 10302 },	-- Krakle
 					["coord"] = { 55.3, 62.4, 78 },
 					["sourceQuest"] = 24742,	-- Finding the Source

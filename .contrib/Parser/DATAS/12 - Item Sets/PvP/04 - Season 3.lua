@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
+
 _.GearSets =
 {
 	n(-4189, {	-- PvP Item Sets
@@ -17,7 +18,7 @@ _.GearSets =
 						i(33719),	-- Vengeful Gladiator's Mooncloth Leggings
 						i(33902),	-- Vindicator's Mooncloth Slippers
 					},
-					["classes"] = 5,	-- Priest
+					["classes"] = { PRIEST },
 				}),
 				gs(959, {	-- Vengeful Gladiator's Silk Armor
 					["groups"] = {
@@ -30,7 +31,7 @@ _.GearSets =
 						i(33761),	-- Vengeful Gladiator's Silk Trousers
 						i(33914),	-- Vindicator's Silk Footguards
 					},
-					["classes"] = 8,	-- Mage
+					["classes"] = { MAGE },
 				}),
 				gs(955, {	-- Vengeful Gladiator's Felweave Armor
 					["groups"] = {
@@ -43,7 +44,7 @@ _.GearSets =
 						i(33678),	-- Vengeful Gladiator's Dreadweave Leggings
 						i(33884),	-- Vindicator's Dreadweave Stalkers
 					},
-					["classes"] = 9,	-- Warlock
+					["classes"] = { WARLOCK },
 				}),
 				gs(961, {	-- Vengeful Gladiator's Dragonhide Armor
 					["groups"] = {
@@ -56,7 +57,7 @@ _.GearSets =
 						i(33673),	-- Vengeful Gladiator's Dragonhide Legguards
 						i(33880),	-- Vindicator's Dragonhide Boots
 					},
-					["classes"] = 11,	-- Druid
+					["classes"] = { DRUID },
 				}),
 				gs(957, {	-- Vengeful Gladiator's Leather Armor
 					["groups"] = {
@@ -69,7 +70,7 @@ _.GearSets =
 						i(33702),	-- Vengeful Gladiator's Leather Legguards
 						i(33892),	-- Vindicator's Leather Boots
 					},
-					["classes"] = 4,	-- Rogue
+					["classes"] = { ROGUE },
 				}),
 				gs(960, {	-- Vengeful Gladiator's Chain Armor
 					["groups"] = {
@@ -82,7 +83,7 @@ _.GearSets =
 						i(33667),	-- Vengeful Gladiator's Chain Leggings
 						i(33878),	-- Vindicator's Chain Sabatons
 					},
-					["classes"] = 3,	-- Hunter
+					["classes"] = { HUNTER },
 				}),
 				gs(956, {	-- Vengeful Gladiator's Ringmail Armor
 					["groups"] = {
@@ -95,7 +96,7 @@ _.GearSets =
 						i(33741),	-- Vengeful Gladiator's Ringmail Leggings
 						i(33896),	-- Vindicator's Linked Sabatons
 					},
-					["classes"] = 7,	-- Shaman
+					["classes"] = { SHAMAN },
 				}),
 				gs(958, {	-- Vengeful Gladiator's Scaled Armor
 					["groups"] = {
@@ -108,7 +109,7 @@ _.GearSets =
 						i(33698),	-- Vengeful Gladiator's Lamellar Legguards
 						i(33890),	-- Vindicator's Lamellar Greaves
 					},
-					["classes"] = 2,	-- Paladin
+					["classes"] = { PALADIN },
 				}),
 				gs(954, {	-- Vengeful Gladiator's Plate Armor
 					["groups"] = {
@@ -121,7 +122,7 @@ _.GearSets =
 						i(33731),	-- Vengeful Gladiator's Plate Legguards
 						i(33812),	-- Vindicator's Plate Greaves
 					},
-					["classes"] = 1,	-- Warrior
+					["classes"] = { WARRIOR },
 				}),
 			},
 			["achievementID"] = 11708,	-- With a Vengeance

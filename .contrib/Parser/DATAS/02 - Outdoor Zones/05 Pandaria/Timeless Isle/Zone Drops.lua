@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -377,7 +378,7 @@ _.Zones =
 					},
 				}),
 				i(102280, {	-- Timeless Leather Helm
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101953),	-- Cranefeather Hood
 						i(101874),	-- Fire-Chanter Hood
 					}),
@@ -385,7 +386,7 @@ _.Zones =
 					i(101785),	-- Fire-Chanter Hood
 				}),
 				i(102282, {	-- Timeless Leather Spaulders
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101955),	-- Cranefeather Shoulders
 						i(101876),	-- Fire-Chanter Shoulders
 					}),
@@ -393,7 +394,7 @@ _.Zones =
 					i(101787),	-- Fire-Chanter Shoulders
 				}),
 				i(102277, {	-- Timeless Leather Chestpiece
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101954),	-- Cranefeather Jerkin
 						i(101875),	-- Fire-Chanter Jerkin
 					}),
@@ -401,7 +402,7 @@ _.Zones =
 					i(101786),	-- Fire-Chanter Jerkin
 				}),
 				i(102322, {	-- Timeless Leather Bracers
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101949),	-- Cranefeather Bindings
 						i(101870),	-- Fire-Chanter Bindings
 					}),
@@ -409,7 +410,7 @@ _.Zones =
 					i(101781),	-- Fire-Chanter Bindings
 				}),
 				i(102279, {	-- Timeless Leather Gloves
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101952),	-- Cranefeather Gloves
 						i(101873),	-- Fire-Chanter Gloves
 					}),
@@ -417,7 +418,7 @@ _.Zones =
 					i(101784),	-- Fire-Chanter Gloves
 				}),
 				i(102283, {	-- Timeless Leather Belt
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101956),	-- Cranefeather Waistband
 						i(101877),	-- Fire-Chanter Waistband
 					}),
@@ -425,7 +426,7 @@ _.Zones =
 					i(101788),	-- Fire-Chanter Waistband
 				}),
 				i(102281, {	-- Timeless Leather Leggings
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101951),	-- Cranefeather Britches
 						i(101872),	-- Fire-Chanter Britches
 					}),
@@ -433,7 +434,7 @@ _.Zones =
 					i(101783),	-- Fire-Chanter Britches
 				}),
 				i(102278, {	-- Timeless Leather Boots
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101950),	-- Cranefeather Boots
 						i(101871),	-- Fire-Chanter Boots
 					}),
@@ -462,7 +463,7 @@ _.Zones =
 					},
 				}),
 				i(102273, {	-- Timeless Mail Helm
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101931),	-- Crimsonscale Helm
 						i(101923),	-- Ordon Legend-Keeper Helm
 					}),
@@ -470,7 +471,7 @@ _.Zones =
 					i(101834),	-- Ordon Legend-Keeper Helm
 				}),
 				i(102275, {	-- Timeless Mail Shoulders
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101933),	-- Crimsonscale Spaulders
 						i(101925),	-- Ordon Legend-Keeper Spaulders
 					}),
@@ -478,7 +479,7 @@ _.Zones =
 					i(101836),	-- Ordon Legend-Keeper Spaulders
 				}),
 				i(102270, {	-- Timeless Mail Chestpiece
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101934),	-- Crimsonscale Vest
 						i(101926),	-- Ordon Legend-Keeper Vest
 					}),
@@ -486,7 +487,7 @@ _.Zones =
 					i(101837),	-- Ordon Legend-Keeper Vest
 				}),
 				i(102323, {	-- Timeless Mail Bracers
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101928),	-- Crimsonscale Bracers
 						i(101920),	-- Ordon Legend-Keeper Bracers
 					}),
@@ -494,7 +495,7 @@ _.Zones =
 					i(101831),	-- Ordon Legend-Keeper Bracers
 				}),
 				i(102272, {	-- Timeless Mail Gloves
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101929),	-- Crimsonscale Gauntlets
 						i(101921),	-- Ordon Legend-Keeper Gauntlets
 					}),
@@ -502,7 +503,7 @@ _.Zones =
 					i(101832),	-- Ordon Legend-Keeper Gauntlets
 				}),
 				i(102276, {	-- Timeless Mail Belt
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101927),	-- Crimsonscale Belt
 						i(101919),	-- Ordon Legend-Keeper Belt
 					}),
@@ -510,7 +511,7 @@ _.Zones =
 					i(101830),	-- Ordon Legend-Keeper Belt
 				}),
 				i(102274, {	-- Timeless Mail Leggings
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101932),	-- Crimsonscale Legguards
 						i(101924),	-- Ordon Legend-Keeper Legguards
 					}),
@@ -518,7 +519,7 @@ _.Zones =
 					i(101835),	-- Ordon Legend-Keeper Legguards
 				}),
 				i(102271, {	-- Timeless Mail Boots
-					i(103982, {	 -- Burden of Eternity
+					i(103982, {	-- Burden of Eternity
 						i(101930),	-- Crimsonscale Greaves
 						i(101922),	-- Ordon Legend-Keeper Greaves
 					}),

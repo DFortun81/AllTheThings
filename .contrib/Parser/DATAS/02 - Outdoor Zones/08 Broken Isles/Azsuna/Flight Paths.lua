@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -14,7 +15,7 @@ _.Zones =
 				}),
 				fp(1846, {	-- Faronaar (Eagle)
 					["coord"] = { 24.4, 43.0, 630 },
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 				}),
 				fp(1859, {	-- Felblaze Ingress, Azsuna
 					["coord"] = { 63.8, 28.4, 630 },
@@ -27,7 +28,7 @@ _.Zones =
 				}),
 				fp(1845, {	-- Isle of the Watchers (Eagle)
 					["coord"] = { 51.0, 79.8, 630 },
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 				}),
 				fp(1633, {	-- Shackle's Den, Azsuna
 					["coord"] = { 56.2, 59.0, 630 },

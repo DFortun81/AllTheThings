@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -12,7 +13,7 @@ _.Zones =
 							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey (Undercity)
 							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = ALCHEMY,	
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -21,7 +22,7 @@ _.Zones =
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},]]								
+							},]]
 						}),
 						q(29067, {	-- Potion Master
 							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey (Undercity)
@@ -51,12 +52,12 @@ _.Zones =
 								10902,	-- Elixir Master (Removed)
 								10897,	-- Potion Master (Removed)
 								10899,	-- Transmutation Master (Removed)
-							},]]							
+							},]]
 						}),
 					}),
 				}),
 				prof(FISHING, {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5850, {	-- Fish or Cut Bait: Undercity
 							["races"] = HORDE_ONLY,
 						}),
@@ -64,7 +65,7 @@ _.Zones =
 					n(QUESTS, {
 						q(29317, {	-- Fish Head
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 80.7, 31.2, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -82,7 +83,7 @@ _.Zones =
 						}),
 						q(29320, {	-- Like Pike?
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 80.7, 31.2, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -100,7 +101,7 @@ _.Zones =
 						}),
 						q(29361, {	-- Moat Monster!
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 80.7, 31.2, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -118,7 +119,7 @@ _.Zones =
 						}),
 						q(29319, {	-- Tadpole Terror
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 80.7, 31.2, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -136,7 +137,7 @@ _.Zones =
 						}),
 						q(29322, {	-- Time for Slime
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 80.7, 31.2, 90 },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -155,7 +156,7 @@ _.Zones =
 					}),
 				}),
 				prof(COOKING, {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5844, {	-- Let's Do Lunch: Undercity
 							["races"] = HORDE_ONLY,
 						}),

@@ -240,7 +240,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(32591),	-- Choker of Serrated Blades
 					i(32946),	-- Claw of Molten Fury
 					i(32945),	-- Fist of Molten Fury
-					i(34009),	-- Hammer of Judgement 
+					i(34009),	-- Hammer of Judgement
 					i(32589),	-- Hellfire-Encased Pendant
 					i(32590),	-- Nethervoid Cloak
 					i(34010),	-- Pepe's Shroud of Pacification
@@ -252,14 +252,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(32752),	-- Pattern: Swiftheal Wraps
 					i(32746),	-- Pattern: Swiftstrike Bracers
 					i(32736),	-- Plans: Swiftsteel Bracers
-					{	-- Plans: Dawnsteel Shoulders
-						["itemID"] = 32739,	-- Plans: Dawnsteel Shoulders
-					},
-					{	-- Plans: Dawnsteel Shoulders
-						["itemID"] = 35530,	-- Plans: Dawnsteel Shoulders
+					i(32739),	-- Plans: Dawnsteel Shoulders
+					i(35530, {	-- Plans: Dawnsteel Shoulders
 						["spellID"] = 0,	-- This is now available via 32739, need to delink the old plans from the recipe
 						["u"] = NEVER_IMPLEMENTED,
-					},
+					}),
 				},
 			}),
 			e(1577, {	-- Rage Winterchill

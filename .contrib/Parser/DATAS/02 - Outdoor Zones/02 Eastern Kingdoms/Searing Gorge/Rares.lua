@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -8,7 +9,7 @@ _.Zones =
 			n(RARES, {
 				n(50876,  {	-- Avis
 					["coord"] = { 71.6, 19.2, 32 },
-				}), 
+				}),
 				n(50948,  {	-- Crystalback
 					["coords"] = {
 						{ 66.0, 47.2, 32 },
@@ -67,36 +68,36 @@ _.Zones =
 						i(13112),	-- Winged Helm
 						i(13051),	-- Witchfury
 					},
-				}),					
+				}),
 				n(8279,   {	-- Faulty War Golem
 					["coords"] = {
 						{ 58.0, 56.4, 32 },
 						{ 62.2, 59.6, 32 },
 						{ 63.0, 63.0, 32 },
 					},
-				}), 
+				}),
 				n(8282,   {	-- Highlord Mastrogonde
 					["coord"] = { 29.6, 26.0, 32 },
-				}), 
+				}),
 				n(50946,  {	-- Hogzilla
 					["coord"] = { 21.1, 79.5, 32 },
-				}), 
+				}),
 				n(8277,   {	-- Rekk'tilac
 					["coords"] = {
 						{ 29.2, 67.8, 32 },
 						{ 31.8, 73.2, 32 },
 					},
-				}), 
+				}),
 				n(51048,  {	-- Rexxus
 					["coords"] = {
 						{ 42.8, 47.2, 32 },
 						{ 40.4, 50.6, 32 },
 						{ 39.4, 50.6, 32},
 					},
-				}), 
+				}),
 				n(8281,   {	-- Scald
 					["coord"] = { 41.0, 57.6, 32 },
-				}), 
+				}),
 				n(51002,  {	-- Scorpoxx
 					["coord"] = { 18.4, 38.8, 32 },
 				}),
@@ -105,21 +106,21 @@ _.Zones =
 						{ 57.4, 43.4, 32 },
 						{ 56.6, 46.6, 32 },
 					},
-				}), 
+				}),
 				n(8283,   {	-- Slave Master Blackheart
 					["description"] = "This rare is located inside the Slag Pit caves and shares a spawn with Overseer Maltorius.",
 					["coord"] = { 38.0, 44.4, 32 },
-				}), 
+				}),
 				n(50846,  {	-- Slavermaw
 					["coord"] = { 58.7, 22.5, 32 },
-				}), 
+				}),
 				n(8278,   {	-- Smoldar
 					["description"] = "This rare is located in the Slag Pit caves.  Enter the northernmost entrance from the Cauldron.",
 					["coord"] = { 49.1, 37.4, 32 },
-				}), 
+				}),
 				n(51010,  {	-- Snips
 					["coord"] = { 35.0, 52.0, 32 },
-				}), 
+				}),
 			}),
 		}),
 	}),

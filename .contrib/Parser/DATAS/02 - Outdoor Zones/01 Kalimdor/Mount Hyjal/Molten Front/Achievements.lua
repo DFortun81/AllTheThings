@@ -1,12 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-_.Zones = 
+
+_.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(198, {	-- Mount Hyjal
 			m(338, {	-- Molten Front
-				n(-4, {		-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(5874, {	-- Death From Above  (Mount Hyjal - The Molten Front)
 						crit(2),	-- Blazefury
 						crit(3),	-- Flashfire
@@ -97,7 +98,7 @@ _.Zones =
 						}),
 						crit(7, {	-- Build a moonwell
 							["sourceQuest"] = 29279,	-- Filling the Moonwell
-						}),	
+						}),
 						crit(8, {	-- Find the Crimson Lasher
 							["sourceQuest"] = 29254,	-- Little Lasher
 						}),

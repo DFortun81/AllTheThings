@@ -14,7 +14,7 @@ _.PetJournal =
 		p(2352),	-- Baa'l
 		p(2582),	-- Baoh-Xi
 		p(1964),	-- Blood Boil
-		un(35, p(1466)),	-- Brightpaw
+		un(BLIZZARD_BALANCE, p(1466)),	-- Brightpaw
 		p(1888),	-- Celestial Calf
 		p(1633),	-- Chaos Pup
 		p(1232),	-- Coilfang Stalker
@@ -85,7 +85,7 @@ _.PetJournal =
 		p(1958),	-- Sanctum Cub
 		p(846),		-- Sapphire Cub
 		p(1601),	-- Servant of Demidos
-		un(35, p(2062)),	-- Shadow
+		un(BLIZZARD_BALANCE, p(2062)),	-- Shadow
 		p(229),		-- Shimmering Wyrmling
 		p(2750),	-- Shrieker
 		un(REMOVED_FROM_GAME, p(1127)),	-- Spectral Cub

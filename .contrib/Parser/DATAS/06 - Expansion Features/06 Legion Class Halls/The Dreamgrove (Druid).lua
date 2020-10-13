@@ -1,6 +1,6 @@
----------------------------------------------------
+-------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
----------------------------------------------------
+-------------------------------------------------------------------
 
 _.ExpansionFeatures =
 {
@@ -115,9 +115,9 @@ _.ExpansionFeatures =
 						["classes"] = { DRUID },
 						["lvl"] = 110,
 						["providers"] = {
-							{ "n", 115802 },	-- Thisalee Crow		
+							{ "n", 115802 },	-- Thisalee Crow
 							{ "n", 119982 },	-- Druid of the Talon
-						},	
+						},
 						["coord"] = { 40.9, 42.6, 198 },
 						["sourceQuest"]	= 44869,	-- Talon Terror
 						["maps"] = { 198 },	-- Shrine of Aviana, Mount Hyjal
@@ -129,7 +129,7 @@ _.ExpansionFeatures =
 							{ "n", 115802 },	-- Thisalee Crow
 							{ "n", 119982 },	-- Druid of the Talon
 						},
-						["coord"] = { 40.9, 42.6, 198 },						
+						["coord"] = { 40.9, 42.6, 198 },
 						["sourceQuests"] = {
 							44877,	-- Attack on the Roost
 							45532,	-- Mother's Orders
@@ -221,7 +221,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(646),	-- Keeper Remulos
 						},
-					}),					
+					}),
 					q(42039, {	-- Champion: Sylendra Gladesong
 						["classes"] = { DRUID },
 						["lvl"] = 103,
@@ -477,7 +477,7 @@ _.ExpansionFeatures =
 						["coord"] = { 48.9, 34.3, 47 },
 						["sourceQuests"] = { 40783 },	-- The Scythe of Elune
 						["maps"] = { 47 },	-- Duskwood
-					}),					
+					}),
 					q(41449, {	-- Join the Dreamer
 						["classes"] = { DRUID },
 						["lvl"] = 98,
@@ -531,7 +531,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 103832 },	-- Keeper Remulos
 						["coord"] = { 44.8, 50.6, 747 },
 						["maps"] = { 747 },
-						
 					}),
 					q(41468, {	-- Mistress of the Claw
 						["classes"] = { DRUID },
@@ -539,7 +538,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101195 },	-- Rensar Greathoof
 						["coord"] = { 44.7, 52.0, 747 },
 						["maps"] = { 747 },
-						
 					}),
 					q(44431, {	-- More Weapons of Old
 						["classes"] = { DRUID },
@@ -553,7 +551,7 @@ _.ExpansionFeatures =
 						["classes"] = { DRUID },
 						["lvl"] = 110,
 						["providers"] = {
-							{ "n", 115802 },	-- Thisalee Crow		
+							{ "n", 115802 },	-- Thisalee Crow
 							{ "n", 119982 },	-- Druid of the Talon
 						},
 						["coord"] = { 40.9, 42.6, 198 },
@@ -813,7 +811,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 						["provider"] = { "n", 112323 },	-- Amurra Thistledew
 						["coord"] = { 40.0, 24.8, 747 },
---						["sourceQuests"] = { },
+						--["sourceQuests"] = { },
 						["maps"] = { 747 },
 						["g"] = {
 							i(139726),	-- Hood of the Dreamgrove
@@ -831,7 +829,7 @@ _.ExpansionFeatures =
 						["classes"] = { DRUID },
 						["lvl"] = 110,
 						["provider"] = { "n", 101195 },	-- Rensar Greathoof
-						["coord"] = { 44.6, 51.8, 747 },						
+						["coord"] = { 44.6, 51.8, 747 },
 						["sourceQuests"] = { 45426 },	-- Nature's Advance
 						["maps"] = { 747 },
 					}),
@@ -868,7 +866,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101195 },	-- Rensar Greathoof
 						["coord"] = { 44.7, 52.0, 747 },
 						["maps"] = { 747 },
-						
 					}),
 					q(42440, {	-- The Shrine in Peril
 						["classes"] = { DRUID },
@@ -878,7 +875,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = {
 							42438,	-- Seeds of Renewal
 							42439,	-- Aid for the Ashen
-						},					
+						},
 						["maps"] = { 641 },	-- Val'sharah
 					}),
 					q(41792, {	-- The Third Trial of Ursol
@@ -943,7 +940,6 @@ _.ExpansionFeatures =
 						["coord"] = { 43.5, 58.3, 646 },
 						["sourceQuests"] = { 46674 },	-- The Preservation of Nature
 						["maps"] = { 646 },
-						
 					}),
 					q(42035, {	-- Tracking the Enemy
 						["classes"] = { DRUID },
@@ -1023,9 +1019,13 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 46318 },	-- Defense of Aviana
 							["classes"] = { DRUID },
 							["g"] = {
+								--[[ Lightsky: The spellID associated with this item, 231437, isn't taught to the player. It's cast on the player
+									changing the model of the flight form. There are several spell IDs for this 'mount', so not sure if all races
+									use the same spell or differing spells per model.
 								i(143638, {	-- Archdruid's Lunarwing Form (Druid)
 									["classes"] = { DRUID },
 								}),
+								]]
 							},
 						}),
 					}),

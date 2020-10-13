@@ -72,45 +72,45 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(41971),	-- Furious Gladiator's Silk Handguards
 						i(41293),	-- Furious Gladiator's Wyrmhide Gloves
 						-- Alliance-only hands start
-						i(47783),	-- Kel'Thuzad's Gloves of Conquest
-						i(47752),	-- Khadgar's Gauntlets of Conquest
-						i(48162),	-- Malfurion's Gloves of Conquest
-						i(48213),	-- Malfurion's Handgrips of Conquest
-						i(48132),	-- Malfurion's Handguards of Conquest
-						i(48312),	-- Nobundo's Gloves of Conquest
-						i(48342),	-- Nobundo's Grips of Conquest
-						i(48284),	-- Nobundo's Handguards of Conquest
-						i(48480),	-- Thassarian's Gauntlets of Conquest
-						i(48537),	-- Thassarian's Handguards of Conquest
-						i(48603),	-- Turalyon's Gauntlets of Conquest
-						i(48574),	-- Turalyon's Gloves of Conquest
-						i(48633),	-- Turalyon's Handguards of Conquest
-						i(48222),	-- VanCleef's Gauntlets of Conquest
-						i(47982),	-- Velen's Gloves of Conquest
-						i(48072),	-- Velen's Handwraps of Conquest
-						i(48254),	-- Windrunner's Handguards of Conquest
-						i(48375),	-- Wrynn's Gauntlets of Conquest
-						i(48449),	-- Wrynn's Handguards of Conquest
+						a(i(47783)),	-- Kel'Thuzad's Gloves of Conquest
+						a(i(47752)),	-- Khadgar's Gauntlets of Conquest
+						a(i(48162)),	-- Malfurion's Gloves of Conquest
+						a(i(48213)),	-- Malfurion's Handgrips of Conquest
+						a(i(48132)),	-- Malfurion's Handguards of Conquest
+						a(i(48312)),	-- Nobundo's Gloves of Conquest
+						a(i(48342)),	-- Nobundo's Grips of Conquest
+						a(i(48284)),	-- Nobundo's Handguards of Conquest
+						a(i(48480)),	-- Thassarian's Gauntlets of Conquest
+						a(i(48537)),	-- Thassarian's Handguards of Conquest
+						a(i(48603)),	-- Turalyon's Gauntlets of Conquest
+						a(i(48574)),	-- Turalyon's Gloves of Conquest
+						a(i(48633)),	-- Turalyon's Handguards of Conquest
+						a(i(48222)),	-- VanCleef's Gauntlets of Conquest
+						a(i(47982)),	-- Velen's Gloves of Conquest
+						a(i(48072)),	-- Velen's Handwraps of Conquest
+						a(i(48254)),	-- Windrunner's Handguards of Conquest
+						a(i(48375)),	-- Wrynn's Gauntlets of Conquest
+						a(i(48449)),	-- Wrynn's Handguards of Conquest
 						-- Horde-only hands start
-						i(48244),	-- Garona's Gauntlets of Conquest
-						i(47802),	-- Gul'dan's Gloves of Conquest
-						i(48387),	-- Hellscream's Gauntlets of Conquest
-						i(48457),	-- Hellscream's Handguards of Conquest
-						i(48630),	-- Liadrin's Gauntlets of Conquest
-						i(48598),	-- Liadrin's Gloves of Conquest
-						i(48653),	-- Liadrin's Handguards of Conquest
-						i(48502),	-- Koltira's Gauntlets of Conquest
-						i(48559),	-- Koltira's Handguards of Conquest
-						i(48183),	-- Runetotem's Gloves of Conquest
-						i(48192),	-- Runetotem's Handgrips of Conquest
-						i(48153),	-- Runetotem's Handguards of Conquest
-						i(47773),	-- Sunstrider's Gauntlets of Conquest
-						i(48337),	-- Thrall's Gloves of Conquest
-						i(48367),	-- Thrall's Grips of Conquest
-						i(48296),	-- Thrall's Handguards of Conquest
-						i(48276),	-- Windrunner's Handguards of Conquest
-						i(48067),	-- Zabra's Gloves of Conquest
-						i(48097),	-- Zabra's Handwraps of Conquest
+						h(i(48244)),	-- Garona's Gauntlets of Conquest
+						h(i(47802)),	-- Gul'dan's Gloves of Conquest
+						h(i(48387)),	-- Hellscream's Gauntlets of Conquest
+						h(i(48457)),	-- Hellscream's Handguards of Conquest
+						h(i(48630)),	-- Liadrin's Gauntlets of Conquest
+						h(i(48598)),	-- Liadrin's Gloves of Conquest
+						h(i(48653)),	-- Liadrin's Handguards of Conquest
+						h(i(48502)),	-- Koltira's Gauntlets of Conquest
+						h(i(48559)),	-- Koltira's Handguards of Conquest
+						h(i(48183)),	-- Runetotem's Gloves of Conquest
+						h(i(48192)),	-- Runetotem's Handgrips of Conquest
+						h(i(48153)),	-- Runetotem's Handguards of Conquest
+						h(i(47773)),	-- Sunstrider's Gauntlets of Conquest
+						h(i(48337)),	-- Thrall's Gloves of Conquest
+						h(i(48367)),	-- Thrall's Grips of Conquest
+						h(i(48296)),	-- Thrall's Handguards of Conquest
+						h(i(48276)),	-- Windrunner's Handguards of Conquest
+						h(i(48067)),	-- Zabra's Gloves of Conquest
+						h(i(48097)),	-- Zabra's Handwraps of Conquest
 						-- Faction-specific hands end
 						i(41630),	-- Furious Gladiator's Belt of Dominance
 						i(41617),	-- Furious Gladiator's Belt of Salvation
@@ -139,45 +139,45 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(41959),	-- Furious Gladiator's Silk Trousers
 						i(41304),	-- Furious Gladiator's Wyrmhide Legguards
 						-- Alliance-only legs start
-						i(47785),	-- Kel'Thuzad's Leggings of Conquest
-						i(47750),	-- Khadgar's Leggings of Conquest
-						i(48130),	-- Malfurion's Leggings of Conquest
-						i(48215),	-- Malfurion's Legguards of Conquest
-						i(48160),	-- Malfurion's Trousers of Conquest
-						i(48314),	-- Nobundo's Kilt of Conquest
-						i(48282),	-- Nobundo's Legguards of Conquest
-						i(48344),	-- Nobundo's War-Kilt of Conquest
-						i(48533),	-- Thassarian's Legguards of Conquest
-						i(48476),	-- Thassarian's Legplates of Conquest
-						i(48568),	-- Turalyon's Greaves of Conquest
-						i(48635),	-- Turalyon's Legguards of Conquest
-						i(48605),	-- Turalyon's Legplates of Conquest
-						i(48220),	-- VanCleef's Legplates of Conquest
-						i(47980),	-- Velen's Leggings of Conquest
-						i(48074),	-- Velen's Pants of Conquest
-						i(48252),	-- Windrunner's Legguards of Conquest
-						i(48445),	-- Wrynn's Legguards of Conquest
-						i(48373),	-- Wrynn's Legplates of Conquest
+						a(i(47785)),	-- Kel'Thuzad's Leggings of Conquest
+						a(i(47750)),	-- Khadgar's Leggings of Conquest
+						a(i(48130)),	-- Malfurion's Leggings of Conquest
+						a(i(48215)),	-- Malfurion's Legguards of Conquest
+						a(i(48160)),	-- Malfurion's Trousers of Conquest
+						a(i(48314)),	-- Nobundo's Kilt of Conquest
+						a(i(48282)),	-- Nobundo's Legguards of Conquest
+						a(i(48344)),	-- Nobundo's War-Kilt of Conquest
+						a(i(48533)),	-- Thassarian's Legguards of Conquest
+						a(i(48476)),	-- Thassarian's Legplates of Conquest
+						a(i(48568)),	-- Turalyon's Greaves of Conquest
+						a(i(48635)),	-- Turalyon's Legguards of Conquest
+						a(i(48605)),	-- Turalyon's Legplates of Conquest
+						a(i(48220)),	-- VanCleef's Legplates of Conquest
+						a(i(47980)),	-- Velen's Leggings of Conquest
+						a(i(48074)),	-- Velen's Pants of Conquest
+						a(i(48252)),	-- Windrunner's Legguards of Conquest
+						a(i(48445)),	-- Wrynn's Legguards of Conquest
+						a(i(48373)),	-- Wrynn's Legplates of Conquest
 						-- Horde-only legs start
-						i(48246),	-- Garona's Legplates of Conquest
-						i(47800),	-- Gul'dan's Leggings of Conquest
-						i(48459),	-- Hellscream's Legguards of Conquest
-						i(48389),	-- Hellscream's Legplates of Conquest
-						i(48561),	-- Koltira's Legguards of Conquest
-						i(48504),	-- Koltira's Legplates of Conquest
-						i(48596),	-- Liadrin's Greaves of Conquest
-						i(48655),	-- Liadrin's Legguards of Conquest
-						i(48628),	-- Liadrin's Legplates of Conquest
-						i(48155),	-- Runetotem's Leggings of Conquest
-						i(48190),	-- Runetotem's Legguards of Conquest
-						i(48185),	-- Runetotem's Trousers of Conquest
-						i(47775),	-- Sunstrider's Leggings of Conquest
-						i(48339),	-- Thrall's Kilt of Conquest
-						i(48298),	-- Thrall's Legguards of Conquest
-						i(48369),	-- Thrall's War-Kilt of Conquest
-						i(48278),	-- Windrunner's Legguards of Conquest
-						i(48069),	-- Zabra's Leggings of Conquest
-						i(48099),	-- Zabra's Pants of Conquest
+						h(i(48246)),	-- Garona's Legplates of Conquest
+						h(i(47800)),	-- Gul'dan's Leggings of Conquest
+						h(i(48459)),	-- Hellscream's Legguards of Conquest
+						h(i(48389)),	-- Hellscream's Legplates of Conquest
+						h(i(48561)),	-- Koltira's Legguards of Conquest
+						h(i(48504)),	-- Koltira's Legplates of Conquest
+						h(i(48596)),	-- Liadrin's Greaves of Conquest
+						h(i(48655)),	-- Liadrin's Legguards of Conquest
+						h(i(48628)),	-- Liadrin's Legplates of Conquest
+						h(i(48155)),	-- Runetotem's Leggings of Conquest
+						h(i(48190)),	-- Runetotem's Legguards of Conquest
+						h(i(48185)),	-- Runetotem's Trousers of Conquest
+						h(i(47775)),	-- Sunstrider's Leggings of Conquest
+						h(i(48339)),	-- Thrall's Kilt of Conquest
+						h(i(48298)),	-- Thrall's Legguards of Conquest
+						h(i(48369)),	-- Thrall's War-Kilt of Conquest
+						h(i(48278)),	-- Windrunner's Legguards of Conquest
+						h(i(48069)),	-- Zabra's Leggings of Conquest
+						h(i(48099)),	-- Zabra's Pants of Conquest
 						-- Faction-specific legs end
 						i(41635),	-- Furious Gladiator's Boots of Dominance
 						i(41621),	-- Furious Gladiator's Boots of Salvation
@@ -556,7 +556,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["creatureID"] = 35013,
 					["groups"] = {
 						ach(3837),		-- Koralon the Flame Watcher (25 player)
-						
 						i(42044),	-- Relentless Gladiator's Pendant of Ascendancy
 						i(42046),	-- Relentless Gladiator's Pendant of Deliverance
 						i(42043),	-- Relentless Gladiator's Pendant of Dominance
@@ -583,24 +582,24 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(41061),	-- Relentless Gladiator's Wristguards of Salvation
 						i(41226),	-- Relentless Gladiator's Wristguards of Triumph
 						-- Alliance-only hands start
-						i(47782),	-- Kel'Thuzad's Gloves of Triumph
-						i(47753),	-- Khadgar's Gauntlets of Triumph
-						i(48163),	-- Malfurion's Gloves of Triumph
-						i(48212),	-- Malfurion's Handgrips of Triumph
-						i(48133),	-- Malfurion's Handguards of Triumph
-						i(48317),	-- Nobundo's Gloves of Triumph
-						i(48347),	-- Nobundo's Grips of Triumph
-						i(48286),	-- Nobundo's Handguards of Triumph
+						a(i(47782)),	-- Kel'Thuzad's Gloves of Triumph
+						a(i(47753)),	-- Khadgar's Gauntlets of Triumph
+						a(i(48163)),	-- Malfurion's Gloves of Triumph
+						a(i(48212)),	-- Malfurion's Handgrips of Triumph
+						a(i(48133)),	-- Malfurion's Handguards of Triumph
+						a(i(48317)),	-- Nobundo's Gloves of Triumph
+						a(i(48347)),	-- Nobundo's Grips of Triumph
+						a(i(48286)),	-- Nobundo's Handguards of Triumph
 						-- Horde-only hands start
-						i(48241),	-- Garona's Gauntlets of Triumph
-						i(47803),	-- Gul'dan's Gloves of Triumph
-						i(48392),	-- Hellscream's Gauntlets of Triumph
-						i(48462),	-- Hellscream's Handguards of Triumph
-						i(48499),	-- Koltira's Gauntlets of Triumph
-						i(48556),	-- Koltira's Handguards of Triumph
-						i(48625),	-- Liadrin's Gauntlets of Triumph
-						i(48593),	-- Liadrin's Gloves of Triumph
-						i(48658),	-- Liadrin's Handguards of Triumph
+						h(i(48241)),	-- Garona's Gauntlets of Triumph
+						h(i(47803)),	-- Gul'dan's Gloves of Triumph
+						h(i(48392)),	-- Hellscream's Gauntlets of Triumph
+						h(i(48462)),	-- Hellscream's Handguards of Triumph
+						h(i(48499)),	-- Koltira's Gauntlets of Triumph
+						h(i(48556)),	-- Koltira's Handguards of Triumph
+						h(i(48625)),	-- Liadrin's Gauntlets of Triumph
+						h(i(48593)),	-- Liadrin's Gloves of Triumph
+						h(i(48658)),	-- Liadrin's Handguards of Triumph
 						-- Faction-specific hands interrupted to match Dungeon Journal order
 						i(41144),	-- Relentless Gladiator's Chain Gauntlets
 						i(41774),	-- Relentless Gladiator's Dragonhide Gloves
@@ -619,28 +618,28 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(41972),	-- Relentless Gladiator's Silk Handguards
 						i(41294),	-- Relentless Gladiator's Wyrmhide Gloves
 						-- Alliance-only hands start again
-						i(48482),	-- Thassarian's Gauntlets of Triumph
-						i(48539),	-- Thassarian's Handguards of Triumph
-						i(48608),	-- Turalyon's Gauntlets of Triumph
-						i(48576),	-- Turalyon's Gloves of Triumph
-						i(48640),	-- Turalyon's Handguards of Triumph
-						i(48224),	-- VanCleef's Gauntlets of Triumph
-						i(47983),	-- Velen's Gloves of Triumph
-						i(48077),	-- Velen's Handwraps of Triumph
-						i(48256),	-- Windrunner's Handguards of Triumph
-						i(48377),	-- Wrynn's Gauntlets of Triumph
-						i(48452),	-- Wrynn's Handguards of Triumph
+						a(i(48482)),	-- Thassarian's Gauntlets of Triumph
+						a(i(48539)),	-- Thassarian's Handguards of Triumph
+						a(i(48608)),	-- Turalyon's Gauntlets of Triumph
+						a(i(48576)),	-- Turalyon's Gloves of Triumph
+						a(i(48640)),	-- Turalyon's Handguards of Triumph
+						a(i(48224)),	-- VanCleef's Gauntlets of Triumph
+						a(i(47983)),	-- Velen's Gloves of Triumph
+						a(i(48077)),	-- Velen's Handwraps of Triumph
+						a(i(48256)),	-- Windrunner's Handguards of Triumph
+						a(i(48377)),	-- Wrynn's Gauntlets of Triumph
+						a(i(48452)),	-- Wrynn's Handguards of Triumph
 						-- Horde-only hands start again
-						i(48182),	-- Runetotem's Gloves of Triumph
-						i(48193),	-- Runetotem's Handgrips of Triumph
-						i(48152),	-- Runetotem's Handguards of Triumph
-						i(47772),	-- Sunstrider's Gauntlets of Triumph
-						i(48334),	-- Thrall's Gloves of Triumph
-						i(48364),	-- Thrall's Grips of Triumph
-						i(48301),	-- Thrall's Handguards of Triumph
-						i(48273),	-- Windrunner's Handguards of Triumph
-						i(48066),	-- Zabra's Gloves of Triumph
-						i(48096),	-- Zabra's Handwraps of Triumph
+						h(i(48182)),	-- Runetotem's Gloves of Triumph
+						h(i(48193)),	-- Runetotem's Handgrips of Triumph
+						h(i(48152)),	-- Runetotem's Handguards of Triumph
+						h(i(47772)),	-- Sunstrider's Gauntlets of Triumph
+						h(i(48334)),	-- Thrall's Gloves of Triumph
+						h(i(48364)),	-- Thrall's Grips of Triumph
+						h(i(48301)),	-- Thrall's Handguards of Triumph
+						h(i(48273)),	-- Windrunner's Handguards of Triumph
+						h(i(48066)),	-- Zabra's Gloves of Triumph
+						h(i(48096)),	-- Zabra's Handwraps of Triumph
 						-- Faction-specific hands end
 						i(41631),	-- Relentless Gladiator's Belt of Dominance
 						i(41618),	-- Relentless Gladiator's Belt of Salvation
@@ -653,24 +652,24 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(41052),	-- Relentless Gladiator's Waistguard of Salvation
 						i(41236),	-- Relentless Gladiator's Waistguard of Triumph
 						-- Alliance-only legs start
-						i(47780),	-- Kel'Thuzad's Leggings of Triumph
-						i(47755),	-- Khadgar's Leggings of Triumph
-						i(48135),	-- Malfurion's Leggings of Triumph
-						i(48210),	-- Malfurion's Legguards of Triumph
-						i(48165),	-- Malfurion's Trousers of Triumph
-						i(48319),	-- Nobundo's Kilt of Triumph
-						i(48288),	-- Nobundo's Legguards of Triumph
-						i(48349),	-- Nobundo's War-Kilt of Triumph
+						a(i(47780)),	-- Kel'Thuzad's Leggings of Triumph
+						a(i(47755)),	-- Khadgar's Leggings of Triumph
+						a(i(48135)),	-- Malfurion's Leggings of Triumph
+						a(i(48210)),	-- Malfurion's Legguards of Triumph
+						a(i(48165)),	-- Malfurion's Trousers of Triumph
+						a(i(48319)),	-- Nobundo's Kilt of Triumph
+						a(i(48288)),	-- Nobundo's Legguards of Triumph
+						a(i(48349)),	-- Nobundo's War-Kilt of Triumph
 						-- Horde-only legs start
-						i(48239),	-- Garona's Legplates of Triumph
-						i(47805),	-- Gul'dan's Leggings of Triumph
-						i(48464),	-- Hellscream's Legguards of Triumph
-						i(48394),	-- Hellscream's Legplates of Triumph
-						i(48554),	-- Koltira's Legguards of Triumph
-						i(48497),	-- Koltira's Legplates of Triumph
-						i(48591),	-- Liadrin's Greaves of Triumph
-						i(48660),	-- Liadrin's Legguards of Triumph
-						i(48623),	-- Liadrin's Legplates of Triumph
+						h(i(48239)),	-- Garona's Legplates of Triumph
+						h(i(47805)),	-- Gul'dan's Leggings of Triumph
+						h(i(48464)),	-- Hellscream's Legguards of Triumph
+						h(i(48394)),	-- Hellscream's Legplates of Triumph
+						h(i(48554)),	-- Koltira's Legguards of Triumph
+						h(i(48497)),	-- Koltira's Legplates of Triumph
+						h(i(48591)),	-- Liadrin's Greaves of Triumph
+						h(i(48660)),	-- Liadrin's Legguards of Triumph
+						h(i(48623)),	-- Liadrin's Legplates of Triumph
 						-- Faction-specific legs interrupted to match Dungeon Journal Order
 						i(41206),	-- Relentless Gladiator's Chain Leggings
 						i(41668),	-- Relentless Gladiator's Dragonhide Legguards
@@ -689,28 +688,28 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(41960),	-- Relentless Gladiator's Silk Trousers
 						i(41305),	-- Relentless Gladiator's Wyrmhide Legguards
 						-- Alliance-only legs start again
-						i(48541),	-- Thassarian's Legguards of Triumph
-						i(48484),	-- Thassarian's Legplates of Triumph
-						i(48578),	-- Turalyon's Greaves of Triumph
-						i(48638),	-- Turalyon's Legguards of Triumph
-						i(48610),	-- Turalyon's Legplates of Triumph
-						i(48226),	-- VanCleef's Legplates of Triumph
-						i(47985),	-- Velen's Leggings of Triumph
-						i(48079),	-- Velen's Pants of Triumph
-						i(48258),	-- Windrunner's Legguards of Triumph
-						i(48446),	-- Wrynn's Legguards of Triumph
-						i(48379),	-- Wrynn's Legplates of Triumph
+						a(i(48541)),	-- Thassarian's Legguards of Triumph
+						a(i(48484)),	-- Thassarian's Legplates of Triumph
+						a(i(48578)),	-- Turalyon's Greaves of Triumph
+						a(i(48638)),	-- Turalyon's Legguards of Triumph
+						a(i(48610)),	-- Turalyon's Legplates of Triumph
+						a(i(48226)),	-- VanCleef's Legplates of Triumph
+						a(i(47985)),	-- Velen's Leggings of Triumph
+						a(i(48079)),	-- Velen's Pants of Triumph
+						a(i(48258)),	-- Windrunner's Legguards of Triumph
+						a(i(48446)),	-- Wrynn's Legguards of Triumph
+						a(i(48379)),	-- Wrynn's Legplates of Triumph
 						-- Horde-only legs start again
-						i(48150),	-- Runetotem's Leggings of Triumph
-						i(48195),	-- Runetotem's Legguards of Triumph
-						i(48180),	-- Runetotem's Trousers of Triumph
-						i(47770),	-- Sunstrider's Leggings of Triumph
-						i(48332),	-- Thrall's Kilt of Triumph
-						i(48303),	-- Thrall's Legguards of Triumph
-						i(48362),	-- Thrall's War-Kilt of Triumph
-						i(48271),	-- Windrunner's Legguards of Triumph
-						i(48064),	-- Zabra's Leggings of Triumph
-						i(48094),	-- Zabra's Pants of Triumph
+						h(i(48150)),	-- Runetotem's Leggings of Triumph
+						h(i(48195)),	-- Runetotem's Legguards of Triumph
+						h(i(48180)),	-- Runetotem's Trousers of Triumph
+						h(i(47770)),	-- Sunstrider's Leggings of Triumph
+						h(i(48332)),	-- Thrall's Kilt of Triumph
+						h(i(48303)),	-- Thrall's Legguards of Triumph
+						h(i(48362)),	-- Thrall's War-Kilt of Triumph
+						h(i(48271)),	-- Windrunner's Legguards of Triumph
+						h(i(48064)),	-- Zabra's Leggings of Triumph
+						h(i(48094)),	-- Zabra's Pants of Triumph
 						-- Faction-specific legs end
 						i(41636),	-- Relentless Gladiator's Boots of Dominance
 						i(41622),	-- Relentless Gladiator's Boots of Salvation

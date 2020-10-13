@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
+
 _.GearSets =
 {
 	n(-573, {	-- Scroll of Resurrection
@@ -21,7 +22,7 @@ _.GearSets =
 			{ 38.8, 31.6, 201},	-- Erunak Stonespeaker <The Earthen Ring>
 		},
 		["g"] = {
-			cl(1, {	-- Warrior [Valiant]
+			cl(WARRIOR, {
 				i(72982),	-- Valiant Bulwark
 				i(72992),	-- Valiant Greatsword
 				i(72999),	-- Valiant Maul
@@ -55,7 +56,7 @@ _.GearSets =
 				i(73165),	-- Valiant Idol of Battle
 				i(73164),	-- Valiant Stone of Battle
 			}),
-			cl(2, {	-- Paladin [Zealous]
+			cl(PALADIN, {
 				i(72983),	-- Zealous Bulwark
 				i(72993),	-- Zealous Greatsword
 				i(72989),	-- Zealous Scepter
@@ -104,7 +105,7 @@ _.GearSets =
 				i(73061),	-- Zealous Stone of Battle
 				i(73064),	-- Zealous Stone of Wisdom
 			}),
-			cl(3, {	-- Hunter [Beastsoul]
+			cl(HUNTER, {
 				i(73000),	-- Beastsoul Rifle
 				un(REMOVED_FROM_GAME, i(73001)),	-- Beastsoul Spear
 				i(72913),	-- Beastsoul Helm
@@ -122,7 +123,7 @@ _.GearSets =
 				i(73147),	-- Beastsoul Idol of Rage
 				i(73150),	-- Beastsoul Stone of Rage
 			}),
-			cl(4, {	-- Rogue [Shadowstalking]
+			cl(ROGUE, {
 				i(72995),	-- Shadowstalking Dagger
 				un(REMOVED_FROM_GAME, i(72996)),	-- Shadowstalking Shiv
 				i(72997),	-- Shadowstalking Sword
@@ -141,7 +142,7 @@ _.GearSets =
 				i(73124),	-- Shadowstalking Idol of Rage
 				i(73121),	-- Shadowstalking Stone of Rage
 			}),
-			cl(5, {	-- Priest [Seraphic]
+			cl(PRIEST, {
 				i(73008),	-- Seraphic Staff
 				i(73009),	-- Seraphic Stave
 				i(73336),	-- Seraphic Wand
@@ -174,7 +175,7 @@ _.GearSets =
 				i(73116),	-- Seraphic Stone of Destruction
 				i(73111),	-- Seraphic Stone of Wisdom
 			}),
-			cl(6, {	-- Death Knight [Ebonsoul]
+			cl(DEATHKNIGHT, {
 				i(72994),	-- Ebonsoul Blade
 				i(72990),	-- Ebonsoul Hammer
 				i(72991),	-- Ebonsoul Maul
@@ -207,7 +208,7 @@ _.GearSets =
 				i(73155),	-- Ebonsoul Idol of Battle
 				i(73154),	-- Ebonsoul Stone of Battle
 			}),
-			cl(7, {	-- Shaman [Stormbinder]
+			cl(SHAMAN, {
 				i(73005),	-- Stormbinder Aegis
 				i(73003),	-- Stormbinder Gavel
 				i(72998),	-- Stormbinder Mace
@@ -256,7 +257,7 @@ _.GearSets =
 				i(73135),	-- Stormbinder Stone of Rage
 				i(73145),	-- Stormbinder Stone of Wisdom
 			}),
-			cl(8, {	-- Mage [Magesoul]
+			cl(MAGE, {
 				i(73006),	-- Magesoul Staff
 				i(73325),	-- Magesoul Wand
 				i(72624),	-- Magesoul Hood
@@ -274,7 +275,7 @@ _.GearSets =
 				i(73104),	-- Magesoul Idol of Destruction
 				i(73101),	-- Magesoul Stone of Destruction
 			}),
-			cl(9, {	-- Warlock [Dreadsoul]
+			cl(WARLOCK, {
 				i(73007),	-- Dreadsoul Staff
 				i(73326),	-- Dreadsoul Wand
 				i(72640),	-- Dreadsoul Cowl
@@ -292,7 +293,7 @@ _.GearSets =
 				i(73109),	-- Dreadsoul Idol of Destruction
 				i(73106),	-- Dreadsoul Stone of Destruction
 			}),
-			cl(10, {	-- Monk [Monastic]
+			cl(MONK, {
 				i(88648),	-- Monastic Spire
 				i(88622),	-- Monastic Staff
 				i(88649),	-- Monastic Sword
@@ -330,7 +331,7 @@ _.GearSets =
 				i(88639),	-- Monastic Stone of Rage
 				i(88644),	-- Monastic Stone of Wisdom
 			}),
-			cl(11, {	-- Druid [Wildsoul]
+			cl(DRUID, {
 				i(73012),	-- Wildsoul Spear
 				i(73011),	-- Wildsoul Staff
 				i(73010),	-- Wildsoul Stave

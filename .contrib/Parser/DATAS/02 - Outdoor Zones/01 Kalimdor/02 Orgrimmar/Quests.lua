@@ -141,16 +141,14 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 										["lvl"] = 110,
 										["g"] = {
-											ach(12245, {	-- Allied Races: Highmountain Tauren
-												h(i(155662)),	-- Highmountain Thunderhoof
-											}),
+											ach(12245),	-- Allied Races: Highmountain Tauren
 										},
 									}),
 									-- Highmountain Tauren Starter Quest
 									q(49773, {	-- For the Horde
 										["provider"] = { "n", 143845 },	--  Mayla Highmountain
 										["coord"] = { 46.6, 61.0, 650 },
-										["races"] = { 28 },	-- Highmountain Tauren
+										["races"] = { HIGHMOUNTAIN },
 										["lvl"] = 20,
 										["g"] = {
 											i(157757),	-- Highmountain Tabard
@@ -161,7 +159,7 @@ _.Zones =
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
 										["coord"] = { 39.4, 79.2, 85 },
 										["sourceQuest"] = 49773,	-- For the Horde
-										["races"] = { 28 },	-- Highmountain Tauren
+										["races"] = { HIGHMOUNTAIN },
 										["lvl"] = 20,
 									}),
 								}),
@@ -193,16 +191,14 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 										["lvl"] = 110,
 										["g"] = {
-											ach(12244, {	-- Allied Races: Nightborne
-												i(156487),	-- Nightborne Manasaber
-											}),
+											ach(12244),	-- Allied Races: Nightborne
 										},
 									}),
 									-- Nightborne Starter Quest
 									q(49933, {	-- For the Horde
 										["provider"] = { "n", 143845 },	--  First Arcanist Thalyssra
 										["coord"] = { 59.4, 85.4, 680 },
-										["races"] = { 27 },	-- Nightborne
+										["races"] = { NIGHTBORNE },
 										["lvl"] = 20,
 										["g"] = {
 											i(157759),	-- Shal'dorei Tabard
@@ -213,7 +209,7 @@ _.Zones =
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
 										["coord"] = { 39.4, 79.2, 85 },
 										["sourceQuest"] = 49933,	-- For the Horde
-										["races"] = { 27 },	-- Nightborne
+										["races"] = { NIGHTBORNE },
 										["lvl"] = 20,
 									}),
 								}),
@@ -290,16 +286,14 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(12518, {	-- Allied Races: Mag'har Orc
-												i(161330),	-- Mag'har Direwolf
-											}),
+											ach(12518),	-- Allied Races: Mag'har Orc
 										},
 									}),
 									-- Mag'har Orc Starter Quest
 									q(51485, {	-- For the Horde
 										["provider"] = { "n", 143845 },	--  Overlord Geya'rah
 										["coord"] = { 70.6, 44.6, 85 },
-										["races"] = { 36 },	-- Mag'har Orc
+										["races"] = { MAGHAR },
 										["lvl"] = 20,
 										["g"] = {
 											i(161328),	-- Tabard of the Mag'har Clans
@@ -310,7 +304,7 @@ _.Zones =
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
 										["coord"] = { 39.4, 79.2, 85 },
 										["sourceQuest"] = 51485,	-- For the Horde
-										["races"] = { 36 },	-- Mag'har Orc
+										["races"] = { MAGHAR },
 										["lvl"] = 20,
 									}),
 								}),
@@ -446,16 +440,14 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(13161, {	-- Allied Races: Zandalari Troll
-												i(157870),	-- Zandalari Direhorn
-											}),
+											ach(13161),	-- Allied Races: Zandalari Troll
 										},
 									}),
 									-- Zandalari Troll Starter Quest
 									q(55137, {	-- For the Horde
 										["provider"] = { "n", 146335 },	--  Queen Talanji
 										["coord"] = { 42.2, 9.4, 1165 },
-										["races"] = { 31 },	-- Zandalari Troll
+										["races"] = { ZANDALARI },
 										["lvl"] = 20,
 										["g"] = {
 											i(165001),	-- Tabard of the Zandalari
@@ -466,7 +458,7 @@ _.Zones =
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
 										["coord"] = { 39.4, 79.2, 85 },
 										["sourceQuest"] = 55137,	-- For the Horde
-										["races"] = { 31 },	-- Zandalari Troll
+										["races"] = { ZANDALARI },
 										["lvl"] = 20,
 									}),
 								}),
@@ -669,16 +661,14 @@ _.Zones =
 										["provider"] = { "n", 145424 },	-- Baine Bloodhoof
 										["sourceQuest"] = 53908,	-- Awaiting Our Arrival
 										["g"] = {
-											ach(13206, {	-- Allied Races: Vulpera
-												i(174066),	-- Caravan Hyena
-											}),
+											ach(13206),	-- Allied Races: Vulpera
 										},
 									}),
 									-- Vulpera starter quests
 									q(58122, {	-- For the Horde
 										["provider"] = { "n", 160452 },	-- Nilsa
 										["coord"] = { 64.6, 46.5, 85 },
-										["races"] = { 35 },	-- Vulpera
+										["races"] = { VULPERA },
 										["g"] = {
 											i(174069),	-- Tabard of the Vulpera
 										},
@@ -687,7 +677,7 @@ _.Zones =
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
 										["coord"] = { 39.3, 79.5, 85 },
 										["sourceQuest"] = 58122,	-- For the Horde
-										["races"] = { 35 },	-- Vulpera
+										["races"] = { VULPERA },
 										["lvl"] = 20,
 									}),
 								}),
@@ -829,10 +819,7 @@ _.Zones =
 					["provider"] = { "n", 44735 },	-- Seer Liwatha
 					["coord"] = { 45.4, 53.4, 85 },
 					["sourceQuest"] = 27331,	-- The Seer's Call
-					["races"] = {
-						6,	-- Tauren
-						9,	-- Goblin
-					},
+					["races"] = { TAUREN, GOBLIN },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 					["g"] = {
@@ -1159,11 +1146,7 @@ _.Zones =
 					["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
 					["coord"] = { 53.5, 78.7, 85 },
 					["sourceQuest"] = 6384,	-- Ride to Orgrimmar
-					["races"] = {
-						2,	-- Orc
-						8,	-- Troll
-						36,	-- Mag'har
-					},
+					["races"] = { ORC, TROLL, MAGHAR },
 					["lvl"] = 5,
 				}),
 				q(13842, {	-- Dread Head Redemption
@@ -1459,14 +1442,14 @@ _.Zones =
 				}),
 				q(32669, {	-- Learn To Ride
 					["description"] = "This quest is available to Orcs upon reaching level 20.",
-					["races"] = { 2 },	-- Orc
+					["races"] = { ORC },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["lvl"] = 20,
 				}),
 				q(32667, {	-- Learn To Ride
 					["description"] = "This quest is available to Pandaren upon reaching level 20.",
-					["races"] = { 26 },	-- Pandaren
+					["races"] = { PANDAREN_HORDE },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["lvl"] = 20,
@@ -1605,10 +1588,7 @@ _.Zones =
 					["provider"] = { "n", 3310 },	-- Doras
 					["coord"] = { 49.5, 59.2, 85 },
 					["sourceQuest"] = 6385,	-- Doras the Wind Rider Master
-					["races"] = {
-						2,	-- Orc
-						8,	-- Troll
-					},
+					["races"] = { ORC, TROLL },
 					["lvl"] = 5,
 				}),
 				q(26840, {	-- Return to the Highlands
@@ -1892,7 +1872,7 @@ _.Zones =
 					["provider"] = { "n", 45339 },	-- Dark Cleric Cecille
 					["coord"] = { 48.2, 72.8, 85 },
 					["sourceQuest"] = 27334,	-- Dark Cleric Cecille
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["g"] = {
@@ -1914,7 +1894,6 @@ _.Zones =
 					["provider"] = { "n", 55382 },	-- Darkmoon Faire Mystic Mage
 					["coord"] = { 48.0, 62.0, 85 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 					["g"] = {
 						currency(515),	-- Darkmoon Prize Ticket
 					},
@@ -1952,7 +1931,7 @@ _.Zones =
 				q(31013, {	-- The Horde Way
 					["provider"] = { "n", 39605 },	-- Garrosh Hellscream
 					["coord"] = { 48.2, 70.6, 85 },
-					["races"] = { 26 },	-- Pandaren
+					["races"] = { PANDAREN_HORDE },
 					["lvl"] = 5,
 				}),
 				q(53779, {	-- The Lies of a Loa
@@ -2021,10 +2000,7 @@ _.Zones =
 					["provider"] = { "n", 45137 },	-- Shadow-Walker Zuru
 					["coord"] = { 35.4, 69.2, 85 },
 					["sourceQuest"] = 27332,	-- Seek the Shadow-Walker
-					["races"] = {
-						8,	-- Troll
-						31,	-- Zandalari Troll
-					},
+					["races"] = { TROLL, ZANDALARI },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 					["g"] = {
@@ -2125,7 +2101,7 @@ _.Zones =
 					["provider"] = { "n", 45339 },	-- Dark Cleric Cecille
 					["coord"] = { 48.2, 72.8, 85 },
 					["sourceQuest"] = 28304,	-- Meet with Dark Cleric Cecille
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["g"] = {
@@ -2147,10 +2123,7 @@ _.Zones =
 					["provider"] = { "n", 45137 },	-- Shadow-Walker Zuru
 					["coord"] = { 35.4, 69.2, 85 },
 					["sourceQuest"] = 28309,	-- Meet with Shadow-Walker Zuru
-					["races"] = {
-						8,	-- Troll
-						31,	-- Zandalari Troll
-					},
+					["races"] = { TROLL, ZANDALARI },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["g"] = {

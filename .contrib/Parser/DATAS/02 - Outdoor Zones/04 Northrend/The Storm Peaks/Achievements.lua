@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, {	-- Northrend
 		m(120, {	-- The Storm Peaks
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(1428),	-- Mine Sweeper
 				ach(38, {	-- The Summit of Storm Peaks
 					-- NOTE: Blizzard shifted a bunch of the criteriaIDs between alliance/horde, so this looks a bit messy but it is correct

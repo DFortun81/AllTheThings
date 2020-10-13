@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -10,7 +11,7 @@ _.Zones =
 			["maps"] = { 578 },	-- Umbral Halls
 			["lvl"] = 90,
 			["g"] = {
-				n(-4, {	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(8921, {	-- Welcome to Draenor (A)
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 35884,

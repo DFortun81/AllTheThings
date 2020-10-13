@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -13,7 +14,7 @@ _.Zones =
 						{ 51.0, 54.4, 210 },
 						{ 48.0, 58.0, 210 },
 					},
-				}), 
+				}),
 				n(2541,   {	-- Lord Sakrasis
 					["coord"] = { 43.8, 49.1, 210 },
 					["g"] = {
@@ -26,10 +27,10 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3985)),	-- Monogrammed Sash
 					},
-				}),					
+				}),
 				n(14490,  {	-- Rippa
 					["coord"] = { 41.4, 71.4, 210 },
-				}), 
+				}),
 				n(1552,   {	-- Scale Belly
 					["coords"] = {
 						{ 67.8, 25.4, 210 },	-- actual rare
@@ -39,7 +40,7 @@ _.Zones =
 						i(4478),	-- Iridescent Scale Leggings
 						i(1604),	-- Chromatic Sword
 					},
-				}), 
+				}),
 				n(14492,  {	-- Verifonix
 					["coord"] = { 53.2, 27.6, 210 },
 				}),

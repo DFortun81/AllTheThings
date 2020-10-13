@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+
+_.WorldDrops =
 {
 	tier(7, {	-- Legion
 		f(200, {	-- Recipes
@@ -54,5 +55,5 @@ _.WorldDrops =
 				i(138001),	-- Pattern: Imbued Silkweave Shade (Rank 3)
 			}),
 		}),
-	}),	
+	}),
 };

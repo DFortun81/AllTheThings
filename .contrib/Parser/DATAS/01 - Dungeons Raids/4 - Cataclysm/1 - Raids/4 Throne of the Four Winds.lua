@@ -37,7 +37,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["creatureID"] = 46753,
 						["groups"] = {
 							ach(5305),	-- Four Play
-							i(63683, {	-- Helm of the Forlorn Conqueror	
+							i(63683, {	-- Helm of the Forlorn Conqueror
 								i(60249),	-- Shadowflame Hood
 								i(60346),	-- Reinforced Sapphirium Helmet
 								i(60359),	-- Reinforced Sapphirium Headguard
@@ -45,7 +45,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(60256),	-- Mercurial Hood
 								i(60258),	-- Mercurial Cowl
 							}),
-							i(63684, {	-- Helm of the Forlorn Protector	
+							i(63684, {	-- Helm of the Forlorn Protector
 								i(60303),	-- Lightning-Charged Headguard
 								i(60320),	-- Helmet of the Raging Elements
 								i(60315),	-- Headpiece of the Raging Elements
@@ -53,7 +53,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(60325),	-- Earthen Helemt
 								i(60328),	-- Earthen Faceguard
 							}),
-							i(63682, {	-- Helm of the Forlorn Vanquisher	
+							i(63682, {	-- Helm of the Forlorn Vanquisher
 								i(60299),	-- Wind Dancer's Helmet
 								i(60277),	-- Stormrider's Helm
 								i(60286),	-- Stormrider's Headpiece
@@ -63,7 +63,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(60243),	-- Firelord's Hood
 							}),
 							i(138836),	-- Illusion: Windfury
-							i(64315, {	-- Mantle of the Forlorn Conqueror	
+							i(64315, {	-- Mantle of the Forlorn Conqueror
 								i(60252),	-- Shadowflame Mantle
 								i(60358),	-- Reinforced Sapphirium Shoulderguards
 								i(60348),	-- Reinforced Sapphirium Pauldrons
@@ -71,7 +71,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(60253),	-- Mercurial Shoulderwraps
 								i(60262),	-- Mercurial Mantle
 							}),
-							i(64316, {	-- Mantle of the Forlorn Protector	
+							i(64316, {	-- Mantle of the Forlorn Protector
 								i(60322),	-- Spaulders of the Raging Elements
 								i(60317),	-- Shoulderwraps of the Raging Elements
 								i(60311),	-- Mantle of the Raging Elements
@@ -79,7 +79,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(60331),	-- Earthen Shoulderguards
 								i(60327),	-- Earthen Pauldrons
 							}),
-							i(64314, {	-- Mantle of the Forlorn Vanquisher	
+							i(64314, {	-- Mantle of the Forlorn Vanquisher
 								i(60302),	-- Wind Dancer's Spaulders
 								i(60289),	-- Stormrider's Spaulders
 								i(60284),	-- Stormrider's Shoulderwraps
@@ -141,49 +141,49 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["groups"] = {
 							ach(5305),	-- Four Play
 							ach(5123),	-- Heroic: Al'Akir
-							i(65001, {	-- Crown of the Forlorn Conqueror		
-								i(65260),	-- Shadowflame Hood	
-								i(65216),	-- Reinforced Sapphirium Helmet	
-								i(65221),	-- Reinforced Sapphirium Headguard	
-								i(65226),	-- Reinforced Sapphirium Faceguard	
-								i(65235),	-- Mercurial Hood	
-								i(65230)	-- Mercurial Cowl	
+							i(65001, {	-- Crown of the Forlorn Conqueror
+								i(65260),	-- Shadowflame Hood
+								i(65216),	-- Reinforced Sapphirium Helmet
+								i(65221),	-- Reinforced Sapphirium Headguard
+								i(65226),	-- Reinforced Sapphirium Faceguard
+								i(65235),	-- Mercurial Hood
+								i(65230)	-- Mercurial Cowl
 							}),
-							i(65000, {	-- Crown of the Forlorn Protector		
-								i(65206),	-- Lightning-Charged Headguard	
-								i(65251),	-- Helmet of the Raging Elements	
-								i(65256),	-- Headpiece of the Raging Elements	
-								i(65246),	-- Faceguard of the Raging Elements	
-								i(65266),	-- Earthen Helemt	
-								i(65271)	-- Earthen Faceguard	
+							i(65000, {	-- Crown of the Forlorn Protector
+								i(65206),	-- Lightning-Charged Headguard
+								i(65251),	-- Helmet of the Raging Elements
+								i(65256),	-- Headpiece of the Raging Elements
+								i(65246),	-- Faceguard of the Raging Elements
+								i(65266),	-- Earthen Helemt
+								i(65271)	-- Earthen Faceguard
 							}),
-							i(65002, {	-- Crown of the Forlorn Vanquisher		
-								i(65241),	-- Wind Dancer's Helmet	
-								i(65195),	-- Stormrider's Helm	
-								i(65190),	-- Stormrider's Headpiece	
-								i(65200),	-- Stormrider's Cover	
-								i(65181),	-- Magma Plated Helmet	
-								i(65186),	-- Magma Plated Faceguard	
-								i(65210)	-- Firelord's Hood	
+							i(65002, {	-- Crown of the Forlorn Vanquisher
+								i(65241),	-- Wind Dancer's Helmet
+								i(65195),	-- Stormrider's Helm
+								i(65190),	-- Stormrider's Headpiece
+								i(65200),	-- Stormrider's Cover
+								i(65181),	-- Magma Plated Helmet
+								i(65186),	-- Magma Plated Faceguard
+								i(65210)	-- Firelord's Hood
 							}),
-							i(66998, {	-- Essence of the Forlorn			
-								i(65001, {	-- Crown of the Forlorn Conqueror	
+							i(66998, {	-- Essence of the Forlorn
+								i(65001, {	-- Crown of the Forlorn Conqueror
 									i(65260),	-- Shadowflame Hood
 									i(65216),	-- Reinforced Sapphirium Helmet
 									i(65221),	-- Reinforced Sapphirium Headguard
 									i(65226),	-- Reinforced Sapphirium Faceguard
 									i(65235),	-- Mercurial Hood
 									i(65230)	-- Mercurial Cowl
-								}),		
-								i(65000, {	-- Crown of the Forlorn Protector	
+								}),
+								i(65000, {	-- Crown of the Forlorn Protector
 									i(65206),	-- Lightning-Charged Headguard
 									i(65251),	-- Helmet of the Raging Elements
 									i(65256),	-- Headpiece of the Raging Elements
 									i(65246),	-- Faceguard of the Raging Elements
 									i(65266),	-- Earthen Helemt
 									i(65271)	-- Earthen Faceguard
-								}),		
-								i(65002, {	-- Crown of the Forlorn Vanquisher	
+								}),
+								i(65002, {	-- Crown of the Forlorn Vanquisher
 									i(65241),	-- Wind Dancer's Helmet
 									i(65195),	-- Stormrider's Helm
 									i(65190),	-- Stormrider's Headpiece
@@ -191,24 +191,24 @@ _.Instances = { tier(4, {	-- Cataclysm
 									i(65181),	-- Magma Plated Helmet
 									i(65186),	-- Magma Plated Faceguard
 									i(65210)	-- Firelord's Hood
-								}),		
-								i(65088, {	-- Shoulders of the Forlorn Conqueror	
+								}),
+								i(65088, {	-- Shoulders of the Forlorn Conqueror
 									i(65263),	-- Shadowflame Mantle
 									i(65228),	-- Reinforced Sapphirium Shoulderpads
 									i(65218),	-- Reinforced Sapphirium Pauldrons
 									i(65223),	-- Reinforced Sapphirium Mantle
 									i(65238),	-- Mercurial Shoulderwraps
 									i(65233)	-- Mercurial Mantle
-								}),		
-								i(65087, {	-- Shoulders of the Forlorn Protector	
+								}),
+								i(65087, {	-- Shoulders of the Forlorn Protector
 									i(65253),	-- Spaulders of the Raging Elements
 									i(65258),	-- Shoulderwraps of the Raging Elements
 									i(65248),	-- Mantle of the Raging Elements
 									i(65208),	-- Lightning-Charged Spulders
 									i(65273),	-- Earthen Shoulderguards
 									i(65268)	-- Earthen Pauldrons
-								}),		
-								i(65089, {	-- Shoulders of the Forlorn Vanquisher	
+								}),
+								i(65089, {	-- Shoulders of the Forlorn Vanquisher
 									i(65243),	-- Wind Dancer's Spaulders
 									i(65193),	-- Stormrider's Spaulders
 									i(65203),	-- Stormrider's Shoulderwraps
@@ -216,24 +216,24 @@ _.Instances = { tier(4, {	-- Cataclysm
 									i(65188),	-- Magma Plated Shoulderguards
 									i(65183),	-- Magma Plated Pauldrons
 									i(65213)	-- Firelord's Mantle
-								}),		
-								i(67423, {	-- Chest of the Forlorn Conqueror	
+								}),
+								i(67423, {	-- Chest of the Forlorn Conqueror
 									i(65214),	-- Reinforced Sapphirium Battleplate
 									i(65219),	-- Reinforced Sapphirium Breastplate
 									i(65224),	-- Reinforced Sapphirium Chestguard
 									i(65232),	-- Mercurial Robes
 									i(65237),	-- Mercurial Vestment
 									i(65262),	-- Shadowflame Robes
-								}),		
-								i(67424, {	-- Chest of the Forlorn Protector	
+								}),
+								i(67424, {	-- Chest of the Forlorn Protector
 									i(65204),	-- Lightning-Charged Tunic
 									i(65249),	-- Cuirass of the Raging Elements
 									i(65254),	-- Hauberk of the Raging Elements
 									i(65244),	-- Tunic of the Raging Elements
 									i(65264),	-- Earthen Battleplate
 									i(65269),	-- Earthen Chestguard
-								}),		
-								i(67425, {	-- Chest of the Forlorn Vanquisher	
+								}),
+								i(67425, {	-- Chest of the Forlorn Vanquisher
 									i(65179),	-- Magma Plated Battleplate
 									i(65184),	-- Magma Plated Chestguard
 									i(65192),	-- Stormrider's Raiment
@@ -241,24 +241,24 @@ _.Instances = { tier(4, {	-- Cataclysm
 									i(65202),	-- Stormrider's Vestment
 									i(65212),	-- Firelord's Robes
 									i(65239),	-- Wind Dancer's Tunic
-								}),		
-								i(67429, {	-- Gauntlets of the Forlorn Conqueror	
+								}),
+								i(67429, {	-- Gauntlets of the Forlorn Conqueror
 									i(65215),	-- Reinforced Sapphirium Gauntlets
 									i(65220),	-- Reinforced Sapphirium Gloves
 									i(65225),	-- Reinforced Sapphirium Handguards
 									i(65234),	-- Mercurial Gloves
 									i(65229),	-- Mercurial Handwraps
 									i(65259),	-- Shadowflame Handwraps
-								}),		
-								i(67430, {	-- Gauntlets of the Forlorn Protector	
+								}),
+								i(67430, {	-- Gauntlets of the Forlorn Protector
 									i(65205),	-- Lightning-Charged Gloves
 									i(65255),	-- Gloves of the Raging Elements
 									i(65250),	-- Grips of the Raging Elements
 									i(65245),	-- Handwraps of the Raging Elements
 									i(65265),	-- Earthen Gauntlets
 									i(65270),	-- Earthen Handguards
-								}),		
-								i(67431, {	-- Gauntlets of the Forlorn Vanquisher	
+								}),
+								i(67431, {	-- Gauntlets of the Forlorn Vanquisher
 									i(65180),	-- Magma Plated Gauntlets
 									i(65185),	-- Magma Plated Handguards
 									i(65199),	-- Stormrider's Gloves
@@ -266,24 +266,24 @@ _.Instances = { tier(4, {	-- Cataclysm
 									i(65194),	-- Stormrider's Handwraps
 									i(65209),	-- Firelord's Gloves
 									i(65240),	-- Wind Dancer's Gloves
-								}),		
-								i(67428, {	-- Leggings of the Forlorn Conqueror	
+								}),
+								i(67428, {	-- Leggings of the Forlorn Conqueror
 									i(65222),	-- Reinforced Sapphirium Greaves
 									i(65227),	-- Reinforced Sapphirium Legguards
 									i(65217),	-- Reinforced Sapphirium Legplates
 									i(65236),	-- Mercurial Leggings
 									i(65231),	-- Mercurial Legwraps
 									i(65261),	-- Shadowflame Leggings
-								}),		
-								i(67427, {	-- Leggings of the Forlorn Protector	
+								}),
+								i(67427, {	-- Leggings of the Forlorn Protector
 									i(65207),	-- Lightning-Charged Legguards
 									i(65257),	-- Kilt of the Raging Elements
 									i(65252),	-- Legguards of the Raging Elements
 									i(65247),	-- Legwraps of the Raging Elements
 									i(65272),	-- Earthen Legguards
 									i(65267),	-- Earthen Legplates
-								}),		
-								i(67426, {	-- Leggings of the Forlorn Vanquisher	
+								}),
+								i(67426, {	-- Leggings of the Forlorn Vanquisher
 									i(65187),	-- Magma Plated Legguards
 									i(65182),	-- Magma Plated Legplates
 									i(65201),	-- Stormrider's Leggings
@@ -291,34 +291,34 @@ _.Instances = { tier(4, {	-- Cataclysm
 									i(65196),	-- Stormrider's Legwraps
 									i(65211),	-- Firelord's Leggings
 									i(65242),	-- Wind Dancer's Legguards
-								}),		
+								}),
 							}),
 							i(138836),	-- Illusion: Windfury
 							i(63041),	-- Reins of the Drake of the South Wind (MOUNT!)
-							i(65088, {	-- Shoulders of the Forlorn Conqueror		
-								i(65263),	-- Shadowflame Mantle	
-								i(65228),	-- Reinforced Sapphirium Shoulderpads	
-								i(65218),	-- Reinforced Sapphirium Pauldrons	
-								i(65223),	-- Reinforced Sapphirium Mantle	
-								i(65238),	-- Mercurial Shoulderwraps	
-								i(65233)	-- Mercurial Mantle	
+							i(65088, {	-- Shoulders of the Forlorn Conqueror
+								i(65263),	-- Shadowflame Mantle
+								i(65228),	-- Reinforced Sapphirium Shoulderpads
+								i(65218),	-- Reinforced Sapphirium Pauldrons
+								i(65223),	-- Reinforced Sapphirium Mantle
+								i(65238),	-- Mercurial Shoulderwraps
+								i(65233)	-- Mercurial Mantle
 							}),
-							i(65087, {	-- Shoulders of the Forlorn Protector		
-								i(65253),	-- Spaulders of the Raging Elements	
-								i(65258),	-- Shoulderwraps of the Raging Elements	
-								i(65248),	-- Mantle of the Raging Elements	
-								i(65208),	-- Lightning-Charged Spulders	
-								i(65273),	-- Earthen Shoulderguards	
-								i(65268)	-- Earthen Pauldrons	
+							i(65087, {	-- Shoulders of the Forlorn Protector
+								i(65253),	-- Spaulders of the Raging Elements
+								i(65258),	-- Shoulderwraps of the Raging Elements
+								i(65248),	-- Mantle of the Raging Elements
+								i(65208),	-- Lightning-Charged Spulders
+								i(65273),	-- Earthen Shoulderguards
+								i(65268)	-- Earthen Pauldrons
 							}),
-							i(65089, {	-- Shoulders of the Forlorn Vanquisher		
-								i(65243),	-- Wind Dancer's Spaulders	
-								i(65193),	-- Stormrider's Spaulders	
-								i(65203),	-- Stormrider's Shoulderwraps	
-								i(65198),	-- Stormrider's Mantle	
-								i(65188),	-- Magma Plated Shoulderguards	
-								i(65183),	-- Magma Plated Pauldrons	
-								i(65213)	-- Firelord's Mantle	
+							i(65089, {	-- Shoulders of the Forlorn Vanquisher
+								i(65243),	-- Wind Dancer's Spaulders
+								i(65193),	-- Stormrider's Spaulders
+								i(65203),	-- Stormrider's Shoulderwraps
+								i(65198),	-- Stormrider's Mantle
+								i(65188),	-- Magma Plated Shoulderguards
+								i(65183),	-- Magma Plated Pauldrons
+								i(65213)	-- Firelord's Mantle
 							}),
 							i(152973),	-- Zephyr's Call (PET!)
 							i(68132),	-- Stormwake, the Tempest's Reach

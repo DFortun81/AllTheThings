@@ -67,12 +67,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["crs"] = { 59153 },	-- Rattlegore
 						["g"] = {
 							ach(6394),	-- Rattle No More
+							i(144011),	-- Bone Golem Boots
+							i(144204),	-- Deadwalker Bracers
 							i(144203),	-- Goresoaked Headreaper
 							i(144205),	-- Necromantic Wand
-							i(144015),	-- Vigorsteel Spaulders
-							i(144204),	-- Deadwalker Bracers
 							i(144206),	-- Rattling Gloves
-							i(144011),	-- Bone Golem Boots
+							i(144015),	-- Vigorsteel Spaulders
 							un(REMOVED_FROM_GAME, i(82824)),	-- Goresoaked Headreaper (7.1 - Removed from Game!)
 							un(REMOVED_FROM_GAME, i(82826)),	-- Necromantic Wand (7.1 - Removed from Game!)
 							un(REMOVED_FROM_GAME, i(82825)),	-- Deadwalker Bracers (7.1 - Removed from Game!)
@@ -106,14 +106,15 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							ach(6762),	-- Heroic: Scholomance
 							ach(6821),	-- School's Out Forever
 							ach(645),	-- Scholomance
-							i(144211),	-- Headmaster's Will
-							i(144016),	-- Shoulderguards of Painful Lessons
 							i(144212),	-- Gloves of Explosive Pain
-							i(144210),	-- Tombstone Gauntlets
+							i(144211),	-- Headmaster's Will
 							i(144213),	-- Incineration Belt
 							i(144161),	-- Lessons of the Darkmaster
 							i(144159),	-- Price of Progress
 							i(144160),	-- Searing Words
+							i(144016),	-- Shoulderguards of Painful Lessons
+							i(144210),	-- Tombstone Gauntlets
+							i(144015),	-- Vigorsteel Spaulders
 							un(REMOVED_FROM_GAME, i(82859)),	-- Headmaster's Will (7.1 - Removed from Game!)
 							un(REMOVED_FROM_GAME, i(82857)),	-- Vigorsteel Spaulders (7.1 - Removed from Game!)
 							un(REMOVED_FROM_GAME, i(82862)),	-- Shoulderguards of Painful Lessons (7.1 - Removed from Game!)

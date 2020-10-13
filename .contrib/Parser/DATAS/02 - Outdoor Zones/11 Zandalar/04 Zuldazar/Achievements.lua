@@ -1,11 +1,12 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(862, {	-- Zuldazar
-			n(-4, {		-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(13020, {	-- Bow to Your Masters
 					["collectible"] = false,
 					["races"] = HORDE_ONLY,

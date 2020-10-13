@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-_.GearSets = 
+
+_.GearSets =
 {
 	n(-254, {	-- Heritage Armor
 		gs(1524, {	-- Heritage of the Ren'dorei
@@ -19,5 +20,5 @@ _.GearSets =
 				i(156696),	-- Ren'dorei Boots
 			},
 		}),
-	}),	
+	}),
 };

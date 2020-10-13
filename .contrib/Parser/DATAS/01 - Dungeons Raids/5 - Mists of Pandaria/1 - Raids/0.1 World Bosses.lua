@@ -38,6 +38,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(95970),	-- Abandoned Zandalari Silentbelt
 						i(95973),	-- Abandoned Zandalari Waterchain
 						i(95979),	-- Columnbreaker Stompers [Crieve got November 24, 2018 on stream]
+						i(95966),	-- Deeproot Treads
+						i(95963),	-- Silentflame Sandals
 						i(94295),	-- Primal Egg
 						i(44984),	-- Ammen Vale Lashling
 						i(54436),	-- Blue Clockwork Rocket Bot
@@ -330,7 +332,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(91416),	-- Tyrannical Gladiator's Signet of Cruelty
 					i(94417),	-- Tyrannical Gladiator's Signet of Cruelty
 				},
-			}),	
+			}),
 			e(826, { 	-- Oondasta
 				["isWeekly"] = true,
 				["questID"] = 32519,
@@ -359,16 +361,17 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(95980),	-- Necklace of the Terra-Cotta Protector
 						i(95958),	-- Necklace of the Terra-Cotta Archer
 						i(95969),	-- Necklace of the Terra-Cotta Mender
+						i(95963),	-- Silentflame Sandals
 						i(95959),	-- Spiderweb Tabi
 					}),
-					
+
 					-- Necks
 					i(95181),	-- Amulet of the Titanorex
 					i(95177),	-- Choker of Stygimolochy
 					i(95178),	-- Lootraptor's Amulet
 					i(95179),	-- Necklace of the Hazillosaurus
 					i(95180),	-- Overcompensating Chain of the Alpha Male
-					
+
 					-- Chests
 					i(95152),	-- Breastplate of the Iguanocolossus
 					i(95147),	-- Fancifully Frilled Tunic
@@ -379,7 +382,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(95153),	-- Tyrant King Battleplate
 					i(95148),	-- Vest of the Bordomorono
 					i(95183),	-- Waistband of Elder Falcarius
-					
+
 					-- Hands
 					i(95199),	-- Carnotaur Battlegloves
 					i(95196),	-- Gloves of Gastric Rumbling
@@ -390,7 +393,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(95201),	-- Skullsmashing Gauntlets
 					i(95197),	-- Therapsid Scale Gloves
 					i(95198),	-- Vulcanodon Gauntlets
-					
+
 					-- Waists
 					i(95186),	-- Belt of Crushed Dreams
 					i(95188),	-- Belt of the Arch Avimimus
@@ -401,7 +404,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(95185),	-- Terrorful Weave
 					i(95191),	-- Voolar's Bloodied Belt
 					i(95190),	-- Waistband of Furious Stomping
-					
+
 					-- Rings
 					i(95165),	-- Achillobator Ring
 					i(95164),	-- Eye of Oondasta
@@ -722,7 +725,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(48124),	-- Razormaw Hatchling
 						i(48126),	-- Razzashi Hatchling
 					}),
-					
+
 					-- Necks
 					i(84892),	-- Malevolent Gladiator's Choker of Accuracy
 					i(84891),	-- Malevolent Gladiator's Choker of Proficiency
@@ -913,7 +916,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(105814),	-- Seebo's Sainted Touch
 						i(105817),	-- Siid's Silent Stranglers
 						i(105825),	-- Turtleshell Greatcloak
-						i(105822),	-- Zoid's Molten Gauntlets	
+						i(105822),	-- Zoid's Molten Gauntlets
 						i(44984),	-- Ammen Vale Lashling
 						i(54436),	-- Blue Clockwork Rocket Bot
 						i(44970),	-- Dun Morogh Cub

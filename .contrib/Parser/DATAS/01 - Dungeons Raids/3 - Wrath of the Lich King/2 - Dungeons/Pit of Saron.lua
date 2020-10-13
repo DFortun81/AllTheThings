@@ -6,6 +6,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(278, { 	-- Pit of Saron
 		["mapID"] = 184,
 		["coord"] = { 52.3, 89.3, 118 },
+		["maps"] = { 823 },
 		["lvl"] = 78,
 		["g"] = {
 			n(QUESTS, {
@@ -28,6 +29,27 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["sourceQuest"] = 24712,	-- Deliverance from the Pit
 					["provider"] = { "n", 38189 },	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["races"] = HORDE_ONLY,
+				}),
+				q(45331, {	-- Return to Acherus
+					["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
+					["coord"] = { 47.8, 19.2, 823 },
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuests"] = {
+						45398, -- Harnessing Power
+						45399, -- Severing the Sveldrek
+					},
+				}),
+				q(45398, {	-- Harnessing Power
+					["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
+					["coord"] = { 47.8, 19.2, 823 },
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 45240, -- Making Preparations
+				}),
+				q(45399, {	-- Severing the Sveldrek
+					["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
+					["coord"] = { 47.8, 19.2, 823 },
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 45240, -- Making Preparations
 				}),
 				q(24498, {	-- The Path to the Citadel
 					["sourceQuest"] = 24683,	-- The Pit of Saron

@@ -1,13 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(1462, {	-- Mechagon
 			n(-38, {	-- Professions
 				prof(FISHING, {
-					i(167661, {	 -- Energized Lightning Cod
+					i(167661, {	-- Energized Lightning Cod
 						["questID"] = 55311,
 						["isDaily"] = true,
 						["description"] = "Can be caught near Danielle, though it's likely they can be caught anywhere along the coast of the island.",
@@ -17,10 +18,10 @@ _.Zones =
 							}),
 						},
 					}),
-					i(167562, {	 -- Ionized Minnow
+					i(167562, {	-- Ionized Minnow
 					--	["description"] = "Can be caught near Danielle, though it's likely they can be caught anywhere along the coast of the island.",
 					}),
-					i(167662, {	 -- Solarsprocket Barbel
+					i(167662, {	-- Solarsprocket Barbel
 						["questID"] = 55312,
 						["isDaily"] = true,
 						["description"] = "Can be caught anywhere on the island.",
@@ -30,7 +31,7 @@ _.Zones =
 							}),
 						},
 					}),
-					i(167655, {	 -- Bolted Steelhead
+					i(167655, {	-- Bolted Steelhead
 						["questID"] = 55305,
 						["isDaily"] = true,
 						["description"] = "Can be caught anywhere on the island.",
@@ -40,7 +41,7 @@ _.Zones =
 							}),
 						},
 					}),
-					i(167663, {	 -- Tasty Steelfin 
+					i(167663, {	-- Tasty Steelfin
 						["questID"] = 55313,
 						["isDaily"] = true,
 						["description"] = "Can be caught at the waterfall - 47.37.",
@@ -51,7 +52,7 @@ _.Zones =
 							}),
 						},
 					}),
-					i(167654, {	 -- Bottom Feeding Stinkfish
+					i(167654, {	-- Bottom Feeding Stinkfish
 						["questID"] = 55299,
 						["isDaily"] = true,
 						["description"] = "Can be caught south of Rustbolt - 79.49",
@@ -61,8 +62,8 @@ _.Zones =
 								["achievementID"] = 13489,
 							}),
 						},
-					}),				
-					i(167656, {	 -- Pond Hopping Springfish 
+					}),
+					i(167656, {	-- Pond Hopping Springfish
 						["questID"] = 55306,
 						["isDaily"] = true,
 						["description"] = "Can be caught at the pond near the waterfall - 56.32",
@@ -72,8 +73,8 @@ _.Zones =
 								["achievementID"] = 13489,
 							}),
 						},
-					}),	
-					i(167657, {	 -- Shadowy Cave Eel 
+					}),
+					i(167657, {	-- Shadowy Cave Eel
 						["questID"] = 55307,
 						["isDaily"] = true,
 						["description"] = "Can be caught in the cave near the waterfall - 59.24",
@@ -83,8 +84,8 @@ _.Zones =
 								["achievementID"] = 13489,
 							}),
 						},
-					}),	
-					i(167660, {	 -- Sludge-fouled Carp
+					}),
+					i(167660, {	-- Sludge-fouled Carp
 						["questID"] = 55310,
 						["isDaily"] = true,
 						["description"] = "Can be caught in the oil pond in the middle - 66.52",
@@ -94,8 +95,8 @@ _.Zones =
 								["achievementID"] = 13489,
 							}),
 						},
-					}),	
-					i(167659, {	 -- Spitting Clownfish
+					}),
+					i(167659, {	-- Spitting Clownfish
 						["questID"] = 55309,
 						["isDaily"] = true,
 						["description"] = "Can be caught in the far southeast - 83.74",
@@ -105,8 +106,8 @@ _.Zones =
 								["achievementID"] = 13489,
 							}),
 						},
-					}),	
-					i(167658, {	 -- Mechanical Blowfish
+					}),
+					i(167658, {	-- Mechanical Blowfish
 						["questID"] = 55308,
 						["isDaily"] = true,
 						["description"] = "Can be caught in the far southwest - 25.77",
@@ -116,7 +117,7 @@ _.Zones =
 								["achievementID"] = 13489,
 							}),
 						},
-					}),	
+					}),
 				}),
 			}),
 		}),

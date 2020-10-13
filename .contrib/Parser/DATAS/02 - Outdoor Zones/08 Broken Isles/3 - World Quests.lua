@@ -1,13 +1,19 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		n(-34, {	-- World Quests
 			["order"] = "03",
 			["lvl"] = 110,
-			["g"] = {
+			["g"] = {			
+				q(47063, {	-- Tracking Quest [Broken Isles Legion Invasion Scenario Completion]
+					["lvl"] = 110,
+					["description"] = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
+					["isWorldQuest"] = true,
+				}),
 				f(200,  {	-- Recipes
 					q(41666, {	-- Vantus Rune Work Order: Nythendra
 						["repeatable"] = true,
@@ -468,6 +474,7 @@ _.Zones =
 					i(141263),	-- Stonedark Idol
 					i(140079),	-- Stormforged Fist
 					i(141276),	-- Vision of An'she
+					i(140086),	-- Intact Infernal Palm
 				}),
 				i(135511),	-- Thick Slab of Bacon. You get it for a split second after completing a bacon wq
 				i(137212),	-- Cut Skystone. You get it for a split second after completing the jewelcrafter daily

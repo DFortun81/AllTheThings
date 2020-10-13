@@ -1,9 +1,10 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = bubbleDown({["u"] = 28}, 
+
+_.Holidays = bubbleDown({["u"] = 28},
 {
-	holiday(235465, {	-- Pilgrim's Bounty
+	holiday(235466, {	-- Pilgrim's Bounty
 		n(VENDORS, {
 			i(46810, {	-- Bountiful Cookbook
 				["races"] = HORDE_ONLY,

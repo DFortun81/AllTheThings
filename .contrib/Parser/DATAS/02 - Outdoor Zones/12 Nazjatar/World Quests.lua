@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -23,14 +23,6 @@ _.Zones =
 			q(55893, {	-- Azanz, the Slitherblade
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(6, {	-- Azanz, the Slitherblade
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-				},
 			}),
 			q(57334, {	-- Cave of Murlocs
 				["lvl"] = 120,
@@ -39,74 +31,26 @@ _.Zones =
 			q(55891, {	-- Champion Aldrantiss, Defender of Her Kingdom
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(10, {	-- Champion Aldrantiss, Defender of Her Kingdom
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-				},
 			}),
 			q(55887, {	-- Champion Alzana, Arrow of Thunder
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(11, {	-- Champion Alzana, Arrow of Thunder
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-				},
 			}),
 			q(55892, {	-- Champion Eldanar, Shield of Her Glory
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(12, {	-- Champion Eldanar, Shield of Her Glory
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-				},
 			}),
 			q(55889, {	-- Champion Kyx'zhul the Deepspeaker
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(13, {	-- Champion Kyx'zhul the Deepspeaker
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-				},
 			}),
 			q(55888, {	-- Champion Qalina, Spear of Ice
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(14, {	-- Champion Qalina, Spear of Ice
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-				},
 			}),
 			q(55890, {	-- Champion Vyz'olgo the Mind-Taker
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(15, {	-- Champion Vyz'olgo the Mind-Taker
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-				},
 			}),
 			q(56382, {	-- Chomp
 				["isWorldQuest"] = true,
@@ -146,14 +90,6 @@ _.Zones =
 			q(55895, {	-- Frozen Winds of Zhiela
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-					crit(2, {	-- Frozen Winds of Zhiela
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-				},
 			}),
 			q(56392, {	-- Giant Opaline Conch
 				["isWorldQuest"] = true,
@@ -179,14 +115,6 @@ _.Zones =
 			q(55900, {	-- Kassar, Wielder of Dark Blades
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-					crit(8, {	-- Kassar, Wielder of Dark Blades
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-				},
 			}),
 			q(56389, {	-- Kelpstone
 				["isWorldQuest"] = true,
@@ -196,29 +124,14 @@ _.Zones =
 			q(56023, {	-- Leylocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(3, {	-- Hard Leylocked Chest
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
 			}),
 			q(56024, {	-- Leylocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(2, {	-- Medium Leylocked Chest
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
 			}),
 			q(56025, {	-- Leylocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(1, {	-- Easy Leylocked Chest
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
 			}),
 			q(56388, {	-- Mindshackle
 				["isWorldQuest"] = true,
@@ -255,181 +168,91 @@ _.Zones =
 			q(56003, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(21, {	-- Medium Runelocked Chest: Green
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56006, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(20, {	-- Medium Runelocked Chest: Orange
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56007, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(11, {	-- Easy Runelocked Chest: Red
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56008, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(18, {	-- Medium Runelocked Chest: Yellow
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56009, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(17, {	-- Medium Runelocked Chest: Purple
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56010, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(16, {	-- Medium Runelocked Chest: Blue
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56011, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(15, {	-- Easy Runelocked Chest: Blue
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56012, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(14, {	-- Easy Runelocked Chest: Green
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56013, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(13, {	-- Easy Runelocked Chest: Orange
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56014, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(12, {	-- Easy Runelocked Chest: Purple
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56015, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(19, {	-- Medium Runelocked Chest: Red
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56016, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(10, {	-- Easy Runelocked Chest: Yellow
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56017, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(9, {	-- Hard Runelocked Chest: Blue
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56018, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(8, {	-- Hard Runelocked Chest: Green
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56019, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(7, {	-- Hard Runelocked Chest: Orange
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56020, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(6, {	-- Hard Runelocked Chest: Purple
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56021, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["sourceQuest"] = 56248,	-- Treasure Tale
-				["g"] = {
-					crit(5, {	-- Hard Runelocked Chest: Red
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
+				["sourceQuests"] = { 56248 },	-- Treasure Tale
 			}),
 			q(56022, {	-- Runelocked Chest
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(4, {	-- Hard Runelocked Chest: Yellow
-						["achievementID"] = 13764,	-- Puzzle Performer
-					}),
-				},
 			}),
 			q(57331, {	-- Salvage Operations
 				["isWorldQuest"] = true,
@@ -448,38 +271,14 @@ _.Zones =
 			q(55899, {	-- Starseeker of the Shirakess
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-					crit(5, {	-- Starseeker of the Shirakess
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-				},
 			}),
 			q(55897, {	-- Szun, Breaker of Slaves
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-					crit(1, {	-- Szun, Breaker of Slaves
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-				},
 			}),
 			q(55898, {	-- Tempest-Speaker Shalan'ali
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-					crit(4, {	-- Tempest-Speaker Shalan'ali
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-				},
 			}),
 			q(57333, {	-- Terrace Terrors
 				["isWorldQuest"] = true,
@@ -504,14 +303,6 @@ _.Zones =
 			q(55886, {	-- The Zanj'ir Brutalizer
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-					crit(9, {	-- The Zanj'ir Brutalizer
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-				},
 			}),
 			q(57330, {	-- Time for Revenge
 				["lvl"] = 120,
@@ -524,14 +315,6 @@ _.Zones =
 			q(55896, {	-- Undana, Chilling Assassin
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-					crit(7, {	-- Undana, Chilling Assassin
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-				},
 			}),
 			q(56390, {	-- Voltgorger
 				["isWorldQuest"] = true,
@@ -771,14 +554,6 @@ _.Zones =
 			q(55894, {	-- Zoko, Her Iron Defender
 				["lvl"] = 120,
 				["isWorldQuest"] = true,
-				["g"] = {
-					crit(4, {	-- Defeat one of Azshara's Champions
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
-					crit(3, {	-- Zoko, Her Iron Defender
-						["achievementID"] = 13690,	-- Nazjatarget Eliminated
-					}),
-				},
 			}),
 		}),
 	}),

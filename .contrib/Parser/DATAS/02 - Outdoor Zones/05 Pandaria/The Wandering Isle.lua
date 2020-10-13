@@ -1,13 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(378, {	-- The Wandering Isle Starter Zones
-			["races"] = { 24, 25, 26 },	-- Neutral Pandas and Alliance/Horde Pandas [Adding faction just to be safe]
+			["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },	-- [Adding faction just to be safe]
 			["icon"] = "Interface\\Icons\\INV_Misc_Fish_Turtle_03",
-			["lvl"] = 1,
 			["g"] = {
 				n(QUESTS, {
 					q(31450, {	-- A New Fate
@@ -106,6 +106,13 @@ _.Zones =
 						["provider"] = { "n", 54786 },	-- Master Shang Xi
 						["sourceQuests"] = { 29775 },	-- The Spirit and Body of Shen-zin Su
 					}),
+					un(REMOVED_FROM_GAME, q(30039)),	-- Much to Learn
+					un(REMOVED_FROM_GAME, q(30040)),	-- Much to Learn
+					un(REMOVED_FROM_GAME, q(30041)),	-- Much to Learn
+					un(REMOVED_FROM_GAME, q(30042)),	-- Much to Learn
+					un(REMOVED_FROM_GAME, q(30043)),	-- Much to Learn
+					un(REMOVED_FROM_GAME, q(30044)),	-- Much to Learn
+					un(REMOVED_FROM_GAME, q(30045)),	-- Much to Learn
 					q(29800, {	-- New Allies
 						["provider"] = { "n", 57739 },	-- Ji Firepaw
 						["sourceQuests"] = { 29799 },	-- The Healing of Shen-zin Su
@@ -213,31 +220,31 @@ _.Zones =
 					}),
 					q(30034, {	-- The Lesson of the Iron Bough (Hunter)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
-						["classes"] = { 3 },
+						["classes"] = { HUNTER },
 					}),
 					q(30038, {	-- The Lesson of the Iron Bough (Warrior)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
-						["classes"] = { 1 },
+						["classes"] = { WARRIOR },
 					}),
 					q(30033, {	-- The Lesson of the Iron Bough (Mage)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
-						["classes"] = { 8 },
+						["classes"] = { MAGE },
 					}),
 					q(30035, {	-- The Lesson of the Iron Bough (Priest?)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
-						["classes"] = { 5 },
+						["classes"] = { PRIEST },
 					}),
 					q(30027, {	-- The Lesson of the Iron Bough (Monk)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
-						["classes"] = { 10 },
+						["classes"] = { MONK },
 					}),
 					q(30036, {	-- The Lesson of the Iron Bough (Rogue)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
-						["classes"] = { 4 },
+						["classes"] = { ROGUE },
 					}),
-					q(30037, {	-- The Lesson of the Iron Bough (Shaman, Mage, Warlock)
+					q(30037, {	-- The Lesson of the Iron Bough (Shaman, Warlock)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
-						["classes"] = { 7, 9 },
+						["classes"] = { SHAMAN, WARLOCK },
 					}),
 					q(29406, {	-- The Lesson of the Sandy Fist
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
@@ -307,16 +314,6 @@ _.Zones =
 						["provider"] = { "n", 60042 },	-- Korga Strongmane
 						["sourceQuests"] = { 29795, 30591 },	-- Stocking Stalks, Preying on the Predators
 					}),
---[[
-					These quests have been removed:
-					q(30039),	-- Much to Learn
-					q(30040),	-- Much to Learn
-					q(30041),	-- Much to Learn
-					q(30042),	-- Much to Learn
-					q(30043),	-- Much to Learn
-					q(30044),	-- Much to Learn
-					q(30045),	-- Much to Learn
-]]--
 				}),
 			},
 		}),

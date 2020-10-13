@@ -1,12 +1,13 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(895, {	-- Tiragarde Sound
 			n(QUESTS, {
-		--	!! LEATHER/MAIL REWARDS NEEDED FOR QUEST 49404, "FAIRWIND'S 'FRIENDS'" !! — leather needs to be confirmed and mail is missing completely
+				--	!! LEATHER/MAIL REWARDS NEEDED FOR QUEST 49404, "FAIRWIND'S 'FRIENDS'" !! — leather needs to be confirmed and mail is missing completely
 				q(49523, {	-- A Bad Deal
 					["sourceQuests"] = { 49522 },	-- Carentan's Payment
 					["coord"] = { 76.8, 85.9, 895 },
@@ -493,7 +494,7 @@ _.Zones =
 					["coord"] = { 88.0, 74.9, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(53444, {	-- Glimmering Locket (H)	
+				q(53444, {	-- Glimmering Locket (H)
 					["sourceQuests"] = { 53443 },	-- My Favorite Things (must be in log)
 					["provider"] = { "o", 277373 },	-- Glimmering Seaweed
 					["coord"] = { 85.48, 80.78, 895 },
@@ -1435,7 +1436,7 @@ _.Zones =
 				q(50350, {	-- We Need a Chemist
 					["races"] = ALLIANCE_ONLY,
 				}),
-]]--					
+]]--
 			}),
 		}),
 	}),

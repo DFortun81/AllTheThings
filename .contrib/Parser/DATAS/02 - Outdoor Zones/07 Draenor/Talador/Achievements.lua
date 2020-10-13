@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
 		m(535, {	-- Talador
-			n(-4, {		-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(9069, {		-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -132,6 +133,6 @@ _.Zones =
 				ach(9632),		-- The Power Is Yours (Shattrath City)
 				ach(9636),		-- United We Stand (Shattrath City)
 			}),
-		}),		
+		}),
 	}),
 };

@@ -23,6 +23,11 @@ _.Instances = { tier(7, {	-- Legion
 			920,
 		},
 		["g"] = {
+			n(QUESTS, {
+				q(49077, {	-- Moments of Reflection
+					["provider"] = { "n", 129429 },	-- Alor'idal Crystal
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					-- * = ID confirmed in H
@@ -480,38 +485,34 @@ _.Instances = { tier(7, {	-- Legion
 								},
 							},
 						}),
-						{
-							["itemID"] = 152314,	-- Azeroth Invasion Plans (Normal)
+						i(152314, {	-- Azeroth Invasion Plans (Normal)
 							["questID"] = 48295,	-- Antoran High Command (Normal)
 							["repeatable"] = true,
 							["g"] = {
 								i(153504),	-- Cache of Antoran Treasures (Normal)
 							},
-						},
-						{
-							["itemID"] = 152318,	-- Discharged Shock Lance (Normal)
+						}),
+						i(152318, {	-- Discharged Shock Lance (Normal)
 							["questID"] = 48296,	-- The Soulhunter (Normal)
 							["repeatable"] = true,
 							["g"] = {
 								i(153504),	-- Cache of Antoran Treasures (Normal)
 							},
-						},
-						{
-							["itemID"] = 152326,	-- Sanguine Argunite (Normal)
+						}),
+						i(152326, {	-- Sanguine Argunite (Normal)
 							["questID"] = 48298,	-- The Unmaker (Normal)
 							["repeatable"] = true,
 							["g"] = {
 								i(153504),	-- Cache of Antoran Treasures (Normal)
 							},
-						},
-						{
-							["itemID"] = 152322,	-- Sargerei Manifesto (Normal)
+						}),
+						i(152322, {	-- Sargerei Manifesto (Normal)
 							["questID"] = 48297,	-- The Burning Coven (Normal)
 							["repeatable"] = true,
 							["g"] = {
 								i(153504),	-- Cache of Antoran Treasures (Normal)
 							},
-						},
+						}),
 					},
 				}),
 				n(ZONEDROPS, {
@@ -872,8 +873,7 @@ _.Instances = { tier(7, {	-- Legion
 							["altQuests"] = { 49135 },	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
 							["provider"] = { "n", 125682 },	-- Prophet Velen
 						}),
-						{
-							["itemID"] = 153501,	-- Cache of Antoran Treasures (Heroic)
+						i(153501, {	-- Cache of Antoran Treasures (Heroic)
 							["sym"] = {
 								{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
 								{"pop"},	-- Discard the Instance Header and acquire the children.
@@ -889,39 +889,35 @@ _.Instances = { tier(7, {	-- Legion
 									155831,	-- Pantheon's Blessing
 								},
 							},
-						},
-						{
-							["itemID"] = 152315,	-- Azeroth Invasion Plans (Heroic)
+						}),
+						i(152315, {	-- Azeroth Invasion Plans (Heroic)
 							["questID"] = 48299,	-- Antoran High Command (Heroic)
 							["repeatable"] = true,
 							["g"] = {
 								i(153501),	-- Cache of Antoran Treasures (Heroic)
 							},
-						},
-						{
-							["itemID"] = 152319,	-- Discharged Shock Lance (Heroic)
+						}),
+						i(152319, {	-- Discharged Shock Lance (Heroic)
 							["questID"] = 48300,	-- The Soulhunter (Heroic)
 							["repeatable"] = true,
 							["g"] = {
 								i(153501),	-- Cache of Antoran Treasures (Heroic)
 							},
-						},
-						{
-							["itemID"] = 152327,	-- Sanguine Argunite (Heroic)
+						}),
+						i(152327, {	-- Sanguine Argunite (Heroic)
 							["questID"] = 48302,	-- The Unmaker (Heroic)
 							["repeatable"] = true,
 							["g"] = {
 								i(153501),	-- Cache of Antoran Treasures (Heroic)
 							},
-						},
-						{
-							["itemID"] = 152323,	-- Sargerei Manifesto (Heroic)
+						}),
+						i(152323, {	-- Sargerei Manifesto (Heroic)
 							["questID"] = 48301,	-- The Burning Coven (Heroic)
 							["repeatable"] = true,
 							["g"] = {
 								i(153501),	-- Cache of Antoran Treasures (Heroic)
 							},
-						},
+						}),
 					},
 				}),
 				n(ZONEDROPS, {
@@ -992,7 +988,6 @@ _.Instances = { tier(7, {	-- Legion
 						i(152291),	-- Fraternal Fervor
 						i(152027),	-- Gravitational Condensate
 						i(152059),	-- Whistling Ulna
-
 					},
 				}),
 				e(1997, {	-- Antoran High Command
@@ -1288,8 +1283,7 @@ _.Instances = { tier(7, {	-- Legion
 							["description"] = "Finishing this quest will grant you immediate access to Aggramar on Mythic difficulty each week.\n",
 							["provider"] = { "n", 125682 },	-- Prophet Velen
 						}),
-						{
-							["itemID"] = 153503,	-- Cache of Antoran Treasures (Mythic)
+						i(153503, {	-- Cache of Antoran Treasures (Mythic)
 							["sym"] = {
 								{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
 								{"pop"},	-- Discard the Instance Header and acquire the children.
@@ -1305,39 +1299,35 @@ _.Instances = { tier(7, {	-- Legion
 									155831,	-- Pantheon's Blessing
 								},
 							},
-						},
-						{
-							["itemID"] = 152316,	-- Azeroth Invasion Plans (Mythic)
+						}),
+						i(152316, {	-- Azeroth Invasion Plans (Mythic)
 							["questID"] = 48303,	-- Antoran High Command (Mythic)
 							["repeatable"] = true,
 							["g"] = {
 								i(153503),	-- Cache of Antoran Treasures (Mythic)
 							},
-						},
-						{
-							["itemID"] = 152320,	-- Discharged Shock Lance (Mythic)
+						}),
+						i(152320, {	-- Discharged Shock Lance (Mythic)
 							["questID"] = 48304,	-- The Soulhunter (Mythic)
 							["repeatable"] = true,
 							["g"] = {
 								i(153503),	-- Cache of Antoran Treasures (Mythic)
 							},
-						},
-						{
-							["itemID"] = 152328,	-- Sanguine Argunite (Mythic)
+						}),
+						i(152328, {	-- Sanguine Argunite (Mythic)
 							["questID"] = 48306,	-- The Unmaker (Mythic)
 							["repeatable"] = true,
 							["g"] = {
 								i(153503),	-- Cache of Antoran Treasures (Mythic)
 							},
-						},
-						{
-							["itemID"] = 152324,	-- Sargerei Manifesto (Mythic)
+						}),
+						i(152324, {	-- Sargerei Manifesto (Mythic)
 							["questID"] = 48305,	-- The Burning Coven (Mythic)
 							["repeatable"] = true,
 							["g"] = {
 								i(153503),	-- Cache of Antoran Treasures (Mythic)
 							},
-						},
+						}),
 					},
 				}),
 				n(ZONEDROPS, {

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -345,7 +346,7 @@ _.Zones =
 				q(26489, {	-- It's You!!
 					["provider"] = { "n", 43095 },	-- Sassy Hardwrench
 					["coord"] = { 34.8, 29.4, 210 },
-					["races"] = { 9 },	-- Goblin
+					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
 				}),
 				q(576,   {	-- Keep An Eye Out

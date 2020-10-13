@@ -1,6 +1,7 @@
----------------------------------------------------
+-------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
----------------------------------------------------
+-------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
@@ -91,7 +92,7 @@ _.ExpansionFeatures =
 						["classes"] = { SHAMAN },
 						["lvl"] = 110,
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							45725,	-- Breaking Chains
 							45724,	-- Snakes and Stones
 							45723,	-- The Crone's Wrath
@@ -245,10 +246,10 @@ _.ExpansionFeatures =
 						["classes"] = { SHAMAN },
 						["lvl"] = 98,
 						["provider"] = { "n", 42465 },	-- Therazane
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							42935,	-- Stone Drake Rescue
 							42933,	-- The Troggs that Fel to Earth
-						},	
+						},
 						["maps"] = { 207 },	-- Deepholm
 					}),
 					q(45769, {	-- Conflagration
@@ -316,7 +317,7 @@ _.ExpansionFeatures =
 						["classes"] = { SHAMAN },
 						["lvl"] = 110,
 						["provider"] = { "n", 106001 },	-- Muln Earthfury
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							41777,	-- Destroying the Cult
 							41897,	-- The Master's Plan
 						},
@@ -353,7 +354,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = {
 							42986,	-- Enemies of Air
 							42984,	-- Eye of Azshara: The Scepter of Storms
-						},	
+						},
 					}),
 					q(42983, {	-- Mistral Essence
 						["classes"] = { SHAMAN },
@@ -366,11 +367,11 @@ _.ExpansionFeatures =
 						["classes"] = { SHAMAN },
 						["lvl"] = 98,
 						["provider"] = { "n", 42465 },	-- Therazane
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							42936,	-- Clutch Play
 							42935,	-- Stone Drake Rescue
 							42933,	-- The Troggs that Fel to Earth
-						},	
+						},
 						["maps"] = { 207 },	-- Deepholm
 					}),
 					q(42990, {	-- Neltharion's Lair: The Earthen Amulet
@@ -540,11 +541,11 @@ _.ExpansionFeatures =
 						["classes"] = { SHAMAN },
 						["lvl"] = 110,
 						["provider"] = { "n", 117715 },	-- Therazane
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							45765,	-- Brothers and Sisters
 							45767,	-- Elemental Cores
 							45971,	-- Infernal Phenomena
-						},	
+						},
 						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(41775, {	-- The Great Stonemother
@@ -564,7 +565,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42937 },	-- Needlerock Beatdown
 						["maps"] = {
 							729,	-- Crumbling Depths
-							207,	-- Deepholm							
+							207,	-- Deepholm
 						},
 					}),
 					q(40276, {	-- The Maelstrom Beckons
@@ -628,7 +629,7 @@ _.ExpansionFeatures =
 						["classes"] = { SHAMAN },
 						["lvl"] = 110,
 						["provider"] = { "n", 106001 },	-- Muln Earthfury
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							41899,	-- Held Captive!
 							41898,	-- Unleashing the Elements
 						},
@@ -645,7 +646,7 @@ _.ExpansionFeatures =
 						["lvl"] = 98,
 						["provider"] = { "n", 96530 },	-- Erunak Stonespeaker
 						["sourceQuests"] = { 43645 },	-- Wavespeaker's Trail
-						["maps"] = { 
+						["maps"] = {
 							742,	-- Abyssal Maw
 							743,	-- Abyssal Maw
 							205,	-- Shimmering Expanse
@@ -667,7 +668,7 @@ _.ExpansionFeatures =
 						["classes"] = { SHAMAN },
 						["lvl"] = 110,
 						["provider"] = { "n", 106001 },	-- Muln Earthfury
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							41777,	-- Destroying the Cult
 							41897,	-- The Master's Plan
 						},

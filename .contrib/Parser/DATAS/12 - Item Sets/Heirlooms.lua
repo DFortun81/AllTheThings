@@ -1,11 +1,12 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-_.GearSets = 
+
+_.GearSets =
 {
 	n(-365, {	-- Heirlooms
 		["achievementID"] = 9909,	-- Heirloom Hoarder
-		["g"] = {	
+		["g"] = {
 			i(120968),	-- Chauffeured Chopper
 			i(122703),	-- Chauffeured Chopper
 			n(-319, {	-- Weapons
@@ -178,7 +179,7 @@ _.GearSets =
 						{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 					},
 				}),
-			}),	
+			}),
 			n(-318, {	-- Armor
 				n(-322, {	-- Back
 					un(REMOVED_FROM_GAME, i(62040)),	-- Ancient Bloodmoon Cloak

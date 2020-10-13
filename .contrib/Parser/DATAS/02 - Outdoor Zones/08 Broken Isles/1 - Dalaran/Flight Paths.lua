@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -12,9 +13,9 @@ _.Zones =
 				--[[	Point does not register and check off after taking flight from Eagle Master
 				fp(1849, {	-- Dalaran (Eagle)
 					["coord"] = { 72.6, 41.6 },
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 				}), ]]--
 			}),
 		}),
 	}),
-};;
+};

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -14,7 +15,6 @@ _.Zones =
 				428,	-- Frostmane Hovel (Coldridge Valley)
 				470,	-- Frostmane Hold
 			},
-			["lvl"] = 1,
 		}),
 	}),
 };

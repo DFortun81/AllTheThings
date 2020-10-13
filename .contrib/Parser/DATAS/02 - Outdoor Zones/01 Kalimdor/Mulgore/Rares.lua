@@ -6,9 +6,11 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(7, {	-- Mulgore
 			n(RARES, {
+				n(5787, {	-- Enforcer Emilgund
+					["coord"] = { 60.6, 47.6, 7 },
+				}),
 				n(3068, {	-- Mazzranache
 					["coord"] = { 50.4, 42.6, 7 },
-					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4861)),	-- Sleek Feathered Tunic
 					},
@@ -17,6 +19,12 @@ _.Zones =
 					["coords"] = {
 						{ 53.4, 12.6, 7 },
 						{ 32.6, 24.0, 7 },
+					},
+				}),
+				n(5786, {	-- Snagglespear
+					["coords"] = {
+						{ 53.4, 71.6, 7 },
+						{ 48.8, 70.0, 7 },
 					},
 				}),
 				n(5807, {	-- The Rake

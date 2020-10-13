@@ -1,6 +1,7 @@
----------------------------------------------
---     S E C R E T S     M O D U L E       --
----------------------------------------------
+-------------------------------------------
+--     S E C R E T S     M O D U L E     --
+-------------------------------------------
+
 _.Secrets =
 {
 	n(-802, {	-- Sun Darter Hatchling
@@ -18,7 +19,7 @@ _.Secrets =
 							n(144128, {	-- Dark Iron Brewer
 								["coords"] = {
 									{ 21.0, 38.3, 36 },	-- Blackrock Mountain
-									{ 55.0, 84.5, 35 },	-- Entrance by MC 
+									{ 55.0, 84.5, 35 },	-- Entrance by MC
 									{ 39.0, 18.3, 35 },	-- BRD Entrance
 									{ 49.8, 60.9, 243 },	-- Inside Instance
 									{ 49.8, 31.6, 242 },	-- Inside Instance
@@ -41,44 +42,44 @@ _.Secrets =
 									{ 28.5, 55.0, 235 },	-- Inside instance
 								}
 							}),
-						},	
+						},
 					}),
 					i(103789, {	-- "Little Princess" Costume
 						["description"] = "Qty:1\n\nPurchase on the AH or from the vendors below:",
 						["g"] = {
 							n(142065, {	-- Dana Pull
 								["description"] = "Boralus",
-								["coord"] = { 50.8, 46.0, 1161 },	
+								["coord"] = { 50.8, 46.0, 1161 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							n(98725, {	-- Lio the Lioness <Battle Pet Master>
 								["description"] = "Legion Dalaran or Garrison",
 								["coords"] = {
 									{ 59.2, 39.6, 627 },	-- Legion Dalaran
-									{ 29.2, 40.4, 582 },	-- Lunarfall	
+									{ 29.2, 40.4, 582 },	-- Lunarfall
 								},
 								["races"] = ALLIANCE_ONLY,
 							}),
 							n(141614, {	-- Koari <Pet Supplies>
 								["description"] = "Dazar'alor",
-								["coord"] = { 34.8, 13.1, 1165 },	
+								["coord"] = { 34.8, 13.1, 1165 },
 								["races"] = HORDE_ONLY,
 							}),
 							n(115287, {	-- Serr'ah <Battle Pet Master>
 								["description"] = "Legion Dalaran or Garrison",
 								["coords"] = {
 									{ 58.6, 38.0, 627 },	-- Legion Dalaran
-									{ 32.6, 42.8, 590 },	-- Frostwall									
+									{ 32.6, 42.8, 590 },	-- Frostwall
 								},
 								["races"] = HORDE_ONLY,
 							}),
 							n(73293, {	-- Whizzig <Merchant of Time>
 								["description"] = "Limited time vendor on Timeless Isle",
 								["coords"] = {
-									{ 41.6, 47.2, 554 },	
-									{ 35.0, 52.8, 554 },	
-									{ 42.8, 59.4, 554 },	
-									{ 40.0, 63.0, 554 },	
+									{ 41.6, 47.2, 554 },
+									{ 35.0, 52.8, 554 },
+									{ 42.8, 59.4, 554 },
+									{ 40.0, 63.0, 554 },
 								},
 							}),
 						},
@@ -128,22 +129,22 @@ _.Secrets =
 						["g"] = {
 							n(1316, {	-- Adair Gilroy <Librarian>
 								["description"] = "Stormwind",
-								["coord"] = { 51.8, 74.8, 84 },	
+								["coord"] = { 51.8, 74.8, 84 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							n(958, {	-- Dawn Brightstar <Arcane Goods>
 								["description"] = "Elwynn Forest",
-								["coord"] = { 64.8, 69.2, 37 },	
+								["coord"] = { 64.8, 69.2, 37 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							n(16224, {	-- Rathis Tomber <Trade Supplies>
 								["description"] = "Ghostlands",
-								["coord"] = { 47.2, 28.6, 95 },	
+								["coord"] = { 47.2, 28.6, 95 },
 								["races"] = HORDE_ONLY,
 							}),
 							n(4581, {	-- Rathis Tomber <Trade Supplies>
 								["description"] = "Undercity",
-								["coord"] = { 77.6, 38.6, 90 },	
+								["coord"] = { 77.6, 38.6, 90 },
 								["races"] = HORDE_ONLY,
 							}),
 						},
@@ -192,7 +193,7 @@ _.Secrets =
 			o(9999920, {	-- |cFFFFFFFFStep 13:|r Tarnished Plaque
 				["description"] = "|cFFFFFFFFSTEP 13a:|r |cff66ccffBacktrack down the ramp to the now opened gate. DO NOT JUMP OFF. Enter the room and on a pillar on the right will be a Tarnished Plaque.  Click on it.\n\nThe Tarnished Plaque reads:\n\n\"The greatest of achievments begins\nwith the smallest leap of the mind.\"\n\n|cFFFFFFFFSTEP 13b:|r After reading the Tarnished Plaque, click off at least one buff and use the Scroll of Intellect.|r",
 			}),
-			o(272487, {	-- |cFFFFFFFFStep 14:|r Oddly-Colored Egg	
+			o(272487, {	-- |cFFFFFFFFStep 14:|r Oddly-Colored Egg
 				["model"] = 1405664,
 				["modelScale"] = 2,
 				["questID"] = 48022,

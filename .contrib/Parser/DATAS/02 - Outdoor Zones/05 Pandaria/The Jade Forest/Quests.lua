@@ -26,16 +26,16 @@ _.Zones =
 					["provider"] = { "n", 56787 },	-- Wise mari
 					["coord"] = { 57.5, 56.0, 371 },
 				}),
+				q(29903, {	-- A Perfect Match
+					["sourceQuests"] = { 29727 },	-- SI:7 Report: Take No Prisoners
+					["provider"] = { "n", 60970 },	-- Admiral Taylor
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 58.9, 81.7, 371 },
+				}),
 				q(29627, {	-- A Proper Weapon
 					["sourceQuests"] = { 29626 },	-- Groundskeeper Wu
 					["provider"] = { "n", 54915 },	-- Groundskeeper Wu
 					["coord"] = { 41.6, 23.6, 371 },
-				}),
-				q(30065, {	-- Arrows of Fortune
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
-					["coord"] = { 53.8, 61.8, 371 },
-					["isDaily"] = true,
 				}),
 				q(29629, {	-- A Steady Hand
 					["sourceQuests"] = { 29627 },	-- A Proper Weapon
@@ -52,15 +52,39 @@ _.Zones =
 					["provider"] = { "n", 54922 },	-- Master Stone Fist
 					["coord"] = { 43.2, 24.7, 371 },
 				}),
+				q(31130, {	-- A Visit with Lorewalker Cho
+					["sourceQuests"] = { 29889 },	-- Borrowed Brew
+					["provider"] = { "n", 54961 },	-- Lorewalker Cho
+					["coord"] = { 53.7, 91.3, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(29925, {	-- All We Can Spare
+				--	TODO: does this also require finishing all the other dawn's blossom quests?  is the overall criteria required or just 'the jade witch'?
 					["sourceQuests"] = { 29723 },	-- The Jade Witch
 					["provider"] = { "n", 56348 },	-- Toya
 					["coord"] = { 47.1, 46.1, 371 },
 				}),
 				q(29576, {	-- An Air of Worry
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 59383 },	-- Old Man Misteye
 					["coord"] = { 48.3, 46.0, 371 },
-					["isBreadcrumb"] = true,
+				}),
+				q(29900, {	-- An Ancient Legend
+					["sourceQuests"] = { 29890 },	-- Finding Your Center
+					["provider"] = { "n", 56433 },	-- Lina Whitepaw
+					["coord"] = { 65.9, 79.3, 371 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(80749),	-- Ambermist Cuffs
+						i(80750),	-- Blackthicket Bindings
+						i(80751),	-- Jade Witch Wristguards
+						i(80752),	-- Glass Lake Bracers
+						i(80753),	-- Silkwood Cuffs
+						i(80754),	-- Deepwoods Armwraps
+						i(80755),	-- Fox Grove Wristguards
+						i(80756),	-- Thunderwood Armplates
+						i(80757),	-- Jade Tiger Armplates
+					},
 				}),
 				q(29749, {	-- An Urgent Plea
 					["sourceQuests"] = {
@@ -100,6 +124,21 @@ _.Zones =
 						i(80748),	-- Jade Tiger Gauntlets
 					},
 				}),
+				q(29901, {	-- Anduin's Decision
+					["sourceQuests"] = {
+						29900,	-- An Ancient Legend
+						29899,	-- Rest in Peace
+						29898,	-- Sacred Waters
+					},
+					["description"] = "Automatically given when prerequisites have been fulfilled.",
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(30065, {	-- Arrows of Fortune
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
+					["coord"] = { 53.8, 61.8, 371 },
+					["isDaily"] = true,
+				}),
 				q(29624, {	-- Attention
 					["sourceQuests"] = { 29623 },	-- Perfection
 					["provider"] = { "n", 54917 },	-- Instructor Xann
@@ -137,15 +176,59 @@ _.Zones =
 					["coord"] = { 53.8, 61.8, 371 },
 					["isDaily"] = true,
 				}),
+				q(29904, {	-- Bigger Fish to Fry
+					["sourceQuests"] = { 29903 },	-- A Perfect Match
+					["provider"] = { "n", 60970 },	-- Admiral Taylor
+					["coord"] = { 58.8, 81.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29892, {	-- Body
+					["sourceQuests"] = { 31130 },	-- A Visit with Lorewalker Cho
+					["providers"] = {
+						{ "n", 56287 },	-- Lorewalker Cho
+						{ "n", 61218 },	-- Lorewalker Cho
+					},
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 54.0, 91.2, 371 },
+				}),
+				q(29889, {	-- Borrowed Brew
+					["sourceQuests"] = { 29888 },	-- Seek Out the Lorewalker
+					["provider"] = { "o", 209845 },	-- Mouthwatering Brew
+					["coord"] = { 53.7, 91.5, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(29747, {	-- Break the Cycle
 					["sourceQuests"] = { 29745 },	-- The Sprites' Plight
 					["provider"] = { "o", 214871 },	-- Shattered Destroyer
 					["coord"] = { 48.5, 20.6, 371 },
 				}),
+				q(29631, {	-- Burning Bright
+					["sourceQuests"] = { 29627 },	-- A Proper Weapon
+					["provider"] = { "n", 55094 },	-- Guard Shan Long
+					["coord"] = { 38.0, 23.7, 371 },
+				}),
 				q(29926, {	-- Calamity Jade
 					["sourceQuests"] = { 29928 },	-- I Have No Jade and I Must Scream
 					["provider"] = { "n", 56346 },	-- Foreman Mann
 					["coord"] = { 50.9, 27.0, 371 },
+				}),
+				q(29906, {	-- Carp Diem
+					["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
+					["provider"] = { "n", 60970 },	-- Admiral Taylor
+					["coord"] = { 58.8, 81.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(80788),	-- Jinyu Meditation Staff
+						i(80789),	-- Jinyu Divining Rod
+						i(80790),	-- Jinyu Combat Staff
+						i(80791),	-- Jinyu Greatsword
+						i(80792),	-- Jinyu Handaxe
+						i(80793),	-- Jinyu Crossbow
+						i(80794),	-- Jinyu Battleaxe
+						i(80795),	-- Jinyu Ritual Sceptar
+						i(80796),	-- Jinyu Dagger
+						i(80797),	-- Jinyu Combat Mace
+					},
 				}),
 				q(30138, {	-- Choosing the One -- grants an item: Blue (78962), Green (78960), Yellow (78961) serpent egg
 					["sourceQuests"] = {
@@ -178,6 +261,19 @@ _.Zones =
 					["provider"] = { "n", 54697 },	-- Shao the Defiant
 					["coord"] = { 43.4, 75.9, 371 },
 				}),
+				q(29717, {	-- Down Kitty!
+					["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
+					["description"] = "Must be on or have completed |cFFFFThe Double Hozen Dare|r to see this quest at the |cFFFFD700Lair of the Jade Witch|r.",
+					["provider"] = { "n", 55274 },	-- An Windfur
+					["coord"] = { 38.4, 46.2, 371 }, 	-- coordinates for the middle of the area where the quest is picked up
+					["g"] = {
+						i(88708),	-- An's Ring
+						i(88705),	-- Jade Smasher Band
+						i(88704),	-- Meow Meow Band
+						i(88706),	-- Windfur Band
+						i(88707),	-- Windfur Ring
+					},
+				}),
 				q(30137, {	-- Egg Collection
 					["sourceQuests"] = { 30134 },	-- Wild Things
 					["provider"] = { "n", 58225 },	-- Instructor Tong
@@ -193,6 +289,21 @@ _.Zones =
 					["provider"] = { "n", 54617 },	-- Rell Nightwind
 					["coord"] = { 46.4, 96.3, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31486, {	-- Everything I Know About Cooking (A)
+				--	this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
+					["requireSkill"] = COOKING,	-- this is technically a 'cooking' quest, but can be picked up by characters without the profession.
+					["provider"] = { "n", 56707 },	-- Chin
+					["coord"] = { 46.2, 45.4, 371 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 86,
+				}),
+				q(31279, {	-- Everything I Know About Cooking (H)
+					["requireSkill"] = COOKING,
+					["provider"] = { "n", 62322 },	-- Graceful Swan
+					["coord"] = { 48.1, 34.5, 371 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 86,
 				}),
 				q(30004, {	-- Everything In Its Place
 					["sourceQuests"] = {
@@ -210,6 +321,29 @@ _.Zones =
 					["provider"] = { "n", 56222 },	-- Bold Karasshi
 					["coord"] = { 58.9, 81.7, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29993, {	-- Find the Boy
+					-- TODO: might also require 29865 (The Silkwood Road) ?
+					["sourceQuests"] = { 29866 },	-- The Threads that Stick
+					["provider"] = { "n", 59173 },	-- Kai Wanderbrew
+					["coord"] = { 47.1, 46.0, 371 },
+				}),
+				q(29890, {	-- Finding Your Center
+					["sourceQuests"] = {
+						29892,	-- Body
+						29893,	-- Hue
+						29891,	-- Potency
+					},
+					["provider"] = { "n", 56287 },	-- Lorewalker Cho
+					["coord"] = { 53.8, 90.6, 371 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(80763),	-- Friendship Ring
+						i(80764),	-- Band of Acceptance
+						i(80765),	-- Friendly Gift Band
+						i(80766),	-- Band of Flair
+						i(80767),	-- Band of Finding
+					},
 				}),
 				q(30068, {	-- Flames of the Void
 					["u"] = REMOVED_FROM_GAME,
@@ -306,11 +440,11 @@ _.Zones =
 					["provider"] = { "n", 56708 },	--  Syra Goldendraft
 					["coord"] = { 52.5, 38.1, 371 },
 					["g"] = {
-						i(80758),	-- zen lotus pendant
-						i(80759),	-- dawnblossom necklace
-						i(80760),	-- vale song pendant
-						i(80761),	-- greenstone pendant
-						i(80762),	-- jade eye pendant
+						i(80758),	-- Zen Lotus Pendant
+						i(80759),	-- Dawnblossom Necklace
+						i(80760),	-- Vale Song Pendant
+						i(80761),	-- Greenstone Pendant
+						i(80762),	-- Jade Eye Pendant
 					},
 				}),
 				q(29626, {	-- Groundskeeper Wu
@@ -324,11 +458,25 @@ _.Zones =
 					["coord"] = { 53.8, 61.8, 371 },
 					["isDaily"] = true,
 				}),
+				q(32018, {	-- His Name Was... Stormstout
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 56774 },	-- Bolo
+					["coord"] = { 45.7, 43.9, 371 },
+				}),
 				q(29556, {	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
 					["sourceQuests"] = { 31745 },	-- Onward and Inward
 					["provider"] = { "n", 66292 },	-- Sky Admiral Rogers
 					["coord"] = { 48.0, 88.3, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29893, {	-- Hue
+					["sourceQuests"] = { 31130 },	-- A Visit with Lorewalker Cho
+					["providers"] = {
+						{ "n", 56287 },	-- Lorewalker Cho
+						{ "n", 61218 },	-- Lorewalker Cho
+					},
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 54.0, 91.2, 371 },
 				}),
 				q(29634, {	-- Husshun, the Wizened
 					["sourceQuests"] = { 29632 },	-- Becoming Battle-Ready
@@ -339,6 +487,12 @@ _.Zones =
 					["sourceQuests"] = { 29925 },	-- All We Can Spare
 					["provider"] = { "n", 56346 },	-- Foreman Mann
 					["coord"] = { 50.9, 27.0, 371 },
+				}),
+				q(29922, {	-- In Search of Wisdom
+					["sourceQuests"] = { 29901 },	-- Anduin's Decision
+					["provider"] = { "n", 54960 },	-- Elder Lusshan
+					["coord"] = { 58.9, 81.5, 371 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30142, {	-- It's A...
 					["sourceQuests"] = {
@@ -387,6 +541,15 @@ _.Zones =
 						i(90372),	-- Landfall Warboots
 					},
 				}),
+				q(29905, {	-- Let Them Burn
+					["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
+					["provider"] = { "n", 60970 },	-- Admiral Taylor
+					["coord"] = { 58.8, 81.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(84105),	-- Fishy (PET!)
+					},
+				}),
 				q(30005, {	-- Lighting Up the Sky
 					["sourceQuests"] = { 29932 },	-- The Temple of the Jade Serpent
 					["provider"] = { "n", 56784 },	-- Fei
@@ -410,7 +573,7 @@ _.Zones =
 					["coord"] = { 50.9, 27.0, 371 },
 				}),
 				q(29670, {	-- Maul Gormal
-					["sourceQuests"] = { 29586 },	-- The Splintered path
+					["sourceQuests"] = { 29586 },	-- The Splintered Path
 					["provider"] = { "n", 55009 },	-- Shao the Defiant
 					["coord"] = { 41.0, 73.9, 371 },
 					["g"] = {
@@ -497,6 +660,15 @@ _.Zones =
 					["coord"] = { 46.2, 84.7, 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(29891, {	-- Potency
+					["sourceQuests"] = { 31130 },	-- A Visit with Lorewalker Cho
+					["providers"] = {
+						{ "n", 56287 },	-- Lorewalker Cho
+						{ "n", 61218 },	-- Lorewalker Cho
+					},
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 54.0, 91.2, 371 },
+				}),
 				q(31739, {	-- Priorities!
 					["sourceQuests"] = {
 						31736,	-- Envoy of the Alliance
@@ -512,6 +684,8 @@ _.Zones =
 					["coord"] = { 48.5, 20.6, 371 },
 				}),
 				q(29882, {	-- Quill of Stingers
+				--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy,' but may be available sooner
+					["sourceQuests"] = { 29866 },	-- The Threads That Stick
 					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
 					["coord"] = { 55.3, 45.3, 371 },
 					["g"] = {
@@ -535,6 +709,12 @@ _.Zones =
 					["provider"] = { "n", 59418 },	-- Lorewalker Cho
 					["coord"] = { 49.2, 61.4, 371 },
 				}),
+				q(29899, {	-- Rest in Peace
+					["sourceQuests"] = { 29890 },	-- Finding Your Center
+					["provider"] = { "n", 56432 },	-- Ren Whitepaw
+					["coord"] = { 65.9, 79.3, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(29751, {	-- Ritual Artifacts
 					["sourceQuests"] = { 29749 },	-- An Urgent Plea
 					["provider"] = { "n", 55614 },	-- Pei-Zhi
@@ -544,6 +724,12 @@ _.Zones =
 					["sourceQuests"]  = { 29562 },	-- Jailbreak
 					["provider"] = { "n", 66949 },	-- Rell Nightwind
 					["coord"] = { 58.8, 81.9, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29898, {	-- Sacred Waters
+					["sourceQuests"] = { 29890 },	-- Finding Your Center
+					["provider"] = { "n", 56434 },	-- Anduin Wrynn
+					["coord"] = { 65.9, 79.3, 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31714, {	-- Saving the Serpents
@@ -557,6 +743,12 @@ _.Zones =
 					["provider"] = { "n", 57319 },	-- Elder Sage Storm-Sing
 					["coord"] = { 53.8, 61.8, 371 },
 					["isDaily"] = true,
+				}),
+				q(29888, {	-- Seek Out the Lorewalker
+					["sourceQuests"] = { 29727 },	-- SI:7 Report: Take No Prisoners
+					["provider"] = { "n", 56222 },	-- Bold Karasshi
+					["coord"] = { 58.9, 81.7, 371 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31708, {	-- Serpent's Scale
 					["u"] = REMOVED_FROM_GAME,
@@ -639,6 +831,11 @@ _.Zones =
 						i(88709),	-- Bamboo Plate Gauntlets
 					},
 				}),
+				q(31392, {	-- Temple of the White Tiger
+					["provider"] = { "n", 55809 },	-- Peiji Goldendraft
+					["coord"] = { 45.7, 43.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(31737, {	-- The Cost of War
 					["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
 					["provider"] = { "n", 54617 },	-- Rell Nightwind
@@ -718,6 +915,17 @@ _.Zones =
 						i(80694),	-- Jade Tiger Helm
 					},
 				}),
+				q(29723, {	-- The Jade Witch
+					["sourceQuests"] = { 29716 },	-- The Double Hozen Dare
+					["providers"] = {
+						{ "n", 55234 },	-- An Windfur
+						{ "n", 55274 },	-- An Windfur
+					},
+					["coord"] = { 38.4, 46.2, 371 }, 	-- coordinates for the middle of the area where the quest is picked up
+					["g"] = {
+						i(82984),	-- Jade Raccoon
+					},
+				}),
 				q(29998, {	-- The Librarian's Quandary
 					["sourceQuests"] = { 29932 },	-- The Temple of the Jade Serpent
 					["provider"] = { "n", 56782 },	-- Elder Sage Rain-Zhu
@@ -744,6 +952,12 @@ _.Zones =
 					["coord"] = { 58.8, 81.9, 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(29881, {	-- The Perfect Color
+				--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy,' but may be available sooner
+					["sourceQuests"] = { 29866 },	-- The Threads That Stick
+					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
+					["coord"] = { 54.8, 45.3, 371 },
+				}),
 				q(29999, {	-- The Rider's Bind
 					["sourceQuests"] = { 29932 },	-- The Temple of the Jade Serpent
 					["provider"] = { "n", 56784 },	-- Fei
@@ -768,6 +982,11 @@ _.Zones =
 						i(90350),	-- Satin Robe of Eminent Domain
 						i(90349),	-- Silk Robe of Eminent Domain
 					},
+				}),
+				q(31254, {	-- The Road to Kun-Lai
+					["sourceQuests"] = { 49559 },	-- Hero's Call: Kun-Lai Summit!
+					["provider"] = { "n", 63778 },	-- Messenger Grummle
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29637, {	-- The Rumpus
 					["sourceQuests"] = { 29636 },	-- A Test of Endurance
@@ -825,6 +1044,16 @@ _.Zones =
 						i(80711),	-- Thunderwood Chestpiece
 						i(80712),	-- Jade Tiger Chestpiece
 					},
+				}),
+				q(29586, {	-- The Splintered Path
+					["sourceQuests"] = {
+						29578,	-- Defiance
+						29580,	-- Orchard-Supplied Hardware
+						29579,	-- Rally the Survivors
+						29585,	-- Spitfire
+					},
+					["provider"] = { "n", 55209 },	-- Traumatized Nectarbreeze Farmer
+					["coord"] = { 43.2, 75.9, 371 },
 				}),
 				q(29745, {	-- The Sprites' Plight
 					["sourceQuests"] = { 29744 },	-- Pupil of Nature - legacy quest
@@ -889,9 +1118,9 @@ _.Zones =
 					["description"] = "Only available before completion of |cFFFFD700The Jade Serpent|r.",
 				}),
 				q(29617, {	-- Tian Monastery
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 54998 },	-- Apprentice Yufi
 					["coord"] = { 49.6, 45.8, 371 },
-					["isBreadcrumb"] = true,
 				}),
 				q(31710, {	-- Tiny Treats
 					["u"] = REMOVED_FROM_GAME,	-- Wowhead says it's added in 7.3.5, is it really removed?
@@ -970,6 +1199,19 @@ _.Zones =
 					["provider"] = { "n", 55614 },	-- Pei-Zhi
 					["coord"] = { 44.2, 15.0, 371 },
 				}),
+				q(31613, {	-- Volatile Greenstone Brew
+					["provider"] = { "n", 62321 },	-- Brewmaster Tzu
+					["coord"] = { 47.4, 37.0, 371 },
+					["lvl"] = 90,
+				}),
+				q(31230, {	-- Welcome to Dawn's Blossom
+					["sourceQuests"] = {
+						30015,	-- Dawn's Blossom (Horde)
+						29922,	-- In Search of Wisdom (Alliance)
+					},
+					["provider"] = { "n", 56348 },	-- Toya
+					["coord"] = { 47.1, 46.1, 371 },
+				}),
 				q(31734, {	-- Welcome Wagons
 					["sourceQuests"] = { 31733 },	-- Touching Ground
 					["provider"] = { "n", 54616 },	-- Sully "The Pickle" McLeary
@@ -993,7 +1235,10 @@ _.Zones =
 					["coord"] = { 57.7, 45.0, 371 },
 				}),
 				q(29635, {	-- Xiao, the Eater
-					["sourceQuests"] = { 29633, 29634 },	-- Zhi-Zhi the Dextrous, Hasshun the Wizened
+					["sourceQuests"] = {
+						29633,	-- Zhi-Zhi the Dextrous
+						29634,	-- Hasshun the Wizened
+					},
 					["provider"] = { "n", 54922 },	-- Master Stone Fist
 					["coord"] = { 43.2, 24.7, 371 },
 					["g"] = {
@@ -1014,47 +1259,18 @@ _.Zones =
 					["coord"] = { 43.1, 23.6, 371 },
 				}),
 				q(29633, {	-- Zhi-Zhi, the Dextrous
-					["provider"] = { "n", 54922 },	-- Master Stone Fist
 					["sourceQuests"] = { 29632 },	-- Becoming Battle-Ready
+					["provider"] = { "n", 54922 },	-- Master Stone Fist
 					["coord"] = { 43.2, 24.7, 371 },
 				}),
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
 				ach(6300, {	-- Upjade Complete [Alliance]
 					["races"] = ALLIANCE_ONLY,	-- Alliance
 					["g"] = {
-						crit(3, {	-- The White Pawn
-						}),
-						crit(4, {	-- Pearlfin Village
-							q(29903, {	-- A Perfect Match
-								["provider"] = { "n", 60970 },	-- Admiral Taylor
-								["sourceQuests"] = { 29727 },	-- SI:7 Report: Take No Prisoners
-							}),
-							q(29904, {	-- Bigger Fish to Fry
-								["provider"] = { "n", 60970 },	-- Admiral Taylor
-								["sourceQuests"] = { 29903 },	-- A Perfect Match
-							}),
-							q(29906, {	-- Carp Diem [Note: 1 of 2 Final Quest needed to trigger criteria]
-								["provider"] = { "n", 60970 },	-- Admiral Taylor
-								["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
-								["g"] = {
-									i(80788),	-- Jinyu Meditation Staff
-									i(80789),	-- Jinyu Divining Rod
-									i(80790),	-- Jinyu Combat Staff
-									i(80791),	-- Jinyu Greatsword
-									i(80792),	-- Jinyu Handaxe
-									i(80793),	-- Jinyu Crossbow
-									i(80794),	-- Jinyu Battleaxe
-									i(80795),	-- Jinyu Ritual Sceptar
-									i(80796),	-- Jinyu Dagger
-									i(80797),	-- Jinyu Combat Mace
-								},
-							}),
-							q(29905, {	-- Let Them Burn [Note: 1 of 2 Final Quest needed to trigger criteria]
-								["provider"] = { "n", 60970 },	-- Admiral Taylor
-								["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
-							}),
-						}),
-						crit(5, {	-- Dawn's Blossom
-						}),
 						crit(6, {	-- Greenstone Quarry
 						}),
 						crit(7, {	-- Tian Monastery
@@ -1062,8 +1278,6 @@ _.Zones =
 						crit(8, {	-- Terrace of Ten Thunders
 						}),
 						crit(9, {	-- The Temple of the Jade Serpent
-						}),
-						crit(10, {	-- Nectarbreeze Orchard
 						}),
 						crit(11, {	-- The Battle for the Forest
 						}),
@@ -1084,9 +1298,7 @@ _.Zones =
 					["requireSkill"] = INSCRIPTION,
 					["isWeekly"] = true,
 					["g"] = {
-						{	-- Commissioned Painting
-							["recipeID"] = 127378,	-- Commissioned Painting
-						},
+						recipe(127378),	-- Commissioned Painting
 					},
 				}),
 				q(33250, {	-- A Time-Lost Treasure
@@ -1101,53 +1313,13 @@ _.Zones =
 						recipe(127481),	-- Inscribed Monument
 					},
 				}),
-				q(31130, {	-- A Visit with Lorewalker Cho
-					["provider"] = { "n", 54961 },	-- Lorewalker Cho
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 29889 },	-- Borrowed Brew
-				}),
-				q(29900, {	-- An Ancient Legend
-					["provider"] = { "n", 56433 },	-- Lina Whitepaw
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(80749),	-- Ambermist Cuffs
-						i(80750),	-- Blackthicket Bindings
-						i(80751),	-- Jade Witch Wristguards
-						i(80752),	-- Glass Lake Bracers
-						i(80753),	-- Silkwood Cuffs
-						i(80754),	-- Deepwoods Armwraps
-						i(80755),	-- Fox Grove Wristguards
-						i(80756),	-- Thunderwood Armplates
-						i(80757),	-- Jade Tiger Armplates
-					},
-				}),
 				q(30565, {	-- An Unexpected Advantage
 					["provider"] = { "n", 59550 },	-- Sully "The Pickle" McLeary
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(29901, {	-- Anduin's Decision
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 29900, 29899 },	-- An Ancient Legend, Rest in Peace
-					["description"] = "Automatically given when prequisites have been fulfilled.",
-				}),
 				q(30567, {	-- Blanche's Boomer Brew
 					["provider"] = { "n", 59569 },	-- Brewmaster Blanche
 					["coord"] = { 38.8, 31.1, 371 },
-				}),
-				q(29892, {	-- Body
-					["provider"] = { "n", 56287 },	-- Lorewalker Cho
-					["races"] = ALLIANCE_ONLY,
-				}),
-				o(209845, {	--  Mouthwatering Brew
-					q(29889, {	-- Borrowed Brew
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 29888 },	-- Seek Out the Lorewalker
-					}),
-				}),
-				q(29631, {	-- Burning Bright
-					-- TODO: this has a sourceQuest but i didn't catch which one it is. Possibly "A Proper Weapon" (29627) from Groundskeeper Wu?
-					["provider"] = { "n", 55094 },	-- Guard Shan Long
-					["coord"] = { 38.0, 23.7, 371 },
 				}),
 				q(30151, {	-- Catch!
 					["providers"] = {
@@ -1167,18 +1339,6 @@ _.Zones =
 					["coord"] = { 57.5, 45.1, 371 },
 					["isDaily"] = true,
 				}),
-				q(29717, {	-- Down Kitty!
-					["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
-					["provider"] = { "n", 55274 },	-- An Windfur
-					["description"] = "Must be on or have completed |cFFFFThe Double Hozen Dare|r to see this quest at the |cFFFFD700Lair of the Jade Witch|r.",
-					["g"] = {
-						i(88708),	-- An's Ring
-						i(88705),	-- Jade Smasher Band
-						i(88704),	-- Meow Meow Band
-						i(88706),	-- Windfur Band
-						i(88707),	-- Windfur Ring
-					},
-				}),
 				q(31319, {	-- Emergency Response
 					["provider"] = { "n", 59418 },	-- Lorewalker Cho
 					["races"] = ALLIANCE_ONLY,
@@ -1187,34 +1347,6 @@ _.Zones =
 				q(30157, {	-- Emptier Nests
 					["provider"] = { "n", 58510 },	-- Suchi the Sweet
 					["isDaily"] = true,
-				}),
-				q(31279, {	-- Everything I Know About Cooking
-					-- TODO: another version of the same quest with a different ID. Maybe the same requirements?
-					["sourceQuests"] = {
-						31319,	-- Emergency Response (A)
-						30504,	-- Emergency Response (H)
-						30502,	-- Jaded Heart
-						30500,	-- Residual Fallout
-					},
-					["provider"] = { "n", 62322 },	-- Graceful Swan
-					["requireSkill"] = COOKING,
-					["coord"] = { 48.1, 34.5, 371 },
-				}),
-				q(31486, {	-- Everything I Know About Cooking
-					-- TODO: the sourceQuest chain here needs to be confirmed. Didn't see this quest until after i came back to Dawn's Blossom after completing the "Overcoming Doubt" criteria
-					["sourceQuests"] = {
-						31319,	-- Emergency Response (A)
-						30504,	-- Emergency Response (H)
-						30502,	-- Jaded Heart
-						30500,	-- Residual Fallout
-					},
-					["providers"] = {
-						{ "n", 56707 },	-- Chin
-						{ "n", 62872 },	-- Cranfur the Noodler
-						{ "n", 63013 },	-- Sway Dish Chef
-					},
-					["requireSkill"] = COOKING,
-					["coord"] = { 46.2, 45.4, 371 },
 				}),
 				q(30156, {	-- Feeding Time
 					["providers"] = {
@@ -1227,16 +1359,6 @@ _.Zones =
 						{ "n", 65724 },	-- Azure Hatchling
 					},
 					["isDaily"] = true,
-				}),
-				q(29993, {	-- Find the Boy
-					-- TODO: might also require 29865 (The Silkwood Road) ?
-					["sourceQuests"] = { 29866 },	-- The Threads that Stick
-					["provider"] = { "n", 59173 },	-- Kai Wanderbrew
-					["coord"] = { 47.1, 46.0, 371 },
-				}),
-				q(29890, {	-- Finding Your Center
-					["provider"] = { "n", 56287 },	-- Lorewalker Cho
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30145, {	-- Flight Training: Full Speed Ahead
 					["provider"] = { "n", 58420 },	-- Instructor Windblade
@@ -1265,23 +1387,6 @@ _.Zones =
 					["provider"] = { "n", 55122 },	-- Admiral Taylor
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(32018, {	-- His Name Was... Stormstout
-					-- TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" for horde? Not sure about alliance
-					["provider"] = { "n", 56774 },	-- Bolo
-					["coord"] = { 45.7, 43.9, 371 },
-					["isBreadcrumb"] = true,
-				}),
-				q(29893, {	-- Hue
-					["providers"] = {
-						{ "n", 56287 },	-- Lorewalker Cho
-						{ "n", 61218 },	-- Lorewalker Cho
-					},
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29922, {	-- In Search of Wisdom
-					["provider"] = { "n", 54960 },	-- Elder Lusshan
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(31542, {	-- Incarnadine Ink
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 					["races"] = ALLIANCE_ONLY,
@@ -1295,7 +1400,11 @@ _.Zones =
 					["provider"] = { "n", 58413 },	-- Jenova Longeye
 					["isDaily"] = true,
 				}),
-
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
 				q(31362, {	-- Last Piece of the Puzzle
 					["provider"] = { "n", 59620 },	-- Lorewalker Cho
 					["races"] = ALLIANCE_ONLY,
@@ -1348,20 +1457,9 @@ _.Zones =
 						recipe(128922),	-- Portrait of Madam Goya
 					},
 				}),
-				q(29891, {	-- Potency
-					["providers"] = {
-						{ "n", 56287 },	-- Lorewalker Cho
-						{ "n", 61218 },	-- Lorewalker Cho
-					},
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(30159, {	-- Preservation
 					["provider"] = { "n", 58510 },	-- Suchi the Sweet
 					["isDaily"] = true,
-				}),
-				q(29899, {	-- Rest in Peace
-					["provider"] = { "n", 56432 },	-- Ren Whitepaw
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30155, {	-- Restoring the Balance
 					["sourceQuests"] = { 30142 },	-- It's A...
@@ -1389,15 +1487,6 @@ _.Zones =
 					["g"] = {
 						i(85429), 	-- Reins of the Golden Cloud Serpent
 					},
-				}),
-				q(29898, {	-- Sacred Waters
-					["provider"] = { "n", 56434 },	-- Anduin Wrynn
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29888, {	-- Seek Out the Lorewalker  ----> Leads to different quest altogether
-					["provider"] = { "n", 56222 },	-- Bold Karasshi
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 29727 },	-- SI:7 Report: Take No Prisoners
 				}),
 				q(31541, {	-- Set in Jade
 					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
@@ -1436,16 +1525,6 @@ _.Zones =
 					},
 					["isDaily"] = true,
 				}),
-				q(31392, {	-- Temple of the White Tiger
-					["providers"] = {
-						{ "n", 55809 },	-- Peiji Goldendraft
-						{ "n", 63754 },	-- Farmhand Bo
-						{ "n", 64448 },	-- Hopsmaster Chang
-						{ "n", 64521 },	-- Wanderer Chu
-						{ "n", 66247 },	-- Tigermaster Liu-Do
-					},
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(29933, {	-- The Bees' Knees
 					["sourceQuests"] = { 29879 },	-- Swallowed Whole
 					["provider"] = { "n", 56351 },	-- Bo Bo
@@ -1480,21 +1559,9 @@ _.Zones =
 					["isWeekly"] = true,
 					["requireSkill"] = INSCRIPTION,
 				}),
-				q(29723, {	-- The Jade Witch
-					-- picked up around the Lair of the Jade Witch. should we pick arbitrary coords?
-					["sourceQuests"] = { 29716 },	-- The Double Hozen Dare
-					["providers"] = {
-						{ "n", 55234 },	-- An Windfur
-						{ "n", 55274 },	-- An Windfur
-					},
-				}),
-				q(29881, {	-- The Perfect Color
-					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
-					["coord"] = { 54.8, 45.3, 371 },
-				}),
 				q(30139, {	-- The Rider's Journey (blue egg)
 					-- picked the blue and got this one, but some notes indicate all colors now grant this quest.
-					-- verify if picking green/yellow gives their respective quest or if they all grant this one
+					-- TODO: verify if picking green/yellow gives their respective quest or if they all grant this one
 					["sourceQuests"] = { 30138 },	-- Choosing the One
 					["provider"] = { "n", 58225 },	-- Instructor Tong
 					["coord"] = { 65.3, 31.6, 371 },
@@ -1509,11 +1576,6 @@ _.Zones =
 					["provider"] = { "n", 58225 },	-- Instructor Tong
 					["coord"] = { 65.3, 31.6, 371 },
 				}),
-				q(31254, {	-- The Road to Kun-Lai
-					["provider"] = { "n", 63778 },	-- Messenger Grummle
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 49559 },	-- Hero's Call: Kun-Lai Summit!
-				}),
 				q(31711, {	-- The Seed of Doubt
 					["provider"] = { "n", 58564 },	-- Elder Anli
 					["isDaily"] = true,
@@ -1526,16 +1588,6 @@ _.Zones =
 					["provider"] = { "n", 58420 },	-- Instructor Windblade
 					["isDaily"] = true;
 				}),
-				q(29586, {	-- The Splintered Path
-					["sourceQuests"] = {
-						-- TODO: probably needs "Rally the Survivors" (questID 29579) as well?
-						29578,	-- Defiance
-						29580,	-- Orchard-Supplied Hardware
-						29585,	-- Spitfire
-					},
-					["provider"] = { "n", 55209 },	-- Traumatized Nectarbreeze Farmer
-					["coord"] = { 43.2, 75.9, 371 },
-				}),
 				q(30143, {	-- They Grow Like Weeds
 					["provider"] = { "n", 58564 },	-- Elder Anli
 				}),
@@ -1543,19 +1595,9 @@ _.Zones =
 					["provider"] = { "n", 58228 },	-- Instructor Skythorn
 					["isDaily"] = true,
 				}),
-				q(31613, {	-- Volatile Greenstone Brew
-					-- this wasn't available at lvl 88. Possibly only available at level 90+?
-					["provider"] = { "n", 62321 },	-- Brewmaster Tzu
-					["coord"] = { 47.4, 37.0, 371 },
-				}),
 				q(31706, {	-- Weeping Widows
 					["provider"] = { "n", 58228 },	-- Instructor Skythorn
 					["isDaily"] = true,
-				}),
-				q(31230, {	-- Welcome to Dawn's Blossom
-					["sourceQuests"] = { 30015 },	-- Dawn's Blossom (Horde)
-					["provider"] = { "n", 56348 },	-- Toya
-					["coord"] = { 47.1, 46.1, 371 },
 				}),
 				q(31132, {	-- A Mile in My Shoes
 					["sourceQuests"] = { 31121 },	-- Stay a While, and Listen

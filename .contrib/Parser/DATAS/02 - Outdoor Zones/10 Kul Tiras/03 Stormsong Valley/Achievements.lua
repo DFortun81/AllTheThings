@@ -1,11 +1,12 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
-			n(-4,   {	-- Achievement
+			n(ACHIEVEMENTS,   {
 				ach(12940),		-- Adventurer of Stormsong Valley
 				ach(13047),		-- Clever Use of Mechanical Explosives
 				ach(13053, {	-- Deadliest Cache
@@ -82,37 +83,38 @@ _.Zones =
 				ach(13046),		-- These Hills Sing
 				ach(12578),		-- Tour of Duty: Stormsong Valley
 				ach(12853, {	-- Treasures of Stormsong
-					o(293350, {	-- Carved Wooden Chest	
+					o(293350, {	-- Carved Wooden Chest
 						["questID"] = 52429,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 44.44, 73.53 },
 						["g"] = {
 							i(162000),	-- Pig Nose
 						},
 					}),
-					o(293349, {	-- Discarded Lunchbox	
+					o(293349, {	-- Discarded Lunchbox
 						["questID"] = 52326,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 58.2, 63.7 },
 						["g"] = {
-							i(160485, {	-- An Unforgettable Luncheon
-								
-							}),
+							i(160485),	-- An Unforgettable Luncheon
 						},
 					}),
-					o(294174, {	-- Forgotten Chest	
+					o(294174, {	-- Forgotten Chest
 						["questID"] = 52980,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 46.00, 30.69 },
 					}),
-					o(281494, {	-- Frosty Treasure Chest	
+					o(281494, {	-- Frosty Treasure Chest
 						["questID"] = 50526,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 48.96, 84.07 },
 					}),
-					o(284448, {	-- Hidden Scholar's Chest	
+					o(284448, {	-- Hidden Scholar's Chest
 						["questID"] = 50937,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 59.9, 39.1 },
 					}),
-					o(280619, {	-- Old Ironbound Chest	
+					o(280619, {	-- Old Ironbound Chest
 						["questID"] = 50089,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 42.8, 47.2 },
@@ -122,17 +124,20 @@ _.Zones =
 						["coord"] = { 58.6, 83.8 },
 						["questID"] = 49811,
 					}),
-					o(282153, {	-- Sunken Strongbox	
+					o(282153, {	-- Sunken Strongbox
 						["questID"] = 50734,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 67.22, 43.2 },
 					}),
-					o(294173, {	-- Venture Co. Supply Chest	
+					o(294173, {	-- Venture Co. Supply Chest
 						["questID"] = 52976,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 36.69, 23.23 },
 					}),
-					o(289647, {	-- Weathered Treasure Chest	
+					o(289647, {	-- Weathered Treasure Chest
 						["questID"] = 51449,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 66.92, 12.03 },
 					}),
 				}),
 			}),

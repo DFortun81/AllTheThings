@@ -12,7 +12,7 @@ _.Instances = { tier(1, {	-- Classic
 			247,	-- Ruins of Ahn'Qiraj
 		},
 		["coord"] = { 58.93, 14.26, 327 },	-- Ruins of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
-		["groups"] = {
+		["g"] = {
 			n(QUESTS, {
 				cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
 					q(8700, {	-- Band of Unending Life
@@ -26,7 +26,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21408),	-- Band of Unending Life
 						},
 					}),
@@ -41,7 +41,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20864, 5 },	-- Bone Scarab
 							{ "i", 20860, 5 },	-- Silver Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21409),	-- Cloak of Unending Life
 						},
 					}),
@@ -56,7 +56,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20862, 5 },	-- Crystal Scarab
 							{ "i", 20858, 5 },	-- Stone Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21407),	-- Mace of Unending Life
 						},
 					}),
@@ -73,7 +73,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21402),	-- Signet of the Unseen Path
 						},
 					}),
@@ -88,7 +88,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21403),	-- Cloak of the Unseen Path
 						},
 					}),
@@ -103,7 +103,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21401),	-- Scythe of the Unseen Path
 						},
 					}),
@@ -120,7 +120,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21414),	-- Band of Vaulted Secrets
 						},
 					}),
@@ -135,7 +135,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21415),	-- Drape of Vaulted Secrets
 						},
 					}),
@@ -150,7 +150,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21413),	-- Blade of Vaulted Secrets
 						},
 					}),
@@ -167,7 +167,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21396),	-- Ring of Eternal Justice
 						},
 					}),
@@ -182,7 +182,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21397),	-- Cape of Eternal Justice
 						},
 					}),
@@ -197,7 +197,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21395),	-- Blade of Eternal Justice
 						},
 					}),
@@ -214,7 +214,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21411),	-- Ring of Infinite Wisdom
 						},
 					}),
@@ -229,7 +229,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21412),	-- Shroud of Infinite Wisdom
 						},
 					}),
@@ -244,7 +244,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21410),	-- Gavel of Infinite Wisdom
 						},
 					}),
@@ -261,7 +261,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21405),	-- Band of Veiled Shadows
 						},
 					}),
@@ -276,7 +276,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21406),	-- Cloak of Veiled Shadows
 						},
 					}),
@@ -291,7 +291,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21404),	-- Dagger of Veiled Shadows
 						},
 					}),
@@ -308,7 +308,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21399),	-- Ring of the Gathering Storm
 						},
 					}),
@@ -323,7 +323,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20863, 5 },	-- Clay Scarab
 							{ "i", 20859, 5 },	-- Gold Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21400),	-- Cloak of the Gathering Storm
 						},
 					}),
@@ -338,7 +338,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21398),	-- Hammer of the Gathering Storm
 						},
 					}),
@@ -355,7 +355,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21417),	-- Ring of Unspoken Names
 						},
 					}),
@@ -370,7 +370,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21418),	-- Shroud of Unspoken Names
 						},
 					}),
@@ -385,7 +385,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21416),	-- Kris of Unspoken Names
 						},
 					}),
@@ -402,7 +402,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21393),	-- Signet of Unyielding Strength
 						},
 					}),
@@ -417,7 +417,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20864, 5 },	-- Bone Scarab
 							{ "i", 20860, 5 },	-- Silver Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21394),	-- Drape of Unyielding Strength
 						},
 					}),
@@ -432,7 +432,7 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 20862, 5 },	-- Crystal Scarab
 							{ "i", 20858, 5 },	-- Stone Scarab
 						},
-						["groups"] = {
+						["g"] = {
 							i(21392),	-- Sickle of Unyielding Strength
 						},
 					}),
@@ -440,7 +440,7 @@ _.Instances = { tier(1, {	-- Classic
 				q(8791, {	-- The Fall of Ossirian
 					["provider"] = { "i", 21220 },	-- Head of Ossirian the Unscarred
 					["lvl"] = 60,
-					["groups"] = {
+					["g"] = {
 						i(21507),	-- Amulet of the Shifting Sands
 						i(21504),	-- Charm of the Shifting Sands
 						i(21505),	-- Choker of the Shifting Sands
@@ -457,7 +457,7 @@ _.Instances = { tier(1, {	-- Classic
 					15340,	-- Moam
 					15339,	-- Ossirian the Unscarred
 				},
-				["groups"] = {
+				["g"] = {
 					-- Class Books
 					cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
 						i(21294),	-- Book of Healing Touch XI
@@ -504,7 +504,6 @@ _.Instances = { tier(1, {	-- Classic
 						i(21297),	-- Manual of Heroic Strike IX
 						i(21299),	-- Manual of Revenge VI
 					})),
-					
 					-- Enchants
 					i(20729),	-- Formula: Enchant Gloves - Fire Power
 					i(20728),	-- Formula: Enchant Gloves - Frost Power
@@ -675,7 +674,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(20858),	-- Stone Scarab
 				i(20768, {	-- Oozing Bag
 					["cr"] = 15335,	-- Flesh Hunter
-					["groups"] = {
+					["g"] = {
 						i(20769),	-- Disgusting Oozeling
 					},
 				}),
@@ -763,7 +762,7 @@ _.Instances = { tier(1, {	-- Classic
 					{ "i", 21761, 1 },	-- Scarab Coffer Key [pre-4.3]
 					{ "i", 76401, 1 },	-- Scarab Coffer Key [4.3]
 				},
-				["groups"] = {
+				["g"] = {
 					i(20873),	-- Alabaster Idol
 					i(20869),	-- Amber Idol
 					i(20866),	-- Azure Idol
@@ -777,15 +776,14 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1537, { 	-- Kurinnaxx
 				["creatureID"] = 15348,
-				["groups"] = {
-					{
-						["itemID"] = 22217,	-- Kurinnaxx's Venom Sac
+				["g"] = {
+					i(22217, {	-- Kurinnaxx's Venom Sac
 						["questID"] = 9023,	-- The Perfect Poison
 						["timeline"] = {
 							"added 1.13.0.28211",
 							"deleted 4.2.2.28211"
 						},
-					},
+					}),
 					i(21498),	-- Qiraji Sacrificial Dagger
 					i(21499),	-- Vestments of the Shifting Sands
 					i(21502),	-- Sand Reaver Wristguards
@@ -796,7 +794,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(15471, {	-- Lieutenant General Andorov
 				["description"] = "In order to interact with this vendor, you must talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed.",
-				["groups"] = {
+				["g"] = {
 					i(22219),	-- Plans: Jagged Obsidian Shield
 					i(22221),	-- Plans: Obsidian Mail Tunic
 				},
@@ -804,7 +802,7 @@ _.Instances = { tier(1, {	-- Classic
 			e(1538, { 	-- General Rajaxx
 				["description"] = "Speak with Lieutenant General Andorov before starting this encounter if you need to interact with the vendor.",
 				["creatureID"] = 15341,
-				["groups"] = {
+				["g"] = {
 					n(-9955, {	-- General
 						["icon"] = "Interface\\Icons\\achievement_pvp_h_12",
 						["crs"] = {
@@ -815,7 +813,7 @@ _.Instances = { tier(1, {	-- Classic
 							15386, 	-- Major Yeggeth
 							15385, 	-- Colonel Zarran
 						},
-						["groups"] = {
+						["g"] = {
 							i(21806),	-- Gavel of Qiraji Athority
 							i(21809),	-- Fury of the Forgotten Swarm
 							i(21810),	-- Treads of the Wandering Nomad
@@ -831,7 +829,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1540, { 	-- Buru the Gorger
 				["creatureID"] = 15370,
-				["groups"] = {
+				["g"] = {
 					i(21485),	-- Buru's Skull Fragment
 					i(21487),	-- Slimy Scaled Gauntlets
 					i(21486),	-- Gloves of the Swarm
@@ -843,7 +841,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1541, { 	-- Ayamiss the Hunter
 				["creatureID"] = 15369,
-				["groups"] = {
+				["g"] = {
 					i(21466),	-- Stinger of Ayamiss
 					i(21478),	-- Bow of Taut Sinew
 					i(21479),	-- Gauntlets of the Immovable
@@ -856,7 +854,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1539, { 	-- Moam
 				["creatureID"] = 15340,
-				["groups"] = {
+				["g"] = {
 					i(21471),	-- Talon of Furious Concentration
 					i(21455),	-- Southwind Helm
 					i(21472),	-- Dustwind Turbin
@@ -875,12 +873,11 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1542, { 	-- Ossirian the Unscarred
 				["creatureID"] = 15339,
-				["groups"] = {
+				["g"] = {
 					ach(689),	-- Ruins of Ahn'Qiraj
-					{
-						["itemID"] = 21220,	-- Head of Ossirian the Unscarred
+					i(21220, {	-- Head of Ossirian the Unscarred
 						["questID"] = 8791,	-- The Fall of Ossirian
-					},
+					}),
 					i(21452),	-- Staff of the Ruins
 					i(21715),	-- Sand Polished Hammer
 					i(21459),	-- Crossbow of Imminent Doom

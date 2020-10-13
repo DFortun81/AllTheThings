@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -8,9 +8,7 @@ _.Zones =
 		m(1161, {	-- Boralus
 			n(-10057, {	-- War Effort
 				["lvl"] = 120,
-				["achievementID"] = 12874,	-- An Eventful Battle
 				["races"] = ALLIANCE_ONLY,
-				["description"] = "|cff66ccffLocated in the Arathi Highlands, Stromgarde is one of the key locations in the struggle for control of the Eastern Kingdoms. For the Alliance, Stromgarde sits in a critical defensive position. Following the battle for Lordaeron, the Horde threat still looms over the continent, and holding Stromgarde will be key if you hope to keep the Horde's aggression at bay.\n\nFor the Horde, securing Stromgarde would set the stage for an assault on the heart of the Eastern Kingdoms and serve as a launching point for a campaign against the worgen of the kingdom of Gilneas. This location is also key in the defense of the blood elven capital, Silvermoon City, in the north.|r",
 				["g"] = {
 					n(QUESTS, {
 						q(53195, {	-- Arathi Donations: Akunda's Bite
@@ -587,38 +585,18 @@ _.Zones =
 										i(163888),	-- 7th Legionnaire's Wand
 										i(163893),	-- 7th Legionnaire's Warglaive
 										i(163883),	-- 7th Legionnaire's Warhammer
-										{	-- 7th Legionnaire's Silk Cloak
-											["itemID"] = 163246,	-- 7th Legionnaire's Silk Cloak
-											["classes"] = {
-												5,	-- Priest
-												8,	-- Mage
-												9,	-- Warlock
-											},
-										},
-										{	-- 7th Legionnaire's Long Cloak
-											["itemID"] = 163347,	-- 7th Legionnaire's Long Cloak
-											["classes"] = {
-												11,	-- Druid
-												4,	-- Rogue
-												10,	-- Monk
-												12,	-- Demon Hunter
-											},
-										},
-										{	-- 7th Legionnaire's Chain Drape
-											["itemID"] = 163351,	-- 7th Legionnaire's Chain Drape
-											["classes"] = {
-												3,	-- Hunter
-												7,	-- Shaman
-											},
-										},
-										{	-- 7th Legionnaire's Bloody Drape
-											["itemID"] = 163355,	-- 7th Legionnaire's Bloody Drape
-											["classes"] = {
-												2,	-- Paladin
-												1,	-- Warrior
-												6,	-- Death Knight
-											},
-										},
+										i(163246, {	-- 7th Legionnaire's Silk Cloak
+											["classes"] = { PRIEST, MAGE, WARLOCK },
+										}),
+										i(163347, {	-- 7th Legionnaire's Long Cloak
+											["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+										}),
+										i(163351, {	-- 7th Legionnaire's Chain Drape
+											["classes"] = { HUNTER, SHAMAN },
+										}),
+										i(163355, {	-- 7th Legionnaire's Bloody Drape
+											["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
+										}),
 										i(163337),	-- 7th Legionnaire's Amice
 										i(163248),	-- 7th Legionnaire's Robes
 										i(163275),	-- 7th Legionnaire's Cuffs
@@ -673,7 +651,7 @@ _.Zones =
 							["g"] = {
 								i(166370, {	-- Sentinel Equipment Cache
 									["g"] = bubbleDown({["modID"] = 6}, {
-													-- ALLIANCE SET --
+										-- ALLIANCE SET --
 										i(164966),	-- Glade Warden's Glaive
 										i(166898),	-- Sentinel's Blade
 										i(165628),	-- Sentinel's Branch

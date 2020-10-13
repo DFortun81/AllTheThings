@@ -1,6 +1,7 @@
 ---------------------------------------------
 --   P E T   J O U R N A L   M O D U L E   --
 ---------------------------------------------
+
 _.PetJournal =
 {
 	pa(244, { 	-- Mechanical
@@ -43,7 +44,7 @@ _.PetJournal =
 		p(2443),	-- Lil' Siege Tower
 		p(86),		-- Lil' Smoky
 		p(2444),	-- Lil' War Machine
-		un(35, p(256)),		-- Lil' XT
+		un(BLIZZARD_BALANCE, p(256)),		-- Lil' XT
 		p(2715),	-- Lost Robogrip
 		p(2676),	-- Malfunctioning Microbot
 		p(83),		-- Mechanical Chicken

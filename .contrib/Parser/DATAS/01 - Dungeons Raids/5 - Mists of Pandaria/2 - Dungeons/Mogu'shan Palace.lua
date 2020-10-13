@@ -24,7 +24,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				}),
 			}),
-			n(QUESTS, { 						
+			n(QUESTS, {
 				q(31360, {	-- A New Lesson for the Master
 					["provider"] = { "n", 64432 },	-- Sinan the Dreamer
 					["g"] = {
@@ -54,7 +54,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				}),
 			}),
-			
 			d(1,  {	-- Normal
 				e(708, {	-- Trial of the King
 					["crs"] = {
@@ -63,7 +62,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						61444,	-- Ming the Cunning
 					},
 					["g"] = {
-						i(144020),	-- Crest of the Clan Lords	
+						i(144020),	-- Crest of the Clan Lords
 						i(144021),	-- Meteoric Greathelm
 						i(144144),	-- Whirling Dervish Choker
 						i(144145),	-- Conflagrating Gloves
@@ -130,7 +129,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								["criteriaID"] = 4,	-- Trial of the King
 								["description"] = "Requires Polyformic Acid Potion disguise to be active. Potion is obtained by filling the Empty Polyformic Acid Vial dropped by Professor Slate in Scholomance.",
 							},
-							i(144020),	-- Crest of the Clan Lords	
+							i(144020),	-- Crest of the Clan Lords
 							i(144021),	-- Meteoric Greathelm
 							i(144144),	-- Whirling Dervish Choker
 							i(144145),	-- Conflagrating Gloves
@@ -195,7 +194,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							61444,	-- Ming the Cunning
 						},
 						["g"] = {
-							i(144020),	-- Crest of the Clan Lords	
+							i(144020),	-- Crest of the Clan Lords
 							i(144021),	-- Meteoric Greathelm
 							i(144144),	-- Whirling Dervish Choker
 							i(144145),	-- Conflagrating Gloves

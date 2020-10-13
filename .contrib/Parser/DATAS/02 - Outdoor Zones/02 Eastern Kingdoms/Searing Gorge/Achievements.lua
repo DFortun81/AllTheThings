@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(32, {	-- Searing Gorge
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4910, {	-- Searing Gorge Quests
 					crit(1, {	-- Thorium Advance
 						["sourceQuest"] = 27964,	-- Dig-Boss Dinwhisker

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1180, { 	-- Ny'alotha
 		["coords"] = {
@@ -264,7 +265,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(14, {	-- Normal
-				n(-4, {	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(14146, {	-- Glory of the Ny'alotha Raider
 						i(174861),	-- Wriggling Parasite
 					}),
@@ -497,7 +498,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(15, {	-- Heroic
-				n(-4, {	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(14146, {	-- Glory of the Ny'alotha Raider
 						i(174861),	-- Wriggling Parasite
 					}),
@@ -738,7 +739,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(16, {	-- Mythic
-				n(-4, {	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(14146, {	-- Glory of the Ny'alotha Raider
 						i(174861),	-- Wriggling Parasite
 					}),

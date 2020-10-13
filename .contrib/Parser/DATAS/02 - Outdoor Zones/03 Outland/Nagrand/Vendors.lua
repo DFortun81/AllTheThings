@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -78,24 +79,24 @@ _.Zones =
 					["coord"] = { 60.6, 22.1, 107 },
 					["g"] = {
 						i(136934, {	-- Raging Elemental Stone (TOY!)
-							["classes"] = { 7 },	-- Shaman
+							["classes"] = { SHAMAN },
 						}),
 						i(136935, {	-- Tadpole Cloudseeder (TOY!)
-							["classes"] = { 7 },	-- Shaman
+							["classes"] = { SHAMAN },
 						}),
 						i(141059, {	-- Technique: Glyph of Flickering
 							["description"] = "Currently this Technique can only be learned by Shamans.  We suggest submitting a bug report to Blizzard to have it usuable by all scribes.",
-							["classes"] = { 7 },	-- Shaman
+							["classes"] = { SHAMAN },
 						}),
 						i(136938, {	-- Tome of Hex: Compy
 							["spellID"] = 210873,	-- Hex (Compy)
-							["classes"] = { 7 },	-- Shaman
+							["classes"] = { SHAMAN },
 						}),
 						i(136937, {	-- Vol'jin's Serpent Totem (TOY!)
-							["classes"] = { 7 },	-- Shaman
+							["classes"] = { SHAMAN },
 						}),
 						i(138490, {	-- Waterspeaker's Totem (TOY!)
-							["classes"] = { 7 },	-- Shaman
+							["classes"] = { SHAMAN },
 						}),
 					},
 				}),

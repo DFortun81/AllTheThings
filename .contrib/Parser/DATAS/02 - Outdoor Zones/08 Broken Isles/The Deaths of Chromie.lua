@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, { 	-- The Broken Isles
@@ -363,7 +364,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(ZONEDROPS, {	-- 
+				n(ZONEDROPS, {	--
 					["g"] = {
 						i(151493, {	-- Sands of Time
 							i(151482, { 	-- Time-Lost Wallet
@@ -373,7 +374,7 @@ _.Zones =
 							i(151554, { 	-- Time-Lost Keepsake Box
 								i(151547),		--	Brimstone Beacon - When you use this, last rare will instantly spawn
 								i(151549),		--	Cenarion Circle Documents - Speaking with Adrine Towhide will instantly finish that one.
-								i(151546),		--	Stratholme Gate Key 
+								i(151546),		--	Stratholme Gate Key
 								i(151548),		--	Tyrande's Moonstone - Use it after you teleported into portal. Hippogryph will fly you to end.
 							}),
 						}),

@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
 		m(108, {	-- Terokkar Forest
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(1191, {	-- Terror of Terokkar (A)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

@@ -9,6 +9,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["mapID"] = 129,
 		["maps"] = {
 			370,	-- The Nexus (Dragonwrath, Tarecgosa's Rest Quest Chain)
+			736,	-- Priest (Discipline): Legion Class Hall Campaign Map
 		},
 		["groups"] = {
 			n(QUESTS, {

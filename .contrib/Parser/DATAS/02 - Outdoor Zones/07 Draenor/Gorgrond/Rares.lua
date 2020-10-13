@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -10,7 +11,7 @@ _.Zones =
 				n(86268, {	-- Alkali
 					["questID"] = 37371,
 					["isDaily"] = true,
-					["coords"] = { 
+					["coords"] = {
 						{ 56.2, 40.8, 543 },
 						{ 58.6, 41.2, 543 },
 						{ 71.4, 40.2, 543 },
@@ -21,12 +22,12 @@ _.Zones =
 						}),
 						i(119361),	-- Thorn-Knuckled Gloves
 					},
-				}), 
+				}),
 				n(82085, {	-- Bashiok
 					["questID"] = 35335,
 					["isDaily"] = true,
 					["coord"] = { 40.0, 79.0, 543 },
-					["g"] = {	
+					["g"] = {
 						i(118222),	-- Spirit of Bashiok Toy
 					},
 				}),
@@ -52,7 +53,7 @@ _.Zones =
 					["questID"] = 36597,
 					["isDaily"] = true,
 					["coord"] = { 39.4, 74.6, 543 },
-					["g"] = {	
+					["g"] = {
 						i(118232),	-- Scaled Riverbeast Spaulders
 					},
 				}),
@@ -75,7 +76,7 @@ _.Zones =
 					["questID"] = 35503,
 					["isDaily"] = true,
 					["coord"] = { 53.4, 44.6, 543 },
-					["g"] = {	
+					["g"] = {
 						i(118212),	-- Char's Smoldering Fist
 					},
 				}),
@@ -90,7 +91,7 @@ _.Zones =
 						}),
 						i(119224),	-- Foereaver Polearm
 					},
-				}), 
+				}),
 				n(82058, {	-- Depthroot
 					["questID"] = 37370,
 					["isDaily"] = true,
@@ -118,7 +119,7 @@ _.Zones =
 					["description"] = "Will spawn in the area that is on fire.",
 					["questID"] = 37373,
 					["isDaily"] = true,
-					["coords"] = { 
+					["coords"] = {
 						{ 57.8, 36.6, 543 },
 						{ 72.8, 35.8, 543 },
 					},
@@ -128,20 +129,20 @@ _.Zones =
 						}),
 						i(119381),	-- Grash's Fireproof Handguards
 					},
-				}), 
+				}),
 				n(85250, {	-- Fossilwood the Petrified
 					["questID"] = 36387,
 					["isDaily"] = true,
 					["coord"] = { 57.4, 68.6, 543 },
-					["g"] = {	
+					["g"] = {
 						i(118221),	-- Petrification Stone Toy
-					},						
+					},
 				}),
 				n(81038, {	-- Gelgor of the Blue Flame
 					["description"] = "Located in the cave.",
 					["questID"] = 36391,
 					["isDaily"] = true,
-					["coords"] = { 
+					["coords"] = {
 						{ 43.5, 48.1, 543 },	-- Cave Entrance
 						{ 32.6, 38.2, 546 },	-- Gelgor
 					},
@@ -152,7 +153,7 @@ _.Zones =
 				n(80868, {	-- Glut
 					["questID"] = 36204,
 					["isDaily"] = true,
-					["coords"] = { 
+					["coords"] = {
 						{ 44.5, 50.8, 543 },	-- Cave Entrance
 						{ 46.0, 50.8, 543 },	-- Glut
 					},
@@ -168,20 +169,20 @@ _.Zones =
 						{ 53.9, 55.7, 543 },	-- Cave Entrance
 						{ 54.8, 35.6, 549 },
 					},
-					["g"] = {	
+					["g"] = {
 						i(119397),	-- Gnarled Goren Jaw
-					},						
+					},
 				}),
 				n(84431, {	-- Greldrok the Cunning
 					["questID"] = 36186,
 					["isDaily"] = true,
-					["coords"] = { 
+					["coords"] = {
 						{ 46.4, 45.4, 543 },	-- Cave Entrance
 						{ 46.8, 43.2, 543 },	-- Greldrok the Cunning
 					},
-					["g"] = {	
+					["g"] = {
 						i(118210),	-- Greldrok's Facesmasher
-					},						
+					},
 				}),
 				n(88583, {	-- Grove Warden Yal
 					["questID"] = 37375,
@@ -192,20 +193,20 @@ _.Zones =
 							["achievementID"] = 9678,	-- Ancient No More
 						}),
 						i(119414),  -- Yal's Leafwrap Cloak
-					},						
+					},
 				}),
 				n(83522, {	-- Hive Queen Skrikka
 					["questID"] = 35908,
 					["isDaily"] = true,
-					["coord"] = { 52.2, 70.2, 543 },						
-					["g"] = {	
+					["coord"] = { 52.2, 70.2, 543 },
+					["g"] = {
 						i(118209),	-- Skrikka's Mandible
 					},
 				}),
 				n(86577, {	-- Horgg
 					["questID"] = 37365,
 					["isDaily"] = true,
-					["coords"] = { 
+					["coords"] = {
 						{ 46.0, 27.8, 543 },
 						{ 45.6, 25.4, 543 },
 					},
@@ -248,7 +249,7 @@ _.Zones =
 						{ 53.9, 55.7, 543 },	-- Cave Entrance
 						{ 41.6, 75.7, 549 },
 					},
-					["g"] = {	
+					["g"] = {
 						i(119351),	-- Slime Coated Kingscloak
 					},
 				}),
@@ -256,7 +257,7 @@ _.Zones =
 					["questID"] = 36178,
 					["isDaily"] = true,
 					["coord"] = { 50.6, 53.2, 543 },
-					["g"] = {		
+					["g"] = {
 						i(118709),	-- Doom Bloom Pet
 					},
 				}),
@@ -301,13 +302,13 @@ _.Zones =
 				n(76473, {	-- Mother Araneae
 					["questID"] = 34726,
 					["isDaily"] = true,
-					["coords"] = { 
+					["coords"] = {
 						{ 53.4, 78.2, 543 },	-- Mother Araneae
 						{ 52.2, 76.7, 543 },	-- Cave Entrance
 					},
-					["g"] = {	
+					["g"] = {
 						i(118208),	-- Broodmother's Kiss
-					},						
+					},
 				}),
 				n(50985, {	-- Poundfist
 					["coords"] = {
@@ -325,7 +326,7 @@ _.Zones =
 					["questID"] = 36600,
 					["isDaily"] = true,
 					["coord"] = { 37.6, 81.4, 543 },
-					["g"] = {	
+					["g"] = {
 						i(118231),	-- Riptar's Clever Claw
 					},
 				}),
@@ -345,7 +346,7 @@ _.Zones =
 						{ 54.3, 72.0, 543 },
 						{ 53.9, 73.4, 543 },
 					},
-					["g"] = {	
+					["g"] = {
 						i(118228),	-- Smashalupagus
 					},
 				}),
@@ -364,7 +365,7 @@ _.Zones =
 						{ 39.4, 60.6, 543 },
 						{ 41.2, 60.8, 543 },
 					},
-					["g"] = {	
+					["g"] = {
 						i(114227),	-- Bubble Wand (TOY!)
 					},
 				}),
@@ -372,7 +373,7 @@ _.Zones =
 					["questID"] = 36656,
 					["isDaily"] = true,
 					["coord"] = { 44.6, 92.2, 543 },
-					["g"] = {	
+					["g"] = {
 						i(118223),	-- Sunclaw
 					},
 				}),
@@ -395,7 +396,7 @@ _.Zones =
 						{ 63.9, 61.8, 543 },
 						{ 65.4, 60.8, 543 },
 					},
-					["g"] = {		
+					["g"] = {
 						i(118213),	-- Slimy Sea Serpent Skin Sabatons
 					},
 				}),

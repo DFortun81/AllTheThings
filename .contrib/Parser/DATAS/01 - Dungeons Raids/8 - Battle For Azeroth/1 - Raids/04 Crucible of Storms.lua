@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1177, { 	-- Crucible of Storms
 		["isRaid"] = true,
@@ -48,7 +49,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						},
 					}),
 					e(2332, {	-- Uu'nat, Harbinger of the Void
-						["crs"] = {	145371 },	-- Uu'nat, Harbinger of the Void
+						["crs"] = { 145371 },	-- Uu'nat, Harbinger of the Void
 						["g"] = {
 							crit(2, {	-- Uu'nat, Harbinger of the Void
 								["achievementID"] = 13414,	-- Crucible of Storms
@@ -88,7 +89,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2332, {	-- Uu'nat, Harbinger of the Void
-					["crs"] = {	145371 },	-- Uu'nat, Harbinger of the Void
+					["crs"] = { 145371 },	-- Uu'nat, Harbinger of the Void
 					["g"] = {
 						crit(2, {	-- Uu'nat, Harbinger of the Void
 							["achievementID"] = 13414,	-- Crucible of Storms
@@ -127,7 +128,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2332, {	-- Uu'nat, Harbinger of the Void
-					["crs"] = {	145371 },	-- Uu'nat, Harbinger of the Void
+					["crs"] = { 145371 },	-- Uu'nat, Harbinger of the Void
 					["g"] = {
 						crit(2, {	-- Uu'nat, Harbinger of the Void
 							["achievementID"] = 13414,	-- Crucible of Storms
@@ -168,7 +169,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2332, {	-- Uu'nat, Harbinger of the Void
-					["crs"] = {	145371 },	-- Uu'nat, Harbinger of the Void
+					["crs"] = { 145371 },	-- Uu'nat, Harbinger of the Void
 					["g"] = {
 						crit(2, {	-- Uu'nat, Harbinger of the Void (Crucible of Storms)
 							["achievementID"] = 13414,	-- Crucible of Storms

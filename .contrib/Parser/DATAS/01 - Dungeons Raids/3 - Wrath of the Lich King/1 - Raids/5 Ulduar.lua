@@ -942,54 +942,54 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							crit(3),	-- A Bomb Bot
 						}),
 						i(45641, {	-- Gauntlets of the Wayward Conqueror
-							i(46163),	-- 
-							i(46188),	-- 
-							i(46135),	-- 
-							i(46174),	-- 
-							i(46179),	-- 
-							i(46155),	-- 
+							i(46163),	--
+							i(46188),	--
+							i(46135),	--
+							i(46174),	--
+							i(46179),	--
+							i(46155),	--
 						}),
 						i(45642, {	-- Gauntlets of the Wayward Protector
-							i(46199),	-- 
-							i(46200),	-- 
-							i(46207),	-- 
-							i(46164),	-- 
-							i(46148),	-- 
-							i(46142),	-- 
+							i(46199),	--
+							i(46200),	--
+							i(46207),	--
+							i(46164),	--
+							i(46148),	--
+							i(46142),	--
 						}),
 						i(45643, {	-- Gauntlets of the Wayward Vanquisher
-							i(46124),	-- 
-							i(46183),	-- 
-							i(46158),	-- 
-							i(46189),	-- 
-							i(46132),	-- 
-							i(46119),	-- 
-							i(46113),	-- 
+							i(46124),	--
+							i(46183),	--
+							i(46158),	--
+							i(46189),	--
+							i(46132),	--
+							i(46119),	--
+							i(46113),	--
 						}),
 						i(45647, {	-- Helm of the Wayward Conqueror
-							i(45417),	-- 
-							i(45386),	-- 
-							i(45391),	-- 
-							i(45377),	-- 
-							i(45372),	-- 
-							i(45382),	-- 
+							i(45417),	--
+							i(45386),	--
+							i(45391),	--
+							i(45377),	--
+							i(45372),	--
+							i(45382),	--
 						}),
 						i(45648, {	-- Helm of the Wayward Protector
-							i(45408),	-- 
-							i(45402),	-- 
-							i(45412),	-- 
-							i(45431),	-- 
-							i(45425),	-- 
-							i(45361),	-- 
+							i(45408),	--
+							i(45402),	--
+							i(45412),	--
+							i(45431),	--
+							i(45425),	--
+							i(45361),	--
 						}),
 						i(45649, {	-- Helm of the Wayward Vanquisher
-							i(45398),	-- 
-							i(45346),	-- 
-							i(45356),	-- 
-							i(46313),	-- 
-							i(45365),	-- 
-							i(45342),	-- 
-							i(45336),	-- 
+							i(45398),	--
+							i(45346),	--
+							i(45356),	--
+							i(46313),	--
+							i(45365),	--
+							i(45342),	--
+							i(45336),	--
 						}),
 						i(138800),	-- Illusion: Blade Ward
 						i(142092),	-- Overcomplicated Controller (PET!)
@@ -1055,7 +1055,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					ach(12388, {	-- Alone in the Darkness
 						i(45693),	-- Mimiron's Head (MOUNT!)
 						i(46312),	-- Vanquished Clutches of Yogg-Saron
-					}),	
+					}),
 					ach(12395),	-- Drive Me Crazy
 					ach(12396),	-- He's Not Getting Any Older
 					ach(12398, {	-- In His House He Waits Dreaming
@@ -1647,6 +1647,5 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				},
 			}),
 		},
-		
 	}),
 })};

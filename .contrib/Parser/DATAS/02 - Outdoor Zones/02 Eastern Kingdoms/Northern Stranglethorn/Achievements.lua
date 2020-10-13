@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(50, {	-- Northern Stranglethorn
-			n(-4, {	-- Achievement
+			n(ACHIEVEMENTS, {
 				ach(4906, {		-- Northern Stranglethorn Quests
 					crit(1, {	-- Ohgan'aka (A)
 						["races"] = ALLIANCE_ONLY,

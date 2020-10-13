@@ -22,6 +22,38 @@ _.Zones =
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
 					["u"] = NEVER_IMPLEMENTED,
 				}),
+				q(30642, {	-- Battle Axe of the Thunder King
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						i(90609, {	-- Mending Robes of the Golden Lotus
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(90607, {	-- Burning Robes of the Golden Lotus
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(90603, {	-- Durable Plate of the Golden Lotus
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(90602, {	-- Deadeye Chain of the Golden Lotus
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(90601, {	-- Bonded Plate of the Golden Lotus
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(90600, {	-- Ferocious Plate of the Golden Lotus
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(90599, {	-- Warming Chestguard of the Golden Lotus
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(90598, {	-- Crackling Chain of the Golden Lotus
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(90597, {	-- Delicate Chestguard of the Golden Lotus
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
 				q(30266, {	-- Bloodied Skies
 					["coord"] = { 21.3, 71.4, 390 },
 					["isDaily"] = true,

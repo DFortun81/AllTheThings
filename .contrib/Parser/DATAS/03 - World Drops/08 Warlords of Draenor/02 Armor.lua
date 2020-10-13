@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+
+_.WorldDrops =
 {
 	tier(6, {	-- Warlords of Draenor
 		n(-318, {	-- Armor
@@ -16,6 +17,7 @@ _.WorldDrops =
 				i(118829),	-- Treasure Hunter's Bandana
 			}),
 			filter(51, {	-- Neck
+				i(118847),	-- Amulet of Quel'Riq
 				i(116686),	-- Ancestral Amulet
 				i(116677),	-- Coldsinger Amulet
 				i(116679),	-- Growthshaper Amulet

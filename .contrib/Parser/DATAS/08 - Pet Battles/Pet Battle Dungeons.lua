@@ -2,7 +2,7 @@
 --   P E T    B A T T L E    M O D U L E    --
 ----------------------------------------------
 
-_.PetBattles = 
+_.PetBattles =
 {
 	q(33137, {	-- The Celestial Tournament
 		["provider"] = { "n", 73082 },	-- Master Li
@@ -217,7 +217,7 @@ _.PetBattles =
 			q(54185, {	-- Gnomeregan's New Guardians
 				["provider"] = { "n", 147070 },	-- Micro Zoox
 				["coord"] = { 31.67, 71.61, 30 },
-				["sourceQuests"] = { 
+				["sourceQuests"] = {
 					54184, 	-- Trouble in Gnomeregan (A)
 					54276,	-- Trouble in Gnomeregan (H)
 				},
@@ -295,7 +295,7 @@ _.PetBattles =
 			q(56491, {	-- Tiny Terrors of Stratholme
 				["provider"] = { "n", 150987 },	-- Sean Wilkers
 				["coord"] = { 43.2, 20.0, 23 },
-				["sourceQuests"] = { 
+				["sourceQuests"] = {
 					56489,	-- Restless Dead (A)
 					56490,	-- Restless Dead (H)
 				},

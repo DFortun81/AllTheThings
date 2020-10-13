@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -523,7 +524,7 @@ _.Zones =
 				}),
 				q(7583,  {	-- Suppression
 					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(18602)),	-- Tome of Sacrifice
 					},

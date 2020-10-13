@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 _.Holidays =
 {
 --[[	-- TODO: figure out the holidayID before adding this section

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -9,10 +10,10 @@ _.Zones =
 				-- Coords have been confirmed on rares except for some noted rares on longer spawn timers.
 				n(91871, {	-- Argosh the Destroyer
 					["questID"] = 38430,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 52.6, 40.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127326),	-- Fel Destroyer Crossbow 
+						i(127326),	-- Fel Destroyer Crossbow
 					},
 				}),
 				n(92552, {	-- Belgork
@@ -20,7 +21,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 35.6, 46.8, 534 },
 					["g"] = {
-						i(127650), 	-- Belgork's Bastion 
+						i(127650), 	-- Belgork's Bastion
 						i(126950, {	-- Equipment Blueprint: Bilge Pump
 							["questID"] = 38932,	-- Equipment Blueprint: Bilge Pump
 						}),
@@ -31,14 +32,14 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 23.6, 52.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127307), 	-- Battle-Scuffed Spaulders 
+						i(127307), 	-- Battle-Scuffed Spaulders
 					},
 				}),
 				n(92657, {	-- Bleeding Hollow Horror
 					["questID"] = 38696,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 50.8, 74.2, 534 },	-- Bleeding Hollow Horror	
+						{ 50.8, 74.2, 534 },	-- Bleeding Hollow Horror
 						{ 44.6, 77.5, 534 },	-- Cave Entrance
 					},
 					["g"] = {
@@ -53,7 +54,7 @@ _.Zones =
 						{ 21.0, 53.0, 534 },
 					},
 					["g"] = {
-						i(127303), 	-- Zulk's Sneaky Slippers 
+						i(127303), 	-- Zulk's Sneaky Slippers
 					},
 				}),
 				n(91093, {	-- Bramblefell
@@ -132,7 +133,7 @@ _.Zones =
 						{ 48.0, 44.8, 534 },
 					},
 					["g"] = {
-						i(127313),	-- Org'mok's Riding Chaps 
+						i(127313),	-- Org'mok's Riding Chaps
 					},
 				}),
 				n(95053, {	-- Deathtalon
@@ -160,7 +161,7 @@ _.Zones =
 						}),
 						i(128315),	-- Medallion of thee Legion
 					},
-				}),	
+				}),
 				n(90887, {	-- Dorg the Bloody
 					["questID"] = 38265,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
@@ -194,7 +195,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 25.7, 46.1, 534 },
 					["g"] = {
-						i(127298),	-- Blood Infused Leggings 
+						i(127298),	-- Blood Infused Leggings
 					},
 				}),
 				n(91727, {	-- Executor Riloth
@@ -202,7 +203,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 49.8, 36.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127323),	-- Bracers of Endless Suffering 
+						i(127323),	-- Bracers of Endless Suffering
 					},
 				}),
 				n(98408, {	-- Fel Overseer Mudlump
@@ -245,7 +246,7 @@ _.Zones =
 						{ 52.2, 27.4, 534 },
 					},
 					["g"] = {
-						i(127656),	-- Fel Singed Wraps 
+						i(127656),	-- Fel Singed Wraps
 					},
 				}),
 				n(92508, {	-- Gloomtalon
@@ -253,7 +254,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 63.6, 81.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127306),	-- Gloomtalon's Spare Kilt 
+						i(127306),	-- Gloomtalon's Spare Kilt
 					},
 				}),
 				n(93125, {	-- Glub'glok
@@ -261,7 +262,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 34.6, 78.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127317),	-- Murktide's Coveted Chestplate 
+						i(127317),	-- Murktide's Coveted Chestplate
 					},
 				}),
 				n(98284, {	-- Gondar
@@ -269,7 +270,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 80.6, 56.4, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(108633),	-- Crashin' Thrashin' Cannon Controller Toy 
+						i(108633),	-- Crashin' Thrashin' Cannon Controller Toy
 					},
 				}),
 				n(92941, {	-- Gorabosh
@@ -277,7 +278,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 33.3, 35.8, 534 },
 					["g"] = {
-						i(127304),	-- Cave Keeper Wraps 
+						i(127304),	-- Cave Keeper Wraps
 					},
 				}),
 				n(91695, {	-- Grand Warlock Nethekurse
@@ -288,7 +289,7 @@ _.Zones =
 						{ 46.2, 42.8, 534 },
 					},
 					["g"] = {
-						i(127299),	-- Nehtekurse's Robe of Contempt 
+						i(127299),	-- Nehtekurse's Robe of Contempt
 					},
 				}),
 				n(93057, {	-- Grannok
@@ -304,18 +305,18 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 39.6, 32.6, 534 },
 					["g"] = {
-						i(127309),	-- Korak's Reinforced Iron Tunic 
+						i(127309),	-- Korak's Reinforced Iron Tunic
 					},
 				}),
 				n(90777, {	-- High Priest Ikzan
 					["questID"] = 38028,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 						{ 21.0, 37.4, 534 },
 						{ 20.4, 41.6, 534 },
 					},
 					["g"] = {
-						i(122117),	-- Cursed Feather of Ikzan Toy 
+						i(122117),	-- Cursed Feather of Ikzan Toy
 					},
 				}),
 				n(90429, {	-- Imp-Master Valessa
@@ -366,7 +367,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 25.6, 76.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127316),	-- Oran's Cuffs of Malice 
+						i(127316),	-- Oran's Cuffs of Malice
 					},
 				}),
 				n(96240, {	-- Lok'goron Hashslinger
@@ -380,15 +381,15 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 52.1, 65.1, 534 },
 					["g"] = {
-						i(127332),	-- Riverbeast Molar Club 
+						i(127332),	-- Riverbeast Molar Club
 					},
 				}),
 				n(90442, {	-- Mistress Thavra
 					["questID"] = 38032,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 26.0, 79.4, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127300),	-- Shivan Shoulders of Scorn 
+						i(127300),	-- Shivan Shoulders of Scorn
 					},
 				}),
 				n(92411, {	-- Overlord Ma'gruth
@@ -404,18 +405,18 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 53.6, 21.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127297),	-- Selora's Crown of Thorns 
+						i(127297),	-- Selora's Crown of Thorns
 					},
 				}),
 				n(91374, {	-- Podlord Wakkawam
 					["questID"] = 38282,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coords"] = {
 						{ 16.8, 48.4, 534 },
 						{ 16.8, 49.6, 534 },
 					},
 					["g"] = {
-						i(127336),	-- Rod of the One True Podlord 
+						i(127336),	-- Rod of the One True Podlord
 					},
 				}),
 				n(91009, {	-- Putre'thar
@@ -431,7 +432,7 @@ _.Zones =
 				}),
 				n(90782, {	-- Rasthe
 					["questID"] = 38034,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 17.4, 42.7, 534 },
 					["g"] = {
 						i(127661),	-- Fang of Rasthe
@@ -442,12 +443,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 26.3, 54.3, 534 },
 					["g"] = {
-						i(127335),	-- Relgor's Master Glaive 
+						i(127335),	-- Relgor's Master Glaive
 					},
 				}),
 				n(91227, {	-- Remnant of the Blood Moon
 					["questID"] = 39159,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["description"] = "Drain the Blood Moon to 0% health with Drained Blood Crystals to spawn Remnant of the Blood Moon.",
 					["coord"] = { 22.2, 50.6, 534 },
 					["g"] = {
@@ -457,7 +458,7 @@ _.Zones =
 				n(92627, {	-- Rendrak
 					["description"] = "Collect 10x Smelly Musk Gland from the Direwing Predators (Bats) in Zorammarsh. Once you have all 10, combine them to lure Rendrak. If you leave Zorammarsh, the Smelly Musk Glands will vanish from your bags.",
 					["questID"] = 38631,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coords"] = {
 						{ 37.2, 68.6, 534 },
 						{ 42.4, 77.6, 534 },
@@ -471,7 +472,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 20.4, 49.5, 534 },
 					["g"] = {
-						i(127314),	-- Rogond's Tracking Shoulderguards 
+						i(127314),	-- Rogond's Tracking Shoulderguards
 					},
 				}),
 				n(94472, {	-- Savage Whale Shark
@@ -486,13 +487,13 @@ _.Zones =
 				}),
 				n(90024, {	-- Sergeant Mor'grak
 					["questID"] = 37953,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 						{ 41.6, 37.6, 534 },
 						{ 42.8, 36.6, 534 },
 					},
 					["g"] = {
-						i(127318),	-- Iron Cleated Warboots 
+						i(127318),	-- Iron Cleated Warboots
 					},
 				}),
 				n(93236, {	-- Shadowthrash
@@ -516,7 +517,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 62.6, 72.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127315),	-- Glowing Felskull Belt 
+						i(127315),	-- Glowing Felskull Belt
 					},
 				}),
 				n(92887, {	-- Steelsnout
@@ -524,12 +525,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 65.6, 36.7, 534 },
 					["g"] = {
-						i(127357),	-- Steelsnout's Steely Hide 
+						i(127357),	-- Steelsnout's Steely Hide
 					},
 				}),
 				n(92606, {	-- Sylissa
 					["questID"] = 38628,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 41.0, 78.7, 534 },
 					["g"] = {
 						i(127311),	--  Serpentine Gloves
@@ -538,10 +539,10 @@ _.Zones =
 				n(93001, {	-- Szirek the Twisted
 					["description"] = "Capture Strongpoint (East) to make him spawn.",
 					["questID"] = 38752,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 16.2, 56.3, 534 },
 					["g"] = {
-						i(127296),	-- Twisted Taboo Handwraps 
+						i(127296),	-- Twisted Taboo Handwraps
 					},
 				}),
 				n(95044, {	-- Terrorfist <Son of Kormrok>
@@ -565,7 +566,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 49.6, 74.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127330),	-- The Black Fang 
+						i(127330),	-- The Black Fang
 					},
 				}),
 				n(92694, {	-- The Goreclaw
@@ -573,22 +574,22 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 34.6, 72.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127305),	-- Frayed Hunting Cowl 
+						i(127305),	-- Frayed Hunting Cowl
 					},
 				}),
 				n(92977, {	-- The Iron Houndmaster
 					["description"] = "Capture Strongpoint (West) to make him spawn.",
 					["questID"] = 38751,
-					["isDaily"] = true,							
+					["isDaily"] = true,
 					["coord"] = { 13.1, 57.0, 534 },
 					["g"] = {
-						i(127321),	-- Iron Houndmaster's Pauldrons 
+						i(127321),	-- Iron Houndmaster's Pauldrons
 					},
 				}),
 				n(92636, {	-- The Night Haunter
 					["description"] = "Gain 10 stacks of Marked by the Night Haunter by either finding The Night Haunter or clicking Mutilated Corpses.",
 					["questID"] = 38632,
-					["isDaily"] = true,						
+					["isDaily"] = true,
 					["coords"] = {	-- **Some coords unconfirmed, probably more spawn points than listed as well**
 						{ 42.4, 77.5, 534 },	-- Confirmed
 						{ 40.5, 72.9, 534 },	-- Confirmed
@@ -604,26 +605,26 @@ _.Zones =
 					["g"] = {
 						i(127355),	-- Haunter's Kurzed Cloak
 					},
-				}), 
+				}),
 				n(91243, {	-- Tho'gar Gorefist
 					["questID"] = 38747,
 					["isDaily"] = true,
 					["coord"] = { 13.6, 56.8, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127310),	-- Sabatons of Radiating Ire 
+						i(127310),	-- Sabatons of Radiating Ire
 					},
 				}),
 				n(92574, {	-- Thromma the Gutslicer
 					["questID"] = 38620,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 34.0, 44.7, 534 },
 					["g"] = {
-						i(127327),	-- Thromma's Gutslicer 
+						i(127327),	-- Thromma's Gutslicer
 					},
 				}),
 				n(92451, {	-- Varyx the Damned
 					["questID"] = 37937,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 27.6, 32.7, 534 },
 					["g"] = {
 						i(127351),	-- Varyx's Dark Oath Band
@@ -647,14 +648,14 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.2, 21.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127658),	-- Eye of the Beholder 
+						i(127658),	-- Eye of the Beholder
 						i(128232, {	-- Equipment Blueprint: High Intensity Fog Lights
 							["questID"] = 39356,	-- Equipment Blueprint: High Intensity Fog Lights
 						}),
 					},
 				}),
-				n(96235, {	-- Xemirkol 	
-					["achievementID"] = 10334, 
+				n(96235, {	-- Xemirkol
+					["achievementID"] = 10334,
 					["description"] = "Attempt to teleport to him by using Master Hunter's Seeking Crystal. Do not get knocked off of his platform.",
 					["coord"] = { 69.6, 38.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
@@ -671,7 +672,7 @@ _.Zones =
 				}),
 				n(90122, {	-- Zoug the Heavy
 					["questID"] = 39045,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 37.0, 32.84, 534 },
 					["g"] = {
 						i(127308),	-- Zoug's Lifting Belt

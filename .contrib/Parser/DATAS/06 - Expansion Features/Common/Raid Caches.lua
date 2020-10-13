@@ -11,8 +11,7 @@ CLASS_HALL_MISSION_TABLES = {
 	99428,	-- Shaman
 	101979,	-- Warlock
 	97389,	-- Warrior
-	
+
 	-- Other Scouting Tables
 	122719,	-- Deliverance Point, Broken Shore
-	
 };

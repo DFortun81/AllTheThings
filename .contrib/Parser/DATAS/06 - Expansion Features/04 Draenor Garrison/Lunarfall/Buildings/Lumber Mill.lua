@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
@@ -9,7 +10,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(138, {	-- Lumber Mill (rank 1: 40, rank 2: 41, rank 3: 138)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-4, {		-- Achievements
+						n(ACHIEVEMENTS, {
 							ach(9078, {	-- Choppin' Even More Logs (Alliance) (100)
 								title(259),		-- the Commandojack
 								ach(9077, {		-- Choppin' Some More Logs (50)

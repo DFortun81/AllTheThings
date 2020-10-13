@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -23,7 +24,7 @@ _.Zones =
 						["sourceQuest"] = 14099,	-- Royal Orders
 						["coord"] = { 70.79, 55.05, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 					}),
 					q(26129, {	-- Brothers in Arms
 						["provider"] = { "n", 35077 },	-- Lord Darius Crowley
@@ -74,7 +75,7 @@ _.Zones =
 						["sourceQuest"] = 14265,	-- Your Instructor
 						["coord"] = { 67.60, 64.31, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 					}),
 					q(14274, {	-- Corruption
 						["u"] = REMOVED_FROM_GAME,
@@ -82,7 +83,7 @@ _.Zones =
 						["sourceQuest"] = 14273,	-- Shady Associates
 						["coord"] = { 71.43, 64.45, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 					}),
 					q(14098, {	-- Evacuate the Merchant Square
 						["provider"] = { "n", 34913 },	-- Prince Liam Greymane
@@ -96,7 +97,7 @@ _.Zones =
 						["sourceQuest"] = 14269,	-- Someone's Looking for You
 						["coord"] = { 71.43, 65.78, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 4 }, -- Rogue
+						["classes"] = { ROGUE },
 					}),
 					q(14204, {	-- From the Shadows
 						["provider"] = { "n", 35378 },	-- Lorna Crowley
@@ -124,7 +125,7 @@ _.Zones =
 						["sourceQuest"] = 14277,	-- Arcane Inquiries
 						["coord"] = { 68.01, 64.68, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 					}),
 					q(24678, {	-- Knee-Deep
 						["provider"] = { "n", 38539 },	-- King Genn Greymane
@@ -144,7 +145,7 @@ _.Zones =
 						["sourceQuest"] = 14278,	-- Seek the Sister
 						["coord"] = { 70.40, 65.57, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 					}),
 					q(14078, {	-- Lockdown!
 						["provider"] = { "n", 34850 },	-- Prince Liam Greymane
@@ -163,7 +164,7 @@ _.Zones =
 						["sourceQuest"] = 14280,	-- The Winds Know Your Name... Apparently
 						["coord"] = { 70.18, 65.88, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 					}),
 					q(14221, {	-- Never Surrender, Sometimes Retreat
 						["provider"] = { "n", 35552 },	-- Tobias Mistmantle
@@ -205,7 +206,7 @@ _.Zones =
 						["provider"] = { "n", 35871 },			-- Loren the Fence
 						["coord"] = { 71.43, 65.78, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 4 }, -- Rogue
+						["classes"] = { ROGUE },
 						["sourceQuests"] = {
 							14272,	-- Eviscerate
 							14269,	-- Someone's Looking for You
@@ -215,7 +216,7 @@ _.Zones =
 						["provider"] = { "n", 35839 },			-- Sergeant Cleese
 						["coord"] = { 67.60, 64.31, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["sourceQuests"] = {
 							14266,	-- Charge
 							14265,	-- Your Instructor
@@ -225,7 +226,7 @@ _.Zones =
 						["provider"] = { "n", 35869 },	-- Vitus Darkwalker
 						["coord"] = { 71.43, 64.45, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["sourceQuests"] = {
 							14274,	-- Corruption
 							14273,	-- Shady Associates
@@ -235,7 +236,7 @@ _.Zones =
 						["provider"] = { "n", 35872 },	-- Myriam Spellwalker
 						["coord"] = { 68.01, 64.68, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["sourceQuests"] = {
 							14277,	-- Arcane Inquiries
 							14281,	-- Frost Nova
@@ -245,7 +246,7 @@ _.Zones =
 						["provider"] = { "n", 35870 },	-- Sister Almyra
 						["coord"] = { 70.40, 65.57, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["sourceQuests"] = {
 							14279,	-- Learning the Word
 							14278,	-- Seek the Sister
@@ -255,7 +256,7 @@ _.Zones =
 						["provider"] = { "n", 35874 },	-- Huntsman Blake
 						["coord"] = { 71.50, 61.33, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["sourceQuests"] = {
 							14275,	-- Someone's Keeping Track of You
 							14276,	-- Steady Shot
@@ -265,7 +266,7 @@ _.Zones =
 						["provider"] = { "n", 35873 },	-- Celestine of the Harvest
 						["coord"] = { 70.18, 65.88, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 						["sourceQuests"] = {
 							14283,	-- Moonfire
 							14280,	-- The Winds Know Your Name... Apparently
@@ -291,14 +292,14 @@ _.Zones =
 						["sourceQuest"] = 14099,	-- Royal Orders
 						["coord"] = { 70.79, 55.05, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 					}),
 					q(14273, {	-- Shady Associates
 						["provider"] = { "n", 35840 },	-- Gwen Armstead
 						["sourceQuest"] = 14099,	-- Royal Orders
 						["coords"] = { 70.79, 55.05, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 					}),
 					q(24920, {	-- Slowing the Inevitable
 						["provider"] = { "n", 38539 },	-- King Genn Greymane
@@ -311,14 +312,14 @@ _.Zones =
 						["sourceQuest"] = 14099,	-- Royal Orders
 						["coord"] = { 70.79, 55.05, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 					}),
 					q(14269, {	-- Someone's Looking for You
 						["provider"] = { "n", 35840 },	-- Gwen Armstead
 						["sourceQuest"] = 14099,	-- Royal Orders
 						["coord"] = { 70.79, 55.05, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 					}),
 					q(14091, {	-- Something's Amiss
 						["provider"] = { "n", 34863 },	-- Lieutenant Walden
@@ -332,7 +333,7 @@ _.Zones =
 						["sourceQuest"] = 14275,	-- Someone's Keeping Track of You
 						["coord"] = { 71.50, 61.33, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 					}),
 					q(24902, {	-- The Hunt For Sylvanas
 						["provider"] = { "n", 38611 },	-- Lorna Crowley
@@ -360,7 +361,7 @@ _.Zones =
 						["sourceQuest"] = 14099,	-- Royal Orders
 						["coord"] = { 70.79, 55.05, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 					}),
 					q(14294, {	-- Time to Regroup
 						["provider"] = { "n", 35906 },	-- Lord Godfrey
@@ -404,7 +405,7 @@ _.Zones =
 						["sourceQuest"] = 14099,	-- Royal Orders
 						["coord"] = { 70.79, 55.05, 202 },
 						["races"] = { WORGEN },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 					}),
 				}),
 			}),

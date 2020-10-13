@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -12,24 +13,24 @@ _.Zones =
 						{ 73.8, 55.8, 26 },
 						{ 78.6, 50.8, 26 },
 					},
-				}), 
+				}),
 				n(8213, { 	-- Ironback
 					["coords"] = {
 						{ 80.2, 58.2, 26 },
 						{ 81.0, 55.4, 26 },
 						{ 79.4, 56.6, 26 },
 					},
-				}), 
+				}),
 				n(8214, { 	-- Jalinde Summerdrake
 					["coord"] = { 34.6, 55.2, 26 },
 					["races"] = HORDE_ONLY,
-				}), 
+				}),
 				n(8217, { 	-- Mith'rethis the Enchanter
 					["coord"] = { 64.8, 81.6, 26 },
-				}), 
+				}),
 				n(8211, { 	-- Old Cliff Jumper
 					["coord"] = { 13.6, 53.8, 26 },
-				}), 
+				}),
 				n(107617, {	-- Ol' Muddle
 					["description"] = "This rare wanders the eastern portion of the zone, coords provide general areas to look for this rare.",
 					["coords"] = {
@@ -50,22 +51,22 @@ _.Zones =
 				}),
 				n(8210, { 	-- Razortalon
 					["coord"] = { 66.2, 53.6, 26 },
-				}), 
+				}),
 				n(8216, { 	-- Retherokk the Berserker
 					["coords"] = {
 						{ 47.6, 66.4, 26 },
 						{ 48.6, 68.4, 26 },
 					},
-				}), 
+				}),
 				n(8212, { 	-- The Reak
 					["coord"] = { 57.5, 42.6, 26 },
-				}), 
+				}),
 				n(8218, { 	-- Witherheart the Stalker
 					["coord"] = { 39.8, 66.6, 26 },
-				}), 
+				}),
 				n(8219, { 	-- Zul'arek Hatefowler
 					["coord"] = { 24.8, 65.6, 26 },
-				}), 
+				}),
 			}),
 		}),
 	}),

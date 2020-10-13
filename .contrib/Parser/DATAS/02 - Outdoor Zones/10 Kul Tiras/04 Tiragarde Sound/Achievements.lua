@@ -1,11 +1,12 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(895, {	-- Tiragarde Sound
-			n(-4, {	-- Achievement
+			n(ACHIEVEMENTS, {
 				ach(12473, {	-- A Sound Plan
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -36,10 +37,10 @@ _.Zones =
 						crit(7, {	-- Castaways and Cutouts
 							["sourceQuests"] = { 	-- not sure if the commented-out ones are required, since i turned in 'blood in the tides' last.  'toxic community' and 'glimmering locket' definitely aren't.
 								48421,	-- Blood in the Tides
-							--	49230,	-- Local Flavor
-							--	48505,	-- Lovesick and Lost
-							--	49178,	-- My Favorite Things
-							--	49226,	-- Silencing the Sisters
+								--	49230,	-- Local Flavor
+								--	48505,	-- Lovesick and Lost
+								--	49178,	-- My Favorite Things
+								--	49226,	-- Silencing the Sisters
 							},
 						}),
 					},

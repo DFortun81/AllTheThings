@@ -1,13 +1,14 @@
 -----------------------------------------------
---     P L A Y E R   V S   P L A Y E R		 --
+--      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 _.PVP =
 {
 	n(-9982, {	-- Legion
 		n(-682, {	-- Vindictive Gladiator: Legion Season 1
 			n(-9914, {	-- Alliance
 				n(-660, {	-- Aspirant / Combatant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(135905),	-- Vindictive Combatant's Dreadcloak (A)
 						i(135817),	-- Vindictive Combatant's Dreadplate Chestpiece (A)
 						i(135819),	-- Vindictive Combatant's Dreadplate Gauntlets (A)
@@ -18,7 +19,7 @@ _.PVP =
 						i(135822),	-- Vindictive Combatant's Dreadplate Shoulders (A)
 						i(135824),	-- Vindictive Combatant's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(136893),	-- Vindictive Combatant's Demonthread Cloak (A)
 						i(136301),	-- Vindictive Combatant's Felskin Belt (A)
 						i(136295),	-- Vindictive Combatant's Felskin Boots (A)
@@ -29,7 +30,7 @@ _.PVP =
 						i(136299),	-- Vindictive Combatant's Felskin Tunic (A)
 						i(136302),	-- Vindictive Combatant's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(135831),	-- Vindictive Combatant's Dragonhide Belt (A)
 						i(135909),	-- Vindictive Combatant's Dragonhide Cloak (A)
 						i(135826),	-- Vindictive Combatant's Dragonhide Gloves (A)
@@ -40,7 +41,7 @@ _.PVP =
 						i(135829),	-- Vindictive Combatant's Dragonhide Tunic (A)
 						i(135832),	-- Vindictive Combatant's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(135840),	-- Vindictive Combatant's Chain Armband (A)
 						i(135833),	-- Vindictive Combatant's Chain Armor (A)
 						i(135839),	-- Vindictive Combatant's Chain Clasp (A)
@@ -51,7 +52,7 @@ _.PVP =
 						i(135834),	-- Vindictive Combatant's Chain Treads (A)
 						i(135913),	-- Vindictive Combatant's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(135846),	-- Vindictive Combatant's Silk Amice (A)
 						i(135848),	-- Vindictive Combatant's Silk Bracers (A)
 						i(135847),	-- Vindictive Combatant's Silk Cord (A)
@@ -62,7 +63,7 @@ _.PVP =
 						i(135845),	-- Vindictive Combatant's Silk Tunic (A)
 						i(135906),	-- Vindictive Combatant's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(135855),	-- Vindictive Combatant's Ironskin Belt (A)
 						i(135910),	-- Vindictive Combatant's Ironskin Cloak (A)
 						i(135850),	-- Vindictive Combatant's Ironskin Gloves (A)
@@ -73,7 +74,7 @@ _.PVP =
 						i(135854),	-- Vindictive Combatant's Ironskin Tunic (A)
 						i(135856),	-- Vindictive Combatant's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(135914),	-- Vindictive Combatant's Greatcloak of Faith (A)
 						i(135857),	-- Vindictive Combatant's Scaled Chestpiece (A)
 						i(135859),	-- Vindictive Combatant's Scaled Gauntlets (A)
@@ -84,7 +85,7 @@ _.PVP =
 						i(135862),	-- Vindictive Combatant's Scaled Shoulders (A)
 						i(135864),	-- Vindictive Combatant's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(136867),	-- Vindictive Combatant's Drape of Piety (A)
 						i(135872),	-- Vindictive Combatant's Satin Bracers (A)
 						i(135871),	-- Vindictive Combatant's Satin Cord (A)
@@ -95,7 +96,7 @@ _.PVP =
 						i(135865),	-- Vindictive Combatant's Satin Treads (A)
 						i(135869),	-- Vindictive Combatant's Satin Tunic (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(135879),	-- Vindictive Combatant's Leather Belt (A)
 						i(135875),	-- Vindictive Combatant's Leather Gloves (A)
 						i(135876),	-- Vindictive Combatant's Leather Helm (A)
@@ -106,7 +107,7 @@ _.PVP =
 						i(135880),	-- Vindictive Combatant's Leather Wristguards (A)
 						i(136868),	-- Vindictive Combatant's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(135888),	-- Vindictive Combatant's Ringmail Armband (A)
 						i(135881),	-- Vindictive Combatant's Ringmail Armor (A)
 						i(135882),	-- Vindictive Combatant's Ringmail Boots (A)
@@ -117,7 +118,7 @@ _.PVP =
 						i(135886),	-- Vindictive Combatant's Ringmail Spaulders (A)
 						i(136869),	-- Vindictive Combatant's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(135894),	-- Vindictive Combatant's Felweave Amice (A)
 						i(135896),	-- Vindictive Combatant's Felweave Bracers (A)
 						i(136881),	-- Vindictive Combatant's Felweave Cloak (A)
@@ -128,7 +129,7 @@ _.PVP =
 						i(135892),	-- Vindictive Combatant's Felweave Trousers (A)
 						i(135893),	-- Vindictive Combatant's Felweave Tunic (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(136887),	-- Vindictive Combatant's Cloak of Battle (A)
 						i(135897),	-- Vindictive Combatant's Plate Chestpiece (A)
 						i(135899),	-- Vindictive Combatant's Plate Gauntlets (A)
@@ -166,7 +167,7 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(135679),	-- Vindictive Gladiator's Dreadcloak (A)
 						i(135591),	-- Vindictive Gladiator's Dreadplate Chestpiece (A)
 						i(135593),	-- Vindictive Gladiator's Dreadplate Gauntlets (A)
@@ -177,7 +178,7 @@ _.PVP =
 						i(135596),	-- Vindictive Gladiator's Dreadplate Shoulders (A)
 						i(135598),	-- Vindictive Gladiator's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(136891),	-- Vindictive Gladiator's Demonthread Cloak (A)
 						i(136285),	-- Vindictive Gladiator's Felskin Belt (A)
 						i(136279),	-- Vindictive Gladiator's Felskin Boots (A)
@@ -188,7 +189,7 @@ _.PVP =
 						i(136283),	-- Vindictive Gladiator's Felskin Tunic (A)
 						i(136286),	-- Vindictive Gladiator's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(135605),	-- Vindictive Gladiator's Dragonhide Belt (A)
 						i(135680),	-- Vindictive Gladiator's Dragonhide Cloak (A)
 						i(135600),	-- Vindictive Gladiator's Dragonhide Gloves (A)
@@ -199,7 +200,7 @@ _.PVP =
 						i(135604),	-- Vindictive Gladiator's Dragonhide Spaulders (A)
 						i(135606),	-- Vindictive Gladiator's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(135614),	-- Vindictive Gladiator's Chain Armband (A)
 						i(135607),	-- Vindictive Gladiator's Chain Armor (A)
 						i(135613),	-- Vindictive Gladiator's Chain Clasp (A)
@@ -210,7 +211,7 @@ _.PVP =
 						i(135608),	-- Vindictive Gladiator's Chain Treads (A)
 						i(135683),	-- Vindictive Gladiator's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(135620),	-- Vindictive Gladiator's Silk Amice (A)
 						i(135622),	-- Vindictive Gladiator's Silk Bracers (A)
 						i(135621),	-- Vindictive Gladiator's Silk Cord (A)
@@ -221,7 +222,7 @@ _.PVP =
 						i(135618),	-- Vindictive Gladiator's Silk Trousers (A)
 						i(135684),	-- Vindictive Gladiator's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(135629),	-- Vindictive Gladiator's Ironskin Belt (A)
 						i(135687),	-- Vindictive Gladiator's Ironskin Cloak (A)
 						i(135624),	-- Vindictive Gladiator's Ironskin Gloves (A)
@@ -232,7 +233,7 @@ _.PVP =
 						i(135628),	-- Vindictive Gladiator's Ironskin Tunic (A)
 						i(135630),	-- Vindictive Gladiator's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(135688),	-- Vindictive Gladiator's Greatcloak of Faith (A)
 						i(135631),	-- Vindictive Gladiator's Scaled Battlerobe (A)
 						i(135633),	-- Vindictive Gladiator's Scaled Gauntlets (A)
@@ -243,7 +244,7 @@ _.PVP =
 						i(135636),	-- Vindictive Gladiator's Scaled Shoulders (A)
 						i(135638),	-- Vindictive Gladiator's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(136861),	-- Vindictive Gladiator's Drape of Piety (A)
 						i(135646),	-- Vindictive Gladiator's Satin Bracers (A)
 						i(135645),	-- Vindictive Gladiator's Satin Cord (A)
@@ -254,7 +255,7 @@ _.PVP =
 						i(135643),	-- Vindictive Gladiator's Satin Robe (A)
 						i(135639),	-- Vindictive Gladiator's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(135653),	-- Vindictive Gladiator's Leather Belt (A)
 						i(135649),	-- Vindictive Gladiator's Leather Gloves (A)
 						i(135650),	-- Vindictive Gladiator's Leather Helm (A)
@@ -265,7 +266,7 @@ _.PVP =
 						i(135654),	-- Vindictive Gladiator's Leather Wristguards (A)
 						i(136862),	-- Vindictive Gladiator's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(135662),	-- Vindictive Gladiator's Ringmail Armband (A)
 						i(135655),	-- Vindictive Gladiator's Ringmail Armor (A)
 						i(135656),	-- Vindictive Gladiator's Ringmail Boots (A)
@@ -276,7 +277,7 @@ _.PVP =
 						i(135660),	-- Vindictive Gladiator's Ringmail Spaulders (A)
 						i(136863),	-- Vindictive Gladiator's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(135668),	-- Vindictive Gladiator's Felweave Amice (A)
 						i(135670),	-- Vindictive Gladiator's Felweave Bracers (A)
 						i(136879),	-- Vindictive Gladiator's Felweave Cloak (A)
@@ -287,7 +288,7 @@ _.PVP =
 						i(135663),	-- Vindictive Gladiator's Felweave Treads (A)
 						i(135666),	-- Vindictive Gladiator's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(136885),	-- Vindictive Gladiator's Cloak of Battle (A)
 						i(135671),	-- Vindictive Gladiator's Plate Chestpiece (A)
 						i(135673),	-- Vindictive Gladiator's Plate Gauntlets (A)
@@ -325,7 +326,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(14, i(136131)),	-- Vindictive Gladiator's Dreadcloak (A)
 						un(14, i(136043)),	-- Vindictive Gladiator's Dreadplate Chestpiece (A)
 						un(14, i(136045)),	-- Vindictive Gladiator's Dreadplate Gauntlets (A)
@@ -337,7 +338,7 @@ _.PVP =
 						un(14, i(136050)),	-- Vindictive Gladiator's Dreadplate Wristplates (A)
 
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						un(14, i(136895)),	-- Vindictive Gladiator's Demonthread Cloak (A)
 						un(14, i(136317)),	-- Vindictive Gladiator's Felskin Belt (A)
 						un(14, i(136311)),	-- Vindictive Gladiator's Felskin Boots (A)
@@ -348,7 +349,7 @@ _.PVP =
 						un(14, i(136315)),	-- Vindictive Gladiator's Felskin Tunic (A)
 						un(14, i(136318)),	-- Vindictive Gladiator's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(14, i(136057)),	-- Vindictive Gladiator's Dragonhide Belt (A)
 						un(14, i(136135)),	-- Vindictive Gladiator's Dragonhide Cloak (A)
 						un(14, i(136052)),	-- Vindictive Gladiator's Dragonhide Gloves (A)
@@ -359,7 +360,7 @@ _.PVP =
 						un(14, i(136056)),	-- Vindictive Gladiator's Dragonhide Spaulders (A)
 						un(14, i(136058)),	-- Vindictive Gladiator's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(14, i(136066)),	-- Vindictive Gladiator's Chain Armband (A)
 						un(14, i(136059)),	-- Vindictive Gladiator's Chain Armor (A)
 						un(14, i(136065)),	-- Vindictive Gladiator's Chain Clasp (A)
@@ -370,7 +371,7 @@ _.PVP =
 						un(14, i(136060)),	-- Vindictive Gladiator's Chain Treads (A)
 						un(14, i(136139)),	-- Vindictive Gladiator's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(14, i(136072)),	-- Vindictive Gladiator's Silk Amice (A)
 						un(14, i(136074)),	-- Vindictive Gladiator's Silk Bracers (A)
 						un(14, i(136073)),	-- Vindictive Gladiator's Silk Cord (A)
@@ -381,7 +382,7 @@ _.PVP =
 						un(14, i(136070)),	-- Vindictive Gladiator's Silk Trousers (A)
 						un(14, i(136132)),	-- Vindictive Gladiator's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(14, i(136081)),	-- Vindictive Gladiator's Ironskin Belt (A)
 						un(14, i(136136)),	-- Vindictive Gladiator's Ironskin Cloak (A)
 						un(14, i(136076)),	-- Vindictive Gladiator's Ironskin Gloves (A)
@@ -392,7 +393,7 @@ _.PVP =
 						un(14, i(136080)),	-- Vindictive Gladiator's Ironskin Tunic (A)
 						un(14, i(136082)),	-- Vindictive Gladiator's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(14, i(136140)),	-- Vindictive Gladiator's Greatcloak of Faith (A)
 						un(14, i(136083)),	-- Vindictive Gladiator's Scaled Battlerobe (A)
 						un(14, i(136085)),	-- Vindictive Gladiator's Scaled Gauntlets (A)
@@ -403,7 +404,7 @@ _.PVP =
 						un(14, i(136088)),	-- Vindictive Gladiator's Scaled Shoulders (A)
 						un(14, i(136090)),	-- Vindictive Gladiator's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(14, i(136873)),	-- Vindictive Gladiator's Drape of Piety (A)
 						un(14, i(136098)),	-- Vindictive Gladiator's Satin Bracers (A)
 						un(14, i(136097)),	-- Vindictive Gladiator's Satin Cord (A)
@@ -414,7 +415,7 @@ _.PVP =
 						un(14, i(136095)),	-- Vindictive Gladiator's Satin Robe (A)
 						un(14, i(136091)),	-- Vindictive Gladiator's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(14, i(136105)),	-- Vindictive Gladiator's Leather Belt (A)
 						un(14, i(136101)),	-- Vindictive Gladiator's Leather Gloves (A)
 						un(14, i(136102)),	-- Vindictive Gladiator's Leather Helm (A)
@@ -425,7 +426,7 @@ _.PVP =
 						un(14, i(136106)),	-- Vindictive Gladiator's Leather Wristguards (A)
 						un(14, i(136874)),	-- Vindictive Gladiator's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(14, i(136114)),	-- Vindictive Gladiator's Ringmail Armband (A)
 						un(14, i(136107)),	-- Vindictive Gladiator's Ringmail Armor (A)
 						un(14, i(136108)),	-- Vindictive Gladiator's Ringmail Boots (A)
@@ -436,7 +437,7 @@ _.PVP =
 						un(14, i(136112)),	-- Vindictive Gladiator's Ringmail Spaulders (A)
 						un(14, i(136875)),	-- Vindictive Gladiator's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(14, i(136120)),	-- Vindictive Gladiator's Felweave Amice (A)
 						un(14, i(136122)),	-- Vindictive Gladiator's Felweave Bracers (A)
 						un(14, i(136883)),	-- Vindictive Gladiator's Felweave Cloak (A)
@@ -447,7 +448,7 @@ _.PVP =
 						un(14, i(136115)),	-- Vindictive Gladiator's Felweave Treads (A)
 						un(14, i(136118)),	-- Vindictive Gladiator's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(14, i(136889)),	-- Vindictive Gladiator's Cloak of Battle (A)
 						un(14, i(136123)),	-- Vindictive Gladiator's Plate Chestpiece (A)
 						un(14, i(136125)),	-- Vindictive Gladiator's Plate Gauntlets (A)
@@ -487,7 +488,7 @@ _.PVP =
 			}),
 			n(-9913, {	-- Horde
 				n(-660, {	-- Aspirant / Combatant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(136018),	-- Vindictive Combatant's Dreadcloak (H)
 						i(135930),	-- Vindictive Combatant's Dreadplate Chestpiece (H)
 						i(135932),	-- Vindictive Combatant's Dreadplate Gauntlets (H)
@@ -498,7 +499,7 @@ _.PVP =
 						i(135935),	-- Vindictive Combatant's Dreadplate Shoulders (H)
 						i(135937),	-- Vindictive Combatant's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(136894),	-- Vindictive Combatant's Demonthread Cloak (H)
 						i(136309),	-- Vindictive Combatant's Felskin Belt (H)
 						i(136303),	-- Vindictive Combatant's Felskin Boots (H)
@@ -509,7 +510,7 @@ _.PVP =
 						i(136307),	-- Vindictive Combatant's Felskin Tunic (H)
 						i(136310),	-- Vindictive Combatant's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(135944),	-- Vindictive Combatant's Dragonhide Belt (H)
 						i(136022),	-- Vindictive Combatant's Dragonhide Cloak (H)
 						i(135939),	-- Vindictive Combatant's Dragonhide Gloves (H)
@@ -520,7 +521,7 @@ _.PVP =
 						i(135942),	-- Vindictive Combatant's Dragonhide Tunic (H)
 						i(135945),	-- Vindictive Combatant's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(135953),	-- Vindictive Combatant's Chain Armband (H)
 						i(135946),	-- Vindictive Combatant's Chain Armor (H)
 						i(135952),	-- Vindictive Combatant's Chain Clasp (H)
@@ -531,7 +532,7 @@ _.PVP =
 						i(135947),	-- Vindictive Combatant's Chain Treads (H)
 						i(136026),	-- Vindictive Combatant's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(135959),	-- Vindictive Combatant's Silk Amice (H)
 						i(135961),	-- Vindictive Combatant's Silk Bracers (H)
 						i(135960),	-- Vindictive Combatant's Silk Cord (H)
@@ -542,7 +543,7 @@ _.PVP =
 						i(135958),	-- Vindictive Combatant's Silk Tunic (H)
 						i(136019),	-- Vindictive Combatant's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(135968),	-- Vindictive Combatant's Ironskin Belt (H)
 						i(136023),	-- Vindictive Combatant's Ironskin Cloak (H)
 						i(135963),	-- Vindictive Combatant's Ironskin Gloves (H)
@@ -553,7 +554,7 @@ _.PVP =
 						i(135967),	-- Vindictive Combatant's Ironskin Tunic (H)
 						i(135969),	-- Vindictive Combatant's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(136027),	-- Vindictive Combatant's Greatcloak of Faith (H)
 						i(135970),	-- Vindictive Combatant's Scaled Chestpiece (H)
 						i(135972),	-- Vindictive Combatant's Scaled Gauntlets (H)
@@ -564,7 +565,7 @@ _.PVP =
 						i(135975),	-- Vindictive Combatant's Scaled Shoulders (H)
 						i(135977),	-- Vindictive Combatant's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(136870),	-- Vindictive Combatant's Drape of Piety (H)
 						i(135985),	-- Vindictive Combatant's Satin Bracers (H)
 						i(135984),	-- Vindictive Combatant's Satin Cord (H)
@@ -575,7 +576,7 @@ _.PVP =
 						i(135978),	-- Vindictive Combatant's Satin Treads (H)
 						i(135982),	-- Vindictive Combatant's Satin Tunic (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(135992),	-- Vindictive Combatant's Leather Belt (H)
 						i(135988),	-- Vindictive Combatant's Leather Gloves (H)
 						i(135989),	-- Vindictive Combatant's Leather Helm (H)
@@ -586,7 +587,7 @@ _.PVP =
 						i(135993),	-- Vindictive Combatant's Leather Wristguards (H)
 						i(136871),	-- Vindictive Combatant's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(136001),	-- Vindictive Combatant's Ringmail Armband (H)
 						i(135994),	-- Vindictive Combatant's Ringmail Armor (H)
 						i(135995),	-- Vindictive Combatant's Ringmail Boots (H)
@@ -597,7 +598,7 @@ _.PVP =
 						i(135999),	-- Vindictive Combatant's Ringmail Spaulders (H)
 						i(136872),	-- Vindictive Combatant's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(136007),	-- Vindictive Combatant's Felweave Amice (H)
 						i(136009),	-- Vindictive Combatant's Felweave Bracers (H)
 						i(136882),	-- Vindictive Combatant's Felweave Cloak (H)
@@ -608,7 +609,7 @@ _.PVP =
 						i(136005),	-- Vindictive Combatant's Felweave Trousers (H)
 						i(136006),	-- Vindictive Combatant's Felweave Tunic (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(136888),	-- Vindictive Combatant's Cloak of Battle (H)
 						i(136010),	-- Vindictive Combatant's Plate Chestpiece (H)
 						i(136012),	-- Vindictive Combatant's Plate Gauntlets (H)
@@ -646,7 +647,7 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(135792),	-- Vindictive Gladiator's Dreadcloak (H)
 						i(135704),	-- Vindictive Gladiator's Dreadplate Chestpiece (H)
 						i(135706),	-- Vindictive Gladiator's Dreadplate Gauntlets (H)
@@ -657,7 +658,7 @@ _.PVP =
 						i(135709),	-- Vindictive Gladiator's Dreadplate Shoulders (H)
 						i(135711),	-- Vindictive Gladiator's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(136892),	-- Vindictive Gladiator's Demonthread Cloak (H)
 						i(136293),	-- Vindictive Gladiator's Felskin Belt (H)
 						i(136287),	-- Vindictive Gladiator's Felskin Boots (H)
@@ -668,7 +669,7 @@ _.PVP =
 						i(136291),	-- Vindictive Gladiator's Felskin Tunic (H)
 						i(136294),	-- Vindictive Gladiator's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(135718),	-- Vindictive Gladiator's Dragonhide Belt (H)
 						i(135796),	-- Vindictive Gladiator's Dragonhide Cloak (H)
 						i(135713),	-- Vindictive Gladiator's Dragonhide Gloves (H)
@@ -679,7 +680,7 @@ _.PVP =
 						i(135717),	-- Vindictive Gladiator's Dragonhide Spaulders (H)
 						i(135719),	-- Vindictive Gladiator's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(135727),	-- Vindictive Gladiator's Chain Armband (H)
 						i(135720),	-- Vindictive Gladiator's Chain Armor (H)
 						i(135726),	-- Vindictive Gladiator's Chain Clasp (H)
@@ -690,7 +691,7 @@ _.PVP =
 						i(135721),	-- Vindictive Gladiator's Chain Treads (H)
 						i(135800),	-- Vindictive Gladiator's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(135733),	-- Vindictive Gladiator's Silk Amice (H)
 						i(135735),	-- Vindictive Gladiator's Silk Bracers (H)
 						i(135734),	-- Vindictive Gladiator's Silk Cord (H)
@@ -701,7 +702,7 @@ _.PVP =
 						i(135731),	-- Vindictive Gladiator's Silk Trousers (H)
 						i(135793),	-- Vindictive Gladiator's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(135742),	-- Vindictive Gladiator's Ironskin Belt (H)
 						i(135797),	-- Vindictive Gladiator's Ironskin Cloak (H)
 						i(135737),	-- Vindictive Gladiator's Ironskin Gloves (H)
@@ -712,7 +713,7 @@ _.PVP =
 						i(135741),	-- Vindictive Gladiator's Ironskin Tunic (H)
 						i(135743),	-- Vindictive Gladiator's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(135801),	-- Vindictive Gladiator's Greatcloak of Faith (H)
 						i(135744),	-- Vindictive Gladiator's Scaled Battlerobe (H)
 						i(135746),	-- Vindictive Gladiator's Scaled Gauntlets (H)
@@ -723,7 +724,7 @@ _.PVP =
 						i(135749),	-- Vindictive Gladiator's Scaled Shoulders (H)
 						i(135751),	-- Vindictive Gladiator's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(136864),	-- Vindictive Gladiator's Drape of Piety (H)
 						i(135759),	-- Vindictive Gladiator's Satin Bracers (H)
 						i(135758),	-- Vindictive Gladiator's Satin Cord (H)
@@ -734,7 +735,7 @@ _.PVP =
 						i(135756),	-- Vindictive Gladiator's Satin Robe (H)
 						i(135752),	-- Vindictive Gladiator's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(135766),	-- Vindictive Gladiator's Leather Belt (H)
 						i(135762),	-- Vindictive Gladiator's Leather Gloves (H)
 						i(135763),	-- Vindictive Gladiator's Leather Helm (H)
@@ -745,7 +746,7 @@ _.PVP =
 						i(135767),	-- Vindictive Gladiator's Leather Wristguards (H)
 						i(136865),	-- Vindictive Gladiator's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(136866),	-- Vindictive Gladiator's Totemic Cloak (H)
 						i(135775),	-- Vindictive Gladiator's Ringmail Armband (H)
 						i(135768),	-- Vindictive Gladiator's Ringmail Armor (H)
@@ -756,7 +757,7 @@ _.PVP =
 						i(135772),	-- Vindictive Gladiator's Ringmail Kilt (H)
 						i(135773),	-- Vindictive Gladiator's Ringmail Spaulders (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(135781),	-- Vindictive Gladiator's Felweave Amice (H)
 						i(135783),	-- Vindictive Gladiator's Felweave Bracers (H)
 						i(136880),	-- Vindictive Gladiator's Felweave Cloak (H)
@@ -767,7 +768,7 @@ _.PVP =
 						i(135776),	-- Vindictive Gladiator's Felweave Treads (H)
 						i(135779),	-- Vindictive Gladiator's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(136886),	-- Vindictive Gladiator's Cloak of Battle (H)
 						i(135784),	-- Vindictive Gladiator's Plate Chestpiece (H)
 						i(135786),	-- Vindictive Gladiator's Plate Gauntlets (H)
@@ -776,7 +777,7 @@ _.PVP =
 						i(135788),	-- Vindictive Gladiator's Plate Legguards (H)
 						i(135789),	-- Vindictive Gladiator's Plate Shoulders (H)
 						i(135785),	-- Vindictive Gladiator's Plate Warboots (H)
-						i(135791),	-- Vindictive Gladiator's Plate Wristplates (H)	
+						i(135791),	-- Vindictive Gladiator's Plate Wristplates (H)
 					}),
 					n(-384,	{	-- Neck
 						un(REMOVED_FROM_GAME, i(135794)),	-- Vindictive Gladiator's Necklace (H)
@@ -805,7 +806,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(14, i(136244)),	-- Vindictive Gladiator's Dreadcloak (H)
 						un(14, i(136156)),	-- Vindictive Gladiator's Dreadplate Chestpiece (H)
 						un(14, i(136158)),	-- Vindictive Gladiator's Dreadplate Gauntlets (H)
@@ -816,7 +817,7 @@ _.PVP =
 						un(14, i(136161)),	-- Vindictive Gladiator's Dreadplate Shoulders (H)
 						un(14, i(136163)),	-- Vindictive Gladiator's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						un(14, i(136896)),	-- Vindictive Gladiator's Demonthread Cloak (H)
 						un(14, i(136325)),	-- Vindictive Gladiator's Felskin Belt (H)
 						un(14, i(136319)),	-- Vindictive Gladiator's Felskin Boots (H)
@@ -827,7 +828,7 @@ _.PVP =
 						un(14, i(136323)),	-- Vindictive Gladiator's Felskin Tunic (H)
 						un(14, i(136326)),	-- Vindictive Gladiator's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(14, i(136170)),	-- Vindictive Gladiator's Dragonhide Belt (H)
 						un(14, i(136248)),	-- Vindictive Gladiator's Dragonhide Cloak (H)
 						un(14, i(136165)),	-- Vindictive Gladiator's Dragonhide Gloves (H)
@@ -838,7 +839,7 @@ _.PVP =
 						un(14, i(136169)),	-- Vindictive Gladiator's Dragonhide Spaulders (H)
 						un(14, i(136171)),	-- Vindictive Gladiator's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(14, i(136179)),	-- Vindictive Gladiator's Chain Armband (H)
 						un(14, i(136172)),	-- Vindictive Gladiator's Chain Armor (H)
 						un(14, i(136178)),	-- Vindictive Gladiator's Chain Clasp (H)
@@ -849,7 +850,7 @@ _.PVP =
 						un(14, i(136173)),	-- Vindictive Gladiator's Chain Treads (H)
 						un(14, i(136252)),	-- Vindictive Gladiator's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(14, i(136185)),	-- Vindictive Gladiator's Silk Amice (H)
 						un(14, i(136187)),	-- Vindictive Gladiator's Silk Bracers (H)
 						un(14, i(136186)),	-- Vindictive Gladiator's Silk Cord (H)
@@ -860,7 +861,7 @@ _.PVP =
 						un(14, i(136183)),	-- Vindictive Gladiator's Silk Trousers (H)
 						un(14, i(136245)),	-- Vindictive Gladiator's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(14, i(136194)),	-- Vindictive Gladiator's Ironskin Belt (H)
 						un(14, i(136249)),	-- Vindictive Gladiator's Ironskin Cloak (H)
 						un(14, i(136189)),	-- Vindictive Gladiator's Ironskin Gloves (H)
@@ -871,7 +872,7 @@ _.PVP =
 						un(14, i(136193)),	-- Vindictive Gladiator's Ironskin Tunic (H)
 						un(14, i(136195)),	-- Vindictive Gladiator's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(14, i(136253)),	-- Vindictive Gladiator's Greatcloak of Faith (H)
 						un(14, i(136196)),	-- Vindictive Gladiator's Scaled Chestpiece (H)
 						un(14, i(136198)),	-- Vindictive Gladiator's Scaled Gauntlets (H)
@@ -882,7 +883,7 @@ _.PVP =
 						un(14, i(136201)),	-- Vindictive Gladiator's Scaled Shoulders (H)
 						un(14, i(136203)),	-- Vindictive Gladiator's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(14, i(136876)),	-- Vindictive Gladiator's Drape of Piety (H)
 						un(14, i(136211)),	-- Vindictive Gladiator's Satin Bracers (H)
 						un(14, i(136210)),	-- Vindictive Gladiator's Satin Cord (H)
@@ -893,7 +894,7 @@ _.PVP =
 						un(14, i(136208)),	-- Vindictive Gladiator's Satin Robe (H)
 						un(14, i(136204)),	-- Vindictive Gladiator's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(14, i(136218)),	-- Vindictive Gladiator's Leather Belt (H)
 						un(14, i(136214)),	-- Vindictive Gladiator's Leather Gloves (H)
 						un(14, i(136215)),	-- Vindictive Gladiator's Leather Helm (H)
@@ -904,7 +905,7 @@ _.PVP =
 						un(14, i(136219)),	-- Vindictive Gladiator's Leather Wristguards (H)
 						un(14, i(136877)),	-- Vindictive Gladiator's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(14, i(136227)),	-- Vindictive Gladiator's Ringmail Armband (H)
 						un(14, i(136220)),	-- Vindictive Gladiator's Ringmail Armor (H)
 						un(14, i(136221)),	-- Vindictive Gladiator's Ringmail Boots (H)
@@ -915,7 +916,7 @@ _.PVP =
 						un(14, i(136225)),	-- Vindictive Gladiator's Ringmail Spaulders (H)
 						un(14, i(136878)),	-- Vindictive Gladiator's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(14, i(136233)),	-- Vindictive Gladiator's Felweave Amice (H)
 						un(14, i(136235)),	-- Vindictive Gladiator's Felweave Bracers (H)
 						un(14, i(136884)),	-- Vindictive Gladiator's Felweave Cloak (H)
@@ -926,7 +927,7 @@ _.PVP =
 						un(14, i(136228)),	-- Vindictive Gladiator's Felweave Treads (H)
 						un(14, i(136231)),	-- Vindictive Gladiator's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(14, i(136890)),	-- Vindictive Gladiator's Cloak of Battle (H)
 						un(14, i(136236)),	-- Vindictive Gladiator's Plate Chestpiece (H)
 						un(14, i(136238)),	-- Vindictive Gladiator's Plate Gauntlets (H)
@@ -948,19 +949,19 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(136255)),	-- Vindictive Gladiator's Signet (H)
 					}),
 					n(-386,	{	-- Trinket
-						un(REMOVED_FROM_GAME, i(136256)),	-- Vindictive Gladiator's Badge of Conquest (H)	
-						un(REMOVED_FROM_GAME, i(136257)),	-- Vindictive Gladiator's Accolade of Conquest (H)	
-						un(REMOVED_FROM_GAME, i(136258)),	-- Vindictive Gladiator's Insignia of Conquest (H)	
-						un(REMOVED_FROM_GAME, i(136259)),	-- Vindictive Gladiator's Emblem of Cruelty (H)	
-						un(REMOVED_FROM_GAME, i(136260)),	-- Vindictive Gladiator's Emblem of Tenacity (H)	
-						un(REMOVED_FROM_GAME, i(136261)),	-- Vindictive Gladiator's Emblem of Meditation (H)	
-						un(REMOVED_FROM_GAME, i(136262)),	-- Vindictive Gladiator's Badge of Dominance (H)	
-						un(REMOVED_FROM_GAME, i(136263)),	-- Vindictive Gladiator's Accolade of Dominance (H)	
-						un(REMOVED_FROM_GAME, i(136264)),	-- Vindictive Gladiator's Insignia of Dominance (H)	
-						un(REMOVED_FROM_GAME, i(136265)),	-- Vindictive Gladiator's Badge of Victory (H)	
-						un(REMOVED_FROM_GAME, i(136266)),	-- Vindictive Gladiator's Accolade of Victory (H)	
-						un(REMOVED_FROM_GAME, i(136267)),	-- Vindictive Gladiator's Insignia of Victory (H)	
-						un(REMOVED_FROM_GAME, i(136268)),	-- Vindictive Gladiator's Badge of Adaptation (H)	
+						un(REMOVED_FROM_GAME, i(136256)),	-- Vindictive Gladiator's Badge of Conquest (H)
+						un(REMOVED_FROM_GAME, i(136257)),	-- Vindictive Gladiator's Accolade of Conquest (H)
+						un(REMOVED_FROM_GAME, i(136258)),	-- Vindictive Gladiator's Insignia of Conquest (H)
+						un(REMOVED_FROM_GAME, i(136259)),	-- Vindictive Gladiator's Emblem of Cruelty (H)
+						un(REMOVED_FROM_GAME, i(136260)),	-- Vindictive Gladiator's Emblem of Tenacity (H)
+						un(REMOVED_FROM_GAME, i(136261)),	-- Vindictive Gladiator's Emblem of Meditation (H)
+						un(REMOVED_FROM_GAME, i(136262)),	-- Vindictive Gladiator's Badge of Dominance (H)
+						un(REMOVED_FROM_GAME, i(136263)),	-- Vindictive Gladiator's Accolade of Dominance (H)
+						un(REMOVED_FROM_GAME, i(136264)),	-- Vindictive Gladiator's Insignia of Dominance (H)
+						un(REMOVED_FROM_GAME, i(136265)),	-- Vindictive Gladiator's Badge of Victory (H)
+						un(REMOVED_FROM_GAME, i(136266)),	-- Vindictive Gladiator's Accolade of Victory (H)
+						un(REMOVED_FROM_GAME, i(136267)),	-- Vindictive Gladiator's Insignia of Victory (H)
+						un(REMOVED_FROM_GAME, i(136268)),	-- Vindictive Gladiator's Badge of Adaptation (H)
 					}),
 				}),
 			}),
@@ -968,7 +969,7 @@ _.PVP =
 		n(-683, {	-- Fearless Gladiator: Legion Season 2
 			n(-9914, {	-- Alliance
 				n(-660, {	-- Aspirant / Combatant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(142874),	-- Fearless Combatant's Dreadcloak (A)
 						i(142786),	-- Fearless Combatant's Dreadplate Chestpiece (A)
 						i(142788),	-- Fearless Combatant's Dreadplate Gauntlets (A)
@@ -979,7 +980,7 @@ _.PVP =
 						i(142791),	-- Fearless Combatant's Dreadplate Shoulders (A)
 						i(142793),	-- Fearless Combatant's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(143318),	-- Fearless Combatant's Demonthread Cloak (A)
 						i(143260),	-- Fearless Combatant's Felskin Belt (A)
 						i(143254),	-- Fearless Combatant's Felskin Boots (A)
@@ -990,7 +991,7 @@ _.PVP =
 						i(143258),	-- Fearless Combatant's Felskin Tunic (A)
 						i(143261),	-- Fearless Combatant's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(142800),	-- Fearless Combatant's Dragonhide Belt (A)
 						i(142878),	-- Fearless Combatant's Dragonhide Cloak (A)
 						i(142795),	-- Fearless Combatant's Dragonhide Gloves (A)
@@ -1001,7 +1002,7 @@ _.PVP =
 						i(142798),	-- Fearless Combatant's Dragonhide Tunic (A)
 						i(142801),	-- Fearless Combatant's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(142809),	-- Fearless Combatant's Chain Armband (A)
 						i(142802),	-- Fearless Combatant's Chain Armor (A)
 						i(142808),	-- Fearless Combatant's Chain Clasp (A)
@@ -1012,7 +1013,7 @@ _.PVP =
 						i(142803),	-- Fearless Combatant's Chain Treads (A)
 						i(142882),	-- Fearless Combatant's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(142815),	-- Fearless Combatant's Silk Amice (A)
 						i(142817),	-- Fearless Combatant's Silk Bracers (A)
 						i(142816),	-- Fearless Combatant's Silk Cord (A)
@@ -1023,7 +1024,7 @@ _.PVP =
 						i(142813),	-- Fearless Combatant's Silk Trousers (A)
 						i(142875),	-- Fearless Combatant's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(142824),	-- Fearless Combatant's Ironskin Belt (A)
 						i(142879),	-- Fearless Combatant's Ironskin Cloak (A)
 						i(142819),	-- Fearless Combatant's Ironskin Gloves (A)
@@ -1034,7 +1035,7 @@ _.PVP =
 						i(142823),	-- Fearless Combatant's Ironskin Tunic (A)
 						i(142825),	-- Fearless Combatant's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(142883),	-- Fearless Combatant's Greatcloak of Faith (A)
 						i(142826),	-- Fearless Combatant's Scaled Chestpiece (A)
 						i(142828),	-- Fearless Combatant's Scaled Gauntlets (A)
@@ -1045,7 +1046,7 @@ _.PVP =
 						i(142831),	-- Fearless Combatant's Scaled Shoulders (A)
 						i(142833),	-- Fearless Combatant's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(143292),	-- Fearless Combatant's Drape of Piety (A)
 						i(142841),	-- Fearless Combatant's Satin Bracers (A)
 						i(142840),	-- Fearless Combatant's Satin Cord (A)
@@ -1056,7 +1057,7 @@ _.PVP =
 						i(142838),	-- Fearless Combatant's Satin Robe (A)
 						i(142834),	-- Fearless Combatant's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(142848),	-- Fearless Combatant's Leather Belt (A)
 						i(142844),	-- Fearless Combatant's Leather Gloves (A)
 						i(142845),	-- Fearless Combatant's Leather Helm (A)
@@ -1067,7 +1068,7 @@ _.PVP =
 						i(142849),	-- Fearless Combatant's Leather Wristguards (A)
 						i(143293),	-- Fearless Combatant's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(142857),	-- Fearless Combatant's Ringmail Armband (A)
 						i(142850),	-- Fearless Combatant's Ringmail Armor (A)
 						i(142851),	-- Fearless Combatant's Ringmail Boots (A)
@@ -1078,7 +1079,7 @@ _.PVP =
 						i(142855),	-- Fearless Combatant's Ringmail Spaulders (A)
 						i(143294),	-- Fearless Combatant's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(142863),	-- Fearless Combatant's Felweave Amice (A)
 						i(142865),	-- Fearless Combatant's Felweave Bracers (A)
 						i(143306),	-- Fearless Combatant's Felweave Cloak (A)
@@ -1089,7 +1090,7 @@ _.PVP =
 						i(142858),	-- Fearless Combatant's Felweave Treads (A)
 						i(142861),	-- Fearless Combatant's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(143312),	-- Fearless Combatant's Cloak of Battle (A)
 						i(142866),	-- Fearless Combatant's Plate Chestpiece (A)
 						i(142868),	-- Fearless Combatant's Plate Gauntlets (A)
@@ -1127,7 +1128,7 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(142648),	-- Fearless Gladiator's Dreadcloak (A)
 						i(142560),	-- Fearless Gladiator's Dreadplate Chestpiece (A)
 						i(142562),	-- Fearless Gladiator's Dreadplate Gauntlets (A)
@@ -1138,7 +1139,7 @@ _.PVP =
 						i(142565),	-- Fearless Gladiator's Dreadplate Shoulders (A)
 						i(142567),	-- Fearless Gladiator's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(143316),	-- Fearless Gladiator's Demonthread Cloak (A)
 						i(143244),	-- Fearless Gladiator's Felskin Belt (A)
 						i(143238),	-- Fearless Gladiator's Felskin Boots (A)
@@ -1149,7 +1150,7 @@ _.PVP =
 						i(143242),	-- Fearless Gladiator's Felskin Tunic (A)
 						i(143245),	-- Fearless Gladiator's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(142574),	-- Fearless Gladiator's Dragonhide Belt (H)
 						i(142649),	-- Fearless Gladiator's Dragonhide Cloak (H)
 						i(142569),	-- Fearless Gladiator's Dragonhide Gloves (H)
@@ -1160,7 +1161,7 @@ _.PVP =
 						i(142573),	-- Fearless Gladiator's Dragonhide Spaulders (H)
 						i(142575),	-- Fearless Gladiator's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(142583),	-- Fearless Gladiator's Chain Armband (A)
 						i(142576),	-- Fearless Gladiator's Chain Armor (A)
 						i(142582),	-- Fearless Gladiator's Chain Clasp (A)
@@ -1171,7 +1172,7 @@ _.PVP =
 						i(142577),	-- Fearless Gladiator's Chain Treads (A)
 						i(142652),	-- Fearless Gladiator's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(142589),	-- Fearless Gladiator's Silk Amice (A)
 						i(142591),	-- Fearless Gladiator's Silk Bracers (A)
 						i(142590),	-- Fearless Gladiator's Silk Cord (A)
@@ -1182,7 +1183,7 @@ _.PVP =
 						i(142587),	-- Fearless Gladiator's Silk Trousers (A)
 						i(142653),	-- Fearless Gladiator's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(142598),	-- Fearless Gladiator's Ironskin Belt (A)
 						i(142656),	-- Fearless Gladiator's Ironskin Cloak (A)
 						i(142593),	-- Fearless Gladiator's Ironskin Gloves (A)
@@ -1193,7 +1194,7 @@ _.PVP =
 						i(142597),	-- Fearless Gladiator's Ironskin Tunic (A)
 						i(142599),	-- Fearless Gladiator's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(142657),	-- Fearless Gladiator's Greatcloak of Faith (A)
 						i(142600),	-- Fearless Gladiator's Scaled Battlerobe (A)
 						i(142602),	-- Fearless Gladiator's Scaled Gauntlets (A)
@@ -1204,7 +1205,7 @@ _.PVP =
 						i(142605),	-- Fearless Gladiator's Scaled Shoulders (A)
 						i(142607),	-- Fearless Gladiator's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(143286),	-- Fearless Gladiator's Drape of Piety (A)
 						i(142615),	-- Fearless Gladiator's Satin Bracers (A)
 						i(142614),	-- Fearless Gladiator's Satin Cord (A)
@@ -1215,7 +1216,7 @@ _.PVP =
 						i(142612),	-- Fearless Gladiator's Satin Robe (A)
 						i(142608),	-- Fearless Gladiator's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(142622),	-- Fearless Gladiator's Leather Belt (A)
 						i(142618),	-- Fearless Gladiator's Leather Gloves (A)
 						i(142619),	-- Fearless Gladiator's Leather Helm (A)
@@ -1226,7 +1227,7 @@ _.PVP =
 						i(142623),	-- Fearless Gladiator's Leather Wristguards (A)
 						i(143287),	-- Fearless Gladiator's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(142631),	-- Fearless Gladiator's Ringmail Armband (A)
 						i(142624),	-- Fearless Gladiator's Ringmail Armor (A)
 						i(142625),	-- Fearless Gladiator's Ringmail Boots (A)
@@ -1237,7 +1238,7 @@ _.PVP =
 						i(142629),	-- Fearless Gladiator's Ringmail Spaulders (A)
 						i(143288),	-- Fearless Gladiator's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(142637),	-- Fearless Gladiator's Felweave Amice (A)
 						i(142639),	-- Fearless Gladiator's Felweave Bracers (A)
 						i(143304),	-- Fearless Gladiator's Felweave Cloak (A)
@@ -1248,7 +1249,7 @@ _.PVP =
 						i(142632),	-- Fearless Gladiator's Felweave Treads (A)
 						i(142635),	-- Fearless Gladiator's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(143310),	-- Fearless Gladiator's Cloak of Battle (A)
 						i(142640),	-- Fearless Gladiator's Plate Chestpiece (A)
 						i(142642),	-- Fearless Gladiator's Plate Gauntlets (A)
@@ -1286,7 +1287,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(14, i(143100)),	-- Fearless Gladiator's Dreadcloak (A)
 						un(14, i(143012)),	-- Fearless Gladiator's Dreadplate Chestpiece (A)
 						un(14, i(143014)),	-- Fearless Gladiator's Dreadplate Gauntlets (A)
@@ -1297,7 +1298,7 @@ _.PVP =
 						un(14, i(143017)),	-- Fearless Gladiator's Dreadplate Shoulders (A)
 						un(14, i(143019)),	-- Fearless Gladiator's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						un(14, i(143320)),	-- Fearless Gladiator's Demonthread Cloak (A)
 						un(14, i(143276)),	-- Fearless Gladiator's Felskin Belt (A)
 						un(14, i(143270)),	-- Fearless Gladiator's Felskin Boots (A)
@@ -1308,7 +1309,7 @@ _.PVP =
 						un(14, i(143274)),	-- Fearless Gladiator's Felskin Tunic (A)
 						un(14, i(143277)),	-- Fearless Gladiator's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(14, i(143026)),	-- Fearless Gladiator's Dragonhide Belt (A)
 						un(14, i(143104)),	-- Fearless Gladiator's Dragonhide Cloak (A)
 						un(14, i(143021)),	-- Fearless Gladiator's Dragonhide Gloves (A)
@@ -1319,7 +1320,7 @@ _.PVP =
 						un(14, i(143024)),	-- Fearless Gladiator's Dragonhide Tunic (A)
 						un(14, i(143027)),	-- Fearless Gladiator's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(14, i(143035)),	-- Fearless Gladiator's Chain Armband (A)
 						un(14, i(143028)),	-- Fearless Gladiator's Chain Armor (A)
 						un(14, i(143034)),	-- Fearless Gladiator's Chain Clasp (A)
@@ -1330,7 +1331,7 @@ _.PVP =
 						un(14, i(143029)),	-- Fearless Gladiator's Chain Treads (A)
 						un(14, i(143108)),	-- Fearless Gladiator's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(14, i(143041)),	-- Fearless Gladiator's Silk Amice (A)
 						un(14, i(143043)),	-- Fearless Gladiator's Silk Bracers (A)
 						un(14, i(143042)),	-- Fearless Gladiator's Silk Cord (A)
@@ -1341,7 +1342,7 @@ _.PVP =
 						un(14, i(143039)),	-- Fearless Gladiator's Silk Trousers (A)
 						un(14, i(143101)),	-- Fearless Gladiator's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(14, i(143050)),	-- Fearless Gladiator's Ironskin Belt (A)
 						un(14, i(143105)),	-- Fearless Gladiator's Ironskin Cloak (A)
 						un(14, i(143045)),	-- Fearless Gladiator's Ironskin Gloves (A)
@@ -1352,7 +1353,7 @@ _.PVP =
 						un(14, i(143049)),	-- Fearless Gladiator's Ironskin Tunic (A)
 						un(14, i(143051)),	-- Fearless Gladiator's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(14, i(143109)),	-- Fearless Gladiator's Greatcloak of Faith (A)
 						un(14, i(143052)),	-- Fearless Gladiator's Scaled Chestpiece (A)
 						un(14, i(143054)),	-- Fearless Gladiator's Scaled Gauntlets (A)
@@ -1363,7 +1364,7 @@ _.PVP =
 						un(14, i(143057)),	-- Fearless Gladiator's Scaled Shoulders (A)
 						un(14, i(143059)),	-- Fearless Gladiator's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(14, i(143062)),	-- Fearless Gladiator's Satin Hood (A)
 						un(14, i(143063)),	-- Fearless Gladiator's Satin Leggings (A)
 						un(14, i(143065)),	-- Fearless Gladiator's Satin Mantle (A)
@@ -1374,7 +1375,7 @@ _.PVP =
 						un(14, i(143298)),	-- Fearless Gladiator's Drape of Piety (A)
 						un(14, i(143064)),	-- Fearless Gladiator's Satin Robe (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(14, i(143074)),	-- Fearless Gladiator's Leather Belt (A)
 						un(14, i(143070)),	-- Fearless Gladiator's Leather Gloves (A)
 						un(14, i(143071)),	-- Fearless Gladiator's Leather Helm (A)
@@ -1385,7 +1386,7 @@ _.PVP =
 						un(14, i(143075)),	-- Fearless Gladiator's Leather Wristguards (A)
 						un(14, i(143299)),	-- Fearless Gladiator's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(14, i(143083)),	-- Fearless Gladiator's Ringmail Armband (A)
 						un(14, i(143076)),	-- Fearless Gladiator's Ringmail Armor (A)
 						un(14, i(143077)),	-- Fearless Gladiator's Ringmail Boots (A)
@@ -1396,7 +1397,7 @@ _.PVP =
 						un(14, i(143081)),	-- Fearless Gladiator's Ringmail Spaulders (A)
 						un(14, i(143300)),	-- Fearless Gladiator's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(14, i(143089)),	-- Fearless Gladiator's Felweave Amice (A)
 						un(14, i(143091)),	-- Fearless Gladiator's Felweave Bracers (A)
 						un(14, i(143308)),	-- Fearless Gladiator's Felweave Cloak (A)
@@ -1407,7 +1408,7 @@ _.PVP =
 						un(14, i(143084)),	-- Fearless Gladiator's Felweave Treads (A)
 						un(14, i(143087)),	-- Fearless Gladiator's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(14, i(143314)),	-- Fearless Gladiator's Cloak of Battle (A)
 						un(14, i(143092)),	-- Fearless Gladiator's Plate Chestpiece (A)
 						un(14, i(143094)),	-- Fearless Gladiator's Plate Gauntlets (A)
@@ -1447,7 +1448,7 @@ _.PVP =
 			}),
 			n(-9913, {	-- Horde
 				n(-660, {	-- Aspirant / Combatant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(142987),	-- Fearless Combatant's Dreadcloak (H)
 						i(142899),	-- Fearless Combatant's Dreadplate Chestpiece (H)
 						i(142901),	-- Fearless Combatant's Dreadplate Gauntlets (H)
@@ -1458,7 +1459,7 @@ _.PVP =
 						i(142904),	-- Fearless Combatant's Dreadplate Shoulders (H)
 						i(142906),	-- Fearless Combatant's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(143319),	-- Fearless Combatant's Demonthread Cloak (H)
 						i(143268),	-- Fearless Combatant's Felskin Belt (H)
 						i(143262),	-- Fearless Combatant's Felskin Boots (H)
@@ -1469,7 +1470,7 @@ _.PVP =
 						i(143266),	-- Fearless Combatant's Felskin Tunic (H)
 						i(143269),	-- Fearless Combatant's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(142913),	-- Fearless Combatant's Dragonhide Belt (H)
 						i(142991),	-- Fearless Combatant's Dragonhide Cloak (H)
 						i(142908),	-- Fearless Combatant's Dragonhide Gloves (H)
@@ -1480,7 +1481,7 @@ _.PVP =
 						i(142911),	-- Fearless Combatant's Dragonhide Tunic (H)
 						i(142914),	-- Fearless Combatant's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(142922),	-- Fearless Combatant's Chain Armband (H)
 						i(142915),	-- Fearless Combatant's Chain Armor (H)
 						i(142921),	-- Fearless Combatant's Chain Clasp (H)
@@ -1491,7 +1492,7 @@ _.PVP =
 						i(142916),	-- Fearless Combatant's Chain Treads (H)
 						i(142995),	-- Fearless Combatant's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(142928),	-- Fearless Combatant's Silk Amice (H)
 						i(142930),	-- Fearless Combatant's Silk Bracers (H)
 						i(142929),	-- Fearless Combatant's Silk Cord (H)
@@ -1502,7 +1503,7 @@ _.PVP =
 						i(142926),	-- Fearless Combatant's Silk Trousers (H)
 						i(142988),	-- Fearless Combatant's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(142937),	-- Fearless Combatant's Ironskin Belt (H)
 						i(142992),	-- Fearless Combatant's Ironskin Cloak (H)
 						i(142932),	-- Fearless Combatant's Ironskin Gloves (H)
@@ -1513,7 +1514,7 @@ _.PVP =
 						i(142936),	-- Fearless Combatant's Ironskin Tunic (H)
 						i(142938),	-- Fearless Combatant's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(142996),	-- Fearless Combatant's Greatcloak of Faith (H)
 						i(142939),	-- Fearless Combatant's Scaled Chestpiece (H)
 						i(142941),	-- Fearless Combatant's Scaled Gauntlets (H)
@@ -1524,7 +1525,7 @@ _.PVP =
 						i(142944),	-- Fearless Combatant's Scaled Shoulders (H)
 						i(142946),	-- Fearless Combatant's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(143295),	-- Fearless Combatant's Drape of Piety (H)
 						i(142954),	-- Fearless Combatant's Satin Bracers (H)
 						i(142953),	-- Fearless Combatant's Satin Cord (H)
@@ -1535,7 +1536,7 @@ _.PVP =
 						i(142951),	-- Fearless Combatant's Satin Robe (H)
 						i(142947),	-- Fearless Combatant's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(142961),	-- Fearless Combatant's Leather Belt (H)
 						i(142957),	-- Fearless Combatant's Leather Gloves (H)
 						i(142958),	-- Fearless Combatant's Leather Helm (H)
@@ -1546,7 +1547,7 @@ _.PVP =
 						i(142962),	-- Fearless Combatant's Leather Wristguards (H)
 						i(143296),	-- Fearless Combatant's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(142970),	-- Fearless Combatant's Ringmail Armband (H)
 						i(142963),	-- Fearless Combatant's Ringmail Armor (H)
 						i(142964),	-- Fearless Combatant's Ringmail Boots (H)
@@ -1557,7 +1558,7 @@ _.PVP =
 						i(142968),	-- Fearless Combatant's Ringmail Spaulders (H)
 						i(143297),	-- Fearless Combatant's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(142976),	-- Fearless Combatant's Felweave Amice (H)
 						i(142978),	-- Fearless Combatant's Felweave Bracers (H)
 						i(143307),	-- Fearless Combatant's Felweave Cloak (H)
@@ -1568,7 +1569,7 @@ _.PVP =
 						i(142971),	-- Fearless Combatant's Felweave Treads (H)
 						i(142974),	-- Fearless Combatant's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(143313),	-- Fearless Combatant's Cloak of Battle (H)
 						i(142979),	-- Fearless Combatant's Plate Chestpiece (H)
 						i(142981),	-- Fearless Combatant's Plate Gauntlets (H)
@@ -1606,7 +1607,7 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(142761),	-- Fearless Gladiator's Dreadcloak (H)
 						i(142673),	-- Fearless Gladiator's Dreadplate Chestpiece (H)
 						i(142675),	-- Fearless Gladiator's Dreadplate Gauntlets (H)
@@ -1617,7 +1618,7 @@ _.PVP =
 						i(142678),	-- Fearless Gladiator's Dreadplate Shoulders (H)
 						i(142680),	-- Fearless Gladiator's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(143317),	-- Fearless Gladiator's Demonthread Cloak (H)
 						i(143252),	-- Fearless Gladiator's Felskin Belt (H)
 						i(143246),	-- Fearless Gladiator's Felskin Boots (H)
@@ -1628,7 +1629,7 @@ _.PVP =
 						i(143250),	-- Fearless Gladiator's Felskin Tunic (H)
 						i(143253),	-- Fearless Gladiator's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(142687),	-- Fearless Gladiator's Dragonhide Belt (H)
 						i(142765),	-- Fearless Gladiator's Dragonhide Cloak (H)
 						i(142682),	-- Fearless Gladiator's Dragonhide Gloves (H)
@@ -1639,7 +1640,7 @@ _.PVP =
 						i(142686),	-- Fearless Gladiator's Dragonhide Spaulders (H)
 						i(142688),	-- Fearless Gladiator's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(142696),	-- Fearless Gladiator's Chain Armband (H)
 						i(142689),	-- Fearless Gladiator's Chain Armor (H)
 						i(142695),	-- Fearless Gladiator's Chain Clasp (H)
@@ -1650,7 +1651,7 @@ _.PVP =
 						i(142690),	-- Fearless Gladiator's Chain Treads (H)
 						i(142769),	-- Fearless Gladiator's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(142702),	-- Fearless Gladiator's Silk Amice (H)
 						i(142704),	-- Fearless Gladiator's Silk Bracers (H)
 						i(142703),	-- Fearless Gladiator's Silk Cord (H)
@@ -1661,7 +1662,7 @@ _.PVP =
 						i(142700),	-- Fearless Gladiator's Silk Trousers (H)
 						i(142762),	-- Fearless Gladiator's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(142711),	-- Fearless Gladiator's Ironskin Belt (H)
 						i(142766),	-- Fearless Gladiator's Ironskin Cloak (H)
 						i(142706),	-- Fearless Gladiator's Ironskin Gloves (H)
@@ -1672,7 +1673,7 @@ _.PVP =
 						i(142710),	-- Fearless Gladiator's Ironskin Tunic (H)
 						i(142712),	-- Fearless Gladiator's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(142770),	-- Fearless Gladiator's Greatcloak of Faith (H)
 						i(142713),	-- Fearless Gladiator's Scaled Battlerobe (H)
 						i(142715),	-- Fearless Gladiator's Scaled Gauntlets (H)
@@ -1683,7 +1684,7 @@ _.PVP =
 						i(142718),	-- Fearless Gladiator's Scaled Shoulders (H)
 						i(142720),	-- Fearless Gladiator's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(143289),	-- Fearless Gladiator's Drape of Piety (H)
 						i(142728),	-- Fearless Gladiator's Satin Bracers (H)
 						i(142727),	-- Fearless Gladiator's Satin Cord (H)
@@ -1694,7 +1695,7 @@ _.PVP =
 						i(142725),	-- Fearless Gladiator's Satin Robe (H)
 						i(142721),	-- Fearless Gladiator's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(142735),	-- Fearless Gladiator's Leather Belt (H)
 						i(142731),	-- Fearless Gladiator's Leather Gloves (H)
 						i(142732),	-- Fearless Gladiator's Leather Helm (H)
@@ -1705,7 +1706,7 @@ _.PVP =
 						i(142736),	-- Fearless Gladiator's Leather Wristguards (H)
 						i(143290),	-- Fearless Gladiator's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(142744),	-- Fearless Gladiator's Ringmail Armband (H)
 						i(142737),	-- Fearless Gladiator's Ringmail Armor (H)
 						i(142738),	-- Fearless Gladiator's Ringmail Boots (H)
@@ -1716,7 +1717,7 @@ _.PVP =
 						i(142742),	-- Fearless Gladiator's Ringmail Spaulders (H)
 						i(143291),	-- Fearless Gladiator's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(142750),	-- Fearless Gladiator's Felweave Amice (H)
 						i(142752),	-- Fearless Gladiator's Felweave Bracers (H)
 						i(143305),	-- Fearless Gladiator's Felweave Cloak (H)
@@ -1727,7 +1728,7 @@ _.PVP =
 						i(142745),	-- Fearless Gladiator's Felweave Treads (H)
 						i(142748),	-- Fearless Gladiator's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(143311),	-- Fearless Gladiator's Cloak of Battle (H)
 						i(142753),	-- Fearless Gladiator's Plate Chestpiece (H)
 						i(142755),	-- Fearless Gladiator's Plate Gauntlets (H)
@@ -1765,7 +1766,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(14, i(143213)),	-- Fearless Gladiator's Dreadcloak (H)
 						un(14, i(143125)),	-- Fearless Gladiator's Dreadplate Chestpiece (H)
 						un(14, i(143127)),	-- Fearless Gladiator's Dreadplate Gauntlets (H)
@@ -1776,7 +1777,7 @@ _.PVP =
 						un(14, i(143130)),	-- Fearless Gladiator's Dreadplate Shoulders (H)
 						un(14, i(143132)),	-- Fearless Gladiator's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						un(14, i(143321)),	-- Fearless Gladiator's Demonthread Cloak (H)
 						un(14, i(143284)),	-- Fearless Gladiator's Felskin Belt (H)
 						un(14, i(143278)),	-- Fearless Gladiator's Felskin Boots (H)
@@ -1787,7 +1788,7 @@ _.PVP =
 						un(14, i(143282)),	-- Fearless Gladiator's Felskin Tunic (H)
 						un(14, i(143285)),	-- Fearless Gladiator's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(14, i(143139)),	-- Fearless Gladiator's Dragonhide Belt (H)
 						un(14, i(143217)),	-- Fearless Gladiator's Dragonhide Cloak (H)
 						un(14, i(143134)),	-- Fearless Gladiator's Dragonhide Gloves (H)
@@ -1798,7 +1799,7 @@ _.PVP =
 						un(14, i(143137)),	-- Fearless Gladiator's Dragonhide Tunic (H)
 						un(14, i(143140)),	-- Fearless Gladiator's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(14, i(143148)),	-- Fearless Gladiator's Chain Armband (H)
 						un(14, i(143141)),	-- Fearless Gladiator's Chain Armor (H)
 						un(14, i(143147)),	-- Fearless Gladiator's Chain Clasp (H)
@@ -1809,7 +1810,7 @@ _.PVP =
 						un(14, i(143142)),	-- Fearless Gladiator's Chain Treads (H)
 						un(14, i(143221)),	-- Fearless Gladiator's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(14, i(143154)),	-- Fearless Gladiator's Silk Amice (H)
 						un(14, i(143156)),	-- Fearless Gladiator's Silk Bracers (H)
 						un(14, i(143155)),	-- Fearless Gladiator's Silk Cord (H)
@@ -1820,7 +1821,7 @@ _.PVP =
 						un(14, i(143152)),	-- Fearless Gladiator's Silk Trousers (H)
 						un(14, i(143214)),	-- Fearless Gladiator's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(14, i(143163)),	-- Fearless Gladiator's Ironskin Belt (H)
 						un(14, i(143218)),	-- Fearless Gladiator's Ironskin Cloak (H)
 						un(14, i(143158)),	-- Fearless Gladiator's Ironskin Gloves (H)
@@ -1831,7 +1832,7 @@ _.PVP =
 						un(14, i(143162)),	-- Fearless Gladiator's Ironskin Tunic (H)
 						un(14, i(143164)),	-- Fearless Gladiator's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(14, i(143222)),	-- Fearless Gladiator's Greatcloak of Faith (H)
 						un(14, i(143165)),	-- Fearless Gladiator's Scaled Chestpiece (H)
 						un(14, i(143167)),	-- Fearless Gladiator's Scaled Gauntlets (H)
@@ -1842,7 +1843,7 @@ _.PVP =
 						un(14, i(143170)),	-- Fearless Gladiator's Scaled Shoulders (H)
 						un(14, i(143172)),	-- Fearless Gladiator's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(14, i(143178)),	-- Fearless Gladiator's Satin Mantle (H)
 						un(14, i(143177)),	-- Fearless Gladiator's Satin Robe (H)
 						un(14, i(143179)),	-- Fearless Gladiator's Satin Cord (H)
@@ -1853,7 +1854,7 @@ _.PVP =
 						un(14, i(143180)),	-- Fearless Gladiator's Satin Bracers (H)
 						un(14, i(143176)),	-- Fearless Gladiator's Satin Leggings (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(14, i(143187)),	-- Fearless Gladiator's Leather Belt (H)
 						un(14, i(143183)),	-- Fearless Gladiator's Leather Gloves (H)
 						un(14, i(143184)),	-- Fearless Gladiator's Leather Helm (H)
@@ -1864,7 +1865,7 @@ _.PVP =
 						un(14, i(143188)),	-- Fearless Gladiator's Leather Wristguards (H)
 						un(14, i(143302)),	-- Fearless Gladiator's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(14, i(143196)),	-- Fearless Gladiator's Ringmail Armband (H)
 						un(14, i(143189)),	-- Fearless Gladiator's Ringmail Armor (H)
 						un(14, i(143190)),	-- Fearless Gladiator's Ringmail Boots (H)
@@ -1875,7 +1876,7 @@ _.PVP =
 						un(14, i(143194)),	-- Fearless Gladiator's Ringmail Spaulders (H)
 						un(14, i(143303)),	-- Fearless Gladiator's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(14, i(143202)),	-- Fearless Gladiator's Felweave Amice (H)
 						un(14, i(143204)),	-- Fearless Gladiator's Felweave Bracers (H)
 						un(14, i(143309)),	-- Fearless Gladiator's Felweave Cloak (H)
@@ -1886,7 +1887,7 @@ _.PVP =
 						un(14, i(143197)),	-- Fearless Gladiator's Felweave Treads (H)
 						un(14, i(143200)),	-- Fearless Gladiator's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(14, i(143315)),	-- Fearless Gladiator's Cloak of Battle (H)
 						un(14, i(143205)),	-- Fearless Gladiator's Plate Chestpiece (H)
 						un(14, i(143207)),	-- Fearless Gladiator's Plate Gauntlets (H)
@@ -1928,7 +1929,7 @@ _.PVP =
 		n(-684, {	-- Cruel Gladiator: Legion Season 3
 			n(-9914, {	-- Alliance
 				n(-660, {	-- Aspirant / Combatant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(145026),	-- Cruel Combatant's Dreadcloak (A)
 						i(145050),	-- Cruel Combatant's Dreadplate Chestpiece (A)
 						i(145054),	-- Cruel Combatant's Dreadplate Gauntlets (A)
@@ -1939,7 +1940,7 @@ _.PVP =
 						i(145060),	-- Cruel Combatant's Dreadplate Shoulders (A)
 						i(145064),	-- Cruel Combatant's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(145028),	-- Cruel Combatant's Demonthread Cloak (A)
 						i(145078),	-- Cruel Combatant's Felskin Belt (A)
 						i(145068),	-- Cruel Combatant's Felskin Boots (A)
@@ -1950,7 +1951,7 @@ _.PVP =
 						i(145066),	-- Cruel Combatant's Felskin Tunic (A)
 						i(145080),	-- Cruel Combatant's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(145094),	-- Cruel Combatant's Dragonhide Belt (A)
 						i(145030),	-- Cruel Combatant's Dragonhide Cloak (A)
 						i(145086),	-- Cruel Combatant's Dragonhide Gloves (A)
@@ -1961,7 +1962,7 @@ _.PVP =
 						i(145082),	-- Cruel Combatant's Dragonhide Tunic (A)
 						i(145096),	-- Cruel Combatant's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(145112),	-- Cruel Combatant's Chain Armband (A)
 						i(145098),	-- Cruel Combatant's Chain Armor (A)
 						i(145110),	-- Cruel Combatant's Chain Clasp (A)
@@ -1972,7 +1973,7 @@ _.PVP =
 						i(145100),	-- Cruel Combatant's Chain Treads (A)
 						i(145032),	-- Cruel Combatant's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(145124),	-- Cruel Combatant's Silk Amice (A)
 						i(145128),	-- Cruel Combatant's Silk Bracers (A)
 						i(145126),	-- Cruel Combatant's Silk Cord (A)
@@ -1983,7 +1984,7 @@ _.PVP =
 						i(145120),	-- Cruel Combatant's Silk Trousers (A)
 						i(145034),	-- Cruel Combatant's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(145142),	-- Cruel Combatant's Ironskin Belt (A)
 						i(145036),	-- Cruel Combatant's Ironskin Cloak (A)
 						i(145132),	-- Cruel Combatant's Ironskin Gloves (A)
@@ -1994,7 +1995,7 @@ _.PVP =
 						i(145140),	-- Cruel Combatant's Ironskin Tunic (A)
 						i(145144),	-- Cruel Combatant's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(145038),	-- Cruel Combatant's Greatcloak of Faith (A)
 						i(145152),	-- Cruel Combatant's Scaled Chestpiece (A)
 						i(145156),	-- Cruel Combatant's Scaled Gauntlets (A)
@@ -2005,7 +2006,7 @@ _.PVP =
 						i(145162),	-- Cruel Combatant's Scaled Shoulders (A)
 						i(145166),	-- Cruel Combatant's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(145040),	-- Cruel Combatant's Drape of Piety (A)
 						i(145182),	-- Cruel Combatant's Satin Bracers (A)
 						i(145180),	-- Cruel Combatant's Satin Cord (A)
@@ -2016,7 +2017,7 @@ _.PVP =
 						i(145176),	-- Cruel Combatant's Satin Robe (A)
 						i(145168),	-- Cruel Combatant's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(145202),	-- Cruel Combatant's Leather Belt (A)
 						i(145194),	-- Cruel Combatant's Leather Gloves (A)
 						i(145196),	-- Cruel Combatant's Leather Helm (A)
@@ -2027,7 +2028,7 @@ _.PVP =
 						i(145204),	-- Cruel Combatant's Leather Wristguards (A)
 						i(145042),	-- Cruel Combatant's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(145220),	-- Cruel Combatant's Ringmail Armband (A)
 						i(145206),	-- Cruel Combatant's Ringmail Armor (A)
 						i(145208),	-- Cruel Combatant's Ringmail Boots (A)
@@ -2038,7 +2039,7 @@ _.PVP =
 						i(145216),	-- Cruel Combatant's Ringmail Spaulders (A)
 						i(145044),	-- Cruel Combatant's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(145250),	-- Cruel Combatant's Felweave Amice (A)
 						i(145254),	-- Cruel Combatant's Felweave Bracers (A)
 						i(145046),	-- Cruel Combatant's Felweave Cloak (A)
@@ -2049,7 +2050,7 @@ _.PVP =
 						i(145240),	-- Cruel Combatant's Felweave Treads (A)
 						i(145246),	-- Cruel Combatant's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(145048),	-- Cruel Combatant's Cloak of Battle (A)
 						i(145256),	-- Cruel Combatant's Plate Chestpiece (A)
 						i(145260),	-- Cruel Combatant's Plate Gauntlets (A)
@@ -2071,17 +2072,17 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(145188)),	-- Cruel Combatant's Signet (A)
 					}),
 					n(-386,	{	-- Trinket
-						un(REMOVED_FROM_GAME, i(145222)),	-- Cruel Combatant's Badge of Conquest (A)	
-						un(REMOVED_FROM_GAME, i(145224)),	-- Cruel Combatant's Accolade of Conquest (A)	
-						un(REMOVED_FROM_GAME, i(145226)),	-- Cruel Combatant's Insignia of Conquest (A)	
-						un(REMOVED_FROM_GAME, i(145228)),	-- Cruel Combatant's Badge of Dominance (A)	
-						un(REMOVED_FROM_GAME, i(145230)),	-- Cruel Combatant's Accolade of Dominance (A)	
-						un(REMOVED_FROM_GAME, i(145232)),	-- Cruel Combatant's Insignia of Dominance (A)	
-						un(REMOVED_FROM_GAME, i(145234)),	-- Cruel Combatant's Badge of Victory (A)	
-						un(REMOVED_FROM_GAME, i(145236)),	-- Cruel Combatant's Accolade of Victory (A)	
+						un(REMOVED_FROM_GAME, i(145222)),	-- Cruel Combatant's Badge of Conquest (A)
+						un(REMOVED_FROM_GAME, i(145224)),	-- Cruel Combatant's Accolade of Conquest (A)
+						un(REMOVED_FROM_GAME, i(145226)),	-- Cruel Combatant's Insignia of Conquest (A)
+						un(REMOVED_FROM_GAME, i(145228)),	-- Cruel Combatant's Badge of Dominance (A)
+						un(REMOVED_FROM_GAME, i(145230)),	-- Cruel Combatant's Accolade of Dominance (A)
+						un(REMOVED_FROM_GAME, i(145232)),	-- Cruel Combatant's Insignia of Dominance (A)
+						un(REMOVED_FROM_GAME, i(145234)),	-- Cruel Combatant's Badge of Victory (A)
+						un(REMOVED_FROM_GAME, i(145236)),	-- Cruel Combatant's Accolade of Victory (A)
 						un(REMOVED_FROM_GAME, i(145238)),	-- Cruel Combatant's Insignia of Victory (A)
 					}),
-					n(-387, {	-- Relic	
+					n(-387, {	-- Relic
 						un(REMOVED_FROM_GAME, i(144512)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(144531)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(144522)),	-- Battle-Tempered Hilt
@@ -2115,7 +2116,7 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(144534),	-- Cruel Gladiator's Dreadcloak (A)
 						i(144558),	-- Cruel Gladiator's Dreadplate Chestpiece (A)
 						i(144562),	-- Cruel Gladiator's Dreadplate Gauntlets (A)
@@ -2126,7 +2127,7 @@ _.PVP =
 						i(144568),	-- Cruel Gladiator's Dreadplate Shoulders (A)
 						i(144572),	-- Cruel Gladiator's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(144536),	-- Cruel Gladiator's Demonthread Cloak (A)
 						i(144586),	-- Cruel Gladiator's Felskin Belt (A)
 						i(144576),	-- Cruel Gladiator's Felskin Boots (A)
@@ -2137,7 +2138,7 @@ _.PVP =
 						i(144574),	-- Cruel Gladiator's Felskin Tunic (A)
 						i(144588),	-- Cruel Gladiator's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(144602),	-- Cruel Gladiator's Dragonhide Belt (A)
 						i(144538),	-- Cruel Gladiator's Dragonhide Cloak (A)
 						i(144594),	-- Cruel Gladiator's Dragonhide Gloves (A)
@@ -2148,7 +2149,7 @@ _.PVP =
 						i(144600),	-- Cruel Gladiator's Dragonhide Spaulders (A)
 						i(144604),	-- Cruel Gladiator's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(144620),	-- Cruel Gladiator's Chain Armband (A)
 						i(144606),	-- Cruel Gladiator's Chain Armor (A)
 						i(144618),	-- Cruel Gladiator's Chain Clasp (A)
@@ -2159,7 +2160,7 @@ _.PVP =
 						i(144608),	-- Cruel Gladiator's Chain Treads (A)
 						i(144540),	-- Cruel Gladiator's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(144632),	-- Cruel Gladiator's Silk Amice (A)
 						i(144636),	-- Cruel Gladiator's Silk Bracers (A)
 						i(144634),	-- Cruel Gladiator's Silk Cord (A)
@@ -2170,7 +2171,7 @@ _.PVP =
 						i(144628),	-- Cruel Gladiator's Silk Trousers (A)
 						i(144542),	-- Cruel Gladiator's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(144650),	-- Cruel Gladiator's Ironskin Belt (A)
 						i(144544),	-- Cruel Gladiator's Ironskin Cloak (A)
 						i(144640),	-- Cruel Gladiator's Ironskin Gloves (A)
@@ -2181,7 +2182,7 @@ _.PVP =
 						i(144648),	-- Cruel Gladiator's Ironskin Tunic (A)
 						i(144652),	-- Cruel Gladiator's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(144546),	-- Cruel Gladiator's Greatcloak of Faith (A)
 						i(144669),	-- Cruel Gladiator's Scaled Breastplate (A)
 						i(144663),	-- Cruel Gladiator's Scaled Gauntlets (A)
@@ -2192,7 +2193,7 @@ _.PVP =
 						i(144670),	-- Cruel Gladiator's Scaled Shoulders (A)
 						i(144674),	-- Cruel Gladiator's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(144548),	-- Cruel Gladiator's Drape of Piety (A)
 						i(144690),	-- Cruel Gladiator's Satin Bracers (A)
 						i(144688),	-- Cruel Gladiator's Satin Cord (A)
@@ -2203,7 +2204,7 @@ _.PVP =
 						i(144684),	-- Cruel Gladiator's Satin Robe (A)
 						i(144676),	-- Cruel Gladiator's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(144710),	-- Cruel Gladiator's Leather Belt (A)
 						i(144702),	-- Cruel Gladiator's Leather Gloves (A)
 						i(144704),	-- Cruel Gladiator's Leather Helm (A)
@@ -2214,7 +2215,7 @@ _.PVP =
 						i(144712),	-- Cruel Gladiator's Leather Wristguards (A)
 						i(144550),	-- Cruel Gladiator's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(144728),	-- Cruel Gladiator's Ringmail Armband (A)
 						i(144714),	-- Cruel Gladiator's Ringmail Armor (A)
 						i(144716),	-- Cruel Gladiator's Ringmail Boots (A)
@@ -2225,7 +2226,7 @@ _.PVP =
 						i(144724),	-- Cruel Gladiator's Ringmail Spaulders (A)
 						i(144552),	-- Cruel Gladiator's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(144758),	-- Cruel Gladiator's Felweave Amice (A)
 						i(144762),	-- Cruel Gladiator's Felweave Bracers (A)
 						i(144554),	-- Cruel Gladiator's Felweave Cloak (A)
@@ -2236,7 +2237,7 @@ _.PVP =
 						i(144748),	-- Cruel Gladiator's Felweave Treads (A)
 						i(144754),	-- Cruel Gladiator's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(144556),	-- Cruel Gladiator's Cloak of Battle (A)
 						i(144764),	-- Cruel Gladiator's Plate Chestpiece (A)
 						i(144768),	-- Cruel Gladiator's Plate Gauntlets (A)
@@ -2270,7 +2271,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(14, i(144780)),	-- Cruel Gladiator's Dreadcloak (A)
 						un(14, i(144804)),	-- Cruel Gladiator's Dreadplate Chestpiece (A)
 						un(14, i(144808)),	-- Cruel Gladiator's Dreadplate Gauntlets (A)
@@ -2281,7 +2282,7 @@ _.PVP =
 						un(14, i(144814)),	-- Cruel Gladiator's Dreadplate Shoulders (A)
 						un(14, i(144818)),	-- Cruel Gladiator's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						un(14, i(144782)),	-- Cruel Gladiator's Demonthread Cloak (A)
 						un(14, i(144832)),	-- Cruel Gladiator's Felskin Belt (A)
 						un(14, i(144822)),	-- Cruel Gladiator's Felskin Boots (A)
@@ -2292,7 +2293,7 @@ _.PVP =
 						un(14, i(144820)),	-- Cruel Gladiator's Felskin Tunic (A)
 						un(14, i(144834)),	-- Cruel Gladiator's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(14, i(144848)),	-- Cruel Gladiator's Dragonhide Belt (A)
 						un(14, i(144784)),	-- Cruel Gladiator's Dragonhide Cloak (A)
 						un(14, i(144840)),	-- Cruel Gladiator's Dragonhide Gloves (A)
@@ -2303,7 +2304,7 @@ _.PVP =
 						un(14, i(144846)),	-- Cruel Gladiator's Dragonhide Spaulders (A)
 						un(14, i(144850)),	-- Cruel Gladiator's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(14, i(144866)),	-- Cruel Gladiator's Chain Armband (A)
 						un(14, i(144852)),	-- Cruel Gladiator's Chain Armor (A)
 						un(14, i(144864)),	-- Cruel Gladiator's Chain Clasp (A)
@@ -2314,7 +2315,7 @@ _.PVP =
 						un(14, i(144854)),	-- Cruel Gladiator's Chain Treads (A)
 						un(14, i(144786)),	-- Cruel Gladiator's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(14, i(144878)),	-- Cruel Gladiator's Silk Amice (A)
 						un(14, i(144882)),	-- Cruel Gladiator's Silk Bracers (A)
 						un(14, i(144880)),	-- Cruel Gladiator's Silk Cord (A)
@@ -2325,7 +2326,7 @@ _.PVP =
 						un(14, i(144874)),	-- Cruel Gladiator's Silk Trousers (A)
 						un(14, i(144788)),	-- Cruel Gladiator's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(14, i(144896)),	-- Cruel Gladiator's Ironskin Belt (A)
 						un(14, i(144790)),	-- Cruel Gladiator's Ironskin Cloak (A)
 						un(14, i(144886)),	-- Cruel Gladiator's Ironskin Gloves (A)
@@ -2336,7 +2337,7 @@ _.PVP =
 						un(14, i(144894)),	-- Cruel Gladiator's Ironskin Tunic (A)
 						un(14, i(144898)),	-- Cruel Gladiator's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(14, i(144792)),	-- Cruel Gladiator's Greatcloak of Faith (A)
 						un(14, i(144906)),	-- Cruel Gladiator's Scaled Breastplate (A)
 						un(14, i(144910)),	-- Cruel Gladiator's Scaled Gauntlets (A)
@@ -2347,7 +2348,7 @@ _.PVP =
 						un(14, i(144916)),	-- Cruel Gladiator's Scaled Shoulders (A)
 						un(14, i(144920)),	-- Cruel Gladiator's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(14, i(144794)),	-- Cruel Gladiator's Drape of Piety (A)
 						un(14, i(144936)),	-- Cruel Gladiator's Satin Bracers (A)
 						un(14, i(144934)),	-- Cruel Gladiator's Satin Cord (A)
@@ -2358,7 +2359,7 @@ _.PVP =
 						un(14, i(144930)),	-- Cruel Gladiator's Satin Robe (A)
 						un(14, i(144922)),	-- Cruel Gladiator's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(14, i(144956)),	-- Cruel Gladiator's Leather Belt (A)
 						un(14, i(144948)),	-- Cruel Gladiator's Leather Gloves (A)
 						un(14, i(144950)),	-- Cruel Gladiator's Leather Helm (A)
@@ -2369,7 +2370,7 @@ _.PVP =
 						un(14, i(144958)),	-- Cruel Gladiator's Leather Wristguards (A)
 						un(14, i(144796)),	-- Cruel Gladiator's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(14, i(144974)),	-- Cruel Gladiator's Ringmail Armband (A)
 						un(14, i(144960)),	-- Cruel Gladiator's Ringmail Armor (A)
 						un(14, i(144962)),	-- Cruel Gladiator's Ringmail Boots (A)
@@ -2380,7 +2381,7 @@ _.PVP =
 						un(14, i(144970)),	-- Cruel Gladiator's Ringmail Spaulders (A)
 						un(14, i(144798)),	-- Cruel Gladiator's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(14, i(145004)),	-- Cruel Gladiator's Felweave Amice (A)
 						un(14, i(145008)),	-- Cruel Gladiator's Felweave Bracers (A)
 						un(14, i(144800)),	-- Cruel Gladiator's Felweave Cloak (A)
@@ -2391,7 +2392,7 @@ _.PVP =
 						un(14, i(144994)),	-- Cruel Gladiator's Felweave Treads (A)
 						un(14, i(145000)),	-- Cruel Gladiator's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(14, i(144802)),	-- Cruel Gladiator's Cloak of Battle (A)
 						un(14, i(145010)),	-- Cruel Gladiator's Plate Chestpiece (A)
 						un(14, i(145014)),	-- Cruel Gladiator's Plate Gauntlets (A)
@@ -2427,7 +2428,7 @@ _.PVP =
 			}),
 			n(-9913, {	-- Horde
 				n(-660, {	-- Aspirant / Combatant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(145027),	-- Cruel Combatant's Dreadcloak (H)
 						i(145051),	-- Cruel Combatant's Dreadplate Chestpiece (H)
 						i(145055),	-- Cruel Combatant's Dreadplate Gauntlets (H)
@@ -2438,7 +2439,7 @@ _.PVP =
 						i(145061),	-- Cruel Combatant's Dreadplate Shoulders (H)
 						i(145065),	-- Cruel Combatant's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(145073),	-- Cruel Combatant's Felskin Helm (H)
 						i(145077),	-- Cruel Combatant's Felskin Spaulders (H)
 						i(145029),	-- Cruel Combatant's Demonthread Cloak (H)
@@ -2449,7 +2450,7 @@ _.PVP =
 						i(145075),	-- Cruel Combatant's Felskin Legguards (H)
 						i(145069),	-- Cruel Combatant's Felskin Boots (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(145095),	-- Cruel Combatant's Dragonhide Belt (H)
 						i(145031),	-- Cruel Combatant's Dragonhide Cloak (H)
 						i(145087),	-- Cruel Combatant's Dragonhide Gloves (H)
@@ -2460,7 +2461,7 @@ _.PVP =
 						i(145083),	-- Cruel Combatant's Dragonhide Tunic (H)
 						i(145097),	-- Cruel Combatant's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(145113),	-- Cruel Combatant's Chain Armband (H)
 						i(145099),	-- Cruel Combatant's Chain Armor (H)
 						i(145111),	-- Cruel Combatant's Chain Clasp (H)
@@ -2471,7 +2472,7 @@ _.PVP =
 						i(145101),	-- Cruel Combatant's Chain Treads (H)
 						i(145033),	-- Cruel Combatant's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(145125),	-- Cruel Combatant's Silk Amice (H)
 						i(145129),	-- Cruel Combatant's Silk Bracers (H)
 						i(145127),	-- Cruel Combatant's Silk Cord (H)
@@ -2482,7 +2483,7 @@ _.PVP =
 						i(145121),	-- Cruel Combatant's Silk Trousers (H)
 						i(145035),	-- Cruel Combatant's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(145143),	-- Cruel Combatant's Ironskin Belt (H)
 						i(145037),	-- Cruel Combatant's Ironskin Cloak (H)
 						i(145133),	-- Cruel Combatant's Ironskin Gloves (H)
@@ -2493,7 +2494,7 @@ _.PVP =
 						i(145141),	-- Cruel Combatant's Ironskin Tunic (H)
 						i(145145),	-- Cruel Combatant's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(145039),	-- Cruel Combatant's Greatcloak of Faith (H)
 						i(145153),	-- Cruel Combatant's Scaled Chestpiece (H)
 						i(145157),	-- Cruel Combatant's Scaled Gauntlets (H)
@@ -2504,7 +2505,7 @@ _.PVP =
 						i(145163),	-- Cruel Combatant's Scaled Shoulders (H)
 						i(145167),	-- Cruel Combatant's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(145041),	-- Cruel Combatant's Drape of Piety (H)
 						i(145183),	-- Cruel Combatant's Satin Bracers (H)
 						i(145181),	-- Cruel Combatant's Satin Cord (H)
@@ -2515,7 +2516,7 @@ _.PVP =
 						i(145177),	-- Cruel Combatant's Satin Robe (H)
 						i(145169),	-- Cruel Combatant's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(145203),	-- Cruel Combatant's Leather Belt (H)
 						i(145195),	-- Cruel Combatant's Leather Gloves (H)
 						i(145197),	-- Cruel Combatant's Leather Helm (H)
@@ -2526,7 +2527,7 @@ _.PVP =
 						i(145205),	-- Cruel Combatant's Leather Wristguards (H)
 						i(145043),	-- Cruel Combatant's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(145221),	-- Cruel Combatant's Ringmail Armband (H)
 						i(145207),	-- Cruel Combatant's Ringmail Armor (H)
 						i(145209),	-- Cruel Combatant's Ringmail Boots (H)
@@ -2537,7 +2538,7 @@ _.PVP =
 						i(145217),	-- Cruel Combatant's Ringmail Spaulders (H)
 						i(145045),	-- Cruel Combatant's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(145251),	-- Cruel Combatant's Felweave Amice (H)
 						i(145255),	-- Cruel Combatant's Felweave Bracers (H)
 						i(145047),	-- Cruel Combatant's Felweave Cloak (H)
@@ -2548,7 +2549,7 @@ _.PVP =
 						i(145241),	-- Cruel Combatant's Felweave Treads (H)
 						i(145247),	-- Cruel Combatant's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(145049),	-- Cruel Combatant's Cloak of Battle (H)
 						i(145257),	-- Cruel Combatant's Plate Chestpiece (H)
 						i(145261),	-- Cruel Combatant's Plate Gauntlets (H)
@@ -2570,14 +2571,14 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(145189)),	-- Cruel Combatant's Signet (H)
 					}),
 					n(-386,	{	-- Trinket
-						un(REMOVED_FROM_GAME, i(145223)),	-- Cruel Combatant's Badge of Conquest (H)	
-						un(REMOVED_FROM_GAME, i(145225)),	-- Cruel Combatant's Accolade of Conquest (H)	
-						un(REMOVED_FROM_GAME, i(145227)),	-- Cruel Combatant's Insignia of Conquest (H)	
-						un(REMOVED_FROM_GAME, i(145229)),	-- Cruel Combatant's Badge of Dominance (H)	
-						un(REMOVED_FROM_GAME, i(145231)),	-- Cruel Combatant's Accolade of Dominance (H)	
-						un(REMOVED_FROM_GAME, i(145233)),	-- Cruel Combatant's Insignia of Dominance (H)	
-						un(REMOVED_FROM_GAME, i(145235)),	-- Cruel Combatant's Badge of Victory (H)	
-						un(REMOVED_FROM_GAME, i(145237)),	-- Cruel Combatant's Accolade of Victory (H)	
+						un(REMOVED_FROM_GAME, i(145223)),	-- Cruel Combatant's Badge of Conquest (H)
+						un(REMOVED_FROM_GAME, i(145225)),	-- Cruel Combatant's Accolade of Conquest (H)
+						un(REMOVED_FROM_GAME, i(145227)),	-- Cruel Combatant's Insignia of Conquest (H)
+						un(REMOVED_FROM_GAME, i(145229)),	-- Cruel Combatant's Badge of Dominance (H)
+						un(REMOVED_FROM_GAME, i(145231)),	-- Cruel Combatant's Accolade of Dominance (H)
+						un(REMOVED_FROM_GAME, i(145233)),	-- Cruel Combatant's Insignia of Dominance (H)
+						un(REMOVED_FROM_GAME, i(145235)),	-- Cruel Combatant's Badge of Victory (H)
+						un(REMOVED_FROM_GAME, i(145237)),	-- Cruel Combatant's Accolade of Victory (H)
 						un(REMOVED_FROM_GAME, i(145239)),	-- Cruel Combatant's Insignia of Victory (H)
 					}),
 					n(-387, {	-- Relic
@@ -2614,7 +2615,7 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(144535),	-- Cruel Gladiator's Dreadcloak (H)
 						i(144559),	-- Cruel Gladiator's Dreadplate Chestpiece (H)
 						i(144563),	-- Cruel Gladiator's Dreadplate Gauntlets (H)
@@ -2625,7 +2626,7 @@ _.PVP =
 						i(144569),	-- Cruel Gladiator's Dreadplate Shoulders (H)
 						i(144573),	-- Cruel Gladiator's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(144537),	-- Cruel Gladiator's Demonthread Cloak (H)
 						i(144587),	-- Cruel Gladiator's Felskin Belt (H)
 						i(144577),	-- Cruel Gladiator's Felskin Boots (H)
@@ -2636,7 +2637,7 @@ _.PVP =
 						i(144575),	-- Cruel Gladiator's Felskin Tunic (H)
 						i(144589),	-- Cruel Gladiator's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(144603),	-- Cruel Gladiator's Dragonhide Belt (H)
 						i(144539),	-- Cruel Gladiator's Dragonhide Cloak (H)
 						i(144595),	-- Cruel Gladiator's Dragonhide Gloves (H)
@@ -2647,7 +2648,7 @@ _.PVP =
 						i(144601),	-- Cruel Gladiator's Dragonhide Spaulders (H)
 						i(144605),	-- Cruel Gladiator's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(144621),	-- Cruel Gladiator's Chain Armband (H)
 						i(144607),	-- Cruel Gladiator's Chain Armor (H)
 						i(144619),	-- Cruel Gladiator's Chain Clasp (H)
@@ -2658,7 +2659,7 @@ _.PVP =
 						i(144609),	-- Cruel Gladiator's Chain Treads (H)
 						i(144541),	-- Cruel Gladiator's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(144633),	-- Cruel Gladiator's Silk Amice (H)
 						i(144637),	-- Cruel Gladiator's Silk Bracers (H)
 						i(144635),	-- Cruel Gladiator's Silk Cord (H)
@@ -2669,7 +2670,7 @@ _.PVP =
 						i(144629),	-- Cruel Gladiator's Silk Trousers (H)
 						i(144543),	-- Cruel Gladiator's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(144651),	-- Cruel Gladiator's Ironskin Belt (H)
 						i(144545),	-- Cruel Gladiator's Ironskin Cloak (H)
 						i(144641),	-- Cruel Gladiator's Ironskin Gloves (H)
@@ -2680,7 +2681,7 @@ _.PVP =
 						i(144649),	-- Cruel Gladiator's Ironskin Tunic (H)
 						i(144653),	-- Cruel Gladiator's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(144547),	-- Cruel Gladiator's Greatcloak of Faith (H)
 						i(144660),	-- Cruel Gladiator's Scaled Breastplate (H)
 						i(144664),	-- Cruel Gladiator's Scaled Gauntlets (H)
@@ -2691,7 +2692,7 @@ _.PVP =
 						i(144671),	-- Cruel Gladiator's Scaled Shoulders (H)
 						i(144675),	-- Cruel Gladiator's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(144549),	-- Cruel Gladiator's Drape of Piety (H)
 						i(144691),	-- Cruel Gladiator's Satin Bracers (H)
 						i(144689),	-- Cruel Gladiator's Satin Cord (H)
@@ -2702,7 +2703,7 @@ _.PVP =
 						i(144685),	-- Cruel Gladiator's Satin Robe (H)
 						i(144677),	-- Cruel Gladiator's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(144711),	-- Cruel Gladiator's Leather Belt (H)
 						i(144703),	-- Cruel Gladiator's Leather Gloves (H)
 						i(144705),	-- Cruel Gladiator's Leather Helm (H)
@@ -2713,7 +2714,7 @@ _.PVP =
 						i(144713),	-- Cruel Gladiator's Leather Wristguards (H)
 						i(144551),	-- Cruel Gladiator's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(144729),	-- Cruel Gladiator's Ringmail Armband (H)
 						i(144715),	-- Cruel Gladiator's Ringmail Armor (H)
 						i(144717),	-- Cruel Gladiator's Ringmail Boots (H)
@@ -2724,7 +2725,7 @@ _.PVP =
 						i(144725),	-- Cruel Gladiator's Ringmail Spaulders (H)
 						i(144553),	-- Cruel Gladiator's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(144759),	-- Cruel Gladiator's Felweave Amice (H)
 						i(144763),	-- Cruel Gladiator's Felweave Bracers (H)
 						i(144555),	-- Cruel Gladiator's Felweave Cloak (H)
@@ -2735,7 +2736,7 @@ _.PVP =
 						i(144749),	-- Cruel Gladiator's Felweave Treads (H)
 						i(144755),	-- Cruel Gladiator's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(144557),	-- Cruel Gladiator's Cloak of Battle (H)
 						i(144765),	-- Cruel Gladiator's Plate Chestpiece (H)
 						i(144769),	-- Cruel Gladiator's Plate Gauntlets (H)
@@ -2769,7 +2770,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(14, i(144781)),	-- Cruel Gladiator's Dreadcloak (H)
 						un(14, i(144805)),	-- Cruel Gladiator's Dreadplate Chestpiece (H)
 						un(14, i(144809)),	-- Cruel Gladiator's Dreadplate Gauntlets (H)
@@ -2780,7 +2781,7 @@ _.PVP =
 						un(14, i(144815)),	-- Cruel Gladiator's Dreadplate Shoulders (H)
 						un(14, i(144819)),	-- Cruel Gladiator's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						un(14, i(144783)),	-- Cruel Gladiator's Demonthread Cloak (H)
 						un(14, i(144833)),	-- Cruel Gladiator's Felskin Belt (H)
 						un(14, i(144823)),	-- Cruel Gladiator's Felskin Boots (H)
@@ -2791,7 +2792,7 @@ _.PVP =
 						un(14, i(144821)),	-- Cruel Gladiator's Felskin Tunic (H)
 						un(14, i(144835)),	-- Cruel Gladiator's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(14, i(144849)),	-- Cruel Gladiator's Dragonhide Belt (H)
 						un(14, i(144785)),	-- Cruel Gladiator's Dragonhide Cloak (H)
 						un(14, i(144841)),	-- Cruel Gladiator's Dragonhide Gloves (H)
@@ -2802,7 +2803,7 @@ _.PVP =
 						un(14, i(144847)),	-- Cruel Gladiator's Dragonhide Spaulders (H)
 						un(14, i(144851)),	-- Cruel Gladiator's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(14, i(144867)),	-- Cruel Gladiator's Chain Armband (H)
 						un(14, i(144853)),	-- Cruel Gladiator's Chain Armor (H)
 						un(14, i(144865)),	-- Cruel Gladiator's Chain Clasp (H)
@@ -2813,7 +2814,7 @@ _.PVP =
 						un(14, i(144855)),	-- Cruel Gladiator's Chain Treads (H)
 						un(14, i(144787)),	-- Cruel Gladiator's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(14, i(144879)),	-- Cruel Gladiator's Silk Amice (H)
 						un(14, i(144883)),	-- Cruel Gladiator's Silk Bracers (H)
 						un(14, i(144881)),	-- Cruel Gladiator's Silk Cord (H)
@@ -2824,7 +2825,7 @@ _.PVP =
 						un(14, i(144875)),	-- Cruel Gladiator's Silk Trousers (H)
 						un(14, i(144789)),	-- Cruel Gladiator's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(14, i(144897)),	-- Cruel Gladiator's Ironskin Belt (H)
 						un(14, i(144791)),	-- Cruel Gladiator's Ironskin Cloak (H)
 						un(14, i(144887)),	-- Cruel Gladiator's Ironskin Gloves (H)
@@ -2835,7 +2836,7 @@ _.PVP =
 						un(14, i(144895)),	-- Cruel Gladiator's Ironskin Tunic (H)
 						un(14, i(144899)),	-- Cruel Gladiator's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(14, i(144793)),	-- Cruel Gladiator's Greatcloak of Faith (H)
 						un(14, i(144907)),	-- Cruel Gladiator's Scaled Breastplate (H)
 						un(14, i(144911)),	-- Cruel Gladiator's Scaled Gauntlets (H)
@@ -2846,7 +2847,7 @@ _.PVP =
 						un(14, i(144917)),	-- Cruel Gladiator's Scaled Shoulders (H)
 						un(14, i(144921)),	-- Cruel Gladiator's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(14, i(144795)),	-- Cruel Gladiator's Drape of Piety (H)
 						un(14, i(144937)),	-- Cruel Gladiator's Satin Bracers (H)
 						un(14, i(144935)),	-- Cruel Gladiator's Satin Cord (H)
@@ -2857,7 +2858,7 @@ _.PVP =
 						un(14, i(144931)),	-- Cruel Gladiator's Satin Robe (H)
 						un(14, i(144923)),	-- Cruel Gladiator's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(14, i(144957)),	-- Cruel Gladiator's Leather Belt (H)
 						un(14, i(144949)),	-- Cruel Gladiator's Leather Gloves (H)
 						un(14, i(144951)),	-- Cruel Gladiator's Leather Helm (H)
@@ -2868,7 +2869,7 @@ _.PVP =
 						un(14, i(144959)),	-- Cruel Gladiator's Leather Wristguards (H)
 						un(14, i(144797)),	-- Cruel Gladiator's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(14, i(144975)),	-- Cruel Gladiator's Ringmail Armband (H)
 						un(14, i(144961)),	-- Cruel Gladiator's Ringmail Armor (H)
 						un(14, i(144963)),	-- Cruel Gladiator's Ringmail Boots (H)
@@ -2879,7 +2880,7 @@ _.PVP =
 						un(14, i(144971)),	-- Cruel Gladiator's Ringmail Spaulders (H)
 						un(14, i(144799)),	-- Cruel Gladiator's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(14, i(145005)),	-- Cruel Gladiator's Felweave Amice (H)
 						un(14, i(145009)),	-- Cruel Gladiator's Felweave Bracers (H)
 						un(14, i(144801)),	-- Cruel Gladiator's Felweave Cloak (H)
@@ -2890,7 +2891,7 @@ _.PVP =
 						un(14, i(144995)),	-- Cruel Gladiator's Felweave Treads (H)
 						un(14, i(145001)),	-- Cruel Gladiator's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(14, i(144803)),	-- Cruel Gladiator's Cloak of Battle (H)
 						un(14, i(145011)),	-- Cruel Gladiator's Plate Chestpiece (H)
 						un(14, i(145015)),	-- Cruel Gladiator's Plate Gauntlets (H)
@@ -2928,7 +2929,7 @@ _.PVP =
 		n(-685, {	-- Ferocious Gladiator: Legion Season 4
 			n(-9914, {	-- Alliance
 				n(-660, {	-- Aspirant / Combatant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(145868),	-- Ferocious Combatant's Dreadcloak (A)
 						i(145892),	-- Ferocious Combatant's Dreadplate Chestpiece (A)
 						i(145896),	-- Ferocious Combatant's Dreadplate Gauntlets (A)
@@ -2939,7 +2940,7 @@ _.PVP =
 						i(145902),	-- Ferocious Combatant's Dreadplate Shoulders (A)
 						i(145906),	-- Ferocious Combatant's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(145870),	-- Ferocious Combatant's Demonthread Cloak (A)
 						i(145920),	-- Ferocious Combatant's Felskin Belt (A)
 						i(145910),	-- Ferocious Combatant's Felskin Boots (A)
@@ -2950,7 +2951,7 @@ _.PVP =
 						i(145908),	-- Ferocious Combatant's Felskin Tunic (A)
 						i(145922),	-- Ferocious Combatant's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(145936),	-- Ferocious Combatant's Dragonhide Belt (A)
 						i(145872),	-- Ferocious Combatant's Dragonhide Cloak (A)
 						i(145928),	-- Ferocious Combatant's Dragonhide Gloves (A)
@@ -2961,7 +2962,7 @@ _.PVP =
 						i(145924),	-- Ferocious Combatant's Dragonhide Tunic (A)
 						i(145938),	-- Ferocious Combatant's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(145954),	-- Ferocious Combatant's Chain Armband (A)
 						i(145940),	-- Ferocious Combatant's Chain Armor (A)
 						i(145952),	-- Ferocious Combatant's Chain Clasp (A)
@@ -2972,7 +2973,7 @@ _.PVP =
 						i(145942),	-- Ferocious Combatant's Chain Treads (A)
 						i(145874),	-- Ferocious Combatant's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(145966),	-- Ferocious Combatant's Silk Amice (A)
 						i(145970),	-- Ferocious Combatant's Silk Bracers (A)
 						i(145968),	-- Ferocious Combatant's Silk Cord (A)
@@ -2983,7 +2984,7 @@ _.PVP =
 						i(145962),	-- Ferocious Combatant's Silk Trousers (A)
 						i(145876),	-- Ferocious Combatant's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(145984),	-- Ferocious Combatant's Ironskin Belt (A)
 						i(145878),	-- Ferocious Combatant's Ironskin Cloak (A)
 						i(145974),	-- Ferocious Combatant's Ironskin Gloves (A)
@@ -2994,7 +2995,7 @@ _.PVP =
 						i(145982),	-- Ferocious Combatant's Ironskin Tunic (A)
 						i(145986),	-- Ferocious Combatant's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(145880),	-- Ferocious Combatant's Greatcloak of Faith (A)
 						i(145994),	-- Ferocious Combatant's Scaled Chestpiece (A)
 						i(145998),	-- Ferocious Combatant's Scaled Gauntlets (A)
@@ -3005,7 +3006,7 @@ _.PVP =
 						i(146004),	-- Ferocious Combatant's Scaled Shoulders (A)
 						i(146008),	-- Ferocious Combatant's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(145882),	-- Ferocious Combatant's Drape of Piety (A)
 						i(146024),	-- Ferocious Combatant's Satin Bracers (A)
 						i(146022),	-- Ferocious Combatant's Satin Cord (A)
@@ -3016,7 +3017,7 @@ _.PVP =
 						i(146018),	-- Ferocious Combatant's Satin Robe (A)
 						i(146010),	-- Ferocious Combatant's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(146044),	-- Ferocious Combatant's Leather Belt (A)
 						i(146036),	-- Ferocious Combatant's Leather Gloves (A)
 						i(146038),	-- Ferocious Combatant's Leather Helm (A)
@@ -3027,7 +3028,7 @@ _.PVP =
 						i(146046),	-- Ferocious Combatant's Leather Wristguards (A)
 						i(145884),	-- Ferocious Combatant's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(146062),	-- Ferocious Combatant's Ringmail Armband (A)
 						i(146048),	-- Ferocious Combatant's Ringmail Armor (A)
 						i(146050),	-- Ferocious Combatant's Ringmail Boots (A)
@@ -3038,7 +3039,7 @@ _.PVP =
 						i(146058),	-- Ferocious Combatant's Ringmail Spaulders (A)
 						i(145886),	-- Ferocious Combatant's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(146092),	-- Ferocious Combatant's Felweave Amice (A)
 						i(146096),	-- Ferocious Combatant's Felweave Bracers (A)
 						i(145888),	-- Ferocious Combatant's Felweave Cloak (A)
@@ -3049,7 +3050,7 @@ _.PVP =
 						i(146082),	-- Ferocious Combatant's Felweave Treads (A)
 						i(146088),	-- Ferocious Combatant's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(145890),	-- Ferocious Combatant's Cloak of Battle (A)
 						i(146098),	-- Ferocious Combatant's Plate Chestpiece (A)
 						i(146102),	-- Ferocious Combatant's Plate Gauntlets (A)
@@ -3115,7 +3116,7 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(145376),	-- Ferocious Gladiator's Dreadcloak (A)
 						i(145400),	-- Ferocious Gladiator's Dreadplate Chestpiece (A)
 						i(145404),	-- Ferocious Gladiator's Dreadplate Gauntlets (A)
@@ -3126,7 +3127,7 @@ _.PVP =
 						i(145410),	-- Ferocious Gladiator's Dreadplate Shoulders (A)
 						i(145414),	-- Ferocious Gladiator's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(145378),	-- Ferocious Gladiator's Demonthread Cloak (A)
 						i(145428),	-- Ferocious Gladiator's Felskin Belt (A)
 						i(145418),	-- Ferocious Gladiator's Felskin Boots (A)
@@ -3137,7 +3138,7 @@ _.PVP =
 						i(145416),	-- Ferocious Gladiator's Felskin Tunic (A)
 						i(145430),	-- Ferocious Gladiator's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(145444),	-- Ferocious Gladiator's Dragonhide Belt (A)
 						i(145380),	-- Ferocious Gladiator's Dragonhide Cloak (A)
 						i(145436),	-- Ferocious Gladiator's Dragonhide Gloves (A)
@@ -3148,7 +3149,7 @@ _.PVP =
 						i(145442),	-- Ferocious Gladiator's Dragonhide Spaulders (A)
 						i(145446),	-- Ferocious Gladiator's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(145462),	-- Ferocious Gladiator's Chain Armband (A)
 						i(145448),	-- Ferocious Gladiator's Chain Armor (A)
 						i(145460),	-- Ferocious Gladiator's Chain Clasp (A)
@@ -3159,7 +3160,7 @@ _.PVP =
 						i(145450),	-- Ferocious Gladiator's Chain Treads (A)
 						i(145382),	-- Ferocious Gladiator's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(145474),	-- Ferocious Gladiator's Silk Amice (A)
 						i(145478),	-- Ferocious Gladiator's Silk Bracers (A)
 						i(145476),	-- Ferocious Gladiator's Silk Cord (A)
@@ -3170,7 +3171,7 @@ _.PVP =
 						i(145470),	-- Ferocious Gladiator's Silk Trousers (A)
 						i(145384),	-- Ferocious Gladiator's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(145386),	-- Ferocious Gladiator's Ironskin Cloak (A)
 						i(145482),	-- Ferocious Gladiator's Ironskin Gloves (A)
 						i(145484),	-- Ferocious Gladiator's Ironskin Helm (A)
@@ -3180,7 +3181,7 @@ _.PVP =
 						i(145490),	-- Ferocious Gladiator's Ironskin Tunic (A)
 						i(145494),	-- Ferocious Gladiator's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(145388),	-- Ferocious Gladiator's Greatcloak of Faith (A)
 						i(145511),	-- Ferocious Gladiator's Scaled Breastplate (A)
 						i(145505),	-- Ferocious Gladiator's Scaled Gauntlets (A)
@@ -3191,7 +3192,7 @@ _.PVP =
 						i(145512),	-- Ferocious Gladiator's Scaled Shoulders (A)
 						i(145516),	-- Ferocious Gladiator's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(145390),	-- Ferocious Gladiator's Drape of Piety (A)
 						i(145532),	-- Ferocious Gladiator's Satin Bracers (A)
 						i(145530),	-- Ferocious Gladiator's Satin Cord (A)
@@ -3202,7 +3203,7 @@ _.PVP =
 						i(145526),	-- Ferocious Gladiator's Satin Robe (A)
 						i(145518),	-- Ferocious Gladiator's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(145552),	-- Ferocious Gladiator's Leather Belt (A)
 						i(145544),	-- Ferocious Gladiator's Leather Gloves (A)
 						i(145546),	-- Ferocious Gladiator's Leather Helm (A)
@@ -3213,7 +3214,7 @@ _.PVP =
 						i(145554),	-- Ferocious Gladiator's Leather Wristguards (A)
 						i(145392),	-- Ferocious Gladiator's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(145570),	-- Ferocious Gladiator's Ringmail Armband (A)
 						i(145556),	-- Ferocious Gladiator's Ringmail Armor (A)
 						i(145558),	-- Ferocious Gladiator's Ringmail Boots (A)
@@ -3224,7 +3225,7 @@ _.PVP =
 						i(145566),	-- Ferocious Gladiator's Ringmail Spaulders (A)
 						i(145394),	-- Ferocious Gladiator's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(145600),	-- Ferocious Gladiator's Felweave Amice (A)
 						i(145604),	-- Ferocious Gladiator's Felweave Bracers (A)
 						i(145396),	-- Ferocious Gladiator's Felweave Cloak (A)
@@ -3235,7 +3236,7 @@ _.PVP =
 						i(145590),	-- Ferocious Gladiator's Felweave Treads (A)
 						i(145596),	-- Ferocious Gladiator's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(145398),	-- Ferocious Gladiator's Cloak of Battle (A)
 						i(145606),	-- Ferocious Gladiator's Plate Chestpiece (A)
 						i(145610),	-- Ferocious Gladiator's Plate Gauntlets (A)
@@ -3301,7 +3302,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(14, i(145622)),	-- Ferocious Gladiator's Dreadcloak (A)
 						un(14, i(145646)),	-- Ferocious Gladiator's Dreadplate Chestpiece (A)
 						un(14, i(145650)),	-- Ferocious Gladiator's Dreadplate Gauntlets (A)
@@ -3312,7 +3313,7 @@ _.PVP =
 						un(14, i(145656)),	-- Ferocious Gladiator's Dreadplate Shoulders (A)
 						un(14, i(145660)),	-- Ferocious Gladiator's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						un(14, i(145624)),	-- Ferocious Gladiator's Demonthread Cloak (A)
 						un(14, i(145674)),	-- Ferocious Gladiator's Felskin Belt (A)
 						un(14, i(145664)),	-- Ferocious Gladiator's Felskin Boots (A)
@@ -3323,7 +3324,7 @@ _.PVP =
 						un(14, i(145662)),	-- Ferocious Gladiator's Felskin Tunic (A)
 						un(14, i(145676)),	-- Ferocious Gladiator's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(14, i(145690)),	-- Ferocious Gladiator's Dragonhide Belt (A)
 						un(14, i(145626)),	-- Ferocious Gladiator's Dragonhide Cloak (A)
 						un(14, i(145682)),	-- Ferocious Gladiator's Dragonhide Gloves (A)
@@ -3334,7 +3335,7 @@ _.PVP =
 						un(14, i(145688)),	-- Ferocious Gladiator's Dragonhide Spaulders (A)
 						un(14, i(145692)),	-- Ferocious Gladiator's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(14, i(145708)),	-- Ferocious Gladiator's Chain Armband (A)
 						un(14, i(145694)),	-- Ferocious Gladiator's Chain Armor (A)
 						un(14, i(145706)),	-- Ferocious Gladiator's Chain Clasp (A)
@@ -3345,7 +3346,7 @@ _.PVP =
 						un(14, i(145696)),	-- Ferocious Gladiator's Chain Treads (A)
 						un(14, i(145628)),	-- Ferocious Gladiator's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(14, i(145720)),	-- Ferocious Gladiator's Silk Amice (A)
 						un(14, i(145724)),	-- Ferocious Gladiator's Silk Bracers (A)
 						un(14, i(145722)),	-- Ferocious Gladiator's Silk Cord (A)
@@ -3356,7 +3357,7 @@ _.PVP =
 						un(14, i(145716)),	-- Ferocious Gladiator's Silk Trousers (A)
 						un(14, i(145630)),	-- Ferocious Gladiator's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(14, i(145738)),	-- Ferocious Gladiator's Ironskin Belt (A)
 						un(14, i(145492)),	-- Ferocious Gladiator's Ironskin Belt (A)
 						un(14, i(145632)),	-- Ferocious Gladiator's Ironskin Cloak (A)
@@ -3368,7 +3369,7 @@ _.PVP =
 						un(14, i(145736)),	-- Ferocious Gladiator's Ironskin Tunic (A)
 						un(14, i(145740)),	-- Ferocious Gladiator's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(14, i(145634)),	-- Ferocious Gladiator's Greatcloak of Faith (A)
 						un(14, i(145748)),	-- Ferocious Gladiator's Scaled Breastplate (A)
 						un(14, i(145752)),	-- Ferocious Gladiator's Scaled Gauntlets (A)
@@ -3379,7 +3380,7 @@ _.PVP =
 						un(14, i(145758)),	-- Ferocious Gladiator's Scaled Shoulders (A)
 						un(14, i(145762)),	-- Ferocious Gladiator's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(14, i(145636)),	-- Ferocious Gladiator's Drape of Piety (A)
 						un(14, i(145778)),	-- Ferocious Gladiator's Satin Bracers (A)
 						un(14, i(145776)),	-- Ferocious Gladiator's Satin Cord (A)
@@ -3390,7 +3391,7 @@ _.PVP =
 						un(14, i(145772)),	-- Ferocious Gladiator's Satin Robe (A)
 						un(14, i(145764)),	-- Ferocious Gladiator's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(14, i(145798)),	-- Ferocious Gladiator's Leather Belt (A)
 						un(14, i(145790)),	-- Ferocious Gladiator's Leather Gloves (A)
 						un(14, i(145792)),	-- Ferocious Gladiator's Leather Helm (A)
@@ -3401,7 +3402,7 @@ _.PVP =
 						un(14, i(145800)),	-- Ferocious Gladiator's Leather Wristguards (A)
 						un(14, i(145638)),	-- Ferocious Gladiator's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(14, i(145816)),	-- Ferocious Gladiator's Ringmail Armband (A)
 						un(14, i(145802)),	-- Ferocious Gladiator's Ringmail Armor (A)
 						un(14, i(145804)),	-- Ferocious Gladiator's Ringmail Boots (A)
@@ -3412,7 +3413,7 @@ _.PVP =
 						un(14, i(145812)),	-- Ferocious Gladiator's Ringmail Spaulders (A)
 						un(14, i(145640)),	-- Ferocious Gladiator's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(14, i(145846)),	-- Ferocious Gladiator's Felweave Amice (A)
 						un(14, i(145850)),	-- Ferocious Gladiator's Felweave Bracers (A)
 						un(14, i(145642)),	-- Ferocious Gladiator's Felweave Cloak (A)
@@ -3423,7 +3424,7 @@ _.PVP =
 						un(14, i(145836)),	-- Ferocious Gladiator's Felweave Treads (A)
 						un(14, i(145842)),	-- Ferocious Gladiator's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(14, i(145644)),	-- Ferocious Gladiator's Cloak of Battle (A)
 						un(14, i(145852)),	-- Ferocious Gladiator's Plate Chestpiece (A)
 						un(14, i(145856)),	-- Ferocious Gladiator's Plate Gauntlets (A)
@@ -3459,7 +3460,7 @@ _.PVP =
 			}),
 			n(-9913, {	-- Horde
 				n(-660, {	-- Aspirant / Combatant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(145869),	-- Ferocious Combatant's Dreadcloak (H)
 						i(145893),	-- Ferocious Combatant's Dreadplate Chestpiece (H)
 						i(145897),	-- Ferocious Combatant's Dreadplate Gauntlets (H)
@@ -3470,7 +3471,7 @@ _.PVP =
 						i(145903),	-- Ferocious Combatant's Dreadplate Shoulders (H)
 						i(145907),	-- Ferocious Combatant's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(145871),	-- Ferocious Combatant's Demonthread Cloak (H)
 						i(145921),	-- Ferocious Combatant's Felskin Belt (H)
 						i(145911),	-- Ferocious Combatant's Felskin Boots (H)
@@ -3481,7 +3482,7 @@ _.PVP =
 						i(145909),	-- Ferocious Combatant's Felskin Tunic (H)
 						i(145923),	-- Ferocious Combatant's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(145937),	-- Ferocious Combatant's Dragonhide Belt (H)
 						i(145873),	-- Ferocious Combatant's Dragonhide Cloak (H)
 						i(145929),	-- Ferocious Combatant's Dragonhide Gloves (H)
@@ -3492,7 +3493,7 @@ _.PVP =
 						i(145925),	-- Ferocious Combatant's Dragonhide Tunic (H)
 						i(145939),	-- Ferocious Combatant's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(145955),	-- Ferocious Combatant's Chain Armband (H)
 						i(145941),	-- Ferocious Combatant's Chain Armor (H)
 						i(145953),	-- Ferocious Combatant's Chain Clasp (H)
@@ -3503,7 +3504,7 @@ _.PVP =
 						i(145943),	-- Ferocious Combatant's Chain Treads (H)
 						i(145875),	-- Ferocious Combatant's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(145967),	-- Ferocious Combatant's Silk Amice (H)
 						i(145971),	-- Ferocious Combatant's Silk Bracers (H)
 						i(145969),	-- Ferocious Combatant's Silk Cord (H)
@@ -3514,7 +3515,7 @@ _.PVP =
 						i(145963),	-- Ferocious Combatant's Silk Trousers (H)
 						i(145877),	-- Ferocious Combatant's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(145985),	-- Ferocious Combatant's Ironskin Belt (H)
 						i(145879),	-- Ferocious Combatant's Ironskin Cloak (H)
 						i(145975),	-- Ferocious Combatant's Ironskin Gloves (H)
@@ -3525,7 +3526,7 @@ _.PVP =
 						i(145983),	-- Ferocious Combatant's Ironskin Tunic (H)
 						i(145987),	-- Ferocious Combatant's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(145881),	-- Ferocious Combatant's Greatcloak of Faith (H)
 						i(145995),	-- Ferocious Combatant's Scaled Chestpiece (H)
 						i(145999),	-- Ferocious Combatant's Scaled Gauntlets (H)
@@ -3536,7 +3537,7 @@ _.PVP =
 						i(146005),	-- Ferocious Combatant's Scaled Shoulders (H)
 						i(146009),	-- Ferocious Combatant's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(145883),	-- Ferocious Combatant's Drape of Piety (H)
 						i(146025),	-- Ferocious Combatant's Satin Bracers (H)
 						i(146023),	-- Ferocious Combatant's Satin Cord (H)
@@ -3547,7 +3548,7 @@ _.PVP =
 						i(146019),	-- Ferocious Combatant's Satin Robe (H)
 						i(146011),	-- Ferocious Combatant's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(145885),	-- Ferocious Combatant's Shadowcape (H)
 						i(146047),	-- Ferocious Combatant's Leather Wristguards (H)
 						i(146033),	-- Ferocious Combatant's Leather Tunic (H)
@@ -3558,7 +3559,7 @@ _.PVP =
 						i(146037),	-- Ferocious Combatant's Leather Gloves (H)
 						i(146045),	-- Ferocious Combatant's Leather Belt (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(146063),	-- Ferocious Combatant's Ringmail Armband (H)
 						i(146049),	-- Ferocious Combatant's Ringmail Armor (H)
 						i(146051),	-- Ferocious Combatant's Ringmail Boots (H)
@@ -3569,7 +3570,7 @@ _.PVP =
 						i(146059),	-- Ferocious Combatant's Ringmail Spaulders (H)
 						i(145887),	-- Ferocious Combatant's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(146093),	-- Ferocious Combatant's Felweave Amice (H)
 						i(146097),	-- Ferocious Combatant's Felweave Bracers (H)
 						i(145889),	-- Ferocious Combatant's Felweave Cloak (H)
@@ -3580,7 +3581,7 @@ _.PVP =
 						i(146083),	-- Ferocious Combatant's Felweave Treads (H)
 						i(146089),	-- Ferocious Combatant's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(145891),	-- Ferocious Combatant's Cloak of Battle (H)
 						i(146099),	-- Ferocious Combatant's Plate Chestpiece (H)
 						i(146103),	-- Ferocious Combatant's Plate Gauntlets (H)
@@ -3646,7 +3647,7 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(145377),	-- Ferocious Gladiator's Dreadcloak (H)
 						i(145401),	-- Ferocious Gladiator's Dreadplate Chestpiece (H)
 						i(145405),	-- Ferocious Gladiator's Dreadplate Gauntlets (H)
@@ -3657,7 +3658,7 @@ _.PVP =
 						i(145411),	-- Ferocious Gladiator's Dreadplate Shoulders (H)
 						i(145415),	-- Ferocious Gladiator's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(145379),	-- Ferocious Gladiator's Demonthread Cloak (H)
 						i(145429),	-- Ferocious Gladiator's Felskin Belt (H)
 						i(145419),	-- Ferocious Gladiator's Felskin Boots (H)
@@ -3668,7 +3669,7 @@ _.PVP =
 						i(145417),	-- Ferocious Gladiator's Felskin Tunic (H)
 						i(145431),	-- Ferocious Gladiator's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(145445),	-- Ferocious Gladiator's Dragonhide Belt (H)
 						i(145381),	-- Ferocious Gladiator's Dragonhide Cloak (H)
 						i(145437),	-- Ferocious Gladiator's Dragonhide Gloves (H)
@@ -3679,7 +3680,7 @@ _.PVP =
 						i(145443),	-- Ferocious Gladiator's Dragonhide Spaulders (H)
 						i(145447),	-- Ferocious Gladiator's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(145463),	-- Ferocious Gladiator's Chain Armband (H)
 						i(145449),	-- Ferocious Gladiator's Chain Armor (H)
 						i(145461),	-- Ferocious Gladiator's Chain Clasp (H)
@@ -3690,7 +3691,7 @@ _.PVP =
 						i(145451),	-- Ferocious Gladiator's Chain Treads (H)
 						i(145383),	-- Ferocious Gladiator's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(145475),	-- Ferocious Gladiator's Silk Amice (H)
 						i(145479),	-- Ferocious Gladiator's Silk Bracers (H)
 						i(145477),	-- Ferocious Gladiator's Silk Cord (H)
@@ -3701,7 +3702,7 @@ _.PVP =
 						i(145471),	-- Ferocious Gladiator's Silk Trousers (H)
 						i(145385),	-- Ferocious Gladiator's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(145493),	-- Ferocious Gladiator's Ironskin Belt (H)
 						i(145387),	-- Ferocious Gladiator's Ironskin Cloak (H)
 						i(145483),	-- Ferocious Gladiator's Ironskin Gloves (H)
@@ -3712,7 +3713,7 @@ _.PVP =
 						i(145491),	-- Ferocious Gladiator's Ironskin Tunic (H)
 						i(145495),	-- Ferocious Gladiator's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(145389),	-- Ferocious Gladiator's Greatcloak of Faith (H)
 						i(145502),	-- Ferocious Gladiator's Scaled Breastplate (H)
 						i(145506),	-- Ferocious Gladiator's Scaled Gauntlets (H)
@@ -3723,7 +3724,7 @@ _.PVP =
 						i(145513),	-- Ferocious Gladiator's Scaled Shoulders (H)
 						i(145517),	-- Ferocious Gladiator's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(145391),	-- Ferocious Gladiator's Drape of Piety (H)
 						i(145533),	-- Ferocious Gladiator's Satin Bracers (H)
 						i(145531),	-- Ferocious Gladiator's Satin Cord (H)
@@ -3734,7 +3735,7 @@ _.PVP =
 						i(145527),	-- Ferocious Gladiator's Satin Robe (H)
 						i(145519),	-- Ferocious Gladiator's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(145553),	-- Ferocious Gladiator's Leather Belt (H)
 						i(145545),	-- Ferocious Gladiator's Leather Gloves (H)
 						i(145547),	-- Ferocious Gladiator's Leather Helm (H)
@@ -3745,7 +3746,7 @@ _.PVP =
 						i(145555),	-- Ferocious Gladiator's Leather Wristguards (H)
 						i(145393),	-- Ferocious Gladiator's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(145571),	-- Ferocious Gladiator's Ringmail Armband (H)
 						i(145557),	-- Ferocious Gladiator's Ringmail Armor (H)
 						i(145559),	-- Ferocious Gladiator's Ringmail Boots (H)
@@ -3756,7 +3757,7 @@ _.PVP =
 						i(145567),	-- Ferocious Gladiator's Ringmail Spaulders (H)
 						i(145395),	-- Ferocious Gladiator's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(145601),	-- Ferocious Gladiator's Felweave Amice (H)
 						i(145605),	-- Ferocious Gladiator's Felweave Bracers (H)
 						i(145397),	-- Ferocious Gladiator's Felweave Cloak (H)
@@ -3767,7 +3768,7 @@ _.PVP =
 						i(145591),	-- Ferocious Gladiator's Felweave Treads (H)
 						i(145597),	-- Ferocious Gladiator's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(145399),	-- Ferocious Gladiator's Cloak of Battle (H)
 						i(145607),	-- Ferocious Gladiator's Plate Chestpiece (H)
 						i(145611),	-- Ferocious Gladiator's Plate Gauntlets (H)
@@ -3833,7 +3834,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(14, i(145623)),	-- Ferocious Gladiator's Dreadcloak (H)
 						un(14, i(145647)),	-- Ferocious Gladiator's Dreadplate Chestpiece (H)
 						un(14, i(145651)),	-- Ferocious Gladiator's Dreadplate Gauntlets (H)
@@ -3844,7 +3845,7 @@ _.PVP =
 						un(14, i(145657)),	-- Ferocious Gladiator's Dreadplate Shoulders (H)
 						un(14, i(145661)),	-- Ferocious Gladiator's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						un(14, i(145625)),	-- Ferocious Gladiator's Demonthread Cloak (H)
 						un(14, i(145675)),	-- Ferocious Gladiator's Felskin Belt (H)
 						un(14, i(145665)),	-- Ferocious Gladiator's Felskin Boots (H)
@@ -3855,7 +3856,7 @@ _.PVP =
 						un(14, i(145663)),	-- Ferocious Gladiator's Felskin Tunic (H)
 						un(14, i(145677)),	-- Ferocious Gladiator's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(14, i(145691)),	-- Ferocious Gladiator's Dragonhide Belt (H)
 						un(14, i(145627)),	-- Ferocious Gladiator's Dragonhide Cloak (H)
 						un(14, i(145683)),	-- Ferocious Gladiator's Dragonhide Gloves (H)
@@ -3866,7 +3867,7 @@ _.PVP =
 						un(14, i(145689)),	-- Ferocious Gladiator's Dragonhide Spaulders (H)
 						un(14, i(145693)),	-- Ferocious Gladiator's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(14, i(145709)),	-- Ferocious Gladiator's Chain Armband (H)
 						un(14, i(145695)),	-- Ferocious Gladiator's Chain Armor (H)
 						un(14, i(145707)),	-- Ferocious Gladiator's Chain Clasp (H)
@@ -3877,7 +3878,7 @@ _.PVP =
 						un(14, i(145697)),	-- Ferocious Gladiator's Chain Treads (H)
 						un(14, i(145629)),	-- Ferocious Gladiator's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(14, i(145721)),	-- Ferocious Gladiator's Silk Amice (H)
 						un(14, i(145725)),	-- Ferocious Gladiator's Silk Bracers (H)
 						un(14, i(145723)),	-- Ferocious Gladiator's Silk Cord (H)
@@ -3888,7 +3889,7 @@ _.PVP =
 						un(14, i(145717)),	-- Ferocious Gladiator's Silk Trousers (H)
 						un(14, i(145631)),	-- Ferocious Gladiator's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(14, i(145739)),	-- Ferocious Gladiator's Ironskin Belt (H)
 						un(14, i(145633)),	-- Ferocious Gladiator's Ironskin Cloak (H)
 						un(14, i(145729)),	-- Ferocious Gladiator's Ironskin Gloves (H)
@@ -3899,7 +3900,7 @@ _.PVP =
 						un(14, i(145737)),	-- Ferocious Gladiator's Ironskin Tunic (H)
 						un(14, i(145741)),	-- Ferocious Gladiator's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(14, i(145635)),	-- Ferocious Gladiator's Greatcloak of Faith (H)
 						un(14, i(145749)),	-- Ferocious Gladiator's Scaled Breastplate (H)
 						un(14, i(145753)),	-- Ferocious Gladiator's Scaled Gauntlets (H)
@@ -3910,7 +3911,7 @@ _.PVP =
 						un(14, i(145759)),	-- Ferocious Gladiator's Scaled Shoulders (H)
 						un(14, i(145763)),	-- Ferocious Gladiator's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(14, i(145637)),	-- Ferocious Gladiator's Drape of Piety (H)
 						un(14, i(145779)),	-- Ferocious Gladiator's Satin Bracers (H)
 						un(14, i(145777)),	-- Ferocious Gladiator's Satin Cord (H)
@@ -3921,7 +3922,7 @@ _.PVP =
 						un(14, i(145773)),	-- Ferocious Gladiator's Satin Robe (H)
 						un(14, i(145765)),	-- Ferocious Gladiator's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(14, i(145799)),	-- Ferocious Gladiator's Leather Belt (H)
 						un(14, i(145791)),	-- Ferocious Gladiator's Leather Gloves (H)
 						un(14, i(145793)),	-- Ferocious Gladiator's Leather Helm (H)
@@ -3932,7 +3933,7 @@ _.PVP =
 						un(14, i(145801)),	-- Ferocious Gladiator's Leather Wristguards (H)
 						un(14, i(145639)),	-- Ferocious Gladiator's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(14, i(145817)),	-- Ferocious Gladiator's Ringmail Armband (H)
 						un(14, i(145803)),	-- Ferocious Gladiator's Ringmail Armor (H)
 						un(14, i(145805)),	-- Ferocious Gladiator's Ringmail Boots (H)
@@ -3943,7 +3944,7 @@ _.PVP =
 						un(14, i(145813)),	-- Ferocious Gladiator's Ringmail Spaulders (H)
 						un(14, i(145641)),	-- Ferocious Gladiator's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(14, i(145847)),	-- Ferocious Gladiator's Felweave Amice (H)
 						un(14, i(145851)),	-- Ferocious Gladiator's Felweave Bracers (H)
 						un(14, i(145643)),	-- Ferocious Gladiator's Felweave Cloak (H)
@@ -3954,7 +3955,7 @@ _.PVP =
 						un(14, i(145837)),	-- Ferocious Gladiator's Felweave Treads (H)
 						un(14, i(145843)),	-- Ferocious Gladiator's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(14, i(145645)),	-- Ferocious Gladiator's Cloak of Battle (H)
 						un(14, i(145853)),	-- Ferocious Gladiator's Plate Chestpiece (H)
 						un(14, i(145857)),	-- Ferocious Gladiator's Plate Gauntlets (H)
@@ -3992,7 +3993,7 @@ _.PVP =
 		n(-686, {	-- Fierce Gladiator: Legion Season 5
 			n(-9914, {	-- Alliance
 				n(-660, {	-- Aspirant / Combatant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(149505),	-- Fierce Combatant's Dreadcloak (A)
 						i(149529),	-- Fierce Combatant's Dreadplate Chestpiece (A)
 						i(149533),	-- Fierce Combatant's Dreadplate Gauntlets (A)
@@ -4003,7 +4004,7 @@ _.PVP =
 						i(149539),	-- Fierce Combatant's Dreadplate Shoulders (A)
 						i(149543),	-- Fierce Combatant's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(149507),	-- Fierce Combatant's Demonthread Cloak (A)
 						i(149557),	-- Fierce Combatant's Felskin Belt (A)
 						i(149547),	-- Fierce Combatant's Felskin Boots (A)
@@ -4014,7 +4015,7 @@ _.PVP =
 						i(149545),	-- Fierce Combatant's Felskin Tunic (A)
 						i(149559),	-- Fierce Combatant's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(149573),	-- Fierce Combatant's Dragonhide Belt (A)
 						i(149509),	-- Fierce Combatant's Dragonhide Cloak (A)
 						i(149565),	-- Fierce Combatant's Dragonhide Gloves (A)
@@ -4025,7 +4026,7 @@ _.PVP =
 						i(149561),	-- Fierce Combatant's Dragonhide Tunic (A)
 						i(149576),	-- Fierce Combatant's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(149592),	-- Fierce Combatant's Chain Armband (A)
 						i(149578),	-- Fierce Combatant's Chain Armor (A)
 						i(149590),	-- Fierce Combatant's Chain Clasp (A)
@@ -4036,7 +4037,7 @@ _.PVP =
 						i(149580),	-- Fierce Combatant's Chain Treads (A)
 						i(149511),	-- Fierce Combatant's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(149604),	-- Fierce Combatant's Silk Amice (A)
 						i(149608),	-- Fierce Combatant's Silk Bracers (A)
 						i(149606),	-- Fierce Combatant's Silk Cord (A)
@@ -4047,7 +4048,7 @@ _.PVP =
 						i(149600),	-- Fierce Combatant's Silk Trousers (A)
 						i(149513),	-- Fierce Combatant's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(149622),	-- Fierce Combatant's Ironskin Belt (A)
 						i(149515),	-- Fierce Combatant's Ironskin Cloak (A)
 						i(149612),	-- Fierce Combatant's Ironskin Gloves (A)
@@ -4058,7 +4059,7 @@ _.PVP =
 						i(149620),	-- Fierce Combatant's Ironskin Tunic (A)
 						i(149624),	-- Fierce Combatant's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(149517),	-- Fierce Combatant's Greatcloak of Faith (A)
 						i(149632),	-- Fierce Combatant's Scaled Chestpiece (A)
 						i(149636),	-- Fierce Combatant's Scaled Gauntlets (A)
@@ -4069,7 +4070,7 @@ _.PVP =
 						i(149642),	-- Fierce Combatant's Scaled Shoulders (A)
 						i(149646),	-- Fierce Combatant's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(149519),	-- Fierce Combatant's Drape of Piety (A)
 						i(149662),	-- Fierce Combatant's Satin Bracers (A)
 						i(149660),	-- Fierce Combatant's Satin Cord (A)
@@ -4080,7 +4081,7 @@ _.PVP =
 						i(149656),	-- Fierce Combatant's Satin Robe (A)
 						i(149648),	-- Fierce Combatant's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(149682),	-- Fierce Combatant's Leather Belt (A)
 						i(149674),	-- Fierce Combatant's Leather Gloves (A)
 						i(149676),	-- Fierce Combatant's Leather Helm (A)
@@ -4091,7 +4092,7 @@ _.PVP =
 						i(149684),	-- Fierce Combatant's Leather Wristguards (A)
 						i(149521),	-- Fierce Combatant's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(149700),	-- Fierce Combatant's Ringmail Armband (A)
 						i(149688),	-- Fierce Combatant's Ringmail Boots (A)
 						i(149698),	-- Fierce Combatant's Ringmail Clasp (A)
@@ -4102,7 +4103,7 @@ _.PVP =
 						i(149696),	-- Fierce Combatant's Ringmail Spaulders (A)
 						i(149523),	-- Fierce Combatant's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(149730),	-- Fierce Combatant's Felweave Amice (A)
 						i(149734),	-- Fierce Combatant's Felweave Bracers (A)
 						i(149525),	-- Fierce Combatant's Felweave Cloak (A)
@@ -4113,7 +4114,7 @@ _.PVP =
 						i(149720),	-- Fierce Combatant's Felweave Treads (A)
 						i(149726),	-- Fierce Combatant's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(149527),	-- Fierce Combatant's Cloak of Battle (A)
 						i(149736),	-- Fierce Combatant's Plate Chestpiece (A)
 						i(149740),	-- Fierce Combatant's Plate Gauntlets (A)
@@ -4179,7 +4180,7 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(147909),	-- Fierce Gladiator's Dreadcloak (A)
 						i(147933),	-- Fierce Gladiator's Dreadplate Chestpiece (A)
 						i(147937),	-- Fierce Gladiator's Dreadplate Gauntlets (A)
@@ -4190,7 +4191,7 @@ _.PVP =
 						i(147943),	-- Fierce Gladiator's Dreadplate Shoulders (A)
 						i(147947),	-- Fierce Gladiator's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(147911),	-- Fierce Gladiator's Demonthread Cloak (A)
 						i(147961),	-- Fierce Gladiator's Felskin Belt (A)
 						i(147951),	-- Fierce Gladiator's Felskin Boots (A)
@@ -4201,7 +4202,7 @@ _.PVP =
 						i(147949),	-- Fierce Gladiator's Felskin Tunic (A)
 						i(147963),	-- Fierce Gladiator's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(147977),	-- Fierce Gladiator's Dragonhide Belt (A)
 						i(147913),	-- Fierce Gladiator's Dragonhide Cloak (A)
 						i(147969),	-- Fierce Gladiator's Dragonhide Gloves (A)
@@ -4212,7 +4213,7 @@ _.PVP =
 						i(147965),	-- Fierce Gladiator's Dragonhide Vest (A)
 						i(147979),	-- Fierce Gladiator's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(147995),	-- Fierce Gladiator's Chain Armband (A)
 						i(147981),	-- Fierce Gladiator's Chain Armor (A)
 						i(147993),	-- Fierce Gladiator's Chain Clasp (A)
@@ -4223,7 +4224,7 @@ _.PVP =
 						i(147983),	-- Fierce Gladiator's Chain Treads (A)
 						i(147915),	-- Fierce Gladiator's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(148007),	-- Fierce Gladiator's Silk Amice (A)
 						i(148011),	-- Fierce Gladiator's Silk Bracers (A)
 						i(148009),	-- Fierce Gladiator's Silk Cord (A)
@@ -4234,7 +4235,7 @@ _.PVP =
 						i(148005),	-- Fierce Gladiator's Silk Tunic (A)
 						i(147917),	-- Fierce Gladiator's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(148025),	-- Fierce Gladiator's Ironskin Belt (A)
 						i(147919),	-- Fierce Gladiator's Ironskin Cloak (A)
 						i(148015),	-- Fierce Gladiator's Ironskin Gloves (A)
@@ -4245,7 +4246,7 @@ _.PVP =
 						i(148023),	-- Fierce Gladiator's Ironskin Tunic (A)
 						i(148027),	-- Fierce Gladiator's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(147921),	-- Fierce Gladiator's Greatcloak of Faith (A)
 						i(148044),	-- Fierce Gladiator's Scaled Breastplate (A)
 						i(148038),	-- Fierce Gladiator's Scaled Gauntlets (A)
@@ -4256,7 +4257,7 @@ _.PVP =
 						i(148045),	-- Fierce Gladiator's Scaled Shoulders (A)
 						i(148049),	-- Fierce Gladiator's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(147923),	-- Fierce Gladiator's Drape of Piety (A)
 						i(148065),	-- Fierce Gladiator's Satin Bracers (A)
 						i(148063),	-- Fierce Gladiator's Satin Cord (A)
@@ -4267,7 +4268,7 @@ _.PVP =
 						i(148059),	-- Fierce Gladiator's Satin Robe (A)
 						i(148051),	-- Fierce Gladiator's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(148085),	-- Fierce Gladiator's Leather Belt (A)
 						i(148077),	-- Fierce Gladiator's Leather Gloves (A)
 						i(148079),	-- Fierce Gladiator's Leather Helm (A)
@@ -4278,7 +4279,7 @@ _.PVP =
 						i(148087),	-- Fierce Gladiator's Leather Wristguards (A)
 						i(147925),	-- Fierce Gladiator's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(148103),	-- Fierce Gladiator's Ringmail Armband (A)
 						i(148089),	-- Fierce Gladiator's Ringmail Armor (A)
 						i(148091),	-- Fierce Gladiator's Ringmail Boots (A)
@@ -4289,7 +4290,7 @@ _.PVP =
 						i(148099),	-- Fierce Gladiator's Ringmail Spaulders (A)
 						i(147927),	-- Fierce Gladiator's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(148133),	-- Fierce Gladiator's Felweave Amice (A)
 						i(148137),	-- Fierce Gladiator's Felweave Bracers (A)
 						i(147929),	-- Fierce Gladiator's Felweave Cloak (A)
@@ -4300,7 +4301,7 @@ _.PVP =
 						i(148123),	-- Fierce Gladiator's Felweave Treads (A)
 						i(148129),	-- Fierce Gladiator's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(147931),	-- Fierce Gladiator's Cloak of Battle (A)
 						i(148139),	-- Fierce Gladiator's Plate Chestpiece (A)
 						i(148143),	-- Fierce Gladiator's Plate Gauntlets (A)
@@ -4334,7 +4335,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(14, i(148155)),	-- Fierce Gladiator's Dreadcloak (A)
 						un(14, i(148179)),	-- Fierce Gladiator's Dreadplate Chestpiece (A)
 						un(14, i(148183)),	-- Fierce Gladiator's Dreadplate Gauntlets (A)
@@ -4345,7 +4346,7 @@ _.PVP =
 						un(14, i(148189)),	-- Fierce Gladiator's Dreadplate Shoulders (A)
 						un(14, i(148193)),	-- Fierce Gladiator's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						un(14, i(148157)),	-- Fierce Gladiator's Demonthread Cloak (A)
 						un(14, i(148207)),	-- Fierce Gladiator's Felskin Belt (A)
 						un(14, i(148197)),	-- Fierce Gladiator's Felskin Boots (A)
@@ -4356,7 +4357,7 @@ _.PVP =
 						un(14, i(148195)),	-- Fierce Gladiator's Felskin Tunic (A)
 						un(14, i(148209)),	-- Fierce Gladiator's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(14, i(148223)),	-- Fierce Gladiator's Dragonhide Belt (A)
 						un(14, i(148159)),	-- Fierce Gladiator's Dragonhide Cloak (A)
 						un(14, i(148215)),	-- Fierce Gladiator's Dragonhide Gloves (A)
@@ -4367,7 +4368,7 @@ _.PVP =
 						un(14, i(148211)),	-- Fierce Gladiator's Dragonhide Vest (A)
 						un(14, i(148225)),	-- Fierce Gladiator's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(14, i(148241)),	-- Fierce Gladiator's Chain Armband (A)
 						un(14, i(148227)),	-- Fierce Gladiator's Chain Armor (A)
 						un(14, i(148239)),	-- Fierce Gladiator's Chain Clasp (A)
@@ -4378,7 +4379,7 @@ _.PVP =
 						un(14, i(148229)),	-- Fierce Gladiator's Chain Treads (A)
 						un(14, i(148161)),	-- Fierce Gladiator's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(14, i(148253)),	-- Fierce Gladiator's Silk Amice (A)
 						un(14, i(148257)),	-- Fierce Gladiator's Silk Bracers (A)
 						un(14, i(148255)),	-- Fierce Gladiator's Silk Cord (A)
@@ -4389,7 +4390,7 @@ _.PVP =
 						un(14, i(148251)),	-- Fierce Gladiator's Silk Tunic (A)
 						un(14, i(148163)),	-- Fierce Gladiator's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(14, i(148271)),	-- Fierce Gladiator's Ironskin Belt (A)
 						un(14, i(148165)),	-- Fierce Gladiator's Ironskin Cloak (A)
 						un(14, i(148261)),	-- Fierce Gladiator's Ironskin Gloves (A)
@@ -4400,7 +4401,7 @@ _.PVP =
 						un(14, i(148269)),	-- Fierce Gladiator's Ironskin Tunic (A)
 						un(14, i(148273)),	-- Fierce Gladiator's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(14, i(148167)),	-- Fierce Gladiator's Greatcloak of Faith (A)
 						un(14, i(148281)),	-- Fierce Gladiator's Scaled Breastplate (A)
 						un(14, i(148285)),	-- Fierce Gladiator's Scaled Gauntlets (A)
@@ -4411,7 +4412,7 @@ _.PVP =
 						un(14, i(148291)),	-- Fierce Gladiator's Scaled Shoulders (A)
 						un(14, i(148295)),	-- Fierce Gladiator's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(14, i(148169)),	-- Fierce Gladiator's Drape of Piety (A)
 						un(14, i(148311)),	-- Fierce Gladiator's Satin Bracers (A)
 						un(14, i(148309)),	-- Fierce Gladiator's Satin Cord (A)
@@ -4422,7 +4423,7 @@ _.PVP =
 						un(14, i(148305)),	-- Fierce Gladiator's Satin Robe (A)
 						un(14, i(148297)),	-- Fierce Gladiator's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(14, i(148331)),	-- Fierce Gladiator's Leather Belt (A)
 						un(14, i(148323)),	-- Fierce Gladiator's Leather Gloves (A)
 						un(14, i(148325)),	-- Fierce Gladiator's Leather Helm (A)
@@ -4433,7 +4434,7 @@ _.PVP =
 						un(14, i(148333)),	-- Fierce Gladiator's Leather Wristguards (A)
 						un(14, i(148171)),	-- Fierce Gladiator's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(14, i(148349)),	-- Fierce Gladiator's Ringmail Armband (A)
 						un(14, i(148335)),	-- Fierce Gladiator's Ringmail Armor (A)
 						un(14, i(148337)),	-- Fierce Gladiator's Ringmail Boots (A)
@@ -4444,7 +4445,7 @@ _.PVP =
 						un(14, i(148345)),	-- Fierce Gladiator's Ringmail Spaulders (A)
 						un(14, i(148173)),	-- Fierce Gladiator's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(14, i(148379)),	-- Fierce Gladiator's Felweave Amice (A)
 						un(14, i(148383)),	-- Fierce Gladiator's Felweave Bracers (A)
 						un(14, i(148175)),	-- Fierce Gladiator's Felweave Cloak (A)
@@ -4455,7 +4456,7 @@ _.PVP =
 						un(14, i(148369)),	-- Fierce Gladiator's Felweave Treads (A)
 						un(14, i(148375)),	-- Fierce Gladiator's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(14, i(148177)),	-- Fierce Gladiator's Cloak of Battle (A)
 						un(14, i(148385)),	-- Fierce Gladiator's Plate Chestpiece (A)
 						un(14, i(148389)),	-- Fierce Gladiator's Plate Gauntlets (A)
@@ -4491,7 +4492,7 @@ _.PVP =
 			}),
 			n(-9913, {	-- Horde
 				n(-660, {	-- Aspirant / Combatant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(149506),	-- Fierce Combatant's Dreadcloak (H)
 						i(149530),	-- Fierce Combatant's Dreadplate Chestpiece (H)
 						i(149534),	-- Fierce Combatant's Dreadplate Gauntlets (H)
@@ -4502,7 +4503,7 @@ _.PVP =
 						i(149540),	-- Fierce Combatant's Dreadplate Shoulders (H)
 						i(149544),	-- Fierce Combatant's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(149508),	-- Fierce Combatant's Demonthread Cloak (H)
 						i(149558),	-- Fierce Combatant's Felskin Belt (H)
 						i(149548),	-- Fierce Combatant's Felskin Boots (H)
@@ -4513,7 +4514,7 @@ _.PVP =
 						i(149546),	-- Fierce Combatant's Felskin Tunic (H)
 						i(149560),	-- Fierce Combatant's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(149575),	-- Fierce Combatant's Dragonhide Belt (H)
 						i(149510),	-- Fierce Combatant's Dragonhide Cloak (H)
 						i(149566),	-- Fierce Combatant's Dragonhide Gloves (H)
@@ -4524,7 +4525,7 @@ _.PVP =
 						i(149562),	-- Fierce Combatant's Dragonhide Tunic (H)
 						i(149577),	-- Fierce Combatant's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(149593),	-- Fierce Combatant's Chain Armband (H)
 						i(149579),	-- Fierce Combatant's Chain Armor (H)
 						i(149591),	-- Fierce Combatant's Chain Clasp (H)
@@ -4535,7 +4536,7 @@ _.PVP =
 						i(149581),	-- Fierce Combatant's Chain Treads (H)
 						i(149512),	-- Fierce Combatant's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(149605),	-- Fierce Combatant's Silk Amice (H)
 						i(149609),	-- Fierce Combatant's Silk Bracers (H)
 						i(149607),	-- Fierce Combatant's Silk Cord (H)
@@ -4546,7 +4547,7 @@ _.PVP =
 						i(149601),	-- Fierce Combatant's Silk Trousers (H)
 						i(149514),	-- Fierce Combatant's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(149623),	-- Fierce Combatant's Ironskin Belt (H)
 						i(149516),	-- Fierce Combatant's Ironskin Cloak (H)
 						i(149613),	-- Fierce Combatant's Ironskin Gloves (H)
@@ -4557,7 +4558,7 @@ _.PVP =
 						i(149621),	-- Fierce Combatant's Ironskin Tunic (H)
 						i(149625),	-- Fierce Combatant's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(149518),	-- Fierce Combatant's Greatcloak of Faith (H)
 						i(149633),	-- Fierce Combatant's Scaled Chestpiece (H)
 						i(149637),	-- Fierce Combatant's Scaled Gauntlets (H)
@@ -4568,7 +4569,7 @@ _.PVP =
 						i(149643),	-- Fierce Combatant's Scaled Shoulders (H)
 						i(149647),	-- Fierce Combatant's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(149520),	-- Fierce Combatant's Drape of Piety (H)
 						i(149663),	-- Fierce Combatant's Satin Bracers (H)
 						i(149661),	-- Fierce Combatant's Satin Cord (H)
@@ -4579,7 +4580,7 @@ _.PVP =
 						i(149657),	-- Fierce Combatant's Satin Robe (H)
 						i(149649),	-- Fierce Combatant's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(149683),	-- Fierce Combatant's Leather Belt (H)
 						i(149675),	-- Fierce Combatant's Leather Gloves (H)
 						i(149677),	-- Fierce Combatant's Leather Helm (H)
@@ -4590,7 +4591,7 @@ _.PVP =
 						i(149685),	-- Fierce Combatant's Leather Wristguards (H)
 						i(149522),	-- Fierce Combatant's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(149701),	-- Fierce Combatant's Ringmail Armband (H)
 						i(149689),	-- Fierce Combatant's Ringmail Boots (H)
 						i(149699),	-- Fierce Combatant's Ringmail Clasp (H)
@@ -4601,7 +4602,7 @@ _.PVP =
 						i(149697),	-- Fierce Combatant's Ringmail Spaulders (H)
 						i(149524),	-- Fierce Combatant's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(149731),	-- Fierce Combatant's Felweave Amice (H)
 						i(149735),	-- Fierce Combatant's Felweave Bracers (H)
 						i(149526),	-- Fierce Combatant's Felweave Cloak (H)
@@ -4612,7 +4613,7 @@ _.PVP =
 						i(149721),	-- Fierce Combatant's Felweave Treads (H)
 						i(149727),	-- Fierce Combatant's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(149751),	-- Fierce Combatant's Plate Wristplates (H)
 						i(149739),	-- Fierce Combatant's Plate Warboots (H)
 						i(149747),	-- Fierce Combatant's Plate Shoulders (H)
@@ -4678,7 +4679,7 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(147910),	-- Fierce Gladiator's Dreadcloak (H)
 						i(147934),	-- Fierce Gladiator's Dreadplate Chestpiece (H)
 						i(147938),	-- Fierce Gladiator's Dreadplate Gauntlets (H)
@@ -4689,7 +4690,7 @@ _.PVP =
 						i(147944),	-- Fierce Gladiator's Dreadplate Shoulders (H)
 						i(147948),	-- Fierce Gladiator's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(147912),	-- Fierce Gladiator's Demonthread Cloak (H)
 						i(147962),	-- Fierce Gladiator's Felskin Belt (H)
 						i(147952),	-- Fierce Gladiator's Felskin Boots (H)
@@ -4700,7 +4701,7 @@ _.PVP =
 						i(147950),	-- Fierce Gladiator's Felskin Tunic (H)
 						i(147964),	-- Fierce Gladiator's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(147978),	-- Fierce Gladiator's Dragonhide Belt (H)
 						i(147914),	-- Fierce Gladiator's Dragonhide Cloak (H)
 						i(147970),	-- Fierce Gladiator's Dragonhide Gloves (H)
@@ -4711,7 +4712,7 @@ _.PVP =
 						i(147966),	-- Fierce Gladiator's Dragonhide Vest (H)
 						i(147980),	-- Fierce Gladiator's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(147996),	-- Fierce Gladiator's Chain Armband (H)
 						i(147982),	-- Fierce Gladiator's Chain Armor (H)
 						i(147994),	-- Fierce Gladiator's Chain Clasp (H)
@@ -4722,7 +4723,7 @@ _.PVP =
 						i(147984),	-- Fierce Gladiator's Chain Treads (H)
 						i(147916),	-- Fierce Gladiator's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(148008),	-- Fierce Gladiator's Silk Amice (H)
 						i(148012),	-- Fierce Gladiator's Silk Bracers (H)
 						i(148010),	-- Fierce Gladiator's Silk Cord (H)
@@ -4733,7 +4734,7 @@ _.PVP =
 						i(148006),	-- Fierce Gladiator's Silk Tunic (H)
 						i(147918),	-- Fierce Gladiator's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(148026),	-- Fierce Gladiator's Ironskin Belt (H)
 						i(147920),	-- Fierce Gladiator's Ironskin Cloak (H)
 						i(148016),	-- Fierce Gladiator's Ironskin Gloves (H)
@@ -4744,7 +4745,7 @@ _.PVP =
 						i(148024),	-- Fierce Gladiator's Ironskin Tunic (H)
 						i(148028),	-- Fierce Gladiator's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(147922),	-- Fierce Gladiator's Greatcloak of Faith (H)
 						i(148035),	-- Fierce Gladiator's Scaled Breastplate (H)
 						i(148039),	-- Fierce Gladiator's Scaled Gauntlets (H)
@@ -4755,7 +4756,7 @@ _.PVP =
 						i(148046),	-- Fierce Gladiator's Scaled Shoulders (H)
 						i(148050),	-- Fierce Gladiator's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(147924),	-- Fierce Gladiator's Drape of Piety (H)
 						i(148066),	-- Fierce Gladiator's Satin Bracers (H)
 						i(148064),	-- Fierce Gladiator's Satin Cord (H)
@@ -4766,7 +4767,7 @@ _.PVP =
 						i(148060),	-- Fierce Gladiator's Satin Robe (H)
 						i(148052),	-- Fierce Gladiator's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(148086),	-- Fierce Gladiator's Leather Belt (H)
 						i(148078),	-- Fierce Gladiator's Leather Gloves (H)
 						i(148080),	-- Fierce Gladiator's Leather Helm (H)
@@ -4777,7 +4778,7 @@ _.PVP =
 						i(148088),	-- Fierce Gladiator's Leather Wristguards (H)
 						i(147926),	-- Fierce Gladiator's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(148104),	-- Fierce Gladiator's Ringmail Armband (H)
 						i(148090),	-- Fierce Gladiator's Ringmail Armor (H)
 						i(148092),	-- Fierce Gladiator's Ringmail Boots (H)
@@ -4788,7 +4789,7 @@ _.PVP =
 						i(148100),	-- Fierce Gladiator's Ringmail Spaulders (H)
 						i(147928),	-- Fierce Gladiator's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(148134),	-- Fierce Gladiator's Felweave Amice (H)
 						i(148138),	-- Fierce Gladiator's Felweave Bracers (H)
 						i(147930),	-- Fierce Gladiator's Felweave Cloak (H)
@@ -4799,7 +4800,7 @@ _.PVP =
 						i(148124),	-- Fierce Gladiator's Felweave Treads (H)
 						i(148130),	-- Fierce Gladiator's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(147932),	-- Fierce Gladiator's Cloak of Battle (H)
 						i(148140),	-- Fierce Gladiator's Plate Chestpiece (H)
 						i(148144),	-- Fierce Gladiator's Plate Gauntlets (H)
@@ -4833,7 +4834,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(14, i(148156)),	-- Fierce Gladiator's Dreadcloak (H)
 						un(14, i(148180)),	-- Fierce Gladiator's Dreadplate Chestpiece (H)
 						un(14, i(148184)),	-- Fierce Gladiator's Dreadplate Gauntlets (H)
@@ -4844,7 +4845,7 @@ _.PVP =
 						un(14, i(148190)),	-- Fierce Gladiator's Dreadplate Shoulders (H)
 						un(14, i(148194)),	-- Fierce Gladiator's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						un(14, i(148158)),	-- Fierce Gladiator's Demonthread Cloak (H)
 						un(14, i(148208)),	-- Fierce Gladiator's Felskin Belt (H)
 						un(14, i(148198)),	-- Fierce Gladiator's Felskin Boots (H)
@@ -4855,7 +4856,7 @@ _.PVP =
 						un(14, i(148196)),	-- Fierce Gladiator's Felskin Tunic (H)
 						un(14, i(148210)),	-- Fierce Gladiator's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(14, i(148224)),	-- Fierce Gladiator's Dragonhide Belt (H)
 						un(14, i(148160)),	-- Fierce Gladiator's Dragonhide Cloak (H)
 						un(14, i(148216)),	-- Fierce Gladiator's Dragonhide Gloves (H)
@@ -4866,7 +4867,7 @@ _.PVP =
 						un(14, i(148212)),	-- Fierce Gladiator's Dragonhide Vest (H)
 						un(14, i(148226)),	-- Fierce Gladiator's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(14, i(148242)),	-- Fierce Gladiator's Chain Armband (H)
 						un(14, i(148228)),	-- Fierce Gladiator's Chain Armor (H)
 						un(14, i(148240)),	-- Fierce Gladiator's Chain Clasp (H)
@@ -4877,7 +4878,7 @@ _.PVP =
 						un(14, i(148230)),	-- Fierce Gladiator's Chain Treads (H)
 						un(14, i(148162)),	-- Fierce Gladiator's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(14, i(148254)),	-- Fierce Gladiator's Silk Amice (H)
 						un(14, i(148258)),	-- Fierce Gladiator's Silk Bracers (H)
 						un(14, i(148256)),	-- Fierce Gladiator's Silk Cord (H)
@@ -4888,7 +4889,7 @@ _.PVP =
 						un(14, i(148252)),	-- Fierce Gladiator's Silk Tunic (H)
 						un(14, i(148164)),	-- Fierce Gladiator's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(14, i(148272)),	-- Fierce Gladiator's Ironskin Belt (H)
 						un(14, i(148166)),	-- Fierce Gladiator's Ironskin Cloak (H)
 						un(14, i(148262)),	-- Fierce Gladiator's Ironskin Gloves (H)
@@ -4899,7 +4900,7 @@ _.PVP =
 						un(14, i(148270)),	-- Fierce Gladiator's Ironskin Tunic (H)
 						un(14, i(148274)),	-- Fierce Gladiator's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(14, i(148168)),	-- Fierce Gladiator's Greatcloak of Faith (H)
 						un(14, i(148282)),	-- Fierce Gladiator's Scaled Breastplate (H)
 						un(14, i(148286)),	-- Fierce Gladiator's Scaled Gauntlets (H)
@@ -4910,7 +4911,7 @@ _.PVP =
 						un(14, i(148292)),	-- Fierce Gladiator's Scaled Shoulders (H)
 						un(14, i(148296)),	-- Fierce Gladiator's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(14, i(148170)),	-- Fierce Gladiator's Drape of Piety (H)
 						un(14, i(148312)),	-- Fierce Gladiator's Satin Bracers (H)
 						un(14, i(148310)),	-- Fierce Gladiator's Satin Cord (H)
@@ -4921,7 +4922,7 @@ _.PVP =
 						un(14, i(148306)),	-- Fierce Gladiator's Satin Robe (H)
 						un(14, i(148298)),	-- Fierce Gladiator's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(14, i(148332)),	-- Fierce Gladiator's Leather Belt (H)
 						un(14, i(148324)),	-- Fierce Gladiator's Leather Gloves (H)
 						un(14, i(148326)),	-- Fierce Gladiator's Leather Helm (H)
@@ -4932,7 +4933,7 @@ _.PVP =
 						un(14, i(148334)),	-- Fierce Gladiator's Leather Wristguards (H)
 						un(14, i(148172)),	-- Fierce Gladiator's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(14, i(148350)),	-- Fierce Gladiator's Ringmail Armband (H)
 						un(14, i(148336)),	-- Fierce Gladiator's Ringmail Armor (H)
 						un(14, i(148338)),	-- Fierce Gladiator's Ringmail Boots (H)
@@ -4943,7 +4944,7 @@ _.PVP =
 						un(14, i(148346)),	-- Fierce Gladiator's Ringmail Spaulders (H)
 						un(14, i(148174)),	-- Fierce Gladiator's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(14, i(148380)),	-- Fierce Gladiator's Felweave Amice (H)
 						un(14, i(148384)),	-- Fierce Gladiator's Felweave Bracers (H)
 						un(14, i(148176)),	-- Fierce Gladiator's Felweave Cloak (H)
@@ -4954,7 +4955,7 @@ _.PVP =
 						un(14, i(148370)),	-- Fierce Gladiator's Felweave Treads (H)
 						un(14, i(148376)),	-- Fierce Gladiator's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(14, i(148178)),	-- Fierce Gladiator's Cloak of Battle (H)
 						un(14, i(148386)),	-- Fierce Gladiator's Plate Chestpiece (H)
 						un(14, i(148390)),	-- Fierce Gladiator's Plate Gauntlets (H)
@@ -4992,7 +4993,7 @@ _.PVP =
 		n(-687, {	-- Dominant Gladiator: Legion Season 6
 			n(-9914, {	-- Alliance
 				n(-660, {	-- Aspirant / Combatant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(149756),	-- Dominant Combatant's Dreadcloak (A)
 						i(149780),	-- Dominant Combatant's Dreadplate Chestpiece (A)
 						i(149784),	-- Dominant Combatant's Dreadplate Gauntlets (A)
@@ -5003,7 +5004,7 @@ _.PVP =
 						i(149790),	-- Dominant Combatant's Dreadplate Shoulders (A)
 						i(149794),	-- Dominant Combatant's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(149758),	-- Dominant Combatant's Demonthread Cloak (A)
 						i(149808),	-- Dominant Combatant's Felskin Belt (A)
 						i(149798),	-- Dominant Combatant's Felskin Boots (A)
@@ -5014,7 +5015,7 @@ _.PVP =
 						i(149796),	-- Dominant Combatant's Felskin Tunic (A)
 						i(149810),	-- Dominant Combatant's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(149824),	-- Dominant Combatant's Dragonhide Belt (A)
 						i(149760),	-- Dominant Combatant's Dragonhide Cloak (A)
 						i(149816),	-- Dominant Combatant's Dragonhide Gloves (A)
@@ -5025,7 +5026,7 @@ _.PVP =
 						i(149812),	-- Dominant Combatant's Dragonhide Tunic (A)
 						i(149826),	-- Dominant Combatant's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(149762),	-- Dominant Combatant's Drape of the Tracker (A)
 						i(149842),	-- Dominant Combatant's Chain Armband (A)
 						i(149828),	-- Dominant Combatant's Chain Armor (A)
@@ -5036,7 +5037,7 @@ _.PVP =
 						i(149838),	-- Dominant Combatant's Chain Spaulders (A)
 						i(149830),	-- Dominant Combatant's Chain Treads (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(149854),	-- Dominant Combatant's Silk Amice (A)
 						i(149858),	-- Dominant Combatant's Silk Bracers (A)
 						i(149856),	-- Dominant Combatant's Silk Cord (A)
@@ -5047,7 +5048,7 @@ _.PVP =
 						i(149850),	-- Dominant Combatant's Silk Trousers (A)
 						i(149764),	-- Dominant Combatant's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(149872),	-- Dominant Combatant's Ironskin Belt (A)
 						i(149766),	-- Dominant Combatant's Ironskin Cloak (A)
 						i(149862),	-- Dominant Combatant's Ironskin Gloves (A)
@@ -5058,7 +5059,7 @@ _.PVP =
 						i(149870),	-- Dominant Combatant's Ironskin Tunic (A)
 						i(149874),	-- Dominant Combatant's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(149768),	-- Dominant Combatant's Greatcloak of Faith (A)
 						i(149882),	-- Dominant Combatant's Scaled Chestpiece (A)
 						i(149886),	-- Dominant Combatant's Scaled Gauntlets (A)
@@ -5069,7 +5070,7 @@ _.PVP =
 						i(149892),	-- Dominant Combatant's Scaled Shoulders (A)
 						i(149896),	-- Dominant Combatant's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(149770),	-- Dominant Combatant's Drape of Piety (A)
 						i(149912),	-- Dominant Combatant's Satin Bracers (A)
 						i(149910),	-- Dominant Combatant's Satin Cord (A)
@@ -5080,7 +5081,7 @@ _.PVP =
 						i(149906),	-- Dominant Combatant's Satin Robe (A)
 						i(149898),	-- Dominant Combatant's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(149932),	-- Dominant Combatant's Leather Belt (A)
 						i(149924),	-- Dominant Combatant's Leather Gloves (A)
 						i(149926),	-- Dominant Combatant's Leather Helm (A)
@@ -5091,7 +5092,7 @@ _.PVP =
 						i(149934),	-- Dominant Combatant's Leather Wristguards (A)
 						i(149772),	-- Dominant Combatant's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(149950),	-- Dominant Combatant's Ringmail Armband (A)
 						i(149936),	-- Dominant Combatant's Ringmail Armor (A)
 						i(149938),	-- Dominant Combatant's Ringmail Boots (A)
@@ -5102,7 +5103,7 @@ _.PVP =
 						i(149946),	-- Dominant Combatant's Ringmail Spaulders (A)
 						i(149774),	-- Dominant Combatant's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(149980),	-- Dominant Combatant's Felweave Amice (A)
 						i(149984),	-- Dominant Combatant's Felweave Bracers (A)
 						i(149776),	-- Dominant Combatant's Felweave Cloak (A)
@@ -5113,7 +5114,7 @@ _.PVP =
 						i(149970),	-- Dominant Combatant's Felweave Treads (A)
 						i(149976),	-- Dominant Combatant's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(149990),	-- Dominant Combatant's Plate Gauntlets (A)
 						i(149986),	-- Dominant Combatant's Plate Chestpiece (A)
 						i(149988),	-- Dominant Combatant's Plate Warboots (A)
@@ -5145,7 +5146,7 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(149966)), -- Dominant Combatant's Accolade of Victory (A)
 						un(REMOVED_FROM_GAME, i(149968)), -- Dominant Combatant's Insignia of Victory (A)
 					}),
-					n(-387, {	-- Relic	
+					n(-387, {	-- Relic
 						un(REMOVED_FROM_GAME, i(150306)),	-- Alliance of Convenience
 						un(REMOVED_FROM_GAME, i(150357)),	-- Battering Tempest
 						un(REMOVED_FROM_GAME, i(150316)),	-- Battle-Tempered Hilt
@@ -5179,7 +5180,7 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(148402),	-- Dominant Gladiator's Dreadcloak (A)
 						i(148426),	-- Dominant Gladiator's Dreadplate Chestpiece (A)
 						i(148430),	-- Dominant Gladiator's Dreadplate Gauntlets (A)
@@ -5190,7 +5191,7 @@ _.PVP =
 						i(148436),	-- Dominant Gladiator's Dreadplate Shoulders (A)
 						i(148440),	-- Dominant Gladiator's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(148404),	-- Dominant Gladiator's Demonthread Cloak (A)
 						i(148454),	-- Dominant Gladiator's Felskin Belt (A)
 						i(148444),	-- Dominant Gladiator's Felskin Boots (A)
@@ -5201,7 +5202,7 @@ _.PVP =
 						i(148442),	-- Dominant Gladiator's Felskin Tunic (A)
 						i(148456),	-- Dominant Gladiator's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(148470),	-- Dominant Gladiator's Dragonhide Belt (A)
 						i(148406),	-- Dominant Gladiator's Dragonhide Cloak (A)
 						i(148462),	-- Dominant Gladiator's Dragonhide Gloves (A)
@@ -5212,7 +5213,7 @@ _.PVP =
 						i(148458),	-- Dominant Gladiator's Dragonhide Vest (A)
 						i(148472),	-- Dominant Gladiator's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(148408),	-- Dominant Gladiator's Drape of the Tracker (A)
 						i(148488),	-- Dominant Gladiator's Chain Armband (A)
 						i(148474),	-- Dominant Gladiator's Chain Armor (A)
@@ -5223,7 +5224,7 @@ _.PVP =
 						i(148484),	-- Dominant Gladiator's Chain Spaulders (A)
 						i(148476),	-- Dominant Gladiator's Chain Treads (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(148500),	-- Dominant Gladiator's Silk Amice (A)
 						i(148504),	-- Dominant Gladiator's Silk Bracers (A)
 						i(148502),	-- Dominant Gladiator's Silk Cord (A)
@@ -5234,7 +5235,7 @@ _.PVP =
 						i(148498),	-- Dominant Gladiator's Silk Tunic (A)
 						i(148410),	-- Dominant Gladiator's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(148518),	-- Dominant Gladiator's Ironskin Belt (A)
 						i(148412),	-- Dominant Gladiator's Ironskin Cloak (A)
 						i(148508),	-- Dominant Gladiator's Ironskin Gloves (A)
@@ -5245,7 +5246,7 @@ _.PVP =
 						i(148516),	-- Dominant Gladiator's Ironskin Tunic (A)
 						i(148520),	-- Dominant Gladiator's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(148414),	-- Dominant Gladiator's Greatcloak of Faith (A)
 						i(148537),	-- Dominant Gladiator's Scaled Breastplate (A)
 						i(148531),	-- Dominant Gladiator's Scaled Gauntlets (A)
@@ -5256,7 +5257,7 @@ _.PVP =
 						i(148538),	-- Dominant Gladiator's Scaled Shoulders (A)
 						i(148542),	-- Dominant Gladiator's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(148416),	-- Dominant Gladiator's Drape of Piety (A)
 						i(148558),	-- Dominant Gladiator's Satin Bracers (A)
 						i(148556),	-- Dominant Gladiator's Satin Cord (A)
@@ -5267,7 +5268,7 @@ _.PVP =
 						i(148552),	-- Dominant Gladiator's Satin Robe (A)
 						i(148544),	-- Dominant Gladiator's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(148578),	-- Dominant Gladiator's Leather Belt (A)
 						i(148570),	-- Dominant Gladiator's Leather Gloves (A)
 						i(148572),	-- Dominant Gladiator's Leather Helm (A)
@@ -5278,7 +5279,7 @@ _.PVP =
 						i(148580),	-- Dominant Gladiator's Leather Wristguards (A)
 						i(148418),	-- Dominant Gladiator's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(148596),	-- Dominant Gladiator's Ringmail Armband (A)
 						i(148582),	-- Dominant Gladiator's Ringmail Armor (A)
 						i(148584),	-- Dominant Gladiator's Ringmail Boots (A)
@@ -5289,7 +5290,7 @@ _.PVP =
 						i(148592),	-- Dominant Gladiator's Ringmail Spaulders (A)
 						i(148420),	-- Dominant Gladiator's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(148626),	-- Dominant Gladiator's Felweave Amice (A)
 						i(148630),	-- Dominant Gladiator's Felweave Bracers (A)
 						i(148422),	-- Dominant Gladiator's Felweave Cloak (A)
@@ -5300,7 +5301,7 @@ _.PVP =
 						i(148616),	-- Dominant Gladiator's Felweave Treads (A)
 						i(148622),	-- Dominant Gladiator's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(148424),	-- Dominant Gladiator's Cloak of Battle (A)
 						i(148632),	-- Dominant Gladiator's Plate Chestpiece (A)
 						i(148636),	-- Dominant Gladiator's Plate Gauntlets (A)
@@ -5366,7 +5367,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(14, i(148648)),	-- Dominant Gladiator's Dreadcloak (A)
 						un(14, i(148672)),	-- Dominant Gladiator's Dreadplate Chestpiece (A)
 						un(14, i(148676)),	-- Dominant Gladiator's Dreadplate Gauntlets (A)
@@ -5377,7 +5378,7 @@ _.PVP =
 						un(14, i(148682)),	-- Dominant Gladiator's Dreadplate Shoulders (A)
 						un(14, i(148686)),	-- Dominant Gladiator's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						un(14, i(148650)),	-- Dominant Gladiator's Demonthread Cloak (A)
 						un(14, i(148700)),	-- Dominant Gladiator's Felskin Belt (A)
 						un(14, i(148690)),	-- Dominant Gladiator's Felskin Boots (A)
@@ -5388,7 +5389,7 @@ _.PVP =
 						un(14, i(148688)),	-- Dominant Gladiator's Felskin Tunic (A)
 						un(14, i(148702)),	-- Dominant Gladiator's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(14, i(148716)),	-- Dominant Gladiator's Dragonhide Belt (A)
 						un(14, i(148652)),	-- Dominant Gladiator's Dragonhide Cloak (A)
 						un(14, i(148708)),	-- Dominant Gladiator's Dragonhide Gloves (A)
@@ -5399,7 +5400,7 @@ _.PVP =
 						un(14, i(148704)),	-- Dominant Gladiator's Dragonhide Vest (A)
 						un(14, i(148718)),	-- Dominant Gladiator's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(14, i(148654)),	-- Dominant Gladiator's Drape of the Tracker (A)
 						un(14, i(148734)),	-- Dominant Gladiator's Chain Armband (A)
 						un(14, i(148720)),	-- Dominant Gladiator's Chain Armor (A)
@@ -5410,7 +5411,7 @@ _.PVP =
 						un(14, i(148730)),	-- Dominant Gladiator's Chain Spaulders (A)
 						un(14, i(148722)),	-- Dominant Gladiator's Chain Treads (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(14, i(148746)),	-- Dominant Gladiator's Silk Amice (A)
 						un(14, i(148750)),	-- Dominant Gladiator's Silk Bracers (A)
 						un(14, i(148748)),	-- Dominant Gladiator's Silk Cord (A)
@@ -5421,7 +5422,7 @@ _.PVP =
 						un(14, i(148744)),	-- Dominant Gladiator's Silk Tunic (A)
 						un(14, i(148656)),	-- Dominant Gladiator's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(14, i(148764)),	-- Dominant Gladiator's Ironskin Belt (A)
 						un(14, i(148658)),	-- Dominant Gladiator's Ironskin Cloak (A)
 						un(14, i(148754)),	-- Dominant Gladiator's Ironskin Gloves (A)
@@ -5432,7 +5433,7 @@ _.PVP =
 						un(14, i(148762)),	-- Dominant Gladiator's Ironskin Tunic (A)
 						un(14, i(148766)),	-- Dominant Gladiator's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(14, i(148660)),	-- Dominant Gladiator's Greatcloak of Faith (A)
 						un(14, i(148774)),	-- Dominant Gladiator's Scaled Breastplate (A)
 						un(14, i(148778)),	-- Dominant Gladiator's Scaled Gauntlets (A)
@@ -5443,7 +5444,7 @@ _.PVP =
 						un(14, i(148784)),	-- Dominant Gladiator's Scaled Shoulders (A)
 						un(14, i(148788)),	-- Dominant Gladiator's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(14, i(148662)),	-- Dominant Gladiator's Drape of Piety (A)
 						un(14, i(148804)),	-- Dominant Gladiator's Satin Bracers (A)
 						un(14, i(148802)),	-- Dominant Gladiator's Satin Cord (A)
@@ -5454,7 +5455,7 @@ _.PVP =
 						un(14, i(148798)),	-- Dominant Gladiator's Satin Robe (A)
 						un(14, i(148790)),	-- Dominant Gladiator's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(14, i(148824)),	-- Dominant Gladiator's Leather Belt (A)
 						un(14, i(148816)),	-- Dominant Gladiator's Leather Gloves (A)
 						un(14, i(148818)),	-- Dominant Gladiator's Leather Helm (A)
@@ -5465,7 +5466,7 @@ _.PVP =
 						un(14, i(148826)),	-- Dominant Gladiator's Leather Wristguards (A)
 						un(14, i(148664)),	-- Dominant Gladiator's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(14, i(148842)),	-- Dominant Gladiator's Ringmail Armband (A)
 						un(14, i(148828)),	-- Dominant Gladiator's Ringmail Armor (A)
 						un(14, i(148830)),	-- Dominant Gladiator's Ringmail Boots (A)
@@ -5476,7 +5477,7 @@ _.PVP =
 						un(14, i(148838)),	-- Dominant Gladiator's Ringmail Spaulders (A)
 						un(14, i(148666)),	-- Dominant Gladiator's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(14, i(148872)),	-- Dominant Gladiator's Felweave Amice (A)
 						un(14, i(148876)),	-- Dominant Gladiator's Felweave Bracers (A)
 						un(14, i(148668)),	-- Dominant Gladiator's Felweave Cloak (A)
@@ -5487,7 +5488,7 @@ _.PVP =
 						un(14, i(148862)),	-- Dominant Gladiator's Felweave Treads (A)
 						un(14, i(148868)),	-- Dominant Gladiator's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(14, i(148670)),	-- Dominant Gladiator's Cloak of Battle (A)
 						un(14, i(148878)),	-- Dominant Gladiator's Plate Chestpiece (A)
 						un(14, i(148882)),	-- Dominant Gladiator's Plate Gauntlets (A)
@@ -5555,7 +5556,7 @@ _.PVP =
 			}),
 			n(-9913, {	-- Horde
 				n(-660, {	-- Aspirant / Combatant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(149757),	-- Dominant Combatant's Dreadcloak (H)
 						i(149781),	-- Dominant Combatant's Dreadplate Chestpiece (H)
 						i(149785),	-- Dominant Combatant's Dreadplate Gauntlets (H)
@@ -5566,7 +5567,7 @@ _.PVP =
 						i(149791),	-- Dominant Combatant's Dreadplate Shoulders (H)
 						i(149795),	-- Dominant Combatant's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(149759),	-- Dominant Combatant's Demonthread Cloak (H)
 						i(149809),	-- Dominant Combatant's Felskin Belt (H)
 						i(149799),	-- Dominant Combatant's Felskin Boots (H)
@@ -5577,7 +5578,7 @@ _.PVP =
 						i(149797),	-- Dominant Combatant's Felskin Tunic (H)
 						i(149811),	-- Dominant Combatant's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(149825),	-- Dominant Combatant's Dragonhide Belt (H)
 						i(149761),	-- Dominant Combatant's Dragonhide Cloak (H)
 						i(149817),	-- Dominant Combatant's Dragonhide Gloves (H)
@@ -5588,7 +5589,7 @@ _.PVP =
 						i(149813),	-- Dominant Combatant's Dragonhide Tunic (H)
 						i(149827),	-- Dominant Combatant's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(149763),	-- Dominant Combatant's Drape of the Tracker (H)
 						i(149843),	-- Dominant Combatant's Chain Armband (H)
 						i(149829),	-- Dominant Combatant's Chain Armor (H)
@@ -5599,7 +5600,7 @@ _.PVP =
 						i(149839),	-- Dominant Combatant's Chain Spaulders (H)
 						i(149831),	-- Dominant Combatant's Chain Treads (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(149855),	-- Dominant Combatant's Silk Amice (H)
 						i(149859),	-- Dominant Combatant's Silk Bracers (H)
 						i(149857),	-- Dominant Combatant's Silk Cord (H)
@@ -5610,7 +5611,7 @@ _.PVP =
 						i(149851),	-- Dominant Combatant's Silk Trousers (H)
 						i(149765),	-- Dominant Combatant's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(149873),	-- Dominant Combatant's Ironskin Belt (H)
 						i(149767),	-- Dominant Combatant's Ironskin Cloak (H)
 						i(149863),	-- Dominant Combatant's Ironskin Gloves (H)
@@ -5621,7 +5622,7 @@ _.PVP =
 						i(149871),	-- Dominant Combatant's Ironskin Tunic (H)
 						i(149875),	-- Dominant Combatant's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(149769),	-- Dominant Combatant's Greatcloak of Faith (H)
 						i(149883),	-- Dominant Combatant's Scaled Chestpiece (H)
 						i(149887),	-- Dominant Combatant's Scaled Gauntlets (H)
@@ -5632,7 +5633,7 @@ _.PVP =
 						i(149893),	-- Dominant Combatant's Scaled Shoulders (H)
 						i(149897),	-- Dominant Combatant's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(149771),	-- Dominant Combatant's Drape of Piety (H)
 						i(149913),	-- Dominant Combatant's Satin Bracers (H)
 						i(149911),	-- Dominant Combatant's Satin Cord (H)
@@ -5643,7 +5644,7 @@ _.PVP =
 						i(149907),	-- Dominant Combatant's Satin Robe (H)
 						i(149899),	-- Dominant Combatant's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(149933),	-- Dominant Combatant's Leather Belt (H)
 						i(149925),	-- Dominant Combatant's Leather Gloves (H)
 						i(149927),	-- Dominant Combatant's Leather Helm (H)
@@ -5654,7 +5655,7 @@ _.PVP =
 						i(149935),	-- Dominant Combatant's Leather Wristguards (H)
 						i(149773),	-- Dominant Combatant's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(149951),	-- Dominant Combatant's Ringmail Armband (H)
 						i(149937),	-- Dominant Combatant's Ringmail Armor (H)
 						i(149939),	-- Dominant Combatant's Ringmail Boots (H)
@@ -5665,7 +5666,7 @@ _.PVP =
 						i(149947),	-- Dominant Combatant's Ringmail Spaulders (H)
 						i(149775),	-- Dominant Combatant's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(149981),	-- Dominant Combatant's Felweave Amice (H)
 						i(149985),	-- Dominant Combatant's Felweave Bracers (H)
 						i(149777),	-- Dominant Combatant's Felweave Cloak (H)
@@ -5676,7 +5677,7 @@ _.PVP =
 						i(149971),	-- Dominant Combatant's Felweave Treads (H)
 						i(149977),	-- Dominant Combatant's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(149779),	-- Dominant Combatant's Cloak of Battle (H)
 						i(149987),	-- Dominant Combatant's Plate Chestpiece (H)
 						i(149991),	-- Dominant Combatant's Plate Gauntlets (H)
@@ -5742,7 +5743,7 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(148403),	-- Dominant Gladiator's Dreadcloak (H)
 						i(148427),	-- Dominant Gladiator's Dreadplate Chestpiece (H)
 						i(148431),	-- Dominant Gladiator's Dreadplate Gauntlets (H)
@@ -5753,7 +5754,7 @@ _.PVP =
 						i(148437),	-- Dominant Gladiator's Dreadplate Shoulders (H)
 						i(148441),	-- Dominant Gladiator's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(148405),	-- Dominant Gladiator's Demonthread Cloak (H)
 						i(148455),	-- Dominant Gladiator's Felskin Belt (H)
 						i(148445),	-- Dominant Gladiator's Felskin Boots (H)
@@ -5764,7 +5765,7 @@ _.PVP =
 						i(148443),	-- Dominant Gladiator's Felskin Tunic (H)
 						i(148457),	-- Dominant Gladiator's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(148471),	-- Dominant Gladiator's Dragonhide Belt (H)
 						i(148407),	-- Dominant Gladiator's Dragonhide Cloak (H)
 						i(148463),	-- Dominant Gladiator's Dragonhide Gloves (H)
@@ -5775,7 +5776,7 @@ _.PVP =
 						i(148459),	-- Dominant Gladiator's Dragonhide Vest (H)
 						i(148473),	-- Dominant Gladiator's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(148489),	-- Dominant Gladiator's Chain Armband (H)
 						i(148475),	-- Dominant Gladiator's Chain Armor (H)
 						i(148487),	-- Dominant Gladiator's Chain Clasp (H)
@@ -5786,7 +5787,7 @@ _.PVP =
 						i(148477),	-- Dominant Gladiator's Chain Treads (H)
 						i(148409),	-- Dominant Gladiator's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(148501),	-- Dominant Gladiator's Silk Amice (H)
 						i(148505),	-- Dominant Gladiator's Silk Bracers (H)
 						i(148503),	-- Dominant Gladiator's Silk Cord (H)
@@ -5797,7 +5798,7 @@ _.PVP =
 						i(148499),	-- Dominant Gladiator's Silk Tunic (H)
 						i(148411),	-- Dominant Gladiator's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(148519),	-- Dominant Gladiator's Ironskin Belt (H)
 						i(148413),	-- Dominant Gladiator's Ironskin Cloak (H)
 						i(148509),	-- Dominant Gladiator's Ironskin Gloves (H)
@@ -5808,7 +5809,7 @@ _.PVP =
 						i(148517),	-- Dominant Gladiator's Ironskin Tunic (H)
 						i(148521),	-- Dominant Gladiator's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(148415),	-- Dominant Gladiator's Greatcloak of Faith (H)
 						i(148528),	-- Dominant Gladiator's Scaled Breastplate (H)
 						i(148532),	-- Dominant Gladiator's Scaled Gauntlets (H)
@@ -5819,7 +5820,7 @@ _.PVP =
 						i(148539),	-- Dominant Gladiator's Scaled Shoulders (H)
 						i(148543),	-- Dominant Gladiator's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(148417),	-- Dominant Gladiator's Drape of Piety (H)
 						i(148559),	-- Dominant Gladiator's Satin Bracers (H)
 						i(148557),	-- Dominant Gladiator's Satin Cord (H)
@@ -5830,7 +5831,7 @@ _.PVP =
 						i(148553),	-- Dominant Gladiator's Satin Robe (H)
 						i(148545),	-- Dominant Gladiator's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(148579),	-- Dominant Gladiator's Leather Belt (H)
 						i(148571),	-- Dominant Gladiator's Leather Gloves (H)
 						i(148573),	-- Dominant Gladiator's Leather Helm (H)
@@ -5841,7 +5842,7 @@ _.PVP =
 						i(148581),	-- Dominant Gladiator's Leather Wristguards (H)
 						i(148419),	-- Dominant Gladiator's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(148597),	-- Dominant Gladiator's Ringmail Armband (H)
 						i(148583),	-- Dominant Gladiator's Ringmail Armor (H)
 						i(148585),	-- Dominant Gladiator's Ringmail Boots (H)
@@ -5852,7 +5853,7 @@ _.PVP =
 						i(148593),	-- Dominant Gladiator's Ringmail Spaulders (H)
 						i(148421),	-- Dominant Gladiator's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(148627),	-- Dominant Gladiator's Felweave Amice (H)
 						i(148631),	-- Dominant Gladiator's Felweave Bracers (H)
 						i(148423),	-- Dominant Gladiator's Felweave Cloak (H)
@@ -5863,7 +5864,7 @@ _.PVP =
 						i(148617),	-- Dominant Gladiator's Felweave Treads (H)
 						i(148623),	-- Dominant Gladiator's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(148425),	-- Dominant Gladiator's Cloak of Battle (H)
 						i(148633),	-- Dominant Gladiator's Plate Chestpiece (H)
 						i(148637),	-- Dominant Gladiator's Plate Gauntlets (H)
@@ -5929,7 +5930,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(14, i(148649)),	-- Dominant Gladiator's Dreadcloak (H)
 						un(14, i(148673)),	-- Dominant Gladiator's Dreadplate Chestpiece (H)
 						un(14, i(148677)),	-- Dominant Gladiator's Dreadplate Gauntlets (H)
@@ -5940,7 +5941,7 @@ _.PVP =
 						un(14, i(148683)),	-- Dominant Gladiator's Dreadplate Shoulders (H)
 						un(14, i(148687)),	-- Dominant Gladiator's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						un(14, i(148651)),	-- Dominant Gladiator's Demonthread Cloak (H)
 						un(14, i(148701)),	-- Dominant Gladiator's Felskin Belt (H)
 						un(14, i(148691)),	-- Dominant Gladiator's Felskin Boots (H)
@@ -5951,7 +5952,7 @@ _.PVP =
 						un(14, i(148689)),	-- Dominant Gladiator's Felskin Tunic (H)
 						un(14, i(148703)),	-- Dominant Gladiator's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(14, i(148717)),	-- Dominant Gladiator's Dragonhide Belt (H)
 						un(14, i(148653)),	-- Dominant Gladiator's Dragonhide Cloak (H)
 						un(14, i(148709)),	-- Dominant Gladiator's Dragonhide Gloves (H)
@@ -5962,7 +5963,7 @@ _.PVP =
 						un(14, i(148705)),	-- Dominant Gladiator's Dragonhide Vest (H)
 						un(14, i(148719)),	-- Dominant Gladiator's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(14, i(148735)),	-- Dominant Gladiator's Chain Armband (H)
 						un(14, i(148721)),	-- Dominant Gladiator's Chain Armor (H)
 						un(14, i(148733)),	-- Dominant Gladiator's Chain Clasp (H)
@@ -5973,7 +5974,7 @@ _.PVP =
 						un(14, i(148723)),	-- Dominant Gladiator's Chain Treads (H)
 						un(14, i(148655)),	-- Dominant Gladiator's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(14, i(148747)),	-- Dominant Gladiator's Silk Amice (H)
 						un(14, i(148751)),	-- Dominant Gladiator's Silk Bracers (H)
 						un(14, i(148749)),	-- Dominant Gladiator's Silk Cord (H)
@@ -5984,7 +5985,7 @@ _.PVP =
 						un(14, i(148745)),	-- Dominant Gladiator's Silk Tunic (H)
 						un(14, i(148657)),	-- Dominant Gladiator's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(14, i(148765)),	-- Dominant Gladiator's Ironskin Belt (H)
 						un(14, i(148659)),	-- Dominant Gladiator's Ironskin Cloak (H)
 						un(14, i(148755)),	-- Dominant Gladiator's Ironskin Gloves (H)
@@ -5995,7 +5996,7 @@ _.PVP =
 						un(14, i(148763)),	-- Dominant Gladiator's Ironskin Tunic (H)
 						un(14, i(148767)),	-- Dominant Gladiator's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(14, i(148661)),	-- Dominant Gladiator's Greatcloak of Faith (H)
 						un(14, i(148775)),	-- Dominant Gladiator's Scaled Breastplate (H)
 						un(14, i(148779)),	-- Dominant Gladiator's Scaled Gauntlets (H)
@@ -6006,7 +6007,7 @@ _.PVP =
 						un(14, i(148785)),	-- Dominant Gladiator's Scaled Shoulders (H)
 						un(14, i(148789)),	-- Dominant Gladiator's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(14, i(148663)),	-- Dominant Gladiator's Drape of Piety (H)
 						un(14, i(148805)),	-- Dominant Gladiator's Satin Bracers (H)
 						un(14, i(148803)),	-- Dominant Gladiator's Satin Cord (H)
@@ -6017,7 +6018,7 @@ _.PVP =
 						un(14, i(148799)),	-- Dominant Gladiator's Satin Robe (H)
 						un(14, i(148791)),	-- Dominant Gladiator's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(14, i(148825)),	-- Dominant Gladiator's Leather Belt (H)
 						un(14, i(148817)),	-- Dominant Gladiator's Leather Gloves (H)
 						un(14, i(148819)),	-- Dominant Gladiator's Leather Helm (H)
@@ -6028,7 +6029,7 @@ _.PVP =
 						un(14, i(148827)),	-- Dominant Gladiator's Leather Wristguards (H)
 						un(14, i(148665)),	-- Dominant Gladiator's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(14, i(148843)),	-- Dominant Gladiator's Ringmail Armband (H)
 						un(14, i(148829)),	-- Dominant Gladiator's Ringmail Armor (H)
 						un(14, i(148831)),	-- Dominant Gladiator's Ringmail Boots (H)
@@ -6039,7 +6040,7 @@ _.PVP =
 						un(14, i(148839)),	-- Dominant Gladiator's Ringmail Spaulders (H)
 						un(14, i(148667)),	-- Dominant Gladiator's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(14, i(148873)),	-- Dominant Gladiator's Felweave Amice (H)
 						un(14, i(148877)),	-- Dominant Gladiator's Felweave Bracers (H)
 						un(14, i(148669)),	-- Dominant Gladiator's Felweave Cloak (H)
@@ -6050,7 +6051,7 @@ _.PVP =
 						un(14, i(148863)),	-- Dominant Gladiator's Felweave Treads (H)
 						un(14, i(148869)),	-- Dominant Gladiator's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(14, i(148671)),	-- Dominant Gladiator's Cloak of Battle (H)
 						un(14, i(148879)),	-- Dominant Gladiator's Plate Chestpiece (H)
 						un(14, i(148883)),	-- Dominant Gladiator's Plate Gauntlets (H)
@@ -6120,7 +6121,7 @@ _.PVP =
 		n(-688, {	-- Demonic Gladiator: Legion Season 7
 			n(-9914, {	-- Alliance
 				n(-660, {	-- Aspirant / Combatant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(150002),	-- Demonic Combatant's Dreadcloak (A)
 						i(150026),	-- Demonic Combatant's Dreadplate Chestpiece (A)
 						i(150030),	-- Demonic Combatant's Dreadplate Gauntlets (A)
@@ -6131,7 +6132,7 @@ _.PVP =
 						i(150036),	-- Demonic Combatant's Dreadplate Shoulders (A)
 						i(150040),	-- Demonic Combatant's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(150004),	-- Demonic Combatant's Demonthread Cloak (A)
 						i(150054),	-- Demonic Combatant's Felskin Belt (A)
 						i(150044),	-- Demonic Combatant's Felskin Boots (A)
@@ -6142,7 +6143,7 @@ _.PVP =
 						i(150042),	-- Demonic Combatant's Felskin Tunic (A)
 						i(150056),	-- Demonic Combatant's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(150070),	-- Demonic Combatant's Dragonhide Belt (A)
 						i(150006),	-- Demonic Combatant's Dragonhide Cloak (A)
 						i(150062),	-- Demonic Combatant's Dragonhide Gloves (A)
@@ -6153,7 +6154,7 @@ _.PVP =
 						i(150058),	-- Demonic Combatant's Dragonhide Tunic (A)
 						i(150072),	-- Demonic Combatant's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(150088),	-- Demonic Combatant's Chain Armband (A)
 						i(150074),	-- Demonic Combatant's Chain Armor (A)
 						i(150086),	-- Demonic Combatant's Chain Clasp (A)
@@ -6164,7 +6165,7 @@ _.PVP =
 						i(150076),	-- Demonic Combatant's Chain Treads (A)
 						i(150008),	-- Demonic Combatant's Drape of the Tracker (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(150100),	-- Demonic Combatant's Silk Amice (A)
 						i(150104),	-- Demonic Combatant's Silk Bracers (A)
 						i(150102),	-- Demonic Combatant's Silk Cord (A)
@@ -6175,7 +6176,7 @@ _.PVP =
 						i(150096),	-- Demonic Combatant's Silk Trousers (A)
 						i(150010),	-- Demonic Combatant's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(150118),	-- Demonic Combatant's Ironskin Belt (A)
 						i(150012),	-- Demonic Combatant's Ironskin Cloak (A)
 						i(150108),	-- Demonic Combatant's Ironskin Gloves (A)
@@ -6186,7 +6187,7 @@ _.PVP =
 						i(150116),	-- Demonic Combatant's Ironskin Tunic (A)
 						i(150120),	-- Demonic Combatant's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(150014),	-- Demonic Combatant's Greatcloak of Faith (A)
 						i(150128),	-- Demonic Combatant's Scaled Chestpiece (A)
 						i(150132),	-- Demonic Combatant's Scaled Gauntlets (A)
@@ -6197,7 +6198,7 @@ _.PVP =
 						i(150138),	-- Demonic Combatant's Scaled Shoulders (A)
 						i(150142),	-- Demonic Combatant's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(150016),	-- Demonic Combatant's Drape of Piety (A)
 						i(150158),	-- Demonic Combatant's Satin Bracers (A)
 						i(150156),	-- Demonic Combatant's Satin Cord (A)
@@ -6208,7 +6209,7 @@ _.PVP =
 						i(150152),	-- Demonic Combatant's Satin Robe (A)
 						i(150144),	-- Demonic Combatant's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(150178),	-- Demonic Combatant's Leather Belt (A)
 						i(150170),	-- Demonic Combatant's Leather Gloves (A)
 						i(150172),	-- Demonic Combatant's Leather Helm (A)
@@ -6219,7 +6220,7 @@ _.PVP =
 						i(150180),	-- Demonic Combatant's Leather Wristguards (A)
 						i(150018),	-- Demonic Combatant's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(150196),	-- Demonic Combatant's Ringmail Armband (A)
 						i(150182),	-- Demonic Combatant's Ringmail Armor (A)
 						i(150184),	-- Demonic Combatant's Ringmail Boots (A)
@@ -6230,7 +6231,7 @@ _.PVP =
 						i(150192),	-- Demonic Combatant's Ringmail Spaulders (A)
 						i(150020),	-- Demonic Combatant's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(150226),	-- Demonic Combatant's Felweave Amice (A)
 						i(150230),	-- Demonic Combatant's Felweave Bracers (A)
 						i(150022),	-- Demonic Combatant's Felweave Cloak (A)
@@ -6241,7 +6242,7 @@ _.PVP =
 						i(150216),	-- Demonic Combatant's Felweave Treads (A)
 						i(150222),	-- Demonic Combatant's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(150024),	-- Demonic Combatant's Cloak of Battle (A)
 						i(150232),	-- Demonic Combatant's Plate Chestpiece (A)
 						i(150236),	-- Demonic Combatant's Plate Gauntlets (A)
@@ -6307,7 +6308,7 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(148894),	-- Demonic Gladiator's Dreadcloak (A)
 						i(148918),	-- Demonic Gladiator's Dreadplate Chestpiece (A)
 						i(148922),	-- Demonic Gladiator's Dreadplate Gauntlets (A)
@@ -6318,7 +6319,7 @@ _.PVP =
 						i(148928),	-- Demonic Gladiator's Dreadplate Shoulders (A)
 						i(148932),	-- Demonic Gladiator's Dreadplate Wristplates (A)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(148896),	-- Demonic Gladiator's Demonthread Cloak (A)
 						i(148946),	-- Demonic Gladiator's Felskin Belt (A)
 						i(148936),	-- Demonic Gladiator's Felskin Boots (A)
@@ -6329,7 +6330,7 @@ _.PVP =
 						i(148934),	-- Demonic Gladiator's Felskin Tunic (A)
 						i(148948),	-- Demonic Gladiator's Felskin Wristguards (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(148962),	-- Demonic Gladiator's Dragonhide Belt (A)
 						i(148898),	-- Demonic Gladiator's Dragonhide Cloak (A)
 						i(148954),	-- Demonic Gladiator's Dragonhide Gloves (A)
@@ -6340,7 +6341,7 @@ _.PVP =
 						i(148950),	-- Demonic Gladiator's Dragonhide Vest (A)
 						i(148964),	-- Demonic Gladiator's Dragonhide Wristguards (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(148900),	-- Demonic Gladiator's Drape of the Tracker (A)
 						i(148980),	-- Demonic Gladiator's Chain Armband (A)
 						i(148966),	-- Demonic Gladiator's Chain Armor (A)
@@ -6351,7 +6352,7 @@ _.PVP =
 						i(148976),	-- Demonic Gladiator's Chain Spaulders (A)
 						i(148968),	-- Demonic Gladiator's Chain Treads (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(148992),	-- Demonic Gladiator's Silk Amice (A)
 						i(148996),	-- Demonic Gladiator's Silk Bracers (A)
 						i(148994),	-- Demonic Gladiator's Silk Cord (A)
@@ -6362,7 +6363,7 @@ _.PVP =
 						i(148990),	-- Demonic Gladiator's Silk Tunic (A)
 						i(148902),	-- Demonic Gladiator's Silken Shawl (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(149010),	-- Demonic Gladiator's Ironskin Belt (A)
 						i(148904),	-- Demonic Gladiator's Ironskin Cloak (A)
 						i(149000),	-- Demonic Gladiator's Ironskin Gloves (A)
@@ -6373,7 +6374,7 @@ _.PVP =
 						i(149008),	-- Demonic Gladiator's Ironskin Tunic (A)
 						i(149012),	-- Demonic Gladiator's Ironskin Wristguards (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(148906),	-- Demonic Gladiator's Greatcloak of Faith (A)
 						i(149029),	-- Demonic Gladiator's Scaled Breastplate (A)
 						i(149023),	-- Demonic Gladiator's Scaled Gauntlets (A)
@@ -6384,7 +6385,7 @@ _.PVP =
 						i(149030),	-- Demonic Gladiator's Scaled Shoulders (A)
 						i(149034),	-- Demonic Gladiator's Scaled Wristplates (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(148908),	-- Demonic Gladiator's Drape of Piety (A)
 						i(149050),	-- Demonic Gladiator's Satin Bracers (A)
 						i(149048),	-- Demonic Gladiator's Satin Cord (A)
@@ -6395,7 +6396,7 @@ _.PVP =
 						i(149044),	-- Demonic Gladiator's Satin Robe (A)
 						i(149036),	-- Demonic Gladiator's Satin Treads (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(149070),	-- Demonic Gladiator's Leather Belt (A)
 						i(149062),	-- Demonic Gladiator's Leather Gloves (A)
 						i(149064),	-- Demonic Gladiator's Leather Helm (A)
@@ -6406,7 +6407,7 @@ _.PVP =
 						i(149072),	-- Demonic Gladiator's Leather Wristguards (A)
 						i(148910),	-- Demonic Gladiator's Shadowcape (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(149088),	-- Demonic Gladiator's Ringmail Armband (A)
 						i(149074),	-- Demonic Gladiator's Ringmail Armor (A)
 						i(149076),	-- Demonic Gladiator's Ringmail Boots (A)
@@ -6417,7 +6418,7 @@ _.PVP =
 						i(149084),	-- Demonic Gladiator's Ringmail Spaulders (A)
 						i(148912),	-- Demonic Gladiator's Totemic Cloak (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(149118),	-- Demonic Gladiator's Felweave Amice
 						i(149122),	-- Demonic Gladiator's Felweave Bracers
 						i(148914),	-- Demonic Gladiator's Felweave Cloak
@@ -6426,9 +6427,9 @@ _.PVP =
 						i(149110),	-- Demonic Gladiator's Felweave Handguards
 						i(149116),	-- Demonic Gladiator's Felweave Raiment
 						i(149108),	-- Demonic Gladiator's Felweave Treads
-						i(149114),	-- Demonic Gladiator's Felweave Trousers	
+						i(149114),	-- Demonic Gladiator's Felweave Trousers
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(148916),	-- Demonic Gladiator's Cloak of Battle
 						i(149124),	-- Demonic Gladiator's Plate Chestpiece
 						i(149128),	-- Demonic Gladiator's Plate Gauntlets
@@ -6494,7 +6495,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(14, i(149140)),	-- Demonic Gladiator's Dreadcloak
 						un(14, i(149164)),	-- Demonic Gladiator's Dreadplate Chestpiece
 						un(14, i(149168)),	-- Demonic Gladiator's Dreadplate Gauntlets
@@ -6505,7 +6506,7 @@ _.PVP =
 						un(14, i(149174)),	-- Demonic Gladiator's Dreadplate Shoulders
 						un(14, i(149178)),	-- Demonic Gladiator's Dreadplate Wristplates
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						un(14, i(149142)),	-- Demonic Gladiator's Demonthread Cloak
 						un(14, i(149192)),	-- Demonic Gladiator's Felskin Belt
 						un(14, i(149182)),	-- Demonic Gladiator's Felskin Boots
@@ -6516,7 +6517,7 @@ _.PVP =
 						un(14, i(149180)),	-- Demonic Gladiator's Felskin Tunic
 						un(14, i(149194)),	-- Demonic Gladiator's Felskin Wristguards
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(14, i(149208)),	-- Demonic Gladiator's Dragonhide Belt
 						un(14, i(149144)),	-- Demonic Gladiator's Dragonhide Cloak
 						un(14, i(149200)),	-- Demonic Gladiator's Dragonhide Gloves
@@ -6527,7 +6528,7 @@ _.PVP =
 						un(14, i(149196)),	-- Demonic Gladiator's Dragonhide Vest
 						un(14, i(149210)),	-- Demonic Gladiator's Dragonhide Wristguards
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(14, i(149146)),	-- Demonic Gladiator's Drape of the Tracker
 						un(14, i(149226)),	-- Demonic Gladiator's Chain Armband
 						un(14, i(149212)),	-- Demonic Gladiator's Chain Armor
@@ -6538,7 +6539,7 @@ _.PVP =
 						un(14, i(149222)),	-- Demonic Gladiator's Chain Spaulders
 						un(14, i(149214)),	-- Demonic Gladiator's Chain Treads
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(14, i(149238)),	-- Demonic Gladiator's Silk Amice
 						un(14, i(149242)),	-- Demonic Gladiator's Silk Bracers
 						un(14, i(149240)),	-- Demonic Gladiator's Silk Cord
@@ -6549,7 +6550,7 @@ _.PVP =
 						un(14, i(149236)),	-- Demonic Gladiator's Silk Tunic
 						un(14, i(149148)),	-- Demonic Gladiator's Silken Shawl
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(14, i(149256)),	-- Demonic Gladiator's Ironskin Belt
 						un(14, i(149150)),	-- Demonic Gladiator's Ironskin Cloak
 						un(14, i(149246)),	-- Demonic Gladiator's Ironskin Gloves
@@ -6560,7 +6561,7 @@ _.PVP =
 						un(14, i(149254)),	-- Demonic Gladiator's Ironskin Tunic
 						un(14, i(149258)),	-- Demonic Gladiator's Ironskin Wristguards
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(14, i(149152)),	-- Demonic Gladiator's Greatcloak of Faith
 						un(14, i(149266)),	-- Demonic Gladiator's Scaled Breastplate
 						un(14, i(149270)),	-- Demonic Gladiator's Scaled Gauntlets
@@ -6571,7 +6572,7 @@ _.PVP =
 						un(14, i(149276)),	-- Demonic Gladiator's Scaled Shoulders
 						un(14, i(149280)),	-- Demonic Gladiator's Scaled Wristplates
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(14, i(149154)),	-- Demonic Gladiator's Drape of Piety
 						un(14, i(149296)),	-- Demonic Gladiator's Satin Bracers
 						un(14, i(149294)),	-- Demonic Gladiator's Satin Cord
@@ -6582,7 +6583,7 @@ _.PVP =
 						un(14, i(149290)),	-- Demonic Gladiator's Satin Robe
 						un(14, i(149282)),	-- Demonic Gladiator's Satin Treads
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(14, i(149316)),	-- Demonic Gladiator's Leather Belt
 						un(14, i(149308)),	-- Demonic Gladiator's Leather Gloves
 						un(14, i(149310)),	-- Demonic Gladiator's Leather Helm
@@ -6593,7 +6594,7 @@ _.PVP =
 						un(14, i(149318)),	-- Demonic Gladiator's Leather Wristguards
 						un(14, i(149156)),	-- Demonic Gladiator's Shadowcape
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(14, i(149334)),	-- Demonic Gladiator's Ringmail Armband
 						un(14, i(149320)),	-- Demonic Gladiator's Ringmail Armor
 						un(14, i(149322)),	-- Demonic Gladiator's Ringmail Boots
@@ -6604,7 +6605,7 @@ _.PVP =
 						un(14, i(149330)),	-- Demonic Gladiator's Ringmail Spaulders
 						un(14, i(149158)),	-- Demonic Gladiator's Totemic Cloak
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(14, i(149364)),	-- Demonic Gladiator's Felweave Amice
 						un(14, i(149368)),	-- Demonic Gladiator's Felweave Bracers
 						un(14, i(149160)),	-- Demonic Gladiator's Felweave Cloak
@@ -6615,7 +6616,7 @@ _.PVP =
 						un(14, i(149354)),	-- Demonic Gladiator's Felweave Treads
 						un(14, i(149360)),	-- Demonic Gladiator's Felweave Trousers
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(14, i(149162)),	-- Demonic Gladiator's Cloak of Battle
 						un(14, i(149370)),	-- Demonic Gladiator's Plate Chestpiece
 						un(14, i(149374)),	-- Demonic Gladiator's Plate Gauntlets
@@ -6683,7 +6684,7 @@ _.PVP =
 			}),
 			n(-9913, {	-- Horde
 				n(-660, {	-- Aspirant / Combatant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(150003),	-- Demonic Combatant's Dreadcloak (H)
 						i(150027),	-- Demonic Combatant's Dreadplate Chestpiece (H)
 						i(150031),	-- Demonic Combatant's Dreadplate Gauntlets (H)
@@ -6694,7 +6695,7 @@ _.PVP =
 						i(150037),	-- Demonic Combatant's Dreadplate Shoulders (H)
 						i(150041),	-- Demonic Combatant's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(150005),	-- Demonic Combatant's Demonthread Cloak (H)
 						i(150055),	-- Demonic Combatant's Felskin Belt (H)
 						i(150045),	-- Demonic Combatant's Felskin Boots (H)
@@ -6705,7 +6706,7 @@ _.PVP =
 						i(150043),	-- Demonic Combatant's Felskin Tunic (H)
 						i(150057),	-- Demonic Combatant's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(150071),	-- Demonic Combatant's Dragonhide Belt (H)
 						i(150007),	-- Demonic Combatant's Dragonhide Cloak (H)
 						i(150063),	-- Demonic Combatant's Dragonhide Gloves (H)
@@ -6714,9 +6715,9 @@ _.PVP =
 						i(150061),	-- Demonic Combatant's Dragonhide Moccasins (H)
 						i(150069),	-- Demonic Combatant's Dragonhide Spaulders (H)
 						i(150059),	-- Demonic Combatant's Dragonhide Tunic (H)
-						i(150073),	-- Demonic Combatant's Dragonhide Wristguards (H)	
+						i(150073),	-- Demonic Combatant's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(150089),	-- Demonic Combatant's Chain Armband (H)
 						i(150075),	-- Demonic Combatant's Chain Armor (H)
 						i(150087),	-- Demonic Combatant's Chain Clasp (H)
@@ -6727,7 +6728,7 @@ _.PVP =
 						i(150077),	-- Demonic Combatant's Chain Treads (H)
 						i(150009),	-- Demonic Combatant's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(150101),	-- Demonic Combatant's Silk Amice (H)
 						i(150105),	-- Demonic Combatant's Silk Bracers (H)
 						i(150103),	-- Demonic Combatant's Silk Cord (H)
@@ -6738,7 +6739,7 @@ _.PVP =
 						i(150097),	-- Demonic Combatant's Silk Trousers (H)
 						i(150011),	-- Demonic Combatant's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(150119),	-- Demonic Combatant's Ironskin Belt (H)
 						i(150013),	-- Demonic Combatant's Ironskin Cloak (H)
 						i(150109),	-- Demonic Combatant's Ironskin Gloves (H)
@@ -6749,7 +6750,7 @@ _.PVP =
 						i(150117),	-- Demonic Combatant's Ironskin Tunic (H)
 						i(150121),	-- Demonic Combatant's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(150015),	-- Demonic Combatant's Greatcloak of Faith (H)
 						i(150129),	-- Demonic Combatant's Scaled Chestpiece (H)
 						i(150133),	-- Demonic Combatant's Scaled Gauntlets (H)
@@ -6760,7 +6761,7 @@ _.PVP =
 						i(150139),	-- Demonic Combatant's Scaled Shoulders (H)
 						i(150143),	-- Demonic Combatant's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(150017),	-- Demonic Combatant's Drape of Piety (H)
 						i(150159),	-- Demonic Combatant's Satin Bracers (H)
 						i(150157),	-- Demonic Combatant's Satin Cord (H)
@@ -6771,7 +6772,7 @@ _.PVP =
 						i(150153),	-- Demonic Combatant's Satin Robe (H)
 						i(150145),	-- Demonic Combatant's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(150179),	-- Demonic Combatant's Leather Belt (H)
 						i(150171),	-- Demonic Combatant's Leather Gloves (H)
 						i(150173),	-- Demonic Combatant's Leather Helm (H)
@@ -6782,7 +6783,7 @@ _.PVP =
 						i(150181),	-- Demonic Combatant's Leather Wristguards (H)
 						i(150019),	-- Demonic Combatant's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(150197),	-- Demonic Combatant's Ringmail Armband (H)
 						i(150183),	-- Demonic Combatant's Ringmail Armor (H)
 						i(150185),	-- Demonic Combatant's Ringmail Boots (H)
@@ -6793,7 +6794,7 @@ _.PVP =
 						i(150193),	-- Demonic Combatant's Ringmail Spaulders (H)
 						i(150021),	-- Demonic Combatant's Totemic Cloak (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(150227),	-- Demonic Combatant's Felweave Amice (H)
 						i(150231),	-- Demonic Combatant's Felweave Bracers (H)
 						i(150023),	-- Demonic Combatant's Felweave Cloak (H)
@@ -6804,7 +6805,7 @@ _.PVP =
 						i(150217),	-- Demonic Combatant's Felweave Treads (H)
 						i(150223),	-- Demonic Combatant's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(150025),	-- Demonic Combatant's Cloak of Battle (H)
 						i(150233),	-- Demonic Combatant's Plate Chestpiece (H)
 						i(150237),	-- Demonic Combatant's Plate Gauntlets (H)
@@ -6870,7 +6871,7 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(148895),	-- Demonic Gladiator's Dreadcloak (H)
 						i(148919),	-- Demonic Gladiator's Dreadplate Chestpiece (H)
 						i(148923),	-- Demonic Gladiator's Dreadplate Gauntlets (H)
@@ -6881,7 +6882,7 @@ _.PVP =
 						i(148929),	-- Demonic Gladiator's Dreadplate Shoulders (H)
 						i(148933),	-- Demonic Gladiator's Dreadplate Wristplates (H)
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						i(148897),	-- Demonic Gladiator's Demonthread Cloak (H)
 						i(148947),	-- Demonic Gladiator's Felskin Belt (H)
 						i(148937),	-- Demonic Gladiator's Felskin Boots (H)
@@ -6892,7 +6893,7 @@ _.PVP =
 						i(148935),	-- Demonic Gladiator's Felskin Tunic (H)
 						i(148949),	-- Demonic Gladiator's Felskin Wristguards (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(148963),	-- Demonic Gladiator's Dragonhide Belt (H)
 						i(148899),	-- Demonic Gladiator's Dragonhide Cloak (H)
 						i(148955),	-- Demonic Gladiator's Dragonhide Gloves (H)
@@ -6903,7 +6904,7 @@ _.PVP =
 						i(148951),	-- Demonic Gladiator's Dragonhide Vest (H)
 						i(148965),	-- Demonic Gladiator's Dragonhide Wristguards (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(148981),	-- Demonic Gladiator's Chain Armband (H)
 						i(148967),	-- Demonic Gladiator's Chain Armor (H)
 						i(148979),	-- Demonic Gladiator's Chain Clasp (H)
@@ -6914,7 +6915,7 @@ _.PVP =
 						i(148969),	-- Demonic Gladiator's Chain Treads (H)
 						i(148901),	-- Demonic Gladiator's Drape of the Tracker (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(148993),	-- Demonic Gladiator's Silk Amice (H)
 						i(148997),	-- Demonic Gladiator's Silk Bracers (H)
 						i(148995),	-- Demonic Gladiator's Silk Cord (H)
@@ -6925,7 +6926,7 @@ _.PVP =
 						i(148991),	-- Demonic Gladiator's Silk Tunic (H)
 						i(148903),	-- Demonic Gladiator's Silken Shawl (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(149011),	-- Demonic Gladiator's Ironskin Belt (H)
 						i(148905),	-- Demonic Gladiator's Ironskin Cloak (H)
 						i(149001),	-- Demonic Gladiator's Ironskin Gloves (H)
@@ -6936,7 +6937,7 @@ _.PVP =
 						i(149009),	-- Demonic Gladiator's Ironskin Tunic (H)
 						i(149013),	-- Demonic Gladiator's Ironskin Wristguards (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(148907),	-- Demonic Gladiator's Greatcloak of Faith (H)
 						i(149020),	-- Demonic Gladiator's Scaled Breastplate (H)
 						i(149024),	-- Demonic Gladiator's Scaled Gauntlets (H)
@@ -6947,7 +6948,7 @@ _.PVP =
 						i(149031),	-- Demonic Gladiator's Scaled Shoulders (H)
 						i(149035),	-- Demonic Gladiator's Scaled Wristplates (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(148909),	-- Demonic Gladiator's Drape of Piety (H)
 						i(149051),	-- Demonic Gladiator's Satin Bracers (H)
 						i(149049),	-- Demonic Gladiator's Satin Cord (H)
@@ -6958,7 +6959,7 @@ _.PVP =
 						i(149045),	-- Demonic Gladiator's Satin Robe (H)
 						i(149037),	-- Demonic Gladiator's Satin Treads (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(149071),	-- Demonic Gladiator's Leather Belt (H)
 						i(149063),	-- Demonic Gladiator's Leather Gloves (H)
 						i(149065),	-- Demonic Gladiator's Leather Helm (H)
@@ -6969,7 +6970,7 @@ _.PVP =
 						i(149073),	-- Demonic Gladiator's Leather Wristguards (H)
 						i(148911),	-- Demonic Gladiator's Shadowcape (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(148913),	-- Demonic Gladiator's Totemic Cloak (H)
 						i(149089),	-- Demonic Gladiator's Ringmail Armband (H)
 						i(149087),	-- Demonic Gladiator's Ringmail Clasp (H)
@@ -6980,7 +6981,7 @@ _.PVP =
 						i(149077),	-- Demonic Gladiator's Ringmail Boots (H)
 						i(149075),	-- Demonic Gladiator's Ringmail Armor (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(149119),	-- Demonic Gladiator's Felweave Amice (H)
 						i(149123),	-- Demonic Gladiator's Felweave Bracers (H)
 						i(148915),	-- Demonic Gladiator's Felweave Cloak (H)
@@ -6991,7 +6992,7 @@ _.PVP =
 						i(149109),	-- Demonic Gladiator's Felweave Treads (H)
 						i(149115),	-- Demonic Gladiator's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(148917),	-- Demonic Gladiator's Cloak of Battle (H)
 						i(149125),	-- Demonic Gladiator's Plate Chestpiece (H)
 						i(149129),	-- Demonic Gladiator's Plate Gauntlets (H)
@@ -7057,7 +7058,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(14, i(149141)),	-- Demonic Gladiator's Dreadcloak
 						un(14, i(149165)),	-- Demonic Gladiator's Dreadplate Chestpiece
 						un(14, i(149169)),	-- Demonic Gladiator's Dreadplate Gauntlets
@@ -7068,7 +7069,7 @@ _.PVP =
 						un(14, i(149175)),	-- Demonic Gladiator's Dreadplate Shoulders
 						un(14, i(149179)),	-- Demonic Gladiator's Dreadplate Wristplates
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 						un(14, i(149143)),	-- Demonic Gladiator's Demonthread Cloak
 						un(14, i(149193)),	-- Demonic Gladiator's Felskin Belt
 						un(14, i(149183)),	-- Demonic Gladiator's Felskin Boots
@@ -7079,7 +7080,7 @@ _.PVP =
 						un(14, i(149181)),	-- Demonic Gladiator's Felskin Tunic
 						un(14, i(149195)),	-- Demonic Gladiator's Felskin Wristguards
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(14, i(149209)),	-- Demonic Gladiator's Dragonhide Belt
 						un(14, i(149145)),	-- Demonic Gladiator's Dragonhide Cloak
 						un(14, i(149201)),	-- Demonic Gladiator's Dragonhide Gloves
@@ -7090,7 +7091,7 @@ _.PVP =
 						un(14, i(149197)),	-- Demonic Gladiator's Dragonhide Vest
 						un(14, i(149211)),	-- Demonic Gladiator's Dragonhide Wristguards
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(14, i(149147)),	-- Demonic Gladiator's Drape of the Tracker
 						un(14, i(149227)),	-- Demonic Gladiator's Chain Armband
 						un(14, i(149213)),	-- Demonic Gladiator's Chain Armor
@@ -7101,7 +7102,7 @@ _.PVP =
 						un(14, i(149223)),	-- Demonic Gladiator's Chain Spaulders
 						un(14, i(149215)),	-- Demonic Gladiator's Chain Treads
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(14, i(149239)),	-- Demonic Gladiator's Silk Amice
 						un(14, i(149243)),	-- Demonic Gladiator's Silk Bracers
 						un(14, i(149241)),	-- Demonic Gladiator's Silk Cord
@@ -7112,7 +7113,7 @@ _.PVP =
 						un(14, i(149237)),	-- Demonic Gladiator's Silk Tunic
 						un(14, i(149149)),	-- Demonic Gladiator's Silken Shawl
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(14, i(149257)),	-- Demonic Gladiator's Ironskin Belt
 						un(14, i(149151)),	-- Demonic Gladiator's Ironskin Cloak
 						un(14, i(149247)),	-- Demonic Gladiator's Ironskin Gloves
@@ -7123,7 +7124,7 @@ _.PVP =
 						un(14, i(149255)),	-- Demonic Gladiator's Ironskin Tunic
 						un(14, i(149259)),	-- Demonic Gladiator's Ironskin Wristguards
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(14, i(149153)),	-- Demonic Gladiator's Greatcloak of Faith
 						un(14, i(149267)),	-- Demonic Gladiator's Scaled Breastplate
 						un(14, i(149271)),	-- Demonic Gladiator's Scaled Gauntlets
@@ -7134,7 +7135,7 @@ _.PVP =
 						un(14, i(149277)),	-- Demonic Gladiator's Scaled Shoulders
 						un(14, i(149281)),	-- Demonic Gladiator's Scaled Wristplates
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(14, i(149155)),	-- Demonic Gladiator's Drape of Piety
 						un(14, i(149297)),	-- Demonic Gladiator's Satin Bracers
 						un(14, i(149295)),	-- Demonic Gladiator's Satin Cord
@@ -7145,7 +7146,7 @@ _.PVP =
 						un(14, i(149291)),	-- Demonic Gladiator's Satin Robe
 						un(14, i(149283)),	-- Demonic Gladiator's Satin Treads
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(14, i(149317)),	-- Demonic Gladiator's Leather Belt
 						un(14, i(149309)),	-- Demonic Gladiator's Leather Gloves
 						un(14, i(149311)),	-- Demonic Gladiator's Leather Helm
@@ -7156,7 +7157,7 @@ _.PVP =
 						un(14, i(149319)),	-- Demonic Gladiator's Leather Wristguards
 						un(14, i(149157)),	-- Demonic Gladiator's Shadowcape
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(14, i(149335)),	-- Demonic Gladiator's Ringmail Armband
 						un(14, i(149321)),	-- Demonic Gladiator's Ringmail Armor
 						un(14, i(149323)),	-- Demonic Gladiator's Ringmail Boots
@@ -7167,7 +7168,7 @@ _.PVP =
 						un(14, i(149331)),	-- Demonic Gladiator's Ringmail Spaulders
 						un(14, i(149159)),	-- Demonic Gladiator's Totemic Cloak
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(14, i(149365)),	-- Demonic Gladiator's Felweave Amice
 						un(14, i(149369)),	-- Demonic Gladiator's Felweave Bracers
 						un(14, i(149161)),	-- Demonic Gladiator's Felweave Cloak
@@ -7178,7 +7179,7 @@ _.PVP =
 						un(14, i(149355)),	-- Demonic Gladiator's Felweave Treads
 						un(14, i(149361)),	-- Demonic Gladiator's Felweave Trousers
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(14, i(149163)),	-- Demonic Gladiator's Cloak of Battle
 						un(14, i(149371)),	-- Demonic Gladiator's Plate Chestpiece
 						un(14, i(149375)),	-- Demonic Gladiator's Plate Gauntlets

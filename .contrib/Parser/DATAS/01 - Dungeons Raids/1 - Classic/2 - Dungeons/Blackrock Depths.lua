@@ -885,7 +885,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(151409), 		-- Ferrous Cord
 						un(REMOVED_FROM_GAME, i(11743)),	-- Rockfist
 					},
-					["description"]	= "Private Rocknot must be sent into a drunken rage to aggro Phalanx. \nTo do that, feed him 6 Dark Iron Ale Mugs, which can be purchased from Plugger Spazzring. \nRocknot will break one of the kegs, it'll blow the door open, and Phalanx will be angry.",
+					["description"]	= "Feed Private Rocknot 6 Dark Iron Ale Mugs, purchased from Plugger Spazzring, or kill Plugger Spazzring.",
 				})),
 				n(45843, {			-- Yuka Screwspigot <Engineering Supplies>
 						i(10602),   -- Schematic: Deadly Scope

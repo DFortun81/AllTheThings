@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(17, {	-- Blasted Lands
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4909, {	-- Blasted Lands Quests
 					crit(1, {	-- Razelikh
 						["sourceQuests"] = {

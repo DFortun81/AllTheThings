@@ -1,9 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms	--- DELETE FILE????
+	m(13, {	-- Eastern Kingdoms	--- TODO: DELETE FILE????
 		m(52, {	-- Westfall
 			n(-77, {	-- Special
 				o(269830, {	-- Gift of the Mind-Seekers

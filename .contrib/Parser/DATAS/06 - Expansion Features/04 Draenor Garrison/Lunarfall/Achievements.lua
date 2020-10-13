@@ -1,11 +1,12 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
-			n(-4, { 	-- Achievements
+			n(ACHIEVEMENTS, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					n(-101, {	-- Followers

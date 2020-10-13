@@ -1,11 +1,12 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(905, { 	-- Argus
 		m(830, {	-- Krokuun
-			n(-4, { 	-- Achievement
+			n(ACHIEVEMENTS, {
 				ach(12084),	-- Infused and Abused
 				ach(12074, {	-- Shoot First, Loot Later
 					o(276490, {	-- Krokul Emergency Cache

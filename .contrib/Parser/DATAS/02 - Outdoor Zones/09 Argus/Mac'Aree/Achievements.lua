@@ -1,11 +1,12 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(905, { 	-- Argus
 		m(882, {	-- Mac'Aree
-			n(-4, {		-- Achievement
+			n(ACHIEVEMENTS, {
 				ach(12074, {	-- Shoot First, Loot Later
 					o(277342, {	-- Augari Goods
 						["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",

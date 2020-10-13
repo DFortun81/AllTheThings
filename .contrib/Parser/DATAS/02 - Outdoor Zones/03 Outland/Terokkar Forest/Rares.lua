@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S        M O D U L E        	--
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -58,7 +59,7 @@ _.Zones =
 						i(31232),	-- Grim Sabatons
 						i(31236),	-- Grim Slippers
 					},
-				}), 
+				}),
 				n(21724, {	-- Hawkbane
 					["description"] = "This is a tameable hunter pet that has no notable drops.",
 					["coord"] = { 76.2, 81.2, 108 },
@@ -87,7 +88,7 @@ _.Zones =
 						i(31231),	-- Feathered Sash
 						i(31229),	-- Feathered Waistband
 					},
-				}), 
+				}),
 				i(32720, {	-- Time-Lost Offering
 					["description"] = "The process to summon this boss is as follows.\n\n1. Collect Shadow Dust from mobs in Skettis.\n2. Turn in 6 Shadow Dust to Severin for the quest More Shadow Dust to obtain Elixir of Shadows.\n3. Drink the elixir to gain a 20-minute buff that allows you to see Time-Lost mobs around Skettis.\n4. Kill these mobs to obtain Time-Lost Scrolls (40 required per summon).\n5. Make sure you are on the Adversarial Blood quest if this is your first time; it begins with the quest Ishaal's Almanac.\n6. Go to a skull pile and use 10 Time-Lost Scrolls to summon boss. (Darkscreecher Akkarai [Akkarai's Talons], Karrog [Karrog's Spine], Gezzarak the Huntress [Gezzarak's Claws], Vakkiz the Windrager [Vakkiz's Scale]).\n7. Take these 4 items to Hazzik to complete Adversarial Blood which rewards a Time-Lost Offering.\n8. Use the Time-Lost Offering at the Ancient Skull Pile on middle island to summon Terokk. (It has about a 15-minute spawn timer)",
 					["g"] = {
@@ -107,14 +108,14 @@ _.Zones =
 								i(32541),	--	Terokk's Wisdom
 							},
 						}),
-					},	
+					},
 				}),
 				i(32620, {	-- Time-Lost Scroll
 					["description"] = "Use 10 Time-Lost Scrolls at the skull piles to summon the rares below. See Terokk's description for more info.",
 					["g"] = {
 						n(23161, {	-- Darkscreecher Akkarai
 							["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk's description for more info.",
-							["coords"] = { 
+							["coords"] = {
 								{ 69.7, 74.7, 108 },
 								{ 70.1, 79.4, 108 },
 								{ 73.5, 80.7, 108 },
@@ -137,11 +138,11 @@ _.Zones =
 								i(31555),	-- Windchanneller's Ceinture
 								i(31563),	-- Skystalker's Cord
 								i(32715),	-- Akkarai's Talons
-							},	
+							},
 						}),
 						n(23163, {	-- Gezzarak the Huntress
-							["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk's description for more info.",	
-							["coords"] = { 
+							["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk's description for more info.",
+							["coords"] = {
 								{ 69.7, 74.7, 108 },
 								{ 70.1, 79.4, 108 },
 								{ 73.5, 80.7, 108 },
@@ -158,17 +159,17 @@ _.Zones =
 								i(31574),	-- Mistshroud Bracers
 								i(32514),	-- Skettis Band
 								i(31566),	-- Skystalker's Bracers
-								i(31563),	-- Skystalker's Cord							
+								i(31563),	-- Skystalker's Cord
 								i(31582),	-- Slatesteel Bracers
 								i(31579),	-- Slatesteel Girdle
 								i(31558),	-- Windchanneller's Bindings
 								i(31555),	-- Windchanneller's Ceinture
 								i(32716),	-- Gazzarak's Claws
-							},				
+							},
 						}),
 						n(23165, {	-- Karrog
-							["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk's description for more info.",					
-							["coords"] = { 
+							["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk's description for more info.",
+							["coords"] = {
 								{ 69.7, 74.7, 108 },
 								{ 70.1, 79.4, 108 },
 								{ 73.5, 80.7, 108 },
@@ -185,7 +186,7 @@ _.Zones =
 								i(31574),	-- Mistshroud Bracers
 								i(32514),	-- Skettis Band
 								i(31566),	-- Skystalker's Bracers
-								i(31563),	-- Skystalker's Cord							
+								i(31563),	-- Skystalker's Cord
 								i(31582),	-- Slatesteel Bracers
 								i(31579),	-- Slatesteel Girdle
 								i(31558),	-- Windchanneller's Bindings
@@ -195,7 +196,7 @@ _.Zones =
 						}),
 						n(23162, { 	-- Vakkiz the Windrager
 							["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk's description for more info.",
-							["coords"] = { 
+							["coords"] = {
 								{ 69.7, 74.7, 108 },
 								{ 70.1, 79.4, 108 },
 								{ 73.5, 80.7, 108 },
@@ -211,11 +212,11 @@ _.Zones =
 								i(31571),	-- Mistshroud Belt
 								i(31574),	-- Mistshroud Bracers
 								i(32514),	-- Skettis Band
-								i(31566),	-- Skystalker's Bracers							
+								i(31566),	-- Skystalker's Bracers
 								i(31582),	-- Slatesteel Bracers
 								i(31579),	-- Slatesteel Girdle
 								i(31558),	-- Windchanneller's Bindings
-								i(31555),	-- Windchanneller's Ceinture	
+								i(31555),	-- Windchanneller's Ceinture
 								i(31563),	-- Skystalker's Cord
 								i(32718),	-- Vakkiz's Scale
 							},

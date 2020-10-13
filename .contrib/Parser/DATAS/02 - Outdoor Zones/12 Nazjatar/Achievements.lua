@@ -1,10 +1,11 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-4, {		-- Achievements
+		n(ACHIEVEMENTS, {
 			ach(13623, {	-- Fighting on Two Fronts
 				["collectible"] = false,
 				["g"] = {

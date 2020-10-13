@@ -10,7 +10,7 @@ _.Instances = { tier(7, {	-- Legion
 		["modID"] = 3,
 		["lvl"] = 110,
 		["g"] = {
-			e(1790, {	-- Ana-Mouz 
+			e(1790, {	-- Ana-Mouz
 				["isWeekly"] = true,
 				["questID"] = 43512,	-- Ana-Mouz (WQ)
 				["isRaid"] = true,
@@ -46,8 +46,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(141486),	-- Demonic Birthstone Ring
 					i(141520),	-- Imp-Eye Diamond
 				},
-			}),	
-			e(1956, {	-- Apocron 
+			}),
+			e(1956, {	-- Apocron
 				["isWeekly"] = true,
 				["questID"] = 47061,	-- Apocron (WQ)
 				["isRaid"] = true,
@@ -68,7 +68,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(147759),	-- Charged Felfire Casing
 				},
 			}),
-			e(1883, {	-- Brutallus 
+			e(1883, {	-- Brutallus
 				["isWeekly"] = true,
 				["questID"] = 46947,	-- Brutallus (WQ)
 				["isRaid"] = true,
@@ -111,7 +111,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(141522),	-- Calamir's Jaw
 				},
 			}),
-			e(1789, {	-- Drugon the Frostblood 
+			e(1789, {	-- Drugon the Frostblood
 				["isWeekly"] = true,
 				["questID"] = 43448,	-- The Frozen King (WQ)
 				["isRaid"] = true,
@@ -220,7 +220,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(141521),	-- Sea Giant Toothpick Fragment
 				},
 			}),
-			e(1769, {	-- Levantus 
+			e(1769, {	-- Levantus
 				["isWeekly"] = true,
 				["questID"] = 43192,	-- Terror of the Deep (WQ)
 				["isRaid"] = true,
@@ -273,7 +273,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(147754),	-- Gory Dreadlord Horn
 				},
 			}),
-			e(1783, {	-- Na'zak the Fiend 
+			e(1783, {	-- Na'zak the Fiend
 				["isWeekly"] = true,
 				["questID"] = 43513,	-- Na'zak the Fiend(WQ)
 				["isRaid"] = true,
@@ -309,8 +309,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(141488),	-- Mana-Dowsing Ring
 					i(141515),	-- Leystone Nugget
 				},
-			}),	
-			e(1749, {	-- Nithogg 
+			}),
+			e(1749, {	-- Nithogg
 				["isWeekly"] = true,
 				["questID"] = 42270,	-- Scourge of the Skies (WQ)
 				["isRaid"] = true,
@@ -374,7 +374,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(141518),	-- Decaying Dragonfang
 				},
 			}),
-			e(1885, {	-- Si'vash 
+			e(1885, {	-- Si'vash
 				["isWeekly"] = true,
 				["questID"] = 46945,	-- Si'vash (WQ)
 				["isRaid"] = true,
@@ -437,7 +437,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(141514),	-- Barnacled Mistcaller Orb
 				},
 			}),
-			e(1796, {	-- Withered J'im 
+			e(1796, {	-- Withered J'im
 				["isWeekly"] = true,
 				["questID"] = 44287,	-- DEADLY: Withered J'im (WQ)
 				["isRaid"] = true,

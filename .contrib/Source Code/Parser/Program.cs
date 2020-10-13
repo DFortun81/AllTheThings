@@ -112,13 +112,15 @@ namespace ATT
                     catch(Exception e)
                     {
                         Trace.WriteLine(fileName);
-                        Trace.WriteLine(e);
+                        Trace.WriteLine(e.Message);
                         Trace.WriteLine("Press Enter once you have resolved the issue.");
                         Console.ReadLine();
                     }
                 }
                 while (true);
             }
+            Trace.WriteLine("Done parsing LUA files...");
+
             do
             {
                 try

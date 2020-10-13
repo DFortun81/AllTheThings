@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -22,11 +23,11 @@ _.Zones =
 						}),
 						i(119378),	-- Socrethar's Stone
 					},
-				}), 
+				}),
 				n(87597, {	-- Bombardier Gu'gok
 					["questID"] = 37339,
 					["isDaily"] = true,
-					["coords"] = { 
+					["coords"] = {
 						{ 43.4, 37.0, 535 },
 						{ 44.6, 40.6, 535 },
 					},
@@ -41,7 +42,7 @@ _.Zones =
 				n(77620, {	-- Cro Fleshrender
 					["questID"] = 34165,
 					["coord"] = { 37.4, 70.6, 535 },
-					["g"] = {	
+					["g"] = {
 						i(116123),	-- Fleshrender's Painbringer
 					},
 				}),
@@ -56,7 +57,7 @@ _.Zones =
 				n(77828, {	-- Echo of Murmur
 					["questID"] = 34221,
 					["coord"] = { 34.0, 57.2, 535 },
-					["g"] = {	
+					["g"] = {
 						i(113670),	-- Mournful Moan of Murmur Toy
 					},
 				}),
@@ -66,7 +67,7 @@ _.Zones =
 						{ 49.8, 83.4, 535 },
 						{ 50.2, 85.4, 535 },
 					},
-					["g"] = {	
+					["g"] = {
 						i(112373),	-- Felbark's Shin
 					},
 				}),
@@ -81,11 +82,11 @@ _.Zones =
 						}),
 						i(119386),	-- Consort's Promise Ring
 					},
-				}), 
+				}),
 				n(77614, {	-- Frenzied Golem
 					["questID"] = 34145,
 					["coord"] = { 46.2, 55.0, 535 },
-					["g"] = {	
+					["g"] = {
 						i(113288),	-- Shard of Contempt
 						i(113287),	-- Shard of Scorn
 					},
@@ -98,7 +99,7 @@ _.Zones =
 						{ 56.6, 64.0, 535 },
 						{ 56.4, 65.8, 535 },
 					},
-					["g"] = {	
+					["g"] = {
 						i(116122),	-- Burning Legion Missive (TOY!)
 					},
 				}),
@@ -139,7 +140,7 @@ _.Zones =
 						}),
 						i(119402),	-- Gurg'tol's Imp Imperator
 					},
-				}), 
+				}),
 				n(83008, {	-- Haakun the All-Consuming
 					["questID"] = 37312,
 					["isDaily"] = true,
@@ -151,7 +152,7 @@ _.Zones =
 						}),
 						i(119403),	-- Sargerei Soulbiter
 					},
-				}), 
+				}),
 				n(77715, {	-- Hammertooth
 					["description"] = "Swims all around the area.",
 					["questID"] = 34185,
@@ -159,10 +160,10 @@ _.Zones =
 						{ 65.2, 43.0, 535 },
 						{ 61.4, 49.2, 535 },
 					},
-					["g"] = {	
+					["g"] = {
 						i(116124),	-- Scaled Riverbeast Vest
 					},
-				}), 
+				}),
 				n(77626, {	-- Hen-Mother Hami
 					["questID"] = 34167,
 					["coords"] = {
@@ -170,7 +171,7 @@ _.Zones =
 						{ 77.4, 51.2, 535 },
 						{ 78.4, 50.8, 535 },
 					},
-					["g"] = {	
+					["g"] = {
 						i(112369),	-- Hami-Down Cloak
 					},
 				}),
@@ -181,17 +182,17 @@ _.Zones =
 						{ 56.6, 62.6, 535 },
 						{ 56.6, 66.0, 535 },
 					},
-					["g"] = {	
+					["g"] = {
 						i(116122),	-- Burning Legion Missive (TOY!)
 					},
-				}), 
+				}),
 				n(78872, {	-- Klikixx
 					["questID"] = 34498,
 					["coords"] = {
 						{ 61.1, 83.9, 535 },	-- cave
 						{ 66.8, 85.6, 535 },	-- klikixx
 					},
-					["g"] = {	
+					["g"] = {
 						i(116125),	-- Klikixx's Webspinnner (TOY!)
 					},
 				}),
@@ -206,7 +207,7 @@ _.Zones =
 						}),
 						i(119394),	-- Kurlosh's Kidneyslicer
 					},
-				}), 
+				}),
 				n(82942, {	-- Lady Demlash
 					["questID"] = 37346,
 					["isDaily"] = true,
@@ -218,7 +219,7 @@ _.Zones =
 						}),
 						i(119352),	-- Demlash's Dashing Robe
 					},
-				}), 
+				}),
 				n(88494, {	-- Legion Vanguard
 					["description"] = "Kill about 10 Council Soulspeakers, then kill 3 waves of 3 mobs, and then Legion Vanguard will spawn. Kill him.",
 					["questID"] = 37342,
@@ -250,7 +251,7 @@ _.Zones =
 						}),
 						i(119388),	-- Doomlord's Seal of Command
 					},
-				}), 
+				}),
 				n(82998, {	-- Matron of Sin
 					["questID"] = 37349,
 					["isDaily"] = true,
@@ -262,7 +263,7 @@ _.Zones =
 						}),
 						i(119353),	-- Matron's Supple Gloves
 					},
-				}), 
+				}),
 				n(79334, {	-- No'losh
 					["questID"] = 34859,
 					["coords"] = {
@@ -286,16 +287,16 @@ _.Zones =
 						i(119170), 	-- Eye of Observation Pet
 						i(119375),	-- Chained Orb of Omniscience
 					},
-				}), 
+				}),
 				n(77741, {	-- Ra'kahn
 					["questID"] = 34196,
 					["coord"] = { 59.48, 59.96, 535 },
-					["g"] = {	
+					["g"] = {
 						i(116112),	-- Ra'kahn's Bite
 					},
 				}),
 				n(-72,   {	-- Sargerei War Council
-					["description"] = "Patrols the area in roughly a circle.",	
+					["description"] = "Patrols the area in roughly a circle.",
 					["questID"] = 37337,
 					["isDaily"] = true,
 					["crs"] = {
@@ -315,7 +316,7 @@ _.Zones =
 						}),
 						i(119350),	-- Sargerei Councillor's Drape
 					},
-				}), 
+				}),
 				n(82930, {	-- Shadowflame Terrorwalker
 					["questID"] = 37347,
 					["isDaily"] = true,
@@ -334,10 +335,10 @@ _.Zones =
 						{ 67.5, 23.4, 537 },	-- Shirzir
 						{ 41.4, 60.1, 535 },	-- Tomb of Souls Entrance
 					},
-					["g"] = {	
+					["g"] = {
 						i(112370),	-- Shirzir's Sticky Slippers
 					},
-				}), 
+				}),
 				n(78715, {	-- Sikthiss, Maiden of Slaughter
 					["description"] = "Sikthiss, Maiden of Slaughter, Kharazos the Triumphant, and Galzomar all share a spawn and drop the toy.",
 					["questID"] = 35219,
@@ -349,7 +350,7 @@ _.Zones =
 					["g"] = {
 						i(116122),	-- Burning Legion Missive Toy
 					},
-				}), 
+				}),
 				n(51015, {	-- Silthide
 					["coords"] = {	-- **Coords uncofirmed, relied on wowhead**
 						{ 62.0, 33.2, 535 },
@@ -361,11 +362,11 @@ _.Zones =
 					["g"] = {
 						i(116767),	-- Sapphire Riverbeast (MOUNT!)
 					},
-				}), 
+				}),
 				n(86549, {	-- Steeltusk
 					["questID"] = 36858,
 					["coord" ] = { 67.7, 35.8, 535 },
-					["g"] = {	
+					["g"] = {
 						i(117562),	-- Steeltusk's Steel Tusk
 					},
 				}),
@@ -373,14 +374,14 @@ _.Zones =
 					["description"] = "Kill small spiders around the egg sacs until you see warnings. The third warning should spawn the mob.",
 					["questID"] = 34171,
 					["coord" ] = { 59.0, 87.4, 535 },
-					["g"] = {	
+					["g"] = {
 						i(116126),	-- Taladorantula Terrofang
 					},
-				}), 
+				}),
 				n(79485, {	-- Talonpriest Zorkra
 					["questID"] = 34668,
 					["coord"] = { 53.83, 91.35, 535 },
-					["g"] = {	
+					["g"] = {
 						i(116110),	-- Zorkra's Hood
 					},
 				}),
@@ -423,7 +424,7 @@ _.Zones =
 					["questID"] = 34204,
 					["coord"] = { 69.6, 33.6, 535 },
 					["g"] = {
-						o(227859, {	-- Hope	
+						o(227859, {	-- Hope
 							["questID"] = 34205,
 							["coord"] = { 69.7, 33.2, 535 },
 							["g"] = {
@@ -431,7 +432,7 @@ _.Zones =
 							},
 						}),
 					},
-				}), 
+				}),
 				n(82922, {	-- Xothear, the Destroyer
 					["questID"] = 37343,
 					["isDaily"] = true,
@@ -443,11 +444,11 @@ _.Zones =
 						}),
 						i(119371),	-- Mantle of the Destroyer
 					},
-				}), 
+				}),
 				n(77529, {	-- Yazheera the Incinerator
 					["questID"] = 34135,
 					["coord"] = { 53.8, 25.7, 535 },
-					["g"] = {	
+					["g"] = {
 						i(112263),	-- Yazheera's Burning Bracers
 					},
 				}),

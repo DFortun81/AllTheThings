@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -1327,7 +1328,10 @@ _.Zones =
 					["provider"] = { "n", 44024 },	-- Artesh
 					["coord"] = { 73.8, 53.8, 241 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 26784,	-- Muddied Waters
+					["sourceQuests"] = {
+						26784,	-- Muddied Waters
+						26788,	-- Cementing Our Victory
+					},
 				}),
 				q(27341, {	-- Scouting the Shore (A)
 					["sourceQuests"] = { 27338 },	-- Our Boys on the Shore
@@ -1760,7 +1764,7 @@ _.Zones =
 					["coord"] = { 53.2, 42.7, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27945,	-- Paint it Black
-					--["isBreadcrumb"] = true,
+					["isBreadcrumb"] = true,
 				}),
 				q(27378, {	-- The Worldbreaker
 					["sourceQuests"] = { 27377 },	-- Devoured
@@ -1781,7 +1785,7 @@ _.Zones =
 				}),
 				ql(q(29934, {	-- To Ravenholdt
 					["provider"] = { "n", 55488 },	-- Corastrasza
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["sourceQuests"] = { 29802 },	-- A Hidden Message
 				})),
 				q(27299, {	-- Torn Ground

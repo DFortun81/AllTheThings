@@ -1,6 +1,7 @@
- ---------------------------------------------------
+---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -26,7 +27,7 @@ _.Zones =
 				}),
 				fp(1839, {	-- Nastrondir (Eagle)
 					["coord"] = { 45.8, 35.8 },
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 				}),
 				fp(1855, {	-- Shield's Rest, Stormheim
 					["coord"] = { 89.8, 10.6 },
@@ -39,12 +40,12 @@ _.Zones =
 				}),
 				fp(1838, {	-- Thorim's Peak (Eagle)
 					["coord"] = { 38, 79.2 },
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 				}),
 				fp(1742, {	-- Valdisdall, Stormheim
 					["coord"] = { 60.6, 50.8 },
 				}),
 			}),
-		}),	
+		}),
 	}),
 };

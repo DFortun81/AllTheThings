@@ -235,6 +235,7 @@ i(146939, 1894);	-- Wardens Insignia [The Wardens]
 		i(173374, 2415);	-- Rajani Insignia (+250, BoA)
 		
 	-- Rustbolt Resistance
+		i(173736, 2391);	-- Layered Information Kernel of E-steam (+250, Rustbolt Resistance)
 		i(174521, 2391);	-- Transferable Kernel of E-steam (+250, Rustbolt Resistance)
 	
 	-- Nazjatar

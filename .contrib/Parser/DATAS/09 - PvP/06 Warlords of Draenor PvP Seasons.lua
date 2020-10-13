@@ -1,12 +1,13 @@
 -----------------------------------------------
---     P L A Y E R   V S   P L A Y E R		 --
+--      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 _.PVP =
 {	----
 	---- This gear is listed here to reduce the bloat.
-	---- The actual sources include: 
+	---- The actual sources include:
 	---- arena win&lose, rbg win&lose, bg win&lose, arena skirmish win&lose, ashran boxes win&lose, 13 ashran quests & broken bones work orders
-	---- for a total of 22 sources or a total of around 
+	---- for a total of 22 sources or a total of around
 	---- 10000 Items.
 	n(-9981, {	-- Draenor
 		n(-679, {	-- Primal Gladiator: Warlords Season 1
@@ -15,77 +16,77 @@ _.PVP =
 			un(REMOVED_FROM_GAME, i(111598)),	-- Gold Strongbox
 			n(-9914, {	-- Alliance
 				n(-659, {	-- Aspirant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(REMOVED_FROM_GAME, i(115197)), -- Primal Aspirant's Dreadplate Chestpiece (A)
 						un(REMOVED_FROM_GAME, i(115198)), -- Primal Aspirant's Dreadplate Gauntlets (A)
 						un(REMOVED_FROM_GAME, i(115199)), -- Primal Aspirant's Dreadplate Helm (A)
 						un(REMOVED_FROM_GAME, i(115200)), -- Primal Aspirant's Dreadplate Legguards (A)
 						un(REMOVED_FROM_GAME, i(115201)), -- Primal Aspirant's Dreadplate Shoulders (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(REMOVED_FROM_GAME, i(115202)), -- Primal Aspirant's Dragonhide Gloves (A)
 						un(REMOVED_FROM_GAME, i(115203)), -- Primal Aspirant's Dragonhide Helm (A)
 						un(REMOVED_FROM_GAME, i(115204)), -- Primal Aspirant's Dragonhide Legguards (A)
 						un(REMOVED_FROM_GAME, i(115205)), -- Primal Aspirant's Dragonhide Tunic (A)
 						un(REMOVED_FROM_GAME, i(115206)), -- Primal Aspirant's Dragonhide Spaulders (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(REMOVED_FROM_GAME, i(115207)), -- Primal Aspirant's Chain Armor (A)
 						un(REMOVED_FROM_GAME, i(115208)), -- Primal Aspirant's Chain Gauntlets (A)
 						un(REMOVED_FROM_GAME, i(115209)), -- Primal Aspirant's Chain Helm (A)
 						un(REMOVED_FROM_GAME, i(115210)), -- Primal Aspirant's Chain Leggings (A)
 						un(REMOVED_FROM_GAME, i(115211)), -- Primal Aspirant's Chain Spaulders (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(REMOVED_FROM_GAME, i(115220)), -- Primal Aspirant's Silk Handguards (A)
 						un(REMOVED_FROM_GAME, i(115221)), -- Primal Aspirant's Silk Cowl (A)
 						un(REMOVED_FROM_GAME, i(115222)), -- Primal Aspirant's Silk Trousers (A)
 						un(REMOVED_FROM_GAME, i(115223)), -- Primal Aspirant's Silk Robe (A)
 						un(REMOVED_FROM_GAME, i(115224)), -- Primal Aspirant's Silk Amice (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(REMOVED_FROM_GAME, i(115228)), -- Primal Aspirant's Ironskin Gloves (A)
 						un(REMOVED_FROM_GAME, i(115229)), -- Primal Aspirant's Ironskin Helm (A)
 						un(REMOVED_FROM_GAME, i(115230)), -- Primal Aspirant's Ironskin Legguards (A)
 						un(REMOVED_FROM_GAME, i(115231)), -- Primal Aspirant's Ironskin Spaulders (A)
 						un(REMOVED_FROM_GAME, i(115232)), -- Primal Aspirant's Ironskin Tunic (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(REMOVED_FROM_GAME, i(115233)), -- Primal Aspirant's Scaled Chestpiece (A)
 						un(REMOVED_FROM_GAME, i(115234)), -- Primal Aspirant's Scaled Gauntlets (A)
 						un(REMOVED_FROM_GAME, i(115235)), -- Primal Aspirant's Scaled Helm (A)
 						un(REMOVED_FROM_GAME, i(115236)), -- Primal Aspirant's Scaled Legguards (A)
 						un(REMOVED_FROM_GAME, i(115237)), -- Primal Aspirant's Scaled Shoulders (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(REMOVED_FROM_GAME, i(115241)), -- Primal Aspirant's Satin Gloves (A)
 						un(REMOVED_FROM_GAME, i(115242)), -- Primal Aspirant's Satin Hood (A)
 						un(REMOVED_FROM_GAME, i(115243)), -- Primal Aspirant's Satin Leggings (A)
 						un(REMOVED_FROM_GAME, i(115244)), -- Primal Aspirant's Satin Robe (A)
 						un(REMOVED_FROM_GAME, i(115245)), -- Primal Aspirant's Satin Mantle (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(REMOVED_FROM_GAME, i(115246)), -- Primal Aspirant's Leather Tunic (A)
 						un(REMOVED_FROM_GAME, i(115247)), -- Primal Aspirant's Leather Gloves (A)
 						un(REMOVED_FROM_GAME, i(115248)), -- Primal Aspirant's Leather Helm (A)
 						un(REMOVED_FROM_GAME, i(115249)), -- Primal Aspirant's Leather Legguards (A)
 						un(REMOVED_FROM_GAME, i(115250)), -- Primal Aspirant's Leather Spaulders (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(REMOVED_FROM_GAME, i(115251)), -- Primal Aspirant's Ringmail Armor (A)
 						un(REMOVED_FROM_GAME, i(115252)), -- Primal Aspirant's Ringmail Gauntlets (A)
 						un(REMOVED_FROM_GAME, i(115253)), -- Primal Aspirant's Ringmail Helm (A)
 						un(REMOVED_FROM_GAME, i(115254)), -- Primal Aspirant's Ringmail Leggings (A)
 						un(REMOVED_FROM_GAME, i(115255)), -- Primal Aspirant's Ringmail Spaulders (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(REMOVED_FROM_GAME, i(115258)), -- Primal Aspirant's Felweave Handguards (A)
 						un(REMOVED_FROM_GAME, i(115259)), -- Primal Aspirant's Felweave Cowl (A)
 						un(REMOVED_FROM_GAME, i(115260)), -- Primal Aspirant's Felweave Trousers (A)
 						un(REMOVED_FROM_GAME, i(115261)), -- Primal Aspirant's Felweave Raiment (A)
 						un(REMOVED_FROM_GAME, i(115262)), -- Primal Aspirant's Felweave Amice (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(REMOVED_FROM_GAME, i(115263)), -- Primal Aspirant's Plate Chestpiece (A)
 						un(REMOVED_FROM_GAME, i(115264)), -- Primal Aspirant's Plate Gauntlets (A)
 						un(REMOVED_FROM_GAME, i(115265)), -- Primal Aspirant's Plate Helm (A)
@@ -221,10 +222,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 					}),
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(138613, {	-- Ensemble: Primal Combatant's Dreadplate Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 6 },
 								{"select", "itemID", 115115 },	-- Primal Combatant's Armplates of Cruelty (A)
 								{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
@@ -247,10 +248,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(138617, {	-- Ensemble: Primal Combatant's Dragonhide Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 11 },
 								{"select", "itemID", 115088 },	-- Primal Combatant's Bindings of Cruelty (A)
 								{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
@@ -273,10 +274,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(138579, {	-- Ensemble: Primal Combatant's Chain Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 3 },
 								{"select", "itemID", 115100 },	-- Primal Combatant's Armbands of Cruelty (A)
 								{"select", "itemID", 115095 },	-- Primal Combatant's Waistguard of Cruelty (A)
@@ -299,10 +300,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(138581, {	-- Ensemble: Primal Combatant's Silk Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 8 },
 								{"select", "itemID", 115048 },	-- Primal Combatant's Cuffs of Cruelty (A)
 								{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
@@ -325,10 +326,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(138619, {	-- Ensemble: Primal Combatant's Ironskin Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 10 },
 								{"select", "itemID", 115088 },	-- Primal Combatant's Bindings of Cruelty (A)
 								{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
@@ -351,10 +352,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(138615, {	-- Ensemble: Primal Combatant's Scaled Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 2 },
 								{"select", "itemID", 115115 },	-- Primal Combatant's Armplates of Cruelty (A)
 								{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
@@ -377,10 +378,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(138583, {	-- Ensemble: Primal Combatant's Satin Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 8 },
 								{"select", "itemID", 115048 },	-- Primal Combatant's Cuffs of Cruelty (A)
 								{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
@@ -403,10 +404,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(138621, {	-- Ensemble: Primal Combatant's Leather Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 4 },
 								{"select", "itemID", 115088 },	-- Primal Combatant's Bindings of Cruelty (A)
 								{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
@@ -429,10 +430,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(138577, {	-- Ensemble: Primal Combatant's Ringmail Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 3 },
 								{"select", "itemID", 115100 },	-- Primal Combatant's Armbands of Cruelty (A)
 								{"select", "itemID", 115095 },	-- Primal Combatant's Waistguard of Cruelty (A)
@@ -455,10 +456,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(138585, {	-- Ensemble: Primal Combatant's Felweave Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 8 },
 								{"select", "itemID", 115048 },	-- Primal Combatant's Cuffs of Cruelty (A)
 								{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
@@ -481,10 +482,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(138611, {	-- Ensemble: Primal Combatant's Plate Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 1 },
 								{"select", "itemID", 115115 },	-- Primal Combatant's Armplates of Cruelty (A)
 								{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
@@ -724,29 +725,29 @@ _.PVP =
 				n(-661, {	-- Gladiator PvP Gear
 					n(-319, {	-- Weapons
 					}),
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 					}),
 					n(-322, {	-- Back
 					}),
@@ -766,77 +767,77 @@ _.PVP =
 			}),
 			n(-9913, {	-- Horde
 				n(-659, {	-- Aspirant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						un(REMOVED_FROM_GAME, i(119974)), -- Primal Aspirant's Dreadplate Chestpiece (H)
 						un(REMOVED_FROM_GAME, i(119975)), -- Primal Aspirant's Dreadplate Gauntlets (H)
 						un(REMOVED_FROM_GAME, i(119976)), -- Primal Aspirant's Dreadplate Helm (H)
 						un(REMOVED_FROM_GAME, i(119977)), -- Primal Aspirant's Dreadplate Legguards (H)
 						un(REMOVED_FROM_GAME, i(119978)), -- Primal Aspirant's Dreadplate Shoulders (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						un(REMOVED_FROM_GAME, i(119979)), -- Primal Aspirant's Dragonhide Gloves (H)
 						un(REMOVED_FROM_GAME, i(119980)), -- Primal Aspirant's Dragonhide Helm (H)
 						un(REMOVED_FROM_GAME, i(119981)), -- Primal Aspirant's Dragonhide Legguards (H)
 						un(REMOVED_FROM_GAME, i(119982)), -- Primal Aspirant's Dragonhide Tunic (H)
 						un(REMOVED_FROM_GAME, i(119983)), -- Primal Aspirant's Dragonhide Spaulders (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						un(REMOVED_FROM_GAME, i(119984)), -- Primal Aspirant's Chain Armor (H)
 						un(REMOVED_FROM_GAME, i(119985)), -- Primal Aspirant's Chain Gauntlets (H)
 						un(REMOVED_FROM_GAME, i(119988)), -- Primal Aspirant's Chain Spaulders (H)
 						un(REMOVED_FROM_GAME, i(119987)), -- Primal Aspirant's Chain Leggings (H)
 						un(REMOVED_FROM_GAME, i(119986)), -- Primal Aspirant's Chain Helm (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						un(REMOVED_FROM_GAME, i(119997)), -- Primal Aspirant's Silk Handguards (H)
 						un(REMOVED_FROM_GAME, i(119998)), -- Primal Aspirant's Silk Cowl (H)
 						un(REMOVED_FROM_GAME, i(119999)), -- Primal Aspirant's Silk Trousers (H)
 						un(REMOVED_FROM_GAME, i(120000)), -- Primal Aspirant's Silk Robe (H)
 						un(REMOVED_FROM_GAME, i(120001)), -- Primal Aspirant's Silk Amice (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						un(REMOVED_FROM_GAME, i(120005)), -- Primal Aspirant's Ironskin Gloves (H)
 						un(REMOVED_FROM_GAME, i(120006)), -- Primal Aspirant's Ironskin Helm (H)
 						un(REMOVED_FROM_GAME, i(120007)), -- Primal Aspirant's Ironskin Legguards (H)
 						un(REMOVED_FROM_GAME, i(120008)), -- Primal Aspirant's Ironskin Spaulders (H)
 						un(REMOVED_FROM_GAME, i(120009)), -- Primal Aspirant's Ironskin Tunic (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						un(REMOVED_FROM_GAME, i(120010)), -- Primal Aspirant's Scaled Chestpiece (H)
 						un(REMOVED_FROM_GAME, i(120011)), -- Primal Aspirant's Scaled Gauntlets (H)
 						un(REMOVED_FROM_GAME, i(120012)), -- Primal Aspirant's Scaled Helm (H)
 						un(REMOVED_FROM_GAME, i(120013)), -- Primal Aspirant's Scaled Legguards (H)
 						un(REMOVED_FROM_GAME, i(120014)), -- Primal Aspirant's Scaled Shoulders (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						un(REMOVED_FROM_GAME, i(120018)), -- Primal Aspirant's Satin Gloves (H)
 						un(REMOVED_FROM_GAME, i(120019)), -- Primal Aspirant's Satin Hood (H)
 						un(REMOVED_FROM_GAME, i(120020)), -- Primal Aspirant's Satin Leggings (H)
 						un(REMOVED_FROM_GAME, i(120021)), -- Primal Aspirant's Satin Robe (H)
 						un(REMOVED_FROM_GAME, i(120022)), -- Primal Aspirant's Satin Mantle (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						un(REMOVED_FROM_GAME, i(120026)), -- Primal Aspirant's Leather Legguards (H)
 						un(REMOVED_FROM_GAME, i(120024)), -- Primal Aspirant's Leather Gloves (H)
 						un(REMOVED_FROM_GAME, i(120023)), -- Primal Aspirant's Leather Tunic (H)
 						un(REMOVED_FROM_GAME, i(120025)), -- Primal Aspirant's Leather Helm (H)
 						un(REMOVED_FROM_GAME, i(120027)), -- Primal Aspirant's Leather Spaulders (H)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						un(REMOVED_FROM_GAME, i(120028)), -- Primal Aspirant's Ringmail Armor (H)
 						un(REMOVED_FROM_GAME, i(120029)), -- Primal Aspirant's Ringmail Gauntlets (H)
 						un(REMOVED_FROM_GAME, i(120030)), -- Primal Aspirant's Ringmail Helm (H)
 						un(REMOVED_FROM_GAME, i(120031)), -- Primal Aspirant's Ringmail Leggings (H)
 						un(REMOVED_FROM_GAME, i(120032)), -- Primal Aspirant's Ringmail Spaulders (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						un(REMOVED_FROM_GAME, i(120035)), -- Primal Aspirant's Felweave Handguards (H)
 						un(REMOVED_FROM_GAME, i(120036)), -- Primal Aspirant's Felweave Cowl (H)
 						un(REMOVED_FROM_GAME, i(120037)), -- Primal Aspirant's Felweave Trousers (H)
 						un(REMOVED_FROM_GAME, i(120038)), -- Primal Aspirant's Felweave Raiment (H)
 						un(REMOVED_FROM_GAME, i(120039)), -- Primal Aspirant's Felweave Amice (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						un(REMOVED_FROM_GAME, i(120040)), -- Primal Aspirant's Plate Chestpiece (H)
 						un(REMOVED_FROM_GAME, i(120041)), -- Primal Aspirant's Plate Gauntlets (H)
 						un(REMOVED_FROM_GAME, i(120042)), -- Primal Aspirant's Plate Helm (H)
@@ -971,10 +972,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 					}),
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(138614, {	-- Ensemble: Primal Combatant's Dreadplate Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 6 },
 								{"select", "itemID", 119898 },	-- Primal Combatant's Armplates of Cruelty (H)
 								{"select", "itemID", 119894 },	-- Primal Combatant's Girdle of Cruelty (H)
@@ -997,10 +998,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(138618, {	-- Ensemble: Primal Combatant's Dragonhide Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 11 },
 								{"select", "itemID", 119871 },	-- Primal Combatant's Bindings of Cruelty (H)
 								{"select", "itemID", 119868 },	-- Primal Combatant's Belt of Cruelty (H)
@@ -1023,10 +1024,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(138580, {	-- Ensemble: Primal Combatant's Chain Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 3 },
 								{"select", "itemID", 119883 },	-- Primal Combatant's Armbands of Cruelty (H)
 								{"select", "itemID", 119878 },	-- Primal Combatant's Waistguard of Cruelty (H)
@@ -1049,10 +1050,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(138582, {	-- Ensemble: Primal Combatant's Silk Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 8 },
 								{"select", "itemID", 119838 },	-- Primal Combatant's Cuffs of Cruelty (H)
 								{"select", "itemID", 119833 },	-- Primal Combatant's Cord of Cruelty (H)
@@ -1075,10 +1076,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(138620, {	-- Ensemble: Primal Combatant's Ironskin Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 10 },
 								{"select", "itemID", 119871 },	-- Primal Combatant's Bindings of Cruelty (H)
 								{"select", "itemID", 119868 },	-- Primal Combatant's Belt of Cruelty (H)
@@ -1101,10 +1102,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(138616, {	-- Ensemble: Primal Combatant's Scaled Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 2 },
 								{"select", "itemID", 119898 },	-- Primal Combatant's Armplates of Cruelty (H)
 								{"select", "itemID", 119894 },	-- Primal Combatant's Girdle of Cruelty (H)
@@ -1127,10 +1128,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(138584, {	-- Ensemble: Primal Combatant's Satin Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 5 },
 								{"select", "itemID", 119838 },	-- Primal Combatant's Cuffs of Cruelty (H)
 								{"select", "itemID", 119833 },	-- Primal Combatant's Cord of Cruelty (H)
@@ -1153,10 +1154,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(138622, {	-- Ensemble: Primal Combatant's Leather Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 4 },
 								{"select", "itemID", 119871 },	-- Primal Combatant's Bindings of Cruelty (H)
 								{"select", "itemID", 119868 },	-- Primal Combatant's Belt of Cruelty (H)
@@ -1179,10 +1180,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(138578, {	-- Ensemble: Primal Combatant's Ringmail Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 7 },
 								{"select", "itemID", 119883 },	-- Primal Combatant's Armbands of Cruelty (H)
 								{"select", "itemID", 119878 },	-- Primal Combatant's Waistguard of Cruelty (H)
@@ -1205,10 +1206,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(138586, {	-- Ensemble: Primal Combatant's Felweave Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 9 },
 								{"select", "itemID", 119838 },	-- Primal Combatant's Cuffs of Cruelty (H)
 								{"select", "itemID", 119833 },	-- Primal Combatant's Cord of Cruelty (H)
@@ -1231,10 +1232,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(138612, {	-- Ensemble: Primal Combatant's Plate Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 1 },
 								{"select", "itemID", 119898 },	-- Primal Combatant's Armplates of Cruelty (H)
 								{"select", "itemID", 119894 },	-- Primal Combatant's Girdle of Cruelty (H)
@@ -1474,29 +1475,29 @@ _.PVP =
 				n(-661, {	-- Gladiator PvP Gear
 					n(-319, {	-- Weapons
 					}),
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 					}),
-					cl(12, {	-- Demon Hunter
+					cl(DEMONHUNTER, {
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 					}),
 					n(-322, {	-- Back
 					}),
@@ -1515,7 +1516,7 @@ _.PVP =
 				}),
 			}),
 			n(-662, {	-- Elite PvP Gear
-				cl(6, {	-- Death Knight
+				cl(DEATHKNIGHT, {
 					un(REMOVED_FROM_GAME, i(115837)),	-- Primal Gladiator's Dreadplate Chestpiece
 					un(REMOVED_FROM_GAME, i(115838)),	-- Primal Gladiator's Dreadplate Gauntlets
 					un(REMOVED_FROM_GAME, i(115906)),	-- Primal Gladiator's Dreadplate Girdle
@@ -1524,7 +1525,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115841)),	-- Primal Gladiator's Dreadplate Shoulders
 					un(REMOVED_FROM_GAME, i(115909)),	-- Primal Gladiator's Dreadplate Warboots
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					un(REMOVED_FROM_GAME, i(115971)),	-- Primal Gladiator's Dragonhide Belt
 					un(REMOVED_FROM_GAME, i(115970)),	-- Primal Gladiator's Dragonhide Footguards
 					un(REMOVED_FROM_GAME, i(115842)),	-- Primal Gladiator's Dragonhide Gloves
@@ -1547,7 +1548,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115860)),	-- Primal Gladiator's Wyrmhide Robes
 					un(REMOVED_FROM_GAME, i(115861)),	-- Primal Gladiator's Wyrmhide Spaulders
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					un(REMOVED_FROM_GAME, i(115942)),	-- Primal Gladiator's Mail Armor
 					un(REMOVED_FROM_GAME, i(115930)),	-- Primal Gladiator's Mail Footguards
 					un(REMOVED_FROM_GAME, i(115943)),	-- Primal Gladiator's Mail Gauntlets
@@ -1556,7 +1557,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115946)),	-- Primal Gladiator's Mail Spaulders
 					un(REMOVED_FROM_GAME, i(115941)),	-- Primal Gladiator's Mail Waistguard
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					un(REMOVED_FROM_GAME, i(115879)),	-- Primal Gladiator's Silk Amice
 					un(REMOVED_FROM_GAME, i(115824)),	-- Primal Gladiator's Silk Cord
 					un(REMOVED_FROM_GAME, i(115876)),	-- Primal Gladiator's Silk Cowl
@@ -1565,7 +1566,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115827)),	-- Primal Gladiator's Silk Treads
 					un(REMOVED_FROM_GAME, i(115877)),	-- Primal Gladiator's Silk Trousers
 				}),
-				cl(10, {	-- Monk
+				cl(MONK, {
 					un(REMOVED_FROM_GAME, i(115966)),	-- Primal Gladiator's Copperskin Boots
 					un(REMOVED_FROM_GAME, i(115887)),	-- Primal Gladiator's Copperskin Gloves
 					un(REMOVED_FROM_GAME, i(115888)),	-- Primal Gladiator's Copperskin Helm
@@ -1581,7 +1582,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115886)),	-- Primal Gladiator's Ironskin Tunic
 					un(REMOVED_FROM_GAME, i(115880)),	-- Primal Gladiator's Ironskin Waistband
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					un(REMOVED_FROM_GAME, i(115901)),	-- Primal Gladiator's Ornamented Chestguard
 					un(REMOVED_FROM_GAME, i(115898)),	-- Primal Gladiator's Ornamented Clasp
 					un(REMOVED_FROM_GAME, i(115902)),	-- Primal Gladiator's Ornamented Gloves
@@ -1597,7 +1598,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115895)),	-- Primal Gladiator's Scaled Legguards
 					un(REMOVED_FROM_GAME, i(115896)),	-- Primal Gladiator's Scaled shoulders
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					un(REMOVED_FROM_GAME, i(115826)),	-- Primal Gladiator's Mooncloth Cord
 					un(REMOVED_FROM_GAME, i(115911)),	-- Primal Gladiator's Mooncloth Gloves
 					un(REMOVED_FROM_GAME, i(115912)),	-- Primal Gladiator's Mooncloth Hood
@@ -1613,7 +1614,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115919)),	-- Primal Gladiator's Satin Robe
 					un(REMOVED_FROM_GAME, i(115968)),	-- Primal Gladiator's Satin Treads
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					un(REMOVED_FROM_GAME, i(115922)),	-- Primal Gladiator's Leather Boots
 					un(REMOVED_FROM_GAME, i(115924)),	-- Primal Gladiator's Leather Gloves
 					un(REMOVED_FROM_GAME, i(115925)),	-- Primal Gladiator's Leather Helm
@@ -1622,7 +1623,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115923)),	-- Primal Gladiator's Leather Tunic
 					un(REMOVED_FROM_GAME, i(115921)),	-- Primal Gladiator's Leather Waistband
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					un(REMOVED_FROM_GAME, i(115870)),	-- Primal Gladiator's Chain Armor
 					un(REMOVED_FROM_GAME, i(115871)),	-- Primal Gladiator's Chain Gauntlets
 					un(REMOVED_FROM_GAME, i(115872)),	-- Primal Gladiator's Chain Helm
@@ -1645,7 +1646,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115935)),	-- Primal Gladiator's Ringmail Spaulders
 					un(REMOVED_FROM_GAME, i(115928)),	-- Primal Gladiator's Ringmail Waistguard
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					un(REMOVED_FROM_GAME, i(115960)),	-- Primal Gladiator's Felweave Amice
 					un(REMOVED_FROM_GAME, i(115825)),	-- Primal Gladiator's Felweave Cord
 					un(REMOVED_FROM_GAME, i(115957)),	-- Primal Gladiator's Felweave Cowl
@@ -1654,7 +1655,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115828)),	-- Primal Gladiator's Felweave Treads
 					un(REMOVED_FROM_GAME, i(115958)),	-- Primal Gladiator's Felweave Trousers
 				}),
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					un(REMOVED_FROM_GAME, i(115961)),	-- Primal Gladiator's Plate Chestpiece
 					un(REMOVED_FROM_GAME, i(115962)),	-- Primal Gladiator's Plate Gauntlets
 					un(REMOVED_FROM_GAME, i(115907)),	-- Primal Gladiator's Plate Girdle
@@ -1670,7 +1671,7 @@ _.PVP =
 			un(REMOVED_FROM_GAME, i(120355)),	-- Silver Strongbox
 			un(REMOVED_FROM_GAME, i(120354)),	-- Gold Strongbox
 			n(-659, {	-- Aspirant PvP Gear
-				cl(6, {	-- Death Knight
+				cl(DEATHKNIGHT, {
 					un(REMOVED_FROM_GAME, i(125070)),	-- Wild Aspirant's Dreadplate Chestpiece (A)
 					un(REMOVED_FROM_GAME, i(125071)),	-- Wild Aspirant's Dreadplate Gauntlets (A)
 					un(REMOVED_FROM_GAME, i(125072)),	-- Wild Aspirant's Dreadplate Helm (A)
@@ -1682,7 +1683,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125550)),	-- Wild Aspirant's Dreadplate Legguards (H)
 					un(REMOVED_FROM_GAME, i(125551)),	-- Wild Aspirant's Dreadplate Shoulders (H)
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					un(REMOVED_FROM_GAME, i(125075)),	-- Wild Aspirant's Dragonhide Gloves (A)
 					un(REMOVED_FROM_GAME, i(125076)),	-- Wild Aspirant's Dragonhide Helm (A)
 					un(REMOVED_FROM_GAME, i(125077)),	-- Wild Aspirant's Dragonhide Legguards (A)
@@ -1694,7 +1695,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125555)),	-- Wild Aspirant's Dragonhide Tunic (H)
 					un(REMOVED_FROM_GAME, i(125556)),	-- Wild Aspirant's Dragonhide Spaulders (H)
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					un(REMOVED_FROM_GAME, i(125080)),	-- Wild Aspirant's Chain Armor (A)
 					un(REMOVED_FROM_GAME, i(125081)),	-- Wild Aspirant's Chain Gauntlets (A)
 					un(REMOVED_FROM_GAME, i(125082)),	-- Wild Aspirant's Chain Helm (A)
@@ -1706,7 +1707,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125560)),	-- Wild Aspirant's Chain Leggings (H)
 					un(REMOVED_FROM_GAME, i(125561)),	-- Wild Aspirant's Chain Spaulders (H)
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					un(REMOVED_FROM_GAME, i(125096)),	-- Wild Aspirant's Silk Handguards (A)
 					un(REMOVED_FROM_GAME, i(125097)),	-- Wild Aspirant's Silk Cowl (A)
 					un(REMOVED_FROM_GAME, i(125098)),	-- Wild Aspirant's Silk Trousers (A)
@@ -1718,7 +1719,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125576)),	-- Wild Aspirant's Silk Robe (H)
 					un(REMOVED_FROM_GAME, i(125577)),	-- Wild Aspirant's Silk Amice (H)
 				}),
-				cl(10, {	-- Monk
+				cl(MONK, {
 					un(REMOVED_FROM_GAME, i(125104)),	-- Wild Aspirant's Ironskin Gloves (A)
 					un(REMOVED_FROM_GAME, i(125105)),	-- Wild Aspirant's Ironskin Helm (A)
 					un(REMOVED_FROM_GAME, i(125106)),	-- Wild Aspirant's Ironskin Legguards (A)
@@ -1730,7 +1731,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125584)),	-- Wild Aspirant's Ironskin Spaulders (H)
 					un(REMOVED_FROM_GAME, i(125585)),	-- Wild Aspirant's Ironskin Tunic (H)
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					un(REMOVED_FROM_GAME, i(125109)),	-- Wild Aspirant's Scaled Chestpiece (A)
 					un(REMOVED_FROM_GAME, i(125110)),	-- Wild Aspirant's Scaled Gauntlets (A)
 					un(REMOVED_FROM_GAME, i(125111)),	-- Wild Aspirant's Scaled Helm (A)
@@ -1742,7 +1743,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125589)),	-- Wild Aspirant's Scaled Legguards (H)
 					un(REMOVED_FROM_GAME, i(125590)),	-- Wild Aspirant's Scaled Shoulders (H)
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					un(REMOVED_FROM_GAME, i(125117)),	-- Wild Aspirant's Satin Gloves (A)
 					un(REMOVED_FROM_GAME, i(125118)),	-- Wild Aspirant's Satin Hood (A)
 					un(REMOVED_FROM_GAME, i(125119)),	-- Wild Aspirant's Satin Leggings (A)
@@ -1754,7 +1755,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125597)),	-- Wild Aspirant's Satin Robe (H)
 					un(REMOVED_FROM_GAME, i(125598)),	-- Wild Aspirant's Satin Mantle (H)
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					un(REMOVED_FROM_GAME, i(125122)),	-- Wild Aspirant's Leather Tunic (A)
 					un(REMOVED_FROM_GAME, i(125123)),	-- Wild Aspirant's Leather Gloves (A)
 					un(REMOVED_FROM_GAME, i(125124)),	-- Wild Aspirant's Leather Helm (A)
@@ -1766,7 +1767,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125602)),	-- Wild Aspirant's Leather Legguards (H)
 					un(REMOVED_FROM_GAME, i(125599)),	-- Wild Aspirant's Leather Tunic (H)
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					un(REMOVED_FROM_GAME, i(125127)),	-- Wild Aspirant's Ringmail Armor (A)
 					un(REMOVED_FROM_GAME, i(125128)),	-- Wild Aspirant's Ringmail Gauntlets (A)
 					un(REMOVED_FROM_GAME, i(125129)),	-- Wild Aspirant's Ringmail Helm (A)
@@ -1778,7 +1779,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125607)),	-- Wild Aspirant's Ringmail Leggings (H)
 					un(REMOVED_FROM_GAME, i(125608)),	-- Wild Aspirant's Ringmail Spaulders (H)
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					un(REMOVED_FROM_GAME, i(125144)),	-- Wild Aspirant's Felweave Handguards (A)
 					un(REMOVED_FROM_GAME, i(125145)),	-- Wild Aspirant's Felweave Cowl (A)
 					un(REMOVED_FROM_GAME, i(125146)),	-- Wild Aspirant's Felweave Trousers (A)
@@ -1790,7 +1791,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125624)),	-- Wild Aspirant's Felweave Raiment (H)
 					un(REMOVED_FROM_GAME, i(125625)),	-- Wild Aspirant's Felweave Amice (H)
 				}),
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					un(REMOVED_FROM_GAME, i(125149)),	-- Wild Aspirant's Plate Chestpiece (A)
 					un(REMOVED_FROM_GAME, i(125150)),	-- Wild Aspirant's Plate Gauntlets (A)
 					un(REMOVED_FROM_GAME, i(125151)),	-- Wild Aspirant's Plate Helm (A)
@@ -1891,8 +1892,8 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125620)),	-- Wild Aspirant's Accolade of Endurance (H)
 				}),
 			}),
-			n(-662, {	-- Elite PvP Gear	
-				cl(6, {	-- Death Knight
+			n(-662, {	-- Elite PvP Gear
+				cl(DEATHKNIGHT, {
 					un(REMOVED_FROM_GAME, i(125651)),	-- Wild Gladiator's Dreadplate Chestpiece
 					un(REMOVED_FROM_GAME, i(125652)),	-- Wild Gladiator's Dreadplate Gauntlets
 					un(REMOVED_FROM_GAME, i(125720)),	-- Wild Gladiator's Dreadplate Girdle
@@ -1901,7 +1902,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125655)),	-- Wild Gladiator's Dreadplate Shoulders
 					un(REMOVED_FROM_GAME, i(125723)),	-- Wild Gladiator's Dreadplate Warboots
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					un(REMOVED_FROM_GAME, i(125785)),	-- Wild Gladiator's Dragonhide Belt
 					un(REMOVED_FROM_GAME, i(125784)),	-- Wild Gladiator's Dragonhide Footguards
 					un(REMOVED_FROM_GAME, i(125656)),	-- Wild Gladiator's Dragonhide Gloves
@@ -1924,7 +1925,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125674)),	-- Wild Gladiator's Wyrmhide Robes
 					un(REMOVED_FROM_GAME, i(125675)),	-- Wild Gladiator's Wyrmhide Spaulders
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					un(REMOVED_FROM_GAME, i(125684)),	-- Wild Gladiator's Chain Armor
 					un(REMOVED_FROM_GAME, i(125685)),	-- Wild Gladiator's Chain Gauntlets
 					un(REMOVED_FROM_GAME, i(125686)),	-- Wild Gladiator's Chain Helm
@@ -1933,7 +1934,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125680)),	-- Wild Gladiator's Chain chain links
 					un(REMOVED_FROM_GAME, i(125682)),	-- Wild Gladiator's Chain Sabatons
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					un(REMOVED_FROM_GAME, i(125693)),	-- Wild Gladiator's Silk Amice
 					un(REMOVED_FROM_GAME, i(125638)),	-- Wild Gladiator's Silk Cord
 					un(REMOVED_FROM_GAME, i(125690)),	-- Wild Gladiator's Silk Cowl
@@ -1942,7 +1943,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125641)),	-- Wild Gladiator's Silk Treads
 					un(REMOVED_FROM_GAME, i(125691)),	-- Wild Gladiator's Silk Trousers
 				}),
-				cl(10, {	-- Monk
+				cl(MONK, {
 					un(REMOVED_FROM_GAME, i(125780)),	-- Wild Gladiator's Copperskin Boots
 					un(REMOVED_FROM_GAME, i(125701)),	-- Wild Gladiator's Copperskin Gloves
 					un(REMOVED_FROM_GAME, i(125702)),	-- Wild Gladiator's Copperskin Helm
@@ -1958,7 +1959,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125700)),	-- Wild Gladiator's Ironskin Tunic
 					un(REMOVED_FROM_GAME, i(125694)),	-- Wild Gladiator's Ironskin Waistband
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					un(REMOVED_FROM_GAME, i(125715)),	-- Wild Gladiator's Ornamented Chestguard
 					un(REMOVED_FROM_GAME, i(125712)),	-- Wild Gladiator's Ornamented Clasp
 					un(REMOVED_FROM_GAME, i(125716)),	-- Wild Gladiator's Ornamented Gloves
@@ -1974,7 +1975,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125709)),	-- Wild Gladiator's Scaled Legguards
 					un(REMOVED_FROM_GAME, i(125710)),	-- Wild Gladiator's Scaled Shoulders
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					un(REMOVED_FROM_GAME, i(125640)),	-- Wild Gladiator's Mooncloth Cord
 					un(REMOVED_FROM_GAME, i(125725)),	-- Wild Gladiator's Mooncloth Gloves
 					un(REMOVED_FROM_GAME, i(125726)),	-- Wild Gladiator's Mooncloth Hood
@@ -1990,7 +1991,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125733)),	-- Wild Gladiator's Satin Robe
 					un(REMOVED_FROM_GAME, i(125782)),	-- Wild Gladiator's Satin Treads
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					un(REMOVED_FROM_GAME, i(125736)),	-- Wild Gladiator's Leather Boots
 					un(REMOVED_FROM_GAME, i(125738)),	-- Wild Gladiator's Leather Gloves
 					un(REMOVED_FROM_GAME, i(125739)),	-- Wild Gladiator's Leather Helm
@@ -1999,7 +2000,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125737)),	-- Wild Gladiator's Leather Tunic
 					un(REMOVED_FROM_GAME, i(125735)),	-- Wild Gladiator's Leather Waistband
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					un(REMOVED_FROM_GAME, i(125750)),	-- Wild Gladiator's Linked Armor
 					un(REMOVED_FROM_GAME, i(125751)),	-- Wild Gladiator's Linked Gauntlets
 					un(REMOVED_FROM_GAME, i(125752)),	-- Wild Gladiator's Linked Helm
@@ -2022,7 +2023,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125749)),	-- Wild Gladiator's Ringmail Spaulders
 					un(REMOVED_FROM_GAME, i(125742)),	-- Wild Gladiator's Ringmail Waistguard
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					un(REMOVED_FROM_GAME, i(125774)),	-- wild Gladiator's Felweave Amice
 					un(REMOVED_FROM_GAME, i(125639)),	-- wild Gladiator's Felweave Cord
 					un(REMOVED_FROM_GAME, i(125771)),	-- wild Gladiator's Felweave Cowl
@@ -2031,7 +2032,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125642)),	-- wild Gladiator's Felweave Treads
 					un(REMOVED_FROM_GAME, i(125772)),	-- wild Gladiator's Felweave Trousers
 				}),
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					un(REMOVED_FROM_GAME, i(125775)),	-- Wild Gladiator's Plate Chestpiece
 					un(REMOVED_FROM_GAME, i(125776)),	-- Wild Gladiator's Plate Gauntlets
 					un(REMOVED_FROM_GAME, i(125721)),	-- Wild Gladiator's Plate Girdle
@@ -2048,77 +2049,77 @@ _.PVP =
 			un(REMOVED_FROM_GAME, i(120354)),	-- Gold Strongbox
 			n(-9914, {	-- Alliance
 				n(-659, {	-- Aspirant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(126184),	-- Warmongering Aspirant's Dreadplate Chestpiece (A)
 						i(126185),	-- Warmongering Aspirant's Dreadplate Gauntlets (A)
 						i(126186),	-- Warmongering Aspirant's Dreadplate Helm (A)
 						i(126187),	-- Warmongering Aspirant's Dreadplate Legguards (A)
 						i(126188),	-- Warmongering Aspirant's Dreadplate Shoulders (A)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(126189),	-- Warmongering Aspirant's Dragonhide Gloves (A)
 						i(126190),	-- Warmongering Aspirant's Dragonhide Helm (A)
 						i(126191),	-- Warmongering Aspirant's Dragonhide Legguards (A)
 						i(126193),	-- Warmongering Aspirant's Dragonhide Spaulders (A)
 						i(126192),	-- Warmongering Aspirant's Dragonhide Tunic (A)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(126194),	-- Warmongering Aspirant's Chain Armor (A)
 						i(126195),	-- Warmongering Aspirant's Chain Gauntlets (A)
 						i(126196),	-- Warmongering Aspirant's Chain Helm (A)
 						i(126197),	-- Warmongering Aspirant's Chain Leggings (A)
 						i(126198),	-- Warmongering Aspirant's Chain Spaulders (A)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(126214),	-- Warmongering Aspirant's Silk Amice (A)
 						i(126211),	-- Warmongering Aspirant's Silk Cowl (A)
 						i(126210),	-- Warmongering Aspirant's Silk Handguards (A)
 						i(126213),	-- Warmongering Aspirant's Silk Robe (A)
 						i(126212),	-- Warmongering Aspirant's Silk Trousers (A)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(126218),	-- Warmongering Aspirant's Ironskin Gloves (A)
 						i(126219),	-- Warmongering Aspirant's Ironskin Helm (A)
 						i(126220),	-- Warmongering Aspirant's Ironskin Legguards (A)
 						i(126221),	-- Warmongering Aspirant's Ironskin Spaulders (A)
 						i(126222),	-- Warmongering Aspirant's Ironskin Tunic (A)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(126223),	-- Warmongering Aspirant's Scaled Chestpiece (A)
 						i(126224),	-- Warmongering Aspirant's Scaled Gauntlets (A)
 						i(126225),	-- Warmongering Aspirant's Scaled Helm (A)
 						i(126226),	-- Warmongering Aspirant's Scaled Legguards (A)
 						i(126227),	-- Warmongering Aspirant's Scaled Shoulders (A)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(126231),	-- Warmongering Aspirant's Satin Gloves (A)
 						i(126232),	-- Warmongering Aspirant's Satin Hood (A)
 						i(126233),	-- Warmongering Aspirant's Satin Leggings (A)
 						i(126235),	-- Warmongering Aspirant's Satin Mantle (A)
 						i(126234),	-- Warmongering Aspirant's Satin Robe (A)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(126237),	-- Warmongering Aspirant's Leather Gloves (A)
 						i(126238),	-- Warmongering Aspirant's Leather Helm (A)
 						i(126239),	-- Warmongering Aspirant's Leather Legguards (A)
 						i(126240),	-- Warmongering Aspirant's Leather Spaulders (A)
 						i(126236),	-- Warmongering Aspirant's Leather Tunic (A)
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(126241),	-- Warmongering Aspirant's Ringmail Armor (A)
 						i(126242),	-- Warmongering Aspirant's Ringmail Gauntlets (A)
 						i(126243),	-- Warmongering Aspirant's Ringmail Helm (A)
 						i(126244),	-- Warmongering Aspirant's Ringmail Leggings (A)
 						i(126245),	-- Warmongering Aspirant's Ringmail Spaulders (A)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(126262),	-- Warmongering Aspirant's Felweave Amice (A)
 						i(126259),	-- Warmongering Aspirant's Felweave Cowl (A)
 						i(126258),	-- Warmongering Aspirant's Felweave Handguards (A)
 						i(126261),	-- Warmongering Aspirant's Felweave Raiment (A)
 						i(126260),	-- Warmongering Aspirant's Felweave Trousers (A)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(126263),	-- Warmongering Aspirant's Plate Chestpiece (A)
 						i(126264),	-- Warmongering Aspirant's Plate Gauntlets (A)
 						i(126265),	-- Warmongering Aspirant's Plate Helm (A)
@@ -2144,7 +2145,7 @@ _.PVP =
 						i(126228),	-- Warmongering Aspirant's Girdle of Cruelty (A)
 						i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty (A)
 					}),
-					n(-330, {	-- Feet	
+					n(-330, {	-- Feet
 						i(126208),	-- Warmongering Aspirant's Boots of Cruelty (A)
 						i(126216),	-- Warmongering Aspirant's Footguards of Cruelty (A)
 						i(126182),	-- Warmongering Aspirant's Treads of Cruelty (A)
@@ -2274,10 +2275,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 					}),
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(138589, {	-- Ensemble: Warmongering Combatant's Dreadplate Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -660, 6 },
 								{"select", "itemID", 126107 },	-- Warmongering Combatant's Armplates of Cruelty (A)
 								{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
@@ -2300,10 +2301,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(138593, {	-- Ensemble: Warmongering Combatant's Dragonhide Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -660, 11 },
 								{"select", "itemID", 126070 },	-- Warmongering Combatant's Bindings of Cruelty (A)
 								{"select", "itemID", 126067 },	-- Warmongering Combatant's Belt of Cruelty (A)
@@ -2326,10 +2327,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(138537, {	-- Ensemble: Warmongering Combatant's Chain Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 3 },
 								{"select", "itemID", 126087 },	-- Warmongering Combatant's Armbands of Cruelty (A)
 								{"select", "itemID", 126082 },	-- Warmongering Combatant's Waistguard of Cruelty (A)
@@ -2352,10 +2353,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(138539, {	-- Ensemble: Warmongering Combatant's Silk Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -660, 8 },
 								{"select", "itemID", 126021 },	-- Warmongering Combatant's Cuffs of Cruelty (A)
 								{"select", "itemID", 126016 },	-- Warmongering Combatant's Cord of Cruelty (A)
@@ -2378,10 +2379,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(138595, {	-- Ensemble: Warmongering Combatant's Ironskin Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -660, 10 },
 								{"select", "itemID", 126070 },	-- Warmongering Combatant's Bindings of Cruelty (A)
 								{"select", "itemID", 126067 },	-- Warmongering Combatant's Belt of Cruelty (A)
@@ -2404,10 +2405,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(138591, {	-- Ensemble: Warmongering Combatant's Scaled Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -660, 2 },
 								{"select", "itemID", 126107 },	-- Warmongering Combatant's Armplates of Cruelty (A)
 								{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
@@ -2430,10 +2431,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(138541, {	-- Ensemble: Warmongering Combatant's Satin Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -660, 5 },
 								{"select", "itemID", 126021 },	-- Warmongering Combatant's Cuffs of Cruelty (A)
 								{"select", "itemID", 126016 },	-- Warmongering Combatant's Cord of Cruelty (A)
@@ -2456,10 +2457,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(138597, {	-- Ensemble: Warmongering Combatant's Leather Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -660, 4 },
 								{"select", "itemID", 126070 },	-- Warmongering Combatant's Bindings of Cruelty (A)
 								{"select", "itemID", 126067 },	-- Warmongering Combatant's Belt of Cruelty (A)
@@ -2482,10 +2483,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(138535, {	-- Ensemble: Warmongering Combatant's Ringmail Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -660, 7 },
 								{"select", "itemID", 126087 },	-- Warmongering Combatant's Armbands of Cruelty (A)
 								{"select", "itemID", 126082 },	-- Warmongering Combatant's Waistguard of Cruelty (A)
@@ -2508,10 +2509,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(138543, {	-- Ensemble: Warmongering Combatant's Felweave Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -660, 9 },
 								{"select", "itemID", 126021 },	-- Warmongering Combatant's Cuffs of Cruelty (A)
 								{"select", "itemID", 126016 },	-- Warmongering Combatant's Cord of Cruelty (A)
@@ -2534,10 +2535,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(138587, {	-- Ensemble: Warmongering Combatant's Plate Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -660, 1 },
 								{"select", "itemID", 126107 },	-- Warmongering Combatant's Armplates of Cruelty (A)
 								{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
@@ -2560,7 +2561,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					n(-320, {	-- Head	
+					n(-320, {	-- Head
 						i(126023),	-- Warmongering Combatant's Hood of Prowess (A)
 						i(126074),	-- Warmongering Combatant's Helm (A)
 						i(126090),	-- Warmongering Combatant's Helm (A)
@@ -2696,7 +2697,7 @@ _.PVP =
 						i(126106, {	-- Warmongering Combatant's Warboots of Prowess (A)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-					}),	
+					}),
 					n(-384,	{	-- Neck
 						i(126138),	-- Warmongering Combatant's Choker of Cruelty (A)
 						i(126164),	-- Warmongering Combatant's Choker of Endurance (A)
@@ -2839,7 +2840,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 					}),
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(138493, {	-- Ensemble: Warmongering Gladiator's Dreadplate Armor (A)
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -661, 6 },
@@ -2864,7 +2865,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(138501, {	-- Ensemble: Warmongering Gladiator's Dragonhide Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -2890,7 +2891,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(138499, {	-- Ensemble: Warmongering Gladiator's Chain Armor (A)
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -661, 3 },
@@ -2915,7 +2916,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(138507, {	-- Ensemble: Warmongering Gladiator's Silk Armor (A)
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -661, 8 },
@@ -2940,7 +2941,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(138503, {	-- Ensemble: Warmongering Gladiator's Ironskin Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -2966,7 +2967,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(138495, {	-- Ensemble: Warmongering Gladiator's Scaled Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -2992,7 +2993,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(138509, {	-- Ensemble: Warmongering Gladiator's Satin Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -3018,7 +3019,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(138505, {	-- Ensemble: Warmongering Gladiator's Leather Armor (A)
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -661, 4 },
@@ -3043,7 +3044,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(138497, {	-- Ensemble: Warmongering Gladiator's Ringmail Armor (A)
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -661, 7 },
@@ -3068,7 +3069,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(138511, {	-- Ensemble: Warmongering Gladiator's Felweave Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -3094,7 +3095,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(138491, {	-- Ensemble: Warmongering Gladiator's Plate Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -3448,77 +3449,77 @@ _.PVP =
 			}),
 			n(-9913, {	-- Horde
 				n(-659, {	-- Aspirant PvP Gear
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(126661),	-- Warmongering Aspirant's Dreadplate Chestpiece (H)
 						i(126662),	-- Warmongering Aspirant's Dreadplate Gauntlets (H)
 						i(126663),	-- Warmongering Aspirant's Dreadplate Helm (H)
 						i(126664),	-- Warmongering Aspirant's Dreadplate Legguards (H)
 						i(126665),	-- Warmongering Aspirant's Dreadplate Shoulders (H)
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(126666),	-- Warmongering Aspirant's Dragonhide Gloves (H)
 						i(126667),	-- Warmongering Aspirant's Dragonhide Helm (H)
 						i(126668),	-- Warmongering Aspirant's Dragonhide Legguards (H)
 						i(126670),	-- Warmongering Aspirant's Dragonhide Spaulders (H)
 						i(126669),	-- Warmongering Aspirant's Dragonhide Tunic (H)
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(126671),	-- Warmongering Aspirant's Chain Armor (H)
 						i(126672),	-- Warmongering Aspirant's Chain Gauntlets (H)
 						i(126673),	-- Warmongering Aspirant's Chain Helm (H)
 						i(126674),	-- Warmongering Aspirant's Chain Leggings (H)
 						i(126675),	-- Warmongering Aspirant's Chain Spaulders (H)
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(126691),	-- Warmongering Aspirant's Silk Amice (H)
 						i(126688),	-- Warmongering Aspirant's Silk Cowl (H)
 						i(126687),	-- Warmongering Aspirant's Silk Handguards (H)
 						i(126690),	-- Warmongering Aspirant's Silk Robe (H)
 						i(126689),	-- Warmongering Aspirant's Silk Trousers (H)
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(126695),	-- Warmongering Aspirant's Ironskin Gloves (H)
 						i(126696),	-- Warmongering Aspirant's Ironskin Helm (H)
 						i(126697),	-- Warmongering Aspirant's Ironskin Legguards (H)
 						i(126698),	-- Warmongering Aspirant's Ironskin Spaulders (H)
 						i(126699),	-- Warmongering Aspirant's Ironskin Tunic (H)
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(126700),	-- Warmongering Aspirant's Scaled Chestpiece (H)
 						i(126701),	-- Warmongering Aspirant's Scaled Gauntlets (H)
 						i(126702),	-- Warmongering Aspirant's Scaled Helm (H)
 						i(126703),	-- Warmongering Aspirant's Scaled Legguards (H)
 						i(126704),	-- Warmongering Aspirant's Scaled Shoulders (H)
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(126708),	-- Warmongering Aspirant's Satin Gloves (H)
 						i(126709),	-- Warmongering Aspirant's Satin Hood (H)
 						i(126710),	-- Warmongering Aspirant's Satin Leggings (H)
 						i(126712),	-- Warmongering Aspirant's Satin Mantle (H)
 						i(126711),	-- Warmongering Aspirant's Satin Robe (H)
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(126714),	-- Warmongering Aspirant's Leather Gloves (H)
 						i(126715),	-- Warmongering Aspirant's Leather Helm (H)
 						i(126716),	-- Warmongering Aspirant's Leather Legguards (H)
 						i(126717),	-- Warmongering Aspirant's Leather Spaulders (H)
 						i(126713),	-- Warmongering Aspirant's Leather Tunic (H)
 					}),
-					cl(7, {	-- Shaman	
+					cl(SHAMAN, {
 						i(126718),	-- Warmongering Aspirant's Ringmail Armor (H)
 						i(126719),	-- Warmongering Aspirant's Ringmail Gauntlets (H)
 						i(126720),	-- Warmongering Aspirant's Ringmail Helm (H)
 						i(126721),	-- Warmongering Aspirant's Ringmail Leggings (H)
 						i(126722),	-- Warmongering Aspirant's Ringmail Spaulders (H)
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(126739),	-- Warmongering Aspirant's Felweave Amice (H)
 						i(126736),	-- Warmongering Aspirant's Felweave Cowl (H)
 						i(126735),	-- Warmongering Aspirant's Felweave Handguards (H)
 						i(126738),	-- Warmongering Aspirant's Felweave Raiment (H)
 						i(126737),	-- Warmongering Aspirant's Felweave Trousers (H)
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(126740),	-- Warmongering Aspirant's Plate Chestpiece (H)
 						i(126741),	-- Warmongering Aspirant's Plate Gauntlets (H)
 						i(126742),	-- Warmongering Aspirant's Plate Helm (H)
@@ -3674,10 +3675,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 					}),
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(138590, {	-- Ensemble: Warmongering Combatant's Dreadplate Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 6 },
 								{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
 								{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
@@ -3700,10 +3701,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(138594, {	-- Ensemble: Warmongering Combatant's Dragonhide Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 11 },
 								{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
 								{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
@@ -3726,10 +3727,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(138538, {	-- Ensemble: Warmongering Combatant's Chain Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 3 },
 								{"select", "itemID", 126564 },	-- Warmongering Combatant's Armbands of Cruelty (H)
 								{"select", "itemID", 126559 },	-- Warmongering Combatant's Waistguard of Cruelty (H)
@@ -3752,10 +3753,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(138540, {	-- Ensemble: Warmongering Combatant's Silk Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 8 },
 								{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
 								{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
@@ -3778,10 +3779,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(138596, {	-- Ensemble: Warmongering Combatant's Ironskin Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 10 },
 								{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
 								{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
@@ -3804,10 +3805,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(138592, {	-- Ensemble: Warmongering Combatant's Scaled Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 2 },
 								{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
 								{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
@@ -3830,10 +3831,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(138542, {	-- Ensemble: Warmongering Combatant's Satin Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 5 },
 								{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
 								{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
@@ -3856,10 +3857,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(138598, {	-- Ensemble: Warmongering Combatant's Leather Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 4 },
 								{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
 								{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
@@ -3882,10 +3883,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(138536, {	-- Ensemble: Warmongering Combatant's Ringmail Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 7 },
 								{"select", "itemID", 126564 },	-- Warmongering Combatant's Armbands of Cruelty (H)
 								{"select", "itemID", 126559 },	-- Warmongering Combatant's Waistguard of Cruelty (H)
@@ -3908,10 +3909,10 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(138544, {	-- Ensemble: Warmongering Combatant's Felweave Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 9 },
 								{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
 								{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
@@ -3930,14 +3931,14 @@ _.PVP =
 						i(126647, {	-- Warmongering Combatant's Felweave Raiment (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(126646, {	-- Warmongering Combatant's Felweave Trousers (H)	
+						i(126646, {	-- Warmongering Combatant's Felweave Trousers (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(138588, {	-- Ensemble: Warmongering Combatant's Plate Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 1 },
 								{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
 								{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
@@ -4221,7 +4222,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 					}),
-					cl(6, {	-- Death Knight
+					cl(DEATHKNIGHT, {
 						i(138494, {	-- Ensemble: Warmongering Gladiator's Dreadplate Armor (H)
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 6 },
@@ -4246,7 +4247,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(11, {	-- Druid
+					cl(DRUID, {
 						i(138502, {	-- Ensemble: Warmongering Gladiator's Dragonhide Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4272,7 +4273,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(3, {	-- Hunter
+					cl(HUNTER, {
 						i(138500, {	-- Ensemble: Warmongering Gladiator's Chain Armor (H)
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 3 },
@@ -4297,7 +4298,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(8, {	-- Mage
+					cl(MAGE, {
 						i(138508, {	-- Ensemble: Warmongering Gladiator's Silk Armor (H)
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 8 },
@@ -4322,7 +4323,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(10, {	-- Monk
+					cl(MONK, {
 						i(138504, {	-- Ensemble: Warmongering Gladiator's Ironskin Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4348,7 +4349,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(2, {	-- Paladin
+					cl(PALADIN, {
 						i(138496, {	-- Ensemble: Warmongering Gladiator's Scaled Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4374,7 +4375,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(5, {	-- Priest
+					cl(PRIEST, {
 						i(138510, {	-- Ensemble: Warmongering Gladiator's Satin Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4400,7 +4401,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(4, {	-- Rogue
+					cl(ROGUE, {
 						i(138506, {	-- Ensemble: Warmongering Gladiator's Leather Armor (H)
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 4 },
@@ -4425,7 +4426,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(7, {	-- Shaman
+					cl(SHAMAN, {
 						i(138498, {	-- Ensemble: Warmongering Gladiator's Ringmail Armor (H)
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 7 },
@@ -4450,7 +4451,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					cl(9, {	-- Warlock
+					cl(WARLOCK, {
 						i(138512, {	-- Ensemble: Warmongering Gladiator's Felweave Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4476,7 +4477,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
-					cl(1, {	-- Warrior
+					cl(WARRIOR, {
 						i(138492, {	-- Ensemble: Warmongering Gladiator's Plate Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4500,7 +4501,7 @@ _.PVP =
 						}),
 						i(126475, {	-- Warmongering Gladiator's Plate Shoulders (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),	
+						}),
 					}),
 					n(-320, {	-- Head
 						i(126300, {	-- Warmongering Gladiator's Cowl of Cruelty (H)
@@ -4829,7 +4830,7 @@ _.PVP =
 				}),
 			}),
 			n(-662, {	-- Elite PvP Gear
-				cl(6, {	-- Death Knight
+				cl(DEATHKNIGHT, {
 					un(REMOVED_FROM_GAME, i(126765)), -- Warmongering Gladiator's Dreadplate Chestpiece
 					un(REMOVED_FROM_GAME, i(126766)), -- Warmongering Gladiator's Dreadplate Gauntlets
 					un(REMOVED_FROM_GAME, i(126767)), -- Warmongering Gladiator's Dreadplate Helm
@@ -4838,7 +4839,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(126834)), -- Warmongering Gladiator's Dreadplate Girdle
 					un(REMOVED_FROM_GAME, i(126837)), -- Warmongering Gladiator's Dreadplate Warboots
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					un(REMOVED_FROM_GAME, i(126899)),	-- Warmongering Gladiator's Dragonhide Belt
 					un(REMOVED_FROM_GAME, i(126898)),	-- Warmongering Gladiator's Dragonhide Footguards
 					un(REMOVED_FROM_GAME, i(126770)),	-- Warmongering Gladiator's Dragonhide Gloves
@@ -4861,7 +4862,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(126788)),	-- Warmongering Gladiator's Wyrmhide Robes
 					un(REMOVED_FROM_GAME, i(126789)),	-- Warmongering Gladiator's Wyrmhide Spaulders
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					un(REMOVED_FROM_GAME, i(126798)),	-- Warmongering Gladiator's Chain Armor
 					un(REMOVED_FROM_GAME, i(126799)),	-- Warmongering Gladiator's Chain Gauntlets
 					un(REMOVED_FROM_GAME, i(126800)),	-- Warmongering Gladiator's Chain Helm
@@ -4870,7 +4871,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(126796)),	-- Warmongering Gladiator's Chain Sabatons
 					un(REMOVED_FROM_GAME, i(126802)),	-- Warmongering Gladiator's Chain Spaulders
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					un(REMOVED_FROM_GAME, i(126807)),	-- Warmongering Gladiator's Silk Amice
 					un(REMOVED_FROM_GAME, i(126752)),	-- Warmongering Gladiator's Silk Cord
 					un(REMOVED_FROM_GAME, i(126804)),	-- Warmongering Gladiator's Silk Cowl
@@ -4879,7 +4880,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(126755)),	-- Warmongering Gladiator's Silk Treads
 					un(REMOVED_FROM_GAME, i(126805)),	-- Warmongering Gladiator's Silk Trousers
 				}),
-				cl(10, {	-- Monk
+				cl(MONK, {
 					un(REMOVED_FROM_GAME, i(126809)),	-- Warmongering Gladiator's Ironskin Boots
 					un(REMOVED_FROM_GAME, i(126810)),	-- Warmongering Gladiator's Ironskin Gloves
 					un(REMOVED_FROM_GAME, i(126811)),	-- Warmongering Gladiator's Ironskin Helm
@@ -4895,7 +4896,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(126819)),	-- Warmongering Gladiator's Copperskin Tunic
 					un(REMOVED_FROM_GAME, i(126895)),	-- Warmongering Gladiator's Copperskin Waistband
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					un(REMOVED_FROM_GAME, i(126826)), -- Warmongering Gladiator's Ornamented Clasp
 					un(REMOVED_FROM_GAME, i(126827)), -- Warmongering Gladiator's Ornamented Greaves
 					un(REMOVED_FROM_GAME, i(126829)), -- Warmongering Gladiator's Ornamented Chestguard
@@ -4911,7 +4912,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(126825)), -- Warmongering Gladiator's Scaled Clasp
 					un(REMOVED_FROM_GAME, i(126828)), -- Warmongering Gladiator's Scaled Greaves
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					un(REMOVED_FROM_GAME, i(126754)),	-- Warmongering Gladiator's Mooncloth Cord
 					un(REMOVED_FROM_GAME, i(126839)),	-- Warmongering Gladiator's Mooncloth Gloves
 					un(REMOVED_FROM_GAME, i(126840)),	-- Warmongering Gladiator's Mooncloth Hood
@@ -4927,7 +4928,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(126847)),	-- Warmongering Gladiator's Satin Robe
 					un(REMOVED_FROM_GAME, i(126896)),	-- Warmongering Gladiator's Satin Treads
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					un(REMOVED_FROM_GAME, i(126850)),	-- Warmongering Gladiator's Leather Boots
 					un(REMOVED_FROM_GAME, i(126852)),	-- Warmongering Gladiator's Leather Gloves
 					un(REMOVED_FROM_GAME, i(126853)),	-- Warmongering Gladiator's Leather Helm
@@ -4936,7 +4937,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(126851)),	-- Warmongering Gladiator's Leather Tunic
 					un(REMOVED_FROM_GAME, i(126849)),	-- Warmongering Gladiator's Leather Waistband
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					un(REMOVED_FROM_GAME, i(126864)),	-- Warmongering Gladiator's Linked Armor
 					un(REMOVED_FROM_GAME, i(126865)),	-- Warmongering Gladiator's Linked Gauntlets
 					un(REMOVED_FROM_GAME, i(126866)),	-- Warmongering Gladiator's Linked Helm
@@ -4959,7 +4960,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(126863)),	-- Warmongering Gladiator's Ringmail Spaulders
 					un(REMOVED_FROM_GAME, i(126856)),	-- Warmongering Gladiator's Ringmail Waistguard
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					un(REMOVED_FROM_GAME, i(126888)),	-- Warmongering Gladiator's Felweave Amice
 					un(REMOVED_FROM_GAME, i(126753)),	-- Warmongering Gladiator's Felweave Cord
 					un(REMOVED_FROM_GAME, i(126885)),	-- Warmongering Gladiator's Felweave Cowl
@@ -4968,7 +4969,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(126756)),	-- Warmongering Gladiator's Felweave Treads
 					un(REMOVED_FROM_GAME, i(126886)),	-- Warmongering Gladiator's Felweave Trousers
 				}),
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					un(REMOVED_FROM_GAME, i(126835)), -- Warmongering Gladiator's Plate Girdle
 					un(REMOVED_FROM_GAME, i(126836)), -- Warmongering Gladiator's Plate Warboots
 					un(REMOVED_FROM_GAME, i(126889)), -- Warmongering Gladiator's Plate Chestpiece

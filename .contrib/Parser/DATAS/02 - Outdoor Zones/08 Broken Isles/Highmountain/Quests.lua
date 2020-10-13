@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(650, {	-- Highmountain
-			n(QUESTS, {	
+			n(QUESTS, {
 				q(40216, {	-- A Hunter at Heart
 					["sourceQuests"] = {
 						40170,	-- Amateur Hour
@@ -15,7 +16,7 @@ _.Zones =
 					["provider"] = { "n", 94409 },	-- Hemet Nesingwary
 				}),
 				q(40170, {	-- Amateur Hour
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						40217,	-- An Offering of Ammo
 						39417,	-- Rating Razik
 					},
@@ -51,10 +52,10 @@ _.Zones =
 				}),
 				q(45841, {	-- A Triumphant Report
 					["classes"] = {
-						3,	-- Hunter (Beast Mastery)
-						10,	-- Monk (Windwalker)
-						5,	-- Priest (Discipline)
-						9,	-- Warlock (Destruction)
+						HUNTER,		-- Beast Mastery
+						MONK,		-- Windwalker
+						PRIEST,		-- Discipline
+						WARLOCK,	-- Destruction
 					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
@@ -273,7 +274,7 @@ _.Zones =
 				}),
 				q(42425, {	-- Going Down, Going Up
 					["sourceQuests"] = { 40069 },	-- Fledgling Worm Guts
-				--	didn't require "Eagle Egg Recovery" or "Tamer Takedown." 
+				--	didn't require "Eagle Egg Recovery" or "Tamer Takedown."
 					["coord"] = { 49.4, 39.2, 650 },
 					["provider"] = { "n", 94068 },	-- Oren Windstrider
 				}),
@@ -654,7 +655,6 @@ _.Zones =
 					["coord"] = { 52.3, 61.6, 659 },	-- Stonedark Grotto
 					["provider"] = { "n", 95799 },	-- Damrul the Stronk
 				}),
-				
 				q(40071, {	-- Tamer Takedown
 					["coord"] = { 50.9, 36.6, 650 },
 					["provider"] = { "n", 94068 },	-- Oren Windstrider
@@ -752,7 +752,7 @@ _.Zones =
 				}),
 				q(40385, {	-- The Spear in the Shadow
 					["sourceQuests"] = { 39427 },	-- The Eagle Spirit's Blessing
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["providers"] = {
 						{ "n", 110821 },	-- Apata Highmountain
 						{ "n", 110986 },	-- Apata Highmountain
@@ -889,7 +889,7 @@ _.Zones =
 					["provider"] = { "n", 96513 },	-- Razik Gazbolt
 					["groups"] = {
 						i(131933),	-- Critter Hand Cannon (TOY!)
-					},	
+					},
 				}),
 				q(39134, {	-- Wrathshard
 					["sourceQuests"] = { 38909 },	-- Get to High Ground
@@ -940,7 +940,6 @@ _.Zones =
 				q(39235),	-- Buba
 				q(44311),	-- Burning Plate of the Worldbreaker Available
 				q(44312),	-- Burning Plate of the Worldbreaker Denied
-				q(40392),	-- Call of the Marksman
 				q(42389),	-- Calling Hilaire Home
 				q(41042),	-- Champion Chomper
 				q(42414),	-- Champion: Addie Fizzlebog
@@ -952,13 +951,11 @@ _.Zones =
 				q(44043),	-- Continuing the Legend
 				q(45350),	-- Countering the Contagion
 				q(42699),	-- Coura, Master of Arcana
-				q(44275),	-- Court of Stars
 				q(39994),	-- Crab Rider Grmlrml
 				q(41241),	-- Cursed Queenfish Needed
 				q(45392),	-- Dark Memento
 				q(43551),	-- Darkheart Thicket
 				q(44272),	-- Darkheart Thicket
-				q(44273),	-- Darkheart Thicket
 				q(42654),	-- Darkheart Thicket: Nightmare Oak
 				q(47073),	-- Delivering Lost Knowledge
 				q(45796),	-- Destroying the Nest
@@ -981,7 +978,6 @@ _.Zones =
 				q(40347),	-- Gurbog da Basher
 				q(39436),	-- Haglands Treasure
 				q(39827),	-- Haglands Treasure
-				q(40190),	-- Hardening the Hide
 				q(40134),	-- Highmountain Hides
 				q(42403),	-- Highmountain Hunters
 				q(42929),	-- Highmountain Salmon
@@ -1124,7 +1120,7 @@ _.Zones =
 				q(41832),	-- White Water Terror
 				q(47019),	-- Windwalker: Rumblings Near Feltotem
 				q(41825),	-- Winged Menace
-				q(41761),	-- Winter Moose Roundup		  
+				q(41761),	-- Winter Moose Roundup
 				--]]
 			}),
 		}),

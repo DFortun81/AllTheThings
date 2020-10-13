@@ -1,6 +1,7 @@
--------------------------------------------------
+---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -22,7 +23,7 @@ _.Zones =
 					["g"] = {
 						o(224686, {	-- Devourer's Gutstone
 							["icon"] = "Interface\\Icons\\INV_Elemental_Primal_Fire",
-							["g"] = {	
+							["g"] = {
 								i(112110),  -- Carapace Shield of the Devourer
 							},
 						}),
@@ -56,7 +57,7 @@ _.Zones =
 				n(72294, {	-- Cindermaw
 					["questID"] = 33014,
 					["coord"] = { 40.5, 47.0, 525 },
-					["g"] = {	
+					["g"] = {
 						i(111490),	-- Cindermaw's Blazing Talon
 					},
 				}),
@@ -70,7 +71,7 @@ _.Zones =
 				n(77513, {	-- Coldstomp the Griever
 					["questID"] = 34129,
 					["coord"] = { 26.6, 55.6, 525 },	-- Walks around near this point on the ice
-					["g"] = {	
+					["g"] = {
 						i(112066),	-- Coldstomp's Sorrow
 					},
 				}),
@@ -80,14 +81,14 @@ _.Zones =
 						{ 54.2, 67.6, 525 },
 						{ 55.0, 71.2, 525 },
 					},
-					["g"] = {	
+					["g"] = {
 						i(111484),	-- Cold Tusk
 					},
 				}),
 				n(78621, {	-- Cyclonic Fury
 					["questID"] = 34477,
 					["coord"] = { 67.2, 78.8, 525 },
-					["g"] = {	
+					["g"] = {
 						i(112086),	-- Windburnt Pauldrons
 					},
 				}),
@@ -109,7 +110,7 @@ _.Zones =
 				n(71665, {	-- Giant-Slayer Kul
 					["questID"] = 32918,
 					["coord"] = { 54.7, 22.3, 525 },
-					["g"] = {	
+					["g"] = {
 						i(111530),	-- Giantstalker's Guile
 					},
 				}),
@@ -159,8 +160,8 @@ _.Zones =
 				n(80312, {	-- Grutush the Pillager
 					["questID"] = 34865,
 					["coord"] = { 38.7, 62.8, 525 },
-					["g"] = {	
-						i(112077),	-- Grutush's Fur-Padded Pantaloons 
+					["g"] = {
+						i(112077),	-- Grutush's Fur-Padded Pantaloons
 					},
 				}),
 				n(80190, {	-- Gruuk
@@ -173,7 +174,7 @@ _.Zones =
 				n(80235, {	-- Gurun
 					["questID"] = 34839,
 					["coord"] = { 47.1, 55.3, 525 },
-					["g"] = {	
+					["g"] = {
 						i(111955),	-- Skog's Drape
 					},
 				}),
@@ -203,8 +204,8 @@ _.Zones =
 					["questID"] = 37386,
 					["isDaily"] = true,
 					["coord"] = { 49.0, 24.0, 525 },	-- **Coords uncofirmed, relied on wowhead**
-					["g"] = {	
-						i(119390),	-- Rockworm Carapace Shield 
+					["g"] = {
+						i(119390),	-- Rockworm Carapace Shield
 					},
 				}),
 				n(87600, {	-- Jaluk the Pacifist
@@ -215,7 +216,7 @@ _.Zones =
 				n(79678, {	-- Jehil the Climber
 					["questID"] = 34708,
 					["coord"] = { 61.7, 26.6, 525 },
-					["g"] = {	
+					["g"] = {
 						i(112078),	-- Jehil's Climbin' Boots
 					},
 				}),
@@ -223,29 +224,29 @@ _.Zones =
 					["questID"] = 37404,
 					["isDaily"] = true,
 					["coord"] = { 86.8, 46.6, 525 },
-					["g"] = {	
-						i(119372),	-- Ironstudded Scale Girdle 
+					["g"] = {
+						i(119372),	-- Ironstudded Scale Girdle
 					},
 				}),
 				n(82614, {	-- Moltnoma
 					["questID"] = 37387,
 					["isDaily"] = true,
 					["coord"] = { 42.4, 21.7, 525 },
-					["g"] = {	
-						i(119356),	-- Moltnoma's Magma Mantle 
+					["g"] = {
+						i(119356),	-- Moltnoma's Magma Mantle
 					},
-				}), 
+				}),
 				n(87351, {	-- Mother of Goren
 					["questID"] = 37381,
 					["isDaily"] = true,
 					["coord"] = { 72.6, 22.6, 525 },	-- **Coords uncofirmed, relied on wowhead**
-					["g"] = {	
-						i(119376),	-- Three-Egg Pendant Necklace 
+					["g"] = {
+						i(119376),	-- Three-Egg Pendant Necklace
 					},
 				}),
 				n(81001, {	-- Nok-Karosh <Warrior's Death>
 					["coord"] = { 13.1, 50.4, 525 },
-					["g"] = { 
+					["g"] = {
 						i(116794), 	-- Garn Nighthowl (MOUNT!)
 					},
 				}),
@@ -257,8 +258,8 @@ _.Zones =
 						{ 86.6, 48.6, 525 },
 					},
 					["u"] = 45,	-- Broken Loot
-					["g"] = {	
-						un(45, i(119366)),	-- Ogom's Manacles 
+					["g"] = {
+						un(45, i(119366)),	-- Ogom's Manacles
 					},
 				}),
 				n(78606, {	-- Pale Fishmonger
@@ -268,7 +269,7 @@ _.Zones =
 				n(76918, {	-- Primalist Mur'og
 					["questID"] = 33938,
 					["coord"] = { 36.9, 33.8, 525 },
-					["g"] = {	
+					["g"] = {
 						i(111576), 	-- Ritual Leggings of Mur'og
 					},
 				}),
@@ -277,7 +278,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 86.8, 49.0, 525 },
 					["g"] = {
-						i(119359),	-- Tunic of the Driftstalker 
+						i(119359),	-- Tunic of the Driftstalker
 					},
 				}),
 				n(77526, {	-- Scout Goreseeker
@@ -292,7 +293,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 44.6, 15.2, 525 },
 					["g"] = {
-						i(119362),	-- Frostboar Leather Helmet 
+						i(119362),	-- Frostboar Leather Helmet
 					},
 				}),
 				n(82620, {	-- Son of Goramal
@@ -300,7 +301,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 38.4, 16.4, 525 },	-- **Coords uncofirmed, relied on wowhead**
 					["g"] = {
-						i(119399),	-- Cudgel of the Son of Goramal 
+						i(119399),	-- Cudgel of the Son of Goramal
 					},
 				}),
 				n(77527, {	-- The Beater <Champion of the Circle of Blood>
@@ -314,15 +315,15 @@ _.Zones =
 					["questID"] = 34361,
 					["isDaily"] = true,
 					["coord"] = { 72.4, 33.0, 525 },
-					["g"] = {	
-						i(111534),	-- The Bone Crawler's Carapace 
+					["g"] = {
+						i(111534),	-- The Bone Crawler's Carapace
 					},
 				}),
 				n(82618, {	-- Tor'goroth <The Soul-Gorger>
 					["questID"] = 37384,
 					["isDaily"] = true,
 					["coord"] = { 43.47, 8.89, 525 },
-					["g"] = {	
+					["g"] = {
 						i(119163),	-- Soul Inhaler Toy
 						i(119379),	-- Tor'goroth's Soul Prism
 					},
@@ -331,7 +332,7 @@ _.Zones =
 					["questID"] = 34522,
 					["isDaily"] = true,
 					["coord"] = { 40.4, 12.6, 525 },
-					["g"] = {	
+					["g"] = {
 						un(NEVER_IMPLEMENTED, i(119409, {	-- Icebound Bloodmaul Spire
 							["description"] = "There are reports that this drops from this rare. This rare is only lootable once, but it appears this may either not drop anymore, or you may only have the one chance per toon to loot it. Please let us know if you get this item to drop.",
 						})),

@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+
+_.WorldDrops =
 {
 	tier(1, {	-- Classic
 		n(-318, {	-- Armor
@@ -324,7 +325,7 @@ _.WorldDrops =
 			n(-328, {	-- Waist
 				i(13134),	-- Belt of the Gladiator
 				i(13145),	-- Enormous Ogre Belt
-				i(9405),	-- Girdle of Golem Strength	
+				i(9405),	-- Girdle of Golem Strength
 				i(13077),	-- Girdle of Uther
 				i(2911),	-- Keller's Girdle
 				i(13117),	-- Ogron's Sash
@@ -495,6 +496,6 @@ _.WorldDrops =
 				i(18639),	-- Ultra-Flash Shadow Reflector
 				i(11302),	-- Uther's Strength
 			}),
-		}),	
-	}),	
+		}),
+	}),
 };

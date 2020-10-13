@@ -1,6 +1,7 @@
- ---------------------------------------------------
+---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -83,20 +84,20 @@ _.Zones =
 						["coord"] = { 46.2, 60.6, 649 },
 						["provider"] = { "n", 97558 },	-- Ashildir
 						["groups"] = {
-							i(132832),	-- Bones of Geir	
-							i(132830),	-- Cursebinder Chains	
-							i(132826),	-- Cursed Kvaldir Blood	
-							i(132827),	-- Gaze of Helya	
-							i(132824),	-- Helheim Waylight	
-							i(132828),	-- Helhound Core	
-							i(132829),	-- Silver of Heost	
-							i(132825),	-- Val'kyra Boon	
-							i(132834),	-- Wailing Wings	
+							i(132832),	-- Bones of Geir
+							i(132830),	-- Cursebinder Chains
+							i(132826),	-- Cursed Kvaldir Blood
+							i(132827),	-- Gaze of Helya
+							i(132824),	-- Helheim Waylight
+							i(132828),	-- Helhound Core
+							i(132829),	-- Silver of Heost
+							i(132825),	-- Val'kyra Boon
+							i(132834),	-- Wailing Wings
 							i(132831),	-- Worthy Soul
 						},
 					}),
 				}),
 			}),
-		}),	
+		}),
 	}),
 };

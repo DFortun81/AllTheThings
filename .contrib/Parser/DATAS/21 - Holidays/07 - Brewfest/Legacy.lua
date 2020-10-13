@@ -8,6 +8,30 @@ _.Holidays =
 		n(-40, {	-- Legacy
 			["g"] = {
 				n(QUESTS, {
+					q(11400, {	-- Brewfest Riding Rams (A)
+						["providers"] = {
+							{ "i", 33978 },	-- "Honorary Brewer" Hand Stamp
+						},
+						["maps"] = {
+							27,	-- Dun Morogh
+						},
+						["g"] = {
+							i(33976),	-- Brewfest Ram
+						},
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(11419, {	-- Brewfest Riding Rams (H)
+						["providers"] = {
+							{ "i", 34028 },	-- "Honorary Brewer" Hand Stamp H
+						},
+						["maps"] = {
+							1,	-- Durotar
+						},
+						["g"] = {
+							i(33976),	-- Brewfest Ram
+						},
+						["races"] = HORDE_ONLY,
+					}),
 					q(11321, {	-- Did Someone Say "Souvenir?"  (A)
 						["providers"] = {
 							{ "n", 24468 },	-- Pol Amberstill
@@ -139,7 +163,7 @@ _.Holidays =
 						},
 						["coords"] = {
 							{ 40.7, 17.4, 1 },
-						},E,
+						},
 						["maps"] = {
 							1,	-- Durotar
 						},

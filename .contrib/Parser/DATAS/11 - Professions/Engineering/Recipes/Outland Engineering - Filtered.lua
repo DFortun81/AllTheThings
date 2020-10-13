@@ -71,7 +71,7 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Annihilator Holo-Gogs",
 							["recipeID"] = 46111,
-							["classes"] = { 5,8,9 } -- Priest, Mage, Warlock
+							["classes"] = { PRIEST, MAGE, WARLOCK }
 						},
 						{
 							["name"] = "Cogspinner Goggles",
@@ -96,12 +96,12 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Hard Khorium Goggles",
 							["recipeID"] = 46115,
-							["classes"] = { 1,2,6 } -- Warrior, Paladin, Death Knight
+							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT }
 						},
 						{
 							["name"] = "Hyper-Magnified Moon Specs",
 							["recipeID"] = 46109,
-							["classes"] = { 11 } -- Druid
+							["classes"] = { DRUID }
 						},
 						{
 							["name"] = "Hyper-Vision Goggles",
@@ -114,12 +114,12 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Justicebringer 3000 Specs",
 							["recipeID"] = 46107,
-							["classes"] = { 2 } -- Paladin
+							["classes"] = { PALADIN }
 						},
 						{
 							["name"] = "Lightning Etched Specs",
 							["recipeID"] = 46112,
-							["classes"] = { 7 } -- Shaman
+							["classes"] = { SHAMAN }
 						},
 						{
 							["name"] = "Living Replicator Specs",
@@ -145,17 +145,17 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Powerheal 9000 Lens",
 							["recipeID"] = 46108,
-							["classes"] = { 5 } -- Priest
+							["classes"] = { PRIEST }
 						},
 						{
 							["name"] = "Primal-Attuned Goggles",
 							["recipeID"] = 46110,
-							["classes"] = { 7 } -- Shaman
+							["classes"] = { SHAMAN }
 						},
 						{
 							["name"] = "Quad Deathblow X44 Goggles",
 							["recipeID"] = 46116,
-							["classes"] = { 4,10,11 } -- Rogue, Monk, Druid
+							["classes"] = { ROGUE, MONK, DRUID }
 						},
 						{
 							["name"] = "Surestrike Goggles v2.0",
@@ -164,7 +164,7 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Surestrike Goggles v3.0",
 							["recipeID"] = 46113,
-							["classes"] = { 3,7 } -- Hunter, Shaman
+							["classes"] = { HUNTER, SHAMAN }
 						},
 						{
 							["name"] = "Tankatronic Goggles",
@@ -181,7 +181,7 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Wonderheal XT68 Shades",
 							["recipeID"] = 46106,
-							["classes"] = { 11 } -- Druid
+							["classes"] = { DRUID }
 						}
 					}
 				},

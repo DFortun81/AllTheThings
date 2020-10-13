@@ -56,7 +56,7 @@ profession(FISHING, {
 			i(25978),	-- Seth's Graphite Fishing Pole
 			i(120163),	-- Thruk's Fishing Rod
 		},
-	}),	
+	}),
 	f(1,      {	-- Held in Off-hand
 		i(6292),	-- 10 Pound Mud Snapper
 		i(6294),	-- 12 Pound Mud Snapper
@@ -505,19 +505,14 @@ profession(FISHING, {
 	}),
 	--[[
 	tier(1, {	-- Classic
-		
 	}),
 	tier(2, { 	-- The Burning Crusade
-	
 	}),
 	tier(3, { 	-- Wrath of the Lich King
-	
 	}),
 	tier(4, { 	-- Cataclysm
-		
 	}),
 	tier(6, { 	-- Warlords of Draenor
-		
 	}),
 	--]]
 	tier(7, { 	-- Legion

@@ -2,8 +2,8 @@
 --   P E T    B A T T L E    M O D U L E    --
 ----------------------------------------------
 
-_.PetBattles = 
-{	
+_.PetBattles =
+{
 	n(-34, {	-- World Quests
 		tier(7, {	-- Legion
 			i(116415),	-- Shining Pet Charm

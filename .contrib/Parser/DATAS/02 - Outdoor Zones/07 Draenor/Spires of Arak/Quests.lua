@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -338,7 +339,7 @@ _.Zones =
 					["provider"] = { "n", 83463 },	-- Dusk-Seer Irizzar
 				}),
 				q(35339, {	-- A Parting Favor
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						35329,	-- I See Dead People (A)
 						35339,	-- I See Dead People (H)
 					},
@@ -1231,7 +1232,7 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 				}),
 				q(35340, {	-- What Happened Here?
-					["u"] = 1
+					["u"] = NEVER_IMPLEMENTED
 				}),
 				q(35295, {	-- What's Theirs is Ours
 					["sourceQuests"] = { 35277 },	-- Orders, Commander?

@@ -190,9 +190,6 @@ _.Zones =
 					["coord"] = { 55.4, 36.6, 81 },
 					["description"] = "This quest is invisible until you reach Cooking 285.",
 					["requireSkill"] = COOKING,
-					["g"] = {
-						recipe(24801),	-- Smoked Desert Dumplings
-					},
 				}),
 				q(8332, {	-- Dukes of the COuncil
 					["u"] = REMOVED_FROM_GAME,
@@ -324,6 +321,9 @@ _.Zones =
 					["provider"] = { "o", 180503 },	-- Sandy Cookbook
 					["sourceQuest"] = 8307,	-- Desert Recipe
 					["requireSkill"] = COOKING,
+					["g"] = {
+						recipe(24801),	-- Smoked Desert Dumplings
+					},
 				}),
 				q(8348,  {	-- Signet of the Dukes
 					["u"] = REMOVED_FROM_GAME,

@@ -7,7 +7,7 @@ profession(COOKING, {
 				{	-- Everyday Cooking
 					["categoryID"] = 1025,	-- Everyday Cooking
 					["g"] = {
-						
+
 					},
 				},
 			},

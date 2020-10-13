@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -33,6 +33,13 @@ _.Zones =
 								["sym"] = {{"select", "instanceID", 1180}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
+					}),
+					q(53036, {	-- A Call to Battle
+						["providers"] = {
+							{ "n", 144384 },	-- Chronicler Shoopa
+							{ "n", 144383 },	-- Chronicler Toopa
+						},
+						["isWeekly"] = true,
 					}),
 					q(53033, {	-- A Frozen Path Through Time (WotLK Timewalking)
 						["providers"] = {

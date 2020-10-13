@@ -120,7 +120,7 @@ profession(INSCRIPTION, {
 							-- Shaman Only
 							["recipeID"] = 225551--[[Glyph of Flickering]],
 							["classes"] = {
-								7,	-- Shaman
+								SHAMAN,
 							},
 							["description"] = "Currently this Technique can only be learned by Shaman's.   We suggest submitting a bug report to Blizzard to have it usuable by all scribes like the other techniques."
 						},

@@ -1,6 +1,7 @@
----------------------------------------------
---     S E C R E T S     M O D U L E       --
----------------------------------------------
+-------------------------------------------
+--     S E C R E T S     M O D U L E     --
+-------------------------------------------
+
 _.Secrets =
 {
 	n(-805, {	-- Baa'l  -- TODO: Descriptions
@@ -65,7 +66,6 @@ _.Secrets =
 				["coord"] = { 63.2, 21.3, 864 },	-- Cave Entrance
 				["sourceQuest"] = 52817,	-- Step 5 Fourth Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 6:|r Head to Vol'dun.  At the coordinates provided, there is a very skinny, tall tree sticking out of the rocks.  If you have enemy nameplates enabled, you'll see a |ccccc3333Clatterback|r nearby.\n\nYou can sort of fall down behind the tree into the Clatterback's cave.  If you're lucky (or careful) he may not attack you, but you might want to use an invisibility potion to protect yourself, because he hits like a truck.\n\nThe pebble is close to the mouth of the cave, hidden behind a small rock, around |cFFFFFFFF63.0, 21.6|r.\n\nShift+click to refresh your collection.\n",
-				
 			}),
 			o(293842, {	-- Step 7: Sixth Ordinary Pebble
 				["model"] = 1068320,

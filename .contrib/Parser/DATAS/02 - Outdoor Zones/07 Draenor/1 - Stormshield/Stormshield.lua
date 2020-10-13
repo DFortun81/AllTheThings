@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -482,7 +483,7 @@ _.Zones =
 						}),
 						n(86175, {	-- Bregg Coppercast <Primal Combatant>
 							["coord"] = { 56.2, 20.0, 622 },
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -679, -9914, -660 },
 								{"pop"},
 								{"exclude", "npcID", -384 },	-- Exclude Neck
@@ -1203,7 +1204,7 @@ _.Zones =
 							},
 							["g"] = {
 								i(116776, {	-- Pale Thorngrazer
-									["cost"] = { 
+									["cost"] = {
 										{ "i", 137642, 100 },	-- 100x Mark of Honor
 										{ "g", 50000000 },	-- 5,000g
 									},

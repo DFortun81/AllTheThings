@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 _.Instances = { tier(7, {	-- Legion
 	inst(768, { 	-- The Emerald Nightmare
@@ -254,7 +255,6 @@ _.Instances = { tier(7, {	-- Legion
 							i(139269),	-- Crystallized Drop of Eternity
 							i(139266),	-- Fragment of Eternal Spite
 							i(139268),	-- Nightmarish Elm Branch
-							i(146690),	-- Xavius' Torn Spellsash (Leatherworking QI)
 						})),
 					},
 				}),
@@ -454,7 +454,11 @@ _.Instances = { tier(7, {	-- Legion
 						crit(4),	-- Drakes Uncleansed
 					}),
 					ach(10819, crit(3)),	-- Tormented Guardians / Cenarius
-					i(141303, {	-- Essence of Clarity
+					i(141303, {	-- Essence of Clarity (Normal)
+						["altQuests"] = {
+							44284,	-- The Emerald Nightmare: Piercing the Veil (Heroic)
+							44285,	-- The Emerald Nightmare: Piercing the Veil (Mythic)
+						},
 						["questID"] = 44283,	-- The Emerald Nightmare: Piercing the Veil
 					}),
 					i(127934),	-- Recipe: Spirit Cauldron [Rank 2]
@@ -498,7 +502,6 @@ _.Instances = { tier(7, {	-- Legion
 					i(139269),	-- Crystallized Drop of Eternity
 					i(139266),	-- Fragment of Eternal Spite
 					i(139268),	-- Nightmarish Elm Branch
-					i(146690),	-- Xavius' Torn Spellsash (Leatherworking QI)
 				})),
 			}),
 			d(15, {	-- Heroic
@@ -693,8 +696,9 @@ _.Instances = { tier(7, {	-- Legion
 						crit(4),	-- Drakes Uncleansed
 					}),
 					ach(10819, crit(3)),	-- Tormented Guardians / Cenarius
-					i(141304, {	-- Essence of Clarity [Heroic]
-						["questID"] = 44284,	-- The Emerald Nightmare: Piercing the Veil [Heroic]
+					i(141304, {	-- Essence of Clarity (Heroic)
+						["altQuests"] = { 44285 },	-- The Emerald Nightmare: Piercing the Veil (Mythic)
+						["questID"] = 44284,	-- The Emerald Nightmare: Piercing the Veil (Heroic)
 					}),
 					i(127934),	-- Recipe: Spirit Cauldron [Rank 2]
 					i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1]
@@ -741,7 +745,6 @@ _.Instances = { tier(7, {	-- Legion
 					i(139269),	-- Crystallized Drop of Eternity
 					i(139266),	-- Fragment of Eternal Spite
 					i(139268),	-- Nightmarish Elm Branch
-					i(146690),	-- Xavius' Torn Spellsash (Leatherworking QI)
 				})),
 			}),
 			d(16, {	-- Mythic
@@ -939,8 +942,8 @@ _.Instances = { tier(7, {	-- Legion
 					}),
 					ach(10826),	-- Mythic: Cenarius
 					ach(10819, crit(3)),	-- Tormented Guardians / Cenarius
-					i(141305, {	-- Essence of Clarity [Mythic]
-						["questID"] = 44285,	-- The Emerald Nightmare: Piercing the Veil [Mythic]
+					i(141305, {	-- Essence of Clarity (Mythic)
+						["questID"] = 44285,	-- The Emerald Nightmare: Piercing the Veil (Mythic)
 					}),
 					i(127934),	-- Recipe: Spirit Cauldron [Rank 2]
 					i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1]
@@ -996,7 +999,6 @@ _.Instances = { tier(7, {	-- Legion
 					i(139269),	-- Crystallized Drop of Eternity
 					i(139266),	-- Fragment of Eternal Spite
 					i(139268),	-- Nightmarish Elm Branch
-					i(146690),	-- Xavius' Torn Spellsash (Leatherworking QI)
 				})),
 			}),
 		},

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
+
 _.GearSets =
 {
 	n(-4189, {	-- PvP Item Sets
@@ -29,7 +30,7 @@ _.GearSets =
 							i(147609),	-- Veteran's Satin Slippers
 						}),
 					},
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 				}),
 				gs(967, {	-- Merciless Gladiator's Silk Armor
 					["groups"] = {
@@ -42,7 +43,7 @@ _.GearSets =
 						i(32051),	-- Merciless Gladiator's Silk Trousers
 						i(32795),	-- Veteran's Silk Footguards
 					},
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 				}),
 				gs(963, {	-- Merciless Gladiator's Felweave Armor
 					["groups"] = {
@@ -55,7 +56,7 @@ _.GearSets =
 						i(31975),	-- Merciless Gladiator's Felweave Trousers
 						i(32787),	-- Veteran's Dreadweave Stalkers
 					},
-					["classes"] = { 9 },
+					["classes"] = { WARLOCK },
 				}),
 				gs(969, {	-- Merciless Gladiator's Dragonhide Armor
 					["groups"] = {
@@ -90,7 +91,7 @@ _.GearSets =
 							i(32786),	-- Veteran's Dragonhide Boots
 						}),
 					},
-					["classes"] = { 11 },
+					["classes"] = { DRUID },
 				}),
 				gs(965, {	-- Merciless Gladiator's Leather Armor
 					["groups"] = {
@@ -103,7 +104,7 @@ _.GearSets =
 						i(32000),	-- Merciless Gladiator's Leather Legguards
 						i(147611),	-- Veteran's Leather Boots
 					},
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 				}),
 				gs(968, {	-- Merciless Gladiator's Chain Armor
 					["groups"] = {
@@ -116,7 +117,7 @@ _.GearSets =
 						i(31963),	-- Merciless Gladiator's Chain Leggings
 						i(32785),	-- Veteran's Chain Sabatons
 					},
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 				}),
 				gs(964, {	-- Merciless Gladiator's Ringmail Armor
 					["groups"] = {
@@ -151,7 +152,7 @@ _.GearSets =
 							i(32792),	-- Veteran's Mail Sabatons
 						}),
 					},
-					["classes"] = { 7 },
+					["classes"] = { SHAMAN },
 				}),
 				gs(966, {	-- Merciless Gladiator's Lamellar Armor
 					["groups"] = {
@@ -186,7 +187,7 @@ _.GearSets =
 							i(32789),	-- Merciless Gladiator's Lamellar Greaves
 						}),
 					},
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 				}),
 				gs(962, {	-- Merciless Gladiator's Plate Armor
 					["groups"] = {
@@ -199,7 +200,7 @@ _.GearSets =
 						i(30489),	-- Merciless Gladiator's Plate Legguards
 						i(32793),	-- Merciless Gladiator's Plate Greaves
 					},
-					["classes"] = { 1 },
+					["classes"] = { WARRIOR },
 				}),
 			},
 			["achievementID"] = 11707,	-- No Mercy

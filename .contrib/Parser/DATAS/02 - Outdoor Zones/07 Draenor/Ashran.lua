@@ -1,14 +1,15 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
 		m(588, {	-- Ashran
 			["achievementID"] = 9102,
 			["description"] = "|cff66ccffAshran is a level 100 instanced cross-realm end game world PvP zone found in eastern Draenor. The name also refers to the greater Ashran zone, including the Alliance and Horde capitals, which are set outside of the PvP zone itself.|r",
-		--	["maps"] = {622, 624},	-- We want to show Ashran in both maps.
-			["lvl"] = 100,	
+			--["maps"] = {622, 624},	-- We want to show Ashran in both maps.
+			["lvl"] = 100,
 			["u"] = REMOVED_FROM_GAME,	-- Instance removed in 8.0.1 [BfA Pre-Patch]
 			["g"] = {
 				n(QUESTS, {
@@ -1655,32 +1656,32 @@ _.Zones =
 					}),
 				}),
 				n(RARES, {
-				--	n(82876, {	-- Grand Marshal Tremblade	}), 
-				--	n(82877, {	-- High Warlord Volrath	}), 
-				--	n(82878, {	-- Marshal Gabriel	}), 
-				--	n(82880, {	-- Marshal Karsh Stormforge	}), 
-				--	n(82882, {	-- General Aevd	}), 
-				--	n(82883, {	-- Warlord Noktyn	}), 
-				--	n(83683, {	-- Mandragoraster	}), 
-				--	n(83691, {	-- Panthora	}), 
-				--	n(83713, {	-- Titarus	}), 
-				--	n(83819, {	-- Brickhouse	}), 
-				--	n(84110, {	-- Korthall Soulgorger	}), 
-				--	n(84196, {	-- Web-wrapped Soldier	}), 
-				--	n(84465, {	-- Leaping Gorger	}), 
-				--	n(84746, {	-- Captured Gor'vosh Stoneshaper	}), 
-				--	n(84854, {	-- Slippery Slime	}), 
-				--	n(84875, {	-- Ancient Inferno	}), 
-				--	n(84893, {	-- Goregore	}), 
-				--	n(84904, {	-- Oraggro	}), 
-				--	n(84926, {	-- Burning Power	}), 
-				--	n(85763, {	-- Cursed Ravager	}), 
-				--	n(85765, {	-- Cursed Kaliri	}), 
-				--	n(85766, {	-- Cursed Sharptalon	}), 
-				--	n(85767, {	-- Cursed Harbinger	}), 
-				--	n(85771, {	-- Elder Darkweaver Kath	}), 
-				--	n(87362, {	-- Gibby	}), 
-				--	n(91921, {	-- Wyrmple	}), 
+				--	n(82876, {	-- Grand Marshal Tremblade	}),
+				--	n(82877, {	-- High Warlord Volrath	}),
+				--	n(82878, {	-- Marshal Gabriel	}),
+				--	n(82880, {	-- Marshal Karsh Stormforge	}),
+				--	n(82882, {	-- General Aevd	}),
+				--	n(82883, {	-- Warlord Noktyn	}),
+				--	n(83683, {	-- Mandragoraster	}),
+				--	n(83691, {	-- Panthora	}),
+				--	n(83713, {	-- Titarus	}),
+				--	n(83819, {	-- Brickhouse	}),
+				--	n(84110, {	-- Korthall Soulgorger	}),
+				--	n(84196, {	-- Web-wrapped Soldier	}),
+				--	n(84465, {	-- Leaping Gorger	}),
+				--	n(84746, {	-- Captured Gor'vosh Stoneshaper	}),
+				--	n(84854, {	-- Slippery Slime	}),
+				--	n(84875, {	-- Ancient Inferno	}),
+				--	n(84893, {	-- Goregore	}),
+				--	n(84904, {	-- Oraggro	}),
+				--	n(84926, {	-- Burning Power	}),
+				--	n(85763, {	-- Cursed Ravager	}),
+				--	n(85765, {	-- Cursed Kaliri	}),
+				--	n(85766, {	-- Cursed Sharptalon	}),
+				--	n(85767, {	-- Cursed Harbinger	}),
+				--	n(85771, {	-- Elder Darkweaver Kath	}),
+				--	n(87362, {	-- Gibby	}),
+				--	n(91921, {	-- Wyrmple	}),
 				--	n(94113, {	-- Rukmaz	}),
 				}),
 				n(VENDORS, {
@@ -1826,7 +1827,7 @@ _.Zones =
 							un(REMOVED_FROM_GAME, i(126763)),	-- Warmongering Gladiator's Touch of defeat
 							un(REMOVED_FROM_GAME, i(126879)),	-- Warmongering Gladiator's Baton of Light
 							n(-679, {	-- Primal Gladiator: Warlords Season 1
-								cl(6, {	-- Death Knight
+								cl(DEATHKNIGHT, {
 									un(REMOVED_FROM_GAME, i(115837)),	-- Primal Gladiator's Dreadplate Chestpiece
 									un(REMOVED_FROM_GAME, i(115838)),	-- Primal Gladiator's Dreadplate Gauntlets
 									un(REMOVED_FROM_GAME, i(115906)),	-- Primal Gladiator's Dreadplate Girdle
@@ -1835,7 +1836,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115841)),	-- Primal Gladiator's Dreadplate shoulders
 									un(REMOVED_FROM_GAME, i(115909)),	-- Primal Gladiator's Dreadplate Warboots
 								}),
-								cl(11, {	-- Druid
+								cl(DRUID, {
 									un(REMOVED_FROM_GAME, i(115971)),	-- Primal Gladiator's Dragonhide Belt
 									un(REMOVED_FROM_GAME, i(115970)),	-- Primal Gladiator's Dragonhide Footguards
 									un(REMOVED_FROM_GAME, i(115842)),	-- Primal Gladiator's Dragonhide Gloves
@@ -1858,7 +1859,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115860)),	-- Primal Gladiator's Wyrmhide Robes
 									un(REMOVED_FROM_GAME, i(115861)),	-- Primal Gladiator's Wyrmhide Spaulders
 								}),
-								cl(3, {	-- Hunter
+								cl(HUNTER, {
 									un(REMOVED_FROM_GAME, i(115942)),	-- Primal Gladiator's Mail Armor
 									un(REMOVED_FROM_GAME, i(115930)),	-- Primal Gladiator's Mail Footguards
 									un(REMOVED_FROM_GAME, i(115943)),	-- Primal Gladiator's Mail Gauntlets
@@ -1867,7 +1868,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115946)),	-- Primal Gladiator's Mail Spaulders
 									un(REMOVED_FROM_GAME, i(115941)),	-- Primal Gladiator's Mail Waistguard
 								}),
-								cl(8, {	-- Mage
+								cl(MAGE, {
 									un(REMOVED_FROM_GAME, i(115879)),	-- Primal Gladiator's Silk Amice
 									un(REMOVED_FROM_GAME, i(115824)),	-- Primal Gladiator's Silk Cord
 									un(REMOVED_FROM_GAME, i(115876)),	-- Primal Gladiator's Silk Cowl
@@ -1876,7 +1877,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115827)),	-- Primal Gladiator's Silk Treads
 									un(REMOVED_FROM_GAME, i(115877)),	-- Primal Gladiator's Silk Trousers
 								}),
-								cl(10, {	-- Monk
+								cl(MONK, {
 									un(REMOVED_FROM_GAME, i(115966)),	-- Primal Gladiator's Copperskin Boots
 									un(REMOVED_FROM_GAME, i(115887)),	-- Primal Gladiator's Copperskin Gloves
 									un(REMOVED_FROM_GAME, i(115888)),	-- Primal Gladiator's Copperskin Helm
@@ -1892,7 +1893,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115886)),	-- Primal Gladiator's Ironskin Tunic
 									un(REMOVED_FROM_GAME, i(115880)),	-- Primal Gladiator's Ironskin Waistband
 								}),
-								cl(2, {	-- Paladin
+								cl(PALADIN, {
 									un(REMOVED_FROM_GAME, i(115901)),	-- Primal Gladiator's Ornamented chestguard
 									un(REMOVED_FROM_GAME, i(115898)),	-- Primal Gladiator's Ornamented clasp
 									un(REMOVED_FROM_GAME, i(115902)),	-- Primal Gladiator's Ornamented Gloves
@@ -1908,7 +1909,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115895)),	-- Primal Gladiator's Scaled Legguards
 									un(REMOVED_FROM_GAME, i(115896)),	-- Primal Gladiator's Scaled shoulders
 								}),
-								cl(5, {	-- Priest
+								cl(PRIEST, {
 									un(REMOVED_FROM_GAME, i(115826)),	-- Primal Gladiator's Mooncloth Cord
 									un(REMOVED_FROM_GAME, i(115911)),	-- Primal Gladiator's Mooncloth Gloves
 									un(REMOVED_FROM_GAME, i(115912)),	-- Primal Gladiator's Mooncloth Hood
@@ -1924,7 +1925,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115919)),	-- Primal Gladiator's Satin Robe
 									un(REMOVED_FROM_GAME, i(115968)),	-- Primal Gladiator's Satin Treads
 								}),
-								cl(4, {	-- Rogue
+								cl(ROGUE, {
 									un(REMOVED_FROM_GAME, i(115922)),	-- Primal Gladiator's Leather boosts
 									un(REMOVED_FROM_GAME, i(115924)),	-- Primal Gladiator's Leather Gloves
 									un(REMOVED_FROM_GAME, i(115925)),	-- Primal Gladiator's Leather Helm
@@ -1933,7 +1934,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115923)),	-- Primal Gladiator's Leather Tunic
 									un(REMOVED_FROM_GAME, i(115921)),	-- Primal Gladiator's Leather Waistband
 								}),
-								cl(7, {	-- Shaman
+								cl(SHAMAN, {
 									un(REMOVED_FROM_GAME, i(115870)),	-- Primal Gladiator's Chain Armor
 									un(REMOVED_FROM_GAME, i(115871)),	-- Primal Gladiator's Chain Gauntlets
 									un(REMOVED_FROM_GAME, i(115872)),	-- Primal Gladiator's Chain Helm
@@ -1956,7 +1957,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115935)),	-- Primal Gladiator's Ringmail Spaulders
 									un(REMOVED_FROM_GAME, i(115928)),	-- Primal Gladiator's Ringmail Waistguard
 								}),
-								cl(9, {	-- Warlock
+								cl(WARLOCK, {
 									un(REMOVED_FROM_GAME, i(115960)),	-- Primal Gladiator's Felweave Amice
 									un(REMOVED_FROM_GAME, i(115825)),	-- Primal Gladiator's Felweave Cord
 									un(REMOVED_FROM_GAME, i(115957)),	-- Primal Gladiator's Felweave Cowl
@@ -1965,7 +1966,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115828)),	-- Primal Gladiator's Felweave Treads
 									un(REMOVED_FROM_GAME, i(115958)),	-- Primal Gladiator's Felweave Trousers
 								}),
-								cl(1, {	-- Warrior
+								cl(WARRIOR, {
 									un(REMOVED_FROM_GAME, i(115961)),	-- Primal Gladiator's Plate Chestpiece
 									un(REMOVED_FROM_GAME, i(115962)),	-- Primal Gladiator's Plate Gauntlets
 									un(REMOVED_FROM_GAME, i(115907)),	-- Primal Gladiator's Plate Girdle
@@ -1976,7 +1977,7 @@ _.Zones =
 								}),
 							}),
 							n(-680, {	-- Wild Gladiator: Warlords Season 2
-								cl(6, {	-- Death Knight
+								cl(DEATHKNIGHT, {
 									un(REMOVED_FROM_GAME, i(125651)), -- Wild Gladiator's Dreadplate Chestpiece
 									un(REMOVED_FROM_GAME, i(125652)), -- Wild Gladiator's Dreadplate Gauntlets
 									un(REMOVED_FROM_GAME, i(125653)), -- Wild Gladiator's Dreadplate Helm
@@ -1985,7 +1986,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125720)), -- Wild Gladiator's Dreadplate Girdle
 									un(REMOVED_FROM_GAME, i(125723)), -- Wild Gladiator's Dreadplate Warboots
 								}),
-								cl(11, {	-- Druid
+								cl(DRUID, {
 									un(REMOVED_FROM_GAME, i(125656)),	-- Wild Gladiator's Dragonhide Gloves
 									un(REMOVED_FROM_GAME, i(125657)),	-- Wild Gladiator's Dragonhide Helm
 									un(REMOVED_FROM_GAME, i(125658)),	-- Wild Gladiator's Dragonhide Legguards
@@ -2008,14 +2009,14 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125674)),	-- Wild Gladiator's Wyrmhide Robes
 									un(REMOVED_FROM_GAME, i(125675)),	-- Wild Gladiator's Wyrmhide Spaulders
 								}),
-								cl(3, {	-- Hunter
+								cl(HUNTER, {
 									un(REMOVED_FROM_GAME, i(125684)),	-- Wild Gladiator's Chain Armor
 									un(REMOVED_FROM_GAME, i(125685)),	-- Wild Gladiator's Chain Gauntlets
 									un(REMOVED_FROM_GAME, i(125686)),	-- Wild Gladiator's Chain Helm
 									un(REMOVED_FROM_GAME, i(125687)),	-- Wild Gladiator's Chain Leggings
 									un(REMOVED_FROM_GAME, i(125688)),	-- Wild Gladiator's Chain Spaulders
 								}),
-								cl(8, {	-- Mage
+								cl(MAGE, {
 									un(REMOVED_FROM_GAME, i(125693)),	-- Wild Gladiator's Silk Amice
 									un(REMOVED_FROM_GAME, i(125638)),	-- Wild Gladiator's Silk Cord
 									un(REMOVED_FROM_GAME, i(125690)),	-- Wild Gladiator's Silk Cowl
@@ -2024,7 +2025,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125641)),	-- Wild Gladiator's Silk Treads
 									un(REMOVED_FROM_GAME, i(125691)),	-- Wild Gladiator's Silk Trousers
 								}),
-								cl(10, {	-- Monk
+								cl(MONK, {
 									un(REMOVED_FROM_GAME, i(125694)),	-- Wild Gladiator's Ironskin Waistband
 									un(REMOVED_FROM_GAME, i(125695)),	-- Wild Gladiator's Ironskin boosts
 									un(REMOVED_FROM_GAME, i(125696)),	-- Wild Gladiator's Ironskin Gloves
@@ -2040,7 +2041,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125780)),	-- Wild Gladiator's Copperskin Boots
 									un(REMOVED_FROM_GAME, i(125781)),	-- Wild Gladiator's Copperskin Waistband
 								}),
-								cl(2, {	-- Paladin
+								cl(PALADIN, {
 									un(REMOVED_FROM_GAME, i(125706)), -- Wild Gladiator's Scaled Chestpiece
 									un(REMOVED_FROM_GAME, i(125707)), -- Wild Gladiator's Scaled Gauntlets
 									un(REMOVED_FROM_GAME, i(125708)), -- Wild Gladiator's Scaled Helm
@@ -2056,7 +2057,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125718)), -- Wild Gladiator's Ornamented LegPlates
 									un(REMOVED_FROM_GAME, i(125719)), -- Wild Gladiator's Ornamented Spaulders
 								}),
-								cl(5, {	-- Priest
+								cl(PRIEST, {
 									un(REMOVED_FROM_GAME, i(125640)),	-- Wild Gladiator's Mooncloth Cord
 									un(REMOVED_FROM_GAME, i(125725)),	-- Wild Gladiator's Mooncloth Gloves
 									un(REMOVED_FROM_GAME, i(125726)),	-- Wild Gladiator's Mooncloth Hood
@@ -2072,7 +2073,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125733)),	-- Wild Gladiator's Satin Robe
 									un(REMOVED_FROM_GAME, i(125782)),	-- Wild Gladiator's Satin Treads
 								}),
-								cl(4, {	-- Rogue
+								cl(ROGUE, {
 									un(REMOVED_FROM_GAME, i(125735)),	-- Wild Gladiator's Leather Waistband
 									un(REMOVED_FROM_GAME, i(125736)),	-- Wild Gladiator's Leather boosts
 									un(REMOVED_FROM_GAME, i(125737)),	-- Wild Gladiator's Leather Tunic
@@ -2081,7 +2082,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125740)),	-- Wild Gladiator's Leather Legguards
 									un(REMOVED_FROM_GAME, i(125741)),	-- Wild Gladiator's Leather Spaulders
 								}),
-								cl(7, {	-- Shaman
+								cl(SHAMAN, {
 									un(REMOVED_FROM_GAME, i(125750)),	-- Wild Gladiator's Linked Armor
 									un(REMOVED_FROM_GAME, i(125751)),	-- Wild Gladiator's Linked Gauntlets
 									un(REMOVED_FROM_GAME, i(125752)),	-- Wild Gladiator's Linked Helm
@@ -2103,7 +2104,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125749)),	-- Wild Gladiator's Ringmail Spaulders
 									un(REMOVED_FROM_GAME, i(125742)),	-- Wild Gladiator's Ringmail Waistguard
 								}),
-								cl(9, {	-- Warlock
+								cl(WARLOCK, {
 									un(REMOVED_FROM_GAME, i(125774)),	-- wild Gladiator's Felweave Amice
 									un(REMOVED_FROM_GAME, i(125639)),	-- wild Gladiator's Felweave Cord
 									un(REMOVED_FROM_GAME, i(125771)),	-- wild Gladiator's Felweave Cowl
@@ -2112,7 +2113,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125642)),	-- wild Gladiator's Felweave Treads
 									un(REMOVED_FROM_GAME, i(125772)),	-- wild Gladiator's Felweave Trousers
 								}),
-								cl(1, {	-- Warrior
+								cl(WARRIOR, {
 									un(REMOVED_FROM_GAME, i(125721)), -- Wild Gladiator's Plate Girdle
 									un(REMOVED_FROM_GAME, i(125722)), -- Wild Gladiator's Plate Warboots
 									un(REMOVED_FROM_GAME, i(125775)), -- Wild Gladiator's Plate Chestpiece
@@ -2123,7 +2124,7 @@ _.Zones =
 								}),
 							}),
 							n(-681, {	-- Warmongering Gladiator: Warlords Season 3
-								cl(6, {	-- Death Knight
+								cl(DEATHKNIGHT, {
 									un(REMOVED_FROM_GAME, i(126765)), -- Warmongering Gladiator's Dreadplate Chestpiece
 									un(REMOVED_FROM_GAME, i(126766)), -- Warmongering Gladiator's Dreadplate Gauntlets
 									un(REMOVED_FROM_GAME, i(126767)), -- Warmongering Gladiator's Dreadplate Helm
@@ -2132,7 +2133,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126834)), -- Warmongering Gladiator's Dreadplate Girdle
 									un(REMOVED_FROM_GAME, i(126837)), -- Warmongering Gladiator's Dreadplate Warboots
 								}),
-								cl(11, {	-- Druid
+								cl(DRUID, {
 									un(REMOVED_FROM_GAME, i(126899)),	-- Warmongering Gladiator's Dragonhide Belt
 									un(REMOVED_FROM_GAME, i(126898)),	-- Warmongering Gladiator's Dragonhide Footguards
 									un(REMOVED_FROM_GAME, i(126770)),	-- Warmongering Gladiator's Dragonhide Gloves
@@ -2155,7 +2156,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126788)),	-- Warmongering Gladiator's Wyrmhide Robes
 									un(REMOVED_FROM_GAME, i(126789)),	-- Warmongering Gladiator's Wyrmhide Spaulders
 								}),
-								cl(3, {	-- Hunter
+								cl(HUNTER, {
 									un(REMOVED_FROM_GAME, i(126798)),	-- Warmongering Gladiator's Chain Armor
 									un(REMOVED_FROM_GAME, i(126799)),	-- Warmongering Gladiator's Chain Gauntlets
 									un(REMOVED_FROM_GAME, i(126800)),	-- Warmongering Gladiator's Chain Helm
@@ -2164,7 +2165,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126796)),	-- Warmongering Gladiator's Chain Sabatons
 									un(REMOVED_FROM_GAME, i(126802)),	-- Warmongering Gladiator's Chain Spaulders
 								}),
-								cl(8, {	-- Mage
+								cl(MAGE, {
 									un(REMOVED_FROM_GAME, i(126807)),	-- Warmongering Gladiator's Silk Amice
 									un(REMOVED_FROM_GAME, i(126752)),	-- Warmongering Gladiator's Silk Cord
 									un(REMOVED_FROM_GAME, i(126804)),	-- Warmongering Gladiator's Silk Cowl
@@ -2173,7 +2174,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126755)),	-- Warmongering Gladiator's Silk Treads
 									un(REMOVED_FROM_GAME, i(126805)),	-- Warmongering Gladiator's Silk Trousers
 								}),
-								cl(10, {	-- Monk
+								cl(MONK, {
 									un(REMOVED_FROM_GAME, i(126809)),	-- Warmongering Gladiator's Ironskin boosts
 									un(REMOVED_FROM_GAME, i(126810)),	-- Warmongering Gladiator's Ironskin Gloves
 									un(REMOVED_FROM_GAME, i(126811)),	-- Warmongering Gladiator's Ironskin Helm
@@ -2189,7 +2190,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126819)),	-- Warmongering Gladiator's Copperskin Tunic
 									un(REMOVED_FROM_GAME, i(126895)),	-- Warmongering Gladiator's Copperskin Waistband
 								}),
-								cl(2, {	-- Paladin
+								cl(PALADIN, {
 									un(REMOVED_FROM_GAME, i(126826)), -- Warmongering Gladiator's Ornamented Clasp
 									un(REMOVED_FROM_GAME, i(126827)), -- Warmongering Gladiator's Ornamented Greaves
 									un(REMOVED_FROM_GAME, i(126829)), -- Warmongering Gladiator's Ornamented Chestguard
@@ -2205,7 +2206,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126825)), -- Warmongering Gladiator's Scaled Clasp
 									un(REMOVED_FROM_GAME, i(126828)), -- Warmongering Gladiator's Scaled Greaves
 								}),
-								cl(5, {	-- Priest
+								cl(PRIEST, {
 									un(REMOVED_FROM_GAME, i(126754)),	-- Warmongering Gladiator's Mooncloth Cord
 									un(REMOVED_FROM_GAME, i(126839)),	-- Warmongering Gladiator's Mooncloth Gloves
 									un(REMOVED_FROM_GAME, i(126840)),	-- Warmongering Gladiator's Mooncloth Hood
@@ -2221,7 +2222,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126847)),	-- Warmongering Gladiator's Satin Robe
 									un(REMOVED_FROM_GAME, i(126896)),	-- Warmongering Gladiator's Satin Treads
 								}),
-								cl(4, {	-- Rogue
+								cl(ROGUE, {
 									un(REMOVED_FROM_GAME, i(126850)),	-- Warmongering Gladiator's Leather boosts
 									un(REMOVED_FROM_GAME, i(126852)),	-- Warmongering Gladiator's Leather Gloves
 									un(REMOVED_FROM_GAME, i(126853)),	-- Warmongering Gladiator's Leather Helm
@@ -2230,7 +2231,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126851)),	-- Warmongering Gladiator's Leather Tunic
 									un(REMOVED_FROM_GAME, i(126849)),	-- Warmongering Gladiator's Leather Waistband
 								}),
-								cl(7, {	-- Shaman
+								cl(SHAMAN, {
 									un(REMOVED_FROM_GAME, i(126864)),	-- Warmongering Gladiator's Linked Armor
 									un(REMOVED_FROM_GAME, i(126865)),	-- Warmongering Gladiator's Linked Gauntlets
 									un(REMOVED_FROM_GAME, i(126866)),	-- Warmongering Gladiator's Linked Helm
@@ -2253,7 +2254,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126863)),	-- Warmongering Gladiator's Ringmail Spaulders
 									un(REMOVED_FROM_GAME, i(126856)),	-- Warmongering Gladiator's Ringmail Waistguard
 								}),
-								cl(9, {	-- Warlock
+								cl(WARLOCK, {
 									un(REMOVED_FROM_GAME, i(126888)),	-- Warmongering Gladiator's Felweave Amice
 									un(REMOVED_FROM_GAME, i(126753)),	-- Warmongering Gladiator's Felweave Cord
 									un(REMOVED_FROM_GAME, i(126885)),	-- Warmongering Gladiator's Felweave Cowl
@@ -2262,7 +2263,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126756)),	-- Warmongering Gladiator's Felweave Treads
 									un(REMOVED_FROM_GAME, i(126886)),	-- Warmongering Gladiator's Felweave Trousers
 								}),
-								cl(1, {	-- Warrior
+								cl(WARRIOR, {
 									un(REMOVED_FROM_GAME, i(126835)), -- Warmongering Gladiator's Plate Girdle
 									un(REMOVED_FROM_GAME, i(126836)), -- Warmongering Gladiator's Plate Warboots
 									un(REMOVED_FROM_GAME, i(126889)), -- Warmongering Gladiator's Plate Chestpiece
@@ -2393,7 +2394,7 @@ _.Zones =
 							un(REMOVED_FROM_GAME, i(126763)),	-- Warmongering Gladiator's Touch of defeat
 							un(REMOVED_FROM_GAME, i(126879)),	-- Warmongering Gladiator's Baton of Light
 							n(-679, {	-- Primal Gladiator: Warlords Season 1
-								cl(6, {	-- Death Knight
+								cl(DEATHKNIGHT, {
 									un(REMOVED_FROM_GAME, i(115837)),	-- Primal Gladiator's Dreadplate Chestpiece
 									un(REMOVED_FROM_GAME, i(115838)),	-- Primal Gladiator's Dreadplate Gauntlets
 									un(REMOVED_FROM_GAME, i(115906)),	-- Primal Gladiator's Dreadplate Girdle
@@ -2402,7 +2403,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115841)),	-- Primal Gladiator's Dreadplate shoulders
 									un(REMOVED_FROM_GAME, i(115909)),	-- Primal Gladiator's Dreadplate Warboots
 								}),
-								cl(11, {	-- Druid
+								cl(DRUID, {
 									un(REMOVED_FROM_GAME, i(115971)),	-- Primal Gladiator's Dragonhide Belt
 									un(REMOVED_FROM_GAME, i(115970)),	-- Primal Gladiator's Dragonhide Footguards
 									un(REMOVED_FROM_GAME, i(115842)),	-- Primal Gladiator's Dragonhide Gloves
@@ -2425,7 +2426,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115860)),	-- Primal Gladiator's Wyrmhide Robes
 									un(REMOVED_FROM_GAME, i(115861)),	-- Primal Gladiator's Wyrmhide Spaulders
 								}),
-								cl(3, {	-- Hunter
+								cl(HUNTER, {
 									un(REMOVED_FROM_GAME, i(115942)),	-- Primal Gladiator's Mail Armor
 									un(REMOVED_FROM_GAME, i(115930)),	-- Primal Gladiator's Mail Footguards
 									un(REMOVED_FROM_GAME, i(115943)),	-- Primal Gladiator's Mail Gauntlets
@@ -2434,7 +2435,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115946)),	-- Primal Gladiator's Mail Spaulders
 									un(REMOVED_FROM_GAME, i(115941)),	-- Primal Gladiator's Mail Waistguard
 								}),
-								cl(8, {	-- Mage
+								cl(MAGE, {
 									un(REMOVED_FROM_GAME, i(115879)),	-- Primal Gladiator's Silk Amice
 									un(REMOVED_FROM_GAME, i(115824)),	-- Primal Gladiator's Silk Cord
 									un(REMOVED_FROM_GAME, i(115876)),	-- Primal Gladiator's Silk Cowl
@@ -2443,7 +2444,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115827)),	-- Primal Gladiator's Silk Treads
 									un(REMOVED_FROM_GAME, i(115877)),	-- Primal Gladiator's Silk Trousers
 								}),
-								cl(10, {	-- Monk
+								cl(MONK, {
 									un(REMOVED_FROM_GAME, i(115966)),	-- Primal Gladiator's Copperskin Boots
 									un(REMOVED_FROM_GAME, i(115887)),	-- Primal Gladiator's Copperskin Gloves
 									un(REMOVED_FROM_GAME, i(115888)),	-- Primal Gladiator's Copperskin Helm
@@ -2459,7 +2460,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115886)),	-- Primal Gladiator's Ironskin Tunic
 									un(REMOVED_FROM_GAME, i(115880)),	-- Primal Gladiator's Ironskin Waistband
 								}),
-								cl(2, {	-- Paladin
+								cl(PALADIN, {
 									un(REMOVED_FROM_GAME, i(115901)),	-- Primal Gladiator's Ornamented chestguard
 									un(REMOVED_FROM_GAME, i(115898)),	-- Primal Gladiator's Ornamented clasp
 									un(REMOVED_FROM_GAME, i(115902)),	-- Primal Gladiator's Ornamented Gloves
@@ -2475,7 +2476,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115895)),	-- Primal Gladiator's Scaled Legguards
 									un(REMOVED_FROM_GAME, i(115896)),	-- Primal Gladiator's Scaled shoulders
 								}),
-								cl(5, {	-- Priest
+								cl(PRIEST, {
 									un(REMOVED_FROM_GAME, i(115826)),	-- Primal Gladiator's Mooncloth Cord
 									un(REMOVED_FROM_GAME, i(115911)),	-- Primal Gladiator's Mooncloth Gloves
 									un(REMOVED_FROM_GAME, i(115912)),	-- Primal Gladiator's Mooncloth Hood
@@ -2491,7 +2492,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115919)),	-- Primal Gladiator's Satin Robe
 									un(REMOVED_FROM_GAME, i(115968)),	-- Primal Gladiator's Satin Treads
 								}),
-								cl(4, {	-- Rogue
+								cl(ROGUE, {
 									un(REMOVED_FROM_GAME, i(115922)),	-- Primal Gladiator's Leather boosts
 									un(REMOVED_FROM_GAME, i(115924)),	-- Primal Gladiator's Leather Gloves
 									un(REMOVED_FROM_GAME, i(115925)),	-- Primal Gladiator's Leather Helm
@@ -2500,7 +2501,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115923)),	-- Primal Gladiator's Leather Tunic
 									un(REMOVED_FROM_GAME, i(115921)),	-- Primal Gladiator's Leather Waistband
 								}),
-								cl(7, {	-- Shaman
+								cl(SHAMAN, {
 									un(REMOVED_FROM_GAME, i(115870)),	-- Primal Gladiator's Chain Armor
 									un(REMOVED_FROM_GAME, i(115871)),	-- Primal Gladiator's Chain Gauntlets
 									un(REMOVED_FROM_GAME, i(115872)),	-- Primal Gladiator's Chain Helm
@@ -2523,7 +2524,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115935)),	-- Primal Gladiator's Ringmail Spaulders
 									un(REMOVED_FROM_GAME, i(115928)),	-- Primal Gladiator's Ringmail Waistguard
 								}),
-								cl(9, {	-- Warlock
+								cl(WARLOCK, {
 									un(REMOVED_FROM_GAME, i(115960)),	-- Primal Gladiator's Felweave Amice
 									un(REMOVED_FROM_GAME, i(115825)),	-- Primal Gladiator's Felweave Cord
 									un(REMOVED_FROM_GAME, i(115957)),	-- Primal Gladiator's Felweave Cowl
@@ -2532,7 +2533,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(115828)),	-- Primal Gladiator's Felweave Treads
 									un(REMOVED_FROM_GAME, i(115958)),	-- Primal Gladiator's Felweave Trousers
 								}),
-								cl(1, {	-- Warrior
+								cl(WARRIOR, {
 									un(REMOVED_FROM_GAME, i(115961)),	-- Primal Gladiator's Plate Chestpiece
 									un(REMOVED_FROM_GAME, i(115962)),	-- Primal Gladiator's Plate Gauntlets
 									un(REMOVED_FROM_GAME, i(115907)),	-- Primal Gladiator's Plate Girdle
@@ -2543,7 +2544,7 @@ _.Zones =
 								}),
 							}),
 							n(-680, {	-- Wild Gladiator: Warlords Season 2
-								cl(6, {	-- Death Knight
+								cl(DEATHKNIGHT, {
 									un(REMOVED_FROM_GAME, i(125651)), -- Wild Gladiator's Dreadplate Chestpiece
 									un(REMOVED_FROM_GAME, i(125652)), -- Wild Gladiator's Dreadplate Gauntlets
 									un(REMOVED_FROM_GAME, i(125653)), -- Wild Gladiator's Dreadplate Helm
@@ -2552,7 +2553,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125720)), -- Wild Gladiator's Dreadplate Girdle
 									un(REMOVED_FROM_GAME, i(125723)), -- Wild Gladiator's Dreadplate Warboots
 								}),
-								cl(11, {	-- Druid
+								cl(DRUID, {
 									un(REMOVED_FROM_GAME, i(125656)),	-- Wild Gladiator's Dragonhide Gloves
 									un(REMOVED_FROM_GAME, i(125657)),	-- Wild Gladiator's Dragonhide Helm
 									un(REMOVED_FROM_GAME, i(125658)),	-- Wild Gladiator's Dragonhide Legguards
@@ -2575,14 +2576,14 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125674)),	-- Wild Gladiator's Wyrmhide Robes
 									un(REMOVED_FROM_GAME, i(125675)),	-- Wild Gladiator's Wyrmhide Spaulders
 								}),
-								cl(3, {	-- Hunter
+								cl(HUNTER, {
 									un(REMOVED_FROM_GAME, i(125684)),	-- Wild Gladiator's Chain Armor
 									un(REMOVED_FROM_GAME, i(125685)),	-- Wild Gladiator's Chain Gauntlets
 									un(REMOVED_FROM_GAME, i(125686)),	-- Wild Gladiator's Chain Helm
 									un(REMOVED_FROM_GAME, i(125687)),	-- Wild Gladiator's Chain Leggings
 									un(REMOVED_FROM_GAME, i(125688)),	-- Wild Gladiator's Chain Spaulders
 								}),
-								cl(8, {	-- Mage
+								cl(MAGE, {
 									un(REMOVED_FROM_GAME, i(125693)),	-- Wild Gladiator's Silk Amice
 									un(REMOVED_FROM_GAME, i(125638)),	-- Wild Gladiator's Silk Cord
 									un(REMOVED_FROM_GAME, i(125690)),	-- Wild Gladiator's Silk Cowl
@@ -2591,7 +2592,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125641)),	-- Wild Gladiator's Silk Treads
 									un(REMOVED_FROM_GAME, i(125691)),	-- Wild Gladiator's Silk Trousers
 								}),
-								cl(10, {	-- Monk
+								cl(MONK, {
 									un(REMOVED_FROM_GAME, i(125694)),	-- Wild Gladiator's Ironskin Waistband
 									un(REMOVED_FROM_GAME, i(125695)),	-- Wild Gladiator's Ironskin boosts
 									un(REMOVED_FROM_GAME, i(125696)),	-- Wild Gladiator's Ironskin Gloves
@@ -2607,7 +2608,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125780)),	-- Wild Gladiator's Copperskin Boots
 									un(REMOVED_FROM_GAME, i(125781)),	-- Wild Gladiator's Copperskin Waistband
 								}),
-								cl(2, {	-- Paladin
+								cl(PALADIN, {
 									un(REMOVED_FROM_GAME, i(125706)), -- Wild Gladiator's Scaled Chestpiece
 									un(REMOVED_FROM_GAME, i(125707)), -- Wild Gladiator's Scaled Gauntlets
 									un(REMOVED_FROM_GAME, i(125708)), -- Wild Gladiator's Scaled Helm
@@ -2623,7 +2624,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125718)), -- Wild Gladiator's Ornamented LegPlates
 									un(REMOVED_FROM_GAME, i(125719)), -- Wild Gladiator's Ornamented Spaulders
 								}),
-								cl(5, {	-- Priest
+								cl(PRIEST, {
 									un(REMOVED_FROM_GAME, i(125640)),	-- Wild Gladiator's Mooncloth Cord
 									un(REMOVED_FROM_GAME, i(125725)),	-- Wild Gladiator's Mooncloth Gloves
 									un(REMOVED_FROM_GAME, i(125726)),	-- Wild Gladiator's Mooncloth Hood
@@ -2639,7 +2640,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125733)),	-- Wild Gladiator's Satin Robe
 									un(REMOVED_FROM_GAME, i(125782)),	-- Wild Gladiator's Satin Treads
 								}),
-								cl(4, {	-- Rogue
+								cl(ROGUE, {
 									un(REMOVED_FROM_GAME, i(125735)),	-- Wild Gladiator's Leather Waistband
 									un(REMOVED_FROM_GAME, i(125736)),	-- Wild Gladiator's Leather boosts
 									un(REMOVED_FROM_GAME, i(125737)),	-- Wild Gladiator's Leather Tunic
@@ -2648,7 +2649,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125740)),	-- Wild Gladiator's Leather Legguards
 									un(REMOVED_FROM_GAME, i(125741)),	-- Wild Gladiator's Leather Spaulders
 								}),
-								cl(7, {	-- Shaman
+								cl(SHAMAN, {
 									un(REMOVED_FROM_GAME, i(125750)),	-- Wild Gladiator's Linked Armor
 									un(REMOVED_FROM_GAME, i(125751)),	-- Wild Gladiator's Linked Gauntlets
 									un(REMOVED_FROM_GAME, i(125752)),	-- Wild Gladiator's Linked Helm
@@ -2670,7 +2671,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125749)),	-- Wild Gladiator's Ringmail Spaulders
 									un(REMOVED_FROM_GAME, i(125742)),	-- Wild Gladiator's Ringmail Waistguard
 								}),
-								cl(9, {	-- Warlock
+								cl(WARLOCK, {
 									un(REMOVED_FROM_GAME, i(125774)),	-- wild Gladiator's Felweave Amice
 									un(REMOVED_FROM_GAME, i(125639)),	-- wild Gladiator's Felweave Cord
 									un(REMOVED_FROM_GAME, i(125771)),	-- wild Gladiator's Felweave Cowl
@@ -2679,7 +2680,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(125642)),	-- wild Gladiator's Felweave Treads
 									un(REMOVED_FROM_GAME, i(125772)),	-- wild Gladiator's Felweave Trousers
 								}),
-								cl(1, {	-- Warrior
+								cl(WARRIOR, {
 									un(REMOVED_FROM_GAME, i(125721)), -- Wild Gladiator's Plate Girdle
 									un(REMOVED_FROM_GAME, i(125722)), -- Wild Gladiator's Plate Warboots
 									un(REMOVED_FROM_GAME, i(125775)), -- Wild Gladiator's Plate Chestpiece
@@ -2690,7 +2691,7 @@ _.Zones =
 								}),
 							}),
 							n(-681, {	-- Warmongering Gladiator: Warlords Season 3
-								cl(6, {	-- Death Knight
+								cl(DEATHKNIGHT, {
 									un(REMOVED_FROM_GAME, i(126765)), -- Warmongering Gladiator's Dreadplate Chestpiece
 									un(REMOVED_FROM_GAME, i(126766)), -- Warmongering Gladiator's Dreadplate Gauntlets
 									un(REMOVED_FROM_GAME, i(126767)), -- Warmongering Gladiator's Dreadplate Helm
@@ -2699,7 +2700,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126834)), -- Warmongering Gladiator's Dreadplate Girdle
 									un(REMOVED_FROM_GAME, i(126837)), -- Warmongering Gladiator's Dreadplate Warboots
 								}),
-								cl(11, {	-- Druid
+								cl(DRUID, {
 									un(REMOVED_FROM_GAME, i(126899)),	-- Warmongering Gladiator's Dragonhide Belt
 									un(REMOVED_FROM_GAME, i(126898)),	-- Warmongering Gladiator's Dragonhide Footguards
 									un(REMOVED_FROM_GAME, i(126770)),	-- Warmongering Gladiator's Dragonhide Gloves
@@ -2722,7 +2723,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126788)),	-- Warmongering Gladiator's Wyrmhide Robes
 									un(REMOVED_FROM_GAME, i(126789)),	-- Warmongering Gladiator's Wyrmhide Spaulders
 								}),
-								cl(3, {	-- Hunter
+								cl(HUNTER, {
 									un(REMOVED_FROM_GAME, i(126798)),	-- Warmongering Gladiator's Chain Armor
 									un(REMOVED_FROM_GAME, i(126799)),	-- Warmongering Gladiator's Chain Gauntlets
 									un(REMOVED_FROM_GAME, i(126800)),	-- Warmongering Gladiator's Chain Helm
@@ -2731,7 +2732,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126796)),	-- Warmongering Gladiator's Chain Sabatons
 									un(REMOVED_FROM_GAME, i(126802)),	-- Warmongering Gladiator's Chain Spaulders
 								}),
-								cl(8, {	-- Mage
+								cl(MAGE, {
 									un(REMOVED_FROM_GAME, i(126807)),	-- Warmongering Gladiator's Silk Amice
 									un(REMOVED_FROM_GAME, i(126752)),	-- Warmongering Gladiator's Silk Cord
 									un(REMOVED_FROM_GAME, i(126804)),	-- Warmongering Gladiator's Silk Cowl
@@ -2740,7 +2741,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126755)),	-- Warmongering Gladiator's Silk Treads
 									un(REMOVED_FROM_GAME, i(126805)),	-- Warmongering Gladiator's Silk Trousers
 								}),
-								cl(10, {	-- Monk
+								cl(MONK, {
 									un(REMOVED_FROM_GAME, i(126809)),	-- Warmongering Gladiator's Ironskin boosts
 									un(REMOVED_FROM_GAME, i(126810)),	-- Warmongering Gladiator's Ironskin Gloves
 									un(REMOVED_FROM_GAME, i(126811)),	-- Warmongering Gladiator's Ironskin Helm
@@ -2756,7 +2757,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126819)),	-- Warmongering Gladiator's Copperskin Tunic
 									un(REMOVED_FROM_GAME, i(126895)),	-- Warmongering Gladiator's Copperskin Waistband
 								}),
-								cl(2, {	-- Paladin
+								cl(PALADIN, {
 									un(REMOVED_FROM_GAME, i(126826)), -- Warmongering Gladiator's Ornamented Clasp
 									un(REMOVED_FROM_GAME, i(126827)), -- Warmongering Gladiator's Ornamented Greaves
 									un(REMOVED_FROM_GAME, i(126829)), -- Warmongering Gladiator's Ornamented Chestguard
@@ -2772,7 +2773,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126825)), -- Warmongering Gladiator's Scaled Clasp
 									un(REMOVED_FROM_GAME, i(126828)), -- Warmongering Gladiator's Scaled Greaves
 								}),
-								cl(5, {	-- Priest
+								cl(PRIEST, {
 									un(REMOVED_FROM_GAME, i(126754)),	-- Warmongering Gladiator's Mooncloth Cord
 									un(REMOVED_FROM_GAME, i(126839)),	-- Warmongering Gladiator's Mooncloth Gloves
 									un(REMOVED_FROM_GAME, i(126840)),	-- Warmongering Gladiator's Mooncloth Hood
@@ -2788,7 +2789,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126847)),	-- Warmongering Gladiator's Satin Robe
 									un(REMOVED_FROM_GAME, i(126896)),	-- Warmongering Gladiator's Satin Treads
 								}),
-								cl(4, {	-- Rogue
+								cl(ROGUE, {
 									un(REMOVED_FROM_GAME, i(126850)),	-- Warmongering Gladiator's Leather boosts
 									un(REMOVED_FROM_GAME, i(126852)),	-- Warmongering Gladiator's Leather Gloves
 									un(REMOVED_FROM_GAME, i(126853)),	-- Warmongering Gladiator's Leather Helm
@@ -2797,7 +2798,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126851)),	-- Warmongering Gladiator's Leather Tunic
 									un(REMOVED_FROM_GAME, i(126849)),	-- Warmongering Gladiator's Leather Waistband
 								}),
-								cl(7, {	-- Shaman
+								cl(SHAMAN, {
 									un(REMOVED_FROM_GAME, i(126864)),	-- Warmongering Gladiator's Linked Armor
 									un(REMOVED_FROM_GAME, i(126865)),	-- Warmongering Gladiator's Linked Gauntlets
 									un(REMOVED_FROM_GAME, i(126866)),	-- Warmongering Gladiator's Linked Helm
@@ -2820,7 +2821,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126863)),	-- Warmongering Gladiator's Ringmail Spaulders
 									un(REMOVED_FROM_GAME, i(126856)),	-- Warmongering Gladiator's Ringmail Waistguard
 								}),
-								cl(9, {	-- Warlock
+								cl(WARLOCK, {
 									un(REMOVED_FROM_GAME, i(126888)),	-- Warmongering Gladiator's Felweave Amice
 									un(REMOVED_FROM_GAME, i(126753)),	-- Warmongering Gladiator's Felweave Cord
 									un(REMOVED_FROM_GAME, i(126885)),	-- Warmongering Gladiator's Felweave Cowl
@@ -2829,7 +2830,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(126756)),	-- Warmongering Gladiator's Felweave Treads
 									un(REMOVED_FROM_GAME, i(126886)),	-- Warmongering Gladiator's Felweave Trousers
 								}),
-								cl(1, {	-- Warrior
+								cl(WARRIOR, {
 									un(REMOVED_FROM_GAME, i(126835)), -- Warmongering Gladiator's Plate Girdle
 									un(REMOVED_FROM_GAME, i(126836)), -- Warmongering Gladiator's Plate Warboots
 									un(REMOVED_FROM_GAME, i(126889)), -- Warmongering Gladiator's Plate Chestpiece
@@ -2855,7 +2856,7 @@ _.Zones =
 					i(134705),	-- Surging Chain Leggings
 				}),
 				i(128216),	-- Dented Ashmaul Strongbox A S3
-			},			
-		}),	
+			},
+		}),
 	}),
 };

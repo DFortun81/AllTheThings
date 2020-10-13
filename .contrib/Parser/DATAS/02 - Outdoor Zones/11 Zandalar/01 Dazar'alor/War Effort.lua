@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -8,9 +8,7 @@ _.Zones =
 		m(1163, {	-- Dazar'alor
 			n(-10057, {	-- War Effort
 				["lvl"] = 120,
-				["achievementID"] = 12874,	-- An Eventful Battle
 				["races"] = HORDE_ONLY,
-				["description"] = "|cff66ccffLocated in the Arathi Highlands, Stromgarde is one of the key locations in the struggle for control of the Eastern Kingdoms. For the Alliance, Stromgarde sits in a critical defensive position. Following the battle for Lordaeron, the Horde threat still looms over the continent, and holding Stromgarde will be key if you hope to keep the Horde's aggression at bay.\n\nFor the Horde, securing Stromgarde would set the stage for an assault on the heart of the Eastern Kingdoms and serve as a launching point for a campaign against the worgen of the kingdom of Gilneas. This location is also key in the defense of the blood elven capital, Silvermoon City, in the north.|r",
 				["g"] = {
 					n(QUESTS, {
 						q(52792, {	-- Arathi Donations: Akunda's Bite
@@ -583,30 +581,30 @@ _.Zones =
 										i(163877),	-- Honorbound Warglaive
 										i(163357, {	-- Honorbound Artificer's Cloak
 											["classes"] = {
-												5,	-- Priest
-												8,	-- Mage
-												9,	-- Warlock
+												PRIEST,
+												MAGE,
+												WARLOCK,
 											},
 										}),
 										i(163360, {	-- Honorbound Outrider's Drape
 											["classes"] = {
-												11,	-- Druid
-												4,	-- Rogue
-												10,	-- Monk
-												12,	-- Demon Hunter
+												DRUID,
+												ROGUE,
+												MONK,
+												DEMONHUNTER,
 											},
 										}),
 										i(163366, {	-- Honorbound Vanguard's Cloak
 											["classes"] = {
-												3,	-- Hunter
-												7,	-- Shaman
+												HUNTER,
+												SHAMAN,
 											},
 										}),
 										i(163368, {	-- Honorbound Centurion's Long Cloak
 											["classes"] = {
-												2,	-- Paladin
-												1,	-- Warrior
-												6,	-- Death Knight
+												PALADIN,
+												WARRIOR,
+												DEATHKNIGHT,
 											},
 										}),
 										i(163426),	-- Honorbound Artificer's Guise

@@ -1,11 +1,12 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(1462, {	-- Mechagon
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(13473, {	-- Diversed Investments
 					crit(1),	-- Flame Turret
 					crit(2),	-- Drill Rig

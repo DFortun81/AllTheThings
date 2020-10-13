@@ -1,13 +1,14 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
+
 _.GearSets =
 {
 	n(-4189, {	-- PvP Item Sets
 		n(-4190, {
 			["description"] = "These items were available during Burning Crusade as Level 70 Pre-Season 1 rewards in Netherstorm. They cannot be transmogged, not even if you were a High Warlord or Grand Marshall. Replica items were introduced in their place.",
 			["u"] = REMOVED_FROM_GAME,
-			["groups"] = bubbleDown({["u"] = 2 }, {
+			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 				n(-319, {	-- Weapons
 					i(28940),	-- Grand Marshal's Barricade
 					i(28941),	-- Grand Marshal's Battletome
@@ -33,7 +34,7 @@ _.GearSets =
 					i(28245),	-- Pendant of Dominance
 					i(28244),	-- Pendant of Triumph
 				}),
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					-- Grand Marshal's Plate [Warrior]
 					i(28701),	-- Grand Marshal's Plate Helm
 					i(28703),	-- Grand Marshal's Plate Shoulders
@@ -48,7 +49,7 @@ _.GearSets =
 					i(28854),	-- High Warlord's Plate Legguards
 					i(28855),	-- High Warlord's Plate Shoulders
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					-- Grand Marshal's Lamellar [Paladin]
 					i(28681),	-- Grand Marshal's Lamellar Helm
 					i(28683),	-- Grand Marshal's Lamellar Shoulders
@@ -91,7 +92,7 @@ _.GearSets =
 					i(28864),	-- High Warlord's Scaled Legguards
 					i(28865),	-- High Warlord's Scaled Shoulders
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					-- Grand Marshal's Chain [Hunter]
 					i(28615),	-- Grand Marshal's Chain Helm
 					i(28617),	-- Grand Marshal's Chain Spaulders
@@ -106,7 +107,7 @@ _.GearSets =
 					i(28808),	-- High Warlord's Chain Leggings
 					i(28809),	-- High Warlord's Chain Spaulders
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					-- Grand Marshal's Leather [Rogue]
 					i(28685),	-- Grand Marshal's Leather Helm
 					i(28687),	-- Grand Marshal's Leather Spaulders
@@ -121,7 +122,7 @@ _.GearSets =
 					i(28839),	-- High Warlord's Leather Spaulders
 					i(28840),	-- High Warlord's Leather Tunic
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					-- Grand Marshal's Mooncloth [Priest]
 					i(31622),	-- Grand Marshal's Mooncloth Cowl
 					i(31624),	-- Grand Marshal's Mooncloth Shoulderpads
@@ -150,7 +151,7 @@ _.GearSets =
 					i(28859),	-- High Warlord's Satin Mantle
 					i(28860),	-- High Warlord's Satin Robe
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					-- Grand Marshal's Linked [Shaman]
 					i(28691),	-- Grand Marshal's Linked Helm
 					i(28693),	-- Grand Marshal's Linked Spaulders
@@ -193,7 +194,7 @@ _.GearSets =
 					i(31649),   -- High Warlord's Ringmail Legguards
 					i(31650),   -- High Warlord's Ringmail Shoulders
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					-- Grand Marshal's Silk [Mage]
 					i(28715),	-- Grand Marshal's Silk Cowl
 					i(28714),	-- Grand Marshal's Silk Amice
@@ -208,7 +209,7 @@ _.GearSets =
 					i(28869),	-- High Warlord's Silk Raiment
 					i(28870),	-- High Warlord's Silk Trousers
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					-- Grand Marshal's Dreadweave [Warlock]
 					i(28625),	-- Grand Marshal's Dreadweave Hood
 					i(28627),	-- Grand Marshal's Dreadweave Mantle
@@ -223,7 +224,7 @@ _.GearSets =
 					i(28820),	-- High Warlord's Dreadweave Mantle
 					i(28821),	-- High Warlord's Dreadweave Robe
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					-- Grand Marshal's Dragonhide [Druid]
 					i(28619),	-- Grand Marshal's Dragonhide Helm
 					i(28622),	-- Grand Marshal's Dragonhide Spaulders

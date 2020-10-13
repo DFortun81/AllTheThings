@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.WorldEvents =
 {
 	d(24, {  -- Timewalking
@@ -26,7 +27,7 @@ _.WorldEvents =
 						i(143954),	-- Paradox Spirit [Pet]
 						i(144072),	-- Adopted Puppy Crate [Toy]
 						i(144393),	-- Portable Yak Wash [Toy]
-						
+
 						-- Gear
 						i(144052),	-- Bloodseeker's Solitaire
 						i(144053),	-- Choker of the Klaxxi'va
@@ -49,7 +50,7 @@ _.WorldEvents =
 						i(144050),	-- Tukka-Tuk's Hairy Boots
 						i(144048),	-- Yu'lon Guardian Boots
 						i(144070),	-- Shado-Pan Dragon Gun
-						
+
 						-- Heirloom / Reputation Items
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
@@ -110,14 +111,14 @@ _.WorldEvents =
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 							},
 						}),
-						
+
 						-- Quest Items
 						i(79265),	-- Blue Feather
 						i(79266),	-- Jade Cat
 						i(79267),	-- Lovely Apple
 						i(79268),	-- Marsh Lily
 						i(79264),	-- Ruby Shard
-						
+
 						-- Containers
 						i(143948),	-- Chilled Satchel of Vegetables
 					},

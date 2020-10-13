@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -95,101 +95,171 @@ _.Zones =
 						q(40678),	-- Twisted Power
 						q(43526),	-- A True Test
 						q(40603),	-- Seeking the Valkyra
-						q(40608),	-- The Mark
-						q(43898),	-- Preparing to Move
-						q(40613),	-- Maw of Souls: Retrieving the Svalnguard
-						q(40614),	-- A Feast Fit for Odyn
-						q(40672),	-- Neltharion's Lair: Presentation is Key
-						q(40615),	-- Halls of Valor: Odyn's Blessing
+						q(40608, {	-- The Mark
+							["sourceQuest"] = 40603,	-- Seeking the Valkyra
+							["provider"] = { "n", 100738 },	-- Ashildir
+							["coord"] = { 62.7, 68.1, 634 },
+							["maps"] = { 634 },	-- Stormheim
+						}),
+						q(40613, {	-- Maw of Souls: Retrieving the Svalnguard
+							["sourceQuest"] = 40608,	-- The Mark
+							["provider"] = { "n", 100738 },	-- Ashildir
+							["coord"] = { 62.7, 68.1, 634 },
+							["maps"] = { 634 },	-- Stormheim
+						}),
+						q(40614, {	-- A Feast Fit for Odyn
+							["sourceQuest"] = 40613,	-- Maw of Souls: Retrieving the Svalnguard
+							["provider"] = { "n", 100738 },	-- Ashildir
+							["coord"] = { 62.7, 68.1, 634 },
+							["maps"] = { 634 },	-- Stormheim
+						}),
+						q(40672, {	-- Neltharion's Lair: Presentation is Key
+							["sourceQuest"] = 40613,	-- Maw of Souls: Retrieving the Svalnguard
+							["provider"] = { "n", 100738 },	-- Ashildir
+							["coord"] = { 62.7, 68.1, 634 },
+							["maps"] = { 634 },	-- Stormheim
+						}),
+						q(40615, {	-- Halls of Valor: Odyn's Blessing
+							["sourceQuests"] = {
+								40613,	-- A Feast Fit for Odyn
+								40672, 	-- Neltharion's Lair: Presentation is Key
+							},
+							["provider"] = { "n", 100738 },	-- Ashildir
+							["coord"] = { 62.7, 68.1, 634 },
+							["maps"] = { 634 },	-- Stormheim
+						}),
+						q(43898, {	-- Preparing to Move
+							["sourceQuest"] = 40615,	-- Halls of Valor: Odyn's Blessing
+							["provider"] = { "n", 111814 },	-- Archmage Kalec
+							["coord"] = { 62.5, 68.2, 634 },
+							["maps"] = { 634 },	-- Stormheim
+						}),
 						q(43528),	-- Planning the Assault NOTE: This quest was removed when The Nighthold opened
-						q(43531),	-- Into the Nighthold
-						q(43530),	-- The Nighthold: Delusions of Grandeur
-						q(43532),	-- The Nighthold: Darkness Calls
-						q(43533, {	-- Balance of Power
-							cl(1, {
-							  ["g"] = {
-								artifact(805),
-								artifact(669),
-								artifact(164),
-							  }
-							  }),
-							cl(2, {
-							  ["g"] = {
-								artifact(16),
-								artifact(545),
-								artifact(856),
-							  }
-							}),
-							cl(3, {
-							  ["g"] = {
-								artifact(219),
-								artifact(462),
-								artifact(481),
-							  }
-							}),
-							cl(4, {
-							  ["g"] = {
-								artifact(237),
-								artifact(765),
-								artifact(71),
-							  }
-							}),
-							cl(5, {
-							  ["g"] = {
-								artifact(735),
-								artifact(753),
-								artifact(255),
-							  }
-							}),
-							cl(6, {
-							  ["g"] = {
-								artifact(368),
-								artifact(371),
-								artifact(403),
-							  }
-							}),
-							cl(7, {
-							  ["g"] = {
-								artifact(310),
-								artifact(682),
-								artifact(781),
-							  }
-							}),
-							cl(8, {
-							  ["g"] = {
-								artifact(184),
-								artifact(499),
-								artifact(134),
-							  }
-							}),
-							cl(9, {
-							  ["g"] = {
-								artifact(198),
-								artifact(329),
-								artifact(818),
-							  }
-							}),
-							cl(10, {
-							  ["g"] = {
-								artifact(517),
-								artifact(348),
-								artifact(525),
-							  }
-							}),
-							cl(11, {
-							  ["g"] = {
-								artifact(419),
-								artifact(54),
-								artifact(434),
-								artifact(277),
-							  }
-							}),
-							cl(12, {
-							  ["g"] = {
-								artifact(36),
-								artifact(563),
-							  }
-							}),
+						q(43530, {	-- The Nighthold: Delusions of Grandeur
+							["sourceQuest"] = 43898,	-- Preparing to Move
+							["provider"] = { "n", 101083 },	-- Thalrenus Rivertree
+							["coord"] = { 37.8, 47.3, 680 },
+							["maps"] = { 680 },	-- Suramar
+						}),
+						q(43531, {	-- Into the Nighthold
+							["sourceQuest"] = 43898,	-- Preparing to Move
+							["provider"] = { "n", 111826 },	-- Archmage Kalec
+							["coord"] = { 37.8, 47.4, 680 },
+							["maps"] = { 680 },	-- Suramar
+						}),
+						q(43532, {	-- The Nighthold: Darkness Calls
+							["sourceQuest"] = 43898,	-- Preparing to Move
+							["provider"] = { "n", 111826 },	-- Archmage Kalec
+							["coord"] = { 37.8, 47.4, 680 },
+							["maps"] = { 680 },	-- Suramar
+						}),
+						q(43533, { 	-- Balance of Power
+							["sourceQuests"] = {
+								43530,	-- The Nighthold: Delusions of Grandeur
+								43531,	-- Into the Nighthold
+								43532,	-- The Nighthold: Darkness Calls
+							},
+							["provider"] = { "n", 111826 },	-- Archmage Kalec
+							["coord"] = { 37.8, 47.4, 680 },
+							["maps"] = { 680 },	-- Suramar
+							["g"] = {
+								cl(WARRIOR, {
+									["classes"] = { WARRIOR },
+									["g"] = {
+										artifact(805),
+										artifact(669),
+										artifact(164),
+									}
+								}),
+								cl(PALADIN, {
+									["classes"] = { PALADIN },
+									["g"] = {
+										artifact(16),
+										artifact(545),
+										artifact(856),
+									}
+								}),
+								cl(HUNTER, {
+									["classes"] = { HUNTER },
+									["g"] = {
+										artifact(219),
+										artifact(462),
+										artifact(481),
+									}
+								}),
+								cl(ROGUE, {
+									["classes"] = { ROGUE },
+									["g"] = {
+										artifact(237),
+										artifact(765),
+										artifact(71),
+									}
+								}),
+								cl(PRIEST, {
+									["classes"] = { PRIEST },
+									["g"] = {
+										artifact(735),
+										artifact(753),
+										artifact(255),
+									}
+								}),
+								cl(DEATHKNIGHT, {
+									["classes"] = { DEATHKNIGHT },
+									["g"] = {
+										artifact(368),
+										artifact(371),
+										artifact(403),
+									}
+								}),
+								cl(SHAMAN, {
+									["classes"] = { SHAMAN },
+									["g"] = {
+										artifact(310),
+										artifact(682),
+										artifact(781),
+									}
+								}),
+								cl(MAGE, {
+									["classes"] = { MAGE },
+									["g"] = {
+										artifact(184),
+										artifact(499),
+										artifact(134),
+									}
+								}),
+								cl(WARLOCK, {
+									["classes"] = { WARLOCK },
+									["g"] = {
+										artifact(198),
+										artifact(329),
+										artifact(818),
+									}
+								}),
+								cl(MONK, {
+									["classes"] = { MONK },
+									["g"] = {
+										artifact(517),
+										artifact(348),
+										artifact(525),
+									}
+								}),
+								cl(DRUID, {
+									["classes"] = { DRUID },
+									["g"] = {
+										artifact(419),
+										artifact(54),
+										artifact(434),
+										artifact(277),
+									}
+								}),
+								cl(DEMONHUNTER, {
+									["classes"] = { DEMONHUNTER },
+									["g"] = {
+										artifact(36),
+										artifact(563),
+									}
+								}),
+							},
 						}),
 					},
 				}),

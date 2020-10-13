@@ -59,9 +59,7 @@ _.Zones =
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(12515, {	-- Allied Races: Dark Iron Dwarf
-												h(i(161331)),	-- Dark Iron Core Hound
-											}),
+											ach(12515),	-- Allied Races: Dark Iron Dwarf
 										},
 									}),
 									-- Dark Iron Dwarf Starter Quests
@@ -223,9 +221,7 @@ _.Zones =
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(13163, {	-- Allied Races: Kul Tiran
-												a(i(164762)),	-- Kul Tiran Charger
-											}),
+											ach(13163),	-- Allied Races: Kul Tiran
 										},
 									}),
 								}),
@@ -251,9 +247,7 @@ _.Zones =
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(12243, {	-- Allied Races: Lightforged Draenei
-												a(i(155656)),	-- Lightforged Felcrusher
-											}),
+											ach(12243),	-- Allied Races: Lightforged Draenei
 										},
 									}),
 									-- Lightforged Draenei Starter Quests
@@ -381,9 +375,7 @@ _.Zones =
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(12242, {	-- Allied Races: Void Elf
-												a(i(156486)),	-- Starcursed Voidstrider
-											}),
+											ach(12242),	-- Allied Races: Void Elf
 										},
 									}),
 									-- Void Elf Starter Quests
@@ -662,6 +654,7 @@ _.Zones =
 					["coord"] = { 41.4, 47.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(168,   {	-- Collecting Memories
 					["provider"] = { "n", 656 },	-- Wilder Thistlenettle
@@ -752,7 +745,7 @@ _.Zones =
 				}),
 				q(1271,  {	-- Feast at the Blue Recluse
 					["provider"] = { "n", 1141 },	-- Angus Stern
-					["coord"] = { 49.6, 44.8, 84 },
+					["coord"] = { 51.7, 93.6, 84 },
 					["sourceQuest"] = 1222,	-- Stinky's Escape
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -880,12 +873,20 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 98,
 				}),
+				q(54977, {	-- Into Duskwood
+					["provider"] = { "n", 151784 },	-- Mia Greymane
+					["coord"] = { 82.3, 27.8, 84 },
+					["races"] = { WORGEN },
+					["sourceQuest"] = 54976, -- The Shadow of Gilneas
+					["minReputation"] = { 1134, EXALTED }, -- Gilneas
+				}),
 				q(14481, {	-- Into The Abyss
 					["provider"] = { "n", 36674 },	-- Nambria
 					["coord"] = { 41.4, 47.6, 84 },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30987, {	-- Joining the Alliance
 					["provider"] = { "n", 60566 },	-- Aysa Cloudsinger
@@ -1135,6 +1136,12 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["lvl"] = 90,
 				}),
+				q(54402, {	-- Shifting Gears
+					["provider"] = { "n", 147939 },	-- Ace Pilot Stormcog
+					["coord"] = { 54.6, 18.4, 84 },
+					["races"] = { GNOME },
+					["minReputation"] = { 54, EXALTED }, -- Gnomeregan
+				}),
 				q(28401, {	-- Slaves of the Firelord
 					["provider"] = { "n", 20407 },	-- Farseer Umbrua
 					["coord"] = { 64.6, 33.0, 84 },
@@ -1377,6 +1384,12 @@ _.Zones =
 					["g"] = {
 						i(65620),	-- Hood of the Royal Wizard
 					},
+				}),
+				q(54976, {	-- The Shadow of Gilneas
+					["provider"] = { "n", 150200 },	-- Courier Claridge
+					["coord"] = { 54.6, 18.4, 84 },
+					["races"] = { WORGEN },
+					["minReputation"] = { 1134, EXALTED }, -- Gilneas
 				}),
 				q(1790,  {	-- The Symbol of Life
 					["provider"] = { "n", 6171 },	-- Duthorian Rall

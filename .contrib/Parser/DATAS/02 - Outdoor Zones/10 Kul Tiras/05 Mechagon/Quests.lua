@@ -1,6 +1,6 @@
---------------------------------------------------
---          Z O N E S       M O D U L E         --
---------------------------------------------------
+---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
 
 _.Zones =
 {
@@ -36,9 +36,6 @@ _.Zones =
 					["provider"] = { "n", 151462 },	-- Danielle Anglers
 					["coord"] = { 37.0, 47.1, 1462 },
 					["isDaily"] = true,
-					["g"] = {
-						i(169391),	-- Bubble-eyed Rolly (QI)
-					},
 				}),
 				q(55672, {	-- A Historical Mess
 					["description"] = "This quest is only available if you pick up the clue from the |cFFffffffWaterlogged Scroll Case|r while on |cFFefc400Clues Abound|r.",
@@ -134,7 +131,6 @@ _.Zones =
 						crit(23, {	-- Be Kind, Rewind
 							["achievementID"] = 13556,	-- Outside Influences
 						}),
-						i(169867),	-- Visual Holo Sphere (QI)
 					},
 				}),
 				q(56082, {	-- Bot Rampage
@@ -195,9 +191,6 @@ _.Zones =
 						crit(3, {	-- Clues Abound
 							["achievementID"] = 13556,	-- Outside Influences
 						}),
-						i(168236),	-- Hearthstone Card (QI)
-						i(168223),	-- Old Parchment (QI)
-						i(168234),	-- Ancient Runestone (QI)
 					},
 				}),
 				q(56405, {	-- Cogfrenzy's Construction Frenzy
@@ -615,41 +608,12 @@ _.Zones =
 						crit(17, {	-- Go For The Gold
 							["achievementID"] = 13556,	-- Outside Influences
 						}),
-						i(169222),	-- Murloc Treasure (QI)
 					},
 				}),
-				q(55103, {	-- Ideas Can Com from Anywhere
+				q(55103, {	-- Ideas Can Come from Anywhere
 					["provider"] = { "n", 152295 }, -- Pascal
 					["coord"] = { 71.2, 32.3, 1462 },
 					["minReputation"] = { 2391, REVERED },
-					["g"] = {
-						i(169251),	-- Ancient Insect (QI)
-						i(169224),	-- Big Red Button (QI)
-						i(169248),	-- Broken Sandals (QI)
-						i(169235),	-- Confusing Spring Box (QI)
-						i(169250),	-- Crude Eating Utensil (QI)
-						i(169232),	-- Dud Blast Canister (QI)
-						i(169229),	-- Exhaust Aromatics (QI)
-						i(169228),	-- Hazardous Container (QI)
-						i(169240),	-- Idea Starter (QI)
-						i(169233),	-- Infinite Loop Spring (QI)
-						i(169227),	-- Irradiated Bolts (QI)
-						i(169257),	-- Jagged Rune (QI)
-						i(169236),	-- Latch-and-Lock Trigger (QI)
-						i(169238),	-- Modified Radio Receiver ((QI)
-						i(169231),	-- Optical Override Drive (QI)
-						i(169237),	-- Pulsating Marble (QI)
-						i(169230),	-- Reflective Plating (QI)
-						i(169252),	-- Resonant Pearl (QI)
-						i(169249),	-- Shark Tooth Necklace (QI)
-						i(169253),	-- Shell Horn (QI)
-						i(169246),	-- Strangely Seasoned Meat (QI)
-						i(169247),	-- Throwing Rocks (QI)
-						i(169226),	-- Torn Sheet Music (QI)
-						i(169255),	-- Tuft of Red Fur (QI)
-						i(169239),	-- Unknowable Cube (QI)
-						i(169225),	-- Unstoppable Countdown Clock (QI)
-					},
 				}),
 				q(55101, {	-- Junkyard Tinkering and You -- also triggered 56902 for alliance -- slumber note: maybe not on live?  didn't get it on my priest.
 					["provider"] = { "n", 152295 },	-- Pascal
@@ -762,7 +726,6 @@ _.Zones =
 						crit(2, {	-- One Gnome's Trash
 							["achievementID"] = 13556,	-- Outside Influences
 						}),
-						i(168184),	-- Rare Metal (QI)
 						i(168204, {	-- Small Metal Box
 							["description"] = "Small Metal Boxes can be collected when using the Rare Metal Collector.",
 							["g"] = {
@@ -836,9 +799,6 @@ _.Zones =
 						crit(16, {	-- Pirates, Sea Monsters, Robots
 							["achievementID"] = 13556,	-- Outside Influences
 						}),
-						i(169164), -- Father's Bones (QI)
-						i(169166), -- Father's Clothes (QI)
-						i(169165), -- Father's Sword (QI)
 					},
 				}),
 				q(55528, {	-- Playtime's Over
@@ -887,7 +847,7 @@ _.Zones =
 					["provider"] = { "n", 150567 },	-- Gazlowe
 					["coord"] = { 74.0, 36.8, 1355 },
 					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
+					["isDaily"] = true,
 				}),
 				q(54929, {	-- Ready to Rumble
 					["provider"] = { "n", 150573 },	-- Recycler Kerchunk
@@ -1610,6 +1570,10 @@ _.Zones =
 					["provider"] = { "n", 154534 },	-- Flux
 					["coord"] = { 61.2, 37.4, 1462 },
 					["repeatable"] = true,	-- repeatable when the tower is up to craft filled energy cells
+				}),
+				q(55979, { -- Iteration is Key
+					["requireSkill"] = ENGINEERING,
+					["cost"] = { { "i", 164740, 1 }, },	-- Ub3r-Spanner
 				}),
 			}),
 		}),

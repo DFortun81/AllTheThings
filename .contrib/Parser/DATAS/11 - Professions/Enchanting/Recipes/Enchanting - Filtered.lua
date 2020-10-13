@@ -264,7 +264,8 @@ profession(ENCHANTING, {
 							["recipeID"] = 25073--[[Shadow Power]]
 						},
 						{
-							["recipeID"] = 13868--[[Advanced Herbalism]]
+							["recipeID"] = 13868,--[[Advanced Herbalism]]
+							["u"] = 2
 						},
 						{
 							["recipeID"] = 13887--[[Strength]]

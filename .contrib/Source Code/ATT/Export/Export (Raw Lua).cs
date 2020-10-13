@@ -9,6 +9,11 @@ namespace ATT
     partial class Export
     {
         /// <summary>
+        /// Allows to define whether raw LUA will include newlines or not
+        /// </summary>
+        public static bool IncludeRawNewlines { get; set; } = true;
+
+        /// <summary>
         /// Export the data to the builder in a raw, longhand Lua format.
         /// Standardized formatting applies here.
         /// </summary>
@@ -55,10 +60,7 @@ namespace ATT
             }
 
             // Increase the indent by 1 tab.
-            var subindent = indent + '\t';
-
-            // Open Bracket for beginning of the Dictionary.
-            builder.Append('{').AppendLine();
+            var subindent = IncludeRawNewlines ? indent + '\t' : string.Empty;
 
             // Clone this and calculate most significant.
             bool hasG = false;
@@ -77,22 +79,70 @@ namespace ATT
             }
             keys.Sort();
             foreach (var key in keys) data2[key] = data[key];
-            ObjectData.TryGetMostSignificantObjectType(data2, out ObjectData objectData);
+
+
+            // include 'name' as a comment instead of a data value since ATT does not process this field in game
+            data2.TryGetValue("name", out object commentName);
+            data2.Remove("name");
+
+            // Write the shortcut with the highest priority
+            bool useShortcut = ObjectData.TryGetMostSignificantObjectType(data2, out ObjectData objectType);
+            if (useShortcut)
+            {
+                // Write the shortcut for the object type.
+                objectType.WriteShortcut(builder, objectType.ConstructorShortcut, objectType.Function);
+                ExportRawLua(builder, data2[objectType.ObjectType]);
+                data2.Remove(objectType.ObjectType);
+                builder.Append(", ");
+            }
+
+            // Open Bracket for beginning of the Dictionary.
+            builder.Append('{');
+
+            if (commentName != null)
+                builder.Append(" -- ").Append(ToString(commentName));
+
+            // move down for data
+            if (IncludeRawNewlines)
+                builder.AppendLine();
 
             // Export Fields
             int fieldCount = 0;
             foreach (var pair in data2)
             {
-                // If this is NOT the first field, append a comma.
-                if (fieldCount++ > 0) builder.Append(',').AppendLine();
+                // If this is NOT the first field, move to the next line
+                if (fieldCount++ > 0 && IncludeRawNewlines) builder.AppendLine();
 
-                // Append the Sub-Indent and the Field Name
-                builder.Append(subindent).Append("[");
-                ExportRawLua(builder, pair.Key, subindent);
-                builder.Append("] = ");
 
-                // Append the undetermined object's format to the builder.
-                ExportRawLua(builder, pair.Value, subindent);
+                // special things
+                switch (pair.Key)
+                {
+                    // r is used for the 'faction races' collection
+                    case "r":
+                        try
+                        {
+                            // Always follow each piece of data with a comma for consistency
+                            builder.Append(',');
+                            int dataVal = Convert.ToInt32(pair.Value);
+                            string factionRaces = dataVal == 1 ? "HORDE_ONLY" : "ALLIANCE_ONLY";
+
+                            // Append the Sub-Indent and the Field Name
+                            builder.Append(subindent).Append("[");
+                            ExportRawLua(builder, "races", subindent);
+                            builder.Append("] = ").Append(factionRaces);
+                        }
+                        catch
+                        {
+                            ExportRawLuaKeyValue(builder, pair.Key, pair.Value, subindent);
+                        }
+                        break;
+                    default:
+                        ExportRawLuaKeyValue(builder, pair.Key, pair.Value, subindent);
+                        break;
+                }
+
+                // Always follow each piece of data with a comma for consistency
+                builder.Append(',');
 
                 // For some fields, we want to show the name of the object in a comment next to the exported data.
                 /*
@@ -132,7 +182,12 @@ namespace ATT
             if (hasG)
             {
                 // If this is NOT the first field, append a comma.
-                if (fieldCount++ > 0) builder.Append(',').AppendLine();
+                if (fieldCount++ > 0)
+                {
+                    builder.Append(',');
+                    if (IncludeRawNewlines)
+                        builder.AppendLine();
+                }
 
                 // Append the Sub-Indent and the Field Name
                 builder.Append(subindent).Append("[\"g\"] = ");
@@ -142,7 +197,30 @@ namespace ATT
             }
 
             // Close Bracket for the end of the Dictionary.
-            builder.AppendLine().Append(indent).Append('}');
+
+            if (IncludeRawNewlines)
+                builder.AppendLine();
+            builder.Append(indent).Append('}');
+
+            if (useShortcut)
+                builder.Append(')');
+        }
+
+        /// <summary>
+        /// Outputs a single object corresponding of the key and value
+        /// </summary>
+        /// <param name="builder"></param>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        private static void ExportRawLuaKeyValue(StringBuilder builder, object key, object value, string subindent = "")
+        {
+            // Append the Sub-Indent and the Field Name
+            builder.Append(subindent).Append("[");
+            ExportRawLua(builder, key, subindent);
+            builder.Append("] = ");
+
+            // Append the undetermined object's format to the builder.
+            ExportRawLua(builder, value, subindent);
         }
 
         /// <summary>
@@ -163,16 +241,23 @@ namespace ATT
             }
 
             // Increase the indent by 1 tab.
-            var subindent = indent + '\t';
+            var subindent = IncludeRawNewlines ? indent + '\t' : string.Empty;
 
             // Open Bracket for beginning of the List.
-            builder.Append('{').AppendLine();
+            builder.Append('{');
+            if (IncludeRawNewlines)
+                builder.AppendLine();
 
             // Export Fields
             for (int i = 0; i < count; ++i)
             {
                 // If this is NOT the first field, append a comma.
-                if (i > 0) builder.Append(',').AppendLine();
+                if (i > 0)
+                {
+                    builder.Append(',');
+                    if (IncludeRawNewlines)
+                        builder.AppendLine();
+                }
 
                 // Append the Sub-Indent
                 builder.Append(subindent);
@@ -182,7 +267,10 @@ namespace ATT
             }
 
             // Close Bracket for the end of the List.
-            builder.AppendLine().Append(indent).Append('}');
+
+            if (IncludeRawNewlines)
+                builder.AppendLine();
+            builder.Append(indent).Append('}');
         }
 
         /// <summary>

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -17,7 +18,7 @@ _.Zones =
 						{ 69.6, 42.0, 48 },
 						{ 66.6, 40.0, 48 },
 					},
-				}), 
+				}),
 				n(1398,   {	-- Boss Galgosh
 					["coords"] = {
 						{ 69.6, 60.0, 48 },
@@ -29,7 +30,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(1938)),	-- Block Mallet
 						un(REMOVED_FROM_GAME, i(1215)),	-- Support Girdle
 					},
-				}), 
+				}),
 				o(207496, {	-- Dark Iron Treasure Chest
 					["model"] = 446673,
 					["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
@@ -67,7 +68,7 @@ _.Zones =
 						{ 72.8, 21.4, 48 },
 						{ 70.0, 25.0, 48 },
 					},
-				}), 
+				}),
 				n(45404,  {	-- Geoshaper Maren
 					["coord"] = { 50.0, 24.0, 48 },
 				}),
@@ -81,13 +82,13 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6197)),	-- Loch Croc Hide Vest
 						un(REMOVED_FROM_GAME, i(3563)),	-- Seafarer's Pantaloons
 					},
-				}), 
+				}),
 				n(45398,  {	-- Grizlak
 					["coord"] = { 35.6, 15.6, 48 },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2284)),	-- Rat Cloth Cloak
 					},
-				}), 
+				}),
 				n(1425,   {	-- Kubb
 					["coords"] = {
 						{ 26.0, 27.0, 48 },
@@ -97,7 +98,7 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6195)),	-- Wax-Polished Armor
 					},
-				}), 
+				}),
 				n(14268,  {	-- Lord Condar
 					["coords"] = {
 						{ 67.4, 76.0, 48 },
@@ -107,21 +108,21 @@ _.Zones =
 						{ 78.6, 71.2, 48 },
 						{ 78.2, 74.6, 48 },
 					},
-				}), 
+				}),
 				n(1399,   {	-- Magosh
 					["coord"] = { 31.0, 75.6, 48 },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2241)),	-- Desperado Cape
 						un(REMOVED_FROM_GAME, i(3571)),	-- Trogg Beater
 					},
-				}), 
+				}),
 				n(45369,  {	-- Morick Darkbrew
 					["coords"] = {
 						{ 37.8, 63.2, 48 },
 						{ 40.4, 60.4, 48 },
 						{ 40.6, 64.4, 48 },
 					},
-				}), 
+				}),
 				n(45402,  {	-- Nix
 					["coords"] = {
 						{ 50.8, 37.4, 48 },
@@ -130,7 +131,7 @@ _.Zones =
 						{ 58.8, 41.6, 48 },
 						{ 53.8, 43.2, 48 },
 					},
-				}), 
+				}),
 				n(45399,  {	-- Optimo
 					["coords"] = {
 						{ 71.6, 77.0, 48 },
@@ -138,13 +139,13 @@ _.Zones =
 						{ 77.0, 83.2, 48 },
 						{ 78.0, 77.8, 48 },
 					},
-				}), 
+				}),
 				n(45384,  {	-- Sagepaw
 					["coord"] = { 25.6, 44.8, 48 },
-				}), 
+				}),
 				n(14266,  {	-- Shanda the Spinner
 					["coord"] = { 61.6, 74.6, 48 },
-				}), 
+				}),
 				n(7170,   {	-- Thragomm <Horde Runner>
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
@@ -160,7 +161,7 @@ _.Zones =
 						{ 46.0, 54.8, 48 },
 						{ 49.6, 57.0, 48 },
 					},
-				}), 
+				}),
 			}),
 		}),
 	}),

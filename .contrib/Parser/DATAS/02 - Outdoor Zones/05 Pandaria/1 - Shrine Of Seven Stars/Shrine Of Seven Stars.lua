@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -16,10 +17,10 @@ _.Zones =
 			},
 			["lvl"] = 78,
 			["g"] = {
-				n(-4,  {	--Achievements
+				n(ACHIEVEMENTS,  {
 					ach(7285),	-- Every Day I'm Pand-a-ren
 				}),
-				n(QUESTS, {	
+				n(QUESTS, {
 					q(32900, {	-- Heroic Deeds
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class- and spec-specific. Not all items are available to all classes able to equip them.|r",
 						["coord"] = { 47.23, 49.71, 393 },
@@ -1898,7 +1899,7 @@ _.Zones =
 						},
 					}),
 				}),
-			},				
+			},
 		}),
 	}),
 };

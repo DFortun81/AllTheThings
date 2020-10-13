@@ -1,6 +1,8 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
+-- TODO: formatting
 _.Holidays =
 {
 	{	-- Trial of Style
@@ -18,9 +20,9 @@ _.Holidays =
 								["itemID"] = 168058,	-- Ensemble: Tranquil Spiritbind Regalia
 								["description"] = "Cost: 60 Trial of Style Tokens",
 								["classes"] = {
-									5,	-- Priest
-									8,	-- Mage
-									9,	-- Warlock
+									PRIEST,
+									MAGE,
+									WARLOCK,
 								},
 								["g"] = {
 									{	-- Tranquil Spiritbind Cowl
@@ -49,14 +51,14 @@ _.Holidays =
 									},
 								},
 							},
-							{	-- Ensemble: Restless Dreambound Battlegear 
-								["itemID"] = 168059,	-- Ensemble: Restless Dreambound Battlegear 
+							{	-- Ensemble: Restless Dreambound Battlegear
+								["itemID"] = 168059,	-- Ensemble: Restless Dreambound Battlegear
 								["description"] = "Cost: 60 Trial of Style Tokens",
 								["classes"] = {
-									11,	-- Druid
-									4,	-- Rogue
-									10,	-- Monk
-									12,	-- Demon Hunter
+									DRUID,
+									ROGUE,
+									MONK,
+									DEMONHUNTER,
 								},
 								["g"] = {
 									{	-- Restless Dreambound Helm
@@ -89,8 +91,8 @@ _.Holidays =
 								["itemID"] = 168060,	-- Ensemble: Chainmail of the Timeless Hunt
 								["description"] = "Cost: 60 Trial of Style Tokens",
 								["classes"] = {
-									3,	-- Hunter
-									7,	-- Shaman
+									HUNTER,
+									SHAMAN,
 								},
 								["g"] = {
 									{	-- Headguard of the Timeless Hunt
@@ -123,9 +125,9 @@ _.Holidays =
 								["itemID"] = 168061,	-- Ensemble: Amaranthine Path Armor
 								["description"] = "Cost: 60 Trial of Style Tokens",
 								["classes"] = {
-									2,	-- Paladin
-									1,	-- Warrior
-									6,	-- Death Knight
+									PALADIN,
+									WARRIOR,
+									DEATHKNIGHT,
 								},
 								["g"] = {
 									{	-- Amaranthine Path Helm

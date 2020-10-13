@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(187, { 	-- Dragon Soul
 		["order"] = "06",
@@ -8,7 +9,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["sharedLockout"] = 1,
 		["lvl"] = 85,
 		["mapID"] = 409,	--  Wyrmrest Temple [Starting Area]
-		["maps"] = { 
+		["maps"] = {
 			412,	-- Dragon Soul: Eye of Eternity
 			415,	-- Dragon Soul: The Maelstrom
 			410,
@@ -22,7 +23,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		},
 		["groups"] = {
 			n(-10066, {	-- Legendary Questline
-				["classes"] = { 4 },	-- Rogue
+				["classes"] = { ROGUE },
 				["title"] = "Fangs of the Father",
 				["icon"] = "Interface\\Icons\\ability_backstab",
 				["isRaid"] = true,
@@ -196,7 +197,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(78775),	-- Deep Earth Handwraps
 								i(78766),	-- Time Lord's Gloves
 								i(78774),	-- Blackfang Battleweave Gloves
-							}),			
+							}),
 							i(78872, {	-- Leggings of the Corrupted Conqueror
 								i(78812),	-- Greaves of Radiant Glory
 								i(78810),	-- Legguards of Radiant Glory
@@ -286,7 +287,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							})),
 						},
 					}),
-					ach(6107, {	-- Fall of Deathwing	
+					ach(6107, {	-- Fall of Deathwing
 						["crs"] = {
 							80675,	-- Auridormi <Raid Finder Guardian>
 						},
@@ -338,10 +339,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(78488),	-- Souldrinker
 								i(78486),	-- Ti'tahk, the Steps of Time
 								i(78480),	-- Vishanka, Jaws of the Earth
-								i(89810),	-- Bounty of a Sundered Land								
+								i(89810),	-- Bounty of a Sundered Land
 							})),
 						},
-					}),	
+					}),
 				},
 			}),
 			d(1, {	-- Normal [Lucetia Note: Do not change the dungeon # here unless you let Crieve or myself know]
@@ -351,12 +352,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 					n(QUESTS, {
 						ql(q(29802, {	-- A Hidden Message
 							["provider"] = { "n", 55476 },	-- Lord Afrasastrasz
-							["classes"] = { 4 },	-- Rogue
+							["classes"] = { ROGUE },
 							["sourceQuests"] = { 29801 },	-- Proving Your Worth
 						})),
 						ql(q(29801, {	-- Proving Your Worth
 							["provider"] = { "n", 55476 },	-- Lord Afrasastrasz
-							["classes"] = { 4 },	-- Rogue									
+							["classes"] = { ROGUE },
 						})),
 					}),
 					n(COMMON_BOSS_DROPS, {
@@ -869,12 +870,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 					n(QUESTS, {
 						ql(q(29802, {	-- A Hidden Message
 							["provider"] = { "n", 55476 },	-- Lord Afrasastrasz
-							["classes"] = { 4 },	-- Rogue
+							["classes"] = { ROGUE },
 							["sourceQuests"] = { 29801 },	-- Proving Your Worth
 						})),
 						ql(q(29801, {	-- Proving Your Worth
 							["provider"] = { "n", 55476 },	-- Lord Afrasastrasz
-							["classes"] = { 4 },	-- Rogue									
+							["classes"] = { ROGUE },
 						})),
 					}),
 					n(COMMON_BOSS_DROPS, {
@@ -1071,7 +1072,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(78888),	-- Waistguard of Bleeding Bone
 							i(78889),	-- Waistplate of the Desecrated Future
 						},
-					}),						
+					}),
 					{	-- Siege of Wyrmrest Temple
 						["achievementID"] = 6106,	-- Siege of Wyrmrest Temple
 					},

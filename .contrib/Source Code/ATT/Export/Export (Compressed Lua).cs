@@ -84,94 +84,92 @@ namespace ATT
         private static void ExportCompressedLua(StringBuilder builder, Dictionary<string, object> data)
         {
             // If the dictionary doesn't have any content, then return immediately.
-            if (data.Any())
-            {
-                // Cache the fields
-                var fields = data.Keys.ToList();
-
-                // If this is a constructed object type, then we need to write a parenthesis afterward.
-                var constructed = ExportShortcut(builder, data, fields);
-
-                // If there are still fields to write, then do so.
-                if (fields.Count > 0)
-                {
-                    // Write a comma for the start of the data dictionary contents.
-                    builder.Append(',');
-
-                    // We don't need to write the "g" tag if that's the only field.
-                    if (fields.Count == 1 && fields[0] == "g")
-                    {
-                        // Only "g" is left, let's push it up a level and remove the field.
-                        ExportCompressedLua(builder, data["g"]);
-                    }
-                    else if (data.TryGetValue("g", out object groupsRef))
-                    {
-                        // Append the groups field.
-                        builder.Append("g(");
-                        fields.Remove("g");
-
-                        // Open Bracket for beginning of the Dictionary.
-                        builder.Append('{');
-
-                        // Export Fields
-                        int fieldCount = 0;
-                        foreach (var field in fields)
-                        {
-                            // If this is NOT the first field, append a comma.
-                            if (fieldCount++ > 0) builder.Append(',');
-                            builder.Append(field).Append('=');
-
-                            // Append the undetermined object's format to the builder.
-                            ExportCompressedLua(builder, data[field]);
-                        }
-
-                        // Close Bracket for the end of the Dictionary.
-                        builder.Append('}');
-
-                        // Append the groups.
-                        builder.Append(',');
-                        ExportCompressedLua(builder, groupsRef);
-                        builder.Append(')');
-                    }
-                    else
-                    {
-                        // Open Bracket for beginning of the Dictionary.
-                        builder.Append('{');
-
-                        // Export Fields
-                        int fieldCount = 0;
-                        foreach (var field in fields)
-                        {
-                            // If this is NOT the first field, append a comma.
-                            if (fieldCount++ > 0) builder.Append(',');
-                            builder.Append(field).Append('=');
-
-                            // Append the undetermined object's format to the builder.
-                            if (field == "sym" || field == "cost")
-                            {
-                                // Write the symbolic link without changing anything.
-                                //builder.Append('"').Append(Convert.ToString(data[field]).Replace("\"", "\\\"")).Append('"');
-                                ExportRawLua(builder, data[field]);
-                            }
-                            else if(field == "OnUpdate")
-                            {
-                                builder.Append(Convert.ToString(data[field]).Replace("\n", "").Replace("\r", "").Replace("\t\t", "\t"));
-                            }
-                            else ExportCompressedLua(builder, data[field]);
-                        }
-
-                        // Close Bracket for the end of the Dictionary.
-                        builder.Append('}');
-                    }
-                }
-
-                // Close the Parenthesis for the end of the constructor.
-                if (constructed) builder.Append(')');
-            }
-            else
+            if (!data.Any())
             {
                 builder.Append("{}");
+                return;
             }
+            // Cache the fields
+            var fields = data.Keys.ToList();
+
+            // If this is a constructed object type, then we need to write a parenthesis afterward.
+            var constructed = ExportShortcut(builder, data, fields);
+
+            // If there are still fields to write, then do so.
+            if (fields.Count > 0)
+            {
+                // Write a comma for the start of the data dictionary contents.
+                builder.Append(',');
+
+                // We don't need to write the "g" tag if that's the only field.
+                if (fields.Count == 1 && fields[0] == "g")
+                {
+                    // Only "g" is left, let's push it up a level and remove the field.
+                    ExportCompressedLua(builder, data["g"]);
+                }
+                else if (data.TryGetValue("g", out object groupsRef))
+                {
+                    // Append the groups field.
+                    builder.Append("g(");
+                    fields.Remove("g");
+
+                    // Open Bracket for beginning of the Dictionary.
+                    builder.Append('{');
+
+                    // Export Fields
+                    int fieldCount = 0;
+                    foreach (var field in fields)
+                    {
+                        // If this is NOT the first field, append a comma.
+                        if (fieldCount++ > 0) builder.Append(',');
+                        builder.Append(field).Append('=');
+
+                        // Append the undetermined object's format to the builder.
+                        ExportCompressedLua(builder, data[field]);
+                    }
+
+                    // Close Bracket for the end of the Dictionary.
+                    builder.Append('}');
+
+                    // Append the groups.
+                    builder.Append(',');
+                    ExportCompressedLua(builder, groupsRef);
+                    builder.Append(')');
+                }
+                else
+                {
+                    // Open Bracket for beginning of the Dictionary.
+                    builder.Append('{');
+
+                    // Export Fields
+                    int fieldCount = 0;
+                    foreach (var field in fields)
+                    {
+                        // If this is NOT the first field, append a comma.
+                        if (fieldCount++ > 0) builder.Append(',');
+                        builder.Append(field).Append('=');
+
+                        // Append the undetermined object's format to the builder.
+                        if (field == "sym" || field == "cost")
+                        {
+                            // Write the symbolic link without changing anything.
+                            //builder.Append('"').Append(Convert.ToString(data[field]).Replace("\"", "\\\"")).Append('"');
+                            ExportRawLua(builder, data[field]);
+                        }
+                        else if (field == "OnUpdate")
+                        {
+                            builder.Append(Convert.ToString(data[field]).Replace("\n", "").Replace("\r", "").Replace("\t\t", "\t"));
+                        }
+                        else ExportCompressedLua(builder, data[field]);
+                    }
+
+                    // Close Bracket for the end of the Dictionary.
+                    builder.Append('}');
+                }
+            }
+
+            // Close the Parenthesis for the end of the constructor.
+            if (constructed) builder.Append(')');
         }
 
         /// <summary>
@@ -227,7 +225,7 @@ namespace ATT
                     builder.Append('{');
 
                     // Export Fields
-                    for (int i = 0,count = list.Count; i < count; ++i)
+                    for (int i = 0, count = list.Count; i < count; ++i)
                     {
                         // If this is NOT the first field, append a comma.
                         if (i > 0) builder.Append(',');

@@ -8,6 +8,14 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 606, 607, 608, 609 },
 		["lvl"] = 100,
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
+					["collectible"] = false,
+					["g"] = {
+						crit(5),	-- Skylord Tovra
+					},
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					77803,	-- Railmaster Rocketspark
@@ -79,7 +87,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				e(1163, {	-- Nitrogg Thundertower
-					["crs"] = { 
+					["crs"] = {
 						79548,	-- Assault Cannon
 						79545,	-- Nitrogg Thundertower
 					},
@@ -260,7 +268,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				e(1163, {	-- Nitrogg Thundertower
-					["crs"] = { 
+					["crs"] = {
 						79548,	-- Assault Cannon
 						79545,	-- Nitrogg Thundertower
 					},
@@ -437,7 +445,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				e(1163, {	-- Nitrogg Thundertower
-					["crs"] = { 
+					["crs"] = {
 						79548,	-- Assault Cannon
 						79545,	-- Nitrogg Thundertower
 					},

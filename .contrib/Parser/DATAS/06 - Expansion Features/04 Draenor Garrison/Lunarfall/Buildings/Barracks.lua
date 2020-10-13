@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
@@ -9,7 +10,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(28,  {	-- Barracks (rank 1: 26, rank 2: 27, rank 3: 28)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-4, {		-- Achievements
+						n(ACHIEVEMENTS, {
 							ach(9499, {		-- Wingmen
 								crit(1),		-- Leorajh
 								crit(2),		-- Talonpriest Ishaal

@@ -5,7 +5,7 @@
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(258, {	-- The Mechanar
 		["lvl"] = 65,
-		["maps"] = { 
+		["maps"] = {
 			267,	-- The Mechanar
 			268,	-- Calculation Chamber
 		},

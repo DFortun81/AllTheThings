@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -16,7 +17,7 @@ _.Zones =
 					ql(q(30093, {	-- Assassinate Creed
 						["provider"] = { "n", 57770 },	-- Zazzo Twinklefingers
 						["coord"] = { 70.0, 40.8, 21 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["lvl"] = 85,
 						["sourceQuests"] = { 30092 },	-- Our Man in Gilneas
 					})),
@@ -32,7 +33,7 @@ _.Zones =
 					}),
 					q(27350, {	-- Break in Communications: Rutsak's Guard
 						["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
-						["coord"] = { 57.5, 18.2, 21 },
+						["coord"] = { 57.5, 18.2, 217 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27349 },	-- Break in Communications: Dreadwatch Outpost
 					}),
@@ -60,7 +61,7 @@ _.Zones =
 						},
 					}),
 					q(27322, {	-- Korok's Second Head
-						["crs"] = { 45301 },	-- Korok the Colossus
+						["crs"] = { 45301, 46657 },	-- Korok the Colossus
 						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 60956 },	-- Korok's Second Head
 						["sourceQuests"] = { 27290 }, 	-- To Forsaken Forward Command
@@ -79,13 +80,13 @@ _.Zones =
 					}),
 					q(27364, {	-- On Whose Orders?
 						["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
-						["coord"] = { 57.5, 18.2, 21 },
+						["coord"] = { 57.5, 18.2, 217 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27350 },	-- Break in Communications: Rutsak's Guard
 					}),
 					q(27423, {	-- Resistance is Futile
 						["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
-						["coord"] = { 57.5, 18.2, 21 },
+						["coord"] = { 57.5, 18.2, 217 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27405 },	-- Fall Back!
 					}),
@@ -93,7 +94,7 @@ _.Zones =
 						["provider"] = { "n", 57770 },	-- Zazzo Twinklefingers
 						["lvl"] = 85,
 						["coord"] = { 70.0, 40.8, 21 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["sourceQuests"] = { 30093 },	-- Assassinate Creed
 						["g"] = {
 							i(77945),	-- Fear
@@ -108,7 +109,7 @@ _.Zones =
 					}),
 					q(27438, {	-- The Great Escape (awards "Ruins of Gilneas" criteria for zone achievement)
 						["provider"] = { "n", 45312 },	-- Deathstalker Commander Belmont
-						["coord"] = { 79.7, 75.7, 21 },
+						["coord"] = { 79.7, 75.7, 217 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							27406,	-- A Man Named Godfrey

@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-_.GearSets = 
+
+_.GearSets =
 {
 	n(-254, {	-- Heritage Armor
 		gs(1682, {	-- Heritage of the Frostwolves
@@ -17,5 +18,5 @@ _.GearSets =
 				i(161065),	-- Frostwolf Clan Boots
 			},
 		}),
-	}),	
+	}),
 };

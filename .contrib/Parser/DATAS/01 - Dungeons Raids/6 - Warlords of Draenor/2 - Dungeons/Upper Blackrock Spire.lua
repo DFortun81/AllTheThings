@@ -9,6 +9,14 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 616, 617, 618 },
 		["lvl"] = 100,
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
+					["collectible"] = false,
+					["g"] = {
+						crit(3),	-- Warlord Zaela
+					},
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					76413,	-- Orebender Gor'ashan
@@ -435,7 +443,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						79912,	-- Commander Tharbek
 						80098,	-- Ironbarb Skyreaver
 					},
-					["g"] = {	
+					["g"] = {
 						i(118726),	-- Tharbek's Brutal Possessor
 						i(118725),	-- Tharbek's Unholy Charge
 						i(109898),	-- Blackwater Wrap

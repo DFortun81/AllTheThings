@@ -37,7 +37,7 @@ profession(JEWELCRAFTING, {
 								},
 							},
 						},
-					},	
+					},
 				}),
 			},
 		},

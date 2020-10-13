@@ -198,7 +198,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(123997),	-- Hallowed Handwraps
 						i(124013),	-- Belt of Flowing Thought
 						i(124014),	-- Pantaloons of Flaming Wrath
-						i(124012),	-- Nimble-Foot Treads								
+						i(124012),	-- Nimble-Foot Treads
 					})),
 					cr(16809, e(568, {	-- Warbringer O'mrogg
 						i(123987),	-- Firemaul of Destruction

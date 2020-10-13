@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -74,9 +74,9 @@ _.Zones =
 					}),
 				}),
 				n(127333, {	-- Barbthorn Queen
-					["questID"] = 48842,	
+					["questID"] = 48842,
 					["coord"] = { 59.0, 16.8, 896 },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(3, {	-- Barbthorn Queen
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
 						}),
@@ -215,16 +215,16 @@ _.Zones =
 					}),
 				}),
 				n(127844, {	-- Gluttonous Yeti
-					["questID"] = 48979,	
+					["questID"] = 48979,
 					["coord"] = { 63.0, 69.6, 896 },
 					["crs"] = { 127979 },	-- Lost Goat
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(6, {	-- Gluttonous Yeti
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
-						}),	
+						}),
 						i(158683),	-- Giant Yeti's Bowl
 					}),
-				}),	
+				}),
 				n(129835, {	-- Gorehorn
 					["questID"] = 49480,
 					["coord"] = { 57.0, 44.2, 896 },
@@ -310,7 +310,7 @@ _.Zones =
 					}),
 				}),
 				n(125453, {	-- Quillrat Matriarch
-					["questID"] = 48178,	
+					["questID"] = 48178,
 					["coord"] = { 66.6, 42.6, 896 },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(2, {	-- Quillrat Matriarch
@@ -380,20 +380,20 @@ _.Zones =
 						i(155560),	-- Lazy-Baker's Ring
 					}),
 				}),
-				n(127651, {	-- Vicemaul		
-					["questID"] = 48928,	
+				n(127651, {	-- Vicemaul
+					["questID"] = 48928,
 					["coord"] = { 72.8, 60.5, 896 },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(4, {	-- Vicemaul
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
 						}),
 						i(160474),	-- Vicemaul Wristpinchers
 					}),
-				}),	
+				}),
 				n(128973, {	-- Whargarble the Ill-Tempered
-					["questID"] = 49311,	
+					["questID"] = 49311,
 					["coord"] = { 64.9, 21.5, 896 },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(11, {	-- Whargarble the Ill-Tempered
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
 						}),

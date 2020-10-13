@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(433, {	-- The Veiled Stair
-			n(-4, {	-- Achievement
+			n(ACHIEVEMENTS, {
 				ach(7997, {	-- Riches of Pandaria
 					["collectible"] = false,
 					["g"] = {

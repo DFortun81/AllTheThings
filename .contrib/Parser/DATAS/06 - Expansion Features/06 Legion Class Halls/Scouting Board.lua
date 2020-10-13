@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
@@ -115,8 +116,8 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 98613 },	-- Scouting Map
 							["isBreadcrumb"] = true,
 						}),
-						un(REMOVED_FROM_GAME, q(44917, {	-- Return to Karazhan: The Tower of Power (No Tag but Mythic) 
-							un(REMOVED_FROM_GAME, i(142342)),	-- Glittering Pack (No Tag but Mythic) 
+						un(REMOVED_FROM_GAME, q(44917, {	-- Return to Karazhan: The Tower of Power (No Tag but Mythic)
+							un(REMOVED_FROM_GAME, i(142342)),	-- Glittering Pack (No Tag but Mythic)
 						})),
 						q(39735, {	-- Stormheim (A)
 							["lvl"] = 98,
@@ -128,7 +129,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["altQuests"] = { 44701 },	-- Stormheim (H) from Archmage Landon in Stormheim
 						}),
-						un(REMOVED_FROM_GAME, q(43555, {	-- The Arcway: Into the Arcway (Normal) -- 
+						un(REMOVED_FROM_GAME, q(43555, {	-- The Arcway: Into the Arcway (Normal) --
 							un(REMOVED_FROM_GAME, i(141162)),	-- Unmarked Suramar Vault Crate (Normal)
 						})),
 						un(REMOVED_FROM_GAME, q(44262, {	-- The Arcway: Into the Arcway (Heroic)
@@ -152,7 +153,10 @@ _.ExpansionFeatures =
 							un(REMOVED_FROM_GAME, i(141183)),	-- Bag of Confiscated Materials (Mythic)
 						})),
 						q(44058,  {  -- Volpin the Elusive
-							i(137573),	-- Reins of the Llothien Prowler
+							["sourceQuests"] = { 44057 },	-- A "Noble" Event
+							["g"] = {
+								i(137573),	-- Reins of the Llothien Prowler
+							},
 						}),
 						--[[q(45312, {	-- You Beat the Ball of Meat
 							["provider"] = { "i", 143590 },	-- Hunk of Meatball

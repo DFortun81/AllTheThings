@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, { 	-- The Broken Isles
@@ -440,6 +441,12 @@ _.Zones =
 						{ "n", 103415 },	-- Courier Larkspur
 						{ "n", 103741 },	-- Courier Larkspur
 					},
+				}),
+				q(44550, {	-- Called to Acherus
+					["provider"] = { "n", 114282 }, -- Dread Commander Thalanor
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 42449, -- Return of the Four Horseman
+					["isBreadcrumb"] = true,
 				}),
 				q(48021, {	-- Chromie
 					["providers"] = {
@@ -1636,4 +1643,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};;
+};

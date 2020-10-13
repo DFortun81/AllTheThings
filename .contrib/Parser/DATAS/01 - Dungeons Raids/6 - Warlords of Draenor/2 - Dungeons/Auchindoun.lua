@@ -8,6 +8,14 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["mapID"] = 593,
 		["coord"] = { 46.27, 73.92, 535 },	-- Talador, Draenor
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
+					["collectible"] = false,
+					["g"] = {
+						crit(8),	-- Teron'gor
+					},
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					75839,	-- Vigilant Kaathar

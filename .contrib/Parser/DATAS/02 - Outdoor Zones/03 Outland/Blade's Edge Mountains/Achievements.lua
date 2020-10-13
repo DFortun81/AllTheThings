@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
 		m(105, {	-- Blade's Edge Mountains
-			n(-4, {		-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(896),	-- A Quest a Day Keeps the Ogres at Bay
 				ach(1276),	-- Blade's Edge Bomberman
 				ach(1193, {	-- On the Blade's Edge

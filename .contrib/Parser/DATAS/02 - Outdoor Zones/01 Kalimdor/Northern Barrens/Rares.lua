@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -12,7 +13,7 @@ _.Zones =
 						i(5423),	-- Boahn's Fang
 						i(5422),	-- Brambleweed Leggings
 					},
-				}), 
+				}),
 				n(5838, {	-- Brokespear
 					["coords"] = {
 						{ 52.2, 75.8, 10 },
@@ -24,7 +25,7 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7559)),	-- Runic Cane
 					},
-				}), 
+				}),
 				n(5865, {	-- Dishu
 					["coords"] = {
 						{ 45.4, 32.8, 10 },
@@ -43,13 +44,13 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(4768)),	-- Adept's Gloves
 						un(REMOVED_FROM_GAME, i(4771)),	-- Harvest Cloak
 					},
-				}), 
+				}),
 				n(5836, {	-- Engineer Whirleygig
 					["coord"] = { 58.0, 20.6, 10 },
-				}), 
+				}),
 				n(5835, {	-- Foreman Grills
 					["coord"] = { 57.2, 20.6, 10 },
-				}), 
+				}),
 				n(3398, {	-- Gesharahan
 					["coord"] = { 40.0, 74.6, 10 },
 					["g"] = {
@@ -59,23 +60,23 @@ _.Zones =
 				}),
 				n(5828, {	-- Humar the Pridelord
 					["coord"] = { 67.2, 64.0, 10 },
-				}), 
+				}),
 				n(3470, {	-- Rathorian
 					["coord"] = { 41.6, 39.6, 10 },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(5111)),	-- Rathorian's Cape
 						un(REMOVED_FROM_GAME, i(5112)),	-- Ritual Blade
 					},
-				}), 
+				}),
 				n(5841, {	-- Rocklance
 					["coord"] = { 59.2, 80.2, 10 },
-				}), 
+				}),
 				n(5830, {	-- Sister Rathtalon
 					["coord"] = { 25.4, 33.2, 10 },
-				}), 
+				}),
 				n(3295, {	-- Sludge Anomaly
 					["coord"] = { 57.6, 19.4, 10 },
-				}), 
+				}),
 				n(5837, {	-- Stonearm
 					["coords"] = {
 						{ 32.4, 53.0, 10 },
@@ -85,11 +86,11 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1355)), 	-- Buckskin Cape
 					},
-				}), 
+				}),
 				n(5831, {	-- Swiftmane
 					["coord"] = { 64.8, 60.4, 10 },
 
-				}), 
+				}),
 				o(202081, {	-- Takk's Nest
 					["model"] = 199226,
 					["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",
@@ -100,20 +101,20 @@ _.Zones =
 						{ 65.0, 28.7, 10 },
 						--{ 56.0, 49.3, 10 },	-- Wowhead notes this as another coord, but only before cataclysm
 					},
-					["g"] = {	
+					["g"] = {
 						i(48118),  	-- Leaping Hatchling
 					},
 				}),
 				n(5842, {	-- Takk the Leaper
 					["coord"] = { 63.4, 36.6, 10 },
-				}), 
+				}),
 				n(3652, {	-- Trigore the Lasher
 					["description"] = "Inside the pool of water outside the Wailing Caverns dungeon portal.",
 					["g"] = {
 						i(5425),	-- RuneChain Girdle
 						i(5426),	-- Serpent's Kiss
 					},
-				}), 
+				}),
 			}),
 		}),
 	}),

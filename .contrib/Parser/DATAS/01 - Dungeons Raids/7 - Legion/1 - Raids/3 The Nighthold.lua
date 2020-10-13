@@ -318,7 +318,6 @@ _.Instances = { tier(7, {	-- Legion
 							i(140842),	-- Collapsing Epoch
 							i(140837),	-- Exothermic Core
 							i(140810),	-- Farsight Spiritjewel
-							i(146682),	-- Suramari Soul-Wraps (Tailoring QI)
 						})),
 					},
 				}),
@@ -698,7 +697,6 @@ _.Instances = { tier(7, {	-- Legion
 					i(140842),	-- Collapsing Epoch
 					i(140837),	-- Exothermic Core
 					i(140810),	-- Farsight Spiritjewel
-					i(146682),	-- Suramari Soul-Wraps (Tailoring QI)
 				})),
 				cr(104154, e(1737, {	-- Gul'dan
 					ach(10696),	-- I've Got My Eyes On You
@@ -1079,7 +1077,6 @@ _.Instances = { tier(7, {	-- Legion
 					i(140842),	-- Collapsing Epoch
 					i(140837),	-- Exothermic Core
 					i(140810),	-- Farsight Spiritjewel
-					i(146682),	-- Suramari Soul-Wraps (Tailoring QI)
 				})),
 				cr(104154, e(1737, {	-- Gul'dan
 					ach(11195, {	-- Ahead of the Curve: Gul'dan

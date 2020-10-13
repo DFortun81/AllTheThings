@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -56,10 +57,9 @@ _.Zones =
 						["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 						["lvl"] = 110,
 						["groups"] = {
-							{
-								["itemID"] = 133887,	-- Luminous Pearl (Item)
-								["questID"] = 40960,	-- Luminous Pearl (Quest)
-							}
+							i(133887, {	-- Luminous Pearl
+								["questID"] = 40960,	-- Luminous Pearl
+							}),
 						},
 					}),
 					ach(10596, {	-- Bigger Fish to Fry
@@ -67,16 +67,14 @@ _.Zones =
 							i(133722, {		-- Axefish Lure
 								["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
 								["groups"] = {
-									{
+									i(133740, {	-- Axefish
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 4,			-- Axefish (Criteria)
-										["itemID"] = 133740,		-- Axefish (Item)
-									},
-									{
+										["criteriaID"] = 4,			-- Axefish
+									}),
+									i(139667, {	-- Axefish
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 4,			-- Axefish (Criteria)
-										["itemID"] = 139667,		-- Axefish (Item)
-									},
+										["criteriaID"] = 4,			-- Axefish
+									}),
 								},
 							}),
 							i(133724, {		-- Decayed Whale Blubber
@@ -94,16 +92,14 @@ _.Zones =
 							i(133795, {		-- Ravenous Fly
 								["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
 								["groups"] = {
-									{
+									i(133742, {	-- Ancient Black Barracuda
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-										["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
-									},
-									{
+										["criteriaID"] = 1,			-- Ancient Black Barracuda
+									}),
+									i(139669, {	-- Ancient Black Barracuda
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-										["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
-									},
+										["criteriaID"] = 1,			-- Ancient Black Barracuda
+									}),
 								},
 							}),
 							i(133723, {		-- Stunned, Angry Shark
@@ -112,16 +108,14 @@ _.Zones =
 									n(102359, {		-- Landlocked Shark
 										["description"] = "Drops 7-9 Seabottom Squid when killed.",
 										["groups"] = {
-											{
+											i(133741, {	-- Seabottom Squid
 												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-												["itemID"] = 133741,		-- Seabottom Squid (Item)
-											},
-											{
+												["criteriaID"] = 13,		-- Seabottom Squid
+											}),
+											i(139668, {	-- Seabottom Squid
 												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-												["itemID"] = 139668,		-- Seabottom Squid (Item)
-											},
+												["criteriaID"] = 13,		-- Seabottom Squid
+											}),
 										},
 									})
 								},
@@ -131,32 +125,28 @@ _.Zones =
 							["description"] = "This item will summon a Drowned Thistleleaf, which grants the buff Blessing of the Thistleleaf, increasing your chance to fish up Thorned Flounder.",
 							["groups"] = {
 								spell(202067, {		-- Blessing of the Thistleleaf
-									{
+									i(133729, {	-- Thorned Flounder
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
-										["itemID"] = 133729,		-- Thorned Flounder (Item)
-									},
-									{
+										["criteriaID"] = 18,		-- Thorned Flounder
+									}),
+									i(139656, {	-- Thorned Flounder
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
-										["itemID"] = 139656,		-- Thorned Flounder (Item)
-									},
+										["criteriaID"] = 18,		-- Thorned Flounder
+									}),
 								}),
 							},
 						}),
 						i(133707, {		-- Nightmare Nightcrawler
 							["description"] = "This item will allow you to catch the Rare fish Terrorfin in Val'sharah.",
 							["groups"] = {
-								{
+								i(133728, {	-- Terrorfin
 									["achievementID"] = 10596,	-- Bigger Fish to Fry
-									["criteriaID"] = 17,		-- Terrorfin (Criteria)
-									["itemID"] = 133728,		-- Terrorfin (Item)
-								},
-								{
+									["criteriaID"] = 17,		-- Terrorfin
+								}),
+								i(139655, {	-- Terrorfin
 									["achievementID"] = 10596,	-- Bigger Fish to Fry
-									["criteriaID"] = 17,		-- Terrorfin (Criteria)
-									["itemID"] = 139655,		-- Terrorfin (Item)
-								},
+									["criteriaID"] = 17,		-- Terrorfin
+								}),
 							},
 						}),
 						i(133705, {		-- Rotten Fishbone
@@ -166,16 +156,14 @@ _.Zones =
 									["description"] = "Casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
 									["groups"] = {
 										spell(201809, {		-- The Cat's Meow (Spell)
-											{
+											i(133730, {	-- Ancient Mossgill
 												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
-												["itemID"] = 133730,		-- Ancient Mossgill (Item)
-											},
-											{
+												["criteriaID"] = 3,		-- Ancient Mossgill
+											}),
+											i(139657, {	-- Ancient Mossgill
 												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
-												["itemID"] = 139657,		-- Ancient Mossgill (Item)
-											},
+												["criteriaID"] = 3,		-- Ancient Mossgill
+											}),
 										}),
 									},
 								}),
@@ -192,32 +180,28 @@ _.Zones =
 										["description"] = "This item will summon a Drowned Thistleleaf, which grants the buff Blessing of the Thistleleaf, increasing your chance to fish up Thorned Flounder.",
 										["groups"] = {
 											spell(202067, {		-- Blessing of the Thistleleaf
-												{
+												i(133729, {	-- Thorned Flounder
 													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
-													["itemID"] = 133729,		-- Thorned Flounder (Item)
-												},
-												{
+													["criteriaID"] = 18,		-- Thorned Flounder
+												}),
+												i(139656, {	-- Thorned Flounder
 													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 18,		-- Thorned Flounder (Criteria)
-													["itemID"] = 139656,		-- Thorned Flounder (Item)
-												},
+													["criteriaID"] = 18,		-- Thorned Flounder
+												}),
 											}),
 										},
 									}),
 									i(133707, {		-- Nightmare Nightcrawler
 										["description"] = "This item will allow you to catch the Rare fish Terrorfin in Val'sharah.",
 										["groups"] = {
-											{
+											i(133728, {	-- Terrorfin
 												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 17,		-- Terrorfin (Criteria)
-												["itemID"] = 133728,		-- Terrorfin (Item)
-											},
-											{
+												["criteriaID"] = 17,		-- Terrorfin
+											}),
+											i(139655, {	-- Terrorfin
 												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 17,		-- Terrorfin (Criteria)
-												["itemID"] = 139655,		-- Terrorfin (Item)
-											},
+												["criteriaID"] = 17,		-- Terrorfin
+											}),
 										},
 									}),
 									i(133705, {		-- Rotten Fishbone
@@ -227,16 +211,14 @@ _.Zones =
 												["description"] = "Casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
 												["groups"] = {
 													spell(201809, {		-- The Cat's Meow (Spell)
-														{
+														i(133730, {	-- Ancient Mossgill
 															["achievementID"] = 10596,	-- Bigger Fish to Fry
-															["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
-															["itemID"] = 133730,		-- Ancient Mossgill (Item)
-														},
-														{
+															["criteriaID"] = 3,		-- Ancient Mossgill
+														}),
+														i(139657, {	-- Ancient Mossgill
 															["achievementID"] = 10596,	-- Bigger Fish to Fry
-															["criteriaID"] = 3,			-- Ancient Mossgill (Criteria)
-															["itemID"] = 139657,		-- Ancient Mossgill (Item)
-														},
+															["criteriaID"] = 3,		-- Ancient Mossgill
+														}),
 													}),
 												},
 											}),
@@ -252,35 +234,31 @@ _.Zones =
 					i(137695), 	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
 				prof(HERBALISM, {
-					{	-- Blight-Choked Herb [Dreamleaf II]
-						["itemID"] = 129141,	-- Blight-Choked Herb
+					i(129141, {	-- Blight-Choked Herb
 						["questID"] = 40022,	-- Choked By Nightmare
 						["requireSkill"] = HERBALISM,
 						["sourceQuests"] = {
 							40021,	-- One Dead Plant is One Too Many
 						},
-					},
-					{	-- Blight-Twisted Herb [Dreamleaf III]
-						["itemID"] = 129136,	-- Blight-Twisted Herb
+					}),
+					i(129136, {	-- Blight-Twisted Herb
 						["questID"] = 40020,	-- Twisted to Death
 						["requireSkill"] = HERBALISM,
 						["sourceQuests"] = {
 							40019,	-- An Empathetic Herb
 						},
-					},
-					{	-- Dreamleaf Sample [Dreamleaf I]
-						["itemID"] = 129118,	-- Dreamleaf Sample
+					}),
+					i(129118, {	-- Dreamleaf Sample
 						["questID"] = 40018,	-- Dreamleaf Sample
 						["requireSkill"] = HERBALISM,
-					},
-					{	-- Felwort Sample [Felwort I]
-						["itemID"] = 129122,	-- Felwort Sample
+					}),
+					i(129122, {	-- Felwort Sample
 						["questID"] = 40040,	-- Felwort Sample
 						["requireSkill"] = HERBALISM,
 						["groups"] = {
 							recipe(193307),	-- Felwort [Rank 1]
 						},
-					},
+					}),
 				}),
 				prof(JEWELCRAFTING, {
 					q(40536, {	-- Bruls Before Jewels
@@ -304,6 +282,6 @@ _.Zones =
 					}),
 				}),
 			}),
-		}),	
+		}),
 	}),
 };

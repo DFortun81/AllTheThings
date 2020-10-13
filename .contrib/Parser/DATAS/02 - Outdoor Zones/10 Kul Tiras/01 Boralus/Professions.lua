@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -73,7 +73,7 @@ _.Zones =
 						["requireSkill"] = BLACKSMITHING,
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 120,
-					}),	
+					}),
 				}),
 				prof(COOKING, {
 					q(54469, {	-- Fresh Dishes (A)
@@ -208,7 +208,6 @@ _.Zones =
 						["coord"] = { 70.45, 5.13, 1161 },
 						["sourceQuest"] = 48756,	-- Here in Spirit (A)
 						["description"] = "Requires 150 Kul Tiran Herbalism.",
-						
 						["g"] = {
 							recipe(252410),	-- Star Moss (Rank 3)
 						},
@@ -235,7 +234,7 @@ _.Zones =
 						["g"] = {
 							recipe(252420),	-- Siren's Pollen (Rank 3)
 						},
-					}),					
+					}),
 					-- Winter's Kiss
 					q(48762, {	-- Meet Sweetflower (A)
 						["provider"] = { "n", 136096 },	-- Declan Senal
@@ -508,7 +507,6 @@ _.Zones =
 						["description"] = "Requires 50 Kul'Tiran Mining\n73.4, 8.4 in Boralus is is location of the Forge\n41.8, 30.0 in Tiragarde Sound is the location to get the Blessing",
 						["requireSkill"] = MINING,
 						["races"] = ALLIANCE_ONLY,
-						
 						["g"] = {
 							recipe(253337),	-- Storm Silver Deposit (Rank 2)
 						},

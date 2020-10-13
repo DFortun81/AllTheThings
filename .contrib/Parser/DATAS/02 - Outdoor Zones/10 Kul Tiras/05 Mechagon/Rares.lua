@@ -226,6 +226,14 @@ _.Zones =
 						crit(14, {	-- Boggac Skullbash
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
+						i(169688, {	-- Vinyl: Gnomeragan Forever
+							["questID"] = 56515,
+							["g"] = {
+								crit(2, {    -- Gnomeregan Forever
+									["achievementID"] = 13686,    -- Junkyard Melomanic
+								}),
+							},
+						}),
 					},
 				}),
 				n(152001, {	-- Bonepicker

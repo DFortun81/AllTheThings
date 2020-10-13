@@ -188,6 +188,7 @@ TAILORING = 197;
 -- Unobtainable Filters
 NEVER_IMPLEMENTED = 1;
 REMOVED_FROM_GAME = 2;
+BLIZZARD_BALANCE = 35;
 
 ItemClassInfo = {
 	{
@@ -765,7 +766,7 @@ a = function(t)	-- Flag as Alliance Only
 				local count = 0;
 				for j,value2 in ipairs(value) do
 					if count > 0 then statement = statement .. ", "; end
-					statement = statement .. tostring(valu2);
+					statement = statement .. tostring(value2);
 					count = count + 1;
 				end
 				print("\t" .. tostring(key) .. ": { " .. statement .. " }");

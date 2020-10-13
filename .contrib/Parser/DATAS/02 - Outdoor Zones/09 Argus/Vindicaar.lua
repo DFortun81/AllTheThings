@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -19,7 +19,7 @@ _.Zones =
 			["lvl"] = 110,
 			["isRaid"] = true,
 			["g"] = {
-				n(-4,   {	-- Achievement
+				n(ACHIEVEMENTS, {
 				}),
 				n(-169, {	-- Emissary Quests
 					q(48642, {	-- Argussian Reach

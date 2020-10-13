@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -183,7 +184,7 @@ _.Zones =
 					["provider"] = { "n", 10665 },	-- Junior Apothecary Holland
 					["coord"] = { 60.1, 52.6, 18 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 27980 },	-- The Scarlet Palisade
+					["sourceQuests"] = { 24980 },	-- The Scarlet Palisade
 				}),
 				q(354,   {	-- Deaths in the Family
 					["u"] = REMOVED_FROM_GAME,
@@ -231,7 +232,7 @@ _.Zones =
 				q(24992, {	-- Escaped From Gilneas
 					["races"] = HORDE_ONLY,
 					["description"] = "Quest is granted by getting a Cursed Darkhound to low health and letting it cast Leaping Bite on you during or after completing |cFFFFD700Darkhound Pounding|r.",
-					["sourceQuests"] = { 27980 },	-- The Scarlet Palisade
+					["sourceQuests"] = { 24980 },	-- The Scarlet Palisade
 				}),
 				q(24974, {	-- Ever So Lonely
 					["provider"] = { "n", 38925 },	-- Sidrick Calston
@@ -287,8 +288,8 @@ _.Zones =
 				}),
 				q(5650,  {	-- Garments of Darkness
 					["u"] = REMOVED_FROM_GAME,
-					["races"] =  { 5 },	-- Undead
-					["classes"] = { 5 },	-- Priest
+					["races"] = { UNDEAD },
+					["classes"] = { PRIEST },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(16607)),	-- Garments of Darkness
 					},
@@ -331,7 +332,7 @@ _.Zones =
 					["coord"] = { 61.9, 52.0, 18 },
 					["races"] = HORDE_ONLY,
 					["description"] = "Available if you abandon |cFFFFD700Escaped From Gilneas|r.",
-					["sourceQuests"] = { 27980 },	-- The Scarlet Palisade
+					["sourceQuests"] = { 24980 },	-- The Scarlet Palisade
 				}),
 				q(25031, {	-- Head for the Mills
 					["provider"] = { "n", 38977 },	-- Apothecary Jerrod
@@ -342,7 +343,7 @@ _.Zones =
 				q(1822,  {	-- Heirloom Weapon
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1500 },	-- Coleman Farthing
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7115)),	-- Heirloom Axe
 						un(REMOVED_FROM_GAME, i(7117)),	-- Heirloom Hammer
@@ -380,7 +381,7 @@ _.Zones =
 				q(32672, {	-- Learn to Ride
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is available to Undead characters upon reaching level 20.",
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 					["lvl"] = 20,
 				}),
 				q(14089, {	-- Learn to Ride in Tirisfal Glades
@@ -393,8 +394,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["sourceQuests"] = {
-						26978,	-- Who Needs Cauldrons?
 						26930,	-- After the Crusade
+						26933,	-- Foes Before Hoes
+						26978,	-- Who Needs Cauldrons?
 					},
 				}),
 				q(24998, {	-- Maggot Eye
@@ -452,8 +454,8 @@ _.Zones =
 				}),
 				q(10590,  {	-- Prove  Your Hatred
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17099 },	-- Mehlar Dawnblade
 				}),
 				q(409,   {	-- Proving Allegiance
@@ -493,7 +495,7 @@ _.Zones =
 					["provider"] = { "n", 43124 },	-- Anette Williams
 					["coord"] = { 58.8, 51.8, 18 },
 					["sourceQuest"] = 6321,	-- Supplying Brill
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 				}),
 				q(5096, {	-- Scarlet Diversions
 					["u"] = REMOVED_FROM_GAME,
@@ -541,7 +543,7 @@ _.Zones =
 				q(6321,  {	-- Supplying Brill
 					["provider"] = { "n", 1745 },	-- Deathguard Morris
 					["coord"] = { 60.2, 52.4, 18 },
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 				}),
 				q(25012, {	-- Take to the Skies
 					["provider"] = { "n", 37915 },	-- Timothy Cunningham
@@ -679,14 +681,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["lvl"] = 2,
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(3277, {	-- Executor Staff
-							["collectible"] = false,	-- White item
-						}),
-						i(3276, {	-- Deathguard Buckler
-							["collectible"] = false,	-- White item
-						}),
-					},
 				}),
 				q(24980, {	-- The Scarlet Palisade
 					["provider"] = { "n", 1519 },	-- Deathguard Simmer
@@ -743,8 +737,8 @@ _.Zones =
 				}),
 				q(10592,  {	-- Wisdom of the Banshee Queen
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	 -- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17099 },	-- Mehlar Dawnblade
 					["sourceQuest"] = 10590,	-- Prove Your Hatred
 				}),

@@ -19,6 +19,7 @@ _.Zones =
 			q(29390, {	-- Guardians of Hyjal: Call of the Ancients
 				["isBreadcrumb"] = true,
 				["lvl"] = 85,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29388, {	-- Guardians of Hyjal: Firelands Invasion!
 				["isBreadcrumb"] = true,
@@ -44,7 +45,7 @@ _.Zones =
 				["isBreadcrumb"] = true,
 			}),
 			q(36499),	-- Iron Horde Invasion
-			q(29157),	-- The Zandalari Menace
+			un(REMOVED_FROM_GAME, q(29157)),	-- The Zandalari Menace
 			q(49817, {	-- To Northrend! (Horde)
 				["isBreadcrumb"] = true,
 				["lvl"] = 60,
@@ -270,6 +271,7 @@ _.Zones =
 			q(29391, {	-- Guardians of Hyjal: Call of the Ancients
 				["isBreadcrumb"] = true,
 				["lvl"] = 85,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29387, {	-- Guardians of Hyjal: Firelands Invasion!
 				["isBreadcrumb"] = true,
@@ -549,6 +551,7 @@ _.Zones =
 			q(29156, {	-- The Troll Incursion
 				["isBreadcrumb"] = true,
 				["lvl"] = 85,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			--
 			q(26365, {	-- Hero's Call: Redridge Mountains!

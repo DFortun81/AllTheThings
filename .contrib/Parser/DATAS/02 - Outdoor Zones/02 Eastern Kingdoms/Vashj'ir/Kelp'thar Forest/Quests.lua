@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
@@ -8,7 +9,6 @@ _.Zones =
 			m(201, {	-- Kelp'thar Forest
 				n(QUESTS, {
 					q(25732, {	-- A Bone To Pick
-						["description"] = "Take the quest 'A Bone to Pick' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
 						["provider"] = { "n", 46458 },	-- Budd
 						["coord"] = { 58.3, 48.6, 201 },
 						["sourceQuests"] = { 25670 },	-- DUN-dun-DUN-dun-DUN-dun
@@ -256,7 +256,7 @@ _.Zones =
 						},
 					}),
 					q(25419, {	-- Lady La-La's Medallion
-						["description"] = "Take the quest 'A Bone to Pick' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
+						["description"] = "Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
 						["crs"] = { 41017 },	-- Gilblin Collector
 						["provider"] = { "i", 55186 },	-- Lady La-La's Necklace
 						["g"] = {
@@ -271,6 +271,7 @@ _.Zones =
 						["sourceQuests"] = { 25602 },	-- Can't Start a Fire Without a Spark
 					}),
 					q(25651, {	-- Oh, the Insanity!
+						["description"] = "Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
 						["provider"] = { "n", 46338 },	-- Budd
 						["coord"] = { 55.2, 38.8, 201 },
 						["sourceQuests"] = { 25602 },	-- Can't Start a Fire Without a Spark

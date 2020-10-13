@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -414,6 +414,7 @@ _.Zones =
 								i(173947, {	-- Glittering Abyssal Conch
 									["races"] = ALLIANCE_ONLY,
 								}),
+								i(173736),	-- Layered Information Kernel of E-steam (looted on Alliance -- is there one for each faction, or just two of the same rep token?)
 								i(163615, {	-- Lost Sea Scroll
 									["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
 									["coord"] = { 59.2, 68.6, 942 },
@@ -871,6 +872,7 @@ _.Zones =
 								}),
 								n(-162, {	-- Pets
 									i(169322),	-- Adventurous Hopling Pack
+									i(163802),	-- Inky
 									i(163801),	-- Octopode Fry
 								}),
 								n(-332, {	-- Shields
@@ -946,11 +948,28 @@ _.Zones =
 								n(-162, {	-- Pets
 									i(163807),	-- Tinder Pup — may need to be moved to CBD section
 								}),
+								n(-332, {	-- Shields
+									i(164297),	-- Plundered Beacon-Light Bulwark
+									i(164271),	-- Plundered Torga Blessed Bulwark
+								}),
 								n(-319, {	-- Weapons
+									i(164301),	-- Plundered Barb-Edged Dagger
+									i(164270),	-- Plundered Berserker's Poleaxe
 									i(164364),	-- Plundered Carapace Linked Longsword
 									i(164275),	-- Plundered Desert Hexxer
+									i(164279),	-- Plundered Farakki Hacker
+									i(164298),	-- Plundered Fireheart Pummeler
+									i(164299),	-- Plundered Flamecaster Stave
+									i(164295),	-- Plundered Heart Hacker
+									i(164293),	-- Plundered Horn Pummeler
+									i(164273),	-- Plundered Junglestalker's Talon
+									i(164300),	-- Plundered Longhunt Bow
 									i(164292),	-- Plundered Petrified Tree
+									i(164276),	-- Plundered Sandfury Blade
+									i(164272),	-- Plundered Skullsplitter
 									i(164296),	-- Plundered Tenderizing Crusher
+									i(164278),	-- Plundered Tiki-Bound Blade
+									i(164274),	-- Plundered Voodoo Dancer Stave
 									i(164362),	-- Plundered Wand of Tentacle Horrors
 								}),
 							},
@@ -1080,6 +1099,7 @@ _.Zones =
 									i(163821),	-- Juvenile Brineshell
 								}),
 								n(-319, {	-- Weapons
+									i(164329),	-- Plundered Coilpoint Scepter
 									i(164331),	-- Plundered Coral-Scale Claw
 									i(164327),	-- Plundered Fury-Fin Axe
 									i(164330),	-- Plundered Mrggll Masher
@@ -1153,6 +1173,7 @@ _.Zones =
 									i(166488),	-- Rotting Ghoul
 								}),
 								n(-319, {	-- Weapons
+									i(164341),	-- Plundered Firegeode Mace
 									i(164340),	-- Plundered Embercrystal Staff
 									i(164346),	-- Plundered Frost Scepter
 									i(164342),	-- Plundered Geode Gavel
@@ -2085,7 +2106,8 @@ _.Zones =
 						i(161587, {	-- Legguards of the Storm Battalion
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(163778, {	-- Lil'Siege (PET!)
+						i(163778, {	-- Lil' Siege Tower (PET!)
+							["races"] = ALLIANCE_ONLY,
 							["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 						}),
 						i(161584, {	-- Medical Corps Slippers

@@ -408,7 +408,7 @@ _.Holidays =
 					}),
 				}),
 				n(23481,  {	-- Keiran Donoghue <Sausage Vendor>
-					["coord"] = { 56.0, 36.6, 27 },
+					["coord"] = { 55.33, 37.17, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
 					["g"] = bubbleDown({["u"] = 24}, {

@@ -26,6 +26,8 @@ app.L = {
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "|cff3399ffI only care about my main.|r";
+	["TOP_ROW_TO_LOCK"] = "|cff3399ffAlt + Click to Lock this Window";
+	["TOP_ROW_TO_UNLOCK"] = "|cffcf0000Alt + Click to Unlock this Window";
 
 	-- Binding Localizations
 	["TOGGLE_ACCOUNT_MODE"] = "Toggle Account Mode";
@@ -110,13 +112,14 @@ app.L = {
 	["COLLECTED_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t";	-- Acquired the colors and icon from CanIMogIt.
 	["COLLECTED_APPEARANCE_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_circle:0|t";		-- Acquired the colors and icon from CanIMogIt.
 	["COMPLETE_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t";		-- Acquired the colors and icon from CanIMogIt.
+    ["INCOMPLETE_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\incomplete:0|t";        -- Acquired the colors and icon from CanIMogIt.
 	["NOT_COLLECTED_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t";		-- Acquired the colors and icon from CanIMogIt.
 	["COLLECTED"] = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abffCollected|r";		-- Acquired the colors and icon from CanIMogIt.
 	["COLLECTED_APPEARANCE"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_circle:0|t |cff15abffCollected*|r";	-- Acquired the colors and icon from CanIMogIt.
 	["NOT_COLLECTED"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333Not Collected|r";		-- Acquired the colors and icon from CanIMogIt.
 	["COMPLETE"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t |cff6dce47Complete|r";		-- Acquired the colors and icon from CanIMogIt.
 	["COMPLETE_OTHER"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t |cff6dce47Complete*|r";		-- Acquired the colors and icon from CanIMogIt.
-	["INCOMPLETE"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333Incomplete|r";		-- Acquired the colors and icon from CanIMogIt.
+    ["INCOMPLETE"] = "|TInterface\\Addons\\AllTheThings\\assets\\incomplete:0|t |cff15abffIncomplete|r";        -- Acquired the colors and icon from CanIMogIt.
 	["KNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abffKnown on current character|r";
 	["UNKNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333Unknown on current character|r";
 
@@ -216,7 +219,7 @@ app.L = {
 		[100] = GetItemSubClassInfo(15,5),						-- Mounts
 		[101] = TOOLTIP_BATTLE_PET,								-- Battle Pet
 		[102] = TOY,											-- Toy
-		[103] = "Illusions",
+		[103] = "Illusions",									-- Illusions
 		[104] = ITEM_BIND_QUEST, 								-- Quest Items
 		[105] = TRACKER_FILTER_ACHIEVEMENTS, 					-- Achievements
 		[106] = CALENDAR_FILTER_WEEKLY_HOLIDAYS, 				-- Holiday
@@ -2983,6 +2986,7 @@ app.L = {
 		[215844] = "Flagpole",
 		[216322] = "Bounty Board",
 		[218750] = "Work Orders",
+		[218949] = "Lei Shen's Burial Trove",
 		[220641] = "Thunderlord's Cache",
 		[220820] = "|cFFFFFFFFStep 6:|r Page 1127",
 		[220821] = "|cFFFFFFFFStep 5:|r Page 845",
@@ -4040,7 +4044,7 @@ app.L = {
 		[332576] = "Crystalline Cat Figurine",
 		[332577] = "Crystalline Cat Figurine",	-- Need to be confirmed
 		[332704] = "Corrupted Chest",
-		[339211] = "Empty Dish",
+		[339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 		[339770] = "Abandoned Treasure Chest",
 		[343611] = "Voidtouched Egg",
 		[357758] = "Plague Barrel",
@@ -4066,6 +4070,7 @@ app.L = {
 		[9999918] = "|cFFFFFFFFStep 11:|r Metal Gate",
 		[9999919] = "|cFFFFFFFFStep 12:|r Wisdom Cube",
 		[9999920] = "|cFFFFFFFFStep 13:|r Tarnished Plaque",
+		[9999921] = "Placement",
 		[9999938] = "Uuna's World Tour",
 		[9999946] = "Summon Baa'l",
 		[9999990] = "Treasure Chest",	-- Use these until objectID is found
@@ -4226,7 +4231,7 @@ app.L = {
 		{0, "", ""}, --32
 		{0, "", ""}, -- 33
 		{0, "", ""}, --34
-		{3, "|CFFFF0000This can be purchased from the In-Game Shop.|r", "In-Game Shop (35)"}, --35
+		{3, "|CFFFF0000This may be locked behind a paywall, probably the in-game shop, another Blizzard game, or Recruit A Friend.|r", "Blizzard Balance (35)"}, --35
 		{21, "|CFFFF0000This was obtainable only during the WoW Anniversary when it was active and is no longer available.|r\n", "WoW Anniversary [Removed] (36)"}, -- 36
 		{0, "", ""}, --37
 		{1, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria or via the BMAH|r", "Ordos - Legendary Cloak (38)"}, --38

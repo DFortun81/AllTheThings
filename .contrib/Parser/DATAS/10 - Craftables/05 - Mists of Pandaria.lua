@@ -1,6 +1,7 @@
------------------------------------------------------
---     W O R L D   E V E N T S   M O D U L E       --
------------------------------------------------------
+---------------------------------------------
+--    C R A F T A B L E S   M O D U L E    --
+---------------------------------------------
+
 _.Craftables =
 {
 	tier(5, {	-- Mists of Pandaria
@@ -250,7 +251,7 @@ _.Craftables =
 		n(-183, { 	-- Engineering
 			filter(100, {	-- Mounts
 				i(87250),	-- Depleted-Kyparium Rocket*
-				i(87251),	-- Geosynchronous World Spinner*	
+				i(87251),	-- Geosynchronous World Spinner*
 				i(95416),	-- Sky Golem*
 			}),
 			filter(101, {	-- Pets
@@ -260,23 +261,23 @@ _.Craftables =
 			}),
 			filter(102, {	-- Toys
 				i(87214, {	-- Blingtron 4000*
-					n(43929, {	-- Blingtron 4000
-						i(86623, {	-- Blingtron 4000 Gift Package
-							["isDaily"] = true,
-							["questID"] = 31752,
-							["groups"] = {
-								i(87250),	-- Depleted-Kyparium Rocket Mount
-								i(87251),	-- Geosynchronous World Spinner Mount
-								i(41508),	-- Mechano-Hog Mount
-								i(44413),	-- Mekgineer's Chopper Mount
-								i(103670),	-- Lil' Bling Pet
-								i(15996),	-- Lifelike Mechanical Toad Pet
-								i(11826),	-- Lil' Smoky Pet
-								i(4401),	-- Mechanical Squirrel Box Pet
-								i(11825),	-- Pet Bombling
-								i(21277),	-- Tranquil Mechanical Yeti Pet
-							},							
-						}),
+					q(31752, { -- Blingtron 4000
+						["provider"] = { "n", 43929 },    -- Blingtron 4000
+						["isDaily"] = 1,
+						["g"] = {
+							i(86623, {	-- Blingtron 4000 Gift Package
+									i(87250),	-- Depleted-Kyparium Rocket Mount
+									i(87251),	-- Geosynchronous World Spinner Mount
+									i(41508),	-- Mechano-Hog Mount
+									i(44413),	-- Mekgineer's Chopper Mount
+									i(103670),	-- Lil' Bling Pet
+									i(15996),	-- Lifelike Mechanical Toad Pet
+									i(11826),	-- Lil' Smoky Pet
+									i(4401),	-- Mechanical Squirrel Box Pet
+									i(11825),	-- Pet Bombling
+									i(21277),	-- Tranquil Mechanical Yeti Pet
+							}),
+						},
 					}),
 				}),
 				i(87215),	-- Wormhole Generator: Pandaria*

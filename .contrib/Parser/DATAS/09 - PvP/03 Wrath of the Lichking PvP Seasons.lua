@@ -1,6 +1,7 @@
 -----------------------------------------------
---     P L A Y E R   V S   P L A Y E R		 --
+--      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 _.PVP =
 {
 	n(-10014, {	-- Wrath of the Lich King
@@ -123,7 +124,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 					}),
 				}),
-				cl(6, {	-- Death Knight
+				cl(DEATHKNIGHT, {
 					i(146560, {	-- Ensemble: Hateful Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -9983, 6 }, },
@@ -144,7 +145,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					i(146559, {	-- Ensemble: Hateful Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -9983, 11 }, },
@@ -195,7 +196,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					i(146558, {	-- Ensemble: Hateful Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -9983, 3 }, },
@@ -216,7 +217,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					i(146567, {	-- Ensemble: Hateful Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -9983, 8 }, },
@@ -237,7 +238,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					i(146566, {	-- Ensemble: Hateful Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -9983, 2 }, },
@@ -273,7 +274,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					i(146565, {	-- Ensemble: Hateful Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -9983, 5 }, },
@@ -309,7 +310,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					i(146562, {	-- Ensemble: Hateful Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -9983, 4 }, },
@@ -330,7 +331,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					i(146564, {	-- Ensemble: Hateful Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -9983, 7 }, },
@@ -381,7 +382,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					i(146561, {	-- Ensemble: Hateful Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -9983, 9 }, },
@@ -402,7 +403,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					i(146563, {	-- Ensemble: Hateful Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -9983, 1 }, },
@@ -614,7 +615,7 @@ _.PVP =
 					i(42448),	-- Savage Gladiator's Touch of Defeat
 					i(44415),	-- Savage Gladiator's War Staff
 				}),
-				cl(6, {	-- Death Knight
+				cl(DEATHKNIGHT, {
 					i(146580, {	-- Ensemble: Savage Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -660, 6 }, },
@@ -635,7 +636,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					i(146579, {	-- Ensemble: Savage Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -660, 11 }, },
@@ -686,7 +687,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					i(146578, {	-- Ensemble: Savage Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -660, 3 }, },
@@ -707,7 +708,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					i(146587, {	-- Ensemble: Savage Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -660, 8 }, },
@@ -728,7 +729,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					i(146586, {	-- Ensemble: Savage Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -660, 2 }, },
@@ -764,7 +765,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					i(146585, {	-- Ensemble: Savage Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -660, 5 }, },
@@ -800,7 +801,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					i(146582, {	-- Ensemble: Savage Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -660, 4 }, },
@@ -821,7 +822,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					i(146584, {	-- Ensemble: Savage Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -660, 7 }, },
@@ -872,7 +873,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					i(146581, {	-- Ensemble: Savage Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -660, 9 }, },
@@ -893,7 +894,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					i(146583, {	-- Ensemble: Savage Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -660, 1 }, },
@@ -1033,7 +1034,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 					}),
 				}),
-				cl(6, {	-- Death Knight
+				cl(DEATHKNIGHT, {
 					i(146540, {	-- Ensemble: Deadly Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -661, 6 }, },
@@ -1054,7 +1055,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					i(146539, {	-- Ensemble: Deadly Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -661, 11 }, },
@@ -1105,7 +1106,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					i(146538, {	-- Ensemble: Deadly Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -661, 3 }, },
@@ -1126,7 +1127,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					i(146547, {	-- Ensemble: Deadly Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -661, 8 }, },
@@ -1147,7 +1148,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					i(146546, {	-- Ensemble: Deadly Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -661, 2 }, },
@@ -1183,7 +1184,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					i(146545, {	-- Ensemble: Deadly Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -661, 5 }, },
@@ -1219,7 +1220,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					i(146542, {	-- Ensemble: Deadly Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -661, 4 }, },
@@ -1240,7 +1241,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					i(146544, {	-- Ensemble: Deadly Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -661, 7 }, },
@@ -1292,7 +1293,7 @@ _.PVP =
 					}),
 
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					i(146541, {	-- Ensemble: Deadly Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -661, 9 }, },
@@ -1313,7 +1314,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					i(146543, {	-- Ensemble: Deadly Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -668, -661, 1 }, },
@@ -1433,7 +1434,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet	
+				n(-330, {	-- Feet
 					i(41634, {	-- Deadly Gladiator's Boots of Dominance
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -1602,7 +1603,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 					}),
 				}),
-				cl(6, {	-- Death Knight
+				cl(DEATHKNIGHT, {
 					i(146550, {	-- Ensemble: Furious Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 6 }, },
@@ -1623,7 +1624,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					i(146549, {	-- Ensemble: Furious Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 11 }, },
@@ -1674,7 +1675,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					i(146548, {	-- Ensemble: Furious Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 3 }, },
@@ -1695,7 +1696,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					i(146557, {	-- Ensemble: Furious Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 8 }, },
@@ -1716,7 +1717,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					i(146556, {	-- Ensemble: Furious Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 2 }, },
@@ -1752,7 +1753,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					i(146555, {	-- Ensemble: Furious Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 5 }, },
@@ -1788,7 +1789,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					i(146552, {	-- Ensemble: Furious Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 4 }, },
@@ -1809,7 +1810,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					i(146554, {	-- Ensemble: Furious Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 7 }, },
@@ -1860,7 +1861,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					i(146551, {	-- Ensemble: Furious Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 9 }, },
@@ -1881,7 +1882,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					i(146543, {	-- Ensemble: Furious Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 1 }, },
@@ -2211,7 +2212,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 					}),
 				}),
-				cl(6, {	-- Death Knight
+				cl(DEATHKNIGHT, {
 					i(146570, {	-- Ensemble: Relentless Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 6 }, },
@@ -2232,7 +2233,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					i(146569, {	-- Ensemble: Relentless Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 11 }, },
@@ -2283,7 +2284,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					i(146568, {	-- Ensemble: Relentless Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 3 }, },
@@ -2304,7 +2305,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					i(146577, {	-- Ensemble: Relentless Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 8 }, },
@@ -2325,7 +2326,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					i(146576, {	-- Ensemble: Relentless Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 2 }, },
@@ -2361,7 +2362,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					i(146575, {	-- Ensemble: Relentless Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 5 }, },
@@ -2397,7 +2398,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					i(146572, {	-- Ensemble: Relentless Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 4 }, },
@@ -2418,7 +2419,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					i(146574, {	-- Ensemble: Relentless Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 7 }, },
@@ -2469,7 +2470,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					i(146571, {	-- Ensemble: Relentless Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 9 }, },
@@ -2490,7 +2491,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					i(146573, {	-- Ensemble: Relentless Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 1 }, },
@@ -2824,7 +2825,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 					}),
 				}),
-				cl(6, {	-- Death Knight
+				cl(DEATHKNIGHT, {
 					i(146590, {	-- Ensemble: Wrathful Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 6 }, },
@@ -2845,7 +2846,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					i(146589, {	-- Ensemble: Wrathful Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 11 }, },
@@ -2896,7 +2897,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					i(146588, {	-- Ensemble: Wrathful Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 3 }, },
@@ -2917,7 +2918,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					i(146597, {	-- Ensemble: Wrathful Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 8 }, },
@@ -2938,7 +2939,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					i(146596, {	-- Ensemble: Wrathful Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 2 }, },
@@ -2974,11 +2975,11 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					i(146595, {	-- Ensemble: Wrathful Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 5 }, },
-					}),				
+					}),
 					i(51483, {	-- Wrathful Gladiator's Mooncloth Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -3010,7 +3011,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					i(146592, {	-- Ensemble: Wrathful Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 4 }, },
@@ -3031,7 +3032,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					i(146594, {	-- Ensemble: Wrathful Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 7 }, },
@@ -3082,7 +3083,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					i(146591, {	-- Ensemble: Wrathful Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 9 }, },
@@ -3103,7 +3104,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
 				}),
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					i(146593, {	-- Ensemble: Wrathful Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 1 }, },

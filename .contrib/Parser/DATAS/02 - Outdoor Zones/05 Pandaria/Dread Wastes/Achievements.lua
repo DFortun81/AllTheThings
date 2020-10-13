@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(422, {	-- Dread Wastes
-			n(-4, { 	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(7312, {		-- Amber is the Color of My Energy (Dread Wastes)
 					crit(9, {	-- Hisek the Swarmkeeper
 						["sourceQuest"] = 31439,	-- Dropping Our Signal

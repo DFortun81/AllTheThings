@@ -568,24 +568,23 @@ profession(ENGINEERING, {
 					["name"] = "Tool of the Trade",
 					["categoryID"] = 1254,
 					["g"] = {
-						{							
+						{
 							["name"] = "The Ub3r-Spanner",
 							["recipeID"] = 282975,
 						},
-						{							
+						{
 							["name"] = "Ub3r-Module: Short-Fused Bomb Bots",
 							["recipeID"] = 283399,
 						},
-						{							
+						{
 							["name"] = "Ub3r-Module: Ub3r S3ntry Mk. X8.0",
 							["recipeID"] = 283401,
 						},
-						{							
+						{
 							["name"] = "Ub3r-Module: Ub3r-Improved Target Dummy",
 							["recipeID"] = 283403,
 						},
 					},
-					
 				},
 			}
 		},

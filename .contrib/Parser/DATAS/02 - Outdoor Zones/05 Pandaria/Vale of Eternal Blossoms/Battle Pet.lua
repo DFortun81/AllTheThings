@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -55,15 +56,14 @@ _.Zones =
 					["provider"] = { "n", 66741 },	-- Aki the Chosen
 				}),
 				q(32428, {	-- Pandaren Spirit Tamer
-					["g"] = {				
+					["g"] = {
 						i(92799),	-- Pandaren Air Spirit
 						i(92798),	-- Pandaren Fire Spirit
-						i(92800),	-- Pandaren Earth Spirit 
+						i(92800),	-- Pandaren Earth Spirit
 						i(90173),	-- Pandaren Water Spirit
 					},
 					["description"] = "Account-Wide Quest. These pets can be found in the Pandaren Spirit Pet Supplies received from the four Pandaren Spirit Tamers in their individual Daily Quests once you complete this quest.|r",
 					["isDaily"] = true,
-					
 				}),
 				q(32863, {	-- What We've Been Training For
 					["provider"] = { "n", 64582 },	-- Gentle San

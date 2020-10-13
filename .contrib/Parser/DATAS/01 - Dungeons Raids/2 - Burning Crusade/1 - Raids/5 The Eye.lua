@@ -41,73 +41,29 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					19622,	-- Kael'thas Sunstrider
 				},
 				["g"] = {
-					{
-						["itemID"] = 30026,	-- Bands of the Celestial Archer
-					},
-					{
-						["itemID"] = 30029,	-- Bark-Gloves of Ancient Wisdom
-					},
-					{
-						["itemID"] = 30020,	-- Fire-Cord of the Magus
-					},
-					{
-						["itemID"] = 30030,	-- Girdle of Fallen Stars
-					},
-					{
-						["itemID"] = 30024,	-- Mantle of the Elven Kings
-					},
-					{
-						["itemID"] = 30280,	-- Pattern: Belt of Blasting
-					},
-					{
-						["itemID"] = 30302,	-- Pattern: Belt of Deep Shadow
-					},
-					{
-						["itemID"] = 30301,	-- Pattern: Belt of Natural Power
-					},
-					{
-						["itemID"] = 30303,	-- Pattern: Belt of the Black Eagle
-					},
-					{
-						["itemID"] = 30281,	-- Pattern: Belt of the Long Road
-					},
-					{
-						["itemID"] = 30282,	-- Pattern: Boots of Blasting
-					},
-					{
-						["itemID"] = 30305,	-- Pattern: Boots of Natural Grace
-					},
-					{
-						["itemID"] = 30307,	-- Pattern: Boots of the Crimson Hawk
-					},
-					{
-						["itemID"] = 30283,	-- Pattern: Boots of the Long Road
-					},
-					{
-						["itemID"] = 30306,	-- Pattern: Boots of Utter Darkness
-					},
-					{
-						["itemID"] = 30308,	-- Pattern: Hurricane Boots
-					},
-					{
-						["itemID"] = 30304,	-- Pattern: Monsoon Belt
-					},
-					{
-						["itemID"] = 30321,	-- Plans: Belt of the Guardian
-					},
-					{
-						["itemID"] = 30323,	-- Plans: Boots of the Protector
-					},
-					{
-						["itemID"] = 30322,	-- Plans: Red Belt of Battle
-					},
-					{
-						["itemID"] = 30324,	-- Plans: Red Havoc Boots
-					},
-					{
-						["itemID"] = 30028,	-- Seventh Ring of the Tirisfalen
-					},
-				},	
+					i(30026),	-- Bands of the Celestial Archer
+					i(30029),	-- Bark-Gloves of Ancient Wisdom
+					i(30020),	-- Fire-Cord of the Magus
+					i(30030),	-- Girdle of Fallen Stars
+					i(30024),	-- Mantle of the Elven Kings
+					i(30280),	-- Pattern: Belt of Blasting
+					i(30302),	-- Pattern: Belt of Deep Shadow
+					i(30301),	-- Pattern: Belt of Natural Power
+					i(30303),	-- Pattern: Belt of the Black Eagle
+					i(30281),	-- Pattern: Belt of the Long Road
+					i(30282),	-- Pattern: Boots of Blasting
+					i(30305),	-- Pattern: Boots of Natural Grace
+					i(30307),	-- Pattern: Boots of the Crimson Hawk
+					i(30283),	-- Pattern: Boots of the Long Road
+					i(30306),	-- Pattern: Boots of Utter Darkness
+					i(30308),	-- Pattern: Hurricane Boots
+					i(30304),	-- Pattern: Monsoon Belt
+					i(30321),	-- Plans: Belt of the Guardian
+					i(30323),	-- Plans: Boots of the Protector
+					i(30322),	-- Plans: Red Belt of Battle
+					i(30324),	-- Plans: Red Havoc Boots
+					i(30028),	-- Seventh Ring of the Tirisfalen
+				},
 			}),
 			cr(19514, e(1573, {	-- Al'ar
 				i(97557),	-- Brilliant Phoenix Hawk Feather (PET!)
@@ -257,36 +213,36 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				i(29988),	-- The Nexus Key
 				i(29993),	-- Twinblade of the Phoenix
 				un(REMOVED_FROM_GAME, i(32896)),	-- Scroll of the Sun. This Item originally boe & completed the attunement to enter The Eye. It was later changed to be bop and provide 5 Mark of the Illidari.
-				i(30317, {	-- Cosmic Infuser 
+				i(30317, {	-- Cosmic Infuser
 					["collectible"] = false,
 					["u"] = 15,
 				}),
-				i(30316, {	-- Devastation 
+				i(30316, {	-- Devastation
 					["collectible"] = false,
 					["u"] = 15,
 				}),
-				i(30312, {	-- Infinity Blade 
+				i(30312, {	-- Infinity Blade
 					["collectible"] = false,
 					["u"] = 15,
 				}),
-				i(30318, {	-- Netherstrand Longbow 
+				i(30318, {	-- Netherstrand Longbow
 					["collectible"] = false,
 					["u"] = 15,
 				}),
-				i(30314, {	-- Phaseshift Bulwark 
+				i(30314, {	-- Phaseshift Bulwark
 					["collectible"] = false,
 					["u"] = 15,
 				}),
-				i(30313, {	-- Staff of Disintegration 
+				i(30313, {	-- Staff of Disintegration
 					["collectible"] = false,
 					["u"] = 15,
 				}),
-				i(30311, {	-- Warp Slicer 
+				i(30311, {	-- Warp Slicer
 					["collectible"] = false,
 					["u"] = 15,
 				}),
 				un(REMOVED_FROM_GAME, i(30320)),	-- Bundle of Nether Spikes
 			})),
 		},
-	}),	
+	}),
 })};

@@ -33,7 +33,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			n(VENDORS, {
 				n(16388, { 	-- Koren
 					["description"] = "This vendor is located in the Livery Stables.",
-					["groups"] = {	
+					["groups"] = {
 						i(31395),	-- Plans: Iceguard Helm
 						i(31393),	-- Plans: Iceguard Breastplate
 						i(31394),	-- Plans: Iceguard Leggings
@@ -41,7 +41,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 				n(17518, { 	-- Ythyar
 					["description"] = "This vendor is located in the Guardian's Library.",
-					["groups"] = {	
+					["groups"] = {
 						i(25903),	-- Design: Bracing Earthstorm Diamond
 						i(25902),	-- Design: Powerful Earthstorm Diamond
 					},
@@ -70,7 +70,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			e(1552, {			-- Servant's Quarters
 				n(16181, {	-- Rokad the Ravager
 					["description"] = "This boss is repeatable if you dont kill any other bosses in raid. Reset the raid after killing.",
-					["groups"] = {		
+					["groups"] = {
 						i(30686),	-- Ravager's Bands
 						i(30687),	-- Ravager's Bracers
 						i(30684),	-- Ravager's Cuffs
@@ -79,16 +79,16 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 				n(16179, {	-- Hyakiss the Lurker
 					["description"] = "This boss is repeatable if you dont kill any other bosses in raid. Reset the raid after killing.",
-					["groups"] = {			
+					["groups"] = {
 						i(30677),	-- Lurker's Belt
 						i(30675),	-- Lurker's Cord
 						i(30678),	-- Lurker's Girdle
 						i(30676),	-- Lurker's Grasp
 					},
-				}),	
+				}),
 				n(16180, {	-- Shadikith the Glider
 					["description"] = "This boss is repeatable if you dont kill any other bosses in raid. Reset the raid after killing.",
-					["groups"] = {		
+					["groups"] = {
 						i(30681),	-- Glider's Boots
 						i(30680),	-- Glider's Foot-Wraps
 						i(30683),	-- Glider's Greaves
@@ -99,7 +99,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			e(1553, {			-- Attumen The Huntsman
 				["crs"] = {
 					16152,	-- Attumen the Huntsman
-					16151,	-- Midnight	
+					16151,	-- Midnight
 				},
 				["groups"] = {
 					ach(882),	-- Fiery Warhorse's Reins
@@ -233,7 +233,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				i(28600),	-- Stonebough Jerkin
 				i(28610),	-- Ferocious Swift-Kickers
 				i(28608),	-- Ironstriders of Urgency
-			}),	
+			}),
 			e(1557, {			-- The Curator
 				["creatureID"] = 15691,
 				["groups"] = {

@@ -1,7 +1,8 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = bubbleDown({["u"] = 17}, 
+
+_.Holidays = bubbleDown({["u"] = 17},
 {
 	holiday(235471, {	-- Lunar Festival
 		n(QUESTS, {
@@ -152,7 +153,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["u"] = 17,	-- Lunar Festival
 				["maps"] = { 57 },	-- Teldrassil
 				["g"] = {
-					ach(911, crit(6)),	-- Elders of Kalimdor / Elder Bladeleaf in Dolanaar 
+					ach(911, crit(6)),	-- Elders of Kalimdor / Elder Bladeleaf in Dolanaar
 				},
 			}),
 			q(8719, {	-- Bladesing the Elder
@@ -184,7 +185,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["u"] = 17,	-- Lunar Festival
 				["maps"] = { 7 },	-- Mulgore
 				["g"] = {
-					ach(911, crit(8)),	-- Elders of Kalimdor / Elder Bloodhoof in Bloodhoof Village 
+					ach(911, crit(8)),	-- Elders of Kalimdor / Elder Bloodhoof in Bloodhoof Village
 				},
 			}),
 			q(13026, {	-- Bluewolf the Elder
@@ -396,7 +397,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["u"] = 17,	-- Lunar Festival
 				["maps"] = { 199 },	-- Southern Barrens
 				["g"] = {
-					ach(911, crit(4)),	-- Elders of Kalimdor / Elder High Mountain in Vendetta Point 
+					ach(911, crit(4)),	-- Elders of Kalimdor / Elder High Mountain in Vendetta Point
 				},
 			}),
 			q(8643, {	-- Highpeak the Elder
@@ -562,7 +563,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["u"] = 17,	-- Lunar Festival
 				["maps"] = { 115 },	-- Dragonblight
 				["g"] = {
-					ach(1396, crit(3)),	-- Elders of Northrend / Elder Morthie in Star's Rest 
+					ach(1396, crit(3)),	-- Elders of Northrend / Elder Morthie in Star's Rest
 				},
 			}),
 			q(13032, {	-- Muraco the Elder
@@ -721,7 +722,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["u"] = 17,	-- Lunar Festival
 				["maps"] = { 249 },	-- Uldum
 				["g"] = {
-					ach(6006, crit(3)),	-- Elders of Cataclysm / Elder Sekhemi in Uldum 
+					ach(6006, crit(3)),	-- Elders of Cataclysm / Elder Sekhemi in Uldum
 				},
 			}),
 			q(8642, {	-- Silvervein the Elder
@@ -814,7 +815,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Once inside Sunken Temple, turn left.  Elder Starsong is in the small alcove to the northeast.",
 				["isYearly"] = true,
 				["u"] = 17,	-- Lunar Festival
-				["maps"] = { 
+				["maps"] = {
 					51,		-- Swamp of Sorrows
 					220,	-- Sunken Temple
 				},
@@ -990,7 +991,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["maps"] = { 10 },	-- Northern Barrens
 				["g"] = {
 					ach(911, crit(5)),	-- Elders of Kalimdor / Elder Windtotem in Ratchet
-				},	
+				},
 			}),
 			q(8674, {	-- Winterhoof the Elder
 				["provider"] = { "n", 15576 },	-- Elder Winterhoof
@@ -1000,7 +1001,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["maps"] = { 210 },	-- Cape of Stranglethorn
 				["g"] = {
 					ach(912, crit(6)),	-- Elders of Eastern Kingdoms / Elder Winterhoof in Booty Bay
-				},	
+				},
 			}),
 			q(13066, {	-- Yurauk the Elder
 				["provider"] = { "n", 30535 },	-- Elder Yurauk
@@ -1051,7 +1052,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["g"] = {
 					un(17, i(170205)),	-- Crown of Boundless Courage
 				},
-			}),						
+			}),
 		}),
 	}),
 });

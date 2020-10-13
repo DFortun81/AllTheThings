@@ -1,11 +1,12 @@
---------------------------------------------------
---          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+
 _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(864, {	-- Vol'dun
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(12943),		-- Adventurer of Vol'dun
 				ach(13036, {	-- A Loa of a Tale
 					["collectible"] = false,

@@ -7,7 +7,7 @@ _.Holidays = bubbleDown({["u"] = 23},
 	holiday(235481, {	-- Pirates' Day
 		["maps"] = { 210 },	-- The Cape of Stranglethorn
 		["g"] = {
-			n(-4,  {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(3457, {	-- The Captain's Booty
 					["provider"] = { "n", 28048 },	-- Dread Captain DeMeza <Scourge of the South Seas>
 					["coord"] = { 40.0, 72.6, 210 },	-- Booty Bay Pirate Day Location

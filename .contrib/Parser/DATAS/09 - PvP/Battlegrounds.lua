@@ -1,6 +1,7 @@
 -----------------------------------------------
---     P L A Y E R   V S   P L A Y E R       --
+--      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 _.PVP =
 {
 	n(-304, {	-- Battlegrounds
@@ -117,7 +118,7 @@ _.PVP =
 		}),
 		i(135542, {	-- Icy Crate of Battlefield Goods 70-79
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 70-79 range.|r",
-			["lvl"] = 70, 
+			["lvl"] = 70,
 			["g"] = {
 				i(134724),	-- Icyweave Amice*
 				i(134722),	-- Icyweave Robes*
@@ -242,6 +243,7 @@ _.PVP =
 				i(134801),	-- Tempered Gauntlets
 				i(134802),	-- Tempered Helm
 				i(134800),	-- Tempered Warboots
+				i(134804),	-- Seasoned Badge	- issue #534 on GitHub
 				i(134778),	-- Seasoned Crossbow
 				i(134779),	-- Seasoned Shanker
 				i(134780),	-- Seasoned Ripper
@@ -300,17 +302,17 @@ _.PVP =
 				{ "select", "npcID", -304 },	-- Battlegrounds
 				{ "pop" },	-- Discard all headers and acquire the children.
 				{ "where", "filterID", 55 },	-- Consumables
-				{ "pop" },	-- -- Discard all headers and acquire the children.
+				{ "pop" },	-- Discard all headers and acquire the children.
 			},
-		}), 
+		}),
 		i(165711, {	-- Gold Strongbox - Win (H)
 			["races"] = HORDE_ONLY,
 			["sym"] = {
 				{ "select", "npcID", -304 },	-- Battlegrounds
 				{ "pop" },	-- Discard all headers and acquire the children.
 				{ "where", "filterID", 55 },	-- Consumables
-				{ "pop" },	-- -- Discard all headers and acquire the children.
+				{ "pop" },	-- Discard all headers and acquire the children.
 			},
-		}), 
+		}),
 	}),
 };

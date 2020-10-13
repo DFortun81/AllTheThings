@@ -1039,6 +1039,7 @@ _.Zones =
 					["provider"] = { "n", 12696 },	-- Senani Thunderheart
 				}),
 				q(1918,  {	-- The Befouled Element
+					["sourceQuests"] = { 25 },	-- Simmer Down Now (must be on this quest to loot the item)
 					["provider"] = { "i", 16408 },	-- Befouled Water Globe
 					["crs"] = { 12759 },	-- Tideress
 					["coord"] = { 48.2, 69.6, 63 },
@@ -1203,6 +1204,7 @@ _.Zones =
 				}),
 				q(13967, {	-- Thinning the... Herd?
 					["provider"] = { "n", 12696 },	-- Senani Thunderheart
+					["coord"] = { 49.8, 65.2, 63 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(13976, {	-- Three Friends of the Forest

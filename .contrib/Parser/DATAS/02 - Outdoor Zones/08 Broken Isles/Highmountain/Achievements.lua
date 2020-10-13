@@ -1,14 +1,15 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(650, {	-- Highmountain
-			n(-4,   {	-- Achievement
+			n(ACHIEVEMENTS,   {
 				ach(10994, {	-- A Glorious Campaign
-					cl(2, {	-- Paladin
-						["classes"] = { 2 },	-- Paladin
+					cl(PALADIN, {
+						["classes"] = { PALADIN },
 						["g"] = {
 							q(45561),	-- Seek Me Out
 							q(45562),	-- Kneel and Be Squired!
@@ -20,8 +21,8 @@ _.Zones =
 							q(45645),	-- A Fool's Errand
 						},
 					}),
-					cl(5, {	-- Priest
-						["classes"] = { 5 },	-- Priest
+					cl(PRIEST, {
+						["classes"] = { PRIEST },
 						["g"] = {
 							q(45343),	-- A Curious Contagion
 							q(45344),	-- Sampling the Source
@@ -249,30 +250,27 @@ _.Zones =
 					un(REMOVED_FROM_GAME, title(340, {	-- TITLE: Field Medic!
 						["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
 						["groups"] = {
-							{
-								["achievementID"] = 11139,	-- Field Medic (Achievement)
-								["criteriaID"] = 6, 		-- Crumpled Letter (Criteria)
-								["itemID"] = 139524,		-- Crumpled Letter
-								--["questID"] = 42333,		-- Crumpled Letter (Quest)
+							i(139524, {	-- Crumpled Letter
+								["achievementID"] = 11139,	-- Field Medic
+								["criteriaID"] = 6, 		-- Crumpled Letter
+								--["questID"] = 42333,		-- Crumpled Letter
 								["description"] = "Western Highmountain next to Skyhorn.",
 								["crs"] = {96774}
-							},
-							{
-								["achievementID"] = 11139,	-- Field Medic (Achievement)
-								["criteriaID"] = 7, 		-- Crumpled Note (Criteria)
-								["itemID"] = 139525,		-- Crumpled Note
-								--["questID"] = 42334,		-- Crumpled Note (Quest)
+							}),
+							i(139525, {	-- Crumpled Note
+								["achievementID"] = 11139,	-- Field Medic
+								["criteriaID"] = 7, 		-- Crumpled Note
+								--["questID"] = 42334,		-- Crumpled Note
 								["description"] = "Northern Highmountain.",
 								["crs"] = {104323}
-							},
-							{
-								["achievementID"] = 11139,	-- Field Medic (Achievement)
-								["criteriaID"] = 9, 		-- Fevered Letter (Criteria)
-								["itemID"] = 139523,		-- Fevered Letter
-								--["questID"] = 42323,		-- Fevered Letter (Quest)
+							}),
+							i(139523, {	-- Fevered Letter
+								["achievementID"] = 11139,	-- Field Medic
+								["criteriaID"] = 9, 		-- Fevered Letter
+								--["questID"] = 42323,		-- Fevered Letter
 								["description"] = "Southern Highmountain.",
 								["crs"] = {103177}
-							}
+							})
 						},
 					})),
 				})),

@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -811,7 +811,7 @@ _.Zones =
 					["coord"] = { 53.7, 16.7, 630 },
 					["provider"] = { "n", 90383 },	-- Runas the Shamed
 				}),
-        --[[ TODO: These quests will be organized soon™
+		--[[ TODO: These quests will be organized soon™
 				q(41173),	-- A Beacon of Hope
 				q(46205),	-- A Conduit No More
 				q(43514),	-- A Vainglorious Past
@@ -821,7 +821,6 @@ _.Zones =
 				q(47193),	-- Battle for Azsuna
 				q(43193),	-- Calamitous Intent
 				q(41157),	-- Corrupted Studies
-				q(46020),	-- Crystal Containment
 				q(41166),	-- Dark Secrets
 				q(41169),	-- Darkheart Thicket: Through the Fog
 				q(41165),	-- Deciphering Demonology
@@ -835,7 +834,6 @@ _.Zones =
 				q(40526),	-- Finishing Touches
 				q(45848),	-- Fit For a Pirate
 				q(41175),	-- Fit for an Elven Queen
-				q(40193),	-- Getting the Kinks Out
 				q(40144),	-- Glielle
 				q(41177),	-- Goblin Archaeology
 				q(40872),	-- Going Out With a Bang

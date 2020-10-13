@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -11,6 +12,7 @@ _.Zones =
 				180,	-- Emberstone Mine
 				181,	-- Greymane Manor [Main Floor]
 				182,	-- Greymane Manor [Upper Floor]
+				1577,	-- Gilneas City [Heritage of Gilneas]
 			},
 			["g"] = {
 				m(202, {	-- Gilneas City

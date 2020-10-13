@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -29,7 +30,7 @@ _.Zones =
 						["questID"] = 39360,	-- Equipment Blueprint: True Iron Rudder
 					}),
 					i(128225),	-- Empowered Apexis Fragment
-					i(124562, {	-- Baleful Armament	
+					i(124562, {	-- Baleful Armament
 						["crs"] = { 96130 },	-- Ravenspeaker Thelnaas <Order of the Awakened>
 						["g"] = {
 							i(124627),	-- Baleful Dagger - Rogue
@@ -62,30 +63,22 @@ _.Zones =
 							i(124608),	-- Vexed Pendant
 						},
 					}),
-					i(124556, {	-- Baleful Spaulders
+					i(124556, {	-- Baleful Spaulders (normal kill)
 						["crs"] = { 96130 },	-- Ravenspeaker Thelnaas <Order of the Awakened>
 						["g"] = {
 							i(124587),	-- Felcast Mantle
-							i(128349),	-- Felcast Mantle [Warforged]
 							i(124588),	-- Bladefang Spaulders
-							i(128350),	-- Bladefang Spaulders [Warforged]
 							i(124589),	-- Axeclaw Spaulders
-							i(128351),	-- Axeclaw Spaulders [Warforged]
 							i(124590),	-- Felbane Shoulderguard
-							i(128352),	-- Felbane Shoulderguard [Warforged]
 						},
 					}),
-					i(128348, {	-- Baleful Spaulders
-						["crs"] = { 96130 },	-- Ravenspeaker Thelnaas <Order of the Awakened>
+					i(128348, {	-- Baleful Spaulders (first kill)
+						["description"] = "|cfffd1818This token drops from your first Tanaan rare killed on any character.  If you played during WoD and discarded the item before the introduction of the wardrobe, or if you recently sold the token itself without opening it, you will need to collect the appearance on a different character.\n\nYou CANNOT get these items from opening Baleful tokens purchased from the vendor.|r\n",
 						["g"] = {
-							i(124587),	-- Felcast Mantle
-							i(128349),	-- Felcast Mantle [Warforged]
-							i(124588),	-- Bladefang Spaulders
-							i(128350),	-- Bladefang Spaulders [Warforged]
-							i(124589),	-- Axeclaw Spaulders
-							i(128351),	-- Axeclaw Spaulders [Warforged]
-							i(124590),	-- Felbane Shoulderguard
-							i(128352),	-- Felbane Shoulderguard [Warforged]
+							i(128349),	-- Felcast Mantle (Warforged)
+							i(128350),	-- Bladefang Spaulders (Warforged)
+							i(128351),	-- Axeclaw Spaulders (Warforged)
+							i(128352),	-- Felbane Shoulderguard (Warforged)
 						},
 					}),
 					i(124560, {	-- Baleful Cloak

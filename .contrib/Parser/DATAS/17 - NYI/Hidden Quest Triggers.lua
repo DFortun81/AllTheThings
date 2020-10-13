@@ -2,7 +2,7 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 
-_.NeverImplemented =
+_.HiddenQuestTriggers =
 {
 	-- Note!! Here is where we can put all the hidden quest triggers in the game that don't exactly fit anywhere.
 	-- When adding a quest trigger be sure to put a description of how it triggered
@@ -162,6 +162,11 @@ _.NeverImplemented =
 		q(49847),	-- Selected Pandaria at level 80 Special Duty Assignment" on horde
 		q(57668),	-- Triggering when using a portal to Orgrimmar as Horde/to Ironforge as Alliance after Dec 25th during the Feast of Winter Veil 2019
 		--- (seems to trigger only the first time you go there that day). Possibly used to determine loot eligibility?
+		q(31878),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
+		q(31879),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
+		q(31880),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
+		q(31881),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
+		q(31990),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
 
 		-- Events/Holidays
 		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
@@ -222,6 +227,7 @@ _.NeverImplemented =
 		q(25040),	-- FLAG - Worgen Attacked — Tirisfal Glades — attacked by a worgen during "Darkhound Pounding" to trigger the "Escaped From Gilneas" quest
 		q(28855),	-- Northern Stranglethorn 4.x: PRK - E - Just Hatched FLAG (Triggers when you collect the 7th "Jungle Remedy" during the Bad Medicine quest. A Lashtail Hatchling will start following you)
 		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success"
+		q(26136),	-- FLAG - Rigor Mortis Removed. Triggered on a fresh lvl 1 warlock undead on login
 		q(24644),	-- Troll Introduction Complete
 
 		--	DUNGEONS
@@ -274,6 +280,7 @@ _.NeverImplemented =
 		q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in Forward Base: Reaver's Fall as horde
 		q(11517),	-- Report to Nasuun — looks like an unused version of #11534 (triggers when you turn it in, but has no data on wowhead)
 		q(11518),	-- Sunwell Daily Portal Flag
+		q(11522),	-- Triggers with Rediscovering Your Roots (11521)
 		q(12494),	-- FLAG: Riding Training Advertisement
 
 		--	DUNGEONS
@@ -350,13 +357,10 @@ _.NeverImplemented =
 		q(35512),	-- Utgarde Keep heroic completion
 		q(35449),	-- Utgarde Pinnacle normal completion
 		q(35453),	-- Utgarde Pinnacle heroic completion
-		q(24811),	-- Caster Ring Flag (doing "Choose Your Path" in ICC and choosing crit/haste ring on mage)
+		q(24808),	-- Tank Ring Flag
 		q(24809),	-- Healer Ring Flag (doing "A Change of Heart" in ICC and choosing the healer ring
-		q(24844),	-- A Change of Heart — on shadow priest, was DPS, switched to heal ring
-		q(24845),	-- A Change of Heart — on shadow priest, was heal, switched to DPS ring
-		q(24840),	-- A Change of Heart — on mage, switched from crit/haste ring to haste/vers ring
-		q(24841),	-- A Change of Heart — on mage, switched from haste/vers ring to crit/haste ring
-		-- there are 19 "A Change of Heart" quests, no idea how to determine what classes they're for or what other restrictions there may be, so placing these here for now
+		q(24810),	-- Melee Ring Flag
+		q(24811),	-- Caster Ring Flag (doing "Choose Your Path" in ICC and choosing crit/haste ring on mage)
 
 		-- Zones
 		q(12845),	-- Dalaran teleport crystal flag
@@ -383,6 +387,7 @@ _.NeverImplemented =
 		q(35587),	-- Deadmines heroic completion
 		q(35358),	-- End Time heroic completion
 		q(35404),	-- Grim Batol Reward Quest
+		q(35405),	-- Grim Batol Reward Quest
 		q(35439),	-- Hour of Twilight dungeon reward (Kill benedictus)
 		q(35414),	-- Lost City of the Tol'vir dungeon reward (Kill Siamat)
 		q(35311),	-- Shadowfang Keep heroic bonus objective complete
@@ -391,8 +396,10 @@ _.NeverImplemented =
 		q(35913),	-- Stonecore (Heroic) reward quest
 		q(35401),	-- The Vortex Pinnacle Reward Quest
 		q(35363),	-- Throne of the Tides Reward Quest
+		q(35365),	-- Throne of the Tides Reward Quest (kill final boss, triggered in Timewalking)
 		q(35366),	-- Throne of the Tides Bonus Reward (kill Mindbender Ghur'sha, triggered in Timewalking)
 		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
+		q(35443),	-- Zul'Aman Reward Quest
 		q(35411),	-- Zul'Gurub Reward Quest
 		q(35412),	-- Zul'Gurub Bonus Objective Reward Quest. Killing Cache of Madness
 		q(35435),	-- Well of Eternity Reward Quest
@@ -410,6 +417,8 @@ _.NeverImplemented =
 		q(29395),	-- FLAG - Teleport to Uldum
 		q(29592),	-- Caster Legendary BREADCRUMB TRACKER
 		q(29286),	-- Druid Tree, Stage 2 Tracking
+		q(29291),	-- triggered with Peaked Interest 29287
+		q(29292),	-- triggered with Peaked Interest 29287
 
 		q(26565),	-- A Furious Catch (REMOVED) — unused version of Orgrimmar Cata fishing daily "A Golden Opportunity"
 		q(25829),	-- Mount Hyjal - goldrinn hub complete
@@ -557,6 +566,7 @@ _.NeverImplemented =
 		q(31627),	-- Mogu'shan Palace Challenge Mode - Consolation (Nth)
 		q(31648),	-- Mogu'shan Palace Challenge Mode - Gold Addition (Nth)
 		q(31641),	-- Mogu'shan Palace Challenge Mode - Silver Addition (Nth)
+		q(35318),	-- Mogu'shan Palace Reward Quest (was in a normal)
 		q(35321),	-- Mogu'shan Palace Reward Quest
 		q(31636),	-- Scarlet Halls Challenge Mode - Bronze Addition (Nth)
 		q(31630),	-- Scarlet Halls Challenge Mode - Consolation (Nth)
@@ -581,6 +591,7 @@ _.NeverImplemented =
 		q(31639),	-- Shado-Pan Monastery Challenge Mode - Silver Addition (Nth)
 		q(35319),	-- Shado-Pan Monastery normal clear
 		q(35320),	-- Shado-Pan Monastery Reward Quest
+		q(35461),	-- Siege of Niuzao Reward Quest
 		q(31633),	-- Siege of Niuzao Temple Challenge Mode - Bronze Addition (Nth)
 		q(31626),	-- Siege of Niuzao Temple Challenge Mode - Consolation (Nth)
 		q(31647),	-- Siege of Niuzao Temple Challenge Mode - Gold Addition (Nth)
@@ -632,7 +643,34 @@ _.NeverImplemented =
 		--	TIMELESS ISLE
 		-- RARES
 		q(44696),	-- Tracking Quest - Daily - Watcher Osu — alternate Watcher Osu daily quest
+		q(33288),	-- Tracking Quest - First - Archiereus of Flame
+		q(33276),	-- Tracking Quest - First - Bufo
+		q(33274),	-- Tracking Quest - First - Champion of the Black Flame
+		q(33318),	-- Tracking Quest - First - Chelon
+		q(33286),	-- Tracking Quest - First - Cinderfall
+		q(33319),	-- Tracking Quest - First - Cranegnasher
 		q(33290),	-- Tracking Quest - First - Dread Ship Vazuvius — presumably first kill only.  didn't pop on my first kill of the week.
+		q(33261),	-- Tracking Quest - First - Emerald Gander
+		q(33289),	-- Tracking Quest - First - Evermaw
+		q(33285),	-- Tracking Quest - First - Flintlord Gairan
+		q(33275),	-- Tracking Quest - First - Garnia
+		q(33291),	-- Tracking Quest - First - Golganarr
+		q(33272),	-- Tracking Quest - First - Great Turtle Furyshell
+		q(33260),	-- Tracking Quest - First - Gu'chi the Swarmbringer
+		q(33287),	-- Tracking Quest - First - Huolon
+		q(33278),	-- Tracking Quest - First - Imperial Python
+		q(33270),	-- Tracking Quest - First - Ironfur Steelhorn
+		q(33281),	-- Tracking Quest - First - Jakur of Ordon
+		q(33258),	-- Tracking Quest - First - Karkanos
+		q(33273),	-- Tracking Quest - First - Leafmender
+		q(33277),	-- Tracking Quest - First - Monstrous Spineclaw
+		q(33283),	-- Tracking Quest - First - Rock Moss
+		q(33259),	-- Tracking Quest - First - Spirit of Jadefire
+		q(33280),	-- Tracking Quest - First - Stinkbraid
+		q(33597),	-- Tracking Quest - First - The Obliterator
+		q(33279),	-- Tracking Quest - First - Tsavo'ka
+		q(33284),	-- Tracking Quest - First - Urdur the Cauterizer
+		q(33321),	-- Tracking Quest - First - Watcher Osu
 		q(32997),	-- Tracking Quest - First - Zesqua
 		q(33317),	-- Tracking Quest - First - Zhu-Gon the Bitter/Skunky Beer
 		q(33162),	-- Weekly Vignette Boss Kill - Tracking Quest — popped upon arriving to timeless isle and killing evermaw (first rare of the week)
@@ -787,6 +825,7 @@ _.NeverImplemented =
 		q(34503),	-- Talador - Screaming Telmor Citizen,	-- triggers in Telmor
 		q(34760),	-- Talador - triggered when looting the Rusted Lockbox. WoWhead lists as a nagrand treasure but that treasure doesn't seem to exist
 		q(35491),	-- Talador - Underseer Bloodmane vignette duplicate flag
+		q(37864),	-- Voidtalon (Pops after the player leaves the scenario.)
 
 		--	TANAAN JUNGLE
 		q(37938),	-- Tanaan Jungle - Assault on the Ruins of Kra'nak - criteria complete
@@ -815,6 +854,8 @@ _.NeverImplemented =
 		q(39171),	-- Fel Legendary Pet Tracking Quest 13 — Netherfist
 		q(39172),	-- Fel Legendary Pet Tracking Quest 14 — Skrillix
 		q(39173),	-- Fel Legendary Pet Tracking Quest 15 — Defiled Earth
+		q(39184),	-- learning Immaculate Haste Taladite at an Apexis Gemcutter
+		q(39187),	-- learning Immaculate Stamina Taladite
 
 		--	DUNGEONS & RAIDS
 		q(35960),	-- Auchindoun Reward Quest
@@ -892,6 +933,7 @@ _.NeverImplemented =
 		q(36294),	-- Lumber Mill — Phylarch the Evergreen first attack
 		q(36295),	-- Lumber Mill — Phylarch the Evergreen second attack
 		q(39414),	-- Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
+		q(36058),	-- Seal of Tempered Fate: Armory
 
 		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
 		q(36809), 	-- Missive completion: Assault on the Heart of Shattrath
@@ -900,6 +942,7 @@ _.NeverImplemented =
 		q(39413),
 		q(39415),
 		q(39710),
+		q(39711),	-- Tracking Quest: Garrison/Shipyard Mission Table
 
 		--	TREASURES
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
@@ -949,6 +992,8 @@ _.NeverImplemented =
 		q(33965),	-- Tanaan Flowerpicker
 		q(39128),	-- Tanaan Vignette
 		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
+		q(34024),	-- Tracking Quest. This completes when you kill the Windfang Matriarch after helping Romuul.
+		q(33786),	-- ??????. This was completed around Fiona's caravan in Shadowmoon Valley - Draenor (not entirely sure what triggered it.)
 
 		--	PvP Set Completed
 		q(43092),	-- Primal Combatant's Felweave Armor (Alliance, Warlock)
@@ -1005,8 +1050,8 @@ _.NeverImplemented =
 		q(41306),	-- The Fallen Lion. Triggers with regular "The Fallen Lion" 40517
 		q(33079),	-- Triggers with "Demons Among Us" 40593
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
-		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior (all classes?)
-		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior (all classes?)
+		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin (all classes?)
+		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin (all classes?)
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
 		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
@@ -1103,6 +1148,8 @@ _.NeverImplemented =
 		q(46717),	-- got achievement Burning Bridges and looted Qa'pla, Eredun War Order legendary, so one of the two
 		q(46835),	-- Whispers of a Frightened World Tracking, while doing quest 46206
 		q(43659),	-- Mage - learned the Felo'melorn appearance from The Stars' Design (maybe put this on the appearance item?)
+		q(44426),	-- Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
+		q(40340),	-- Alard Schmied Greeting Seen. "Well, I'll be... the Ashbringer. ...' in Dalaran
 
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
@@ -1138,6 +1185,8 @@ _.NeverImplemented =
 		q(45171),	-- Generic Order Hall - 7.1 Class Hall - Special - PVP - PVP Intro Mission - Tracking Quest
 		q(47661),	-- Generic Order Hall - [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
 		q(47699),	-- Generic Order Hall - [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
+
+		q(44637),	-- Death Knight Order Hall - Track Quest: 7.0 Class Hall - Death Knight - Pacing Mission 1 (Ch 1.5) - Triggers when "Salanar the Horseman" mission is completed
 
 		q(40817),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen first
 		q(40818),	-- Demon Hunter Order Hall - Aldrachi Warblades chosen first
@@ -1184,6 +1233,7 @@ _.NeverImplemented =
 		q(40620),	-- Hunter Order Hall - Marksmanship Chosen
 		q(44368),	-- Hunter Order Hall - Marksmanship Chosen
 		q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
+		q(43158),	-- Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 1 (JAP)
 
 		q(41079),	-- Mage Order Hall - Arcane chosen first
 		q(43442),	-- Mage Order Hall - Arcane chosen second
@@ -1223,6 +1273,16 @@ _.NeverImplemented =
 		q(43970),	-- Monk Order Hall - Brewmaster Chosen
 		q(44427),	-- Monk Order Hall - Brewmaster Chosen
 		q(44646),	-- Monk Order Hall - Tracking Quest: 7.0 Class Hall - Monk - Pacing Mission 1 - Unlocks Ch 2
+
+		-- Paladin class campaign
+		q(38713),	-- The Crusade Calls. Triggered with An Urgent Gathering 38710
+		q(40409),	-- Ashbringer Chosen (Retribution)
+		q(42495),	-- Ashbringer Chosen (Retribution)
+		q(40410),	-- Silver Hand Chosen (Holy)
+		q(42497),	-- Silver Hand Chosen (Holy)
+		q(40411),	-- Truthguard Chosen (Protection)
+		q(42496),	-- Truthguard Chosen (Protection)
+		q(42812),	-- We Meet at Light's Hope. Triggered together with 42811 version
 
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second
@@ -1290,6 +1350,7 @@ _.NeverImplemented =
 		q(44061),	-- Warrior Order Hall - Val'sharah Teleport learned in Loriathil
 
 		--	Artifact Appearances
+		q(43655),	-- Hidden Appearance unlocked (The Silver Hand?)
 		q(45130),	-- Hidden Appearance unlocked
 
 		--	Professions
@@ -1368,8 +1429,8 @@ _.NeverImplemented =
 		q(44897),	-- Calamir bonus roll
 		q(44503),	-- Drugon the Frostblood killID
 		q(44898),	-- Drugon the Frostblood bonus roll
-		--	q(),	-- Flotsam killID
-		--	q(),	-- Flotsam bonus roll
+		q(44504),	-- Flotsam killID
+		q(44899),	-- Flotsam bonus roll
 		q(44505),	-- Humongris killID
 		q(44900),	-- Humongris bonus roll
 		q(44506),	-- Levantus killID
@@ -1485,6 +1546,7 @@ _.NeverImplemented =
 		q(45511),	-- Highmountain - WQ rare: Olokk the Shipbreaker
 		q(44039),	-- Highmountain - WQ rare: Sea King Tidross
 		q(44879),	-- Highmountain - WQ rare: Snowfeather Matriarch
+		q(40601),	-- 7.0 Highmountain - Vignette - Pinerock Basin - Highmountain Beastmaster See Treasure (JLW) — looting treasure after Arru
 		q(44880),	-- Stormheim - WQ rare: Direbeak Matriarch
 		q(45478),	-- Suramar - WQ rare: Achronos
 		q(45504),	-- Suramar - WQ rare: Alteria
@@ -1588,6 +1650,7 @@ _.NeverImplemented =
 		q(46663),	-- Odyn (Heroic)
 		q(46664),	-- Odyn (Mythic)
 		q(45430),	-- Guarm
+		q(45208),	-- Guarm (Mythic)
 		q(45431),	-- Helya
 		q(45227),	-- Tracking Quest — popped for Carbion shortly after Mythic Helya (character's first time doing either Mythic or Heroic ToV)
 
@@ -1695,8 +1758,10 @@ _.NeverImplemented =
 		q(53122),	-- A Season for Celebration — unused version of hallow's end quest?  triggered when i turned in the alliance version along with the other horde one
 		q(57244),	-- triggered when turning in #55618, "The Heart Forge"
 		q(55492),	-- not sure if this was when i hit Rank 8 with brawler's guild, when i purchased the ensemble, or when i handed in bag of chipped dice to the bouncer
+		q(55493),	-- Completed after killing Hexos in a random brawl.
 		q(54526),	-- triggered along with 54636 when looting Gorilla Bot Loot during Vol'dun invasion
 		q(54777),	-- triggered when turning in #54134, "Many Fine Heroes," vol'dun assault.  had WM on but i'm not sure if that's relevant
+		q(54315),	-- triggered when turning in #54134, "Many Fine Heroes," vol'dun assault.  had WM off, but i think it was the first time i did the assault on this character
 		q(54771),	-- triggered when turning in #53701, "A Drust Cause," drustvar assault.  had WM on but i'm not sure if that's relevant
 		q(54782),	-- triggered when turning in #53711, "A Sound Defense," tiragarde sound assault.  had WM on but i'm not sure if that's relevant
 		q(54779),	-- triggered when turning in #54138, "Ritual Rampage," zuldazar assault.  had WM on but i'm not sure if that's relevant
@@ -1762,6 +1827,8 @@ _.NeverImplemented =
 		q(57703),	-- /
 		q(56113),	-- triggered after Honeyback Harvester event that got to round 23 or 24
 		q(57700),	-- triggered after Honeyback Harvester event that got to round 23 or 24
+		q(56114),	-- triggered after Honeyback Harvester event that completed round 29
+		q(57699),	-- triggered after Honeyback Harvester event that completed round 29
 		--	58013 ALSO triggered after my first time killing Honey Smasher, but that also popped for me while doing the Alliance war campaign "This Ain't Mine."  so wtf lol
 		q(56171),	-- not sure -- i had just done a Honeyback Harvester event and Gurg the Hivethief spawned but ran away because there wasn't enough DPS to kill him.  looted the jelly after the event, then ran to turn in since i was closeby.  fed the bee ~13 - 14 Thin Jelly (brought me to 1700 Friendly) and ran out of the cave and saw this and 57701 pop in chat.
 		q(57701),	-- same as above
@@ -2118,6 +2185,7 @@ _.NeverImplemented =
 		q(49368, {	-- killed a Vilebone Ravager while on the "Agent of Death" WQ, and this quest popped.  not sure if it had to do with entering the area or killing the mob
 			["isWorldQuest"] = true,	-- for some reason, this shows up in /attwq for characters who haven't done it.  haunted!
 		}),
+		q(49369),	-- reported as appearing after clicking on a Saurolisk Tail in Nazmir.  It also was after two messages from NPCs shortly after the one from 49367, so it may actually be related to that ("De voice... he is calling to [...] we must obey!" and "Do you hear it?  It's Bwonsamdi's call!  Eternity is near!") -- unsure if this erroneously shows up in /attwq like the others; if so, it needs to be marked as a WQ
 
 		--	Stormsong Valley
 		-- Bonus Objectives
@@ -2183,6 +2251,7 @@ _.NeverImplemented =
 		q(50166),	-- Tiragarde Sound repeatable random chest
 		q(50952),	-- Tiragarde Sound repeatable random chest
 		q(53630),	-- Tiragarde Sound repeatable random chest (possibly different from others, it was Forgotten Treasure Chest at 79.57 20.22 in a small cave)
+		q(53631),	-- reported as "opening a chest in Tiragarde Sound"
 		q(48594),	-- Tiragarde Sound Tol Dagor chest
 		-- Various
 		q(55627),	-- triggered additionally when completing the WQ to kill P4-N73R4.  this is not the first-time kill tracking quest for the rare, so i'm not sure what it's for
@@ -2221,6 +2290,7 @@ _.NeverImplemented =
 		q(49416),	-- Vol'dun - triggers during "The Keeper's Keys" after the cinematic
 		q(47887),	-- Vol'dun - triggered when entering the Ashvane Encampment. Possibly controls the spawn of Randall Redmond?
 		q(50522),	-- Vol'dun - triggered after getting a food buff from the goldtusk inn's "All-You-Can-Eat Breakfast Buffet". Could also be related to feeding Tarkaj during "A Goldtusk Greeting"
+		q(54299),	-- triggered when completing #54272, "Battle Bots" WQ
 
 		--	Zuldazar
 		-- Bonus Objectives
@@ -2258,6 +2328,8 @@ _.NeverImplemented =
 		q(51346),	-- Zuldazar repeatable random chest
 		q(50729),	-- looted a chest in Zuldazar at 58.6, 81.1
 		q(51363),	-- Weekly m+ chest looted (Horde, probably alliance too?)
+		-- Rares
+		q(50856),	-- Old R'gal first time kill quest
 		-- Various
 		q(50931),	-- Spoke to talanji when meeting with Rastakhan for the first time
 		q(55413),	-- War Mode supply drop in Zuldazar
@@ -2409,6 +2481,7 @@ _.NeverImplemented =
 		q(56592),	-- Rockweed Shambler first kill
 		q(56917),	-- Rockweed Shambler additional loot (Benthic/Manapearls)
 		q(56606),	-- Sandclaw Stonoeshell first kill
+		q(57142),	-- looting Giant Crab Leg + Brinestone Pickaxe from Sandclaw Stoneshell
 		q(56590),	-- Scale Matriarch Vynara first kill
 		q(56589),	-- Scale Matriarch Zodia first kill
 		q(56588),	-- Shassera first kill
@@ -2420,6 +2493,7 @@ _.NeverImplemented =
 		q(56605),	-- Toxigore the Alpha first kill
 		q(56584),	-- Urduu first kill
 		q(57083),	-- Wayward Algan Benthic loot
+		q(57096),	-- reported as triggering upon snapping a photo to collect Fabious
 		q(57166),	-- triggered when completing #55891, "Champion Aldrantiss, Defender of Her Kingdom," in nazjatar
 		q(57165),	-- triggered when completing #55892, "Champion Eldanar, Shield of Her Glory," in nazjatar
 		q(57168),	-- triggered when completing #55889, "Champion Kyx'zhul the Deepspeaker," in nazjatar
@@ -2427,6 +2501,7 @@ _.NeverImplemented =
 		q(57169),	-- triggered when completing WQ to kill Alzana, Arrow of Thunder (not WQ ID)
 
 		--	Mechagon
+		q(56329),	-- Triggered when completing 'Do Not Drink'(56328) the first time
 		q(56089),	-- triggered on first rare kill — possibly blueprint looting?
 		q(56506),	-- triggered on third rare kill — was Mr. Fixthis for me, but someone else had it trigger on Arachnoid Harvester.  looted Performant Refined Logic Board and a Chain Ignitercoil
 		q(57132),	-- Reclamation Rig normal — putting here because with both quests attached with altQuests it doesn't roll over like dailies should
@@ -2512,7 +2587,14 @@ _.NeverImplemented =
 		--	Raids
 		--	Uldir
 		q(53269),	-- killed Taloc the Corrupted in LFR
+		q(51736),	-- killed Taloc on Mythic
+		q(51735),	-- killed MOTHER on Mythic
+		q(51735),	-- killed Vectis on Mythic
+		q(51733),	-- killed Fetid Devourer on Mythic
 		q(51730),	-- killed Mythrax the Unraveler on Mythic
+		q(51732),	-- reported as triggering after doing "What's in the Box?" achievement, perhaps a kill quest
+		q(51731),	-- reported as triggering after doing "Edgelords" achievement, perhaps a kill quest
+		q(51729),	-- reported as triggering after doing "Double Dribble" achievement, perhaps a kill quest
 
 		--	Battle of Dazar'alor
 		q(54963),	-- LFR, cinematic at the start of Siege of Dazar'alor wing

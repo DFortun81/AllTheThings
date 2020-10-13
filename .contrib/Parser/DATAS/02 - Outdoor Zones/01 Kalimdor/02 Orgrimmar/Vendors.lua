@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -435,7 +436,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(41589)),	-- battlemaster's resolve
 						un(REMOVED_FROM_GAME, i(41590)),	-- battlemaster's courage
 						un(REMOVED_FROM_GAME, i(33056)),	-- Veteran's Band of Dominance
-						un(REMOVED_FROM_GAME, i(33057)),	-- Veteran's Band of Triumph 
+						un(REMOVED_FROM_GAME, i(33057)),	-- Veteran's Band of Triumph
 						un(REMOVED_FROM_GAME, i(33064)),	-- Veteran's Band of Salvation
 						un(REMOVED_FROM_GAME, i(33853)),	-- Vindicator's Band of Dominance
 						un(REMOVED_FROM_GAME, i(35320)),	-- Vindicator's Band of subjugation
@@ -511,7 +512,7 @@ _.Zones =
 							un(REMOVED_FROM_GAME, i(70642)),	-- Vicious Gladiator's Sabatons of Medi. S10 Version
 							un(REMOVED_FROM_GAME, i(70665)),	-- Vicious Gladiator's Waistguard of Cruelty. S10 Version
 							un(REMOVED_FROM_GAME, i(70666)),	-- Vicious Gladiator's Waistguard of Medi. S10 Version
-							un(REMOVED_FROM_GAME, i(70513)),	-- Vicious Gladiator's armplates of alacrity. S10 Version 
+							un(REMOVED_FROM_GAME, i(70513)),	-- Vicious Gladiator's armplates of alacrity. S10 Version
 							un(REMOVED_FROM_GAME, i(70514)),	-- Vicious Gladiator's armplates of proficiency. S10 Version
 							un(REMOVED_FROM_GAME, i(70529)),	-- Vicious Gladiator's bracers of meditation. S10 Version
 							un(REMOVED_FROM_GAME, i(70530)),	-- Vicious Gladiator's bracers of prowess. S10 Version
@@ -630,7 +631,7 @@ _.Zones =
 				n(12795,  {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
-					["coord"] = { 38.2, 72.6, 85 }, 
+					["coord"] = { 38.2, 72.6, 85 },
 					["g"] = {
 						i(28377), 	-- Sergeant's Heavy Cloak
 						i(28378), 	-- Sergeant's Heavy Cape
@@ -768,7 +769,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(30345)),	-- medallion of the horde (shaman)
 						un(REMOVED_FROM_GAME, i(37865)),	-- medallion of the horde (epic)
 						un(REMOVED_FROM_GAME, i(38588)),	-- Medallion of the horde (dk)
-						un(REMOVED_FROM_GAME, i(69862)),	-- Medallion of the horde 
+						un(REMOVED_FROM_GAME, i(69862)),	-- Medallion of the horde
 						un(REMOVED_FROM_GAME, i(34576)),	-- battlemaster's cruelty
 						un(REMOVED_FROM_GAME, i(34577)),	-- battlemaster's depravity
 						un(REMOVED_FROM_GAME, i(34578)),	-- battlemaster's determination
@@ -4192,7 +4193,7 @@ _.Zones =
 						i(67064, {	-- Pattern: Vicious Charscale Belt
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
-						i(67063, {	-- Pattern: Vicious Charscale Boots	
+						i(67063, {	-- Pattern: Vicious Charscale Boots
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
 						i(67049, {	-- Pattern: Vicious Charscale Bracers
@@ -4270,7 +4271,7 @@ _.Zones =
 						i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
-						i(67075, {	-- Pattern: Vicious Wyrmhide Chest	
+						i(67075, {	-- Pattern: Vicious Wyrmhide Chest
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
 						i(67056, {	-- Pattern: Vicious Wyrmhide Gloves
@@ -4520,52 +4521,52 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(91008, { 	-- Black Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
 						i(87795), 	-- Black Dragon Turtle
 						i(91009, {	-- Blue Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
-						i(87796), 	-- Blue Dragon Turtle 
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
+						i(87796), 	-- Blue Dragon Turtle
 						i(91005, { 	-- Brown Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
-						i(87797),	-- Brown Dragon Turtle 
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
+						i(87797),	-- Brown Dragon Turtle
 						i(91011, {	-- Great Black Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
-						i(87802),	-- Great Black Dragon Turtle 
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
+						i(87802),	-- Great Black Dragon Turtle
 						i(91013, {	-- Great Blue Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
 						i(87803),	-- Great Blue Dragon Turtle
 						i(91014, {	-- Great Brown Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
 						i(87804),	-- Great Brown Dragon Turtle
 						i(91012, {	-- Great Green Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
 						i(87801),	-- Great Green Dragon Turtle
 						i(91015, {	-- Great Purple Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
-						i(87805),	-- Great Purple Dragon Turtle 
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
+						i(87805),	-- Great Purple Dragon Turtle
 						i(91010, {	-- Great Red Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
-						i(82811),	-- Great Red Dragon Turtle 
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
+						i(82811),	-- Great Red Dragon Turtle
 						i(91004, {	-- Green Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
 						i(82765),	-- Green Dragon Turtle
 						i(91006, {	-- Purple Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
 						i(87799),	-- Purple Dragon Turtle
 						i(91007, {	-- Red Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
 						i(87800),	-- Red Dragon Turtle
 						un(REMOVED_FROM_GAME, i(91016)),	-- Reins of the Great Red Dragon Turtle (Never Implemented?)
 					},

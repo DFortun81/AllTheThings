@@ -5,7 +5,7 @@
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(249, { 	-- Magisters' Terrace
 		["lvl"] = 65,
-		["maps"] = { 
+		["maps"] = {
 			348,	-- Grand Magister's Asylum
 			349,	-- Observation Grounds
 		},

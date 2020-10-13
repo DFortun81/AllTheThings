@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
+-- TODO: fromatting
 _.WorldEvents =
 {
 	{	-- 4th Anniversary
@@ -11,7 +13,7 @@ _.WorldEvents =
 				["achievementID"] = 2398,	-- 4th Anniversary
 				["u"] = 36,					-- WoW Anniversary Filter
 			},
-			
+
 			{	-- Mailbox
 				["npcID"] = -297,	-- Mailbox
 				["g"] = {

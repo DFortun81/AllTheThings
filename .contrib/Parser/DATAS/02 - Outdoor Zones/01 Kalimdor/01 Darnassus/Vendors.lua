@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -427,7 +428,7 @@ _.Zones =
 						i(67080, {	-- Pattern: Vicious Dragonscale Belt
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
-						i(67065, {	-- Pattern: Vicious Dragonscale Boots	
+						i(67065, {	-- Pattern: Vicious Dragonscale Boots
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
 						i(67054, {	-- Pattern: Vicious Dragonscale Bracers
