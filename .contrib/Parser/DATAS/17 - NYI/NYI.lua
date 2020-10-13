@@ -2151,17 +2151,16 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(163063)),	-- Reins of the spectral phoenix (old trash 100 rep award)
 		un(NEVER_IMPLEMENTED, i(163188)),	-- Surf Jelly (testing version)
 		un(NEVER_IMPLEMENTED, i(163186)),	-- Tempestuous Skystallion (Old 400 Mounts Reward)
-		un(NEVER_IMPLEMENTED, i(13323)),	-- purple mechanostrider
-		un(NEVER_IMPLEMENTED, i(13324)),	-- red and blue mechanostrider
-		un(NEVER_IMPLEMENTED, i(16343)),	-- blood guards mount
-		un(NEVER_IMPLEMENTED, i(18768)),	-- reins of the swift dawnsaber
-		un(NEVER_IMPLEMENTED, i(23193)),	-- naxxramas deathercharger reins
-		un(NEVER_IMPLEMENTED, i(28482)),	-- great elite elekk
-		un(NEVER_IMPLEMENTED, i(37827)),	-- bresfest kodko
-		un(NEVER_IMPLEMENTED, i(43963)),	-- reins of the brown polar bear
-		un(NEVER_IMPLEMENTED, i(43964)),	-- reins of the black polar bear
-		un(NEVER_IMPLEMENTED, i(46101)),	-- blue skeletal warhorse
-
+		un(NEVER_IMPLEMENTED, i(13323)),	-- Purple Mechanostrider
+		un(NEVER_IMPLEMENTED, i(13324)),	-- Red and Blue Mechanostrider
+		un(NEVER_IMPLEMENTED, i(16343)),	-- Blood Guard's Mount
+		un(NEVER_IMPLEMENTED, i(18768)),	-- Reins of the Swift Dawnsaber
+		un(NEVER_IMPLEMENTED, i(23193)),	-- Naxxramas Deathcharger Reins
+		un(NEVER_IMPLEMENTED, i(28482)),	-- Great Elite Elekk
+		un(NEVER_IMPLEMENTED, i(37827)),	-- Brewfest Kodo
+		un(NEVER_IMPLEMENTED, i(43963)),	-- Reins of the Brown Polar Bear
+		un(NEVER_IMPLEMENTED, i(43964)),	-- Reins of the Black Polar Bear
+		un(NEVER_IMPLEMENTED, i(46101)),	-- Blue Skeletal Warhorse
 	}),
 	n(-162, {	-- Pets
 		un(NEVER_IMPLEMENTED, model(65527, i(129108, {	-- Son of Goredome		 				(Never added in Game)

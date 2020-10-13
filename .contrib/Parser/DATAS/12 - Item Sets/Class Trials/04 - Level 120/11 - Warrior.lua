@@ -16,46 +16,46 @@ _.GearSets =
 						i(170746),	-- Oathsworn Bulwark
 					}),
 					n(-9947, {	-- Protection
-						i(170922, {	--Oathsworn Faceguard
+						i(170922, {	-- Oathsworn Faceguard
 							["u"] = NEVER_IMPLEMENTED,
-						}), 
+						}),
 						i(170748, {	-- Oathsworn Amulet
 							["u"] = NEVER_IMPLEMENTED,
 						}),
-						i(170924, {	--Oathsworn Shoulderguards
+						i(170924, {	-- Oathsworn Shoulderguards
 							["u"] = NEVER_IMPLEMENTED,
 						}),
-						i(170747, {	--Oathsworn Cloak of Stoicism
+						i(170747, {	-- Oathsworn Cloak of Stoicism
 							["u"] = NEVER_IMPLEMENTED,
 						}),
-						i(170919, {	--Oathsworn Chestguard
+						i(170919, {	-- Oathsworn Chestguard
 							["u"] = NEVER_IMPLEMENTED,
 						}),
-						i(170926, {	--Oathsworn Armguards
+						i(170926, {	-- Oathsworn Armguards
 							["u"] = NEVER_IMPLEMENTED,
 						}),
-						i(170921, {	--Oathsworn Handguards
+						i(170921, {	-- Oathsworn Handguards
 							["u"] = NEVER_IMPLEMENTED,
 						}),
-						i(170925, {	--Oathsworn Waistband
+						i(170925, {	-- Oathsworn Waistband
 							["u"] = NEVER_IMPLEMENTED,
 						}),
-						i(170923, {	--Oathsworn Legguards
+						i(170923, {	-- Oathsworn Legguards
 							["u"] = NEVER_IMPLEMENTED,
 						}),
-						i(170920, {	--Oathsworn Greaves
+						i(170920, {	-- Oathsworn Greaves
 							["u"] = NEVER_IMPLEMENTED,
 						}),
-						i(170750, {	--Oathsworn Band of Stoicism
+						i(170750, {	-- Oathsworn Band of Stoicism
 							["u"] = NEVER_IMPLEMENTED,
 						}),
-						i(170751, {	--Oathsworn Ring of Stoicism
+						i(170751, {	-- Oathsworn Ring of Stoicism
 							["u"] = NEVER_IMPLEMENTED,
 						}),
-						i(170749, {	--Oathsworn Defender Idol
+						i(170749, {	-- Oathsworn Defender Idol
 							["u"] = NEVER_IMPLEMENTED,
 						}),
-						i(170752, {	--Oathsworn Defender Stone
+						i(170752, {	-- Oathsworn Defender Stone
 							["u"] = NEVER_IMPLEMENTED,
 						}),
 					}),

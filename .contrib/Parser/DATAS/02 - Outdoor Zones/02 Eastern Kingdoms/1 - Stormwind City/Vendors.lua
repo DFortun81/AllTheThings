@@ -2629,22 +2629,22 @@ _.Zones =
 						i(29465, {	-- Black Battlestrider Mount
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
-						un(REMOVED_FROM_GAME, i(18243)),	-- black battlestrider. Pre 2.0 Version
+						un(REMOVED_FROM_GAME, i(18243)),	-- Black Battlestrider. Pre 2.0 Version
 						i(29467, {	-- Black War Ram Mount
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
-						un(REMOVED_FROM_GAME, i(18241)),	-- black war steed bridle. Pre 2.0 Version
+						un(REMOVED_FROM_GAME, i(18241)),	-- Black War Steed Bridle. Pre 2.0 Version
 						i(29468, {	-- Black War Steed Bridle Mount
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
-						un(REMOVED_FROM_GAME, i(18244)),	-- black war ram. Pre 2.0 Version
+						un(REMOVED_FROM_GAME, i(18244)),	-- Black War Ram. Pre 2.0 Version
 						i(35906, {	-- Reins of the Black War Elekk Mount
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
 						i(29471, {	-- Reins of the Black War Tiger Mount
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
-						un(REMOVED_FROM_GAME, i(18242)),	-- reins of the black war tiger Pre 2.0 Version
+						un(REMOVED_FROM_GAME, i(18242)),	-- Reins of the Black War Tiger. Pre 2.0 Version
 					},
 				}),
 				n(23446, {	-- Lieutenant Tristia -- BC S1/S2/S3/S4 Vendor
