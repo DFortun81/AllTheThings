@@ -104,7 +104,6 @@ _.Mounts =
 			un(REMOVED_FROM_GAME, i(49044)),	-- Swift Alliance Steed
 			un(REMOVED_FROM_GAME, i(49046)),	-- Swift Horde Wolf
 		})),
-		})),
 		un(REMOVED_FROM_GAME, ach(8398, {	-- Ahead of the Curve: Garrosh Hellscream (10 Player)
 			un(REMOVED_FROM_GAME, i(104246)),	-- Kor'kron War Wolf
 		})),
