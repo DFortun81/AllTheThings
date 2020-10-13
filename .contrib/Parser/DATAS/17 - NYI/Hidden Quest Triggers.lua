@@ -397,6 +397,7 @@ _.HiddenQuestTriggers =
 		q(35401),	-- The Vortex Pinnacle Reward Quest
 		q(35363),	-- Throne of the Tides Reward Quest
 		q(35365),	-- Throne of the Tides Reward Quest (kill final boss, triggered in Timewalking)
+		q(35364),	-- Throne of the Tides Bonus Reward (kill Mindbender Ghur'sha)
 		q(35366),	-- Throne of the Tides Bonus Reward (kill Mindbender Ghur'sha, triggered in Timewalking)
 		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
 		q(35443),	-- Zul'Aman Reward Quest
@@ -2821,17 +2822,17 @@ _.HiddenQuestTriggers =
 		q(58514),	-- Vuk'laz the Earthbreaker bonus roll
 		q(58508),	-- Grand Empress Shek'zara first kill??
 		--q(58770),	-- Grand Empress Shek'zara bonus roll
-		
-		
-		
+
+
+
 		-----------------
 		-- SHADOWLANDS --
 		-----------------
 		-- Pre-launch event
 		q(60490),	-- Triggers after completing "Advancing the Effort" and unlocking Icecrown dailies. Also triggered when starting the new phase at Ironwall Rampart. Maybe it's the zone story daily progression tracker?
-		q(60541),	-- 
+		q(60541),	--
 		q(60511),	-- Icecrown story - Advancing the effort (phase 2?). triggered after completing "Only Shadows Remain"
-		
+
 		-- Exile's Reach
 		q(58418),	-- Triggers shortly after login. Possibly some kind of indicator for the account having done it at least once per faction?
 		q(54927),	-- Triggers after the cinematic. You can't move until this quest triggers
