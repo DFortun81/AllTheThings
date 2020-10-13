@@ -2154,14 +2154,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(13323)),	-- purple mechanostrider
 		un(NEVER_IMPLEMENTED, i(13324)),	-- red and blue mechanostrider
 		un(NEVER_IMPLEMENTED, i(16343)),	-- blood guards mount
-		un(NEVER_IMPLEMENTED, i(18241)),	-- black war steed bridle
-		un(NEVER_IMPLEMENTED, i(18242)),	-- reins of the black war tiger
-		un(NEVER_IMPLEMENTED, i(18243)),	-- black battlestrider
-		un(NEVER_IMPLEMENTED, i(18244)),	-- black war ram
-		un(NEVER_IMPLEMENTED, i(18245)),	-- horn of the black war wolf
-		un(NEVER_IMPLEMENTED, i(18246)),	-- whislter of the black war raptor
-		un(NEVER_IMPLEMENTED, i(18247)),	-- black war kodo
-		un(NEVER_IMPLEMENTED, i(18248)),	-- red skeletal warhorse
 		un(NEVER_IMPLEMENTED, i(18768)),	-- reins of the swift dawnsaber
 		un(NEVER_IMPLEMENTED, i(23193)),	-- naxxramas deathercharger reins
 		un(NEVER_IMPLEMENTED, i(28482)),	-- great elite elekk
