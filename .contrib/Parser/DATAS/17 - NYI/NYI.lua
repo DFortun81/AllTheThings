@@ -3453,6 +3453,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(38568)), 	-- Drakkari Charm Bracelet
 		un(NEVER_IMPLEMENTED, i(134017)), 	-- Don Carlos' Famous Hat (testing version?)
 		un(NEVER_IMPLEMENTED, i(38569)), 	-- Unknown
+		un(NEVER_IMPLEMENTED, i(166851)),	-- Kojo's Master Matching Set (PTR Only)
 		un(NEVER_IMPLEMENTED, i(132132)),	-- Glowing Runstone
 		un(NEVER_IMPLEMENTED, i(157776)),	-- Dire Missive
 		un(NEVER_IMPLEMENTED, i(170484)),	-- dnt torn journal page #14
