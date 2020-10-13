@@ -22,7 +22,11 @@ local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
 local C_ToyBox_GetToyLink = C_ToyBox.GetToyLink;
 local C_Map_GetMapDisplayInfo = C_Map.GetMapDisplayInfo;
 local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
+--<<<<<<< HEAD
 local C_QuestLog_GetAllCompletedQuestIDs = C_QuestLog.GetAllCompletedQuestIDs
+--=======
+local C_Map_GetMapInfo = C_Map.GetMapInfo;
+-->>>>>>> 0875f21fddd2c298b32f8171030d1a637614cf34
 local SetPortraitTexture = _G["SetPortraitTexture"];
 local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
 local EJ_GetCreatureInfo = _G["EJ_GetCreatureInfo"];
@@ -51,23 +55,24 @@ app.RawData = {};
 app.refreshing = {};
 local function OnUpdate(self)
 	for i=#self.__stack,1,-1 do
+		-- print("Running Stack " .. i .. ":" .. self.__stack[i][2])
 		if not self.__stack[i][1](self) then
+			-- print("Removing Stack " .. i .. ":" .. self.__stack[i][2])
 			table.remove(self.__stack, i);
-			if #self.__stack < 1 then
-				self:SetScript("OnUpdate", nil);
-			end
 		end
+	end
+	-- Stop running OnUpdate if nothing in the Stack to process
+	if #self.__stack < 1 then
+		self:SetScript("OnUpdate", nil);
 	end
 end
 local function Push(self, name, method)
 	if not self.__stack then
 		self.__stack = {};
-		self:SetScript("OnUpdate", OnUpdate);
-	elseif #self.__stack < 1 then 
-		self:SetScript("OnUpdate", OnUpdate);
 	end
 	--print("Push->" .. name);
 	table.insert(self.__stack, { method, name });
+	self:SetScript("OnUpdate", OnUpdate);
 end
 local function StartCoroutine(name, method)
 	if method and not app.refreshing[name] then
@@ -265,6 +270,7 @@ end
 		[2480] = 171,	-- Draenor Alchemy [8.0.1]
 		[2479] = 171,	-- Legion Alchemy [8.0.1]
 		[2478] = 171,	-- Kul Tiran Alchemy [8.0.1]
+		[2750] = 171,	-- Shadowlands Alchemy [9.0.1]
 		
 		-- Archaeology Skills
 		[794] = 794,	-- Archaeology [7.3.5]
@@ -279,6 +285,7 @@ end
 		[2472] = 164,	-- Draenor Blacksmithing [8.0.1]
 		[2454] = 164,	-- Legion Blacksmithing [8.0.1]
 		[2437] = 164,	-- Kul Tiran Blacksmithing [8.0.1]
+		[2751] = 164,	-- Shadowlands Blacksmithing [9.0.1]
 		
 		-- Cooking Skills
 		[185] = 185,	-- Cooking [7.3.5]
@@ -296,6 +303,7 @@ end
 		[2543] = 185,	-- Draenor Cooking [8.0.1]
 		[2542] = 185,	-- Legion Cooking [8.0.1]
 		[2541] = 185,	-- Kul Tiran Cooking [8.0.1]
+		[2752] = 185,	-- Shadowlands Cooking [9.0.1]
 		
 		-- Enchanting Skills
 		[333] = 333,	-- Enchanting [7.3.5]
@@ -307,6 +315,7 @@ end
 		[2488] = 333,	-- Draenor Enchanting [8.0.1]
 		[2487] = 333,	-- Legion Enchanting [8.0.1]
 		[2486] = 333,	-- Kul Tiran Enchanting [8.0.1]
+		[2753] = 333,	-- Shadowlands Enchanting [8.0.1]
 		
 		-- Engineering Skills
 		[202] = 202,	-- Engineering [7.3.5]
@@ -318,6 +327,7 @@ end
 		[2501] = 202,	-- Draenor Engineering [8.0.1]
 		[2500] = 202,	-- Legion Engineering [8.0.1]
 		[2499] = 202,	-- Kul Tiran Engineering [8.0.1]
+		[2755] = 202,	-- Shadowlands Engineering [9.0.1]
 		
 		-- First Aid Skills
 		[129] = 129,	-- First Aid [7.3.5] [REMOVED FROM GAME]
@@ -332,6 +342,7 @@ end
 		[2587] = 356,	-- Draenor Fishing [8.0.1]
 		[2586] = 356,	-- Legion Fishing [8.0.1]
 		[2585] = 356,	-- Kul Tiran Fishing [8.0.1]
+		[2754] = 356,	-- Shadowlands Fishing [9.0.1]
 		
 		-- Herbalism Skills
 		[182] = 182,	-- Herbalism [7.3.5]
@@ -343,6 +354,7 @@ end
 		[2551] = 182,	-- Draenor Herbalism [8.0.1]
 		[2550] = 182,	-- Legion Herbalism [8.0.1]
 		[2549] = 182,	-- Kul Tiran Herbalism [8.0.1]
+		[2760] = 182,	-- Shadowlands Herbalism [9.0.1]
 		
 		-- Inscription Skills
 		[773] = 773,	-- Inscription [7.3.5]
@@ -354,6 +366,7 @@ end
 		[2509] = 773,	-- Draenor Inscription [8.0.1]
 		[2508] = 773,	-- Legion Inscription [8.0.1]
 		[2507] = 773,	-- Kul Tiran Inscription [8.0.1]
+		[2756] = 773,	-- Shadowlands Inscription [8.0.1]
 		
 		-- Jewelcrafting Skills
 		[755] = 755,	-- Jewelcrafting [7.3.5]
@@ -365,6 +378,7 @@ end
 		[2519] = 755,	-- Draenor Jewelcrafting [8.0.1]
 		[2518] = 755,	-- Legion Jewelcrafting [8.0.1]
 		[2517] = 755,	-- Kul Tiran Jewelcrafting [8.0.1]
+		[2757] = 755,	-- Shadowlands Jewelcrafting [9.0.1]
 		
 		-- Leatherworking Skills
 		[165] = 165,	-- Leatherworking [7.3.5]
@@ -376,6 +390,7 @@ end
 		[2527] = 165,	-- Draenor Leatherworking [8.0.1]
 		[2526] = 165,	-- Legion Leatherworking [8.0.1]
 		[2525] = 165,	-- Kul Tiran Leatherworking [8.0.1]
+		[2758] = 165,	-- Shadowlands Leatherworking [9.0.1]
 		
 		-- Mining Skills
 		[186] = 186,	-- Mining [7.3.5]
@@ -387,6 +402,7 @@ end
 		[2567] = 186,	-- Draenor Mining [8.0.1]
 		[2566] = 186,	-- Legion Mining [8.0.1]
 		[2565] = 186,	-- Kul Tiran Mining [8.0.1]
+		[2761] = 186,	-- Shadowlands Mining [9.0.1]
 		
 		-- Skinning Skills
 		[393] = 393,	-- Skinning [7.3.5]
@@ -398,6 +414,7 @@ end
 		[2559] = 393,	-- Draenor Skinning [8.0.1]
 		[2558] = 393,	-- Legion Skinning [8.0.1]
 		[2557] = 393,	-- Kul Tiran Skinning [8.0.1]
+		[2762] = 393,	-- Shadowlands Skinning [9.0.1]
 		
 		-- Tailoring Skills
 		[197] = 197,	-- Tailoring [7.3.5]
@@ -409,6 +426,7 @@ end
 		[2535] = 197,	-- Draenor Tailoring [8.0.1]
 		[2534] = 197,	-- Legion Tailoring [8.0.1]
 		[2533] = 197,	-- Kul Tiran Tailoring [8.0.1]
+		[2759] = 197,	-- Shadowlands Tailoring [9.0.1]
 	};
 	app.GetBaseTradeSkillID = function(skillID)
 		return tradeSkillMap[skillID] or skillID;
@@ -835,7 +853,7 @@ local function GetCollectionText(state)
 	return L[(state and (state == 2 and "COLLECTED_APPEARANCE" or "COLLECTED")) or "NOT_COLLECTED"];
 end
 local function GetCompletionIcon(state)
-	return L[state and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"];
+    return L[state and "COMPLETE_ICON" or "INCOMPLETE_ICON"];
 end
 local function GetCompletionText(state)
 	return L[(state == 2 and "COMPLETE_OTHER") or (state == 1 and "COMPLETE") or "INCOMPLETE"];
@@ -1006,7 +1024,9 @@ local function GetDisplayID(data)
 	end
 end
 local function GetUnobtainableTexture(group)
-	local index = L["UNOBTAINABLE_ITEM_REASONS"][group.u or 1][1];
+	-- old reasons are set to 0, so use 1 instead
+	-- if unobtainable stuff changes again, this logic may need to adjust
+	local index = math.max(L["UNOBTAINABLE_ITEM_REASONS"][group.u or 1][1],1);
 	if group.itemID or group.spellID then
 		if not group.b or group.b == 2 or group.b == 3 then
 			index = 3;
@@ -1114,6 +1134,50 @@ local function GetRelativeValue(group, field)
 		if group[field] then return group[field]; end
 		if group.parent then return GetRelativeValue(group.parent, field); end
 	end
+end
+-- Filters a specs table to only those which the current Character class can choose
+local function FilterSpecs(specs)
+	if specs then
+		if #specs > 0 then
+			local specCount = #specs;
+			for i=specCount,1,-1 do
+				local specID = specs[i];
+				local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
+				if class ~= app.Class then
+					table.remove(specs, i);
+				end
+			end
+			table.sort(specs);
+		end
+	end
+end
+-- Returns proper, class-filtered specs for a given itemID
+local function GetFixedItemSpecInfo(itemID)
+	local specs = GetItemSpecInfo(itemID);
+	if not specs then
+		specs = {}
+	end
+	if #specs < 1 then
+		-- Starting with Legion items, the API seems to return no spec information when the item is in fact lootable by ANY spec
+		local _, _, _, _, _, _, _, _, itemEquipLoc, _, _, itemClassID, itemSubClassID, _, expacID, _, _ = GetItemInfo(itemID);
+		-- only Armor items
+		if itemClassID and itemClassID == 4 then
+			-- unable to distinguish between Trinkets usable by all specs (Font of Power) and Role-Specific trinkets which do not apply to any Role of the current Character
+			if (expacID == 6 or expacID == 7) and (itemEquipLoc == "INVTYPE_NECK" or itemEquipLoc == "INVTYPE_FINGER") then
+				local numSpecializations = GetNumSpecializations();
+				if numSpecializations and numSpecializations > 0 then
+					for i=1,numSpecializations,1 do
+						local specID = select(1, GetSpecializationInfo(i));
+						tinsert(specs, specID);
+					end
+				end
+			end
+		end
+		table.sort(specs);
+	else
+		FilterSpecs(specs);
+	end
+	return specs;
 end
 
 -- Quest Completion Lib
@@ -1227,11 +1291,21 @@ end
 local questRetries = {};
 local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
 local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
+	if not id then return nil; end
 	QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
 	QuestHarvester:SetHyperlink("quest:"..id);
+--<<<<<<< HEAD
 	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetTitleForQuestID(id);
+--=======
+	-- QuestHarvester:SetHyperlink("\124cffaaaaaa\124Hquest:".. id.."\124h[QUEST:".. id .. "]\124h\124r");
+--	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetQuestInfo(id);
+-->>>>>>> 0875f21fddd2c298b32f8171030d1a637614cf34
 	QuestHarvester:Hide()
 	if title and title ~= RETRIEVING_DATA then
+		-- working Quest Link Example from Wowhead
+		-- /script DEFAULT_CHAT_FRAME:AddMessage("\124cffffff00\124Hquest:48615:110\124h[War Never Changes]\124h\124r");
+		-- /script DEFAULT_CHAT_FRAME:AddMessage("\124cffff0000\124Hquest:48615\124h[VisibleText]\124h\124r");
+		-- QuestHarvester:SetHyperlink("\124cffffff00\124Hquest:".. id .."\124h[".. title .. "]\124h\124r");
 		rawset(questRetries, id, nil);
 		rawset(t, id, title);
 		return title
@@ -1515,6 +1589,18 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 			ExpandGroupsRecursively(subgroup, expanded, manual);
 		end
 	end
+end
+-- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
+local function HasExpandedSubgroup(group)
+	if group and group.g then
+		for i, subgroup in ipairs(group.g) do
+			-- dont need recursion since a group has to be expanded for a subgroup to be visible within it
+			if subgroup.expanded then
+				return true;
+			end			
+		end
+	end
+	return false;
 end
 local function ReapplyExpand(g, g2)
 	for j,p in ipairs(g2) do
@@ -1875,6 +1961,7 @@ ResolveSymbolicLink = function(o)
 		local searchResults, finalized = {}, {};
 		for j,sym in ipairs(o.sym) do
 			local cmd = sym[1];
+			-- print("Resolving Symbolic Link using '" .. tostring(cmd) .. "' with [" .. tostring(sym[2]) .. "] & [" .. tostring(sym[3]) .. "]")
 			if cmd == "select" then
 				-- Instruction to search the full database for something.
 				local cache = app.SearchForField(sym[2], sym[3]);
@@ -2593,27 +2680,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
 				if app.Settings:GetTooltipSetting("SpecializationRequirements") then
-					local specs = GetItemSpecInfo(itemID);
-					if specs then
-						if #specs > 0 then
-							table.sort(specs);
-							local spec_label = "";
-							local atleastone = false;
-							for key, specID in ipairs(specs) do
-								local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
-								if class == app.Class then
-									spec_label = spec_label .. "  |T" .. icon .. ":0|t " .. name;
-									atleastone = true;
-								end
-							end
-							if atleastone then
-								tinsert(info, { right = spec_label });
-							else
-								tinsert(info, { right = "Not available in Personal Loot." });
-							end
-						else
-							tinsert(info, { right = "Not available in Personal Loot." });
+					local specs = GetFixedItemSpecInfo(itemID);
+					-- specs is already filtered/sorted to only current class
+					if #specs > 0 then
+						local spec_label = "";
+						for key, specID in ipairs(specs) do
+							local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
+							spec_label = spec_label .. "  |T" .. icon .. ":0|t " .. name;
 						end
+						tinsert(info, { right = spec_label });
+					else
+						tinsert(info, { right = "Not available in Personal Loot." });
 					end
 				end
 				
@@ -2844,7 +2921,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		
 		if group.isLimited then
-			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = true, color = "ff66ccff" });
+			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
 		end
 		
 		if group.g and #group.g > 0 then
@@ -2872,10 +2949,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							right = item.right;
 							local specs = item.group.specs;
 							if specs and #specs > 0 then
-								table.sort(specs);
 								for i,spec in ipairs(specs) do
 									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-									if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
+									right = "|T" .. icon .. ":0|t " .. right;
 								end
 							end
 							tinsert(info, { left = item.prefix .. left, right = right });
@@ -2891,10 +2967,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							right = item.right;
 							local specs = item.group.specs;
 							if specs and #specs > 0 then
-								table.sort(specs);
 								for i,spec in ipairs(specs) do
 									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-									if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
+									right = "|T" .. icon .. ":0|t " .. right;
 								end
 							end
 							tinsert(info, { left = item.prefix .. left, right = right });
@@ -3448,6 +3523,289 @@ local function AddTomTomWaypoint(group, auto)
 		end
 	end
 end
+-- Populates/replaces data within a questObject for displaying in a row
+local function PopulateQuestObject(questObject)
+	-- cannot do anything on a missing object or questID
+	if not questObject or not questObject.questID then
+		return nil;
+	end
+		
+	local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
+	
+	-- Check for a Task-specific icon
+	local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = GetQuestTagInfo(questObject.questID);
+	if worldQuestType then
+		if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
+			questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
+		elseif worldQuestType == LE_QUEST_TAG_TYPE_PET_BATTLE then
+			questObject.icon = "Interface\\Icons\\PetJournalPortrait";
+		elseif worldQuestType == LE_QUEST_TAG_TYPE_PROFESSION then
+			questObject.icon = "Interface\\Icons\\Trade_BlackSmithing";
+		elseif worldQuestType == LE_QUEST_TAG_TYPE_DUNGEON or tagID == 137 then
+			-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
+			-- TODO: Add the relevent dungeon icon. (DONE! IN REWARDS!)
+		elseif worldQuestType == LE_QUEST_TAG_TYPE_RAID then
+			-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
+			-- TODO: Add the relevent dungeon icon.
+		elseif worldQuestType == LE_QUEST_TAG_TYPE_INVASION or worldQuestType == LE_QUEST_TAG_TYPE_INVASION_WRAPPER then
+			questObject.icon = "Interface\\Icons\\achievements_zone_brokenshore";
+		--elseif worldQuestType == LE_QUEST_TAG_TYPE_TAG then
+			-- completely useless
+			--questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
+		--elseif worldQuestType == LE_QUEST_TAG_TYPE_NORMAL then
+		--	questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
+		end
+	end
+	
+	-- Update Quest info from cache
+	cache = fieldCache["questID"][questObject.questID];
+	if cache then
+		for _,data in ipairs(cache) do
+			for key,value in pairs(data) do
+				if not (key == "g" or key == "parent") then
+					questObject[key] = value;
+				end
+			end
+			if data.isVignette then questObject.isVignette = true; end
+			if data.g then
+				for _,entry in ipairs(data.g) do
+					local resolved = ResolveSymbolicLink(entry);
+					if resolved then
+						entry = CreateObject(entry);
+						if entry.g then
+							MergeObjects(entry.g, resolved);
+						else
+							entry.g = resolved;
+						end
+					end
+					tinsert(questObject.g, entry);
+				end
+			end
+		end
+	end
+	
+	-- Check for provider info
+	if questObject.qgs and #questObject.qgs == 1 then
+		for j,qg in ipairs(questObject.qgs) do
+			cache = fieldCache["creatureID"][qg];
+			if cache then
+				for _,data in ipairs(cache) do
+					if GetRelativeField(group, "npcID", -16) then	-- Rares only!
+						for key,value in pairs(data) do
+							if not (key == "g" or key == "parent") then
+								questObject[key] = value;
+							end
+						end
+						if data.g then
+							for _,entry in ipairs(data.g) do
+								local resolved = ResolveSymbolicLink(entry);
+								if resolved then
+									entry = CreateObject(entry);
+									if entry.g then
+										MergeObjects(entry.g, resolved);
+									else
+										entry.g = resolved;
+									end
+								end
+								MergeObject(questObject.g, entry);
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+	
+	-- Get reward info
+	local numQuestRewards = GetNumQuestLogRewards(questObject.questID);
+	-- numQuestRewards will often be 0 for fresh questID API calls...
+	-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
+	local _ = GetQuestLogRewardInfo(1, questObject.questID);
+	for j=1,numQuestRewards,1 do
+		local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo (j, questObject.questID);
+		if itemID then
+			if showCurrencies or (itemID ~= 116415 and itemID ~= 163036) then
+				QuestHarvester.AllTheThingsProcessing = true;
+				QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
+				QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
+				local link = select(2, QuestHarvester:GetItem());
+				QuestHarvester.AllTheThingsProcessing = false;
+				QuestHarvester:Hide();
+				if link then
+					--print("TODO: Parse Link", link);
+					cache = SearchForLink(link);
+					if cache and #cache > 0 then
+						local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
+						for _,item in ipairs(cache) do
+							item = CreateObject(item);
+							item.link = link;
+							if modID then item.modID = tonumber(modID); end
+							MergeObject(questObject.g, item);
+						end
+					end
+				else
+					-- Take the best guess at what this is... No clue.
+					local modID = tagID == 137 and ((ilvl >= 370 and 23) or (ilvl >= 355 and 2)) or 1;
+					cache = fieldCache["itemID"][itemID];
+					local item = { ["itemID"] = itemID, ["expanded"] = false, };
+					if cache then
+						local ACKCHUALLY;
+						for _,data in ipairs(cache) do
+							if data.f then
+								item.f = data.f;
+							end
+							if data.s then
+								item.s = data.s;
+								if data.modID == modID then
+									ACKCHUALLY = data.s;
+									item.modID = modID;
+									if tagID == 137 then
+										local parent = data.parent;
+										while parent do
+											if parent.instanceID then
+												questObject.icon = parent.icon;
+												break;
+											end
+											parent = parent.parent;
+										end
+									end
+								end
+							end
+							if data.g and #data.g > 0 then
+								if not item.g then
+									item.g = {};
+									item.progress = 0;
+									item.total = 0;
+								end
+								MergeObjects(item.g, data.g);
+							end
+						end
+						if ACKCHUALLY then
+							item.s = ACKCHUALLY;
+						end
+					end
+					MergeObject(questObject.g, item);
+				end
+			end
+		else
+			questObject.missingData = true;
+		end
+	end
+	
+	-- Get time remaining info (only works for World Quests)
+	local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questObject.questID);
+	if timeRemaining and timeRemaining > 0 then
+		questObject.timeRemaining = timeRemaining;
+		local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeRemaining * 60));
+		if timeRemaining < 30 then
+			description = "|cFFFF0000" .. description .. "|r";
+		elseif timeRemaining < 60 then
+			description = "|cFFFFFF00" .. description .. "|r";
+		end
+		if not questObject.description then
+			questObject.description = description;
+		else
+			questObject.description = questObject.description .. "\n\n" .. description;
+		end
+	end
+	
+	-- Add info for currency rewards as containers for their respective collectibles
+	if showCurrencies then
+		local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
+		-- numCurrencies will often be 0 for fresh questID API calls...
+		-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
+		local _ = GetQuestLogRewardCurrencyInfo(1, questObject.questID);
+		for j=1,numCurrencies,1 do
+			local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
+			if currencyID then
+				local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
+				cache = fieldCache["currencyID"][currencyID];
+				if cache then
+					for _,data in ipairs(cache) do
+						if data.f then
+							item.f = data.f;
+						end
+						if data.g and #data.g > 0 then
+							if not item.g then
+								item.g = {};
+								item.progress = 0;
+								item.total = 0;
+								item.OnUpdate = OnUpdateForItem;
+							end
+							MergeObjects(item.g, data.g);
+						end
+					end
+					if not item.g then
+						item.g = {};
+						item.progress = 0;
+						item.total = 0;
+						item.OnUpdate = OnUpdateForItem;
+					end
+					MergeObject(questObject.g, item);
+				end
+			else
+				questObject.missingData = true;
+			end
+		end
+	end
+	
+	-- Resolve all symbolic links
+	if questObject.g and #questObject.g > 0 then
+		for j,item in ipairs(questObject.g) do
+			local resolved = ResolveSymbolicLink(item);
+			if resolved then
+				if not item.g then
+					item.g = resolved;
+				else
+					MergeObjects(item.g, resolved);
+				end
+			end
+		end
+	end
+	
+	-- Since this is not a metatable yet, create a raw isRepeatable value for use prior to that
+	questObject.isRepeatable = questObject.isDaily or questObject.isWeekly or questObject.isMonthly or questObject.isYearly;
+	
+	-- Query quest name if not existing
+	-- This messes up World Bosses somehow, and not sorting on quest names, so don't need to pull it right here
+	-- if not questObject.text then
+		-- local harvestedName = QuestTitleFromID[questObject.questID];
+		-- if harvestedName and harvestedName ~= RETRIEVING_DATA then
+			-- -- questObject.text = harvestedName;
+		-- end
+	-- end
+end
+-- Returns a questObject containing a lot of Quest information for displaying in a row
+local function GetPopulatedQuestObject(questID)
+	local questObject = {questID=questID,g={},progress=0,total=0};	
+	PopulateQuestObject(questObject);	
+	return questObject;
+end
+-- Returns a mapObject containing basic map information
+local function GetPopulatedMapObject(mapID)
+	local mapObject = { mapID=mapID,g={},progress=0,total=0};
+	cache = fieldCache["mapID"][mapID];
+	if cache then
+		for _,data in ipairs(cache) do
+			if data.mapID and data.icon then
+				mapObject.text = data.text;
+				mapObject.icon = data.icon;
+				mapObject.lvl = data.lvl;
+				mapObject.description = data.description;
+				break;
+			end
+		end
+	end
+	
+	if not mapObject.text then
+		local mapInfo = C_Map_GetMapInfo(mapID);
+		if mapInfo then
+			mapObject.text = mapInfo.name;
+		end
+	end
+	
+	return mapObject;
+end
 local function ExportDataRecursively(group, indent)
 	if group.itemID then return ""; end
 	if group.g then
@@ -3494,6 +3852,7 @@ local function ExportData(group)
 	end
 end
 local function RefreshSavesCoroutine()
+	-- TODO: this coroutine ran "forever" (5+ minutes) on a vulpera when I logged in, may need to test further...
 	local waitTimer = 30;
 	while waitTimer > 0 do
 		coroutine.yield();
@@ -3770,7 +4129,7 @@ end
 app.GetCurrentMapID = function()
 	local uiMapID = C_Map_GetBestMapForUnit("player");
 	if uiMapID then
-		local map = C_Map.GetMapInfo(uiMapID);
+		local map = C_Map_GetMapInfo(uiMapID);
 		if map and (map.mapType == 0 or map.mapType == 1 or map.mapType == 2) then
 			-- Onyxia's Lair fix
 			local text_to_mapID = app.L["ZONE_TEXT_TO_MAP_ID"];
@@ -3785,7 +4144,7 @@ app.GetCurrentMapID = function()
 end
 app.GetMapName = function(mapID)
 	if mapID and mapID > 0 then
-		local info = C_Map.GetMapInfo(mapID);
+		local info = C_Map_GetMapInfo(mapID);
 		return (info and info.name) or ("Map ID #" .. mapID);
 	else
 		return "Map ID #???";
@@ -4146,6 +4505,10 @@ end
 		[55348] = 170061,	-- Rustbolt // Supplies from the Rustbolt Resistance
 		[58096] = 174483,	-- Rajani // Supplies from the Rajani
 		[58097] = 174484,	-- Uldum Accord // Supplies from the Uldum Accord
+		[61095] = 180646,	-- Undying Army // Supplies from The Undying Army
+		[61098] = 180649,	-- Wild Hunt // Supplies from The Wild Hunt
+		[61100] = 180648,	-- Court of Harvesters // Supplies from the Court of Harvesters
+		[61097] = 180647,	-- The Ascended // Supplies from The Ascended
 	};
 	hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
 		-- Let's make sure the user isn't in combat and if they are do they have In Combat turned on.  Finally check to see if Tootltips are turned on.
@@ -4445,17 +4808,28 @@ app.BaseAzeriteEssence = {
 		if key == "key" then
 			return "azeriteEssenceID";
 		elseif key == "collectible" then
-			return true;
+			return app.CollectibleAzeriteEssences;
 		elseif key == "collected" then
+			if (GetTempDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID) or 0) >= t.rank then
+				return 1;
+			end
+			
+			local accountRank = GetDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID) or 0;
 			local info = t.info;
 			if info and info.unlocked then
 				if t.rank and info.rank then
 					if info.rank >= t.rank then
+						SetTempDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID, info.rank);
+						if info.rank > accountRank then SetDataSubMember("AzeriteEssenceRanks", t.azeriteEssenceID, info.rank); end
 						return 1;
 					end
 				else
 					return 1;
 				end
+			end
+			
+			if app.AccountWideAzeriteEssences and accountRank >= t.rank then
+				return 2;
 			end
 		elseif key == "text" then
 			return t.link;
@@ -5307,7 +5681,7 @@ app.BaseGearSource = {
 		elseif key == "icon" then
 			return select(5, GetItemInfoInstant(t.itemID));
 		elseif key == "specs" then
-			return GetItemSpecInfo(t.itemID);
+			return GetFixedItemSpecInfo(t.itemID);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5586,7 +5960,7 @@ local function GetHolidayCache()
 		cache = {};
 		SetTempDataMember("HOLIDAY_CACHE", cache);
 		SetDataMember("HOLIDAY_CACHE", cache);
-		local date = C_Calendar.GetDate();
+		local date = C_DateAndTime.GetCurrentCalendarTime();
 		if date.month > 8 then
 			C_Calendar.SetAbsMonth(date.month - 8, date.year);
 		else
@@ -5770,6 +6144,13 @@ end
 (function()
 local itemFields = {
 	["key"] = function(t) return "itemID"; end,
+	-- ["achievementID"] = function(t)
+		-- local achievementID = app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID");
+		-- if achievementID then
+			-- rawset(t, "achievementID", achievementID);
+			-- return achievementID;
+		-- end
+	-- end,
 	["b"] = function(t)
 		return 2;
 	end,
@@ -5784,6 +6165,7 @@ local itemFields = {
 			return 1;
 		end
 		cache = rawget(t, "factionID");
+		-- if the item is collectible because it's tied to a factionID
 		if cache then
 			if t.repeatable then
 				-- This is used by reputation tokens.
@@ -5874,7 +6256,7 @@ local itemFields = {
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
 	["specs"] = function(t)
-		return GetItemSpecInfo(t.itemID);
+		return GetFixedItemSpecInfo(t.itemID);
 	end,
 	["tsm"] = function(t)
 		local itemLink = t.itemID;
@@ -6417,6 +6799,8 @@ app.BaseQuest = {
 			return QuestTitleFromID[questID];
 		elseif key == "link" then
 			return "quest:" .. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID);
+			-- this generates a link but it doesn't actually allow it to post in a chat channel...
+			-- return "\124cffffff00\124Hquest:".. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID) ..":".. (t.lvl or "0") .."\124h[".. t.questName .. "]\124h\124r";
 		elseif key == "icon" or key == "preview" then
 			if t.providers then
 				for k,v in pairs(t.providers) do
@@ -6433,6 +6817,9 @@ app.BaseQuest = {
 				end
 			end
 			if key == "preview" then
+				if t.repeatable then
+                    return "Interface\\Icons\\Achievement_Quests_Completed_Daily_08";
+                end
 				return "Interface\\Icons\\Achievement_Quests_Completed_08";
 			elseif t.isDaily or t.isWeekly then
 				return "Interface\\GossipFrame\\DailyQuestIcon";
@@ -6444,7 +6831,7 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return app.CollectibleQuests and ((not t.isBreadcrumb and not t.DisablePartySync) or app.AccountWideQuests) and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")) and ((not t.isWorldQuest and not t.repeatable) or app.Settings:GetTooltipSetting("RepeatableFirstTime"));
+			return app.CollectibleQuests and ((not t.isBreadcrumb and not t.DisablePartySync) or app.AccountWideQuests) and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
 		elseif key == "saved" or key == "collected" then
@@ -6588,7 +6975,7 @@ app.BaseRecipe = {
 			return t.itemID and GetItemInfo(t.itemID);
 		elseif key == "specs" then
 			if t.itemID then
-				return GetItemSpecInfo(t.itemID);
+				return GetFixedItemSpecInfo(t.itemID);
 			end
 		elseif key == "tsm" then
 			if t.itemID then
@@ -6690,7 +7077,7 @@ app.BaseSpell = {
 			return t.itemID and GetItemInfo(t.itemID);
 		elseif key == "specs" then
 			if t.itemID then
-				return GetItemSpecInfo(t.itemID);
+				return GetFixedItemSpecInfo(t.itemID);
 			end
 		elseif key == "tsm" then
 			if t.itemID then
@@ -6807,7 +7194,7 @@ end)();
 		"Interface\\Icons\\Achievement_boss_hellfire_archimonde",	-- WoD
 		"Interface\\Icons\\achievements_zone_brokenshore",			-- Legion
 		"Interface\\Icons\\achievement_cloudnine",					-- Battle For Azeroth
-		"Interface\\Icons\\Spell_shadow_twilight",					-- Shadowlands (Placeholder)
+		"Interface\\Icons\\inv_torghast",							-- Shadowlands
 	};
 	local tierLevel = {
 		1, 		-- Classic
@@ -6818,7 +7205,7 @@ end)();
 		90,		-- WoD
 		98,		-- Legion
 		110,	-- Battle For Azeroth
-		120,	-- Shadowlands	(Placeholder Level)
+		50,		-- Shadowlands
 	};
 	local tierDescription = {
 		"Four years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.", 					-- Classic
@@ -7594,7 +7981,7 @@ UpdateGroup = function(parent, group)
 				elseif app.ShowIncompleteThings(group) then
 					group.visible = not group.saved;
 				else
-					group.visible = false;
+					group.visible = (group.visible or 0) == 1;
 				end
 			else
 				-- Hide this group. We aren't filtering for it.
@@ -7618,6 +8005,10 @@ UpdateGroup = function(parent, group)
 					-- If this group is trackable, then we should show it.
 					if app.ShowIncompleteThings(group) then
 						group.visible = not group.saved;
+						if group.visible then
+							-- Ensure that the parent does not hide a visible, incomplete thing (switched from 1 to true in group filtering so as to not overwrite based on the group filtering)
+							parent.visible = 1;
+						end
 					else
 						-- Hide this group. We aren't filtering for it.
 						group.visible = false;
@@ -8688,6 +9079,7 @@ local function SetRowData(self, row, data)
 			x = 4;
 		end
 		local summary = GetProgressTextForRow(data);
+		local iconAdjust = (summary and string.find(summary, "|T") and -1) or 0;
 		if not summary then
 			if data.g and not data.expanded and #data.g > 0 then
 				summary = "+++";
@@ -8697,13 +9089,17 @@ local function SetRowData(self, row, data)
 		end
 		local specs = data.specs;
 		if specs and #specs > 0 then
-			table.sort(specs);
-			for i,spec in ipairs(specs) do
+			-- iterate backwards since the icons are appended from right to left, this way it matches the tooltip sort of spec icons
+            for i=#specs,1,-1 do
+                local spec = specs[i]
 				local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-				if class == app.Class then summary = "|T" .. icon .. ":0|t " .. summary; end
+				summary = "|T" .. icon .. ":0|t " .. summary;
+				iconAdjust = iconAdjust - 1;
 			end
 		end
 		row.Summary:SetText(summary);
+		-- for whatever reason, the Client does not properly align the Points when textures are used within the 'text' of the object, with each texture added causing a 1px offset on alignment
+        row.Summary:SetPoint("RIGHT", iconAdjust, 0);
 		row.Summary:Show();
 		row.Label:SetPoint("LEFT", leftmost, relative, x, 0);
 		if row.Summary and row.Summary:IsShown() then
@@ -9016,11 +9412,8 @@ local function RowOnClick(self, button)
 				
 				-- If this reference is anything else, expand the groups.
 				if reference.g then
-					if self.index < 1 and #reference.g > 0 then
-						ExpandGroupsRecursively(reference, not reference.g[1].expanded, true);
-					else
-						ExpandGroupsRecursively(reference, not reference.expanded, true);
-					end
+					-- always expand if collapsed or if clicked the header and all immediate subgroups are collapsed, otherwise collapse
+					ExpandGroupsRecursively(reference, not reference.expanded or (self.index < 1 and not HasExpandedSubgroup(reference)), true);
 					self:GetParent():GetParent():Update();
 					return true;
 				end
@@ -9093,8 +9486,14 @@ local function RowOnEnter(self)
 		-- Miscellaneous fields
 		if GameTooltip:NumLines() < 1 then GameTooltip:AddLine(self.Label:GetText()); end
 		if app.Settings:GetTooltipSetting("Progress") then
-			if reference.trackable and reference.total and reference.total >= 2 then
-				GameTooltip:AddDoubleLine("Tracking Progress", GetCompletionText(reference.saved));
+			if reference.total and reference.total >= 2 then
+				-- if collecting this reference type, then show Collection State
+				if reference.collectible then
+					GameTooltip:AddDoubleLine("Collection Progress", GetCollectionText(reference.collected or reference.saved));
+				-- if completion/tracking is available, show Completion State
+				elseif reference.trackable then
+					GameTooltip:AddDoubleLine("Tracking Progress", GetCompletionText(reference.saved));
+				end
 			end
 		end
 		
@@ -9304,7 +9703,11 @@ local function RowOnEnter(self)
 					if i > 1 then str = str .. ", "; end
 					str = str .. C_CreatureInfo.GetRaceInfo(race).raceName;
 				end
-				GameTooltip:AddDoubleLine("Races", str);
+				if #reference.races > 4 then
+					GameTooltip:AddLine("Races " .. str, nil, nil, nil, 1);
+				else				
+					GameTooltip:AddDoubleLine("Races", str);
+				end
 			elseif reference.r and reference.r > 0 then
 				GameTooltip:AddDoubleLine("Races", (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
 			end
@@ -9395,10 +9798,13 @@ local function RowOnEnter(self)
 									specHits[spec] = (specHits[spec] or 0) + 1;
 								end
 							end
-						end
+						end						
+												
+						local totalItems = #itemList or 1; -- if somehow encounter drops 0 items but an item still references the encounter
+						local legacyLoot = C_Loot.IsLegacyLootModeEnabled();
 						
-						local totalItems = #itemList;
-						local currentSpecID = select(1, GetSpecializationInfo(GetSpecialization()));
+						-- Legacy Loot is simply 1 / total items chance since spec has no relevance to drops, i.e. this one item / total items in drop table
+						GameTooltip:AddDoubleLine("Loot Table Chance", GetNumberWithZeros(100 / totalItems, 2) .. "%");
 						
 						local specs = reference.specs;
 						if specs and #specs > 0 then
@@ -9425,34 +9831,9 @@ local function RowOnEnter(self)
 							if bestSpecID then
 								local chance = (1 / specHits[bestSpecID]) * 100;
 								local id, name, description, icon = GetSpecializationInfoByID(bestSpecID);
-								GameTooltip:AddDoubleLine(C_Loot.IsLegacyLootModeEnabled() and "Bonus Roll" or "Personal Loot",  GetNumberWithZeros(chance, 2) .. "% (" .. GetNumberWithZeros(chance / 5, 2) .. "%) |T" .. icon .. ":0|t " .. name);
+								GameTooltip:AddDoubleLine(legacyLoot and "Best Bonus Roll Chance" or "Best Personal Loot Chance",  GetNumberWithZeros(chance, 2) .. "% (" .. GetNumberWithZeros(chance / 5, 2) .. "%) |T" .. icon .. ":0|t " .. name);
 							end
-							if C_Loot.IsLegacyLootModeEnabled() then
-								local most, bestLegacySpecID = 0, -1;
-								for spec,_ in ipairs(mySpecs) do
-									local specHit = specHits[spec] or 0;
-									if not matchingSpecs[spec] then
-										if specHit > most then
-											most = specHit;
-											bestLegacySpecID = spec;
-										end
-									end
-								end
-								if bestLegacySpecID < 0 then
-									bestLegacySpecID = select(1, GetSpecializationInfo(1));
-								end
-								
-								local legacyMatchChance = ((1 / specHits[bestSpecID]) * 100) / 5;
-								local legacyNoMatchChance = ((1 / (totalItems - specHits[bestLegacySpecID])) * 100) * (4/5);
-								if legacyMatchChance > legacyNoMatchChance then
-									local id, name, description, icon = GetSpecializationInfoByID(bestSpecID);
-									GameTooltip:AddDoubleLine("Legacy Loot", GetNumberWithZeros(legacyMatchChance, 2) .. "% |T" .. icon .. ":0|t " .. name);
-								else
-									local id, name, description, icon = GetSpecializationInfoByID(bestLegacySpecID);
-									GameTooltip:AddDoubleLine("Legacy Loot", GetNumberWithZeros(legacyNoMatchChance, 2) .. "% |T" .. icon .. ":0|t " .. name);
-								end
-							end
-						elseif C_Loot.IsLegacyLootModeEnabled() then
+						elseif legacyLoot then
 							-- Not available at all, best loot spec is the one with the most number of items in it.
 							local most, bestSpecID = 0;
 							for i=1,numSpecializations,1 do
@@ -9465,7 +9846,7 @@ local function RowOnEnter(self)
 							end
 							if bestSpecID then
 								local id, name, description, icon = GetSpecializationInfo(bestSpecID);
-								GameTooltip:AddDoubleLine("Legacy Loot", GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
+								GameTooltip:AddDoubleLine("Bonus Roll", GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
 							end
 						end
 					end
@@ -9631,7 +10012,7 @@ CreateRow = function(self)
 	
 	-- Summary is the completion summary information. (percentage text)
 	row.Summary = row:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-	row.Summary:SetJustifyH("CENTER");
+	row.Summary:SetJustifyH("RIGHT");
 	row.Summary:SetPoint("BOTTOM");
 	row.Summary:SetPoint("RIGHT");
 	row.Summary:SetPoint("TOP");
@@ -10327,6 +10708,9 @@ function app:GetDataCache()
 		table.insert(g, app.CreateUnit("player", {
 			["collected"] = 1,
 			["description"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.",
+			["races"] = { app.RaceID },
+			["c"] = { app.ClassIndex },
+			["factionID"] = app.FactionID,
 		}));
 		
 		-- The Main Window's Data
@@ -10719,7 +11103,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 				
 				-- Go through all of the possible maps
 				for mapID=1,3000,1 do
-					local mapInfo = C_Map.GetMapInfo(mapID);
+					local mapInfo = C_Map_GetMapInfo(mapID);
 					if mapInfo then
 						local results = SearchForField("mapID", mapID);
 						local mapObject = { ["mapID"] = mapID, ["collectible"] = true };
@@ -10732,7 +11116,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 						-- Recurse up the map chain and build the full hierarchy
 						local parentMapID = mapInfo.parentMapID;
 						while parentMapID do
-							mapInfo = C_Map.GetMapInfo(parentMapID);
+							mapInfo = C_Map_GetMapInfo(parentMapID);
 							if mapInfo then
 								mapObject = { ["mapID"] = parentMapID, ["collectible"] = true, ["g"] = { mapObject } };
 								parentMapID = mapInfo.parentMapID;
@@ -11081,11 +11465,11 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- If we don't have any map data on this area, report it to the chat window.
 			if not results or not results.g or #results.g < 1 then
 				local mapID = self.mapID;
-				local mapInfo = C_Map.GetMapInfo(mapID);
+				local mapInfo = C_Map_GetMapInfo(mapID);
 				local mapPath = mapInfo.name or ("Map ID #" .. mapID);
 				mapID = mapInfo.parentMapID;
 				while mapID do
-					mapInfo = C_Map.GetMapInfo(mapID);
+					mapInfo = C_Map_GetMapInfo(mapID);
 					if mapInfo then
 						mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " -> " .. mapPath;
 						mapID = mapInfo.parentMapID;
@@ -12337,8 +12721,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				for i = 1,#recipeIDs do
-					local spellRecipeInfo = {};
-					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
+					local spellRecipeInfo = C_TradeSkillUI.GetRecipeInfo(recipeIDs[i]);
+					if spellRecipeInfo then
 						currentCategoryID = spellRecipeInfo.categoryID;
 						if not categories[currentCategoryID] then
 							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
@@ -12628,7 +13012,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 			self.data = {
 				['text'] = "World Quests",
 				['icon'] = "Interface\\Icons\\INV_Misc_Map08.blp", 
-				["description"] = "These are World Quests that are currently available somewhere. Go get 'em!",
+				["description"] = "These are World Quests and other time-limited Things that are currently available somewhere. Go get 'em!",
 				['visible'] = true, 
 				['expanded'] = true,
 				["indent"] = 0,
@@ -12637,10 +13021,10 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					{
 						['text'] = "Update World Quests Now",
 						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!",
+						['description'] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!\n\nAlt + Click to include currently-available Things which may not be time-limited",
 						['hash'] = "funUpdateWorldQuests",
 						['OnClick'] = function(data, button)
-							Push(self, "Rebuild", self.Rebuild);
+							Push(self, "WorldQuests-Rebuild", self.Rebuild);
 							return true;
 						end,
 						['OnUpdate'] = function(data) 
@@ -12704,6 +13088,12 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					},
 				},
 				{ 13 },		-- Eastern Kingdoms
+				-- Additional 'Continent' Maps for the Storyline Quests feature
+				{ 101 }, 	-- Outland
+				{ 113 },	-- Northrend
+				{ 572 },	-- Draenor
+				-- { 905 },	-- Argus, already has individual zones above
+				{ 948 },	-- The Maelstrom	
 			};
 			local OnUpdateForItem = function(self)
 				for i,o in ipairs(self.g) do
@@ -12723,29 +13113,23 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				wipe(self.data.g);
 				wipe(self.rawData);
 				tinsert(self.data.g, temp);
-				self:Rebuild();
+				self:Update();
 			end
 			self.Rebuild = function(self, no)
 				-- Rebuild all World Quest data
 				local retry = false;
 				local temp = {};
-				local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
+				-- options when refreshing the list
+				local includeAll = app.Settings:Get("DebugMode");
+				local includeQuests = app.Settings:Get("Thing:Quests") or includeAll;
+				local includePermanent = IsAltKeyDown() or includeAll;
+				local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies") or includeAll;
 				
 				-- Acquire all of the emissary quests
 				for _,pair in ipairs(emissaryMapIDs) do
 					local mapID = pair[1];
-					local mapObject = { mapID=mapID,g={},progress=0,total=0};
-					local cache = fieldCache["mapID"][mapID];
-					if cache then
-						for _,data in ipairs(cache) do
-							if data.mapID and data.icon then
-								mapObject.icon = data.icon;
-								mapObject.lvl = data.lvl;
-								mapObject.description = data.description;
-								break;
-							end
-						end
-					end
+					-- print("WQ.EmissaryMapIDs." .. tostring(mapID))
+					local mapObject = GetPopulatedMapObject(mapID);
 					local bounties = GetQuestBountyInfoForMapID(pair[2]);
 					if bounties and #bounties > 0 then
 						for i,bounty in ipairs(bounties) do
@@ -12778,25 +13162,22 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						end
 					end
 					if #mapObject.g > 0 then
+						table.sort(mapObject.g, self.Sort);
+						-- Sort the map groups as well
+						for i,mapGrp in ipairs(mapObject.g) do
+							if (mapGrp.mapID and mapGrp.g and #mapGrp.g > 1) then
+								table.sort(mapGrp.g, self.Sort);
+							end
+						end
 						MergeObject(temp, mapObject);
 					end
 				end
 				
-				-- Acquire all of the world quests.
+				-- Acquire all of the world quests
 				for _,pair in ipairs(worldMapIDs) do
 					local mapID = pair[1];
-					local mapObject = { mapID=mapID,g={},progress=0,total=0};
-					local cache = fieldCache["mapID"][mapID];
-					if cache then
-						for _,data in ipairs(cache) do
-							if data.mapID and data.icon then
-								mapObject.icon = data.icon;
-								mapObject.lvl = data.lvl;
-								mapObject.description = data.description;
-								break;
-							end
-						end
-					end
+					-- print("WQ.WorldMapIDs." .. tostring(mapID))
+					local mapObject = GetPopulatedMapObject(mapID);					
 					
 					-- Invasions
 					local mapIDPOIPairs = pair[2];
@@ -12807,140 +13188,21 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 									local timeLeft = C_AreaPoiInfo.GetAreaPOISecondsLeft(arr[2]);
 									if timeLeft and timeLeft > 0 then
 										local mapID = arr[1];
-										local subMapObject = { mapID=mapID,g={},progress=0,total=0};
-										local cache = fieldCache["mapID"][mapID];
-										if cache then
-											for _,data in ipairs(cache) do
-												if data.mapID and data.icon then
-													subMapObject.icon = data.icon;
-													subMapObject.lvl = data.lvl;
-													subMapObject.description = data.description;
-													break;
-												end
-											end
-										end
-										local questObject = {questID=questID,g={}};
-										cache = fieldCache["questID"][questObject.questID];
-										if cache then
-											for _,data in ipairs(cache) do
-												for key,value in pairs(data) do
-													if not (key == "g" or key == "parent") then
-														questObject[key] = value;
-													end
-												end
-												if data.isVignette then questObject.isVignette = true; end
-												if data.g then
-													for _,entry in ipairs(data.g) do
-														local resolved = ResolveSymbolicLink(entry);
-														if resolved then
-															entry = CreateObject(entry);
-															if entry.g then
-																MergeObjects(entry.g, resolved);
-															else
-																entry.g = resolved;
-															end
-														end
-														tinsert(questObject.g, entry);
-													end
-												end
-											end
-										end
+										local subMapObject = GetPopulatedMapObject(mapID);
+										local questObject = GetPopulatedQuestObject(questID);
 										
-										local numQuestRewards = GetNumQuestLogRewards (questObject.questID);
-										for j=1,numQuestRewards,1 do
-											local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo (j, questObject.questID);
-											if itemID then
-												if showCurrencies or (itemID ~= 116415 and itemID ~= 163036) then
-													QuestHarvester.AllTheThingsProcessing = true;
-													QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
-													QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
-													local link = select(2, QuestHarvester:GetItem());
-													QuestHarvester.AllTheThingsProcessing = false;
-													QuestHarvester:Hide();
-													if link then
-														--print("TODO: Parse Link", link);
-														cache = SearchForLink(link);
-														if cache and #cache > 0 then
-															local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
-															for _,item in ipairs(cache) do
-																item = CreateObject(item);
-																item.link = link;
-																if modID then item.modID = tonumber(modID); end
-																MergeObject(questObject.g, item);
-															end
-														end
-													else
-														-- Take the best guess at what this is... No clue.
-														local modID = tagID == 137 and ((ilvl >= 370 and 23) or (ilvl >= 355 and 2)) or 1;
-														cache = fieldCache["itemID"][itemID];
-														local item = { ["itemID"] = itemID, ["expanded"] = false, };
-														if cache then
-															local ACKCHUALLY;
-															for _,data in ipairs(cache) do
-																if data.f then
-																	item.f = data.f;
-																end
-																if data.s then
-																	item.s = data.s;
-																	if data.modID == modID then
-																		ACKCHUALLY = data.s;
-																		item.modID = modID;
-																		if tagID == 137 then
-																			local parent = data.parent;
-																			while parent do
-																				if parent.instanceID then
-																					questObject.icon = parent.icon;
-																					break;
-																				end
-																				parent = parent.parent;
-																			end
-																		end
-																	end
-																end
-																if data.g and #data.g > 0 then
-																	if not item.g then
-																		item.g = {};
-																		item.progress = 0;
-																		item.total = 0;
-																	end
-																	MergeObjects(item.g, data.g);
-																end
-															end
-															if ACKCHUALLY then
-																item.s = ACKCHUALLY;
-															end
-														end
-														MergeObject(questObject.g, item);
-													end
-												end
+										-- Custom time remaining based on the map POI since the quest itself does not indicate time remaining
+										if not questObject.timeRemaining then
+											local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeLeft * 60));
+											if timeLeft < 30 then
+												description = "|cFFFF0000" .. description .. "|r";
+											elseif timeLeft < 60 then
+												description = "|cFFFFFF00" .. description .. "|r";
+											end
+											if not questObject.description then
+												questObject.description = description;
 											else
-												return true;
-											end
-										end
-										
-										local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeLeft * 60));
-										if timeLeft < 30 then
-											description = "|cFFFF0000" .. description .. "|r";
-										elseif timeLeft < 60 then
-											description = "|cFFFFFF00" .. description .. "|r";
-										end
-										if not questObject.description then
-											questObject.description = description;
-										else
-											questObject.description = questObject.description .. "\n\n" .. description;
-										end
-										
-										-- Resolve all symbolic links
-										if questObject.g and #questObject.g > 0 then
-											for j,item in ipairs(questObject.g) do
-												local resolved = ResolveSymbolicLink(item);
-												if resolved then
-													if item.g then
-														MergeObjects(item.g, resolved);
-													else
-														item.g = resolved;
-													end
-												end
+												questObject.description = questObject.description .. "\n\n" .. description;
 											end
 										end
 										
@@ -12952,270 +13214,113 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						end
 					end
 					
+					-- World Quests (Tasks)
 					local pois = C_TaskQuest.GetQuestsForPlayerByMapID(mapID);
 					if pois then
 						for i,poi in ipairs(pois) do
-							local questObject = {questID=poi.questId,g={},progress=0,total=0};
+							local questObject = GetPopulatedQuestObject(poi.questId);
 							
-							local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = GetQuestTagInfo(questObject.questID);
-							if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
-								questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_PET_BATTLE then
-								questObject.icon = "Interface\\Icons\\PetJournalPortrait";
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_PROFESSION then
-								questObject.icon = "Interface\\Icons\\Trade_BlackSmithing";
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_DUNGEON or tagID == 137 then
-								-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-								-- TODO: Add the relevent dungeon icon. (DONE! IN REWARDS!)
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_RAID then
-								-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-								-- TODO: Add the relevent dungeon icon.
-							elseif worldQuestType == LE_QUEST_TAG_TYPE_INVASION or worldQuestType == LE_QUEST_TAG_TYPE_INVASION_WRAPPER then
-								questObject.icon = "Interface\\Icons\\achievements_zone_brokenshore";
-							--elseif worldQuestType == LE_QUEST_TAG_TYPE_TAG then
-								-- completely useless
-								--questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-							--elseif worldQuestType == LE_QUEST_TAG_TYPE_NORMAL then
-							--	questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-							end
+							-- see if need to retry based on missing data
+							retry = retry or questObject.missingData;
 							
-							cache = fieldCache["questID"][questObject.questID];
-							if cache then
-								for _,data in ipairs(cache) do
-									for key,value in pairs(data) do
-										if not (key == "g" or key == "parent") then
-											questObject[key] = value;
-										end
-									end
-									if data.g then
-										for _,entry in ipairs(data.g) do
-											local resolved = ResolveSymbolicLink(entry);
-											if resolved then
-												entry = CreateObject(entry);
-												if entry.g then
-													MergeObjects(entry.g, resolved);
-												else
-													entry.g = resolved;
-												end
-											end
-											tinsert(questObject.g, entry);
-										end
-									end
-								end
-							end
-							
-							if questObject.qgs and #questObject.qgs == 1 then
-								for j,qg in ipairs(questObject.qgs) do
-									cache = fieldCache["creatureID"][qg];
-									if cache then
-										for _,data in ipairs(cache) do
-											if GetRelativeField(group, "npcID", -16) then	-- Rares only!
-												for key,value in pairs(data) do
-													if not (key == "g" or key == "parent") then
-														questObject[key] = value;
-													end
-												end
-												if data.g then
-													for _,entry in ipairs(data.g) do
-														local resolved = ResolveSymbolicLink(entry);
-														if resolved then
-															entry = CreateObject(entry);
-															if entry.g then
-																MergeObjects(entry.g, resolved);
-															else
-																entry.g = resolved;
-															end
-														end
-														MergeObject(questObject.g, entry);
-													end
-												end
-											end
-										end
-									end
-								end
-							end
-							
-							local numQuestRewards = GetNumQuestLogRewards (questObject.questID);
-							for j=1,numQuestRewards,1 do
-								local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo (j, questObject.questID);
-								if itemID then
-									if showCurrencies or (itemID ~= 116415 and itemID ~= 163036) then
-										QuestHarvester.AllTheThingsProcessing = true;
-										QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
-										QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
-										local link = select(2, QuestHarvester:GetItem());
-										QuestHarvester.AllTheThingsProcessing = false;
-										QuestHarvester:Hide();
-										if link then
-											--print("TODO: Parse Link", link);
-											cache = SearchForLink(link);
-											if cache and #cache > 0 then
-												local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
-												for _,item in ipairs(cache) do
-													item = CreateObject(item);
-													item.link = link;
-													if modID then item.modID = tonumber(modID); end
-													MergeObject(questObject.g, item);
-												end
-											end
-										else
-											-- Take the best guess at what this is... No clue.
-											local modID = tagID == 137 and ((ilvl >= 370 and 23) or (ilvl >= 355 and 2)) or 1;
-											cache = fieldCache["itemID"][itemID];
-											local item = { ["itemID"] = itemID, ["expanded"] = false, };
-											if cache then
-												local ACKCHUALLY;
-												for _,data in ipairs(cache) do
-													if data.f then
-														item.f = data.f;
-													end
-													if data.s then
-														item.s = data.s;
-														if data.modID == modID then
-															ACKCHUALLY = data.s;
-															item.modID = modID;
-															if tagID == 137 then
-																local parent = data.parent;
-																while parent do
-																	if parent.instanceID then
-																		questObject.icon = parent.icon;
-																		break;
-																	end
-																	parent = parent.parent;
-																end
-															end
-														end
-													end
-													if data.g and #data.g > 0 then
-														if not item.g then
-															item.g = {};
-															item.progress = 0;
-															item.total = 0;
-														end
-														MergeObjects(item.g, data.g);
-													end
-												end
-												if ACKCHUALLY then
-													item.s = ACKCHUALLY;
-												end
-											end
-											MergeObject(questObject.g, item);
-										end
-									end
-								else
-									return true;
-								end
-							end
-							
-							local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questObject.questID);
-							if timeRemaining and timeRemaining > 0 then
-								local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeRemaining * 60));
-								if timeRemaining < 30 then
-									description = "|cFFFF0000" .. description .. "|r";
-								elseif timeRemaining < 60 then
-									description = "|cFFFFFF00" .. description .. "|r";
-								end
-								if not questObject.description then
-									questObject.description = description;
-								else
-									questObject.description = questObject.description .. "\n\n" .. description;
-								end
-							end
-							
-							if showCurrencies then
-								local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
-								if numCurrencies > 0 then
-									for j=1,numCurrencies,1 do
-										local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
-										if currencyID then
-											local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
-											cache = fieldCache["currencyID"][currencyID];
-											if cache then
-												for _,data in ipairs(cache) do
-													if data.f then
-														item.f = data.f;
-													end
-													if data.g and #data.g > 0 then
-														if not item.g then
-															item.g = {};
-															item.progress = 0;
-															item.total = 0;
-															item.OnUpdate = OnUpdateForItem;
-														end
-														MergeObjects(item.g, data.g);
-													end
-												end
-											end
-											if not item.g then
-												item.g = {};
-												item.progress = 0;
-												item.total = 0;
-												item.OnUpdate = OnUpdateForItem;
-											end
-											MergeObject(questObject.g, item);
-										else
-											return true;
-										end
-									end
-								end
-							end
-							
-							-- Resolve all symbolic links
-							if questObject.g and #questObject.g > 0 then
-								for j,item in ipairs(questObject.g) do
-									local resolved = ResolveSymbolicLink(item);
-									if resolved then
-										if not item.g then
-											item.g = resolved;
-										else
-											MergeObjects(item.g, resolved);
-										end
-									end
-								end
-							end
-							
-							--print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID, timeRemaining);
+							--print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID,#questObject.g,questObject.repeatable,questObject.timeRemaining);
 							--print(tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft);
-							if poi.mapID ~= mapID then
-								local subMapObject = { mapID=poi.mapID,g={},progress=0,total=0};
-								cache = fieldCache["mapID"][poi.mapID];
-								if cache then
-									for _,data in ipairs(cache) do
-										if data.mapID and data.icon then
-											subMapObject.icon = data.icon;
-											subMapObject.lvl = data.lvl;
-											subMapObject.description = data.description;
-											break;
-										end
-									end
+							
+							-- only merge POIs with time remaining, or collectible rewards unless shift is held down (bonus objectives are POIs but not time-limited)
+							-- repeatable tasks usually indicate quests which are also up for long durations of time, but will expire (warfront scenario, etc.)
+							if includeAll or
+								-- include the quest in the list if holding shift and tracking quests
+								(includePermanent and includeQuests) or 
+								-- or if it has a collectible and is repeatable (i.e. one attempt per day/week/year)
+								(#questObject.g > 0 and questObject.isRepeatable) or 
+								-- or if it has time remaining
+								(questObject.timeRemaining or 0 > 0) then
+								if poi.mapID ~= mapID then
+									local subMapObject = GetPopulatedMapObject(poi.mapID);
+									MergeObject(subMapObject.g, questObject);
+									MergeObject(mapObject.g, subMapObject);
+								else
+									MergeObject(mapObject.g, questObject);
 								end
-								MergeObject(subMapObject.g, questObject);
-								MergeObject(mapObject.g, subMapObject);
-							else
-								MergeObject(mapObject.g, questObject);
 							end
 						end
-						table.sort(mapObject.g, self.Sort);
 					end
+					
+					-- Available Quest Lines/Map Quest Icons
+					-- Look for quest lines on the provided map
+					C_QuestLine.RequestQuestLinesForMap(mapID);
+					local questLines = C_QuestLine.GetAvailableQuestLines(mapID)
+					if questLines then
+						for id,questLine in pairs(questLines) do
+							-- dont show 'hidden' quest lines... not sure what this is exactly
+							if not questLine.hidden then
+								local questObject = GetPopulatedQuestObject(questLine.questID);
+								if includeAll or
+									-- include the quest in the list if holding shift and tracking quests
+									(includePermanent and includeQuests) or 
+									-- or if it has a collectible and is repeatable (i.e. one attempt per day/week/year)
+									(#questObject.g > 0 and questObject.isRepeatable) or 
+									-- or if it has time remaining
+									(questObject.timeRemaining or 0 > 0) then
+									MergeObject(mapObject.g, questObject);
+								end
+							end
+						end
+					else
+						-- print("No questline data yet for mapID:",mapID);
+						retry = true;
+					end
+					
+					-- look for quest lines on 'Zone' map child maps as well
+					local mapChildInfos = C_Map.GetMapChildrenInfo(mapID, 3, false)
+					if mapChildInfos then
+						for i,mapInfo in ipairs(mapChildInfos) do
+							local subMapObject = GetPopulatedMapObject(mapInfo.mapID);
+							C_QuestLine.RequestQuestLinesForMap(mapInfo.mapID);
+							local questLines = C_QuestLine.GetAvailableQuestLines(mapInfo.mapID)
+							if questLines then
+								for id,questLine in pairs(questLines) do
+									-- dont show 'hidden' quest lines... not sure what this is exactly
+									if not questLine.hidden then
+										local questObject = GetPopulatedQuestObject(questLine.questID);
+										if includeAll or
+											-- include the quest in the list if holding shift and tracking quests
+											(includePermanent and includeQuests) or 
+											-- or if it has a collectible and is repeatable (i.e. one attempt per day/week/year)
+											(#questObject.g > 0 and questObject.isRepeatable) or 
+											-- or if it has time remaining
+											(questObject.timeRemaining or 0 > 0) then
+											MergeObject(subMapObject.g, questObject);
+										end
+									end
+								end
+							else
+								-- print("No questline data yet for mapInfo.mapID:",mapInfo.mapID);
+								retry = true;
+							end
+							
+							-- if #subMapObject.g > 0 then
+							MergeObject(mapObject.g, subMapObject);
+							-- end
+						end
+					end
+									
+					-- Merge everything for this map into the list
 					if #mapObject.g > 0 then
+						table.sort(mapObject.g, self.Sort);
+						-- Sort the sub-groups as well
+						for i,mapGrp in ipairs(mapObject.g) do
+							if (mapGrp.mapID and mapGrp.g and #mapGrp.g > 1) then
+								table.sort(mapGrp.g, self.Sort);
+							end
+						end
 						MergeObject(temp, mapObject);
 					end
 				end
 				
 				-- Heroic Deeds
-				if not (CompletedQuests[32900] or CompletedQuests[32901]) then
-					local mapObject = { mapID=424,g={},progress=0,total=0};
-					local cache = fieldCache["mapID"][424];
-					if cache then
-						for _,data in ipairs(cache) do
-							if data.mapID and data.icon then
-								mapObject.icon = data.icon;
-								mapObject.lvl = data.lvl;
-								mapObject.description = data.description;
-								break;
-							end
-						end
-					end
+				if includePermanent and not (CompletedQuests[32900] or CompletedQuests[32901]) then
+					local mapObject = GetPopulatedMapObject(424);
 					cache = fieldCache["questID"][app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901];
 					if cache then
 						for _,data in ipairs(cache) do
@@ -13279,7 +13384,8 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 														local parent = data.parent;
 														while parent do
 															if parent.instanceID then
-																questObject.icon = parent.icon;
+																-- this referenced questObject.icon, but that variable isn't part of the group finder section, so using header instead...
+																header.icon = parent.icon;
 																break;
 															end
 															parent = parent.parent;
@@ -13343,6 +13449,27 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					table.insert(temp, groupFinder);
 				end
 				
+				if retry == true
+				then
+					--print("Missing API quest data on this World Quest refresh");
+					return true;
+				end
+				
+				-- Put a 'Clear World Quests' click at the bottom
+				MergeObject(temp, {
+						['text'] = "Clear World Quests",
+						['icon'] = "Interface\\Icons\\ability_racial_haymaker",
+						['description'] = "Click to clear the current information within the World Quests frame",
+						['hash'] = "funClearWorldQuests",
+						['OnClick'] = function(data, button)
+							Push(self, "WorldQuests-Clear", self.Clear);
+							return true;
+						end,
+						['OnUpdate'] = function(data) 
+							data.visible = true;
+						end,
+					});
+				
 				for i,o in ipairs(temp) do
 					UnsetNotCollectible(o);
 					MergeObject(self.rawData, o);
@@ -13353,34 +13480,91 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				if not no then self:Update(); end
 			end
 			self.Sort = function(a, b)
-				if a.isRaid then
-					if b.isRaid then
+				-- If either object doesn't exist
+				if not a then
+					-- print("a-nil");
+					if not b then
+						-- print("b-nil");
 						return false;
 					else
+						return false;
+					end
+				elseif not b then
+					-- print("b-nil");
+					return true;
+				end
+				-- Raids/Encounter 1st
+				if a.isRaid then
+					-- print("a-raid",a.text);
+					if not b.isRaid then
 						return true;
 					end
+					-- print("b-raid",b.text);
+					-- both Raid, compare on text
+					-- print("raid",a.text,b.text);
+					return string.lower(a.text or "") <= string.lower(b.text or "");
 				elseif b.isRaid then
+					-- print("b-raid",b.text);
 					return false;
 				end
+				-- Quests 2nd
 				if a.questID then
-					if b.questID then
-						return a.questID < b.questID;
-					else
+					-- print("a-quest",a.text);
+					if not b.questID then
 						return true;
 					end
+					-- both Quest
+					-- print("quest",a.questID,b.questID);
+					return a.questID <= b.questID;
+				elseif b.questID then
+					return false;
 				end
+				-- Maps 3rd
 				if a.mapID then
-					if b.mapID then
-						if a.text and b.text then
-							return a.text < b.text;
-						else
-							return a.mapID < b.mapID;
-						end
-					else
+					if not b.mapID then
 						return true;
 					end
+					-- both Map, compare on text
+					--print("map",a.text,b.text);
+					return string.lower(a.text or "") <= string.lower(b.text or "");
+				elseif b.mapID then
+					return false;
 				end
-				return false;
+				-- Level 4th
+				if a.lvl then
+					if not b.lvl then
+						return true;
+					end
+					-- both Level, compare on level
+					-- equal Level, compare on text
+					if (a.lvl == b.lvl) then
+					-- print("lvl",a.text,b.text);
+						return string.lower(a.text or "") <= string.lower(b.text or "");
+					end
+					-- print("lvl",a.lvl,b.lvl);
+					return a.lvl <= b.lvl;
+				elseif b.lvl then
+					return false;
+				end
+				-- Items 5th
+				if a.itemID then
+					if not b.itemID then
+						return true;
+					end
+					-- both Item
+					-- print("item",a.itemID,b.itemID);
+					return a.itemID <= b.itemID;
+				elseif b.itemID then
+					return false;
+				end
+				-- Anything else with text
+				if a.text and b.text then
+					-- print("text",a.text,b.text);
+					return string.lower(a.text or "") <= string.lower(b.text or "");
+				end
+				-- false here may cause 'invalid order function' error when no other conditions match
+				-- print("a-b",a.key,b.key);
+				return a.key <= b.key;
 			end;
 		end
 		
@@ -13484,7 +13668,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 					info.coord = { px * 100, py * 100, mapID };
 				end
 				repeat
-					mapInfo = C_Map.GetMapInfo(mapID);
+					mapInfo = C_Map_GetMapInfo(mapID);
 					if mapInfo then
 						info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
 						mapID = mapInfo.parentMapID
@@ -13518,7 +13702,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 				local mapID = app.GetCurrentMapID();
 				if mapID then
 					repeat
-						mapInfo = C_Map.GetMapInfo(mapID);
+						mapInfo = C_Map_GetMapInfo(mapID);
 						if mapInfo then
 							info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
 							mapID = mapInfo.parentMapID
@@ -13606,8 +13790,8 @@ app:GetWindow("Debugger", UIParent, function(self)
 				
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				for i = 1,#recipeIDs do
-					local spellRecipeInfo = {};
-					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
+					local spellRecipeInfo = C_TradeSkillUI.GetRecipeInfo(recipeIDs[i]);
+					if spellRecipeInfo then
 						currentCategoryID = spellRecipeInfo.categoryID;
 						if not categories[currentCategoryID] then
 							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
@@ -13780,6 +13964,22 @@ ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
 
+--[[
+hooksecurefunc("EmbeddedItemTooltip_SetCurrencyByID", function(self, id, ...)
+	print("EmbeddedItemTooltip_SetCurrencyByID", ...);
+	AttachTooltip(self.Tooltip);
+end);
+]]--
+hooksecurefunc("EmbeddedItemTooltip_SetItemByID", function(self, itemID, ...)
+	ClearTooltip(self.Tooltip);
+	AttachTooltip(self.Tooltip);
+	self.Tooltip:Show();
+end);
+hooksecurefunc("EmbeddedItemTooltip_SetItemByQuestReward", function(self, ...)
+	ClearTooltip(self.Tooltip);
+	AttachTooltip(self.Tooltip);
+	self.Tooltip:Show();
+end);
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
 app.OpenAuctionModule = function(self)
@@ -14587,10 +14787,10 @@ app.events.VARIABLES_LOADED = function()
 	end
 	
 	-- Cache information about the player.
-	local _, class, classIndex = UnitClass("player");
-	local raceName, race = UnitRace("player");
+	local class, classID = UnitClassBase("player");
+	local raceName, race, raceID = UnitRace("player");
 	app.Class = class;
-	app.ClassIndex = classIndex;
+	app.ClassIndex = classID;
 	app.Level = UnitLevel("player");
 	local raceIndex = app.RaceDB[race];
 	if type(raceIndex) == "table" then
@@ -14598,9 +14798,10 @@ app.events.VARIABLES_LOADED = function()
 		raceIndex = raceIndex[factionGroup];
 	end
 	app.Race = race;
+	app.RaceID = raceID;
 	app.RaceIndex = raceIndex;
 	local name, realm = UnitName("player");
-	local _, id = GetClassInfo(classIndex);
+	local _, id = GetClassInfo(classID);
 	app.GUID = UnitGUID("player");
 	app.Me = "|c" .. RAID_CLASS_COLORS[id].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
 	app.Faction = UnitFactionGroup("player");
@@ -14752,11 +14953,22 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("ArtifactRelicItemLevels", myArtifactRelicItemLevels);
 	end
 	
+	-- Cache your character's azerite essence rank data.
+	local azeriteEssenceRanks = GetDataMember("AzeriteEssenceRanksPerCharacter", {});
+	local myAzeriteEssenceRanks = GetTempDataMember("AzeriteEssenceRanks", azeriteEssenceRanks[app.GUID]);
+	if not myAzeriteEssenceRanks then
+		myAzeriteEssenceRanks = {};
+		azeriteEssenceRanks[app.GUID] = myAzeriteEssenceRanks;
+		SetTempDataMember("AzeriteEssenceRanks", myAzeriteEssenceRanks);
+	end
+	
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
 		"ArtifactRelicItemLevelsPerCharacter",
 		"ArtifactRelicItemLevels",
+		"AzeriteEssenceRanksPerCharacter",
+		"AzeriteEssenceRanks",
 		"Categories",
 		"Characters",
 		"CollectedAchievements",
@@ -14857,10 +15069,35 @@ app.events.VARIABLES_LOADED = function()
 			{ 13157, { 54706, 55039, 55043, 54708, 54721, 54723, 54725, 54726, 54727, 54728, 54730, 54731, 54729, 54732, 55136, 54733, 54734, 54735, 54851, 53720 } },	-- Allied Races: Kul Tiran
 			{ 14012, { 57486, 57487, 57488, 57490, 57491, 57492, 57493, 57494, 57496, 57495, 57497 } },	-- Allied Races: Mechagnome
 			{ 13207, { 53870, 53889, 53890, 53891, 53892, 53893, 53894, 53895, 53897, 53898, 54026, 53899, 58087, 53901, 53900, 53902, 54027, 53903, 53904, 53905, 54036, 53906, 53907, 53908, 57448 } },	-- Allied Races: Vulpera
+			-- Garrison Shipyard Equipment Blueprints
+			{ 10372, { 38932 } }, -- Equipment Blueprint: Bilge Pump
+			{ 10373, { 39366 } }, -- Equipment Blueprint: Felsmoke Launchers
+			{ 10374, { 39356 } }, -- Equipment Blueprint: High Intensity Fog Lights
+			{ 10375, { 39365 } }, -- Equipment Blueprint: Ghostly Spyglass
+			{ 10376, { 39364 } }, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
+			{ 10377, { 39363 } }, -- Equipment Blueprint: Ice Cutter
+			{ 10378, { 39355 } }, -- Equipment Blueprint: Trained Shark Tank
+			{ 10379, { 39360 } }, -- Equipment Blueprint: True Iron Rudder
 		}) do
 			-- If you completed the achievement, then mark the associated quests.
 			if select(4, GetAchievementInfo(achievementQuests[1])) then
 				for j,questID in ipairs(achievementQuests[2]) do
+					rawset(CompletedQuests, questID, 2);
+					if not myQuests[questID] then
+						myQuests[questID] = 2;
+						quests[questID] = 1;
+					end
+				end
+			end
+		end
+		-- Cache some collection states for account wide quests that aren't actually account wide. (Secrets) 
+		for i,appearanceQuests in ipairs({
+			{ 98614, { 52829, 52830, 52831, 52898, 52899, 52900, 52901, 52902, 52903, 52904, 52905, 52906, 52907, 52908, 52909, 52910, 52911, 52912, 52913, 52914, 52915, 52916, 52917, 52918, 52919, 52920, 52921, 52922, 52822, 52823, 52824, 52826} },	-- Waist of Time
+		}) do
+			-- If you have the appearance, then mark the associated quests.
+			local SourceInfo = C_TransmogCollection_GetSourceInfo(appearanceQuests[1]);
+			if SourceInfo.isCollected then
+				for j,questID in ipairs(appearanceQuests[2]) do
 					rawset(CompletedQuests, questID, 2);
 					if not myQuests[questID] then
 						myQuests[questID] = 2;
@@ -15158,4 +15395,3 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t0");
 	end
 end
-
