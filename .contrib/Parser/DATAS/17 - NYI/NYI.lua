@@ -2120,9 +2120,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, a(model(4805, i(12325)))),	-- Reins of the Primal Leopard 			(Never added in Game)
 		un(NEVER_IMPLEMENTED, a(model(6442, i(12326)))),	-- Reins of the Tawny Sabercat 			(Never added in Game)
 		un(NEVER_IMPLEMENTED, a(model(9714, i(12327)))),	-- Reins of the Golden Sabercat 		(Never added in Game)
-		un(NEVER_IMPLEMENTED, i(156884, {	-- Black Gladiator's Proto-Drake
-			["mountID"] = 262027,
-		})),
 		un(NEVER_IMPLEMENTED, i(156885, {	-- Gold Gladiator's Proto-Drake
 			["mountID"] = 262028,
 		})),
@@ -2154,6 +2151,24 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(163063)),	-- Reins of the spectral phoenix (old trash 100 rep award)
 		un(NEVER_IMPLEMENTED, i(163188)),	-- Surf Jelly (testing version)
 		un(NEVER_IMPLEMENTED, i(163186)),	-- Tempestuous Skystallion (Old 400 Mounts Reward)
+		un(NEVER_IMPLEMENTED, i(13323)),	-- purple mechanostrider
+		un(NEVER_IMPLEMENTED, i(13324)),	-- red and blue mechanostrider
+		un(NEVER_IMPLEMENTED, i(16343)),	-- blood guards mount
+		un(NEVER_IMPLEMENTED, i(18241)),	-- black war steed bridle
+		un(NEVER_IMPLEMENTED, i(18242)),	-- reins of the black war tiger
+		un(NEVER_IMPLEMENTED, i(18243)),	-- black battlestrider
+		un(NEVER_IMPLEMENTED, i(18244)),	-- black war ram
+		un(NEVER_IMPLEMENTED, i(18245)),	-- horn of the black war wolf
+		un(NEVER_IMPLEMENTED, i(18246)),	-- whislter of the black war raptor
+		un(NEVER_IMPLEMENTED, i(18247)),	-- black war kodo
+		un(NEVER_IMPLEMENTED, i(18248)),	-- red skeletal warhorse
+		un(NEVER_IMPLEMENTED, i(18768)),	-- reins of the swift dawnsaber
+		un(NEVER_IMPLEMENTED, i(23193)),	-- naxxramas deathercharger reins
+		un(NEVER_IMPLEMENTED, i(28482)),	-- great elite elekk
+		un(NEVER_IMPLEMENTED, i(37827)),	-- bresfest kodko
+		un(NEVER_IMPLEMENTED, i(43963)),	-- reins of the brown polar bear
+		un(NEVER_IMPLEMENTED, i(43964)),	-- reins of the black polar bear
+		un(NEVER_IMPLEMENTED, i(46101)),	-- blue skeletal warhorse
 
 	}),
 	n(-162, {	-- Pets
