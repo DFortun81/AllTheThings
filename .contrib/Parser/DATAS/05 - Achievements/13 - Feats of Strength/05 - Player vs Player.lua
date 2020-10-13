@@ -30,12 +30,13 @@ _.Achievements =
 				ach(12135, {	-- Dominant Elite
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				--[[ Legacy
 				ach(12137, {	-- Dominant Combatant Legion Season 6 (Alliance)
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				ach(12136, {	-- Dominant Combatant Legion Season 6 (Horde)
 					["u"] = REMOVED_FROM_GAME,
-				}),
+				}),--]]
 				ach(12134, {	-- Dominant Gladiator: Legion Season 6
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -123,12 +124,13 @@ _.Achievements =
 						title(451),	-- Defender of the Alliance <Name>
 					},
 				}),
+				--[[ Legacy
 				ach(12200, {	-- Demonic Combatant Legion Season 7 (Alliance)
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				ach(12199, {	-- Demonic Combatant Legion Season 7 (Horde)
 					["u"] = REMOVED_FROM_GAME,
-				}),
+				}),--]]
 				ach(12198, {	-- Demonic Elite
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -511,11 +513,6 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, h(ach(10001))),	-- Defender of the Horde: Warlords Season 1
 			un(REMOVED_FROM_GAME, h(ach(10107))),	-- Defender of the Horde: Warlords Season 2
 			un(REMOVED_FROM_GAME, h(ach(10119))),	-- Defender of the Horde: Warlords Season 3
-			un(REMOVED_FROM_GAME, ach(12198)),		-- Demonic Elite
-			un(REMOVED_FROM_GAME, ach(12135)),		-- Dominant Elite
-			un(REMOVED_FROM_GAME, ach(12134, {		-- Dominant Gladiator: Legion Season 6
-				un(REMOVED_FROM_GAME, title(368)),		-- Dominant Gladiator
-			})),
 			un(REMOVED_FROM_GAME, ach(11015)),		-- Duelist: Legion Season 1
 			un(REMOVED_FROM_GAME, ach(11026)),		-- Duelist: Legion Season 2
 			un(REMOVED_FROM_GAME, ach(11041)),		-- Duelist: Legion Season 3
