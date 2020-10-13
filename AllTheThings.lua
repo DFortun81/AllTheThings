@@ -13801,7 +13801,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					local mapID = pair[1];
 					-- print("WQ.EmissaryMapIDs." .. tostring(mapID))
 					local mapObject = GetPopulatedMapObject(mapID);
-					local bounties = GetQuestBountyInfoForMapID(pair[2]);
+					local bounties = C_QuestLog.GetBountiesForMapID(pair[2]);
 					if bounties and #bounties > 0 then
 						for i,bounty in ipairs(bounties) do
 							local questObject = {questID=bounty.questID,g={}};
