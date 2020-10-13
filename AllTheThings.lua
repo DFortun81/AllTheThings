@@ -6504,7 +6504,7 @@ local function GetHolidayCache()
 		else
 			C_Calendar.SetAbsMonth(date.month + 4, date.year - 1);
 		end
-		local date = C_Calendar.GetDate();
+		--local date = C_Calendar.GetDate();
 		for month=1,12,1 do
 			-- We kick off the search from January 1 at the start of the year using SetAbsMonth/GetMonthInfo. All successive functions are built from the returns of these.
 			local absMonth = C_Calendar.SetAbsMonth(month, date.year);
