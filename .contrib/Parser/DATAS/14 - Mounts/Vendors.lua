@@ -263,7 +263,7 @@ _.Mounts =
 		i(142369),	-- Ivory Hawkstrider
 		i(67107),	-- Kor'kron Annihilator
 		i(152788),	-- Lightforged Warframe Mount
-		i(163042),	-- Mighty Caravan Brutosaur
+		un(9, i(163042)),	-- Mighty Caravan Brutosaur
 		i(116768),	-- Mosshide Riverwallow
 		i(73838),	-- Mountain Horse
 		i(143637, {	-- Netherlord's Brimstone Wrathsteed (Warlock)

@@ -1459,9 +1459,6 @@ _.Zones =
 						i(163568, {	-- Lost Platysaur (PET!)
 							["cost"] = 1000000000,	-- 100,000g
 						}),
-						i(163042, {	-- Reins of the Mighty Caravan Brutosaur (MOUNT!)
-							["cost"] = 50000000000,	-- 5,000,000g
-						}),
 						i(163589, {	-- Reins of the Palehide Direhorn (MOUNT!)
 							["cost"] = 5000000000,	-- 500,000g
 						}),
