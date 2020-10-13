@@ -546,7 +546,7 @@ _.Zones =
 				q(55173, {	-- Northbound (A)
 					["coord"] = { 58.3, 74.4, 1409 },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 156607 },	-- Alaria
+					["provider"] = { "n", 175031 },	-- Alaria
 					["sourceQuests"] = {
 						55174,	-- Cooking Meat (hunters)
 						59254,	-- Enhanced Combat Tactics (all except hunters/monks)
@@ -741,11 +741,11 @@ _.Zones =
 					--["provider"] = { "n",  },	--
 					["sourceQuest"] = 59967,	-- A Rogue's End
 				}),
-				q(58946, {	-- The Divine's Shield (A) -- TODO: need provider
+				q(58946, {	-- The Divine's Shield (A)
 					["coord"] = { 57.5, 52.2, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
-					--["provider"] = { "n",  },	--
+					["provider"] = { "n", 162998 },	-- Yorah
 					["sourceQuest"] = 58923,	-- A Paladin's Service
 				}),
 				q(60174, {	-- The Divine's Shield (H)
@@ -862,7 +862,7 @@ _.Zones =
 				q(55639, {	-- Who Lurks in the Pit (A)
 					["coord"] = { 51.1, 59.5, 1409 },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 156803 },	-- Alaria
+					["provider"] = { "n", 175031 },	-- Alaria
 					["sourceQuest"] = 55965,	-- Westward Bound
 					["g"] = {
 						i(175203),	-- Expeditionary Cloth Cuffs
@@ -901,31 +901,18 @@ _.Zones =
 				o(339770, {	-- Abandoned Treasure Chest
 					["coord"] = { 57.1, 68.4, 1409 },
 					["questID"] = 58380,
-					["sourceQuests"] = {
-						54952,	-- Finding the Lost Expedition (A)
-						59931,	-- Finding the Lost Expedition (H)
-					},
 				}),
 				o(329918, {	-- Quilboar Treasures
 					["coord"] = { 58.5, 59.3, 1409 },
 					["questID"] = 56579,
-					["sourceQuest"] = 55173,	-- Northbound
 				}),
 				o(329919, {	-- Stolen Supplies
 					["coord"] = { 59.3, 37.6, 1409 },
 					["questID"] = 56581,
-					["sourceQuests"] = {
-						55879,	-- Ride of the Scientifically Enhanced Boar
-						59942,	-- The Re-deather
-					},
 				}),
 				o(327407, {	-- Precious Ogre Stash
 					["coord"] = { 41.8, 42.8, 1409 },
 					["questID"] = 56088,
-					["sourceQuests"] = {
-						55879,	-- Ride of the Scientifically Enhanced Boar
-						59942,	-- The Re-deather
-					},
 				}),
 			}),
 		},
