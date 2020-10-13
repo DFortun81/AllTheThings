@@ -259,6 +259,7 @@ i(172022, 308250);	-- Stormpike Battle Ram
 -----------------
 i(174836, 316637);	-- Awakened Mindborer
 i(174654, 305182);	-- Black Serpent of N'Zoth
+i(156884, 262027);	-- Corrupted Gladiator Proto Drake
 i(174066, 306423);	-- Caravan Hyena
 i(173887, 312751);	-- Clutch of Ha-Li
 i(174641, 315847);	-- Drake of the Four Winds

@@ -12,7 +12,6 @@ _.Toys =
 		i(166308),	-- For da Blood God!
 		i(166703),	-- Goldtusk Inn Breakfast Buffet
 		i(153182),	-- Holy Lightsphere Toy
-		un(NEVER_IMPLEMENTED, i(166851)),	-- Kojo's Master Matching Set
 		i(166880),	-- Meerah's Jukebox
 		i(170469),	-- Memento of the Deeps
 		i(166702),	-- Proudmoore Music Box

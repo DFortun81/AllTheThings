@@ -84,7 +84,7 @@ _.Zones =
 							["sourceQuests"] = { 30000 },	-- The Jade Serpent
 						}),
 						crit(10, {	-- Nectarbreeze Orchard
-						--	TODO: possibly also requires "Unbound" (#29587), turned in at the same time as Maul Gormal
+							--	TODO: possibly also requires "Unbound" (#29587), turned in at the same time as Maul Gormal
 							["sourceQuests"] = { 29670 },	-- Maul Gormal
 						}),
 						crit(11, {	-- The Battle for the Forest

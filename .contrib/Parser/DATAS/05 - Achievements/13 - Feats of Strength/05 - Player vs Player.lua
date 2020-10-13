@@ -6,6 +6,200 @@ _.Achievements =
 {
 	n(-9969, {	-- Feats of Strength
 		n(-9958, {	-- Player vs Player
+			n(-687, {	-- Demonic Gladiator: Legion Season 6
+				ach(12169, {	-- Challenger: Legion Season 6
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(32),	-- Challenger <Name>
+					},
+				}),
+				ach(12175, {	-- Defender of the Alliance: Legion Season 6
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(448),	-- Defender of the Alliance <Name>
+					},
+				}),
+				ach(12174, {	-- Defender of the Horde: Legion Season 6
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(451),	-- Defender of the Horde <Name>
+					},
+				}),
+				ach(12135, {	-- Dominant Elite
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				--[[ Legacy
+				ach(12137, {	-- Dominant Combatant Legion Season 6 (Alliance)
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(12136, {	-- Dominant Combatant Legion Season 6 (Horde)
+					["u"] = REMOVED_FROM_GAME,
+				}),--]]
+				ach(12134, {	-- Dominant Gladiator: Legion Season 6
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(368, {	-- Dominant Gladiator <Name>
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+				ach(12171, {	-- Duelist: Legion Season 6
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(30),		-- Duelist <Name>
+					},
+				}),
+				ach(12177, {	-- Guardian of the Alliance: Legion Season 6
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(446),	-- Guardian of the Alliance <Name>
+					},
+				}),
+				ach(12176, {	-- Guardian of  the Horde: Legion Season 6
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(450),	-- Guardian of the Alliance <Name>
+					},
+				}),
+				ach(12167, {	-- Gladiator: Legion Season 6
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(29),			-- Gladiator <Name>
+						i(141848, {	-- Dominant Gladiator's Storm Dragon
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+				ach(12173, {	-- Hero of the Alliance: Dominant
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(12172, {	-- Hero of the Horde: Dominant
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(12179, {	-- Soldier of the Alliance: Legion Season 6
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(449),	-- Soldier of the Alliance <Name>
+					},
+				}),
+				ach(12178, {	-- Soldier  of  the Horde: Legion Season 6
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(452),	-- Soldier  of the Alliance <Name>
+					},
+				}),
+				ach(12170, {	-- Rival: Legion Season 6
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(31),	-- Rival <Name>
+					},
+				}),
+			}),
+			n(-688, {	-- Demonic Gladiator: Legion Season 7
+				ach(12187, {	-- Challenger: Legion Season 7
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(32),	-- Challenger <Name>
+					},
+				}),
+				ach(12195, {	-- Defender of the Alliance: Legion Season 7
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(448),	-- Defender of the Alliance <Name>
+					},
+				}),
+				ach(12194, {	-- Defender of the Horde: Legion Season 7
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(451),	-- Defender of the Alliance <Name>
+					},
+				}),
+				--[[ Legacy
+				ach(12200, {	-- Demonic Combatant Legion Season 7 (Alliance)
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(12199, {	-- Demonic Combatant Legion Season 7 (Horde)
+					["u"] = REMOVED_FROM_GAME,
+				}),--]]
+				ach(12198, {	-- Demonic Elite
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(12185, {	-- Demonic Gladiator: Legion Season 7
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(370, {	-- Demonic Gladiator <Name>
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+				ach(12186, {	-- Duelist: Legion Season 7
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(30),		-- Duelist <Name>
+					},
+				}),
+				ach(12191, {	-- Guardian of the Alliance: Legion Season 7
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(447),	-- Guardian of the Alliance <Name>
+					},
+				}),
+				ach(12192, {	-- Guardian of  the Horde: Legion Season 7
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(450),	-- Guardian of the Alliance <Name>
+					},
+				}),
+				ach(12168, {	-- Gladiator: Legion Season 7
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(29),			-- Gladiator <Name>
+						i(153493, {	-- Demonic Gladiator's Storm Dragon
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+				ach(12197, {	-- Hero of the Alliance: Demonic
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(12196, {	-- Hero of the Horde: Demonic
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(12188, {	-- Rival: Legion Season 7
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(31),	-- Rival <Name>
+					},
+				}),
+				ach(12189, {	-- Soldier of the Alliance: Legion Season 7
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(449),	-- Soldier of the Alliance <Name>
+					},
+				}),
+				ach(12190, {	-- Soldier  of  the Horde: Legion Season 7
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(452),	-- Soldier  of the Alliance <Name>
+					},
+				}),
+			}),
 			n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
 				ach(12959, {	-- Challenger: Battle for Azeroth Season 1
 					["u"] = REMOVED_FROM_GAME,
@@ -216,70 +410,70 @@ _.Achievements =
 			}),
 			n(-692, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
 				ach(13959, {	-- Challenger: Battle for Azeroth Season 4
-				--	["u"] = REMOVED_FROM_GAME, S4
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						title(32),	-- Challenger <Name>
 					},
 				}),
 				ach(13962, {	-- Combatant: Battle for Azeroth Season 4
-				--	["u"] = REMOVED_FROM_GAME, S4
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						title(78),	-- Combatant <Name>
 					},
 				}),
 				ach(13964, {	-- Duelist: Battle for Azeroth Season 4
-				--	["u"] = REMOVED_FROM_GAME, S4
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						title(30),	-- Duelist <Name>
 						-- Note!! Currently we can not list this due to having no item.
 						-- Illusion: Dreadflame // Dreadflame Illusion
 						i(172671, {	-- Corrupted Gladiator's Cloak (A)
-						--	["u"] = REMOVED_FROM_GAME, -- S3
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(172670, {	-- Corrupted Gladiator's Cloak (H)
-						--	["u"] = REMOVED_FROM_GAME, -- S3
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
 				ach(13989, {	-- Elite: Battle for Azeroth Season 4
-				--	["u"] = REMOVED_FROM_GAME, S4
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(172652, {	-- Corrupted Gladiator's Tabard (A)
-						--	["u"] = REMOVED_FROM_GAME, -- S3
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(172651, {	-- Corrupted Gladiator's Tabard (H)
-						--	["u"] = REMOVED_FROM_GAME, -- S3
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
 				ach(13967, {	-- Gladiator: Battle for Azeroth Season 4
-				--	["u"] = REMOVED_FROM_GAME, S4
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						title(29),	-- Gladiator <Name>
 						i(156884, {	-- Corrupted Gladiator's Proto-Drake
-						--	["u"] = REMOVED_FROM_GAME, -- S3
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
 				ach(13966, {	-- Hero of the Alliance: Corrupted
 					["races"] = ALLIANCE_ONLY,
-				--	["u"] = REMOVED_FROM_GAME, S4
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				ach(13965, {	-- Hero of the Horde: Corrupted
 					["races"] = HORDE_ONLY,
-				--	["u"] = REMOVED_FROM_GAME, S4
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				ach(13963, {	-- Rival: Battle for Azeroth Season 4
-				--	["u"] = REMOVED_FROM_GAME, S4
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						title(31),	-- Rival <Name>
 					},
 				}),
 				ach(13957, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
-				--	["u"] = REMOVED_FROM_GAME, S4
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						title(411, {	-- Corrupted Gladiator <Name>
-						--	["u"] = REMOVED_FROM_GAME, -- S3
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),
@@ -291,8 +485,6 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(11039)),		-- Challenger: Legion Season 3
 			un(REMOVED_FROM_GAME, ach(11060)),		-- Challenger: Legion Season 4
 			un(REMOVED_FROM_GAME, ach(12036)),		-- Challenger: Legion Season 5
-			un(REMOVED_FROM_GAME, ach(12169)),		-- Challenger: Legion Season 6
-			un(REMOVED_FROM_GAME, ach(12187)),		-- Challenger: Legion Season 7
 			un(REMOVED_FROM_GAME, ach(8649)),		-- Challenger: Season 14
 			un(REMOVED_FROM_GAME, ach(8670)),		-- Challenger: Season 15
 			un(REMOVED_FROM_GAME, ach(9242)),		-- Challenger: Warlords Season 1
@@ -310,8 +502,6 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, a(ach(11045))),	-- Defender of the Alliance: Legion Season 3
 			un(REMOVED_FROM_GAME, a(ach(11054))),	-- Defender of the Alliance: Legion Season 4
 			un(REMOVED_FROM_GAME, a(ach(12039))),	-- Defender of the Alliance: Legion Season 5
-			un(REMOVED_FROM_GAME, a(ach(12175))),	-- Defender of the Alliance: Legion Season 6
-			un(REMOVED_FROM_GAME, a(ach(12195))),	-- Defender of the Alliance: Legion Season 7
 			un(REMOVED_FROM_GAME, a(ach(9996))),	-- Defender of the Alliance: Warlords Season 1
 			un(REMOVED_FROM_GAME, a(ach(10106))),	-- Defender of the Alliance: Warlords Season 2
 			un(REMOVED_FROM_GAME, a(ach(10118))),	-- Defender of the Alliance: Warlords Season 3
@@ -320,26 +510,14 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, h(ach(11044))),	-- Defender of the Horde: Legion Season 3
 			un(REMOVED_FROM_GAME, h(ach(11055))),	-- Defender of the Horde: Legion Season 4
 			un(REMOVED_FROM_GAME, h(ach(12043))),	-- Defender of the Horde: Legion Season 5
-			un(REMOVED_FROM_GAME, h(ach(12174))),	-- Defender of the Horde: Legion Season 6
-			un(REMOVED_FROM_GAME, h(ach(12194))),	-- Defender of the Horde: Legion Season 7
 			un(REMOVED_FROM_GAME, h(ach(10001))),	-- Defender of the Horde: Warlords Season 1
 			un(REMOVED_FROM_GAME, h(ach(10107))),	-- Defender of the Horde: Warlords Season 2
 			un(REMOVED_FROM_GAME, h(ach(10119))),	-- Defender of the Horde: Warlords Season 3
-			un(REMOVED_FROM_GAME, ach(12198)),		-- Demonic Elite
-			un(REMOVED_FROM_GAME, ach(12185, {		-- Demonic Gladiator: Legion Season 7
-				un(REMOVED_FROM_GAME, title(370)),		-- Demonic Gladiator
-			})),
-			un(REMOVED_FROM_GAME, ach(12135)),		-- Dominant Elite
-			un(REMOVED_FROM_GAME, ach(12134, {		-- Dominant Gladiator: Legion Season 6
-				un(REMOVED_FROM_GAME, title(368)),		-- Dominant Gladiator
-			})),
 			un(REMOVED_FROM_GAME, ach(11015)),		-- Duelist: Legion Season 1
 			un(REMOVED_FROM_GAME, ach(11026)),		-- Duelist: Legion Season 2
 			un(REMOVED_FROM_GAME, ach(11041)),		-- Duelist: Legion Season 3
 			un(REMOVED_FROM_GAME, ach(11058)),		-- Duelist: Legion Season 4
 			un(REMOVED_FROM_GAME, ach(12034)),		-- Duelist: Legion Season 5
-			un(REMOVED_FROM_GAME, ach(12171)),		-- Duelist: Legion Season 6
-			un(REMOVED_FROM_GAME, ach(12186)),		-- Duelist: Legion Season 7
 			un(REMOVED_FROM_GAME, ach(8645)),		-- Duelist: Season 14
 			un(REMOVED_FROM_GAME, ach(8668)),		-- Duelist: Season 15
 			un(REMOVED_FROM_GAME, ach(9240)),		-- Duelist: Warlords Season 1
@@ -369,8 +547,6 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(11038)),		-- Gladiator: Legion Season 3
 			un(REMOVED_FROM_GAME, ach(11061)),		-- Gladiator: Legion Season 4
 			un(REMOVED_FROM_GAME, ach(12045)),		-- Gladiator: Legion Season 5
-			un(REMOVED_FROM_GAME, ach(12167)),		-- Gladiator: Legion Season 6
-			un(REMOVED_FROM_GAME, ach(12168)),		-- Gladiator: Legion Season 7
 			un(REMOVED_FROM_GAME, ach(8644)),		-- Gladiator: Season 14
 			un(REMOVED_FROM_GAME, ach(8667)),		-- Gladiator: Season 15
 			un(REMOVED_FROM_GAME, ach(9239, {		-- Gladiator: Warlords Season 1
@@ -390,8 +566,6 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, a(ach(11047))),	-- Guardian of the Alliance: Legion Season 3
 			un(REMOVED_FROM_GAME, a(ach(11052))),	-- Guardian of the Alliance: Legion Season 4
 			un(REMOVED_FROM_GAME, a(ach(12038))),	-- Guardian of the Alliance: Legion Season 5
-			un(REMOVED_FROM_GAME, a(ach(12177))),	-- Guardian of the Alliance: Legion Season 6
-			un(REMOVED_FROM_GAME, a(ach(12191))),	-- Guardian of the Alliance: Legion Season 7
 			un(REMOVED_FROM_GAME, a(ach(9997))),	-- Guardian of the Alliance: Warlords Season 1
 			un(REMOVED_FROM_GAME, a(ach(10108))),	-- Guardian of the Alliance: Warlords Season 2
 			un(REMOVED_FROM_GAME, a(ach(10116))),	-- Guardian of the Alliance: Warlords Season 3
@@ -400,15 +574,11 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, h(ach(11046))),	-- Guardian of the Horde: Legion Season 3
 			un(REMOVED_FROM_GAME, h(ach(11053))),	-- Guardian of the Horde: Legion Season 4
 			un(REMOVED_FROM_GAME, h(ach(12042))),	-- Guardian of the Horde: Legion Season 5
-			un(REMOVED_FROM_GAME, h(ach(12176))),	-- Guardian of the Horde: Legion Season 6
-			un(REMOVED_FROM_GAME, h(ach(12192))),	-- Guardian of the Horde: Legion Season 7
 			un(REMOVED_FROM_GAME, h(ach(10000))),	-- Guardian of the Horde: Warlords Season 1
 			un(REMOVED_FROM_GAME, h(ach(10109))),	-- Guardian of the Horde: Warlords Season 2
 			un(REMOVED_FROM_GAME, h(ach(10117))),	-- Guardian of the Horde: Warlords Season 3
 			un(REMOVED_FROM_GAME, a(ach(6939))),	-- Hero of the Alliance: Cataclysmic
 			un(REMOVED_FROM_GAME, a(ach(11043))),	-- Hero of the Alliance: Cruel
-			un(REMOVED_FROM_GAME, a(ach(12197))),	-- Hero of the Alliance: Demonic
-			un(REMOVED_FROM_GAME, a(ach(12173))),	-- Hero of the Alliance: Dominant
 			un(REMOVED_FROM_GAME, a(ach(11030))),	-- Hero of the Alliance: Fearless
 			un(REMOVED_FROM_GAME, a(ach(11056))),	-- Hero of the Alliance: Ferocious
 			un(REMOVED_FROM_GAME, a(ach(12037))),	-- Hero of the Alliance: Fierce
@@ -424,8 +594,6 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, a(ach(10102))),	-- Hero of the Alliance: Wild
 			un(REMOVED_FROM_GAME, h(ach(6940))),	-- Hero of the Horde: Cataclysmic
 			un(REMOVED_FROM_GAME, h(ach(11042))),	-- Hero of the Horde: Cruel
-			un(REMOVED_FROM_GAME, h(ach(12196))),	-- Hero of the Horde: Demonic
-			un(REMOVED_FROM_GAME, h(ach(12172))),	-- Hero of the Horde: Dominant
 			un(REMOVED_FROM_GAME, h(ach(11029))),	-- Hero of the Horde: Fearless
 			un(REMOVED_FROM_GAME, h(ach(11057))),	-- Hero of the Horde: Ferocious
 			un(REMOVED_FROM_GAME, h(ach(12041))),	-- Hero of the Horde: Fierce
@@ -471,8 +639,6 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(11040)),		-- Rival: Legion Season 3
 			un(REMOVED_FROM_GAME, ach(11059)),		-- Rival: Legion Season 4
 			un(REMOVED_FROM_GAME, ach(12035)),		-- Rival: Legion Season 5
-			un(REMOVED_FROM_GAME, ach(12170)),		-- Rival: Legion Season 6
-			un(REMOVED_FROM_GAME, ach(12188)),		-- Rival: Legion Season 7
 			un(REMOVED_FROM_GAME, ach(8646)),		-- Rival: Season 14
 			un(REMOVED_FROM_GAME, ach(8669)),		-- Rival: Season 15
 			un(REMOVED_FROM_GAME, ach(9241)),		-- Rival: Warlords Season 1
@@ -484,8 +650,6 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, a(ach(11049))),	-- Soldier of the Alliance: Legion Season 3
 			un(REMOVED_FROM_GAME, a(ach(11050))),	-- Soldier of the Alliance: Legion Season 4
 			un(REMOVED_FROM_GAME, a(ach(12040))),	-- Soldier of the Alliance: Legion Season 5
-			un(REMOVED_FROM_GAME, a(ach(12179))),	-- Soldier of the Alliance: Legion Season 6
-			un(REMOVED_FROM_GAME, a(ach(12189))),	-- Soldier of the Alliance: Legion Season 7
 			un(REMOVED_FROM_GAME, a(ach(9995))),	-- Soldier of the Alliance: Warlords Season 1
 			un(REMOVED_FROM_GAME, a(ach(10104))),	-- Soldier of the Alliance: Warlords Season 2
 			un(REMOVED_FROM_GAME, a(ach(10120))),	-- Soldier of the Alliance: Warlords Season 3
@@ -494,8 +658,6 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, h(ach(11048))),	-- Soldier of the Horde: Legion Season 3
 			un(REMOVED_FROM_GAME, h(ach(11051))),	-- Soldier of the Horde: Legion Season 4
 			un(REMOVED_FROM_GAME, h(ach(12044))),	-- Soldier of the Horde: Legion Season 5
-			un(REMOVED_FROM_GAME, h(ach(12178))),	-- Soldier of the Horde: Legion Season 6
-			un(REMOVED_FROM_GAME, h(ach(12190))),	-- Soldier of the Horde: Legion Season 7
 			un(REMOVED_FROM_GAME, h(ach(9998))),	-- Soldier of the Horde: Warlords Season 1
 			un(REMOVED_FROM_GAME, h(ach(10105))),	-- Soldier of the Horde: Warlords Season 2
 			un(REMOVED_FROM_GAME, h(ach(10121))),	-- Soldier of the Horde: Warlords Season 3

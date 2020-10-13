@@ -12,8 +12,10 @@ _.GearSets =
 					i(171988, {	-- Adventurer's Footlocker
 						i(170676),	-- Sunsoul Bulwark
 						i(170673),	-- Sunsoul Scepter
-						i(170675),	-- Sunsoul Sword
-						i(170674),	-- Sunsoul Shield
+						i(170675),	-- Sunsoul Sword	
+						i(170674, {  -- Sunsoul Shield
+							["u"] = NEVER_IMPLEMENTED,
+						}),
 					}),
 					i(170677),	-- Sunsoul Warmaul
 					i(170850),	-- Sunsoul Faceguard

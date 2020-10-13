@@ -3092,9 +3092,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29466),	-- Black War Kodo
+						un(REMOVED_FROM_GAME, i(18247)),	-- Black War Kodo. Pre 2.0 Version
 						i(29469),	-- Horn of the Black War Wolf
+						un(REMOVED_FROM_GAME, i(18245)),	-- Horn of the Black War Wolf. Pre 2.0 Version
 						i(29470),	-- Red Skeletal Warhorse
+						un(REMOVED_FROM_GAME, i(18248)),	-- Red Skeletal Warhorse. Pre 2.0 Version
 						i(29472),	-- Whistle of the Black War Raptor
+						un(REMOVED_FROM_GAME, i(18246)),	-- Whistle of the Black War Raptor. Pre 2.0 Version
 						i(34129),	-- Swift Warstrider
 					},
 				}),

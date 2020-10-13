@@ -2120,9 +2120,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, a(model(4805, i(12325)))),	-- Reins of the Primal Leopard 			(Never added in Game)
 		un(NEVER_IMPLEMENTED, a(model(6442, i(12326)))),	-- Reins of the Tawny Sabercat 			(Never added in Game)
 		un(NEVER_IMPLEMENTED, a(model(9714, i(12327)))),	-- Reins of the Golden Sabercat 		(Never added in Game)
-		un(NEVER_IMPLEMENTED, i(156884, {	-- Black Gladiator's Proto-Drake
-			["mountID"] = 262027,
-		})),
 		un(NEVER_IMPLEMENTED, i(156885, {	-- Gold Gladiator's Proto-Drake
 			["mountID"] = 262028,
 		})),
@@ -2154,7 +2151,16 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(163063)),	-- Reins of the spectral phoenix (old trash 100 rep award)
 		un(NEVER_IMPLEMENTED, i(163188)),	-- Surf Jelly (testing version)
 		un(NEVER_IMPLEMENTED, i(163186)),	-- Tempestuous Skystallion (Old 400 Mounts Reward)
-
+		un(NEVER_IMPLEMENTED, i(13323)),	-- Purple Mechanostrider
+		un(NEVER_IMPLEMENTED, i(13324)),	-- Red and Blue Mechanostrider
+		un(NEVER_IMPLEMENTED, i(16343)),	-- Blood Guard's Mount
+		un(NEVER_IMPLEMENTED, i(18768)),	-- Reins of the Swift Dawnsaber
+		un(NEVER_IMPLEMENTED, i(23193)),	-- Naxxramas Deathcharger Reins
+		un(NEVER_IMPLEMENTED, i(28482)),	-- Great Elite Elekk
+		un(NEVER_IMPLEMENTED, i(37827)),	-- Brewfest Kodo
+		un(NEVER_IMPLEMENTED, i(43963)),	-- Reins of the Brown Polar Bear
+		un(NEVER_IMPLEMENTED, i(43964)),	-- Reins of the Black Polar Bear
+		un(NEVER_IMPLEMENTED, i(46101)),	-- Blue Skeletal Warhorse
 	}),
 	n(-162, {	-- Pets
 		un(NEVER_IMPLEMENTED, model(65527, i(129108, {	-- Son of Goredome		 				(Never added in Game)
@@ -3453,6 +3459,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(38568)), 	-- Drakkari Charm Bracelet
 		un(NEVER_IMPLEMENTED, i(134017)), 	-- Don Carlos' Famous Hat (testing version?)
 		un(NEVER_IMPLEMENTED, i(38569)), 	-- Unknown
+		un(NEVER_IMPLEMENTED, i(166851)),	-- Kojo's Master Matching Set (PTR Only)
 		un(NEVER_IMPLEMENTED, i(132132)),	-- Glowing Runstone
 		un(NEVER_IMPLEMENTED, i(157776)),	-- Dire Missive
 		un(NEVER_IMPLEMENTED, i(170484)),	-- dnt torn journal page #14

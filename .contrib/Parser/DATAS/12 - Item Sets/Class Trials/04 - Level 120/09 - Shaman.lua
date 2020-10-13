@@ -10,7 +10,9 @@ _.GearSets =
 				["classes"] = { SHAMAN },
 				["groups"] = {
 					n(-9941, {	-- Restoration
-						i(170735),	-- Streamtalker Shield
+						i(170735, {	-- Streamtalker Shield
+							["u"] = NEVER_IMPLEMENTED,
+						}),
 						i(170898),	-- Streamtalker Cowl
 						i(170728, {	-- Streamtalker Necklace
 							["u"] = NEVER_IMPLEMENTED,
