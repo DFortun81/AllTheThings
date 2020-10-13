@@ -202,6 +202,7 @@ i(173771);	-- Old Apple
 i(173778);	-- Orange Orange
 i(72201);	-- Plump Intestines
 i(9316);	-- Prismatic Punch Card
+i(139590);	-- Scroll of Teleport: Ravenholdt
 i(6357);	-- Sealed Crate
 i(88496);	-- Sealed Crate
 i(173776);	-- Stale Loaf
