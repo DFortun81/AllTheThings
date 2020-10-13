@@ -59,7 +59,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29925, {	-- All We Can Spare
-				--	TODO: does this also require finishing all the other dawn's blossom quests?  is the overall criteria required or just 'the jade witch'?
+					--	TODO: does this also require finishing all the other dawn's blossom quests?  is the overall criteria required or just 'the jade witch'?
 					["sourceQuests"] = { 29723 },	-- The Jade Witch
 					["provider"] = { "n", 56348 },	-- Toya
 					["coord"] = { 47.1, 46.1, 371 },
@@ -291,7 +291,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31486, {	-- Everything I Know About Cooking (A)
-				--	this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
+					--	this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
 					["requireSkill"] = COOKING,	-- this is technically a 'cooking' quest, but can be picked up by characters without the profession.
 					["provider"] = { "n", 56707 },	-- Chin
 					["coord"] = { 46.2, 45.4, 371 },
@@ -684,7 +684,7 @@ _.Zones =
 					["coord"] = { 48.5, 20.6, 371 },
 				}),
 				q(29882, {	-- Quill of Stingers
-				--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy,' but may be available sooner
+					--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy' but may be available sooner
 					["sourceQuests"] = { 29866 },	-- The Threads That Stick
 					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
 					["coord"] = { 55.3, 45.3, 371 },
@@ -953,7 +953,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29881, {	-- The Perfect Color
-				--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy,' but may be available sooner
+					--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy' but may be available sooner
 					["sourceQuests"] = { 29866 },	-- The Threads That Stick
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 					["coord"] = { 54.8, 45.3, 371 },
@@ -1268,6 +1268,7 @@ _.Zones =
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
+				--[[ commenting out while it's still in progress, remove when finished with file
 				ach(6300, {	-- Upjade Complete [Alliance]
 					["races"] = ALLIANCE_ONLY,	-- Alliance
 					["g"] = {
@@ -1285,6 +1286,7 @@ _.Zones =
 						}),
 					},
 				}),
+				]]--
 				q(30149, {	-- A Feast for the Senses
 					["provider"] = { "n", 58413 },	-- Jenova Longeye
 					["isDaily"] = true,
