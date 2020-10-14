@@ -2850,5 +2850,6 @@ _.HiddenQuestTriggers =
 		q(59143),	-- Triggered after looting the Runetusk Necklace from ogres in Darkmaul Citadel
 		q(59139),	-- Triggered after looting the Spider-Eye Ring from spiders in Hrun's Barrow
 		q(60167),	-- Triggered right after Warlord Grimaxe tells Shuja to heal during the Tunk encounter
+        q(62802),   -- Triggered after going to Stormwind for An End to Beginnings
 	}),
 };
