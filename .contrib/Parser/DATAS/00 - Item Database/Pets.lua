@@ -881,3 +881,10 @@ pet(49664, 247);	-- Zipao Tiger
 pet(113554, 1428);	-- Zomstrok
 pet(137298, 1903); 	-- Zoom
 pet(166455, 2550);	-- Zur'aj the Depleted
+
+
+-----------------
+-- PATCH 9.0.1 --
+-----------------
+
+pet(183621, 3046);	-- Putrid Geist
