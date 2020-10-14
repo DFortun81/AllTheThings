@@ -5369,7 +5369,7 @@ app.BaseAzeriteEssence = {
 		elseif key == "text" then
 			return t.link;
 		elseif key == "lvl" then
-			return 120;
+			return 50;
 		elseif key == "icon" then
 			local info = t.info;
 			if info then return info.icon; end
@@ -6012,7 +6012,7 @@ app.BaseFollower = {
 			return info and info.portraitIconID;
 		elseif key == "lvl" then
 			local info = t.info;
-			return info and info.level or 90;
+			return info and info.level or 35;
 		elseif key == "title" then
 			local info = t.info;
 			return info and info.className;
@@ -7043,7 +7043,7 @@ app.BaseMusicRoll = {
 				end
 			end
 		elseif key == "lvl" then
-			return 100;
+			return 40;
 		elseif key == "text" then
 			return t.link;
 		elseif key == "link" then
@@ -7597,7 +7597,7 @@ app.BaseSelfieFilter = {
 				end
 			end
 		elseif key == "lvl" then
-			return 100;
+			return 40;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
