@@ -5,6 +5,7 @@
 _.Zones =
 {
 	m(1409, {	-- Exile's Reach
+		["icon"] = 3567434,
 		["maps"] = {
 			1726,	-- North Sea (Alliance)
 			1727,	-- North Sea (Horde)
@@ -16,25 +17,26 @@ _.Zones =
 			Remaining things TODO:
 				* Some class-specific quests are missing providers. Search "TODO" for which ones are needed
 				* Quests after "Finding Your Way" - can't complete due to pre-launch event zombies making it impossible to progress further as of 12.August.2020
-
-			Darkmaul Citadel:
-				n(157300, {	-- Tunk
-					i(178167),	-- Tunk's Lil' Whomper
-					i(178164),	-- Tunk's Needle
-					i(179360),	-- Tunk's Tiny Bow
-					i(178166),	-- Tunk's Toothpick
-					i(178162),	-- Tunk's Whomper
-				}),
-				n(156501, {	-- Ravnyr
-					i(178168),	-- Darkmaul Ritual Stone
-					i(178171),	-- Darkmaul Signet Ring
-					i(178169),	-- Decrepit Dragonscale Drape
+			--]]
+			n(-10100, {	-- Darkmaul Citadel
+				["g"] = {
+					n(157300, {	-- Tunk
+						i(178165),	-- Tunk's Tooth
+						i(178163),	-- Tunk's Shinguard
+						i(179362),	-- Tunk's Backscratcher
+						i(178167),	-- Tunk's Lil' Whomper
+						i(178164),	-- Tunk's Needle
+						i(179360),	-- Tunk's Tiny Bow
+						i(178166),	-- Tunk's Toothpick
+						i(178162),	-- Tunk's Whomper
+					}),
+					n(156501, {	-- Ravnyr
+						i(178168),	-- Darkmaul Ritual Stone
+						i(178171),	-- Darkmaul Signet Ring
+						i(178169),	-- Decrepit Dragonscale Drape
+					}),
 				},
-
-			confirmed zone drops:
-				i(175245),	-- Runetusk Necklace - drops from ogres in Darkmaul Citadel
-				i(175244),	-- Spider-Eye Ring - drops from spiders in Hrun's Barrow
-			]]--
+			}),
 			n(QUESTS, {
 				q(59350, {	-- A Druid's Form (A)
 					["coord"] = { 52.0, 55.2, 1409 },
@@ -914,6 +916,10 @@ _.Zones =
 					["coord"] = { 41.8, 42.8, 1409 },
 					["questID"] = 56088,
 				}),
+			}),
+			n(ZONEDROPS, {
+				i(175245),	-- Runetusk Necklace - drops from ogres in Darkmaul Citadel
+				i(175244),	-- Spider-Eye Ring - drops from spiders in Hrun's Barrow
 			}),
 		},
 	}),
