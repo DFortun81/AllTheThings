@@ -12366,7 +12366,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						['description'] = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.",
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							LeaveParty();
+							C_PartyInfo.LeaveParty();
 							if GroupFinderFrame:IsVisible() then
 								PVEFrame_ToggleFrame("GroupFinderFrame")
 							end
