@@ -699,8 +699,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(128419, {	-- Fel Essence
 						["questID"] = 39502,	-- The Fel Spire
 						["altQuests"] = {
-							39500,	-- Well of Souls [Heroic]
-							39501,	-- Well of Souls [Mythic]
+							39504,	-- The Fel Spire [Heroic]
+							39505,	-- The Fel Spire [Mythic]
 						},
 					}),
 					i(124378),	-- Xu'tenash, Glaive of Ruin
@@ -940,7 +940,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					}),
 					i(128417, {	-- Soul Remnant [Heroic]
 						["questID"] = 39500,	-- Well of Souls [Heroic]
-						["altQuests"] = { 39505 },	-- The Fel Spire [Mythic]
+						["altQuests"] = { 39501 },	-- Well of Souls [Mythic]
 					}),
 					i(124380),	-- Spur of the Great Devourer
 					i(124359),	-- Voracious Souleater
