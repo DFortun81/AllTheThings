@@ -9,31 +9,35 @@ _.Zones =
 		["maps"] = {
 			1726,	-- North Sea (Alliance)
 			1727,	-- North Sea (Horde)
-			1609,	-- Darkmaul Citadel (dungeon scenario)
-			1610,	-- Darkmaul Citadel upper floor (dungeon scenario)
+		--	1609,	-- Darkmaul Citadel (dungeon scenario)
+		--	1610,	-- Darkmaul Citadel upper floor (dungeon scenario)
 		},
 		["g"] = {
 			--[[
 			Remaining things TODO:
 				* Some class-specific quests are missing providers. Search "TODO" for which ones are needed
 				* Quests after "Finding Your Way" - can't complete due to pre-launch event zombies making it impossible to progress further as of 12.August.2020
-			--]]
-			n(-10100, {	-- Darkmaul Citadel
+
+			]]--
+			m(1609, {	-- Darkmaul Citadel
+				["icon"] = 3759927,
+				["maps"] = { 1610 },	-- Darkmaul Citadel upper floor
 				["g"] = {
 					n(157300, {	-- Tunk
-						i(178165),	-- Tunk's Tooth
-						i(178163),	-- Tunk's Shinguard
-						i(179362),	-- Tunk's Backscratcher
 						i(178167),	-- Tunk's Lil' Whomper
 						i(178164),	-- Tunk's Needle
 						i(179360),	-- Tunk's Tiny Bow
+						i(178165),	-- Tunk's Tooth
 						i(178166),	-- Tunk's Toothpick
 						i(178162),	-- Tunk's Whomper
 					}),
 					n(156501, {	-- Ravnyr
-						i(178168),	-- Darkmaul Ritual Stone
-						i(178171),	-- Darkmaul Signet Ring
-						i(178169),	-- Decrepit Dragonscale Drape
+						["crs"] = { 156814 },	-- Gor'groth
+						["g"] = {
+							i(178168),	-- Darkmaul Ritual Stone
+							i(178171),	-- Darkmaul Signet Ring
+							i(178169),	-- Decrepit Dragonscale Drape
+						},
 					}),
 				},
 			}),
@@ -899,7 +903,7 @@ _.Zones =
 					},
 				}),
 			}),
-			n(-212, {	-- Treasure Chests
+			n(TREASURES, {
 				o(339770, {	-- Abandoned Treasure Chest
 					["coord"] = { 57.1, 68.4, 1409 },
 					["questID"] = 58380,
@@ -918,8 +922,13 @@ _.Zones =
 				}),
 			}),
 			n(ZONEDROPS, {
-				i(175245),	-- Runetusk Necklace - drops from ogres in Darkmaul Citadel
-				i(175244),	-- Spider-Eye Ring - drops from spiders in Hrun's Barrow
+			--	probably need to add more crs to these, these are just the NPCs i looted them from
+				i(175244, {	-- Spider-Eye Ring
+					["crs"] = { 160394 },	-- Barrow Spider
+				}),
+				i(175245, {	-- Runetusk Necklace
+					["crs"] = { 156821 },	-- Darkmaul Shadowcaller
+				}),
 			}),
 		},
 	}),

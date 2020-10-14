@@ -2832,6 +2832,8 @@ _.HiddenQuestTriggers =
 		q(60490),	-- Triggers after completing "Advancing the Effort" and unlocking Icecrown dailies. Also triggered when starting the new phase at Ironwall Rampart. Maybe it's the zone story daily progression tracker?
 		q(60541),	--
 		q(60511),	-- Icecrown story - Advancing the effort (phase 2?). triggered after completing "Only Shadows Remain"
+		q(62655),	-- triggers when switching specs for the first time in prepatch.  why.  (got it switching from shadow>holy on priest, and from outlaw>assassination on rogue.  didn't get any additional quests for switching to third spec or switching back to original spec.)
+		q(62808),	-- triggered when logging into a previously-120 character
 
 		-- Exile's Reach
 		q(58418),	-- Triggers shortly after login. Possibly some kind of indicator for the account having done it at least once per faction?
@@ -2843,6 +2845,7 @@ _.HiddenQuestTriggers =
 		q(54928),	-- Triggered after getting 3 holy power and striking Warlord Grimaxe with the first major combat ability. Didn't trigger at all on an alliance priest
 		q(58336),	-- Triggered at the same time as 54928. Possibly dialog-related?
 		q(55607),	-- Triggered while killing quilboars in Quilboar Briarpatch on an alliance priest. Did not see it trigger as horde
+		q(55611),	-- triggered when completing "Message to Base" in Exile's Reach on alliance priest
 		q(59610),	-- Triggered after killing Torgok. Loot controller for "Torgok's Reagent Pouch"
 		q(59143),	-- Triggered after looting the Runetusk Necklace from ogres in Darkmaul Citadel
 		q(59139),	-- Triggered after looting the Spider-Eye Ring from spiders in Hrun's Barrow

@@ -950,7 +950,6 @@ app.L = {
 		[-10080] = "Interface\\Icons\\trade_alchemy_potiond2",						-- Horrific Visions
 		[-10081] = "Interface\\Icons\\spell_shadow_shadowmend",						-- Corrupted Area (Vision Scenario)
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
-		[-10100] = "3759927",														-- Darkmaul Citadel
 
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1860,7 +1859,6 @@ app.L = {
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
 		-- 9.0
-		[-10100] = "Darkmaul Citadel",
 	},
 
 	["OBJECT_ID_ICONS"] = {

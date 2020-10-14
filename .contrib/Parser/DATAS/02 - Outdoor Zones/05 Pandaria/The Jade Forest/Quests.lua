@@ -59,7 +59,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29925, {	-- All We Can Spare
-					--	TODO: does this also require finishing all the other dawn's blossom quests?  is the overall criteria required or just 'the jade witch'?
+				--	TODO: does this also require finishing all the other dawn's blossom quests?  is the overall criteria required or just 'the jade witch'?
 					["sourceQuests"] = { 29723 },	-- The Jade Witch
 					["provider"] = { "n", 56348 },	-- Toya
 					["coord"] = { 47.1, 46.1, 371 },
@@ -85,6 +85,12 @@ _.Zones =
 						i(80756),	-- Thunderwood Armplates
 						i(80757),	-- Jade Tiger Armplates
 					},
+				}),
+				q(30565, {	-- An Unexpected Advantage
+					["sourceQuests"] = { 30498 },	-- Get Back Here
+					["provider"] = { "n", 59550 },	-- Sully "The Pickle" McLeary
+					["coord"] = { 58.5, 82.2, 371 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29749, {	-- An Urgent Plea
 					["sourceQuests"] = {
@@ -279,6 +285,12 @@ _.Zones =
 					["provider"] = { "n", 58225 },	-- Instructor Tong
 					["coord"] = { 65.3, 31.6, 371 },
 				}),
+				q(31319, {	-- Emergency Response
+					["sourceQuests"] = { 31303 },	-- The Seal is Broken
+					["provider"] = { "n", 59418 },	-- Lorewalker Cho
+					["coord"] = { 49.2, 61.4, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(30136, {	-- Empty Nests
 					["sourceQuests"] = { 30134 },	-- Wild Things
 					["provider"] = { "n", 58225 },	-- Instructor Tong
@@ -291,7 +303,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31486, {	-- Everything I Know About Cooking (A)
-					--	this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
+				--	this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
 					["requireSkill"] = COOKING,	-- this is technically a 'cooking' quest, but can be picked up by characters without the profession.
 					["provider"] = { "n", 56707 },	-- Chin
 					["coord"] = { 46.2, 45.4, 371 },
@@ -323,7 +335,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29993, {	-- Find the Boy
-					-- TODO: might also require 29865 (The Silkwood Road) ?
+				--	TODO: might also require 29865 (The Silkwood Road) ?
 					["sourceQuests"] = { 29866 },	-- The Threads that Stick
 					["provider"] = { "n", 59173 },	-- Kai Wanderbrew
 					["coord"] = { 47.1, 46.0, 371 },
@@ -435,6 +447,13 @@ _.Zones =
 						i(81030),	-- Cagebreaker's Heavy Girdle
 					},
 				}),
+				q(30498, {	-- Get Back Here!
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 30000 },	-- The Jade Serpent
+					["provider"] = { "n", 57242 },	-- Elder Sage Wind-Yi
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = { { "i", 86068, 1 }, },	-- Alliance Missive
+				}),
 				q(29920, {	-- Getting Permission
 					["sourceQuests"] = { 29995 },	-- Shrine of the Dawn
 					["provider"] = { "n", 56708 },	--  Syra Goldendraft
@@ -451,6 +470,12 @@ _.Zones =
 					["sourceQuests"] = { 29620 },	-- The Great Banquet
 					["provider"] = { "n", 54926 },	-- Xiao
 					["coord"] = { 43.1, 23.6, 371 },
+				}),
+				q(30568, {	-- Helping the Cause
+					["sourceQuests"] = { 30000 },	-- The Jade Serpent
+					["provider"] = { "n", 55122 },	-- Admiral Taylor
+					["coord"] = { 58.1, 80.6, 371 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30066, {	-- Hidden Power
 					["u"] = REMOVED_FROM_GAME,
@@ -540,6 +565,15 @@ _.Zones =
 						i(90367),	-- Landfall Silk Treads
 						i(90372),	-- Landfall Warboots
 					},
+				}),
+				q(31362, {	-- Last Piece of the Puzzle
+					["sourceQuests"] = {
+						30565,	-- An Unexpected Advantage
+						30568,	-- Helping the Cause
+					},
+					["provider"] = { "n", 59620 },	-- Lorewalker Cho
+					["coord"] = { 58.8, 81.1, 371 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29905, {	-- Let Them Burn
 					["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
@@ -684,7 +718,7 @@ _.Zones =
 					["coord"] = { 48.5, 20.6, 371 },
 				}),
 				q(29882, {	-- Quill of Stingers
-					--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy' but may be available sooner
+				--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy,' but may be available sooner
 					["sourceQuests"] = { 29866 },	-- The Threads That Stick
 					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
 					["coord"] = { 55.3, 45.3, 371 },
@@ -794,7 +828,7 @@ _.Zones =
 				}),
 				q(29748, {	-- Simulacrumble
 					["sourceQuests"] = { 29745 },	-- The Sprites' Plight
-					["provider"] = { "o", 214871 },	-- Shattered Destroyed
+					["provider"] = { "o", 214871 },	-- Shattered Destroyer
 					["coord"] = { 48.5, 20.6, 371 },
 				}),
 				q(31743, {	-- Smoke Before Fire
@@ -953,7 +987,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29881, {	-- The Perfect Color
-					--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy' but may be available sooner
+				--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy,' but may be available sooner
 					["sourceQuests"] = { 29866 },	-- The Threads That Stick
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 					["coord"] = { 54.8, 45.3, 371 },
@@ -1268,25 +1302,15 @@ _.Zones =
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
-				--[[ commenting out while it's still in progress, remove when finished with file
 				ach(6300, {	-- Upjade Complete [Alliance]
 					["races"] = ALLIANCE_ONLY,	-- Alliance
 					["g"] = {
-						crit(6, {	-- Greenstone Quarry
-						}),
-						crit(7, {	-- Tian Monastery
-						}),
-						crit(8, {	-- Terrace of Ten Thunders
-						}),
-						crit(9, {	-- The Temple of the Jade Serpent
-						}),
 						crit(11, {	-- The Battle for the Forest
 						}),
 						crit(12, {	-- Overcoming doubt
 						}),
 					},
 				}),
-				]]--
 				q(30149, {	-- A Feast for the Senses
 					["provider"] = { "n", 58413 },	-- Jenova Longeye
 					["isDaily"] = true,
@@ -1315,10 +1339,6 @@ _.Zones =
 						recipe(127481),	-- Inscribed Monument
 					},
 				}),
-				q(30565, {	-- An Unexpected Advantage
-					["provider"] = { "n", 59550 },	-- Sully "The Pickle" McLeary
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(30567, {	-- Blanche's Boomer Brew
 					["provider"] = { "n", 59569 },	-- Brewmaster Blanche
 					["coord"] = { 38.8, 31.1, 371 },
@@ -1340,11 +1360,6 @@ _.Zones =
 					["provider"] = { "n", 58228 },	-- Instructor Skythorn
 					["coord"] = { 57.5, 45.1, 371 },
 					["isDaily"] = true,
-				}),
-				q(31319, {	-- Emergency Response
-					["provider"] = { "n", 59418 },	-- Lorewalker Cho
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 31303 },	-- The Seal is Broken
 				}),
 				q(30157, {	-- Emptier Nests
 					["provider"] = { "n", 58510 },	-- Suchi the Sweet
@@ -1378,17 +1393,6 @@ _.Zones =
 					["provider"] = { "n", 58413 },	-- Jenova Longeye
 					["isDaily"] = true,
 				}),
-				q(30498, {	-- Get Back Here!
-					-- horde equivalent is a breadcrumb, so this almost certainly is too
-					["cost"] = { { "i", 86068, 1 }, },	-- Alliance Missive
-					["sourceQuests"] = { 30000 },	-- The Jade Serpent
-					["provider"] = { "n", 57242 },	-- Elder Sage Wind-Yi
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(30568, {	-- Helping the Cause
-					["provider"] = { "n", 55122 },	-- Admiral Taylor
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(31542, {	-- Incarnadine Ink
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 					["races"] = ALLIANCE_ONLY,
@@ -1407,10 +1411,6 @@ _.Zones =
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
-				q(31362, {	-- Last Piece of the Puzzle
-					["provider"] = { "n", 59620 },	-- Lorewalker Cho
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(31709, {	-- Lingering Doubt
 					["provider"] = { "n", 58508 },	-- Big Bao
 					["isDaily"] = true,
@@ -1562,8 +1562,8 @@ _.Zones =
 					["requireSkill"] = INSCRIPTION,
 				}),
 				q(30139, {	-- The Rider's Journey (blue egg)
-					-- picked the blue and got this one, but some notes indicate all colors now grant this quest.
-					-- TODO: verify if picking green/yellow gives their respective quest or if they all grant this one
+				--	picked the blue and got this one, but some notes indicate all colors now grant this quest.
+				--	TODO: verify if picking green/yellow gives their respective quest or if they all grant this one
 					["sourceQuests"] = { 30138 },	-- Choosing the One
 					["provider"] = { "n", 58225 },	-- Instructor Tong
 					["coord"] = { 65.3, 31.6, 371 },
@@ -1742,12 +1742,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(30499, {	-- Get Back Here!
+					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 30000 },	-- The Jade Serpent
 					["provider"] = { "n", 57242 },	-- Elder Sage Wind-Yi
-					["cost"] = { { "i", 86067, 1 }, },	-- Horde Missive
-					["races"] = HORDE_ONLY,
 					["coord"] = { 55.8, 57.0, 371 },
-					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["cost"] = { { "i", 86067, 1 }, },	-- Horde Missive
 				}),
 				q(29968, {	-- Green-ish Energy
 					["sourceQuests"] = { 29824 },	-- Scouting Report: Like Jinyu in a Barrel
@@ -2023,7 +2023,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(31393, {	-- Temple of the White Tiger
-					-- TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
+				--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
 					["providers"] = {
 						{ "n", 55809 },	-- Peiji Goldendraft
 						{ "n", 63751 },	-- Farmhand Ko
@@ -2056,7 +2056,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(31255, {	-- The Road to Kun-Lai
-					-- TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
+				--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
 					["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
 					["provider"] = { "n", 63778 },	-- Messenger Grummle
 					["coord"] = { 45.7, 43.8, 371 },
