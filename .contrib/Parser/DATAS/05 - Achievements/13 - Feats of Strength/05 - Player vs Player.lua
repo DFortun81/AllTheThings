@@ -6,7 +6,7 @@ _.Achievements =
 {
 	n(-9969, {	-- Feats of Strength
 		n(-9958, {	-- Player vs Player
-			n(-685, {	-- Fierce Gladiator: Legion Season 5
+			n(-686, {	-- Fierce Gladiator: Legion Season 5
 				ach(12036, {	-- Challenger: Legion Season 5
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
