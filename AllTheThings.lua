@@ -4482,13 +4482,15 @@ local function AttachTooltip(self)
 				-- Does the tooltip have an itemlink?
 				local link = select(2, self:GetItem());
 				if link then
+					--[[
 					local itemString = string.match(link, "item[%-?%d:]+");
+					-- mythic keystones have no itemID ... ?? so itemString is nil here
 					local itemID = GetItemInfoInstant(itemString);
-					--[[if not AllTheThingsAuctionData then return end;
+					if not AllTheThingsAuctionData then return end;
 					if AllTheThingsAuctionData[itemID] then
 						self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
-					end]]
-					-- print("Search Item",itemID);
+					end
+					-- print("Search Item",itemID);--]]					
 					AttachTooltipSearchResults(self, link, SearchForLink, link);
 				end
 				
