@@ -3665,7 +3665,7 @@ local function PopulateQuestObject(questObject)
 	local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
 	
 	-- Check for a Task-specific icon
-	local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = GetQuestTagInfo(questObject.questID);
+	local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = C_QuestLog.GetQuestTagInfo(questObject.questID);
 	if worldQuestType then
 		if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
 			questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
@@ -3952,7 +3952,7 @@ local function PopulateQuestObject(questObject)
 	local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
 	
 	-- Check for a Task-specific icon
-	local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = GetQuestTagInfo(questObject.questID);
+	local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = C_QuestLog.GetQuestTagInfo(questObject.questID);
 	if worldQuestType then
 		if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
 			questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
