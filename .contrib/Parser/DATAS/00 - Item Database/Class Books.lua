@@ -139,6 +139,7 @@ i(21302);	-- Handbook of Deadly Poison
 i(21303);	-- Handbook of Feint
 i(114843);	-- Handbook: Pick Pocket
 i(116982);	-- Handbook: Vanish
+i(183123);	-- How to School Your Serpent
 i(11733);	-- Libram of Constitution
 i(18333);	-- Libram of Focus
 i(18334);	-- Libram of Protection

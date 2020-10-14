@@ -180,11 +180,13 @@ _.Zones =
 						i(79802, {	-- Reins of the Jade Cloud Serpent Mount
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(183123, {	-- How to School Your Serpent
-							["spellID"] = 340826,	-- How to School Your Serpent
-							--["questID"] = 62254,	-- Learned trigger
+						{	-- How to School Your Serpent
+							["itemID"] = 183123,	-- How to School Your Serpent
+						--	["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
+							["questID"] = 62254,
 							["description"] = "Purchasable/learnable by any character exalted with Order of the Cloud Serpent.",
-						}),
+						--	["classes"] = { HUNTER },
+						},
 					},
 				}),
 				n(61598, {	-- Silkweaver Rui <Adventuring Supplies>
