@@ -1156,7 +1156,7 @@ local function FilterSpecs(specs)
 			for i=specCount,1,-1 do
 				local specID = specs[i];
 				local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
-				if class ~= app.Class then
+				if class ~= app.Class or not name or name == "" then
 					table.remove(specs, i);
 				end
 			end
