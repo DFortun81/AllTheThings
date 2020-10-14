@@ -7764,15 +7764,15 @@ end)();
 		"Interface\\Icons\\inv_torghast",							-- Shadowlands
 	};
 	local tierLevel = {
-		1, 		-- Classic
-		57,		-- Burning Crusade
-		57,		-- Wrath
-		77,		-- Cata
-		77,		-- Mists
-		90,		-- WoD
-		98,		-- Legion
-		110,	-- Battle For Azeroth
-		50,		-- Shadowlands
+		1, 	-- Classic
+		10,	-- Burning Crusade
+		10,	-- Wrath
+		10,	-- Cata
+		10,	-- Mists
+		10,	-- WoD
+		10,	-- Legion
+		10,	-- Battle For Azeroth
+		50,	-- Shadowlands
 	};
 	local tierDescription = {
 		"Four years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.", 					-- Classic
@@ -10835,7 +10835,7 @@ function app:GetDataCache()
 		-- Azerite Essences
 		if app.Categories.Essences then
 			db = {}
-			db.lvl = 120
+			db.lvl = 50;	-- used to be 120 pre-scale
 			db.expanded = false
 			db.text = "Azerite Essences"
 			db.icon = "Interface\\ICONS\\Inv_heartofazeroth"
@@ -10847,7 +10847,7 @@ function app:GetDataCache()
 		-- TODO: Remove commented code when finished with essences.
 		db = {};
 		db.g = {};
-		db.lvl = 120;
+		db.lvl = 50;
 		db.OnUpdate = function(self)
 			local level = UnitLevel("player");
 			if level and level >= 120 then
@@ -10875,7 +10875,7 @@ function app:GetDataCache()
 		-- Expansion Features
 		if app.Categories.ExpansionFeatures then
 			db = {};
-			db.lvl = 67;
+			db.lvl = 26;	-- used to be 67 pre-scale
 			db.expanded = false;
 			db.text = GetCategoryInfo(15301);
 			db.icon = "Interface\\ICONS\\Achievement_Battleground_TempleOfKotmogu_02_Green";
@@ -10934,7 +10934,7 @@ function app:GetDataCache()
 		-- Pet Battles
 		if app.Categories.PetBattles then
 			db = app.CreateAchievement(6559, app.Categories.PetBattles); -- Traveling Pet Mauler
-			db.lvl = 5; -- Must be 5 to train
+			db.lvl = 3; -- Must be 3 to train (used to be 5 pre-scale)
 			db.expanded = false;
 			db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
 			db.g = app.Categories.PetBattles;
@@ -10993,7 +10993,7 @@ function app:GetDataCache()
 			db = app.CreateItem(122674, app.Categories.SelfieFilters);
 			db.expanded = false;
 			db.text = L["SELFIE_FILTERS_HEADER"];
-			db.lvl = 100;
+			db.lvl = 40;	-- used to be 100
 			table.insert(g, db);
 		end
 		

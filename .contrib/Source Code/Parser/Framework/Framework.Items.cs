@@ -321,6 +321,7 @@ namespace ATT
                     case "maxReputation":
                     case "provider":
                     case "providers":
+                    case "lvl":
                         {
                             return;
                         }
@@ -381,7 +382,7 @@ namespace ATT
                     case "b":
                     case "r":
                     case "ilvl":
-                    case "lvl":
+                    //case "lvl":
                     case "q":
                         {
                             item[field] = Convert.ToInt32(value);

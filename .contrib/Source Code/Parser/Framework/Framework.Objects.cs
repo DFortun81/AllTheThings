@@ -925,7 +925,7 @@ namespace ATT
                     switch (pair.Key)
                     {
                         case "description":
-                        case "lvl":
+                        //case "lvl":
                         case "races":
                         case "classes":
                         case "coords":
@@ -966,6 +966,7 @@ namespace ATT
                         case "g":
                         case "q":
                         case "hideText":
+                        case "lvl":
                             break;
                         default:
                             // FOR NOW, just copy all non-g fields.
@@ -997,7 +998,7 @@ namespace ATT
                         case "text":
                         case "title":
                         case "icon":
-                        case "lvl":
+                        //case "lvl":
                         case "coords":
                         case "crs":
                         case "sym":
@@ -1063,6 +1064,7 @@ namespace ATT
                         case "collectible":
                         case "hideText":
                         case "description":
+                        case "lvl":
                             // Ignore these!
                             break;
 
@@ -1289,7 +1291,7 @@ namespace ATT
                     case "b":
                     case "rank":
                     case "ilvl":
-                    case "lvl":
+                    //case "lvl":
                     case "q":
                     case "r":
                         {
@@ -1619,6 +1621,7 @@ namespace ATT
                         break;
 
                     // Blacklisted Fields
+                    case "lvl":
                     case "link":
                     case "retries":
                     case "previousRecipeID":
