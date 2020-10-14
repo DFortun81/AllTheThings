@@ -37,7 +37,6 @@ namespace ATT
         /// </summary>
         static int API_ThrottleSecond { get; } = 10;
         static int API_ExpectedThrottle { get; set; } = API_ThrottleSecond;
-        static readonly object API_Throttle_Lock = new object();
         static string RawDirectoryFormat { get; set; }
         static string RawAPICallFormat { get; set; }
         static int MaxItemID { get; set; } = 180000;
@@ -318,12 +317,9 @@ namespace ATT
             // maximum API limits is 100/sec so throttle to that at least
             // dont allow more than 50 simultaneous requests
             // 10ms minimum wait, but need to allow for repeated calls to slip in and can be called from 2 threads
-            lock (API_Throttle_Lock)
-            {
-                int delay = Math.Max(API_ExpectedThrottle, APIResults.Count);
-                while (!retry && APIResults.Count > 49) { Thread.Sleep(delay); }
-                Thread.Sleep(delay);
-            }
+            int delay = Math.Max(API_ExpectedThrottle, APIResults.Count);
+            while (!retry && APIResults.Count > 49) { Thread.Sleep(delay); }
+            Thread.Sleep(delay);
             APIResults.Enqueue(new Tuple<int, Task<HttpResponseMessage>>(i, Client.GetAsync(string.Format(RawAPICallFormat, i))));
         }
 
