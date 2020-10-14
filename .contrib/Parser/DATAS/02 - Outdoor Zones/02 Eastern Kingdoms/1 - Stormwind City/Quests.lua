@@ -581,6 +581,12 @@ _.Zones =
 					["classes"] = { DRUID },
 					["lvl"] = 20,
 				}),
+				q(58912, {	-- An Urgent Meeting
+					["provider"] = { "n", 163211 },	-- Henry Garrick
+					["coord"] = { 75.3, 54.3, 84 },
+					["sourceQuest"] = 58911,	-- Home Is Where the Hearth Is
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(325,   {	-- Armed and Ready
 					["provider"] = { "n", 1416 },	-- Grimand Elmore
 					["coord"] = { 59.6, 34.0, 84 },
@@ -750,6 +756,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
+				q(58908, {	-- Finding Your Way (A)
+					["coord"] = { 66.3, 78.2, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 163095 },	-- Lindie Springstock
+					["sourceQuest"] = 59583,	-- Welcome to Stormwind
+				}),
 				q(1701,  {	-- Fire Hardened Mail
 					["provider"] = { "n", 5413 },	-- Furen Longbeard
 					["coord"] = { 58.0, 16.6, 84 },
@@ -831,6 +843,22 @@ _.Zones =
 					["lvl"] = 26,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(58911, {	-- Home Is Where the Hearth Is
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 79.0, 69.8, 84 },
+					["sourceQuests"] = {
+                        59586,	-- What's Your Specialty?
+                        59587,	-- What's Your Specialty?
+                        59588,	-- What's Your Specialty?
+                        59589,	-- What's Your Specialty?
+                        59590,	-- What's Your Specialty?
+                        59591,	-- What's Your Specialty?
+                        59592,	-- What's Your Specialty?
+                        59593,	-- What's Your Specialty?
+                        59594,	-- What's Your Specialty?
+                    },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(53370, {	-- Hour of Reckoning
 					["provider"] = { "n", 144095 },	-- Master Mathias Shaw
 					["description"] = "This quest is automatically offered when you reach level 110.",
@@ -909,6 +937,15 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["lvl"] = 20,
+				}),
+				q(58909, {	-- License to Ride
+					["provider"] = { "n", 163007 },	-- Curly
+					["coord"] = { 77.3, 67.0, 84 },
+					["sourceQuest"] = 58908,	-- Finding Your Way (A)
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(73838),	-- Mountain Horse
+					},
 				}),
 				q(32470, {	-- Light Camera Action
 					["provider"] = { "n", 16908 },	-- Arielle Snapflash
@@ -1361,6 +1398,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
+				q(59641, {	-- The Nation of Kul Tiras
+					["provider"] = { "n", 165395 },	-- Anduin Wrynn
+					["coord"] = { 85.8, 31.6, 84 },
+					["sourceQuest"] = 58983,	-- Tides of War
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(543,   {	-- The Perenolde Tiara
 					["provider"] = { "n", 2285 },	-- Count Remington Ridgewell
 					["coord"] = { 81.4, 34.2, 84 },
@@ -1412,6 +1455,12 @@ _.Zones =
 					["sourceQuest"] = 51403,	-- The Speaker's Imperative
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
+				}),
+				q(58983, {	-- Tides of War
+					["provider"] = { "n", 163219 },	-- Captain Garrick
+					["coord"] = { 85.2, 32.1, 84 },
+					["sourceQuest"] = 58912,	-- An Urgent Meeting
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42782, {	-- To Be Prepared
 					["provider"] = { "n", 107934 },	-- Recruiter Lee
@@ -1497,6 +1546,75 @@ _.Zones =
 						i(65641),	-- Faceguard of the Order
 						i(65646),	-- Headguard of the Order
 					},
+				}),
+				q(59583, {	-- Welcome to Stormwind
+					["coord"] = { 73.6, 91.3, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 154169 },	-- Captain Garrick
+					["sourceQuest"] = 55991,	-- An End to Beginnings
+				}),
+				q(59586, {	-- What's Your Specialty? (Hunter)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { HUNTER },
+				}),
+				q(59587, {	-- What's Your Specialty? (Mage)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MAGE },
+				}),
+				q(59588, {	-- What's Your Specialty? (Monk)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MONK },
+				}),
+				q(59589, {	-- What's Your Specialty? (Paladin)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+				}),
+				q(59590, {	-- What's Your Specialty? (Priest)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PRIEST },
+				}),
+				q(59591, {	-- What's Your Specialty? (Rogue)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+				}),
+				q(59592, {	-- What's Your Specialty? (Shaman)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { SHAMAN },
+				}),
+				q(59593, {	-- What's Your Specialty? (Warlock)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+				}),
+				q(59594, {	-- What's Your Specialty? (Warrior)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
 				}),
 				q(58502, {	-- Where the Heart Is
 					["provider"] = { "n", 154532 },	-- Magni Bronzebeard <The Speaker>

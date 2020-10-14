@@ -368,12 +368,6 @@ _.Zones =
 					["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59930,	-- Emergency First Aid
 				}),
-				q(58908, {	-- Finding Your Way (A)
-					["coord"] = { 66.3, 78.2, 84 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 163095 },	-- Lindie Springstock
-					["sourceQuest"] = 59583,	-- Welcome to Stormwind
-				}),
 				q(60344, {	-- Finding Your Way (H)
 					["coord"] = { 51.9, 85.4, 85 },
 					["races"] = HORDE_ONLY,
@@ -846,12 +840,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59985,	-- An End to Beginnings
-				}),
-				q(59583, {	-- Welcome to Stormwind
-					["coord"] = { 73.6, 91.3, 84 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 154169 },	-- Captain Garrick
-					["sourceQuest"] = 55991,	-- An End to Beginnings
 				}),
 				q(55965, {	-- Westward Bound (A)
 					["coord"] = { 53.0, 55.0, 1409 },

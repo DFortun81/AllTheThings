@@ -2832,7 +2832,6 @@ _.HiddenQuestTriggers =
 		q(60490),	-- Triggers after completing "Advancing the Effort" and unlocking Icecrown dailies. Also triggered when starting the new phase at Ironwall Rampart. Maybe it's the zone story daily progression tracker?
 		q(60541),	--
 		q(60511),	-- Icecrown story - Advancing the effort (phase 2?). triggered after completing "Only Shadows Remain"
-		q(62655),	-- triggers when switching specs for the first time in prepatch.  why.  (got it switching from shadow>holy on priest, and from outlaw>assassination on rogue.  didn't get any additional quests for switching to third spec or switching back to original spec.)
 		q(62808),	-- triggered when logging into a previously-120 character
 
 		-- Exile's Reach
@@ -2849,7 +2848,12 @@ _.HiddenQuestTriggers =
 		q(59610),	-- Triggered after killing Torgok. Loot controller for "Torgok's Reagent Pouch"
 		q(59143),	-- Triggered after looting the Runetusk Necklace from ogres in Darkmaul Citadel
 		q(59139),	-- Triggered after looting the Spider-Eye Ring from spiders in Hrun's Barrow
+        q(59590),   -- Triggered after turning in What's Your Specialty? quest
 		q(60167),	-- Triggered right after Warlord Grimaxe tells Shuja to heal during the Tunk encounter
+        q(62548),   -- Triggered after speaking to trainer for What's Your Specialty? quest
+        q(62550),   -- Triggered after choosing a specialization for What's Your Specialty? quest
+		q(62655),	-- Triggered after choosing a specialization for What's Your Specialty? quest
         q(62802),   -- Triggered after going to Stormwind for An End to Beginnings
+        q(63012),   -- Triggered after talking to Jaina at docks for The Nation of Kul Tiras
 	}),
 };
