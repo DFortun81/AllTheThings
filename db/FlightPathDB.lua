@@ -2464,4 +2464,9 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Fallhaven, Drustvar",
 		["faction"] = 2,
 	},
+	[2059] = {
+		["u"] = 1,
+		["name"] = "Southwind Village, Silithus",
+		["faction"] = 1,
+	},
 };
