@@ -3699,6 +3699,19 @@ _.Zones =
 						})
 					},
 				}),
+				n(167429, {	-- Quartermaster Richter
+					["coord"] = { 79.5, 69.0, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(175173),  -- Expeditionary Cudgel
+						i(175172),  -- Expeditionary Dagger
+						i(175166),  -- Expeditionary Greatsword
+						i(175162),  -- Expeditionary Longbow
+						i(175168),  -- Expeditionary Quarterstaff
+						i(175170),  -- Expeditionary Short Sword
+						i(175167),  -- Expeditionary Staff
+					},
+				}),
 				n(12785, {	-- Sergeant Major Clate
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 75.4, 67.0, 84 },
