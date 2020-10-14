@@ -3689,319 +3689,38 @@ local function PopulateQuestObject(questObject)
 		end
 	end
 	
-	-- Update Quest info from cache
-	cache = fieldCache["questID"][questObject.questID];
-	if cache then
-		for _,data in ipairs(cache) do
-			-- only merge into the WQ quest object properties from a quest object in cache
-			if data.key == "questID" or data["encounterID"] then
-				for key,value in pairs(data) do
-					if not (key == "g" or key == "parent") then
-						questObject[key] = value;
-					end
-				end
-				if data.isVignette then questObject.isVignette = true; end
-				if data.g then
-					for _,entry in ipairs(data.g) do
-						local resolved = ResolveSymbolicLink(entry);
-						if resolved then
-							entry = CreateObject(entry);
-							if entry.g then
-								MergeObjects(entry.g, resolved);
-							else
-								entry.g = resolved;
-							end
-						end
-						tinsert(questObject.g, entry);
-					end
-				end
-			-- otherwise this is a non-quest object flagged with this questID so it should be added under the quest
-			else
-				MergeObject(questObject.g, data);
-			end
-		end
-	end
-	
-	-- Check for provider info
-	if questObject.qgs and #questObject.qgs == 1 then
-		for j,qg in ipairs(questObject.qgs) do
-			cache = fieldCache["creatureID"][qg];
-			if cache then
-				for _,data in ipairs(cache) do
-					if GetRelativeField(group, "npcID", -16) then	-- Rares only!
-						for key,value in pairs(data) do
-							if not (key == "g" or key == "parent") then
-								questObject[key] = value;
-							end
-						end
-						if data.g then
-							for _,entry in ipairs(data.g) do
-								local resolved = ResolveSymbolicLink(entry);
-								if resolved then
-									entry = CreateObject(entry);
-									if entry.g then
-										MergeObjects(entry.g, resolved);
-									else
-										entry.g = resolved;
-									end
-								end
-								MergeObject(questObject.g, entry);
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	
-	-- Get reward info
-	local numQuestRewards = GetNumQuestLogRewards(questObject.questID);
-	-- numQuestRewards will often be 0 for fresh questID API calls...
-	-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
-	local _ = GetQuestLogRewardInfo(1, questObject.questID);
-	for j=1,numQuestRewards,1 do
-		local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo (j, questObject.questID);
-		if itemID then
-			if showCurrencies or (itemID ~= 116415 and itemID ~= 163036) then
-				QuestHarvester.AllTheThingsProcessing = true;
-				QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
-				QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
-				local link = select(2, QuestHarvester:GetItem());
-				QuestHarvester.AllTheThingsProcessing = false;
-				QuestHarvester:Hide();
-				if link then
-					--print("TODO: Parse Link", link);
-					cache = SearchForLink(link);
-					if cache and #cache > 0 then
-						local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
-						for _,item in ipairs(cache) do
-							item = CreateObject(item);
-							item.link = link;
-							if modID then item.modID = tonumber(modID); end
-							MergeObject(questObject.g, item);
-						end
-					end
-				else
-					-- Take the best guess at what this is... No clue.
-					local modID = tagID == 137 and ((ilvl >= 370 and 23) or (ilvl >= 355 and 2)) or 1;
-					cache = fieldCache["itemID"][itemID];
-					local item = { ["itemID"] = itemID, ["expanded"] = false, };
-					if cache then
-						local ACKCHUALLY;
-						for _,data in ipairs(cache) do
-							if data.f then
-								item.f = data.f;
-							end
-							if data.s then
-								item.s = data.s;
-								if data.modID == modID then
-									ACKCHUALLY = data.s;
-									item.modID = modID;
-									if tagID == 137 then
-										local parent = data.parent;
-										while parent do
-											if parent.instanceID then
-												questObject.icon = parent.icon;
-												break;
-											end
-											parent = parent.parent;
-										end
-									end
-								end
-							end
-							if data.g and #data.g > 0 then
-								if not item.g then
-									item.g = {};
-									item.progress = 0;
-									item.total = 0;
-								end
-								MergeObjects(item.g, data.g);
-							end
-						end
-						if ACKCHUALLY then
-							item.s = ACKCHUALLY;
-						end
-					end
-					MergeObject(questObject.g, item);
-				end
-			end
-		else
-			questObject.missingData = true;
-		end
-	end
-	
-	-- Get time remaining info (only works for World Quests)
-	local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questObject.questID);
-	if timeRemaining and timeRemaining > 0 then
-		questObject.timeRemaining = timeRemaining;
-		local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeRemaining * 60));
-		if timeRemaining < 30 then
-			description = "|cFFFF0000" .. description .. "|r";
-		elseif timeRemaining < 60 then
-			description = "|cFFFFFF00" .. description .. "|r";
-		end
-		if not questObject.description then
-			questObject.description = description;
-		else
-			questObject.description = questObject.description .. "\n\n" .. description;
-		end
-	end
-	
-	-- Add info for currency rewards as containers for their respective collectibles
-	if showCurrencies then
-		local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
-		-- numCurrencies will often be 0 for fresh questID API calls...
-		-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
-		local _ = GetQuestLogRewardCurrencyInfo(1, questObject.questID);
-		for j=1,numCurrencies,1 do
-			local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
-			if currencyID then
-				local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
-				cache = fieldCache["currencyID"][currencyID];
-				if cache then
-					for _,data in ipairs(cache) do
-						if data.f then
-							item.f = data.f;
-						end
-						if data.g and #data.g > 0 then
-							if not item.g then
-								item.g = {};
-								item.progress = 0;
-								item.total = 0;
-							end
-							MergeObject(item.g, data);
-						end
-					end
-					if not item.g then
-						item.g = {};
-						item.progress = 0;
-						item.total = 0;
-					end
-					MergeObject(questObject.g, item);
-				end
-			else
-				questObject.missingData = true;
-			end
-		end
-	end
-	
-	-- Resolve all symbolic links
-	if questObject.g and #questObject.g > 0 then
-		for j,item in ipairs(questObject.g) do
-			local resolved = ResolveSymbolicLink(item);
-			if resolved then
-				if not item.g then
-					item.g = resolved;
-				else
-					MergeObjects(item.g, resolved);
-				end
-			end
-		end
-	end
-	
-	-- Since this is not a metatable yet, create a raw isRepeatable value for use prior to that
-	questObject.isRepeatable = questObject.isDaily or questObject.isWeekly or questObject.isMonthly or questObject.isYearly;
-	
-	-- Query quest name if not existing
-	-- This messes up World Bosses somehow, and not sorting on quest names, so don't need to pull it right here
-	-- if not questObject.text then
-		-- local harvestedName = QuestTitleFromID[questObject.questID];
-		-- if harvestedName and harvestedName ~= RETRIEVING_DATA then
-			-- -- questObject.text = harvestedName;
-		-- end
-	-- end
-end
--- Returns a questObject containing a lot of Quest information for displaying in a row
-local function GetPopulatedQuestObject(questID)
-	local questObject = {questID=questID,g={},progress=0,total=0};	
-	PopulateQuestObject(questObject);	
-	return questObject;
-end
--- Returns a mapObject containing basic map information
-local function GetPopulatedMapObject(mapID)
-	local mapObject = { mapID=mapID,g={},progress=0,total=0};
-	cache = fieldCache["mapID"][mapID];
-	if cache then
-		for _,data in ipairs(cache) do
-			if data.mapID and data.icon then
-				mapObject.text = data.text;
-				mapObject.icon = data.icon;
-				mapObject.lvl = data.lvl;
-				mapObject.description = data.description;
-				break;
-			end
-		end
-	end
-	
-	if not mapObject.text then
-		local mapInfo = C_Map_GetMapInfo(mapID);
-		if mapInfo then
-			mapObject.text = mapInfo.name;
-		end
-	end
-	
-	return mapObject;
-end
--- Populates/replaces data within a questObject for displaying in a row
-local function PopulateQuestObject(questObject)
-	-- cannot do anything on a missing object or questID
-	if not questObject or not questObject.questID then
-		return nil;
-	end
-		
-	local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
-	
-	-- Check for a Task-specific icon
-	local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = C_QuestLog.GetQuestTagInfo(questObject.questID);
-	if worldQuestType then
-		if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
-			questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-		elseif worldQuestType == LE_QUEST_TAG_TYPE_PET_BATTLE then
-			questObject.icon = "Interface\\Icons\\PetJournalPortrait";
-		elseif worldQuestType == LE_QUEST_TAG_TYPE_PROFESSION then
-			questObject.icon = "Interface\\Icons\\Trade_BlackSmithing";
-		elseif worldQuestType == LE_QUEST_TAG_TYPE_DUNGEON or tagID == 137 then
-			-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-			-- TODO: Add the relevent dungeon icon. (DONE! IN REWARDS!)
-		elseif worldQuestType == LE_QUEST_TAG_TYPE_RAID then
-			-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
-			-- TODO: Add the relevent dungeon icon.
-		elseif worldQuestType == LE_QUEST_TAG_TYPE_INVASION or worldQuestType == LE_QUEST_TAG_TYPE_INVASION_WRAPPER then
-			questObject.icon = "Interface\\Icons\\achievements_zone_brokenshore";
-		--elseif worldQuestType == LE_QUEST_TAG_TYPE_TAG then
-			-- completely useless
-			--questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-		--elseif worldQuestType == LE_QUEST_TAG_TYPE_NORMAL then
-		--	questObject.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-		end
-	end
-	
-	-- Update Quest info from cache
-	cache = fieldCache["questID"][questObject.questID];
-	if cache then
-		for _,data in ipairs(cache) do
-			for key,value in pairs(data) do
-				if not (key == "g" or key == "parent") then
-					questObject[key] = value;
-				end
-			end
-			if data.isVignette then questObject.isVignette = true; end
-			if data.g then
-				for _,entry in ipairs(data.g) do
-					local resolved = ResolveSymbolicLink(entry);
-					if resolved then
-						entry = CreateObject(entry);
-						if entry.g then
-							MergeObjects(entry.g, resolved);
-						else
-							entry.g = resolved;
-						end
-					end
-					tinsert(questObject.g, entry);
-				end
-			end
-		end
-	end
+    -- Update Quest info from cache
+    cache = fieldCache["questID"][questObject.questID];
+    if cache then
+        for _,data in ipairs(cache) do
+            -- only merge into the WQ quest object properties from a quest object in cache
+            if data.key == "questID" or data["encounterID"] then
+                for key,value in pairs(data) do
+                    if not (key == "g" or key == "parent") then
+                        questObject[key] = value;
+                    end
+                end
+                if data.isVignette then questObject.isVignette = true; end
+                if data.g then
+                    for _,entry in ipairs(data.g) do
+                        local resolved = ResolveSymbolicLink(entry);
+                        if resolved then
+                            entry = CreateObject(entry);
+                            if entry.g then
+                                MergeObjects(entry.g, resolved);
+                            else
+                                entry.g = resolved;
+                            end
+                        end
+                        tinsert(questObject.g, entry);
+                    end
+                end
+            -- otherwise this is a non-quest object flagged with this questID so it should be added under the quest
+            else
+                MergeObject(questObject.g, data);
+            end
+        end
+    end
 	
 	-- Check for provider info
 	if questObject.qgs and #questObject.qgs == 1 then
@@ -13804,31 +13523,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					local bounties = C_QuestLog.GetBountiesForMapID(pair[2]);
 					if bounties and #bounties > 0 then
 						for i,bounty in ipairs(bounties) do
-							local questObject = {questID=bounty.questID,g={}};
-							cache = fieldCache["questID"][questObject.questID];
-							if cache then
-								for _,data in ipairs(cache) do
-									for key,value in pairs(data) do
-										if not (key == "g" or key == "parent") then
-											questObject[key] = value;
-										end
-									end
-									if data.g then
-										for _,entry in ipairs(data.g) do
-											local resolved = ResolveSymbolicLink(entry);
-											if resolved then
-												entry = CreateObject(entry);
-												if entry.g then
-													MergeObjects(entry.g, resolved);
-												else
-													entry.g = resolved;
-												end
-											end
-											tinsert(questObject.g, entry);
-										end
-									end
-								end
-							end
+							local questObject = GetPopulatedQuestObject(bounty.questID);
 							MergeObject(mapObject.g, questObject);
 						end
 					end
@@ -14064,14 +13759,15 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 													end
 												end
 											end
-											if data.g and #data.g > 0 then
-												if not item.g then
-													item.g = {};
-													item.progress = 0;
-													item.total = 0;
-												end
-												MergeObject(item.g, data);
-											end
+											MergeObject(item, data);
+											-- if data.g and #data.g > 0 then
+												-- -- if not item.g then
+													-- -- item.g = {};
+													-- -- item.progress = 0;
+													-- -- item.total = 0;
+												-- -- end
+												-- MergeObject(item.g, data);
+											-- end
 										end
 									end
 									if ACKCHUALLY then
@@ -14227,7 +13923,8 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				end
 				-- false here may cause 'invalid order function' error when no other conditions match
 				-- print("a-b",a.key,b.key);
-				return a.key <= b.key;
+				-- return a.key <= b.key;
+				return true;
 			end;
 		end
 		
