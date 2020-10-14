@@ -249,7 +249,6 @@ namespace ATT
                 foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt32(qg)] = true;
             }
 
-
             // Check to see what patch this data was made relevant for.
             if (data.TryGetValue("timeline", out object timelineRef) && !data.ContainsKey("u") && timelineRef is List<object> timeline)
             {
@@ -646,6 +645,13 @@ namespace ATT
             {
                 Objects.AssignFilterID(data);
                 Objects.AssignFactionID(data);
+
+                // verify that no source is included for items which should explicitly ignoreSource
+                if (data.TryGetValue("ignoreSource", out bool ig) && ig)
+                {
+                    data.Remove("s");
+                    data.Remove("modIDs");
+                }
             }
 
             // Merge the Item Data into the Containers.

@@ -421,7 +421,7 @@ namespace ATT
             public static readonly Dictionary<object, object> SKILL_ID_CONVERSION_TABLE = new Dictionary<object, object>
             {
 	            // Alchemy Skills
-	            {171, 171},	// Alchemy [7.3.5]
+	            {171, 171},	    // Alchemy [7.3.5]
 	            {2485, 171},	// Classic Alchemy [8.0.1]
 	            {2484, 171},	// Outland Alchemy [8.0.1]
 	            {2483, 171},	// Northrend Alchemy [8.0.1]
@@ -430,12 +430,13 @@ namespace ATT
 	            {2480, 171},	// Draenor Alchemy [8.0.1]
 	            {2479, 171},	// Legion Alchemy [8.0.1]
 	            {2478, 171},	// Kul Tiran Alchemy [8.0.1]
+	            {2750, 171},	// Shadowlands Alchemy [9.0.1]
 
 	            // Archaeology Skills
-	            {794, 794},	// Archaeology [7.3.5]
+	            {794, 794},	    // Archaeology [7.3.5]
 
 	            // Blacksmithing Skills
-	            {164, 164},	// Blacksmithing [7.3.5]
+	            {164, 164},	    // Blacksmithing [7.3.5]
                 {9788, 9788},   // Armorsmithing
                 {9787, 9787},   // Weaponsmithing
                 {17041, 17041},   // Master Axesmith
@@ -449,6 +450,7 @@ namespace ATT
 	            {2472, 164},	// Draenor Blacksmithing [8.0.1]
 	            {2454, 164},	// Legion Blacksmithing [8.0.1]
 	            {2437, 164},	// Kul Tiran Blacksmithing [8.0.1]
+	            {2751, 164},	// Shadowlands Blacksmithing [9.0.1]
 
 	            // Cooking Skills
 	            {185, 185},	    // Cooking [7.3.5]
@@ -466,9 +468,10 @@ namespace ATT
 	            {2543, 185},	// Draenor Cooking [8.0.1]
 	            {2542, 185},	// Legion Cooking [8.0.1]
 	            {2541, 185},	// Kul Tiran Cooking [8.0.1]
+	            {2752, 185},	// Shadowlands Cooking [9.0.1]
 
 	            // Enchanting Skills
-	            {333, 333},	// Enchanting [7.3.5]
+	            {333, 333},	    // Enchanting [7.3.5]
 	            {2494, 333},	// Classic Enchanting [8.0.1]
 	            {2493, 333},	// Outland Enchanting [8.0.1]
 	            {2492, 333},	// Northrend Enchanting [8.0.1]
@@ -477,9 +480,10 @@ namespace ATT
 	            {2488, 333},	// Draenor Enchanting [8.0.1]
 	            {2487, 333},	// Legion Enchanting [8.0.1]
 	            {2486, 333},	// Kul Tiran Enchanting [8.0.1]
+	            {2753, 333},	// Shadowlands Enchanting [9.0.1]
 
 	            // Engineering Skills
-	            {202, 202},	// Engineering [7.3.5]
+	            {202, 202},	    // Engineering [7.3.5]
                 {20219, 20219},    // Gnomish Engineering
                 {20222, 20222},    // Goblin Engineering
 	            {2506, 202},	// Classic Engineering [8.0.1]
@@ -490,12 +494,13 @@ namespace ATT
 	            {2501, 202},	// Draenor Engineering [8.0.1]
 	            {2500, 202},	// Legion Engineering [8.0.1]
 	            {2499, 202},	// Kul Tiran Engineering [8.0.1]
+	            {2755, 202},	// Shadowlands Engineering [9.0.1]
 
 	            // First Aid Skills
-	            {129, 129},	// First Aid [7.3.5] [REMOVED FROM GAME]
+	            {129, 129},	    // First Aid [7.3.5] [REMOVED FROM GAME]
 
 	            // Fishing Skills
-	            {356, 356},	// Fishing [7.3.5]
+	            {356, 356},	    // Fishing [7.3.5]
 	            {2592, 356},	// Classic Fishing [8.0.1]
 	            {2591, 356},	// Outland Fishing [8.0.1]
 	            {2590, 356},	// Northrend Fishing [8.0.1]
@@ -504,9 +509,10 @@ namespace ATT
 	            {2587, 356},	// Draenor Fishing [8.0.1]
 	            {2586, 356},	// Legion Fishing [8.0.1]
 	            {2585, 356},	// Kul Tiran Fishing [8.0.1]
+	            {2754, 356},	// Shadowlands Fishing [9.0.1]
 
 	            // Herbalism Skills
-	            {182, 182},	// Herbalism [7.3.5]
+	            {182, 182},	    // Herbalism [7.3.5]
 	            {2556, 182},	// Classic Herbalism [8.0.1]
 	            {2555, 182},	// Outland Herbalism [8.0.1]
 	            {2554, 182},	// Northrend Herbalism [8.0.1]
@@ -515,9 +521,10 @@ namespace ATT
 	            {2551, 182},	// Draenor Herbalism [8.0.1]
 	            {2550, 182},	// Legion Herbalism [8.0.1]
 	            {2549, 182},	// Kul Tiran Herbalism [8.0.1]
+	            {2760, 182},	// Shadowlands Herbalism [9.0.1]
 
 	            // Inscription Skills
-	            {773, 773},	// Inscription [7.3.5]
+	            {773, 773},	    // Inscription [7.3.5]
 	            {2514, 773},	// Classic Inscription [8.0.1]
 	            {2513, 773},	// Outland Inscription [8.0.1]
 	            {2512, 773},	// Northrend Inscription [8.0.1]
@@ -526,9 +533,10 @@ namespace ATT
 	            {2509, 773},	// Draenor Inscription [8.0.1]
 	            {2508, 773},	// Legion Inscription [8.0.1]
 	            {2507, 773},	// Kul Tiran Inscription [8.0.1]
+	            {2756, 773},	// Shadowlands Inscription [9.0.1]
 
 	            // Jewelcrafting Skills
-	            {755, 755},	// Jewelcrafting [7.3.5]
+	            {755, 755},	    // Jewelcrafting [7.3.5]
 	            {2524, 755},	// Classic Jewelcrafting [8.0.1]
 	            {2523, 755},	// Outland Jewelcrafting [8.0.1]
 	            {2522, 755},	// Northrend Jewelcrafting [8.0.1]
@@ -537,9 +545,10 @@ namespace ATT
 	            {2519, 755},	// Draenor Jewelcrafting [8.0.1]
 	            {2518, 755},	// Legion Jewelcrafting [8.0.1]
 	            {2517, 755},	// Kul Tiran Jewelcrafting [8.0.1]
+	            {2757, 755},	// Shadowlands Jewelcrafting [9.0.1]
 
 	            // Leatherworking Skills
-	            {165, 165},	// Leatherworking [7.3.5]
+	            {165, 165},	    // Leatherworking [7.3.5]
                 {10656, 10656},    // Dragonscale Leatherworking
                 {10658, 10658},    // Elemental Leatherworking
                 {10660, 10660},    // Tribal Leatherworking
@@ -551,9 +560,10 @@ namespace ATT
 	            {2527, 165},	// Draenor Leatherworking [8.0.1]
 	            {2526, 165},	// Legion Leatherworking [8.0.1]
 	            {2525, 165},	// Kul Tiran Leatherworking [8.0.1]
+	            {2758, 165},	// Shadowlands Leatherworking [9.0.1]
 
 	            // Mining Skills
-	            {186, 186},	// Mining [7.3.5]
+	            {186, 186},	    // Mining [7.3.5]
 	            {2572, 186},	// Classic Mining [8.0.1]
 	            {2571, 186},	// Outland Mining [8.0.1]
 	            {2570, 186},	// Northrend Mining [8.0.1]
@@ -562,9 +572,10 @@ namespace ATT
 	            {2567, 186},	// Draenor Mining [8.0.1]
 	            {2566, 186},	// Legion Mining [8.0.1]
 	            {2565, 186},	// Kul Tiran Mining [8.0.1]
+	            {2761, 186},	// Shadowlands Mining [9.0.1]
 
 	            // Skinning Skills
-	            {393, 393},	// Skinning [7.3.5]
+	            {393, 393},	    // Skinning [7.3.5]
 	            {2564, 393},	// Classic Skinning [8.0.1]
 	            {2563, 393},	// Outland Skinning [8.0.1]
 	            {2562, 393},	// Northrend Skinning [8.0.1]
@@ -573,9 +584,10 @@ namespace ATT
 	            {2559, 393},	// Draenor Skinning [8.0.1]
 	            {2558, 393},	// Legion Skinning [8.0.1]
 	            {2557, 393},	// Kul Tiran Skinning [8.0.1]
+	            {2762, 393},	// Shadowlands Skinning [9.0.1]
 
 	            // Tailoring Skills
-	            {197, 197},	// Tailoring [7.3.5]
+	            {197, 197},	    // Tailoring [7.3.5]
 	            {2540, 197},	// Classic Tailoring [8.0.1]
 	            {2539, 197},	// Outland Tailoring [8.0.1]
 	            {2538, 197},	// Northrend Tailoring [8.0.1]
@@ -584,6 +596,7 @@ namespace ATT
 	            {2535, 197},	// Draenor Tailoring [8.0.1]
 	            {2534, 197},	// Legion Tailoring [8.0.1]
 	            {2533, 197},    // Kul Tiran Tailoring [8.0.1]
+	            {2759, 197},    // Shadowlands Tailoring [9.0.1]
             };
 
             /// <summary>

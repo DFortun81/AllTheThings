@@ -23,6 +23,7 @@ namespace ATT
         const string API_CALL_QUEST = "/data/wow/quest/{0}?namespace=static-us&locale=en_US&access_token=";
         static string API_KEY = null;
         static HttpClient Client { get; } = new HttpClient();
+        static bool HasClientInitialized { get; set; } = false;
         static ConcurrentQueue<Tuple<int, string>> DataResults { get; } = new ConcurrentQueue<Tuple<int, string>>();
         static ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>> APIResults { get; } = new ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>>();
         static ConcurrentQueue<string> ParseDatas { get; } = new ConcurrentQueue<string>();
@@ -95,6 +96,7 @@ namespace ATT
             {
                 InitItems();
                 // begin item harvest from API
+                Console.WriteLine("Harvesting Items starting at " + MaxItemID.ToString());
                 HarvestItems();
             }
 
@@ -105,6 +107,7 @@ namespace ATT
             {
                 InitQuests();
                 // begin quest harvest from API
+                Console.WriteLine("Harvesting Quests starting at " + MaxQuestID.ToString());
                 HarvestQuests();
             }
 
@@ -248,9 +251,7 @@ namespace ATT
 
         static void HarvestItems()
         {
-            Client.BaseAddress = new Uri("https://us.api.blizzard.com");
-            Client.DefaultRequestHeaders.Accept.Clear();
-            Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            InitClient();
             var APIKeyFileName = "API.key";
             if (File.Exists(APIKeyFileName)) API_KEY = File.ReadAllText(APIKeyFileName);
             else
@@ -281,9 +282,7 @@ namespace ATT
 
         static void HarvestQuests()
         {
-            Client.BaseAddress = new Uri("https://us.api.blizzard.com");
-            Client.DefaultRequestHeaders.Accept.Clear();
-            Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            InitClient();
             var APIKeyFileName = "API.key";
             if (File.Exists(APIKeyFileName)) API_KEY = File.ReadAllText(APIKeyFileName);
             else
@@ -310,6 +309,16 @@ namespace ATT
                 QueueAPIRequestForID(i);
                 --i;
             }
+        }
+
+        static void InitClient()
+        {
+            if (HasClientInitialized) return;
+            HasClientInitialized = true;
+
+            Client.BaseAddress = new Uri("https://us.api.blizzard.com");
+            Client.DefaultRequestHeaders.Accept.Clear();
+            Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
         private static void QueueAPIRequestForID(int i, bool retry = false)
