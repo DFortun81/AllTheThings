@@ -29,20 +29,26 @@ _.Instances = { tier(4, {	-- Cataclysm
 					114,	-- Borean Tundra
 				},
 				["g"] = {
-					{	---------- Your Time Has Come (A / H)
+					a(q(29453, {	-- Your Time Has Come [A]
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
-						["allianceQuestID"] = 29453,	-- Your Time Has Come [Alliance]
-						["hordeQuestID"] = 	  29452,	-- Your Time Has Come [Horde]
 						["provider"] = { "n", 53115 },	-- Molten Lord
-						["isBreadcrumb"] = true,    -- for A Legendary Engagement
-					},
-					{	---------- A Legendary Engagement (A / H)
+						["isBreadcrumb"] = true,    -- for A Legendary Engagement					
+					})),
+					h(q(29452, {	-- Your Time Has Come [H]
+						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
+						["provider"] = { "n", 53115 },	-- Molten Lord
+						["isBreadcrumb"] = true,    -- for A Legendary Engagement					
+					})),
+					a(q(29129, {	-- A Legendary Engagement [A]
 						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
-						["allianceQuestID"] = 29129,	-- A Legendary Engagement [Alliance]
-						["hordeQuestID"] = 	  29132,	-- A Legendary Engagement [Horde]
 						["provider"] = { "n", 52382 },	-- Ziradormi
-						["sourceQuests"] = { 29453, 29452 },	-- Your Time Has Come
-					},
+						["sourceQuests"] = { 29453 },	-- Your Time Has Come			
+					})),
+					h(q(29132, {	-- A Legendary Engagement [H]
+						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						["provider"] = { "n", 52382 },	-- Ziradormi
+						["sourceQuests"] = { 29452 },	-- Your Time Has Come			
+					})),
 					q(29134, {	-- A Wrinkle in Time
 						["provider"] = { "n", 15192 },	-- Anachronos
 						["sourceQuests"] = {
@@ -182,16 +188,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71085),	-- Runestaff of Nordrassil
 						},
 					}),
-					{	---------- Heart of Flame (A / H)
+					a(q(29307, {	-- Heart of Flame [A]
 						["provider"] = { "n", 53349 },	-- Kalecgos
-						["allianceQuestID"] = 29307,	-- Heart of Flame [Alliance]
-						["hordeQuestID"] = 	  29308,	-- Heart of Flame [Horde]
 						["sourceQuests"] = { 29285 },	-- Alignment
 						["g"] = {
 							i(69848, {	-- Heart of Flame
 								["description"] = "The heart has 100% drop rate from Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty.\n\nGather Essences by killing the bosses and syphoning the essences with your staff.",
-								["allianceQuestID"] = 29307,	-- Heart of Flame [Alliance]
-								["hordeQuestID"] = 	  29308,	-- Heart of Flame [Horde]
 								["crs"] = {
 									53691,	-- Shannox
 									52498,	-- Beth'tilac <The Red Widow>
@@ -203,17 +205,41 @@ _.Instances = { tier(4, {	-- Cataclysm
 									52409,	-- Ragnaros
 								},
 							}),
-						},
-					},
-					{	---------- The Stuff of Legends (A / H)
+						},					
+					})),
+					h(q(29308, {	-- Heart of Flame [H]
+						["provider"] = { "n", 53349 },	-- Kalecgos
+						["sourceQuests"] = { 29285 },	-- Alignment
+						["g"] = {
+							i(69848, {	-- Heart of Flame
+								["description"] = "The heart has 100% drop rate from Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty.\n\nGather Essences by killing the bosses and syphoning the essences with your staff.",
+								["crs"] = {
+									53691,	-- Shannox
+									52498,	-- Beth'tilac <The Red Widow>
+									52530,	-- Alysrazor
+									52558,	-- Lord Rhyolith
+									53494,	-- Baleroc <The Gatekeeper>
+									52571,	-- Majordomo Staghelm <Archdruid of the Flame>
+									54198,	-- Smoldering Essence
+									52409,	-- Ragnaros
+								},
+							}),
+						},					
+					})),
+					a(q(29312, {	-- The Stuff of Legends [A]
 						["provider"] = { "n", 53466 },	-- Hallegosa
-						["allianceQuestID"] = 29312,	-- The Stuff of Legends [Alliance]
-						["hordeQuestID"] = 29309,		-- The Stuff of Legends [Horde]
-						["sourceQuests"] = { 29307, 29308 },	-- Heart of Flame
+						["sourceQuests"] = { 29307 },	-- Heart of Flame
 						["g"] = {
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest
-						},
-					},
+						},					
+					})),
+					h(q(29309, {	-- The Stuff of Legends [H]
+						["provider"] = { "n", 53466 },	-- Hallegosa
+						["sourceQuests"] = { 29308 },	-- Heart of Flame
+						["g"] = {
+							i(71086),	-- Dragonwrath, Tarecgosa's Rest
+						},					
+					})),
 				},
 			}),
 			n(VENDORS, {
