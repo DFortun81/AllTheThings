@@ -13759,15 +13759,14 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 													end
 												end
 											end
-											MergeObject(item, data);
-											-- if data.g and #data.g > 0 then
-												-- -- if not item.g then
-													-- -- item.g = {};
-													-- -- item.progress = 0;
-													-- -- item.total = 0;
-												-- -- end
-												-- MergeObject(item.g, data);
-											-- end
+											if data.g and #data.g > 0 then
+												if not item.g then
+													item.g = {};
+													item.progress = 0;
+													item.total = 0;
+												end
+												MergeObjects(item.g, data.g);
+											end
 										end
 									end
 									if ACKCHUALLY then
