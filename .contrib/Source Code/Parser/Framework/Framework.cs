@@ -779,7 +779,7 @@ namespace ATT
             else
             {
                 var tierLists = new Dictionary<int, TierList>();
-                for (int tierID = 1; tierID <= 8; ++tierID)
+                for (int tierID = 1; tierID <= 9; ++tierID)
                 {
                     unsorted.Add(new Dictionary<string, object>
                     {
@@ -795,14 +795,15 @@ namespace ATT
                     {
                         if (item.TryGetValue("lvl", out object lvlRef) && lvlRef is int level)
                         {
-                            if (level < 61) tier = tierLists[1]; // Classic
-                            else if (level < 71) tier = tierLists[2];   // Burning Crusade
-                            else if (level < 81) tier = tierLists[3];   // Wrath of the Lich King
-                            else if (level < 86) tier = tierLists[4];   // Cataclysm
-                            else if (level < 91) tier = tierLists[5];   // Mists of Pandaria
-                            else if (level < 101) tier = tierLists[6];   // Warlords of Draenor
-                            else if (level < 111) tier = tierLists[7];   // Legion
-                            else tier = tierLists[8];   // Battle For Azeroth
+                            if (level <= 25) tier = tierLists[1]; // Classic
+                            else if (level <= 27) tier = tierLists[2];   // Burning Crusade
+                            else if (level <= 30) tier = tierLists[3];   // Wrath of the Lich King
+                            else if (level <= 32) tier = tierLists[4];   // Cataclysm
+                            else if (level <= 35) tier = tierLists[5];   // Mists of Pandaria
+                            else if (level <= 40) tier = tierLists[6];   // Warlords of Draenor
+                            else if (level <= 45) tier = tierLists[7];   // Legion
+                            else if (level <= 50) tier = tierLists[8];   // Battle For Azeroth
+                            else tier = tierLists[8];   // Shadowlands
                         }
                         else if (item.TryGetValue("itemID", out object itemIDRef))
                         {
@@ -814,7 +815,8 @@ namespace ATT
                             else if (itemID < 100855) tier = tierLists[5];   // Mists of Pandaria
                             else if (itemID < 130731) tier = tierLists[6];   // Warlords of Draenor
                             else if (itemID < 156823) tier = tierLists[7];   // Legion
-                            else tier = tierLists[8];   // Battle For Azeroth
+                            else if (itemID < 174366) tier = tierLists[8];   // Battle For Azeroth
+                            else tier = tierLists[9];   // Shadowlands
                         }
                         else tier = tierLists[1];
                     }
