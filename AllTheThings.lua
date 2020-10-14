@@ -8252,11 +8252,12 @@ UpdateGroup = function(parent, group)
 				group.total = 0;
 			end
 			
-			-- Update the subgroups recursively...
-			UpdateGroups(group, group.g);
-			
 			-- If the 'can equip' filter says true
 			if app.GroupFilter(group) then
+			
+				-- Update the subgroups recursively...
+				UpdateGroups(group, group.g);
+				
 				-- Increment the parent group's totals.
 				parent.total = (parent.total or 0) + group.total;
 				parent.progress = (parent.progress or 0) + group.progress;
