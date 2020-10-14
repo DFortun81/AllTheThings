@@ -847,16 +847,16 @@ _.Zones =
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 79.0, 69.8, 84 },
 					["sourceQuests"] = {
-                        59586,	-- What's Your Specialty?
-                        59587,	-- What's Your Specialty?
-                        59588,	-- What's Your Specialty?
-                        59589,	-- What's Your Specialty?
-                        59590,	-- What's Your Specialty?
-                        59591,	-- What's Your Specialty?
-                        59592,	-- What's Your Specialty?
-                        59593,	-- What's Your Specialty?
-                        59594,	-- What's Your Specialty?
-                    },
+						59586,	-- What's Your Specialty?
+						59587,	-- What's Your Specialty?
+						59588,	-- What's Your Specialty?
+						59589,	-- What's Your Specialty?
+						59590,	-- What's Your Specialty?
+						59591,	-- What's Your Specialty?
+						59592,	-- What's Your Specialty?
+						59593,	-- What's Your Specialty?
+						59594,	-- What's Your Specialty?
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53370, {	-- Hour of Reckoning

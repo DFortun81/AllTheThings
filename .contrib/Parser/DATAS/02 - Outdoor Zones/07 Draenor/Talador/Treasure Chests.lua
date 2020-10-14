@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(535, {	-- Talador
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				n(77664, {	-- Aarko
 					["description"] = "Speak to Aarko.\nAssist him in killing 2 waves of enemies, then Surok Darkstorm.\nLoot the Treasure.",
 					["questID"] = 34182,

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(882, {	-- Mac'Aree
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				o(273301, {	-- Ancient Eredar Cache
 					["isDaily"] = true,
 					["questID"] = 48346,

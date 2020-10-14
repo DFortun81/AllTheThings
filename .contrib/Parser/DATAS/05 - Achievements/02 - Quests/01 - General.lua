@@ -42,7 +42,7 @@ _.Achievements =
 				crit(1),		-- The Green Hills of Stranglethorn
 				crit(3),		-- The Snows of Northrend
 			}),
-            ach(14222),     -- Exile's Reach
+			ach(14222),     -- Exile's Reach
 			ach(5752, {		-- Justly Rewarded
 				ach(1182),		-- The Bread Winner
 			}),

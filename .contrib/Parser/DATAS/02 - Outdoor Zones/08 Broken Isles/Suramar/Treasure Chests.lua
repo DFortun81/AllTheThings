@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(680, {	-- Suramar
-			n(-212, {	-- Treasure Chests
+			n(TREASURES, {
 				o(251416, {	-- Ancient Mana Chunk
 					["questID"] = 42827,
 					["coord"] = { 26.4, 41.3, 680 },

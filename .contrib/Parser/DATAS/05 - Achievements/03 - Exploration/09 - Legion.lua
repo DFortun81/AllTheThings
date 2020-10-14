@@ -418,7 +418,7 @@ _.Achievements =
 				crit(21),		-- Precious Augari Keepsakes
 				crit(22),		-- Missing Augari Chest
 			}),
-			ach(14729),     -- To All The Squirrels I Love Despite Their Scars
+			ach(14729),		-- To All The Squirrels I Love Despite Their Scars
 			ach(11256),		-- Treasures of Azsuna
 			ach(11257),		-- Treasures of Highmountain
 			ach(11259),		-- Treasures of Stormheim

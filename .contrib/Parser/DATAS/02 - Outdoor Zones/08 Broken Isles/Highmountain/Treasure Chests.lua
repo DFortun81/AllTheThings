@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(650, {	-- Highmountain
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				o(243798, {	-- A Steamy Jewelry Box
 					["questID"] = 39531,
 					["coord"] = { 63.5, 59.3, 750 },

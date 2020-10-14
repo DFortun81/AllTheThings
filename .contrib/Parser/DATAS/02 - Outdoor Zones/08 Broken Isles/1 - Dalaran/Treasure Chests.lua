@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(627, {	-- Dalaran
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				o(248854, {	-- Desmond's Lockbox
 					["questID"] = 41929,
 					["coord"] = { 28.7, 64.4, 627 },

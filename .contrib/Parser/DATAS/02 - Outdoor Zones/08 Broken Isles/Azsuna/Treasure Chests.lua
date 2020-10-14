@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				o(240638, {	-- Disputed Treasure
 					["questID"] = 38365,
 					["coord"] = { 55.9, 56.9, 630 },

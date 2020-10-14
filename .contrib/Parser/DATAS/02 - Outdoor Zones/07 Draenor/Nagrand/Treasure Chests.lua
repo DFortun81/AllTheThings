@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(550, {	-- Nagrand
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				--[[
 				Note: These objects have known flags to mark completion but they never seem to fire.
 					  The coords have been added to the "Abu'gar" quest instead.

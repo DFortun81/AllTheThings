@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(539, {	-- Shadowmoon Valley
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				o(224756, {	-- Alchemist's Satchel
 					["questID"] = 35581,
 					["coord"] = { 54.9, 45.0, 539 },

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(525, {	-- Frostfire Ridge
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				o(226955, {	-- Arena Master's War Horn
 					["questID"] = 33916,
 					["coord"] = { 23.1, 24.9, 525 },

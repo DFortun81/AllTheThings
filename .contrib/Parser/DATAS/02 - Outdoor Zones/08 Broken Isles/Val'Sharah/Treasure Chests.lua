@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(641, {	-- Val'sharah
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				o(242671, {	-- Glimmering Treasure Chest
 					["questID"] = 39089,
 					["coord"] = { 61.0, 79.2, 641 },

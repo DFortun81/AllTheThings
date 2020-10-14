@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(590, {	-- Frostwall
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					o(231063, {	-- Lady Sena's Materials Stash

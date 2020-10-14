@@ -1529,7 +1529,7 @@ _.Achievements =
 					}),
 				},
 			}),
-			ach(14730), -- To All The Squirrels I Set Sail to See
+			ach(14730),		-- To All The Squirrels I Set Sail to See
 			ach(13635, {	-- Tour of the Depths
 				crit(1),	-- Complete an Emissary for your ally in Nazjatar
 				crit(2),	-- Defeat one of the World Bosses of Nazjatar

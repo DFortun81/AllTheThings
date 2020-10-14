@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				o(281646, {	-- Honey Vat
 					["questID"] = 50576,
 					["coord"] = { 66.6, 71.1, 942 },

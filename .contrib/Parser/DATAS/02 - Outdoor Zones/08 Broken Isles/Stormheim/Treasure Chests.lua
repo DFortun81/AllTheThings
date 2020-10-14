@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
-			n(-212,   {	-- Treasure Chest
+			n(TREASURES, {
 				o(241717, {	-- Glimmering Treasure Chest
 					["questID"] = 38763,
 					["coord"] = { 49.7, 47.3, 634 },

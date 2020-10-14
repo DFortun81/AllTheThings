@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(37, {	-- Elwynn Forest
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				o(310709, {	-- Waterlogged Chest
 					["model"] = 196989,
 					["questID"] = 54131,

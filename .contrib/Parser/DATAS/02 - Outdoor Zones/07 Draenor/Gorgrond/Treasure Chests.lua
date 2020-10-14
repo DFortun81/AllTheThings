@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(543, {	-- Gorgrond
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				n(-357, {	-- Sparring Arena
 					o(233455, {	-- Aged Stone Container
 						["questID"] = 36734,

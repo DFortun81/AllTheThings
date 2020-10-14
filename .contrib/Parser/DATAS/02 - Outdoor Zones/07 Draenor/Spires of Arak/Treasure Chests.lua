@@ -7,7 +7,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(542, {	-- Spires of Arak
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				o(235313, {	-- Abandoned Mining Pick (cannot be transmogged)
 					["questID"] = 36458,
 					["coord"]= { 40.6, 55.0, 542 },

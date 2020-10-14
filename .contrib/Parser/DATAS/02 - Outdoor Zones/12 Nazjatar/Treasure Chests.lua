@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-212, {	-- Treasure Chest
+		n(TREASURES, {
 			--[[
 			void cache: locked chest, unknown pre-reqs. 56.3, 15.1
 			arcane cache: locked chest, unknown pre-reqs. 53.1, 28.3

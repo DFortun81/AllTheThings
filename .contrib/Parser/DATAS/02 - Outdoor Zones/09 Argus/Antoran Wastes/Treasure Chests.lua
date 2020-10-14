@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(885, {	-- Antoran Wastes
-			n(-212,   {	-- Treasure Chest
+			n(TREASURES, {
 				o(273519, {	-- Legion War Supplies (east and south of small green lake in southeast area of map)
 					["questID"] = 48382,
 					["isDaily"] = true,

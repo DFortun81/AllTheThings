@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(534, {	-- Tanaan Jungle
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				o(241692, {	-- Axe of the Weeping Wolf
 					["questID"] = 38754,
 					["coord"] = { 14.9, 54.4, 534 },

@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					o(232507, {	-- Lunarfall Egg

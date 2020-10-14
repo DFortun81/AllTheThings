@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(371, {	-- The Jade Forest
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				n(-246, {	-- Is Another Man's Treasure
 					o(213741, {	-- Ancient Jinyu Staff
 						["questID"] = 31402,

@@ -253,7 +253,7 @@ _.Achievements =
 				crit(11),		-- Wasp Stinger
 			}),
 			ach(9401),		-- Shredder Maniac
-			ach(14728),     -- To All The Squirrels Through Time and Space
+			ach(14728),		-- To All The Squirrels Through Time and Space
 		}),
 	}),
 };

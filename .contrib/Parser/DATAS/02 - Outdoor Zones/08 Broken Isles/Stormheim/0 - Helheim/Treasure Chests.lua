@@ -7,7 +7,7 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
 			m(649, {	-- Helheim
-				n(-212, {	-- Treasure Chest
+				n(TREASURES, {
 					o(240649, {	-- Small Treasure Chest
 						["questID"] = 38383,
 						["coord"] = { 60.9, 53.3, 649 },
