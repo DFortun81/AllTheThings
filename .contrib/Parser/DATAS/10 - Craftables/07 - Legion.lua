@@ -267,6 +267,16 @@ _.Craftables =
 			},
 		}),
 		n(-185, {	-- Inscription
+			filter(111, {	-- Glyphs
+				i(140630, {	-- Glyph of the Doe
+					["questID"] = 62678,
+					["classes"] = { DRUID },
+				}),
+				i(129021, {	-- Glyph of the Sentinel
+					["questID"] = 62675,
+					["classes"] = { DRUID },
+				}),
+			}),
 			n(-491, {	-- Tarot Cards
 				sp(191659, {	-- Darkmoon Card of the Legion
 					sp(191654, {	-- Dominion Deck

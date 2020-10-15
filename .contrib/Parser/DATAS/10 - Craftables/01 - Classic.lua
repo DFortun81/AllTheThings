@@ -439,6 +439,12 @@ _.Craftables =
 			}),
 		}),
 		n(-185, { 	-- Inscription
+			filter(111, {	-- Glyphs
+				i(89868, {	-- Glyph of the Cheetah
+					["questID"] = 62677,
+					["classes"] = { DRUID },
+				}),
+			}),
 			n(-491, {	-- Tarot Cards
 				i(44161, {	-- Arcane Tarot
 					i(44148, {	-- Mages Deck

@@ -224,6 +224,12 @@ _.Craftables =
 			}),
 		}),
 		n(-185, { 	-- Inscription
+			filter(111, {	-- Glyphs
+				i(40919, {	-- Glyph of the Orca
+					["questID"] = 62673,
+					["classes"] = { DRUID },
+				}),
+			}),
 			n(-491, {	-- Tarot Cards
 				sp(59504, {	-- Darkmoon Card of the North
 					i(44260, {["f"] = 55}),    -- Ace of Prisms

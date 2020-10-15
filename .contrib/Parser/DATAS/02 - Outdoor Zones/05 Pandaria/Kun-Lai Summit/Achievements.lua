@@ -53,7 +53,7 @@ _.Zones =
 							["description"] = "Cave entrance is at 73.2, 73.6.  This chest is personal loot and focuses on your set spec, not your loot spec.",
 							["modelScale"] = 1.5,
 							["questID"] = 31412,
-							["model"] = "World\\SkillActivated\\Containers\\TreasureChest04.mdx",
+							["model"] = 446675,
 							["coord"] = { 74.6, 74.8 },	-- needs mapID, probably separate map for cave
 							["icon"] = "Interface\\Icons\\inv_misc_treasurechest01a",
 							["g"] = {
@@ -71,7 +71,7 @@ _.Zones =
 								{ 70.1, 63.9, 379 },
 								{ 71.1, 62.6, 379 },
 							},
-							["model"] = "World\\Expansion04\\Doodads\\Yakmen\\Yakmen_WeaponRack_01.mdx",
+							["model"] = 593274,
 							["icon"] = "Interface\\Icons\\inv_misc_ornatebox",
 							["g"] = {
 								i(88723),	-- Sturdy Yaungol Spear
