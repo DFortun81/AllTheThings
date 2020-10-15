@@ -140,6 +140,7 @@ namespace ATT
             /// <returns>The Filter ID. (Default: 0 if invalid, -1 if ignored.)</returns>
             private static Filters CalculateFilter(int itemClass, int itemSubClass, int inventoryType)
             {
+                // https://wow.gamepedia.com/Enum.InventoryType
                 // Inventory Types
                 // Some inventory types make this very very easy to calculate.
                 switch (inventoryType)
@@ -151,6 +152,8 @@ namespace ATT
                     case 16: return Filters.Cloak;
                     case 18: return Filters.Bag;
                     case 19: return Filters.Tabard;
+                    case 22: return Filters.HeldInOffHand;
+                    case 23: return Filters.HeldInOffHand;
                     default: break;
                 }
 
@@ -247,7 +250,7 @@ namespace ATT
                                                 case 09: return Filters.Cosmetic;           // Wrist (no armor type specified - Cosmetic?)
                                                 case 10: return Filters.Cosmetic;           // Gloves (no armor type specified - Cosmetic?)
                                                 case 20: return Filters.Cosmetic;           // Chest (no armor type specified - Cosmetic?)
-                                                case 23: return Filters.HeldInOffHand;      // Held in Offhand
+                                                //case 23: return Filters.HeldInOffHand;      // Held in Offhand
                                                 default: return Filters.Invalid;
                                             }
                                         default: return Filters.Invalid;
@@ -346,7 +349,7 @@ namespace ATT
                                     case 10: return Filters.Cosmetic;           // Gloves (no armor type specified - Cosmetic?)
                                     case 20: return Filters.Cosmetic;           // Chest (no armor type specified - Cosmetic?)
                                     case 21: return Filters.Cosmetic;           // Main Hand (no armor type specified - Cosmetic?)
-                                    case 23: return Filters.HeldInOffHand;      // Held in Offhand
+                                    //case 23: return Filters.HeldInOffHand;      // Held in Offhand
                                     case 24: return Filters.Ignored;            // Projectiles
                                     default: return Filters.Invalid;
                                 }

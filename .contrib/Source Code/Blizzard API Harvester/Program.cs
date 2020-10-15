@@ -51,17 +51,24 @@ namespace ATT
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Harvester Started!");
+
             ObjType[] parseTypes = (ObjType[])Enum.GetValues(typeof(ObjType));
             foreach (ObjType parseType in parseTypes)
             {
                 ProcessObjects[parseType] = false;
             }
 
+            // can tell harvester to only parse existing datas for a certain date
+            string parseOnlyDate = args.FirstOrDefault(a => a.StartsWith("parse="))?.Substring(6);
+
             // optionally do only specific API pull types
             if (args != null && args.Length > 0)
             {
+                Console.Write("args:");
                 foreach (string arg in args)
                 {
+                    Console.Write(arg + ",");
                     if (Enum.TryParse(arg, out ObjType parseType))
                     {
                         ProcessObjects[parseType] = true;
@@ -92,7 +99,7 @@ namespace ATT
             };
             threadAPIReceiver.Start();
 
-            if (ProcessObjects[ObjType.item])
+            if (ProcessObjects[ObjType.item] && parseOnlyDate == null)
             {
                 InitItems();
                 // begin item harvest from API
@@ -103,13 +110,16 @@ namespace ATT
             // dont switch to quest harvest until items are done
             while (APIResults.Count > 0 || DataResults.Count > 0) { Thread.Sleep(50); }
 
-            if (ProcessObjects[ObjType.quest])
+            if (ProcessObjects[ObjType.quest] && parseOnlyDate == null)
             {
                 InitQuests();
                 // begin quest harvest from API
                 Console.WriteLine("Harvesting Quests starting at " + MaxQuestID.ToString());
                 HarvestQuests();
             }
+
+            // ensure that both API receiver and data writer threads were created before continuing, otherwise can get stuck
+            while (!WaitForData || !WaitForAPI) { Thread.Sleep(50); }
 
             // stop waiting to capture API results
             WaitForAPI = false;
@@ -123,7 +133,7 @@ namespace ATT
                 //Console.ReadKey();
                 return;
             }
-            Parse();
+            Parse(parseOnlyDate);
 
             while (WaitForParseQueue || WaitForParsingData || ParseDatas.Count > 0) { Thread.Sleep(50); }
 
@@ -360,12 +370,15 @@ namespace ATT
 
         static bool TryParseInventoryType(string inventoryType, out int inventoryTypeID)
         {
+            // https://wow.gamepedia.com/Enum.InventoryType
             switch (inventoryType)
             {
                 // Ignore these.
                 case "AMMO":
                 case "BAG":
                 case "NON_EQUIP":
+                case "QUIVER":
+                case "RELIC":
                     inventoryTypeID = 0;
                     return false;
 
@@ -411,34 +424,51 @@ namespace ATT
                 case "TRINKET":
                 case "TRINKET1":
                 case "TRINKET2":
+                    inventoryTypeID = 12;
+                    return true;
+                case "WEAPON":
                     inventoryTypeID = 13;
+                    return true;
+                case "SHIELD":
+                    inventoryTypeID = 14;
+                    return true;
+                case "RANGED":
+                    inventoryTypeID = 15;
                     return true;
                 case "BACK":
                 case "CLOAK":
-                    inventoryTypeID = 15;
+                    inventoryTypeID = 16;
                     return true;
-                case "HOLDABLE":
-                case "MAINHAND":
-                case "WEAPONMAINHAND":
                 case "TWOHAND":
                 case "TWOWEAPON":
                 case "TWOHWEAPON":
-                case "WEAPON":
-                    inventoryTypeID = 16;
-                    return true;
-                case "OFFHAND":
-                case "WEAPONOFFHAND":
-                case "SHIELD":
                     inventoryTypeID = 17;
                     return true;
-                case "RANGED":
-                case "RANGEDRIGHT":
-                case "THROWN":
-                    inventoryTypeID = 18;
-                    return true;
+                // 18 BAG, ignore
                 case "TABARD":
                     inventoryTypeID = 19;
                     return true;
+                // 20, ROBE = CHEST(5)
+                case "MAINHAND":
+                case "WEAPONMAINHAND":
+                    inventoryTypeID = 21;
+                    return true;
+                case "OFFHAND":
+                case "WEAPONOFFHAND":
+                    inventoryTypeID = 22;
+                    return true;
+                case "HOLDABLE":
+                    inventoryTypeID = 23;
+                    return true;
+                // 24 AMMO, ignore
+                case "THROWN":
+                    inventoryTypeID = 25;
+                    return true;
+                case "RANGEDRIGHT":
+                    inventoryTypeID = 26;
+                    return true;
+                // 27 QUIVER, ignore
+                // 28 RELIC, ignore
                 default:
                     Console.Write("Unhandled Inventory Type ");
                     Console.Write(inventoryType);
@@ -490,10 +520,10 @@ namespace ATT
             }
         }
 
-        static void Parse()
+        static void Parse(string parseOnlyDate)
         {
             WaitForParseQueue = true;
-            Console.WriteLine("Queueing all of the raw data...");
+            Console.WriteLine("Queueing all of the raw data for " + (parseOnlyDate ?? DateStamp));
 
             // create a separate thread that will handle parsing the individual items
             Thread threadDataParser = new Thread(ParseData)
@@ -506,14 +536,14 @@ namespace ATT
             // items
             if (ProcessObjects[ObjType.item])
             {
-                var rawDataDirectory = Directory.CreateDirectory("RAW/items." + DateStamp);
+                var rawDataDirectory = Directory.CreateDirectory("RAW/items." + (parseOnlyDate ?? DateStamp));
                 var allFiles = rawDataDirectory.EnumerateFiles("*.raw").AsParallel();
                 allFiles.ForAll(EnqueueFileContents);
             }
             // quests
             if (ProcessObjects[ObjType.quest])
             {
-                var rawDataDirectory = Directory.CreateDirectory("RAW/quests." + DateStamp);
+                var rawDataDirectory = Directory.CreateDirectory("RAW/quests." + (parseOnlyDate ?? DateStamp));
                 var allFiles = rawDataDirectory.EnumerateFiles("*.raw").AsParallel();
                 allFiles.ForAll(EnqueueFileContents);
             }
