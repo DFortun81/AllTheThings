@@ -1711,7 +1711,36 @@ end;
 table.insert(settings.MostRecentTab.objects, f);
 settings.classdefaults = f;
 
-local allEquipmentFilters = { 11, 2, 3, 10, 9, 33, 32, 31, 50, 57, 34, 35, 27, 21, 22, 23, 24, 25, 26, 1, 8, 4, 5, 6, 7, 20, 29, 28  }
+local allEquipmentFilters = {	-- Filter IDs
+	11,	-- Artifacts
+	2,	-- Cosmetic
+	3,	-- Cloaks
+	10,	-- Shirts
+	9,	-- Tabards
+	33,	-- Crossbows
+	32,	-- Bows
+	31,	-- Guns
+	50,	-- Miscellaneous
+	57,	-- Fishing Poles
+	34,	-- Fist Weapons
+	35,	-- Warglaives
+	27,	-- Wands
+	21,	-- 1H Axes
+	22,	-- 2H Axes
+	23,	-- 1H Maces
+	24,	-- 2H Maces
+	25,	-- 1H Swords
+	26,	-- 2H Swords
+	1,	-- Held in Off-Hand
+	8,	-- Shields
+	4,	-- Cloth
+	5,	-- Leather
+	6,	-- Mail
+	7,	-- Plate
+	20,	-- Daggers
+	29,	-- Polearms
+	28,	-- Staves
+}
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("TOPLEFT", settings.classdefaults, "TOPRIGHT", 3, 0);
 f:SetText("All");
