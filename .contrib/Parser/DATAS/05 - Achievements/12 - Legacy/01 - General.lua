@@ -30,15 +30,6 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, h(ach(9172))),	-- You Are Not Your $#*@! Legplates (Season 2)
 				un(REMOVED_FROM_GAME, h(ach(7948))),	-- The First Rule of Brawler's Guild (Season 1 or 2)
 			}))),
-			un(REMOVED_FROM_GAME, ach(11572)),		-- I Am Thrall's Complete Lack Of Surprise(Legion)
-			un(REMOVED_FROM_GAME, a(ach(11565, {	-- King of the Guild (Alliance)(Legion)
-				un(REMOVED_FROM_GAME, ach(11563)), 		-- The Second Rule of Brawler's Guild(Legion)
-				un(REMOVED_FROM_GAME, ach(11560)),		-- You Are Not Your $#*@! Legplates(Legion)
-			}))),
-			un(REMOVED_FROM_GAME, h(ach(11566, {	-- King of the Guild (Horde)
-				un(REMOVED_FROM_GAME, ach(11564)),		-- The Second Rule of Brawler's Guild(Legion)
-				un(REMOVED_FROM_GAME, ach(11561)),		-- You Are Not Your $#*@! Legplates(Legion)
-			}))),
 			un(REMOVED_FROM_GAME, ach(10765, {		-- Brokenly Epic (ilvl 840)
 				un(REMOVED_FROM_GAME, ach(9708)),		-- Savagely Epic (ilvl 640)
 				un(REMOVED_FROM_GAME, ach(6349)),		-- Mystically Epic (ilvl 476)
@@ -113,6 +104,9 @@ _.Achievements =
 				["classes"] = { WARLOCK },
 			})),
 			un(REMOVED_FROM_GAME, ach(2716)),		-- Dual Talent Specialization
+			un(REMOVED_FROM_GAME, ach(12547, {		-- Epic (Battle)
+				un(REMOVED_FROM_GAME, ach(12546)),		-- Superior (Battle)
+			})),
 			un(REMOVED_FROM_GAME, ach(7315)),		-- Eternally in the Vale
 			un(REMOVED_FROM_GAME, ach(558)),		-- Greedy
 			un(REMOVED_FROM_GAME, ach(7945)),		-- Haters Gonna Hate (Season 2) **Can't find any commentary on whether this is still available in Legion season or not.**
@@ -134,8 +128,27 @@ _.Achievements =
 				},
 				["classes"] = { ROGUE },
 			}),
+			un(REMOVED_FROM_GAME, ach(11572)),		-- I Am Thrall's Complete Lack Of Surprise(Legion)
 			un(REMOVED_FROM_GAME, ach(2923)),		-- Iron Dwarf, Medium Rare (10 player)
 			un(REMOVED_FROM_GAME, ach(2924)),		-- Iron Dwarf, Medium Rare (25 player)
+			un(REMOVED_FROM_GAME, a(ach(11565, {	-- King of the Guild (Alliance)(Legion)
+				un(REMOVED_FROM_GAME, ach(11563)), 		-- The Second Rule of Brawler's Guild(Legion)
+				un(REMOVED_FROM_GAME, ach(11560)),		-- You Are Not Your $#*@! Legplates(Legion)
+			}))),
+			un(REMOVED_FROM_GAME, h(ach(11566, {	-- King of the Guild (Horde)
+				un(REMOVED_FROM_GAME, ach(11564)),		-- The Second Rule of Brawler's Guild(Legion)
+				un(REMOVED_FROM_GAME, ach(11561)),		-- You Are Not Your $#*@! Legplates(Legion)
+			}))),
+			un(REMOVED_FROM_GAME, ach(12544, {		-- Level 120 (Legacy)
+				un(REMOVED_FROM_GAME, ach(10)),		-- Level 50 (Legacy)
+				un(REMOVED_FROM_GAME, ach(11)),		-- Level 60 (Legacy)
+				un(REMOVED_FROM_GAME, ach(12)),		-- Level 70 (Legacy)
+				un(REMOVED_FROM_GAME, ach(13)),		-- Level 80 (Legacy)
+				un(REMOVED_FROM_GAME, ach(4826)),	-- Level 85 (Legacy)
+				un(REMOVED_FROM_GAME, ach(6193)),	-- Level 90 (Legacy)
+				un(REMOVED_FROM_GAME, ach(9060)),	-- Level 100 (Legacy)
+				un(REMOVED_FROM_GAME, ach(10671)),	-- Level 110 (Legacy)
+			})),
 			un(REMOVED_FROM_GAME, ach(705)),		-- Master of Arms
 			un(REMOVED_FROM_GAME, ach(559)),		-- Needy
 			un(REMOVED_FROM_GAME, a(ach(7946))),	-- Now You're Just Showing Off (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
@@ -166,6 +179,7 @@ _.Achievements =
 			})),
 			un(REMOVED_FROM_GAME, a(ach(7949))),	-- Rabble Rabble Rabble (Season 2) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
 			un(REMOVED_FROM_GAME, h(ach(7950))),	-- Rabble Rabble Rabble (Season 2) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
+            un(REMOVED_FROM_GAME, ach(12546)),      -- Superior (Battle)
 			un(REMOVED_FROM_GAME, ach(2359, {		-- Swift Flight Form
 				["classes"] = { DRUID },
 			})),
