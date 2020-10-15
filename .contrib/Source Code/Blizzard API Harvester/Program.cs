@@ -571,6 +571,7 @@ namespace ATT
             if (subData.TryGetValue("required_level", out level) && level > 1) dict["Lvl"] = level;
             if (subData.TryGetValue("is_equippable", out bool b) && b) dict["equippable"] = 1;
             if (subData.TryGetValue("is_repeatable", out bool isRepeatable) && isRepeatable) dict["repeatable"] = 1;
+            if (subData.TryGetValue("is_daily", out bool isDaily) && isDaily) dict["isDaily"] = 1;
             if (subData.TryGetValue("quality", out Dictionary<string, object> d))
             {
                 if (d.TryGetValue("type", out o) && TryParseQuality(o.ToString(), out int qualityID))

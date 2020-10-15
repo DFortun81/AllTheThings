@@ -650,7 +650,7 @@ _.Zones =
 							},
 						}),
 						q(53208, {	-- To The Front
-							["sourceQuests"] = { 138949 },	-- The Warfront Looms
+							["sourceQuests"] = { 53207 },	-- The Warfront Looms
 							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 							["coord"] = { 52.97, 94.35, 1165 },
 							["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag
