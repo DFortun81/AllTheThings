@@ -148,6 +148,7 @@ _.Zones =
 					},
 				}),
 				ach(13573, {	-- How to Ptrain Your Pterrordax
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 56205 },	-- Just Ptrust Me On This
 					["g"] = {
 						ach(13030, {	-- How to Ptrain Your Pterrordax
