@@ -3614,7 +3614,7 @@ end
 app.SearchForLink = SearchForLink;
 
 -- Map Information Lib
-local function AddTomTomWaypoint(group, auto)
+local function AddTomTomWaypoint(group, auto, recur)
 	if TomTom and (group.visible or (group.objectiveID and not group.saved) or (app.Settings:Get("DebugMode"))) then
 		if group.coords or group.coord then
 			local opt = {
@@ -3641,18 +3641,22 @@ local function AddTomTomWaypoint(group, auto)
 					TomTom:AddWaypoint(coord[3] or defaultMapID, coord[1] / 100, coord[2] / 100, opt);
 				end
 			end
-			if group.coord then TomTom:AddWaypoint(group.coord[3] or defaultMapID, group.coord[1] / 100, group.coord[2] / 100, opt); end
+			if group.coord then
+				TomTom:AddWaypoint(group.coord[3] or defaultMapID, group.coord[1] / 100, group.coord[2] / 100, opt);
+			end
 		end
 		if group.g then
 			for i,subgroup in ipairs(group.g) do
 				-- only automatically plot subGroups if they are not quests with incomplete source quests
 				if not subgroup.sourceQuests or subgroup.sourceQuestsCompleted then
-					AddTomTomWaypoint(subgroup, auto);
+					AddTomTomWaypoint(subgroup, auto, true);
 				end
 			end
 		end
-		-- point arrow at closest waypoint
-		TomTom:SetClosestWaypoint();
+		-- point arrow at closest waypoint once leaving the first recursive call
+		if not recur then
+			TomTom:SetClosestWaypoint();
+		end
 	end
 end
 -- Populates/replaces data within a questObject for displaying in a row
