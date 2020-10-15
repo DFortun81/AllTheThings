@@ -1393,7 +1393,7 @@ _.ExpansionFeatures =
 							54754,	-- For the Queen
 							54109,	-- Queen's Favor
 						},
-						["altQuests"] = { 54961 },	-- Righting Wrongs
+						["altQuests"] = { 54961 },	-- Righting Wrongs (Sylvanas Version)
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -1414,7 +1414,7 @@ _.ExpansionFeatures =
 						["coord"] = { 87.3, 49.6, 895 },
 						["sourceQuests"] = {
 							55124,	-- Righting Wrongs
-							54961,	-- Righting Wrongs
+							54961,	-- Righting Wrongs (Sylvanas Version)
 						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
