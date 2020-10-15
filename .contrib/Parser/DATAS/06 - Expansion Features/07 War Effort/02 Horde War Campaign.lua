@@ -609,6 +609,7 @@ _.ExpansionFeatures =
 					}),
 					-- The Marshal's Grave
 					q(53065, {	-- Operation: Grave Digger
+						["isBreadcrumb"] = true,
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["sourceQuest"] = 51601,	-- The Bridgeport Ride
 						["races"] = HORDE_ONLY,
@@ -617,7 +618,10 @@ _.ExpansionFeatures =
 					q(51784, {	-- A Stroll Through a Cemetery
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
-						["sourceQuest"] = 53065,	-- Operation: Grave Digger
+						["sourceQuests"] = {
+							53065,	-- Operation: Grave Digger
+							51601,	-- The Bridgeport Ride
+						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 896 },	-- Drustvar
@@ -677,7 +681,10 @@ _.ExpansionFeatures =
 					q(51797, {	-- Tracking Tidesages
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
-						["sourceQuest"] = 53066,	-- Operation: Water Wise
+						["sourceQuests"] = { 
+							53066,	-- Operation: Water Wise
+							51789,	-- What Remains of Marshal M. Valentine
+						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -752,7 +759,10 @@ _.ExpansionFeatures =
 					q(52764, {	-- Journey to the Middle of Nowhere
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
-						["sourceQuest"] = 53067,	-- Operation: Bottom Feeder
+						["sourceQuests"] = { 
+							53067,	-- Operation: Bottom Feeder
+							52122,	-- To Be Forsaken
+						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1157 },	-- The Great Sea
@@ -856,7 +866,10 @@ _.ExpansionFeatures =
 					q(52183, {	-- When a Plan Comes Together
 						["provider"] = { "n", 141644 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
-						["sourceQuest"] = 53068,	-- Operation: Hook and Line
+						["sourceQuests"] = { 
+							53068,	-- Operation: Hook and Line
+							52978,	-- With Prince in Tow
+						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
