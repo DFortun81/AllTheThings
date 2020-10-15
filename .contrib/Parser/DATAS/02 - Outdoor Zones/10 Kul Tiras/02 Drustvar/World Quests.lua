@@ -25,10 +25,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53312, {	-- Burnished Platinum
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53317, {	-- Dense Storm Silver
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -263,6 +259,11 @@ _.Zones =
 					q(51737, {	-- Bruin Potions
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
+					}),
+					q(53312, {	-- Burnished Platinum
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["requireSkill"] = MINING,
 					}),
 					q(55264, {	-- Calligraphy
 						["lvl"] = 120,
