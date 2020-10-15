@@ -179,7 +179,6 @@ _.Achievements =
 			})),
 			un(REMOVED_FROM_GAME, a(ach(7949))),	-- Rabble Rabble Rabble (Season 2) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
 			un(REMOVED_FROM_GAME, h(ach(7950))),	-- Rabble Rabble Rabble (Season 2) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
-            un(REMOVED_FROM_GAME, ach(12546)),      -- Superior (Battle)
 			un(REMOVED_FROM_GAME, ach(2359, {		-- Swift Flight Form
 				["classes"] = { DRUID },
 			})),
