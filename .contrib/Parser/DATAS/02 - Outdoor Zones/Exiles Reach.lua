@@ -208,6 +208,18 @@ _.Zones =
 						i(175179),	-- Expeditionary Leather Tunic
 						i(175178),	-- Expeditionary Mail Armor
 						i(175177),	-- Expeditionary Plate Chestpiece
+						i(175208, {	-- Expeditionary Cloth Robe
+							["races"] = HORDE_ONLY,
+						}),
+						i(175211, {	-- Expeditionary Leather Tunic
+							["races"] = HORDE_ONLY,
+						}),
+						i(175210, {	-- Expeditionary Mail Armor
+							["races"] = HORDE_ONLY,
+						}),
+						i(175209, {	-- Expeditionary Plate Chestpiece
+							["races"] = HORDE_ONLY,
+						}),
 					},
 				}),
 				q(59985, {	-- An End to Beginnings (H)
@@ -220,6 +232,18 @@ _.Zones =
 						i(175211),	-- Expeditionary Leather Tunic
 						i(175210),	-- Expeditionary Mail Armor
 						i(175209),	-- Expeditionary Plate Chestpiece
+						i(175176, {	-- Expeditionary Cloth Robe
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175179, {	-- Expeditionary Leather Tunic
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175178, {	-- Expeditionary Mail Armor
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175177, {	-- Expeditionary Plate Chestpiece
+							["races"] = ALLIANCE_ONLY,
+						}),
 					},
 				}),
 				q(58208, {	-- Brace for Impact (A)
@@ -487,6 +511,18 @@ _.Zones =
 						i(175184),	-- Expeditionary Leather Gloves
 						i(175187),	-- Expeditionary Mail Gauntlets
 						i(175185),	-- Expeditionary Plate Gauntlets
+						i(175218, {	-- Expeditionary Cloth Gloves
+							["races"] = HORDE_ONLY,
+						}),
+						i(175216, {	-- Expeditionary Leather Gloves
+							["races"] = HORDE_ONLY,
+						}),
+						i(175219, {	-- Expeditionary Mail Gauntlets
+							["races"] = HORDE_ONLY,
+						}),
+						i(175217, {	-- Expeditionary Plate Gauntlets
+							["races"] = HORDE_ONLY,
+						}),
 					},
 				}),
 				q(59979, {	-- Like Ogres to the Slaughter (H)
@@ -499,6 +535,18 @@ _.Zones =
 						i(175216),	-- Expeditionary Leather Gloves
 						i(175219),	-- Expeditionary Mail Gauntlets
 						i(175217),	-- Expeditionary Plate Gauntlets
+						i(175186, {	-- Expeditionary Cloth Gloves
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175184, {	-- Expeditionary Leather Gloves
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175187, {	-- Expeditionary Mail Gauntlets
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175185, {	-- Expeditionary Plate Gauntlets
+							["races"] = ALLIANCE_ONLY,
+						}),
 					},
 				}),
 				q(55882, {	-- Message to Base (A)
@@ -515,6 +563,18 @@ _.Zones =
 						i(175194),	-- Expeditionary Leather Legguards
 						i(175193),	-- Expeditionary Mail Leggings
 						i(175191),	-- Expeditionary Plate Legguards
+						i(175224, {	-- Expeditionary Cloth Leggings
+							["races"] = HORDE_ONLY,
+						}),
+						i(175226, {	-- Expeditionary Leather Legguards
+							["races"] = HORDE_ONLY,
+						}),
+						i(175225, {	-- Expeditionary Mail Leggings
+							["races"] = HORDE_ONLY,
+						}),
+						i(175223, {	-- Expeditionary Plate Legguards
+							["races"] = HORDE_ONLY,
+						}),
 					},
 				}),
 				q(59947, {	-- Message to Base (H)
@@ -531,6 +591,18 @@ _.Zones =
 						i(175226),	-- Expeditionary Leather Legguards
 						i(175225),	-- Expeditionary Mail Leggings
 						i(175223),	-- Expeditionary Plate Legguards
+						i(175192, {	-- Expeditionary Cloth Leggings
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175194, {	-- Expeditionary Leather Legguards
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175193, {	-- Expeditionary Mail Leggings
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175191, {	-- Expeditionary Plate Legguards
+							["races"] = ALLIANCE_ONLY,
+						}),
 					},
 				}),
 				q(55122, {	-- Murloc Mania (A)
@@ -589,6 +661,18 @@ _.Zones =
 						i(175202),	-- Expeditionary Leather Belt
 						i(175201),	-- Expeditionary Mail Waistguard
 						i(175199),	-- Expeditionary Plate Girdle
+						i(175238, {	-- Expeditionary Cloth Cord
+							["races"] = HORDE_ONLY,
+						}),
+						i(175233, {	-- Expeditionary Leather Belt
+							["races"] = HORDE_ONLY,
+						}),
+						i(175232, {	-- Expeditionary Mail Waistguard
+							["races"] = HORDE_ONLY,
+						}),
+						i(175231, {	-- Expeditionary Plate Girdle
+							["races"] = HORDE_ONLY,
+						}),
 					},
 				}),
 				q(59946, {	-- Purge the Totems (H)
@@ -601,6 +685,18 @@ _.Zones =
 						i(175233),	-- Expeditionary Leather Belt
 						i(175232),	-- Expeditionary Mail Waistguard
 						i(175231),	-- Expeditionary Plate Girdle
+						i(175200, {	-- Expeditionary Cloth Cord
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175202, {	-- Expeditionary Leather Belt
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175201, {	-- Expeditionary Mail Waistguard
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175199, {	-- Expeditionary Plate Girdle
+							["races"] = ALLIANCE_ONLY,
+						}),
 					},
 				}),
 				q(56034, {	-- Re-sizing the Situation (A)
@@ -858,13 +954,25 @@ _.Zones =
 				q(55639, {	-- Who Lurks in the Pit (A)
 					["coord"] = { 51.1, 59.5, 1409 },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 175031 },	-- Alaria
+					["provider"] = { "n", 156803 },	-- Alaria
 					["sourceQuest"] = 55965,	-- Westward Bound
 					["g"] = {
 						i(175203),	-- Expeditionary Cloth Cuffs
 						i(175206),	-- Expeditionary Leather Bracers
 						i(175205),	-- Expeditionary Mail Armbands
 						i(175204),	-- Expeditionary Plate Armguards
+						i(175234, {	-- Expeditionary Cloth Cuffs
+							["races"] = HORDE_ONLY,
+						}),
+						i(175237, {	-- Expeditionary Leather Bracers
+							["races"] = HORDE_ONLY,
+						}),
+						i(175236, {	-- Expeditionary Mail Armbands
+							["races"] = HORDE_ONLY,
+						}),
+						i(175235, {	-- Expeditionary Plate Armguards
+							["races"] = HORDE_ONLY,
+						}),
 					},
 				}),
 				q(59949, {	-- Who Lurks in the Pit (H)
@@ -877,6 +985,18 @@ _.Zones =
 						i(175237),	-- Expeditionary Leather Bracers
 						i(175236),	-- Expeditionary Mail Armbands
 						i(175235),	-- Expeditionary Plate Armguards
+						i(175203, {	-- Expeditionary Cloth Cuffs
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175206, {	-- Expeditionary Leather Bracers
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175205, {	-- Expeditionary Mail Armbands
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(175204, {	-- Expeditionary Plate Armguards
+							["races"] = ALLIANCE_ONLY,
+						}),
 					},
 				}),
 			}),
