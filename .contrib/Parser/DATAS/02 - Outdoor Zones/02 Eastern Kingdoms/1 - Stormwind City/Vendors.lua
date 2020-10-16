@@ -2946,7 +2946,7 @@ _.Zones =
 					},
 				}),
 				n(44246, {	-- Magatha Silverton
-					["coord"] = { 79.0, 69.6, 84 },
+					["coord"] = { 75.5, 66.1, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(71213),	-- Amulet of Burning Brilliance
@@ -4399,7 +4399,7 @@ _.Zones =
 					},
 				}),
 				n(58154, {	-- Toren Landow
-					["coord"] = { 79.0, 70.1, 84 },
+					["coord"] = { 75.7, 65.9, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(57931),	-- Amulet of Dull Dreaming
