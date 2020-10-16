@@ -286,11 +286,23 @@ profession(INSCRIPTION, {
 							["recipeID"] = 289356,  -- Glyph of Storm's Wake
 							["races"] = ALLIANCE_ONLY,
 						},
-						{  -- Glyph of Dire Bees (missing in automation)
+						{  -- Glyph of Dire Bees
 							["recipeID"] = 304042,  -- Glyph of Dire Bees
 						},
-						{  -- Glyph of Lavish Servings (missing in automation)
+						{  -- Glyph of Lavish Servings
 							["recipeID"] = 309443,  -- Glyph of Lavish Servings
+						},
+						{  -- Glyph of the Aerial Chameleon (missing in automation)
+							["recipeID"] = 344341,  -- Glyph of the Aerial Chameleon
+						},
+						{  -- Glyph of the Aquatic Chameleon (missing in automation)
+							["recipeID"] = 344340,  -- Glyph of the Aquatic Chameleon
+						},
+						{  -- Glyph of the Feral Chameleon (missing in automation)
+							["recipeID"] = 225532,  -- Glyph of the Feral Chameleon
+						},
+						{  -- Glyph of the Swift Chameleon (missing in automation)
+							["recipeID"] = 344335,  -- Glyph of the Swift Chameleon
 						},
 					}
 				},
