@@ -14313,8 +14313,8 @@ hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, itemID, reage
 		self:Show();
 	end
 end)
--- GameTooltip:HookScript("OnShow", AttachTooltip);
 -- GameTooltip:HookScript("OnUpdate", CheckAttachTooltip);
+GameTooltip:HookScript("OnShow", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
