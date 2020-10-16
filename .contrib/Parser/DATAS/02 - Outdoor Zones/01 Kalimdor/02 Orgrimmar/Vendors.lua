@@ -13,6 +13,93 @@ _.Zones =
 						i(166805),	-- Blood-Soaked Invitation (QI)
 					},
 				}),
+				n(175050, {	-- Aneka Melae
+					["coord"] = { 37.5, 71.4, 85 },
+					["g"] = {
+						n(-659, {	-- Aspirant PvP Gear
+							n(-319, {	-- Weapons
+								i(172881),	-- Corrupted Aspirant's Chopper (H)
+								i(174012),	-- Corrupted Aspirant's Claw (H)
+								i(172879),	-- Corrupted Aspirant's Cleaver (H)
+								i(174014),	-- Corrupted Aspirant's Decapitator (H)
+								i(172873),	-- Corrupted Aspirant's Gavel (H)
+								i(172885),	-- Corrupted Aspirant's Greatsword (H)
+								i(172871),	-- Corrupted Aspirant's Longbow (H)
+								i(172883),	-- Corrupted Aspirant's Pike (H)
+								i(172875),	-- Corrupted Aspirant's Pummeler (H)
+								i(172867),	-- Corrupted Aspirant's Reprieve (H)
+								i(174016),	-- Corrupted Aspirant's Rifle (H)
+								i(172861),	-- Corrupted Aspirant's Shanker (H)
+								i(172869),	-- Corrupted Aspirant's Shield Wall (H)
+								i(172877),	-- Corrupted Aspirant's Slicer (H)
+								i(174010),	-- Corrupted Aspirant's Spellblade (H)
+								i(172860),	-- Corrupted Aspirant's Stabber (H)
+								i(172865),	-- Corrupted Aspirant's Staff (H)
+								i(172863),	-- Corrupted Aspirant's Wand (H)
+								i(174018),	-- Corrupted Aspirant's War Staff (H)
+								i(172887),	-- Corrupted Aspirant's Warglaive (H)
+							}),
+							n(-43, {	-- Cloth
+								i(172787),	-- Corrupted Aspirant's Silk Cord (H)
+								i(172786),	-- Corrupted Aspirant's Silk Cuffs (H)
+								i(172782),	-- Corrupted Aspirant's Silk Gloves (H)
+								i(172783),	-- Corrupted Aspirant's Silk Hood (H)
+								i(172784),	-- Corrupted Aspirant's Silk Leggings (H)
+								i(172785),	-- Corrupted Aspirant's Silk Mantle (H)
+								i(172780),	-- Corrupted Aspirant's Silk Robe (H)
+								i(172781),	-- Corrupted Aspirant's Silk Treads (H)
+							}),
+							n(-44, {	-- Leather
+								i(172794),	-- Corrupted Aspirant's Leather Belt (H)
+								i(172795),	-- Corrupted Aspirant's Leather Bindings (H)
+								i(172789),	-- Corrupted Aspirant's Leather Boots (H)
+								i(172790),	-- Corrupted Aspirant's Leather Gloves (H)
+								i(172791),	-- Corrupted Aspirant's Leather Helm (H)
+								i(172792),	-- Corrupted Aspirant's Leather Legguards (H)
+								i(172793),	-- Corrupted Aspirant's Leather Spaulders (H)
+								i(172788),	-- Corrupted Aspirant's Leather Tunic (H)
+							}),
+							n(-45, {	-- Mail
+								i(172803),	-- Corrupted Aspirant's Chain Armbands (H)
+								i(172796),	-- Corrupted Aspirant's Chain Armor (H)
+								i(172798),	-- Corrupted Aspirant's Chain Gauntlets (H)
+								i(172799),	-- Corrupted Aspirant's Chain Helm (H)
+								i(172800),	-- Corrupted Aspirant's Chain Leggings (H)
+								i(172797),	-- Corrupted Aspirant's Chain Sabatons (H)
+								i(172801),	-- Corrupted Aspirant's Chain Spaulders (H)
+								i(172802),	-- Corrupted Aspirant's Chain Waistguard (H)
+							}),
+							n(-46, {	-- Plate
+								i(172811),	-- Corrupted Aspirant's Plate Armguards (H)
+								i(172805),	-- Corrupted Aspirant's Plate Chestpiece (H)
+								i(172807),	-- Corrupted Aspirant's Plate Gauntlets (H)
+								i(172810),	-- Corrupted Aspirant's Plate Girdle (H)
+								i(172804),	-- Corrupted Aspirant's Plate Helm (H)
+								i(172808),	-- Corrupted Aspirant's Plate Legguards (H)
+								i(172809),	-- Corrupted Aspirant's Plate Pauldrons (H)
+								i(172806),	-- Corrupted Aspirant's Plate Warboots (H)
+							}),
+							--[[n(-322, {	-- Back
+								i(172857),	-- Corrupted Aspirant's Cape (A)
+								i(172856),	-- Corrupted Aspirant's Drape (A)
+								i(172854),	-- Corrupted Aspirant's Shawl (A)
+								i(172853),	-- Corrupted Aspirant's Cape (H)
+								i(172852),	-- Corrupted Aspirant's Drape (H)
+								i(172850),	-- Corrupted Aspirant's Shawl (H)
+							}),--]]
+							n(-385, {	-- Finger
+								i(172845),	-- Corrupted Aspirant's Band
+								i(172844),	-- Corrupted Aspirant's Ring
+							}),
+							n(-386, {	-- Trinkets
+								i(172849),	-- Corrupted Aspirant's Badge
+								i(172847),	-- Corrupted Aspirant's Emblem
+								i(172848),	-- Corrupted Aspirant's Insignia
+								i(172846),	-- Corrupted Aspirant's Medallion
+							}),
+						}),
+					},
+				}),
 				n(52809,  {	-- Blax Bottlerocket <Toys and Novelties>
 					["coords"] = {
 						{ 58.2, 62.6, 85 },
