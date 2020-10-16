@@ -7,9 +7,8 @@ _.ExpansionFeatures =
 	n(-9965, {	-- Legion Class Hall
 		cl(MAGE, {	-- Hall of the Guardian (Mage)
 			["classes"] = { MAGE },
-			["lvl"] = 98,
 			["maps"] = {
-				700,	-- Icecrown Citadel (Fire weapon scenario)
+				--700,	-- Icecrown Citadel (Fire weapon scenario)	-- Commented to give the proper header.
 				734,	-- Hall of the Guardian (Mage)
 				735,	-- Hall of the Guardian (Mage) (2nd Floor)
 				736,	-- The Nexus (Arcane weapon scenario)
@@ -19,6 +18,7 @@ _.ExpansionFeatures =
 				802,	-- The Oculus scenario map used during "Into the Oculus"
 				803,	-- The Oculus scenario map used during "Into the Oculus"
 			},
+			["lvl"] = 98,
 			["g"] = {
 				spell(118, {	-- Polymorph
 					["classes"] = { MAGE },
