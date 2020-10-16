@@ -1662,6 +1662,9 @@ namespace ATT
                             Trace.WriteLine(MiniJSON.Json.Serialize(item));
                         }
                         break;
+                    case "_drop":
+                        item[field] = value;
+                        break;
 
                     // Report all other fields.
                     default:
@@ -1714,6 +1717,26 @@ namespace ATT
             public static void Merge(Dictionary<string, object> item, Dictionary<string, object> data)
             {
                 foreach (var pair in data) Merge(item, pair.Key, pair.Value);
+            }
+
+            /// <summary>
+            /// Checks for parser tags that need to be handled
+            /// </summary>
+            /// <param name="entry"></param>
+            /// <param name="data"></param>
+            public static void PreMerge(Dictionary<string, object> entry, Dictionary<string, object> data)
+            {
+                // sometimes existing data from harvests may be inaccurate, so may need to clean existing fields from being merged in
+                if (entry.TryGetValue("_drop", out object drops) && drops is Dictionary<object,object> dropStrs)
+                {
+                    if (dropStrs != null && dropStrs.Count > 0)
+                    {
+                        foreach (object dropObj in dropStrs.Values)
+                        {
+                            data.Remove(dropObj?.ToString() ?? string.Empty);
+                        }
+                    }
+                }
             }
 
             /// <summary>
@@ -1957,6 +1980,7 @@ namespace ATT
                 }
 
                 // Merge the entry with the data.
+                PreMerge(entry, data2);
                 Merge(entry, data2);
 
                 // Add quest entry to AllQuest collection
@@ -1965,6 +1989,7 @@ namespace ATT
                     // merge any quest information from the quest DB
                     if (QUESTS.TryGetValue(questID, out Dictionary<string, object> dbQuest))
                     {
+                        PreMerge(entry, dbQuest);
                         Merge(entry, dbQuest);
                     }
 

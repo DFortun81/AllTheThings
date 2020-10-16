@@ -351,6 +351,7 @@ _.Zones =
 					},
 				}),
 				q(55991, {	-- An End to Beginnings (A)
+					["_drop"] = { "g" },	-- drop any exisitng "g" tag from harvest data
 					["coord"] = { 39.6, 31.9, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156961 },	-- Captain Garrick
@@ -371,6 +372,7 @@ _.Zones =
 					},
 				}),
 				q(59985, {	-- An End to Beginnings (H)
+					["_drop"] = { "g" },	-- drop any exisitng "g" tag from harvest data
 					["coord"] = { 39.6, 31.9, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167675 },	-- Warlord Breka Grimaxe

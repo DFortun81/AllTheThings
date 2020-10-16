@@ -1055,62 +1055,62 @@ namespace ATT
             }
 
             // Check for Blizzard Mistakes (They love messing up Allied Race ID assignments...)
-            if (list.Contains(34))
-            {
-                if (list.Contains(2) && !list.Contains(1))
-                {
-                    // This was supposed to include Maghar Orcs instead... silly Blizzard!
-                    list.Remove(34);
-                    list.Add(36);
-                }
-            }
-            else if (list.Contains(36))
-            {
-                if (!list.Contains(2) && list.Contains(1))
-                {
-                    // This was supposed to include Dark Iron Dwarves instead... silly Blizzard!
-                    list.Remove(36);
-                    list.Add(34);
-                }
-            }
+            //if (list.Contains(34))
+            //{
+            //    if (list.Contains(2) && !list.Contains(1))
+            //    {
+            //        // This was supposed to include Maghar Orcs instead... silly Blizzard!
+            //        list.Remove(34);
+            //        list.Add(36);
+            //    }
+            //}
+            //else if (list.Contains(36))
+            //{
+            //    if (!list.Contains(2) && list.Contains(1))
+            //    {
+            //        // This was supposed to include Dark Iron Dwarves instead... silly Blizzard!
+            //        list.Remove(36);
+            //        list.Add(34);
+            //    }
+            //}
 
-            if (list.Contains(35))
-            {
-                if (list.Contains(2) && !list.Contains(1))
-                {
-                    // This was supposed to include Mechagnome instead... silly Blizzard!
-                    list.Remove(35);
-                    list.Add(37);
-                }
-            }
-            else if (list.Contains(37))
-            {
-                if (!list.Contains(2) && list.Contains(1))
-                {
-                    // This was supposed to include Vulpera instead... silly Blizzard!
-                    list.Remove(37);
-                    list.Add(35);
-                }
-            }
+            //if (list.Contains(35))
+            //{
+            //    if (list.Contains(2) && !list.Contains(1))
+            //    {
+            //        // This was supposed to include Mechagnome instead... silly Blizzard!
+            //        list.Remove(35);
+            //        list.Add(37);
+            //    }
+            //}
+            //else if (list.Contains(37))
+            //{
+            //    if (!list.Contains(2) && list.Contains(1))
+            //    {
+            //        // This was supposed to include Vulpera instead... silly Blizzard!
+            //        list.Remove(37);
+            //        list.Add(35);
+            //    }
+            //}
 
-            if (list.Contains(31))
-            {
-                if (list.Contains(2) && !list.Contains(1))
-                {
-                    // This was supposed to include Kul'Tiran instead... silly Blizzard!
-                    list.Remove(31);
-                    list.Add(32);
-                }
-            }
-            else if (list.Contains(32))
-            {
-                if (!list.Contains(2) && list.Contains(1))
-                {
-                    // This was supposed to include Zandalari Trolls instead... silly Blizzard!
-                    list.Remove(32);
-                    list.Add(31);
-                }
-            }
+            //if (list.Contains(31))
+            //{
+            //    if (list.Contains(2) && !list.Contains(1))
+            //    {
+            //        // This was supposed to include Kul'Tiran instead... silly Blizzard!
+            //        list.Remove(31);
+            //        list.Add(32);
+            //    }
+            //}
+            //else if (list.Contains(32))
+            //{
+            //    if (!list.Contains(2) && list.Contains(1))
+            //    {
+            //        // This was supposed to include Zandalari Trolls instead... silly Blizzard!
+            //        list.Remove(32);
+            //        list.Add(31);
+            //    }
+            //}
 
             list.Sort();
             dict["races"] = list;
