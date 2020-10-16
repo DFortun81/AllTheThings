@@ -21,6 +21,12 @@ _.Zones =
 					["provider"] = { "n", 55614 },	-- Pei-Zhi
 					["coord"] = { 44.2, 15.0, 371 },
 				}),
+				q(31132, {	-- A Mile in My Shoes
+					["sourceQuests"] = { 31121 },	-- Stay a While, and Listen
+					["provider"] = { "n", 55768 },	-- Lorewalker Cho
+					["coord"] = { 27.5, 32.6, 371 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(30011, {	-- A New Vision
 					["sourceQuests"] = { 29997 },	-- The Scryer's Dilemma
 					["provider"] = { "n", 56787 },	-- Wise mari
@@ -57,6 +63,23 @@ _.Zones =
 					["provider"] = { "n", 54961 },	-- Lorewalker Cho
 					["coord"] = { 53.7, 91.3, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29827, {	-- Acid Rain
+					["sourceQuests"] = { 29815 },	-- Forensic Science
+					["provider"] = { "n", 55180 },	-- Shademaster Kiryn
+					["coord"] = { 28.1, 24.8, 371 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(90310),	-- Honorary Combat Engineer's Burnished Legplates
+						i(90305),	-- Honorary Combat Engineer's Chain Leggings
+						i(90312),	-- Honorary Combat Engineer's Heavy Legplates
+						i(90308),	-- Honorary Combat Engineer's Hide Leggings
+						i(90304),	-- Honorary Combat Engineer's Leather Trousers
+						i(90311),	-- Honorary Combat Engineer's Legguards
+						i(90309),	-- Honorary Combat Engineer's Ringmail Leggings
+						i(90307),	-- Honorary Combat Engineer's Satin Leggings
+						i(90306),	-- Honorary Combat Engineer's Silk Trousers
+					},
 				}),
 				q(29925, {	-- All We Can Spare
 				--	TODO: does this also require finishing all the other dawn's blossom quests?  is the overall criteria required or just 'the jade witch'?
@@ -144,6 +167,12 @@ _.Zones =
 					["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
 					["coord"] = { 53.8, 61.8, 371 },
 					["isDaily"] = true,
+				}),
+				q(31775, {	-- Assault on the Airstrip
+					["sourceQuests"] = { 29804 },	-- Seein' Red
+					["provider"] = { "n", 65999 },	-- General Nazgrim
+					["coord"] = { 31.6, 21.9, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(29624, {	-- Attention
 					["sourceQuests"] = { 29623 },	-- Perfection
@@ -629,6 +658,17 @@ _.Zones =
 					["provider"] = { "n", 56786 },	-- Lorewalker Stonestep
 					["coord"] = { 56.2, 60.4, 371 },
 				}),
+				q(30648, {	-- Moving On
+					-- possibly a breadcrumb?
+					["sourceQuests"] = {
+						31319,	-- Emergency Response (A)
+						30504,	-- Emergency Response (H)
+						30502,	-- Jaded Heart
+						30500,	-- Residual Fallout
+					},
+					["provider"] = { "n", 59899 },	-- Fei
+					["coord"] = { 49.3, 61.4, 371 },
+				}),
 				q(30069, {	-- No Plan Survives Contact with the Enemy
 					["sourceQuests"] = { 31733 },	-- Touching Ground
 					["provider"] = { "n", 54616 },	-- Sully "The Pickle" McLeary
@@ -997,6 +1037,24 @@ _.Zones =
 					["provider"] = { "n", 56784 },	-- Fei
 					["coord"] = { 58.0, 59.0, 371 },
 				}),
+				q(30139, {	-- The Rider's Journey (blue egg)
+				--	picked the blue and got this one, but some notes indicate all colors now grant this quest.
+				--	i picked "wait, i changed my mind about my egg" and switched to green/yellow, and they gave 30140 and 30141, respectively.  swapping back to blue switched the quest back to 30139.
+				--	completing one version of the quest completes them all, so altQuests is unnecessary here.
+					["sourceQuests"] = { 30138 },	-- Choosing the One
+					["provider"] = { "n", 58225 },	-- Instructor Tong
+					["coord"] = { 65.3, 31.6, 371 },
+				}),
+				q(30140, {	-- The Rider's Journey (green egg)
+					["sourceQuests"] = { 30138 },	-- Choosing the One
+					["provider"] = { "n", 58225 },	-- Instructor Tong
+					["coord"] = { 65.3, 31.6, 371 },
+				}),
+				q(30141, {	-- The Rider's Journey (yellow egg)
+					["sourceQuests"] = { 30138 },	-- Choosing the One
+					["provider"] = { "n", 58225 },	-- Instructor Tong
+					["coord"] = { 65.3, 31.6, 371 },
+				}),
 				q(31735, {	-- The Right Tool For The Job
 					["sourceQuests"] = {
 						30069,	-- No Plan Survives Contact with the Enemy
@@ -1151,6 +1209,12 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["description"] = "Only available before completion of |cFFFFD700The Jade Serpent|r.",
 				}),
+				q(31112, {	-- They're So Thorny!
+					["sourceQuests"] = { 29821 },	-- Missed Me By... That Much!
+					["provider"] = { "n", 62923 },	-- Empty Package
+					["coord"] = { 22.8, 30.5, 371 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(29617, {	-- Tian Monastery
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 54998 },	-- Apprentice Yufi
@@ -1174,11 +1238,17 @@ _.Zones =
 					["provider"] = { "n", 55614 },	-- Pei-Zhi
 					["coord"] = { 44.2, 15.0, 371 },
 				}),
-				q(31733, {	-- Touching Ground
+				q(31733, {	-- Touching Ground (A)
 					["sourceQuests"] = { 31732 },	-- Unleash Hell
 					["provider"] = { "n", 66292 },	-- Sky Admiral Rogers
 					["coord"] = { 42.0, 92.8, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31766, {	-- Touching Ground (H)
+					["sourceQuests"] = { 31765 },	-- Paint it Red!
+					["provider"] = { "n", 66667 },	-- Rivett Clutchpop
+					["coord"] = { 31.0, 11.0, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(29929, {	-- Trapped!
 					["sourceQuests"] = { 29927 },	-- Mann's Man
@@ -1228,6 +1298,12 @@ _.Zones =
 						i(90374),	-- Sully's Hotwiring Knife
 					},
 				}),
+				q(31778, {	-- Unreliable Allies
+					["sourceQuests"] = { 29804 },	-- Seein' Red
+					["provider"] = { "n", 65998 },	-- Merchant Zin
+					["coord"] = { 31.4, 21.7, 371 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(29750, {	-- Vessels of the Spirit
 					["sourceQuests"] = { 29749 },	-- An Urgent Plea
 					["provider"] = { "n", 55614 },	-- Pei-Zhi
@@ -1252,6 +1328,15 @@ _.Zones =
 					["coord"] = { 43.6, 90.7, 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(31239, {	-- What's in a Name Name?
+					["sourceQuests"] = { 29941 },	-- Beyond the Horizon
+					["provider"] = { "n", 56336 },	-- Chief Kah Kah
+					["coord"] = { 27.9, 47.1, 371 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(84105),	-- Fishy
+					},
+				}),
 				q(29930, {	-- What's Mined Is Yours
 					["sourceQuests"] = { 29929 },	-- Trapped!
 					["provider"] = { "n", 56467 },	-- Hao Mann
@@ -1262,6 +1347,19 @@ _.Zones =
 						i(80785),	-- Mann's Cloak
 						i(80786),	-- Honey-Bear's Cape
 						i(80787),	-- Cloudfall Cloak
+					},
+				}),
+				q(31241, {	-- Wicked Wikkets
+					["minReputation"] = { 1228, FRIENDLY },
+					["provider"] = { "n", 63748 },	-- Jeek Jeek
+					["coord"] = { 28.1, 38.9, 371 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(88701),	-- Wikket Cape
+						i(88702),	-- Wikket Cloak
+						i(88703),	-- Wikket Wrap
+						i(88699),	-- Wikket Surcoat
+						i(88700),	-- Wikket Drape
 					},
 				}),
 				q(30134, {	-- Wild Things
@@ -1287,6 +1385,12 @@ _.Zones =
 						i(88691),	-- Bamboo Plate Armplates
 					},
 				}),
+				q(31770, {	-- You're Either With Us Or...
+					["sourceQuests"] = { 31769 },	-- The Final Blow!
+					["provider"] = { "n", 66656 },	-- General Nazgrim
+					["coord"] = { 33.6, 10.6, 371 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(29622, {	-- Your Training Starts Now
 					["sourceQuests"] = { 29620 },	-- The Great Banquet
 					["provider"] = { "n", 54926 },	-- Xiao
@@ -1302,15 +1406,6 @@ _.Zones =
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
-				ach(6300, {	-- Upjade Complete [Alliance]
-					["races"] = ALLIANCE_ONLY,	-- Alliance
-					["g"] = {
-						crit(11, {	-- The Battle for the Forest
-						}),
-						crit(12, {	-- Overcoming doubt
-						}),
-					},
-				}),
 				q(30149, {	-- A Feast for the Senses
 					["provider"] = { "n", 58413 },	-- Jenova Longeye
 					["isDaily"] = true,
@@ -1418,17 +1513,6 @@ _.Zones =
 				q(31703, {	-- Madcap Mayhem
 					["provider"] = { "n", 58564 },	-- Elder Anli
 					["isDaily"] = true,
-				}),
-				q(30648, {	-- Moving On
-					-- possibly a breadcrumb?
-					["sourceQuests"] = {
-						31319,	-- Emergency Response (A)
-						30504,	-- Emergency Response (H)
-						30502,	-- Jaded Heart
-						30500,	-- Residual Fallout
-					},
-					["provider"] = { "n", 59899 },	-- Fei
-					["coord"] = { 49.3, 61.4, 371 },
 				}),
 				q(31705, {	-- Needle Me Not
 					["provider"] = { "n", 58564 },	-- Elder Anli
@@ -1561,23 +1645,6 @@ _.Zones =
 					["isWeekly"] = true,
 					["requireSkill"] = INSCRIPTION,
 				}),
-				q(30139, {	-- The Rider's Journey (blue egg)
-				--	picked the blue and got this one, but some notes indicate all colors now grant this quest.
-				--	TODO: verify if picking green/yellow gives their respective quest or if they all grant this one
-					["sourceQuests"] = { 30138 },	-- Choosing the One
-					["provider"] = { "n", 58225 },	-- Instructor Tong
-					["coord"] = { 65.3, 31.6, 371 },
-				}),
-				q(30140, {	-- The Rider's Journey (green egg)
-					["sourceQuests"] = { 30138 },	-- Choosing the One
-					["provider"] = { "n", 58225 },	-- Instructor Tong
-					["coord"] = { 65.3, 31.6, 371 },
-				}),
-				q(30141, {	-- The Rider's Journey (yellow egg)
-					["sourceQuests"] = { 30138 },	-- Choosing the One
-					["provider"] = { "n", 58225 },	-- Instructor Tong
-					["coord"] = { 65.3, 31.6, 371 },
-				}),
 				q(31711, {	-- The Seed of Doubt
 					["provider"] = { "n", 58564 },	-- Elder Anli
 					["isDaily"] = true,
@@ -1601,35 +1668,9 @@ _.Zones =
 					["provider"] = { "n", 58228 },	-- Instructor Skythorn
 					["isDaily"] = true,
 				}),
-				q(31132, {	-- A Mile in My Shoes
-					["sourceQuests"] = { 31121 },	-- Stay a While, and Listen
-					["provider"] = { "n", 55768 },	-- Lorewalker Cho
-					["coord"] = { 27.5, 32.6, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29827, {	-- Acid Rain
-					["sourceQuests"] = { 29815 },	-- Forensic Science
-					["provider"] = { "n", 55180 },	-- Shademaster Kiryn
-					["coord"] = { 28.1, 24.8, 371 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(90310),	-- Honorary Combat Engineer's Burnished Legplates
-						i(90305),	-- Honorary Combat Engineer's Chain Leggings
-						i(90312),	-- Honorary Combat Engineer's Heavy Legplates
-						i(90308),	-- Honorary Combat Engineer's Hide Leggings
-						i(90304),	-- Honorary Combat Engineer's Leather Trousers
-						i(90311),	-- Honorary Combat Engineer's Legguards
-						i(90309),	-- Honorary Combat Engineer's Ringmail Leggings
-						i(90307),	-- Honorary Combat Engineer's Satin Leggings
-						i(90306),	-- Honorary Combat Engineer's Silk Trousers
-					},
-				}),
-				q(31775, {	-- Assault on the Airstrip
-					["sourceQuests"] = { 29804 },	-- Seein' Red
-					["provider"] = { "n", 65999 },	-- General Nazgrim
-					["coord"] = { 31.6, 21.9, 371 },
-					["races"] = HORDE_ONLY,
-				}),
+				
+				
+				
 				q(29941, {	-- Beyond the Horizon
 					["sourceQuests"] = { 29936 },	-- Instant Messaging
 					["provider"] = { "n", 56339 },	-- General Nazgrim
@@ -2071,52 +2112,6 @@ _.Zones =
 					["coord"] = { 27.2, 50.7, 371 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-				}),
-				q(31112, {	-- They're So Thorny!
-					["sourceQuests"] = { 29821 },	-- Missed Me By... That Much!
-					["provider"] = { "n", 62923 },	-- Empty Package
-					["coord"] = { 22.8, 30.5, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31766, {	-- Touching Ground
-					["sourceQuests"] = { 31765 },	-- Paint it Red!
-					["provider"] = { "n", 66667 },	-- Rivett Clutchpop
-					["coord"] = { 31.0, 11.0, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31778, {	-- Unreliable Allies
-					["sourceQuests"] = { 29804 },	-- Seein' Red
-					["provider"] = { "n", 65998 },	-- Merchant Zin
-					["coord"] = { 31.4, 21.7, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31239, {	-- What's in a Name Name?
-					["sourceQuests"] = { 29941 },	-- Beyond the Horizon
-					["provider"] = { "n", 56336 },	-- Chief Kah Kah
-					["coord"] = { 27.9, 47.1, 371 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(84105),	-- Fishy
-					},
-				}),
-				q(31241, {	-- Wicked Wikkets
-					["minReputation"] = { 1228, FRIENDLY },
-					["provider"] = { "n", 63748 },	-- Jeek Jeek
-					["coord"] = { 28.1, 38.9, 371 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(88701),	-- Wikket Cape
-						i(88702),	-- Wikket Cloak
-						i(88703),	-- Wikket Wrap
-						i(88699),	-- Wikket Surcoat
-						i(88700),	-- Wikket Drape
-					},
-				}),
-				q(31770, {	-- You're Either With Us Or...
-					["sourceQuests"] = { 31769 },	-- The Final Blow!
-					["provider"] = { "n", 66656 },	-- General Nazgrim
-					["coord"] = { 33.6, 10.6, 371 },
-					["races"] = HORDE_ONLY,
 				}),
 			}),
 		}),

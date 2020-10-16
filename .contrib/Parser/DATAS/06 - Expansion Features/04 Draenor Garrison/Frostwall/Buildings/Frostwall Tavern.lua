@@ -235,7 +235,7 @@ _.ExpansionFeatures =
 								follower(172, {	-- Soulare of Andorhal
 									i(117573, {	-- Wayfarer's Bonfire
 										["crs"] = { 82717 },	-- Soulare of Andorhal
-										["description"] = "|cff3399ffStep 1:|r |cff66ccffRecruit |cFFFFD700Soulare of Andorhal|r from the Inn using either Magic Debuff or Wild Aggression.|r \n|cff3399ffStep 2:|r |cff66ccffDo a /tired emote and he will award the toy.|r \n|cff3399ffNote:|r |cff66ccffCan get by visiting someone's Garrison.|r",
+										["description"] = "|cff3399ffStep 1:|r |cff66ccffRecruit |cFFFFD700Soulare of Andorhal|r from the Inn using either Magic Debuff or Wild Aggression.|r \n|cff3399ffStep 2:|r |cff66ccffDo a |cFFFFFFFF/tired|r emote and he will award the toy.|r \n|cff3399ffNote:|r |cff66ccffCan get by visiting someone's Garrison, and players of both factions can now visit Soulare in Stormwind City at |cFFFFFFFF38.2, 64.6|r and emote at him to get the toy.|r\n",
 									}),
 								}),
 								follower(120),	-- Su-Lai Snowpetal
