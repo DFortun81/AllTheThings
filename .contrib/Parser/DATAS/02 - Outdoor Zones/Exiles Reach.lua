@@ -44,159 +44,311 @@ _.Zones =
 				},
 			}),
 			n(QUESTS, {
-				q(59350, {	-- A Druid's Form (A)
-					["coord"] = { 52.0, 55.2, 1409 },
-					["races"] = ALLIANCE_ONLY,
+				cl(DRUID, {
 					["classes"] = { DRUID },
-					["provider"] = { "n", 156932 },	-- Ralia Dreamchaster
-					["sourceQuests"] = {
-						55882,	-- Message to Base
-						55639,	-- Who Lurks in the Pit
+					["g"] = {
+						q(59350, {	-- A Druid's Form (A)
+							["coord"] = { 52.0, 55.2, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 156932 },	-- Ralia Dreamchaster
+							["sourceQuests"] = {
+								55882,	-- Message to Base
+								55639,	-- Who Lurks in the Pit
+							},
+						}),
+						q(59951, {	-- A Druid's Form (H) -- TODO: needs provider
+							["coord"] = { 52.0, 55.2, 1409 },
+							["races"] = HORDE_ONLY,
+							--["provider"] = { "n",  },	--
+							["sourceQuests"] = {
+								59947,	-- Message to Base
+								59949,	-- Who Lurks in the Pit
+							},
+						}),
 					},
 				}),
-				q(59951, {	-- A Druid's Form (H) -- TODO: needs provider
-					["coord"] = { 52.0, 55.2, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { DRUID },
-					--["provider"] = { "n",  },	--
-					["sourceQuests"] = {
-						59947,	-- Message to Base
-						59949,	-- Who Lurks in the Pit
-					},
-				}),
-				q(59355, {	-- A Hunter's Trap (A)
-					["coord"] = { 52.4, 55.2, 1409 },
-					["races"] = ALLIANCE_ONLY,
+				cl(HUNTER, {
 					["classes"] = { HUNTER },
-					["provider"] = { "n", 161666 },	-- Austin Huxworth
-					["sourceQuests"] = {
-						59947,	-- Message to Base
-						59949,	-- Who Lurks in the Pit
+					["g"] = {
+						q(59342, {	-- Taming the Wilds (A)
+							["coord"] = { 62.7, 69.8, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 154327 },	-- Austin Huxworth
+							["sourceQuest"] = 55173,	-- Northbound
+						}),
+						q(59355, {	-- A Hunter's Trap (A)
+							["coord"] = { 52.4, 55.2, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 161666 },	-- Austin Huxworth
+							["sourceQuests"] = {
+								59947,	-- Message to Base
+								59949,	-- Who Lurks in the Pit
+							},
+						}),
+						q(59356, {	-- Hunting the Stalker (A)
+							["coord"] = { 52.4, 55.2, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 161666 },	-- Austin Huxworth
+							["sourceQuest"] = 59355,	-- A Hunter's Trap
+						}),						
+						q(60168, {	-- The Art of Taming (A)
+							["coord"] = { 52.4, 55.2, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 161666 },	-- Austin Huxworth
+							["sourceQuest"] = 59356,	-- Hunting the Stalker
+						}),
+						q(59937, {	-- Taming the Wilds (H)
+							["coord"] = { 62.7, 69.8, 1409 },
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
+							["sourceQuest"] = 59935,	-- Northbound
+						}),
+						q(59952, {	-- A Hunter's Trap (H) -- TODO: need provider
+							["coord"] = { 52.4, 55.2, 1409 },
+							["races"] = HORDE_ONLY,
+							--["provider"] = { "n",  },	--
+							["sourceQuests"] = {
+								59947,	-- Message to Base
+								59949,	-- Who Lurks in the Pit
+							},
+						}),
+						q(59953, {	-- Hunting the Stalker (H) -- TODO: need provider
+							["coord"] = { 52.4, 55.2, 1409 },
+							["races"] = HORDE_ONLY,
+							--["provider"] = { "n",  },	--
+							["sourceQuest"] = 59952,	-- A Hunter's Trap
+						}),
+						q(60162, {	-- The Art of Taming (H)	-- TODO: need provider
+							["coord"] = { 52.4, 55.2, 1409 },
+							["races"] = HORDE_ONLY,
+							--["provider"] = { "n",  },	--
+							["sourceQuest"] = 59953,	-- Hunting the Stalker
+						}),
 					},
 				}),
-				q(59952, {	-- A Hunter's Trap (H) -- TODO: need provider
-					["coord"] = { 52.4, 55.2, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { HUNTER },
-					--["provider"] = { "n",  },	--
-					["sourceQuests"] = {
-						59947,	-- Message to Base
-						59949,	-- Who Lurks in the Pit
+				cl(MAGE, {
+					["classes"] = { MAGE },
+					["g"] = {
+						q(59352, {	-- A Mage's Knowledge (A)
+							["coord"] = { 52.0, 55.2, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 156801 },	-- Private Cole
+							["sourceQuest"] = 55882,	-- Message to Base
+						}),
+						q(59354, {	-- The Best Way to Use Sheep (A)
+							["coord"] = { 52.2, 55.4, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 156886 },	-- Meredy Huntswell
+							["sourceQuest"] = 59352,	-- A Mage's Knowledge
+						}),
+						q(59954, {	-- A Mage's Knowledge (H)
+							["coord"] = { 52.0, 55.2, 1409 },
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 167216 },	-- Grunt Throg
+							["sourceQuest"] = 59947,	-- Message to Base
+						}),
+						q(59955, {	-- The Best Way to Use Sheep (H) -- TODO: need provider
+							["coord"] = { 52.2, 55.4, 1409 },
+							["races"] = HORDE_ONLY,
+							--["provider"] = { "n",  },	--
+							["sourceQuest"] = 59954,	-- A Mage's Knowledge
+						}),						
 					},
 				}),
-				q(59352, {	-- A Mage's Knowledge (A)
-					["coord"] = { 52.0, 55.2, 1409 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { MAGE },
-					["provider"] = { "n", 156801 },	-- Private Cole
-					["sourceQuest"] = 55882,	-- Message to Base
-				}),
-				q(59954, {	-- A Mage's Knowledge (H)
-					["coord"] = { 52.0, 55.2, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { MAGE },
-					["provider"] = { "n", 167216 },	-- Grunt Throg
-					["sourceQuest"] = 59947,	-- Message to Base
-				}),
-				q(59347, {	-- A Monk's Focus (A)
-					["coord"] = { 52.0, 55.2, 1409 },
-					["races"] = ALLIANCE_ONLY,
+				cl(MONK, {
 					["classes"] = { MONK },
-					["provider"] = { "n", 156885 },	-- Kee-La
-					["sourceQuest"] = 55882,	-- Message to Base
+					["g"] = {
+						q(59339, {	-- Enhanced Combat Tactics (A - Monk)
+							["coord"] = { 58.3, 74.6, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 156651 },	-- Captain Garrick
+							["sourceQuest"] = 55174,	-- Cooking Meat
+						}),
+						q(59347, {	-- A Monk's Focus (A)
+							["coord"] = { 52.0, 55.2, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 156885 },	-- Kee-La
+							["sourceQuest"] = 55882,	-- Message to Base
+						}),
+						q(59349, {	-- One Last Spar (A)
+							["coord"] = { 52.6, 49.4, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 164835 },	-- Kee-La
+							["sourceQuest"] = 59347,	-- A Monk's Focus
+						}),
+						q(59934, {	-- Enhanced Combat Tactics (H - Monk)
+							["coord"] = { 58.3, 74.6, 1409 },
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
+							["sourceQuest"] = 59932,	-- Cooking Meat
+						}),
+						q(59956, {	-- A Monk's Focus (H) -- TODO: needs provider
+							["coord"] = { 52.0, 55.2, 1409 },
+							["races"] = HORDE_ONLY,
+							--["provider"] = { "n",  },	--
+							["sourceQuest"] = 59947,	-- Message to Base
+						}),
+						q(59957, {	-- One Last Spar (H) -- TODO: need provider
+							["coord"] = { 52.6, 49.4, 1409 },
+							["races"] = HORDE_ONLY,
+							--["provider"] = { "n",  },	--
+							["sourceQuest"] = 59956,	-- A Monk's Focus
+						}),						
+					},
 				}),
-				q(59956, {	-- A Monk's Focus (H) -- TODO: needs provider
-					["coord"] = { 52.0, 55.2, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { MONK },
-					--["provider"] = { "n",  },	--
-					["sourceQuest"] = 59947,	-- Message to Base
-				}),
-				q(58923, {	-- A Paladin's Service (A)
-					["coord"] = { 52.0, 55.4, 1409 },
-					["races"] = ALLIANCE_ONLY,
+				cl(PALADIN, {
 					["classes"] = { PALADIN },
-					["provider"] = { "n", 156801 },	-- Private Cole
-					["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+					["g"] = {
+						q(58923, {	-- A Paladin's Service (A)
+							["coord"] = { 52.0, 55.4, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 156801 },	-- Private Cole
+							["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+						}),
+						q(58946, {	-- The Divine's Shield (A)
+							["coord"] = { 57.5, 52.2, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 162998 },	-- Yorah
+							["sourceQuest"] = 58923,	-- A Paladin's Service
+						}),
+						q(59958, {	-- A Paladin's Service (H)
+							["coord"] = { 52.0, 55.4, 1409 },
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 167216 },	-- Grunt Throg
+							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+						}),					
+						q(60174, {	-- The Divine's Shield (H)
+							["coord"] = { 57.5, 52.2, 1409 },
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 167179 },	-- Daelya Twilightsbane
+							["sourceQuest"] = 59958,	-- A Paladin's Service
+						}),
+					},
 				}),
-				q(59958, {	-- A Paladin's Service (H)
-					["coord"] = { 52.0, 55.4, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 167216 },	-- Grunt Throg
-					["sourceQuest"] = 59950,	-- Stocking Up on Supplies
-				}),
-				q(58953, {	-- A Priest's End (A)
-					["coord"] = { 52.0, 55.2, 1409 },
-					["races"] = ALLIANCE_ONLY,
+				cl(PRIEST, {
 					["classes"] = { PRIEST },
-					["provider"] = { "n", 156801 },	-- Private Cole
-					["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+					["g"] = {
+						q(58953, {	-- A Priest's End (A)
+							["coord"] = { 52.0, 55.2, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 156801 },	-- Private Cole
+							["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+						}),
+						q(58960, {	-- Resurrecting the Recruits (A)
+							["coord"] = { 56.1, 53.6, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 163108 },	-- Branven Hammerheart
+							["sourceQuest"] = 58953,	-- A Priest's End
+						}),
+						q(59961, {	-- A Priest's End (H)
+							["coord"] = { 52.0, 55.2, 1409 },
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 167216 },	-- Grunt Throg
+							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+						}),
+						q(59965, {	-- Resurrecting the Recruits (H) -- TODO: need provider
+							["coord"] = { 56.1, 53.6, 1409 },
+							["races"] = HORDE_ONLY,
+							--["provider"] = { "n",  },	--
+							["sourceQuest"] = 59961,	-- A Priest's End
+						}),						
+					},
 				}),
-				q(59961, {	-- A Priest's End (H)
-					["coord"] = { 52.0, 55.2, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { PRIEST },
-					["provider"] = { "n", 167216 },	-- Grunt Throg
-					["sourceQuest"] = 59950,	-- Stocking Up on Supplies
-				}),
-				q(58917, {	-- A Rogue's End (A)
-					["coord"] = { 52.0, 55.2, 1409 },
-					["races"] = ALLIANCE_ONLY,
+				cl(ROGUE, {
 					["classes"] = { ROGUE },
-					["provider"] = { "n", 156801 },	-- Private Cole
-					["sourceQuest"] = 55194,	-- Stocking Up on Supplies
-				}),
-				q(59967, {	-- A Rogue's End (H)
-					["coord"] = { 52.0, 55.2, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 167216 },	-- Grunt Throg
-					["sourceQuest"] = 59950,	-- Stocking Up on Supplies
-				}),
-				--[[
-				q(, {	-- A Shaman's Duty (A)
-					["coord"] = { , 1409 },
-					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						q(58917, {	-- A Rogue's End (A)
+							["coord"] = { 52.0, 55.2, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 156801 },	-- Private Cole
+							["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+						}),
+						q(58933, {	-- The Deadliest of Poisons (A)
+							["coord"] = { 45.6, 56.1, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 163024 },	-- Coulston Nereus
+							["sourceQuest"] = 58917,	-- A Rogue's End
+						}),
+						q(59967, {	-- A Rogue's End (H)
+							["coord"] = { 52.0, 55.2, 1409 },
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 167216 },	-- Grunt Throg
+							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+						}),
+						q(59968, {	-- The Deadliest of Poisons (H) -- TODO: need provider
+							["coord"] = { 45.6, 56.1, 1409 },
+							["races"] = HORDE_ONLY,
+							--["provider"] = { "n",  },	--
+							["sourceQuest"] = 59967,	-- A Rogue's End
+						}),						
+					},
+				}),			
+--[[			cl(SHAMAN, {
 					["classes"] = { SHAMAN },
-					["provider"] = { "n",  },	--
-					["sourceQuest"] = ,	--
+					["g"] = {
+
+						q(, {	-- A Shaman's Duty (A)
+							["coord"] = { , 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["classes"] = { SHAMAN },
+							["provider"] = { "n",  },	--
+							["sourceQuest"] = ,	--
+						}),
+						q(, {	-- A Shaman's Duty (H)
+							["coord"] = { , 1409 },
+							["races"] = HORDE_ONLY,
+							["classes"] = { SHAMAN },
+							["provider"] = { "n",  },	--
+							["sourceQuest"] = ,	--
+						}),
+					},
 				}),
-				q(, {	-- A Shaman's Duty (H)
-					["coord"] = { , 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { SHAMAN },
-					["provider"] = { "n",  },	--
-					["sourceQuest"] = ,	--
-				}),
-				]]--
-				q(58962, {	-- A Warlock's Bargain (A)
-					["coord"] = { 52.0, 55.2, 1409 },
-					["races"] = ALLIANCE_ONLY,
+]]--
+				cl(WARLOCK, {
 					["classes"] = { WARLOCK },
-					["provider"] = { "n", 156801 },	-- Private Cole
-					["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+					["g"] = {
+						q(58962, {	-- A Warlock's Bargain (A)
+							["coord"] = { 52.0, 55.2, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 156801 },	-- Private Cole
+							["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+						}),
+						q(59970, {	-- A Warlock's Bargain (H)
+							["coord"] = { 52.0, 55.2, 1409 },
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 167216 },	-- Grunt Throg
+							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+						}),					
+					},
 				}),
-				q(59970, {	-- A Warlock's Bargain (H)
-					["coord"] = { 52.0, 55.2, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARLOCK },
-					["provider"] = { "n", 167216 },	-- Grunt Throg
-					["sourceQuest"] = 59950,	-- Stocking Up on Supplies
-				}),
-				q(58914, {	-- A Warrior's End (A)
-					["coord"] = { 52.0, 55.2, 1409 },
-					["races"] = ALLIANCE_ONLY,
+				cl(WARRIOR, {
 					["classes"] = { WARRIOR },
-					["provider"] = { "n", 156801 },	-- Private Cole
-					["sourceQuest"] = 55194,	-- Stocking Up on Supplies
-				}),
-				q(59971, {	-- A Warrior's End (H)
-					["coord"] = { 52.0, 55.2, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARRIOR },
-					["provider"] = { "n", 167216 },	-- Grunt Throg
-					["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+					["g"] = {
+						q(58914, {	-- A Warrior's End (A)
+							["coord"] = { 52.0, 55.2, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 156801 },	-- Private Cole
+							["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+						}),
+						q(58915, {	-- Hjalmar's Final Execution (A)
+							["coord"] = { 51.5, 47.8, 1409 },
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 162943 },	-- Hjalmar the Undying
+							["sourceQuest"] = 58914,	-- A Warrior's End
+						}),
+						q(59971, {	-- A Warrior's End (H)
+							["coord"] = { 52.0, 55.2, 1409 },
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 167216 },	-- Grunt Throg
+							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+						}),
+						q(59972, {	-- Hjalmar's Final Execution (H) -- TODO: need provider
+							["coord"] = { 51.5, 47.8, 1409 },
+							["races"] = HORDE_ONLY,
+							--["provider"] = { "n",  },	--
+							["sourceQuest"] = 59971,	-- A Warrior's End
+						}),
+					},
 				}),
 				q(55991, {	-- An End to Beginnings (A)
 					["coord"] = { 39.6, 31.9, 1409 },
@@ -204,21 +356,17 @@ _.Zones =
 					["provider"] = { "n", 156961 },	-- Captain Garrick
 					["sourceQuest"] = 55992,	-- Dungeon: Darkmaul Citadel
 					["g"] = {
-						i(175176),	-- Expeditionary Cloth Robe
-						i(175179),	-- Expeditionary Leather Tunic
-						i(175178),	-- Expeditionary Mail Armor
-						i(175177),	-- Expeditionary Plate Chestpiece
-						i(175208, {	-- Expeditionary Cloth Robe
-							["races"] = HORDE_ONLY,
+						i(175176, {    -- Expeditionary Cloth Robe
+							["races"] = ALLIANCE_ONLY,
 						}),
-						i(175211, {	-- Expeditionary Leather Tunic
-							["races"] = HORDE_ONLY,
+						i(175179, {    -- Expeditionary Leather Tunic
+							["races"] = ALLIANCE_ONLY,
 						}),
-						i(175210, {	-- Expeditionary Mail Armor
-							["races"] = HORDE_ONLY,
+						i(175178, {    -- Expeditionary Mail Armor
+							["races"] = ALLIANCE_ONLY,
 						}),
-						i(175209, {	-- Expeditionary Plate Chestpiece
-							["races"] = HORDE_ONLY,
+						i(175177, {    -- Expeditionary Plate Chestpiece
+							["races"] = ALLIANCE_ONLY,
 						}),
 					},
 				}),
@@ -228,21 +376,17 @@ _.Zones =
 					["provider"] = { "n", 167675 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59984,	-- Dungeon: Darkmaul Citadel
 					["g"] = {
-						i(175208),	-- Expeditionary Cloth Robe
-						i(175211),	-- Expeditionary Leather Tunic
-						i(175210),	-- Expeditionary Mail Armor
-						i(175209),	-- Expeditionary Plate Chestpiece
-						i(175176, {	-- Expeditionary Cloth Robe
-							["races"] = ALLIANCE_ONLY,
+						i(175208, {    -- Expeditionary Cloth Robe
+							["races"] = HORDE_ONLY,
 						}),
-						i(175179, {	-- Expeditionary Leather Tunic
-							["races"] = ALLIANCE_ONLY,
+						i(175211, {    -- Expeditionary Leather Tunic
+							["races"] = HORDE_ONLY,
 						}),
-						i(175178, {	-- Expeditionary Mail Armor
-							["races"] = ALLIANCE_ONLY,
+						i(175210, {    -- Expeditionary Mail Armor
+							["races"] = HORDE_ONLY,
 						}),
-						i(175177, {	-- Expeditionary Plate Chestpiece
-							["races"] = ALLIANCE_ONLY,
+						i(175209, {    -- Expeditionary Plate Chestpiece
+							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),
@@ -361,24 +505,10 @@ _.Zones =
 					["provider"] = { "n", 156651 },	-- Captain Garrick
 					["sourceQuest"] = 55174,	-- Cooking Meat
 				}),
-				q(59339, {	-- Enhanced Combat Tactics (A - Monk)
-					["coord"] = { 58.3, 74.6, 1409 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { MONK },
-					["provider"] = { "n", 156651 },	-- Captain Garrick
-					["sourceQuest"] = 55174,	-- Cooking Meat
-				}),
 				q(59933, {	-- Enhanced Combat Tactics (H)
 					["coord"] = { 58.3, 74.6, 1409 },
 					["races"] = HORDE_ONLY,
 					["classes"] = exclude({ HUNTER, MONK }, ALL_CLASSES),
-					["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
-					["sourceQuest"] = 59932,	-- Cooking Meat
-				}),
-				q(59934, {	-- Enhanced Combat Tactics (H - Monk)
-					["coord"] = { 58.3, 74.6, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { MONK },
 					["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59932,	-- Cooking Meat
 				}),
@@ -438,34 +568,6 @@ _.Zones =
 					["provider"] = { "n", 167291 },	-- Bo
 					["sourceQuest"] = 59943,	-- The Harpy Problem
 				}),
-				q(58915, {	-- Hjalmar's Final Execution (A)
-					["coord"] = { 51.5, 47.8, 1409 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARRIOR },
-					["provider"] = { "n", 162943 },	-- Hjalmar the Undying
-					["sourceQuest"] = 58914,	-- A Warrior's End
-				}),
-				q(59972, {	-- Hjalmar's Final Execution (H) -- TODO: need provider
-					["coord"] = { 51.5, 47.8, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARRIOR },
-					--["provider"] = { "n",  },	--
-					["sourceQuest"] = 59971,	-- A Warrior's End
-				}),
-				q(59356, {	-- Hunting the Stalker (A)
-					["coord"] = { 52.4, 55.2, 1409 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { HUNTER },
-					["provider"] = { "n", 161666 },	-- Austin Huxworth
-					["sourceQuest"] = 59355,	-- A Hunter's Trap
-				}),
-				q(59953, {	-- Hunting the Stalker (H) -- TODO: need provider
-					["coord"] = { 52.4, 55.2, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { HUNTER },
-					--["provider"] = { "n",  },	--
-					["sourceQuest"] = 59952,	-- A Hunter's Trap
-				}),
 				q(56839, {	-- Killclaw the Terrible
 					["lvl"] = 7,
 					["coord"] = { 48.7, 54.2, 1409 },
@@ -507,21 +609,17 @@ _.Zones =
 					["provider"] = { "n", 156942 },	-- Henry Garrick
 					["sourceQuest"] = 55981,	-- Right Beneath Their Eyes
 					["g"] = {
-						i(175186),	-- Expeditionary Cloth Gloves
-						i(175184),	-- Expeditionary Leather Gloves
-						i(175187),	-- Expeditionary Mail Gauntlets
-						i(175185),	-- Expeditionary Plate Gauntlets
-						i(175218, {	-- Expeditionary Cloth Gloves
-							["races"] = HORDE_ONLY,
+						i(175186, {		-- Expeditionary Cloth Gloves
+							["races"] = ALLIANCE_ONLY,
 						}),
-						i(175216, {	-- Expeditionary Leather Gloves
-							["races"] = HORDE_ONLY,
+						i(175184, {		-- Expeditionary Leather Gloves
+							["races"] = ALLIANCE_ONLY,
+						}),						
+						i(175187, {		-- Expeditionary Mail Gauntlets
+							["races"] = ALLIANCE_ONLY,
 						}),
-						i(175219, {	-- Expeditionary Mail Gauntlets
-							["races"] = HORDE_ONLY,
-						}),
-						i(175217, {	-- Expeditionary Plate Gauntlets
-							["races"] = HORDE_ONLY,
+						i(175185, {		-- Expeditionary Plate Gauntlets
+							["races"] = ALLIANCE_ONLY,
 						}),
 					},
 				}),
@@ -531,21 +629,17 @@ _.Zones =
 					["provider"] = { "n", 167632 },	-- Shuja Grimaxe
 					["sourceQuest"] = 59978,	-- Right Beneath Their Eyes
 					["g"] = {
-						i(175218),	-- Expeditionary Cloth Gloves
-						i(175216),	-- Expeditionary Leather Gloves
-						i(175219),	-- Expeditionary Mail Gauntlets
-						i(175217),	-- Expeditionary Plate Gauntlets
-						i(175186, {	-- Expeditionary Cloth Gloves
-							["races"] = ALLIANCE_ONLY,
+						i(175218, {		-- Expeditionary Cloth Gloves
+							["races"] = HORDE_ONLY,
 						}),
-						i(175184, {	-- Expeditionary Leather Gloves
-							["races"] = ALLIANCE_ONLY,
+						i(175216, {		-- Expeditionary Leather Gloves
+							["races"] = HORDE_ONLY,
+						}),						
+						i(175219, {		-- Expeditionary Mail Gauntlets
+							["races"] = HORDE_ONLY,
 						}),
-						i(175187, {	-- Expeditionary Mail Gauntlets
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(175185, {	-- Expeditionary Plate Gauntlets
-							["races"] = ALLIANCE_ONLY,
+						i(175217, {		-- Expeditionary Plate Gauntlets
+							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),
@@ -559,21 +653,17 @@ _.Zones =
 						55763,	-- The Rescue of Meredy Huntswell
 					},
 					["g"] = {
-						i(175192),	-- Expeditionary Cloth Leggings
-						i(175194),	-- Expeditionary Leather Legguards
-						i(175193),	-- Expeditionary Mail Leggings
-						i(175191),	-- Expeditionary Plate Legguards
-						i(175224, {	-- Expeditionary Cloth Leggings
-							["races"] = HORDE_ONLY,
+						i(175192, {		-- Expeditionary Cloth Leggings
+							["races"] = ALLIANCE_ONLY,
 						}),
-						i(175226, {	-- Expeditionary Leather Legguards
-							["races"] = HORDE_ONLY,
+						i(175194, {		-- Expeditionary Leather Legguards
+							["races"] = ALLIANCE_ONLY,
 						}),
-						i(175225, {	-- Expeditionary Mail Leggings
-							["races"] = HORDE_ONLY,
+						i(175193, {		-- Expeditionary Mail Leggings
+							["races"] = ALLIANCE_ONLY,
 						}),
-						i(175223, {	-- Expeditionary Plate Legguards
-							["races"] = HORDE_ONLY,
+						i(175191, {		-- Expeditionary Plate Legguards
+							["races"] = ALLIANCE_ONLY,
 						}),
 					},
 				}),
@@ -587,21 +677,17 @@ _.Zones =
 						59944,	-- The Rescue of Herbert Gloomburst
 					},
 					["g"] = {
-						i(175224),	-- Expeditionary Cloth Leggings
-						i(175226),	-- Expeditionary Leather Legguards
-						i(175225),	-- Expeditionary Mail Leggings
-						i(175223),	-- Expeditionary Plate Legguards
-						i(175192, {	-- Expeditionary Cloth Leggings
-							["races"] = ALLIANCE_ONLY,
+						i(175224, {		-- Expeditionary Cloth Leggings
+							["races"] = HORDE_ONLY,
 						}),
-						i(175194, {	-- Expeditionary Leather Legguards
-							["races"] = ALLIANCE_ONLY,
+						i(175226, {		-- Expeditionary Leather Legguards
+							["races"] = HORDE_ONLY,
 						}),
-						i(175193, {	-- Expeditionary Mail Leggings
-							["races"] = ALLIANCE_ONLY,
+						i(175225, {		-- Expeditionary Mail Leggings
+							["races"] = HORDE_ONLY,
 						}),
-						i(175191, {	-- Expeditionary Plate Legguards
-							["races"] = ALLIANCE_ONLY,
+						i(175223, {		-- Expeditionary Plate Legguards
+							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),
@@ -637,41 +723,23 @@ _.Zones =
 						59934,	-- Enhanced Combat Tactics (monk)
 					},
 				}),
-				q(59349, {	-- One Last Spar (A)
-					["coord"] = { 52.6, 49.4, 1409 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { MONK },
-					["provider"] = { "n", 164835 },	-- Kee-La
-					["sourceQuest"] = 59347,	-- A Monk's Focus
-				}),
-				q(59957, {	-- One Last Spar (H) -- TODO: need provider
-					["coord"] = { 52.6, 49.4, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { MONK },
-					--["provider"] = { "n",  },	--
-					["sourceQuest"] = 59956,	-- A Monk's Focus
-				}),
 				q(55881, {	-- Purge the Totems (A)
 					["coord"] = { 56.9, 46.2, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156859 },	-- Henry Garrick
 					["sourceQuest"] = 55196,	-- The Harpy Problem
 					["g"] = {
-						i(175200),	-- Expeditionary Cloth Cord
-						i(175202),	-- Expeditionary Leather Belt
-						i(175201),	-- Expeditionary Mail Waistguard
-						i(175199),	-- Expeditionary Plate Girdle
-						i(175238, {	-- Expeditionary Cloth Cord
-							["races"] = HORDE_ONLY,
+						i(175200, {		-- Expeditionary Cloth Cord
+							["races"] = ALLIANCE_ONLY,
 						}),
-						i(175233, {	-- Expeditionary Leather Belt
-							["races"] = HORDE_ONLY,
+						i(175202, {		-- Expeditionary Leather Belt
+							["races"] = ALLIANCE_ONLY,
 						}),
-						i(175232, {	-- Expeditionary Mail Waistguard
-							["races"] = HORDE_ONLY,
+						i(175201, {		-- Expeditionary Mail Waistguard
+							["races"] = ALLIANCE_ONLY,
 						}),
-						i(175231, {	-- Expeditionary Plate Girdle
-							["races"] = HORDE_ONLY,
+						i(175199, {		-- Expeditionary Plate Girdle
+							["races"] = ALLIANCE_ONLY,
 						}),
 					},
 				}),
@@ -681,21 +749,17 @@ _.Zones =
 					["provider"] = { "n", 167291 },	-- Bo
 					["sourceQuest"] = 59943,	-- The Harpy Problem
 					["g"] = {
-						i(175238),	-- Expeditionary Cloth Cord
-						i(175233),	-- Expeditionary Leather Belt
-						i(175232),	-- Expeditionary Mail Waistguard
-						i(175231),	-- Expeditionary Plate Girdle
-						i(175200, {	-- Expeditionary Cloth Cord
-							["races"] = ALLIANCE_ONLY,
+						i(175238, {		-- Expeditionary Cloth Cord
+							["races"] = HORDE_ONLY,
 						}),
-						i(175202, {	-- Expeditionary Leather Belt
-							["races"] = ALLIANCE_ONLY,
+						i(175233, {		-- Expeditionary Leather Belt
+							["races"] = HORDE_ONLY,
 						}),
-						i(175201, {	-- Expeditionary Mail Waistguard
-							["races"] = ALLIANCE_ONLY,
+						i(175232, {		-- Expeditionary Mail Waistguard
+							["races"] = HORDE_ONLY,
 						}),
-						i(175199, {	-- Expeditionary Plate Girdle
-							["races"] = ALLIANCE_ONLY,
+						i(175231, {		-- Expeditionary Plate Girdle
+							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),
@@ -710,20 +774,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167019 },	-- Cork Fizzlepop
 					["sourceQuest"] = 59940,	-- The Choppy Booster Mk 5
-				}),
-				q(58960, {	-- Resurrecting the Recruits (A)
-					["coord"] = { 56.1, 53.6, 1409 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PRIEST },
-					["provider"] = { "n", 163108 },	-- Branven Hammerheart
-					["sourceQuest"] = 58953,	-- A Priest's End
-				}),
-				q(59965, {	-- Resurrecting the Recruits (H) -- TODO: need provider
-					["coord"] = { 56.1, 53.6, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { PRIEST },
-					--["provider"] = { "n",  },	--
-					["sourceQuest"] = 59961,	-- A Priest's End
 				}),
 				q(55879, {	-- Ride of the Scientifically Enhanced Boar
 					["coord"] = { 56.2, 59.0, 1409 },
@@ -774,48 +824,6 @@ _.Zones =
 					["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59942,	-- The Re-Deather
 				}),
-				q(59342, {	-- Taming the Wilds (A)
-					["coord"] = { 62.7, 69.8, 1409 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { HUNTER },
-					["provider"] = { "n", 154327 },	-- Austin Huxworth
-					["sourceQuest"] = 55173,	-- Northbound
-				}),
-				q(59937, {	-- Taming the Wilds (H)
-					["coord"] = { 62.7, 69.8, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { HUNTER },
-					["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
-					["sourceQuest"] = 59935,	-- Northbound
-				}),
-				q(60168, {	-- The Art of Taming (A)
-					["coord"] = { 52.4, 55.2, 1409 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { HUNTER },
-					["provider"] = { "n", 161666 },	-- Austin Huxworth
-					["sourceQuest"] = 59356,	-- Hunting the Stalker
-				}),
-				q(60162, {	-- The Art of Taming (H)	-- TODO: need provider
-					["coord"] = { 52.4, 55.2, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { HUNTER },
-					--["provider"] = { "n",  },	--
-					["sourceQuest"] = 59953,	-- Hunting the Stalker
-				}),
-				q(59354, {	-- The Best Way to Use Sheep (A)
-					["coord"] = { 52.2, 55.4, 1409 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { MAGE },
-					["provider"] = { "n", 156886 },	-- Meredy Huntswell
-					["sourceQuest"] = 59352,	-- A Mage's Knowledge
-				}),
-				q(59955, {	-- The Best Way to Use Sheep (H) -- TODO: need provider
-					["coord"] = { 52.2, 55.4, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { MAGE },
-					--["provider"] = { "n",  },	--
-					["sourceQuest"] = 59954,	-- A Mage's Knowledge
-				}),
 				q(59940, {	-- The Choppy Booster Mk 5
 					["coord"] = { 56.1, 59.1, 1409 },
 					["races"] = HORDE_ONLY,
@@ -824,34 +832,6 @@ _.Zones =
 						59938,	-- Down with the Quilboar
 						59939,	-- Forbidden Quilboar Necromancy
 					},
-				}),
-				q(58933, {	-- The Deadliest of Poisons (A)
-					["coord"] = { 45.6, 56.1, 1409 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 163024 },	-- Coulston Nereus
-					["sourceQuest"] = 58917,	-- A Rogue's End
-				}),
-				q(59968, {	-- The Deadliest of Poisons (H) -- TODO: need provider
-					["coord"] = { 45.6, 56.1, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { ROGUE },
-					--["provider"] = { "n",  },	--
-					["sourceQuest"] = 59967,	-- A Rogue's End
-				}),
-				q(58946, {	-- The Divine's Shield (A)
-					["coord"] = { 57.5, 52.2, 1409 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 162998 },	-- Yorah
-					["sourceQuest"] = 58923,	-- A Paladin's Service
-				}),
-				q(60174, {	-- The Divine's Shield (H)
-					["coord"] = { 57.5, 52.2, 1409 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 167179 },	-- Daelya Twilightsbane
-					["sourceQuest"] = 59958,	-- A Paladin's Service
 				}),
 				q(55196, {	-- The Harpy Problem (A)
 					["coord"] = { 53.5, 52.3, 1409 },
@@ -957,34 +937,6 @@ _.Zones =
 					["provider"] = { "n", 156803 },	-- Alaria
 					["sourceQuest"] = 55965,	-- Westward Bound
 					["g"] = {
-						i(175203),	-- Expeditionary Cloth Cuffs
-						i(175206),	-- Expeditionary Leather Bracers
-						i(175205),	-- Expeditionary Mail Armbands
-						i(175204),	-- Expeditionary Plate Armguards
-						i(175234, {	-- Expeditionary Cloth Cuffs
-							["races"] = HORDE_ONLY,
-						}),
-						i(175237, {	-- Expeditionary Leather Bracers
-							["races"] = HORDE_ONLY,
-						}),
-						i(175236, {	-- Expeditionary Mail Armbands
-							["races"] = HORDE_ONLY,
-						}),
-						i(175235, {	-- Expeditionary Plate Armguards
-							["races"] = HORDE_ONLY,
-						}),
-					},
-				}),
-				q(59949, {	-- Who Lurks in the Pit (H)
-					["coord"] = { 51.1, 59.5, 1409 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 167225 },	-- Lana Jordan
-					["sourceQuest"] = 59948,	-- Westward Bound
-					["g"] = {
-						i(175234),	-- Expeditionary Cloth Cuffs
-						i(175237),	-- Expeditionary Leather Bracers
-						i(175236),	-- Expeditionary Mail Armbands
-						i(175235),	-- Expeditionary Plate Armguards
 						i(175203, {	-- Expeditionary Cloth Cuffs
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -996,6 +948,26 @@ _.Zones =
 						}),
 						i(175204, {	-- Expeditionary Plate Armguards
 							["races"] = ALLIANCE_ONLY,
+						}),
+					},
+				}),
+				q(59949, {	-- Who Lurks in the Pit (H)
+					["coord"] = { 51.1, 59.5, 1409 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 167225 },	-- Lana Jordan
+					["sourceQuest"] = 59948,	-- Westward Bound
+					["g"] = {
+						i(175234, {		-- Expeditionary Cloth Cuffs
+							["races"] = HORDE_ONLY,
+						}),
+						i(175237, {		-- Expeditionary Leather Bracers
+							["races"] = HORDE_ONLY,
+						}),
+						i(175236, {		-- Expeditionary Mail Armbands
+							["races"] = HORDE_ONLY,
+						}),
+						i(175235, {		-- Expeditionary Plate Armguards
+							["races"] = HORDE_ONLY,
 						}),
 					},
 				}),
