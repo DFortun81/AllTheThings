@@ -32,22 +32,22 @@ _.Instances = { tier(4, {	-- Cataclysm
 					a(q(29453, {	-- Your Time Has Come [A]
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
 						["provider"] = { "n", 53115 },	-- Molten Lord
-						["isBreadcrumb"] = true,    -- for A Legendary Engagement					
+						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 					})),
 					h(q(29452, {	-- Your Time Has Come [H]
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
 						["provider"] = { "n", 53115 },	-- Molten Lord
-						["isBreadcrumb"] = true,    -- for A Legendary Engagement					
+						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 					})),
 					a(q(29129, {	-- A Legendary Engagement [A]
 						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
 						["provider"] = { "n", 52382 },	-- Ziradormi
-						["sourceQuests"] = { 29453 },	-- Your Time Has Come			
+						["sourceQuests"] = { 29453 },	-- Your Time Has Come
 					})),
 					h(q(29132, {	-- A Legendary Engagement [H]
 						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
 						["provider"] = { "n", 52382 },	-- Ziradormi
-						["sourceQuests"] = { 29452 },	-- Your Time Has Come			
+						["sourceQuests"] = { 29452 },	-- Your Time Has Come
 					})),
 					q(29134, {	-- A Wrinkle in Time
 						["provider"] = { "n", 15192 },	-- Anachronos
@@ -205,7 +205,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 									52409,	-- Ragnaros
 								},
 							}),
-						},					
+						},
 					})),
 					h(q(29308, {	-- Heart of Flame [H]
 						["provider"] = { "n", 53349 },	-- Kalecgos
@@ -224,21 +224,21 @@ _.Instances = { tier(4, {	-- Cataclysm
 									52409,	-- Ragnaros
 								},
 							}),
-						},					
+						},
 					})),
 					a(q(29312, {	-- The Stuff of Legends [A]
 						["provider"] = { "n", 53466 },	-- Hallegosa
 						["sourceQuests"] = { 29307 },	-- Heart of Flame
 						["g"] = {
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest
-						},					
+						},
 					})),
 					h(q(29309, {	-- The Stuff of Legends [H]
 						["provider"] = { "n", 53466 },	-- Hallegosa
 						["sourceQuests"] = { 29308 },	-- Heart of Flame
 						["g"] = {
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest
-						},					
+						},
 					})),
 				},
 			}),

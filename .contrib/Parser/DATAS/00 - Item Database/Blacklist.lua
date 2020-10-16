@@ -7,13 +7,13 @@ end
 
 -- Consumables
 	-- BC
-		i(23379);	-- cinder bracers
-		i(23529);	-- adamantite sharpning stone
-		i(23764);	-- adamantite scope
-		i(23765);	-- khoriu scope
-		i(23766);	-- stabilizied eternium scope
-		i(23820);	-- critter enlarger
-		i(28421);	-- adamantite weogjstpme
+		i(23379);	-- Cinder Bracers
+		i(23529);	-- Adamantite Sharpening Stone
+		i(23764);	-- Adamantite Scope
+		i(23765);	-- Khorium Scope
+		i(23766);	-- Stabilized Eternium Scope
+		i(23820);	-- Critter Enlarger
+		i(28421);	-- Adamantite Weightstone
 i(33930);	-- Amani Charm of the Bloodletter
 i(33931);	-- Amani Charm of Mighty Mojo
 i(33932);	-- Amani Charm of the Witch Doctor

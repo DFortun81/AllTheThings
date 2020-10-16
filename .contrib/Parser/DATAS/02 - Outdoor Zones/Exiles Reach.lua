@@ -90,7 +90,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 161666 },	-- Austin Huxworth
 							["sourceQuest"] = 59355,	-- A Hunter's Trap
-						}),						
+						}),
 						q(60168, {	-- The Art of Taming (A)
 							["coord"] = { 52.4, 55.2, 1409 },
 							["races"] = ALLIANCE_ONLY,
@@ -132,7 +132,7 @@ _.Zones =
 						q(59352, {	-- A Mage's Knowledge (A)
 							["coord"] = { 52.0, 55.2, 1409 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 156801 },	-- Private Cole
+							["provider"] = { "n", 156886 },	-- Meredy Huntswell
 							["sourceQuest"] = 55882,	-- Message to Base
 						}),
 						q(59354, {	-- The Best Way to Use Sheep (A)
@@ -152,7 +152,7 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							--["provider"] = { "n",  },	--
 							["sourceQuest"] = 59954,	-- A Mage's Knowledge
-						}),						
+						}),
 					},
 				}),
 				cl(MONK, {
@@ -193,7 +193,7 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							--["provider"] = { "n",  },	--
 							["sourceQuest"] = 59956,	-- A Monk's Focus
-						}),						
+						}),
 					},
 				}),
 				cl(PALADIN, {
@@ -216,7 +216,7 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 167216 },	-- Grunt Throg
 							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
-						}),					
+						}),
 						q(60174, {	-- The Divine's Shield (H)
 							["coord"] = { 57.5, 52.2, 1409 },
 							["races"] = HORDE_ONLY,
@@ -251,7 +251,7 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							--["provider"] = { "n",  },	--
 							["sourceQuest"] = 59961,	-- A Priest's End
-						}),						
+						}),
 					},
 				}),
 				cl(ROGUE, {
@@ -280,9 +280,9 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							--["provider"] = { "n",  },	--
 							["sourceQuest"] = 59967,	-- A Rogue's End
-						}),						
+						}),
 					},
-				}),			
+				}),
 --[[			cl(SHAMAN, {
 					["classes"] = { SHAMAN },
 					["g"] = {
@@ -318,7 +318,7 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 167216 },	-- Grunt Throg
 							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
-						}),					
+						}),
 					},
 				}),
 				cl(WARRIOR, {
@@ -351,7 +351,7 @@ _.Zones =
 					},
 				}),
 				q(55991, {	-- An End to Beginnings (A)
-					["_drop"] = { "g" },	-- drop any exisitng "g" tag from harvest data
+					["_drop"] = { "g" },	-- drop any existing "g" tag from harvest data
 					["coord"] = { 39.6, 31.9, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156961 },	-- Captain Garrick
@@ -372,7 +372,7 @@ _.Zones =
 					},
 				}),
 				q(59985, {	-- An End to Beginnings (H)
-					["_drop"] = { "g" },	-- drop any exisitng "g" tag from harvest data
+					["_drop"] = { "g" },	-- drop any existing "g" tag from harvest data
 					["coord"] = { 39.6, 31.9, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167675 },	-- Warlord Breka Grimaxe
@@ -616,7 +616,7 @@ _.Zones =
 						}),
 						i(175184, {		-- Expeditionary Leather Gloves
 							["races"] = ALLIANCE_ONLY,
-						}),						
+						}),
 						i(175187, {		-- Expeditionary Mail Gauntlets
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -636,7 +636,7 @@ _.Zones =
 						}),
 						i(175216, {		-- Expeditionary Leather Gloves
 							["races"] = HORDE_ONLY,
-						}),						
+						}),
 						i(175219, {		-- Expeditionary Mail Gauntlets
 							["races"] = HORDE_ONLY,
 						}),

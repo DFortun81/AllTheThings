@@ -5,8 +5,8 @@
 _.GroupFinder =
 {
 	tier(1, {	-- Classic
-		i(156683, {	-- Satchel of Helpful Goods [Level 15-60]
-			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 15-60 range.|r",
+		i(156683, {	-- Satchel of Helpful Goods [Level 10-50]
+			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 10-50 range.|r",
 			["lvl"] = 15,
 			["g"] = {
 				i(51982),			-- Earthbound Boots*

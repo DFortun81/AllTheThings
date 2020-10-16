@@ -2855,5 +2855,6 @@ _.HiddenQuestTriggers =
 		q(62655),	-- Triggered after choosing a specialization for What's Your Specialty? quest
 		q(62802),   -- Triggered after going to Stormwind for An End to Beginnings
 		q(63012),   -- Triggered after talking to Jaina at docks for The Nation of Kul Tiras
+		q(62912),   -- Triggered when flying from Exile's Reach (as Alliance if it matters)
 	}),
 };
