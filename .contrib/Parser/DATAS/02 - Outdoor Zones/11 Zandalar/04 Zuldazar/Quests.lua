@@ -1493,6 +1493,11 @@ _.Zones =
 						i(155259),	-- Jambani Shoulderpads
 						i(155251),	-- Zanchuli Cowl
 						i(155261),	-- Zanchuli Mantle
+						-- NO NECK Gear
+						i(175283),	-- Rastari Helm
+						i(175287),	-- Rastari Pauldrons
+						i(175317),	-- Sea Raider's Helmet // Alliance apperance
+						i(175319),	-- Sea Raider's Spaulders  // Alliance apperance
 					},
 				}),
 				q(49814, {	-- The Scent for a Brutosaur
@@ -1820,6 +1825,11 @@ _.Zones =
 						i(155241),	-- Jambani Jerkin
 						i(161142),	-- Zanchuli Crest
 						i(155258),	-- Zanchuli Raiment
+						-- NO NECK Gear
+						i(175293),	-- Rastari Helmet
+						i(175280),	-- Rastari Breastplate
+						i(175294),	-- Sea Raider's Greathelm // Alliance appearance
+						i(175354),	-- Sea Raider's Breastplate // Alliance apperance
 					},
 				}),
 				q(49276, {	-- The Thrill of Exploration
