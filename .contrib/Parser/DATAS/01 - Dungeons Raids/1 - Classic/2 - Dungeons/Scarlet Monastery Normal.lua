@@ -140,7 +140,7 @@ _.Instances = { tier(1, {	-- Classic
 							4283,	-- Scarlet Sentry
 						},
 					}),
-					un(REMOVED_FROM_GAME, i(7758)),	-- Ruthless Shiv
+					i(7758),	-- Ruthless Shiv
 					i(10329),	-- Scarlet Belt
 					i(10332),	-- Scarlet Boots
 					i(10328),	-- Scarlet Chestpiece

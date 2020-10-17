@@ -90,7 +90,7 @@ _.Zones =
 						crit(11, {	-- The Battle for the Forest
 							["sourceQuests"] = { 31362 },	-- Last Piece of the Puzzle
 						}),
-						crit(12, {	-- Overcoming doubt
+						crit(12, {	-- Overcoming Doubt
 							["sourceQuests"] = {
 								31319,	-- Emergency Response (A)
 								30502,	-- Jaded Heart

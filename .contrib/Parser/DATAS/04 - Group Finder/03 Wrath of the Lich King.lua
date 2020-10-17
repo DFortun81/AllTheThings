@@ -8,7 +8,7 @@ _.GroupFinder =
 		i(156688, {	-- Icy Satchel of Helpful Goods
 			["lvl"] = 59,	-- may be 58
 			-- TODO: uncomment?
-			-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 58 - ??? range.|r", (NOTE: Unsure of start/end points.  Not positive about 58, but I think LK dungeons now open at the same time as BC.  Unavailable on a level 84 character, so this bracket ends sometime before that.  Commenting out until confirmation.)
+			-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 10-50 range.|r",
 			["g"] = {
 				i(112348),	-- Snow-Coated Cloth Cap*
 				i(113758),	-- Snow-Coated Cloth Gloves*

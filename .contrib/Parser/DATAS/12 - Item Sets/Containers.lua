@@ -70,6 +70,8 @@ _.GearSets =
 		i(173407, {	-- Black Empire Leather Chestpiece
 			i(173438),	-- Chestguard of the Insatiable Maw
 			i(173843),	-- Vest of the Insatiable Maw
+			-- Possibly aquired if you dont have HOA
+			i(184593),	-- Chestguard of the Insatiable Maw
 		}),
 		i(173409, {	-- Black Empire Leather Gloves
 			i(173464),	-- Gloves of the Insatiable Maw
@@ -80,6 +82,8 @@ _.GearSets =
 		i(173410, {	-- Black Empire Leather Helm
 			i(173441),	-- Guise of the Insatiable Maw
 			i(173842),	-- Visage of the Insatiable Maw
+			-- Possibly aquired if you dont have HOA
+			i(184594),	-- Chestguard of the Insatiable Maw
 		}),
 		i(173411, {	-- Black Empire Leather Leggings
 			i(173484),	-- Breeches of the Insatiable Maw
@@ -90,6 +94,8 @@ _.GearSets =
 		i(173412, {	-- Black Empire Leather Spaulders
 			i(173841),	-- Mantle of the Insatiable Maw
 			i(173443),	-- Shoulderpads of the Insatiable Maw
+			-- Possibly aquired if you dont have HOA
+			i(184595),	-- Shoulderpads of the Insatiable Maw
 		}),
 		i(173406, {	-- Black Empire Mail Belt
 			i(173452),	-- Nefarious Tormentor's Belt
@@ -166,6 +172,8 @@ _.GearSets =
 		i(173396, {	-- Black Empire Plate Helm
 			i(173457),	-- Malignant Leviathan's Headguard
 			i(173836),	-- Malignant Leviathan's Helm
+			-- Possibly aquired if you dont have HOA
+			i(184600),	-- Malignant Leviathan's Headguard
 		}),
 		i(173397, {	-- Black Empire Plate Leggings
 			i(173820),	-- Malignant Leviathan's Greaves
@@ -176,6 +184,8 @@ _.GearSets =
 		i(173398, {	-- Black Empire Plate Spaulders
 			i(173835),	-- Malignant Leviathan's Pauldrons
 			i(173460),	-- Malignant Leviathan's Spaulders
+			-- Possibly aquired if you dont have HOA
+			i(184601),	-- Malignant Leviathan's Spaulders
 		}),
 		i(173372, {	-- Cache of the Black Empire
 			i(173485),	-- Nefarious Tormentor's Leggings

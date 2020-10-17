@@ -723,6 +723,193 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
+					i(138631),	-- Arsenal: Primal Gladiator's Weapons
+					-- Ensemble: Primal Gladiator's Chain Armor (Hunter)
+					-- Ensemble: Primal Gladiator's Dragonhide Armor (Druid)
+					-- Ensemble: Primal Gladiator's Dreadplate Armor (DK)
+					-- Ensemble: Primal Gladiator's Felweave Armor (Warlock)
+					-- Ensemble: Primal Gladiator's Ironskin Armor (Monk)
+					-- Ensemble: Primal Gladiator's Leather Armor (Rogue)
+					-- Ensemble: Primal Gladiator's Plate Armor (Warrior)
+					-- Ensemble: Primal Gladiator's Ringmail Armor (Shaman)
+					-- Ensemble: Primal Gladiator's Satin Armor (Priest)
+					-- Ensemble: Primal Gladiator's Scaled Armor (Paladin)
+					-- Ensemble: Primal Gladiator's Silk Armor (Mage)
+					i(115594),	-- Primal Gladiator's Cleaver
+					i(115595),	-- Primal Gladiator's Shanker
+					i(115596),	-- Primal Gladiator's Ripper
+					i(115597),	-- Primal Gladiator's Pummeler
+					i(115598),	-- Primal Gladiator's Quickblade
+					i(115599),	-- Primal Gladiator's Longbow
+					i(115601),	-- Primal Gladiator's Rifle
+					i(115602),	-- Primal Gladiator's Pike
+					i(115644),	-- Primal Gladiator's Spellblade
+					i(115645),	-- Primal Gladiator's Gavel
+					i(115646),	-- Primal Gladiator's Mageblade
+					i(115647),	-- Primal Gladiator's Baton of Light
+					i(115648),	-- Primal Gladiator's Touch of Defeat
+					i(115649),	-- Primal Gladiator's Battle Staff
+					i(115650),	-- Primal Gladiator's Energy Staff
+					i(115659),	-- Primal Gladiator's Endgame
+					i(115660),	-- Primal Gladiator's Reprieve
+					i(115666),	-- Primal Gladiator's Redoubt
+					i(115667),	-- Primal Gladiator's Barrier
+					i(115725),	-- Primal Gladiator's Hacker
+					i(115726),	-- Primal Gladiator's Render
+					i(115727),	-- Primal Gladiator's Bonecracker
+					i(115728),	-- Primal Gladiator's Slicer
+					i(115729),	-- Primal Gladiator's Decapitator
+					i(115730),	-- Primal Gladiator's Bonegrinder
+					i(115731),	-- Primal Gladiator's Greatsword
+					i(115748),	-- Primal Gladiator's Shield Wall
+					i(115604),	-- Primal Gladiator's Cape of Cruelty
+					i(115605),	-- Primal Gladiator's Cape of Prowess
+					i(115620),	-- Primal Gladiator's Cord of Cruelty
+					i(115621),	-- Primal Gladiator's Cord of Prowess
+					i(115622),	-- Primal Gladiator's Cord of Victory
+					i(115623),	-- Primal Gladiator's Treads of Cruelty
+					i(115624),	-- Primal Gladiator's Treads of Prowess
+					i(115625),	-- Primal Gladiator's Treads of Victory
+					i(115626),	-- Primal Gladiator's Cuffs of Prowess
+					i(115627),	-- Primal Gladiator's Cuffs of Cruelty
+					i(115628),	-- Primal Gladiator's Cuffs of Victory
+					i(115610),	-- Primal Gladiator's Gloves of Prowess
+					i(115611),	-- Primal Gladiator's Hood of Prowess
+					i(115612),	-- Primal Gladiator's Leggings of Prowess
+					i(115613),	-- Primal Gladiator's Robes of Prowess
+					i(115614),	-- Primal Gladiator's Amice of Prowess
+					i(115615),	-- Primal Gladiator's Handguards of Cruelty
+					i(115616),	-- Primal Gladiator's Cowl of Cruelty
+					i(115617),	-- Primal Gladiator's Trousers of Cruelty
+					i(115618),	-- Primal Gladiator's Raiment of Cruelty
+					i(115619),	-- Primal Gladiator's Mantle of Cruelty
+					i(115629),	-- Primal Gladiator's Dreadplate Chestpiece
+					i(115630),	-- Primal Gladiator's Dreadplate Gauntlets
+					i(115631),	-- Primal Gladiator's Dreadplate Helm
+					i(115632),	-- Primal Gladiator's Dreadplate Legguards
+					i(115633),	-- Primal Gladiator's Dreadplate Shoulders
+					i(115634),	-- Primal Gladiator's Dragonhide Gloves
+					i(115635),	-- Primal Gladiator's Dragonhide Helm
+					i(115636),	-- Primal Gladiator's Dragonhide Legguards
+					i(115637),	-- Primal Gladiator's Dragonhide Robes
+					i(115638),	-- Primal Gladiator's Dragonhide Spaulders
+					i(115639),	-- Primal Gladiator's Chain Armor
+					i(115640),	-- Primal Gladiator's Chain Gauntlets
+					i(115641),	-- Primal Gladiator's Chain Helm
+					i(115642),	-- Primal Gladiator's Chain Leggings
+					i(115643),	-- Primal Gladiator's Chain Spaulders
+					i(115651),	-- Primal Gladiator's Drape of Cruelty
+					i(115652),	-- Primal Gladiator's Drape of Prowess
+					i(115653),	-- Primal Gladiator's Drape of Meditation
+					i(115654),	-- Primal Gladiator's Drape of Contemplation
+					i(115668),	-- Primal Gladiator's Belt of Prowess
+					i(115669),	-- Primal Gladiator's Belt of Cruelty
+					i(115670),	-- Primal Gladiator's Belt of Victory
+					i(115671),	-- Primal Gladiator's Boots of Cruelty
+					i(115672),	-- Primal Gladiator's Boots of Prowess
+					i(115673),	-- Primal Gladiator's Boots of Victory
+					i(115674),	-- Primal Gladiator's Bindings of Cruelty
+					i(115675),	-- Primal Gladiator's Bindings of Prowess
+					i(115676),	-- Primal Gladiator's Bindings of Victory
+					i(115773),	-- Primal Gladiator's Tunic
+					i(115774),	-- Primal Gladiator's Gloves
+					i(115775),	-- Primal Gladiator's Helm
+					i(115776),	-- Primal Gladiator's Legguards
+					i(115777),	-- Primal Gladiator's Spaulders
+					i(115783),	-- Primal Gladiator's Chestguard
+					i(115784),	-- Primal Gladiator's Grips
+					i(115785),	-- Primal Gladiator's Headcover
+					i(115786),	-- Primal Gladiator's Leggings
+					i(115787),	-- Primal Gladiator's Pauldrons
+					i(115677),	-- Primal Gladiator's Silk Handguards
+					i(115678),	-- Primal Gladiator's Silk Cowl
+					i(115679),	-- Primal Gladiator's Silk Trousers
+					i(115680),	-- Primal Gladiator's Silk Robe
+					i(115681),	-- Primal Gladiator's Silk Amice
+					i(115682),	-- Primal Gladiator's Waistguard of Cruelty
+					i(115683),	-- Primal Gladiator's Waistguard of Prowess
+					i(115684),	-- Primal Gladiator's Waistguard of Victory
+					i(115685),	-- Primal Gladiator's Footguards of Cruelty
+					i(115686),	-- Primal Gladiator's Footguards of Prowess
+					i(115687),	-- Primal Gladiator's Footguards of Victory
+					i(115688),	-- Primal Gladiator's Armbands of Prowess
+					i(115689),	-- Primal Gladiator's Armbands of Cruelty
+					i(115690),	-- Primal Gladiator's Armbands of Victory
+					i(115778),	-- Primal Gladiator's Armor
+					i(115779),	-- Primal Gladiator's Gauntlets
+					i(115780),	-- Primal Gladiator's Helm
+					i(115781),	-- Primal Gladiator's Leggings
+					i(115782),	-- Primal Gladiator's Spaulders
+					i(115788),	-- Primal Gladiator's Chestguard
+					i(115789),	-- Primal Gladiator's Gloves
+					i(115790),	-- Primal Gladiator's Coif
+					i(115791),	-- Primal Gladiator's Leggings
+					i(115792),	-- Primal Gladiator's Pauldrons
+					i(115691),	-- Primal Gladiator's Ironskin Gloves
+					i(115692),	-- Primal Gladiator's Ironskin Helm
+					i(115693),	-- Primal Gladiator's Ironskin Legguards
+					i(115694),	-- Primal Gladiator's Ironskin Spaulders
+					i(115695),	-- Primal Gladiator's Ironskin Tunic
+					i(115696),	-- Primal Gladiator's Scaled Chestpiece
+					i(115697),	-- Primal Gladiator's Scaled Gauntlets
+					i(115698),	-- Primal Gladiator's Scaled Helm
+					i(115699),	-- Primal Gladiator's Scaled Legguards
+					i(115700),	-- Primal Gladiator's Scaled Shoulders
+					i(115701),	-- Primal Gladiator's Girdle of Cruelty
+					i(115702),	-- Primal Gladiator's Girdle of Prowess
+					i(115703),	-- Primal Gladiator's Girdle of Victory
+					i(115704),	-- Primal Gladiator's Warboots of Cruelty
+					i(115705),	-- Primal Gladiator's Warboots of Prowess
+					i(115706),	-- Primal Gladiator's Warboots of Victory
+					i(115707),	-- Primal Gladiator's Armplates of Cruelty
+					i(115708),	-- Primal Gladiator's Armplates of Prowess
+					i(115709),	-- Primal Gladiator's Armplates of Victory
+					i(115736),	-- Primal Gladiator's Plate Breastplate
+					i(115737),	-- Primal Gladiator's Plate Gloves
+					i(115738),	-- Primal Gladiator's Plate Helmet
+					i(115739),	-- Primal Gladiator's Legplates
+					i(115740),	-- Primal Gladiator's Shoulderplates
+					i(115741),	-- Primal Gladiator's Plate Chestguard
+					i(115742),	-- Primal Gladiator's Plate Grips
+					i(115743),	-- Primal Gladiator's Plate Visor
+					i(115744),	-- Primal Gladiator's Plate Leggings
+					i(115745),	-- Primal Gladiator's Plate Pauldrons
+					i(115710),	-- Primal Gladiator's Satin Gloves
+					i(115711),	-- Primal Gladiator's Satin Hood
+					i(115712),	-- Primal Gladiator's Satin Leggings
+					i(115713),	-- Primal Gladiator's Satin Robe
+					i(115714),	-- Primal Gladiator's Satin Mantle
+					i(115715),	-- Primal Gladiator's Leather Tunic
+					i(115716),	-- Primal Gladiator's Leather Gloves
+					i(115717),	-- Primal Gladiator's Leather Helm
+					i(115718),	-- Primal Gladiator's Leather Legguards
+					i(115719),	-- Primal Gladiator's Leather Spaulders
+					i(115720),	-- Primal Gladiator's Ringmail Armor
+					i(115721),	-- Primal Gladiator's Ringmail Gauntlets
+					i(115722),	-- Primal Gladiator's Ringmail Helm
+					i(115723),	-- Primal Gladiator's Ringmail Leggings
+					i(115724),	-- Primal Gladiator's Ringmail Spaulders
+					i(115732),	-- Primal Gladiator's Cloak of Cruelty
+					i(115733),	-- Primal Gladiator's Cloak of Prowess
+					i(120100),	-- Primal Gladiator's Cloak of Endurance
+					i(115761),	-- Primal Gladiator's Felweave Handguards
+					i(115762),	-- Primal Gladiator's Felweave Cowl
+					i(115763),	-- Primal Gladiator's Felweave Trousers
+					i(115764),	-- Primal Gladiator's Felweave Raiment
+					i(115765),	-- Primal Gladiator's Felweave Amice
+					i(115766),	-- Primal Gladiator's Plate Chestpiece
+					i(115767),	-- Primal Gladiator's Plate Gauntlets
+					i(115768),	-- Primal Gladiator's Plate Helm
+					i(115769),	-- Primal Gladiator's Plate Legguards
+					i(115770),	-- Primal Gladiator's Plate Shoulders
+					un(REMOVED_FROM_GAME, i(115772)),	-- Primal Gladiator's Signet of Ruthlessness
+					un(REMOVED_FROM_GAME, i(115771)),	-- Primal Gladiator's Ring of Triumph
+					un(REMOVED_FROM_GAME, i(115747)),	-- Primal Gladiator's Signet of Accuracy
+					un(REMOVED_FROM_GAME, i(115746)),	-- Primal Gladiator's Signet of Cruelty
+					un(REMOVED_FROM_GAME, i(115665)),	-- Primal Gladiator's Band of Contemplation
+					un(REMOVED_FROM_GAME, i(115664)),	-- Primal Gladiator's Band of Meditation
+					un(REMOVED_FROM_GAME, i(115663)),	-- Primal Gladiator's Band of Victory
+					un(REMOVED_FROM_GAME, i(115662)),	-- Primal Gladiator's Band of Prowess
 					n(-319, {	-- Weapons
 					}),
 					cl(DEATHKNIGHT, {
@@ -1473,6 +1660,205 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
+					i(138632),	-- Arsenal: Primal Gladiator's Weapons
+					i(111067),	-- Primal Gladiator's Cleaver
+					i(111068),	-- Primal Gladiator's Shanker
+					i(111069),	-- Primal Gladiator's Ripper
+					i(111070),	-- Primal Gladiator's Pummeler
+					i(111071),	-- Primal Gladiator's Quickblade
+					i(111072),	-- Primal Gladiator's Longbow
+					i(111074),	-- Primal Gladiator's Rifle
+					i(111075),	-- Primal Gladiator's Pike
+					i(111117),	-- Primal Gladiator's Spellblade
+					i(111118),	-- Primal Gladiator's Gavel
+					i(111119),	-- Primal Gladiator's Mageblade
+					i(111120),	-- Primal Gladiator's Baton of Light
+					i(111121),	-- Primal Gladiator's Touch of Defeat
+					i(111122),	-- Primal Gladiator's Battle Staff
+					i(111123),	-- Primal Gladiator's Energy Staff
+					i(111132),	-- Primal Gladiator's Endgame
+					i(111133),	-- Primal Gladiator's Reprieve
+					i(111139),	-- Primal Gladiator's Redoubt
+					i(111140),	-- Primal Gladiator's Barrier
+					i(111198),	-- Primal Gladiator's Hacker
+					i(111199),	-- Primal Gladiator's Render
+					i(111200),	-- Primal Gladiator's Bonecracker
+					i(111201),	-- Primal Gladiator's Slicer
+					i(111202),	-- Primal Gladiator's Decapitator
+					i(111203),	-- Primal Gladiator's Bonegrinder
+					i(111204),	-- Primal Gladiator's Greatsword
+					i(111221),	-- Primal Gladiator's Shield Wall
+					i(111077),	-- Primal Gladiator's Cape of Cruelty
+					i(111078),	-- Primal Gladiator's Cape of Prowess
+					i(111093),	-- Primal Gladiator's Cord of Cruelty
+					i(111094),	-- Primal Gladiator's Cord of Prowess
+					i(111095),	-- Primal Gladiator's Cord of Victory
+					i(111096),	-- Primal Gladiator's Treads of Cruelty
+					i(111097),	-- Primal Gladiator's Treads of Prowess
+					i(111098),	-- Primal Gladiator's Treads of Victory
+					i(111099),	-- Primal Gladiator's Cuffs of Prowess
+					i(111100),	-- Primal Gladiator's Cuffs of Cruelty
+					i(111101),	-- Primal Gladiator's Cuffs of Victory
+					i(111083),	-- Primal Gladiator's Gloves of Prowess
+					i(111084),	-- Primal Gladiator's Hood of Prowess
+					i(111085),	-- Primal Gladiator's Leggings of Prowess
+					i(111086),	-- Primal Gladiator's Robes of Prowess
+					i(111087),	-- Primal Gladiator's Amice of Prowess
+					i(111088),	-- Primal Gladiator's Handguards of Cruelty
+					i(111089),	-- Primal Gladiator's Cowl of Cruelty
+					i(111090),	-- Primal Gladiator's Trousers of Cruelty
+					i(111091),	-- Primal Gladiator's Raiment of Cruelty
+					i(111092),	-- Primal Gladiator's Mantle of Cruelty
+					i(111102),	-- Primal Gladiator's Dreadplate Chestpiece
+					i(111103),	-- Primal Gladiator's Dreadplate Gauntlets
+					i(111104),	-- Primal Gladiator's Dreadplate Helm
+					i(111105),	-- Primal Gladiator's Dreadplate Legguards
+					i(111106),	-- Primal Gladiator's Dreadplate Shoulders
+					i(111107),	-- Primal Gladiator's Dragonhide Gloves
+					i(111108),	-- Primal Gladiator's Dragonhide Helm
+					i(111109),	-- Primal Gladiator's Dragonhide Legguards
+					i(111110),	-- Primal Gladiator's Dragonhide Robes
+					i(111111),	-- Primal Gladiator's Dragonhide Spaulders
+					i(111112),	-- Primal Gladiator's Chain Armor
+					i(111113),	-- Primal Gladiator's Chain Gauntlets
+					i(111114),	-- Primal Gladiator's Chain Helm
+					i(111115),	-- Primal Gladiator's Chain Leggings
+					i(111116),	-- Primal Gladiator's Chain Spaulders
+					i(111124),	-- Primal Gladiator's Drape of Cruelty
+					i(111125),	-- Primal Gladiator's Drape of Prowess
+					i(111126),	-- Primal Gladiator's Drape of Meditation
+					i(111127),	-- Primal Gladiator's Drape of Contemplation
+					i(111141),	-- Primal Gladiator's Belt of Prowess
+					i(111142),	-- Primal Gladiator's Belt of Cruelty
+					i(111143),	-- Primal Gladiator's Belt of Victory
+					i(111144),	-- Primal Gladiator's Boots of Cruelty
+					i(111145),	-- Primal Gladiator's Boots of Prowess
+					i(111146),	-- Primal Gladiator's Boots of Victory
+					i(111147),	-- Primal Gladiator's Bindings of Cruelty
+					i(111148),	-- Primal Gladiator's Bindings of Prowess
+					i(111149),	-- Primal Gladiator's Bindings of Victory
+					i(111273),	-- Primal Gladiator's Tunic
+					i(111274),	-- Primal Gladiator's Gloves
+					i(111275),	-- Primal Gladiator's Helm
+					i(111276),	-- Primal Gladiator's Legguards
+					i(111277),	-- Primal Gladiator's Spaulders
+					i(111283),	-- Primal Gladiator's Chestguard
+					i(111284),	-- Primal Gladiator's Grips
+					i(111285),	-- Primal Gladiator's Headcover
+					i(111286),	-- Primal Gladiator's Leggings
+					i(111287),	-- Primal Gladiator's Pauldrons
+					i(111150),	-- Primal Gladiator's Silk Handguards
+					i(111151),	-- Primal Gladiator's Silk Cowl
+					i(111152),	-- Primal Gladiator's Silk Trousers
+					i(111153),	-- Primal Gladiator's Silk Robe
+					i(111154),	-- Primal Gladiator's Silk Amice
+					i(111155),	-- Primal Gladiator's Waistguard of Cruelty
+					i(111156),	-- Primal Gladiator's Waistguard of Prowess
+					i(111157),	-- Primal Gladiator's Waistguard of Victory
+					i(111158),	-- Primal Gladiator's Footguards of Cruelty
+					i(111159),	-- Primal Gladiator's Footguards of Prowess
+					i(111160),	-- Primal Gladiator's Footguards of Victory
+					i(111161),	-- Primal Gladiator's Armbands of Prowess
+					i(111162),	-- Primal Gladiator's Armbands of Cruelty
+					i(111163),	-- Primal Gladiator's Armbands of Victory
+					i(111278),	-- Primal Gladiator's Armor
+					i(111279),	-- Primal Gladiator's Gauntlets
+					i(111280),	-- Primal Gladiator's Helm
+					i(111281),	-- Primal Gladiator's Leggings
+					i(111282),	-- Primal Gladiator's Spaulders
+					i(111288),	-- Primal Gladiator's Chestguard
+					i(111289),	-- Primal Gladiator's Gloves
+					i(111290),	-- Primal Gladiator's Coif
+					i(111291),	-- Primal Gladiator's Leggings
+					i(111292),	-- Primal Gladiator's Pauldrons
+					i(111164),	-- Primal Gladiator's Ironskin Gloves
+					i(111165),	-- Primal Gladiator's Ironskin Helm
+					i(111166),	-- Primal Gladiator's Ironskin Legguards
+					i(111167),	-- Primal Gladiator's Ironskin Spaulders
+					i(111168),	-- Primal Gladiator's Ironskin Tunic
+					i(111169),	-- Primal Gladiator's Scaled Chestpiece
+					i(111170),	-- Primal Gladiator's Scaled Gauntlets
+					i(111171),	-- Primal Gladiator's Scaled Helm
+					i(111172),	-- Primal Gladiator's Scaled Legguards
+					i(111173),	-- Primal Gladiator's Scaled Shoulders
+					i(111174),	-- Primal Gladiator's Girdle of Cruelty
+					i(111175),	-- Primal Gladiator's Girdle of Prowess
+					i(111176),	-- Primal Gladiator's Girdle of Victory
+					i(111177),	-- Primal Gladiator's Warboots of Cruelty
+					i(111178),	-- Primal Gladiator's Warboots of Prowess
+					i(111179),	-- Primal Gladiator's Warboots of Victory
+					i(111180),	-- Primal Gladiator's Armplates of Cruelty
+					i(111181),	-- Primal Gladiator's Armplates of Prowess
+					i(111182),	-- Primal Gladiator's Armplates of Victory
+					i(111209),	-- Primal Gladiator's Plate Breastplate
+					i(111210),	-- Primal Gladiator's Plate Gloves
+					i(111211),	-- Primal Gladiator's Plate Helmet
+					i(111212),	-- Primal Gladiator's Legplates
+					i(111213),	-- Primal Gladiator's Shoulderplates
+					i(111214),	-- Primal Gladiator's Plate Chestguard
+					i(111215),	-- Primal Gladiator's Plate Grips
+					i(111216),	-- Primal Gladiator's Plate Visor
+					i(111217),	-- Primal Gladiator's Plate Leggings
+					i(111218),	-- Primal Gladiator's Plate Pauldrons
+					i(111183),	-- Primal Gladiator's Satin Gloves
+					i(111184),	-- Primal Gladiator's Satin Hood
+					i(111185),	-- Primal Gladiator's Satin Leggings
+					i(111186),	-- Primal Gladiator's Satin Robe
+					i(111187),	-- Primal Gladiator's Satin Mantle
+					i(111188),	-- Primal Gladiator's Leather Tunic
+					i(111189),	-- Primal Gladiator's Leather Gloves
+					i(111190),	-- Primal Gladiator's Leather Helm
+					i(111191),	-- Primal Gladiator's Leather Legguards
+					i(111192),	-- Primal Gladiator's Leather Spaulders
+					i(111193),	-- Primal Gladiator's Ringmail Armor
+					i(111194),	-- Primal Gladiator's Ringmail Gauntlets
+					i(111195),	-- Primal Gladiator's Ringmail Helm
+					i(111196),	-- Primal Gladiator's Ringmail Leggings
+					i(111197),	-- Primal Gladiator's Ringmail Spaulders
+					i(111205),	-- Primal Gladiator's Cloak of Cruelty
+					i(111206),	-- Primal Gladiator's Cloak of Prowess
+					i(120099),	-- Primal Gladiator's Cloak of Endurance
+					i(111234),	-- Primal Gladiator's Felweave Handguards
+					i(111235),	-- Primal Gladiator's Felweave Cowl
+					i(111236),	-- Primal Gladiator's Felweave Trousers
+					i(111237),	-- Primal Gladiator's Felweave Raiment
+					i(111238),	-- Primal Gladiator's Felweave Amice
+					i(111239),	-- Primal Gladiator's Plate Chestpiece
+					i(111240),	-- Primal Gladiator's Plate Gauntlets
+					i(111241),	-- Primal Gladiator's Plate Helm
+					i(111242),	-- Primal Gladiator's Plate Legguards
+					i(111243),	-- Primal Gladiator's Plate Shoulders
+					un(REMOVED_FROM_GAME, i(111079)),	-- Primal Gladiator's Necklace of Cruelty
+					un(REMOVED_FROM_GAME, i(111080)),	-- Primal Gladiator's necklace of prowess
+					un(REMOVED_FROM_GAME, i(111128)),	-- Primal Gladiator's pendant of cruelty
+					un(REMOVED_FROM_GAME, i(111129)),	-- Primal Gladiator's pendant of prowess
+					un(REMOVED_FROM_GAME, i(111130)),	-- Primal Gladiator's pendant of meditation
+					un(REMOVED_FROM_GAME, i(111131)),	-- Primal Gladiator's pendant of contemplation
+					un(REMOVED_FROM_GAME, i(111207)),	-- Primal Gladiator's choker of cruelty
+					un(REMOVED_FROM_GAME, i(111208)),	-- Primal Gladiator's choker of prowess
+					un(REMOVED_FROM_GAME, i(111081)),	-- Primal Gladiator's ring of cruelty
+					un(REMOVED_FROM_GAME, i(111082)),	-- Primal Gladiator's Ring of prowess
+					un(REMOVED_FROM_GAME, i(111134)),	-- Primal Gladiator's band of cruelty
+					un(REMOVED_FROM_GAME, i(111135)),	-- Primal Gladiator's band of prowess
+					un(REMOVED_FROM_GAME, i(111136)),	-- Primal Gladiator's band of victory
+					un(REMOVED_FROM_GAME, i(111137)),	-- Primal Gladiator's band of meditation
+					un(REMOVED_FROM_GAME, i(111138)),	-- Primal Gladiator's band of contemplation
+					un(REMOVED_FROM_GAME, i(111219)),	-- Primal Gladiator's signet of cruelty
+					un(REMOVED_FROM_GAME, i(111220)),	-- Primal Gladiator's signet of accuracy
+					un(REMOVED_FROM_GAME, i(111271)),	-- Primal Gladiator's ring of triumph
+					un(REMOVED_FROM_GAME, i(111272)),	-- Primal Gladiator's signet of ruthlessness
+					un(REMOVED_FROM_GAME, i(111222)),	-- Primal Gladiator's badge of conquest
+					un(REMOVED_FROM_GAME, i(111223)),	-- Primal Gladiator's insignia of conquest
+					un(REMOVED_FROM_GAME, i(111224)),	-- Primal Gladiator's e,blem of cruelty
+					un(REMOVED_FROM_GAME, i(111225)),	-- Primal Gladiator's emblem of tenacity
+					un(REMOVED_FROM_GAME, i(111226)),	-- Primal Gladiator's emblem of mediation
+					un(REMOVED_FROM_GAME, i(111227)),	-- Primal Gladiator's badge of dominance
+					un(REMOVED_FROM_GAME, i(111228)),	-- Primal Gladiator's insignia of dominance
+					un(REMOVED_FROM_GAME, i(111229)),	-- Primal Gladiator's mmedallion of cruelty
+					un(REMOVED_FROM_GAME, i(111230)),	-- Primal Gladiator's medallion of tenacity
+					un(REMOVED_FROM_GAME, i(111231)),	-- Primal Gladiator's medallion of mediation
+					un(REMOVED_FROM_GAME, i(111232)),	-- Primal Gladiator's badge of citory
+					un(REMOVED_FROM_GAME, i(111233)),	-- Primal Gladiator's insignia of victory
 					n(-319, {	-- Weapons
 					}),
 					cl(DEATHKNIGHT, {
@@ -1516,6 +1902,37 @@ _.PVP =
 				}),
 			}),
 			n(-662, {	-- Elite PvP Gear
+				un(REMOVED_FROM_GAME, i(115979)),	-- Primal Gladiator's Greatcloak
+				un(REMOVED_FROM_GAME, i(115972)),	-- Primal Gladiator's Tabard
+				un(REMOVED_FROM_GAME, i(115948)),	-- Primal Gladiator's Ripper
+				un(REMOVED_FROM_GAME, i(115949)),	-- Primal  Gladiator's Render
+				un(REMOVED_FROM_GAME, i(115818)),	-- Primal  Gladiator's Bonegrinder
+				un(REMOVED_FROM_GAME, i(115836)),	-- Primal Gladiator's Heavy Crossbow
+				un(REMOVED_FROM_GAME, i(115817)),	-- Primal Gladiator's Decapitator
+				un(REMOVED_FROM_GAME, i(115819)),	-- Primal Gladiator's  Greatsword
+				un(REMOVED_FROM_GAME, i(115820)),	-- Primal Gladiator's Cleaver
+				un(REMOVED_FROM_GAME, i(115952)),	-- Primal Gladiator's Hacker
+				un(REMOVED_FROM_GAME, i(115823)),	-- Primal Gladiator's Longbow
+				un(REMOVED_FROM_GAME, i(115910)),	-- Primal Gladiator's Pike
+				un(REMOVED_FROM_GAME, i(115862)),	-- Primal Gladiator's Rifle
+				un(REMOVED_FROM_GAME, i(115832)),	-- Primal Gladiator's Spellblade
+				un(REMOVED_FROM_GAME, i(115947)),	-- Primal Gladiator's Shanker
+				un(REMOVED_FROM_GAME, i(115830)),	-- Primal Gladiator's Endgame
+				un(REMOVED_FROM_GAME, i(115834)),	-- Primal Gladiator's Reprieve
+				un(REMOVED_FROM_GAME, i(115822)),	-- Primal Gladiator's Quickblade
+				un(REMOVED_FROM_GAME, i(115950)),	-- Primal Gladiator's Mageblade
+				un(REMOVED_FROM_GAME, i(115954)),	-- Primal Gladiator's Slicer
+				un(REMOVED_FROM_GAME, i(115833)),	-- Primal Gladiator's Battle Staff
+				un(REMOVED_FROM_GAME, i(115854)),	-- Primal Gladiator's Staff
+				un(REMOVED_FROM_GAME, i(115865)),	-- Primal Gladiator's Energy Staff
+				un(REMOVED_FROM_GAME, i(115821)),	-- Primal Gladiator's Pummeler
+				un(REMOVED_FROM_GAME, i(115863)),	-- Primal Gladiator's Gavel
+				un(REMOVED_FROM_GAME, i(115953)),	-- Primal Gladiator's Bonecracker
+				un(REMOVED_FROM_GAME, i(115831)),	-- Primal Gladiator's Barrier
+				un(REMOVED_FROM_GAME, i(115864)),	-- Primal Gladiator's Redoubt
+				un(REMOVED_FROM_GAME, i(115955)),	-- Primal Gladiator's Shield Wall
+				un(REMOVED_FROM_GAME, i(115835)),	-- Primal Gladiator's Touch of defeat
+				un(REMOVED_FROM_GAME, i(115951)),	-- Primal Gladiator's Baton of Light
 				cl(DEATHKNIGHT, {
 					un(REMOVED_FROM_GAME, i(115837)),	-- Primal Gladiator's Dreadplate Chestpiece
 					un(REMOVED_FROM_GAME, i(115838)),	-- Primal Gladiator's Dreadplate Gauntlets

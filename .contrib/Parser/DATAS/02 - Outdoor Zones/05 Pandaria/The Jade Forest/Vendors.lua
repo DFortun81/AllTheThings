@@ -158,37 +158,6 @@ _.Zones =
 						i(81680),	-- Faded Forest Smasher
 					},
 				}),
-				n(58414, {	-- San Redscale <Serpent Keeper>
-					["coord"] = { 56.7, 44.3, 371 },
-					["g"] = {
-						i(89222, {	-- Cloud Ring (TOY!)
-							["cost"] = 10000000,	-- 1,000g
-						}),
-						i(83845),	-- Design: Jade Panther
-						i(83877),	-- Design: Jeweled Onyx Panther
-						i(83931),	-- Design: Ruby Panther
-						i(83932),	-- Design: Sapphire Panther
-						i(83830),	-- Design: Sunstone Panther
-						i(93229),	-- Grand Commendation of the Order of the Cloud Serpent
-						i(89796),	-- Order of the Cloud Serpent Tabard
-						i(85430, {	-- Reins of the Azure Cloud Serpent Mount
-							["cost"] = 30000000,	-- 3,000g
-						}),
-						i(85429, {	-- Reins of the Golden Cloud Serpent Mount
-							["cost"] = 30000000,	-- 3,000g
-						}),
-						i(79802, {	-- Reins of the Jade Cloud Serpent Mount
-							["cost"] = 30000000,	-- 3,000g
-						}),
-						{	-- How to School Your Serpent
-							["itemID"] = 183123,	-- How to School Your Serpent
-						--	["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
-							["questID"] = 62254,
-							["description"] = "Purchasable/learnable by any character exalted with Order of the Cloud Serpent.",
-						--	["classes"] = { HUNTER },
-						},
-					},
-				}),
 				n(61598, {	-- Silkweaver Rui <Adventuring Supplies>
 					["coord"] = { 58.1, 84.1, 371 },
 					["races"] = ALLIANCE_ONLY,

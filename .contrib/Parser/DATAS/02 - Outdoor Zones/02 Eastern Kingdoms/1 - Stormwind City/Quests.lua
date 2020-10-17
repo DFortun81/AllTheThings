@@ -944,7 +944,7 @@ _.Zones =
 					["sourceQuest"] = 58908,	-- Finding Your Way (A)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(73838),	-- Mountain Horse
+						i(2411),	-- Black Stallion Bridle
 					},
 				}),
 				q(32470, {	-- Light Camera Action
@@ -1054,6 +1054,12 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1893)),	-- Miner's Revenge
 					},
+				}),
+				q(60891,   {	-- Onward to Adventure: Eastern Kingdoms
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
+					--["new_lvl"] = 10,
 				}),
 				q(6187,  {	-- Order Must Be Restored
 					["providers"] = {
@@ -1305,6 +1311,13 @@ _.Zones =
 						currency(515),	-- Darkmoon Prize Ticket
 					},
 				}),
+				q(34398, {	-- The Dark Portal
+					["description"] = "If you want to do the Blasted Lands questline before going to Draenor, just abandon this quest after taking the portal to Blasted Lands.",
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
+					--["new_lvl"] = 10,
+				}),
 				q(30095, {	-- The End Time
 					["provider"] = { "n", 52408 },	-- Coridormi
 					["coord"] = { 49.4, 87.4, 84 },
@@ -1357,6 +1370,12 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
+				}),
+				q(40519, {	-- The Legion Returns (Alliance)
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
+					--["new_lvl"] = 10,
 				}),
 				q(7782,  {	-- The Lord of Blackrock
 					["provider"] = { "n", 107574 },	-- Anduin Wrynn
@@ -1477,6 +1496,24 @@ _.Zones =
 					["coord"] = { 25.9, 29.2, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 85,
+				}),
+				q(60096,   {	-- To Northrend
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
+					--["new_lvl"] = 10,
+				}),
+				q(60120,   {	-- To Outland
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
+					--["new_lvl"] = 10,
+				}),
+				q(60125,   {	-- To Pandaria!
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
+					--["new_lvl"] = 10,
 				}),
 				q(28827, {	-- To the Depths
 					["provider"] = { "n", 45226 },	-- Naraat the Earthspeaker

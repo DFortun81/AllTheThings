@@ -579,7 +579,6 @@ _.Zones =
 			}),
 			q(40519, {	-- The Legion Returns (Alliance)
 				["isBreadcrumb"] = true,
-				["lvl"] = 98,
 				["description"] = "This quest is automatically offered when you reach level 98.  To get it to pop up, you may need to relog.",
 			}),
 			q(49846, {	-- Wars on Two Fronts [Cataclysm]

@@ -69,6 +69,94 @@ _.Zones =
 						}),
 					},
 				}),
+				n(175051, {	-- Alice Fisher
+					["coord" ] = { 74.97, 67.35, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						n(-659, {	-- Aspirant PvP Gear
+							n(-319, {	-- Weapons
+								i(172880),	-- Corrupted Aspirant's Chopper (A)
+								i(174013),	-- Corrupted Aspirant's Claw (A)
+								i(172878),	-- Corrupted Aspirant's Cleaver (A)
+								i(174015),	-- Corrupted Aspirant's Decapitator (A)
+								i(172872),	-- Corrupted Aspirant's Gavel (A)
+								i(172884),	-- Corrupted Aspirant's Greatsword (A)
+								i(172870),	-- Corrupted Aspirant's Longbow (A)
+								i(172882),	-- Corrupted Aspirant's Pike (A)
+								i(172874),	-- Corrupted Aspirant's Pummeler (A)
+								i(172866),	-- Corrupted Aspirant's Reprieve (A)
+								i(174017),	-- Corrupted Aspirant's Rifle (A)
+								i(172859),	-- Corrupted Aspirant's Shanker (A)
+								i(172868),	-- Corrupted Aspirant's Shield Wall (A)
+								i(172876),	-- Corrupted Aspirant's Slicer (A)
+								i(174011),	-- Corrupted Aspirant's Spellblade (A)
+								i(172858),	-- Corrupted Aspirant's Stabber (A)
+								i(172864),	-- Corrupted Aspirant's Staff (A)
+								i(172862),	-- Corrupted Aspirant's Wand (A)
+								i(174019),	-- Corrupted Aspirant's War Staff (A)
+								i(172886),	-- Corrupted Aspirant's Warglaive (A)
+							}),
+							n(-43, {	-- Cloth
+								i(172837),	-- Corrupted Aspirant's Silk Cord (A)
+								i(172840),	-- Corrupted Aspirant's Silk Cuffs (A)
+								i(172823),	-- Corrupted Aspirant's Silk Gloves (A)
+								i(172825),	-- Corrupted Aspirant's Silk Hood (A)
+								i(172829),	-- Corrupted Aspirant's Silk Leggings (A)
+								i(172834),	-- Corrupted Aspirant's Silk Mantle (A)
+								i(172813),	-- Corrupted Aspirant's Silk Robe (A)
+								i(172818),	-- Corrupted Aspirant's Silk Treads (A)
+							}),
+							n(-44, {	-- Leather
+								i(172839),	-- Corrupted Aspirant's Leather Belt (A)
+								i(172843),	-- Corrupted Aspirant's Leather Bindings (A)
+								i(172820),	-- Corrupted Aspirant's Leather Boots (A)
+								i(172821),	-- Corrupted Aspirant's Leather Gloves (A)
+								i(172827),	-- Corrupted Aspirant's Leather Helm (A)
+								i(172831),	-- Corrupted Aspirant's Leather Legguards (A)
+								i(172832),	-- Corrupted Aspirant's Leather Spaulders (A)
+								i(172816),	-- Corrupted Aspirant's Leather Tunic (A)
+							}),
+							n(-45, {	-- Mail
+								i(172842),	-- Corrupted Aspirant's Chain Armbands (A)
+								i(172815),	-- Corrupted Aspirant's Chain Armor (A)
+								i(172824),	-- Corrupted Aspirant's Chain Gauntlets (A)
+								i(172826),	-- Corrupted Aspirant's Chain Helm (A)
+								i(172830),	-- Corrupted Aspirant's Chain Leggings (A)
+								i(172819),	-- Corrupted Aspirant's Chain Sabatons (A)
+								i(172835),	-- Corrupted Aspirant's Chain Spaulders (A)
+								i(172838),	-- Corrupted Aspirant's Chain Waistguard (A)
+							}),
+							n(-46, {	-- Plate
+								i(172841),	-- Corrupted Aspirant's Plate Armguards (A)
+								i(172814),	-- Corrupted Aspirant's Plate Chestpiece (A)
+								i(172822),	-- Corrupted Aspirant's Plate Gauntlets (A)
+								i(172836),	-- Corrupted Aspirant's Plate Girdle (A)
+								i(172812),	-- Corrupted Aspirant's Plate Helm (A)
+								i(172828),	-- Corrupted Aspirant's Plate Legguards (A)
+								i(172833),	-- Corrupted Aspirant's Plate Pauldrons (A)
+								i(172817),	-- Corrupted Aspirant's Plate Warboots (A)
+							}),
+							--[[n(-322, {	-- Back
+								i(172857),	-- Corrupted Aspirant's Cape (A)
+								i(172856),	-- Corrupted Aspirant's Drape (A)
+								i(172854),	-- Corrupted Aspirant's Shawl (A)
+								i(172853),	-- Corrupted Aspirant's Cape (H)
+								i(172852),	-- Corrupted Aspirant's Drape (H)
+								i(172850),	-- Corrupted Aspirant's Shawl (H)
+							}),--]]
+							n(-385, {	-- Finger
+								i(172845),	-- Corrupted Aspirant's Band
+								i(172844),	-- Corrupted Aspirant's Ring
+							}),
+							n(-386, {	-- Trinkets
+								i(172849),	-- Corrupted Aspirant's Badge
+								i(172847),	-- Corrupted Aspirant's Emblem
+								i(172848),	-- Corrupted Aspirant's Insignia
+								i(172846),	-- Corrupted Aspirant's Medallion
+							}),
+						}),
+					},
+				}),
 				n(55285, {	-- Astrid Langstrump
 					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 52.4, 8.2, 84 },
@@ -2946,7 +3034,7 @@ _.Zones =
 					},
 				}),
 				n(44246, {	-- Magatha Silverton
-					["coord"] = { 79.0, 69.6, 84 },
+					["coord"] = { 75.5, 66.1, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(71213),	-- Amulet of Burning Brilliance
@@ -4399,7 +4487,7 @@ _.Zones =
 					},
 				}),
 				n(58154, {	-- Toren Landow
-					["coord"] = { 79.0, 70.1, 84 },
+					["coord"] = { 75.7, 65.9, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(57931),	-- Amulet of Dull Dreaming

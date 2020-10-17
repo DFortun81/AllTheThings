@@ -63,6 +63,7 @@ _.WorldDrops =
 				i(31329),	-- Lifegiving Cloak
 			}),
 			n(-323, {	-- Chest
+				i(24808),	-- Unyielding Chain Vest
 				i(31127),	-- Hauberk of Totemic Rage
 				i(31136),	-- Breastplate of Blade Turning
 				i(31152),	-- Chestguard of Illumination
