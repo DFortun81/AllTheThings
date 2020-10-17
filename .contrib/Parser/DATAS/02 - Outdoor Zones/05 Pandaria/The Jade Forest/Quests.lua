@@ -195,11 +195,6 @@ _.Zones =
 					["provider"] = { "n", 55614 },	-- Pei-Zhi
 					["coord"] = { 44.2, 15.0, 371 },
 				}),
-				q(30135, {	-- Beating the Odds
-					["sourceQuests"] = { 30134 },	-- Wild Things
-					["provider"] = { "n", 58225 },	-- Instructor Tong
-					["coord"] = { 65.3, 31.6, 371 },
-				}),
 				q(29632, {	-- Becoming Battle-Ready
 					["sourceQuests"] = { 29620 },	-- The Great Banquet
 					["provider"] = { "n", 54922 },	-- Master Stone Fist
@@ -265,15 +260,6 @@ _.Zones =
 						i(80797),	-- Jinyu Combat Mace
 					},
 				}),
-				q(30138, {	-- Choosing the One -- grants an item: Blue (78962), Green (78960), Yellow (78961) serpent egg
-					["sourceQuests"] = {
-						30135,	-- Beating the Odds
-						30137,	-- Egg Collection
-						30136,	-- Empty Nests
-					},
-					["provider"] = { "n", 58225 },	--  Instructor Tong
-					["coord"] = { 65.3, 31.6, 371 },
-				}),
 				q(29552, {	-- Critical Condition
 					["sourceQuests"] = {
 						31736,	-- Envoy of the Alliance
@@ -309,21 +295,11 @@ _.Zones =
 						i(88707),	-- Windfur Ring
 					},
 				}),
-				q(30137, {	-- Egg Collection
-					["sourceQuests"] = { 30134 },	-- Wild Things
-					["provider"] = { "n", 58225 },	-- Instructor Tong
-					["coord"] = { 65.3, 31.6, 371 },
-				}),
 				q(31319, {	-- Emergency Response
 					["sourceQuests"] = { 31303 },	-- The Seal is Broken
 					["provider"] = { "n", 59418 },	-- Lorewalker Cho
 					["coord"] = { 49.2, 61.4, 371 },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(30136, {	-- Empty Nests
-					["sourceQuests"] = { 30134 },	-- Wild Things
-					["provider"] = { "n", 58225 },	-- Instructor Tong
-					["coord"] = { 65.3, 31.6, 371 },
 				}),
 				q(31736, {	-- Envoy of the Alliance
 					["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
@@ -548,15 +524,6 @@ _.Zones =
 					["coord"] = { 58.9, 81.5, 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(30142, {	-- It's A...
-					["sourceQuests"] = {
-						30139,	-- The Rider's Journey (blue)
-						30140,	-- The Rider's Journey (green)
-						30141,	-- The Rider's Journey (yellow)
-					},
-					["provider"] = { "n", 58228 },	-- Instructor Skythorn
-					["coord"] = { 57.5, 45.1, 371 },
-				}),
 				q(30502, {	-- Jaded Heart
 					["sourceQuests"] = { 31303 },	-- The Seal is Broken
 					["provider"] = { "n", 59418 },	-- Lorewalker Cho
@@ -646,12 +613,6 @@ _.Zones =
 						i(80781),	-- Shoots of Life
 						i(80782),	-- Misty Jade Idol
 					},
-				}),
-				q(31712, {	-- Monkey Mischief
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 58228 },	-- Instructor Skythorn <Serpent Master>
-					["coord"] = { 57.6, 45.0, 371 },
-					["isDaily"] = true,
 				}),
 				q(30001, {	-- Moth-Ridden
 					["sourceQuests"] = { 29998 },	-- The Librarian's Quandary
@@ -823,12 +784,6 @@ _.Zones =
 					["provider"] = { "n", 56222 },	-- Bold Karasshi
 					["coord"] = { 58.9, 81.7, 371 },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31708, {	-- Serpent's Scale
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 58511 },	-- Qua-Ro Whitebrow
-					["coord"] = { 57.2, 43.6, 371 },
-					["isDaily"] = true,
 				}),
 				q(29995, {	-- Shrine of the Dawn
 					["sourceQuests"] = { 29993 },	-- Find the Boy
@@ -1037,24 +992,6 @@ _.Zones =
 					["provider"] = { "n", 56784 },	-- Fei
 					["coord"] = { 58.0, 59.0, 371 },
 				}),
-				q(30139, {	-- The Rider's Journey (blue egg)
-				--	picked the blue and got this one, but some notes indicate all colors now grant this quest.
-				--	i picked "wait, i changed my mind about my egg" and switched to green/yellow, and they gave 30140 and 30141, respectively.  swapping back to blue switched the quest back to 30139.
-				--	completing one version of the quest completes them all, so altQuests is unnecessary here.
-					["sourceQuests"] = { 30138 },	-- Choosing the One
-					["provider"] = { "n", 58225 },	-- Instructor Tong
-					["coord"] = { 65.3, 31.6, 371 },
-				}),
-				q(30140, {	-- The Rider's Journey (green egg)
-					["sourceQuests"] = { 30138 },	-- Choosing the One
-					["provider"] = { "n", 58225 },	-- Instructor Tong
-					["coord"] = { 65.3, 31.6, 371 },
-				}),
-				q(30141, {	-- The Rider's Journey (yellow egg)
-					["sourceQuests"] = { 30138 },	-- Choosing the One
-					["provider"] = { "n", 58225 },	-- Instructor Tong
-					["coord"] = { 65.3, 31.6, 371 },
-				}),
 				q(31735, {	-- The Right Tool For The Job
 					["sourceQuests"] = {
 						30069,	-- No Plan Survives Contact with the Enemy
@@ -1220,16 +1157,6 @@ _.Zones =
 					["provider"] = { "n", 54998 },	-- Apprentice Yufi
 					["coord"] = { 49.6, 45.8, 371 },
 				}),
-				q(31710, {	-- Tiny Treats
-					["u"] = REMOVED_FROM_GAME,	-- Wowhead says it's added in 7.3.5, is it really removed?
-					["providers"] = {
-						{ "n", 65672 },	-- Your Cloud Serpent
-						{ "n", 65673 },	-- Your Cloud Serpent
-						{ "n", 65674 },	-- Your Cloud Serpent
-						{ "n", 65724 },	-- Azure Hatchling
-					},
-					["isDaily"] = true,
-				}),
 				q(29754, {	-- To Bridge Earth and Sky
 					["sourceQuests"] = {
 						29756,	-- A Humble Offering
@@ -1362,10 +1289,6 @@ _.Zones =
 						i(88700),	-- Wikket Drape
 					},
 				}),
-				q(30134, {	-- Wild Things
-					["provider"] = { "n", 58564 },	-- Elder Anli
-					["coord"] = { 57.7, 45.0, 371 },
-				}),
 				q(29635, {	-- Xiao, the Eater
 					["sourceQuests"] = {
 						29633,	-- Zhi-Zhi the Dextrous
@@ -1406,14 +1329,6 @@ _.Zones =
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
-				q(30149, {	-- A Feast for the Senses
-					["provider"] = { "n", 58413 },	-- Jenova Longeye
-					["isDaily"] = true,
-				}),
-				q(31707, {	-- A Tangled Web
-					["provider"] = { "n", 58228 },	-- Instructor Skythorn
-					["isDaily"] = true,
-				}),
 				q(31539, {	-- A Thing of Beauty
 					["provider"] = { "n", 56065 },	-- Inkmaster Wei
 					["requireSkill"] = INSCRIPTION,
@@ -1438,40 +1353,6 @@ _.Zones =
 					["provider"] = { "n", 59569 },	-- Brewmaster Blanche
 					["coord"] = { 38.8, 31.1, 371 },
 				}),
-				q(30151, {	-- Catch!
-					["providers"] = {
-						{ "n", 65669 },	-- Your Hatchling
-						{ "n", 65670 },	-- Your Hatchling
-						{ "n", 65671 },	-- Your Hatchling
-					},
-					["isDaily"] = true,
-				}),
-				q(31701, {	-- Dark Huntress
-					["provider"] = { "n", 56564 },	-- Elder Anli
-					["isDaily"] = true,
-				}),
-				q(30158, {	-- Disarming the Enemy
-					["sourceQuests"] = { 30142 },	-- It's A...
-					["provider"] = { "n", 58228 },	-- Instructor Skythorn
-					["coord"] = { 57.5, 45.1, 371 },
-					["isDaily"] = true,
-				}),
-				q(30157, {	-- Emptier Nests
-					["provider"] = { "n", 58510 },	-- Suchi the Sweet
-					["isDaily"] = true,
-				}),
-				q(30156, {	-- Feeding Time
-					["providers"] = {
-						{ "n", 65669 },	-- Your Hatchling
-						{ "n", 65670 },	-- Your Hatchling
-						{ "n", 65671 },	-- Your Hatchling
-						{ "n", 65672 },	-- Cloud Serpent
-						{ "n", 65673 },	-- Cloud Serpent
-						{ "n", 65674 },	-- Cloud Serpent
-						{ "n", 65724 },	-- Azure Hatchling
-					},
-					["isDaily"] = true,
-				}),
 				q(30145, {	-- Flight Training: Full Speed Ahead
 					["provider"] = { "n", 58420 },	-- Instructor Windblade
 					["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
@@ -1484,10 +1365,6 @@ _.Zones =
 					["provider"] = { "n", 58420 },	-- Instructor Windblade
 					["sourceQuests"] = { 30143 },	-- They Grow Like Weeds
 				}),
-				q(30147, {	-- Fragments of the Past
-					["provider"] = { "n", 58413 },	-- Jenova Longeye
-					["isDaily"] = true,
-				}),
 				q(31542, {	-- Incarnadine Ink
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 					["races"] = ALLIANCE_ONLY,
@@ -1496,10 +1373,6 @@ _.Zones =
 					["g"] = {
 						recipe(127475),	-- Incarnadine Ink
 					},
-				}),
-				q(30148, {	-- Just a Flesh Wound
-					["provider"] = { "n", 58413 },	-- Jenova Longeye
-					["isDaily"] = true,
 				}),
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
@@ -1510,30 +1383,9 @@ _.Zones =
 					["provider"] = { "n", 58508 },	-- Big Bao
 					["isDaily"] = true,
 				}),
-				q(31703, {	-- Madcap Mayhem
-					["provider"] = { "n", 58564 },	-- Elder Anli
-					["isDaily"] = true,
-				}),
-				q(31705, {	-- Needle Me Not
-					["provider"] = { "n", 58564 },	-- Elder Anli
-					["isDaily"] = true,
-				}),
-				q(31702, {	-- On The Prowl
-					["provider"] = { "n", 58564 },	-- Elder Anli
-					["isDaily"] = true,
-				}),
 				q(31784, {	-- Onyx To Goodness
 					["provider"] = { "n", 58564 },	-- Elder Anli
 					["repeatable"] = true,
-				}),
-				q(31704, {	-- Pooped
-					["providers"] = {
-						{ "n", 58384 },	-- Azure Hatchling
-						{ "n", 65669 },	-- Your Hatchling
-						{ "n", 65670 },	-- Your Hatchling
-						{ "n", 65671 },	-- Your Hatchling
-					},
-					["isDaily"] = true,
 				}),
 				q(31543, {	-- Portrait of a Lady
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
@@ -1542,16 +1394,6 @@ _.Zones =
 					["g"] = {
 						recipe(128922),	-- Portrait of Madam Goya
 					},
-				}),
-				q(30159, {	-- Preservation
-					["provider"] = { "n", 58510 },	-- Suchi the Sweet
-					["isDaily"] = true,
-				}),
-				q(30155, {	-- Restoring the Balance
-					["sourceQuests"] = { 30142 },	-- It's A...
-					["provider"] = { "n", 58228 },	-- Instructor Skythorn
-					["coord"] = { 57.5, 45.1, 371 },
-					["isDaily"] = true,
 				}),
 				q(30188, {	-- Riding the Skies (Jade)
 					["provider"] = { "n", 58564 },	-- Elder Anli
@@ -1583,33 +1425,10 @@ _.Zones =
 						recipe(127391),	-- Engraved Jade Disk
 					},
 				}),
-				q(31194, {	-- Slitherscale Suppression
-					["sourceQuests"] = { 30142 },	-- It's A...
-					["provider"] = { "n", 58564 },	-- Elder Anli
-					["coord"] = { 57.5, 45.1, 371 },
-					["isDaily"] = true,
-				}),
-				q(30146, {	-- Snack Time
-					["provider"] = { "n", 58413 },	-- Jenova Longeye
-					["isDaily"] = true,
-				}),
-				q(31699, {	-- Sprite Fright
-					["provider"] = { "n", 58509 },	-- Ningna Darkwheel
-					["isDaily"] = true,
-				}),
 				q(31540, {	-- Staves for Tian Monastery
 					["provider"] = { "n", 56065 },	-- Inkmaster Wei
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
-				}),
-				q(30150, {	-- Sweet as Honey
-					["providers"] = {
-						{ "n", 58384 },	-- Azure Hatchling
-						{ "n", 65669 },	-- Your Hatchling
-						{ "n", 65670 },	-- Your Hatchling
-						{ "n", 65671 },	-- Your Hatchling
-					},
-					["isDaily"] = true,
 				}),
 				q(29933, {	-- The Bees' Knees
 					["sourceQuests"] = { 29879 },	-- Swallowed Whole
@@ -1618,40 +1437,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["minReputation"] = { 1228, FRIENDLY },
 				}),
-				q(31713, {	-- The Big Brew-haha
-					["provider"] = { "n", 58506 },	-- Ace Longpaw
-					["isDaily"] = true,
-				}),
-				q(31715, {	-- The Big Kah-Oona
-					["provider"] = { "n", 58564 },	-- Elder Anli
-					["isDaily"] = true,
-				}),
-				q(30154, {	-- The Easiest Way To A Serpent's Heart
-					["providers"] = {
-						{ "n", 65669 },	-- Your Hatchling
-						{ "n", 65670 },	-- Your Hatchling
-						{ "n", 65671 },	-- Your Hatchling
-						{ "n", 65672 },	-- Cloud Serpent
-						{ "n", 65673 },	-- Cloud Serpent
-						{ "n", 65674 },	-- Cloud Serpent
-						{ "n", 65679 },	-- Golden Hatchling
-						{ "n", 65723 },	-- Jade Hatchling
-						{ "n", 65724 },	-- Azure Hatchling
-					},
-					["isDaily"] = true,
-				}),
 				q(31876, {	-- The Inkmasters of the Arboretum
 					["provider"] = { "n", 64691 },	-- Lorewalker Huynh
 					["isWeekly"] = true,
 					["requireSkill"] = INSCRIPTION,
-				}),
-				q(31711, {	-- The Seed of Doubt
-					["provider"] = { "n", 58564 },	-- Elder Anli
-					["isDaily"] = true,
-				}),
-				q(31700, {	-- The Shoe Is On The Other Foot
-					["provider"] = { "n", 58509 },	-- Ningna Darkwheel
-					["isDaily"] = true,
 				}),
 				q(30152, {	-- The Sky Race
 					["provider"] = { "n", 58420 },	-- Instructor Windblade
@@ -1659,14 +1448,6 @@ _.Zones =
 				}),
 				q(30143, {	-- They Grow Like Weeds
 					["provider"] = { "n", 58564 },	-- Elder Anli
-				}),
-				q(31698, {	-- Thinning The Pack
-					["provider"] = { "n", 58228 },	-- Instructor Skythorn
-					["isDaily"] = true,
-				}),
-				q(31706, {	-- Weeping Widows
-					["provider"] = { "n", 58228 },	-- Instructor Skythorn
-					["isDaily"] = true,
 				}),
 				
 				
