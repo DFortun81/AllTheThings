@@ -1390,8 +1390,8 @@ _.ExpansionFeatures =
 						["coord"] = { 49.8, 95.9, 1165 },
 						["sourceQuests"] = {
 							54165,	-- The Return of Derek Proudmoore
-							54754,	-- For the Queen
 							54109,	-- Queen's Favor
+							54282,	-- Battle of Dazar'alor
 						},
 						["altQuests"] = { 54961 },	-- Righting Wrongs (Sylvanas Version)
 						["races"] = HORDE_ONLY,
@@ -1403,7 +1403,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = {
 							54165,	-- The Return of Derek Proudmoore
 							54754,	-- For the Queen
-							54109,	-- Queen's Favor
+							54282,	-- Battle of Dazar'alor
 						},
 						["altQuests"] = { 55124 },	-- Righting Wrongs
 						["races"] = HORDE_ONLY,
@@ -1551,7 +1551,10 @@ _.ExpansionFeatures =
 					q(55780, {	-- Old Allies (Sylvanas Version)
 						["provider"] = { "n", 151848 },	-- Lor'themar Theron
 						["coord"] = { 48.5, 62.1, 1355 },
-						["sourceQuest"] = 55778,	-- Visions of Danger
+						["sourceQuests"] = { 
+							55778,	-- Visions of Danger
+							55052,	-- Securing Warfang Hold (Sylvanas Version)
+						},
 						["altQuests"] = { 55781 },	-- Old Allies
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
