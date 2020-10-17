@@ -245,7 +245,10 @@ _.Zones =
 				q(28338, {	-- Deadwood of the North
 					["provider"] = { "n", 15395 },	-- Nafien
 					["coord"] = { 64.0, 10.3, 77 },
-					["sourceQuest"] = 28392,	-- The Timbermaw Tribe
+					["sourceQuests"] = {
+						28392,	-- The Timbermaw Tribe
+						28373,	-- Timbermaw Hold
+					},
 					["g"] = {
 						i(21316),	-- Leggings of the Ursa
 						i(21317),	-- Helm of the Pathfinder
