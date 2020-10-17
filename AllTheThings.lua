@@ -3431,6 +3431,10 @@ end
 local function SearchForFieldContainer(field)
 	if field then return rawget(fieldCache, field); end
 end
+-- This method returns a table containing all groups which are related to or keyed by the
+-- provided field type and key id
+-- Meaning, when using this function, the results must be filtered to ensure the expected group(s) are being utilized
+-- i.e. "questID" & 55780 will return groups for 55780 AND 55781 (which is an altquest of 55780)
 local function SearchForField(field, id)
 	if field and id then
 		_cache = rawget(fieldCache, field);
@@ -8882,6 +8886,59 @@ end
 local function Toggle(self)
 	return SetVisible(self, not self:IsVisible());
 end
+local function NestSourceQuests(root, addedQuests, depth)
+	-- root is already the cloned source of the new list, just add each sourceQuest cloned into sub-groups
+	-- setup tracking which quests have been added as a sub-group, so we can only add them once
+	if not addedQuests then
+		addedQuests =  { };
+	end
+	-- make sure root has no existing sub-groups
+	root.g = nil;
+	root.visible = true;
+	root.hideText = true;
+	root.depth = depth or 0;
+	if not root.depth then root.depth  = 0; end
+	if root.sourceQuests and #root.sourceQuests > 0 then
+		local prereqs;
+		for i,sourceQuestID in ipairs(root.sourceQuests) do
+				local qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
+				if qs and #qs > 0 then
+					local i, sq = #qs;
+					while not sq and i > 0 do
+						if qs[i].questID == sourceQuestID then sq = qs[i]; end
+						i = i - 1;
+					end
+					if sq and sq.questID then
+						if sq.parent and sq.parent.questID == sq.questID then
+							sq = sq.parent;
+						end
+					elseif sourceQuestID > 0 then
+						-- Create a Quest Object.
+						sq = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['hideText'] = true, });
+					else
+						-- Create a NPC Object.
+						sq = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true, });
+					end
+					
+					local nextRoot = not addedQuests[sourceQuestID] and NestSourceQuests(CloneData(sq), addedQuests, (depth or 0) + 1) or CloneData(sq);
+					addedQuests[sourceQuestID] = true;
+					if nextRoot then
+						-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
+						root.depth = math.max((root.depth or 0),(nextRoot.depth or 1));
+						if not prereqs then prereqs = {}; end
+						tinsert(prereqs, nextRoot);
+					end
+				end
+		end
+		-- sort quests with less sub-quests to the top
+		if prereqs and #prereqs > 1 then
+			table.sort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
+			-- table.sort(prereqs, function(a, b) return (a.nestedCount or 0) < (b.nestedCount or 0); end);
+		end
+		root.g = prereqs;
+	end
+	return root;
+end
 
 
 -- OPTIMIZE THESE FOR THE LOVE OF GOD
@@ -8900,6 +8957,8 @@ function app:CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local suffix = BuildSourceTextForChat(group, 0) .. " -> " .. (group.text or "") .. (group.key and group[group.key] or "");
 	local popout = app.Windows[suffix];
+	-- force data to be re-collected if this is a quest chain since it's logic is affected by settings
+	if not group.s and (group.questID or group.sourceQuests) then popout = nil; end
 	if not popout then
 		popout = app:GetWindow(suffix);
 		popout.shouldFullRefresh = true;
@@ -9046,67 +9105,86 @@ function app:CreateMiniListForGroup(group)
 			
 			-- Check to see if Source Quests are listed elsewhere.
             if group.questID and not group.sourceQuests then
-                local searchResults = SearchForField("questID", group.questID);
-                if searchResults and #searchResults > 1 then
-                    for i=1,#searchResults,1 do
-                        local searchResult = searchResults[i];
-                        if searchResult.questID == questID and searchResult.sourceQuests then
-                            searchResult = CloneData(searchResult);
-                            searchResult.collectible = true;
-                            searchResult.g = g;
-                            root = searchResult;
-                            g = { root };
-                            break;
-                        end
-                    end
+                local qs = SearchForField("questID", group.questID);
+                if qs and #qs > 1 then
+					local i, sq = #qs;
+					while not sq and i > 0 do
+						if qs[i].questID == sourceQuestID then sq = qs[i]; end
+						i = i - 1;
+					end
+					if sq then
+						searchResult = CloneData(sq);
+						searchResult.collectible = true;
+						searchResult.g = g;
+						root = searchResult;
+						g = { root };
+					end
                 end
             end
 			
 			-- Show Quest Prereqs
-			if root.sourceQuests then
+			local gTop;
+			if app.Settings:GetTooltipSetting("QuestChain:Nested") then
+				gTop = NestSourceQuests(root);
+			elseif root.sourceQuests then
 				local breakafter = 0;
+				local isAcctQuests = app.Settings:Get("DebugMode") or app.AccountWideQuests;				
 				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
 				while sourceQuests and #sourceQuests > 0 do
 					subSourceQuests = {}; prereqs = {};
 					for i,sourceQuestID in ipairs(sourceQuests) do
-						sourceQuest = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
-						if sourceQuest and #sourceQuest > 0 then
-							local found = nil;
-							for i=1,#sourceQuest,1 do
-								-- Only care about the first search result.
-								local sq = sourceQuest[i];
-								if sq and sq.questID then
-									if sq.parent and sq.parent.questID == sq.questID then
-										sq = sq.parent;
-									end
-									if app.GroupFilter(sq) and not sq.isBreadcrumb then
-										if sq.altQuestID then
-											-- Alt Quest IDs are always Horde.
-											if app.FactionID == Enum.FlightPathFaction.Horde then
-												if sq.altQuestID == sourceQuestID then
-													if not found or (not found.sourceQuests and sq.sourceQuests) then
-														found = sq;
-													end
-												end
-											elseif sq.questID == sourceQuestID then
-												if not found or (not found.sourceQuests and sq.sourceQuests) then
-													found = sq;
-												end
-											end
-										elseif app.RecursiveClassAndRaceFilter(sq) then
-											if not found or (not found.sourceQuests and sq.sourceQuests) then
-												found = sq;
-											end
-										end
-									end
-								end
+						local qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
+						if qs and #qs > 0 then
+							local i, sq = #qs;
+							while not sq and i > 0 do
+								if qs[i].questID == sourceQuestID then sq = qs[i]; end
+								i = i - 1;
 							end
-							if found then
+							-- just throw every sourceQuest into groups since it's specific questID?
+							-- continue to force collectible though even without quest tracking since it's a temp window
+							-- only reason to include altQuests in search was because of A/H questID usage, which is now cleaned up for quest objects
+							local found = nil;
+							if sq and sq.questID then
+								if sq.parent and sq.parent.questID == sq.questID then
+									sq = sq.parent;
+								end
+								found = sq;
+								-- print("is-valid sq",sq.key,sq[sq.key]);
+								-- if app.GroupFilter(sq) then
+									-- if app.RecursiveClassAndRaceFilter(sq) then
+										-- if not found or (not found.sourceQuests and sq.sourceQuests) then
+											-- print("found-questID",sq.questID);
+											-- found = sq;
+										-- end
+									-- elseif sq.altQuests then
+										-- for i,altQuestID in sq.altQuests do
+											-- -- Alt Quest IDs are always Horde.
+											-- if app.FactionID == Enum.FlightPathFaction.Horde then
+												-- if sq.altQuestID == sourceQuestID then
+													-- if not found or (not found.sourceQuests and sq.sourceQuests) then
+														-- print("found-HaltQuestID",sq.altQuestID);
+														-- found = sq;
+													-- end
+												-- end
+											-- -- elseif sq.questID == sourceQuestID then
+												-- -- if not found or (not found.sourceQuests and sq.sourceQuests) then
+													-- -- print("found-altQuestID",sq.questID);
+													-- -- found = sq;
+												-- -- end
+											-- end
+										-- end
+									-- end
+								-- else
+									-- print("skip-sq",sq.isBreadcrumb,sq.collected,sq.saved);
+								-- end
+							end
+							if found and not found.isBreadcrumb then
 								sourceQuest = CloneData(found);
 								sourceQuest.collectible = true;
 								sourceQuest.visible = true;
 								sourceQuest.hideText = true;
-								if found.sourceQuests and #found.sourceQuests > 0 and (not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
+								if found.sourceQuests and #found.sourceQuests > 0 and 
+									(found.saved ~= 1 or app.AccountWideQuests or app.CollectedItemVisibilityFilter(sourceQuest)) then
 									-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
 									for j, subsourceQuests in ipairs(found.sourceQuests) do
 										subSourceQuests[subsourceQuests] = true;
@@ -9207,7 +9285,7 @@ function app:CreateMiniListForGroup(group)
 				["text"] = "Quest Chain Requirements",
 				["description"] = "The following quests need to be completed before being able to complete the final quest.",
 				["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
-				["g"] = g,
+				["g"] = (gTop and { gTop }) or g,
 				["hideText"] = true
 			};
 		elseif group.sym then
@@ -10205,35 +10283,41 @@ RowOnEnter = function (self)
 		end
 		
 		-- Show Quest Prereqs
-		if reference.sourceQuests and not reference.saved then
+		local isDebug = app.Settings:Get("DebugMode");
+		if reference.sourceQuests and (not reference.saved or isDebug) then
 			local prereqs, bc = {}, {};
 			for i,sourceQuestID in ipairs(reference.sourceQuests) do
 				if sourceQuestID > 0 then
-					local sqs = SearchForField("questID", sourceQuestID);
-					if sqs and #sqs > 0 then
-						local sq = sqs[1];
-						if sq and app.ClassRequirementFilter(sq) and app.RaceRequirementFilter(sq) then
-							if IsQuestFlaggedCompletedForObject(sq) ~= 1 then
+					local qs = SearchForField("questID", sourceQuestID);
+					-- check the quests cached under this questID for the correct quest group
+					if qs and #qs > 0 then
+						local i, sq = #qs;
+						while not sq and i > 0 do
+							if qs[i].questID == sourceQuestID then sq = qs[i]; end
+							i = i - 1;
+						end
+						if sq and (isDebug or (app.ClassRequirementFilter(sq) and app.RaceRequirementFilter(sq))) then
+							if IsQuestFlaggedCompletedForObject(sq) ~= 1 or isDebug then
 								if sq.isBreadcrumb then
-									table.insert(bc, sqs[1]);
+									table.insert(bc, sq);
 								else
-									table.insert(prereqs, sqs[1]);
+									table.insert(prereqs, sq);
 								end
 							end
 						end
-					elseif not IsQuestFlaggedCompleted(sourceQuestID) then
+					elseif not IsQuestFlaggedCompleted(sourceQuestID) or isDebug then
 						table.insert(prereqs, {questID = sourceQuestID});
 					end
 				end
 			end
 			if prereqs and #prereqs > 0 then
-				GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
+				GameTooltip:AddLine("There are prerequisite quests that must be completed before this may be obtained:");
 				for i,prereq in ipairs(prereqs) do
-					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or QuestTitleFromID[prereq.questID]));
+					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or QuestTitleFromID[prereq.questID]) .. " " .. GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
 				end
 			end
 			if bc and #bc > 0 then
-				GameTooltip:AddLine("This quest has a breadcrumb quest that you may be unable to complete after completing this one.");
+				GameTooltip:AddLine("There are breadcrumb quests that may be not be obtainable after completing this:");
 				for i,prereq in ipairs(bc) do
 					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or QuestTitleFromID[prereq.questID]));
 				end
@@ -10242,16 +10326,24 @@ RowOnEnter = function (self)
 		
 		-- Show Breadcrumb information
 		if reference.isBreadcrumb then 
-			GameTooltip:AddLine("This quest is a breadcrumb for another quest."); 
+			GameTooltip:AddLine("This is a breadcrumb quest."); 
 			if reference.nextQuests then
 				local isBreadcrumbAvailable = true;
-				local nextq = {};
+				local nextq, nq = {};
 				for i,nextQuestID in ipairs(reference.nextQuests) do
 					if nextQuestID > 0 then
 						local nqs = SearchForField("questID", nextQuestID);
-						if nqs and #nqs > 0 then
-							local nq = nqs[1];
-							table.insert(nextq, nqs[1]);
+						if nqs and #nqs > 1 then
+							local i = #nqs;
+							nq = nil;
+							while not nq and i > 0 do
+								if nqs[i].questID == sourceQuestID then nq = nqs[i]; end
+								i = i - 1;
+							end
+						end
+						-- existing quest group
+						if nq then
+							table.insert(nextq, nq);
 						else
 							table.insert(nextq, {questID = nextQuestID});
 						end
@@ -10262,17 +10354,17 @@ RowOnEnter = function (self)
 				end
 				if isBreadcrumbAvailable then
 					-- The character is able to accept the breadcrumb quest without Party Sync
-					GameTooltip:AddLine("You may be unable to complete it without Party Sync after completing any of these quests.");
+					GameTooltip:AddLine("This may be unable to be completed without Party Sync if completing any of these quests first:");
 				else
 					-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
-					GameTooltip:AddLine("You will need to Party Sync with a character that has not completed any of these quests."); 
+					GameTooltip:AddLine("This may be obtained via Party Sync with another character that has not completed any of these quests:"); 
 				end
 				for i,nquest in ipairs(nextq) do
 					GameTooltip:AddLine("   " .. nquest.questID .. ": " .. (nquest.text or QuestTitleFromID[nquest.questID]));
 				end
 			elseif not reference.DisablePartySync then
 				-- There is no information about next quests that invalidates the breadcrumb
-				GameTooltip:AddLine("You may need to Party Sync with a character that is able to accept this quest."); 
+				GameTooltip:AddLine("This may be obtained via Party Sync with a character that is able to accept this quest."); 
 			end
 		end
 		

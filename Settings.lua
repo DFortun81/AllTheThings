@@ -2874,6 +2874,16 @@ end);
 SortByCompletionInstead:SetATTTooltip("Enable this option if you want the 'Sort' operation (Shift + Right Click) to sort by the total progress of each group (instead of by Name)");
 SortByCompletionInstead:SetPoint("TOPLEFT", ShowAuctionHouseModuleTab, "BOTTOMLEFT", 0, 4);
 
+local QuestChainRequirementsNested = settings:CreateCheckBox("Nested Quest Chain Requirements |CFF4AA7FF[Beta]|R",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("QuestChain:Nested"));
+end,
+function(self)
+	settings:SetTooltipSetting("QuestChain:Nested", self:GetChecked());
+end);
+QuestChainRequirementsNested:SetATTTooltip("Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out. Otherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.");
+QuestChainRequirementsNested:SetPoint("TOPLEFT", SortByCompletionInstead, "BOTTOMLEFT", 0, 4);
+
 local CelebrationsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 CelebrationsLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -50, -8);
 CelebrationsLabel:SetJustifyH("LEFT");
