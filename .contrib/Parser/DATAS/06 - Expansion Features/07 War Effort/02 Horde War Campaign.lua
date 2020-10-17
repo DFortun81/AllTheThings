@@ -76,18 +76,34 @@ _.ExpansionFeatures =
 						i(163664),	-- Honorbound Artificer's Robes
 						i(163666),	-- Honorbound Artificer's Mantle
 						i(163667),	-- Honorbound Artificer's Skullcap
+						-- TODO: Needs verification Probably no HOA reward
+						i(175396),	-- Honorbound Artificer's Robes
+						i(175398),	-- Honorbound Artificer's Mantle
+						i(175399),	-- Honorbound Artificer's Skullcap
 						-- Leather
 						i(163668),	-- Honorbound Outrider's Mantle
 						i(163669),	-- Honorbound Outrider's Faceguard
 						i(163671),	-- Honorbound Outrider's Vestments
+						-- TODO: Needs verification Probably no HOA reward
+						i(175400),	-- Honorbound Outrider's Mantle
+						i(175401),	-- Honorbound Outrider's Faceguard
+						i(175403),	-- Honorbound Outrider's Vestments
 						-- Mail
 						i(163665),	-- Honorbound Vanguard's Chainmail
 						i(163672),	-- Honorbound Vanguard's Helm
 						i(163670),	-- Honorbound Vanguard's Pauldrons
+						-- TODO: Needs verification Probably no HOA reward
+						i(175397),	-- Honorbound Vanguard's Chainmail
+						i(175404),	-- Honorbound Vanguard's Helm
+						i(175402),	-- Honorbound Vanguard's Pauldrons
 						-- Plate
 						i(163675),	-- Honorbound Centurion's Breastplate
 						i(163674),	-- Honorbound Centurion's Helmet
 						i(163673),	-- Honorbound Centurion's Pauldrons
+						-- TODO: Needs verification Probably no HOA reward
+						i(175407),	-- Honorbound Centurion's Breastplate
+						i(175406),	-- Honorbound Centurion's Helmet
+						i(175405),	-- Honorbound Centurion's Pauldrons
 					},
 				}),
 				n(QUESTS, {
