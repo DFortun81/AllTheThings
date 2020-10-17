@@ -206,11 +206,21 @@ _.Zones =
 					["coord"] = { 53.8, 61.8, 371 },
 					["isDaily"] = true,
 				}),
+				q(29941, {	-- Beyond the Horizon
+					["sourceQuests"] = { 29936 },	-- Instant Messaging
+					["provider"] = { "n", 56339 },	-- General Nazgrim
+					["coord"] = { 28.2, 47.7, 371 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(29904, {	-- Bigger Fish to Fry
 					["sourceQuests"] = { 29903 },	-- A Perfect Match
 					["provider"] = { "n", 60970 },	-- Admiral Taylor
 					["coord"] = { 58.8, 81.7, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(30567, {	-- Blanche's Boomer Brew
+					["provider"] = { "n", 59569 },	-- Brewmaster Blanche
+					["coord"] = { 38.8, 31.1, 371 },
 				}),
 				q(29892, {	-- Body
 					["sourceQuests"] = { 31130 },	-- A Visit with Lorewalker Cho
@@ -220,6 +230,30 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 54.0, 91.2, 371 },
+				}),
+				q(29939, {	-- Boom Bait
+					["sourceQuests"] = { 29937 },	-- Furious Fowl
+					["provider"] = { "n", 56406 },	-- Rivett Clutchpop
+					["coord"] = { 27.2, 50.7, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(29967, {	-- Boom Goes the Doonamite!
+					["sourceQuests"] = { 29968 },	-- Green-ish Energy
+					["provider"] = { "n", 56406 },	-- Rivett Clutchpop
+					["coord"] = { 27.2, 50.7, 371 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(80788),	-- Jinyu Meditation Staff
+						i(80789),	-- Jinyu Divining Rod
+						i(80790),	-- Jinyu Combat Staff
+						i(80791),	-- Jinyu Greatsword
+						i(80792),	-- Jinyu Handaxe
+						i(80793),	-- Jinyu Crossbow
+						i(80794),	-- Jinyu Battleaxe
+						i(80795),	-- Jinyu Ritual Scepter
+						i(80796),	-- Jinyu Dagger
+						i(80797),	-- Jinyu Combat Mace
+					},
 				}),
 				q(29889, {	-- Borrowed Brew
 					["sourceQuests"] = { 29888 },	-- Seek Out the Lorewalker
@@ -237,10 +271,22 @@ _.Zones =
 					["provider"] = { "n", 55094 },	-- Guard Shan Long
 					["coord"] = { 38.0, 23.7, 371 },
 				}),
+				q(29966, {	-- Burning Down the House
+					["sourceQuests"] = { 29943 },	-- Guerrillas in our Midst
+					["provider"] = { "n", 56339 },	-- General Nazgrim
+					["coord"] = { 30.2, 53.1, 371 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(29926, {	-- Calamity Jade
 					["sourceQuests"] = { 29928 },	-- I Have No Jade and I Must Scream
 					["provider"] = { "n", 56346 },	-- Foreman Mann
 					["coord"] = { 50.9, 27.0, 371 },
+				}),
+				q(31261, {	-- Captain Jack's Dead
+					["provider"] = { "i", 85783 },	-- Captain Jack's Head
+					["coord"] = { 30.8, 41.3, 371 },
+					["races"] = HORDE_ONLY,
+					["cr"] = 63809,	-- Jack Arrow
 				}),
 				q(29906, {	-- Carp Diem
 					["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
@@ -260,6 +306,12 @@ _.Zones =
 						i(80797),	-- Jinyu Combat Mace
 					},
 				}),
+				q(31777, {	-- Choppertunity
+					["sourceQuests"] = { 29804 },	-- Seein' Red
+					["provider"] = { "n", 55521 },	-- Rivett Clutchpop
+					["coord"] = { 31.1, 21.5, 371 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(29552, {	-- Critical Condition
 					["sourceQuests"] = {
 						31736,	-- Envoy of the Alliance
@@ -276,6 +328,18 @@ _.Zones =
 						i(90386),	-- Recovery Team Shield
 						i(90389),	-- Skyguardian's Shield
 					},
+				}),
+				q(29765, {	-- Cryin' My Eyes Out
+					["sourceQuests"] = { 31774 },	-- Seeking Zin'jun
+					["provider"] = { "n", 55403 },	-- Zin'Jun
+					["coord"] = { 31.1, 17.5, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(30015, {	-- Dawn's Blossom
+					["sourceQuests"] = { 29967 },	-- Boom Goes the Doonamite!
+					["provider"] = { "n", 56339 },	-- General Nazgrim
+					["coord"] = { 28.6, 47.5, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(29578, {	-- Defiance
 					["sourceQuests"] = { 29576 },	-- An Air of Worry
@@ -295,11 +359,17 @@ _.Zones =
 						i(88707),	-- Windfur Ring
 					},
 				}),
-				q(31319, {	-- Emergency Response
+				q(31319, {	-- Emergency Response (A)
 					["sourceQuests"] = { 31303 },	-- The Seal is Broken
 					["provider"] = { "n", 59418 },	-- Lorewalker Cho
 					["coord"] = { 49.2, 61.4, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(30504, {	-- Emergency Response (H)
+					["sourceQuests"] = { 31303 },	-- The Seal is Broken
+					["provider"] = { "n", 59418 },	-- Lorewalker Cho
+					["coord"] = { 49.2, 61.4, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(31736, {	-- Envoy of the Alliance
 					["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
@@ -330,6 +400,12 @@ _.Zones =
 					["provider"] = { "n", 56786 },	-- Lorewalker Stonestep
 					["coord"] = { 56.2, 60.4, 371 },
 				}),
+				q(31771, {	-- Face to Face With Consequence
+					["sourceQuests"] = { 31769 }, -- The Final Blow!
+					["provider"] = { "n", 66657 },	-- Taran Zhu
+					["coord"] = { 33.7, 10.6, 371 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(29762, {	-- Family Heirlooms
 					["sourceQuests"] = {
 						29883,	-- The Pearlfin Situation
@@ -338,6 +414,12 @@ _.Zones =
 					["provider"] = { "n", 56222 },	-- Bold Karasshi
 					["coord"] = { 58.9, 81.7, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31167, {	-- Family Tree
+					["sourceQuests"] = { 31152 },	-- Peering Into the Past
+					["provider"] = { "n", 63307 },	-- Lorewalker Cho
+					["coord"] = { 28.8, 32.6, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(29993, {	-- Find the Boy
 				--	TODO: might also require 29865 (The Silkwood Road) ?
@@ -361,6 +443,18 @@ _.Zones =
 						i(80766),	-- Band of Flair
 						i(80767),	-- Band of Finding
 					},
+				}),
+				q(31767, {	-- Finish Them!
+					["sourceQuests"] = { 31766 },	-- Touching Ground
+					["provider"] = { "n", 66190 },	-- General Nazgrim
+					["coord"] = { 31.6, 11.3, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31768, {	-- Fire Is Always the Answer
+					["sourceQuests"] = { 31766 },	-- Touching Ground
+					["provider"] = { "n", 66190 },	-- General Nazgrim
+					["coord"] = { 31.6, 11.3, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(30068, {	-- Flames of the Void
 					["u"] = REMOVED_FROM_GAME,
@@ -425,6 +519,12 @@ _.Zones =
 						i(80803),	-- Mace of Honor
 					},
 				}),
+				q(29815, {	-- Forensic Science
+					["sourceQuests"] = { 31999 },	-- Nazgrim's Command
+					["provider"] = { "n", 55180 },	-- Shademaster Kiryn
+					["coord"] = { 28.1, 24.8, 371 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(31742, {	-- Fractured Forces
 					["sourceQuests"]  = {
 						31738,	-- Pillaging Peons
@@ -452,12 +552,35 @@ _.Zones =
 						i(81030),	-- Cagebreaker's Heavy Girdle
 					},
 				}),
-				q(30498, {	-- Get Back Here!
+				q(29937, {	-- Furious Fowl
+					["sourceQuests"] = { 29941 },	-- Beyond the Horizon
+					["provider"] = { "n", 56406 },	-- Rivett Clutchpop
+					["coord"] = { 28.2, 47.7, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(30484, {	-- Gauging Our Progress
+					["sourceQuests"] = {
+						30499,	-- Get Back Here!
+						30000,	-- The Jade Serpent
+					},
+					["provider"] = { "n", 57108 },	-- General Nazgrim
+					["coord"] = { 28.0, 47.1, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(30498, {	-- Get Back Here! (A)
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 30000 },	-- The Jade Serpent
 					["provider"] = { "n", 57242 },	-- Elder Sage Wind-Yi
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = { { "i", 86068, 1 }, },	-- Alliance Missive
+				}),
+				q(30499, {	-- Get Back Here! (H)
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 30000 },	-- The Jade Serpent
+					["provider"] = { "n", 57242 },	-- Elder Sage Wind-Yi
+					["coord"] = { 55.8, 57.0, 371 },
+					["races"] = HORDE_ONLY,
+					["cost"] = { { "i", 86067, 1 }, },	-- Horde Missive
 				}),
 				q(29920, {	-- Getting Permission
 					["sourceQuests"] = { 29995 },	-- Shrine of the Dawn
@@ -470,6 +593,29 @@ _.Zones =
 						i(80761),	-- Greenstone Pendant
 						i(80762),	-- Jade Eye Pendant
 					},
+				}),
+				q(29943, {	-- Guerrillas in our Midst
+					["sourceQuests"] = { 29824 },	-- Scouting Report: Like Jinyu in a Barrel
+					["provider"] = { "n", 56339 },	-- General Nazgrim
+					["coord"] = { 28.6, 47.5, 371 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(80749),	-- Ambermist Cuffs
+						i(80750),	-- Blackthicket Bindings
+						i(80751),	-- Jade Witch Wristguards
+						i(80752),	-- Glass Lake Bracers
+						i(80753),	-- Silkwood Cuffs
+						i(80754),	-- Deepwoods Armwraps
+						i(80755),	-- Fox Grove Wristguards
+						i(80756),	-- Thunderwood Armplates
+						i(80757),	-- Jade Tiger Armplates
+					},
+				}),
+				q(29968, {	-- Green-ish Energy
+					["sourceQuests"] = { 29824 },	-- Scouting Report: Like Jinyu in a Barrel
+					["provider"] = { "n", 56406 },	-- Rivett Clutchpop
+					["coord"] = { 30.7, 52.2, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(29626, {	-- Groundskeeper Wu
 					["sourceQuests"] = { 29620 },	-- The Great Banquet
@@ -518,11 +664,30 @@ _.Zones =
 					["provider"] = { "n", 56346 },	-- Foreman Mann
 					["coord"] = { 50.9, 27.0, 371 },
 				}),
+				q(31134, {	-- If These Stones Could Speak
+					["sourceQuests"] = { 31132 },	-- A Mile in my Shoes
+					["provider"] = { "n", 63217 },	-- Lorewalker Cho
+					["coord"] = { 30.8, 34.0, 371 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(29922, {	-- In Search of Wisdom
 					["sourceQuests"] = { 29901 },	-- Anduin's Decision
 					["provider"] = { "n", 54960 },	-- Elder Lusshan
 					["coord"] = { 58.9, 81.5, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29936, {	-- Instant Messaging
+					["sourceQuests"] = { 29935 },	-- Orders are Orders
+					["provider"] = { "n", 56336 },	-- Chief Kah Kah
+					["coord"] = { 27.9, 47.1, 371 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(80763),	-- Friendship Ring
+						i(80764),	-- Band of Acceptance
+						i(80765),	-- Friendly Gift Band
+						i(80766),	-- Band of Flair
+						i(80767),	-- Band of Finding
+					},
 				}),
 				q(30502, {	-- Jaded Heart
 					["sourceQuests"] = { 31303 },	-- The Seal is Broken
@@ -534,6 +699,13 @@ _.Zones =
 					["provider"] = { "n", 55196 },	-- Bold Karasshi
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 54.1, 82.5, 371 },
+				}),
+				q(29924, {	-- Kill Kher Shan
+					["minReputation"] = { 1228, FRIENDLY },
+					["sourceQuests"] = { 29879 },	-- Swallowed Whole
+					["provider"] = { "n", 56327 },	-- Nibi Nibi
+					["coord"] = { 25.9, 38.7, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(31740, {	-- Koukou's Rampage
 					["sourceQuests"] = { 31739 },  -- Priorities!
@@ -562,7 +734,7 @@ _.Zones =
 						i(90372),	-- Landfall Warboots
 					},
 				}),
-				q(31362, {	-- Last Piece of the Puzzle
+				q(31362, {	-- Last Piece of the Puzzle (A)
 					["sourceQuests"] = {
 						30565,	-- An Unexpected Advantage
 						30568,	-- Helping the Cause
@@ -570,6 +742,21 @@ _.Zones =
 					["provider"] = { "n", 59620 },	-- Lorewalker Cho
 					["coord"] = { 58.8, 81.1, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(30485, {	-- Last Piece of the Puzzle (H)
+					["sourceQuests"] = {
+						30484,	-- Gauging Our Progress
+						30466,	-- Sufficient Motivation
+					},
+					["provider"] = { "n", 59377 },	-- Lorewalker Cho
+					["coord"] = { 28.2, 46.7, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(29822, {	-- Lay of the Land
+					["sourceQuests"] = { 29827 },	-- Acid Rain
+					["provider"] = { "n", 55172 },	-- General Nazgrim
+					["coord"] = { 28.4, 24.9, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(29905, {	-- Let Them Burn
 					["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
@@ -614,6 +801,18 @@ _.Zones =
 						i(80782),	-- Misty Jade Idol
 					},
 				}),
+				q(29821, {	-- Missed Me By... That Much!
+					["sourceQuests"] = { 31999 },	-- Nazgrim's Command
+					["provider"] = { "n", 55521 },	-- Rivett Clutchpop
+					["coord"] = { 28.1, 24.7, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(29743, {	-- Monstrosity
+					["sourceQuests"] = { 31774 },	-- Seeking Zin'jun
+					["provider"] = { "o", 212181 },	-- Ancient Statue
+					["coord"] = { 30.8, 17.4, 371 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(30001, {	-- Moth-Ridden
 					["sourceQuests"] = { 29998 },	-- The Librarian's Quandary
 					["provider"] = { "n", 56786 },	-- Lorewalker Stonestep
@@ -629,6 +828,23 @@ _.Zones =
 					},
 					["provider"] = { "n", 59899 },	-- Fei
 					["coord"] = { 49.3, 61.4, 371 },
+				}),
+				q(31999, {	-- Nazgrim's Command
+					["sourceQuests"] = { 31779 },	-- The Darkness Within
+					["provider"] = { "o", 215844 },	-- Flagpole
+					["coord"] = { 27.5, 24.2, 371 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(90293),	-- Peacebreaker's Armored Helm
+						i(90292),	-- Peacebreaker's Burnished Headcover
+						i(90290),	-- Peacebreaker's Chain Helm
+						i(90294),	-- Peacebreaker's Heavy Helm
+						i(90287),	-- Peacebreaker's Hide Helm
+						i(90285),	-- Peacebreaker's Leather Helm
+						i(90286),	-- Peacebreaker's Ringmail Helm
+						i(90288),	-- Peacebreaker's Satin Cowl
+						i(90289),	-- Peacebreaker's Silk Cowl
+					},
 				}),
 				q(30069, {	-- No Plan Survives Contact with the Enemy
 					["sourceQuests"] = { 31733 },	-- Touching Ground
@@ -649,6 +865,12 @@ _.Zones =
 					["provider"] = { "n", 54854 },	-- Gentle Mother Hanae
 					["coord"] = { 43.2, 76.0, 371 },
 				}),
+				q(29935, {	-- Orders are Orders
+					["sourceQuests"] = { 29879 },	-- Swallowed Whole
+					["provider"] = { "n", 56313 },	-- Tooki Tooki
+					["coord"] = { 26.2, 37.3, 371 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(30002, {	-- Pages of History
 					["sourceQuests"] = { 29998 },	-- The Librarian's Quandry
 					["provider"] = { "n", 56786 },	-- Lorewalker Stonestep
@@ -664,6 +886,29 @@ _.Zones =
 						i(80729),	-- Thunderwood Warboots
 						i(80730),	-- Jade Tiger Warboots
 					},
+				}),
+				q(31765, {	-- Paint it Red!
+					["sourceQuests"] = { 29690 },	-- Into the Mists
+					["provider"] = { "n", 55135 },	-- General Nazgrim
+					["coord"] = { 30.7, 10.2, 371 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(90329),	-- Garrosh's Vanguard Battleaxe
+						i(90336),	-- Gunship Armory Greataxe
+						i(90324),	-- Land Claimer's Cudgel
+						i(90322),	-- Parachute Cord Slicer
+						i(90323),	-- Spare Gunship Cannon
+						i(90326),	-- Sataff of Rolling Thunder
+						i(90325),	-- Staff of the Mist Navigator
+						i(90327),	-- Stormcaller's Warclub
+						i(90328),	-- Trench Medic's Staff
+					},
+				}),
+				q(31152, {	-- Peering Into the Past
+					["sourceQuests"] = { 31134 },	-- If These Stones Could Speak
+					["provider"] = { "n", 63217 },	-- Lorewalker Cho
+					["coord"] = { 30.8, 34.0, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(29755, {	-- Pei-Back
 					["sourceQuests"] = { 29754 },	-- To Bridge Earth and Sky
@@ -704,7 +949,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 54.0, 91.2, 371 },
 				}),
-				q(31739, {	-- Priorities!
+				q(31739, {	-- Priorities! (A)
 					["sourceQuests"] = {
 						31736,	-- Envoy of the Alliance
 						31737,	-- The Cost of War
@@ -712,6 +957,35 @@ _.Zones =
 					["provider"] = { "n", 64596 },	-- Teng Applebloom
 					["coord"] = { 46.1, 84.7, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31978, {	-- Priorities! (H1)
+					["sourceQuests"] = { 31769 },	-- The Final Blow!
+					["provider"] = { "n", 66662 },	-- Gi-Oh
+					["coord"] = { 31.9, 13.2, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31772, {	-- Priorities! (H2)
+					["sourceQuests"] = { 31769 },	-- The Final Blow!
+					["providers"] = {
+						{ "n", 66660 },	-- Ellie Honeypaw
+						{ "n", 66825 },	-- Ellie Honeypaw
+					},
+					["coord"] = { 30.5, 7.1, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31773, {	-- Prowler Problems
+					["sourceQuests"] = { 31769 },	-- The Final Blow!
+					["providers"] = {
+						{ "n", 66659 },	-- Sue-Ji the Tender
+						{ "n", 66838 },	-- Kai-Lin Honeydew
+						{ "n", 66841 },	-- Kai-Lin Honeydew
+						{ "n", 66853 },	-- Kai-Lin Honeydew
+					},
+					["coords"] = {
+						{ 32.0, 13.3, 371 },
+						{ 30.5, 7.4, 371 },
+					},
+					["races"] = HORDE_ONLY,
 				}),
 				q(29744, {	-- Pupil of Nature
 					["u"] = REMOVED_FROM_GAME,
@@ -738,6 +1012,20 @@ _.Zones =
 				q(29579, {	-- Rally the Survivors
 					["provider"] = { "n", 54697 },	-- Shao the Defiant
 					["coord"] = { 43.4, 75.9, 371 },
+				}),
+				q(29694, {	-- Regroup!
+					["sourceQuests"] = { 31769 },	-- The Final Blow!
+					["provider"] = { "n", 66656 },	-- General Nazgrim
+					["coord"] = { 33.6, 10.6, 371 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(90334),	-- Cannonball-Dented Shield
+						i(90335),	-- Hozen-Thunking Mace
+						i(90337),	-- Marine's Boarding Plank
+						i(90333),	-- Scavenged Rotor Blade
+						i(90330),	-- Smoldering Gunship Strut
+						i(90332),	-- Zin'jun's Dwarf-Cleaver
+					},
 				}),
 				q(30500, {	-- Residual Fallout
 					["sourceQuests"] = { 31303 },	-- The Seal is Broken
@@ -779,11 +1067,89 @@ _.Zones =
 					["coord"] = { 53.8, 61.8, 371 },
 					["isDaily"] = true,
 				}),
+				q(29730, {	-- Scouting Report: Hostile Natives
+					["sourceQuests"] = {
+						29939,	-- Boom Bait
+						31239,	-- What's in a Name Name?
+						29971,	-- The Scouts Return
+					},
+					["provider"] = { "n", 55648 },	-- Riko
+					["coord"] = { 28.6, 47.4, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(29824, {	-- Scouting Report: Like Jinyu in a Barrel
+					["sourceQuests"] = { 29823 },	-- Scouting Report: The Friend of My Enemy
+					["provider"] = { "n", 55647 },	-- Shokia
+					["coord"] = { 28.6, 47.3, 371 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(80768),	-- Moonwater Ring
+						i(80769),	-- Serpentspine Band
+						i(80770),	-- Lurking Tiger Band
+						i(80771),	-- Ring of Restoration
+						i(80772),	-- Blossoming Ring
+					},
+				}),
+				q(29731, {	-- Scouting Report: On the Right Track
+					["sourceQuests"] = { 29730 },	-- Scouting Report: Hostile Natives
+					["provider"] = { "n", 55646 },	-- Shademaster Kiryn
+					["coord"] = { 28.6, 47.4, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(29823, {	-- Scouting Report: The Friend of My Enemy
+					["sourceQuests"] = { 29731 },	-- Scouting Report: On the Right Track
+					["provider"] = { "n", 55648 },	-- Riko
+					["coord"] = { 28.6, 47.4, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(29804, {	-- Seein' Red
+					["sourceQuests"] = { 29765 },	-- Cryin' My Eyes Out
+					["providers"] = {
+						{ "n", 55403 },	-- Zin'Jun
+						{ "n", 55497 },	-- Zin'Jun
+						{ "n", 67153 },	-- Zin'Jun
+					},
+					["coord"] = { 31.1, 17.5, 371 },	-- zin'jun follows you around, but if you abandon the quest then you can find him here
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(90302),	-- Armored Chestpiece of Eminent Domain
+						i(90301),	-- Burnished Chestguard of Eminent Domain
+						i(90296),	-- Chain Armor of Eminent Domain
+						i(90303),	-- Heavy Chestpiece of Eminent Domain
+						i(90299),	-- Hide Tunic of Eminent Domain
+						i(90295),	-- Leather Tunic of Eminent Domain
+						i(90300),	-- Ringmail Armor of Eminent Domain
+						i(90298),	-- Stain Robe of Eminent Domain
+						i(90297),	-- Silk Robe of Eminent Domain
+					},
+				}),
 				q(29888, {	-- Seek Out the Lorewalker
 					["sourceQuests"] = { 29727 },	-- SI:7 Report: Take No Prisoners
 					["provider"] = { "n", 56222 },	-- Bold Karasshi
 					["coord"] = { 58.9, 81.7, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31774, {	-- Seeking Zin'jun
+					["sourceQuests"] = {
+						31771,	-- Face to Face With Consequence,
+						31773,	-- Prowler Problems
+						29694,	-- Regroup!
+						31770,	-- You're Either With Us Or...
+					},
+					["provider"] = { "n", 66845 },	-- Sergeant Gorrok
+					["coord"] = { 29.1, 13.7, 371 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(90319),	-- Landfall Burnished Greaves
+						i(90314),	-- Landfall Chain Boots
+						i(90313),	-- Landfall Leather Boots
+						i(90317),	-- Landfall Moccasins
+						i(90321),	-- Landfall Plate Boots
+						i(90318),	-- Landfall Sabatons
+						i(90316),	-- Landfall Satin Treads
+						i(90315),	-- Landfall Silk Treads
+						i(90320),	-- Landfall Warboots
+					},
 				}),
 				q(29995, {	-- Shrine of the Dawn
 					["sourceQuests"] = { 29993 },	-- Find the Boy
@@ -820,6 +1186,12 @@ _.Zones =
 						i(80771),	-- Ring of Restoration
 						i(80772),	-- Blossoming Ring
 					},
+				}),
+				q(29942, {	-- Silly Wikket, Slickies are for Hozen
+					["sourceQuests"] = { 29937 },	-- Furious Fowl
+					["provider"] = { "n", 56358 },	-- Eekle Eekle
+					["coord"] = { 27.0, 50.8, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(29748, {	-- Simulacrumble
 					["sourceQuests"] = { 29745 },	-- The Sprites' Plight
@@ -860,10 +1232,47 @@ _.Zones =
 						i(88709),	-- Bamboo Plate Gauntlets
 					},
 				}),
-				q(31392, {	-- Temple of the White Tiger
+				q(31121, {	-- Stay a While, and Listen
+					["sourceQuests"] = { 29822 },	-- Lay of the Land
+					["provider"] = { "n", 55768 },	-- Lorewalker Cho
+					["coord"] = { 27.5, 32.6, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31776, {	-- Strongarm Tactics
+					["sourceQuests"] = { 29804 },	-- Seein' Red
+					["provider"] = { "n", 65999 },	-- General Nazgrim
+					["coord"] = { 31.6, 21.9, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(30466, {	-- Sufficient Motivation
+					["sourceQuests"] = { 30000 },	-- The Jade Serpent
+					["provider"] = { "n", 57108 },	-- General Nazgrim
+					["coord"] = { 28.0, 47.1, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(29879, {	-- Swallowed Whole
+					["sourceQuests"] = { 31167 },	-- Family Tree
+					["provider"] = { "n", 63307 },	-- Lorewalker Cho
+					["coord"] = { 28.8, 32.6, 371 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31392, {	-- Temple of the White Tiger (A)
 					["provider"] = { "n", 55809 },	-- Peiji Goldendraft
 					["coord"] = { 45.7, 43.7, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31393, {	-- Temple of the White Tiger (H)
+				--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
+					["providers"] = {
+						{ "n", 55809 },	-- Peiji Goldendraft
+						{ "n", 63751 },	-- Farmhand Ko
+						{ "n", 64448 },	-- Hopsmaster Chang
+						{ "n", 64521 },	-- Wanderer Chu
+						{ "n", 66247 },	-- Tigermaster Liu-Do
+					},
+					["coord"] = { 45.7, 43.6, 371 },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(31737, {	-- The Cost of War
 					["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
@@ -876,6 +1285,17 @@ _.Zones =
 					["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
 					["coord"] = { 53.8, 61.8, 371 },
 					["isDaily"] = true,
+				}),
+				q(31779, {	-- The Darkness Within
+					["sourceQuests"] = {
+						31775,	-- Assault on the Airstrip
+						31777,	-- Choppertunity
+						31776,	-- Strongarm Tactics
+						31778,	-- Unreliable Allies
+					},
+					["provider"] = { "n", 65999 },	-- General Nazgrim
+					["coord"] = { 31.6, 21.9, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(29716, {	-- The Double Hozen Dare
 					["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
@@ -912,6 +1332,15 @@ _.Zones =
 						i(90341),	-- Peacebreaker's Satin Hood
 						i(90340),	-- Peacebreaker's Silk Cowl
 					},
+				}),
+				q(31769, {	-- The Final Blow!
+					["sourceQuests"] = {
+						31767,	-- Finish Them!
+						31768,	-- Fire is Always the Answer
+					},
+					["provider"] = { "n", 66646 },	-- General Nazgrim
+					["coord"] = { 34.7, 10.6, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(29620, {	-- The Great Banquet
 					["sourceQuests"] = { 29619 },	-- A Courteous Guest
@@ -1012,10 +1441,17 @@ _.Zones =
 						i(90349),	-- Silk Robe of Eminent Domain
 					},
 				}),
-				q(31254, {	-- The Road to Kun-Lai
+				q(31254, {	-- The Road to Kun-Lai (A)
 					["sourceQuests"] = { 49559 },	-- Hero's Call: Kun-Lai Summit!
 					["provider"] = { "n", 63778 },	-- Messenger Grummle
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31255, {	-- The Road to Kun-Lai (H)
+				--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
+					["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
+					["provider"] = { "n", 63778 },	-- Messenger Grummle
+					["coord"] = { 45.7, 43.8, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(29637, {	-- The Rumpus
 					["sourceQuests"] = { 29636 },	-- A Test of Endurance
@@ -1033,6 +1469,16 @@ _.Zones =
 						i(84259),	-- Regal Shortblade
 						i(84260),	-- Mace of Serenity
 					},
+				}),
+				q(29971, {	-- The Scouts Return
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						29939,	-- Boom Bait
+						31239,	-- What's in a Name Name?
+					},
+					["provider"] = { "n", 56406 },	-- Rivett Clutchpop
+					["coord"] = { 27.2, 50.7, 371 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(29997, {	-- The Scryer's Dilemma
 					["sourceQuests"] = { 29932 },	-- The Temple of the Jade Serpent
@@ -1349,10 +1795,6 @@ _.Zones =
 						recipe(127481),	-- Inscribed Monument
 					},
 				}),
-				q(30567, {	-- Blanche's Boomer Brew
-					["provider"] = { "n", 59569 },	-- Brewmaster Blanche
-					["coord"] = { 38.8, 31.1, 371 },
-				}),
 				q(30145, {	-- Flight Training: Full Speed Ahead
 					["provider"] = { "n", 58420 },	-- Instructor Windblade
 					["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
@@ -1374,11 +1816,6 @@ _.Zones =
 						recipe(127475),	-- Incarnadine Ink
 					},
 				}),
---------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------
 				q(31709, {	-- Lingering Doubt
 					["provider"] = { "n", 58508 },	-- Big Bao
 					["isDaily"] = true,
@@ -1448,451 +1885,6 @@ _.Zones =
 				}),
 				q(30143, {	-- They Grow Like Weeds
 					["provider"] = { "n", 58564 },	-- Elder Anli
-				}),
-				
-				
-				
-				q(29941, {	-- Beyond the Horizon
-					["sourceQuests"] = { 29936 },	-- Instant Messaging
-					["provider"] = { "n", 56339 },	-- General Nazgrim
-					["coord"] = { 28.2, 47.7, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29939, {	-- Boom Bait
-					["sourceQuests"] = { 29937 },	-- Furious Fowl
-					["provider"] = { "n", 56406 },	-- Rivett Clutchpop
-					["coord"] = { 27.2, 50.7, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29967, {	-- Boom Goes the Doonamite!
-					["sourceQuests"] = { 29968 },	-- Green-ish Energy
-					["provider"] = { "n", 56406 },	-- Rivett Clutchpop
-					["coord"] = { 27.2, 50.7, 371 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(80788),	-- Jinyu Meditation Staff
-						i(80789),	-- Jinyu Divining Rod
-						i(80790),	-- Jinyu Combat Staff
-						i(80791),	-- Jinyu Greatsword
-						i(80792),	-- Jinyu Handaxe
-						i(80793),	-- Jinyu Crossbow
-						i(80794),	-- Jinyu Battleaxe
-						i(80795),	-- Jinyu Ritual Scepter
-						i(80796),	-- Jinyu Dagger
-						i(80797),	-- Jinyu Combat Mace
-					},
-				}),
-				q(29966, {	-- Burning Down the House
-					["sourceQuests"] = { 29943 },	-- Guerrillas in our Midst
-					["provider"] = { "n", 56339 },	-- General Nazgrim
-					["coord"] = { 30.2, 53.1, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31261, {	-- Captain Jack's Dead
-					["provider"] = { "i", 85783 },	-- Captain Jack's Head
-					["coord"] = { 30.8, 41.3, 371 },
-					["races"] = HORDE_ONLY,
-					["cr"] = 63809,	-- Jack Arrow
-				}),
-				q(31777, {	-- Choppertunity
-					["sourceQuests"] = { 29804 },	-- Seein' Red
-					["provider"] = { "n", 55521 },	-- Rivett Clutchpop
-					["coord"] = { 31.1, 21.5, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29765, {	-- Cryin' My Eyes Out
-					["sourceQuests"] = { 31774 },	-- Seeking Zin'jun
-					["provider"] = { "n", 55403 },	-- Zin'Jun
-					["coord"] = { 31.1, 17.5, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(30015, {	-- Dawn's Blossom
-					["sourceQuests"] = { 29967 },	-- Boom Goes the Doonamite!
-					["provider"] = { "n", 56339 },	-- General Nazgrim
-					["coord"] = { 28.6, 47.5, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(30504, {	-- Emergency Response
-					["sourceQuests"] = { 31303 },	-- The Seal is Broken
-					["provider"] = { "n", 59418 },	-- Lorewalker Cho
-					["coord"] = { 49.2, 61.4, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31771, {	-- Face to Face With Consequence
-					["sourceQuests"] = { 31769 }, -- The Final Blow!
-					["provider"] = { "n", 66657 },	-- Taran Zhu
-					["coord"] = { 33.7, 10.6, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31167, {	-- Family Tree
-					["sourceQuests"] = { 31152 },	-- Peering Into the Past
-					["provider"] = { "n", 63307 },	-- Lorewalker Cho
-					["coord"] = { 28.8, 32.6, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31767, {	-- Finish Them!
-					["sourceQuests"] = { 31766 },	-- Touching Ground
-					["provider"] = { "n", 66190 },	-- General Nazgrim
-					["coord"] = { 31.6, 11.3, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31768, {	-- Fire Is Always the Answer
-					["sourceQuests"] = { 31766 },	-- Touching Ground
-					["provider"] = { "n", 66190 },	-- General Nazgrim
-					["coord"] = { 31.6, 11.3, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29815, {	-- Forensic Science
-					["sourceQuests"] = { 31999 },	-- Nazgrim's Command
-					["provider"] = { "n", 55180 },	-- Shademaster Kiryn
-					["coord"] = { 28.1, 24.8, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29937, {	-- Furious Fowl
-					["sourceQuests"] = { 29941 },	-- Beyond the Horizon
-					["provider"] = { "n", 56406 },	-- Rivett Clutchpop
-					["coord"] = { 28.2, 47.7, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(30484, {	-- Gauging Our Progress
-					["sourceQuests"] = {
-						30499,	-- Get Back Here!
-						30000,	-- The Jade Serpent
-					},
-					["provider"] = { "n", 57108 },	-- General Nazgrim
-					["coord"] = { 28.0, 47.1, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(30499, {	-- Get Back Here!
-					["isBreadcrumb"] = true,
-					["sourceQuests"] = { 30000 },	-- The Jade Serpent
-					["provider"] = { "n", 57242 },	-- Elder Sage Wind-Yi
-					["coord"] = { 55.8, 57.0, 371 },
-					["races"] = HORDE_ONLY,
-					["cost"] = { { "i", 86067, 1 }, },	-- Horde Missive
-				}),
-				q(29968, {	-- Green-ish Energy
-					["sourceQuests"] = { 29824 },	-- Scouting Report: Like Jinyu in a Barrel
-					["provider"] = { "n", 56406 },	-- Rivett Clutchpop
-					["coord"] = { 30.7, 52.2, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29943, {	-- Guerrillas in our Midst
-					["sourceQuests"] = { 29824 },	-- Scouting Report: Like Jinyu in a Barrel
-					["provider"] = { "n", 56339 },	-- General Nazgrim
-					["coord"] = { 28.6, 47.5, 371 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(80749),	-- Ambermist Cuffs
-						i(80750),	-- Blackthicket Bindings
-						i(80751),	-- Jade Witch Wristguards
-						i(80752),	-- Glass Lake Bracers
-						i(80753),	-- Silkwood Cuffs
-						i(80754),	-- Deepwoods Armwraps
-						i(80755),	-- Fox Grove Wristguards
-						i(80756),	-- Thunderwood Armplates
-						i(80757),	-- Jade Tiger Armplates
-					},
-				}),
-				q(31134, {	-- If These Stones Could Speak
-					["sourceQuests"] = { 31132 },	-- A Mile in my Shoes
-					["provider"] = { "n", 63217 },	-- Lorewalker Cho
-					["coord"] = { 30.8, 34.0, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29936, {	-- Instant Messaging
-					["sourceQuests"] = { 29935 },	-- Orders are Orders
-					["provider"] = { "n", 56336 },	-- Chief Kah Kah
-					["coord"] = { 27.9, 47.1, 371 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(80763),	-- Friendship Ring
-						i(80764),	-- Band of Acceptance
-						i(80765),	-- Friendly Gift Band
-						i(80766),	-- Band of Flair
-						i(80767),	-- Band of Finding
-					},
-				}),
-				q(29924, {	-- Kill Kher Shan
-					["sourceQuests"] = { 29879 },	-- Swallowed Whole
-					["provider"] = { "n", 56327 },	-- Nibi Nibi
-					["coord"] = { 25.9, 38.7, 371 },
-					["races"] = HORDE_ONLY,
-					["minReputation"] = { 1228, FRIENDLY },
-				}),
-				q(30485, {	-- Last Piece of the Puzzle
-					["sourceQuests"] = {
-						30484,	-- Gauging Our Progress
-						30466,	-- Sufficient Motivation
-					},
-					["provider"] = { "n", 59377 },	-- Lorewalker Cho
-					["coord"] = { 28.2, 46.7, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29822, {	-- Lay of the Land
-					["sourceQuests"] = { 29827 },	-- Acid Rain
-					["provider"] = { "n", 55172 },	-- General Nazgrim
-					["coord"] = { 28.4, 24.9, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29821, {	-- Missed Me By... That Much!
-					["sourceQuests"] = { 31999 },	-- Nazgrim's Command
-					["provider"] = { "n", 55521 },	-- Rivett Clutchpop
-					["coord"] = { 28.1, 24.7, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29743, {	-- Monstrosity
-					["sourceQuests"] = { 31774 },	-- Seeking Zin'jun
-					["provider"] = { "o", 212181 },	-- Ancient Statue
-					["coord"] = { 30.8, 17.4, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31999, {	-- Nazgrim's Command
-					["sourceQuests"] = { 31779 },	-- The Darkness Within
-					["provider"] = { "o", 215844 },	-- Flagpole
-					["coord"] = { 27.5, 24.2, 371 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(90293),	-- Peacebreaker's Armored Helm
-						i(90292),	-- Peacebreaker's Burnished Headcover
-						i(90290),	-- Peacebreaker's Chain Helm
-						i(90294),	-- Peacebreaker's Heavy Helm
-						i(90287),	-- Peacebreaker's Hide Helm
-						i(90285),	-- Peacebreaker's Leather Helm
-						i(90286),	-- Peacebreaker's Ringmail Helm
-						i(90288),	-- Peacebreaker's Satin Cowl
-						i(90289),	-- Peacebreaker's Silk Cowl
-					},
-				}),
-				q(29935, {	-- Orders are Orders
-					["sourceQuests"] = { 29879 },	-- Swallowed Whole
-					["provider"] = { "n", 56313 },	-- Tooki Tooki
-					["coord"] = { 26.2, 37.3, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31765, {	-- Paint it Red!
-					["sourceQuests"] = { 29690 },	-- Into the Mists
-					["provider"] = { "n", 55135 },	-- General Nazgrim
-					["coord"] = { 30.7, 10.2, 371 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(90329),	-- Garrosh's Vanguard Battleaxe
-						i(90336),	-- Gunship Armory Greataxe
-						i(90324),	-- Land Claimer's Cudgel
-						i(90322),	-- Parachute Cord Slicer
-						i(90323),	-- Spare Gunship Cannon
-						i(90326),	-- Sataff of Rolling Thunder
-						i(90325),	-- Staff of the Mist Navigator
-						i(90327),	-- Stormcaller's Warclub
-						i(90328),	-- Trench Medic's Staff
-					},
-				}),
-				q(31152, {	-- Peering Into the Past
-					["sourceQuests"] = { 31134 },	-- If These Stones Could Speak
-					["provider"] = { "n", 63217 },	-- Lorewalker Cho
-					["coord"] = { 30.8, 34.0, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31978, {	-- Priorities!
-					["sourceQuests"] = { 31769 },	-- The Final Blow!
-					["provider"] = { "n", 66662 },	-- Gi-Oh
-					["coord"] = { 31.9, 13.2, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31772, {	-- Priorities!
-					["sourceQuests"] = { 31769 },	-- The Final Blow!
-					["providers"] = {
-						{ "n", 66660 },	-- Ellie Honeypaw
-						{ "n", 66825 },	-- Ellie Honeypaw
-					},
-					["coord"] = { 30.5, 7.1, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31773, {	-- Prowler Problems
-					["sourceQuests"] = { 31769 },	-- The Final Blow!
-					["providers"] = {
-						{ "n", 66659 },	-- Sue-Ji the Tender
-						{ "n", 66838 },	-- Kai-Lin Honeydew
-						{ "n", 66841 },	-- Kai-Lin Honeydew
-						{ "n", 66853 },	-- Kai-Lin Honeydew
-					},
-					["coords"] = {
-						{ 32.0, 13.3, 371 },
-						{ 30.5, 7.4, 371 },
-					},
-					["races"] = HORDE_ONLY,
-				}),
-				q(29694, {	-- Regroup!
-					["sourceQuests"] = { 31769 },	-- The Final Blow!
-					["provider"] = { "n", 66656 },	-- General Nazgrim
-					["coord"] = { 33.6, 10.6, 371 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(90334),	-- Cannonball-Dented Shield
-						i(90335),	-- Hozen-Thunking Mace
-						i(90337),	-- Marine's Boarding Plank
-						i(90333),	-- Scavenged Rotor Blade
-						i(90330),	-- Smoldering Gunship Strut
-						i(90332),	-- Zin'jun's Dwarf-Cleaver
-					},
-				}),
-				q(29730, {	-- Scouting Report: Hostile Natives
-					["sourceQuests"] = {
-						29939,	-- Boom Bait
-						31239,	-- What's in a Name Name?
-						29971,	-- The Scouts Return
-					},
-					["provider"] = { "n", 55648 },	-- Riko
-					["coord"] = { 28.6, 47.4, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29824, {	-- Scouting Report: Like Jinyu in a Barrel
-					["sourceQuests"] = { 29823 },	-- Scouting Report: The Friend of My Enemy
-					["provider"] = { "n", 55647 },	-- Shokia
-					["coord"] = { 28.6, 47.3, 371 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(80768),	-- Moonwater Ring
-						i(80769),	-- Serpentspine Band
-						i(80770),	-- Lurking Tiger Band
-						i(80771),	-- Ring of Restoration
-						i(80772),	-- Blossoming Ring
-					},
-				}),
-				q(29731, {	-- Scouting Report: On the Right Track
-					["sourceQuests"] = { 29730 },	-- Scouting Report: Hostile Natives
-					["provider"] = { "n", 55646 },	-- Shademaster Kiryn
-					["coord"] = { 28.6, 47.4, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29823, {	-- Scouting Report: The Friend of My Enemy
-					["sourceQuests"] = { 29731 },	-- Scouting Report: On the Right Track
-					["provider"] = { "n", 55648 },	-- Riko
-					["coord"] = { 28.6, 47.4, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29804, {	-- Seein' Red
-					["sourceQuests"] = { 29765 },	-- Cryin' My Eyes Out
-					["providers"] = {
-						{ "n", 55403 },	-- Zin'Jun
-						{ "n", 55497 },	-- Zin'Jun
-						{ "n", 67153 },	-- Zin'Jun
-					},
-					["coord"] = { 31.1, 17.5, 371 },	-- zin'jun follows you around, but if you abandon the quest then you can find him here
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(90302),	-- Armored Chestpiece of Eminent Domain
-						i(90301),	-- Burnished Chestguard of Eminent Domain
-						i(90296),	-- Chain Armor of Eminent Domain
-						i(90303),	-- Heavy Chestpiece of Eminent Domain
-						i(90299),	-- Hide Tunic of Eminent Domain
-						i(90295),	-- Leather Tunic of Eminent Domain
-						i(90300),	-- Ringmail Armor of Eminent Domain
-						i(90298),	-- Stain Robe of Eminent Domain
-						i(90297),	-- Silk Robe of Eminent Domain
-					},
-				}),
-				q(31774, {	-- Seeking Zin'jun
-					["sourceQuests"] = {
-						31771,	-- Face to Face With Consequence,
-						31773,	-- Prowler Problems
-						29694,	-- Regroup!
-						31770,	-- You're Either With Us Or...
-					},
-					["provider"] = { "n", 66845 },	-- Sergeant Gorrok
-					["coord"] = { 29.1, 13.7, 371 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(90319),	-- Landfall Burnished Greaves
-						i(90314),	-- Landfall Chain Boots
-						i(90313),	-- Landfall Leather Boots
-						i(90317),	-- Landfall Moccasins
-						i(90321),	-- Landfall Plate Boots
-						i(90318),	-- Landfall Sabatons
-						i(90316),	-- Landfall Satin Treads
-						i(90315),	-- Landfall Silk Treads
-						i(90320),	-- Landfall Warboots
-					},
-				}),
-				q(29942, {	-- Silly Wikket, Slickies are for Hozen
-					["sourceQuests"] = { 29937 },	-- Furious Fowl
-					["provider"] = { "n", 56358 },	-- Eekle Eekle
-					["coord"] = { 27.0, 50.8, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31121, {	-- Stay a While, and Listen
-					["sourceQuests"] = { 29822 },	-- Lay of the Land
-					["provider"] = { "n", 55768 },	-- Lorewalker Cho
-					["coord"] = { 27.5, 32.6, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31776, {	-- Strongarm Tactics
-					["sourceQuests"] = { 29804 },	-- Seein' Red
-					["provider"] = { "n", 65999 },	-- General Nazgrim
-					["coord"] = { 31.6, 21.9, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(30466, {	-- Sufficient Motivation
-					["sourceQuests"] = { 30000 },	-- The Jade Serpent
-					["provider"] = { "n", 57108 },	-- General Nazgrim
-					["coord"] = { 28.0, 47.1, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29879, {	-- Swallowed Whole
-					["sourceQuests"] = { 31167 },	-- Family Tree
-					["provider"] = { "n", 63307 },	-- Lorewalker Cho
-					["coord"] = { 28.8, 32.6, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31393, {	-- Temple of the White Tiger
-				--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
-					["providers"] = {
-						{ "n", 55809 },	-- Peiji Goldendraft
-						{ "n", 63751 },	-- Farmhand Ko
-						{ "n", 64448 },	-- Hopsmaster Chang
-						{ "n", 64521 },	-- Wanderer Chu
-						{ "n", 66247 },	-- Tigermaster Liu-Do
-					},
-					["coord"] = { 45.7, 43.6, 371 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(31779, {	-- The Darkness Within
-					["sourceQuests"] = {
-						31775,	-- Assault on the Airstrip
-						31777,	-- Choppertunity
-						31776,	-- Strongarm Tactics
-						31778,	-- Unreliable Allies
-					},
-					["provider"] = { "n", 65999 },	-- General Nazgrim
-					["coord"] = { 31.6, 21.9, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31769, {	-- The Final Blow!
-					["sourceQuests"] = {
-						31767,	-- Finish Them!
-						31768,	-- Fire is Always the Answer
-					},
-					["provider"] = { "n", 66646 },	-- General Nazgrim
-					["coord"] = { 34.7, 10.6, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31255, {	-- The Road to Kun-Lai
-				--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
-					["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
-					["provider"] = { "n", 63778 },	-- Messenger Grummle
-					["coord"] = { 45.7, 43.8, 371 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(29971, {	-- The Scouts Return
-					["sourceQuests"] = {
-						29939,	-- Boom Bait
-						31239,	-- What's in a Name Name?
-					},
-					["provider"] = { "n", 56406 },	-- Rivett Clutchpop
-					["coord"] = { 27.2, 50.7, 371 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
 				}),
 			}),
 		}),
