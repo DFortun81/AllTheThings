@@ -1055,12 +1055,6 @@ _.Zones =
 					["coord"] = { 65.9, 79.3, 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(31714, {	-- Saving the Serpents
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 58511 },	-- Qua-Ro Whitebrow
-					["coord"] = { 57.2, 43.6, 371 },
-					["isDaily"] = true,
-				}),
 				q(30064, {	-- Saving the Sutras
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 57319 },	-- Elder Sage Storm-Sing
@@ -1795,18 +1789,6 @@ _.Zones =
 						recipe(127481),	-- Inscribed Monument
 					},
 				}),
-				q(30145, {	-- Flight Training: Full Speed Ahead
-					["provider"] = { "n", 58420 },	-- Instructor Windblade
-					["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
-				}),
-				q(30187, {	-- Flight Training: In Due Course
-					["provider"] = { "n", 58420 },	-- Instructor Windblade
-					["sourceQuests"] = { 30145 },	-- Flight Training: Full Speed Ahead
-				}),
-				q(30144, {	-- Flight Training: Ring Round-Up
-					["provider"] = { "n", 58420 },	-- Instructor Windblade
-					["sourceQuests"] = { 30143 },	-- They Grow Like Weeds
-				}),
 				q(31542, {	-- Incarnadine Ink
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 					["races"] = ALLIANCE_ONLY,
@@ -1882,9 +1864,6 @@ _.Zones =
 				q(30152, {	-- The Sky Race
 					["provider"] = { "n", 58420 },	-- Instructor Windblade
 					["isDaily"] = true;
-				}),
-				q(30143, {	-- They Grow Like Weeds
-					["provider"] = { "n", 58564 },	-- Elder Anli
 				}),
 			}),
 		}),

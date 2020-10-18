@@ -15,7 +15,6 @@ _.Zones =
 					-- verify if the following dailies are removed:
 						-- Tiny Treats (31710)
 						-- Serpent's Scale (31708)
-						-- Monkey Mischief (31712)
 					-- verify if the following dailies exist independent of completion of other dailies:
 						-- Pooped (31716), got credit for this + the 31704 version of "Pooped" when completing 30150, "Sweet as Honey"
 				
@@ -101,6 +100,24 @@ _.Zones =
 							},
 							["isDaily"] = true,
 						}),
+						q(30145, {	-- Flight Training: Full Speed Ahead
+							["minReputation"] = { 1271, REVERED },
+							["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
+							["provider"] = { "n", 58420 },	-- Instructor Windblade
+							["coord"] = { 58.5, 43.7, 371 },
+						}),
+						q(30187, {	-- Flight Training: In Due Course
+							["minReputation"] = { 1271, REVERED },
+							["sourceQuests"] = { 30145 },	-- Flight Training: Full Speed Ahead
+							["provider"] = { "n", 58420 },	-- Instructor Windblade
+							["coord"] = { 58.5, 43.7, 371 },
+						}),
+						q(30144, {	-- Flight Training: Ring Round-Up
+							["minReputation"] = { 1271, REVERED },
+							["sourceQuests"] = { 30143 },	-- They Grow Like Weeds
+							["provider"] = { "n", 58420 },	-- Instructor Windblade
+							["coord"] = { 58.5, 43.7, 371 },
+						}),
 						q(30147, {	-- Fragments of the Past
 							["minReputation"] = { 1271, HONORED },
 							["sourceQuests"] = { 30142 },	-- It's A...
@@ -131,12 +148,11 @@ _.Zones =
 							["isDaily"] = true,
 						}),
 						q(31712, {	-- Monkey Mischief
-							["minReputation"] = { 1271, HONORED },
-							["sourceQuests"] = { 30142 },	-- It's A...
+							["minReputation"] = { 1271, REVERED },	-- was not available at Honored.  as soon as i hit Revered and did the questline ending in Flight Training: In Due Course, this daily popped up
+							["sourceQuests"] = { 30187 },	-- Flight Training: In Due Course
 							["provider"] = { "n", 58228 },	-- Instructor Skythorn <Serpent Master>
 							["isDaily"] = true,
 							["coord"] = { 57.6, 45.0, 371 },
-							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(31705, {	-- Needle Me Not
 							["minReputation"] = { 1271, HONORED },
@@ -185,6 +201,13 @@ _.Zones =
 							["isDaily"] = true,
 							["coord"] = { 57.5, 45.1, 371 },
 						}),
+						q(31714, {	-- Saving the Serpents
+							["minReputation"] = { 1271, REVERED },
+							["sourceQuests"] = { 30187 },	-- Flight Training: In Due Course
+							["provider"] = { "n", 58511 },	-- Qua-Ro Whitebrow
+							["isDaily"] = true,
+							["coord"] = { 57.2, 43.6, 371 },
+						}),
 						q(31708, {	-- Serpent's Scale
 							["minReputation"] = { 1271, HONORED },
 							["sourceQuests"] = { 30142 },	-- It's A...
@@ -231,10 +254,11 @@ _.Zones =
 							["isDaily"] = true,
 						}),
 						q(31715, {	-- The Big Kah-Oona
-							["minReputation"] = { 1271, HONORED },
-							["sourceQuests"] = { 30142 },	-- It's A...
+							["minReputation"] = { 1271, REVERED },	-- was not available at Honored.  as soon as i hit Revered and did the questline ending in Flight Training: In Due Course, this daily popped up
+							["sourceQuests"] = { 30187 },	-- Flight Training: In Due Course
 							["provider"] = { "n", 58564 },	-- Elder Anli
 							["isDaily"] = true,
+							["coord"] = { 57.5, 44.9, 371 },
 						}),
 						q(30154, {	-- The Easiest Way To A Serpent's Heart
 							["minReputation"] = { 1271, HONORED },
@@ -281,6 +305,12 @@ _.Zones =
 							["sourceQuests"] = { 30142 },	-- It's A...
 							["provider"] = { "n", 58509 },	-- Ningna Darkwheel
 							["isDaily"] = true,
+						}),
+						q(30143, {	-- They Grow Like Weeds
+							["minReputation"] = { 1271, REVERED },
+							["sourceQuests"] = { 30142 },	-- It's A...
+							["provider"] = { "n", 58564 },	-- Elder Anli
+							["coord"] = { 57.6, 44.9, 371 },
 						}),
 						q(31698, {	-- Thinning The Pack
 							["minReputation"] = { 1271, HONORED },
