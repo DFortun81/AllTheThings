@@ -847,6 +847,7 @@ _.Zones =
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 79.0, 69.8, 84 },
 					["sourceQuests"] = {
+						58910,	-- What's Your Specialty?
 						59586,	-- What's Your Specialty?
 						59587,	-- What's Your Specialty?
 						59588,	-- What's Your Specialty?
@@ -1468,14 +1469,14 @@ _.Zones =
 					["lvl"] = 85,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(46727, {	-- Tides of War
+				q(46727, {	-- Tides of War (BfA version, may be removed now)
 					["provider"] = { "n", 142930 },	-- Halford Wyrmbane
 					["coord"] = { 27.6, 21.2 },
 					["sourceQuest"] = 51403,	-- The Speaker's Imperative
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
-				q(58983, {	-- Tides of War
+				q(58983, {	-- Tides of War (Shadowlands version)
 					["provider"] = { "n", 163219 },	-- Captain Garrick
 					["coord"] = { 85.2, 32.1, 84 },
 					["sourceQuest"] = 58912,	-- An Urgent Meeting
@@ -1589,6 +1590,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 154169 },	-- Captain Garrick
 					["sourceQuest"] = 55991,	-- An End to Beginnings
+				}),
+				q(58910, {	-- What's Your Specialty? (Druid)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
 				}),
 				q(59586, {	-- What's Your Specialty? (Hunter)
 					["provider"] = { "n", 163097 },	-- Lindle Springstock

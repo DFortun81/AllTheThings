@@ -1022,6 +1022,12 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(22108)),	-- Feralheart Bracers
 					},
 				}),
+				q(60360, {	-- An Urgent Meeting
+					["provider"] = { "n", 168771 },	-- Shuja Grimaxe
+					["coord"] = { 70.9, 49.6, 85 },
+					["sourceQuest"] = 60359,	-- Home Is Where the Hearth Is
+					["races"] = HORDE_ONLY,
+				}),
 				q(936,   {	-- Assisting Arch Druid Runetotem
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -1174,6 +1180,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 15,
 				}),
+				q(60344, {	-- Finding Your Way (H)
+					["coord"] = { 51.9, 85.4, 85 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 168441 },	-- Cork Fizzlepop
+					["sourceQuest"] = 60343,	-- Welcome to Orgrimmar
+				}),
 				q(26804, {	-- Flight to Razor Hill
 					["provider"] = { "n", 3310 },	-- Doras
 					["coord"] = { 49.4, 59.2, 85 },
@@ -1239,6 +1251,22 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(15443)),	-- Kris of Orgrimmar
 						un(REMOVED_FROM_GAME, i(15444)),	-- Staff of Ogrimmar
 					},
+				}),
+				q(60359, {	-- Home Is Where the Hearth Is
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["sourceQuests"] = {
+						60346,	-- What's Your Specialty?
+						60347,	-- What's Your Specialty?
+						60348,	-- What's Your Specialty?
+						60349,	-- What's Your Specialty?
+						60350,	-- What's Your Specialty?
+						60351,	-- What's Your Specialty?
+						60352,	-- What's Your Specialty?
+						60353,	-- What's Your Specialty?
+						60355,	-- What's Your Specialty?
+						60357,	-- What's Your Specialty?
+					},
+					["races"] = HORDE_ONLY,
 				}),
 				q(53372, {	-- Hour of Reckoning
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
@@ -1454,6 +1482,15 @@ _.Zones =
 					["DisablePartySync"] = true,
 					["lvl"] = 20,
 				}),
+				q(60345, {	-- License to Ride
+					["provider"] = { "n", 168540 },	-- Rohaka Tuskmaul
+					["coord"] = { 61.5, 32.9, 85 },
+					["sourceQuest"] = 60344,	-- Finding Your Way (H)
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(13331),	-- Red Skeletal Horse
+					},
+				}),
 				q(32471, {	-- Light Camera Action
 					["provider"] = { "n", 16926 },	-- Vivica Starshot
 					["lvl"] = 15,
@@ -1504,10 +1541,16 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				q(51443, {	-- Mission Statement
+				q(51443, {	-- Mission Statement (BfA version, may be removed now)
 					["provider"] = { "n", 140176 },	-- Nathanos Blightcaller
 					["coord"] = { 48.9, 91.4, 85 },
 					["sourceQuest"] = 53031,	-- The Speaker's Imperative
+					["races"] = HORDE_ONLY,
+				}),
+				q(58983, {	-- Mission Statement (Shadowlands version)
+					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
+					["coord"] = { 48.3, 71.4, 85 },
+					["sourceQuest"] = 60360,	-- An Urgent Meeting
 					["races"] = HORDE_ONLY,
 				}),
 				q(26803, {	-- Missing Reports
@@ -2180,6 +2223,82 @@ _.Zones =
 						i(65648),	-- Headguard of the Order
 						i(25549),	-- Blood Knight Tabard
 					},
+				}),
+				q(60343, {	-- Welcome to Orgrimmar
+					["coord"] = { 52.5, 88.0, 85 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
+					["sourceQuest"] = 59985,	-- An End to Beginnings (H)
+				}),
+				q(60346, {	-- What's Your Specialty? (Druid)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+				}),
+				q(60347, {	-- What's Your Specialty? (Hunter)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["classes"] = { HUNTER },
+				}),
+				q(60348, {	-- What's Your Specialty? (Mage)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["classes"] = { MAGE },
+				}),
+				q(60349, {	-- What's Your Specialty? (Monk)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["classes"] = { MONK },
+				}),
+				q(60350, {	-- What's Your Specialty? (Paladin)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["classes"] = { PALADIN },
+				}),
+				q(60351, {	-- What's Your Specialty? (Priest)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["classes"] = { PRIEST },
+				}),
+				q(60352, {	-- What's Your Specialty? (Rogue)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["classes"] = { ROGUE },
+				}),
+				q(60353, {	-- What's Your Specialty? (Shaman)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+				}),
+				q(60355, {	-- What's Your Specialty? (Warlock)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARLOCK },
+				}),
+				q(60357, {	-- What's Your Specialty? (Warrior)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
 				}),
 				q(26324, {	-- Where Is My Warfleet?
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang

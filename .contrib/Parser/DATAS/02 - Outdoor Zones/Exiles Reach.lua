@@ -526,12 +526,6 @@ _.Zones =
 					["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59930,	-- Emergency First Aid
 				}),
-				q(60344, {	-- Finding Your Way (H)
-					["coord"] = { 51.9, 85.4, 85 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 168441 },	-- Cork Fizzlepop
-					["sourceQuest"] = 60343,	-- Welcome to Orgrimmar
-				}),
 				q(55184, {	-- Forbidden Quilboar Necromancy (A)
 					["coord"] = { 62.7, 69.8, 1409 },
 					["races"] = ALLIANCE_ONLY,
@@ -914,12 +908,6 @@ _.Zones =
 				q(59926, {	-- Warming Up (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166573 },	-- Warlord Breka Grimaxe
-				}),
-				q(60343, {	-- Welcome to Orgrimmar
-					["coord"] = { 52.5, 88.0, 85 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
-					["sourceQuest"] = 59985,	-- An End to Beginnings
 				}),
 				q(55965, {	-- Westward Bound (A)
 					["coord"] = { 53.0, 55.0, 1409 },
