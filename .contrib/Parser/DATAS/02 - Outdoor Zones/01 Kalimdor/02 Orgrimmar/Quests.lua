@@ -876,6 +876,12 @@ _.Zones =
 						i(65474),	-- Greatsword of the Sunwalker
 					},
 				}),
+				q(62568, {	-- Adventurers Wanted: Chromie's Call
+					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
+					["coord"] = { 48.3, 71.4, 85 },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+				}),
 				q(809,   {	-- Ak'Zeloth
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

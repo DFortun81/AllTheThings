@@ -551,6 +551,10 @@ _.Zones =
 						i(65465),	-- Crossbow of the Crown
 					},
 				}),
+				q(62567, {	-- Adventurers Wanted: Chromie's Call
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(11451, {	-- Alicia's Poem
 					["provider"] = { "n", 24729 },	-- Alicia
 					["coord"] = { 81.6, 28.2, 84 },
