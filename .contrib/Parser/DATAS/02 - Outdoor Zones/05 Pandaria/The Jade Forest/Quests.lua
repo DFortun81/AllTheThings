@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(424, {	-- Pandaria
-		m(371, { -- The Jade Forest
+		m(371, {	-- The Jade Forest
 			n(QUESTS, {
 				q(29619, {	-- A Courteous Guest
 					["sourceQuests"] = { 29618 } ,	-- The High Elder
@@ -1268,6 +1268,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				q(29933, {	-- The Bees' Knees
+					["minReputation"] = { 1228, FRIENDLY },
+					["sourceQuests"] = { 29879 },	-- Swallowed Whole
+					["provider"] = { "n", 56351 },	-- Bo Bo
+					["coord"] = { 25.8, 37.9, 371 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(31737, {	-- The Cost of War
 					["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
 					["provider"] = { "n", 54617 },	-- Rell Nightwind
@@ -1539,36 +1546,6 @@ _.Zones =
 					["provider"] = { "n", 59178 },	-- Lo Wanderbrew
 					["coord"] = { 46.6, 45.3, 371 },
 				}),
-				q(31717, {	-- The Trainer's Challenge: Ace Longpaw
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
-					["coord"] = { 57.6, 44.8, 371 },
-					["isDaily"] = true,
-				}),
-				q(31718, {	-- The Trainer's Challenge: Big Bao
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
-					["coord"] = { 57.6, 44.8, 371 },
-					["isDaily"] = true,
-				}),
-				q(31719, {	-- The Trainer's Challenge: Ningna Darkwheel
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
-					["coord"] = { 57.6, 44.8, 371 },
-					["isDaily"] = true,
-				}),
-				q(31721, {	-- The Trainer's Challenge: Qua-Ro Whitebrow
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
-					["coord"] = { 57.6, 44.8, 371 },
-					["isDaily"] = true,
-				}),
-				q(31720, {	-- The Trainer's Challenge: Suchi the Sweet
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
-					["coord"] = { 57.6, 44.8, 371 },
-					["isDaily"] = true,
-				}),
 				q(29752, {	-- The Wayward Dead
 					["sourceQuests"] = { 29749 },	-- An Urgent Plea
 					["provider"] = { "n", 55614 },	-- Pei-Zhi
@@ -1763,107 +1740,6 @@ _.Zones =
 					["sourceQuests"] = { 29632 },	-- Becoming Battle-Ready
 					["provider"] = { "n", 54922 },	-- Master Stone Fist
 					["coord"] = { 43.2, 24.7, 371 },
-				}),
---------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------
-				q(31539, {	-- A Thing of Beauty
-					["provider"] = { "n", 56065 },	-- Inkmaster Wei
-					["requireSkill"] = INSCRIPTION,
-					["isWeekly"] = true,
-					["g"] = {
-						recipe(127378),	-- Commissioned Painting
-					},
-				}),
-				q(33250, {	-- A Time-Lost Treasure
-					["provider"] = { "n", 58564 },	-- Elder Anli
-					["repeatable"] = true,
-				}),
-				q(31544, {	-- A Tribute to the Dead
-					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
-					["requireSkill"] = INSCRIPTION,
-					["isWeekly"] = true,
-					["g"] = {
-						recipe(127481),	-- Inscribed Monument
-					},
-				}),
-				q(31542, {	-- Incarnadine Ink
-					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = INSCRIPTION,
-					["isWeekly"] = true,
-					["g"] = {
-						recipe(127475),	-- Incarnadine Ink
-					},
-				}),
-				q(31709, {	-- Lingering Doubt
-					["provider"] = { "n", 58508 },	-- Big Bao
-					["isDaily"] = true,
-				}),
-				q(31784, {	-- Onyx To Goodness
-					["provider"] = { "n", 58564 },	-- Elder Anli
-					["repeatable"] = true,
-				}),
-				q(31543, {	-- Portrait of a Lady
-					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
-					["requireSkill"] = INSCRIPTION,
-					["isWeekly"] = true,
-					["g"] = {
-						recipe(128922),	-- Portrait of Madam Goya
-					},
-				}),
-				q(30188, {	-- Riding the Skies (Jade)
-					["provider"] = { "n", 58564 },	-- Elder Anli
-					["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the quest again on another character.|r",
-					["g"] = {
-						i(79802), 	-- Reins of the Jade Cloud Serpent
-					},
-				}),
-				q(31810, {	-- Riding the Skies (Azure)
-					["provider"] = { "n", 58564 },	-- Elder Anli
-					["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the quest again on another character.|r",
-					["g"] = {
-						i(85430), 	-- Reins of the Azure Cloud Serpent
-					},
-				}),
-				q(31811, {	-- Riding the Skies (Golden)
-					["provider"] = { "n", 58564 },	-- Elder Anli
-					["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the quest again on another character.|r",
-					["g"] = {
-						i(85429), 	-- Reins of the Golden Cloud Serpent
-					},
-				}),
-				q(31541, {	-- Set in Jade
-					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = INSCRIPTION,
-					["isWeekly"] = true,
-					["g"] = {
-						recipe(127391),	-- Engraved Jade Disk
-					},
-				}),
-				q(31540, {	-- Staves for Tian Monastery
-					["provider"] = { "n", 56065 },	-- Inkmaster Wei
-					["races"] = ALLIANCE_ONLY,
-					["isWeekly"] = true,
-				}),
-				q(29933, {	-- The Bees' Knees
-					["sourceQuests"] = { 29879 },	-- Swallowed Whole
-					["provider"] = { "n", 56351 },	-- Bo Bo
-					["coord"] = { 25.8, 37.9, 371 },
-					["races"] = HORDE_ONLY,
-					["minReputation"] = { 1228, FRIENDLY },
-				}),
-				q(31876, {	-- The Inkmasters of the Arboretum
-					["provider"] = { "n", 64691 },	-- Lorewalker Huynh
-					["isWeekly"] = true,
-					["requireSkill"] = INSCRIPTION,
-				}),
-				q(30152, {	-- The Sky Race
-					["provider"] = { "n", 58420 },	-- Instructor Windblade
-					["isDaily"] = true;
 				}),
 			}),
 		}),

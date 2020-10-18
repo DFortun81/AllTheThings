@@ -59,6 +59,12 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "n", 58920 },	-- Kun Autumnlight
 				}),
+				q(31876, {	-- The Inkmasters of the Arboretum
+					["requireSkill"] = INSCRIPTION,
+					["provider"] = { "n", 64691 },	-- Lorewalker Huynh
+					["isWeekly"] = true,
+					["coord"] = { 82.0, 29.4, 390 },
+				}),
 				q(33231, {	-- Journey to the Timeless Isle
 					["hordeQuestID"] = 33232,	-- Journey to the Timeless Isle
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>

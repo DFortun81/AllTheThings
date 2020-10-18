@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, { 	-- Pandaria
+	m(424, {	-- Pandaria
 		m(371, {	-- Jade Forest
 			faction(1271, {	-- Order of the Cloud Serpent
 				["description"] = "Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount.  More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",
@@ -15,6 +15,11 @@ _.Zones =
 					-- verify if the following dailies are removed:
 						-- Tiny Treats (31710)
 						-- Serpent's Scale (31708)
+						-- The Trainer's Challenge: Ace Longpaw (31717)
+						-- The Trainer's Challenge: Big Bao (31718)
+						-- The Trainer's Challenge: Ningna Darkwheel (31719)
+						-- The Trainer's Challenge: Qua-Ro Whitebrow (31721)
+						-- The Trainer's Challenge: Suchi the Sweet (31720)
 					-- verify if the following dailies exist independent of completion of other dailies:
 						-- Pooped (31716), got credit for this + the 31704 version of "Pooped" when completing 30150, "Sweet as Honey"
 				
@@ -31,6 +36,13 @@ _.Zones =
 							["sourceQuests"] = { 30142 },	-- It's A...
 							["provider"] = { "n", 58228 },	-- Instructor Skythorn
 							["isDaily"] = true,
+						}),
+						q(33250, {	-- A Time-Lost Treasure
+						--	the item is looted from timeless isle, but it doesn't start the quest, so i guess jade forest is the best place for this to go
+							["repeatable"] = true,
+							["provider"] = { "n", 58564 },	-- Elder Anli
+							["coord"] = { 57.6, 44.8, 371 },
+							["cost"] = { { "i", 104286, 1 } },	-- 1x Quivering Firestorm Egg
 						}),
 						q(30135, {	-- Beating the Odds
 							["sourceQuests"] = { 30134 },	-- Wild Things
@@ -141,6 +153,12 @@ _.Zones =
 							["provider"] = { "n", 58413 },	-- Jenova Longeye
 							["isDaily"] = true,
 						}),
+						q(31709, {	-- Lingering Doubt
+							["minReputation"] = { 1271, HONORED },
+							["provider"] = { "n", 58508 },	-- Big Bao
+							["isDaily"] = true,
+							["coord"] = { 57.4, 44.0, 371 },
+						}),
 						q(31703, {	-- Madcap Mayhem
 							["minReputation"] = { 1271, HONORED },
 							["sourceQuests"] = { 30142 },	-- It's A...
@@ -165,6 +183,12 @@ _.Zones =
 							["sourceQuests"] = { 30142 },	-- It's A...
 							["provider"] = { "n", 58564 },	-- Elder Anli
 							["isDaily"] = true,
+						}),
+						q(31784, {	-- Onyx To Goodness
+							["repeatable"] = true,
+							["provider"] = { "n", 58564 },	-- Elder Anli
+							["coord"] = { 57.6, 44.8, 371 },
+							["cost"] = { { "i", 89155, 1 } },	-- 1x Onyx Egg
 						}),
 						q(31704, {	-- Pooped
 							["minReputation"] = { 1271, HONORED },
@@ -200,6 +224,27 @@ _.Zones =
 							["provider"] = { "n", 58228 },	-- Instructor Skythorn
 							["isDaily"] = true,
 							["coord"] = { 57.5, 45.1, 371 },
+						}),
+						q(31810, {	-- Riding the Skies (Azure)
+							["provider"] = { "n", 58564 },	-- Elder Anli
+							["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.|r",
+							["g"] = {
+								i(85430), 	-- Reins of the Azure Cloud Serpent
+							},
+						}),
+						q(31811, {	-- Riding the Skies (Golden)
+							["provider"] = { "n", 58564 },	-- Elder Anli
+							["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.|r",
+							["g"] = {
+								i(85429), 	-- Reins of the Golden Cloud Serpent
+							},
+						}),
+						q(30188, {	-- Riding the Skies (Jade)
+							["provider"] = { "n", 58564 },	-- Elder Anli
+							["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.|r",
+							["g"] = {
+								i(79802), 	-- Reins of the Jade Cloud Serpent
+							},
 						}),
 						q(31714, {	-- Saving the Serpents
 							["minReputation"] = { 1271, REVERED },
@@ -304,6 +349,42 @@ _.Zones =
 							["minReputation"] = { 1271, HONORED },
 							["sourceQuests"] = { 30142 },	-- It's A...
 							["provider"] = { "n", 58509 },	-- Ningna Darkwheel
+							["isDaily"] = true,
+						}),
+						q(30152, {	-- The Sky Race
+							["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
+							["minReputation"] = { 1271, REVERED },
+							["provider"] = { "n", 58420 },	-- Instructor Windblade
+							["isDaily"] = true;
+						}),
+						q(31717, {	-- The Trainer's Challenge: Ace Longpaw
+							["u"] = REMOVED_FROM_GAME,
+							["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
+							["coord"] = { 57.6, 44.8, 371 },
+							["isDaily"] = true,
+						}),
+						q(31718, {	-- The Trainer's Challenge: Big Bao
+							["u"] = REMOVED_FROM_GAME,
+							["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
+							["coord"] = { 57.6, 44.8, 371 },
+							["isDaily"] = true,
+						}),
+						q(31719, {	-- The Trainer's Challenge: Ningna Darkwheel
+							["u"] = REMOVED_FROM_GAME,
+							["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
+							["coord"] = { 57.6, 44.8, 371 },
+							["isDaily"] = true,
+						}),
+						q(31721, {	-- The Trainer's Challenge: Qua-Ro Whitebrow
+							["u"] = REMOVED_FROM_GAME,
+							["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
+							["coord"] = { 57.6, 44.8, 371 },
+							["isDaily"] = true,
+						}),
+						q(31720, {	-- The Trainer's Challenge: Suchi the Sweet
+							["u"] = REMOVED_FROM_GAME,
+							["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
+							["coord"] = { 57.6, 44.8, 371 },
 							["isDaily"] = true,
 						}),
 						q(30143, {	-- They Grow Like Weeds
