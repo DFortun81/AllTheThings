@@ -15,17 +15,17 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(6662, {	-- Me Brother, Nipsy
+						["sourceQuests"] = { 6661 }, -- Deeprun Rat Roundup
 						["provider"] = { "n", 12997 },	-- Monty
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 6661 } -- Deeprun Rat Roundup
 					}),
-					n(VENDORS, {
-						n(149806, {	-- A. Shady
-							["coord"] = { 34.2, 32.9, 499 },
-							["g"] = {
-								i(166805),	-- Blood-Soaked Invitation (QI)
-							},
-						}),
+				}),
+				n(VENDORS, {
+					n(149806, {	-- A. Shady
+						["coord"] = { 34.2, 32.9, 499 },
+						["g"] = {
+							i(166805),	-- Blood-Soaked Invitation (QI)
+						},
 					}),
 				}),
 			},

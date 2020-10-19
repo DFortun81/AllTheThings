@@ -35,24 +35,6 @@ _.Zones =
 					["sourceQuests"] = { 30739 },	-- Ellia Ravenmane: Redemption
 					["description"] = "Requires completing August Celestials dailies at the Cradle of Chi-Ji for a total of 15 days.  After you complete the first set of dailies, you'll be given an additional quest to defeat a challenger.",
 				}),
-				ach(7929, {	-- Dominance Offensive Campaign
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(1),	-- Domination Point
-						crit(2),	-- The Voice of the Gods
-						crit(3),	-- The Horde is Family
-						crit(4),	-- Blood For Blood
-						crit(5),	-- The Korune
-						crit(6),	-- Pride
-						crit(7),	-- Rise of the Blood Elves
-						crit(8),	-- Secrets of the Past
-						crit(9),	-- The Divine Bell
-						crit(10),	-- The Darnassus Operation
-						crit(11),	-- The Purge of Dalaran
-						crit(12),	-- Breath of Darkest Shadow
-						i(93386),	-- Grand Wyvern (MOUNT!)
-					},
-				}),
 				ach(7284, {	-- Is Another Man's Treasure
 					["collectible"] = false,
 					["g"] = {
@@ -125,26 +107,6 @@ _.Zones =
 						crit(3),	-- Nayeli Lagoon
 						crit(4),	-- Temple of the Red Crane
 						crit(5),	-- Dawnchaser Retreat
-					},
-				}),
-				ach(7928, {	-- Operation: Shieldwall Campaign
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						crit(1, {	-- Lion's Landing
-							["sourceQuests"] = { 32109 },	-- Lion's Landing
-						}),
-						crit(2),	-- The Man With a Thousand Faces
-						crit(3),	-- The Voice of the Gods
-						crit(4),	-- Jaina's Hope
-						crit(5),	-- The Korune
-						crit(6),	-- Heart of the Alliance
-						crit(7),	-- Secrets of the Past
-						crit(8),	-- The Divine Bell
-						crit(9),	-- The Purge of Dalaran
-						crit(10),	-- An Ancient Ally
-						crit(11),	-- In Search of Harmony
-						crit(12),	-- Breath of Darkest Shadow
-						i(93385),	-- Grand Gryphon (MOUNT!)
 					},
 				}),
 				ach(7997, {	-- Riches of Pandaria

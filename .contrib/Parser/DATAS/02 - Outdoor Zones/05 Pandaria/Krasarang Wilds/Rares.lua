@@ -9,10 +9,7 @@ _.Zones =
 			--	IMPORTANT: if you add coordinates to any part of this file, make sure you verify them manually!  the coordinates listed on wowhead (as of september 2019) are incorrect and probably based on an older version of the krasarang map.  if you use those coordinates instead of manually confirming them, they'll place you outside of /tar range.
 			n(RARES, {
 				n(50787, {	-- Arness the Scale
-					["coords"] = {
-						{ 58.6, 43.8, 418 },
-						{ 56.2, 46.8, 418 },
-					},
+					["coord"] = { 58.7, 43.8, 418 },	-- manually verified October 19, 2020
 					["g"] = {
 						crit(45, {	-- Arness the Scale
 							["achievementID"] = 7439,	-- Glorious!
@@ -54,18 +51,6 @@ _.Zones =
 						i(87607),	-- Unearthed Dojani Headcover
 					},
 				}),
-				n(68318, {	-- Dalan Nightbreaker
-					["questID"] = 34062,
-					["isDaily"] = true,
-					["races"] = HORDE_ONLY,
-					["coords"] = {
-						{ 85.0, 27.6, 418 },
-						{ 89.6, 22.4, 418 },
-					},
-					["g"] = {
-						i(92783),	-- Mark of the Hardened Grunt
-					},
-				}),
 				n(66934, {	-- Damlak
 					["coords"] = {
 						{ 40.0, 88.6, 418 },
@@ -76,15 +61,6 @@ _.Zones =
 							i(90172),	-- Clamshell Band
 							i(90087),	-- Lobstmourne
 						}),
-					},
-				}),
-				n(68319, {	-- Disha Fearwarden
-					["questID"] = 34061,
-					["isDaily"] = true,
-					["races"] = HORDE_ONLY,
-					["coord"] = { 87.4, 29.2, 418 },
-					["g"] = {
-						i(92787),	-- Horde Insignia of Conquering
 					},
 				}),
 				n(50331, {	-- Go-Kan
@@ -131,15 +107,6 @@ _.Zones =
 						i(87608),	-- Korjan Mystic's Hood
 					},
 				}),
-				n(68321, {	-- Kar Warmaker
-					["coords"] = {
-						{ 13.4, 55.0, 418 },
-						{ 14.0, 57.0, 418 },
-					},
-					["g"] = {
-						i(92782),	-- Steadfast Footman's Medallion
-					},
-				}),
 				n(70323, {	-- Krakkanon
 					i(88563, {	-- Nat's Fishing Journal
 						["collectible"] = false,
@@ -147,27 +114,6 @@ _.Zones =
 					--	["questID"] = 31664,	-- An Angler's Quest
 						["icon"] = "Interface\\Icons\\inv_misc_book_11",
 					}),
-				}),
-				n(68317, {	-- Mavis Harms
-					["questID"] = 34060,
-					["isDaily"] = true,
-					["coords"] = {
-						{ 89.0, 26.8, 418 },
-						{ 84.6, 31.0, 418 },
-					},
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(92785),	-- Kor'kron Book of Hurting
-					},
-				}),
-				n(68322, {	-- Muerta
-					["coords"] = {
-						{ 10.6, 57.0, 418 },
-						{ 9.60, 54.6, 418 },
-					},
-					["g"] = {
-						i(92786),	-- Alliance Insignia of Conquering
-					},
 				}),
 				n(50352, {	-- Qu'nas
 					["coord"] = { 67.2, 23, 418 },
@@ -248,12 +194,6 @@ _.Zones =
 						i(87612),	-- Ancient Krasari Helm
 						i(87604),	-- Beachcomber's Hat
 						i(87606),	-- Tidehunter Helm
-					},
-				}),
-				n(68320, {	-- Ubunti the Shade
-					["coord"] = { 13.2, 66.0, 418 },
-					["g"] = {
-						i(92784),	-- SI:7 Operative's Manual
 					},
 				}),
 				n(69769, {	-- Zandalari Warbringer (Slate)

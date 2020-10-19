@@ -21,6 +21,18 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(6716, {	-- Between a Saurok and a Hard Place
+					["collectible"] = false,
+					["g"] = {
+						crit(2, {	-- The Defiant
+							["description"] = "At the north end of the circular room at the back of the cave.",
+							["coords"] = {
+								{ 73.2, 94.6, 379 },	-- entrance
+								{ 54.9, 16.9, 434 },	-- actual object
+							},
+						}),
+					},
+				}),
 				ach(7286, {	-- Finish Them! (Temple of the White Tiger)
 					crit(1),	-- Brewmaster Chani
 					crit(2),	-- Lun-Chi

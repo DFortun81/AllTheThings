@@ -947,10 +947,6 @@ _.Zones =
 					},
 					["sourceQuests"] = { 36612, 36870 },	-- Luring Nat (both faction versions)
 				}),
-				q(30588, {	-- Fishing for a Bruising
-					["provider"] = { "n", 59586 },	-- Angler Shen
-					["isDaily"] = true,
-				}),
 				q(32235, {	-- Flash! Aaaaaahhhh!
 					["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
 					["races"] = HORDE_ONLY,
@@ -1298,10 +1294,6 @@ _.Zones =
 					["provider"] = { "n", 67940 },	-- Admiral Taylor
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(32380, {	-- The Best Around
-					["provider"] = { "n", 67940 },	-- Admiral Taylor
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(32332, {	-- The First Riddle: Mercy
 					["provider"] = { "n", 68003 },	-- The Monkey King
 					["races"] = ALLIANCE_ONLY,
@@ -1528,11 +1520,6 @@ _.Zones =
 					["sourceQuests"] = { 32327 },	-- The Darnassus Mission
 					["level"] = 81,
 				}),
-				q(30701, {	-- Viseclaw Soup
-					["provider"] = { "n", 60675 },	-- Fo Fook
-					["requireSkill"] = FISHING,
-					["isDaily"] = true,
-				}),
 				o(216322, {	-- Bounty Board
 					q(32222, {	-- Wanted: Chief Engineer Cogwrench
 						["races"] = HORDE_ONLY,
@@ -1570,11 +1557,6 @@ _.Zones =
 					["sourceQuests"] = { 32417, 32418, 32419, 32420, 32421 },	-- Sewer Cleaning, Unfair Trade, Nowhere to Hide, Cashing Out, Nowhere to Run
 				}),
 				q(30585, {	-- What Lurks Below
-					["provider"] = { "n", 60673 },	-- Elder Fisherman Rassan
-					["requireSkill"] = FISHING,
-					["isDaily"] = true,
-				}),
-				q(30598, {	-- Who Knew Fish Liked Eggs?
 					["provider"] = { "n", 60673 },	-- Elder Fisherman Rassan
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,

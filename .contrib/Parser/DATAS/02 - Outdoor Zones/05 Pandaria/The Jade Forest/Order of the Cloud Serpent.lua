@@ -13,16 +13,13 @@ _.Zones =
 				
 				--	TODO:
 					-- verify if the following dailies are removed:
-						-- Tiny Treats (31710)
-						-- Serpent's Scale (31708)
+						-- Tiny Treats (31710) *** MUST STILL HAVE A HATCHLING ***
+						-- Serpent's Scale (31708) *** MUST STILL HAVE A HATCHLING ***
 						-- The Trainer's Challenge: Ace Longpaw (31717)
-						-- The Trainer's Challenge: Big Bao (31718)
 						-- The Trainer's Challenge: Ningna Darkwheel (31719)
 						-- The Trainer's Challenge: Qua-Ro Whitebrow (31721)
-						-- The Trainer's Challenge: Suchi the Sweet (31720)
 					-- verify if the following dailies exist independent of completion of other dailies:
-						-- Pooped (31716), got credit for this + the 31704 version of "Pooped" when completing 30150, "Sweet as Honey"
-				
+						-- Pooped (31716), got credit for this + the 31704 version of "Pooped" when completing 30150, "Sweet as Honey" *** MUST STILL HAVE A HATCHLING ***
 					n(QUESTS, {
 						q(30149, {	-- A Feast for the Senses
 							["minReputation"] = { 1271, HONORED },
@@ -352,10 +349,11 @@ _.Zones =
 							["isDaily"] = true,
 						}),
 						q(30152, {	-- The Sky Race
-							["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
 							["minReputation"] = { 1271, REVERED },
+							["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
 							["provider"] = { "n", 58420 },	-- Instructor Windblade
 							["isDaily"] = true;
+							["coord"] = { 58.5, 43.7, 371 },
 						}),
 						q(31717, {	-- The Trainer's Challenge: Ace Longpaw
 							["u"] = REMOVED_FROM_GAME,
@@ -364,10 +362,11 @@ _.Zones =
 							["isDaily"] = true,
 						}),
 						q(31718, {	-- The Trainer's Challenge: Big Bao
-							["u"] = REMOVED_FROM_GAME,
+							["minReputation"] = { 1271, REVERED },
+							["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
 							["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
-							["coord"] = { 57.6, 44.8, 371 },
 							["isDaily"] = true,
+							["coord"] = { 57.6, 44.8, 371 },
 						}),
 						q(31719, {	-- The Trainer's Challenge: Ningna Darkwheel
 							["u"] = REMOVED_FROM_GAME,
@@ -382,10 +381,11 @@ _.Zones =
 							["isDaily"] = true,
 						}),
 						q(31720, {	-- The Trainer's Challenge: Suchi the Sweet
-							["u"] = REMOVED_FROM_GAME,
+							["minReputation"] = { 1271, REVERED },
+							["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
 							["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
-							["coord"] = { 57.6, 44.8, 371 },
 							["isDaily"] = true,
+							["coord"] = { 57.6, 44.8, 371 },
 						}),
 						q(30143, {	-- They Grow Like Weeds
 							["minReputation"] = { 1271, REVERED },
