@@ -32,6 +32,7 @@ _.GearSets =
 		}),
 		i(173417, {	-- Black Empire Cloth Helm
 			i(173433),	-- Vile Manipulator's Cowl
+			i(184591),	-- Vile Manipulator's Cowl
 			i(173845),	-- Vile Manipulator's Hood
 		}),
 		i(173418, {	-- Black Empire Cloth Leggings
@@ -42,11 +43,13 @@ _.GearSets =
 		}),
 		i(173414, {	-- Black Empire Cloth Robes
 			i(173458),	-- Vile Manipulator's Robe
+			i(184590),	-- Vile Manipulator's Robe
 			i(173846),	-- Vile Manipulator's Vestment
 		}),
 		i(173419, {	-- Black Empire Cloth Spaulders
 			i(173844),	-- Vile Manipulator's Amice
 			i(173435),	-- Vile Manipulator's Mantle
+			i(184592),	-- Vile Manipulator's Mantle
 		}),
 		i(173413, {	-- Black Empire Leather Belt
 			i(173816),	-- Belt of the Insatiable Maw
@@ -118,6 +121,7 @@ _.GearSets =
 		}),
 		i(173400, {	-- Black Empire Mail Chestpiece
 			i(173446),	-- Nefarious Tormentor's Breastplate
+			i(184596),	-- Nefarious Tormentor's Breastplate
 			i(173840),	-- Nefarious Tormentor's Chestpiece
 		}),
 		i(173402, {	-- Black Empire Mail Gloves
@@ -129,6 +133,7 @@ _.GearSets =
 		i(173403, {	-- Black Empire Mail Helm
 			i(173839),	-- Nefarious Tormentor's Cover
 			i(173449),	-- Nefarious Tormentor's Mask
+			i(184597),	-- Nefarious Tormentor's Mask
 		}),
 		i(173404, {	-- Black Empire Mail Leggings
 			i(173469),	-- Nefarious Tormentor's Greaves
@@ -139,6 +144,7 @@ _.GearSets =
 		i(173405, {	-- Black Empire Mail Spaulders
 			i(173838),	-- Nefarious Tormentor's Epaulets
 			i(173451),	-- Nefarious Tormentor's Spaulders
+			i(184598),	-- Nefarious Tormentor's Spaulders
 		}),
 		i(173399, {	-- Black Empire Plate Belt
 			i(173821),	-- Malignant Leviathan's Clasp
