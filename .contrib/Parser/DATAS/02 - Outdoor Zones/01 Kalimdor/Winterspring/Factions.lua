@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(83, {	-- Winterspring
-			n(-6013, {	-- Factions
+			n(FACTIONS, {
 				faction(576, {	-- Timbermaw Hold
 					["creatureID"] = 11558,	-- Kernda
 					["collectible"] = false,

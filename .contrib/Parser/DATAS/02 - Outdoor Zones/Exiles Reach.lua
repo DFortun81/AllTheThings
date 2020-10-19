@@ -16,8 +16,6 @@ _.Zones =
 			--[[
 			Remaining things TODO:
 				* Some class-specific quests are missing providers. Search "TODO" for which ones are needed
-				* Quests after "Finding Your Way" - can't complete due to pre-launch event zombies making it impossible to progress further as of 12.August.2020
-
 			]]--
 			m(1609, {	-- Darkmaul Citadel
 				["icon"] = 3759927,
@@ -283,10 +281,9 @@ _.Zones =
 						}),
 					},
 				}),
-			cl(SHAMAN, {
+				cl(SHAMAN, {
 					["classes"] = { SHAMAN },
 					["g"] = {
-
 						q(59002, {	-- A Shaman's Duty (A)
 							["coord"] = { 52.3, 55.6, 1409 },
 							["races"] = ALLIANCE_ONLY,
@@ -294,7 +291,7 @@ _.Zones =
 							["provider"] = { "n", 163329 },	-- Ghostwolf
 							["sourceQuest"] = 55194,	-- Stocking Up on Supplies
 						}),
---[[						q(, {	-- A Shaman's Duty (H)
+						--[[q(, {	-- A Shaman's Duty (H)
 							["coord"] = { , 1409 },
 							["races"] = HORDE_ONLY,
 							["classes"] = { SHAMAN },
@@ -303,7 +300,6 @@ _.Zones =
 						}),]]--
 					},
 				}),
-
 				cl(WARLOCK, {
 					["classes"] = { WARLOCK },
 					["g"] = {

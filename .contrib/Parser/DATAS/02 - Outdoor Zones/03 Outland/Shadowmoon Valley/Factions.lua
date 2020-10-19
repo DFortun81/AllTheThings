@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(104, {	-- Shadowmoon Valley (Outland)
-			n(-6013, {	-- Factions
+			n(FACTIONS, {
 				faction(932,  {	-- The Aldor
 					["collectible"] = false,
 					["creatureID"] = 19321,	-- Quartermaster Endarin <Aldor Quartermaster>

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(102, {	-- Zangarmarsh
-			n(-6013, {	-- Faction
+			n(FACTIONS, {
 				faction(942, {	-- Cenarion Expedition
 					["creatureID"] = 17904,	-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
 					["g"] = {

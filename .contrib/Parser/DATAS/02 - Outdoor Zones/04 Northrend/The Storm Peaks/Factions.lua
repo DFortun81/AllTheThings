@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(120, {	-- The Storm Peaks
-			n(-6013, {	-- Factions
+			n(FACTIONS, {
 				faction(1119, {	-- The Sons of Hodir
 					["creatureID"] = 30105,	-- King Jokkum
 					["groups"] = {

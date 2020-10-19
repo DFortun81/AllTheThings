@@ -186,7 +186,7 @@ _.Zones =
 					},
 				}),
 				n(154342, {	-- Arachnoid Harvester
-					["description"] = "This creature is only located within the alternate Timeline phase and shares the same daily lockout",
+					["description"] = "This creature is only located within the alternate Timeline phase and shares the same daily lockout.",
 					["questID"] = 55512,
 					["coord"] = { 52.6, 41.0, 1462 },
 					["isDaily"] = true,

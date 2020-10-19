@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(111, {	-- Shattrath City
-			n(-6013, {	-- Factions
+			n(FACTIONS, {
 				faction(1011, {	-- Lower City
 					["creatureID"] = 21655,	-- Nakodu <Lower City Quartermaster>
 					["g"] = {

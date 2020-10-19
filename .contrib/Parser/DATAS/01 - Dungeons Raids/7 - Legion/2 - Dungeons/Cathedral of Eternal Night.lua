@@ -8,7 +8,7 @@ _.Instances = { tier(7, {	-- Legion
 		["maps"] = { 845, 846, 847, 848, 849 },
 		["lvl"] = 110,
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(-34,	{	-- World Quests
 				q(46867, {	-- Cathedral of Eternal Night: Fel Beast
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
@@ -30,7 +30,7 @@ _.Instances = { tier(7, {	-- Legion
 					["lvl"] = 110,
 				}),
 			}),
-			d(2,   {	-- Heroic
+			d(2,	{	-- Heroic
 				n(ZONEDROPS, {
 					i(147117, {	-- Orb of the Fel Temptress
 						["cr"] = 118714,  -- Hellblaze Temptress
@@ -96,7 +96,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(144463),	-- Shard of Kaldorei Stained Glass
 				})),
 			}),
-			d(23,  {	-- Mythic
+			d(23,	{	-- Mythic
 				n(ZONEDROPS, {
 					i(147514, {	-- Felguard Destroyer's Legplates
 						["bonusID"] = 1812,
@@ -134,7 +134,7 @@ _.Instances = { tier(7, {	-- Legion
 							120717,	-- Mistress Dominix
 						},
 					}),
-						i(147516, {	-- Legion Stalker's Hood
+					i(147516, {	-- Legion Stalker's Hood
 						["bonusID"] = 1812,
 						["crs"] = {
 							118704,	-- Dul'zak

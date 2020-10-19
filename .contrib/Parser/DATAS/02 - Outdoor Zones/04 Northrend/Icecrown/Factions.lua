@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(118, {	-- Icecrown
-			n(-6013, {	-- Factions
+			n(FACTIONS, {
 				faction(1106, {	-- Argent Crusade
 					["achievementID"] = 947,	-- The Argent Crusade
 					["g"] = {

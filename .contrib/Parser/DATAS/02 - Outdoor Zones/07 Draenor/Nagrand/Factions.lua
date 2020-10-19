@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(572, { 	-- Draenor
 		m(550, {	-- Nagrand (Draenor)
-			n(-6013, {	-- Faction
+			n(FACTIONS, {
 				faction(1711, {	-- Cenarion Expedition
 					["creatureID"] = 87394,	-- Kwilax Fuseshiv <Reputation Vendor>
 					["g"] = {

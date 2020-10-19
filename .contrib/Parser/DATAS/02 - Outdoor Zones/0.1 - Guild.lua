@@ -4,8 +4,7 @@
 
 _.Zones =
 {
-	{	-- Faction
-		["npcID"] = -6013,	-- Factions
+	n(FACTIONS, {
 		["maps"] = {
 			89,		-- Darnassus
 			125,	-- Dalaran: Northrend
@@ -395,5 +394,5 @@ _.Zones =
 				},
 			}),
 		},
-	},
+	}),
 };

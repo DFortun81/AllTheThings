@@ -177,6 +177,7 @@ _.HiddenQuestTriggers =
 		q(47465),	-- Bonus roll on Azuregos World boss during WoW 15th anniversary in 2019
 		q(47464),	-- Bonus roll on Kazzak World boss during WoW 15th anniversary in 2019
 		q(47466),	-- Bonus roll on Emeriss during anniversary event
+		q(28997),	-- triggered together with 28961, Surwich Candy Bucket
 
 		-- Darkmoon Faire
 		q(30557),	-- [DNT] A Captured Banner TRACKER - triggers after completing A Captured Banner (questID 29456)
@@ -2850,16 +2851,16 @@ _.HiddenQuestTriggers =
 		q(59610),	-- Triggered after killing Torgok. Loot controller for "Torgok's Reagent Pouch"
 		q(59143),	-- Triggered after looting the Runetusk Necklace from ogres in Darkmaul Citadel
 		q(59139),	-- Triggered after looting the Spider-Eye Ring from spiders in Hrun's Barrow
-		q(59590),   -- Triggered after turning in What's Your Specialty? quest
+		q(59590),	-- Triggered after turning in What's Your Specialty? quest
 		q(60167),	-- Triggered right after Warlord Grimaxe tells Shuja to heal during the Tunk encounter
-		q(62547),   -- Triggered after speaking to trainer for What's Your Specialty? quest [Horde]
-		q(62548),   -- Triggered after speaking to trainer for What's Your Specialty? quest [Alliance]
-		q(62550),   -- Triggered after choosing a specialization for What's Your Specialty? quest [Alliance]
-		q(62551),   -- Triggered after choosing a specialization for What's Your Specialty? quest [Horde]
+		q(62547),	-- Triggered after speaking to trainer for What's Your Specialty? quest [Horde]
+		q(62548),	-- Triggered after speaking to trainer for What's Your Specialty? quest [Alliance]
+		q(62550),	-- Triggered after choosing a specialization for What's Your Specialty? quest [Alliance]
+		q(62551),	-- Triggered after choosing a specialization for What's Your Specialty? quest [Horde]
 		q(62655),	-- Triggered after choosing a specialization for What's Your Specialty? quest [Both]
-		q(62802),   -- Triggered after going to Stormwind for An End to Beginnings
-		q(62803),   -- Triggered after going to Orgrimmar for An End to Beginnings
-		q(63012),   -- Triggered after talking to Jaina at docks for The Nation of Kul Tiras
-		q(62912),   -- Triggered when flying from Exile's Reach (as Alliance if it matters)
+		q(62802),	-- Triggered after going to Stormwind for An End to Beginnings
+		q(62803),	-- Triggered after going to Orgrimmar for An End to Beginnings
+		q(63012),	-- Triggered after talking to Jaina at docks for The Nation of Kul Tiras
+		q(62912),	-- Triggered when flying from Exile's Reach (as Alliance if it matters)
 	}),
 };

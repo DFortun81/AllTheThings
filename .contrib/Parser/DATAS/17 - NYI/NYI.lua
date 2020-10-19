@@ -4126,4 +4126,5 @@ m(893),		-- Azuremyst Isle (Argus Opening)
 m(889),		-- Arcatraz - scenario map
 m(890),		-- Arcatraz - scenario map
 m(1338),	-- Darkshore (Tyrande's Ascension scenario)
+m(1335),	-- Cooking: Impossible
 };

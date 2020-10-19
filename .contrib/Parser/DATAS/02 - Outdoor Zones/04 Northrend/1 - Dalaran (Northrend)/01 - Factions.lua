@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(125, {	-- Dalaran: Northrend
-			n(-6013, {	-- Factions
+			n(FACTIONS, {
 				faction(1124, {	-- The Sunreavers
 					["creatureID"] = 30116,	-- Archmage Aethas Sunreaver <Kirin Tor>
 					["races"] = HORDE_ONLY,
