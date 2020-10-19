@@ -443,6 +443,8 @@ _.HiddenQuestTriggers =
 		-------------------
 		--      MOP      --
 		-------------------
+		q(31371),	-- Tracking Event: Player Has Completed One Anglers Daily
+		q(30719),	-- FLAG - Cradle of Chi-Ji Progress Bit 01
 		q(29698),	-- Tracking Event: Alliance Banner Found
 		q(29700),	-- Tracking Event: Bodyguard Found (Alliance)
 		q(29701),	-- Tracking Event: Journal Found (Alliance)

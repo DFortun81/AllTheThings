@@ -81,6 +81,11 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "n", 58920 },	-- Kun Autumnlight
 				}),
+				q(32246, {	-- Meet the Scout
+					["provider"] = { "n", 64610 },	-- Lyalia
+					["coord"] = { 84.0, 58.7, 390 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(30261, {	-- Roll Club: Serpent's Spine
 					["coord"] = { 18.1, 63.5, 390 },
 					["isDaily"] = true,
