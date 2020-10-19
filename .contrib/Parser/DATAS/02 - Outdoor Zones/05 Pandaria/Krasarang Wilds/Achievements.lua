@@ -8,7 +8,6 @@ _.Zones =
 		m(418, {	-- Krasarang Wilds
 			--	IMPORTANT: if you add coordinates to any part of this file, make sure you verify them manually!  the coordinates listed on wowhead (as of september 2019) are incorrect and probably based on an older version of the krasarang map.  if you use those coordinates instead of manually confirming them, they'll place you outside of /tar range.
 			--	TODO:
-				-- find out if "Zhu's Watch" criteria (specifically for Alliance, but i think all the quests are neutral, so probably either faction) requires doing through "Securing the Province" (30083) and "Borderlands" (30084)
 				-- find out if "The Incursion" criteria requires "Lotus Tea" (30351) and "Threats from Dojan" (30349)
 				-- turn in "Buried Hozen Treasure" but NOT "Balance" or "Balance Without Violence" to make sure they're required for the criteria
 				-- source Horde loremaster achievement + Dominance Offensive achievement
@@ -102,7 +101,9 @@ _.Zones =
 				ach(6536, {	-- Mighty Roamin' Krasaranger (Horde)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(1),	-- Zhu's Watch
+						crit(1, {	-- Zhu's Watch
+							["sourceQuests"] = { 30090 },	-- Zhu's Despair
+						}),
 						crit(2),	-- Thunder Cleft
 						crit(3),	-- Nayeli Lagoon
 						crit(4),	-- Temple of the Red Crane

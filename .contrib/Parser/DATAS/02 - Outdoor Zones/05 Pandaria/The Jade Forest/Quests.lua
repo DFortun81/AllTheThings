@@ -74,7 +74,13 @@ _.Zones =
 						i(90305),	-- Honorary Combat Engineer's Chain Leggings
 						i(90312),	-- Honorary Combat Engineer's Heavy Legplates
 						i(90308),	-- Honorary Combat Engineer's Hide Leggings
+						i(90360, {	-- Honorary Combat Engineer's Hide Leggings
+							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
+						}),
 						i(90304),	-- Honorary Combat Engineer's Leather Trousers
+						i(90356, {	-- Honorary Combat Engineer's Leather Trousers
+							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
+						}),
 						i(90311),	-- Honorary Combat Engineer's Legguards
 						i(90309),	-- Honorary Combat Engineer's Ringmail Leggings
 						i(90307),	-- Honorary Combat Engineer's Satin Leggings
@@ -753,7 +759,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(29822, {	-- Lay of the Land
-					["sourceQuests"] = { 29827 },	-- Acid Rain
+					["sourceQuests"] = {
+						29827,	-- Acid Rain
+						29821,	-- Missed Me By... That Much!
+					},
 					["provider"] = { "n", 55172 },	-- General Nazgrim
 					["coord"] = { 28.4, 24.9, 371 },
 					["races"] = HORDE_ONLY,

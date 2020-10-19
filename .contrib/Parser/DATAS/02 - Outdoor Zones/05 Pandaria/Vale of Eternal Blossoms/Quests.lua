@@ -158,7 +158,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(32815, {	-- The Old Seer
-					["sourceQuest"] = 32807,	-- The Warchief and the Darkness
+					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
 				}),
 				q(30280, {	-- The Thunder Below
@@ -167,7 +167,7 @@ _.Zones =
 					["provider"] = { "n", 58919 },	-- Anji Autumnlight
 				}),
 				q(32807, {	-- The Warchief and the Darkness
-					["sourceQuest"] = 32806,	-- The King and the Council
+					["sourceQuests"] = { 32806 },	-- The King and the Council
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
 					["coord"] = { 83.2, 29.6, 390 },
 					["maps"] = { 520, 521 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
@@ -185,22 +185,24 @@ _.Zones =
 					["provider"] = { "n", 64566 },	-- Sunwalker Dezco
 				}),
 				q(31380, {	-- Trial At The Temple of the White Tiger (A)
-					["coord"] = { 84.6, 63.6, 390 },
-					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 31512 },	-- A Witness to History
 					["provider"] = { "n", 64032 },	-- Sage Whiteheart
 					["isDaily"] = true,
+					["coord"] = { 84.6, 63.6, 390 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31381, {	-- Trial At The Temple of the White Tiger (H)
-					["coord"] = { 62.7, 23.3, 390 },
-					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 31511 },	-- A Witness to History
 					["provider"] = { "n", 64001 },	-- Sage Lotusbloom
 					["isDaily"] = true,
+					["coord"] = { 62.7, 23.3, 390 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(32257, {	-- Voice of the Gods -- granted "The Voice of the Gods" for "Dominance Offensive Campaign"
 					["coord"] = { 20.9, 15.5, 390 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 67834 },	-- Fanlyr Silverthorn
-					["sourceQuest"] = 32242,	-- Buried Secrets
+					["sourceQuests"] = { 32242 },	-- Buried Secrets
 				}),
 				q(33134, {	-- Warforged Seals (A)
 					["repeatable"] = true,

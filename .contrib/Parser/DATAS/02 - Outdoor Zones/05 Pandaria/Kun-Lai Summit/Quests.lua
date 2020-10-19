@@ -15,18 +15,6 @@ _.Zones =
 						30570,	-- Trouble on the Farmstead (H)
 					},
 				}),
-				q(31394, {	-- A Celestial Experience (A)
-					["coord"] = { 68.7, 43.1, 379 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 64540 },	-- Anduin Wrynn
-					["sourceQuest"] = 31392,	-- Temple of the White Tiger
-				}),
-				q(31395, {	-- A Celestial Experience (H)
-					["coord"] = { 68.7, 43.0, 379 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 64542 },	-- Sunwalker Dezco
-					["sourceQuest"] = 31393,	-- Temple of the White Tiger
-				}),
 				q(30746, {	-- A Fair Trade
 					["coord"] = { 42.4, 69.6, 379 },
 					["provider"] = { "n", 60503 },	-- Uncle Keenbean
@@ -85,18 +73,6 @@ _.Zones =
 					["coord"] = { 29.2, 62.3, 379 },
 					["provider"] = { "n", 61820 },	-- Lao-Chin the Iron Belly
 					["sourceQuest"] = 30724,	-- To the Wall!
-				}),
-				q(31512, {	-- A Witness to History (A)
-					["coord"] = { 68.7, 43.1, 379 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 64540 },	-- Anduin Wrynn
-					["sourceQuest"] = 31394,	-- A Celestial Experience
-				}),
-				q(31511, {	-- A Witness to History (H)
-					["coord"] = { 68.7, 43.0, 379 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 64542 },	-- Sunwalker Dezco
-					["sourceQuest"] = 31395,	-- A Celestial Experience
 				}),
 				q(30596, {	-- A Zandalari Troll? (A) (Triggers when completing "Mogu?! Oh No-gu!")
 					["u"] = NEVER_IMPLEMENTED,
@@ -389,10 +365,6 @@ _.Zones =
 						30618,	-- Resupplying One Keg
 						30621,	-- They Stole My Luck
 					},
-				}),
-				q(31517, {	-- Contending With Bullies
-					["isDaily"] = true,
-					["provider"] = { "n", 60968 },	-- Xuen
 				}),
 				q(57069, {	-- Cut Off the Heads
 					["lvl"] = 120,
@@ -1005,18 +977,9 @@ _.Zones =
 						i(84515),	-- Yak Herder Monnion
 					},
 				}),
-				q(30879, {	-- Round 1: Brewmaster Chani
-					["isDaily"] = true,
-					["provider"] = { "n", 60968 },	-- Xuen
-				}),
 				q(30880, {	-- Round 1: The Streetfighter
 					["isDaily"] = true,
 					["provider"] = { "n", 60968 },	-- Xuen
-				}),
-				q(30881, {	-- Round 2: Clever Ashyo & Ken-Ken
-					["isDaily"] = true,
-					["provider"] = { "n", 60968 },	-- Xuen
-					["sourceQuest"] = 30879,	-- Round 1: Brewmaster Chani
 				}),
 				q(30882, {	-- Round 2: Kang Bramblestaff
 					["isDaily"] = true,
@@ -1028,20 +991,10 @@ _.Zones =
 					["provider"] = { "n", 60968 },	-- Xuen
 					["sourceQuest"] = 30882,	-- Round 2: Kang Bramblestaff
 				}),
-				q(30883, {	-- Round 3: The Wrestler
-					["isDaily"] = true,
-					["provider"] = { "n", 60968 },	-- Xuen
-					["sourceQuest"] = 30881,	-- Round 2: Clever Ashyo & Ken-Ken
-				}),
 				q(30902, {	-- Round 4: Master Windfur
 					["isDaily"] = true,
 					["provider"] = { "n", 60968 },	-- Xuen
 					["sourceQuest"] = 30885,	-- Round 3: Master Boom Boom
-				}),
-				q(30907, {	-- Round 4: The P.U.G.
-					["isDaily"] = true,
-					["provider"] = { "n", 60968 },	-- Xuen
-					["sourceQuest"] = 30883,	-- Round 3: The Wrestler
 				}),
 				q(30684, {	-- Seeker's Folly
 					["coord"] = { 48.1, 49.0, 379 },

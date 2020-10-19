@@ -9,9 +9,7 @@ _.Zones =
 			--	IMPORTANT: if you add coordinates to any part of this file, make sure you verify them manually!  the coordinates listed on wowhead (as of september 2019) are incorrect and probably based on an older version of the krasarang map.  if you use those coordinates instead of manually confirming them, they'll place you outside of /tar range.
 			n(QUESTS, {
 			--	TODO:
-				-- verify whether "Tears of Pandaria" (30091) requires "What's Eating Zhu's Watch?" (30079) in addition to "Cheer Up, Yi-Mo"
-				-- verify whether "Into the Wilds" (30178) requires finishing the Zhu's Watch questline that ends in "Securing the Province" (30083) and "Borderlands" (30084)
-				-- try to figure out where the alternate versions of "Into the Wilds" come from for each faction.  i picked up 30178 on Alliance after completeing all the Zhu's Watch quests.  the quest text is slightly different (one version for each says "I suspect they'll know something about what happened here" and the other says "They should be told of what happened here," and one version for each provides Zhu's Watch Supplies, while the other doesn't.  possibly there are different versions if you abandon/re-pick up, or if you don't do 100% of the Zhu's Watch area, or if you start questing elsewhere in the zone?  completing one completed all four of these, so unless there's an issue with one version not doing the same then it should be good for all users.
+				-- try to figure out where the alternate versions of "Into the Wilds" come from for each faction.  i picked up 30178 on Alliance and 30133 on Horde after completeing all the Zhu's Watch quests.  the quest text is slightly different (one version for each says "I suspect they'll know something about what happened here" and the other says "They should be told of what happened here," and one version for each provides Zhu's Watch Supplies, while the other doesn't.  possibly there are different versions if you abandon/re-pick up, or if you start questing elsewhere in the zone?  completing one completed all four of these, so unless there's an issue with one version not doing the same then it should be good for all users.
 				-- try to figure out where the second version of "Going on the Offensive" comes from.  does it have different SQs?  is it from starting somewhere else in the zone, or doing it in a different order?  the quest text is slightly different (one version says "I want you to look for my scout. I sent her to investigate the Crane Temple but she hasn't returned.  Get her report and rendezvous with us at the Sentinel Basecamp further west."  the other doesn't mention a scout at all, and just says "We are pressing westward and could use your help. Meet us at the Sentinel Basecamp further west when you are ready.")
 				q(30695, {	-- Ahead on the Way
 					["sourceQuests"] = {
@@ -234,7 +232,6 @@ _.Zones =
 				
 				
 				q(30178, {	-- Into the Wilds
-				--	does this also require finishing the concurrent questline that ends in "Securing the Province" (30083) and "Borderlands" (30084)?
 					["sourceQuests"] = { 30090 },	-- Zhu's Despair
 					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 					["coord"] = { 79.8, 1.57, 418 },
@@ -247,6 +244,22 @@ _.Zones =
 					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 					["coord"] = { 79.8, 1.57, 418 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(30133, {	-- Into the Wilds
+					["sourceQuests"] = { 30090 },	-- Zhu's Despair
+					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
+					["coord"] = { 79.8, 1.57, 418 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(30461, {	-- Into the Wilds
+				--	does this have different SQs than the previous version?
+					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
+					["coord"] = { 79.8, 1.57, 418 },
+					["races"] = HORDE_ONLY,
 				}),
 				
 				
@@ -355,6 +368,14 @@ _.Zones =
 				}),
 				
 				
+				q(30121, {	-- Search Party
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 58113 },	-- Sunwalker Dezco
+					["coord"] = { 62.6, 19.9, 418 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(30083, {	-- Securing the Province
 					["sourceQuests"] = { 30091 },	-- Tears of Pandaria
 					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
@@ -418,7 +439,6 @@ _.Zones =
 				
 				
 				q(30091, {	-- Tears of Pandaria
-				--	does this also require "What's Eating Zhu's Watch?"
 					["sourceQuests"] = { 30082 },	-- Cheer Up, Yi-Mo
 					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 					["coord"] = { 79.7, 1.57, 418 },
@@ -531,6 +551,14 @@ _.Zones =
 				}),
 				
 				
+				q(31255, {	-- The Road to Kun-Lai
+					["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
+					["provider"] = { "n", 63778 },	-- Messenger Grummle
+					["coord"] = { 41.7, 29.9, 418 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(30357, {	-- The Stoneplow Convoy (A)
 					["sourceQuests"] = {
 						30354,	-- No Sister Left Behind
@@ -620,7 +648,7 @@ _.Zones =
 				
 				q(30269, {	-- Unsafe Passage
 					["sourceQuests"] = {
-					--	unclear what the difference is in these.  the quest text is slightly different (one version for each says "I suspect they'll know something about what happened here" and the other says "They should be told of what happened here," and one version for each provides Zhu's Watch Supplies, while the other doesn't.  possibly there are different versions if you abandon/re-pick up, or if you don't do 100% of the Zhu's Watch area?  completing one completed all four of these, so unless there's an issue with one version not doing the same then it should be good for all users.
+					--	unclear what the difference is in these.  the quest text is slightly different (one version for each says "I suspect they'll know something about what happened here" and the other says "They should be told of what happened here," and one version for each provides Zhu's Watch Supplies, while the other doesn't.  possibly there are different versions if you abandon/re-pick up?  completing one completed all four of these, so unless there's an issue with one version not doing the same then it should be good for all users.
 						30178,	-- Into the Wilds (A)
 						30462,	-- Into the Wilds (A)
 						30461,	-- Into the Wilds (H)
@@ -1042,15 +1070,6 @@ _.Zones =
 					["coord"] = { 9.3, 51.1, 418 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(30133, {	-- Into the Wilds
-					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 30090 },	-- Zhu's Despair
-				}),
-				q(30461, {	-- Into the Wilds
-					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
-					["races"] = HORDE_ONLY,
-				}),
 				q(32344, {	-- It Is A Mystery
 					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 					["races"] = HORDE_ONLY,
@@ -1213,12 +1232,6 @@ _.Zones =
 					["provider"] = { "n", 60136 },	-- Fiznix
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
-				}),
-				q(30121, {	-- Search Party
-					["provider"] = { "n", 58113 },	-- Sunwalker Dezco
-					["coord"] = { 62.6, 19.9, 418 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
 				}),
 				q(32133, {	-- Sentry Wards
 					["provider"] = { "n", 67628 },	-- Shademaster Kiryn
@@ -1405,14 +1418,9 @@ _.Zones =
 					},
 				}),
 				q(31254, {	-- The Road to Kun-Lai
+					["sourceQuests"] = { 59559 },	-- Hero's Call: Kun-Lai Summit!
 					["provider"] = { "n", 63778 },	-- Messenger Grummle
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 59559 },	-- Hero's Call: Kun-Lai Summit!
-				}),
-				q(31255, {	-- The Road to Kun-Lai
-					["provider"] = { "n", 63778 },	-- Messenger Grummle
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
 				}),
 				q(32391, {	-- The Ruins of Korune
 					["provider"] = { "n", 67939 },	-- General Nazgrim

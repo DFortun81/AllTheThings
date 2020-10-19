@@ -2080,6 +2080,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 85,
 				}),
+				q(60125, {	-- To Pandaria!
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, 85 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(28816, {	-- To the Depths
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, 85 },
