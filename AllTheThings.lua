@@ -2431,6 +2431,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					group = regroup;
 				end
 				if #group > 0 then
+					-- collect descriptions from all search groups and insert into the info for the search
 					if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" then
 						for i,j in ipairs(group) do
 							if j.description and j[paramA] and j[paramA] == paramB then
@@ -2443,7 +2444,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
 					end);
 					for i,j in ipairs(group) do
-						if j.g and not (j.achievementID and j.parent.difficultyID) and j.npcID ~= 0 then
+						-- always include the root quest/item when it's contained
+						if j.questID or j.itemID then
+							tinsert(subgroup, j);
+						elseif j.g and not (j.achievementID and j.parent.difficultyID) and j.npcID ~= 0 then
 							for k,l in ipairs(j.g) do
 								tinsert(subgroup, l);
 							end
