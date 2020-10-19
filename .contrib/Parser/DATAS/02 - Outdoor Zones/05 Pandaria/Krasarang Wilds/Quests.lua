@@ -714,25 +714,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32143, {	-- A Kind of Magic
-					["provider"] = { "n", 67976 },	-- Tinkmaster Overspark
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32247, {	-- A King Among Men
-					["providers"] = {
-						{ "n", 68392 },	-- King Varian Wrynn
-						{ "n", 68399 },	-- 7th Legion Champion
-					},
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32248, {	-- A Little Patience
-					["provider"] = { "n", 67940 },	-- Admiral Taylor
-					["coord"] = { 89.4, 32.6, 418 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 90,	-- 15
-					["maps"] = { 487 },	-- A Little Patience
-				}),
 				q(32127, {	-- All Dead, All Dead
 					["provider"] = { "n", 67767 },	-- Brolic
 					["races"] = HORDE_ONLY,
@@ -892,11 +873,6 @@ _.Zones =
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
-				q(30716, {	-- Chasing Hope
-					["provider"] = { "n", 60528 },	-- Kuo-Na Quillpaw
-					["isDaily"] = true,
-					["coord"] = { 31.6, 61.6, 418 },
-				}),
 				q(32251, {	-- Dagger in the Dark
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["coord"] = { 10.4, 53.8, 418 },
@@ -927,19 +903,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 32250 },	-- The Might of the Warchief
 				}),
-				q(32145, {	-- Don't Lose Your Head
-					["provider"] = { "n", 67528 },	-- Sully "The Pickle" McLeary
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-					["sourceQuests"] = { 32143 },	-- A Kind of Magic
-				}),
 				q(32351, {	-- Echoes of Thunder
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
-				}),
-				q(30725, {	-- Ellia Ravenmane
-					["provider"] = { "n", 60506 },	-- Thelonius
-					["isDaily"] = true,
 				}),
 				q(30739, {	-- Ellia Ravenmane: Redemption
 					["provider"] = { "n", 60506 },	-- Thelonius
@@ -1022,11 +988,6 @@ _.Zones =
 					["coords"] = { 10.4, 53.8, 418 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(30717, {	-- Gifts of the Great Crane
-					["provider"] = { "n", 60529 },	-- Yan Quillpaw
-					["isDaily"] = true,
-					["coord"] = { 32.0, 61.8, 418 },
-				}),
 				q(30464, {	-- Going West
 					["provider"] = { "n", 58113 },	-- Sunwalker Dezco
 					["races"] = HORDE_ONLY,
@@ -1041,11 +1002,6 @@ _.Zones =
 					["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
 					["coord"] = { 79.7, 30.0, 418 },
 					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32146, {	-- Hammer to Fall
-					["provider"] = { "n", 67386 },	-- Sky Admiral Rogers
-					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(32134, {	-- Hard Counter
@@ -1085,10 +1041,6 @@ _.Zones =
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
-				q(30658, {	-- Huff & Puff
-					["provider"] = { "n", 60135 },	-- Trawler Yotimo
-					["isDaily"] = true,
-				}),
 				q(32326, {	-- Insertion
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["coord"] = { 9.3, 51.1, 418 },
@@ -1124,10 +1076,6 @@ _.Zones =
 				}),
 				q(30729, {	-- Julia Bates
 					["provider"] = { "n", 60506 },	-- Thelonius
-					["isDaily"] = true,
-				}),
-				q(30753, {	-- Jumping the Shark
-					["provider"] = { "n", 60674 },	-- John "Big Hook" Marsock
 					["isDaily"] = true,
 				}),
 				q(29875, {	-- Kang Bramblestaff
@@ -1166,18 +1114,9 @@ _.Zones =
 					["provider"] = { "n", 60136 },	-- Fiznix
 					["isDaily"] = true,
 				}),
-				q(32109, {	-- Lion's Landing
-					["provider"] = { "n", 68399 },	-- 7th Legion Champion
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 32247 },	-- A King Among Men
-				}),
 				q(32249, {	-- Meet the Scout
 					["provider"] = { "n", 64566 },	-- Sunwalker Dezco
 					["races"] = HORDE_ONLY,
-				}),
-				q(32246, {	-- Meet the Scout
-					["provider"] = { "n", 64610 },	-- Lyalia
-					["races"] = ALLIANCE_ONLY,
 				}),
 				i(86545, {
 					q(31446, {	-- Mimic Octopus
@@ -1285,11 +1224,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(32451, {	-- Send A Message
-					["provider"] = { "n", 68908 },	-- Amber Kearnen
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(32133, {	-- Sentry Wards
 					["provider"] = { "n", 67628 },	-- Shademaster Kiryn
 					["races"] = HORDE_ONLY,
@@ -1299,11 +1233,6 @@ _.Zones =
 				q(32115, {	-- Shackles of the Past
 					["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
 					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(30584, {	-- Shocking!
-					["provider"] = { "n", 59584 },	-- Fisherman Haito
-					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 				}),
 				q(32152, {	-- Siege Damage
@@ -1340,11 +1269,6 @@ _.Zones =
 				q(32221, {	-- Storming the Beach
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-				}),
-				q(30718, {	-- Students of Chi-Ji
-					["provider"] = { "n", 60506 },	-- Thelonius
-					["isDaily"] = true,
-					["coord"] = { 31.8, 61.5, 418 },
 				}),
 				q(32150, {	-- Supply Block
 					["provider"] = { "n", 67630 },	-- Mishka
@@ -1594,11 +1518,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32144, {	-- Under Pressure
-					["provider"] = { "n", 67444 },	-- Mishka
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(32238, {	-- Universal Remote-Explode
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
@@ -1638,12 +1557,6 @@ _.Zones =
 					["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
 					["coord"] = { 79.7, 30.0, 418 },
 					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32142, {	-- We Will Rock You
-					["provider"] = { "n", 67386 },	-- Sky Admiral Rogers
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 32451 },	-- Send a Message
 					["isDaily"] = true,
 				}),
 				q(32345, {	-- We're Not Monsters!
