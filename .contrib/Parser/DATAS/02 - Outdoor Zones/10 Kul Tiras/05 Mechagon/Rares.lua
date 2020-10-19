@@ -185,6 +185,18 @@ _.Zones =
 						i(168823),	-- Rusty Mechanocrawler
 					},
 				}),
+				n(154342, {	-- Arachnoid Harvester
+					["description"] = "This creature is only located within the alternate Timeline phase and shares the same daily lockout",
+					["questID"] = 55512,
+					["coord"] = { 52.6, 41.0, 1462 },
+					["isDaily"] = true,
+					["g"] = {
+						crit(7, {	-- Arachnoid Harvester
+							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
+						i(168823),	-- Rusty Mechanocrawler
+					},
+				}),
 				n(150394, {	-- Armored Vaultbot
 					["creatureID"] = 154968,	-- future ID
 					["questID"] = 55546,

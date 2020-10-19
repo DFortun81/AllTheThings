@@ -209,13 +209,15 @@ namespace ATT
                             // authorization ran out
                             else if (response.StatusCode == HttpStatusCode.Unauthorized)
                             {
-                                Error = "API KEY EXPIRED!";
-                                break;
+                                // dont worry about auth errors i suppose...
+                                Console.WriteLine("[" + responseData.Item1.ToString() + "]: UNAUTHORIZED");
+                                //break;
                             }
                             else
                             {
-                                Error = "UNKNOWN API STATUS: " + response.StatusCode.ToString();
-                                break;
+                                Console.WriteLine("[" + responseData.Item1.ToString() + "]: " + response.StatusCode.ToString());
+                                //Error = "UNKNOWN API STATUS: " + response.StatusCode.ToString();
+                                //break;
                             }
                         }
                         catch

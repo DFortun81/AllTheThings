@@ -372,77 +372,15 @@ namespace ATT
             }
             else if (data.TryGetValue("_quests", out object quests))
             {
-                var questIDs = quests as List<object>;
-                data.Remove("_quests");
-                var clone = new Dictionary<string, object>(data);
-                if (questIDs != null && ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out ATT.Export.ObjectData objectData))
-                {
-                    switch (objectData.ObjectType)
-                    {
-                        case "criteriaID":
-                            if (CurrentParentGroup != null)
-                            {
-                                var parent = CurrentParentGroup.Value;
-                                // duplicate from an achID/criteriaID source
-                                if (parent.Key == "achID")
-                                {
-                                    if (!clone.ContainsKey(parent.Key))
-                                    {
-                                        clone.Add(parent.Key, parent.Value);
-                                    }
-                                    else
-                                    {
-                                        // child already contains the parent key value? weird but replace anyway
-                                        clone[parent.Key] = parent.Value;
-                                    }
-                                }
-                            }
-
-                            // verify the criteria has the achieve information before duplicating
-                            if (clone.ContainsKey("achID"))
-                            {
-                                List<object> critList = new List<object>() { clone };
-                                foreach (object dupeQuestID in questIDs)
-                                {
-                                    try
-                                    {
-                                        int questIDint = Convert.ToInt32(dupeQuestID);
-                                        // push the clone data into the 'g' of the matching quest objects
-                                        if (Objects.AllQuests.TryGetValue(questIDint, out Dictionary<string, object> questg))
-                                        {
-                                            Objects.Merge(questg, "g", critList);
-                                        }
-                                    }
-                                    catch
-                                    {
-                                        Trace.WriteLine("Non-integer QuestID used in _quests property:" + dupeQuestID?.ToString());
-                                    }
-                                }
-                            }
-                            break;
-                        case "achID":
-                            List<object> achList = new List<object>() { clone };
-                            foreach (object dupeQuestID in questIDs)
-                            {
-                                try
-                                {
-                                    int questIDint = Convert.ToInt32(dupeQuestID);
-                                    // push the clone data into the 'g' of the matching quest objects
-                                    if (Objects.AllQuests.TryGetValue(questIDint, out Dictionary<string, object> questg))
-                                    {
-                                        Objects.Merge(questg, "g", achList);
-                                    }
-                                }
-                                catch
-                                {
-                                    Trace.WriteLine("Non-integer QuestID used in _quests property:" + dupeQuestID?.ToString());
-                                }
-                            }
-
-                            break;
-                            // handle other types of duplication sources if necessary
-                    }
-                }
+                DuplicateDataIntoGroups(data, quests, "quest");
+            }
+            else if (data.TryGetValue("_items", out object items))
+            {
+                DuplicateDataIntoGroups(data, items, "item");
+            }
+            else if (data.TryGetValue("_npcs", out object npcs))
+            {
+                DuplicateDataIntoGroups(data, npcs, "npc");
             }
 
             // Throw away automatic Spell ID assignments for certain filter types.
@@ -614,6 +552,90 @@ namespace ATT
             }
 
             return true;
+        }
+
+        private static void DuplicateDataIntoGroups(Dictionary<string, object> data, object groups, string type)
+        {
+            var groupIDs = groups as List<object>;
+            var clone = new Dictionary<string, object>(data);
+            List<object> groupList = new List<object>() { clone };
+            if (groupIDs != null && ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out ATT.Export.ObjectData objectData))
+            {
+                switch (objectData.ObjectType)
+                {
+                    case "criteriaID":
+                        if (CurrentParentGroup != null)
+                        {
+                            var parent = CurrentParentGroup.Value;
+                            // duplicate from an achID/criteriaID source
+                            if (parent.Key == "achID")
+                            {
+                                if (!clone.ContainsKey(parent.Key))
+                                {
+                                    clone.Add(parent.Key, parent.Value);
+                                }
+                                else
+                                {
+                                    // child already contains the parent key value? weird but replace anyway
+                                    clone[parent.Key] = parent.Value;
+                                }
+                            }
+                        }
+
+                        // verify the criteria has the achieve information before duplicating
+                        if (clone.ContainsKey("achID"))
+                        {
+                            DuplicateGroupListIntoObjects(groupIDs, groupList, type);
+                        }
+                        else
+                        {
+                            Trace.WriteLine("Failed to duplicate object due to missing 'achID': " + MiniJSON.Json.Serialize(clone));
+                        }
+                        break;
+                    case "achID":
+                        DuplicateGroupListIntoObjects(groupIDs, groupList, type);
+                        break;
+                        // handle other types of duplication sources if necessary
+                }
+            }
+        }
+
+        /// <summary>
+        /// Duplicates a list of group objects into the group lists under the associated groupIDs of a given type (quest/item/npc/...)
+        /// </summary>
+        /// <param name="groupIDs"></param>
+        /// <param name="groupList"></param>
+        /// <param name="type"></param>
+        private static void DuplicateGroupListIntoObjects(List<object> groupIDs, List<object> groupList, string type)
+        {
+            // duplicate the data into the sourced data by type
+            foreach (object dupeGroupID in groupIDs)
+            {
+                try
+                {
+                    int groupIDint = Convert.ToInt32(dupeGroupID);
+                    switch (type)
+                    {
+                        case "quest":
+                            // push the clone data into the 'g' of the matching quest objects
+                            if (Objects.AllQuests.TryGetValue(groupIDint, out Dictionary<string, object> questg))
+                                Objects.Merge(questg, "g", groupList);
+                            break;
+                        //case "item":
+                        //    // push the clone data into the 'g' of the matching item object
+                        //    var item = Items.Get(groupIDint);
+                        //    Objects.Merge(item, "g", groupList);
+                        //    break;
+                        //case "npc":
+                        //    // push the clone data into the 'g' of the matching item object
+                        //    break;
+                    }
+                }
+                catch
+                {
+                    Trace.WriteLine("Non-integer " + type + "ID used in _" + type + "s property:" + dupeGroupID?.ToString());
+                }
+            }
         }
 
         /// <summary>

@@ -415,7 +415,10 @@ namespace ATT
                 if (data.TryGetValue("f", out int f) && f > 0) return;
 
                 // Calculate the filter ID. (0 is invalid, -1 is explicitly ignored)
-                data["f"] = (int)CalculateFilter(data);
+                f = (int)CalculateFilter(data);
+                data["f"] = f;
+                //if (f == 0)
+                //    Trace.WriteLine("Invalid filter for: " + MiniJSON.Json.Serialize(data));
             }
 
             /// <summary>
@@ -1647,9 +1650,15 @@ namespace ATT
                         }
 
                     case "_quests":
-                        if (value is Dictionary<object, object> quests)
+                    case "_items":
+                    case "_npcs":
+                        if (value is Dictionary<object, object> ids)
                         {
-                            item[field] = quests.Values.ToList();
+                            item[field] = ids.Values.ToList();
+                        }
+                        else if (value is List<object> idList)
+                        {
+                            item[field] = idList;
                         }
                         else
                         {
@@ -1727,7 +1736,7 @@ namespace ATT
             public static void PreMerge(Dictionary<string, object> entry, Dictionary<string, object> data)
             {
                 // sometimes existing data from harvests may be inaccurate, so may need to clean existing fields from being merged in
-                if (entry.TryGetValue("_drop", out object drops) && drops is Dictionary<object,object> dropStrs)
+                if (entry.TryGetValue("_drop", out object drops) && drops is Dictionary<object, object> dropStrs)
                 {
                     if (dropStrs != null && dropStrs.Count > 0)
                     {
@@ -1998,13 +2007,38 @@ namespace ATT
                         AllQuests.Add(questID, entry);
                     }
                 }
-                if (entry.TryGetValue("altQuestID", out int altQuestID))
-                {
-                    if (!AllQuests.ContainsKey(altQuestID))
-                    {
-                        AllQuests.Add(altQuestID, entry);
-                    }
-                }
+                //else if (entry.TryGetValue("altQuestID", out int altQuestID))
+                //{
+                //    if (!AllQuests.ContainsKey(altQuestID))
+                //    {
+                //        AllQuests.Add(altQuestID, entry);
+                //    }
+                //}
+                // This bloats the DB size by A LOT due to way more item information being included for every item, vs. only in some places
+                // Wish there was a way to link to an ItemDB from Categories.lua so that item information in each reference is identical and only the ID is necessary in Categories.lua
+                // for any object type
+                // (same with Quest/NPC probably?)
+                //else if (entry.TryGetValue("itemID", out int itemID))
+                //{
+                //    // merge any item information from the item DB...
+                //    var item = Items.Get(itemID);
+                //    PreMerge(entry, item);
+                //    Merge(entry, item);
+                //}
+                //else if (entry.TryGetValue("creatureID", out int crID) && crID > 0)
+                //{
+                //    // merge any NPC information from the NPC DB...
+                //    var npc = NPC_DB[crID];
+                //    PreMerge(entry, npc);
+                //    Merge(entry, npc);
+                //}
+                //else if (entry.TryGetValue("npcID", out int npcID) && npcID > 0)
+                //{
+                //    // merge any NPC information from the NPC DB...
+                //    var npc = NPC_DB[npcID];
+                //    PreMerge(entry, npc);
+                //    Merge(entry, npc);
+                //}
             }
 
             /// <summary>

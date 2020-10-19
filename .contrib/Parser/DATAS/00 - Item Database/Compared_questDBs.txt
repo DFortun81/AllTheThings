@@ -10976,3 +10976,2041 @@ ID #58879
 ID #58904
 - ADDED : isDaily
 - CHANGE: lvl: 120 --> 50
+------
+Comparing .\questDB-20201018.json
+14 Missing IDs in the New DB compared to the Old DB.
+38135, 38153, 38164, 41783, 42461, 51403, 52946, 53031, 57961, 57962, 58672, 58673, 58674, 58675
+0 Brand New IDs in the New DB compared to the Old DB.
+
+ID #11
+- EMPTY : lvl
+ID #16
+- EMPTY : lvl
+ID #35
+- EMPTY : lvl
+ID #37
+- EMPTY : lvl
+ID #40
+- EMPTY : lvl
+ID #45
+- EMPTY : lvl
+ID #46
+- EMPTY : lvl
+ID #47
+- EMPTY : lvl
+ID #52
+- EMPTY : lvl
+ID #59
+- EMPTY : lvl
+ID #60
+- EMPTY : lvl
+ID #62
+- EMPTY : lvl
+ID #71
+- EMPTY : lvl
+ID #76
+- EMPTY : lvl
+ID #83
+- EMPTY : lvl
+ID #84
+- EMPTY : lvl
+ID #85
+- EMPTY : lvl
+ID #86
+- EMPTY : lvl
+ID #87
+- EMPTY : lvl
+ID #88
+- EMPTY : lvl
+ID #106
+- EMPTY : lvl
+ID #107
+- EMPTY : lvl
+ID #111
+- EMPTY : lvl
+ID #112
+- EMPTY : lvl
+ID #114
+- EMPTY : lvl
+ID #123
+- EMPTY : lvl
+ID #147
+- EMPTY : lvl
+ID #176
+- EMPTY : lvl
+ID #239
+- EMPTY : lvl
+ID #332
+- EMPTY : lvl
+ID #333
+- EMPTY : lvl
+ID #334
+- EMPTY : lvl
+ID #353
+- EMPTY : lvl
+ID #1097
+- EMPTY : lvl
+ID #1582
+- EMPTY : lvl
+ID #2158
+- EMPTY : lvl
+ID #2159
+- EMPTY : lvl
+ID #2206
+- EMPTY : lvl
+ID #5545
+- EMPTY : lvl
+ID #5805
+- EMPTY : lvl
+ID #5892
+- EMPTY : lvl
+ID #5893
+- EMPTY : lvl
+ID #6661
+- EMPTY : lvl
+ID #6662
+- EMPTY : lvl
+ID #6741
+- EMPTY : lvl
+ID #6781
+- EMPTY : lvl
+ID #6801
+- EMPTY : lvl
+ID #6825
+- EMPTY : lvl
+ID #6826
+- EMPTY : lvl
+ID #6827
+- EMPTY : lvl
+ID #6846
+- EMPTY : lvl
+ID #6848
+- EMPTY : lvl
+ID #6861
+- EMPTY : lvl
+ID #6862
+- EMPTY : lvl
+ID #6881
+- EMPTY : lvl
+ID #6901
+- EMPTY : lvl
+ID #6941
+- EMPTY : lvl
+ID #6942
+- EMPTY : lvl
+ID #6943
+- EMPTY : lvl
+ID #6982
+- EMPTY : lvl
+ID #6985
+- EMPTY : lvl
+ID #7002
+- EMPTY : lvl
+ID #7026
+- EMPTY : lvl
+ID #7027
+- EMPTY : lvl
+ID #7081
+- EMPTY : lvl
+ID #7082
+- EMPTY : lvl
+ID #7101
+- EMPTY : lvl
+ID #7102
+- EMPTY : lvl
+ID #7121
+- EMPTY : lvl
+ID #7122
+- EMPTY : lvl
+ID #7123
+- EMPTY : lvl
+ID #7124
+- EMPTY : lvl
+ID #7141
+- EMPTY : lvl
+ID #7142
+- EMPTY : lvl
+ID #7161
+- EMPTY : lvl
+ID #7162
+- EMPTY : lvl
+ID #7163
+- EMPTY : lvl
+ID #7164
+- EMPTY : lvl
+ID #7165
+- EMPTY : lvl
+ID #7166
+- EMPTY : lvl
+ID #7167
+- EMPTY : lvl
+ID #7168
+- EMPTY : lvl
+ID #7169
+- EMPTY : lvl
+ID #7170
+- EMPTY : lvl
+ID #7171
+- EMPTY : lvl
+ID #7172
+- EMPTY : lvl
+ID #7202
+- EMPTY : lvl
+ID #7223
+- EMPTY : lvl
+ID #7224
+- EMPTY : lvl
+ID #7281
+- EMPTY : lvl
+ID #7282
+- EMPTY : lvl
+ID #7301
+- EMPTY : lvl
+ID #7302
+- EMPTY : lvl
+ID #7367
+- EMPTY : lvl
+ID #7368
+- EMPTY : lvl
+ID #7382
+- EMPTY : lvl
+ID #7385
+- EMPTY : lvl
+ID #7386
+- EMPTY : lvl
+ID #7882
+- EMPTY : lvl
+ID #7883
+- EMPTY : lvl
+ID #7884
+- EMPTY : lvl
+ID #7885
+- EMPTY : lvl
+ID #7890
+- EMPTY : lvl
+ID #7891
+- EMPTY : lvl
+ID #7892
+- EMPTY : lvl
+ID #7893
+- EMPTY : lvl
+ID #7895
+- EMPTY : lvl
+ID #7896
+- EMPTY : lvl
+ID #7897
+- EMPTY : lvl
+ID #7898
+- EMPTY : lvl
+ID #7900
+- EMPTY : lvl
+ID #7901
+- EMPTY : lvl
+ID #7902
+- EMPTY : lvl
+ID #7903
+- EMPTY : lvl
+ID #7931
+- EMPTY : lvl
+ID #7932
+- EMPTY : lvl
+ID #7933
+- EMPTY : lvl
+ID #7935
+- EMPTY : lvl
+ID #7936
+- EMPTY : lvl
+ID #7937
+- EMPTY : lvl
+ID #7939
+- EMPTY : lvl
+ID #7940
+- EMPTY : lvl
+ID #7941
+- EMPTY : lvl
+ID #7942
+- EMPTY : lvl
+ID #7943
+- EMPTY : lvl
+ID #7944
+- EMPTY : lvl
+ID #7945
+- EMPTY : lvl
+ID #7981
+- EMPTY : lvl
+ID #8149
+- EMPTY : lvl
+ID #8150
+- EMPTY : lvl
+ID #8222
+- EMPTY : lvl
+ID #8223
+- EMPTY : lvl
+ID #8271
+- EMPTY : lvl
+ID #8272
+- EMPTY : lvl
+ID #8311
+- EMPTY : lvl
+ID #8312
+- EMPTY : lvl
+ID #8353
+- EMPTY : lvl
+ID #8354
+- EMPTY : lvl
+ID #8355
+- EMPTY : lvl
+ID #8356
+- EMPTY : lvl
+ID #8357
+- EMPTY : lvl
+ID #8358
+- EMPTY : lvl
+ID #8359
+- EMPTY : lvl
+ID #8360
+- EMPTY : lvl
+ID #9138
+- EMPTY : lvl
+ID #9139
+- EMPTY : lvl
+ID #9140
+- EMPTY : lvl
+ID #9143
+- EMPTY : lvl
+ID #9144
+- EMPTY : lvl
+ID #9145
+- EMPTY : lvl
+ID #9146
+- EMPTY : lvl
+ID #9147
+- EMPTY : lvl
+ID #9148
+- EMPTY : lvl
+ID #9149
+- EMPTY : lvl
+ID #9150
+- EMPTY : lvl
+ID #9151
+- EMPTY : lvl
+ID #9152
+- EMPTY : lvl
+ID #9155
+- EMPTY : lvl
+ID #9156
+- EMPTY : lvl
+ID #9157
+- EMPTY : lvl
+ID #9158
+- EMPTY : lvl
+ID #9159
+- EMPTY : lvl
+ID #9160
+- EMPTY : lvl
+ID #9161
+- EMPTY : lvl
+ID #9162
+- EMPTY : lvl
+ID #9163
+- EMPTY : lvl
+ID #9164
+- EMPTY : lvl
+ID #9166
+- EMPTY : lvl
+ID #9167
+- EMPTY : lvl
+ID #9169
+- EMPTY : lvl
+ID #9170
+- EMPTY : lvl
+ID #9171
+- EMPTY : lvl
+ID #9172
+- EMPTY : lvl
+ID #9173
+- EMPTY : lvl
+ID #9174
+- EMPTY : lvl
+ID #9175
+- EMPTY : lvl
+ID #9176
+- EMPTY : lvl
+ID #9177
+- EMPTY : lvl
+ID #9180
+- EMPTY : lvl
+ID #9192
+- EMPTY : lvl
+ID #9193
+- EMPTY : lvl
+ID #9199
+- EMPTY : lvl
+ID #9207
+- EMPTY : lvl
+ID #9212
+- EMPTY : lvl
+ID #9214
+- EMPTY : lvl
+ID #9215
+- EMPTY : lvl
+ID #9216
+- EMPTY : lvl
+ID #9217
+- EMPTY : lvl
+ID #9218
+- EMPTY : lvl
+ID #9219
+- EMPTY : lvl
+ID #9220
+- EMPTY : lvl
+ID #9249
+- EMPTY : lvl
+ID #9259
+- EMPTY : lvl
+ID #9266
+- EMPTY : lvl
+ID #9267
+- EMPTY : lvl
+ID #9268
+- EMPTY : lvl
+ID #9274
+- EMPTY : lvl
+ID #9275
+- EMPTY : lvl
+ID #9276
+- EMPTY : lvl
+ID #9277
+- EMPTY : lvl
+ID #9281
+- EMPTY : lvl
+ID #9282
+- EMPTY : lvl
+ID #9315
+- EMPTY : lvl
+ID #9319
+- EMPTY : lvl
+ID #9327
+- EMPTY : lvl
+ID #9328
+- EMPTY : lvl
+ID #9329
+- EMPTY : lvl
+ID #9386
+- EMPTY : lvl
+ID #9487
+- EMPTY : lvl
+ID #9488
+- EMPTY : lvl
+ID #9548
+- EMPTY : lvl
+ID #9549
+- EMPTY : lvl
+ID #9550
+- EMPTY : lvl
+ID #9557
+- EMPTY : lvl
+ID #9561
+- EMPTY : lvl
+ID #9567
+- EMPTY : lvl
+ID #9569
+- EMPTY : lvl
+ID #9574
+- EMPTY : lvl
+ID #9576
+- EMPTY : lvl
+ID #9578
+- EMPTY : lvl
+ID #9579
+- EMPTY : lvl
+ID #9580
+- EMPTY : lvl
+ID #9581
+- EMPTY : lvl
+ID #9584
+- EMPTY : lvl
+ID #9585
+- EMPTY : lvl
+ID #9594
+- EMPTY : lvl
+ID #9620
+- EMPTY : lvl
+ID #9621
+- EMPTY : lvl
+ID #9623
+- EMPTY : lvl
+ID #9624
+- EMPTY : lvl
+ID #9625
+- EMPTY : lvl
+ID #9626
+- EMPTY : lvl
+ID #9627
+- EMPTY : lvl
+ID #9628
+- EMPTY : lvl
+ID #9629
+- EMPTY : lvl
+ID #9632
+- EMPTY : lvl
+ID #9634
+- EMPTY : lvl
+ID #9641
+- EMPTY : lvl
+ID #9642
+- EMPTY : lvl
+ID #9643
+- EMPTY : lvl
+ID #9646
+- EMPTY : lvl
+ID #9647
+- EMPTY : lvl
+ID #9648
+- EMPTY : lvl
+ID #9649
+- EMPTY : lvl
+ID #9663
+- EMPTY : lvl
+ID #9666
+- EMPTY : lvl
+ID #9667
+- EMPTY : lvl
+ID #9668
+- EMPTY : lvl
+ID #9669
+- EMPTY : lvl
+ID #9670
+- EMPTY : lvl
+ID #9671
+- EMPTY : lvl
+ID #9672
+- EMPTY : lvl
+ID #9674
+- EMPTY : lvl
+ID #9682
+- EMPTY : lvl
+ID #9683
+- EMPTY : lvl
+ID #9687
+- EMPTY : lvl
+ID #9688
+- EMPTY : lvl
+ID #9689
+- EMPTY : lvl
+ID #9693
+- EMPTY : lvl
+ID #9694
+- EMPTY : lvl
+ID #9695
+- EMPTY : lvl
+ID #9696
+- EMPTY : lvl
+ID #9698
+- EMPTY : lvl
+ID #9699
+- EMPTY : lvl
+ID #9700
+- EMPTY : lvl
+ID #9703
+- EMPTY : lvl
+ID #9706
+- EMPTY : lvl
+ID #9711
+- EMPTY : lvl
+ID #9740
+- EMPTY : lvl
+ID #9741
+- EMPTY : lvl
+ID #9746
+- EMPTY : lvl
+ID #9748
+- EMPTY : lvl
+ID #9749
+- EMPTY : lvl
+ID #9751
+- EMPTY : lvl
+ID #9753
+- EMPTY : lvl
+ID #9756
+- EMPTY : lvl
+ID #9758
+- EMPTY : lvl
+ID #9759
+- EMPTY : lvl
+ID #9760
+- EMPTY : lvl
+ID #9761
+- EMPTY : lvl
+ID #9762
+- EMPTY : lvl
+ID #9779
+- EMPTY : lvl
+ID #9811
+- EMPTY : lvl
+ID #9812
+- EMPTY : lvl
+ID #9813
+- EMPTY : lvl
+ID #10063
+- EMPTY : lvl
+ID #10064
+- EMPTY : lvl
+ID #10065
+- EMPTY : lvl
+ID #10066
+- EMPTY : lvl
+ID #10067
+- EMPTY : lvl
+ID #11691
+- EMPTY : lvl
+ID #11696
+- EMPTY : lvl
+ID #11886
+- EMPTY : lvl
+ID #11891
+- EMPTY : lvl
+ID #11917
+- EMPTY : lvl
+ID #11947
+- EMPTY : lvl
+ID #11948
+- EMPTY : lvl
+ID #11952
+- EMPTY : lvl
+ID #11953
+- EMPTY : lvl
+ID #11954
+- EMPTY : lvl
+ID #11955
+- EMPTY : lvl
+ID #12012
+- EMPTY : lvl
+ID #12517
+- EMPTY : lvl
+ID #12518
+- EMPTY : lvl
+ID #12798
+- EMPTY : lvl
+ID #13311
+- EMPTY : lvl
+ID #14001
+- EMPTY : lvl
+ID #14014
+- EMPTY : lvl
+ID #14019
+- EMPTY : lvl
+ID #14021
+- EMPTY : lvl
+ID #14031
+- EMPTY : lvl
+ID #14233
+- EMPTY : lvl
+ID #14234
+- EMPTY : lvl
+ID #14235
+- EMPTY : lvl
+ID #14236
+- EMPTY : lvl
+ID #14237
+- EMPTY : lvl
+ID #14238
+- EMPTY : lvl
+ID #14239
+- EMPTY : lvl
+ID #14240
+- EMPTY : lvl
+ID #14241
+- EMPTY : lvl
+ID #14242
+- EMPTY : lvl
+ID #14243
+- EMPTY : lvl
+ID #14244
+- EMPTY : lvl
+ID #14245
+- EMPTY : lvl
+ID #14248
+- EMPTY : lvl
+ID #14303
+- EMPTY : lvl
+ID #14313
+- EMPTY : lvl
+ID #14319
+- EMPTY : lvl
+ID #14320
+- EMPTY : lvl
+ID #14321
+- EMPTY : lvl
+ID #14326
+- EMPTY : lvl
+ID #14336
+- EMPTY : lvl
+ID #14347
+- EMPTY : lvl
+ID #14348
+- EMPTY : lvl
+ID #14366
+- EMPTY : lvl
+ID #14367
+- EMPTY : lvl
+ID #14368
+- EMPTY : lvl
+ID #14369
+- EMPTY : lvl
+ID #14375
+- EMPTY : lvl
+ID #14382
+- EMPTY : lvl
+ID #14386
+- EMPTY : lvl
+ID #14395
+- EMPTY : lvl
+ID #14396
+- EMPTY : lvl
+ID #14397
+- EMPTY : lvl
+ID #14398
+- EMPTY : lvl
+ID #14399
+- EMPTY : lvl
+ID #14400
+- EMPTY : lvl
+ID #14401
+- EMPTY : lvl
+ID #14402
+- EMPTY : lvl
+ID #14403
+- EMPTY : lvl
+ID #14404
+- EMPTY : lvl
+ID #14405
+- EMPTY : lvl
+ID #14406
+- EMPTY : lvl
+ID #14412
+- EMPTY : lvl
+ID #14416
+- EMPTY : lvl
+ID #14434
+- EMPTY : lvl
+ID #14445
+- EMPTY : lvl
+ID #14463
+- EMPTY : lvl
+ID #14465
+- EMPTY : lvl
+ID #14466
+- EMPTY : lvl
+ID #14467
+- EMPTY : lvl
+ID #14473
+- EMPTY : lvl
+ID #14474
+- EMPTY : lvl
+ID #14488
+- EMPTY : lvl
+ID #24438
+- EMPTY : lvl
+ID #24468
+- EMPTY : lvl
+ID #24472
+- EMPTY : lvl
+ID #24483
+- EMPTY : lvl
+ID #24484
+- EMPTY : lvl
+ID #24495
+- EMPTY : lvl
+ID #24501
+- EMPTY : lvl
+ID #24533
+- EMPTY : lvl
+ID #24575
+- EMPTY : lvl
+ID #24578
+- EMPTY : lvl
+ID #24592
+- EMPTY : lvl
+ID #24593
+- EMPTY : lvl
+ID #24602
+- EMPTY : lvl
+ID #24616
+- EMPTY : lvl
+ID #24617
+- EMPTY : lvl
+ID #24627
+- EMPTY : lvl
+ID #24628
+- EMPTY : lvl
+ID #24638
+- EMPTY : lvl
+ID #24645
+- EMPTY : lvl
+ID #24646
+- EMPTY : lvl
+ID #24647
+- EMPTY : lvl
+ID #24648
+- EMPTY : lvl
+ID #24649
+- EMPTY : lvl
+ID #24650
+- EMPTY : lvl
+ID #24658
+- EMPTY : lvl
+ID #24659
+- EMPTY : lvl
+ID #24660
+- EMPTY : lvl
+ID #24662
+- EMPTY : lvl
+ID #24663
+- EMPTY : lvl
+ID #24664
+- EMPTY : lvl
+ID #24671
+- EMPTY : lvl
+ID #24672
+- EMPTY : lvl
+ID #24673
+- EMPTY : lvl
+ID #24674
+- EMPTY : lvl
+ID #24675
+- EMPTY : lvl
+ID #24676
+- EMPTY : lvl
+ID #24677
+- EMPTY : lvl
+ID #24678
+- EMPTY : lvl
+ID #24679
+- EMPTY : lvl
+ID #24680
+- EMPTY : lvl
+ID #24681
+- EMPTY : lvl
+ID #24741
+- EMPTY : lvl
+ID #24744
+- EMPTY : lvl
+ID #24816
+- EMPTY : lvl
+ID #24817
+- EMPTY : lvl
+ID #24856
+- EMPTY : lvl
+ID #24858
+- EMPTY : lvl
+ID #24859
+- EMPTY : lvl
+ID #24864
+- EMPTY : lvl
+ID #24868
+- EMPTY : lvl
+ID #24897
+- EMPTY : lvl
+ID #24901
+- EMPTY : lvl
+ID #24902
+- EMPTY : lvl
+ID #24903
+- EMPTY : lvl
+ID #24904
+- EMPTY : lvl
+ID #24920
+- EMPTY : lvl
+ID #24924
+- EMPTY : lvl
+ID #24925
+- EMPTY : lvl
+ID #24929
+- EMPTY : lvl
+ID #24937
+- EMPTY : lvl
+ID #24940
+- EMPTY : lvl
+ID #24942
+- EMPTY : lvl
+ID #24945
+- EMPTY : lvl
+ID #24946
+- EMPTY : lvl
+ID #24952
+- EMPTY : lvl
+ID #24954
+- EMPTY : lvl
+ID #24958
+- EMPTY : lvl
+ID #25023
+- EMPTY : lvl
+ID #25024
+- EMPTY : lvl
+ID #25058
+- EMPTY : lvl
+ID #25066
+- EMPTY : lvl
+ID #25093
+- EMPTY : lvl
+ID #25098
+- EMPTY : lvl
+ID #25099
+- EMPTY : lvl
+ID #25100
+- EMPTY : lvl
+ID #25109
+- EMPTY : lvl
+ID #25110
+- EMPTY : lvl
+ID #25122
+- EMPTY : lvl
+ID #25123
+- EMPTY : lvl
+ID #25125
+- EMPTY : lvl
+ID #25184
+- EMPTY : lvl
+ID #25200
+- EMPTY : lvl
+ID #25201
+- EMPTY : lvl
+ID #25202
+- EMPTY : lvl
+ID #25203
+- EMPTY : lvl
+ID #25204
+- EMPTY : lvl
+ID #25207
+- EMPTY : lvl
+ID #25213
+- EMPTY : lvl
+ID #25214
+- EMPTY : lvl
+ID #25243
+- EMPTY : lvl
+ID #25244
+- EMPTY : lvl
+ID #25251
+- EMPTY : lvl
+ID #25265
+- EMPTY : lvl
+ID #25267
+- EMPTY : lvl
+ID #26150
+- EMPTY : lvl
+ID #26152
+- EMPTY : lvl
+ID #26393
+- EMPTY : lvl
+ID #26394
+- EMPTY : lvl
+ID #26395
+- EMPTY : lvl
+ID #26396
+- EMPTY : lvl
+ID #26451
+- EMPTY : lvl
+ID #26452
+- EMPTY : lvl
+ID #26706
+- EMPTY : lvl
+ID #27139
+- EMPTY : lvl
+ID #28559
+- EMPTY : lvl
+ID #28560
+- EMPTY : lvl
+ID #28617
+- EMPTY : lvl
+ID #28733
+- EMPTY : lvl
+ID #28744
+- EMPTY : lvl
+ID #28747
+- EMPTY : lvl
+ID #28748
+- EMPTY : lvl
+ID #28751
+- EMPTY : lvl
+ID #28752
+- EMPTY : lvl
+ID #29092
+- EMPTY : lvl
+ID #29100
+- EMPTY : r
+ID #29102
+- EMPTY : r
+ID #29103
+- EMPTY : r
+ID #29104
+- EMPTY : r
+ID #29105
+- EMPTY : r
+ID #29114
+- EMPTY : r
+ID #29115
+- EMPTY : r
+ID #29116
+- EMPTY : r
+ID #29118
+- EMPTY : r
+ID #29120
+- EMPTY : r
+ID #29121
+- EMPTY : r
+ID #29124
+- EMPTY : r
+ID #29131
+- EMPTY : r
+ID #29133
+- EMPTY : r
+ID #29150
+- EMPTY : r
+ID #29151
+- EMPTY : r
+ID #29152
+- EMPTY : r
+ID #29153
+- EMPTY : r
+ID #29154
+- EMPTY : r
+ID #29155
+- EMPTY : r
+ID #29156
+- EMPTY : r
+ID #29157
+- EMPTY : r
+ID #29158
+- EMPTY : r
+ID #29213
+- EMPTY : r
+ID #29219
+- EMPTY : r
+ID #29220
+- EMPTY : r
+ID #29222
+- EMPTY : r
+ID #29226
+- EMPTY : r
+ID #29227
+- EMPTY : r
+ID #29228
+- EMPTY : r
+ID #29229
+- EMPTY : r
+ID #29230
+- EMPTY : r
+ID #29231
+- EMPTY : r
+ID #29232
+- EMPTY : r
+ID #29233
+- EMPTY : r
+ID #29235
+- EMPTY : r
+ID #29236
+- EMPTY : r
+ID #29237
+- EMPTY : r
+ID #29238
+- EMPTY : r
+ID #29250
+- EMPTY : r
+ID #29251
+- EMPTY : r
+ID #29252
+- EMPTY : r
+ID #29253
+- EMPTY : r
+ID #29267
+- EMPTY : r
+ID #29268
+- EMPTY : r
+ID #29392
+- EMPTY : lvl
+ID #29398
+- EMPTY : lvl
+ID #29399
+- EMPTY : lvl
+ID #29402
+- EMPTY : lvl
+ID #29403
+- EMPTY : lvl
+ID #29404
+- EMPTY : lvl
+ID #29405
+- EMPTY : lvl
+ID #29407
+- EMPTY : lvl
+ID #29411
+- EMPTY : lvl
+ID #29413
+- EMPTY : lvl
+ID #29415
+- EMPTY : lvl
+ID #29416
+- EMPTY : lvl
+ID #29425
+- EMPTY : lvl
+ID #29426
+- EMPTY : lvl
+ID #29427
+- EMPTY : lvl
+ID #29428
+- EMPTY : lvl
+ID #29429
+- EMPTY : lvl
+ID #29430
+- EMPTY : lvl
+ID #29431
+- EMPTY : lvl
+ID #29443
+- EMPTY : lvl
+ID #29444
+- EMPTY : lvl
+ID #29445
+- EMPTY : lvl
+ID #29446
+- EMPTY : lvl
+ID #29451
+- EMPTY : lvl
+ID #29456
+- EMPTY : lvl
+ID #29457
+- EMPTY : lvl
+ID #29458
+- EMPTY : lvl
+ID #29464
+- EMPTY : lvl
+ID #29521
+- EMPTY : lvl
+ID #29661
+- EMPTY : lvl
+ID #29662
+- EMPTY : lvl
+ID #29663
+- EMPTY : lvl
+ID #29665
+- EMPTY : lvl
+ID #29666
+- EMPTY : lvl
+ID #29676
+- EMPTY : lvl
+ID #29677
+- EMPTY : lvl
+ID #29678
+- EMPTY : lvl
+ID #29679
+- EMPTY : lvl
+ID #29680
+- EMPTY : lvl
+ID #29761
+- EMPTY : lvl
+ID #29768
+- EMPTY : lvl
+ID #29769
+- EMPTY : lvl
+ID #29770
+- EMPTY : lvl
+ID #29771
+- EMPTY : lvl
+ID #29772
+- EMPTY : lvl
+ID #29773
+- EMPTY : lvl
+ID #29774
+- EMPTY : lvl
+ID #29775
+- EMPTY : lvl
+ID #29776
+- EMPTY : lvl
+ID #29777
+- EMPTY : lvl
+ID #29778
+- EMPTY : lvl
+ID #29779
+- EMPTY : lvl
+ID #29780
+- EMPTY : lvl
+ID #29781
+- EMPTY : lvl
+ID #29782
+- EMPTY : lvl
+ID #29783
+- EMPTY : lvl
+ID #29784
+- EMPTY : lvl
+ID #29785
+- EMPTY : lvl
+ID #29786
+- EMPTY : lvl
+ID #29787
+- EMPTY : lvl
+ID #29788
+- EMPTY : lvl
+ID #29789
+- EMPTY : lvl
+ID #29790
+- EMPTY : lvl
+ID #29791
+- EMPTY : lvl
+ID #29792
+- EMPTY : lvl
+ID #29793
+- EMPTY : lvl
+ID #29794
+- EMPTY : lvl
+ID #29795
+- EMPTY : lvl
+ID #29796
+- EMPTY : lvl
+ID #29797
+- EMPTY : lvl
+ID #29798
+- EMPTY : lvl
+ID #29799
+- EMPTY : lvl
+ID #29800
+- EMPTY : lvl
+ID #30589
+- EMPTY : lvl
+ID #30590
+- EMPTY : lvl
+ID #30591
+- EMPTY : lvl
+ID #30767
+- EMPTY : lvl
+ID #30817
+- EMPTY : lvl
+ID #30818
+- EMPTY : lvl
+ID #30987
+- EMPTY : lvl
+ID #31012
+- EMPTY : lvl
+ID #31013
+- EMPTY : lvl
+ID #31450
+- EMPTY : lvl
+ID #31519
+- EMPTY : r
+ID #31520
+- EMPTY : r
+ID #31522
+- EMPTY : r
+ID #31523
+- EMPTY : r
+ID #31524
+- EMPTY : r
+ID #31525
+- EMPTY : r
+ID #31526
+- EMPTY : r
+ID #31527
+- EMPTY : r
+ID #31528
+- EMPTY : r
+ID #31806
+- EMPTY : lvl
+ID #31998
+- EMPTY : r
+ID #32000
+- EMPTY : r
+ID #32001
+- EMPTY : r
+ID #32002
+- EMPTY : r
+ID #32003
+- EMPTY : r
+ID #32004
+- EMPTY : r
+ID #32005
+- EMPTY : r
+ID #32006
+- EMPTY : r
+ID #32007
+- EMPTY : r
+ID #32373
+- EMPTY : r
+ID #32374
+- EMPTY : r
+ID #32388
+- EMPTY : r
+ID #32389
+- EMPTY : r
+ID #32390
+- EMPTY : r
+ID #32427
+- EMPTY : r
+ID #32429
+- EMPTY : r
+ID #32430
+- EMPTY : r
+ID #32431
+- EMPTY : r
+ID #32432
+- EMPTY : r
+ID #32470
+- EMPTY : lvl
+ID #32471
+- EMPTY : lvl
+ID #32589
+- EMPTY : r
+ID #32599
+- EMPTY : r
+ID #32900
+- EMPTY : r
+ID #32901
+- EMPTY : r
+ID #32979
+- EMPTY : r
+ID #32980
+- EMPTY : r
+ID #32983
+- EMPTY : r
+ID #32984
+- EMPTY : r
+ID #32985
+- EMPTY : r
+ID #33248
+- EMPTY : r
+ID #33249
+- EMPTY : r
+ID #33354
+- EMPTY : lvl
+ID #33444
+- EMPTY : r
+ID #34026
+- EMPTY : r
+ID #34027
+- EMPTY : r
+ID #34028
+- EMPTY : r
+ID #34029
+- EMPTY : r
+ID #34030
+- EMPTY : r
+ID #34031
+- EMPTY : r
+ID #34032
+- EMPTY : r
+ID #34033
+- EMPTY : r
+ID #34034
+- EMPTY : r
+ID #34035
+- EMPTY : r
+ID #34039
+- EMPTY : r
+ID #34040
+- EMPTY : r
+ID #34041
+- EMPTY : r
+ID #34042
+- EMPTY : r
+ID #34048
+- EMPTY : r
+ID #34078
+- EMPTY : r
+ID #34213
+- EMPTY : r
+ID #34245
+- EMPTY : r
+ID #34281
+- EMPTY : r
+ID #34284
+- EMPTY : r
+ID #34285
+- EMPTY : r
+ID #34286
+- EMPTY : r
+ID #34287
+- EMPTY : r
+ID #34288
+- EMPTY : r
+ID #34289
+- EMPTY : r
+ID #34309
+- EMPTY : r
+ID #34314
+- EMPTY : r
+ID #34315
+- EMPTY : r
+ID #34316
+- EMPTY : r
+ID #34318
+- EMPTY : r
+ID #34319
+- EMPTY : r
+ID #34362
+- EMPTY : r
+ID #34381
+- EMPTY : r
+ID #34469
+- EMPTY : r
+ID #35142
+- EMPTY : r
+ID #35185
+- EMPTY : r
+ID #35186
+- EMPTY : r
+ID #35196
+- EMPTY : r
+ID #35197
+- EMPTY : r
+ID #35679
+- EMPTY : r
+ID #35680
+- EMPTY : r
+ID #35683
+- EMPTY : r
+ID #35684
+- EMPTY : r
+ID #35685
+- EMPTY : r
+ID #35687
+- EMPTY : r
+ID #35736
+- EMPTY : r
+ID #35737
+- EMPTY : r
+ID #35837
+- EMPTY : r
+ID #35838
+- EMPTY : r
+ID #35839
+- EMPTY : r
+ID #35840
+- EMPTY : r
+ID #35841
+- EMPTY : r
+ID #35842
+- EMPTY : r
+ID #35843
+- EMPTY : r
+ID #35844
+- EMPTY : r
+ID #35845
+- EMPTY : r
+ID #35846
+- EMPTY : r
+ID #35861
+- EMPTY : r
+ID #35876
+- EMPTY : r
+ID #35935
+- EMPTY : r
+ID #35985
+- EMPTY : r
+ID #36095
+- EMPTY : r
+ID #36117
+- EMPTY : r
+ID #36160
+- EMPTY : r
+ID #36161
+- EMPTY : r
+ID #36162
+- EMPTY : r
+ID #36163
+- EMPTY : r
+ID #36164
+- EMPTY : r
+ID #36167
+- EMPTY : r
+ID #36168
+- EMPTY : r
+ID #36169
+- EMPTY : r
+ID #36171
+- EMPTY : r
+ID #36193
+- EMPTY : r
+ID #36242
+- EMPTY : r
+ID #36248
+- EMPTY : r
+ID #36261
+- EMPTY : r
+ID #36289
+- EMPTY : r
+ID #36290
+- EMPTY : r
+ID #36341
+- EMPTY : r
+ID #36342
+- EMPTY : r
+ID #36412
+- EMPTY : r
+ID #36414
+- EMPTY : r
+ID #36614
+- EMPTY : r
+ID #36615
+- EMPTY : r
+ID #36623
+- EMPTY : r
+ID #36650
+- EMPTY : r
+ID #36653
+- EMPTY : r
+ID #36655
+- EMPTY : r
+ID #36741
+- EMPTY : r
+ID #36742
+- EMPTY : r
+ID #36791
+- EMPTY : r
+ID #36830
+- EMPTY : r
+ID #36831
+- EMPTY : r
+ID #36935
+- EMPTY : r
+ID #37047
+- EMPTY : r
+ID #37070
+- EMPTY : r
+ID #37080
+- EMPTY : r
+ID #37081
+- EMPTY : r
+ID #37112
+- EMPTY : lvl
+ID #37113
+- EMPTY : r
+ID #37114
+- EMPTY : r
+ID #37126
+- EMPTY : r
+ID #37127
+- EMPTY : r
+ID #37128
+- EMPTY : r
+ID #37129
+- EMPTY : r
+ID #37131
+- EMPTY : r
+ID #37137
+- EMPTY : r
+ID #37140
+- EMPTY : r
+ID #37180
+- EMPTY : r
+ID #37181
+- EMPTY : r
+ID #37182
+- EMPTY : r
+ID #37191
+- EMPTY : r
+ID #37192
+- EMPTY : r
+ID #37483
+- EMPTY : r
+ID #37484
+- EMPTY : r
+ID #37516
+- EMPTY : r
+ID #37517
+- EMPTY : r
+ID #37540
+- EMPTY : r
+ID #37541
+- EMPTY : r
+ID #37543
+- EMPTY : r
+ID #37547
+- EMPTY : r
+ID #37548
+- EMPTY : r
+ID #37549
+- EMPTY : r
+ID #37550
+- EMPTY : r
+ID #37551
+- EMPTY : r
+ID #37552
+- EMPTY : r
+ID #37553
+- EMPTY : r
+ID #37554
+- EMPTY : r
+ID #37555
+- EMPTY : r
+ID #37557
+- EMPTY : r
+ID #37558
+- EMPTY : r
+ID #37559
+- EMPTY : r
+ID #37560
+- EMPTY : r
+ID #37561
+- EMPTY : r
+ID #37562
+- EMPTY : r
+ID #37687
+- EMPTY : r
+ID #37688
+- EMPTY : r
+ID #37756
+- EMPTY : r
+ID #37757
+- EMPTY : r
+ID #37758
+- EMPTY : r
+ID #37762
+- EMPTY : r
+ID #37763
+- EMPTY : r
+ID #37764
+- EMPTY : r
+ID #37765
+- EMPTY : r
+ID #37766
+- EMPTY : r
+ID #37767
+- EMPTY : r
+ID #37768
+- EMPTY : r
+ID #37769
+- EMPTY : r
+ID #37770
+- EMPTY : r
+ID #37771
+- EMPTY : r
+ID #37772
+- EMPTY : r
+ID #37773
+- EMPTY : r
+ID #37774
+- EMPTY : r
+ID #37775
+- EMPTY : r
+ID #37776
+- EMPTY : r
+ID #37777
+- EMPTY : r
+ID #37778
+- EMPTY : r
+ID #37807
+- EMPTY : r
+ID #37808
+- EMPTY : r
+ID #37809
+- EMPTY : r
+ID #37810
+- EMPTY : r
+ID #37811
+- EMPTY : r
+ID #37813
+- EMPTY : r
+ID #37814
+- EMPTY : r
+ID #37815
+- EMPTY : r
+ID #37816
+- EMPTY : r
+ID #37817
+- EMPTY : r
+ID #37818
+- EMPTY : r
+ID #37839
+- EMPTY : r
+ID #37840
+- EMPTY : r
+ID #37852
+- EMPTY : r
+ID #37863
+- EMPTY : r
+ID #37885
+- EMPTY : r
+ID #37889
+- EMPTY : r
+ID #37890
+- EMPTY : r
+ID #37919
+- EMPTY : r
+ID #37920
+- EMPTY : r
+ID #37924
+- EMPTY : r
+ID #37925
+- EMPTY : r
+ID #37926
+- EMPTY : r
+ID #37934
+- EMPTY : r
+ID #37935
+- EMPTY : r
+ID #37945
+- EMPTY : r
+ID #37948
+- EMPTY : r
+ID #37949
+- EMPTY : r
+ID #37961
+- EMPTY : r
+ID #37979
+- EMPTY : r
+ID #37992
+- EMPTY : r
+ID #37993
+- EMPTY : r
+ID #37994
+- EMPTY : r
+ID #37995
+- EMPTY : r
+ID #37996
+- EMPTY : r
+ID #37997
+- EMPTY : r
+ID #38113
+- EMPTY : lvl
+ID #38124
+- EMPTY : lvl
+ID #38253
+- EMPTY : r
+ID #38256
+- EMPTY : r
+ID #38258
+- EMPTY : r
+ID #38267
+- EMPTY : r
+ID #38269
+- EMPTY : r
+ID #38356
+- EMPTY : r
+ID #38415
+- EMPTY : r
+ID #38416
+- EMPTY : r
+ID #38417
+- EMPTY : r
+ID #38421
+- EMPTY : r
+ID #38435
+- EMPTY : r
+ID #38436
+- EMPTY : r
+ID #38444
+- EMPTY : r
+ID #38445
+- EMPTY : r
+ID #38453
+- EMPTY : r
+ID #38458
+- EMPTY : r
+ID #38463
+- EMPTY : r
+ID #38560
+- EMPTY : r
+ID #38561
+- EMPTY : r
+ID #38562
+- EMPTY : r
+ID #38565
+- EMPTY : r
+ID #38567
+- EMPTY : r
+ID #38570
+- EMPTY : r
+ID #38572
+- EMPTY : r
+ID #38573
+- EMPTY : r
+ID #38927
+- EMPTY : r
+ID #38928
+- EMPTY : r
+ID #38929
+- EMPTY : r
+ID #38930
+- EMPTY : r
+ID #38934
+- EMPTY : lvl
+ID #38996
+- EMPTY : r
+ID #39175
+- EMPTY : r
+ID #39195
+- EMPTY : r
+ID #39221
+- EMPTY : r
+ID #39225
+- EMPTY : r
+ID #39228
+- EMPTY : r
+ID #39231
+- EMPTY : r
+ID #39232
+- EMPTY : r
+ID #39250
+- EMPTY : r
+ID #39253
+- EMPTY : r
+ID #39256
+- EMPTY : r
+ID #39259
+- EMPTY : r
+ID #39260
+- EMPTY : r
+ID #39345
+- EMPTY : r
+ID #39394
+- EMPTY : r
+ID #39645
+- EMPTY : r
+ID #40168
+- EMPTY : lvl
+ID #40173
+- EMPTY : lvl
+ID #40391
+- EMPTY : r
+ID #40417
+- EMPTY : r
+ID #40418
+- EMPTY : r
+ID #40632
+- EMPTY : r
+ID #40786
+- EMPTY : lvl
+ID #40787
+- EMPTY : lvl
+ID #41607
+- EMPTY : r
+ID #42758
+- EMPTY : lvl
+ID #43810
+- EMPTY : r
+ID #43812
+- EMPTY : r
+ID #44546
+- EMPTY : lvl
+ID #44558
+- EMPTY : lvl
+ID #44559
+- EMPTY : lvl
+ID #44560
+- EMPTY : lvl
+ID #44743
+- EMPTY : r
+ID #44749
+- EMPTY : r
+ID #44750
+- EMPTY : r
+ID #44758
+- EMPTY : r
+ID #44831
+- EMPTY : r
+ID #44858
+- EMPTY : r
+ID #44859
+- EMPTY : r
+ID #44860
+- EMPTY : r
+ID #44861
+- EMPTY : r
+ID #44862
+- EMPTY : r
+ID #44885
+- EMPTY : r
+ID #44949
+- EMPTY : r
+ID #44971
+- EMPTY : r
+ID #44974
+- EMPTY : r
+ID #44975
+- EMPTY : r
+ID #44991
+- EMPTY : r
+ID #44992
+- EMPTY : r
+ID #44993
+- EMPTY : r
+ID #44994
+- EMPTY : r
+ID #45034
+- EMPTY : r
+ID #45397
+- EMPTY : r
+ID #45563
+- EMPTY : lvl
+ID #45573
+- EMPTY : r
+ID #45576
+- EMPTY : r
+ID #45628
+- EMPTY : r
+ID #45629
+- EMPTY : r
+ID #45637
+- EMPTY : lvl
+ID #45638
+- EMPTY : lvl
+ID #45639
+- EMPTY : lvl
+ID #45640
+- EMPTY : lvl
+ID #45641
+- EMPTY : lvl
+ID #45642
+- EMPTY : lvl
+ID #45643
+- EMPTY : lvl
+ID #45729
+- EMPTY : lvl
+ID #45730
+- EMPTY : lvl
+ID #45731
+- EMPTY : lvl
+ID #45732
+- EMPTY : lvl
+ID #45733
+- EMPTY : lvl
+ID #45734
+- EMPTY : lvl
+ID #45735
+- EMPTY : lvl
+ID #45747
+- EMPTY : lvl
+ID #45748
+- EMPTY : lvl
+ID #45749
+- EMPTY : lvl
+ID #45750
+- EMPTY : lvl
+ID #45751
+- EMPTY : lvl
+ID #45752
+- EMPTY : lvl
+ID #45753
+- EMPTY : lvl
+ID #45754
+- EMPTY : lvl
+ID #45755
+- EMPTY : lvl
+ID #45756
+- EMPTY : lvl
+ID #45757
+- EMPTY : lvl
+ID #45758
+- EMPTY : lvl
+ID #45759
+- EMPTY : lvl
+ID #45760
+- EMPTY : lvl
+ID #45761
+- EMPTY : lvl
+ID #45762
+- EMPTY : lvl
+ID #45785
+- EMPTY : lvl
+ID #45787
+- EMPTY : lvl
+ID #45833
+- EMPTY : r
+ID #45835
+- EMPTY : r
+ID #45836
+- EMPTY : r
+ID #46089
+- EMPTY : r
+ID #46178
+- EMPTY : r
+ID #46260
+- EMPTY : r
+ID #46268
+- EMPTY : r
+ID #46272
+- EMPTY : r
+ID #46274
+- EMPTY : r
+ID #46275
+- EMPTY : r
+ID #46282
+- EMPTY : r
+ID #46322
+- EMPTY : r
+ID #46323
+- EMPTY : r
+ID #46324
+- EMPTY : r
+ID #46326
+- EMPTY : r
+ID #46810
+- EMPTY : r
+ID #46827
+- EMPTY : r
+ID #46946
+- EMPTY : r
+ID #47097
+- EMPTY : r
+ID #47112
+- EMPTY : r
+ID #47202
+- EMPTY : r
+ID #47430
+- EMPTY : lvl
+ID #47506
+- EMPTY : r
+ID #47663
+- EMPTY : lvl
+ID #50046
+- EMPTY : r
+ID #50047
+- EMPTY : r
+ID #50048
+- EMPTY : r
+ID #50049
+- EMPTY : r
+ID #50052
+- EMPTY : r
+ID #50053
+- EMPTY : r
+ID #50054
+- EMPTY : r
+ID #50055
+- EMPTY : r
+ID #50226
+- EMPTY : r
+ID #50227
+- EMPTY : r
+ID #50228
+- EMPTY : r
+ID #50230
+- EMPTY : r
+ID #50231
+- EMPTY : r
+ID #50232
+- EMPTY : r
+ID #50318
+- EMPTY : lvl
+ID #50358
+- EMPTY : r
+ID #50360
+- EMPTY : r
+ID #50364
+- EMPTY : r
+ID #50372
+- EMPTY : r
+ID #50373
+- EMPTY : r
+ID #50374
+- EMPTY : r
+ID #53028
+- EMPTY : r
+ID #53476
+- EMPTY : g
+ID #55498
+- EMPTY : lvl
+ID #55499
+- EMPTY : lvl
+ID #55660
+- EMPTY : lvl
+ID #56470
+- EMPTY : _area

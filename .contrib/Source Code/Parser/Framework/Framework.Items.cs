@@ -788,7 +788,7 @@ namespace ATT
 
             /// <summary>
             /// Merge information about the item matching the data's itemID into the dictionary.
-            /// If the source dictionary does not contain an itemID, this method does nothing.
+            /// If the source dictionary does not contain an itemID or toyID, this method does nothing.
             /// </summary>
             /// <param name="data">The data dictionary to receive the merged data.</param>
             public static void MergeInto(Dictionary<string, object> data)

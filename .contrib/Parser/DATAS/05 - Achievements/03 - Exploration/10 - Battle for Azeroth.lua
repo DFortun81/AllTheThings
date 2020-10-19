@@ -840,7 +840,9 @@ _.Achievements =
 				crit(4),	-- Jawbreaker
 				crit(5),	-- Paol Pondwader
 				crit(6),	-- Rumblerocks
-				crit(7),	-- Arachnoid Harvester
+				crit(7, {	-- Arachnoid Harvester
+					["_npcs"] = { 151934, 154342 },
+				}),
 				crit(8),	-- Killsaw
 				crit(9),	-- Fungarian Furor
 				crit(10),	-- Foul Manifestations
