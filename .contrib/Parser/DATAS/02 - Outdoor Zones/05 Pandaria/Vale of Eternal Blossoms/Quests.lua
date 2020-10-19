@@ -96,6 +96,13 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "n", 58743 },	-- Yumi Goldenpaw
 				}),
+				q(31369, {	-- The Anglers
+				--	if this quest is available, it requires fishing and never having approached the anglers' wharf on the character at all.  as soon as you approach (with fishing unlocked) you hit neutral with the faction.  (TODO: if someone tests this under those conditions and this breadcrumb is still unavailable, it needs to be marked removed)
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 64033 },	-- Master Angler Karu
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 86.5, 60.2, 390 },
+				}),
 				q(31103, {	-- The Ballad of Liu Lang
 					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01Ballad of Liu Lang|r achievement.",
 					["provider"] = { "i", 83780 },	-- The Ballad of Liu Lang
