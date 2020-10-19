@@ -7,6 +7,10 @@ _.Zones =
 	m(424, {	-- Pandaria
 		m(418, {	-- Krasarang Wilds
 			--	IMPORTANT: if you add coordinates to any part of this file, make sure you verify them manually!  the coordinates listed on wowhead (as of september 2019) are incorrect and probably based on an older version of the krasarang map.  if you use those coordinates instead of manually confirming them, they'll place you outside of /tar range.
+			--	TODO:
+				-- find out if "Zhu's Watch" criteria (specifically for Alliance, but i think all the quests are neutral, so probably either faction) requires doing through "Securing the Province" (30083) and "Borderlands" (30084)
+				-- find out if "The Incursion" criteria requires "Lotus Tea" (30351) and "Threats from Dojan" (30349)
+				-- turn in "Buried Hozen Treasure" but NOT "Balance" or "Balance Without Violence" to make sure they're required for the criteria
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
@@ -15,6 +19,14 @@ _.Zones =
 						crit(24, {	-- Mo'ruk
 							["coord"] = { 65.0, 42.7, 418 },
 							["cr"] = 66733,	-- Mo'ruk <Grand Master Pet Tamer>
+						}),
+					},
+				}),
+				ach(6716, {	-- Between a Saurok and a Hard Place
+					["collectible"] = false,
+					["g"] = {
+						crit(4, {	-- The Last Stand
+							["coord"] = { 33.3, 25.0, 418 },
 						}),
 					},
 				}),
@@ -60,11 +72,27 @@ _.Zones =
 				ach(6535, {	-- Mighty Roamin' Krasaranger (Alliance)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1),	-- Zhu's Watch
-						crit(2),	-- The Incursion
-						crit(3),	-- Nayeli Lagoon
-						crit(4),	-- Temple of the Red Crane
-						crit(5),	-- The Waters of Youth
+						crit(1, {	-- Zhu's Watch
+						--	may also require questing through "Securing the Province" and "Borderlands," the other questline in this area
+							["sourceQuests"] = { 30090 },	-- Zhu's Despair
+						}),
+						crit(2, {	-- The Incursion
+						--	may also require "Lotus Tea" (30351) and "Threats from Dojan" (30349)
+							["sourceQuests"] = { 30348 },	-- Immortality?
+						}),
+						crit(3, {	-- Nayeli Lagoon
+							["sourceQuests"] = {
+							--	30672,	-- Balance (required?)
+							--	30674,	-- Balance Without Violence (required?)
+								30675,	-- Buried Hozen Treasure
+							},
+						}),
+						crit(4, {	-- Temple of the Red Crane
+							["sourceQuests"] = { 30273 },	-- In the House of the Red Crane
+						}),
+						crit(5, {	-- The Waters of Youth
+							["sourceQuests"] = { 30445 },	-- The Waters of Youth
+						}),
 					},
 				}),
 				ach(6536, {	-- Mighty Roamin' Krasaranger (Horde)

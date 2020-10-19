@@ -30,7 +30,7 @@ _.Instances = { tier(7, {	-- Legion
 					["lvl"] = 110,
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(2,   {	-- Heroic
 				n(ZONEDROPS, {
 					i(147117, {	-- Orb of the Fel Temptress
 						["cr"] = 118714,  -- Hellblaze Temptress
@@ -96,9 +96,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(144463),	-- Shard of Kaldorei Stained Glass
 				})),
 			}),
-			d(23, {	-- Mythic
+			d(23,  {	-- Mythic
 				n(ZONEDROPS, {
 					i(147514, {	-- Felguard Destroyer's Legplates
+						["bonusID"] = 1812,
 						["crs"] = {
 							118704,	-- Dul'zak
 							118723,	-- Gazerax
@@ -110,6 +111,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					}),
 					i(147515, {	-- Hellblaze Invader's Greaves
+						["bonusID"] = 1812,
 						["crs"] = {
 							118704,	-- Dul'zak
 							118723,	-- Gazerax
@@ -121,6 +123,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					}),
 					i(147517, {	-- Inquisitor's Battle Cowl
+						["bonusID"] = 1812,
 						["crs"] = {
 							118704,	-- Dul'zak
 							118723,	-- Gazerax
@@ -131,7 +134,8 @@ _.Instances = { tier(7, {	-- Legion
 							120717,	-- Mistress Dominix
 						},
 					}),
-					i(147516, {	-- Legion Stalker's Hood
+						i(147516, {	-- Legion Stalker's Hood
+						["bonusID"] = 1812,
 						["crs"] = {
 							118704,	-- Dul'zak
 							118723,	-- Gazerax
