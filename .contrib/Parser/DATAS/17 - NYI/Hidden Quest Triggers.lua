@@ -178,6 +178,8 @@ _.HiddenQuestTriggers =
 		q(47464),	-- Bonus roll on Kazzak World boss during WoW 15th anniversary in 2019
 		q(47466),	-- Bonus roll on Emeriss during anniversary event
 		q(28997),	-- triggered together with 28961, Surwich Candy Bucket
+		q(39609),	-- Hallow's End Active, triggered when I applied Creepy Crawlers garrison decoration
+		q(39828),	-- Horseman and Guards Shared Criteria, triggered when I applied Creepy Crawlers garrison decoration
 
 		-- Darkmoon Faire
 		q(30557),	-- [DNT] A Captured Banner TRACKER - triggers after completing A Captured Banner (questID 29456)
