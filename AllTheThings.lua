@@ -6837,6 +6837,22 @@ local npcFields = {
 	["collected"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
+	["altcollected"] = function(t)
+		if not rawget(t,"altcollected") then
+			rawset(t,"altcollected",0);
+			-- determine if an altQuest is considered completed for this quest for this character
+			if t.altQuests then
+				for i,questID in ipairs(t.altQuests) do
+					-- any altQuest completed on this character, mark the altQuestID
+					if IsQuestFlaggedCompleted(questID) then
+						-- print("complete altquest found",questID,"=>",t.questID);
+						rawset(t, "altcollected", questID);
+					end
+				end
+			end
+		end
+		return rawget(t, "altcollected");
+	end,
 	["creatureID"] = function(t) return t.npcID; end,
 	["displayID"] = function(t) return NPCDisplayIDFromID[t.npcID]; end,
 	["icon"] = function(t)
@@ -6908,6 +6924,21 @@ app.BaseObject = {
 			return t.questID;
 		elseif key == "saved" or key == "collected" then
 			return IsQuestFlaggedCompletedForObject(t);
+		elseif key == "altcollected" then
+			if not rawget(t,"altcollected") then
+				rawset(t,"altcollected",0);
+				-- determine if an altQuest is considered completed for this quest for this character
+				if t.altQuests then
+					for i,questID in ipairs(t.altQuests) do
+						-- any altQuest completed on this character, mark the altQuestID
+						if IsQuestFlaggedCompleted(questID) then
+							-- print("complete altquest found",questID,"=>",t.questID);
+							rawset(t, "altcollected", questID);
+						end
+					end
+				end
+			end
+			return rawget(t, "altcollected");
 		elseif key == "sort" then
 			if t.order then return t.order .. t.text end
 			return "51" .. t.text;

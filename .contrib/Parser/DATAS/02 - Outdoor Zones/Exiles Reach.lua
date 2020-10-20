@@ -53,6 +53,10 @@ _.Zones =
 								55882,	-- Message to Base
 								55639,	-- Who Lurks in the Pit
 							},
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(59951, {	-- A Druid's Form (H) -- TODO: needs provider
 							["coord"] = { 52.0, 55.2, 1409 },
@@ -61,6 +65,10 @@ _.Zones =
 							["sourceQuests"] = {
 								59947,	-- Message to Base
 								59949,	-- Who Lurks in the Pit
+							},
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
 							},
 						}),
 					},
@@ -73,6 +81,10 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 154327 },	-- Austin Huxworth
 							["sourceQuest"] = 55173,	-- Northbound
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(59355, {	-- A Hunter's Trap (A)
 							["coord"] = { 52.4, 55.2, 1409 },
@@ -82,24 +94,40 @@ _.Zones =
 								59947,	-- Message to Base
 								59949,	-- Who Lurks in the Pit
 							},
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(59356, {	-- Hunting the Stalker (A)
 							["coord"] = { 52.4, 55.2, 1409 },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 161666 },	-- Austin Huxworth
 							["sourceQuest"] = 59355,	-- A Hunter's Trap
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(60168, {	-- The Art of Taming (A)
 							["coord"] = { 52.4, 55.2, 1409 },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 161666 },	-- Austin Huxworth
 							["sourceQuest"] = 59356,	-- Hunting the Stalker
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(59937, {	-- Taming the Wilds (H)
 							["coord"] = { 62.7, 69.8, 1409 },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
 							["sourceQuest"] = 59935,	-- Northbound
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 						q(59952, {	-- A Hunter's Trap (H) -- TODO: need provider
 							["coord"] = { 52.4, 55.2, 1409 },
@@ -109,18 +137,30 @@ _.Zones =
 								59947,	-- Message to Base
 								59949,	-- Who Lurks in the Pit
 							},
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 						q(59953, {	-- Hunting the Stalker (H) -- TODO: need provider
 							["coord"] = { 52.4, 55.2, 1409 },
 							["races"] = HORDE_ONLY,
 							--["provider"] = { "n",  },	--
 							["sourceQuest"] = 59952,	-- A Hunter's Trap
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 						q(60162, {	-- The Art of Taming (H)	-- TODO: need provider
 							["coord"] = { 52.4, 55.2, 1409 },
 							["races"] = HORDE_ONLY,
 							--["provider"] = { "n",  },	--
 							["sourceQuest"] = 59953,	-- Hunting the Stalker
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 					},
 				}),
@@ -132,24 +172,40 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 156886 },	-- Meredy Huntswell
 							["sourceQuest"] = 55882,	-- Message to Base
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(59354, {	-- The Best Way to Use Sheep (A)
 							["coord"] = { 52.2, 55.4, 1409 },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 156886 },	-- Meredy Huntswell
 							["sourceQuest"] = 59352,	-- A Mage's Knowledge
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(59954, {	-- A Mage's Knowledge (H)
 							["coord"] = { 52.0, 55.2, 1409 },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 167216 },	-- Grunt Throg
 							["sourceQuest"] = 59947,	-- Message to Base
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 						q(59955, {	-- The Best Way to Use Sheep (H) -- TODO: need provider
 							["coord"] = { 52.2, 55.4, 1409 },
 							["races"] = HORDE_ONLY,
 							--["provider"] = { "n",  },	--
 							["sourceQuest"] = 59954,	-- A Mage's Knowledge
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 					},
 				}),
@@ -161,36 +217,60 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 156651 },	-- Captain Garrick
 							["sourceQuest"] = 55174,	-- Cooking Meat
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(59347, {	-- A Monk's Focus (A)
 							["coord"] = { 52.0, 55.2, 1409 },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 156885 },	-- Kee-La
 							["sourceQuest"] = 55882,	-- Message to Base
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(59349, {	-- One Last Spar (A)
 							["coord"] = { 52.6, 49.4, 1409 },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 164835 },	-- Kee-La
 							["sourceQuest"] = 59347,	-- A Monk's Focus
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(59934, {	-- Enhanced Combat Tactics (H - Monk)
 							["coord"] = { 58.3, 74.6, 1409 },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
 							["sourceQuest"] = 59932,	-- Cooking Meat
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 						q(59956, {	-- A Monk's Focus (H) -- TODO: needs provider
 							["coord"] = { 52.0, 55.2, 1409 },
 							["races"] = HORDE_ONLY,
 							--["provider"] = { "n",  },	--
 							["sourceQuest"] = 59947,	-- Message to Base
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 						q(59957, {	-- One Last Spar (H) -- TODO: need provider
 							["coord"] = { 52.6, 49.4, 1409 },
 							["races"] = HORDE_ONLY,
 							--["provider"] = { "n",  },	--
 							["sourceQuest"] = 59956,	-- A Monk's Focus
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 					},
 				}),
@@ -202,24 +282,40 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 156801 },	-- Private Cole
 							["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(58946, {	-- The Divine's Shield (A)
 							["coord"] = { 57.5, 52.2, 1409 },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 162998 },	-- Yorah
 							["sourceQuest"] = 58923,	-- A Paladin's Service
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(59958, {	-- A Paladin's Service (H)
 							["coord"] = { 52.0, 55.4, 1409 },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 167216 },	-- Grunt Throg
 							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 						q(60174, {	-- The Divine's Shield (H)
 							["coord"] = { 57.5, 52.2, 1409 },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 167179 },	-- Daelya Twilightsbane
 							["sourceQuest"] = 59958,	-- A Paladin's Service
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 					},
 				}),
@@ -231,24 +327,40 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 156801 },	-- Private Cole
 							["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(58960, {	-- Resurrecting the Recruits (A)
 							["coord"] = { 56.1, 53.6, 1409 },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 163108 },	-- Branven Hammerheart
 							["sourceQuest"] = 58953,	-- A Priest's End
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(59961, {	-- A Priest's End (H)
 							["coord"] = { 52.0, 55.2, 1409 },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 167216 },	-- Grunt Throg
 							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 						q(59965, {	-- Resurrecting the Recruits (H) -- TODO: need provider
 							["coord"] = { 56.1, 53.6, 1409 },
 							["races"] = HORDE_ONLY,
 							--["provider"] = { "n",  },	--
 							["sourceQuest"] = 59961,	-- A Priest's End
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 					},
 				}),
@@ -260,24 +372,40 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 156801 },	-- Private Cole
 							["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(58933, {	-- The Deadliest of Poisons (A)
 							["coord"] = { 45.6, 56.1, 1409 },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 163024 },	-- Coulston Nereus
 							["sourceQuest"] = 58917,	-- A Rogue's End
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(59967, {	-- A Rogue's End (H)
 							["coord"] = { 52.0, 55.2, 1409 },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 167216 },	-- Grunt Throg
 							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 						q(59968, {	-- The Deadliest of Poisons (H) -- TODO: need provider
 							["coord"] = { 45.6, 56.1, 1409 },
 							["races"] = HORDE_ONLY,
 							--["provider"] = { "n",  },	--
 							["sourceQuest"] = 59967,	-- A Rogue's End
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 					},
 				}),
@@ -290,6 +418,10 @@ _.Zones =
 							["classes"] = { SHAMAN },
 							["provider"] = { "n", 163329 },	-- Ghostwolf
 							["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						--[[q(, {	-- A Shaman's Duty (H)
 							["coord"] = { , 1409 },
@@ -297,6 +429,10 @@ _.Zones =
 							["classes"] = { SHAMAN },
 							["provider"] = { "n",  },	--
 							["sourceQuest"] = ,	--
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),]]--
 					},
 				}),
@@ -308,12 +444,20 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 156801 },	-- Private Cole
 							["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(59970, {	-- A Warlock's Bargain (H)
 							["coord"] = { 52.0, 55.2, 1409 },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 167216 },	-- Grunt Throg
 							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 					},
 				}),
@@ -325,24 +469,40 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 156801 },	-- Private Cole
 							["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(58915, {	-- Hjalmar's Final Execution (A)
 							["coord"] = { 51.5, 47.8, 1409 },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 162943 },	-- Hjalmar the Undying
 							["sourceQuest"] = 58914,	-- A Warrior's End
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								55991,	-- An End to Beginnings [A]
+							},
 						}),
 						q(59971, {	-- A Warrior's End (H)
 							["coord"] = { 52.0, 55.2, 1409 },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 167216 },	-- Grunt Throg
 							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 						q(59972, {	-- Hjalmar's Final Execution (H) -- TODO: need provider
 							["coord"] = { 51.5, 47.8, 1409 },
 							["races"] = HORDE_ONLY,
 							--["provider"] = { "n",  },	--
 							["sourceQuest"] = 59971,	-- A Warrior's End
+							["altQuests"] = {
+								62808,	-- 120 character prior to 9.0
+								59985,	-- An End to Beginnings [H]
+							},
 						}),
 					},
 				}),
@@ -352,6 +512,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156961 },	-- Captain Garrick
 					["sourceQuest"] = 55992,	-- Dungeon: Darkmaul Citadel
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
 					["g"] = {
 						i(175176, {    -- Expeditionary Cloth Robe
 							["races"] = ALLIANCE_ONLY,
@@ -373,6 +536,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167675 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59984,	-- Dungeon: Darkmaul Citadel
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
 					["g"] = {
 						i(175208, {    -- Expeditionary Cloth Robe
 							["races"] = HORDE_ONLY,
@@ -392,47 +558,79 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 160664 },	-- Private Cole
 					["sourceQuest"] = 58209,	-- Stand Your Ground
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59928, {	-- Brace for Impact (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166583 },	-- Grunt Throg
 					["sourceQuest"] = 59927,	-- Stand Your Ground
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(55989, {	-- Catapult Destruction (A)
 					["coord"] = { 40.2, 32.3, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156960 },	-- Meredy Huntswell
 					["sourceQuest"] = 55981,	-- Right Beneath Their Eyes
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59980, {	-- Catapult Destruction (H)
 					["coord"] = { 40.3, 32.4, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167631 },	-- Herbert Gloomburst
 					["sourceQuest"] = 59978,	-- Right Beneath Their Eyes
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(55990, {	-- Controlling their Stones (A)
 					["coord"] = { 40.1, 32.3, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156961 },	-- Captain Garrick
 					["sourceQuest"] = 55981,	-- Right Beneath Their Eyes
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59981, {	-- Controlling Their Stones (H)
 					["coord"] = { 40.2, 32.4, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167633 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59978,	-- Right Beneath Their Eyes
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(55174, {	-- Cooking Meat (A)
 					["coord"] = { 58.3, 74.6, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156651 },	-- Captain Garrick
 					["sourceQuest"] = 54952,	-- Finding the Lost Expedition
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59932, {	-- Cooking Meat (H)
 					["coord"] = { 58.3, 74.6, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59931,	-- Finding the Lost Expedition
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(55186, {	-- Down with the Quilboar (A)
 					["coord"] = { 62.7, 69.8, 1409 },
@@ -441,6 +639,10 @@ _.Zones =
 					["sourceQuests"] = {
 						55173,	-- Northbound (All except hunters)
 						59342,	-- Taming the Wilds (hunters)
+					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
 					},
 				}),
 				q(59938, {	-- Down with the Quilboar (H)
@@ -451,6 +653,10 @@ _.Zones =
 						59935,	-- Northbound (All except hunters)
 						59937,	-- Taming the Wilds (hunters)
 					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(55992, {	-- Dungeon: Darkmaul Citadel (A)
 					["coord"] = { 39.9, 32.1, 1409 },
@@ -460,6 +666,10 @@ _.Zones =
 						55989,	-- Catapult Destruction
 						55990,	-- Controlling their Stones
 						55988,	-- Like Ogres to the Slaughter
+					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
 					},
 					["g"] = {
 						i(175188),	-- Expeditionary Cloth Hood
@@ -477,6 +687,10 @@ _.Zones =
 						59981,	-- Controlling their Stones
 						59979,	-- Like Ogres to the Slaughter
 					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 					["g"] = {
 						i(175220),	-- Expeditionary Cloth Hood
 						i(175222),	-- Expeditionary Leather Helm
@@ -489,12 +703,20 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156626 },	-- Captain Garrick
 					["sourceQuest"] = 55122,	-- Murloc Mania
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59930, {	-- Emergency First Aid (H)
 					["coord"] = { 61.8, 82.8, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59929,	-- Murloc Mania
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(59254, {	-- Enhanced Combat Tactics (A)
 					["coord"] = { 58.3, 74.6, 1409 },
@@ -502,6 +724,10 @@ _.Zones =
 					["classes"] = exclude({ HUNTER, MONK }, ALL_CLASSES),
 					["provider"] = { "n", 156651 },	-- Captain Garrick
 					["sourceQuest"] = 55174,	-- Cooking Meat
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59933, {	-- Enhanced Combat Tactics (H)
 					["coord"] = { 58.3, 74.6, 1409 },
@@ -509,18 +735,30 @@ _.Zones =
 					["classes"] = exclude({ HUNTER, MONK }, ALL_CLASSES),
 					["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59932,	-- Cooking Meat
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(54952, {	-- Finding the Lost Expedition (A)
 					["coord"] = { 61.8, 82.8, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156626 },	-- Captain Garrick
 					["sourceQuest"] = 54951,	-- Emergency First Aid
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59931, {	-- Finding the Lost Expedition (H)
 					["coord"] = { 61.8, 82.8, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59930,	-- Emergency First Aid
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(55184, {	-- Forbidden Quilboar Necromancy (A)
 					["coord"] = { 62.7, 69.8, 1409 },
@@ -529,6 +767,10 @@ _.Zones =
 					["sourceQuests"] = {
 						55173,	-- Northbound (All except hunters)
 						59342,	-- Taming the Wilds (hunters)
+					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
 					},
 				}),
 				q(59939, {	-- Forbidden Quilboar Necromancy (H)
@@ -539,13 +781,22 @@ _.Zones =
 						59935,	-- Northbound (All except hunters)
 						59937,	-- Taming the Wilds (hunters)
 					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(54933, {	-- Freeing the Light
 					["coord"] = { 58.1, 50.2, 1409 },
 					["provider"] = { "n", 157114 },	-- Lightspawn
 					["sourceQuests"] = {
-						55879,	-- Ride of the Scientifically Enhanced Boar
-						59942,	-- The Re-Deather
+						55879,	-- Ride of the Scientifically Enhanced Boar [A]
+						59942,	-- The Re-Deather [H]
+					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+						59985,	-- An End to Beginnings [H]
 					},
 				}),
 				q(55764, {	-- Harpy Culling (A)
@@ -553,20 +804,33 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156860 },	-- Kee-La
 					["sourceQuest"] = 55196,	-- The Harpy Problem
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59945, {	-- Harpy Culling (H)
 					["coord"] = { 56.9, 46.2, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167291 },	-- Bo
 					["sourceQuest"] = 59943,	-- The Harpy Problem
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(56839, {	-- Killclaw the Terrible
 					["lvl"] = 7,
 					["coord"] = { 48.7, 54.2, 1409 },
 					["provider"] = { "o", 330627 },	-- Danger Sign
 					["sourceQuests"] = {
-						55879,	-- Ride of the Scientifically Enhanced Boar
-						59942,	-- The Re-deather
+						55879,	-- Ride of the Scientifically Enhanced Boar [A]
+						59942,	-- The Re-Deather [H]
+					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+						59985,	-- An End to Beginnings [H]
 					},
 					["g"] = {
 						i(175229, {	-- Expeditionary Cloth Mantle
@@ -600,6 +864,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156942 },	-- Henry Garrick
 					["sourceQuest"] = 55981,	-- Right Beneath Their Eyes
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 					["g"] = {
 						i(175186, {		-- Expeditionary Cloth Gloves
 							["races"] = ALLIANCE_ONLY,
@@ -620,6 +888,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167632 },	-- Shuja Grimaxe
 					["sourceQuest"] = 59978,	-- Right Beneath Their Eyes
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 					["g"] = {
 						i(175218, {		-- Expeditionary Cloth Gloves
 							["races"] = HORDE_ONLY,
@@ -643,6 +915,10 @@ _.Zones =
 						55764,	-- Harpy Culling
 						55881,	-- Purge the Totems
 						55763,	-- The Rescue of Meredy Huntswell
+					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
 					},
 					["g"] = {
 						i(175192, {		-- Expeditionary Cloth Leggings
@@ -668,6 +944,10 @@ _.Zones =
 						59946,	-- Purge the Totems
 						59944,	-- The Rescue of Herbert Gloomburst
 					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 					["g"] = {
 						i(175224, {		-- Expeditionary Cloth Leggings
 							["races"] = HORDE_ONLY,
@@ -688,12 +968,20 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156626 },	-- Captain Garrick
 					["sourceQuest"] = 58208,	-- Brace for Impact
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59929, {	-- Murloc Mania (H)
 					["coord"] = { 61.8, 82.8, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59928,	-- Brace for Impact
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(55173, {	-- Northbound (A)
 					["coord"] = { 58.3, 74.4, 1409 },
@@ -703,6 +991,10 @@ _.Zones =
 						55174,	-- Cooking Meat (hunters)
 						59254,	-- Enhanced Combat Tactics (all except hunters/monks)
 						59339,	-- Enhanced Combat Tactics (monk)
+					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
 					},
 				}),
 				q(59935, {	-- Northbound (H)
@@ -714,12 +1006,20 @@ _.Zones =
 						59933,	-- Enhanced Combat Tactics (all except hunters/monks)
 						59934,	-- Enhanced Combat Tactics (monk)
 					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(55881, {	-- Purge the Totems (A)
 					["coord"] = { 56.9, 46.2, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156859 },	-- Henry Garrick
 					["sourceQuest"] = 55196,	-- The Harpy Problem
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 					["g"] = {
 						i(175200, {		-- Expeditionary Cloth Cord
 							["races"] = ALLIANCE_ONLY,
@@ -740,6 +1040,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167291 },	-- Bo
 					["sourceQuest"] = 59943,	-- The Harpy Problem
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 					["g"] = {
 						i(175238, {		-- Expeditionary Cloth Cord
 							["races"] = HORDE_ONLY,
@@ -760,18 +1064,30 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 149899 },	-- Lindie Springstock
 					["sourceQuest"] = 55193,	-- The Scout-o-Matic 5000
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59941, {	-- Re-sizing the Situation (H)
 					["coord"] = { 56.1, 59.1, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167019 },	-- Cork Fizzlepop
 					["sourceQuest"] = 59940,	-- The Choppy Booster Mk 5
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(55879, {	-- Ride of the Scientifically Enhanced Boar
 					["coord"] = { 56.2, 59.0, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156280 },	-- Captain Garrick
 					["sourceQuest"] = 56034,	-- Re-sizing the Situation
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 					["g"] = {
 						i(175167),	-- Expeditionary Staff
 						i(175172),	-- Expeditionary Dagger
@@ -787,34 +1103,58 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156941 },	-- Captain Garrick
 					["sourceQuest"] = 56344,	-- To Darkmaul Citadel
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59978, {	-- Right Beneath Their Eyes (H)
 					["coord"] = { 48.9, 49.3, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167596 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59975,	-- To Darkmaul Citadel
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(58209, {	-- Stand Your Ground (A)
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 160664 },	-- Private Cole
 					["sourceQuest"] = 56775,	-- Warming Up
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59927, {	-- Stand Your Ground (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166583 },	-- Grunt Throg
 					["sourceQuest"] = 59926,	-- Warming Up
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(55194, {	-- Stocking Up on Supplies (A)
 					["coord"] = { 52.3, 55.3, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156807 },	-- Captain Garrick
-					["sourceQuest"] = 55879,	-- Ride of the Scientifically Enhanced Boar
+					["sourceQuest"] = 55879,	-- Ride of the Scientifically Enhanced Boar [A]
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59950, {	-- Stocking Up on Supplies (H)
 					["coord"] = { 52.1, 55.3, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
-					["sourceQuest"] = 59942,	-- The Re-Deather
+					["sourceQuest"] = 59942,	-- The Re-Deather [H]
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(59940, {	-- The Choppy Booster Mk 5
 					["coord"] = { 56.1, 59.1, 1409 },
@@ -824,24 +1164,40 @@ _.Zones =
 						59938,	-- Down with the Quilboar
 						59939,	-- Forbidden Quilboar Necromancy
 					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(55196, {	-- The Harpy Problem (A)
 					["coord"] = { 53.5, 52.3, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156833 },	-- Henry Garrick
 					["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59943, {	-- The Harpy Problem (H)
 					["coord"] = { 53.7, 52.1, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167219 },	-- Shuja Grimaxe
 					["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(59942, {	-- The Re-Deather
 					["coord"] = { 56.1, 59.1, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167019 },	-- Cork Fizzlepop
 					["sourceQuest"] = 59941,	-- Re-sizing the Situation
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 					["g"] = {
 						i(175161),	-- Expeditionary Axe
 						i(175163),	-- Expeditionary Quarterstaff
@@ -857,12 +1213,20 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167290 },	-- Shuja Grimaxe
 					["sourceQuest"] = 59943,	-- The Harpy Problem
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(55763, {	-- The Rescue of Meredy Huntswell
 					["coord"] = { 56.8, 46.1, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156859 },	-- Henry Garrick
 					["sourceQuest"] = 55196,	-- The Harpy Problem
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(55193, {	-- The Scout-o-Matic 5000
 					["coord"] = { 56.1, 59.1, 1409 },
@@ -871,6 +1235,10 @@ _.Zones =
 					["sourceQuests"] = {
 						55186,	-- Down with the Quilboar
 						55184,	-- Forbidden Quilboar Necromancy
+					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
 					},
 				}),
 				q(56344, {	-- To Darkmaul Citadel (A)
@@ -884,6 +1252,10 @@ _.Zones =
 						59354,	-- The Best Way to Use Sheep (mage)
 						55639,	-- Who Lurks in the Pit (all)
 					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59975, {	-- To Darkmaul Citadel (H)
 					["coord"] = { 52.1, 55.3, 1409 },
@@ -896,32 +1268,56 @@ _.Zones =
 						59955,	-- The Best Way to Use Sheep (mage)
 						59949,	-- Who Lurks in the Pit (all)
 					},
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(56775, {	-- Warming Up (A)
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156280 },	-- Captain Garrick
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59926, {	-- Warming Up (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 166573 },	-- Warlord Breka Grimaxe
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(55965, {	-- Westward Bound (A)
 					["coord"] = { 53.0, 55.0, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 154300 },	-- Bjorn Stouthands
 					["sourceQuest"] = 55194,	-- Stocking Up on Supplies
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 				}),
 				q(59948, {	-- Westward Bound (H)
 					["coord"] = { 52.9, 56.4, 1409 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167221 },	-- Lana Jordan
 					["sourceQuest"] = 59950,	-- Stocking Up on Supplies
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				q(55639, {	-- Who Lurks in the Pit (A)
 					["coord"] = { 51.1, 59.5, 1409 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 156803 },	-- Alaria
 					["sourceQuest"] = 55965,	-- Westward Bound
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+					},
 					["g"] = {
 						i(175203, {	-- Expeditionary Cloth Cuffs
 							["races"] = ALLIANCE_ONLY,
@@ -942,6 +1338,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 167225 },	-- Lana Jordan
 					["sourceQuest"] = 59948,	-- Westward Bound
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						59985,	-- An End to Beginnings [H]
+					},
 					["g"] = {
 						i(175234, {		-- Expeditionary Cloth Cuffs
 							["races"] = HORDE_ONLY,
@@ -961,13 +1361,23 @@ _.Zones =
 			n(RARES, {
 				n(156676, {	-- Ogre Overseer
 					["coord"] = { 60.5, 60.0, 1409 },
-					["questID"] = 56051
+					["questID"] = 56051,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				n(156986, {	-- Ogre Taskmaster
-					["questID"] = 59611,
 					["coords"] = {
 						{ 59.2, 40.5, 1409 },
 						{ 57.6, 40.9, 1409 },
+					},
+					["questID"] = 59611,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+						59985,	-- An End to Beginnings [H]
 					},
 				}),
 			}),
@@ -975,18 +1385,38 @@ _.Zones =
 				o(339770, {	-- Abandoned Treasure Chest
 					["coord"] = { 57.1, 68.4, 1409 },
 					["questID"] = 58380,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				o(329918, {	-- Quilboar Treasures
 					["coord"] = { 58.5, 59.3, 1409 },
 					["questID"] = 56579,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				o(329919, {	-- Stolen Supplies
 					["coord"] = { 59.3, 37.6, 1409 },
 					["questID"] = 56581,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 				o(327407, {	-- Precious Ogre Stash
 					["coord"] = { 41.8, 42.8, 1409 },
 					["questID"] = 56088,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+						55991,	-- An End to Beginnings [A]
+						59985,	-- An End to Beginnings [H]
+					},
 				}),
 			}),
 			n(ZONEDROPS, {
