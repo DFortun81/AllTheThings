@@ -11,28 +11,6 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(ACHIEVEMENTS, {
-							ach(9639),	-- Fight, Kill, Salute!
-							ach(9517, {	-- Nemesis: Death Stalker
-								title(272),		-- the Death Stalker
-							}),
-							ach(9520, {	-- Nemesis: Huojin's Fall
-								title(276),		-- ,Huojin's Fall
-							}),
-							ach(9518, {	-- Nemesis: Killer of Kezan
-								title(273),		-- ,Killer of Kezan
-							}),
-							ach(9519, {	-- Nemesis: Orcslayer
-								title(271),		-- Orcslayer
-							}),
-							ach(9516, {	-- Nemesis: Slayer of Sin'dorei
-								title(275),		-- ,Slayer of Sin'dorei
-							}),
-							ach(9521, {	-- Nemesis: The Butcher
-								title(270),		-- the Butcher
-							}),
-							ach(9522, {	-- Nemesis: Troll Hunter
-								title(274),		-- Troll Hunter
-							}),
 							ach(9495, {		-- The Bone Collector
 								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 								["g"] = {
@@ -41,15 +19,29 @@ _.ExpansionFeatures =
 							}),
 							ach(9738, {	-- Warlord of Draenor (Alliance) achievements used instead of criteria as criteria are behaving strangely with debug mode on
 								title(269),		-- ,Warlord of Draenor
-								ach(9522),		-- Nemesis: Troll Hunter
-								ach(9521),		-- Nemesis: The Butcher
-								ach(9520),		-- Nemesis: Huojin's Fall
-								ach(9519),		-- Nemesis: Orcslayer
-								ach(9518),		-- Nemesis: Killer of Kezan
-								ach(9517),		-- Nemesis: Death Stalker
-								ach(9516),		-- Nemesis: Slayer of Sin'dorei
-								ach(9639),		-- Fight, Kill, Salute!
-							}),
+								ach(9522, {	-- Nemesis: Troll Hunter
+									title(274),		-- Troll Hunter
+								}),
+								ach(9521, {	-- Nemesis: The Butcher
+									title(270),		-- the Butcher
+								}),
+								ach(9520, {	-- Nemesis: Huojin's Fall
+									title(276),		-- ,Huojin's Fall
+								}),
+								ach(9519, {	-- Nemesis: Orcslayer
+									title(271),		-- Orcslayer
+								}),
+								ach(9518, {	-- Nemesis: Killer of Kezan
+									title(273),		-- ,Killer of Kezan
+								}),
+								ach(9517, {	-- Nemesis: Death Stalker
+									title(272),		-- the Death Stalker
+								}),
+								ach(9516, {	-- Nemesis: Slayer of Sin'dorei
+									title(275),		-- ,Slayer of Sin'dorei
+								}),
+									ach(9639),		-- Fight, Kill, Salute!
+								}),
 						}),
 						n(QUESTS, {
 							q(37082),	-- Call of the Gladiator

@@ -376,48 +376,6 @@ _.Achievements =
 			ach(10160, {	-- Naval Treasure Expert
 				ach(10159),		-- Naval Treasure Specialist
 			}),
-			a(ach(9517, {	-- Nemesis: Death Stalker
-				title(272),		-- the Death Stalker
-			})),
-			h(ach(9509, {	-- Nemesis: Draenei Destroyer
-				title(267),		-- ,Draenei Destroyer
-			})),
-			h(ach(9510, {	-- Nemesis: Dwarfstalker
-				title(264),		-- the Dwarfstalker
-			})),
-			h(ach(9511, {	-- Nemesis: Gnomebane
-				title(263),		-- Gnomebane
-			})),
-			a(ach(9520, {	-- Nemesis: Huojin's Fall
-				title(276),		-- ,Huojin's Fall
-			})),
-			a(ach(9518, {	-- Nemesis: Killer of Kezan
-				title(273),		-- ,Killer of Kezan
-			})),
-			h(ach(9512, {	-- Nemesis: Manslayer
-				title(262),		-- the Manslayer
-			})),
-			a(ach(9519, {	-- Nemesis: Orcslayer
-				title(271),		-- Orcslayer
-			})),
-			h(ach(9513, {	-- Nemesis: Scourge of the Kaldorei
-				title(266),		-- ,Scourge of the Kaldorei
-			})),
-			a(ach(9516, {	-- Nemesis: Slayer of Sin'dorei
-				title(275),		-- ,Slayer of Sin'dorei
-			})),
-			h(ach(9514, {	-- Nemesis: Terror of the Tushui
-				title(268),		-- ,Terror of the Tushui
-			})),
-			a(ach(9521, {	-- Nemesis: The Butcher
-				title(270),		-- the Butcher
-			})),
-			a(ach(9522, {	-- Nemesis: Troll Hunter
-				title(274),		-- Troll Hunter
-			})),
-			h(ach(9515, {	-- Nemesis: Worgen Hunter
-				title(265),		-- Worgen Hunter
-			})),
 			ach(9204),		-- Ogre Invasion
 			ach(9140, {		-- On A Metric Ton of Missions
 				ach(9133), 		-- On a Mission
@@ -547,24 +505,52 @@ _.Achievements =
 			}),
 			a(ach(9738, {	-- Warlord of Draenor (Alliance) achievements used instead of criteria as criteria are behaving strangely with debug mode on
 				title(269),		-- ,Warlord of Draenor
-				ach(9522),		-- Nemesis: Troll Hunter
-				ach(9521),		-- Nemesis: The Butcher
-				ach(9520),		-- Nemesis: Huojin's Fall
-				ach(9519),		-- Nemesis: Orcslayer
-				ach(9518),		-- Nemesis: Killer of Kezan
-				ach(9517),		-- Nemesis: Death Stalker
-				ach(9516),		-- Nemesis: Slayer of Sin'dorei
+				a(ach(9522, {	-- Nemesis: Troll Hunter
+					title(274),		-- Troll Hunter
+				})),
+				a(ach(9521, {	-- Nemesis: The Butcher
+					title(270),		-- the Butcher
+				})),
+				a(ach(9520, {	-- Nemesis: Huojin's Fall
+					title(276),		-- ,Huojin's Fall
+				})),
+				a(ach(9519, {	-- Nemesis: Orcslayer
+					title(271),		-- Orcslayer
+				})),
+				a(ach(9518, {	-- Nemesis: Killer of Kezan
+					title(273),		-- ,Killer of Kezan
+				})),
+				a(ach(9517, {	-- Nemesis: Death Stalker
+					title(272),		-- the Death Stalker
+				})),
+				a(ach(9516, {	-- Nemesis: Slayer of Sin'dorei
+					title(275),		-- ,Slayer of Sin'dorei
+				})),
 				ach(9639),		-- Fight, Kill, Salute!
 			})),
 			h(ach(9508, {	-- Warlord of Draenor (Horde) achievements used instead of criteria as criteria are behaving strangely with debug mode on
 				title(269),		-- ,Warlord of Draenor
-				ach(9515),		-- Nemesis: Worgen Hunter
-				ach(9514),		-- Nemesis: Terror of the Tushui
-				ach(9513),		-- Nemesis: Scourge of the Kaldorei
-				ach(9512),		-- Nemesis: Manslayer
-				ach(9511),		-- Nemesis: Gnomebane
-				ach(9510),		-- Nemesis: Dwarfstalker
-				ach(9509),		-- Nemesis: Draenei Destroyer
+				h(ach(9515, {	-- Nemesis: Worgen Hunter
+					title(265),		-- Worgen Hunter
+				})),
+				h(ach(9514, {	-- Nemesis: Terror of the Tushui
+					title(268),		-- ,Terror of the Tushui
+				})),
+				h(ach(9513, {	-- Nemesis: Scourge of the Kaldorei
+					title(266),		-- ,Scourge of the Kaldorei
+				})),
+				h(ach(9512, {	-- Nemesis: Manslayer
+					title(262),		-- the Manslayer
+				})),
+				h(ach(9511, {	-- Nemesis: Gnomebane
+					title(263),		-- Gnomebane
+				})),
+				h(ach(9510, {	-- Nemesis: Dwarfstalker
+					title(264),		-- the Dwarfstalker
+				})),
+				h(ach(9509, {	-- Nemesis: Draenei Destroyer
+					title(267),		-- ,Draenei Destroyer
+				})),
 				ach(9639),		-- Fight, Kill, Salute!
 			})),
 			ach(9499, {		-- Wingmen
