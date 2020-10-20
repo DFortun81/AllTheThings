@@ -175,21 +175,11 @@ _.Zones =
 					},
 				}),
 				n(151934, {	-- Arachnoid Harvester
+					["description"] = "Both versions of Arachnoid Harvester (the current timeline and alternate timeline) drop the same loot and share a daily lockout.  You can use a Personal Time Displacer to travel to the alternate timeline if Chromie is not in Rustbolt.",
 					["questID"] = 55512,
-					["coord"] = { 52.6, 41.0, 1462 },
 					["isDaily"] = true,
-					["g"] = {
-						crit(7, {	-- Arachnoid Harvester
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(168823),	-- Rusty Mechanocrawler
-					},
-				}),
-				n(154342, {	-- Arachnoid Harvester
-					["description"] = "This creature is only located within the alternate Timeline phase and shares the same daily lockout.",
-					["questID"] = 55512,
 					["coord"] = { 52.6, 41.0, 1462 },
-					["isDaily"] = true,
+					["crs"] = { 154342 },	-- Arachnoid Harvester (alt-time)
 					["g"] = {
 						crit(7, {	-- Arachnoid Harvester
 							["achievementID"] = 13470,	-- Rest in Pistons

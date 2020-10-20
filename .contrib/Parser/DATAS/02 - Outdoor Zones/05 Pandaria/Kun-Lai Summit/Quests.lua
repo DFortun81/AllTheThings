@@ -743,6 +743,7 @@ _.Zones =
 					},
 				}),
 				q(30768, {	-- My Husband...
+					["isBreadcrumb"] = true,
 					["coord"] = { 31.3, 61.6, 379 },
 					["provider"] = { "n", 61454 },	-- Suna Silentstrike
 					["sourceQuest"] = 30992,	-- Finish This!
