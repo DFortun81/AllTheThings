@@ -17,7 +17,9 @@ _.Zones =
 							ach(7929, {	-- Dominance Offensive Campaign
 								["races"] = HORDE_ONLY,
 								["g"] = {
-									crit(1),	-- Domination Point
+									crit(1, {	-- Domination Point
+										["sourceQuests"] = { 32108 },	-- Domination Point
+									}),
 									crit(2),	-- The Voice of the Gods
 									crit(3),	-- The Horde is Family
 									crit(4),	-- Blood For Blood
@@ -79,6 +81,71 @@ _.Zones =
 								},
 							}),
 						}),
+						n(QUESTS, {
+							q(32127, {	-- All Dead, All Dead
+							--	may also require Flash! and/or Death on Two Legs
+								["sourceQuests"] = { 32126 },	-- Tear it Up
+								["provider"] = { "n", 67767 },	-- Brolic
+								["isDaily"] = true,
+								["coord"] = { 9.36, 50.4, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32128, {	-- Another One Bites the Dust
+							--	may also require Flash! and/or Death on Two Legs
+								["sourceQuests"] = { 32126 },	-- Tear it Up
+								["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
+								["isDaily"] = true,
+								["coord"] = { 9.02, 51.2, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32251, {	-- Dagger in the Dark
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67939 },	-- General Nazgrim
+								["coord"] = { 9.30, 51.2, 418 },
+								["races"] = HORDE_ONLY,
+								["maps"] = { 488, 489 },	-- Dagger in the Dark
+								["lvl"] = 90,	-- 15
+							}),
+							q(32123, {	-- Death on Two Legs
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67618 },	-- Shokia
+								["isDaily"] = true,
+								["coord"] = { 9.23, 53.1, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32108, {	-- Domination Point
+								["sourceQuests"] = { 32250 },	-- The Might of the Warchief
+								["provider"] = { "n", 68072 },	-- Kor'kron Bodyguard
+								["races"] = HORDE_ONLY,
+							}),
+							q(32125, {	-- Don't Try So Hard - DEPRECATED
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,	-- triggers when turning in "Flash! Aaaaaahhhh!"
+							}),
+							q(32235, {	-- Flash! Aaaaaahhhh!
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
+								["isDaily"] = true,
+								["coord"] = { 9.05, 51.2, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32126, {	-- Tear It Up
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67767 },	-- Brolic
+								["isDaily"] = true,
+								["coord"] = { 9.55, 50.9, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32250, {	-- The Might of the Warchief
+								["sourceQuests"] = { 32249 },	-- Meet the Scout
+								["providers"] = {
+									{ "n", 67867 },	-- Garrosh Hellscream
+									{ "n", 68072 },	-- Kor'kron Bodyguard
+								},
+								["coord"] = { 7.41, 62.7, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+						}),
 						n(VENDORS, {
 							n(67751, {	-- Ongrom Black Tooth <Collector of Commissions>
 								["coord"] = { 9.71, 51.0, 418 },
@@ -97,7 +164,7 @@ _.Zones =
 								},
 							}),
 							n(69060, {	-- Tuskripper Grukna <Dominance Offensive Quartermaster>
-								["coord"] = { 9.71, 51.0, 418 },
+								["coord"] = { 9.71, 50.7, 418 },
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									i(93329),	-- Bambrick's Striking Strap

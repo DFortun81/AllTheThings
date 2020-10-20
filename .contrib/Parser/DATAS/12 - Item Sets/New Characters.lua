@@ -76,7 +76,10 @@ _.GearSets =
 					i(157696),	-- Ascetic's Cord
 					i(157694),	-- Ascetic's Legguards
 					i(157691),	-- Ascetic's Footpads
-					i(157627),	-- Sword of Searing Winds
+					i(157625),	-- Mash Tun Mixer
+					i(157627, {	-- Sword of Searing Winds
+						["u"] = REMOVED_FROM_GAME,	-- this appears to have been replaced with the staff in SL prepatch
+					}),
 				},
 			}),
 			cl(DEMONHUNTER, {

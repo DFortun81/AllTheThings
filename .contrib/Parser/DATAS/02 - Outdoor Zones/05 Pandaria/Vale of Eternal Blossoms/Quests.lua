@@ -81,10 +81,15 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "n", 58920 },	-- Kun Autumnlight
 				}),
-				q(32246, {	-- Meet the Scout
+				q(32246, {	-- Meet the Scout (A)
 					["provider"] = { "n", 64610 },	-- Lyalia
 					["coord"] = { 84.0, 58.7, 390 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32249, {	-- Meet the Scout (H)
+					["provider"] = { "n", 64566 },	-- Sunwalker Dezco
+					["coord"] = { 62.8, 27.9, 390 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(30261, {	-- Roll Club: Serpent's Spine
 					["coord"] = { 18.1, 63.5, 390 },

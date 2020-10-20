@@ -68,7 +68,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(157621)),	-- Staff of Regrowth (Lv20 Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157623)),	-- Frostcore Staff (Lv20 Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157624)),	-- Staff of Inner Flame (Lv20 Start Gear?)
-		un(NEVER_IMPLEMENTED, i(157625)),	-- Mash Tun Mixer (Lv20 Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157626)),	-- Staff of Sining mists (Lv20 Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157645)),	-- Foebreaker's Axe (Lv20 Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157653)),	-- fatihful shield (Lv20 Start Gear?)

@@ -11,6 +11,7 @@ _.Zones =
 			--	TODO:
 				-- try to figure out where the alternate versions of "Into the Wilds" come from for each faction.  i picked up 30178 on Alliance and 30133 on Horde after completeing all the Zhu's Watch quests.  the quest text is slightly different (one version for each says "I suspect they'll know something about what happened here" and the other says "They should be told of what happened here," and one version for each provides Zhu's Watch Supplies, while the other doesn't.  possibly there are different versions if you abandon/re-pick up, or if you start questing elsewhere in the zone?  completing one completed all four of these, so unless there's an issue with one version not doing the same then it should be good for all users.
 				-- try to figure out where the second version of "Going on the Offensive" comes from.  does it have different SQs?  is it from starting somewhere else in the zone, or doing it in a different order?  the quest text is slightly different (one version says "I want you to look for my scout. I sent her to investigate the Crane Temple but she hasn't returned.  Get her report and rendezvous with us at the Sentinel Basecamp further west."  the other doesn't mention a scout at all, and just says "We are pressing westward and could use your help. Meet us at the Sentinel Basecamp further west when you are ready.")
+				-- same as above but with "Going West" for Horde, as opposed to "Going on the Offensive" for Alliance.  i picked up 30132, unsure what needs to happen to pick up 30464
 				q(30695, {	-- Ahead on the Way
 					["sourceQuests"] = {
 						30270,	-- Blinding the Riverblades
@@ -82,11 +83,19 @@ _.Zones =
 				}),
 				
 				
-				q(30384, {	-- Blind Them!
+				q(30384, {	-- Blind Them! (A)
 					["sourceQuests"] = { 30274 },	-- The Arcanic Oubliette
 					["provider"] = { "n", 58735 },	-- Lyalia
 					["coord"] = { 70.6, 28.5, 418 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(30124, {	-- Blind Them! (H)
+					["sourceQuests"] = { 30179 },	-- Poisoned!
+					["provider"] = { "n", 58114 },	-- Kor Bloodtust
+					["coord"] = { 62.6, 20.1, 418 },
+					["races"] = HORDE_ONLY,
 				}),
 				
 				
@@ -184,6 +193,33 @@ _.Zones =
 				}),
 				
 				
+				q(30174, {	-- For Family
+					["sourceQuests"] = { 30164 },	-- The Stoneplow Convoy
+					["provider"] = { "n", 58607 },	-- Sunwalker Dezco
+					["coord"] = { 15.3, 36.2, 418 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(81449),	-- Nayeli Mantle
+						i(81450),	-- Mortbreath Spaulder
+						i(81451),	-- Deepwild Pauldrons
+						i(81452),	-- Narsong Spaulders
+						i(81453),	-- Angkhal Amice
+						i(81454),	-- Riverblade Spaulder
+						i(81455),	-- Sarjun Spaulders
+						i(81456),	-- Korjan Shoulders
+						i(81457),	-- Dojani Shoulders
+					},
+				}),
+				
+				
+				q(30163, {	-- For the Tribe
+					["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
+					["provider"] = { "n", 58114 },	-- Kor Bloodtusk
+					["coord"] = { 29.0, 48.1, 418 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(30363, {	-- Going on the Offensive
 				--	does this also require "Lotus Tea" (30351) and "Threats from Dojan" (30349)?
 					["sourceQuests"] = { 30348 },	-- Immortality?
@@ -198,6 +234,34 @@ _.Zones =
 					["provider"] = { "n", 58735 },	-- Lyalia
 					["coord"] = { 70.6, 28.5, 418 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(30132, {	-- Going West
+					["sourceQuests"] = { 30131 },	-- Life
+					["provider"] = { "n", 58113 },	-- Sunwalker Dezco
+					["coord"] = { 63.1, 20.7, 418 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(30464, {	-- Going West
+				--	does this have different SQs than the version above?
+					["sourceQuests"] = { 30131 },	-- Life
+					["provider"] = { "n", 58113 },	-- Sunwalker Dezco
+					["coord"] = { 63.1, 20.7, 418 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(30130, {	-- Herbal Remedies
+					["sourceQuests"] = {
+						30123,	-- Skitterer Skew
+						30124,	-- Blind Them!
+					},
+					["provider"] = { "n", 58113 },	-- Sunwalker Dezco
+					["coord"] = { 62.6, 20.0, 418 },
+					["races"] = HORDE_ONLY,
 				}),
 				
 				
@@ -263,6 +327,17 @@ _.Zones =
 				}),
 				
 				
+				q(30131, {	-- Life
+					["sourceQuests"] = {
+						30128,	-- The Pools of Youth
+						30130,	-- Herbal Remedies
+					},
+					["provider"] = { "n", 58113 },	-- Sunwalker Dezco
+					["coord"] = { 62.6, 19.9, 418 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(30351, {	-- Lotus Tea
 					["sourceQuests"] = {
 						30384,	-- Blind Them!
@@ -306,6 +381,24 @@ _.Zones =
 				}),
 				
 				
+				q(30179, {	-- Poisoned!
+					["sourceQuests"] = {
+						30090,	-- Zhu's Despair
+						30121,	-- Search Party
+					},
+					["provider"] = { "n", 58160 },	-- Chizen Dawnchaser
+					["coord"] = { 72.1, 17.3, 418 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(81522),	-- Ring of the Pools of Youth
+						i(81523),	-- Ring of Tears
+						i(81524),	-- Toothrow Band
+						i(81525),	-- Seal of Lost Centuries
+						i(81526),	-- Seal of the Forbidden Jungle
+					},
+				}),
+				
+				
 				q(30353, {	-- Profit Mastery
 					["provider"] = { "n", 58779 },	-- Daggle Bombstrider
 					["coord"] = { 70.8, 21.0, 418 },
@@ -344,7 +437,7 @@ _.Zones =
 				}),
 				
 				
-				q(30355, {	-- Re-Reclaim
+				q(30355, {	-- Re-Reclaim (A)
 					["sourceQuests"] = { 30363, 30465 },	-- Going on the Offensive
 					["provider"] = { "n", 56114 },	-- Kang Bramblestaff
 					["coord"] = { 25.2, 30.5, 418 },
@@ -356,6 +449,24 @@ _.Zones =
 						i(81506),	-- Narsong Bracers
 						i(81507),	-- Angkhal Cuffs
 						i(81508),	-- Riverblade Armwraps
+						i(81509),	-- Sarjun Wristguards
+						i(81510),	-- Korjan Armplates
+						i(81511),	-- Dojani Bracers
+					},
+				}),
+				
+				
+				q(30230, {	-- Re-Reclaim (H)
+					["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
+					["provider"] = { "n", 56112 },	-- Kang Bramblestaff
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(81503),	-- Nayeli Cuffs
+						i(81504),	-- Mortbreateh Bindings
+						i(81505),	-- Deepwild Armguards
+						i(81506),	-- Narsong Bracers
+						i(81507),	-- Angkhal Cuffs
+						i(81508),	-- Riverblade Armwaraps
 						i(81509),	-- Sarjun Wristguards
 						i(81510),	-- Korjan Armplates
 						i(81511),	-- Dojani Bracers
@@ -413,6 +524,14 @@ _.Zones =
 				}),
 				
 				
+				q(30123, {	-- Skitterer Stew
+					["sourceQuests"] = { 30179 },	-- Poisoned!
+					["provider"] = { "n", 56112 },	-- Kang Bramblestaff
+					["coord"] = { 62.7, 20.3, 418 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(30350, {	-- Squirmy Delight
 					["sourceQuests"] = { 30274 },	-- The Arcanic Oubliette
 					["provider"] = { "n", 56114 },	-- Kang Bramblestaff
@@ -466,6 +585,14 @@ _.Zones =
 				}),
 				
 				
+				q(30229, {	-- The Greater Danger
+					["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
+					["provider"] = { "n", 58114 },	-- Kor Bloodtusk
+					["coord"] = { 29.0, 48.1, 418 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(30359, {	-- The Lord Reclaimer
 					["sourceQuests"] = {
 						30361,	-- The Mantid
@@ -499,7 +626,7 @@ _.Zones =
 				}),
 				
 				
-				q(30361, {	-- The Mantid
+				q(30361, {	-- The Mantid (A)
 					["sourceQuests"] = {
 						30354,	-- No Sister Left Behind
 						30355,	-- Re-Reclaim
@@ -522,6 +649,40 @@ _.Zones =
 				}),
 				
 				
+				q(30175, {	-- The Mantid (H)
+					["sourceQuests"] = {
+						30230,	-- Re-Reclaim
+						30229,	-- The Greater Danger
+						30163,	-- For the Tribe
+					},
+					["provider"] = { "n", 58630 },	-- Ambassador Han
+					["coord"] = { 29.3, 48.4, 418 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(81458),	-- Nayeli Robe
+						i(81459),	-- Mortbreath Robes
+						i(81460),	-- Deepwild Armor
+						i(81461),	-- Narsong Chestguard
+						i(81462),	-- Angkhal Robe
+						i(81463),	-- Riverblade Tunic
+						i(81464),	-- Sarjun Chestguard
+						i(81465),	-- Korjan Chestpiece
+						i(81466),	-- Dojani Chestpiece
+					},
+				}),
+				
+				
+				q(30129, {	-- The Mogu Agenda
+					["sourceQuests"] = {
+						30123,	-- Skitterer Skew
+						30124,	-- Blind Them!
+					},
+					["provider"] = { "n", 56112 },	-- Kang Bramblestaff
+					["coord"] = { 62.7, 20.1, 418 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(30268, {	-- The Murksweats
 					["sourceQuests"] = { 30269 },	-- Unsafe Passage
 					["provider"] = { "n", 58609 },	-- Anduin Wrynn
@@ -536,11 +697,25 @@ _.Zones =
 				}),
 				
 				
-				q(30347, {	-- The Pools of Youth
+				q(30347, {	-- The Pools of Youth (A)
 					["sourceQuests"] = { 30346 },	-- Where are the Pools
 					["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
 					["coord"] = { 70.6, 28.4, 418 },	-- automatically offered, but this is where it's picked up if you abandon it
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(81537),	-- Drape of the Lagoon
+						i(81538),	-- Waterfall Drape
+						i(81539),	-- Canopy Drape
+						i(81540),	-- Greenback Cape
+						i(81541),	-- Balmy Drape
+					},
+				}),
+				
+				
+				q(30128, {	-- The Pools of Youth (H)
+					["sourceQuests"] = { 30129 },	-- The Mogu Agenda
+					["provider"] = { "n", 58206 },	-- Kang Bramblestaff
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(81537),	-- Drape of the Lagoon
 						i(81538),	-- Waterfall Drape
@@ -578,6 +753,18 @@ _.Zones =
 				}),
 				
 				
+				q(30164, {	-- The Stoneplow Convoy (H)
+					["sourceQuests"] = {
+						30163,	-- For the Tribe
+						30230,	-- Re-Reclaim
+						30229,	-- The Greater Danger
+					},
+					["provider"] = { "n", 58607 },	-- Sunwalker Dezco
+					["coord"] = { 15.2, 36.1, 418 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(30445, {	-- The Waters of Youth
 					["sourceQuests"] = { 30359 },	-- The Lord Reclaimer
 					["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
@@ -609,7 +796,7 @@ _.Zones =
 				}),
 				
 				
-				q(30349, {	-- Threat from Dojan
+				q(30349, {	-- Threat from Dojan (A)
 					["sourceQuests"] = {
 						30384,	-- Blind Them!
 						30350,	-- Squirmy Delight
@@ -625,6 +812,17 @@ _.Zones =
 						i(84284),	-- Bramble Pendant
 						i(84285),	-- Bramble Amulet
 					},
+				}),
+				
+				
+				q(30127, {	-- Threat from Dojan (H)
+					["sourceQuests"] = {
+						30123,	-- Skitterer Skew
+						30124,	-- Blind Them!
+					},
+					["provider"] = { "n", 58114 },	-- Kor Bloodtusk
+					["coord"] = { 62.6, 20.0, 418 },
+					["races"] = HORDE_ONLY,
 				}),
 				
 				
@@ -742,11 +940,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32127, {	-- All Dead, All Dead
-					["provider"] = { "n", 67767 },	-- Brolic
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(32167, {	-- Ancient's Fall
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -763,12 +956,6 @@ _.Zones =
 				q(32315, {	-- Anduin's Plea
 					["provider"] = { "n", 67940 },	-- Admiral Taylor
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32128, {	-- Another One Bites the Dust
-					["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 32235 },	-- Flash! Aaaaaahhhh!
-					["isDaily"] = true,
 				}),
 				q(30613, {	-- Armored Carp
 					["provider"] = { "n", 60135 },	-- Trawler Yotimo
@@ -868,11 +1055,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(30124, {	-- Blind Them!
-					["provider"] = { "n", 58114 },	-- Kor Bloodtust
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 30179 },	-- Poisoned!
-				}),
 				q(32401, {	-- Breath of Darkest Shadow
 					["provider"] = { "n", 68939 },	-- Anduin Wrynn
 					["races"] = ALLIANCE_ONLY,
@@ -901,21 +1083,9 @@ _.Zones =
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
-				q(32251, {	-- Dagger in the Dark
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["coord"] = { 10.4, 53.8, 418 },
-					["races"] = HORDE_ONLY,
-					["maps"] = { 488, 489 },	-- Dagger in the Dark
-					["lvl"] = 90,	-- 15
-				}),
 				q(32414, {	-- Darnassus Attacked?
 					["provider"] = { "n", 67940 },	-- Admiral Taylor
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32123, {	-- Death on Two Legs
-					["provider"] = { "n", 67618 },	-- Shokia
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true
 				}),
 				q(30730, {	-- Dextrous Izissha
 					["provider"] = { "n", 60506 },	-- Thelonius
@@ -925,11 +1095,6 @@ _.Zones =
 					["provider"] = { "n", 68166 },	-- Sully "The Pickle" McLeary
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				}),
-				q(32108, {	-- Domination Point
-					["provider"] = { "n", 68072 },	-- Kor'kron Bodyguard
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 32250 },	-- The Might of the Warchief
 				}),
 				q(32351, {	-- Echoes of Thunder
 					["provider"] = { "n", 67939 },	-- General Nazgrim
@@ -975,52 +1140,16 @@ _.Zones =
 					},
 					["sourceQuests"] = { 36612, 36870 },	-- Luring Nat (both faction versions)
 				}),
-				q(32235, {	-- Flash! Aaaaaahhhh!
-					["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(31443, {	-- Flying Tiger Gourami
 					["provider"] = { "i", 86542 },	-- Flying Tiger Gourami
 					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 					["description"] = "Found while fishing in any inland body of water on Pandaria",
 				}),
-				q(30174, {	-- For Family
-					["provider"] = { "n", 58607 },	-- Sunwalker Dezco
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 30164 },	-- The Stoneplow Convoy
-					["g"] = {
-						i(81449),	-- Nayeli Mantle
-						i(81450),	-- Mortbreath Spaulder
-						i(81451),	-- Deepwild Pauldrons
-						i(81452),	-- Narsong Spaulders
-						i(81453),	-- Angkhal Amice
-						i(81454),	-- Riverblade Spaulder
-						i(81455),	-- Sarjun Spaulders
-						i(81456),	-- Korjan Shoulders
-						i(81457),	-- Dojani Shoulders
-					},
-				}),
-				q(30163, {	-- For the Tribe
-					["provider"] = { "n", 58114 },	-- Kor Bloodtusk
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
-				}),
 				q(32329, {	-- Get My Results!
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["coords"] = { 10.4, 53.8, 418 },
 					["races"] = HORDE_ONLY,
-				}),
-				q(30464, {	-- Going West
-					["provider"] = { "n", 58113 },	-- Sunwalker Dezco
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 30131 },	-- Life
-				}),
-				q(30132, {	-- Going West
-					["provider"] = { "n", 58113 },	-- Sunwalker Dezco
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 30131 },	-- Life
 				}),
 				q(32130, {	-- Good Luck, Have Fun
 					["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
@@ -1036,14 +1165,6 @@ _.Zones =
 				q(32382, {	-- He's In Deep
 					["provider"] = { "n", 67940 },	-- Admiral Taylor
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(30130, {	-- Herbal Remedies
-					["provider"] = { "n", 58113 },	-- Sunwalker Dezco
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						30123,	-- Skitterer Skew
-						30124,	-- Blind Them!
-					},
 				}),
 				q(32135, {	-- Hero Killer
 					["provider"] = { "n", 67628 },	-- Shademaster Kiryn
@@ -1117,21 +1238,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(30131, {	-- Life
-					["provider"] = { "n", 58113 },	-- Sunwalker Dezco
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						30128,	-- The Pools of Youth
-						30130,	-- Herbal Remedies
-					},
-				}),
 				q(30678, {	-- Like Bombing Fish In A Barrel
 					["provider"] = { "n", 60136 },	-- Fiznix
 					["isDaily"] = true,
-				}),
-				q(32249, {	-- Meet the Scout
-					["provider"] = { "n", 64566 },	-- Sunwalker Dezco
-					["races"] = HORDE_ONLY,
 				}),
 				i(86545, {
 					q(31446, {	-- Mimic Octopus
@@ -1172,21 +1281,6 @@ _.Zones =
 					["provider"] = { "n", 60675 },	-- Fo Fook
 					["isDaily"] = true,
 				}),
-				q(30179, {	-- Poisoned!
-					["provider"] = { "n", 58160 },	-- Chizen Dawnchaser
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						30090,	-- Zhu's Despair
-						30121,	-- Search Party
-					},
-					["g"] = {
-						i(81522),	-- Ring of the Pools of Youth
-						i(81523),	-- Ring of Tears
-						i(81524),	-- Toothrow Band
-						i(81525),	-- Seal of Lost Centuries
-						i(81526),	-- Seal of the Forbidden Jungle
-					},
-				}),
 				q(32237, {	-- Precious Resource
 					["provider"] = { "n", 67553 },	-- Bixy Buzzsaw
 					["races"] = HORDE_ONLY,
@@ -1196,22 +1290,6 @@ _.Zones =
 					["provider"] = { "n", 67631 },	-- Marshal Troteman
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-				}),
-				q(30230, {	-- Re-Reclaim
-					["provider"] = { "n", 56112 },	-- Kang Bramblestaff
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
-					["g"] = {
-						i(81503),	-- Nayeli Cuffs
-						i(81504),	-- Mortbreateh Bindings
-						i(81505),	-- Deepwild Armguards
-						i(81506),	-- Narsong Bracers
-						i(81507),	-- Angkhal Cuffs
-						i(81508),	-- Riverblade Armwaraps
-						i(81509),	-- Sarjun Wristguards
-						i(81510),	-- Korjan Armplates
-						i(81511),	-- Dojani Bracers
-					},
 				}),
 				q(32149, {	-- Resource Gathering
 					["provider"] = { "n", 67630 },	-- Mishka
@@ -1249,11 +1327,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(30123, {	-- Skitterer Stew
-					["provider"] = { "n", 56112 },	-- Kang Bramblestaff
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 30179 },	-- Poisoned!
-				}),
 				q(30700, {	-- Snapclaw
 					["provider"] = { "n", 59586 },	-- Angler Shen
 					["requireSkill"] = FISHING,
@@ -1289,11 +1362,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32126, {	-- Tear It Up
-					["provider"] = { "n", 67767 },	-- Brolic
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(31370, {	-- The Anglers
 					["provider"] = { "n", 64010 },	-- Master Angler Karu
 					["races"] = HORDE_ONLY,
@@ -1320,11 +1388,6 @@ _.Zones =
 					["provider"] = { "n", 63721 },	-- Nat Pagle
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
-				}),
-				q(30229, {	-- The Greater Danger
-					["provider"] = { "n", 58114 },	-- Kor Bloodtusk
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
 				}),
 				q(32335, {	-- The Greatest Prank
 					["provider"] = { "n", 68538 },	-- The Monkey King
@@ -1359,41 +1422,6 @@ _.Zones =
 					["provider"] = { "n", 67940 },	-- Admiral Taylor
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(30175, {	-- The Mantid
-					["provider"] = { "n", 58630 },	-- Ambassador Han
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						30230,	-- Re-Reclaim
-						30229,	-- The Greater Danger
-						30163,	-- For the Tribe
-					},
-					["g"] = {
-						i(81458),	-- Nayeli Robe
-						i(81459),	-- Mortbreath Robes
-						i(81460),	-- Deepwild Armor
-						i(81461),	-- Narsong Chestguard
-						i(81462),	-- Angkhal Robe
-						i(81463),	-- Riverblade Tunic
-						i(81464),	-- Sarjun Chestguard
-						i(81465),	-- Korjan Chestpiece
-						i(81466),	-- Dojani Chestpiece
-					},
-				}),
-				q(32250, {	-- The Might of the Warchief
-					["providers"] = {
-						{ "n", 67867 },	-- Garrosh Hellscream
-						{ "n", 68072 },	-- Kor'kron Bodyguard
-					},
-					["races"] = HORDE_ONLY,
-				}),
-				q(30129, {	-- The Mogu Agenda
-					["provider"] = { "n", 56112 },	-- Kang Bramblestaff
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						30123,	-- Skitterer Skew
-						30124,	-- Blind Them!
-					},
-				}),
 				q(32321, {	-- The Monkey King
 					["provider"] = { "n", 68004 },	-- Anduin Wrynn
 					["races"] = ALLIANCE_ONLY,
@@ -1404,18 +1432,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 32452 },	-- And Then There Were Goblins
 					["isDaily"] = true,
-				}),
-				q(30128, {	-- The Pools of Youth
-					["provider"] = { "n", 58206 },	-- Kang Bramblestaff
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 30129 },	-- The Mogu Agenda
-					["g"] = {
-						i(81537),	-- Drape of the Lagoon
-						i(81538),	-- Waterfall Drape
-						i(81539),	-- Canopy Drape
-						i(81540),	-- Greenback Cape
-						i(81541),	-- Balmy Drape
-					},
 				}),
 				q(31254, {	-- The Road to Kun-Lai
 					["sourceQuests"] = { 59559 },	-- Hero's Call: Kun-Lai Summit!
@@ -1461,15 +1477,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(30164, {	-- The Stoneplow Convoy
-					["sourceQuests"] = {
-						30163,	-- For the Tribe
-						30230,	-- Re-Reclaim
-						30229,	-- The Greater Danger
-					},
-					["provider"] = { "n", 58607 },	-- Sunwalker Dezco
-					["races"] = HORDE_ONLY,
-				}),
 				q(32334, {	-- The Third Riddle: Strength
 					["provider"] = { "n", 68003 },	-- The Monkey King
 					["races"] = ALLIANCE_ONLY,
@@ -1483,14 +1490,6 @@ _.Zones =
 				q(30738, {	-- Thelonius
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
-				}),
-				q(30127, {	-- Threat from Dojan
-					["provider"] = { "n", 58114 },	-- Kor Bloodtusk
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						30123,	-- Skitterer Skew
-						30124,	-- Blind Them!
-					},
 				}),
 				q(32190, {	-- To Mogujia
 					["provider"] = { "n", 67939 },	-- General Nazgrim

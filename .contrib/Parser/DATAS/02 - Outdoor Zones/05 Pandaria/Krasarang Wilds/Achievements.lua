@@ -10,7 +10,7 @@ _.Zones =
 			--	TODO:
 				-- find out if "The Incursion" criteria requires "Lotus Tea" (30351) and "Threats from Dojan" (30349)
 				-- turn in "Buried Hozen Treasure" but NOT "Balance" or "Balance Without Violence" to make sure they're required for the criteria
-				-- source Horde loremaster achievement + Dominance Offensive achievement
+				-- add SQs for Horde loremaster achievement + Dominance Offensive achievement
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
@@ -104,7 +104,9 @@ _.Zones =
 						crit(1, {	-- Zhu's Watch
 							["sourceQuests"] = { 30090 },	-- Zhu's Despair
 						}),
-						crit(2),	-- Thunder Cleft
+						crit(2, {	-- Thunder Cleft
+							["sourceQuests"] = { 30131 },	-- Life
+						}),
 						crit(3),	-- Nayeli Lagoon
 						crit(4),	-- Temple of the Red Crane
 						crit(5),	-- Dawnchaser Retreat
