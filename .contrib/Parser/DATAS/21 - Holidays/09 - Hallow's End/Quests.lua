@@ -63,6 +63,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["maps"] = { 37 },	-- Elwynn Forest
 			}),
 			q(29431, {	-- A Friend in Need (Horde)
+				["isBreadcrumb"] = true,
 				["provider"] = { "n", 53763 },	-- Gretchen Fenlow
 				["races"] = HORDE_ONLY,
 				["maps"] = { 90 },	-- Undercity
