@@ -462,12 +462,6 @@ _.Zones =
 					["coord"] = { 31.6, 11.3, 371 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(30068, {	-- Flames of the Void
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
-					["coord"] = { 53.8, 61.8, 371 },
-					["isDaily"] = true,
-				}),
 				q(29639, {	-- Flying Colors (Instructor Xann)
 					["sourceQuests"] = {
 						29628,	-- A Strong Back
@@ -633,12 +627,6 @@ _.Zones =
 					["provider"] = { "n", 55122 },	-- Admiral Taylor
 					["coord"] = { 58.1, 80.6, 371 },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(30066, {	-- Hidden Power
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
-					["coord"] = { 53.8, 61.8, 371 },
-					["isDaily"] = true,
 				}),
 				q(32018, {	-- His Name Was... Stormstout
 					["isBreadcrumb"] = true,
@@ -1064,12 +1052,6 @@ _.Zones =
 					["coord"] = { 65.9, 79.3, 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(30064, {	-- Saving the Sutras
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 57319 },	-- Elder Sage Storm-Sing
-					["coord"] = { 53.8, 61.8, 371 },
-					["isDaily"] = true,
-				}),
 				q(29730, {	-- Scouting Report: Hostile Natives
 					["sourceQuests"] = {
 						29939,	-- Boom Bait
@@ -1289,12 +1271,6 @@ _.Zones =
 					["provider"] = { "n", 54617 },	-- Rell Nightwind
 					["coord"] = { 46.4, 96.3, 371 },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(30006, {	-- The Darkness Around Us
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
-					["coord"] = { 53.8, 61.8, 371 },
-					["isDaily"] = true,
 				}),
 				q(31779, {	-- The Darkness Within
 					["sourceQuests"] = {

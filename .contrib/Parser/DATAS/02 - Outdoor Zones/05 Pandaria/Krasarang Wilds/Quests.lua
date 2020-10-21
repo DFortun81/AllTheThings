@@ -961,11 +961,6 @@ _.Zones =
 					["provider"] = { "n", 60135 },	-- Trawler Yotimo
 					["isDaily"] = true,
 				}),
-				q(32148, {	-- Attack! Move!
-					["provider"] = { "n", 67631 },	-- Marshal Troteman
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				i(91856, {	-- Sturdy Crab Crate
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -1059,10 +1054,6 @@ _.Zones =
 					["provider"] = { "n", 68939 },	-- Anduin Wrynn
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 32400 },	-- The Bell Speaks
-				}),
-				q(30754, {	-- Bright Bait
-					["provider"] = { "n", 60674 },	-- John "Big Hook" Marsock
-					["isDaily"] = true,
 				}),
 				q(32154, {	-- Burn Out!
 					["provider"] = { "n", 68166 },	-- Sully "The Pickle" McLeary
@@ -1162,20 +1153,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32382, {	-- He's In Deep
-					["provider"] = { "n", 67940 },	-- Admiral Taylor
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(32135, {	-- Hero Killer
 					["provider"] = { "n", 67628 },	-- Shademaster Kiryn
 					["coord"] = { 79.7, 30.4, 418 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 32450 },	-- The Time is Now!
-					["isDaily"] = true,
-				}),
-				q(32153, {	-- Hero Killer
-					["provider"] = { "n", 67631 },	-- Marshal Troteman
-					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(30376, {	-- Hope Springs Eternal
@@ -1204,10 +1186,6 @@ _.Zones =
 				q(32156, {	-- It's Only Right
 					["provider"] = { "n", 67444 },	-- Mishka
 					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(30586, {	-- Jagged Abalone
-					["provider"] = { "n", 59584 },	-- Fisherman Haito
 					["isDaily"] = true,
 				}),
 				q(30729, {	-- Julia Bates
@@ -1291,11 +1269,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32149, {	-- Resource Gathering
-					["provider"] = { "n", 67630 },	-- Mishka
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(32256, {	-- Rise Of An Empire
 					["coord"] = { 9.3, 51.1, 418 },
 					["races"] = HORDE_ONLY,
@@ -1319,11 +1292,6 @@ _.Zones =
 				}),
 				q(32115, {	-- Shackles of the Past
 					["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32152, {	-- Siege Damage
-					["provider"] = { "n", 67631 },	-- Marshal Troteman
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
@@ -1351,11 +1319,6 @@ _.Zones =
 				q(32221, {	-- Storming the Beach
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-				}),
-				q(32150, {	-- Supply Block
-					["provider"] = { "n", 67630 },	-- Mishka
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
 				}),
 				q(32118, {	-- Taking Advantage
 					["provider"] = { "n", 67847 },	-- Belloc Brightblade
@@ -1562,11 +1525,6 @@ _.Zones =
 					["provider"] = { "n", 68687 },	-- Vareesa Windrunner
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 32417, 32418, 32419, 32420, 32421 },	-- Sewer Cleaning, Unfair Trade, Nowhere to Hide, Cashing Out, Nowhere to Run
-				}),
-				q(30585, {	-- What Lurks Below
-					["provider"] = { "n", 60673 },	-- Elder Fisherman Rassan
-					["requireSkill"] = FISHING,
-					["isDaily"] = true,
 				}),
 				q(32136, {	-- Work Order: Fuel
 					["provider"] = { "n", 67535 },	-- Boss-Lady Trixel

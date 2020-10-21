@@ -21,6 +21,14 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(6716, {	-- Between a Saurok and a Hard Place
+					["collectible"] = false,
+					["g"] = {
+						crit(1, {	-- The Saurok
+							["coord"] = { 67.7, 29.3, 371 },
+						}),
+					},
+				}),
 				ach(7290),	-- How To Strain Your Dragon
 				ach(7291),	-- In a Trail of Smoke
 				ach(7284),	-- Is Another Man's Treasure

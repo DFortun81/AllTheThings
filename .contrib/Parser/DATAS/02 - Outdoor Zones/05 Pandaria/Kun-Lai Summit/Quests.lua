@@ -271,10 +271,6 @@ _.Zones =
 						30600,	-- No Pack Left Behind
 					},
 				}),
-				q(32383, {	-- Bugging Out
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 68417 },	-- Cousin Goottooth
-				}),
 				q(30807, {	-- By the Falls, For the Fallen
 					["coord"] = { 60.6, 21.3, 379 },
 					["provider"] = { "n", 60785 },	-- Sage Liao
@@ -526,10 +522,6 @@ _.Zones =
 					["coord"] = { 63.4, 28.7, 379 },
 					["provider"] = { "n", 61495 },	-- Elder Shu
 					["sourceQuest"] = 30935,	-- Fisherman's Tale
-				}),
-				q(32397, {	-- He Won't Even Miss It
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 68417 },	-- Cousin Goottooth
 				}),
 				q(32316, {	-- Heart Of The Alliance
 					["races"] = ALLIANCE_ONLY,

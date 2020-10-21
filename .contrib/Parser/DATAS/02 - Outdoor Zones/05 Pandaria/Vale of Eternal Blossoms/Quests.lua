@@ -22,6 +22,13 @@ _.Zones =
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
 					["u"] = NEVER_IMPLEMENTED,
 				}),
+				q(31376, {	-- Attack At The Temple of the Jade Serpent
+					["sourceQuests"] = { 31512 },	-- A Witness to History
+					["provider"] = { "n", 64032 },	-- Sage Whiteheart
+					["isDaily"] = true,
+					["coord"] = { 84.6, 63.6, 390 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(30642, {	-- Battle Axe of the Thunder King
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

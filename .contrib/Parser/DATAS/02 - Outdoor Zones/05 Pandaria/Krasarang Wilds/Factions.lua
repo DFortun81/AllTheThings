@@ -238,7 +238,12 @@ _.Zones =
 									crit(2, {	-- The Man With a Thousand Faces
 										["sourceQuests"] = { 32426 },	-- Stirred, Not Shaken
 									}),
-									crit(3),	-- The Voice of the Gods
+									crit(3, {	-- The Voice of the Gods
+										["sourceQuests"] = {
+											32383,	-- Bugging Out
+											32397,	-- He Won't Even Miss It
+										},
+									}),
 									crit(4),	-- Jaina's Hope
 									crit(5),	-- The Korune
 									crit(6),	-- Heart of the Alliance
@@ -281,6 +286,19 @@ _.Zones =
 								["maps"] = { 487 },	-- A Little Patience
 								["lvl"] = 90,	-- 15
 							}),
+							q(32148, {	-- Attack! Move!
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 67631 },	-- Marshal Troteman
+								["isDaily"] = true,
+								["coord"] = { 94.5, 28.9, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32383, {	-- Bugging Out
+								["sourceQuests"] = { 32382 },	-- He's In Deep
+								["provider"] = { "n", 68417 },	-- Cousin Goottooth
+								["coord"] = { 59.2, 84.3, 379 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32145, {	-- Don't Lose Your Head
 								["sourceQuests"] = { 32143 },	-- A Kind of Magic
 								["provider"] = { "n", 67528 },	-- Sully "The Pickle" McLeary
@@ -294,9 +312,36 @@ _.Zones =
 								["coord"] = { 15.9, 78.5, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32382, {	-- He's In Deep
+								["minReputation"] = { 1376, FRIENDLY+4900 },
+								["sourceQuests"] = { 32426 },	-- Stirred, Not Shaken
+								["provider"] = { "n", 67940 },	-- Admiral Taylor
+								["coord"] = { 94.4, 28.4, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32397, {	-- He Won't Even Miss It
+								["sourceQuests"] = { 32382 },	-- He's In Deep
+								["provider"] = { "n", 68417 },	-- Cousin Goottooth
+								["coord"] = { 59.2, 84.3, 379 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32153, {	-- Hero Killer
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 67631 },	-- Marshal Troteman
+								["isDaily"] = true,
+								["coord"] = { 94.5, 28.9, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32109, {	-- Lion's Landing
 								["sourceQuests"] = { 32247 },	-- A King Among Men
 								["provider"] = { "n", 68399 },	-- 7th Legion Champion
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32149, {	-- Resource Gathering
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 67630 },	-- Mishka
+								["isDaily"] = true,
+								["coord"] = { 94.5, 28.6, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32451, {	-- Send A Message
@@ -305,12 +350,26 @@ _.Zones =
 								["coord"] = { 94.7, 28.3, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32152, {	-- Siege Damage
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 67631 },	-- Marshal Troteman
+								["isDaily"] = true,
+								["coord"] = { 94.5, 28.9, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32426, {	-- Stirred, not Shaken
 								["sourceQuests"] = { 32381 },	-- To Catch a Spy
 								["provider"] = { "n", 68526 },	-- Barkeep Townsley
 								["coord"] = { 67.4, 47.1, 500 },	-- Bizmo's Brawlpub
 								["races"] = ALLIANCE_ONLY,
 								["maps"] = { 500 },	-- Bizmo's Brawlpub
+							}),
+							q(32150, {	-- Supply Block
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 67630 },	-- Mishka
+								["isDaily"] = true,
+								["coord"] = { 94.5, 28.6, 418 },
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32380, {	-- The Best Around
 								["minReputation"] = { 1376, FRIENDLY+950 },
@@ -444,9 +503,7 @@ _.Zones =
 						n(QUESTS, {
 						--	TODO: add the following quests.  i'm just moving them into the file as i see them so i can ensure the correct coordinates are added and none get forgotten.  i hate this zone.
 							-- Armored Carp
-							-- Bright Bait
 							-- Flying Tiger Gourami
-							-- Jagged Abalone
 							-- Like Bombing Fish in a Barrel
 							-- Mimic Octopus
 							-- Piranha!
@@ -454,12 +511,23 @@ _.Zones =
 							-- Shocking!
 							-- Snapclaw
 							-- Spinefish Alpha
-							-- What Lurks Below
+							q(30754, {	-- Bright Bait
+								["requireSkill"] = FISHING,
+								["provider"] = { "n", 60674 },	-- John "Big Hook" Marsock
+								["isDaily"] = true,
+								["coord"] = { 71.6, 40.0, 418 },
+							}),
 							q(30588, {	-- Fishing for a Bruising
 								["requireSkill"] = FISHING,
 								["provider"] = { "n", 59586 },	-- Angler Shen
 								["isDaily"] = true,
 								["coord"] = { 70.8, 40.1, 418 },
+							}),
+							q(30586, {	-- Jagged Abalone
+								["requireSkill"] = FISHING,
+								["provider"] = { "n", 59584 },	-- Fisherman Haito
+								["isDaily"] = true,
+								["coord"] = { 71.2, 41.9, 418 },
 							}),
 							q(30753, {	-- Jumping the Shark
 								["requireSkill"] = FISHING,
@@ -484,6 +552,12 @@ _.Zones =
 								["provider"] = { "n", 60675 },	-- Fo Fook
 								["isDaily"] = true,
 								["coord"] = { 70.5, 37.5, 418 },
+							}),
+							q(30585, {	-- What Lurks Below
+								["requireSkill"] = FISHING,
+								["provider"] = { "n", 60673 },	-- Elder Fisherman Rassan
+								["isDaily"] = true,
+								["coord"] = { 71.7, 38.7, 418 },
 							}),
 							q(30598, {	-- Who Knew Fish Liked Eggs?
 								["requireSkill"] = FISHING,
