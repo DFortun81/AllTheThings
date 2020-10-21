@@ -8930,7 +8930,7 @@ local function NestSourceQuests(root, addedQuests, depth)
 		addedQuests =  { };
 	end
 	-- make sure root has no existing sub-groups
-	root.g = nil;
+	root.g = { };
 	root.visible = true;
 	root.hideText = true;
 	root.depth = depth or 0;
@@ -8938,45 +8938,48 @@ local function NestSourceQuests(root, addedQuests, depth)
 	if root.sourceQuests and #root.sourceQuests > 0 then
 		local prereqs;
 		for i,sourceQuestID in ipairs(root.sourceQuests) do
-				local qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
-				if qs and #qs > 0 then
-					local i, sq = #qs;
-					while not sq and i > 0 do
-						if qs[i].questID == sourceQuestID then sq = qs[i]; end
-						i = i - 1;
-					end
-					if sq and sq.questID then
-						if sq.parent and sq.parent.questID == sq.questID then
-							sq = sq.parent;
-						end
-					elseif sourceQuestID > 0 then
-						-- Create a Quest Object.
-						sq = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['hideText'] = true, });
-					else
-						-- Create a NPC Object.
-						sq = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true, });
-					end
-					
-					local nextRoot = not addedQuests[sourceQuestID] and NestSourceQuests(CloneData(sq), addedQuests, (depth or 0) + 1) or CloneData(sq);
-					addedQuests[sourceQuestID] = true;
-					if nextRoot then
-						-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
-						root.depth = math.max((root.depth or 0),(nextRoot.depth or 1));
-						if not prereqs then prereqs = {}; end
-						tinsert(prereqs, nextRoot);
-					end
+			local qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
+			if qs and #qs > 0 then
+				local i, sq = #qs;
+				while not sq and i > 0 do
+					if qs[i].questID == sourceQuestID then sq = qs[i]; end
+					i = i - 1;
 				end
+				if sq and sq.questID then
+					if sq.parent and sq.parent.questID == sq.questID then
+						sq = sq.parent;
+					end
+				elseif sourceQuestID > 0 then
+					-- Create a Quest Object.
+					sq = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['hideText'] = true, });
+				else
+					-- Create a NPC Object.
+					sq = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true, });
+				end
+				
+				-- clone the object so as to not modify actual data
+				sq = CloneData(sq);
+				-- clean anything out of it so that items don't show in the quest requirements
+				sq.g = { };
+				
+				local nextRoot = not addedQuests[sourceQuestID] and NestSourceQuests(sq, addedQuests, (depth or 0) + 1) or sq;
+				addedQuests[sourceQuestID] = true;
+				if nextRoot then
+					-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
+					root.depth = math.max((root.depth or 0),(nextRoot.depth or 1));
+					if not prereqs then prereqs = {}; end
+					tinsert(prereqs, nextRoot);
+				end
+			end
 		end
 		-- sort quests with less sub-quests to the top
 		if prereqs and #prereqs > 1 then
 			table.sort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
-			-- table.sort(prereqs, function(a, b) return (a.nestedCount or 0) < (b.nestedCount or 0); end);
 		end
 		root.g = prereqs;
 	end
 	return root;
 end
-
 
 -- OPTIMIZE THESE FOR THE LOVE OF GOD
 app.Windows = {};
