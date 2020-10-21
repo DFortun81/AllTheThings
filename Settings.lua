@@ -196,7 +196,8 @@ settings.Initialize = function(self)
 	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase);
 	FilterSettingsBase.__index = app.Presets[app.Class] or app.Presets.ALL;
 	
-	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations"));
+	self.ContainsSlider:SetValue(self:GetTooltipSetting("ContainsCount") or 25);
+	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations") or 5);
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
 	self.MiniListScaleSlider:SetValue(self:GetTooltipSetting("MiniListScale"));
 	self.PrecisionSlider:SetValue(self:GetTooltipSetting("Precision"));
@@ -2222,7 +2223,7 @@ end);
 EnableTooltipInformationCheckBox:SetATTTooltip("Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.");
 EnableTooltipInformationCheckBox:SetPoint("TOPLEFT", TooltipLabel, "BOTTOMLEFT", 4, 0);
 
-local DisplayInCombatCheckBox = settings:CreateCheckBox("Display In Combat",
+local DisplayInCombatCheckBox = settings:CreateCheckBox("In Combat",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("DisplayInCombat"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2237,10 +2238,17 @@ function(self)
 	settings:SetTooltipSetting("DisplayInCombat", self:GetChecked());
 end);
 DisplayInCombatCheckBox:SetATTTooltip("Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.");
-DisplayInCombatCheckBox:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox, "BOTTOMLEFT", 8, 4);
+DisplayInCombatCheckBox:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox, "TOPRIGHT", 150, 0);
 
 
-local ShowCollectionProgressCheckBox = settings:CreateCheckBox("Show Collection Progress",
+local TooltipShowLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+TooltipShowLabel:SetJustifyH("LEFT");
+TooltipShowLabel:SetText("Shown Information:");
+TooltipShowLabel:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox, "BOTTOMLEFT", 0, 0);
+TooltipShowLabel:Show();
+table.insert(settings.MostRecentTab.objects, TooltipShowLabel);
+
+local ShowCollectionProgressCheckBox = settings:CreateCheckBox("Collection Progress",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Progress"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2255,9 +2263,9 @@ function(self)
 	settings:SetTooltipSetting("Progress", self:GetChecked());
 end);
 ShowCollectionProgressCheckBox:SetATTTooltip("Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.");
-ShowCollectionProgressCheckBox:SetPoint("TOPLEFT", DisplayInCombatCheckBox, "BOTTOMLEFT", 0, 4);
+ShowCollectionProgressCheckBox:SetPoint("TOPLEFT", TooltipShowLabel, "BOTTOMLEFT", 0, 0);
 
-local ShortenProgressCheckBox = settings:CreateCheckBox("Only Show Icon",
+local ShortenProgressCheckBox = settings:CreateCheckBox("Icon Only",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("ShowIconOnly"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("Progress") then
@@ -2275,25 +2283,7 @@ ShortenProgressCheckBox:SetATTTooltip("Enable this option if you only want to se
 ShortenProgressCheckBox:SetPoint("TOPLEFT", ShowCollectionProgressCheckBox, "BOTTOMLEFT", 8, 4);
 
 
-local SummarizeThingsCheckBox = settings:CreateCheckBox("Summarize Things",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("SummarizeThings"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("SummarizeThings", self:GetChecked());
-end);
-SummarizeThingsCheckBox:SetATTTooltip("Enable this option to summarize Things in the tooltip. For example, if a Thing can be turned into a Vendor for another Thing, then show that other thing in the tooltip to provide visibility for its multiple uses. If a Thing acts as a Container for a number of other Things, this option will show all of the other Things that the container Contains.\n\nWe recommend that you keep this setting turned on.");
-SummarizeThingsCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -8, 4);
-
-
-local ShowCoordinatesCheckBox = settings:CreateCheckBox("Show Coordinates",
+local ShowCoordinatesCheckBox = settings:CreateCheckBox("Coordinates",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Coordinates"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2308,9 +2298,9 @@ function(self)
 	settings:SetTooltipSetting("Coordinates", self:GetChecked());
 end);
 ShowCoordinatesCheckBox:SetATTTooltip("Enable this option if you want to see coordinates in the tooltip when hovering over an entry in the mini list.");
-ShowCoordinatesCheckBox:SetPoint("TOPLEFT", SummarizeThingsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowCoordinatesCheckBox:SetPoint("TOPLEFT", ShowCollectionProgressCheckBox, "TOPRIGHT", 120, 0);
 
-local ShowDescriptionsCheckBox = settings:CreateCheckBox("Show Descriptions",
+local ShowDescriptionsCheckBox = settings:CreateCheckBox("Descriptions",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Descriptions"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2327,7 +2317,7 @@ end);
 ShowDescriptionsCheckBox:SetATTTooltip("Enable this option to show descriptions within the tooltip. This may include the descriptive text supplied by the Dungeon Journal or a custom description added by a Contributor who felt some additional information was necessary.\n\nYou might want to keep this turned on.");
 ShowDescriptionsCheckBox:SetPoint("TOPLEFT", ShowCoordinatesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowKnownByCheckBox = settings:CreateCheckBox("Show Known By",
+local ShowKnownByCheckBox = settings:CreateCheckBox("Known By",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("KnownBy"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2342,9 +2332,9 @@ function(self)
 	settings:SetTooltipSetting("KnownBy", self:GetChecked());
 end);
 ShowKnownByCheckBox:SetATTTooltip("Enable this option if you want to see the full list of characters on all servers that know this recipe in the tooltip.");
-ShowKnownByCheckBox:SetPoint("TOPLEFT", ShowDescriptionsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowKnownByCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -8, 4);
 
-local ShowModelsCheckBox = settings:CreateCheckBox("Show Model Preview",
+local ShowModelsCheckBox = settings:CreateCheckBox("Model Preview",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Models"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2359,27 +2349,9 @@ function(self)
 	settings:SetTooltipSetting("Models", self:GetChecked());
 end);
 ShowModelsCheckBox:SetATTTooltip("Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.");
-ShowModelsCheckBox:SetPoint("TOPLEFT", ShowKnownByCheckBox, "BOTTOMLEFT", 0, 4);
+ShowModelsCheckBox:SetPoint("TOPLEFT", ShowDescriptionsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowRemainingCheckBox = settings:CreateCheckBox("Show Remaining Things",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Show:Remaining"));
-	if self:GetChecked() then
-		app.GetProgressText = app.GetProgressTextRemaining;
-	else
-		app.GetProgressText = app.GetProgressTextDefault;
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Show:Remaining", self:GetChecked());
-	-- app:RefreshData();
-	app:UpdateWindows();
-end);
-ShowRemainingCheckBox:SetATTTooltip("Enable this option if you want to see the number of items remaining instead of the progress over total.");
-ShowRemainingCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
-
-
-local ShowSharedAppearancesCheckBox = settings:CreateCheckBox("Show Shared Appearances",
+local ShowSharedAppearancesCheckBox = settings:CreateCheckBox("Shared Appearances",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2394,7 +2366,7 @@ function(self)
 	settings:SetTooltipSetting("SharedAppearances", self:GetChecked());
 end);
 ShowSharedAppearancesCheckBox:SetATTTooltip("Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.");
-ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowRemainingCheckBox, "BOTTOMLEFT", 0, 4);
+ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local IncludeOriginalSourceCheckBox = settings:CreateCheckBox("Include Original Source",
 function(self)
@@ -2431,7 +2403,7 @@ OnlyShowRelevantSharedAppearancesCheckBox:SetATTTooltip("Enable this option if y
 OnlyShowRelevantSharedAppearancesCheckBox:SetPoint("TOPLEFT", IncludeOriginalSourceCheckBox, "BOTTOMLEFT", 0, 4);
 
 
-local ShowClassRequirementsCheckBox = settings:CreateCheckBox("Show Class Requirements",
+local ShowClassRequirementsCheckBox = settings:CreateCheckBox("Class Requirements",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("ClassRequirements"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2446,9 +2418,9 @@ function(self)
 	settings:SetTooltipSetting("ClassRequirements", self:GetChecked());
 end);
 ShowClassRequirementsCheckBox:SetATTTooltip("Enable this option if you want to see the full list of class requirements in the tooltip.");
-ShowClassRequirementsCheckBox:SetPoint("TOPLEFT", OnlyShowRelevantSharedAppearancesCheckBox, "BOTTOMLEFT", -8, 4);
+ShowClassRequirementsCheckBox:SetPoint("TOPLEFT", ShowKnownByCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowRaceRequirementsCheckBox = settings:CreateCheckBox("Show Race Requirements",
+local ShowRaceRequirementsCheckBox = settings:CreateCheckBox("Race Requirements",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("RaceRequirements"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2465,7 +2437,7 @@ end);
 ShowRaceRequirementsCheckBox:SetATTTooltip("Enable this option if you want to see the full list of race requirements in the tooltip.");
 ShowRaceRequirementsCheckBox:SetPoint("TOPLEFT", ShowClassRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowSpecializationRequirementsCheckBox = settings:CreateCheckBox("Show Specialization Requirements",
+local ShowSpecializationRequirementsCheckBox = settings:CreateCheckBox("Specialization Info",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SpecializationRequirements"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2479,10 +2451,63 @@ end,
 function(self)
 	settings:SetTooltipSetting("SpecializationRequirements", self:GetChecked());
 end);
-ShowSpecializationRequirementsCheckBox:SetATTTooltip("Enable this option to show the loot specialization requirements of items in the item's tooltip.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.");
+ShowSpecializationRequirementsCheckBox:SetATTTooltip("Enable this option to show the loot specialization information of items in the item's tooltip as provided by the Game Client.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.");
 ShowSpecializationRequirementsCheckBox:SetPoint("TOPLEFT", ShowRaceRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowSourceLocationsCheckBox = settings:CreateCheckBox("Show Source Locations",
+local SummarizeThingsCheckBox = settings:CreateCheckBox("Summarize Things",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SummarizeThings"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SummarizeThings", self:GetChecked());
+end);
+SummarizeThingsCheckBox:SetATTTooltip("Enable this option to summarize Things in the tooltip. For example, if a Thing can be turned into a Vendor for another Thing, then show that other thing in the tooltip to provide visibility for its multiple uses. If a Thing acts as a Container for a number of other Things, this option will show all of the other Things that the container Contains.\n\nWe recommend that you keep this setting turned on.");
+SummarizeThingsCheckBox:SetPoint("TOPLEFT", ShowSpecializationRequirementsCheckBox, "BOTTOMLEFT", 0, 0);
+
+-- This creates the "Contains Count" slider.
+local ContainsSlider = CreateFrame("Slider", "ATTSummarizeThingsSlider", settings, "OptionsSliderTemplate");
+ContainsSlider:SetPoint("TOPLEFT", SummarizeThingsCheckBox, "TOPRIGHT", 123, 0);
+table.insert(settings.MostRecentTab.objects, ContainsSlider);
+settings.ContainsSlider = ContainsSlider;
+ContainsSlider.tooltipText = 'Use this to customize the number of Summarized Things to show in the tooltip.\n\nDefault: 25';
+ContainsSlider:SetOrientation('HORIZONTAL');
+ContainsSlider:SetWidth(150);
+ContainsSlider:SetHeight(20);
+ContainsSlider:SetValueStep(1);
+ContainsSlider:SetMinMaxValues(1, 40);
+ContainsSlider:SetObeyStepOnDrag(true);
+_G[ContainsSlider:GetName() .. 'Low']:SetText('1')
+_G[ContainsSlider:GetName() .. 'High']:SetText('40')
+ContainsSlider.Label = ContainsSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+ContainsSlider.Label:SetPoint("TOP", ContainsSlider, "BOTTOM", 0, 2);
+ContainsSlider.Label:SetText(ContainsSlider:GetValue());
+ContainsSlider:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(newValue);
+	if newValue == settings:GetTooltipSetting("ContainsCount") then
+		return 1;
+	end
+	settings:SetTooltipSetting("ContainsCount", newValue)
+	app:UpdateWindows();
+end);
+ContainsSlider.OnRefresh = function(self)
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end;
+
+
+local ShowSourceLocationsCheckBox = settings:CreateCheckBox("Source Locations",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2497,9 +2522,45 @@ function(self)
 	settings:SetTooltipSetting("SourceLocations", self:GetChecked());
 end);
 ShowSourceLocationsCheckBox:SetATTTooltip("Enable this option if you want to see full Source Location Paths for objects within the ATT database in the tooltip.");
-ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", ShowSpecializationRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", SummarizeThingsCheckBox, "BOTTOMLEFT", 0, -2);
 
-local ShowCompletedSourceLocationsForCheckBox = settings:CreateCheckBox("For Completed Sources",
+-- This creates the "Locations" slider.
+local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
+LocationsSlider:SetPoint("TOPLEFT", ShowSourceLocationsCheckBox, "TOPRIGHT", 123, 0);
+table.insert(settings.MostRecentTab.objects, LocationsSlider);
+settings.LocationsSlider = LocationsSlider;
+LocationsSlider.tooltipText = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
+LocationsSlider:SetOrientation('HORIZONTAL');
+LocationsSlider:SetWidth(150);
+LocationsSlider:SetHeight(20);
+LocationsSlider:SetValueStep(1);
+LocationsSlider:SetMinMaxValues(1, 40);
+LocationsSlider:SetObeyStepOnDrag(true);
+_G[LocationsSlider:GetName() .. 'Low']:SetText('1')
+_G[LocationsSlider:GetName() .. 'High']:SetText('40')
+-- _G[LocationsSlider:GetName() .. 'Text']:SetText("Displayed Source Locations")
+LocationsSlider.Label = LocationsSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+LocationsSlider.Label:SetPoint("TOP", LocationsSlider, "BOTTOM", 0, 2);
+LocationsSlider.Label:SetText(LocationsSlider:GetValue());
+LocationsSlider:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(newValue);
+	if newValue == settings:GetTooltipSetting("Locations") then
+		return 1;
+	end
+	settings:SetTooltipSetting("Locations", newValue)
+	app:UpdateWindows();
+end);
+LocationsSlider.OnRefresh = function(self)
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end;
+
+local ShowCompletedSourceLocationsForCheckBox = settings:CreateCheckBox("For Completed",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations:Completed"));
 	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
@@ -2566,6 +2627,30 @@ function(self)
 end);
 ShowSourceLocationsForUnsortedCheckBox:SetATTTooltip("Enable this option if you want to see Source Locations which have not been fully sourced into the database.");
 ShowSourceLocationsForUnsortedCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsForThingsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local MiscLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+MiscLabel:SetPoint("TOPLEFT", ShowSourceLocationsForUnsortedCheckBox, "BOTTOMLEFT", -12, 0); -- 8,4
+MiscLabel:SetJustifyH("LEFT");
+MiscLabel:SetText("Miscellaneous");
+MiscLabel:Show();
+table.insert(settings.MostRecentTab.objects, MiscLabel);
+
+local ShowRemainingCheckBox = settings:CreateCheckBox("Show Remaining Things",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:Remaining"));
+	if self:GetChecked() then
+		app.GetProgressText = app.GetProgressTextRemaining;
+	else
+		app.GetProgressText = app.GetProgressTextDefault;
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Show:Remaining", self:GetChecked());
+	-- app:RefreshData();
+	app:UpdateWindows();
+end);
+ShowRemainingCheckBox:SetATTTooltip("Enable this option if you want to see the number of items remaining instead of the progress over total.");
+ShowRemainingCheckBox:SetPoint("TOPLEFT", MiscLabel, "BOTTOMLEFT", 4, 0);
 
 local DebuggingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 DebuggingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -220, -8);
@@ -2642,7 +2727,7 @@ end
 -- This creates the "Main List Scale" slider.
 local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", settings, "OptionsSliderTemplate");
 MainListScaleSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
-MainListScaleSlider:SetPoint("TOP", ShowSpecializationRequirementsCheckBox, "BOTTOM", 0, -4);
+MainListScaleSlider:SetPoint("TOP", last, "BOTTOM", 0, -10);
 table.insert(settings.MostRecentTab.objects, MainListScaleSlider);
 settings.MainListScaleSlider = MainListScaleSlider;
 MainListScaleSlider.tooltipText = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
@@ -2667,7 +2752,7 @@ end);
 -- This creates the "Mini List Scale" slider.
 local MiniListScaleSlider = CreateFrame("Slider", "ATTMiniListScaleSlider", settings, "OptionsSliderTemplate");
 MiniListScaleSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
-MiniListScaleSlider:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, -20);
+MiniListScaleSlider:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, -24);
 table.insert(settings.MostRecentTab.objects, MiniListScaleSlider);
 settings.MiniListScaleSlider = MiniListScaleSlider;
 MiniListScaleSlider.tooltipText = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
@@ -2693,42 +2778,42 @@ MiniListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
 	end
 end);
 
--- This creates the "Locations" slider.
-local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
-LocationsSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
-LocationsSlider:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, -20);
-table.insert(settings.MostRecentTab.objects, LocationsSlider);
-settings.LocationsSlider = LocationsSlider;
-LocationsSlider.tooltipText = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
-LocationsSlider:SetOrientation('HORIZONTAL');
-LocationsSlider:SetWidth(280);
-LocationsSlider:SetHeight(20);
-LocationsSlider:SetValueStep(1);
-LocationsSlider:SetMinMaxValues(1, 40);
-LocationsSlider:SetObeyStepOnDrag(true);
-_G[LocationsSlider:GetName() .. 'Low']:SetText('1')
-_G[LocationsSlider:GetName() .. 'High']:SetText('40')
-_G[LocationsSlider:GetName() .. 'Text']:SetText("Displayed Source Locations")
-LocationsSlider.Label = LocationsSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
-LocationsSlider.Label:SetPoint("TOP", LocationsSlider, "BOTTOM", 0, 0);
-LocationsSlider.Label:SetText(LocationsSlider:GetValue());
-LocationsSlider:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue);
-	if newValue == settings:GetTooltipSetting("Locations") then
-		return 1;
-	end
-	settings:SetTooltipSetting("Locations", newValue)
-	app:UpdateWindows();
-end);
-LocationsSlider.OnRefresh = function(self)
-	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end;
+-- -- This creates the "Locations" slider.
+-- local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
+-- LocationsSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
+-- LocationsSlider:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, -24);
+-- table.insert(settings.MostRecentTab.objects, LocationsSlider);
+-- settings.LocationsSlider = LocationsSlider;
+-- LocationsSlider.tooltipText = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
+-- LocationsSlider:SetOrientation('HORIZONTAL');
+-- LocationsSlider:SetWidth(280);
+-- LocationsSlider:SetHeight(20);
+-- LocationsSlider:SetValueStep(1);
+-- LocationsSlider:SetMinMaxValues(1, 40);
+-- LocationsSlider:SetObeyStepOnDrag(true);
+-- _G[LocationsSlider:GetName() .. 'Low']:SetText('1')
+-- _G[LocationsSlider:GetName() .. 'High']:SetText('40')
+-- _G[LocationsSlider:GetName() .. 'Text']:SetText("Displayed Source Locations")
+-- LocationsSlider.Label = LocationsSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+-- LocationsSlider.Label:SetPoint("TOP", LocationsSlider, "BOTTOM", 0, 0);
+-- LocationsSlider.Label:SetText(LocationsSlider:GetValue());
+-- LocationsSlider:SetScript("OnValueChanged", function(self, newValue)
+	-- self.Label:SetText(newValue);
+	-- if newValue == settings:GetTooltipSetting("Locations") then
+		-- return 1;
+	-- end
+	-- settings:SetTooltipSetting("Locations", newValue)
+	-- app:UpdateWindows();
+-- end);
+-- LocationsSlider.OnRefresh = function(self)
+	-- if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
+		-- self:Disable();
+		-- self:SetAlpha(0.2);
+	-- else
+		-- self:Enable();
+		-- self:SetAlpha(1);
+	-- end
+-- end;
 
 
 end)();

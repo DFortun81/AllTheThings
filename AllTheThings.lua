@@ -3047,7 +3047,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				collectionData = BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
 					tinsert(info, { left = "Contains:" });
-					if #entries < 26 then
+					local containCount = app.Settings:GetTooltipSetting("ContainsCount") or 25;
+					if #entries < containCount + 1 then
 						for i,item in ipairs(entries) do
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
@@ -3065,7 +3066,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							tinsert(info, { left = item.prefix .. left, right = right });
 						end
 					else
-						for i=1,25 do
+						for i=1,containCount do
 							local item = entries[i];
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
@@ -3082,7 +3083,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							end
 							tinsert(info, { left = item.prefix .. left, right = right });
 						end
-						local more = #entries - 25;
+						local more = #entries - containCount;
 						tinsert(info, { left = "And " .. more .. " more..." });
 					end
 				end
