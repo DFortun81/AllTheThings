@@ -43,10 +43,6 @@ _.Zones =
 					q(49464, {	-- Saurolisk Tails
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(53315, {	-- Smooth Platinum
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(47695, {	-- Sound the Alarm
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -558,6 +554,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(53315, {	-- Smooth Platinum
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["requireSkill"] = MINING,
 					}),
 					q(50977, {	-- Smuggler Shakedown
 						["lvl"] = 120,

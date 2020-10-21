@@ -23,7 +23,6 @@ _.Zones =
 				q(45793),	-- Occultist Onslaught
 				q(45549),	-- Salving the Corruption
 				q(46945),	-- Si'vash
-				q(46762),	-- Storm Brew Hustle
 				q(46811),	-- The Broodmother's Wrath
 			}),
 ]]--
@@ -292,6 +291,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(46236, {	-- Stonebound Soldiers
+					["lvl"] = 110,
+					["isWorldQuest"] = true,
+				}),
+				q(46762, {	-- Storm Brew Hustle
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
