@@ -14,7 +14,6 @@ _.Zones =
 					
 					--	TODO:
 						-- verify if the following dailies are removed:
-							-- Tiny Treats (31710) *** MUST STILL HAVE A HATCHLING ***
 							-- The Trainer's Challenge: Ace Longpaw (31717)
 							-- The Trainer's Challenge: Ningna Darkwheel (31719)
 							-- The Trainer's Challenge: Qua-Ro Whitebrow (31721)
@@ -409,7 +408,7 @@ _.Zones =
 									{ "n", 65724 },	-- Azure Hatchling
 								},
 								["isDaily"] = true,
-								["u"] = REMOVED_FROM_GAME,	-- Wowhead says it's added in 7.3.5, is it really removed?
+								["coord"] = { 57.5, 45.3, 371 },
 							}),
 							q(31706, {	-- Weeping Widows
 								["minReputation"] = { 1271, HONORED },

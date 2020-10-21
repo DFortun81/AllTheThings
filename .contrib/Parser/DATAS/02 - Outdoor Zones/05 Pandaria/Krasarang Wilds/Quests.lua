@@ -1060,11 +1060,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(31378, {	-- Challenge At The Temple of the Red Crane
-					["provider"] = { "n", 64032 },	-- Sage Whiteheart
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(31379, {	-- Challenge At The Temple of the Red Crane
 					["provider"] = { "n", 64001 },	-- Sage Lotusbloom
 					["races"] = HORDE_ONLY,
@@ -1111,11 +1106,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,	-- where is this from?
 				}),
-				q(32347, {	-- Eviction Notice
-					["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(30728, {	-- Fat Long-Fat
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
@@ -1142,22 +1132,9 @@ _.Zones =
 					["coords"] = { 10.4, 53.8, 418 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(32130, {	-- Good Luck, Have Fun
-					["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
-					["coord"] = { 79.7, 30.0, 418 },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(32134, {	-- Hard Counter
 					["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
 					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32135, {	-- Hero Killer
-					["provider"] = { "n", 67628 },	-- Shademaster Kiryn
-					["coord"] = { 79.7, 30.4, 418 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 32450 },	-- The Time is Now!
 					["isDaily"] = true,
 				}),
 				q(30376, {	-- Hope Springs Eternal
@@ -1176,11 +1153,6 @@ _.Zones =
 				q(32344, {	-- It Is A Mystery
 					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32119, {	-- It Is A Mystery
-					["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
-					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(32156, {	-- It's Only Right
@@ -1231,18 +1203,9 @@ _.Zones =
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
-				q(30726, {	-- Minh Do-Tan
-					["provider"] = { "n", 60506 },	-- Thelonius
-					["isDaily"] = true,
-				}),
 				q(32197, {	-- Mystery Meatloaf
 					["provider"] = { "n", 67562 },	-- Duke
 					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32122, {	-- Ogudei's Lieutenants
-					["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
-					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(32343, {	-- Ogudei's Lieutenants
@@ -1250,29 +1213,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32346, {	-- Oi Ain't Afraid o' No Ghosts!
-					["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(30763, {	-- Piranha!
-					["provider"] = { "n", 60675 },	-- Fo Fook
-					["isDaily"] = true,
-				}),
 				q(32237, {	-- Precious Resource
 					["provider"] = { "n", 67553 },	-- Bixy Buzzsaw
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				}),
-				q(32116, {	-- Priorities, People!
-					["provider"] = { "n", 67631 },	-- Marshal Troteman
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32256, {	-- Rise Of An Empire
-					["coord"] = { 9.3, 51.1, 418 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 67939 },	-- General Nazgrim
 				}),
 				q(32137, {	-- Runnin' On Empty
 					["provider"] = { "n", 67542 },	-- Grizzle Gearslip
@@ -1282,12 +1226,6 @@ _.Zones =
 				q(30698, {	-- Scavenger Hunt
 					["provider"] = { "n", 60136 },	-- Fiznix
 					["requireSkill"] = FISHING,
-					["isDaily"] = true,
-				}),
-				q(32133, {	-- Sentry Wards
-					["provider"] = { "n", 67628 },	-- Shademaster Kiryn
-					["races"] = HORDE_ONLY,
-					["coord"] = { 79.7, 30.4, 418 },
 					["isDaily"] = true,
 				}),
 				q(32115, {	-- Shackles of the Past
@@ -1373,10 +1311,6 @@ _.Zones =
 					["provider"] = { "n", 68538 },	-- The Monkey King
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(32331, {	-- The Kirin Tor
-					["provider"] = { "n", 67940 },	-- Admiral Taylor
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(32363, {	-- The Kun-Lai Expedition
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
@@ -1430,11 +1364,6 @@ _.Zones =
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
 				}),
-				q(32121, {	-- The Spirit Trap
-					["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(32342, {	-- The Spirit Trap
 					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 					["races"] = HORDE_ONLY,
@@ -1443,12 +1372,6 @@ _.Zones =
 				q(32334, {	-- The Third Riddle: Strength
 					["provider"] = { "n", 68003 },	-- The Monkey King
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32450, {	-- The Time Is Now!
-					["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
-					["coord"] = { 9.0, 51.3, 418 },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
 				}),
 				q(30738, {	-- Thelonius
 					["provider"] = { "n", 60506 },	-- Thelonius
@@ -1510,12 +1433,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 30174 },	-- For Family
 				}),
-				q(32131, {	-- We Require More Minerals!
-					["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
-					["coord"] = { 79.7, 30.0, 418 },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(32345, {	-- We're Not Monsters!
 					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 					["races"] = HORDE_ONLY,
@@ -1532,12 +1449,6 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(32138, {	-- Work Order: Lumber
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32132, {	-- Worker Harassment
-					["provider"] = { "n", 67628 },	-- Shademaster Kiryn
-					["coord"] = { 79.7, 30.4, 418 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),

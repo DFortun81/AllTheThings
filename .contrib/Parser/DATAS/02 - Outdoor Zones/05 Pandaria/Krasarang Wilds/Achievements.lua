@@ -30,10 +30,6 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(7287, {	-- Champion of Chi-Ji (Cradle of Chi-Ji)
-					["sourceQuests"] = { 30739 },	-- Ellia Ravenmane: Redemption
-					["description"] = "Requires completing August Celestials dailies at the Cradle of Chi-Ji for a total of 15 days.  After you complete the first set of dailies, you'll be given an additional quest to defeat a challenger.",
-				}),
 				ach(7284, {	-- Is Another Man's Treasure
 					["collectible"] = false,
 					["g"] = {

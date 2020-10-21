@@ -17,7 +17,6 @@ _.Zones =
 				385,	-- Tomb of Conquerors
 				386,	-- Ruins of Korune (Upper Floor)
 				387,	-- Ruins of Korune (Lower Floor)
-				421,	-- Ruins of Ogudei
 				434,	-- The Ancient Passage
 			},
 			["lvl"] = 82,

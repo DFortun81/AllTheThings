@@ -66,6 +66,13 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "n", 58920 },	-- Kun Autumnlight
 				}),
+				q(31378, {	-- Challenge at the Temple of the Red Crane
+					["sourceQuests"] = { 31512 },	-- A Witness to History
+					["provider"] = { "n", 64032 },	-- Sage Whiteheart
+					["isDaily"] = true,
+					["coord"] = { 84.6, 63.6, 390 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(31876, {	-- The Inkmasters of the Arboretum
 					["requireSkill"] = INSCRIPTION,
 					["provider"] = { "n", 64691 },	-- Lorewalker Huynh

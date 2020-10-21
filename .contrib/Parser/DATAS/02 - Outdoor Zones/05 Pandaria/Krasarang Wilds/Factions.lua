@@ -129,6 +129,27 @@ _.Zones =
 								["coord"] = { 9.05, 51.2, 418 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32130, {	-- Good Luck, Have Fun
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
+								["isDaily"] = true,
+								["coord"] = { 79.8, 30.1, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32135, {	-- Hero Killer
+								["sourceQuests"] = { 32450 },	-- The Time is Now!
+								["provider"] = { "n", 67628 },	-- Shademaster Kiryn
+								["isDaily"] = true,
+								["coord"] = { 79.7, 30.4, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32133, {	-- Sentry Wards
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67628 },	-- Shademaster Kiryn
+								["isDaily"] = true,
+								["coord"] = { 79.8, 30.4, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32126, {	-- Tear It Up
 								["sourceQuests"] = { 32108 },	-- Domination Point
 								["provider"] = { "n", 67767 },	-- Brolic
@@ -143,6 +164,27 @@ _.Zones =
 									{ "n", 68072 },	-- Kor'kron Bodyguard
 								},
 								["coord"] = { 7.41, 62.7, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32450, {	-- The Time Is Now!
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
+								["isDaily"] = true,
+								["coord"] = { 9.0, 51.3, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32131, {	-- We Require More Minerals!
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
+								["isDaily"] = true,
+								["coord"] = { 79.8, 30.1, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32132, {	-- Worker Harassment
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67628 },	-- Shademaster Kiryn
+								["isDaily"] = true,
+								["coord"] = { 79.8, 30.4, 418 },
 								["races"] = HORDE_ONLY,
 							}),
 						}),
@@ -244,7 +286,9 @@ _.Zones =
 											32397,	-- He Won't Even Miss It
 										},
 									}),
-									crit(4),	-- Jaina's Hope
+									crit(4, {	-- Jaina's Hope
+										["sourceQuests"] = { 32362 },	-- The Fate of Dalaran
+									}),
 									crit(5),	-- The Korune
 									crit(6),	-- Heart of the Alliance
 									crit(7),	-- Secrets of the Past
@@ -299,10 +343,23 @@ _.Zones =
 								["coord"] = { 59.2, 84.3, 379 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32242, {	-- Buried Secrets
+								["sourceQuests"] = { 32256 },	-- Rise Of An Empire
+								["provider"] = { "n", 67840 },	-- Garrosh Hellscream
+								["coord"] = { 32.1, 84.9, 392 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32145, {	-- Don't Lose Your Head
 								["sourceQuests"] = { 32143 },	-- A Kind of Magic
 								["provider"] = { "n", 67528 },	-- Sully "The Pickle" McLeary
 								["isDaily"] = true,
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32347, {	-- Eviction Notice
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
+								["isDaily"] = true,
+								["coord"] = { 31.0, 27.9, 419 },	-- Ruins of Ogudei
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32146, {	-- Hammer to Fall
@@ -332,9 +389,37 @@ _.Zones =
 								["coord"] = { 94.5, 28.9, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32119, {	-- It Is A Mystery
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
+								["isDaily"] = true,
+								["coord"] = { 31.0, 27.9, 419 },	-- Ruins of Ogudei
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32109, {	-- Lion's Landing
 								["sourceQuests"] = { 32247 },	-- A King Among Men
 								["provider"] = { "n", 68399 },	-- 7th Legion Champion
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32122, {	-- Ogudei's Lieutenants
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
+								["isDaily"] = true,
+								["coord"] = { 31.0, 27.9, 419 },	-- Ruins of Ogudei
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32346, {	-- Oi Ain't Afraid o' No Ghosts!
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
+								["isDaily"] = true,
+								["coord"] = { 31.0, 27.9, 419 },	-- Ruins of Ogudei
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32116, {	-- Priorities, People!
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 67631 },	-- Marshal Troteman
+								["isDaily"] = true,
+								["coord"] = { 94.5, 28.9, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32149, {	-- Resource Gathering
@@ -343,6 +428,13 @@ _.Zones =
 								["isDaily"] = true,
 								["coord"] = { 94.5, 28.6, 418 },
 								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32256, {	-- Rise Of An Empire
+								["minReputation"] = { 1375, FRIENDLY+950 },
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67939 },	-- General Nazgrim
+								["coord"] = { 9.3, 51.1, 418 },
+								["races"] = HORDE_ONLY,
 							}),
 							q(32451, {	-- Send A Message
 								["provider"] = { "n", 68908 },	-- Amber Kearnen
@@ -376,6 +468,29 @@ _.Zones =
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
 								["provider"] = { "n", 67940 },	-- Admiral Taylor
 								["coord"] = { 94.5, 28.4, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32362, {	-- The Fate of Dalaran
+								["sourceQuests"] = { 32331 },	-- The Kirin Tor
+								["provider"] = { "n", 68106 },	-- Anduin Wrynn
+								["coord"] = { 26.3, 39.1, 501 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32331, {	-- The Kirin Tor
+								["minReputation"] = { 1376, HONORED+2850 },
+								["sourceQuests"] = {
+									32383,	-- Bugging Out
+									32397,	-- He Won't Even Miss It
+								},
+								["provider"] = { "n", 67940 },	-- Admiral Taylor
+								["coord"] = { 94.5, 28.4, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32121, {	-- The Spirit Trap
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
+								["isDaily"] = true,
+								["coord"] = { 31.0, 27.9, 419 },	-- Ruins of Ogudei
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32381, {	-- To Catch a Spy
@@ -506,7 +621,6 @@ _.Zones =
 							-- Flying Tiger Gourami
 							-- Like Bombing Fish in a Barrel
 							-- Mimic Octopus
-							-- Piranha!
 							-- Scavenger Hunt
 							-- Shocking!
 							-- Snapclaw
@@ -540,6 +654,12 @@ _.Zones =
 								["provider"] = { "n", 60135 },	-- Trawler Yotimo
 								["isDaily"] = true,
 								["coord"] = { 70.9, 39.0, 418 },
+							}),
+							q(30763, {	-- Piranha!
+								["requireSkill"] = FISHING,
+								["provider"] = { "n", 60675 },	-- Fo Fook
+								["isDaily"] = true,
+								["coord"] = { 70.5, 37.5, 418 },
 							}),
 							q(30584, {	-- Shocking!
 								["requireSkill"] = FISHING,
@@ -603,6 +723,12 @@ _.Zones =
 					["collectible"] = false,
 					["icon"] = "Interface\\Icons\\achievement_faction_celestials",
 					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(7287, {	-- Champion of Chi-Ji (Cradle of Chi-Ji)
+							--	the challenger quests (1) are dailies, which reset, and (2) completing one completes all of them every day, including the final quest in the chain, so adding a SQ to this achievement won't work
+								["description"] = "Requires completing August Celestials dailies at the Cradle of Chi-Ji for a total of 15 days.  After you complete the first set of dailies, you'll be given an additional quest to defeat a challenger.  You can only work on the achievement on days when the August Celestials request your aid at the Temple of the Red Crane.\n\n",
+							}),
+						}),
 						n(QUESTS, {
 							q(30716, {	-- Chasing Hope
 								["provider"] = { "n", 60528 },	-- Kuo-Na Quillpaw
@@ -618,6 +744,11 @@ _.Zones =
 								["provider"] = { "n", 60529 },	-- Yan Quillpaw
 								["isDaily"] = true,
 								["coord"] = { 32.0, 61.8, 418 },
+							}),
+							q(30726, {	-- Minh Do-Tan
+								["provider"] = { "n", 60506 },	-- Thelonius
+								["isDaily"] = true,
+								["coord"] = { 31.8, 61.4, 418 },
 							}),
 							q(30718, {	-- Students of Chi-Ji
 								["provider"] = { "n", 60506 },	-- Thelonius
