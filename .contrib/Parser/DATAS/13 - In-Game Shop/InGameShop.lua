@@ -4,11 +4,6 @@
 
 _.InGameShop =
 {
-	n(-163, {	-- Armor
-		un(REMOVED_FROM_GAME, i(95475)),			-- Crown of Eternal Winter
-		un(REMOVED_FROM_GAME, i(97213)),			-- Hood of Hungering Darkness
-		un(REMOVED_FROM_GAME, i(95474)),			-- Jewel of the Firelord
-	}),
 	n(-160, {	-- Mounts
 		un(REMOVED_FROM_GAME, i(95341)),			-- Armored Bloodwing
 		un(BLIZZARD_BALANCE, i(54811)),				-- Celestial Steed
@@ -67,6 +62,19 @@ _.InGameShop =
 		un(REMOVED_FROM_GAME, i(49663, {			-- Wind Rider Cub
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 		})),
+	}),
+	filter(2, {	-- Cosmetic
+		un(REMOVED_FROM_GAME, i(95475)),			-- Crown of Eternal Winter
+		un(REMOVED_FROM_GAME, i(97213)),			-- Hood of Hungering Darkness
+		un(REMOVED_FROM_GAME, i(95474)),			-- Jewel of the Firelord
+		un(BLIZZARD_BALANCE, i(172378)),			-- Sprite Darter's Bangle
+		un(BLIZZARD_BALANCE, i(172373)),			-- Sprite Darter's Flutterers
+		un(BLIZZARD_BALANCE, i(172376)),			-- Sprite Darter's Galoshes
+		un(BLIZZARD_BALANCE, i(172379)),			-- Sprite Darter's Glovelettes
+		un(BLIZZARD_BALANCE, i(172375)),			-- Sprite Darter's Mask
+		un(BLIZZARD_BALANCE, i(172377)),			-- Sprite Darter's Sash
+		un(BLIZZARD_BALANCE, i(172374)),			-- Sprite Darter's Shawl
+		un(BLIZZARD_BALANCE, i(172380)),			-- Sprite Darter's Trousers
 	}),
 	n(-161, {	-- Toys
 		["description"] = "For a limited time 25% of proceeds will go to WoW Esports prize pools.",
