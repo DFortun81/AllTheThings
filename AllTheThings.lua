@@ -5384,7 +5384,8 @@ app.BaseEncounter = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" then
-			return IsQuestFlaggedCompletedForObject(t);
+			-- only consider encounters saved if saved for the current character
+			return IsQuestFlaggedCompletedForObject(t) == 1;
 		elseif key == "index" then
 			return 1;
 		else
