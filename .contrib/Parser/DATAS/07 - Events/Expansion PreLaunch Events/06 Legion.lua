@@ -327,7 +327,7 @@ _.WorldEvents =
 						n(109912, {	-- Captive Wyrmtongue <Reluctant 'Quartermaster'>
 							un(REMOVED_FROM_GAME, i(136924)),	-- Felbat Pup Pet
 							un(REMOVED_FROM_GAME, i(141604)),	-- Glaive of the Fallen
-                            un(REMOVED_FROM_GAME, i(142526)),	-- Glaive of the Fallen (this 2nd version was seen in game Oct 2020)
+							un(REMOVED_FROM_GAME, i(142526)),	-- Glaive of the Fallen (this 2nd version was seen in game Oct 2020)
 							un(REMOVED_FROM_GAME, i(138160)),	-- Infernal Cord
 							un(REMOVED_FROM_GAME, i(139172)),	-- Legionnaire's Fel Pendant
 							un(REMOVED_FROM_GAME, i(138188)),	-- Demon Commander's Drape

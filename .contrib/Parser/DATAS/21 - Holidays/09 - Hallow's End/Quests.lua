@@ -1091,7 +1091,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(32034, {	-- Candy Bucket — Krasarang Wilds, Marista, neutral
 				["isYearly"] = true,
-				["coord"] = { 51.5, 77.3, 418 },
+				["coord"] = { 53.44, 76.49, 418 },
 				["maps"] = { 418 },	-- Krasarang Wilds
 				["g"] = {
 					i(37586),	-- Handful of Treats
@@ -1108,7 +1108,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(32036, {	-- Candy Bucket — Krasarang Wilds, Zhu's Watch, neutral
 				["isYearly"] = true,
-				["coord"] = { 75.9, 7.00, 418 },
+				["coord"] = { 79.48, 0.72, 418 },
 				["maps"] = { 418 },	-- Krasarang Wilds
 				["g"] = {
 					i(37586),	-- Handful of Treats
