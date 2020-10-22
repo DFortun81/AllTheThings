@@ -1218,13 +1218,17 @@ local IsQuestFlaggedCompleted = function(questID)
 	return questID and CompletedQuests[questID];
 end
 local IsQuestFlaggedCompletedForObject = function(t)
+	-- 1 = This character completed this quest
+	-- 2 = This quest was completed by another character on the account / This quest cannot be completed by this character
 	-- If the quest is completed for this character, return completed.
 	if IsQuestFlaggedCompleted(t.questID) then
 		return 1;
 	end
-	-- if not considering account-wide tracking, this quest cannot be obtained if any altQuest is completed
+	-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
+	local accountMode = app.Settings:Get("AccountMode");
+	-- this quest cannot be obtained if any altQuest is completed on this character and not tracking as account mode
 	-- If the quest has an altQuest which was completed on this character, return shared completed
-	if not app.AccountWideQuests and t.altcollected and t.altcollected > 0 then
+	if not accountMode and t.altcollected and t.altcollected > 0 then
 		return 2;
 	end
 	-- If the quest is repeatable, then check other things to determine if it has ever been completed
@@ -1233,8 +1237,8 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			return 1;
 		end
 		-- can an alt quest of a repeatable quest be permanent?
-		-- if not considering account-wide tracking, consider the quest completed once if any altquest was also completed
-		if not app.AccountWideQuests and t.altQuests and #t.altQuests > 0 then
+		-- if not considering account-mode, consider the quest completed once if any altquest was also completed
+		if not accountMode and t.altQuests and #t.altQuests > 0 then
 			-- If the quest has an altQuest which was completed on this character, return shared completed
 			for i,questID in ipairs(t.altQuests) do
 				-- any altQuest completed on this character, return shared completion
@@ -1250,8 +1254,8 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				SetTempDataSubMember("CollectedQuests", t.questID, 1);
 				return 1;
 			end
-			-- if not considering account-wide tracking, consider the quest completed once if any altquest was also completed
-			if not app.AccountWideQuests and t.altQuests and #t.altQuests > 0 then
+			-- if not considering account-mode tracking, consider the quest completed once if any altquest was also completed
+			if not accountMode and t.altQuests and #t.altQuests > 0 then
 				-- If the quest has an altQuest which was completed on this character, return shared completed
 				local isCollected;
 				for i,questID in ipairs(t.altQuests) do
@@ -1277,7 +1281,8 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				return 1;
 			end
 			
-			if wqt_local and t.altQuests and #t.altQuests > 0 then
+			-- only consider altquest completion if not on account-mode
+			if wqt_local and not accountMode and t.altQuests and #t.altQuests > 0 then
 				local isCollected;
 				for i,questID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, return shared completion
@@ -1294,38 +1299,16 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			if wqt_global and wqt_global[questID] and wqt_global[questID] > 0 then
 				SetDataSubMember("CollectedQuests", t.questID, 1);
 				-- only return as completed if not tracking account wide
-				if not app.AccountWideQuests then
+				if app.AccountWideQuests then
 					return 2;
 				end
 			end
-		
-			-- any alt quest completed on any character means nothing towards the specific quest for this character
-			-- if wqt_global then
-				-- for i,questID in ipairs(t.altQuests) do
-					-- -- any altQuest completed on this account, return shared completion
-					-- if wqt_global[questID] and wqt_global[questID] > 0 then
-						-- SetDataSubMember("CollectedQuests", questID, 1);
-						-- SetTempDataSubMember("CollectedQuests", questID, 1);
-						-- if app.AccountWideQuests then
-							-- return 2;
-						-- end
-					-- end
-				-- end
-				
-				-- SetDataSubMember("CollectedQuests", t.altQuestID, 1);
-				-- if app.AccountWideQuests then
-					-- return 2;
-				-- end
-			-- end
 		end
-		-- quest completed on any character and tracking account-wide, return shared completion
+		-- quest completed on any character and tracking account-wide, return shared completion regardless of account-mode
 		if app.AccountWideQuests then
 			if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
 				return 2;
 			end
-			-- if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
-				-- return 2;
-			-- end
 		end
 	end
 	if not t.repeatable and app.AccountWideQuests then
