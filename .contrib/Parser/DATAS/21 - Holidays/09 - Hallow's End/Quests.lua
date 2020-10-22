@@ -2018,14 +2018,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 			}),
 			q(8353,  {	-- Chicken Clucking for a Mint (Alliance)
-				["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Jesper!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 6740 },	-- Innkeeper Allison
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 84 },	-- Stormwind City
 			}),
 			q(8354,  {	-- Chicken Clucking for a Mint (Horde)
-				["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 6741 },	-- Innkeeper Norman
 				["races"] = HORDE_ONLY,
@@ -2091,14 +2091,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 			}),
 			q(8357,  {	-- Dancing for Marzipan (Alliance)
-				["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Jesper!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 6735 },	-- Innkeeper Saelienne
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 89 },	-- Darnassus
 			}),
 			q(8360,  {	-- Dancing for Marzipan (Horde)
-				["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 6746 },	-- Innkeeper Pala
 				["races"] = HORDE_ONLY,
@@ -2177,14 +2177,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 			}),
 			q(8356,  {	-- Flexing for Nougat (Alliance)
-				["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Jesper!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 6740 },	-- Innkeeper Allison
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 84 },	-- Stormwind City
 			}),
 			q(8359,  {	-- Flexing for Nougat (Horde)
-				["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
 				["races"] = HORDE_ONLY,
@@ -2214,7 +2214,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 23904 },	-- Sir Thomas
 			}),
 			q(8311,  {	-- Hallow's End Treats for Jesper!
-				["sourceQuests"] = { 8356, 8355, 8353, 8357 },	-- Flexing for Nougat, Incoming Gumdrop, Chicken Clucking for a Mint, Dancing for Marzipan (Alliance)
 				["provider"] = { "n", 15310 },	-- Jesper
 				["isYearly"] = true,
 				["races"] = ALLIANCE_ONLY,
@@ -2231,14 +2230,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 			}),
 			q(8355,  {	-- Incoming Gumdrop (Alliance)
-				["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Jesper!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 5111 },	-- Innkeeper Firebrew
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 87 },	-- Ironforge
 			}),
 			q(8358,  {	-- Incoming Gumdrop (Horde)
-				["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 11814 },	-- Kali Remik
 				["races"] = HORDE_ONLY,
