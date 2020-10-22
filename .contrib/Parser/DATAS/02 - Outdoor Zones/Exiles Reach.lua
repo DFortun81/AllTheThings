@@ -950,6 +950,7 @@ _.Zones =
 						59350,	-- A Druid's Form (druid) [A]
 						60168,	-- The Art of Taming (hunter) [A]
 						59354,	-- The Best Way to Use Sheep (mage) [A]
+						59349,	-- One Last Spar (monk) [A]
 					},
 				}),
 				q(59975, {	-- To Darkmaul Citadel (H)
@@ -962,6 +963,7 @@ _.Zones =
 						59951,	-- A Druid's Form (druid) [H]
 						60162,	-- The Art of Taming (hunter) [H]
 						59955,	-- The Best Way to Use Sheep (mage) [H]
+						59957,	-- One Last Spar (monk) [H]
 					},
 				}),
 				q(56775, {	-- Warming Up (A)
