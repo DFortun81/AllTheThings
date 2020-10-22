@@ -8927,10 +8927,10 @@ local function NestSourceQuests(root, addedQuests, depth)
 	-- root is already the cloned source of the new list, just add each sourceQuest cloned into sub-groups
 	-- setup tracking which quests have been added as a sub-group, so we can only add them once
 	if not addedQuests then
-		addedQuests =  { };
+		addedQuests =  {};
 	end
 	-- make sure root has no existing sub-groups
-	root.g = { };
+	root.g = {};
 	root.visible = true;
 	root.hideText = true;
 	root.depth = depth or 0;
@@ -8960,9 +8960,9 @@ local function NestSourceQuests(root, addedQuests, depth)
 				-- clone the object so as to not modify actual data
 				sq = CloneData(sq);
 				-- clean anything out of it so that items don't show in the quest requirements
-				sq.g = { };
+				sq.g = {};
 				
-				local nextRoot = not addedQuests[sourceQuestID] and NestSourceQuests(sq, addedQuests, (depth or 0) + 1) or sq;
+				local nextRoot = not addedQuests[sourceQuestID] and NestSourceQuests(sq, addedQuests, (depth or 0) + 1);
 				addedQuests[sourceQuestID] = true;
 				if nextRoot then
 					-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
@@ -8973,10 +8973,10 @@ local function NestSourceQuests(root, addedQuests, depth)
 			end
 		end
 		-- sort quests with less sub-quests to the top
-		if prereqs and #prereqs > 1 then
+		if prereqs then
 			table.sort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
+			root.g = prereqs;
 		end
-		root.g = prereqs;
 	end
 	return root;
 end
