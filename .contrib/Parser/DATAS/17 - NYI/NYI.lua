@@ -3938,7 +3938,6 @@ _.NeverImplemented =
 		n(-340, {	-- War Glaives
 			un(NEVER_IMPLEMENTED, i(129735)), 	-- Verus
 			un(NEVER_IMPLEMENTED, i(129736)), 	-- Verus
-			un(NEVER_IMPLEMENTED, i(142526)),	-- Glaive of the Fallen
 			un(NEVER_IMPLEMENTED, i(108807)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(158580)),	-- Loa-Claimer's Wariglaives
 			un(NEVER_IMPLEMENTED, i(151138)), 	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
