@@ -4,6 +4,20 @@
 
 _.NeverImplemented =
 {
+		{
+			-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
+			["itemID"] = 163255,	-- 7th Legionnaire's Treads
+			["modID"] = 5,
+			["u"] = NEVER_IMPLEMENTED,
+			["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
+		},
+		{
+			-- Keep this here until we get solid and an accurate source.
+			-- Dont tell the Users is actually obtainable but there is just no info
+			["itemID"] = 108905,	-- Jagged Turtleshell Blade
+			["u"] = NEVER_IMPLEMENTED,
+			["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
+		},
 	n(-10052, {	-- BFA - Stuff that gets added later on 9.0 release
 		-- Future Emsembles!!
 		-- Leather Horde (you probably will learn both after learning one)
@@ -15,14 +29,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(166920)),	-- Dread Gladiator's leather spaulders
 		un(NEVER_IMPLEMENTED, i(166921)),	-- Dread Gladiator's leather belt
 		un(NEVER_IMPLEMENTED, i(166922)),	-- Dread Gladiator's leather bindings
-		-- Leather Ally (you probably will learn both after learning one)
-		{
-			-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
-			["itemID"] = 163255,	-- 7th Legionnaire's Treads
-			["modID"] = 5,
-			["u"] = NEVER_IMPLEMENTED,
-			["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
-		},
 		un(NEVER_IMPLEMENTED, i(163436)),	-- Honorbound Outrider's Faceguard
 		un(NEVER_IMPLEMENTED, i(163433)),	-- Honorbound Outrider's Mantle
 		un(NEVER_IMPLEMENTED, i(163440)),	-- Honorbound Outrider's Belt
@@ -1047,7 +1053,21 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(158488)),	-- aiguille-scaler's boots
 			un(NEVER_IMPLEMENTED, i(158489)),	-- aiguille-scaler's girdle
 			un(NEVER_IMPLEMENTED, i(158490)),	-- aiguille-scaler's chestguard
-			un(NEVER_IMPLEMENTED, i(158491)),	-- aiguille-scaler's spaulders	
+			un(NEVER_IMPLEMENTED, i(158491)),	-- aiguille-scaler's spaulders
+			un(NEVER_IMPLEMENTED, i(93057)),	-- stormshaper vest
+			un(NEVER_IMPLEMENTED, i(93058)),	-- stormshaper greaves
+			un(NEVER_IMPLEMENTED, i(93059)),	-- stormshaper gauntlets
+			un(NEVER_IMPLEMENTED, i(93061)),	-- stormshaper legguards
+			un(NEVER_IMPLEMENTED, i(93062)),	-- stormshaper spualders
+			un(NEVER_IMPLEMENTED, i(93063)),	-- stormshaper belt
+			un(NEVER_IMPLEMENTED, i(93064)),	-- stormshaper brarcers
+			un(NEVER_IMPLEMENTED, i(109488)),	-- unknown
+			un(NEVER_IMPLEMENTED, i(109504)),	-- unknown
+			un(NEVER_IMPLEMENTED, i(109510)),	-- unknown
+			un(NEVER_IMPLEMENTED, i(109517)),	-- unknown
+			un(NEVER_IMPLEMENTED, i(109541)),	-- unknown
+			un(NEVER_IMPLEMENTED, i(109543)),	-- unknown
+			un(NEVER_IMPLEMENTED, i(109548)),	-- unknown
 			un(NEVER_IMPLEMENTED, i(158536)),	-- saurscale wristguards
 			un(NEVER_IMPLEMENTED, i(158537)),	-- saurscale gloves
 			un(NEVER_IMPLEMENTED, i(158538)),	-- saurscale leggings
@@ -1055,7 +1075,10 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(158540)),	-- saurscale boosts
 			un(NEVER_IMPLEMENTED, i(158541)),	-- saurscale girdle
 			un(NEVER_IMPLEMENTED, i(158542)),	-- saurscale chestguard
-			un(NEVER_IMPLEMENTED, i(163343)),	-- saurscale spaulders
+			un(NEVER_IMPLEMENTED, i(97076)),	-- scalehide spures
+			un(NEVER_IMPLEMENTED, i(97083)),	-- spiritbound boots
+			un(NEVER_IMPLEMENTED, i(97088)),	-- abandoned zandalari arrowlinks
+			un(NEVER_IMPLEMENTED, i(97089)),	--  abandoned zandalari waterchain
 			un(NEVER_IMPLEMENTED, i(163392)),	-- 7th legionnaires vestments
 			un(NEVER_IMPLEMENTED, i(163393)),	-- 7th legionnaires raiment
 			un(NEVER_IMPLEMENTED, i(163443)),	-- honorbound vanguard's vestments
@@ -3540,6 +3563,7 @@ _.NeverImplemented =
 		n(-346, {	-- Crossbows
 			un(NEVER_IMPLEMENTED, i(32187)),   	-- Chancellor's Heavy Crossbow
 			un(NEVER_IMPLEMENTED, i(108784)),   	-- Unknown
+			un(NEVER_IMPLEMENTED, i(153400)),   	-- [Scalawag's Bolt-Thrower]
 			un(NEVER_IMPLEMENTED, i(111073)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(165267)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(165271)),	-- Unknown
@@ -3741,6 +3765,8 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(64810)),	-- Bloodthirsty Gladiator's Pike (Epic BG item never made it out of beta)))
 			un(NEVER_IMPLEMENTED, i(108799)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109456)),	-- Unknown
+			un(NEVER_IMPLEMENTED, i(153401)),	-- [Whaler's Pike]
+			un(NEVER_IMPLEMENTED, i(154972)),	--  [Tomb-Rustler's Polearm]
 		}),
 		n(-387,	{	-- Relics
 			un(NEVER_IMPLEMENTED, i(132252)),	-- Owen Test Relic
@@ -3918,6 +3944,9 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(109373)),	-- 6.0 QA Combat Test Strength 2h Sword
 			un(NEVER_IMPLEMENTED, i(122747)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(165274)),	-- Unknown
+			un(NEVER_IMPLEMENTED, i(122067)),	-- inexorable greatsword
+			un(NEVER_IMPLEMENTED, i(122067)),	-- inexorable greatsword
+			un(NEVER_IMPLEMENTED, i(129426)),	-- heart-lesion greatsword
 		}),
 		n(-341, {	-- Wands
 			un(NEVER_IMPLEMENTED, i(161924)),	-- Seapriest's Wand (never addedd)

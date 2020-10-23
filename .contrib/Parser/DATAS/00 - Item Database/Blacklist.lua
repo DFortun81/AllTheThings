@@ -78,6 +78,35 @@ i(13514);	-- Wail of the Banshee
 i(85266);	-- Winter Blossom Tree
 i(128851);	-- Roasted juicycrunch carrots
 
+-- M+ PTR Testing
+i(159681);	-- Set Keystone Map: Darkheart Thicket
+i(159683);	-- Set Keystone Map: Black Rook Hold
+i(159684);	-- Set Keystone Map: Cathedral of Eternal Night
+i(159685);	-- Set Keystone Map: Court of Stars
+i(159686);	-- Set Keystone Map: Eye of Azshara
+i(159687);	-- Set Keystone Map: Halls of Valor
+i(159688);	-- Set Keystone Map: Maw of Souls
+i(159689);	-- Set Keystone Map: Lower Karazhan
+i(159690);	-- Set Keystone Map: Upper Karazhan
+i(159691);	-- Set Keystone Map: Seat of the Triumvirate
+i(159692);	-- Set Keystone Map: The Arcway
+i(159693);	-- Set Keystone Map: Vault of the Wardens
+i(159694);	-- Set Keystone Level: 15
+i(159695);	-- Set Keystone Level: 16
+i(159696);	-- Set Keystone Level: 17
+i(159697);	-- Set Keystone Level: 18
+i(159698);	-- Set Keystone Level: 19
+i(159699);	-- Set Keystone Level: 20
+i(159700);	-- Set Keystone Level: 21
+i(159701);	-- Set Keystone Level: 22
+i(159702);	-- Set Keystone Level: 23
+i(159703);	-- Set Keystone Level: 24
+i(159704);	-- Set Keystone Level: 25
+i(159705);	-- Set Keystone Level: 26
+i(159706);	-- Set Keystone Level: 27
+i(159707);	-- Set Keystone Level: 28
+i(159708);	-- Set Keystone Level: 29
+i(159709);	-- Set Keystone Level: 30
 
 
 -- Quest Items
