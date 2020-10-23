@@ -547,7 +547,6 @@ _.Zones =
 						PRIEST,		-- Holy
 						SHAMAN,		-- Restoration
 					},
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(46827, {	-- Meld Into the Shadows
 					["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
