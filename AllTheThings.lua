@@ -7105,7 +7105,15 @@ app.BaseQuest = {
 					end
 				end
 			end
-			if t["isBreadcrumb"] then questName = "|cff663399" .. questName .. "|r"; end
+			-- purple for breadcrumbs
+			if t.isBreadcrumb then questName = "|cff663399" .. questName .. "|r";
+			-- -- green for 'on this quest'
+			-- elseif false then -- TODO: Find out how to check if character is on this quest, and turn name green
+			-- -- red for Horde
+			-- elseif t.r == Enum.FlightPathFaction.Horde then questName = "|cffB81818" .. questName .. "|r";
+			-- -- blue for Alliance
+			-- elseif t.r then questName = "|cff305BAB" .. questName .. "|r";
+			end			
 			return questName;
 		elseif key == "questName" then
 			local questID = t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID;
@@ -9023,13 +9031,15 @@ local function NestSourceQuests(root, addedQuests, depth)
 				-- clean anything out of it so that items don't show in the quest requirements
 				sq.g = {};
 				
-				local nextRoot = not addedQuests[sourceQuestID] and NestSourceQuests(sq, addedQuests, (depth or 0) + 1);
-				addedQuests[sourceQuestID] = true;
-				if nextRoot then
-					-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
-					root.depth = math.max((root.depth or 0),(nextRoot.depth or 1));
-					if not prereqs then prereqs = {}; end
-					tinsert(prereqs, nextRoot);
+				if not addedQuests[sourceQuestID] then
+					addedQuests[sourceQuestID] = true;
+					sq = NestSourceQuests(sq, addedQuests, (depth or 0) + 1);
+					if sq then
+						-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
+						root.depth = math.max((root.depth or 0),(sq.depth or 1));
+						if not prereqs then prereqs = {}; end
+						tinsert(prereqs, sq);
+					end
 				end
 			end
 		end
