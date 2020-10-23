@@ -9003,9 +9003,10 @@ local function NestSourceQuests(root, addedQuests, depth)
 	root.visible = true;
 	root.hideText = true;
 	root.depth = depth or 0;
-	if not root.depth then root.depth  = 0; end
 	if root.sourceQuests and #root.sourceQuests > 0 then
-		local prereqs;
+		-- any breadcrumb sourcequests should have their corresponding sourcequests pushed up into the parent as well, so that
+		-- quest chains only passing through a breadcrumb do not get stuck if not collecting breadcrumbs
+		local allsqs = {};
 		for i,sourceQuestID in ipairs(root.sourceQuests) do
 			local qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
 			if qs and #qs > 0 then
@@ -9018,21 +9019,45 @@ local function NestSourceQuests(root, addedQuests, depth)
 					if sq.parent and sq.parent.questID == sq.questID then
 						sq = sq.parent;
 					end
-				elseif sourceQuestID > 0 then
-					-- Create a Quest Object.
-					sq = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['hideText'] = true, });
-				else
-					-- Create a NPC Object.
-					sq = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true, });
+					-- if this is a breadcrumb, push all of its sqs into allsqs
+					if sq.isBreadcrumb and sq.sourceQuests then
+						for i,bcsq in ipairs(sq.sourceQuests) do
+							tinsert(allsqs, bcsq);
+						end
+					end
 				end
+			end
+			-- always add the actual sqID as well
+			tinsert(allsqs,sourceQuestID);
+		end
+		local prereqs;
+		for i,sourceQuestID in ipairs(allsqs) do
+			if not addedQuests[sourceQuestID] then
+				addedQuests[sourceQuestID] = true;
+				local qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
+				if qs and #qs > 0 then
+					local i, sq = #qs;
+					while not sq and i > 0 do
+						if qs[i].questID == sourceQuestID then sq = qs[i]; end
+						i = i - 1;
+					end
+					if sq and sq.questID then
+						if sq.parent and sq.parent.questID == sq.questID then
+							sq = sq.parent;
+						end
+					elseif sourceQuestID > 0 then
+						-- Create a Quest Object.
+						sq = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['hideText'] = true, });
+					else
+						-- Create a NPC Object.
+						sq = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true, });
+					end
+					
+					-- clone the object so as to not modify actual data
+					sq = CloneData(sq);
+					-- clean anything out of it so that items don't show in the quest requirements
+					sq.g = {};
 				
-				-- clone the object so as to not modify actual data
-				sq = CloneData(sq);
-				-- clean anything out of it so that items don't show in the quest requirements
-				sq.g = {};
-				
-				if not addedQuests[sourceQuestID] then
-					addedQuests[sourceQuestID] = true;
 					sq = NestSourceQuests(sq, addedQuests, (depth or 0) + 1);
 					if sq then
 						-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
