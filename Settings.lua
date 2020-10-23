@@ -106,6 +106,7 @@ local GeneralSettingsBase = {
 		["Thing:Mounts"] = true,
 		["Thing:MusicRolls"] = true,
 		["Thing:Quests"] = false,
+		["Thing:Breadcrumbs"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
 		["Thing:SelfieFilters"] = true,
@@ -354,6 +355,7 @@ settings.CreateCheckBox = function(self, text, OnRefresh, OnClick)
 	cb:SetScript("OnClick", OnClick);
 	cb.OnRefresh = OnRefresh;
 	cb.Text:SetText(text);
+	cb:SetHitRectInsets(0,0 - cb.Text:GetWidth(),0,0);
 	return cb;
 end
 settings.CreateTab = function(self, text)
@@ -495,6 +497,7 @@ settings.UpdateMode = function(self)
 		app.CollectibleMounts = true;
 		app.CollectibleMusicRolls = true;
 		app.CollectibleQuests = true;
+		app.CollectibleBreadcrumbs = true;
 		app.CollectibleRecipes = true;
 		app.CollectibleReputations = true;
 		app.CollectibleSelfieFilters = true;
@@ -546,6 +549,7 @@ settings.UpdateMode = function(self)
 		app.CollectibleMounts = self:Get("Thing:Mounts");
 		app.CollectibleMusicRolls = self:Get("Thing:MusicRolls");
 		app.CollectibleQuests = self:Get("Thing:Quests");
+		app.CollectibleBreadcrumbs = self:Get("Thing:Breadcrumbs");
 		app.CollectibleRecipes = self:Get("Thing:Recipes");
 		app.CollectibleReputations = self:Get("Thing:Reputations");
 		app.CollectibleSelfieFilters = self:Get("Thing:SelfieFilters");
@@ -1167,8 +1171,28 @@ function(self)
 	settings:UpdateMode();
 	app:RefreshData();
 end);
-QuestsCheckBox:SetATTTooltip("Enable this option to track quests.\n\nYou can right click any quest in the lists to pop out their full quest chain to show your progress and any prerequisite or breadcrumb quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and World Quests are tracked in the Blizzard Database.");
+QuestsCheckBox:SetATTTooltip("Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and World Quests are tracked in the Blizzard Database.");
+QuestsCheckBox.Text:SetWidth(50);
 QuestsCheckBox:SetPoint("TOPLEFT", MusicRollsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local QuestBreadcrumbsCheckBox = settings:CreateCheckBox("+Breadcrumbs",
+function(self)
+	self:SetChecked(settings:Get("Thing:Breadcrumbs"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Breadcrumbs", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+QuestBreadcrumbsCheckBox:SetATTTooltip("Enable this option to specifically include tracking of Breadcrumb Quest completion.\n\nBreadcrumb Quests are technically 'optional' in that they only serve to lead the player to a different Quest, and become unavailable if they are not completed prior to completing their following Quest(s).\nThis can make obtaining Breadcrumbs very reliant on the Party Sync feature or Account Mode.");
+QuestBreadcrumbsCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPRIGHT", 60, 0);
 
 local QuestsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
@@ -1186,6 +1210,7 @@ function(self)
 	settings:UpdateMode();
 	app:RefreshData();
 end);
+QuestsAccountWideCheckBox:SetATTTooltip("Enable this option to consider Quest completion across all Characters that you have logged into, rather than only considering the current Character.");
 QuestsAccountWideCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 220, 0);
 
 local RecipesCheckBox = settings:CreateCheckBox("Recipes",

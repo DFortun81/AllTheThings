@@ -1214,10 +1214,13 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		end
 	end
 end});
+-- returns nil if nil provided, otherwise true/false based on the specific quest being completed by the current character
 local IsQuestFlaggedCompleted = function(questID)
 	return questID and CompletedQuests[questID];
 end
 local IsQuestFlaggedCompletedForObject = function(t)
+	-- nil if not a quest-based object
+	if not t.questID then return; end
 	-- 1 = This character completed this quest
 	-- 2 = This quest was completed by another character on the account / This quest cannot be completed by this character
 	-- If the quest is completed for this character, return completed.
@@ -1298,7 +1301,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			-- quest completed on any character, return shared completion
 			if wqt_global and wqt_global[questID] and wqt_global[questID] > 0 then
 				SetDataSubMember("CollectedQuests", t.questID, 1);
-				-- only return as completed if not tracking account wide
+				-- only return as completed if tracking account wide
 				if app.AccountWideQuests then
 					return 2;
 				end
@@ -1306,14 +1309,14 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		end
 		-- quest completed on any character and tracking account-wide, return shared completion regardless of account-mode
 		if app.AccountWideQuests then
-			if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
+			if GetDataSubMember("CollectedQuests", t.questID) then
 				return 2;
 			end
 		end
 	end
 	if not t.repeatable and app.AccountWideQuests then
 		-- any character has completed this specific quest, return shared completion
-		if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
+		if GetDataSubMember("CollectedQuests", t.questID) then
 			return 2;
 		end
 	end
@@ -6414,7 +6417,14 @@ local itemFields = {
 	end,
 	["collectible"] = function(t)
 		return (rawget(t, "s") and app.CollectibleTransmog)
-			or (rawget(t, "questID") and app.CollectibleQuests and ((not rawget(t, "isBreadcrumb") and not rawget(t, "DisablePartySync")) or app.AccountWideQuests) and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")))
+			or (rawget(t, "questID") and 
+				-- must treat Quests as collectible
+				app.CollectibleQuests
+				-- must not be repeatable, unless considering repeatable quests as trackable
+				and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+				-- must not be a breadcrumb unless it is actually available and collecting breadcrumbs OR be in account-mode (i.e. another character to complete)
+				-- TODO: revisit if party sync option becomes a thing
+				and ((not t.isBreadcrumb and not t.DisablePartySync) or (app.CollectibleBreadcrumbs and t.isBreadcrumbAvailable and t.isBreadcrumbAvailable == 0) or app.Settings:Get("AccountMode")))
 			or (rawget(t, "factionID") and app.CollectibleReputations);
 	end,
 	["collected"] = function(t)
@@ -6817,7 +6827,14 @@ local npcFields = {
 		end
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleQuests and rawget(t, "questID") and ((not rawget(t, "isBreadcrumb") and not rawget(t, "DisablePartySync")) or app.AccountWideQuests) and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
+		return rawget(t, "questID") and (
+				-- must treat Quests as collectible
+				app.CollectibleQuests
+				-- must not be repeatable, unless considering repeatable quests as trackable
+				and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+				-- must not be a breadcrumb unless it is actually available and collecting breadcrumbs OR be in account-mode (i.e. another character to complete)
+				-- TODO: revisit if party sync option becomes a thing
+				and ((not t.isBreadcrumb and not t.DisablePartySync) or (app.CollectibleBreadcrumbs and t.isBreadcrumbAvailable and t.isBreadcrumbAvailable == 0) or app.Settings:Get("AccountMode")));
 	end,
 	["collected"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
@@ -6902,7 +6919,14 @@ app.BaseObject = {
 		elseif key == "icon" then
 			return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
 		elseif key == "collectible" then
-			return app.CollectibleQuests and t.questID and ((not t.isBreadcrumb and not t.DisablePartySync) or app.AccountWideQuests) and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
+			return t.questID and
+				-- must treat Quests as collectible
+				app.CollectibleQuests
+				-- must not be repeatable, unless considering repeatable quests as trackable
+				and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+				-- must not be a breadcrumb unless it is actually available and collecting breadcrumbs OR be in account-mode (i.e. another character to complete)
+				-- TODO: revisit if party sync option becomes a thing
+				and ((not t.isBreadcrumb and not t.DisablePartySync) or (app.CollectibleBreadcrumbs and t.isBreadcrumbAvailable and t.isBreadcrumbAvailable == 0) or app.Settings:Get("AccountMode"));
 		elseif key == "repeatable" then
 			return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
 		elseif key == "trackable" then
@@ -7120,7 +7144,14 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return app.CollectibleQuests and ((not t.isBreadcrumb and not t.DisablePartySync) or app.AccountWideQuests) and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
+			return
+				-- must treat Quests as collectible
+				app.CollectibleQuests
+				-- must not be repeatable, unless considering repeatable quests as trackable
+				and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+				-- must not be a breadcrumb unless it is actually available and collecting breadcrumbs OR be in account-mode (i.e. another character to complete)
+				-- TODO: revisit if party sync option becomes a thing
+				and ((not t.isBreadcrumb and not t.DisablePartySync) or (app.CollectibleBreadcrumbs and t.isBreadcrumbAvailable and t.isBreadcrumbAvailable == 0) or app.Settings:Get("AccountMode"));
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
 		elseif key == "saved" or key == "collected" then
@@ -7140,6 +7171,46 @@ app.BaseQuest = {
 				end
 			end
 			return rawget(t, "altcollected");
+		-- returns 0 if available or non-breadcrumb quest, or returns a completed questID which blocks this breadcrumb from being obtained
+		elseif key == "isBreadcrumbAvailable" then
+			-- return 0 for non-breadcrumbs
+			if not t.isBreadcrumb then return 0; end
+			if not rawget(t,"isBreadcrumbAvailable") then
+				rawset(t,"isBreadcrumbAvailable",0);
+				-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
+				if t.nextQuests then
+					local found;
+					for i,questID in ipairs(t.nextQuests) do
+						-- any nextQuests completed specifically on this character, mark the nextQuestsID
+						-- print("check nextQuest",questID);
+						if not found and IsQuestFlaggedCompleted(questID) then
+							found = questID;
+							-- print("complete nextQuest found",questID,"=>",t.questID);
+						elseif not found then
+							-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
+							local qs = SearchForField("questID", questID);
+							-- check the quests cached under this questID for the correct quest group
+							if qs and #qs > 0 then
+								local i, sq = #qs;
+								while not sq and i > 0 do
+									if qs[i].questID == questID then sq = qs[i]; end
+									i = i - 1;
+								end
+							end
+							if sq then
+								if sq.collected or sq.altcollected or sq.isBreadcrumbAvailable ~= 0 then
+									-- print("complete sq found",sq.collected,sq.altcollected,sq.isBreadcrumbAvailable);
+									found = questID;
+								end
+							end
+						end
+					end
+					if found then
+						rawset(t, "isBreadcrumbAvailable", found);
+					end
+				end
+			end
+			return rawget(t, "isBreadcrumbAvailable");
 		elseif key == "sourceQuestsCompleted" then
 			if t.sourceQuests and #t.sourceQuests > 0 then
 				local anySourceIncomplete = false;
@@ -7776,7 +7847,14 @@ app.BaseVignette = {
 		elseif key == "icon" then
 			return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
 		elseif key == "collectible" then
-			return app.CollectibleQuests and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
+			return t.questID
+				-- must treat Quests as collectible
+				and app.CollectibleQuests
+				-- must not be repeatable, unless considering repeatable quests as trackable
+				and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+				-- must not be a breadcrumb unless it is actually available OR be in account-mode (i.e. another character to complete)
+				-- TODO: revisit if party sync option becomes a thing
+				and ((not t.isBreadcrumb and not t.DisablePartySync) or (t.isBreadcrumbAvailable and t.isBreadcrumbAvailable == 0) or app.Settings:Get("AccountMode"));
 		elseif key == "collected" then
 			return t.collectible and t.saved;
 		elseif key == "repeatable" then
@@ -10336,6 +10414,8 @@ RowOnEnter = function (self)
 			if prereqs and #prereqs > 0 then
 				GameTooltip:AddLine("There are prerequisite quests that must be completed before this may be obtained:");
 				for i,prereq in ipairs(prereqs) do
+					-- TODO: adding a call to GetCollectionIcon() instead of GetCompletionIcon() instead  causes the 'more than 60 upvalues' error...
+					-- GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or QuestTitleFromID[prereq.questID]) .. " " .. GetCollectionIcon(IsQuestFlaggedCompletedForObject(prereq)));
 					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or QuestTitleFromID[prereq.questID]) .. " " .. GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
 				end
 			end
