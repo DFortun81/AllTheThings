@@ -1054,9 +1054,10 @@ _.Zones =
 				}),
 				q(29730, {	-- Scouting Report: Hostile Natives
 					["sourceQuests"] = {
+						29971,	-- The Scouts Return (breadcrumb)
 						29939,	-- Boom Bait
+						29942,	-- Silly Wikket, Slickies are for Hozen
 						31239,	-- What's in a Name Name?
-						29971,	-- The Scouts Return
 					},
 					["provider"] = { "n", 55648 },	-- Riko
 					["coord"] = { 28.6, 47.4, 371 },
@@ -1460,6 +1461,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						29939,	-- Boom Bait
+						29942,	-- Silly Wikket, Slickies are for Hozen
 						31239,	-- What's in a Name Name?
 					},
 					["provider"] = { "n", 56406 },	-- Rivett Clutchpop

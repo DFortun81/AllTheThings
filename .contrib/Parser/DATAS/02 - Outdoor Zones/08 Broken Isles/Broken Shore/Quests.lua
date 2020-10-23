@@ -536,7 +536,6 @@ _.Zones =
 						PRIEST,		-- Discipline
 						WARLOCK,	-- Destruction
 					},
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47027, {	-- Legion Threat: Val'sharah
 					["isBreadcrumb"] = true,

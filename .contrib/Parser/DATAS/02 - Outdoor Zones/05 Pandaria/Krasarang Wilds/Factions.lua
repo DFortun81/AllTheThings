@@ -618,7 +618,6 @@ _.Zones =
 						n(QUESTS, {
 						--	TODO: add the following quests.  i'm just moving them into the file as i see them so i can ensure the correct coordinates are added and none get forgotten.  i hate this zone.
 							-- Armored Carp
-							-- Flying Tiger Gourami
 							-- Like Bombing Fish in a Barrel
 							-- Mimic Octopus
 							-- Scavenger Hunt
@@ -636,6 +635,12 @@ _.Zones =
 								["provider"] = { "n", 59586 },	-- Angler Shen
 								["isDaily"] = true,
 								["coord"] = { 70.8, 40.1, 418 },
+							}),
+							q(31443, {	-- Flying Tiger Gourami
+								["requireSkill"] = FISHING,
+								["description"] = "Found while fishing in any inland body of water on Pandaria.\n\n",
+								["provider"] = { "i", 86542 },	-- Flying Tiger Gourami
+								["isDaily"] = true,
 							}),
 							q(30586, {	-- Jagged Abalone
 								["requireSkill"] = FISHING,

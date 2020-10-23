@@ -83,12 +83,12 @@ _.Zones =
 					},
 				}),
 				ach(7295, {	-- Listen to the Drunk Fish (Halfhill)
-					crit(2),	-- Green Cabbage
 					crit(1),	-- Juicycrunch Carrot
-					crit(4),	-- Mogu Pumpkin
-					crit(6),	-- Pink Turnip
-					crit(5),	-- Red Blossom Leek
+					crit(2),	-- Green Cabbage
 					crit(3),	-- Scallions
+					crit(4),	-- Mogu Pumpkin
+					crit(5),	-- Red Blossom Leek
+					crit(6),	-- Pink Turnip
 					crit(7),	-- White Turnip
 				}),
 				ach(6301, {		-- Rally the Valley

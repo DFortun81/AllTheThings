@@ -1121,12 +1121,6 @@ _.Zones =
 					},
 					["sourceQuests"] = { 36612, 36870 },	-- Luring Nat (both faction versions)
 				}),
-				q(31443, {	-- Flying Tiger Gourami
-					["provider"] = { "i", 86542 },	-- Flying Tiger Gourami
-					["requireSkill"] = FISHING,
-					["isDaily"] = true,
-					["description"] = "Found while fishing in any inland body of water on Pandaria",
-				}),
 				q(32329, {	-- Get My Results!
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["coords"] = { 10.4, 53.8, 418 },

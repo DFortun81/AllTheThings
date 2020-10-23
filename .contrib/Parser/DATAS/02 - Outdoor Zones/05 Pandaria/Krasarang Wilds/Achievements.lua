@@ -81,8 +81,8 @@ _.Zones =
 						}),
 						crit(3, {	-- Nayeli Lagoon
 							["sourceQuests"] = {
-							--	30672,	-- Balance (required?)
-							--	30674,	-- Balance Without Violence (required?)
+								30672,	-- Balance
+								30674,	-- Balance Without Violence
 								30675,	-- Buried Hozen Treasure
 							},
 						}),
@@ -103,9 +103,19 @@ _.Zones =
 						crit(2, {	-- Thunder Cleft
 							["sourceQuests"] = { 30131 },	-- Life
 						}),
-						crit(3),	-- Nayeli Lagoon
-						crit(4),	-- Temple of the Red Crane
-						crit(5),	-- Dawnchaser Retreat
+						crit(3, {	-- Nayeli Lagoon
+							["sourceQuests"] = {
+								30672,	-- Balance
+								30674,	-- Balance Without Violence
+								30675,	-- Buried Hozen Treasure
+							},
+						}),
+						crit(4, {	-- Temple of the Red Crane
+							["sourceQuests"] = { 30273 },	-- In the House of the Red Crane
+						}),
+						crit(5, {	-- Dawnchaser Retreat
+							["sourceQuests"] = { 30174 },	-- For Family
+						}),
 					},
 				}),
 				ach(7997, {	-- Riches of Pandaria
