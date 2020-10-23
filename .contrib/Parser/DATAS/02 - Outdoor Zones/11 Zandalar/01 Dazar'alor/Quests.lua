@@ -498,7 +498,7 @@ _.Zones =
 					["provider"] = { "n", 122320 },	-- Bladeguard Kaja
 				}),
 				q(49917, {	-- Kaja'mite? Kaja'must!
-				--	possibly a breadcrumb; kaja'mite ore bust can be picked up with no prereqs
+					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
 					["provider"] = { "n", 130932 },	-- Nok'tal
 					["coord"] = { 65.4, 82.6, 1164 },

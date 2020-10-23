@@ -254,7 +254,7 @@ _.Zones =
 				},
 			}),
 			i(170180, {	-- Razorshell
-				["description"] = "Only drops when War Mode is enabled.",
+			--	["description"] = "Only drops when War Mode is enabled.", (i guess they changed this?)
 				["crs"] = {
 					145970,	-- Razorshell Turtle
 					152383,	-- Snapshell Tortoise

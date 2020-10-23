@@ -249,12 +249,19 @@ _.Zones =
 				q(47032, {	-- Legion Threat: Azshara
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["classes"] = {
+						DEATHKNIGHT,	-- Frost
+						DEMONHUNTER,	-- Havoc
+						HUNTER,			-- Survival
+						ROGUE,			-- Subtlety
+						WARRIOR,		-- Arms
+					},
 					["coord"] = { 44.6, 63.2, 646 },
-					["classes"] = { WARRIOR },	-- Arms
 					["lvl"] = 110,
 				}),
 				q(47030, {	-- Legion Threat: Dalaran Infiltration
 					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 44821 },	-- In Dire Need
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.2, 646 },
 					["classes"] = {
@@ -267,32 +274,75 @@ _.Zones =
 					},
 					["lvl"] = 110,
 				}),
-				q(47033, {	-- Legion Threat: Suramar -- TODO: need to determine all classes this applies to. Confirmed mage 28.July.2020
-					["coord"] = { 44.7, 63.2, 646 },
-					["classes"] = { MAGE },
-					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["sourceQuest"] = 44821,	-- In Dire Need
+				q(47031, {	-- Legion Threat: Highmountain
 					["isBreadcrumb"] = true,
-				}),
-				q(47035, {	-- Legion Threat: The Missing Mage -- TODO: need to determine all classes this applies to. Confirmed mage 28.July.2020
-					["coord"] = { 44.7, 63.2, 646 },
+					["sourceQuests"] = { 44821 },	-- In Dire Need
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["sourceQuest"] = 44821,	-- In Dire Need
-					["isBreadcrumb"] = true,
 					["classes"] = {
 						HUNTER,		-- Beast Mastery
-						MAGE,		-- Fire
 						MONK,		-- Windwalker
 						PRIEST,		-- Discipline
 						WARLOCK,	-- Destruction
 					},
+					["coord"] = { 44.6, 63.2, 646 },
+					["lvl"] = 110,
 				}),
-				q(47034, {	-- Legion Threat: The Necromancer -- TODO: need to determine all classes this applies to. Confirmed mage 28.July.2020
-					["coord"] = { 44.7, 63.2, 646 },
-					["classes"] = { MAGE },
-					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["sourceQuest"] = 44821,	-- In Dire Need
+				q(47033, {	-- Legion Threat: Suramar
 					["isBreadcrumb"] = true,
+					["sourceQuest"] = 44821,	-- In Dire Need
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["classes"] = {
+						MAGE,		-- Arcane
+						PALADIN,	-- Retribution
+						ROGUE,		-- Assassination
+						SHAMAN,		-- Enhancement
+						WARLOCK,	-- Demonology
+					},
+					["coord"] = { 44.7, 63.2, 646 },
+					["lvl"] = 110,
+				}),
+				q(47035, {	-- Legion Threat: The Missing Mage
+					["isBreadcrumb"] = true,
+					["sourceQuest"] = 44821,	-- In Dire Need
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["classes"] = {
+						DEATHKNIGHT,	-- Unholy
+						DRUID,			-- Feral
+						MAGE,			-- Fire
+						ROGUE,			-- Outlaw
+						SHAMAN,			-- Elemental
+						WARRIOR,		-- Fury
+					},
+					["coord"] = { 44.7, 63.2, 646 },
+					["lvl"] = 110,
+				}),
+				q(47034, {	-- Legion Threat: The Necromancer
+					["isBreadcrumb"] = true,
+					["sourceQuest"] = 44821,	-- In Dire Need
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["classes"] = {
+						DRUID,		-- Balance
+						HUNTER,		-- Marksmanship
+						MAGE,		-- Frost
+						PRIEST,		-- Shadow
+						WARLOCK,	-- Affliction
+					},
+					["coord"] = { 44.7, 63.2, 646 },
+					["lvl"] = 110,
+				}),
+				q(47027, {	-- Legion Threat: Val'sharah
+					["isBreadcrumb"] = true,
+					["sourceQuest"] = 44821,	-- In Dire Need
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["classes"] = {
+						DRUID,		-- Restoration
+						MONK,		-- Mistweaver
+						PALADIN,	-- Holy
+						PRIEST,		-- Holy
+						SHAMAN,		-- Restoration
+					},
+					["coord"] = { 44.6, 63.2, 646 },
+					["lvl"] = 110,
 				}),
 				q(46333, {	-- Livin' on the Ledge
 					["sourceQuests"] = { 46246 },	-- Strike Them Down
@@ -324,6 +374,7 @@ _.Zones =
 						PRIEST,		-- Shadow
 						WARLOCK,	-- Affliction
 					},
+					["lvl"] = 110,
 				}),
 				q(46253, {	-- Pillars of Creation
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
@@ -360,6 +411,18 @@ _.Zones =
 					["provider"] = { "n", 117709 },	-- Lady S'theno
 					["classes"] = { DEMONHUNTER },
 					["coord"] = { 52.1, 21.3, 646 },
+					["lvl"] = 110,
+				}),
+				q(45192, {	-- Runes of Rending
+					["sourceQuests"] = { 45190 },	-- Where it's Thinnest
+					["provider"] = { "n", 116175 },	-- Karam Magespear
+					["classes"] = {
+						DRUID,		-- Balance
+						HUNTER,		-- Marksmanship
+						MAGE,		-- Frost
+						PRIEST,		-- Shadow
+						WARLOCK,	-- Affliction
+					},
 					["lvl"] = 110,
 				}),
 				q(47067, {	-- Seeking Lost Knowledge
@@ -525,29 +588,6 @@ _.Zones =
 				}),
 
 			-- TODO: unconfirmed or old af data that needs to be re-confirmed anyway
-
-				q(47031, {	-- Legion Threat: Highmountain
-					["isBreadcrumb"] = true,
-					["altQuests"] = { 47035 },	-- Legion Threat: The Missing Mage
-					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["classes"] = {
-						HUNTER,		-- Beast Mastery
-						MONK,		-- Windwalker
-						PRIEST,		-- Discipline
-						WARLOCK,	-- Destruction
-					},
-				}),
-				q(47027, {	-- Legion Threat: Val'sharah
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["classes"] = {
-						DRUID,		-- Restoration
-						MONK,		-- Mistweaver
-						PALADIN,	-- Holy
-						PRIEST,		-- Holy
-						SHAMAN,		-- Restoration
-					},
-				}),
 				q(46827, {	-- Meld Into the Shadows
 					["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 					["races"] = HORDE_ONLY,
@@ -680,18 +720,6 @@ _.Zones =
 				}),
 				q(43264),	-- Rise, Champions
 				q(45815),	-- Rogue
---]]
-				q(45192, {	-- Runes of Rending
-					["provider"] = { "n", 116175 },	-- Karam Magespear
-					["classes"] = {
-						DRUID,		-- Balance
-						HUNTER,		-- Marksmanship
-						MAGE,		-- Frost
-						PRIEST,		-- Shadow
-						WARLOCK,	-- Affliction
-					},
-				}),
---[[
 				q(45348),	-- Safekeeping
 				q(43539),	-- Salanar the Horseman
 				q(46060),	-- Salvation

@@ -53,6 +53,7 @@ _.Zones =
 					["sourceQuest"] = 14431,	-- The Blackmaw Scar
 				}),
 				q(46177, {	-- A Portal Away
+					["sourceQuests"] = { 44924 },	-- The Archmage Accosted
 					["provider"] = { "n", 116048 },	-- Joanna
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost

@@ -875,7 +875,13 @@ _.Zones =
 					["coord"] = { 36.1, 27.5, 634 },
 				}),
 				q(45486, {	-- The Reluctant Queen
-					["lvl"] = 110,
+					["sourceQuests"] = {
+						45482,	-- Arcane: Fate of the Tideskorn
+						47051, 	-- Assassination: Fate of the Tideskorn
+						47049,	-- Demonology: Fate of the Tideskorn
+						47050,	-- Enhancement: Fate of the Tideskorn
+						47052,	-- Retribution: Fate of the Tideskorn
+					},
 					["provider"] = { "n", 116568 },	-- Sigryn
 					["classes"] = {
 						MAGE,		-- Arcane
@@ -884,6 +890,7 @@ _.Zones =
 						SHAMAN,		-- Enhancement
 						WARLOCK,	-- Demonology
 					},
+					["lvl"] = 110,
 				}),
 				q(38823, {	-- The Runes that Bind
 					["sourceQuests"] = {

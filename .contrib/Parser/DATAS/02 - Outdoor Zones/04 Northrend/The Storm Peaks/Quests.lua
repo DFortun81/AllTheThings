@@ -1081,6 +1081,7 @@ _.Zones =
 					},
 				}),
 				q(13426, {	-- Xarantaur, the Witness
+					["isBreadcrumb"] = true,
 					["coord"] = { 37.3, 49.6, 120 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 29651 },	-- Boktar Bloodfury

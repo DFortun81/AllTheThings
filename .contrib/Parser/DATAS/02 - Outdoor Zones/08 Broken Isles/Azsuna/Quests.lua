@@ -219,7 +219,6 @@ _.Zones =
 						WARRIOR,		-- Fury
 					},
 					["coord"] = { 25.6, 57.6, 630 },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
 				q(37656, {	-- Fel Machinations
