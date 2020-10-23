@@ -28,6 +28,7 @@ i(17413);	-- Codex: Prayer of Fortitude
 i(31837);	-- Codex: Prayer of Shadow Protection
 i(22393);	-- Codex: Prayer of Shadow Protection
 i(136803);	-- Dirty Tricks, Vol 1: Detection
+i(115359);	-- Draenor Jewelcrafting
 i(136419);	-- Excavator's Notebook
 i(111356);	-- Fishing Guide to Draenor
 i(28071);	-- Grimoire of Anguish (Rank 1)

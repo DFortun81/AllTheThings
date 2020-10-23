@@ -876,6 +876,7 @@ _.Zones =
 				}),
 				n(-385, {	-- Finger
 					i(134245),	-- Nazjatar Manapearl Ring
+					i(134323),	-- Glinting Quartz Ring
 				}),
 				n(-386,  {	-- Trinkets
 					i(134234),	-- Barnacled Azsharan Insignia

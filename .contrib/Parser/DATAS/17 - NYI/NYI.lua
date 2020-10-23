@@ -4,7 +4,7 @@
 
 _.NeverImplemented =
 {
-	n(-10052, {	-- BFA - Stuff that might gets added later duo changes/hotfixes/patches and/or similar
+	n(-10052, {	-- BFA - Stuff that gets added later on 9.0 release
 		-- Future Emsembles!!
 		-- Leather Horde (you probably will learn both after learning one)
 		un(NEVER_IMPLEMENTED, i(166915)),	-- Dread Gladiator's leather tunic
@@ -16,20 +16,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(166921)),	-- Dread Gladiator's leather belt
 		un(NEVER_IMPLEMENTED, i(166922)),	-- Dread Gladiator's leather bindings
 		-- Leather Ally (you probably will learn both after learning one)
-		un(NEVER_IMPLEMENTED, i(166946)),	-- Dread Gladiator's leather tunic
-		un(NEVER_IMPLEMENTED, i(166947)),	-- Dread Gladiator's leather boots
-		un(NEVER_IMPLEMENTED, i(166948)),	-- Dread Gladiator's leather gloves
-		un(NEVER_IMPLEMENTED, i(166949)),	-- Dread Gladiator's leather helm
-		un(NEVER_IMPLEMENTED, i(166950)),	-- Dread Gladiator's leather legguards
-		un(NEVER_IMPLEMENTED, i(166951)),	-- Dread Gladiator's leather spaulders
-		un(NEVER_IMPLEMENTED, i(166952)),	-- Dread Gladiator's leather belt
-		un(NEVER_IMPLEMENTED, i(166953)),	-- Dread Gladiator's leather bindings
-		-- Leather Blue Warfront Pieces
-		un(NEVER_IMPLEMENTED, i(163381)),	-- 7th Legionnaire's Mask
-		un(NEVER_IMPLEMENTED, i(163378)),	-- 7th Legionnaire's Shoulderpads
-		un(NEVER_IMPLEMENTED, i(163382)),	-- 7th Legionnaire's Tunic
-		un(NEVER_IMPLEMENTED, i(163385)),	-- 7th Legionnaire's Belt
-		un(NEVER_IMPLEMENTED, i(163379)),	-- 7th Legionnaire's Pants
 		{
 			-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
 			["itemID"] = 163255,	-- 7th Legionnaire's Treads
@@ -787,6 +773,11 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(109513)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109547)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(120363)),	-- Unknown
+			un(NEVER_IMPLEMENTED, i(163381)),	-- 7th Legionnaire's Mask
+			un(NEVER_IMPLEMENTED, i(163378)),	-- 7th Legionnaire's Shoulderpads
+			un(NEVER_IMPLEMENTED, i(163382)),	-- 7th Legionnaire's Tunic
+			un(NEVER_IMPLEMENTED, i(163385)),	-- 7th Legionnaire's Belt
+			un(NEVER_IMPLEMENTED, i(163379)),	-- 7th Legionnaire's Pants
 		}),
 		n(-45, {	-- Mail
 			cl(SHAMAN, {
@@ -1033,7 +1024,6 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(96257)), -- Saurok Stalker's Legguards
 				un(NEVER_IMPLEMENTED, i(96258)), -- Saurok Stalker's Spaulders
 			}),
-			n(-10052, {	-- BFA
 				-- Future Emsembles!!
 				-- Mail Horde (you probably will learn both after learning one)
 				un(NEVER_IMPLEMENTED, i(166923)),	-- Dread Gladiator's Chain armor
@@ -1044,32 +1034,38 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(166928)),	-- Dread Gladiator's Chain spaulders
 				un(NEVER_IMPLEMENTED, i(166929)),	-- Dread Gladiator's Chain waistguard
 				un(NEVER_IMPLEMENTED, i(166930)),	-- Dread Gladiator's Chain armbands
-				-- Mail Ally (you probably will learn both after learning one)
-				un(NEVER_IMPLEMENTED, i(166954)),	-- Dread Gladiator's Chain armor
-				un(NEVER_IMPLEMENTED, i(166955)),	-- Dread Gladiator's Chain sabatons
-				un(NEVER_IMPLEMENTED, i(166956)),	-- Dread Gladiator's Chain gauntlets
-				un(NEVER_IMPLEMENTED, i(166957)),	-- Dread Gladiator's Chain helm
-				un(NEVER_IMPLEMENTED, i(166958)),	-- Dread Gladiator's Chain leggings
-				un(NEVER_IMPLEMENTED, i(166959)),	-- Dread Gladiator's Chain spaulders
-				un(NEVER_IMPLEMENTED, i(166960)),	-- Dread Gladiator's Chain waistguard
-				un(NEVER_IMPLEMENTED, i(166961)),	-- Dread Gladiator's Chain armbands
-				un(NEVER_IMPLEMENTED, i(163286)),	-- honorbound vanguard's footguards
-				un(NEVER_IMPLEMENTED, i(163291)),	-- honorbound vanguard's strikers
-				un(NEVER_IMPLEMENTED, i(163293)),	-- honorbound vanguard's warhelm
-				un(NEVER_IMPLEMENTED, i(163297)),	-- honorbound vanguard's legguards
-				un(NEVER_IMPLEMENTED, i(163302)),	-- honorbound vanguard's spaulders
-				un(NEVER_IMPLEMENTED, i(163304)),	-- honorbound vanguard's waistcord
-				un(NEVER_IMPLEMENTED, i(163392)),	-- 7th legionnaires vestments
-				un(NEVER_IMPLEMENTED, i(163393)),	-- 7th legionnaires raiment
-				un(NEVER_IMPLEMENTED, i(163443)),	-- honorbound vanguard's vestments
-				un(NEVER_IMPLEMENTED, i(163450)),	-- honorbound vanguard's raiment
-				un(NEVER_IMPLEMENTED, i(163396)),	-- 7th Legionnaire's Skullcap
-				un(NEVER_IMPLEMENTED, i(163390)),	-- 7th Legionnaire's Spaulders
-				un(NEVER_IMPLEMENTED, i(163402)),	-- 7th Legionnaire's Chain Belt
-				un(NEVER_IMPLEMENTED, i(163447)),	-- Honorbound Vanguard's Helm
-				un(NEVER_IMPLEMENTED, i(163442)),	-- Honorbound Vanguard's Pauldrons
-				un(NEVER_IMPLEMENTED, i(163452)),	-- Honorbound Vanguard's Chain Belt
-			}),
+			un(NEVER_IMPLEMENTED, i(163286)),	-- honorbound vanguard's footguards
+			un(NEVER_IMPLEMENTED, i(163291)),	-- honorbound vanguard's strikers
+			un(NEVER_IMPLEMENTED, i(163293)),	-- honorbound vanguard's warhelm
+			un(NEVER_IMPLEMENTED, i(163297)),	-- honorbound vanguard's legguards
+			un(NEVER_IMPLEMENTED, i(163302)),	-- honorbound vanguard's spaulders
+			un(NEVER_IMPLEMENTED, i(163304)),	-- honorbound vanguard's waistcord
+			un(NEVER_IMPLEMENTED, i(158484)),	-- aiguille-scaler's wristguards
+			un(NEVER_IMPLEMENTED, i(158485)),	-- aiguille-scaler's gloves
+			un(NEVER_IMPLEMENTED, i(158486)),	-- aiguille-scaler's leggings
+			un(NEVER_IMPLEMENTED, i(158487)),	-- aiguille-scaler's coif
+			un(NEVER_IMPLEMENTED, i(158488)),	-- aiguille-scaler's boots
+			un(NEVER_IMPLEMENTED, i(158489)),	-- aiguille-scaler's girdle
+			un(NEVER_IMPLEMENTED, i(158490)),	-- aiguille-scaler's chestguard
+			un(NEVER_IMPLEMENTED, i(158491)),	-- aiguille-scaler's spaulders	
+			un(NEVER_IMPLEMENTED, i(158536)),	-- saurscale wristguards
+			un(NEVER_IMPLEMENTED, i(158537)),	-- saurscale gloves
+			un(NEVER_IMPLEMENTED, i(158538)),	-- saurscale leggings
+			un(NEVER_IMPLEMENTED, i(158539)),	-- saurscale coif
+			un(NEVER_IMPLEMENTED, i(158540)),	-- saurscale boosts
+			un(NEVER_IMPLEMENTED, i(158541)),	-- saurscale girdle
+			un(NEVER_IMPLEMENTED, i(158542)),	-- saurscale chestguard
+			un(NEVER_IMPLEMENTED, i(163343)),	-- saurscale spaulders
+			un(NEVER_IMPLEMENTED, i(163392)),	-- 7th legionnaires vestments
+			un(NEVER_IMPLEMENTED, i(163393)),	-- 7th legionnaires raiment
+			un(NEVER_IMPLEMENTED, i(163443)),	-- honorbound vanguard's vestments
+			un(NEVER_IMPLEMENTED, i(163450)),	-- honorbound vanguard's raiment
+			un(NEVER_IMPLEMENTED, i(163396)),	-- 7th Legionnaire's Skullcap
+			un(NEVER_IMPLEMENTED, i(163390)),	-- 7th Legionnaire's Spaulders
+			un(NEVER_IMPLEMENTED, i(163402)),	-- 7th Legionnaire's Chain Belt
+			un(NEVER_IMPLEMENTED, i(163447)),	-- Honorbound Vanguard's Helm
+			un(NEVER_IMPLEMENTED, i(163442)),	-- Honorbound Vanguard's Pauldrons
+			un(NEVER_IMPLEMENTED, i(163452)),	-- Honorbound Vanguard's Chain Belt
 			un(NEVER_IMPLEMENTED, i(166402)),	-- Flaskzertauren Mail Hauberk
 			un(NEVER_IMPLEMENTED, i(166410)),	-- Flaskzertauren Mail Shoulderguards
 			un(NEVER_IMPLEMENTED, i(12105)),	-- Pridemail Leggings

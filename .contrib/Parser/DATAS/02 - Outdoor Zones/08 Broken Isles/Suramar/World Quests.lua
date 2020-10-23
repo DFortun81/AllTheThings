@@ -762,6 +762,9 @@ _.Zones =
 						i(134273),	-- Arcane Defender's Boots
 					},
 				}),
+				n(-385, {	-- Finger
+					i(140024),	-- Ley-Charged Band
+				}),
 				n(-384, {	-- Neck
 					i(139990),	-- Inspector's Pendant
 				}),

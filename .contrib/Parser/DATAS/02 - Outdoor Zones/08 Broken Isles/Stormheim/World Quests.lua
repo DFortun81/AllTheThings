@@ -755,6 +755,9 @@ _.Zones =
 						i(134185),	-- Skoldiir Sabatons
 					},
 				}),
+				n(-385, {	-- Finger
+					i(134191),	-- Rough-Hammered Silver Ring
+				}),
 				n(-384, {	-- Neck
 					i(134187),	-- Rough-Hammered Silver Necklace
 				}),

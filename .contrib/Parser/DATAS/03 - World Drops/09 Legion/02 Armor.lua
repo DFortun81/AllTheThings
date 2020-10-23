@@ -59,18 +59,17 @@ _.WorldDrops =
 				i(141578),	-- Claud's War-Ravaged Boots
 			}),
 			n(-385, {	-- Finger
-				i(139103),	-- An'she's Band
 				i(141581),	-- Demar's Band of Amore
-				i(139065),	-- Dreamwalker's Band
 				i(141582),	-- Fran's Intractable Loop
+				i(141583),	-- Sameed's Vision Ring
+				i(141580),	-- Vastly Oversized Ring
+				i(136737),	-- Warden Band
 				i(134323),	-- Glinting Quartz Ring
 				i(140024),	-- Ley-Charged Band
 				i(121288),	-- Nightmare Loop
 				i(134157),	-- Roggstone Signet
-				i(134191),	-- Rough-Hammered Silver Ring
-				i(141583),	-- Sameed's Vision Ring
-				i(141580),	-- Vastly Oversized Ring
-				i(136737),	-- Warden Band
+				i(139065),	-- Dreamwalker's Band
+				i(139103),	-- An'she's Band
 			}),
 			f(53,   {	-- Trinket
 				i(141584),	-- Eyasu's Mulligan

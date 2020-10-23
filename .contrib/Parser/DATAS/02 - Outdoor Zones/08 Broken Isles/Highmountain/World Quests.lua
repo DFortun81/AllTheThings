@@ -843,6 +843,9 @@ _.Zones =
 						i(134141),	-- Rockbound Sabatons
 					},
 				}),
+				n(-385, {	-- Finger
+					i(139103),	-- An'she's Band
+				}),	
 				n(-384, {	-- Neck
 
 				}),
