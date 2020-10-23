@@ -126,6 +126,7 @@ _.Zones =
 					["provider"] = { "n", 64033 },	-- Master Angler Karu
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 86.5, 60.2, 390 },
+					["u"] = REMOVED_FROM_GAME,	-- A fresh Level10 with Fishing cant accept it and similar comments on WoWhead suggest its removed since 5.1.
 				}),
 				q(31103, {	-- The Ballad of Liu Lang
 					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01Ballad of Liu Lang|r achievement.",
