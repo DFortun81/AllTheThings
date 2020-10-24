@@ -948,11 +948,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32452, {	-- And Then There Were Goblins
-					["provider"] = { "n", 68908 },	-- Amber Kearnen
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(32315, {	-- Anduin's Plea
 					["provider"] = { "n", 67940 },	-- Admiral Taylor
 					["races"] = ALLIANCE_ONLY,
@@ -1055,11 +1050,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 32400 },	-- The Bell Speaks
 				}),
-				q(32154, {	-- Burn Out!
-					["provider"] = { "n", 68166 },	-- Sully "The Pickle" McLeary
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(31379, {	-- Challenge At The Temple of the Red Crane
 					["provider"] = { "n", 64001 },	-- Sage Lotusbloom
 					["races"] = HORDE_ONLY,
@@ -1077,20 +1067,11 @@ _.Zones =
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
-				q(32446, {	-- Dis-Assembly Required
-					["provider"] = { "n", 68166 },	-- Sully "The Pickle" McLeary
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(32351, {	-- Echoes of Thunder
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
 				}),
 				q(30739, {	-- Ellia Ravenmane: Redemption
-					["provider"] = { "n", 60506 },	-- Thelonius
-					["isDaily"] = true,
-				}),
-				q(30727, {	-- Ellia Ravenmane: Rematch
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
@@ -1149,11 +1130,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32156, {	-- It's Only Right
-					["provider"] = { "n", 67444 },	-- Mishka
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(30729, {	-- Julia Bates
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
@@ -1180,10 +1156,6 @@ _.Zones =
 				q(32120, {	-- Legacy of Ogudei
 					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(30678, {	-- Like Bombing Fish In A Barrel
-					["provider"] = { "n", 60136 },	-- Fiznix
 					["isDaily"] = true,
 				}),
 				i(86545, {
@@ -1318,12 +1290,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 32355 },	-- The Harmonic Mallet
 				}),
-				q(32157, {	-- The Only Good Goblin...
-					["provider"] = { "n", 67386 },	-- Sky Admiral Rogers
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 32452 },	-- And Then There Were Goblins
-					["isDaily"] = true,
-				}),
 				q(31254, {	-- The Road to Kun-Lai
 					["sourceQuests"] = { 59559 },	-- Hero's Call: Kun-Lai Summit!
 					["provider"] = { "n", 63778 },	-- Messenger Grummle
@@ -1375,10 +1341,6 @@ _.Zones =
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
 				}),
-				q(32193, {	-- To Mogujia
-					["provider"] = { "n", 67940 },	-- Admiral Taylor
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(32376, {	-- To the Valley!
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
@@ -1390,11 +1352,6 @@ _.Zones =
 				}),
 				q(30733, {	-- Tukka-Tuk
 					["provider"] = { "n", 60506 },	-- Thelonius
-					["isDaily"] = true,
-				}),
-				q(32158, {	-- Two Step Program
-					["provider"] = { "n", 68182 },	-- Seraphine of the Winter
-					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(32238, {	-- Universal Remote-Explode

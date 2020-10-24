@@ -428,7 +428,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(29993, {	-- Find the Boy
-				--	TODO: might also require 29865 (The Silkwood Road) ?
 					["sourceQuests"] = { 29866 },	-- The Threads that Stick
 					["provider"] = { "n", 59173 },	-- Kai Wanderbrew
 					["coord"] = { 47.1, 46.0, 371 },
@@ -990,8 +989,7 @@ _.Zones =
 					["coord"] = { 48.5, 20.6, 371 },
 				}),
 				q(29882, {	-- Quill of Stingers
-				--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy,' but may be available sooner
-					["sourceQuests"] = { 29866 },	-- The Threads That Stick
+					["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
 					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
 					["coord"] = { 55.3, 45.3, 371 },
 					["g"] = {
@@ -1398,8 +1396,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29881, {	-- The Perfect Color
-				--	TODO: verify SQ.  this was not available to a character that had done 0 jade forest quests.  it was available prior to turning in 'find the boy,' but may be available sooner
-					["sourceQuests"] = { 29866 },	-- The Threads That Stick
+					["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 					["coord"] = { 54.8, 45.3, 371 },
 				}),

@@ -330,11 +330,24 @@ _.Zones =
 								["maps"] = { 487 },	-- A Little Patience
 								["lvl"] = 90,	-- 15
 							}),
+							q(32452, {	-- And Then There Were Goblins
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 68908 },	-- Amber Kearnen
+								["isDaily"] = true,
+								["coord"] = { 94.7, 28.3, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32148, {	-- Attack! Move!
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
 								["provider"] = { "n", 67631 },	-- Marshal Troteman
 								["isDaily"] = true,
 								["coord"] = { 94.5, 28.9, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32194, {	-- Bad Blood
+								["sourceQuests"] = { 32193 },	-- To Mogujia
+								["provider"] = { "n", 67734 },	-- Sarannha Skyglaive
+								["coord"] = { 59.9, 75.4, 379 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32383, {	-- Bugging Out
@@ -348,6 +361,20 @@ _.Zones =
 								["provider"] = { "n", 67840 },	-- Garrosh Hellscream
 								["coord"] = { 32.1, 84.9, 392 },
 								["races"] = HORDE_ONLY,
+							}),
+							q(32154, {	-- Burn Out!
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 68166 },	-- Sully "The Pickle" McLeary
+								["isDaily"] = true,
+								["coord"] = { 16.3, 77.9, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32446, {	-- Dis-Assembly Required
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 68166 },	-- Sully "The Pickle" McLeary
+								["isDaily"] = true,
+								["coord"] = { 16.3, 77.9, 418 },
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32145, {	-- Don't Lose Your Head
 								["sourceQuests"] = { 32143 },	-- A Kind of Magic
@@ -394,6 +421,13 @@ _.Zones =
 								["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
 								["isDaily"] = true,
 								["coord"] = { 31.0, 27.9, 419 },	-- Ruins of Ogudei
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32156, {	-- It's Only Right
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 67444 },	-- Mishka
+								["isDaily"] = true,
+								["coord"] = { 16.1, 77.9, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32109, {	-- Lion's Landing
@@ -486,6 +520,19 @@ _.Zones =
 								["coord"] = { 94.5, 28.4, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32157, {	-- The Only Good Goblin...
+								["sourceQuests"] = { 32452 },	-- And Then There Were Goblins
+								["provider"] = { "n", 67386 },	-- Sky Admiral Rogers
+								["isDaily"] = true,
+								["coord"] = { 15.9, 78.5, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32243, {	-- The Source of Korune Power
+								["sourceQuests"] = { 32193 },	-- To Mogujia
+								["provider"] = { "n", 67716 },	-- Hilda Hornswaggle
+								["coord"] = { 59.8, 76.0, 379 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32121, {	-- The Spirit Trap
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
 								["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
@@ -499,6 +546,20 @@ _.Zones =
 								["coord"] = { 67.4, 47.1, 500 },	-- Bizmo's Brawlpub
 								["races"] = ALLIANCE_ONLY,
 								["maps"] = { 500 },	-- Bizmo's Brawlpub
+							}),
+							q(32193, {	-- To Mogujia
+								["minReputation"] = { 1376, HONORED+6800 },
+								["sourceQuests"] = { 32331 },	-- The Kirin Tor
+								["provider"] = { "n", 67940 },	-- Admiral Taylor
+								["coord"] = { 94.4, 28.4, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32158, {	-- Two Step Program
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 68182 },	-- Seraphine of the Winter
+								["isDaily"] = true,
+								["coord"] = { 16.1, 77.9, 418 },
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32144, {	-- Under Pressure
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
@@ -618,7 +679,6 @@ _.Zones =
 						n(QUESTS, {
 						--	TODO: add the following quests.  i'm just moving them into the file as i see them so i can ensure the correct coordinates are added and none get forgotten.  i hate this zone.
 							-- Armored Carp
-							-- Like Bombing Fish in a Barrel
 							-- Mimic Octopus
 							-- Scavenger Hunt
 							-- Shocking!
@@ -642,6 +702,12 @@ _.Zones =
 								["provider"] = { "i", 86542 },	-- Flying Tiger Gourami
 								["isDaily"] = true,
 							}),
+							q(30658, {	-- Huff & Puff
+								["requireSkill"] = FISHING,
+								["provider"] = { "n", 60135 },	-- Trawler Yotimo
+								["isDaily"] = true,
+								["coord"] = { 70.9, 39.0, 418 },
+							}),
 							q(30586, {	-- Jagged Abalone
 								["requireSkill"] = FISHING,
 								["provider"] = { "n", 59584 },	-- Fisherman Haito
@@ -654,11 +720,11 @@ _.Zones =
 								["isDaily"] = true,
 								["coord"] = { 71.6, 40.0, 418 },
 							}),
-							q(30658, {	-- Huff & Puff
+							q(30678, {	-- Like Bombing Fish In A Barrel
 								["requireSkill"] = FISHING,
-								["provider"] = { "n", 60135 },	-- Trawler Yotimo
+								["provider"] = { "n", 60136 },	-- Fiznix
 								["isDaily"] = true,
-								["coord"] = { 70.9, 39.0, 418 },
+								["coord"] = { 70.8, 41.3, 418 },
 							}),
 							q(30763, {	-- Piranha!
 								["requireSkill"] = FISHING,
@@ -741,6 +807,11 @@ _.Zones =
 								["coord"] = { 31.6, 61.6, 418 },
 							}),
 							q(30725, {	-- Ellia Ravenmane
+								["provider"] = { "n", 60506 },	-- Thelonius
+								["isDaily"] = true,
+								["coord"] = { 31.8, 61.4, 418 },
+							}),
+							q(30727, {	-- Ellia Ravenmane: Rematch
 								["provider"] = { "n", 60506 },	-- Thelonius
 								["isDaily"] = true,
 								["coord"] = { 31.8, 61.4, 418 },

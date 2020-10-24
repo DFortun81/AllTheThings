@@ -162,10 +162,6 @@ _.Zones =
 						30571,	-- Farmhand Freedom
 					},
 				}),
-				q(32194, {	-- Bad Blood
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 67734 },	-- Sarannha Skyglaive
-				}),
 				q(30651, {	-- Barrels of Fun (A)
 					["coord"] = { 54.1, 83.2, 379 },
 					["races"] = ALLIANCE_ONLY,
@@ -1363,10 +1359,6 @@ _.Zones =
 						30661,	-- The Ordo Warbringer
 						30663,	-- The Ordo Warbringer
 					},
-				}),
-				q(32243, {	-- The Source of Korune Power
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 67716 },	-- The Source of Korune Power
 				}),
 				q(30799, {	-- The Tomb of Shadows
 					["coord"] = { 57.1, 47.8, 379 },

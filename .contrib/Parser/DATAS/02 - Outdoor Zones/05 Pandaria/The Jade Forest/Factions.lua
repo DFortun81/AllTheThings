@@ -213,6 +213,7 @@ _.Zones =
 								["sourceQuests"] = { 30142 },	-- It's A...
 								["provider"] = { "n", 58510 },	-- Suchi the Sweet
 								["isDaily"] = true,
+								["coord"] = { 58.4, 44.7, 371 },
 							}),
 							q(30155, {	-- Restoring the Balance
 								["minReputation"] = { 1271, HONORED },
