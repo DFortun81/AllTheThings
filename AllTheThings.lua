@@ -2321,7 +2321,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 			if right then
 				-- Insert into the display.
 				local o = { prefix = indent, group = group, right = right };
-				if group.trackable then o.prefix = string.sub(o.prefix, 4) .. GetCompletionIcon(group.saved); end
+				if not group.collectible and group.trackable then o.prefix = string.sub(o.prefix, 4) .. GetCompletionIcon(group.saved); end
 				if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. GetUnobtainableTexture(group) .. ":0|t "; end
 				tinsert(entries, o);
 				

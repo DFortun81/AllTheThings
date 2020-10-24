@@ -15,7 +15,6 @@ _.Zones =
 				q(45969),	-- Defense of the Ancient
 				q(46077),	-- Felbound Spirits
 				q(40390),	-- Hallowed Ground
-				q(45541),	-- How Do YOU Like It?!
 				q(45776),	-- Keys are a Crutch
 				q(45653),	-- Kill it with Fire!
 				q(46046),	-- Life's a Lich
@@ -162,6 +161,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(45985, {	-- Hellish Scavengers
+					["lvl"] = 110,
+					["isWorldQuest"] = true,
+				}),
+				q(45541, {	-- How Do YOU Like It?!
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
