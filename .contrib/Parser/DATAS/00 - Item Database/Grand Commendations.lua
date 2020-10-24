@@ -41,22 +41,25 @@ h(i(70153, 81));	-- Thunder Bluff Writ of Commendation
 h(i(70154, 68));	-- Undercity Writ of Commendation
 
 -- Pandaria
-i(93231, 1376, true);		-- Grand Commendation of Operation: Shieldwall
-i(93225, 1302, true);		-- Grand Commendation of the Anglers
-i(93224, 1341, true);		-- Grand Commendation of the August Celestials
-i(93232, 1375, true);		-- Grand Commendation of the Dominance Offensive
-i(93215, 1269, true);		-- Grand Commendation of the Golden Lotus
-i(95545, 1387, true);		-- Grand Commendation of the Kirin Tor Offensive
-i(92522, 1337, true);		-- Grand Commendation of the Klaxxi
-i(93230, 1345, true);		-- Grand Commendation of the Lorewalkers
-i(93229, 1271, true);		-- Grand Commendation of the Order of the Cloud Serpent
-i(93220, 1270, true);		-- Grand Commendation of the Shado-Pan
-i(95548, 1388, true);		-- Grand Commendation of the Sunreaver Onslaught
-i(93226, 1272, true);		-- Grand Commendation of the Tillers
+-- TODO: review if /dump GetFactionInfoByID(1337) still returns [15] = false
+-- i(93231, 1376, true);		-- Grand Commendation of Operation: Shieldwall
+-- i(93225, 1302, true);		-- Grand Commendation of the Anglers
+-- i(93224, 1341, true);		-- Grand Commendation of the August Celestials
+-- i(93232, 1375, true);		-- Grand Commendation of the Dominance Offensive
+-- i(93215, 1269, true);		-- Grand Commendation of the Golden Lotus
+-- i(95545, 1387, true);		-- Grand Commendation of the Kirin Tor Offensive
+-- i(92522, 1337, true);		-- Grand Commendation of the Klaxxi
+-- i(93230, 1345, true);		-- Grand Commendation of the Lorewalkers
+-- i(93229, 1271, true);		-- Grand Commendation of the Order of the Cloud Serpent
+-- i(93220, 1270, true);		-- Grand Commendation of the Shado-Pan
+-- i(95548, 1388, true);		-- Grand Commendation of the Sunreaver Onslaught
+-- i(93226, 1272, true);		-- Grand Commendation of the Tillers
 i(95490, 1387);				-- Greater Kirin Tor Offensive Insignia
 i(95489, 1387);				-- Kirin Tor Offensive Insignia
-i(90815, 1269, true);		-- Relic of Guo-Lai
-i(90816, 1269, true);		-- Relic of the Thunder King
+i(95488, 1388);				-- Greater Sunreaver Onslaught Insignia
+i(95487, 1388);				-- Sunreaver Onslaught Insignia
+i(90815, 1269);				-- Relic of Guo-Lai
+i(90816, 1269);				-- Relic of the Thunder King
 i(94225, 1341);				-- Stolen Celestial Insignia
 i(94227, 1269);				-- Stolen Golden Lotus Insignia
 i(94226, 1337);				-- Stolen Klaxxi Insignia
