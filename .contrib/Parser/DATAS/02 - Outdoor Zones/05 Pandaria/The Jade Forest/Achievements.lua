@@ -71,6 +71,7 @@ _.Zones =
 								29920,	-- Getting Permission
 								29882,	-- Quill of Stingers (definitely required, attached to criteria on wowhead as 'final quest')
 								29723,	-- The Jade Witch (definitely required, triggered when i turned this in)
+								29865,	-- The Silkwood Road
 								-- TODO: possibly also requires the following quest:
 								-- 29881,	-- The Perfect Color
 							},
@@ -127,6 +128,7 @@ _.Zones =
 								29920,	-- Getting Permission
 								29882,	-- Quill of Stingers (definitely required, attached to criteria on wowhead as 'final quest')
 								29723,	-- The Jade Witch (definitely required, triggered when i turned this in)
+								29865,	-- The Silkwood Road
 								-- TODO: possibly also requires the following quest:
 								-- 29881,	-- The Perfect Color
 							},

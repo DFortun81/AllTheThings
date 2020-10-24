@@ -277,6 +277,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 					i(37586),	-- Handful of Treats
 				},
 			}),
+			q(12385, {	-- Candy Bucket — Badlands, Kargath, Horde (removed)
+				["isYearly"] = true,
+				["coord"] = { 2.8, 46.0, 15 },
+				["races"] = HORDE_ONLY,
+				["maps"] = { 15 },	-- Badlands
+				["u"] = REMOVED_FROM_GAME,	-- Kargath was destroyed during Cataclysm
+				["g"] = {
+					i(37586), -- Handful of Treats
+				},
+			}),
 			q(28957, {	-- Candy Bucket — Badlands, New Kargath, Horde
 				["isYearly"] = true,
 				["coord"] = { 18.3, 42.8, 15 },
@@ -1655,6 +1665,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["maps"] = { 433 },	-- The Veiled Stair
 				["g"] = {
 					i(37586),	-- Handful of Treats
+				},
+			}),
+			q(12379, {	-- Candy Bucket — Thousand Needles, Freewind Post, Horde (removed)
+				["isYearly"] = true,
+				["races"] = HORDE_ONLY,
+				["coord"] = { 46.1, 51.4, 64 },
+				["maps"] = { 64 },	-- Thousand Needles
+				["u"] = REMOVED_FROM_GAME,	-- Freewind Post was taken by the Grimtotem during Cataclysm
+				["g"] = {
+					i(37586), -- Handful of Treats
 				},
 			}),
 			q(12367, {	-- Candy Bucket — Thunder Bluff, Lower Rise, Horde
