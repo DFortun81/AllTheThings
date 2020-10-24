@@ -7892,7 +7892,18 @@ function app.NoFilter()
 	return true;
 end
 function app.FilterGroupsByLevel(group)
-	return app.Level >= (group.lvl or 0);
+	-- after 9.0, transition to a req lvl range, either min, or min + max
+	if group.reqlvl then
+		if #group.reqlvl > 1 then
+			-- min and max provided
+			return app.Level >= (group.reqlvl[1] or 0) and app.Level <= (group.reqlvl[2] or 0);
+		else
+			-- only min provided
+			return app.Level >= (group.reqlvl[1] or 0);
+		end
+	else
+		return app.Level >= (group.lvl or 0);
+	end
 end
 function app.FilterGroupsByCompletion(group)
 	return group.progress < group.total;
@@ -10085,8 +10096,15 @@ RowOnEnter = function (self)
 		elseif reference.retries then
 			GameTooltip:AddLine("Failed to acquire information. This quest may have been removed from the game. " .. tostring(reference.retries), 1, 1, 1);
 		end
-		local lvl = reference.lvl or 0;
-		if lvl > 1 then GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(lvl)); end
+		local minlvl = (reference.reqlvl and reference.reqlvl[1]) or reference.lvl or 0;
+		local maxlvl = (reference.reqlvl and reference.reqlvl[2]) or 0;
+		-- i suppose a maxlvl of 1 might exist?
+		if maxlvl > 0 then
+			GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl) .. " to " .. tostring(maxlvl));
+		-- no point to show 'requires lvl 1'
+		elseif minlvl > 1 then
+			GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl));
+		end
 		if reference.b and app.Settings:GetTooltipSetting("binding") then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
 		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(SkillIDToSpellID[reference.requireSkill] or 0))); end
 		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end

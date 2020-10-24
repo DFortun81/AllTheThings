@@ -1102,16 +1102,10 @@ namespace ATT
             /// <param name="item">The item!</param>
             /// <param name="field">The field!</param>
             /// <param name="value">The value.</param>
-            private static void MergeIntegerArrayData(Dictionary<string, object> item, string field, object value)
+            public static void MergeIntegerArrayData(Dictionary<string, object> item, string field, object value)
             {
                 // Convert the data to a list of generic objects.
-                var newList = value as List<object>;
-                if (newList == null)
-                {
-                    var dict = value as Dictionary<object, object>;
-                    if (dict == null) return;
-                    newList = dict.Values.ToList();
-                }
+                var newList = ConvertToList(item, field, value);
 
                 // Attempt to get the old list data.
                 List<object> oldList;
@@ -1365,6 +1359,7 @@ namespace ATT
                     case "maps":
                     case "qgs":
                     case "crs":
+                    case Tags.RequiredLevel:
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;
@@ -2059,6 +2054,40 @@ namespace ATT
                         Trace.WriteLine(ToJSON(data));
                     }
                 }
+            }
+
+            /// <summary>
+            /// Performs the best attempt at converting a single object into a List of objects
+            /// </summary>
+            /// <param name="value"></param>
+            /// <returns></returns>
+            public static List<object> ConvertToList(Dictionary<string, object> item, string field, object value)
+            {
+                var newList = value as List<object>;
+                if (newList != null)
+                    return newList;
+
+                var dict = value as Dictionary<object, object>;
+                if (dict != null)
+                    return dict.Values.ToList();
+
+                // incase a single value is provided instead of a list
+                var valint = value as int?;
+                if (valint != null)
+                {
+                    Trace.WriteLine("Please fix value '" + value?.ToString() + "' from field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
+                    return new List<object> { valint.Value };
+                }
+
+                var valdbl = value as double?;
+                if (valdbl != null)
+                {
+                    Trace.WriteLine("Please fix value '" + value?.ToString() + "' from field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
+                    return new List<object> { valdbl.Value };
+                }
+
+                // no hope
+                throw new Exception("Failed parsing value '" + value?.ToString() + "' from field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
             }
             #endregion
         }

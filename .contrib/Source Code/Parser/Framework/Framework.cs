@@ -621,14 +621,14 @@ namespace ATT
                             if (Objects.AllQuests.TryGetValue(groupIDint, out Dictionary<string, object> questg))
                                 Objects.Merge(questg, "g", groupList);
                             break;
-                        //case "item":
-                        //    // push the clone data into the 'g' of the matching item object
-                        //    var item = Items.Get(groupIDint);
-                        //    Objects.Merge(item, "g", groupList);
-                        //    break;
-                        //case "npc":
-                        //    // push the clone data into the 'g' of the matching item object
-                        //    break;
+                            //case "item":
+                            //    // push the clone data into the 'g' of the matching item object
+                            //    var item = Items.Get(groupIDint);
+                            //    Objects.Merge(item, "g", groupList);
+                            //    break;
+                            //case "npc":
+                            //    // push the clone data into the 'g' of the matching item object
+                            //    break;
                     }
                 }
                 catch
@@ -1328,6 +1328,13 @@ namespace ATT
                     {
                         return "lvl";
                     }
+
+                // new tag to handle level range requirement post patch 9.0
+                case "reqlvl":
+                case "reqlvls":
+                case "reqLvl":
+                case "reqLvls":
+                    return Tags.RequiredLevel;
 
                 case "rank":
                 case "azeriteRank":

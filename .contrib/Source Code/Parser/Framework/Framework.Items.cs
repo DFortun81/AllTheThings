@@ -193,47 +193,6 @@ namespace ATT
             /// <param name="item">The item!</param>
             /// <param name="field">The field!</param>
             /// <param name="value">The value.</param>
-            private static void MergeIntegerArrayData(Dictionary<string, object> item, string field, object value)
-            {
-                // Convert the data to a list of generic objects.
-                var newList = value as List<object>;
-                if (newList == null)
-                {
-                    if (value is Dictionary<object, object> dict) newList = dict.Values.ToList();
-                    else return;
-                }
-
-                // Attempt to get the old list data.
-                List<object> oldList;
-                if (item.TryGetValue(field, out object oldData))
-                {
-                    // Convert the old data to a list of objects.
-                    oldList = oldData as List<object>;
-                }
-                else
-                {
-                    // Create a new list.
-                    item[field] = oldList = new List<object>();
-                }
-
-                // Merge the new list of data into the old data and ensure there are no duplicate values.
-                foreach (var entry in newList)
-                {
-                    var index = Convert.ToInt32(entry);
-                    if (oldList.Contains(index)) continue;
-                    oldList.Add(index);
-                }
-
-                // Sort the old list to ensure that the order is consistent.
-                oldList.Sort();
-            }
-
-            /// <summary>
-            /// Merge the array data!
-            /// </summary>
-            /// <param name="item">The item!</param>
-            /// <param name="field">The field!</param>
-            /// <param name="value">The value.</param>
             private static void MergeStringArrayData(Dictionary<string, object> item, string field, object value)
             {
                 // Convert the data to a list of generic objects.
@@ -396,8 +355,9 @@ namespace ATT
                     case "sourceQuests":
                     case "altAchievements":
                     case "altQuests":
+                    case Tags.RequiredLevel:
                         {
-                            MergeIntegerArrayData(item, field, value);
+                            Objects.MergeIntegerArrayData(item, field, value);
                             break;
                         }
 
@@ -471,6 +431,10 @@ namespace ATT
                     // Report all other fields.
                     default:
                         {
+                            // ignore fields starting with _ since those will be used for metadata in some scenarios
+                            if (field.StartsWith("_"))
+                                break;
+
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;
                             WARNED_FIELDS[field] = true;

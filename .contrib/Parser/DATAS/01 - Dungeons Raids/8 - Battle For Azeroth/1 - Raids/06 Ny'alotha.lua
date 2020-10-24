@@ -10,7 +10,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		},
 		["isRaid"] = true,
 		["order"] = "06",
-		["lvl"] = 120,
+		["reqlvl"] = { 50 },
 		["maps"] = {
 			1580,	-- Vision of Destiny
 			1581,	-- Annex of Prophecy

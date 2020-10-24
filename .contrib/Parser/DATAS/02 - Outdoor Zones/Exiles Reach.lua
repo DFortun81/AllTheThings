@@ -6,6 +6,7 @@ _.Zones =
 {
 	m(1409, {	-- Exile's Reach
 		["icon"] = 3567434,
+		["reqlvl"] = { 1, 18 },	-- Only new players, no exp gain after 18
 		["maps"] = {
 			1726,	-- North Sea (Alliance)
 			1727,	-- North Sea (Horde)
