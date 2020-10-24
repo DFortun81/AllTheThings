@@ -6423,9 +6423,10 @@ local itemFields = {
 				app.CollectibleQuests
 				-- must not be repeatable, unless considering repeatable quests as trackable
 				and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
-				-- must not be a breadcrumb unless it is actually available and collecting breadcrumbs OR be in account-mode (i.e. another character to complete)
+				-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
 				-- TODO: revisit if party sync option becomes a thing
-				and ((not t.isBreadcrumb and not t.DisablePartySync) or (app.CollectibleBreadcrumbs and t.isBreadcrumbAvailable and t.isBreadcrumbAvailable == 0) or app.Settings:Get("AccountMode")))
+				and ((not t.isBreadcrumb and not t.DisablePartySync) or 
+					(app.CollectibleBreadcrumbs and ((t.isBreadcrumbAvailable or 0) == 0 or app.Settings:Get("AccountMode")))))
 			or (rawget(t, "factionID") and app.CollectibleReputations);
 	end,
 	["collected"] = function(t)
@@ -6833,9 +6834,10 @@ local npcFields = {
 				app.CollectibleQuests
 				-- must not be repeatable, unless considering repeatable quests as trackable
 				and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
-				-- must not be a breadcrumb unless it is actually available and collecting breadcrumbs OR be in account-mode (i.e. another character to complete)
+				-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
 				-- TODO: revisit if party sync option becomes a thing
-				and ((not t.isBreadcrumb and not t.DisablePartySync) or (app.CollectibleBreadcrumbs and t.isBreadcrumbAvailable and t.isBreadcrumbAvailable == 0) or app.Settings:Get("AccountMode")));
+				and ((not t.isBreadcrumb and not t.DisablePartySync) or 
+					(app.CollectibleBreadcrumbs and ((t.isBreadcrumbAvailable or 0) == 0 or app.Settings:Get("AccountMode")))));
 	end,
 	["collected"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
@@ -6925,9 +6927,10 @@ app.BaseObject = {
 				app.CollectibleQuests
 				-- must not be repeatable, unless considering repeatable quests as trackable
 				and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
-				-- must not be a breadcrumb unless it is actually available and collecting breadcrumbs OR be in account-mode (i.e. another character to complete)
+				-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
 				-- TODO: revisit if party sync option becomes a thing
-				and ((not t.isBreadcrumb and not t.DisablePartySync) or (app.CollectibleBreadcrumbs and t.isBreadcrumbAvailable and t.isBreadcrumbAvailable == 0) or app.Settings:Get("AccountMode"));
+				and ((not t.isBreadcrumb and not t.DisablePartySync) or 
+					(app.CollectibleBreadcrumbs and ((t.isBreadcrumbAvailable or 0) == 0 or app.Settings:Get("AccountMode"))));
 		elseif key == "repeatable" then
 			return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
 		elseif key == "trackable" then
@@ -7158,67 +7161,56 @@ app.BaseQuest = {
 				app.CollectibleQuests
 				-- must not be repeatable, unless considering repeatable quests as trackable
 				and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
-				-- must not be a breadcrumb unless it is actually available and collecting breadcrumbs OR be in account-mode (i.e. another character to complete)
+				-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
 				-- TODO: revisit if party sync option becomes a thing
-				and ((not t.isBreadcrumb and not t.DisablePartySync) or (app.CollectibleBreadcrumbs and t.isBreadcrumbAvailable and t.isBreadcrumbAvailable == 0) or app.Settings:Get("AccountMode"));
+				and ((not t.isBreadcrumb and not t.DisablePartySync) or 
+					(app.CollectibleBreadcrumbs and ((t.isBreadcrumbAvailable or 0) == 0 or app.Settings:Get("AccountMode"))));
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
 		elseif key == "saved" or key == "collected" then
 			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "altcollected" then
-			if not rawget(t,"altcollected") then
-				rawset(t,"altcollected",0);
-				-- determine if an altQuest is considered completed for this quest for this character
-				if t.altQuests then
-					for i,questID in ipairs(t.altQuests) do
-						-- any altQuest completed on this character, mark the altQuestID
-						if IsQuestFlaggedCompleted(questID) then
-							-- print("complete altquest found",questID,"=>",t.questID);
-							rawset(t, "altcollected", questID);
-						end
+			-- determine if an altQuest is considered completed for this quest for this character
+			local found;
+			if t.altQuests then
+				for i,questID in ipairs(t.altQuests) do
+					-- any altQuest completed on this character, mark the altQuestID
+					if not found and IsQuestFlaggedCompleted(questID) then
+						found = questID;
 					end
 				end
 			end
+			rawset(t, "altcollected", found or 0);
 			return rawget(t, "altcollected");
 		-- returns 0 if available or non-breadcrumb quest, or returns a completed questID which blocks this breadcrumb from being obtained
 		elseif key == "isBreadcrumbAvailable" then
-			-- return 0 for non-breadcrumbs
-			if not t.isBreadcrumb then return 0; end
-			if not rawget(t,"isBreadcrumbAvailable") then
-				rawset(t,"isBreadcrumbAvailable",0);
-				-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
-				if t.nextQuests then
-					local found;
-					for i,questID in ipairs(t.nextQuests) do
-						-- any nextQuests completed specifically on this character, mark the nextQuestsID
-						-- print("check nextQuest",questID);
-						if not found and IsQuestFlaggedCompleted(questID) then
-							found = questID;
-							-- print("complete nextQuest found",questID,"=>",t.questID);
-						elseif not found then
-							-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
-							local qs = SearchForField("questID", questID);
-							-- check the quests cached under this questID for the correct quest group
-							if qs and #qs > 0 then
-								local i, sq = #qs;
-								while not sq and i > 0 do
-									if qs[i].questID == questID then sq = qs[i]; end
-									i = i - 1;
-								end
+			-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
+			local found;
+			if t.isBreadcrumb and t.nextQuests then
+				for i,questID in ipairs(t.nextQuests) do
+					-- any nextQuests completed specifically on this character, mark the nextQuestsID
+					if not found and IsQuestFlaggedCompleted(questID) then
+						found = questID;
+					elseif not found then
+						-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
+						local qs = SearchForField("questID", questID);
+						-- check the quests cached under this questID for the correct quest group
+						if qs and #qs > 0 then
+							local i, sq = #qs;
+							while not sq and i > 0 do
+								if qs[i].questID == questID then sq = qs[i]; end
+								i = i - 1;
 							end
-							if sq then
-								if sq.collected or sq.altcollected or sq.isBreadcrumbAvailable ~= 0 then
-									-- print("complete sq found",sq.collected,sq.altcollected,sq.isBreadcrumbAvailable);
-									found = questID;
-								end
+						end
+						if sq then
+							if sq.collected or sq.altcollected or sq.isBreadcrumbAvailable ~= 0 then
+								found = questID;
 							end
 						end
 					end
-					if found then
-						rawset(t, "isBreadcrumbAvailable", found);
-					end
 				end
 			end
+			rawset(t, "isBreadcrumbAvailable", found or 0);
 			return rawget(t, "isBreadcrumbAvailable");
 		elseif key == "sourceQuestsCompleted" then
 			if t.sourceQuests and #t.sourceQuests > 0 then
