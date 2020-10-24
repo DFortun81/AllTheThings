@@ -519,10 +519,6 @@ _.Zones =
 					["provider"] = { "n", 61495 },	-- Elder Shu
 					["sourceQuest"] = 30935,	-- Fisherman's Tale
 				}),
-				q(32316, {	-- Heart Of The Alliance
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 67948 },	-- Anduin Wrynn
-				}),
 				q(30460, {	-- Hit Medicine
 					["coord"] = { 71.5, 92.8, 379 },
 					["provider"] = { "n", 59077 },	-- Apothecary Cheng
@@ -1379,10 +1375,6 @@ _.Zones =
 						30684,	-- Seeker's Folly
 						31306,	-- Seeker's Folly
 					},
-				}),
-				q(31492, {	-- The Torch of Strength
-					["isDaily"] = true,
-					["provider"] = { "n", 60981 },	-- Lin Tenderpaw
 				}),
 				q(31518, {	-- The Vale of Eternal Blossoms (most likely NYI. "A Witness to History" is the opening of the gates)
 					["u"] = NEVER_IMPLEMENTED,

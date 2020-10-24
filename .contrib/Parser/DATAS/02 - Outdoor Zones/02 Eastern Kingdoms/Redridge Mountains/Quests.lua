@@ -54,7 +54,7 @@ _.Zones =
 					["provider"] = { "n", 43270 },	-- Messner
 					["coord"] = { 47.5, 41.8, 49 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = 26586,	-- In Search of Bravo Company
+					["sourceQuests"] = { 26586 },	-- In Search of Bravo Company
 				}),
 				q(26514, {	-- Canyon Romp
 					["provider"] = { "n", 344 },	-- Magistrate Solomon

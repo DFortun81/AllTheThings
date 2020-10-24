@@ -144,12 +144,12 @@ _.Zones =
 								q(10204, {	-- Bloodgem Crystals
 									["provider"] = { "n", 19469 },	-- Magistrix Larynna
 									["coord"] = { 32.1, 64.0, 109 },
-									["sourceQuests"] = 10189,	-- Manaforge B'naar
+									["sourceQuests"] = { 10189 },	-- Manaforge B'naar
 								}),
 								q(10193, {	-- High Value Targets
 									["provider"] = { "n", 19468 },	-- Spymaster Thalodien
 									["coord"] = { 32.0, 64.1, 109 },
-									["sourceQuest"] = 10189,	-- Manaforge B'naar
+									["sourceQuests"] = { 10189 },	-- Manaforge B'naar
 								}),
 								q(10329, {	-- Shutting Down Manaforge B'naar
 									["provider"] = { "n", 19468 },	-- Spymaster Thalodien
@@ -159,7 +159,7 @@ _.Zones =
 								q(10194, {	-- Stealth Flight
 									["provider"] = { "n", 19468 },	-- Spymaster Thalodien
 									["coord"] = { 32.0, 64.1, 109 },
-									["sourceQuests"] = 10329,	-- Shutting Down Manaforge B'naar
+									["sourceQuests"] = { 10329 },	-- Shutting Down Manaforge B'naar
 								}),
 								q(10652, {	-- Behind Enemy Lines
 									["provider"] = { "n", 20162 },	-- Veronia
@@ -627,7 +627,7 @@ _.Zones =
 						q(10423, {	-- To the Stormspire
 							["provider"] = { "n", 20810 },	-- Mehrdad
 							["coord"] = { 46.4, 56.4, 109 },
-							["sourceQuests"] = 10418,	-- Deal With the Saboteurs
+							["sourceQuests"] = { 10418 },	-- Deal With the Saboteurs
 						}),
 						q(10268, {	-- An Audience with the Prince
 							["provider"] = { "n", 20066 },	-- Gahruj

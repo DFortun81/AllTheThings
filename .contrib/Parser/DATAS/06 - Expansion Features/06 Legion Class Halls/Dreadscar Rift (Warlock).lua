@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		cl(WARLOCK, {
 			["classes"] = { WARLOCK },
 			["mapID"] = 717,	-- Dreadscar Rift (Warlock)
-			["maps"] = 718,	-- Dreadscar Rift (scenario version at the beginning of class campaign)
+			["maps"] = { 718 },	-- Dreadscar Rift (scenario version at the beginning of class campaign)
 			["lvl"] = 98,
 			["g"] = {
 				gt(366, {	-- Demonic Offering Class Hall Ability

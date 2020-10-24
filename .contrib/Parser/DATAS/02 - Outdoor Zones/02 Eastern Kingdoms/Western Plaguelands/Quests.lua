@@ -25,7 +25,7 @@ _.Zones =
 				q(26954, {	-- A Different Approach
 					["provider"] = { "n", 44456 },	-- Adrine Towhide
 					["coord"] = { 48.8, 54.7, 22 },
-					["sourceQuests"] = 26953,	-- Zen'kiki, the Druid
+					["sourceQuests"] = { 26953 },	-- Zen'kiki, the Druid
 				}),
 				q(27012, {	-- A Gnoll's Resolve
 					["provider"] = { "n", 44472 },	-- Kelly Dumah

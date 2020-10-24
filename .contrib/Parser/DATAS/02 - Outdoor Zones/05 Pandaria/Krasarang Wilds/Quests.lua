@@ -948,10 +948,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32315, {	-- Anduin's Plea
-					["provider"] = { "n", 67940 },	-- Admiral Taylor
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(30613, {	-- Armored Carp
 					["provider"] = { "n", 60135 },	-- Trawler Yotimo
 					["isDaily"] = true,
@@ -1187,21 +1183,6 @@ _.Zones =
 				q(32137, {	-- Runnin' On Empty
 					["provider"] = { "n", 67542 },	-- Grizzle Gearslip
 					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(30698, {	-- Scavenger Hunt
-					["provider"] = { "n", 60136 },	-- Fiznix
-					["requireSkill"] = FISHING,
-					["isDaily"] = true,
-				}),
-				q(32115, {	-- Shackles of the Past
-					["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(30700, {	-- Snapclaw
-					["provider"] = { "n", 59586 },	-- Angler Shen
-					["requireSkill"] = FISHING,
 					["isDaily"] = true,
 				}),
 				q(32284, {	-- Someone You Should See

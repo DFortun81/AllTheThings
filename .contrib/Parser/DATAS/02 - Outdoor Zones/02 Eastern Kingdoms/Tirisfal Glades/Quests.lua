@@ -623,7 +623,7 @@ _.Zones =
 					["provider"] = { "n", 1500 },	-- Coleman Farthing
 				}),
 				q(25030, {	-- The Haunted Mills
-					["crs"] = 1658,	-- Captain Dargol
+					["crs"] = { 1658 },	-- Captain Dargol
 					["coord"] = { 52.8, 26.3, 18 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 3082 },	-- Dargol's Skull

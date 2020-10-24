@@ -66,6 +66,12 @@ _.Zones =
 							["isDaily"] = true,
 							["coord"] = { 66.5, 46.4, 379 },
 						}),
+						q(31492, {	-- The Torch of Strength
+							["sourceQuests"] = { 31512, 31511 },	-- A Witness to History (A, H)
+							["provider"] = { "n", 60981 },	-- Lin Tenderpaw
+							["isDaily"] = true,
+							["coord"] = { 68.5, 56.3, 379 },
+						}),
 					}),
 				},
 			}),

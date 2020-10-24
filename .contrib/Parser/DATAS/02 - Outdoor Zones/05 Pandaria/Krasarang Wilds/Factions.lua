@@ -289,8 +289,15 @@ _.Zones =
 									crit(4, {	-- Jaina's Hope
 										["sourceQuests"] = { 32362 },	-- The Fate of Dalaran
 									}),
-									crit(5),	-- The Korune
-									crit(6),	-- Heart of the Alliance
+									crit(5, {	-- The Korune
+										["sourceQuests"] = {
+											32194,	-- Bad Blood
+											32243,	-- The Source of Korune Power
+										},
+									}),
+									crit(6, {	-- Heart of the Alliance
+										["sourceQuests"] = { 32316 },	-- Heart of the Alliance
+									}),
 									crit(7),	-- Secrets of the Past
 									crit(8),	-- The Divine Bell
 									crit(9),	-- The Purge of Dalaran
@@ -335,6 +342,16 @@ _.Zones =
 								["provider"] = { "n", 68908 },	-- Amber Kearnen
 								["isDaily"] = true,
 								["coord"] = { 94.7, 28.3, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32315, {	-- Anduin's Plea
+								["minReputation"] = { 1376, HONORED+10750 },
+								["sourceQuests"] = {
+									32194,	-- Bad Blood
+									32243,	-- The Source of Korune Power
+								},
+								["provider"] = { "n", 67940 },	-- Admiral Taylor
+								["coord"] = { 94.5, 28.4, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32148, {	-- Attack! Move!
@@ -409,6 +426,12 @@ _.Zones =
 								["coord"] = { 59.2, 84.3, 379 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32316, {	-- Heart Of The Alliance
+								["sourceQuests"] = { 32315 },	-- Anduin's Plea
+								["provider"] = { "n", 67948 },	-- Anduin Wrynn
+								["coord"] = { 66.6, 34.1, 394 },	-- Shrine of Seven Stars
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32153, {	-- Hero Killer
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
 								["provider"] = { "n", 67631 },	-- Marshal Troteman
@@ -474,6 +497,13 @@ _.Zones =
 								["provider"] = { "n", 68908 },	-- Amber Kearnen
 								["isDaily"] = true,
 								["coord"] = { 94.7, 28.3, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32115, {	-- Shackles of the Past
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
+								["isDaily"] = true,
+								["coord"] = { 31.0, 27.9, 419 },	-- Ruins of Ogudei
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32152, {	-- Siege Damage
@@ -680,9 +710,6 @@ _.Zones =
 						--	TODO: add the following quests.  i'm just moving them into the file as i see them so i can ensure the correct coordinates are added and none get forgotten.  i hate this zone.
 							-- Armored Carp
 							-- Mimic Octopus
-							-- Scavenger Hunt
-							-- Shocking!
-							-- Snapclaw
 							-- Spinefish Alpha
 							q(30754, {	-- Bright Bait
 								["requireSkill"] = FISHING,
@@ -732,11 +759,23 @@ _.Zones =
 								["isDaily"] = true,
 								["coord"] = { 70.5, 37.5, 418 },
 							}),
+							q(30698, {	-- Scavenger Hunt
+								["requireSkill"] = FISHING,
+								["provider"] = { "n", 60136 },	-- Fiznix
+								["isDaily"] = true,
+								["coord"] = { 70.8, 41.3, 418 },
+							}),
 							q(30584, {	-- Shocking!
 								["requireSkill"] = FISHING,
 								["provider"] = { "n", 59584 },	-- Fisherman Haito
 								["isDaily"] = true,
 								["coord"] = { 71.2, 41.8, 418 },
+							}),
+							q(30700, {	-- Snapclaw
+								["requireSkill"] = FISHING,
+								["provider"] = { "n", 59586 },	-- Angler Shen
+								["isDaily"] = true,
+								["coord"] = { 70.8, 40.2, 418 },
 							}),
 							q(30701, {	-- Viseclaw Soup
 								["requireSkill"] = FISHING,

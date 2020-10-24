@@ -429,7 +429,7 @@ _.Zones =
 				q(28393, {	-- A Dangerous Alliance
 					["provider"] = { "n", 914 },	-- Ander Germaine
 					["coord"] = { 79.4, 69.0, 84 },
-					["sourceQuests"] = 28258,	-- Meet with Ander Germaine
+					["sourceQuests"] = { 28258 },	-- Meet with Ander Germaine
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 50,
@@ -502,7 +502,7 @@ _.Zones =
 						{ 79.6, 61.2, 84 },	-- Arthur Huwe
 						{ 79.6, 60.8, 84 },	-- Lord Tony Romano
 					},
-					["sourceQuests"] = 27267,	-- Make Contact with SI:7
+					["sourceQuests"] = { 27267 },	-- Make Contact with SI:7
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 20,

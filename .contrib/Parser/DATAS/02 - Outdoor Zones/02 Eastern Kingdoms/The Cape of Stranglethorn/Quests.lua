@@ -697,7 +697,7 @@ _.Zones =
 				q(1041,  {	-- The Caravan Road
 					["provider"] = { "n", 3945 },	-- Caravaneer Ruzzgot
 					["coord"] = { 27.4, 74.2, 210 },
-					["sourceQuests"] = 1040,	-- The Passage to Booty Bay
+					["sourceQuests"] = { 1040 },	-- The Passage to Booty Bay
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["u"] = REMOVED_FROM_GAME,
