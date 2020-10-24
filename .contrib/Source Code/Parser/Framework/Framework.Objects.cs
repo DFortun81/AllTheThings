@@ -1592,7 +1592,7 @@ namespace ATT
                                             bool match = true;
                                             for (int i = 0; i < oldcount; ++i)
                                             {
-                                                if (oldcoord[i] == newcoord[i]) continue;
+                                                if (Equals(oldcoord[i], newcoord[i])) continue;
                                                 match = false;
                                                 break;
                                             }
