@@ -355,7 +355,7 @@ namespace ATT
                     case "sourceQuests":
                     case "altAchievements":
                     case "altQuests":
-                    case Tags.RequiredLevel:
+                    case "reqlvl":
                         {
                             Objects.MergeIntegerArrayData(item, field, value);
                             break;
@@ -554,23 +554,23 @@ namespace ATT
             /// </summary>
             /// <param name="data">The data to merge into the item database.</param>
             /// <param name="itemID">The item ID or -1 if the item is not valid.</param>
-            public static void Merge(Dictionary<object, object> data, out int itemID)
-            {
-                // Attempt to extra the itemID from the data table.
-                if (data.TryGetValue("itemID", out object itemIDRef))
-                {
-                    Merge(itemID = Convert.ToInt32(itemIDRef), data);
-                }
-                else if (data.TryGetValue("itemId", out itemIDRef))
-                {
-                    Merge(itemID = Convert.ToInt32(itemIDRef), data);
-                }
-                else if (data.TryGetValue("toyID", out itemIDRef))
-                {
-                    Merge(itemID = Convert.ToInt32(itemIDRef), data);
-                }
-                else itemID = -1;
-            }
+            //public static void Merge(Dictionary<object, object> data, out int itemID)
+            //{
+            //    // Attempt to extra the itemID from the data table.
+            //    if (data.TryGetValue("itemID", out object itemIDRef))
+            //    {
+            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //    }
+            //    else if (data.TryGetValue("itemId", out itemIDRef))
+            //    {
+            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //    }
+            //    else if (data.TryGetValue("toyID", out itemIDRef))
+            //    {
+            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //    }
+            //    else itemID = -1;
+            //}
 
             /// <summary>
             /// Merge the data into the item database.
@@ -578,23 +578,23 @@ namespace ATT
             /// </summary>
             /// <param name="data">The data to merge into the item database.</param>
             /// <param name="itemID">The item ID or -1 if the item is not valid.</param>
-            public static void Merge(Dictionary<string, object> data, out int itemID)
-            {
-                // Attempt to extra the itemID from the data table.
-                if (data.TryGetValue("itemID", out object itemIDRef))
-                {
-                    Merge(itemID = Convert.ToInt32(itemIDRef), data);
-                }
-                else if (data.TryGetValue("itemId", out itemIDRef))
-                {
-                    Merge(itemID = Convert.ToInt32(itemIDRef), data);
-                }
-                else if (data.TryGetValue("toyID", out itemIDRef))
-                {
-                    Merge(itemID = Convert.ToInt32(itemIDRef), data);
-                }
-                else itemID = -1;
-            }
+            //public static void Merge(Dictionary<string, object> data, out int itemID)
+            //{
+            //    // Attempt to extra the itemID from the data table.
+            //    if (data.TryGetValue("itemID", out object itemIDRef))
+            //    {
+            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //    }
+            //    else if (data.TryGetValue("itemId", out itemIDRef))
+            //    {
+            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //    }
+            //    else if (data.TryGetValue("toyID", out itemIDRef))
+            //    {
+            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //    }
+            //    else itemID = -1;
+            //}
             #endregion
             #region Merge Into (for merging item data back into an object)
             /// <summary>
@@ -645,6 +645,7 @@ namespace ATT
                     case "isMonthly":
                     case "isYearly":
                     case "isWorldQuest":
+                    case "reqlvl":
                         {
                             data[field] = value;
                             break;

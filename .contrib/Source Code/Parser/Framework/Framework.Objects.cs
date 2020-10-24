@@ -1120,12 +1120,44 @@ namespace ATT
                     item[field] = oldList = new List<object>();
                 }
 
-                // Merge the new list of data into the old data and ensure there are no duplicate values.
-                foreach (var entry in newList)
+                // special case for 'reqlvl'...
+                // item with quest attached, item has diff reqlvl than the quest reqlvl, you end up with the item having a lvl range instead of the highest value
+                if (field == "reqlvl")
                 {
-                    var index = Convert.ToInt32(entry);
-                    if (oldList.Contains(index)) continue;
-                    oldList.Add(index);
+                    int? oldmin = null, oldmax = null, newmin = null, newmax = null;
+                    if (oldList.Count > 0)
+                        oldmin = Convert.ToInt32(oldList[0]);
+                    if (newList.Count > 0)
+                        newmin = Convert.ToInt32(newList[0]);
+                    if (oldList.Count > 1)
+                        oldmax = Convert.ToInt32(oldList[1]);
+                    if (newList.Count > 1)
+                        newmax = Convert.ToInt32(newList[1]);
+
+                    newmin = Math.Max(oldmin ?? int.MinValue, newmin ?? int.MinValue);
+                    newmax = Math.Min(oldmax ?? int.MaxValue, newmax ?? int.MaxValue);
+
+                    if (newmax > 0 && newmax < int.MaxValue)
+                    {
+                        oldList.Clear();
+                        oldList.Add(newmin);
+                        oldList.Add(newmax);
+                    }
+                    else if (newmin > 0)
+                    {
+                        oldList.Clear();
+                        oldList.Add(newmin);
+                    }
+                }
+                else
+                {
+                    // Merge the new list of data into the old data and ensure there are no duplicate values.
+                    foreach (var entry in newList)
+                    {
+                        var index = Convert.ToInt32(entry);
+                        if (oldList.Contains(index)) continue;
+                        oldList.Add(index);
+                    }
                 }
 
                 // Sort the old list to ensure that the order is consistent.
@@ -1359,7 +1391,7 @@ namespace ATT
                     case "maps":
                     case "qgs":
                     case "crs":
-                    case Tags.RequiredLevel:
+                    case "reqlvl":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;

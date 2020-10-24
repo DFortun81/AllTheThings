@@ -86,7 +86,7 @@ namespace ATT
                         foreach (int diffKey in diffKeys)
                         {
                             Dictionary<string, object> diffObj = diffDB[diffKey];
-                            diffObj[objectKey] = diffKey.ToString();
+                            diffObj[objectKey] = diffKey;
                             diffObjs.Add(diffObj);
                         }
                         File.WriteAllText(diffFile, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, diffObjs } }));
@@ -243,7 +243,7 @@ namespace ATT
                     {
                         if (sourceObj.TryGetValue(key, out object sourceValue)
                             && compareObj.TryGetValue(key, out object compareValue)
-                            && !CompareValues(compareValue, sourceValue))
+                            && !CompareValues(sourceValue, compareValue))
                         {
                             if (!logged)
                             {
@@ -258,7 +258,8 @@ namespace ATT
                             DiffObjectKey(sourceDB, id, compareObj, key);
                         }
                     }
-                    Console.WriteLine();
+                    if (logged)
+                        Console.WriteLine();
                 }
             }
 
@@ -306,18 +307,28 @@ namespace ATT
                 }
 
                 // If the old value is a boolean (True/False) convert to (1/0).
-                if (oldType == typeof(bool)) return Convert.ToInt32(oldValue) == Convert.ToInt32(newValue);
+                //if (oldType == typeof(bool)) return Convert.ToInt32(oldValue) == Convert.ToInt32(newValue);
 
-                // Default, not sure how to parse this.
+                // If both types can parse to int directly
+                try
+                {
+                    int oldint = Convert.ToInt32(oldValue);
+                    int newint = Convert.ToInt32(newValue);
+
+                    return oldint == newint;
+                }
+                catch { }
+
+                // Default, not sure how to parse this so assume difference
                 Console.WriteLine("NOT SURE HOW TO PARSE THIS:");
                 Console.Write(oldValue);
                 Console.Write(" (");
                 Console.Write(oldType);
-                Console.WriteLine(")");
+                Console.WriteLine(") OLD");
                 Console.Write(newValue);
                 Console.Write(" (");
                 Console.Write(newType);
-                Console.WriteLine(")");
+                Console.WriteLine(") NEW");
                 return false;
             }
             return true;

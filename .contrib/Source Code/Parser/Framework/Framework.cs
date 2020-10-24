@@ -1336,7 +1336,7 @@ namespace ATT
                 case "reqlvls":
                 case "reqLvl":
                 case "reqLvls":
-                    return Tags.RequiredLevel;
+                    return "reqlvl";
 
                 case "rank":
                 case "azeriteRank":
