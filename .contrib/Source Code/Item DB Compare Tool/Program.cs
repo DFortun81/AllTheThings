@@ -206,9 +206,11 @@ namespace ATT
                     }
                     bool missing = missingKeys.Any();
                     bool added = brandNewKeys.Any();
+                    bool logged = false;
                     if (missing || added)
                     {
                         Console.Write("ID #" + id.ToString());
+                        logged = true;
 
                         if (missing)
                         {
@@ -236,21 +238,27 @@ namespace ATT
                                 comma = true;
                             }
                         }
-                        foreach (var key in compareKeys)
-                        {
-                            if (sourceObj.TryGetValue(key, out object sourceValue)
-                                && compareObj.TryGetValue(key, out object compareValue)
-                                && !CompareValues(compareValue, sourceValue))
-                            {
-                                Console.WriteLine();
-                                Console.Write("- CHANGE: " + key + ": " + MiniJSON.Json.Serialize(sourceValue) + " --> " + MiniJSON.Json.Serialize(compareValue));
-
-                                DiffObjectKey(diffDB, id, compareObj, key);
-                                DiffObjectKey(sourceDB, id, compareObj, key);
-                            }
-                        }
-                        Console.WriteLine();
                     }
+                    foreach (var key in compareKeys)
+                    {
+                        if (sourceObj.TryGetValue(key, out object sourceValue)
+                            && compareObj.TryGetValue(key, out object compareValue)
+                            && !CompareValues(compareValue, sourceValue))
+                        {
+                            if (!logged)
+                            {
+                                logged = true;
+                                Console.Write("ID #" + id.ToString());
+                            }
+
+                            Console.WriteLine();
+                            Console.Write("- CHANGE: " + key + ": " + MiniJSON.Json.Serialize(sourceValue) + " --> " + MiniJSON.Json.Serialize(compareValue));
+
+                            DiffObjectKey(diffDB, id, compareObj, key);
+                            DiffObjectKey(sourceDB, id, compareObj, key);
+                        }
+                    }
+                    Console.WriteLine();
                 }
             }
 
