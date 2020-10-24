@@ -290,7 +290,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					}),
 					i(170511, {	-- Head of Nefarian (Paladin, if A/H have already been looted)
-						["classes"] = PALADIN,	-- used for a hidden artifact appearance.  may come back and add more context/info later
+						["classes"] = { PALADIN },	-- used for a hidden artifact appearance.  may come back and add more context/info later
 					}),
 					i(19364),	-- Ashkandi, Greatsword of the Brotherhood
 					i(19356),	-- Staff of the Shadow Flame

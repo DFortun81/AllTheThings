@@ -179,6 +179,7 @@ _.Zones =
 								["sourceQuests"] = { 30142 },	-- It's A...
 								["provider"] = { "n", 58564 },	-- Elder Anli
 								["isDaily"] = true,
+								["coord"] = { 57.6, 44.9, 371 },
 							}),
 							q(31784, {	-- Onyx To Goodness
 								["repeatable"] = true,
@@ -347,6 +348,7 @@ _.Zones =
 								["sourceQuests"] = { 30142 },	-- It's A...
 								["provider"] = { "n", 58509 },	-- Ningna Darkwheel
 								["isDaily"] = true,
+								["coord"] = { 58.2, 45.1, 371 },
 							}),
 							q(30152, {	-- The Sky Race
 								["minReputation"] = { 1271, REVERED },
@@ -398,6 +400,7 @@ _.Zones =
 								["sourceQuests"] = { 30142 },	-- It's A...
 								["provider"] = { "n", 58228 },	-- Instructor Skythorn
 								["isDaily"] = true,
+								["coord"] = { 57.5, 45.0, 371 },
 							}),
 							q(31710, {	-- Tiny Treats
 								["minReputation"] = { 1271, HONORED },

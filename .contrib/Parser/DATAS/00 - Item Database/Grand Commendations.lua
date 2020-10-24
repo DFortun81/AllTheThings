@@ -53,12 +53,14 @@ i(93229, 1271, true);		-- Grand Commendation of the Order of the Cloud Serpent
 i(93220, 1270, true);		-- Grand Commendation of the Shado-Pan
 i(95548, 1388, true);		-- Grand Commendation of the Sunreaver Onslaught
 i(93226, 1272, true);		-- Grand Commendation of the Tillers
+i(95490, 1387);				-- Greater Kirin Tor Offensive Insignia
+i(95489, 1387);				-- Kirin Tor Offensive Insignia
 i(90815, 1269, true);		-- Relic of Guo-Lai
 i(90816, 1269, true);		-- Relic of the Thunder King
-i(94225, 1341);		-- Stolen Celestial Insignia
-i(94227, 1269);		-- Stolen Golden Lotus Insignia
-i(94226, 1337);		-- Stolen Klaxxi Insignia
-i(94223, 1270);		-- Stolen Shado-Pan Insignia
+i(94225, 1341);				-- Stolen Celestial Insignia
+i(94227, 1269);				-- Stolen Golden Lotus Insignia
+i(94226, 1337);				-- Stolen Klaxxi Insignia
+i(94223, 1270);				-- Stolen Shado-Pan Insignia
 
 -- Timewalking: Burning Crusade
 i(129948, 946);		-- Commendation of Honor Hold

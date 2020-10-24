@@ -24,8 +24,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["provider"] = { "n", 18933 },	-- Isfar
 				}),
 				q(29605, {	-- Brother Against Brother
+					["sourceQuests"] = { 10180 },	-- Can't Stay Away
 					["provider"] = { "n", 54840 },	-- Isfar
-					["sourceQuests"] = 10180,	-- Can't Stay Away
 					["g"] = {
 						i(29336),	-- Mark of the Ravenguard
 						i(29334),	-- Sethekk Oracle's Focus
