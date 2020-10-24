@@ -117,21 +117,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13439, {	-- Boxing Match
-								["races"] = ALLIANCE_ONLY,
-							}),
-						},
 					}),
 					q(54516, {	-- Crate n' Barrel (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13438, {	-- Boxing Match
-								["races"] = HORDE_ONLY,
-							}),
-						},
 					}),
 					q(50854, {	-- Crimsonclaw
 						["lvl"] = 120,
@@ -220,9 +210,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13441),	-- Pushing the Payload
-						},
 					}),
 					q(50870, {	-- G'Naat
 						["lvl"] = 120,
@@ -271,17 +258,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13035),	-- By de Power of de Loa!
-						},
 					}),
 					q(51232, {	-- Hundred Troll Holdout (H)
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13035),	-- By de Power of de Loa!
-						},
 					}),
 					q(51305, {	-- Jelly Clouds (possibly NYI?)
 						["lvl"] = 120,
@@ -463,9 +444,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13440),	-- Pushing the Payload
-						},
 					}),
 					q(53165, {	-- Stopping Antiquities Theft
 						["lvl"] = 120,

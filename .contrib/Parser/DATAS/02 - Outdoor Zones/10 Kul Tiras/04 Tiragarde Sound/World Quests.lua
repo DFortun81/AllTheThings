@@ -313,11 +313,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(2, {	-- Frozen Freestyle
-								["achievementID"] = 13060,	-- Kul Runnings
-							}),
-						},
 					}),
 					q(53699, {	-- Gate Crashers (Faction Assault WQ)
 						["lvl"] = 110,
@@ -521,9 +516,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							ach(12087),	-- The Reining Champion
-						},
 					}),
 					q(51463, {	-- Sky Drop Rescue
 						["lvl"] = 120,
@@ -534,21 +526,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(1, {	-- Sliding with Style
-								["achievementID"] = 13060,	-- Kul Runnings
-							}),
-						},
 					}),
 					q(53189, {	-- Slippery Slopes
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(3, {	-- Slippery Slopes
-								["achievementID"] = 13060,	-- Kul Runnings
-							}),
-						},
 					}),
 					q(52143, {	-- Smaller Haulers
 						["lvl"] = 120,
@@ -607,43 +589,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							ach(13050, {	-- Bless the Rains Down in Freehold
-								crit(1, {		-- Banana Hoard
-									["coord"] = { 76.15, 84.60, 895 }
-								}),
-								crit(2, {		-- Sweete's Feast
-									["coord"] = { 73.38, 83.92, 895 }
-								}),
-								crit(3, {		-- Cart o' Cutlasses
-									["coord"] = { 75.05, 82.94, 895 }
-								}),
-								crit(4, {		-- Blacktooth Brew
-									["coord"] = { 76.69, 81.80, 895 }
-								}),
-							}),
-						},
 					}),
 					q(53196, {	-- Swab This! (Horde)
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							ach(13050, {	-- Bless the Rains Down in Freehold
-								crit(1, {		-- Banana Hoard
-									["coord"] = { 76.15, 84.60, 895 }
-								}),
-								crit(2, {		-- Sweete's Feast
-									["coord"] = { 73.38, 83.92, 895 }
-								}),
-								crit(3, {		-- Cart o' Cutlasses
-									["coord"] = { 75.05, 82.94, 895 }
-								}),
-								crit(4, {		-- Blacktooth Brew
-									["coord"] = { 76.69, 81.80, 895 }
-								}),
-							}),
-						},
 					}),
 					q(51891, {	-- Sythian the Swift
 						["isWorldQuest"] = true,
@@ -728,9 +678,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							ach(13059),	-- Drag Race
-						},
 					}),
 					q(51657, {	-- Twin-Hearted Construct
 						["lvl"] = 120,

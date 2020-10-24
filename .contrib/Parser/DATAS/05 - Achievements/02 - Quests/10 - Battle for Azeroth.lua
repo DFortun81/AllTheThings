@@ -15,21 +15,40 @@ _.Achievements =
 {
 	n(-9956, {	-- Quests
 		n(-10052, {	-- Battle for Azeroth
-			a(ach(13026)),	-- 7th Legion Spycatcher
+			a(ach(13026, {	-- 7th Legion Spycatcher
+				["_quests"] = { 50899 },	-- Don't Stalk Me, Troll (A)
+			})),
 			h(ach(12480)),	-- A Bargain of Blood
-			h(ach(13021)),	-- A Most Efficient Apocalypse
+			h(ach(13021, {	-- A Most Efficient Apocalypse
+				["_quests"] = { 50665 },	-- Cancel the Blood Troll Apocalypse
+			})),
 			a(ach(12891, {	-- A Nation United
 				crit(1),		-- Loremaster of Kul Tiras
 				crit(2),		-- The Pride of Kul Tiras
 				crit(3),		-- A Nation United
 			})),
-			ach(13042),		-- About To Break
+			ach(13042, {		-- About To Break
+				["_quests"] = { 
+					53108,	-- Iconoclasm [A]
+					53344	-- Iconoclasm
+				},
+			}),
 			h(ach(13009, {	-- Adept Sandfisher
-				crit(1),		-- Cobalt Sandworm Scale
-				crit(2),		-- Silver Sandworm Scale
-				crit(3),		-- Emerald Sandworm Scale
-				crit(4),		-- Ruby Sandworm Scale
-				crit(5),		-- Onyx Sandworm Scale
+				crit(1, {		-- Cobalt Sandworm Scale
+					["_quests"] = { 51173 },	-- Sandfishing
+				}),
+				crit(2, {		-- Silver Sandworm Scale
+					["_quests"] = { 51173 },	-- Sandfishing
+				}),
+				crit(3, {		-- Emerald Sandworm Scale
+					["_quests"] = { 51173 },	-- Sandfishing
+				}),
+				crit(4, {		-- Ruby Sandworm Scale
+					["_quests"] = { 51173 },	-- Sandfishing
+				}),
+				crit(5, {		-- Onyx Sandworm Scale
+					["_quests"] = { 51173 },	-- Sandfishing
+				}),
 			})),
 			ach(13790, {	-- Armed for Action
 				crit(1),	-- Volatile Blaster
@@ -40,16 +59,32 @@ _.Achievements =
 			}),
 			ach(13050, {	-- Bless the Rains Down in Freehold
 				crit(1, {		-- Banana Hoard
-					["coord"] = { 76.15, 84.60, 895 }
+					["coord"] = { 76.15, 84.60, 895 },
+					["_quests"] = { 
+						52159,	-- Swab This! [A]
+						53196,	-- Swab This! [H]
+					},
 				}),
 				crit(2, {		-- Sweete's Feast
-					["coord"] = { 73.38, 83.92, 895 }
+					["coord"] = { 73.38, 83.92, 895 },
+					["_quests"] = { 
+						52159,	-- Swab This! [A]
+						53196,	-- Swab This! [H]
+					},
 				}),
 				crit(3, {		-- Cart o' Cutlasses
-					["coord"] = { 75.05, 82.94, 895 }
+					["coord"] = { 75.05, 82.94, 895 },
+					["_quests"] = { 
+						52159,	-- Swab This! [A]
+						53196,	-- Swab This! [H]
+					},
 				}),
 				crit(4, {		-- Blacktooth Brew
-					["coord"] = { 76.69, 81.80, 895 }
+					["coord"] = { 76.69, 81.80, 895 },
+					["_quests"] = { 
+						52159,	-- Swab This! [A]
+						53196,	-- Swab This! [H]
+					},
 				}),
 			}),
 			h(ach(13020, {	-- Bow to Your Masters
@@ -63,10 +98,17 @@ _.Achievements =
 				crit(8),		-- Rezan respected
 				crit(9),		-- Sethraliss respected
 			})),
-			ach(13035),		-- By de Power of de Loa!
+			ach(13035, {		-- By de Power of de Loa!
+				["_quests"] = { 
+					51178,	-- Hundred Troll Holdout (A)
+					51232,	-- Hundred Troll Holdout (H)
+				},	-- 
+			}),
 			h(ach(13017)),	-- Champion of the Vulpera
 			ach(13047),		-- Clever Use of Mechanical Explosives
-			a(ach(13426)),	-- Come On and Slam
+			a(ach(13426, {	-- Come On and Slam
+				["_quests"] = { 54512 },	-- Cleansing Tide (Faction Assault WQ)
+			})),
 			a(ach(12582)),	-- Come Sail Away
 			a(ach(13053)),	-- Deadliest Cache
 			ach(14154, {	-- Defend the Vale
@@ -75,7 +117,9 @@ _.Achievements =
 				crit(3),		-- Assault: The Black Empire
 			}),
 			h(ach(13435)),	-- Doomsoul Surprise
-			a(ach(13059)),	-- Drag Race
+			a(ach(13059, {	-- Drag Race
+				["_quests"] = { 53346 },	-- Trogg Tromping
+			})),	
 			ach(13045),		-- Every Day I'm Truffling
 			a(ach(13283, {	-- Frontline Warrior (A)
 				crit(1, {		-- A Sound Defense
@@ -135,13 +179,23 @@ _.Achievements =
 					crit(4),		-- Down, But Not Out
 				})),
 			})),
-			h(ach(13041)),	-- Hungry, Hungry Ranishu
+			h(ach(13041, {	-- Hungry, Hungry Ranishu
+				["_quests"] = { 52798 },	-- A Few More Charges
+			})),
 			a(ach(13251)),	-- In Teldrassil's Shadow
-			ach(13023), 	-- It's Really Getting Out of Hand
+			ach(13023, { 	-- It's Really Getting Out of Hand
+				["_quests"] = { 51127 },	-- Getting Out of Hand (A)
+			}),
 			a(ach(13060, {	-- Kul Runnings
-				crit(1),		-- Sliding with Style
-				crit(2),		-- Frozen Freestyle
-				crit(3),		-- Slippery Slopes
+				crit(1, {		-- Sliding with Style
+					["_quests"] = { 49994 },	-- Sliding with Style
+				}),
+				crit(2, {		-- Frozen Freestyle
+					["_quests"] = { 53188 },	-- Frozen Freestyle
+				}),
+				crit(3, {		-- Slippery Slopes
+					["_quests"] = { 53189 },	-- Slippery Slopes
+				}),
 			})),
 			a(ach(13384)),	-- Kul Tirans Don't Look at Explosions
 			a(ach(13062, {	-- Let's Bee Friends
@@ -283,8 +337,12 @@ _.Achievements =
 				}),
 			}),
 			h(ach(13039)),	-- Paku'ai
-			a(ach(13440)),	-- Pushing the Payload (A)
-			h(ach(13441)),	-- Pushing the Payload (H)
+			a(ach(13440, {	-- Pushing the Payload (A)
+				["_quests"] = { 54498 },	-- Stack on the Tank [A]
+			})),
+			h(ach(13441, {	-- Pushing the Payload (H)
+				["_quests"] = { 54505 },	-- Get on the Payload (Faction Assault WQ) [H]
+			})),
 			h(ach(13038)),	-- Raptari Rider
 			a(ach(12510, {	-- Ready for War (Alliance)
 				crit(1),		-- Nazmir Foothold
@@ -306,7 +364,9 @@ _.Achievements =
 				crit(7),		-- At the Bottom of the Sea
 				crit(8),		-- The Strike on Boralus
 			})),
-			h(ach(13022)),	-- Revenge is Best Served Speedily
+			h(ach(13022, {	-- Revenge is Best Served Speedily
+				["_quests"] = { 50786 },	-- Revenge of Krag'wa
+			})),
 			ach(13054, {	-- Sabertron Assemble
 				crit(1),		-- Red Sabertron slain
 				crit(2),		-- Yellow Sabertron slain
@@ -314,7 +374,9 @@ _.Achievements =
 				crit(4),		-- Green Sabertron slain
 				crit(5),		-- Copper Sabertron slain
 			}),
-			h(ach(13437)),	-- Scavenge like a Vulpera
+			h(ach(13437, {	-- Scavenge like a Vulpera
+				["_quests"] = { 54415 },	-- Vulpera for a Day (Faction Assault WQ)
+			})),
 			ach(13011),		-- Scourge of Zem'lan
 			h(ach(12719, {	-- Spirits Be With You
 				crit(1),		-- The Fallen Chieftain
@@ -374,7 +436,9 @@ _.Achievements =
 				crit(16),		-- Welcome to the Resistance
 			})),
 			a(ach(12997)),	-- The Pride of Kul Tiras
-			a(ach(12087)),	-- The Reining Champion
+			a(ach(12087, {	-- The Reining Champion
+				["_quests"] = { 53331 },	-- The Reining Champion
+			})),
 			h(ach(13263)),	-- The Shadow Hunter
 			ach(13046),		-- These Hills Sing
 			a(ach(13467, {	-- Tides of Vengeance (A)
@@ -412,14 +476,29 @@ _.Achievements =
 			})),
 			a(ach(13285, {	-- Upright Citizens
 				i(166247),		-- Citizens Brigade Whistle (toy)
-				crit(1),		-- Russel the Bard recruited
-				crit(2),		-- Flynn Fairwind recruited
-				crit(3),		-- Leeroy Jenkins recruited
+				crit(1, {		-- Russel the Bard recruited
+					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
+				}),
+				crit(2, {		-- Flynn Fairwind recruited
+					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
+				}),
+				crit(3, {		-- Leeroy Jenkins recruited
+					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
+				}),
 			})),
 			h(ach(13014, {	-- Vorrik's Champion
-				crit(1),	-- Faithless slain with Vorrik's Bulwark slain
-				crit(2),	-- Faithless slain with Rakjan the Unbroken slain
-				crit(3),	-- Faithless charged with a Battle Krolusk slain
+				crit(1, {	-- Faithless slain with Vorrik's Bulwark slain
+					["_quests"] = { 51957 },	-- The Wrath of Vorrik
+					["races"] = HORDE_ONLY,	-- explicit tag due to H-ach on regular WQ until parser can inherit from parent ach for us
+				}),
+				crit(2, {	-- Faithless slain with Rakjan the Unbroken slain
+					["_quests"] = { 51983 },	-- Vorrik's Vengeance
+					["races"] = HORDE_ONLY,	-- explicit tag due to H-ach on regular WQ until parser can inherit from parent ach for us
+				}),
+				crit(3, {	-- Faithless charged with a Battle Krolusk slain
+					-- ["_quests"] = {  },	-- Not tied to a WQ, always available once unlocked via storyline I think
+					-- ["races"] = HORDE_ONLY,	-- explicit tag due to H-ach on regular WQ until parser can inherit from parent ach for us
+				}),
 			})),
 			h(ach(12555)),	-- Welcome to Zandalar
 			ach(13144),		-- Wide World of Quests
@@ -430,7 +509,9 @@ _.Achievements =
 				crit(4),		-- A Bargain of Blood
 				crit(5),		-- The Final Seal
 			})),
-			h(ach(13025)),	-- Zandalari Spycatcher
+			h(ach(13025, {	-- Zandalari Spycatcher
+				["_quests"] = { 50717 },	-- Don't Stalk Me, Troll (H)
+			})),
 		}),
 	}),
 };

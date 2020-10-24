@@ -631,9 +631,11 @@ namespace ATT
                             //    break;
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
                     Trace.WriteLine("Non-integer " + type + "ID used in _" + type + "s property:" + dupeGroupID?.ToString());
+                    Trace.WriteLine(ex.Message);
+                    Trace.WriteLine(ex.StackTrace);
                 }
             }
         }

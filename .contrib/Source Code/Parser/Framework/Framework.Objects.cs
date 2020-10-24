@@ -1616,6 +1616,7 @@ namespace ATT
                         }
                     case "coords":
                         {
+                            // TODO: when using _quests on a criteria which has coords, the coord is being duplicated a various amount of times
                             // Convert the data to a list of generic objects.
                             if (value is List<object> newList)
                             {

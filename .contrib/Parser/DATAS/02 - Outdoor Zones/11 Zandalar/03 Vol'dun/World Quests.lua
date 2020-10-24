@@ -12,9 +12,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13041),	-- Hungry, Hungry Ranishu
-						},
 					}),
 					q(49013, {	-- A Jolt of Power
 						["lvl"] = 120,
@@ -445,15 +442,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13009, {	-- Adept Sandfisher
-								crit(1),	-- Adept Sandfisher — Cobalt Sandworm Scale
-								crit(2),	-- Adept Sandfisher — Silver Sandworm Scale
-								crit(3),	-- Adept Sandfisher — Emerald Sandworm Scale
-								crit(4),	-- Adept Sandfisher — Ruby Sandworm Scale
-								crit(5),	-- Adept Sandfisher — Onyx Sandworm Scale
-							}),
-						},
 					}),
 					q(52196, {	-- Sandswept Bones
 						["lvl"] = 120,
@@ -562,12 +550,6 @@ _.Zones =
 					q(51957, {	-- The Wrath of Vorrik
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(1, { -- Faithless slain with Vorrik's Bulwark
-								["achievementID"] = 13014, -- Vorrik's Champion
-								["races"] = HORDE_ONLY,
-							}),
-						},
 					}),
 					q(51119, {	-- Vathikur
 						["lvl"] = 120,
@@ -576,12 +558,6 @@ _.Zones =
 					q(51983, {	-- Vorrik's Vengeance
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(2, { -- Faithless slain with Rakjan the Unbroken
-								["achievementID"] = 13014, -- Vorrik's Champion
-								["races"] = HORDE_ONLY,
-							}),
-						},
 					}),
 					q(51995, {	-- Vorrik's Vengeance
 						["lvl"] = 120,
@@ -592,9 +568,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13437), -- Scavenge like a Vulpera
-						},
 					}),
 					q(51316, {	-- Walking in a Spiderweb
 						["lvl"] = 120,

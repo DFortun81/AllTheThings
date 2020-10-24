@@ -10,8 +10,16 @@ _.Achievements =
 				["_quests"] = {
 					53768,	-- Furious Fracas (Faction Assault WQ) [A]
 					53769,	-- Furious Fracas (Faction Assault WQ) [H]
+					54539,	-- Skirmish at the Span (Faction Assault WQ) [A]
+					54538,	-- Skirmish at the Span (Faction Assault WQ) [H]
 				},
 			}),
+			a(ach(13439, {	-- Boxing Match [A]
+				["_quests"] = { 54524 },	-- Crate n' Barrel (Faction Assault WQ) [A]
+			})),
+			h(ach(13438, {	-- Boxing Match [H]
+				["_quests"] = { 54516 },	-- Crate n' Barrel (Faction Assault WQ) [H]
+			})),
 			ach(12605, 12604, {	-- Conqueror of Azeroth [A] / [H]
 				title(377),		-- , Conqueror of Azeroth [A] / [H]
 				ach(12573, {	-- Band of Brothers

@@ -132,11 +132,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13021, {	-- A Most Efficient Apocalypse
-								["races"] = HORDE_ONLY,
-							}),
-						},
 					}),
 					q(50813, {	-- Cargo Reclamation
 						["lvl"] = 120,
@@ -161,9 +156,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13426),	-- Come On and Slam
-						},
 					}),
 					q(50491, {	-- Corpse Bringer Yal'kar
 						["lvl"] = 120,
@@ -181,17 +173,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13026),	-- 7th Legion Spycatcher
-						},
 					}),
 					q(50717, {	-- Don't Stalk Me, Troll (H)
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13025),	-- Zandalari Spycatcher
-						},
 					}),
 					q(51166, {	-- Down to the Roots (A)
 						["lvl"] = 120,
@@ -231,9 +217,6 @@ _.Zones =
 						["hordeQuestID"] = 50559,	-- Getting Out of Hand (H)
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
-						["g"] = {
-							ach(13023),	-- It's Really Getting Out of Hand
-						},
 					}),
 					q(53322, {	-- Gleaming Storm Silver
 						["lvl"] = 120,
@@ -402,9 +385,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13022),	-- Revenge is Best Served Speedily
-						},
 					}),
 					q(54839, {	-- Rightfully Ours (Faction Assault WQ)
 						["lvl"] = 110,
@@ -471,17 +451,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13429),	-- Azerfighter
-						},
 					}),
 					q(54538, {	-- Skirmish at the Span (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13429),	-- Azerfighter
-						},
 					}),
 					q(50650, {	-- Smashing Zalamar
 						["lvl"] = 120,
