@@ -41,9 +41,21 @@ _.Toys =
 		i(86575), 		-- Chalice of Secrets
 		i(163744),		-- Coldrage's Cooler
 		i(140314),		-- Crab Shank
-		i(108633), 		-- Crashin' Thrashin' Cannon Controller
-		i(108634), 		-- Crashin' Thrashin' Mortar Controller
-		i(108631), 		-- Crashin' Thrashin' Roller Controller
+		i(108633, {		-- Crashin' Thrashin' Cannon Controller
+			crit(4, {	-- Crashin' Thrashin' Cannon
+				["achievementID"] = 10353,	-- Iron Armada
+			}),
+		}),
+		i(108634, {	-- Crashin' Thrashin' Mortar Controller
+			crit(3, {	-- Crashin' Thrashin' Mortar
+				["achievementID"] = 10353,	-- Iron Armada
+			}),
+		}),
+		i(108631, {	-- Crashin' Thrashin' Roller Controller
+			crit(5, {	-- Crashin' Thrashin' Roller
+				["achievementID"] = 10353,	-- Iron Armada
+			}),
+		}),
 		i(122117), 		-- Cursed Feather of Ikzan
 		i(130171),		-- Cursed Orb
 		i(134024), 		-- Cursed Swabby Helmet

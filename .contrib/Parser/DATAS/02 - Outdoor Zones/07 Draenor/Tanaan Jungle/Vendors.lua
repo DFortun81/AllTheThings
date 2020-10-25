@@ -227,6 +227,15 @@ _.Zones =
 								follower(580),	-- Pallas
 							},
 						}),
+						i(124094, {	-- Major Blackfang Challenge Totem
+							["description"] = "\nUsed to summon Rendarr.\n\n",
+						}),
+						i(124093, {	-- Minor Blackfang Challenge Totem
+							["description"] = "\nUsed to summon Akrrilo.\n\n",
+						}),
+						i(124095, {	-- Prime Blackfang Challenge Totem
+							["description"] = "\nUsed to summon Eyepiercer.\n\n",
+						}),
 						i(128449),	-- Saberstalkers Tabard
 						i(128477, {	-- Savage Cub (PET!)
 							["cost"] = { { "i", 124099, 1500 }, },	-- 1,500x Blackfang Claw

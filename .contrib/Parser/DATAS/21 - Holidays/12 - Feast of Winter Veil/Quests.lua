@@ -63,7 +63,11 @@ _.Holidays = bubbleDown({["u"] = 29},
 							un(29, i(104317)),	-- Rotten Helper Box
 							-- Toys
 							un(29, i(54343)),	-- Blue Crashin' Thrashin' Racer Controller
-							un(29, i(108632)),	-- Crashin' Thrashin' Flamer Controller
+							un(29, i(108632, {	-- Crashin' Thrashin' Flamer Controller
+								crit(1, {	-- Crashin' Thrashin' Flamer
+									["achievementID"] = 10353,	-- Iron Armada
+								}),
+							})),
 							un(29, i(104318)),	-- Crashin' Thrashin' Flyer Controller
 							un(29, i(37710)),	-- Crashin' Thrashin' Racer Controller
 							un(29, i(116763)),	-- Crashin' Thrashin' Shredder Controller
@@ -263,7 +267,11 @@ _.Holidays = bubbleDown({["u"] = 29},
 							un(29, i(116689)),	-- Pineapple Lounge Cushion
 							un(29, i(116690)),	-- Safari Lounge Cushion
 							un(29, i(116763)),	-- Crashin' Thrashin' Shredder Controller
-							un(29, i(108632)),	-- Crashin' Thrashin' Flamer Controller
+							un(29, i(108632, {	-- Crashin' Thrashin' Flamer Controller
+								crit(1, {	-- Crashin' Thrashin' Flamer
+									["achievementID"] = 10353,	-- Iron Armada
+								}),
+							})),
 							un(29, i(116456)),	-- Scroll of Storytelling
 							un(29, i(54438)),	-- Tiny Blue Ragdoll
 							un(29, i(54437)),	-- Tiny Green Ragdoll

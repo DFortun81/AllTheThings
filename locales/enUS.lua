@@ -3382,6 +3382,7 @@ app.L = {
 		[241664] = "Borrowed Enchanted Spyglass",
 		[241665] = "Treasure Chest",
 		[241671] = "Forgotten Shard of the Cipher",
+		[241673] = "Looted Bleeding Hollow Treasure",
 		[241674] = "Skull of the Mad Chief",
 		[241680] = "Small Treasure Chest",
 		[241692] = "Axe of the Weeping Wolf",

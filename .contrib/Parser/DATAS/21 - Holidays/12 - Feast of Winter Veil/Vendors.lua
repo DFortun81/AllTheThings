@@ -184,7 +184,11 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(128665, {	-- Ball of Tangled Lights
 							["questID"] = 39615,
 						}),
-						i(108635),	-- Crashin' Thrashin' Killdozer Controller
+						i(108635, {	-- Crashin' Thrashin' Killdozer Controller
+							crit(2, {	-- Crashin' Thrashin' Killdozer
+								["achievementID"] = 10353,	-- Iron Armada
+							}),
+						}),
 						i(128668, {	-- Festive Outfits
 							["questID"] = 39671,
 						}),

@@ -362,11 +362,10 @@ _.Zones =
 					},
 				}),
 				q(26430, {	-- Revantusk Village
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 2771 },	-- Drum Fel
 					["coord"] = { 69.0, 34.8, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 26912,	-- The Princess Unleashed (TODO: verify. Didn't see this until after killing Myzrael)
-					["isBreadcrumb"] = true,
 				}),
 				q(26336, {	-- Shakes O'Breen
 					["provider"] = { "n", 2789 },	-- Skuerto

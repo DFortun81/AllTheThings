@@ -230,7 +230,11 @@ _.Holidays = bubbleDown({["u"] = 29},
 							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(10337),	-- Crashin' Thrashin' Flamer
-								un(29, i(108632)),	-- Crashin' Thrashin' Flamer Controller
+								un(29, i(108632, {	-- Crashin' Thrashin' Flamer Controller
+									crit(1, {	-- Crashin' Thrashin' Flamer
+										["achievementID"] = 10353,	-- Iron Armada
+									}),
+								})),
 							},
 						}),
 						i(139341, {	-- Winter Veil Gift

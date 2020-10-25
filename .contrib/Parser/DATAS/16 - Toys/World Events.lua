@@ -129,10 +129,18 @@ _.Toys =
 			["g"] = {
 				i(54343), 	-- Blue Crashin' Thrashin' Racer Controller
 				i(172223),	-- Crashin' Thrashin' Battleship [A]
-				i(108632), 	-- Crashin' Thrashin' Flamer Controller
+				i(108632, {	-- Crashin' Thrashin' Flamer Controller
+					crit(1, {	-- Crashin' Thrashin' Flamer
+						["achievementID"] = 10353,	-- Iron Armada
+					}),
+				}),
 				i(104318), 	-- Crashin' Thrashin' Flyer Controller
 				i(172222),	-- Crashin' Thrashin' Juggernaught [H]
-				i(108635), 	-- Crashin' Thrashin' Killdozer Controller
+				i(108635, {	-- Crashin' Thrashin' Killdozer Controller
+					crit(2, {	-- Crashin' Thrashin' Killdozer
+						["achievementID"] = 10353,	-- Iron Armada
+					}),
+				}),
 				i(37710), 	-- Crashin' Thrashin' Racer Controller
 				i(116763), 	-- Crashin' Thrashin' Shredder Controller
 				i(172223),	-- Crashin' Thrashin' Battleship [Alliance]
