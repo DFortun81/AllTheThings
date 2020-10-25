@@ -1210,7 +1210,7 @@ function(self)
 	settings:UpdateMode();
 	app:RefreshData();
 end);
-QuestsAccountWideCheckBox:SetATTTooltip("Enable this option to consider Quest completion across all Characters that you have logged into, rather than only considering the current Character.");
+QuestsAccountWideCheckBox:SetATTTooltip("Quest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.");
 QuestsAccountWideCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 220, 0);
 
 local RecipesCheckBox = settings:CreateCheckBox("Recipes",

@@ -188,44 +188,6 @@ namespace ATT
             #endregion
             #region Merge (for acquiring fields for the Item Database)
             /// <summary>
-            /// Merge the array data!
-            /// </summary>
-            /// <param name="item">The item!</param>
-            /// <param name="field">The field!</param>
-            /// <param name="value">The value.</param>
-            private static void MergeStringArrayData(Dictionary<string, object> item, string field, object value)
-            {
-                // Convert the data to a list of generic objects.
-                var newList = value as List<object>;
-                if (newList == null)
-                {
-                    if (value is Dictionary<object, object> dict) newList = dict.Values.ToList();
-                    else return;
-                }
-
-                // Attempt to get the old list data.
-                List<object> oldList;
-                if (item.TryGetValue(field, out object oldData))
-                {
-                    // Convert the old data to a list of objects.
-                    oldList = oldData as List<object>;
-                }
-                else
-                {
-                    // Create a new list.
-                    item[field] = oldList = new List<object>();
-                }
-
-                // Merge the new list of data into the old data and ensure there are no duplicate values.
-                foreach (var entry in newList)
-                {
-                    var index = Convert.ToString(entry);
-                    if (oldList.Contains(index)) continue;
-                    oldList.Add(index);
-                }
-            }
-
-            /// <summary>
             /// Merge the field into the item reference if it is whitelisted.
             /// Only a couple of fields will successfully merge into an item.
             /// </summary>
@@ -389,7 +351,7 @@ namespace ATT
                     // List of String Data Type Fields (stored as List<string> for usability reasons)
                     case "timeline":
                         {
-                            MergeStringArrayData(item, field, value);
+                            Objects.MergeStringArrayData(item, field, value);
                             break;
                         }
 

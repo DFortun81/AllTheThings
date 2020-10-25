@@ -7853,9 +7853,10 @@ app.BaseVignette = {
 				and app.CollectibleQuests
 				-- must not be repeatable, unless considering repeatable quests as trackable
 				and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
-				-- must not be a breadcrumb unless it is actually available OR be in account-mode (i.e. another character to complete)
+				-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
 				-- TODO: revisit if party sync option becomes a thing
-				and ((not t.isBreadcrumb and not t.DisablePartySync) or (t.isBreadcrumbAvailable and t.isBreadcrumbAvailable == 0) or app.Settings:Get("AccountMode"));
+				and ((not t.isBreadcrumb and not t.DisablePartySync) or 
+					(app.CollectibleBreadcrumbs and ((t.isBreadcrumbAvailable or 0) == 0 or app.Settings:Get("AccountMode"))));
 		elseif key == "collected" then
 			return t.collectible and t.saved;
 		elseif key == "repeatable" then

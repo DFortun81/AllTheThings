@@ -1274,6 +1274,7 @@ namespace ATT
 
                 case "creatureId":
                 case "creatureID":
+                //case "npcID": // TODO: eventually can we consolidate both of these into just one?
                     {
                         return "creatureID";
                     }
@@ -1533,8 +1534,97 @@ namespace ATT
                     {
                         return "timeline";
                     }
-                // This field is just fine the way it is.
-                default: return field;
+
+                // tags which are accurate already
+                case "azeriteEssenceID":
+                case "buildingID":
+                case "class":
+                case "classID":
+                case "collectible":
+                case "cost":
+                case "cr":
+                case "criteriaID":
+                case "crs":
+                case "currencyID":
+                case "description":
+                case "difficulties":
+                case "difficultyID":
+                case "DisablePartySync":
+                case "displayID":
+                case "encounterID":
+                case "equippable":
+                case "factionID":
+                case "flightPathID":
+                case "followerID":
+                case "heirloomID":
+                case "hideText":
+                case "holidayID":
+                case "icon":
+                case "ignoreBonus":
+                case "ignoreSource":
+                case "instanceID":
+                case "inventoryType":
+                case "isAquatic":
+                case "isBreadcrumb":
+                case "isFlying":
+                case "isGround":
+                case "isJumping":
+                case "isRaid":
+                case "isToy":
+                case "isWorldQuest":
+                case "mapID":
+                case "maps":
+                case "missionID":
+                case "model":
+                case "modelID":
+                case "modelRotation":
+                case "modelScale":
+                case "musicRollID":
+                case "name":
+                case "nextRecipeID":
+                case "npcID": // TODO: eventually consolidate with creatureID
+                case "objectID":
+                case "order":
+                case "ordered":
+                case "petAbilityID":
+                case "previousRecipeID":
+                case "professionID":
+                case "provider":
+                case "providers":
+                case "qg":
+                case "qgs":
+                case "r": // horde/alliance faction
+                case "races":
+                case "setHeaderID":
+                case "setSubHeaderID":
+                case "setID":
+                case "sourceQuest":
+                case "sourceText":
+                case "style":
+                case "subclass":
+                case "sym":
+                case "talentID":
+                case "title":
+                case "titleID":
+                case "text":
+                case "tierID":
+                case "vignetteID":
+                case "visualID":
+
+                // metadata parser tags
+                case "_area":
+                case "_category":
+                case "_drop":
+                case "_npcs":
+                case "_quests":
+                case "_text":
+                case "_type":
+
+                    return field;
+
+                // Probably not a known tag? will get mentioned in the object/item merge method
+                default:
+                    return field;
             }
         }
         #endregion
