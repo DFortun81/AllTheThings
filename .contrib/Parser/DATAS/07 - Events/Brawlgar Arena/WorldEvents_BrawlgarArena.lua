@@ -7,6 +7,7 @@ _.WorldEvents =
 	m(503, {	-- Brawlgar Arena
 		["races"] = HORDE_ONLY,
 		["lvl"] = 120,
+		["u"] = REMOVED_FROM_GAME,
 		["icon"] = "Interface\\Icons\\INV_MISC_HEAD_ORC2_BRN",
 		["g"] = {
 			n(QUESTS, {

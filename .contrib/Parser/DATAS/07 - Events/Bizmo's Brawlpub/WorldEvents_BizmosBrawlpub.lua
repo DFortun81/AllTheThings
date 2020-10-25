@@ -11,6 +11,7 @@ _.WorldEvents =
 			499,	-- Deeprun Tram
 			500,	-- Bizmo's Brawlpub
 		},
+		["u"] = REMOVED_FROM_GAME,
 		["icon"] = "Interface\\Icons\\ability_warrior_secondwind",
 		["g"] = {
 			n(-227, {	-- Victory
