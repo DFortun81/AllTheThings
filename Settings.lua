@@ -2254,7 +2254,7 @@ TooltipLabel:SetText("Tooltips");
 TooltipLabel:Show();
 table.insert(settings.MostRecentTab.objects, TooltipLabel);
 
-local EnableTooltipInformationCheckBox = settings:CreateCheckBox("|CFFADD8E6Enable Tooltip Integrations|r",
+local EnableTooltipInformationCheckBox = settings:CreateCheckBox("|CFFADD8E6Tooltip Integrations|r",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled"));
 end,
@@ -2279,7 +2279,8 @@ function(self)
 	settings:SetTooltipSetting("DisplayInCombat", self:GetChecked());
 end);
 DisplayInCombatCheckBox:SetATTTooltip("Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.");
-DisplayInCombatCheckBox:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox, "TOPRIGHT", 150, 0);
+DisplayInCombatCheckBox:SetPoint("TOP", EnableTooltipInformationCheckBox, "TOP", 0, 0);
+DisplayInCombatCheckBox:SetPoint("LEFT", EnableTooltipInformationCheckBox.Text, "RIGHT", 4, 0);
 
 
 local TooltipShowLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
@@ -2339,7 +2340,8 @@ function(self)
 	settings:SetTooltipSetting("Coordinates", self:GetChecked());
 end);
 ShowCoordinatesCheckBox:SetATTTooltip("Enable this option if you want to see coordinates in the tooltip when hovering over an entry in the mini list.");
-ShowCoordinatesCheckBox:SetPoint("TOPLEFT", ShowCollectionProgressCheckBox, "TOPRIGHT", 120, 0);
+ShowCoordinatesCheckBox:SetPoint("TOP", ShowCollectionProgressCheckBox, "TOP", 0, 0);
+ShowCoordinatesCheckBox:SetPoint("LEFT", DisplayInCombatCheckBox, "LEFT", 0, 0);
 
 local ShowDescriptionsCheckBox = settings:CreateCheckBox("Descriptions",
 function(self)
@@ -2444,7 +2446,7 @@ OnlyShowRelevantSharedAppearancesCheckBox:SetATTTooltip("Enable this option if y
 OnlyShowRelevantSharedAppearancesCheckBox:SetPoint("TOPLEFT", IncludeOriginalSourceCheckBox, "BOTTOMLEFT", 0, 4);
 
 
-local ShowClassRequirementsCheckBox = settings:CreateCheckBox("Class Requirements",
+local ShowClassRequirementsCheckBox = settings:CreateCheckBox("Classes",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("ClassRequirements"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2461,7 +2463,7 @@ end);
 ShowClassRequirementsCheckBox:SetATTTooltip("Enable this option if you want to see the full list of class requirements in the tooltip.");
 ShowClassRequirementsCheckBox:SetPoint("TOPLEFT", ShowKnownByCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowRaceRequirementsCheckBox = settings:CreateCheckBox("Race Requirements",
+local ShowRaceRequirementsCheckBox = settings:CreateCheckBox("Races",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("RaceRequirements"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2478,7 +2480,7 @@ end);
 ShowRaceRequirementsCheckBox:SetATTTooltip("Enable this option if you want to see the full list of race requirements in the tooltip.");
 ShowRaceRequirementsCheckBox:SetPoint("TOPLEFT", ShowClassRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowSpecializationRequirementsCheckBox = settings:CreateCheckBox("Specialization Info",
+local ShowSpecializationRequirementsCheckBox = settings:CreateCheckBox("Specializations",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SpecializationRequirements"));
 	if not settings:GetTooltipSetting("Enabled") then
@@ -2514,7 +2516,8 @@ SummarizeThingsCheckBox:SetPoint("TOPLEFT", ShowSpecializationRequirementsCheckB
 
 -- This creates the "Contains Count" slider.
 local ContainsSlider = CreateFrame("Slider", "ATTSummarizeThingsSlider", settings, "OptionsSliderTemplate");
-ContainsSlider:SetPoint("TOPLEFT", SummarizeThingsCheckBox, "TOPRIGHT", 123, 0);
+ContainsSlider:SetPoint("TOP", SummarizeThingsCheckBox, "TOP", 0, 0);
+ContainsSlider:SetPoint("LEFT", DisplayInCombatCheckBox, "LEFT", 0, 0);
 table.insert(settings.MostRecentTab.objects, ContainsSlider);
 settings.ContainsSlider = ContainsSlider;
 ContainsSlider.tooltipText = 'Use this to customize the number of Summarized Things to show in the tooltip.\n\nDefault: 25';
@@ -2567,7 +2570,8 @@ ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", SummarizeThingsCheckBox, "BOTTOM
 
 -- This creates the "Locations" slider.
 local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
-LocationsSlider:SetPoint("TOPLEFT", ShowSourceLocationsCheckBox, "TOPRIGHT", 123, 0);
+LocationsSlider:SetPoint("TOP", ShowSourceLocationsCheckBox, "TOP", 0, 0);
+LocationsSlider:SetPoint("LEFT", ContainsSlider, "LEFT", 0, 0);
 table.insert(settings.MostRecentTab.objects, LocationsSlider);
 settings.LocationsSlider = LocationsSlider;
 LocationsSlider.tooltipText = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
@@ -2694,7 +2698,7 @@ ShowRemainingCheckBox:SetATTTooltip("Enable this option if you want to see the n
 ShowRemainingCheckBox:SetPoint("TOPLEFT", MiscLabel, "BOTTOMLEFT", 4, 0);
 
 local DebuggingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-DebuggingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -220, -8);
+DebuggingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -210, -8);
 DebuggingLabel:SetJustifyH("LEFT");
 DebuggingLabel:SetText("Debugging");
 DebuggingLabel:Show();
@@ -2768,12 +2772,13 @@ end
 -- This creates the "Main List Scale" slider.
 local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", settings, "OptionsSliderTemplate");
 MainListScaleSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
-MainListScaleSlider:SetPoint("TOP", last, "BOTTOM", 0, -10);
+MainListScaleSlider:SetPoint("TOP", last, "BOTTOM", 0, -14);
+MainListScaleSlider:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
 table.insert(settings.MostRecentTab.objects, MainListScaleSlider);
 settings.MainListScaleSlider = MainListScaleSlider;
 MainListScaleSlider.tooltipText = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
 MainListScaleSlider:SetOrientation('HORIZONTAL');
-MainListScaleSlider:SetWidth(280);
+-- MainListScaleSlider:SetWidth(280);
 MainListScaleSlider:SetHeight(20);
 MainListScaleSlider:SetValueStep(0.1);
 MainListScaleSlider:SetMinMaxValues(0.1, 4);
@@ -2794,11 +2799,12 @@ end);
 local MiniListScaleSlider = CreateFrame("Slider", "ATTMiniListScaleSlider", settings, "OptionsSliderTemplate");
 MiniListScaleSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
 MiniListScaleSlider:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, -24);
+MiniListScaleSlider:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
 table.insert(settings.MostRecentTab.objects, MiniListScaleSlider);
 settings.MiniListScaleSlider = MiniListScaleSlider;
 MiniListScaleSlider.tooltipText = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
 MiniListScaleSlider:SetOrientation('HORIZONTAL');
-MiniListScaleSlider:SetWidth(280);
+-- MiniListScaleSlider:SetWidth(280);
 MiniListScaleSlider:SetHeight(20);
 MiniListScaleSlider:SetValueStep(0.1);
 MiniListScaleSlider:SetMinMaxValues(0.1, 4);
