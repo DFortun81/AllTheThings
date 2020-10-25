@@ -43,16 +43,16 @@ _.Zones =
 				},
 			}),
 			n(QUESTS, bubbleDown({
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
+					-- ["altQuests"] = {
+						-- 62808,	-- 120 character prior to 9.0
+					-- },
 				}, {
 				cl(DRUID, {
 					["g"] = bubbleDown({
 							["classes"] = { DRUID },
-							["altQuests"] = {
-								62808,	-- 120 character prior to 9.0
-							},
+							-- ["altQuests"] = {
+								-- 62808,	-- 120 character prior to 9.0
+							-- },
 						}, {
 						q(59350, {	-- A Druid's Form (A)
 							["coord"] = { 52.0, 55.2, 1409 },
@@ -77,9 +77,9 @@ _.Zones =
 				cl(HUNTER, {
 					["g"] = bubbleDown({
 							["classes"] = { HUNTER },
-							["altQuests"] = {
-								62808,	-- 120 character prior to 9.0
-							},
+							-- ["altQuests"] = {
+								-- 62808,	-- 120 character prior to 9.0
+							-- },
 						}, {
 						q(59342, {	-- Taming the Wilds (A)
 							["coord"] = { 62.7, 69.8, 1409 },
@@ -140,9 +140,9 @@ _.Zones =
 				cl(MAGE, {
 					["g"] = bubbleDown({
 							["classes"] = { MAGE },
-							["altQuests"] = {
-								62808,	-- 120 character prior to 9.0
-							},
+							-- ["altQuests"] = {
+								-- 62808,	-- 120 character prior to 9.0
+							-- },
 						}, {
 						q(59352, {	-- A Mage's Knowledge (A)
 							["coord"] = { 52.0, 55.2, 1409 },
@@ -179,9 +179,9 @@ _.Zones =
 				cl(MONK, {
 					["g"] = bubbleDown({
 							["classes"] = { MONK },
-							["altQuests"] = {
-								62808,	-- 120 character prior to 9.0
-							},
+							-- ["altQuests"] = {
+								-- 62808,	-- 120 character prior to 9.0
+							-- },
 						}, {
 						q(59339, {	-- Enhanced Combat Tactics (A - Monk)
 							["coord"] = { 58.3, 74.6, 1409 },
@@ -230,9 +230,9 @@ _.Zones =
 				cl(PALADIN, {
 					["g"] = bubbleDown({
 							["classes"] = { PALADIN },
-							["altQuests"] = {
-								62808,	-- 120 character prior to 9.0
-							},
+							-- ["altQuests"] = {
+								-- 62808,	-- 120 character prior to 9.0
+							-- },
 						}, {
 						q(58923, {	-- A Paladin's Service (A)
 							["coord"] = { 52.0, 55.4, 1409 },
@@ -264,9 +264,9 @@ _.Zones =
 				cl(PRIEST, {
 					["g"] = bubbleDown({
 							["classes"] = { PRIEST },
-							["altQuests"] = {
-								62808,	-- 120 character prior to 9.0
-							},
+							-- ["altQuests"] = {
+								-- 62808,	-- 120 character prior to 9.0
+							-- },
 						}, {
 						q(58953, {	-- A Priest's End (A)
 							["coord"] = { 52.0, 55.2, 1409 },
@@ -297,9 +297,9 @@ _.Zones =
 				cl(ROGUE, {
 					["g"] = bubbleDown({
 							["classes"] = { ROGUE },
-							["altQuests"] = {
-								62808,	-- 120 character prior to 9.0
-							},
+							-- ["altQuests"] = {
+								-- 62808,	-- 120 character prior to 9.0
+							-- },
 						}, {
 						q(58917, {	-- A Rogue's End (A)
 							["coord"] = { 52.0, 55.2, 1409 },
@@ -330,9 +330,9 @@ _.Zones =
 				cl(SHAMAN, {
 					["g"] = bubbleDown({
 							["classes"] = { SHAMAN },
-							["altQuests"] = {
-								62808,	-- 120 character prior to 9.0
-							},
+							-- ["altQuests"] = {
+								-- 62808,	-- 120 character prior to 9.0
+							-- },
 						}, {
 						q(59002, {	-- A Shaman's Duty (A)
 							["coord"] = { 52.3, 55.6, 1409 },
@@ -353,9 +353,9 @@ _.Zones =
 				cl(WARLOCK, {
 					["g"] = bubbleDown({
 							["classes"] = { WARLOCK },
-							["altQuests"] = {
-								62808,	-- 120 character prior to 9.0
-							},
+							-- ["altQuests"] = {
+								-- 62808,	-- 120 character prior to 9.0
+							-- },
 						}, {
 						q(58962, {	-- A Warlock's Bargain (A)
 							["coord"] = { 52.0, 55.2, 1409 },
@@ -374,9 +374,9 @@ _.Zones =
 				cl(WARRIOR, {
 					["g"] = bubbleDown({
 							["classes"] = { WARRIOR },
-							["altQuests"] = {
-								62808,	-- 120 character prior to 9.0
-							},
+							-- ["altQuests"] = {
+								-- 62808,	-- 120 character prior to 9.0
+							-- },
 						}, {
 						q(58914, {	-- A Warrior's End (A)
 							["coord"] = { 52.0, 55.2, 1409 },
@@ -608,7 +608,7 @@ _.Zones =
 					["altQuests"] = {	-- Optional Quest, becomes unavailable once leaving the zone
 						55991,	-- An End to Beginnings [A]
 						59985,	-- An End to Beginnings [H]
-						62808,	-- 120 character prior to 9.0, bubbleDown doesn't merge with existing tag
+						-- 62808,	-- 120 character prior to 9.0, bubbleDown doesn't merge with existing tag
 					},
 				}),
 				q(55764, {	-- Harpy Culling (A)
@@ -634,7 +634,7 @@ _.Zones =
 					["altQuests"] = {	-- Optional Quest, becomes unavailable once leaving the zone
 						55991,	-- An End to Beginnings [A]
 						59985,	-- An End to Beginnings [H]
-						62808,	-- 120 character prior to 9.0, bubbleDown doesn't merge with existing tag
+						-- 62808,	-- 120 character prior to 9.0, bubbleDown doesn't merge with existing tag
 					},
 					["g"] = {
 						i(175229, {	-- Expeditionary Cloth Mantle
@@ -1030,7 +1030,7 @@ _.Zones =
 			})),
 			n(RARES, bubbleDown({
 					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
+						-- 62808,	-- 120 character prior to 9.0
 						55991,	-- An End to Beginnings [A]
 						59985,	-- An End to Beginnings [H]
 					},
@@ -1049,7 +1049,7 @@ _.Zones =
 			})),
 			n(TREASURES, bubbleDown({
 					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
+						-- 62808,	-- 120 character prior to 9.0
 						55991,	-- An End to Beginnings [A]
 						59985,	-- An End to Beginnings [H]
 					},
