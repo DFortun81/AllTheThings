@@ -554,6 +554,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(39285),	-- Handgrips of Turmoil
 							i(39279),	-- Blistered Belt of Decay
 							i(39280),	-- Leggings of Innumerable Barbs
+							i(39277),	-- Sealing Ring of Grobbulus
 						},
 					})),
 					cr(15932, e(1612, {	-- Gluth

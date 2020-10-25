@@ -205,6 +205,24 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161371),	-- Galebreaker's Sabatons
 				}),
 			}),
+		--[[		
+				Ally/horde?
+				["races"] = ALLIANCE_ONLY,
+				["races"] = HORDE_ONLY,
+update=>	e(2141, {	-- Nathanos Blightcaller
+				["isWeekly"] = true,
+update=>		["questID"] = xxxxx,	-- Nathanos Blightcaller (WQ)
+				["isRaid"] = true,
+update=>		["coord"] = { bottom left yo!, 23 },
+				["maps"] = {
+					23,	-- Eastern Plaguelands
+				},
+				["cr"] = 172497,	-- Nathanos Blightcaller
+update=>		["g"] = bubbleDown({["modID"] = 3}, {
+
+				}),
+			}),
+		--]]
 			e(2139, {	-- T'zane <The Soul Terror>
 				["isWeekly"] = true,
 				["questID"] = 52181,	-- Smoke and Shadow (WQ)
