@@ -687,7 +687,7 @@ end);
 DebugModeCheckBox:SetATTTooltip("Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.");
 DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -1);
 
-local UniqueModeCheckBox = settings:CreateCheckBox("|CFFADD8E6UNIQUE|r (All Appearances)",
+local UniqueModeCheckBox = settings:CreateCheckBox("|CFFADD8E6Unique Only|r (All Appearances)",
 function(self)
 	self:SetChecked(not settings:Get("Completionist"));
 	if not settings:Get("Thing:Transmog") and not settings:Get("DebugMode") and not settings:Get("AccountMode") then
@@ -704,23 +704,23 @@ end);
 UniqueModeCheckBox:SetATTTooltip("Enable this Mode to consider all Items which share the same Appearance to be collected once that specific Appearance has been collected.\n\nItems 'Collected' through this mode will be marked with an asterisk (*). This means that you haven't collected that specific Source of the Appearance yet.");
 UniqueModeCheckBox:SetPoint("TOPLEFT", DebugModeCheckBox, "BOTTOMLEFT", 0, 4);
 
-local CompletionistModeCheckBox = settings:CreateCheckBox("|CFFADD8E6COMPLETIONIST|r (All Sources)",
-function(self)
-	self:SetChecked(settings:Get("Completionist"));
-	if not settings:Get("Thing:Transmog") and not settings:Get("DebugMode") and not settings:Get("AccountMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetCompletionistMode(self:GetChecked());
-end);
-CompletionistModeCheckBox:SetATTTooltip("Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.");
-CompletionistModeCheckBox:SetPoint("LEFT", UniqueModeCheckBox.Text, "RIGHT", 4, 0);
-CompletionistModeCheckBox:SetPoint("TOP", UniqueModeCheckBox, "TOP", 0, 0);
+-- local CompletionistModeCheckBox = settings:CreateCheckBox("|CFFADD8E6Completionist|r (All Sources)",
+-- function(self)
+	-- self:SetChecked(settings:Get("Completionist"));
+	-- if not settings:Get("Thing:Transmog") and not settings:Get("DebugMode") and not settings:Get("AccountMode") then
+		-- self:Disable();
+		-- self:SetAlpha(0.2);
+	-- else
+		-- self:Enable();
+		-- self:SetAlpha(1);
+	-- end
+-- end,
+-- function(self)
+	-- settings:SetCompletionistMode(self:GetChecked());
+-- end);
+-- CompletionistModeCheckBox:SetATTTooltip("Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.");
+-- CompletionistModeCheckBox:SetPoint("LEFT", UniqueModeCheckBox.Text, "RIGHT", 4, 0);
+-- CompletionistModeCheckBox:SetPoint("TOP", UniqueModeCheckBox, "TOP", 0, 0);
 
 local MainOnlyModeCheckBox = settings:CreateCheckBox(L["I_ONLY_CARE_ABOUT_MY_MAIN"],
 function(self)
