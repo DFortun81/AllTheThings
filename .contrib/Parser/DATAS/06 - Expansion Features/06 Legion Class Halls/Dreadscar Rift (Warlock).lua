@@ -77,6 +77,9 @@ _.ExpansionFeatures =
 						["lvl"] = 103,
 						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 					}),
+					q(45989, {	-- An Urgent Warning
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(41750, {	-- Champion: Calydus
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
 						["classes"] = { WARLOCK },
@@ -123,6 +126,9 @@ _.ExpansionFeatures =
 						["coord"] = { 66.3, 46.2, 717 },
 						["lvl"] = 101,
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
+					}),
+					q(45990, {	-- Investigate the Broken Shore
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(46131, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
@@ -226,7 +232,6 @@ _.ExpansionFeatures =
 					q(41767),	-- A Daring Rescue
 					q(43414),	-- A Hero's Weapon
 					q(44099),	-- A Mutual Friend
-					q(45989),	-- An Urgent Warning
 					q(45021),	-- Answers Unknown
 					q(42098),	-- Black Rook Hold: An Unclaimed Soul
 					q(46237),	-- Bloodbringer's Missive
@@ -253,7 +258,6 @@ _.ExpansionFeatures =
 					q(46240),	-- Give Me Fuel, Give Me Fire
 					q(46238),	-- If You Build It
 					q(45794),	-- Informing the Council
-					q(45990),	-- Investigate the Broken Shore
 					q(42103),	-- Let it Feed
 					q(41793),	-- Lulubelle on Loan
 					q(41769),	-- Mad Ernie the Alchemist

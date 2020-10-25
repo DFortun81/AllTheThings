@@ -232,9 +232,9 @@ _.ExpansionFeatures =
 						["description"] = "Granted immediately upon return to the order hall."
 					}),
 					q(45997, {	-- An Urgent Warning
-						["u"] = REMOVED_FROM_GAME,
-						["classes"] = { MAGE },
 						["provider"] = { "n", 118428 },	-- Injured Conjuror
+						["classes"] = { MAGE },
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(42433, {	-- Ancient Magic
 						["coord"] = { 74.5, 63.0, 734 },
@@ -546,11 +546,11 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(45998, {	-- Investigate the Broken Shore
-						["u"] = REMOVED_FROM_GAME,
-						["coord"] = { 80.9, 63.1, 734 },
-						["classes"] = { MAGE },
-						["provider"] = { "n", 108515 },	-- Archmage Melis
 						["sourceQuest"] = 45997,	-- An Urgent Warning
+						["provider"] = { "n", 108515 },	-- Archmage Melis
+						["classes"] = { MAGE },
+						["coord"] = { 80.9, 63.1, 734 },
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(42451, {	-- Kalec's Plan
 						["coord"] = { 80.9, 63.0, 734 },

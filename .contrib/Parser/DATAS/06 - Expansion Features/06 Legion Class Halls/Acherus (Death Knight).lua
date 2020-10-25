@@ -48,6 +48,9 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42537, -- The King Rises
 					}),
+					q(46030, {	-- An Urgent Warning
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(40930, {	-- Apocalypse [Unholy]
 						["classes"] = { DEATHKNIGHT },
 					}),
@@ -169,6 +172,9 @@ _.ExpansionFeatures =
 					}),
 					q(43877, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(46031, {	-- Investigate the Broken Shore
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(39757, {	-- Keeping Your Edge
 						["provider"] = { "n", 97111 }, -- Illanna Dreadmoore

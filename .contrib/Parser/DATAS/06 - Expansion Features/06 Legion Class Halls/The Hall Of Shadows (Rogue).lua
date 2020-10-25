@@ -155,6 +155,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 40839,	-- The Final Shadow
 					}),
+					q(45991, {	-- An Urgent Warning
+						["provider"] = { "n", 118424 },	-- Injured Bandit
+						["classes"] = { ROGUE },
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(44034, {	-- Another Worthy Blade
 						["lvl"] = 102,
 						["coord"] = { 41.3, 78.1, 626 },
@@ -392,6 +397,11 @@ _.ExpansionFeatures =
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47603,	-- The Mysterious, Magnificent Al'Abas
+					}),
+					q(45992, {	-- Investigate the Broken Shore
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["classes"] = { ROGUE },
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(46129, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,

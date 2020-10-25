@@ -31,7 +31,9 @@ _.ExpansionFeatures =
 					q(40957),	-- A Strong Right Hand
 					q(42436),	-- Aiding Our Allies
 					q(41053),	-- Altar of the Eternal Hunt
-					q(46022),	-- An Urgent Warning
+					q(46022, {	-- An Urgent Warning
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(42404, {	-- Assisting the Archmage
 						["maps"] = { 680 },	-- Suramar
 						["classes"] = { HUNTER },
@@ -65,7 +67,9 @@ _.ExpansionFeatures =
 					q(42659),	-- In Defense of Dalaran
 					q(42405),	-- Informing Our Allies
 					q(41047),	-- Infused with Power
-					q(46023),	-- Investigate the Broken Shore
+					q(46023, {	-- Investigate the Broken Shore
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(42689),	-- Knowing Our Enemy
 					q(46130, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,

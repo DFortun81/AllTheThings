@@ -109,10 +109,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 108961 },	-- Sergeant Dalton
 					}),
 					q(45986, {	-- An Urgent Warning
-						["u"] = REMOVED_FROM_GAME,
-						["classes"] = { WARRIOR },
-						["provider"] = { "n", 118406 },	-- Injured Shieldmaiden
 						["isBreadcrumb"] = true,
+						["provider"] = { "n", 118406 },	-- Injured Shieldmaiden
+						["classes"] = { WARRIOR },
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(44850, {	-- Arming the Army
 						["maps"] = { 649 },	-- Helheim
@@ -283,11 +283,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 111741 },	-- Fjornson Stonecarver
 					}),
 					q(45987, {	-- Investigate the Broken Shore
-						["u"] = REMOVED_FROM_GAME,
-						["coord"] = { 59.7, 13.4, 695 },
-						["classes"] = { WARRIOR },
-						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
 						["sourceQuest"] = 45986,	-- An Urgent Warning
+						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
+						["classes"] = { WARRIOR },
+						["coord"] = { 59.7, 13.4, 695 },
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(42204, {	-- Jorhuttam
 						["maps"] = { 650 },	-- Highmountain

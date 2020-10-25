@@ -206,12 +206,6 @@ _.Zones =
 					["provider"] = { "n", 54922 },	-- Master Stone Fist
 					["coord"] = { 43.2, 24.7, 371 },
 				}),
-				q(30063, {	-- Behind the Masks
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 57319 },	-- Elder Sage Storm-Sing
-					["coord"] = { 53.8, 61.8, 371 },
-					["isDaily"] = true,
-				}),
 				q(29941, {	-- Beyond the Horizon
 					["sourceQuests"] = { 29936 },	-- Instant Messaging
 					["provider"] = { "n", 56339 },	-- General Nazgrim
@@ -1482,12 +1476,6 @@ _.Zones =
 					["sourceQuests"] = { 29930 },	-- What's Mined is Yours
 					["provider"] = { "n", 56346 },	-- Foreman Mann
 					["coord"] = { 50.9, 27.0, 371 },
-				}),
-				q(30067, {	-- The Shadow of Doubt
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
-					["coord"] = { 53.8, 61.8, 371 },
-					["isDaily"] = true,
 				}),
 				q(29865, {	-- The Silkwood Road
 					["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom

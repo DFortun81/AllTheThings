@@ -268,10 +268,6 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 92909 },	-- Lord Maxwell Tyrosus
 				}),
-				q(45991, {	-- An Urgent Warning
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 118424 },	-- Injured Bandit
-				}),
 				q(45482, {	-- Arcane: Fate of the Tideskorn
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
@@ -890,10 +886,6 @@ _.Zones =
 				q(40995, {	-- Injection of Power
 					["classes"] = { ROGUE },
 					["provider"] = { "n", 102594 },	-- Marin Noggenfogger
-				}),
-				q(45992, {	-- Investigate the Broken Shore
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
 				q(44547, {	-- Isle Hopping
 					["isBreadcrumb"] = true,

@@ -85,7 +85,7 @@ _.ExpansionFeatures =
 						["maps"] = { 641 },	-- Val'sharah
 					}),
 					q(46026, {	-- An Urgent Warning
-						["u"] = REMOVED_FROM_GAME,
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(43980, {	-- Another Weapon of Old
 						["classes"] = { DRUID },
@@ -469,6 +469,7 @@ _.ExpansionFeatures =
 					}),
 					q(46027, {	-- Investigate the Broken Shore
 						["isBreadcrumb"] = true,
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(40784, {	-- Its Rightful Place
 						["classes"] = { DRUID },

@@ -77,6 +77,9 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 47137 },	-- Champions of Legionfall (must be in log)
 						["lvl"] = 110,
 					}),
+					q(45993, {	-- An Urgent Warning
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(41803, {	-- Asking a Favor (Altruis)
 						["maps"] = { 627 },
 						["classes"] = { DEMONHUNTER },
@@ -773,7 +776,6 @@ _.ExpansionFeatures =
 
 					-- unconfirmed/unsourced
 					q(44057),	-- A "Noble" Event
-					q(45993),	-- An Urgent Warning
 					q(44223),	-- Champion Armaments
 					q(42653, {	-- Champion: Akama
 						["provider"] = { "n", 108239 },	-- Akama
@@ -783,7 +785,9 @@ _.ExpansionFeatures =
 					}),
 					q(41064),	-- Cursed Forge of the Nathrezim
 					q(44226),	-- Fate Favors Us
-					q(45994),	-- Investigate the Broken Shore
+					q(45994, {	-- Investigate the Broken Shore
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(46333),	-- Livin' on the Ledge
 					q(41096),	-- Time is of the Essence
 					q(42131),	-- Unexpected Visitors

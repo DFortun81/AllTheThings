@@ -608,7 +608,6 @@ _.Zones =
 				q(43573),	-- Advancing the War Effort
 				q(43928),	-- Aggregates of Anguish
 				q(46719),	-- Amal'thazad's Message
-				q(46030),	-- An Urgent Warning
 				q(45021),	-- Answers Unknown
 				q(43962),	-- Blades of Destiny
 				q(44550),	-- Called to Acherus
@@ -665,7 +664,6 @@ _.Zones =
 				q(40136),	-- Immaculate Stonehide Leather
 				q(40151),	-- Immaculate Stormscale
 				q(45794),	-- Informing the Council
-				q(46031),	-- Investigate the Broken Shore
 				q(39757),	-- Keeping Your Edge
 				q(44082),	-- Knights of the Ebon Blade
 				q(46688),	-- Leather of the Ancients

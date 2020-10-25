@@ -982,7 +982,6 @@ _.Zones =
 				q(39646),	-- Albino Elderhorn
 				q(41053),	-- Altar of the Eternal Hunt
 				q(40413),	-- Amateur Hunters
-				q(46022),	-- An Urgent Warning
 				q(42505),	-- Arcanist Shal'iman
 				q(41823),	-- Ashes to Ashes
 				q(42404),	-- Assisting the Archmage
@@ -1051,7 +1050,6 @@ _.Zones =
 				q(42405),	-- Informing Our Allies
 				q(41047),	-- Infused with Power
 				q(42376),	-- Inquisitor Tivos
-				q(46023),	-- Investigate the Broken Shore
 				q(43957),	-- Jade Darkhaven
 				q(43815),	-- Karthax
 				q(39989),	-- Keepers of the Hammer

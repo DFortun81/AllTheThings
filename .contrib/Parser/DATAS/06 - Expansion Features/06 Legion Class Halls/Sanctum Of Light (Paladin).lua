@@ -20,7 +20,6 @@ _.ExpansionFeatures =
 					q(42866),	-- A Sign From The Sky
 					q(43491),	-- Allies of the Light
 					q(38710),	-- An Urgent Gathering
-					q(45974),	-- An Urgent Warning
 					q(45890),	-- Ancestors and Enemies (also warrior?)
 					q(43493),	-- Black Rook Hold: Lord Ravencrest (also priest?)
 					q(44220, {	-- Blessing of the Order
@@ -38,7 +37,6 @@ _.ExpansionFeatures =
 					q(45147),	-- Felstone Destruction (and warrior?)
 					q(39722),	-- Forging New Strength
 					q(42774),	-- Hope Prevails
-					q(45975),	-- Investigate the Broken Shore
 					q(45143),	-- Judgment Awaits
 					q(46074),	-- Leather to Legendary
 					q(43698),	-- Lumenstone
@@ -84,6 +82,9 @@ _.ExpansionFeatures =
 							42811,	-- We Meet at Light's Hope
 						},
 					}),
+					q(45974, {	-- An Urgent Warning
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(44250, {	-- Champion of the Light
 						i(139693),	-- Crown of the Silver Hand
 					}),
@@ -96,6 +97,9 @@ _.ExpansionFeatures =
 					}),
 					q(43883, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(45975, {	-- Investigate the Broken Shore
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(46132, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,

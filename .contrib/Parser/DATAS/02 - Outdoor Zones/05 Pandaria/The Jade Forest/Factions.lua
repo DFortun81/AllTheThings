@@ -16,7 +16,6 @@ _.Zones =
 						-- verify if the following dailies are removed:
 							-- The Trainer's Challenge: Ace Longpaw (31717)
 							-- The Trainer's Challenge: Ningna Darkwheel (31719)
-							-- The Trainer's Challenge: Qua-Ro Whitebrow (31721)
 						-- verify if the following dailies exist independent of completion of other dailies:
 							-- Pooped (31716), got credit for this + the 31704 version of "Pooped" when completing 30150, "Sweet as Honey" *** MUST STILL HAVE A HATCHLING ***
 						n(QUESTS, {
@@ -377,10 +376,9 @@ _.Zones =
 								["isDaily"] = true,
 							}),
 							q(31721, {	-- The Trainer's Challenge: Qua-Ro Whitebrow
-								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
-								["coord"] = { 57.6, 44.8, 371 },
 								["isDaily"] = true,
+								["coord"] = { 57.6, 44.8, 371 },
 							}),
 							q(31720, {	-- The Trainer's Challenge: Suchi the Sweet
 								["minReputation"] = { 1271, REVERED },
@@ -465,6 +463,11 @@ _.Zones =
 					["collectible"] = false,
 					["icon"] = "Interface\\Icons\\achievement_faction_celestials",
 					["g"] = {
+						q(30063, {	-- Behind the Masks
+							["provider"] = { "n", 57319 },	-- Elder Sage Storm-Sing
+							["isDaily"] = true,
+							["coord"] = { 53.8, 61.8, 371 },
+						}),
 						q(30068, {	-- Flames of the Void
 						--	may also require "Saving the Sutras" and "The Darkness Around Us"
 							["sourceQuests"] = { 30066 },	-- Hidden Power
@@ -486,6 +489,11 @@ _.Zones =
 							["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
 							["isDaily"] = true,
 							["coord"] = { 53.9, 61.9, 371 },
+						}),
+						q(30067, {	-- The Shadow of Doubt
+							["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
+							["isDaily"] = true,
+							["coord"] = { 53.8, 61.8, 371 },
 						}),
 					},
 				}),

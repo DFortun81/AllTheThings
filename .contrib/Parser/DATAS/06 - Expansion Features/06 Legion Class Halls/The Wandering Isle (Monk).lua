@@ -267,6 +267,9 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40634 },	-- Thunder on the Sands
 						["maps"] = { 1527 },	-- Uldum
 					}),
+					q(46025, {	-- Investigate the Broken Shore
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(42957, {	-- Journey to the East
 						["classes"] = { MONK },
 						["lvl"] = 98,
@@ -619,7 +622,6 @@ _.ExpansionFeatures =
 					q(46785),	-- Further Advancement
 					q(43060),	-- Highmountain Salmon (Repeatable hand in quest but always returns false for completed even when the overarching quest(41907) is completed)
 					q(46320),	-- Hope For a Cure
-					q(46025),	-- Investigate the Broken Shore
 					q(44238),	-- Meditations on Fate
 					q(40698),	-- Purity of Form
 					q(43061),	-- Silkweave Bandages (Repeatable hand in quest but always returns false for completed even when the overarching quest(41907) is completed)

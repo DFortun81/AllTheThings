@@ -251,6 +251,9 @@ _.ExpansionFeatures =
 						["classes"] = { PRIEST },
 						["sourceQuests"] = { 40938 },	-- The Light and the Void
 					}),
+					n(46028, {	-- An Urgent Warning
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(43383, {	-- Awakening the Light
 						["sourceQuests"] = { 43377 },	-- Halls of Valor: The Light Within
 						["classes"] = { PRIEST },
@@ -328,6 +331,9 @@ _.ExpansionFeatures =
 					}),
 					q(43884, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(46029, {	-- Investigate the Broken Shore
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(46140, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
