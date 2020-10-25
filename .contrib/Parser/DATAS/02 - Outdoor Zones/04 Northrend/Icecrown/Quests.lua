@@ -471,7 +471,7 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "n", 29799 },	-- Thassarian
 					["description"] = "On the Skybreaker.",
-					["sourceQuest"] = 13318,	-- Drag and Drop
+					["sourceQuests"] = { 13318 },	-- Drag and Drop
 				}),
 				q(13352, {	-- Drag and Drop (H)
 					["races"] = HORDE_ONLY,
@@ -936,7 +936,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 29799 },	-- Thassarian
 					["description"] = "On the Skybreaker.",
-					["sourceQuest"] = 13318,	-- Drag and Drop
+					["sourceQuests"] = { 13318 },	-- Drag and Drop
 				}),
 				q(13366, {	-- Need More Info (H)
 					["races"] = HORDE_ONLY,
@@ -1015,7 +1015,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 29799 },	-- Thassarian
 					["description"] = "On the Skybreaker.",
-					["sourceQuests"] = 13318,	-- Drag and Drop
+					["sourceQuests"] = { 13318 },	-- Drag and Drop
 					["g"] = {
 						i(39372),	-- Mantle of the Dark Messenger
 						i(39414),	-- Gilly's Strangulation Gauntlets

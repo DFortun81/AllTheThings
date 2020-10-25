@@ -308,7 +308,7 @@ _.Zones =
 					["coord"] = { 29.1, 41.7, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23976 },	-- Sapper Steelring
-					["sourceQuest"] = 11188,	-- Two Wrongs...
+					["sourceQuests"] = { 11188 },	-- Two Wrongs...
 				}),
 				q(11467, {	-- Dead Man's Debt
 					["provider"] = { "n", 24541 },	-- Taruk
@@ -433,7 +433,7 @@ _.Zones =
 				q(11434, {	-- Forgotten Treasure
 					["provider"] = { "n", 24537 },	-- Handsome Terry
 					["coord"] = { 35.6, 80.2, 117 },
-					["sourceQuests"] = 11509,	-- Street "Cred"
+					["sourceQuests"] = { 11509 },	-- Street "Cred"
 				}),
 				q(11251, {	-- Fresh Legs
 					["provider"] = { "n", 24106 },	-- Scout Valory
@@ -800,7 +800,7 @@ _.Zones =
 				q(11202, {	-- Mission: Eternal Flame
 					["coord"] = { 44.4, 57.5, 117 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = 11199,	-- Report to Scout Knowles
+					["sourceQuests"] = { 11199 },	-- Report to Scout Knowles
 					["g"] = {
 						i(35889),	-- Bone-Inlaid Bracers
 						i(35888),	-- Embossed Ermine Girdle
@@ -1014,7 +1014,7 @@ _.Zones =
 					["coord"] = { 28.8, 44.1, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23749 },	-- Captain Adams
-					["sourceQuests"] = 11188,	-- Two Wrongs...
+					["sourceQuests"] = { 11188 },	-- Two Wrongs...
 				}),
 				q(11221, {	-- Reports from the Field
 					["coord"] = { 78.6, 31.2, 117 },
@@ -1096,7 +1096,7 @@ _.Zones =
 				q(11510, {	-- "Scoodles"
 					["provider"] = { "n", 24539 },	-- "Silvermoon" Harry
 					["coord"] = { 35.0, 80.9, 117 },
-					["sourceQuest"] = 11509,	-- Street "Cred"
+					["sourceQuests"] = { 11509 },	-- Street "Cred"
 				}),
 				q(11176, {	-- See to the Operations
 					["provider"] = { "n", 23891 },	-- Overseer Irena Stonemantle
@@ -1121,7 +1121,7 @@ _.Zones =
 					["coord"] = { 31.6, 41.4, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23978 },	-- Explorer Abigail
-					["sourceQuest"] = 11188,	-- Two Wrongs...
+					["sourceQuests"] = { 11188 },	-- Two Wrongs...
 				}),
 				q(11424, {	-- Shield Hill
 					["coord"] = { 53.6, 65.2, 117 },
@@ -1289,7 +1289,7 @@ _.Zones =
 				q(11469, {	-- Swabbin' Soap
 					["provider"] = { "n", 24784 },	-- Scuttle Frostprow
 					["coord"] = { 37.7, 79.5, 117 },
-					["sourceQuest"] = 11509,	-- Street "Cred" -- TODO:: verify
+					["sourceQuests"] = { 11509 },	-- Street "Cred" -- TODO:: verify
 				}),
 				q(11170, {	-- Test at Sea
 					["coord"] = { 78.5, 28.9, 117 },

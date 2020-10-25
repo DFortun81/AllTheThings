@@ -902,7 +902,7 @@ _.Zones =
 				}),
 				q(32341, {	-- Demonstrate Your Power
 					["sourceQuest"] = 32325,	-- Infiltrating the Black Temple
-					["classes"] = WARLOCK,
+					["classes"] = { WARLOCK },
 					["lvl"] = 90,
 					["maps"] = {
 						490,	-- The Black Temple (Illidari Training Grounds)

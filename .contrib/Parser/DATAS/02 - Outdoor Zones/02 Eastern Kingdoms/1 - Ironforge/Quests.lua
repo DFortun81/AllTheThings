@@ -548,11 +548,9 @@ _.Zones =
 					["sourceQuest"] = 38344,	-- Mystery Notebook
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 100,
+					["cost"] = { { "i", 122618, 5 } },	-- Misprinted Draenic Coin
 					["g"] = {
 						i(122338),	-- Ancient Heirloom Armor Casing
-					},
-					["cost"] = {
-						{ "i", 122618, 5 },	-- Misprinted Draenic Coin
 					},
 				}),
 				q(725,   {	-- Passing Word of a Threat

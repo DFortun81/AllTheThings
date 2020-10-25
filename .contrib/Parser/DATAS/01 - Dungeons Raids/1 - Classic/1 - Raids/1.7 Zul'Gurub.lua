@@ -10,11 +10,11 @@ _.Instances = { tier(1, {	-- Classic
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 58,
-		["groups"] = {
+		["g"] = {
 			faction(270, {	-- Zandalar Tribe
 				["icon"] = "Interface\\Icons\\RACIAL_TROLL_BERSERK",
 				["maps"] = { STRANGLETHORN_VALE },
-				["groups"] = {
+				["g"] = {
 					n(QUESTS, {
 						cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
 							q(8192, {	-- Animist's Caress [Druid]
@@ -25,7 +25,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19821, 1 },	-- Punctured Voodoo Doll [Druid]
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19790)),	-- Animist's Caress [Druid]
 								},
 							}),
@@ -37,7 +37,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19722, 1 },	-- Primal Hakkari Tabard
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19838)),	-- Zandalar Haruspex's Tunic
 								},
 							}),
@@ -49,7 +49,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19840)),	-- Zandalar Haruspex's Bracers
 								},
 							}),
@@ -61,7 +61,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19720, 1 },	-- Primal Hakkari Sash
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19839)),	-- Zandalar Haruspex's Belt
 								},
 							}),
@@ -70,7 +70,7 @@ _.Instances = { tier(1, {	-- Classic
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19610)),	-- Enchanted South Seas Kelp
 								},
 							}),
@@ -80,7 +80,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8110,	-- Enchanted South Seas Kelp [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19611)),	-- Enchanted South Seas Kelp
 								},
 							}),
@@ -90,7 +90,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8111,	-- Enchanted South Seas Kelp [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19612)),	-- Enchanted South Seas Kelp
 								},
 							}),
@@ -100,7 +100,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8112,	-- Enchanted South Seas Kelp [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19613)),	-- Pristine Enchanted South Seas Kelp
 								},
 							}),
@@ -114,7 +114,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19816, 1 },	-- Punctured Voodoo Doll [Hunter]
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19785)),	-- Falcon's Call [Hunter]
 								},
 							}),
@@ -126,7 +126,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19724, 1 },	-- Primal Hakkari Aegis
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19831)),	-- Zandalar Predator's Mantle
 								},
 							}),
@@ -138,7 +138,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19716, 1 },	-- Primal Hakkari Bindings
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19833)),	-- Zandalar Predator's Bracers
 								},
 							}),
@@ -150,7 +150,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19721, 1 },	-- Primal Hakkari Shawl
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19832)),	-- Zandalar Predator's Belt
 								},
 							}),
@@ -159,7 +159,7 @@ _.Instances = { tier(1, {	-- Classic
 								["qg"] = 14905,		-- Falthir the Sightless
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19618)),	-- Maelstrom's Tendril
 								},
 							}),
@@ -169,7 +169,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8145,	-- The Maelstrom's Tendril [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19619)),	-- Maelstrom's Tendril
 								},
 							}),
@@ -179,7 +179,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8146,	-- The Maelstrom's Tendril [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19620)),	-- Maelstrom's Tendril
 								},
 							}),
@@ -189,7 +189,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8147,	-- The Maelstrom's Tendril [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19621)),	-- Maelstrom's Wrath
 								},
 							}),
@@ -203,7 +203,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19818, 1 },	-- Punctured Voodoo Doll [Mage]
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19787)),	-- Presence of Sight [Mage]
 								},
 							}),
@@ -215,7 +215,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19721, 1 },	-- Primal Hakkari Shawl
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19845)),	-- Zandalar Illusionist's Mantle
 								},
 							}),
@@ -227,7 +227,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19723, 1 },	-- Primal Hakkari Kossack
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(20034)),	-- Zandalar Illusionist's Robe
 								},
 							}),
@@ -239,7 +239,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19716, 1 },	-- Primal Hakkari Bindings
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19846)),	-- Zandalar Illusionist's Wraps
 								},
 							}),
@@ -248,7 +248,7 @@ _.Instances = { tier(1, {	-- Classic
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19598)),	-- Pebble of Kajaro
 								},
 							}),
@@ -258,7 +258,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8101,	-- The Pebble of Kajaro [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19599)),	-- Pebble of Kajaro
 								},
 							}),
@@ -268,7 +268,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8102,	-- The Pebble of Kajaro [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19600)),	-- Pebble of Kajaro
 								},
 							}),
@@ -278,7 +278,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8103,	-- The Pebble of Kajaro [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19601)),	-- Jewel of Kajaro
 								},
 							}),
@@ -292,7 +292,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19815, 1 },	-- Punctured Voodoo Doll [Paladin]
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19783)),	-- Syncretist's Sigil [Paladin]
 								},
 							}),
@@ -304,7 +304,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19722, 1 },	-- Primal Hakkari Tabard
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19825)),	-- Zandalar Freethinker's Breastplate
 								},
 							}),
@@ -316,7 +316,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19716, 1 },	-- Primal Hakkari Bindings
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19827)),	-- Zandalar Freethinker's Armguards
 								},
 							}),
@@ -328,7 +328,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19721, 1 },	-- Primal Hakkari Shawl
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19826)),	-- Zandalar Freethinker's Belt
 								},
 							}),
@@ -337,7 +337,7 @@ _.Instances = { tier(1, {	-- Classic
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19579)),	-- Heathen's Brand
 								},
 							}),
@@ -347,7 +347,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8045,	-- The Heathen's Brand [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19585)),	-- Heathen's Brand
 								},
 							}),
@@ -357,7 +357,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8046,	-- The Heathen's Brand [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19586)),	-- Heathen's Brand
 								},
 							}),
@@ -367,7 +367,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8047,	-- The Heathen's Brand [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19588)),	-- Hero's Brand
 								},
 							}),
@@ -381,7 +381,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19820, 1 },	-- Punctured Voodoo Doll [Priest]
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19789)),	-- Prophetic Aura [Priest]
 								},
 							}),
@@ -393,7 +393,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19724, 1 },	-- Primal Hakkari Aegis
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19841)),	-- Zandalar Confessor's Mantle
 								},
 							}),
@@ -405,7 +405,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19843)),	-- Zandalar Confessor's Wraps
 								},
 							}),
@@ -417,7 +417,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19720, 1 },	-- Primal Hakkari Sash
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19842)),	-- Zandalar Confessor's Bindings
 								},
 							}),
@@ -426,7 +426,7 @@ _.Instances = { tier(1, {	-- Classic
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19591)),	-- The Eye of Zuldazar
 								},
 							}),
@@ -436,7 +436,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8049,	-- The Eye of Zuldazar [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19592)),	-- The Eye of Zuldazar
 								},
 							}),
@@ -446,7 +446,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8050,	-- The Eye of Zuldazar [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19593)),	-- The Eye of Zuldazar
 								},
 							}),
@@ -456,7 +456,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8051,	-- The Eye of Zuldazar [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19594)),	-- The All-Seeing Eye of Zuldazar
 								},
 							}),
@@ -470,7 +470,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19814, 1 },	-- Punctured Voodoo Doll [Rogue]
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19784)),	-- Death's Embrace [Rogue]
 								},
 							}),
@@ -482,7 +482,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19719, 1 },	-- Primal Hakkari Girdle
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19835)),	-- Zandalar Madcap's Mantle
 								},
 							}),
@@ -494,7 +494,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19724, 1 },	-- Primal Hakkari Aegis
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19834)),	-- Zandalar Madcap's Tunic
 								},
 							}),
@@ -506,7 +506,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19836)),	-- Zandalar Madcap's Bracers
 								},
 							}),
@@ -515,7 +515,7 @@ _.Instances = { tier(1, {	-- Classic
 								["qg"] = 14905,		-- Falthir the Sightless
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19614)),	-- Zandalrian Shadow Talisman
 								},
 							}),
@@ -525,7 +525,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8141,	-- Zandalrian Shadow Talisman [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19615)),	-- Zandalrian Shadow Talisman
 								},
 							}),
@@ -535,7 +535,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8142,	-- Zandalrian Shadow Talisman [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19616)),	-- Zandalrian Shadow Talisman
 								},
 							}),
@@ -545,7 +545,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8143,	-- Zandalrian Shadow Talisman [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19617)),	-- Zandalrian Shadow Mastery Talisman
 								},
 							}),
@@ -559,7 +559,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19817, 1 },	-- Punctured Voodoo Doll [Shaman]
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19786)),	-- Vodouisant's Vigilant Embrace [Shaman]
 								},
 							}),
@@ -571,7 +571,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19722, 1 },	-- Primal Hakkari Tabard
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19828)),	-- Zandalar Augur's Hauberk
 								},
 							}),
@@ -583,7 +583,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19830)),	-- Zandalar Augur's Bracers
 								},
 							}),
@@ -595,7 +595,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19719, 1 },	-- Primal Hakkari Girdle
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19829)),	-- Zandalar Augur's Belt
 								},
 							}),
@@ -604,7 +604,7 @@ _.Instances = { tier(1, {	-- Classic
 								["qg"] = 14904,		-- Maywiki of Zuldazar
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19606)),	-- Vision of Voodress
 								},
 							}),
@@ -614,7 +614,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8116,	-- Vision of Voodress [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19607)),	-- Vision of Voodress
 								},
 							}),
@@ -624,7 +624,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8117,	-- Vision of Voodress [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19608)),	-- Vision of Voodress
 								},
 							}),
@@ -634,7 +634,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8118,	-- Vision of Voodress [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19609)),	-- Unmarred Vision of Voodress
 								},
 							}),
@@ -648,7 +648,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19819, 1 },	-- Punctured Voodoo Doll [Warlock]
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19788)),	-- Hoodoo Hex [Warlock]
 								},
 							}),
@@ -660,7 +660,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19720, 1 },	-- Primal Hakkari Sash
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19849)),	-- Zandalar Demoniac's Mantle
 								},
 							}),
@@ -672,7 +672,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19723, 1 },	-- Primal Hakkari Kossack
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(20033)),	-- Zandalar Demoniac's Robe
 								},
 							}),
@@ -684,7 +684,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19848)),	-- Zandalar Demoniac's Wraps
 								},
 							}),
@@ -693,7 +693,7 @@ _.Instances = { tier(1, {	-- Classic
 								["qg"] = 14903,		-- Al'tabim the All-Seeing
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19602)),	-- Kezan's Taint
 								},
 							}),
@@ -703,7 +703,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8106,	-- Kezan's Taint [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19603)),	-- Kezan's Taint
 								},
 							}),
@@ -713,7 +713,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8107,	-- Kezan's Taint [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19604)),	-- Kezan's Taint
 								},
 							}),
@@ -723,7 +723,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8108,	-- Kezan's Taint [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19605)),	-- Kezan's Unstoppable Taint
 								},
 							}),
@@ -737,7 +737,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19813, 1 },	-- Punctured Voodoo Doll [Warrior]
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19782)),	-- Presence of Might [Warrior]
 								},
 							}),
@@ -749,7 +749,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19723, 1 },	-- Primal Hakkari Kossack
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19822)),	-- Zandalar Vindicator's Breastplate
 								},
 							}),
@@ -761,7 +761,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19824)),	-- Zandalar Vindicator's Armguards
 								},
 							}),
@@ -773,7 +773,7 @@ _.Instances = { tier(1, {	-- Classic
 								["cost"] = {
 									{ "i", 19719, 1 },	-- Primal Hakkari Girdle
 								},
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19823)),	-- Zandalar Vindicator's Belt
 								},
 							}),
@@ -782,7 +782,7 @@ _.Instances = { tier(1, {	-- Classic
 								["qg"] = 14902,		-- Jin'rokh the Breaker
 								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19574)),	-- Strength of Mugamba
 								},
 							}),
@@ -792,7 +792,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8041,	-- Strength of Mount Mugamba [Friendly]
 								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19575)),	-- Strength of Mugamba
 								},
 							}),
@@ -802,7 +802,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8042,	-- Strength of Mount Mugamba [Honored]
 								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19576)),	-- Strength of Mugamba
 								},
 							}),
@@ -812,7 +812,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 8043,	-- Strength of Mount Mugamba [Revered]
 								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["groups"] = {
+								["g"] = {
 									un(REMOVED_FROM_GAME, i(19577)),	-- Rage of Mugamba
 								},
 							}),
@@ -834,7 +834,7 @@ _.Instances = { tier(1, {	-- Classic
 								{ "i", 19714, 1 },	-- Silver Hakkari Bijou
 								{ "i", 19709, 1 },	-- Yellow Hakkari Bijou
 							},
-							["groups"] = {
+							["g"] = {
 								un(REMOVED_FROM_GAME, i(19858)),	-- Zandalar Honor Token
 							}
 						}),
@@ -846,21 +846,17 @@ _.Instances = { tier(1, {	-- Classic
 								{ "i", 19880, 1 },	-- Gurubashi Head Collection
 							},
 							["lvl"] = 58,
-							["groups"] = {
-								{
-									["itemID"] = 19883,	-- Sacred Cord
+							["g"] = {
+								i(19883, {	-- Sacred Cord
 									["u"] = REMOVED_FROM_GAME,
-									["cost"] = {
-										{ "i", 19881, 5 },	-- Channeler's Head
-									},
-									["groups"] = {
-										{
-											["itemID"] = 19880,	-- Gurubashi Head Collection
+									["cost"] = { { "i", 19881, 5 } },	-- Channeler's Head
+									["g"] = {
+										i(19880, {	-- Gurubashi Head Collection
 											["u"] = REMOVED_FROM_GAME,
 											["questID"] = 8201,	-- A Collection of Heads
-										},
+										}),
 									},
-								},
+								}),
 								un(REMOVED_FROM_GAME, i(20216)),	-- Belt of Preserved Heads
 								un(REMOVED_FROM_GAME, i(20215)),	-- Belt of Shriveled Heads
 								un(REMOVED_FROM_GAME, i(20213)),	-- Belt of Shrunken Heads
@@ -877,7 +873,7 @@ _.Instances = { tier(1, {	-- Classic
 							["cost"] = {
 								{ "i", 19858, 1 },	-- Zandalar Honor Token
 							},
-							["groups"] = {
+							["g"] = {
 								un(REMOVED_FROM_GAME, i(20031)),	-- Essence Mango
 							},
 						}),
@@ -891,7 +887,7 @@ _.Instances = { tier(1, {	-- Classic
 								{ "i", 19702, 1 },	-- Vilebranch Coin
 								{ "i", 19703, 1 },	-- Witherbark Coin
 							},
-							["groups"] = {
+							["g"] = {
 								un(REMOVED_FROM_GAME, i(19858)),	-- Zandalar Honor Token
 							}
 						}),
@@ -905,7 +901,7 @@ _.Instances = { tier(1, {	-- Classic
 								{ "i", 19705, 1 },	-- Skullsplitter Coin
 								{ "i", 19706, 1 },	-- Bloodscalp Coin
 							},
-							["groups"] = {
+							["g"] = {
 								un(REMOVED_FROM_GAME, i(19858)),	-- Zandalar Honor Token
 							}
 						}),
@@ -919,7 +915,7 @@ _.Instances = { tier(1, {	-- Classic
 								{ "i", 19858, 15 },	-- Zandalar Honor Token
 							},
 							["lvl"] = 58,
-							["groups"] = {
+							["g"] = {
 								un(REMOVED_FROM_GAME, i(20077)),	-- Zandalar Signet of Might
 								un(REMOVED_FROM_GAME, i(20076)),	-- Zandalar Signet of Mojo
 								un(REMOVED_FROM_GAME, i(20078)),	-- Zandalar Signet of Serenity
@@ -928,7 +924,7 @@ _.Instances = { tier(1, {	-- Classic
 						q(8183, {	-- The Heart of Hakkar
 							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "i", 19802 },	-- The Heart of Hakkar
-							["groups"] = {
+							["g"] = {
 								un(REMOVED_FROM_GAME, i(19948)),	-- Zandalarian Hero Badge
 								un(REMOVED_FROM_GAME, i(19950)),	-- Zandalarian Hero Charm
 								un(REMOVED_FROM_GAME, i(19949)),	-- Zandalarian Hero Medallion
@@ -941,7 +937,7 @@ _.Instances = { tier(1, {	-- Classic
 							["cost"] = {
 								{ "i", 18330, 1 },	-- Arcanum of Focus
 							},
-							["groups"] = {
+							["g"] = {
 								un(REMOVED_FROM_GAME, i(22635)),	-- Savage Guard
 							},
 						}),
@@ -952,7 +948,7 @@ _.Instances = { tier(1, {	-- Classic
 							["cost"] = {
 								{ "i", 18331, 1 },	-- Arcanum of Protection
 							},
-							["groups"] = {
+							["g"] = {
 								un(REMOVED_FROM_GAME, i(22635)),	-- Savage Guard
 							},
 						}),
@@ -963,7 +959,7 @@ _.Instances = { tier(1, {	-- Classic
 							["cost"] = {
 								{ "i", 18329, 1 },	-- Arcanum of Rapidity
 							},
-							["groups"] = {
+							["g"] = {
 								un(REMOVED_FROM_GAME, i(22635)),	-- Savage Guard
 							},
 						}),
@@ -976,7 +972,7 @@ _.Instances = { tier(1, {	-- Classic
 							["cost"] = {
 								{ "i", 19858, 1 },	-- Zandalar Honor Token
 							},
-							["groups"] = {
+							["g"] = {
 								un(REMOVED_FROM_GAME, i(20080)),	-- Sheen of Zanza
 								un(REMOVED_FROM_GAME, i(20079)),	-- Spirit of Zanza
 								un(REMOVED_FROM_GAME, i(20081)),	-- Swiftness of Zanza
@@ -992,7 +988,7 @@ _.Instances = { tier(1, {	-- Classic
 								{ "i", 19699, 1 },	-- Razzashi Coin
 								{ "i", 19700, 1 },	-- Hakkari Coin
 							},
-							["groups"] = {
+							["g"] = {
 								un(REMOVED_FROM_GAME, i(19858)),	-- Zandalar Honor Token
 							}
 						}),
@@ -1001,7 +997,7 @@ _.Instances = { tier(1, {	-- Classic
 						n(14921, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 							["u"] = REMOVED_FROM_GAME,
 							["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
-							["groups"] = {
+							["g"] = {
 								un(REMOVED_FROM_GAME, i(20757)),	-- Formula: Brilliant Mana Oil
 								un(REMOVED_FROM_GAME, i(20756)),	-- Formula: Brilliant Wizard Oil
 								un(REMOVED_FROM_GAME, i(19772)),	-- Pattern: Blood Tiger Breastplate
@@ -1298,7 +1294,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19940, 1 },	-- Renataki's Tooth
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
-					["groups"] = {
+					["g"] = {
 						un(REMOVED_FROM_GAME, i(19955)),	-- Wushoolay's Charm of Nature [Druid]
 					},
 				},
@@ -1311,7 +1307,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19940, 1 },	-- Renataki's Tooth
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
-					["groups"] = {
+					["g"] = {
 						un(REMOVED_FROM_GAME, i(19954)),	-- Renataki's Charm of Trickery [Rogue]
 					},
 				},
@@ -1324,7 +1320,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19940, 1 },	-- Renataki's Tooth
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
-					["groups"] = {
+					["g"] = {
 						un(REMOVED_FROM_GAME, i(19953)),	-- Renataki's Charm of Beasts [Hunter]
 					},
 				},
@@ -1337,7 +1333,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19940, 1 },	-- Renataki's Tooth
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
-					["groups"] = {
+					["g"] = {
 						un(REMOVED_FROM_GAME, i(19957)),	-- Hazza'rah's Charm of Destruction [Warlock]
 					},
 				},
@@ -1350,7 +1346,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19940, 1 },	-- Renataki's Tooth
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
-					["groups"] = {
+					["g"] = {
 						un(REMOVED_FROM_GAME, i(19951)),	-- Gri'lek's Charm of Might [Warrior]
 					},
 				},
@@ -1363,7 +1359,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19940, 1 },	-- Renataki's Tooth
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
-					["groups"] = {
+					["g"] = {
 						un(REMOVED_FROM_GAME, i(19959)),	-- Hazza'rah's Charm of Magic [Mage]
 					},
 				},
@@ -1376,7 +1372,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19940, 1 },	-- Renataki's Tooth
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
-					["groups"] = {
+					["g"] = {
 						un(REMOVED_FROM_GAME, i(19958)),	-- Hazza'rah's Charm of Healing [Priest]
 					},
 				},
@@ -1389,7 +1385,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19940, 1 },	-- Renataki's Tooth
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
-					["groups"] = {
+					["g"] = {
 						un(REMOVED_FROM_GAME, i(19952)),	-- Gri'lek's Charm of Valor [Paladin]
 					},
 				},
@@ -1402,7 +1398,7 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 19940, 1 },	-- Renataki's Tooth
 						{ "i", 19941, 1 },	-- Wushoolay's Mane
 					},
-					["groups"] = {
+					["g"] = {
 						un(REMOVED_FROM_GAME, i(19956)),	-- Wushoolay's Charm of Spirits [Shaman]
 					},
 				},
@@ -1411,7 +1407,7 @@ _.Instances = { tier(1, {	-- Classic
 				["cost"] = {
 					{ "i", 19727, 1 },	-- Blood Scythe
 				},
-				["groups"] = {
+				["g"] = {
 					i(19726, {	-- Bloodvine
 						["u"] = REMOVED_FROM_GAME,
 					}),
@@ -1486,7 +1482,7 @@ _.Instances = { tier(1, {	-- Classic
 			o(180368, {	-- Tablet of Madness
 				["description"] = "Alchemists with 300 skill can interact with the Tablet of Madness to learn the recipe.",
 				["requireSkill"] = ALCHEMY,
-				["groups"] = {
+				["g"] = {
 					un(REMOVED_FROM_GAME, recipe(24266)),	-- Gurubashi Mojo Madness
 				},
 			}),
@@ -1495,7 +1491,7 @@ _.Instances = { tier(1, {	-- Classic
 				["cost"] = {
 					{ "i", 19931, 1 },	-- Gurubashi Mojo Madness
 				},
-				["groups"] = {
+				["g"] = {
 					un(REMOVED_FROM_GAME, n(15082, {	-- Gri'lek
 						un(REMOVED_FROM_GAME, i(19939)),	-- Gri'lek's Blood
 						un(REMOVED_FROM_GAME, i(19961)),	-- Gri'lek's Grinder
@@ -1532,7 +1528,7 @@ _.Instances = { tier(1, {	-- Classic
 			o(180366, {	-- Battered Tackle Box
 				["description"] = "Fishermen with 300 skill can interact with this to receive the quest item.",
 				["requireSkill"] = FISHING,
-				["groups"] = {
+				["g"] = {
 					q(8227, {	-- Nat's Measuring Tape
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "i", 19973 },	-- Nat's Measuring Tape
@@ -1548,7 +1544,7 @@ _.Instances = { tier(1, {	-- Classic
 					{ "i", 19974, 1 },	-- Mudskunk Lure
 					{ "i", 19975, 5 },	-- Zulian Mudskunk
 				},
-				["groups"] = {
+				["g"] = {
 					un(REMOVED_FROM_GAME, i(19945)),	-- Foror's Eyepatch
 					un(REMOVED_FROM_GAME, i(19947)),	-- Nat Pagle's Broken Reel
 					un(REMOVED_FROM_GAME, i(19944)),	-- Nat Pagle's Fish Terminator

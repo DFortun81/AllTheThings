@@ -642,7 +642,7 @@ _.Zones =
 						q(10430, {	-- Testing the Prototype
 							["provider"] = { "n", 20811 },	-- Ghabar
 							["coord"] = { 43.5, 35.1, 109 },
-							["sourceQuests"] = 10424,	-- Diagnosis: Critical
+							["sourceQuests"] = { 10424 },	-- Diagnosis: Critical
 						}),
 						q(10269, {	-- Triangulation Point One
 							["provider"] = { "n", 20084 },	-- Image of Nexus-Prince Haramad
@@ -752,7 +752,7 @@ _.Zones =
 						q(10276, {	-- Full Triangle
 							["provider"] = { "n", 20112 },	-- Wind Trader Tuluman
 							["coord"] = { 34.6, 37.9, 109 },
-							["sourceQuests"] = 10275,	-- Triangulation Point Two
+							["sourceQuests"] = { 10275 },	-- Triangulation Point Two
 						}),
 						q(10436, {	-- All Clear!
 							["provider"] = { "n", 20913 },	-- Tashar
@@ -919,7 +919,7 @@ _.Zones =
 					q(10435, {	-- Retrieving the Goods
 						["provider"] = { "n", 20205 },	-- Audi the Needle
 						["coord"] = { 44.7, 36.7, 109 },
-						["sourceQuests"] = 10434,	-- The Dynamic Duo
+						["sourceQuests"] = { 10434 },	-- The Dynamic Duo
 						["groups"] = {
 							i(30284),	-- Audi's Embroidered Boots
 							i(30402),	-- Field Agent's Bracers

@@ -219,7 +219,7 @@ _.Holidays =
 				n(53728,  {	-- Dorothy <Candy & Toy Vendor>
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 31.8, 50.0, 37 },
-					["maps"] = 37,	-- Elwynn Forest
+					["maps"] = { 37 },	-- Elwynn Forest
 					["g"] = {
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {

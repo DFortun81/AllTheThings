@@ -410,7 +410,7 @@ _.ExpansionFeatures =
 					q(43379, {	-- Velen's Vision
 						-- awarded third criteria for "fighting with style: classic" achievement
 						-- not sure if that should be here or on the achievement as a SQ or anything like that.
-						["sourceQuests"] = 43378,	-- Eye of Azshara: Through the Lens
+						["sourceQuests"] = { 43378 },	-- Eye of Azshara: Through the Lens
 						["classes"] = { PRIEST },
 						["coord"] = { 48.3, 47.8, 702 },
 						["lvl"] = 103,

@@ -139,7 +139,7 @@ _.ExpansionFeatures =
 					q(51770, {	-- Mission from the Warchief
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
-						["sourceQuests"] = 53333,	-- Time for War
+						["sourceQuests"] = { 53333 },	-- Time for War
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							follower(1065),	-- Arcanist Valtrois

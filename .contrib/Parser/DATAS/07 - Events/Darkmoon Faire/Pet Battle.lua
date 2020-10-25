@@ -7,10 +7,10 @@ _.WorldEvents =
 	m(407, {	-- Darkmoon Island
 		filter(101, { 	-- Pet Battle
 			p(1068, {	-- Crow
-				["crs"] = 67443,	-- Crow
+				["crs"] = { 67443 },	-- Crow
 			}),
 			p(1062, {	-- Darkmoon Glowfly
-				["crs"] = 67329,	-- Darkmoon Glowfly
+				["crs"] = { 67329 },	-- Darkmoon Glowfly
 			}),
 			n(-194, {	-- Fishing
 				i(73953),	-- Sea Pony

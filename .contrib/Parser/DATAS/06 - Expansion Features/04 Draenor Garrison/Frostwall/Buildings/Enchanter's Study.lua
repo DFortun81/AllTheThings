@@ -17,11 +17,11 @@ _.ExpansionFeatures =
 									{ "n", 91029 },	-- Rath'thul Moonvale
 								},
 								["isDaily"] = true,
-								["cost"] = { "i", 109693, 50 },	-- 50x Draenic Dust
+								["cost"] = { { "i", 109693, 50 } },	-- 50x Draenic Dust
 							}),
 							q(37570, {	-- Your First Enchanting Work Order
 								["provider"] = { "n", 79821 },	-- Yukla Greenshadow
-								["cost"] = { "i", 109693, 5 },	-- 5x Draenic Dust
+								["cost"] = { { "i", 109693, 5 } },	-- 5x Draenic Dust
 							}),
 						}),
 					},
