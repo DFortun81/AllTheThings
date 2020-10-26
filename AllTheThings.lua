@@ -4304,8 +4304,9 @@ local function GetGroupSortValue(group)
 	end
 	return -3;
 end
-local function SortGroup(group, sortType)
+local function SortGroup(group, sortType, row, recur)
 	if group.visible and group.g then
+		app:CheckYieldHelper();
 		if not sortType or sortType == "name" then
 			local txtA, txtB;
 			table.sort(group.g, function(a, b)
@@ -4318,7 +4319,7 @@ local function SortGroup(group, sortType)
 				return false;
 			end);
 			for i,o in ipairs(group.g) do
-				SortGroup(o, "name");
+				SortGroup(o, "name", nil, true);
 			end
 		elseif sortType == "progress" then
 			local progA, progB;
@@ -4332,10 +4333,14 @@ local function SortGroup(group, sortType)
 				return false;
 			end);
 			for i,o in ipairs(group.g) do
-				SortGroup(o, "progress");
+				SortGroup(o, "progress", nil, true);
 			end
 		end
 		-- other sort types?
+	end
+	if not recur then
+		row:GetParent():GetParent():Update();
+		app.print("Finished Sorting.");
 	end
 end
 app.GetCurrentMapID = function()
@@ -9819,13 +9824,11 @@ local function RowOnClick(self, button)
 			elseif IsShiftKeyDown() then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
 					app.print("Sorting selection by total progress...");
-					SortGroup(reference, "progress");
+					StartCoroutine("Sorting", function() SortGroup(reference, "progress", self) end);
 				else
 					app.print("Sorting selection alphabetically...");
-					SortGroup(reference, "name");
+					StartCoroutine("Sorting", function() SortGroup(reference, "name", self) end);
 				end
-				self:GetParent():GetParent():Update();
-				app.print("Finished Sorting.");
 			else
 				if self.index > 0 then
 					app:CreateMiniListForGroup(reference);
