@@ -81,6 +81,7 @@ local function StartCoroutine(name, method)
 	if method and not app.refreshing[name] then
 		local instance = coroutine.create(method);
 		app.refreshing[name] = true;
+		-- print("coroutine starting",name);
 		Push(app, name, function()
 			-- Check the status of the coroutine
 			if instance and coroutine.status(instance) ~= "dead" then
@@ -91,6 +92,7 @@ local function StartCoroutine(name, method)
 					print(err);
 				end
 			end
+			-- print("coroutine complete",name);
 			app.refreshing[name] = nil;
 		end);
 	end
@@ -4020,12 +4022,6 @@ local function ExportData(group)
 	end
 end
 local function RefreshSavesCoroutine()
-	local waitTimer = 30;
-	while waitTimer > 0 do
-		coroutine.yield();
-		waitTimer = waitTimer - 1;
-	end
-	
 	-- While the player is in combat, wait for combat to end.
 	while InCombatLockdown() do coroutine.yield(); end
 	
@@ -4034,16 +4030,18 @@ local function RefreshSavesCoroutine()
 	
 	-- While the player is still waiting for information, wait.
 	-- NOTE: Usually, this is only 1 wait.
-	local counter = 0;
-	while GetNumSavedInstances() < 1 do
+	local counter = 600;
+	local saves = GetNumSavedInstances();
+	while counter > 0 and saves and saves < 1 do
+		counter = counter - 1;
 		coroutine.yield();
-		counter = counter + 1;
-		if counter > 600 then
-			app.refreshingSaves = false;
-			-- Need to return if hitting the limit, not yield
-			-- A character who has never entered an instance will hit this
-			return;
-		end
+		saves = GetNumSavedInstances();
+	end
+	if counter < 1 then
+		app.refreshingSaves = false;
+		-- Need to return if hitting the limit
+		-- A character who has never entered an instance will hit this
+		return;
 	end
 	
 	-- Cache the lockouts across your account.
@@ -4079,7 +4077,7 @@ local function RefreshSavesCoroutine()
 	
 	-- Update Saved Instances
 	local converter = L["SAVED_TO_DJ_INSTANCES"];
-	for instanceIter=1,GetNumSavedInstances() do
+	for instanceIter=1,saves do
 		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters = GetSavedInstanceInfo(instanceIter);
 		if locked then
 			-- Update the name of the instance and cache the locks for this instance
@@ -7342,8 +7340,9 @@ app.CreateQuestObjective = function(id, t)
 	return setmetatable(constructor(id, t, "objectiveID"), app.BaseQuestObjective);
 end
 local function GetQuestsCompleted(t)
+	if not t then t = CompletedQuests end
 	for k,v in pairs(C_QuestLog_GetAllCompletedQuestIDs()) do
-		CompletedQuests[v] = true
+		t[v] = true;
 	end
 end
 local function RefreshQuestCompletionState(questID)
@@ -8479,7 +8478,9 @@ UpdateGroup = function(parent, group)
 end
 UpdateGroups = function(parent, g)
 	if g then
+		-- print("updategroup",parent.text);
 		for key, group in ipairs(g) do
+			app:CheckYieldHelper();
 			UpdateGroup(parent, group);
 		end
 	end
@@ -8891,6 +8892,14 @@ function app.QuestCompletionHelper(questID)
 		
 		-- Don't force a full refresh.
 		app:RefreshData(true, true);
+	end
+end
+-- helps prevent coroutines running longer than 1 second per frame, not sure we can get a finer time resolution like this...
+function app:CheckYieldHelper()
+	if coroutine.running() and (not app.nextYield or app.nextYield <= time()) then
+		app.nextYield = time() + 1;
+		-- print("yieldHelper",app.nextYield);
+		coroutine.yield();
 	end
 end
 
@@ -11453,8 +11462,6 @@ function app:RefreshData(lazy, got, manual)
 				data.progress = 0;
 				data.total = 0;
 				UpdateGroups(data, data.g);
-				-- print("yielding after",data.text);
-				coroutine.yield();
 			end
 			
 			-- Forcibly update the windows.
@@ -15596,8 +15603,12 @@ app.events.VARIABLES_LOADED = function()
 		--if C_PetJournal.GetNumPets() < 1 then return true; end
 		
 		-- Detect how many mounts there are. If 0, Blizzard isn't ready yet.
+		local counter = 300;
 		local mountIDs = C_MountJournal.GetMountIDs();
-		if #mountIDs < 1 then return true; end
+		while counter > 0 and (not mountIDs or #mountIDs < 1) do
+			counter = counter - 1;
+			mountIDs = C_MountJournal.GetMountIDs();
+		end
 		
 		-- Harvest the Spell IDs for Conversion.
 		app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
@@ -15676,11 +15687,11 @@ app.events.VARIABLES_LOADED = function()
 		app.IsReady = true;
 		
 		-- Rebuild toy collection. This should only happen once to fix toy collection states from a bug prior 14.January.2020
-		local toyCacheRebuilt = GetDataMember("ToyCacheRebuilt")
+		local toyCacheRebuilt = GetDataMember("ToyCacheRebuilt");
 		if not toyCacheRebuilt then
-			SetDataMember("ToyCacheRebuilt", true)
-			wipe(GetDataMember("CollectedToys", {}))
-			RefreshCollections()
+			SetDataMember("ToyCacheRebuilt", true);
+			wipe(GetDataMember("CollectedToys", {}));
+			RefreshCollections();
 		end
 		
 		-- NOTE: The auto refresh only happens once.
