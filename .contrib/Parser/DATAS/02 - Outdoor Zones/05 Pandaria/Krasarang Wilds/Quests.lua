@@ -948,10 +948,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(30613, {	-- Armored Carp
-					["provider"] = { "n", 60135 },	-- Trawler Yotimo
-					["isDaily"] = true,
-				}),
 				i(91856, {	-- Sturdy Crab Crate
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -1082,10 +1078,6 @@ _.Zones =
 				q(32171, {	-- End of an Elder
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,	-- where is this from?
-				}),
-				q(30728, {	-- Fat Long-Fat
-					["provider"] = { "n", 60506 },	-- Thelonius
-					["isDaily"] = true,
 				}),
 				q(30737, {	-- Fat Long-Fat: Rematch
 					["provider"] = { "n", 60506 },	-- Thelonius

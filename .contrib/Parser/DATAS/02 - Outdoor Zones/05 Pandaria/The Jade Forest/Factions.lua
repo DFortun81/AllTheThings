@@ -31,6 +31,7 @@ _.Zones =
 								["sourceQuests"] = { 30142 },	-- It's A...
 								["provider"] = { "n", 58228 },	-- Instructor Skythorn
 								["isDaily"] = true,
+								["coord"] = { 57.5, 45.0, 371 },
 							}),
 							q(33250, {	-- A Time-Lost Treasure
 							--	the item is looted from timeless isle, but it doesn't start the quest, so i guess jade forest is the best place for this to go
@@ -223,22 +224,28 @@ _.Zones =
 								["coord"] = { 57.5, 45.1, 371 },
 							}),
 							q(31810, {	-- Riding the Skies (Azure)
-								["provider"] = { "n", 58564 },	-- Elder Anli
+								["minReputation"] = { 1271, EXALTED },
 								["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.|r",
+								["provider"] = { "n", 58564 },	-- Elder Anli
+								["coord"] = { 57.7, 45.0, 371 },
 								["g"] = {
 									i(85430), 	-- Reins of the Azure Cloud Serpent
 								},
 							}),
 							q(31811, {	-- Riding the Skies (Golden)
-								["provider"] = { "n", 58564 },	-- Elder Anli
+								["minReputation"] = { 1271, EXALTED },
 								["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.|r",
+								["provider"] = { "n", 58564 },	-- Elder Anli
+								["coord"] = { 57.7, 45.0, 371 },
 								["g"] = {
 									i(85429), 	-- Reins of the Golden Cloud Serpent
 								},
 							}),
 							q(30188, {	-- Riding the Skies (Jade)
-								["provider"] = { "n", 58564 },	-- Elder Anli
+								["minReputation"] = { 1271, EXALTED },
 								["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.|r",
+								["provider"] = { "n", 58564 },	-- Elder Anli
+								["coord"] = { 57.7, 45.0, 371 },
 								["g"] = {
 									i(79802), 	-- Reins of the Jade Cloud Serpent
 								},
@@ -339,8 +346,8 @@ _.Zones =
 								["minReputation"] = { 1271, HONORED },
 								["sourceQuests"] = { 30142 },	-- It's A...
 								["provider"] = { "n", 58564 },	-- Elder Anli
-								["coord"] = { 57.6, 44.9, 371 },
 								["isDaily"] = true,
+								["coord"] = { 57.6, 44.9, 371 },
 							}),
 							q(31700, {	-- The Shoe Is On The Other Foot
 								["minReputation"] = { 1271, HONORED },

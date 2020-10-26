@@ -213,12 +213,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					["g"] = {
 						cr(90316, e(1433, {	-- Shadow-Lord Iskar
 							i(127771, {	-- Gemcutter Module: Critical Strike
-								["spellID"] = 187634,
 								["requireSkill"] = JEWELCRAFTING,
 								["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-								["coord"] = {
-									25.84, 39.79
-								},
+								["spellID"] = 187634,
+								["coord"] = { 25.8, 39.7, 534 },
 							}),
 							ig(127749),	-- Corrupted Nest Guardian
 							i(128096),	-- Demonspine Wand
@@ -551,12 +549,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
 					i(127771, {	-- Gemcutter Module: Critical Strike
-						["spellID"] = 187634,
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-						["coord"] = {
-							25.84, 39.79
-						},
+						["spellID"] = 187634,
+						["coord"] = { 25.8, 39.7, 534 },
 					}),
 					ig(127749),	-- Corrupted Nest Guardian
 					i(124387),	-- Shadowrend Talonblade
@@ -961,12 +957,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
 					i(127771, {	-- Gemcutter Module: Critical Strike
-						["spellID"] = 187634,
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-						["coord"] = {
-							25.84, 39.79
-						},
+						["spellID"] = 187634,
+						["coord"] = { 25.8, 39.7, 534 },
 					}),
 					ig(127749),	-- Corrupted Nest Guardian
 					i(124387),	-- Shadowrend Talonblade
@@ -1370,12 +1364,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
 					i(127771, {	-- Gemcutter Module: Critical Strike
-						["spellID"] = 187634,
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-						["coord"] = {
-							25.84, 39.79
-						},
+						["spellID"] = 187634,
+						["coord"] = { 25.8, 39.7, 534 },
 					}),
 					ig(127749),	-- Corrupted Nest Guardian
 					i(124387),	-- Shadowrend Talonblade

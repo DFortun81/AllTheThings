@@ -708,9 +708,14 @@ _.Zones =
 					["g"] = {
 						n(QUESTS, {
 						--	TODO: add the following quests.  i'm just moving them into the file as i see them so i can ensure the correct coordinates are added and none get forgotten.  i hate this zone.
-							-- Armored Carp
 							-- Mimic Octopus
 							-- Spinefish Alpha
+							q(30613, {	-- Armored Carp
+								["requireSkill"] = FISHING,
+								["provider"] = { "n", 60135 },	-- Trawler Yotimo
+								["isDaily"] = true,
+								["coord"] = { 70.9, 39.0, 418 },
+							}),
 							q(30754, {	-- Bright Bait
 								["requireSkill"] = FISHING,
 								["provider"] = { "n", 60674 },	-- John "Big Hook" Marsock
@@ -851,6 +856,11 @@ _.Zones =
 								["coord"] = { 31.8, 61.4, 418 },
 							}),
 							q(30727, {	-- Ellia Ravenmane: Rematch
+								["provider"] = { "n", 60506 },	-- Thelonius
+								["isDaily"] = true,
+								["coord"] = { 31.8, 61.4, 418 },
+							}),
+							q(30728, {	-- Fat Long-Fat
 								["provider"] = { "n", 60506 },	-- Thelonius
 								["isDaily"] = true,
 								["coord"] = { 31.8, 61.4, 418 },
