@@ -218,12 +218,6 @@ _.Zones =
 					["coord"] = { 62.7, 23.3, 390 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(32257, {	-- Voice of the Gods -- granted "The Voice of the Gods" for "Dominance Offensive Campaign"
-					["coord"] = { 20.9, 15.5, 390 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 67834 },	-- Fanlyr Silverthorn
-					["sourceQuests"] = { 32242 },	-- Buried Secrets
-				}),
 				q(33134, {	-- Warforged Seals (A)
 					["repeatable"] = true,
 					["provider"] = { "n", 64029 },	-- Elder Lin

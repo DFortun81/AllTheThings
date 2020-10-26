@@ -20,7 +20,9 @@ _.Zones =
 									crit(1, {	-- Domination Point
 										["sourceQuests"] = { 32108 },	-- Domination Point
 									}),
-									crit(2),	-- The Voice of the Gods
+									crit(2, {	-- The Voice of the Gods
+										["sourceQuests"] = { 32257 },	-- Voice of the Gods
+									}),
 									crit(3),	-- The Horde is Family
 									crit(4),	-- Blood For Blood
 									crit(5),	-- The Korune
@@ -83,19 +85,29 @@ _.Zones =
 						}),
 						n(QUESTS, {
 							q(32127, {	-- All Dead, All Dead
-							--	may also require Flash! and/or Death on Two Legs
-								["sourceQuests"] = { 32126 },	-- Tear it Up
+								["sourceQuests"] = {
+									32235,	-- Flash! Aaaaaahhhh!
+									32126,	-- Tear it Up
+								},
 								["provider"] = { "n", 67767 },	-- Brolic
 								["isDaily"] = true,
 								["coord"] = { 9.36, 50.4, 418 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32128, {	-- Another One Bites the Dust
-							--	may also require Flash! and/or Death on Two Legs
-								["sourceQuests"] = { 32126 },	-- Tear it Up
+								["sourceQuests"] = {
+									32235,	-- Flash! Aaaaaahhhh!
+									32126,	-- Tear it Up
+								},
 								["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
 								["isDaily"] = true,
 								["coord"] = { 9.02, 51.2, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32242, {	-- Buried Secrets
+								["sourceQuests"] = { 32256 },	-- Rise Of An Empire
+								["provider"] = { "n", 67840 },	-- Garrosh Hellscream
+								["coord"] = { 32.1, 84.9, 392 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32251, {	-- Dagger in the Dark
@@ -143,6 +155,13 @@ _.Zones =
 								["coord"] = { 79.7, 30.4, 418 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32256, {	-- Rise Of An Empire
+								["minReputation"] = { 1375, FRIENDLY+950 },
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67939 },	-- General Nazgrim
+								["coord"] = { 9.3, 51.1, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32133, {	-- Sentry Wards
 								["sourceQuests"] = { 32108 },	-- Domination Point
 								["provider"] = { "n", 67628 },	-- Shademaster Kiryn
@@ -171,6 +190,12 @@ _.Zones =
 								["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
 								["isDaily"] = true,
 								["coord"] = { 9.0, 51.3, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32257, {	-- Voice of the Gods
+								["sourceQuests"] = { 32242 },	-- Buried Secrets
+								["provider"] = { "n", 67834 },	-- Fanlyr Silverthorn
+								["coord"] = { 20.9, 15.7, 390 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32131, {	-- We Require More Minerals!
@@ -373,12 +398,6 @@ _.Zones =
 								["coord"] = { 59.2, 84.3, 379 },
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(32242, {	-- Buried Secrets
-								["sourceQuests"] = { 32256 },	-- Rise Of An Empire
-								["provider"] = { "n", 67840 },	-- Garrosh Hellscream
-								["coord"] = { 32.1, 84.9, 392 },
-								["races"] = HORDE_ONLY,
-							}),
 							q(32154, {	-- Burn Out!
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
 								["provider"] = { "n", 68166 },	-- Sully "The Pickle" McLeary
@@ -485,13 +504,6 @@ _.Zones =
 								["isDaily"] = true,
 								["coord"] = { 94.5, 28.6, 418 },
 								["races"] = ALLIANCE_ONLY,
-							}),
-							q(32256, {	-- Rise Of An Empire
-								["minReputation"] = { 1375, FRIENDLY+950 },
-								["sourceQuests"] = { 32108 },	-- Domination Point
-								["provider"] = { "n", 67939 },	-- General Nazgrim
-								["coord"] = { 9.3, 51.1, 418 },
-								["races"] = HORDE_ONLY,
 							}),
 							q(32451, {	-- Send A Message
 								["provider"] = { "n", 68908 },	-- Amber Kearnen

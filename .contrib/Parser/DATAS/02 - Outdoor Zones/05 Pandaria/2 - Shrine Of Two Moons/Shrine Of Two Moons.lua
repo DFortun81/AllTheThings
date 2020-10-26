@@ -71,9 +71,6 @@ _.Zones =
 					q(33249, {	-- Proving Grounds
 						["races"] = HORDE_ONLY,
 					}),
-					q(32256, {	-- Rise Of An Empire
-						["races"] = HORDE_ONLY,
-					}),
 					q(32726, {	-- So You Want to Be a Blacksmith...
 						["races"] = HORDE_ONLY,
 					}),

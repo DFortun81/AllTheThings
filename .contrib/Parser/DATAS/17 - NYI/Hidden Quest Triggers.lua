@@ -494,7 +494,6 @@ _.HiddenQuestTriggers =
 		q(30165),	-- Jade Forest - picked the blue serpent egg on "Choosing the One"
 		q(30166),	-- Jade Forest - picked the green serpent egg on "Choosing the One"
 		q(30167),	-- Jade Forest - picked the yellow/gold serpent egg on "Choosing the One"
-		q(38935),	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
 		q(37212),	-- FLAG - Proving Grounds - Damage Bronze
 		q(33089),	-- FLAG - Proving Grounds - Damage Bronze
 		q(37214),	-- FLAG - Proving Grounds - Damage Gold

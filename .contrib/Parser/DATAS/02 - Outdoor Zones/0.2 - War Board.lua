@@ -41,8 +41,13 @@ _.Zones =
 				["lvl"] = 98,
 				["description"] = "This quest is automatically offered when you reach level 98.  To get it to pop up, you may need to relog.",
 			}),
-			q(28790, { -- A Personal Summons (Vashj'ir Starter Quest)
+			q(28790, {	-- A Personal Summons (Vashj'ir Starter Quest)
 				["isBreadcrumb"] = true,
+			}),
+			q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
+				["isBreadcrumb"] = true,
+				["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
+				["reqlvl"] = { 15 },
 			}),
 			q(36499),	-- Iron Horde Invasion
 			un(REMOVED_FROM_GAME, q(29157)),	-- The Zandalari Menace
@@ -543,6 +548,11 @@ _.Zones =
 			q(49552, {	-- Hero's Call: Zul'Drak!
 				["isBreadcrumb"] = true,
 				["lvl"] = 64,
+			}),
+			q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
+				["isBreadcrumb"] = true,
+				["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
+				["reqlvl"] = { 15 },
 			}),
 			q(36498, {	-- Iron Horde Invasion
 				["isBreadcrumb"] = true,
