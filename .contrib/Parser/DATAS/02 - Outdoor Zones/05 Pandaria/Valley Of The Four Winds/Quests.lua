@@ -764,9 +764,13 @@ _.Zones =
 					["provider"] = { "n", 56133 },	-- Chen Stormstout
 				}),
 				q(30046, {	-- Chen's Resolution
-					["sourceQuests"] = { 29952 },	-- Broken Dreams
-					["coord"] = { 68.9, 43.4, 376 },
+					["sourceQuests"] = {
+					--	TODO: may also require #29910, Rampaging Rodents (not required for 2 criteria prior to this, but i did it prior to Muddy Water when Broken Dreams alone didn't trigger the availability of Chen's Resolution)
+						29952,	-- Broken Dreams
+						29951,	-- Muddy Water
+					},
 					["provider"] = { "n", 56133 },	-- Chen Stormstout
+					["coord"] = { 68.9, 43.4, 376 },
 				}),
 				q(32045, {	-- Children of the Water
 					["coord"] = { 55.1, 47.4, 376 },
@@ -1372,18 +1376,19 @@ _.Zones =
 				}),
 				q(29981, {	-- Stemming the Swarm
 					["sourceQuests"] = { 29872 },	-- Lin Tenderpaw
-					["coord"] = { 19.9, 56.9, 376 },
 					["provider"] = { "n", 56111 },	-- Lin Tenderpaw
+					["coord"] = { 19.9, 56.9, 376 },
 				}),
 				q(30117, {	-- Stoneplow Thirsts
 					["sourceQuests"] = { 30078 },	-- Cleaning House
-					["isBreadcrumb"] = true,
-					["coord"] = { 36.2, 68.4, 376 },
+				--	["isBreadcrumb"] = true,	-- the cutscene didn't trigger until i turned this quest in, nor did the availability of the "warn stoneplow"/"hope springs eternal" breadcrumbs in krasarang, which leads me to believe it's *not* a breadcrumb?
 					["provider"] = { "n", 61026 },	-- Emmi
+					["coord"] = { 36.2, 68.4, 376 },
 				}),
 				q(30055, {	-- Stormstout's Hops
 					["sourceQuests"] = {
 						30054,	-- Enough is Ookin' Enough
+						30050,	-- Gardener Fran and the Watering Can
 						30052,	-- Weed War
 						30057,	-- Seeing Orange
 					},
@@ -1457,10 +1462,12 @@ _.Zones =
 				}),
 				q(30073, {	-- The Emperor
 					["sourceQuests"] = {
+						30172,	-- Barreling Along
 						30055,	-- Stormstout's Hops
+						30047,	-- The Chen Taste Test
 					},
-					["coord"] = { 55.9, 49.4, 376 },
 					["provider"] = { "n", 56133 },	-- Chen Stormstout
+					["coord"] = { 55.9, 49.4, 376 },
 				}),
 				q(29912, {	-- The Fabulous Miss Fanny
 					["sourceQuests"] = { 29911 },	-- Practically Perfect Produce
@@ -1624,8 +1631,16 @@ _.Zones =
 					["provider"] = { "n", 56110 },	-- Xiao
 				}),
 				q(30622, {	-- The Swarm Begins
-					["sourceQuests"] = { 29990 },	-- Training and Discipline
+					["sourceQuests"] = {
+						30078,	-- Cleaning House
+						30376,	-- Hope Springs Eternal (breadcrumb, neutral)
+						30117,	-- Stoneplow Thirsts (is this a breadcrumb literally who can say)
+						29990,	-- Training and Discipline
+						30360,	-- Warn Stoneplow (breadcrumb, A)
+						30241,	-- Warn Stoneplow (breadcrumb, H)
+					},
 					["provider"] = { "n", 56720 },	-- Loon Mai
+					["coord"] = { 19.5, 56.9, 376 },
 				}),
 				q(29946, {	-- The Warren-Mother
 					["sourceQuests"] = { 29944 },	-- Leaders Among Breeders

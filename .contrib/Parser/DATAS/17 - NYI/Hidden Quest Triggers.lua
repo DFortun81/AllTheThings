@@ -447,6 +447,7 @@ _.HiddenQuestTriggers =
 		--      MOP      --
 		-------------------
 		q(32357),	-- triggered after watching the RP that takes place after turning in #32316, "Heart of the Alliance," part of the Operation: Shieldwall campaign
+		q(30629),	-- triggered after cutscene prompted by turning in "Stoneplow Thirsts" in Valley of the Four Winds
 		q(31371),	-- Tracking Event: Player Has Completed One Anglers Daily
 		q(30719),	-- FLAG - Cradle of Chi-Ji Progress Bit 01
 		q(29698),	-- Tracking Event: Alliance Banner Found

@@ -15,7 +15,7 @@ _.Zones =
 				q(30695, {	-- Ahead on the Way
 					["sourceQuests"] = {
 						30270,	-- Blinding the Riverblades
-						30669,	-- The Murksweats
+						30268,	-- The Murksweats
 						30694,	-- Tread Lightly
 					},
 					["provider"] = { "n", 59138 },	-- Koro Mistwalker
@@ -1101,8 +1101,16 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(30376, {	-- Hope Springs Eternal
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						30174,	-- For Family
+						30273,	-- In the House of the Red Crane
+						30117,	-- Stoneplow Thirsts
+					--	TODO: may also require the following quests:
+					--	29581,	-- The Golden Dream
+					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
+					},
 					["provider"] = { "n", 59719 },	-- Chi-Ji
-					["sourceQuests"] = { 30273 },	-- In the House of the Red Crane
 				}),
 				q(30734, {	-- Huck Wheelbarrow
 					["provider"] = { "n", 60506 },	-- Thelonius
@@ -1347,15 +1355,31 @@ _.Zones =
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				q(30360, {	-- Warn Stoneplow
+				q(30360, {	-- Warn Stoneplow (A)
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						30273,	-- In the House of the Red Crane
+						30117,	-- Stoneplow Thirsts
+						30445,	-- The Waters of Youth
+					--	TODO: may also require the following quests:
+					--	29581,	-- The Golden Dream
+					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
+					},
 					["provider"] = { "n", 58821 },	-- Lyalia
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 30445 },	-- The Waters of Youth
 				}),
-				q(30241, {	-- Warn Stoneplow
+				q(30241, {	-- Warn Stoneplow (H)
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						30174,	-- For Family
+						30273,	-- In the House of the Red Crane
+						30117,	-- Stoneplow Thirsts
+					--	TODO: may also require the following quests:
+					--	29581,	-- The Golden Dream
+					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
+					},
 					["provider"] = { "n", 58607 },	-- Sunwalker Dezco
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 30174 },	-- For Family
 				}),
 				q(32345, {	-- We're Not Monsters!
 					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
