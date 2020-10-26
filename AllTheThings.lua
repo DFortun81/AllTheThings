@@ -4020,7 +4020,6 @@ local function ExportData(group)
 	end
 end
 local function RefreshSavesCoroutine()
-	-- TODO: this coroutine ran "forever" (5+ minutes) on a vulpera when I logged in, may need to test further...
 	local waitTimer = 30;
 	while waitTimer > 0 do
 		coroutine.yield();
@@ -4041,7 +4040,9 @@ local function RefreshSavesCoroutine()
 		counter = counter + 1;
 		if counter > 600 then
 			app.refreshingSaves = false;
-			coroutine.yield(false);
+			-- Need to return if hitting the limit, not yield
+			-- A character who has never entered an instance will hit this
+			return;
 		end
 	end
 	
@@ -4174,12 +4175,14 @@ local function RefreshCollections()
 		for i,illusion in ipairs(C_TransmogCollection_GetIllusions()) do
 			if rawget(illusion, "isCollected") then rawset(collectedIllusions, illusion.sourceID, 1); end
 		end
+		coroutine.yield();
 		
 		-- Harvest Title Collections
 		local collectedTitles = GetTempDataMember("CollectedTitles", {});
 		for i=1,GetNumTitles(),1 do
 			if IsTitleKnown(i) then rawset(collectedTitles, i, 1); end
 		end
+		coroutine.yield();
 		
 		-- Refresh Mounts / Pets
 		local collectedSpells = GetDataMember("CollectedSpells", {});
@@ -4197,6 +4200,7 @@ local function RefreshCollections()
 		
 		-- Harvest Item Collections that are used by the addon.
 		app:GetDataCache();
+		coroutine.yield();
 		
 		-- Refresh Toys from Cache
 		local collectedToys = GetDataMember("CollectedToys", {});
@@ -4205,9 +4209,11 @@ local function RefreshCollections()
 				rawset(collectedToys, id, 1);
 			end
 		end
+		coroutine.yield();
 		
 		-- Refresh Achievements
 		RefreshAchievementCollection();
+		coroutine.yield();
 		
 		-- Refresh Sources from Cache
 		local collectedSources = GetDataMember("CollectedSources");
@@ -4235,7 +4241,11 @@ local function RefreshCollections()
 				end
 			end
 		end
+		coroutine.yield();
 		app:RefreshData(false, false, true);
+		
+		-- Wait for refresh to actually finish
+		while app.refreshing["RefreshData"] do coroutine.yield(); end
 		
 		-- Report success.
 		app.print("Done refreshing collection.");
@@ -11364,7 +11374,7 @@ function app:GetDataCache()
 		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.font = "GameFontNormalLarge";
-		allData.text = L["TITLE"];
+		allData.text = L["TITLE"] .. " (Unsorted)";
 		allData.title = "Unsorted";
 		allData.description = "This data hasn't been implemented yet.";
 		allData.visible = true;
@@ -11443,6 +11453,8 @@ function app:RefreshData(lazy, got, manual)
 				data.progress = 0;
 				data.total = 0;
 				UpdateGroups(data, data.g);
+				-- print("yielding after",data.text);
+				coroutine.yield();
 			end
 			
 			-- Forcibly update the windows.
