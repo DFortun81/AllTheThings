@@ -9,7 +9,7 @@ _.Mounts =
 		un(REMOVED_FROM_GAME, i(118515)),	-- Cindermane Charger
 		un(REMOVED_FROM_GAME, i(109013)),	-- Dread Raven
 		un(REMOVED_FROM_GAME, i(106246)),	-- Emerald Hippogryph
-		mount(307932),	-- Ensorcelled Everwyrm
+		un(BLIZZARD_BALANCE, mount(307932)),	-- Ensorcelled Everwyrm
 		un(REMOVED_FROM_GAME, i(153540)),	-- Gilded Ravasaur
 		i(98618),			-- Hearthsteed
 		un(REMOVED_FROM_GAME, i(83086)), 	-- Heart of the Nightwing
