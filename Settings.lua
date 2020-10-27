@@ -2012,7 +2012,7 @@ for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		y = 20;
 		count = count + 1;
 		if count == 9 then
-			x = 300
+			x = 275
 			y = 5
 			last = seasonalSubFrame
 		end
