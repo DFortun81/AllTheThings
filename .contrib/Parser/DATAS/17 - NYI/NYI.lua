@@ -2082,7 +2082,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(54766)),	-- Burnished Gloves
 		un(NEVER_IMPLEMENTED, i(54767)),	-- Burnished Girdle
 		un(NEVER_IMPLEMENTED, i(54768)),	-- Burnished Boots
-		un(NEVER_IMPLEMENTED, i(54769)),	-- Rough Bronze Bracers
+		un(NEVER_IMPLEMENTED, i(54769)),	-- Rough Bronze Bracers -- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
 		un(NEVER_IMPLEMENTED, i(54778)),	-- Burnished Boots (Again)
 		un(NEVER_IMPLEMENTED, i(54781)),	-- Thorbia's Gauntlets
 		un(NEVER_IMPLEMENTED, i(54783)),	-- Silvered Bronze Shoulders
@@ -2317,11 +2317,11 @@ _.NeverImplemented =
 				["itemID"] = 6730,	-- Ironforge Chain
 				["u"] = NEVER_IMPLEMENTED,
 			},
-			{	-- Plans: Ironforge Gauntlets
+			{	-- Plans: Ironforge Gauntlets -- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
 				["itemID"] = 6736,	-- Plans: Ironforge Gauntlets
 				["u"] = NEVER_IMPLEMENTED,
 			},
-			{	-- Ironforge Gauntlets
+			{	-- Ironforge Gauntlets	-- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
 				["itemID"] = 6733,	-- Ironforge Gauntlets
 				["u"] = NEVER_IMPLEMENTED,
 			},
@@ -2333,11 +2333,11 @@ _.NeverImplemented =
 				["itemID"] = 7925,	-- Mithril Scale Gloves
 				["u"] = NEVER_IMPLEMENTED,
 			},
-			{	-- Plans: Rough Bronze Bracers
+			{	-- Plans: Rough Bronze Bracers -- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
 				["itemID"] = 5577,	-- Plans: Rough Bronze Bracers
 				["u"] = NEVER_IMPLEMENTED,
 			},
-			{	-- Rough Bronze Bracers
+			{	-- Rough Bronze Bracers -- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
 				["itemID"] = 54769,	-- Rough Bronze Bracers
 				["u"] = NEVER_IMPLEMENTED,
 			},
