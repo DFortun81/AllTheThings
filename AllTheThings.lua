@@ -4404,7 +4404,12 @@ local function AttachTooltipRawSearchResults(self, group)
 		if group.collectionText and self:NumLines() > 0 then
 			local rightSide = _G[self:GetName() .. "TextRight1"];
 			if rightSide then
-				rightSide:SetText(group.collectionText);
+				if self.CloseButton then
+					-- dont think the region for the rightText can be modified within the tooltip, so pad instead
+					rightSide:SetText(group.collectionText .. "     ");
+				else
+					rightSide:SetText(group.collectionText);
+				end
 				rightSide:Show();
 			end
 		end
