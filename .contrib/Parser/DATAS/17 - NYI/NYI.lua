@@ -2333,7 +2333,7 @@ _.NeverImplemented =
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Rough Bronze Bracers
-				["itemID"] = 2867,	-- Rough Bronze Bracers
+				["itemID"] = 54769,	-- Rough Bronze Bracers
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Plans: Rune Edge

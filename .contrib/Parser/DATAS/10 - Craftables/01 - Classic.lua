@@ -281,7 +281,7 @@ _.Craftables =
 				i(12425),	-- Imperial Plate Bracers
 				i(7924),	-- Mithril Scale Bracers
 				i(2868),	-- Patterned Bronze Bracers
-				i(54769),	-- Rough Bronze Bracers
+				i(2867),	-- Rough Bronze Bracers
 				i(2854),	-- Runed Copper Bracers
 				i(12408),	-- Thorium Bracers
 			}),
