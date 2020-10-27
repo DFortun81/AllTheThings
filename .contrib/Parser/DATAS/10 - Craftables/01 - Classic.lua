@@ -257,7 +257,6 @@ _.Craftables =
 				i(22670, {	-- Icebane Gauntlets
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				i(6733),	-- Ironforge Gauntlets
 				i(22763),	-- Ironvine Gloves
 				i(7927, {	-- Ornate Mithril Gloves
 					["u"] = REMOVED_FROM_GAME,
@@ -281,7 +280,6 @@ _.Craftables =
 				i(12425),	-- Imperial Plate Bracers
 				i(7924),	-- Mithril Scale Bracers
 				i(2868),	-- Patterned Bronze Bracers
-				i(2867),	-- Rough Bronze Bracers
 				i(2854),	-- Runed Copper Bracers
 				i(12408),	-- Thorium Bracers
 			}),

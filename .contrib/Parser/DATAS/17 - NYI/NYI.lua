@@ -2082,6 +2082,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(54766)),	-- Burnished Gloves
 		un(NEVER_IMPLEMENTED, i(54767)),	-- Burnished Girdle
 		un(NEVER_IMPLEMENTED, i(54768)),	-- Burnished Boots
+		un(NEVER_IMPLEMENTED, i(54769)),	-- Rough Bronze Bracers
 		un(NEVER_IMPLEMENTED, i(54778)),	-- Burnished Boots (Again)
 		un(NEVER_IMPLEMENTED, i(54781)),	-- Thorbia's Gauntlets
 		un(NEVER_IMPLEMENTED, i(54783)),	-- Silvered Bronze Shoulders
@@ -2318,6 +2319,10 @@ _.NeverImplemented =
 			},
 			{	-- Plans: Ironforge Gauntlets
 				["itemID"] = 6736,	-- Plans: Ironforge Gauntlets
+				["u"] = NEVER_IMPLEMENTED,
+			},
+			{	-- Ironforge Gauntlets
+				["itemID"] = 6733,	-- Ironforge Gauntlets
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Plans: Mithril Scale Gloves
