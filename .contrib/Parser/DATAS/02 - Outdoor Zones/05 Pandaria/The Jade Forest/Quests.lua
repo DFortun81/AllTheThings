@@ -71,8 +71,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(90310),	-- Honorary Combat Engineer's Burnished Legplates
+						i(90362, {	-- Honorary Combat Engineer's Burnished Legplates
+							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
+						}),
 						i(90305),	-- Honorary Combat Engineer's Chain Leggings
 						i(90312),	-- Honorary Combat Engineer's Heavy Legplates
+						i(90364, {	-- Honorary Combat Engineer's Heavy Legguards
+							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
+						}),
 						i(90308),	-- Honorary Combat Engineer's Hide Leggings
 						i(90360, {	-- Honorary Combat Engineer's Hide Leggings
 							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
@@ -82,9 +88,18 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
 						}),
 						i(90311),	-- Honorary Combat Engineer's Legguards
+						i(90363, {	-- Honorary Combat Engineer's Legplates
+							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
+						}),
 						i(90309),	-- Honorary Combat Engineer's Ringmail Leggings
 						i(90307),	-- Honorary Combat Engineer's Satin Leggings
+						i(90359, {	-- Honorary Combat Engineer's Satin Leggings
+							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
+						}),
 						i(90306),	-- Honorary Combat Engineer's Silk Trousers
+						i(90358, {	-- Honorary Combat Engineer's Silk Trousers
+							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
+						}),
 					},
 				}),
 				q(29925, {	-- All We Can Spare

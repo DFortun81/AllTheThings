@@ -38,7 +38,20 @@ _.Zones =
 				ach(5450),	-- Fungal Frenzy
 				ach(5445),	-- Fungalophobia
 				ach(5447),	-- My Very Own Broodmother
-				ach(5446),	-- The Glop Family Line
+				ach(5449, {	-- Rock Lover
+					["sourceQuests"] = { 26709 },	-- The Stone Throne	(SQ for the daily)
+					["coord"] = { 55.4, 14.0, 207 },	-- location for the daily
+					["g"] = {
+						i(60869),	-- Pebble (PET!)
+					},
+				}),
+				ach(5446, {	-- The Glop Family Line
+					["sourceQuests"] = {	-- SQs for the daily
+						26709,	-- The Stone Throne
+						26583,	-- Wrath of the Fungalmancer
+					},
+					["coord"] = { 59.4, 14.0, 207 },	-- location for the daily
+				}),
 			}),
 		}),
 	}),
