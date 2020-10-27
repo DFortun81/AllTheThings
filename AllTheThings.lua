@@ -3613,36 +3613,6 @@ app.SearchForLink = SearchForLink;
 
 -- Map Information Lib
 local function AddTomTomWaypoint(group, auto, recur)
-	-- only for the first click, plot the in-game waypoint
-	if not recur then
-		C_SuperTrack.SetSuperTrackedUserWaypoint(false);
-		C_Map.ClearUserWaypoint();
-		local coord = group.coords and group.coords[1] or group.coord;
-		if coord then
-			-- in-game waypoint
-			-- print("user-way",coord[1],coord[2],coord[3]);
-			C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(coord[3] or defaultMapID,coord[1]/100,coord[2]/100));
-			C_SuperTrack.SetSuperTrackedUserWaypoint(true);
-		end
-		-- local point = C_Map.GetUserWaypoint();
-		-- if point then
-			-- print("waypoint:");
-			-- for key,val in pairs(point) do
-				-- print(key,val);
-			-- end
-			-- print("---");
-		-- end
-		-- try waypoint by questID next since it's more accurate if in-game ACTUALLY WORKS
-		if group.questID then
-			-- print("quest-way",group.questID);
-			C_SuperTrack.SetSuperTrackedQuestID(group.questID);
-			-- if C_SuperTrack.GetSuperTrackedQuestID() ~= 0 then
-				-- print("set!");
-				-- C_SuperTrack.SetSuperTrackedUserWaypoint(true);
-			-- end
-		end
-		-- print("tracking?",C_SuperTrack.IsSuperTrackingAnything(),C_SuperTrack.IsSuperTrackingUserWaypoint(),C_SuperTrack.GetSuperTrackedQuestID());
-	end
 	if TomTom and (group.visible or (group.objectiveID and not group.saved) or (app.Settings:Get("DebugMode"))) then
 		if group.coords or group.coord then
 			local opt = {
@@ -3685,6 +3655,35 @@ local function AddTomTomWaypoint(group, auto, recur)
 		if not recur then
 			TomTom:SetClosestWaypoint();
 		end
+	elseif not recur then
+		-- only for the first click and no tomtom, plot the in-game waypoint
+		C_SuperTrack.SetSuperTrackedUserWaypoint(false);
+		C_Map.ClearUserWaypoint();
+		local coord = group.coords and group.coords[1] or group.coord;
+		if coord then
+			-- in-game waypoint
+			-- print("user-way",coord[1],coord[2],coord[3]);
+			C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(coord[3] or defaultMapID,coord[1]/100,coord[2]/100));
+			C_SuperTrack.SetSuperTrackedUserWaypoint(true);
+		end
+		-- local point = C_Map.GetUserWaypoint();
+		-- if point then
+			-- print("waypoint:");
+			-- for key,val in pairs(point) do
+				-- print(key,val);
+			-- end
+			-- print("---");
+		-- end
+		-- try waypoint by questID next since it's more accurate if in-game ACTUALLY WORKS
+		if group.questID then
+			-- print("quest-way",group.questID);
+			C_SuperTrack.SetSuperTrackedQuestID(group.questID);
+			-- if C_SuperTrack.GetSuperTrackedQuestID() ~= 0 then
+				-- print("set!");
+				-- C_SuperTrack.SetSuperTrackedUserWaypoint(true);
+			-- end
+		end
+		-- print("tracking?",C_SuperTrack.IsSuperTrackingAnything(),C_SuperTrack.IsSuperTrackingUserWaypoint(),C_SuperTrack.GetSuperTrackedQuestID());
 	end
 end
 -- Populates/replaces data within a questObject for displaying in a row
