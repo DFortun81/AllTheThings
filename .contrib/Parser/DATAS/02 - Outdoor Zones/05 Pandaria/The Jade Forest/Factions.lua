@@ -70,6 +70,7 @@ _.Zones =
 								["sourceQuests"] = { 30142 },	-- It's A...
 								["provider"] = { "n", 56564 },	-- Elder Anli
 								["isDaily"] = true,
+								["coord"] = { 57.8, 44.8, 371 },
 							}),
 							q(30158, {	-- Disarming the Enemy
 								["minReputation"] = { 1271, HONORED },
@@ -323,6 +324,7 @@ _.Zones =
 									{ "n", 65724 },	-- Azure Hatchling
 								},
 								["isDaily"] = true,
+								["coord"] = { 57.4, 45.3, 371 },
 							}),
 							q(30139, {	-- The Rider's Journey (blue egg)
 							--	picked the blue and got this one, but some notes indicate all colors now grant this quest.

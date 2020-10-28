@@ -7,11 +7,6 @@ _.Zones =
 	m(424, {	-- Pandaria
 		m(388, {	-- Townlong Steppes
 			n(QUESTS, {
-				q(30954, {	-- A Blade is a Blade
-					["coord"] = { 39.3, 62.2, 388 },
-					["isDaily"] = true,
-					["provider"] = { "n", 61581 },	-- Ogo the Younger
-				}),
 				q(31894, {	-- A Delicate Balance
 					["coord"] = { 82.5, 73.0, 388 },
 					["provider"] = { "n", 60864 },	-- Yalia Sagewhisper
@@ -162,11 +157,6 @@ _.Zones =
 						i(83744),	-- Fleshripper Cape
 						i(83745),	-- Dusklight Drape
 					},
-				}),
-				q(30953, {	-- Fallen Sentinels
-					["coord"] = { 39.1, 62.0, 388 },
-					["isDaily"] = true,
-					["provider"] = { "n", 61585 },	-- Yak-Keeper Kyana
 				}),
 				q(30932, {	-- Father's Footsteps
 					["coord"] = { 39.4, 61.9, 388 },
@@ -438,11 +428,6 @@ _.Zones =
 					["coord"] = { 67.9, 67.6, 388 },
 					["provider"] = { "n", 60857 },	-- Orbiss
 					["sourceQuest"] = 30815,	-- The Death Of Me
-				}),
-				q(30955, {	-- Paying Tribute
-					["coord"] = { 38.9, 62.5, 388 },
-					["isDaily"] = true,
-					["provider"] = { "n", 61583 },	-- High Adept Paosha
 				}),
 				q(30771, {	-- Perfect Pitch
 					["coord"] = { 71.1, 56.6, 388 },
@@ -894,11 +879,6 @@ _.Zones =
 						i(84608),	-- Pendant of Revenge
 						i(84609),	-- Amulet of Longing
 					},
-				}),
-				q(30952, {	-- The Unending Siege
-					["coord"] = { 39.3, 62.2, 388 },
-					["isDaily"] = true,
-					["provider"] = { "n", 61580 },	-- Ogo the Elder
 				}),
 				q(30924, {	-- The Wisdom of Niuzao
 					["coord"] = { 49.1, 71.2, 388 },

@@ -73,6 +73,13 @@ _.Zones =
 					["coord"] = { 84.6, 63.6, 390 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(31382, {	-- Defense At Niuzao Temple
+					["sourceQuests"] = { 31512 },	-- A Witness to History
+					["provider"] = { "n", 64032 },	-- Sage Whiteheart
+					["isDaily"] = true,
+					["coord"] = { 84.6, 63.6, 390 },
+					["races"] = ALLIANCE_ONLY
+				}),
 				q(31876, {	-- The Inkmasters of the Arboretum
 					["requireSkill"] = INSCRIPTION,
 					["provider"] = { "n", 64691 },	-- Lorewalker Huynh
@@ -233,9 +240,6 @@ _.Zones =
 					["lvl"] = 85,
 				}),
 				--[[
-				q(31382, {	-- Defense At Niuzao Temple
-					["races"] = ALLIANCE_ONLY
-				}),
 				q(31383, {	-- Defense At Niuzao Temple
 					["races"] = HORDE_ONLY
 				}),

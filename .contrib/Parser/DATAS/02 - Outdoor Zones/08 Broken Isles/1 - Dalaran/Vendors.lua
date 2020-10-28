@@ -3027,7 +3027,7 @@ _.Zones =
 							["cost"] = 100000000,	-- 10,000g
 						}),
 						i(44231, {	-- Reins of the Wooly Mammoth
-							["races"] = ALLIANCE_ONLY,
+							["races"] = HORDE_ONLY,
 							["cost"] = 100000000,	-- 10,000g
 						}),
 						a(i(25472)),	-- Snowy Gryphon

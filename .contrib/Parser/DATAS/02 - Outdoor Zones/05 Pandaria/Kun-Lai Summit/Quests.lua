@@ -48,11 +48,6 @@ _.Zones =
 					["coord"] = { 64.7, 61.7, 379 },
 					["provider"] = { "n", 59371 },	-- Lucky Eightcoins
 				}),
-				q(32377, {	-- A Kor'kron In Our Midst
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 68375 },	-- Agent Connelly
-					["sourceQuest"] = 32370,	-- The Kun-Lai Expedition
-				}),
 				q(30715, {	-- A Line Unbroken
 					["coord"] = { 35.1, 59.6, 379 },
 					["provider"] = { "n", 61819 },	-- Ban Bearheart
@@ -657,10 +652,6 @@ _.Zones =
 						i(90488),	-- Shomi's Crane
 						i(90489),	-- Shomi's Fan
 					},
-				}),
-				q(32371, {	-- Memory Wine (A)
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 68375 },	-- Agent Connelly
 				}),
 				q(32368, {	-- Memory Wine (H)
 					["races"] = HORDE_ONLY,

@@ -1262,10 +1262,6 @@ _.Zones =
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
 				}),
-				q(32370, {	-- The Kun-Lai Expedition
-					["provider"] = { "n", 67940 },	-- Admiral Taylor
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(32321, {	-- The Monkey King
 					["provider"] = { "n", 68004 },	-- Anduin Wrynn
 					["races"] = ALLIANCE_ONLY,
@@ -1325,11 +1321,6 @@ _.Zones =
 				q(32376, {	-- To the Valley!
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
-				}),
-				q(32151, {	-- Tower Defense
-					["provider"] = { "n", 67631 },	-- Marshal Troteman
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
 				}),
 				q(30733, {	-- Tukka-Tuk
 					["provider"] = { "n", 60506 },	-- Thelonius

@@ -323,7 +323,9 @@ _.Zones =
 									crit(6, {	-- Heart of the Alliance
 										["sourceQuests"] = { 32316 },	-- Heart of the Alliance
 									}),
-									crit(7),	-- Secrets of the Past
+									crit(7, {	-- Secrets of the Past
+										["sourceQuests"] = { 32371 },	-- Memory Wine
+									}),
 									crit(8),	-- The Divine Bell
 									crit(9),	-- The Purge of Dalaran
 									crit(10),	-- An Ancient Ally
@@ -352,6 +354,12 @@ _.Zones =
 									{ "n", 68399 },	-- 7th Legion Champion
 								},
 								["coord"] = { 89.9, 24.5, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32377, {	-- A Kor'kron In Our Midst
+								["sourceQuests"] = { 32370 },	-- The Kun-Lai Expedition
+								["provider"] = { "n", 68375 },	-- Agent Connelly
+								["coord"] = { 65.1, 60.8, 379 },	-- Kun-Lai Summit
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32248, {	-- A Little Patience
@@ -477,6 +485,12 @@ _.Zones =
 								["provider"] = { "n", 68399 },	-- 7th Legion Champion
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32371, {	-- Memory Wine
+								["sourceQuests"] = { 32377 },	-- A Kor'kron in Our Midst
+								["provider"] = { "n", 68375 },	-- Agent Connelly
+								["coord"] = { 65.1, 60.8, 379 },	-- Kun-Lai Summit
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32122, {	-- Ogudei's Lieutenants
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
 								["provider"] = { "n", 68275 },	-- Hilda Hornswaggle
@@ -562,6 +576,13 @@ _.Zones =
 								["coord"] = { 94.5, 28.4, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32370, {	-- The Kun-Lai Expedition
+								["minReputation"] = { 1376, REVERED+2700 },
+								["sourceQuests"] = { 32316 },	-- Heart Of The Alliance
+								["provider"] = { "n", 67940 },	-- Admiral Taylor
+								["coord"] = { 94.4, 28.5, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32157, {	-- The Only Good Goblin...
 								["sourceQuests"] = { 32452 },	-- And Then There Were Goblins
 								["provider"] = { "n", 67386 },	-- Sky Admiral Rogers
@@ -594,6 +615,13 @@ _.Zones =
 								["sourceQuests"] = { 32331 },	-- The Kirin Tor
 								["provider"] = { "n", 67940 },	-- Admiral Taylor
 								["coord"] = { 94.4, 28.4, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32151, {	-- Tower Defense
+								["sourceQuests"] = { 32109 },	-- Lion's Landing
+								["provider"] = { "n", 67631 },	-- Marshal Troteman
+								["isDaily"] = true,
+								["coord"] = { 94.5, 28.9, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32158, {	-- Two Step Program
