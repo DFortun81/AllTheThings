@@ -2323,7 +2323,8 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 			if right then
 				-- Insert into the display.
 				local o = { prefix = indent, group = group, right = right };
-				if not group.collectible and group.trackable then o.prefix = string.sub(o.prefix, 4) .. GetCompletionIcon(group.saved); end
+				-- i wanted an icon to show "have you done this non-collectible thing which may contain collectible things?" but it looks bad
+				-- if not group.collectible and group.trackable then o.right = GetCompletionIcon(group.saved) .. o.right; end
 				if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. GetUnobtainableTexture(group) .. ":0|t "; end
 				tinsert(entries, o);
 				
@@ -3654,6 +3655,11 @@ local function AddTomTomWaypoint(group, auto, recur)
 		-- point arrow at closest waypoint once leaving the first recursive call
 		if not recur then
 			TomTom:SetClosestWaypoint();
+			-- if this is specifically a current quest being tracked in the log, then try to put the in-game waypoint on it as well...
+			-- maybe slumber will be ok with this?
+			if group.questID then
+				C_SuperTrack.SetSuperTrackedQuestID(group.questID);
+			end
 		end
 	elseif not recur then
 		-- only for the first click and no tomtom, plot the in-game waypoint
