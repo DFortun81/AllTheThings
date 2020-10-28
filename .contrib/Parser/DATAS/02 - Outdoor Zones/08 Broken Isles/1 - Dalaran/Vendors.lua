@@ -1102,7 +1102,7 @@ _.Zones =
 					-- Legion { Legion Season 1 & 2
 								i(146236, {	-- Ensemble: Elite Vindictive Gladiator's Satin Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 5 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 5 },	-- Season 2
@@ -1110,7 +1110,7 @@ _.Zones =
 								}),
 								i(146234, {	-- Ensemble: Elite Vindictive Gladiator's Silk Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 8 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 8 },	-- Season 2
@@ -1118,7 +1118,7 @@ _.Zones =
 								}),
 								i(146238, {	-- Ensemble: Elite Vindictive Gladiator's Felweave Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 9 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 9 },	-- Season 2
@@ -1126,7 +1126,7 @@ _.Zones =
 								}),
 								i(146228, {	-- Ensemble: Elite Vindictive Gladiator's Dragonhide Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 11 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 11 },	-- Season 2
@@ -1134,7 +1134,7 @@ _.Zones =
 								}),
 								i(146232, {	-- Ensemble: Elite Vindictive Gladiator's Leather Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 4 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 4 },	-- Season 2
@@ -1142,7 +1142,7 @@ _.Zones =
 								}),
 								i(146230, {	-- Ensemble: Elite Vindictive Gladiator's Ironskin Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 10 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 10 },	-- Season 2
@@ -1150,7 +1150,7 @@ _.Zones =
 								}),
 								i(146270, {	-- Ensemble: Elite Vindictive Gladiator's Felskin Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 12 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 12 },	-- Season 2
@@ -1158,7 +1158,7 @@ _.Zones =
 								}),
 								i(146226, {	-- Ensemble: Elite Vindictive Gladiator's Chain Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 3 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 3 },	-- Season 2
@@ -1166,7 +1166,7 @@ _.Zones =
 								}),
 								i(146224, {	-- Ensemble: Elite Vindictive Gladiator's Ringmail Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 7 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 7 },	-- Season 2
@@ -1174,7 +1174,7 @@ _.Zones =
 								}),
 								i(146222, {	-- Ensemble: Elite Vindictive Gladiator's Scaled Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 2 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 2 },	-- Season 2
@@ -1182,7 +1182,7 @@ _.Zones =
 								}),
 								i(146218, {	-- Ensemble: Elite Vindictive Gladiator's Plate Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 1 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 1 },	-- Season 2
@@ -1190,7 +1190,7 @@ _.Zones =
 								}),
 								i(146220, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 6 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 6 },	-- Season 2
@@ -1199,7 +1199,7 @@ _.Zones =
 					-- LEGION 3 & 4
 								i(147640, {	-- Ensemble: Elite Cruel Gladiator's Satin Armor (A)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 5 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 5 },	-- Season 4
@@ -1207,7 +1207,7 @@ _.Zones =
 								}),
 								i(147644, {	-- Ensemble: Elite Cruel Gladiator's Silk Armor (A)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 8 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 8 },	-- Season 4
@@ -1215,7 +1215,7 @@ _.Zones =
 								}),
 								i(147629, {	-- Ensemble: Elite Cruel Gladiator's Felweave Armor (A)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 9 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 9 },	-- Season 4
@@ -1223,7 +1223,7 @@ _.Zones =
 								}),
 								i(147623, {	-- Ensemble: Elite Cruel Gladiator's Dragonhide Armor (A)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 11 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 11 },	-- Season 4
@@ -1231,7 +1231,7 @@ _.Zones =
 								}),
 								i(147634, {	-- Ensemble: Elite Cruel Gladiator's Leather Armor (A)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 4 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 4 },	-- Season 4
@@ -1239,7 +1239,7 @@ _.Zones =
 								}),
 								i(147632, {	-- Ensemble: Elite Cruel Gladiator's Ironskin Armor (A)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 10 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 10 },	-- Season 4
@@ -1247,7 +1247,7 @@ _.Zones =
 								}),
 								i(147627, {	-- Ensemble: Elite Cruel Gladiator's Felskin Armor (A)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 12 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 12 },	-- Season 4
@@ -1255,7 +1255,7 @@ _.Zones =
 								}),
 								i(147621, {	-- Ensemble: Elite Cruel Gladiator's Chain Armor (A)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 3 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 3 },	-- Season 4
@@ -1263,7 +1263,7 @@ _.Zones =
 								}),
 								i(147637, {	-- Ensemble: Elite Cruel Gladiator's Ringmail Armor (A)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 7 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 7 },	-- Season 4
@@ -1271,7 +1271,7 @@ _.Zones =
 								}),
 								i(147642, {	-- Ensemble: Elite Cruel Gladiator's Scaled Armor (A)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 2 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 2 },	-- Season 4
@@ -1279,7 +1279,7 @@ _.Zones =
 								}),
 								i(147636, {	-- Ensemble: Elite Cruel Gladiator's Plate Armor (A)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 1 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 1 },	-- Season 4
@@ -1287,7 +1287,7 @@ _.Zones =
 								}),
 								i(147625, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor (A)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 6 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 6 },	-- Season 4
@@ -1296,7 +1296,7 @@ _.Zones =
 					-- LEGION Season 5, 6 & 7
 								i(149473, {	-- Ensemble: Elite Fierce Gladiator's Satin Armor (A)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 5 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 5	},	-- Season 6
@@ -1305,7 +1305,7 @@ _.Zones =
 								}),
 								i(149477, {	-- Ensemble: Elite Fierce Gladiator's Silk Armor (A)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 8 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 8	},	-- Season 6
@@ -1314,7 +1314,7 @@ _.Zones =
 								}),
 								i(149462, {	-- Ensemble: Elite Fierce Gladiator's Felweave Armor (A)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 9 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 9	},	-- Season 6
@@ -1323,7 +1323,7 @@ _.Zones =
 								}),
 								i(149456, {	-- Ensemble: Elite Fierce Gladiator's Dragonhide Armor (A)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 11 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 11 },	-- Season 6
@@ -1332,7 +1332,7 @@ _.Zones =
 								}),
 								i(149467, {	-- Ensemble: Elite Fierce Gladiator's Leather Armor (A)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 4 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 4	},	-- Season 6
@@ -1341,7 +1341,7 @@ _.Zones =
 								}),
 								i(149465, {	-- Ensemble: Elite Fierce Gladiator's Ironskin Armor (A)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 10 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 10 },	-- Season 6
@@ -1350,7 +1350,7 @@ _.Zones =
 								}),
 								i(149460, {	-- Ensemble: Elite Fierce Gladiator's Felskin Armor (A)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 12 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 12 },	-- Season 6
@@ -1359,7 +1359,7 @@ _.Zones =
 								}),
 								i(149454, {	-- Ensemble: Elite Fierce Gladiator's Chain Armor (A)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 3 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 3 },	-- Season 6
@@ -1368,7 +1368,7 @@ _.Zones =
 								}),
 								i(149470, {	-- Ensemble: Elite Fierce Gladiator's Ringmail Armor (A)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 7 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 7	},	-- Season 6
@@ -1377,7 +1377,7 @@ _.Zones =
 								}),
 								i(149475, {	-- Ensemble: Elite Fierce Gladiator's Scaled Armor (A)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 2 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 2	},	-- Season 6
@@ -1386,7 +1386,7 @@ _.Zones =
 								}),
 								i(149469, {	-- Ensemble: Elite Fierce Gladiator's Plate Armor (A)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 1 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 1	},	-- Season 6
@@ -1395,7 +1395,7 @@ _.Zones =
 								}),
 								i(149458, {	-- Ensemble: Elite Fierce Gladiator's Dreadplate Armor (A)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 6 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 6	},	-- Season 6
@@ -3372,7 +3372,7 @@ _.Zones =
 					-- LEGION Season 1 & 2
 								i(146237, {	-- Ensemble: Elite Vindictive Gladiator's Satin Armor (H)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 5 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 5 },	-- Season 2
@@ -3380,7 +3380,7 @@ _.Zones =
 								}),
 								i(146235, {	-- Ensemble: Elite Vindictive Gladiator's Silk Armor (H)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 8 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 8 },	-- Season 2
@@ -3388,7 +3388,7 @@ _.Zones =
 								}),
 								i(146239, {	-- Ensemble: Elite Vindictive Gladiator's Felweave Armor (H)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 9 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 9 },	-- Season 2
@@ -3396,7 +3396,7 @@ _.Zones =
 								}),
 								i(146229, {	-- Ensemble: Elite Vindictive Gladiator's Dragonhide Armor (H)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 11 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 11 },	-- Season 2
@@ -3404,7 +3404,7 @@ _.Zones =
 								}),
 								i(146233, {	-- Ensemble: Elite Vindictive Gladiator's Leather Armor (H)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 11 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 11 },	-- Season 2
@@ -3412,7 +3412,7 @@ _.Zones =
 								}),
 								i(146231, {	-- Ensemble: Elite Vindictive Gladiator's Ironskin Armor (H)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 10 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 10 },	-- Season 2
@@ -3420,7 +3420,7 @@ _.Zones =
 								}),
 								i(146271, {	-- Ensemble: Elite Vindictive Gladiator's Felskin Armor (H)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 12 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 12 },	-- Season 2
@@ -3428,7 +3428,7 @@ _.Zones =
 								}),
 								i(146227, {	-- Ensemble: Elite Vindictive Gladiator's Chain Armor
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 3 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 3 },	-- Season 2
@@ -3436,7 +3436,7 @@ _.Zones =
 								}),
 								i(146225, {	-- Ensemble: Elite Vindictive Gladiator's Ringmail Armor
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 7 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 7 },	-- Season 2
@@ -3444,7 +3444,7 @@ _.Zones =
 								}),
 								i(146223, {	-- Ensemble: Elite Vindictive Gladiator's Scaled Armor (H)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 2 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 2 },	-- Season 2
@@ -3452,7 +3452,7 @@ _.Zones =
 								}),
 								i(146219, {	-- Ensemble: Elite Vindictive Gladiator's Plate Armor
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 1 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 1 },	-- Season 2
@@ -3460,7 +3460,7 @@ _.Zones =
 								}),
 								i(146221, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor (H)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 8 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 8 },	-- Season 2
@@ -3469,7 +3469,7 @@ _.Zones =
 					-- LEGION Season 3 & 4
 								i(147639, {	-- Ensemble: Elite Cruel Gladiator's Satin Armor (H)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 5 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 5	},	-- Season 4
@@ -3477,7 +3477,7 @@ _.Zones =
 								}),
 								i(147643, {	-- Ensemble: Elite Cruel Gladiator's Silk Armor (H)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 8 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 8	},	-- Season 4
@@ -3485,7 +3485,7 @@ _.Zones =
 								}),
 								i(147630, {	-- Ensemble: Elite Cruel Gladiator's Felweave Armor (H)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 9 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 9	},	-- Season 4
@@ -3493,7 +3493,7 @@ _.Zones =
 								}),
 								i(147624, {	-- Ensemble: Elite Cruel Gladiator's Dragonhide Armor (H)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 11 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 11 },	-- Season 4
@@ -3501,7 +3501,7 @@ _.Zones =
 								}),
 								i(147633, {	-- Ensemble: Elite Cruel Gladiator's Leather Armor (H)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 4 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 4	},	-- Season 4
@@ -3509,7 +3509,7 @@ _.Zones =
 								}),
 								i(147631, {	-- Ensemble: Elite Cruel Gladiator's Ironskin Armor (H)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 10 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 10 },	-- Season 4
@@ -3517,7 +3517,7 @@ _.Zones =
 								}),
 								i(147628, {	-- Ensemble: Elite Cruel Gladiator's Felskin Armor (H)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 12 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 12 },	-- Season 4
@@ -3525,7 +3525,7 @@ _.Zones =
 								}),
 								i(147622, {	-- Ensemble: Elite Cruel Gladiator's Chain Armor (H)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 3 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 3 },	-- Season 4
@@ -3533,7 +3533,7 @@ _.Zones =
 								}),
 								i(147638, {	-- Ensemble: Elite Cruel Gladiator's Ringmail Armor (H)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 7 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 7	},	-- Season 4
@@ -3541,7 +3541,7 @@ _.Zones =
 								}),
 								i(147641, {	-- Ensemble: Elite Cruel Gladiator's Scaled Armor (H)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 2 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 2	},	-- Season 4
@@ -3549,7 +3549,7 @@ _.Zones =
 								}),
 								i(147635, {	-- Ensemble: Elite Cruel Gladiator's Plate Armor (H)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 1 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 1	},	-- Season 4
@@ -3557,7 +3557,7 @@ _.Zones =
 								}),
 								i(147626, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor (H)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 6 },	-- Season 3
 										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 6	},	-- Season 4
@@ -3566,7 +3566,7 @@ _.Zones =
 					-- LEGION Season 5, 6 & 7
 								i(149472, {	-- Ensemble: Elite Fierce Gladiator's Satin Armor (H)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 5 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 5	},	-- Season 6
@@ -3575,7 +3575,7 @@ _.Zones =
 								}),
 								i(149476, {	-- Ensemble: Elite Fierce Gladiator's Silk Armor (H)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 8 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 8	},	-- Season 6
@@ -3584,7 +3584,7 @@ _.Zones =
 								}),
 								i(149463, {	-- Ensemble: Elite Fierce Gladiator's Felweave Armor (H)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 9 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 9	},	-- Season 6
@@ -3593,7 +3593,7 @@ _.Zones =
 								}),
 								i(149457, {	-- Ensemble: Elite Fierce Gladiator's Dragonhide Armor (H)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 11 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 11 },	-- Season 6
@@ -3602,7 +3602,7 @@ _.Zones =
 								}),
 								i(149466, {	-- Ensemble: Elite Fierce Gladiator's Leather Armor (H)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 4 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 4	},	-- Season 6
@@ -3611,7 +3611,7 @@ _.Zones =
 								}),
 								i(149464, {	-- Ensemble: Elite Fierce Gladiator's Ironskin Armor (H)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 10 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 10 },	-- Season 6
@@ -3620,7 +3620,7 @@ _.Zones =
 								}),
 								i(149461, {	-- Ensemble: Elite Fierce Gladiator's Felskin Armor (H)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 12 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 12 },	-- Season 6
@@ -3629,7 +3629,7 @@ _.Zones =
 								}),
 								i(149455, {	-- Ensemble: Elite Fierce Gladiator's Chain Armor (H)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 3 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 3 },	-- Season 6
@@ -3638,7 +3638,7 @@ _.Zones =
 								}),
 								i(149471, {	-- Ensemble: Elite Fierce Gladiator's Ringmail Armor (H)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 7 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 7 },	-- Season 6
@@ -3647,7 +3647,7 @@ _.Zones =
 								}),
 								i(149474, {	-- Ensemble: Elite Fierce Gladiator's Scaled Armor (H)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 2 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 2 },	-- Season 6
@@ -3656,7 +3656,7 @@ _.Zones =
 								}),
 								i(149468, {	-- Ensemble: Elite Fierce Gladiator's Plate Armor (H)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 1 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 1 },	-- Season 6
@@ -3665,7 +3665,7 @@ _.Zones =
 								}),
 								i(149459, {	-- Ensemble: Elite Fierce Gladiator's Dreadplate Armor (H)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 6 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 6 },	-- Season 6
