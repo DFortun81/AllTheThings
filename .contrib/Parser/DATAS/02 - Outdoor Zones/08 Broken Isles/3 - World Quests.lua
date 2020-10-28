@@ -463,6 +463,7 @@ _.Zones =
 					i(141277),	-- Bloodtotem Brand
 					i(140080),	-- Everchill Pearl
 					i(141275),	-- Fertile Soil
+					i(141261),	-- Fires of Heaven
 					i(141265),	-- Gift of Flame
 					i(143704),	-- Harpybane Fetish
 					i(143686),	-- Hatecoil Badge of Glory

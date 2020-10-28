@@ -768,7 +768,6 @@ _.Zones =
 				n(-387, {	-- Relics
 					i(143691),	-- Bloody Kvaldir Pennant
 					i(143687),	-- Felskorn Mania
-					i(141261),	-- Fires of Heaven
 					i(141262),	-- Rune-Etched Quill
 					i(141260),	-- Shieldmaiden's Prayer
 					i(143690),	-- Specter of Helheim
