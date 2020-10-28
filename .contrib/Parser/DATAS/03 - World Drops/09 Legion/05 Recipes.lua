@@ -25,10 +25,10 @@ _.WorldDrops =
 			n(-182, {	-- Enchanting
 				i(141919),	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 3)
 				i(128610),	-- Formula: Enchant Neck - Mark of the Claw (Rank 3)
-				i(141915, {	-- Formula: Enchant Neck - Mark of the Heavy Hide (Rank 2)
+				i(141914, {	-- Formula: Enchant Neck - Mark of the Heavy Hide (Rank 2)
 					["description"] = "Drops from bears in any Broken Isles zone.",
 				}),
-				i(141914, {	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 2)
+				i(141915, {	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 2)
 					["description"] = "Drops from PVP world quest mobs in any Broken Isles zone.",
 				}),
 				i(141918),	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 3)
