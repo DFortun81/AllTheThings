@@ -13,10 +13,6 @@ _.Zones =
 					q(48104, {	-- A Greater Challenge
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(53279, {	-- Blooming Star Moss
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(54119, {	-- Hartford Sternbach
 						["isWorldQuest"] = true,
 						["lvl"] = 110,
@@ -163,6 +159,11 @@ _.Zones =
 					q(51613, {	-- Bloodmaw
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
+					}),
+					q(53279, {	-- Blooming Star Moss
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["requireSkill"] = HERBALISM,
 					}),
 					q(54281, {	-- Bombing Ballistae
 						["isWorldQuest"] = true,

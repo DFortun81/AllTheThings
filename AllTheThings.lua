@@ -4383,7 +4383,9 @@ app.TryColorizeName = function(self, name)
 		return "|cff7f40bf" .. name .. "|r";
 	elseif self.isRaid then
 		return "|cffff8000" .. name .. "|r";
-	elseif app.Settings:GetTooltipSetting("UseMoreColors") then
+		-- if people REALLY only want to see colors in account/debug then we can comment this in
+	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode"))
+	then
 		-- class color
 		if self.classID then
 			return "|c" .. RAID_CLASS_COLORS[select(2, GetClassInfo(self.classID))].colorStr .. name .. "|r";
