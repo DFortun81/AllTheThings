@@ -5,6 +5,16 @@ profession(2720, {	-- Junkyard Tinkering
 			["name"] = "Junkyard Tinkering",
 			["categoryID"] = 1257,	-- Junkyard Tinkering
 			["g"] = {
+				{	-- Equipment
+					["categoryID"] = 1283,
+					["g"] = {
+						{
+							-- This recipe gets removed once you craft the item once
+							["recipeID"] = 300122,   -- Scrapmaster's Blowtorch
+							["u"] = 15,				-- Training/Unlearnable
+						}
+                    },
+				},
 				{	-- Explosives
 					["categoryID"] = 1256,
 					["g"] = {
@@ -27,6 +37,16 @@ profession(2720, {	-- Junkyard Tinkering
 							["u"] = 15,				-- Profession Training Recipe
 						},
 					}
+				},
+				{	-- Other
+					["categoryID"] = 1261,
+					["g"] = {
+						{
+							-- This recipe gets removed once you craft the item once							
+							["recipeID"] = 300271,   -- Perfectly Timed Differential
+							["u"] = 15,				-- Training/Unlearnable
+						}
+                    },
 				},
 				--[[{
 					["name"] = "Rustbolt Upgrades",	-- Cant figure out this categoryID
