@@ -431,7 +431,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12397, {	-- Candy Bucket — Cape of Stranglethorn, Booty Bay, neutral
 				["isYearly"] = true,
-				["coord"] = { 27.1, 77.3, 210 },
+				["coord"] = { 40.9, 73.8, 210 },
 				["maps"] = { 210 },	-- The Cape of Stranglethorn
 				["g"] = {
 					i(37586),	-- Handful of Treats
