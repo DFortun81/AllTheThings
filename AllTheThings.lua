@@ -4377,6 +4377,31 @@ app.ToggleMainList = function()
 end
 app.RefreshCollections = RefreshCollections;
 app.RefreshSaves = RefreshSaves;
+app.TryColorizeName = function(self, name)
+	if name == RETRIEVING_DATA then return name; end
+	if self.isBreadcrumb then
+		return "|cff7f40bf" .. name .. "|r";
+	elseif self.isRaid then
+		return "|cffff8000" .. name .. "|r";
+	elseif app.Settings:GetTooltipSetting("UseMoreColors") then
+		-- class color
+		if self.classID then
+			return "|c" .. RAID_CLASS_COLORS[select(2, GetClassInfo(self.classID))].colorStr .. name .. "|r";
+		elseif self.c and #self.c == 1 then
+			return "|c" .. RAID_CLASS_COLORS[select(2, GetClassInfo(self.c[1]))].colorStr .. name .. "|r";
+		-- faction colors
+		elseif self.r then
+			-- red for Horde
+			if self.r == Enum.FlightPathFaction.Horde then 
+				return "|cffcc6666" .. name .. "|r";
+			-- blue for Alliance
+			elseif self.r == Enum.FlightPathFaction.Alliance then
+				return "|cff407fbf" .. name .. "|r";
+			end
+		end
+	end
+	return name;
+end
 
 -- Tooltip Functions
 local function AttachTooltipRawSearchResults(self, group)
@@ -4934,8 +4959,7 @@ app.BaseAchievementCriteria = {
 		elseif key == "key" then
 			return "criteriaID";
 		elseif key == "text" then
-			if t["isRaid"] then return "|cffff8000" .. t.name .. "|r"; end
-			return t.name;
+			return app.TryColorizeName(t, t.name);
 		elseif key == "name" then
 			if t.itemID then
 				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
@@ -5175,7 +5199,9 @@ app.BaseCategory = {
 			return "categoryID";
 		elseif key == "text" then
 			local info = app.GetDataSubMember("Categories", t.categoryID);
-			if info then return info; end
+			if info then 
+				return app.TryColorizeName(t, info);
+			end
 			return "Open your Professions to Cache";
 		elseif key == "icon" then
 			return "Interface/ICONS/INV_Garrison_Blueprints1";
@@ -5668,7 +5694,7 @@ end)();
 					end
 				end
 			elseif key == "text" then
-				return t.info.name or "Visit the Flight Master to cache.";
+				return app.TryColorizeName(t, t.info.name or "Visit the Flight Master to cache.");
 			elseif key == "u" then
 				return t.info.u;
 			elseif key == "coord" then
@@ -6969,7 +6995,7 @@ app.BaseObject = {
 			return "objectID";
 		elseif key == "text" then
 			local name = L["OBJECT_ID_NAMES"][t.objectID] or ("Object ID #" .. t.objectID);
-			if t["isRaid"] then name = "|cffff8000" .. name .. "|r"; end
+			name = app.TryColorizeName(t, name);
 			rawset(t, "text", name);
 			return name;
 		elseif key == "icon" then
@@ -7162,16 +7188,7 @@ app.BaseQuest = {
 					end
 				end
 			end
-			-- purple for breadcrumbs
-			if t.isBreadcrumb then questName = "|cff663399" .. questName .. "|r";
-			-- -- green for 'on this quest'
-			-- elseif false then -- TODO: Find out how to check if character is on this quest, and turn name green
-			-- -- red for Horde
-			-- elseif t.r == Enum.FlightPathFaction.Horde then questName = "|cffB81818" .. questName .. "|r";
-			-- -- blue for Alliance
-			-- elseif t.r then questName = "|cff305BAB" .. questName .. "|r";
-			end			
-			return questName;
+			return app.TryColorizeName(t, questName);
 		elseif key == "questName" then
 			local questID = t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID;
 			return QuestTitleFromID[questID];
