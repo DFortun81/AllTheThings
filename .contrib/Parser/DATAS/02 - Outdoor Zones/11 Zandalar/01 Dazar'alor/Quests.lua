@@ -796,10 +796,10 @@ _.Zones =
 					["provider"] = { "n", 122915 },	-- Zolani
 				}),
 				q(48452, {	-- The Red Market
-					["sourceQuests"] = { 48456 },	-- Witch Doctor Jala
+					["sourceQuests"] = { 46926 },	-- Shakedown
+					["provider"] = { "n", 126148 },	-- Witch Doctor Jala
 					["coord"] = { 44.3, 82.1, 1165 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 126148 },	-- Witch Doctor Jala
 				}),
 				q(48404, {	-- The Scamps
 					["sourceQuests"] = { 52131 },	-- We Need Each Other
@@ -931,9 +931,10 @@ _.Zones =
 				q(48456, {	-- Witch Doctor Jala
 					["sourceQuests"] = { 46926 },	-- Shakedown
 					["isBreadcrumb"] = true,
+					["provider"] = { "n", 135441 },	-- Zolani
 					["coord"] = { 50.0, 84.9, 1165 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 135441 },	-- Zolani
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(47897, {	-- Zanchuli Traitors
 					["sourceQuests"] = { 47509 },	-- Terrace of the Chosen

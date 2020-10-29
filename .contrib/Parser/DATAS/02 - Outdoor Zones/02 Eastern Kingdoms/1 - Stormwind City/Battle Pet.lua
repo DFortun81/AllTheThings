@@ -18,6 +18,7 @@ _.Zones =
 				}),
 				n(QUESTS, {
 					q(32008, {	-- Audrey Burnhep
+						["isBreadcrumb"] = true,
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
