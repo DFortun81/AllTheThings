@@ -866,7 +866,7 @@ _.Zones =
 				}),
 				q(53370, {	-- Hour of Reckoning
 					["provider"] = { "n", 144095 },	-- Master Mathias Shaw
-					["description"] = "This quest is automatically offered when you reach level 110.",
+					["description"] = "This quest is automatically offered.",
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 					["g"] = {
@@ -1473,10 +1473,13 @@ _.Zones =
 					["lvl"] = 85,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(46727, {	-- Tides of War (BfA version, may be removed now)
+				q(46727, {	-- Tides of War
 					["provider"] = { "n", 142930 },	-- Halford Wyrmbane
+					["providers"] = {
+						{ "n", 142930 },	-- Halford Wyrmbane
+						{ "n", 49748 },		-- Hero's Herald
+					},
 					["coord"] = { 27.6, 21.2 },
-					["sourceQuest"] = 51403,	-- The Speaker's Imperative
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
