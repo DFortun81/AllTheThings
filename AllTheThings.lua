@@ -15683,6 +15683,9 @@ app.events.VARIABLES_LOADED = function()
 			{ 10377, { 39363 } }, -- Equipment Blueprint: Ice Cutter
 			{ 10378, { 39355 } }, -- Equipment Blueprint: Trained Shark Tank
 			{ 10379, { 39360 } }, -- Equipment Blueprint: True Iron Rudder
+			-- stupid pet tamer breadcrumbs that are once per account (there may be more breadcrumbs for the questline that need to be added here)
+			{ 6603, { 32008 } },	-- Taming Eastern Kingdoms / Audrey Burnhep (A)
+			{ 6602, { 32009 } },	-- Taming Kalimdor / Varzok (H)
 		}) do
 			-- If you completed the achievement, then mark the associated quests.
 			if select(4, GetAchievementInfo(achievementQuests[1])) then

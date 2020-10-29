@@ -1551,6 +1551,7 @@ _.HiddenQuestTriggers =
 		q(45512),	-- Highmountain - WQ rare: Mawat'aki
 		q(48381),	-- Highmountain - WQ rare: Obsidian Deathwarder
 		q(45511),	-- Highmountain - WQ rare: Olokk the Shipbreaker
+		q(45510),	-- Highmountain - WQ rare: Ormagrogg
 		q(44039),	-- Highmountain - WQ rare: Sea King Tidross
 		q(44879),	-- Highmountain - WQ rare: Snowfeather Matriarch
 		q(40601),	-- 7.0 Highmountain - Vignette - Pinerock Basin - Highmountain Beastmaster See Treasure (JLW) — looting treasure after Arru

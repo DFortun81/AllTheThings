@@ -171,10 +171,10 @@ _.Zones =
 
 				}),
 				q(32009, {	-- Varzok
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
 				}),
 				--[[
 				Putting quests 31882-31885 here for now, but I'm confident each of these are offered

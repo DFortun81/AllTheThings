@@ -814,10 +814,11 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(12885, {	-- The Exiles of Ulduar
+					["sourceQuests"] = { 12872 },	-- Norgannon's Shell
+					["isBreadcrumb"] = true,
+					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["races"] = ALLIANCE_ONLY,
-					["description"] = "Use Brann's Communicator to pick this quest up.",
-					["sourceQuests"] = { 12872 },	-- Norgannon's Shell
 				}),
 				q(12873, {	-- The Frostborn King
 					["provider"] = { "n", 29743 },	-- Lagnus
