@@ -67,6 +67,8 @@ local function OnUpdate(self)
 	-- Stop running OnUpdate if nothing in the Stack to process
 	if #self.__stack < 1 then
 		self:SetScript("OnUpdate", nil);
+		-- clear the next yield value since nothing is running
+		if app.nextYield then app.nextYield = nil; end
 	end
 end
 local function Push(self, name, method)
@@ -89,7 +91,9 @@ local function StartCoroutine(name, method)
 				if ok then return true;	-- This means more work is required.
 				else
 					-- Show the error. Returning nothing is the same as canceling the work.
+					print(debugstack(instance));
 					print(err);
+					app.print(app.Version .. ": Please report this error to the ATT Discord, thanks! ");
 				end
 			end
 			-- print("coroutine complete",name);
@@ -8930,10 +8934,14 @@ function app.QuestCompletionHelper(questID)
 end
 -- helps prevent coroutines running longer than 1 second per frame, not sure we can get a finer time resolution like this...
 function app:CheckYieldHelper()
-	if coroutine.running() and (not app.nextYield or app.nextYield <= time()) then
-		app.nextYield = time() + 1;
-		-- print("yieldHelper",app.nextYield);
-		coroutine.yield();
+	if coroutine.running() then
+		-- first call, then set the next yield
+		if not app.nextYield then app.nextYield = time(); end
+		if app.nextYield < time() then
+			app.nextYield = time();
+			-- print("yieldHelper",app.nextYield);
+			coroutine.yield();
+		end
 	end
 end
 
@@ -13397,7 +13405,6 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 		self:RegisterEvent("TRADE_SKILL_CLOSE");
 		self:RegisterEvent("NEW_RECIPE_LEARNED");
-		self.wait = 5;
 		self.data = {
 			['text'] = "Profession List",
 			['icon'] = "Interface\\Icons\\INV_Scroll_04.blp", 
@@ -13533,10 +13540,10 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 		end
 		self.RefreshRecipes = function(self)
 			if app.CollectibleRecipes then
-				self.wait = 5;
 				StartCoroutine("RefreshingRecipes", function()
-					while self.wait > 0 do
-						self.wait = self.wait - 1;
+					local wait = 5;
+					while wait > 0 do
+						wait = wait - 1;
 						coroutine.yield();
 					end
 					self:CacheRecipes();
