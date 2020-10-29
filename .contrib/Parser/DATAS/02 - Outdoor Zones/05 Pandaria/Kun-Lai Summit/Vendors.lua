@@ -381,6 +381,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
+						un(REMOVED_FROM_GAME, i(101697)), -- Grievous Gladiator's Tabard
 						n(-661, {	-- Gladiator
 							n(-319, {	-- Weapons
 								un(REMOVED_FROM_GAME, i(100536)), -- Grievous Gladiator's Spellblade (Horde)

@@ -33,14 +33,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(163433)),	-- Honorbound Outrider's Mantle
 		un(NEVER_IMPLEMENTED, i(163440)),	-- Honorbound Outrider's Belt
 
-		-- Cloth Blue Warfront Pieces
-		un(NEVER_IMPLEMENTED, i(163340)),	-- 7th Legionnaire's Circlet
-		un(NEVER_IMPLEMENTED, i(163269)),	-- 7th Legionnaire's Mantle
-		un(NEVER_IMPLEMENTED, i(163343)),	-- 7th Legionnaire's Sash
-		un(NEVER_IMPLEMENTED, i(163427)),	-- Honorbound Artificer's Skullcap
-		un(NEVER_IMPLEMENTED, i(163425)),	-- Honorbound Artificer's Mantle
-		un(NEVER_IMPLEMENTED, i(163431)),	-- Honorbound Artificer's Sash
-
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
 		un(NEVER_IMPLEMENTED, i(166405)),	-- Blindside (TW Vendor?)
 		un(NEVER_IMPLEMENTED, i(166364)),	-- Song of the Fallen (TW Vendor?)
@@ -73,25 +65,15 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(140704)),	-- Assassins Serrated Dagger
 		un(NEVER_IMPLEMENTED, i(150599)),	-- Assassins Serrated Dagger
 
-	--	random stuff from the BFA world drop files that was commented out and cluttery, all show up as 'retrieving data'
-		i(159190),	--  Foxhollow Bracelets
-		i(159183),	--  Foxhollow Cord
-		i(159170),	--  Freehold Handwraps
-		i(159181),	--  Mistfall Spaulders
-		i(159182),	--  Mistfall Chainmail
-		i(159176),	--  Mistfall Bracers
-		i(159177),	--  Mistfall Gloves
-		i(159175),	--  Mistfall Belt
-		i(159180),	--  Mistfall Legguards
-		i(159178),	--  Mistfall Boots
-		i(159165),	--  Ashvane Company Bracers
-		i(159159),	--  Ashvane Company Gauntlets
-		i(159160),	--  Ashvane Company Girdle
+		un(NEVER_IMPLEMENTED, i(159165)),	--  Ashvane Company Bracers
+		un(NEVER_IMPLEMENTED, i(159159)),	--  Ashvane Company Gauntlets
+		un(NEVER_IMPLEMENTED, i(159160)),	--  Ashvane Company Girdle
 
 		-- patch 8.3 removed content
 		un(NEVER_IMPLEMENTED, i(173421)),	-- Black Empire Signet
 		un(NEVER_IMPLEMENTED, i(173426)),	-- Black Empire trinkets
-
+	}),
+	n(105, {	-- Achievements
 		un(NEVER_IMPLEMENTED, ach(14116)),	-- All Bridges Burned
 		un(NEVER_IMPLEMENTED, ach(14121)),	-- Daring Defender
 		un(NEVER_IMPLEMENTED, ach(14113)),	-- Imagine a Dark, Dark World
@@ -110,7 +92,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, ach(13996)),	-- The Dark Horde
 		un(NEVER_IMPLEMENTED, ach(13995)),	-- Twilight over the White City
 	}),
-	n(-220, {	-- Class
+	n(-220, {	-- Class "Spells"
 		cl(DEMONHUNTER, {
 			un(NEVER_IMPLEMENTED, i(129738)),	-- Verus
 		}),
@@ -336,9 +318,18 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(6243)),		-- Green Woolen Robe
 			un(NEVER_IMPLEMENTED, i(105710)),	-- Lasso Bracers, Humanoid
 			un(NEVER_IMPLEMENTED, i(105928)),	-- Magic Bunny Hat
+			un(NEVER_IMPLEMENTED, i(159190)),	--  Foxhollow Bracelets
+			un(NEVER_IMPLEMENTED, i(159170)),	--  Freehold Handwraps
+			un(NEVER_IMPLEMENTED, i(159183)),	--  Foxhollow Cord
 			un(NEVER_IMPLEMENTED, i(78017)),	-- Replica Magister's Leggings (Cloth)
 			un(NEVER_IMPLEMENTED, i(4989)),		-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
 			un(NEVER_IMPLEMENTED, i(4990)),		-- Scorched Bands
+			un(NEVER_IMPLEMENTED, i(163340)),	-- 7th Legionnaire's Circlet
+			un(NEVER_IMPLEMENTED, i(163269)),	-- 7th Legionnaire's Mantle
+			un(NEVER_IMPLEMENTED, i(163343)),	-- 7th Legionnaire's Sash
+			un(NEVER_IMPLEMENTED, i(163427)),	-- Honorbound Artificer's Skullcap
+			un(NEVER_IMPLEMENTED, i(163425)),	-- Honorbound Artificer's Mantle
+			un(NEVER_IMPLEMENTED, i(163431)),	-- Honorbound Artificer's Sash
 			un(NEVER_IMPLEMENTED, i(109344)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109363)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109379)),	-- Unknown
@@ -633,6 +624,13 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(54686)),	-- Barbaric Harness
 			un(NEVER_IMPLEMENTED, i(14550)),	-- Bladebane Armguards (Leather)
 			un(NEVER_IMPLEMENTED, i(54703)),	-- Bogwalker Boots
+			un(NEVER_IMPLEMENTED, i(159181)),	--  Mistfall Spaulders
+			un(NEVER_IMPLEMENTED, i(159182)),	--  Mistfall Chainmail
+			un(NEVER_IMPLEMENTED, i(159176)),	--  Mistfall Bracers
+			un(NEVER_IMPLEMENTED, i(159177)),	--  Mistfall Gloves
+			un(NEVER_IMPLEMENTED, i(159175)),	--  Mistfall Belt
+			un(NEVER_IMPLEMENTED, i(159180)),	--  Mistfall Legguards
+			un(NEVER_IMPLEMENTED, i(159178)),	--  Mistfall Boots
 			un(NEVER_IMPLEMENTED, i(12104)),	-- Brindlethorn Tunic (Leather)
 			un(NEVER_IMPLEMENTED, i(54708)),	-- Ceremonial Leather Gloves
 			un(NEVER_IMPLEMENTED, i(54666)),	-- Ceremonial Leather Harness
@@ -1544,6 +1542,10 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(134693)),	-- Enveloping Cape
 			un(NEVER_IMPLEMENTED, i(134699)),	-- Enveloping Drape
 			un(NEVER_IMPLEMENTED, i(134609)),	-- Scorching Cape
+			un(NEVER_IMPLEMENTED, i(163311)),	-- 7th legionaies shroud
+			un(NEVER_IMPLEMENTED, i(163312)),	-- 7th legionaies shawl
+			un(NEVER_IMPLEMENTED, i(163348)),	-- warfront gear cloak 
+			un(NEVER_IMPLEMENTED, i(163364)),	-- warfront gear cloak 
 			un(NEVER_IMPLEMENTED, i(134617)),	-- Scorching Drape
 			un(NEVER_IMPLEMENTED, i(163245)),	-- 7th legionaire's satin cloak
 			un(NEVER_IMPLEMENTED, i(150489)),	-- Shroud of Forgiveness
