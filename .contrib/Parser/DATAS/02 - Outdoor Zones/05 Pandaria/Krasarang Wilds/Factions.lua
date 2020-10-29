@@ -326,8 +326,12 @@ _.Zones =
 									crit(7, {	-- Secrets of the Past
 										["sourceQuests"] = { 32371 },	-- Memory Wine
 									}),
-									crit(8),	-- The Divine Bell
-									crit(9),	-- The Purge of Dalaran
+									crit(8, {	-- The Divine Bell
+										["sourceQuests"] = { 32394 },	-- The Divine Bell
+									}),
+									crit(9, {	-- The Purge of Dalaran
+										["sourceQuests"] = { 32423 },	-- What Had To Be Done
+									}),
 									crit(10),	-- An Ancient Ally
 									crit(11),	-- In Search of Harmony
 									crit(12),	-- Breath of Darkest Shadow
@@ -413,6 +417,19 @@ _.Zones =
 								["coord"] = { 16.3, 77.9, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32420, {	-- Cashing Out
+								["sourceQuests"] = { 32416 },	-- Jaina's Resolution
+								["provider"] = { "n", 68687 },	-- Vereesa Windrunner
+								["coord"] = { 34.5, 48.7, 501 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32414, {	-- Darnassus Attacked?
+								["minReputation"] = { 1376, REVERED+8600 },
+								["sourceQuests"] = { 32394 },	-- The Divine Bell
+								["provider"] = { "n", 67940 },	-- Admiral Taylor
+								["coord"] = { 94.4, 28.4, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32446, {	-- Dis-Assembly Required
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
 								["provider"] = { "n", 68166 },	-- Sully "The Pickle" McLeary
@@ -480,6 +497,12 @@ _.Zones =
 								["coord"] = { 16.1, 77.9, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32416, {	-- Jaina's Resolution
+								["sourceQuests"] = { 32460 },	-- Tracking the Thieves
+								["provider"] = { "n", 68651 },	-- Lady Jaina Proudmoore
+								["coord"] = { 40.0, 50.4, 57 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32109, {	-- Lion's Landing
 								["sourceQuests"] = { 32247 },	-- A King Among Men
 								["provider"] = { "n", 68399 },	-- 7th Legion Champion
@@ -505,6 +528,18 @@ _.Zones =
 								["coord"] = { 31.0, 27.9, 419 },	-- Ruins of Ogudei
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32419, {	-- Nowhere to Hide
+								["sourceQuests"] = { 32416 },	-- Jaina's Resolution
+								["provider"] = { "n", 68687 },	-- Vereesa Windrunner
+								["coord"] = { 34.5, 48.7, 501 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32421, {	-- Nowhere to Run
+								["sourceQuests"] = { 32416 },	-- Jaina's Resolution
+								["provider"] = { "n", 68687 },	-- Vereesa Windrunner
+								["coord"] = { 34.5, 48.7, 501 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32116, {	-- Priorities, People!
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
 								["provider"] = { "n", 67631 },	-- Marshal Troteman
@@ -523,6 +558,12 @@ _.Zones =
 								["provider"] = { "n", 68908 },	-- Amber Kearnen
 								["isDaily"] = true,
 								["coord"] = { 94.7, 28.3, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32417, {	-- Sewer Cleaning
+								["sourceQuests"] = { 32416 },	-- Jaina's Resolution
+								["provider"] = { "n", 68687 },	-- Vereesa Windrunner
+								["coord"] = { 34.5, 48.7, 501 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32115, {	-- Shackles of the Past
@@ -560,6 +601,12 @@ _.Zones =
 								["coord"] = { 94.5, 28.4, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32394, {	-- The Divine Bell (A)
+								["sourceQuests"] = { 32393 },	-- The Ruins of Korune
+								["provider"] = { "n", 67734 },	-- Sarannha Skyglaive
+								["coord"] = { 32.8, 26.1, 379 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32362, {	-- The Fate of Dalaran
 								["sourceQuests"] = { 32331 },	-- The Kirin Tor
 								["provider"] = { "n", 68106 },	-- Anduin Wrynn
@@ -588,6 +635,13 @@ _.Zones =
 								["provider"] = { "n", 67386 },	-- Sky Admiral Rogers
 								["isDaily"] = true,
 								["coord"] = { 15.9, 78.5, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32393, {	-- The Ruins of Korune
+								["minReputation"] = { 1376, REVERED+6650 },
+								["sourceQuests"] = { 32371 },	-- Memory Wine
+								["provider"] = { "n", 67940 },	-- Admiral Taylor
+								["coord"] = { 94.5, 28.4, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32243, {	-- The Source of Korune Power
@@ -624,6 +678,13 @@ _.Zones =
 								["coord"] = { 94.5, 28.9, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32460, {	-- Tracking the Thieves
+								["sourceQuests"] = { 32414 },	-- Darnassus Attacked?
+								["description"] = "If you leave before completing this quest, you may need to abandon it and pick it near the east gate of Darnassus rather than returning to where you originally picked it up.",
+								["provider"] = { "n", 68651 },	-- Lady Jaina Proudmoore
+								["coord"] = { 39.0, 32.8, 89 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32158, {	-- Two Step Program
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
 								["provider"] = { "n", 68182 },	-- Seraphine of the Winter
@@ -638,11 +699,29 @@ _.Zones =
 								["coord"] = { 16.0, 77.9, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32418, {	-- Unfair Trade
+								["sourceQuests"] = { 32416 },	-- Jaina's Resolution
+								["provider"] = { "n", 68687 },	-- Vereesa Windrunner
+								["coord"] = { 34.5, 48.7, 501 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32142, {	-- We Will Rock You
 								["sourceQuests"] = { 32451 },	-- Send a Message
 								["provider"] = { "n", 67386 },	-- Sky Admiral Rogers
 								["isDaily"] = true,
 								["coord"] = { 15.9, 78.5, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32423, {	-- What Had To Be Done
+								["sourceQuests"] = {
+									32420,	-- Cashing Out
+									32419,	-- Nowhere to Hide
+									32421,	-- Nowhere to Run
+									32417,	-- Sewer Cleaning
+									32418,	-- Unfair Trade
+								},
+								["provider"] = { "n", 68687 },	-- Vareesa Windrunner
+								["coord"] = { 34.6, 48.7, 501 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 						}),
@@ -909,6 +988,11 @@ _.Zones =
 								["provider"] = { "n", 60529 },	-- Yan Quillpaw
 								["isDaily"] = true,
 								["coord"] = { 32.0, 61.8, 418 },
+							}),
+							q(30729, {	-- Julia Bates
+								["provider"] = { "n", 60506 },	-- Thelonius
+								["isDaily"] = true,
+								["coord"] = { 31.8, 61.5, 418 },
 							}),
 							q(30726, {	-- Minh Do-Tan
 								["provider"] = { "n", 60506 },	-- Thelonius

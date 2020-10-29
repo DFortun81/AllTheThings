@@ -1102,10 +1102,6 @@ _.Zones =
 						31453,	-- The Shado-Pan (breadcrumb)
 					},
 				}),
-				q(32394, {	-- The Divine Bell (A)
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 67734 },	-- Sarannha Skyglaive
-				}),
 				q(32392, {	-- The Divine Bell (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 68337 },	-- Ishi

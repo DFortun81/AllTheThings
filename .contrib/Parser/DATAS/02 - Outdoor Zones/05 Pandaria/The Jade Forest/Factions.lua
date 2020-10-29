@@ -284,6 +284,7 @@ _.Zones =
 								["sourceQuests"] = { 30142 },	-- It's A...
 								["provider"] = { "n", 58509 },	-- Ningna Darkwheel
 								["isDaily"] = true,
+								["coord"] = { 58.2, 45.0, 371 },
 							}),
 							q(30150, {	-- Sweet as Honey
 								["minReputation"] = { 1271, HONORED },

@@ -308,6 +308,10 @@ _.ExpansionFeatures =
 							follower(872),	-- Sol
 						},
 					}),
+					q(44229, { -- Champion Armaments
+						["description"] = "Requires researching the Order Advancement for Armaments of Light.",
+						["classes"] = { PRIEST },
+					}),
 					q(43384, {	-- Demonic Runes
 						["sourceQuests"] = { 43379 },	-- Velen's Vision
 						["classes"] = { PRIEST },

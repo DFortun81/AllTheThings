@@ -1051,10 +1051,6 @@ _.Zones =
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
-				q(32414, {	-- Darnassus Attacked?
-					["provider"] = { "n", 67940 },	-- Admiral Taylor
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(30730, {	-- Dextrous Izissha
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
@@ -1124,10 +1120,6 @@ _.Zones =
 				q(32344, {	-- It Is A Mystery
 					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(30729, {	-- Julia Bates
-					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
 				q(29875, {	-- Kang Bramblestaff
@@ -1276,10 +1268,6 @@ _.Zones =
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
 				}),
-				q(32393, {	-- The Ruins of Korune
-					["provider"] = { "n", 67940 },	-- Admiral Taylor
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(32449, {	-- The Ruins of Ogudei
 					["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
 					["races"] = HORDE_ONLY,
@@ -1376,11 +1364,6 @@ _.Zones =
 					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				}),
-				q(32423, {	-- What Had To Be Done
-					["provider"] = { "n", 68687 },	-- Vareesa Windrunner
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 32417, 32418, 32419, 32420, 32421 },	-- Sewer Cleaning, Unfair Trade, Nowhere to Hide, Cashing Out, Nowhere to Run
 				}),
 				q(32136, {	-- Work Order: Fuel
 					["provider"] = { "n", 67535 },	-- Boss-Lady Trixel
