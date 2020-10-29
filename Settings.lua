@@ -1963,7 +1963,7 @@ end
 
 -- seasonal
 local seasonal = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-seasonal:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+seasonal:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 seasonal:SetText("Seasonal (Check to hide)");
 
 local seasonalFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
