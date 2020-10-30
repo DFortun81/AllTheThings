@@ -372,9 +372,15 @@ profession(COOKING, {
 		tier(1, {	-- Classic
 			["groups"] = bubbleDown({["requireSkill"] = COOKING},  {
 				-- Note!! Only commenting out actual items as Automation takes care of the recipes themselves
-				un(REMOVED_FROM_GAME, i(16072)),	-- Expert Cookbook
-				un(REMOVED_FROM_GAME, i(16073)),	-- Artisan Cookbook
-				un(REMOVED_FROM_GAME, i(27736)),	-- Master Cookbook
+				un(REMOVED_FROM_GAME, i(16072, {	-- Expert Cookbook
+					["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
+				})),
+				un(REMOVED_FROM_GAME, i(16073, {	-- Artisan Cookbook
+					["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
+				})),
+				un(REMOVED_FROM_GAME, i(27736, {	-- Master Cookbook
+					["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
+				})),
 				un(REMOVED_FROM_GAME, i(6891)),	-- Recipe: Herb Baked Egg
 				un(REMOVED_FROM_GAME, i(5485)),	-- Recipe: Fillet of Frenzy
 				un(REMOVED_FROM_GAME, h(i(3734))),		-- Recipe: Big Bear Steak [Removed From Game!]
