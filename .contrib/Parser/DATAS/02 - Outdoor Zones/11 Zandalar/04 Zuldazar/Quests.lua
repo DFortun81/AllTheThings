@@ -1486,7 +1486,6 @@ _.Zones =
 					["g"] = {
 						i(155250),	-- Rastari Helm
 						i(155260),	-- Rastari Pauldrons
-						i(155239),	-- Rastari Breastplate
 						i(155252),	-- Torcalin Coif
 						i(155262),	-- Torcalin Spaulders
 						i(155253),	-- Jambani Hood
@@ -1496,6 +1495,12 @@ _.Zones =
 						-- NO NECK Gear
 						i(175283),	-- Rastari Helm
 						i(175287),	-- Rastari Pauldrons
+						i(175284),	-- Torcalin Coif
+						i(175289),	-- Torcalin Spaulders
+						i(175285),	-- Jambani Hood
+						i(175286),	-- Jambani Shoulderpads
+						i(175278),	-- Zanchuli Cowl
+						i(175288),	-- Zanchuli Mantle
 					--	i(175317),	-- Sea Raider's Helmet // Alliance apperance // Sourced under Proudmoore's Parley/Alliance Quest
 					--	i(175319),	-- Sea Raider's Spaulders  // Alliance apperance // Sourced under Proudmoore's Parley/Alliance Quest
 					},
@@ -1826,6 +1831,12 @@ _.Zones =
 						i(161142),	-- Zanchuli Crest
 						i(155258),	-- Zanchuli Raiment
 						-- NO NECK Gear
+						i(175291),	-- Torcalin Headguard
+						i(175281),	-- Torcalin Chainmail
+						i(175290),	-- Jambani Mask
+						i(175282),	-- Jambani Jerkin
+						i(175292),	-- Zanchuli Crest
+						i(175366),	-- Zanchuli Raiment
 						i(175293),	-- Rastari Helmet
 						i(175280),	-- Rastari Breastplate
 					--	i(175294),	-- Sea Raider's Greathelm // Alliance appearance // Listed under Tirisgarde Fairwind's "Friends" (Alliance Quest Reward)

@@ -320,13 +320,13 @@ _.Zones =
 						i(155399),	-- Scorching Sands Mask
 						i(161160),	-- Scorching Sands Shoulderspads
 						i(175310),	-- Exiled Veteran's Helm (no azerite version)
-						i(175335),	-- Exiled Veteran's Spaulders (no azerite version)
+						i(175346),	-- Exiled Veteran's Spaulders (no azerite version)
 						i(175311),	-- Lastwind Hood (no azerite version)
 						i(175349),	-- Lastwind Shoulderpads (no azerite version)
 						i(175312),	-- Resilient Outcast's Coif (no azerite version)
 						i(175347),	-- Resilient Outcast's Spaulders (no azerite version)
 						i(175313),	-- Scorching Sands Mask (no azerite version)
-						i(175348),	-- Scorching Sands Shoulderspads (no azerite version)
+						i(175338),	-- Scorching Sands Shoulderspads (no azerite version)
 					},
 				}),
 				q(49141, {	-- Diplomacy and Dominance

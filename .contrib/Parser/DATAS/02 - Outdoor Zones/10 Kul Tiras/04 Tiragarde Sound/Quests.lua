@@ -413,8 +413,8 @@ _.Zones =
 						i(175320),	-- Navigator's Mantle (no azerite version)
 						i(175316),	-- Outrigger Coif (no azerite version)
 						i(175321),	-- Outrigger Pauldrons  (no azerite version)
-						i(175294),	-- Sea Raider's Greathelm (no azerite version)
-						i(175354),	-- Sea Raider's Breastplate (no azerite version)
+						i(175317),	-- Sea Raider's Helmet (no azerite version)
+						i(175319),	-- Sea Raider's Spaulders (no azerite version)
 					},
 				}),
 				q(52750, {	-- Farmers Who Fight
