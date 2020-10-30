@@ -208,6 +208,27 @@ i(164761);	-- Xal'atath, Blade of the Black Empire
 i(146690);	-- Xavius' Torn Spellsash
 i(17384);	-- Zinfizzlex's Portable Shredder Unit
 i(17410);	-- Zinfizzlex's Portable Shredder Unit
+i(135463);	-- invincible reins
+i(136351);	-- handful ob obltierum ash
+i(136352);	-- archmage karlains imbued silkweave robe
+i(139037);	-- thunderfury, blessed blade
+i(139400);	-- [Ancient Magic and How to Wield It Without Destroying the World]
+i(139401);	-- [The Fate of Aegwynn]
+i(139402);	-- [The Fel Tome of Vorgalus Dor]
+i(139671);	-- [Deathglare Iris]
+i(151248);	-- fragment of the guardians seal (normal)
+i(151249);	-- fragment of the guardians seal (hc)
+i(151250);	-- fragment of the guardians seal (mythic)
+i(152902);	-- rune of passage (normal)
+i(152903);	-- rune of passage (heroic)
+i(152904);	-- rune of passage (mythic)
+i(152908);	-- sigil of the dark titan (normal)
+i(152909);	-- sigil of the dark titan (heroic)
+i(152910);	-- sigil of the dark titan (mythic)
+i(135511);	-- Thick Slab of Bacon. You get it for a split second after completing a bacon wq
+i(137212);	-- Cut Skystone. You get it for a split second after completing the jewelcrafter daily
+i(137214);	-- Cut Deep Amber. You get it for a split second after completing the jewelcrafter daily
+i(137215);	-- Cut Azsunite.  You get it for a split second after completing the jewelcrafter daily
 
 
 

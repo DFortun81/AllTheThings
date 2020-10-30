@@ -34,9 +34,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(163440)),	-- Honorbound Outrider's Belt
 
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
-		un(NEVER_IMPLEMENTED, i(166405)),	-- Blindside (TW Vendor?)
-		un(NEVER_IMPLEMENTED, i(166364)),	-- Song of the Fallen (TW Vendor?)
-		un(NEVER_IMPLEMENTED, i(161118)),	-- Marrow Shatter (TW Vendor/Tw drop?)
 		un(NEVER_IMPLEMENTED, i(166700)),	-- Durable Sailor's Duffel
 		un(NEVER_IMPLEMENTED, i(161988)),	-- Tidespray Linen Cloak of the Feather
 		un(NEVER_IMPLEMENTED, i(161991)),	-- Tidespray Linen Cloak of Resilience
@@ -981,6 +978,13 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(32136)),	-- Chancellor's Chain Leggings
 				un(NEVER_IMPLEMENTED, i(32137)),	-- Chancellor's Chain Spaulders
 				un(NEVER_IMPLEMENTED, i(150642)),	-- Trailseeker Spaulders
+				un(NEVER_IMPLEMENTED, i(150637)),	-- Trailseeker vest
+				un(NEVER_IMPLEMENTED, i(150638)),	-- Trailseeker greaves
+				un(NEVER_IMPLEMENTED, i(150639)),	-- Trailseeker gauntlets
+				un(NEVER_IMPLEMENTED, i(150640)),	-- Trailseeker helm
+				un(NEVER_IMPLEMENTED, i(150641)),	-- Trailseeker legguards
+				un(NEVER_IMPLEMENTED, i(150643)),	-- Trailseeker belt
+				un(NEVER_IMPLEMENTED, i(150644)),	-- Trailseeker bracers
 				un(NEVER_IMPLEMENTED, i(48819)),	-- Windrunner's Handguards
 				un(NEVER_IMPLEMENTED, i(48820)),	-- Windrunner's Headpiece
 				un(NEVER_IMPLEMENTED, i(48821)),	-- Windrunner's Legguards
@@ -1044,6 +1048,22 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(163297)),	-- honorbound vanguard's legguards
 			un(NEVER_IMPLEMENTED, i(163302)),	-- honorbound vanguard's spaulders
 			un(NEVER_IMPLEMENTED, i(163304)),	-- honorbound vanguard's waistcord
+			un(NEVER_IMPLEMENTED, i(92838)),	-- danio-scale belt
+			un(NEVER_IMPLEMENTED, i(92839)),	-- danio-scale bracers
+			un(NEVER_IMPLEMENTED, i(92840)),	-- danio-scale gauntlets
+			un(NEVER_IMPLEMENTED, i(92841)),	-- danio-scale graves
+			un(NEVER_IMPLEMENTED, i(92842)),	-- danio-scale helm
+			un(NEVER_IMPLEMENTED, i(92843)),	-- danio-scale legguards
+			un(NEVER_IMPLEMENTED, i(92844)),	-- danio-scale spaulders
+			un(NEVER_IMPLEMENTED, i(92845)),	-- danio-scale vest
+			un(NEVER_IMPLEMENTED, i(154952)),	-- saurscale wristgaurds
+			un(NEVER_IMPLEMENTED, i(154953)),	-- saurscale göpves
+			un(NEVER_IMPLEMENTED, i(154954)),	-- saurscale leggings
+			un(NEVER_IMPLEMENTED, i(154955)),	-- saurscale coif
+			un(NEVER_IMPLEMENTED, i(154956)),	-- saurscale boots
+			un(NEVER_IMPLEMENTED, i(154957)),	-- saurscale girdle
+			un(NEVER_IMPLEMENTED, i(154958)),	-- saurscale chestguard
+			un(NEVER_IMPLEMENTED, i(154959)),	-- saurscale spaulders
 			un(NEVER_IMPLEMENTED, i(158484)),	-- aiguille-scaler's wristguards
 			un(NEVER_IMPLEMENTED, i(158485)),	-- aiguille-scaler's gloves
 			un(NEVER_IMPLEMENTED, i(158486)),	-- aiguille-scaler's leggings
@@ -1546,6 +1566,12 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(163312)),	-- 7th Legionnaire's Shawl
 			un(NEVER_IMPLEMENTED, i(163348)),	-- Warfront Gear Cloak
 			un(NEVER_IMPLEMENTED, i(163364)),	-- Warfront Gear Cloak
+			un(NEVER_IMPLEMENTED, i(146793)),	-- manari magus drape
+			un(NEVER_IMPLEMENTED, i(146794)),	-- sargerai herald cloak
+			un(NEVER_IMPLEMENTED, i(146795)),	-- terrofiend greatcloak
+			un(NEVER_IMPLEMENTED, i(153397)),	-- salt starched shawl
+			un(NEVER_IMPLEMENTED, i(156755)),	-- drape of revengance
+			un(NEVER_IMPLEMENTED, i(154968)),	-- drape of the golden city
 			un(NEVER_IMPLEMENTED, i(134617)),	-- Scorching Drape
 			un(NEVER_IMPLEMENTED, i(163245)),	-- 7th Legionnaire's Satin Cloak
 			un(NEVER_IMPLEMENTED, i(150489)),	-- Shroud of Forgiveness
@@ -2187,7 +2213,11 @@ _.NeverImplemented =
 			p(1751),
 		}))),
 		un(NEVER_IMPLEMENTED, i(130145)),	-- Unknown
+		un(NEVER_IMPLEMENTED, i(154902)),	-- perculias peculiar parrot
 		un(NEVER_IMPLEMENTED, i(21168)),	-- Baby Shark
+		un(NEVER_IMPLEMENTED, i(39148)),	-- baby coralshell turtle
+		un(NEVER_IMPLEMENTED, i(66070)),	-- lizzy
+		un(NEVER_IMPLEMENTED, i(66075)),	-- bubbles
 		un(NEVER_IMPLEMENTED, i(11903)),	-- Cat Carrier (Corrupted Kitten)
 		un(NEVER_IMPLEMENTED, i(109602)),	-- Echo of Murmur (temp item)
 		un(NEVER_IMPLEMENTED, i(169195)),	-- Golden Cricket
@@ -3541,6 +3571,9 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(150501)),	-- translucent spellthread necklace
 		un(NEVER_IMPLEMENTED, i(150508)),	-- pendant of titans
 		un(NEVER_IMPLEMENTED, i(150515)),	-- nadina's pendant of purity
+		un(NEVER_IMPLEMENTED, i(166405)),	-- Blindside (TW Vendor?)
+		un(NEVER_IMPLEMENTED, i(166364)),	-- Song of the Fallen (TW Vendor?)
+		un(NEVER_IMPLEMENTED, i(161118)),	-- Marrow Shatter (TW Vendor/Tw drop?)
 	}),
 	n(-319, {	-- Weapons
 		n(-347, {	-- Bows
@@ -3884,6 +3917,7 @@ _.NeverImplemented =
 		n(-335, {	-- Two Handed Axes
 			un(NEVER_IMPLEMENTED, i(134563)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(108782)),	-- Unknown
+			un(NEVER_IMPLEMENTED, i(150607)),	-- greataxe of fury
 			un(NEVER_IMPLEMENTED, i(150606)),	-- Armsmaster's Greataxe
 			un(NEVER_IMPLEMENTED, i(140711)),	-- Armsmaster's Greataxe
 			un(NEVER_IMPLEMENTED, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)

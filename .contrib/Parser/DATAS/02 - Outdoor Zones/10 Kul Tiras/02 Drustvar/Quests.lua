@@ -112,8 +112,16 @@ _.Zones =
 						i(160890),	-- Waycrest Militia Battleplate
 						i(160889),	-- Crone-Seeker's Chainmail
 						i(155106),	-- Crone-Seeker's Helm
+						un(NEVER_IMPLEMENTED, i(160891)), -- Wickerwoven Robe
 						--i(155112),	-- Wickerwoven Robe Possible source, needs verification
 						i(155105),	-- Wickerwoven Crown
+						i(175301),	-- Banisher Cowl (no azerite version)
+						i(175212),	-- Waycrest Militia Helmet (no azerite version)
+						i(175380),	-- Banisher Jerkin (no azerite version)
+						i(175382),	-- Waycrest Militia Battleplate (no azerite version)
+						i(175381),	-- Crone-Seeker's Chainmail (no azerite version)
+						i(175300),	-- Crone-Seeker's Helm (no azerite version)
+						i(175299),	-- Wickerwoven Crown (no azerite version)
 					},
 				}),
 				q(50253, {	-- An Improvised Arsenal
@@ -1001,13 +1009,22 @@ _.Zones =
 						-- Awarded "Storming the Manor" criteria.
 					},
 					["g"] = {
+						i(155115),	-- Wickerwoven Amice
 						i(155095),	-- Banisher Tunic
 						i(155113),	-- Banisher Shoulderpads
 						i(155094),	-- Crone-Seeker's Breastplate
 						i(155116),	-- Crone-Seeker's Shoulderguards
 						i(155093),	-- Waycrest Militia Breastplate (Plate reward confirmed by Iyanden 10-13-18)
 						i(155114),	-- Waycrest Militia Spaulders (Plate reward confirmed by Iyanden 10-13-18)
-						-- Wowhead does not have reward information for this quest.  Cloth rewards need confirmation.
+						i(175324),	-- Wickerwoven Amice (no azerite version)
+						i(175360),	-- Banisher Tunic (no azerite version)
+						i(175322),	-- Banisher Shoulderpads (no azerite version)
+						i(175359),	-- Crone-Seeker's Breastplate (no azerite version)
+						i(175325),	-- Crone-Seeker's Shoulderguards (no azerite version)
+						i(175358),	-- Waycrest Militia Breastplate (no azerite version)
+						i(175323),	-- Waycrest Militia Spaulders (no azerite version)
+						-- Wowhead does not have reward information for this quest.  2nd Cloth reward needs confirmation.
+						-- Either Wickerwoven Vestments or Robe
 					},
 				}),
 --						   51851	-- Storming the Manor \	-- Not sure why, but there are three versions of this quest on wowhead.
