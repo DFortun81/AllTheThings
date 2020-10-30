@@ -402,6 +402,12 @@ _.Zones =
 					["coord"] = { 56.7, 54.4, 641 },
 					["cr"] = 92802,	-- Gravax the Desecrator
 				}),
+				q(39431, {	-- Mending the Filter
+					["provider"] = { "o", 249211 },	-- Torn Shaldorei Silk
+					["coord"] = { 54.3, 54.6, 641 },
+					["requireSkill"] = ALCHEMY,
+					["sourceQuests"] = { 39337 },	-- Forlorn Filter
+				}),
 				q(42857, {	-- Moist Around the Hedges
 					["coord"] = { 66.7, 75.7, 641 },
 				}),
@@ -705,6 +711,12 @@ _.Zones =
 						i(130003),	-- Thornbrace Grips
 						i(121600),	-- Thornbrace Waistguard
 					},
+				}),
+				q(44112, {	-- Trading for Dreams
+					["provider"] = { "n", 93974 }, -- Leyweaver Erenyi
+					["coord"] = { 70.5, 46.4, 641 },
+					["requireSkill"] = ALCHEMY,
+					["sourceQuests"] = { 39431 },	-- Mending the Filter
 				}),
 				q(42747, {	-- Where the Wildkin Are
 					["coord"] = { 59.4, 84.1, 641 },
