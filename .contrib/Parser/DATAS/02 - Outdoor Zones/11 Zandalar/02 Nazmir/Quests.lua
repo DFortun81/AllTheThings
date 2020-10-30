@@ -125,13 +125,22 @@ _.Zones =
 					["coord"] = { 49.3, 57.1, 863 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						--	MAIL REWARDS NEEDED
+						i(155335),	-- Death-Pledged Shoulderguards
+						i(159011),	-- Death-Pledged Hauberk
 						i(155334),	-- Loa Speaker's Epaulets
 						i(159029),	-- Loa Speaker's Vestments
 						i(159010),	-- Nazmani Warplate Chestpiece
 						i(155333),	-- Nazmani Warplate Spaulders
 						i(155332),	-- Ritual Flayer's Spaulders
 						i(159012),	-- Ritual Flayer's Jerkin
+						i(175337),	-- Death-Pledged Shoulderguards no azerite version 
+						i(175376),	-- Death-Pledged Hauberk no azerite version 
+						i(175336),	-- Loa Speaker's Epaulets no azerite version 
+						i(175378),	-- Loa Speaker's Vestments no azerite version 
+						i(175375),	-- Nazmani Warplate Chestpiece no azerite version 
+						i(175335),	-- Nazmani Warplate Spaulders no azerite version 
+						i(175334),	-- Ritual Flayer's Spaulders no azerite version 
+						i(175377),	-- Ritual Flayer's Jerkin no azerite version 
 					},
 				}),
 				q(49380, {	-- Bad Juju
@@ -1150,6 +1159,14 @@ _.Zones =
 						i(155314),	-- Ritual Flayer's Vest
 						i(155312),	-- Nazmani Warplate Chestplate
 						i(155323),	-- Nazmani Warplate Faceguard
+						i(175368),	-- Death-Pleged Chestguard (no azerite version)
+						i(175308),	-- Death-Pledged Helm (no azerite version)
+						i(175307),	-- Loa Speaker's Hood (no azerite version)
+						i(175374),	-- Loa Speaker's Robes (no azerite version)
+						i(175309),	-- Ritual Flayer's Mask (no azerite version)
+						i(175369),	-- Ritual Flayer's Vest (no azerite version)
+						i(175367),	-- Nazmani Warplate Chestplate (no azerite version)
+						i(175306),	-- Nazmani Warplate Faceguard (no azerite version)
 					},
 				}),
 				q(47918, {	-- To Serve Krag'wa
