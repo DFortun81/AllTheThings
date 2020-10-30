@@ -12231,10 +12231,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					self.openedOnLogin = false;
 				end
 				if show then self:Show(); end
-			else
-				show = true;
 			end
-			if self.mapID == id then
+			-- ignore refreshing the minilist if it is already being shown and is the same zone
+			if self.mapID == id and not show then
 				return; -- Haha JK BRO
 			end
 			
@@ -15933,13 +15932,14 @@ app.events.PET_BATTLE_OPENING_START = function(...)
 		app.mainVis = true;
 	end
 end
+-- this fires twice when pet battle ends
 app.events.PET_BATTLE_CLOSE = function(...)
-	if app.miniVis then 
-		app:ToggleMiniListForCurrentZone() 
+	if app.miniVis then
+		C_Timer.After(1, app.ToggleMiniListForCurrentZone);
 		app.miniVis = false;
 	end
 	if app.mainVis then 
-		app:ToggleMainList() 
+		app:ToggleMainList();
 		app.mainVis = false;
 	end
 end
