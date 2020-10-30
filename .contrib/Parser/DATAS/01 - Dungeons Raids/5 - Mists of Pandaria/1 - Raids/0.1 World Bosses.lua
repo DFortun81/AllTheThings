@@ -648,7 +648,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					385,	-- Tomb of Conquerors
 					386,	-- Ruins of Korune (Upper Floor)
 					387,	-- Ruins of Korune (Lower Floor)
-					421,	-- Ruins of Ogudei
 					434,	-- The Ancient Passage
 				},
 				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018

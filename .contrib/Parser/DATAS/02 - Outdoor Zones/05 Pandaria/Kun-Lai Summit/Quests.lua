@@ -115,10 +115,6 @@ _.Zones =
 					["sourceQuest"] = 30795,	-- Staying Connected
 					["description"] = "Use |cFFFFD700The Tongue of Ba-Shon|r.",
 				}),
-				q(32191, {	-- Ancient Guardians
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 67603 },	-- Fanlyr Silverthorn
-				}),
 				q(30491, {	-- At the Yak Wash
 					["coord"] = { 65.3, 62.3, 381 },
 					["provider"] = { "n", 61693 },	-- Muskpaw Jr.
@@ -216,10 +212,6 @@ _.Zones =
 						30661,	-- The Ordo Warbringer (H)
 						30663,	-- The Ordo Warbringer (H)
 					},
-				}),
-				q(32192, {	-- Bloodlines
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 67581 },	-- Lor'themar Theron
 				}),
 				q(30583, {	-- Blue Dwarf Needs Food Badly
 					["coord"] = { 54.1, 83.2, 379 },
@@ -439,10 +431,6 @@ _.Zones =
 					["coord"] = { 74.6, 76.9, 379 },
 					["provider"] = { "n", 59272 },	-- Wu-Peng
 					["sourceQuest"] = 30467,	-- My Son...
-				}),
-				q(32319, {	-- Find Thrall!
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68023 },	-- Vol'jin
 				}),
 				q(30992, {	-- Finish This!
 					["coord"] = { 31.8, 60.1, 379 },
@@ -866,10 +854,6 @@ _.Zones =
 				q(30765, {	-- Regaining Honor	-- probably triggers around the completion of "A Terrible Sacrifice"
 					["u"] = NEVER_IMPLEMENTED,
 				}),
-				q(32318, {	-- Regeneration Takes Time
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 67866 },	-- Chen Stormstout
-				}),
 				q(31809, {	-- Remnants of Anger
 					["provider"] = { "i", 89317 },	-- Claw of Anger
 					["g"] = {
@@ -1137,10 +1121,6 @@ _.Zones =
 						i(84522),	-- Kafa Silk Treads
 						i(84524),	-- Yak Herder Boots
 					},
-				}),
-				q(32244, {	-- The Korune
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 67603 },	-- Fanlyr Silverthorn
 				}),
 				q(31611, {	-- The Kun-Lai Kicker
 					["provider"] = { "n", 63367 },	-- Brewmaster Boof

@@ -102,12 +102,6 @@ _.Zones =
 							["classes"] = exclude({ PALADIN, DEATHKNIGHT, DEMONHUNTER }, ALL_CLASSES),
 							["sourceQuest"] = 25064,	-- Moraya
 						}),
-						q(32372, {	-- De-Subjugation
-							["provider"] = { "n", 68025 },	-- Thrall
-							["lvl"] = 81,
-							["coord"] = { 38.4, 46.6, 463 },
-							["sourceQuest"] = 32320,	-- The Horde is Family
-						}),
 						q(52114, {	-- Honoring a True Leader
 							["provider"] = { "n", 137878 },	-- Master Gadrin
 							["lvl"] = 120,
@@ -350,12 +344,6 @@ _.Zones =
 							["lvl"] = 120,
 							["coord"] = { 59.2, 52.0, 463 },
 							["sourceQuest"] = 51513,	-- Zalazane Returns
-						}),
-						q(32320, {	-- The Horde Is Family
-							["provider"] = { "n", 68025 },	-- Thrall
-							["lvl"] = 81,
-							["coord"] = { 38.4, 46.6, 463 },
-							["sourceQuest"] = 32319,	-- Find Thrall!
 						}),
 						q(24764, {	-- The Rise of the Darkspear (Druid)
 							["provider"] = { "n", 37951 },	-- Jin'thala

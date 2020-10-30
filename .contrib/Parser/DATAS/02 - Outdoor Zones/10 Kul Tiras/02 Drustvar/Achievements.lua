@@ -8,7 +8,7 @@ _.Zones =
 		m(896, {	-- Drustvar
 			n(ACHIEVEMENTS, {
 				ach(12941),		-- Adventurer of Drustvar
-				ach(13083, {		-- Better, Faster, Stronger
+				ach(13083, {	-- Better, Faster, Stronger
 					["description"] = "Collect and have active Witch's Boons: Excellence, Extra Pep, Rage, and Fortitude which are on a 5 minute timer and the debuff Witch's Curse: Newt. Debuffs can remove one of your buffs. Coords are possible brew spawn points.",
 					["coords"] = {
 						{ 25.00, 53.35, 896 },

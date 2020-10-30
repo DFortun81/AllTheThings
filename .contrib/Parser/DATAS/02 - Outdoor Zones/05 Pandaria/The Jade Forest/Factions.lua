@@ -25,6 +25,7 @@ _.Zones =
 							--	["requireSkill"] = COOKING,
 								["provider"] = { "n", 58413 },	-- Jenova Longeye
 								["isDaily"] = true,
+								["coord"] = { 57.3, 45.1, 371 },	-- midpoint of NPC's path
 							}),
 							q(31707, {	-- A Tangled Web
 								["minReputation"] = { 1271, HONORED },
@@ -133,6 +134,7 @@ _.Zones =
 							--	["requireSkill"] = ARCHAEOLOGY,
 								["provider"] = { "n", 58413 },	-- Jenova Longeye
 								["isDaily"] = true,
+								["coord"] = { 57.3, 45.1, 371 },	-- midpoint of NPC's path
 							}),
 							q(30142, {	-- It's A...
 								["sourceQuests"] = {
@@ -149,6 +151,7 @@ _.Zones =
 							--	["requireSkill"] = TAILORING,
 								["provider"] = { "n", 58413 },	-- Jenova Longeye
 								["isDaily"] = true,
+								["coord"] = { 57.3, 45.1, 371 },	-- midpoint of NPC's path
 							}),
 							q(31709, {	-- Lingering Doubt
 								["minReputation"] = { 1271, HONORED },
@@ -278,6 +281,7 @@ _.Zones =
 							--	["requireSkill"] = FISHING,
 								["provider"] = { "n", 58413 },	-- Jenova Longeye
 								["isDaily"] = true,
+								["coord"] = { 57.3, 45.1, 371 },	-- midpoint of NPC's path
 							}),
 							q(31699, {	-- Sprite Fright
 								["minReputation"] = { 1271, HONORED },
@@ -386,6 +390,8 @@ _.Zones =
 								["isDaily"] = true,
 							}),
 							q(31721, {	-- The Trainer's Challenge: Qua-Ro Whitebrow
+								["minReputation"] = { 1271, REVERED },
+								["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
 								["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
 								["isDaily"] = true,
 								["coord"] = { 57.6, 44.8, 371 },

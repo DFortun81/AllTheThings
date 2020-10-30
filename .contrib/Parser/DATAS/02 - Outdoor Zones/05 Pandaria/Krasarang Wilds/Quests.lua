@@ -1132,18 +1132,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- Hidden once you finish Valley of the Four Winds Story Line
 				}),
-				q(32348, {	-- Kick 'em While They're Down
-					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(30731, {	-- Kuo-Na Quillpaw
 					["provider"] = { "n", 60506 },	-- Thelonius
-					["isDaily"] = true,
-				}),
-				q(32120, {	-- Legacy of Ogudei
-					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
-					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				i(86545, {
@@ -1162,11 +1152,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32343, {	-- Ogudei's Lieutenants
-					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(32237, {	-- Precious Resource
 					["provider"] = { "n", 67553 },	-- Bixy Buzzsaw
 					["races"] = HORDE_ONLY,
@@ -1176,10 +1161,6 @@ _.Zones =
 					["provider"] = { "n", 67542 },	-- Grizzle Gearslip
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				}),
-				q(32284, {	-- Someone You Should See
-					["provider"] = { "n", 67865 },	-- Messenger Grummle
-					["races"] = HORDE_ONLY,
 				}),
 				i(86544, {	-- Spinefish Alpha
 					["g"] = {
@@ -1197,11 +1178,6 @@ _.Zones =
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				q(32118, {	-- Taking Advantage
-					["provider"] = { "n", 67847 },	-- Belloc Brightblade
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(31370, {	-- The Anglers
 					["provider"] = { "n", 64010 },	-- Master Angler Karu
 					["races"] = HORDE_ONLY,
@@ -1215,10 +1191,6 @@ _.Zones =
 					["provider"] = { "n", 67940 },	-- Admiral Taylor
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(32332, {	-- The First Riddle: Mercy
-					["provider"] = { "n", 68003 },	-- The Monkey King
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(36882, {	-- The Great Angler Returns
 					["provider"] = { "n", 63721 },	-- Nat Pagle
 					["races"] = ALLIANCE_ONLY,
@@ -1229,17 +1201,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
 				}),
-				q(32335, {	-- The Greatest Prank
-					["provider"] = { "n", 68538 },	-- The Monkey King
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 32332, 32333, 32334 },	-- The First Riddle: Mercy, The Second Riddle: Fellowship, The Third Riddle: :Strength
-				}),
 				q(32336, {	-- The Handle
 					["provider"] = { "n", 68538 },	-- The Monkey King
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32355, {	-- The Harmonic Mallet
-					["provider"] = { "n", 67940 },	-- Admiral Taylor
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32338, {	-- The Harmonic Ointment
@@ -1254,11 +1217,6 @@ _.Zones =
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
 				}),
-				q(32321, {	-- The Monkey King
-					["provider"] = { "n", 68004 },	-- Anduin Wrynn
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 32355 },	-- The Harmonic Mallet
-				}),
 				q(31254, {	-- The Road to Kun-Lai
 					["sourceQuests"] = { 59559 },	-- Hero's Call: Kun-Lai Summit!
 					["provider"] = { "n", 63778 },	-- Messenger Grummle
@@ -1268,16 +1226,7 @@ _.Zones =
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
 				}),
-				q(32449, {	-- The Ruins of Ogudei
-					["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32333, {	-- The Second Riddle: Fellowship
-					["provider"] = { "n", 68003 },	-- The Monkey King
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32455,  {  	-- The Silence
+				q(32455, {	-- The Silence
 					["provider"] = { "n", 68987 },	-- Anduin Wrynn
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 32401 },	-- Breath of Darkest Shadow
@@ -1289,22 +1238,9 @@ _.Zones =
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
 				}),
-				q(32342, {	-- The Spirit Trap
-					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32334, {	-- The Third Riddle: Strength
-					["provider"] = { "n", 68003 },	-- The Monkey King
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(30738, {	-- Thelonius
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
-				}),
-				q(32190, {	-- To Mogujia
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["races"] = HORDE_ONLY,
 				}),
 				q(32376, {	-- To the Valley!
 					["provider"] = { "n", 67939 },	-- General Nazgrim
@@ -1359,11 +1295,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 58607 },	-- Sunwalker Dezco
 					["races"] = HORDE_ONLY,
-				}),
-				q(32345, {	-- We're Not Monsters!
-					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
 				}),
 				q(32136, {	-- Work Order: Fuel
 					["provider"] = { "n", 67535 },	-- Boss-Lady Trixel
