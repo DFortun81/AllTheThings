@@ -642,6 +642,7 @@ app.L = {
 		[-859] = "Interface\\Icons\\inv_tinyazeritesplinter",								-- Rank 2
 		[-860] = "Interface\\Icons\\inv_smallazeriteshard",									-- Rank 3
 		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
+		[-862] = "Interface\\Icons\\inv_heartofazeroth",									-- Heart of Azeroth
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1401,6 +1402,7 @@ app.L = {
 -- Mechagon
 		[-850] = "Mechanized Chest",											-- Mechanized Chest
 		[-851] = "Irontide Chest",												-- Irontide Chest
+		[-862] = GetSpellInfo(275825),											-- Heart of Azeroth
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
 
