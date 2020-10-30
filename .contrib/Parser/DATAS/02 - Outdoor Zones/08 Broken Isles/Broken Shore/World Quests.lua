@@ -15,7 +15,6 @@ _.Zones =
 				q(45969),	-- Defense of the Ancient
 				q(46077),	-- Felbound Spirits
 				q(40390),	-- Hallowed Ground
-				q(45776),	-- Keys are a Crutch
 				q(45653),	-- Kill it with Fire!
 				q(46046),	-- Life's a Lich
 				q(46755),	-- Mission: Felraging
@@ -192,6 +191,11 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(45743, {	-- Judgment of Odyn
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(45776, {	-- Keys are a Crutch
+					["classes"] = { ROGUE },
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),

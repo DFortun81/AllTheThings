@@ -226,7 +226,7 @@ settings.Initialize = function(self)
 	end
 end
 settings.Get = function(self, setting)
-	return AllTheThingsSettings.General[setting];
+	return AllTheThingsSettings and AllTheThingsSettings.General[setting];
 end
 settings.GetFilter = function(self, filterID)
 	return AllTheThingsSettingsPerCharacter.Filters[filterID];
@@ -323,7 +323,7 @@ settings.GetPersonal = function(self, setting)
 	return AllTheThingsSettingsPerCharacter[setting];
 end
 settings.GetTooltipSetting = function(self, setting)
-	return AllTheThingsSettings.Tooltips[setting];
+	return AllTheThingsSettings and AllTheThingsSettings.Tooltips[setting];
 end
 settings.Set = function(self, setting, value)
 	AllTheThingsSettings.General[setting] = value;

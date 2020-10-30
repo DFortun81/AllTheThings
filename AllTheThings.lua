@@ -93,7 +93,7 @@ local function StartCoroutine(name, method)
 					-- Show the error. Returning nothing is the same as canceling the work.
 					print(debugstack(instance));
 					print(err);
-					app.print(app.Version .. ": Please report this error to the ATT Discord, thanks! ");
+					app.report();
 				end
 			end
 			-- print("coroutine complete",name);
@@ -745,6 +745,9 @@ GameTooltipModel:Hide();
 
 app.print = function(...)
 	print(L["TITLE"], ...);
+end
+app.report = function()
+	app.print(app.Version .. ": Please report this to the ATT Discord! Thanks!");
 end
 
 -- audio lib
@@ -6735,8 +6738,7 @@ app.BaseMap = {
 		elseif key == "key" then
 			return "mapID";
 		elseif key == "text" then
-			if t["isRaid"] then return "|cffff8000" .. app.GetMapName(t.mapID) .. "|r"; end
-			return app.GetMapName(t.mapID);
+			return app.TryColorizeName(t, app.GetMapName(t.mapID));
 		elseif key == "back" then
 			if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
 				return 1;
@@ -9455,7 +9457,8 @@ function app:CreateMiniListForGroup(group)
 						g = prereqs;
 						breakafter = breakafter + 1;
 						if breakafter >= 100 then
-							app.print("Likely just broke out of an infinite source quest loop. Please report this to the ATT Discord!");
+							app.print("Likely just broke out of an infinite source quest loop.");
+							app.report();
 							break;
 						end
 					end
@@ -11875,25 +11878,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
 		self.openedOnLogin = false;
-		self.data = app.CreateMap(946, {
-			['text'] = "Mini List",
-			['icon'] = "Interface\\Icons\\INV_Misc_Map06.blp", 
-			["description"] = "This list contains the relevant information for your current zone.",
-			['visible'] = true, 
-			['expanded'] = true,
-			['g'] = {
-				{
-					['text'] = "Update Location Now",
-					['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-					['description'] = "If you wish to forcibly refresh the data without changing zones, click this button now!",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						Push(self, "Rebuild", self.Rebuild);
-						return true;
-					end,
-				},
-			},
-		});
 		table.insert(app.RawData, self.data);
 		self.rawData = {};
 		local IsSameMap = function(data, results)
@@ -12189,25 +12173,50 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				UpdateGroups(self.data, self.data.g);
 			end
 			
-			-- If we don't have any map data on this area, report it to the chat window.
+			-- If we don't have any map data on this area and it exists in game, report it to the chat window.
 			if not results or not results.g or #results.g < 1 then
 				local mapID = self.mapID;
 				local mapInfo = C_Map_GetMapInfo(mapID);
-				local mapPath = mapInfo.name or ("Map ID #" .. mapID);
-				mapID = mapInfo.parentMapID;
-				while mapID do
-					mapInfo = C_Map_GetMapInfo(mapID);
-					if mapInfo then
-						mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " -> " .. mapPath;
-						mapID = mapInfo.parentMapID;
-					else
-						break;
+				if mapInfo then
+					local mapPath = mapInfo.name or ("Map ID #" .. mapID);
+					mapID = mapInfo.parentMapID;
+					while mapID do
+						mapInfo = C_Map_GetMapInfo(mapID);
+						if mapInfo then
+							mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " -> " .. mapPath;
+							mapID = mapInfo.parentMapID;
+						else
+							break;
+						end
 					end
+					-- only report for mapIDs which actually exist
+					print("No map found for this location ", app.GetMapName(self.mapID), " [", self.mapID, "]");
+					print("Path: ", mapPath);
+					app.report();
 				end
-				print("No map found for this location ", app.GetMapName(self.mapID), " [", self.mapID, "]");
-				print("Path: ", mapPath);
-				print("Please report this to the ATT Discord! Thanks! ", app.Version);
+				self.data = app.CreateMap(mapID, {
+					['text'] = "Mini List",
+					['icon'] = "Interface\\Icons\\INV_Misc_Map06.blp", 
+					["description"] = "This list contains the relevant information for your current zone, which cannot be found in the ATT database",
+					['visible'] = true, 
+					['expanded'] = true,
+					['g'] = {
+						{
+							['text'] = "Update Location Now",
+							['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
+							['description'] = "If you wish to forcibly refresh the data to your current Map, click this button now!",
+							['visible'] = true,
+							['collectible'] = true,
+							['collected'] = false,
+							['OnClick'] = function(row, button)
+								Push(self, "ResetMapID", function() self:SetMapID(app.CurrentMapID) end);
+								return true;
+							end,
+						},
+					},
+				});
 			end
+			self:Update();
 		end
 		local function OpenMiniList(id, show)
 			-- Determine whether or not to forcibly reshow the mini list.
@@ -12237,16 +12246,16 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			OpenMiniList(app.GetCurrentMapID(), true);
 		end
 		local function RefreshLocationCoroutine()
-			-- Wait for a few moments for the map to update.
-			local waitTimer = 30;
-			while waitTimer > 0 do
-				coroutine.yield();
-				waitTimer = waitTimer - 1;
-			end
-			
-			-- While the player is in combat, wait for combat to end.
-			while InCombatLockdown() do coroutine.yield(); end
 			if app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
+				-- Wait for a few moments for the map to update.
+				local waitTimer = 30;
+				while waitTimer > 0 do
+					coroutine.yield();
+					waitTimer = waitTimer - 1;
+				end
+				
+				-- While the player is in combat, wait for combat to end.
+				while InCombatLockdown() do coroutine.yield(); end
 				-- Acquire the new map ID.
 				local mapID = app.GetCurrentMapID();
 				while not mapID or mapID < 0 do
@@ -15275,7 +15284,12 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		
 		-- Search for the Link in the database
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-		if group then app:CreateMiniListForGroup(group); end
+		-- make sure it's 'something' returned from the search before throwing it into a window
+		if group and (group.link or group.name or group.text or group.key) then
+			app:CreateMiniListForGroup(group);
+			return true;
+		end
+		app.print("Unknown Command: ", cmd);
 	else
 		-- Default command
 		app.ToggleMainList();
@@ -15609,15 +15623,17 @@ app.events.VARIABLES_LOADED = function()
 		rawset(AllTheThingsAD, key, value);
 	end
 	
+	-- Init the Settings before working with data
+	app.Settings:Initialize();
+	
 	-- Apply Locked Window Settings
 	app:ApplyLockedWindows();
 	
 	-- Refresh Achievements
 	RefreshAchievementCollection();
 	
-	-- Tooltip Settings
+	-- Set the Current Map ID
 	app.CurrentMapID = app.GetCurrentMapID();
-	app.Settings:Initialize();
 	
 	-- Attempt to register for the addon message prefix.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
