@@ -797,6 +797,14 @@ _.Zones =
 						i(155033),	-- Outrigger Helm
 						i(155031),	-- Sea Raider's Greathelm
 						i(155020),	-- Sea Raider's Breastplate
+						i(175297),	-- Freebooter Cowl (no azerite version)
+						i(175356),	-- Freebooter Tunic (no azerite version)
+						i(175357),	-- Navigator's Robes (no azerite version)
+						i(175295),	-- Navigator's Circlet (no azerite version)
+						i(175355),	-- Outrigger Chainmail (no azerite version)
+						i(175296),	-- Outrigger Helm (no azerite version)
+						i(175294),	-- Sea Raider's Greathelm (no azerite version)
+						i(175354),	-- Sea Raider's Breastplate (no azerite version)
 					},
 				}),
 				q(57324, {	-- Sail With the Tide
