@@ -1077,7 +1077,7 @@ HeirloomsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
 local HeirloomUpgradesCheckBox = settings:CreateCheckBox("+Upgrades",
 function(self)
 	self:SetChecked(settings:Get("Thing:HeirloomUpgrades"));
-	if true or settings:Get("DebugMode") or not settings:Get("Thing:Heirlooms") then
+	if settings:Get("DebugMode") or not settings:Get("Thing:Heirlooms") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1528,7 +1528,7 @@ function(self)
 	settings:UpdateMode();
 	app:RefreshData(nil,nil,true);
 end);
-ShowIncompleteThingsCheckBox:SetATTTooltip("Enable this option if you want to see items, objects, NPCs, and headers which can be tracked via an associated QuestID without necessarily being considered 'collectible'.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.");
+ShowIncompleteThingsCheckBox:SetATTTooltip("Enable this option if you want to see items, objects, NPCs, and headers which can be tracked within the game without necessarily being considered 'collectible'.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.");
 ShowIncompleteThingsCheckBox:SetPoint("TOPLEFT", ShowCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowRepeatableThingsCheckBox = settings:CreateCheckBox("Collect Repeatable Quests",

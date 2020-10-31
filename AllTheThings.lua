@@ -6116,7 +6116,9 @@ app.BaseHeirloomUnlocked = {
 	__index = function(t, key)
 		if key == "collectible" then
 			return app.CollectibleHeirlooms;
-		elseif key == "collected" then
+		elseif key == "trackable" then
+			return true;
+		elseif key == "collected" or key == "saved" then
 			return t.parent.itemID and C_Heirloom.PlayerHasHeirloom(t.parent.itemID);
 		elseif key == "text" then
 			return "Unlocked Heirloom";
@@ -6133,8 +6135,10 @@ app.BaseHeirloomUnlocked = {
 app.BaseHeirloomLevel = {
 	__index = function(t, key)
 		if key == "collectible" then
-			return app.CollectibleHeirlooms;
-		elseif key == "collected" then
+			return app.CollectibleHeirlooms and app.CollectibleHeirloomUpgrades;
+		elseif key == "trackable" then
+			return true;
+		elseif key == "collected" or key == "saved" then
 			if not t.parent.itemID then return; end
 			local level = GetDataSubMember("HeirloomUpgradeRanks", t.parent.itemID, 0);
 			if t.level <= level then return true; end
