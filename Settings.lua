@@ -102,12 +102,12 @@ local GeneralSettingsBase = {
 		["Thing:FlightPaths"] = true,
 		["Thing:Followers"] = true,
 		["Thing:Heirlooms"] = true,
-		["Thing:HeirloomUpgrades"] = true,
+		["Heirloom:Upgrades"] = true,
 		["Thing:Illusions"] = true,
 		["Thing:Mounts"] = true,
 		["Thing:MusicRolls"] = true,
 		["Thing:Quests"] = false,
-		["Thing:Breadcrumbs"] = false,
+		["Quests:Breadcrumbs"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
 		["Thing:SelfieFilters"] = true,
@@ -548,12 +548,12 @@ settings.UpdateMode = function(self)
 		app.CollectibleFlightPaths = self:Get("Thing:FlightPaths");
 		app.CollectibleFollowers = self:Get("Thing:Followers");
 		app.CollectibleHeirlooms = self:Get("Thing:Heirlooms");
-		app.CollectibleHeirloomUpgrades = self:Get("Thing:HeirloomUpgrades");
+		app.CollectibleHeirloomUpgrades = self:Get("Heirloom:Upgrades");
 		app.CollectibleIllusions = self:Get("Thing:Illusions");
 		app.CollectibleMounts = self:Get("Thing:Mounts");
 		app.CollectibleMusicRolls = self:Get("Thing:MusicRolls");
 		app.CollectibleQuests = self:Get("Thing:Quests");
-		app.CollectibleBreadcrumbs = self:Get("Thing:Breadcrumbs");
+		app.CollectibleBreadcrumbs = self:Get("Quests:Breadcrumbs");
 		app.CollectibleRecipes = self:Get("Thing:Recipes");
 		app.CollectibleReputations = self:Get("Thing:Reputations");
 		app.CollectibleSelfieFilters = self:Get("Thing:SelfieFilters");
@@ -1076,7 +1076,7 @@ HeirloomsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
 
 local HeirloomUpgradesCheckBox = settings:CreateCheckBox("+Upgrades",
 function(self)
-	self:SetChecked(settings:Get("Thing:HeirloomUpgrades"));
+	self:SetChecked(settings:Get("Heirloom:Upgrades"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Heirlooms") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -1086,7 +1086,7 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("Thing:HeirloomUpgrades", self:GetChecked());
+	settings:Set("Heirloom:Upgrades", self:GetChecked());
 	settings:UpdateMode();
 	app:RefreshData(nil,nil,true);
 end);
@@ -1223,7 +1223,7 @@ QuestsCheckBox:SetPoint("TOPLEFT", MusicRollsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local QuestBreadcrumbsCheckBox = settings:CreateCheckBox("+Breadcrumbs",
 function(self)
-	self:SetChecked(settings:Get("Thing:Breadcrumbs"));
+	self:SetChecked(settings:Get("Quests:Breadcrumbs"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -1233,7 +1233,7 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("Thing:Breadcrumbs", self:GetChecked());
+	settings:Set("Quests:Breadcrumbs", self:GetChecked());
 	settings:UpdateMode();
 	app:RefreshData(nil,nil,true);
 end);
