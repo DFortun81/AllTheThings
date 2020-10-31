@@ -886,7 +886,7 @@ local function GetCompletionIcon(state)
     return L[state and "COMPLETE_ICON" or "INCOMPLETE_ICON"];
 end
 local function GetCompletionText(state)
-	return L[(state == 2 and "COMPLETE_OTHER") or (state == 1 and "COMPLETE") or "INCOMPLETE"];
+	return L[(state == 2 and "COMPLETE_OTHER") or (state and "COMPLETE") or "INCOMPLETE"];
 end
 local function GetProgressTextForRow(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
@@ -6216,8 +6216,14 @@ app.BaseHeirloom = {
 		elseif key == "collectible" then
 			if t.factionID then return app.CollectibleReputations; end
 			return t.s and t.s > 0 and app.CollectibleTransmog;
-		elseif key == "collected" then
+		elseif key == "trackable" then
+			return true;
+		elseif key == "collected" or key == "saved" then
+			-- heirloom with sourceID
 			if t.s and t.s > 0 and GetDataSubMember("CollectedSources", t.s) then return 1; end
+			-- heirloom without sourceID (trinket,ring,etc.)
+			if t.itemID and C_Heirloom.PlayerHasHeirloom(t.itemID) then return 1; end
+			-- heirloom for a faction (grand commendation/rep item/etc.)
 			if t.factionID then
 				if t.repeatable then
 					-- This is used by reputation tokens.
@@ -6256,6 +6262,7 @@ app.BaseHeirloom = {
 			return C_Heirloom.GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID));
 		elseif key == "g" then
 			if app.CollectibleHeirlooms then
+				g = {};
 				local total = GetDataSubMember("HeirloomUpgradeLevels", t.itemID) or C_Heirloom.GetHeirloomMaxUpgradeLevel(t.itemID);
 				if total then
 					SetDataSubMember("HeirloomUpgradeLevels", t.itemID, total);
@@ -6279,7 +6286,6 @@ app.BaseHeirloom = {
 						CacheFields(item);
 						item.g = {};
 					end
-					g = {};
 					local heirhashpre = "hl" .. tostring(t.itemID)
 					tinsert(g, setmetatable({ ["parent"] = t, ["hash"] = heirhashpre }, app.BaseHeirloomUnlocked));
 					for i=1,total,1 do
@@ -6295,9 +6301,9 @@ app.BaseHeirloom = {
 					end
 					BuildGroups(t, g);
 					app.UpdateGroups(t, g);
-					rawset(t, "g", g);
-					return g;
 				end
+				rawset(t, "g", g);
+				return g;
 			end
 		elseif key == "icon" then
 			return select(4, C_Heirloom.GetHeirloomInfo(t.itemID));
@@ -8474,13 +8480,18 @@ UpdateGroup = function(parent, group)
 				parent.total = (parent.total or 0) + group.total;
 				parent.progress = (parent.progress or 0) + group.progress;
 				
-				-- If this group is trackable, then we should show it.
-				if group.total > 0 and app.GroupVisibilityFilter(group) then
+				-- If this group needs to be shown due to child groups, then make it visible and skip other logic
+				if group.visible == 1 then
 					group.visible = true;
-				elseif app.ShowIncompleteThings(group) then
-					group.visible = not group.saved;
+				-- If this group is trackable, then we should show it.
+				elseif group.total > 0 and app.GroupVisibilityFilter(group) then
+					group.visible = true;
+				elseif group.trackable and app.ShowIncompleteThings(group) then
+					-- If this group is trackable, then we should show it.
+					group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
 				else
-					group.visible = (group.visible or 0) == 1;
+					-- Hide this group. We aren't filtering for it.
+					group.visible = false;
 				end
 			else
 				-- Hide this group. We aren't filtering for it.
@@ -8500,18 +8511,9 @@ UpdateGroup = function(parent, group)
 					else
 						group.visible = true;
 					end
-				elseif group.trackable then
+				elseif group.trackable and app.ShowIncompleteThings(group) then
 					-- If this group is trackable, then we should show it.
-					if app.ShowIncompleteThings(group) then
-						group.visible = not group.saved;
-						if group.visible then
-							-- Ensure that the parent does not hide a visible, incomplete thing (switched from 1 to true in group filtering so as to not overwrite based on the group filtering)
-							parent.visible = 1;
-						end
-					else
-						-- Hide this group. We aren't filtering for it.
-						group.visible = false;
-					end
+					group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
 				else
 					-- Hide this group.
 					group.visible = false;
@@ -8525,6 +8527,9 @@ UpdateGroup = function(parent, group)
 		-- This group doesn't meet requirements.
 		group.visible = false;
 	end
+	
+	-- flag parent to set itself visible when update order falls back out
+	if group.visible == true then parent.visible = 1; end
 	
 	if group.OnUpdate then group:OnUpdate(); end
 end
