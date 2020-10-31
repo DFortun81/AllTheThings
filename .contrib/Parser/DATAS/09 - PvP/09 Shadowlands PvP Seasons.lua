@@ -1,10 +1,10 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-
+--[[
 _.PVP =
 {
-	--[[n(-10100, {	-- Shadowlands
+n(-10100, {	-- Shadowlands
 		n(-692, {	-- Sinful Gladiator: Shadowlands Season 1
 			n(-659, {	-- Aspirant PvP Gear
 				n(-319, {	-- Weapons
@@ -68,7 +68,7 @@ _.PVP =
 
 				}),
 			}),
-		--[[un(REMOVED_FROM_GAME, i(159570)),	-- Battleborn Sigil Dread Combatant
+			un(REMOVED_FROM_GAME, i(159570)),	-- Battleborn Sigil Dread Combatant
 			un(REMOVED_FROM_GAME, i(155622)),	-- Warlord's Trophy Dread Combatant
 			un(REMOVED_FROM_GAME, i(164580)),	-- Battleborn Sigil Dread Challenger
 			un(REMOVED_FROM_GAME, i(164584)),	-- Warlord's Trophy Dread Challenger
@@ -88,7 +88,7 @@ _.PVP =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
-			--]]
 		}),
-	}),--]]
+	}),
 };
+--]]
