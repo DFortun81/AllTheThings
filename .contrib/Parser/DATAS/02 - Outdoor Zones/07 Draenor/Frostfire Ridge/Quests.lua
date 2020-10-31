@@ -973,9 +973,7 @@ _.Zones =
 					["coord"] = { 39.6, 23.4, 525 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34362,	-- The Shadow Gate
-					["cost"] = {
-						{ "i", 110378, 5 },	-- Borgal's Totem
-					},
+					["cost"] = { { "i", 110378, 5 } },	-- Borgal's Totem
 				}),
 				q(33450, {	-- The Warlord's Guard
 					["provider"] = { "n", 74635 },	-- Igrimar the Resolute

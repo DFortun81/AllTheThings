@@ -1,4 +1,4 @@
------------------------------------------------------
+--------------------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
@@ -11,10 +11,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
 		},
 		["g"] = {
-			n(QUESTS, { 			
+			n(QUESTS, {
 				q(30104, {	-- Documenting the Timeways
 					["provider"] = { "n", 57864 },	-- Alurmi
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						30097,	-- Archival Purposes
 						30096,	-- Murozond
 					},
@@ -65,7 +65,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["g"] = {
 					i(76158),	-- Courtier's Slippers
 					i(76157),	-- Waterworn Handguards
-					i(76159),	-- Legion Bindings		
+					i(76159),	-- Legion Bindings
 				},
 			}),
 			cr(55085, e(290, {	-- Peroth'arn

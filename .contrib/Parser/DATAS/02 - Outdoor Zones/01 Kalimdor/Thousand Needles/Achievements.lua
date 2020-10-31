@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(64, {	-- Thousand Needles
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4938, {	-- Thousand Needles Quests
 					crit(1, {	-- The Treasure Trove (A)
 						["races"] = ALLIANCE_ONLY,

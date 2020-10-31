@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(875, { 	-- Zandalar
@@ -280,6 +281,12 @@ _.Zones =
 						["g"] = {
 							i(162321), 	-- Schematic: Incendiary Ammunition [Rank 3]
 						},
+					}),
+					q(51013, {	-- Work Order: Mistscale
+						["requireSkill"] = SKINNING,
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(51000, {	-- Work Order: Star Moss
 						["lvl"] = 120,

@@ -99,6 +99,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				},
 				["cr"] = 94015,	-- Supreme Lord Kazzak
 				["g"] = {
+					ach(10071),	-- The Legion Will NOT Conquer All
 					i(127976),	-- Choker of Reciprocity
 					i(127977),	-- Insightful Void-Link Chain
 					i(127978),	-- Necklace of Flowing Light

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -12,7 +13,7 @@ _.Zones =
 				54,		-- Jangolode Mine
 				55,		-- PLEASE ADD NAME OF MAP, LOVE OXLOTUS
 			},
-			["lvl"] = 10,	
+			["lvl"] = 10,
 		}),
 	}),
 };

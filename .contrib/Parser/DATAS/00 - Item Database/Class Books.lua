@@ -28,6 +28,7 @@ i(17413);	-- Codex: Prayer of Fortitude
 i(31837);	-- Codex: Prayer of Shadow Protection
 i(22393);	-- Codex: Prayer of Shadow Protection
 i(136803);	-- Dirty Tricks, Vol 1: Detection
+i(115359);	-- Draenor Jewelcrafting
 i(136419);	-- Excavator's Notebook
 i(111356);	-- Fishing Guide to Draenor
 i(28071);	-- Grimoire of Anguish (Rank 1)
@@ -139,6 +140,7 @@ i(21302);	-- Handbook of Deadly Poison
 i(21303);	-- Handbook of Feint
 i(114843);	-- Handbook: Pick Pocket
 i(116982);	-- Handbook: Vanish
+i(183123);	-- How to School Your Serpent
 i(11733);	-- Libram of Constitution
 i(18333);	-- Libram of Focus
 i(18334);	-- Libram of Protection

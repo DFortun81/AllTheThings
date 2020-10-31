@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, { 	-- Northrend
@@ -18,7 +19,7 @@ _.Zones =
 				}),
 				i(120137, {	-- Tome of Polymorph: Polar Bear Cub
 					["spellID"] = 161353,	-- Polymorph(Polar Bear Cub)
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["crs"] = { 26482 },	-- Arctic Grizzly
 				}),
 			}),

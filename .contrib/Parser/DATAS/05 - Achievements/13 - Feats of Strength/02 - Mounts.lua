@@ -14,7 +14,7 @@ _.Achievements =
 			un(14, ach(2316)),	-- Brutal Nether Drake
 			un(14, ach(6741)),	-- Cataclysmic Gladiator's Twilight Drake
 			ach(14183),			-- Conspicuous Consumption
-			ach(13958),			-- Corrupted Gladitor's Proto-Drake (BFA season 4)
+			un(14, ach(13958)),	-- Corrupted Gladitor's Proto-Drake (BFA season 4)
 			un(14, ach(11001)),	-- Cruel Gladiator's Storm Dragon
 			un(14, ach(3096)),	-- Deadly Gladiator's Frost Wyrm
 			ach(729),			-- Deathcharger's Reins

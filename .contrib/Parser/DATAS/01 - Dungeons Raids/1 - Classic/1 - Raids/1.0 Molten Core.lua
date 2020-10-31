@@ -8,7 +8,10 @@ _.Instances = { tier(1, {	-- Classic
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 50,
-		["mapID"] = 232,
+		["maps"] = {
+			232,
+			1160,	-- Dark Iron Dwarf: Unlock Scenario Map
+		},
 		["crs"] = {
 			14387,	-- Lothos Riftwaker
 		},
@@ -607,7 +610,7 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			cr(12057, e(1522, {	-- Garr
 				i(18564, {	-- Bindings of the Windseeker (Right)
-					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
+					["classes"] = { DEMONHUNTER, DEATHKNIGHT, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
 				}),
 				i(18822),	-- Obsidian Edged Blade
 				i(17105),	-- Aurastone Hammer
@@ -655,7 +658,7 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			cr(12056, e(1524, {	-- Baron Geddon
 				i(18563, {	-- Bindings of the Windseeker (Left)
-					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
+					["classes"] = { DEMONHUNTER, DEATHKNIGHT, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
 				}),
 				i(18822),	-- Obsidian Edged Blade
 				i(19142),	-- Fire Runed Grimoire
@@ -752,8 +755,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(19017, {	-- Essence of the Firelord
 					["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
 				}),
-				{	-- Eye of Sulfuras
-					["itemID"] = 17204,	-- Eye of Sulfuras
+				i(17204, {	-- Eye of Sulfuras
 					["classes"] = {
 						DEATHKNIGHT,
 						DRUID,
@@ -761,21 +763,14 @@ _.Instances = { tier(1, {	-- Classic
 						SHAMAN,
 						WARRIOR,
 					},
+					["cost"] = { { "i", 17193, 1 } },	-- Sulfuron Hammer
 					["f"] = 24,	-- To match Sulfuras, Hand of Ragnaros and cause it to display even if Quest Items are filtered
-					["cost"] = {
-						{ "i", 17193, 1 },	-- Sulfuron Hammer
-					},
 					["g"] = {
-						{	-- Sulfuras, Hand of Ragnaros
-							["itemID"] = 17182,	-- Sulfuras, Hand of Ragnaros
-							["g"] = {
-								{	-- Sulfuras, Hand of Ragnaros
-									["achievementID"] = 429,	-- Sulfuras, Hand of Ragnaros
-								},
-							},
-						},
+						i(17182, {	-- Sulfuras, Hand of Ragnaros
+							ach(429),	-- Sulfuras, Hand of Ragnaros
+						}),
 					},
-				},
+				}),
 				i(138833),	-- Illusion: Flametongue (Shaman)
 				i(17076),	-- Bonereaver's Edge
 				i(17104),	-- Spinal Reaper

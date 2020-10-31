@@ -1,10 +1,11 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+
+_.WorldDrops =
 {
 	tier(2, {	-- Burning Crusade
-		n(-319, {	-- Weapons		
+		n(-319, {	-- Weapons
 			n(-334, {	-- 1H Axes
 				i(25198),	-- Karaborian Battle Axe
 				i(25199),	-- Knight's War Axe
@@ -39,7 +40,7 @@ _.WorldDrops =
 				i(25225),	-- Deepforge Broadaxe
 				i(31291),	-- Crystalforged War Axe
 				i(31318),	-- Singing Crystal Axe
-			}),	
+			}),
 			n(-346, {	-- Bows
 				i(25240),	-- Azerothian Longbow
 				i(25241),	-- Ashenvale Longbow
@@ -72,8 +73,8 @@ _.WorldDrops =
 				i(25265),	-- Barreled Crossbow
 				i(25266),	-- Well-Balanced Crossbow
 				i(25267),	-- Rampant Crossbow
-			}),			
-			n(-333, {	-- Daggers	
+			}),
+			n(-333, {	-- Daggers
 				i(25100),	-- Liege Blade
 				i(25101),	-- Cross Pommel Dagger
 				i(25102),	-- Jaedenis Dagger
@@ -107,7 +108,7 @@ _.WorldDrops =
 				i(31305),	-- Ced's Carver
 				i(31331),	-- The Night Blade
 			}),
-			n(-348, {	-- Fist Weapons	
+			n(-348, {	-- Fist Weapons
 				i(25184),	-- Ravager Claws
 				i(25185),	-- Thrasher Blades
 				i(25186),	-- Vampiric Handscythes
@@ -141,7 +142,7 @@ _.WorldDrops =
 				i(25281),	-- Big-Boar Battle Rifle
 				i(31204),	-- The Gunblade
 				i(31323),	-- Don Santos' Famous Hunting Rifle
-			}),			
+			}),
 			n(-331, {	-- Held in Off-hand
 				i(25086),	-- Dreamseeker Dandelion
 				i(25087),	-- Bleeding Eye
@@ -224,7 +225,7 @@ _.WorldDrops =
 				i(25237),	-- Nether Trident
 				i(25238),	-- Hellfire War Spear
 				i(25239),	-- Legend's Glaive
-			}),			
+			}),
 			n(-332, {	-- Shield
 				i(25072),	-- Northman's Shield
 				i(25073),	-- Emperor Shield

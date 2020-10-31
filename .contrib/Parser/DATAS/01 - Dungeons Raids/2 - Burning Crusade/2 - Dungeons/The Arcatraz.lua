@@ -5,7 +5,7 @@
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(254, { 	-- The Arcatraz
 		["lvl"] = 65,
-		["maps"] = { 
+		["maps"] = {
 			269,	-- Stasis Block: Trion
 			270,	-- Stasis Block: Maximus
 			271,	-- Containment Core
@@ -71,19 +71,19 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				})),
 				cr(20885, e(549, {	-- Dalliah the Doomsayer
 					i(28414),	-- Helm of Assassination (7.3.5 - Moved from Harbinger Skyriss)
-					i(28416),	-- Hungering Spineripper (7.3.5 - Moved from Wrath-Scryer Soccothrates)	
+					i(28416),	-- Hungering Spineripper (7.3.5 - Moved from Wrath-Scryer Soccothrates)
 					i(28387),	-- Lamp of Peaceful Repose
 					i(28386),	-- Nether Core's Control Rod
 					i(28384),	-- Outland Striders (7.3.5 - Also drops from Zereketh?)
 					i(24308),	-- Pattern: Whitemend Pants
 					i(28392),	-- Reflex Blades
 					i(28390),	-- Thatia's Self-Correcting Gauntlets
-				 -- i(28391),	-- Worldfire Chestguard (7.3.5 - Moved to Wrath-Scryer Soccothrates)
+					-- i(28391),	-- Worldfire Chestguard (7.3.5 - Moved to Wrath-Scryer Soccothrates)
 				})),
 				cr(20886, e(550, {	-- Wrath-Scryer Soccothrates
 					i(28403),	-- Doomplate Chestguard  (7.3.5 - Moved from Harbinger Skyriss)
 					i(28397),	-- Emberhawk Crossbow
-				  --i(28396),	-- Gloves of the Unbound (7.3.5 - Moved to Zereketh)
+					--i(28396),	-- Gloves of the Unbound (7.3.5 - Moved to Zereketh)
 					i(28413),	-- Hallowed Crown (7.3.5 - Moved from Harbinger Skyriss)
 					i(28394),	-- Ryngo's Band of Ingenuity
 					i(28398),	-- The Sleeper's Cord
@@ -96,12 +96,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(29252),	-- Bracers of Dignity
 					i(28205),	-- Breastplate of the Bold
 					i(28419),	-- Choker of Fluid Thought
-				 -- i(28403),	-- Doomplate Chestguard  (7.3.5 - Moved to Wrath-Scryer Soccothrates)
+					-- i(28403),	-- Doomplate Chestguard  (7.3.5 - Moved to Wrath-Scryer Soccothrates)
 					i(28407),	-- Elementium Band of the Sentry
-				 -- i(28413),	-- Hallowed Crown (7.3.5 - Moved to Wrath-Scryer Soccothrates)	
-				 -- i(28414),	-- Helm of Assassination (7.3.5 - Moved to Dalliah)
-				 -- i(28415),	-- Hood of Oblivion (7.3.5 - Moved to Zereketh)
-				 -- i(28416),	-- Hungering Spineripper (7.3.5 - Moved to Dalliah)	
+					-- i(28413),	-- Hallowed Crown (7.3.5 - Moved to Wrath-Scryer Soccothrates)
+					-- i(28414),	-- Helm of Assassination (7.3.5 - Moved to Dalliah)
+					-- i(28415),	-- Hood of Oblivion (7.3.5 - Moved to Zereketh)
+					-- i(28416),	-- Hungering Spineripper (7.3.5 - Moved to Dalliah)
 					i(28412),	-- Lamp of Peaceful Radiance
 					i(29248),	-- Shadowstep Striders
 					i(28418),	-- Shiffar's Nexus-Horn
@@ -124,19 +124,19 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 					cr(20885, e(549, {	-- Dalliah the Doomsayer
 						i(28414),	-- Helm of Assassination (7.3.5 - Moved from Harbinger Skyriss)
-						i(28416),	-- Hungering Spineripper (7.3.5 - Moved from Wrath-Scryer Soccothrates)	
+						i(28416),	-- Hungering Spineripper (7.3.5 - Moved from Wrath-Scryer Soccothrates)
 						i(28387),	-- Lamp of Peaceful Repose
 						i(28386),	-- Nether Core's Control Rod
 						i(28384),	-- Outland Striders (7.3.5 - Also drops from Zereketh?)
 						i(24308),	-- Pattern: Whitemend Pants
 						i(28392),	-- Reflex Blades
 						i(28390),	-- Thatia's Self-Correcting Gauntlets
-					 -- i(28391),	-- Worldfire Chestguard (7.3.5 - Moved to Wrath-Scryer Soccothrates)
+						-- i(28391),	-- Worldfire Chestguard (7.3.5 - Moved to Wrath-Scryer Soccothrates)
 					})),
 					cr(20886, e(550, {	-- Wrath-Scryer Soccothrates
 						i(28403),	-- Doomplate Chestguard  (7.3.5 - Moved from Harbinger Skyriss)
 						i(28397),	-- Emberhawk Crossbow
-					  --i(28396),	-- Gloves of the Unbound (7.3.5 - Moved to Zereketh)
+						--i(28396),	-- Gloves of the Unbound (7.3.5 - Moved to Zereketh)
 						i(28413),	-- Hallowed Crown (7.3.5 - Moved from Harbinger Skyriss)
 						i(28394),	-- Ryngo's Band of Ingenuity
 						i(28398),	-- The Sleeper's Cord
@@ -149,12 +149,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(29252),	-- Bracers of Dignity
 						i(28205),	-- Breastplate of the Bold
 						i(28419),	-- Choker of Fluid Thought
-					 -- i(28403),	-- Doomplate Chestguard  (7.3.5 - Moved to Wrath-Scryer Soccothrates)
+						-- i(28403),	-- Doomplate Chestguard  (7.3.5 - Moved to Wrath-Scryer Soccothrates)
 						i(28407),	-- Elementium Band of the Sentry
-					 -- i(28413),	-- Hallowed Crown (7.3.5 - Moved to Wrath-Scryer Soccothrates)	
-					 -- i(28414),	-- Helm of Assassination (7.3.5 - Moved to Dalliah)
-					 -- i(28415),	-- Hood of Oblivion (7.3.5 - Moved to Zereketh)
-					 -- i(28416),	-- Hungering Spineripper (7.3.5 - Moved to Dalliah)	
+						-- i(28413),	-- Hallowed Crown (7.3.5 - Moved to Wrath-Scryer Soccothrates)
+						-- i(28414),	-- Helm of Assassination (7.3.5 - Moved to Dalliah)
+						-- i(28415),	-- Hood of Oblivion (7.3.5 - Moved to Zereketh)
+						-- i(28416),	-- Hungering Spineripper (7.3.5 - Moved to Dalliah)
 						i(28412),	-- Lamp of Peaceful Radiance
 						i(29248),	-- Shadowstep Striders
 						i(28418),	-- Shiffar's Nexus-Horn

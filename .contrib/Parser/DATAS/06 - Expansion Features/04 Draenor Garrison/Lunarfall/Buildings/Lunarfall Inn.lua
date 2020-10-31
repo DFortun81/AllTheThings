@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
@@ -9,7 +10,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(36, {	-- Lunarfall Inn (rank 1: 34, rank 2: 35, rank 3: 36)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-4,   {	-- Achievements
+						n(ACHIEVEMENTS, {
 							ach(9703, {		-- Stay Awhile and Listen
 								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 								["g"] = {
@@ -254,7 +255,7 @@ _.ExpansionFeatures =
 								follower(172, {	-- Soulare of Andorhal
 									i(117573, {	-- Wayfarer's Bonfire
 										["crs"] = { 82717 },	-- Soulare of Andorhal
-										["description"] = "|cff3399ffStep 1:|r |cff66ccffRecruit |cFFFFD700Soulare of Andorhal|r from the Inn using either Magic Debuff or Wild Aggression.|r \n|cff3399ffStep 2:|r |cff66ccffDo a /tired emote and he will award the toy.|r \n|cff3399ffNote:|r |cff66ccffCan get by visiting someone's Garrison.|r",
+										["description"] = "|cff3399ffStep 1:|r |cff66ccffRecruit |cFFFFD700Soulare of Andorhal|r from the Inn using either Magic Debuff or Wild Aggression.|r \n|cff3399ffStep 2:|r |cff66ccffDo a |cFFFFFFFF/tired|r emote and he will award the toy.|r \n|cff3399ffNote:|r |cff66ccffCan get by visiting someone's Garrison, and players of both factions can now visit Soulare in Stormwind City at |cFFFFFFFF38.2, 64.6|r and emote at him to get the toy.|r\n",
 									}),
 								}),
 								follower(452),	-- Sprynt Starkflange

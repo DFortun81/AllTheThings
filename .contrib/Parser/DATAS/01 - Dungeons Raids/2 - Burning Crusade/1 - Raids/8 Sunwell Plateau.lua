@@ -1,13 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(752, { 	-- Sunwell Plateau
 		["order"] = "08",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 68,
-		["maps"] = { 
+		["maps"] = {
 			335,	-- Sunwell Plateau
 			336,	-- Shrine of the Eclipse
 		},
@@ -900,7 +901,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34169, {	-- Breeches of Natural Aggression
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34384),	-- Breeches of Natural Splendor
 							},
 						}),
@@ -908,7 +909,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34167, {	-- Legplates of the Holy Juggernaut
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34382),	-- Judicator's Legguards
 							},
 						}),
@@ -974,7 +975,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34180, {	-- Felfury Legplates
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34381),	-- Felstrength Legplates
 							},
 						}),
@@ -1030,7 +1031,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34186, {	-- Chain Links of the Tumultuous Storm
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34383),	-- Kilt of Spiritual Reconstruction
 							},
 						}),
@@ -1038,7 +1039,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34188, {	-- Leggings of the Immortal Night
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34385),	-- Leggings of the Immortal Beast
 							},
 						}),
@@ -1180,7 +1181,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34208, {	-- Equilibrium Epaulets
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34390),	-- Erupting Epaulets
 							},
 						}),
@@ -1189,7 +1190,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34192, {	-- Pauldrons of Perseverance
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34388),	-- Pauldrons of Berserking
 							},
 						}),
@@ -1205,7 +1206,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34195, {	-- Shoulderpads of Vehemence
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34392),	-- Demontooth Shoulderpads
 							},
 						}),
@@ -1213,7 +1214,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34209, {	-- Spaulders of Reclamation
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34391),	-- Spaulders of Devastation
 							},
 						}),
@@ -1221,7 +1222,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34193, {	-- Spaulders of the Thalassian Savior
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34389),	-- Spaulders of the Thalassian Defender
 							},
 						}),
@@ -1244,7 +1245,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34229, {	-- Garments of Serene Shores
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34396),	-- Garments of Crashing Shores
 							},
 						}),
@@ -1252,7 +1253,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34211, {	-- Harness of Carnal Instinct
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34397),	-- Bladed Chaos Tunic
 							},
 						}),
@@ -1260,7 +1261,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34216, {	-- Heroic Judicator's Chestguard
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34395),	-- Noble Judicator's Chestguard
 							},
 						}),
@@ -1276,7 +1277,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34212, {	-- Sunglow Vest
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34398),	-- Utopian Tunic of Elune
 							},
 						}),
@@ -1285,7 +1286,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34215, {	-- Warharness of Reckless Fury
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34394),	-- Breastplate of Agony's Aversion
 							},
 						}),
@@ -1294,7 +1295,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34234, {	-- Shadowed Gauntlets of Paroxysm (MISSING IN ADVENTURE GUIDE)
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34408),	-- Gloves of the Forest Drifter
 							},
 						}),
@@ -1327,7 +1328,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34245, {	-- Cover of Ursol the Wise
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34403),	-- Cover of Ursoc the Mighty
 							},
 						}),
@@ -1335,7 +1336,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34332, {	-- Cowl of Gul'dan
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34402),	-- Shroud of Chieftain Ner'zhul
 							},
 						}),
@@ -1343,7 +1344,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34339, {	-- Cowl of Light's Purity
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34405),	-- Helm of Arcane Purity
 							},
 						}),
@@ -1351,7 +1352,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34345, {	-- Crown of Anasterian
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34400),	-- Crown of Dath'Remar
 							},
 						}),
@@ -1360,7 +1361,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34244, {	-- Duplicitous Guise
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34404),	-- Mask of the Fury Hunter
 							},
 						}),
@@ -1368,7 +1369,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34243, {	-- Helm of Burning Righteousness
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34401),	-- Helm of Uther's Resolve
 							},
 						}),
@@ -1380,7 +1381,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(34342, {	-- Handguards of the Dawn
 						n(25977, {	-- Yrma
 							["description"] = "This vendor is located on a boat on the Isle of Quel'Danas.",
-							["groups"] = {	
+							["groups"] = {
 								i(34406),	-- Gloves of Tyri's Power
 							},
 						}),

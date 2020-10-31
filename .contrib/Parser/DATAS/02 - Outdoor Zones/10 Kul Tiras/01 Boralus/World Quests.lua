@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
@@ -50,22 +51,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13285, {	-- Upright Citizens
-								["g"] = {
-									crit(1, {	-- Russel the Bard recruited
-										["coord"] = { 72.4, 68.9, 1161 },
-									}),
-									crit(2, {	-- Flynn Fairwind recruited
-										["coord"] = { 72.0, 61.6, 1161 },
-									}),
-									crit(3, {	-- Leeroy Jenkins recruited
-										["coord"] = { 66.8, 64.0, 1161 },
-									}),
-									i(166247),	-- Citizens Brigade Whistle
-								},
-							}),
-						},
 					}),
 					q(51092, {	-- Picturesque Boralus
 						["lvl"] = 120,

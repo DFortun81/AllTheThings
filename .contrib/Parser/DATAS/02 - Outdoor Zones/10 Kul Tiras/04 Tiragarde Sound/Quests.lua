@@ -1,12 +1,12 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(895, {	-- Tiragarde Sound
 			n(QUESTS, {
-		--	!! LEATHER/MAIL REWARDS NEEDED FOR QUEST 49404, "FAIRWIND'S 'FRIENDS'" !! — leather needs to be confirmed and mail is missing completely
 				q(49523, {	-- A Bad Deal
 					["sourceQuests"] = { 49522 },	-- Carentan's Payment
 					["coord"] = { 76.8, 85.9, 895 },
@@ -27,13 +27,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(160097),	-- Navigator's Wristwraps
+						i(158260),	-- Navigator's Grips
 						i(160098),	-- Freebooter Bands
+						i(158258),	-- Freebooter Handwraps
 						i(160099),	-- Outrigger Bands
 						i(160100),	-- Sea Raider's Shackles
-						i(158260),	-- Navigator's Grips
-						i(158258),	-- Freebooter Handwraps
-						i(158261),	-- Outrigger Handguards
 						i(158259),	-- Sea Raider's Handguards
+						i(158261),	-- Outrigger Handguards
 					},
 				}),
 				q(49869, {	-- A Desperate Defense
@@ -399,14 +399,22 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128927 },	-- Venrik
 					["g"] = {
-						i(160859),	-- Freebooter Hood — NEEDS CONFIRMATION
-						i(155040),	-- Freebooter Shoulderpads — NEEDS CONFIRMATION
+						i(160859),	-- Freebooter Hood
+						i(155040),	-- Freebooter Shoulderpads
 						i(160858),	-- Navigator's Crown
 						i(155042),	-- Navigator's Mantle
 						i(160860),	-- Outrigger Coif
 						i(155043),	-- Outrigger Pauldrons
 						i(160861),	-- Sea Raider's Helmet
 						i(155041),	-- Sea Raider's Spaulders
+						i(175315),	-- Freebooter Hood (no azerite version)
+						i(175318),	-- Freebooter Shoulderpads (no azerite version)
+						i(175314),	-- Navigator's Crown (no azerite version)
+						i(175320),	-- Navigator's Mantle (no azerite version)
+						i(175316),	-- Outrigger Coif (no azerite version)
+						i(175321),	-- Outrigger Pauldrons  (no azerite version)
+						i(175317),	-- Sea Raider's Helmet (no azerite version)
+						i(175319),	-- Sea Raider's Spaulders (no azerite version)
 					},
 				}),
 				q(52750, {	-- Farmers Who Fight
@@ -493,7 +501,7 @@ _.Zones =
 					["coord"] = { 88.0, 74.9, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(53444, {	-- Glimmering Locket (H)	
+				q(53444, {	-- Glimmering Locket (H)
 					["sourceQuests"] = { 53443 },	-- My Favorite Things (must be in log)
 					["provider"] = { "o", 277373 },	-- Glimmering Seaweed
 					["coord"] = { 85.48, 80.78, 895 },
@@ -1400,6 +1408,7 @@ _.Zones =
 					["lvl"] = 120,
 					["provider"] = { "n", 149809 },	-- Gazlowe
 				}),
+				-- Want to see q49310 The Prophet's Ploy? Its under Boralus>Quests
 --[[	raw quest list to check against
 				-- Unknown
 				q(48104, {	-- A Greater Challenge
@@ -1435,7 +1444,7 @@ _.Zones =
 				q(50350, {	-- We Need a Chemist
 					["races"] = ALLIANCE_ONLY,
 				}),
-]]--					
+]]--
 			}),
 		}),
 	}),

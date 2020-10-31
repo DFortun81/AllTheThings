@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -52,13 +53,14 @@ _.Zones =
 					["sourceQuest"] = 14431,	-- The Blackmaw Scar
 				}),
 				q(46177, {	-- A Portal Away
+					["sourceQuests"] = { 44924 },	-- The Archmage Accosted
 					["provider"] = { "n", 116048 },	-- Joanna
 					["classes"] = {
-						6,	-- Death Knight (Frost)
-						12,	-- Demon Hunter (Havoc)
-						3,	-- Hunter (Survival)
-						4,	-- Rogue (Subtlety)
-						1,	-- Warrior (Arms)
+						DEATHKNIGHT,	-- Frost
+						DEMONHUNTER,	-- Havoc
+						HUNTER,			-- Survival
+						ROGUE,			-- Subtlety
+						WARRIOR,		-- Arms
 					},
 					["coord"] = { 25.2, 37.9, 76 },
 					["lvl"] = 110,
@@ -101,7 +103,11 @@ _.Zones =
 					["provider"] = { "n", 36752 },	-- Private Worcester
 					["coord"] = { 29.4, 66.8, 76 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 14194,	-- Refleshification
+					["sourceQuests"] = {
+						14197,	-- A Quota to Meet
+						14161,	-- Basilisk Bashin'
+						14194,	-- Refleshification
+					},
 				}),
 				q(14155, {	-- Arborcide
 					["races"] = HORDE_ONLY,
@@ -605,11 +611,11 @@ _.Zones =
 					["sourceQuest"] = 44915,	-- Professionally Good looking
 					["provider"] = { "n", 115791 },	-- Joanna
 					["classes"] = {
-						6,	-- Death Knight (Frost)
-						12,	-- Demon Hunter (Havoc)
-						3,	-- Hunter (Survival)
-						4,	-- Rogue (Subtlety)
-						1,	-- Warrior (Arms)
+						DEATHKNIGHT,	-- Frost
+						DEMONHUNTER,	-- Havoc
+						HUNTER,			-- Survival
+						ROGUE,			-- Subtlety
+						WARRIOR,		-- Arms
 					},
 					["coord"] = { 25.0, 38.6, 76 },
 					["lvl"] = 110,
@@ -657,11 +663,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 115791 },	-- Joanna
 					["classes"] = {
-						6,	-- Death Knight (Frost)
-						12,	-- Demon Hunter (Havoc)
-						3,	-- Hunter (Survival)
-						4,	-- Rogue (Subtlety)
-						1,	-- Warrior (Arms)
+						DEATHKNIGHT,	-- Frost
+						DEMONHUNTER,	-- Havoc
+						HUNTER,			-- Survival
+						ROGUE,			-- Subtlety
+						WARRIOR,		-- Arms
 					},
 					["coord"] = { 25.0, 38.6, 76 },
 					["lvl"] = 110,
@@ -897,11 +903,11 @@ _.Zones =
 				q(44924, {	-- The Archmage Accosted
 					["sourceQuest"] = 44920,	-- Order of Incantations
 					["classes"] = {
-						6,	-- Death Knight (Frost)
-						12,	-- Demon Hunter (Havoc)
-						3,	-- Hunter (Survival)
-						4,	-- Rogue (Subtlety)
-						1,	-- Warrior (Arms)
+						DEATHKNIGHT,	-- Frost
+						DEMONHUNTER,	-- Havoc
+						HUNTER,			-- Survival
+						ROGUE,			-- Subtlety
+						WARRIOR,		-- Arms
 					},
 					["coord"] = { 25.1, 38.5, 76 },
 					["lvl"] = 110,

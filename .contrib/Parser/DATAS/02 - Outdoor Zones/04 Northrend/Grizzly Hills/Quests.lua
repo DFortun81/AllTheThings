@@ -1,6 +1,7 @@
 ---------------------------------------------------
---         Z O N E S        M O D U L E         --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, {	-- Northrend
@@ -828,7 +829,7 @@ _.Zones =
 						i(39010),	-- Wolfslayer's Crest
 						i(38755),	-- Scepter of Passionate Reprisal
 						i(39110),	-- Staff of Righteous Vengeance
-					},			
+					},
 				}),
 				q(12190, {	-- Say Hello to My Little Friend
 					["coord"] = { 15.7, 46.6, 116 },

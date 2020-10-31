@@ -1,29 +1,30 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(862, {	-- Zuldazar
 			n(QUESTS, {
-			-- TODO: shit that needs solving:
-				--	what unlocks "productive pests"/"crabulous feast"?  the other two quests in the area (76.4, 48.7) are available with no prerequisites, not even starting the zuldazar/dazar'alor, but as soon as you land in the port of dazar'alor for the first time after the pre-BFA stuff.
+				-- TODO: shit that needs solving:
+					--	what unlocks "productive pests"/"crabulous feast"?  the other two quests in the area (76.4, 48.7) are available with no prerequisites, not even starting the zuldazar/dazar'alor, but as soon as you land in the port of dazar'alor for the first time after the pre-BFA stuff.
 
-				--	when does "keep them on task" (breadcrumb for area mentioned above) unlock?  could be as early as "terrace of the chosen" or as late as "mistress of lies," which is when i saw it.
+					--	when does "keep them on task" (breadcrumb for area mentioned above) unlock?  could be as early as "terrace of the chosen" or as late as "mistress of lies," which is when i saw it.
 
-				--	when are "sandscar breach" and "the bones of xibala" available?  i picked them up after "the king's gambit," but they may be available slightly earlier.
+					--	when are "sandscar breach" and "the bones of xibala" available?  i picked them up after "the king's gambit," but they may be available slightly earlier.
 
-				--	when does "who seeks the seekers?" (in dazar'alor) become available?  seen as early as "the prophet's ploy," but may be available sooner.
+					--	when does "who seeks the seekers?" (in dazar'alor) become available?  seen as early as "the prophet's ploy," but may be available sooner.
 
-				--	when does "king da'ka" become available?  didn't see it until after i picked up the breadcrumb for the area after turning in "the prophet's ploy," but may be available sooner.  "kaja'mite ore dust" (in the same area) requires zero prereqs, not even the intro to dazar'alor, but this quest wasn't available then.
+					--	when does "king da'ka" become available?  didn't see it until after i picked up the breadcrumb for the area after turning in "the prophet's ploy," but may be available sooner.  "kaja'mite ore dust" (in the same area) requires zero prereqs, not even the intro to dazar'alor, but this quest wasn't available then.
 
-				-- when does "lil' tika" become available?  saw it after "the king's gambit" but not sure if that's the requirement to unlock.  the other quests in the area are available prior to doing any quests in dazar'alor or zuldazar.
+					-- when does "lil' tika" become available?  saw it after "the king's gambit" but not sure if that's the requirement to unlock.  the other quests in the area are available prior to doing any quests in dazar'alor or zuldazar.
 
-				-- possible that "hunting the hunter" only requires "predatory."  check!
+					-- possible that "hunting the hunter" only requires "predatory."  check!
 
-				-- figure out if "prepare for a siege" is a breadcrumb for anything.  there was no follow-up quest to take so i'm not sure if this quest is a requirement for something or just flavor.
+					-- figure out if "prepare for a siege" is a breadcrumb for anything.  there was no follow-up quest to take so i'm not sure if this quest is a requirement for something or just flavor.
 
-				-- for "how to train your direhorn," i never got the version of "away from the herd" that is questID #55249, just #55244.  figure out if 55249 is used/unused and if/when it appears.
+					-- for "how to train your direhorn," i never got the version of "away from the herd" that is questID #55249, just #55244.  figure out if 55249 is used/unused and if/when it appears.
 
 				n(-9, {		-- PvP
 					["lvl"] = 120,	-- Don't become available until this level.
@@ -148,7 +149,7 @@ _.Zones =
 								i(169614),	-- Call to Arms Distinction
 							},
 						}),
-						q(52956, {	-- Call to Arms: Tirigarde Sound
+						q(52956, {	-- Call to Arms: Tiragarde Sound
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
 							["isWeekly"] = true,
 							["coord"] = { 51.5, 58.1, 862 },
@@ -1485,13 +1486,23 @@ _.Zones =
 					["g"] = {
 						i(155250),	-- Rastari Helm
 						i(155260),	-- Rastari Pauldrons
-						i(155239),	-- Rastari Breastplate
 						i(155252),	-- Torcalin Coif
 						i(155262),	-- Torcalin Spaulders
 						i(155253),	-- Jambani Hood
 						i(155259),	-- Jambani Shoulderpads
 						i(155251),	-- Zanchuli Cowl
 						i(155261),	-- Zanchuli Mantle
+						-- NO NECK Gear
+						i(175283),	-- Rastari Helm
+						i(175287),	-- Rastari Pauldrons
+						i(175284),	-- Torcalin Coif
+						i(175289),	-- Torcalin Spaulders
+						i(175285),	-- Jambani Hood
+						i(175286),	-- Jambani Shoulderpads
+						i(175278),	-- Zanchuli Cowl
+						i(175288),	-- Zanchuli Mantle
+					--	i(175317),	-- Sea Raider's Helmet // Alliance apperance // Sourced under Proudmoore's Parley/Alliance Quest
+					--	i(175319),	-- Sea Raider's Spaulders  // Alliance apperance // Sourced under Proudmoore's Parley/Alliance Quest
 					},
 				}),
 				q(49814, {	-- The Scent for a Brutosaur
@@ -1819,6 +1830,17 @@ _.Zones =
 						i(155241),	-- Jambani Jerkin
 						i(161142),	-- Zanchuli Crest
 						i(155258),	-- Zanchuli Raiment
+						-- NO NECK Gear
+						i(175291),	-- Torcalin Headguard
+						i(175281),	-- Torcalin Chainmail
+						i(175290),	-- Jambani Mask
+						i(175282),	-- Jambani Jerkin
+						i(175292),	-- Zanchuli Crest
+						i(175366),	-- Zanchuli Raiment
+						i(175293),	-- Rastari Helmet
+						i(175280),	-- Rastari Breastplate
+					--	i(175294),	-- Sea Raider's Greathelm // Alliance appearance // Listed under Tirisgarde Fairwind's "Friends" (Alliance Quest Reward)
+					--	i(175354),	-- Sea Raider's Breastplate // Alliance apperance // Listed under Tirisgarde Fairwind's "Friends" (Alliance Quest Reward)
 					},
 				}),
 				q(49276, {	-- The Thrill of Exploration

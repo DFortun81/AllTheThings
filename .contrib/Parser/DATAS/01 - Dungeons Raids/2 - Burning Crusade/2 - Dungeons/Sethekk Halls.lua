@@ -5,7 +5,7 @@
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(252, { 	-- Sethekk Halls
 		["lvl"] = 63,
-		["maps"] = { 
+		["maps"] = {
 			258,	-- Veil Sethekk
 			259,	-- Halls of Mourning
 		},
@@ -18,40 +18,40 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			}),
-			n(QUESTS, { 	
-					q(10097,  {	-- Brother Against Brother
-						["u"] = REMOVED_FROM_GAME,
-						["provider"] = { "n", 18933 },	-- Isfar
-					}),
-					q(29605, {	-- Brother Against Brother
-						["provider"] = { "n", 54840 },	-- Isfar
-						["sourceQuests"] = 10180,	-- Can't Stay Away
-						["g"] = {
-							i(29336),	-- Mark of the Ravenguard
-							i(29334),	-- Sethekk Oracle's Focus
-							i(29335),	-- Talon Lord's Collar
-							i(29333),	-- Torc of the Sethekk Prophet
-						},
-					}),
-					q(29607, {	-- Eyes of Desire
-						["provider"] = { "n", 54847 },	-- Dealer Vijaad
-						["description"] = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
-					}),
-					q(10098,  {	-- Terokk's Legacy
-						["u"] = REMOVED_FROM_GAME,
-						["provider"] = { "n", 18933 },	-- Isfar
-					}),
-					q(29606, {	-- Terokk's Legacy
-						["provider"] = { "n", 54840 },	-- Isfar
-						["g"] = {
-							i(29330),	-- The Saga of Terokk
-							i(29332),	-- Terokk's Mask
-							i(29329),	-- Terokk's Quill
-						},
-					}),	
+			n(QUESTS, {
+				q(10097,  {	-- Brother Against Brother
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 18933 },	-- Isfar
 				}),
+				q(29605, {	-- Brother Against Brother
+					["sourceQuests"] = { 10180 },	-- Can't Stay Away
+					["provider"] = { "n", 54840 },	-- Isfar
+					["g"] = {
+						i(29336),	-- Mark of the Ravenguard
+						i(29334),	-- Sethekk Oracle's Focus
+						i(29335),	-- Talon Lord's Collar
+						i(29333),	-- Torc of the Sethekk Prophet
+					},
+				}),
+				q(29607, {	-- Eyes of Desire
+					["provider"] = { "n", 54847 },	-- Dealer Vijaad
+					["description"] = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
+				}),
+				q(10098,  {	-- Terokk's Legacy
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 18933 },	-- Isfar
+				}),
+				q(29606, {	-- Terokk's Legacy
+					["provider"] = { "n", 54840 },	-- Isfar
+					["g"] = {
+						i(29330),	-- The Saga of Terokk
+						i(29332),	-- Terokk's Mask
+						i(29329),	-- Terokk's Quill
+					},
+				}),
+			}),
 			d(1, {	-- Normal
-					cr(18472, e(541, {	-- Darkweaver Syth
+				cr(18472, e(541, {	-- Darkweaver Syth
 					i(24160),	-- Design: Khorium Inferno Band
 					i(27918),	-- Bands of Syth
 					i(27919),	-- Light-Woven Slippers
@@ -115,7 +115,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(27838),	-- Incanter's Trousers
 						i(27948),	-- Trousers of Oblivion
 						i(27925),	-- Ravenclaw Band
-					 -- i(27936),	-- Greaves of Desolation (7.3.5 - Moved to Anzu on Heroic Mode)
+						-- i(27936),	-- Greaves of Desolation (7.3.5 - Moved to Anzu on Heroic Mode)
 					}))
 				}
 			}),

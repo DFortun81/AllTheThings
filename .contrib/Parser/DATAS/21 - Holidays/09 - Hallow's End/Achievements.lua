@@ -318,7 +318,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 17 },	-- Blasted Lands
 										}),
 										crit(6,  {	-- The Cape of Stranglethorn, Booty Bay
-											["coord"] = { 27.1, 77.3, 210 },
+											["coord"] = { 40.9, 73.8, 210 },
 											["maps"] = { 210 },	-- The Cape of Stranglethorn
 										}),
 										crit(7,  {	-- Dun Morogh, Kharanos

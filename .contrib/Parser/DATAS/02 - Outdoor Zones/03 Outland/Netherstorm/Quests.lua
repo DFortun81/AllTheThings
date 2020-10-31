@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -103,7 +104,7 @@ _.Zones =
 								q(10407, {	-- Socrethar's Shadow
 									["provider"] = { "n", 19467 },	-- Anchorite Karja
 									["coord"] = { 32.0, 64.2, 109 },
-									["sourceQuests"] = { 
+									["sourceQuests"] = {
 										10323,	-- Shutting Down Manaforge Ara
 										10381,	-- Aldor No More
 									},
@@ -143,12 +144,12 @@ _.Zones =
 								q(10204, {	-- Bloodgem Crystals
 									["provider"] = { "n", 19469 },	-- Magistrix Larynna
 									["coord"] = { 32.1, 64.0, 109 },
-									["sourceQuests"] = 10189,	-- Manaforge B'naar
+									["sourceQuests"] = { 10189 },	-- Manaforge B'naar
 								}),
 								q(10193, {	-- High Value Targets
 									["provider"] = { "n", 19468 },	-- Spymaster Thalodien
 									["coord"] = { 32.0, 64.1, 109 },
-									["sourceQuest"] = 10189,	-- Manaforge B'naar
+									["sourceQuests"] = { 10189 },	-- Manaforge B'naar
 								}),
 								q(10329, {	-- Shutting Down Manaforge B'naar
 									["provider"] = { "n", 19468 },	-- Spymaster Thalodien
@@ -158,7 +159,7 @@ _.Zones =
 								q(10194, {	-- Stealth Flight
 									["provider"] = { "n", 19468 },	-- Spymaster Thalodien
 									["coord"] = { 32.0, 64.1, 109 },
-									["sourceQuests"] = 10329,	-- Shutting Down Manaforge B'naar
+									["sourceQuests"] = { 10329 },	-- Shutting Down Manaforge B'naar
 								}),
 								q(10652, {	-- Behind Enemy Lines
 									["provider"] = { "n", 20162 },	-- Veronia
@@ -248,7 +249,7 @@ _.Zones =
 										i(30374),	-- Greaves of Spellpower
 										i(30859),	-- Wand of the Seer
 									},
-								}),										
+								}),
 							},
 							["collectible"] = false,
 						}),
@@ -289,7 +290,6 @@ _.Zones =
 								i(30398),	-- Boots of the Beneficent
 							},
 						}),
-						
 						q(10185, {	-- A Fate Worse Than Death
 							["provider"] = { "n", 19488 },	-- Custodian Dieworth
 							["coord"] = { 31.4, 66.1, 109 },
@@ -301,7 +301,6 @@ _.Zones =
 								i(29959),	-- Spiritualist's Gauntlets
 							},
 						}),
-						
 						q(10188, {	-- The Sigil of Krasus
 							["provider"] = { "n", 19644 },	-- Image of Archmage Vargoth
 							["sourceQuest"] = 10174,	-- Curse of the Violet Tower
@@ -370,9 +369,9 @@ _.Zones =
 						i(29236, {	-- Cohlien's Cap
 							q(10307, {	-- Cohlien Frostweaver
 								["provider"] = { "n", 19545 },	-- Cohlien Frostweaver
-								["coords"] = { 59.6, 87.6, 109 },											
+								["coords"] = { 59.6, 87.6, 109 },
 							}),
-						}),	
+						}),
 						i(29235, {	-- Luminrath's Mantle
 							q(10306, {	-- Conjurer Luminrath
 								["provider"] = { "n", 19544 },	-- Conjurer Luminrath
@@ -425,7 +424,7 @@ _.Zones =
 							["coord"] = { 57.6, 86.3, 109 },
 							["sourceQuest"] = 10192,	-- Krasus's Compendium
 						}),
-						q(10223, {	-- Down With Daellis	
+						q(10223, {	-- Down With Daellis
 							["provider"] = { "n", 19488 },	-- Custodian Dieworth
 							["coord"] = { 57.5, 86.3, 109 },
 							["sourceQuest"] = 10222,	-- The Sunfury Garrison
@@ -472,7 +471,7 @@ _.Zones =
 								11040,	-- Parts for the Rocket-Chief
 								11036,	-- Out of This World Produce!
 								11037,	-- A Strange Vision
-								11042,	-- A Mystifying Vision	
+								11042,	-- A Mystifying Vision
 								10183,	-- Off To Area 52
 							},
 							["groups"] = {
@@ -564,7 +563,7 @@ _.Zones =
 									["description"] = "This item was one of the original quest rewards. Blizzard does not give transmog for removed quest rewards.",
 								}),
 							},
-						}),								
+						}),
 					}),
 					crit(5, {		-- The Consortium
 						q(10264, {	-- Assisting the Consortium (The Scryers)
@@ -628,7 +627,7 @@ _.Zones =
 						q(10423, {	-- To the Stormspire
 							["provider"] = { "n", 20810 },	-- Mehrdad
 							["coord"] = { 46.4, 56.4, 109 },
-							["sourceQuests"] = 10418,	-- Deal With the Saboteurs
+							["sourceQuests"] = { 10418 },	-- Deal With the Saboteurs
 						}),
 						q(10268, {	-- An Audience with the Prince
 							["provider"] = { "n", 20066 },	-- Gahruj
@@ -643,7 +642,7 @@ _.Zones =
 						q(10430, {	-- Testing the Prototype
 							["provider"] = { "n", 20811 },	-- Ghabar
 							["coord"] = { 43.5, 35.1, 109 },
-							["sourceQuests"] = 10424,	-- Diagnosis: Critical
+							["sourceQuests"] = { 10424 },	-- Diagnosis: Critical
 						}),
 						q(10269, {	-- Triangulation Point One
 							["provider"] = { "n", 20084 },	-- Image of Nexus-Prince Haramad
@@ -753,7 +752,7 @@ _.Zones =
 						q(10276, {	-- Full Triangle
 							["provider"] = { "n", 20112 },	-- Wind Trader Tuluman
 							["coord"] = { 34.6, 37.9, 109 },
-							["sourceQuests"] = 10275,	-- Triangulation Point Two
+							["sourceQuests"] = { 10275 },	-- Triangulation Point Two
 						}),
 						q(10436, {	-- All Clear!
 							["provider"] = { "n", 20913 },	-- Tashar
@@ -771,7 +770,7 @@ _.Zones =
 								i(30293),	-- Heavenly Inspiration
 							},
 						}),
-						q(10280, {	-- Special Delivery to Shattrath City	
+						q(10280, {	-- Special Delivery to Shattrath City
 							["provider"] = { "n", 20084 },	-- Image of Nexus-Prince Haramad
 							["coord"] = { 45.9, 36.0, 109 },
 							["sourceQuest"] = 10276,	-- Full Triangle
@@ -781,7 +780,7 @@ _.Zones =
 								i(30256),	-- Pants of the Naaru
 								i(30257),	-- Shattrath Leggings
 							},
-						}),	
+						}),
 					}),
 					crit(6, {		-- Destroying the All-Devouring
 						q(10437, {	-- Recipe for Destruction
@@ -803,7 +802,7 @@ _.Zones =
 								i(30298),	-- Void Slayer's Tunic
 								i(30300),	-- Dabiri's Enigma
 							},
-						}),	
+						}),
 					}),
 				}),
 				n(-168,  {	-- Other Quests
@@ -859,7 +858,7 @@ _.Zones =
 									i(31315),	-- Goblin Girdle
 									i(31312),	-- Sinister Area 52 Boots
 								},
-							}),	
+							}),
 							q(10261, {	-- Wanted: Annihilator Servo!
 								["coord"] = { 32.1, 64.7, 109 },
 								["groups"] = {
@@ -920,7 +919,7 @@ _.Zones =
 					q(10435, {	-- Retrieving the Goods
 						["provider"] = { "n", 20205 },	-- Audi the Needle
 						["coord"] = { 44.7, 36.7, 109 },
-						["sourceQuests"] = 10434,	-- The Dynamic Duo
+						["sourceQuests"] = { 10434 },	-- The Dynamic Duo
 						["groups"] = {
 							i(30284),	-- Audi's Embroidered Boots
 							i(30402),	-- Field Agent's Bracers
@@ -932,7 +931,7 @@ _.Zones =
 						["provider"] = { "n", 20067 },	-- Zuben Elgenubi
 						["coord"] = { 44.1, 36.0, 109 },
 					}),
-					q(10293, {	-- Hitting the Motherlode	
+					q(10293, {	-- Hitting the Motherlode
 						["provider"] = { "n", 20067 },	-- Zuben Elgenubi
 						["coord"] = { 44.1, 36.0, 109 },
 						["sourceQuest"] = 10290,	-- In Search of Farahlite

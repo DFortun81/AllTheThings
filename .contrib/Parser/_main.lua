@@ -163,8 +163,10 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 -- Common Custom NPCs used for headers
 ACHIEVEMENTS = -4
 COMMON_BOSS_DROPS = -1;
+FACTIONS = -6013;
 QUESTS = -17;
 RARES = -16;
+TREASURES = -212;
 VENDORS = -2;
 ZONEDROPS = 0;
 
@@ -188,6 +190,7 @@ TAILORING = 197;
 -- Unobtainable Filters
 NEVER_IMPLEMENTED = 1;
 REMOVED_FROM_GAME = 2;
+BLIZZARD_BALANCE = 35;
 
 ItemClassInfo = {
 	{

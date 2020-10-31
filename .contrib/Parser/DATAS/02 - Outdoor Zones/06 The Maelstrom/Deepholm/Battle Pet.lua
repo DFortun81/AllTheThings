@@ -1,9 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
-	m(948, { 	-- The Maelstrom
+	m(948, {	-- The Maelstrom
 		m(207, {	-- Deepholm
 			filter(101, {	-- Pet Battle
 				p(838, {	-- Amethyst Shale Hatchling
@@ -39,15 +40,12 @@ _.Zones =
 				p(470, {	-- Twilight Spider
 					["crs"] = { 62117 },	-- Twilight Spider
 				}),
-				ach(5449, {	-- Rock Lover
-					i(60869),	-- Pebble
-				}),
 				q(31973, {	-- Bordin Steadyfist
 					["provider"] = { "n", 66815 },	-- Bordin Steadyfist
 					["coord"] = { 49.9, 57.1, 207 },
 					["repeatable"] = true,
 				}),
 			}),
-		}),		
+		}),
 	}),
 };

@@ -1,144 +1,112 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 _.Holidays =
 {
 	{	-- Call of the Scarab
 		["holidayID"] = 1574965,	-- Call of the Scarab
 		["u"] = 22,					-- Micro-Holiday Filter
 		["g"] = {
-			n(QUESTS, {
-				["g"] = {
-					{	-- Call of the Scarab [Alliance]
-						["questID"] = 45787,	-- Call of the Scarab
-						["lvl"] = 40,			-- Required Level
-						["provider"] = { "n", 117435 },	-- Field Marshal Snowfall
-						["coord"] = { 34.06, 80.43, 81 },	-- Field Marshal Snowfall
-						["u"] = 22,				-- Micro-Holiday Filter
-						["description"] = "Call of the Scarab must be available for this quest to be active.",
-					},
-					{	-- Call of the Scarab [Horde]
-						["questID"] = 45785,	-- Call of the Scarab
-						["lvl"] = 40,			-- Required Level
-						["provider"] = { "n", 117433 },	-- Warlord Gorchuk
-						["coord"] = { 33.96, 81.91, 81 },	-- Warlord Gorchuk
-						["u"] = 22,				-- Micro-Holiday Filter
-						["description"] = "Call of the Scarab must be available for this quest to be active.",
-					},
-					{	-- Chilled Meat
-						["allianceQuestID"] = 45731,	-- Chilled Meat
-						["hordeQuestID"] = 45639,		-- Chilled Meat
-						["repeatable"] = true,
-						["lvl"] = 58,					-- Required Level
-						["providers"] = {
-							{ "n", 117434 },	-- Master Sergeant Fizzlebolt
-							{ "n", 117432 },	-- Senior Sergeant Kai'jin
-						},
-						["coords"] = {
-							{ 34.01, 80.47, 81 },		-- Master Sergeant Fizzlebolt
-							{ 33.91, 81.83, 81 },		-- Senior Sergeant Kai'jin
-						},
-						["u"] = 22,				-- Micro-Holiday Filter
-						["description"] = "Call of the Scarab must be available for this quest to be active.",
-					},
-					{	-- Crocolisk Tails
-						["allianceQuestID"] = 45732,	-- Crocolisk Tails
-						["hordeQuestID"] = 45640,		-- Crocolisk Tails
-						["repeatable"] = true,
-						["lvl"] = 80,					-- Required Level
-						["providers"] = {
-							{ "n", 117434 },	-- Master Sergeant Fizzlebolt
-							{ "n", 117432 },	-- Senior Sergeant Kai'jin
-						},
-						["coords"] = {
-							{ 34.01, 80.47, 81 },		-- Master Sergeant Fizzlebolt
-							{ 33.91, 81.83, 81 },		-- Senior Sergeant Kai'jin
-						},
-						["u"] = 22,				-- Micro-Holiday Filter
-						["description"] = "Call of the Scarab must be available for this quest to be active.",
-					},
-					{	-- Crunchy Spider Legs
-						["allianceQuestID"] = 45730,	-- Crunchy Spider Legs
-						["hordeQuestID"] = 45638,		-- Crunchy Spider Legs
-						["repeatable"] = true,
-						["lvl"] = 58,					-- Required Level
-						["providers"] = {
-							{ "n", 117434 },	-- Master Sergeant Fizzlebolt
-							{ "n", 117432 },	-- Senior Sergeant Kai'jin
-						},
-						["coords"] = {
-							{ 34.01, 80.47, 81 },		-- Master Sergeant Fizzlebolt
-							{ 33.91, 81.83, 81 },		-- Senior Sergeant Kai'jin
-						},
-						["u"] = 22,				-- Micro-Holiday Filter
-						["description"] = "Call of the Scarab must be available for this quest to be active.",
-					},
-					{	-- Lean Shanks
-						["allianceQuestID"] = 45735,	-- Lean Shanks
-						["hordeQuestID"] = 45643,		-- Lean Shanks
-						["repeatable"] = true,
-						["lvl"] = 100,					-- Required Level
-						["providers"] = {
-							{ "n", 117434 },	-- Master Sergeant Fizzlebolt
-							{ "n", 117432 },	-- Senior Sergeant Kai'jin
-						},
-						["coords"] = {
-							{ 34.01, 80.47, 81 },		-- Master Sergeant Fizzlebolt
-							{ 33.91, 81.83, 81 },		-- Senior Sergeant Kai'jin
-						},
-						["u"] = 22,				-- Micro-Holiday Filter
-						["description"] = "Call of the Scarab must be available for this quest to be active.",
-					},
-					{	-- Raw Clefthoof Meat
-						["allianceQuestID"] = 45734,	-- Raw Clefthoof Meat
-						["hordeQuestID"] = 45642,		-- Raw Clefthoof Meat
-						["repeatable"] = true,
-						["lvl"] = 90,					-- Required Level
-						["providers"] = {
-							{ "n", 117434 },	-- Master Sergeant Fizzlebolt
-							{ "n", 117432 },	-- Senior Sergeant Kai'jin
-						},
-						["coords"] = {
-							{ 34.01, 80.47, 81 },		-- Master Sergeant Fizzlebolt
-							{ 33.91, 81.83, 81 },		-- Senior Sergeant Kai'jin
-						},
-						["u"] = 22,				-- Micro-Holiday Filter
-						["description"] = "Call of the Scarab must be available for this quest to be active.",
-					},
-					{	-- Raw Tiger Steaks
-						["allianceQuestID"] = 45733,	-- Raw Tiger Steaks
-						["hordeQuestID"] = 45641,		-- Raw Tiger Steaks
-						["repeatable"] = true,
-						["lvl"] = 80,					-- Required Level
-						["providers"] = {
-							{ "n", 117434 },	-- Master Sergeant Fizzlebolt
-							{ "n", 117432 },	-- Senior Sergeant Kai'jin
-						},
-						["coords"] = {
-							{ 34.01, 80.47, 81 },		-- Master Sergeant Fizzlebolt
-							{ 33.91, 81.83, 81 },		-- Senior Sergeant Kai'jin
-						},
-						["u"] = 22,				-- Micro-Holiday Filter
-						["description"] = "Call of the Scarab must be available for this quest to be active.",
-					},
-					{	-- Sandworm Meat
-						["allianceQuestID"] = 45729,	-- Sandworm Meat
-						["hordeQuestID"] = 45637,		-- Sandworm Meat
-						["repeatable"] = true,
-						["lvl"] = 40,					-- Required Level
-						["providers"] = {
-							{ "n", 117434 },	-- Master Sergeant Fizzlebolt
-							{ "n", 117432 },	-- Senior Sergeant Kai'jin
-						},
-						["coords"] = {
-							{ 34.01, 80.47, 81 },		-- Master Sergeant Fizzlebolt
-							{ 33.91, 81.83, 81 },		-- Senior Sergeant Kai'jin
-						},
-						["u"] = 22,				-- Micro-Holiday Filter
-						["description"] = "Call of the Scarab must be available for this quest to be active.",
-					},
-				},
-			}),
+			n(QUESTS, bubbleDown({
+				["u"] = 22,	-- Micro-Holiday Filter
+				["description"] = "Call of the Scarab must be available for this Quest to be active.",
+			}, {
+				a(q(45787, {	-- Call of the Scarab [A]
+					["lvl"] = 40,
+					["provider"] = { "n", 117435 },	-- Field Marshal Snowfall
+					["coord"] = { 34.06, 80.43, 81 },	-- Field Marshal Snowfall
+				})),
+				h(q(45785, {	-- Call of the Scarab [H]
+					["lvl"] = 40,
+					["provider"] = { "n", 117433 },	-- Warlord Gorchuk
+					["coord"] = { 33.96, 81.91, 81 },	-- Warlord Gorchuk
+				})),
+				a(q(45731, {	-- Chilled Meat [A]
+					["lvl"] = 58,
+					["repeatable"] = true,
+					["provider"] = { "n", 117434 },	-- Master Sergeant Fizzlebolt
+					["coord"] = { 34.01, 80.47, 81 },	-- Master Sergeant Fizzlebolt
+				})),
+				h(q(45639, {	-- Chilled Meat [H]
+					["lvl"] = 58,
+					["repeatable"] = true,
+					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
+					["coords"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
+				})),
+				a(q(45732, {	-- Crocolisk Tails [A]
+					["lvl"] = 80,
+					["repeatable"] = true,
+					["provider"] = { "n", 117434 },	-- Master Sergeant Fizzlebolt
+					["coord"] = { 34.01, 80.47, 81 },	-- Master Sergeant Fizzlebolt
+				})),
+				h(q(45640, {	-- Crocolisk Tails[H]
+					["lvl"] = 80,
+					["repeatable"] = true,
+					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
+					["coords"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
+				})),
+				a(q(45730, {	-- Crunchy Spider Legs [A]
+					["lvl"] = 58,
+					["repeatable"] = true,
+					["provider"] = { "n", 117434 },	-- Master Sergeant Fizzlebolt
+					["coord"] = { 34.01, 80.47, 81 },	-- Master Sergeant Fizzlebolt
+				})),
+				h(q(45638, {	-- Crunchy Spider Legs [H]
+					["lvl"] = 58,
+					["repeatable"] = true,
+					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
+					["coords"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
+				})),
+				a(q(45735, {	-- Lean Shanks [A]
+					["lvl"] = 100,	
+					["repeatable"] = true,
+					["provider"] = { "n", 117434 },	-- Master Sergeant Fizzlebolt
+					["coord"] = { 34.01, 80.47, 81 },	-- Master Sergeant Fizzlebolt
+				})),
+				h(q(45643, {	-- Lean Shanks [H]
+					["lvl"] = 100,	
+					["repeatable"] = true,
+					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
+					["coords"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
+				})),
+				a(q(45734, {	-- Raw Clefthoof Meat [A]
+					["lvl"] = 90,
+					["repeatable"] = true,
+					["provider"] = { "n", 117434 },	-- Master Sergeant Fizzlebolt
+					["coord"] = { 34.01, 80.47, 81 },	-- Master Sergeant Fizzlebolt
+				})),
+				h(q(45642, {	-- Raw Clefthoof Meat [H]
+					["lvl"] = 90,
+					["repeatable"] = true,
+					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
+					["coords"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
+				})),
+				a(q(45733, {	-- Raw Tiger Steaks [A]
+					["lvl"] = 80,
+					["repeatable"] = true,
+					["provider"] = { "n", 117434 },	-- Master Sergeant Fizzlebolt
+					["coord"] = { 34.01, 80.47, 81 },	-- Master Sergeant Fizzlebolt
+				})),
+				h(q(45641, {	-- Raw Tiger Steaks [H]
+					["lvl"] = 80,
+					["repeatable"] = true,
+					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
+					["coords"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
+				})),
+				a(q(45729, {	-- Sandworm Meat [A]
+					["lvl"] = 40,
+					["repeatable"] = true,
+					["provider"] = { "n", 117434 },	-- Master Sergeant Fizzlebolt
+					["coord"] = { 34.01, 80.47, 81 },	-- Master Sergeant Fizzlebolt
+				})),
+				h(q(45637, {	-- Sandworm Meat [H]
+					["lvl"] = 40,
+					["repeatable"] = true,
+					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
+					["coords"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
+				})),
+			})),
 		},
 	},
 };

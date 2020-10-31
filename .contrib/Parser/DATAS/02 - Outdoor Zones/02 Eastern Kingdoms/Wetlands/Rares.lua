@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -49,17 +50,17 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6200)), 	-- Garneg's War Belt
 						un(REMOVED_FROM_GAME, i(3392)), 	-- Ringed Helm
 					},
-				}), 
+				}),
 				n(44227,  {	-- Gazz the Loch-Hunter
 					["coord"] = { 61.6, 57.8, 56 },
-				}), 
+				}),
 				n(14425,  {	-- Gnawbone
 					["coords"] = {
 						{ 31.6, 33.6, 56 },
 						{ 31.6, 29.6, 56 },
 						{ 35.2, 27.4, 56 },
 					},
-				}), 
+				}),
 				n(1112,   {	-- Leech Widow
 					["description"] = "Located in the cave north of Slabchisel's Survey.",
 					["coord"] = { 46.8, 63.6, 56 },
@@ -67,14 +68,14 @@ _.Zones =
 						i(6199),	-- Black Widow Band
 						un(REMOVED_FROM_GAME, i(4444)),	-- Black Husk Shield
 					},
-				}), 
+				}),
 				n(2090,   {	-- Ma'ruk Wyrmscale
 					["coord"] = { 48.0, 74.6, 56 },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(5749)),	-- Scythe Axe
 						un(REMOVED_FROM_GAME, i(5750)),	-- Warchief's Girdle
 					},
-				}), 
+				}),
 				n(14424,  {	-- Mirelow
 					["coords"] = {
 						{ 52.4, 36.2, 56 },
@@ -83,7 +84,7 @@ _.Zones =
 						{ 52.4, 27.6, 56 },
 						{ 50.6, 32.4, 56 },
 					},
-				}), 
+				}),
 				n(1140,   {	-- Razormaw Matriarch
 					["description"] = "Located inside the cave south of the coords.",
 					["coord"] = { 69.8, 29.2, 56 },
@@ -91,7 +92,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(4463)),	-- Beaded Raptor Collar
 						un(REMOVED_FROM_GAME, i(6198)),	-- Jurassic Wristguards
 					},
-				}), 
+				}),
 				o(202083, {	-- Razormaw Matriarch's Nest
 					["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",
 					["model"] = 199226,
@@ -103,20 +104,20 @@ _.Zones =
 				}),
 				n(44225,  {	-- Rufus Darkshot
 					["coord"] = { 42.8, 32.6, 56 },
-				}), 
+				}),
 				n(44226,  {	-- Sarltooth
 					["coord"] = { 33.6, 51.0, 56 },
-				}), 
+				}),
 				n(14433,  {	-- Sludginn
 					["coord"] = { 44.4, 24.8, 56 },
-				}), 
+				}),
 				n(44224,  {	-- Two-Toes
 					["coords"] = {
 						{ 13.6, 41.6, 56 },
 						{ 13.6, 38.6, 56 },
 						{ 15.0, 39.0, 56 },
 					},
-				}), 
+				}),
 			}),
 		}),
 	}),

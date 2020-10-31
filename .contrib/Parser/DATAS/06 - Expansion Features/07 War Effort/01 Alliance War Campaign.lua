@@ -1,7 +1,6 @@
---
----------------------------------------------------
---          Z O N E S        M O D U L E         --
----------------------------------------------------
+-------------------------------------------------------------------
+--      E X P A N S I O N   F E A T U R E S    M O D U L E       --
+-------------------------------------------------------------------
 
 _.ExpansionFeatures =
 {
@@ -9,7 +8,7 @@ _.ExpansionFeatures =
 		n(-236, {	-- Alliance War Campaign
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-		--	!! NEED LEATHER/PLATE REWARDS FOR "MISCHIEF MANAGED" QUEST.
+			--	!! NEED LEATHER/PLATE REWARDS FOR "MISCHIEF MANAGED" QUEST.
 				ach(12510, {	-- Ready for War
 					["collectible"] = false,
 					["races"] = ALLIANCE_ONLY,
@@ -80,21 +79,34 @@ _.ExpansionFeatures =
 						i(163654),	-- 7th Legionnaire's Circlet
 						i(163653),	-- 7th Legionnaire's Mantle
 						i(163676),	-- 7th Legionnaire's Raiment
-
+						-- TODO: Needs verification Probably no HOA reward
+						i(175386),	-- 7th Legionnaire's Circlet
+						i(175385),	-- 7th Legionnaire's Mantle
+						i(175408),	-- 7th Legionnaire's Raiment
 						-- Leather
 						i(163656),	-- 7th Legionnaire's Mask
 						i(163655),	-- 7th Legionnaire's Shoulderpads
 						i(163657),	-- 7th Legionnaire's Tunic
-
+						-- TODO: Needs verification Probably no HOA reward
+						i(175388),	-- 7th Legionnaire's Mask
+						i(175387),	-- 7th Legionnaire's Shoulderpads
+						i(175389),	-- 7th Legionnaire's Tunic
 						-- Mail
 						i(163659),	-- 7th Legionnaire's Skullcap
 						i(163658),	-- 7th Legionnaire's Spaulders
 						i(163660),	-- 7th Legionnaire's Chainmail
-
+						-- TODO: Needs verification Probably no HOA reward
+						i(175391),	-- 7th Legionnaire's Skullcap
+						i(175390),	-- 7th Legionnaire's Spaulders
+						i(175392),	-- 7th Legionnaire's Chainmail
 						-- Plate
 						i(163662),	-- 7th Legionnaire's Helmet
 						i(163661),	-- 7th Legionnaire's Pauldrons
 						i(163663),	-- 7th Legionnaire's Breastplate
+						-- TODO: Needs verification Probably no HOA reward
+						i(175394),	-- 7th Legionnaire's Helmet
+						i(175393),	-- 7th Legionnaire's Pauldrons
+						i(175395),	-- 7th Legionnaire's Breastplate
 					},
 				}),
 				n(QUESTS, {

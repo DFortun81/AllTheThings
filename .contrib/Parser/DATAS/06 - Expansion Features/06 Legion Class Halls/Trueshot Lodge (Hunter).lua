@@ -1,28 +1,29 @@
----------------------------------------------------
+-------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
----------------------------------------------------
+-------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
-		cl(3, {		-- Trueshot Lodge (Hunter)
-			["classes"] = { 3 },	-- Hunter
+		cl(HUNTER, {
+			["classes"] = { HUNTER },
 			["lvl"] = 98,
 			["mapID"] = 739,
 			["g"] = {
 				n(-228, {	-- Flight Paths
 					fp(1760, {	-- Trueshot Lodge, Highmountain
 						["coord"] = { 36.0, 27.8 },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 					}),
 					fp(1848, {	-- Trueshot Lodge (Eagle)
 						["coord"] = { 39.8, 29.6 },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 					}),
 				}),
 				n(QUESTS, {
 					q(41541, {	-- A Beastly Expedition
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
-						["classes"] = {3},
+						["classes"] = { HUNTER },
 					}),
 					q(41541),	-- A Beastly Expedition
 					q(43423),	-- A Hero's Weapon
@@ -30,10 +31,12 @@ _.ExpansionFeatures =
 					q(40957),	-- A Strong Right Hand
 					q(42436),	-- Aiding Our Allies
 					q(41053),	-- Altar of the Eternal Hunt
-					q(46022),	-- An Urgent Warning
+					q(46022, {	-- An Urgent Warning
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(42404, {	-- Assisting the Archmage
 						["maps"] = { 680 },	-- Suramar
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["provider"] = { "n", 108089 },	-- Archmage Khadgar
 						["sourceQuest"] = 42401,  -- The Scent of Magic
 					}),
@@ -51,7 +54,7 @@ _.ExpansionFeatures =
 					q(42654),	-- Darkheart Thicket: Nightmare Oak
 					q(45551),	-- Devastating Effects
 					q(45555, {	-- Felbound Beasts
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 					}),
 					q(46783),	-- Further Advancement
 					q(43880, {	-- Hitting the Books
@@ -64,7 +67,9 @@ _.ExpansionFeatures =
 					q(42659),	-- In Defense of Dalaran
 					q(42405),	-- Informing Our Allies
 					q(41047),	-- Infused with Power
-					q(46023),	-- Investigate the Broken Shore
+					q(46023, {	-- Investigate the Broken Shore
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(42689),	-- Knowing Our Enemy
 					q(46130, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
@@ -75,7 +80,7 @@ _.ExpansionFeatures =
 					q(42657),	-- Meeting in Moonclaw Vale
 					q(42400, {	-- Missing Mages
 						["sourceQuest"] = 42399,  -- Ready to Work
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 					}),
 					q(40955),	-- Oath of Service
 					q(40953),	-- On Eagle's Wings
@@ -84,7 +89,7 @@ _.ExpansionFeatures =
 					q(44090),	-- Pledge of Loyalty
 					q(41542),	-- Preparation for the Hunt
 					q(45556, {	-- Ready to Strike
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 					}),
 					q(42399),	-- Ready to Work
 					q(42134),	-- Recruiting More Troops
@@ -98,23 +103,23 @@ _.ExpansionFeatures =
 					q(42384),	-- Scouting Reports
 					q(42395),	-- Signaling Trouble
 					q(45552, {	-- Soothing Wounds
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 					}),
 					q(40958),	-- Tactical Matters
 					q(45554, {	-- Taking Control
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 					}),
 					q(42526),	-- Tech It Up A Notch
 					q(40959),	-- The Campaign Begins
 					q(45553, {	-- The Nighthuntress Beckons
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["provider"] = { "n", 117308 },	-- D'Bynn
 					}),
 					q(43182),	-- The Missing Vessel
 					q(42407),	-- The Nature of the Beast
 					q(42401, {	-- The Scent of Magic
 						["sourceQuest"] = 42400,  -- Missing Mages
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 					}),
 					q(40385),	-- The Spear in the Shadow
 					q(40954),	-- The Unseen Path
@@ -126,7 +131,7 @@ _.ExpansionFeatures =
 					q(44233),	-- Walk This Way
 					q(46337, {	-- Night of the Wilds
 						["lvl"] = 110,
-						["classes"] = {3},
+						["classes"] = { HUNTER },
 						["g"] = {
 							{ ["mountID"] = 229386 },	-- Huntmaster's Loyal Wolfhawk
 						},
@@ -205,7 +210,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 152002 },	-- Image of Mimiron
 						["coord"] = { 47.8, 89.4, 1165 },
 						["races"] = HORDE_ONLY,
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["lvl"] = 120,
 						["maps"] = { 1165 },	-- Dazar'alor
 					}),
@@ -213,7 +218,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 152002 },	-- Image of Mimiron
 						["coord"] = { 72.8, 14.0, 1161 },
 						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["lvl"] = 120,
 						["maps"] = { 1161 },	-- Boralus
 					}),
@@ -224,7 +229,7 @@ _.ExpansionFeatures =
 							54913,	-- Spark of Genius (H)
 							55516,	-- Spark of Genius (A)
 						},
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["lvl"] = 120,
 						["maps"] = { 120 },	-- The Storm Peaks
 					}),
@@ -232,7 +237,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 149736 },	-- Image of Mimiron
 						["coord"] = { 37.5, 46.5, 120 },
 						["sourceQuest"] = 54915,	-- Telemetry Online
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["lvl"] = 120,
 						["maps"] = { 120 },	-- The Storm Peaks
 					}),
@@ -240,7 +245,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 149870 },	-- Grif Wildheart
 						["coord"] = { 33.6, 58.6, 120 },
 						["sourceQuest"] = 54916,	-- The Huntsman's Creed
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["lvl"] = 120,
 						["maps"] = { 120 },	-- The Storm Peaks
 					}),
@@ -248,7 +253,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 150391 },	-- Image of Mimiron
 						["coord"] = { 39.3, 71.7, 81 },
 						["sourceQuest"] = 54917,	-- Paid in Blood
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["lvl"] = 120,
 						["maps"] = { 81 },	-- Silithus
 					}),
@@ -256,7 +261,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 151061 },	-- Mimiron
 						["coord"] = { 43.3, 38.8, 745 },
 						["sourceQuest"] = 54918,	-- Spark of Imagination
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["lvl"] = 120,
 						["maps"] = { 745 },	-- Ulduar (Scenario)
 						["g"] = {
@@ -267,7 +272,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 151061 },	-- Mimiron
 						["coord"] = { 43.3, 38.8, 745 },
 						["sourceQuest"] = 54919,	-- Bonds of Thunder
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["lvl"] = 120,
 						["maps"] = { 745 },	-- Ulduar (Scenario)
 					}),
@@ -275,7 +280,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 29445 },	-- Thorim
 						["coord"] = { 33.4, 58.0, 120 },
 						["sourceQuest"] = 54920,	-- Homeward Bound
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["lvl"] = 120,
 						["maps"] = { 120 },	-- The Storm Peaks
 					}),
@@ -294,14 +299,14 @@ _.ExpansionFeatures =
 				]]--
 				n(VENDORS, {
 					n(105099, {	-- Dark Ranger Velonara
-						["classes"] = {3},
+						["classes"] = { HUNTER },
 						["description"] = "|c808080FAHunters will need to have completed the hidden quest|r |cFFFFD700Dark Memento|r |c808080FAin order to see items on this vendor.|r\n\n|cffff0000How to activate the quest:|r\n|c0070DEFFStep 1:|r\n|c808080FASpeak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA and complete the dialogue with him.\n|c0070DEFFStep 2:|r\n|c808080FABuy 13x|r |cFFFFFFFFBlack Roses|r|c808080FA from him.\n|c0070DEFFStep 3:|r\n|c808080FASpeak to|r |cABD473FFDark Ranger Velonara|r |c808080FA and complete the dialogue with her.  Afterwards she will take the 13 |r|cFFFFFFFFBlack Roses|r|c808080FA from you.\n|c0070DEFFStep 4:|r\n|c808080FAGo back and speak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA who will finish the story between the two.  Once doing this he will no longer sell you anything.\n|c0070DEFFStep 5:|r\n|c808080FFFind|r |cABD473FFDark Ranger Velonara|r |c808080FA who will offer the quest, |r|cFFFFD700Dark Memento|r.\n|c0070DEFFStep 6:|r\n|c808080FAAccept the quest and then deliver the hood to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA.\n|c0070DEFFStep 7:|r\n|c808080FAUpon finishing that quest he will now offer you the two items.",
 						["g"] = {
 							i(143663),	-- Dark Ranger's Hood
 						},
 					}),
 					n(100633, {	-- Death Hunter Moorgoth <Hunters of Death>
-						["classes"] = {3},
+						["classes"] = { HUNTER },
 						["description"] = "|c808080FAHunters will need to have completed the hidden quest|r |cFFFFD700Dark Memento|r |c808080FAin order to see items on this vendor.|r\n\n|cffff0000How to activate the quest:|r\n|c0070DEFFStep 1:|r\n|c808080FASpeak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA and complete the dialogue with him.\n|c0070DEFFStep 2:|r\n|c808080FABuy 13x|r |cFFFFFFFFBlack Roses|r|c808080FA from him.\n|c0070DEFFStep 3:|r\n|c808080FASpeak to|r |cABD473FFDark Ranger Velonara|r |c808080FA and complete the dialogue with her.  Afterwards she will take the 13 |r|cFFFFFFFFBlack Roses|r|c808080FA from you.\n|c0070DEFFStep 4:|r\n|c808080FAGo back and speak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA who will finish the story between the two.  Once doing this he will no longer sell you anything.\n|c0070DEFFStep 5:|r\n|c808080FFFind|r |cABD473FFDark Ranger Velonara|r |c808080FA who will offer the quest, |r|cFFFFD700Dark Memento|r.\n|c0070DEFFStep 6:|r\n|c808080FAAccept the quest and then deliver the hood to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA.\n|c0070DEFFStep 7:|r\n|c808080FAUpon finishing that quest he will now offer you the two items.",
 						["g"] = {
 							i(143663),	-- Dark Ranger's Hood
@@ -357,7 +362,7 @@ _.ExpansionFeatures =
 					}),
 					n(100661, {	--  Pan the Kind Hand <Stable Master>
 						["sourceQuests"] = { 46337 },	-- Night of the Wilds
-						["classes"] = {3},
+						["classes"] = { HUNTER },
 						["g"] = {
 							i(147580, {	-- Tome of the Hybrid Beast
 								--["spellID"] = 242155,	-- Hybrid Kinship

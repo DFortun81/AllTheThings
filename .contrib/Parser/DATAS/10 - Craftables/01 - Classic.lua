@@ -1,6 +1,6 @@
------------------------------------------------------
---     W O R L D   E V E N T S   M O D U L E       --
------------------------------------------------------
+---------------------------------------------
+--    C R A F T A B L E S   M O D U L E    --
+---------------------------------------------
 
 _.Craftables =
 {
@@ -439,6 +439,12 @@ _.Craftables =
 			}),
 		}),
 		n(-185, { 	-- Inscription
+			filter(111, {	-- Glyphs
+				i(89868, {	-- Glyph of the Cheetah
+					["questID"] = 62677,
+					["classes"] = { DRUID },
+				}),
+			}),
 			n(-491, {	-- Tarot Cards
 				i(44161, {	-- Arcane Tarot
 					i(44148, {	-- Mages Deck

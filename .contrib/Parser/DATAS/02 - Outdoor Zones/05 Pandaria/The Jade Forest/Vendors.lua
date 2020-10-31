@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -155,30 +156,6 @@ _.Zones =
 						i(81619),	-- Faded Forest Silk Treads
 						i(81610),	-- Faded Forest Silk Trousers
 						i(81680),	-- Faded Forest Smasher
-					},
-				}),
-				n(58414, {	-- San Redscale <Serpent Keeper>
-					["coord"] = { 56.7, 44.3, 371 },
-					["g"] = {
-						i(89222, {	-- Cloud Ring (TOY!)
-							["cost"] = 10000000,	-- 1,000g
-						}),
-						i(83845),	-- Design: Jade Panther
-						i(83877),	-- Design: Jeweled Onyx Panther
-						i(83931),	-- Design: Ruby Panther
-						i(83932),	-- Design: Sapphire Panther
-						i(83830),	-- Design: Sunstone Panther
-						i(93229),	-- Grand Commendation of the Order of the Cloud Serpent
-						i(89796),	-- Order of the Cloud Serpent Tabard
-						i(85430, {	-- Reins of the Azure Cloud Serpent Mount
-							["cost"] = 30000000,	-- 3,000g
-						}),
-						i(85429, {	-- Reins of the Golden Cloud Serpent Mount
-							["cost"] = 30000000,	-- 3,000g
-						}),
-						i(79802, {	-- Reins of the Jade Cloud Serpent Mount
-							["cost"] = 30000000,	-- 3,000g
-						}),
 					},
 				}),
 				n(61598, {	-- Silkweaver Rui <Adventuring Supplies>

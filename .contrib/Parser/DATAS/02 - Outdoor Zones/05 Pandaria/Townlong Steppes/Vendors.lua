@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -1343,9 +1344,9 @@ _.Zones =
 						{	-- [LFR] Helm of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89274,	-- Helm of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Cowl
@@ -1371,9 +1372,9 @@ _.Zones =
 						{	-- [LFR] Shoulders of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89277,	-- Shoulders of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Mantle
@@ -1399,9 +1400,9 @@ _.Zones =
 						{	-- [LFR] Chest of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89265,	-- Chest of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Robes
@@ -1427,9 +1428,9 @@ _.Zones =
 						{	-- [LFR] Gauntlets of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89271,	-- Gauntlets of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Handwraps
@@ -1455,9 +1456,9 @@ _.Zones =
 						{	-- [LFR] Leggings of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89268,	-- Leggings of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Legwraps
@@ -1483,9 +1484,9 @@ _.Zones =
 						{	-- [LFR] Helm of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89235,	-- Helm of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Cowl
@@ -1511,9 +1512,9 @@ _.Zones =
 						{	-- [Normal] Shoulders of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89246,	-- Shoulders of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Mantle
@@ -1539,9 +1540,9 @@ _.Zones =
 						{	-- [Normal] Chest of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89237,	-- Chest of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Robes
@@ -1567,9 +1568,9 @@ _.Zones =
 						{	-- [Normal] Gauntlets of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89240,	-- Gauntlets of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Handwraps
@@ -1595,9 +1596,9 @@ _.Zones =
 						{	-- [Normal] Leggings of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89243,	-- Leggings of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Legwraps
@@ -1623,9 +1624,9 @@ _.Zones =
 						{	-- [Heroic] Helm of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89259,	-- Helm of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Cowl
@@ -1651,9 +1652,9 @@ _.Zones =
 						{	-- [Heroic] Shoulders of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89262,	-- Shoulders of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Mantle
@@ -1679,9 +1680,9 @@ _.Zones =
 						{	-- [Heroic] Chest of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89250,	-- Chest of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Robes
@@ -1707,9 +1708,9 @@ _.Zones =
 						{	-- [Heroic] Gauntlets of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89256,	-- Gauntlets of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Handwraps
@@ -1735,9 +1736,9 @@ _.Zones =
 						{	-- [Heroic] Leggings of the Shadowy Conqueror [Priest / Warlock / Priest]
 							["itemID"] = 89253,	-- Leggings of the Shadowy Conqueror
 							["classes"] = {
-								5,	-- Priest
-								9,	-- Warlock
-								2,	-- Paladin
+								PRIEST,
+								WARLOCK,
+								PALADIN,
 							},
 							["g"] = {
 								{	-- Guardian Serpent Legwraps
@@ -1763,10 +1764,10 @@ _.Zones =
 						{	-- [LFR] Helm of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89275,	-- Helm of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Crown
@@ -1796,15 +1797,15 @@ _.Zones =
 								{	-- Helmet of Resounding Rings
 									["itemID"] = 86673,	-- Helmet of Resounding Rings
 								},
-							},								
-						},									
+							},
+						},
 						{	-- [LFR] Shoulders of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89278,	-- Shoulders of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Shoulderguards
@@ -1834,15 +1835,15 @@ _.Zones =
 								{	-- Pauldrons of Resounding Rings
 									["itemID"] = 86669,	-- Pauldrons of Resounding Rings
 								},
-							},								
-						},									
+							},
+						},
 						{	-- [LFR] Chest of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89266,	-- Chest of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Chestguard
@@ -1872,15 +1873,15 @@ _.Zones =
 								{	-- Battleplate of Resounding Rings
 									["itemID"] = 86672,	-- Battleplate of Resounding Rings
 								},
-							},								
-						},									
+							},
+						},
 						{	-- [LFR] Gauntlets of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89272,	-- Gauntlets of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Gauntlets
@@ -1910,15 +1911,15 @@ _.Zones =
 								{	-- Gauntlets of Resounding Rings
 									["itemID"] = 86671,	-- Gauntlets of Resounding Rings
 								},
-							},								
-						},									
+							},
+						},
 						{	-- [LFR] Leggings of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89269,	-- Leggings of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Legguards
@@ -1948,15 +1949,15 @@ _.Zones =
 								{	-- Legplates of Resounding Rings
 									["itemID"] = 86670,	-- Legplates of Resounding Rings
 								},
-							},								
-						},									
+							},
+						},
 						{	-- [Normal] Helm of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89236,	-- Helm of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Crown
@@ -1986,15 +1987,15 @@ _.Zones =
 								{	-- Helmet of Resounding Rings
 									["itemID"] = 85333,	-- Helmet of Resounding Rings
 								},
-							},								
-						},									
+							},
+						},
 						{	-- [Normal] Shoulders of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89247,	-- Shoulders of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Shoulderguards
@@ -2024,15 +2025,15 @@ _.Zones =
 								{	-- Pauldrons of Resounding Rings
 									["itemID"] = 85329,	-- Pauldrons of Resounding Rings
 								},
-							},								
-						},									
+							},
+						},
 						{	-- [Normal] Chest of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89238,	-- Chest of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Chestguard
@@ -2062,15 +2063,15 @@ _.Zones =
 								{	-- Battleplate of Resounding Rings
 									["itemID"] = 85332,	-- Battleplate of Resounding Rings
 								},
-							},								
-						},									
+							},
+						},
 						{	-- [Normal] Gauntlets of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89241,	-- Gauntlets of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Gauntlets
@@ -2100,15 +2101,15 @@ _.Zones =
 								{	-- Gauntlets of Resounding Rings
 									["itemID"] = 85331,	-- Gauntlets of Resounding Rings
 								},
-							},								
-						},									
+							},
+						},
 						{	-- [Normal] Leggings of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89244,	-- Leggings of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Legguards
@@ -2138,15 +2139,15 @@ _.Zones =
 								{	-- Legplates of Resounding Rings
 									["itemID"] = 85330,	-- Legplates of Resounding Rings
 								},
-							},								
-						},									
+							},
+						},
 						{	-- [Heroic] Helm of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89260,	-- Helm of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Headpiece
@@ -2176,15 +2177,15 @@ _.Zones =
 								{	-- Faceguard of Resounding Rings
 									["itemID"] = 87199,	-- Faceguard of Resounding Rings
 								},
-							},								
-						},									
+							},
+						},
 						{	-- [Heroic] Shoulders of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89263,	-- Shoulders of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Spaulders
@@ -2214,15 +2215,15 @@ _.Zones =
 								{	-- Shoulderguards of Resounding Rings
 									["itemID"] = 87201,	-- Shoulderguards of Resounding Rings
 								},
-							},								
-						},									
+							},
+						},
 						{	-- [Heroic] Chest of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89251,	-- Chest of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Tunic
@@ -2252,15 +2253,15 @@ _.Zones =
 								{	-- Chestguard of Resounding Rings
 									["itemID"] = 87197,	-- Chestguard of Resounding Rings
 								},
-							},								
-						},									
+							},
+						},
 						{	-- [Heroic] Gauntlets of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89257,	-- Gauntlets of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Grips
@@ -2290,15 +2291,15 @@ _.Zones =
 								{	-- Handguards of Resounding Rings
 									["itemID"] = 87198,	-- Handguards of Resounding Rings
 								},
-							},								
-						},									
+							},
+						},
 						{	-- [Heroic] Leggings of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
 							["itemID"] = 89254,	-- Leggings of the Shadowy Protector
 							["classes"] = {
-								10,	-- Monk
-								3,	-- Hunter
-								7,	-- Shaman
-								1,	-- Warrior
+								MONK,
+								HUNTER,
+								SHAMAN,
+								WARRIOR,
 							},
 							["g"] = {
 								{	-- Red Crane Leggings
@@ -2328,15 +2329,15 @@ _.Zones =
 								{	-- Legguards of Resounding Rings
 									["itemID"] = 87200,	-- Legguards of Resounding Rings
 								},
-							},								
+							},
 						},
 						{	-- [LFR] Helm of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 89273,	-- Helm of the Shadowy Vanquisher
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Hood of the Burning Scroll
@@ -2368,10 +2369,10 @@ _.Zones =
 						{	-- [LFR] Shoulders of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 89276,	-- Shoulders of the Shadowy Vanquisher
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Mantle of the Burning Scroll
@@ -2403,10 +2404,10 @@ _.Zones =
 						{	-- [LFR] Chest of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 89264,	-- Chest of the Shadowy Vanquisher
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Robes of the Burning Scroll
@@ -2438,10 +2439,10 @@ _.Zones =
 						{	-- [LFR] Gloves of the Burning Scroll [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 86718,	-- Gloves of the Burning Scroll
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Eternal Blossom Gloves
@@ -2470,10 +2471,10 @@ _.Zones =
 						{	-- [LFR] Leggings of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 89267,	-- Leggings of the Shadowy Vanquisher
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Leggings of the Burning Scroll
@@ -2505,10 +2506,10 @@ _.Zones =
 						{	-- [Normal] Helm of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 89234,	-- Helm of the Shadowy Vanquisher
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Hood of the Burning Scroll
@@ -2540,10 +2541,10 @@ _.Zones =
 						{	-- [Normal] Shoulders of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 89248,	-- Shoulders of the Shadowy Vanquisher
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Mantle of the Burning Scroll
@@ -2575,10 +2576,10 @@ _.Zones =
 						{	-- [Normal] Chest of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 89239,	-- Chest of the Shadowy Vanquisher
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Robes of the Burning Scroll
@@ -2610,10 +2611,10 @@ _.Zones =
 						{	-- [Normal] Gauntlets of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 89242,	-- Gauntlets of the Shadowy Vanquisher
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Gloves of the Burning Scroll
@@ -2645,10 +2646,10 @@ _.Zones =
 						{	-- [Normal] Leggings of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 89245,	-- Leggings of the Shadowy Vanquisher
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Leggings of the Burning Scroll
@@ -2680,10 +2681,10 @@ _.Zones =
 						{	-- [Heroic] Helm of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 89258,	-- Helm of the Shadowy Vanquisher
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Hood of the Burning Scroll
@@ -2715,10 +2716,10 @@ _.Zones =
 						{	-- [Heroic] Shoulders of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 89261,	-- Shoulders of the Shadowy Vanquisher
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Mantle of the Burning Scroll
@@ -2750,10 +2751,10 @@ _.Zones =
 						{	-- [Heroic] Chest of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 89249,	-- Chest of the Shadowy Vanquisher
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Robes of the Burning Scroll
@@ -2785,10 +2786,10 @@ _.Zones =
 						{	-- [Heroic] Gauntlets of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 89255,	-- Gauntlets of the Shadowy Vanquisher
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Gloves of the Burning Scroll
@@ -2820,10 +2821,10 @@ _.Zones =
 						{	-- [Heroic] Leggings of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 							["itemID"] = 89252,	-- Leggings of the Shadowy Vanquisher
 							["classes"] = {
-								8,	-- Mage
-								11,	-- Druid
-								4,	-- Rogue
-								6,	-- Death Knight
+								MAGE,
+								DRUID,
+								ROGUE,
+								DEATHKNIGHT,
 							},
 							["g"] = {
 								{	-- Leggings of the Burning Scroll

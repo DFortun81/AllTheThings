@@ -1,13 +1,13 @@
+-----------------------------------------------------
+--       G E A R     S E T S     M O D U L E       --
+-----------------------------------------------------
 
------------------------------------------------------
---       G E A R     S E T S     M O D U L E      	--
------------------------------------------------------
 _.GearSets =
 {
 	n(-211, {	-- New Characters
 		["description"] = "You obtain these sets by creating an allied race with the specific class.  Contains Death Knight and Demon Hunter starting gear as well.",
 		["g"] = {
-			cl(5,  {	-- Priest
+			cl(PRIEST, {
 				["classes"] = { PRIEST },
 				["g"] = {
 					i(157710),	-- Curate's Robe
@@ -19,7 +19,7 @@ _.GearSets =
 					i(157632),	-- Staff of Interwoven Power
 				},
 			}),
-			cl(8,  {	-- Mage
+			cl(MAGE, {
 				["classes"] = { MAGE },
 				["g"] = {
 					i(157686),	-- Spellsculptor's Robe
@@ -31,7 +31,7 @@ _.GearSets =
 					i(157651),	-- Staff of Elemental Shaping
 				},
 			}),
-			cl(9,  {	-- Warlock
+			cl(WARLOCK, {
 				["classes"] = { WARLOCK },
 				["g"] = {
 					i(157734),	-- Felburner's Robe
@@ -43,7 +43,7 @@ _.GearSets =
 					i(157652),	-- Shadow-Binder's Spire
 				},
 			}),
-			cl(11, {	-- Druid
+			cl(DRUID, {
 				["classes"] = { DRUID },
 				["g"] = {
 					i(157666),	-- Wildshifter Tunic
@@ -55,7 +55,7 @@ _.GearSets =
 					i(157619),	-- Spire of Astral Force
 				},
 			}),
-			cl(4,  {	-- Rogue
+			cl(ROGUE, {
 				["classes"] = { ROGUE },
 				["g"] = {
 					i(157714),	-- Nimblefinger Jerkin
@@ -67,7 +67,7 @@ _.GearSets =
 					i(157636),	-- Serrated Poinard
 				},
 			}),
-			cl(10, {	-- Monk
+			cl(MONK, {
 				["classes"] = { MONK },
 				["g"] = {
 					i(157690),	-- Ascetic's Vest
@@ -76,10 +76,13 @@ _.GearSets =
 					i(157696),	-- Ascetic's Cord
 					i(157694),	-- Ascetic's Legguards
 					i(157691),	-- Ascetic's Footpads
-					i(157627),	-- Sword of Searing Winds
+					i(157625),	-- Mash Tun Mixer
+					i(157627, {	-- Sword of Searing Winds
+						["u"] = REMOVED_FROM_GAME,	-- this appears to have been replaced with the staff in SL prepatch
+					}),
 				},
 			}),
-			cl(12, {	-- Demon Hunter
+			cl(DEMONHUNTER, {
 				["classes"] = { DEMONHUNTER },
 				["g"] = {
 					i(112458),	-- Illidari Warglaive
@@ -101,7 +104,7 @@ _.GearSets =
 					i(123958),	-- Demon Hide Satchel
 				},
 			}),
-			cl(3,  {	-- Hunter
+			cl(HUNTER, {
 				["classes"] = { HUNTER },
 				["g"] = {
 					i(157674),	-- Heartbonded Vest
@@ -111,9 +114,10 @@ _.GearSets =
 					i(157678),	-- Heartbonded Legguards
 					i(157675),	-- Heartbonded Greaves
 					i(157649),	-- Goldstring Recurve
+					i(157622),	-- Silverscope Longrifle
 				},
 			}),
-			cl(7,  {	-- Shaman
+			cl(SHAMAN, {
 				["classes"] = { SHAMAN },
 				["g"] = {
 					i(157722),	-- Totem-Caller Tunic
@@ -126,7 +130,7 @@ _.GearSets =
 					i(157655),	-- Lightning-Binder's Bulwark
 				},
 			}),
-			cl(2,  {	-- Paladin
+			cl(PALADIN, {
 				["classes"] = { PALADIN },
 				["g"] = {
 					i(157698),	-- Lightsoul Battleplate
@@ -138,7 +142,7 @@ _.GearSets =
 					i(157631),	-- Maul of Smiting
 				},
 			}),
-			cl(1,  {	-- Warrior
+			cl(WARRIOR, {
 				["classes"] = { WARRIOR },
 				["g"] = {
 					i(157738),	-- Warsinger's Breastplate
@@ -150,7 +154,7 @@ _.GearSets =
 					i(157643),	-- Helm-Hewer Greataxe
 				},
 			}),
-			cl(6,  {	-- Death Knight
+			cl(DEATHKNIGHT, {
 				["classes"] = { DEATHKNIGHT },
 				["g"] = {
 					i(34652),	-- Archerus Knight's Hood
@@ -172,10 +176,10 @@ _.GearSets =
 				["races"] = { Goblin }	-- Used to be given to as start cloak to male goblins until Legion Prepatch
 			})),
 			un(REMOVED_FROM_GAME, i(6125, {	-- Brawler's Harness (Former starter shirt for Orc, Troll, Tauren, Undead Warriors)
-				["description"] = "Former starter shirt for Orc, Troll, Tauren & Undead Warriors", 
+				["description"] = "Former starter shirt for Orc, Troll, Tauren & Undead Warriors",
 			})),
 			un(REMOVED_FROM_GAME, i(49, {	-- Footpad's Shirt (Former starter shirt Human, NE, Dwarf, Gnome Rogues)
-				["description"] = "Former starter shirt for Human, NE, Dwarf & Gnome Rogues", 
+				["description"] = "Former starter shirt for Human, NE, Dwarf & Gnome Rogues",
 			})),
 			i(49567, {	-- Gilnean Adventurer's Shirt (New Worgen hunters, rogues, and warriors start out with this shirt.)
 				["description"] = "New Worgen hunters, rogues, and warriors start out with this shirt.",
@@ -184,7 +188,7 @@ _.GearSets =
 				["description"] = "Former Starter Shirt for Blood Elf Paladins",
 			})),
 			un(REMOVED_FROM_GAME, i(20897, {	-- Lookout's Tunic (Starter Shirt Blood Elf Rogues)
-				["description"] = "Former Starter Shirt for Blood Elf Rogues.", 
+				["description"] = "Former Starter Shirt for Blood Elf Rogues.",
 			})),
 			un(REMOVED_FROM_GAME, i(154, {		-- Primitive Mantle (Former starter shirt Orc, Tauren Shaman)
 				["description"] = "Former starter shirt for Orc & Tauren Shamans",
@@ -196,25 +200,25 @@ _.GearSets =
 				["description"] = "Former Starter Shirt for Draenei Warriors",
 			})),
 			un(REMOVED_FROM_GAME, i(6120, {		-- Recruit's Shirt (Former starter shirt for NE Warriors)
-				["description"] = "Former starter shirt for NE Warriors", 
+				["description"] = "Former starter shirt for NE Warriors",
 			})),
 			un(REMOVED_FROM_GAME, i(148, {		-- Rugged Trapper's Shirt (Former starter shirt Dwarf, NE Hunters)
 				["description"] = "Former starter shirt for Dwarf & NE Hunters",
 			})),
 			un(REMOVED_FROM_GAME, i(23345, {	-- Scout's Shirt (Starter Shirt Draenei Hunters and Shamans)
-				["description"] = "Former Starter Shirt for Draenei Hunters and Shamans", 
+				["description"] = "Former Starter Shirt for Draenei Hunters and Shamans",
 			})),
 			un(REMOVED_FROM_GAME, i(6117, {		-- Squire's Shirt (Former starter shirt for Dwarf Paladins)
-				["description"] = "Former starter shirt for Dwarf Paladins", 
+				["description"] = "Former starter shirt for Dwarf Paladins",
 			})),
 			un(REMOVED_FROM_GAME, i(23476, {	-- Squire's Shirt	(Starter Shirt Draenei Paladins)
-				["description"] = "Former Starter Shirt for Draenei Paladins", 
+				["description"] = "Former Starter Shirt for Draenei Paladins",
 			})),
 			un(REMOVED_FROM_GAME, i(2105, {		-- Thug Shirt (Former starter shirt for Undead/Orc Rogues)
 				["description"] = "Former starter shirt for Undead & Orc Rogues",
 			})),
 			un(REMOVED_FROM_GAME, i(127, {		-- Trapper's Shirt (Former starter shirt Orc, Tauren, Troll Hunters)
-				["description"] = "Former starter shirt for Orc, Tauren & Troll Hunters", 
+				["description"] = "Former starter shirt for Orc, Tauren & Troll Hunters",
 			})),
 			un(REMOVED_FROM_GAME, i(6136, {		-- Trapper's Shirt (Former starter shirt for Troll Rogues)
 				["description"] = "Former starter shirt for Troll Rogues",

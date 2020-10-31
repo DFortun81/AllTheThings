@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -36,7 +37,7 @@ _.Zones =
 						i(31225),	-- Illidari Bindings
 						i(31221),	-- Illidari Vambraces
 					},
-				}), 
+				}),
 				n(18694, {	-- Collidus the Warp-Watcher
 					["coords"] = {
 						{ 37.0, 44.2, 104 },
@@ -57,7 +58,7 @@ _.Zones =
 						i(31217),	-- Crimson Beholder Eye
 						i(31218),	-- Fiery Beholder Eye
 					},
-				}), 
+				}),
 				n(18696, {	-- Kraator
 					["coords"] = {
 						{ 45.8, 12.2, 104 },
@@ -76,7 +77,7 @@ _.Zones =
 						i(31215),	-- Abyssal Leather Treads
 					},
 				}),
-			}), 
+			}),
 		}),
 	}),
 };

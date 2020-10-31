@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -154,11 +155,6 @@ _.Zones =
 				q(41013, {	-- Darkbrul Arena
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["g"] = {
-						crit(4, {	-- The Darkbrul-Oh
-							["achievementID"] = 11474,	-- Free For All, More For Me
-						}),
-					},
 				}),
 				q(41835, {	-- Deworming
 					["lvl"] = 110,
@@ -259,21 +255,11 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(11, {	-- Huge Highmountain Salmon
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41243, {	-- Huge Highmountain Salmon
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(11, {	-- Huge Highmountain Salmon
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(46185, {	-- Iroxus (Invasion wq)
 					["lvl"] = 98,
@@ -283,11 +269,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(17, {	-- It's Illid... Wait.
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(46186, {	-- Ix'dreloth (Invasion WQ)
 					["isWorldQuest"] = true,
@@ -324,31 +305,16 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(9, {	-- Lively Highmountain Salmon
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41244, {	-- Lively Highmountain Salmon
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(9, {	-- Lively Highmountain Salmon
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41597, {	-- Lively Highmountain Salmon
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(9, {	-- Lively Highmountain Salmon
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41090, {	-- Lords of the Hills
 					["lvl"] = 110,
@@ -371,11 +337,6 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(20, {	-- Migrating Highmountain Salmon
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41122, {	-- Mists Take You
 					["lvl"] = 110,
@@ -441,11 +402,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(19, {	-- Rocko Needs a Shave
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41200, {	-- Rough Leystone Outcropping
 					["lvl"] = 110,
@@ -492,11 +448,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(18, {	-- Snail Fight!
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(44892, {	-- Snowfeather Swarm!
 					["lvl"] = 110,
@@ -551,21 +502,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(15, {	-- Tiny Poacher, Tiny Animals
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(40280, {	-- Training with Bredda
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(14, {	-- Training with Bredda
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(46190, {	-- Ulgrom (Invasion WQ)
 					["lvl"] = 98,
@@ -708,21 +649,11 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(6, {	-- Wild Northern Barracuda
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41766, {	-- Wildlife Protection Force
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(16, {	-- Wildlife Protection Force
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41525, {	-- Wispy Foxflower
 					["lvl"] = 110,
@@ -766,11 +697,6 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(18, {	-- Work Order: Highmountain Salmon
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41206, {	-- Work Order: Leystone
 					["lvl"] = 110,
@@ -917,6 +843,9 @@ _.Zones =
 						i(134141),	-- Rockbound Sabatons
 					},
 				}),
+				n(-385, {	-- Finger
+					i(139103),	-- An'she's Band
+				}),	
 				n(-384, {	-- Neck
 
 				}),

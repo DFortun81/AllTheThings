@@ -7,18 +7,17 @@ _.Zones =
 		m(106, {	-- Bloodmyst Isle
 			n(RARES, {
 				n(22060, {	-- Fenissa the Assassin
-					["coords"] = {	-- need to verify top spawn/path at vector coil
-						{ 40.1, 61.2, 106 },	-- cryo-core
-						{ 39.5, 58.9, 106 },
-						{ 38.8, 58.4, 106 },
-						{ 37.8, 58.4, 106 },
-						{ 36.6, 60.3, 106 },
-						{ 36.3, 62.7, 106 },
-						{ 24.3, 54.2, 106 },	-- bottom of vector coil
-						{ 24.3, 56.5, 106 },
-						{ 24.4, 51.5, 106 },
+					["coords"] = {
+						{ 15.6, 49.2, 106 },	-- vector coil, top
+						{ 14.4, 54.6, 106 },	-- vector coil, bottom
+						{ 25.6, 50.8, 106 },	-- top camp
+						{ 24.3, 56.5, 106 },	-- middle camp
+						{ 21.1, 60.9, 106 }, -- bottom camp
+						{ 36.3, 62.7, 106 },	-- cryo-core, left
+						{ 37.8, 58.4, 106 },	-- cryo-core, mid
+						{ 40.1, 61.2, 106 },	-- cryo-core, right
 					},
-					["groups"] = {
+					["g"] = {
 						i(31264),	-- Silvermoon Robes
 						i(31263),	-- Silvermoon Tunic
 						i(31256),	-- Silvermoon Armor

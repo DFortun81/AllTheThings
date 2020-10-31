@@ -1,6 +1,7 @@
- ---------------------------------------------------
+---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -9,14 +10,14 @@ _.Zones =
 				n(91874,  {	-- Bladesquall
 					["questID"] = 38431,
 					["coord"] = { 46.0, 77.7, 634 },
-					["groups"] = {	
+					["groups"] = {
 						i(129048),
 						{	-- Bladesquall (Adventurer of Stormheim)
 							["achievementID"] = 11263,	-- Adventurer of Stormheim
 							["criteriaID"] = 4,	-- Bladesquall
 						},
 					},
-				}), 
+				}),
 				n(92599,  {	-- Bloodstalker Alpha
 					["questID"] = 38626,
 					["coord"] = { 38.8, 38.8, 634 },
@@ -27,7 +28,7 @@ _.Zones =
 						},
 						i(129101),	-- Alpha's Paw
 					},
-				}), 
+				}),
 				n(92685,  {	-- Captain Brvet
 					["description"] = "Click on the Horn of the Helmouth to spawn Captain Brvet.",
 					["questID"] = 38642,
@@ -95,14 +96,14 @@ _.Zones =
 				n(98188,  {	-- Egyl the Enduring
 					["questID"] = 40068,
 					["coord"] = { 41.4, 32.0, 634 },	-- cave entrance
-					["groups"] = {	
+					["groups"] = {
 						i(132898),	-- Sabatons of the Endless Vigil
 						{	-- Egyl the Enduring (Adventurer of Stormheim)
 							["achievementID"] = 11263,	-- Adventurer of Stormheim
 							["criteriaID"] = 18,	-- Egyl the Enduring
 						},
 					},
-				}), 
+				}),
 				n(91803,  {	-- Fathnyr
 					["questID"] = 38425,
 					["coord"] = { 46.3, 82.9, 634 },
@@ -113,7 +114,7 @@ _.Zones =
 							["criteriaID"] = 3,	-- Fathnyr
 						},
 					},
-				}), 
+				}),
 				n(91529,  {	-- Glimar Ironfist
 					["questID"] = 38333,
 					["coord"] = { 41.9, 66.5, 634 },
@@ -139,7 +140,7 @@ _.Zones =
 				n(107926, {	-- Hannval the Butcher
 					["questID"] = 42591,
 					["coord"] = { 51.9, 74.8, 634 },
-					["groups"] = {	
+					["groups"] = {
 						i(138417),	-- The Butcher's Apron
 						{	-- Hannval the Butcher (Adventurer of Stormheim)
 							["achievementID"] = 11263,	-- Adventurer of Stormheim
@@ -162,10 +163,10 @@ _.Zones =
 					["questID"] = 38712,
 					["coord"] = { 47.1, 57.2, 634 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {	
+					["groups"] = {
 						i(129037),	-- THe Houndmaster's Fancy Pants
 					},
-				}), 
+				}),
 				n(90139,  {	-- Inquisitor Ernstenbok
 					["questID"] = 37908,
 					["coord"] = { 62.4, 74.9, 634 },	-- cave entrance
@@ -180,7 +181,7 @@ _.Zones =
 							["criteriaID"] = 4,	-- Stormheim
 						},
 					},
-				}), 
+				}),
 				n(94413,  {	-- Isel the Hammer
 					["questID"] = 39120,
 					["coord"] = { 62.0, 60.6, 634 },
@@ -213,7 +214,7 @@ _.Zones =
 						},
 						i(138419),	-- The Binder's Bonds
 					},
-				}), 
+				}),
 				n(93371,  {	-- Mordvigbjorn
 					["questID"] = 38837,
 					["coord"] = { 72.8, 49.6, 634 },
@@ -225,7 +226,7 @@ _.Zones =
 						i(133827),	-- Recipe: Bear Tartare [Rank 1]
 						i(129035),	-- Indomitable Bearskin Cloak
 					},
-				}), 
+				}),
 				n(91780, {	-- Mother Clacker
 					["questID"] = 38422,
 					["coord"] = { 35.4, 18.4, 634 },
@@ -256,7 +257,7 @@ _.Zones =
 				n(91795,  {	-- Stormwing Matriarch
 					["questID"] = 38423,
 					["coord"] = { 49.5, 72.3, 634 },
-					["groups"] = {	
+					["groups"] = {
 						i(129208),	-- Stormborne Whelpling (PET!)
 						i(129110),	-- Matriarch-Hide Legguards
 						{	-- Stormwing Matriarch (Adventurer of Stormheim)
@@ -314,7 +315,7 @@ _.Zones =
 						},
 						i(129163),	-- Lost Etin's Strength
 					},
-				}), 
+				}),
 				n(93401,  {	-- Urgev the Flayer
 					["questID"] = 38847,
 					["coord"] = { 64.7, 51.9, 634 },
@@ -325,7 +326,7 @@ _.Zones =
 							["criteriaID"] = 15,	-- Urgev the Flayer
 						},
 					},
-				}), 
+				}),
 				n(92152,  {	-- Whitewater Typhoon
 					["questID"] = 38472,
 					["coord"] = { 36.2, 51.1, 634 },
@@ -337,23 +338,24 @@ _.Zones =
 						},
 					},
 				}),
---[[			--	n(108885, { 	-- Aegir Wavecrusher	}), 
-			--	n(109113, { 	-- Boulderfall, the Eroded	}), 
+--[[ TODO:
+			--	n(108885, { 	-- Aegir Wavecrusher	}),
+			--	n(109113, { 	-- Boulderfall, the Eroded	}),
 			--	n(111463, { 	-- Bulvinkel	}),
 			--	n(108790, { 	-- Den Mother Ylva	}),
-			--	n(108827, { 	-- Fjorlag, the Grave's Chill	}), 
-			--	n(108823, { 	-- Halfdan	}), 
-			--	n(92682, { 		-- Helmouth Raider	}), 
-			--	n(92703, { 		-- Helmouth Raider	}), 
-			--	n(108822, { 	-- Huntress Estrid	}), 
-			--	n(109015, { 	-- Lagertha	}), 
-			--	n(109317, { 	-- Rulf Bonesnapper	}), 
-			--	n(109318, { 	-- Runeseer Sigvid	}), 
-			--	n(109195, { 	-- Soulbinder Halldora	}), 
-			--	n(109994, { 	-- Stormtalon	}), 
-			--	n(100223, { 	-- Vrykul Earthshaper Spirit	}), 
+			--	n(108827, { 	-- Fjorlag, the Grave's Chill	}),
+			--	n(108823, { 	-- Halfdan	}),
+			--	n(92682, { 		-- Helmouth Raider	}),
+			--	n(92703, { 		-- Helmouth Raider	}),
+			--	n(108822, { 	-- Huntress Estrid	}),
+			--	n(109015, { 	-- Lagertha	}),
+			--	n(109317, { 	-- Rulf Bonesnapper	}),
+			--	n(109318, { 	-- Runeseer Sigvid	}),
+			--	n(109195, { 	-- Soulbinder Halldora	}),
+			--	n(109994, { 	-- Stormtalon	}),
+			--	n(100223, { 	-- Vrykul Earthshaper Spirit	}),
 			--	n(100224, { 	-- Vrykul Earthmaiden Spirit	}), --]]
 			}),
-		}),	
+		}),
 	}),
 };

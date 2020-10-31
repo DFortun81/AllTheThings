@@ -8,7 +8,7 @@ _.GroupFinder =
 		i(156688, {	-- Icy Satchel of Helpful Goods
 			["lvl"] = 59,	-- may be 58
 			-- TODO: uncomment?
-			-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 58 - ??? range.|r", (NOTE: Unsure of start/end points.  Not positive about 58, but I think LK dungeons now open at the same time as BC.  Unavailable on a level 84 character, so this bracket ends sometime before that.  Commenting out until confirmation.)
+			-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 10-50 range.|r",
 			["g"] = {
 				i(112348),	-- Snow-Coated Cloth Cap*
 				i(113758),	-- Snow-Coated Cloth Gloves*
@@ -22,13 +22,21 @@ _.GroupFinder =
 				i(112366),	-- Winterfrost Leather Girdle
 				i(112360),	-- Winterfrost Leather Leggings			— confirmed by user on discord on April 22, 2020
 				i(112359),	-- Winterfrost Leather Waders
-				i(112349),	-- Icefall Chain Helm
-				i(112350),	-- Icefall Mail Helm*
-				i(113694),	-- Icefall Chain Gloves
+				i(112349, {	-- Icefall Chain Helm
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				i(112350),	-- Icefall Mail Helm*					— confirmed by user on discord on July 24, 2020
+				i(113694, {	-- Icefall Chain Gloves					— Looted them, but before 7.3.5 -- Gold 25th October, 2020
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				i(113693),	-- Icefall Mail Gloves					— confirmed by user on discord on April 22, 2020
 				i(112364),	-- Icefall Mail Girdle*
-				i(112363),	-- Icefall Chain Belt
-				i(112358),	-- Icefall Chain Leggings
+				i(112363, {	-- Icefall Chain Belt
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				i(112358, {	-- Icefall Chain Leggings
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				i(112357),	-- Icefall Mail Leggings*
 				i(112346),	-- Ice-Encrusted Plate Headguard*
 				i(113692),	-- Ice-Encrusted Gauntlets*

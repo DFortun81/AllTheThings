@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -67,14 +68,14 @@ _.Zones =
 					["questID"] = 44070,
 					["coord"] = { 49.1, 47.4, 641 },
 					["crs"] = { 112472 },	-- Tehd Shoemaker
-					["groups"] = {	
+					["groups"] = {
 						i(132359),	-- The Subjugator's Shackles
 						{	-- Marius & Tehd versus a Satyr (Adventurer of Val'sharah)
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
 							["criteriaID"] = 20,	-- Marius & Tehd versus a Satyr
 						},
 					},
-				}), 
+				}),
 				n(92117,  {	-- Gorebeak
 					["questID"] = 38468,
 					["coord"] = { 59.7, 77.2, 641 },
@@ -144,7 +145,7 @@ _.Zones =
 							["criteriaID"] = 12,	-- Old Bear Trap
 						},
 					},
-				}), 
+				}),
 				n(95318,  {	-- Perrexx
 					["questID"] = 39596,
 					["coord"] = { 61.1, 69.9, 641 },
@@ -189,11 +190,11 @@ _.Zones =
 							["criteriaID"] = 3,	-- Theryssia
 						},
 					},
-				}), 
+				}),
 				n(93205,  {	-- Thondrax
 					["questID"] = 38780,
 					["coord"] = { 62.6, 47.8, 641 },
-					["groups"] = {	
+					["groups"] = {
 						i(130121),	-- Thondrax's Night-Runed Bands
 						{	-- Thondrax (Adventurer of Val'sharah)
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -205,7 +206,7 @@ _.Zones =
 					["questID"] = 43176,
 					["coord"] = { 67.0, 69.5, 641 },
 					["crs"] = { 109225 },	-- Elandris Bladesong
-					["groups"] = {	
+					["groups"] = {
 						i(130133),	-- Undergrell Mobilehelm
 						{	-- Undergrell Attack (Adventurer of Val'sharah)
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -236,22 +237,22 @@ _.Zones =
 						},
 					},
 				}),
---[[
-			--	n(93758, { 		-- Antydas Nightcaller	}), 
-			--	n(107924, { 	-- Darkfiend Tormentor	}), 
-			--	v(45483, { 		-- Ealdis	}), 
-			--	n(93686, { 		-- Jinikki the Puncturer	}), 
-			--	n(106042, { 	-- Kalazzius the Guileful	}), 
-			--	n(109125, { 	-- Kathaw the Savage	}), 
-			--	v(45490, { 		-- Lytheron	}), 
-			--	v(45501, { 		-- Malisandra	}), 
-			--	v(45488, { 		-- Nylaathria the Forgotten	}), 
-			--	v(45487, { 		-- Rabxach	}), 
-			--	v(45500, { 		-- Shalas'aman	}), 
-			--	n(103785, { 	-- Well-Fed Bear	}), 
-			--	v(45493, { 		-- Witchdoctor Grgl-Brgl	}), 
---]]					
-			}),		
-		}),	
+--[[ TODO:
+			--	n(93758, { 		-- Antydas Nightcaller	}),
+			--	n(107924, { 	-- Darkfiend Tormentor	}),
+			--	v(45483, { 		-- Ealdis	}),
+			--	n(93686, { 		-- Jinikki the Puncturer	}),
+			--	n(106042, { 	-- Kalazzius the Guileful	}),
+			--	n(109125, { 	-- Kathaw the Savage	}),
+			--	v(45490, { 		-- Lytheron	}),
+			--	v(45501, { 		-- Malisandra	}),
+			--	v(45488, { 		-- Nylaathria the Forgotten	}),
+			--	v(45487, { 		-- Rabxach	}),
+			--	v(45500, { 		-- Shalas'aman	}),
+			--	n(103785, { 	-- Well-Fed Bear	}),
+			--	v(45493, { 		-- Witchdoctor Grgl-Brgl	}),
+--]]
+			}),
+		}),
 	}),
 };

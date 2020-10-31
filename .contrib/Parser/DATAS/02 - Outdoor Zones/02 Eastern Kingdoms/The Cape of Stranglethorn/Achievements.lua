@@ -1,11 +1,12 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(210, {	-- The Cape of Stranglethorn
-			n(-4, {		-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4905, {	-- Cape of Stranglethorn Quests
 					crit(1, {	-- The Trolls of Zul'gurub
 						["sourceQuests"] = { 26814, 26555 },	-- High Priest Venoxis (A, H)

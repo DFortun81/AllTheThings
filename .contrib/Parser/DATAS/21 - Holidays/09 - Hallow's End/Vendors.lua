@@ -219,7 +219,7 @@ _.Holidays =
 				n(53728,  {	-- Dorothy <Candy & Toy Vendor>
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 31.8, 50.0, 37 },
-					["maps"] = 37,	-- Elwynn Forest
+					["maps"] = { 37 },	-- Elwynn Forest
 					["g"] = {
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
@@ -566,26 +566,26 @@ _.Holidays =
 					["g"] = bubbleDown({["u"] = 26}, {
 						i(128664, {	-- Creepy Crawlers
 							["questID"] = 39759,
-							["cost"] = { { "i", 128659, 5 }, },	-- 5x Spooky Supplies
+							["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
 						}),
 						i(128660, {	-- Ghoulish Guises
 							["questID"] = 39758,
-							["cost"] = { { "i", 128659, 5 }, },	-- 5x Spooky Supplies
+							["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
 						}),
 						i(128661, {	-- Hallow's Glow
 							["questID"] = 39612,
-							["cost"] = { { "i", 128659, 5 }, },	-- 5x Spooky Supplies
+							["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
 						}),
 						i(128662, {	-- Seer's Invitation
 							["questID"] = 39613,
-							["cost"] = { { "i", 128659, 5 }, },	-- 5x Spooky Supplies
+							["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
 						}),
 						i(33226,  {	-- Tricky Treat
-							["cost"] = { { "i", 128659, 1 }, },	-- 1x Spooky Supplies
+							["cost"] = { { "i", 128658, 1 }, },	-- 1x Spooky Supplies
 						}),
 						i(128663, {	-- Witch's Brew
 							["questID"] = 39611,
-							["cost"] = { { "i", 128659, 5 }, },	-- 5x Spooky Supplies
+							["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
 						}),
 					}),
 				}),

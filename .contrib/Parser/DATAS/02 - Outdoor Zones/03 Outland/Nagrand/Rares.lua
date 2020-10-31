@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -25,7 +26,7 @@ _.Zones =
 						i(31188),	-- Crocolisk Scale Vambraces
 						i(31189),	-- Crocolisk Scale Wristguards
 					},
-				}), 
+				}),
 				n(18684, {	-- Bro'Gaz the Clanless
 					["coords"] = {
 						{ 27.2, 43.0, 107 },
@@ -39,7 +40,7 @@ _.Zones =
 					},
 					["g"] = {
 						i(31194),	-- Gronn-Blessed Warbeads
-					},			
+					},
 				}),
 				n(18683, {	-- Voidhunter Yar
 					["coords"] = {
@@ -61,7 +62,7 @@ _.Zones =
 						i(31197),	-- Voidscale Belt
 						i(31199),	-- Voidweave Cilice
 					},
-				}), 
+				}),
 			}),
 		}),
 	}),

@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
--- TODO: refactor some items here accroding to new format standarts.
+-- TODO: refactor some items here according to new format standarts.
 _.WorldEvents =
 {
 	n(-94, { 	-- Black Market AH
@@ -73,6 +73,7 @@ _.WorldEvents =
 				i(44707),	-- Reins of the Green Proto-Drake
 				i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent
 				i(94231),	-- Reins of the Jade Primordial Direhorn
+				un(9, i(163042)),  -- Reins of the Mighty Caravan Brutosaur
 				i(49636),	-- Reins of the Onyxian Drake
 				un(9, i(44175)),	-- Reins of the Plagued Proto-Drake
 				i(94229),	-- Reins of the Slate Primordial Direhorn

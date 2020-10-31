@@ -1,9 +1,10 @@
----------------------------------------------
---     S E C R E T S     M O D U L E       --
----------------------------------------------
+-------------------------------------------
+--     S E C R E T S     M O D U L E     --
+-------------------------------------------
+
 _.Secrets =
 {
-	n(-806, { 	-- Waist of Time   Descriptions, figure out quest.
+	n(-806, { 	-- Waist of Time
 		["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nYou will need uncommon quality Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, Frostwoven Leggings, as well as Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking later on in the secret. It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland.",
 		["maps"] = {
 			14,
@@ -57,7 +58,7 @@ _.Secrets =
 				["modelScale"] = .5,
 				["questID"] = 52898,
 				["sourceQuests"] = { 52831 },
-				["description"] = "Spires of Arak\n\nUnderwater on top of the large rock.  \n\nThe Tiny Frog says:\n\n\"<Something is written here.>\n\nDog wig moss?\"",	 
+				["description"] = "Spires of Arak\n\nUnderwater on top of the large rock.  \n\nThe Tiny Frog says:\n\n\"<Something is written here.>\n\nDog wig moss?\"",
 				["coord"] = { 53.5, 10.8, 542 },	-- Tiny Frog
 			}),
 			o(294099, { 	-- Brittle Bone
@@ -65,7 +66,7 @@ _.Secrets =
 				["modelScale"] = .5,
 				["questID"] = 52899,
 				["sourceQuests"] = { 52898 },
-				["description"] = "Blades Edge Mountains\n\nOn the ground next to a crystal.  \n\nThe Brittle Bone reads:\n\n\"<Something is written here.>\n\nRage, Shank Sever\"", 
+				["description"] = "Blades Edge Mountains\n\nOn the ground next to a crystal.  \n\nThe Brittle Bone reads:\n\n\"<Something is written here.>\n\nRage, Shank Sever\"",
 				["coord"] = { 33.6, 58.2, 105 },	-- Brittle Bone
 			}),
 			o(294100, { 	-- Misplaced Candle
@@ -80,7 +81,7 @@ _.Secrets =
 				["modelScale"] = .5,
 				["questID"] = 52901,
 				["sourceQuests"] = { 52900 },
-				["description"] = "Draenor SMV\n\nBrown cup, next to the fire. \n\nThe Odd Cup reads:\n\n\"<Something is written here.>\n\nEase off fruit...\"",  
+				["description"] = "Draenor SMV\n\nBrown cup, next to the fire. \n\nThe Odd Cup reads:\n\n\"<Something is written here.>\n\nEase off fruit...\"",
 				["coord"] = { 45.7, 26.2, 539 },	-- Odd Cup
 			}),
 			o(294102, { 	-- Interesting Rock
@@ -103,7 +104,7 @@ _.Secrets =
 				["modelScale"] = .5,
 				["questID"] = 52904,
 				["sourceQuests"] = { 52903 },
-				["description"] = "Eastern Plaguelands\n\nInside the crypt, on top of the sarcophagus lid\n\nThe Pretty Flower reads:\n\n\"<Something is written here.>\n\nDead Rune Thug\"", 
+				["description"] = "Eastern Plaguelands\n\nInside the crypt, on top of the sarcophagus lid\n\nThe Pretty Flower reads:\n\n\"<Something is written here.>\n\nDead Rune Thug\"",
 				["coord"] = { 24.0, 78.0, 23 },	-- Pretty Flower
 			}),
 			o(294105, { 	-- Old Book
@@ -111,7 +112,7 @@ _.Secrets =
 				["modelScale"] = .5,
 				["questID"] = 52905,
 				["sourceQuests"] = { 52904 },
-				["description"] = "Deadwind Pass\n\nInside the old church, near the table.\n\nThe Old Book reads:\n\n\"<Something is written here.>\n\n...A Stage Deception\"", 
+				["description"] = "Deadwind Pass\n\nInside the old church, near the table.\n\nThe Old Book reads:\n\n\"<Something is written here.>\n\n...A Stage Deception\"",
 				["coord"] = { 41.2, 78.9, 42 },	-- Old Book
 			}),
 			o(294106, { 	-- Dead Fish

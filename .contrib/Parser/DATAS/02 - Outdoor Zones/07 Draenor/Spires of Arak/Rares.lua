@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -24,14 +25,14 @@ _.Zones =
 						{ 64.4, 65.6, 542 },
 						{ 65.2, 67.8, 542 },
 					},
-					["g"] = {	
+					["g"] = {
 						i(118205),	-- Blightglow Pauldrons
 					},
 				}),
 				n(84807, {	-- Durkath Steelmaw
 					["questID"] = 36267,
 					["coord"] = { 46.4, 28.6, 542 },
-					["g"] = {	
+					["g"] = {
 						i(118198),	-- Steelmaw's Stompers
 					},
 				}),
@@ -43,7 +44,7 @@ _.Zones =
 				n(84890, {	-- Festerbloom
 					["questID"] = 36297,
 					["coord"] = { 54.8, 39.8, 542 },
-					["g"] = {	
+					["g"] = {
 						i(118200),	-- Vile Branch of Festerbloom
 					},
 				}),
@@ -52,7 +53,7 @@ _.Zones =
 					["questID"] = 37360,
 					["isDaily"] = true,
 					["coord"] = { 72.2, 19.6, 542 },
-					["g"] = {	
+					["g"] = {
 						i(119373),	-- Nightmare-Chain Bracers
 					},
 				}),
@@ -91,11 +92,11 @@ _.Zones =
 						}),
 						i(119404), 	-- Glowing Morel
 					},
-				}), 
+				}),
 				n(86724, {	-- Hermit Palefur
 					["questID"] = 36887,
 					["coord"] = { 59.2, 14.8, 542 },
-					["g"] = {	
+					["g"] = {
 						i(118279),	-- Hermit's Hood
 					},
 				}),
@@ -109,7 +110,7 @@ _.Zones =
 				n(84810, {	-- Kalos the Bloodbathed
 					["questID"] = 36268,
 					["coord"] = { 62.8, 37.6, 542 },
-					["g"] = {	
+					["g"] = {
 						i(118735),	-- Bloodbathed Outcast Robes
 					},
 				}),
@@ -133,7 +134,7 @@ _.Zones =
 						}),
 						i(119398),	-- Plunderer's Drill
 					},
-				}), 
+				}),
 				n(86621, {	-- Morphed Sentient
 					["questID"] = 37493,
 					["isDaily"] = true,
@@ -151,14 +152,14 @@ _.Zones =
 						{ 53.2, 89.0, 542 },
 						{ 54.8, 88.6, 542 },
 					},
-					["g"] = {	
+					["g"] = {
 						i(118206),	-- Mutafen's Mighty Maul
 					},
 				}),
 				n(82247, {	-- Nas Dunberlin
 					["questID"] = 36129,
 					["coord"] = { 36.6, 52.4, 542 },
-					["g"] = {	
+					["g"] = {
 						i(116837),	-- Spooky Scythe
 					},
 				}),
@@ -179,21 +180,21 @@ _.Zones =
 				n(85504, {	-- Rotcap
 					["questID"] = 36470,
 					["coord"] = { 38.4, 27.4, 542 },
-					["g"] = {	
+					["g"] = {
 						i(118107),	-- Brilliant Spore Pet
 					},
 				}),
 				n(84833, {	-- Sangrikass
 					["questID"] = 36276,
 					["coord"] = { 68.8, 49.0, 542 },
-					["g"] = {	
+					["g"] = {
 						i(118203),	-- Moultingskin Tunic
 					},
 				}),
 				n(79938, {	-- Shadowbark
 					["questID"] = 36478,
 					["coord"] = { 51.8, 35.6, 542 },
-					["g"] = {	
+					["g"] = {
 						i(118201),	-- Shadowbark's Skin
 					},
 				}),
@@ -211,12 +212,12 @@ _.Zones =
 						}),
 						i(119363),	-- Stretchy Purple Pants
 					},
-				}), 
+				}),
 				n(83990, {	-- Solar Magnifier
 					["questID"] = 37394,
 					["isDaily"] = true,
 					["coord"] = { 52.0, 7.6, 542 },
-					["g"] = {	
+					["g"] = {
 						i(119407),	-- Cloudsplitter Greatstaff
 					},
 				}),
@@ -224,7 +225,7 @@ _.Zones =
 					["questID"] = 37358,
 					["isDaily"] = true,
 					["coord"] = { 72.6, 19.6, 542 },
-					["g"] = {	
+					["g"] = {
 						i(119178),	-- Black Whirlwind Toy
 						i(119410),	-- Soultwisting Staff
 					},
@@ -232,7 +233,7 @@ _.Zones =
 				n(84805, {	-- Stonespite
 					["questID"] = 36265,
 					["coord"] = { 33.6, 22.0, 542 },
-					["g"] = {	
+					["g"] = {
 						i(116858),	-- Stonespite Scale Leggings
 					},
 				}),
@@ -240,7 +241,7 @@ _.Zones =
 					["questID"] = 36298,
 					["coord"] = { 58.6, 45.0, 542 },
 					["description"] = "This rare is bugged as of 8.0.1. If you fly in fast enough, you can still enough wasps to get her to spawn. Melee classes may find this near impossible.",
-					["g"] = {	
+					["g"] = {
 						i(116855),	-- Stingtail's Toxic Stinger
 					},
 				}),
@@ -267,7 +268,7 @@ _.Zones =
 				}),
 				n(82050, {	-- Varasha
 					["questID"] = 35334,
-					["coords"] = { 
+					["coords"] = {
 						{ 29.6, 42.0, 542 },	-- Varasha
 						{ 31.5, 43.3, 542 },	-- Cave Entrance
 					},
@@ -282,7 +283,7 @@ _.Zones =
 						{ 73.6, 31.2, 542 },
 						{ 74.8, 32.4, 542 },
 					},
-					["g"] = {	
+					["g"] = {
 						i(119392),	-- Voidreaver's Axe
 					},
 				}),

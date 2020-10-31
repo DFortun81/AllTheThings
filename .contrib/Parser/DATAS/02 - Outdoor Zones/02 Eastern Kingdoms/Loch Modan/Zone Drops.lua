@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -24,7 +25,7 @@ _.Zones =
 				un(REMOVED_FROM_GAME, n(1166, {	-- Stonesplinter Seer
 					un(REMOVED_FROM_GAME, i(2266)),	-- Stonesplinter Dagger
 				})),
-				un(REMOVED_FROM_GAME, n(1163, {	-- Stonesplinter Skullthumper	
+				un(REMOVED_FROM_GAME, n(1163, {	-- Stonesplinter Skullthumper
 					un(REMOVED_FROM_GAME, i(2265)),	-- Stonesplinter Axe (NOTE: No indication that these are dropping again, but if they do we can set them back to obtainable.)
 				})),
 				un(REMOVED_FROM_GAME, n(1202, {	-- Tunnel Rat Kobold

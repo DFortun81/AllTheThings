@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -9,7 +10,6 @@ _.Zones =
 			["isRaid"] = true,
 			["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_dwarf",
 			["maps"] = { 1361 },	-- Old Ironforge
-			["lvl"] = 1,
 		}),
 	}),
 };

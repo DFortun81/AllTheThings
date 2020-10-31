@@ -1,10 +1,11 @@
 -----------------------------------------------
---     P L A Y E R   V S   P L A Y E R       --
+--      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 _.PVP =
 {
 	n(-10058, {	-- World
-		n(-4,   {	-- Achievements
+		n(ACHIEVEMENTS, {
 			ach(12605, 12604, {	-- Conqueror of Azeroth
 				i(163577),	-- Conquerer's Scythemaw
 				title(377),	-- %s, Conqueror of Azeroth

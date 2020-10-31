@@ -62,7 +62,7 @@ _.Zones =
 						-- Void Focus quests
 						q(57275, {	-- Something in Your Mind
 							["provider"] = { "i", 171320 },	-- Void Focus
-							["description"] = "Can be made with any secondary crafting profession.",
+							["description"] = "Can be made with any crafting profession.",
 						}),
 						q(57276, {	-- Maintaining Focus (A)
 							["races"] = ALLIANCE_ONLY,

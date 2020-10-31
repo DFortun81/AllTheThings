@@ -30,7 +30,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(43989),	-- Remembrance Girdle		//** Confirmed Drop 4/19/19 [1 Drake up]
 							i(43991),	-- Legguards of Composure
 						},
-					}),					
+					}),
 					ach(2050, {	-- Twilight Duo [10 player]
 						["description"] = "These pieces can drop when you leave two or more drakes up, but loot from this table is not guaranteed.",
 						["g"] = {
@@ -80,7 +80,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(40430),	-- Majestic Dragon Figurine	//** Confirmed Drop 4/19/19 [1 Drake up]
 					i(43345),	-- Dragon Hide Bag			//** Confirmed Drop 4/19/19 [1/2/3 Drakes(s) up]
 					i(43347, {	-- Satchel of Spoils
-						["description"] = "Contains gold.",						
+						["description"] = "Contains gold.",
 					}),
 				})),
 			}),
@@ -159,7 +159,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(40432),	-- Illustration of the Dragon Soul		//** Confirmed Drop 4/19/19 [1 Drake up]
 					i(43345),	-- Dragon Hide Bag						//** Confirmed Drop 4/19/19 [1/2/3 Drakes up]
 					i(43346, {	-- Large Satchel of Spoils
-						["description"] = "Contains gold.",						
+						["description"] = "Contains gold.",
 					}),
 				})),
 			}),

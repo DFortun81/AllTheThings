@@ -1,14 +1,15 @@
----------------------------------------------
---     S E C R E T S     M O D U L E       --
----------------------------------------------
-_.Secrets = 
+-------------------------------------------
+--     S E C R E T S     M O D U L E     --
+-------------------------------------------
+
+_.Secrets =
 {
 	n(-801, {	-- Riddler's Mind-Worm
 		["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nBelow is a detailed explanation on how to obtain the Riddler's Mind-Worm mount.\r\rNote: Progress on this will be reset each week, so do make sure to complete it in one reset.",
 		["modelScale"] = .7,
 		["modelID"] = 74314,
 		["g"] = {
-			o(148502, {	-- Step 1: Page 9 
+			o(148502, {	-- Step 1: Page 9
 				["model"] = 305393,
 				["questID"] = 45470,
 				["coord"] = { 48.8, 42.1, 627 },

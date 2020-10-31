@@ -1,6 +1,7 @@
 ---------------------------------------------
 --   P E T   J O U R N A L   M O D U L E   --
 ---------------------------------------------
+
 _.PetJournal =
 {
 	pa(239, { 	-- Flying
@@ -37,8 +38,8 @@ _.PetJournal =
 		p(325),				-- Brilliant Kaliri
 		p(1540),			-- Brilliant Spore
 		p(2442),			-- Bumbles
-		un(35, p(2185)),	-- Cap'n Crackers
-		un(35, p(316)),		-- Cenarion Hatchling
+		un(BLIZZARD_BALANCE, p(2185)),	-- Cap'n Crackers
+		un(BLIZZARD_BALANCE, p(316)),		-- Cenarion Hatchling
 		p(1586),			-- Cerulean Moth
 		p(1303),			-- Chi-Chi, Hatchling of Chi-Ji
 		p(849),				-- Chi-Ji Kite
@@ -123,7 +124,7 @@ _.PetJournal =
 		p(67),				-- Hawk Owl
 		p(2928),			-- Helpful Glimmerfly
 		p(645),				-- Highlands Turkey
-		un(35, p(130)),		-- Hippogryph Hatchling
+		un(BLIZZARD_BALANCE, p(130)),		-- Hippogryph Hatchling
 		p(1762),			-- Hog-Nosed Bat
 		p(2379),			-- Honey Bee
 		p(332, {			-- Horde Balloon (Horde)
@@ -241,11 +242,3 @@ _.PetJournal =
 		p(1536),			-- Zangar Spore
 	}),
 };
-
-
-
-
-
-
-
-

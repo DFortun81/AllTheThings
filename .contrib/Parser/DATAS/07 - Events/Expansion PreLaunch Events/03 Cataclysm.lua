@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.WorldEvents =
 {
 	n(-520, { 	-- Expansion Prelaunch Events
@@ -20,37 +21,35 @@ _.WorldEvents =
 						["collectible"] = false,
 					})),
 					un(REMOVED_FROM_GAME, ach(4887, {	-- Tripping the Rifts
-						["groups"] = {
-							-- NOTE: NPCs are unrelated to the achievement.
-							n(44822, {	-- Crown Princess Theradras
-								un(REMOVED_FROM_GAME, i(53496)),	-- Barrier of the Earth Princess
-								un(REMOVED_FROM_GAME, i(53499)),	-- Amulet of the Centauri
-								un(REMOVED_FROM_GAME, i(53497)),	-- Zaetar's Deathshroud
-								un(REMOVED_FROM_GAME, i(53498)),	-- Earth Bride's Gown
-								un(REMOVED_FROM_GAME, i(53500)),	-- Tectonic Plate
-							}),
-							n(41110, {	-- Grand Ambassador Flamelash
-								un(REMOVED_FROM_GAME, i(53502)),	-- Flamelash Amulet
-								un(REMOVED_FROM_GAME, i(53503)),	-- Pendant of Burning Spirits
-								un(REMOVED_FROM_GAME, i(53505)),	-- Salamander Skin
-								un(REMOVED_FROM_GAME, i(53504)),	-- Flamewaker's Treads
-								un(REMOVED_FROM_GAME, i(53501)),	-- Sulfuron's Favor
-							}),
-							n(40961, {	-- Kai'ju Gahz'rilla
-								un(REMOVED_FROM_GAME, i(53491)),	-- Twilight Offering Bands
-								un(REMOVED_FROM_GAME, i(53494)),	-- Girdle of Oblation
-								un(REMOVED_FROM_GAME, i(53493)),	-- Sacrificial Mail
-								un(REMOVED_FROM_GAME, i(53495)),	-- Old Gods' Blessing
-								un(REMOVED_FROM_GAME, i(53492)),	-- Ring of the Three-Headed Beast
-							}),
-							n(45214, {	-- Prince Sarsarun <Herald of Al'Akir>
-								un(REMOVED_FROM_GAME, i(53509)),	-- Amulet of Evil Winds
-								un(REMOVED_FROM_GAME, i(53506)),	-- Cloak of Mocking Winds
-								un(REMOVED_FROM_GAME, i(53508)),	-- Pulmonary Casing
-								un(REMOVED_FROM_GAME, i(54592)),	-- Sul'lithuz Scale Bracers
-								un(REMOVED_FROM_GAME, i(53507)),	-- Sandfury Sandals
-							}),
-						},
+						-- NOTE: NPCs are unrelated to the achievement.
+						n(44822, {	-- Crown Princess Theradras
+							un(REMOVED_FROM_GAME, i(53496)),	-- Barrier of the Earth Princess
+							un(REMOVED_FROM_GAME, i(53499)),	-- Amulet of the Centauri
+							un(REMOVED_FROM_GAME, i(53497)),	-- Zaetar's Deathshroud
+							un(REMOVED_FROM_GAME, i(53498)),	-- Earth Bride's Gown
+							un(REMOVED_FROM_GAME, i(53500)),	-- Tectonic Plate
+						}),
+						n(41110, {	-- Grand Ambassador Flamelash
+							un(REMOVED_FROM_GAME, i(53502)),	-- Flamelash Amulet
+							un(REMOVED_FROM_GAME, i(53503)),	-- Pendant of Burning Spirits
+							un(REMOVED_FROM_GAME, i(53505)),	-- Salamander Skin
+							un(REMOVED_FROM_GAME, i(53504)),	-- Flamewaker's Treads
+							un(REMOVED_FROM_GAME, i(53501)),	-- Sulfuron's Favor
+						}),
+						n(40961, {	-- Kai'ju Gahz'rilla
+							un(REMOVED_FROM_GAME, i(53491)),	-- Twilight Offering Bands
+							un(REMOVED_FROM_GAME, i(53494)),	-- Girdle of Oblation
+							un(REMOVED_FROM_GAME, i(53493)),	-- Sacrificial Mail
+							un(REMOVED_FROM_GAME, i(53495)),	-- Old Gods' Blessing
+							un(REMOVED_FROM_GAME, i(53492)),	-- Ring of the Three-Headed Beast
+						}),
+						n(45214, {	-- Prince Sarsarun <Herald of Al'Akir>
+							un(REMOVED_FROM_GAME, i(53509)),	-- Amulet of Evil Winds
+							un(REMOVED_FROM_GAME, i(53506)),	-- Cloak of Mocking Winds
+							un(REMOVED_FROM_GAME, i(53508)),	-- Pulmonary Casing
+							un(REMOVED_FROM_GAME, i(54592)),	-- Sul'lithuz Scale Bracers
+							un(REMOVED_FROM_GAME, i(53507)),	-- Sandfury Sandals
+						}),
 					})),
 					n(QUESTS, {
 						q(27566, {	-- A Gathering in Outland

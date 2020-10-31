@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -62,7 +62,7 @@ _.Zones =
 						["requireSkill"] = BLACKSMITHING,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
-					}),	
+					}),
 				}),
 				prof(COOKING, {
 					q(54470, {	-- Fresh Dishes (H)
@@ -562,7 +562,6 @@ _.Zones =
 						["coord"] = { 43.8, 34.7, 1165 },
 						["sourceQuest"] = 52216,	-- Hexoskeleton
 						["description"] = "Requires 150 Zandalari Skinning",
-						
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							recipe(257154),	-- Skinning Technique: Bone Gathering (Rank 3)

@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(875, {	-- Zandalar
@@ -11,11 +12,6 @@ _.Zones =
 						["provider"] = { "n", 142114 },	-- Talia Sparkbrow
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(22, {	-- Add More to the Collection
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(50864, {	-- Atal'zul Gotaka
 						["lvl"] = 120,
@@ -107,11 +103,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(3, {	-- Master of Calligraphy - Triangle
-								["achievementID"] = 13512,	-- Master Calligrapher
-							}),
-						},
 					}),
 					q(50966, {	-- Cleanup Crew
 						["lvl"] = 120,
@@ -126,21 +117,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13439, {	-- Boxing Match
-								["races"] = ALLIANCE_ONLY,
-							}),
-						},
 					}),
 					q(54516, {	-- Crate n' Barrel (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13438, {	-- Boxing Match
-								["races"] = HORDE_ONLY,
-							}),
-						},
 					}),
 					q(50854, {	-- Crimsonclaw
 						["lvl"] = 120,
@@ -149,11 +130,6 @@ _.Zones =
 					q(52892, {	-- Critters are Friends, Not Food
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(21, {	-- Critters are Friends, Not Food
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(50651, {	-- Cut Off Potential
 						["lvl"] = 120,
@@ -234,9 +210,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13441),	-- Pushing the Payload
-						},
 					}),
 					q(50870, {	-- G'Naat
 						["lvl"] = 120,
@@ -285,17 +258,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13035),	-- By de Power of de Loa!
-						},
 					}),
 					q(51232, {	-- Hundred Troll Holdout (H)
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13035),	-- By de Power of de Loa!
-						},
 					}),
 					q(51305, {	-- Jelly Clouds (possibly NYI?)
 						["lvl"] = 120,
@@ -427,14 +394,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(6, {	-- Ritual Rampage
-								["achievementID"] = 13283,	-- Frontline Warrior
-							}),
-							crit(6, {	-- Ritual Rampage
-								["achievementID"] = 13387,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(52250, {	-- Saving Xibala
 						["lvl"] = 120,
@@ -465,14 +424,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(4, {	-- Shores of Zuldazar
-								["achievementID"] = 13284,	-- Frontline Warrior
-							}),
-							crit(4, {	-- Shores of Zuldazar
-								["achievementID"] = 13388,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(54522, {	-- Short for an Orc (Faction Assault WQ)
 						["lvl"] = 110,
@@ -483,11 +434,6 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 						["filter"] = 101,	-- Pet Battles
-						["g"] = {
-							crit(24, {	-- Small Beginnings
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(54712, {	-- Spell Components (Faction Assault WQ)
 						["lvl"] = 110,
@@ -498,9 +444,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13440),	-- Pushing the Payload
-						},
 					}),
 					q(53165, {	-- Stopping Antiquities Theft
 						["lvl"] = 120,
@@ -603,6 +546,12 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(51010, {	-- Work Order: Coarse Leather
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = SKINNING,
+						["isWorldQuest"] = true,
+					}),
 					q(52393, {	-- Work Order: Contract: Tortollan Seekers
 						["lvl"] = 120,
 						["requireSkill"] = INSCRIPTION,
@@ -665,6 +614,12 @@ _.Zones =
 							i(162290),	-- Recipe: Ravenberry Tarts [Rank 3]
 						},
 					}),
+					q(52420, {	-- Work Order: Shimmerscale Diving Suit
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = LEATHERWORKING,
+						["isWorldQuest"] = true,
+					}),
 					q(52351, {	-- Work Order: Spiced Snapper [Rank 3]
 						["lvl"] = 120,
 						["requireSkill"] = COOKING,
@@ -702,11 +657,6 @@ _.Zones =
 					q(52937, {	-- You've Never Seen Jammer Upset
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(23, {	-- You've Never Seen Jammer Upset
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(50866, {	-- Zayoos
 						["lvl"] = 120,
@@ -729,7 +679,7 @@ _.Zones =
 						-- Include the one extra.
 						{"select", "itemID", 158150},	-- Loa-Pledged Drape
 						{"finalize"},	-- Push the items to the finalized list.
-						
+
 						{"select", "mapID", 862},	-- Zuldazar
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "npcID", -34 },	-- Select the World Quests Header.
@@ -738,7 +688,7 @@ _.Zones =
 						{"pop"},	-- Discard the Item Set Header and acquire the children.
 						{"is", "itemID" },	-- Select the Items.
 						{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.
-						
+
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},

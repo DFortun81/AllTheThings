@@ -1,12 +1,12 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
-			n(-4, {		-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(11261),		-- Adventurer of Azsuna
 				ach(10994, {	-- A Glorious Campaign
 					cl(PRIEST, {
@@ -44,7 +44,7 @@ _.Zones =
 									42137,	-- Champion: Yalia Sagewhisper
 									42138,	-- Champion: Zabra Hexx
 								},
-								["classes"] = { 5 },
+								["classes"] = { PRIEST },
 								["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
 							}),
 							q(43374, {	-- Murloc Mind Control

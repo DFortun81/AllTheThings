@@ -15,6 +15,18 @@ _.Zones =
 						i(128690),	-- Ashmaw Cub (PET!)
 					},
 				}),
+				q(46079, {	-- Aid on the Front Lines
+					["sourceQuests"] = {
+						47006,	-- Holy: The Bradensbrook Investigation, Paladin
+						46078,	-- Holy: The Bradensbrook Investigation, Priest
+						47005,	-- Mistweaver: The Bradensbrook Investigation
+						47004,	-- Restoration: The Bradensbrook Investigation, Druid
+						47003,	-- Restoration: The Bradensbrook Investigation, Shaman
+					},
+					["provider"] = { "n", 118752 },	-- Mayor Heathrow
+					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
+					["lvl"] = 110,
+				}),
 				q(42883, {	-- All Grell Broke Loose
 					["coord"] = { 66.6, 77.1, 641 },
 					["provider"] = { "n", 109631 },	-- Old Grizzleback
@@ -147,6 +159,12 @@ _.Zones =
 						i(132320),	-- Varethos' Frozen Heart
 						i(132323),	-- Varethos' Last Breath
 					},
+				}),
+				q(46106, {	-- Cutting off the Heads
+					["sourceQuests"] = { 46082 }, -- Shadowsong's Return
+					["provider"] = { "n", 118947 },	-- Commander Jarod Shadowsong
+					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
+					["lvl"] = 110,
 				}),
 				q(40567, {	-- Darkheart Thicket: Enter the Nightmare
 					["sourceQuests"] = { 38743 },	-- The Fate of Val'sharah
@@ -384,6 +402,12 @@ _.Zones =
 					["coord"] = { 56.7, 54.4, 641 },
 					["cr"] = 92802,	-- Gravax the Desecrator
 				}),
+				q(39431, {	-- Mending the Filter
+					["provider"] = { "o", 249211 },	-- Torn Shaldorei Silk
+					["coord"] = { 54.3, 54.6, 641 },
+					["requireSkill"] = ALCHEMY,
+					["sourceQuests"] = { 39337 },	-- Forlorn Filter
+				}),
 				q(42857, {	-- Moist Around the Hedges
 					["coord"] = { 66.7, 75.7, 641 },
 				}),
@@ -409,6 +433,12 @@ _.Zones =
 					["sourceQuests"] = { 38143 },	-- Awakening the Archdruid
 					["coord"] = { 60.7, 19.1, 643 },	-- Sleeper's Barrow
 					["provider"] = { "n", 91223 },	-- Koda Steelclaw
+				}),
+				q(46080, {	-- Quieting the Spirits
+					["sourceQuests"] = { 46082 }, -- Shadowsong's Return
+					["provider"] = { "n", 118954 },	-- Commander Jarod Shadowsong
+					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
+					["lvl"] = 110,
 				}),
 				q(38684, {	-- Reading the Leaves
 					["sourceQuests"] = { 38675 },	-- Heart of the Nightmare (Horde)
@@ -446,6 +476,12 @@ _.Zones =
 					["coord"] = { 51.4, 56.9, 641 },
 					["provider"] = { "n", 92697 },	-- Isoraen Nightstar
 				}),
+				q(46082, {	-- Shadowsong's Return
+					["sourceQuests"] = { 46079 }, -- Aid on the Front Lines
+					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
+					["provider"] = { "n", 118752 },	-- Mayor Heathrow
+					["lvl"] = 110,
+				}),
 				q(39117, {	-- Shriek No More
 					["sourceQuests"] = { 38643 },	-- A Village in Peril
 					["coord"] = { 37.1, 58.4, 641 },
@@ -473,13 +509,12 @@ _.Zones =
 					["provider"] = { "n", 91066 },	-- Elothir
 				}),
 				q(46107, {	-- Source of the Corruption
-					["classes"] = {
-						DRUID,		-- Restoration
-						MONK,		-- Mistweaver
-						PALADIN,	-- Holy
-						PRIEST,		-- Holy
-						SHAMAN,		-- Restoration
+					["sourceQuests"] = {
+						46106,	-- Cutting off the Heads
+						46080,	-- Quieting the Spirits
 					},
+					["provider"] = { "n", 118954 },	-- Commander Jarod Shadowsong
+					["classes"] = { DRUID, MONK, PRIEST, PALADIN, SHAMAN },	-- Legion healing classes
 					["lvl"] = 110,
 				}),
 				q(40221, {	-- Spread Your Lunarwings and Fly
@@ -587,6 +622,13 @@ _.Zones =
 					["coord"] = { 57.8, 38.6, 641 },
 					["provider"] = { "n", 104799 },	-- Tyrande Whisperwind
 				}),
+				q(46200, {	-- The Matter Resolved... For Now...
+					["sourceQuests"] = { 46107 },	-- Source of the Corruption
+					["provider"] = { "n", 118954 },	-- Night Elf Warrior
+					["classes"] = { DRUID, MONK, PALADIN, PRIEST, SHAMAN },	-- Legion healing classes
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
+				}),
 				q(40573, {	-- The Nightmare Lord
 					["sourceQuests"] = { 39384 },	-- The Corruptor
 					["coord"] = { 65.1, 67.0, 641 },
@@ -669,6 +711,12 @@ _.Zones =
 						i(130003),	-- Thornbrace Grips
 						i(121600),	-- Thornbrace Waistguard
 					},
+				}),
+				q(44112, {	-- Trading for Dreams
+					["provider"] = { "n", 93974 }, -- Leyweaver Erenyi
+					["coord"] = { 70.5, 46.4, 641 },
+					["requireSkill"] = ALCHEMY,
+					["sourceQuests"] = { 39431 },	-- Mending the Filter
 				}),
 				q(42747, {	-- Where the Wildkin Are
 					["coord"] = { 59.4, 84.1, 641 },

@@ -22,6 +22,20 @@ _.Zones =
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
 					["u"] = NEVER_IMPLEMENTED,
 				}),
+				q(31376, {	-- Attack At The Temple of the Jade Serpent (A)
+					["sourceQuests"] = { 31512 },	-- A Witness to History
+					["provider"] = { "n", 64032 },	-- Sage Whiteheart
+					["isDaily"] = true,
+					["coord"] = { 84.6, 63.6, 390 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31377, {	-- Attack At The Temple of the Jade Serpent (H)
+					["sourceQuests"] = { 31511 },	-- A Witness to History
+					["provider"] = { "n", 64001 },	-- Sage Lotusbloom
+					["isDaily"] = true,
+					["coord"] = { 62.7, 23.3, 390 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(30642, {	-- Battle Axe of the Thunder King
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -59,6 +73,26 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "n", 58920 },	-- Kun Autumnlight
 				}),
+				q(31378, {	-- Challenge at the Temple of the Red Crane
+					["sourceQuests"] = { 31512 },	-- A Witness to History
+					["provider"] = { "n", 64032 },	-- Sage Whiteheart
+					["isDaily"] = true,
+					["coord"] = { 84.6, 63.6, 390 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31382, {	-- Defense At Niuzao Temple
+					["sourceQuests"] = { 31512 },	-- A Witness to History
+					["provider"] = { "n", 64032 },	-- Sage Whiteheart
+					["isDaily"] = true,
+					["coord"] = { 84.6, 63.6, 390 },
+					["races"] = ALLIANCE_ONLY
+				}),
+				q(31876, {	-- The Inkmasters of the Arboretum
+					["requireSkill"] = INSCRIPTION,
+					["provider"] = { "n", 64691 },	-- Lorewalker Huynh
+					["isWeekly"] = true,
+					["coord"] = { 82.0, 29.4, 390 },
+				}),
 				q(33231, {	-- Journey to the Timeless Isle
 					["hordeQuestID"] = 33232,	-- Journey to the Timeless Isle
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
@@ -75,6 +109,16 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "n", 58920 },	-- Kun Autumnlight
 				}),
+				q(32246, {	-- Meet the Scout (A)
+					["provider"] = { "n", 64610 },	-- Lyalia
+					["coord"] = { 84.0, 58.7, 390 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32249, {	-- Meet the Scout (H)
+					["provider"] = { "n", 64566 },	-- Sunwalker Dezco
+					["coord"] = { 62.8, 27.9, 390 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(30261, {	-- Roll Club: Serpent's Spine
 					["coord"] = { 18.1, 63.5, 390 },
 					["isDaily"] = true,
@@ -89,6 +133,14 @@ _.Zones =
 					["coord"] = { 18.4, 71.5, 390 },
 					["isDaily"] = true,
 					["provider"] = { "n", 58743 },	-- Yumi Goldenpaw
+				}),
+				q(31369, {	-- The Anglers
+				--	if this quest is available, it requires fishing and never having approached the anglers' wharf on the character at all.  as soon as you approach (with fishing unlocked) you hit neutral with the faction.  (TODO: if someone tests this under those conditions and this breadcrumb is still unavailable, it needs to be marked removed)
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 64033 },	-- Master Angler Karu
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 86.5, 60.2, 390 },
+					["u"] = REMOVED_FROM_GAME,	-- A fresh Level10 with Fishing cant accept it and similar comments on WoWhead suggest its removed since 5.1.
 				}),
 				q(31103, {	-- The Ballad of Liu Lang
 					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01Ballad of Liu Lang|r achievement.",
@@ -140,7 +192,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(32815, {	-- The Old Seer
-					["sourceQuest"] = 32807,	-- The Warchief and the Darkness
+					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
 				}),
 				q(30280, {	-- The Thunder Below
@@ -149,7 +201,7 @@ _.Zones =
 					["provider"] = { "n", 58919 },	-- Anji Autumnlight
 				}),
 				q(32807, {	-- The Warchief and the Darkness
-					["sourceQuest"] = 32806,	-- The King and the Council
+					["sourceQuests"] = { 32806 },	-- The King and the Council
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
 					["coord"] = { 83.2, 29.6, 390 },
 					["maps"] = { 520, 521 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
@@ -167,22 +219,18 @@ _.Zones =
 					["provider"] = { "n", 64566 },	-- Sunwalker Dezco
 				}),
 				q(31380, {	-- Trial At The Temple of the White Tiger (A)
-					["coord"] = { 84.6, 63.6, 390 },
-					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 31512 },	-- A Witness to History
 					["provider"] = { "n", 64032 },	-- Sage Whiteheart
 					["isDaily"] = true,
+					["coord"] = { 84.6, 63.6, 390 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31381, {	-- Trial At The Temple of the White Tiger (H)
-					["coord"] = { 62.7, 23.3, 390 },
-					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 31511 },	-- A Witness to History
 					["provider"] = { "n", 64001 },	-- Sage Lotusbloom
 					["isDaily"] = true,
-				}),
-				q(32257, {	-- Voice of the Gods -- granted "The Voice of the Gods" for "Dominance Offensive Campaign"
-					["coord"] = { 20.9, 15.5, 390 },
+					["coord"] = { 62.7, 23.3, 390 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 67834 },	-- Fanlyr Silverthorn
-					["sourceQuest"] = 32242,	-- Buried Secrets
 				}),
 				q(33134, {	-- Warforged Seals (A)
 					["repeatable"] = true,
@@ -199,9 +247,6 @@ _.Zones =
 					["lvl"] = 85,
 				}),
 				--[[
-				q(31382, {	-- Defense At Niuzao Temple
-					["races"] = ALLIANCE_ONLY
-				}),
 				q(31383, {	-- Defense At Niuzao Temple
 					["races"] = HORDE_ONLY
 				}),

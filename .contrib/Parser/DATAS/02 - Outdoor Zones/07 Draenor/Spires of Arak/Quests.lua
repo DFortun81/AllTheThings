@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -58,7 +59,7 @@ _.Zones =
 							["provider"] = { "n", 83900 },	-- Hulda Shadowblade
 						}),
 						q(37329, {	-- Not Here, Not Now
-							["sourceQuests"] = 37296,	-- A Lack of Wasps
+							["sourceQuests"] = { 37296 },	-- A Lack of Wasps
 							["coord"] = { 43.8, 48.9, 542 },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 83463 },	-- Dusk-Seer Irizzar
@@ -132,7 +133,7 @@ _.Zones =
 							["provider"] = { "n", 83903 },	-- Dark Ranger Velonara
 						}),
 						q(37328, {	-- Not Here, Not Now
-							["sourceQuests"] = 37296,	-- A Lack of Wasps
+							["sourceQuests"] = { 37296 },	-- A Lack of Wasps
 							["coord"] = { 43.8, 48.9, 542 },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 83463 },	-- Dusk-Seer Irizzar
@@ -219,13 +220,13 @@ _.Zones =
 						["provider"] = { "n", 82786 },	-- Trixxy Weldblast
 					}),
 					q(37331, {	-- Not Here, Not Now
-						["sourceQuests"] = 37296,	-- A Lack of Wasps
+						["sourceQuests"] = { 37296 },	-- A Lack of Wasps
 						["coord"] = { 43.9, 48.8, 542 },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 83463 },	-- Dusk-Seer Irizzar
 					}),
 					q(37330, {	-- Not Here, Not Now
-						["sourceQuests"] = 37296,	-- A Lack of Wasps
+						["sourceQuests"] = { 37296 },	-- A Lack of Wasps
 						["coord"] = { 43.9, 48.8, 542 },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 83463 },	-- Dusk-Seer Irizzar
@@ -338,7 +339,7 @@ _.Zones =
 					["provider"] = { "n", 83463 },	-- Dusk-Seer Irizzar
 				}),
 				q(35339, {	-- A Parting Favor
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						35329,	-- I See Dead People (A)
 						35339,	-- I See Dead People (H)
 					},
@@ -1231,7 +1232,7 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 				}),
 				q(35340, {	-- What Happened Here?
-					["u"] = 1
+					["u"] = NEVER_IMPLEMENTED
 				}),
 				q(35295, {	-- What's Theirs is Ours
 					["sourceQuests"] = { 35277 },	-- Orders, Commander?

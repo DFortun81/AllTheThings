@@ -1,13 +1,14 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(QUESTS, {	-- [Finalized]
-			--	NEED MAIL AZERITE REWARDS FOR "STORM'S JUDGMENT" QUEST.
-			--	NEED MAIL AZERITE REWARDS FOR "STORM'S END" QUEST.
+				--	NEED MAIL AZERITE REWARDS FOR "STORM'S JUDGMENT" QUEST.
+				--	NEED MAIL AZERITE REWARDS FOR "STORM'S END" QUEST.
 				q(50616, {	-- A Bit of a Bind
 					["sourceQuests"] = { 49818 },	-- Trouble at Fort Daelin
 					["provider"] = { "n", 131002 },	-- Lieutenant Bauer
@@ -418,7 +419,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50622, {	-- Deal's Off
-				--	according to wowhead you can pick this up from two separate NPCs.  i had done the goldfield's war/golden fields forever quests already, before finishing the chain that ends with 'farming stimulator,' so you might be able to pick it up from either 'farmer' depending on which of these chains you finish second.  the quest text says 'there's only one farm left,' so it'd make sense writing-wise if you had to complete the other two farms first.
+					--	according to wowhead you can pick this up from two separate NPCs.  i had done the goldfield's war/golden fields forever quests already, before finishing the chain that ends with 'farming stimulator,' so you might be able to pick it up from either 'farmer' depending on which of these chains you finish second.  the quest text says 'there's only one farm left,' so it'd make sense writing-wise if you had to complete the other two farms first.
 					["sourceQuests"] = {
 						50136,	-- Farming Stimulator
 					--	50088,	-- Golden Fields Forever (possibly required)
@@ -529,7 +530,7 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(51540, {	-- Explosive Situation
-				--	SQ needs confirmation
+					--	SQ needs confirmation
 					["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
 					["provider"] = { "o", 290138 },	-- Bot Buster Bomb
 					["coord"] = { 37.8, 28.5, 942 },
@@ -610,7 +611,7 @@ _.Zones =
 					["coord"] = { 78.6, 54.8, 942 },
 				}),
 				q(49886, {	-- Follow Your Nose
-				--	UNKNOWN SOURCE.  unavailable prior to doing BFA/zone intro.  first noticed after doing 'heavy artillery' but could just require zone intro.
+					--	UNKNOWN SOURCE.  unavailable prior to doing BFA/zone intro.  first noticed after doing 'heavy artillery' but could just require zone intro.
 					["provider"] = { "n", 131656 },	-- Houndmaster Archibald
 					["coord"] = { 51.0, 70.1, 942 },
 					["races"] = ALLIANCE_ONLY,
@@ -705,7 +706,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51726, {	-- Get Out of Here
-				--	unknown SQ.  picked up after picking up "having a blast"
+					--	unknown SQ.  picked up after picking up "having a blast"
 					["provider"] = { "n", 138924 },	-- Holger Nash
 					["coord"] = { 67.5, 38.6, 1182 },	-- Saltstone Mine
 					["races"] = ALLIANCE_ONLY,
@@ -776,7 +777,7 @@ _.Zones =
 					},
 				}),
 				q(51711, {	-- Having a Blast
-				--	unknown SQ.  possibly #50909, 'never outgunned'?
+					--	unknown SQ.  possibly #50909, 'never outgunned'?
 					["provider"] = { "n", 138735 },	-- Felecia Gladstone
 					["coord"] = { 46.9, 47.7, 942 },
 					["races"] = ALLIANCE_ONLY,
@@ -1087,7 +1088,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51554, {	-- Reloading
-				--	may also require 'smells like trouble' and 'dangerous game'
+					--	may also require 'smells like trouble' and 'dangerous game'
 					["sourceQuests"] = { 50909 },	-- Never Outgunned
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 135874 },	-- Lea Martinel
@@ -1123,7 +1124,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50417, {	-- Ruin Has Come
-				--	unsure if this has any SQs or if it just requires being level 120.
+					--	unsure if this has any SQs or if it just requires being level 120.
 					["provider"] = { "o", 281348 },	-- Crumbling Letter
 					["coords"] = {
 						{ 59.4, 68.3, 942 },	-- Alliance
@@ -1222,8 +1223,18 @@ _.Zones =
 						i(155186),	-- Darkwater Shoulderpads
 						i(155177),	-- Dread Corsair Greathelm
 						i(155187),	-- Dread Corsair Shoulderplates
+						i(175305),	-- Darkwater Hood (no azerite version)
+						i(175326),	-- Darkwater Shoulderpads (no azerite version)
+						i(175302),	-- Dread Corsair Greathelm (no azerite version)
+						i(175327),	-- Dread Corsair Shoulderplates (no azerite version)
 						i(155178),	-- Tidespeaker Circlet
 						i(155188),	-- Tidespeaker Mantle
+						i(175303),	-- Tidespeaker Circlet (no azerite version)
+						i(175328),	-- Tidespeaker Mantle (no azerite version)
+						i(155179),	-- Stormchaser Coif
+						i(175304),	-- Stormchaser Coif (no azerite version)
+						i(155189),	-- Stormchaser Pauldrons	
+						i(175329),	-- Stormchaser Pauldrons (no azerite version)
 					},
 				}),
 				q(49997, {	-- Storm's Judgment
@@ -1240,8 +1251,18 @@ _.Zones =
 						i(160878),	-- Darkwater Shoulderguards
 						i(155166),	-- Dread Corsair Breastplate
 						i(160880),	-- Dread Corsair Pauldrons
-						i(160877),	-- Tidespeaker Amice
-						i(155185),	-- Tidespeaker Vestments
+						i(175342),	-- Tidespeaker Amice
+						i(175365),	-- Tidespeaker Vestments
+						i(175364),	-- Darkwater Tunic (no azerite version)
+						i(175343),	-- Darkwater Shoulderguards (no azerite version) 
+						i(175362),	-- Dread Corsair Breastplate (no azerite version)
+						i(175345),	-- Dread Corsair Pauldrons (no azerite version)
+						i(160877),	-- Tidespeaker Amice (no azerite version)
+						i(155185),	-- Tidespeaker Vestments (no azerite version)
+						i(160879),	-- Stormchaser Shoulderguards
+						i(175344),	-- Stormchaser Shoulderguards (no azerite version)
+						i(155167),	-- Stormchaser Chainmail
+						i(175363),	-- Stormchaser Chainmail (no azerite version)
 					},
 				}),
 				q(50611, {	-- Storm's Vengeance
@@ -1258,7 +1279,7 @@ _.Zones =
 					},
 				}),
 				q(53045, {	-- Surveying the Wharf
-				--	may be a breadcrumb.  if it is, its follow-up ("Deadliest Catch: Reel Big Fish") has an unknown SQ, possibly "From the Depths"
+					--	may be a breadcrumb.  if it is, its follow-up ("Deadliest Catch: Reel Big Fish") has an unknown SQ, possibly "From the Depths"
 					["sourceQuests"] = { 49831 },	-- From the Depths
 					["provider"] = { "n", 131001 },	-- Lieutenant Harris
 					["coord"] = { 34.7, 47.5, 942 },
@@ -1272,7 +1293,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51343, {	-- Swimming Lessons
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						49832,	-- An Illegible Scroll
 						50797,	-- A Turtle's Invitation
 					},
@@ -1281,10 +1302,10 @@ _.Zones =
 				}),
 				q(50368, {	-- Terror of the Kraul
 					["sourceQuests"] = {
-					--	may also require 50340 'steal them back'.  DOES NOT REQUIRE 'TOTEMS, TOTEMS, TOTEMS;' i picked it up before turning that one in.
+						--	may also require 50340 'steal them back'.  DOES NOT REQUIRE 'TOTEMS, TOTEMS, TOTEMS;' i picked it up before turning that one in.
 						50367,	-- Anger in a Bottle (didn't appear until i turned this in, in addition to 'run for the hills' + 'war pigs')
 						50363,	-- War Pigs
-						50365,	-- Run For the Hills 
+						50365,	-- Run For the Hills
 					},
 					["provider"] = { "n", 133953 },	-- Sergeant Calvin
 					["coord"] = { 46.7, 73.8, 942 },

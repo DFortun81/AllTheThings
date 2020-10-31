@@ -1,13 +1,14 @@
----------------------------------------------------
+-------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
----------------------------------------------------
+-------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
-		cl(9, {	-- Dreadscar Rift (Warlock)
-			["classes"] = { 9 },	-- Warlock
+		cl(WARLOCK, {
+			["classes"] = { WARLOCK },
 			["mapID"] = 717,	-- Dreadscar Rift (Warlock)
-			["maps"] = 718,	-- Dreadscar Rift (scenario version at the beginning of class campaign)
+			["maps"] = { 718 },	-- Dreadscar Rift (scenario version at the beginning of class campaign)
 			["lvl"] = 98,
 			["g"] = {
 				gt(366, {	-- Demonic Offering Class Hall Ability
@@ -64,21 +65,24 @@ _.ExpansionFeatures =
 				n(QUESTS, {
 					q(44089, {	-- A Greater Arsenal
 						["sourceQuests"] = { 43984 },	-- The Tome Opens Again
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 37.6, 31.9, 717 },
 						["lvl"] = 102,
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(41759, {	-- An Unlikely Ally
 						["sourceQuests"] = { 42097 },	-- Searching the Archives
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 65.9, 47.0, 717 },
 						["lvl"] = 103,
 						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 					}),
+					q(45989, {	-- An Urgent Warning
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(41750, {	-- Champion: Calydus
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 37.6, 31.8, 717 },
 						["lvl"] = 101,
 						["provider"] = { "n", 101097 },	-- Calydus
@@ -88,7 +92,7 @@ _.ExpansionFeatures =
 					}),
 					q(41748, {	-- Champion: Ritssyn Flamescowl
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 65.4, 47.3, 717 },
 						["lvl"] = 101,
 						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
@@ -102,7 +106,7 @@ _.ExpansionFeatures =
 							43984,	-- The Tome Opens Again (if this artifact is chosen second)
 							44089,	-- A Greater Arsenal (if this artifact is picked last)
 						},
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 37.7, 31.8, 717 },
 						["lvl"] = 98,
 						["provider"] = { "n", 101097 },	-- Calydus
@@ -118,31 +122,34 @@ _.ExpansionFeatures =
 							41750,	-- Champion: Calydus
 							41748,	-- Champion: Ritssyn Flamescowl
 						},
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 66.3, 46.2, 717 },
 						["lvl"] = 101,
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
+					}),
+					q(45990, {	-- Investigate the Broken Shore
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(46131, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(40823, {	-- Rebuilding the Council
 						["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 37.7, 31.8, 717 },
 						["lvl"] = 98,
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(41797, {	-- Recruiting The Troops
 						["sourceQuests"] = { 42603 },	-- Information at Any Cost
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 66.3, 46.2, 717 },
 						["lvl"] = 101,
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 					}),
 					q(42608, {	-- Rise, Champions
 						["sourceQuests"] = { 44099 },	-- A Mutual Friend
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 37.6, 31.8, 717 },
 						["lvl"] = 101,
 						["provider"] = { "n", 101097 },	-- Calydus
@@ -153,28 +160,28 @@ _.ExpansionFeatures =
 							43984,	-- The Tome Opens Again (if this artifact is chosen second)
 							44089,	-- A Greater Arsenal (if this artifact is picked last)
 						},
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 37.7, 31.8, 717 },
 						["lvl"] = 98,
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(42097, {	-- Searching the Archives
 						["sourceQuests"] = { 42601 },	-- Tech It Up A Notch
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 65.6, 47.2, 717 },
 						["lvl"] = 101,
 						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 					}),
 					q(42601, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 42602 },	-- Troops in the Field
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 66.3, 46.2, 717 },
 						["lvl"] = 101,
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 					}),
 					q(40824, {	-- The Path of the Dreadscar
 						["sourceQuests"] = { 40823 },	-- Rebuilding the Council
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 31.2, 58.8, 717 },
 						["lvl"] = 98,
 						["provider"] = { "n", 101921 },	-- Ritssyn Flamescowl
@@ -184,7 +191,7 @@ _.ExpansionFeatures =
 					}),
 					q(42602, {	-- Troops in the Field
 						["sourceQuests"] = { 41797 },	-- Recruiting The Troops
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 66.3, 46.2, 717 },
 						["lvl"] = 101,
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
@@ -198,7 +205,7 @@ _.ExpansionFeatures =
 							43984,	-- The Tome Opens Again (if this artifact is chosen second)
 							44089,	-- A Greater Arsenal (if this artifact is picked last)
 						},
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { 37.7, 31.8, 717 },
 						["lvl"] = 98,
 						["provider"] = { "n", 101097 },	-- Calydus
@@ -210,7 +217,7 @@ _.ExpansionFeatures =
 
 --[[
 						["sourceQuests"] = {  },	--
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["coord"] = { , , 717 },
 						["lvl"] = ,
 						["provider"] = { "n",  },	--
@@ -225,7 +232,6 @@ _.ExpansionFeatures =
 					q(41767),	-- A Daring Rescue
 					q(43414),	-- A Hero's Weapon
 					q(44099),	-- A Mutual Friend
-					q(45989),	-- An Urgent Warning
 					q(45021),	-- Answers Unknown
 					q(42098),	-- Black Rook Hold: An Unclaimed Soul
 					q(46237),	-- Bloodbringer's Missive
@@ -252,7 +258,6 @@ _.ExpansionFeatures =
 					q(46240),	-- Give Me Fuel, Give Me Fire
 					q(46238),	-- If You Build It
 					q(45794),	-- Informing the Council
-					q(45990),	-- Investigate the Broken Shore
 					q(42103),	-- Let it Feed
 					q(41793),	-- Lulubelle on Loan
 					q(41769),	-- Mad Ernie the Alchemist
@@ -278,7 +283,7 @@ _.ExpansionFeatures =
 					q(44682),	-- Unparalleled Power
 					q(46243, {	-- The Wrathsteed of Xoroth
 						["lvl"] = 110,
-						["classes"] = {9},
+						["classes"] = { WARLOCK },
 						["g"] = {
 							{ ["mountID"] = 232412 },	-- Netherlord's Chaotic Wrathsteed
 						},
@@ -345,7 +350,7 @@ _.ExpansionFeatures =
 				n(VENDORS, {
 					n(101097, {	-- Calydus
 						["sourceQuests"] = { 46243 },	-- The Wrathsteed of Xoroth
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["g"] = {
 							i(143637, {	-- Hellblazing Reins of the Brimstone Wrathsteed (MOUNT!)
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources

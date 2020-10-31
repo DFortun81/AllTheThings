@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(15, {	-- Badlands
-			n(-4, {	-- Achievement
+			n(ACHIEVEMENTS, {
 				ach(5444),	-- Ready, Set, Goat!
 				ach(4900, {	-- Badlands Quests
 					crit(1, {	-- Rhea

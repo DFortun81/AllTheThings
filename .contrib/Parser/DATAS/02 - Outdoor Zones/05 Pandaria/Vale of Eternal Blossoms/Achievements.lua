@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(390, {	-- Vale of Eternal Blossoms
-			n(-4, {		-- Achievement
+			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -19,15 +20,6 @@ _.Zones =
 				ach(7318),	-- A Taste of History
 				ach(7323),	-- Collateral Damage
 				ach(7320),	-- Dog Pile
-				ach(7929, {	-- Dominance Offensive Campaign
-					["collectible"] = false,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(2, {	-- The Voice of the Gods
-							["sourceQuest"] = 32257,	-- Voice of the Gods
-						}),
-					},
-				}),
 				ach(7317, {	-- One Many Army (Vale of Eternal Blossoms)
 					crit(5),	-- Aetha
 					crit(14),	-- Bai-Jin the Butcher

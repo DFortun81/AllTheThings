@@ -7,7 +7,7 @@ _.GroupFinder =
 	tier(2, {	-- Burning Crusade
 		i(156682, {	-- Otherworldy Satchel of Helpful Goods
 			["lvl"] = 60,
-			-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 58 - ??? range.|r", (NOTE: unsure about start/end points -- I *think* but am not positive that they opened at 58 and I'm not sure when they become unavailable.  Still available for a 70 character.  Commenting this out until confirmation.
+			-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 10-50 range.|r",
 			["g"] = {
 				i(51969),	-- Enumerated Shoulders*
 				i(51972),	-- Enumerated Bracers*

@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -194,6 +194,7 @@ _.Zones =
 										}),
 									},
 								}),
+								i(173736),	-- Layered Information Kernel of E-steam (looted on Alliance -- is there one for each faction, or just two of the same rep token?)
 								i(163621, {	-- Rusted Horde Insignia
 									["description"] = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
 									["coord"] = { 58, 62.6, 862 },
@@ -725,6 +726,7 @@ _.Zones =
 									i(164271),	-- Plundered Torga Blessed Bulwark
 								}),
 								n(-319, {	-- Weapons
+									i(164301),	-- Plundered Barb-Edged Dagger
 									i(164270),	-- Plundered Berserker's Poleaxe
 									i(164364),	-- Plundered Carapace Linked Longsword
 									i(164275),	-- Plundered Desert Hexxer
@@ -1209,12 +1211,12 @@ _.Zones =
 						}),
 						i(162623, {	-- Tome of Hex: Zandalari Tendonripper
 							["spellID"] = 277778,	-- Hex(Zandalari Tendonripper)
-							["classes"] = { 7 },	-- Shaman
+							["classes"] = { SHAMAN },
 							["cost"] = 18000000,	-- 1,800g
 						}),
 						i(162625, {	-- Tome of Polymorph: Direhorn
 							["spellID"] = 277787,	-- Polymorph(Direhorn)
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 							["cost"] = 18000000,	-- 1,800g
 						}),
 						i(161524, {	-- Torcali's Grips of the Bounty
@@ -1355,6 +1357,7 @@ _.Zones =
 							["collectible"] = false,
 						}),
 						i(163779, {	-- Lil' War Machine (PET!)
+							["races"] = HORDE_ONLY,
 							["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 						}),
 						i(161550, {	-- Lustful Warbringer's Legplates
@@ -1455,9 +1458,6 @@ _.Zones =
 					["g"] = {
 						i(163568, {	-- Lost Platysaur (PET!)
 							["cost"] = 1000000000,	-- 100,000g
-						}),
-						i(163042, {	-- Reins of the Mighty Caravan Brutosaur (MOUNT!)
-							["cost"] = 50000000000,	-- 5,000,000g
 						}),
 						i(163589, {	-- Reins of the Palehide Direhorn (MOUNT!)
 							["cost"] = 5000000000,	-- 500,000g

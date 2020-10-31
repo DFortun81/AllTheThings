@@ -8,7 +8,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["mapID"] = 325,
 		["coord"] = { 76.76, 84.44, 249 },	-- Vortex Pinnacle, Uldum
 		["groups"] = {
-			n(QUESTS, { 
+			n(QUESTS, {
 				q(28779, {	-- A Long Way from Home
 					["provider"] = { "n", 49943 },	-- Itesh
 					["groups"] = {
@@ -119,7 +119,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["lvl"] = 85,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(-4, {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(5289),	-- Extra Credit Bonus Stage
 					}),
 					n(ZONEDROPS, {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(77, {	-- Felwood
-			n(-6013, {	-- Factions
+			n(FACTIONS, {
 				faction(576, {	-- Timbermaw Hold
 					["creatureID"] = 11558,	-- Kernda
 					["g"] = {

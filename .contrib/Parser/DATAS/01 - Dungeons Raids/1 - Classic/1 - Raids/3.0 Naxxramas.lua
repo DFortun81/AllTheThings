@@ -289,7 +289,7 @@ _.Instances = { tier(1, {	-- Classic
 								un(REMOVED_FROM_GAME, i(22701)),	-- Polar Leggings
 							},
 						},
-						cl(1, {	-- Warrior
+						cl(WARRIOR, {
 							{
 								["questID"] = 9037,	-- Dreadnaught Helmet
 								["sourceQuest"] = 9033,	-- Echoes of War
@@ -371,7 +371,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							},
 						}),
-						cl(2, {	-- Paladin
+						cl(PALADIN, {
 							{
 								["questID"] = 9045,	-- Redemption Headpiece
 								["sourceQuest"] = 9033,	-- Echoes of War
@@ -453,7 +453,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							},
 						}),
-						cl(3, {	-- Hunter
+						cl(HUNTER, {
 							{
 								["questID"] = 9056,	-- Cryptstalker Headpiece
 								["sourceQuest"] = 9033,	-- Echoes of War
@@ -535,7 +535,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							},
 						}),
-						cl(4, {	-- Rogue
+						cl(ROGUE, {
 							{
 								["questID"] = 9079,	-- Bonescythe Helmet
 								["sourceQuest"] = 9033,	-- Echoes of War
@@ -617,7 +617,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							},
 						}),
-						cl(5, {	-- Priest
+						cl(PRIEST, {
 							{
 								["questID"] = 9113,	-- Circlet of Faith
 								["sourceQuest"] = 9033,	-- Echoes of War
@@ -699,7 +699,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							},
 						}),
-						cl(7, {	-- Shaman
+						cl(SHAMAN, {
 							{
 								["questID"] = 9070,	-- Earthshatter Headpiece
 								["sourceQuest"] = 9033,	-- Echoes of War
@@ -781,7 +781,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							},
 						}),
-						cl(8, {	-- Mage
+						cl(MAGE, {
 							{
 								["questID"] = 9097,	-- Frostfire Circlet
 								["sourceQuest"] = 9033,	-- Echoes of War
@@ -863,7 +863,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							},
 						}),
-						cl(9, {	-- Warlock
+						cl(WARLOCK, {
 							{
 								["questID"] = 9105,	-- Plagueheart Circlet
 								["sourceQuest"] = 9033,	-- Echoes of War
@@ -945,7 +945,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							},
 						}),
-						cl(11, {	-- Druid
+						cl(DRUID, {
 							{
 								["questID"] = 9088,	-- Dreamwalker Headpiece
 								["sourceQuest"] = 9033,	-- Echoes of War

@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(69, {	-- Feralas
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4932, {	-- Feralas Quests
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

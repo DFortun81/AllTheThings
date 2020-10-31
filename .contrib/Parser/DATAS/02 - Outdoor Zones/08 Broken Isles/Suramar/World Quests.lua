@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -62,11 +63,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(28, {	-- Chopped
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(45307, {	-- Claws for Alarm!
 					["lvl"] = 110,
@@ -76,11 +72,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(27, {	-- Clear the Catacombs
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(42151, {	-- Clear the Skies
 					["lvl"] = 110,
@@ -218,11 +209,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(29, {	-- Flummoxed
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(43932, {	-- Forces of Oppression
 					["lvl"] = 110,
@@ -249,31 +235,16 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(8, {	-- Huge Runescale Koi
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41616, {	-- Huge Runescale Koi
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(8, {	-- Huge Runescale Koi
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41617, {	-- Huge Runescale Koi
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(8, {	-- Huge Runescale Koi
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(44805, {	-- In the Thick of It
 					["lvl"] = 110,
@@ -312,31 +283,16 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(3, {	-- Lively Runescale Koi
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41605, {	-- Lively Runescale Koi
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(3, {	-- Lively Runescale Koi
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41604, {	-- Lively Runescale Koi
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(3, {	-- Lively Runescale Koi
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41537, {	-- Lively Starlight Roses
 					["lvl"] = 110,
@@ -352,11 +308,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(31, {	-- Mana Tap
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(42880, {	-- Meeting their Quota
 					["lvl"] = 110,
@@ -479,11 +430,6 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(24, {	-- The Angler Mangler
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(43435, {	-- The Battle Rages On
 					["lvl"] = 110,
@@ -501,11 +447,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(26, {	-- The Master of Pets
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(42082, {	-- The Shattered Locus
 					["lvl"] = 110,
@@ -515,11 +456,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(30, {	-- Threads of Fate
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(44002, {	-- Undersea Survey
 					["lvl"] = 110,
@@ -733,11 +669,6 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(23, {	-- Work Order: Runescale Koi
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41649, {	-- Work Order: Silkweave Slippers
 					["requireSkill"] = TAILORING,
@@ -830,6 +761,9 @@ _.Zones =
 						i(134271),	-- Arcane Defender's Pants
 						i(134273),	-- Arcane Defender's Boots
 					},
+				}),
+				n(-385, {	-- Finger
+					i(140024),	-- Ley-Charged Band
 				}),
 				n(-384, {	-- Neck
 					i(139990),	-- Inspector's Pendant

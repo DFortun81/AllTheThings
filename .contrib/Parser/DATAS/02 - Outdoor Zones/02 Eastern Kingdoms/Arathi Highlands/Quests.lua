@@ -106,8 +106,10 @@ _.Zones =
 				}),
 				q(42535, {	-- Death... and Decay
 					["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
+					["coord"] = { 19.4, 67.3, 14 },
 					["lvl"] = 100,
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 42533, -- The Ruined Kingdom
 				}),
 				q(667,   {	-- Death From Below
 					["u"] = REMOVED_FROM_GAME,
@@ -310,8 +312,10 @@ _.Zones =
 				}),
 				q(42534, {	-- Our Oldest Enemies
 					["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
+					["coord"] = { 19.4, 67.3, 14 },
 					["lvl"] = 100,
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 42533, -- The Ruined Kingdom
 				}),
 				q(26113, {	-- Quae and Kinelory
 					["provider"] = { "n", 2608 },	-- Commander Amaren
@@ -349,15 +353,19 @@ _.Zones =
 				}),
 				q(42536, {	-- Regicide
 					["provider"] = { "n", 108042 },	-- Thassarian
+					["coord"] = { 19.6, 67.0, 14 },
 					["lvl"] = 100,
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuests"] = {
+						42535, -- Death... and Decay
+						42534, -- Our Oldest Enemies
+					},
 				}),
 				q(26430, {	-- Revantusk Village
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 2771 },	-- Drum Fel
 					["coord"] = { 69.0, 34.8, 14 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 26912,	-- The Princess Unleashed (TODO: verify. Didn't see this until after killing Myzrael)
-					["isBreadcrumb"] = true,
 				}),
 				q(26336, {	-- Shakes O'Breen
 					["provider"] = { "n", 2789 },	-- Skuerto
@@ -512,8 +520,10 @@ _.Zones =
 				}),
 				q(42537, {	-- The King Rises
 					["provider"] = { "n", 108042 },	-- Thassarian
+					["coord"] = { 23.4, 61.4, 14 },
 					["lvl"] = 100,
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 42536, -- Regicide
 				}),
 				q(642,   {	-- The Princess Trapped
 					["u"] = REMOVED_FROM_GAME,

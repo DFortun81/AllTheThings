@@ -1,10 +1,11 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.WorldEvents =
 {
 	m(407, {	-- Darkmoon Island
-		n(-4, {		-- Achievements
+		n(ACHIEVEMENTS, {
 			ach(9069, {	-- An Awfully Big Adventure
 				["collectible"] = false,
 				["filterID"] = 101,	-- Battle Pet

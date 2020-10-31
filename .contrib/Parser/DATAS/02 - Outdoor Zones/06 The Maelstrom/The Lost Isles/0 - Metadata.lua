@@ -1,12 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(948, {	-- The Maelstrom
 		m(174, {	-- The Lost Isles
 			["description"] = "|cff66ccffThe Lost Isles are a chain of islands to the south of Azshara that the Bilgewater Cartel goblins reached after their shipwreck. Things get interesting when the orc ship Draka's Fury also crashes. This is a phased area that only leveling goblins can reach.|r",
-			["races"] = { 9 },	-- Goblin
+			["races"] = { GOBLIN },
 			["icon"] = "Interface\\Icons\\achievement_femalegoblinhead",
 			["maps"] = {
 				175,	-- Kaja'mite Cavern

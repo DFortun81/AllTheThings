@@ -1,6 +1,7 @@
 ---------------------------------------------
 --   P E T   J O U R N A L   M O D U L E   --
 ---------------------------------------------
+
 _.PetJournal =
 {
 	pa(237, { 	-- Beast
@@ -9,11 +10,11 @@ _.PetJournal =
 		p(74),				-- Albino Snake
 		p(724),				-- Alpine Foxling
 		p(725),				-- Alpine Foxling Kit
-		un(35, p(1363)),	-- Alterac Brew-Pup
+		un(BLIZZARD_BALANCE, p(1363)),	-- Alterac Brew-Pup
 		p(716),				-- Amethyst Spiderling
 		p(2122),			-- Antoran Bile Larva
 		p(558),				-- Arctic Fox Kit
-		un(35, p(1603)),	-- Argi
+		un(BLIZZARD_BALANCE, p(1603)),	-- Argi
 		p(632),				-- Ash Lizard
 		p(427),				-- Ash Spiderling
 		p(425),				-- Ash Viper
@@ -82,7 +83,7 @@ _.PetJournal =
 		p(2197),			-- Direhorn Hatchling
 		p(1205),			-- Direhorn Runt
 		p(2905),			-- Dodger
-		un(35, p(2623)),	-- Dottie
+		un(BLIZZARD_BALANCE, p(2623)),	-- Dottie
 		p(1952),			-- Dreadmaw
 		p(2406),			-- Drustvar Piglet
 		p(205),				-- Dun Morogh Cub
@@ -143,7 +144,7 @@ _.PetJournal =
 		p(450),				-- Maggot
 		p(1446),			-- Meadowstomper Calf
 		p(2064),			-- Mining Monkey
-		un(35, p(1936)),	-- Mischief
+		un(BLIZZARD_BALANCE, p(1936)),	-- Mischief
 		p(1744),			-- Mist Fox Kit
 		p(422),				-- Moccasin
 		p(428),				-- Molten Hatchling
@@ -250,7 +251,7 @@ _.PetJournal =
 			["races"] = ALLIANCE_ONLY,
 		}),
 		p(405),				-- Tree Python
-		un(35, p(2051)),	-- Twilight
+		un(BLIZZARD_BALANCE, p(2051)),	-- Twilight
 		p(505),				-- Twilight Iguana
 		p(470),				-- Twilight Spider
 		p(2375),			-- Vale Marmot

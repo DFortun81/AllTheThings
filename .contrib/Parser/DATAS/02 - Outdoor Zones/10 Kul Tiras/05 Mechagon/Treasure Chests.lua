@@ -1,40 +1,43 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(1462, {	-- Mechagon
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				n(-851, {	-- Irontide Lockbox
-					i(169872, {	-- Irontide Lockbox Key
-						["description"] = "Key drops from Seaspit and Seaspray mobs in the area, chest has a chance to spawn around the nearby islands.",
-						["coords"] = {		-- Coords need verification as they were just taken from wowhead
-							{ 13.23, 85.85, 1462 },
-							{ 17.7, 78.4, 1462 },
-							{ 18.3, 76.2, 1462 },
-							{ 21, 80, 1462 },
-							{ 23.33, 56.88, 1462 },
-							{ 24.9, 69.2, 1462 },
-							{ 24.1, 84.6, 1462 },
-							{ 25.3, 78.2, 1462 },
-							{ 25.67, 76.05, 1462 },
-							{ 30.77, 59.67, 1462 },
-						},
-						["crs"] = {
-							154491,	-- Chief Curglrrmrgur
-							150937,	-- Seaspit
-							154482,	-- Seaspray Champion
-							153217,	-- Seaspray Forager
-							153218,	-- Seaspray Murloc
-							153219,	-- Seaspray Oracle
-						},
-						["g"] = {
-							i(170146, {	-- Paint Bottle: Nukular Red
-								["questID"] = 56907,									
-							}),
-						},
-					}),
+					["coords"] = {		-- Coords need verification as they were just taken from wowhead
+						{ 13.23, 85.85, 1462 },
+						{ 17.7, 78.4, 1462 },
+						{ 18.3, 76.2, 1462 },
+						{ 21, 80, 1462 },
+						{ 23.33, 56.88, 1462 },
+						{ 24.9, 69.2, 1462 },
+						{ 24.1, 84.6, 1462 },
+						{ 25.3, 78.2, 1462 },
+						{ 25.67, 76.05, 1462 },
+						{ 30.77, 59.67, 1462 },
+					},
+					["g"] = {
+						i(169872, {	-- Irontide Lockbox Key
+							["description"] = "Key drops from Seaspit and Seaspray mobs in the area, chest has a chance to spawn around the nearby islands.",
+							["crs"] = {
+								154491,	-- Chief Curglrrmrgur
+								150937,	-- Seaspit
+								154482,	-- Seaspray Champion
+								153217,	-- Seaspray Forager
+								153218,	-- Seaspray Murloc
+								153219,	-- Seaspray Oracle
+							},
+							["g"] = {
+								i(170146, {	-- Paint Bottle: Nukular Red
+									["questID"] = 56907,
+								}),
+							},
+						}),
+					}
 				}),
 				n(-850, {	-- Mechanized Chest
 					o(325659, {	-- Mechanized Chest
@@ -108,7 +111,7 @@ _.Zones =
 							{ 66.5, 22.5, 1462 },
 							{ 57.3, 22.9, 1462 },	-- Possibly bloat from another chest
 						},
-					}),	
+					}),
 					o(325665, {	-- Mechanized Chest
 						["questID"] = 55553,
 						["isDaily"] = true,
@@ -150,7 +153,7 @@ _.Zones =
 							{ 21.7, 83.0, 1462 },
 							{ 12.2, 85.8, 1462 },
 						},
-					}),				
+					}),
 					i(169850, {	-- Azeroth Mini Pack Mini Pack: Mechagon
 						i(169844, {	-- Azeroth Mini: Overspark
 							crit(4, {	-- Overspark

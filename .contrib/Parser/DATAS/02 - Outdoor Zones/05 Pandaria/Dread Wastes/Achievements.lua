@@ -1,12 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(422, {	-- Dread Wastes
-			n(-4, { 	-- Achievements
-				ach(7312, {		-- Amber is the Color of My Energy (Dread Wastes)
+			n(ACHIEVEMENTS, {
+				ach(7312, {	-- Amber is the Color of My Energy (Dread Wastes)
 					crit(9, {	-- Hisek the Swarmkeeper
 						["sourceQuest"] = 31439,	-- Dropping Our Signal
 					}),
@@ -52,7 +53,15 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(6540, {		-- Dread Haste Makes Dread Waste
+				ach(6716, {	-- Between a Saurok and a Hard Place
+					["collectible"] = false,
+					["g"] = {
+						crit(3, {	-- The Deserters
+							["coord"] = { 67.4, 60.8, 422 },
+						}),
+					},
+				}),
+				ach(6540, {	-- Dread Haste Makes Dread Waste
 					crit(1, {	-- The First Paragons
 						["sourceQuest"] = 31066,	-- A Cry From Darkness
 					}),

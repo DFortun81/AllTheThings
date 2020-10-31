@@ -261,13 +261,6 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
-				q(32460, {	-- Tracking the Thieves
-					["provider"] = { "n", 68651 },	-- Lady Jaina Proudmoore
-					["coord"] = { 39.0, 32.8, 89 },
-					["description"] = "If you leave before completing this quest, you may need to abandon it and pick it near the east gate of Darnassus rather than returning to where you originally picked it up.",
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 81,
-				}),
 				q(1038, {	-- Velinde's Effects
 					["provider"] = { "n", 8026 },	-- Thyn'tel Bladeweaver
 					["coord"] = { 61.8, 39.4, 89 },

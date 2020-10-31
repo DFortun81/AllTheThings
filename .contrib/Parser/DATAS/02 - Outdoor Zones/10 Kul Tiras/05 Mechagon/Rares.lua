@@ -175,9 +175,11 @@ _.Zones =
 					},
 				}),
 				n(151934, {	-- Arachnoid Harvester
+					["description"] = "Both versions of Arachnoid Harvester (the current timeline and alternate timeline) drop the same loot and share a daily lockout.  You can use a Personal Time Displacer to travel to the alternate timeline if Chromie is not in Rustbolt.",
 					["questID"] = 55512,
-					["coord"] = { 52.6, 41.0, 1462 },
 					["isDaily"] = true,
+					["coord"] = { 52.6, 41.0, 1462 },
+					["crs"] = { 154342 },	-- Arachnoid Harvester (alt-time)
 					["g"] = {
 						crit(7, {	-- Arachnoid Harvester
 							["achievementID"] = 13470,	-- Rest in Pistons
@@ -225,6 +227,14 @@ _.Zones =
 					["g"] = {
 						crit(14, {	-- Boggac Skullbash
 							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
+						i(169688, {	-- Vinyl: Gnomeragan Forever
+							["questID"] = 56515,
+							["g"] = {
+								crit(2, {    -- Gnomeregan Forever
+									["achievementID"] = 13686,    -- Junkyard Melomanic
+								}),
+							},
 						}),
 					},
 				}),

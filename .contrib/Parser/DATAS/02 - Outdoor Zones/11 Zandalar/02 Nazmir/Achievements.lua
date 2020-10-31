@@ -1,11 +1,12 @@
---------------------------------------------------
---          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+
 _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(863, {	-- Nazmir
-			n(-4, {		-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(12942),		-- Adventurer of Nazmir
 				ach(13020, {	-- Bow to Your Masters
 					["collectible"] = false,
@@ -123,7 +124,7 @@ _.Zones =
 					["g"] = {
 						crit(1, {	-- Brutosaur of Nazmir Fed
 							["description"] = "Buy Primitive Watermelon from Blind Wunja inside the cave at 34.6, 54.9 and feed it to Goramor.",
-							["coords"] = { 
+							["coords"] = {
 								{ 32.3, 35.3, 863 },	-- Goramor
 								{ 34.6, 54.9, 863 },	-- Blind Wunja
 							},

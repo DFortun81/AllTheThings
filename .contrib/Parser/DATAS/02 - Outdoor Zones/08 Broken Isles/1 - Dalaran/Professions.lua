@@ -105,15 +105,11 @@ _.Zones =
 					q(39566, {	-- The Search for Knowledge
 						["provider"] = { "n", 92458 },	-- Deucus Valdera
 						["classes"] = {	-- not sure if this is a breadcrumb, or if it's mandatory for the classes/races below!
-							12,	-- Demon Hunter
-							5,	-- Priest
-							4,	-- Rogue
+							DEMONHUNTER,
+							PRIEST,
+							ROGUE,
 						},
-						["races"] = {
-							4,	-- Night Elf
-							29,	-- Void Elf
-							22,	-- Worgen
-						},
+						["races"] = { NIGHELF, VOIDELF, WORGEN },
 					}),
 					q(39327, {	-- There's a Scribe for That
 						["sourceQuests"] = { 39390 },	-- A Mysterious Text
@@ -911,7 +907,7 @@ _.Zones =
 						["provider"] = { "n", 97359 },	-- Raethan
 					}),
 					q(40056, {	-- Our New Allies
-						["classes"] = { 12 },
+						["classes"] = { DEMONHUNTER },
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 					}),
 					q(39934, {	-- Our New Allies
@@ -1310,7 +1306,7 @@ _.Zones =
 					}),
 					q(39830, {	-- Hellfire Citadel: Hellfire and Brimstone
 						["coord"] = { 46.1, 26.6, 627 },
-						["classes"] = { 1, 3 },
+						["classes"] = { WARRIOR, HUNTER },
 						["provider"] = { "n", 93189 },	-- Mama Diggs
 						["g"] = {
 							recipe(191970),	-- Infernal Brimstone (Rank 3)
@@ -1318,7 +1314,7 @@ _.Zones =
 					}),
 					q(38807, {	-- Infernal Brimstone Analysis
 						["coord"] = { 46.1, 26.6, 627 },
-						["classes"] = { 2, 3 },
+						["classes"] = { PALADIN, HUNTER },
 						["provider"] = { "n", 93189 },	-- Mama Diggs
 						["g"] = {
 							recipe(184505),	-- Infernal Brimstone (Rank 2)

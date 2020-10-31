@@ -24,7 +24,7 @@ _.Zones =
 							29181,	-- Druids of the Talon
 							29214,	-- The Shadow Wardens
 						},
-						["cost"] = { "c", 416, 125 },	-- 125x Mark of the World Tree
+						["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
 						["g"] = {
 							ach(5866, crit(6)),	-- The Molten Front Offensive / Recruit an armorer
 						},
@@ -79,7 +79,7 @@ _.Zones =
 							29181,	-- Druids of the Talon
 							29214,	-- The Shadow Wardens
 						},
-						["cost"] = { "c", 416, 125 },	-- 125x Mark of the World Tree
+						["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
 						["g"] = {
 							ach(5866, crit(5)),	-- The Molten Front Offensive / Recruit Elderlimb and the ancients
 						},
@@ -88,7 +88,7 @@ _.Zones =
 						["provider"] = { "n", 52135 },	-- Malfurion Stormrage
 						["coord"] = { 47.0, 91.3, 338 },
 						["sourceQuest"] = 29201,	-- Through the Gates of Hell
-						["cost"] = { "c", 416, 150 },	-- 150x Mark of the World Tree
+						["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 						["g"] = {
 							ach(5866, crit(3)),	-- The Molten Front Offensive / Recruit the Druids of the Talon
 						},
@@ -148,7 +148,7 @@ _.Zones =
 							29181,	-- Druids of the Talon
 							29214,	-- The Shadow Wardens
 						},
-						["cost"] = { "c", 416, 125 },	-- 125x Mark of the World Tree
+						["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
 						["g"] = {
 							ach(5866, crit(7)),	-- The Molten Front Offensive / Filling the Moonwell
 						},
@@ -443,7 +443,7 @@ _.Zones =
 						["provider"] = { "n", 52135 },	-- Malfurion Stormrage
 						["coord"] = { 47.0, 91.3, 338 },
 						["sourceQuest"] = 29201,	-- Through the Gates of Hell
-						["cost"] = { "c", 416, 150 },	-- 150x Mark of the World Tree
+						["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 						["g"] = {
 							ach(5866, crit(4)),	-- The Molten Front Offensive / Recruit the Shadow Wardens
 						},

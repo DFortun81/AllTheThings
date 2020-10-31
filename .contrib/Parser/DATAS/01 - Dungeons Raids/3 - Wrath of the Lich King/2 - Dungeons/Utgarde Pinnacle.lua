@@ -7,7 +7,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["lvl"] = 65,
 		["maps"] = { 136, 137 },
 		["groups"] = {
-			n(QUESTS, { 	
+			n(QUESTS, {
 				q(13131,{ 	-- Junk in My Trunk
 					i(44404), 	-- Bauble-Woven Gown
 					i(44405),	-- Exotic Leather Tunic
@@ -144,7 +144,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37055),	-- Silken Amice of the Ymijar
 					i(37379),	-- Skadi's Iron Belt
 					i(157560), 	-- Skadi's Scaled Boots
-					i(37384),	-- Staff of Wayward Principles							
+					i(37384),	-- Staff of Wayward Principles
 				})),
 				cr(26861, e(644, {	-- King Ymiron
 					{	-- Utgarde Pinnacle: King Ymiron

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(371, {	-- The Jade Forest
-			n(-4, {		-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -18,6 +18,14 @@ _.Zones =
 						crit(42, {	-- Whispering Pandaren Spirit
 							["coord"] = { 28.8, 36.0, 371 },
 							["cr"] = 68464,	-- Whispering Pandaren Spirit <Grand Master Pet Tamer>
+						}),
+					},
+				}),
+				ach(6716, {	-- Between a Saurok and a Hard Place
+					["collectible"] = false,
+					["g"] = {
+						crit(1, {	-- The Saurok
+							["coord"] = { 67.7, 29.3, 371 },
 						}),
 					},
 				}),
@@ -40,7 +48,7 @@ _.Zones =
 						["coord"] = { 55.88, 56.84, 371 },
 					}),
 				}),
-				ach(6300, {	-- Upjade Complete [Alliance]
+				ach(6300, {	-- Upjade Complete (A)
 					["races"] = ALLIANCE_ONLY,	-- Alliance
 					["g"] = {
 						crit(1,  {	-- Paw'don Village
@@ -50,16 +58,21 @@ _.Zones =
 							["sourceQuests"] = { 29894 },	-- Spirits of the Water
 						}),
 						crit(3,  {	-- The White Pawn
-						--	["sourceQuests"] = {  },	--
+							["sourceQuests"] = { 29901 },	-- Anduin's Decision
 						}),
 						crit(4,  {	-- Pearlfin Village
-						--	["sourceQuests"] = {  },	--
+							["sourceQuests"] = {
+								29906,	-- Carp Diem
+								29905,	-- Let Them Burn
+							},
 						}),
 						crit(5,  {	-- Dawn's Blossom
 							["sourceQuests"] = {
 								29920,	-- Getting Permission
-								29882,	-- Quill of Stingers
-								-- TODO: this is missing quests. Possibilities:
+								29882,	-- Quill of Stingers (definitely required, attached to criteria on wowhead as 'final quest')
+								29723,	-- The Jade Witch (definitely required, triggered when i turned this in)
+								29865,	-- The Silkwood Road
+								-- TODO: possibly also requires the following quest:
 								-- 29881,	-- The Perfect Color
 							},
 						}),
@@ -80,12 +93,13 @@ _.Zones =
 							["sourceQuests"] = { 30000 },	-- The Jade Serpent
 						}),
 						crit(10, {	-- Nectarbreeze Orchard
+							--	TODO: possibly also requires "Unbound" (#29587), turned in at the same time as Maul Gormal
 							["sourceQuests"] = { 29670 },	-- Maul Gormal
 						}),
 						crit(11, {	-- The Battle for the Forest
 							["sourceQuests"] = { 31362 },	-- Last Piece of the Puzzle
 						}),
-						crit(12, {	-- Overcoming doubt
+						crit(12, {	-- Overcoming Doubt
 							["sourceQuests"] = {
 								31319,	-- Emergency Response (A)
 								30502,	-- Jaded Heart
@@ -94,7 +108,7 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(6534, {	-- Upjade Complete [Horde]
+				ach(6534, {	-- Upjade Complete (H)
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1,  {	-- The Remains of Hellscream's Fist
@@ -112,8 +126,10 @@ _.Zones =
 						crit(5,  {	-- Dawn's Blossom
 							["sourceQuests"] = {
 								29920,	-- Getting Permission
-								29882,	-- Quill of Stingers
-								-- TODO: this is missing quests. Possibilities:
+								29882,	-- Quill of Stingers (definitely required, attached to criteria on wowhead as 'final quest')
+								29723,	-- The Jade Witch (definitely required, triggered when i turned this in)
+								29865,	-- The Silkwood Road
+								-- TODO: possibly also requires the following quest:
 								-- 29881,	-- The Perfect Color
 							},
 						}),

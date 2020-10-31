@@ -1,14 +1,15 @@
 -----------------------------------------------
---     P L A Y E R   V S   P L A Y E R       --
+--      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 _.PVP =
 {
 	n(-304, {	-- Battlegrounds
 		m(1478, {	-- Ashran
 			["achievementID"] = 9102,	-- Ashran Victory
-			["description"] = "|cff66ccffAshran is a 40v40 epic battleground found in eastern Draenor.|r",	
+			["description"] = "|cff66ccffAshran is a 40v40 epic battleground found in eastern Draenor.|r",
 			["g"] = {
-				n(-4, {	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(9102),		-- Ashran Victory
 					{	-- Bounty Hunter
 						["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
@@ -22,7 +23,7 @@ _.PVP =
 							{	-- Blood Elf Ear // Worgen Snout
 								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
 								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-								["criteriaID"] = 2,			-- Blood Elf Ear // Worgen Snout 
+								["criteriaID"] = 2,			-- Blood Elf Ear // Worgen Snout
 							},
 							{	-- Tauren Hoof // Severed Night Elf Head
 								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
@@ -425,6 +426,6 @@ _.PVP =
 					}),
 				}),
 			},
-		}),	
+		}),
 	}),
 };

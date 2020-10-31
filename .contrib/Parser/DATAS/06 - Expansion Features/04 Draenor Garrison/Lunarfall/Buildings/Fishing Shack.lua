@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
@@ -9,7 +10,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-4,  {	-- Achievements
+						n(ACHIEVEMENTS, {
 							ach(7274, {  -- Learning From The Best
 								i(86596), 	-- Nat's Fishing Chair
 							}),
@@ -179,7 +180,7 @@ _.ExpansionFeatures =
 							}),
 						}),
 					},
-				}),	
+				}),
 			}),
 		}),
 	}),

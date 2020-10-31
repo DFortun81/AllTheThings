@@ -43,12 +43,11 @@ _.Instances = { tier(1, {	-- Classic
 						12461,	-- Death Talon Overseer
 					},
 				}),
-				{	-- Draconic Avenger
-					["itemID"] = 19354,	-- Draconic Avenger
+				i(19354, {	-- Draconic Avenger
 					["crs"] = {
 						12460,	-- Death Talon Wyrmguard
 					},
-				},
+				}),
 				i(19358, {	-- Draconic Maul
 					["crs"] = {
 						12467,	-- Death Talon Captain
@@ -57,12 +56,11 @@ _.Instances = { tier(1, {	-- Classic
 						12465,	-- Death Talon Wyrmkin
 					},
 				}),
-				{	-- Elementium Ingot
-					["itemID"] = 18562,	-- Elementium Ingot
+				i(18562, {	-- Elementium Ingot
 					["crs"] = {
 						13996,	-- Blackwing Technician
 					},
-				},
+				}),
 				i(19435, {	-- Essence Gatherer
 					["crs"] = {
 						12457,	-- Blackwing Spellbinder
@@ -70,18 +68,16 @@ _.Instances = { tier(1, {	-- Classic
 						12461,	-- Death Talon Overseer
 					},
 				}),
-				{	-- Interlaced Shadow Jerkin
-					["itemID"] = 19439,	-- Interlaced Shadow Jerkin
+				i(19439, {	-- Interlaced Shadow Jerkin
 					["crs"] = {
 						12460,	-- Death Talon Wyrmguard
 					},
-				},
-				{	-- Ringo's Blizzard Boots
-					["itemID"] = 19438,	-- Ringo's Blizzard Boots
+				}),
+				i(19438, {	-- Ringo's Blizzard Boots
 					["crs"] = {
 						12460,	-- Death Talon Wyrmguard
 					},
-				},
+				}),
 			}),
 			e(1529,  {	-- Razorgore the Untamed
 				["cr"] = 12435,	-- Razorgore the Untamed
@@ -294,7 +290,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					}),
 					i(170511, {	-- Head of Nefarian (Paladin, if A/H have already been looted)
-						["classes"] = PALADIN,	-- used for a hidden artifact appearance.  may come back and add more context/info later
+						["classes"] = { PALADIN },	-- used for a hidden artifact appearance.  may come back and add more context/info later
 					}),
 					i(19364),	-- Ashkandi, Greatsword of the Brotherhood
 					i(19356),	-- Staff of the Shadow Flame

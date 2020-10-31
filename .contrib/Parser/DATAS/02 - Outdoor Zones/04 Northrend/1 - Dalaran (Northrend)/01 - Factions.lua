@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(125, {	-- Dalaran: Northrend
-			n(-6013, {	-- Factions
+			n(FACTIONS, {
 				faction(1124, {	-- The Sunreavers
 					["creatureID"] = 30116,	-- Archmage Aethas Sunreaver <Kirin Tor>
 					["races"] = HORDE_ONLY,
@@ -14,6 +14,7 @@ _.Zones =
 						n(29631, {	-- Awilo Longomba
 							["description"] = "All dailies offered by this questgiver award at least one Epicurean's Award and a Small Spice Bag, which can contain the recipes for Captain Rumsey's Lager, Delicious Chocolate Cake, and Stormchops.",
 							["races"] = HORDE_ONLY,
+							["coord"] = { 70.0, 39.0, 125 },
 							["g"] = {
 								h({
 									["achievementID"] = 1783,	-- Our Daily Bread (Horde)
@@ -44,6 +45,7 @@ _.Zones =
 						}),
 						n(37941, {	-- Magister Arlan <Legacy Justice Quartermaster>
 							["races"] = HORDE_ONLY,
+							["coord"] = { 65.9, 22.9, 125 },
 							["g"] = {
 								i(50993),	-- Band of the Night Raven
 								i(50996),	-- Belt of Omission
@@ -166,6 +168,7 @@ _.Zones =
 						}),
 						n(31581, {	-- Magister Brasael <Legacy Justice Quartermaster>
 							["races"] = HORDE_ONLY,
+							["coord"] = { 66.1, 23.4, 125 },
 							["g"] = {
 								i(40736),	-- Armguard of the Tower Archer
 								i(40719),	-- Band of Channeled Magic
@@ -328,6 +331,7 @@ _.Zones =
 						}),
 						n(33963, {	-- Magister Sarien <Legacy Justice Quartermaster>
 							["races"] = HORDE_ONLY,
+							["coord"] = { 65.7, 24.4, 125 },
 							["g"] = {
 								i(45827),	-- Belt of the Ardent Marksman
 								i(45830),	-- Belt of the Living Thicket
@@ -494,6 +498,7 @@ _.Zones =
 						}),
 						n(31582, {	-- Magistrix Lambriesse <Legacy Justice Quartermaster>
 							["races"] = HORDE_ONLY,
+							["coord"] = { 65.6, 22.7, 125 },
 							["g"] = {
 								i(40693),	-- Beadwork Belt of Shamanic Vision
 								i(40679),	-- Chained Military Gorget
@@ -655,6 +660,7 @@ _.Zones =
 						}),
 						n(35495, {	-- Magistrix Vesara <Legacy Justice Quartermaster>
 							["races"] = HORDE_ONLY,
+							["coord"] = { 65.0, 23.0, 125 },
 							["g"] = {
 								i(47732),	-- Band of the Invoker
 								i(47729),	-- Bloodshed Band
@@ -769,6 +775,7 @@ _.Zones =
 						}),
 						n(31031, {	-- Misensi <Cooking Supplies>
 							["races"] = HORDE_ONLY,
+							["coord"] = { 70.0, 38.6, 125 },
 							["g"] = {
 								i(134020, {	-- Chef's Hat
 									["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
@@ -854,6 +861,7 @@ _.Zones =
 				}),
 				faction(1090, {	-- Kirin Tor
 					["achievementID"] = 1008,	-- The Kirin Tor
+					["coord"] = { 25.2, 47.8, 125 },
 					["g"] = {
 						n(32287, {	-- Archmage Alvareaux <Kirin Tor Quartermaster>
 							i(44182),	-- Boots of Twinkling Stars
@@ -880,6 +888,7 @@ _.Zones =
 					["g"] = {
 						n(31579, {	-- Arcanist Adurin <Legacy Justice Quartermaster>
 							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 37.2, 54.5, 125 },
 							["g"] = {
 								i(40736),	-- Armguard of the Tower Archer
 								i(40719),	-- Band of Channeled Magic
@@ -1042,6 +1051,7 @@ _.Zones =
 						}),
 						n(33964, {	-- Arcanist Firael <Legacy Justice Quartermaster>
 							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 38.7, 55.1, 125 },
 							["g"] = {
 								i(45827),	-- Belt of the Ardent Marksman
 								i(45830),	-- Belt of the Living Thicket
@@ -1208,6 +1218,7 @@ _.Zones =
 						}),
 						n(31580, {	-- Arcanist Ivrenne <Legacy Justice Quartermaster>
 							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 36.9, 55.0, 125 },
 							["g"] = {
 								i(40693),	-- Beadwork Belt of Shamanic Vision
 								i(40679),	-- Chained Military Gorget
@@ -1369,6 +1380,7 @@ _.Zones =
 						}),
 						n(35494, {	-- Arcanist Miluria <Legacy Justice Quartermaster>
 							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 37.9, 54.3, 125 },
 							["g"] = {
 								i(47732),	-- Band of the Invoker
 								i(47729),	-- Bloodshed Band
@@ -1483,6 +1495,7 @@ _.Zones =
 						}),
 						n(37942, {	-- Arcanist Uovril <Legacy Justice Quartermaster>
 							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 38.3, 54.4, 125 },
 							["g"] = {
 								i(50993),	-- Band of the Night Raven
 								i(50996),	-- Belt of Omission
@@ -1605,6 +1618,7 @@ _.Zones =
 						}),
 						n(31032, {	-- Derek Odds <Cooking Supplies>
 							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 40.7, 65.9, 125 },
 							["g"] = {
 								i(134020, {	-- Chef's Hat
 									["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
@@ -1689,6 +1703,7 @@ _.Zones =
 						n(28705, {	-- Katherine Lee
 							["description"] = "All dailies offered by this questgiver award at least one Epicurean's Award and a Small Spice Bag, which can contain the recipes for Captain Rumsey's Lager, Delicious Chocolate Cake, and Stormchops.",
 							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 40.6, 64.9, 125 },
 							["g"] = {
 								a({
 									["achievementID"] = 1782,	-- Our Daily Bread (Alliance)

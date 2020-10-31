@@ -12,11 +12,11 @@ end
 -- This number can be found in the "Summoned by" tab on Wowhead.
 -- To manually collect the speciesID in-game (live or PTR):
 	-- /dump C_PetJournal.FindPetIDByName("petName")
--- The speciesID can also be found via various addons — the slumber-approved addon is Rematch.  
+-- The speciesID can also be found via various addons — the slumber-approved addon is Rematch.
 	-- In the Rematch options, make sure "Show Species ID & Ability ID" is checked.
 	-- The speciesID is the number by the icon that looks like a cogwheel on the card that pops up when you hover over a pet.
 
-	
+
 pet(19450, 106); 	-- A Jubling's Tiny Home (Jubling)
 pet(129205, 1660); 	-- A Tiny Infernal Collar (Fel Pup)
 pet(163489, 2403);	-- Abyssal Eel
@@ -950,21 +950,21 @@ pet(183515, 3045);	-- Iridescent Ooze
 --pet(183601, );	-- Jiggles
 pet(184401, 3063);	-- Larion Pouncer
 pet(183196, 3035);	-- Lavender Nibbler
-pet(182662, 3017);	-- Leafadore 
+pet(182662, 3017);	-- Leafadore
 pet(180586, 2892);	-- Lightbinders // Bound Lightspawn
 pet(184397, 3062);	-- Lost Featherling
-pet(180590, 2895);	-- Lost Soul 
+pet(180590, 2895);	-- Lost Soul
 --pet(3066);	-- Lucy
 pet(181171, 2947);	-- Luminous Webspinner
 pet(183191, 3029);	-- Maw Crawler
-pet(183194, 3033);	-- Maw Stalker 
+pet(183194, 3033);	-- Maw Stalker
 --pet(3014);	-- Mire Creeper
-pet(181282, 2963);	-- Mu'dud 
+pet(181282, 2963);	-- Mu'dud
 --pet(, 3052);	-- Necroray Spawnling
---pet(180841, );	-- Olive Dragon Turtle 
-pet(181164, 2944);	-- Oonar's Arm 
-pet(180628, 2923);	-- Pearlwing Heron 
-pet(181170, 2946);	-- Pernicious Bonetusk 
+--pet(180841, );	-- Olive Dragon Turtle
+pet(181164, 2944);	-- Oonar's Arm
+pet(180628, 2923);	-- Pearlwing Heron
+pet(181170, 2946);	-- Pernicious Bonetusk
 pet(180208, 2889);	-- PHA7-YNX
 pet(183107, 3024);	-- Pile of Ashen Dust // Char
 pet(173891, 2798);	-- Plagueborn Slime
@@ -974,28 +974,28 @@ pet(183395, 3036);	-- Projection of Remornia
 pet(180859, 2935);	-- Purity
 pet(183621, 3046);	-- Putrid Geist
 pet(182613, 3008);	-- Refilling Inkwell // Lost Quill
-pet(175114, 2878);	-- Renny 
+pet(175114, 2878);	-- Renny
 pet(180644, 2907);	-- Rocky
 --pet(3007);	-- Rosetipped Spiderling
-pet(182671, 3020);	-- Runelight Leaper 
+pet(182671, 3020);	-- Runelight Leaper
 pet(180861, 2937);	-- Rustfur Kit // Red Vulpin??
 pet(180814, 2933);	-- Sable
-pet(183117, 3028);	-- Severs 
-pet(183410, 3040);	-- Sharpclaw 
+pet(183117, 3028);	-- Severs
+pet(183410, 3040);	-- Sharpclaw
 pet(182673, 3022);	-- Shimmerbough Hoarder
-pet(181263, 2953);	-- Shy Melvin 
+pet(181263, 2953);	-- Shy Melvin
 pet(180856, 2932);	-- Silvershell Snapper
-pet(181555, 2966);	-- Sinheart 
-pet(182674, 3023);	-- Sir Reginald 
-pet(181173, 2949);	-- Skittering Venomspitter 
-pet(181271, 2961);	-- Sludge Feeler 
-pet(183623, 3044);	-- Spinemaw Larva 
-pet(180872, 2942);	-- Spirited Skyfoal 
+pet(181555, 2966);	-- Sinheart
+pet(182674, 3023);	-- Sir Reginald
+pet(181173, 2949);	-- Skittering Venomspitter
+pet(181271, 2961);	-- Sludge Feeler
+pet(183623, 3044);	-- Spinemaw Larva
+pet(180872, 2942);	-- Spirited Skyfoal
 pet(184509, 3067);	-- Spriggan Trickster
-pet(180637, 2914);	-- Starry Dreamfoal 
-pet(182664, 3019);	-- Stemmins 
+pet(180637, 2914);	-- Starry Dreamfoal
+pet(182664, 3019);	-- Stemmins
 pet(184398, 3061);	-- Steward Featherling
-pet(180601, 3006);	-- Stonewing Dredwing Pup // Stoneskin Dredwing Pup 
+pet(180601, 3006);	-- Stonewing Dredwing Pup // Stoneskin Dredwing Pup
 pet(183855, 3012);	-- Stony's Infused Ruby // Stony
 pet(181269, 2959);	-- Suspended Corpse
 pet(183714, 3015);	-- Swamp Reed // Withering Creeper
@@ -1023,4 +1023,3 @@ pet(181267, 2957);	-- Writhing Spine
 -- Mald		22
 -- Arden	21
 -- Raven	21
-

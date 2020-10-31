@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -10,22 +11,16 @@ _.Zones =
 			n(-34, {	-- World Quests
 				q(46209),	-- A Flare In The Dark
 				q(47061),	-- Apocron
-				q(46104),	-- Arachnid Toxicity
 				q(46947),	-- Brutallus
 				q(45969),	-- Defense of the Ancient
 				q(46077),	-- Felbound Spirits
 				q(40390),	-- Hallowed Ground
-				q(45541),	-- How Do YOU Like It?!
-				q(45743),	-- Judgment of Odyn
-				q(45776),	-- Keys are a Crutch
 				q(45653),	-- Kill it with Fire!
 				q(46046),	-- Life's a Lich
 				q(46755),	-- Mission: Felraging
 				q(45793),	-- Occultist Onslaught
-				q(45929),	-- Purging the Flames
 				q(45549),	-- Salving the Corruption
 				q(46945),	-- Si'vash
-				q(46762),	-- Storm Brew Hustle
 				q(46811),	-- The Broodmother's Wrath
 			}),
 ]]--
@@ -42,6 +37,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(46105, {	-- Arachnid Superiority
+					["lvl"] = 110,
+					["isWorldQuest"] = true,
+				}),
+				q(46104, {	-- Arachnid Toxicity
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
@@ -164,6 +163,10 @@ _.Zones =
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
+				q(45541, {	-- How Do YOU Like It?!
+					["lvl"] = 110,
+					["isWorldQuest"] = true,
+				}),
 				q(46066, {	-- I Fel Bat For You
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
@@ -187,6 +190,15 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
+				q(45743, {	-- Judgment of Odyn
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(45776, {	-- Keys are a Crutch
+					["classes"] = { ROGUE },
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(45472, {	-- Kraken Eggs
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
@@ -199,7 +211,7 @@ _.Zones =
 					["lvl"] = 110,
 					["classes"] = { MAGE },
 					["isWorldQuest"] = true,
-				}),				
+				}),
 				q(46948, {	-- Malificus
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
@@ -244,6 +256,10 @@ _.Zones =
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
+				q(45929, {	-- Purging the Flames
+					["lvl"] = 110,
+					["isWorldQuest"] = true,
+				}),
 				q(46075, {	-- Relic Hunting
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
@@ -282,6 +298,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(46236, {	-- Stonebound Soldiers
+					["lvl"] = 110,
+					["isWorldQuest"] = true,
+				}),
+				q(46762, {	-- Storm Brew Hustle
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
@@ -450,10 +470,8 @@ _.Zones =
 				}),
 				--[[
 				n(-386,  {	-- Trinkets
-					
 				}),
 				n(-387,  {	-- Relics
-					
 				}),
 				]]--
 			}),

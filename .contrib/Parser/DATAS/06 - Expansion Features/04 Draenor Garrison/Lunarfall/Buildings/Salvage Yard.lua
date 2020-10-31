@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
@@ -9,7 +10,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(141, {	-- Salvage Yard (rank 1: 52, rank 2: 140, rank 3: 141)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-4,  {	-- Achievements
+						n(ACHIEVEMENTS, {
 							ach(9468, {		-- Salvaging Pays Off
 								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 								["g"] = {
@@ -233,7 +234,7 @@ _.ExpansionFeatures =
 									i(119727),	-- Streamtalker Belt
 									i(119721),	-- Streamtalker Boots
 									i(119754, {	-- Streamtalker Bracers
-										["u"] = NEVER_IMPLEMENTED,									
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119709),	-- Streamtalker Choker
 									i(119719),	-- Streamtalker Claws
@@ -247,7 +248,7 @@ _.ExpansionFeatures =
 										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119730, {	-- Streamtalker Chestguard
-										["u"] = NEVER_IMPLEMENTED,										
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119723),	-- Streamtalker Coif
 									i(119749, {	-- Streamtalker Cowl
@@ -264,10 +265,10 @@ _.ExpansionFeatures =
 										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119732, {	-- Streamtalker Handguards
-										["u"] = NEVER_IMPLEMENTED,										
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119733, {	-- Streamtalker Helm
-										["u"] = NEVER_IMPLEMENTED,										
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119715),	-- Streamtalker Idol of Destruction
 									i(119710),	-- Streamtalker Idol of Rage
@@ -302,7 +303,7 @@ _.ExpansionFeatures =
 									i(119729),	-- Streamtalker Talons
 									i(119720),	-- Streamtalker Tunic
 									i(119746, {	-- Streamtalker Vest
-										["u"] = NEVER_IMPLEMENTED,										
+										["u"] = NEVER_IMPLEMENTED,
 									}),
 									i(119736, {	-- Streamtalker Waistguard
 										["u"] = NEVER_IMPLEMENTED,

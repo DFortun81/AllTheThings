@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -201,8 +202,8 @@ _.Zones =
 					},
 				}),
 				i(92426, {	-- Sealed Tome of the Lost Legion
-					["spellID"] = 101508,	-- The Codex of Zerrath
-					["collectible"] = true,
+					["spellID"] = 101508, -- The Codex of Xerrath
+					["collectible"] = true,	-- Causes the character(s) which have collected the spellID to show in tooltip
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						70000,	-- Al'tabim the All-Seeing
@@ -217,6 +218,14 @@ _.Zones =
 						69997,	-- Progenitus
 					},
 				}),
+				--[[ Adding this item with cost of the sealed tome above causes the in-game tooltip generation for the sealed tome to no longer
+					include the spellID or be considered collectible. Likely during the unlinked item cloning in ATT.lua:2937 when only a single item meets the search criteria for the tooltip
+				i(92441, {	-- The Codex of Xerrath
+					["cost"] = {
+						{ "i", 92426, 1 },	-- Sealed Tome of the Lost Legion
+						{ "i", 5512, 1 },	-- Healthstone
+					},
+				}),--]]
 				i(94221, {	-- Shan'ze Ritual Stone
 					["description"] = "You will need 3 stones to summon these rares at their specific spawn points.",
 					["crs"] = {

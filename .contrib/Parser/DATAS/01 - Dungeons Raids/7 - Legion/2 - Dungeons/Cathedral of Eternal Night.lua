@@ -8,7 +8,7 @@ _.Instances = { tier(7, {	-- Legion
 		["maps"] = { 845, 846, 847, 848, 849 },
 		["lvl"] = 110,
 		["g"] = {
-			n(-34, {	-- World Quests
+			n(-34,	{	-- World Quests
 				q(46867, {	-- Cathedral of Eternal Night: Fel Beast
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
@@ -30,11 +30,11 @@ _.Instances = { tier(7, {	-- Legion
 					["lvl"] = 110,
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(2,	{	-- Heroic
 				n(ZONEDROPS, {
 					i(147117, {	-- Orb of the Fel Temptress
 						["cr"] = 118714,  -- Hellblaze Temptress
-						["classes"] = {9},	-- Warlock
+						["classes"] = { WARLOCK },
 					}),
 				}),
 				cr(117193, e(1905, {	-- Agronox
@@ -96,9 +96,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(144463),	-- Shard of Kaldorei Stained Glass
 				})),
 			}),
-			d(23, {	-- Mythic
+			d(23,	{	-- Mythic
 				n(ZONEDROPS, {
 					i(147514, {	-- Felguard Destroyer's Legplates
+						["bonusID"] = 1812,
 						["crs"] = {
 							118704,	-- Dul'zak
 							118723,	-- Gazerax
@@ -110,6 +111,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					}),
 					i(147515, {	-- Hellblaze Invader's Greaves
+						["bonusID"] = 1812,
 						["crs"] = {
 							118704,	-- Dul'zak
 							118723,	-- Gazerax
@@ -121,6 +123,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					}),
 					i(147517, {	-- Inquisitor's Battle Cowl
+						["bonusID"] = 1812,
 						["crs"] = {
 							118704,	-- Dul'zak
 							118723,	-- Gazerax
@@ -132,6 +135,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					}),
 					i(147516, {	-- Legion Stalker's Hood
+						["bonusID"] = 1812,
 						["crs"] = {
 							118704,	-- Dul'zak
 							118723,	-- Gazerax
@@ -144,7 +148,7 @@ _.Instances = { tier(7, {	-- Legion
 					}),
 					i(147117, {	-- Orb of the Fel Temptress
 						["cr"] = 120366,  -- Hellblaze Temptress
-						["classes"] = {9},	-- Warlock
+						["classes"] = { WARLOCK },
 					}),
 				}),
 				cr(117193, e(1905, {	-- Agronox
@@ -206,7 +210,6 @@ _.Instances = { tier(7, {	-- Legion
 					i(144465),	-- Essence of the Legion Tempest
 					i(144464),	-- Mephistroth's Nail
 					i(144463),	-- Shard of Kaldorei Stained Glass
-					i(146696),	-- Rusted Legplates of Mephistroth (Leatherworking QI)
 				})),
 			}),
 		},

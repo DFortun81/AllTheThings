@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, {	-- Northrend
@@ -813,10 +814,11 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(12885, {	-- The Exiles of Ulduar
+					["sourceQuests"] = { 12872 },	-- Norgannon's Shell
+					["isBreadcrumb"] = true,
+					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["races"] = ALLIANCE_ONLY,
-					["description"] = "Use Brann's Communicator to pick this quest up.",
-					["sourceQuests"] = { 12872 },	-- Norgannon's Shell
 				}),
 				q(12873, {	-- The Frostborn King
 					["provider"] = { "n", 29743 },	-- Lagnus
@@ -1080,6 +1082,7 @@ _.Zones =
 					},
 				}),
 				q(13426, {	-- Xarantaur, the Witness
+					["isBreadcrumb"] = true,
 					["coord"] = { 37.3, 49.6, 120 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 29651 },	-- Boktar Bloodfury

@@ -13,89 +13,139 @@ namespace ATT
     class Program
     {
         const string DBSuffix = ".json";
+        const string DiffSuffix = "-DIFF";
 
         static void Main(string[] args)
         {
-            string db1 = "itemDB";
-            string db2 = "oldItemDB";
+            // DB name for filtering DB comparisons
+            string dbFilter = "itemDB";
 
-            if (args.Length > 1)
+            if (args.Length > 0)
+                dbFilter = args[0];
+
+            // get all files in the directory
+            string[] fileNames = Directory.GetFiles(".", "*" + DBSuffix, SearchOption.TopDirectoryOnly);
+
+            List<string> compareDBs = new List<string>();
+            foreach (string fileName in fileNames)
             {
-                db1 = args[0];
-                db2 = args[1];
-            }
-
-            if (!db1.Contains(DBSuffix))
-                db1 += DBSuffix;
-            if (!db2.Contains(DBSuffix))
-                db2 += DBSuffix;
-
-            Console.WriteLine("Comparing:" + db1 + " & " + db2);
-
-            // Step 1: Load the Files
-            if (!(MiniJSON.Json.Deserialize(File.ReadAllText(db1)) as Dictionary<string, object>).TryGetValue("items", out List<object> newItems))
-            {
-                Console.WriteLine("Could not read " + db1);
-                Console.ReadLine();
-                return;
-            }
-            if (!(MiniJSON.Json.Deserialize(File.ReadAllText(db2)) as Dictionary<string, object>).TryGetValue("items", out List<object> oldItems))
-            {
-                Console.WriteLine("Could not read " + db2);
-                Console.ReadLine();
-                return;
-            }
-
-            // Step 2: Load the content of the old items into a Dictionary.
-            var oldItemsByID = new Dictionary<int, Dictionary<string, object>>();
-            foreach (var o in oldItems)
-            {
-                if (o is Dictionary<string, object> item && item.TryGetValue("itemID", out int id))
+                // check if this file matches the DB filter name
+                if (fileName.Contains(dbFilter) && !fileName.Contains(DiffSuffix))
                 {
-                    oldItemsByID[id] = item;
+                    // add it to the set of DB files to analyze
+                    compareDBs.Add(fileName);
                 }
             }
 
-            // Step 3: Load the content of the new items into a Dictionary.
-            var newItemsByID = new Dictionary<int, Dictionary<string, object>>();
-            foreach (var o in newItems)
+            compareDBs.Sort();
+
+            // setup the rolling DB source to determine comparison changes
+            var source = new Dictionary<int, Dictionary<string, object>>();
+            string compareType = null;
+            string objectKey = null;
+
+            // check each file path, and either set or compare against existing data
+            foreach (string fileName in compareDBs)
             {
-                if (o is Dictionary<string, object> item && item.TryGetValue("itemID", out int id))
+                var dbParsed = MiniJSON.Json.Deserialize(File.ReadAllText(fileName)) as Dictionary<string, object>;
+
+                // set the compare type based on the type of the first DB
+                if (compareType == null && dbParsed != null && dbParsed.Keys.Count == 1)
                 {
-                    newItemsByID[id] = item;
+                    compareType = dbParsed.Keys.First();
+                    // going with the assumption that object groups will always be "types" -> "typeID"
+                    objectKey = compareType.TrimEnd('s') + "ID";
+                }
+
+                if (!dbParsed.TryGetValue(compareType, out List<object> dbObjects))
+                {
+                    Console.WriteLine("Could not read objects by key " + compareType + " from : " + fileName);
+                    Console.ReadLine();
+                    return;
+                }
+
+                // set the source from the first file utilized
+                if (source.Count == 0)
+                {
+                    Console.WriteLine("Source: " + fileName);
+                    CreateSource(source, objectKey, dbObjects);
+                }
+                else
+                {
+                    try
+                    {
+                        Console.WriteLine("------");
+                        Console.WriteLine("Comparing " + fileName);
+                        Dictionary<int, Dictionary<string, object>> diffDB = CompareSource(source, objectKey, dbObjects);
+
+                        // save the compare result into a separate file
+                        string diffFile = fileName.Replace(DBSuffix, DiffSuffix + DBSuffix);
+                        List<Dictionary<string, object>> diffObjs = new List<Dictionary<string, object>>();
+                        List<int> diffKeys = new List<int>(diffDB.Keys);
+                        diffKeys.Sort();
+                        foreach (int diffKey in diffKeys)
+                        {
+                            Dictionary<string, object> diffObj = diffDB[diffKey];
+                            diffObj[objectKey] = diffKey;
+                            diffObjs.Add(diffObj);
+                        }
+                        File.WriteAllText(diffFile, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, diffObjs } }));
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Exception Comparing: " + fileName);
+                        Console.Write(ex.Message);
+                    }
                 }
             }
+        }
+
+        private static void CreateSource(Dictionary<int, Dictionary<string, object>> source, string objectKey, List<object> dbObjects)
+        {
+            foreach (var o in dbObjects)
+            {
+                if (o is Dictionary<string, object> obj && obj.TryGetValue(objectKey, out int id))
+                {
+                    source[id] = obj;
+                }
+            }
+        }
+
+        private static Dictionary<int, Dictionary<string, object>> CompareSource(Dictionary<int, Dictionary<string, object>> sourceDB, string objectKey, List<object> dbObjects)
+        {
+            var compareDB = new Dictionary<int, Dictionary<string, object>>();
+            CreateSource(compareDB, objectKey, dbObjects);
+
+            var diffDB = new Dictionary<int, Dictionary<string, object>>();
 
             // Step 4: Acquire the Keys of both lists.
-            var oldIDs = oldItemsByID.Keys.ToList();
-            var newIDs = newItemsByID.Keys.ToList();
-            oldIDs.Sort();
-            newIDs.Sort();
-
-            bool additions = false;
-            bool changes = false;
-            bool removals = false;
+            var sourceIDs = sourceDB.Keys.ToList();
+            var compareIDs = compareDB.Keys.ToList();
+            sourceIDs.Sort();
+            compareIDs.Sort();
 
             // Step 5: Loop through the lists and determine which ones are different.
             var missingIDs = new List<int>();
-            foreach (var id in oldIDs)
+            foreach (var id in sourceIDs)
             {
-                if (!newItemsByID.ContainsKey(id)) missingIDs.Add(id);
+                if (!compareDB.ContainsKey(id))
+                {
+                    missingIDs.Add(id);
+                }
             }
             var brandNewIDs = new List<int>();
-            foreach (var id in newIDs)
+            foreach (var id in compareIDs)
             {
-                if (!oldItemsByID.ContainsKey(id)) brandNewIDs.Add(id);
+                if (!sourceDB.ContainsKey(id))
+                {
+                    brandNewIDs.Add(id);
+                    NewObject(diffDB, id, compareDB);
+                    NewObject(sourceDB, id, compareDB);
+                }
             }
 
-            if (missingIDs.Any()) removals = true;
-            if (brandNewIDs.Any()) additions = true;
-
-            //if (missingIDs.Any())
-            //{
             Console.Write(missingIDs.Count);
-            Console.WriteLine(" Missing Items in the New DB compared to the Old DB.");
-            //System.Threading.Thread.Sleep(1000);
+            Console.WriteLine(" Missing IDs in the New DB compared to the Old DB.");
             bool comma = false;
             foreach (var id in missingIDs)
             {
@@ -105,13 +155,9 @@ namespace ATT
                 comma = true;
             }
             Console.WriteLine();
-            //}
-            //else Console.WriteLine("No items missing.");
-            //if (brandNewIDs.Any())
-            //{
             Console.Write(brandNewIDs.Count);
-            Console.WriteLine(" Brand New Items in the New DB compared to the Old DB.");
-            //System.Threading.Thread.Sleep(1000);
+            Console.WriteLine(" Brand New IDs in the New DB compared to the Old DB.");
+
             comma = false;
             foreach (var id in brandNewIDs)
             {
@@ -121,46 +167,53 @@ namespace ATT
                 comma = true;
             }
             Console.WriteLine();
-            //}
-            //else Console.WriteLine("No brand new items found.");
 
             // Step 7: Compare the Items directly.
-            foreach (var id in oldIDs)
+            foreach (var id in sourceIDs)
             {
-                if (newItemsByID.TryGetValue(id, out Dictionary<string, object> newItem)
-                    && oldItemsByID.TryGetValue(id, out Dictionary<string, object> oldItem))
+                if (sourceDB.TryGetValue(id, out Dictionary<string, object> sourceObj)
+                    && compareDB.TryGetValue(id, out Dictionary<string, object> compareObj))
                 {
                     var missingKeys = new List<string>();
                     var brandNewKeys = new List<string>();
-                    var oldKeys = oldItem.Keys.ToList();
-                    var newKeys = newItem.Keys.ToList();
-                    oldKeys.Sort();
-                    newKeys.Sort();
+                    var sourceKeys = sourceObj.Keys.ToList();
+                    var compareKeys = compareObj.Keys.ToList();
+                    sourceKeys.Sort();
+                    compareKeys.Sort();
 
                     // Remove some common ones. (due to optimizations Crieve made to not include for default data)
-                    oldKeys.Remove("equippable");       // For NON-EQUIP types.
-                    oldKeys.Remove("inventoryType");    // For NON-EQUIP types.
-                    oldKeys.Remove("bind");             // For NON-BOP types.
-                    newKeys.Remove("equippable");       // For NON-EQUIP types.
-                    newKeys.Remove("inventoryType");    // For NON-EQUIP types.
-                    newKeys.Remove("bind");             // For NON-BOP types.
-                    foreach (var key in oldKeys)
+                    sourceKeys.Remove("equippable");       // For NON-EQUIP types.
+                    sourceKeys.Remove("inventoryType");    // For NON-EQUIP types.
+                    sourceKeys.Remove("bind");             // For NON-BOP types.
+                    compareKeys.Remove("equippable");       // For NON-EQUIP types.
+                    compareKeys.Remove("inventoryType");    // For NON-EQUIP types.
+                    compareKeys.Remove("bind");             // For NON-BOP types.
+                    foreach (var key in compareKeys)
                     {
-                        if (!newItem.ContainsKey(key)) missingKeys.Add(key);
+                        if (!sourceObj.ContainsKey(key))
+                        {
+                            brandNewKeys.Add(key);
+                            DiffObjectKey(diffDB, id, compareObj, key);
+                            DiffObjectKey(sourceDB, id, compareObj, key);
+                        }
                     }
-                    foreach (var key in newKeys)
+                    foreach (var key in sourceKeys)
                     {
-                        if (!oldItem.ContainsKey(key)) brandNewKeys.Add(key);
+                        if (!compareObj.ContainsKey(key))
+                        {
+                            missingKeys.Add(key);
+                        }
                     }
                     bool missing = missingKeys.Any();
                     bool added = brandNewKeys.Any();
+                    bool logged = false;
                     if (missing || added)
                     {
-                        Console.Write("Item #" + id.ToString());
+                        Console.Write("ID #" + id.ToString());
+                        logged = true;
 
                         if (missing)
                         {
-                            removals = true;
                             Console.WriteLine();
                             Console.Write("- EMPTY : ");
                             comma = false;
@@ -171,11 +224,9 @@ namespace ATT
                                 Console.Write(key);
                                 comma = true;
                             }
-                            //Console.WriteLine();
                         }
                         if (added)
                         {
-                            additions = true;
                             Console.WriteLine();
                             Console.Write("- ADDED : ");
                             comma = false;
@@ -187,44 +238,49 @@ namespace ATT
                                 comma = true;
                             }
                         }
-                        foreach (var key in oldKeys)
-                        {
-                            if (newItem.TryGetValue(key, out object newValue)
-                                && oldItem.TryGetValue(key, out object oldValue)
-                                && !CompareValues(oldValue, newValue))
-                            {
-                                changes = true;
-                                Console.WriteLine();
-                                Console.Write("- CHANGE: " + key + ": " + MiniJSON.Json.Serialize(oldValue) + " --> " + MiniJSON.Json.Serialize(newValue));
-                                //Console.WriteLine();
-                                //Console.Write("NEW VALUE FOR KEY ");
-                                //Console.Write(key);
-                                //Console.Write(" FOR ITEM #");
-                                //Console.Write(id);
-                                //Console.WriteLine(":");
-
-                                //Console.Write(" OLD: ");
-                                //Console.WriteLine(MiniJSON.Json.Serialize(oldValue));
-                                //Console.Write(" NEW: ");
-                                //Console.WriteLine(MiniJSON.Json.Serialize(newValue));
-                                //Console.ReadLine();
-                            }
-                        }
-                        Console.WriteLine();
                     }
+                    foreach (var key in compareKeys)
+                    {
+                        if (sourceObj.TryGetValue(key, out object sourceValue)
+                            && compareObj.TryGetValue(key, out object compareValue)
+                            && !CompareValues(sourceValue, compareValue))
+                        {
+                            if (!logged)
+                            {
+                                logged = true;
+                                Console.Write("ID #" + id.ToString());
+                            }
+
+                            Console.WriteLine();
+                            Console.Write("- CHANGE: " + key + ": " + MiniJSON.Json.Serialize(sourceValue) + " --> " + MiniJSON.Json.Serialize(compareValue));
+
+                            DiffObjectKey(diffDB, id, compareObj, key);
+                            DiffObjectKey(sourceDB, id, compareObj, key);
+                        }
+                    }
+                    if (logged)
+                        Console.WriteLine();
                 }
             }
 
-            Console.WriteLine("=== Summary ===");
-            if (additions)
-                Console.WriteLine("- ADDITIONS");
-            if (changes)
-                Console.WriteLine("- CHANGES");
-            if (removals)
-                Console.WriteLine("- REMOVALS");
+            return diffDB;
+        }
 
-            Console.WriteLine("Press Enter to Close");
-            //Console.ReadLine();
+        private static void NewObject(Dictionary<int, Dictionary<string, object>> sourceDB, int id, Dictionary<int, Dictionary<string, object>> compareDB)
+        {
+            if (!sourceDB.ContainsKey(id))
+            {
+                sourceDB.Add(id, compareDB[id]);
+            }
+        }
+
+        private static void DiffObjectKey(Dictionary<int, Dictionary<string, object>> sourceDB, int id, Dictionary<string, object> compareObj, string key)
+        {
+            if (!sourceDB.TryGetValue(id, out Dictionary<string, object> sourceObj))
+            {
+                sourceDB[id] = sourceObj = new Dictionary<string, object>();
+            }
+            sourceObj[key] = compareObj[key];
         }
 
         private static bool CompareValues(object oldValue, object newValue)
@@ -239,6 +295,10 @@ namespace ATT
                     // Check Complex types.
                     if (oldValue is List<object> oldList && newValue is List<object> newList)
                     {
+                        // ensure lists are of comparable types for sorting
+                        oldList = CompressToComparableListType(oldList);
+                        newList = CompressToComparableListType(newList);
+
                         oldList.Sort();
                         newList.Sort();
                         return MiniJSON.Json.Serialize(oldList) == MiniJSON.Json.Serialize(newList);
@@ -247,21 +307,51 @@ namespace ATT
                 }
 
                 // If the old value is a boolean (True/False) convert to (1/0).
-                if (oldType == typeof(bool)) return Convert.ToInt32(oldValue) == Convert.ToInt32(newValue);
+                //if (oldType == typeof(bool)) return Convert.ToInt32(oldValue) == Convert.ToInt32(newValue);
 
-                // Default, not sure how to parse this.
+                // If both types can parse to int directly
+                try
+                {
+                    int oldint = Convert.ToInt32(oldValue);
+                    int newint = Convert.ToInt32(newValue);
+
+                    return oldint == newint;
+                }
+                catch { }
+
+                // Default, not sure how to parse this so assume difference
                 Console.WriteLine("NOT SURE HOW TO PARSE THIS:");
                 Console.Write(oldValue);
                 Console.Write(" (");
                 Console.Write(oldType);
-                Console.WriteLine(")");
+                Console.WriteLine(") OLD");
                 Console.Write(newValue);
                 Console.Write(" (");
                 Console.Write(newType);
-                Console.WriteLine(")");
+                Console.WriteLine(") NEW");
                 return false;
             }
             return true;
+        }
+
+        private static List<object> CompressToComparableListType(List<object> list)
+        {
+            // list is nothing or comparable objects
+            if (list == null || list.Count == 0 || list[0] is IComparable)
+                return list;
+
+            // list of dictionaries
+            if (list[0] is Dictionary<string, object>)
+            {
+                List<object> serialized = new List<object>();
+                foreach (object oldObj in list)
+                {
+                    serialized.Add(MiniJSON.Json.Serialize(oldObj));
+                }
+                return serialized;
+            }
+
+            throw new ArrayTypeMismatchException("List of objects of type: " + list[0].GetType().ToString() + " unable to be compared! Please implement compare logic for Lists of this type of object");
         }
     }
 }

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -48,7 +49,7 @@ _.Zones =
 					["coord"] = { 55.0, 50.4, 90 },	-- Mala Skywatcher (Undercity)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 20,
 				}),
 				q(42985, {	-- A Royal Audience
@@ -67,7 +68,7 @@ _.Zones =
 					["coord"] = { 85.2, 14.2, 90 },	-- Kaelystia Hatebringer (Undercity)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 20,
 				}),
 				q(3564,  {	-- Andron's Payment to Jediga
@@ -108,7 +109,7 @@ _.Zones =
 					["coord"] = { 62.6,39.4, 90 },
 					["sourceQuest"] = 1846,	-- Dragonmaw Shinbones
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -131,8 +132,8 @@ _.Zones =
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 5 },	-- Undead
-					["classes"] = { 5 },	-- Priest
+					["races"] = { UNDEAD },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(1846,  {	-- Dragonmaw Shinbones
@@ -140,7 +141,7 @@ _.Zones =
 					["coord"] = { 62.6,39.4, 90 },
 					["sourceQuest"] = 1841,	-- Velora Nitely and the Brutal Legguards
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -209,7 +210,7 @@ _.Zones =
 				q(1961, {	-- Gathering Materials
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(1109,  {	-- Going, Going, Guano
 					["u"] = REMOVED_FROM_GAME,
@@ -229,7 +230,7 @@ _.Zones =
 					["coord"] = { 47.2, 15.2, 90 },	-- Christoph Walker (Undercity)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 				}),
 				q(27278, {	-- Grimshot's Call
@@ -237,7 +238,7 @@ _.Zones =
 					["coord"] = { 49.6, 29.0, 90 },	-- Apolos (Undercity)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 20,
 				}),
 				q(1113,  {	-- Hearts of Zeal
@@ -277,14 +278,14 @@ _.Zones =
 				q(1960, {	-- Investigate the Alchemist Shop
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(27335, {	-- Journey to Orgrimmar
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 5 },	-- Blood Elf
-					["classes"] = { 5 },	-- Priest
+					["races"] = { BLOODELF },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(27282, {	-- Kranosh's Behest
@@ -292,7 +293,7 @@ _.Zones =
 					["coord"] = { 86.0, 15.6, 90 },	-- Kaal Soulreaper (Undercity)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["maps"] = { 88, 90, 110 },
 					["lvl"] = 20,
 				}),
@@ -305,16 +306,16 @@ _.Zones =
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 9 },	-- Goblin
-					["classes"] = { 5 },	-- Priest
+					["races"] = { GOBLIN },
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28304, {	-- Meet with Dark Cleric Cecille
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 5 },	-- Undead
-					["classes"] = { 5 },	-- Priest
+					["races"] = { UNDEAD },
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28298, {	-- Meet with Gordul
@@ -322,7 +323,7 @@ _.Zones =
 					["coord"] = { 84.6, 73.2, 90 },	-- Gregory Charles (Undercity)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 50,
 				}),
 				q(28290, {	-- Meet with Grezz Ragefist
@@ -330,7 +331,7 @@ _.Zones =
 					["coord"] = { 47.2, 15.2, 90 },	-- Christoph Walker (Undercity)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 				}),
 				q(28299, {	-- Meet with Kranosh
@@ -338,15 +339,15 @@ _.Zones =
 					["coord"] = { 86.0, 15.6, 90 },	-- Kaal Soulreaper (Undercity)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 50,
 				}),
 				q(28303, {	-- Meet with Master Pyreanor
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
 					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
 				q(28297, {	-- Meet with Ormak Grimshot
@@ -354,42 +355,39 @@ _.Zones =
 					["coord"] = { 49.6, 29.0, 90 },	-- Apolos (Undercity)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
 				q(28308, {	-- Meet with Seer Liwatha
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coords"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 6 },	-- Tauren
-					["classes"] = { 5 },	-- Priest
+					["races"] = { TAUREN },
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28309, {	-- Meet with Shadow-Walker Zuru
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = {
-						8,	-- Troll
-						31,	-- Zandalari Troll
-					},
-					["classes"] = { 5 },	-- Priest
+					["races"] = { TROLL, ZANDALARI },
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28302, {	-- Meet with Sunwalker Atohmo
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
 					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 6 },	-- Tauren
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { TAUREN },
+					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
 				q(28307, {	-- Meet with Tyelis
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 5 },	-- Priest
+					["races"] = { BLOODELF },
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28300, {	-- Meet with Ureda
@@ -397,14 +395,14 @@ _.Zones =
 					["coord"] = { 85.2, 14.2, 90 },	-- Kaelystia Hatebringer (Undercity)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 50,
 				}),
 				q(9626,  {	-- Meeting the Orcs
 					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
 					["coords"] = { 57.8, 91.6, 90 },
 					["sourceQuest"] = 9621,	-- Envoy to the Horde
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 				}),
 				q(9813,  {	-- Meeting the Orcs
 					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
@@ -427,13 +425,13 @@ _.Zones =
 					["provider"] = { "n", 4556 },	-- Gordon Wendham
 					["coords"] = { 61.8, 42.0, 90 },
 					["sourceQuest"] = 6323,	-- Ride to the Undercity
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 				}),
 				q(28289, {	-- Moonglade Calls
 					["provider"] = { "n", 52319 },	-- Mala Skywatcher
 					["coord"] = { 55.0, 50.4, 90 },	-- Mala Skywatcher (Undercity)
 					["isBreadcrumb"] = true,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 50,
 				}),
 				q(38346, {	-- Numismatics
@@ -467,11 +465,11 @@ _.Zones =
 				q(1959, {	-- Report to Anastasia
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(366,   {	-- Return the Book
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 2, 5, 8, },	-- Orc, Undead, Troll
+					["races"] = { ORC, UNDEAD, TROLL },
 					["provider"] = { "n", 1498 },	-- Bethor Iceshard
 					["sourceQuest"] = 357,	-- The Lich's Identity
 				}),
@@ -479,7 +477,7 @@ _.Zones =
 					["provider"] = { "n", 4551 },	-- Michael Garrett
 					["coords"] = { 63.0, 48.2, 90 },
 					["sourceQuest"] = 6322,	-- Michael Garrett
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 				}),
 				q(1358,  {	-- Sample for Helbrim
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
@@ -496,24 +494,24 @@ _.Zones =
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 9 },	-- Goblin
-					["classes"] = { 5 },	-- Priest
+					["races"] = { GOBLIN },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(27298, {	-- Seek Out Master Pyreanor
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
 					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladon
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 				}),
 				q(27332, {	-- Seek the Shadow-Walker
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 8 },	-- Troll
-					["classes"] = { 5 },	-- Priest
+					["races"] = { TROLL },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(3568,  {	-- Seeping Corruption
@@ -537,7 +535,7 @@ _.Zones =
 					["provider"] = { "n", 4576 },	-- Josef Gregorian
 					["coord"] = { 70.8, 30.7, 90 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 15,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -564,7 +562,7 @@ _.Zones =
 					["provider"] = { "n", 4568 },	-- Anastasia Hartwell
 					["coord"] = { 85.1, 10.0, 90 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 15,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -610,7 +608,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22243)),	-- Small Soul Pouch
-					},				
+					},
 				}),
 				q(5961, {	-- The Champion of the Banshee Queen
 					["u"] = REMOVED_FROM_GAME,
@@ -688,8 +686,8 @@ _.Zones =
 					["provider"] = { "n", 4606 },	-- Aelthalyste
 					["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = { 6 },	-- Tauren
-					["classes"] = { 5 },	-- Priest
+					["races"] = { TAUREN },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(27279, {	-- The Shattered Hand
@@ -697,7 +695,7 @@ _.Zones =
 					["coord"] = { 84.6, 73.2, 90 },	-- Gregory Charles (Undercity)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 20,
 				}),
 				q(736,   {	-- The Star, the Hand and the Heart

@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
@@ -274,7 +275,7 @@ _.Zones =
 						}),
 						i(162626, {	-- Tome of Polymorph: Bumblebee
 							["spellID"] = 277792,	-- Polymorph(Bumblebee)
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 							["cost"] = 18000000,	-- 1,800g
 						}),
 					},

@@ -51,13 +51,14 @@ _.Zones =
 					["provider"] = { "n", 95410 },	-- Lasan Skyhorn
 				}),
 				q(45841, {	-- A Triumphant Report
+					["sourceQuests"] = { 45796 },	-- Destroying the Nest
+					["provider"] = { "n", 117361 },	-- Navarrogg
 					["classes"] = {
-						3,	-- Hunter (Beast Mastery)
-						10,	-- Monk (Windwalker)
-						5,	-- Priest (Discipline)
-						9,	-- Warlock (Destruction)
+						HUNTER,		-- Beast Mastery
+						MONK,		-- Windwalker
+						PRIEST,		-- Discipline
+						WARLOCK,	-- Destruction
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
 				q(40000, {	-- A True Hunter
@@ -232,6 +233,17 @@ _.Zones =
 						i(132088),	-- Whitewater Links
 						i(132087),	-- Thunderpeak Greatbelt
 					},
+				}),
+				q(45796, {	-- Destroying the Nest
+					["sourceQuests"] = { 45587 },	-- The Feltotem Menace
+					["provider"] = { "n", 117361 },	-- Navarrogg
+					["classes"] = {
+						HUNTER,		-- Beast Mastery
+						MONK,		-- Windwalker
+						PRIEST,		-- Discipline
+						WARLOCK,	-- Destruction
+					},
+					["lvl"] = 110,
 				}),
 				q(40070, {	-- Eagle Egg Recovery
 					["coord"] = { 50.9, 36.6, 650 },
@@ -694,10 +706,37 @@ _.Zones =
 					["coord"] = { 53.9, 63.9, 652 },	-- Thunder Totem
 					["provider"] = { "n", 93826 },	-- Mayla Highmountain
 				}),
+				q(45564, {	-- The Burning Birds
+					["sourceQuests"] = {
+						47018,	-- Beast Mastery: Rumblings Near Feltotem
+						45560,	-- Destruction: Rumblings Near Feltotem
+						47020,	-- Discipline: Rumblings Near Feltotem
+						47019,	-- Windwalker: Rumblings Near Feltotem
+					},
+					["classes"] = {
+						HUNTER,		-- Beast Mastery
+						MONK,		-- Windwalker
+						PRIEST,		-- Discipline
+						WARLOCK,	-- Destruction
+					},
+					["provider"] = { "n", 117225 },	-- Navarrogg
+					["lvl"] = 110,
+				}),
 				q(39026, {	-- The Drogbar
 					["sourceQuests"] = { 42104 },	-- The Underking Comes
 					["coord"] = { 38.6, 68.3, 650 },
 					["provider"] = { "n", 93805 },	-- Spiritwalker Ebonhorn
+				}),
+				q(45587, {	-- The Feltotem Menace
+					["sourceQuests"] = { 45575 },	-- Village of the Corruptors
+					["classes"] = {
+						HUNTER,		-- Beast Mastery
+						MONK,		-- Windwalker
+						PRIEST,		-- Discipline
+						WARLOCK,	-- Destruction
+					},
+					["provider"] = { "n", 117292 },	-- Navarrogg
+					["lvl"] = 110,
 				}),
 				q(39496, {	-- The Flow of the River
 					["sourceQuests"] = {
@@ -752,7 +791,7 @@ _.Zones =
 				}),
 				q(40385, {	-- The Spear in the Shadow
 					["sourceQuests"] = { 39427 },	-- The Eagle Spirit's Blessing
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["providers"] = {
 						{ "n", 110821 },	-- Apata Highmountain
 						{ "n", 110986 },	-- Apata Highmountain
@@ -762,6 +801,17 @@ _.Zones =
 					["sourceQuests"] = { 40515 },	-- A Walk With the Spirits
 					["coord"] = { 53.9, 63.9, 652 },	-- Thunder Totem
 					["provider"] = { "n", 98825 },	-- Spiritwalker Ebonhorn
+				}),
+				q(45726, {	-- The Tainted Marsh
+					["sourceQuests"] = { 45564 },	-- The Burning Birds
+					["provider"] = { "n", 117249 },	-- Navarrogg
+					["classes"] = {
+						HUNTER,		-- Beast Mastery
+						MONK,		-- Windwalker
+						PRIEST,		-- Discipline
+						WARLOCK,	-- Destruction
+					},
+					["lvl"] = 110,
 				}),
 				q(39321, {	-- The Three
 					["sourceQuests"] = { 38910 },	-- Rocs vs Eagles
@@ -874,6 +924,17 @@ _.Zones =
 					["coord"] = { 39.6, 53.8, 659 },	-- Stonedark Grotto
 					["provider"] = { "n", 95392 },	-- Navarrogg
 				}),
+				q(45575, {	-- Village of the Corruptors
+					["classes"] = {
+						HUNTER,		-- Beast Mastery
+						MONK,		-- Windwalker
+						PRIEST,		-- Discipline
+						WARLOCK,	-- Destruction
+					},
+					["sourceQuests"] = { 45726 },	-- The Tainted Marsh
+					["provider"] = { "n", 117249 },	-- Navarrogg
+					["lvl"] = 110,
+				}),
 				q(39765, {	-- Wax On, Wax Off
 					["coord"] = { 54.7, 45.0, 650 },
 					["provider"] = { "n", 96984 },	-- Oenia Skyhorn
@@ -921,7 +982,6 @@ _.Zones =
 				q(39646),	-- Albino Elderhorn
 				q(41053),	-- Altar of the Eternal Hunt
 				q(40413),	-- Amateur Hunters
-				q(46022),	-- An Urgent Warning
 				q(42505),	-- Arcanist Shal'iman
 				q(41823),	-- Ashes to Ashes
 				q(42404),	-- Assisting the Archmage
@@ -958,7 +1018,6 @@ _.Zones =
 				q(44272),	-- Darkheart Thicket
 				q(42654),	-- Darkheart Thicket: Nightmare Oak
 				q(47073),	-- Delivering Lost Knowledge
-				q(45796),	-- Destroying the Nest
 				q(45560),	-- Destruction: Rumblings Near Feltotem
 				q(45551),	-- Devastating Effects
 				q(40414),	-- Devouring Darkness
@@ -978,7 +1037,6 @@ _.Zones =
 				q(40347),	-- Gurbog da Basher
 				q(39436),	-- Haglands Treasure
 				q(39827),	-- Haglands Treasure
-				q(40190),	-- Hardening the Hide
 				q(40134),	-- Highmountain Hides
 				q(42403),	-- Highmountain Hunters
 				q(42929),	-- Highmountain Salmon
@@ -992,7 +1050,6 @@ _.Zones =
 				q(42405),	-- Informing Our Allies
 				q(41047),	-- Infused with Power
 				q(42376),	-- Inquisitor Tivos
-				q(46023),	-- Investigate the Broken Shore
 				q(43957),	-- Jade Darkhaven
 				q(43815),	-- Karthax
 				q(39989),	-- Keepers of the Hammer
@@ -1073,11 +1130,9 @@ _.Zones =
 				q(40184),	-- Tauren Tanning
 				q(42526),	-- Tech It Up A Notch
 				q(44263),	-- The Arcway
-				q(45564),	-- The Burning Birds
 				q(40959),	-- The Campaign Begins
 				q(41829),	-- The Darkfeather Scout
 				q(39427),	-- The Eagle Spirit's Blessing
-				q(45587),	-- The Feltotem Menace
 				q(40202),	-- The Final Lessons
 				q(40135),	-- The Freedom to Roam
 				q(38513),	-- The Highmountain Smiths
@@ -1091,7 +1146,6 @@ _.Zones =
 				q(42407),	-- The Nature of the Beast
 				q(41192),	-- The Right Path
 				q(42401),	-- The Scent of Magic
-				q(45726),	-- The Tainted Marsh
 				q(40954),	-- The Unseen Path
 				q(44055),	-- They Have A Pitlord
 				q(39878),	-- Thunder Struck
@@ -1110,7 +1164,6 @@ _.Zones =
 				q(44261),	-- Vault of the Wardens
 				q(44260),	-- Vault of the Wardens
 				q(42373),	-- Vengeance for the Stonedark
-				q(45575),	-- Village of the Corruptors
 				q(44259),	-- Violet Hold
 				q(44258),	-- Violet Hold
 				q(42280),	-- Vorthax

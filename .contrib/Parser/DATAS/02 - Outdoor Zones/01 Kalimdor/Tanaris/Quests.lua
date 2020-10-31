@@ -598,12 +598,10 @@ _.Zones =
 					["sourceQuest"] = 1690,	-- Wastewander Justice
 				}),
 				q(12513, {	-- Nice Hat...
-					-- CRIEVE NOTE: Have this completed on Warrior, can't accept 12515. Also can't accept this quest on Druid.
-					-- Some people are still able to get this.  Not sure what the exact criteria are that need to be met.
+					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["provider"] = { "n", 28126 },	-- Don Carlos
 					["coord"] = { 50.7, 27.5, 71 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
+					["races"] = { HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME },
 					["g"] = {
 						i(38276, {	-- Haliscan Brimmed Hat
 							["ignoreSource"] = true,	-- White Item
@@ -611,11 +609,10 @@ _.Zones =
 					},
 				}),
 				q(12515, {	-- Nice Hat...
-					-- CRIEVE NOTE: Got this on Druid, who doesn't have 12513 completed. [5/4/2019]
+					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["provider"] = { "n", 28126 },	-- Don Carlos
 					["coord"] = { 50.7, 27.5, 71 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
+					["races"] = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME }, ALL_RACES),
 					["g"] = {
 						i(38276, {	-- Haliscan Brimmed Hat
 							["ignoreSource"] = true,	-- White Item
@@ -1265,7 +1262,7 @@ _.Zones =
 						i(29305),	-- Band of the Eternal Sage
 						i(29309),	-- Band of the Eternal Restorer
 					},
-					["classes"] = { 1, 2, 6, 10, 11, 12 },
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT, MONK, DRUID, DEMONHUNTER },
 				}),
 				q(11104, {	-- Restorer No More
 					["provider"] = { "n", 19935 },	-- Soridormi

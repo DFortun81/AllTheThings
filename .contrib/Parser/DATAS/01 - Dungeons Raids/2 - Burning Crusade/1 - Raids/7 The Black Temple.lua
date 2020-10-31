@@ -1251,7 +1251,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			d(24, {	-- Timewalking
 				["lvl"] = 71,
-				["g"] = {	
+				["g"] = {
 					cr(22887, e(1582, {	-- High Warlord Naj'entus
 						i(122104),	-- Leviathan Egg (PET!)
 						i(150447),	-- Halberd of Desolation
@@ -1412,6 +1412,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 				},
 			}),
-		},	
+		},
 	}),
 })};

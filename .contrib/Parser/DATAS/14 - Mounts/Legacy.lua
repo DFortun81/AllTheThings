@@ -1,9 +1,99 @@
 ---------------------------------------------
 --       M O U N T S     M O D U L E       --
 ---------------------------------------------
+
 _.Mounts =
 {
 	n(-40, {
+		n(-9958, {	-- PvP
+			un(REMOVED_FROM_GAME, ach(886, {	-- Swift Nether Drake
+				un(REMOVED_FROM_GAME, i(30609)),	-- Swift Nether Drake
+			})),
+			un(REMOVED_FROM_GAME, ach(887, {	-- Merciless Nether Drake
+				un(REMOVED_FROM_GAME, i(34092)),	-- Merciless Nether Drake
+			})),
+			un(REMOVED_FROM_GAME, ach(888, {	-- Vengeful Nether Drake
+				un(REMOVED_FROM_GAME, i(37676)),	-- Vengeful Nether Drake
+			})),
+			un(REMOVED_FROM_GAME, ach(2316, {	-- Brutal Nether Drake
+				un(REMOVED_FROM_GAME, i(43516)),	-- Brutal Nether Drake
+			})),
+			un(REMOVED_FROM_GAME, ach(3096, {	-- Deadly Gladiator's Frost Wyrm
+				un(REMOVED_FROM_GAME, i(46708)),	-- Deadly Gladiator's Frost Wyrm
+			})),
+			un(REMOVED_FROM_GAME, ach(3756, {	-- Furious Gladiator's Frost Wyrm
+				un(REMOVED_FROM_GAME, i(46171)),	-- Furious Gladiator's Frost Wyrm
+			})),
+			un(REMOVED_FROM_GAME, ach(3757, {	-- Relentless Gladiator's Frost Wyrm
+				un(REMOVED_FROM_GAME, i(47840)),	-- Relentless Gladiator's Frost Wyrm
+			})),
+			un(REMOVED_FROM_GAME, ach(4600, {	-- Wrathful Gladiator's Frost Wyrm
+				un(REMOVED_FROM_GAME, i(50435)),	-- Wrathful Gladiator's Frost Wyrm
+			})),
+			un(REMOVED_FROM_GAME, ach(6003, {	-- Vicious Gladiator's Twilight Drake
+				un(REMOVED_FROM_GAME, i(71339)),	-- Vicious Gladiator's Twilight Drake
+			})),
+			un(REMOVED_FROM_GAME, ach(6322, {	-- Ruthless Gladiator's Twilight Drake
+				un(REMOVED_FROM_GAME, i(71954)),	-- Ruthless Gladiator's Twilight Drake
+			})),
+			un(REMOVED_FROM_GAME, ach(6741, {	-- Cataclysmic Gladiator's Twilight Drake
+				un(REMOVED_FROM_GAME, i(85785)),	-- Cataclysmic Gladiator's Twilight Drake
+			})),
+			un(REMOVED_FROM_GAME, ach(8216, {	-- Malevolent Gladiator's Cloud Serpent
+				un(REMOVED_FROM_GAME, i(95041)),	-- Malevolent Gladiator's Cloud Serpent
+			})),
+			un(REMOVED_FROM_GAME, ach(8678, {	-- Tyrannical Gladiator's Cloud Serpent
+				un(REMOVED_FROM_GAME, i(104325)),	-- Tyrannical Gladiator's Cloud Serpent
+			})),
+			un(REMOVED_FROM_GAME, ach(8705, {	-- Grievous Gladiator's Cloud Serpent
+				un(REMOVED_FROM_GAME, i(104326)),	-- Grievous Gladiator's Cloud Serpent
+			})),
+			un(REMOVED_FROM_GAME, ach(8707, {	-- Prideful Gladiator's Cloud Serpent
+				un(REMOVED_FROM_GAME, i(104327)),	-- Prideful Gladiator's Cloud Serpent
+			})),
+			un(REMOVED_FROM_GAME, ach(9239, {	-- Gladiator: Warlords Season 1
+				un(REMOVED_FROM_GAME, i(128277)),	-- Primal Gladiator's Felblood Gronnling
+			})),
+			un(REMOVED_FROM_GAME, ach(10098, {	-- Gladiator: Warlords Season 2
+				un(REMOVED_FROM_GAME, i(128281)),	-- Wild Gladiator's Felblood Gronnling
+			})),
+			un(REMOVED_FROM_GAME, ach(10110, {	-- Gladiator: Warlords Season 3
+				un(REMOVED_FROM_GAME, i(128282)),	-- Warmongering Gladiator's Felblood Gronnling
+			})),
+			un(REMOVED_FROM_GAME, ach(11011, {	-- Gladiator: Legion Season 1
+				un(REMOVED_FROM_GAME, i(141843)),	-- Vindictive Gladiator's Storm Dragon
+			})),
+			un(REMOVED_FROM_GAME, ach(11013, {	-- Gladiator: Legion Season 2
+				un(REMOVED_FROM_GAME, i(141844)),	-- Fearless Gladiator's Storm Dragon
+			})),
+			un(REMOVED_FROM_GAME, ach(11038, {	-- Gladiator: Legion Season 3
+				un(REMOVED_FROM_GAME, i(141845)),	-- Cruel Gladiator's Storm Dragon
+			})),
+			un(REMOVED_FROM_GAME, ach(11061, {	-- Gladiator: Legion Season 4
+				un(REMOVED_FROM_GAME, i(141846)),	-- Ferocious Gladiator's Storm Dragon
+			})),
+			un(REMOVED_FROM_GAME, ach(12010, {	-- Fierce Gladiator: Legion Season 5
+				un(REMOVED_FROM_GAME, i(141847)),	-- Fierce Gladiator's Storm Dragon
+			})),
+			un(REMOVED_FROM_GAME, ach(12134, {	-- Dominant Gladiator: Legion Season 6
+				un(REMOVED_FROM_GAME, i(141848)),	-- Dominant Gladiator's Storm Dragon
+			})),
+			un(REMOVED_FROM_GAME, ach(12168, {	-- Gladiator: Legion Season 7
+				un(REMOVED_FROM_GAME, i(153493)),	-- Demonic Gladiator's Storm Dragon
+			})),
+			un(REMOVED_FROM_GAME, ach(12961, {	-- Gladiator: Battle for Azeroth Season 1
+				un(REMOVED_FROM_GAME, i(156879)),	-- Dread Gladiator's Proto-Drake
+			})),
+			un(REMOVED_FROM_GAME, ach(13212, {	-- Gladiator: Battle for Azeroth Season 2
+				un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake
+			})),
+			un(REMOVED_FROM_GAME, ach(13647, {	-- Gladiator: Battle for Azeroth Season 3
+				un(REMOVED_FROM_GAME, i(156881)),	-- Notorious Gladiator's Proto-Drake
+			})),
+			un(REMOVED_FROM_GAME, ach(13967, {	-- Gladiator: Battle for Azeroth Season 4
+				un(REMOVED_FROM_GAME, i(156884)),	-- Dread Gladiator's Proto-Drake
+			})),
+		}),
 		un(REMOVED_FROM_GAME, ach(4156, {	-- A Tribute to Immortality
 			un(REMOVED_FROM_GAME, i(49096)),	-- Crusader's White Warhorse
 		})),
@@ -11,10 +101,6 @@ _.Mounts =
 			un(REMOVED_FROM_GAME, i(49098)),	-- Crusader's Black Warhorse
 		})),
 		un(REMOVED_FROM_GAME, ach(3810, {	-- A Tribute to Insanity (10 Player)
-			un(REMOVED_FROM_GAME, i(49044)),	-- Swift Alliance Steed
-			un(REMOVED_FROM_GAME, i(49046)),	-- Swift Horde Wolf
-		})),
-		un(REMOVED_FROM_GAME, ach(3819, {	-- A Tribute to Insanity (25 Player)
 			un(REMOVED_FROM_GAME, i(49044)),	-- Swift Alliance Steed
 			un(REMOVED_FROM_GAME, i(49046)),	-- Swift Horde Wolf
 		})),
@@ -77,7 +163,7 @@ _.Mounts =
 			un(REMOVED_FROM_GAME, i(12303)),	-- Reins of the Nightsaber
 			un(REMOVED_FROM_GAME, i(15293)),	-- Teal Kodo
 			un(REMOVED_FROM_GAME, i(13317)),	-- Whistle of the Ivory Raptor
-			un(REMOVED_FROM_GAME, i(8586)),	-- Whistle of the Mottled Red Raptor
+			un(REMOVED_FROM_GAME, i(8586)),		-- Whistle of the Mottled Red Raptor
 			un(REMOVED_FROM_GAME, i(13326)),	-- White Mechanostrider Mod B
 			un(REMOVED_FROM_GAME, i(12353)),	-- White Stallion Bridle
 		})),
@@ -92,87 +178,6 @@ _.Mounts =
 		})),
 		un(REMOVED_FROM_GAME, ach(9496, {	-- Warlord's Deathwheel
 			un(REMOVED_FROM_GAME, i(116788)),	-- Warlord's Deathwheel
-		})),
-		un(REMOVED_FROM_GAME, ach(886, {	-- Swift Nether Drake
-			un(REMOVED_FROM_GAME, i(30609)),	-- Swift Nether Drake
-		})),
-		un(REMOVED_FROM_GAME, ach(887, {	-- Merciless Nether Drake
-			un(REMOVED_FROM_GAME, i(34092)),	-- Merciless Nether Drake
-		})),
-		un(REMOVED_FROM_GAME, ach(888, {	-- Vengeful Nether Drake
-			un(REMOVED_FROM_GAME, i(37676)),	-- Vengeful Nether Drake
-		})),
-		un(REMOVED_FROM_GAME, ach(2316, {	-- Brutal Nether Drake
-			un(REMOVED_FROM_GAME, i(43516)),	-- Brutal Nether Drake
-		})),
-		un(REMOVED_FROM_GAME, ach(3096, {	-- Deadly Gladiator's Frost Wyrm
-			un(REMOVED_FROM_GAME, i(46708)),	-- Deadly Gladiator's Frost Wyrm
-		})),
-		un(REMOVED_FROM_GAME, ach(3756, {	-- Furious Gladiator's Frost Wyrm
-			un(REMOVED_FROM_GAME, i(46171)),	-- Furious Gladiator's Frost Wyrm
-		})),
-		un(REMOVED_FROM_GAME, ach(3757, {	-- Relentless Gladiator's Frost Wyrm
-			un(REMOVED_FROM_GAME, i(47840)),	-- Relentless Gladiator's Frost Wyrm
-		})),
-		un(REMOVED_FROM_GAME, ach(4600, {	-- Wrathful Gladiator's Frost Wyrm
-			un(REMOVED_FROM_GAME, i(50435)),	-- Wrathful Gladiator's Frost Wyrm
-		})),
-		un(REMOVED_FROM_GAME, ach(6003, {	-- Vicious Gladiator's Twilight Drake
-			un(REMOVED_FROM_GAME, i(71339)),	-- Vicious Gladiator's Twilight Drake
-		})),
-		un(REMOVED_FROM_GAME, ach(6322, {	-- Ruthless Gladiator's Twilight Drake
-			un(REMOVED_FROM_GAME, i(71954)),	-- Ruthless Gladiator's Twilight Drake
-		})),
-		un(REMOVED_FROM_GAME, ach(6741, {	-- Cataclysmic Gladiator's Twilight Drake
-			un(REMOVED_FROM_GAME, i(85785)),	-- Cataclysmic Gladiator's Twilight Drake
-		})),
-		un(REMOVED_FROM_GAME, ach(8216, {	-- Malevolent Gladiator's Cloud Serpent
-			un(REMOVED_FROM_GAME, i(95041)),	-- Malevolent Gladiator's Cloud Serpent
-		})),
-		un(REMOVED_FROM_GAME, ach(8678, {	-- Tyrannical Gladiator's Cloud Serpent
-			un(REMOVED_FROM_GAME, i(104325)),	-- Tyrannical Gladiator's Cloud Serpent
-		})),
-		un(REMOVED_FROM_GAME, ach(8705, {	-- Grievous Gladiator's Cloud Serpent
-			un(REMOVED_FROM_GAME, i(104326)),	-- Grievous Gladiator's Cloud Serpent
-		})),
-		un(REMOVED_FROM_GAME, ach(8707, {	-- Prideful Gladiator's Cloud Serpent
-			un(REMOVED_FROM_GAME, i(104327)),	-- Prideful Gladiator's Cloud Serpent
-		})),
-		un(REMOVED_FROM_GAME, ach(9239, {	-- Gladiator: Warlords Season 1
-			un(REMOVED_FROM_GAME, i(128277)),	-- Primal Gladiator's Felblood Gronnling
-		})),
-		un(REMOVED_FROM_GAME, ach(10098, {	-- Gladiator: Warlords Season 2
-			un(REMOVED_FROM_GAME, i(128281)),	-- Wild Gladiator's Felblood Gronnling
-		})),
-		un(REMOVED_FROM_GAME, ach(10110, {	-- Gladiator: Warlords Season 3
-			un(REMOVED_FROM_GAME, i(128282)),	-- Warmongering Gladiator's Felblood Gronnling
-		})),
-		un(REMOVED_FROM_GAME, ach(11011, {	-- Gladiator: Legion Season 1
-			un(REMOVED_FROM_GAME, i(141843)),	-- Vindictive Gladiator's Storm Dragon
-		})),
-		un(REMOVED_FROM_GAME, ach(11013, {	-- Gladiator: Legion Season 2
-			un(REMOVED_FROM_GAME, i(141844)),	-- Fearless Gladiator's Storm Dragon
-		})),
-		un(REMOVED_FROM_GAME, ach(11038, {	-- Gladiator: Legion Season 3
-			un(REMOVED_FROM_GAME, i(141845)),	-- Cruel Gladiator's Storm Dragon
-		})),
-		un(REMOVED_FROM_GAME, ach(11061, {	-- Gladiator: Legion Season 4
-			un(REMOVED_FROM_GAME, i(141846)),	-- Ferocious Gladiator's Storm Dragon
-		})),
-		un(REMOVED_FROM_GAME, ach(12010, {	-- Fierce Gladiator: Legion Season 5
-			un(REMOVED_FROM_GAME, i(141847)),	-- Fierce Gladiator's Storm Dragon
-		})),
-		un(REMOVED_FROM_GAME, ach(12134, {	-- Dominant Gladiator: Legion Season 6
-			un(REMOVED_FROM_GAME, i(141848)),	-- Dominant Gladiator's Storm Dragon
-		})),
-		un(REMOVED_FROM_GAME, ach(12168, {	-- Gladiator: Legion Season 7
-			["collectible"] = false,
-			["g"] = {
-				i(153493),	-- Demonic Gladiator's Storm Dragon
-			},
-		})),
-		un(REMOVED_FROM_GAME, ach(12961, {	-- Gladiator: Battle for Azeroth Season 1
-			i(156879),	-- Dread Gladiator's Proto-Drake
 		})),
 	}),
 };

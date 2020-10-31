@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -134,7 +135,7 @@ _.Zones =
 						i(95423),	-- Zandalari Footlsasher
 						i(94126),	-- Zandalari Kneebiter
 						i(94232, {	-- Ancient Tome of Dinomancy
-							["classes"] = { 3 },	-- Hunter
+							["classes"] = { HUNTER },
 							--["spellID"] = 138430,	-- Ancient Zandalari Knowledge
 						}),
 					}),

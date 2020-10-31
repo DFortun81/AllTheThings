@@ -76,13 +76,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 935,	-- The Waters of Teldrassil
 				}),
-				q(32416, {	-- Jaina's Resolution
-					["provider"] = { "n", 68651 },	-- Lady Jaina Proudmoore
-					["coord"] = { 40.0, 50.4, 57 },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 32460,	-- Tracking the Thieves
-					["level"] = 81,
-				}),
 				q(938,   {	-- Mist
 					["provider"] = { "n", 3568 },	-- Mist
 					["coord"] = { 34.5, 27.8 },

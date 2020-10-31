@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -53,7 +54,7 @@ _.Zones =
 						{ 60.4, 46.6, 534 },	-- Horde accessible
 						{ 57.8, 59.4, 534 },	-- Alliance accessible
 					},
-					["g"] = { 
+					["g"] = {
 						i(124562, {	-- Baleful Armament
 							["cost"] = { { "c", 823, 10000 }, },	-- 10,000x Apexis Crystal
 						}),
@@ -225,6 +226,15 @@ _.Zones =
 							["g"] = {
 								follower(580),	-- Pallas
 							},
+						}),
+						i(124094, {	-- Major Blackfang Challenge Totem
+							["description"] = "\nUsed to summon Rendarr.\n\n",
+						}),
+						i(124093, {	-- Minor Blackfang Challenge Totem
+							["description"] = "\nUsed to summon Akrrilo.\n\n",
+						}),
+						i(124095, {	-- Prime Blackfang Challenge Totem
+							["description"] = "\nUsed to summon Eyepiercer.\n\n",
 						}),
 						i(128449),	-- Saberstalkers Tabard
 						i(128477, {	-- Savage Cub (PET!)

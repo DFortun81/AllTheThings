@@ -1,18 +1,20 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
-	m(13, {	-- Eastern Kingdoms		
+	m(13, {	-- Eastern Kingdoms
 		m(42, {	-- Deadwind Pass
 			n(QUESTS, {
---[[			
 				q(40933, {	-- A Grisly Task
-					["provider"] = { "n", 100729 },	-- 
-					["classes"] = {6},
+					["provider"] = { "n", 100729 },	-- Revil Kost
+					["coord"] = { 52.3, 34.5, 42 },
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 40932,	-- Disturbing the Past
 				}),
-				q(44421, {	-- Anomalous Anomalies
-					["provider"] = { "n", 113986 },	-- 
+				--[[q(44421, {	-- Anomalous Anomalies
+					["provider"] = { "n", 113986 },	--
 				}),
 				]]--
 				q(11031, {	-- Archmage No More
@@ -37,12 +39,12 @@ _.Zones =
 				}),
 				--[[
 				q(44500, {	-- Author! Author!
-					["provider"] = { "n", 113986 },	-- 
+					["provider"] = { "n", 113986 },	--
 				}),
 --]]
 				ql(q(30109, {	-- Blood of the Betrayer
 					["provider"] = { "n", 57770 },	-- Zazzo Twinklefingers
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["sourceQuests"] = { 30108 },	-- Our Man in Karazhan
 				})),
 				q(44865, {	-- Butler to the Great
@@ -55,13 +57,19 @@ _.Zones =
 				}),
 --[[
 				q(40717, {	-- Calling of the Council
-					["provider"] = { "n", 114550 },	-- 
+					["provider"] = { "n", 114550 },	--
 					["races"] = ALLIANCE_ONLY,
 				}),
 ]]--
 				q(44684, {	-- Corruption Runs Deep
 					["provider"] = { "n", 114631 },	-- Archmage Karlain
 					["coord"] = { 46.9, 75.3, 42 },
+				}),
+				q(40934, {	-- The Dark Riders
+					["provider"] = { "n", 100812 },	-- Revil Kost
+					["coord"] = { 49.4, 74.6, 42 },
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 40933, -- A Grisly Task
 				}),
 				q(44764, {	-- Demon in Disguise
 					["provider"] = { "n", 114631 },	-- Archmage Karlain <Kirin Tor>
@@ -73,28 +81,24 @@ _.Zones =
 					["provider"] = { "n", 100729 },	-- Revil Kost
 					["lvl"] = 98,
 					["coord"] = { 52.3, 34.5, 42 },
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["sourceQuest"] = 40588,	-- Following the Curse
 				}),
-				--[[
 				q(40932, {	-- Disturbing the Past
-					["provider"] = { "n", 100729 },	-- 
-					["classes"] = {6},
+					["provider"] = { "n", 100729 },	-- Revil Kost
+					["coord"] = { 52.3, 34.5, 42 },
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 40931,	-- Following the Curse
 				}),
-]]--
 				q(44557, {	-- Finite Numbers
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar
 					["lvl"] = 110,
 					["coord"] = { 47.0, 75.2, 42 },
 				}),
 --[[
-				q(40931, {	-- Following the Curse
-					["provider"] = { "n", 100323 },	-- 
-					["classes"] = {6},
-				}),
 				q(40588, {	-- Following the Curse
-					["provider"] = { "n", 100323 },	-- 
-					["classes"] = {9},
+					["provider"] = { "n", 100323 },	--
+					["classes"] = { WARLOCK },
 				}),
 				]]--
 				q(44734, {	-- Fragments of the Past
@@ -108,7 +112,7 @@ _.Zones =
 				}),
 				--[[
 				q(40755, {	-- Hiding in the Stacks
-					["provider"] = { "n", 101547 },	-- 
+					["provider"] = { "n", 101547 },	--
 				}),
 ]]--
 				q(44683, {	-- Holding the Lines
@@ -118,7 +122,7 @@ _.Zones =
 				}),
 --[[
 				q(45296, {	-- No Bones About It
-					["provider"] = { "n", 18255 },	-- 
+					["provider"] = { "n", 18255 },	--
 					 ["description"] = "This quest is offered after completion of 'Return to Karazhan: Clearing Out the Cobwebs.'",
 				}),
 				]]--
@@ -225,50 +229,42 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				--[[
-				q(40935, {	-- The Call of Vengeance (map blank
-					["provider"] = { "n", 101282 },	-- 
-					["classes"] = {6},
-				}),
 				q(40987, {	-- The Call of Vengeance (map blank
-					["provider"] = { "n", 101282 },	-- 
-					["classes"] = {6},
-				}),
-				q(40934, {	-- The Dark Riders
-					["provider"] = { "n", 100812 },	-- 
-					["classes"] = {6},
+					["provider"] = { "n", 101282 },	--
+					["classes"] = { DEATHKNIGHT },
 				}),
 				q(40986, {	-- The Dark Riders
-					["provider"] = { "n", 100812 },	-- 
-					["classes"] = {6},
+					["provider"] = { "n", 100812 },	--
+					["classes"] = { DEATHKNIGHT },
 				}),
 				q(41155, {	-- The Dark Riders
-					["provider"] = { "n", 100812 },	-- 
-					["classes"] = {9},
+					["provider"] = { "n", 100812 },	--
+					["classes"] = { WARLOCK },
 				}),
 --]]
 				q(40623, {	-- The Dark Riders
 					["provider"] = { "n", 100812 },	-- Revil Kost
 					["lvl"] = 98,
 					["coord"] = { 49.4, 74.8, 628 },
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["sourceQuest"] = 40611,	-- The Fate of Deadwind
 				}),
 --[[´
 				q(42970, {	-- The Diamond King
-					["provider"] = { "n", 113655 },	-- 
+					["provider"] = { "n", 113655 },	--
 				}),
 --]]
 				q(40611, {	-- The Fate of Deadwind
 					["provider"] = { "n", 100729 },	-- Revil Kost
 					["lvl"] = 98,
 					["coord"] = { 52.3, 34.4, 628 },
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["sourceQuest"] = 40606,	-- To Point the Way
 				}),
 --[[
 				o(254007, {	-- Executioner's Altar
 					q(44154, {	-- The Rite of the Executioner
-						["classes"] = {9},
+						["classes"] = { WARLOCK },
 					}),
 				}),
 				]]--
@@ -276,7 +272,7 @@ _.Zones =
 					["lvl"] = 98,
 					["icon"] = "Interface\\Icons\\inv_offhand_1h_draenorcrafted_d_02a",
 					["coord"] = { 52.3, 33.9, 42 },
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["sourceQuest"] = 40604,	-- Disturbing the Past
 				}),
 				q(44686, {	-- Thought Collection
@@ -287,6 +283,14 @@ _.Zones =
 						44684,	-- Corruption Runs Deep
 						44557,	-- Finite Numbers
 						44683,	-- Holding the Lines
+					},
+				}),
+				q(40935, {	-- The Call of Vengeance
+					["provider"] = { "n", 101282 },	-- Revil Kost
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 40934, -- The Dark Riders
+					["g"] = {
+						i(128403), -- Apocalypse (Artifact)
 					},
 				}),
 				q(9860, {	-- The New Directive
@@ -306,7 +310,7 @@ _.Zones =
 					["provider"] = { "n", 101282 },	-- Revil Kost
 					["lvl"] = 98,
 					["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["sourceQuests"] = {
 						40623,	-- The Dark Riders
 						41155,	-- The Dark Riders
@@ -315,7 +319,7 @@ _.Zones =
 				}),
 				q(41156, {	-- The Power Possessed
 					["provider"] = { "n", 101282 },	-- Revil Kost
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["sourceQuests"] = {
 						40623,	-- The Dark Riders
 						41155,	-- The Dark Riders
@@ -324,7 +328,7 @@ _.Zones =
 				}),
 				ql(q(30113, {	-- Victory in the Depths
 					["provider"] = { "n", 57770 },	-- Zazzo Twinklefingers
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["sourceQuest"] = 30109,	-- Blood of the Betrayer
 					["g"] = {
 						i(77947),	-- The Sleeper
@@ -343,6 +347,6 @@ _.Zones =
 					},
 				}),
 			}),
-		}),	
+		}),
 	}),
 };

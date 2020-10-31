@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -120,7 +121,7 @@ _.Zones =
 					["provider"] = { "n", 15970 },	-- Instructor Antheol
 					["coord"] = { 55.7, 54.5, 94 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(8884,  {	-- Fish Heads, Fish Heads...
 					["provider"] = { "n", 15920 },	-- Hathvelion Sungaze
@@ -131,12 +132,12 @@ _.Zones =
 					["provider"] = { "n", 44036 },	-- Skymaster Brightdawn
 					["coord"] = { 43.9, 69.9, 94 },
 					["sourceQuest"] = 9130,	-- Goods from Silvermoon City
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 				}),
 				q(9130,  {	-- Goods from Silvermoon City
 					["provider"] = { "n", 16261 },	-- Sathiel
 					["coord"] = { 43.6, 71.5, 94 },
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 				}),
 				q(8886,  {	-- Grimscale Pirates!
 					["provider"] = { "n", 15921 },	-- Captain Kelisendra
@@ -149,7 +150,7 @@ _.Zones =
 					["provider"] = { "i", 20765 },	-- Incriminating Documents
 				}),
 				q(32668, {	-- Learn To Ride
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["description"] = "This quest is automatically offered to Blood Elves upon reaching Level 20.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
@@ -215,7 +216,7 @@ _.Zones =
 					["provider"] = { "n", 15970 },	-- Instructor Antheol
 					["coord"] = { 55.7, 54.5, 94 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["sourceQuest"] = 9403,	-- The Purest Water
 					["g"] = {
 						i(9513),	-- Ley Staff
@@ -232,12 +233,12 @@ _.Zones =
 					["provider"] = { "n", 16192 },	-- Skymistress Gloaming
 					["coord"] = { 54.3, 50.7, 94 },
 					["sourceQuest"] = 9134,	-- Skymistress Gloaming
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 				}),
 				q(9691, {	-- Return to Silvermoon
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17807 },	-- Master Kelerun Bloodmourn
 					["sourceQuest"] = 9686,	-- The Second Trial
 				}),
@@ -280,8 +281,8 @@ _.Zones =
 				}),
 				q(9677, {	-- Summons from Knight-Lord Bloodvalor
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 16275 },	-- Noellene
 				}),
 				q(9066,  {	-- Swift Discipline
@@ -328,7 +329,7 @@ _.Zones =
 				q(9403,  {	-- The Purest Water
 					["provider"] = { "n", 15970 },	-- Instructor Antheol
 					["coord"] = { 55.7, 54.5, 94 },
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9402,	-- Fetch!
 				}),
@@ -346,8 +347,8 @@ _.Zones =
 				}),
 				q(9686, {	-- The Second Trial
 					["u"] = REMOVED_FROM_GAME,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 17807 },	-- Master Kelrun Bloodmourn
 					["sourceQuest"] = 9690,	-- The Second Trial
 				}),

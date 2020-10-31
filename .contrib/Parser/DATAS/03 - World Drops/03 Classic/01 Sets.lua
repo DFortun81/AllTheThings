@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+
+_.WorldDrops =
 {
 	tier(1, {	-- Classic
 		n(-1000, {	-- Sets
@@ -1737,5 +1738,5 @@ _.WorldDrops =
 			i(15337),	-- Wrangler's Wraps
 			i(15331),	-- Wrangler's Wristbands
 		}),
-	}),	
+	}),
 };

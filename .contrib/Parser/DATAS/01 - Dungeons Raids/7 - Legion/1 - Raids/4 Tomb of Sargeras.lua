@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 _.Instances = { tier(7, {	-- Legion
 	inst(875, { 	-- Tomb of Sargeras
@@ -132,7 +133,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(147038),	-- Wakening Horror Spaulders
 					},
 				}),
-				ach(11787, { 	-- The Gates of Hell	
+				ach(11787, { 	-- The Gates of Hell
 					["cr"] = 111246,	-- Archmage Timear
 					["g"] = {
 						e(1862, {	-- Goroth
@@ -255,7 +256,7 @@ _.Instances = { tier(7, {	-- Legion
 								i(147096),	-- Inquisition's Master Key
 								i(147088),	-- Smoldering Thumbscrews
 							},
-						}),	
+						}),
 						e(1903, {	-- Sisters of the Moon
 							["crs"] = {
 								118374,	-- Sisters of the Moon (Captain Yathae Moonstrike)

@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -8,7 +8,7 @@ _.Zones =
 		m(896, {	-- Drustvar
 			n(VENDORS, {
 				n(142197, {	-- Nigel Rifthold <Adventurer's Society>
-					["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at his coords and click on the chest twice.",	
+					["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at his coords and click on the chest twice.",
 					["coord"] = { 52.2, 31.6, 896 },
 					["g"] = {
 						i(163493, {	-- Bloody Rabbit Fang
@@ -20,7 +20,6 @@ _.Zones =
 						}),
 						i(163492, {	-- Drustvar Piglet
 							["sourceQuests"] = { 47950 },	-- Cured Ham
-							["races"] = ALLIANCE_ONLY,
 							["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
 						}),
 						i(160708, {	-- Smoochums' Bloody Heart
@@ -120,7 +119,7 @@ _.Zones =
 						}),
 						i(162624, {	-- Tome of Hex: Wicker Mongrel
 							["spellID"] = 277784,	-- Hex (Wicker Mongrel)
-							["classes"] = { 7 },	-- Shaman
+							["classes"] = { SHAMAN },
 							["cost"] = 18000000,	-- 1,800g
 						}),
 						i(160535, {	-- Witch Hunter's Cape

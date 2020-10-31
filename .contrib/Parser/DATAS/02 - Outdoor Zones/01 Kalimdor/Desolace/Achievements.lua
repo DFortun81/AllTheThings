@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(66, {	-- Desolace
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4930, {	-- Desolace Quests
 					["g"] = {
 						crit(1, {	-- The Naga Threat

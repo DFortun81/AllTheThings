@@ -1,18 +1,33 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
 		m(534, {	-- Tanaan Jungle
 			n(RARES, {
 				-- Coords have been confirmed on rares except for some noted rares on longer spawn timers.
+				n(92766, {	-- Akrrilo <Shadowhunter of the Blackfang>
+					["description"] = "\nPurchase a Minor Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r.  Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Akrrilo.\n\n",
+					["questID"] = 39399,
+					["isDaily"] = true,
+					["coord"] = { 54.2, 80.8, 534 },
+					["g"] = {
+						crit(45, {	-- Akrrilo slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+					},
+				}),
 				n(91871, {	-- Argosh the Destroyer
 					["questID"] = 38430,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 52.6, 40.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127326),	-- Fel Destroyer Crossbow 
+						crit(51, {	-- Argosh the Destroyer slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127326),	-- Fel Destroyer Crossbow
 					},
 				}),
 				n(92552, {	-- Belgork
@@ -20,7 +35,10 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 35.6, 46.8, 534 },
 					["g"] = {
-						i(127650), 	-- Belgork's Bastion 
+						crit(35, {	-- Belgork slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127650), 	-- Belgork's Bastion
 						i(126950, {	-- Equipment Blueprint: Bilge Pump
 							["questID"] = 38932,	-- Equipment Blueprint: Bilge Pump
 						}),
@@ -31,17 +49,23 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 23.6, 52.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127307), 	-- Battle-Scuffed Spaulders 
+						crit(23, {	-- Bilkor the Thrower slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127307), 	-- Battle-Scuffed Spaulders
 					},
 				}),
 				n(92657, {	-- Bleeding Hollow Horror
 					["questID"] = 38696,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 50.8, 74.2, 534 },	-- Bleeding Hollow Horror	
+						{ 50.8, 74.2, 534 },	-- Bleeding Hollow Horror
 						{ 44.6, 77.5, 534 },	-- Cave Entrance
 					},
 					["g"] = {
+						crit(48, {	-- Bleeding Hollow Horror slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127654),	-- Burning Agony
 					},
 				}),
@@ -53,7 +77,10 @@ _.Zones =
 						{ 21.0, 53.0, 534 },
 					},
 					["g"] = {
-						i(127303), 	-- Zulk's Sneaky Slippers 
+						crit(27, {	-- Bloodhunter Zulk slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127303), 	-- Zulk's Sneaky Slippers
 					},
 				}),
 				n(91093, {	-- Bramblefell
@@ -64,6 +91,9 @@ _.Zones =
 						{ 39.2, 68.8, 534 },
 					},
 					["g"] = {
+						crit(2, {	-- Bramblefell slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127652), 	-- Felflame Campfire Toy
 					},
 				}),
@@ -72,6 +102,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 57.6, 67.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
+						crit(29, {	-- Broodlord Ixkor slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127349),	-- Silver Chitin Ring
 					},
 				}),
@@ -80,6 +113,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 48.6, 57.4, 534 },
 					["g"] = {
+						crit(59, {	-- Captain Grok'mar slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127664),	-- Grokmar's Greaves of Fortification
 					},
 				}),
@@ -88,6 +124,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 36.6, 79.8, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
+						crit(42, {	-- (The Real) Captain Ironbeard slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127659),	-- Ghostly Iron Buccaneer's Hat Toy
 						i(128257, {	-- Equipment Blueprint: Ghostly Spyglass
 							["questID"] = 39365,	-- Equipment Blueprint: Ghostly Spyglass
@@ -100,6 +139,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 31.6, 68.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
+						crit(8, {	-- Ceraxas slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						q(38428,{	-- A Fel Puppy Of My Own
 							i(129205),	-- A Tiny Infernal Collar (Fel Pup Pet)
 						}),
@@ -110,6 +152,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 44.6, 37.6, 534 },
 					["g"] = {
+						crit(10, {	-- Cindral the Wildfire slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127660),	-- Contained Flame
 						i(128255, {	-- Equipment Blueprint: Ice Cutter
 							["questID"] = 39363,	-- Equipment Blueprint: Ice Cutter
@@ -121,6 +166,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 15.0, 53.9, 534 },
 					["g"] = {
+						crit(18, {	-- Commander Krag'goth slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127319),	-- Krag'goth's Iron Gauntlets
 					},
 				}),
@@ -132,14 +180,20 @@ _.Zones =
 						{ 48.0, 44.8, 534 },
 					},
 					["g"] = {
-						i(127313),	-- Org'mok's Riding Chaps 
+						crit(60, {	-- Commander Org'mok
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127313),	-- Org'mok's Riding Chaps
 					},
 				}),
-				n(95053, {	-- Deathtalon
+				n(95053, {	-- Deathtalon <Avatar of Iskar>
 					["questID"] = 39287,
 					["isDaily"] = true,
 					["coord"] = { 22.8, 40.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
+						crit(2, {	-- Deathtalon, Avatar of Iskar slain
+							["achievementID"] = 10061,	-- Hellbane
+						}),
 						i(128025, {	-- Rattling Iron Cage
 							i(116669), 	-- Armored Razorback Mount
 							i(116658), 	-- Tundra Icehoof Mount
@@ -148,11 +202,14 @@ _.Zones =
 						i(128315),	-- Medallion of thee Legion
 					},
 				}),
-				n(95056, {	-- Doomroller
+				n(95056, {	-- Doomroller <Mar'tak's Creation>
 					["questID"] = 39289,
 					["isDaily"] = true,
 					["coord"] = { 47.0, 52.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
+						crit(4, {	-- Doomroller, Mar'tak's Creation
+							["achievementID"] = 10061,	-- Hellbane
+						}),
 						i(128025, {	-- Rattling Iron Cage
 							i(116669), 	-- Armored Razorback Mount
 							i(116658), 	-- Tundra Icehoof Mount
@@ -160,7 +217,7 @@ _.Zones =
 						}),
 						i(128315),	-- Medallion of thee Legion
 					},
-				}),	
+				}),
 				n(90887, {	-- Dorg the Bloody
 					["questID"] = 38265,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
@@ -170,6 +227,9 @@ _.Zones =
 					},
 					["isDaily"] = true,
 					["g"] = {
+						crit(25, {	-- Dorg the Bloody slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127301),	-- Bloody Aberration Strap
 					},
 				}),
@@ -178,7 +238,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 83.4, 43.6, 534 },
 					["g"] = {
-						i(108631),	-- Crashin' Thrashin' Roller Controller Toy
+						i(108631, {	-- Crashin' Thrashin' Roller Controller (TOY!)
+							crit(5, {	-- Crashin' Thrashin' Roller
+								["achievementID"] = 10353,	-- Iron Armada
+							}),
+						}),
 					},
 				}),
 				n(93028, {	-- Driss Vile
@@ -186,6 +250,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 20.2, 53.4, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
+						crit(41, {	-- Driss Vile slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127331),	-- Double-Scoped Long Rifle
 					},
 				}),
@@ -194,7 +261,10 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 25.7, 46.1, 534 },
 					["g"] = {
-						i(127298),	-- Blood Infused Leggings 
+						crit(26, {	-- Drivnul slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127298),	-- Blood Infused Leggings
 					},
 				}),
 				n(91727, {	-- Executor Riloth
@@ -202,7 +272,21 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 49.8, 36.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127323),	-- Bracers of Endless Suffering 
+						crit(50, {	-- Executor Riloth slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127323),	-- Bracers of Endless Suffering
+					},
+				}),
+				n(92819, {	-- Eyepiercer <Crazed Blackfang Warmonger>
+					["description"] = "\nPurchase a Prime Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r.  Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Eyepiercer.\n\n",
+					["questID"] = 39379,
+					["isDaily"] = true,
+					["coord"] = { 54.2, 80.8, 534 },
+					["g"] = {
+						crit(47, {	-- Eyepiercer slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 					},
 				}),
 				n(98408, {	-- Fel Overseer Mudlump
@@ -222,6 +306,9 @@ _.Zones =
 						{ 28.6, 50.8, 534 },	-- felbore
 					},
 					["g"] = {
+						crit(44, {	-- Felbore slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127350),	-- Fel Imbued Band
 					},
 				}),
@@ -230,6 +317,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 45.8, 47.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
+						crit(55, {	-- Felsmith Damorka slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127302),	-- Chemical Resistant Apron
 						i(128258, {	-- Equipment Blueprint: Felsmoke Launchers
 							["questID"] = 39366,	-- Equipment Blueprint: Felsmoke Launchers
@@ -245,7 +335,10 @@ _.Zones =
 						{ 52.2, 27.4, 534 },
 					},
 					["g"] = {
-						i(127656),	-- Fel Singed Wraps 
+						crit(4, {	-- Felspark slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127656),	-- Fel Singed Wraps
 					},
 				}),
 				n(92508, {	-- Gloomtalon
@@ -253,7 +346,10 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 63.6, 81.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127306),	-- Gloomtalon's Spare Kilt 
+						crit(31, {	-- Gloomtalon slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127306),	-- Gloomtalon's Spare Kilt
 					},
 				}),
 				n(93125, {	-- Glub'glok
@@ -261,7 +357,10 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 34.6, 78.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127317),	-- Murktide's Coveted Chestplate 
+						crit(43, {	-- Glub'glok slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127317),	-- Murktide's Coveted Chestplate
 					},
 				}),
 				n(98284, {	-- Gondar
@@ -269,7 +368,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 80.6, 56.4, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(108633),	-- Crashin' Thrashin' Cannon Controller Toy 
+						i(108633, {	-- Crashin' Thrashin' Cannon Controller (TOY!)
+							crit(4, {	-- Crashin' Thrashin' Cannon
+								["achievementID"] = 10353,	-- Iron Armada
+							}),
+						}),
 					},
 				}),
 				n(92941, {	-- Gorabosh
@@ -277,7 +380,10 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 33.3, 35.8, 534 },
 					["g"] = {
-						i(127304),	-- Cave Keeper Wraps 
+						crit(40, {	-- Gorabosh slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127304),	-- Cave Keeper Wraps
 					},
 				}),
 				n(91695, {	-- Grand Warlock Nethekurse
@@ -288,7 +394,10 @@ _.Zones =
 						{ 46.2, 42.8, 534 },
 					},
 					["g"] = {
-						i(127299),	-- Nehtekurse's Robe of Contempt 
+						crit(15, {	-- Grand Warlock Nethekurse slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127299),	-- Nehtekurse's Robe of Contempt
 					},
 				}),
 				n(93057, {	-- Grannok
@@ -296,6 +405,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 16.0, 59.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
+						crit(20, {	-- Grannok slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127649),	-- Trophy-Skull Choker
 					},
 				}),
@@ -304,18 +416,21 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 39.6, 32.6, 534 },
 					["g"] = {
-						i(127309),	-- Korak's Reinforced Iron Tunic 
+						crit(53, {	-- Harbormaster Korak slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127309),	-- Korak's Reinforced Iron Tunic
 					},
 				}),
 				n(90777, {	-- High Priest Ikzan
 					["questID"] = 38028,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 						{ 21.0, 37.4, 534 },
 						{ 20.4, 41.6, 534 },
 					},
 					["g"] = {
-						i(122117),	-- Cursed Feather of Ikzan Toy 
+						i(122117),	-- Cursed Feather of Ikzan (TOY!)
 					},
 				}),
 				n(90429, {	-- Imp-Master Valessa
@@ -326,14 +441,20 @@ _.Zones =
 						{ 31.0, 71.4, 534 },
 					},
 					["g"] = {
+						crit(5, {	-- Imp-Master Valessa slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127655),	-- Sassy Imp (TOY!)
 					},
 				}),
 				n(90437, {	-- Jax'zor
 					["questID"] = 38030,
-					["coord"] = { 26.6, 75.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["isDaily"] = true,
+					["coord"] = { 26.6, 75.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
+						crit(7, {	-- Jax'zor slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127322),	-- Fel Burnished Waistguard
 					},
 				}),
@@ -347,6 +468,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 52.0, 83.9, 534 },
 					["g"] = {
+						crit(32, {	-- Krell the Serene slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127418),	-- Soothing Incense Brazier
 					},
 				}),
@@ -358,6 +482,9 @@ _.Zones =
 						{ 42.4, 68.7, 534 },	-- Cave Entrance
 					},
 					["g"] = {
+						crit(49, {	-- Kris'kar the Unredeemed slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127653),	-- Wingblade of Reckoning
 					},
 				}),
@@ -366,7 +493,10 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 25.6, 76.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127316),	-- Oran's Cuffs of Malice 
+						crit(6, {	-- Lady Oran slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127316),	-- Oran's Cuffs of Malice
 					},
 				}),
 				n(96240, {	-- Lok'goron Hashslinger
@@ -380,15 +510,21 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 52.1, 65.1, 534 },
 					["g"] = {
-						i(127332),	-- Riverbeast Molar Club 
+						crit(17, {	-- Magwia slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127332),	-- Riverbeast Molar Club
 					},
 				}),
 				n(90442, {	-- Mistress Thavra
 					["questID"] = 38032,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 26.0, 79.4, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127300),	-- Shivan Shoulders of Scorn 
+						crit(9, {	-- Mistress Thavra slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127300),	-- Shivan Shoulders of Scorn
 					},
 				}),
 				n(92411, {	-- Overlord Ma'gruth
@@ -396,6 +532,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 53.0, 19.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
+						crit(58, {	-- Overlord Ma'gruth slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127320),	-- Mo'gruth's Discarded Parade Helm
 					},
 				}),
@@ -404,18 +543,24 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 53.6, 21.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127297),	-- Selora's Crown of Thorns 
+						crit(14, {	-- Painmistress Selora slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127297),	-- Selora's Crown of Thorns
 					},
 				}),
 				n(91374, {	-- Podlord Wakkawam
 					["questID"] = 38282,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coords"] = {
 						{ 16.8, 48.4, 534 },
 						{ 16.8, 49.6, 534 },
 					},
 					["g"] = {
-						i(127336),	-- Rod of the One True Podlord 
+						crit(1, {	-- Podlord Wakkawam slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127336),	-- Rod of the One True Podlord
 					},
 				}),
 				n(91009, {	-- Putre'thar
@@ -426,14 +571,20 @@ _.Zones =
 						{ 57.6, 23.2, 534 },
 					},
 					["g"] = {
+						crit(56, {	-- Putrethar slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127657),	-- Encroaching Void
 					},
 				}),
 				n(90782, {	-- Rasthe
 					["questID"] = 38034,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 17.4, 42.7, 534 },
 					["g"] = {
+						crit(13, {	-- Rasthe slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127661),	-- Fang of Rasthe
 					},
 				}),
@@ -442,27 +593,44 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 26.3, 54.3, 534 },
 					["g"] = {
-						i(127335),	-- Relgor's Master Glaive 
+						crit(28, {	-- Relgor slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127335),	-- Relgor's Master Glaive
 					},
 				}),
 				n(91227, {	-- Remnant of the Blood Moon
 					["questID"] = 39159,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["description"] = "Drain the Blood Moon to 0% health with Drained Blood Crystals to spawn Remnant of the Blood Moon.",
 					["coord"] = { 22.2, 50.6, 534 },
 					["g"] = {
-						i(127666),	-- Vial of Red Goo Toy
+						i(127666),	-- Vial of Red Goo (TOY!)
+					},
+				}),
+				n(92817, {	-- Rendarr <Warshaman of the Blackfang>
+					["description"] = "\nPurchase a Major Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r.  Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Rendarr.\n\n",
+					["questID"] = 39400,
+					["isDaily"] = true,
+					["coord"] = { 54.2, 80.8, 534 },
+					["g"] = {
+						crit(46, {	-- Rendarr slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 					},
 				}),
 				n(92627, {	-- Rendrak
 					["description"] = "Collect 10x Smelly Musk Gland from the Direwing Predators (Bats) in Zorammarsh. Once you have all 10, combine them to lure Rendrak. If you leave Zorammarsh, the Smelly Musk Glands will vanish from your bags.",
 					["questID"] = 38631,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coords"] = {
 						{ 37.2, 68.6, 534 },
 						{ 42.4, 77.6, 534 },
 					},
 					["g"] = {
+						crit(37, {	-- Rendrak slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127356),	-- Musky Bat Fur Cloak
 					},
 				}),
@@ -471,7 +639,10 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 20.4, 49.5, 534 },
 					["g"] = {
-						i(127314),	-- Rogond's Tracking Shoulderguards 
+						crit(24, {	-- Rogond the Tracker slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127314),	-- Rogond's Tracking Shoulderguards
 					},
 				}),
 				n(94472, {	-- Savage Whale Shark
@@ -486,13 +657,16 @@ _.Zones =
 				}),
 				n(90024, {	-- Sergeant Mor'grak
 					["questID"] = 37953,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 						{ 41.6, 37.6, 534 },
 						{ 42.8, 36.6, 534 },
 					},
 					["g"] = {
-						i(127318),	-- Iron Cleated Warboots 
+						crit(11, {	-- Sergeant Mor'grak slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127318),	-- Iron Cleated Warboots
 					},
 				}),
 				n(93236, {	-- Shadowthrash
@@ -500,6 +674,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 49.8, 61.3, 534 },
 					["g"] = {
+						crit(54, {	-- Shadowthrash slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127665),	-- Warpscaled Wristwraps
 					},
 				}),
@@ -508,7 +685,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 88.2, 55.4, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(108634),	-- Crashin' Thrashin' Mortar Controller Toy
+						i(108634, {	-- Crashin' Thrashin' Mortar Controller (TOY!)
+							crit(3, {	-- Crashin' Thrashin' Mortar
+								["achievementID"] = 10353,	-- Iron Armada
+							}),
+						}),
 					},
 				}),
 				n(92495, {	-- Soulslicer
@@ -516,7 +697,10 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 62.6, 72.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127315),	-- Glowing Felskull Belt 
+						crit(30, {	-- Soulslicer slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127315),	-- Glowing Felskull Belt
 					},
 				}),
 				n(92887, {	-- Steelsnout
@@ -524,24 +708,33 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 65.6, 36.7, 534 },
 					["g"] = {
-						i(127357),	-- Steelsnout's Steely Hide 
+						crit(16, {	-- Steelsnout slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127357),	-- Steelsnout's Steely Hide
 					},
 				}),
 				n(92606, {	-- Sylissa
 					["questID"] = 38628,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 41.0, 78.7, 534 },
 					["g"] = {
+						crit(36, {	-- Sylissa slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127311),	--  Serpentine Gloves
 					},
 				}),
 				n(93001, {	-- Szirek the Twisted
 					["description"] = "Capture Strongpoint (East) to make him spawn.",
 					["questID"] = 38752,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 16.2, 56.3, 534 },
 					["g"] = {
-						i(127296),	-- Twisted Taboo Handwraps 
+						crit(21, {	-- Szirek the Twisted slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127296),	-- Twisted Taboo Handwraps
 					},
 				}),
 				n(95044, {	-- Terrorfist <Son of Kormrok>
@@ -552,6 +745,9 @@ _.Zones =
 						{ 15.6, 63.4, 534 },
 					},
 					["g"] = {
+						crit(1, {	-- Terrorfist, Son of Kormrok slain
+							["achievementID"] = 10061,	-- Hellbane
+						}),
 						i(128025, {	-- Rattling Iron Cage
 							i(116669), 	-- Armored Razorback Mount
 							i(116658), 	-- Tundra Icehoof Mount
@@ -565,7 +761,10 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 49.6, 74.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127330),	-- The Black Fang 
+						crit(33, {	-- The Blackfang slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127330),	-- The Black Fang
 					},
 				}),
 				n(92694, {	-- The Goreclaw
@@ -573,22 +772,28 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 34.6, 72.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127305),	-- Frayed Hunting Cowl 
+						crit(39, {	-- The Goreclaw slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127305),	-- Frayed Hunting Cowl
 					},
 				}),
 				n(92977, {	-- The Iron Houndmaster
 					["description"] = "Capture Strongpoint (West) to make him spawn.",
 					["questID"] = 38751,
-					["isDaily"] = true,							
+					["isDaily"] = true,
 					["coord"] = { 13.1, 57.0, 534 },
 					["g"] = {
-						i(127321),	-- Iron Houndmaster's Pauldrons 
+						crit(22, {	-- The Iron Houndmaster slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127321),	-- Iron Houndmaster's Pauldrons
 					},
 				}),
 				n(92636, {	-- The Night Haunter
 					["description"] = "Gain 10 stacks of Marked by the Night Haunter by either finding The Night Haunter or clicking Mutilated Corpses.",
 					["questID"] = 38632,
-					["isDaily"] = true,						
+					["isDaily"] = true,
 					["coords"] = {	-- **Some coords unconfirmed, probably more spawn points than listed as well**
 						{ 42.4, 77.5, 534 },	-- Confirmed
 						{ 40.5, 72.9, 534 },	-- Confirmed
@@ -602,38 +807,53 @@ _.Zones =
 						{ 44.0, 78.2, 534 },
 					},
 					["g"] = {
+						crit(38, {	-- The Night Haunter slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127355),	-- Haunter's Kurzed Cloak
 					},
-				}), 
+				}),
 				n(91243, {	-- Tho'gar Gorefist
 					["questID"] = 38747,
 					["isDaily"] = true,
 					["coord"] = { 13.6, 56.8, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127310),	-- Sabatons of Radiating Ire 
+						crit(19, {	-- Tho'gar Gorefist slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127310),	-- Sabatons of Radiating Ire
 					},
 				}),
 				n(92574, {	-- Thromma the Gutslicer
 					["questID"] = 38620,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 34.0, 44.7, 534 },
 					["g"] = {
-						i(127327),	-- Thromma's Gutslicer 
+						crit(34, {	-- Thromma the Gutslicer slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127327),	-- Thromma's Gutslicer
 					},
 				}),
 				n(92451, {	-- Varyx the Damned
 					["questID"] = 37937,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 27.6, 32.7, 534 },
 					["g"] = {
+						crit(12, {	-- Varyx the Damned slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127351),	-- Varyx's Dark Oath Band
 					},
 				}),
-				n(95054, {	-- Vengeance
+				n(95054, {	-- Vengeance <Avatar of Velhari>
 					["questID"] = 39290,
 					["isDaily"] = true,
 					["coord"] = { 32.6, 74.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
+						crit(3, {	-- Vengeance, Avatar of Velhari slain
+							["achievementID"] = 10061,	-- Hellbane
+						}),
 						i(128025, {	-- Rattling Iron Cage
 							i(116669), 	-- Armored Razorback Mount
 							i(116658), 	-- Tundra Icehoof Mount
@@ -647,14 +867,17 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.2, 21.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(127658),	-- Eye of the Beholder 
+						crit(57, {	-- Xanzith the Everlasting slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
+						i(127658),	-- Eye of the Beholder
 						i(128232, {	-- Equipment Blueprint: High Intensity Fog Lights
 							["questID"] = 39356,	-- Equipment Blueprint: High Intensity Fog Lights
 						}),
 					},
 				}),
-				n(96235, {	-- Xemirkol 	
-					["achievementID"] = 10334, 
+				n(96235, {	-- Xemirkol
+					["achievementID"] = 10334,
 					["description"] = "Attempt to teleport to him by using Master Hunter's Seeking Crystal. Do not get knocked off of his platform.",
 					["coord"] = { 69.6, 38.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
@@ -666,14 +889,20 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 48.4, 28.6, 534 },
 					["g"] = {
+						crit(3, {	-- Zeter'el slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127340),	-- Felfire Lit Greatsword
 					},
 				}),
 				n(90122, {	-- Zoug the Heavy
 					["questID"] = 39045,
-					["isDaily"] = true,	
+					["isDaily"] = true,
 					["coord"] = { 37.0, 32.84, 534 },
 					["g"] = {
+						crit(52, {	-- Zoug the Heavy slain
+							["achievementID"] = 10070,	-- Jungle Stalker
+						}),
 						i(127308),	-- Zoug's Lifting Belt
 						i(128252, {	-- Equipment Blueprint: True Iron Rudder
 							["questID"] = 39360,	-- Equipment Blueprint: True Iron Rudder

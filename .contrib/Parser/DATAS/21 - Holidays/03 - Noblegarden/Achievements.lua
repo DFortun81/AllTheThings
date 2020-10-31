@@ -1,14 +1,15 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = bubbleDown({["u"] = 19}, 
+
+-- TODO: formatting
+_.Holidays = bubbleDown({["u"] = 19},
 {
 	{	-- Noblegarden
 		["holidayID"] = 235477,	-- Noblegarden
 		["u"] = 19,				-- Noblegarden Filter
 		["g"] = {
-			{	-- Achievements
-				["npcID"] = -4,	-- Achievements
+			n(ACHIEVEMENTS, {
 				["g"] = {
 					{	-- Noble Gardener
 						["achievementID"] = 2798,	-- Noble Gardener
@@ -31,7 +32,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 								["g"] = {
 									{	-- Desolace
 										["achievementID"] = 2436,	-- Desert Rose
-										["criteriaID"] = 2,			-- 
+										["criteriaID"] = 2,			--
 										["u"] = 19,					-- Noblegarden Filter
 										["maps"] = {
 											66,	-- Desolace
@@ -39,7 +40,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 									},
 									{	-- Silithus
 										["achievementID"] = 2436,	-- Desert Rose
-										["criteriaID"] = 3,			-- 
+										["criteriaID"] = 3,			--
 										["u"] = 19,					-- Noblegarden Filter
 										["maps"] = {
 											81,	-- Silithius
@@ -47,7 +48,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 									},
 									{	-- Tanaris
 										["achievementID"] = 2436,	-- Desert Rose
-										["criteriaID"] = 4,			-- 
+										["criteriaID"] = 4,			--
 										["u"] = 19,					-- Noblegarden Filter
 										["maps"] = {
 											71,	-- Tanaris
@@ -63,7 +64,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 									},
 									{	-- Thousand Needles
 										["achievementID"] = 2436,	-- Desert Rose
-										["criteriaID"] = 5,			-- 
+										["criteriaID"] = 5,			--
 										["u"] = 19,					-- Noblegarden Filter
 										["maps"] = {
 											64,	-- Thousand Needles
@@ -147,7 +148,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 										["criteriaID"] = 12,		-- Worgen
 										["u"] = 19,					-- Noblegarden Filter
 									},
-									
+
 								},
 							},
 							{	-- Spring Fling
@@ -220,7 +221,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 						},
 					},
 				},
-			},
+			}),
 		},
 	},
 });

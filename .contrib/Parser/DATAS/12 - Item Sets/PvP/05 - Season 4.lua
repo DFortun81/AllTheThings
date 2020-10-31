@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
+
 _.GearSets =
 {
 	n(-4189, {	-- PvP Item Sets
@@ -29,7 +30,7 @@ _.GearSets =
 							i(35144),
 						}),
 					},
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 				}),
 				gs(951, {	-- Brutal Gladiator's Silk Armor
 					["groups"] = {
@@ -42,7 +43,7 @@ _.GearSets =
 						i(35100),	-- Brutal Gladiator's
 						i(35149),	--
 					},
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				gs(947, {	-- Brutal Gladiator's Felweave Armor
 					["groups"] = {
@@ -55,7 +56,7 @@ _.GearSets =
 						i(35009),	-- Brutal Gladiator's
 						i(35138),	--
 					},
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 				}),
 				gs(953, {	-- Brutal Gladiator's Dragonhide Armor
 					["groups"] = {
@@ -90,7 +91,7 @@ _.GearSets =
 							i(35137),	--
 						}),
 					},
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 				}),
 				gs(949, {	-- Brutal Gladiator's Leather Armor
 					["groups"] = {
@@ -103,7 +104,7 @@ _.GearSets =
 						i(35034),	-- Brutal Gladiator's
 						i(35141),	--
 					},
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 				}),
 				gs(952, {	-- Brutal Gladiator's Chain Armor
 					["groups"] = {
@@ -116,7 +117,7 @@ _.GearSets =
 						i(34993),	-- Brutal Gladiator's
 						i(35136),	--
 					},
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 				}),
 				gs(948, {	-- Brutal Gladiator's Ringmail Armor
 					["groups"] = {
@@ -151,7 +152,7 @@ _.GearSets =
 							i(35147),	--
 						}),
 					},
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 				}),
 				gs(950, {	-- Brutal Gladiator's Scaled Armor
 					["groups"] = {
@@ -186,7 +187,7 @@ _.GearSets =
 							i(35140),	--
 						}),
 					},
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 				}),
 				gs(946, {	-- Brutal Gladiator's Plate Armor
 					["groups"] = {
@@ -199,7 +200,7 @@ _.GearSets =
 						i(35069),	-- Brutal Gladiator's
 						i(35146),   --
 					},
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 				}),
 			},
 			["achievementID"] = 11709,	-- Tough Threads

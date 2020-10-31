@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
@@ -16,11 +17,11 @@ _.ExpansionFeatures =
 									{ "n", 91029 },	-- Rath'thul Moonvale
 								},
 								["isDaily"] = true,
-								["cost"] = { "i", 109693, 50 },	-- 50x Draenic Dust
+								["cost"] = { { "i", 109693, 50 } },	-- 50x Draenic Dust
 							}),
 							q(37570, {	-- Your First Enchanting Work Order
 								["provider"] = { "n", 79821 },	-- Yukla Greenshadow
-								["cost"] = { "i", 109693, 5 },	-- 5x Draenic Dust
+								["cost"] = { { "i", 109693, 5 } },	-- 5x Draenic Dust
 							}),
 						}),
 					},

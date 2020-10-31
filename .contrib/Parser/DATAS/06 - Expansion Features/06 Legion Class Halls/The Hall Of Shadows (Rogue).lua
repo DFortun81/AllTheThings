@@ -1,10 +1,11 @@
----------------------------------------------------
+-------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
----------------------------------------------------
+-------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
-		cl(4, {	-- The Hall of Shadows (Rogue)
+		cl(ROGUE, {	-- The Hall of Shadows
 			["classes"] = { ROGUE },
 			["lvl"] = 98,
 			["maps"] = {
@@ -154,6 +155,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 40839,	-- The Final Shadow
 					}),
+					q(45991, {	-- An Urgent Warning
+						["provider"] = { "n", 118424 },	-- Injured Bandit
+						["classes"] = { ROGUE },
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(44034, {	-- Another Worthy Blade
 						["lvl"] = 102,
 						["coord"] = { 41.3, 78.1, 626 },
@@ -273,7 +279,7 @@ _.ExpansionFeatures =
 					q(42503, {	-- Codebreaker
 						["lvl"] = 100,
 						["maps"] = { 47 },	-- Duskwood
-						["classes"] = { 4 },
+						["classes"] = { ROGUE },
 						["coords"] = {
 							{ 42.4, 75.9, 626 },	-- Princess Tess Greymane
 							{ 38.1, 67.6, 626 },	-- Notes on the Veiled Hand
@@ -392,6 +398,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47603,	-- The Mysterious, Magnificent Al'Abas
 					}),
+					q(45992, {	-- Investigate the Broken Shore
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["classes"] = { ROGUE },
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(46129, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
 					}),
@@ -467,7 +478,7 @@ _.ExpansionFeatures =
 					}),
 					q(42139, {	-- Rise, Champions
 						["coord"] = { 41.3, 78.1, 626 },
-						["classes"] = { 4 },
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 43007,	-- Return to the Chamber of Shadows
 					}),
@@ -493,7 +504,7 @@ _.ExpansionFeatures =
 					q(43014, {	-- The Big Bad Wolfe
 						["lvl"] = 101,
 						["coord"] = { 37.8, 45.0, 626 },
-						["classes"] = { 4 },
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 43013,	-- The School of Roguery
 					}),
@@ -512,7 +523,7 @@ _.ExpansionFeatures =
 						["lvl"] = 98,
 						["maps"] = { 210 },	-- The Cape of Stranglethorn
 						["coord"] = { 40.6, 69.2, 210 },
-						["classes"] = {	4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 102120 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 40847,	-- A Friendly Accord
 					}),
@@ -545,7 +556,7 @@ _.ExpansionFeatures =
 					}),
 					q(43013, {	-- The School of Roguery
 						["coord"] = { 37.7, 44.9, 626 },
-						["classes"] = { 4 },
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 42140,	-- A More Wretched Hive of Scum and Villainy
 					}),

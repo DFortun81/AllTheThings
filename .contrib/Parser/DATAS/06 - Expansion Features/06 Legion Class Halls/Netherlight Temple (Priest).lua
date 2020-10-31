@@ -1,11 +1,12 @@
----------------------------------------------------
+-------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
----------------------------------------------------
+-------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
-		cl(5, {	-- Netherlight Temple (Priest)
-			["classes"] = { 5 },	-- Priest
+		cl(PRIEST, {
+			["classes"] = { PRIEST },
 			["lvl"] = 98,
 			["mapID"] = 702,	-- Netherlight Temple (Priest)
 			["g"] =  {
@@ -24,67 +25,67 @@ _.ExpansionFeatures =
 					n(-10067, {	-- Artifact Quests
 						q(43386, {	-- Onslaught Envoy
 							["lvl"] = 110,
-							["classes"] = { 5 },	-- Priest
+							["classes"] = { PRIEST },
 							["provider"] = { "n", 110564 },	-- Alonsus Faol
 						}),
 						q(40705, {	-- Priestly Matters
 							-- Quest is actually picked up in Dalaran.
 							["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
-							["classes"] = { 5 },	-- Priest
+							["classes"] = { PRIEST },
 							["providers"] = {
 								{ "n", 101344 },	-- Hooded Priestess (Horde)
 								{ "n", 102333 },	-- Hooded Priestess (Alliance)
 							},
-						}),	
+						}),
 						q(40706, {	-- A Legend You Can Hold
 							["sourceQuests"] = { 40705 },	-- Priestly Matters
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 101314 },	-- Alonsus Faol
-						}),	
+						}),
 						q(43935, {	-- A Second Legend
 							["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 							["races"] = HORDE_ONLY,
 							["coord"] = { 51.1, 48.2, 702 },
 							["lvl"] = 102,
 							["provider"] = { "n", 110564 },	-- Alonsus Faol
-						}),	
+						}),
 						q(44407, {	-- The Third Legend
 							["sourceQuests"] = { 43935 },	-- A Second Legend
 							["provider"] = { "n", 110564 },	-- Alonsus Faol
 							["races"] = HORDE_ONLY,
-						}),	
+						}),
 						i(128868, {	-- Light's Wrath
 							["g"] = {
 								q(41625, {	-- The Light's Wrath
 									["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
-									["classes"] = { 5 },	-- Priest
+									["classes"] = { PRIEST },
 									["provider"] = { "n", 101314 },	-- Alonsus Faol
-								}),	
+								}),
 								q(41626, {	-- A New Threat
 									["sourceQuests"] = { 41625 } ,	-- The Light's Wrath
 									["provider"] = { "n", 101314 },	-- Alonsus Faol
-								}),	
+								}),
 								q(41627, {	-- A Forgotten Enemy
 									["sourceQuests"] = { 41626 } ,	-- A New Threat
-								}),	
+								}),
 								q(41628, {	-- Eyes of the Dragon
 									["sourceQuests"] = { 41626 } ,	-- A Forgotten Enemy
-								}),	
+								}),
 								q(41629, {	-- Harnessing the Holy Fire
 									["sourceQuests"] = { 41627 } ,	-- Eyes of the Dragon
-								}),	
+								}),
 								q(41630, {	-- Unleashing Judgment
 									["sourceQuests"] = { 41628 } ,	-- Harnessing the Holy Fire
 									["provider"] = { "n", 105917 },	-- Image of Kalec
-								}),	
+								}),
 								q(41631, {	-- The Nexus Vault
 									["sourceQuests"] = { 41629 } ,	-- Unleashing Judgment
 									["provider"] = { "n", 105917 },	-- Image of Kalec
-								}),	
+								}),
 								q(41632, {	-- A Gift of Time
 									["sourceQuests"] = { 41630 } ,	-- The Nexus Vault
 									["provider"] = { "n", 105081 },	-- Archmage Kalec
-								}),	
+								}),
 							},
 						}),
 						i(128825, {	-- T'uure, Beacon of the Naaru
@@ -92,22 +93,22 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 								["provider"] = { "n", 101314 },	-- Alonsus Faol
 								["races"] = HORDE_ONLY,
-							}),	
+							}),
 							q(41966, {	-- House Call
 								["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
 								["provider"] = { "n", 105602 },	-- Vindicator Boros
 								["races"] = HORDE_ONLY,
-							}),	
+							}),
 							q(41967, {	-- Out of the Darkness
 								["sourceQuests"] = { 41966 },	-- House Call
 								["provider"] = { "n", 105603 },	-- Defender Barrem
 								["races"] = HORDE_ONLY,
-							}),	
+							}),
 							q(41993, {	-- Salvation From On High
 								["sourceQuests"] = { 41967 },	-- Out of the Darkness
 								["provider"] = { "n", 105684 },	-- Alora
 								["races"] = HORDE_ONLY,
-							}),	
+							}),
 							q(42074, {	-- Return of the Light
 								["sourceQuests"] = { 41993 },	-- Salvation From On High
 								["provider"] = { "n", 106011 },	-- Jace  Darkweaver
@@ -115,7 +116,7 @@ _.ExpansionFeatures =
 							}),
 						}),
 						i(128827, {	-- Xal'atah, Blade of the Black Empire
-							i(133958),	-- Secrets of the Void 
+							i(133958),	-- Secrets of the Void
 							q(40710, {	-- Blade in Twilight
 								["providers"] = {
 									{ "n", 101314 },	-- Alonsus Faol
@@ -123,7 +124,7 @@ _.ExpansionFeatures =
 								},
 								["lvl"] = 98,
 								["coord"] = { 79.0, 40.9, 18 },
-								["classes"] = { 5 },	-- Priest
+								["classes"] = { PRIEST },
 								["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 							}),
 						}),
@@ -214,7 +215,7 @@ _.ExpansionFeatures =
 									["title"] = "|cFFFFFFFFVolume X|r | Black Rook Hold in corner of room with ghosts and bookshelves.",
 									["description"] = "After defeating the first boss, you will get into the Map-Room with a large setup in the middle. Head along the left side, the book is on one of the tables.",
 									["provider"] = { "n", 98542 },	-- Amalgam of Souls
-									["coords"] = { 
+									["coords"] = {
 										{ 58.6, 75.8, 751 },	-- item in instance
 										{ 38.4, 50.8, 641 },	-- Black Rook Hold entrance
 									},
@@ -247,12 +248,15 @@ _.ExpansionFeatures =
 					q(41019, {	-- Actions on Azeroth
 						["provider"] = { "n", 102655 },	-- Alonsus Faol
 						["coord"] = { 48.9, 49.1, 702 },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["sourceQuests"] = { 40938 },	-- The Light and the Void
+					}),
+					n(46028, {	-- An Urgent Warning
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(43383, {	-- Awakening the Light
 						["sourceQuests"] = { 43377 },	-- Halls of Valor: The Light Within
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coord"] = { 75.7, 40.7, 702 },
 						["lvl"] = 103,
 						["provider"] = { "n", 102587 },	-- Saa'ra
@@ -304,20 +308,24 @@ _.ExpansionFeatures =
 							follower(872),	-- Sol
 						},
 					}),
+					q(44229, { -- Champion Armaments
+						["description"] = "Requires researching the Order Advancement for Armaments of Light.",
+						["classes"] = { PRIEST },
+					}),
 					q(43384, {	-- Demonic Runes
 						["sourceQuests"] = { 43379 },	-- Velen's Vision
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coord"] = { 48.9, 48.7, 702 },
 						["lvl"] = 103,
 						["provider"] = { "n", 110571 },	-- Delas Moonfang
 					}),
 					q(43390, {	-- Forgotten Shadows
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol <Bishop of Secrets>
 					}),
 					q(43377, {	-- Halls of Valor: The Light Within
 						["sourceQuests"] = { 43379 },	-- Velen's Vision
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coord"] = { 50.9, 46.8, 702 },
 						["lvl"] = 103,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
@@ -328,12 +336,15 @@ _.ExpansionFeatures =
 					q(43884, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
 					}),
+					q(46029, {	-- Investigate the Broken Shore
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(46140, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
 						["classes"] = { PRIEST },
 					}),
 					q(44251, {	-- Power Word: Armor
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coord"] = { 38.9, 24.4, 702 },
 						["lvl"] = 110,
 						["g"] = {
@@ -342,55 +353,55 @@ _.ExpansionFeatures =
 					}),
 					q(43851, {	-- Recruiting More Troops
 						["sourceQuests"] = { 43379 },	-- Velen's Vision
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coord"] = { 50.9, 46.8, 702 },
 						["lvl"] = 103,
 						["provider"] = { "n", 109776 },	-- Moira Thaurissan
 					}),
 					q(43275, {	-- Recruiting the Troops
 						["sourceQuests"] = { 43273 },	-- Spread the Word
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coord"] = { 51.2, 48.3, 702 },
 						["lvl"] = 101,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43371, {	-- Relieving the Front Lines
 						["sourceQuests"] = { 43277 },	-- Tech It Up A Notch
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coord"] = { 51.1, 48.5, 702 },
 						["lvl"] = 101,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43270, {	-- Rise, Champions
 						["sourceQuests"] = { 44100 },	-- Proper Introductions
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coord"] = { 51.1, 48.2, 702 },
 						["lvl"] = 101,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43273, {	-- Spread the Word
 						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coord"] = { 51.2, 48.3, 702 },
 						["lvl"] = 101,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43277, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 43276 },	-- Troops in the Field
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coord"] = { 51.1, 48.5, 702 },
 						["lvl"] = 101,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
 					q(43372, {	-- The Best and Brightest
 						["sourceQuests"] = { 43372 },	-- Whispers in the Void
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coord"] = { 48.2, 48.2, 702 },
 						["lvl"] = 103,
 						["provider"] = { "n", 110557 },	-- Prophet Velen
 					}),
 					q(45789, {	-- The Sunken Vault
-						["classes"] = { 5 },
+						["classes"] = { PRIEST },
 						["lvl"] = 110,
 						["g"] = {
 							{ ["mountID"] = 229377 },	-- High Priest's Lightsworn Seeker
@@ -398,7 +409,7 @@ _.ExpansionFeatures =
 					}),
 					q(43276, {	-- Troops in the Field
 						["sourceQuests"] = { 43275 },	-- Recruiting the Troops
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coord"] = { 51.2, 48.3, 702 },
 						["lvl"] = 101,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
@@ -409,15 +420,15 @@ _.ExpansionFeatures =
 					q(43379, {	-- Velen's Vision
 						-- awarded third criteria for "fighting with style: classic" achievement
 						-- not sure if that should be here or on the achievement as a SQ or anything like that.
-						["sourceQuests"] = 43378,	-- Eye of Azshara: Through the Lens
-						["classes"] = { 5 },	-- Priest
+						["sourceQuests"] = { 43378 },	-- Eye of Azshara: Through the Lens
+						["classes"] = { PRIEST },
 						["coord"] = { 48.3, 47.8, 702 },
 						["lvl"] = 103,
 						["provider"] = { "n", 110557 },	-- Prophet Velen
 					}),
 					q(43372, {	-- Whispers in the Void
 						["sourceQuests"] = { 43371 },	-- Relieving the Front Lines
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["coord"] = { 51.2, 48.7, 702 },
 						["lvl"] = 103,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol

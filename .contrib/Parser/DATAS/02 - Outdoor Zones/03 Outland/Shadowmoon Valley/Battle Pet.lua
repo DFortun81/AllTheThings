@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -21,7 +22,7 @@ _.Zones =
 				q(31920, {	-- Grand Master Antari
 					["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
 					["coord"] = { 30.4, 41.8, 104 },
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						31919,	-- Battle Pet Tamers: Outland (Alliance Version)
 						31921	-- Battle Pet Tamers: Outland (Horde Version)
 					},
@@ -37,10 +38,10 @@ _.Zones =
 					["coord"] = { 30.4, 41.8, 104 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
-				}),						
+				}),
 				q(31926, { 	-- Grand Master Antari
 					["sourceQuests"] = { 31920 },	-- Grand Master Antari
-					["isDaily"] = true,					
+					["isDaily"] = true,
 					["coord"] = { 30.6, 41.8, 104 },
 					["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
 					["g"] = {

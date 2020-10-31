@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -36,13 +37,13 @@ _.Zones =
 							["races"] = { BLOODELF },
 						}),
 						p(792, {	-- Jade Crane Chick
-							["races"] = { 26 },	-- Pandaren
+							["races"] = { PANDAREN_HORDE },
 						}),
 						p(629, {	-- Shore Crawler
 							["races"] = { GOBLIN },
 						}),
 						p(55, {	-- Undercity Cockroach
-							["races"] = { 5 },	-- Undead
+							["races"] = { UNDEAD },
 						}),
 					},
 				}),
@@ -61,7 +62,7 @@ _.Zones =
 							["races"] = { BLOODELF },
 						}),
 						p(792, {	-- Jade Crane Chick
-							["races"] = { 26 },	-- Pandaren
+							["races"] = { PANDAREN_HORDE },
 						}),
 						p(629, {	-- Shore Crawler
 							["races"] = { GOBLIN },
@@ -160,20 +161,20 @@ _.Zones =
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31588 },	-- Learning the Ropes
-					
+
 				}),
 				q(31586, {	-- On The Mend
 					["provider"] = { "n", 63086 },	-- Matty
 					["coord"] = { 36.8, 77.4, 85 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31585 },	-- Learning the Ropes
-					
+
 				}),
 				q(32009, {	-- Varzok
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
 				}),
 				--[[
 				Putting quests 31882-31885 here for now, but I'm confident each of these are offered

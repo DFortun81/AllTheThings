@@ -1,10 +1,11 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+
+_.WorldDrops =
 {
 	tier(6, {	-- Warlords of Draenor
-		n(-319, {	-- Weapons		
+		n(-319, {	-- Weapons
 			n(-334, {	-- 1H Axes
 				i(116457),	-- Frostbitten Axe
 				i(116474),	-- Lunarglow Axe
@@ -33,7 +34,7 @@ _.WorldDrops =
 				i(116611),	-- Gorian Broadaxe
 				i(116628),	-- Howling Broadaxe
 				i(118802),	-- Tayger's Sword-On-A-Stick
-			}),	
+			}),
 			n(-346, {	-- Bows
 				i(116459),	-- Frostbitten Bow
 				i(116476),	-- Lunarglow Bow
@@ -61,8 +62,8 @@ _.WorldDrops =
 				i(116613),	-- Gorian Crossbow
 				i(116630),	-- Howling Crossbow
 				i(118797),	-- Auto-Loading Crossbow of the Sand Emperor
-			}),			
-			n(-333, {	-- Daggers	
+			}),
+			n(-333, {	-- Daggers
 				i(116461),	-- Frostbitten Dagger
 				i(116462),	-- Coldsinger Spellblade
 				i(116478),	-- Lunarglow Dagger
@@ -89,7 +90,7 @@ _.WorldDrops =
 				i(118784),	-- Sliver of Na'the
 				i(118785),	-- Void Bound Knife
 			}),
-			n(-348, {	-- Fist Weapons	
+			n(-348, {	-- Fist Weapons
 				i(116463),	-- Frostbitten Knuckles
 				i(116480),	-- Lunarglow Knuckles
 				i(116497),	-- Vinewrapped Knuckles
@@ -116,7 +117,7 @@ _.WorldDrops =
 				i(116617),	-- Gorian Gun
 				i(116634),	-- Howling Gun
 				i(118798),	-- Dead Eye Zakk's Boomshooter
-			}),			
+			}),
 			n(-331, {	-- Held in Off-hand
 				i(116694),	-- Coldsinger Crystal
 				i(116697),	-- Moonwhisper Crystal
@@ -191,7 +192,7 @@ _.WorldDrops =
 				i(118795),	-- Draenic Treecleaver
 				i(118800),	-- Pillar of Malice
 				i(118801),	-- Spire of Autumn
-			}),			
+			}),
 			n(-332, {	-- Shield
 				i(106397),	-- Frostbitten Shield
 				un(REMOVED_FROM_GAME, i(55433)),	-- Steelgrill Shield

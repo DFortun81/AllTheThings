@@ -415,7 +415,10 @@ _.Zones =
 					["provider"] = { "n", 16203 },	-- Ranger Vynna
 					["coord"] = { 71.9, 32.6, 95 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 9282 },	-- The Farstrider Enclave
+					["sourceQuests"] = {
+						9282, 	-- The Farstrider Enclave
+						9151,	-- The Sanctum of the Sun
+					},
 				}),
 				q(9176,  {	-- The Twin Ziggurats
 					["provider"] = { "n", 16239 },	-- Magister Kaendris

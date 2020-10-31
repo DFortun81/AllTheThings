@@ -1,13 +1,19 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		n(-34, {	-- World Quests
 			["order"] = "03",
 			["lvl"] = 110,
-			["g"] = {
+			["g"] = {			
+				q(47063, {	-- Tracking Quest [Broken Isles Legion Invasion Scenario Completion]
+					["lvl"] = 110,
+					["description"] = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
+					["isWorldQuest"] = true,
+				}),
 				f(200,  {	-- Recipes
 					q(41666, {	-- Vantus Rune Work Order: Nythendra
 						["repeatable"] = true,
@@ -457,6 +463,7 @@ _.Zones =
 					i(141277),	-- Bloodtotem Brand
 					i(140080),	-- Everchill Pearl
 					i(141275),	-- Fertile Soil
+					i(141261),	-- Fires of Heaven
 					i(141265),	-- Gift of Flame
 					i(143704),	-- Harpybane Fetish
 					i(143686),	-- Hatecoil Badge of Glory
@@ -470,10 +477,6 @@ _.Zones =
 					i(141276),	-- Vision of An'she
 					i(140086),	-- Intact Infernal Palm
 				}),
-				i(135511),	-- Thick Slab of Bacon. You get it for a split second after completing a bacon wq
-				i(137212),	-- Cut Skystone. You get it for a split second after completing the jewelcrafter daily
-				i(137214),	-- Cut Deep Amber. You get it for a split second after completing the jewelcrafter daily
-				i(137215),	-- Cut Azsunite.  You get it for a split second after completing the jewelcrafter daily
 			},
 		}),
 	}),

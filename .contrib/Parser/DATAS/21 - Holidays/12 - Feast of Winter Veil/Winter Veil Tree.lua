@@ -1,7 +1,8 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = bubbleDown({["u"] = 29}, 
+
+_.Holidays = bubbleDown({["u"] = 29},
 {
 	holiday(235485, {	-- Feast of Winter Veil
 		n(54519, { 	-- Winter Veil Tree
@@ -9,7 +10,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 			["g"] = {
 				q(8744, { 	-- A Carefully Wrapped Present
 					["isYearly"] = true,
-					["lvl"] = 1,
 					["g"] = {
 						i(21191, {	-- Carefully Wrapped Present
 							un(29, i(116451)),	-- Warm Blue Woolen Socks
@@ -27,7 +27,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(21363, {	-- Festive Gift
 							un(29, i(21328)),	-- Wand of Holiday Cheer
 						}),
-					},	
+					},
 				}),
 				q(8768, { 	-- A Gaily Wrapped Present
 					["isYearly"] = true,
@@ -80,7 +80,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 								un(29, i(116690)),	-- Safarai Lounge Cushion
 								un(29, i(116691)),	-- Zhevra Lounge Cusion
 								un(29, i(128768)),	-- Candy Cane
-							},	
+							},
 						}),
 						i(139343, {	-- Gently Shaken Gift
 							["questID"] = 43364,
@@ -230,7 +230,11 @@ _.Holidays = bubbleDown({["u"] = 29},
 							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(10337),	-- Crashin' Thrashin' Flamer
-								un(29, i(108632)),	-- Crashin' Thrashin' Flamer Controller
+								un(29, i(108632, {	-- Crashin' Thrashin' Flamer Controller
+									crit(1, {	-- Crashin' Thrashin' Flamer
+										["achievementID"] = 10353,	-- Iron Armada
+									}),
+								})),
 							},
 						}),
 						i(139341, {	-- Winter Veil Gift

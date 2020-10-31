@@ -1,6 +1,7 @@
 -----------------------------------------------
---     P L A Y E R   V S   P L A Y E R       --
+--      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 _.PVP =
 {
 	n(-304, {	-- Battlegrounds
@@ -28,6 +29,10 @@ _.PVP =
 								["coord"] = { 50.4, 65.5, 91 },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
+							}),
+							q(7124, {	-- Capture a Mine (H)
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
 							q(5893, {	-- Coldtooth Supplies (H)
 								["provider"] = { "n", 12097 }, -- Frostwolf Quartermaster
@@ -169,9 +174,18 @@ _.PVP =
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 7166 },	-- Legendary Heroes
 								["lvl"] = 51,
+								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 								["g"] = {
 									i(17909),	-- Frostwolf Insignia Rank 6
 								},
+							}),
+							q(7082, {	-- The Graveyards of Alterac
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
+							}),
+							q(7101, {	-- Towers and Bunkers (H)
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
 						}),
 						n(VENDORS, {
@@ -325,6 +339,7 @@ _.PVP =
 								["coord"] = { 43.0, 43.8, 25 },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
+								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
 							q(7223, {	-- Armor Scraps
 								["provider"] = { "n", 13257 },	-- Murgot Deepforge
@@ -338,11 +353,12 @@ _.PVP =
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 							}),
-							q(7122, {	-- Capture a Mine
+							q(7122, {	-- Capture a Mine (A)
 								["provider"] = { "n", 13777 },	-- Sergeant Durgen Stormpike
 								["coord"] = { 43.0, 43.8, 25 },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
+								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
 							q(6982, {	-- Coldtooth Supplies (A)
 								["provider"] = { "n", 12096 }, -- Stormpike Quartermaster
@@ -480,15 +496,17 @@ _.PVP =
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 7171 },	-- Legendary Heroes
 								["lvl"] = 51,
+								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 								["g"] = {
 									i(17904),	-- Stormpike Insignia Rank 6
 								},
 							}),
-							q(7102, {	-- Towers and Bunkers
+							q(7102, {	-- Towers and Bunkers (A)
 								["provider"] = { "n", 13777 },	-- Sergeant Durgen Stormpike
 								["coord"] = { 43.0, 43.8, 25 },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
+								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
 						}),
 						n(VENDORS, {

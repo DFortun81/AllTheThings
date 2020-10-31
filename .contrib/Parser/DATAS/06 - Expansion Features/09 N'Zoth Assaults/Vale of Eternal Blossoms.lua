@@ -1,6 +1,6 @@
----------------------------------------------------
---          Z O N E S        M O D U L E         --
----------------------------------------------------
+-------------------------------------------------------------------
+--      E X P A N S I O N   F E A T U R E S    M O D U L E       --
+-------------------------------------------------------------------
 
 _.ExpansionFeatures =
 {
@@ -1155,7 +1155,7 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-10072, {	-- N'Zoth Assault
-				n(-4,   {	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(14159, {	-- Combating the Corruption -- TODO::  Add coords. -- Is attaching questID's to these really the best way to track the quest?
 						crit(1,  {		-- Corrupted Acolyte slain
 							["description"] = "Shares a spawn with Acolyte of N'Zoth.",

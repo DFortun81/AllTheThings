@@ -32,10 +32,10 @@ profession(TAILORING, {
 						{	-- Synchronous Thread
 							["name"] = "Synchronous Thread",
 							["recipeID"] = 292946,
-							["groups"] = { 
+							["groups"] = {
 								{	-- Time-Lost Trader
 									["npcID"] = 151903,		-- Time-Lost Trader
-									["description"] = "This vendor spawns randomly when you close a time rift",
+									["description"] = "This vendor spawns randomly when you close a time rift.",
 									["coords"] = {
 										-- Zuldazar
 										{ 45.0, 39.0, 862 },  -- Ledge right before entrance to Atal'Dazar
@@ -45,17 +45,17 @@ profession(TAILORING, {
 										{ 71.0, 35.0, 862 },  -- Behind Savagelands Devilsaur
 										-- Nazmir
 										{ 38.0, 58.0, 863 },  -- Under arch east side of Terrace of Sorrows
-										{ 55.0, 21.0, 863 },  -- 
+										{ 55.0, 21.0, 863 },  --
 										{ 53.0, 56.0, 863 },  -- NE corner of Heart of Darkness
 										{ 43.0, 29.0, 863 },  -- SE corner of Necropolis
 										{ 38.0, 89.0, 863 },  -- The Shattered River, in front of broken totem
-										{ 29.0, 56.0, 863 },  -- 
+										{ 29.0, 56.0, 863 },  --
 										{ 26.0, 78.0, 863 },  -- In front of waterfall
 										-- Drustvar
 										{ 23.0, 43.0, 896 },  -- Just above Anyport
 										{ 36.0, 72.0, 896 },  --
-										{ 33.0, 23.0, 896 },  -- 
-										{ 63.0, 35.0, 896 },  -- 
+										{ 33.0, 23.0, 896 },  --
+										{ 63.0, 35.0, 896 },  --
 										{ 46.0, 38.0, 896 },  -- Highroad Pass, SE of Aroms Stand
 										-- Voldun
 										{ 54.0, 41.0, 864 },  -- Behind a rock E of Darkwood Shoal
@@ -67,7 +67,7 @@ profession(TAILORING, {
 										{ 85.0, 77.0, 895 },  -- Dock north of Freehold dungeon
 										{ 40.0, 24.0, 895 },  --
 									},
-									["groups"] = {	
+									["groups"] = {
 										i(167889),	-- Pattern: Azure Silk Cloak
 										i(167881),  -- Pattern: Belt of the Archmage
 										i(167887),  -- Pattern: Cindercloth Gloves
@@ -81,13 +81,11 @@ profession(TAILORING, {
 										i(167880),  -- Pattern: Robes of Arcana
 									},
 								},
-							},	
-							
+							},
 						},
-					},				
-					
+					},
 				},
 			},
-		},	
+		},
 	}),
 });

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -283,10 +284,7 @@ _.Zones =
 					["provider"] = { "n", 4256 },	-- Golnir Bouldertoe
 					["coord"] = { 51.0, 26.2, 87 },
 					["sourceQuest"] = 6391,	-- Ride to Ironforge
-					["races"] = {
-						DWARF,
-						GNOME,
-					},
+					["races"] = { DWARF, GNOME },
 					["lvl"] = 5,
 				}),
 				q(8929,  {	-- In Search of Anthion
@@ -366,7 +364,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(22078)), 	-- Virtuous Belt 
+						un(REMOVED_FROM_GAME, i(22078)), 	-- Virtuous Belt
 						un(REMOVED_FROM_GAME, i(22081)), 	-- Virtuous Gloves
 					},
 				}),
@@ -392,7 +390,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(22062)), 	-- Sorcerer's Belt 
+						un(REMOVED_FROM_GAME, i(22062)), 	-- Sorcerer's Belt
 						un(REMOVED_FROM_GAME, i(22066)), 	-- Sorcerer's Gloves
 					},
 				}),
@@ -423,7 +421,7 @@ _.Zones =
 					},
 				}),
 				q(27271, {	-- Journey to the Wizard's Sanctum
-					["provider"] = { "n", 5146 },	-- Nittlebur Sparkfizzle (Ironforge)			
+					["provider"] = { "n", 5146 },	-- Nittlebur Sparkfizzle (Ironforge)
 					["coord"] = { 51.0, 26.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -468,7 +466,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
-					["lvl"] = 20,	
+					["lvl"] = 20,
 				}),
 				q(27268, {	-- Make Haste to the Cathedral
 					["provider"] = { "n", 11406 },	-- High Priest Rohan (Ironforge)
@@ -484,7 +482,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
-					["lvl"] = 50,	
+					["lvl"] = 50,
 				}),
 				q(28287, {	-- Meet with Farseer Umbrua
 					["provider"] = { "n", 23127 },	-- Farseer Javad (Ironforge)
@@ -550,11 +548,9 @@ _.Zones =
 					["sourceQuest"] = 38344,	-- Mystery Notebook
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 100,
+					["cost"] = { { "i", 122618, 5 } },	-- Misprinted Draenic Coin
 					["g"] = {
 						i(122338),	-- Ancient Heirloom Armor Casing
-					},
-					["cost"] = {
-						{ "i", 122618, 5 },	-- Misprinted Draenic Coin
 					},
 				}),
 				q(725,   {	-- Passing Word of a Threat
@@ -601,22 +597,19 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
-				}),			
+				}),
 				q(6392,  {	-- Return to Gremlock
 					["provider"] = { "n", 1573 },	-- Gryth Thurden
 					["coord"] = { 55.8, 47.8, 87 },
 					["sourceQuest"] = 6388,	-- Gryth Thurden
-					["races"] = {
-						DWARF,
-						GNOME,
-					},
+					["races"] = { DWARF, GNOME },
 				}),
 				q(9006,  {	-- Saving the Best for Last (Warrior)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
-					["races"] = ALLIANCE_ONLY,	
-					["classes"] = { WARRIOR },						
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -629,7 +622,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PALADIN },						
+					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -642,20 +635,20 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { HUNTER },						
+					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(22013)),	-- Beastmaster's Cap 
+						un(REMOVED_FROM_GAME, i(22013)),	-- Beastmaster's Cap
 						un(REMOVED_FROM_GAME, i(22060)),	-- Beastmaster's Tunic
 					},
 				}),
-				q(9004,  {	-- Saving the Best for Last (Rogue)					
+				q(9004,  {	-- Saving the Best for Last (Rogue)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { ROGUE },						
+					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -668,11 +661,11 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PRIEST },						
+					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(22080)),	-- Virtuous Crown 
+						un(REMOVED_FROM_GAME, i(22080)),	-- Virtuous Crown
 						un(REMOVED_FROM_GAME, i(22083)),	-- Virtuous Robe
 					},
 				}),
@@ -681,11 +674,11 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { SHAMAN },						
+					["classes"] = { SHAMAN },
 					["lvl"] = 58,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(22097)),	-- Coif of The Five Thunders 
+						un(REMOVED_FROM_GAME, i(22097)),	-- Coif of The Five Thunders
 						un(REMOVED_FROM_GAME, i(22102)),	-- Vest of The Five Thunders
 					},
 				}),
@@ -694,7 +687,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { MAGE },						
+					["classes"] = { MAGE },
 					["lvl"] = 58,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -707,11 +700,11 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARLOCK },						
+					["classes"] = { WARLOCK },
 					["lvl"] = 58,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(22074)),	-- Deathmist Mask 
+						un(REMOVED_FROM_GAME, i(22074)),	-- Deathmist Mask
 						un(REMOVED_FROM_GAME, i(22075)),	-- Deathmist Robe
 					},
 				}),
@@ -720,11 +713,11 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { DRUID },						
+					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(22109)),	-- Feralheart Cowl 
+						un(REMOVED_FROM_GAME, i(22109)),	-- Feralheart Cowl
 						un(REMOVED_FROM_GAME, i(22113)),	-- Feralheart Vest
 					},
 				}),
@@ -796,7 +789,7 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12102)),	-- Ring of the Aristocrat
 					},
-				}),				
+				}),
 				q(735,   {	-- The Star, the Hand and the Heart
 					["provider"] = { "n", 2934 },	-- Gerrig Bonegrip
 					["coord"] = { 50.8, 6.0, 87 },
@@ -804,7 +797,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["u"] = REMOVED_FROM_GAME,
-				}),			
+				}),
 				q(1789,  {	-- The Symbol of Life
 					["provider"] = { "n", 6179 },	-- Tiza Battleforge
 					["coord"] = { 27.4, 12.2, 87 },
@@ -835,7 +828,7 @@ _.Zones =
 				q(1804,  {	-- Tome of the Cabal
 					["provider"] = { "n", 6294 },	-- Krom Stoutarm
 					["coord"] = { 74.2, 9.4, 87 },
-					["sourceQuest"] = 1802,	-- Tome of the Cabal						
+					["sourceQuest"] = 1802,	-- Tome of the Cabal
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
 					["lvl"] = 30,

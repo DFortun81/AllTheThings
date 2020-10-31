@@ -1,28 +1,17 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(895, {	-- Tiragarde Sound
 			n(-34, {	-- World Quests
 				n(QUESTS, {
---[[	raw quest list to check against
+					--[[	raw quest list to check against
 					-- Unknown
 					q(48104, {	-- A Greater Challenge
 						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53279, {	-- Blooming Star Moss
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(53874, {	-- End Their Vigil
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(52757, {	-- Grimestone Crimes
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
 					}),
 					q(54119, {	-- Hartford Sternbach
 						["isWorldQuest"] = true,
@@ -34,19 +23,11 @@ _.Zones =
 					q(49661, {	-- Locally Sourced Eggs
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52124, {	-- Losers Weepers
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(54618, {	-- Paragon of the 7th Legion
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(54629, {	-- Paragon of the Proudmoore Admiralty
 						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51462, {	-- Paratroopers
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
 					}),
 					q(49408, {	-- Pirate Dice
 						["races"] = ALLIANCE_ONLY,
@@ -57,10 +38,6 @@ _.Zones =
 					}),
 					q(49464, {	-- Saurolisk Tails
 						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53315, {	-- Smooth Platinum
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
 					}),
 					q(47695, {	-- Sound the Alarm
 						["races"] = ALLIANCE_ONLY,
@@ -80,7 +57,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-]]--
+					]]--
 					q(53812, {	-- A Carefully Laid Trap (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
@@ -96,14 +73,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(1, {	-- A Sound Defense
-								["achievementID"] = 13283,	-- Frontline Warrior
-							}),
-							crit(1, {	-- A Sound Defense
-								["achievementID"] = 13387,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(51385, {	-- A Supply of Stingers
 						["lvl"] = 120,
@@ -191,6 +160,11 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(53279, {	-- Blooming Star Moss
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["requireSkill"] = HERBALISM,
+					}),
 					q(54281, {	-- Bombing Ballistae
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
@@ -201,14 +175,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(1, {	-- Breaching Boralus
-								["achievementID"] = 13284,	-- Frontline Warrior
-							}),
-							crit(1, {	-- Breaching Boralus
-								["achievementID"] = 13388,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(52755, {	-- Bringing the Heat
 						["lvl"] = 120,
@@ -223,11 +189,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(1, {	-- Master of Calligraphy (Circle)
-								["achievementID"] = 13512,	-- Master Calligrapher
-							}),
-						},
 					}),
 					q(54257, {	-- Captain Greensails (Faction Assault WQ)
 						["lvl"] = 110,
@@ -282,6 +243,10 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(53874, {	-- End Their Vigil
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
 					}),
 					q(51311, {	-- Energizing Extract
 						["lvl"] = 120,
@@ -349,11 +314,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(2, {	-- Frozen Freestyle
-								["achievementID"] = 13060,	-- Kul Runnings
-							}),
-						},
 					}),
 					q(53699, {	-- Gate Crashers (Faction Assault WQ)
 						["lvl"] = 110,
@@ -377,6 +337,10 @@ _.Zones =
 					q(51318, {	-- Go For the Boat
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(52757, {	-- Grimestone Crimes
+						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
 					q(51317, {	-- Grounding the Grimestone
@@ -414,6 +378,10 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(51664, {	-- Kulett the Ornery
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
 					q(52760, {	-- Like Fish in a Barrel
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -434,9 +402,9 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51664, {	-- Kulett the Ornery
-						["lvl"] = 120,
+					q(52124, {	-- Losers Weepers
 						["isWorldQuest"] = true,
+						["lvl"] = 120,
 					}),
 					q(51670, {	-- Lumberjack Sentinel
 						["lvl"] = 120,
@@ -475,11 +443,6 @@ _.Zones =
 						["provider"] = { "n", 141077 },	-- Kwint
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(9, {	-- Battle on Zandalar and Kul Tiras (Not So Bad Down Here)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(51843, {	-- P4-N73R4
 						["lvl"] = 120,
@@ -488,6 +451,10 @@ _.Zones =
 					q(51660, {	-- Pack Leader Asenya
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
+					}),
+					q(51462, {	-- Paratroopers
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
 					}),
 					q(50324, {	-- Picturesque Fizzsprings Resort
 						["lvl"] = 120,
@@ -530,6 +497,14 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(52780, {	-- Siege of Boralus: Breaking The Alliance
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+					}),
+					q(52763, {	-- Siege of Boralus: Breaking Their Ranks
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+					}),
 					q(51626, {	-- Shell Game
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
@@ -542,9 +517,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							ach(12087),	-- The Reining Champion
-						},
 					}),
 					q(51463, {	-- Sky Drop Rescue
 						["lvl"] = 120,
@@ -555,26 +527,21 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(1, {	-- Sliding with Style
-								["achievementID"] = 13060,	-- Kul Runnings
-							}),
-						},
 					}),
 					q(53189, {	-- Slippery Slopes
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(3, {	-- Slippery Slopes
-								["achievementID"] = 13060,	-- Kul Runnings
-							}),
-						},
 					}),
 					q(52143, {	-- Smaller Haulers
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(53315, {	-- Smooth Platinum
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["requireSkill"] = MINING,
 					}),
 					q(50977, {	-- Smuggler Shakedown
 						["lvl"] = 120,
@@ -613,11 +580,6 @@ _.Zones =
 						["provider"] = { "n", 141479 },	-- Burly
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(12, {	-- Battle on Zandalar and Kul Tiras (Strange Looking Dogs)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(54091, {	-- Strong Arm John (Faction Assault WQ)
 						["lvl"] = 110,
@@ -628,43 +590,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							ach(13050, {	-- Bless the Rains Down in Freehold
-								crit(1, {		-- Banana Hoard
-									["coord"] = { 76.15, 84.60, 895 }
-								}),
-								crit(2, {		-- Sweete's Feast
-									["coord"] = { 73.38, 83.92, 895 }
-								}),
-								crit(3, {		-- Cart o' Cutlasses
-									["coord"] = { 75.05, 82.94, 895 }
-								}),
-								crit(4, {		-- Blacktooth Brew
-									["coord"] = { 76.69, 81.80, 895 }
-								}),
-							}),
-						},
 					}),
 					q(53196, {	-- Swab This! (Horde)
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							ach(13050, {	-- Bless the Rains Down in Freehold
-								crit(1, {		-- Banana Hoard
-									["coord"] = { 76.15, 84.60, 895 }
-								}),
-								crit(2, {		-- Sweete's Feast
-									["coord"] = { 73.38, 83.92, 895 }
-								}),
-								crit(3, {		-- Cart o' Cutlasses
-									["coord"] = { 75.05, 82.94, 895 }
-								}),
-								crit(4, {		-- Blacktooth Brew
-									["coord"] = { 76.69, 81.80, 895 }
-								}),
-							}),
-						},
 					}),
 					q(51891, {	-- Sythian the Swift
 						["isWorldQuest"] = true,
@@ -686,11 +616,6 @@ _.Zones =
 						["provider"] = { "n", 141292 },	-- Delia Hanako
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(11, {	-- Battle on Zandalar and Kul Tiras (That's a Big Carcass)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(54251, {	-- The Ambassador (Faction Assault WQ)
 						["lvl"] = 110,
@@ -754,9 +679,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							ach(13059),	-- Drag Race
-						},
 					}),
 					q(51657, {	-- Twin-Hearted Construct
 						["lvl"] = 120,
@@ -766,11 +688,6 @@ _.Zones =
 						["provider"] = { "n", 141215 },	-- Chitara
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(10, {	-- Battle on Zandalar and Kul Tiras (Unbreakable)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(52752, {	-- Vigilant Lookouts
 						["isWorldQuest"] = true,

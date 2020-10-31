@@ -34,7 +34,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(28791),	-- Ring of the Recalcitrant
 					},
 				}),
-				
 			}),
 			cr(17257, e(1566, {
 				ach(693),	-- Magtheridon's Lair

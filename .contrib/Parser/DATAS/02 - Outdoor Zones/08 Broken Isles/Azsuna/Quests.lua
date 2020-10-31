@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -219,7 +219,6 @@ _.Zones =
 						WARRIOR,		-- Fury
 					},
 					["coord"] = { 25.6, 57.6, 630 },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
 				q(37656, {	-- Fel Machinations
@@ -834,7 +833,6 @@ _.Zones =
 				q(40526),	-- Finishing Touches
 				q(45848),	-- Fit For a Pirate
 				q(41175),	-- Fit for an Elven Queen
-				q(40193),	-- Getting the Kinks Out
 				q(40144),	-- Glielle
 				q(41177),	-- Goblin Archaeology
 				q(40872),	-- Going Out With a Bang

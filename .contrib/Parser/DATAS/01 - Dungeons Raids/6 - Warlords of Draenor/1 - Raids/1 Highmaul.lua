@@ -36,7 +36,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							78237,	-- Twin Ogron (Phemos)
 							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok 
+							77428,	-- Imperator Mar'gok
 						},
 					})),
 					un(REMOVED_FROM_GAME, i(115981, {	-- Abrogator Stone Cluster
@@ -48,7 +48,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							78237,	-- Twin Ogron (Phemos)
 							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok 
+							77428,	-- Imperator Mar'gok
 						},
 					})),
 				}),
@@ -101,7 +101,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(116032),	-- Legguards of Ravenous Assault
 							i(116279),	-- Frostcap Band
 							i(116292),	-- Mote of the Mountain
-						})),				
+						})),
 						e(1148, {	-- Twin Ogron
 							["crs"] = {
 								78237,	-- Twin Ogron (Phemos)
@@ -215,7 +215,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							78237,	-- Twin Ogron (Phemos)
 							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok 
+							77428,	-- Imperator Mar'gok
 						},
 					})),
 					un(REMOVED_FROM_GAME, i(115981, {	-- Abrogator Stone Cluster
@@ -227,7 +227,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							78237,	-- Twin Ogron (Phemos)
 							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok 
+							77428,	-- Imperator Mar'gok
 						},
 					})),
 				}),
@@ -415,7 +415,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							78237,	-- Twin Ogron (Phemos)
 							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok 
+							77428,	-- Imperator Mar'gok
 						},
 					})),
 					un(REMOVED_FROM_GAME, i(115981, {	-- Abrogator Stone Cluster
@@ -427,7 +427,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							78237,	-- Twin Ogron (Phemos)
 							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok 
+							77428,	-- Imperator Mar'gok
 						},
 					})),
 				}),
@@ -615,7 +615,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							78237,	-- Twin Ogron (Phemos)
 							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok 
+							77428,	-- Imperator Mar'gok
 						},
 					})),
 					un(REMOVED_FROM_GAME, i(115981, {	-- Abrogator Stone Cluster
@@ -627,7 +627,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							78237,	-- Twin Ogron (Phemos)
 							78238,	-- Twin Ogron (Pol)
 							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok 
+							77428,	-- Imperator Mar'gok
 						},
 					})),
 				}),

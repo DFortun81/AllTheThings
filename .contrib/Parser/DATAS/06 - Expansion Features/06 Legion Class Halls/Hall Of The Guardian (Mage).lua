@@ -1,14 +1,14 @@
----------------------------------------------------
+-------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
----------------------------------------------------
+-------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(MAGE, {	-- Hall of the Guardian (Mage)
 			["classes"] = { MAGE },
-			["lvl"] = 98,
 			["maps"] = {
-				700,	-- Icecrown Citadel (Fire weapon scenario)
+				--700,	-- Icecrown Citadel (Fire weapon scenario)	-- Commented to give the proper header.
 				734,	-- Hall of the Guardian (Mage)
 				735,	-- Hall of the Guardian (Mage) (2nd Floor)
 				736,	-- The Nexus (Arcane weapon scenario)
@@ -18,6 +18,7 @@ _.ExpansionFeatures =
 				802,	-- The Oculus scenario map used during "Into the Oculus"
 				803,	-- The Oculus scenario map used during "Into the Oculus"
 			},
+			["lvl"] = 98,
 			["g"] = {
 				spell(118, {	-- Polymorph
 					["classes"] = { MAGE },
@@ -231,9 +232,9 @@ _.ExpansionFeatures =
 						["description"] = "Granted immediately upon return to the order hall."
 					}),
 					q(45997, {	-- An Urgent Warning
-						["u"] = REMOVED_FROM_GAME,
-						["classes"] = { MAGE },
 						["provider"] = { "n", 118428 },	-- Injured Conjuror
+						["classes"] = { MAGE },
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(42433, {	-- Ancient Magic
 						["coord"] = { 74.5, 63.0, 734 },
@@ -545,11 +546,11 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(45998, {	-- Investigate the Broken Shore
-						["u"] = REMOVED_FROM_GAME,
-						["coord"] = { 80.9, 63.1, 734 },
-						["classes"] = { MAGE },
-						["provider"] = { "n", 108515 },	-- Archmage Melis
 						["sourceQuest"] = 45997,	-- An Urgent Warning
+						["provider"] = { "n", 108515 },	-- Archmage Melis
+						["classes"] = { MAGE },
+						["coord"] = { 80.9, 63.1, 734 },
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(42451, {	-- Kalec's Plan
 						["coord"] = { 80.9, 63.0, 734 },

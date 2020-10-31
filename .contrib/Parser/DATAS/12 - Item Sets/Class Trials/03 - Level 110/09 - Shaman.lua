@@ -6,14 +6,15 @@ _.GearSets =
 {
 	n(-5350, {	-- Class Trial Item Sets
 		n(-154, {	-- Level 110
-			n(-148, {	-- Streamtalker [Shaman]
+			n(-148, {	-- Streamtalker
 				["classes"] = { SHAMAN },
 				["groups"] = {
 					n(-9939, {	-- Elemental
 						i(160439, {	-- Adventurer's Footlocker
-							i(153979),	-- Streamtalker Aegis
-							i(153973),	-- Streamtalker Claws
+							i(153983),	-- Streamtalker Talons
 						}),
+						i(153979),	-- Streamtalker Aegis
+						i(153973),	-- Streamtalker Claws
 						i(153977),	-- Streamtalker Coif
 						i(153968),	-- Streamtalker Medallion
 						i(153980),	-- Streamtalker Pauldrons
@@ -31,8 +32,10 @@ _.GearSets =
 					}),
 					n(-9940, {	-- Enhancement
 						i(160439, {	-- Adventurer's Footlocker
-							i(153983),	-- Streamtalker Talons
+							i(153979),	-- Streamtalker Aegis
+							i(153973),	-- Streamtalker Claws
 						}),
+						i(153983),	-- Streamtalker Talons
 						i(153987),	-- Streamtalker Helm
 						i(153963),	-- Streamtalker Choker
 						i(153989),	-- Streamtalker Shoulderguards

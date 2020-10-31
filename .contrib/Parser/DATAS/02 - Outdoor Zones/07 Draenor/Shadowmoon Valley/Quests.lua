@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -90,7 +91,7 @@ _.Zones =
 					["provider"] = { "n", 77184 },	-- Archmage Khadgar
 				}),
 				q(33586, {	-- Chasing Shadows
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						33081,	-- Escape From Shaz'gul
 						33059,	-- The Fate of Karabor
 					},
@@ -189,7 +190,7 @@ _.Zones =
 					},
 				}),
 				q(34352, {	-- Darktide Defender
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						35861,	-- Garrison Campaign: Darktide Roost (A)
 						35876,	-- Garrison Campaign: Darktide Roost (H)
 					},
@@ -207,14 +208,14 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(34355, {	-- Dirty Rats
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						34353,	-- Shredder Suppressor
 					},
 					["coord"] = { 59.2, 82.2, 539 },
 					["provider"] = { "n", 77982 },	-- Rexxar
 				}),
 				q(34397, {	-- Downsizing the Darktide
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						34355,	-- Dirty Rats
 					},
 					["coord"] = { 58.1, 93.9, 539 },
@@ -509,7 +510,7 @@ _.Zones =
 					["provider"] = { "n", 80378 },	-- Rangari Navra
 				}),
 				q(34365, {	-- Releasing Rylak
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						34355,	-- Dirty Rats
 					},
 					["coord"] = { 58.1, 93.9, 539 },
@@ -543,7 +544,7 @@ _.Zones =
 					},
 				}),
 				q(34450, {	-- Rylak Rescue
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						34365,	-- Releasing Rylak
 						34397,	-- Downsizing the Darktide
 					},
@@ -598,7 +599,7 @@ _.Zones =
 					},
 				}),
 				q(34353, {	-- Shredder Suppressor
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						35861,	-- Garrison Campaign: Darktide Roost (A)
 						35876,	-- Garrison Campaign: Darktide Roost (H)
 					},

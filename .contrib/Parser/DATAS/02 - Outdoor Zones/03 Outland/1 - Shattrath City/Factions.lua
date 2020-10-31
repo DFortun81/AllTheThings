@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
 		m(111, {	-- Shattrath City
-			n(-6013, {	-- Factions
+			n(FACTIONS, {
 				faction(1011, {	-- Lower City
 					["creatureID"] = 21655,	-- Nakodu <Lower City Quartermaster>
 					["g"] = {
@@ -219,17 +220,17 @@ _.Zones =
 								["provider"] = { "n", 18166 },	-- Archmage Khadgar
 							}),
 							q(10554, {	-- Ishanah
-								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 								["coord"] = { 54.7, 44.3, 111 },
 								["provider"] = { "n", 18166 },	-- Archmage Khadgar
 							}),
 							q(10021, {	-- Restoring the Light
-								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 								["coord"] = { 24.2, 29.8, 111 },
 								["provider"] = { "n", 18538 },	-- Ishanah
 							}),
 							q(10325, {	-- Marks of Kil'jaeden
-								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 								["coord"] = { 30.7, 34.6, 111 },
 								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
@@ -248,26 +249,26 @@ _.Zones =
 								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10653, {	-- Marks of Sargeras
-								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 								["coord"] = { 30.7, 34.6, 111 },
 								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10655, {	-- Single Mark of Sargeras
 								["description"] = "Gives reputation through Exalted.",
-								["sourceQuest"] = 10653,	-- Marks of Sargeras
+								["sourceQuests"] = { 10653 },	-- Marks of Sargeras
 								["repeatable"] = true,
 								["coord"] = { 30.7, 34.6, 111 },
 								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10654, {	-- More Marks of Sargeras
 								["description"] = "Gives reputation through Exalted.",
-								["sourceQuests"] = 10653,	-- Marks of Sargeras
+								["sourceQuests"] = { 10653 },	-- Marks of Sargeras
 								["repeatable"] = true,
 								["coord"] = { 30.7, 34.6, 111 },
 								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
 							q(10420, {	-- A Cleansing Light
-								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 								["coord"] = { 24.2, 29.8, 111 },
 								["provider"] = { "n", 18538 },	-- Ishanah
 							}),
@@ -289,7 +290,7 @@ _.Zones =
 							}),
 							q(11038, {	-- Assist Exarch Orelis
 								["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
-								["sourceQuests"] = 10551,	-- Allegiance to the Aldor
+								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 								["coords"] = {
 									{ 35.0, 32.6, 111 },
 									{ 47.4, 26.4, 111 },

@@ -9,6 +9,7 @@ _.Instances = { tier(1, {	-- Classic
 		["maps"] = {
 			-- 435,	-- Scarlet Monastery: Forlorn Cloister (First Boss)
 			436,	-- Scarlet Monasatery: Crusaader's Chapel (Last two bosses)
+			804,	-- Scarlet Monastery: Death Knight Campaign
 		},
 		["coord"] = { 69.2, 24.9, 19 },	-- Scarlet Monastery, Scarlet Monastery [Tirisfal Glades]
 		["g"] = {
@@ -25,9 +26,34 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					},
 				}),
+				q(42821, {	-- Raising an Army
+					["provider"] = { "n", 109221 }, -- Thassarian
+					["coord"] = { 72.0, 48.0, 804 },
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 42818, -- The Scarlet Assault
+				}),
 				q(26996, {	-- Right Under Their Noses
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 44800 },	-- Dominic
+				}),
+				q(42823, {	-- The Scarlet Commander
+					["provider"] = { "n", 109221 }, -- Thassarian
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuests"] = {
+						42821, -- Raising an Army
+						42882, -- The Scarlet Massacre
+					},
+				}),
+				q(42882, {	-- The Scarlet Massacre
+					["provider"] = { "n", 109221 }, -- Thassarian
+					["coord"] = { 72.0, 48.0, 804 },
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 42818, -- The Scarlet Assault
+				}),
+				q(42824, {	-- The Zealot Rises
+					["provider"] = { "n", 109221 }, -- Thassarian
+					["classes"] = { DEATHKNIGHT },
+					["sourceQuest"] = 42823, -- The Scarlet Commander
 				}),
 				q(31514, {	-- Unto Dust Thou Shalt Return
 					["provider"] = { "n", 64854 },	-- Blade of the Anointed
@@ -114,7 +140,7 @@ _.Instances = { tier(1, {	-- Classic
 							4283,	-- Scarlet Sentry
 						},
 					}),
-					un(REMOVED_FROM_GAME, i(7758)),	-- Ruthless Shiv
+					i(7758),	-- Ruthless Shiv
 					i(10329),	-- Scarlet Belt
 					i(10332),	-- Scarlet Boots
 					i(10328),	-- Scarlet Chestpiece

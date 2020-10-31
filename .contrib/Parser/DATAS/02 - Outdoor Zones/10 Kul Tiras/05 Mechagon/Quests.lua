@@ -1,6 +1,6 @@
---------------------------------------------------
---          Z O N E S       M O D U L E         --
---------------------------------------------------
+---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
 
 _.Zones =
 {
@@ -158,6 +158,7 @@ _.Zones =
 				q(55055, {	-- Build a Bigger Fish Trap
 					["provider"] = { "n", 151462 },	-- Danielle Anglers
 					["coord"] = { 37.0, 47.1, 1462 },
+					["requireSkill"] = FISHING,
 					["sourceQuest"] = 55339,	-- Tidying Up
 					["g"] = {
 						crit(3, {	-- Hundred-Fathom Lure
@@ -653,6 +654,7 @@ _.Zones =
 				q(56305, {	-- Let's Fish!
 					["provider"] = { "n", 151462 },	-- Danielle Anglers
 					["coord"] = { 37.0, 47.1, 1462 },
+					["requireSkill"] = FISHING,
 					["sourceQuest"] = 55055,	-- Build A Bigger Fish Trap
 				}),
 				q(54082, {	-- More Power
@@ -847,7 +849,7 @@ _.Zones =
 					["provider"] = { "n", 150567 },	-- Gazlowe
 					["coord"] = { 74.0, 36.8, 1355 },
 					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
+					["isDaily"] = true,
 				}),
 				q(54929, {	-- Ready to Rumble
 					["provider"] = { "n", 150573 },	-- Recycler Kerchunk
@@ -1435,6 +1437,7 @@ _.Zones =
 				q(55339, {	-- Tidying Up
 					["provider"] = { "n", 151462 },	-- Danielle Anglers
 					["coord"] = { 37.0, 47.1, 1462 },
+					["requireSkill"] = FISHING,
 					["sourceQuest"] = 55298,	-- Fishing For Something Bigger
 				}),
 				q(55717, {	-- Time for Heroics

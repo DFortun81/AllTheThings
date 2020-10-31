@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
+-- TODO: fromatting
 _.WorldEvents =
 {
 	{	-- 7th Anniversary
@@ -9,7 +11,7 @@ _.WorldEvents =
 		["g"] = {
 			{	-- 7th Anniversary
 				["achievementID"] = 5863,	-- 7th Anniversary
-				["u"] = 36,					-- WoW Anniversary 
+				["u"] = 36,					-- WoW Anniversary
 			},
 			{	-- Mailbox
 				["npcID"] = -297,	-- Mailbox

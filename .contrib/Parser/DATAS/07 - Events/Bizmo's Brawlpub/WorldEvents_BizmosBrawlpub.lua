@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.WorldEvents =
 {
 	n(-496, {	-- Bizmo's Brawlpub
@@ -10,6 +11,7 @@ _.WorldEvents =
 			499,	-- Deeprun Tram
 			500,	-- Bizmo's Brawlpub
 		},
+		["u"] = REMOVED_FROM_GAME,
 		["icon"] = "Interface\\Icons\\ability_warrior_secondwind",
 		["g"] = {
 			n(-227, {	-- Victory

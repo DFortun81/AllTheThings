@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, { 	-- The Broken Isles
@@ -256,7 +257,12 @@ _.Zones =
 								{ "i", 124437, 20 },	-- 20x Shal'dorei Silk
 							},
 						}),
-						i(140638),	-- Recipe: Dreadleather Shoulderguard (Rank 1)
+						i(140638, {	-- Recipe: Dreadleather Shoulderguard (Rank 1)
+							["cost"] = {
+								{ "i", 124113, 20 },	-- 20x Stonehide Leather
+								{ "i", 124440, 20 },	-- 20x Arkhana
+							},
+						}),
 						i(140645, {	-- Recipe: Gravenscale Girdle (Rank 1)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale

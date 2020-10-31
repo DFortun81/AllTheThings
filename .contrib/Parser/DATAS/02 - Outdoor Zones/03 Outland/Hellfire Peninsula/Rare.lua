@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -44,10 +45,10 @@ _.Zones =
 						crit(14, {	-- Mekthorg the Wild slain
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
-						i(31174),	-- Demonweave Raiment 
-						i(31172),	-- Demon-Cured Tunic 
-						i(31170),	-- Demon-Forged Hauberk 
-						i(31168),	-- Demon-Forged Chestguard 
+						i(31174),	-- Demonweave Raiment
+						i(31172),	-- Demon-Cured Tunic
+						i(31170),	-- Demon-Forged Hauberk
+						i(31168),	-- Demon-Forged Chestguard
 					},
 				}),
 				n(18679, {	-- Vorakem Doomspeaker
@@ -64,10 +65,10 @@ _.Zones =
 						crit(20, {	-- Vorakem Doomspeaker Slain
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
-						i(31185),	-- Legion Crown 
-						i(31184),	-- Legion Headguard 
-						i(31183),	-- Legion Coif 
-						i(31182),	-- Legion Helm 
+						i(31185),	-- Legion Crown
+						i(31184),	-- Legion Headguard
+						i(31183),	-- Legion Coif
+						i(31182),	-- Legion Helm
 					},
 				}),
 			}),

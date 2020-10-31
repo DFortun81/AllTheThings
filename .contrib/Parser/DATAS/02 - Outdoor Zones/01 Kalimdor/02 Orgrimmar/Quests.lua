@@ -141,16 +141,14 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 										["lvl"] = 110,
 										["g"] = {
-											ach(12245, {	-- Allied Races: Highmountain Tauren
-												h(i(155662)),	-- Highmountain Thunderhoof
-											}),
+											ach(12245),	-- Allied Races: Highmountain Tauren
 										},
 									}),
 									-- Highmountain Tauren Starter Quest
 									q(49773, {	-- For the Horde
 										["provider"] = { "n", 143845 },	--  Mayla Highmountain
 										["coord"] = { 46.6, 61.0, 650 },
-										["races"] = { 28 },	-- Highmountain Tauren
+										["races"] = { HIGHMOUNTAIN },
 										["lvl"] = 20,
 										["g"] = {
 											i(157757),	-- Highmountain Tabard
@@ -161,7 +159,7 @@ _.Zones =
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
 										["coord"] = { 39.4, 79.2, 85 },
 										["sourceQuest"] = 49773,	-- For the Horde
-										["races"] = { 28 },	-- Highmountain Tauren
+										["races"] = { HIGHMOUNTAIN },
 										["lvl"] = 20,
 									}),
 								}),
@@ -193,16 +191,14 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 										["lvl"] = 110,
 										["g"] = {
-											ach(12244, {	-- Allied Races: Nightborne
-												i(156487),	-- Nightborne Manasaber
-											}),
+											ach(12244),	-- Allied Races: Nightborne
 										},
 									}),
 									-- Nightborne Starter Quest
 									q(49933, {	-- For the Horde
 										["provider"] = { "n", 143845 },	--  First Arcanist Thalyssra
 										["coord"] = { 59.4, 85.4, 680 },
-										["races"] = { 27 },	-- Nightborne
+										["races"] = { NIGHTBORNE },
 										["lvl"] = 20,
 										["g"] = {
 											i(157759),	-- Shal'dorei Tabard
@@ -213,7 +209,7 @@ _.Zones =
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
 										["coord"] = { 39.4, 79.2, 85 },
 										["sourceQuest"] = 49933,	-- For the Horde
-										["races"] = { 27 },	-- Nightborne
+										["races"] = { NIGHTBORNE },
 										["lvl"] = 20,
 									}),
 								}),
@@ -290,16 +286,14 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(12518, {	-- Allied Races: Mag'har Orc
-												i(161330),	-- Mag'har Direwolf
-											}),
+											ach(12518),	-- Allied Races: Mag'har Orc
 										},
 									}),
 									-- Mag'har Orc Starter Quest
 									q(51485, {	-- For the Horde
 										["provider"] = { "n", 143845 },	--  Overlord Geya'rah
 										["coord"] = { 70.6, 44.6, 85 },
-										["races"] = { 36 },	-- Mag'har Orc
+										["races"] = { MAGHAR },
 										["lvl"] = 20,
 										["g"] = {
 											i(161328),	-- Tabard of the Mag'har Clans
@@ -310,7 +304,7 @@ _.Zones =
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
 										["coord"] = { 39.4, 79.2, 85 },
 										["sourceQuest"] = 51485,	-- For the Horde
-										["races"] = { 36 },	-- Mag'har Orc
+										["races"] = { MAGHAR },
 										["lvl"] = 20,
 									}),
 								}),
@@ -446,16 +440,14 @@ _.Zones =
 										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(13161, {	-- Allied Races: Zandalari Troll
-												i(157870),	-- Zandalari Direhorn
-											}),
+											ach(13161),	-- Allied Races: Zandalari Troll
 										},
 									}),
 									-- Zandalari Troll Starter Quest
 									q(55137, {	-- For the Horde
 										["provider"] = { "n", 146335 },	--  Queen Talanji
 										["coord"] = { 42.2, 9.4, 1165 },
-										["races"] = { 31 },	-- Zandalari Troll
+										["races"] = { ZANDALARI },
 										["lvl"] = 20,
 										["g"] = {
 											i(165001),	-- Tabard of the Zandalari
@@ -466,7 +458,7 @@ _.Zones =
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
 										["coord"] = { 39.4, 79.2, 85 },
 										["sourceQuest"] = 55137,	-- For the Horde
-										["races"] = { 31 },	-- Zandalari Troll
+										["races"] = { ZANDALARI },
 										["lvl"] = 20,
 									}),
 								}),
@@ -669,16 +661,14 @@ _.Zones =
 										["provider"] = { "n", 145424 },	-- Baine Bloodhoof
 										["sourceQuest"] = 53908,	-- Awaiting Our Arrival
 										["g"] = {
-											ach(13206, {	-- Allied Races: Vulpera
-												i(174066),	-- Caravan Hyena
-											}),
+											ach(13206),	-- Allied Races: Vulpera
 										},
 									}),
 									-- Vulpera starter quests
 									q(58122, {	-- For the Horde
 										["provider"] = { "n", 160452 },	-- Nilsa
 										["coord"] = { 64.6, 46.5, 85 },
-										["races"] = { 35 },	-- Vulpera
+										["races"] = { VULPERA },
 										["g"] = {
 											i(174069),	-- Tabard of the Vulpera
 										},
@@ -687,7 +677,7 @@ _.Zones =
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
 										["coord"] = { 39.3, 79.5, 85 },
 										["sourceQuest"] = 58122,	-- For the Horde
-										["races"] = { 35 },	-- Vulpera
+										["races"] = { VULPERA },
 										["lvl"] = 20,
 									}),
 								}),
@@ -829,10 +819,7 @@ _.Zones =
 					["provider"] = { "n", 44735 },	-- Seer Liwatha
 					["coord"] = { 45.4, 53.4, 85 },
 					["sourceQuest"] = 27331,	-- The Seer's Call
-					["races"] = {
-						6,	-- Tauren
-						9,	-- Goblin
-					},
+					["races"] = { TAUREN, GOBLIN },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 					["g"] = {
@@ -888,6 +875,12 @@ _.Zones =
 						i(65473),	-- Battlehammer of the Sunwalker
 						i(65474),	-- Greatsword of the Sunwalker
 					},
+				}),
+				q(62568, {	-- Adventurers Wanted: Chromie's Call
+					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
+					["coord"] = { 48.3, 71.4, 85 },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
 				}),
 				q(809,   {	-- Ak'Zeloth
 					["u"] = REMOVED_FROM_GAME,
@@ -1035,6 +1028,15 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(22108)),	-- Feralheart Bracers
 					},
 				}),
+				q(60360, {	-- An Urgent Meeting
+					["provider"] = { "n", 168771 },	-- Shuja Grimaxe
+					["coord"] = { 70.9, 49.6, 85 },
+					["sourceQuest"] = 60359,	-- Home Is Where the Hearth Is
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
+				}),
 				q(936,   {	-- Assisting Arch Druid Runetotem
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -1159,11 +1161,7 @@ _.Zones =
 					["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
 					["coord"] = { 53.5, 78.7, 85 },
 					["sourceQuest"] = 6384,	-- Ride to Orgrimmar
-					["races"] = {
-						2,	-- Orc
-						8,	-- Troll
-						36,	-- Mag'har
-					},
+					["races"] = { ORC, TROLL, MAGHAR },
 					["lvl"] = 5,
 				}),
 				q(13842, {	-- Dread Head Redemption
@@ -1190,6 +1188,15 @@ _.Zones =
 					["coord"] = { 48.6, 71.0, 85 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 15,
+				}),
+				q(60344, {	-- Finding Your Way (H)
+					["coord"] = { 51.9, 85.4, 85 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 168441 },	-- Cork Fizzlepop
+					["sourceQuest"] = 60343,	-- Welcome to Orgrimmar
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
 				}),
 				q(26804, {	-- Flight to Razor Hill
 					["provider"] = { "n", 3310 },	-- Doras
@@ -1255,6 +1262,25 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(15445)),	-- Hammer of Orgrimmar
 						un(REMOVED_FROM_GAME, i(15443)),	-- Kris of Orgrimmar
 						un(REMOVED_FROM_GAME, i(15444)),	-- Staff of Ogrimmar
+					},
+				}),
+				q(60359, {	-- Home Is Where the Hearth Is
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["sourceQuests"] = {
+						60346,	-- What's Your Specialty?
+						60347,	-- What's Your Specialty?
+						60348,	-- What's Your Specialty?
+						60349,	-- What's Your Specialty?
+						60350,	-- What's Your Specialty?
+						60351,	-- What's Your Specialty?
+						60352,	-- What's Your Specialty?
+						60353,	-- What's Your Specialty?
+						60355,	-- What's Your Specialty?
+						60357,	-- What's Your Specialty?
+					},
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
 					},
 				}),
 				q(53372, {	-- Hour of Reckoning
@@ -1459,17 +1485,29 @@ _.Zones =
 				}),
 				q(32669, {	-- Learn To Ride
 					["description"] = "This quest is available to Orcs upon reaching level 20.",
-					["races"] = { 2 },	-- Orc
+					["races"] = { ORC },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["lvl"] = 20,
 				}),
 				q(32667, {	-- Learn To Ride
 					["description"] = "This quest is available to Pandaren upon reaching level 20.",
-					["races"] = { 26 },	-- Pandaren
+					["races"] = { PANDAREN_HORDE },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["lvl"] = 20,
+				}),
+				q(60345, {	-- License to Ride
+					["provider"] = { "n", 168540 },	-- Rohaka Tuskmaul
+					["coord"] = { 61.5, 32.9, 85 },
+					["sourceQuest"] = 60344,	-- Finding Your Way (H)
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
+					["g"] = {
+						i(13331),	-- Red Skeletal Horse
+					},
 				}),
 				q(32471, {	-- Light Camera Action
 					["provider"] = { "n", 16926 },	-- Vivica Starshot
@@ -1521,10 +1559,16 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				q(51443, {	-- Mission Statement
+				q(51443, {	-- Mission Statement (BfA version, may be removed now)
 					["provider"] = { "n", 140176 },	-- Nathanos Blightcaller
 					["coord"] = { 48.9, 91.4, 85 },
 					["sourceQuest"] = 53031,	-- The Speaker's Imperative
+					["races"] = HORDE_ONLY,
+				}),
+				q(60361, {	-- Mission Statement (Shadowlands version)
+					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
+					["coord"] = { 48.3, 71.4, 85 },
+					["sourceQuest"] = 60360,	-- An Urgent Meeting
 					["races"] = HORDE_ONLY,
 				}),
 				q(26803, {	-- Missing Reports
@@ -1605,10 +1649,7 @@ _.Zones =
 					["provider"] = { "n", 3310 },	-- Doras
 					["coord"] = { 49.5, 59.2, 85 },
 					["sourceQuest"] = 6385,	-- Doras the Wind Rider Master
-					["races"] = {
-						2,	-- Orc
-						8,	-- Troll
-					},
+					["races"] = { ORC, TROLL },
 					["lvl"] = 5,
 				}),
 				q(26840, {	-- Return to the Highlands
@@ -1892,7 +1933,7 @@ _.Zones =
 					["provider"] = { "n", 45339 },	-- Dark Cleric Cecille
 					["coord"] = { 48.2, 72.8, 85 },
 					["sourceQuest"] = 27334,	-- Dark Cleric Cecille
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["g"] = {
@@ -1914,7 +1955,6 @@ _.Zones =
 					["provider"] = { "n", 55382 },	-- Darkmoon Faire Mystic Mage
 					["coord"] = { 48.0, 62.0, 85 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 					["g"] = {
 						currency(515),	-- Darkmoon Prize Ticket
 					},
@@ -1952,7 +1992,7 @@ _.Zones =
 				q(31013, {	-- The Horde Way
 					["provider"] = { "n", 39605 },	-- Garrosh Hellscream
 					["coord"] = { 48.2, 70.6, 85 },
-					["races"] = { 26 },	-- Pandaren
+					["races"] = { PANDAREN_HORDE },
 					["lvl"] = 5,
 				}),
 				q(53779, {	-- The Lies of a Loa
@@ -2021,10 +2061,7 @@ _.Zones =
 					["provider"] = { "n", 45137 },	-- Shadow-Walker Zuru
 					["coord"] = { 35.4, 69.2, 85 },
 					["sourceQuest"] = 27332,	-- Seek the Shadow-Walker
-					["races"] = {
-						8,	-- Troll
-						31,	-- Zandalari Troll
-					},
+					["races"] = { TROLL, ZANDALARI },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
 					["g"] = {
@@ -2054,6 +2091,16 @@ _.Zones =
 					["coord"] = { 32.6, 68.2, 85 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 85,
+				}),
+				q(60123, {	-- To Outland
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, 85 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(60125, {	-- To Pandaria!
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, 85 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(28816, {	-- To the Depths
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
@@ -2125,7 +2172,7 @@ _.Zones =
 					["provider"] = { "n", 45339 },	-- Dark Cleric Cecille
 					["coord"] = { 48.2, 72.8, 85 },
 					["sourceQuest"] = 28304,	-- Meet with Dark Cleric Cecille
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["g"] = {
@@ -2147,10 +2194,7 @@ _.Zones =
 					["provider"] = { "n", 45137 },	-- Shadow-Walker Zuru
 					["coord"] = { 35.4, 69.2, 85 },
 					["sourceQuest"] = 28309,	-- Meet with Shadow-Walker Zuru
-					["races"] = {
-						8,	-- Troll
-						31,	-- Zandalari Troll
-					},
+					["races"] = { TROLL, ZANDALARI },
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["g"] = {
@@ -2207,6 +2251,115 @@ _.Zones =
 						i(65648),	-- Headguard of the Order
 						i(25549),	-- Blood Knight Tabard
 					},
+				}),
+				q(60343, {	-- Welcome to Orgrimmar
+					["coord"] = { 52.5, 88.0, 85 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
+					["sourceQuest"] = 59985,	-- An End to Beginnings (H)
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
+				}),
+				q(60346, {	-- What's Your Specialty? (Druid)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
+					["classes"] = { DRUID },
+				}),
+				q(60347, {	-- What's Your Specialty? (Hunter)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
+					["classes"] = { HUNTER },
+				}),
+				q(60348, {	-- What's Your Specialty? (Mage)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
+					["classes"] = { MAGE },
+				}),
+				q(60349, {	-- What's Your Specialty? (Monk)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
+					["classes"] = { MONK },
+				}),
+				q(60350, {	-- What's Your Specialty? (Paladin)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
+					["classes"] = { PALADIN },
+				}),
+				q(60351, {	-- What's Your Specialty? (Priest)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
+					["classes"] = { PRIEST },
+				}),
+				q(60352, {	-- What's Your Specialty? (Rogue)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
+					["classes"] = { ROGUE },
+				}),
+				q(60353, {	-- What's Your Specialty? (Shaman)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
+					["classes"] = { SHAMAN },
+				}),
+				q(60355, {	-- What's Your Specialty? (Warlock)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
+					["classes"] = { WARLOCK },
+				}),
+				q(60357, {	-- What's Your Specialty? (Warrior)
+					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["coord"] = { 61.5, 33.0, 85 },
+					["sourceQuest"] = 60345,	-- License to Ride
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						62808,	-- 120 character prior to 9.0
+					},
+					["classes"] = { WARRIOR },
 				}),
 				q(26324, {	-- Where Is My Warfleet?
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang

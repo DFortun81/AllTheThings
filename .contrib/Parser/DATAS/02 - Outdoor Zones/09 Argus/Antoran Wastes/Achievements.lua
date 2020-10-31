@@ -1,12 +1,12 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
 {
 	m(905, { 	-- Argus
 		m(885, {	-- Antoran Wastes
-			n(-4, { 	-- Achievement
+			n(ACHIEVEMENTS, {
 				ach(12084),	-- Infused and Abused
 				ach(12074, {	-- Shoot First, Loot Later
 					o(277205, {	-- Ancient Legion War Cache
@@ -34,7 +34,7 @@ _.Zones =
 					}),
 					o(277204, {	-- Forgotten Legion Supplies
 						["questID"] = 49017,
-						["description"] = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
+						["description"] = "You will need |cFFFFD700Lightforged Warframe|r to get into the cave.",
 						["icon"] = "Interface\\Icons\\inv_misc_treasurechest04d",
 						["coord"] = { 58.8, 59.2, 885 },
 						["groups"] = {

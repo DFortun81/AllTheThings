@@ -5,7 +5,14 @@
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(302, { 	-- Stormstout Brewery
 		["lvl"] = 85,
-		["maps"] = { 439, 440, 441, 442 },
+		["maps"] = {
+			439,
+			440,
+			441,
+			442,
+			872,	-- Monk: Legion Class Mount Map
+			874,	-- Monk: Legion Class Mount Map
+		},
 		["g"] = {
 			n(QUESTS, {
 				q(31324, {	-- Family Secrets

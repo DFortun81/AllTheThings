@@ -128,11 +128,11 @@ _.Zones =
 						i(61490),	-- Sanguinary Bracers
 					},
 				}),
-				q(27935, {	--  Bring Down the Avalanche (completing gives credit for both 27935 and 27936)
+				q(27935, {	-- Bring Down the Avalanche (completing gives credit for both 27935 and 27936)
 					["lvl"] = 82,
 					["sourceQuests"] = {27934},	--  One With the Ground
 				}),
-				q(27936, {	--  Bring Down the Avalanche
+				q(27936, {	-- Bring Down the Avalanche
 					["lvl"] = 82,
 					["sourceQuests"] = {27934},	--  One With the Ground
 				}),
@@ -157,7 +157,7 @@ _.Zones =
 						i(61424),	-- Geodecrack Shoulderguards
 					},
 				}),
-				q(26632, {	--  Close Escort
+				q(26632, {	-- Close Escort
 					["lvl"] = 82,
 					["provider"] = { "n", 45043 },	-- Peak Grindstone
 					["coord"] = { 20.7, 61.6, 207 },
@@ -196,7 +196,7 @@ _.Zones =
 					["coord"] = { 49.6, 53.0, 207 },
 					["sourceQuests"] = { 26255 },	-- Return to the Temple of Earth
 				}),
-				q(27040, {	--  Decryption Made Easy [Alliance]
+				q(27040, {	-- Decryption Made Easy [Alliance]
 					["lvl"] = 82,
 					["provider"] = { "n", 44799 },	-- Explorer Mowi
 					["coord"] = { 47.3, 51.4, 207 },
@@ -206,7 +206,7 @@ _.Zones =
 						27004,	--  The Twilight Plot
 					},
 				}),
-				q(27041, {	--  Decryption Made Easy [Horde]
+				q(27041, {	-- Decryption Made Easy [Horde]
 					["lvl"] = 82,
 					["provider"] = { "n", 44823 },	-- Examiner Rowe
 					["races"] = HORDE_ONLY,
@@ -248,7 +248,7 @@ _.Zones =
 					["coord"] = { 72.2, 54.0, 207 },
 					["sourceQuests"] = { 26577 },	-- Rocky Upheaval
 				}),
-				q(26834, {	--  Down Into the Chasm
+				q(26834, {	-- Down Into the Chasm
 					["lvl"] = 82,
 					["provider"] = { "n", 43897 },	-- Pyrium Lodestone
 					["coord"] = { 22.7, 52.0, 207 },
@@ -263,7 +263,7 @@ _.Zones =
 					["coord"] = { 56.5, 12.4, 207 },
 					["sourceQuest"] = 29337,	-- Into Constant Earth
 				}),
-				q(27136, {	--  Elemental Energy
+				q(27136, {	-- Elemental Energy
 					["lvl"] = 82,
 					["provider"] = { "n", 43397 },	-- Seer Kormo
 					["coord"] = { 49.7, 53.0, 207 },
@@ -540,7 +540,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 42469 },	-- Kor the Immovable
 					["coord"] = { 34.4, 34.4, 207 },
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						26437,	-- Making Things Crystal Clear
 						26438,	-- Intervention
 						26439,	-- Putting the Pieces Together
@@ -651,7 +651,7 @@ _.Zones =
 					["coord"] = { 24.7, 62.2, 207 },
 					["sourceQuests"] = {26625},	--  Troggzor the Earthinator
 				}),
-				q(26501, {	--  Sealing the Way
+				q(26501, {	-- Sealing the Way
 					["lvl"] = 82,
 					["provider"] = { "n", 43071 },	-- Crag Rockcrusher
 					["coord"] = { 27.9, 68.8, 207 },

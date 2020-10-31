@@ -54,7 +54,7 @@ namespace ATT
             /// <summary>
             /// All of the Quests that are in the database.
             /// </summary>
-            public static IDictionary<long, Dictionary<string, object>> AllQuests { get; } = new Dictionary<long, Dictionary<string, object>>();
+            public static IDictionary<int, Dictionary<string, object>> AllQuests { get; } = new Dictionary<int, Dictionary<string, object>>();
 
             #endregion
             #region Filters
@@ -140,6 +140,7 @@ namespace ATT
             /// <returns>The Filter ID. (Default: 0 if invalid, -1 if ignored.)</returns>
             private static Filters CalculateFilter(int itemClass, int itemSubClass, int inventoryType)
             {
+                // https://wow.gamepedia.com/Enum.InventoryType
                 // Inventory Types
                 // Some inventory types make this very very easy to calculate.
                 switch (inventoryType)
@@ -151,6 +152,8 @@ namespace ATT
                     case 16: return Filters.Cloak;
                     case 18: return Filters.Bag;
                     case 19: return Filters.Tabard;
+                    case 22: return Filters.HeldInOffHand;
+                    case 23: return Filters.HeldInOffHand;
                     default: break;
                 }
 
@@ -247,7 +250,7 @@ namespace ATT
                                                 case 09: return Filters.Cosmetic;           // Wrist (no armor type specified - Cosmetic?)
                                                 case 10: return Filters.Cosmetic;           // Gloves (no armor type specified - Cosmetic?)
                                                 case 20: return Filters.Cosmetic;           // Chest (no armor type specified - Cosmetic?)
-                                                case 23: return Filters.HeldInOffHand;      // Held in Offhand
+                                                //case 23: return Filters.HeldInOffHand;      // Held in Offhand
                                                 default: return Filters.Invalid;
                                             }
                                         default: return Filters.Invalid;
@@ -346,7 +349,7 @@ namespace ATT
                                     case 10: return Filters.Cosmetic;           // Gloves (no armor type specified - Cosmetic?)
                                     case 20: return Filters.Cosmetic;           // Chest (no armor type specified - Cosmetic?)
                                     case 21: return Filters.Cosmetic;           // Main Hand (no armor type specified - Cosmetic?)
-                                    case 23: return Filters.HeldInOffHand;      // Held in Offhand
+                                    //case 23: return Filters.HeldInOffHand;      // Held in Offhand
                                     case 24: return Filters.Ignored;            // Projectiles
                                     default: return Filters.Invalid;
                                 }
@@ -412,7 +415,10 @@ namespace ATT
                 if (data.TryGetValue("f", out int f) && f > 0) return;
 
                 // Calculate the filter ID. (0 is invalid, -1 is explicitly ignored)
-                data["f"] = (int)CalculateFilter(data);
+                f = (int)CalculateFilter(data);
+                data["f"] = f;
+                //if (f == 0)
+                //    Trace.WriteLine("Invalid filter for: " + MiniJSON.Json.Serialize(data));
             }
 
             /// <summary>
@@ -421,7 +427,7 @@ namespace ATT
             public static readonly Dictionary<object, object> SKILL_ID_CONVERSION_TABLE = new Dictionary<object, object>
             {
 	            // Alchemy Skills
-	            {171, 171},	// Alchemy [7.3.5]
+	            {171, 171},	    // Alchemy [7.3.5]
 	            {2485, 171},	// Classic Alchemy [8.0.1]
 	            {2484, 171},	// Outland Alchemy [8.0.1]
 	            {2483, 171},	// Northrend Alchemy [8.0.1]
@@ -430,12 +436,13 @@ namespace ATT
 	            {2480, 171},	// Draenor Alchemy [8.0.1]
 	            {2479, 171},	// Legion Alchemy [8.0.1]
 	            {2478, 171},	// Kul Tiran Alchemy [8.0.1]
+	            {2750, 171},	// Shadowlands Alchemy [9.0.1]
 
 	            // Archaeology Skills
-	            {794, 794},	// Archaeology [7.3.5]
+	            {794, 794},	    // Archaeology [7.3.5]
 
 	            // Blacksmithing Skills
-	            {164, 164},	// Blacksmithing [7.3.5]
+	            {164, 164},	    // Blacksmithing [7.3.5]
                 {9788, 9788},   // Armorsmithing
                 {9787, 9787},   // Weaponsmithing
                 {17041, 17041},   // Master Axesmith
@@ -449,6 +456,7 @@ namespace ATT
 	            {2472, 164},	// Draenor Blacksmithing [8.0.1]
 	            {2454, 164},	// Legion Blacksmithing [8.0.1]
 	            {2437, 164},	// Kul Tiran Blacksmithing [8.0.1]
+	            {2751, 164},	// Shadowlands Blacksmithing [9.0.1]
 
 	            // Cooking Skills
 	            {185, 185},	    // Cooking [7.3.5]
@@ -466,9 +474,10 @@ namespace ATT
 	            {2543, 185},	// Draenor Cooking [8.0.1]
 	            {2542, 185},	// Legion Cooking [8.0.1]
 	            {2541, 185},	// Kul Tiran Cooking [8.0.1]
+	            {2752, 185},	// Shadowlands Cooking [9.0.1]
 
 	            // Enchanting Skills
-	            {333, 333},	// Enchanting [7.3.5]
+	            {333, 333},	    // Enchanting [7.3.5]
 	            {2494, 333},	// Classic Enchanting [8.0.1]
 	            {2493, 333},	// Outland Enchanting [8.0.1]
 	            {2492, 333},	// Northrend Enchanting [8.0.1]
@@ -477,9 +486,10 @@ namespace ATT
 	            {2488, 333},	// Draenor Enchanting [8.0.1]
 	            {2487, 333},	// Legion Enchanting [8.0.1]
 	            {2486, 333},	// Kul Tiran Enchanting [8.0.1]
+	            {2753, 333},	// Shadowlands Enchanting [9.0.1]
 
 	            // Engineering Skills
-	            {202, 202},	// Engineering [7.3.5]
+	            {202, 202},	    // Engineering [7.3.5]
                 {20219, 20219},    // Gnomish Engineering
                 {20222, 20222},    // Goblin Engineering
 	            {2506, 202},	// Classic Engineering [8.0.1]
@@ -490,12 +500,13 @@ namespace ATT
 	            {2501, 202},	// Draenor Engineering [8.0.1]
 	            {2500, 202},	// Legion Engineering [8.0.1]
 	            {2499, 202},	// Kul Tiran Engineering [8.0.1]
+	            {2755, 202},	// Shadowlands Engineering [9.0.1]
 
 	            // First Aid Skills
-	            {129, 129},	// First Aid [7.3.5] [REMOVED FROM GAME]
+	            {129, 129},	    // First Aid [7.3.5] [REMOVED FROM GAME]
 
 	            // Fishing Skills
-	            {356, 356},	// Fishing [7.3.5]
+	            {356, 356},	    // Fishing [7.3.5]
 	            {2592, 356},	// Classic Fishing [8.0.1]
 	            {2591, 356},	// Outland Fishing [8.0.1]
 	            {2590, 356},	// Northrend Fishing [8.0.1]
@@ -504,9 +515,10 @@ namespace ATT
 	            {2587, 356},	// Draenor Fishing [8.0.1]
 	            {2586, 356},	// Legion Fishing [8.0.1]
 	            {2585, 356},	// Kul Tiran Fishing [8.0.1]
+	            {2754, 356},	// Shadowlands Fishing [9.0.1]
 
 	            // Herbalism Skills
-	            {182, 182},	// Herbalism [7.3.5]
+	            {182, 182},	    // Herbalism [7.3.5]
 	            {2556, 182},	// Classic Herbalism [8.0.1]
 	            {2555, 182},	// Outland Herbalism [8.0.1]
 	            {2554, 182},	// Northrend Herbalism [8.0.1]
@@ -515,9 +527,10 @@ namespace ATT
 	            {2551, 182},	// Draenor Herbalism [8.0.1]
 	            {2550, 182},	// Legion Herbalism [8.0.1]
 	            {2549, 182},	// Kul Tiran Herbalism [8.0.1]
+	            {2760, 182},	// Shadowlands Herbalism [9.0.1]
 
 	            // Inscription Skills
-	            {773, 773},	// Inscription [7.3.5]
+	            {773, 773},	    // Inscription [7.3.5]
 	            {2514, 773},	// Classic Inscription [8.0.1]
 	            {2513, 773},	// Outland Inscription [8.0.1]
 	            {2512, 773},	// Northrend Inscription [8.0.1]
@@ -526,9 +539,10 @@ namespace ATT
 	            {2509, 773},	// Draenor Inscription [8.0.1]
 	            {2508, 773},	// Legion Inscription [8.0.1]
 	            {2507, 773},	// Kul Tiran Inscription [8.0.1]
+	            {2756, 773},	// Shadowlands Inscription [9.0.1]
 
 	            // Jewelcrafting Skills
-	            {755, 755},	// Jewelcrafting [7.3.5]
+	            {755, 755},	    // Jewelcrafting [7.3.5]
 	            {2524, 755},	// Classic Jewelcrafting [8.0.1]
 	            {2523, 755},	// Outland Jewelcrafting [8.0.1]
 	            {2522, 755},	// Northrend Jewelcrafting [8.0.1]
@@ -537,9 +551,10 @@ namespace ATT
 	            {2519, 755},	// Draenor Jewelcrafting [8.0.1]
 	            {2518, 755},	// Legion Jewelcrafting [8.0.1]
 	            {2517, 755},	// Kul Tiran Jewelcrafting [8.0.1]
+	            {2757, 755},	// Shadowlands Jewelcrafting [9.0.1]
 
 	            // Leatherworking Skills
-	            {165, 165},	// Leatherworking [7.3.5]
+	            {165, 165},	    // Leatherworking [7.3.5]
                 {10656, 10656},    // Dragonscale Leatherworking
                 {10658, 10658},    // Elemental Leatherworking
                 {10660, 10660},    // Tribal Leatherworking
@@ -551,9 +566,10 @@ namespace ATT
 	            {2527, 165},	// Draenor Leatherworking [8.0.1]
 	            {2526, 165},	// Legion Leatherworking [8.0.1]
 	            {2525, 165},	// Kul Tiran Leatherworking [8.0.1]
+	            {2758, 165},	// Shadowlands Leatherworking [9.0.1]
 
 	            // Mining Skills
-	            {186, 186},	// Mining [7.3.5]
+	            {186, 186},	    // Mining [7.3.5]
 	            {2572, 186},	// Classic Mining [8.0.1]
 	            {2571, 186},	// Outland Mining [8.0.1]
 	            {2570, 186},	// Northrend Mining [8.0.1]
@@ -562,9 +578,10 @@ namespace ATT
 	            {2567, 186},	// Draenor Mining [8.0.1]
 	            {2566, 186},	// Legion Mining [8.0.1]
 	            {2565, 186},	// Kul Tiran Mining [8.0.1]
+	            {2761, 186},	// Shadowlands Mining [9.0.1]
 
 	            // Skinning Skills
-	            {393, 393},	// Skinning [7.3.5]
+	            {393, 393},	    // Skinning [7.3.5]
 	            {2564, 393},	// Classic Skinning [8.0.1]
 	            {2563, 393},	// Outland Skinning [8.0.1]
 	            {2562, 393},	// Northrend Skinning [8.0.1]
@@ -573,9 +590,10 @@ namespace ATT
 	            {2559, 393},	// Draenor Skinning [8.0.1]
 	            {2558, 393},	// Legion Skinning [8.0.1]
 	            {2557, 393},	// Kul Tiran Skinning [8.0.1]
+	            {2762, 393},	// Shadowlands Skinning [9.0.1]
 
 	            // Tailoring Skills
-	            {197, 197},	// Tailoring [7.3.5]
+	            {197, 197},	    // Tailoring [7.3.5]
 	            {2540, 197},	// Classic Tailoring [8.0.1]
 	            {2539, 197},	// Outland Tailoring [8.0.1]
 	            {2538, 197},	// Northrend Tailoring [8.0.1]
@@ -584,6 +602,7 @@ namespace ATT
 	            {2535, 197},	// Draenor Tailoring [8.0.1]
 	            {2534, 197},	// Legion Tailoring [8.0.1]
 	            {2533, 197},    // Kul Tiran Tailoring [8.0.1]
+	            {2759, 197},    // Shadowlands Tailoring [9.0.1]
             };
 
             /// <summary>
@@ -592,21 +611,13 @@ namespace ATT
             /// <param name="data">The data dictionary.</param>
             public static void AssignFactionID(Dictionary<string, object> data)
             {
-                // If an object already has a faction ID assigned and the ID is valid, ignore it.
-                if (data.TryGetValue("r", out object temp) && int.TryParse(temp?.ToString(), out int i) && i > 0)
-                {
-                    // no items tagged for faction AND specific races... ?
-                    data.Remove("races");
-                    return;
-                }
-
                 // Calculate the faction ID. (0 is no faction)
                 if (data.TryGetValue("races", out object racesRef) && racesRef is List<object> races)
                 {
                     var allRaces = new List<object>(races);
                     var allianceDictionary = new Dictionary<object, bool>(ALLIANCE_ONLY_DICT);
                     var allianceRaces = new List<object>();
-                    foreach(var raceID in races)
+                    foreach (var raceID in races)
                     {
                         if (allianceDictionary.Remove(raceID))
                         {
@@ -706,7 +717,7 @@ namespace ATT
                 {
                     if (entry is Dictionary<string, object> o)
                     {
-                        if(o.TryGetValue("itemID", out int itemID))
+                        if (o.TryGetValue("itemID", out int itemID))
                         {
                             var itemData = Items.GetNull(itemID);
                             if (itemData != null && itemData.TryGetValue("name", out object nameRef)) o["name"] = nameRef;
@@ -762,7 +773,7 @@ namespace ATT
                             if (!item.TryGetValue("f", out int f)) f = 0;
 
                             // Write the Item Name to the correct Binding Filtered Dictionary List.
-                            if(!bindingSpecification.TryGetValue(b, out Dictionary<int, List<string>> filterSpecification))
+                            if (!bindingSpecification.TryGetValue(b, out Dictionary<int, List<string>> filterSpecification))
                             {
                                 bindingSpecification[b] = filterSpecification = new Dictionary<int, List<string>>();
                             }
@@ -797,7 +808,7 @@ namespace ATT
                                 builder2.Append("Filter Type ").Append(f);
                             }
                             builder2.AppendLine();
-                            foreach(var item in filterSpecification[f])
+                            foreach (var item in filterSpecification[f])
                             {
                                 builder2.Append('\t').Append(item);
                             }
@@ -835,7 +846,7 @@ namespace ATT
                     var sortedNPCIDs = allLocalizedNPCIDs.Keys.ToList();
                     sortedNPCIDs.Sort();
                     sortedNPCIDs.Reverse();
-                    foreach(int sortedNPCID in sortedNPCIDs)
+                    foreach (int sortedNPCID in sortedNPCIDs)
                     {
                         if (NPCS_WITH_REFERENCES.ContainsKey(sortedNPCID)) continue;
                         Trace.Write("Custom NPC ID [");
@@ -881,7 +892,7 @@ namespace ATT
                     var entry = db[key];
                     if (entry.Any())
                     {
-                        if(entry.TryGetValue("name", out object entryName))
+                        if (entry.TryGetValue("name", out object entryName))
                         {
                             entry.Remove("name");
                         }
@@ -933,7 +944,7 @@ namespace ATT
                     switch (pair.Key)
                     {
                         case "description":
-                        case "lvl":
+                        //case "lvl":
                         case "races":
                         case "classes":
                         case "coords":
@@ -948,7 +959,7 @@ namespace ATT
                                 if (data.TryGetValue("modID", out object modIDRef)) modID = Convert.ToInt32(modIDRef);
                                 if (itemData.TryGetValue("m", out object sourceIDRefs))
                                 {
-                                    (sourceIDRefs as Dictionary<int, object>)[modID] = pair.Value; 
+                                    (sourceIDRefs as Dictionary<int, object>)[modID] = pair.Value;
                                 }
                                 else
                                 {
@@ -974,6 +985,7 @@ namespace ATT
                         case "g":
                         case "q":
                         case "hideText":
+                        case "lvl":
                             break;
                         default:
                             // FOR NOW, just copy all non-g fields.
@@ -997,15 +1009,15 @@ namespace ATT
                 }
 
                 // Only include whitelisted fields.
-                foreach(var pair in data)
+                foreach (var pair in data)
                 {
-                    switch(pair.Key)
+                    switch (pair.Key)
                     {
                         case "name":
                         case "text":
                         case "title":
                         case "icon":
-                        case "lvl":
+                        //case "lvl":
                         case "coords":
                         case "crs":
                         case "sym":
@@ -1071,6 +1083,7 @@ namespace ATT
                         case "collectible":
                         case "hideText":
                         case "description":
+                        case "lvl":
                             // Ignore these!
                             break;
 
@@ -1089,16 +1102,10 @@ namespace ATT
             /// <param name="item">The item!</param>
             /// <param name="field">The field!</param>
             /// <param name="value">The value.</param>
-            private static void MergeIntegerArrayData(Dictionary<string, object> item, string field, object value)
+            public static void MergeIntegerArrayData(Dictionary<string, object> item, string field, object value)
             {
                 // Convert the data to a list of generic objects.
-                var newList = value as List<object>;
-                if (newList == null)
-                {
-                    var dict = value as Dictionary<object, object>;
-                    if (dict == null) return;
-                    newList = dict.Values.ToList();
-                }
+                var newList = ConvertToList(item, field, value);
 
                 // Attempt to get the old list data.
                 List<object> oldList;
@@ -1113,12 +1120,44 @@ namespace ATT
                     item[field] = oldList = new List<object>();
                 }
 
-                // Merge the new list of data into the old data and ensure there are no duplicate values.
-                foreach (var entry in newList)
+                // special case for 'reqlvl'...
+                // item with quest attached, item has diff reqlvl than the quest reqlvl, you end up with the item having a lvl range instead of the highest value
+                if (field == "reqlvl")
                 {
-                    var index = Convert.ToInt32(entry);
-                    if (oldList.Contains(index)) continue;
-                    oldList.Add(index);
+                    int? oldmin = null, oldmax = null, newmin = null, newmax = null;
+                    if (oldList.Count > 0)
+                        oldmin = Convert.ToInt32(oldList[0]);
+                    if (newList.Count > 0)
+                        newmin = Convert.ToInt32(newList[0]);
+                    if (oldList.Count > 1)
+                        oldmax = Convert.ToInt32(oldList[1]);
+                    if (newList.Count > 1)
+                        newmax = Convert.ToInt32(newList[1]);
+
+                    newmin = Math.Max(oldmin ?? int.MinValue, newmin ?? int.MinValue);
+                    newmax = Math.Min(oldmax ?? int.MaxValue, newmax ?? int.MaxValue);
+
+                    if (newmax > 0 && newmax < int.MaxValue)
+                    {
+                        oldList.Clear();
+                        oldList.Add(newmin);
+                        oldList.Add(newmax);
+                    }
+                    else if (newmin > 0)
+                    {
+                        oldList.Clear();
+                        oldList.Add(newmin);
+                    }
+                }
+                else
+                {
+                    // Merge the new list of data into the old data and ensure there are no duplicate values.
+                    foreach (var entry in newList)
+                    {
+                        var index = Convert.ToInt32(entry);
+                        if (oldList.Contains(index)) continue;
+                        oldList.Add(index);
+                    }
                 }
 
                 // Sort the old list to ensure that the order is consistent.
@@ -1131,16 +1170,10 @@ namespace ATT
             /// <param name="item">The item!</param>
             /// <param name="field">The field!</param>
             /// <param name="value">The value.</param>
-            private static void MergeStringArrayData(Dictionary<string, object> item, string field, object value)
+            public static void MergeStringArrayData(Dictionary<string, object> item, string field, object value)
             {
                 // Convert the data to a list of generic objects.
-                var newList = value as List<object>;
-                if (newList == null)
-                {
-                    var dict = value as Dictionary<object, object>;
-                    if (dict == null) return;
-                    newList = dict.Values.ToList();
-                }
+                var newList = ConvertToList(item, field, value);
 
                 // Attempt to get the old list data.
                 List<object> oldList;
@@ -1192,26 +1225,19 @@ namespace ATT
                                 item["g"] = groups;
                             }
 
-                            try
+                            // Attempt to merge the sub groups together.
+                            if (value is List<object> list)
                             {
-                                // Attempt to merge the sub groups together.
-                                if (value is List<object> list)
-                                {
-                                    Merge(groups, list);
-                                }
-                                else if (value is Dictionary<object, object> dict)
-                                {
-                                    Merge(groups, dict.Values.ToList());
-                                }
-                                else
-                                {
-                                    Trace.WriteLine(ToJSON(value));
-                                    Console.ReadLine();
-                                }
+                                Merge(groups, list);
                             }
-                            catch
+                            else if (value is Dictionary<object, object> dict)
+                            {
+                                Merge(groups, dict.Values.ToList());
+                            }
+                            else
                             {
                                 Trace.WriteLine(ToJSON(value));
+                                Console.ReadLine();
                             }
                             break;
                         }
@@ -1281,7 +1307,6 @@ namespace ATT
                     //case "musicRollID":
                     //case "illusionID":
                     case "altAchID":
-                    case "altQuestID":
                     case "altSpeciesID":
                     case "requireSkill":
                     case "class":
@@ -1298,8 +1323,9 @@ namespace ATT
                     case "b":
                     case "rank":
                     case "ilvl":
-                    case "lvl":
+                    //case "lvl":
                     case "q":
+                    case "r":
                         {
                             item[field] = Convert.ToInt32(value);
                             break;
@@ -1315,6 +1341,13 @@ namespace ATT
                             });
                             break;
                         }
+                    case "altQuestID":
+                        // Convert a single altQuestID into an altQuests list.
+                        Merge(item, "altQuests", new List<object>
+                            {
+                                Convert.ToInt32(value)
+                            });
+                        break;
                     case "qg":
                         {
                             // Convert a single qg to a qgs list.
@@ -1345,6 +1378,7 @@ namespace ATT
                     case "maps":
                     case "qgs":
                     case "crs":
+                    case "reqlvl":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;
@@ -1416,7 +1450,7 @@ namespace ATT
                     // List O' List O' Objects Data Type Fields that could also be numberical values.
                     case "cost":
                         {
-                            
+
                             // Convert the data to a list of generic objects.
                             var newListOfLists = value as List<List<object>>;
                             if (newListOfLists == null)
@@ -1428,7 +1462,7 @@ namespace ATT
                                     if (dict == null)
                                     {
                                         var cost = Convert.ToInt64(value);
-                                        if(cost > 0) item[field] = cost;
+                                        if (cost > 0) item[field] = cost;
                                         return;
                                     }
                                     else newList = dict.Values.ToList();
@@ -1444,8 +1478,13 @@ namespace ATT
                                         else list = dict.Values.ToList();
                                     }
 
+                                    string costType = list[0].ToString();
+                                    // ensure the cost has the appropriate number of objects based on type
+                                    if ((costType == "i" || costType == "c") && list.Count != 3)
+                                        throw new InvalidDataException("'cost' tag expects a list of sub-lists of 2 (for gold amounts) or 3 values each, i.e. [\"cost\"] = { { type, id, count }, { \"g\", 100000 }, ... }");
+
                                     // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                                    if (list[0].ToString() == "i")
+                                    if (costType == "i")
                                     {
                                         int itemID = Convert.ToInt32(list[1]);
                                         Items.MarkItemAsReferenced(itemID);
@@ -1492,14 +1531,14 @@ namespace ATT
                             };
                             if (item.TryGetValue("providers", out object providersRef) && providersRef is List<object> providers)
                             {
-                                foreach(var providerRef in providers)
+                                foreach (var providerRef in providers)
                                 {
                                     if (providerRef is List<object> oldprovider)
                                     {
-                                        if(oldprovider.Count == newProvider.Count)
+                                        if (oldprovider.Count == newProvider.Count)
                                         {
                                             bool match = true;
-                                            for(int i = 0; i < newProvider.Count;++i)
+                                            for (int i = 0; i < newProvider.Count; ++i)
                                             {
                                                 if (oldprovider[i] == newProvider[i]) continue;
                                                 match = false;
@@ -1572,7 +1611,7 @@ namespace ATT
                                             bool match = true;
                                             for (int i = 0; i < oldcount; ++i)
                                             {
-                                                if (oldcoord[i] == newcoord[i]) continue;
+                                                if (Equals(oldcoord[i], newcoord[i])) continue;
                                                 match = false;
                                                 break;
                                             }
@@ -1596,6 +1635,7 @@ namespace ATT
                         }
                     case "coords":
                         {
+                            // TODO: when using _quests on a criteria which has coords, the coord is being duplicated a various amount of times
                             // Convert the data to a list of generic objects.
                             if (value is List<object> newList)
                             {
@@ -1615,6 +1655,7 @@ namespace ATT
                         break;
 
                     // Blacklisted Fields
+                    case "lvl":
                     case "link":
                     case "retries":
                     case "previousRecipeID":
@@ -1622,6 +1663,32 @@ namespace ATT
                         {
                             return;
                         }
+
+                    case "_quests":
+                    case "_items":
+                    case "_npcs":
+                        if (value is Dictionary<object, object> ids)
+                        {
+                            item[field] = ids.Values.ToList();
+                        }
+                        else if (value is List<object> idList)
+                        {
+                            item[field] = idList;
+                        }
+                        else
+                        {
+                            Trace.Write("Parser is ignoring field '");
+                            Trace.Write(field);
+                            Trace.WriteLine("' for objects.");
+                            Trace.Write("  [");
+                            Trace.Write(MiniJSON.Json.Serialize(value));
+                            Trace.WriteLine("]");
+                            Trace.WriteLine(MiniJSON.Json.Serialize(item));
+                        }
+                        break;
+                    case "_drop":
+                        item[field] = value;
+                        break;
 
                     // Report all other fields.
                     default:
@@ -1632,6 +1699,10 @@ namespace ATT
                                 item[field] = Convert.ToInt32(value);
                                 return;
                             }
+
+                            // ignore fields starting with _ since those will be used for metadata in some scenarios
+                            if (field.StartsWith("_"))
+                                break;
 
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;
@@ -1673,6 +1744,26 @@ namespace ATT
             }
 
             /// <summary>
+            /// Checks for parser tags that need to be handled
+            /// </summary>
+            /// <param name="entry"></param>
+            /// <param name="data"></param>
+            public static void PreMerge(Dictionary<string, object> entry, Dictionary<string, object> data)
+            {
+                // sometimes existing data from harvests may be inaccurate, so may need to clean existing fields from being merged in
+                if (entry.TryGetValue("_drop", out object drops) && drops is Dictionary<object, object> dropStrs)
+                {
+                    if (dropStrs != null && dropStrs.Count > 0)
+                    {
+                        foreach (object dropObj in dropStrs.Values)
+                        {
+                            data.Remove(dropObj?.ToString() ?? string.Empty);
+                        }
+                    }
+                }
+            }
+
+            /// <summary>
             /// Merge the data into the container.
             /// </summary>
             /// <param name="container">The container to merge into.</param>
@@ -1686,6 +1777,16 @@ namespace ATT
                 Dictionary<string, object> data2 = new Dictionary<string, object>();
                 foreach (var pair in data) data2[ConvertFieldName(pair.Key.ToString())] = pair.Value;
 
+                Merge(container, data2);
+            }
+
+            /// <summary>
+            /// Merge the string-keyed data into the container.
+            /// </summary>
+            /// <param name="container">The container to merge into.</param>
+            /// <param name="data">The data to merge into the container.</param>
+            public static void Merge(List<object> container, Dictionary<string, object> data2)
+            {
                 // Find the Object Dictionary that matches the data.
                 Dictionary<string, object> entry = null;
 
@@ -1694,7 +1795,7 @@ namespace ATT
                 {
                     // If there is no most significant ID field, then complain.
                     Trace.WriteLine("No Most Significant ID for:");
-                    Trace.WriteLine(ToJSON(data));
+                    Trace.WriteLine(ToJSON(data2));
                 }
                 else
                 {
@@ -1769,7 +1870,7 @@ namespace ATT
                                 }
                             }
                         }
-                        else 
+                        else
                         {
                             // The item does not have a Bonus ID or a Mod ID, so we can simply merge with the first one.
                             foreach (var entryRef in container)
@@ -1903,23 +2004,56 @@ namespace ATT
                 }
 
                 // Merge the entry with the data.
+                PreMerge(entry, data2);
                 Merge(entry, data2);
 
                 // Add quest entry to AllQuest collection
-                if (entry.TryGetValue("questID", out long questID))
+                if (entry.TryGetValue("questID", out int questID))
                 {
+                    // merge any quest information from the quest DB
+                    if (QUESTS.TryGetValue(questID, out Dictionary<string, object> dbQuest))
+                    {
+                        PreMerge(entry, dbQuest);
+                        Merge(entry, dbQuest);
+                    }
+
                     if (!AllQuests.ContainsKey(questID))
                     {
                         AllQuests.Add(questID, entry);
                     }
                 }
-                if (entry.TryGetValue("altQuestID", out long altQuestID))
-                {
-                    if (!AllQuests.ContainsKey(altQuestID))
-                    {
-                        AllQuests.Add(altQuestID, entry);
-                    }
-                }
+                //else if (entry.TryGetValue("altQuestID", out int altQuestID))
+                //{
+                //    if (!AllQuests.ContainsKey(altQuestID))
+                //    {
+                //        AllQuests.Add(altQuestID, entry);
+                //    }
+                //}
+                // This bloats the DB size by A LOT due to way more item information being included for every item, vs. only in some places
+                // Wish there was a way to link to an ItemDB from Categories.lua so that item information in each reference is identical and only the ID is necessary in Categories.lua
+                // for any object type
+                // (same with Quest/NPC probably?)
+                //else if (entry.TryGetValue("itemID", out int itemID))
+                //{
+                //    // merge any item information from the item DB...
+                //    var item = Items.Get(itemID);
+                //    PreMerge(entry, item);
+                //    Merge(entry, item);
+                //}
+                //else if (entry.TryGetValue("creatureID", out int crID) && crID > 0)
+                //{
+                //    // merge any NPC information from the NPC DB...
+                //    var npc = NPC_DB[crID];
+                //    PreMerge(entry, npc);
+                //    Merge(entry, npc);
+                //}
+                //else if (entry.TryGetValue("npcID", out int npcID) && npcID > 0)
+                //{
+                //    // merge any NPC information from the NPC DB...
+                //    var npc = NPC_DB[npcID];
+                //    PreMerge(entry, npc);
+                //    Merge(entry, npc);
+                //}
             }
 
             /// <summary>
@@ -1933,12 +2067,65 @@ namespace ATT
                 foreach (var data in list)
                 {
                     if (data is Dictionary<object, object> oDict) Merge(container, oDict);
+                    else if (data is Dictionary<string, object> sDict) Merge(container, sDict);
                     else
                     {
                         Trace.Write("MERGE CONFUSION: ");
                         Trace.WriteLine(ToJSON(data));
                     }
                 }
+            }
+
+            /// <summary>
+            /// Performs the best attempt at converting a single object into a List of objects
+            /// </summary>
+            /// <param name="value"></param>
+            /// <returns></returns>
+            public static List<object> ConvertToList(Dictionary<string, object> item, string field, object value)
+            {
+                if (value is List<object> newList)
+                    return newList;
+
+                if (value is Dictionary<object, object> dict)
+                    return dict.Values.ToList();
+
+                // incase a single value is provided instead of a list
+                bool found = false;
+                List<object> list = null;
+                if (value is int valint)
+                {
+                    found = true;
+                    list = new List<object> { valint };
+                }
+                else if (value is double valdbl)
+                {
+                    found = true;
+                    list = new List<object> { valdbl };
+                }
+                else if (value is float valflt)
+                {
+                    found = true;
+                    list = new List<object> { valflt };
+                }
+                else if (value is bool valbol)
+                {
+                    found = true;
+                    list = new List<object> { valbol };
+                }
+                else if (value is string valstr)
+                {
+                    found = true;
+                    list = new List<object> { valstr };
+                }
+
+                if (found)
+                {
+                    Trace.WriteLine("Non-Array '" + value?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
+                    return list;
+                }
+
+                // no hope
+                throw new Exception("Failed parsing value '" + value?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
             }
             #endregion
         }

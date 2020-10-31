@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -63,10 +64,10 @@ _.Zones =
 					["provider"] = { "n", 48010 },	-- Low Shaman Blundy
 				}),
 				q(27947, {	-- A Vision of Twilight (H)
+					["sourceQuests"] = { 28043 },	-- How to Maim Your Dragon (TODO: Verify SQ, may appear earlier)
 					["provider"] = { "n", 46323 },	-- Garona Halforcen
 					["coord"] = { 53.2, 42.7, 241 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 28133,	-- Fury Unbound (TODO: Verify sourcequest)
 				}),
 				q(28598, {	-- Aiming High
 					["sourceQuests"] = { 28597 },	-- Burnin' at Both Ends
@@ -191,11 +192,14 @@ _.Zones =
 					},
 				}),
 				q(28038, {	-- Blood in the Highlands
+					["sourceQuests"] = {
+						28871,	-- Crushing the Wildhammer
+						27929,	-- Drag 'em Down
+					},
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 46318 },	-- Harkkan
 					["coord"] = { 55.1, 43.5, 241 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 28133,	-- Fury Unbound (TODO: Verify sourcequest)
-					["isBreadcrumb"] = true,
 				}),
 				q(27584, {	-- Blood in the Surf
 					["provider"] = { "n", 45982 },	-- Gralok
@@ -315,7 +319,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28247,	-- Last of Her Kind
 				}),
-				q(27751, {	-- Crushing the Wildhammer
+				q(27751, {	-- Crushing the Wildhammer (A)
 					["provider"] = { "n", 46313 },	-- Narkrall Rakeclaw
 					["coord"] = { 54.8, 44.2, 241 },
 					["races"] = HORDE_ONLY,
@@ -326,7 +330,7 @@ _.Zones =
 						i(63821),	-- Dead-Dwarf Shoulderpads
 					},
 				}),
-				q(28871, {	-- Crushing the Wildhammer
+				q(28871, {	-- Crushing the Wildhammer (H)
 					["provider"] = { "n", 50622 },	-- Malkar
 					["coord"] = { 53.9, 41.8, 241 },
 					["races"] = HORDE_ONLY,
@@ -1152,10 +1156,10 @@ _.Zones =
 					["provider"] = { "n", 45167 },	-- Kurdran Wildhammer
 				}),
 				q(27945, {	-- Paint it Black
+					["sourceQuests"] = { 28043 },	-- How to Maim Your Dragon (TODO: Verify SQ, may appear earlier)
 					["provider"] = { "n", 46324 },	-- Mallia
 					["coord"] = { 53.2, 42.7, 241 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 28133,	-- Fury Unbound (TODO: Verify sourcequest)
 					["g"] = {
 						i(63811),	-- Diamond Clutching Gloves
 						i(63810),	-- Heartstone Treads
@@ -1763,7 +1767,7 @@ _.Zones =
 					["coord"] = { 53.2, 42.7, 241 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27945,	-- Paint it Black
-					--["isBreadcrumb"] = true,
+					["isBreadcrumb"] = true,
 				}),
 				q(27378, {	-- The Worldbreaker
 					["sourceQuests"] = { 27377 },	-- Devoured
@@ -1784,7 +1788,7 @@ _.Zones =
 				}),
 				ql(q(29934, {	-- To Ravenholdt
 					["provider"] = { "n", 55488 },	-- Corastrasza
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["sourceQuests"] = { 29802 },	-- A Hidden Message
 				})),
 				q(27299, {	-- Torn Ground

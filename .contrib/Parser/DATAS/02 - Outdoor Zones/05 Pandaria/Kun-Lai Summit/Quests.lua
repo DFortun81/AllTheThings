@@ -15,18 +15,6 @@ _.Zones =
 						30570,	-- Trouble on the Farmstead (H)
 					},
 				}),
-				q(31394, {	-- A Celestial Experience (A)
-					["coord"] = { 68.7, 43.1, 379 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 64540 },	-- Anduin Wrynn
-					["sourceQuest"] = 31392,	-- Temple of the White Tiger
-				}),
-				q(31395, {	-- A Celestial Experience (H)
-					["coord"] = { 68.7, 43.0, 379 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 64542 },	-- Sunwalker Dezco
-					["sourceQuest"] = 31393,	-- Temple of the White Tiger
-				}),
 				q(30746, {	-- A Fair Trade
 					["coord"] = { 42.4, 69.6, 379 },
 					["provider"] = { "n", 60503 },	-- Uncle Keenbean
@@ -60,11 +48,6 @@ _.Zones =
 					["coord"] = { 64.7, 61.7, 379 },
 					["provider"] = { "n", 59371 },	-- Lucky Eightcoins
 				}),
-				q(32377, {	-- A Kor'kron In Our Midst
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 68375 },	-- Agent Connelly
-					["sourceQuest"] = 32370,	-- The Kun-Lai Expedition
-				}),
 				q(30715, {	-- A Line Unbroken
 					["coord"] = { 35.1, 59.6, 379 },
 					["provider"] = { "n", 61819 },	-- Ban Bearheart
@@ -85,18 +68,6 @@ _.Zones =
 					["coord"] = { 29.2, 62.3, 379 },
 					["provider"] = { "n", 61820 },	-- Lao-Chin the Iron Belly
 					["sourceQuest"] = 30724,	-- To the Wall!
-				}),
-				q(31512, {	-- A Witness to History (A)
-					["coord"] = { 68.7, 43.1, 379 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 64540 },	-- Anduin Wrynn
-					["sourceQuest"] = 31394,	-- A Celestial Experience
-				}),
-				q(31511, {	-- A Witness to History (H)
-					["coord"] = { 68.7, 43.0, 379 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 64542 },	-- Sunwalker Dezco
-					["sourceQuest"] = 31395,	-- A Celestial Experience
 				}),
 				q(30596, {	-- A Zandalari Troll? (A) (Triggers when completing "Mogu?! Oh No-gu!")
 					["u"] = NEVER_IMPLEMENTED,
@@ -144,10 +115,6 @@ _.Zones =
 					["sourceQuest"] = 30795,	-- Staying Connected
 					["description"] = "Use |cFFFFD700The Tongue of Ba-Shon|r.",
 				}),
-				q(32191, {	-- Ancient Guardians
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 67603 },	-- Fanlyr Silverthorn
-				}),
 				q(30491, {	-- At the Yak Wash
 					["coord"] = { 65.3, 62.3, 381 },
 					["provider"] = { "n", 61693 },	-- Muskpaw Jr.
@@ -185,10 +152,6 @@ _.Zones =
 						30581,	-- ... and the Pot, Too!
 						30571,	-- Farmhand Freedom
 					},
-				}),
-				q(32194, {	-- Bad Blood
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 67734 },	-- Sarannha Skyglaive
 				}),
 				q(30651, {	-- Barrels of Fun (A)
 					["coord"] = { 54.1, 83.2, 379 },
@@ -250,10 +213,6 @@ _.Zones =
 						30663,	-- The Ordo Warbringer (H)
 					},
 				}),
-				q(32192, {	-- Bloodlines
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 67581 },	-- Lor'themar Theron
-				}),
 				q(30583, {	-- Blue Dwarf Needs Food Badly
 					["coord"] = { 54.1, 83.2, 379 },
 					["races"] = ALLIANCE_ONLY,
@@ -294,10 +253,6 @@ _.Zones =
 						30604,	-- Breaking Broketooth
 						30600,	-- No Pack Left Behind
 					},
-				}),
-				q(32383, {	-- Bugging Out
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 68417 },	-- Cousin Goottooth
 				}),
 				q(30807, {	-- By the Falls, For the Fallen
 					["coord"] = { 60.6, 21.3, 379 },
@@ -390,10 +345,6 @@ _.Zones =
 						30621,	-- They Stole My Luck
 					},
 				}),
-				q(31517, {	-- Contending With Bullies
-					["isDaily"] = true,
-					["provider"] = { "n", 60968 },	-- Xuen
-				}),
 				q(57069, {	-- Cut Off the Heads
 					["lvl"] = 120,
 					["coord"] = { 60.0, 75.6, 379 },
@@ -481,10 +432,6 @@ _.Zones =
 					["provider"] = { "n", 59272 },	-- Wu-Peng
 					["sourceQuest"] = 30467,	-- My Son...
 				}),
-				q(32319, {	-- Find Thrall!
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68023 },	-- Vol'jin
-				}),
 				q(30992, {	-- Finish This!
 					["coord"] = { 31.8, 60.1, 379 },
 					["provider"] = { "n", 61820 },	-- Lao-Chin the Iron Belly
@@ -554,14 +501,6 @@ _.Zones =
 					["coord"] = { 63.4, 28.7, 379 },
 					["provider"] = { "n", 61495 },	-- Elder Shu
 					["sourceQuest"] = 30935,	-- Fisherman's Tale
-				}),
-				q(32397, {	-- He Won't Even Miss It
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 68417 },	-- Cousin Goottooth
-				}),
-				q(32316, {	-- Heart Of The Alliance
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 67948 },	-- Anduin Wrynn
 				}),
 				q(30460, {	-- Hit Medicine
 					["coord"] = { 71.5, 92.8, 379 },
@@ -702,10 +641,6 @@ _.Zones =
 						i(90489),	-- Shomi's Fan
 					},
 				}),
-				q(32371, {	-- Memory Wine (A)
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 68375 },	-- Agent Connelly
-				}),
 				q(32368, {	-- Memory Wine (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 68287 },	-- Baine Bloodhoof
@@ -771,6 +706,7 @@ _.Zones =
 					},
 				}),
 				q(30768, {	-- My Husband...
+					["isBreadcrumb"] = true,
 					["coord"] = { 31.3, 61.6, 379 },
 					["provider"] = { "n", 61454 },	-- Suna Silentstrike
 					["sourceQuest"] = 30992,	-- Finish This!
@@ -918,10 +854,6 @@ _.Zones =
 				q(30765, {	-- Regaining Honor	-- probably triggers around the completion of "A Terrible Sacrifice"
 					["u"] = NEVER_IMPLEMENTED,
 				}),
-				q(32318, {	-- Regeneration Takes Time
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 67866 },	-- Chen Stormstout
-				}),
 				q(31809, {	-- Remnants of Anger
 					["provider"] = { "i", 89317 },	-- Claw of Anger
 					["g"] = {
@@ -1005,18 +937,9 @@ _.Zones =
 						i(84515),	-- Yak Herder Monnion
 					},
 				}),
-				q(30879, {	-- Round 1: Brewmaster Chani
-					["isDaily"] = true,
-					["provider"] = { "n", 60968 },	-- Xuen
-				}),
 				q(30880, {	-- Round 1: The Streetfighter
 					["isDaily"] = true,
 					["provider"] = { "n", 60968 },	-- Xuen
-				}),
-				q(30881, {	-- Round 2: Clever Ashyo & Ken-Ken
-					["isDaily"] = true,
-					["provider"] = { "n", 60968 },	-- Xuen
-					["sourceQuest"] = 30879,	-- Round 1: Brewmaster Chani
 				}),
 				q(30882, {	-- Round 2: Kang Bramblestaff
 					["isDaily"] = true,
@@ -1028,20 +951,10 @@ _.Zones =
 					["provider"] = { "n", 60968 },	-- Xuen
 					["sourceQuest"] = 30882,	-- Round 2: Kang Bramblestaff
 				}),
-				q(30883, {	-- Round 3: The Wrestler
-					["isDaily"] = true,
-					["provider"] = { "n", 60968 },	-- Xuen
-					["sourceQuest"] = 30881,	-- Round 2: Clever Ashyo & Ken-Ken
-				}),
 				q(30902, {	-- Round 4: Master Windfur
 					["isDaily"] = true,
 					["provider"] = { "n", 60968 },	-- Xuen
 					["sourceQuest"] = 30885,	-- Round 3: Master Boom Boom
-				}),
-				q(30907, {	-- Round 4: The P.U.G.
-					["isDaily"] = true,
-					["provider"] = { "n", 60968 },	-- Xuen
-					["sourceQuest"] = 30883,	-- Round 3: The Wrestler
 				}),
 				q(30684, {	-- Seeker's Folly
 					["coord"] = { 48.1, 49.0, 379 },
@@ -1173,10 +1086,6 @@ _.Zones =
 						31453,	-- The Shado-Pan (breadcrumb)
 					},
 				}),
-				q(32394, {	-- The Divine Bell (A)
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 67734 },	-- Sarannha Skyglaive
-				}),
 				q(32392, {	-- The Divine Bell (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 68337 },	-- Ishi
@@ -1212,10 +1121,6 @@ _.Zones =
 						i(84522),	-- Kafa Silk Treads
 						i(84524),	-- Yak Herder Boots
 					},
-				}),
-				q(32244, {	-- The Korune
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 67603 },	-- Fanlyr Silverthorn
 				}),
 				q(31611, {	-- The Kun-Lai Kicker
 					["provider"] = { "n", 63367 },	-- Brewmaster Boof
@@ -1418,10 +1323,6 @@ _.Zones =
 						30663,	-- The Ordo Warbringer
 					},
 				}),
-				q(32243, {	-- The Source of Korune Power
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 67716 },	-- The Source of Korune Power
-				}),
 				q(30799, {	-- The Tomb of Shadows
 					["coord"] = { 57.1, 47.8, 379 },
 					["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
@@ -1441,10 +1342,6 @@ _.Zones =
 						30684,	-- Seeker's Folly
 						31306,	-- Seeker's Folly
 					},
-				}),
-				q(31492, {	-- The Torch of Strength
-					["isDaily"] = true,
-					["provider"] = { "n", 60981 },	-- Lin Tenderpaw
 				}),
 				q(31518, {	-- The Vale of Eternal Blossoms (most likely NYI. "A Witness to History" is the opening of the gates)
 					["u"] = NEVER_IMPLEMENTED,
@@ -1611,7 +1508,7 @@ _.Zones =
 				}),
 
 				spell(229385, {	-- Ban-Lu, Grandmaster's Companion
-					["classes"] = { 10 },	-- Monk
+					["classes"] = { MONK },
 					["lvl"] = 110,
 					["g"] = {
 						q(46343, {	-- The Trail of Ban-Lu

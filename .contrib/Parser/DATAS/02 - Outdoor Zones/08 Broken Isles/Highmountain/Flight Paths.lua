@@ -1,13 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(650, {	-- Highmountain
 			n(-228, {	-- Flight Paths
 				fp(1850, {	-- Eastern Highmountain (Eagle)
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["coord"] = { 56.6, 67.8 },
 				}),
 				fp(1755, {	-- Felbane Camp, Highmountain

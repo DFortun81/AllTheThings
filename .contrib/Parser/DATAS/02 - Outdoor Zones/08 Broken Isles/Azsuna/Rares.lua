@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -15,7 +16,7 @@ _.Zones =
 						}),
 						i(141868),	-- Shal'imanacles
 					},
-				}), 
+				}),
 				n(90244,  {	-- Arcavellus
 					["description"] = "|cff66ccffClick on the Unbound Rift in Ley-Ruins of Zarkhenar to start the event. Arcavellus will spawn after a few waves of enemies.|r",
 					["questID"] = 37932,
@@ -37,14 +38,14 @@ _.Zones =
 						}),
 						i(129067),	-- Sand-Blasted Pauldrons
 					},
-				}), 
+				}),
 				n(107327, {	-- Bilebrain
 					["questID"] = 42417,
 					["coord"] = { 29.4, 53.4, 630 },
 					["g"] = {
 						i(129079),	-- Bile-Resistant Boots
 					},
-				}), 
+				}),
 				n(107127, {	-- Brawlgoth
 					["questID"] = 42450,
 					["coord"] = { 55.1, 45.7, 630 },
@@ -57,7 +58,7 @@ _.Zones =
 				}),
 				n(91100,  {	-- Brogozog
 					["description"] = "|cff66ccffSpeak to Tehd to start the encounter.|r",
-					["questID"] = 38212,	
+					["questID"] = 38212,
 					["coord"] = { 59.2, 46.3, 630 },
 					["g"] = {
 						crit(1, {	-- Azsuna
@@ -75,14 +76,14 @@ _.Zones =
 					["g"] = {
 						i(141869),	-- Broodmother Armor
 					},
-				}), 
-				n(91289,  {	-- Cailyn Paledoom 
+				}),
+				n(91289,  {	-- Cailyn Paledoom
 					["questID"] = 38268,
 					["coord"] = { 52.4, 22.8, 630 },
 					["g"] = {
 						i(129063),	-- Darkbane Visage
 					},
-				}), 
+				}),
 				n(89846,  {	-- Captain Volo'ren
 					["questID"] = 37821,
 					["coord"] = { 53.4, 43.9, 630 },
@@ -92,7 +93,7 @@ _.Zones =
 						}),
 						i(129066),	-- Nar'thalas Guard Mantle
 					},
-				}),				
+				}),
 				n(106990, {	-- Chief Bitterbrine
 					["questID"] = 42221,
 					["coord"] = { 65.5, 56.8, 630 },
@@ -107,10 +108,10 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,	-- as of 8.3, no sign of him or his world quest for a very long time
 					["questID"] = 44673,
 					["coord"] = { 27.8, 51.0, 630 },
-					["g"] = {	
+					["g"] = {
 						un(REMOVED_FROM_GAME, i(141871)),	-- Soraax's Gauntlets of Command
 					},
-				}), 
+				}),
 				n(90057,  {	-- Daggerbeak
 					["questID"] = 37869,
 					["coord"] = { 51.1, 31.6, 630 },
@@ -158,17 +159,17 @@ _.Zones =
 						}),
 						i(129087),	-- Smooth Felwing Wraps
 					},
-				}), 
+				}),
 				n(89884,  {	-- Flog the Captain-Eater
 					["questID"] = 37824,
 					["coord"] = { 45.1, 57.8, 630 },
-					["g"] = {	
+					["g"] = {
 						crit(6, {	-- Flog the Captain-Eater
 							["achievementID"] = 11261,	-- Adventurer of Azsuna
 						}),
 						i(129090),	-- Bosun's Acid-Bleached Cape
 					},
-				}), 
+				}),
 				n(89816,  {	-- Golza the Iron Fin
 					["questID"] = 37820,
 					["coord"] = { 65.0, 40.0, 630 },
@@ -185,7 +186,7 @@ _.Zones =
 					["g"] = {
 						i(141873),	-- Felstalker Leash Belt
 					},
-				}), 
+				}),
 				n(90803,  {	-- Infernal Lord
 					["description"] = "|cff66ccffClick Cache of Infernals in Faronaar to start the event. Infernal Lord will spawn after a few waves of small infernals.|r",
 					["questID"] = 38037,
@@ -206,7 +207,7 @@ _.Zones =
 						}),
 						i(141874),	-- Inquisitor's Corrupted Cincture
 					},
-				}), 
+				}),
 				n(89865,  {	-- Mrrgrl the Tide Reaver
 					["questID"] = 37823,
 					["coord"] = { 50.0, 34.6, 630 },
@@ -226,7 +227,7 @@ _.Zones =
 						}),
 						i(129061),	-- Cowl of Azure Vengeance
 					},
-				}), 
+				}),
 				n(90901,  {	-- Pridelord Meowl
 					["questID"] = 38061,
 					["coord"] = { 56.1, 29.0, 630 },
@@ -270,7 +271,7 @@ _.Zones =
 				n(108136, {	-- The Muscle
 					["questID"] = 44671,
 					["coord"] = { 58.6, 79.6, 630 },
-					["g"] = {	
+					["g"] = {
 						i(129081),	-- The Heavyweight Belt
 					},
 				}),
@@ -326,29 +327,29 @@ _.Zones =
 						}),
 						i(129069),	-- Stalker Collar Bracers
 					},
-				}), 
---[[	
---				n(109641, { 	-- Arcanor Prime }), 
---				n(101596, { 	-- Charfeather }), 
---				n(109677, { 	-- Chief Treasurer Jabrill }), 
---				n(108255, { 	-- Coura, Mistress of Arcana }), 
---				n(109702, { 	-- Deepclaw }), 
---				n(109584, { 	-- Fjordun }), 
---				n(109630, { 	-- Immolian }), 
---				n(103975, { 	-- Jade Darkhaven }), 
---				n(111939, { 	-- Lysanis Shadesoul }), 
---				n(109653, { 	-- Marblub the Massive }), 
---				n(93622, { 		-- Mortiferous }), 
---				n(111434, { 	-- Sea King Tidross }), 
---				n(109594, { 	-- Stormfeather }), 
+				}),
+--[[ TODO:
+--				n(109641, { 	-- Arcanor Prime }),
+--				n(101596, { 	-- Charfeather }),
+--				n(109677, { 	-- Chief Treasurer Jabrill }),
+--				n(108255, { 	-- Coura, Mistress of Arcana }),
+--				n(109702, { 	-- Deepclaw }),
+--				n(109584, { 	-- Fjordun }),
+--				n(109630, { 	-- Immolian }),
+--				n(103975, { 	-- Jade Darkhaven }),
+--				n(111939, { 	-- Lysanis Shadesoul }),
+--				n(109653, { 	-- Marblub the Massive }),
+--				n(93622, { 		-- Mortiferous }),
+--				n(111434, { 	-- Sea King Tidross }),
+--				n(109594, { 	-- Stormfeather }),
 --				o(254087, { 	-- The Dreadblades
 --					i(128872), 		-- Rogue Outlaw Hidden Appearance
 --				}),
---				n(109620, { 	-- The Whisperer }), 
---				n(110824, { 	-- Tideclaw }), 
+--				n(109620, { 	-- The Whisperer }),
+--				n(110824, { 	-- Tideclaw }),
 --				n(102064, { 	-- Torrentius }),
---				n(109575, { 	-- Valakar the Thirsty }), 
---]]				
+--				n(109575, { 	-- Valakar the Thirsty }),
+--]]
 			}),
 		}),
 	}),

@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(62, {	-- Darkshore
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4928, {	-- Darkshore Quests
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

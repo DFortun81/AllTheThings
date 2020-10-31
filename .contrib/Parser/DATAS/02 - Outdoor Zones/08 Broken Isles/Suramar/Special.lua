@@ -1,13 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(680, {	-- Suramar
 			i(141409, {	-- Candrael's Charm
 				["description"] = "Find this item on mobs in Suramar.",
-				["classes"] = { 12 },	-- Demon Hunters Only!
+				["classes"] = { DEMONHUNTER },
 				["g"] = {
 					n(113935, {	-- Candrael Twinshadow
 						["description"] = "They will fling you up in the air to flying demon Downfall.",
@@ -38,7 +39,7 @@ _.Zones =
 						}),
 					}),
 				},
-				["races"]  = { 27 },	-- Nightborne
+				["races"] = { NIGHTBORNE },
 			}),
 		}),
 	}),

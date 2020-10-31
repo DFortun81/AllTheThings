@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -536,7 +537,7 @@ _.Zones =
 				}),
 				q(10992, {	-- The Hawk's Essence
 					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(32481)),	-- Charm of Swift Flight
 					},

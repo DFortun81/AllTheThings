@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -49,11 +50,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(2, {	-- Azsuna Specimens
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(45069, {	-- Barrels o' Fun
 					["lvl"] = 110,
@@ -177,11 +173,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(3, {	-- Dazed and Confused and Adorable
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(44287, {	-- DEADLY: Withered J'im
 					["lvl"] = 110,
@@ -298,41 +289,21 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(6, {	-- Help a Whelp
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41611, {	-- Huge Cursed Queenfish
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(7, {	-- Huge Cursed Queenfish
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41265, {	-- Huge Cursed Queenfish
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(7, {	-- Huge Cursed Queenfish
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41610, {	-- Huge Cursed Queenfish
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(7, {	-- Huge Cursed Queenfish
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(45495, {	-- Immolian
 					["lvl"] = 110,
@@ -403,31 +374,16 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(4, {	-- Lively Cursed Queenfish
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41599, {	-- Lively Cursed Queenfish
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(4, {	-- Lively Cursed Queenfish
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41264, {	-- Lively Cursed Queenfish
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(4, {	-- Lively Cursed Queenfish
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41454, {	-- Luminous Leystone Outcropping
 					["lvl"] = 110,
@@ -461,11 +417,6 @@ _.Zones =
 				q(41896, {	-- Operation Murloc Freedom
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["g"] = {
-						crit(1, {	-- Mission Accomplished
-							["achievementID"] = 11474,	-- Free For All, More For Me
-						}),
-					},
 				}),
 				q(42623, {	-- Piracy Doesn't Pay
 					["lvl"] = 110,
@@ -475,21 +426,11 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(5, {	-- Queen Queenfish
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41266, {	-- Raft Fishing
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(13, {	-- Raft Fishing
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(42108, {	-- Rally the Nightwatchers
 					["lvl"] = 110,
@@ -524,11 +465,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(1, {	-- Size Doesn't Matter
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(41551, {	-- Slab of Bacon
 					["lvl"] = 110,
@@ -611,11 +547,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(5, {	-- The Wine's Gone Bad
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(42112, {	-- The Withered Return
 					["lvl"] = 110,
@@ -637,11 +568,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
-					["g"] = {
-						crit(4, {	-- Training with the Nightwatchers
-							["achievementID"] = 10876,	-- Battle on the Broken Isles
-						}),
-					},
 				}),
 				q(42511, {	-- Twisted Souls
 					["lvl"] = 110,
@@ -775,7 +701,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["g"] = {
 						i(137843),	-- Design: Azsunite Pendant (Rank 3)
-					},					
+					},
 				}),
 				q(41639, {	-- Work Order: Battlebound Spaulders
 					["requireSkill"] = LEATHERWORKING,
@@ -795,11 +721,6 @@ _.Zones =
 					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						crit(2, {	-- Work Order: Cursed Queenfish
-							["achievementID"] = 10598,	-- Fishing 'Round the Isles
-						}),
-					},
 				}),
 				q(41657, {	-- Work Order: Draughts of Raw Magic
 					["lvl"] = 110,
@@ -824,7 +745,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["g"] = {
 						i(137963),	-- Pattern: Silkweave Epaulets (Rank 3)
-					},	
+					},
 				}),
 				q(41326, {	-- Work Order: Stormscales
 					["lvl"] = 110,
@@ -846,8 +767,8 @@ _.Zones =
 					i(134334),	-- Disgraced Court Cloak
 					i(134246),	-- Herringbone Drape
 				}),
-				n(-3241, {	-- Arcane Singed Set		
-					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
+				n(-3241, {	-- Arcane Singed Set
+					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 					["g"] = {
 						i(134348),	-- Arcane Singed Aurora
 						i(134353),	-- Arcane Singed Mantle
@@ -857,10 +778,10 @@ _.Zones =
 						i(134347),	-- Arcane Singed Cord
 						i(134350),	-- Arcane Singed Leggings
 						i(134352),	-- Arcane Singed Slippers
-					},		
-				}),			
-				n(-3248, {	-- Seawitch Set		
-					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
+					},
+				}),
+				n(-3248, {	-- Seawitch Set
+					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 					["g"] = {
 						i(134260),	-- Seawitch Hood
 						i(134265),	-- Seawitch Mantle
@@ -870,10 +791,10 @@ _.Zones =
 						i(134259),	-- Seawitch Cinch
 						i(134262),	-- Seawitch Leggings
 						i(134264),	-- Seawitch Sandals
-					},		
-				}),			
-				n(-3271, {	-- Brinewashed Set		
-					["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
+					},
+				}),
+				n(-3271, {	-- Brinewashed Set
+					["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 					["g"] = {
 						i(134240),	-- Brinewashed Leather Cowl
 						i(134242),	-- Brinewashed Leather Shoulderpads
@@ -883,10 +804,10 @@ _.Zones =
 						i(134243),	-- Brinewashed Leather Belt
 						i(134238),	-- Brinewashed Leather Pants
 						i(134237),	-- Brinewashed Leather Boots
-					},		
-				}),			
-				n(-3264, {	-- Mana-Saber Set		
-					["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
+					},
+				}),
+				n(-3264, {	-- Mana-Saber Set
+					["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 					["g"] = {
 						i(134328),	-- Mana-Saber Hide Hood
 						i(134330),	-- Mana-Saber Hide Shoulders
@@ -896,10 +817,10 @@ _.Zones =
 						i(134331),	-- Mana-Saber Hide Belt
 						i(134326),	-- Mana-Saber Hide Pants
 						i(134325),	-- Mana-Saber Hide Boots
-					},		
-				}),			
-				n(-3282, {	-- Manaburst Set		
-					["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
+					},
+				}),
+				n(-3282, {	-- Manaburst Set
+					["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 					["g"] = {
 						i(134343),	-- Manaburst Helm
 						i(134345),	-- Manaburst Spaulders
@@ -909,10 +830,10 @@ _.Zones =
 						i(134339),	-- Manaburst Waistguard
 						i(134344),	-- Manaburst Legguards
 						i(134342),	-- Manaburst Greaves
-					},		
-				}),	
-				n(-3276, {	-- Sea Stalker's Set		
-					["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
+					},
+				}),
+				n(-3276, {	-- Sea Stalker's Set
+					["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 					["g"] = {
 						i(134255),	-- Sea Stalker's Hood
 						i(134257),	-- Sea Stalker's Mantle
@@ -922,10 +843,10 @@ _.Zones =
 						i(134251),	-- Sea Stalker's Cinch
 						i(134256),	-- Sea Stalker's Leggings
 						i(134254),	-- Sea Stalker's Boots
-					},		
-				}),			
-				n(-3305, {	-- Coralplate Set		
-					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
+					},
+				}),
+				n(-3305, {	-- Coralplate Set
+					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					["g"] = {
 						i(134226),	-- Coralplate Helmet
 						i(134228),	-- Coralplate Pauldrons
@@ -935,10 +856,10 @@ _.Zones =
 						i(134225),	-- Coralplate Girdle
 						i(134227),	-- Coralplate Legguards
 						i(134229),	-- Coralplate Sandstompers
-					},		
-				}),			
-				n(-3304, {	-- Ley-Scarred Set		
-					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
+					},
+				}),
+				n(-3304, {	-- Ley-Scarred Set
+					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					["g"] = {
 						i(134314),	-- Ley-Scarred Helm
 						i(134316),	-- Ley-Scarred Pauldrons
@@ -948,13 +869,14 @@ _.Zones =
 						i(134313),	-- Ley-Scarred Waistplate
 						i(134315),	-- Ley-Scarred Greaves
 						i(134317),	-- Ley-Scarred Sabatons
-					},		
+					},
 				}),
 				n(-384, {	-- Neck
 					i(134319),	-- Depleted Mana Crystal Pendant
 				}),
 				n(-385, {	-- Finger
 					i(134245),	-- Nazjatar Manapearl Ring
+					i(134323),	-- Glinting Quartz Ring
 				}),
 				n(-386,  {	-- Trinkets
 					i(134234),	-- Barnacled Azsharan Insignia

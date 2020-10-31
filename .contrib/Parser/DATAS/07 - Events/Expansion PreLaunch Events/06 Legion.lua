@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
+-- TODO: formatting
 local modTest = function(o)
 	local group = {};
 	for i=1,50,1 do
@@ -13,6 +15,7 @@ local modTest = function(o)
 	end
 	return group;
 end
+
 _.WorldEvents =
 {
 	n(-520, { 	-- Expansion Prelaunch Events
@@ -88,7 +91,7 @@ _.WorldEvents =
 							un(REMOVED_FROM_GAME, i(138156)),	-- Felforged Legplates
 							un(REMOVED_FROM_GAME, i(138158)),	-- Felforged Warboots
 						}),
-					}),	
+					}),
 					i(139049, {	-- Large Legion Chest
 						un(REMOVED_FROM_GAME, i(141597)),	-- Corrupted Argus Gavel
 						un(REMOVED_FROM_GAME, i(141609)),	-- Corrupted Argus Gavel -- Non Upgrade Version -- Was posted here already - Gold 14.04.2019
@@ -149,7 +152,7 @@ _.WorldEvents =
 							un(REMOVED_FROM_GAME, i(138156)),	-- Felforged Legplates
 							un(REMOVED_FROM_GAME, i(138158)),	-- Felforged Warboots
 						}),
-					}),	
+					}),
 					n(-220, {	-- Class Changes
 						["groups"] = "A number of class specializations were modified just before Legion launch and Blizzard mailed items to help players adjust to these changes. The item level and quality of the item was determined by your character's progress in HFC.",
 						["groups"] = {
@@ -238,11 +241,13 @@ _.WorldEvents =
 						}),
 						q(40717, {	-- Calling of the Council
 							["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
-							["races"] = { 1, 3, 4, 7, 11, 22, 25, 29, 30 },	-- Alliance Races
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
 						}),
 						q(40718, {	-- Calling of the Council
 							["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
-							["races"] = { 2, 5, 6, 8, 9, 10, 26, 27, 28 },	-- Horde Races
+							["races"] = HORDE_ONLY,
+							["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
 						}),
 						q(44182, {	-- City Under Siege
 							["provider"] = { "n", 114561 },	-- Khadgar's Upgraded Servant
@@ -263,7 +268,7 @@ _.WorldEvents =
 							},
 							["provider"] = { "n", 101547 },	-- Archmage Khadgar
 							["sourceQuests"] = { 42970 },	-- The Diamond King
-						}),	
+						}),
 						q(44184, {	-- In the Blink of an Eye
 							["groups"] = {
 								-- i(140192),	-- Dalaran Hearthstone
@@ -271,7 +276,7 @@ _.WorldEvents =
 							},
 							["provider"] = { "n", 114562 },	-- Khadgar's Upgraded Servant
 							["sourceQuests"] = { 44500 },	-- Author! Author!
-						}),								
+						}),
 						q(43301, {	-- Invasion: Azshara
 							["u"] = REMOVED_FROM_GAME,
 						}),
@@ -322,6 +327,7 @@ _.WorldEvents =
 						n(109912, {	-- Captive Wyrmtongue <Reluctant 'Quartermaster'>
 							un(REMOVED_FROM_GAME, i(136924)),	-- Felbat Pup Pet
 							un(REMOVED_FROM_GAME, i(141604)),	-- Glaive of the Fallen
+							un(REMOVED_FROM_GAME, i(142526)),	-- Glaive of the Fallen (this 2nd version was seen in game Oct 2020)
 							un(REMOVED_FROM_GAME, i(138160)),	-- Infernal Cord
 							un(REMOVED_FROM_GAME, i(139172)),	-- Legionnaire's Fel Pendant
 							un(REMOVED_FROM_GAME, i(138188)),	-- Demon Commander's Drape

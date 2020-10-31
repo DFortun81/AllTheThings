@@ -172,7 +172,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 				e(1620, {	-- Champions of the Alliance
 					["races"] = HORDE_ONLY,
-					["crs"] = {	
+					["crs"] = {
 						34467,	-- Alyssia Moonstalker
 						34466,	-- Anthar Forgemender
 						34471,	-- Baelnor Lightbearer
@@ -187,7 +187,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34475,	-- Shocuul
 						34461,	-- Tyrius Duskblade
 						34465,	-- Velanaa
-					},	
+					},
 					["g"] = {
 						{	-- Call of the Crusade (10 player): Defeat the Faction Champions
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
@@ -244,7 +244,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 				e(1622, {	-- Twin Val'kyr
 					["crs"] = {
-						34496,	-- Eydis Darkbane	
+						34496,	-- Eydis Darkbane
 						34497,	-- Fjola Lightbane
 					},
 					["g"] = {
@@ -453,7 +453,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 				e(1620, {	-- Champions of the Alliance
 					["races"] = HORDE_ONLY,
-					["crs"] = {	
+					["crs"] = {
 						34467,	-- Alyssia Moonstalker
 						34466,	-- Anthar Forgemender
 						34471,	-- Baelnor Lightbearer
@@ -468,7 +468,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34475,	-- Shocuul
 						34461,	-- Tyrius Duskblade
 						34465,	-- Velanaa
-					},	
+					},
 					["g"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
@@ -525,7 +525,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 				e(1622, {	-- Twin Val'kyr
 					["crs"] = {
-						34496,	-- Eydis Darkbane	
+						34496,	-- Eydis Darkbane
 						34497,	-- Fjola Lightbane
 					},
 					["g"] = {
@@ -745,7 +745,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 				e(1620, {	-- Champions of the Alliance
 					["races"] = HORDE_ONLY,
-					["crs"] = {	
+					["crs"] = {
 						34467,	-- Alyssia Moonstalker
 						34466,	-- Anthar Forgemender
 						34471,	-- Baelnor Lightbearer
@@ -760,7 +760,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34475,	-- Shocuul
 						34461,	-- Tyrius Duskblade
 						34465,	-- Velanaa
-					},	
+					},
 					["g"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Faction Champions
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
@@ -825,7 +825,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 				e(1622, {	-- Twin Val'kyr
 					["crs"] = {
-						34496,	-- Eydis Darkbane	
+						34496,	-- Eydis Darkbane
 						34497,	-- Fjola Lightbane
 					},
 					["g"] = {
@@ -918,7 +918,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 			}),
-			d(6, {	-- 25-Player Heroic	
+			d(6, {	-- 25-Player Heroic
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						34796,	-- Gormok
@@ -1053,7 +1053,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 				e(1620, {	-- Champions of the Alliance
 					["races"] = HORDE_ONLY,
-					["crs"] = {	
+					["crs"] = {
 						34467,	-- Alyssia Moonstalker
 						34466,	-- Anthar Forgemender
 						34471,	-- Baelnor Lightbearer
@@ -1068,7 +1068,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34475,	-- Shocuul
 						34461,	-- Tyrius Duskblade
 						34465,	-- Velanaa
-					},	
+					},
 					["g"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Faction Champions
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
@@ -1133,7 +1133,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 				e(1622, {	-- Twin Val'kyr
 					["crs"] = {
-						34496,	-- Eydis Darkbane	
+						34496,	-- Eydis Darkbane
 						34497,	-- Fjola Lightbane
 					},
 					["g"] = {

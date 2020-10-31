@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, { 	-- Draenor
@@ -1513,7 +1514,7 @@ _.Zones =
 							},
 							["g"] = {
 								i(116775, {	-- Breezestrider Stallion
-									["cost"] = { 
+									["cost"] = {
 										{ "i", 137642, 100 },	-- 100x Mark of Honor
 										{ "g", 50000000 },	-- 5,000g
 									},
@@ -1521,7 +1522,7 @@ _.Zones =
 								un(14, i(120287, {	-- Enchanter's Illusion - Primal Victory
 									["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 								})),
-							},			
+							},
 						}),
 						n(87551, { 	-- Maru'sa <Inscription Recipes>
 							["coord"] = { 75.3, 47.6, 624 },
@@ -1725,7 +1726,7 @@ _.Zones =
 						}),
 						n(87774, {	-- Stone Guard Brokefist <Primal Combatant>
 							["coord"] = { 48.3, 57.5, 624 },
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -679, -9913, -660 },
 								{"pop"},
 								{"exclude", "npcID", -384 },	-- Exclude Neck

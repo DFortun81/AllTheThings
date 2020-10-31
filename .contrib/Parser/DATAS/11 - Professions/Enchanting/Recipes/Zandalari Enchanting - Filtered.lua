@@ -41,7 +41,7 @@ profession(ENCHANTING, {
 							-- Kul Tiran Surveying
 							["recipeID"] = 255066,--[[Kul Tiran Surveying]]
 							["races"] = ALLIANCE_ONLY
-						},						
+						},
 						{
 							-- Zandalari Crafting
 							["recipeID"] = 267498,--[[Zandalari Crafting]]

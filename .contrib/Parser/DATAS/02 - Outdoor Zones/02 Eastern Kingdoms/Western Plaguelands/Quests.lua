@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -24,7 +25,7 @@ _.Zones =
 				q(26954, {	-- A Different Approach
 					["provider"] = { "n", 44456 },	-- Adrine Towhide
 					["coord"] = { 48.8, 54.7, 22 },
-					["sourceQuests"] = 26953,	-- Zen'kiki, the Druid
+					["sourceQuests"] = { 26953 },	-- Zen'kiki, the Druid
 				}),
 				q(27012, {	-- A Gnoll's Resolve
 					["provider"] = { "n", 44472 },	-- Kelly Dumah
@@ -130,7 +131,7 @@ _.Zones =
 				}),
 				q(43153, {	-- An Eye for a Scepter
 					["sourceQuest"] = 43100,	-- Finding the Scepter
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["coord"] = { 69.2, 79.0, 22 },
 					["lvl"] = 98,
 					["provider"] = { "n", 109698 },	-- Calydus
@@ -333,7 +334,7 @@ _.Zones =
 				q(42774, {	-- Hope Prevails
 					["lvl"] = 98,
 					["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 --						["sourceQuests"] = {  },	--
 				}),
 				q(26956, {	-- I Ain't Sayin' You a Gourd-Digger...
@@ -380,7 +381,7 @@ _.Zones =
 				q(42771, {	-- Keeping the Peace
 					["provider"] = { "n", 108778 },	-- Mehlar Dawnblade
 					["lvl"] = 98,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 --						["sourceQuests"] = {  },	--
 				}),
 				q(5515, {	-- Krastinov's Bag of Horrors
@@ -496,7 +497,7 @@ _.Zones =
 				q(42772, {	-- Sacred Ground
 					["provider"] = { "n", 108777 },	-- High Priest Thel'danis
 					["lvl"] = 98,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 --						["sourceQuests"] = {  },	--
 				}),
 				q(27162, {	-- Scholomancer (A)
@@ -561,7 +562,7 @@ _.Zones =
 						{ "n", 90369 },	-- Lord Maxwell Tyrosus
 					},
 					["lvl"] = 98,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 --						["sourceQuests"] = {  },	--
 				}),
 				q(5465, {	-- Soulbound Keepsake
@@ -704,7 +705,7 @@ _.Zones =
 				q(42773, {	-- The Light Reveals
 					["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
 					["lvl"] = 98,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 --						["sourceQuests"] = {  },	--
 				}),
 				q(26957, {	-- The Long Trip Home
@@ -901,8 +902,8 @@ _.Zones =
 					["g"] = {
 						i(62194),	-- Breastplate of the Patient
 						i(62193),	-- Leggings of the Slipper Shifter
-						i(62192),  -- Zen'Kiki's Thanks
 						i(131627),	-- Scaled Pants of Patience
+						i(62192),  	-- Zen'Kiki's Thanks
 					},
 				}),
 			}),

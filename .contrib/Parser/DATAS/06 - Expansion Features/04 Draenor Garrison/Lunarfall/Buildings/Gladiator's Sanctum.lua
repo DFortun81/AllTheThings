@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
@@ -9,29 +10,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(161, {	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-4, {	-- Achievements
-							ach(9639),	-- Fight, Kill, Salute!
-							ach(9517, {	-- Nemesis: Death Stalker
-								title(272),		-- the Death Stalker
-							}),
-							ach(9520, {	-- Nemesis: Huojin's Fall
-								title(276),		-- ,Huojin's Fall
-							}),
-							ach(9518, {	-- Nemesis: Killer of Kezan
-								title(273),		-- ,Killer of Kezan
-							}),
-							ach(9519, {	-- Nemesis: Orcslayer
-								title(271),		-- Orcslayer
-							}),
-							ach(9516, {	-- Nemesis: Slayer of Sin'dorei
-								title(275),		-- ,Slayer of Sin'dorei
-							}),
-							ach(9521, {	-- Nemesis: The Butcher
-								title(270),		-- the Butcher
-							}),
-							ach(9522, {	-- Nemesis: Troll Hunter
-								title(274),		-- Troll Hunter
-							}),
+						n(ACHIEVEMENTS, {
 							ach(9495, {		-- The Bone Collector
 								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 								["g"] = {
@@ -40,15 +19,29 @@ _.ExpansionFeatures =
 							}),
 							ach(9738, {	-- Warlord of Draenor (Alliance) achievements used instead of criteria as criteria are behaving strangely with debug mode on
 								title(269),		-- ,Warlord of Draenor
-								ach(9522),		-- Nemesis: Troll Hunter
-								ach(9521),		-- Nemesis: The Butcher
-								ach(9520),		-- Nemesis: Huojin's Fall
-								ach(9519),		-- Nemesis: Orcslayer
-								ach(9518),		-- Nemesis: Killer of Kezan
-								ach(9517),		-- Nemesis: Death Stalker
-								ach(9516),		-- Nemesis: Slayer of Sin'dorei
-								ach(9639),		-- Fight, Kill, Salute!
-							}),
+								ach(9522, {	-- Nemesis: Troll Hunter
+									title(274),		-- Troll Hunter
+								}),
+								ach(9521, {	-- Nemesis: The Butcher
+									title(270),		-- the Butcher
+								}),
+								ach(9520, {	-- Nemesis: Huojin's Fall
+									title(276),		-- ,Huojin's Fall
+								}),
+								ach(9519, {	-- Nemesis: Orcslayer
+									title(271),		-- Orcslayer
+								}),
+								ach(9518, {	-- Nemesis: Killer of Kezan
+									title(273),		-- ,Killer of Kezan
+								}),
+								ach(9517, {	-- Nemesis: Death Stalker
+									title(272),		-- the Death Stalker
+								}),
+								ach(9516, {	-- Nemesis: Slayer of Sin'dorei
+									title(275),		-- ,Slayer of Sin'dorei
+								}),
+									ach(9639),		-- Fight, Kill, Salute!
+								}),
 						}),
 						n(QUESTS, {
 							q(37082),	-- Call of the Gladiator
@@ -66,77 +59,77 @@ _.ExpansionFeatures =
 							n(86639, { 	-- Altar of Bones
 								i(118043, {	-- Broken Bones
 									n(-659, {	-- Aspirant PvP Gear
-										cl(6, {	-- Death Knight
+										cl(DEATHKNIGHT, {
 											i(126661),	-- Warmongering Aspirant's Dreadplate Chestpiece (H)
 											i(126662),	-- Warmongering Aspirant's Dreadplate Gauntlets (H)
 											i(126663),	-- Warmongering Aspirant's Dreadplate Helm (H)
 											i(126664),	-- Warmongering Aspirant's Dreadplate Legguards (H)
 											i(126665),	-- Warmongering Aspirant's Dreadplate Shoulders (H)
 										}),
-										cl(11, {	-- Druid
+										cl(DRUID, {
 											i(126666),	-- Warmongering Aspirant's Dragonhide Gloves (H)
 											i(126667),	-- Warmongering Aspirant's Dragonhide Helm (H)
 											i(126668),	-- Warmongering Aspirant's Dragonhide Legguards (H)
 											i(126670),	-- Warmongering Aspirant's Dragonhide Spaulders (H)
 											i(126669),	-- Warmongering Aspirant's Dragonhide Tunic (H)
 										}),
-										cl(3, {	-- Hunter
+										cl(HUNTER, {
 											i(126671),	-- Warmongering Aspirant's Chain Armor (H)
 											i(126672),	-- Warmongering Aspirant's Chain Gauntlets (H)
 											i(126673),	-- Warmongering Aspirant's Chain Helm (H)
 											i(126674),	-- Warmongering Aspirant's Chain Leggings (H)
 											i(126675),	-- Warmongering Aspirant's Chain Spaulders (H)
 										}),
-										cl(8, {	-- Mage
+										cl(MAGE, {
 											i(126691),	-- Warmongering Aspirant's Silk Amice (H)
 											i(126688),	-- Warmongering Aspirant's Silk Cowl (H)
 											i(126687),	-- Warmongering Aspirant's Silk Handguards (H)
 											i(126690),	-- Warmongering Aspirant's Silk Robe (H)
 											i(126689),	-- Warmongering Aspirant's Silk Trousers (H)
 										}),
-										cl(10, {	-- Monk
+										cl(MONK, {
 											i(126695),	-- Warmongering Aspirant's Ironskin Gloves (H)
 											i(126696),	-- Warmongering Aspirant's Ironskin Helm (H)
 											i(126697),	-- Warmongering Aspirant's Ironskin Legguards (H)
 											i(126698),	-- Warmongering Aspirant's Ironskin Spaulders (H)
 											i(126699),	-- Warmongering Aspirant's Ironskin Tunic (H)
 										}),
-										cl(2, {	-- Paladin
+										cl(PALADIN, {
 											i(126700),	-- Warmongering Aspirant's Scaled Chestpiece (H)
 											i(126701),	-- Warmongering Aspirant's Scaled Gauntlets (H)
 											i(126702),	-- Warmongering Aspirant's Scaled Helm (H)
 											i(126703),	-- Warmongering Aspirant's Scaled Legguards (H)
 											i(126704),	-- Warmongering Aspirant's Scaled Shoulders (H)
 										}),
-										cl(5, {	-- Priest
+										cl(PRIEST, {
 											i(126708),	-- Warmongering Aspirant's Satin Gloves (H)
 											i(126709),	-- Warmongering Aspirant's Satin Hood (H)
 											i(126710),	-- Warmongering Aspirant's Satin Leggings (H)
 											i(126712),	-- Warmongering Aspirant's Satin Mantle (H)
 											i(126711),	-- Warmongering Aspirant's Satin Robe (H)
 										}),
-										cl(4, {	-- Rogue
+										cl(ROGUE, {
 											i(126714),	-- Warmongering Aspirant's Leather Gloves (H)
 											i(126715),	-- Warmongering Aspirant's Leather Helm (H)
 											i(126716),	-- Warmongering Aspirant's Leather Legguards (H)
 											i(126717),	-- Warmongering Aspirant's Leather Spaulders (H)
 											i(126713),	-- Warmongering Aspirant's Leather Tunic (H)
 										}),
-										cl(7, {	-- Shaman	
+										cl(SHAMAN, {
 											i(126718),	-- Warmongering Aspirant's Ringmail Armor (H)
 											i(126719),	-- Warmongering Aspirant's Ringmail Gauntlets (H)
 											i(126720),	-- Warmongering Aspirant's Ringmail Helm (H)
 											i(126721),	-- Warmongering Aspirant's Ringmail Leggings (H)
 											i(126722),	-- Warmongering Aspirant's Ringmail Spaulders (H)
 										}),
-										cl(9, {	-- Warlock
+										cl(WARLOCK, {
 											i(126739),	-- Warmongering Aspirant's Felweave Amice (H)
 											i(126736),	-- Warmongering Aspirant's Felweave Cowl (H)
 											i(126735),	-- Warmongering Aspirant's Felweave Handguards (H)
 											i(126738),	-- Warmongering Aspirant's Felweave Raiment (H)
 											i(126737),	-- Warmongering Aspirant's Felweave Trousers (H)
 										}),
-										cl(1, {	-- Warrior
+										cl(WARRIOR, {
 											i(126740),	-- Warmongering Aspirant's Plate Chestpiece (H)
 											i(126741),	-- Warmongering Aspirant's Plate Gauntlets (H)
 											i(126742),	-- Warmongering Aspirant's Plate Helm (H)
@@ -194,77 +187,77 @@ _.ExpansionFeatures =
 											i(126733),	-- Warmongering Aspirant's Accolade of Meditation (H)
 											i(126732),	-- Warmongering Aspirant's Accolade of Victory (H)
 										}),
-										cl(6, {	-- Death Knight
+										cl(DEATHKNIGHT, {
 											i(126184),	-- Warmongering Aspirant's Dreadplate Chestpiece (A)
 											i(126185),	-- Warmongering Aspirant's Dreadplate Gauntlets (A)
 											i(126186),	-- Warmongering Aspirant's Dreadplate Helm (A)
 											i(126187),	-- Warmongering Aspirant's Dreadplate Legguards (A)
 											i(126188),	-- Warmongering Aspirant's Dreadplate Shoulders (A)
 										}),
-										cl(11, {	-- Druid
+										cl(DRUID, {
 											i(126189),	-- Warmongering Aspirant's Dragonhide Gloves (A)
 											i(126190),	-- Warmongering Aspirant's Dragonhide Helm (A)
 											i(126191),	-- Warmongering Aspirant's Dragonhide Legguards (A)
 											i(126193),	-- Warmongering Aspirant's Dragonhide Spaulders (A)
 											i(126192),	-- Warmongering Aspirant's Dragonhide Tunic (A)
 										}),
-										cl(3, {	-- Hunter
+										cl(HUNTER, {
 											i(126194),	-- Warmongering Aspirant's Chain Armor (A)
 											i(126195),	-- Warmongering Aspirant's Chain Gauntlets (A)
 											i(126196),	-- Warmongering Aspirant's Chain Helm (A)
 											i(126197),	-- Warmongering Aspirant's Chain Leggings (A)
 											i(126198),	-- Warmongering Aspirant's Chain Spaulders (A)
 										}),
-										cl(8, {	-- Mage
+										cl(MAGE, {
 											i(126214),	-- Warmongering Aspirant's Silk Amice (A)
 											i(126211),	-- Warmongering Aspirant's Silk Cowl (A)
 											i(126210),	-- Warmongering Aspirant's Silk Handguards (A)
 											i(126213),	-- Warmongering Aspirant's Silk Robe (A)
 											i(126212),	-- Warmongering Aspirant's Silk Trousers (A)
 										}),
-										cl(10, {	-- Monk
+										cl(MONK, {
 											i(126218),	-- Warmongering Aspirant's Ironskin Gloves (A)
 											i(126219),	-- Warmongering Aspirant's Ironskin Helm (A)
 											i(126220),	-- Warmongering Aspirant's Ironskin Legguards (A)
 											i(126221),	-- Warmongering Aspirant's Ironskin Spaulders (A)
 											i(126222),	-- Warmongering Aspirant's Ironskin Tunic (A)
 										}),
-										cl(2, {	-- Paladin
+										cl(PALADIN, {
 											i(126223),	-- Warmongering Aspirant's Scaled Chestpiece (A)
 											i(126224),	-- Warmongering Aspirant's Scaled Gauntlets (A)
 											i(126225),	-- Warmongering Aspirant's Scaled Helm (A)
 											i(126226),	-- Warmongering Aspirant's Scaled Legguards (A)
 											i(126227),	-- Warmongering Aspirant's Scaled Shoulders (A)
 										}),
-										cl(5, {	-- Priest
+										cl(PRIEST, {
 											i(126231),	-- Warmongering Aspirant's Satin Gloves (A)
 											i(126232),	-- Warmongering Aspirant's Satin Hood (A)
 											i(126233),	-- Warmongering Aspirant's Satin Leggings (A)
 											i(126235),	-- Warmongering Aspirant's Satin Mantle (A)
 											i(126234),	-- Warmongering Aspirant's Satin Robe (A)
 										}),
-										cl(4, {	-- Rogue
+										cl(ROGUE, {
 											i(126237),	-- Warmongering Aspirant's Leather Gloves (A)
 											i(126238),	-- Warmongering Aspirant's Leather Helm (A)
 											i(126239),	-- Warmongering Aspirant's Leather Legguards (A)
 											i(126240),	-- Warmongering Aspirant's Leather Spaulders (A)
 											i(126236),	-- Warmongering Aspirant's Leather Tunic (A)
 										}),
-										cl(7, {	-- Shaman
+										cl(SHAMAN, {
 											i(126241),	-- Warmongering Aspirant's Ringmail Armor (A)
 											i(126242),	-- Warmongering Aspirant's Ringmail Gauntlets (A)
 											i(126243),	-- Warmongering Aspirant's Ringmail Helm (A)
 											i(126244),	-- Warmongering Aspirant's Ringmail Leggings (A)
 											i(126245),	-- Warmongering Aspirant's Ringmail Spaulders (A)
 										}),
-										cl(9, {	-- Warlock
+										cl(WARLOCK, {
 											i(126262),	-- Warmongering Aspirant's Felweave Amice (A)
 											i(126259),	-- Warmongering Aspirant's Felweave Cowl (A)
 											i(126258),	-- Warmongering Aspirant's Felweave Handguards (A)
 											i(126261),	-- Warmongering Aspirant's Felweave Raiment (A)
 											i(126260),	-- Warmongering Aspirant's Felweave Trousers (A)
 										}),
-										cl(1, {	-- Warrior
+										cl(WARRIOR, {
 											i(126263),	-- Warmongering Aspirant's Plate Chestpiece (A)
 											i(126264),	-- Warmongering Aspirant's Plate Gauntlets (A)
 											i(126265),	-- Warmongering Aspirant's Plate Helm (A)
@@ -290,7 +283,7 @@ _.ExpansionFeatures =
 											i(126228),	-- Warmongering Aspirant's Girdle of Cruelty (A)
 											i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty (A)
 										}),
-										n(-330, {	-- Feet	
+										n(-330, {	-- Feet
 											i(126208),	-- Warmongering Aspirant's Boots of Cruelty (A)
 											i(126216),	-- Warmongering Aspirant's Footguards of Cruelty (A)
 											i(126182),	-- Warmongering Aspirant's Treads of Cruelty (A)

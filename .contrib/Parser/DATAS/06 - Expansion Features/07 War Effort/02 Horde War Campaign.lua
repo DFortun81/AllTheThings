@@ -1,6 +1,6 @@
----------------------------------------------------
---          Z O N E S        M O D U L E         --
----------------------------------------------------
+-------------------------------------------------------------------
+--      E X P A N S I O N   F E A T U R E S    M O D U L E       --
+-------------------------------------------------------------------
 
 _.ExpansionFeatures =
 {
@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		n(-253, {	-- Horde War Campaign
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				n(-4, {	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(12509, {	-- Ready for War
 						["races"] = HORDE_ONLY,
 						["maps"] = { 1163, 1164, 1165 },	-- Dazar'alor
@@ -58,10 +58,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					ach(13924, {	-- The Fourth War
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							57095,	-- Old Soldier
 							57152,	-- Most Loyal
-						},	
+						},
 						["g"] = {
 							crit(1),	-- Ready for War
 							crit(2),	-- Tides of Vengeance
@@ -76,18 +76,34 @@ _.ExpansionFeatures =
 						i(163664),	-- Honorbound Artificer's Robes
 						i(163666),	-- Honorbound Artificer's Mantle
 						i(163667),	-- Honorbound Artificer's Skullcap
+						-- TODO: Needs verification Probably no HOA reward
+						i(175396),	-- Honorbound Artificer's Robes
+						i(175398),	-- Honorbound Artificer's Mantle
+						i(175399),	-- Honorbound Artificer's Skullcap
 						-- Leather
 						i(163668),	-- Honorbound Outrider's Mantle
 						i(163669),	-- Honorbound Outrider's Faceguard
 						i(163671),	-- Honorbound Outrider's Vestments
+						-- TODO: Needs verification Probably no HOA reward
+						i(175400),	-- Honorbound Outrider's Mantle
+						i(175401),	-- Honorbound Outrider's Faceguard
+						i(175403),	-- Honorbound Outrider's Vestments
 						-- Mail
 						i(163665),	-- Honorbound Vanguard's Chainmail
 						i(163672),	-- Honorbound Vanguard's Helm
 						i(163670),	-- Honorbound Vanguard's Pauldrons
+						-- TODO: Needs verification Probably no HOA reward
+						i(175397),	-- Honorbound Vanguard's Chainmail
+						i(175404),	-- Honorbound Vanguard's Helm
+						i(175402),	-- Honorbound Vanguard's Pauldrons
 						-- Plate
 						i(163675),	-- Honorbound Centurion's Breastplate
 						i(163674),	-- Honorbound Centurion's Helmet
 						i(163673),	-- Honorbound Centurion's Pauldrons
+						-- TODO: Needs verification Probably no HOA reward
+						i(175407),	-- Honorbound Centurion's Breastplate
+						i(175406),	-- Honorbound Centurion's Helmet
+						i(175405),	-- Honorbound Centurion's Pauldrons
 					},
 				}),
 				n(QUESTS, {
@@ -123,7 +139,7 @@ _.ExpansionFeatures =
 					q(51770, {	-- Mission from the Warchief
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
-						["sourceQuests"] = 53333,	-- Time for War
+						["sourceQuests"] = { 53333 },	-- Time for War
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							follower(1065),	-- Arcanist Valtrois
@@ -609,6 +625,7 @@ _.ExpansionFeatures =
 					}),
 					-- The Marshal's Grave
 					q(53065, {	-- Operation: Grave Digger
+						["isBreadcrumb"] = true,
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["sourceQuest"] = 51601,	-- The Bridgeport Ride
 						["races"] = HORDE_ONLY,
@@ -617,7 +634,10 @@ _.ExpansionFeatures =
 					q(51784, {	-- A Stroll Through a Cemetery
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
-						["sourceQuest"] = 53065,	-- Operation: Grave Digger
+						["sourceQuests"] = {
+							53065,	-- Operation: Grave Digger
+							51601,	-- The Bridgeport Ride
+						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 896 },	-- Drustvar
@@ -677,7 +697,10 @@ _.ExpansionFeatures =
 					q(51797, {	-- Tracking Tidesages
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
-						["sourceQuest"] = 53066,	-- Operation: Water Wise
+						["sourceQuests"] = { 
+							53066,	-- Operation: Water Wise
+							51789,	-- What Remains of Marshal M. Valentine
+						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -752,7 +775,10 @@ _.ExpansionFeatures =
 					q(52764, {	-- Journey to the Middle of Nowhere
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
-						["sourceQuest"] = 53067,	-- Operation: Bottom Feeder
+						["sourceQuests"] = { 
+							53067,	-- Operation: Bottom Feeder
+							52122,	-- To Be Forsaken
+						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1157 },	-- The Great Sea
@@ -856,7 +882,10 @@ _.ExpansionFeatures =
 					q(52183, {	-- When a Plan Comes Together
 						["provider"] = { "n", 141644 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
-						["sourceQuest"] = 53068,	-- Operation: Hook and Line
+						["sourceQuests"] = { 
+							53068,	-- Operation: Hook and Line
+							52978,	-- With Prince in Tow
+						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -1202,7 +1231,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 54178,	-- Catching a Ride
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
-						["maps"] = { 
+						["maps"] = {
 							895,	-- Tiragarde Sound
 							1349,	-- Tol Dagor (Scenario)
 							1350,	-- Tol Dagor (Scenario)
@@ -1377,10 +1406,10 @@ _.ExpansionFeatures =
 						["coord"] = { 49.8, 95.9, 1165 },
 						["sourceQuests"] = {
 							54165,	-- The Return of Derek Proudmoore
-							54754,	-- For the Queen
 							54109,	-- Queen's Favor
+							54282,	-- Battle of Dazar'alor
 						},
-						["altQuests"] = { 54961 },	-- Righting Wrongs
+						["altQuests"] = { 54961 },	-- Righting Wrongs (Sylvanas Version)
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -1390,7 +1419,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = {
 							54165,	-- The Return of Derek Proudmoore
 							54754,	-- For the Queen
-							54109,	-- Queen's Favor
+							54282,	-- Battle of Dazar'alor
 						},
 						["altQuests"] = { 55124 },	-- Righting Wrongs
 						["races"] = HORDE_ONLY,
@@ -1401,7 +1430,7 @@ _.ExpansionFeatures =
 						["coord"] = { 87.3, 49.6, 895 },
 						["sourceQuests"] = {
 							55124,	-- Righting Wrongs
-							54961,	-- Righting Wrongs
+							54961,	-- Righting Wrongs (Sylvanas Version)
 						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
@@ -1441,7 +1470,7 @@ _.ExpansionFeatures =
 						["altQuests"] = { 55034 },	-- Under False Colors
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
-						["maps"] = { 70 },	-- Dustwallow Marsh 
+						["maps"] = { 70 },	-- Dustwallow Marsh
 					}),
 					q(55034, {	-- Under False Colors (Sylvanas Version)
 						["provider"] = { "n", 150311 },	-- Thomas Zelling
@@ -1453,7 +1482,7 @@ _.ExpansionFeatures =
 						["altQuests"] = { 54999 },	-- Under False Colors
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
-						["maps"] = { 70 },	-- Dustwallow Marsh 
+						["maps"] = { 70 },	-- Dustwallow Marsh
 					}),
 					-- The Warfang Event (Baine's imprisoning)
 					q(55047, {	-- Securing Warfang Hold
@@ -1538,7 +1567,10 @@ _.ExpansionFeatures =
 					q(55780, {	-- Old Allies (Sylvanas Version)
 						["provider"] = { "n", 151848 },	-- Lor'themar Theron
 						["coord"] = { 48.5, 62.1, 1355 },
-						["sourceQuest"] = 55778,	-- Visions of Danger
+						["sourceQuests"] = { 
+							55778,	-- Visions of Danger
+							55052,	-- Securing Warfang Hold (Sylvanas Version)
+						},
 						["altQuests"] = { 55781 },	-- Old Allies
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
@@ -1551,7 +1583,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 55781,	-- Old Allies
 						["altQuests"] = { 55782 },	-- Stay of Execution
 						["lvl"] = 120,
-						["maps"] = { 
+						["maps"] = {
 							85,	-- Orgrimmar
 							1479,	-- Baine Rescue (Scenario)
 						},
@@ -1563,7 +1595,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 55780,	-- Old Allies (Sylvanas Version)
 						["altQuests"] = { 55779 },	-- Stay of Execution
 						["lvl"] = 120,
-						["maps"] = { 
+						["maps"] = {
 							85,	-- Orgrimmar
 							1479,	-- Baine Rescue (Scenario)
 						},
@@ -1659,9 +1691,9 @@ _.ExpansionFeatures =
 							1535,	-- Durotar (Scenario)
 						},
 					}),
-					
+
 					--	unsorted below this point
-				
+
 					-- Escape of Saurfang
 					q(54097, {	-- The Dark Lady Calls
 						["provider"] = { "n", 146013 },	-- Dark Ranger Alina
@@ -1776,4 +1808,4 @@ _.ExpansionFeatures =
 			},
 		}),
 	}),
-};		
+};

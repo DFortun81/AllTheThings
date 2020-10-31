@@ -79,13 +79,14 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["maps"] = { 27 },	-- Dun Morogh
 				}),
 				q(56341, {	-- Direbrew Cog (A)
-				--	["provider"] = { "o", ??? },	-- ???
+					--	["provider"] = { "o", ??? },	-- ???
 					["coord"] = { 55.5, 37.7, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["maps"] = { 27 },	-- Dun Morogh
 				}),
 				q(11117, {	-- Catch the Wild Wolpertinger! (A)
+					["description"] = "This quest is not available to EU players.",
 					["provider"] = { "n", 23486 },	-- Goldark Snipehunter
 					["coord"] = { 55.2, 37.8, 27 },
 					["races"] = ALLIANCE_ONLY,
@@ -137,6 +138,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["isYearly"] = true,
 				}),
 				q(11118, {	-- Pink Elekks On Parade (A)
+					["description"] = "This quest is not available to EU players.",
 					["provider"] = { "n", 23486 },	-- Goldark Snipehunter
 					["coord"] = { 55.2, 37.8, 27 },
 					["races"] = ALLIANCE_ONLY,
@@ -242,13 +244,14 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["maps"] = { 1 },	-- Durotar
 				}),
 				q(56716, {	-- Direbrew Cog (H)
-				--	["provider"] = { "o", ??? },	-- ???
+					--	["provider"] = { "o", ??? },	-- ???
 					["coord"] = { 41.0, 17.8, 1 },
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 				}),
 				q(11431, {	-- Catch the Wild Wolpertinger! (H)
+					["description"] = "This quest is not available to EU players.",
 					["provider"] = { "n", 24657 },	-- Glodrak Huntsniper
 					["coord"] = { 41.2, 18.4, 1 },
 					["races"] = HORDE_ONLY,
@@ -275,14 +278,14 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["isYearly"] = true,
 				}),
 				q(56714, {	-- Contained Alemental (H)
-				--	["provider"] = { "o", ??? },	-- ???
+					--	["provider"] = { "o", ??? },	-- ???
 					["coord"] = { 41.0, 17.8, 1 },
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 				}),
 				q(56715, {	-- Hozen Totem (H)
-				--	["provider"] = { "o", ??? },	-- Hozen Totem
+					--	["provider"] = { "o", ??? },	-- Hozen Totem
 					["coord"] = { 41.0, 17.8, 1 },
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
@@ -300,6 +303,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["isYearly"] = true,
 				}),
 				q(11120, {	-- Pink Elekks On Parade (H)
+					["description"] = "This quest is not available to EU players.",
 					["provider"] = { "n", 24657 },	-- Glodrak Huntsniper
 					["coord"] = { 41.2, 18.4, 1 },
 					["races"] = HORDE_ONLY,

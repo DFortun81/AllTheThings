@@ -1,5 +1,5 @@
 -----------------------------------------------
---     P L A Y E R   V S   P L A Y E R       --
+--      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
 _.PVP =
@@ -17,9 +17,9 @@ _.PVP =
 				i(138486),	-- "Third Wind" Potion
 			},
 		}),
-		i(135539, {	-- Crate of Battlefield Goods 15-39
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 15-39 range.|r",
-			["lvl"] = 15,
+		i(135539, {	-- Crate of Battlefield Goods 10-49	-- 9.0+
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 10-49 range.|r",
+			["lvl"] = 10,
 			["g"] = {
 				i(134643),	-- Auxiliary's Cuffs*
 				i(134642),	-- Auxiliary's Leggings*
@@ -53,249 +53,242 @@ _.PVP =
 				i(134659),  -- Recruit's Ring
 			},
 		}),
-		i(135540, {	-- Crate of Battlefield Goods 40-59
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 40-59 range.|r",
-			["lvl"] = 40,
+		un(REMOVED_FROM_GAME, i(135540, {	-- Crate of Battlefield Goods 40-59 before 9.0
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 40-59 range before 9.0.|r",
 			["g"] = {
-				i(134672),	-- Auxiliary's Amice
-				i(134670),	-- Auxiliary's Cowl
-				i(134669),	-- Auxiliary's Handwraps
-				i(134671),	-- Auxiliary's Trousers
-				i(134675),	-- Rookie's Gloves*
-				i(134676),	-- Rookie's Helm*
-				i(134677),	-- Rookie's Legguards*
-				i(134678),	-- Rookie's Shoulders*
-				i(134679),	-- Greenhorn's Gauntlets
-				i(134680),	-- Greenhorn's Helm
-				i(134681),	-- Greenhorn's Legguards
-				i(134682),	-- Greenhorn's Spaulders
-				i(134683),	-- Front-Line Gauntlets*
-				i(134685),	-- Front-Line Greaves*
-				i(134684),	-- Front-Line Helm*
-				i(134686),	-- Front-Line Shoulders*
-				i(134689),	-- Recruit's Accolade*
-				i(134687),	-- Recruit's Barrier
-				i(134674),	-- Recruit's Battle Staff*
-				i(134690),	-- Recruit's Distinction
-				i(134673),	-- Recruit's Gavel*
-				i(134664),	-- Recruit's Greatsword
-				i(134665),	-- Recruit's Longbow
-				i(134668),	-- Recruit's Pike
-				i(134667),	-- Recruit's Pummeler*
-				i(134666),	-- Recruit's Shanker*
-				i(134688),	-- Recruit's Slicer*
-				i(134691),  -- Recruit's Badge*
+				un(REMOVED_FROM_GAME, i(134672)),	-- Auxiliary's Amice
+				un(REMOVED_FROM_GAME, i(134670)),	-- Auxiliary's Cowl
+				un(REMOVED_FROM_GAME, i(134669)),	-- Auxiliary's Handwraps
+				un(REMOVED_FROM_GAME, i(134671)),	-- Auxiliary's Trousers
+				un(REMOVED_FROM_GAME, i(134675)),	-- Rookie's Gloves*
+				un(REMOVED_FROM_GAME, i(134676)),	-- Rookie's Helm*
+				un(REMOVED_FROM_GAME, i(134677)),	-- Rookie's Legguards*
+				un(REMOVED_FROM_GAME, i(134678)),	-- Rookie's Shoulders*
+				un(REMOVED_FROM_GAME, i(134679)),	-- Greenhorn's Gauntlets
+				un(REMOVED_FROM_GAME, i(134680)),	-- Greenhorn's Helm
+				un(REMOVED_FROM_GAME, i(134681)),	-- Greenhorn's Legguards
+				un(REMOVED_FROM_GAME, i(134682)),	-- Greenhorn's Spaulders
+				un(REMOVED_FROM_GAME, i(134683)),	-- Front-Line Gauntlets*
+				un(REMOVED_FROM_GAME, i(134685)),	-- Front-Line Greaves*
+				un(REMOVED_FROM_GAME, i(134684)),	-- Front-Line Helm*
+				un(REMOVED_FROM_GAME, i(134686)),	-- Front-Line Shoulders*
+				un(REMOVED_FROM_GAME, i(134689)),	-- Recruit's Accolade*
+				un(REMOVED_FROM_GAME, i(134687)),	-- Recruit's Barrier
+				un(REMOVED_FROM_GAME, i(134674)),	-- Recruit's Battle Staff*
+				un(REMOVED_FROM_GAME, i(134690)),	-- Recruit's Distinction
+				un(REMOVED_FROM_GAME, i(134673)),	-- Recruit's Gavel*
+				un(REMOVED_FROM_GAME, i(134664)),	-- Recruit's Greatsword
+				un(REMOVED_FROM_GAME, i(134665)),	-- Recruit's Longbow
+				un(REMOVED_FROM_GAME, i(134668)),	-- Recruit's Pike
+				un(REMOVED_FROM_GAME, i(134667)),	-- Recruit's Pummeler*
+				un(REMOVED_FROM_GAME, i(134666)),	-- Recruit's Shanker*
+				un(REMOVED_FROM_GAME, i(134688)),	-- Recruit's Slicer*
+				un(REMOVED_FROM_GAME, i(134691)),	-- Recruit's Badge*
 			},
-		}),
-		i(135541, {	-- Crusader's Crate of Battlefield Goods 60-69
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 60-69 range.|r",
-			["lvl"] = 60,
+		})),
+		un(REMOVED_FROM_GAME, i(135541, {	-- Crusader's Crate of Battlefield Goods 60-69 before 9.0
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 60-69 range before 9.0.|r",
 			["g"] = {
-				i(134584),	-- Inciter's Cord
-				i(134585),	-- Inciter's Cuffs
-				i(134583),	-- Inciter's Treads
-				i(134592),	-- Insurgent's Belt
-				i(134593),	-- Insurgent's Bindings
-				i(134591),	-- Insurgent's Boots
-				i(134596),	-- Agitator's Armbands
-				i(134594),	-- Agitator's Footguards
-				i(134595),	-- Agitator's Waistguard
-				i(134602),	-- Instigator's Armplates*
-				i(134601),	-- Instigator's Girdle*
-				i(134600),	-- Instigator's Warboots*
-				i(134587),	-- Vanguard Drape*
-				i(134580),	-- Vanguard Heavy Crossbow
-				i(134581),	-- Vanguard Shanker
-				i(134589),	-- Vanguard Reprieve*
-				i(134578),	-- Vanguard Cleaver
-				i(134604),	-- Vanguard Hacker*
-				i(134588),	-- Vanguard Gavel*
-				i(134603),	-- Vanguard Redoubt*
-				i(134582),	-- Vanguard Staff
-				i(134577),	-- Vanguard Decapitator*
-				i(134590),	-- Vanguard Baton of Light
+				un(REMOVED_FROM_GAME, i(134584)),	-- Inciter's Cord
+				un(REMOVED_FROM_GAME, i(134585)),	-- Inciter's Cuffs
+				un(REMOVED_FROM_GAME, i(134583)),	-- Inciter's Treads
+				un(REMOVED_FROM_GAME, i(134592)),	-- Insurgent's Belt
+				un(REMOVED_FROM_GAME, i(134593)),	-- Insurgent's Bindings
+				un(REMOVED_FROM_GAME, i(134591)),	-- Insurgent's Boots
+				un(REMOVED_FROM_GAME, i(134596)),	-- Agitator's Armbands
+				un(REMOVED_FROM_GAME, i(134594)),	-- Agitator's Footguards
+				un(REMOVED_FROM_GAME, i(134595)),	-- Agitator's Waistguard
+				un(REMOVED_FROM_GAME, i(134602)),	-- Instigator's Armplates*
+				un(REMOVED_FROM_GAME, i(134601)),	-- Instigator's Girdle*
+				un(REMOVED_FROM_GAME, i(134600)),	-- Instigator's Warboots*
+				un(REMOVED_FROM_GAME, i(134587)),	-- Vanguard Drape*
+				un(REMOVED_FROM_GAME, i(134580)),	-- Vanguard Heavy Crossbow
+				un(REMOVED_FROM_GAME, i(134581)),	-- Vanguard Shanker
+				un(REMOVED_FROM_GAME, i(134589)),	-- Vanguard Reprieve*
+				un(REMOVED_FROM_GAME, i(134578)),	-- Vanguard Cleaver
+				un(REMOVED_FROM_GAME, i(134604)),	-- Vanguard Hacker*
+				un(REMOVED_FROM_GAME, i(134588)),	-- Vanguard Gavel*
+				un(REMOVED_FROM_GAME, i(134603)),	-- Vanguard Redoubt*
+				un(REMOVED_FROM_GAME, i(134582)),	-- Vanguard Staff
+				un(REMOVED_FROM_GAME, i(134577)),	-- Vanguard Decapitator*
+				un(REMOVED_FROM_GAME, i(134590)),	-- Vanguard Baton of Light
 			},
-		}),
-		i(135542, {	-- Icy Crate of Battlefield Goods 70-79
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 70-79 range.|r",
-			["lvl"] = 70,
+		})),
+		un(REMOVED_FROM_GAME, i(135542, {	-- Icy Crate of Battlefield Goods 70-79 before 9.0
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 70-79 range before 9.0.|r",
 			["g"] = {
-				i(134724),	-- Icyweave Amice*
-				i(134722),	-- Icyweave Robes*
-				i(134723),	-- Icyweave Gloves*
-				i(134731),	-- Frosthide Shoulderpads
-				i(134729),	-- Frosthide Tunic
-				i(134730),	-- Frosthide Gloves
-				i(134734),	-- Frigidlink Spaulders
-				i(134732),	-- Frigidlink Armor
-				i(134733),	-- Frigidlink Gauntlets
-				i(134737),	-- Chillplate Shoulders*
-				i(134735),	-- Chillplate Chestpiece*
-				i(134736),	-- Chillplate Gauntlets*
-				i(134717),	-- Cold-Touched Decapitator*
-				i(134721),	-- Cold-Touched Staff
-				i(134742),	-- Cold-Touched Hacker*
-				i(134725),	-- Cold-Touched Mageblade*
-				i(134719),	-- Cold-Touched Ripper
-				i(134718),	-- Cold-Touched Shanker
-				i(134726),	-- Cold-Touched Sword
-				i(134720),	-- Cold-Touched Rifle
-				i(134728),	-- Cold-Touched Wand*
-				i(134741),	-- Cold-Touched Barrier*
-				i(134727),	-- Cold-Touched Endgame
-				i(134739),	-- Cold-Touched Band*
-				i(134738),	-- Cold-Touched Ring*
-				i(134740),	-- Cold-Touched Signet*
-				i(134745),	-- Cold-Touched Badge*
-				i(134744),	-- Cold-Touched Distinction*
-				i(134743),	-- Cold-Touched Accolade*
+				un(REMOVED_FROM_GAME, i(134724)),	-- Icyweave Amice*
+				un(REMOVED_FROM_GAME, i(134722)),	-- Icyweave Robes*
+				un(REMOVED_FROM_GAME, i(134723)),	-- Icyweave Gloves*
+				un(REMOVED_FROM_GAME, i(134731)),	-- Frosthide Shoulderpads
+				un(REMOVED_FROM_GAME, i(134729)),	-- Frosthide Tunic
+				un(REMOVED_FROM_GAME, i(134730)),	-- Frosthide Gloves
+				un(REMOVED_FROM_GAME, i(134734)),	-- Frigidlink Spaulders
+				un(REMOVED_FROM_GAME, i(134732)),	-- Frigidlink Armor
+				un(REMOVED_FROM_GAME, i(134733)),	-- Frigidlink Gauntlets
+				un(REMOVED_FROM_GAME, i(134737)),	-- Chillplate Shoulders*
+				un(REMOVED_FROM_GAME, i(134735)),	-- Chillplate Chestpiece*
+				un(REMOVED_FROM_GAME, i(134736)),	-- Chillplate Gauntlets*
+				un(REMOVED_FROM_GAME, i(134717)),	-- Cold-Touched Decapitator*
+				un(REMOVED_FROM_GAME, i(134721)),	-- Cold-Touched Staff
+				un(REMOVED_FROM_GAME, i(134742)),	-- Cold-Touched Hacker*
+				un(REMOVED_FROM_GAME, i(134725)),	-- Cold-Touched Mageblade*
+				un(REMOVED_FROM_GAME, i(134719)),	-- Cold-Touched Ripper
+				un(REMOVED_FROM_GAME, i(134718)),	-- Cold-Touched Shanker
+				un(REMOVED_FROM_GAME, i(134726)),	-- Cold-Touched Sword
+				un(REMOVED_FROM_GAME, i(134720)),	-- Cold-Touched Rifle
+				un(REMOVED_FROM_GAME, i(134728)),	-- Cold-Touched Wand*
+				un(REMOVED_FROM_GAME, i(134741)),	-- Cold-Touched Barrier*
+				un(REMOVED_FROM_GAME, i(134727)),	-- Cold-Touched Endgame
+				un(REMOVED_FROM_GAME, i(134739)),	-- Cold-Touched Band*
+				un(REMOVED_FROM_GAME, i(134738)),	-- Cold-Touched Ring*
+				un(REMOVED_FROM_GAME, i(134740)),	-- Cold-Touched Signet*
+				un(REMOVED_FROM_GAME, i(134745)),	-- Cold-Touched Badge*
+				un(REMOVED_FROM_GAME, i(134744)),	-- Cold-Touched Distinction*
+				un(REMOVED_FROM_GAME, i(134743)),	-- Cold-Touched Accolade*
 			},
-		}),
-		i(135543, {	-- Rival's Crate of Battlefield Goods 80-89; splitting this box into two categories, loot table varies with level
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 80-89 range.|r",
+		})),
+		un(REMOVED_FROM_GAME, i(135543, {	-- Rival's Crate of Battlefield Goods 80-89 before 9.0; splitting this box into two categories, loot table varies with level
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 80-89 range before 9.0.|r",
 			["g"] = {
-				n(-302, {	-- Level 80-84
-					["description"] = "Rewarded for winning a random battleground in the level 80-84 range.",
+				n(-302, {	-- Level 80-84 before 9.0
+					["description"] = "Rewarded for winning a random battleground in the level 80-84 range before 9.0.",
 					["icon"] = "Interface\\Icons\\expansionicon_cataclysm",
-					["lvl"] = 80,
 					["g"] = {
-						i(134616),	-- Inflammatory Cord*
-						i(134615),	-- Inflammatory Hood*
-						i(134614),	-- Inflammatory Treads*
-						i(134622),	-- Incendiary Belt
-						i(134620),	-- Incendiary Boots
-						i(134621),	-- Incendiary Helm
-						i(134623),	-- Firebrand's Footguards
-						i(134624),	-- Firebrand's Helm
-						i(134625),	-- Firebrand's Waistguard
-						i(134631),	-- Firescored Girdle
-						i(134630),	-- Firescored Helm
-						i(134629),	-- Firescored Warboots
-						i(134634),	-- Scorching Cloak*
-						i(134607),	-- Scorching Cleaver
-						i(134618),	-- Scorching Gavel*
-						i(134606),	-- Scorching Greatsword
-						i(134633),	-- Scorching Hacker
-						i(134608),	-- Scorching Longbow
-						i(134612),	-- Scorching Pike
-						i(134611),	-- Scorching Pummeler
-						i(134632),	-- Scorching Redoubt
-						i(134610),	-- Scorching Shanker
-						i(134619),	-- Scorching Staff*
-						i(134626),	-- Scorching Necklace
-						i(134627),	-- Scorching Pendant*
+						un(REMOVED_FROM_GAME, i(134616)),	-- Inflammatory Cord*
+						un(REMOVED_FROM_GAME, i(134615)),	-- Inflammatory Hood*
+						un(REMOVED_FROM_GAME, i(134614)),	-- Inflammatory Treads*
+						un(REMOVED_FROM_GAME, i(134622)),	-- Incendiary Belt
+						un(REMOVED_FROM_GAME, i(134620)),	-- Incendiary Boots
+						un(REMOVED_FROM_GAME, i(134621)),	-- Incendiary Helm
+						un(REMOVED_FROM_GAME, i(134623)),	-- Firebrand's Footguards
+						un(REMOVED_FROM_GAME, i(134624)),	-- Firebrand's Helm
+						un(REMOVED_FROM_GAME, i(134625)),	-- Firebrand's Waistguard
+						un(REMOVED_FROM_GAME, i(134631)),	-- Firescored Girdle
+						un(REMOVED_FROM_GAME, i(134630)),	-- Firescored Helm
+						un(REMOVED_FROM_GAME, i(134629)),	-- Firescored Warboots
+						un(REMOVED_FROM_GAME, i(134634)),	-- Scorching Cloak*
+						un(REMOVED_FROM_GAME, i(134607)),	-- Scorching Cleaver
+						un(REMOVED_FROM_GAME, i(134618)),	-- Scorching Gavel*
+						un(REMOVED_FROM_GAME, i(134606)),	-- Scorching Greatsword
+						un(REMOVED_FROM_GAME, i(134633)),	-- Scorching Hacker
+						un(REMOVED_FROM_GAME, i(134608)),	-- Scorching Longbow
+						un(REMOVED_FROM_GAME, i(134612)),	-- Scorching Pike
+						un(REMOVED_FROM_GAME, i(134611)),	-- Scorching Pummeler
+						un(REMOVED_FROM_GAME, i(134632)),	-- Scorching Redoubt
+						un(REMOVED_FROM_GAME, i(134610)),	-- Scorching Shanker
+						un(REMOVED_FROM_GAME, i(134619)),	-- Scorching Staff*
+						un(REMOVED_FROM_GAME, i(134626)),	-- Scorching Necklace
+						un(REMOVED_FROM_GAME, i(134627)),	-- Scorching Pendant*
 					},
 				}),
-				n(-303, {	-- Level 85-89
-					["description"] = "Rewarded for winning a random battleground in the level 85-89 range.",
+				n(-303, {	-- Level 85-89 before 9.0
+					["description"] = "Rewarded for winning a random battleground in the level 85-89 range before 9.0.",
 					["icon"] = "Interface\\Icons\\expansionicon_mistsofpandaria",
-					["lvl"] = 85,
 					["g"] = {
-						i(134754),	-- Veiled Cuffs*
-						i(134752),	-- Veiled Leggings*
-						i(134753),	-- Veiled Mantle*
-						i(134751),	-- Veiled Raiment*
-						i(134762),	-- Masked Bindings
-						i(134760),	-- Masked Leggings
-						i(134761),	-- Masked Shoulderpads
-						i(134759),	-- Masked Tunic
-						i(134766),	-- Overgrown Armbands
-						i(134763),	-- Overgrown Armor
-						i(134764),	-- Overgrown Kilt
-						i(134765),	-- Overgrown Shoulderguards
-						i(134770),	-- Concealment Armplates
-						i(134767),	-- Concealment Breastplate
-						i(134768),	-- Concealment Legplates
-						i(134769),	-- Concealment Shoulderplates
-						i(134748),	-- Covert Shanker
-						i(134749),	-- Covert Rifle
-						i(134757),	-- Covert Reprieve*
-						i(134747),	-- Covert Cleaver
-						i(134775),	-- Covert Hacker
-						i(134756),	-- Covert Gavel*
-						i(134758),	-- Covert Mageblade
-						i(134750),	-- Covert Pike
-						i(134774),	-- Covert Barrier
-						i(134746),	-- Covert Greatsword
-						i(134772),	-- Covert Band*
-						i(134771),	-- Covert Ring*
+						un(REMOVED_FROM_GAME, i(134754)),	-- Veiled Cuffs*
+						un(REMOVED_FROM_GAME, i(134752)),	-- Veiled Leggings*
+						un(REMOVED_FROM_GAME, i(134753)),	-- Veiled Mantle*
+						un(REMOVED_FROM_GAME, i(134751)),	-- Veiled Raiment*
+						un(REMOVED_FROM_GAME, i(134762)),	-- Masked Bindings
+						un(REMOVED_FROM_GAME, i(134760)),	-- Masked Leggings
+						un(REMOVED_FROM_GAME, i(134761)),	-- Masked Shoulderpads
+						un(REMOVED_FROM_GAME, i(134759)),	-- Masked Tunic
+						un(REMOVED_FROM_GAME, i(134766)),	-- Overgrown Armbands
+						un(REMOVED_FROM_GAME, i(134763)),	-- Overgrown Armor
+						un(REMOVED_FROM_GAME, i(134764)),	-- Overgrown Kilt
+						un(REMOVED_FROM_GAME, i(134765)),	-- Overgrown Shoulderguards
+						un(REMOVED_FROM_GAME, i(134770)),	-- Concealment Armplates
+						un(REMOVED_FROM_GAME, i(134767)),	-- Concealment Breastplate
+						un(REMOVED_FROM_GAME, i(134768)),	-- Concealment Legplates
+						un(REMOVED_FROM_GAME, i(134769)),	-- Concealment Shoulderplates
+						un(REMOVED_FROM_GAME, i(134748)),	-- Covert Shanker
+						un(REMOVED_FROM_GAME, i(134749)),	-- Covert Rifle
+						un(REMOVED_FROM_GAME, i(134757)),	-- Covert Reprieve*
+						un(REMOVED_FROM_GAME, i(134747)),	-- Covert Cleaver
+						un(REMOVED_FROM_GAME, i(134775)),	-- Covert Hacker
+						un(REMOVED_FROM_GAME, i(134756)),	-- Covert Gavel*
+						un(REMOVED_FROM_GAME, i(134758)),	-- Covert Mageblade
+						un(REMOVED_FROM_GAME, i(134750)),	-- Covert Pike
+						un(REMOVED_FROM_GAME, i(134774)),	-- Covert Barrier
+						un(REMOVED_FROM_GAME, i(134746)),	-- Covert Greatsword
+						un(REMOVED_FROM_GAME, i(134772)),	-- Covert Band*
+						un(REMOVED_FROM_GAME, i(134771)),	-- Covert Ring*
 					},
 				}),
 			},
-		}),
-		i(135545, {	-- Savage Crate of Battlefield Goods 90-99
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 90-99 range.|r",
-			["lvl"] = 90,
+		})),
+		un(REMOVED_FROM_GAME, i(135545, {	-- Savage Crate of Battlefield Goods 90-99 before 9.0
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 90-99 range before 9.0.|r",
 			["g"] = {
-				i(134787),	-- Entrenched Cowl*
-				i(134786),	-- Entrenched Handwraps*
-				i(134784),	-- Entrenched Raiment*
-				i(134785),	-- Entrenched Treads
-				i(134792),	-- Ruinous Boots*
-				i(134793),	-- Ruinous Gloves*
-				i(134794),	-- Ruinous Helm*
-				i(134791),	-- Ruinous Tunic*
-				i(134795),	-- Ironbranded Chainmail
-				i(134796),	-- Ironbranded Footguards
-				i(134797),	-- Ironbranded Gauntlets
-				i(134798),	-- Ironbranded Ringmail Helm
-				i(134799),	-- Tempered Breastplate
-				i(134801),	-- Tempered Gauntlets
-				i(134802),	-- Tempered Helm
-				i(134800),	-- Tempered Warboots
-				i(134804),	-- Seasoned Badge	- issue #534 on GitHub
-				i(134778),	-- Seasoned Crossbow
-				i(134779),	-- Seasoned Shanker
-				i(134780),	-- Seasoned Ripper
-				i(134805),	-- Seasoned Hacker
-				i(134789),	-- Seasoned Gavel
-				i(134781),	-- Seasoned Pummeler
-				i(134783),	-- Seasoned Quickblade
-				i(134782),	-- Seasoned Pike
-				i(134803),	-- Seasoned Redoubt
-				i(134790),	-- Seasoned Staff*
-				i(134776),	-- Seasoned Decapitator
-				i(134788),	-- Seasoned Distinction*
-				i(134777),	-- Seasoned Accolade*
+				un(REMOVED_FROM_GAME, i(134787)),	-- Entrenched Cowl*
+				un(REMOVED_FROM_GAME, i(134786)),	-- Entrenched Handwraps*
+				un(REMOVED_FROM_GAME, i(134784)),	-- Entrenched Raiment*
+				un(REMOVED_FROM_GAME, i(134785)),	-- Entrenched Treads
+				un(REMOVED_FROM_GAME, i(134792)),	-- Ruinous Boots*
+				un(REMOVED_FROM_GAME, i(134793)),	-- Ruinous Gloves*
+				un(REMOVED_FROM_GAME, i(134794)),	-- Ruinous Helm*
+				un(REMOVED_FROM_GAME, i(134791)),	-- Ruinous Tunic*
+				un(REMOVED_FROM_GAME, i(134795)),	-- Ironbranded Chainmail
+				un(REMOVED_FROM_GAME, i(134796)),	-- Ironbranded Footguards
+				un(REMOVED_FROM_GAME, i(134797)),	-- Ironbranded Gauntlets
+				un(REMOVED_FROM_GAME, i(134798)),	-- Ironbranded Ringmail Helm
+				un(REMOVED_FROM_GAME, i(134799)),	-- Tempered Breastplate
+				un(REMOVED_FROM_GAME, i(134801)),	-- Tempered Gauntlets
+				un(REMOVED_FROM_GAME, i(134802)),	-- Tempered Helm
+				un(REMOVED_FROM_GAME, i(134800)),	-- Tempered Warboots
+				un(REMOVED_FROM_GAME, i(134804)),	-- Seasoned Badge	- issue #534 on GitHub
+				un(REMOVED_FROM_GAME, i(134778)),	-- Seasoned Crossbow
+				un(REMOVED_FROM_GAME, i(134779)),	-- Seasoned Shanker
+				un(REMOVED_FROM_GAME, i(134780)),	-- Seasoned Ripper
+				un(REMOVED_FROM_GAME, i(134805)),	-- Seasoned Hacker
+				un(REMOVED_FROM_GAME, i(134789)),	-- Seasoned Gavel
+				un(REMOVED_FROM_GAME, i(134781)),	-- Seasoned Pummeler
+				un(REMOVED_FROM_GAME, i(134783)),	-- Seasoned Quickblade
+				un(REMOVED_FROM_GAME, i(134782)),	-- Seasoned Pike
+				un(REMOVED_FROM_GAME, i(134803)),	-- Seasoned Redoubt
+				un(REMOVED_FROM_GAME, i(134790)),	-- Seasoned Staff*
+				un(REMOVED_FROM_GAME, i(134776)),	-- Seasoned Decapitator
+				un(REMOVED_FROM_GAME, i(134788)),	-- Seasoned Distinction*
+				un(REMOVED_FROM_GAME, i(134777)),	-- Seasoned Accolade*
 			},
-		}),
-		i(135546, {	-- Fel-Touched Crate of Battlefield Goods 100-109 / Ashran
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 100-109 range, or Ashran quests.|r",
-			["lvl"] = 100,
+		})),
+		un(REMOVED_FROM_GAME, i(135546, {	-- Fel-Touched Crate of Battlefield Goods 100-109 before 9.0 / Ashran
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 100-109 range before 9.0, or Ashran quests.|r",
 			["g"] = {
-				i(135578),	-- Battle Touched Banner
-				i(135568),	-- Battle Touched Blood of the Fallen
-				i(135574),	-- Battle Touched Blossom
-				i(135573),	-- Battle Touched Chain Link
-				i(135565),	-- Battle Touched Elemental Spark
-				i(135571),	-- Battle Touched Ember
-				i(135576),	-- Battle Touched Fetish
-				i(135570),	-- Battle Touched Helfrost
-				i(135569),	-- Battle Touched Infernal Shard
-				i(135572),	-- Battle Touched Martyr Stone
-				i(134696),	-- Cascading Amice*			— 4/27/19
-				i(134694),	-- Cascading Cord*			— 4/26/19
-				i(134697),	-- Cascading Cuffs*			— 4/26/19
-				i(134695),	-- Cascading Trousers*		— 4/26/19
-				i(134714),	-- Crushing Armplates
-				i(134711),	-- Crushing Girdle
-				i(134712),	-- Crushing Legguards
-				i(134713),	-- Crushing Pauldrons
-				i(134692),	-- Enveloping Accolade
-				i(134715),	-- Enveloping Badge
-				i(134716),	-- Enveloping Cloak*		— 4/26/19
-				i(134698),	-- Enveloping Distinction*	— 4/26/19
-				i(134709),	-- Enveloping Pendant*		— 4/25/19
-				i(134707),	-- Surging Armbands
-				i(134705),	-- Surging Chain Leggings
-				i(134706),	-- Surging Spaulders
-				i(134704),	-- Surging Waistguard
-				i(134700),	-- Swarming Belt
-				i(134703),	-- Swarming Bindings
-				i(134701),	-- Swarming Legguards
-				i(134702),	-- Swarming Shoulders
+				un(REMOVED_FROM_GAME, i(135578)),	-- Battle Touched Banner
+				un(REMOVED_FROM_GAME, i(135568)),	-- Battle Touched Blood of the Fallen
+				un(REMOVED_FROM_GAME, i(135574)),	-- Battle Touched Blossom
+				un(REMOVED_FROM_GAME, i(135573)),	-- Battle Touched Chain Link
+				un(REMOVED_FROM_GAME, i(135565)),	-- Battle Touched Elemental Spark
+				un(REMOVED_FROM_GAME, i(135571)),	-- Battle Touched Ember
+				un(REMOVED_FROM_GAME, i(135576)),	-- Battle Touched Fetish
+				un(REMOVED_FROM_GAME, i(135570)),	-- Battle Touched Helfrost
+				un(REMOVED_FROM_GAME, i(135569)),	-- Battle Touched Infernal Shard
+				un(REMOVED_FROM_GAME, i(135572)),	-- Battle Touched Martyr Stone
+				un(REMOVED_FROM_GAME, i(134696)),	-- Cascading Amice*			— 4/27/19
+				un(REMOVED_FROM_GAME, i(134694)),	-- Cascading Cord*			— 4/26/19
+				un(REMOVED_FROM_GAME, i(134697)),	-- Cascading Cuffs*			— 4/26/19
+				un(REMOVED_FROM_GAME, i(134695)),	-- Cascading Trousers*		— 4/26/19
+				un(REMOVED_FROM_GAME, i(134714)),	-- Crushing Armplates
+				un(REMOVED_FROM_GAME, i(134711)),	-- Crushing Girdle
+				un(REMOVED_FROM_GAME, i(134712)),	-- Crushing Legguards
+				un(REMOVED_FROM_GAME, i(134713)),	-- Crushing Pauldrons
+				un(REMOVED_FROM_GAME, i(134692)),	-- Enveloping Accolade
+				un(REMOVED_FROM_GAME, i(134715)),	-- Enveloping Badge
+				un(REMOVED_FROM_GAME, i(134716)),	-- Enveloping Cloak*		— 4/26/19
+				un(REMOVED_FROM_GAME, i(134698)),	-- Enveloping Distinction*	— 4/26/19
+				un(REMOVED_FROM_GAME, i(134709)),	-- Enveloping Pendant*		— 4/25/19
+				un(REMOVED_FROM_GAME, i(134707)),	-- Surging Armbands
+				un(REMOVED_FROM_GAME, i(134705)),	-- Surging Chain Leggings
+				un(REMOVED_FROM_GAME, i(134706)),	-- Surging Spaulders
+				un(REMOVED_FROM_GAME, i(134704)),	-- Surging Waistguard
+				un(REMOVED_FROM_GAME, i(134700)),	-- Swarming Belt
+				un(REMOVED_FROM_GAME, i(134703)),	-- Swarming Bindings
+				un(REMOVED_FROM_GAME, i(134701)),	-- Swarming Legguards
+				un(REMOVED_FROM_GAME, i(134702)),	-- Swarming Shoulders
 			},
-		}),
+		})),
 		i(165714, {	-- Gold Strongbox - Win (A)
 			["races"] = ALLIANCE_ONLY,
 			["sym"] = {

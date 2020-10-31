@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(70, {	-- Dustwallow Marsh
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(4929, {	-- Dustwallow Marsh Quests (Alliance)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

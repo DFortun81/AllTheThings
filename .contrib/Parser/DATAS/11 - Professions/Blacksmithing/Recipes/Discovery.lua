@@ -161,7 +161,7 @@ profession(BLACKSMITHING, {
 								},
 							},
 						},
-					},	
+					},
 				}),
 			},
 		},

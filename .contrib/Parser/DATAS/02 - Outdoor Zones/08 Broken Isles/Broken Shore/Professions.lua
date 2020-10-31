@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -11,7 +12,6 @@ _.Zones =
 					["coord"] = { 41.1, 59.3, 646 },
 					["sourceQuest"] = 47015,	-- Boon of the Nether Disruptor
 					["repeatable"] = true,
-					["cost"] = { { "i", 147451, 1 }, },	-- 1x Armorcrafter's Commendatio
 				}),
 				prof(BLACKSMITHING, {
 					q(46696, {	-- The Legend of the Four Hammers
@@ -65,7 +65,7 @@ _.Zones =
 						},
 						["repeatable"] = true,
 						["requireSkill"] = BLACKSMITHING,
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 147207, 1 },	-- 1x Legendary Blacksmithing Supplies
 							{ "i", 147443, 1 },	-- 1x Carrying Case For Hammer of Forgotten Heroes
 						},
@@ -77,75 +77,78 @@ _.Zones =
 				}),
 				prof(FISHING, {
 					ach(10596, {	-- Bigger Fish to Fry
-						n(-218, {	-- Coastal
-							i(133722, {	-- Axefish Lure
-								["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-								["g"] = {
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 4,			-- Axefish (Criteria)
-										["itemID"] = 133740,		-- Axefish (Item)
+						["collectible"] = false,
+						["g"] = {
+							n(-218, {	-- Coastal
+								i(133722, {	-- Axefish Lure
+									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
+									["g"] = {
+										crit(4, {	-- Axefish (Criteria)
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["itemID"] = 133740,	-- Axefish (Item)
+											["races"] = ALLIANCE_ONLY,
+										}),
+										crit(4, {	-- Axefish (Criteria)
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["itemID"] = 139667,	-- Axefish (Item)
+											["races"] = HORDE_ONLY,
+										}),
 									},
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 4,			-- Axefish (Criteria)
-										["itemID"] = 139667,		-- Axefish (Item)
+								}),
+								i(133724, {	-- Decayed Whale Blubber
+									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
+									["g"] = {
+										i(133795),	-- Ravenous Fly
+									}
+								}),
+								i(133721, {	-- Message in a Bottle
+									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
+									["g"] = {
+										i(133722),	-- Axefish Lure
 									},
-								},
-							}),
-							i(133724, {		-- Decayed Whale Blubber
-								["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-								["g"] = {
-									i(133795),	-- Ravenous Fly
-								}
-							}),
-							i(133721, {		-- Message in a Bottle
-								["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-								["g"] = {
-									i(133722)		-- Axefish Lure
-								},
-							}),
-							i(133795, {		-- Ravenous Fly
-								["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-								["g"] = {
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-										["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
+								}),
+								i(133795, {	-- Ravenous Fly
+									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
+									["g"] = {
+										crit(1, {	-- Ancient Black Barracuda (Criteria)
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["itemID"] = 139669,	-- Ancient Black Barracuda (Item)
+											["races"] = ALLIANCE_ONLY,
+										}),
+										crit(1, {	-- Ancient Black Barracuda (Criteria)
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["itemID"] = 133742,	-- Ancient Black Barracuda (Item)
+											["races"] = HORDE_ONLY,
+										}),
 									},
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-										["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
-									},
-								},
-							}),
-							i(133723, {		-- Stunned, Angry Shark
-								["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-								["g"] = {
-									n(102359, {		-- Landlocked Shark
-										["description"] = "Drops 7-9 Seabottom Squid when killed.",
-										["g"] = {
-											{
-												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-												["itemID"] = 133741,		-- Seabottom Squid (Item)
+								}),
+								i(133723, {	-- Stunned, Angry Shark
+									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
+									["g"] = {
+										n(102359, {		-- Landlocked Shark
+											["description"] = "Drops 7-9 Seabottom Squid when killed.",
+											["g"] = {
+												crit(13, {	-- Seabottom Squid (Criteria)
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["itemID"] = 139668,	-- Seabottom Squid (Item)
+													["races"] = ALLIANCE_ONLY,
+												}),
+												crit(13, {	-- Seabottom Squid (Criteria)
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["itemID"] = 133741,	-- Seabottom Squid (Item)
+													["races"] = HORDE_ONLY,
+												}),
 											},
-											{
-												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-												["itemID"] = 139668,		-- Seabottom Squid (Item)
-											},
-										},
-									})
-								},
+										})
+									},
+								}),
 							}),
-						}),
+						},
 					}),
 					ach(11725, { 	-- Fisherfriend of the Isles
 						faction(2102, {	-- Impus
 							["g"] = {
-								i(146963, {		-- Desecrated Seaweed
+								i(146963, {	-- Desecrated Seaweed
 									i(147312),	-- Demon Noggin
 									i(152554),	-- Desecrated Seaweed Shirt
 								}),
@@ -170,7 +173,6 @@ _.Zones =
 						["sourceQuest"] = 46684,	-- The Legend of the Elderhide
 						["repeatable"] = true,
 						["requireSkill"] = LEATHERWORKING,
-						["cost"] = { { "i", 146692, 20 }, },	-- ~20x Ancient Dreadleather Armor
 					}),
 					q(46686, {	-- The Wisp and the Sea
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -178,7 +180,6 @@ _.Zones =
 						["sourceQuest"] = 46684,	-- The Legend of the Elderhide
 						["repeatable"] = true,
 						["requireSkill"] = LEATHERWORKING,
-						["cost"] = { { "i", 146688, 1 }, },	-- 1x Waterlogged Handmaiden's Gloves
 					}),
 					q(46685, {	-- The Wisp and the Shadow
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -186,7 +187,6 @@ _.Zones =
 						["sourceQuest"] = 46684,	-- The Legend of the Elderhide
 						["repeatable"] = true,
 						["requireSkill"] = LEATHERWORKING,
-						["cost"] = { { "i", 146686, 1 }, },	-- 1x Colorless Shroud of Xavius
 					}),
 					q(46687, {	-- The Wisp and the Nightmare
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -194,7 +194,6 @@ _.Zones =
 						["sourceQuest"] = 46684,	-- The Legend of the Elderhide
 						["repeatable"] = true,
 						["requireSkill"] = LEATHERWORKING,
-						["cost"] = { { "i", 146690, 1 }, },	-- 1x Xavius' Torn Spellsash
 					}),
 					q(46689, {	-- Wisp-Touched Elderhide
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -207,10 +206,6 @@ _.Zones =
 						},
 						["repeatable"] = true,
 						["requireSkill"] = LEATHERWORKING,
-						["cost"] = { 
-							{ "i", 146977, 1 },	-- 1x Legendary Tanner's Kit
-							{ "i", 147438, 1 },	-- 1x Bag of Wisp-Touched Elderhide
-						},
 						["g"] = {
 							i(146712),	-- 	Wisp-Touched Elderhide
 						},
@@ -221,8 +216,7 @@ _.Zones =
 						["coord"] = { 41.2, 59.4, 646 },
 						["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
 						["repeatable"] = true,
-						["requireSkill"] = LEATHERWORKING, 
-						["cost"] = { { "i", 147075, 1 }, },	-- 1x Spirit Net
+						["requireSkill"] = LEATHERWORKING,
 					}),
 					q(46694, {	-- Mail of the Ancients
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -230,7 +224,6 @@ _.Zones =
 						["sourceQuest"] = 46690,	-- The Legend of the Wardenscale
 						["repeatable"] = true,
 						["requireSkill"] = LEATHERWORKING,
-						["cost"] = { { "i", 146700, 20 }, },	-- ~20x Ancient Gravenscale Armor
 					}),
 					q(46691, {	-- The Owl and the Traitor
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -238,7 +231,6 @@ _.Zones =
 						["sourceQuest"] = 46690,	-- The Legend of the Wardenscale
 						["repeatable"] = true,
 						["requireSkill"] = LEATHERWORKING,
-						["cost"] = { { "i", 146694, 1 }, },	-- 1x Chipped Felsong Mantle
 					}),
 					q(46693, {	-- The Owl and the Observer
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -246,7 +238,6 @@ _.Zones =
 						["sourceQuest"] = 46690,	-- The Legend of the Wardenscale
 						["repeatable"] = true,
 						["requireSkill"] = LEATHERWORKING,
-						["cost"] = { { "i", 146698, 1 }, },	-- 1x Torn Bracers of the First War
 					}),
 					q(46692, {	-- The Owl and the Dreadlord
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -254,7 +245,6 @@ _.Zones =
 						["sourceQuest"] = 46690,	-- The Legend of the Wardenscale
 						["repeatable"] = true,
 						["requireSkill"] = LEATHERWORKING,
-						["cost"] = { { "i", 146696, 1 }, },	-- 1x Rusted Legplates of Mephistroth
 					}),
 					q(46695, {	-- Prime Wardenscale
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -267,10 +257,6 @@ _.Zones =
 						},
 						["repeatable"] = true,
 						["requireSkill"] = LEATHERWORKING,
-						["cost"] = { 
-							{ "i", 147209, 1 },	-- 1x Legendary Wardenscale Supplies
-							{ "i", 147439, 1 },	-- 1x Box of Completed Prime Wardenscale
-						},
 						["g"] = {
 							i(146713),	-- Prime Wardenscale
 						},
@@ -300,7 +286,6 @@ _.Zones =
 						["sourceQuest"] = 46678,	-- The Legend of the Threads
 						["repeatable"] = true,
 						["requireSkill"] = TAILORING,
-						["cost"] = { { "i", 146680, 1 }, },	-- 1x Melandrus' Star-Touched Bracers
 					}),
 					q(46679, {	-- The Thread of Shadow
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -316,7 +301,6 @@ _.Zones =
 						["sourceQuest"] = 46678,	-- The Legend of the Threads
 						["repeatable"] = true,
 						["requireSkill"] = TAILORING,
-						["cost"] = { { "i", 146682, 1 }, },	-- 1x Suramari Soul-Wraps
 					}),
 					q(46683, {	-- Starweave and Shadowcloth
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -329,14 +313,6 @@ _.Zones =
 						},
 						["repeatable"] = true,
 						["requireSkill"] = TAILORING,
-						["cost"] = { 
-							{ "i", 146952, 1 },	-- 1x Legendary Tailor's Materials
-							{ "i", 147437, 1 },	-- 1x Satchel of Starweave and Shadowcloth
-						},
-						["g"] = {
-							i(146710),	-- Bolt of Shadowcloth
-							i(146711),	-- Bolt of Starweave
-						},
 					}),
 					i(146666),	-- Celumbra, the Night's Dichotomy (This is linked here to see the Questline as long as you don't have the appearance) - sadidorf
 				}),

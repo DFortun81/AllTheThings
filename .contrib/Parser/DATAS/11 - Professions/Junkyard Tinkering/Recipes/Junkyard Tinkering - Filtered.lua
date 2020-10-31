@@ -1,10 +1,19 @@
 -- use this file only to override data from the _Automation.lua file
 profession(2720, {	-- Junkyard Tinkering
 	filter(200, {	-- Recipes
-		{	
+		{
 			["name"] = "Junkyard Tinkering",
 			["categoryID"] = 1257,	-- Junkyard Tinkering
 			["g"] = {
+				{	-- Equipment
+					["categoryID"] = 1283,
+					["g"] = {
+						-- This recipe gets removed once you craft the item once
+						recipe(300122, {	-- Scrapmaster's Blowtorch
+							["u"] = 15,	-- Training/Unlearnable
+						}),
+					},
+				},
 				{	-- Explosives
 					["categoryID"] = 1256,
 					["g"] = {
@@ -13,22 +22,31 @@ profession(2720, {	-- Junkyard Tinkering
 				{	-- Robots
 					["categoryID"] = 1291,
 					["g"] = {
-						{	-- Sapphronetta Flivvers Action Figure	-- Removed once you craft the Mini.
-							["recipeID"] = 303000,	-- Sapphronetta Flivvers Action Figure
-							["u"] = 15,				-- Profession Training Recipe
-						},
+						-- Removed once you craft the Mini.
+						recipe(303000, {	-- Sapphronetta Flivvers Action Figure
+							["u"] = 15,	-- Profession Training Recipe
+						}),
 					},
 				},
 				{	-- Components & Tools
 					["categoryID"] = 1259,
 					["g"] = {
-						{	-- 500S-Cybergenic Powercore	-- Removed once you do the quest.
-							["recipeID"] = 291598,	-- 500S-Cybergenic Powercore
-							["u"] = 15,				-- Profession Training Recipe
-						},
+						-- Removed once you do the quest.
+						recipe(291598, {	-- 500S-Cybergenic Powercore
+							["u"] = 15,	-- Profession Training Recipe
+						}),
 					}
 				},
-				--[[{	
+				{	-- Other
+					["categoryID"] = 1261,
+					["g"] = {
+						-- This recipe gets removed once you craft the item once
+						recipe(300271, {	-- Perfectly Timed Differential
+							["u"] = 15,	-- Training/Unlearnable
+						}),
+					},
+				},
+				--[[{
 					["name"] = "Rustbolt Upgrades",	-- Cant figure out this categoryID
 					["g"] = {
 						{	-- Rustbolt Gramophone	-- Removed once you do the quest.

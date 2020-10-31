@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
@@ -11,11 +12,11 @@ _.ExpansionFeatures =
 					["g"] = {
 						i(120945, {	-- Primal Spirit
 							["cost"] = {
-								{ "i", 109118, 5 },					-- 5x Blackrock Ore
-								{ "i", 109693, 5 },					-- 5x Draenic Dust
-								{ "i", 109125, 5 },					-- 5x Fireweed
-								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
-								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
+								{ "i", 109118, 5 },	-- 5x Blackrock Ore
+								{ "i", 109693, 5 },	-- 5x Draenic Dust
+								{ "i", 109125, 5 },	-- 5x Fireweed
+								{ "i", 110609, 5 },	-- 5x Raw Beast Hide
+								{ "i", 111557, 5 },	-- 5x Sumptuous Fur
 							},
 						}),
 						i(127725, {	-- Recipe: Mighty Steelforged Essence

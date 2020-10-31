@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	n(-7, {	-- World Bosses
 		["order"] = "01",
@@ -75,7 +76,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["cr"] = 138794,	-- Dunegorger Kraulok
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(5, {	-- Dunegorger Kraulok
-						["achievementID"] = 12587,	-- Unbound Monstrosities 
+						["achievementID"] = 12587,	-- Unbound Monstrosities
 					}),
 					i(174842),	-- Slightly Damp Pile of Fur (Mollie)
 					i(161404),	-- Hood of the Sinuous Devilsaur
@@ -204,6 +205,24 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161371),	-- Galebreaker's Sabatons
 				}),
 			}),
+		--[[		
+				Ally/horde?
+				["races"] = ALLIANCE_ONLY,
+				["races"] = HORDE_ONLY,
+update=>	e(2141, {	-- Nathanos Blightcaller
+				["isWeekly"] = true,
+update=>		["questID"] = xxxxx,	-- Nathanos Blightcaller (WQ)
+				["isRaid"] = true,
+update=>		["coord"] = { bottom left yo!, 23 },
+				["maps"] = {
+					23,	-- Eastern Plaguelands
+				},
+				["cr"] = 172497,	-- Nathanos Blightcaller
+update=>		["g"] = bubbleDown({["modID"] = 3}, {
+
+				}),
+			}),
+		--]]
 			e(2139, {	-- T'zane <The Soul Terror>
 				["isWeekly"] = true,
 				["questID"] = 52181,	-- Smoke and Shadow (WQ)
@@ -258,7 +277,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["coord"] = { 84.2, 35.9, 1355 },
 				["maps"] = {	-- all Nazjatar maps
 					1355,	-- Nazjatar
-					1499,	-- 
+					1499,	--
 					1500,	-- Chitterspine Grotto
 					1524,	-- Deepsea Slave Pen
 					1528,	-- The Eternal Palace
@@ -333,7 +352,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["coord"] = { 42.8, 77.9, 1355 },
 				["maps"] = {	-- all Nazjatar maps
 					1355,	-- Nazjatar
-					1499,	-- 
+					1499,	--
 					1500,	-- Chitterspine Grotto
 					1524,	-- Deepsea Slave Pen
 					1528,	-- The Eternal Palace

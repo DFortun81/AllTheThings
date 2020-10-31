@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -12,16 +13,16 @@ _.Zones =
 					["g"] = {
 						i(27931, {	-- Splintermark
 							["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
-						}),		
+						}),
 						i(27942, {	-- Incendic Rod
 							["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
-						}),		
+						}),
 						i(27921, {	-- Mark of Conquest
 							["cost"] = { { "i", 24579, 30 }, },	-- 30x Mark of Honor Hold
-						}),		
+						}),
 						i(27922, {	-- Mark of Defiance
 							["cost"] = { { "i", 24579, 30 }, },	-- 30x Mark of Honor Hold
-						}),		
+						}),
 						i(27927, {	-- Mark of Vindication
 							["cost"] = { { "i", 24579, 30 }, },	-- 30x Mark of Honor Hold
 						}),
@@ -75,19 +76,19 @@ _.Zones =
 					["g"] = {
 						i(27939, {	-- Incendic Rod
 							["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
-						}),		
+						}),
 						i(27920, {	-- Mark of Conquest
 							["cost"] = { { "i", 24581, 30 }, },	-- 30x Mark of Thrallmar
-						}),		
+						}),
 						i(27924, {	-- Mark of Defiance
 							["cost"] = { { "i", 24581, 30 }, },	-- 30x Mark of Thrallmar
-						}),		
+						}),
 						i(27926, {	-- Mark of Vindication
 							["cost"] = { { "i", 24581, 30 }, },	-- 30x Mark of Thrallmar
 						}),
 						i(27930, {	-- Splintermark
 							["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
-						}),	
+						}),
 					},
 				}),
 				n(18911, {	-- Juno Dufrain <Fishing Trainer>

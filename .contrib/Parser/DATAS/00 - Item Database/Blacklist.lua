@@ -6,6 +6,14 @@ local i = function(itemID)
 end
 
 -- Consumables
+	-- BC
+		i(23379);	-- Cinder Bracers
+		i(23529);	-- Adamantite Sharpening Stone
+		i(23764);	-- Adamantite Scope
+		i(23765);	-- Khorium Scope
+		i(23766);	-- Stabilized Eternium Scope
+		i(23820);	-- Critter Enlarger
+		i(28421);	-- Adamantite Weightstone
 i(33930);	-- Amani Charm of the Bloodletter
 i(33931);	-- Amani Charm of Mighty Mojo
 i(33932);	-- Amani Charm of the Witch Doctor
@@ -55,6 +63,7 @@ i(33448);	-- Runic Mana Potion
 i(141016);	-- Scroll of Town Portal: Faronaar
 i(141015);	-- Scroll of Town Portal: Kal'delar
 i(141013);	-- Scroll of Town Portal: Shala'nir
+i(119449);	-- Shadowberry
 i(141655);	-- Shimmering Ancient Mana Cluster
 i(169856);	-- Spark-1351
 i(1187);	-- Spiked Collar
@@ -69,18 +78,54 @@ i(13514);	-- Wail of the Banshee
 i(85266);	-- Winter Blossom Tree
 i(128851);	-- Roasted juicycrunch carrots
 
+-- M+ PTR Testing
+i(159681);	-- Set Keystone Map: Darkheart Thicket
+i(159683);	-- Set Keystone Map: Black Rook Hold
+i(159684);	-- Set Keystone Map: Cathedral of Eternal Night
+i(159685);	-- Set Keystone Map: Court of Stars
+i(159686);	-- Set Keystone Map: Eye of Azshara
+i(159687);	-- Set Keystone Map: Halls of Valor
+i(159688);	-- Set Keystone Map: Maw of Souls
+i(159689);	-- Set Keystone Map: Lower Karazhan
+i(159690);	-- Set Keystone Map: Upper Karazhan
+i(159691);	-- Set Keystone Map: Seat of the Triumvirate
+i(159692);	-- Set Keystone Map: The Arcway
+i(159693);	-- Set Keystone Map: Vault of the Wardens
+i(159694);	-- Set Keystone Level: 15
+i(159695);	-- Set Keystone Level: 16
+i(159696);	-- Set Keystone Level: 17
+i(159697);	-- Set Keystone Level: 18
+i(159698);	-- Set Keystone Level: 19
+i(159699);	-- Set Keystone Level: 20
+i(159700);	-- Set Keystone Level: 21
+i(159701);	-- Set Keystone Level: 22
+i(159702);	-- Set Keystone Level: 23
+i(159703);	-- Set Keystone Level: 24
+i(159704);	-- Set Keystone Level: 25
+i(159705);	-- Set Keystone Level: 26
+i(159706);	-- Set Keystone Level: 27
+i(159707);	-- Set Keystone Level: 28
+i(159708);	-- Set Keystone Level: 29
+i(159709);	-- Set Keystone Level: 30
 
 
 -- Quest Items
 i(164778);	-- Abyssal Scepter
 i(162579);	-- Abyssal Scepter
+i(146692);	-- Ancient Dreadleather Armor
+i(146700);	-- Ancient Gravenscale Armor
 i(169251);	-- Ancient Insect
 i(168234);	-- Ancient Runestone
+i(147438);	-- Bag of Wisp-Touched Elderhide
+i(146308);	-- Barrel of Storm Brew
 i(169224);	-- Big Red Button
+i(147439);	-- Box of Completed Prime Wardenscale
 i(169248);	-- Broken Sandals
 i(169391);	-- Bubble-eyed Rolly
 i(169292);	-- Charged Scale of the Blue Aspect
+i(146694);	-- Chipped Felsong Mantle
 i(163212);	-- Cleansing Thurible
+i(146686);	-- Colorless Shroud of Xavius
 i(169235);	-- Confusing Spring Box
 i(12843);	-- Corruptor's Scourgestone
 i(169250);	-- Crude Eating Utensil
@@ -88,6 +133,8 @@ i(9265);	-- Cuergo's Hidden Treasure
 i(169232);	-- Dud Blast Canister
 i(164731);	-- Enchanted Shroud
 i(169778);	-- Enchanting Crystal
+i(132560);	-- Essence of the Whirlwind
+i(132745);	-- Essence of the Whirlwind
 i(169229);	-- Exhaust Aromatics
 i(169164);	-- Father's Bones
 i(169166);	-- Father's Clothes
@@ -100,7 +147,12 @@ i(169233);	-- Infinite Loop Spring
 i(169227);	-- Irradiated Bolts
 i(169257);	-- Jagged Rune
 i(169236);	-- Latch-and-Lock Trigger
+i(146952);	-- Legendary Tailor's Materials
+i(146977);	-- Legendary Tanner's Kit
+i(147209);	-- Legendary Wardenscale Supplies
 i(168280);	-- Lost Scale of the Scarlet Broodmother
+i(147582);	-- Mark of the Sentinax
+i(146680);	-- Melandrus' Star-Touched Bracers
 i(169238);	-- Modified Radio Receiver
 i(169222);	-- Murloc Treasure
 i(168223);	-- Old Parchment
@@ -114,14 +166,34 @@ i(169230);	-- Reflective Plating
 i(167875);	-- Reforged Dreamglow Dragonscale
 i(169252);	-- Resonant Pearl
 i(18149);	-- Rune of Recall
+i(146696);	-- Rusted Legplates of Mephistroth
+i(147437);	-- Satchel of Starweave and Shadowcloth
 i(157539);	-- Scroll of Storm Control
 i(17224);	-- Scrying Scope
 i(17364);	-- Scrying Scope
+i(146906);	-- Sentinax Beacon of Carnage
+i(146912);	-- Sentinax Beacon of Greater Carnage
+i(146903);	-- Sentinax Beacon of Domination
+i(146908);	-- Sentinax Beacon of Engineering
+i(146922);	-- Sentinax Beacon of Fel Growth
+i(146914);	-- Sentinax Beacon of Greater Engineering
+i(146910);	-- Sentinax Beacon of Greater Domination
+i(146915);	-- Sentinax Beacon of Greater Torment
+i(146913);	-- Sentinax Beacon of Greater Warbeasts
+i(146923);	-- Sentinax Beacon of Petrification
+i(146909);	-- Sentinax Beacon of Torment
+i(146907);	-- Sentinax Beacon of Warbeasts
+i(147355);	-- Sentinax Beacon of the Bloodstrike
+i(146905);	-- Sentinax Beacon of the Firestorm
+i(146911);	-- Sentinax Beacon of the Greater Firestorm
 i(169249);	-- Shark Tooth Necklace
 i(169253);	-- Shell Horn
 i(168817);	-- Siphoning Crystal
+i(147075);	-- Spirit Net
 i(169246);	-- Strangely Seasoned Meat
+i(146682);	-- Suramari Soul-Wraps
 i(169247);	-- Throwing Rocks
+i(146698);	-- Torn Bracers of the First War
 i(169226);	-- Torn Sheet Music
 i(169255);	-- Tuft of Red Fur
 i(12812);	-- Unfired Plate Gauntlets
@@ -129,11 +201,34 @@ i(12806);	-- Unforged Rune Covered Breastplate
 i(169239);	-- Unknowable Cube
 i(169225);	-- Unstoppable Countdown Clock
 i(169867);	-- Visual Holo Sphere
+i(146688);	-- Waterlogged Handmaiden's Gloves
 i(146702);	-- White Lightningsteel
 i(156926);	-- Witchrend
 i(164761);	-- Xal'atath, Blade of the Black Empire
+i(146690);	-- Xavius' Torn Spellsash
 i(17384);	-- Zinfizzlex's Portable Shredder Unit
 i(17410);	-- Zinfizzlex's Portable Shredder Unit
+i(135463);	-- Invincible's Reins
+i(136351);	-- Handful of Obliterum Ash
+i(136352);	-- Archmage Karlain's Imbued Silkweave Robe
+i(139037);	-- Thunderfury, Blessed Blade of the Windseeker
+i(139400);	-- [Ancient Magic and How to Wield It Without Destroying the World]
+i(139401);	-- [The Fate of Aegwynn]
+i(139402);	-- [The Fel Tome of Vorgalus Dor]
+i(139671);	-- [Deathglare Iris]
+i(151248);	-- Fragment of the Guardian's Seal (normal)
+i(151249);	-- Fragment of the Guardian's Seal (hc)
+i(151250);	-- Fragment of the Guardian's Seal (mythic)
+i(152902);	-- Rune of Passage (normal)
+i(152903);	-- Rune of Passage (heroic)
+i(152904);	-- Rune of Passage (mythic)
+i(152908);	-- Sigil of the Dark Titan (normal)
+i(152909);	-- Sigil of the Dark Titan (heroic)
+i(152910);	-- Sigil of the Dark Titan (mythic)
+i(135511);	-- Thick Slab of Bacon. You get it for a split second after completing a bacon wq
+i(137212);	-- Cut Skystone. You get it for a split second after completing the jewelcrafter daily
+i(137214);	-- Cut Deep Amber. You get it for a split second after completing the jewelcrafter daily
+i(137215);	-- Cut Azsunite.  You get it for a split second after completing the jewelcrafter daily
 
 
 
@@ -161,10 +256,12 @@ i(173784);	-- Hoppy Mead
 i(173782);	-- Karaweizen
 i(151757);	-- Limited Run Blight Boar Poster
 i(173781);	-- Lost Watermelon
+i(80914);	-- Mourning Glory
 i(173771);	-- Old Apple
 i(173778);	-- Orange Orange
 i(72201);	-- Plump Intestines
 i(9316);	-- Prismatic Punch Card
+i(139590);	-- Scroll of Teleport: Ravenholdt
 i(6357);	-- Sealed Crate
 i(88496);	-- Sealed Crate
 i(173776);	-- Stale Loaf
@@ -176,21 +273,25 @@ i(9279);	-- White Punch Card
 i(160376);	-- Wilderbew Special
 i(173773);	-- Yeasty Hunk
 
-i(4407);	-- accurate scope
-i(15869);	-- silver skeletoon key
-i(15870);	-- golden skeleton key
-i(15871);	-- truesilver skeleton key
-i(15872);	-- arcanite skeleton key
-i(18262);	-- elemental sharpning stone
-i(18283);	-- biznicks 247x128 accu scope-- Grey
-i(158931);	-- shiny object
-i(158932);	-- lucky charm
-i(159621);	-- personal anchor
-i(162126);	-- river clam meat-- Suramar Mana Gems
-i(139890);	-- ancient mana gem
-i(140236);	-- a mrglmrl mlrglr
-i(140239);	-- excavated highborne artifact
-i(140240);	-- enchanted moonweel waters
+i(4407);	-- Accurate Scope
+i(15869);	-- Silver Skeleton Key
+i(15870);	-- Golden Skeleton Key
+i(15871);	-- Truesilver Skeleton Key
+i(15872);	-- Arcanite Skeleton Key
+i(18262);	-- Elemental Sharpening Stone
+i(18283);	-- Biznicks 247x128 Accurascope
+
+-- Grey
+i(158931);	-- Shiny Object
+i(158932);	-- Lucky Charm
+i(159621);	-- Personal Anchor
+i(162126);	-- River Clam Meat
+
+-- Suramar Mana Gems
+i(139890);	-- Ancient Mana Gem
+i(140236);	-- A Mrglrmrl Mlrglr
+i(140239);	-- Excavated Highborne Artifact
+i(140240);	-- Enchanted Moonwell Waters
 
 
 -- "Weekly Holidays"
@@ -204,3 +305,6 @@ i(150747);	-- Brilliant Vial
 i(150748);	-- Constellas Corruption
 i(150749);	-- Moonglow Water
 i(150750);	-- Moonkissed Antidote
+
+-- Miscellaneous
+i(89427);	-- Ancient Mogu Treasure

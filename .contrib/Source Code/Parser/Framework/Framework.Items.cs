@@ -64,13 +64,13 @@ namespace ATT
                 get
                 {
                     var keys = new List<int>();
-                    foreach(var itemID in ITEMS.Keys)
+                    foreach (var itemID in ITEMS.Keys)
                     {
                         if (ITEMS_WITH_REFERENCES.ContainsKey(itemID)) continue;
                         keys.Add(itemID);
                     }
                     keys.Sort();
-                    foreach(var itemID in keys)
+                    foreach (var itemID in keys)
                     {
                         yield return ITEMS[itemID];
                     }
@@ -170,12 +170,12 @@ namespace ATT
                 {
                     var builder = ATT.Export.ExportRawLua(group.Value);
                     builder.AppendLine().AppendLine();
-                    foreach(var item in group.Value)
+                    foreach (var item in group.Value)
                     {
                         if (item.TryGetValue("itemID", out object id))
                         {
                             builder.Append("i(").Append(id).Append(");");
-                            if(item.TryGetValue("name", out object name))
+                            if (item.TryGetValue("name", out object name))
                             {
                                 builder.Append("\t\t--[[").Append(name).Append("]]");
                             }
@@ -187,85 +187,6 @@ namespace ATT
             }
             #endregion
             #region Merge (for acquiring fields for the Item Database)
-            /// <summary>
-            /// Merge the array data!
-            /// </summary>
-            /// <param name="item">The item!</param>
-            /// <param name="field">The field!</param>
-            /// <param name="value">The value.</param>
-            private static void MergeIntegerArrayData(Dictionary<string, object> item, string field, object value)
-            {
-                // Convert the data to a list of generic objects.
-                var newList = value as List<object>;
-                if (newList == null)
-                {
-                    if (value is Dictionary<object, object> dict) newList = dict.Values.ToList();
-                    else return;
-                }
-
-                // Attempt to get the old list data.
-                List<object> oldList;
-                if (item.TryGetValue(field, out object oldData))
-                {
-                    // Convert the old data to a list of objects.
-                    oldList = oldData as List<object>;
-                }
-                else
-                {
-                    // Create a new list.
-                    item[field] = oldList = new List<object>();
-                }
-
-                // Merge the new list of data into the old data and ensure there are no duplicate values.
-                foreach (var entry in newList)
-                {
-                    var index = Convert.ToInt32(entry);
-                    if (oldList.Contains(index)) continue;
-                    oldList.Add(index);
-                }
-
-                // Sort the old list to ensure that the order is consistent.
-                oldList.Sort();
-            }
-
-            /// <summary>
-            /// Merge the array data!
-            /// </summary>
-            /// <param name="item">The item!</param>
-            /// <param name="field">The field!</param>
-            /// <param name="value">The value.</param>
-            private static void MergeStringArrayData(Dictionary<string, object> item, string field, object value)
-            {
-                // Convert the data to a list of generic objects.
-                var newList = value as List<object>;
-                if (newList == null)
-                {
-                    if (value is Dictionary<object, object> dict) newList = dict.Values.ToList();
-                    else return;
-                }
-
-                // Attempt to get the old list data.
-                List<object> oldList;
-                if (item.TryGetValue(field, out object oldData))
-                {
-                    // Convert the old data to a list of objects.
-                    oldList = oldData as List<object>;
-                }
-                else
-                {
-                    // Create a new list.
-                    item[field] = oldList = new List<object>();
-                }
-
-                // Merge the new list of data into the old data and ensure there are no duplicate values.
-                foreach (var entry in newList)
-                {
-                    var index = Convert.ToString(entry);
-                    if (oldList.Contains(index)) continue;
-                    oldList.Add(index);
-                }
-            }
-
             /// <summary>
             /// Merge the field into the item reference if it is whitelisted.
             /// Only a couple of fields will successfully merge into an item.
@@ -321,6 +242,7 @@ namespace ATT
                     case "maxReputation":
                     case "provider":
                     case "providers":
+                    case "lvl":
                         {
                             return;
                         }
@@ -361,7 +283,6 @@ namespace ATT
                     // Integer Data Type Fields
                     case "altItemID":
                     case "altAchID":
-                    case "altQuestID":
                     case "altSpeciesID":
                     case "buildingID":
                     case "questID":
@@ -382,7 +303,7 @@ namespace ATT
                     case "b":
                     case "r":
                     case "ilvl":
-                    case "lvl":
+                    //case "lvl":
                     case "q":
                         {
                             item[field] = Convert.ToInt32(value);
@@ -396,8 +317,9 @@ namespace ATT
                     case "sourceQuests":
                     case "altAchievements":
                     case "altQuests":
+                    case "reqlvl":
                         {
-                            MergeIntegerArrayData(item, field, value);
+                            Objects.MergeIntegerArrayData(item, field, value);
                             break;
                         }
 
@@ -429,7 +351,7 @@ namespace ATT
                     // List of String Data Type Fields (stored as List<string> for usability reasons)
                     case "timeline":
                         {
-                            MergeStringArrayData(item, field, value);
+                            Objects.MergeStringArrayData(item, field, value);
                             break;
                         }
 
@@ -448,7 +370,7 @@ namespace ATT
                                     else return;
                                 }
                                 newListOfLists = new List<List<object>>();
-                                foreach(var o in newList)
+                                foreach (var o in newList)
                                 {
                                     var list = o as List<object>;
                                     if (list == null)
@@ -471,6 +393,10 @@ namespace ATT
                     // Report all other fields.
                     default:
                         {
+                            // ignore fields starting with _ since those will be used for metadata in some scenarios
+                            if (field.StartsWith("_"))
+                                break;
+
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;
                             WARNED_FIELDS[field] = true;
@@ -590,23 +516,23 @@ namespace ATT
             /// </summary>
             /// <param name="data">The data to merge into the item database.</param>
             /// <param name="itemID">The item ID or -1 if the item is not valid.</param>
-            public static void Merge(Dictionary<object, object> data, out int itemID)
-            {
-                // Attempt to extra the itemID from the data table.
-                if (data.TryGetValue("itemID", out object itemIDRef))
-                {
-                    Merge(itemID = Convert.ToInt32(itemIDRef), data);
-                }
-                else if (data.TryGetValue("itemId", out itemIDRef))
-                {
-                    Merge(itemID = Convert.ToInt32(itemIDRef), data);
-                }
-                else if (data.TryGetValue("toyID", out itemIDRef))
-                {
-                    Merge(itemID = Convert.ToInt32(itemIDRef), data);
-                }
-                else itemID = -1;
-            }
+            //public static void Merge(Dictionary<object, object> data, out int itemID)
+            //{
+            //    // Attempt to extra the itemID from the data table.
+            //    if (data.TryGetValue("itemID", out object itemIDRef))
+            //    {
+            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //    }
+            //    else if (data.TryGetValue("itemId", out itemIDRef))
+            //    {
+            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //    }
+            //    else if (data.TryGetValue("toyID", out itemIDRef))
+            //    {
+            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //    }
+            //    else itemID = -1;
+            //}
 
             /// <summary>
             /// Merge the data into the item database.
@@ -614,23 +540,23 @@ namespace ATT
             /// </summary>
             /// <param name="data">The data to merge into the item database.</param>
             /// <param name="itemID">The item ID or -1 if the item is not valid.</param>
-            public static void Merge(Dictionary<string, object> data, out int itemID)
-            {
-                // Attempt to extra the itemID from the data table.
-                if (data.TryGetValue("itemID", out object itemIDRef))
-                {
-                    Merge(itemID = Convert.ToInt32(itemIDRef), data);
-                }
-                else if (data.TryGetValue("itemId", out itemIDRef))
-                {
-                    Merge(itemID = Convert.ToInt32(itemIDRef), data);
-                }
-                else if (data.TryGetValue("toyID", out itemIDRef))
-                {
-                    Merge(itemID = Convert.ToInt32(itemIDRef), data);
-                }
-                else itemID = -1;
-            }
+            //public static void Merge(Dictionary<string, object> data, out int itemID)
+            //{
+            //    // Attempt to extra the itemID from the data table.
+            //    if (data.TryGetValue("itemID", out object itemIDRef))
+            //    {
+            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //    }
+            //    else if (data.TryGetValue("itemId", out itemIDRef))
+            //    {
+            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //    }
+            //    else if (data.TryGetValue("toyID", out itemIDRef))
+            //    {
+            //        Merge(itemID = Convert.ToInt32(itemIDRef), data);
+            //    }
+            //    else itemID = -1;
+            //}
             #endregion
             #region Merge Into (for merging item data back into an object)
             /// <summary>
@@ -681,6 +607,7 @@ namespace ATT
                     case "isMonthly":
                     case "isYearly":
                     case "isWorldQuest":
+                    case "reqlvl":
                         {
                             data[field] = value;
                             break;
@@ -785,10 +712,10 @@ namespace ATT
                 // Merge the item with the data dictionary.
                 MergeInto(itemID, item, data);
             }
-            
+
             /// <summary>
             /// Merge information about the item matching the data's itemID into the dictionary.
-            /// If the source dictionary does not contain an itemID, this method does nothing.
+            /// If the source dictionary does not contain an itemID or toyID, this method does nothing.
             /// </summary>
             /// <param name="data">The data dictionary to receive the merged data.</param>
             public static void MergeInto(Dictionary<string, object> data)

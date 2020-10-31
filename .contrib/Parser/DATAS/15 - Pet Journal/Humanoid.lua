@@ -1,6 +1,7 @@
 ---------------------------------------------
 --   P E T   J O U R N A L   M O D U L E   --
 ---------------------------------------------
+
 _.PetJournal =
 {
 	pa(238, { 	-- Humanoid
@@ -85,14 +86,12 @@ _.PetJournal =
 		p(3062),			-- Lost Featherling
 		un(REMOVED_FROM_GAME, p(111)),		-- Lurky
 		un(REMOVED_FROM_GAME, p(189)),		-- Mini Tyrael
-		p(296, {	-- Moonkin Hatchling (Alliance)
-			["u"] = 35,
+		un(BLIZZARD_BALANCE, p(296, {	-- Moonkin Hatchling (Alliance)
 			["races"] = ALLIANCE_ONLY,
-		}),
-		p(298, {	-- Moonking Hatchling (Horde)
-			["u"] = 35,
+		})),
+		un(BLIZZARD_BALANCE, p(298, {	-- Moonkin Hatchling (Horde)
 			["races"] = HORDE_ONLY,
-		}),
+		})),
 		p(2681),			-- Murgle
 		un(REMOVED_FROM_GAME, p(329)),		-- Murkablo
 		un(REMOVED_FROM_GAME, p(1364)),		-- Murkalot
@@ -102,7 +101,7 @@ _.PetJournal =
 		un(REMOVED_FROM_GAME, p(107)),		-- Murky
 		p(2682),			-- Necrofin Tadpole
 		p(1495),			-- Ore Eater
-		un(35, p(248)),		-- Pandaren Monk
+		un(BLIZZARD_BALANCE, p(248)),		-- Pandaren Monk
 		p(122),				-- Peddlefeet
 		p(513),				-- Qiraji Guardling
 		p(2417),			-- Ranishu Runt
@@ -125,7 +124,7 @@ _.PetJournal =
 		p(2022),			-- Tylarr Gronnden
 		p(2136), 			-- Uuna
 		p(2833),			-- Void-Scarred Anubisath
-		un(35, p(2184)),	-- Whomper
+		un(BLIZZARD_BALANCE, p(2184)),	-- Whomper
 		p(120),				-- Winter's Little Helper
 		p(3079),			-- Winterleaf Spriggan
 		p(1634),			-- Wretched Servant

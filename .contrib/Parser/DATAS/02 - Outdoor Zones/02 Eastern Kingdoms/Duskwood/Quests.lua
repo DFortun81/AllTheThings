@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -25,7 +26,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26796,	-- The Daughter Who Lived
 					["g"] = {
-						i(60937),	-- 
+						i(60937),	--
 						i(156954),	-- Refurbished Archeus
 						i(156955),	-- Reconditioned Archeus
 					},
@@ -93,7 +94,7 @@ _.Zones =
 					["provider"] = { "n", 110684 },	-- Natalie Seline
 					["lvl"] = 110,
 					["coord"] = { 24.2, 37.8, 47 },
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["sourceQuest"] = 43392,	-- Into the Void
 				}),
 				q(26685, {	-- Classy Glass
@@ -171,14 +172,14 @@ _.Zones =
 					["provider"] = { "n", 100323 },	-- Revil Kost
 					["lvl"] = 98,
 					["coord"] = { 77.4, 36.1, 47 },
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["sourceQuest"] = 40495,	-- Ulthalesh, the Deadwind Harvester
 				}),
 				q(40931, {	-- Following the Curse
 					["provider"] = { "n", 100323 },	-- Revil Kost
 					["lvl"] = 98,
 					["coord"] = { 77.4, 36.2, 47 },
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
 					["sourceQuest"] = 40930,	-- Apocalypse
 				}),
 				q(26661, {	-- Gather Rot Blossoms
@@ -215,7 +216,7 @@ _.Zones =
 					["provider"] = { "n", 111041 },	-- Micah Belford
 					["lvl"] = 110,
 					["coord"] = { 24.4, 37.8, 47 },
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["sourceQuest"] = 43391,	-- Secrets of the Void
 				}),
 				q(26676, {	-- Juice Delivery
@@ -349,7 +350,7 @@ _.Zones =
 					["provider"] = { "n", 110684 },	-- Natalie Seline
 					["lvl"] = 110,
 					["coord"] = { 24.2, 37.8, 47 },
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["sourceQuest"] = 43392,	-- Into the Void
 				}),
 				q(1383,  {	-- Nothing But The Truth
@@ -386,7 +387,7 @@ _.Zones =
 					["provider"] = { "n", 111041 },	-- Micah Belford
 					["lvl"] = 110,
 					["coord"] = { 24.2, 37.8, 47 },
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					--["sourceQuest"] = ,	-- TODO:: determine sourceQuest
 				}),
 				q(26777, {	-- Soothing Spirits

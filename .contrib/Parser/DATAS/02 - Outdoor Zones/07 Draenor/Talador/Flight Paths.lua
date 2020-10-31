@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
@@ -20,7 +21,7 @@ _.Zones =
 				}),
 				fp(1454, {	-- Exarch's Refuge, Talador
 					["coord"] = { 54.6, 67.8, 535 },
-                                                                           ["races"] = HORDE_ONLY,
+					["races"] = HORDE_ONLY,
 				}),
 				fp(1447, {	-- Fort Wrynn (Alliance), Talador
 					["coord"] = { 69.8, 21.4, 535 },

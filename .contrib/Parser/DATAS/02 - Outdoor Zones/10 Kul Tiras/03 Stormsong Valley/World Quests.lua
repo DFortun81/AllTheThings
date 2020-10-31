@@ -1,18 +1,15 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(-34,  {	-- World Quests
 				n(QUESTS, {
-	--[[	raw quest list to check against
+					--[[	raw quest list to check against
 					q(53318, {	-- Ductile Platinum
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(51996, {	-- Earthcaller's Abode
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
@@ -51,7 +48,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-]]--				
+					]]--
 					q(52180, {	-- A Brennadam Shame
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -95,11 +92,6 @@ _.Zones =
 						["lvl"] = 120,
 						["coord"] = { 36.61, 33.61, 942 },
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(3, {	-- Battle on Zandalar and Kul Tiras (Automated Chaos)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(52986, {	-- A Wicked Vessel
 						["isWorldQuest"] = true,
@@ -191,11 +183,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(3, {	-- Master Calligrapher (Triangle)
-								["achievementID"] = 13512,	-- Master Calligrapher
-							}),
-						},
 					}),
 					q(53857, {	-- Cap'n Gorok (Faction Assault WQ)
 						["lvl"] = 110,
@@ -210,11 +197,6 @@ _.Zones =
 						["provider"] = { "n", 141046 },	-- Leana Darkwind
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(8, {	-- Battle on Zandalar and Kul Tiras (Captured Evil)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(53106, {	-- Censership
 						["lvl"] = 120,
@@ -267,6 +249,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(51996, {	-- Earthcaller's Abode
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+					}),
 					q(53027, {	-- Edge of Glory
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
@@ -315,17 +301,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13429),	-- Azerfighter
-						},
 					}),
 					q(53769, {	-- Furious Fracas (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13429),	-- Azerfighter
-						},
 					}),
 					q(54414, {	-- Gale's Unrest (Faction Assault WQ)
 						["lvl"] = 110,
@@ -370,14 +350,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(6, {	-- Horde of Heroes
-								["achievementID"] = 13284,	-- Frontline Warrior
-							}),
-							crit(6, {	-- Horde of Heroes
-								["achievementID"] = 13388,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(52988, {	-- House Cleaning
 						["lvl"] = 120,
@@ -397,16 +369,10 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							ach(13042),	-- About To Break
-						},
 					}),
 					q(53344, {	-- Iconoclasm
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							ach(13042),	-- About To Break
-						},
 					}),
 					q(52115, {	-- In the Shadow of the Kraken
 						["isWorldQuest"] = true,
@@ -418,9 +384,9 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52321, {	-- Kickers
-						["npcID"] = 141029,	-- Kickers
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
+						["crs"] = { 141029 },	-- Kickers
 					}),
 					q(54328, {	-- Knight-Captain Joesiph (Faction Assault WQ)
 						["lvl"] = 110,
@@ -647,11 +613,6 @@ _.Zones =
 						["provider"] = { "n", 141002 },	-- Ellie Vern
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["g"] = {
-							crit(7, {	-- Battle on Zandalar and Kul Tiras (Sea Creatures Are Weird)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(52271, {	-- Sea Salt Flavored (A)
 						["lvl"] = 120,
@@ -746,14 +707,6 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							crit(2, {	-- Storm's Rage
-								["achievementID"] = 13283,	-- Frontline Warrior
-							}),
-							crit(2, {	-- Storm's Rage
-								["achievementID"] = 13387,	-- Frontline Veteran
-							}),
-						},
 					}),
 					q(52380, {	-- Supplies Needed: Frenzied Fangtooth
 						["isWorldQuest"] = true,
@@ -797,11 +750,6 @@ _.Zones =
 						["coord"] = { 42.41, 76.61, 942 },
 						["isWorldQuest"] = true,
 						["filter"] = 101,	-- Pet Battles
-						["g"] = {
-							crit(2, {	-- Battle on Zandalar and Kul Tiras (This Little Piggy Has Sharp Tusks)
-								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-							}),
-						},
 					}),
 					q(54403, {	-- Tidesage Clarissa (Faction Assault WQ)
 						["lvl"] = 110,
@@ -1017,7 +965,7 @@ _.Zones =
 						-- Include the cloak.
 						{"select", "itemID", 166668},	-- Battalion Veteran's Greatcloak
 						{"finalize"},	-- Push the items to the finalized list.
-						
+
 						{"select", "mapID", 942},	-- Stormsong Valley
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "npcID", -34 },	-- Select the World Quests Header.
@@ -1026,7 +974,7 @@ _.Zones =
 						{"pop"},	-- Discard the Item Set Header and acquire the children.
 						{"is", "itemID" },	-- Select the Items.
 						{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.
-						
+
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},

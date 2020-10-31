@@ -901,7 +901,7 @@ _.Zones =
 					["coord"] = { 56.6, 66.6, 100 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 16819 },	-- Force Commander Danath Trollbane
-					["sourceQuests"] = 10395,	-- The Dark Missive
+					["sourceQuests"] = { 10395 },	-- The Dark Missive
 					["g"] = {
 						i(28041),	-- Bladefist's Breadth
 						i(28042),	-- Regal Protectorate
@@ -1190,7 +1190,7 @@ _.Zones =
 					["coord"] = { 56.6, 66.5, 100 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 16839 },	-- Warp-Scryer Kryv
-					["sourceQuests"] = 10395,	-- The Dark Missive
+					["sourceQuests"] = { 10395 },	-- The Dark Missive
 				}),
 				q(10141, {	-- The Legion Reborn
 					["coord"] = { 56.6, 66.6, 100 },

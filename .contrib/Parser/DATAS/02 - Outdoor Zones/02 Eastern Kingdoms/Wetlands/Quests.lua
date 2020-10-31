@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -49,7 +50,7 @@ _.Zones =
 						i(59077),	-- Stoutfist Breastplate
 						i(59076),	-- Wand of Infectious Dementia
 						i(131441),	-- Stoutfist Chainmail
-						i(157005),	-- Stout Fist 
+						i(157005),	-- Stout Fist
 					},
 				}),
 				q(275,   {	-- Blisters on The Land
@@ -285,7 +286,7 @@ _.Zones =
 						i(131444),	-- Boran's Pauldrons
 					},
 				}),
-				q(286,   {	-- Return the Statuette (U) 
+				q(286,   {	-- Return the Statuette (U)
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

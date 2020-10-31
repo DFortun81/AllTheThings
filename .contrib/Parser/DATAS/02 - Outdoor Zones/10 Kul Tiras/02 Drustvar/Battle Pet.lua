@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -226,7 +226,7 @@ _.Zones =
 					["crs"] = { 143045 },	-- Coastal Scuttler
 				}),
 				p(2383, {	-- Giant Woodworm
-					["crs"] = { 143042 },	-- Giant Woodworm	
+					["crs"] = { 143042 },	-- Giant Woodworm
 				}),
 				p(379, {	-- Squirrel
 					["crs"] = { 61081 },	-- Squirrel

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -21,12 +22,8 @@ _.Zones =
 						i(95491, {	-- Tattered Historical Parchments
 							["description"] = "These parchments are inside chests in the solo scenario, which is accessible after getting a Key to the Palace of Lei Shen.\n\nMight only be obtainable by Rogues through their class hall...",
 							["g"] = {
-								i(95490, {	-- Greater Kirin Tor Offensive Insignia
-									["factionID"] = 1387,	-- Kirin Tor Offensive
-								}),
-								i(95489, {	-- Kirin Tor Offensive Insignia
-									["factionID"] = 1387,	-- Kirin Tor Offensive
-								}),
+								i(95490),	-- Greater Kirin Tor Offensive Insignia
+								i(95489),	-- Kirin Tor Offensive Insignia
 							},
 						}),
 						i(95567),	-- Kirin Tor Beacon (TOY!)
@@ -1228,12 +1225,8 @@ _.Zones =
 						i(95491, {	-- Tattered Historical Parchments
 							["description"] = "These parchments are inside chests in the solo scenario, which is accessible after getting a Key to the Palace of Lei Shen.\n\nMight only be obtainable by Rogues through their class hall...",
 							["g"] = {
-								i(95488, {	-- Greater Sunreaver Onslaught Insignia
-									["factionID"] = 1388,	-- Sunreaver Onslaught
-								}),
-								i(95487, {	-- Sunreaver Onslaught Insignia
-									["factionID"] = 1388,	-- Sunreaver Onslaught
-								}),
+								i(95488),	-- Greater Sunreaver Onslaught Insignia
+								i(95487),	-- Sunreaver Onslaught Insignia
 							},
 						}),
 						i(95518),	-- Pain-Binder Girdle

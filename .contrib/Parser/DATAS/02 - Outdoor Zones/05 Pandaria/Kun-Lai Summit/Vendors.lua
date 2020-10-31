@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
@@ -259,7 +260,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(103034)),	-- Elite Prideful Gladiator's Linked Waistband
 						un(REMOVED_FROM_GAME, i(103106)),	-- Elite Prideful Gladiator's Linked Leggings
 						un(REMOVED_FROM_GAME, i(103036)),	-- Elite Prideful Gladiator's Linked Sabatons
-					
+
 						un(REMOVED_FROM_GAME, i(103100)),	-- Elite Prideful Gladiator's Ringmail Helm
 						un(REMOVED_FROM_GAME, i(103102)),	-- Elite Prideful Gladiator's Ringmail Spaulders
 						un(REMOVED_FROM_GAME, i(103098)),	-- Elite Prideful Gladiator's Ringmail Armor
@@ -268,7 +269,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(103095)),	-- Elite Prideful Gladiator's Ringmail Waistband
 						un(REMOVED_FROM_GAME, i(103101)),	-- Elite Prideful Gladiator's Ringmail Leggings
 						un(REMOVED_FROM_GAME, i(103096)),	-- Elite Prideful Gladiator's Ringmail Footguards
-						
+
 						un(REMOVED_FROM_GAME, i(103111)),	-- Elite Prideful Gladiator's Mail Helm
 						un(REMOVED_FROM_GAME, i(103113)),	-- Elite Prideful Gladiator's Mail Spaulders
 						un(REMOVED_FROM_GAME, i(103109)),	-- Elite Prideful Gladiator's Mail Armor
@@ -380,6 +381,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
+						un(REMOVED_FROM_GAME, i(101697)), -- Grievous Gladiator's Tabard
 						n(-661, {	-- Gladiator
 							n(-319, {	-- Weapons
 								un(REMOVED_FROM_GAME, i(100536)), -- Grievous Gladiator's Spellblade (Horde)
@@ -409,14 +411,14 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100728)), -- Grievous Gladiator's Redoubt (Horde)
 								un(REMOVED_FROM_GAME, i(100731)), -- Grievous Gladiator's Barrier (Horde)
 							}),
-							cl(6, {	-- Death Knight
+							cl(DEATHKNIGHT, {
 								un(REMOVED_FROM_GAME, i(100594)), -- Grievous Gladiator's Dreadplate Gauntlets (Horde)
 								un(REMOVED_FROM_GAME, i(100595)), -- Grievous Gladiator's Dreadplate Legguards (Horde)
 								un(REMOVED_FROM_GAME, i(100596)), -- Grievous Gladiator's Dreadplate Shoulders (Horde)
 								un(REMOVED_FROM_GAME, i(100622)), -- Grievous Gladiator's Dreadplate Chestpiece (Horde)
 								un(REMOVED_FROM_GAME, i(100659)), -- Grievous Gladiator's Dreadplate Helm (Horde)
 							}),
-							cl(11, {	-- Druid
+							cl(DRUID, {
 								un(REMOVED_FROM_GAME, i(100685)),	-- Grievous Gladiator's Dragonhide Gloves (Horde)
 								un(REMOVED_FROM_GAME, i(100597)),	-- Grievous Gladiator's Dragonhide Helm (Horde)
 								un(REMOVED_FROM_GAME, i(100598)),	-- Grievous Gladiator's Dragonhide Legguards (Horde)
@@ -433,21 +435,21 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100557)),	-- Grievous Gladiator's Wyrmhide Robes (Horde)
 								un(REMOVED_FROM_GAME, i(100646)),	-- Grievous Gladiator's Wyrmhide Spaulders (Horde)
 							}),
-							cl(3, {	-- Hunter
+							cl(HUNTER, {
 								un(REMOVED_FROM_GAME, i(100683)), -- Grievous Gladiator's Chain Gauntlets (Horde)
 								un(REMOVED_FROM_GAME, i(100636)), -- Grievous Gladiator's Chain Helm (Horde)
 								un(REMOVED_FROM_GAME, i(100680)), -- Grievous Gladiator's Chain Spaulders (Horde)
 								un(REMOVED_FROM_GAME, i(100635)), -- Grievous Gladiator's Chain Armor (Horde)
-								un(REMOVED_FROM_GAME, i(100614)), -- Grievous Gladiator's Chain Leggings (Horde)	
+								un(REMOVED_FROM_GAME, i(100614)), -- Grievous Gladiator's Chain Leggings (Horde)
 							}),
-							cl(8, {	-- Mage
+							cl(MAGE, {
 								un(REMOVED_FROM_GAME, i(100681)), -- Grievous Gladiator's Silk Handguards (Horde)
 								un(REMOVED_FROM_GAME, i(100592)), -- Grievous Gladiator's Silk Trousers (Horde)
 								un(REMOVED_FROM_GAME, i(100661)), -- Grievous Gladiator's Silk Robe (Horde)
 								un(REMOVED_FROM_GAME, i(100611)), -- Grievous Gladiator's Silk Cowl (Horde)
-								un(REMOVED_FROM_GAME, i(100619)), -- Grievous Gladiator's Silk Amice (Horde)	
+								un(REMOVED_FROM_GAME, i(100619)), -- Grievous Gladiator's Silk Amice (Horde)
 							}),
-							cl(10, {	-- Monk
+							cl(MONK, {
 								un(REMOVED_FROM_GAME, i(100658)), -- Grievous Gladiator's Ironskin Helm (Horde)
 								un(REMOVED_FROM_GAME, i(100569)), -- Grievous Gladiator's Ironskin Spaulders (Horde)
 								un(REMOVED_FROM_GAME, i(100600)), -- Grievous Gladiator's Ironskin Legguards (Horde)
@@ -459,7 +461,7 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100709)), -- Grievous Gladiator's Copperskin Tunic (Horde)
 								un(REMOVED_FROM_GAME, i(100723)), -- Grievous Gladiator's Copperskin Spaulders (Horde)
 							}),
-							cl(2, {	-- Paladin
+							cl(PALADIN, {
 								un(REMOVED_FROM_GAME, i(100725)), -- Grievous Gladiator's Scaled Helm (Horde)
 								un(REMOVED_FROM_GAME, i(100573)), -- Grievous Gladiator's Scaled Gauntlets (Horde)
 								un(REMOVED_FROM_GAME, i(100690)), -- Grievous Gladiator's Scaled Shoulders (Horde)
@@ -471,7 +473,7 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100668)), -- Grievous Gladiator's Ornamented Gloves (Horde)
 								un(REMOVED_FROM_GAME, i(100714)), -- Grievous Gladiator's Ornamented Legplates (Horde)
 							}),
-							cl(5, {	-- Priest
+							cl(PRIEST, {
 								un(REMOVED_FROM_GAME, i(100558)), -- Grievous Gladiator's Mooncloth Gloves (Horde)
 								un(REMOVED_FROM_GAME, i(100649)), -- Grievous Gladiator's Mooncloth Helm (Horde)
 								un(REMOVED_FROM_GAME, i(100650)), -- Grievous Gladiator's Mooncloth Leggings (Horde)
@@ -483,14 +485,14 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100565)), -- Grievous Gladiator's Satin Robe (Horde)
 								un(REMOVED_FROM_GAME, i(100615)), -- Grievous Gladiator's Satin Mantle (Horde)
 							}),
-							cl(4, {	-- Rogue
+							cl(ROGUE, {
 								un(REMOVED_FROM_GAME, i(100656)), -- Grievous Gladiator's Leather Helm (Horde)
 								un(REMOVED_FROM_GAME, i(100607)), -- Grievous Gladiator's Leather Gloves (Horde)
 								un(REMOVED_FROM_GAME, i(100673)), -- Grievous Gladiator's Leather Tunic (Horde)
 								un(REMOVED_FROM_GAME, i(100676)), -- Grievous Gladiator's Leather Legguards (Horde)
 								un(REMOVED_FROM_GAME, i(100677)), -- Grievous Gladiator's Leather Spaulders (Horde)
 							}),
-							cl(7, {	-- Shaman
+							cl(SHAMAN, {	-- Shaman
 								un(REMOVED_FROM_GAME, i(100664)), -- Grievous Gladiator's Ringmail Helm (Horde)
 								un(REMOVED_FROM_GAME, i(100663)), -- Grievous Gladiator's Ringmail Armor (Horde)
 								un(REMOVED_FROM_GAME, i(100720)), -- Grievous Gladiator's Ringmail Gauntlets (Horde)
@@ -507,14 +509,14 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100727)), -- Grievous Gladiator's Mail Leggings (Horde)
 								un(REMOVED_FROM_GAME, i(100580)), -- Grievous Gladiator's Mail Spaulders (Horde)
 							}),
-							cl(9, {	-- Warlock
+							cl(WARLOCK, {
 								un(REMOVED_FROM_GAME, i(100672)), -- Grievous Gladiator's Felweave Cowl (Horde)
 								un(REMOVED_FROM_GAME, i(100605)), -- Grievous Gladiator's Felweave Raiment (Horde)
 								un(REMOVED_FROM_GAME, i(100628)), -- Grievous Gladiator's Felweave Amice (Horde)
 								un(REMOVED_FROM_GAME, i(100671)), -- Grievous Gladiator's Felweave Handguards (Horde)
 								un(REMOVED_FROM_GAME, i(100701)), -- Grievous Gladiator's Felweave Trousers (Horde)
 							}),
-							cl(1, {	-- Warrior
+							cl(WARRIOR, {	-- Warrior
 								un(REMOVED_FROM_GAME, i(100562)), -- Grievous Gladiator's Plate Helm (Horde)
 								un(REMOVED_FROM_GAME, i(100561)), -- Grievous Gladiator's Plate Gauntlets (Horde)
 								un(REMOVED_FROM_GAME, i(100631)), -- Grievous Gladiator's Plate Shoulders (Horde)
@@ -612,7 +614,7 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100493)),	-- Grievous Gladiator's Baton of Light
 								un(REMOVED_FROM_GAME, i(100204)),	-- Grievous Gladiator's Longbow
 							}),
-							cl(6, {	-- Death Knight
+							cl(DEATHKNIGHT, {	-- Death Knight
 								un(REMOVED_FROM_GAME, i(100244)),	-- Grievous Gladiator's Dreadplate Chestpiece
 								un(REMOVED_FROM_GAME, i(100246)),	-- Grievous Gladiator's Dreadplate Gauntlets
 								un(REMOVED_FROM_GAME, i(100248)),	-- Grievous Gladiator's Dreadplate Helm
@@ -621,7 +623,7 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100394)),	-- Grievous Gladiator's Dreadplate Girdle
 								un(REMOVED_FROM_GAME, i(100400)),	-- Grievous Gladiator's Dreadplate Warboots
 							}),
-							cl(11, {	-- Druid
+							cl(DRUID, {	-- Druid
 								un(REMOVED_FROM_GAME, i(100264)),	-- Grievous Gladiator's Kodohide Belt
 								un(REMOVED_FROM_GAME, i(100266)),	-- Grievous Gladiator's Kodohide Footguards
 								un(REMOVED_FROM_GAME, i(100269)),	-- Grievous Gladiator's Kodohide Gloves
@@ -644,7 +646,7 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100260)),	-- Grievous Gladiator's Dragonhide Robes
 								un(REMOVED_FROM_GAME, i(100262)),	-- Grievous Gladiator's Dragonhide Spaulders
 							}),
-							cl(3, {	-- Hunter
+							cl(HUNTER, {	-- Hunter
 								un(REMOVED_FROM_GAME, i(100309)),	-- Grievous Gladiator's Chain Links
 								un(REMOVED_FROM_GAME, i(100313)),	-- Grievous Gladiator's Chain Sabatons
 								un(REMOVED_FROM_GAME, i(100319)),	-- Grievous Gladiator's Chain Armor
@@ -653,7 +655,7 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100325)),	-- Grievous Gladiator's Chain Leggings
 								un(REMOVED_FROM_GAME, i(100327)),	-- Grievous Gladiator's Chain Spaulders
 							}),
-							cl(8, {	-- Mage
+							cl(MAGE, {
 								un(REMOVED_FROM_GAME, i(100206)),	-- Grievous Gladiator's Silk Cord
 								un(REMOVED_FROM_GAME, i(100212)),	-- Grievous Gladiator's Silk Treads
 								un(REMOVED_FROM_GAME, i(100329)),	-- Grievous Gladiator's Silk Handguards
@@ -662,7 +664,7 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100335)),	-- Grievous Gladiator's Silk Robe
 								un(REMOVED_FROM_GAME, i(100337)),	-- Grievous Gladiator's Silk Amice
 							}),
-							cl(10, {	-- Monk
+							cl(MONK, {
 								un(REMOVED_FROM_GAME, i(100339)),	-- Grievous Gladiator's Ironskin Waistband
 								un(REMOVED_FROM_GAME, i(100341)),	-- Grievous Gladiator's Ironskin Boots
 								un(REMOVED_FROM_GAME, i(100344)),	-- Grievous Gladiator's Ironskin Gloves
@@ -676,9 +678,9 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100356)),	-- Grievous Gladiator's Copperskin Helm
 								un(REMOVED_FROM_GAME, i(100358)),	-- Grievous Gladiator's Copperskin Legguards
 								un(REMOVED_FROM_GAME, i(100360)),	-- Grievous Gladiator's Copperskin Spaulders
-								un(REMOVED_FROM_GAME, i(100362)),	-- Grievous Gladiator's Copperskin Tunic	
+								un(REMOVED_FROM_GAME, i(100362)),	-- Grievous Gladiator's Copperskin Tunic
 							}),
-							cl(2, {	-- Paladin
+							cl(PALADIN, {
 								un(REMOVED_FROM_GAME, i(100374)),	-- Grievous Gladiator's Scaled Clasp
 								un(REMOVED_FROM_GAME, i(100380)),	-- Grievous Gladiator's Scaled Greaves
 								un(REMOVED_FROM_GAME, i(100364)),	-- Grievous Gladiator's Scaled Chestpiece
@@ -694,7 +696,7 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100390)),	-- Grievous Gladiator's Ornamented Legplates
 								un(REMOVED_FROM_GAME, i(100392)),	-- Grievous Gladiator's Ornamented Spaulders
 							}),
-							cl(5, {	-- Priest
+							cl(PRIEST, {
 								un(REMOVED_FROM_GAME, i(102141)),	-- Grievous Gladiator's Satin Cord
 								un(REMOVED_FROM_GAME, i(102140)),	-- Grievous Gladiator's Satin Treads
 								un(REMOVED_FROM_GAME, i(100416)),	-- Grievous Gladiator's Satin Gloves
@@ -710,7 +712,7 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100412)),	-- Grievous Gladiator's Mooncloth Robe
 								un(REMOVED_FROM_GAME, i(100414)),	-- Grievous Gladiator's Mooncloth Mantle
 							}),
-							cl(4, {	-- Rogue
+							cl(ROGUE, {
 								un(REMOVED_FROM_GAME, i(100426)),	-- Grievous Gladiator's Leather Waistband
 								un(REMOVED_FROM_GAME, i(100428)),	-- Grievous Gladiator's Leather Boots
 								un(REMOVED_FROM_GAME, i(100431)),	-- Grievous Gladiator's Leather Tunic
@@ -719,7 +721,7 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100437)),	-- Grievous Gladiator's Leather Legguards
 								un(REMOVED_FROM_GAME, i(100439)),	-- Grievous Gladiator's Leather Spaulders
 							}),
-							cl(7, {	-- Shaman
+							cl(SHAMAN, {
 								un(REMOVED_FROM_GAME, i(100441)),	-- Grievous Gladiator's Ringmail Waistguard
 								un(REMOVED_FROM_GAME, i(100443)),	-- Grievous Gladiator's Ringmail Footguards
 								un(REMOVED_FROM_GAME, i(100449)),	-- Grievous Gladiator's Ringmail Armor
@@ -742,7 +744,7 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100465)),	-- Grievous Gladiator's Linked Leggings
 								un(REMOVED_FROM_GAME, i(100467)),	-- Grievous Gladiator's Linked Spaulders
 							}),
-							cl(9, {	-- Warlock
+							cl(WARLOCK, {
 								un(REMOVED_FROM_GAME, i(100208)),	-- Grievous Gladiator's Felweave Cord
 								un(REMOVED_FROM_GAME, i(100214)),	-- Grievous Gladiator's Felweave Treads
 								un(REMOVED_FROM_GAME, i(100511)),	-- Grievous Gladiator's Felweave Handguards
@@ -751,7 +753,7 @@ _.Zones =
 								un(REMOVED_FROM_GAME, i(100517)),	-- Grievous Gladiator's Felweave Raiment
 								un(REMOVED_FROM_GAME, i(100519)),	-- Grievous Gladiator's Felweave Amice
 							}),
-							cl(1, {	-- Warrior
+							cl(WARRIOR, {
 								un(REMOVED_FROM_GAME, i(100396)),	-- Grievous Gladiator's Plate Girdle
 								un(REMOVED_FROM_GAME, i(100398)),	-- Grievous Gladiator's Plate Warboots
 								un(REMOVED_FROM_GAME, i(100521)),	-- Grievous Gladiator's Plate Chestpiece
@@ -1066,7 +1068,7 @@ _.Zones =
 					["coord"] = { 35.4, 83.2, 379 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-					-- These are the Season 13 ensembles.  
+					-- These are the Season 13 ensembles.
 					-- Other than these ensembles, it looks like the only source for lots of this gear is Nalak.
 					-- Take note of the opposite-faction appearances that are awarded so we can fill out both factions!
 					--	i(138690),	-- Ensemble: Tyrannical Gladiator's Chain Armor (Hunter)

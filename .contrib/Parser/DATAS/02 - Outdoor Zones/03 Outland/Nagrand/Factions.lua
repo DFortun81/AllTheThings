@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -11,7 +12,7 @@ _.Zones =
 					ach(902),	-- Chief Exalted Officer
 					n(QUESTS, {
 						q(9914, {	-- A Head Full of Ivory
-						--	NOT A TRUE BREADCRUMB.  if we come up with a way to invalidate a quest by maxReputation level, then this tag should be removed.
+							--	NOT A TRUE BREADCRUMB.  if we come up with a way to invalidate a quest by maxReputation level, then this tag should be removed.
 							["provider"] = { "n", 18333 },	-- Shadrek
 							["coord"] = { 31.8, 56.8, 107 },
 							["isBreadcrumb"] = true,
@@ -38,7 +39,7 @@ _.Zones =
 								i(25419),	-- Unmarked Bag of Gems
 							},
 						}),
-						q(9885, {	-- Membership Benefits	
+						q(9885, {	-- Membership Benefits
 							["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["isMonthly"] = true,
@@ -86,13 +87,13 @@ _.Zones =
 							["minReputation"] = { 933, FRIENDLY },
 						}),
 						q(9882, {	-- Stealing from Thieves
-						--	NOT A TRUE BREADCRUMB.  if we come up with a way to invalidate a quest by maxReputation level, then this tag should be removed.
+							--	NOT A TRUE BREADCRUMB.  if we come up with a way to invalidate a quest by maxReputation level, then this tag should be removed.
 							["isBreadcrumb"] = true,
 							["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["minReputation"] = { 933, NEUTRAL },
 							["maxReputation"] = { 933, FRIENDLY },
-						}),	
+						}),
 					}),
 					n(VENDORS, {
 						n(23007,   {	-- Paulsta'ats <Consortium Quartermaster>
@@ -142,9 +143,6 @@ _.Zones =
 								i(23874),	-- Schematic: Elemental Seaforium Charge
 								un(REMOVED_FROM_GAME, i(29118)),	-- Smuggler's Ammo Pouch
 								i(29117),	-- Stormspire Vest
-
-
-								
 							},
 						}),
 					}),
@@ -169,7 +167,6 @@ _.Zones =
 							["provider"] = { "n", 18407 },	-- Warden Bullrok
 							["coord"] = { 55.8, 37.8, 107 },
 							["races"] = HORDE_ONLY,
-							
 						}),
 					}),
 					n(VENDORS, {

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.WorldEvents =
 {
 	n(-62, {	-- Stranglethorn Fishing Extravaganza
@@ -9,60 +10,54 @@ _.WorldEvents =
 		["coord"] = { 41.4, 73.0, 210 },
 		["maps"] = { 210 },	-- The Cape of Stranglethorn
 		["u"] = 30,
-		["questID"] = 44765,	-- Stranglethorn Fishing Extravaganza
-		["isWorldQuest"] = true, -- Added quest up here for full visibility in /attwq.  Clean up at a later point.
 		["g"] = {
-			i(19807, {	-- Speckled Tastyfish
-				["description"] = "You need 40. Fish from the pools! Good luck!",
+			q(44765, {	-- Stranglethorn Fishing Extravaganza
+				["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
+				["coord"] = { 41.4, 73.0, 210 },
+				["isWorldQuest"] = true,
 				["g"] = {
-					q(8194, {	-- Apprentice Angler
-						["provider"] = { "n", 15078 },	-- Jang
-						["coord"] = { 41.4, 73.0, 210 },
-						["repeatable"] = true,
-					}),
-					q(8193, {	-- Grand Prize
-						["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
-						["coord"] = { 41.4, 73.0, 210 },
-						["repeatable"] = true,
+					i(19807, {	-- Speckled Tastyfish
+						["description"] = "You need 40. Fish from the pools! Good luck!",
 						["g"] = {
-							un(30, i(19970)),	-- Arcanite Fishing Pole
-							un(30, i(50287)),	-- Boots of the Bay
-							un(30, i(122529)),	-- Dread Pirate Ring
-							un(30, i(19979)),	-- Hook of the Master Angler
-							un(30, i(19971)),	-- High Test Eternium Fishing Line
-						},
-					}),
-					q(32435, {	-- Second Prize
-						["u"] = REMOVED_FROM_GAME,
-						["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
-						["coord"] = { 41.4, 73.0, 210 },
-						["repeatable"] = true,
-						["g"] = {
-							un(30, i(50287)),	-- Boots of the Bay
-							un(30, i(122529)),	-- Dread Pirate Ring
-							un(30, i(19971)),	-- High Test Eternium Fishing Line
-						},
-					}),
-					q(44765, {	-- Stranglethorn Fishing Extravaganza
-						["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
-						["coord"] = { 41.4, 73.0, 210 },
-						["repeatable"] = true,
-						--["isWorldQuest"] = true,
-						["g"] = {
-							un(30, i(19970)),	-- Arcanite Fishing Pole
-							un(30, i(50287)),	-- Boots of the Bay
-							un(30, i(122529)),	-- Dread Pirate Ring
-							un(30, i(19979)),	-- Hook of the Master Angler
-							un(30, i(19971)),	-- High Test Eternium Fishing Line
-						},
-					}),
-					q(32436, {	-- Third Prize
-						["u"] = REMOVED_FROM_GAME,
-						["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
-						["coord"] = { 41.4, 73.0, 210 },
-						["repeatable"] = true,
-						["g"] = {
-							un(30, i(19971)),	-- High Test Eternium Fishing Line
+							q(8193, {	-- Grand Prize
+								["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
+								["coord"] = { 41.4, 73.0, 210 },
+								["repeatable"] = true,
+								["u"] = 30,
+								["g"] = {
+									un(30, i(19970)),	-- Arcanite Fishing Pole
+									un(30, i(50287)),	-- Boots of the Bay
+									un(30, i(122529)),	-- Dread Pirate Ring
+									un(30, i(19979)),	-- Hook of the Master Angler
+									un(30, i(19971)),	-- High Test Eternium Fishing Line
+								},
+							}),
+							q(8194, {	-- Apprentice Angler
+								["provider"] = { "n", 15078 },	-- Jang
+								["coord"] = { 41.4, 73.0, 210 },
+								["repeatable"] = true,
+								["u"] = 30,
+							}),
+							q(32435, {	-- Second Prize
+								["u"] = REMOVED_FROM_GAME,
+								["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
+								["coord"] = { 41.4, 73.0, 210 },
+								["repeatable"] = true,
+								["g"] = {
+									un(30, i(50287)),	-- Boots of the Bay
+									un(30, i(122529)),	-- Dread Pirate Ring
+									un(30, i(19971)),	-- High Test Eternium Fishing Line
+								},
+							}),
+							q(32436, {	-- Third Prize
+								["u"] = REMOVED_FROM_GAME,
+								["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
+								["coord"] = { 41.4, 73.0, 210 },
+								["repeatable"] = true,
+								["g"] = {
+									un(30, i(19971)),	-- High Test Eternium Fishing Line
+								},
+							}),
 						},
 					}),
 				},

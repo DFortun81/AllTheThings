@@ -554,6 +554,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(39285),	-- Handgrips of Turmoil
 							i(39279),	-- Blistered Belt of Decay
 							i(39280),	-- Leggings of Innumerable Barbs
+							i(39277),	-- Sealing Ring of Grobbulus
 						},
 					})),
 					cr(15932, e(1612, {	-- Gluth
@@ -643,15 +644,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								i(39548),	-- Heroes' Dreamwalker Mantle
 								i(39565),	-- Heroes' Bonescythe Pauldrons
 							}),
-							i(39394),	-- Charmed Cierge	
+							i(39394),	-- Charmed Cierge
 							i(39393),	-- Claymore of Ancient Power
 							i(39245),	-- Demise
-							i(39255),	-- Staff of the Plague Beast									
+							i(39255),	-- Staff of the Plague Beast
 							i(39256),	-- Sulfur Stave
-							i(39221),	-- Wraith Spear									
+							i(39221),	-- Wraith Spear
 							i(39271),	-- Blade of Dormant Memories
 							i(39200),	-- Grieving Spellblade
-							i(39270),	-- Hatestrike							
+							i(39270),	-- Hatestrike
 							i(39281),	-- Infection Repulser
 							i(39140),	-- Knife of Incision
 							i(39226),	-- Maexxna's Femur
@@ -659,7 +660,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(39291),	-- Torment of the Banished
 							i(39296),	-- Accursed Bow of the Elite
 							i(39233),	-- Aegis of Damnation
-							i(39276),	-- The Skull of Ruin									
+							i(39276),	-- The Skull of Ruin
 							i(39311),	-- Scepter of Murmuring Spirits
 							i(39199),	-- Watchful Eye
 							i(39294),	-- Arc-Scorched Helmet
@@ -673,7 +674,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(39232),	-- Pendant of Lost Vocations
 							i(39392),	-- Veiled Amulet of Life
 							i(39267),	-- Abomination Shoulderblades
-							i(39198),	-- Frostblight Pauldrons									
+							i(39198),	-- Frostblight Pauldrons
 							i(39310),	-- Mantle of the Extensive Mind
 							i(39284),	-- Miasma Mantle
 							i(39397),	-- Pauldrons of Havoc
@@ -690,7 +691,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(39259),	-- Fungi-Stained Coverings
 							i(39396),	-- Gown of Blaumeux
 							i(39391),	-- Heinous Mail Chestguard
-							i(39242),	-- Robes of Hoarse Breaths									
+							i(39242),	-- Robes of Hoarse Breaths
 							i(39386),	-- Tunic of Dislocation
 							i(39248),	-- Tunic of the Lost Pack
 							i(39278),	-- Bands of Anxiety
@@ -735,7 +736,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(39139),	-- Ravaging Sabatons
 							i(39369),	-- Sabatons of Deathlike Gloom
 							i(39254),	-- Saltarello Shoes
-							i(39273),	-- Sullen Cloth Boots									
+							i(39273),	-- Sullen Cloth Boots
 							i(39236),	-- Trespasser's Boots
 							i(39193),	-- Band of Neglected Pleas
 							i(39141),	-- Deflection Band
@@ -1964,7 +1965,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								i(40473),	-- Valorous Dreamwalker Headguard
 								i(40467),	-- Valorous Dreamwalker Cover
 								i(40499),	-- Valorous Bonescythe Helmet
-							}),								
+							}),
 							i(40384),	-- Betrayer of Humanity
 							i(40388),	-- Journey's End
 							i(40383),	-- Calamity's Grasp

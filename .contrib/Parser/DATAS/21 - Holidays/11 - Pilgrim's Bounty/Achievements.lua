@@ -4,8 +4,8 @@
 
 _.Holidays =
 {
-	holiday(235465, {	-- Pilgrim's Bounty
-		n(-4, {	-- Achievements
+	holiday(235466, {	-- Pilgrim's Bounty
+		n(ACHIEVEMENTS, {
 			ach(3478, {	-- Pilgrim
 				["u"] = 28,	-- Pilgrim's Bounty
 				["g"] = {

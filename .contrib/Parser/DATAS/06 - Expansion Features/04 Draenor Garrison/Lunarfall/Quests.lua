@@ -789,7 +789,7 @@ _.ExpansionFeatures =
 							{ "n", 91024 },	-- Jake the Fox (Alliance)
 						},
 						["isDaily"] = true,
-						["cost"] = { "i", 110609, 50 },	-- 50x Raw Beast Hide
+						["cost"] = { { "i", 110609, 50 } },	-- 50x Raw Beast Hide
 						["lvl"] = 90,
 					}),
 					q(37288, {	-- Resources in Ashran
@@ -831,7 +831,7 @@ _.ExpansionFeatures =
 							{ "n", 91025 },	-- Dorothy "Two" (Alliance)
 						},
 						["isDaily"] = true,
-						["cost"] = { "i", 111557, 50 },	-- 50x Sumptuous Fur
+						["cost"] = { { "i", 111557, 50 } },	-- 50x Sumptuous Fur
 						["lvl"] = 90,
 					}),
 					q(34674, {	-- Taking the Fight to Nagrand

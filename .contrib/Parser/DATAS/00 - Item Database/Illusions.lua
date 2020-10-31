@@ -270,7 +270,7 @@ _.IllusionDB = {
 		["text"] = "Chronos",
 		["questID"] = 42938,
 	}, -- [47]
-	
+
 	-- Shaman Only:
 	{
 		["sourceText"] = "Boss Drop: Valithria Dreamwalker in Icecrown Citadel (25 Player)",
@@ -279,7 +279,7 @@ _.IllusionDB = {
 		["illusionID"] = 5871,
 		["visualID"] = 106,
 		["questID"] = 42941,
-		["classes"] = { 7 },	-- Shaman
+		["classes"] = { SHAMAN },
 	}, -- [46]
 	{
 		["sourceText"] = "Boss Drop: Ragnaros in Molten Core",
@@ -288,7 +288,7 @@ _.IllusionDB = {
 		["illusionID"] = 5872,
 		["visualID"] = 32,
 		["questID"] = 42942,
-		["classes"] = { 7 },	-- Shaman
+		["classes"] = { SHAMAN },
 	}, -- [47]
 	{
 		["sourceText"] = "Boss Drop: Hydross the Unstable in Serpentshrine Cavern",
@@ -296,7 +296,7 @@ _.IllusionDB = {
 		["itemID"] = 138834,
 		["illusionID"] = 5873,
 		["visualID"] = 33,
-		["classes"] = { 7 },	-- Shaman
+		["classes"] = { SHAMAN },
 	}, -- [48]
 	{
 		["sourceText"] = "Boss Drop: Tectus in Highmaul",
@@ -305,7 +305,7 @@ _.IllusionDB = {
 		["illusionID"] = 5874,
 		["visualID"] = 61,
 		["questID"] = 42944,
-		["classes"] = { 7 },	-- Shaman
+		["classes"] = { SHAMAN },
 	}, -- [49]
 	{
 		["sourceText"] = "Boss Drop: Al'Akir in Throne of the Four Winds",
@@ -314,7 +314,7 @@ _.IllusionDB = {
 		["illusionID"] = 5875,
 		["visualID"] = 81,
 		["questID"] = 42945,
-		["classes"] = { 7 },	-- Shaman
+		["classes"] = { SHAMAN },
 	},
 	{	-- Death Knight Only:
 		["sourceText"] = "Boss Drop: The Lich King in Icecrown Citadel",
@@ -323,7 +323,7 @@ _.IllusionDB = {
 		["illusionID"] = 5869,
 		["visualID"] = 1,
 		["questID"] = 42973,
-		["classes"] = { 6 },	-- Death Knight
+		["classes"] = { DEATHKNIGHT },
 	},
 	{	-- Flames of Ragnaros
 		["text"] = "Boss Drop: Ragnaros (Removed)",
@@ -336,14 +336,14 @@ _.IllusionDB = {
 		["itemID"] = 138954,
 		["illusionID"] = 5364,
 		["questID"] = 42972,
-		["classes"] = { 4 },	-- Rogue
+		["classes"] = { ROGUE },
 	},
 	{	-- Demonic Tyranny
 		["itemID"] = 147778,
 		["illusionID"] = 5924,
 		["text"] = "Demonic Tyranny",
 		["questID"] = 47191,
-	}, -- 
+	}, --
 	{	-- Glorious Tyranny
 		["itemID"] = 120286, -- Enchanter's Illusion - Glorious Tyranny
 		["illusionID"] = 5396,
@@ -357,7 +357,7 @@ _.IllusionDB = {
 		["questID"] = 42950,
 	},
 	{	-- Dreadflame
-		--["itemID"] = 
+		--["itemID"] =
 		["illusionID"] = 6096,
 		["text"] = "Dreadflame",
 	},

@@ -596,16 +596,12 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(110006),	-- Rukhran's Quill
 					})),
 					cr(76266, e(968, {	-- High Sage Viryx
-						{	-- Mythic: Skyreach
-							["achievementID"] = 10081,	-- Mythic: Skyreach
-						},
-						i(127771, {	-- Gemcutter Module: Haste
-							["spellID"] = 187635,
+						ach(10081),	-- Mythic: Skyreach
+						i(127772, {	-- Gemcutter Module: Haste
 							["requireSkill"] = JEWELCRAFTING,
 							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-							["coord"] = {
-								25.84, 39.79
-							},
+							["spellID"] = 187635,
+							["coord"] = { 25.8, 39.7, 534 },
 						}),
 						i(110033),	-- Arcanic of the High Sage
 						i(110034),	-- Viryx's Indomitable Bulwark
@@ -814,13 +810,11 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(110006),	-- Rukhran's Quill
 					})),
 					cr(76266, e(968, {	-- High Sage Viryx
-						i(127771, {	-- Gemcutter Module: Haste
-							["spellID"] = 187635,
+						i(127772, {	-- Gemcutter Module: Haste
 							["requireSkill"] = JEWELCRAFTING,
 							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-							["coord"] = {
-								25.84, 39.79
-							},
+							["spellID"] = 187635,
+							["coord"] = { 25.8, 39.7, 534 },
 						}),
 						i(110033),	-- Arcanic of the High Sage
 						i(110034),	-- Viryx's Indomitable Bulwark

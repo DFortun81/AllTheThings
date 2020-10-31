@@ -14,7 +14,7 @@ _.Instances = { tier(1, {	-- Classic
 		["sharedLockout"] = 1,
 		["order"] = "06",
 		["lvl"] = 50,
-		["groups"] = {
+		["g"] = {
 			-- Legacy War Effort Quests
 			n(QUESTS, {
 				q(8580, {	-- The Horde Needs Firebloom!
@@ -48,7 +48,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			faction(910, { 	-- Brood of Nozdormu
 				["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
-				["groups"] = {
+				["g"] = {
 					n(QUESTS, {
 						cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
 							q(8667, {	-- Genesis Helm
@@ -61,7 +61,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20859, 5 },	-- Gold Scarab
 									{ "i", 20863, 5 },	-- Clay Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21353),	-- Genesis Helm
 								},
 							}),
@@ -75,7 +75,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20859, 5 },	-- Gold Scarab
 									{ "i", 20864, 5 },	-- Bone Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21354),	-- Genesis Shoulderpads
 								},
 							}),
@@ -89,7 +89,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20861, 5 },	-- Bronze Scarab
 									{ "i", 20865, 5 },	-- Ivory Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21357),	-- Genesis Vest
 								},
 							}),
@@ -103,7 +103,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20858, 5 },	-- Stone Scarab
 									{ "i", 20862, 5 },	-- Crystal Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21356),	-- Genesis Trousers
 								},
 							}),
@@ -117,7 +117,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20858, 5 },	-- Stone Scarab
 									{ "i", 20860, 5 },	-- Silver Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21355),	-- Genesis Boots
 								},
 							}),
@@ -133,7 +133,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20861, 5 },	-- Bronze Scarab
 									{ "i", 20865, 5 },	-- Ivory Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21366),	-- Striker's Diadem
 								},
 							}),
@@ -147,7 +147,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20862, 5 },	-- Crystal Scarab
 									{ "i", 20865, 5 },	-- Ivory Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21367),	-- Striker's Pauldrons
 								},
 							}),
@@ -161,7 +161,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20859, 5 },	-- Gold Scarab
 									{ "i", 20863, 5 },	-- Clay Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21370),	-- Striker's Hauberk
 								},
 							}),
@@ -175,7 +175,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20860, 5 },	-- Silver Scarab
 									{ "i", 20864, 5 },	-- Bone Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21368),	-- Striker's Leggings
 								},
 							}),
@@ -189,7 +189,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20858, 5 },	-- Stone Scarab
 									{ "i", 20864, 5 },	-- Bone Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21365),	-- Striker's Footguards
 								},
 							}),
@@ -205,7 +205,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20861, 5 },	-- Bronze Scarab
 									{ "i", 20865, 5 },	-- Ivory Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21347),	-- Enigma Circlet
 								},
 							}),
@@ -219,7 +219,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20858, 5 },	-- Stone Scarab
 									{ "i", 20861, 5 },	-- Bronze Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21345),	-- Enigma Shoulderpads
 								},
 							}),
@@ -233,7 +233,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20859, 5 },	-- Gold Scarab
 									{ "i", 20863, 5 },	-- Clay Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21343),	-- Enigma Robes
 								},
 							}),
@@ -247,7 +247,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20860, 5 },	-- Silver Scarab
 									{ "i", 20864, 5 },	-- Bone Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21346),	-- Enigma Leggings
 								},
 							}),
@@ -261,7 +261,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20860, 5 },	-- Silver Scarab
 									{ "i", 20862, 5 },	-- Crystal Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21344),	-- Enigma Boots
 								},
 							}),
@@ -277,7 +277,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20858, 5 },	-- Stone Scarab
 									{ "i", 20862, 5 },	-- Crystal Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21387),	-- Avenger's Crown
 								},
 							}),
@@ -291,7 +291,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20859, 5 },	-- Gold Scarab
 									{ "i", 20862, 5 },	-- Crystal Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21391),	-- Avenger's Pauldrons
 								},
 							}),
@@ -305,7 +305,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20860, 5 },	-- Silver Scarab
 									{ "i", 20864, 5 },	-- Bone Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21389),	-- Avenger's Breastplate
 								},
 							}),
@@ -319,7 +319,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20865, 5 },	-- Ivory Scarab
 									{ "i", 20861, 5 },	-- Bronze Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21390),	-- Avenger's Legguards
 								},
 							}),
@@ -333,7 +333,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20861, 5 },	-- Bronze Scarab
 									{ "i", 20863, 5 },	-- Clay Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21388),	-- Avenger's Greaves
 								},
 							}),
@@ -349,7 +349,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20860, 5 },	-- Silver Scarab
 									{ "i", 20864, 5 },	-- Bone Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21348),	-- Tiara of the Oracle
 								},
 							}),
@@ -363,7 +363,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20860, 5 },	-- Silver Scarab
 									{ "i", 20865, 5 },	-- Ivory Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21350),	-- Mantle of the Oracle
 								},
 							}),
@@ -377,7 +377,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20858, 5 },	-- Stone Scarab
 									{ "i", 20862, 5 },	-- Crystal Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21351),	-- Vestments of the Oracle
 								},
 							}),
@@ -391,7 +391,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20859, 5 },	-- Gold Scarab
 									{ "i", 20863, 5 },	-- Clay Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21352),	-- Trousers of the Oracle
 								},
 							}),
@@ -405,7 +405,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20861, 5 },	-- Bronze Scarab
 									{ "i", 20859, 5 },	-- Gold Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21349),	-- Footwraps of the Oracle
 								},
 							}),
@@ -421,7 +421,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20863, 5 },	-- Clay Scarab
 									{ "i", 20859, 5 },	-- Gold Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21360),	-- Deathdealer's Helm
 								},
 							}),
@@ -435,7 +435,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20860, 5 },	-- Silver Scarab
 									{ "i", 20863, 5 },	-- Clay Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21361),	-- Deathdealer's Spaulders
 								},
 							}),
@@ -449,7 +449,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20861, 5 },	-- Bronze Scarab
 									{ "i", 20865, 5 },	-- Ivory Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21364),	-- Deathdealer's Vest
 								},
 							}),
@@ -463,7 +463,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20858, 5 },	-- Stone Scarab
 									{ "i", 20862, 5 },	-- Crystal Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21362),	-- Deathdealer's Leggings
 								},
 							}),
@@ -477,7 +477,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20862, 5 },	-- Crystal Scarab
 									{ "i", 20864, 5 },	-- Bone Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21359),	-- Deathdealer's Boots
 								},
 							}),
@@ -493,7 +493,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20858, 5 },	-- Stone Scarab
 									{ "i", 20862, 5 },	-- Crystal Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21372),	-- Stormcaller's Diadem
 								},
 							}),
@@ -507,7 +507,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20859, 5 },	-- Gold Scarab
 									{ "i", 20862, 5 },	-- Crystal Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21376),	-- Stormcaller's Pauldrons
 								},
 							}),
@@ -521,7 +521,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20860, 5 },	-- Silver Scarab
 									{ "i", 20864, 5 },	-- Bone Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21374),	-- Stormcaller's Hauberk
 								},
 							}),
@@ -535,7 +535,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20865, 5 },	-- Ivory Scarab
 									{ "i", 20861, 5 },	-- Bronze Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21375),	-- Stormcaller's Leggings
 								},
 							}),
@@ -549,7 +549,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20861, 5 },	-- Bronze Scarab
 									{ "i", 20863, 5 },	-- Clay Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21373),	-- Stormcaller's Footguards
 								},
 							}),
@@ -565,7 +565,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20860, 5 },	-- Silver Scarab
 									{ "i", 20864, 5 },	-- Bone Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21337),	-- Doomcaller's Circlet
 								},
 							}),
@@ -579,7 +579,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20861, 5 },	-- Bronze Scarab
 									{ "i", 20864, 5 },	-- Bone Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21335),	-- Doomcaller's Mantle
 								},
 							}),
@@ -593,7 +593,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20862, 5 },	-- Crystal Scarab
 									{ "i", 20858, 5 },	-- Stone Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21334),	-- Doomcaller's Robes
 								},
 							}),
@@ -607,7 +607,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20859, 5 },	-- Gold Scarab
 									{ "i", 20863, 5 },	-- Clay Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21336),	-- Doomcaller's Trousers
 								},
 							}),
@@ -621,7 +621,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20863, 5 },	-- Clay Scarab
 									{ "i", 20865, 5 },	-- Ivory Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21338),	-- Doomcaller's Footwraps
 								},
 							}),
@@ -637,7 +637,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20862, 5 },	-- Crystal Scarab
 									{ "i", 20858, 5 },	-- Stone Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21329),	-- Conqueror's Crown
 								},
 							}),
@@ -651,7 +651,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20863, 5 },	-- Clay Scarab
 									{ "i", 20858, 5 },	-- Stone Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21330),	-- Conqueror's Spaulders
 								},
 							}),
@@ -665,7 +665,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20860, 5 },	-- Silver Scarab
 									{ "i", 20864, 5 },	-- Bone Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21331),	-- Conqueror's Breastplate
 								},
 							}),
@@ -679,7 +679,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20861, 5 },	-- Bronze Scarab
 									{ "i", 20865, 5 },	-- Ivory Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21332),	-- Conqueror's Legguards
 								},
 							}),
@@ -693,7 +693,7 @@ _.Instances = { tier(1, {	-- Classic
 									{ "i", 20865, 5 },	-- Ivory Scarab
 									{ "i", 20859, 5 },	-- Gold Scarab
 								},
-								["groups"] = {
+								["g"] = {
 									i(21333),	-- Conqueror's Greaves
 								},
 							}),
@@ -708,7 +708,7 @@ _.Instances = { tier(1, {	-- Classic
 								{ "i", 21232, 1 },	-- Imperial Qiraji Armaments
 								{ "i", 18562, 3 },	-- Elementium Ore
 							},
-							["groups"] = {
+							["g"] = {
 								i(21242),	-- Blessed Qiraji War Axe
 								i(21272),	-- Blessed Qiraji Musket
 								i(21244),	-- Blessed Qiraji Pugio
@@ -722,11 +722,10 @@ _.Instances = { tier(1, {	-- Classic
 								{ "i", 21237, 1 },	-- Imperial Qiraji Regalia
 								{ "i", 18562, 3 },	-- Elementium Ore
 							},
-							["groups"] = {
+							["g"] = {
 								i(21273),	-- Blessed Qiraji Acolyte Staff
 								i(21275),	-- Blessed Qiraji Augur Staff
 								i(21268),	-- Blessed Qiraji War Hammer
-								
 							},
 						}),
 						q(8579, {	-- Mortal Champions
@@ -1050,7 +1049,7 @@ _.Instances = { tier(1, {	-- Classic
 						q(8802, {	-- The Savior of Kalimdor
 							["qg"] = 15379,	-- Caelestrasz
 							["sourceQuest"] = 8801,	-- C'Thun's Legacy
-							["groups"] = {
+							["g"] = {
 								i(21712),	-- Amulet of the Fallen God
 								i(21710),	-- Cloak of the Fallen God
 								i(21709),	-- Ring of the Fallen God
@@ -1071,7 +1070,7 @@ _.Instances = { tier(1, {	-- Classic
 					15544,	-- Vem
 					15299,	-- Viscidus
 				},
-				["groups"] = {
+				["g"] = {
 					i(20736),	-- Formula: Enchant Cloak - Dodge
 					i(20734),	-- Formula: Enchant Cloak - Stealth
 					i(20729),	-- Formula: Enchant Gloves - Fire Power
@@ -1282,7 +1281,7 @@ _.Instances = { tier(1, {	-- Classic
 					{ "i", 21762, 1 },	-- Greater Scarab Coffer Key [pre-4.3]
 					{ "i", 76402, 1 },	-- Greater Scarab Coffer Key [4.3]
 				},
-				["groups"] = {
+				["g"] = {
 					i(21156),	-- Scarab Bag
 					i(20876),	-- Idol of Death
 					i(20879),	-- Idol of Life
@@ -1296,7 +1295,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1543, {	-- The Prophet Skeram
 				["creatureID"] = 15263,
-				["groups"] = {
+				["g"] = {
 					i(22222),	-- Plans: Thick Obisidan Breastplate
 					i(93041),	-- Jewel of Maddening Whispers (Pet)
 					i(21703),	-- Hammer of Ji'zhi
@@ -1316,7 +1315,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1547, {	-- Silithid Royalty
 				["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
-				["groups"] = {
+				["g"] = {
 					n(COMMON_BOSS_DROPS, {
 						["description"] = "These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings.",
 						["crs"] = {
@@ -1324,7 +1323,7 @@ _.Instances = { tier(1, {	-- Classic
 							15543,	-- Princess Yauj
 							15544,	-- Vem
 						},
-						["groups"] = {
+						["g"] = {
 							i(21693),	-- Guise of the Devourer
 							i(21694),	-- Ternary Mantle
 							i(21697),	-- Cape of the Trinity
@@ -1335,7 +1334,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(15511, {	-- Lord Kri
 						["description"] = "Killing this boss last can drop the following items.",
-						["groups"] = {
+						["g"] = {
 							i(21603),	-- Wand of Qiraji Nobility
 							i(21680),	-- Vest of Swift Execution
 							i(21681),	-- Ring of the Devoured
@@ -1344,7 +1343,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(15543, {	-- Princess Yauj
 						["description"] = "Killing this boss last can drop the following items.",
-						["groups"] = {
+						["g"] = {
 							i(21683),	-- Mantle of the Desert Crusade
 							i(21684),	-- Mantle of the Desert's Fury
 							i(21686),	-- Mantle of Phrenic Power
@@ -1354,7 +1353,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(15544, {	-- Vem
 						["description"] = "Killing this boss last can drop the following items.",
-						["groups"] = {
+						["g"] = {
 							i(21690),	-- Angelista's Charm
 							i(21689),	-- Gloves of Ebru
 							i(21691),	-- Ooze-Ridden Gauntlets
@@ -1365,7 +1364,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1544, {	-- Battleguard Sartura
 				["creatureID"] = 15516,
-				["groups"] = {
+				["g"] = {
 					i(21673),	-- Silithid Claw
 					i(21666),	-- Sartura's Might
 					i(21669),	-- Creeping Vine Helm
@@ -1383,7 +1382,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1545, {	-- Fankriss the Unyielding
 				["creatureID"] = 15510,
-				["groups"] = {
+				["g"] = {
 					i(21635),	-- Barb of the Sand Reaver
 					i(21650),	-- Ancient Qiraji Ripper
 					i(21664),	-- Barbed Choker
@@ -1400,7 +1399,7 @@ _.Instances = { tier(1, {	-- Classic
 			e(1548, {	-- Viscidus
 				["description"] = "This boss requires 20 frost hits to freeze. Once frozen, you need 30 melee hits to shatter him. Equipping the Crate of Kidnapped Puppies or Barov Peasant Caller and using it after the boss freezes will help.",
 				["creatureID"] = 15299,
-				["groups"] = {
+				["g"] = {
 					i(93039),	-- Viscidus Globule (Pet)
 					i(20928),	-- Qiraji Bindings of Command
 					i(20932),	-- Qiraji Bindings of Dominance
@@ -1414,7 +1413,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1546, {	-- Princess Huhuran
 				["creatureID"] = 15509,
-				["groups"] = {
+				["g"] = {
 					i(20928),	-- Qiraji Bindings of Command
 					i(20932),	-- Qiraji Bindings of Dominance
 					i(21616),	-- Huhuran's Stinger
@@ -1451,7 +1450,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1550, { 	-- Ouro
 				["creatureID"] = 15517,
-				["groups"] = {
+				["g"] = {
 					i(20927),	-- Ouro's Intact Hide
 					i(20931),	-- Skin of the Great Sandworm
 					i(23557),	-- Larvae of the Great Worm
@@ -1464,7 +1463,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1551, { 	-- C'Thun
 				["creatureID"] = 15727,
-				["groups"] = {
+				["g"] = {
 					ach(687),	-- Temple of Ahn'Qiraj
 					{
 						["itemID"] = 21221,	-- Eye of C'Thun

@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -17,6 +18,7 @@ _.Zones =
 				}),
 				n(QUESTS, {
 					q(32008, {	-- Audrey Burnhep
+						["isBreadcrumb"] = true,
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
@@ -82,7 +84,6 @@ _.Zones =
 						["coord"] = { 69.2, 25.0, 84 },
 						["sourceQuest"] = 31821,	-- Level Up!
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 1,
 					}),
 					q(31316, {	-- Julia, The Pet Tamer
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
@@ -97,21 +98,18 @@ _.Zones =
 						["provider"] = { "n", 63596 },	-- Audrey Burnhep
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 1,
 					}),
 					q(31821, {	-- Level Up!
 						["provider"] = { "n", 63596 },	-- Audrey Burnhep
 						["coord"] = { 69.2, 25.0, 84 },
 						["sourceQuest"] = 31592,	-- On The Mend
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 1,
 					}),
 					q(31592, {	-- On The Mend
 						["provider"] = { "n", 63596 },	-- Audrey Burnhep
 						["coord"] = { 69.2, 25.0, 84 },
 						["sourceQuest"] = 31591,	-- Learning the Ropes
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 1,
 					}),
 					q(32863, { 	-- What We've Been Training For
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
@@ -129,25 +127,25 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							p(138, {	-- Blue Moth
-								["races"] = { 11 },	-- Draenei
+								["races"] = { DRAENEI },
 							}),
 							p(630, {	-- Gilnean Raven
-								["races"] = { 22 },	-- Worgan
+								["races"] = { WORGEN },
 							}),
 							p(68, {	-- Great Horned Owl
-								["races"] = { 4 },	-- Night Elf
+								["races"] = { NIGHTELF },
 							}),
 							i(88148, {	-- Jade Crane Chick
-								["races"] = { 26 },	-- Pandaren
+								["races"] = { PANDAREN_ALLIANCE },
 								["g"] = {
 									p(792),	-- Jade Crane Chick
 								},
 							}),
 							p(43, {	-- Orange Tabby Cat
-								["races"] = { 1 },	-- Human
+								["races"] = { HUMAN },
 							}),
 							p(72, {	-- Snowshoe Rabbit
-								["races"] = { 3, 7 },	-- Gnome, Dwarf
+								["races"] = { GNOME, DWARF },
 							}),
 						},
 					}),

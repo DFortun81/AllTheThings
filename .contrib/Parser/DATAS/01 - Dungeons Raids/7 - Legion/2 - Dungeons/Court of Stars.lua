@@ -4,6 +4,7 @@
 
 _.Instances = { tier(7, {	-- Legion
 	inst(800, {	-- Court of Stars
+		["coord"] = { 51.0, 65.6, 680 },
 		["maps"] = { 761, 762, 763 },
 		["lvl"] = 110,
 		["g"] = {
@@ -84,7 +85,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 			}),
 			d(23, {	-- Mythic
-				n(-4, {	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(10611),	-- Dropping some Eaves
 				}),
 				cr(104215, e(1718, {	-- Patrol Captain Gerdo
@@ -140,7 +141,6 @@ _.Instances = { tier(7, {	-- Legion
 					i(137486),	-- Windscar Whetstone
 					i(137495),	-- Crux of Blind Faith
 					i(137493),	-- Edge of the First Blade
-					i(146680),	-- Melandrus' Star-Touched Bracers (Tailoring QI)
 				})),
 			}),
 		},

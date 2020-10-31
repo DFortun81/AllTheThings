@@ -1,14 +1,14 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
-			n(-4, {	-- Achievement
+			n(ACHIEVEMENTS, {
 				ach(12941),		-- Adventurer of Drustvar
-				ach(13083, {		-- Better, Faster, Stronger
+				ach(13083, {	-- Better, Faster, Stronger
 					["description"] = "Collect and have active Witch's Boons: Excellence, Extra Pep, Rage, and Fortitude which are on a 5 minute timer and the debuff Witch's Curse: Newt. Debuffs can remove one of your buffs. Coords are possible brew spawn points.",
 					["coords"] = {
 						{ 25.00, 53.35, 896 },

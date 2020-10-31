@@ -1,6 +1,7 @@
 -----------------------------------------------
---     P L A Y E R   V S   P L A Y E R		 --
+--      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 _.PVP =
 {
 	n(-10041, {	-- Mists of Pandaria
@@ -90,7 +91,7 @@ _.PVP =
 						["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 					}),
 				}),
-				cl(6, {	-- Death Knight
+				cl(DEATHKNIGHT, {
 					i(138704, {	-- Ensemble: Malevolent Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["g"] = {
@@ -120,7 +121,7 @@ _.PVP =
 						["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 					}),
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					i(138708, {	-- Ensemble: Malevolent Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["g"] = {
@@ -190,7 +191,7 @@ _.PVP =
 						["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 					}),
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					i(138707, {	-- Ensemble: Malevolent Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["g"] = {
@@ -220,7 +221,7 @@ _.PVP =
 						["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 					}),
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					i(138711, {	-- Ensemble: Malevolent Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["g"] = {
@@ -250,7 +251,7 @@ _.PVP =
 						["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 					}),
 				}),
-				cl(10, {	-- Monk
+				cl(MONK, {
 					i(138709, {	-- Ensemble: Malevolent Gladiator's Ironskin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["g"] = {
@@ -300,7 +301,7 @@ _.PVP =
 						["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 					}),
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					i(138705, {	-- Ensemble: Malevolent Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["g"] = {
@@ -321,7 +322,7 @@ _.PVP =
 							i(84834),	-- Malevolent Gladiator's Scaled Gauntlets
 							i(84851),	-- Malevolent Gladiator's Scaled Helm
 							i(84870),	-- Malevolent Gladiator's Scaled Legguards
-							i(84915),	-- Malevolent Gladiator's Scaled Shoulders									
+							i(84915),	-- Malevolent Gladiator's Scaled Shoulders
 						},
 					}),
 					i(91640, {	-- Malevolent Gladiator's Ornamented Chestguard
@@ -355,7 +356,7 @@ _.PVP =
 						["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 					}),
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					i(138712, {	-- Ensemble: Malevolent Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["g"] = {
@@ -405,7 +406,7 @@ _.PVP =
 						["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 					}),
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					i(138710, {	-- Ensemble: Malevolent Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["g"] = {
@@ -435,7 +436,7 @@ _.PVP =
 						["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 					}),
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					i(138706, {	-- Ensemble: Malevolent Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["g"] = {
@@ -502,7 +503,7 @@ _.PVP =
 						["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 					}),
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					i(138713, {	-- Ensemble: Malevolent Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["g"] = {
@@ -532,10 +533,10 @@ _.PVP =
 						["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 					}),
 				}),
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					i(138703, {	-- Ensemble: Malevolent Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["g"] = { 
+						["g"] = {
 							i(84986),	-- Malevolent Gladiator's Armplates of Alacrity
 							i(84950),	-- Malevolent Gladiator's Girdle of Prowess
 							i(84797),	-- Malevolent Gladiator's Plate Chestpiece
@@ -830,14 +831,14 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(85111)),	-- Malevolent Gladiator's Staff
 					un(REMOVED_FROM_GAME, i(85121)),	-- Malevolent Gladiator's Touch of Defeat
 				}),
-				cl(6, {	-- Death Knight
+				cl(DEATHKNIGHT, {
 					un(REMOVED_FROM_GAME, i(84993)),	-- Malevolent Gladiator's Dreadplate Chestpiece
 					un(REMOVED_FROM_GAME, i(85028)),	-- Malevolent Gladiator's Dreadplate Gauntlets
 					un(REMOVED_FROM_GAME, i(85046)),	-- Malevolent Gladiator's Dreadplate Helm
 					un(REMOVED_FROM_GAME, i(85059)),	-- Malevolent Gladiator's Dreadplate Legguards
 					un(REMOVED_FROM_GAME, i(85086)),	-- Malevolent Gladiator's Dreadplate Shoulders
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					un(REMOVED_FROM_GAME, i(85025)),	-- Malevolent Gladiator's Dragonhide Gloves
 					un(REMOVED_FROM_GAME, i(85045)),	-- Malevolent Gladiator's Dragonhide Helm
 					un(REMOVED_FROM_GAME, i(85058)),	-- Malevolent Gladiator's Dragonhide Legguards
@@ -854,21 +855,21 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(85070)),	-- Malevolent Gladiator's Wyrmhide Robes
 					un(REMOVED_FROM_GAME, i(85080)),	-- Malevolent Gladiator's Wyrmhide Spaulders
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					un(REMOVED_FROM_GAME, i(84994)),	-- Malevolent Gladiator's Chain Armor
 					un(REMOVED_FROM_GAME, i(85020)),	-- Malevolent Gladiator's Chain Gauntlets
 					un(REMOVED_FROM_GAME, i(85034)),	-- Malevolent Gladiator's Chain Helm
 					un(REMOVED_FROM_GAME, i(85061)),	-- Malevolent Gladiator's Chain Leggings
 					un(REMOVED_FROM_GAME, i(85076)),	-- Malevolent Gladiator's Chain Spaulders
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					un(REMOVED_FROM_GAME, i(85085)),	-- Malevolent Gladiator's Silk Amice
 					un(REMOVED_FROM_GAME, i(85031)),	-- Malevolent Gladiator's Silk Cowl
 					un(REMOVED_FROM_GAME, i(85016)),	-- Malevolent Gladiator's Silk Handguards
 					un(REMOVED_FROM_GAME, i(85068)),	-- Malevolent Gladiator's Silk Robe
 					un(REMOVED_FROM_GAME, i(85062)),	-- Malevolent Gladiator's Silk Trousers
 				}),
-				cl(10, {	-- Monk
+				cl(MONK, {
 					un(REMOVED_FROM_GAME, i(85015)),	-- Malevolent Gladiator's Copperskin Gloves
 					un(REMOVED_FROM_GAME, i(85030)),	-- Malevolent Gladiator's Copperskin Helm
 					un(REMOVED_FROM_GAME, i(85060)),	-- Malevolent Gladiator's Copperskin Legguards
@@ -880,7 +881,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(85087)),	-- Malevolent Gladiator's Ironskin Spaulders
 					un(REMOVED_FROM_GAME, i(85066)),	-- Malevolent Gladiator's Ironskin Tunic
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					un(REMOVED_FROM_GAME, i(84991)),	-- Malevolent Gladiator's Ornamented Chestguard
 					un(REMOVED_FROM_GAME, i(85024)),	-- Malevolent Gladiator's Ornamented Gloves
 					un(REMOVED_FROM_GAME, i(85042)),	-- Malevolent Gladiator's Ornamented Headcover
@@ -892,7 +893,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(85057)),	-- Malevolent Gladiator's Scaled Legguards
 					un(REMOVED_FROM_GAME, i(85091)),	-- Malevolent Gladiator's Scaled Shoulders
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					un(REMOVED_FROM_GAME, i(85013)),	-- Malevolent Gladiator's Mooncloth Gloves
 					un(REMOVED_FROM_GAME, i(85039)),	-- Malevolent Gladiator's Mooncloth Helm
 					un(REMOVED_FROM_GAME, i(85052)),	-- Malevolent Gladiator's Mooncloth Leggings
@@ -904,14 +905,14 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(85074)),	-- Malevolent Gladiator's Satin Mantle
 					un(REMOVED_FROM_GAME, i(85073)),	-- Malevolent Gladiator's Satin Robe
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					un(REMOVED_FROM_GAME, i(85023)),	-- Malevolent Gladiator's Leather Gloves
 					un(REMOVED_FROM_GAME, i(85041)),	-- Malevolent Gladiator's Leather Helm
 					un(REMOVED_FROM_GAME, i(85055)),	-- Malevolent Gladiator's Leather Legguards
 					un(REMOVED_FROM_GAME, i(85089)),	-- Malevolent Gladiator's Leather Spaulders
 					un(REMOVED_FROM_GAME, i(84995)),	-- Malevolent Gladiator's Leather Tunic
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					un(REMOVED_FROM_GAME, i(84989)),	-- Malevolent Gladiator's Linked Armor
 					un(REMOVED_FROM_GAME, i(85011)),	-- Malevolent Gladiator's Linked Gauntlets
 					un(REMOVED_FROM_GAME, i(85038)),	-- Malevolent Gladiator's Linked Helm
@@ -928,14 +929,14 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(85054)),	-- Malevolent Gladiator's Ringmail Leggings
 					un(REMOVED_FROM_GAME, i(85075)),	-- Malevolent Gladiator's Ringmail Spaulders
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					un(REMOVED_FROM_GAME, i(85078)),	-- Malevolent Gladiator's Felweave Amice
 					un(REMOVED_FROM_GAME, i(85035)),	-- Malevolent Gladiator's Felweave Cowl
 					un(REMOVED_FROM_GAME, i(85021)),	-- Malevolent Gladiator's Felweave Handguards
 					un(REMOVED_FROM_GAME, i(85069)),	-- Malevolent Gladiator's Felweave Raiment
 					un(REMOVED_FROM_GAME, i(85047)),	-- Malevolent Gladiator's Felweave Trousers
 				}),
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					un(REMOVED_FROM_GAME, i(84987)),	-- Malevolent Gladiator's Plate Chestpiece
 					un(REMOVED_FROM_GAME, i(85019)),	-- Malevolent Gladiator's Plate Gauntlets
 					un(REMOVED_FROM_GAME, i(85032)),	-- Malevolent Gladiator's Plate Helm

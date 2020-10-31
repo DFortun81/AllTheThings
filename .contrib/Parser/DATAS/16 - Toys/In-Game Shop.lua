@@ -5,9 +5,9 @@
 _.Toys =
 {
 	n(-36, {	-- In-Game Shop
-		un(35, i(166778)),	-- Horde's Might Firework
-		un(35, i(166777)),	-- Lion's Pride Firework
-		un(35, i(112324)),	-- Nightmarish Hitching Post
-		un(35, i(166779)),	-- Transmorpher Beacon
+		un(BLIZZARD_BALANCE, i(166778)),	-- Horde's Might Firework
+		un(BLIZZARD_BALANCE, i(166777)),	-- Lion's Pride Firework
+		un(BLIZZARD_BALANCE, i(112324)),	-- Nightmarish Hitching Post
+		un(BLIZZARD_BALANCE, i(166779)),	-- Transmorpher Beacon
 	}),
 };

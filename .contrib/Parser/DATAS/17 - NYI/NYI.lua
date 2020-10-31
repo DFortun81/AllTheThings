@@ -4,7 +4,21 @@
 
 _.NeverImplemented =
 {
-	n(-10052, {	-- BFA - Stuff that might gets added later duo changes/hotfixes/patches and/or similar
+		{
+			-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
+			["itemID"] = 163255,	-- 7th Legionnaire's Treads
+			["modID"] = 5,
+			["u"] = NEVER_IMPLEMENTED,
+			["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
+		},
+		{
+			-- Keep this here until we get solid and an accurate source.
+			-- Dont tell the Users is actually obtainable but there is just no info
+			["itemID"] = 108905,	-- Jagged Turtleshell Blade
+			["u"] = NEVER_IMPLEMENTED,
+			["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
+		},
+	n(-10052, {	-- BFA - Stuff that gets added later on 9.0 release
 		-- Future Emsembles!!
 		-- Leather Horde (you probably will learn both after learning one)
 		un(NEVER_IMPLEMENTED, i(166915)),	-- Dread Gladiator's leather tunic
@@ -15,44 +29,11 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(166920)),	-- Dread Gladiator's leather spaulders
 		un(NEVER_IMPLEMENTED, i(166921)),	-- Dread Gladiator's leather belt
 		un(NEVER_IMPLEMENTED, i(166922)),	-- Dread Gladiator's leather bindings
-		-- Leather Ally (you probably will learn both after learning one)
-		un(NEVER_IMPLEMENTED, i(166946)),	-- Dread Gladiator's leather tunic
-		un(NEVER_IMPLEMENTED, i(166947)),	-- Dread Gladiator's leather boots
-		un(NEVER_IMPLEMENTED, i(166948)),	-- Dread Gladiator's leather gloves
-		un(NEVER_IMPLEMENTED, i(166949)),	-- Dread Gladiator's leather helm
-		un(NEVER_IMPLEMENTED, i(166950)),	-- Dread Gladiator's leather legguards
-		un(NEVER_IMPLEMENTED, i(166951)),	-- Dread Gladiator's leather spaulders
-		un(NEVER_IMPLEMENTED, i(166952)),	-- Dread Gladiator's leather belt
-		un(NEVER_IMPLEMENTED, i(166953)),	-- Dread Gladiator's leather bindings
-		-- Leather Blue Warfront Pieces
-		un(NEVER_IMPLEMENTED, i(163381)),	-- 7th Legionnaire's Mask
-		un(NEVER_IMPLEMENTED, i(163378)),	-- 7th Legionnaire's Shoulderpads
-		un(NEVER_IMPLEMENTED, i(163382)),	-- 7th Legionnaire's Tunic
-		un(NEVER_IMPLEMENTED, i(163385)),	-- 7th Legionnaire's Belt
-		un(NEVER_IMPLEMENTED, i(163379)),	-- 7th Legionnaire's Pants
-		{
-			-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
-			["itemID"] = 163255,	-- 7th Legionnaire's Treads
-			["modID"] = 5,
-			["u"] = NEVER_IMPLEMENTED,
-			["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
-		},
 		un(NEVER_IMPLEMENTED, i(163436)),	-- Honorbound Outrider's Faceguard
 		un(NEVER_IMPLEMENTED, i(163433)),	-- Honorbound Outrider's Mantle
 		un(NEVER_IMPLEMENTED, i(163440)),	-- Honorbound Outrider's Belt
 
-		-- Cloth Blue Warfront Pieces
-		un(NEVER_IMPLEMENTED, i(163340)),	-- 7th Legionnaire's Circlet
-		un(NEVER_IMPLEMENTED, i(163269)),	-- 7th Legionnaire's Mantle
-		un(NEVER_IMPLEMENTED, i(163343)),	-- 7th Legionnaire's Sash
-		un(NEVER_IMPLEMENTED, i(163427)),	-- Honorbound Artificer's Skullcap
-		un(NEVER_IMPLEMENTED, i(163425)),	-- Honorbound Artificer's Mantle
-		un(NEVER_IMPLEMENTED, i(163431)),	-- Honorbound Artificer's Sash
-
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
-		un(NEVER_IMPLEMENTED, i(166405)),	-- Blindside (TW Vendor?)
-		un(NEVER_IMPLEMENTED, i(166364)),	-- Song of the Fallen (TW Vendor?)
-		un(NEVER_IMPLEMENTED, i(161118)),	-- Marrow Shatter (TW Vendor/Tw drop?)
 		un(NEVER_IMPLEMENTED, i(166700)),	-- Durable Sailor's Duffel
 		un(NEVER_IMPLEMENTED, i(161988)),	-- Tidespray Linen Cloak of the Feather
 		un(NEVER_IMPLEMENTED, i(161991)),	-- Tidespray Linen Cloak of Resilience
@@ -64,12 +45,10 @@ _.NeverImplemented =
 
 
 		-- Scrapped Lv20 Gear (??)
-		un(NEVER_IMPLEMENTED, i(157622)),	-- Silverscope Longrifle (Level 20 Kul Tiran Hunter Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157644)),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
 		un(NEVER_IMPLEMENTED, i(157621)),	-- Staff of Regrowth (Lv20 Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157623)),	-- Frostcore Staff (Lv20 Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157624)),	-- Staff of Inner Flame (Lv20 Start Gear?)
-		un(NEVER_IMPLEMENTED, i(157625)),	-- Mash Tun Mixer (Lv20 Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157626)),	-- Staff of Sining mists (Lv20 Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157645)),	-- Foebreaker's Axe (Lv20 Start Gear?)
 		un(NEVER_IMPLEMENTED, i(157653)),	-- fatihful shield (Lv20 Start Gear?)
@@ -83,25 +62,15 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(140704)),	-- Assassins Serrated Dagger
 		un(NEVER_IMPLEMENTED, i(150599)),	-- Assassins Serrated Dagger
 
-	--	random stuff from the BFA world drop files that was commented out and cluttery, all show up as 'retrieving data'
-		i(159190),	--  Foxhollow Bracelets
-		i(159183),	--  Foxhollow Cord
-		i(159170),	--  Freehold Handwraps
-		i(159181),	--  Mistfall Spaulders
-		i(159182),	--  Mistfall Chainmail
-		i(159176),	--  Mistfall Bracers
-		i(159177),	--  Mistfall Gloves
-		i(159175),	--  Mistfall Belt
-		i(159180),	--  Mistfall Legguards
-		i(159178),	--  Mistfall Boots
-		i(159165),	--  Ashvane Company Bracers
-		i(159159),	--  Ashvane Company Gauntlets
-		i(159160),	--  Ashvane Company Girdle
+		un(NEVER_IMPLEMENTED, i(159165)),	-- Ashvane Company Bracers
+		un(NEVER_IMPLEMENTED, i(159159)),	-- Ashvane Company Gauntlets
+		un(NEVER_IMPLEMENTED, i(159160)),	-- Ashvane Company Girdle
 
 		-- patch 8.3 removed content
 		un(NEVER_IMPLEMENTED, i(173421)),	-- Black Empire Signet
 		un(NEVER_IMPLEMENTED, i(173426)),	-- Black Empire trinkets
-
+	}),
+	n(105, {	-- Achievements
 		un(NEVER_IMPLEMENTED, ach(14116)),	-- All Bridges Burned
 		un(NEVER_IMPLEMENTED, ach(14121)),	-- Daring Defender
 		un(NEVER_IMPLEMENTED, ach(14113)),	-- Imagine a Dark, Dark World
@@ -120,24 +89,24 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, ach(13996)),	-- The Dark Horde
 		un(NEVER_IMPLEMENTED, ach(13995)),	-- Twilight over the White City
 	}),
-	n(-220, {	-- Class
-		cl(12, {	-- DH
+	n(-220, {	-- Class "Spells"
+		cl(DEMONHUNTER, {
 			un(NEVER_IMPLEMENTED, i(129738)),	-- Verus
 		}),
-		cl(3, {	-- Hunter
+		cl(HUNTER, {
 			un(NEVER_IMPLEMENTED, i(147770)),	-- Tome of the PTR Beast
 		}),
-		cl(8, {	-- Mage
+		cl(MAGE, {
 			un(NEVER_IMPLEMENTED, i(44600)),	-- Tome of Polymorph: Serpent (Never made it out of beta)
 			un(NEVER_IMPLEMENTED, i(44811)),	-- Tome of Polymorph: Turkey
 		}),
-		cl(7, {	-- Shaman
+		cl(SHAMAN, {
 			un(NEVER_IMPLEMENTED, i(136971)),	-- Tome of Hex: Snake
 		}),
 	}),
 	n(-163, {	-- Armor
 		n(-43, {	-- Cloth
-			cl(8, {	-- Mage
+			cl(MAGE, {
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				un(NEVER_IMPLEMENTED, i(150651)),	-- Mountainsage Cord
 				un(NEVER_IMPLEMENTED, i(77780)),	-- Replica Lieutenant Commander's Silk Mantle
@@ -194,7 +163,7 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(88254)),	-- gladiators silk robe
 				un(NEVER_IMPLEMENTED, i(88255)),	-- gladiators silk trousers
 			}),
-			cl(5, {	-- Priest
+			cl(PRIEST, {
 				un(NEVER_IMPLEMENTED, i(46230)),    -- Circlet of Sanctification
 				un(NEVER_IMPLEMENTED, i(46231)),    -- Cowl of Sanctification
 				un(NEVER_IMPLEMENTED, i(46247)),    -- Gloves of Sanctification
@@ -293,7 +262,7 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(153941)), -- Communal Mantle
 				un(NEVER_IMPLEMENTED, i(153935)), -- Communal Communal Cloak of Destruction
 			}),
-			cl(9, {	-- Warlock
+			cl(WARLOCK, {
 				un(NEVER_IMPLEMENTED, i(32093)),	-- Chancellor's Dreadweave Gloves
 				un(NEVER_IMPLEMENTED, i(32094)),	-- Chancellor's Dreadweave Hood
 				un(NEVER_IMPLEMENTED, i(32095)),	-- Chancellor's Dreadweave Legs
@@ -346,9 +315,18 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(6243)),		-- Green Woolen Robe
 			un(NEVER_IMPLEMENTED, i(105710)),	-- Lasso Bracers, Humanoid
 			un(NEVER_IMPLEMENTED, i(105928)),	-- Magic Bunny Hat
+			un(NEVER_IMPLEMENTED, i(159190)),	-- Foxhollow Bracelets
+			un(NEVER_IMPLEMENTED, i(159170)),	-- Freehold Handwraps
+			un(NEVER_IMPLEMENTED, i(159183)),	-- Foxhollow Cord
 			un(NEVER_IMPLEMENTED, i(78017)),	-- Replica Magister's Leggings (Cloth)
 			un(NEVER_IMPLEMENTED, i(4989)),		-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
 			un(NEVER_IMPLEMENTED, i(4990)),		-- Scorched Bands
+			un(NEVER_IMPLEMENTED, i(163340)),	-- 7th Legionnaire's Circlet
+			un(NEVER_IMPLEMENTED, i(163269)),	-- 7th Legionnaire's Mantle
+			un(NEVER_IMPLEMENTED, i(163343)),	-- 7th Legionnaire's Sash
+			un(NEVER_IMPLEMENTED, i(163427)),	-- Honorbound Artificer's Skullcap
+			un(NEVER_IMPLEMENTED, i(163425)),	-- Honorbound Artificer's Mantle
+			un(NEVER_IMPLEMENTED, i(163431)),	-- Honorbound Artificer's Sash
 			un(NEVER_IMPLEMENTED, i(109344)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109363)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109379)),	-- Unknown
@@ -479,7 +457,7 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(114301)),	-- Axebreak Darkcloak
 		}),
 		n(-44, {	-- Leather
-			cl(11, {	-- Druid
+			cl(DRUID, {
 				un(NEVER_IMPLEMENTED, i(77751)),	-- Replicate Knight Captains Dragonhide Chestpiece
 				un(NEVER_IMPLEMENTED, i(48769)),	-- Runetotem's Handguards of Conquest
 				un(NEVER_IMPLEMENTED, i(48770)),	-- Runetotem's Headpiece of Conquest
@@ -567,7 +545,7 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(96225)), -- Breeches of the Haunted Forest
 				un(NEVER_IMPLEMENTED, i(96226)), -- Shoulderguards of the Haunted Forest
 			}),
-			cl(4, {	-- Rogue
+			cl(ROGUE, {
 				un(NEVER_IMPLEMENTED, i(48804)),	-- Garona's Breastplate of Conquest
 				un(NEVER_IMPLEMENTED, i(48805)),	-- Garona's Gauntlets of Conquest
 				un(NEVER_IMPLEMENTED, i(48806)),	-- Garona's Helmet of Conquest
@@ -605,7 +583,7 @@ _.NeverImplemented =
 				-- Transmog set item that never became available
 				un(NEVER_IMPLEMENTED, i(130327)),	-- Artful Britches
 			}),
-			cl(10, {	-- Monk
+			cl(MONK, {
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
 				un(NEVER_IMPLEMENTED, i(97011)), -- Fire-Charm Tunic
 				un(NEVER_IMPLEMENTED, i(97012)), -- Fire-Charm Grips
@@ -643,6 +621,13 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(54686)),	-- Barbaric Harness
 			un(NEVER_IMPLEMENTED, i(14550)),	-- Bladebane Armguards (Leather)
 			un(NEVER_IMPLEMENTED, i(54703)),	-- Bogwalker Boots
+			un(NEVER_IMPLEMENTED, i(159181)),	-- Mistfall Spaulders
+			un(NEVER_IMPLEMENTED, i(159182)),	-- Mistfall Chainmail
+			un(NEVER_IMPLEMENTED, i(159176)),	-- Mistfall Bracers
+			un(NEVER_IMPLEMENTED, i(159177)),	-- Mistfall Gloves
+			un(NEVER_IMPLEMENTED, i(159175)),	-- Mistfall Belt
+			un(NEVER_IMPLEMENTED, i(159180)),	-- Mistfall Legguards
+			un(NEVER_IMPLEMENTED, i(159178)),	-- Mistfall Boots
 			un(NEVER_IMPLEMENTED, i(12104)),	-- Brindlethorn Tunic (Leather)
 			un(NEVER_IMPLEMENTED, i(54708)),	-- Ceremonial Leather Gloves
 			un(NEVER_IMPLEMENTED, i(54666)),	-- Ceremonial Leather Harness
@@ -789,9 +774,14 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(109513)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109547)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(120363)),	-- Unknown
+			un(NEVER_IMPLEMENTED, i(163381)),	-- 7th Legionnaire's Mask
+			un(NEVER_IMPLEMENTED, i(163378)),	-- 7th Legionnaire's Shoulderpads
+			un(NEVER_IMPLEMENTED, i(163382)),	-- 7th Legionnaire's Tunic
+			un(NEVER_IMPLEMENTED, i(163385)),	-- 7th Legionnaire's Belt
+			un(NEVER_IMPLEMENTED, i(163379)),	-- 7th Legionnaire's Pants
 		}),
 		n(-45, {	-- Mail
-			cl(7, {	-- Shaman
+			cl(SHAMAN, {
 				un(NEVER_IMPLEMENTED, i(157725)),	-- Totem Caller Coif (Sham Future Boost Gear)
 				un(NEVER_IMPLEMENTED, i(157727)),	-- Totem Caller Pauldrons (Sham Future Boost Gear)
 				un(NEVER_IMPLEMENTED, i(32138)),	-- Chancellor's Linked Armor
@@ -981,13 +971,20 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(123350)),	-- Stormseeker gordöe
 				un(NEVER_IMPLEMENTED, i(123351)),	-- Stormseeker bracers
 			}),
-			cl(3, {	-- Hunter
+			cl(HUNTER, {
 				un(NEVER_IMPLEMENTED, i(32133)),	-- Chancellor's Chain Armor
 				un(NEVER_IMPLEMENTED, i(32134)),	-- Chancellor's Chain Gauntlets
 				un(NEVER_IMPLEMENTED, i(32135)),	-- Chancellor's Chain Helm
 				un(NEVER_IMPLEMENTED, i(32136)),	-- Chancellor's Chain Leggings
 				un(NEVER_IMPLEMENTED, i(32137)),	-- Chancellor's Chain Spaulders
 				un(NEVER_IMPLEMENTED, i(150642)),	-- Trailseeker Spaulders
+				un(NEVER_IMPLEMENTED, i(150637)),	-- Trailseeker Vest
+				un(NEVER_IMPLEMENTED, i(150638)),	-- Trailseeker Greaves
+				un(NEVER_IMPLEMENTED, i(150639)),	-- Trailseeker Gauntlets
+				un(NEVER_IMPLEMENTED, i(150640)),	-- Trailseeker Helm
+				un(NEVER_IMPLEMENTED, i(150641)),	-- Trailseeker Legguards
+				un(NEVER_IMPLEMENTED, i(150643)),	-- Trailseeker Belt
+				un(NEVER_IMPLEMENTED, i(150644)),	-- Trailseeker Bracers
 				un(NEVER_IMPLEMENTED, i(48819)),	-- Windrunner's Handguards
 				un(NEVER_IMPLEMENTED, i(48820)),	-- Windrunner's Headpiece
 				un(NEVER_IMPLEMENTED, i(48821)),	-- Windrunner's Legguards
@@ -1035,43 +1032,72 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(96257)), -- Saurok Stalker's Legguards
 				un(NEVER_IMPLEMENTED, i(96258)), -- Saurok Stalker's Spaulders
 			}),
-			n(-10052, {	-- BFA
 				-- Future Emsembles!!
-				-- Mail Horde (you probably will learn both after learning one)
-				un(NEVER_IMPLEMENTED, i(166923)),	-- Dread Gladiator's Chain armor
-				un(NEVER_IMPLEMENTED, i(166924)),	-- Dread Gladiator's Chain sabatons
-				un(NEVER_IMPLEMENTED, i(166925)),	-- Dread Gladiator's Chain gauntlets
-				un(NEVER_IMPLEMENTED, i(166926)),	-- Dread Gladiator's Chain helm
-				un(NEVER_IMPLEMENTED, i(166927)),	-- Dread Gladiator's Chain leggings
-				un(NEVER_IMPLEMENTED, i(166928)),	-- Dread Gladiator's Chain spaulders
-				un(NEVER_IMPLEMENTED, i(166929)),	-- Dread Gladiator's Chain waistguard
-				un(NEVER_IMPLEMENTED, i(166930)),	-- Dread Gladiator's Chain armbands
-				-- Mail Ally (you probably will learn both after learning one)
-				un(NEVER_IMPLEMENTED, i(166954)),	-- Dread Gladiator's Chain armor
-				un(NEVER_IMPLEMENTED, i(166955)),	-- Dread Gladiator's Chain sabatons
-				un(NEVER_IMPLEMENTED, i(166956)),	-- Dread Gladiator's Chain gauntlets
-				un(NEVER_IMPLEMENTED, i(166957)),	-- Dread Gladiator's Chain helm
-				un(NEVER_IMPLEMENTED, i(166958)),	-- Dread Gladiator's Chain leggings
-				un(NEVER_IMPLEMENTED, i(166959)),	-- Dread Gladiator's Chain spaulders
-				un(NEVER_IMPLEMENTED, i(166960)),	-- Dread Gladiator's Chain waistguard
-				un(NEVER_IMPLEMENTED, i(166961)),	-- Dread Gladiator's Chain armbands
-				un(NEVER_IMPLEMENTED, i(163286)),	-- honorbound vanguard's footguards
-				un(NEVER_IMPLEMENTED, i(163291)),	-- honorbound vanguard's strikers
-				un(NEVER_IMPLEMENTED, i(163293)),	-- honorbound vanguard's warhelm
-				un(NEVER_IMPLEMENTED, i(163297)),	-- honorbound vanguard's legguards
-				un(NEVER_IMPLEMENTED, i(163302)),	-- honorbound vanguard's spaulders
-				un(NEVER_IMPLEMENTED, i(163304)),	-- honorbound vanguard's waistcord
-				un(NEVER_IMPLEMENTED, i(163392)),	-- 7th legionnaires vestments
-				un(NEVER_IMPLEMENTED, i(163393)),	-- 7th legionnaires raiment
-				un(NEVER_IMPLEMENTED, i(163443)),	-- honorbound vanguard's vestments
-				un(NEVER_IMPLEMENTED, i(163450)),	-- honorbound vanguard's raiment
-				un(NEVER_IMPLEMENTED, i(163396)),	-- 7th Legionnaire's Skullcap
-				un(NEVER_IMPLEMENTED, i(163390)),	-- 7th Legionnaire's Spaulders
-				un(NEVER_IMPLEMENTED, i(163402)),	-- 7th Legionnaire's Chain Belt
-				un(NEVER_IMPLEMENTED, i(163447)),	-- Honorbound Vanguard's Helm
-				un(NEVER_IMPLEMENTED, i(163442)),	-- Honorbound Vanguard's Pauldrons
-				un(NEVER_IMPLEMENTED, i(163452)),	-- Honorbound Vanguard's Chain Belt
-			}),
+			un(NEVER_IMPLEMENTED, i(163286)),	-- honorbound vanguard's footguards
+			un(NEVER_IMPLEMENTED, i(163291)),	-- honorbound vanguard's strikers
+			un(NEVER_IMPLEMENTED, i(163293)),	-- honorbound vanguard's warhelm
+			un(NEVER_IMPLEMENTED, i(163297)),	-- honorbound vanguard's legguards
+			un(NEVER_IMPLEMENTED, i(163302)),	-- honorbound vanguard's spaulders
+			un(NEVER_IMPLEMENTED, i(163304)),	-- honorbound vanguard's waistcord
+			un(NEVER_IMPLEMENTED, i(92838)),	-- Danio-Scale Belt
+			un(NEVER_IMPLEMENTED, i(92839)),	-- Danio-Scale Bracers
+			un(NEVER_IMPLEMENTED, i(92840)),	-- Danio-Scale Gauntlets
+			un(NEVER_IMPLEMENTED, i(92841)),	-- Danio-Scale Greaves
+			un(NEVER_IMPLEMENTED, i(92842)),	-- Danio-Scale Helm
+			un(NEVER_IMPLEMENTED, i(92843)),	-- Danio-Scale Legguards
+			un(NEVER_IMPLEMENTED, i(92844)),	-- Danio-Scale Spaulders
+			un(NEVER_IMPLEMENTED, i(92845)),	-- Danio-Scale Vest
+			un(NEVER_IMPLEMENTED, i(154952)),	-- saurscale wristgaurds
+			un(NEVER_IMPLEMENTED, i(154953)),	-- saurscale göpves
+			un(NEVER_IMPLEMENTED, i(154954)),	-- saurscale leggings
+			un(NEVER_IMPLEMENTED, i(154955)),	-- saurscale coif
+			un(NEVER_IMPLEMENTED, i(154956)),	-- saurscale boots
+			un(NEVER_IMPLEMENTED, i(154957)),	-- saurscale girdle
+			un(NEVER_IMPLEMENTED, i(154958)),	-- saurscale chestguard
+			un(NEVER_IMPLEMENTED, i(154959)),	-- saurscale spaulders
+			un(NEVER_IMPLEMENTED, i(158484)),	-- aiguille-scaler's wristguards
+			un(NEVER_IMPLEMENTED, i(158485)),	-- aiguille-scaler's gloves
+			un(NEVER_IMPLEMENTED, i(158486)),	-- aiguille-scaler's leggings
+			un(NEVER_IMPLEMENTED, i(158487)),	-- aiguille-scaler's coif
+			un(NEVER_IMPLEMENTED, i(158488)),	-- aiguille-scaler's boots
+			un(NEVER_IMPLEMENTED, i(158489)),	-- aiguille-scaler's girdle
+			un(NEVER_IMPLEMENTED, i(158490)),	-- aiguille-scaler's chestguard
+			un(NEVER_IMPLEMENTED, i(158491)),	-- aiguille-scaler's spaulders
+			un(NEVER_IMPLEMENTED, i(93057)),	-- stormshaper vest
+			un(NEVER_IMPLEMENTED, i(93058)),	-- stormshaper greaves
+			un(NEVER_IMPLEMENTED, i(93059)),	-- stormshaper gauntlets
+			un(NEVER_IMPLEMENTED, i(93061)),	-- stormshaper legguards
+			un(NEVER_IMPLEMENTED, i(93062)),	-- stormshaper spualders
+			un(NEVER_IMPLEMENTED, i(93063)),	-- stormshaper belt
+			un(NEVER_IMPLEMENTED, i(93064)),	-- stormshaper brarcers
+			un(NEVER_IMPLEMENTED, i(109488)),	-- unknown
+			un(NEVER_IMPLEMENTED, i(109504)),	-- unknown
+			un(NEVER_IMPLEMENTED, i(109510)),	-- unknown
+			un(NEVER_IMPLEMENTED, i(109517)),	-- unknown
+			un(NEVER_IMPLEMENTED, i(109541)),	-- unknown
+			un(NEVER_IMPLEMENTED, i(109543)),	-- unknown
+			un(NEVER_IMPLEMENTED, i(109548)),	-- unknown
+			un(NEVER_IMPLEMENTED, i(158536)),	-- saurscale wristguards
+			un(NEVER_IMPLEMENTED, i(158537)),	-- saurscale gloves
+			un(NEVER_IMPLEMENTED, i(158538)),	-- saurscale leggings
+			un(NEVER_IMPLEMENTED, i(158539)),	-- saurscale coif
+			un(NEVER_IMPLEMENTED, i(158540)),	-- saurscale boosts
+			un(NEVER_IMPLEMENTED, i(158541)),	-- saurscale girdle
+			un(NEVER_IMPLEMENTED, i(158542)),	-- saurscale chestguard
+			un(NEVER_IMPLEMENTED, i(97076)),	-- scalehide spures
+			un(NEVER_IMPLEMENTED, i(97083)),	-- spiritbound boots
+			un(NEVER_IMPLEMENTED, i(97088)),	-- abandoned zandalari arrowlinks
+			un(NEVER_IMPLEMENTED, i(97089)),	--  abandoned zandalari waterchain
+			un(NEVER_IMPLEMENTED, i(163392)),	-- 7th legionnaires vestments
+			un(NEVER_IMPLEMENTED, i(163393)),	-- 7th legionnaires raiment
+			un(NEVER_IMPLEMENTED, i(163443)),	-- honorbound vanguard's vestments
+			un(NEVER_IMPLEMENTED, i(163450)),	-- honorbound vanguard's raiment
+			un(NEVER_IMPLEMENTED, i(163396)),	-- 7th Legionnaire's Skullcap
+			un(NEVER_IMPLEMENTED, i(163390)),	-- 7th Legionnaire's Spaulders
+			un(NEVER_IMPLEMENTED, i(163402)),	-- 7th Legionnaire's Chain Belt
+			un(NEVER_IMPLEMENTED, i(163447)),	-- Honorbound Vanguard's Helm
+			un(NEVER_IMPLEMENTED, i(163442)),	-- Honorbound Vanguard's Pauldrons
+			un(NEVER_IMPLEMENTED, i(163452)),	-- Honorbound Vanguard's Chain Belt
 			un(NEVER_IMPLEMENTED, i(166402)),	-- Flaskzertauren Mail Hauberk
 			un(NEVER_IMPLEMENTED, i(166410)),	-- Flaskzertauren Mail Shoulderguards
 			un(NEVER_IMPLEMENTED, i(12105)),	-- Pridemail Leggings
@@ -1200,7 +1226,7 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(37454)),	-- HF28 Mail Physical Chest4
 		}),
 		n(-46, {	-- Plate
-			cl(6, {	-- DK
+			cl(DEATHKNIGHT, {
 				un(NEVER_IMPLEMENTED, i(48880)),	-- Koltira's Battleplate of Conquest
 				un(NEVER_IMPLEMENTED, i(48881)),	-- Koltira's Gauntlets of Conquest
 				un(NEVER_IMPLEMENTED, i(48882)),	-- Koltira's Helmet of Conquest
@@ -1253,7 +1279,7 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(96205)), -- Legguards of the All-Consuming Maw
 				un(NEVER_IMPLEMENTED, i(96206)), -- Shoulderguards of the All-Consuming Maw
 			}),
-			cl(2, {	-- Paladin
+			cl(PALADIN, {
 				un(NEVER_IMPLEMENTED, i(48905)),	-- Liadrin's Tunic of Conquest
 				un(NEVER_IMPLEMENTED, i(48906)),	-- Liadrin's Spaulders of Conquest
 				un(NEVER_IMPLEMENTED, i(48907)),	-- Liadrin's Headpiece of Conquest
@@ -1322,7 +1348,7 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(96295)), -- Lightning Emperor's Legguards
 				un(NEVER_IMPLEMENTED, i(96296)), -- Lightning Emperor's Shoulderguards
 			}),
-			cl(1, {	-- Warrior
+			cl(WARRIOR, {
 				un(NEVER_IMPLEMENTED, i(48860)),	-- Hellscream's Battleplate of Conquest
 				un(NEVER_IMPLEMENTED, i(48861)),	-- Hellscream's Gauntlets of Conquest
 				un(NEVER_IMPLEMENTED, i(48862)),	-- Hellscream's Helmet of Conquest
@@ -1527,8 +1553,18 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(134693)),	-- Enveloping Cape
 			un(NEVER_IMPLEMENTED, i(134699)),	-- Enveloping Drape
 			un(NEVER_IMPLEMENTED, i(134609)),	-- Scorching Cape
+			un(NEVER_IMPLEMENTED, i(163311)),	-- 7th Legionnaire's Shroud
+			un(NEVER_IMPLEMENTED, i(163312)),	-- 7th Legionnaire's Shawl
+			un(NEVER_IMPLEMENTED, i(163348)),	-- Warfront Gear Cloak
+			un(NEVER_IMPLEMENTED, i(163364)),	-- Warfront Gear Cloak
+			un(NEVER_IMPLEMENTED, i(146793)),	-- Man'ari Magus Drape
+			un(NEVER_IMPLEMENTED, i(146794)),	-- Sargerei Herald's Cloak
+			un(NEVER_IMPLEMENTED, i(146795)),	-- Terrorfiend Greatcloak
+			un(NEVER_IMPLEMENTED, i(153397)),	-- Salt Starched Shawl
+			un(NEVER_IMPLEMENTED, i(156755)),	-- Drape of Revengeance
+			un(NEVER_IMPLEMENTED, i(154968)),	-- Drape of the Golden City
 			un(NEVER_IMPLEMENTED, i(134617)),	-- Scorching Drape
-			un(NEVER_IMPLEMENTED, i(163245)),	-- 7th legionaire's satin cloak
+			un(NEVER_IMPLEMENTED, i(163245)),	-- 7th Legionnaire's Satin Cloak
 			un(NEVER_IMPLEMENTED, i(150489)),	-- Shroud of Forgiveness
 			un(NEVER_IMPLEMENTED, i(150714)),	-- Travel-Worn Shawl
 			un(NEVER_IMPLEMENTED, i(134579)),	-- Vanguard Cape
@@ -2065,7 +2101,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(54766)),	-- Burnished Gloves
 		un(NEVER_IMPLEMENTED, i(54767)),	-- Burnished Girdle
 		un(NEVER_IMPLEMENTED, i(54768)),	-- Burnished Boots
-		un(NEVER_IMPLEMENTED, i(54769)),	-- Rough Bronze Bracers
+		un(NEVER_IMPLEMENTED, i(54769)),	-- Rough Bronze Bracers -- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
 		un(NEVER_IMPLEMENTED, i(54778)),	-- Burnished Boots (Again)
 		un(NEVER_IMPLEMENTED, i(54781)),	-- Thorbia's Gauntlets
 		un(NEVER_IMPLEMENTED, i(54783)),	-- Silvered Bronze Shoulders
@@ -2121,9 +2157,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, a(model(4805, i(12325)))),	-- Reins of the Primal Leopard 			(Never added in Game)
 		un(NEVER_IMPLEMENTED, a(model(6442, i(12326)))),	-- Reins of the Tawny Sabercat 			(Never added in Game)
 		un(NEVER_IMPLEMENTED, a(model(9714, i(12327)))),	-- Reins of the Golden Sabercat 		(Never added in Game)
-		un(NEVER_IMPLEMENTED, i(156884, {	-- Black Gladiator's Proto-Drake
-			["mountID"] = 262027,
-		})),
 		un(NEVER_IMPLEMENTED, i(156885, {	-- Gold Gladiator's Proto-Drake
 			["mountID"] = 262028,
 		})),
@@ -2155,14 +2188,27 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(163063)),	-- Reins of the spectral phoenix (old trash 100 rep award)
 		un(NEVER_IMPLEMENTED, i(163188)),	-- Surf Jelly (testing version)
 		un(NEVER_IMPLEMENTED, i(163186)),	-- Tempestuous Skystallion (Old 400 Mounts Reward)
-
+		un(NEVER_IMPLEMENTED, i(13323)),	-- Purple Mechanostrider
+		un(NEVER_IMPLEMENTED, i(13324)),	-- Red and Blue Mechanostrider
+		un(NEVER_IMPLEMENTED, i(16343)),	-- Blood Guard's Mount
+		un(NEVER_IMPLEMENTED, i(18768)),	-- Reins of the Swift Dawnsaber
+		un(NEVER_IMPLEMENTED, i(23193)),	-- Naxxramas Deathcharger Reins
+		un(NEVER_IMPLEMENTED, i(28482)),	-- Great Elite Elekk
+		un(NEVER_IMPLEMENTED, i(37827)),	-- Brewfest Kodo
+		un(NEVER_IMPLEMENTED, i(43963)),	-- Reins of the Brown Polar Bear
+		un(NEVER_IMPLEMENTED, i(43964)),	-- Reins of the Black Polar Bear
+		un(NEVER_IMPLEMENTED, i(46101)),	-- Blue Skeletal Warhorse
 	}),
 	n(-162, {	-- Pets
 		un(NEVER_IMPLEMENTED, model(65527, i(129108, {	-- Son of Goredome		 				(Never added in Game)
 			p(1751),
 		}))),
 		un(NEVER_IMPLEMENTED, i(130145)),	-- Unknown
+		un(NEVER_IMPLEMENTED, i(154902)),	-- Perculia's Peculiar Parrot
 		un(NEVER_IMPLEMENTED, i(21168)),	-- Baby Shark
+		un(NEVER_IMPLEMENTED, i(39148)),	-- Baby Coralshell Turtle
+		un(NEVER_IMPLEMENTED, i(66070)),	-- Lizzy
+		un(NEVER_IMPLEMENTED, i(66075)),	-- Bubbles
 		un(NEVER_IMPLEMENTED, i(11903)),	-- Cat Carrier (Corrupted Kitten)
 		un(NEVER_IMPLEMENTED, i(109602)),	-- Echo of Murmur (temp item)
 		un(NEVER_IMPLEMENTED, i(169195)),	-- Golden Cricket
@@ -2294,11 +2340,11 @@ _.NeverImplemented =
 				["itemID"] = 6730,	-- Ironforge Chain
 				["u"] = NEVER_IMPLEMENTED,
 			},
-			{	-- Plans: Ironforge Gauntlets
+			{	-- Plans: Ironforge Gauntlets -- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
 				["itemID"] = 6736,	-- Plans: Ironforge Gauntlets
 				["u"] = NEVER_IMPLEMENTED,
 			},
-			{	-- Ironforge Gauntlets
+			{	-- Ironforge Gauntlets	-- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
 				["itemID"] = 6733,	-- Ironforge Gauntlets
 				["u"] = NEVER_IMPLEMENTED,
 			},
@@ -2310,12 +2356,12 @@ _.NeverImplemented =
 				["itemID"] = 7925,	-- Mithril Scale Gloves
 				["u"] = NEVER_IMPLEMENTED,
 			},
-			{	-- Plans: Rough Bronze Bracers
+			{	-- Plans: Rough Bronze Bracers -- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
 				["itemID"] = 5577,	-- Plans: Rough Bronze Bracers
 				["u"] = NEVER_IMPLEMENTED,
 			},
-			{	-- Rough Bronze Bracers
-				["itemID"] = 2867,	-- Rough Bronze Bracers
+			{	-- Rough Bronze Bracers -- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020 -- Gold
+				["itemID"] = 54769,	-- Rough Bronze Bracers
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Plans: Rune Edge
@@ -3454,6 +3500,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(38568)), 	-- Drakkari Charm Bracelet
 		un(NEVER_IMPLEMENTED, i(134017)), 	-- Don Carlos' Famous Hat (testing version?)
 		un(NEVER_IMPLEMENTED, i(38569)), 	-- Unknown
+		un(NEVER_IMPLEMENTED, i(166851)),	-- Kojo's Master Matching Set (PTR Only)
 		un(NEVER_IMPLEMENTED, i(132132)),	-- Glowing Runstone
 		un(NEVER_IMPLEMENTED, i(157776)),	-- Dire Missive
 		un(NEVER_IMPLEMENTED, i(170484)),	-- dnt torn journal page #14
@@ -3515,6 +3562,9 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(150501)),	-- translucent spellthread necklace
 		un(NEVER_IMPLEMENTED, i(150508)),	-- pendant of titans
 		un(NEVER_IMPLEMENTED, i(150515)),	-- nadina's pendant of purity
+		un(NEVER_IMPLEMENTED, i(166405)),	-- Blindside (TW Vendor?)
+		un(NEVER_IMPLEMENTED, i(166364)),	-- Song of the Fallen (TW Vendor?)
+		un(NEVER_IMPLEMENTED, i(161118)),	-- Marrow Shatter (TW Vendor/Tw drop?)
 	}),
 	n(-319, {	-- Weapons
 		n(-347, {	-- Bows
@@ -3539,6 +3589,7 @@ _.NeverImplemented =
 		n(-346, {	-- Crossbows
 			un(NEVER_IMPLEMENTED, i(32187)),   	-- Chancellor's Heavy Crossbow
 			un(NEVER_IMPLEMENTED, i(108784)),   	-- Unknown
+			un(NEVER_IMPLEMENTED, i(153400)),   	-- [Scalawag's Bolt-Thrower]
 			un(NEVER_IMPLEMENTED, i(111073)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(165267)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(165271)),	-- Unknown
@@ -3740,6 +3791,8 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(64810)),	-- Bloodthirsty Gladiator's Pike (Epic BG item never made it out of beta)))
 			un(NEVER_IMPLEMENTED, i(108799)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109456)),	-- Unknown
+			un(NEVER_IMPLEMENTED, i(153401)),	-- [Whaler's Pike]
+			un(NEVER_IMPLEMENTED, i(154972)),	--  [Tomb-Rustler's Polearm]
 		}),
 		n(-387,	{	-- Relics
 			un(NEVER_IMPLEMENTED, i(132252)),	-- Owen Test Relic
@@ -3855,6 +3908,7 @@ _.NeverImplemented =
 		n(-335, {	-- Two Handed Axes
 			un(NEVER_IMPLEMENTED, i(134563)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(108782)),	-- Unknown
+			un(NEVER_IMPLEMENTED, i(150607)),	-- Greataxe of Fury
 			un(NEVER_IMPLEMENTED, i(150606)),	-- Armsmaster's Greataxe
 			un(NEVER_IMPLEMENTED, i(140711)),	-- Armsmaster's Greataxe
 			un(NEVER_IMPLEMENTED, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
@@ -3917,6 +3971,9 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(109373)),	-- 6.0 QA Combat Test Strength 2h Sword
 			un(NEVER_IMPLEMENTED, i(122747)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(165274)),	-- Unknown
+			un(NEVER_IMPLEMENTED, i(122067)),	-- inexorable greatsword
+			un(NEVER_IMPLEMENTED, i(122067)),	-- inexorable greatsword
+			un(NEVER_IMPLEMENTED, i(129426)),	-- heart-lesion greatsword
 		}),
 		n(-341, {	-- Wands
 			un(NEVER_IMPLEMENTED, i(161924)),	-- Seapriest's Wand (never addedd)
@@ -3933,7 +3990,6 @@ _.NeverImplemented =
 		n(-340, {	-- War Glaives
 			un(NEVER_IMPLEMENTED, i(129735)), 	-- Verus
 			un(NEVER_IMPLEMENTED, i(129736)), 	-- Verus
-			un(NEVER_IMPLEMENTED, i(142526)),	-- Glaive of the Fallen
 			un(NEVER_IMPLEMENTED, i(108807)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(158580)),	-- Loa-Claimer's Wariglaives
 			un(NEVER_IMPLEMENTED, i(151138)), 	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
@@ -4120,4 +4176,5 @@ m(893),		-- Azuremyst Isle (Argus Opening)
 m(889),		-- Arcatraz - scenario map
 m(890),		-- Arcatraz - scenario map
 m(1338),	-- Darkshore (Tyrande's Ascension scenario)
+m(1335),	-- Cooking: Impossible
 };

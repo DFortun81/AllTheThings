@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
@@ -9,7 +10,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(133, {	-- Barn (rank 1: 24, rank 2: 25, rank 3: 133)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-4, {		-- Achievements
+						n(ACHIEVEMENTS, {
 							ach(9452, {		-- Trap Superstar (500)
 								ach(9451),		-- Trapper's Delight (250)
 								ach(9565, {		-- Master Trapper (125)

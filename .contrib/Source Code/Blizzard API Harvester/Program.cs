@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -12,14 +11,23 @@ using System.Threading;
 
 namespace ATT
 {
+    enum ObjType
+    {
+        item = 1,
+        quest = 2
+    }
+
     class Program
     {
-        const string API_CALL = "/data/wow/item/{0}?namespace=static-us&locale=en_US&access_token=";
+        const string API_CALL_ITEM = "/data/wow/item/{0}?namespace=static-us&locale=en_US&access_token=";
+        const string API_CALL_QUEST = "/data/wow/quest/{0}?namespace=static-us&locale=en_US&access_token=";
         static string API_KEY = null;
-        static HttpClient client = new HttpClient();
-        static ConcurrentQueue<Tuple<int, string>> _DataResults = new ConcurrentQueue<Tuple<int, string>>();
-        static ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>> _APIResults = new ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>>();
-        static ConcurrentQueue<string> _ParseDatas = new ConcurrentQueue<string>();
+        static HttpClient Client { get; } = new HttpClient();
+        static bool HasClientInitialized { get; set; } = false;
+        static ConcurrentQueue<Tuple<int, string>> DataResults { get; } = new ConcurrentQueue<Tuple<int, string>>();
+        static ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>> APIResults { get; } = new ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>>();
+        static ConcurrentQueue<string> ParseDatas { get; } = new ConcurrentQueue<string>();
+        static string DateStamp { get; } = DateTime.UtcNow.Year.ToString() + DateTime.UtcNow.Month.ToString("00") + DateTime.UtcNow.Day.ToString("00");
         /// <summary>
         /// Represents how long to wait between API calls on average over an hour (since it will take more than an hour to retrieve all item IDs)
         /// 3,600,000ms / hour / 36,000 API / hour ==> 100ms / API
@@ -33,17 +41,47 @@ namespace ATT
         static string RawDirectoryFormat { get; set; }
         static string RawAPICallFormat { get; set; }
         static int MaxItemID { get; set; } = 180000;
+        static int MaxQuestID { get; set; } = 60000;
         static bool WaitForAPI { get; set; }
         static bool WaitForData { get; set; }
-        static bool WaitForParsing { get; set; }
+        static bool WaitForParseQueue { get; set; }
+        static bool WaitForParsingData { get; set; }
         static string Error { get; set; }
+        static Dictionary<ObjType, bool> ProcessObjects { get; } = new Dictionary<ObjType, bool>();
 
         static void Main(string[] args)
         {
-            Init();
+            Console.WriteLine("Harvester Started!");
 
-            // parse any prior existing RAW files
-            //Parse();
+            ObjType[] parseTypes = (ObjType[])Enum.GetValues(typeof(ObjType));
+            foreach (ObjType parseType in parseTypes)
+            {
+                ProcessObjects[parseType] = false;
+            }
+
+            // can tell harvester to only parse existing datas for a certain date
+            string parseOnlyDate = args.FirstOrDefault(a => a.StartsWith("parse="))?.Substring(6);
+
+            // optionally do only specific API pull types
+            if (args != null && args.Length > 0)
+            {
+                Console.Write("args:");
+                foreach (string arg in args)
+                {
+                    Console.Write(arg + ",");
+                    if (Enum.TryParse(arg, out ObjType parseType))
+                    {
+                        ProcessObjects[parseType] = true;
+                    }
+                }
+            }
+            else
+            {
+                foreach (ObjType parseType in parseTypes)
+                {
+                    ProcessObjects[parseType] = true;
+                }
+            }
 
             // start thread for simply writing data
             Thread threadDataWriter = new Thread(SaveFiles)
@@ -61,30 +99,53 @@ namespace ATT
             };
             threadAPIReceiver.Start();
 
-            // begin harvest from API
-            Harvest();
+            if (ProcessObjects[ObjType.item] && parseOnlyDate == null)
+            {
+                InitItems();
+                // begin item harvest from API
+                Console.WriteLine("Harvesting Items starting at " + MaxItemID.ToString());
+                HarvestItems();
+            }
+
+            // dont switch to quest harvest until items are done
+            while (APIResults.Count > 0 || DataResults.Count > 0) { Thread.Sleep(50); }
+
+            if (ProcessObjects[ObjType.quest] && parseOnlyDate == null)
+            {
+                InitQuests();
+                // begin quest harvest from API
+                Console.WriteLine("Harvesting Quests starting at " + MaxQuestID.ToString());
+                HarvestQuests();
+            }
+
+            // ensure that both API receiver and data writer threads were created before continuing, otherwise can get stuck
+            while (!WaitForData || !WaitForAPI) { Thread.Sleep(50); }
+
+            // stop waiting to capture API results
+            WaitForAPI = false;
 
             // parse any RAW files once completed
-            while (WaitForData || _DataResults.Count > 0) { Thread.Sleep(50); }
+            while (WaitForData || DataResults.Count > 0) { Thread.Sleep(50); }
+
             if (!string.IsNullOrEmpty(Error))
             {
                 Console.WriteLine(Error);
-                Console.ReadKey();
+                //Console.ReadKey();
                 return;
             }
-            Parse();
+            Parse(parseOnlyDate);
 
-            while (WaitForParsing || _ParseDatas.Count > 0) { Thread.Sleep(50); }
+            while (WaitForParseQueue || WaitForParsingData || ParseDatas.Count > 0) { Thread.Sleep(50); }
 
-            Console.ReadLine();
+            //Console.ReadLine();
         }
 
-        private static void Init()
+        private static void InitItems()
         {
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
 
             // Create the output folder for raw data results.
-            var rawDataDirectory = Directory.CreateDirectory("RAW/items");
+            var rawDataDirectory = Directory.CreateDirectory("RAW/items." + DateStamp);
             int existingRaw = rawDataDirectory.GetFiles("*.raw").Length;
             var MaxItemIDFileName = "MaxItemID.txt";
             if (File.Exists(MaxItemIDFileName)) MaxItemID = int.Parse(File.ReadAllText(MaxItemIDFileName));
@@ -92,18 +153,31 @@ namespace ATT
             if (MaxItemID - existingRaw > 36000)
                 API_ExpectedThrottle = API_ThrottleHour;
             RawDirectoryFormat = rawDataDirectory.FullName + "/{0}.raw";
+        }
 
-            // TODO: clear old raw files for re-parse
+        private static void InitQuests()
+        {
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+
+            // Create the output folder for raw data results.
+            var rawDataDirectory = Directory.CreateDirectory("RAW/quests." + DateStamp);
+            int existingRaw = rawDataDirectory.GetFiles("*.raw").Length;
+            var MaxQuestIDFileName = "MaxQuestID.txt";
+            if (File.Exists(MaxQuestIDFileName)) MaxQuestID = int.Parse(File.ReadAllText(MaxQuestIDFileName));
+            else File.WriteAllText(MaxQuestIDFileName, MaxQuestID.ToString());
+            if (MaxQuestID - existingRaw > 36000)
+                API_ExpectedThrottle = API_ThrottleHour;
+            RawDirectoryFormat = rawDataDirectory.FullName + "/{0}.raw";
         }
 
         private static void CaptureAPIResults()
         {
             WaitForAPI = true;
-            while (WaitForAPI || _APIResults.Count > 0)
+            while (WaitForAPI || APIResults.Count > 0)
             {
-                if (_APIResults.Count > 0)
+                if (APIResults.Count > 0)
                 {
-                    if (_APIResults.TryDequeue(out Tuple<int, Task<HttpResponseMessage>> responseData))
+                    if (APIResults.TryDequeue(out Tuple<int, Task<HttpResponseMessage>> responseData))
                     {
                         // get the actual response message from the task
                         try
@@ -117,37 +191,39 @@ namespace ATT
                                 else
                                 {
                                     Console.WriteLine("[" + responseData.Item1.ToString() + "]: FOUND");
-                                    _DataResults.Enqueue(new Tuple<int, string>(responseData.Item1, data));
+                                    DataResults.Enqueue(new Tuple<int, string>(responseData.Item1, data));
                                 }
                             }
                             // queried too fast!
                             else if ((int)response.StatusCode == 429)
                             {
                                 Console.WriteLine("[" + responseData.Item1.ToString() + "]: TOO FAST!");
-                                QueueAPIRequestForItemID(responseData.Item1, true);
+                                QueueAPIRequestForID(responseData.Item1, true);
                             }
                             // item doesn't exist -- save a raw file for it so re-parsing/testing is faster, ugh
                             else if ((int)response.StatusCode == 404)
                             {
                                 Console.WriteLine("[" + responseData.Item1.ToString() + "]: NO EXISTS!");
-                                _DataResults.Enqueue(new Tuple<int, string>(responseData.Item1, "{\"id\":" + responseData.Item1.ToString() + "}"));
+                                DataResults.Enqueue(new Tuple<int, string>(responseData.Item1, "{\"id\":" + responseData.Item1.ToString() + "}"));
                             }
                             // authorization ran out
                             else if (response.StatusCode == HttpStatusCode.Unauthorized)
                             {
-                                Error = "API KEY EXPIRED!";
-                                break;
+                                // dont worry about auth errors i suppose...
+                                Console.WriteLine("[" + responseData.Item1.ToString() + "]: UNAUTHORIZED");
+                                //break;
                             }
                             else
                             {
-                                Error = "UNKNOWN API STATUS: " + response.StatusCode.ToString();
-                                break;
+                                Console.WriteLine("[" + responseData.Item1.ToString() + "]: " + response.StatusCode.ToString());
+                                //Error = "UNKNOWN API STATUS: " + response.StatusCode.ToString();
+                                //break;
                             }
                         }
                         catch
                         {
                             Console.WriteLine("[" + responseData.Item1.ToString() + "]: API EXPLODE!");
-                            QueueAPIRequestForItemID(responseData.Item1, true);
+                            QueueAPIRequestForID(responseData.Item1, true);
                         }
                     }
                 }
@@ -167,11 +243,11 @@ namespace ATT
         private static void SaveFiles()
         {
             WaitForData = true;
-            while (WaitForData || _DataResults.Count > 0)
+            while (WaitForData || DataResults.Count > 0)
             {
-                if (_DataResults.Count > 0)
+                if (DataResults.Count > 0)
                 {
-                    if (_DataResults.TryDequeue(out Tuple<int, string> data))
+                    if (DataResults.TryDequeue(out Tuple<int, string> data))
                     {
                         // Simply write the data for parsing later
                         File.WriteAllText(string.Format(RawDirectoryFormat, data.Item1), data.Item2);
@@ -185,22 +261,9 @@ namespace ATT
             }
         }
 
-        static async Task<string> GetAsync(string path)
+        static void HarvestItems()
         {
-            HttpResponseMessage response = await client.GetAsync(path);
-            if (response.IsSuccessStatusCode)
-            {
-                return await response.Content.ReadAsStringAsync();
-            }
-            return null;
-        }
-
-
-        static void Harvest()
-        {
-            client.BaseAddress = new Uri("https://us.api.blizzard.com");
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            InitClient();
             var APIKeyFileName = "API.key";
             if (File.Exists(APIKeyFileName)) API_KEY = File.ReadAllText(APIKeyFileName);
             else
@@ -209,7 +272,7 @@ namespace ATT
                 Console.ReadLine();
                 return;
             }
-            RawAPICallFormat = API_CALL + API_KEY;
+            RawAPICallFormat = API_CALL_ITEM + API_KEY;
             int i = MaxItemID;
             while (i > 0)
             {
@@ -224,24 +287,61 @@ namespace ATT
                     continue;
                 }
 
-                QueueAPIRequestForItemID(i);
+                QueueAPIRequestForID(i);
                 --i;
             }
-
-            // stop waiting to capture API results
-            WaitForAPI = false;
         }
 
-        private static void QueueAPIRequestForItemID(int i, bool retry = false)
+        static void HarvestQuests()
+        {
+            InitClient();
+            var APIKeyFileName = "API.key";
+            if (File.Exists(APIKeyFileName)) API_KEY = File.ReadAllText(APIKeyFileName);
+            else
+            {
+                Console.WriteLine("You are missing an API.key API Key file! Please get one and try again.");
+                Console.ReadLine();
+                return;
+            }
+            RawAPICallFormat = API_CALL_QUEST + API_KEY;
+            int i = MaxQuestID;
+            while (i > 0)
+            {
+                if (!string.IsNullOrEmpty(Error))
+                    i = 0;
+
+                var filename = string.Format(RawDirectoryFormat, i);
+                if (File.Exists(filename))
+                {
+                    Console.WriteLine("[" + i.ToString() + "]: Already have it!");
+                    --i;
+                    continue;
+                }
+
+                QueueAPIRequestForID(i);
+                --i;
+            }
+        }
+
+        static void InitClient()
+        {
+            if (HasClientInitialized) return;
+            HasClientInitialized = true;
+
+            Client.BaseAddress = new Uri("https://us.api.blizzard.com");
+            Client.DefaultRequestHeaders.Accept.Clear();
+            Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+        }
+
+        private static void QueueAPIRequestForID(int i, bool retry = false)
         {
             // maximum API limits is 100/sec so throttle to that at least
             // dont allow more than 50 simultaneous requests
             // 10ms minimum wait, but need to allow for repeated calls to slip in and can be called from 2 threads
-            int delay = Math.Max(API_ExpectedThrottle, _APIResults.Count);
-            while (!retry && _APIResults.Count > 49) { Thread.Sleep(delay); }
+            int delay = Math.Max(API_ExpectedThrottle, APIResults.Count);
+            while (!retry && APIResults.Count > 49) { Thread.Sleep(delay); }
             Thread.Sleep(delay);
-            _APIResults.Enqueue(new Tuple<int, Task<HttpResponseMessage>>(i, client.GetAsync(string.Format(RawAPICallFormat, i))));
-            ;
+            APIResults.Enqueue(new Tuple<int, Task<HttpResponseMessage>>(i, Client.GetAsync(string.Format(RawAPICallFormat, i))));
         }
 
         static bool TryParseBinding(string binding, out int bindingID)
@@ -272,12 +372,15 @@ namespace ATT
 
         static bool TryParseInventoryType(string inventoryType, out int inventoryTypeID)
         {
+            // https://wow.gamepedia.com/Enum.InventoryType
             switch (inventoryType)
             {
                 // Ignore these.
                 case "AMMO":
                 case "BAG":
                 case "NON_EQUIP":
+                case "QUIVER":
+                case "RELIC":
                     inventoryTypeID = 0;
                     return false;
 
@@ -323,34 +426,51 @@ namespace ATT
                 case "TRINKET":
                 case "TRINKET1":
                 case "TRINKET2":
+                    inventoryTypeID = 12;
+                    return true;
+                case "WEAPON":
                     inventoryTypeID = 13;
+                    return true;
+                case "SHIELD":
+                    inventoryTypeID = 14;
+                    return true;
+                case "RANGED":
+                    inventoryTypeID = 15;
                     return true;
                 case "BACK":
                 case "CLOAK":
-                    inventoryTypeID = 15;
+                    inventoryTypeID = 16;
                     return true;
-                case "HOLDABLE":
-                case "MAINHAND":
-                case "WEAPONMAINHAND":
                 case "TWOHAND":
                 case "TWOWEAPON":
                 case "TWOHWEAPON":
-                case "WEAPON":
-                    inventoryTypeID = 16;
-                    return true;
-                case "OFFHAND":
-                case "WEAPONOFFHAND":
-                case "SHIELD":
                     inventoryTypeID = 17;
                     return true;
-                case "RANGED":
-                case "RANGEDRIGHT":
-                case "THROWN":
-                    inventoryTypeID = 18;
-                    return true;
+                // 18 BAG, ignore
                 case "TABARD":
                     inventoryTypeID = 19;
                     return true;
+                // 20, ROBE = CHEST(5)
+                case "MAINHAND":
+                case "WEAPONMAINHAND":
+                    inventoryTypeID = 21;
+                    return true;
+                case "OFFHAND":
+                case "WEAPONOFFHAND":
+                    inventoryTypeID = 22;
+                    return true;
+                case "HOLDABLE":
+                    inventoryTypeID = 23;
+                    return true;
+                // 24 AMMO, ignore
+                case "THROWN":
+                    inventoryTypeID = 25;
+                    return true;
+                case "RANGEDRIGHT":
+                    inventoryTypeID = 26;
+                    return true;
+                // 27 QUIVER, ignore
+                // 28 RELIC, ignore
                 default:
                     Console.Write("Unhandled Inventory Type ");
                     Console.Write(inventoryType);
@@ -402,9 +522,10 @@ namespace ATT
             }
         }
 
-        static void Parse()
+        static void Parse(string parseOnlyDate)
         {
-            Console.WriteLine("Queueing all of the raw data...");
+            WaitForParseQueue = true;
+            Console.WriteLine("Queueing all of the raw data for " + (parseOnlyDate ?? DateStamp));
 
             // create a separate thread that will handle parsing the individual items
             Thread threadDataParser = new Thread(ParseData)
@@ -414,35 +535,53 @@ namespace ATT
             };
             threadDataParser.Start();
 
-            var rawDataDirectory = Directory.CreateDirectory("RAW/items");
-            var allFiles = rawDataDirectory.EnumerateFiles("*.raw").AsParallel();
-            allFiles.ForAll(EnqueueFileContents);
+            // items
+            if (ProcessObjects[ObjType.item])
+            {
+                var rawDataDirectory = Directory.CreateDirectory("RAW/items." + (parseOnlyDate ?? DateStamp));
+                var allFiles = rawDataDirectory.EnumerateFiles("*.raw").AsParallel();
+                allFiles.ForAll(EnqueueFileContents);
+            }
+            // quests
+            if (ProcessObjects[ObjType.quest])
+            {
+                var rawDataDirectory = Directory.CreateDirectory("RAW/quests." + (parseOnlyDate ?? DateStamp));
+                var allFiles = rawDataDirectory.EnumerateFiles("*.raw").AsParallel();
+                allFiles.ForAll(EnqueueFileContents);
+            }
 
-            WaitForParsing = false;
+            WaitForParseQueue = false;
             Console.WriteLine("Done Queueing the raw data.");
         }
 
         private static void EnqueueFileContents(FileInfo fileInfo)
         {
             var contents = File.ReadAllText(fileInfo.FullName);
-            _ParseDatas.Enqueue(contents);
+            ParseDatas.Enqueue(contents);
         }
 
         private static Dictionary<string, object> ConvertRawData(Dictionary<string, object> subData)
         {
             var dict = new Dictionary<string, object>();
+            // add the type for this data
+            string objType = CheckRawType(subData);
             if (subData.TryGetValue("name", out object o)) dict["name"] = o;
-            if (subData.TryGetValue("id", out o)) dict["itemID"] = o;
+            if (subData.TryGetValue("id", out o)) dict[objType + "ID"] = o;
 
             // New Format 2020-03-26
             if (subData.TryGetValue("level", out int level) && level > 1) dict["iLvl"] = level;
-            if (subData.TryGetValue("required_level", out level) && level > 1) dict["Lvl"] = level;
+            if (subData.TryGetValue("required_level", out level) && level > 1) dict["reqlvl"] = new List<object>() { level };
             if (subData.TryGetValue("is_equippable", out bool b) && b) dict["equippable"] = 1;
+            if (subData.TryGetValue("is_repeatable", out bool isRepeatable) && isRepeatable) dict["repeatable"] = 1;
+            if (subData.TryGetValue("is_daily", out bool isDaily) && isDaily) dict["isDaily"] = 1;
             if (subData.TryGetValue("quality", out Dictionary<string, object> d))
             {
                 if (d.TryGetValue("type", out o) && TryParseQuality(o.ToString(), out int qualityID))
                 {
                     dict["quality"] = qualityID;
+                    // less than UNCOMMON cannot be collected sources
+                    if (qualityID < 2)
+                        dict["ignoreSource"] = true;
                 }
             }
             if (subData.TryGetValue("item_class", out d))
@@ -471,109 +610,7 @@ namespace ATT
                 }
                 if (preview_item.TryGetValue("requirements", out Dictionary<string, object> requirements))
                 {
-                    if (requirements.TryGetValue("skill", out d) && d.TryGetValue("profession", out d))
-                    {
-                        if (d.TryGetValue("id", out int id)) dict["requiredSkill"] = id;
-                    }
-                    if (requirements.TryGetValue("playable_classes", out d) && d.TryGetValue("links", out List<object> l))
-                    {
-                        var list = new List<int>();
-                        foreach (var entry in l)
-                        {
-                            if (entry is Dictionary<string, object> c && c.TryGetValue("id", out int id) && !list.Contains(id)) list.Add(id);
-                        }
-                        list.Sort();
-                        dict["classes"] = list;
-                    }
-                    // 2020-08-19 Blizz seems to have relegated to simply showing ALLIANCE or HORDE for a faction tag instead of listing all races within a given faction
-                    if (requirements.TryGetValue("faction", out d) && d.TryGetValue("value", out Dictionary<string, object> values))
-                    {
-                        if (values.TryGetValue("type", out string faction))
-                        {
-                            if (faction == "HORDE")
-                            {
-                                dict["r"] = 1;
-                            }
-                            else if (faction == "ALLIANCE")
-                            {
-                                dict["r"] = 2;
-                            }
-                            else
-                            {
-                                // new faction hypeeee
-                            }
-                        }
-                    }
-                    // "playable_specializations" is also a possible requirement -- i.e. artifacts
-                    if (requirements.TryGetValue("playable_races", out d) && d.TryGetValue("links", out l))
-                    {
-                        var list = new List<int>();
-                        foreach (var entry in l)
-                        {
-                            if (entry is Dictionary<string, object> c && c.TryGetValue("id", out int id) && !list.Contains(id)) list.Add(id);
-                        }
-
-                        // Check for Blizzard Mistakes (They love messing up Allied Race ID assignments...)
-                        if (list.Contains(34))
-                        {
-                            if (list.Contains(2) && !list.Contains(1))
-                            {
-                                // This was supposed to include Maghar Orcs instead... silly Blizzard!
-                                list.Remove(34);
-                                list.Add(36);
-                            }
-                        }
-                        else if (list.Contains(36))
-                        {
-                            if (!list.Contains(2) && list.Contains(1))
-                            {
-                                // This was supposed to include Dark Iron Dwarves instead... silly Blizzard!
-                                list.Remove(36);
-                                list.Add(34);
-                            }
-                        }
-
-                        if (list.Contains(35))
-                        {
-                            if (list.Contains(2) && !list.Contains(1))
-                            {
-                                // This was supposed to include Mechagnome instead... silly Blizzard!
-                                list.Remove(35);
-                                list.Add(37);
-                            }
-                        }
-                        else if (list.Contains(37))
-                        {
-                            if (!list.Contains(2) && list.Contains(1))
-                            {
-                                // This was supposed to include Vulpera instead... silly Blizzard!
-                                list.Remove(37);
-                                list.Add(35);
-                            }
-                        }
-
-                        if (list.Contains(31))
-                        {
-                            if (list.Contains(2) && !list.Contains(1))
-                            {
-                                // This was supposed to include Kul'Tiran instead... silly Blizzard!
-                                list.Remove(31);
-                                list.Add(32);
-                            }
-                        }
-                        else if (list.Contains(32))
-                        {
-                            if (!list.Contains(2) && list.Contains(1))
-                            {
-                                // This was supposed to include Zandalari Trolls instead... silly Blizzard!
-                                list.Remove(32);
-                                list.Add(31);
-                            }
-                        }
-
-                        list.Sort();
-                        dict["races"] = list;
-                    }
+                    Parse_requirements(dict, requirements);
                 }
                 if (preview_item.TryGetValue("spells", out List<object> spells))
                 {
@@ -675,9 +712,33 @@ namespace ATT
                     }
                 }
             }
+            // quests have requirements raw
+            else if (subData.TryGetValue("requirements", out Dictionary<string, object> requirements))
+            {
+                Parse_requirements(dict, requirements);
+            }
+            // check for area info (used for unsorted quests)
+            if (subData.TryGetValue("area", out Dictionary<string, object> area))
+            {
+                Parse_area(dict, area);
+            }
+            // check for type info (used for unsorted quests)
+            if (subData.TryGetValue("type", out Dictionary<string, object> type))
+            {
+                Parse_type(dict, type);
+            }
+            // check for category info (used for unsorted quests)
+            if (subData.TryGetValue("category", out Dictionary<string, object> category))
+            {
+                Parse_category(dict, category);
+            }
+            // check for rewards info (used for quests)
+            if (subData.TryGetValue("rewards", out Dictionary<string, object> rewards))
+            {
+                Parse_rewards(dict, rewards);
+            }
 
-
-            // Old pre-BFA format
+            #region Old pre-BFA format
             /*
             if (subData.TryGetValue("requiredSkill", out r) && Convert.ToInt32(r) > 0) dict["requiredSkill"] = r;
             if (subData.TryGetValue("itemSpells", out object itemSpellsRef) && itemSpellsRef is List<object> itemSpells && itemSpells.Count > 0)
@@ -785,37 +846,349 @@ namespace ATT
                 }
             }
             */
+            #endregion
 
             return dict;
         }
 
+        /// <summary>
+        /// Parses information from the 'rewards' object into the base dict
+        /// </summary>
+        /// <param name="dict"></param>
+        /// <param name="category"></param>
+        private static void Parse_rewards(Dictionary<string, object> dict, Dictionary<string, object> rewards)
+        {
+            if (rewards.TryGetValue("items", out Dictionary<string, object> itemInfo))
+            {
+                if (itemInfo.TryGetValue("choice_of", out List<object> choices))
+                {
+                    foreach (object choice in choices)
+                    {
+                        if (choice is Dictionary<string, object> choiceInfo)
+                        {
+                            if (choiceInfo.TryGetValue("item", out Dictionary<string, object> item))
+                            {
+                                if (item.TryGetValue("id", out int itemID))
+                                {
+                                    AddGroupItemID(dict, itemID);
+                                }
+                            }
+                        }
+                    }
+                }
+                else if (itemInfo.TryGetValue("items", out List<object> items))
+                {
+                    foreach (object choice in items)
+                    {
+                        if (choice is Dictionary<string, object> choiceInfo)
+                        {
+                            if (choiceInfo.TryGetValue("item", out Dictionary<string, object> item))
+                            {
+                                if (item.TryGetValue("id", out int itemID))
+                                {
+                                    AddGroupItemID(dict, itemID);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private static void AddGroupItemID(Dictionary<string, object> dict, int itemID)
+        {
+            if (!dict.TryGetValue("g", out List<object> items))
+            {
+                dict["g"] = items = new List<object>();
+
+                items.Add(new Dictionary<string, object>() { { "itemID", itemID } });
+            }
+            else
+            {
+                foreach (object item in items)
+                {
+                    if (item is Dictionary<string, object> itemInfo && itemInfo.TryGetValue("itemID", out int existingID) && existingID == itemID)
+                        return;
+                }
+
+                items.Add(new Dictionary<string, object>() { { "itemID", itemID } });
+            }
+        }
+
+        /// <summary>
+        /// Parses information from the 'type' object into the base dict
+        /// </summary>
+        /// <param name="dict"></param>
+        /// <param name="category"></param>
+        private static void Parse_type(Dictionary<string, object> dict, Dictionary<string, object> type)
+        {
+            if (type.TryGetValue("name", out string name))
+            {
+                dict["_type"] = name;
+            }
+        }
+
+        /// <summary>
+        /// Parses information from the 'category' object into the base dict
+        /// </summary>
+        /// <param name="dict"></param>
+        /// <param name="category"></param>
+        private static void Parse_category(Dictionary<string, object> dict, Dictionary<string, object> category)
+        {
+            if (category.TryGetValue("name", out string name))
+            {
+                dict["_category"] = name;
+            }
+        }
+
+        /// <summary>
+        /// Parses information from the 'area' object into the base dict
+        /// </summary>
+        /// <param name="dict"></param>
+        /// <param name="area"></param>
+        private static void Parse_area(Dictionary<string, object> dict, Dictionary<string, object> area)
+        {
+            if (area.TryGetValue("name", out string name))
+            {
+                dict["_area"] = name;
+            }
+        }
+
+        /// <summary>
+        /// Parses information from the 'requirements' object into the base dict
+        /// </summary>
+        /// <param name="dict"></param>
+        /// <param name="requirements"></param>
+        private static void Parse_requirements(Dictionary<string, object> dict, Dictionary<string, object> requirements)
+        {
+            if (requirements.TryGetValue("skill", out Dictionary<string, object> d) && d.TryGetValue("profession", out d))
+            {
+                if (d.TryGetValue("id", out int id)) dict["requiredSkill"] = id;
+            }
+            requirements.TryGetValue("min_character_level", out int minlvl);
+            //requirements.TryGetValue("max_character_level", out int maxlvl);
+            //if (minlvl > 0 && maxlvl > 0)
+            //{
+            //    dict["reqlvl"] = new List<object>() { minlvl, maxlvl };
+            //}
+            //else 
+            if (minlvl > 0)
+            {
+                dict["reqlvl"] = new List<object>() { minlvl };
+            }
+            if (requirements.TryGetValue("playable_classes", out d) && d.TryGetValue("links", out List<object> l))
+            {
+                var list = new List<int>();
+                foreach (var entry in l)
+                {
+                    if (entry is Dictionary<string, object> c && c.TryGetValue("id", out int id) && !list.Contains(id)) list.Add(id);
+                }
+                list.Sort();
+                dict["classes"] = list;
+            }
+            // 2020-08-19 Blizz seems to have relegated to simply showing ALLIANCE or HORDE for a faction tag instead of listing all races within a given faction
+            if (requirements.TryGetValue("faction", out d))
+            {
+                // items path: factions/value/type/[NAME]
+                if (d.TryGetValue("value", out Dictionary<string, object> values))
+                {
+                    if (values.TryGetValue("type", out string faction))
+                    {
+                        if (faction == "HORDE")
+                        {
+                            dict["r"] = 1;
+                        }
+                        else if (faction == "ALLIANCE")
+                        {
+                            dict["r"] = 2;
+                        }
+                        else
+                        {
+                            // new faction hypeeee
+                        }
+                    }
+                }
+                // quests path: factions/type/[NAME] // ah consistency
+                else if (d.TryGetValue("type", out string faction))
+                {
+                    if (faction == "HORDE")
+                    {
+                        dict["r"] = 1;
+                    }
+                    else if (faction == "ALLIANCE")
+                    {
+                        dict["r"] = 2;
+                    }
+                    else
+                    {
+                        // new faction hypeeee
+                    }
+                }
+            }
+            // "playable_specializations" is also a possible requirement -- i.e. artifacts
+            if (requirements.TryGetValue("playable_races", out d))
+            {
+                Parse_playable_races(dict, d);
+            }
+            else if (requirements.TryGetValue("races", out List<object> race_list))
+            {
+                Parse_races(dict, race_list);
+            }
+        }
+
+        /// <summary>
+        /// Parses a 'playable_races' dictionary into a list of races for the data
+        /// </summary>
+        /// <param name="dict"></param>
+        /// <param name="races"></param>
+        private static void Parse_playable_races(Dictionary<string, object> dict, Dictionary<string, object> races)
+        {
+            // items have a 'links' object containing the race requirements
+            if (races.TryGetValue("links", out List<object> l))
+            {
+                Parse_races(dict, l);
+            }
+        }
+
+        /// <summary>
+        /// Parses a 'races' list of objects into a list of races for the data
+        /// </summary>
+        /// <param name="dict"></param>
+        /// <param name="l"></param>
+        private static void Parse_races(Dictionary<string, object> dict, List<object> l)
+        {
+            var list = new List<int>();
+            foreach (var entry in l)
+            {
+                if (entry is Dictionary<string, object> c && c.TryGetValue("id", out int id) && !list.Contains(id)) list.Add(id);
+            }
+
+            // Check for Blizzard Mistakes (They love messing up Allied Race ID assignments...)
+            //if (list.Contains(34))
+            //{
+            //    if (list.Contains(2) && !list.Contains(1))
+            //    {
+            //        // This was supposed to include Maghar Orcs instead... silly Blizzard!
+            //        list.Remove(34);
+            //        list.Add(36);
+            //    }
+            //}
+            //else if (list.Contains(36))
+            //{
+            //    if (!list.Contains(2) && list.Contains(1))
+            //    {
+            //        // This was supposed to include Dark Iron Dwarves instead... silly Blizzard!
+            //        list.Remove(36);
+            //        list.Add(34);
+            //    }
+            //}
+
+            //if (list.Contains(35))
+            //{
+            //    if (list.Contains(2) && !list.Contains(1))
+            //    {
+            //        // This was supposed to include Mechagnome instead... silly Blizzard!
+            //        list.Remove(35);
+            //        list.Add(37);
+            //    }
+            //}
+            //else if (list.Contains(37))
+            //{
+            //    if (!list.Contains(2) && list.Contains(1))
+            //    {
+            //        // This was supposed to include Vulpera instead... silly Blizzard!
+            //        list.Remove(37);
+            //        list.Add(35);
+            //    }
+            //}
+
+            //if (list.Contains(31))
+            //{
+            //    if (list.Contains(2) && !list.Contains(1))
+            //    {
+            //        // This was supposed to include Kul'Tiran instead... silly Blizzard!
+            //        list.Remove(31);
+            //        list.Add(32);
+            //    }
+            //}
+            //else if (list.Contains(32))
+            //{
+            //    if (!list.Contains(2) && list.Contains(1))
+            //    {
+            //        // This was supposed to include Zandalari Trolls instead... silly Blizzard!
+            //        list.Remove(32);
+            //        list.Add(31);
+            //    }
+            //}
+
+            list.Sort();
+            dict["races"] = list;
+        }
+
+        /// <summary>
+        /// Pulls the _links/self/href path of the nested dictionaries to verify the type of this raw data
+        /// </summary>
+        /// <param name="subData"></param>
+        /// <returns></returns>
+        private static string CheckRawType(Dictionary<string, object> subData)
+        {
+            if (subData.TryGetValue("_links", out Dictionary<string, object> links))
+            {
+                if (links.TryGetValue("self", out Dictionary<string, object> self))
+                {
+                    if (self.TryGetValue("href", out string href))
+                    {
+                        string[] urlChunks = href.Split('/');
+                        // https://us.api.blizzard.com/data/wow/quest/2?namespace=static-8.3.7_35114-us
+                        if (urlChunks.Length > 1)
+                            return urlChunks[urlChunks.Length - 2];
+                    }
+                }
+            }
+            return "UNKNOWN";
+        }
+
         private static void ParseData()
         {
-            WaitForParsing = true;
-            var data = new SortedList<int, object>();
-            while (WaitForParsing || _ParseDatas.Count > 0)
+            var dataItems = new SortedList<int, object>();
+            var dataQuests = new SortedList<int, object>();
+            WaitForParsingData = true;
+            while (WaitForParseQueue || ParseDatas.Count > 0)
             {
-                if (_ParseDatas.TryDequeue(out string contents))
+                // TODO: do in parallel once queueing is done
+                if (ParseDatas.TryDequeue(out string contents))
                 {
                     if (MiniJSON.Json.Deserialize(contents) is Dictionary<string, object> rawData)
                     {
                         if (NonEmptyRawData(rawData))
                         {
                             Dictionary<string, object> parsed = ConvertRawData(rawData);
-                            if (parsed.TryGetValue("itemID", out object id) && int.TryParse(id.ToString(), out int idVal))
+                            // only put things in the DB if they have more than just an ID
+                            if (parsed != null && parsed.Count > 1)
                             {
-                                Console.WriteLine("Parsed: " + id.ToString() + "\t\tQueue: " + _ParseDatas.Count.ToString());
-                                data.Add(idVal, parsed);
+                                if (parsed.TryGetValue("itemID", out object itemID) && int.TryParse(itemID.ToString(), out int itemVal))
+                                {
+                                    Console.WriteLine("Parsed Item : " + itemID.ToString() + "\t\tQueue: " + ParseDatas.Count.ToString());
+                                    dataItems.Add(itemVal, parsed);
+                                }
+                                else if (parsed.TryGetValue("questID", out object questID) && int.TryParse(questID.ToString(), out int questVal))
+                                {
+                                    Console.WriteLine("Parsed Quest: " + questID.ToString() + "\t\tQueue: " + ParseDatas.Count.ToString());
+                                    dataQuests.Add(questVal, parsed);
+                                }
                             }
                         }
                     }
                 }
             }
 
-            DateTime now = DateTime.UtcNow;
-            string datestamp = now.Year.ToString() + now.Month.ToString("00") + now.Day.ToString("00");
-            File.WriteAllText("itemDB-" + datestamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "items", data.Values.ToList() } }));
+            if (ProcessObjects[ObjType.item])
+                File.WriteAllText("itemDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "items", dataItems.Values.ToList() } }));
+            if (ProcessObjects[ObjType.quest])
+                File.WriteAllText("questDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "quests", dataQuests.Values.ToList() } }));
+
             Console.WriteLine("Done exporting the data.");
+            WaitForParsingData = false;
         }
 
         /// <summary>

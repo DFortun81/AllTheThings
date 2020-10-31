@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -53,7 +54,7 @@ _.Zones =
 					["provider"] = { "n", 43270 },	-- Messner
 					["coord"] = { 47.5, 41.8, 49 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = 26586,	-- In Search of Bravo Company
+					["sourceQuests"] = { 26586 },	-- In Search of Bravo Company
 				}),
 				q(26514, {	-- Canyon Romp
 					["provider"] = { "n", 344 },	-- Magistrate Solomon
@@ -352,7 +353,7 @@ _.Zones =
 						10371,	-- Yorus Barleybrew (Draenei)
 					},
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -361,7 +362,7 @@ _.Zones =
 					["coord"] = { 26.8, 44.8, 49 },
 					["sourceQuest"] = 1699,	-- The Rethban Gauntlet
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

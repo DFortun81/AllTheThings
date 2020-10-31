@@ -211,7 +211,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(23, {	-- Mythic
-				n(-4, {	-- Achievements
+				n(ACHIEVEMENTS, {
 					ach(11433, {	-- Burn After Reading
 						crit(1, {	-- Legacy of the Mountain King
 							["itemID"] = 142049,	-- Legacy of the Mountain King
@@ -438,7 +438,6 @@ _.Instances = { tier(7, {	-- Legion
 						i(142142),	-- Unbound Reality Mask
 						i(142306),	-- Rift Stabilization Shard
 						i(142182),	-- Viz'aduum's Mindstone
-						i(146698),	-- Torn Bracers of the First War (Leatherworking QI)
 					},
 				}),
 			}),

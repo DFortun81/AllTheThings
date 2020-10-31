@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -581,30 +581,30 @@ _.Zones =
 										i(163877),	-- Honorbound Warglaive
 										i(163357, {	-- Honorbound Artificer's Cloak
 											["classes"] = {
-												5,	-- Priest
-												8,	-- Mage
-												9,	-- Warlock
+												PRIEST,
+												MAGE,
+												WARLOCK,
 											},
 										}),
 										i(163360, {	-- Honorbound Outrider's Drape
 											["classes"] = {
-												11,	-- Druid
-												4,	-- Rogue
-												10,	-- Monk
-												12,	-- Demon Hunter
+												DRUID,
+												ROGUE,
+												MONK,
+												DEMONHUNTER,
 											},
 										}),
 										i(163366, {	-- Honorbound Vanguard's Cloak
 											["classes"] = {
-												3,	-- Hunter
-												7,	-- Shaman
+												HUNTER,
+												SHAMAN,
 											},
 										}),
 										i(163368, {	-- Honorbound Centurion's Long Cloak
 											["classes"] = {
-												2,	-- Paladin
-												1,	-- Warrior
-												6,	-- Death Knight
+												PALADIN,
+												WARRIOR,
+												DEATHKNIGHT,
 											},
 										}),
 										i(163426),	-- Honorbound Artificer's Guise
@@ -650,7 +650,7 @@ _.Zones =
 							},
 						}),
 						q(53208, {	-- To The Front
-							["sourceQuests"] = { 138949 },	-- The Warfront Looms
+							["sourceQuests"] = { 53207 },	-- The Warfront Looms
 							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 							["coord"] = { 52.97, 94.35, 1165 },
 							["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag

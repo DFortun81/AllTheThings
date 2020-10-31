@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
@@ -197,7 +198,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(-212, {	-- Treasure Chest
+				n(TREASURES, {
 					o(246309, {	-- Small Treasure Chest
 						["questID"] = 40797,
 						["coord"] = { 23.1, 53.9, 672 },
@@ -443,7 +444,7 @@ _.Zones =
 								},
 							}),
 						}),
-						n(-212, {	-- Treasure Chest
+						n(TREASURES, {
 							o(246555, {	-- Small Treasure Chest
 								["questID"] = 40909,
 								["coord"] = { 58.7, 34.7, 677 },

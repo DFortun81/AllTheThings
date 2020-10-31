@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -10,6 +11,93 @@ _.Zones =
 					["coord"] = { 76.7, 35.6, 85 },
 					["g"] = {
 						i(166805),	-- Blood-Soaked Invitation (QI)
+					},
+				}),
+				n(175050, {	-- Aneka Melae
+					["coord"] = { 37.5, 71.4, 85 },
+					["g"] = {
+						n(-659, {	-- Aspirant PvP Gear
+							n(-319, {	-- Weapons
+								i(172881),	-- Corrupted Aspirant's Chopper (H)
+								i(174012),	-- Corrupted Aspirant's Claw (H)
+								i(172879),	-- Corrupted Aspirant's Cleaver (H)
+								i(174014),	-- Corrupted Aspirant's Decapitator (H)
+								i(172873),	-- Corrupted Aspirant's Gavel (H)
+								i(172885),	-- Corrupted Aspirant's Greatsword (H)
+								i(172871),	-- Corrupted Aspirant's Longbow (H)
+								i(172883),	-- Corrupted Aspirant's Pike (H)
+								i(172875),	-- Corrupted Aspirant's Pummeler (H)
+								i(172867),	-- Corrupted Aspirant's Reprieve (H)
+								i(174016),	-- Corrupted Aspirant's Rifle (H)
+								i(172861),	-- Corrupted Aspirant's Shanker (H)
+								i(172869),	-- Corrupted Aspirant's Shield Wall (H)
+								i(172877),	-- Corrupted Aspirant's Slicer (H)
+								i(174010),	-- Corrupted Aspirant's Spellblade (H)
+								i(172860),	-- Corrupted Aspirant's Stabber (H)
+								i(172865),	-- Corrupted Aspirant's Staff (H)
+								i(172863),	-- Corrupted Aspirant's Wand (H)
+								i(174018),	-- Corrupted Aspirant's War Staff (H)
+								i(172887),	-- Corrupted Aspirant's Warglaive (H)
+							}),
+							n(-43, {	-- Cloth
+								i(172787),	-- Corrupted Aspirant's Silk Cord (H)
+								i(172786),	-- Corrupted Aspirant's Silk Cuffs (H)
+								i(172782),	-- Corrupted Aspirant's Silk Gloves (H)
+								i(172783),	-- Corrupted Aspirant's Silk Hood (H)
+								i(172784),	-- Corrupted Aspirant's Silk Leggings (H)
+								i(172785),	-- Corrupted Aspirant's Silk Mantle (H)
+								i(172780),	-- Corrupted Aspirant's Silk Robe (H)
+								i(172781),	-- Corrupted Aspirant's Silk Treads (H)
+							}),
+							n(-44, {	-- Leather
+								i(172794),	-- Corrupted Aspirant's Leather Belt (H)
+								i(172795),	-- Corrupted Aspirant's Leather Bindings (H)
+								i(172789),	-- Corrupted Aspirant's Leather Boots (H)
+								i(172790),	-- Corrupted Aspirant's Leather Gloves (H)
+								i(172791),	-- Corrupted Aspirant's Leather Helm (H)
+								i(172792),	-- Corrupted Aspirant's Leather Legguards (H)
+								i(172793),	-- Corrupted Aspirant's Leather Spaulders (H)
+								i(172788),	-- Corrupted Aspirant's Leather Tunic (H)
+							}),
+							n(-45, {	-- Mail
+								i(172803),	-- Corrupted Aspirant's Chain Armbands (H)
+								i(172796),	-- Corrupted Aspirant's Chain Armor (H)
+								i(172798),	-- Corrupted Aspirant's Chain Gauntlets (H)
+								i(172799),	-- Corrupted Aspirant's Chain Helm (H)
+								i(172800),	-- Corrupted Aspirant's Chain Leggings (H)
+								i(172797),	-- Corrupted Aspirant's Chain Sabatons (H)
+								i(172801),	-- Corrupted Aspirant's Chain Spaulders (H)
+								i(172802),	-- Corrupted Aspirant's Chain Waistguard (H)
+							}),
+							n(-46, {	-- Plate
+								i(172811),	-- Corrupted Aspirant's Plate Armguards (H)
+								i(172805),	-- Corrupted Aspirant's Plate Chestpiece (H)
+								i(172807),	-- Corrupted Aspirant's Plate Gauntlets (H)
+								i(172810),	-- Corrupted Aspirant's Plate Girdle (H)
+								i(172804),	-- Corrupted Aspirant's Plate Helm (H)
+								i(172808),	-- Corrupted Aspirant's Plate Legguards (H)
+								i(172809),	-- Corrupted Aspirant's Plate Pauldrons (H)
+								i(172806),	-- Corrupted Aspirant's Plate Warboots (H)
+							}),
+							--[[n(-322, {	-- Back
+								i(172857),	-- Corrupted Aspirant's Cape (A)
+								i(172856),	-- Corrupted Aspirant's Drape (A)
+								i(172854),	-- Corrupted Aspirant's Shawl (A)
+								i(172853),	-- Corrupted Aspirant's Cape (H)
+								i(172852),	-- Corrupted Aspirant's Drape (H)
+								i(172850),	-- Corrupted Aspirant's Shawl (H)
+							}),--]]
+							n(-385, {	-- Finger
+								i(172845),	-- Corrupted Aspirant's Band
+								i(172844),	-- Corrupted Aspirant's Ring
+							}),
+							n(-386, {	-- Trinkets
+								i(172849),	-- Corrupted Aspirant's Badge
+								i(172847),	-- Corrupted Aspirant's Emblem
+								i(172848),	-- Corrupted Aspirant's Insignia
+								i(172846),	-- Corrupted Aspirant's Medallion
+							}),
+						}),
 					},
 				}),
 				n(52809,  {	-- Blax Bottlerocket <Toys and Novelties>
@@ -435,7 +523,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(41589)),	-- battlemaster's resolve
 						un(REMOVED_FROM_GAME, i(41590)),	-- battlemaster's courage
 						un(REMOVED_FROM_GAME, i(33056)),	-- Veteran's Band of Dominance
-						un(REMOVED_FROM_GAME, i(33057)),	-- Veteran's Band of Triumph 
+						un(REMOVED_FROM_GAME, i(33057)),	-- Veteran's Band of Triumph
 						un(REMOVED_FROM_GAME, i(33064)),	-- Veteran's Band of Salvation
 						un(REMOVED_FROM_GAME, i(33853)),	-- Vindicator's Band of Dominance
 						un(REMOVED_FROM_GAME, i(35320)),	-- Vindicator's Band of subjugation
@@ -511,7 +599,7 @@ _.Zones =
 							un(REMOVED_FROM_GAME, i(70642)),	-- Vicious Gladiator's Sabatons of Medi. S10 Version
 							un(REMOVED_FROM_GAME, i(70665)),	-- Vicious Gladiator's Waistguard of Cruelty. S10 Version
 							un(REMOVED_FROM_GAME, i(70666)),	-- Vicious Gladiator's Waistguard of Medi. S10 Version
-							un(REMOVED_FROM_GAME, i(70513)),	-- Vicious Gladiator's armplates of alacrity. S10 Version 
+							un(REMOVED_FROM_GAME, i(70513)),	-- Vicious Gladiator's armplates of alacrity. S10 Version
 							un(REMOVED_FROM_GAME, i(70514)),	-- Vicious Gladiator's armplates of proficiency. S10 Version
 							un(REMOVED_FROM_GAME, i(70529)),	-- Vicious Gladiator's bracers of meditation. S10 Version
 							un(REMOVED_FROM_GAME, i(70530)),	-- Vicious Gladiator's bracers of prowess. S10 Version
@@ -630,7 +718,7 @@ _.Zones =
 				n(12795,  {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
-					["coord"] = { 38.2, 72.6, 85 }, 
+					["coord"] = { 38.2, 72.6, 85 },
 					["g"] = {
 						i(28377), 	-- Sergeant's Heavy Cloak
 						i(28378), 	-- Sergeant's Heavy Cape
@@ -768,7 +856,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(30345)),	-- medallion of the horde (shaman)
 						un(REMOVED_FROM_GAME, i(37865)),	-- medallion of the horde (epic)
 						un(REMOVED_FROM_GAME, i(38588)),	-- Medallion of the horde (dk)
-						un(REMOVED_FROM_GAME, i(69862)),	-- Medallion of the horde 
+						un(REMOVED_FROM_GAME, i(69862)),	-- Medallion of the horde
 						un(REMOVED_FROM_GAME, i(34576)),	-- battlemaster's cruelty
 						un(REMOVED_FROM_GAME, i(34577)),	-- battlemaster's depravity
 						un(REMOVED_FROM_GAME, i(34578)),	-- battlemaster's determination
@@ -3091,9 +3179,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29466),	-- Black War Kodo
+						un(REMOVED_FROM_GAME, i(18247)),	-- Black War Kodo. Pre 2.0 Version
 						i(29469),	-- Horn of the Black War Wolf
+						un(REMOVED_FROM_GAME, i(18245)),	-- Horn of the Black War Wolf. Pre 2.0 Version
 						i(29470),	-- Red Skeletal Warhorse
+						un(REMOVED_FROM_GAME, i(18248)),	-- Red Skeletal Warhorse. Pre 2.0 Version
 						i(29472),	-- Whistle of the Black War Raptor
+						un(REMOVED_FROM_GAME, i(18246)),	-- Whistle of the Black War Raptor. Pre 2.0 Version
 						i(34129),	-- Swift Warstrider
 					},
 				}),
@@ -4192,7 +4284,7 @@ _.Zones =
 						i(67064, {	-- Pattern: Vicious Charscale Belt
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
-						i(67063, {	-- Pattern: Vicious Charscale Boots	
+						i(67063, {	-- Pattern: Vicious Charscale Boots
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
 						i(67049, {	-- Pattern: Vicious Charscale Bracers
@@ -4270,7 +4362,7 @@ _.Zones =
 						i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
-						i(67075, {	-- Pattern: Vicious Wyrmhide Chest	
+						i(67075, {	-- Pattern: Vicious Wyrmhide Chest
 							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
 						}),
 						i(67056, {	-- Pattern: Vicious Wyrmhide Gloves
@@ -4520,52 +4612,52 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(91008, { 	-- Black Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
 						i(87795), 	-- Black Dragon Turtle
 						i(91009, {	-- Blue Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
-						i(87796), 	-- Blue Dragon Turtle 
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
+						i(87796), 	-- Blue Dragon Turtle
 						i(91005, { 	-- Brown Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
-						i(87797),	-- Brown Dragon Turtle 
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
+						i(87797),	-- Brown Dragon Turtle
 						i(91011, {	-- Great Black Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
-						i(87802),	-- Great Black Dragon Turtle 
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
+						i(87802),	-- Great Black Dragon Turtle
 						i(91013, {	-- Great Blue Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
 						i(87803),	-- Great Blue Dragon Turtle
 						i(91014, {	-- Great Brown Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
 						i(87804),	-- Great Brown Dragon Turtle
 						i(91012, {	-- Great Green Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
 						i(87801),	-- Great Green Dragon Turtle
 						i(91015, {	-- Great Purple Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
-						i(87805),	-- Great Purple Dragon Turtle 
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
+						i(87805),	-- Great Purple Dragon Turtle
 						i(91010, {	-- Great Red Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
-						i(82811),	-- Great Red Dragon Turtle 
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
+						i(82811),	-- Great Red Dragon Turtle
 						i(91004, {	-- Green Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
 						i(82765),	-- Green Dragon Turtle
 						i(91006, {	-- Purple Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
 						i(87799),	-- Purple Dragon Turtle
 						i(91007, {	-- Red Dragon Turtle (Panda)
-							["races"] = { 25, 26 },
-						}),			
+							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+						}),
 						i(87800),	-- Red Dragon Turtle
 						un(REMOVED_FROM_GAME, i(91016)),	-- Reins of the Great Red Dragon Turtle (Never Implemented?)
 					},

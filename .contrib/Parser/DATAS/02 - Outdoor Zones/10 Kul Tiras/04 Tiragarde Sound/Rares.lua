@@ -1,6 +1,7 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
@@ -28,7 +29,7 @@ _.Zones =
 							["criteriaID"] = 4,	-- Shanty of Josephus [Criteria]
 						}),
 					}),
-				}),		
+				}),
 				n(132068, {	-- Bashmu
 					["questID"] = 50094,
 					["coord"] = { 34.6, 30.2, 895 },
@@ -170,7 +171,7 @@ _.Zones =
 				n(139290, {	-- Maison the Portable
 					["questID"] = 51880,
 					["coord"] = { 58.3, 49.3, 895 },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(154458),	-- Shellbreaker Warhelm
 						crit(14, {	-- Maison the Portable
 							["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
@@ -341,13 +342,13 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(132052, {	-- Vol'Jim			
+				n(132052, {	-- Vol'Jim
 					["description"] = "It looks like this NPC didn't make it to live from beta.",
 					["u"] = NEVER_IMPLEMENTED,
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-						un(NEVER_IMPLEMENTED, i(155074)),	-- Toll Enforcer	
-					}),	
-				}),		
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+						un(NEVER_IMPLEMENTED, i(155074)),	-- Toll Enforcer
+					}),
+				}),
 				n(137176, {	-- Walter Ferrell
 					["questID"] = 51321,
 					["coord"] = { 64.2, 19.2, 895 },

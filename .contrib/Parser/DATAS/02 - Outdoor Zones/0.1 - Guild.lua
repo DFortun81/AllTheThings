@@ -1,10 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
-	{	-- Faction
-		["npcID"] = -6013,	-- Factions
+	n(FACTIONS, {
 		["maps"] = {
 			89,		-- Darnassus
 			125,	-- Dalaran: Northrend
@@ -200,11 +200,7 @@ _.Zones =
 						},
 					}),
 					--]]
-					
 					-- Items that are listed in the achievement above have been commented out below to prevent unnecessary duplication.
-					
-					
-					
 					-- Mounts
 					--[[
 					{	-- Reins of the Dark Phoenix - Exalted
@@ -223,7 +219,6 @@ _.Zones =
 					{	-- Reins of the Kor'kron Annihilator - Exalted
 						["itemID"] = 67107,	-- Reins of the Kor'kron Annihilator
 					},
-					
 					-- Pets
 					--[[
 					{	-- Armadillo Pup - Revered
@@ -243,7 +238,6 @@ _.Zones =
 						["itemID"] = 71033,	-- Lil' Tarecgosa
 					},
 					--]]
-					
 					-- Recipes
 					--[[
 					{	-- Recipe: Big Cauldron of Battle
@@ -259,7 +253,6 @@ _.Zones =
 						["itemID"] = 62800,	-- Recipe: Seafood Magnifique Feast
 					},
 					--]]
-					
 					{	-- Illustrious Guild Tabard - Friendly
 						["itemID"] = 69209,	-- Illustrious Guild Tabard
 					},
@@ -320,7 +313,6 @@ _.Zones =
 					h({	-- Wrap of Unity - Honored
 						["itemID"] = 63207,	-- Wrap of Unity
 					}),
-					
 					-- Helms
 					{	-- Burnished Helm of Might - Friendly
 						["itemID"] = 122263,	-- Burnished Helm of Might
@@ -346,7 +338,6 @@ _.Zones =
 					{	-- Tattered Dreadmist Mask - Friendly
 						["itemID"] = 122250,	-- Tattered Dreadmist Mask
 					},
-					
 					-- Cloaks
 					{	-- Ancient Bloodmoon Cloak - Friendly
 						["itemID"] = 122262,	-- Ancient Bloodmoon Cloak
@@ -360,7 +351,6 @@ _.Zones =
 					{	-- Worn Stoneskin Gargoyle Cape - Friendly
 						["itemID"] = 122260,	-- Worn Stoneskin Gargoyle Cape
 					},
-					
 					-- Legs
 					{	-- Burnished Legplates of Might - Honored
 						["itemID"] = 122264,	-- Burnished Legplates of Might
@@ -386,7 +376,6 @@ _.Zones =
 					{	-- Tattered Dreadmist Leggings - Honored
 						["itemID"] = 122256,	-- Tattered Dreadmist Leggings
 					},
-					
 					{	-- Banner of Cooperation
 						["itemID"] = 64400,	-- Banner of Cooperation
 					},
@@ -405,5 +394,5 @@ _.Zones =
 				},
 			}),
 		},
-	},
+	}),
 };

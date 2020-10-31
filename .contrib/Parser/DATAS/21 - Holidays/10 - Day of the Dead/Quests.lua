@@ -1,6 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
 _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 {
 	holiday(307365, {	-- Day of the Dead
@@ -9,7 +10,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 				["provider"] = { "n", 34484 },	-- Cheerful Draenei Spirit
 				["isYearly"] = true,
 				["coord"] = { 47.6, 55.8, 97 },
-				["races"] = { 11 },	-- Draenei
+				["races"] = { DRAENEI },
 				["maps"] = { 97 },	-- Azuremyst Isle
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
@@ -33,10 +34,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(14170, {	-- The Grateful Dead — Darnassus, Night Elf / Void Elf
 				["provider"] = { "n", 34479 },	-- Cheerful Night Elf Spirit
 				["isYearly"] = true,
-				["races"] = {
-					4,	-- Night Elf
-					29,	-- Void Elf
-				},
+				["races"] = { NIGHTELF, VOIDELF },
 				["coord"] = { 68.6, 40.6, 89 },
 				["maps"] = { 89 },	-- Darnassus
 				["g"] = {
@@ -46,7 +44,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(27846, {	-- The Grateful Dead — Darnassus, Worgen
 				["provider"] = { "n", 46908 },	-- Cheerful Worgen Spirit
 				["isYearly"] = true,
-				["races"] = { 22 },	-- Worgen
+				["races"] = { WORGEN },
 				["coord"] = { 68.6, 40.6, 89 },
 				["maps"] = { 89 },	-- Darnassus
 				["g"] = {
@@ -56,7 +54,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(14167, {	-- The Grateful Dead — Dun Morogh, Dwarf
 				["provider"] = { "n", 34478 },	-- Cheerful Dwarf Spirit
 				["isYearly"] = true,
-				["races"] = { 3 },	-- Dwarf
+				["races"] = { DWARF },
 				["coord"] = { 61.6, 37.4, 27 },
 				["maps"] = { 27 },	-- Dun Moroghs
 				["g"] = {
@@ -66,7 +64,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(14168, {	-- The Grateful Dead — Dun Morogh, Gnome
 				["provider"] = { "n", 34481 },	-- Cheerful Gnome Spirit
 				["isYearly"] = true,
-				["races"] = { 7 },	-- Gnome
+				["races"] = { GNOME },
 				["coord"] = { 61.6, 37.4, 27 },
 				["maps"] = { 27 },	-- Dun Moroghs
 				["g"] = {
@@ -76,7 +74,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(27841, {	-- The Grateful Dead — Durotar, Goblin
 				["provider"] = { "n", 46901 },	-- Cheerful Goblin Spirit
 				["isYearly"] = true,
-				["races"] = { 9 },	-- Goblin
+				["races"] = { GOBLIN },
 				["coord"] = { 47.4, 17.6, 1 },
 				["maps"] = { 1 },	-- Durotar
 				["g"] = {
@@ -86,7 +84,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(14175, {	-- The Grateful Dead — Durotar, Orc
 				["provider"] = { "n", 34477 },	-- Cheerful Orc Spirit
 				["isYearly"] = true,
-				["races"] = { 2 },	-- Orc
+				["races"] = { ORC },
 				["coord"] = { 47.4, 17.6, 1 },
 				["maps"] = { 1 },	-- Durotar
 				["g"] = {
@@ -96,7 +94,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(14177, {	-- The Grateful Dead — Durotar, Troll
 				["provider"] = { "n", 34482 },	-- Cheerful Troll Spirit
 				["isYearly"] = true,
-				["races"] = { 8 },	-- Troll
+				["races"] = { TROLL },
 				["coord"] = { 47.4, 17.6, 1 },
 				["maps"] = { 1 },	-- Durotar
 				["g"] = {
@@ -106,10 +104,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(14171, {	-- The Grateful Dead — Silvermoon City, Blood Elf / Nightborne
 				["provider"] = { "n", 34483 },	-- Cheerful Blood Elf Spirit
 				["isYearly"] = true,
-				["races"] = {
-					10,	-- Blood Elf
-					27,	-- Nightborne
-				},
+				["races"] = { BLOODELF, NIGHTBORNE },
 				["coord"] = { 47.9, 49.4, 94 },
 				["maps"] = { 94 },	-- Eversong Woods
 				["g"] = {
@@ -119,7 +114,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(13952, {	-- The Grateful Dead — Stormwind City, Human
 				["provider"] = { "n", 34435 },	-- Cheerful Human Spirit
 				["isYearly"] = true,
-				["races"] = { 1 },	-- Human
+				["races"] = { HUMAN },
 				["coord"] = { 47.6, 26.6, 84 },
 				["maps"] = { 84 },	-- Stormwind City
 				["g"] = {
@@ -147,7 +142,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(14174, {	-- The Grateful Dead — Tirisfal Glades, Undead
 				["provider"] = { "n", 34476 },	-- Cheerful Undead Spirit
 				["isYearly"] = true,
-				["races"] = { 5 },	-- Undead
+				["races"] = { UNDEAD },
 				["coord"] = { 62.3, 68.3, 18 },
 				["maps"] = { 18 },	-- Tirisfal Glads
 				["g"] = {
@@ -157,10 +152,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			q(14176, {	-- The Grateful Dead — Thunder Bluff, Tauren / Highmountain Tauren
 				["provider"] = { "n", 34480 },	-- Cheerful Tauren Spirit
 				["isYearly"] = true,
-				["races"] = {
-					6,	-- Tauren
-					28,	-- Highmountain Tauren
-				},
+				["races"] = { TAUREN, HIGHMOUNTAIN },
 				["coord"] = { 56.8, 17.6, 88 },
 				["maps"] = { 88 },	-- Thunder Bluff
 				["g"] = {

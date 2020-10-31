@@ -2562,4 +2562,9 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Gao-Ran Battlefront, Townlong Steppes",
 		["faction"] = 0,
 	},
+	[2059] = {
+		["u"] = 1,
+		["name"] = "Southwind Village, Silithus",
+		["faction"] = 1,
+	},
 };

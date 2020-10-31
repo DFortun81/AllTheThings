@@ -26,6 +26,8 @@ app.L = {
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "|cff3399ffI only care about my main.|r";
+	["TOP_ROW_TO_LOCK"] = "|cff3399ffAlt + Click to Lock this Window";
+	["TOP_ROW_TO_UNLOCK"] = "|cffcf0000Alt + Click to Unlock this Window";
 
 	-- Binding Localizations
 	["TOGGLE_ACCOUNT_MODE"] = "Toggle Account Mode";
@@ -218,7 +220,7 @@ app.L = {
 		[100] = GetItemSubClassInfo(15,5),						-- Mounts
 		[101] = TOOLTIP_BATTLE_PET,								-- Battle Pet
 		[102] = TOY,											-- Toy
-		[103] = "Illusions",
+		[103] = "Illusions",									-- Illusions
 		[104] = ITEM_BIND_QUEST, 								-- Quest Items
 		[105] = TRACKER_FILTER_ACHIEVEMENTS, 					-- Achievements
 		[106] = CALENDAR_FILTER_WEEKLY_HOLIDAYS, 				-- Holiday
@@ -273,6 +275,7 @@ app.L = {
 		[100] = "Interface\\Icons\\ability_mount_fireravengodmountgreen",		-- Mounts
 		[101] = "Interface\\Icons\\Tracking_WildPet", 							-- Battle Pet
 		[102] = "Interface\\Icons\\INV_Misc_Toy_10",							-- Toy
+		[111] = "Interface\\Icons\\Inv_glyph_minorwarrior",						-- Glyph
 		[113] = "Interface\\Icons\\INV_Misc_Bag_08",							-- Bag
 		[114] = "Interface\\Icons\\inv_blacksmith_leystonehoofplates_orange",	-- Mount Equipment
 		[200] = "Interface\\Icons\\inv_scroll_05",								-- Recipes
@@ -620,6 +623,7 @@ app.L = {
 		[-690] = "Interface\\Icons\\inv_protodrakegladiatormount_blue",						-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-691] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",					-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = "Interface\\Icons\\inv_protodrakegladiatormount_black",					-- Corrupted Gladiator: Battle for Azeroth Season 4
+		[-693] = "Interface\\Icons\\inv_shadebeastmount",									-- Sinful Gladiator: Shadowlands Season 1
 		[-800] = "Interface\\Icons\\inv_horse2purple",										-- Lucid Nightmare
 		[-801] = "Interface\\Icons\\inv_serpentmount_darkblue",								-- Riddler's Mind-Worm
 		[-802] = "Interface\\Icons\\inv_faeriedragon2_orange",								-- Sun Darter Hatchling
@@ -640,6 +644,7 @@ app.L = {
 		[-859] = "Interface\\Icons\\inv_tinyazeritesplinter",								-- Rank 2
 		[-860] = "Interface\\Icons\\inv_smallazeriteshard",									-- Rank 3
 		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
+		[-862] = "Interface\\Icons\\inv_heartofazeroth",									-- Heart of Azeroth
 		[-901] = "Interface\\Icons\\inv_misc_covenant_renown",								-- Covenant Callings
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
@@ -950,7 +955,7 @@ app.L = {
 		[-10080] = "Interface\\Icons\\trade_alchemy_potiond2",						-- Horrific Visions
 		[-10081] = "Interface\\Icons\\spell_shadow_shadowmend",						-- Corrupted Area (Vision Scenario)
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
-		
+
 		[-10100] = "Interface\\Icons\\Paladin_Protection",							-- Shadowlands
 		[-10101] = "Interface\\Icons\\Paladin_Protection",							-- Shadowlands Dungeon
 		[-10102] = "Interface\\Icons\\Paladin_Protection",							-- Shadowlands Raid
@@ -1393,6 +1398,9 @@ app.L = {
 		[-691] = select(2, GetAchievementInfo(13630)),							-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = select(2, GetAchievementInfo(13957)),							-- Corrupted Gladiator: Battle for Azeroth Season 4
 
+-- Shadowlands PvP Seasons
+		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
+
 -- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		[-800] = GetSpellInfo(247402), 											-- Lucid Nightmare
 		[-801] = GetSpellInfo(243025),											-- Riddler's Mind-Worm
@@ -1406,6 +1414,7 @@ app.L = {
 -- Mechagon
 		[-850] = "Mechanized Chest",											-- Mechanized Chest
 		[-851] = "Irontide Chest",												-- Irontide Chest
+		[-862] = GetSpellInfo(275825),											-- Heart of Azeroth
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
 
@@ -1748,7 +1757,7 @@ app.L = {
 		[-9962] = BATTLE_PET_SOURCE_7,					-- World Events
 		[-9963] = SHOW_PET_BATTLES_ON_MAP_TEXT,			-- Pet Battles
 		[-9964] = COLLECTIONS,							-- Collections
-		[-9965] = select(1,GetCategoryInfo(15281)),		-- Class Hall
+		[-9965] = select(1,GetCategoryInfo(15304)),		-- Class Hall
 		[-9966] = select(1,GetCategoryInfo(15303)),		-- Draenor Garrison
 		[-9967] = SCENARIOS,							-- Scenarios
 		[-9968] = LFG_LIST_LEGACY,						-- Legacy
@@ -1869,8 +1878,8 @@ app.L = {
 		[-10080] = "Horrific Visions",
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
-		
--- Shadowlands Achievement Header		
+
+-- Shadowlands Achievement Header
 		[-10100] = select(1,GetCategoryInfo(15422)),	-- Shadowlands
 		[-10101] = select(1,GetCategoryInfo(15428)),	-- Shadowlands Dungeon
 		[-10102] = select(1,GetCategoryInfo(15438)),	-- Shadowlands Raids
@@ -3004,6 +3013,7 @@ app.L = {
 		[215844] = "Flagpole",
 		[216322] = "Bounty Board",
 		[218750] = "Work Orders",
+		[218949] = "Lei Shen's Burial Trove",
 		[220641] = "Thunderlord's Cache",
 		[220820] = "|cFFFFFFFFStep 6:|r Page 1127",
 		[220821] = "|cFFFFFFFFStep 5:|r Page 845",
@@ -3397,6 +3407,7 @@ app.L = {
 		[241664] = "Borrowed Enchanted Spyglass",
 		[241665] = "Treasure Chest",
 		[241671] = "Forgotten Shard of the Cipher",
+		[241673] = "Looted Bleeding Hollow Treasure",
 		[241674] = "Skull of the Mad Chief",
 		[241680] = "Small Treasure Chest",
 		[241692] = "Axe of the Weeping Wolf",
@@ -4248,7 +4259,7 @@ app.L = {
 		{0, "", ""}, --32
 		{0, "", ""}, -- 33
 		{0, "", ""}, --34
-		{3, "|CFFFF0000This can be purchased from the In-Game Shop.|r", "In-Game Shop (35)"}, --35
+		{3, "|CFFFF0000This may be locked behind a paywall, probably the in-game shop, another Blizzard game, or Recruit A Friend.|r", "Blizzard Balance (35)"}, --35
 		{21, "|CFFFF0000This was obtainable only during the WoW Anniversary when it was active and is no longer available.|r\n", "WoW Anniversary [Removed] (36)"}, -- 36
 		{0, "", ""}, --37
 		{1, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria or via the BMAH|r", "Ordos - Legendary Cloak (38)"}, --38

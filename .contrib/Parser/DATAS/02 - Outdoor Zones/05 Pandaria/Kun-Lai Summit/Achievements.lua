@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(379, {	-- Kun-Lai Summit
-			n(-4, {		-- Achievement
+			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -17,6 +18,18 @@ _.Zones =
 						crit(39, {	-- Thundering Pandaren Spirit
 							["coord"] = { 64.8, 93.6, 379 },
 							["cr"] = 68465,	-- Thundering Pandaren Spirit <Grand Master Pet Tamer>
+						}),
+					},
+				}),
+				ach(6716, {	-- Between a Saurok and a Hard Place
+					["collectible"] = false,
+					["g"] = {
+						crit(2, {	-- The Defiant
+							["description"] = "At the north end of the circular room at the back of the cave.",
+							["coords"] = {
+								{ 73.2, 94.6, 379 },	-- entrance
+								{ 54.9, 16.9, 434 },	-- actual object
+							},
 						}),
 					},
 				}),
@@ -52,7 +65,7 @@ _.Zones =
 							["description"] = "Cave entrance is at 73.2, 73.6.  This chest is personal loot and focuses on your set spec, not your loot spec.",
 							["modelScale"] = 1.5,
 							["questID"] = 31412,
-							["model"] = "World\\SkillActivated\\Containers\\TreasureChest04.mdx",
+							["model"] = 446675,
 							["coord"] = { 74.6, 74.8 },	-- needs mapID, probably separate map for cave
 							["icon"] = "Interface\\Icons\\inv_misc_treasurechest01a",
 							["g"] = {
@@ -70,7 +83,7 @@ _.Zones =
 								{ 70.1, 63.9, 379 },
 								{ 71.1, 62.6, 379 },
 							},
-							["model"] = "World\\Expansion04\\Doodads\\Yakmen\\Yakmen_WeaponRack_01.mdx",
+							["model"] = 593274,
 							["icon"] = "Interface\\Icons\\inv_misc_ornatebox",
 							["g"] = {
 								i(88723),	-- Sturdy Yaungol Spear

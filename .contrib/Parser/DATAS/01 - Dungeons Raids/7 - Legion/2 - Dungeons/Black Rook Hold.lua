@@ -7,7 +7,7 @@ _.Instances = { tier(7, {	-- Legion
 		["maps"] = { 751, 752, 753, 754, 755, 756 },
 		["coord"] = { 38.4, 50.8, 641 },	-- Black Rook Hold, Val'sharah
 		["g"] = {
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(10709, {	-- You Used to Scrawl Me In Your Fel Tome
 					["description"] = "These spawn on any difficulty, but you'll only get one per run, making this achievement a six-run minimum.",
 					["g"] = {

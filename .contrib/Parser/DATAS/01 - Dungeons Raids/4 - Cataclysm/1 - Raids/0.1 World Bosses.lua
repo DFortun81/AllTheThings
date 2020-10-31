@@ -8,7 +8,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["ordered"] = true,
 		["isRaid"] = true,
 		["lvl"] = 85,
-		["g"] = { 
+		["g"] = {
 			n(50063, {	-- Akma'hat
 				["maps"] = {	-- all Uldum maps
 					249,	-- Uldum
@@ -38,7 +38,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(67129),	-- Signet of High Arcanist Savor
 					i(67130),	-- Dorian's Lost Necklace
 				},
-			}), 
+			}),
 			n(50056, {	-- Garr
 				["maps"] = {	-- all Mount Hyjal maps
 					198,	-- Mount Hyjal
@@ -67,7 +67,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(67129),	-- Signet of High Arcanist Savor
 					i(67130),	-- Dorian's Lost Necklace
 				},
-			}), 
+			}),
 			n(50089, {	-- Julak-Doom
 				["maps"] = { 241 },	-- Twilight Highlands
 				["g"] = {
@@ -92,7 +92,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(67129),	-- Signet of High Arcanist Savor
 					i(67130),	-- Dorian's Lost Necklace
 				},
-			}), 
+			}),
 			n(50009, {	-- Mobus
 				["maps"] = { 204 },	-- Vashj'ir (Abyssal Depths)
 				["g"] = {
@@ -104,7 +104,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(67148),	-- Kilt of Trollish Dreams
 					i(67130),	-- Dorian's Lost Necklace
 				},
-			}), 
+			}),
 			n(50061, {	-- Xariona
 				["maps"] = { 207 },	-- Deepholm
 				["g"] = {

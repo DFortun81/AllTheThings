@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(113, {	-- Northrend
 		m(115, {	-- Dragonblight
-			n(-6013, {	-- Factions
+			n(FACTIONS, {
 				-- The Taunka 1064
 				-- The Hand of Vengeance 1067
 				faction(1073, {	-- The Kalu'ak

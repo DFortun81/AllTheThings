@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(572, {	-- Draenor
 		m(539, {	-- Shadowmoon Valley (Draenor)
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(9437),	-- A Demidos of Reality
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,

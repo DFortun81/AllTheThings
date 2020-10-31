@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(101, {	-- Outland
@@ -862,8 +863,9 @@ _.Zones =
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 33.0, 64.2, 109 },
 					["g"] = {
-						i(146615, {	-- Gladiator's Satin Armor		
-							["g"] = {		
+						i(146615, {	-- Gladiator's Satin Armor
+							["classes"] = { PRIEST },
+							["g"] = {
 								i(27708),	-- Gladiator's Satin Hood
 								i(27710),	-- Gladiator's Satin Mantle
 								i(27711),	-- Gladiator's Satin Robe
@@ -872,11 +874,11 @@ _.Zones =
 								i(147613),	-- General's Satin Cord
 								i(27709),	-- Gladiator's Satin Leggings
 								i(147614),	-- General's Satin Slippers
-							},		
-							["classes"] = { 5 },		
-						}),			
-						i(146617, {	-- Gladiator's Silk Armor		
-							["g"] = {		
+							},
+						}),
+						i(146617, {	-- Gladiator's Silk Armor
+							["classes"] = { MAGE },
+							["g"] = {
 								i(25855),	-- Gladiator's Silk Cowl
 								i(25854),	-- Gladiator's Silk Amice
 								i(25856),	-- Gladiator's Silk Raiment
@@ -884,11 +886,11 @@ _.Zones =
 								i(28409),	-- General's Silk Belt
 								i(25858),	-- Gladiator's Silk Trousers
 								i(28410),	-- General's Silk Footguards
-							},		
-							["classes"] = { 8 },		
-						}),			
-						i(146611, {	-- Gladiator's Felweave Armor		
-							["g"] = {		
+							},
+						}),
+						i(146611, {	-- Gladiator's Felweave Armor
+							["classes"] = { WARLOCK },
+							["g"] = {
 								i(30187),	-- Gladiator's Felweave Cowl
 								i(30186),	-- Gladiator's Felweave Amice
 								i(30200),	-- Gladiator's Felweave Raiment
@@ -897,11 +899,11 @@ _.Zones =
 								i(147615),	-- General's Felweave Belt
 								i(30201),	-- Gladiator's Felweave Trousers
 								i(147616),	-- General's Felweave Boots
-							},		
-							["classes"] = { 9 },		
-						}),			
-						i(146609, {	-- Gladiator's Dragonhide Armor		
-							["g"] = {		
+							},
+						}),
+						i(146609, {	-- Gladiator's Dragonhide Armor
+							["classes"] = { DRUID },
+							["g"] = {
 								i(28127),	-- Gladiator's Dragonhide Helm
 								i(28129),	-- Gladiator's Dragonhide Spaulders
 								i(28130),	-- Gladiator's Dragonhide Tunic
@@ -909,11 +911,11 @@ _.Zones =
 								i(28443),	-- General's Dragonhide Belt
 								i(28128),	-- Gladiator's Dragonhide Trousers
 								i(28444),	-- General's Dragonhide Boots
-							},		
-							["classes"] = { 11 },		
-						}),			
-						i(146612, {	-- Gladiator's Leather Armor		
-							["g"] = {		
+							},
+						}),
+						i(146612, {	-- Gladiator's Leather Armor
+							["classes"] = { ROGUE },
+							["g"] = {
 								i(25830),	-- Gladiator's Leather Helm
 								i(25832),	-- Gladiator's Leather Spaulders
 								i(25831),	-- Gladiator's Leather Tunic
@@ -921,11 +923,11 @@ _.Zones =
 								i(28423),	-- General's Leather Belt
 								i(25833),	-- Gladiator's Leather Legguards
 								i(28422),	-- General's Leather Boots
-							},		
-							["classes"] = { 4 },		
-						}),			
-						i(146608, {	-- Gladiator's Chain Armor		
-							["g"] = {		
+							},
+						}),
+						i(146608, {	-- Gladiator's Chain Armor
+							["classes"] = { HUNTER },
+							["g"] = {
 								i(28331),	-- Gladiator's Chain Helm
 								i(28333),	-- Gladiator's Chain Spaulders
 								i(28334),	-- Gladiator's Chain Armor
@@ -933,11 +935,11 @@ _.Zones =
 								i(28450),	-- General's Chain Girdle
 								i(28332),	-- Gladiator's Chain Leggings
 								i(28449),	-- General's Chain Sabatons
-							},		
-							["classes"] = { 3 },		
-						}),			
-						i(146614, {	-- Gladiator's Ringmail Armor		
-							["g"] = {		
+							},
+						}),
+						i(146614, {	-- Gladiator's Ringmail Armor
+							["classes"] = { SHAMAN },
+							["g"] = {
 								i(31400),	-- Gladiator's Ringmail Helm
 								i(31407),	-- Gladiator's Ringmail Spaulders
 								i(31396),	-- Gladiator's Ringmail Armor
@@ -945,11 +947,11 @@ _.Zones =
 								i(28629),	-- General's Linked Girdle
 								i(31406),	-- Gladiator's Ringmail Leggings
 								i(28630),	-- Generals Linked Sabatons
-							},		
-							["classes"] = { 7 },		
-						}),			
-						i(146616, {	-- Gladiator's Scaled Armor		
-							["g"] = {		
+							},
+						}),
+						i(146616, {	-- Gladiator's Scaled Armor
+							["classes"] = { PALADIN },
+							["g"] = {
 								i(27704),	-- Gladiator's Lamellar Helm
 								i(27706),	-- Gladiator's Lamellar Shoulders
 								i(27702),	-- Gladiator's Lamellar Chestpiece
@@ -957,11 +959,11 @@ _.Zones =
 								i(28641),	-- General's Lamellar Belt
 								i(27705),	-- Gladiator's Lamellar Legguards
 								i(28642),	-- General's Lamellar Greaves
-							},		
-							["classes"] = { 2 },		
-						}),			
-						i(146613, {	-- Gladiator's Plate Armor		
-							["g"] = {		
+							},
+						}),
+						i(146613, {	-- Gladiator's Plate Armor
+							["classes"] = { WARRIOR },
+							["g"] = {
 								i(24545),	-- Gladiator's Plate Helm
 								i(24546),	-- Gladiator's Plate Shoulders
 								i(24544),	-- Gladiator's Plate Chestpiece
@@ -969,9 +971,8 @@ _.Zones =
 								i(28385),	-- General's Plate Belt
 								i(24547),	-- Gladiator's Plate Legguards
 								i(28383),	-- General's Plate Greaves
-							},		
-							["classes"] = { 1 },		
-						}),			
+							},
+						}),
 						i(28451),	-- General's Chain Bracers
 						i(28450),	-- General's Chain Girdle
 						i(28449),	-- General's Chain Sabatons
@@ -1185,8 +1186,9 @@ _.Zones =
 					["coord"] = { 33.0, 64.2, 109 },
 					["g"] = {
 						i(146649),	-- Arsenal: Vengeful Gladiator's Weapons
-						i(146635, {	-- Ensemble: Vengeful Gladiator's Satin Armor		
-							["g"] = {		
+						i(146635, {	-- Ensemble: Vengeful Gladiator's Satin Armor
+							["classes"] = { PRIEST },
+							["g"] = {
 								i(33718),	-- Vengeful Gladiator's Mooncloth Hood
 								i(33720),	-- Vengeful Gladiator's Mooncloth Mantle
 								i(33721),	-- Vengeful Gladiator's Mooncloth Robe
@@ -1195,11 +1197,11 @@ _.Zones =
 								i(33900),	-- Vindicator's Mooncloth Belt
 								i(33719),	-- Vengeful Gladiator's Mooncloth Leggings
 								i(33902),	-- Vindicator's Mooncloth Slippers
-							},		
-							["classes"] = 5,	-- Priest	
-						}),			
-						i(146637, {	-- Ensemble: Vengeful Gladiator's Silk Armor		
-							["g"] = {		
+							},
+						}),
+						i(146637, {	-- Ensemble: Vengeful Gladiator's Silk Armor
+							["classes"] = { MAGE },
+							["g"] = {
 								i(33758),	-- Vengeful Gladiator's Silk Cowl
 								i(33757),	-- Vengeful Gladiator's Silk Amice
 								i(33760),	-- Vengeful Gladiator's Silk Raiment
@@ -1208,11 +1210,11 @@ _.Zones =
 								i(33912),	-- Vindicator's Silk Belt
 								i(33761),	-- Vengeful Gladiator's Silk Trousers
 								i(33914),	-- Vindicator's Silk Footguards
-							},		
-							["classes"] = 8,	-- Mage	
-						}),			
-						i(146631, {	-- Ensemble: Vengeful Gladiator's Felweave Armor		
-							["g"] = {		
+							},
+						}),
+						i(146631, {	-- Ensemble: Vengeful Gladiator's Felweave Armor
+							["classes"] = { WARLOCK },
+							["g"] = {
 								i(33677),	-- Vengeful Gladiator's Dreadweave Hood
 								i(33679),	-- Vengeful Gladiator's Dreadweave Mantle
 								i(33680),	-- Vengeful Gladiator's Dreadweave Robe
@@ -1221,11 +1223,11 @@ _.Zones =
 								i(33882),	-- Vindicator's Dreadweave Belt
 								i(33678),	-- Vengeful Gladiator's Dreadweave Leggings
 								i(33884),	-- Vindicator's Dreadweave Stalkers
-							},		
-							["classes"] = 9,	-- Warlock	
-						}),			
-						i(146629, {	-- Ensemble: Vengeful Gladiator's Dragonhide Armor		
-							["g"] = {		
+							},
+						}),
+						i(146629, {	-- Ensemble: Vengeful Gladiator's Dragonhide Armor
+							["classes"] = { DRUID },
+							["g"] = {
 								i(33672),	-- Vengeful Gladiator's Dragonhide Armor
 								i(33674),	-- Vengeful Gladiator's Dragonhide Spaulders
 								i(33675),	-- Vengeful Gladiator's Dragonhide Tunic
@@ -1234,11 +1236,11 @@ _.Zones =
 								i(33879),	-- Vindicator's Dragonhide Belt
 								i(33673),	-- Vengeful Gladiator's Dragonhide Legguards
 								i(33880),	-- Vindicator's Dragonhide Boots
-							},		
-							["classes"] = 11,	-- Druid	
-						}),			
-						i(146632, {	-- Ensemble: Vengeful Gladiator's Leather Armor		
-							["g"] = {		
+							},
+						}),
+						i(146632, {	-- Ensemble: Vengeful Gladiator's Leather Armor
+							["classes"] = { ROGUE },
+							["g"] = {
 								i(33701),	-- Vengeful Gladiator's Leather Helm
 								i(33703),	-- Vengeful Gladiator's Leather Spaulders
 								i(33704),	-- Vengeful Gladiator's Leather Tunic
@@ -1247,11 +1249,11 @@ _.Zones =
 								i(33891),	-- Vindicator's Leather Belt
 								i(33702),	-- Vengeful Gladiator's Leather Legguards
 								i(33892),	-- Vindicator's Leather Boots
-							},		
-							["classes"] = 4,	-- Rogue	
-						}),			
-						i(146628, {	-- Ensemble: Vengeful Gladiator's Chain Armor		
-							["g"] = {		
+							},
+						}),
+						i(146628, {	-- Ensemble: Vengeful Gladiator's Chain Armor
+							["classes"] = { HUNTER },
+							["g"] = {
 								i(33666),	-- Vengeful Gladiator's Chain Helm
 								i(33668),	-- Vengeful Gladiator's Chain Spaulders
 								i(33664),	-- Vengeful Gladiator's Chain Armor
@@ -1260,11 +1262,11 @@ _.Zones =
 								i(33877),	-- Vindicator's Chain Girdle
 								i(33667),	-- Vengeful Gladiator's Chain Leggings
 								i(33878),	-- Vindicator's Chain Sabatons
-							},		
-							["classes"] = 3,	-- Hunter	
-						}),			
-						i(146634, {	-- Ensemble: Vengeful Gladiator's Ringmail Armor		
-							["g"] = {		
+							},
+						}),
+						i(146634, {	-- Ensemble: Vengeful Gladiator's Ringmail Armor
+							["classes"] = { SHAMAN },
+							["g"] = {
 								i(33740),	-- Vengeful Gladiator's Ringmail Helm
 								i(33742),	-- Vengeful Gladiator's Ringmail Spaulders
 								i(33738),	-- Vengeful Gladiator's Ringmail Armor
@@ -1273,11 +1275,11 @@ _.Zones =
 								i(33898),	-- Vindicator's Mail Girdle
 								i(33741),	-- Vengeful Gladiator's Ringmail Leggings
 								i(33896),	-- Vindicator's Linked Sabatons
-							},		
-							["classes"] = 7,	-- Shaman	
-						}),			
-						i(146636, {	-- Ensemble: Vengeful Gladiator's Scaled Armor		
-							["g"] = {		
+							},
+						}),
+						i(146636, {	-- Ensemble: Vengeful Gladiator's Scaled Armor
+							["classes"] = { PALADIN },
+							["g"] = {
 								i(33697),	-- Vengeful Gladiator's Lamellar Helm
 								i(33753),	-- Vengeful Gladiator's Scaled Shoulders
 								i(33695),	-- Vengeful Gladiator's Lamellar Chestpiece
@@ -1286,11 +1288,11 @@ _.Zones =
 								i(33888),	-- Vindicator's Lamellar Belt
 								i(33698),	-- Vengeful Gladiator's Lamellar Legguards
 								i(33890),	-- Vindicator's Lamellar Greaves
-							},		
-							["classes"] = 2,	-- Paladin	
-						}),			
-						i(146633, {	-- Ensemble: Vengeful Gladiator's Plate Armor		
-							["g"] = {		
+							},
+						}),
+						i(146633, {	-- Ensemble: Vengeful Gladiator's Plate Armor
+							["classes"] = { WARRIOR },
+							["g"] = {
 								i(33730),	-- Vengeful Gladiator's Plate Helm
 								i(33732),	-- Vengeful Gladiator's Plate Shoulders
 								i(33728),	-- Vengeful Gladiator's Plate Chestpiece
@@ -1299,8 +1301,7 @@ _.Zones =
 								i(33811),	-- Vindicator's Plate Belt
 								i(33731),	-- Vengeful Gladiator's Plate Legguards
 								i(33812),	-- Vindicator's Plate Greaves
-							},		
-							["classes"] = 1,	-- Warrior	
+							},
 						}),
 						i(33661),	-- Vengeful Gladiator's Barrier
 						i(34059),	-- Vengeful Gladiator's Baton of Light
@@ -1415,7 +1416,7 @@ _.Zones =
 						i(33753),	-- Vengeful Gladiator's Scaled Shoulders
 						i(33757),	-- Vengeful Gladiator's Silk Amice
 						i(33758),	-- Vengeful Gladiator's Silk Cowl
-						i(33759),	-- Vengeful Gladiator's Silk Handguards	
+						i(33759),	-- Vengeful Gladiator's Silk Handguards
 						i(33760),	-- Vengeful Gladiator's Silk Raiment
 						i(33761),	-- Vengeful Gladiator's Silk Trousers
 						i(33767),	-- Vengeful Gladiator's Wyrmhide Gloves
@@ -1557,7 +1558,7 @@ _.Zones =
 						i(77610),	-- Replica Knight-Lieutenant's Chain Gauntlets
 						i(77609),	-- Replica Lieutenant Commander's Chain Helmet
 						i(77606),	-- Replica Knight-Lieutenant's Chain Boots
-						i(77660),	-- Replica Sergeant Major's Plate Wristguards					
+						i(77660),	-- Replica Sergeant Major's Plate Wristguards
 					},
 				}),
 				n(54648,  {	-- Leeni "Smiley" Smalls <Classic Horde Mail & Plate>
@@ -1635,7 +1636,7 @@ _.Zones =
 						i(77853),	-- Replica Blood Guard's Plate Boots
 						i(77835),	-- Replica First Sergeant's Mail Wristguards
 						i(77754),	-- Replica Champion's Chain Pauldrons
-						i(77825),	-- Replica Legionnaire's Mail Leggings				
+						i(77825),	-- Replica Legionnaire's Mail Leggings
 					},
 				}),
 				n(58152,  {	-- Tini Smalls <Classic Horde Cloth & Leather>

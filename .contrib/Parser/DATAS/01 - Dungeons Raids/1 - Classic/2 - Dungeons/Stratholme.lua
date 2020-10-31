@@ -9,7 +9,10 @@ _.Instances = { tier(1, {	-- Classic
 			ach(646),	-- Stratholme
 			n(-388, {	-- Main Gate
 				["description"] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
-				["maps"] = { 317 },	-- Stratholme Living Side
+				["maps"] = {
+					317,	-- Stratholme Living Side
+					827,	-- Paladin: Legion Class Mount Map
+				},
 				["coord"] = { 27.66, 11.64, 23 },	-- Stratholme [Main Gate], Eastern Plaguelands
 				["groups"] = {
 					n(QUESTS, {
@@ -462,7 +465,7 @@ _.Instances = { tier(1, {	-- Classic
 							})),
 							un(REMOVED_FROM_GAME, q(9737, { 	-- True Masters of the Light
 								["classes"] = { PALADIN },
-								["races"] = { 10 },
+								["races"] = { BLOODELF },
 								["groups"] = {
 									{
 										["mountID"] = 34767, 	-- Thalassian Charger

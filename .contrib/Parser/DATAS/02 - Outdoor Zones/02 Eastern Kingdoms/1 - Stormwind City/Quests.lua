@@ -59,9 +59,7 @@ _.Zones =
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(12515, {	-- Allied Races: Dark Iron Dwarf
-												h(i(161331)),	-- Dark Iron Core Hound
-											}),
+											ach(12515),	-- Allied Races: Dark Iron Dwarf
 										},
 									}),
 									-- Dark Iron Dwarf Starter Quests
@@ -223,9 +221,7 @@ _.Zones =
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(13163, {	-- Allied Races: Kul Tiran
-												a(i(164762)),	-- Kul Tiran Charger
-											}),
+											ach(13163),	-- Allied Races: Kul Tiran
 										},
 									}),
 								}),
@@ -251,9 +247,7 @@ _.Zones =
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(12243, {	-- Allied Races: Lightforged Draenei
-												a(i(155656)),	-- Lightforged Felcrusher
-											}),
+											ach(12243),	-- Allied Races: Lightforged Draenei
 										},
 									}),
 									-- Lightforged Draenei Starter Quests
@@ -381,9 +375,7 @@ _.Zones =
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 120,
 										["g"] = {
-											ach(12242, {	-- Allied Races: Void Elf
-												a(i(156486)),	-- Starcursed Voidstrider
-											}),
+											ach(12242),	-- Allied Races: Void Elf
 										},
 									}),
 									-- Void Elf Starter Quests
@@ -437,7 +429,7 @@ _.Zones =
 				q(28393, {	-- A Dangerous Alliance
 					["provider"] = { "n", 914 },	-- Ander Germaine
 					["coord"] = { 79.4, 69.0, 84 },
-					["sourceQuests"] = 28258,	-- Meet with Ander Germaine
+					["sourceQuests"] = { 28258 },	-- Meet with Ander Germaine
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 50,
@@ -510,7 +502,7 @@ _.Zones =
 						{ 79.6, 61.2, 84 },	-- Arthur Huwe
 						{ 79.6, 60.8, 84 },	-- Lord Tony Romano
 					},
-					["sourceQuests"] = 27267,	-- Make Contact with SI:7
+					["sourceQuests"] = { 27267 },	-- Make Contact with SI:7
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
@@ -559,6 +551,10 @@ _.Zones =
 						i(65465),	-- Crossbow of the Crown
 					},
 				}),
+				q(62567, {	-- Adventurers Wanted: Chromie's Call
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(11451, {	-- Alicia's Poem
 					["provider"] = { "n", 24729 },	-- Alicia
 					["coord"] = { 81.6, 28.2, 84 },
@@ -588,6 +584,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 20,
+				}),
+				q(58912, {	-- An Urgent Meeting
+					["provider"] = { "n", 163211 },	-- Henry Garrick
+					["coord"] = { 75.3, 54.3, 84 },
+					["sourceQuest"] = 58911,	-- Home Is Where the Hearth Is
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(325,   {	-- Armed and Ready
 					["provider"] = { "n", 1416 },	-- Grimand Elmore
@@ -662,6 +664,7 @@ _.Zones =
 					["coord"] = { 41.4, 47.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(168,   {	-- Collecting Memories
 					["provider"] = { "n", 656 },	-- Wilder Thistlenettle
@@ -752,10 +755,16 @@ _.Zones =
 				}),
 				q(1271,  {	-- Feast at the Blue Recluse
 					["provider"] = { "n", 1141 },	-- Angus Stern
-					["coord"] = { 49.6, 44.8, 84 },
+					["coord"] = { 51.7, 93.6, 84 },
 					["sourceQuest"] = 1222,	-- Stinky's Escape
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
+				}),
+				q(58908, {	-- Finding Your Way (A)
+					["coord"] = { 66.3, 78.2, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 163095 },	-- Lindie Springstock
+					["sourceQuest"] = 59583,	-- Welcome to Stormwind
 				}),
 				q(1701,  {	-- Fire Hardened Mail
 					["provider"] = { "n", 5413 },	-- Furen Longbeard
@@ -838,9 +847,26 @@ _.Zones =
 					["lvl"] = 26,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(58911, {	-- Home Is Where the Hearth Is
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 79.0, 69.8, 84 },
+					["sourceQuests"] = {
+						58910,	-- What's Your Specialty?
+						59586,	-- What's Your Specialty?
+						59587,	-- What's Your Specialty?
+						59588,	-- What's Your Specialty?
+						59589,	-- What's Your Specialty?
+						59590,	-- What's Your Specialty?
+						59591,	-- What's Your Specialty?
+						59592,	-- What's Your Specialty?
+						59593,	-- What's Your Specialty?
+						59594,	-- What's Your Specialty?
+					},
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(53370, {	-- Hour of Reckoning
 					["provider"] = { "n", 144095 },	-- Master Mathias Shaw
-					["description"] = "This quest is automatically offered when you reach level 110.",
+					["description"] = "This quest is automatically offered.",
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 					["g"] = {
@@ -893,6 +919,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(30987, {	-- Joining the Alliance
 					["provider"] = { "n", 60566 },	-- Aysa Cloudsinger
@@ -915,6 +942,15 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["lvl"] = 20,
+				}),
+				q(58909, {	-- License to Ride
+					["provider"] = { "n", 163007 },	-- Curly
+					["coord"] = { 77.3, 67.0, 84 },
+					["sourceQuest"] = 58908,	-- Finding Your Way (A)
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(2411),	-- Black Stallion Bridle
+					},
 				}),
 				q(32470, {	-- Light Camera Action
 					["provider"] = { "n", 16908 },	-- Arielle Snapflash
@@ -1023,6 +1059,11 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1893)),	-- Miner's Revenge
 					},
+				}),
+				q(60891,   {	-- Onward to Adventure: Eastern Kingdoms
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6187,  {	-- Order Must Be Restored
 					["providers"] = {
@@ -1274,6 +1315,12 @@ _.Zones =
 						currency(515),	-- Darkmoon Prize Ticket
 					},
 				}),
+				q(34398, {	-- The Dark Portal
+					["description"] = "If you want to do the Blasted Lands questline before going to Draenor, just abandon this quest after taking the portal to Blasted Lands.",
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(30095, {	-- The End Time
 					["provider"] = { "n", 52408 },	-- Coridormi
 					["coord"] = { 49.4, 87.4, 84 },
@@ -1327,6 +1374,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 80,
 				}),
+				q(40519, {	-- The Legion Returns (Alliance)
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(7782,  {	-- The Lord of Blackrock
 					["provider"] = { "n", 107574 },	-- Anduin Wrynn
 					["coord"] = { 85.6, 31.8, 84 },
@@ -1366,6 +1418,12 @@ _.Zones =
 					["sourceQuest"] = 46727,	-- Tides of War
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
+				}),
+				q(59641, {	-- The Nation of Kul Tiras
+					["provider"] = { "n", 165395 },	-- Anduin Wrynn
+					["coord"] = { 85.8, 31.6, 84 },
+					["sourceQuest"] = 58983,	-- Tides of War
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(543,   {	-- The Perenolde Tiara
 					["provider"] = { "n", 2285 },	-- Count Remington Ridgewell
@@ -1414,10 +1472,19 @@ _.Zones =
 				}),
 				q(46727, {	-- Tides of War
 					["provider"] = { "n", 142930 },	-- Halford Wyrmbane
+					["providers"] = {
+						{ "n", 142930 },	-- Halford Wyrmbane
+						{ "n", 49748 },		-- Hero's Herald
+					},
 					["coord"] = { 27.6, 21.2 },
-					["sourceQuest"] = 51403,	-- The Speaker's Imperative
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
+				}),
+				q(58983, {	-- Tides of War (Shadowlands version)
+					["provider"] = { "n", 163219 },	-- Captain Garrick
+					["coord"] = { 85.2, 32.1, 84 },
+					["sourceQuest"] = 58912,	-- An Urgent Meeting
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42782, {	-- To Be Prepared
 					["provider"] = { "n", 107934 },	-- Recruiter Lee
@@ -1434,6 +1501,21 @@ _.Zones =
 					["coord"] = { 25.9, 29.2, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 85,
+				}),
+				q(60096,   {	-- To Northrend
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(60120,   {	-- To Outland
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(60125,   {	-- To Pandaria!
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28827, {	-- To the Depths
 					["provider"] = { "n", 45226 },	-- Naraat the Earthspeaker
@@ -1503,6 +1585,82 @@ _.Zones =
 						i(65641),	-- Faceguard of the Order
 						i(65646),	-- Headguard of the Order
 					},
+				}),
+				q(59583, {	-- Welcome to Stormwind
+					["coord"] = { 73.6, 91.3, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 154169 },	-- Captain Garrick
+					["sourceQuest"] = 55991,	-- An End to Beginnings
+				}),
+				q(58910, {	-- What's Your Specialty? (Druid)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+				}),
+				q(59586, {	-- What's Your Specialty? (Hunter)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { HUNTER },
+				}),
+				q(59587, {	-- What's Your Specialty? (Mage)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MAGE },
+				}),
+				q(59588, {	-- What's Your Specialty? (Monk)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MONK },
+				}),
+				q(59589, {	-- What's Your Specialty? (Paladin)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+				}),
+				q(59590, {	-- What's Your Specialty? (Priest)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PRIEST },
+				}),
+				q(59591, {	-- What's Your Specialty? (Rogue)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+				}),
+				q(59592, {	-- What's Your Specialty? (Shaman)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { SHAMAN },
+				}),
+				q(59593, {	-- What's Your Specialty? (Warlock)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+				}),
+				q(59594, {	-- What's Your Specialty? (Warrior)
+					["provider"] = { "n", 163097 },	-- Lindle Springstock
+					["coord"] = { 77.4, 67.2, 84 },
+					["sourceQuest"] = 58909,	-- License to Ride
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
 				}),
 				q(58502, {	-- Where the Heart Is
 					["provider"] = { "n", 154532 },	-- Magni Bronzebeard <The Speaker>

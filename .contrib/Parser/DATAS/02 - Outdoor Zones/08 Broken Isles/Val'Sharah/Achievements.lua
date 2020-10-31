@@ -1,11 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(641, {	-- Val'sharah
-			n(-4,   {	-- Achievements
+			n(ACHIEVEMENTS, {
 				ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -152,7 +153,7 @@ _.Zones =
 						}),
 					},
 				}),
-				un(REMOVED_FROM_GAME, ach(11139, {	-- Field Medic! 
+				un(REMOVED_FROM_GAME, ach(11139, {	-- Field Medic!
 					["groups"] = {
 						un(REMOVED_FROM_GAME, title(340, {	-- TITLE: Field Medic!
 							["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
@@ -217,7 +218,7 @@ _.Zones =
 						["sourceQuests"] = { 38721 },	-- Lieutenant of the Tower
 					}),
 				}),
-			}),	
-		}),	
+			}),
+		}),
 	}),
 };

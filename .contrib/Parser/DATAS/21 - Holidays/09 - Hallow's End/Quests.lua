@@ -63,6 +63,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["maps"] = { 37 },	-- Elwynn Forest
 			}),
 			q(29431, {	-- A Friend in Need (Horde)
+				["isBreadcrumb"] = true,
 				["provider"] = { "n", 53763 },	-- Gretchen Fenlow
 				["races"] = HORDE_ONLY,
 				["maps"] = { 90 },	-- Undercity
@@ -276,6 +277,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 					i(37586),	-- Handful of Treats
 				},
 			}),
+			q(12385, {	-- Candy Bucket — Badlands, Kargath, Horde (removed)
+				["isYearly"] = true,
+				["coord"] = { 2.8, 46.0, 15 },
+				["races"] = HORDE_ONLY,
+				["maps"] = { 15 },	-- Badlands
+				["u"] = REMOVED_FROM_GAME,	-- Kargath was destroyed during Cataclysm
+				["g"] = {
+					i(37586), -- Handful of Treats
+				},
+			}),
 			q(28957, {	-- Candy Bucket — Badlands, New Kargath, Horde
 				["isYearly"] = true,
 				["coord"] = { 18.3, 42.8, 15 },
@@ -420,7 +431,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12397, {	-- Candy Bucket — Cape of Stranglethorn, Booty Bay, neutral
 				["isYearly"] = true,
-				["coord"] = { 27.1, 77.3, 210 },
+				["coord"] = { 40.9, 73.8, 210 },
 				["maps"] = { 210 },	-- The Cape of Stranglethorn
 				["g"] = {
 					i(37586),	-- Handful of Treats
@@ -1090,7 +1101,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(32034, {	-- Candy Bucket — Krasarang Wilds, Marista, neutral
 				["isYearly"] = true,
-				["coord"] = { 51.5, 77.3, 418 },
+				["coord"] = { 53.44, 76.49, 418 },
 				["maps"] = { 418 },	-- Krasarang Wilds
 				["g"] = {
 					i(37586),	-- Handful of Treats
@@ -1107,7 +1118,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(32036, {	-- Candy Bucket — Krasarang Wilds, Zhu's Watch, neutral
 				["isYearly"] = true,
-				["coord"] = { 75.9, 7.00, 418 },
+				["coord"] = { 79.48, 0.72, 418 },
 				["maps"] = { 418 },	-- Krasarang Wilds
 				["g"] = {
 					i(37586),	-- Handful of Treats
@@ -1656,6 +1667,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 					i(37586),	-- Handful of Treats
 				},
 			}),
+			q(12379, {	-- Candy Bucket — Thousand Needles, Freewind Post, Horde (removed)
+				["isYearly"] = true,
+				["races"] = HORDE_ONLY,
+				["coord"] = { 46.1, 51.4, 64 },
+				["maps"] = { 64 },	-- Thousand Needles
+				["u"] = REMOVED_FROM_GAME,	-- Freewind Post was taken by the Grimtotem during Cataclysm
+				["g"] = {
+					i(37586), -- Handful of Treats
+				},
+			}),
 			q(12367, {	-- Candy Bucket — Thunder Bluff, Lower Rise, Horde
 				["isYearly"] = true,
 				["coord"] = { 45.7, 64.5, 88 },
@@ -2017,14 +2038,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 			}),
 			q(8353,  {	-- Chicken Clucking for a Mint (Alliance)
-				["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Jesper!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 6740 },	-- Innkeeper Allison
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 84 },	-- Stormwind City
 			}),
 			q(8354,  {	-- Chicken Clucking for a Mint (Horde)
-				["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 6741 },	-- Innkeeper Norman
 				["races"] = HORDE_ONLY,
@@ -2090,14 +2111,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 			}),
 			q(8357,  {	-- Dancing for Marzipan (Alliance)
-				["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Jesper!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 6735 },	-- Innkeeper Saelienne
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 89 },	-- Darnassus
 			}),
 			q(8360,  {	-- Dancing for Marzipan (Horde)
-				["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 6746 },	-- Innkeeper Pala
 				["races"] = HORDE_ONLY,
@@ -2176,14 +2197,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 			}),
 			q(8356,  {	-- Flexing for Nougat (Alliance)
-				["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Jesper!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 6740 },	-- Innkeeper Allison
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 84 },	-- Stormwind City
 			}),
 			q(8359,  {	-- Flexing for Nougat (Horde)
-				["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
 				["races"] = HORDE_ONLY,
@@ -2213,7 +2234,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 23904 },	-- Sir Thomas
 			}),
 			q(8311,  {	-- Hallow's End Treats for Jesper!
-				["sourceQuests"] = { 8356, 8355, 8353, 8357 },	-- Flexing for Nougat, Incoming Gumdrop, Chicken Clucking for a Mint, Dancing for Marzipan (Alliance)
 				["provider"] = { "n", 15310 },	-- Jesper
 				["isYearly"] = true,
 				["races"] = ALLIANCE_ONLY,
@@ -2230,14 +2250,14 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 			}),
 			q(8355,  {	-- Incoming Gumdrop (Alliance)
-				["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Jesper!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 5111 },	-- Innkeeper Firebrew
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 87 },	-- Ironforge
 			}),
 			q(8358,  {	-- Incoming Gumdrop (Horde)
-				["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
+				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",
 				["repeatable"] = true,
 				["provider"] = { "n", 11814 },	-- Kali Remik
 				["races"] = HORDE_ONLY,
