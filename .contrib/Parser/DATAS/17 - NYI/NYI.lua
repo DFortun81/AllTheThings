@@ -1033,15 +1033,6 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(96258)), -- Saurok Stalker's Spaulders
 			}),
 				-- Future Emsembles!!
-				-- Mail Horde (you probably will learn both after learning one)
-				un(NEVER_IMPLEMENTED, i(166923)),	-- Dread Gladiator's Chain armor
-				un(NEVER_IMPLEMENTED, i(166924)),	-- Dread Gladiator's Chain sabatons
-				un(NEVER_IMPLEMENTED, i(166925)),	-- Dread Gladiator's Chain gauntlets
-				un(NEVER_IMPLEMENTED, i(166926)),	-- Dread Gladiator's Chain helm
-				un(NEVER_IMPLEMENTED, i(166927)),	-- Dread Gladiator's Chain leggings
-				un(NEVER_IMPLEMENTED, i(166928)),	-- Dread Gladiator's Chain spaulders
-				un(NEVER_IMPLEMENTED, i(166929)),	-- Dread Gladiator's Chain waistguard
-				un(NEVER_IMPLEMENTED, i(166930)),	-- Dread Gladiator's Chain armbands
 			un(NEVER_IMPLEMENTED, i(163286)),	-- honorbound vanguard's footguards
 			un(NEVER_IMPLEMENTED, i(163291)),	-- honorbound vanguard's strikers
 			un(NEVER_IMPLEMENTED, i(163293)),	-- honorbound vanguard's warhelm
