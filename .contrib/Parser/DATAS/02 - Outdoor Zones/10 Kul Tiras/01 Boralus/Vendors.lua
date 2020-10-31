@@ -1768,7 +1768,7 @@ _.Zones =
 					["g"] = {
 						n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
 							n(-659, {	-- Aspirant PvP Gear
-								i(180178, {		-- ensemble-dread-aspirants-cloth-armor alliance 
+								i(180178, {		-- Ensemble: Dread Aspirant's Cloth Armor (A)
 									un(REMOVED_FROM_GAME, i(162925)),	-- Dread Aspirant's Silk Cord (A)
 									un(REMOVED_FROM_GAME, i(162928)),	-- Dread Aspirant's Silk Cuffs (A)
 									un(REMOVED_FROM_GAME, i(162911)),	-- Dread Aspirant's Silk Gloves (A)
@@ -1778,7 +1778,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(162901)),	-- Dread Aspirant's Silk Robe (A)
 									un(REMOVED_FROM_GAME, i(162906)),	-- Dread Aspirant's Silk Treads (A)
 								}),
-								i(180180, {		-- ensemble-dread-aspirants-leather-armor alliance 
+								i(180180, {		-- Ensemble: Dread Aspirant's Leather Armor (A)
 									un(REMOVED_FROM_GAME, i(162927)),	-- Dread Aspirant's Leather Belt (A)
 									un(REMOVED_FROM_GAME, i(162931)),	-- Dread Aspirant's Leather Bindings (A)
 									un(REMOVED_FROM_GAME, i(162908)),	-- Dread Aspirant's Leather Boots (A)
@@ -1788,7 +1788,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(162920)),	-- Dread Aspirant's Leather Spaulders (A)
 									un(REMOVED_FROM_GAME, i(162904)),	-- Dread Aspirant's Leather Tunic (A)
 								}),
-								i(180182, {		-- ensemble-dread-aspirants-mail-armor alliance 
+								i(180182, {		-- Ensemble: Dread Aspirant's Mail Armor (A)
 									un(REMOVED_FROM_GAME, i(162930)),	-- Dread Aspirant's Chain Armbands (A)
 									un(REMOVED_FROM_GAME, i(162903)),	-- Dread Aspirant's Chain Armor (A)
 									un(REMOVED_FROM_GAME, i(162912)),	-- Dread Aspirant's Chain Gauntlets (A)
@@ -1798,7 +1798,7 @@ _.Zones =
 									un(REMOVED_FROM_GAME, i(162923)),	-- Dread Aspirant's Chain Spaulders (A)
 									un(REMOVED_FROM_GAME, i(162926)),	-- Dread Aspirant's Chain Waistguard (A)
 								}),
-								i(180184, {		-- ensemble-dread-aspirants-plate-armor alliance 
+								i(180184, {		-- Ensemble: Dread Aspirant's Plate Armor (A)
 									un(REMOVED_FROM_GAME, i(162929)),	-- Dread Aspirant's Plate Armguards (A)
 									un(REMOVED_FROM_GAME, i(162902)),	-- Dread Aspirant's Plate Chestpiece (A)
 									un(REMOVED_FROM_GAME, i(162910)),	-- Dread Aspirant's Plate Gauntlets (A)
@@ -1810,26 +1810,36 @@ _.Zones =
 								}),
 							}),
 						}),
-							i(180186, {		-- ensemble-sinister-aspirants-cloth-armor alliance 
-							
+						-- Battle for Azeroth Season 2
+							i(180186, {		-- Ensemble: Sinister Aspirant's Cloth Armor (A)
+
 							}),
-							i(180188, {		-- ensemble-sinister-aspirants-leather-armor alliance
-							
+							i(180188, {		-- Ensemble: Sinister Aspirant's Leather Armor (A)
+
 							}),
-							i(180190, {		-- ensemble-sinister-aspirants-mail-armor alliance 
-							
+							i(180190, {		-- Ensemble: Sinister Aspirant's Mail Armor (A)
+
 							}),
-							i(180192, {		-- ensemble-sinister-aspirants-plate-armor alliance 
+							i(180192, {		-- Ensemble: Sinister Aspirant's Plate Armor (A)
 							}),
-						-- Mail Horde (you probably will learn both after learning one)
-							un(NEVER_IMPLEMENTED, i(166923)),	-- Dread Gladiator's Chain armor
-							un(NEVER_IMPLEMENTED, i(166924)),	-- Dread Gladiator's Chain sabatons
-							un(NEVER_IMPLEMENTED, i(166925)),	-- Dread Gladiator's Chain gauntlets
-							un(NEVER_IMPLEMENTED, i(166926)),	-- Dread Gladiator's Chain helm
-							un(NEVER_IMPLEMENTED, i(166927)),	-- Dread Gladiator's Chain leggings
-							un(NEVER_IMPLEMENTED, i(166928)),	-- Dread Gladiator's Chain spaulders
-							un(NEVER_IMPLEMENTED, i(166929)),	-- Dread Gladiator's Chain waistguard
-							un(NEVER_IMPLEMENTED, i(166930)),	-- Dread Gladiator's Chain armbands
+							-- <Leather Alliance Ensemble here> --
+								un(NEVER_IMPLEMENTED, i(166946)),	-- Dread Gladiator's Leather Tunic
+								un(NEVER_IMPLEMENTED, i(166947)),	-- Dread Gladiator's Leather Boots
+								un(NEVER_IMPLEMENTED, i(166948)),	-- Dread Gladiator's Leather Gloves
+								un(NEVER_IMPLEMENTED, i(166949)),	-- Dread Gladiator's Leather Helm
+								un(NEVER_IMPLEMENTED, i(166950)),	-- Dread Gladiator's Leather Legguards
+								un(NEVER_IMPLEMENTED, i(166951)),	-- Dread Gladiator's Leather Spaulders
+								un(NEVER_IMPLEMENTED, i(166952)),	-- Dread Gladiator's Leather Belt
+								un(NEVER_IMPLEMENTED, i(166953)),	-- Dread Gladiator's Leather Bindings
+							-- <Mail Alliance Ensemble here> --
+								un(NEVER_IMPLEMENTED, i(166954)),	-- Dread Gladiator's Chain Armor
+								un(NEVER_IMPLEMENTED, i(166955)),	-- Dread Gladiator's Chain Sabatons
+								un(NEVER_IMPLEMENTED, i(166956)),	-- Dread Gladiator's Chain Gauntlets
+								un(NEVER_IMPLEMENTED, i(166957)),	-- Dread Gladiator's Chain Helm
+								un(NEVER_IMPLEMENTED, i(166958)),	-- Dread Gladiator's Chain Leggings
+								un(NEVER_IMPLEMENTED, i(166959)),	-- Dread Gladiator's Chain Spaulders
+								un(NEVER_IMPLEMENTED, i(166960)),	-- Dread Gladiator's Chain Waistguard
+								un(NEVER_IMPLEMENTED, i(166961)),	-- Dread Gladiator's Chain Armbands
 						i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
 							["sourceQuests"] = { 56499 },	-- Storming the Battlefields
 							["classes"] = HEALERS,

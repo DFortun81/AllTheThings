@@ -1064,7 +1064,6 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,
-					--["new_lvl"] = 10,
 				}),
 				q(6187,  {	-- Order Must Be Restored
 					["providers"] = {
@@ -1321,7 +1320,6 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,
-					--["new_lvl"] = 10,
 				}),
 				q(30095, {	-- The End Time
 					["provider"] = { "n", 52408 },	-- Coridormi
@@ -1380,7 +1378,6 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,
-					--["new_lvl"] = 10,
 				}),
 				q(7782,  {	-- The Lord of Blackrock
 					["provider"] = { "n", 107574 },	-- Anduin Wrynn
@@ -1509,19 +1506,16 @@ _.Zones =
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,
-					--["new_lvl"] = 10,
 				}),
 				q(60120,   {	-- To Outland
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,
-					--["new_lvl"] = 10,
 				}),
 				q(60125,   {	-- To Pandaria!
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,
-					--["new_lvl"] = 10,
 				}),
 				q(28827, {	-- To the Depths
 					["provider"] = { "n", 45226 },	-- Naraat the Earthspeaker

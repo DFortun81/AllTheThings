@@ -978,13 +978,13 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(32136)),	-- Chancellor's Chain Leggings
 				un(NEVER_IMPLEMENTED, i(32137)),	-- Chancellor's Chain Spaulders
 				un(NEVER_IMPLEMENTED, i(150642)),	-- Trailseeker Spaulders
-				un(NEVER_IMPLEMENTED, i(150637)),	-- Trailseeker vest
-				un(NEVER_IMPLEMENTED, i(150638)),	-- Trailseeker greaves
-				un(NEVER_IMPLEMENTED, i(150639)),	-- Trailseeker gauntlets
-				un(NEVER_IMPLEMENTED, i(150640)),	-- Trailseeker helm
-				un(NEVER_IMPLEMENTED, i(150641)),	-- Trailseeker legguards
-				un(NEVER_IMPLEMENTED, i(150643)),	-- Trailseeker belt
-				un(NEVER_IMPLEMENTED, i(150644)),	-- Trailseeker bracers
+				un(NEVER_IMPLEMENTED, i(150637)),	-- Trailseeker Vest
+				un(NEVER_IMPLEMENTED, i(150638)),	-- Trailseeker Greaves
+				un(NEVER_IMPLEMENTED, i(150639)),	-- Trailseeker Gauntlets
+				un(NEVER_IMPLEMENTED, i(150640)),	-- Trailseeker Helm
+				un(NEVER_IMPLEMENTED, i(150641)),	-- Trailseeker Legguards
+				un(NEVER_IMPLEMENTED, i(150643)),	-- Trailseeker Belt
+				un(NEVER_IMPLEMENTED, i(150644)),	-- Trailseeker Bracers
 				un(NEVER_IMPLEMENTED, i(48819)),	-- Windrunner's Handguards
 				un(NEVER_IMPLEMENTED, i(48820)),	-- Windrunner's Headpiece
 				un(NEVER_IMPLEMENTED, i(48821)),	-- Windrunner's Legguards
@@ -1039,14 +1039,14 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(163297)),	-- honorbound vanguard's legguards
 			un(NEVER_IMPLEMENTED, i(163302)),	-- honorbound vanguard's spaulders
 			un(NEVER_IMPLEMENTED, i(163304)),	-- honorbound vanguard's waistcord
-			un(NEVER_IMPLEMENTED, i(92838)),	-- danio-scale belt
-			un(NEVER_IMPLEMENTED, i(92839)),	-- danio-scale bracers
-			un(NEVER_IMPLEMENTED, i(92840)),	-- danio-scale gauntlets
-			un(NEVER_IMPLEMENTED, i(92841)),	-- danio-scale graves
-			un(NEVER_IMPLEMENTED, i(92842)),	-- danio-scale helm
-			un(NEVER_IMPLEMENTED, i(92843)),	-- danio-scale legguards
-			un(NEVER_IMPLEMENTED, i(92844)),	-- danio-scale spaulders
-			un(NEVER_IMPLEMENTED, i(92845)),	-- danio-scale vest
+			un(NEVER_IMPLEMENTED, i(92838)),	-- Danio-Scale Belt
+			un(NEVER_IMPLEMENTED, i(92839)),	-- Danio-Scale Bracers
+			un(NEVER_IMPLEMENTED, i(92840)),	-- Danio-Scale Gauntlets
+			un(NEVER_IMPLEMENTED, i(92841)),	-- Danio-Scale Greaves
+			un(NEVER_IMPLEMENTED, i(92842)),	-- Danio-Scale Helm
+			un(NEVER_IMPLEMENTED, i(92843)),	-- Danio-Scale Legguards
+			un(NEVER_IMPLEMENTED, i(92844)),	-- Danio-Scale Spaulders
+			un(NEVER_IMPLEMENTED, i(92845)),	-- Danio-Scale Vest
 			un(NEVER_IMPLEMENTED, i(154952)),	-- saurscale wristgaurds
 			un(NEVER_IMPLEMENTED, i(154953)),	-- saurscale göpves
 			un(NEVER_IMPLEMENTED, i(154954)),	-- saurscale leggings
@@ -1557,12 +1557,12 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(163312)),	-- 7th Legionnaire's Shawl
 			un(NEVER_IMPLEMENTED, i(163348)),	-- Warfront Gear Cloak
 			un(NEVER_IMPLEMENTED, i(163364)),	-- Warfront Gear Cloak
-			un(NEVER_IMPLEMENTED, i(146793)),	-- manari magus drape
-			un(NEVER_IMPLEMENTED, i(146794)),	-- sargerai herald cloak
-			un(NEVER_IMPLEMENTED, i(146795)),	-- terrofiend greatcloak
-			un(NEVER_IMPLEMENTED, i(153397)),	-- salt starched shawl
-			un(NEVER_IMPLEMENTED, i(156755)),	-- drape of revengance
-			un(NEVER_IMPLEMENTED, i(154968)),	-- drape of the golden city
+			un(NEVER_IMPLEMENTED, i(146793)),	-- Man'ari Magus Drape
+			un(NEVER_IMPLEMENTED, i(146794)),	-- Sargerei Herald's Cloak
+			un(NEVER_IMPLEMENTED, i(146795)),	-- Terrorfiend Greatcloak
+			un(NEVER_IMPLEMENTED, i(153397)),	-- Salt Starched Shawl
+			un(NEVER_IMPLEMENTED, i(156755)),	-- Drape of Revengeance
+			un(NEVER_IMPLEMENTED, i(154968)),	-- Drape of the Golden City
 			un(NEVER_IMPLEMENTED, i(134617)),	-- Scorching Drape
 			un(NEVER_IMPLEMENTED, i(163245)),	-- 7th Legionnaire's Satin Cloak
 			un(NEVER_IMPLEMENTED, i(150489)),	-- Shroud of Forgiveness
@@ -2204,11 +2204,11 @@ _.NeverImplemented =
 			p(1751),
 		}))),
 		un(NEVER_IMPLEMENTED, i(130145)),	-- Unknown
-		un(NEVER_IMPLEMENTED, i(154902)),	-- perculias peculiar parrot
+		un(NEVER_IMPLEMENTED, i(154902)),	-- Perculia's Peculiar Parrot
 		un(NEVER_IMPLEMENTED, i(21168)),	-- Baby Shark
-		un(NEVER_IMPLEMENTED, i(39148)),	-- baby coralshell turtle
-		un(NEVER_IMPLEMENTED, i(66070)),	-- lizzy
-		un(NEVER_IMPLEMENTED, i(66075)),	-- bubbles
+		un(NEVER_IMPLEMENTED, i(39148)),	-- Baby Coralshell Turtle
+		un(NEVER_IMPLEMENTED, i(66070)),	-- Lizzy
+		un(NEVER_IMPLEMENTED, i(66075)),	-- Bubbles
 		un(NEVER_IMPLEMENTED, i(11903)),	-- Cat Carrier (Corrupted Kitten)
 		un(NEVER_IMPLEMENTED, i(109602)),	-- Echo of Murmur (temp item)
 		un(NEVER_IMPLEMENTED, i(169195)),	-- Golden Cricket
@@ -3908,7 +3908,7 @@ _.NeverImplemented =
 		n(-335, {	-- Two Handed Axes
 			un(NEVER_IMPLEMENTED, i(134563)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(108782)),	-- Unknown
-			un(NEVER_IMPLEMENTED, i(150607)),	-- greataxe of fury
+			un(NEVER_IMPLEMENTED, i(150607)),	-- Greataxe of Fury
 			un(NEVER_IMPLEMENTED, i(150606)),	-- Armsmaster's Greataxe
 			un(NEVER_IMPLEMENTED, i(140711)),	-- Armsmaster's Greataxe
 			un(NEVER_IMPLEMENTED, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)

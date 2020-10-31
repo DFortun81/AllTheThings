@@ -2092,6 +2092,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 85,
 				}),
+				q(60123, {	-- To Outland
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, 85 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(60125, {	-- To Pandaria!
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, 85 },

@@ -768,24 +768,15 @@ _.Zones =
 						-- TODO
 						-- PVP Gear
 						-- Ensembles
-						-- <Leather Alliance Ensemble here> --
-							un(NEVER_IMPLEMENTED, i(166946)),	-- Dread Gladiator's Leather Tunic
-							un(NEVER_IMPLEMENTED, i(166947)),	-- Dread Gladiator's Leather Boots
-							un(NEVER_IMPLEMENTED, i(166948)),	-- Dread Gladiator's Leather Gloves
-							un(NEVER_IMPLEMENTED, i(166949)),	-- Dread Gladiator's Leather Helm
-							un(NEVER_IMPLEMENTED, i(166950)),	-- Dread Gladiator's Leather Legguards
-							un(NEVER_IMPLEMENTED, i(166951)),	-- Dread Gladiator's Leather Spaulders
-							un(NEVER_IMPLEMENTED, i(166952)),	-- Dread Gladiator's Leather Belt
-							un(NEVER_IMPLEMENTED, i(166953)),	-- Dread Gladiator's Leather Bindings
-						-- <Mail Alliance Ensemble here> --
-							un(NEVER_IMPLEMENTED, i(166954)),	-- Dread Gladiator's Chain Armor
-							un(NEVER_IMPLEMENTED, i(166955)),	-- Dread Gladiator's Chain Sabatons
-							un(NEVER_IMPLEMENTED, i(166956)),	-- Dread Gladiator's Chain Gauntlets
-							un(NEVER_IMPLEMENTED, i(166957)),	-- Dread Gladiator's Chain Helm
-							un(NEVER_IMPLEMENTED, i(166958)),	-- Dread Gladiator's Chain Leggings
-							un(NEVER_IMPLEMENTED, i(166959)),	-- Dread Gladiator's Chain Spaulders
-							un(NEVER_IMPLEMENTED, i(166960)),	-- Dread Gladiator's Chain Waistguard
-							un(NEVER_IMPLEMENTED, i(166961)),	-- Dread Gladiator's Chain Armbands
+						-- Mail Horde (you probably will learn both after learning one)
+							un(NEVER_IMPLEMENTED, i(166923)),	-- Dread Gladiator's Chain Armor
+							un(NEVER_IMPLEMENTED, i(166924)),	-- Dread Gladiator's Chain Sabatons
+							un(NEVER_IMPLEMENTED, i(166925)),	-- Dread Gladiator's Chain Gauntlets
+							un(NEVER_IMPLEMENTED, i(166926)),	-- Dread Gladiator's Chain Helm
+							un(NEVER_IMPLEMENTED, i(166927)),	-- Dread Gladiator's Chain Leggings
+							un(NEVER_IMPLEMENTED, i(166928)),	-- Dread Gladiator's Chain Spaulders
+							un(NEVER_IMPLEMENTED, i(166929)),	-- Dread Gladiator's Chain Waistguard
+							un(NEVER_IMPLEMENTED, i(166930)),	-- Dread Gladiator's Chain Armbands
 						i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
 							["sourceQuests"] = { 56500 },	-- Storming the Battlefields
 							["classes"] = HEALERS,
