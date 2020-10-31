@@ -30,7 +30,7 @@ _.Achievements =
 				ach(12090, {	-- Fierce Elite
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				ach(12134, {	-- Fierce Gladiator: Legion Season 5
+				ach(12010, {	-- Fierce Gladiator: Legion Season 5
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						title(363, {	-- Fierce Gladiator <Name>

@@ -16,6 +16,12 @@ _.ExpansionFeatures =
 						i(166678),	-- Brynja's Beacon
 					},
 				}),
+				q(54006, {	-- A New Hope
+					["provider"] = { "n", 149418 },	-- Maiev Shadowsong
+					["g"] = {
+						i(166525),	-- Nightwreathed Egg
+					},
+				}),
 				q(54044, {	-- Black Moon Rising
 					["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
 					["lvl"] = 120,
