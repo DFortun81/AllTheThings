@@ -79,26 +79,34 @@ local function Push(self, name, method)
 	table.insert(self.__stack, { method, name });
 	self:SetScript("OnUpdate", OnUpdate);
 end
-local function StartCoroutine(name, method)
+local function StartCoroutine(name, method, delaySec)
 	if method and not app.refreshing[name] then
 		local instance = coroutine.create(method);
 		app.refreshing[name] = true;
-		-- print("coroutine starting",name);
-		Push(app, name, function()
-			-- Check the status of the coroutine
-			if instance and coroutine.status(instance) ~= "dead" then
-				local ok, err = coroutine.resume(instance);
-				if ok then return true;	-- This means more work is required.
-				else
-					-- Show the error. Returning nothing is the same as canceling the work.
-					print(debugstack(instance));
-					print(err);
-					app.report();
+		local pushCo = function()
+				-- Check the status of the coroutine
+				if instance and coroutine.status(instance) ~= "dead" then
+					local ok, err = coroutine.resume(instance);
+					if ok then return true;	-- This means more work is required.
+					else
+						-- Show the error. Returning nothing is the same as canceling the work.
+						print(debugstack(instance));
+						print(err);
+						app.report();
+					end
 				end
-			end
-			-- print("coroutine complete",name);
-			app.refreshing[name] = nil;
-		end);
+				-- print("coroutine complete",name);
+				app.refreshing[name] = nil;
+			end;
+		if delaySec and delaySec > 0 then
+			-- print("delayed coroutine",delaySec,name);
+			C_Timer.After(delaySec, function() Push(app, name, pushCo) end);
+		else
+			-- print("coroutine starting",name);
+			Push(app, name, pushCo);
+		end
+	-- else
+		-- print("skipped coroutine",name);/
 	end
 end
 local constructor = function(id, t, typeID)
@@ -11773,16 +11781,13 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 		table.insert(app.RawData, self.data);
 		self.rawData = {};
 		local function RefreshBounties()
-			for i=1,30,1 do
-				coroutine.yield();
-			end
 			if #self.data.g > 1 and app.Settings:GetTooltipSetting("Auto:BountyList") then
 				self.data.g[1].saved = true;
 				self:SetVisible(true);
 			end
 		end
 		self:SetScript("OnEvent", function(self, e, ...)
-			StartCoroutine("RefreshBounties", RefreshBounties);
+			StartCoroutine("RefreshBounties", RefreshBounties, 1);
 		end);
 		self:RegisterEvent("VARIABLES_LOADED");
 	end
@@ -12246,13 +12251,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		end
 		local function RefreshLocationCoroutine()
 			if app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
-				-- Wait for a few moments for the map to update.
-				local waitTimer = 30;
-				while waitTimer > 0 do
-					coroutine.yield();
-					waitTimer = waitTimer - 1;
-				end
-				
+
 				-- While the player is in combat, wait for combat to end.
 				while InCombatLockdown() do coroutine.yield(); end
 				-- Acquire the new map ID.
@@ -12275,7 +12274,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
 		app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
 		self:SetScript("OnEvent", function(self, e, ...)
-			StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
+			StartCoroutine("RefreshLocation", RefreshLocationCoroutine, 1);
 		end);
 		self:RegisterEvent("VARIABLES_LOADED");
 		self:RegisterEvent("NEW_WMO_CHUNK");
@@ -14689,7 +14688,7 @@ end);
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
 local ProcessAuctions = function()
-	StartCoroutine("ProcessAuctionData", ProcessAuctionData);
+	StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
 end
 
 local ProcessAuctionData = function()
@@ -14698,9 +14697,6 @@ local ProcessAuctionData = function()
 	local count = 0;
 	for _ in pairs(AllTheThingsAuctionData) do count = count+1 end
 	if count < 1 then return end;
-	
-	-- Wait a second!
-	for i=0,60,1 do coroutine.yield(); end
 	
 	-- Search the ATT Database for information related to the auction links (items, species, etc)
 	local filterID;
@@ -14950,7 +14946,7 @@ app.AuctionScan = function()
 		items = {};
 	end
 	print(L["TITLE"] .. ": Successfully scanned " .. auctionItems .. " item(s).");
-	StartCoroutine("ProcessAuctionData", ProcessAuctionData);
+	StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
 end
 
 app.OpenAuctionModule = function(self)
@@ -15023,8 +15019,8 @@ app.OpenAuctionModule = function(self)
 										AllTheThingsAuctionConfig.LastScan = time();
 										app.StartAuctionScan();
 									else
-										print(L["TITLE"] .. ": Throttled scan! Please wait " .. RoundNumber(((AllTheThingsAuctionConfig.LastScan+900)-time()), 0) .. " before running another. Loading last save instead...");
-										StartCoroutine("ProcessAuctionData", ProcessAuctionData);
+										app.print(": Throttled scan! Please wait " .. RoundNumber(((AllTheThingsAuctionConfig.LastScan+900)-time()), 0) .. " before running another. Loading last save instead...");
+										StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
 									end
 								end
 							end,
