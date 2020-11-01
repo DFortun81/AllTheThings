@@ -4584,10 +4584,19 @@ local function AttachTooltip(self)
 					if not AllTheThingsAuctionData then return end;
 					if AllTheThingsAuctionData[itemID] then
 						self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
-					end
-					-- print("Search Item",itemID);--]]					
+					end--]]
+					-- print("Search Item",itemID);
 					AttachTooltipSearchResults(self, link, SearchForLink, link);
 				end
+				
+				-- Does this tooltip have a 'shown Thing'
+				-- if self.shownThing then
+					-- -- local search, id = self.shownThing[1], self.shownThing[2];
+					-- -- print("shown Thing", search, id);
+					-- -- AttachTooltipSearchResults(self, search .. ":" .. id, SearchForField, search, id);
+					-- self.AllTheThingsProcessing = nil;
+					-- self.shownThing = nil;
+				-- end
 				
 				-- Does the tooltip have an owner?
 				if owner then
@@ -4723,6 +4732,7 @@ end
 	]]--
 	local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
 	GameTooltip.SetCurrencyByID = function(self, currencyID, count)
+		-- print("set currency tooltip");
 		-- Make sure to call to base functionality
 		GameTooltip_SetCurrencyByID(self, currencyID, count);
 		
@@ -4734,12 +4744,16 @@ end
 	end
 	local GameTooltip_SetCurrencyToken = GameTooltip.SetCurrencyToken;
 	GameTooltip.SetCurrencyToken = function(self, tokenID)
+		-- print("set currency token");
+		-- this only runs once per tooltip show
 		-- Make sure to call to base functionality
 		GameTooltip_SetCurrencyToken(self, tokenID);
 		
 		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
-			local name, isHeader = C_CurrencyInfo.GetCurrencyListInfo(tokenID);
+			local info = C_CurrencyInfo.GetCurrencyListInfo(tokenID);
+			local name, isHeader = info.name, info.isHeader;
+			-- print(tokenID, name, isHeader);
 			if not isHeader then
 				-- Determine which currencyID is the one that we're dealing with.
 				local cache = SearchForFieldContainer("currencyID");
@@ -4749,6 +4763,9 @@ end
 						-- Compare the name of the currency vs the name of the token
 						local currencyInfo = C_CurrencyInfo.GetCurrencyInfo(currencyID)
 						if currencyInfo and currencyInfo.name == name then
+							-- self.shownThing = { "currencyID", currencyID };
+							-- make sure tooltip refreshes
+							self.AllTheThingsProcessing = nil;
 							AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
 							if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 							self:Show();
