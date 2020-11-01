@@ -232,11 +232,6 @@ _.Zones =
 					["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
 					["sourceQuest"] = 30799,	-- The Tomb of Shadows
 				}),
-				q(32401, {	-- Breath of Darkest Shadow (A)
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 68939 },	-- Anduin Wrynn
-					["sourceQuest"] = 32400,	-- The Bell Speaks
-				}),
 				q(32399, {	-- Breath of Darkest Shadow (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 67844 },	-- Malkorok
@@ -331,10 +326,6 @@ _.Zones =
 					["coord"] = { 74.9, 88.5, 379 },
 					["provider"] = { "n", 60973 },	-- Waterspeaker Gorai
 					["sourceQuest"] = 30480,	-- The Ritual
-				}),
-				q(32378, {	-- Clearing a Path
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68370 },	-- Lor'themar Theron
 				}),
 				q(30487, {	-- Comin' Round the Mountain
 					["coord"] = { 57.2, 61.2, 379 },
@@ -610,10 +601,6 @@ _.Zones =
 						30751,	-- A Terrible Sacrifice
 						30750,	-- Off the Wall!
 					},
-				}),
-				q(32379, {	-- Legacy of the Korune
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68370 },	-- Lor'themar Theron
 				}),
 				q(30801, {	-- Lessons from History
 					["coord"] = { 57.3, 47.9, 379 },
@@ -1396,10 +1383,6 @@ _.Zones =
 						i(82569),	-- Luckydo Ring
 						i(82573),	-- Sootassle Band
 					},
-				}),
-				q(32384, {	-- Trapping the Leader
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68370 },	-- Lor'themar Theron
 				}),
 				q(30826, {	-- Trouble Brewing
 					["coord"] = { 40.3, 81.5, 379 },

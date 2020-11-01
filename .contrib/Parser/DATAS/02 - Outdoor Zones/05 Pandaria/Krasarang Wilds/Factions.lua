@@ -26,8 +26,16 @@ _.Zones =
 									crit(3, {	-- The Horde is Family
 										["sourceQuests"] = { 32372 },	-- De-Subjugation
 									}),
-									crit(4),	-- Blood For Blood
-									crit(5),	-- The Korune
+									crit(4, {	-- Blood For Blood
+										["sourceQuests"] = {
+											32191,	-- Ancient Guardians
+											32192,	-- Bloodlines
+											32244,	-- The Korune
+										},
+									}),
+									crit(5, {	-- The Korune
+										["sourceQuests"] = { 32384 },	-- Trapping the Leader
+									}),
 									crit(6),	-- Pride
 									crit(7),	-- Rise of the Blood Elves
 									crit(8),	-- Secrets of the Past
@@ -124,6 +132,12 @@ _.Zones =
 								["coord"] = { 32.1, 84.9, 392 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32378, {	-- Clearing a Path
+								["sourceQuests"] = { 32376 },	-- To the Valley!
+								["provider"] = { "n", 68370 },	-- Lor'themar Theron
+								["coord"] = { 53.8, 49.1, 379 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32251, {	-- Dagger in the Dark
 								["sourceQuests"] = { 32108 },	-- Domination Point
 								["provider"] = { "n", 67939 },	-- General Nazgrim
@@ -180,6 +194,13 @@ _.Zones =
 								["coord"] = { 79.7, 30.4, 418 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32344, {	-- It Is A Mystery
+								["sourceQuests"] = { 32449 },	-- The Ruins of Ogudei
+								["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
+								["isDaily"] = true,
+								["coord"] = { 36.2, 41.1, 421 },	-- Ruins of Ogudei
+								["races"] = HORDE_ONLY,
+							}),
 							q(32348, {	-- Kick 'em While They're Down
 								["sourceQuests"] = { 32449 },	-- The Ruins of Ogudei
 								["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
@@ -192,6 +213,12 @@ _.Zones =
 								["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 								["isDaily"] = true,
 								["coord"] = { 36.2, 41.1, 421 },	-- Ruins of Ogudei
+								["races"] = HORDE_ONLY,
+							}),
+							q(32379, {	-- Legacy of the Korune
+								["sourceQuests"] = { 32376 },	-- To the Valley!
+								["provider"] = { "n", 68370 },	-- Lor'themar Theron
+								["coord"] = { 53.8, 49.1, 379 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32343, {	-- Ogudei's Lieutenants
@@ -289,6 +316,26 @@ _.Zones =
 								["sourceQuests"] = { 32372 },	-- De-Subjugation
 								["provider"] = { "n", 67939 },	-- General Nazgrim
 								["coord"] = { 9.30, 51.2, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32376, {	-- To the Valley!
+								["minReputation"] = { 1375, HONORED+6800 },
+								["sourceQuests"] = {
+									32191,	-- Ancient Guardians
+									32192,	-- Bloodlines
+									32244,	-- The Korune
+								},
+								["provider"] = { "n", 67939 },	-- General Nazgrim
+								["coord"] = { 9.29, 51.2, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32384, {	-- Trapping the Leader
+								["sourceQuests"] = {
+									32378,	-- Clearing a Path
+									32379,	-- Legacy of the Korune
+								},
+								["provider"] = { "n", 68370 },	-- Lor'themar Theron
+								["coord"] = { 53.8, 49.1, 379 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32257, {	-- Voice of the Gods
@@ -441,9 +488,16 @@ _.Zones =
 									crit(10, {	-- An Ancient Ally
 										["sourceQuests"] = { 32335 },	-- The Greatest Prank
 									}),
-									crit(11),	-- In Search of Harmony
-									crit(12),	-- Breath of Darkest Shadow
-									i(93385),	-- Grand Gryphon (MOUNT!)
+									crit(11, {	-- In Search of Harmony
+										["sourceQuests"] = {
+											32336,	-- The Handle
+											32338,	-- The Harmonic Ointment
+											32337,	-- The Head
+										},
+									}),
+									crit(12, {	-- Breath of Darkest Shadow
+										["sourceQuests"] = { 32455 },	-- The Silence
+									}),
 								},
 							}),
 						}),
@@ -510,6 +564,12 @@ _.Zones =
 								["sourceQuests"] = { 32193 },	-- To Mogujia
 								["provider"] = { "n", 67734 },	-- Sarannha Skyglaive
 								["coord"] = { 59.9, 75.4, 379 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32401, {	-- Breath of Darkest Shadow
+								["sourceQuests"] = { 32400 },	-- The Bell Speaks
+								["provider"] = { "n", 68939 },	-- Anduin Wrynn
+								["coord"] = { 56.3, 34.2, 379 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32383, {	-- Bugging Out
@@ -702,6 +762,17 @@ _.Zones =
 								["coord"] = { 94.5, 28.6, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32400, {	-- The Bell Speaks
+								["minReputation"] = { 1376, EXALTED },
+								["sourceQuests"] = {
+									32336,	-- The Handle
+									32338,	-- The Harmonic Ointment
+									32337,	-- The Head
+								},
+								["provider"] = { "n", 67940 },	-- Admiral Taylor
+								["coord"] = { 94.5, 28.4, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32380, {	-- The Best Around
 								["minReputation"] = { 1376, FRIENDLY+950 },
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
@@ -737,11 +808,32 @@ _.Zones =
 								["coord"] = { 93.8, 27.5, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32336, {	-- The Handle
+								["minReputation"] = { 1376, REVERED+18500 },	-- maybe 18490
+								["sourceQuests"] = { 32335 },	-- The Greatest Prank
+								["provider"] = { "n", 68538 },	-- The Monkey King
+								["coord"] = { 93.8, 27.5, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32355, {	-- The Harmonic Mallet
 								["minReputation"] = { 1376, REVERED+14540 },	-- possibly 14530
 								["sourceQuests"] = { 32423 },	-- What Had To Be Done
 								["provider"] = { "n", 67940 },	-- Admiral Taylor
 								["coord"] = { 94.5, 28.5, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32338, {	-- The Harmonic Ointment
+								["minReputation"] = { 1376, REVERED+18500 },	-- maybe 18490
+								["sourceQuests"] = { 32335 },	-- The Greatest Prank
+								["provider"] = { "n", 68538 },	-- The Monkey King
+								["coord"] = { 93.8, 27.5, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32337, {	-- The Head
+								["minReputation"] = { 1376, REVERED+18500 },	-- maybe 18490
+								["sourceQuests"] = { 32335 },	-- The Greatest Prank
+								["provider"] = { "n", 68538 },	-- The Monkey King
+								["coord"] = { 93.8, 27.5, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32331, {	-- The Kirin Tor
@@ -786,6 +878,15 @@ _.Zones =
 								["provider"] = { "n", 68003 },	-- The Monkey King
 								["coord"] = { 48.8, 50.3, 379 },
 								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32455, {	-- The Silence
+								["sourceQuests"] = { 32401 },	-- Breath of Darkest Shadow
+								["provider"] = { "n", 68987 },	-- Anduin Wrynn
+								["coord"] = { 55.9, 31.9, 379 },
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									i(93385),	-- Grand Gryphon (MOUNT!)
+								},
 							}),
 							q(32243, {	-- The Source of Korune Power
 								["sourceQuests"] = { 32193 },	-- To Mogujia
@@ -1117,6 +1218,11 @@ _.Zones =
 								["provider"] = { "n", 60528 },	-- Kuo-Na Quillpaw
 								["isDaily"] = true,
 								["coord"] = { 31.6, 61.6, 418 },
+							}),
+							q(30730, {	-- Dextrous Izissha
+								["provider"] = { "n", 60506 },	-- Thelonius
+								["isDaily"] = true,
+								["coord"] = { 31.8, 61.6, 418 },
 							}),
 							q(30725, {	-- Ellia Ravenmane
 								["provider"] = { "n", 60506 },	-- Thelonius

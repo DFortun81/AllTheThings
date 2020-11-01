@@ -29,7 +29,6 @@ _.Achievements =
 			ach(8120),		-- Direhorn in a China Shop
 			ach(7320),		-- Dog Pile
 			h(ach(7929, {	-- Dominance Offensive Campaign [Not entered to Pandaria Outdoor Zones files, these criteria are spread over not only the Pandaria zones but also Classic]
-				i(93386),		-- Grand Wyvern
 				crit(1),		-- Domination Point
 				crit(2),		-- The Voice of the Gods
 				crit(3),		-- The Horde Is Family
@@ -228,7 +227,6 @@ _.Achievements =
 				crit(2),		-- Complete The Thunder Below without taking any damage.
 			}),
 			a(ach(7928, {	-- Operation: Shieldwall Campaign [Not entered to Pandaria Outdoor Zones files, these criteria are spread over not only the Pandaria zones but also Classic]
-				i(93385),		-- Grand Gryphon
 				crit(1),		-- Lion's Landing
 				crit(2),		-- The Man With a Thousand Faces
 				crit(3),		-- The Voice of the Gods

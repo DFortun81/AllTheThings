@@ -448,6 +448,9 @@ _.HiddenQuestTriggers =
 		-------------------
 		q(32357),	-- triggered after watching the RP that takes place after turning in #32316, "Heart of the Alliance," part of the Operation: Shieldwall campaign
 		q(32395),	-- Tracking Event: Saw Avartu - triggered while on "The Divine Bell," part of the Operation: Shieldwall campaign (at the end of the quest before killing Avartu)
+		q(32339),	-- Rebuilding the Mallet (Tracker) — triggered after turning in The Head and The Harmonic Ointment (The Handle was turned in earlier, but presumably requires all 3), part of the Operation: Shieldwall campaign
+		q(32365),	-- Tracking Event: Epilogue Complete — triggered after turning in "The Silence" and watching the RP, part of the Operation: Shieldwall campaign.  didn't go off until I left the area and turned in another quest (which is a daily that doesn't normally have any additional tracking quests attached, so i know it was from the final campaign quest)
+		q(30720),	-- FLAG - Cradle of Chi-Ji Progress Bit 02 — triggered after turning in Dextrous Izissha quest, 6th for Champion of Chi-Ji.  triggered on another character after turning in Minh Do-Tan, which is the 2nd
 		q(30629),	-- triggered after cutscene prompted by turning in "Stoneplow Thirsts" in Valley of the Four Winds
 		q(31371),	-- Tracking Event: Player Has Completed One Anglers Daily
 		q(30719),	-- FLAG - Cradle of Chi-Ji Progress Bit 01

@@ -1037,21 +1037,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32401, {	-- Breath of Darkest Shadow
-					["provider"] = { "n", 68939 },	-- Anduin Wrynn
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 32400 },	-- The Bell Speaks
-				}),
 				q(31379, {	-- Challenge At The Temple of the Red Crane
 					["provider"] = { "n", 64001 },	-- Sage Lotusbloom
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(30740, {	-- Champion of Chi-Ji
-					["provider"] = { "n", 60506 },	-- Thelonius
-					["isDaily"] = true,
-				}),
-				q(30730, {	-- Dextrous Izissha
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
@@ -1116,11 +1107,6 @@ _.Zones =
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["coord"] = { 9.3, 51.1, 418 },
 					["races"] = HORDE_ONLY,
-				}),
-				q(32344, {	-- It Is A Mystery
-					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
 				}),
 				q(29875, {	-- Kang Bramblestaff
 					["provider"] = { "n", 56110 },	-- Xiao
@@ -1187,10 +1173,6 @@ _.Zones =
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
 				}),
-				q(32400, {	-- The Bell Speaks
-					["provider"] = { "n", 67940 },	-- Admiral Taylor
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(36882, {	-- The Great Angler Returns
 					["provider"] = { "n", 63721 },	-- Nat Pagle
 					["races"] = ALLIANCE_ONLY,
@@ -1200,18 +1182,6 @@ _.Zones =
 					["provider"] = { "n", 63721 },	-- Nat Pagle
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
-				}),
-				q(32336, {	-- The Handle
-					["provider"] = { "n", 68538 },	-- The Monkey King
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32338, {	-- The Harmonic Ointment
-					["provider"] = { "n", 68538 },	-- The Monkey King
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32337, {	-- The Head
-					["provider"] = { "n", 68538 },	-- The Monkey King
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32363, {	-- The Kun-Lai Expedition
 					["provider"] = { "n", 67939 },	-- General Nazgrim
@@ -1226,14 +1196,6 @@ _.Zones =
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
 				}),
-				q(32455, {	-- The Silence
-					["provider"] = { "n", 68987 },	-- Anduin Wrynn
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 32401 },	-- Breath of Darkest Shadow
-					["g"] = {
-						i(93385),	-- Grand Gryphon
-					},
-				}),
 				q(32402, {	-- The Situation In Dalaran
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
@@ -1241,10 +1203,6 @@ _.Zones =
 				q(30738, {	-- Thelonius
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
-				}),
-				q(32376, {	-- To the Valley!
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["races"] = HORDE_ONLY,
 				}),
 				q(30733, {	-- Tukka-Tuk
 					["provider"] = { "n", 60506 },	-- Thelonius
