@@ -45,6 +45,7 @@ _.PVP =
 						}),
 						n(14753, {	-- Illiyana Moonblaze <Silverwing Supply Officer>
 							["itemID"] = 137642,	-- Mark of Honor
+							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 61.6, 83.8, 63 },
 							["g"] = {
 								i(19595, {	-- Dryad's Wrist Bindings
@@ -267,6 +268,7 @@ _.PVP =
 						}),
 						n(14754, {	-- Kelm Hargunth <Warsong Supply Officer>
 							["itemID"] = 137642,	-- Mark of Honor
+							["races"] = HORDE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 40.2, 20.0, 1307 },
 							["g"] = {
 								i(19595, {	-- Dryad's Wrist Bindings

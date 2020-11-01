@@ -267,6 +267,7 @@ i(88496);	-- Sealed Crate
 i(173776);	-- Stale Loaf
 i(67495);	-- Strange Bloated Stomach
 i(160378);	-- Strongarm Stout
+i(170379);	-- Sunwarmed Sand
 i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate
 i(9279);	-- White Punch Card

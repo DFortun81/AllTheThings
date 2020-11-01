@@ -218,6 +218,7 @@ _.Zones =
 						}),
 						n(93907, {	-- Amelia Clarke <Wild Gladiator>
 							["itemID"] = 137642,	-- Mark of Honor
+							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 54.8, 17.0, 622 },
 							["g"] = {
 								i(138633, {	-- Arsenal: Wild Gladiator's Weapons
@@ -1216,6 +1217,7 @@ _.Zones =
 						}),
 						n(86176, {	-- Ingrid Blackingot <Primal Gladiator>
 							["itemID"] = 137642,	-- Mark of Honor
+							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 55.0, 19.4, 622 },
 							["g"] = {
 								i(138631),	-- Arsenal: Primal Gladiator's Weapons
@@ -1682,6 +1684,7 @@ _.Zones =
 						}),
 						n(93906, {	-- Slugg Spinbolt <Wild Combatant>
 							["itemID"] = 137642,	-- Mark of Honor
+							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 54.6, 17.6, 622 },
 							["g"] = {
 								i(138630),	-- Arsenal: Wild Combatant's Weapons
