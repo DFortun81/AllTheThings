@@ -64,6 +64,9 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(10058)),		-- WoW's 11th Anniversary
 			un(REMOVED_FROM_GAME, ach(10741)),		-- WoW's 12th Anniversary
 			un(REMOVED_FROM_GAME, ach(11848)),		-- WoW's 13th Anniversary
+			un(REMOVED_FROM_GAME, ach(12827)),		-- WoW's 14th Anniversary
+			un(REMOVED_FROM_GAME, ach(13917)),		-- WoW's 15th Anniversary
+			ach(14271),                             -- WoW's 16th Anniversary
 			un(REMOVED_FROM_GAME, ach(1292)),		-- Yellow Brewfest Stein
 			un(REMOVED_FROM_GAME, ach(4790)),		-- Zalazane's Fall
 		}),
