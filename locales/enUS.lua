@@ -1389,10 +1389,10 @@ app.L = {
 		[-690] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-691] = select(2, GetAchievementInfo(13630)),							-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = select(2, GetAchievementInfo(13957)),							-- Corrupted Gladiator: Battle for Azeroth Season 4
-		
+
 -- Shadowlands PvP Seasons
 		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
-		
+
 -- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		[-800] = GetSpellInfo(247402), 											-- Lucid Nightmare
 		[-801] = GetSpellInfo(243025),											-- Riddler's Mind-Worm
@@ -1671,6 +1671,7 @@ app.L = {
 		[-5362] = select(2,GetAchievementInfo(11848)),	-- 13th Anniversary
 		[-5363] = select(2,GetAchievementInfo(12827)),	-- 14th Anniversary
 		[-5364] = select(2,GetAchievementInfo(13917)),	-- 15th Anniversary
+		[-5365] = select(2,GetAchievementInfo(14271)),	-- 16th Anniversary
 --[[
 		-- Tier Set Numbers Localization
 		[-5992] = GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, -- Tier 9 Sets
