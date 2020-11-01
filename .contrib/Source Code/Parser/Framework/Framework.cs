@@ -166,6 +166,9 @@ namespace ATT
                                 quest[key.Key] = key.Value;
                             }
                         }
+
+                        // pre-consolidate the level information so it doesn't get merged around later
+                        LevelConsolidation(quest, 1);
                     }
                 }
             }
@@ -188,6 +191,9 @@ namespace ATT
                             {
                                 cachedQuest[key.Key] = key.Value;
                             }
+
+                            // pre-consolidate the level information so it doesn't get merged around later
+                            LevelConsolidation(cachedQuest, 1);
                         }
                     }
                 }
@@ -409,6 +415,8 @@ namespace ATT
                 if (f < 1 || CURRENT_VERSION < LEGION_VERSION) data.Remove("s");
             }
 
+            minLevel = LevelConsolidation(data, minLevel);
+
             if (data.TryGetValue("q", out f))
             {
                 if (f == 7 && data.TryGetValue("itemID", out object itemRef))
@@ -424,14 +432,6 @@ namespace ATT
                         Trace.WriteLine("WTF WHY IS THIS HEIRLOOM IGNORING BONUS IDS?!");
                         Console.ReadLine();
                     }
-                }
-
-                // If the level of this object is less than the current minimum level, we can safely remove it.
-                if (data.TryGetValue("lvl", out object lvlRef))
-                {
-                    var level = Convert.ToInt32(lvlRef);
-                    if (level <= minLevel) data.Remove("lvl");
-                    else minLevel = level;
                 }
 
                 // For Rings, Necklaces, and Trinkets - Ignore BoE filters
@@ -552,6 +552,50 @@ namespace ATT
             }
 
             return true;
+        }
+
+        /// <summary>
+        /// Verifies the 'lvl' tag within the data confines to the already-determined minLevel for the scope of this data
+        /// </summary>
+        /// <param name="data"></param>
+        /// <param name="minLevel"></param>
+        /// <returns></returns>
+        private static int LevelConsolidation(Dictionary<string, object> data, int minLevel)
+        {
+            // going to use 'lvl' in the end to handle level information for an object, so if reqLvl is present still, switch back to 'lvl'
+            if (data.TryGetValue("reqlvl", out List<object> reqlvls))
+            {
+                data["lvl"] = reqlvls;
+                data.Remove("reqlvl");
+            }
+
+            // If the level of this object is less than the current minimum level, we can safely remove it.
+            if (data.TryGetValue("lvl", out object lvlRef))
+            {
+                if (lvlRef is List<object> lvls)
+                {
+                    // only remove the lvl reqs if it's not a range
+                    if (lvls.Count < 2)
+                    {
+                        var level = Convert.ToInt32(lvls[0]);
+                        if (level <= minLevel) data.Remove("lvl");
+                        else
+                        {
+                            // replace the single value list with the single value to save on memory
+                            data["lvl"] = level;
+                            minLevel = level;
+                        }
+                    }
+                }
+                else
+                {
+                    var level = Convert.ToInt32(lvlRef);
+                    if (level <= minLevel) data.Remove("lvl");
+                    else minLevel = level;
+                }
+            }
+
+            return minLevel;
         }
 
         private static void DuplicateDataIntoGroups(Dictionary<string, object> data, object groups, string type)
@@ -1274,7 +1318,7 @@ namespace ATT
 
                 case "creatureId":
                 case "creatureID":
-                //case "npcID": // TODO: eventually can we consolidate both of these into just one?
+                    //case "npcID": // TODO: eventually can we consolidate both of these into just one?
                     {
                         return "creatureID";
                     }

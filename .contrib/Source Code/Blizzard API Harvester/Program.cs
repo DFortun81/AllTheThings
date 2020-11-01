@@ -570,7 +570,7 @@ namespace ATT
 
             // New Format 2020-03-26
             if (subData.TryGetValue("level", out int level) && level > 1) dict["iLvl"] = level;
-            if (subData.TryGetValue("required_level", out level) && level > 1) dict["reqlvl"] = new List<object>() { level };
+            if (subData.TryGetValue("required_level", out level) && level > 1) dict["lvl"] = new List<object>() { level };
             if (subData.TryGetValue("is_equippable", out bool b) && b) dict["equippable"] = 1;
             if (subData.TryGetValue("is_repeatable", out bool isRepeatable) && isRepeatable) dict["repeatable"] = 1;
             if (subData.TryGetValue("is_daily", out bool isDaily) && isDaily) dict["isDaily"] = 1;
@@ -969,12 +969,12 @@ namespace ATT
             //requirements.TryGetValue("max_character_level", out int maxlvl);
             //if (minlvl > 0 && maxlvl > 0)
             //{
-            //    dict["reqlvl"] = new List<object>() { minlvl, maxlvl };
+            //    dict["lvl"] = new List<object>() { minlvl, maxlvl };
             //}
             //else 
             if (minlvl > 0)
             {
-                dict["reqlvl"] = new List<object>() { minlvl };
+                dict["lvl"] = new List<object>() { minlvl };
             }
             if (requirements.TryGetValue("playable_classes", out d) && d.TryGetValue("links", out List<object> l))
             {

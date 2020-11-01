@@ -7221,7 +7221,7 @@ app.BaseQuest = {
 		elseif key == "link" then
 			return "quest:" .. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID);
 			-- this generates a link but it doesn't actually allow it to post in a chat channel...
-			-- return "\124cffffff00\124Hquest:".. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID) ..":".. (t.lvl or "0") .."\124h[".. t.questName .. "]\124h\124r";
+			-- return "\124cffffff00\124Hquest:".. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID) ..":".. (type(t.lvl) == "table" and t.lvl[1] or t.lvl or "0") .."\124h[".. t.questName .. "]\124h\124r";
 		elseif key == "icon" or key == "preview" then
 			if t.providers then
 				for k,v in pairs(t.providers) do
@@ -7983,17 +7983,26 @@ function app.NoFilter()
 end
 function app.FilterGroupsByLevel(group)
 	-- after 9.0, transition to a req lvl range, either min, or min + max
-	if group.reqlvl then
-		if #group.reqlvl > 1 then
-			-- min and max provided
-			return app.Level >= (group.reqlvl[1] or 0) and app.Level <= (group.reqlvl[2] or 0);
+	if group.lvl then
+		local minlvl;
+		local maxlvl;
+		if type(group.lvl) == "table" then
+			minlvl = group.lvl[1];
+			maxlvl = group.lvl[2];
 		else
-			-- only min provided
-			return app.Level >= (group.reqlvl[1] or 0);
+			minlvl = group.lvl;
 		end
-	else
-		return app.Level >= (group.lvl or 0);
+
+		if maxlvl then
+			-- min and max provided
+			return app.Level >= minlvl and app.Level <= maxlvl;
+		elseif minlvl then
+			-- only min provided
+			return app.Level >= minlvl;
+		end
 	end
+	-- no level requirement on the group, have to include it
+	return true;
 end
 function app.FilterGroupsByCompletion(group)
 	return group.progress < group.total;
@@ -10198,14 +10207,22 @@ RowOnEnter = function (self)
 		elseif reference.retries then
 			GameTooltip:AddLine("Failed to acquire information. This quest may have been removed from the game. " .. tostring(reference.retries), 1, 1, 1);
 		end
-		local minlvl = (reference.reqlvl and reference.reqlvl[1]) or reference.lvl or 0;
-		local maxlvl = (reference.reqlvl and reference.reqlvl[2]) or 0;
-		-- i suppose a maxlvl of 1 might exist?
-		if maxlvl > 0 then
-			GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl) .. " to " .. tostring(maxlvl));
-		-- no point to show 'requires lvl 1'
-		elseif minlvl > 1 then
-			GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl));
+		if reference.lvl then
+			local minlvl;
+			local maxlvl;
+			if type(reference.lvl) == "table" then
+				minlvl = reference.lvl[1] or 0;
+				maxlvl = reference.lvl[2] or 0;
+			else
+				minlvl = reference.lvl;
+			end
+			-- i suppose a maxlvl of 1 might exist?
+			if maxlvl and maxlvl > 0 then
+				GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl) .. " to " .. tostring(maxlvl));
+			-- no point to show 'requires lvl 1'
+			elseif minlvl and minlvl > 1 then
+				GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl));
+			end
 		end
 		if reference.b and app.Settings:GetTooltipSetting("binding") then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
 		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(SkillIDToSpellID[reference.requireSkill] or 0))); end
@@ -14075,7 +14092,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						local name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel = GetLFGDungeonInfo(dungeonID);
 						-- print(dungeonID,name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel);
 						local _,gold,unknown,xp,unknown2,numRewards,unknown = GetLFGDungeonRewards(dungeonID);
-						local header = {dungeonID=dungeonID,text=name,description=description,lvl=minRecLevel or 1,maxlvl=maxRecLevel,g={}};
+						local header = {dungeonID=dungeonID,text=name,description=description,lvl={minRecLevel or 1, maxRecLevel},g={}};
 						if expansionLevel and not isHoliday then
 							header.icon = setmetatable({["tierID"]=expansionLevel + 1}, app.BaseTier).icon;
 						elseif isTimeWalker then
@@ -14089,7 +14106,15 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								if cache then
 									local ACKCHUALLY;
 									for _,data in ipairs(cache) do
-										local lvl = isTimeWalker and (data.lvl or data.parent.lvl) or 0;
+										local lvl;
+										if isTimeWalker then
+											lvl = (data.lvl and type(data.lvl) == "table" and data.lvl[1]) or 
+													data.lvl or
+													(data.parent and data.parent.lvl and type(data.parent.lvl) == "table" and data.parent.lvl[1]) or
+													data.parent.lvl or 0;
+										else
+											lvl = 0;
+										end
 										if lvl <= minRecLevel then
 											if data.f then
 												item.f = data.f;
@@ -14133,7 +14158,15 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 									cache = fieldCache["currencyID"][itemID];
 									if cache then
 										for _,data in ipairs(cache) do
-											local lvl = isTimeWalker and (data.lvl or data.parent.lvl) or 0;
+											local lvl;
+											if isTimeWalker then
+												lvl = (data.lvl and type(data.lvl) == "table" and data.lvl[1]) or 
+														data.lvl or
+														(data.parent and data.parent.lvl and type(data.parent.lvl) == "table" and data.parent.lvl[1]) or
+														data.parent.lvl or 0;
+											else
+												lvl = 0;
+											end
 											if lvl <= minRecLevel then
 												if data.f then
 													item.f = data.f;
@@ -14242,21 +14275,21 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					return false;
 				end
 				-- Level 4th
-				if a.lvl then
-					if not b.lvl then
-						return true;
-					end
-					-- both Level, compare on level
-					-- equal Level, compare on text
-					if (a.lvl == b.lvl) then
-					-- print("lvl",a.text,b.text);
-						return string.lower(a.text or "") <= string.lower(b.text or "");
-					end
-					-- print("lvl",a.lvl,b.lvl);
-					return a.lvl <= b.lvl;
-				elseif b.lvl then
-					return false;
-				end
+				-- if a.lvl then
+					-- if not b.lvl then
+						-- return true;
+					-- end
+					-- -- both Level, compare on level
+					-- -- equal Level, compare on text
+					-- if (a.lvl == b.lvl) then
+					-- -- print("lvl",a.text,b.text);
+						-- return string.lower(a.text or "") <= string.lower(b.text or "");
+					-- end
+					-- -- print("lvl",a.lvl,b.lvl);
+					-- return a.lvl <= b.lvl;
+				-- elseif b.lvl then
+					-- return false;
+				-- end
 				-- Items 5th
 				if a.itemID then
 					if not b.itemID then

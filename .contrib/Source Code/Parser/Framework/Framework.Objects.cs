@@ -1017,7 +1017,7 @@ namespace ATT
                         case "text":
                         case "title":
                         case "icon":
-                        //case "lvl":
+                        case "lvl":
                         case "coords":
                         case "crs":
                         case "sym":
@@ -1083,7 +1083,7 @@ namespace ATT
                         case "collectible":
                         case "hideText":
                         case "description":
-                        case "lvl":
+                            //case "lvl":
                             // Ignore these!
                             break;
 
@@ -1120,9 +1120,9 @@ namespace ATT
                     item[field] = oldList = new List<object>();
                 }
 
-                // special case for 'reqlvl'...
+                // special case for level requirements
                 // item with quest attached, item has diff reqlvl than the quest reqlvl, you end up with the item having a lvl range instead of the highest value
-                if (field == "reqlvl")
+                if (field == "reqlvl" || field == "lvl")
                 {
                     int? oldmin = null, oldmax = null, newmin = null, newmax = null;
                     if (oldList.Count > 0)
@@ -1383,6 +1383,17 @@ namespace ATT
                             MergeIntegerArrayData(item, field, value);
                             break;
                         }
+                    // temp special case for 'lvl', only include data if it is in the expected new format of a list
+                    case "lvl":
+                        if (value is List<object> lvls)
+                        {
+                            MergeIntegerArrayData(item, field, lvls);
+                        }
+                        else if (value is Dictionary<object, object> dict)
+                        {
+                            MergeIntegerArrayData(item, field, dict.Values.ToList());
+                        }
+                        break;
 
                     // Sub-Dictionary Data Type Fields (stored as Dictionary<int, int> for usability reasons)
                     case "modIDs":
@@ -1655,7 +1666,7 @@ namespace ATT
                         break;
 
                     // Blacklisted Fields
-                    case "lvl":
+                    //case "lvl":
                     case "link":
                     case "retries":
                     case "previousRecipeID":

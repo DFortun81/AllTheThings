@@ -242,7 +242,7 @@ namespace ATT
                     case "maxReputation":
                     case "provider":
                     case "providers":
-                    case "lvl":
+                        //case "lvl":
                         {
                             return;
                         }
@@ -303,7 +303,6 @@ namespace ATT
                     case "b":
                     case "r":
                     case "ilvl":
-                    //case "lvl":
                     case "q":
                         {
                             item[field] = Convert.ToInt32(value);
@@ -322,6 +321,17 @@ namespace ATT
                             Objects.MergeIntegerArrayData(item, field, value);
                             break;
                         }
+                    // temp special case for 'lvl', only include data if it is in the expected new format of a list
+                    case "lvl":
+                        if (value is List<object> lvls)
+                        {
+                            Objects.MergeIntegerArrayData(item, field, lvls);
+                        }
+                        else if (value is Dictionary<object, object> dict)
+                        {
+                            Objects.MergeIntegerArrayData(item, field, dict.Values.ToList());
+                        }
+                        break;
 
                     // Sub-Dictionary Data Type Fields (stored as Dictionary<int, int> for usability reasons)
                     case "modIDs":
