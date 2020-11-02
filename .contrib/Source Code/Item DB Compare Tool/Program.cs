@@ -14,6 +14,7 @@ namespace ATT
     {
         const string DBSuffix = ".json";
         const string DiffSuffix = "-DIFF";
+        static string DateStamp { get; } = DateTime.UtcNow.Year.ToString() + DateTime.UtcNow.Month.ToString("00") + DateTime.UtcNow.Day.ToString("00");
 
         static void Main(string[] args)
         {
@@ -98,6 +99,9 @@ namespace ATT
                     }
                 }
             }
+
+            // save the cumulative set of things
+            File.WriteAllText(objectKey + "-FULL" + DBSuffix, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, source } }));
         }
 
         private static void CreateSource(Dictionary<int, Dictionary<string, object>> source, string objectKey, List<object> dbObjects)

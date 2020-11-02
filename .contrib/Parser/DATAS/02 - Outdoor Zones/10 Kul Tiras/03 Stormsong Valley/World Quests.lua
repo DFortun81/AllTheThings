@@ -9,76 +9,72 @@ _.Zones =
 			n(-34,  {	-- World Quests
 				n(QUESTS, {
 					--[[	raw quest list to check against
-					q(53318, {	-- Ductile Platinum
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53283, {	-- Flourishing Sea Stalks
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52115, {	-- In the Shadow of the Kraken
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53288, {	-- Overgrown Anchor Weed
 						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53012, {	-- Put Away Your Toys
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52199, {	-- Rum- Paaaage!
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52299, {	-- Whiplash
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52345, {	-- Work Order: Ravenberry Tarts (this quest was added to Zuldazar WQ file but I'm not sure it can spawn there)
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52402, {	-- Work Order: Viridium
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					]]--
 					q(52180, {	-- A Brennadam Shame
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52935, {	-- A New Era
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52936, {	-- A New Era
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51855, {	-- A Pirate's Life For Me
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52940, {	-- Arms Deal
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52140, {	-- A Thorny Problem
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52236, {	-- A Thorny Problem
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -89,40 +85,40 @@ _.Zones =
 					}),
 					q(52165, {	-- Automated Chaos
 						["provider"] = { "n", 140315 },	-- Eddie Fixit
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["coord"] = { 36.61, 33.61, 942 },
 						["isWorldQuest"] = true,
 					}),
 					q(52986, {	-- A Wicked Vessel
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52871, {	-- Azerite Empowerment
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51617, {	-- Azerite Empowerment
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51618, { 	-- Azerite Madness
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51644, {	-- Azerite Mining
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52873, {	-- Azerite Mining
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51623, {	-- Azerite Wounds
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51639, {	-- Beachhead
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(54442, {	-- Beast Tamer Watkins (Faction Assault WQ)
@@ -131,7 +127,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(52330, {	-- Beehemoth
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["npcID"] = 134147,		-- Beehemoth
 						["isWorldQuest"] = true,
 						["g"] = {
@@ -141,46 +137,46 @@ _.Zones =
 						},
 					}),
 					q(52865, {	-- Blockade Runner
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(53286, {	-- Blooming Siren's Sting
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 						["requireSkill"] = HERBALISM,
 					}),
 					q(53285, {	-- Blooming Star Moss
 						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52045, {	-- Boarder Patrol
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52063, {	-- Boarder Patrol
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(52071, {	-- Briarback Mountain
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52117, {	-- Briarback Mountain
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51828, {	-- Burning the Legion
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(55341, {	-- Calligraphy
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -190,52 +186,52 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51782, {	-- Captain Razorspine
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52325, {	-- Captured Evil
 						["provider"] = { "n", 141046 },	-- Leana Darkwind
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53106, {	-- Censership
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(53343, {	-- Censership
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52882, {	-- Controlled Burn
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52310, {	-- Corrupted Tideskipper
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52004, {	-- Counter Intelligence
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52306, {	-- Croaker
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51901, {	-- Crushtacean
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(51777, {	-- Dagrus the Scorned
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51778, {	-- Deepfang
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["provider"] = { "n", 139385 },	-- Deepfang
 						["isWorldQuest"] = true,
 					}),
@@ -244,19 +240,24 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(53318, {	-- Ductile Platinum
+						["isWorldQuest"] = true,
+						["lvl"] = { 50 },
+						["requireSkill"] = MINING,
+					}),
 					q(51981, {	-- Earthcaller's Abode
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51996, {	-- Earthcaller's Abode
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53027, {	-- Edge of Glory
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53878, {	-- Emergency Extrication (Faction Assault WQ)
 						["isWorldQuest"] = true,
@@ -265,23 +266,23 @@ _.Zones =
 					}),
 					q(52947, {	-- Ettin Outta Here
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52972, {	-- Favored Grandchild
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52011, {	-- Fiendish Fields (A)
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52064, {	-- Fiendish Fields (H)
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53715, {	-- Firewarden Viton Darkflare
 						["isWorldQuest"] = true,
@@ -289,11 +290,11 @@ _.Zones =
 						["lvl"] = 110,
 					}),
 					q(51781, {	-- Foreman Scripps
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52179, {	-- Fortified Resistance
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -313,17 +314,17 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51776, {	-- Galestorm
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52133, {	-- Good Boy!
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51779, {	-- Grimscowl the Harebrained
 						["coord"] = { 62.0, 73.9, 942 },
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53771, {	-- Gurin Stonebinder (Faction Assault WQ)
@@ -332,13 +333,13 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(52463, {	-- Haegol the Hammer
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53316, {	-- Hardened Monelite
 						["isWorldQuest"] = true,
 						["requireSkill"] = MINING,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53717, {	-- Hold the Highland
 						["isWorldQuest"] = true,
@@ -352,39 +353,39 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(52988, {	-- House Cleaning
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51854, {	-- I Am the Shark
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52328, {	-- Ice Sickle
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53108, {	-- Iconoclasm
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(53344, {	-- Iconoclasm
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52115, {	-- In the Shadow of the Kraken
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52168, {	-- It's Lit
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52321, {	-- Kickers
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 						["crs"] = { 141029 },	-- Kickers
 					}),
@@ -396,47 +397,47 @@ _.Zones =
 					q(52987, {	-- Let's Burn!
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52941, {	-- Light in the Darkness (A)
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52968, {	-- Light in the Darkness
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52794, {	-- Lizards and Ledgers
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52230, {	-- Loose Change (A)
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52239, {	-- Loose Change (H)
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51633, {	-- Make Loh Go
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52924, {	-- Mead Some Help?
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52880, {	-- Milden Mud Snout
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52982, {	-- Mine or Trouble
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -451,14 +452,14 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(53773, {	-- Naga Attack!
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
 					q(53945, {	-- Naga Attack!
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(165605),  -- Azsharan Medallion
@@ -470,23 +471,23 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51820, {	-- Oily Mess
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51840, {	-- Oily Mess
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52939, {	-- Ordnance Orders
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52464, {	-- Osca the Bloodied
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(54437, {	-- Owynn Graddock (Faction Assault WQ)
 						["lvl"] = 110,
@@ -494,60 +495,60 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(52964, {	-- Pest Problem
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51806, {	-- Pest Remover Mk. II
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51886, {	-- Pinku'shon
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53107, {	-- Plunder and Provisions
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(53345, {	-- Plunder and Provisions
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52474, {	-- Poacher Zane
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51774, {	-- Ragna
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52211, {	-- Red Sunrise
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51905, {	-- Reinforced Hullbreaker
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52142, {	-- Restocking
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52160, {	-- Restocking
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52979, {	-- Ritual Cleansing
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52164, {	-- Rum- Paaaage!
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -594,7 +595,7 @@ _.Zones =
 					q(53008, {	-- Sage Wisdom
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53706, {	-- Salvage the Supplies (Faction Assault WQ)
 						["lvl"] = 110,
@@ -602,34 +603,34 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(52889, {	-- Sandscour
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52309, {	-- SandFang
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52316, {	-- Sea Creatures Are Weird
 						["provider"] = { "n", 141002 },	-- Ellie Vern
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52271, {	-- Sea Salt Flavored (A)
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52280, {	-- Sea Salt Flavored (H)
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(51759, {	-- Seabreaker Skoloth
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52315, {	-- Severus the Outcast
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53724, {	-- Shadow Hunter Mutumba
@@ -638,7 +639,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(51627, {	-- Shell Game
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53753, {	-- Shell Outs (Faction Assault WQ)
@@ -652,11 +653,11 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(52446, {	-- Sister Absinthe
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51921, {	-- Slickspill
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53707, {	-- Smoke the Supplies (Faction Assault WQ)
@@ -666,41 +667,41 @@ _.Zones =
 					}),
 					q(52174, {	-- Snakes in the Shallows
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(50591, {	-- Son of a Bee
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52452, {	-- Song Mistress Dadalea
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52432, {	-- Squall
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53040, {	-- Squall Squelching
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52507, {	-- Sticky Mess
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52879, {	-- Stiff Policy
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(53042, {	-- Stormcaller
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(51982, {	-- Storm's Rage (Faction Assault WQ)
 						["provider"] = { "n", 135800 },	-- Sister Lilyana <Storm's Wake Emissary>
@@ -711,42 +712,42 @@ _.Zones =
 					q(52380, {	-- Supplies Needed: Frenzied Fangtooth
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52322, {	-- Taja the Tidehowler
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52198, {	-- Tank and Spank
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(55301, {	-- The Cycle of Life
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53025, {	-- The Culling
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52166, {	-- The Faceless Herald
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52476, {	-- The Lichen King
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51827, {	-- They Came From Behind!
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52126, {	-- This Little Piggy Has Sharp Tusks
 						["provider"] = { "n", 139987 },	-- Bristlespine
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["coord"] = { 42.41, 76.61, 942 },
 						["isWorldQuest"] = true,
 						["filter"] = 101,	-- Pet Battles
@@ -757,32 +758,32 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(52054, {	-- Too Much To Bear (A)
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52229, {	-- Too Much To Bear (H)
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(51817, {	-- Trapped Tortollans (A)
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51811, {	-- Trapped Tortollans (H)
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52200, {	-- Turtle Tactics
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52209, {	-- Turtle Tactics
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53712, {	-- Unfriendly Skies (Faction Assault WQ)
@@ -791,7 +792,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(52301, {	-- Vinespeaker Ratha
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(54434, {	-- Voidmaster Evenshade (Faction Assault WQ)
@@ -800,11 +801,11 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(52300, {	-- Wagga Snarltusk
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52891, {	-- Wendigo to Sleep
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -815,10 +816,10 @@ _.Zones =
 					}),
 					q(52459, {	-- Whirlwing
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53287, {	-- Winter's Kiss Cluster
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 						["requireSkill"] = HERBALISM,
 					}),
@@ -826,23 +827,23 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = TAILORING,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["g"] = {
 							i(162443),	-- Pattern: Battle Flag: Spirit of Freedom
 						},
 					}),
 					q(50993, {	-- Work Order: Coarse Leather
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52415, {	-- Work Order: Coarse Leather Barding
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52394, {	-- Work Order: Contract: Champions of Azeroth (Rank 3)
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 						["requireSkill"] = INSCRIPTION,
 						["g"] = {
@@ -850,7 +851,7 @@ _.Zones =
 						},
 					}),
 					q(52391, {	-- Work Order: Contract: Storm's Wake
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = INSCRIPTION,
@@ -860,7 +861,7 @@ _.Zones =
 					}),
 					q(52347, {	-- Work Order: Honey-Glazed Haunchs (Rank 3)
 						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 						["requireSkill"] = COOKING,
 						["g"] = {
@@ -868,7 +869,7 @@ _.Zones =
 						},
 					}),
 					q(52367, {	-- Work Order: Electroshock Mount Motivator
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENGINEERING,
@@ -877,7 +878,7 @@ _.Zones =
 						},
 					}),
 					q(52353, {	-- Work Order: Enchant Ring - Seal of Haste
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENCHANTING,
@@ -886,7 +887,7 @@ _.Zones =
 						},
 					}),
 					q(52354, {	-- Work Order: Enchant Ring - Seal of Mastery
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENCHANTING,
@@ -896,7 +897,7 @@ _.Zones =
 					}),
 					q(52344, {	-- Work Order: Kul Tiramisu (Rank 3)
 						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 						["requireSkill"] = COOKING,
 						["g"] = {
@@ -907,10 +908,10 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = JEWELCRAFTING,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52332, {	-- Work Order: Lightfoot Potion
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = ALCHEMY,
@@ -919,20 +920,20 @@ _.Zones =
 						},
 					}),
 					q(50996, {	-- Work Order: Mistscale
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = SKINNING,
 					}),
 					q(50981, {	-- Work Order: Riverbud
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = HERBALISM,
 					}),
 					q(52346, {	-- Work Order: Sailor's Pie (Rank 3)
 						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 						["requireSkill"] = COOKING,
 						["g"] = {
@@ -940,7 +941,7 @@ _.Zones =
 						},
 					}),
 					q(50982, {	-- Work Order: Star Moss
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = HERBALISM,
@@ -948,15 +949,15 @@ _.Zones =
 					q(50989, {	-- Work Order: Storm Silver Ore
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(50997, {	-- Work Order: Tidespray Linen
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52352, {	-- Zeritarj
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 				}),

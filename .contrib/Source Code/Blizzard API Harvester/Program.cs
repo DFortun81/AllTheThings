@@ -40,7 +40,7 @@ namespace ATT
         static int API_ExpectedThrottle { get; set; } = API_ThrottleSecond;
         static string RawDirectoryFormat { get; set; }
         static string RawAPICallFormat { get; set; }
-        static int MaxItemID { get; set; } = 180000;
+        static int MaxItemID { get; set; } = 185000;
         static int MaxQuestID { get; set; } = 60000;
         static bool WaitForAPI { get; set; }
         static bool WaitForData { get; set; }
@@ -534,24 +534,22 @@ namespace ATT
                 Name = "DataParser.Thread",
             };
             threadDataParser.Start();
-
-            // items
-            if (ProcessObjects[ObjType.item])
-            {
-                var rawDataDirectory = Directory.CreateDirectory("RAW/items." + (parseOnlyDate ?? DateStamp));
-                var allFiles = rawDataDirectory.EnumerateFiles("*.raw").AsParallel();
-                allFiles.ForAll(EnqueueFileContents);
-            }
-            // quests
-            if (ProcessObjects[ObjType.quest])
-            {
-                var rawDataDirectory = Directory.CreateDirectory("RAW/quests." + (parseOnlyDate ?? DateStamp));
-                var allFiles = rawDataDirectory.EnumerateFiles("*.raw").AsParallel();
-                allFiles.ForAll(EnqueueFileContents);
-            }
+            ProcessObjType(ObjType.item, parseOnlyDate);
+            ProcessObjType(ObjType.quest, parseOnlyDate);
 
             WaitForParseQueue = false;
             Console.WriteLine("Done Queueing the raw data.");
+        }
+
+        private static void ProcessObjType(ObjType objtype, string parseOnlyDate)
+        {
+            // items
+            if (ProcessObjects[objtype])
+            {
+                var rawDataDirectory = Directory.CreateDirectory("RAW/" + objtype.ToString() + "s." + (parseOnlyDate ?? DateStamp));
+                var allFiles = rawDataDirectory.EnumerateFiles("*.raw").AsParallel();
+                allFiles.ForAll(EnqueueFileContents);
+            }
         }
 
         private static void EnqueueFileContents(FileInfo fileInfo)
@@ -1155,7 +1153,6 @@ namespace ATT
             WaitForParsingData = true;
             while (WaitForParseQueue || ParseDatas.Count > 0)
             {
-                // TODO: do in parallel once queueing is done
                 if (ParseDatas.TryDequeue(out string contents))
                 {
                     if (MiniJSON.Json.Deserialize(contents) is Dictionary<string, object> rawData)
