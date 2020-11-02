@@ -14,7 +14,31 @@ namespace ATT
     {
         const string DBSuffix = ".json";
         const string DiffSuffix = "-DIFF";
+        const string MissSuffix = "-MISS";
+        const string FullSuffix = "-FULL";
         static string DateStamp { get; } = DateTime.UtcNow.Year.ToString() + DateTime.UtcNow.Month.ToString("00") + DateTime.UtcNow.Day.ToString("00");
+
+        /// <summary>
+        /// Tags which are to be completely ignored for passing from a sourceDB into the next version
+        /// </summary>
+        static HashSet<string> ObsoleteTags { get; } = new HashSet<string>()
+        {
+        };
+
+        /// <summary>
+        /// Tags which are to be consoidated into the final version
+        /// </summary>
+        static Dictionary<string, HashSet<string>> ConsolidateKeys { get; } = new Dictionary<string, HashSet<string>>()
+        {
+            { "lvl", new HashSet<string>() { "Lvl", "reqlvl" } },
+            { "q", new HashSet<string>() { "quality", "qualityId", "qualityID", "itemQuality" } },
+            { "b", new HashSet<string>() { "bind", "binding", "bindType" } },
+        };
+
+        /// <summary>
+        /// Represents the set of all keys which will need to be consolidated
+        /// </summary>
+        static HashSet<string> FullConsolidateKeySet { get; } = new HashSet<string>(ConsolidateKeys.Values.SelectMany(s => s));
 
         static void Main(string[] args)
         {
@@ -31,7 +55,10 @@ namespace ATT
             foreach (string fileName in fileNames)
             {
                 // check if this file matches the DB filter name
-                if (fileName.Contains(dbFilter) && !fileName.Contains(DiffSuffix))
+                if (fileName.Contains(dbFilter) &&
+                    !fileName.Contains(DiffSuffix) &&
+                    !fileName.Contains(MissSuffix) &&
+                    !fileName.Contains(FullSuffix))
                 {
                     // add it to the set of DB files to analyze
                     compareDBs.Add(fileName);
@@ -77,20 +104,15 @@ namespace ATT
                     {
                         Console.WriteLine("------");
                         Console.WriteLine("Comparing " + fileName);
-                        Dictionary<int, Dictionary<string, object>> diffDB = CompareSource(source, objectKey, dbObjects);
+                        var diffMiss = CompareSource(source, objectKey, dbObjects);
 
-                        // save the compare result into a separate file
+                        // save the compare results into a separate file for easy reference
                         string diffFile = fileName.Replace(DBSuffix, DiffSuffix + DBSuffix);
-                        List<Dictionary<string, object>> diffObjs = new List<Dictionary<string, object>>();
-                        List<int> diffKeys = new List<int>(diffDB.Keys);
-                        diffKeys.Sort();
-                        foreach (int diffKey in diffKeys)
-                        {
-                            Dictionary<string, object> diffObj = diffDB[diffKey];
-                            diffObj[objectKey] = diffKey;
-                            diffObjs.Add(diffObj);
-                        }
+                        string missFile = fileName.Replace(DBSuffix, MissSuffix + DBSuffix);
+                        List<Dictionary<string, object>> diffObjs = ConvertDBtoList(diffMiss.Item1, objectKey);
+                        List<Dictionary<string, object>> missObjs = ConvertDBtoList(diffMiss.Item2, objectKey);
                         File.WriteAllText(diffFile, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, diffObjs } }));
+                        File.WriteAllText(missFile, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, missObjs } }));
                     }
                     catch (Exception ex)
                     {
@@ -101,7 +123,29 @@ namespace ATT
             }
 
             // save the cumulative set of things
-            File.WriteAllText(objectKey + "-FULL" + DBSuffix, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, source } }));
+            List<Dictionary<string, object>> fullObjs = ConvertDBtoList(source, objectKey);
+            File.WriteAllText(dbFilter + FullSuffix + DBSuffix, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, fullObjs } }));
+        }
+
+        /// <summary>
+        /// Converts the ID-based dictionary format to a simple list of the objects for smaller and ordered output
+        /// </summary>
+        /// <param name="db"></param>
+        /// <param name="objectKey"></param>
+        /// <returns></returns>
+        private static List<Dictionary<string, object>> ConvertDBtoList(Dictionary<int, Dictionary<string, object>> db, string objectKey)
+        {
+            List<Dictionary<string, object>> dbList = new List<Dictionary<string, object>>();
+            List<int> dbKeys = new List<int>(db.Keys);
+            dbKeys.Sort();
+            foreach (int diffKey in dbKeys)
+            {
+                Dictionary<string, object> sourceObj = db[diffKey];
+                sourceObj[objectKey] = diffKey;
+                dbList.Add(sourceObj);
+            }
+
+            return dbList;
         }
 
         private static void CreateSource(Dictionary<int, Dictionary<string, object>> source, string objectKey, List<object> dbObjects)
@@ -110,17 +154,72 @@ namespace ATT
             {
                 if (o is Dictionary<string, object> obj && obj.TryGetValue(objectKey, out int id))
                 {
+                    RemoveObsoleteKeys(obj);
+                    FixConsolidateKeys(obj);
                     source[id] = obj;
                 }
             }
         }
 
-        private static Dictionary<int, Dictionary<string, object>> CompareSource(Dictionary<int, Dictionary<string, object>> sourceDB, string objectKey, List<object> dbObjects)
+        private static void FixConsolidateKeys(Dictionary<string, object> obj)
+        {
+            var replacements = new List<Tuple<string, string>>();
+            foreach (string key in obj.Keys)
+            {
+                // does this key require consolidation?
+                if (FullConsolidateKeySet.Contains(key))
+                {
+                    // then figure out how to consolidate
+                    foreach (KeyValuePair<string, HashSet<string>> consolidation in ConsolidateKeys)
+                    {
+                        // this consolidation contains the key
+                        if (consolidation.Value.Contains(key))
+                        {
+                            replacements.Add(new Tuple<string, string>(key, consolidation.Key));
+                        }
+                    }
+                }
+            }
+
+            if (replacements.Any())
+                ApplyReplacements(obj, replacements);
+        }
+
+        private static void ApplyReplacements(Dictionary<string, object> obj, List<Tuple<string, string>> replacements)
+        {
+            foreach (var replacement in replacements)
+            {
+                // save the current value
+                var keyVal = obj[replacement.Item1];
+                // remove the repalced key
+                obj.Remove(replacement.Item1);
+                // apply the replacement
+                obj[replacement.Item2] = keyVal;
+            }
+        }
+
+        private static void RemoveObsoleteKeys(Dictionary<string, object> obj)
+        {
+            foreach (string obKey in ObsoleteTags)
+            {
+                obj.Remove(obKey);
+            }
+        }
+
+        /// <summary>
+        /// Returns a Tuple containing the 'Difference' DB and the 'Missing' DB
+        /// </summary>
+        /// <param name="sourceDB"></param>
+        /// <param name="objectKey"></param>
+        /// <param name="dbObjects"></param>
+        /// <returns></returns>
+        private static Tuple<Dictionary<int, Dictionary<string, object>>, Dictionary<int, Dictionary<string, object>>> CompareSource(Dictionary<int, Dictionary<string, object>> sourceDB, string objectKey, List<object> dbObjects)
         {
             var compareDB = new Dictionary<int, Dictionary<string, object>>();
             CreateSource(compareDB, objectKey, dbObjects);
 
             var diffDB = new Dictionary<int, Dictionary<string, object>>();
+            var missDB = new Dictionary<int, Dictionary<string, object>>();
 
             // Step 4: Acquire the Keys of both lists.
             var sourceIDs = sourceDB.Keys.ToList();
@@ -135,6 +234,7 @@ namespace ATT
                 if (!compareDB.ContainsKey(id))
                 {
                     missingIDs.Add(id);
+                    NewObject(missDB, id, sourceDB);
                 }
             }
             var brandNewIDs = new List<int>();
@@ -188,10 +288,10 @@ namespace ATT
                     // Remove some common ones. (due to optimizations Crieve made to not include for default data)
                     sourceKeys.Remove("equippable");       // For NON-EQUIP types.
                     sourceKeys.Remove("inventoryType");    // For NON-EQUIP types.
-                    sourceKeys.Remove("bind");             // For NON-BOP types.
+                    sourceKeys.Remove("b");             // For NON-BOP types.
                     compareKeys.Remove("equippable");       // For NON-EQUIP types.
                     compareKeys.Remove("inventoryType");    // For NON-EQUIP types.
-                    compareKeys.Remove("bind");             // For NON-BOP types.
+                    compareKeys.Remove("b");             // For NON-BOP types.
                     foreach (var key in compareKeys)
                     {
                         if (!sourceObj.ContainsKey(key))
@@ -213,12 +313,11 @@ namespace ATT
                     bool logged = false;
                     if (missing || added)
                     {
-                        Console.Write("ID #" + id.ToString());
+                        Console.WriteLine("ID #" + id.ToString());
                         logged = true;
 
                         if (missing)
                         {
-                            Console.WriteLine();
                             Console.Write("- EMPTY : ");
                             comma = false;
                             foreach (var key in missingKeys)
@@ -228,19 +327,20 @@ namespace ATT
                                 Console.Write(key);
                                 comma = true;
                             }
+                            Console.WriteLine();
                         }
                         if (added)
                         {
-                            Console.WriteLine();
                             Console.Write("- ADDED : ");
                             comma = false;
                             foreach (var key in brandNewKeys)
                             {
                                 if (comma)
                                     Console.Write(", ");
-                                Console.Write(key);
+                                Console.Write(key + " = " + MiniJSON.Json.Serialize(compareObj[key]));
                                 comma = true;
                             }
+                            Console.WriteLine();
                         }
                     }
                     foreach (var key in compareKeys)
@@ -252,22 +352,19 @@ namespace ATT
                             if (!logged)
                             {
                                 logged = true;
-                                Console.Write("ID #" + id.ToString());
+                                Console.WriteLine("ID #" + id.ToString());
                             }
 
-                            Console.WriteLine();
-                            Console.Write("- CHANGE: " + key + ": " + MiniJSON.Json.Serialize(sourceValue) + " --> " + MiniJSON.Json.Serialize(compareValue));
+                            Console.WriteLine("- CHANGE: " + key + ": " + MiniJSON.Json.Serialize(sourceValue) + " --> " + MiniJSON.Json.Serialize(compareValue));
 
                             DiffObjectKey(diffDB, id, compareObj, key);
                             DiffObjectKey(sourceDB, id, compareObj, key);
                         }
                     }
-                    if (logged)
-                        Console.WriteLine();
                 }
             }
 
-            return diffDB;
+            return new Tuple<Dictionary<int, Dictionary<string, object>>, Dictionary<int, Dictionary<string, object>>>(diffDB, missDB);
         }
 
         private static void NewObject(Dictionary<int, Dictionary<string, object>> sourceDB, int id, Dictionary<int, Dictionary<string, object>> compareDB)
@@ -325,11 +422,11 @@ namespace ATT
 
                 // Default, not sure how to parse this so assume difference
                 Console.WriteLine("NOT SURE HOW TO PARSE THIS:");
-                Console.Write(oldValue);
+                Console.Write(MiniJSON.Json.Serialize(oldValue));
                 Console.Write(" (");
                 Console.Write(oldType);
                 Console.WriteLine(") OLD");
-                Console.Write(newValue);
+                Console.Write(MiniJSON.Json.Serialize(newValue));
                 Console.Write(" (");
                 Console.Write(newType);
                 Console.WriteLine(") NEW");

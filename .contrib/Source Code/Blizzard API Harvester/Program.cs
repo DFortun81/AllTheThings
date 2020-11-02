@@ -329,6 +329,7 @@ namespace ATT
             HasClientInitialized = true;
 
             Client.BaseAddress = new Uri("https://us.api.blizzard.com");
+            Client.Timeout = new TimeSpan(0, 0, 10);
             Client.DefaultRequestHeaders.Accept.Clear();
             Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
@@ -1180,9 +1181,9 @@ namespace ATT
             }
 
             if (ProcessObjects[ObjType.item])
-                File.WriteAllText("itemDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "items", dataItems.Values.ToList() } }));
+                File.WriteAllText(".\\DBs\\" + "itemDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "items", dataItems.Values.ToList() } }));
             if (ProcessObjects[ObjType.quest])
-                File.WriteAllText("questDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "quests", dataQuests.Values.ToList() } }));
+                File.WriteAllText(".\\DBs\\" + "questDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "quests", dataQuests.Values.ToList() } }));
 
             Console.WriteLine("Done exporting the data.");
             WaitForParsingData = false;
