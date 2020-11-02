@@ -5355,9 +5355,15 @@ app.BaseCurrencyClass = {
 		if key == "key" then
 			return "currencyID";
 		elseif key == "text" then
-			return C_CurrencyInfo.GetCurrencyLink(t.currencyID, 1) or C_CurrencyInfo.GetCurrencyInfo(t.currencyID).name;
+			local text = C_CurrencyInfo.GetCurrencyLink(t.currencyID, 1);
+			if text then rawset(t, "text", text); end
+			if not text then text = C_CurrencyInfo.GetCurrencyInfo(t.currencyID) and C_CurrencyInfo.GetCurrencyInfo(t.currencyID).name; end
+			if text then rawset(t, "text", text); end
+			if not text then rawset(t, "text", "Currency #" .. tostring(t.currencyID)) end
+			return rawget(t, "text");
 		elseif key == "icon" then
-			return C_CurrencyInfo.GetCurrencyInfo(t.currencyID).iconFileID;
+			rawset(t, "icon", C_CurrencyInfo.GetCurrencyInfo(t.currencyID) and C_CurrencyInfo.GetCurrencyInfo(t.currencyID).iconFileID);
+			return rawget(t, "icon");
 		else
 			-- Something that isn't dynamic.
 			return table[key];
