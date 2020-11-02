@@ -212,7 +212,7 @@ _.Zones =
 						47870,	-- Dead Men Tell No Tales
 						47871,	-- Seafaring Necessities
 					},
-					["provider"] = { "n", 124468 },	-- Randall Redmond
+					["provider"] = { "n", 139069 },	-- First Mate Redmond
 					["coord"] = { 44.6, 86.9, 864 },
 				}),
 				q(51991, {	-- Charging the Batteries
@@ -1013,7 +1013,6 @@ _.Zones =
 					["sourceQuests"] = { 51810 },	-- Captain Hartford
 					["provider"] = { "n", 139070 },	-- Captain Redmond
 					["coord"] = { 43.2, 90.8, 864 },
-					["races"] = HORDE_ONLY,
 				}),
 				q(48655, {	-- The Chef's Apprentice
 					["sourceQuests"] = {
