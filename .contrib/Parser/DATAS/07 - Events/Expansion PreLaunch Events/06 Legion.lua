@@ -232,24 +232,29 @@ _.WorldEvents =
 					}),
 					n(QUESTS, {
 						q(44421, {	-- Anomalous Anomalies
+							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 113986 },	-- Archmage Khadgar
 							["sourceQuests"] = { 44182 },	-- City Under Siege
 						}),
 						q(44500, {	-- Author! Author!
+							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 113986 },	-- Archmage Khadgar
 							["sourceQuests"] = { 44421 },	-- Author! Author!
 						}),
 						q(40717, {	-- Calling of the Council
+							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
 						}),
 						q(40718, {	-- Calling of the Council
+							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
 							["races"] = HORDE_ONLY,
 							["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
 						}),
 						q(44182, {	-- City Under Siege
+							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 114561 },	-- Khadgar's Upgraded Servant
 							["sourceQuests"] = { 40755 },	-- Hiding in the Stacks
 						}),
@@ -260,6 +265,7 @@ _.WorldEvents =
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(40755, {	-- Hiding in the Stacks
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								i(139905),	-- Gloves of thee Arcane Purge
 								i(139934),	-- Handguards of Demonsbane
@@ -270,6 +276,7 @@ _.WorldEvents =
 							["sourceQuests"] = { 42970 },	-- The Diamond King
 						}),
 						q(44184, {	-- In the Blink of an Eye
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								-- i(140192),	-- Dalaran Hearthstone
 								-- i(143785),	-- Tome of the Tranquil Mind
@@ -308,6 +315,7 @@ _.WorldEvents =
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(42970, {	-- The Diamond King
+							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 113655 },	-- Brann Bronzebeard
 							["sourceQuests"] = { 40717, 40718 },	-- Calling of the Council
 						}),
