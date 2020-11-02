@@ -182,7 +182,7 @@ _.Achievements =
 				crit(3),		-- War of Light and Shadow
 			}),
 			ach(10626, {	-- Zoom! (Highmountain)
-				i(137298),		-- Zoon
+				i(137298),		-- Zoom
 			}),
 		}),
 	}),

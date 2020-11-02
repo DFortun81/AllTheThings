@@ -38,21 +38,21 @@ _.Achievements =
 			}),
 			ach(31), 		-- A Simple Re-Quest
 			ach(941, {		-- Hemet Nesingwary: The Collected Quests
-				crit(2),		-- Hills Like White Elekk
-				crit(1),		-- The Green Hills of Stranglethorn
-				crit(3),		-- The Snows of Northrend
+				ach(940),		-- The Green Hills of Stranglethorn
+				ach(939),		-- Hills Like White Elekk
+				ach(938),		-- The Snows of Northrend
 			}),
 			ach(14222),     -- Exile's Reach
 			ach(5752, {		-- Justly Rewarded
 				ach(1182),		-- The Bread Winner
 			}),
 			ach(4958, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
+				crit(1),		-- Ring of Blood in Nagrand
 				crit(2),		-- Amphitheater of Anguish in Zul'Drak
 				crit(3),		-- Crucible of Carnage in Twilight Highlands
-				crit(1),		-- Ring of Blood in Nagrand
 				ach(1576, {		-- Of Blood and Anguish
-					crit(2),		-- The Champion of Anguish
 					crit(1),		-- The Ring of Blood: The Final Challenge
+					crit(2),		-- The Champion of Anguish
 				}),
 			}),
 			ach(7520, {		-- The Loremaster

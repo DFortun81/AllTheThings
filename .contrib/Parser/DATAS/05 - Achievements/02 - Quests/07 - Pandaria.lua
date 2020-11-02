@@ -21,12 +21,9 @@ _.Achievements =
 				crit(9),		-- Hisek the Swarmkeeper
 				crit(10),		-- Xaril the Poisoned Mind
 			}),
-			ach(8112),		-- Blue Response
-			ach(8118),		-- Boop
 			ach(7287),		-- Champion of Chi-Ji (Cradle of Chi-Ji)
 			ach(7323),		-- Collateral Damage
 			ach(7310),		-- Defender of Gods (Townlong Steppes)
-			ach(8120),		-- Direhorn in a China Shop
 			ach(7320),		-- Dog Pile
 			h(ach(7929, {	-- Dominance Offensive Campaign [Not entered to Pandaria Outdoor Zones files, these criteria are spread over not only the Pandaria zones but also Classic]
 				crit(1),		-- Domination Point
@@ -57,7 +54,6 @@ _.Achievements =
 				crit(11),		-- Tankiss
 			}),
 			ach(7309),		-- Fire in the Yaung-hole! (Townlong Steppes)
-			ach(8117),		-- For the Ward!
 			ach(7298, {		-- Getting Around with the Shado-Pan
 				crit(1),		-- Fei Li
 				crit(2),		-- Taoshi
@@ -72,26 +68,6 @@ _.Achievements =
 			ach(7292),		-- Green Acres (Halfhill)
 			ach(7290),		-- How To Strain Your Dragon (Jade Forest)
 			ach(7291),		-- In a Trail of Smoke (Jade Forest)
-			ach(8099, {		-- Isle of Thunder
-				crit(1),		-- First Landing
-				crit(2),		-- Build a Base
-				crit(3),		-- Break Down the Wall
-				crit(4),		-- Take the Forge
-				crit(5),		-- Assault the Shipyard
-				crit(6),		-- The Fall of Shan Bu
-			}),
-			ach(8101, {		-- It Was Worth Every Ritual Stone
-				crit(1),		-- Spirit of Warlord Teng
-				crit(2),		-- Kor'dok and Tinzo the Emberkeeper
-				crit(3),		-- Echo of Kros
-				crit(4),		-- Electromancer Ju'le
-				crit(5),		-- Qi'nor
-				crit(6),		-- Ancient Mogu Guardian
-				crit(7),		-- Windweaver Akil'amon
-				crit(8),		-- Cera
-				crit(9),		-- Incomplete Drakkari Colossus
-				ach(8100),		-- Pay to Slay
-			}),
 			ach(7308, {		-- Know Your Role
 				crit(1),		-- Assault Fire Camp Gai-Cho
 				crit(2),		-- Assault Deadtalker's Plateau
@@ -240,10 +216,6 @@ _.Achievements =
 				crit(11),		-- In Search of Harmony
 				crit(12),		-- Breath of Darkest Shadow
 			})),
-			ach(8119, {		-- Our Powers Combined
-				crit(1),		-- All four blessings active
-				crit(2),		-- No blessings active
-			}),
 			ach(7316, {		-- Over Their Heads (Dread Wastes)
 				crit(1),		-- Garalon
 				crit(2),		-- Wind Lord Mel'jarak
@@ -261,7 +233,6 @@ _.Achievements =
 				crit(14),		-- Essence of Panic
 				crit(15),		-- Essence of Terror
 			}),
-			ach(8114),		-- Platform Hero
 			ach(7297, {		-- Proven Strength (Shado-Pan Garrison)
 				crit(1),		-- Fei Li
 				crit(2),		-- Snow Blossom
@@ -273,7 +244,6 @@ _.Achievements =
 				crit(8),		-- Tenwu of the Red Smoke
 				crit(9),		-- Hawkmaster Nurong
 			}),
-			ach(8107),		-- Ready for RAAAAIIIIDDD?!?ing
 			ach(7319, {		-- Ready for Raiding III
 				crit(1),		-- Survival Ring: Flames
 				crit(2),		-- Survival Ring: Blades
@@ -282,7 +252,6 @@ _.Achievements =
 			ach(7502),		-- Savior of Stoneplow
 			ach(7289),		-- Shadow Hopper (Jade Forest)
 			ach(7307),		-- Silent Assassin (Townlong Steppes)
-			ach(8115),		-- Speed Metal
 			ach(7321),		-- Spreading the Warmth
 			ach(7313, {		-- Stay Klaxxi (Dread Wastes)
 				crit(1),		-- Angel of Death
@@ -298,50 +267,64 @@ _.Achievements =
 			}),
 			ach(8121, {		-- Stormbreaker
 				title(221),		-- the Stormbreaker
-				crit(1),		-- Isle of Thunder
-				crit(2),		-- It Was Worth Every Ritual Stone
-				crit(3),		-- Thunder Plunder
-				crit(4),		-- The Crumble Bundle
-				crit(5),		-- Ready for RAAAAIIIIDDD?!?ing
-				crit(6),		-- When in Ihgaluk, Do as the Skumblade Do
-				crit(7),		-- These Mogu Have Gotta Go-gu
-				crit(8),		-- This Isn't Even My Final Form
-				crit(9),		-- Blue Response
-				crit(10),		-- Platform Hero
-				crit(11),		-- The Saurok are Revolting
-				crit(12),		-- You Made Me Bleed My Own Blood
-				crit(13),		-- For the Ward!
-				crit(14),		-- Boop
-				crit(15),		-- Our Powers Combined
-				crit(16),		-- Direhorn in a China Shop
-				crit(17),		-- Zandalari Library Card
+				ach(8099, {		-- Isle of Thunder
+					crit(1),		-- First Landing
+					crit(2),		-- Build a Base
+					crit(3),		-- Break Down the Wall
+					crit(4),		-- Take the Forge
+					crit(5),		-- Assault the Shipyard
+					crit(6),		-- The Fall of Shan Bu
+				}),
+				ach(8101, {		-- It Was Worth Every Ritual Stone
+					crit(1),		-- Spirit of Warlord Teng
+					crit(2),		-- Kor'dok and Tinzo the Emberkeeper
+					crit(3),		-- Echo of Kros
+					crit(4),		-- Electromancer Ju'le
+					crit(5),		-- Qi'nor
+					crit(6),		-- Ancient Mogu Guardian
+					crit(7),		-- Windweaver Akil'amon
+					crit(8),		-- Cera
+					crit(9),		-- Incomplete Drakkari Colossus
+					ach(8100),		-- Pay to Slay
+				}),
+				ach(8104),		-- Thunder Plunder
+				ach(8105),		-- The Crumble Bundle
+				ach(8107),		-- Ready for RAAAAIIIIDDD?!?ing
+				ach(8108, {		-- When in Ihgaluk, Do as the Skumblade Do
+					crit(1),		-- Kroshik Egg
+					crit(2),		-- Baby Kroshik
+					crit(3),		-- Adult Kroshik
+					crit(4),		-- Sacrificed Kroshik
+				}),
+				ach(8110, {		-- These Mogu Have Gotta Go-gu
+					crit(1),		-- Haqin of the Hundred Spears
+					crit(2),		-- Forgemaster Deng
+					crit(3),		-- Sparkmancer Vu
+					ach(8109),		-- The Mogu Below-gu
+				}),
+				ach(8111),		-- This Isn't Even My Final Form
+				ach(8112),		-- Blue Response
+				ach(8114),		-- Platform Hero
+				ach(8115),		-- Speed Metal
+				ach(8116),		-- You Made Me Bleed My Own Blood
+				ach(8117),		-- For the Ward!
+				ach(8118),		-- Boop
+				ach(8119, {		-- Our Powers Combined
+					crit(1),		-- All four blessings active
+					crit(2),		-- No blessings active
+				}),
+				ach(8120),		-- Direhorn in a China Shop
+				ach(8212, {		-- Zandalari Library Card
+					crit(1),		-- Iron-Bound Zandalari Journal
+					crit(2),		-- Blood-Spattered Zandalari Journal
+					crit(3),		-- Torn Zandalari Journal
+					crit(4),		-- Frayed Zandalari Journal
+					crit(5),		-- Waterlogged Zandalari Journal
+				}),
 			}),
 			ach(7314),		-- Test Drive (Dread Wastes)
-			ach(8105),		-- The Crumble Bundle
-			ach(8110, {		-- These Mogu Have Gotta Go-gu
-				crit(1),		-- Haqin of the Hundred Spears
-				crit(2),		-- Forgemaster Deng
-				crit(3),		-- Sparkmancer Vu
-				ach(8109),		-- The Mogu Below-gu
-			}),
-			ach(8111),		-- This Isn't Even My Final Form
-			ach(8104),		-- Thunder Plunder
 			ach(7293),		-- Till the Break of Dawn (Halfhill)
-			ach(8108, {		-- When in Ihgaluk, Do as the Skumblade Do
-				crit(1),		-- Kroshik Egg
-				crit(2),		-- Baby Kroshik
-				crit(3),		-- Adult Kroshik
-				crit(4),		-- Sacrificed Kroshik
-			}),
 			ach(7288),		-- Yak Attack (Niuzao Temple)
-			ach(8116),		-- You Made Me Bleed My Own Blood
-			ach(8212, {		-- Zandalari Library Card
-				crit(1),		-- Iron-Bound Zandalari Journal
-				crit(2),		-- Blood-Spattered Zandalari Journal
-				crit(3),		-- Torn Zandalari Journal
-				crit(4),		-- Frayed Zandalari Journal
-				crit(5),		-- Waterlogged Zandalari Journal
-			}),
 		}),
 	}),
 };
