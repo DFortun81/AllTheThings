@@ -317,6 +317,7 @@ pet(43698, 193);	-- Giant Sewer Rat
 pet(142083, 1952); 	-- Giant Worm Egg (Dreadmaw)
 pet(163811, 2466);	-- Giggling Flame
 pet(120309, 1543); 	-- Glass of Warm Milk (Pygmy Cow)
+pet(180034, 2888);  -- Glimr's Cracked Egg (Glimr)
 pet(129218, 1765); 	-- Glittering Arcane Crystal (Empyreal Manafiend)
 pet(142089, 1958); 	-- Glittering Ball of Yarn (Sanctum Cub)
 pet(169350, 2684);	-- Glittering Diamondshell
