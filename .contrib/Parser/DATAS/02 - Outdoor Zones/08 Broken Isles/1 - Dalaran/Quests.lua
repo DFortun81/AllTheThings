@@ -1564,9 +1564,11 @@ _.Zones =
 				}),
 				q(46810, {	-- To the Forge It Goes...
 					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,	-- PVP wins no longer reward the quest item
 				}),
 				q(46946, {	-- To the Forge It Goes...
 					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,	-- PVP wins no longer reward the quest item
 				}),
 				q(39987, {	-- Trail of Echoes
 					["sourceQuests"] = { 39986 },	-- Magic Message

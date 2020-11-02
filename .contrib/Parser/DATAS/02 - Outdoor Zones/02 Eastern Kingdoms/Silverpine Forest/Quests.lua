@@ -170,10 +170,13 @@ _.Zones =
 					["sourceQuest"] = 481,	-- Dalar's Analysis
 				}),
 				q(27039, {	-- Dangerous Intentions
+					["sourceQuests"] = {
+						26998,	-- Iterating Upon Success
+						26989,	-- The Gilneas Liberation Front
+					},
 					["provider"] = { "n", 44789 },	-- Deathstalker Commander Belmont
 					["coord"] = { 58.0, 8.9, 21 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26998 },	-- Iterating Upon Success
 				}),
 				q(27094, {	-- Deeper into Darkness
 					["provider"] = { "n", 44917 },	-- Warlord Torok

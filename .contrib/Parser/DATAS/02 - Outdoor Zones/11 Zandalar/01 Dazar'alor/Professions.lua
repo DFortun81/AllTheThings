@@ -230,6 +230,7 @@ _.Zones =
 					}),
 					-- Winter's Kiss
 					q(51446, {	-- Meet Sweetflower (H)
+						["isBreadcrumb"] = true,
 						["provider"] = { "n", 122704 },	-- Jahden Fla
 						["coord"] = { 42.2, 35.6, 1165 },
 						["description"] = "Requires 50 Zandalari Herbalism.\nMake sure to bring |cFFFFD7007 Lane Snappers|r for the follow-up quest.",

@@ -20,7 +20,10 @@ _.Zones =
 			]]--
 			m(1609, {	-- Darkmaul Citadel
 				["icon"] = 3759927,
-				["maps"] = { 1610 },	-- Darkmaul Citadel upper floor
+				["maps"] = { 
+					1610,	-- Darkmaul Citadel upper floor
+					1611,	-- uh another part of Darkmaul Citadel i guess (a user on Discord reported it, it just shows up in the screenshot as Dark Citadel)
+				},
 				["g"] = {
 					n(157300, {	-- Tunk
 						i(179362),	-- Tunk's Backscratcher
@@ -334,20 +337,13 @@ _.Zones =
 								-- 62808,	-- 120 character prior to 9.0
 							-- },
 						}, {
-						q(59002, {	-- A Shaman's Duty (A)
+						-- apparently horde and alliance shamans get the same quest.  a horde user also picked up 59002 on their shaman.
+						q(59002, {	-- A Shaman's Duty
 							["coord"] = { 52.3, 55.6, 1409 },
-							["races"] = ALLIANCE_ONLY,
 							["classes"] = { SHAMAN },
 							["provider"] = { "n", 163329 },	-- Ghostwolf
 							["sourceQuest"] = 55194,	-- Stocking Up on Supplies
 						}),
-						--[[q(, {	-- A Shaman's Duty (H)
-							["coord"] = { , 1409 },
-							["races"] = HORDE_ONLY,
-							["classes"] = { SHAMAN },
-							["provider"] = { "n",  },	--
-							["sourceQuest"] = ,	--
-						}),]]--
 					}),
 				}),
 				cl(WARLOCK, {

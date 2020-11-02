@@ -39,11 +39,6 @@ _.Zones =
 						i(82504),	-- Wallwatcher Shoulders
 					},
 				}),
-				q(32352, {	-- A Gathering Storm
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68287 },	-- Baine Bloodhoof
-					["sourceQuest"] = 32351,	-- Echoes of Thunder
-				}),
 				q(30808, {	-- A Grummle's Luck
 					["coord"] = { 64.7, 61.7, 379 },
 					["provider"] = { "n", 59371 },	-- Lucky Eightcoins

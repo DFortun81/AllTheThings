@@ -182,6 +182,7 @@ _.HiddenQuestTriggers =
 		q(39828),	-- Horseman and Guards Shared Criteria, triggered when I applied Creepy Crawlers garrison decoration
 
 		-- Darkmoon Faire
+		q(57776),	-- unknown tracking quest that appeared after speaking to Selina Dourman
 		q(30557),	-- [DNT] A Captured Banner TRACKER - triggers after completing A Captured Banner (questID 29456)
 		q(30553),	-- [DNT] A Curious Crystal TRACKER - triggers after completing A Curious Crystal (questID 29443)
 		q(30562),	-- [DNT] A Fizzy Fusion TRACKER - triggers after completing A Fizzy Fusion (questID 29506)
@@ -407,7 +408,8 @@ _.HiddenQuestTriggers =
 		q(35411),	-- Zul'Gurub Reward Quest
 		q(35412),	-- Zul'Gurub Bonus Objective Reward Quest. Killing Cache of Madness
 		q(35435),	-- Well of Eternity Reward Quest
-
+		
+		-- QUESTING
 		q(28347),	-- Coffer of Promise TRACKING QUEST
 		q(25071),	-- FLAG - Purple Murloc
 		q(28889),	-- Arcane Instructions Tracking Quest
@@ -423,7 +425,6 @@ _.HiddenQuestTriggers =
 		q(29286),	-- Druid Tree, Stage 2 Tracking
 		q(29291),	-- triggered with Peaked Interest 29287
 		q(29292),	-- triggered with Peaked Interest 29287
-
 		q(26565),	-- A Furious Catch (REMOVED) — unused version of Orgrimmar Cata fishing daily "A Golden Opportunity"
 		q(25829),	-- Mount Hyjal - goldrinn hub complete
 		q(27872),	-- Mount Hyjal - tortolla hub complete
@@ -450,6 +451,7 @@ _.HiddenQuestTriggers =
 		q(32395),	-- Tracking Event: Saw Avartu - triggered while on "The Divine Bell," part of the Operation: Shieldwall campaign (at the end of the quest before killing Avartu)
 		q(32339),	-- Rebuilding the Mallet (Tracker) — triggered after turning in The Head and The Harmonic Ointment (The Handle was turned in earlier, but presumably requires all 3), part of the Operation: Shieldwall campaign
 		q(32365),	-- Tracking Event: Epilogue Complete — triggered after turning in "The Silence" and watching the RP, part of the Operation: Shieldwall campaign.  didn't go off until I left the area and turned in another quest (which is a daily that doesn't normally have any additional tracking quests attached, so i know it was from the final campaign quest)
+		q(32361),	-- triggered after turning in #32352, "A Gathering Storm," part of the Dominance Offensive campaign
 		q(30720),	-- FLAG - Cradle of Chi-Ji Progress Bit 02 — triggered after turning in Dextrous Izissha quest, 6th for Champion of Chi-Ji.  triggered on another character after turning in Minh Do-Tan, which is the 2nd
 		q(30629),	-- triggered after cutscene prompted by turning in "Stoneplow Thirsts" in Valley of the Four Winds
 		q(31371),	-- Tracking Event: Player Has Completed One Anglers Daily
@@ -749,6 +751,7 @@ _.HiddenQuestTriggers =
 		q(39307),	-- Gorgrond - Mechasuit
 		q(36712),	-- Gorgrond - Mill Treasure 1 - triggers when looting the ancient titan chest questID 35701
 		q(35946),	-- Gorgrond - Peckers the Majestic - triggers if you free Peckers from his cage in Kor'gall's Hovel with the sparring arena active (37.3, 70.7)
+		q(37629),	-- Assault on Mok'gol Watchpost
 		q(36797),	-- Shadowmoon Valley - Founded the garrison
 		q(35626),	-- Shadowmoon Valley - Friend of the Exarchs: Apprentice Artificer Andren selected
 		q(35629),	-- Shadowmoon Valley - Friend of the Exarchs: Vindicator Onaala selected
@@ -1045,6 +1048,11 @@ _.HiddenQuestTriggers =
 		--    Legion     --
 		-------------------
 		--	Various tracking quests
+		q(44608),	-- Tracking Quest: Holy Ground 1 — these 5 are for the missions done during the priest class hall quest "Awakening the Light"
+		q(44609),	-- Tracking Quest: Holy Ground 2
+		q(44610),	-- Tracking Quest: Holy Ground 3
+		q(44611),	-- Tracking Quest: Holy Ground 4
+		q(44612),	-- Tracking Quest: Holy Ground 5
 		q(40076),	-- Start Demon Hunter Tracking - triggers right after creating a demon hunter
 		q(39517),	-- Demon Hunter - picked Havoc during "Fel Secrets" on Mardum
 		q(39518),	-- Demon Hunter - picked Vengeance during "Fel Secrets" on Mardum
@@ -1748,6 +1756,7 @@ _.HiddenQuestTriggers =
 		]]--
 
 		--	VARIOUS
+		q(50419),	-- tracking quest from the 8.1.5 Blacksmithing questling ending with "Therazane's Choice"
 		q(48575),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity? Maybe an alliance/horde equivalent?
 		q(53441),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity?
 		q(53470),	-- Vol'dun - Alliance - landed in Vol'Dun while doing the war campaign. First zone landing

@@ -1046,10 +1046,6 @@ _.Zones =
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
-				q(32351, {	-- Echoes of Thunder
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["races"] = HORDE_ONLY,
-				}),
 				q(30739, {	-- Ellia Ravenmane: Redemption
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,

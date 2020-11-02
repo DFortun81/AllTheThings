@@ -681,7 +681,7 @@ _.Zones =
 					["sourceQuest"] = 55729,	-- The Resistance Needs You!
 				}),
 				q(56756, {	-- My Punkin, the Action Figure
-					["provider"] = { "n", 153701 },	-- Grizzek Fizzwrench
+					["provider"] = { "n", 149815 },	-- Grizzek Fizzwrench
 					["coord"] = { 72.0, 34.2, 1462 },
 					["minReputation"] = { 2391, EXALTED },
 					["description"] = "Once you are exalted with Rustbolt Resistance, this quest is awarded after completing the Toys Like Us daily.",

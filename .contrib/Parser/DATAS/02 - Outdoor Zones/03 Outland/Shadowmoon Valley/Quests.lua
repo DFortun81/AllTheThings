@@ -541,7 +541,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10765 },	-- When Worlds Collide
 				}),
-				q(10645, {	-- Teron Gorefiend, I am...
+				q(10645, {	-- Teron Gorefiend, I am... (A)
 					["provider"] = { "n", 21797 },	-- Ancient Shadowmoon Spirit
 					["coord"] = { 58.2, 70.7, 104 },
 					["races"] = ALLIANCE_ONLY,
@@ -559,8 +559,9 @@ _.Zones =
 						i(31105),	-- Overlord's Helmet of Second Sight
 					},
 				}),
-				q(10639, {	-- Teron Gorefiend, I am...
+				q(10639, {	-- Teron Gorefiend, I am... (H)
 					["provider"] = { "n", 21797 },	-- Ancient Shadowmoon Spirit
+					["coord"] = { 58.2, 70.7, 104 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						10634,	-- Divination: Teron Gorefiend's Armor

@@ -237,6 +237,7 @@ _.Zones =
 					}),
 					-- Winter's Kiss
 					q(48762, {	-- Meet Sweetflower (A)
+						["isBreadcrumb"] = true,
 						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
 						["description"] = "Requires 50 Kul Tiran Herbalism.\nMake sure to bring |cFFFFD7007 Lane Snappers|r for the follow-up quest.",

@@ -36,7 +36,9 @@ _.Zones =
 									crit(5, {	-- The Korune
 										["sourceQuests"] = { 32384 },	-- Trapping the Leader
 									}),
-									crit(6),	-- Pride
+									crit(6, {	-- Pride
+										["sourceQuests"] = { 32352 },	-- A Gathering Storm
+									}),
 									crit(7),	-- Rise of the Blood Elves
 									crit(8),	-- Secrets of the Past
 									crit(9),	-- The Divine Bell
@@ -94,6 +96,12 @@ _.Zones =
 							}),
 						}),
 						n(QUESTS, {
+							q(32352, {	-- A Gathering Storm
+								["sourceQuests"] = { 32351 },	-- Echoes of Thunder
+								["provider"] = { "n", 68287 },	-- Baine Bloodhoof
+								["coord"] = { 68.9, 45.8, 392 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32127, {	-- All Dead, All Dead
 								["sourceQuests"] = {
 									32235,	-- Flash! Aaaaaahhhh!
@@ -166,6 +174,13 @@ _.Zones =
 							q(32125, {	-- Don't Try So Hard - DEPRECATED
 								["races"] = HORDE_ONLY,
 								["u"] = REMOVED_FROM_GAME,	-- triggers when turning in "Flash! Aaaaaahhhh!"
+							}),
+							q(32351, {	-- Echoes of Thunder
+								["minReputation"] = { 1375, HONORED+10750 },
+								["sourceQuests"] = { 32384 },	-- Trapping the Leader
+								["provider"] = { "n", 67939 },	-- General Nazgrim
+								["coord"] = { 9.29, 51.2, 418 },
+								["races"] = HORDE_ONLY,
 							}),
 							q(32319, {	-- Find Thrall!
 								["sourceQuests"] = { 32318 },	-- Regeneration Takes Time
