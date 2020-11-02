@@ -478,8 +478,8 @@ _.ExpansionFeatures =
 							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
 						},
 						["g"] = {
-							crit(10, {
-								["achievementID"] = 9562,	-- Securing Draenor
+							crit(9, {
+								["achievementID"] = 9564,	-- Securing Draenor
 							}),
 							currency(823),	-- Apexis Crystal x800
 						},
@@ -506,7 +506,7 @@ _.ExpansionFeatures =
 						},
 						["g"] = {
 							crit(3, {
-								["achievementID"] = 9562,	-- Securing Draenor
+								["achievementID"] = 9564,	-- Securing Draenor
 							}),
 							currency(823),	-- Apexis Crystal x800
 						},
@@ -520,8 +520,8 @@ _.ExpansionFeatures =
 							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
 						},
 						["g"] = {
-							crit(8, {
-								["achievementID"] = 9562,	-- Securing Draenor
+							crit(7, {
+								["achievementID"] = 9564,	-- Securing Draenor
 							}),
 							currency(823),	-- Apexis Crystal x800
 						},
@@ -536,7 +536,7 @@ _.ExpansionFeatures =
 						},
 						["g"] = {
 							crit(11, {
-								["achievementID"] = 9562,	-- Securing Draenor
+								["achievementID"] = 9564,	-- Securing Draenor
 							}),
 							currency(823),	-- Apexis Crystal x800
 						},
@@ -550,8 +550,8 @@ _.ExpansionFeatures =
 							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
 						},
 						["g"] = {
-							crit(7, {
-								["achievementID"] = 9562,	-- Securing Draenor
+							crit(12, {
+								["achievementID"] = 9564,	-- Securing Draenor
 							}),
 							currency(823),	-- Apexis Crystal x800
 						},
@@ -565,8 +565,8 @@ _.ExpansionFeatures =
 							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
 						},
 						["g"] = {
-							crit(12, {
-								["achievementID"] = 9562,	-- Securing Draenor
+							crit(10, {
+								["achievementID"] = 9564,	-- Securing Draenor
 							}),
 							currency(823),	-- Apexis Crystal x800
 						},
@@ -580,8 +580,8 @@ _.ExpansionFeatures =
 							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
 						},
 						["g"] = {
-							crit(9, {
-								["achievementID"] = 9562,	-- Securing Draenor
+							crit(8, {
+								["achievementID"] = 9564,	-- Securing Draenor
 							}),
 							currency(823),	-- Apexis Crystal x800
 						},
@@ -596,7 +596,7 @@ _.ExpansionFeatures =
 						},
 						["g"] = {
 							crit(2, {
-								["achievementID"] = 9562,	-- Securing Draenor
+								["achievementID"] = 9564,	-- Securing Draenor
 							}),
 							currency(823),	-- Apexis Crystal x800
 						},
@@ -611,7 +611,7 @@ _.ExpansionFeatures =
 						},
 						["g"] = {
 							crit(6, {
-								["achievementID"] = 9562,	-- Securing Draenor
+								["achievementID"] = 9564,	-- Securing Draenor
 							}),
 							currency(823),	-- Apexis Crystal x800
 						},
@@ -626,7 +626,7 @@ _.ExpansionFeatures =
 						},
 						["g"] = {
 							crit(5, {
-								["achievementID"] = 9562,	-- Securing Draenor
+								["achievementID"] = 9564,	-- Securing Draenor
 							}),
 							currency(823),	-- Apexis Crystal x800
 						},
@@ -653,7 +653,7 @@ _.ExpansionFeatures =
 						},
 						["g"] = {
 							crit(1, {
-								["achievementID"] = 9562,	-- Securing Draenor
+								["achievementID"] = 9564,	-- Securing Draenor
 							}),
 							currency(823),	-- Apexis Crystal x800
 						},
@@ -668,7 +668,7 @@ _.ExpansionFeatures =
 						},
 						["g"] = {
 							crit(4, {
-								["achievementID"] = 9562,	-- Securing Draenor
+								["achievementID"] = 9564,	-- Securing Draenor
 							}),
 							currency(823),	-- Apexis Crystal x1000
 						},
