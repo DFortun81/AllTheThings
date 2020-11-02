@@ -88,6 +88,7 @@ _.Zones =
 					}),
 					n(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
 						["coord"] = { 51.6, 17.6, 123 },
+						["itemID"] = 137642,	-- Mark of Honor
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(43956, {	-- Reins of the Black War Mammoth
@@ -295,6 +296,7 @@ _.Zones =
 					}),
 					n(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
 						["coord"] = { 51.6, 17.6, 123 },
+						["itemID"] = 137642,	-- Mark of Honor
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(44077, {	-- Reins of the Black War Mammoth

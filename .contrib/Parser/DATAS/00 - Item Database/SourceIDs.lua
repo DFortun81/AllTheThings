@@ -24,7 +24,7 @@ i(15945, 1, 6528);		-- Runic Stave [Blizzard changed equip type and removed ID n
 -----------------------
 
 i(93732, 1, 48914);		-- Darkmoon Fishing Cap
-i(130064, 1, 74444);	-- Deadeye Monocle	
+i(130064, 1, 74444);	-- Deadeye Monocle
 i(139300, 1, 80594);	-- Finely-Tailored Green Holiday Hat
 i(139299, 1, 80593);	-- Finely-Tailored Red Holiday Hat
 i(52489, 1, 25733);		-- Rhinestone Sunglasses [Non Equip]
