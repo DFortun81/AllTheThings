@@ -66,10 +66,6 @@ _.Zones =
 					q(48808, {	-- Thesis Statement
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51769, {	-- What a Gull Wants
-						["isWorldQuest"] = true,
-						["lvl"] = { 50 },
-					}),
 					q(53273, {	-- Winter's Kiss Cluster
 						["isWorldQuest"] = true,
 						["lvl"] = { 50 },
@@ -681,10 +677,15 @@ _.Zones =
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
-					q(51676, {	-- What a Gull Wants
+					q(51676, {	-- What a Gull Wants (A)
 						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51769, {	-- What a Gull Wants (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = { 50 },
 					}),
 					q(51686, {	-- Where My Witches at?
 						["lvl"] = { 50 },
