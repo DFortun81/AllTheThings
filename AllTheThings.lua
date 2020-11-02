@@ -9139,8 +9139,6 @@ local function NestSourceQuests(root, addedQuests, depth)
 	if not addedQuests then
 		addedQuests =  {};
 	end
-	-- make sure root has no existing sub-groups
-	root.g = {};
 	root.visible = true;
 	root.hideText = true;
 	root.depth = depth or 0;
