@@ -9,6 +9,7 @@ _.Zones =
 			n(-213, {	-- The Underbelly
 				n(VENDORS, {
 					n(30885, {	-- Blazik Fireclaw <Hateful Gladiator>
+						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 59.5, 57.9, 126 },
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -668, -9983 },	-- Deadly Gladiator: Season 5 Honor Gear
@@ -37,6 +38,7 @@ _.Zones =
 						},
 					}),
 					n(69321, {	-- Herwin Steampop <Deadly Gladiator>
+						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 59.4, 57.8, 126 },
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -668, -661 },	-- Deadly Gladiator: Season 5 Gladiator Gear
@@ -70,6 +72,7 @@ _.Zones =
 						},
 					}),
 					n(69318, { 	-- Kylo Kelwin <Furious Gladiator>
+						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 59.0, 57.6, 126 },
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
@@ -253,6 +256,7 @@ _.Zones =
 						},
 					}),
 					n(40212, { 	-- Trapjaw Rix <Savage Gladiator>
+						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 59.3, 57.3, 126 },
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -668, -660 },	-- Deadly Gladiator: Season 5 Aspirant / Combatant Gear
@@ -264,6 +268,7 @@ _.Zones =
 						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -669, -662 }, },	-- Furious Gladiator: Season 6 Elite Weapons
 					}),
 					n(69971, { 	-- Xazi Smolderpipe <Wrathful Gladiator>
+						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 58.5, 58.3, 126 },
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -671, -661 },	-- Wrathful Gladiator: Season 8 Gladiator Gear
@@ -272,6 +277,7 @@ _.Zones =
 						},
 					}),
 					n(69973, { 	-- Zom Bocom <Relentless Gladiator>
+						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 59.0, 58.8, 126 },
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -670, -661 },	-- Relentless Gladiator: Season 7 Gladiator Gear

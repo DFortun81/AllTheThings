@@ -212,6 +212,7 @@ _.Zones =
 					},
 				}),
 				n(40216,  {	-- Blazzek the Biter <Vicious Gladiator>
+					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, 71 },
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -661 },
@@ -228,6 +229,7 @@ _.Zones =
 					},
 				}),
 				n(69322,  {	-- Capps Carlin <Cataclysmic Gladiator>
+					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, 71 },
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -674, -661 },
@@ -334,6 +336,7 @@ _.Zones =
 					},
 				}),
 				n(69323,  {	-- Tiny Tayger <Ruthless Gladiator>
+					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, 71 },
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -661 },
