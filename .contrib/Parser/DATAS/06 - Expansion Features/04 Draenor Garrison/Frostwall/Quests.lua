@@ -439,6 +439,18 @@ _.ExpansionFeatures =
 							currency(823),	-- Apexis Crystal x800
 						},
 					}),
+					q(36690, {	-- Assault on Lost Veil Anzu
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
 					q(36697, {	-- Assault on Magnarok
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
@@ -574,6 +586,18 @@ _.ExpansionFeatures =
 							currency(823),	-- Apexis Crystal x800
 						},
 					}),
+					q(36699, {	-- Assault on the Heart of Shattrath
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
 					q(36696, {	-- Assault on the Iron Siegeworks
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
@@ -601,6 +625,18 @@ _.ExpansionFeatures =
 							crit(4, {
 								["achievementID"] = 9562,	-- Securing Draenor
 							}),
+							currency(823),	-- Apexis Crystal x1000
+						},
+					}),
+					q(36698, {	-- Battle in Ashran
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
 							currency(823),	-- Apexis Crystal x1000
 						},
 					}),
@@ -656,6 +692,18 @@ _.ExpansionFeatures =
 					q(35988, {	-- Call of the Archmage
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 83858 },	-- Khadgar's Servant
+					}),
+					q(36684, {	-- Challenge at the Ring of Blood
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							currency(823),	-- Apexis Crystal x1000
+						},
 					}),
 					q(34193, {	-- Clearing the Garden
 						["provider"] = { "n", 81981 },	-- Tarnon
@@ -936,6 +984,14 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 78466 },	-- Gazlowe
 						["coord"] = { 37.5, 50.3, 590 },	-- lvl 3
 						["races"] = HORDE_ONLY,
+					}),
+					o(236206, {	-- War Planning Map
+						["sourceQuest"] = 36567,	-- Bigger is Better
+						["races"] = HORDE_ONLY,
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
 					}),
 					q(34736, {	-- We Be Needin' Supplies
 						["coord"] = { 51.2, 51.3, 590 },	-- lvl 1

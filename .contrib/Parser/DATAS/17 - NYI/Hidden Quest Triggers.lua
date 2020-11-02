@@ -946,8 +946,13 @@ _.HiddenQuestTriggers =
 		q(39414),	-- Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
 		q(36058),	-- Seal of Tempered Fate: Armory
 
+		-- ASSAULTS
 		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
 		q(36809), 	-- Missive completion: Assault on the Heart of Shattrath
+		q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36807),	-- Assault on the Heart of Shattrath (When completing the criteria for Assault on the Hearth of Shattrath on Horde character)
 
 		-- GARRISON COMMAND TABLE
 		q(39413),
