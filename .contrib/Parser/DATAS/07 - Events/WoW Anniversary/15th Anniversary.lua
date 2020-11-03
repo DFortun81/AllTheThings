@@ -6,7 +6,7 @@ _.WorldEvents =
 {
 	n(-5364, {	-- 15th Anniversary
 		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
-		["maps"] = { 
+		["maps"] = {
 			74,	-- Caverns of Time, Timeless Tunnel
 			75,	-- Caverns of Time, bottom floor
 		},
@@ -1276,25 +1276,23 @@ _.WorldEvents =
 						q(57249, {	-- A Timely Invitation
 							["provider"] = { "i", 171177 },	-- Invitation from the Timewalkers
 							["u"] = 31,	-- WoW Anniversary
+							["isYearly"] = true,
 						}),
 					},
 				}),
 			}),
 			n(QUESTS, {
 				q(57300, {	-- Soldier of Time
-					["sourceQuests"] = { 57249 },	-- A Timely Invitation
 					["provider"] = { "n", 157113 },	-- Chromie
 					["coord"] = { 53.5, 54.7, 75 },	-- Caverns of Time, Tanaris
-					["maps"] = { 75 },	-- Tanaris
-					["lvl"] = 60,
 					["u"] = 31,	-- WoW Anniversary
+					["isYearly"] = true,
 				}),
 				q(43323, {	-- A Time to Reflect (A)
 					["provider"] = { "n", 110034 },		-- Historian Llore
 					["isDaily"] = true,
 					["coord"] = { 51.4, 39.0, 75 },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 75 },	-- Tanaris
 					["u"] = 31,	-- WoW Anniversary
 				}),
 				q(43461, {	-- A Time to Reflect (H)
@@ -1308,7 +1306,6 @@ _.WorldEvents =
 					["sourceQuests"] = { 57249 },	-- A Timely Invitation
 					["provider"] = { "n", 157113 },	-- Chromie
 					["coord"] = { 53.5, 54.7, 75 },	-- Caverns of Time, Tanaris
-					["maps"] = { 75 },	-- Tanaris
 					["lvl"] = 60,
 					["u"] = 36,	-- WoW Anniversary [Removed]
 				}),
@@ -1323,7 +1320,6 @@ _.WorldEvents =
 					},
 					-- Note!! Crieve wants these to link to the KillID's for the bosses so it's easier to track and plot coordinates.
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 75 },	-- Tanaris
 					["u"] = 31,	-- WoW Anniversary
 				}),
 				q(47254, {	-- The Originals (H)
@@ -1337,7 +1333,6 @@ _.WorldEvents =
 					},
 					-- Note!! Crieve wants these to link to the KillID's for the bosses so it's easier to track and plot coordinates.
 					["races"] = HORDE_ONLY,
-					["maps"] = { 75 },	-- Tanaris
 					["u"] = 31,	-- WoW Anniversary
 				}),
 			}),
