@@ -387,6 +387,7 @@ _.Zones =
 						}),
 						q(44448, {	-- In the House of Light and Shadow
 							["sourceQuests"] = {
+								40890,	-- The Tears of Elune (actually required to complete Goddess Watch Over You)
 								44337,	-- Goddess Watch Over You (if you completed Val'sharah)
 								44338,	-- Goddess Watch Over You (if you didn't complete Val'sharah)
 							},
