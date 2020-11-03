@@ -26,6 +26,14 @@ namespace ATT
         };
 
         /// <summary>
+        /// If a given key is provided, then the corresponding value key is removed from the DB
+        /// </summary>
+        static Dictionary<string, string> OverrideKeys { get; } = new Dictionary<string, string>()
+        {
+            { "r", "races" },
+        };
+
+        /// <summary>
         /// Tags which are to be consoidated into the final version
         /// </summary>
         static Dictionary<string, HashSet<string>> ConsolidateKeys { get; } = new Dictionary<string, HashSet<string>>()
@@ -280,27 +288,45 @@ namespace ATT
                 {
                     var missingKeys = new List<string>();
                     var brandNewKeys = new List<string>();
-                    var sourceKeys = sourceObj.Keys.ToList();
                     var compareKeys = compareObj.Keys.ToList();
-                    sourceKeys.Sort();
                     compareKeys.Sort();
+                    bool logged = false;
 
                     // Remove some common ones. (due to optimizations Crieve made to not include for default data)
-                    sourceKeys.Remove("equippable");       // For NON-EQUIP types.
-                    sourceKeys.Remove("inventoryType");    // For NON-EQUIP types.
-                    sourceKeys.Remove("b");             // For NON-BOP types.
                     compareKeys.Remove("equippable");       // For NON-EQUIP types.
                     compareKeys.Remove("inventoryType");    // For NON-EQUIP types.
                     compareKeys.Remove("b");             // For NON-BOP types.
+                    comma = false;
                     foreach (var key in compareKeys)
                     {
                         if (!sourceObj.ContainsKey(key))
                         {
-                            brandNewKeys.Add(key);
+                            // see if a compare key will override an existing key
+                            if (CheckOverrideKeys(sourceObj, key))
+                            {
+                                logged = TryStartNewID(id, logged);
+                                if (comma)
+                                    Console.Write(", ");
+                                Console.Write("- OVERRIDE: " + OverrideKeys[key] + " => " + key);
+                                comma = true;
+                                CheckOverrideKeys(diffDB, id, key);
+                            }
+                            else
+                            {
+                                brandNewKeys.Add(key);
+                            }
                             DiffObjectKey(diffDB, id, compareObj, key);
                             DiffObjectKey(sourceDB, id, compareObj, key);
                         }
                     }
+                    if (logged)
+                        Console.WriteLine();
+
+                    var sourceKeys = sourceObj.Keys.ToList();
+                    sourceKeys.Sort();
+                    sourceKeys.Remove("equippable");       // For NON-EQUIP types.
+                    sourceKeys.Remove("inventoryType");    // For NON-EQUIP types.
+                    sourceKeys.Remove("b");             // For NON-BOP types.
                     foreach (var key in sourceKeys)
                     {
                         if (!compareObj.ContainsKey(key))
@@ -310,11 +336,9 @@ namespace ATT
                     }
                     bool missing = missingKeys.Any();
                     bool added = brandNewKeys.Any();
-                    bool logged = false;
                     if (missing || added)
                     {
-                        Console.WriteLine("ID #" + id.ToString());
-                        logged = true;
+                        logged = TryStartNewID(id, logged);
 
                         if (missing)
                         {
@@ -349,11 +373,7 @@ namespace ATT
                             && compareObj.TryGetValue(key, out object compareValue)
                             && !CompareValues(sourceValue, compareValue))
                         {
-                            if (!logged)
-                            {
-                                logged = true;
-                                Console.WriteLine("ID #" + id.ToString());
-                            }
+                            logged = TryStartNewID(id, logged);
 
                             Console.WriteLine("- CHANGE: " + key + ": " + MiniJSON.Json.Serialize(sourceValue) + " --> " + MiniJSON.Json.Serialize(compareValue));
 
@@ -365,6 +385,39 @@ namespace ATT
             }
 
             return new Tuple<Dictionary<int, Dictionary<string, object>>, Dictionary<int, Dictionary<string, object>>>(diffDB, missDB);
+        }
+
+        private static bool TryStartNewID(int id, bool logged)
+        {
+            if (!logged)
+                Console.WriteLine("ID #" + id.ToString());
+            return true;
+        }
+
+        /// <summary>
+        /// Checks whether the source DB contains the key which is overridden by another key, and returns whether it was removed
+        /// </summary>
+        /// <param name="sourceObj"></param>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        private static bool CheckOverrideKeys(Dictionary<string, object> sourceObj, string key)
+        {
+            if (OverrideKeys.ContainsKey(key))
+                return sourceObj.Remove(OverrideKeys[key]);
+            return false;
+        }
+
+        /// <summary>
+        /// Checks whether the sourceDB contains the sourceObj with the specified key and removes it if so, returning true
+        /// </summary>
+        /// <param name="sourceDB"></param>
+        /// <param name="id"></param>
+        /// <param name="key"></param>
+        private static bool CheckOverrideKeys(Dictionary<int, Dictionary<string, object>> sourceDB, int id, string key)
+        {
+            if (sourceDB.TryGetValue(id, out Dictionary<string, object> sourceObj))
+                return CheckOverrideKeys(sourceObj, key);
+            return false;
         }
 
         private static void NewObject(Dictionary<int, Dictionary<string, object>> sourceDB, int id, Dictionary<int, Dictionary<string, object>> compareDB)
