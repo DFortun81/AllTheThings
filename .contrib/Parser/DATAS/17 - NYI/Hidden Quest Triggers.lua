@@ -1563,6 +1563,7 @@ _.HiddenQuestTriggers =
 		q(44882),	-- Azsuna - WQ rare: Bloodgazer Matriarch
 		q(45489),	-- Azsuna - WQ rare: Deepclaw
 		q(45499),	-- Azsuna - WQ rare: Fjordun
+		q(45497),	-- Azsuna - WQ rare: Stormfeather
 		q(44035),	-- Azsuna - WQ rare: Torrentius
 		q(45513),	-- Highmountain - WQ rare: Defilia
 		q(45512),	-- Highmountain - WQ rare: Mawat'aki

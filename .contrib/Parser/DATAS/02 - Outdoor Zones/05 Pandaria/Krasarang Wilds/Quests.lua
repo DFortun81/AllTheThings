@@ -1032,11 +1032,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32214, {	-- Bilgewater Infiltrators
-					["provider"] = { "n", 67608 },	-- Rivett Clutchpop
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(31379, {	-- Challenge At The Temple of the Red Crane
 					["provider"] = { "n", 64001 },	-- Sage Lotusbloom
 					["races"] = HORDE_ONLY,
@@ -1072,11 +1067,6 @@ _.Zones =
 						{ "n", 85708 },	-- Segumi
 					},
 					["sourceQuests"] = { 36612, 36870 },	-- Luring Nat (both faction versions)
-				}),
-				q(32329, {	-- Get My Results!
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["coords"] = { 10.4, 53.8, 418 },
-					["races"] = HORDE_ONLY,
 				}),
 				q(32134, {	-- Hard Counter
 					["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
@@ -1134,16 +1124,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32237, {	-- Precious Resource
-					["provider"] = { "n", 67553 },	-- Bixy Buzzsaw
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32137, {	-- Runnin' On Empty
-					["provider"] = { "n", 67542 },	-- Grizzle Gearslip
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
+
 				i(86544, {	-- Spinefish Alpha
 					["g"] = {
 						q(31444, {	-- Spinefish Alpha
@@ -1214,12 +1195,6 @@ _.Zones =
 					["sourceQuests"] = { 32327 },	-- The Darnassus Mission
 					["level"] = 81,
 				}),
-				o(216322, {	-- Bounty Board
-					q(32222, {	-- Wanted: Chief Engineer Cogwrench
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-					}),
-				}),
 				q(32223, {	-- Wanted: Lieutenant Ethan Jacobson
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
@@ -1250,11 +1225,6 @@ _.Zones =
 					["provider"] = { "n", 58607 },	-- Sunwalker Dezco
 					["races"] = HORDE_ONLY,
 				}),
-				q(32136, {	-- Work Order: Fuel
-					["provider"] = { "n", 67535 },	-- Boss-Lady Trixel
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(32138, {	-- Work Order: Lumber
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1266,10 +1236,6 @@ _.Zones =
 --[[
 				The following quests have all been removed from the game
 				q(32236, {	-- Bug Off!
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-				}),
-				q(32199, {	-- Krasarang Steampot
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),

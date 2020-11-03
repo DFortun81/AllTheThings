@@ -431,13 +431,22 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(38, i(104273, {	-- Flame-Scarred Cache of Offerings
 						["description"] = "Awarded if you fail your loot roll. Usually contains gold or crafting materials.",
 						["g"] = {
-							un(38, i(105827)),	-- Kalaena's Arcane Handwraps
-							un(38, i(105833)),	-- Keengrip Arrowpullers
-							un(38, i(105834)),	-- Marco's Crackling Gloves
-							un(38, i(105831)),	-- Siid's Silent Stranglers
-							un(38, i(105839)),	-- Turtleshell Greatcloak
-							un(38, i(105836)),	-- Zoid's Molten Gauntlets
-							-- NOTE FOR CONTRIBS: Only add items you receive to this. The old listings on WoWHead may be inaccurate or out of date.
+						--	NOTE FOR CONTRIBS: Only add items you receive to this. The old listings on WoWHead may be inaccurate or out of date.
+						--	it's likely that the commented items drop also.  if they get confirmed, uncomment them and adjust the unobtainable filter here + in Siege of Orgrimmar
+						--	un(REMOVED_FROM_GAME, i(105838)),	-- Aeth's Swiftcinder Cloak Normal
+							un(38, i(105830)),	-- Brave Niunai's Cloak Normal (confirmed to drop from Ordos cache on July 23, 2020)
+							un(38, i(105826)),	-- Cape of the Alpha Normal (confirmed to drop from Ordos cache on July 23, 2020)
+							un(38, i(105832)),	-- Crimson Gauntlets of Death Normal (confirmed to drop from Ordos cache on July 23, 2020)
+							un(38, i(105829)),	-- Drape of the Omega Normal (confirmed to drop from Ordos cache on July 23, 2020)
+						--	un(REMOVED_FROM_GAME, i(105837)),	-- Gauntlets of Discarded Time Normal
+							un(38, i(105827)),	-- Kalaena's Arcane Handwraps (confirmed to drop from Ordos cache on April 28, 2020)
+							un(38, i(105833)),	-- Keengrip Arrowpullers Normal (confirmed to drop from Ordos cache on November 14, 2019)
+							un(38, i(105834)),	-- Marco's Crackling Gloves Normal (confirmed to drop from Ordos cache on May 6, 2020)
+						--	un(REMOVED_FROM_GAME, i(105835)),	-- Romy's Reliable Grips Normal
+						--	un(REMOVED_FROM_GAME, i(105828)),	-- Seebo's Sainted Touch Normal
+							un(38, i(105831)),	-- Siid's Silent Stranglers Normal (confirmed to drop from Ordos cache on December 29, 2019)
+							un(38, i(105839)),	-- Turtleshell Greatcloak Normal (confirmed to drop from Ordos cache on May 5, 2020)
+							un(38, i(105836)),	-- Zoid's Molten Gauntlets Normal (confirmed to drop from Ordos cache on December 31, 2019)
 						},
 					})),
 					-- Head

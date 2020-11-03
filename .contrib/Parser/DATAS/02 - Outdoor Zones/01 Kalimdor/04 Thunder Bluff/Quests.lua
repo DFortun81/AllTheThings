@@ -561,6 +561,10 @@ _.Zones =
 					["races"] = { TAUREN },
 					["lvl"] = 4,
 				}),
+				q(26398, {	-- Walk With The Earth Mother
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,	-- not sure if it was removed or NYI, but it triggers when turning in the Tauren version above
+				}),
 				q(24540, {	-- War Dance
 					["provider"] = { "n", 36648 },	-- Baine Bloodhoof
 					["coord"] = { 60.3, 51.7, 88 },

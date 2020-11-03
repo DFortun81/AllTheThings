@@ -39,7 +39,9 @@ _.Zones =
 									crit(6, {	-- Pride
 										["sourceQuests"] = { 32352 },	-- A Gathering Storm
 									}),
-									crit(7),	-- Rise of the Blood Elves
+									crit(7, {	-- Rise of the Blood Elves
+										["sourceQuests"] = { 32330 },	-- What's in the Box?
+									}),
 									crit(8),	-- Secrets of the Past
 									crit(9),	-- The Divine Bell
 									crit(10),	-- The Darnassus Operation
@@ -128,6 +130,13 @@ _.Zones =
 								["coord"] = { 9.02, 51.2, 418 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32214, {	-- Bilgewater Infiltrators
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67608 },	-- Rivett Clutchpop
+								["isDaily"] = true,
+								["coord"] = { 12.0, 53.7, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32192, {	-- Bloodlines
 								["sourceQuests"] = { 32190 },	-- To Mogujia
 								["provider"] = { "n", 67581 },	-- Lor'themar Theron
@@ -195,6 +204,13 @@ _.Zones =
 								["coord"] = { 9.05, 51.2, 418 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32329, {	-- Get My Results!
+								["minReputation"] = { 1375, REVERED+2700 },
+								["sourceQuests"] = { 32352 },	-- A Gathering Storm
+								["provider"] = { "n", 67939 },	-- General Nazgrim
+								["coords"] = { 9.30, 51.1, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32130, {	-- Good Luck, Have Fun
 								["sourceQuests"] = { 32108 },	-- Domination Point
 								["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
@@ -223,6 +239,13 @@ _.Zones =
 								["coord"] = { 36.2, 41.1, 421 },	-- Ruins of Ogudei
 								["races"] = HORDE_ONLY,
 							}),
+							q(32199, {	-- Krasarang Steampot
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67562 },	-- Duke
+								["isDaily"] = true,
+								["coord"] = { 12.9, 53.4, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32120, {	-- Legacy of Ogudei
 								["sourceQuests"] = { 32449 },	-- The Ruins of Ogudei
 								["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
@@ -243,6 +266,14 @@ _.Zones =
 								["coord"] = { 36.2, 41.1, 421 },	-- Ruins of Ogudei
 								["races"] = HORDE_ONLY,
 							}),
+							q(32237, {	-- Precious Resource
+							--	TODO: on days this quest is available, does it have prereqs?
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67553 },	-- Bixy Buzzsaw
+								["isDaily"] = true,
+								["coord"] = { 25.3, 58.3, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32318, {	-- Regeneration Takes Time
 								["sourceQuests"] = { 32284 },	-- Someone You Should See
 								["provider"] = { "n", 67866 },	-- Chen Stormstout
@@ -254,6 +285,13 @@ _.Zones =
 								["sourceQuests"] = { 32108 },	-- Domination Point
 								["provider"] = { "n", 67939 },	-- General Nazgrim
 								["coord"] = { 9.3, 51.1, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32137, {	-- Runnin' On Empty
+								["sourceQuests"] = { 32136 },	-- Work Order: Fuel
+								["provider"] = { "n", 67542 },	-- Grizzle Gearslip
+								["isDaily"] = true,
+								["coord"] = { 25.6, 58.3, 418 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32133, {	-- Sentry Wards
@@ -359,6 +397,13 @@ _.Zones =
 								["coord"] = { 20.9, 15.7, 390 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32222, {	-- Wanted: Chief Engineer Cogwrench
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "o", 216322 },	-- Bounty Board
+								["isDaily"] = true,
+								["coord"] = { 11.8, 54.3, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32131, {	-- We Require More Minerals!
 								["sourceQuests"] = { 32108 },	-- Domination Point
 								["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
@@ -371,6 +416,19 @@ _.Zones =
 								["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 								["isDaily"] = true,
 								["coord"] = { 36.2, 41.1, 421 },	-- Ruins of Ogudei
+								["races"] = HORDE_ONLY,
+							}),
+							q(32330, {	-- What's in the Box?
+								["sourceQuests"] = { 32329 },	-- Get My Results!
+								["provider"] = { "n", 16802 },	-- Lor'themar Theron
+								["coords"] = { 54.0, 20.4, 110 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32136, {	-- Work Order: Fuel
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67535 },	-- Boss-Lady Trixel
+								["isDaily"] = true,
+								["coord"] = { 12.9, 53.4, 418 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32132, {	-- Worker Harassment
