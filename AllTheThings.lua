@@ -2307,7 +2307,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
 				total = total + group.total;
 				progress = progress + (group.progress or 0);
-				if isDebug or showComGrps or (group.progress / group.total) < 1 then
+				if showComGrps or (group.progress / group.total) < 1 then
 					right = GetProgressColorText(group.progress, group.total);
 				end
 			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
@@ -2315,7 +2315,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					total = total + 1;
 					if group.collected then
 						progress = progress + 1;
-						if isDebug or showComThgs then
+						if showComThgs then
 							right = GetCollectionIcon(group.collected);
 						end
 					else
@@ -8482,7 +8482,7 @@ end
 
 -- Processing Functions (Coroutines)
 local UpdateGroup, UpdateGroups;
-UpdateGroup = function(parent, group)
+UpdateGroup = function(parent, group, defaultVisibility)
 	-- Determine if this user can enter the instance or acquire the item.
 	if app.GroupRequirementsFilter(group) then
 		-- Check if this is a group
@@ -8506,7 +8506,7 @@ UpdateGroup = function(parent, group)
 			if app.GroupFilter(group) then
 			
 				-- Update the subgroups recursively...
-				UpdateGroups(group, group.g);
+				UpdateGroups(group, group.g, defaultVisibility);
 				
 				-- Increment the parent group's totals.
 				parent.total = (parent.total or 0) + group.total;
@@ -8548,16 +8548,16 @@ UpdateGroup = function(parent, group)
 					group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
 				else
 					-- Hide this group.
-					group.visible = false;
+					group.visible = defaultVisibility;
 				end
 			else
 				-- Hide this group. We aren't filtering for it.
-				group.visible = false;
+				group.visible = defaultVisibility;
 			end
 		end
 	else
 		-- This group doesn't meet requirements.
-		group.visible = false;
+		group.visible = defaultVisibility;
 	end
 	
 	-- flag parent to set itself visible when update order falls back out
@@ -8565,12 +8565,15 @@ UpdateGroup = function(parent, group)
 	
 	if group.OnUpdate then group:OnUpdate(); end
 end
-UpdateGroups = function(parent, g)
+UpdateGroups = function(parent, g, defaultVis)
 	if g then
+		-- default visibility for group updates is debug mode itself
+		-- this way 'collected' stuff can be hidden while un-collectible stuff can be shown
+		local defaultVisibility = defaultVis or app.Settings:Get("DebugMode");
 		-- print("updategroup",parent.text);
 		for key, group in ipairs(g) do
 			app:CheckYieldHelper();
-			UpdateGroup(parent, group);
+			UpdateGroup(parent, group, defaultVisibility);
 		end
 	end
 end
@@ -9409,7 +9412,7 @@ function app:CreateMiniListForGroup(group)
 				gTop = NestSourceQuests(root);
 			elseif root.sourceQuests then
 				local breakafter = 0;
-				local isAcctQuests = app.Settings:Get("DebugMode") or app.AccountWideQuests;				
+				local isAcctQuests = app.AccountWideQuests;
 				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
 				while sourceQuests and #sourceQuests > 0 do
 					subSourceQuests = {}; prereqs = {};
@@ -13902,7 +13905,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				local temp = {};
 				-- options when refreshing the list
 				local includeAll = app.Settings:Get("DebugMode");
-				local includeQuests = app.Settings:Get("Thing:Quests") or includeAll;
+				local includeQuests = app.CollectibleQuests;
 				local includePermanent = IsAltKeyDown() or includeAll;
 				local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies") or includeAll;
 				

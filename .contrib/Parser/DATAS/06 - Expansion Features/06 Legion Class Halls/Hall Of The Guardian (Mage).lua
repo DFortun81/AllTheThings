@@ -721,6 +721,7 @@ _.ExpansionFeatures =
 						["lvl"] = 98,
 						["maps"] = { 627 },	-- Dalaran
 						["coord"] = { 28.6, 49.9, 627 },
+						["classes"] = { MAGE },
 						["provider"] = { "n", 105081 },	-- Archmage Kalec
 						["isBreadcrumb"] = true,
 					}),
