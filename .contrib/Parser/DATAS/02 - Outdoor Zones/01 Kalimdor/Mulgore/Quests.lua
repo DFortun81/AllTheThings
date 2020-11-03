@@ -116,6 +116,11 @@ _.Zones =
 					["coord"] = { 48.6, 59.5, 7 },
 					["races"] = { TAUREN },
 				}),
+				q(748,   {	-- Poison Water
+					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["races"] = { TAUREN },
+					["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the current version found above
+				}),
 				q(744,   {	-- Preparation for Ceremony
 					["provider"] = { "n", 2987 },	-- Eyahn Eagletalon
 					["coord"] = { 49.6, 17.4, 7 },
