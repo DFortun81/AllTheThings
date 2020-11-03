@@ -285,6 +285,11 @@ _.Zones =
 					["races"] = { TAUREN },
 					["sourceQuest"] = 24440,	-- Winterhoof Cleansing
 				}),
+				q(756, {	-- Thunderhorn Totem
+					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["races"] = { TAUREN },
+					["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the current version found above
+				}),
 				q(24524, {	-- Wildmane Cleansing
 					["provider"] = { "n", 37024 },	-- Una Wildmane
 					["coord"] = { 49.4, 17.4, 7 },
