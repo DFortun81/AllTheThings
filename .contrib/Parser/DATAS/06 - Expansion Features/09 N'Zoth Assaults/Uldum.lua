@@ -1267,10 +1267,10 @@ _.ExpansionFeatures =
 				q(58097, {	-- Supplies from the Uldum Accord
 					["repeatable"] = true,
 					["g"] = {
-						i(173283, {	-- Token of a Brilliant Death (Rank 4)
-							az(35, 4),	-- Breath of the Dying (Rank 4)
-						}),
 						i(174484, {	-- Uldum Accord Supplies
+							i(173283, {	-- Token of a Brilliant Death (Rank 4)
+								az(35, 4),	-- Breath of the Dying (Rank 4)
+							}),
 							i(174481),	-- Cursed Dune Watcher
 						}),
 					},
