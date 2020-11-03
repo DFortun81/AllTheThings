@@ -2298,17 +2298,31 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	local total = 0;
 	local progress = 0;
 	local isDebug = app.Settings:Get("DebugMode");
-	local showComGrps = app.Settings:Get("Show:CompletedGroups");
-	local showComThgs = app.Settings:Get("Show:CollectedThings");
+	local showComGrps = isDebug or app.Settings:Get("Show:CompletedGroups");
+	local showComThgs = isDebug or app.Settings:Get("Show:CollectedThings");
+	local showTrakThgs = isDebug or app.Settings:Get("Show:IncompleteThings");
 	for i,group in ipairs(groups) do
+		-- print(group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
 		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
+		-- TODO: stop filtering if reaching a non-filtered group which is an actual in-game thing (i.e. BoE Item/NPC,object,quest...)
 		if app.RecursiveGroupRequirementsFilter(group) then
 			local right = nil;
-			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
+			if group.total and (group.collectible and group.total > 1 or group.total > 0) then
 				total = total + group.total;
 				progress = progress + (group.progress or 0);
 				if showComGrps or (group.progress / group.total) < 1 then
 					right = GetProgressColorText(group.progress, group.total);
+				-- the group itself may be a trackable thing
+				elseif group.trackable then
+					if group.saved then
+						if showComThgs then
+							right = L["COMPLETE_ICON"];
+						end
+					elseif showTrakThgs then
+						right = L["INCOMPLETE_ICON"];
+					end
+				elseif group.visible then
+					right = group.count and (group.count .. "x") or "---";
 				end
 			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
 				if group.collectible then
@@ -2323,11 +2337,11 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					end
 				elseif group.trackable then
 					if group.saved then
-						if isDebug or showComThgs then
+						if showComThgs then
 							right = L["COMPLETE_ICON"];
 						end
-					elseif isDebug then
-						right = L["NOT_COLLECTED_ICON"];
+					elseif showTrakThgs then
+						right = L["INCOMPLETE_ICON"];
 					end
 				elseif group.visible then
 					right = group.count and (group.count .. "x") or "---";
