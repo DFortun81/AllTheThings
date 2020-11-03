@@ -483,6 +483,7 @@ _.Zones =
 							},
 						}),
 						n(86175, {	-- Bregg Coppercast <Primal Combatant>
+							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 56.2, 20.0, 622 },
 							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -679, -9914, -660 },
@@ -1195,6 +1196,8 @@ _.Zones =
 							},
 						}),
 						n(93914, {	-- Holly McTilla <Warmongering Gladiator>
+							["itemID"] = 137642,	-- Mark of Honor
+							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 54.8, 18.8, 622 },
 							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -681, -9914, -661 },
@@ -1555,6 +1558,7 @@ _.Zones =
 							},
 						}),
 						n(93915, {	-- Li "Crunchpaw" Tsang <Warmongering Combatant>
+							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 54.8, 18.8, 622 },
 							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 },
