@@ -310,6 +310,11 @@ _.Zones =
 					["races"] = { TAUREN },
 					["sourceQuest"] = 20440,	-- Poison Water
 				}),
+				q(754, {	-- Winterhoof Cleansing
+					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["races"] = { TAUREN },
+					["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the current version found above
+				}),
 			}),
 		}),
 	}),
