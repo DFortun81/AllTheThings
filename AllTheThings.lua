@@ -8464,12 +8464,14 @@ app.ShowIncompleteThings = app.Filter;
 app.RecursiveGroupRequirementsFilter = function(group)
 	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 		-- if this group is an actual in-game 'thing', there's no reason to continue checking the parents, since it can exist on its own
-		if group[group.key] and tonumber(group[group.key]) > 0 and
-			(group.key == "npcID" or 
-			group.key == "creatureID" or 
-			group.key == "objectID" or 
-			group.key == "questID" or
-			(group.key == "itemID" and app.FilterItemBind(group))) then
+		local key = group.key;
+		local id = key and tonumber(group[key]);
+		if id and id > 0 and
+			(key == "npcID" or 
+			key == "creatureID" or 
+			key == "objectID" or 
+			key == "questID" or
+			(key == "itemID" and app.FilterItemBind(group))) then
 			return true;
 		elseif group.parent then return app.RecursiveGroupRequirementsFilter(group.parent); end
 		return true;
