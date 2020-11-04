@@ -688,6 +688,13 @@ function(self)
 end,
 function(self)
 	settings:SetDebugMode(self:GetChecked());
+	if self:GetChecked() then
+		settings:SetCompletedGroups(true);
+		settings:SetCollectedThings(true);
+	else
+		settings:SetCompletedGroups(settings.CacheCompletedGroups);
+		settings:SetCollectedThings(settings.CacheCollectedThings);
+	end
 end);
 DebugModeCheckBox:SetATTTooltip("Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.");
 DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -1);
@@ -1451,6 +1458,7 @@ function(self)
 end,
 function(self)
 	settings:SetCompletedGroups(self:GetChecked());
+	settings.CacheCompletedGroups = self:GetChecked();
 	settings:UpdateMode(1);
 end);
 ShowCompletedGroupsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
@@ -1462,6 +1470,7 @@ function(self)
 end,
 function(self)
 	settings:SetCollectedThings(self:GetChecked());
+	settings.CacheCollectedThings = self:GetChecked();
 	settings:UpdateMode(1);
 end);
 ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
