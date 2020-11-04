@@ -8467,9 +8467,9 @@ app.RecursiveGroupRequirementsFilter = function(group)
 		local key = group.key;
 		local id = key and tonumber(group[key]);
 		if id and id > 0 and
-			(key == "npcID" or 
-			key == "creatureID" or 
-			key == "objectID" or 
+			(key == "npcID" or
+			key == "creatureID" or
+			key == "objectID" or
 			key == "questID" or
 			(key == "itemID" and app.FilterItemBind(group))) then
 			return true;
@@ -8546,6 +8546,8 @@ UpdateGroup = function(parent, group, defaultVisibility)
 				elseif group.trackable and app.ShowIncompleteThings(group) then
 					-- If this group is trackable, then we should show it.
 					group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
+					-- flag parent to set itself visible when update order falls back out since this is not a normally collectable thing
+					if group.visible then parent.visible = 1; end
 				else
 					-- Hide this group. We aren't filtering for it.
 					group.visible = false;
@@ -8571,9 +8573,13 @@ UpdateGroup = function(parent, group, defaultVisibility)
 				elseif group.trackable and app.ShowIncompleteThings(group) then
 					-- If this group is trackable, then we should show it.
 					group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
+					-- flag parent to set itself visible when update order falls back out since this is not a normally collectable thing
+					if group.visible then parent.visible = 1; end
 				else
 					-- Hide this group.
 					group.visible = defaultVisibility;
+					-- flag parent to set itself visible when update order falls back out since this is not a normally collectable thing
+					if group.visible then parent.visible = 1; end
 				end
 			else
 				-- Hide this group. We aren't filtering for it.
@@ -8584,10 +8590,7 @@ UpdateGroup = function(parent, group, defaultVisibility)
 		-- This group doesn't meet requirements.
 		group.visible = defaultVisibility;
 	end
-	
-	-- flag parent to set itself visible when update order falls back out
-	if group.visible == true then parent.visible = 1; end
-	
+		
 	if group.OnUpdate then group:OnUpdate(); end
 end
 UpdateGroups = function(parent, g, defaultVis)
