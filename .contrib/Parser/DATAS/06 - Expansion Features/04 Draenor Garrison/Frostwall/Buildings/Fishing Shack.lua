@@ -92,6 +92,13 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 127994, 1 }, },	-- Felmouth Frenzy Lunker
 							}),
+							q(36608, {	-- Finding Nat Pagle
+								["sourceQuests"] = { 36612, 36870 },	-- Luring Nat (both faction versions)
+								["providers"] = {
+									{ "n", 79917 },	-- Rak'jin
+									{ "n", 85708 },	-- Segumi
+								},
+							}),
 							q(35066, {	-- Fire Ammonite
 								["provider"] = { "n", 79892 },	-- Mak'jin
 								["coord"] = { 38.0, 72.2, 590 },
@@ -129,6 +136,11 @@ _.ExpansionFeatures =
 								["coord"] = { 38.1, 72.2, 590 },
 								["races"] = HORDE_ONLY,
 								["requireSkill"] = FISHING,
+							}),
+							q(36612, {	-- Luring Nat
+								["description"] = "Requires upgrading your Fishing Shack to level 3.",
+								["provider"] = { "n", 79971 },	-- Rak'jin
+								["races"] = HORDE_ONLY,
 							}),
 							q(38406, {	-- Sea Scorpion Lunker
 								["requireSkill"] = FISHING,

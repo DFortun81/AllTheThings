@@ -609,6 +609,13 @@ _.Zones =
 								["maps"] = { 487 },	-- A Little Patience
 								["lvl"] = 90,	-- 15
 							}),
+							q(32170, {	-- Ancient's Fall
+								["sourceQuests"] = { 32184 },	-- Beastmaster's Quarry: The Crane
+								["provider"] = { "n", 67558 },	-- Huntsman Blake (summons the mob for you to kill)
+								["isDaily"] = true,
+								["coord"] = { 88.8, 13.6, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32452, {	-- And Then There Were Goblins
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
 								["provider"] = { "n", 68908 },	-- Amber Kearnen
@@ -637,6 +644,19 @@ _.Zones =
 								["sourceQuests"] = { 32193 },	-- To Mogujia
 								["provider"] = { "n", 67734 },	-- Sarannha Skyglaive
 								["coord"] = { 59.9, 75.4, 379 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32164, {	-- Beastmaster's Hunt: The Crane
+								["provider"] = { "i", 91854 },	-- Sturdy Crane Snare
+								["isDaily"] = true,
+								["coord"] = { 94.4, 29.3, 418 },	-- location of NPC from which to purchase
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32184, {	-- Beastmaster's Quarry: The Crane
+								["sourceQuests"] = { 32164 },	-- Beastmaster's Hunt: The Crane
+								["provider"] = { "n", 67503 },	-- Ancient Bloodcrown Crane
+								["isDaily"] = true,
+								["coord"] = { 40.3, 60.0, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32401, {	-- Breath of Darkest Shadow

@@ -265,6 +265,22 @@ _.Zones =
 				}),
 				
 				
+				q(30376, {	-- Hope Springs Eternal
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						30174,	-- For Family
+						30273,	-- In the House of the Red Crane
+						30117,	-- Stoneplow Thirsts
+						29990,	-- Training and Discipline
+					--	TODO: may also require the following quests:
+					--	29581,	-- The Golden Dream
+					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
+					},
+					["provider"] = { "n", 59719 },	-- Chi-Ji
+					["coord"] = { 41.6, 46.3, 418 },
+				}),
+				
+				
 				q(30348, {	-- Immortality?
 					["sourceQuests"] = { 30347 },	-- The Pools of Youth
 					["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
@@ -944,10 +960,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32170, {	-- Ancient's Fall
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				i(91856, {	-- Sturdy Crab Crate
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -971,15 +983,6 @@ _.Zones =
 					["g"] = {
 						q(32161, {	-- Beastmaster's Hunt: The Crane
 							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
-				i(91854, {
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						q(32164, {	-- Beastmaster's Hunt: The Crane
-							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
 					},
@@ -1017,11 +1020,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32184, {	-- Beastmaster's Quarry: The Crane
-					["provider"] = { "n", 67503 },	-- Ancient Bloodcrown Crane
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(32182, {	-- Beastmaster's Quarry: The Tiger
 					["provider"] = { "n", 67498 },	-- Krasari Elder
 					["races"] = HORDE_ONLY,
@@ -1030,11 +1028,6 @@ _.Zones =
 				q(32185, {	-- Beastmaster's Quarry: The Tiger
 					["provider"] = { "n", 67498 },	-- Krasari Elder
 					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(31379, {	-- Challenge At The Temple of the Red Crane
-					["provider"] = { "n", 64001 },	-- Sage Lotusbloom
-					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(30740, {	-- Champion of Chi-Ji
@@ -1061,29 +1054,10 @@ _.Zones =
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
-				q(36608, {	-- Finding Nat Pagle
-					["providers"] = {
-						{ "n", 79917 },	-- Rak'jin
-						{ "n", 85708 },	-- Segumi
-					},
-					["sourceQuests"] = { 36612, 36870 },	-- Luring Nat (both faction versions)
-				}),
 				q(32134, {	-- Hard Counter
 					["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				}),
-				q(30376, {	-- Hope Springs Eternal
-					["isBreadcrumb"] = true,
-					["sourceQuests"] = {
-						30174,	-- For Family
-						30273,	-- In the House of the Red Crane
-						30117,	-- Stoneplow Thirsts
-					--	TODO: may also require the following quests:
-					--	29581,	-- The Golden Dream
-					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
-					},
-					["provider"] = { "n", 59719 },	-- Chi-Ji
 				}),
 				q(30734, {	-- Huck Wheelbarrow
 					["provider"] = { "n", 60506 },	-- Thelonius
@@ -1205,6 +1179,7 @@ _.Zones =
 						30273,	-- In the House of the Red Crane
 						30117,	-- Stoneplow Thirsts
 						30445,	-- The Waters of Youth
+						29990,	-- Training and Discipline
 					--	TODO: may also require the following quests:
 					--	29581,	-- The Golden Dream
 					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
@@ -1218,6 +1193,7 @@ _.Zones =
 						30174,	-- For Family
 						30273,	-- In the House of the Red Crane
 						30117,	-- Stoneplow Thirsts
+						29990,	-- Training and Discipline
 					--	TODO: may also require the following quests:
 					--	29581,	-- The Golden Dream
 					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
