@@ -1286,7 +1286,7 @@ _.WorldEvents =
 					["provider"] = { "n", 157113 },	-- Chromie
 					["coord"] = { 53.5, 54.7, 75 },	-- Caverns of Time, Tanaris
 					["u"] = 31,	-- WoW Anniversary
-					["isYearly"] = true,
+					["isWeekly"] = true,
 				}),
 				q(43323, {	-- A Time to Reflect (A)
 					["provider"] = { "n", 110034 },		-- Historian Llore
