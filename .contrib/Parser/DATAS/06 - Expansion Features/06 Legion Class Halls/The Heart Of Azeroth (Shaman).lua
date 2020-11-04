@@ -8,7 +8,6 @@ _.ExpansionFeatures =
 		cl(SHAMAN, {	-- The Heart of Azeroth (Shaman)
 			["classes"] = { SHAMAN },
 			["lvl"] = 98,
-			["mapID"] = 726,
 			["maps"] = {
 				725,	-- The Maelstrom (scenario?)
 				726,	-- The Maelstrom
