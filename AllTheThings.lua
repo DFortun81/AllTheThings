@@ -2358,7 +2358,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
-				if layer < 3 and group.g and (not group.achievementID or paramA == "creatureID") and not group.parent.difficultyID and #group.g > 0 and not (group.g[1].artifactID or group.filterID == 109) and not group.symbolized then
+				if layer < 3 and group.g and (not group.achievementID or paramA == "creatureID") and (not group.parent or not group.parent.difficultyID) and #group.g > 0 and not (group.g[1].artifactID or group.filterID == 109) and not group.symbolized then
 					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. "  ", layer + 1);
 				-- else
 					-- print("skipped sub-contains");
@@ -2803,80 +2803,107 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 				
-				local reagentCache = app.GetDataSubMember("Reagents", itemID);
-				if reagentCache then
-					--[[
-					for recipeID,count in pairs(reagentCache[1]) do
-						local searchResults = SearchForField("spellID", recipeID);
-						if searchResults then
-							for i,o in ipairs(searchResults) do
-								if not contains(group, o) then
-									tinsert(group, o);
-								end
-							end
-						end
-					end
-					]]--
-					-- print("has reagents");
-					if select(14, GetItemInfo(itemID)) == 1 and not app.Settings:Get("DebugMode") then
-						if not app.AppliedSkillIDToNPCIDs then
-							app.AppliedSkillIDToNPCIDs = true;
-							local skillIDMap = {
-								[-178] = 20222, 										-- Goblin Engineering
-								[-179] = 20219, 										-- Gnomish Engineering
-								[-180] = 171,				 							-- Alchemy
-								[-181] = 164,				 							-- Blacksmithing
-								[-182] = 333,				 							-- Enchanting
-								[-183] = 202,				 							-- Engineering
-								[-184] = 182,				 							-- Herbalism
-								[-185] = 773,				 							-- Inscription
-								[-186] = 755,				 							-- Jewelcrafting
-								[-187] = 165,				 							-- Leatherworking
-								[-188] = 186,				 							-- Mining
-								[-189] = 393,				 							-- Skinning
-								[-190] = 197,				 							-- Tailoring
-								[-191] = 794, 										-- Archaeology
-								[-192] = 185, 											-- Cooking
-								[-193] = 129, 										-- First Aid
-								[-194] = 356, 											-- Fishing
-							};
-							for npcID,skillID in pairs(skillIDMap) do
-								local searchResults = app.SearchForField("creatureID", npcID);
-								if searchResults then
-									for i,o in ipairs(searchResults) do
-										o.skillID = skillID;
-									end
-								end
-							end
-						end
+				-- merge items which this item can craft into the search results
+				-- local crafted = app.BuildCrafted(itemID);
+				-- if crafted then
+					-- MergeObjects(group, crafted);
+				-- end
+				
+				-- local reagentCache = app.GetDataSubMember("Reagents", itemID);
+				-- if reagentCache then
+					-- --[[
+					-- -- Get the recipes using this item
+					-- for recipeID,count in pairs(reagentCache[1]) do
+						-- print("RecipeID",recipeID);
+						-- local searchResults = app.SearchForField("spellID", recipeID);
+						-- if searchResults then
+							-- for i,o in ipairs(searchResults) do
+								-- if not contains(group, o) then
+									-- if type(o) == "table" then
+										-- for k,v in pairs(o) do
+											-- print(k,v);
+										-- end
+									-- else
+										-- print(o)
+									-- end
+									-- tinsert(group, o);
+								-- end
+							-- end
+						-- end
+					-- end
+					-- --]]--
+					-- -- print("has reagents");
+					-- print("Reagent ItemInfo",GetItemInfo(itemID));
+					-- -- if select(14, GetItemInfo(itemID)) == 1 then
+						-- if not app.AppliedSkillIDToNPCIDs then
+							-- app.AppliedSkillIDToNPCIDs = true;
+							-- local skillIDMap = {
+								-- [-178] = 20222, 										-- Goblin Engineering
+								-- [-179] = 20219, 										-- Gnomish Engineering
+								-- [-180] = 171,				 							-- Alchemy
+								-- [-181] = 164,				 							-- Blacksmithing
+								-- [-182] = 333,				 							-- Enchanting
+								-- [-183] = 202,				 							-- Engineering
+								-- [-184] = 182,				 							-- Herbalism
+								-- [-185] = 773,				 							-- Inscription
+								-- [-186] = 755,				 							-- Jewelcrafting
+								-- [-187] = 165,				 							-- Leatherworking
+								-- [-188] = 186,				 							-- Mining
+								-- [-189] = 393,				 							-- Skinning
+								-- [-190] = 197,				 							-- Tailoring
+								-- [-191] = 794, 										-- Archaeology
+								-- [-192] = 185, 											-- Cooking
+								-- [-193] = 129, 										-- First Aid
+								-- [-194] = 356, 											-- Fishing
+							-- };
+							-- for npcID,skillID in pairs(skillIDMap) do
+								-- local searchResults = app.SearchForField("creatureID", npcID);
+								-- if searchResults then
+									-- for i,o in ipairs(searchResults) do
+										-- o.skillID = skillID;
+									-- end
+								-- end
+							-- end
+						-- end
 					
-						-- If the reagent itself is BOP, then only show things you can make.
-						for itemID,count in pairs(reagentCache[2]) do
-							local searchResults = app.SearchForField("itemID", itemID);
-							if searchResults then
-								for i,o in ipairs(searchResults) do
-									if not contains(group, o) then
-										local skillID = GetRelativeValue(o, "skillID");
-										if not skillID or app.GetTradeSkillCache()[skillID] then
-											tinsert(group, o);
-										end
-									end
-								end
-							end
-						end
-					else
-						for itemID,count in pairs(reagentCache[2]) do
-							local searchResults = app.SearchForField("itemID", itemID);
-							if searchResults then
-								for i,o in ipairs(searchResults) do
-									if not contains(group, o) then
-										tinsert(group, o);
-									end
-								end
-							end
-						end
-					end
-				end
+						-- -- If the reagent itself is BOP, then only show things you can make.
+						-- for itemID,count in pairs(reagentCache[2]) do
+							-- print("x",reagentCache[2][itemID],"=>",itemID);
+							-- local searchResults = app.SearchForField("itemID", itemID);
+							-- if searchResults then
+								-- print("found",#searchResults);
+								-- for i,o in ipairs(searchResults) do
+									-- if not contains(group, o) then
+										-- local skillID = GetRelativeValue(o, "skillID");
+										-- print("skillID",skillID,skillID and app.GetTradeSkillCache()[skillID]);
+										-- if not skillID or app.GetTradeSkillCache()[skillID] then
+											-- tinsert(group, o);
+										-- end
+									-- end
+								-- end
+							-- -- item not referenced in DB, only show in debug
+							-- elseif  app.Settings:Get("DebugMode") then
+								-- local o = app.CreateItem(itemID);
+								-- if not contains(group, o) then
+									-- -- print("debugItem",itemID);
+									-- tinsert(group, o);
+								-- end
+							-- end
+						-- end
+					-- -- else
+						-- -- for itemID,count in pairs(reagentCache[2]) do
+							-- -- print("x",reagentCache[2][itemID],"->",itemID);
+							-- -- local searchResults = app.SearchForField("itemID", itemID);
+							-- -- if searchResults then
+								-- -- for i,o in ipairs(searchResults) do
+									-- -- if not contains(group, o) then
+										-- -- tinsert(group, o);
+									-- -- end
+								-- -- end
+							-- -- end
+						-- -- end
+					-- -- end
+				-- end
 				
 				if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
 					-- If the item is a relic, then let's compare against equipped relics.
@@ -3025,14 +3052,39 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							end
 							o.g = symbolicLink;
 						end
+					-- elseif o.itemID then
+						-- merge items which this item can craft into the search results
+						-- local recurSet = app.RecursiveFirstParentWithField(o, "recurSet");
+						-- if recurSet then
+							-- print("recur---");
+							-- for i,id in ipairs(recurSet) do
+								-- print(i,id);
+							-- end
+							-- print("---");
+						-- end
+						-- local crafted = app.BuildCrafted(o.itemID);
+						-- if crafted and #crafted > 0 then
+							-- if not o.g then o.g = {}; end
+							-- MergeObjects(o.g, crafted);
+							-- track the itemID of the recurSet
+							-- if not recurSet then
+								-- o.recurSet = { o.itemID };
+							-- else
+								-- tinsert(recurSet, o.itemID);
+							-- end
+						-- end
 					end
 				end
 				group = CreateObject({ [paramA] = paramB });
 				group.g = merged;
 			end
 			
+			-- Append any crafted things using this group
+			app.BuildCrafted(group, 3);
+			
 			group.total = 0;
 			group.progress = 0;
+			-- BuildGroups(group, group.g);
 			app.UpdateGroups(group, group.g);
 			if group.collectible then
 				group.total = group.total + 1;
@@ -3157,6 +3209,139 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		cache[2] = (working and 0.01) or 100000000;
 		cache[3] = group;
 		return group;
+	end
+end
+-- Appends sub-groups into the item group based on what the item is used to craft, following only as deep as the provided recurDepth
+app.BuildCrafted = function(item, recurDepth)
+	local itemID = item.itemID;
+	if not itemID or recurDepth < 1 then return; end
+	-- if recurSet and contains(recurSet,itemID) then print("stop recur",itemID); return; end
+	-- if itemID == 120945 then print("force skip"); return; end
+	local reagentCache = app.GetDataSubMember("Reagents", itemID);
+	if reagentCache then
+		--[[
+		-- Get the recipes using this item
+		for recipeID,count in pairs(reagentCache[1]) do
+			print("RecipeID",recipeID);
+			local searchResults = app.SearchForField("spellID", recipeID);
+			if searchResults then
+				for i,o in ipairs(searchResults) do
+					if not contains(group, o) then
+						if type(o) == "table" then
+							for k,v in pairs(o) do
+								print(k,v);
+							end
+						else
+							print(o)
+						end
+						tinsert(group, o);
+					end
+				end
+			end
+		end
+		--]]--
+		-- print("has reagents");
+		-- print("Reagent ItemInfo",GetItemInfo(itemID));
+		-- if select(14, GetItemInfo(itemID)) == 1 then
+			if not app.AppliedSkillIDToNPCIDs then
+				app.AppliedSkillIDToNPCIDs = true;
+				local skillIDMap = {
+					[-178] = 20222, 										-- Goblin Engineering
+					[-179] = 20219, 										-- Gnomish Engineering
+					[-180] = 171,				 							-- Alchemy
+					[-181] = 164,				 							-- Blacksmithing
+					[-182] = 333,				 							-- Enchanting
+					[-183] = 202,				 							-- Engineering
+					[-184] = 182,				 							-- Herbalism
+					[-185] = 773,				 							-- Inscription
+					[-186] = 755,				 							-- Jewelcrafting
+					[-187] = 165,				 							-- Leatherworking
+					[-188] = 186,				 							-- Mining
+					[-189] = 393,				 							-- Skinning
+					[-190] = 197,				 							-- Tailoring
+					[-191] = 794, 										-- Archaeology
+					[-192] = 185, 											-- Cooking
+					[-193] = 129, 										-- First Aid
+					[-194] = 356, 											-- Fishing
+				};
+				for npcID,skillID in pairs(skillIDMap) do
+					local searchResults = app.SearchForField("creatureID", npcID);
+					if searchResults then
+						for i,o in ipairs(searchResults) do
+							o.skillID = skillID;
+						end
+					end
+				end
+			end
+		
+			-- Check each crafted item and add it to the list
+			for id,count in pairs(reagentCache[2]) do
+				-- print(itemID,"x",reagentCache[2][id],"=>",id,"via",#reagentCache[1],"recipes");
+				-- find a reference to the item in the DB and add it to the group
+				local searchItems = app.SearchForField("itemID", id);
+				if not item.g then item.g = {}; end
+				if searchItems and #searchItems > 0 then
+					MergeObject(item.g, CloneData(searchItems[1]));
+				else
+					MergeObject(item.g, app.CreateItem(id));
+				end
+				
+				-- If the reagent itself is BOP, then only show things you can make.
+				-- TODO: figure out this logic to limit the Contains to what is actually craftable for BoP materials
+				-- find recipe(s) which creates this item
+				-- for recipeID,count in pairs(reagentCache[1]) do
+					-- local searchRecipes = app.SearchForField("recipeID", reagentCache[1][recipeID]);
+					-- if searchRecipes and #searchRecipes > 0 then
+						-- -- for i,o in ipairs(searchResults) do
+						-- if not group then group = {}; end
+						-- -- get the skillID of the recipe which uses this itemID
+						-- local skillID = GetRelativeValue(searchRecipes[1], "skillID");
+						-- print("skillID",skillID,skillID and app.GetTradeSkillCache()[skillID]);
+						-- -- not tied to a skill, or is a skill current character knows
+						-- -- if not skillID or app.GetTradeSkillCache()[skillID] then
+							-- -- -- find a reference to the item in the DB
+							-- -- local searchItems = app.SearchForField("itemID", id);
+							-- -- if searchItems and #searchItems > 0 then
+								-- -- -- tinsert(group, CloneData(searchItems[1]));
+							-- -- else
+								-- -- -- tinsert(group, app.CreateItem(id));
+							-- -- end
+						-- -- end
+						-- -- end
+					-- else
+						-- -- item created from recipe which is not referenced in DB, add it to the list regardless
+						-- if not group then group = {}; end
+						-- -- find a reference to the item in the DB
+						-- -- local searchItems = app.SearchForField("itemID", id);
+						-- -- if searchItems and #searchItems > 0 then								
+							-- -- -- tinsert(group, CloneData(searchItems[1]));
+						-- -- else
+							-- -- print("non-referenced",id);
+							-- -- -- tinsert(group, app.CreateItem(id));
+						-- -- end
+					-- end
+				-- end
+			end
+		-- else
+			-- for itemID,count in pairs(reagentCache[2]) do
+				-- print("x",reagentCache[2][itemID],"->",itemID);
+				-- local searchResults = app.SearchForField("itemID", itemID);
+				-- if searchResults then
+					-- for i,o in ipairs(searchResults) do
+						-- if not contains(group, o) then
+							-- tinsert(group, o);
+						-- end
+					-- end
+				-- end
+			-- end
+		-- end
+		
+			-- Recursively check each crafted item for sub-sequent crafted items...
+			if item.g then
+				for i,subItem in ipairs(item.g) do
+					app.BuildCrafted(subItem, recurDepth - 1);
+				end
+			end
 	end
 end
 local function SendGroupMessage(msg)
@@ -8492,6 +8677,17 @@ app.RecursiveUnobtainableFilter = function(group)
 	end
 	return false;
 end
+app.RecursiveFirstParentWithField = function(group, field)
+	if group then
+		if group[field] then 
+			return group[field];
+		else
+			if group.parent then
+				return app.RecursiveFirstParentWithField(group.parent, field)
+			end
+		end
+	end
+end
 app.RecursiveIsDescendantOfParentWithValue = function(group, field, value)
 	if group then
 		if group[field] and group[field] == value then
@@ -13564,7 +13760,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						for i=1,C_TradeSkillUI.GetRecipeNumReagents(spellRecipeInfo.recipeID) do
 							local reagentName, reagentTexture, reagentCount, playerCount = C_TradeSkillUI.GetRecipeReagentInfo(spellRecipeInfo.recipeID, i);
 							local itemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeReagentItemLink(spellRecipeInfo.recipeID, i));
-							--print(spellRecipeInfo.recipeID, itemID, "=>", craftedItemID);
+							-- print(spellRecipeInfo.recipeID, itemID, "=",reagentCount,">", craftedItemID);
 							
 							-- Make sure a cache table exists for this item.
 							-- Index 1: The Recipe Skill IDs

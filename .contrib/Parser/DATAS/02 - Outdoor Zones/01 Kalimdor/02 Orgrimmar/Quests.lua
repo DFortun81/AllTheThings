@@ -1033,9 +1033,6 @@ _.Zones =
 					["coord"] = { 70.9, 49.6, 85 },
 					["sourceQuest"] = 60359,	-- Home Is Where the Hearth Is
 					["races"] = HORDE_ONLY,
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
 				}),
 				q(936,   {	-- Assisting Arch Druid Runetotem
 					["u"] = REMOVED_FROM_GAME,
@@ -1194,9 +1191,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 168441 },	-- Cork Fizzlepop
 					["sourceQuest"] = 60343,	-- Welcome to Orgrimmar
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
 				}),
 				q(26804, {	-- Flight to Razor Hill
 					["provider"] = { "n", 3310 },	-- Doras
@@ -1266,6 +1260,7 @@ _.Zones =
 				}),
 				q(60359, {	-- Home Is Where the Hearth Is
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						60346,	-- What's Your Specialty?
 						60347,	-- What's Your Specialty?
@@ -1277,10 +1272,6 @@ _.Zones =
 						60353,	-- What's Your Specialty?
 						60355,	-- What's Your Specialty?
 						60357,	-- What's Your Specialty?
-					},
-					["races"] = HORDE_ONLY,
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
 					},
 				}),
 				q(53372, {	-- Hour of Reckoning
@@ -1502,9 +1493,6 @@ _.Zones =
 					["coord"] = { 61.5, 32.9, 85 },
 					["sourceQuest"] = 60344,	-- Finding Your Way (H)
 					["races"] = HORDE_ONLY,
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
 					["g"] = {
 						i(13331),	-- Red Skeletal Horse
 					},
@@ -2257,18 +2245,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
 					["sourceQuest"] = 59985,	-- An End to Beginnings (H)
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
 				}),
 				q(60346, {	-- What's Your Specialty? (Druid)
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
 					["races"] = HORDE_ONLY,
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
 					["classes"] = { DRUID },
 				}),
 				q(60347, {	-- What's Your Specialty? (Hunter)
@@ -2276,9 +2258,6 @@ _.Zones =
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
 					["races"] = HORDE_ONLY,
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
 					["classes"] = { HUNTER },
 				}),
 				q(60348, {	-- What's Your Specialty? (Mage)
@@ -2286,9 +2265,6 @@ _.Zones =
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
 					["races"] = HORDE_ONLY,
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
 					["classes"] = { MAGE },
 				}),
 				q(60349, {	-- What's Your Specialty? (Monk)
@@ -2296,9 +2272,6 @@ _.Zones =
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
 					["races"] = HORDE_ONLY,
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
 					["classes"] = { MONK },
 				}),
 				q(60350, {	-- What's Your Specialty? (Paladin)
@@ -2306,9 +2279,6 @@ _.Zones =
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
 					["races"] = HORDE_ONLY,
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
 					["classes"] = { PALADIN },
 				}),
 				q(60351, {	-- What's Your Specialty? (Priest)
@@ -2316,9 +2286,6 @@ _.Zones =
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
 					["races"] = HORDE_ONLY,
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
 					["classes"] = { PRIEST },
 				}),
 				q(60352, {	-- What's Your Specialty? (Rogue)
@@ -2326,9 +2293,6 @@ _.Zones =
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
 					["races"] = HORDE_ONLY,
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
 					["classes"] = { ROGUE },
 				}),
 				q(60353, {	-- What's Your Specialty? (Shaman)
@@ -2336,9 +2300,6 @@ _.Zones =
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
 					["races"] = HORDE_ONLY,
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
 					["classes"] = { SHAMAN },
 				}),
 				q(60355, {	-- What's Your Specialty? (Warlock)
@@ -2346,9 +2307,6 @@ _.Zones =
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
 					["races"] = HORDE_ONLY,
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
 					["classes"] = { WARLOCK },
 				}),
 				q(60357, {	-- What's Your Specialty? (Warrior)
@@ -2356,9 +2314,6 @@ _.Zones =
 					["coord"] = { 61.5, 33.0, 85 },
 					["sourceQuest"] = 60345,	-- License to Ride
 					["races"] = HORDE_ONLY,
-					["altQuests"] = {
-						62808,	-- 120 character prior to 9.0
-					},
 					["classes"] = { WARRIOR },
 				}),
 				q(26324, {	-- Where Is My Warfleet?
