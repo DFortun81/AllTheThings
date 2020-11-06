@@ -862,17 +862,17 @@ local function GetNumberWithZeros(number, desiredLength)
 	end
 end
 local function GetProgressTextDefault(progress, total)
-	return tostring(progress) .. " / " .. tostring(total);
+	return tostring(progress or 0) .. " / " .. tostring(total);
 end
 local function GetProgressTextRemaining(progress, total)
-	return tostring(total - progress);
+	return tostring((total or 0) - (progress or 0));
 end
 local function GetProgressColor(p)
 	return progress_colors[p];
 end
 local function GetProgressColorText(progress, total)
 	if total and total > 0 then
-		local percent = progress / total;
+		local percent = (progress or 0) / total;
         return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%)|r";
 	end
 end
@@ -2297,10 +2297,10 @@ end)();
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	local total = 0;
 	local progress = 0;
-	local isDebug = app.Settings:Get("DebugMode");
-	local showComGrps = isDebug or app.Settings:Get("Show:CompletedGroups");
-	local showComThgs = isDebug or app.Settings:Get("Show:CollectedThings");
-	local showTrakThgs = isDebug or app.Settings:Get("Show:IncompleteThings");
+	-- local isDebug = app.Settings:Get("DebugMode");
+	-- local showComGrps = isDebug or app.Settings:Get("Show:CompletedGroups");
+	-- local showComThgs = isDebug or app.Settings:Get("Show:CollectedThings");
+	-- local showTrakThgs = isDebug or app.Settings:Get("Show:IncompleteThings");
 	for i,group in ipairs(groups) do
 		-- print(group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
 		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
@@ -2310,15 +2310,15 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 			if group.total and (group.collectible and group.total > 1 or group.total > 0) then
 				total = total + group.total;
 				progress = progress + (group.progress or 0);
-				if showComGrps or (group.progress / group.total) < 1 then
+				if app.GroupVisibilityFilter(group) then
 					right = GetProgressColorText(group.progress, group.total);
 				-- the group itself may be a trackable thing
 				elseif group.trackable then
 					if group.saved then
-						if showComThgs then
+						if app.CollectedItemVisibilityFilter(group) then
 							right = L["COMPLETE_ICON"];
 						end
-					elseif showTrakThgs then
+					elseif app.ShowIncompleteThings(group) then
 						right = L["INCOMPLETE_ICON"];
 					end
 				elseif group.visible then
@@ -2329,7 +2329,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					total = total + 1;
 					if group.collected then
 						progress = progress + 1;
-						if showComThgs then
+						if app.GroupVisibilityFilter(group) then
 							right = GetCollectionIcon(group.collected);
 						end
 					else
@@ -2337,10 +2337,10 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					end
 				elseif group.trackable then
 					if group.saved then
-						if showComThgs then
+						if app.CollectedItemVisibilityFilter(group) then
 							right = L["COMPLETE_ICON"];
 						end
-					elseif showTrakThgs then
+					elseif app.ShowIncompleteThings(group) then
 						right = L["INCOMPLETE_ICON"];
 					end
 				elseif group.visible then
@@ -3080,7 +3080,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 			
 			-- Append any crafted things using this group
-			app.BuildCrafted(group, 3);
+			app.BuildCrafted(group, 10);
 			
 			group.total = 0;
 			group.progress = 0;
@@ -3212,7 +3212,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 end
 -- Appends sub-groups into the item group based on what the item is used to craft, following only as deep as the provided recurDepth
-app.BuildCrafted = function(item, recurDepth)
+app.BuildCrafted = function(item, recurDepth, includedItems)
 	local itemID = item.itemID;
 	if not itemID or recurDepth < 1 then return; end
 	-- if recurSet and contains(recurSet,itemID) then print("stop recur",itemID); return; end
@@ -3273,53 +3273,210 @@ app.BuildCrafted = function(item, recurDepth)
 					end
 				end
 			end
+			
+			-- check if the item is BoP and needs skill filtering for current character, or debug mode
+			local filterSkill = not app.Settings:Get("DebugMode") and item.b and item.b == 1 or select(14, GetItemInfo(itemID)) == 1;
+			-- if filterSkill then print(itemID,"filterSkill"); end
+			
+			-- print("known skills");
+			-- for k,v in pairs(app.GetTradeSkillCache()) do
+				-- print(k,v);
+			-- end
+			-- print("---");
+			local clone;
+			if filterSkill then
+				-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
+				local knownSkills = app.GetTradeSkillCache();
+				-- If the reagent itself is BOP, then only show things you can make.
+				-- find recipe(s) which creates this item
+				for recipeID,info in pairs(reagentCache[1]) do
+					local craftedItemID = info[1];
+					-- print(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID);
+					clone = nil;
+					-- print("recipeID",recipeID);
+					local searchRecipes = app.SearchForField("spellID", recipeID);
+					if searchRecipes and #searchRecipes > 0 then
+						local recipe = searchRecipes[1];
+						local skillID = GetRelativeValue(recipe, "skillID");
+						-- print(recipeID,"requires",skillID);
+						
+						-- ensure this character can craft the recipe
+						if skillID then
+							if knownSkills and knownSkills[skillID] then
+								if not includedItems or not contains(includedItems, craftedItemID) then
+									-- find a reference to the item in the DB and add it to the group
+									local searchItems = app.SearchForField("itemID", craftedItemID);
+									if searchItems and #searchItems > 0 then
+										clone = CloneData(searchItems[1]);
+									else
+										clone = app.CreateItem(craftedItemID);
+									end
+								end
+							end
+						else
+						-- recipe without any skill requirement? weird...
+							if not includedItems or not contains(includedItems, craftedItemID) then
+								-- find a reference to the item in the DB and add it to the group
+								local searchItems = app.SearchForField("itemID", craftedItemID);
+								if searchItems and #searchItems > 0 then
+									clone = CloneData(searchItems[1]);
+								else
+									clone = app.CreateItem(craftedItemID);
+								end
+							end
+						end
+					end
+					if clone then
+						-- use the crafting count as the total/progress
+						-- clone.matCount = count;-- * (item.matCount or 1);
+						-- clone.total = clone.collectible and clone.matCount;
+						-- clone.progress = clone.collectible and clone.collected and clone.matCount;
+						
+						if not item.g then item.g = {}; end
+						-- print("craftedItem");
+						-- for k,v in pairs(clone) do
+							-- print(k,v);
+						-- end
+						-- print("---");
+						MergeObject(item.g, clone);
+						
+						-- track the added craftedItemID
+						if not includedItems then includedItems = { craftedItemID };
+						else tinsert(includedItems, craftedItemID); end
+					end
+				end				
+			else
+				-- Can otherwise simply iterate over the set of crafted items and add them
+				for craftedItemID,count in pairs(reagentCache[2]) do
+					-- print(itemID,"x",count,"=>",craftedItemID);
+					clone = nil;
+					if not includedItems or not contains(includedItems, craftedItemID) then
+						-- find a reference to the item in the DB and add it to the group
+						local searchItems = app.SearchForField("itemID", craftedItemID);
+						if searchItems and #searchItems > 0 then
+							clone = CloneData(searchItems[1]);
+						else
+							clone = app.CreateItem(craftedItemID);
+						end
+					end
+					if clone then
+						-- use the crafting count as the total/progress
+						-- clone.matCount = count;-- * (item.matCount or 1);
+						-- clone.total = clone.collectible and clone.matCount;
+						-- clone.progress = clone.collectible and clone.collected and clone.matCount;
+						
+						if not item.g then item.g = {}; end
+						-- print("added",clone.itemID,item.matCount,clone.matCount,clone.total,clone.progress);
+						MergeObject(item.g, clone);
+						
+						-- track the added craftedItemID
+						if not includedItems then includedItems = { craftedItemID };
+						else tinsert(includedItems, craftedItemID); end
+					end
+				end
+			end
 		
 			-- Check each crafted item and add it to the list
-			for id,count in pairs(reagentCache[2]) do
-				-- print(itemID,"x",reagentCache[2][id],"=>",id,"via",#reagentCache[1],"recipes");
-				-- find a reference to the item in the DB and add it to the group
-				local searchItems = app.SearchForField("itemID", id);
-				if not item.g then item.g = {}; end
-				if searchItems and #searchItems > 0 then
-					MergeObject(item.g, CloneData(searchItems[1]));
-				else
-					MergeObject(item.g, app.CreateItem(id));
-				end
-				
-				-- If the reagent itself is BOP, then only show things you can make.
-				-- TODO: figure out this logic to limit the Contains to what is actually craftable for BoP materials
-				-- find recipe(s) which creates this item
-				-- for recipeID,count in pairs(reagentCache[1]) do
-					-- local searchRecipes = app.SearchForField("recipeID", reagentCache[1][recipeID]);
-					-- if searchRecipes and #searchRecipes > 0 then
-						-- -- for i,o in ipairs(searchResults) do
-						-- if not group then group = {}; end
-						-- -- get the skillID of the recipe which uses this itemID
-						-- local skillID = GetRelativeValue(searchRecipes[1], "skillID");
-						-- print("skillID",skillID,skillID and app.GetTradeSkillCache()[skillID]);
-						-- -- not tied to a skill, or is a skill current character knows
-						-- -- if not skillID or app.GetTradeSkillCache()[skillID] then
-							-- -- -- find a reference to the item in the DB
-							-- -- local searchItems = app.SearchForField("itemID", id);
-							-- -- if searchItems and #searchItems > 0 then
-								-- -- -- tinsert(group, CloneData(searchItems[1]));
-							-- -- else
-								-- -- -- tinsert(group, app.CreateItem(id));
-							-- -- end
-						-- -- end
-						-- -- end
-					-- else
-						-- -- item created from recipe which is not referenced in DB, add it to the list regardless
-						-- if not group then group = {}; end
-						-- -- find a reference to the item in the DB
-						-- -- local searchItems = app.SearchForField("itemID", id);
-						-- -- if searchItems and #searchItems > 0 then								
-							-- -- -- tinsert(group, CloneData(searchItems[1]));
-						-- -- else
-							-- -- print("non-referenced",id);
-							-- -- -- tinsert(group, app.CreateItem(id));
-						-- -- end
+			-- for craftedItemID,count in pairs(reagentCache[2]) do
+				-- print(itemID,"x",count,"=>",craftedItemID);
+				-- clone = nil;
+				-- if not filterSkill then
+					-- if not includedItems or not contains(includedItems, craftedItemID) then
+						-- -- find a reference to the item in the DB and add it to the group
+						-- local searchItems = app.SearchForField("itemID", craftedItemID);
+						-- if searchItems and #searchItems > 0 then
+							-- clone = CloneData(searchItems[1]);
+						-- else
+							-- clone = app.CreateItem(craftedItemID);
+						-- end
 					-- end
+				-- else
+					-- -- If the reagent itself is BOP, then only show things you can make.
+					-- -- find recipe(s) which creates this item
+					-- for recipeID,info in pairs(reagentCache[1]) do
+						-- -- print("recipeID",recipeID);
+						-- local searchRecipes = app.SearchForField("spellID", recipeID);
+						-- if searchRecipes and #searchRecipes > 0 then
+							-- local recipe = searchRecipes[1];
+							-- local skillID = GetRelativeValue(recipe, "skillID");
+							-- print(recipeID,"requires",recipe.requireSkill, skillID);
+							
+							-- -- ensure this character can craft the recipe
+							-- if skillID then
+								-- if knownSkills and knownSkills[skillID] then
+									-- if not includedItems or not contains(includedItems, id) then
+										-- print("nest",recipeID,">",id);
+										-- clone = CloneData(recipe);
+										-- -- find a reference to the item in the DB and add it to the group
+										-- local searchItems = app.SearchForField("itemID", id);
+										-- if searchItems and #searchItems > 0 then
+											-- clone.g = { CloneData(searchItems[1]) };
+										-- else
+											-- clone.g = { app.CreateItem(id) };
+										-- end
+									-- end
+								-- end
+							-- else
+								-- if not includedItems or not contains(includedItems, id) then
+									-- -- find a reference to the item in the DB and add it to the group
+									-- local searchItems = app.SearchForField("itemID", id);
+									-- if searchItems and #searchItems > 0 then
+										-- clone = CloneData(searchItems[1]);
+									-- else
+										-- clone = app.CreateItem(id);
+									-- end
+								-- end
+							-- end
+					
+							-- -- print("recipe/spell:");
+								-- -- for k,v in pairs(recipe) do
+									-- -- print(k,v);
+								-- -- end
+							-- -- print("--");
+							-- -- -- for i,o in ipairs(searchResults) do
+							-- -- if not group then group = {}; end
+							-- -- -- get the skillID of the recipe which uses this itemID
+							-- -- local skillID = GetRelativeValue(searchRecipes[1], "skillID");
+							-- -- print("skillID",skillID,skillID and app.GetTradeSkillCache()[skillID]);
+							-- -- -- not tied to a skill, or is a skill current character knows
+							-- -- -- if not skillID or app.GetTradeSkillCache()[skillID] then
+								-- -- -- -- find a reference to the item in the DB
+								-- -- -- local searchItems = app.SearchForField("itemID", id);
+								-- -- -- if searchItems and #searchItems > 0 then
+									-- -- -- -- tinsert(group, CloneData(searchItems[1]));
+								-- -- -- else
+									-- -- -- -- tinsert(group, app.CreateItem(id));
+								-- -- -- end
+							-- -- -- end
+							-- -- -- end
+						-- -- else
+							-- -- -- item created from recipe which is not referenced in DB, add it to the list regardless
+							-- -- if not group then group = {}; end
+							-- -- -- find a reference to the item in the DB
+							-- -- -- local searchItems = app.SearchForField("itemID", id);
+							-- -- -- if searchItems and #searchItems > 0 then								
+								-- -- -- -- tinsert(group, CloneData(searchItems[1]));
+							-- -- -- else
+								-- -- -- print("non-referenced",id);
+								-- -- -- -- tinsert(group, app.CreateItem(id));
+							-- -- -- end
+						-- end
+					-- end
+				-- end
+				
+				-- if clone then
+					-- -- use the crafting count as the total/progress
+					-- -- clone.matCount = count;-- * (item.matCount or 1);
+					-- -- clone.total = clone.collectible and clone.matCount;
+					-- -- clone.progress = clone.collectible and clone.collected and clone.matCount;
+					
+					-- if not item.g then item.g = {}; end
+					-- print("added",clone.itemID,item.matCount,clone.matCount,clone.total,clone.progress);
+					-- MergeObject(item.g, clone);
+					
+					-- -- track the added id
+					-- if not includedItems then includedItems = { id };
+					-- else tinsert(includedItems, id); end
 				-- end
 			end
 		-- else
@@ -3336,12 +3493,11 @@ app.BuildCrafted = function(item, recurDepth)
 			-- end
 		-- end
 		
-			-- Recursively check each crafted item for sub-sequent crafted items...
-			if item.g then
-				for i,subItem in ipairs(item.g) do
-					app.BuildCrafted(subItem, recurDepth - 1);
-				end
-			end
+	-- Recursively check each crafted item for sub-sequent crafted items...
+	if item.g then
+		for i,subItem in ipairs(item.g) do
+			app.BuildCrafted(subItem, recurDepth - 1, includedItems);
+		end
 	end
 end
 local function SendGroupMessage(msg)
@@ -8227,7 +8383,7 @@ function app.FilterGroupsByLevel(group)
 	return true;
 end
 function app.FilterGroupsByCompletion(group)
-	return group.progress < group.total;
+	return group.total and (group.progress or 0) < group.total;
 end
 function app.FilterItemBind(item)
 	return item.b == 2 or item.b == 3; -- BoE
@@ -8711,12 +8867,12 @@ UpdateGroup = function(parent, group, defaultVisibility)
 			-- If this item is collectible, then mark it as such.
 			if group.collectible then
 				-- An item is a special case where it may have both an appearance and a set of items
-				group.progress = group.collected and 1 or 0;
-				group.total = 1;
+				group.progress = group.collected and (group.matCount or 1) or 0;
+				group.total = group.matCount or 1;
 			elseif group.s and group.s < 1 then
 				-- This item is missing its source ID. :(
 				group.progress = 0;
-				group.total = 1;
+				group.total = group.matCount or 1;
 			else
 				-- Default to 0 for both
 				group.progress = 0;
@@ -8729,6 +8885,7 @@ UpdateGroup = function(parent, group, defaultVisibility)
 				-- Update the subgroups recursively...
 				UpdateGroups(group, group.g, defaultVisibility);
 				
+				-- Special case for crafting material lists!
 				-- Increment the parent group's totals.
 				parent.total = (parent.total or 0) + group.total;
 				parent.progress = (parent.progress or 0) + group.progress;
@@ -8757,12 +8914,12 @@ UpdateGroup = function(parent, group, defaultVisibility)
 			if app.GroupFilter(group) then
 				if group.collectible then
 					-- Increment the parent group's totals.
-					parent.total = (parent.total or 0) + 1;
+					parent.total = (parent.total or 0) + (group.total or group.matCount or 1);
 					
 					-- If we've collected the item, use the "Show Collected Items" filter.
 					if group.collected then
 						group.visible = app.CollectedItemVisibilityFilter(group);
-						parent.progress = (parent.progress or 0) + 1;
+						parent.progress = (parent.progress or 0) + (group.progress or group.matCount or 1);
 					else
 						group.visible = true;
 					end
@@ -13763,10 +13920,11 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							-- print(spellRecipeInfo.recipeID, itemID, "=",reagentCount,">", craftedItemID);
 							
 							-- Make sure a cache table exists for this item.
-							-- Index 1: The Recipe Skill IDs
+							-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
 							-- Index 2: The Crafted Item IDs
+							-- TODO: potentially re-design this structure
 							if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
-							reagentCache[itemID][1][spellRecipeInfo.recipeID] = reagentCount;
+							reagentCache[itemID][1][spellRecipeInfo.recipeID] = { craftedItemID, reagentCount };
 							if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
 						end
 					end
@@ -15923,8 +16081,14 @@ app.events.VARIABLES_LOADED = function()
 	-- Attempt to register for the addon message prefix.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
 	
-	local reagentCache = app.GetDataMember("Reagents");
+	local reagentCache = app.GetDataMember("Reagents", {});
+	-- verify that reagent cache is of the correct format by checking a special key
+	if not reagentCache[-1] or reagentCache[-1] < 2 then
+		C_Timer.After(20, function() app.print("Reagent Cache is out-of-date and will be re-cached when opening your professions!"); end);
+		wipe(reagentCache);
+	end
 	if reagentCache then
+		reagentCache[-1] = 2;
 		local craftedItem = { {}, {[31890] = 1} };	-- Blessings Deck
 		for i,itemID in ipairs({ 31882, 31889, 31888, 31885, 31884, 31887, 31886, 31883 }) do reagentCache[itemID] = craftedItem; end
 		craftedItem = { {}, {[31907] = 1} };	-- Furies Deck

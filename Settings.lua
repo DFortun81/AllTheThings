@@ -522,6 +522,9 @@ settings.UpdateMode = function(self, doRefresh)
 			app.ShowIncompleteThings = app.Filter;
 		end
 		
+		self.CacheCompletedGroups = self:Get("Show:CompletedGroups");
+		self.CacheCollectedThings = self:Get("Show:CollectedThings");
+		
 		app.AccountWideAchievements = self:Get("AccountWide:Achievements");
 		app.AccountWideAzeriteEssences = self:Get("AccountWide:AzeriteEssences");
 		app.AccountWideBattlePets = self:Get("AccountWide:BattlePets");
