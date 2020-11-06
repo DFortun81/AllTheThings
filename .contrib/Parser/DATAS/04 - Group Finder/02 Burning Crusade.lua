@@ -6,38 +6,34 @@ _.GroupFinder =
 {
 	tier(2, {	-- Burning Crusade
 		i(156682, {	-- Otherworldy Satchel of Helpful Goods
-			["lvl"] = 60,
-			-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 10-50 range.|r",
-			["g"] = {
-				i(51969),	-- Enumerated Shoulders*
-				i(51972),	-- Enumerated Bracers*
-				i(51970),	-- Enumerated Gloves*
-				i(51971),	-- Enumerated Belt*
-				i(51967),	-- Enumerated Sandals*
-				i(51961),	-- Vigorous Shoulderguards
-				i(51959),	-- Vigorous Belt*
-				i(51962),	-- Vigorous Bracers*
-				i(51960),	-- Vigorous Gloves [User confirmed; haven't seen]
-				i(51963),	-- Vigorous Stompers*		— 4/6/19, previously confirmed in Classic satchel - may have moved or be in both
-				i(51975),	-- Earthbound Shoulders
-				i(51981),	-- Earthbound Wristguards*
-				i(51979),	-- Earthbound Grips [User confirmed; haven't seen]
-				i(51977),	-- Earthbound Girdle*
-				i(51983),	-- Stalwart Shoulderguards*	— 4/13/19
-				i(51989),	-- Stalwart Bands*			— 4/12/19
-				i(51987),	-- Stalwart Grips*			— 4/13/19
-				i(51985),	-- Stalwart Belt*			— 4/12/19
-				i(51990),	-- Stalwart Treads*			— 4/13/19
-				i(51993),	-- Turbulent Cloak*
-				i(160599),	-- Turbulent Cloak*
-				i(160600),	-- Turbulent Cloak (screenshot from Emsarrev on Discord)
-				i(51995),	-- Turbulent Necklace*
-				i(160609),	-- Turbulent Necklace
-				i(160610),	-- Turbulent Necklace*		— 4/12/19
-				i(51991),	-- Turbulent Signet*
-				i(160605),	-- Turbulent Signet*
-				i(160606),	-- Turbulent Signet*		— 4/11/19
-			},
+			i(51969),	-- Enumerated Shoulders*
+			i(51972),	-- Enumerated Bracers*
+			i(51970),	-- Enumerated Gloves*
+			i(51971),	-- Enumerated Belt*
+			i(51967),	-- Enumerated Sandals*
+			i(51961),	-- Vigorous Shoulderguards
+			i(51959),	-- Vigorous Belt*
+			i(51962),	-- Vigorous Bracers*
+			i(51960),	-- Vigorous Gloves [User confirmed; haven't seen]
+			i(51963),	-- Vigorous Stompers*		— 4/6/19, previously confirmed in Classic satchel - may have moved or be in both
+			i(51975),	-- Earthbound Shoulders
+			i(51981),	-- Earthbound Wristguards*
+			i(51979),	-- Earthbound Grips [User confirmed; haven't seen]
+			i(51977),	-- Earthbound Girdle*
+			i(51983),	-- Stalwart Shoulderguards*	— 4/13/19
+			i(51989),	-- Stalwart Bands*			— 4/12/19
+			i(51987),	-- Stalwart Grips*			— 4/13/19
+			i(51985),	-- Stalwart Belt*			— 4/12/19
+			i(51990),	-- Stalwart Treads*			— 4/13/19
+			i(51993),	-- Turbulent Cloak*
+			i(160599),	-- Turbulent Cloak*
+			i(160600),	-- Turbulent Cloak (screenshot from Emsarrev on Discord)
+			i(51995),	-- Turbulent Necklace*
+			i(160609),	-- Turbulent Necklace
+			i(160610),	-- Turbulent Necklace*		— 4/12/19
+			i(51991),	-- Turbulent Signet*
+			i(160605),	-- Turbulent Signet*
+			i(160606),	-- Turbulent Signet*		— 4/11/19
 		}),
 		i(52004, {	-- Satchel of Helpful Goods 60-64
 			["u"] = REMOVED_FROM_GAME,

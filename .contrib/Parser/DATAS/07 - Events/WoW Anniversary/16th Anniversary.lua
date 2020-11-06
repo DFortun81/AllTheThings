@@ -6,7 +6,7 @@ _.WorldEvents =
 {
 	n(-5365, {	-- 16th Anniversary
 		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
-		["maps"] = { 
+		["maps"] = {
 			74,	-- Caverns of Time, Timeless Tunnel
 			75,	-- Caverns of Time, bottom floor
 		},

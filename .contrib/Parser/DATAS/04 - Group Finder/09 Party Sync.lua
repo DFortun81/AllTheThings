@@ -5,7 +5,7 @@
 _.GroupFinder =
 {
 	n(-10, {	-- Party Sync
-	--	["description"] = "",	-- TODO: Add a description here about how to get rewards when we figure it out!
+		--["description"] = "",	-- TODO: Add a description here about how to get rewards when we figure it out!
 		["g"] = {
 			i(171305, {	-- Salvaged Cache of Goods
 				cl(DEATHKNIGHT,  {

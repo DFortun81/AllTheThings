@@ -5,8 +5,7 @@
 _.GroupFinder =
 {
 	tier(4, {	-- Cataclysm
-		i(156689, {	-- Scorched Satchel of Helpful Goods (10 - 50)
-			["lvl"] = 80,
+		i(156689, {	-- Scorched Satchel of Helpful Goods (30 - 50)
 			["description"] = "|cff66ccffBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			["g"] = {
 				i(113760),	-- Smoldercloth Bracers*
