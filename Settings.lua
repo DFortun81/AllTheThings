@@ -199,6 +199,9 @@ settings.Initialize = function(self)
 	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase);
 	FilterSettingsBase.__index = app.Presets[app.Class] or app.Presets.ALL;
 	
+	self.CacheCompletedGroups = self:Get("Show:CompletedGroups");
+	self.CacheCollectedThings = self:Get("Show:CollectedThings");
+	
 	self.ContainsSlider:SetValue(self:GetTooltipSetting("ContainsCount") or 25);
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations") or 5);
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
@@ -522,9 +525,6 @@ settings.UpdateMode = function(self, doRefresh)
 			app.ShowIncompleteThings = app.Filter;
 		end
 		
-		self.CacheCompletedGroups = self:Get("Show:CompletedGroups");
-		self.CacheCollectedThings = self:Get("Show:CollectedThings");
-		
 		app.AccountWideAchievements = self:Get("AccountWide:Achievements");
 		app.AccountWideAzeriteEssences = self:Get("AccountWide:AzeriteEssences");
 		app.AccountWideBattlePets = self:Get("AccountWide:BattlePets");
@@ -692,6 +692,9 @@ end,
 function(self)
 	settings:SetDebugMode(self:GetChecked());
 	if self:GetChecked() then
+		-- cache the current settings to re-apply after
+		settings.CacheCompletedGroups = settings:Get("Show:CompletedGroups");
+		settings.CacheCollectedThings = settings:Get("Show:CollectedThings");
 		settings:SetCompletedGroups(true);
 		settings:SetCollectedThings(true);
 	else
@@ -1461,7 +1464,6 @@ function(self)
 end,
 function(self)
 	settings:SetCompletedGroups(self:GetChecked());
-	settings.CacheCompletedGroups = self:GetChecked();
 	settings:UpdateMode(1);
 end);
 ShowCompletedGroupsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
@@ -1473,7 +1475,6 @@ function(self)
 end,
 function(self)
 	settings:SetCollectedThings(self:GetChecked());
-	settings.CacheCollectedThings = self:GetChecked();
 	settings:UpdateMode(1);
 end);
 ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
