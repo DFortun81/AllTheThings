@@ -126,8 +126,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(25946),	-- Nethershade Boots
 						i(27822),	-- Crystal Band of Valor
 					})),
-					i(32092, {	-- The Eye of Haramad
-						cr(22927, e(536, {	-- Yor
+					cr(22927, e(536, {	-- Yor
+						["cost"] = { { "i", 32092, 1 } },	-- The Eye of Haramad
+						["g"] = {
 							i(31570),	-- Mistshroud Tunic
 							i(31562),	-- Skystalker's Tunic
 							i(31554),	-- Slatesteel Breastplate
@@ -138,8 +139,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(31920),	-- Shaffar's Band of Brutality
 							i(31921),	-- Yor's Collapsing Band
 							i(31924),	-- Yor's Revenge
-						})),
-					}),
+						},
+					})),
 					cr(18344, e(537, {		-- Nexus-Prince Shaffar
 						ach(671),	-- Heroic: Mana-Tombs
 						i(22921),	-- Recipe: Major Frost Protection Potion
@@ -199,8 +200,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(127222),	-- Nethershade Boots
 						i(127239),	-- Crystal Band of Valor
 					})),
-					i(32092, {	-- The Eye of Haramad
-						cr(22930, e(536, {	-- Yor
+					cr(22930, e(536, {	-- Yor
+						["cost"] = { { "i", 32092, 1 } },	-- The Eye of Haramad
+						["g"] = {
 							i(127422),	-- Mistshroud Tunic
 							i(127421),	-- Skystalker's Tunic
 							i(127423),	-- Slatesteel Breastplate
@@ -212,8 +214,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(127425),	-- Shaffar's Band of Brutality
 							i(127426),	-- Yor's Collapsing Band
 							i(127429),	-- Yor's Revenge
-						}))
-					}),
+						},
+					})),
 					cr(18344, e(537, {		-- Nexus-Prince Shaffar
 						i(127246),	-- Axe of the Nexus-Kings
 						i(127251),	-- Grand Scepter of the Nexus-Kings

@@ -1472,6 +1472,24 @@ local function CreateHash(t)
 	if key then
 		local hash = key .. (rawget(t, key) or t[key]);
 		if key == "criteriaID" and t.achievementID then hash = hash .. ":" .. t.achievementID; end
+		if key == "creatureID" then
+			if t.encounterID then hash = hash .. ":" .. t.encounterID; end
+			if t.difficultyID then hash = hash .. "-" .. t.difficultyID; end
+		end
+		if key == "encounterID" then
+			if t.creatureID or t.npcID then hash = hash .. ":" .. (t.creatureID or t.npcID); end
+			if t.difficultyID then hash = hash .. "-" .. t.difficultyID; end
+			if t.crs then
+				local numCrs = #t.crs;
+				if numCrs == 1 then
+					hash = hash .. t.crs[1];
+				elseif numCrs == 2 then
+					hash = hash .. t.crs[1] .. t.crs[2];
+				elseif numCrs > 2 then
+					hash = hash .. t.crs[1] .. t.crs[2] .. t.crs[3];
+				end
+			end
+		end
 		rawset(t, "hash", hash);
 		return hash;
 	end
@@ -2287,24 +2305,12 @@ ResolveSymbolicLink = function(o)
 	end
 end
 end)();
--- local function RecurseGroupParent(group)
-	-- if not group.parent then
-		-- return "ATT";
-	-- else
-		-- return RecurseGroupParent(group.parent) .. "->" .. (group.key .. ":" .. group[group.key]);
-	-- end
--- end
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	local total = 0;
 	local progress = 0;
-	-- local isDebug = app.Settings:Get("DebugMode");
-	-- local showComGrps = isDebug or app.Settings:Get("Show:CompletedGroups");
-	-- local showComThgs = isDebug or app.Settings:Get("Show:CollectedThings");
-	-- local showTrakThgs = isDebug or app.Settings:Get("Show:IncompleteThings");
 	for i,group in ipairs(groups) do
-		-- print(group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
+		-- print(group.hash,group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
 		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
-		-- TODO: stop filtering if reaching a non-filtered group which is an actual in-game thing (i.e. BoE Item/NPC,object,quest...)
 		if app.RecursiveGroupRequirementsFilter(group) then
 			local right = nil;
 			if group.total and (group.collectible and group.total > 1 or group.total > 0) then
@@ -2404,6 +2410,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if not group then group = {}; end
 		if a then paramA = a; end
 		if b then paramB = b; end
+		-- print("Raw Search",#group);
 		
 		-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 		if paramA == "creatureID" or paramA == "encounterID" then
@@ -2803,108 +2810,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 				
-				-- merge items which this item can craft into the search results
-				-- local crafted = app.BuildCrafted(itemID);
-				-- if crafted then
-					-- MergeObjects(group, crafted);
-				-- end
-				
-				-- local reagentCache = app.GetDataSubMember("Reagents", itemID);
-				-- if reagentCache then
-					-- --[[
-					-- -- Get the recipes using this item
-					-- for recipeID,count in pairs(reagentCache[1]) do
-						-- print("RecipeID",recipeID);
-						-- local searchResults = app.SearchForField("spellID", recipeID);
-						-- if searchResults then
-							-- for i,o in ipairs(searchResults) do
-								-- if not contains(group, o) then
-									-- if type(o) == "table" then
-										-- for k,v in pairs(o) do
-											-- print(k,v);
-										-- end
-									-- else
-										-- print(o)
-									-- end
-									-- tinsert(group, o);
-								-- end
-							-- end
-						-- end
-					-- end
-					-- --]]--
-					-- -- print("has reagents");
-					-- print("Reagent ItemInfo",GetItemInfo(itemID));
-					-- -- if select(14, GetItemInfo(itemID)) == 1 then
-						-- if not app.AppliedSkillIDToNPCIDs then
-							-- app.AppliedSkillIDToNPCIDs = true;
-							-- local skillIDMap = {
-								-- [-178] = 20222, 										-- Goblin Engineering
-								-- [-179] = 20219, 										-- Gnomish Engineering
-								-- [-180] = 171,				 							-- Alchemy
-								-- [-181] = 164,				 							-- Blacksmithing
-								-- [-182] = 333,				 							-- Enchanting
-								-- [-183] = 202,				 							-- Engineering
-								-- [-184] = 182,				 							-- Herbalism
-								-- [-185] = 773,				 							-- Inscription
-								-- [-186] = 755,				 							-- Jewelcrafting
-								-- [-187] = 165,				 							-- Leatherworking
-								-- [-188] = 186,				 							-- Mining
-								-- [-189] = 393,				 							-- Skinning
-								-- [-190] = 197,				 							-- Tailoring
-								-- [-191] = 794, 										-- Archaeology
-								-- [-192] = 185, 											-- Cooking
-								-- [-193] = 129, 										-- First Aid
-								-- [-194] = 356, 											-- Fishing
-							-- };
-							-- for npcID,skillID in pairs(skillIDMap) do
-								-- local searchResults = app.SearchForField("creatureID", npcID);
-								-- if searchResults then
-									-- for i,o in ipairs(searchResults) do
-										-- o.skillID = skillID;
-									-- end
-								-- end
-							-- end
-						-- end
-					
-						-- -- If the reagent itself is BOP, then only show things you can make.
-						-- for itemID,count in pairs(reagentCache[2]) do
-							-- print("x",reagentCache[2][itemID],"=>",itemID);
-							-- local searchResults = app.SearchForField("itemID", itemID);
-							-- if searchResults then
-								-- print("found",#searchResults);
-								-- for i,o in ipairs(searchResults) do
-									-- if not contains(group, o) then
-										-- local skillID = GetRelativeValue(o, "skillID");
-										-- print("skillID",skillID,skillID and app.GetTradeSkillCache()[skillID]);
-										-- if not skillID or app.GetTradeSkillCache()[skillID] then
-											-- tinsert(group, o);
-										-- end
-									-- end
-								-- end
-							-- -- item not referenced in DB, only show in debug
-							-- elseif  app.Settings:Get("DebugMode") then
-								-- local o = app.CreateItem(itemID);
-								-- if not contains(group, o) then
-									-- -- print("debugItem",itemID);
-									-- tinsert(group, o);
-								-- end
-							-- end
-						-- end
-					-- -- else
-						-- -- for itemID,count in pairs(reagentCache[2]) do
-							-- -- print("x",reagentCache[2][itemID],"->",itemID);
-							-- -- local searchResults = app.SearchForField("itemID", itemID);
-							-- -- if searchResults then
-								-- -- for i,o in ipairs(searchResults) do
-									-- -- if not contains(group, o) then
-										-- -- tinsert(group, o);
-									-- -- end
-								-- -- end
-							-- -- end
-						-- -- end
-					-- -- end
-				-- end
-				
 				if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
 					-- If the item is a relic, then let's compare against equipped relics.
 					local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
@@ -3010,18 +2915,20 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- First add only groups which meet the current filters
 			for i,o in ipairs(group) do
 				if app.RecursiveGroupRequirementsFilter(o) then
-					-- print("add",RecurseGroupParent(o));
 					MergeObject(merged, CreateObject(o));
+					-- print("add",o.hash);
+					-- print("total merged",#merged);
 				else
-					-- print("skip",RecurseGroupParent(o));
+					-- print("skip",o.hash);
 					tinsert(skipped, o);
 				end
 			end
 			-- then merge any skipped groups
 			for i,o in ipairs(skipped) do
-				-- print("merge",RecurseGroupParent(o));
 				MergeObject(merged, CreateObject(o));
+				-- print("merge",o.hash);
 			end
+			-- print("total merged",#merged);
 			if #merged == 1 and merged[1][paramA] == paramB then
 				group = merged[1];
 				local symbolicLink = ResolveSymbolicLink(group);
@@ -3052,27 +2959,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							end
 							o.g = symbolicLink;
 						end
-					-- elseif o.itemID then
-						-- merge items which this item can craft into the search results
-						-- local recurSet = app.RecursiveFirstParentWithField(o, "recurSet");
-						-- if recurSet then
-							-- print("recur---");
-							-- for i,id in ipairs(recurSet) do
-								-- print(i,id);
-							-- end
-							-- print("---");
-						-- end
-						-- local crafted = app.BuildCrafted(o.itemID);
-						-- if crafted and #crafted > 0 then
-							-- if not o.g then o.g = {}; end
-							-- MergeObjects(o.g, crafted);
-							-- track the itemID of the recurSet
-							-- if not recurSet then
-								-- o.recurSet = { o.itemID };
-							-- else
-								-- tinsert(recurSet, o.itemID);
-							-- end
-						-- end
 					end
 				end
 				group = CreateObject({ [paramA] = paramB });
@@ -3084,7 +2970,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			
 			group.total = 0;
 			group.progress = 0;
-			-- BuildGroups(group, group.g);
+			BuildGroups(group, group.g);
 			app.UpdateGroups(group, group.g);
 			if group.collectible then
 				group.total = group.total + 1;
@@ -3117,6 +3003,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				local entries, left, right = {};
 				collectionData = BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
+					-- print("#entries",#entries);
 					tinsert(info, { left = "Contains:" });
 					local containCount = app.Settings:GetTooltipSetting("ContainsCount") or 25;
 					if #entries < containCount + 1 then
@@ -3188,18 +3075,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		
 		-- If there was any informational text generated, then attach that info.
 		if #info > 0 then
-			local uniques, dupes = {}, {};
-			for i,item in ipairs(info) do
-				if not item.left then
-					tinsert(uniques, item);
-				elseif not dupes[item.left] then
-					dupes[item.left] = true;
-					tinsert(uniques, item);
-				end
-			end
+			-- not sure it's necessary or useful in most situations to try cleaning unqiue entries by name
+			-- local uniques, dupes = {}, {};
+			-- for i,item in ipairs(info) do
+				-- if not item.left then
+					-- tinsert(uniques, item);
+				-- elseif not dupes[item.left] then
+					-- dupes[item.left] = true;
+					-- tinsert(uniques, item);
+				-- end
+			-- end
 			
-			group.info = uniques;
-			for i,item in ipairs(uniques) do
+			group.info = info;
+			for i,item in ipairs(info) do
 				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 			end
 		end
@@ -10911,7 +10799,11 @@ RowOnEnter = function (self)
 						local legacyLoot = C_Loot.IsLegacyLootModeEnabled();
 						
 						-- Legacy Loot is simply 1 / total items chance since spec has no relevance to drops, i.e. this one item / total items in drop table
-						GameTooltip:AddDoubleLine("Loot Table Chance", GetNumberWithZeros(100 / totalItems, 2) .. "%");
+						if totalItems > 0 then
+							GameTooltip:AddDoubleLine("Loot Table Chance", GetNumberWithZeros(100 / totalItems, 2) .. "%");
+						else
+							GameTooltip:AddDoubleLine("Loot Table Chance", "N/A");
+						end
 						
 						local specs = reference.specs;
 						if specs and #specs > 0 then
@@ -10929,7 +10821,7 @@ RowOnEnter = function (self)
 									matchingSpecs[spec] = true;
 									
 									-- For Personal Loot!
-									if specHit < least then
+									if specHit > 0 and specHit < least then
 										least = specHit;
 										bestSpecID = spec;
 									end
@@ -10953,7 +10845,11 @@ RowOnEnter = function (self)
 							end
 							if bestSpecID then
 								local id, name, description, icon = GetSpecializationInfo(bestSpecID);
-								GameTooltip:AddDoubleLine("Bonus Roll", GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
+								if totalItems > 0 then
+									GameTooltip:AddDoubleLine("Bonus Roll", GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
+								else
+									GameTooltip:AddDoubleLine("Bonus Roll", "N/A");
+								end
 							end
 						end
 					end
