@@ -10721,7 +10721,10 @@ RowOnEnter = function (self)
 			end
 		end
 		if reference.crs and app.Settings:GetTooltipSetting("creatures") then
-			if app.Settings:GetTooltipSetting("creatureID") then 
+			-- extreme amounts of creatures tagged, then only list a summary of how many...
+			if #reference.crs > 25 then
+				GameTooltip:AddDoubleLine(CREATURE, "[" .. tostring(#reference.crs) .. " Creatures]");
+			elseif app.Settings:GetTooltipSetting("creatureID") then
 				for i,cr in ipairs(reference.crs) do
 					GameTooltip:AddDoubleLine(i == 1 and CREATURE or " ", tostring(cr > 0 and NPCNameFromID[cr] or "") .. " (" .. cr .. ")");
 				end
