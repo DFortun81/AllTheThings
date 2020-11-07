@@ -1710,26 +1710,31 @@ _.Zones =
 								i(122606, {	-- Explorer's Notebook
 									["cost"] = { { "i", 87399, 5 } },	-- 5x  Restored Artifact
 								}),
-								i(87533, {	-- Crate of Dwarven Archaeology Fragments
+								i(117389, {	-- Draenor Archaeologist's Lodestone
 									["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
-									["g"] = {
-										{ ["currencyID"] = 384, }	-- Dwarf Archaeology Fragment
-									},
+								}),
+								i(117390, {	-- Draenor Archaeologist's Map
+									["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
 								}),
 								i(118727, {	-- Frostfire Treasure Map
 									["questID"] = 34557,
+									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
 								i(118729, {	-- Gorgrond Treasure Map
 									["questID"] = 36465,
+									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
 								i(118732, {	-- Nagrand Treasure Map
 									["questID"] = 36468,
+									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
 								i(118731, {	-- Spires of Arak Treasure Map
 									["questID"] = 36467,
+									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
 								i(118730, {	-- Talador Treasure Map
 									["questID"] = 36466,
+									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
 							},
 						}),
