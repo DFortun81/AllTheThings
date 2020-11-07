@@ -408,7 +408,7 @@ _.HiddenQuestTriggers =
 		q(35411),	-- Zul'Gurub Reward Quest
 		q(35412),	-- Zul'Gurub Bonus Objective Reward Quest. Killing Cache of Madness
 		q(35435),	-- Well of Eternity Reward Quest
-		
+
 		-- QUESTING
 		q(28347),	-- Coffer of Promise TRACKING QUEST
 		q(25071),	-- FLAG - Purple Murloc
@@ -2592,6 +2592,7 @@ _.HiddenQuestTriggers =
 		q(56330),	-- Triggered shortly after completing "Chopped Bots". Possibly shuts down the magnet?
 		q(56660),	-- Triggered on Mechagon randomly
 		q(55260),	-- triggers when making the Volatile Blaster first time on character
+		q(55414),	-- triggers when making the Ricket's Special Delivery first time on character
 		q(56840),	-- Toys of Destruction - made the Volatile Blaster. Maybe triggers for all the toys to indicate the toy extra action button is available?
 		q(56624),	-- collected Izira Gearsworn mini for "Most Minis Wins"
 		q(56625),	-- collected Bondo Grosbloc mini for "Most Minis Wins"
