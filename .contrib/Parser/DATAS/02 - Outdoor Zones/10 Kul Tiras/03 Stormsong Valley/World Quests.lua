@@ -31,10 +31,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = { 50 },
 					}),
-					q(52299, {	-- Whiplash
-						["isWorldQuest"] = true,
-						["lvl"] = { 50 },
-					}),
 					q(52345, {	-- Work Order: Ravenberry Tarts (this quest was added to Zuldazar WQ file but I'm not sure it can spawn there)
 						["isWorldQuest"] = true,
 						["lvl"] = { 50 },
@@ -813,6 +809,10 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(52299, {	-- Whiplash
+						["isWorldQuest"] = true,
+						["lvl"] = { 50 },
 					}),
 					q(52459, {	-- Whirlwing
 						["isWorldQuest"] = true,
