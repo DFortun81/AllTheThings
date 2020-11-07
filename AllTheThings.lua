@@ -8824,7 +8824,7 @@ UpdateGroup = function(parent, group, defaultVisibility)
 				elseif group.trackable and app.ShowIncompleteThings(group) then
 					-- If this group is trackable, then we should show it.
 					group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
-					-- flag parent to set itself visible when update order falls back out since this is not a normally collectable thing
+					-- flag parent to set itself visible when update order falls back out since this is not a normally collectible thing
 					if group.visible then parent.visible = 1; end
 				else
 					-- Hide this group. We aren't filtering for it.
@@ -8851,12 +8851,12 @@ UpdateGroup = function(parent, group, defaultVisibility)
 				elseif group.trackable and app.ShowIncompleteThings(group) then
 					-- If this group is trackable, then we should show it.
 					group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
-					-- flag parent to set itself visible when update order falls back out since this is not a normally collectable thing
+					-- flag parent to set itself visible when update order falls back out since this is not a normally collectible thing
 					if group.visible then parent.visible = 1; end
 				else
 					-- Hide this group.
 					group.visible = defaultVisibility;
-					-- flag parent to set itself visible when update order falls back out since this is not a normally collectable thing
+					-- flag parent to set itself visible when update order falls back out since this is not a normally collectible thing
 					if group.visible then parent.visible = 1; end
 				end
 			else
