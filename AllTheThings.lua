@@ -945,6 +945,7 @@ local function BuildGroups(parent, g)
 		for key, group in ipairs(g) do
 			-- Set the group's parent
 			group.parent = parent;
+			-- print(key,group.key,group[group.key]);
 			
 			-- Build the groups
 			BuildGroups(group, group.g);
@@ -1623,6 +1624,7 @@ MergeObjects = function(g, g2)
 end
 MergeObject = function(g, t, index)
 	local hash = GetHash(t);
+	-- print("_",hash);
 	if hash then
 		for i,o in ipairs(g) do
 			if GetHash(o) == hash then
@@ -3388,6 +3390,37 @@ app.BuildCrafted = function(item, recurDepth, includedItems)
 		end
 	end
 end
+app.BuildCost = function(group)
+		-- Pop out the cost objects into their own sub-groups for accessibility
+		-- Gold cost currently ignored
+	if group.cost and type(group.cost) == "table" then
+		local costGroup = {
+				["text"] = "Cost",
+				["description"] = "This contains the visual breakdown of what is required to obtain or purchase this Thing",
+				["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
+				["g"] = { },
+			};
+		local costItem;
+		for i,c in ipairs(group.cost) do
+			-- print("Cost",c[1],c[2],c[3]);
+			costItem = nil;
+			if c[1] == "c" then
+				costItem = app.SearchForObjectClone("currencyID", c[2]) or app.CreateCurrencyClass(c[2]);
+			elseif c[1] == "i" then
+				costItem = app.SearchForObjectClone("itemID", c[2]) or app.CreateItem(c[2]);
+			end
+			if costItem then
+				-- costItem.total = c[3];
+				costItem.g = nil;
+				costItem.visible = true;
+				costItem.collectible = true;
+				MergeObject(costGroup.g, costItem);
+			end
+		end
+		if not group.g then group.g = {}; end
+		tinsert(group.g, 1, costGroup);
+	end
+end
 local function SendGroupMessage(msg)
 	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
 		C_ChatInfo.SendAddonMessage("ATT", msg, "INSTANCE_CHAT")
@@ -3696,6 +3729,17 @@ local function SearchForField(field, id)
 	end
 end
 app.SearchForField = SearchForField;
+-- This method performs the SearchForField logic, but then verifies that ONLY the specific matching object is returned as a Clone of the group
+app.SearchForObjectClone = function(field, id)
+	local s = SearchForField(field, id);
+	if s and #s > 0 then
+		for i=1,#s,1 do
+			if s[i].key == field and s[i][field] == id then
+				return CloneData(s[i]);
+			end
+		end
+	end
+end
 
 -- Item Information Lib
 local function SearchForRelativeItems(group, listing)
@@ -9508,15 +9552,19 @@ end
 local CreateRow;
 function app:CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
+	-- clone initially so that nothing in the popout modifies the real data
+	local group = CloneData(group);
 	local suffix = BuildSourceTextForChat(group, 0) .. " -> " .. (group.text or "") .. (group.key and group[group.key] or "");
 	local popout = app.Windows[suffix];
-	-- force data to be re-collected if this is a quest chain since it's logic is affected by settings
+	-- force data to be re-collected if this is a quest chain since its logic is affected by settings
 	if not group.s and (group.questID or group.sourceQuests) then popout = nil; end
+	-- if popping out a thing with a Cost, generate a Cost group to allow referencing the Cost things directly
+	if group.cost then app.BuildCost(group); end
 	if not popout then
 		popout = app:GetWindow(suffix);
 		popout.shouldFullRefresh = true;
 		if group.s then
-			popout.data = CloneData(group);
+			popout.data = group;
 			popout.data.collectible = true;
 			popout.data.visible = true;
 			popout.data.progress = 0;
@@ -9562,12 +9610,12 @@ function app:CreateMiniListForGroup(group)
 						["g"] = g
 					});
 				else
-					table.insert(popout.data.g, setmetatable({
+					table.insert(popout.data.g, {
 						["text"] = "Unique Appearance",
 						["description"] = "This item has a Unique Appearance. You must collect this item specifically to earn the appearance.",
 						["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
 						["collectible"] = true,
-					}, { __index = group }));
+					});
 				end
 			end
 			
@@ -9652,7 +9700,7 @@ function app:CreateMiniListForGroup(group)
 			if group.questID ~= nil and group.parent and group.parent.questID == group.questID then
 				group = group.parent;
             end
-			local root = CloneData(group);
+			local root = group;
 			root.collectible = true;
 			local g = { root };
 			
@@ -9843,7 +9891,7 @@ function app:CreateMiniListForGroup(group)
 				["hideText"] = true
 			};
 		elseif group.sym then
-			popout.data = CloneData(group);
+			popout.data = group;
 			popout.data.collectible = true;
 			popout.data.visible = true;
 			popout.data.progress = 0;
@@ -9876,7 +9924,7 @@ function app:CreateMiniListForGroup(group)
 		end
 		
 		-- Clone the data and then insert it into the Raw Data table.
-		popout.data = CloneData(popout.data);
+		-- popout.data = popout.data or group;
 		popout.data.hideText = true;
 		popout.data.visible = true;
 		popout.data.indent = 0;
