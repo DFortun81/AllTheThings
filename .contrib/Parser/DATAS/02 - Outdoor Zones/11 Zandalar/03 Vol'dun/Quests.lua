@@ -241,7 +241,7 @@ _.Zones =
 					["description"] = "Must be wearing Ashvane Garb to pick up and turn in the quest.",
 					["provider"] = { "n", 128618 },	-- Dockmaster Herrington
 					["coord"] = { 44.6, 88.2, 864 },
-					["races"] = HORDE_ONLY,
+					-- ["races"] = HORDE_ONLY,	-- via #errors 20201105-14:19
 				}),
 				q(50746, {	-- Crater Conquered
 					["sourceQuests"] = {
@@ -463,7 +463,7 @@ _.Zones =
 					["description"] = "Must be wearing Ashvane Garb to pick up and turn in the quest.",
 					["provider"] = { "n", 128618 },	-- Dockmaster Herrington
 					["coord"] = { 44.6, 88.2, 864 },
-					["races"] = HORDE_ONLY,
+					-- ["races"] = HORDE_ONLY,	-- via #errors 20201105-14:19
 				}),
 				q(50775, {	-- Get Us Some Beach
 					["sourceQuests"] = { 50834 },	-- Keep It Down! (breadcrumb)

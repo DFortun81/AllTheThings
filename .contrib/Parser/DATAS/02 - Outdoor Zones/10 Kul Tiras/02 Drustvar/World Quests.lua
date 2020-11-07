@@ -80,11 +80,6 @@ _.Zones =
 						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(50985, {	-- Work Order: Siren's Pollen
-						["isWorldQuest"] = true,
-						["lvl"] = { 50 },
-						["races"] = ALLIANCE_ONLY,
-					}),
 ]]--
 					q(53701, {	-- A Drust Cause (Faction Assault WQ)
 						["lvl"] = 110,
@@ -779,6 +774,12 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = JEWELCRAFTING,
+					}),
+					q(50985, {	-- Work Order: Siren's Pollen
+						["isWorldQuest"] = true,
+						["lvl"] = { 50 },
+						["races"] = ALLIANCE_ONLY,
+						["requireSkill"] = HERBALISM,
 					}),
 					q(50994, {	-- Work Order: Tempest Hide
 						["lvl"] = { 50 },

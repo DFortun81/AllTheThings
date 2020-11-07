@@ -1010,7 +1010,7 @@ _.Zones =
 				}),
 				q(33462, {	-- Thunderlord for a Day
 					["coord"] = { 58.3, 31.0, 525 },
-					["races"] = HORDE_ONLY,
+					-- ["races"] = HORDE_ONLY,	-- via #errors 20201104-19:22
 					["provider"] = { "o", 224306 },	-- Broken Chains
 				}),
 				q(37291, {	-- Thunderlord Invasion
