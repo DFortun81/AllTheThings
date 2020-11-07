@@ -873,6 +873,23 @@ _.Zones =
 				}),
 				
 				
+				q(30360, {	-- Warn Stoneplow (A)
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						30174,	-- For Family
+						30273,	-- In the House of the Red Crane
+						30117,	-- Stoneplow Thirsts
+						29990,	-- Training and Discipline
+					--	TODO: may also require the following quests:
+					--	29581,	-- The Golden Dream
+					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
+					},
+					["provider"] = { "n", 58821 },	-- Lyalia
+					["coord"] = { 24.7, 29.9, 418 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(30079, {	-- What's Eating Zhu's Watch?
 					["sourceQuests"] = {
 						29873,	-- Ken-Ken
@@ -1134,10 +1151,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
 				}),
-				q(32363, {	-- The Kun-Lai Expedition
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["races"] = HORDE_ONLY,
-				}),
 				q(31254, {	-- The Road to Kun-Lai
 					["sourceQuests"] = { 59559 },	-- Hero's Call: Kun-Lai Summit!
 					["provider"] = { "n", 63778 },	-- Messenger Grummle
@@ -1172,20 +1185,6 @@ _.Zones =
 				q(32223, {	-- Wanted: Lieutenant Ethan Jacobson
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-				}),
-				q(30360, {	-- Warn Stoneplow (A)
-					["isBreadcrumb"] = true,
-					["sourceQuests"] = {
-						30273,	-- In the House of the Red Crane
-						30117,	-- Stoneplow Thirsts
-						30445,	-- The Waters of Youth
-						29990,	-- Training and Discipline
-					--	TODO: may also require the following quests:
-					--	29581,	-- The Golden Dream
-					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
-					},
-					["provider"] = { "n", 58821 },	-- Lyalia
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30241, {	-- Warn Stoneplow (H)
 					["isBreadcrumb"] = true,

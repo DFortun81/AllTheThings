@@ -1351,10 +1351,6 @@ _.Zones =
 						i(88080),	-- Wallwatcher Vest
 					},
 				}),
-				q(32448, {	-- Ties with the Past
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68267 },	-- Baine Bloodhoof
-				}),
 				q(30724, {	-- To the Wall!
 					["coord"] = { 34.9, 59.3, 379 },
 					["provider"] = { "n", 61816 },	-- Lin Silentstrike

@@ -1632,13 +1632,13 @@ _.Zones =
 				}),
 				q(30622, {	-- The Swarm Begins
 					["sourceQuests"] = {
-						30174,	-- For Family
-						30273,	-- In the House of the Red Crane
-						30117,	-- Stoneplow Thirsts (is this a breadcrumb literally who can say)
-						29990,	-- Training and Discipline
 						30376,	-- Hope Springs Eternal (breadcrumb, neutral)
 						30360,	-- Warn Stoneplow (breadcrumb, A)
 						30241,	-- Warn Stoneplow (breadcrumb, H)
+						30174,	-- For Family
+						30273,	-- In the House of the Red Crane
+						30117,	-- Stoneplow Thirsts
+						29990,	-- Training and Discipline
 					},
 					["provider"] = { "n", 56720 },	-- Loon Mai
 					["coord"] = { 19.5, 56.9, 376 },

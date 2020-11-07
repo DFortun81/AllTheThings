@@ -334,6 +334,13 @@ _.Zones =
 								["coord"] = { 57.1, 78.6, 379 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32363, {	-- The Kun-Lai Expedition
+								["minReputation"] = { 1375, REVERED+6650 },
+								["sourceQuests"] = { 32330 },	-- What's in the Box?
+								["provider"] = { "n", 67939 },	-- General Nazgrim
+								["coord"] = { 9.30, 51.2, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32250, {	-- The Might of the Warchief
 								["sourceQuests"] = { 32249 },	-- Meet the Scout
 								["providers"] = {
@@ -362,6 +369,12 @@ _.Zones =
 								["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
 								["isDaily"] = true,
 								["coord"] = { 9.0, 51.3, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32448, {	-- Ties with the Past
+								["sourceQuests"] = { 32363 },	-- The Kun-Lai Expedition
+								["provider"] = { "n", 68267 },	-- Baine Bloodhoof
+								["coord"] = { 60.3, 55.2, 379 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32190, {	-- To Mogujia
