@@ -84,19 +84,24 @@ profession(FISHING, {
 		i(13917),	-- 103 Pound Mightfish
 	}),
 	i(168016, {	-- Hyper-Compressed Ocean
-		i(139408, {	-- Deck Sandals
-			["bonusID"] = 1812,
-		}),
-		i(139407, {	-- Diver's Chain Boots
-			["bonusID"] = 1812,
-		}),
-		i(139405, {	-- Kul'Tiras Marine Issue Boots
-			["bonusID"] = 1812,
-		}),
-		i(139406, {	-- Sea Dog Boots
-			["bonusID"] = 1812,
-		}),
-		i(7188),	--  Stormwind Guard Shield
+		["crs"] = {
+			152121,	-- Hyper-Compressed Ocean NPC
+		},
+		["g"] = {	-- Confirmed Drops
+			i(139408, {	-- Deck Sandals
+				["bonusID"] = 1812,
+			}),
+			i(139407, {	-- Diver's Chain Boots
+				["bonusID"] = 1812,
+			}),
+			i(139405, {	-- Kul'Tiras Marine Issue Boots
+				["bonusID"] = 1812,
+			}),
+			i(139406, {	-- Sea Dog Boots
+				["bonusID"] = 1812,
+			}),
+			i(7188),	--  Stormwind Guard Shield
+		}
 	}),
 	n(-217,   {	-- Lures
 		i(133715, {	-- Ancient Vrykul Ring

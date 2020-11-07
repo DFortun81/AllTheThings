@@ -1707,6 +1707,15 @@ _.Zones =
 						n(88253, { 	-- Srikka
 							["coord"] = { 74.4, 31.6, 624 },
 							["g"] = {
+								i(122606, {	-- Explorer's Notebook
+									["cost"] = { { "i", 87399, 5 } },	-- 5x  Restored Artifact
+								}),
+								i(87533, {	-- Crate of Dwarven Archaeology Fragments
+									["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+									["g"] = {
+										{ ["currencyID"] = 384, }	-- Dwarf Archaeology Fragment
+									},
+								}),
 								i(118727, {	-- Frostfire Treasure Map
 									["questID"] = 34557,
 								}),

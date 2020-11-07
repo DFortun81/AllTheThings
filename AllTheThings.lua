@@ -2970,6 +2970,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Append any crafted things using this group
 			app.BuildCrafted(group, 10);
 			
+			-- Append currency info to any orphan currency groups
+			app.BuildCurrencies(group);
+			
 			group.total = 0;
 			group.progress = 0;
 			BuildGroups(group, group.g);
@@ -3390,6 +3393,7 @@ app.BuildCrafted = function(item, recurDepth, includedItems)
 		end
 	end
 end
+-- build a 'Cost' group which matches the "cost" tag of this group
 app.BuildCost = function(group)
 		-- Pop out the cost objects into their own sub-groups for accessibility
 		-- Gold cost currently ignored
@@ -3419,6 +3423,23 @@ app.BuildCost = function(group)
 		end
 		if not group.g then group.g = {}; end
 		tinsert(group.g, 1, costGroup);
+	end
+end
+-- check for orphaned currency groups and fill them with things purchased by that currency
+app.BuildCurrencies = function(group)
+	if group and group.g and #group.g > 0 then
+		for i=1,#group.g,1 do
+			local o = group.g[i];
+			-- this is an empty currency group
+			if o.key and o.key == "currencyID" and (not o.g or #o.g == 0) then
+				-- print("empty currency group",o.currencyID);
+				local currencyGroup = GetCachedSearchResults("currencyID:" .. tostring(o.currencyID), app.SearchForField, "currencyID", o.currencyID);
+				if currencyGroup then
+					-- print("found currency",currencyGroup.currencyID,#currencyGroup.g);
+					group.g[i] = currencyGroup;
+				end
+			end
+		end
 	end
 end
 local function SendGroupMessage(msg)
