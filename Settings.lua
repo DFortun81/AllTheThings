@@ -2928,7 +2928,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("QuestChain:Nested", self:GetChecked());
 end);
-QuestChainRequirementsNested:SetATTTooltip("Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out. Otherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.");
+QuestChainRequirementsNested:SetATTTooltip("Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.");
 QuestChainRequirementsNested:SetPoint("TOPLEFT", SortByCompletionInstead, "BOTTOMLEFT", 0, 4);
 
 local CelebrationsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");

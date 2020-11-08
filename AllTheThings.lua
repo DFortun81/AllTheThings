@@ -983,6 +983,7 @@ local function BuildSourceTextForTSM(group, l)
 	end
 	return L["TITLE"];
 end
+-- does not actually Clone Data, but rather returns a new table whose __index is the source table
 local function CloneData(data)
 	local clone = setmetatable({}, { __index = data });
 	if data.g then
@@ -9501,7 +9502,7 @@ local function NestSourceQuests(root, addedQuests, depth)
 						end
 					elseif sourceQuestID > 0 then
 						-- Create a Quest Object.
-						sq = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['hideText'] = true, });
+						sq = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true, });
 					else
 						-- Create a NPC Object.
 						sq = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true, });
@@ -9509,6 +9510,10 @@ local function NestSourceQuests(root, addedQuests, depth)
 					
 					-- clone the object so as to not modify actual data
 					sq = CloneData(sq);
+					-- force collectible to make sure it shows in list
+					sq.collectible = true;
+					sq.visible = true;
+					sq.hideText = true;
 					-- clean anything out of it so that items don't show in the quest requirements
 					sq.g = {};
 				
@@ -9525,7 +9530,8 @@ local function NestSourceQuests(root, addedQuests, depth)
 		-- sort quests with less sub-quests to the top
 		if prereqs then
 			table.sort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
-			root.g = prereqs;
+			if not root.g then root.g = prereqs;
+			else MergeObjects(root.g, prereqs); end
 		end
 	end
 	return root;
@@ -9878,9 +9884,9 @@ function app:CreateMiniListForGroup(group)
 			end
 			popout.data = {
 				["text"] = "Quest Chain Requirements",
-				["description"] = "The following quests need to be completed before being able to complete the final quest.",
+				["description"] = "The following quests need to be completed before being able to complete the final quest.\n\n|cffff6512NOTE: Account-Wide Quest Tracking will cause this window to behave inaccurately!|r",
 				["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
-				["g"] = (gTop and { gTop }) or g,
+				["g"] = gTop and { gTop } or g,
 				["hideText"] = true
 			};
 		elseif group.sym then
