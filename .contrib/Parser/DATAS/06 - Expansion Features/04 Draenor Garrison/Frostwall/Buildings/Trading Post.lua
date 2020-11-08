@@ -14,15 +14,13 @@ _.ExpansionFeatures =
 							q(37014, {	-- Auctioning for Parts
 								["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
 								["provider"] = { "n", 86806 },	-- Ancient Trading Mechanism
-								["g"] = addObject(
-									bubbleDown({["u"] = REMOVED_FROM_GAME, ["description"] = "This item is no longer required to complete the Auctioning for Parts garrison quest."}, {
-										i(118377, {	-- Universal Language Module
-											i(118333),	-- Universal Language Compensator [Part 1 of 3]
-											i(118334),	-- Universal Language Filter [Part 2 of 3]
-											i(118335),	-- Universal Language Repository [Part 3 of 3]
-										}),
-									})[1],
+								["g"] = 
 									bubbleDown({["questID"] = 37014}, {	-- Auctioning for Parts
+									i(118377, {	-- Universal Language Module
+										i(118333),	-- Universal Language Compensator [Part 1 of 3]
+										i(118334),	-- Universal Language Filter [Part 2 of 3]
+										i(118335),	-- Universal Language Repository [Part 3 of 3]
+									}),
 									i(118375, {	-- Arcane Crystal Module
 										i(118344),	-- Arcane Crystal Casing [Part 1 of 4]
 										i(118345),	-- Arcane Crystal Conduit [Part 2 of 4]
@@ -46,7 +44,7 @@ _.ExpansionFeatures =
 										i(118338),	-- Super Cooling Coolant [Part 3 of 4]
 										i(118339),	-- Super Cooling Pump [Part 4 of 4]
 									}),
-								})),
+								}),
 							}),
 						}),
 						n(VENDORS, {
