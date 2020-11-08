@@ -200,6 +200,7 @@ i(169226);	-- Torn Sheet Music
 i(169255);	-- Tuft of Red Fur
 i(12812);	-- Unfired Plate Gauntlets
 i(12806);	-- Unforged Rune Covered Breastplate
+i(118377);	-- Universal Language Module
 i(169239);	-- Unknowable Cube
 i(169225);	-- Unstoppable Countdown Clock
 i(169867);	-- Visual Holo Sphere

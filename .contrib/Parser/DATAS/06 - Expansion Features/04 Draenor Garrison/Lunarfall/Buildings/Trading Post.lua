@@ -17,11 +17,6 @@ _.ExpansionFeatures =
 								["races"] = ALLIANCE_ONLY,
 								["g"] = 
 									bubbleDown({["questID"] = 37014}, {	-- Auctioning for Parts
-									i(118377, {	-- Universal Language Module
-										i(118333),	-- Universal Language Compensator [Part 1 of 3]
-										i(118334),	-- Universal Language Filter [Part 2 of 3]
-										i(118335),	-- Universal Language Repository [Part 3 of 3]
-									}),
 									i(118375, {	-- Arcane Crystal Module
 										i(118344),	-- Arcane Crystal Casing [Part 1 of 4]
 										i(118345),	-- Arcane Crystal Conduit [Part 2 of 4]
