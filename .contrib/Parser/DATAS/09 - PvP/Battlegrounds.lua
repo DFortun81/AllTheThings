@@ -17,9 +17,10 @@ _.PVP =
 				i(138486),	-- "Third Wind" Potion
 			},
 		}),
-		i(135539, {	-- Crate of Battlefield Goods 47-49	-- 9.0+
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 47-49 range.|r",
-			["lvl"] = 47,
+		i(135539, {	-- Crate of Battlefield Goods 28-49	-- 9.0+
+			-- Level requirement is probably even lower
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 28-49 range.|r",
+			["lvl"] = 28,
 			["g"] = {
 				i(134643),	-- Auxiliary's Cuffs*
 				i(134642),	-- Auxiliary's Leggings*
@@ -53,9 +54,9 @@ _.PVP =
 				i(134659),  -- Recruit's Ring
 			},
 		}),
-		i(135540, {	-- Crate of Battlefield Goods 10-46 -- 9.0+
+		i(135540, {	-- Crate of Battlefield Goods 10-27 -- 9.0+
 		-- 	Needs verification at which level you stop getting this one
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 10-46 range.|r",
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 10-27 range.|r",
 			["g"] = {
 				i(134672),	-- Auxiliary's Amice
 				i(134670),	-- Auxiliary's Cowl
