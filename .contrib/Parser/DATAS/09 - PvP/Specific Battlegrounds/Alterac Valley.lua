@@ -187,6 +187,12 @@ _.PVP =
 								["races"] = HORDE_ONLY,
 								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
+							q(6861, {	-- Zinfizzlex's Portable Shredder Unit (H)
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(6862, {	-- Zinfizzlex's Portable Shredder Unit (A)
+								["u"] = REMOVED_FROM_GAME,
+							}),
 						}),
 						n(VENDORS, {
 							n(13219, {	-- Jorek Ironside

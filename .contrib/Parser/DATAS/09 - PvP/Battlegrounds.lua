@@ -20,7 +20,7 @@ _.PVP =
 		i(135539, {	-- Crate of Battlefield Goods 28-49	-- 9.0+
 			-- Level requirement is probably even lower
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 28-49 range.|r",
-			["lvl"] = 28,
+			["lvl"] = { 28, 49 },
 			["g"] = {
 				i(134643),	-- Auxiliary's Cuffs*
 				i(134642),	-- Auxiliary's Leggings*
@@ -55,8 +55,9 @@ _.PVP =
 			},
 		}),
 		i(135540, {	-- Crate of Battlefield Goods 10-27 -- 9.0+
-		-- 	Needs verification at which level you stop getting this one
+			-- 	Needs verification at which level you stop getting this one
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 10-27 range.|r",
+			["lvl"] = { 10, 27 },
 			["g"] = {
 				i(134672),	-- Auxiliary's Amice
 				i(134670),	-- Auxiliary's Cowl
