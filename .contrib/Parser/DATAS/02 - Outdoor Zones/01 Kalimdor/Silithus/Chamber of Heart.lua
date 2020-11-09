@@ -580,7 +580,7 @@ _.Zones =
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
-							["sourceQuest"] = 57362,	-- Deeper Into the Darkness
+							["sourceQuest"] = 57373,	-- Descending Into Madness
 							["g"] = {
 								spell(315864),	-- Tenebrous Conduit (unlocks horrific visions)
 							},
@@ -589,7 +589,7 @@ _.Zones =
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
-							["sourceQuest"] = 58634,	-- Opening the Gateway
+							["sourceQuest"] = 57362,	-- Deeper Into the Darkness
 							["g"] = {
 								-- Plate
 								i(173821),	-- Malignant Leviathan's Clasp
