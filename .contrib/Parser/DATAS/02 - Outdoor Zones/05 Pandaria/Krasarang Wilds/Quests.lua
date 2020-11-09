@@ -1013,15 +1013,6 @@ _.Zones =
 						}),
 					},
 				}),
-				i(91855, {
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						q(32165, {	-- Beastmaster's Hunt: The Tiger
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
 				q(32186, {	-- Beastmaster's Quarry: The Crab
 					["provider"] = { "n", 67508 },	-- Colossal Viseclaw
 					["races"] = ALLIANCE_ONLY,
@@ -1042,11 +1033,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32185, {	-- Beastmaster's Quarry: The Tiger
-					["provider"] = { "n", 67498 },	-- Krasari Elder
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(30740, {	-- Champion of Chi-Ji
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
@@ -1061,10 +1047,6 @@ _.Zones =
 				}),
 				q(32168, {	-- End of an Elder
 					["races"] = HORDE_ONLY,
-					["isDaily"] = true,	-- where is this from?
-				}),
-				q(32171, {	-- End of an Elder
-					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,	-- where is this from?
 				}),
 				q(30737, {	-- Fat Long-Fat: Rematch
@@ -1110,12 +1092,6 @@ _.Zones =
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
-				q(32197, {	-- Mystery Meatloaf
-					["provider"] = { "n", 67562 },	-- Duke
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-
 				i(86544, {	-- Spinefish Alpha
 					["g"] = {
 						q(31444, {	-- Spinefish Alpha
@@ -1155,10 +1131,6 @@ _.Zones =
 					["sourceQuests"] = { 59559 },	-- Hero's Call: Kun-Lai Summit!
 					["provider"] = { "n", 63778 },	-- Messenger Grummle
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32391, {	-- The Ruins of Korune
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["races"] = HORDE_ONLY,
 				}),
 				q(32402, {	-- The Situation In Dalaran
 					["provider"] = { "n", 67939 },	-- General Nazgrim

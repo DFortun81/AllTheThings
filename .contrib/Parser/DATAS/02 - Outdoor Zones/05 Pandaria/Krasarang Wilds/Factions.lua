@@ -42,8 +42,12 @@ _.Zones =
 									crit(7, {	-- Rise of the Blood Elves
 										["sourceQuests"] = { 32330 },	-- What's in the Box?
 									}),
-									crit(8),	-- Secrets of the Past
-									crit(9),	-- The Divine Bell
+									crit(8, {	-- Secrets of the Past
+										["sourceQuests"] = { 32368 },	-- Memory Wine
+									}),
+									crit(9, {	-- The Divine Bell
+										["sourceQuests"] = { 32392 },	-- The Divine Bell
+									}),
 									crit(10),	-- The Darnassus Operation
 									crit(11),	-- The Purge of Dalaran
 									crit(12),	-- Breath of Darkest Shadow
@@ -259,6 +263,19 @@ _.Zones =
 								["coord"] = { 53.8, 49.1, 379 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32368, {	-- Memory Wine
+								["sourceQuests"] = { 32448 },	-- Ties with the Past
+								["provider"] = { "n", 68287 },	-- Baine Bloodhoof
+								["coord"] = { 60.3, 55.2, 379 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32197, {	-- Mystery Meatloaf
+								["sourceQuests"] = { 32108 },	-- Domination Point
+								["provider"] = { "n", 67562 },	-- Duke
+								["isDaily"] = true,
+								["coord"] = { 12.9, 53.4, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32343, {	-- Ogudei's Lieutenants
 								["sourceQuests"] = { 32449 },	-- The Ruins of Ogudei
 								["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
@@ -267,7 +284,6 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 							}),
 							q(32237, {	-- Precious Resource
-							--	TODO: on days this quest is available, does it have prereqs?
 								["sourceQuests"] = { 32108 },	-- Domination Point
 								["provider"] = { "n", 67553 },	-- Bixy Buzzsaw
 								["isDaily"] = true,
@@ -322,6 +338,12 @@ _.Zones =
 								["coord"] = { 9.55, 50.9, 418 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32392, {	-- The Divine Bell
+								["sourceQuests"] = { 32391 },	-- The Ruins of Korune
+								["provider"] = { "n", 68337 },	-- Ishi
+								["coord"] = { 32.9, 26.3, 379 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32320, {	-- The Horde Is Family
 								["sourceQuests"] = { 32319 },	-- Find Thrall!
 								["provider"] = { "n", 68025 },	-- Thrall
@@ -348,6 +370,13 @@ _.Zones =
 									{ "n", 68072 },	-- Kor'kron Bodyguard
 								},
 								["coord"] = { 7.41, 62.7, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32391, {	-- The Ruins of Korune
+								["minReputation"] = { 1375, REVERED+10515 },	-- possibly up to 10755?  it didn't show up for me until turning in a quest that took me from 10455 to 11145
+								["sourceQuests"] = { 32368 },	-- Memory Wine
+								["provider"] = { "n", 67939 },	-- General Nazgrim
+								["coord"] = { 9.30, 51.2, 418 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32449, {	-- The Ruins of Ogudei
@@ -628,6 +657,7 @@ _.Zones =
 								["isDaily"] = true,
 								["coord"] = { 88.8, 13.6, 418 },
 								["races"] = ALLIANCE_ONLY,
+								["crs"] = { 67555 },	-- Ancient Bloodcrown Crane (killing the mob procs the quest)
 							}),
 							q(32452, {	-- And Then There Were Goblins
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
@@ -665,11 +695,24 @@ _.Zones =
 								["coord"] = { 94.4, 29.3, 418 },	-- location of NPC from which to purchase
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32165, {	-- Beastmaster's Hunt: The Tiger
+								["provider"] = { "i", 91855 },	-- Sturdy Tiger Trap
+								["isDaily"] = true,
+								["coord"] = { 94.4, 29.3, 418 },	-- location of NPC from which to purchase
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32184, {	-- Beastmaster's Quarry: The Crane
 								["sourceQuests"] = { 32164 },	-- Beastmaster's Hunt: The Crane
 								["provider"] = { "n", 67503 },	-- Ancient Bloodcrown Crane
 								["isDaily"] = true,
 								["coord"] = { 40.3, 60.0, 418 },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32185, {	-- Beastmaster's Quarry: The Tiger
+								["sourceQuests"] = { 32165 },	-- Beastmaster's Hunt: The Tiger
+								["provider"] = { "n", 67498 },	-- Krasari Elder
+								["isDaily"] = true,
+								["coord"] = { 12.9, 37.7, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32401, {	-- Breath of Darkest Shadow
@@ -716,6 +759,14 @@ _.Zones =
 								["provider"] = { "n", 67528 },	-- Sully "The Pickle" McLeary
 								["isDaily"] = true,
 								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32171, {	-- End of an Elder
+								["sourceQuests"] = { 32185 },	-- Beastmaster's Quarry: The Tiger
+								["provider"] = { "n", 67558 },	-- Huntsman Blake (summons the mob for you to kill)
+								["isDaily"] = true,
+								["coord"] = { 88.3, 14.0, 418 },
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = { 67556 },	-- Krasari Elder (killing the mob procs the quest)
 							}),
 							q(32347, {	-- Eviction Notice
 								["sourceQuests"] = { 32109 },	-- Lion's Landing

@@ -1394,7 +1394,12 @@ _.Zones =
 					},
 				}),
 				q(30625, {	-- Students No More
-					["sourceQuests"] = { 30622 },	-- The Swarm Begins
+					["sourceQuests"] = {
+						30624,	-- It Does You No Good In The Keg (A)
+						30653,	-- It Does You No Good In The Keg (H)
+						30623,	-- The Mantidote
+						30622,	-- The Swarm Begins
+					},
 					["coord"] = { 11.6, 49.5, 376 },
 					["provider"] = { "n", 57198 },	-- Guard Captain Oakenshield
 				}),

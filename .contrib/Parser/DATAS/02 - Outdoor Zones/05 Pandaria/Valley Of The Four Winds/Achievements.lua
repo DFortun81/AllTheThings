@@ -127,6 +127,9 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(7502, {	-- Savior of Stoneplow
+					["sourceQuests"] = { 30627 },	-- The Savior of Stoneplow
+				}),
 				ach(7293),	-- Till the Break of Dawn (Halfhill)
 			}),
 		}),

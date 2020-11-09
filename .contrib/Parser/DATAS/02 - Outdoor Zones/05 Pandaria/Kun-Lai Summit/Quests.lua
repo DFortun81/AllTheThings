@@ -623,10 +623,6 @@ _.Zones =
 						i(90489),	-- Shomi's Fan
 					},
 				}),
-				q(32368, {	-- Memory Wine (H)
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68287 },	-- Baine Bloodhoof
-				}),
 				q(30619, {	-- Mogu?! Oh No-gu! (A)
 					["coord"] = { 54.1, 83.4, 379 },
 					["races"] = ALLIANCE_ONLY,
@@ -1067,10 +1063,6 @@ _.Zones =
 						30663,	-- The Ordo Warbringer
 						31453,	-- The Shado-Pan (breadcrumb)
 					},
-				}),
-				q(32392, {	-- The Divine Bell (H)
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68337 },	-- Ishi
 				}),
 				q(30855, {	-- The Fall of Shai Hu
 					["coord"] = { 74.9, 88.5, 379 },
