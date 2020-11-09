@@ -17,10 +17,10 @@ _.PVP =
 				i(138486),	-- "Third Wind" Potion
 			},
 		}),
-		i(135539, {	-- Crate of Battlefield Goods 28-49	-- 9.0+
+		i(135539, {	-- Crate of Battlefield Goods 24-49	-- 9.0+
 			-- Level requirement is probably even lower
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 28-49 range.|r",
-			["lvl"] = { 28, 49 },
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 24-49 range.|r",
+			["lvl"] = { 24, 49 },
 			["g"] = {
 				i(134643),	-- Auxiliary's Cuffs*
 				i(134642),	-- Auxiliary's Leggings*
@@ -54,10 +54,10 @@ _.PVP =
 				i(134659),  -- Recruit's Ring
 			},
 		}),
-		i(135540, {	-- Crate of Battlefield Goods 10-27 -- 9.0+
+		i(135540, {	-- Crate of Battlefield Goods 10-23 -- 9.0+
 			-- 	Needs verification at which level you stop getting this one
-			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 10-27 range.|r",
-			["lvl"] = { 10, 27 },
+			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 10-23 range.|r",
+			["lvl"] = { 10, 23 },
 			["g"] = {
 				i(134672),	-- Auxiliary's Amice
 				i(134670),	-- Auxiliary's Cowl
@@ -67,7 +67,7 @@ _.PVP =
 				i(134676),	-- Rookie's Helm	-- Confirmed 08 Nov 2020
 				i(134677),	-- Rookie's Legguards*
 				i(134678),	-- Rookie's Shoulders*
-				i(134679),	-- Greenhorn's Gauntlets
+				i(134679),	-- Greenhorn's Gauntlets	-- Confirmed 09 Nov 2020
 				i(134680),	-- Greenhorn's Helm		-- Confirmed 08 Nov 2020
 				i(134681),	-- Greenhorn's Legguards
 				i(134682),	-- Greenhorn's Spaulders
