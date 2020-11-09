@@ -3571,7 +3571,6 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(5748)),	-- Centaur Longbow
 			un(NEVER_IMPLEMENTED, i(108783)),   	-- Unknown
 			un(NEVER_IMPLEMENTED, i(167144)),   	-- Unknown
-			un(NEVER_IMPLEMENTED, i(174855)),	-- Bow of Calamity
 			un(NEVER_IMPLEMENTED, i(154971)),	-- howdah-riers bow
 			un(NEVER_IMPLEMENTED, i(115294)),	-- Spectral Longbow
 			un(NEVER_IMPLEMENTED, i(109283)),   	-- 6.0 QA Combat Test Hunter Bow
