@@ -243,7 +243,7 @@ _.ExpansionFeatures =
 								i(174457),	-- C'Thuffer (PET!) - rexxar
 								i(173289),	-- Spark of Inspiration (Rank 2) — from completing first Lost Area
 								i(174855, {	-- Bow of Calamity
-									["description"] = "Has only been received on a Hunter character (so far)\nCan be traded to party members within the same Vision",
+									["description"] = "Has only been received on a Hunter character (so far).\nCan be traded to party members within the same Vision.",
 								}),
 							},
 						}),

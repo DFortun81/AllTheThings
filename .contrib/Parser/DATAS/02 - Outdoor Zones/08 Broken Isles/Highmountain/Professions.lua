@@ -157,6 +157,14 @@ _.Zones =
 							i(128570),	-- Formula: Enchant Cloak - Word of Strength (Rank 1)
 						},
 					}),
+					q(39879, {	-- Strong Like the Earth
+						["sourceQuests"] = { 39878 },	-- Thunder Struck
+						["provider"] = { "n", 98017 },	-- Guron Twaintail
+					}),
+					q(39880, {	-- Waste Not
+						["sourceQuests"] = { 39878 },	-- Thunder Struck
+						["provider"] = { "n", 98017 },	-- Guron Twaintail
+					}),
 				}),
 				prof(FISHING, {
 					n(-10067, { 	-- Artifact

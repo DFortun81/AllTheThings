@@ -48,8 +48,13 @@ _.Zones =
 						["provider"] = { "n", 107139 },	-- Enchantress Ilanya
 						["sourceQuests"] = { 39918 },	-- The Absent Priestess
 					}),
+					q(39877, {	-- In the Loop
+						["provider"] = { "n", 90317 },	-- Jace Darkweaver <Illidari>
+						["sourceQuests"] = { 39876 },	-- Helping the Hunters
+					}),
 					q(39905, {	-- Ringing True
 						["provider"] = { "n", 90317 },	-- Jace Darkweaver
+						["sourceQuests"] = { 40048 },	-- Strings of the Puppet Masters
 						["g"] = {
 							i(128562),	-- Formula: Enchant Ring - Word of Critical Strike (Rank 1)
 							i(128563),	-- Formula: Enchant Ring - Word of Haste (Rank 1)
@@ -63,6 +68,10 @@ _.Zones =
 							i(128577),	-- Formula: Enchant Neck - Mark of the Distant Army (Rank 1)
 							i(141912),	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 1)
 						},
+					}),
+					q(40048, {	-- Strings of the Puppet Masters
+						["provider"] = { "n", 90317 },	-- Jace Darkweaver <Illidari>
+						["sourceQuests"] = { 39877 },	-- In the Loop
 					}),
 					q(39918, {	-- The Absent Priestess
 						["sourceQuests"] = { 40130 },	-- Washed Clean

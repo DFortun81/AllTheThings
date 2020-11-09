@@ -976,7 +976,7 @@ _.Zones =
 					["coord"] = { 51.5, 62.3, 659 },	-- Stonedark Grotto
 					["provider"] = { "n", 95799 },	-- Damrul the Stronk
 				}),
-	--[[ These quests will be organized Soon™
+	--[[ TODO: These quests will be organized Soon™
 				q(43423),	-- A Hero's Weapon
 				q(43370),	-- A New Invention
 				q(40957),	-- A Strong Right Hand
@@ -1125,7 +1125,6 @@ _.Zones =
 				q(40681),	-- Snarf
 				q(46145),	-- Sterile Surroundings
 				q(40141),	-- Stormscale Sample
-				q(39879),	-- Strong Like the Earth
 				q(46743),	-- Supplies From Highmountain
 				q(41187),	-- Surveying Student
 				q(43335),	-- Survival Skills
@@ -1152,7 +1151,6 @@ _.Zones =
 				q(42401),	-- The Scent of Magic
 				q(40954),	-- The Unseen Path
 				q(44055),	-- They Have A Pitlord
-				q(39878),	-- Thunder Struck
 				q(45349),	-- To the Broken Shore
 				q(42110),	-- To the Summit!
 				q(44035),	-- Torrentius
@@ -1173,7 +1171,6 @@ _.Zones =
 				q(42280),	-- Vorthax
 				q(44233),	-- Walk This Way
 				q(41820),	-- Walk Without Rhythm
-				q(39880),	-- Waste Not
 				q(38786),	-- Where Respect is Due
 				q(41832),	-- White Water Terror
 				q(47019),	-- Windwalker: Rumblings Near Feltotem

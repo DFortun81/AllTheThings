@@ -390,7 +390,7 @@ _.Zones =
 						["provider"] = { "n", 93530 },	-- Ildine Sorrowspear
 					}),
 					q(39878, {	-- Thunder Struck
-						["sourceQuests"] = { 40048 },	-- Strings of the Puppet Masters
+						["sourceQuests"] = { 39905 },	-- Ringing True
 						["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
 					}),
 					n(-34, {	-- World Quests
