@@ -19,7 +19,7 @@ _.PVP =
 		}),
 		i(135539, {	-- Crate of Battlefield Goods 47-49	-- 9.0+
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 47-49 range.|r",
-			["lvl"] = 10,
+			["lvl"] = 47,
 			["g"] = {
 				i(134643),	-- Auxiliary's Cuffs*
 				i(134642),	-- Auxiliary's Leggings*
