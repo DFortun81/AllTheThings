@@ -1656,10 +1656,20 @@ MergeObject = function(g, t, index)
 end
 end)();
 local function ExpandGroupsRecursively(group, expanded, manual)
-	if group.g and (not group.itemID or manual) then
-		group.expanded = expanded;
-		for i, subgroup in ipairs(group.g) do
-			ExpandGroupsRecursively(subgroup, expanded, manual);
+	-- expand if there is any sub-group
+	if group.g then
+		-- if manually expanding
+		if (manual or
+				-- it's not an item
+				(not group.itemID and
+				-- incomplete things actually exist below itself
+				((group.total or 0) > (group.progress or 0)))
+			) then
+			-- print("expanded",group.key,group[group.key]);
+			group.expanded = expanded;
+			for i, subgroup in ipairs(group.g) do
+				ExpandGroupsRecursively(subgroup, expanded, manual);
+			end
 		end
 	end
 end
@@ -4636,19 +4646,21 @@ end
 local function SortGroup(group, sortType, row, recur)
 	if group.visible and group.g then
 		app:CheckYieldHelper();
-		if not sortType or sortType == "name" then
+		if sortType == "name" then
 			local txtA, txtB;
 			table.sort(group.g, function(a, b)
-				txtA = a.name;
-				txtB = b.name;
+				txtA = a and (a.name or a.text) or "";
+				txtB = b and (b.name or b.text) or "";
 				if txtA then
 					if txtB then return txtA < txtB; end
 					return true;
 				end
 				return false;
 			end);
-			for i,o in ipairs(group.g) do
-				SortGroup(o, "name", nil, true);
+			if recur then
+				for i,o in ipairs(group.g) do
+					SortGroup(o, "name", nil, recur);
+				end
 			end
 		elseif sortType == "progress" then
 			local progA, progB;
@@ -4661,13 +4673,27 @@ local function SortGroup(group, sortType, row, recur)
 				end
 				return false;
 			end);
-			for i,o in ipairs(group.g) do
-				SortGroup(o, "progress", nil, true);
+			if recur then
+				for i,o in ipairs(group.g) do
+					SortGroup(o, "progress", nil, recur);
+				end
 			end
+		else
+			local sortA, sortB;
+			table.sort(group.g, function(a, b)
+				sortA = a and tostring(a[sortType]);
+				sortB = b and tostring(b[sortType]);
+				return sortA < sortB;
+			end);
+			if recur then
+				for i,o in ipairs(group.g) do
+					SortGroup(o, sortType, nil, recur);
+				end
+			end			
 		end
 		-- other sort types?
 	end
-	if not recur then
+	if row then
 		row:GetParent():GetParent():Update();
 		app.print("Finished Sorting.");
 	end
@@ -10230,10 +10256,10 @@ local function RowOnClick(self, button)
 			elseif IsShiftKeyDown() then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
 					app.print("Sorting selection by total progress...");
-					StartCoroutine("Sorting", function() SortGroup(reference, "progress", self) end);
+					StartCoroutine("Sorting", function() SortGroup(reference, "progress", self, true) end);
 				else
 					app.print("Sorting selection alphabetically...");
-					StartCoroutine("Sorting", function() SortGroup(reference, "name", self) end);
+					StartCoroutine("Sorting", function() SortGroup(reference, "name", self, true) end);
 				end
 			else
 				if self.index > 0 then
@@ -12286,18 +12312,43 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				end
 			end
 		end
+		self.IsSameMapData = function(self)
+			local data = self.data;
+			if data.mapID then
+				-- Exact same map?
+				if data.mapID == self.mapID then
+					-- print("exact same map");
+					return true;
+				end
+			end
+			if data.maps then
+				-- Does the old map data contain this map?
+				if contains(data.maps, self.mapID) then
+					-- print("contained map");
+					return true;
+				end
+			end
+		end
 		self.SetMapID = function(self, mapID)
 			self.mapID = mapID;
 			self:SetVisible(true);
 			self:Update();
 		end
 		self.Rebuild = function(self)
+			-- print("rebuild",self.mapID);
+			-- check if this is the same 'map' for data purposes
+			if self:IsSameMapData() then
+				self:Update();
+				return;
+			end
 			local results = SearchForField("mapID", self.mapID);
 			if results then
 				-- Simplify the returned groups
 				local groups, holiday = {}, {};
 				local header = app.CreateMap(self.mapID, { g = groups });
 				for i, group in ipairs(results) do
+					-- print(group.key,group[group.key]);
+					-- clone the information from the group so it can be adjusted in the list without changing the source
 					local clone = {};
 					for key,value in pairs(group) do
 						if key == "maps" then
@@ -12309,9 +12360,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						elseif key == "g" then
 							local g = {};
 							for i,o in ipairs(value) do
-								o = CloneData(o);
-								ExpandGroupsRecursively(o, false);
-								tinsert(g, o);
+								tinsert(g, CloneData(o));
 							end
 							clone[key] = g;
 						else
@@ -12323,7 +12372,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					
 					-- Cache the difficultyID, if there is one. Also, ignore the event tag for anything that isn't Bizmo's Brawlpub.
 					local difficultyID = not GetRelativeField(group, "npcID", -496) and GetRelativeValue(group, "difficultyID");
-					local first = false;
+					-- local first = false;
 					
 					-- If this is relative to a holiday, let's do something special
 					if GetRelativeField(group, "npcID", -3) then
@@ -12366,26 +12415,27 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 							MergeObject({header}, group);
 						elseif group.key == "speciesID" then
 							group = app.CreateNPC(-25, { g = { group } });
-							first = true;
+							-- first = true;
 						elseif group.key == "questID" then
 							group = app.CreateNPC(-17, { g = { group } });
-							first = true;
+							-- first = true;
 						else
+							-- special cases to source the mapped-categories
 							if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
 								if group.npcID ~= -4 then group = app.CreateNPC(-4, { g = { group } }); end
-								first = true;
+								-- first = true;
 							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewalking vendor)
 								if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group } }); end
-								first = true;
+								-- first = true;
 							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
 								if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group } }); end
-								first = true;
+								-- first = true;
 							end
 						end
 						
 						-- If relative to a difficultyID, then merge it into one.
 						if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
-						MergeObject(groups, group, first and 1);
+						MergeObject(groups, group);
 					end
 				end
 				
@@ -12433,54 +12483,78 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
 				end
 				
+				local hasDifficulties;
 				-- Check for timewalking difficulty objects
 				for i, group in ipairs(groups) do
-					if group.difficultyID and group.difficultyID == 24 and group.g then
-						-- Look for a Common Boss Drop header.
-						local cbdIndex = -1;
-						for j, subgroup in ipairs(group.g) do
-							if subgroup.npcID and subgroup.npcID == -1 then
-								cbdIndex = j;
-								break;
+					if group.difficultyID then
+						hasDifficulties = true;
+						if group.difficultyID == 24 and group.g then
+							-- Look for a Common Boss Drop header.
+							local cbdIndex = -1;
+							for j, subgroup in ipairs(group.g) do
+								if subgroup.npcID and subgroup.npcID == -1 then
+									cbdIndex = j;
+									break;
+								end
 							end
-						end
-						
-						-- Push the Common Boss Drop header to the top.
-						if cbdIndex > -1 then
-							table.insert(group.g, 1, table.remove(group.g, cbdIndex));
-						end
-						
-						-- Look for a Zone Drop header.
-						cbdIndex = -1;
-						for j, subgroup in ipairs(group.g) do
-							if subgroup.npcID and subgroup.npcID == 0 then
-								cbdIndex = j;
-								break;
+							
+							-- Push the Common Boss Drop header to the top.
+							if cbdIndex > -1 then
+								table.insert(group.g, 1, table.remove(group.g, cbdIndex));
 							end
-						end
-						
-						-- Push the Zone Drop header to the top.
-						if cbdIndex > -1 then
-							table.insert(group.g, 1, table.remove(group.g, cbdIndex));
+							
+							-- Look for a Zone Drop header.
+							cbdIndex = -1;
+							for j, subgroup in ipairs(group.g) do
+								if subgroup.npcID and subgroup.npcID == 0 then
+									cbdIndex = j;
+									break;
+								end
+							end
+							
+							-- Push the Zone Drop header to the top.
+							if cbdIndex > -1 then
+								table.insert(group.g, 1, table.remove(group.g, cbdIndex));
+							end
 						end
 					end
 				end
 				
 				-- Swap out the map data for the header.
 				results = header;
-				
-				if IsSameMap(self.data, results) then
-					ReapplyExpand(self.data.g, results.g);
-				else
-					ExpandGroupsRecursively(results, true);
-				end
-				
-				for key,value in pairs(self.data) do
-					self.data[key] = nil;
-				end
-				for key,value in pairs(results) do
-					self.data[key] = value;
-				end
+								
+				-- If we have determined that we want to expand this section, then do it
+				-- if results.g then
+					-- print("weird section?");
+					-- local bottom = {};
+					-- local top = {};
+					-- for i=#results.g,1,-1 do
+						-- local o = results.g[i];
+						-- if o.difficultyID then
+							-- table.remove(results.g, i);
+							-- table.insert(bottom, 1, o);
+						-- -- this section appears to do nothing of value but appears to be responsible for preventing zone headers from collapsing/expanding
+						-- --elseif o.isRaid then
+						-- --	table.remove(results.g, i);
+						-- --	table.insert(top, o);
+						-- end
+					-- end
+					-- for i,o in ipairs(top) do
+						-- table.insert(results.g, 1, o);
+					-- end
+					-- for i,o in ipairs(bottom) do
+						-- table.insert(results.g, o);
+					-- end
+				-- end
+								
+				if self.data then wipe(self.data); end
+				-- for key,value in pairs(self.data) do
+					-- self.data[key] = nil;
+				-- end
+				self.data = results;
+				-- for key,value in pairs(results) do
+					-- self.data[key] = value;
+				-- end
 				
 				self.data.u = nil;
 				self.data.mapID = self.mapID;
@@ -12489,70 +12563,61 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					or self.data.classID and app.BaseCharacterClass
 					or app.BaseMap);
 				
-				-- If we have determined that we want to expand this section, then do it
-				if results.g then
-					local bottom = {};
-					local top = {};
-					for i=#results.g,1,-1 do
-						local o = results.g[i];
-						if o.difficultyID then
-							table.remove(results.g, i);
-							table.insert(bottom, 1, o);
-						-- this section appears to do nothing of value but appears to be responsible for preventing zone headers from collapsing/expanding
-						--elseif o.isRaid then
-						--	table.remove(results.g, i);
-						--	table.insert(top, o);
-						end
-					end
-					for i,o in ipairs(top) do
-						table.insert(results.g, 1, o);
-					end
-					for i,o in ipairs(bottom) do
-						table.insert(results.g, o);
-					end
-					
-					-- if enabled minimize rows based on difficulty 
-					if app.Settings:GetTooltipSetting("Expand:Difficulty") then
-						local difficultyID = select(3, GetInstanceInfo());
-						if difficultyID and difficultyID > 0 and results.g then
-							for _, row in ipairs(results.g) do
-								if row.difficultyID or row.difficulties then
-									if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-										if not row.expanded then ExpandGroupsRecursively(row, true); end
-									elseif row.expanded then 
-										ExpandGroupsRecursively(row, false);
-									end
+				-- Check to see completion...
+				-- print("build groups");
+				BuildGroups(self.data, self.data.g);
+				-- print("update groups");
+				UpdateGroups(self.data, self.data.g);				
+				-- sort only the top layer of groups if not in an instance with difficulty, force visible so sort goes through
+				if not hasDifficulties then
+					self.data.visible = true;
+					SortGroup(self.data, "name", nil, false);
+				else
+					self.data.visible = true;
+					SortGroup(self.data, "difficultyID", nil, false);
+				end
+				-- check to expand groups after they have been built and updated
+				-- print("expand current zone");
+				ExpandGroupsRecursively(self.data, true);
+				
+				-- if enabled, minimize rows based on difficulty
+				local difficultyID = nil;
+				if app.Settings:GetTooltipSetting("Expand:Difficulty") then
+					difficultyID = select(3, GetInstanceInfo());
+					if difficultyID and difficultyID > 0 and self.data.g then
+						for _, row in ipairs(self.data.g) do
+							if row.difficultyID or row.difficulties then
+								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+									if not row.expanded then ExpandGroupsRecursively(row, true); end
+								elseif row.expanded then
+									ExpandGroupsRecursively(row, false);
 								end
-							end
-						end
-					end
-					if app.Settings:GetTooltipSetting("Warn:Difficulty") then
-						local difficultyID = select(3, GetInstanceInfo());
-						if difficultyID and difficultyID > 0 and results.g then
-							local completed,other = true, nil;
-							for _, row in ipairs(results.g) do
-								if row.difficultyID or row.difficulties then
-									if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-										if row.total and row.progress < row.total then
-											completed = false;
-										end
-									else 
-										if row.total and row.progress < row.total then
-											other = row.text;
-										end
-									end
-								end
-							end
-							if completed and other then
-								print("You have collected everything from this difficulty. Switch to " .. other .. " instead.");
 							end
 						end
 					end
 				end
-				
-				-- Check to see completion...
-				BuildGroups(self.data, self.data.g);
-				UpdateGroups(self.data, self.data.g);
+				if app.Settings:GetTooltipSetting("Warn:Difficulty") then
+					if not difficultyID then difficultyID = select(3, GetInstanceInfo()); end
+					if difficultyID and difficultyID > 0 and self.data.g then
+						local completed,other = true, nil;
+						for _, row in ipairs(self.data.g) do
+							if row.difficultyID or row.difficulties then
+								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+									if row.total and row.progress < row.total then
+										completed = false;
+									end
+								else 
+									if row.total and row.progress < row.total then
+										other = row.text;
+									end
+								end
+							end
+						end
+						if completed and other then
+							print("You have collected everything from this difficulty. Switch to " .. other .. " instead.");
+						end
+					end
+				end
 			end
 			
 			-- If we don't have any map data on this area and it exists in game, report it to the chat window.
@@ -12601,6 +12666,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			self:Update();
 		end
 		local function OpenMiniList(id, show)
+			-- print("open",id,show);
 			-- Determine whether or not to forcibly reshow the mini list.
 			local self = app:GetWindow("CurrentInstance");
 			if not self:IsVisible() then
@@ -12620,6 +12686,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			end
 			
 			-- Cache that we're in the current map ID.
+			-- print("new map");
 			self.mapID = id;
 			self:Update();
 		end
@@ -12651,7 +12718,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
 		app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
 		self:SetScript("OnEvent", function(self, e, ...)
-			StartCoroutine("RefreshLocation", RefreshLocationCoroutine, 1);
+			-- print("trigger event");
+			StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
 		end);
 		self:RegisterEvent("VARIABLES_LOADED");
 		self:RegisterEvent("NEW_WMO_CHUNK");

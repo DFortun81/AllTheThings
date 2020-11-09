@@ -245,8 +245,16 @@ _.Achievements =
 			ach(13779, {		-- Phenomenal Cosmic Power
 				title(407),		-- , Azeroth's Champion"
 			}),
-			ach(9597),	-- You're Really Doing It Wrong
-			un(REMOVED_FROM_GAME, ach(8812)),	-- You're Really Doing It Wrong (Level 90)
+			ach(9597, {	-- You're Really Doing It Wrong
+				["maps"] = {
+					480,	-- Proving Grounds
+				},
+			}),
+			un(REMOVED_FROM_GAME, ach(8812, {	-- You're Really Doing It Wrong (Level 90)
+				["maps"] = {
+					480,	-- Proving Grounds
+				},			
+			})),
 		}),
 	}),
 };
