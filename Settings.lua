@@ -695,8 +695,8 @@ function(self)
 		settings:SetCompletedGroups(true);
 		settings:SetCollectedThings(true);
 	else
-		settings:Set("Show:CompletedGroups", settings:Get("Cache:CompletedGroups"));
-		settings:Set("Show:CollectedThings", settings:Get("Cache:CollectedThings"));
+		settings:SetCompletedGroups(settings:Get("Cache:CompletedGroups"));
+		settings:SetCollectedThings(settings:Get("Cache:CollectedThings"));
 	end
 end);
 DebugModeCheckBox:SetATTTooltip("Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.");
