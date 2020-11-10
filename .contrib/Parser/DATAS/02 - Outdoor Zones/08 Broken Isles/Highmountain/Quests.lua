@@ -1115,8 +1115,6 @@ _.Zones =
 				q(44039),	-- Sea King Tidross
 				q(38914),	-- Secrets of Highmountain REMOVED
 				q(42698),	-- Selia, Master of Balefire
-				q(40050),	-- Shipwreck Cove
-				q(39317),	-- Siege of Crawliac
 				q(42395),	-- Signaling Trouble
 				q(42928),	-- Silkweave Bandages
 				q(41817),	-- Skull of the Taskmaster
@@ -1165,7 +1163,6 @@ _.Zones =
 				q(42388),	-- Urgent Summons
 				q(44261),	-- Vault of the Wardens
 				q(44260),	-- Vault of the Wardens
-				q(42373),	-- Vengeance for the Stonedark
 				q(44259),	-- Violet Hold
 				q(44258),	-- Violet Hold
 				q(42280),	-- Vorthax

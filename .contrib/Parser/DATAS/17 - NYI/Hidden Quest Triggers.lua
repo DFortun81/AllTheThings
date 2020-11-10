@@ -1628,7 +1628,10 @@ _.HiddenQuestTriggers =
 		q(37779),	-- Tip the Scales
 
 		--	Highmountain bonus objectives
+		q(40050),	-- Shipwreck Cove
+		q(39317),	-- Siege of Crawliac
 		q(40316),	-- The Screeching Crag
+		q(42373),	-- Vengeance for the Stonedark
 		q(39371),	-- Witches of the Sky
 
 		--	Stormheim bonus objectives
