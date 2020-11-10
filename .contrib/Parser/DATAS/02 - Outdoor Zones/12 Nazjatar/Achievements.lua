@@ -40,7 +40,7 @@ _.Zones =
 					crit(9, {	-- Kelpstone
 						["crs"] = { 154918 },	-- Kelpstone
 						["coord"] = { 46.6, 28.0, 1355 },
-						["description"] = "Inside a case at the bottom of the waterfall.",
+						["description"] = "Inside a cave at the bottom of the waterfall.",
 					}),
 					crit(8, {	-- Mindshackle
 						["crs"] = { 154917 },	-- Mindshackle
