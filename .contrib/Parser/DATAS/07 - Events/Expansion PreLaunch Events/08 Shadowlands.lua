@@ -13,219 +13,168 @@ _.WorldEvents =
 			]]--
 			tier(9, {	-- Shadowlands
 				n(QUESTS, {
+					-------------------------- Week 1 --------------------------
 					q(60113, {	-- An Urgent Request (A)
-						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(60115, {	-- An Urgent Request (H)
-						["races"] = HORDE_ONLY,
-						["lvl"] = 48,
+						["lvl"] = 50,
+					}),
+					q(62594, {	-- The Safety of Others (A)
+						["maps"] = { 84 },
+					}),
+					q(62595, {	-- The Safety of Others (H)
+						["maps"] = { 85 },
 					}),
 					q(60116, {	-- Cause for Distraction (A)
 						["maps"] = { 84 },	-- Stormwind
 						["coord"] = { 39.4, 64.1, 84 },
-						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 167329 },	-- Genn Greymane
 						["sourceQuest"] = 60113,	-- An Urgent Request (A)
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(60669, {	-- Cause for Distraction (H)
 						["maps"] = { 85 },	-- Orgrimmar
 						["coord"] = { 49.2, 73.7, 85 },
-						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 169928 },	-- Lor'themar Theron
 						["sourceQuest"] = 60115,	-- An Urgent Request (H)
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(60117, {	-- Return of the Crusade (A)
 						["maps"] = { 84 },	-- Stormwind
 						["coord"] = { 39.4, 64.1, 84 },
-						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 167329 },	-- Genn Greymane
 						["sourceQuest"] = 60116,	-- Cause for Distraction (A)
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(60670, {	-- Return of the Crusade (H)
 						["maps"] = { 85 },	-- Orgrimmar
 						["coord"] = { 49.2, 73.7, 85 },
-						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 169928 },	-- Lor'themar Theron
 						["sourceQuest"] = 60669,	-- Cause for Distraction (H)
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(59876, {	-- Field Reports (A)
 						["maps"] = { 84 },	-- Stormwind
 						["coord"] = { 65.7, 77.1, 84 },
-						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 166383 },	-- Commander Gregor
 						["sourceQuest"] = 60117,	-- Return of the Crusade (A)
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(60725, {	-- Field Reports (H)
 						["maps"] = { 85 },	-- Orgrimmar
 						["coord"] = { 52.9, 77.3, 85 },
-						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 169878 },	-- Commander Throgg
 						["sourceQuest"] = 60670,	-- Return of the Crusade (H)
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(60766, {	-- Damned Intruders (A)
 						--["maps"] = { 10 },	-- Northern Barrens
 						--["coord"] = { 49.5, 59.4, 10 },
-						["races"] = ALLIANCE_ONLY,
 						--["provider"] = { "n", 170084 },	-- Lieutenant Althera
 						["sourceQuest"] = 59876,	-- Field Reports (A)
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(60759, {	-- Damned Intruders (H)
 						["maps"] = { 10 },	-- Northern Barrens
 						["coord"] = { 49.5, 59.4, 10 },
-						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 170084 },	-- Lieutenant Althera
 						["sourceQuest"] = 60725,	-- Field Reports (H)
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(60767, {	-- Return of the Scourge (A)
 						--["maps"] = { 10 },	-- Northern Barrens
 						--["coord"] = { 49.4, 59.3, 10 },
-						["races"] = ALLIANCE_ONLY,
 						--["provider"] = { "n", 170084 },	-- Lieutenant Althera
 						["sourceQuest"] = 60766,	-- Damned Intruders (A)
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(60761, {	-- Return of the Scourge (H)
 						["maps"] = { 10 },	-- Northern Barrens
 						["coord"] = { 49.4, 59.3, 10 },
-						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 170084 },	-- Lieutenant Althera
 						["sourceQuest"] = 60759,	-- Damned Intruders (H)
-						["lvl"] = 48,
-					}),
-					q(59877, {	-- A Message from Icecrown (A)
-						["maps"] = { 84 },	-- Stormwind
-						--["coord"] = { 52.9, 77.2, 84 },
-						["races"] = ALLIANCE_ONLY,
-						--["provider"] = { "n", 169878 },	-- Commander Throgg
-						["sourceQuest"] = 60767,	-- Return of the Scourge (A)
-						["lvl"] = 48,
-					}),
-					q(60727, {	-- A Message from Icecrown (H)
-						["maps"] = { 85 },	-- Orgrimmar
-						["coord"] = { 52.9, 77.2, 85 },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 169878 },	-- Commander Throgg
-						["sourceQuest"] = 60761,	-- Return of the Scourge (H)
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(61486, {	-- The Banshee's Champion (A)
 						["maps"] = { 84 },	-- Stormwind
 						--["coord"] = { 53.0, 77.0, 84 },
-						["races"] = ALLIANCE_ONLY,
 						--["provider"] = { "n", 172514 },	-- Light's Hope Messenger
 						["sourceQuest"] = 60767,	-- Return of the Scourge (A)
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(61488, {	-- The Banshee's Champion (H)
 						["maps"] = { 85 },	-- Orgrimmar
 						["coord"] = { 53.0, 77.0, 85 },
-						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 172514 },	-- Light's Hope Messenger
 						["sourceQuest"] = 60761,	-- Return of the Scourge (H)
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
-					q(60004, {	-- A Valiant Effort
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 22.0, 118 },
-						["races"] = HORDE_ONLY, -- TODO: confirm
-						["provider"] = { "n", 168123 },	-- Crusader Renn
-						["sourceQuest"] = 60727,	-- A Message from Icecrown
-						["lvl"] = 48,
+					q(59877, {	-- A Message from Icecrown (A)
+						["maps"] = { 84 },	-- Stormwind
+						--["coord"] = { 52.9, 77.2, 84 },
+						--["provider"] = { "n", 169878 },	-- Commander Throgg
+						["sourceQuest"] = 60767,	-- Return of the Scourge (A)
+						["lvl"] = 50,
+					}),
+					q(60727, {	-- A Message from Icecrown (H)
+						["maps"] = { 85 },	-- Orgrimmar
+						["coord"] = { 52.9, 77.2, 85 },
+						["provider"] = { "n", 169878 },	-- Commander Throgg
+						["sourceQuest"] = 60761,	-- Return of the Scourge (H)
+						["lvl"] = 50,
 					}),
 					q(60169, {	-- Securing the Area
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 22.0, 118 },
-						["races"] = HORDE_ONLY,	-- TODO: confirm
 						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
-						["sourceQuest"] = 60727,	-- A Message from Icecrown
-						["lvl"] = 48,
+						["sourceQuests"] = {
+							59877,	-- A Message from Icecrown (A)
+							60727,	-- A Message from Icecrown (H)
+						},
+						["lvl"] = 50,
+					}),
+					q(60003, {	-- A Valiant Effort (A)
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 71.0, 22.0, 118 },
+						["provider"] = { "n", 168123 },	-- Crusader Renn
+						["sourceQuest"] = 59877,	-- A Message from Icecrown (A)
+						["lvl"] = 50,
+					}),
+					q(60004, {	-- A Valiant Effort (H)
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 71.0, 22.0, 118 },
+						["provider"] = { "n", 168123 },	-- Crusader Renn
+						["sourceQuest"] = 60727,	-- A Message from Icecrown (H)
+						["lvl"] = 50,
 					}),
 					q(62157, {	-- Scouting from a Safe Distance
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 22.0, 118 },
-						["races"] = HORDE_ONLY, -- TODO: confirm
 						["provider"] = { "n", 168123 },	-- Crusader Renn
 						["sourceQuests"] = {
-							60004,	-- A Valiant Effort
+							60003,	-- A Valiant Effort (A)
+							60004,	-- A Valiant Effort (H)
 							60169,	-- Securing the Area
 						},
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(60827, {	-- Advancing the Effort
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 22.0, 118 },
-						["races"] = HORDE_ONLY, -- TODO: confirm
 						["provider"] = { "n", 168123 },	-- Crusader Renn
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
-					q(62262, {	-- Fungal Feeding
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.6, 21.0, 118 },
-						["races"] = HORDE_ONLY,	-- TODO: confirm
-						["isDaily"] = true,
-						["provider"] = { "n", 167572 },	-- Crystal Brightspark
-						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 48,
+					-------------------------- Week 2 --------------------------
+					q(62162, {	-- A Message from the Justicar (A)
+						-- TODO: coord and provider
+						["maps"] = { 84 },	-- Stormwind
+						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 					}),
-					q(59783, {	-- Cultist Captors
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 66.0, 21.9, 118 },
-						["races"] = HORDE_ONLY, -- TODO: confirm
-						["isDaily"] = true,
-						["provider"] = { "n", 168880 },	-- Sentry Joren
-						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 48,
-					}),
-					q(59863, {	-- Combat Nullifier 07-X
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 73.1, 35.6, 118 },
-						["races"] = HORDE_ONLY,	-- TODO: confirm
-						["isDaily"] = true,
-						["provider"] = { "n", 173124 },	-- Binkie Brightgear
-						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 48,
-					}),
-					q(59839, {	-- WARNING: This is Only a Test!
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 66.0, 22.4, 118 },
-						["races"] = HORDE_ONLY,	-- TODO: confirm
-						["isDaily"] = true,
-						["provider"] = { "n", 172905 },	-- Fizzix Blastbolt
-						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 48,
-					}),
-					q(59878, {	-- Too Many Whelps
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 21.9, 118 },
-						["isDaily"] = true,
-						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
-						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 48,
-					}),
-					q(60841, {	-- Evacuation Effort
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 21.9, 118 },
-						["isDaily"] = true,
-						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
-						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 48,
-					}),
-
-					-- phase 2 quests?
-					q(62163, {	-- A Message from the Justicar
+					q(62163, {	-- A Message from the Justicar (H)
 						["maps"] = { 85 },	-- Orgrimmar
-						["coord"] = { 52.9, 77.3, 84 },
-						["races"] = HORDE_ONLY,
+						["coord"] = { 52.9, 77.3, 85 },
 						["provider"] = { "n", 169878 },	-- Commander Throgg
 						-- not sure when this quest actually appears. It wasn't there on day one but showed up on subsequent days. Possibly related to event phasing?
 					}),
@@ -234,8 +183,8 @@ _.WorldEvents =
 						["coord"] = { 71.0, 22.0, 118 },
 						["provider"] = { "n", 168123 },	-- Crusader Renn
 						["sourceQuests"] = {
-							-- pretty sure there's an alliance version here too
-							62163,	-- A Message from the Justicar
+							62162,	-- A Message from the Justicar (A)
+							62163,	-- A Message from the Justicar (H)
 						},
 					}),
 					q(60843, {	-- Cult Couture
@@ -277,87 +226,121 @@ _.WorldEvents =
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60867,	-- A Message from Above
 					}),
-					q(60869, {	-- With Hope in Hand
+					q(60871, {	-- With Hope in Hand (A)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 44.9, 44.7, 118 },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 					}),
+					q(60869, {	-- With Hope in Hand (H)
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 44.9, 44.7, 118 },
+						["provider"] = { "n", 170467 },	-- Crusader Renn
+						["sourceQuest"] = 60932,	-- Only Shadows Remain
+					}),
+					-------------------------- Dailies --------------------------
+					q(62262, {	-- Fungal Feeding
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 71.6, 21.0, 118 },
+						["provider"] = { "n", 167572 },	-- Crystal Brightspark
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 50,
+					}),
+					q(59783, {	-- Cultist Captors
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 66.0, 21.9, 118 },
+						["provider"] = { "n", 168880 },	-- Sentry Joren
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 50,
+					}),
+					q(59863, {	-- Combat Nullifier 07-X
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 73.1, 35.6, 118 },
+						["provider"] = { "n", 173124 },	-- Binkie Brightgear
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 50,
+					}),
+					q(59839, {	-- WARNING: This is Only a Test!
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 66.0, 22.4, 118 },
+						["provider"] = { "n", 172905 },	-- Fizzix Blastbolt
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 50,
+					}),
+					q(59878, {	-- Too Many Whelps
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 71.0, 21.9, 118 },
+						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 50,
+					}),
+					q(60841, {	-- Evacuation Effort
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 71.0, 21.9, 118 },
+						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 50,
+					}),
+					q(59782, {	-- The Deathspeaker's Devout
+						["maps"] = { 118 },	-- Icecrown
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+					}),
 					q(59851, {	-- Frozen Solid
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 44.9, 44.7, 118 },
-						["isDaily"] = true,
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 					}),
 					q(59847, {	-- Defending the Rampart
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 44.9, 44.7, 118 },
-						["isDaily"] = true,
 						["provider"] = { "n", 170467 },	-- Crusader Renn
-						["sourceQuest"] = 60932,	-- Only Shadows Remain
-					}),
-					q(62295, {	-- Cleaning Out the Vault
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 42.8, 29.9, 118 },
-						["isDaily"] = true,
-						["provider"] = { "n", 173869 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 					}),
 					q(62365, {	-- Careful Creations
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 35.3, 66.3, 118 },
-						["isDaily"] = true,
 						["provider"] = { "n", 173997 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 					}),
-
+					q(62295, {	-- Cleaning Out the Vault
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 42.8, 29.9, 118 },
+						["provider"] = { "n", 173869 },	-- Crusader Renn
+						["sourceQuest"] = 60932,	-- Only Shadows Remain
+					}),
 					-- repeatables below
 					q(62401, {	-- Strange Scourgestones
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 21.6, 118 },
-						["races"] = HORDE_ONLY,	-- TODO: confirm
-						["isDaily"] = true,
 						["provider"] = { "n", 169718 },	-- Veteran Crusader Aliocha Segard
-						["sourceQuest"] = 60004,	-- A Valiant Effort -- TODO: confirm. First noticed after turning this quest in, but may actually be available once you loot your first scourgestone
 						["g"] = {
 							i(12844),	-- Argent Dawn Valor Token
 						},
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(62293, {	-- Darkened Scourgestones
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 21.6, 118 },
-						["races"] = HORDE_ONLY,	-- TODO: confirm
 						["provider"] = { "n", 169718 },	-- Veteran Crusader Aliocha Segard
 						["repeatable"] = true,
 						["sourceQuest"] = 62401,	-- Strange Scourgestones
 						["g"] = {
 							i(12844),	-- Argent Dawn Valor Token
 						},
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
 					q(62292, {	-- Pitch Black Scourgestones
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 21.6, 118 },
-						["races"] = HORDE_ONLY,	-- TODO: confirm
 						["provider"] = { "n", 169718 },	-- Veteran Crusader Aliocha Segard
 						["repeatable"] = true,
 						["sourceQuest"] = 62401,	-- Strange Scourgestones
 						["g"] = {
 							i(12844),	-- Argent Dawn Valor Token
 						},
-						["lvl"] = 48,
+						["lvl"] = 50,
 					}),
-					--[[
-					q(, {	--
-						["maps"] = {  },
-						["coord"] = {  },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n",  },	--
-						["sourceQuest"] = ,	--
-					}),
-					]]--
 				}),
 				n(RARES, {
 					n(169035, {	-- Nathanos Blightcaller
@@ -625,39 +608,39 @@ _.WorldEvents =
 							85,	-- Orgrimmar
 						},
 						["g"] = bubbleDown({["cost"] = { { "c", 1754, 15 } }}, {
-							i(183555),	-- PH Prologue Horde Cloth Cloak
-							i(183538),	-- PH Prologue Horde Cloth Feet
-							i(183576),	-- PH Prologue Horde Cloth Hand
-							i(183575),	-- PH Prologue Horde Cloth Head
-							i(183539),	-- PH Prologue Horde Cloth Legs
-							i(183535),	-- PH Prologue Horde Cloth Robe
-							i(183574),	-- PH Prologue Horde Cloth Shoulder
-							i(183577),	-- PH Prologue Horde Cloth Waist
-							i(183541),	-- PH Prologue Horde Cloth Wrist
-							i(183537),	-- PH Prologue Horde Leather Chest
-							i(183581),	-- PH Prologue Horde Leather Feet
-							i(183580),	-- PH Prologue Horde Leather Hand
-							i(183579),	-- PH Prologue Horde Leather Head
-							i(183540),	-- PH Prologue Horde Leather Legs
-							i(183578),	-- PH Prologue Horde Leather Shoulder
-							i(183582),	-- PH Prologue Horde Leather Waist
-							i(183544),	-- PH Prologue Horde Leather Wrist
-							i(183536),	-- PH Prologue Horde Mail Chest
-							i(183587),	-- PH Prologue Horde Mail Feet
-							i(183586),	-- PH Prologue Horde Mail Hand
-							i(183585),	-- PH Prologue Horde Mail Head
-							i(183584),	-- PH Prologue Horde Mail Legs
-							i(183583),	-- PH Prologue Horde Mail Shoulder
-							i(183588),	-- PH Prologue Horde Mail Waist
-							i(183543),	-- PH Prologue Horde Mail Wrist
-							i(183593),	-- PH Prologue Horde Plate Chest
-							i(183594),	-- PH Prologue Horde Plate Feet
-							i(183592),	-- PH Prologue Horde Plate Hand
-							i(183591),	-- PH Prologue Horde Plate Head
-							i(183590),	-- PH Prologue Horde Plate Legs
-							i(183589),	-- PH Prologue Horde Plate Shoulder
-							i(183595),	-- PH Prologue Horde Plate Waist
-							i(183542),	-- PH Prologue Horde Plate Wrist
+							i(183555),	-- Argent Conscript's Cape
+							i(183538),	-- Argent Conscript's Treads
+							i(183576),	-- Argent Conscript's Gloves
+							i(183575),	-- Argent Conscript's Skullcap
+							i(183539),	-- Argent Conscript's Leggings
+							i(183535),	-- Argent Conscript's Robe
+							i(183574),	-- Argent Conscript's Mantle
+							i(183577),	-- Argent Conscript's Cord
+							i(183541),	-- Argent Conscript's Bracers
+							i(183537),	-- Argent Conscript's Tunic
+							i(183581),	-- Argent Conscript's Boots
+							i(183580),	-- Argent Conscript's Grips
+							i(183579),	-- Argent Conscript's Mask
+							i(183540),	-- Argent Conscript's Leggings
+							i(183578),	-- Argent Conscript's Pauldrons
+							i(183582),	-- Argent Conscript's Belt
+							i(183544),	-- Argent Conscript's Wriststraps
+							i(183536),	-- Argent Conscript's Mail Shirt
+							i(183587),	-- Argent Conscript's Folded Boots
+							i(183586),	-- Argent Conscript's Overgloves
+							i(183585),	-- Argent Conscript's Helmet
+							i(183584),	-- Argent Conscript's Pants
+							i(183583),	-- Argent Conscript's Shoulderguards
+							i(183588),	-- Argent Conscript's Cinch
+							i(183543),	-- Argent Conscript's Wristclamps
+							i(183593),	-- Argent Conscript's Breastplate
+							i(183594),	-- Argent Conscript's Greaves
+							i(183592),	-- Argent Conscript's Gauntlets
+							i(183591),	-- Argent Conscript's Tuskhelm
+							i(183590),	-- Argent Conscript's Greaves
+							i(183589),	-- Argent Conscript's Spaulders
+							i(183595),	-- Argent Conscript's Buckle
+							i(183542),	-- Argent Conscript's Wristplates
 							i(180454),	-- Anti-Doom Broom
 							i(183621, {	-- Putrid Geist
 								["cost"] = { { "c", 1754, 20 } },
@@ -670,39 +653,39 @@ _.WorldEvents =
 							118,	-- Icecrown
 						},
 						["g"] = bubbleDown({["cost"] = { { "c", 1754, 15 } }}, {
-							i(183555),	-- PH Prologue Horde Cloth Cloak
-							i(183538),	-- PH Prologue Horde Cloth Feet
-							i(183576),	-- PH Prologue Horde Cloth Hand
-							i(183575),	-- PH Prologue Horde Cloth Head
-							i(183539),	-- PH Prologue Horde Cloth Legs
-							i(183535),	-- PH Prologue Horde Cloth Robe
-							i(183574),	-- PH Prologue Horde Cloth Shoulder
-							i(183577),	-- PH Prologue Horde Cloth Waist
-							i(183541),	-- PH Prologue Horde Cloth Wrist
-							i(183537),	-- PH Prologue Horde Leather Chest
-							i(183581),	-- PH Prologue Horde Leather Feet
-							i(183580),	-- PH Prologue Horde Leather Hand
-							i(183579),	-- PH Prologue Horde Leather Head
-							i(183540),	-- PH Prologue Horde Leather Legs
-							i(183578),	-- PH Prologue Horde Leather Shoulder
-							i(183582),	-- PH Prologue Horde Leather Waist
-							i(183544),	-- PH Prologue Horde Leather Wrist
-							i(183536),	-- PH Prologue Horde Mail Chest
-							i(183587),	-- PH Prologue Horde Mail Feet
-							i(183586),	-- PH Prologue Horde Mail Hand
-							i(183585),	-- PH Prologue Horde Mail Head
-							i(183584),	-- PH Prologue Horde Mail Legs
-							i(183583),	-- PH Prologue Horde Mail Shoulder
-							i(183588),	-- PH Prologue Horde Mail Waist
-							i(183543),	-- PH Prologue Horde Mail Wrist
-							i(183593),	-- PH Prologue Horde Plate Chest
-							i(183594),	-- PH Prologue Horde Plate Feet
-							i(183592),	-- PH Prologue Horde Plate Hand
-							i(183591),	-- PH Prologue Horde Plate Head
-							i(183590),	-- PH Prologue Horde Plate Legs
-							i(183589),	-- PH Prologue Horde Plate Shoulder
-							i(183595),	-- PH Prologue Horde Plate Waist
-							i(183542),	-- PH Prologue Horde Plate Wrist
+							i(183555),	-- Argent Conscript's Cape
+							i(183538),	-- Argent Conscript's Treads
+							i(183576),	-- Argent Conscript's Gloves
+							i(183575),	-- Argent Conscript's Skullcap
+							i(183539),	-- Argent Conscript's Leggings
+							i(183535),	-- Argent Conscript's Robe
+							i(183574),	-- Argent Conscript's Mantle
+							i(183577),	-- Argent Conscript's Cord
+							i(183541),	-- Argent Conscript's Bracers
+							i(183537),	-- Argent Conscript's Tunic
+							i(183581),	-- Argent Conscript's Boots
+							i(183580),	-- Argent Conscript's Grips
+							i(183579),	-- Argent Conscript's Mask
+							i(183540),	-- Argent Conscript's Leggings
+							i(183578),	-- Argent Conscript's Pauldrons
+							i(183582),	-- Argent Conscript's Belt
+							i(183544),	-- Argent Conscript's Wriststraps
+							i(183536),	-- Argent Conscript's Mail Shirt
+							i(183587),	-- Argent Conscript's Folded Boots
+							i(183586),	-- Argent Conscript's Overgloves
+							i(183585),	-- Argent Conscript's Helmet
+							i(183584),	-- Argent Conscript's Pants
+							i(183583),	-- Argent Conscript's Shoulderguards
+							i(183588),	-- Argent Conscript's Cinch
+							i(183543),	-- Argent Conscript's Wristclamps
+							i(183593),	-- Argent Conscript's Breastplate
+							i(183594),	-- Argent Conscript's Greaves
+							i(183592),	-- Argent Conscript's Gauntlets
+							i(183591),	-- Argent Conscript's Tuskhelm
+							i(183590),	-- Argent Conscript's Greaves
+							i(183589),	-- Argent Conscript's Spaulders
+							i(183595),	-- Argent Conscript's Buckle
+							i(183542),	-- Argent Conscript's Wristplates
 							i(180454),	-- Anti-Doom Broom
 							i(183621, {	-- Putrid Geist
 								["cost"] = { { "c", 1754, 20 } },

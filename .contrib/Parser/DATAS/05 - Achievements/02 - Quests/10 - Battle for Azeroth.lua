@@ -22,7 +22,7 @@ _.Achievements =
 				["_quests"] = { 50665 },	-- Cancel the Blood Troll Apocalypse
 			})),
 			ach(13042, {	-- About To Break
-				["_quests"] = { 
+				["_quests"] = {
 					53108,	-- Iconoclasm [A]
 					53344	-- Iconoclasm
 				},
@@ -54,28 +54,28 @@ _.Achievements =
 			ach(13050, {	-- Bless the Rains Down in Freehold
 				crit(1, {		-- Banana Hoard
 					["coord"] = { 76.1, 84.6, 895 },
-					["_quests"] = { 
+					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
 					},
 				}),
 				crit(2, {		-- Sweete's Feast
 					["coord"] = { 73.3, 83.9, 895 },
-					["_quests"] = { 
+					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
 					},
 				}),
 				crit(3, {		-- Cart o' Cutlasses
 					["coord"] = { 75.0, 82.9, 895 },
-					["_quests"] = { 
+					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
 					},
 				}),
 				crit(4, {		-- Blacktooth Brew
 					["coord"] = { 76.6, 81.8, 895 },
-					["_quests"] = { 
+					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
 					},
@@ -93,7 +93,7 @@ _.Achievements =
 				crit(9),		-- Sethraliss respected
 			})),
 			ach(13035, {	-- By de Power of de Loa!
-				["_quests"] = { 
+				["_quests"] = {
 					51178,	-- Hundred Troll Holdout (A)
 					51232,	-- Hundred Troll Holdout (H)
 				},
@@ -113,7 +113,7 @@ _.Achievements =
 			h(ach(13435)),	-- Doomsoul Surprise
 			a(ach(13059, {	-- Drag Race
 				["_quests"] = { 53346 },	-- Trogg Tromping
-			})),	
+			})),
 			ach(13045),		-- Every Day I'm Truffling
 			a(ach(13283, {	-- Frontline Warrior (A)
 				crit(1, {		-- A Sound Defense
