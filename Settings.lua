@@ -199,9 +199,6 @@ settings.Initialize = function(self)
 	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase);
 	FilterSettingsBase.__index = app.Presets[app.Class] or app.Presets.ALL;
 	
-	self.CacheCompletedGroups = self:Get("Show:CompletedGroups");
-	self.CacheCollectedThings = self:Get("Show:CollectedThings");
-	
 	self.ContainsSlider:SetValue(self:GetTooltipSetting("ContainsCount") or 25);
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations") or 5);
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
@@ -693,13 +690,13 @@ function(self)
 	settings:SetDebugMode(self:GetChecked());
 	if self:GetChecked() then
 		-- cache the current settings to re-apply after
-		settings.CacheCompletedGroups = settings:Get("Show:CompletedGroups");
-		settings.CacheCollectedThings = settings:Get("Show:CollectedThings");
+		settings:Set("Cache:CompletedGroups", settings:Get("Show:CompletedGroups"));
+		settings:Set("Cache:CollectedThings", settings:Get("Show:CollectedThings"));
 		settings:SetCompletedGroups(true);
 		settings:SetCollectedThings(true);
 	else
-		settings:SetCompletedGroups(settings.CacheCompletedGroups);
-		settings:SetCollectedThings(settings.CacheCollectedThings);
+		settings:Set("Show:CompletedGroups", settings:Get("Cache:CompletedGroups"));
+		settings:Set("Show:CollectedThings", settings:Get("Cache:CollectedThings"));
 	end
 end);
 DebugModeCheckBox:SetATTTooltip("Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.");
@@ -1464,6 +1461,7 @@ function(self)
 end,
 function(self)
 	settings:SetCompletedGroups(self:GetChecked());
+	settings:Set("Cache:CompletedGroups", self:GetChecked());
 	settings:UpdateMode(1);
 end);
 ShowCompletedGroupsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
@@ -1475,6 +1473,7 @@ function(self)
 end,
 function(self)
 	settings:SetCollectedThings(self:GetChecked());
+	settings:Set("Cache:CollectedThings", self:GetChecked());
 	settings:UpdateMode(1);
 end);
 ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
