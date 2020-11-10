@@ -9537,7 +9537,9 @@ local function NestSourceQuests(root, addedQuests, depth)
 					-- clone the object so as to not modify actual data
 					sq = CloneData(sq);
 					-- force collectible to make sure it shows in list
-					sq.collectible = true;
+					if not sq.isBreadcrumb then
+						sq.collectible = true;
+					end
 					sq.visible = true;
 					sq.hideText = true;
 					-- clean anything out of it so that items don't show in the quest requirements
