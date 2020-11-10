@@ -8,6 +8,13 @@ _.Zones =
 		m(1161, {	-- Boralus
 			n(-38, {	-- Professions
 				prof(ALCHEMY, {
+					q(54463, {	-- Alchemical Equations
+						["requireSkill"] = ALCHEMY,
+						["provider"] = { "n", 132228 },	-- Elric Whalgrene
+						["coord"] = { 74.2, 6.60, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					}),
 					-- Tools of Trade Questline
 					q(50121, {	-- Casting the First Stone (A)
 						["provider"] = { "n", 132228 },	-- Elric Whalgrene
@@ -46,6 +53,13 @@ _.Zones =
 					}),
 				}),
 				prof(BLACKSMITHING, {
+					q(54465, {	-- Blacksmithing Plans
+						["requireSkill"] = BLACKSMITHING,
+						["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
+						["coord"] = { 73.6, 8.6, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					}),
 					-- Tools of Trade Questline
 					q(50123, {	-- A Recipe For the Ages (A)
 						["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
@@ -77,20 +91,22 @@ _.Zones =
 				}),
 				prof(COOKING, {
 					q(54469, {	-- Fresh Dishes (A)
+						["requireSkill"] = COOKING,
 						["provider"] = { "n", 136052 },	-- "Cap'n" Byron Mehlsack <Cooking Trainer>
 						["coord"] = { 71.2, 10.8, 1161 },
-						["requireSkill"] = COOKING,
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 110,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
 					}),
 				}),
 				prof(ENCHANTING, {
-					q(54473, {	-- Enchanted Formulae (H)
+					q(54473, {	-- Enchanted Formulae
+						["requireSkill"] = ENCHANTING,
 						["provider"] = { "n", 136041 },	-- Emily Fairweather <Enchanting Trainer>
 						["coord"] = { 74.1, 11.4, 1161 },
-						["requireSkill"] = ENCHANTING,
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 110,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
 					}),
 					q(54005, {	-- What the Drust Knew (A)
 						["provider"] = { "n", 136041 },	-- Emily Fairweather
@@ -110,6 +126,13 @@ _.Zones =
 					}),
 				}),
 				prof(ENGINEERING, {
+					q(54475, {	-- Engineered Blueprints
+						["requireSkill"] = ENGINEERING,
+						["provider"] = { "n", 136059 },	-- Layla Evenkeel
+						["coord"] = { 77.4, 14.2, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					}),
 					-- Tools of Trade Questline
 					q(55028, {	-- It's Scrap Work... (A)
 						["provider"] = { "n", 136059 },	-- Layla Evenkeel
@@ -268,7 +291,23 @@ _.Zones =
 						},
 					}),
 				}),
+				prof(INSCRIPTION, {
+					q(54477, {	-- Inscribed Methods
+						["requireSkill"] = INSCRIPTION,
+						["provider"] = { "n", 130399 },	-- Zooey Inksprocket
+						["coord"] = { 73.4, 6.3, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					}),
+				}),
 				prof(JEWELCRAFTING, {
+					q(54479, {	-- Jeweled Designs
+						["requireSkill"] = JEWELCRAFTING,
+						["provider"] = { "n", 130368 },	-- Samuel D. Colton III
+						["coord"] = { 75.2, 9.9, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					}),
 					-- Tools of Trade Questline
 					q(49570, {	-- A Rocky Start (A)
 						["provider"] = { "o", 278570 },	-- Ancient Journal
@@ -380,6 +419,13 @@ _.Zones =
 					}),
 				}),
 				prof(LEATHERWORKING, {
+					q(54481, {	-- Leathered Patterns
+						["requireSkill"] = LEATHERWORKING,
+						["provider"] = { "n", 136063 },	-- Cassandra Brennor
+						["coord"] = { 75.5, 12.6, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					}),
 					-- Tools of Trade Questline
 					q(55227, {	-- The Aeonian Artisan
 						["provider"] = { "n", 136063 },	-- Cassandra Brennor
@@ -695,11 +741,12 @@ _.Zones =
 						["lvl"] = 120,
 					}),
 					q(54483, {	-- Tailored Training (A)
+						["requireSkill"] = TAILORING,
 						["provider"] = { "n", 136071 },	-- Daniel Brineweaver <Tailoring Trainer>
 						["coord"] = { 76.8, 11.2, 1161 },
-						["requireSkill"] = TAILORING,
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 110,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
 					}),
 					q(53869, {	-- Killing Time
 						["provider"] = { "n", 151134 },	-- Timeweaver Delormi

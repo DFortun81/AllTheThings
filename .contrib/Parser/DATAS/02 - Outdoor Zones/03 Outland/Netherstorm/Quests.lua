@@ -292,7 +292,7 @@ _.Zones =
 						}),
 						q(10185, {	-- A Fate Worse Than Death
 							["provider"] = { "n", 19488 },	-- Custodian Dieworth
-							["coord"] = { 31.4, 66.1, 109 },
+							["coord"] = { 57.6, 86.2, 109 },
 							["sourceQuest"] = 10174,	-- Curse of the Violet Tower
 							["groups"] = {
 								i(29955),	-- Mana Infused Wristguards

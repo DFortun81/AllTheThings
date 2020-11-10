@@ -17,9 +17,7 @@ _.Zones =
 				q(45653),	-- Kill it with Fire!
 				q(46046),	-- Life's a Lich
 				q(46755),	-- Mission: Felraging
-				q(45793),	-- Occultist Onslaught
 				q(46945),	-- Si'vash
-				q(46811),	-- The Broodmother's Wrath
 			}),
 ]]--
 				q(45473, {	-- A Giant Problem
@@ -247,6 +245,11 @@ _.Zones =
 					["lvl"] = { 45 },
 					["isWorldQuest"] = true,
 				}),
+				q(45793, {	-- Occultist Onslaught
+					["isWorldQuest"] = true,
+					["classes"] = { WARLOCK },
+					["lvl"] = { 45 },
+				}),
 				q(46752, {	-- On Borrowed Wings
 					["isWorldQuest"] = true,
 					["lvl"] = { 45 },
@@ -313,6 +316,11 @@ _.Zones =
 					["lvl"] = { 45 },
 					["isWorldQuest"] = true,
 				}),
+				q(46811, {	-- The Broodmother's Wrath
+					["isWorldQuest"] = true,
+					["classes"] = { DEATHKNIGHT },
+					["lvl"] = { 45 },
+				}),
 				q(45805, {	-- The Burning Keys
 					["lvl"] = { 45 },
 					["isWorldQuest"] = true,
@@ -369,7 +377,7 @@ _.Zones =
 					["lvl"] = { 45 },
 					["isWorldQuest"] = true,
 				}),
-				n(-322, {	-- Cloak
+				n(-322,  {	-- Cloak
 					i(146886),	-- Felknight Greatcloak
 					i(146857),	-- Mo'arg Overseer's Cloak
 					i(134365),	-- Netherwracked Greatcloak

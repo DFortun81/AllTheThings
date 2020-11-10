@@ -7,11 +7,6 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
 			n(QUESTS, {	-- [Alliance]
-				i(163603, {	-- Lucille's Handkerchief
-					["sourceQuests"] = { 50763 },	-- One Last Request
-					["description"] = "After completing the quest \"One Last Request\" you can return back to the house, go upstairs and it will be in the dresser.",
-					["coord"] = { 24.3, 14.9, 896 },
-				}),
 				q(50970, {	-- A Farmer's Fate
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
 					["coord"] = { 29.9, 40.4, 896 },
@@ -721,10 +716,18 @@ _.Zones =
 					["sourceQuests"] = { 48111 },	-- Trial by Superstition
 				}),
 				q(50763, {	-- One Last Request
+					["sourceQuests"] = { 50762 },	-- The Lady's Fate
 					["provider"] = { "n", 135200 },	-- Alexander Treadward
 					["coord"] = { 23.3, 17.4, 896 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 50762 },	-- The Lady's Fate
+					["g"] = {
+					--	putting it here because it makes more sense to only be displayed for alliance characters in the zone, as they are the only ones who can collect it, and must complete this quest to do so.  it will still show up in the toy section of the mainlist, as the item itself is not tagged ALLIANCE_ONLY, but will not appear for characters who cannot collect it (without account mode on).
+					--	also, if people report "i did the quest and didn't receive the item," "read the description on the toy" is a simpler explanation than "the toy can only be collected on alliance characters but can be used by both factions, so you need to collect it on an alt."  we will get reports either way, but it should be easier for us this way
+						i(163603, {	-- Lucille's Handkerchief
+							["description"] = "After completing the quest \"One Last Request\" you can return back to the house, go upstairs and it will be in the dresser.",
+							["coord"] = { 24.3, 14.9, 896 },
+						}),
+					},
 					-- Not required for "Drust Do It."
 				}),
 				q(50911, {	-- One Man Against the Horde

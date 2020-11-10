@@ -8,6 +8,13 @@ _.Zones =
 		m(1163, {	-- Dazar'alor
 			n(-38, {	-- Professions
 				prof(ALCHEMY, {
+					q(54464, {	-- Alchemical Equations
+						["requireSkill"] = ALCHEMY,
+						["provider"] = { "n", 122703 },	-- Clever Kumali
+						["coord"] = { 42.2, 38.0, 1165 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					}),
 					-- Tools of Trade Questline
 					q(50112, {	-- Casting the First Stone (H)
 						["provider"] = { "n", 122703 },	-- Clever Kumali
@@ -35,6 +42,13 @@ _.Zones =
 					}),
 				}),
 				prof(BLACKSMITHING, {
+					q(54466, {	-- Blacksmithing Plans
+						["requireSkill"] = BLACKSMITHING,
+						["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
+						["coord"] = { 43.6, 38.3, 1165 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					}),
 					-- Tools of Trade Questline
 					q(50276, {	-- A Recipe For the Ages (H)
 						["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
@@ -66,20 +80,22 @@ _.Zones =
 				}),
 				prof(COOKING, {
 					q(54470, {	-- Fresh Dishes (H)
+						["requireSkill"] = COOKING,
 						["provider"] = { "n", 141549 },	-- T'sarah the Royal Chef <Cooking Trainer>
 						["coord"] = { 28.5, 50.0, 1164 },
-						["requireSkill"] = COOKING,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
 					}),
 				}),
 				prof(ENCHANTING, {
-					q(54474, {	-- Enchanted Formulae (H)
+					q(54474, {	-- Enchanted Formulae
+						["requireSkill"] = ENCHANTING,
 						["provider"] = { "n", 122702 },	-- Enchantress Quinni <Enchanting Trainer>
 						["coord"] = { 47.0, 35.8, 1165 },
-						["requireSkill"] = ENCHANTING,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
 					}),
 					-- Tools of Trade Questline
 					q(54161, {	-- What the Drust Knew (H)
@@ -100,6 +116,13 @@ _.Zones =
 					}),
 				}),
 				prof(ENGINEERING, {
+					q(54476, {	-- Engineered Blueprints
+						["requireSkill"] = ENGINEERING,
+						["provider"] = { "n", 131840 },	-- Shuga Blastcaps
+						["coord"] = { 45.1, 40.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					}),
 					-- Tools of Trade Questline
 					q(55031, {	-- It's Scrap Work... (H)
 						["provider"] = { "n", 131840 },	-- Shuga Blastcaps
@@ -260,7 +283,23 @@ _.Zones =
 						},
 					}),
 				}),
+				prof(INSCRIPTION, {
+					q(54478, {	-- Inscribed Methods
+						["requireSkill"] = INSCRIPTION,
+						["provider"] = { "n", 130901 },	-- Chronicler Grazzul
+						["coord"] = { 42.3, 39.7, 1165 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					}),
+				}),
 				prof(JEWELCRAFTING, {
+					q(54480, {	-- Jeweled Designs
+						["requireSkill"] = JEWELCRAFTING,
+						["provider"] = { "n", 122695 },	-- Seshuli
+						["coord"] = { 47.1, 37.9, 1165 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					}),
 					-- Tools of Trade Questline
 					q(49585, {	-- A Rocky Start (H)
 						["provider"] = { "o", 278570 },	-- Ancient Journal
@@ -372,6 +411,13 @@ _.Zones =
 					}),
 				}),
 				prof(LEATHERWORKING, {
+					q(54482, {	-- Leathered Patterns
+						["requireSkill"] = LEATHERWORKING,
+						["provider"] = { "n", 122698 },	-- Xanjo
+						["coord"] = { 44.1, 34.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					}),
 					-- Tools of Trade Questline
 					q(53995, {	-- The Tauren Tanner
 						["provider"] = { "n", 122698 },	-- Xanjo
@@ -678,11 +724,12 @@ _.Zones =
 						["lvl"] = 120,
 					}),
 					q(54484, {	-- Tailored Training (H)
+						["requireSkill"] = TAILORING,
 						["provider"] = { "n", 122700 },	-- Pin'jin the Patient <Tailoring Trainer>
 						["coord"] = { 44.5, 33.9, 1165 },
-						["requireSkill"] = TAILORING,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
+						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
 					}),
 					q(53869, {	-- Killing Time
 						["provider"] = { "n", 151134 },	-- Timeweaver Delormi

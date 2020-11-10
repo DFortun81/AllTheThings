@@ -951,6 +951,14 @@ _.HiddenQuestTriggers =
 		q(36295),	-- Lumber Mill — Phylarch the Evergreen second attack
 		q(39414),	-- Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
 		q(36058),	-- Seal of Tempered Fate: Armory
+		q(36894),	-- Nemesis Flag, Draenei/Blood Elf — all these are for burning effigies of specific races in the Gladiator Sanctum
+		q(36891),	-- Nemesis Flag, Dwarf/Forsaken
+		q(36892),	-- Nemesis Flag, Gnome/Tauren
+		q(36956),	-- Nemesis Flag, Human
+		q(36890),	-- Nemesis Flag, Human/Orc
+		q(36893),	-- Nemesis Flag, Night Elf/Troll
+		q(36896),	-- Nemesis Flag, Pandaren (A/H)
+		q(36895),	-- Nemesis Flag, Worgen/Goblin
 
 		-- ASSAULTS
 		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
@@ -1380,6 +1388,7 @@ _.HiddenQuestTriggers =
 		--	Artifact Appearances
 		q(43655),	-- Hidden Appearance unlocked (The Silver Hand?)
 		q(45130),	-- Hidden Appearance unlocked
+		q(43647),	-- Hidden Appearance Unlocked (learning a hidden artifact appearance on a DK, presumably the one from Soultakers, based on Discord reports)
 
 		--	Professions
 		--	Archaeology
@@ -1475,6 +1484,7 @@ _.HiddenQuestTriggers =
 		q(47091),	-- Si'vash bonus roll
 		q(44510),	-- The Soultakers killID
 		q(44905),	-- The Soultakers bonus roll
+		q(44149),	-- The Soultakers, triggered when Runes of the Darkening drops for a DK
 		q(44511),	-- Withered J'im killID
 		q(44906),	-- Withered J'im bonus roll
 
@@ -1565,6 +1575,7 @@ _.HiddenQuestTriggers =
 		--	Rares
 		q(43961),	-- Azsuna - WQ rare: Bestrix
 		q(44882),	-- Azsuna - WQ rare: Bloodgazer Matriarch
+		q(42699),	-- Azsuna - WQ rare: Coura, Mistress of Arcana
 		q(45489),	-- Azsuna - WQ rare: Deepclaw
 		q(45499),	-- Azsuna - WQ rare: Fjordun
 		q(45497),	-- Azsuna - WQ rare: Stormfeather
@@ -1761,6 +1772,8 @@ _.HiddenQuestTriggers =
 		]]--
 
 		--	VARIOUS
+		q(47703),	-- triggered while on #47631, "Rendezvous with the Libation"
+		q(50465),	-- triggered with #49950, "Blood Purification"
 		q(50419),	-- tracking quest from the 8.1.5 Blacksmithing questling ending with "Therazane's Choice"
 		q(48575),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity? Maybe an alliance/horde equivalent?
 		q(53441),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity?
@@ -2309,6 +2322,7 @@ _.HiddenQuestTriggers =
 		q(50925),	-- Vol'dun repeatable random chest
 		-- Various
 		q(49684),	-- triggered when picking the staff on "Armed and Ready"
+		q(49685),	-- triggered when picking the scythe/glaive thing on "Armed and Ready"
 		q(47647),	-- Monsters of Zem'lan - bonus quest
 		q(50805),	-- Skycaller Shutdown - bonus quest
 		q(50805),	-- Skycaller Shutdown - bonus quest

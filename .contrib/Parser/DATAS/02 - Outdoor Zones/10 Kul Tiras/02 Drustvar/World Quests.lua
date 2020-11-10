@@ -44,18 +44,6 @@ _.Zones =
 					q(48604, {	-- Home Again, Home Again
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(53274, {	-- Overgrown Anchor Weed
-						["isWorldQuest"] = true,
-						["requireSkill"] = HERBALISM,
-						["isWorldQuest"] = true,
-						["lvl"] = { 50 },
-					}),
-					q(53282, {	-- Overgrown Anchor Weed
-						["isWorldQuest"] = true,
-						["requireSkill"] = HERBALISM,
-						["isWorldQuest"] = true,
-						["lvl"] = { 50 },
-					}),
 					q(54627),	-- Paragon of the Order of Embers
 					q(48515, {	-- Silver Blades
 						["races"] = ALLIANCE_ONLY,
@@ -512,6 +500,18 @@ _.Zones =
 						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(53274, {	-- Overgrown Anchor Weed
+						["requireSkill"] = HERBALISM,
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,	-- probably?  reported as seen on an alliance character
+						["lvl"] = { 50 },
+					}),
+					q(53282, {	-- Overgrown Anchor Weed
+						["requireSkill"] = HERBALISM,
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,	-- probably?
+						["lvl"] = { 50 },
 					}),
 					q(54666, {	-- Packmaster Swiftarrow (Faction Assault WQ)
 						["lvl"] = 110,

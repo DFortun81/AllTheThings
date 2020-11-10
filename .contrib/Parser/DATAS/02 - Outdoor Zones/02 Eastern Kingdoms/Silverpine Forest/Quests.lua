@@ -624,6 +624,8 @@ _.Zones =
 					["sourceQuests"] = {
 						27226,	-- Hair of the Dog
 						27195,	-- Nowhere to Run
+						27231,	-- Reinforcements From Fenris
+						27232,	-- The Waters Run Red
 					},
 				}),
 				q(9601, {	-- To The Bulwark
