@@ -402,6 +402,7 @@ _.WorldEvents =
 							i(183200),	-- Pitch Black Scourgestone
 							i(183673),	-- Nerubian Aegis Ring
 							i(183641),	-- Shoulderpads of Corpal Rigidity
+							i(183624),	-- Serrated Blade of Nadox
 						},
 					}),
 					n(174054, {	-- Falric (17)
