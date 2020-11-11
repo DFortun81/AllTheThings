@@ -181,6 +181,11 @@ _.WorldEvents =
 						["sourceQuest"] = 60827,	-- Advancing the Effort
 						["lvl"] = 50,
 					}),
+					q(62553, {	-- Delaying Their Efforts
+						["maps"] = { 118 },	-- Icecrown
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 50,
+					}),
 					q(60841, {	-- Evacuation Effort
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 21.9, 118 },
