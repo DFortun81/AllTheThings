@@ -347,12 +347,18 @@ _.WorldEvents =
 						["maps"] = { 23 },	-- Eastern Plaguelands
 						["coord"] = { 23.5, 68.4, 23 },
 						["isRaid"] = true,
-						["questID"] = 60541,
-						["altQuests"] = {
-							60542,	-- This is the world quest ID. Not sure if it's repeatable, so using the loot tracker on Nathanos directly and we can add the quest itself later if it's relevant
-						},
+						["questID"] = 60542,
+						["isWorldQuest"] = true,
+						-- ["questID"] = 60541, -- didn't get this when he died
+						-- ["altQuests"] = {
+							-- 60542,	-- This is the world quest ID. Not sure if it's repeatable, so using the loot tracker on Nathanos directly and we can add the quest itself later if it's relevant
+						-- },
 						["g"] = {
 							-- world quest grants the equivalent of a darkshore cache. Not sure yet if he has his own loot table
+							-- the cache has a special item string... blah only drops weapons and apparently is guaranteed (finally)
+							-- i(165614),	-- Apothecary Spellstaff
+							-- i(166482),	-- Deathguard's Greatsword
+							-- i(166802),	-- Plaguebringer's Spellblade
 						},
 					}),
 					-- rares spawn every 20 minutes
@@ -366,7 +372,7 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 49.6, 32.3, 118 },
 						["questID"] = 62343,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183646),	-- Chestguard of Siphoned Vitality
@@ -378,7 +384,7 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 70.6, 38.5, 118 },
 						["questID"] = 62336,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183675),	-- Cold Sweat Mitts
@@ -391,7 +397,7 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 44.2, 49.2, 118 },
 						["questID"] = 62326,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183673),	-- Nerubian Aegis Ring
@@ -402,7 +408,7 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 50.2, 88.1, 118 },
 						["questID"] = 62332,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183664),	-- Bracer of Ground Molars
@@ -414,7 +420,7 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 59.1, 72.5, 118 },
 						["questID"] = 62334,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183666),	-- Legguards of the Frosty Fathoms
@@ -426,7 +432,7 @@ _.WorldEvents =
 						["maps"] = { 118 }, -- Icecrown
 						["coord"] = { 52.3, 52.6, 118 },
 						["questID"] = 62339,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183659),	-- Annhylde's Band
@@ -438,7 +444,7 @@ _.WorldEvents =
 						["maps"] = { 118 }, -- Icecrown
 						["coord"] = { 67.5, 58.2, 118 },
 						["questID"] = 62328,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183682),	-- Cinch of the Servant
@@ -450,7 +456,7 @@ _.WorldEvents =
 						["maps"] = { 118 }, -- Icecrown
 						["coord"] = { 51.2, 78.6, 118 },
 						["questID"] = 62341,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183641),	-- Shoulderpads of Corpal Rigidity
@@ -463,7 +469,7 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 58.2, 83.5, 118 },
 						["questID"] = 62333,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183687),	-- Frayed Flesh-Stitched Shoulderguards
@@ -475,7 +481,7 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 31.5, 70.4, 118 },
 						["questID"] = 62345,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183642),	-- Robes of Rasped Breaths
@@ -486,7 +492,7 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 77.9, 66.2, 118 },
 						["questID"] = 62330,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183671),	-- Necromantic Wristwraps
@@ -498,7 +504,7 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 36.5, 67.7, 118 },
 						["questID"] = 62344,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["description"] = "Inside the Sanctum of Reanimation at the Fleshworks.",
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
@@ -511,30 +517,32 @@ _.WorldEvents =
 						["maps"] = { 118 }, -- Icecrown
 						["coord"] = { 53.9, 44.7, 118 },
 						["questID"] = 62338,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183678),	-- Keleseth's Influencer
 							i(183677),	-- Blood-Drinker's Belt -- TODO: does Keleseth actually drop this or does Taldaram? Need more data
 							i(183661),	-- Drake Stablers Gauntlets
+							i(183680),	-- Royal Sanguine Cloak
 						},
 					}),
 					n(174049, {	-- Prince Taldaram (2)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 30.0, 62.4, 118 },
 						["questID"] = 62327,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183679),	-- Taldaram's Supple Slippers
 							i(183625),	-- Reforged Necklace of Taldaram
+							i(183677),	-- Blood-Drinker's Belt (reported on discord)
 						},
 					}),
 					n(174064, {	-- Professor Putricide (7)
 						["maps"] = { 118 },
 						["coord"] = { 57.1, 30.5, 118 },
 						["questID"] = 62342,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183649),	-- Bag of Discarded Entrails
@@ -546,7 +554,7 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 47.1, 66.0, 118 },
 						["questID"] = 62335,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183674),	-- Rimewoven Pantaloons
@@ -558,7 +566,7 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 57.7, 56.0, 118 },
 						["questID"] = 62340,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183670),	-- Skadi's Saronite Belt
@@ -570,7 +578,7 @@ _.WorldEvents =
 						["maps"] = { 118 }, -- Icecrown
 						["coord"] = { 64.9, 22.1, 118 },
 						["questID"] = 62337,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183638),	-- Phantasmic Kris
@@ -582,7 +590,7 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 80.3, 61.4, 118 },
 						["questID"] = 62331,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183686),	-- Breeches of the Skeletal Serpent
@@ -594,11 +602,12 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 58.3, 39.3, 118 },
 						["questID"] = 62329,
-						["isDaily"] = true,
+						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183669),	-- Cowl of the Rampaging Trollgore
 							i(183626),	-- Troll Gorer
+							i(183640),	-- Leggings of Disreputable Charms
 						},
 					}),
 				}),
