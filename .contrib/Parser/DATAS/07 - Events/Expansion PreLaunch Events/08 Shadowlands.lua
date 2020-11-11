@@ -166,6 +166,53 @@ _.WorldEvents =
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = 50,
 					}),
+					-------------------------- Dailies --------------------------
+					q(59863, {	-- Combat Nullifier 07-X
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 73.1, 35.6, 118 },
+						["provider"] = { "n", 173124 },	-- Binkie Brightgear
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 50,
+					}),
+					q(59783, {	-- Cultist Captors
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 66.0, 21.9, 118 },
+						["provider"] = { "n", 168880 },	-- Sentry Joren
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 50,
+					}),
+					q(60841, {	-- Evacuation Effort
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 71.0, 21.9, 118 },
+						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 50,
+					}),
+					q(62262, {	-- Fungal Feeding
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 71.6, 21.0, 118 },
+						["provider"] = { "n", 167572 },	-- Crystal Brightspark
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 50,
+					}),
+					q(59782, {	-- The Deathspeaker's Devout
+						["maps"] = { 118 },	-- Icecrown
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+					}),
+					q(59878, {	-- Too Many Whelps
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 71.0, 21.9, 118 },
+						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 50,
+					}),
+					q(59839, {	-- WARNING: This is Only a Test!
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 66.0, 22.4, 118 },
+						["provider"] = { "n", 172905 },	-- Fizzix Blastbolt
+						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = 50,
+					}),
 					-------------------------- Week 2 --------------------------
 					q(62162, {	-- A Message from the Justicar (A)
 						-- TODO: coord and provider
@@ -239,64 +286,6 @@ _.WorldEvents =
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 					}),
 					-------------------------- Dailies --------------------------
-					q(62262, {	-- Fungal Feeding
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.6, 21.0, 118 },
-						["provider"] = { "n", 167572 },	-- Crystal Brightspark
-						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 50,
-					}),
-					q(59783, {	-- Cultist Captors
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 66.0, 21.9, 118 },
-						["provider"] = { "n", 168880 },	-- Sentry Joren
-						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 50,
-					}),
-					q(59863, {	-- Combat Nullifier 07-X
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 73.1, 35.6, 118 },
-						["provider"] = { "n", 173124 },	-- Binkie Brightgear
-						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 50,
-					}),
-					q(59839, {	-- WARNING: This is Only a Test!
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 66.0, 22.4, 118 },
-						["provider"] = { "n", 172905 },	-- Fizzix Blastbolt
-						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 50,
-					}),
-					q(59878, {	-- Too Many Whelps
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 21.9, 118 },
-						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
-						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 50,
-					}),
-					q(60841, {	-- Evacuation Effort
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 21.9, 118 },
-						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
-						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 50,
-					}),
-					q(59782, {	-- The Deathspeaker's Devout
-						["maps"] = { 118 },	-- Icecrown
-						["sourceQuest"] = 60827,	-- Advancing the Effort
-					}),
-					q(59851, {	-- Frozen Solid
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 44.9, 44.7, 118 },
-						["provider"] = { "n", 170467 },	-- Crusader Renn
-						["sourceQuest"] = 60932,	-- Only Shadows Remain
-					}),
-					q(59847, {	-- Defending the Rampart
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 44.9, 44.7, 118 },
-						["provider"] = { "n", 170467 },	-- Crusader Renn
-						["sourceQuest"] = 60932,	-- Only Shadows Remain
-					}),
 					q(62365, {	-- Careful Creations
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 35.3, 66.3, 118 },
@@ -307,6 +296,18 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 42.8, 29.9, 118 },
 						["provider"] = { "n", 173869 },	-- Crusader Renn
+						["sourceQuest"] = 60932,	-- Only Shadows Remain
+					}),
+					q(59847, {	-- Defending the Rampart
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 44.9, 44.7, 118 },
+						["provider"] = { "n", 170467 },	-- Crusader Renn
+						["sourceQuest"] = 60932,	-- Only Shadows Remain
+					}),
+					q(59851, {	-- Frozen Solid
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 44.9, 44.7, 118 },
+						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 					}),
 					-- repeatables below
@@ -362,12 +363,6 @@ _.WorldEvents =
 						},
 					}),
 					-- rares spawn every 20 minutes
-					--[[
-						i(183640),	-- Leggings of Disreputable Charms - themed from "Leggings of Dubious Charms" from ICC trash mobs
-						i(183682),	-- Cinch of the Servant - themed from "Sash of the Servant" originally from Anub'arak in Azjol-Nerub
-						i(183683),	-- Skittering Vestments - themed from "Insect Vestments" originally from Anub'arak in Azjol-Nerub
-						i(183654),	-- Etched Dragonbone Stompers - originally Shivermaw from Violet Hold
-					]]--
 					n(174065, {	-- Blood Queen Lana'thel (6)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 49.6, 32.3, 118 },
