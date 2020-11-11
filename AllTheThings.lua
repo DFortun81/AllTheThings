@@ -4036,8 +4036,20 @@ local function PopulateQuestObject(questObject)
 	local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
 	
 	-- Check for a Task-specific icon
-	local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = C_QuestLog.GetQuestTagInfo(questObject.questID);
+	local info = C_QuestLog.GetQuestTagInfo(questObject.questID);
+	-- if info then
+		-- print("WQ info:",questObject.questID);
+		-- for k,v in pairs(info) do
+			-- print(k,v);
+		-- end
+		-- print("---");
+	-- end
+	-- local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex = ;
+	local worldQuestType = info and info.worldQuestType;
+	local tagID = info and info.tagID;
 	if worldQuestType then
+		-- all WQ's on map should be treated as repeatable
+		questObject.repeatable = true;
 		if worldQuestType == LE_QUEST_TAG_TYPE_PVP or worldQuestType == LE_QUEST_TAG_TYPE_BOUNTY then
 			questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
 		elseif worldQuestType == LE_QUEST_TAG_TYPE_PET_BATTLE then
@@ -4048,6 +4060,7 @@ local function PopulateQuestObject(questObject)
 			-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
 			-- TODO: Add the relevent dungeon icon. (DONE! IN REWARDS!)
 		elseif worldQuestType == LE_QUEST_TAG_TYPE_RAID then
+			questObject.isRaid = true;
 			-- questObject.icon = "Interface\\Icons\\Achievement_PVP_P_09";
 			-- TODO: Add the relevent dungeon icon.
 		elseif worldQuestType == LE_QUEST_TAG_TYPE_INVASION or worldQuestType == LE_QUEST_TAG_TYPE_INVASION_WRAPPER then
@@ -4131,7 +4144,7 @@ local function PopulateQuestObject(questObject)
 	-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
 	local _ = GetQuestLogRewardInfo(1, questObject.questID);
 	for j=1,numQuestRewards,1 do
-		local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo (j, questObject.questID);
+		local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo(j, questObject.questID);
 		if itemID then
 			if showCurrencies or (itemID ~= 116415 and itemID ~= 163036) then
 				QuestHarvester.AllTheThingsProcessing = true;
@@ -12395,6 +12408,17 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 								u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
 						end
 						
+						-- Common Custom NPCs used for headers
+						-- not sure why we can't use the constants in here...
+						-- ACHIEVEMENTS = -4
+						-- COMMON_BOSS_DROPS = -1;
+						-- FACTIONS = -6013;
+						-- QUESTS = -17;
+						-- RARES = -16;
+						-- TREASURES = -212;
+						-- VENDORS = -2;
+						-- ZONEDROPS = 0;
+						
 						local holidayID = GetRelativeValue(group, "holidayID");
 						local u = group.u or GetRelativeValue(group, "u");
 						if group.key == "npcID" then
@@ -12404,6 +12428,10 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 								if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group }, u = u }); end
 							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
 								if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
+							elseif GetRelativeField(group, "npcID", -16) then	-- It's a Rare.
+								if group.npcID ~= -16 then group = app.CreateNPC(-16, { g = { group }, u = u  }); end
+							elseif GetRelativeField(group, "npcID", -212) then	-- It's a Treasure.
+								if group.npcID ~= -212 then group = app.CreateNPC(-212, { g = { group }, u = u  }); end
 							end
 						elseif group.key == "questID" then
 							if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
@@ -12417,21 +12445,20 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 							MergeObject({header}, group);
 						elseif group.key == "speciesID" then
 							group = app.CreateNPC(-25, { g = { group } });
-							-- first = true;
 						elseif group.key == "questID" then
 							group = app.CreateNPC(-17, { g = { group } });
-							-- first = true;
 						else
 							-- special cases to source the mapped-categories
 							if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
 								if group.npcID ~= -4 then group = app.CreateNPC(-4, { g = { group } }); end
-								-- first = true;
 							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewalking vendor)
 								if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group } }); end
-								-- first = true;
 							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
 								if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group } }); end
-								-- first = true;
+							elseif GetRelativeField(group, "npcID", -16) then	-- It's a Rare.
+								if group.npcID ~= -16 then group = app.CreateNPC(-16, { g = { group } }); end
+							elseif GetRelativeField(group, "npcID", -212) then	-- It's a Treasure.
+								if group.npcID ~= -212 then group = app.CreateNPC(-212, { g = { group } }); end
 							end
 						end
 						
@@ -14382,16 +14409,21 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							-- see if need to retry based on missing data
 							retry = retry or questObject.missingData;
 							
-							--print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID,#questObject.g,questObject.repeatable,questObject.timeRemaining);
-							--print(tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft);
+							-- if mapID == 13 then
+								-- for k,v in pairs(questObject) do
+									-- print(k,v);
+								-- end
+								-- --print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID,#questObject.g,questObject.repeatable,questObject.timeRemaining);
+								-- -- print(tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft);
+							-- end
 							
 							-- only merge POIs with time remaining, or collectible rewards unless shift is held down (bonus objectives are POIs but not time-limited)
 							-- repeatable tasks usually indicate quests which are also up for long durations of time, but will expire (warfront scenario, etc.)
 							if includeAll or
 								-- include the quest in the list if holding shift and tracking quests
 								(includePermanent and includeQuests) or 
-								-- or if it has a collectible and is repeatable (i.e. one attempt per day/week/year)
-								(#questObject.g > 0 and questObject.isRepeatable) or 
+								-- or if it is repeatable (i.e. one attempt per day/week/year)
+								questObject.repeatable or 
 								-- or if it has time remaining
 								(questObject.timeRemaining or 0 > 0) then
 								if poi.mapID ~= mapID then
@@ -14417,8 +14449,8 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								if includeAll or
 									-- include the quest in the list if holding shift and tracking quests
 									(includePermanent and includeQuests) or 
-									-- or if it has a collectible and is repeatable (i.e. one attempt per day/week/year)
-									(#questObject.g > 0 and questObject.isRepeatable) or 
+									-- or if it is repeatable (i.e. one attempt per day/week/year)
+									questObject.repeatable or 
 									-- or if it has time remaining
 									(questObject.timeRemaining or 0 > 0) then
 									MergeObject(mapObject.g, questObject);
