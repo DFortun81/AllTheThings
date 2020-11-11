@@ -440,8 +440,9 @@ _.WorldEvents =
 						["questID"] = 62328,
 						["isDaily"] = true,
 						["g"] = {
-							i(183682),	-- Cinch of the Servant
 							i(183200),	-- Pitch Black Scourgestone
+							i(183682),	-- Cinch of the Servant
+							i(183683),	-- Skittering Vestments
 							i(183681),	-- Webrending Machete
 						},
 					}),
