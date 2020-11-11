@@ -179,6 +179,8 @@ _.WorldEvents =
 					}),
 					q(62553, {	-- Delaying Their Efforts
 						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 71.0, 21.9, 118 },
+						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
 						["sourceQuest"] = 60827,	-- Advancing the Effort
 						["lvl"] = 50,
 					}),
@@ -660,8 +662,8 @@ _.WorldEvents =
 							}),
 						}),
 					}),
-					n(173791, {	-- Crusader Adevald Ironbeard
-						["coord"] = { 44.9, 44.5, 118 },
+					n(169718, {	-- Veteran Crusader Aliocha Segard
+						["coord"] = { 71.04, 21.66, 118 },
 						["maps"] = {
 							118,	-- Icecrown
 						},
