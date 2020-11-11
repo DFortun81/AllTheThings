@@ -487,6 +487,7 @@ _.WorldEvents =
 							i(183200),	-- Pitch Black Scourgestone
 							i(183642),	-- Robes of Rasped Breaths
 							i(183676),	-- Hailstone Loop
+							i(183654),	-- Etched Dragonbone Stompers
 						},
 					}),
 					n(174052, {	-- Novos the Summoner (19)
