@@ -395,6 +395,7 @@ _.WorldEvents =
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183673),	-- Nerubian Aegis Ring
+							i(183641),	-- Shoulderpads of Corpal Rigidity
 						},
 					}),
 					n(174054, {	-- Falric (17)
@@ -439,6 +440,7 @@ _.WorldEvents =
 						["questID"] = 62328,
 						["isDaily"] = true,
 						["g"] = {
+							i(183682),	-- Cinch of the Servant
 							i(183200),	-- Pitch Black Scourgestone
 							i(183681),	-- Webrending Machete
 						},
