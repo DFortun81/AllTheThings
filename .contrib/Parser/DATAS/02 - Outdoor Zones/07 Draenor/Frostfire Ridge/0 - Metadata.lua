@@ -18,7 +18,6 @@ _.Zones =
 				532,	-- Grulloc's Grotto (bottom floor)
 				533,	-- Snowfall Alcove
 			},
-			["lvl"] = 90,
 		}),
 	}),
 };

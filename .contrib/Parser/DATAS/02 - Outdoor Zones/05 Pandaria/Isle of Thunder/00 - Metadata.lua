@@ -14,7 +14,6 @@ _.Zones =
 				516,	-- Scenario [Phase 1]
 				517,	-- Lightning Vein Mine
 			},
-			["lvl"] = 85,
 		}),
 	}),
 };

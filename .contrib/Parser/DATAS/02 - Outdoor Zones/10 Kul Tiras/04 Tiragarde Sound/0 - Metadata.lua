@@ -14,7 +14,6 @@ _.Zones =
 				1184,	-- Winterchill Mine (lower)
 				1185,	-- Winterchill Mine (upper)
 			},
-			["lvl"] = 110,
 		}),
 	}),
 };

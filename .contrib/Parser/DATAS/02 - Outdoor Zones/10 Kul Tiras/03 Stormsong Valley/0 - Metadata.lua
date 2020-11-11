@@ -13,7 +13,6 @@ _.Zones =
 				1182,	-- Saltstone Mine
 				1183,	-- Thornheart
 			},
-			["lvl"] = 110,
 		}),
 	}),
 };

@@ -15,7 +15,6 @@ _.Zones =
 				45,	-- The Master's Cellar
 				46,	-- Karazhan Catacombs
 			},
-			["lvl"] = 40,
 		}),
 	}),
 };

@@ -12,7 +12,6 @@ _.Zones =
 				170,	-- Hrothgar's Landing
 				871,	-- The Lost Glacier (Legion DK class mount map)
 			},
-			["lvl"] = 67,
 		}),
 	}),
 };

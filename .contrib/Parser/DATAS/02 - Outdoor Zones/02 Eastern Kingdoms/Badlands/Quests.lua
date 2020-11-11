@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
@@ -206,7 +207,7 @@ _.Zones =
 				}),
 				q(27878, {	-- Forcible Acquisition
 					["provider"] = { "n", 46758 },	-- Aoren Sunglow
-					["coord"] = { 52.1, 51.5, 15 }, 
+					["coord"] = { 52.1, 51.5, 15 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(63173),	-- Ironhew Cloak

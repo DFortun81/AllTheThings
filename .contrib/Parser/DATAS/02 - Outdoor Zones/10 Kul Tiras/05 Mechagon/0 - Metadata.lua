@@ -12,7 +12,6 @@ _.Zones =
 			["maps"] = {
 				1522,	-- Crumbling Cavern
 			},
-			["lvl"] = 120,
 		}),
 	}),
 };

@@ -10,7 +10,7 @@ _.Zones =
 				ach(4937, {	-- Southern Barrens Quests
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-					--	some of these might have additional requirements (in case anybody reports not getting the criteria from what we have SQed here)
+						--	some of these might have additional requirements (in case anybody reports not getting the criteria from what we have SQed here)
 						crit(1, {	-- Honor's Stand
 							["sourceQuest"] = 25186,	-- Futile Resistance
 						}),

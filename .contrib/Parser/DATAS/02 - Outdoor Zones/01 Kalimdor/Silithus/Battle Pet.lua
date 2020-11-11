@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -29,7 +30,7 @@ _.Zones =
 				p(511, {	-- Sidewinder
 					["crs"] = { 62523 },	-- Sidewinder
 				}),
-				p(433, {	-- Spiky Lizard 
+				p(433, {	-- Spiky Lizard
 					["crs"] = { 61441 },	-- Spiky Lizard
 				}),
 			}),

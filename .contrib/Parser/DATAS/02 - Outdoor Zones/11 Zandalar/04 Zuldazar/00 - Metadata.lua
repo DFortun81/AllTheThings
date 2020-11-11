@@ -7,7 +7,6 @@ _.Zones =
 	m(875, {	-- Zandalar
 		m(862, {	-- Zuldazar
 			["achievementID"] = 12559,	-- Explore Zuldazar
-			["lvl"] = 110,
 			["maps"] = {
 				1176,	-- Breath of Pa'ku, middle level
 				1177,	-- Breath Of Pa'ku,	bottom level

@@ -13,7 +13,6 @@ _.Zones =
 				420,	-- Ruins of Ogudei (the map is weird here, and this ID only shows up when you're headed towards the objective for Ogudei's Lieutenants.  for the rest of this floor, when you hit M it registers you on the incorrect level, and displays the wrong floor on the map)
 				421,	-- Ruins of Ogudei, Reliquary Incursion
 			},
-			["lvl"] = 81,
 		}),
 	}),
 };

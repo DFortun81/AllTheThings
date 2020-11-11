@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -18,7 +19,7 @@ _.Zones =
 						i(20510),	-- Pattern: Sandstalker Gauntlets
 						i(20506),	-- Pattern: Spitfire Bracers
 						i(20507),	-- Pattern: Spitfire Gauntlets
-						i(20508),	-- Pattern: Spitfire Breastplate							
+						i(20508),	-- Pattern: Spitfire Breastplate
 					},
 				}),
 				n(15174,  {	-- Calandrath <Innkeeper>

@@ -8,7 +8,6 @@ _.Zones =
 		m(210, {	-- The Cape of Stranglethorn
 			["achievementID"] = 4995,
 			["description"] = "|cff66ccffThe Cape of Stranglethorn is the southern part of Stranglethorn Vale, now split from the Shattering. It traces the escalating conflict between the goblin pirates of Booty Bay and their rivals, the Bloodsail Buccaneers. The rest of the zone is dotted with troll ruins and sandy beaches.|r",
-			["lvl"] = 30,
 			["groups"] = {
 				o(179697, {	-- Arena Treasure Chest
 					["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",

@@ -13,7 +13,6 @@ _.Zones =
 				552,	-- Stonecrag Gorge
 				553, 	-- The Underpale
 			},
-			["lvl"] = 98,
 		}),
 	}),
 };
