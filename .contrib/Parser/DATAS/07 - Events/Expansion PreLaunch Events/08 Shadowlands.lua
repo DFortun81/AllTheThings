@@ -571,6 +571,7 @@ _.WorldEvents =
 						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
+							i(44151),	-- Reins of the Blue Proto-Drake
 							i(183670),	-- Skadi's Saronite Belt
 							i(183656),	-- Drake Rider's Jerkin
 							i(183657),	-- Skadi's Scaled Sollerets

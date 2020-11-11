@@ -325,7 +325,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32327,	-- The Darnassus Mission
 					["level"] = 81,
-
 				}),
 				q(488,   {	-- Zenn's Bidding
 					["provider"] = { "n", 2150 },	-- Zenn Foulhoof
