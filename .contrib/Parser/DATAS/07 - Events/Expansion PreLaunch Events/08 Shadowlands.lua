@@ -7,10 +7,6 @@ _.WorldEvents =
 	n(-520, { 	-- Expansion Prelaunch Events
 		["icon"] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",
 		["g"] = {
-			--[[ NOTES
-				i(180720) - Darkened Scourgestone - drops from normal ghouls in Icecrown, possibly other zones
-				i(183200),	-- Pitch Black Scourgestone - drops from elite Abominations in Icecrown, possibly other zones
-			]]--
 			tier(9, {	-- Shadowlands
 				n(QUESTS, {
 					-------------------------- Week 1 --------------------------
@@ -331,6 +327,7 @@ _.WorldEvents =
 						["provider"] = { "n", 169718 },	-- Veteran Crusader Aliocha Segard
 						["repeatable"] = true,
 						["sourceQuest"] = 62401,	-- Strange Scourgestones
+						["cost"] = { { "i", 180720, 25 } },	-- 25x Darkened Scourgestone
 						["g"] = {
 							i(12844),	-- Argent Dawn Valor Token
 						},
@@ -342,6 +339,7 @@ _.WorldEvents =
 						["provider"] = { "n", 169718 },	-- Veteran Crusader Aliocha Segard
 						["repeatable"] = true,
 						["sourceQuest"] = 62401,	-- Strange Scourgestones
+						["cost"] = { { "i", 183200, 25 } },	-- 25x Pitch Black Scourgestone
 						["g"] = {
 							i(12844),	-- Argent Dawn Valor Token
 						},
