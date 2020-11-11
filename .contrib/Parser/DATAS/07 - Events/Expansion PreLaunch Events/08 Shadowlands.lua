@@ -473,7 +473,7 @@ _.WorldEvents =
 					n(174067, {	-- Noth the Plaguebringer (4)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 31.5, 70.4, 118 },
-						--["questID"] = , it's EITHER 62325 or 62345 based on other boss IDs
+						["questID"] = 62345,
 						["isDaily"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
