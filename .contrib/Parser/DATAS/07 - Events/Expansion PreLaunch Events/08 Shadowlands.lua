@@ -69,9 +69,9 @@ _.WorldEvents =
 						["lvl"] = 50,
 					}),
 					q(60766, {	-- Damned Intruders (A)
-						--["maps"] = { 10 },	-- Northern Barrens
-						--["coord"] = { 49.5, 59.4, 10 },
-						--["provider"] = { "n", 170084 },	-- Lieutenant Althera
+						["maps"] = { 47 },	-- Duskwood
+						["coord"] = { 73.50, 47.20, 47 },
+						["provider"] = { "n", 166184 },	-- Lieutenant Vernon
 						["sourceQuest"] = 59876,	-- Field Reports (A)
 						["lvl"] = 50,
 					}),
@@ -83,9 +83,9 @@ _.WorldEvents =
 						["lvl"] = 50,
 					}),
 					q(60767, {	-- Return of the Scourge (A)
-						--["maps"] = { 10 },	-- Northern Barrens
-						--["coord"] = { 49.4, 59.3, 10 },
-						--["provider"] = { "n", 170084 },	-- Lieutenant Althera
+						["maps"] = { 47 },	-- Duskwood
+						["coord"] = { 73.50, 47.20, 47 },
+						["provider"] = { "n", 166184 },	-- Lieutenant Vernon
 						["sourceQuest"] = 60766,	-- Damned Intruders (A)
 						["lvl"] = 50,
 					}),
@@ -98,8 +98,8 @@ _.WorldEvents =
 					}),
 					q(61486, {	-- The Banshee's Champion (A)
 						["maps"] = { 84 },	-- Stormwind
-						--["coord"] = { 53.0, 77.0, 84 },
-						--["provider"] = { "n", 172514 },	-- Light's Hope Messenger
+						["coord"] = { 65.55, 77.0, 84 },
+						["provider"] = { "n", 172510 },	-- Light's Hope Messenger
 						["sourceQuest"] = 60767,	-- Return of the Scourge (A)
 						["lvl"] = 50,
 					}),
@@ -112,8 +112,8 @@ _.WorldEvents =
 					}),
 					q(59877, {	-- A Message from Icecrown (A)
 						["maps"] = { 84 },	-- Stormwind
-						--["coord"] = { 52.9, 77.2, 84 },
-						--["provider"] = { "n", 169878 },	-- Commander Throgg
+						["coord"] = { 65.7, 77.1, 84 },
+						["provider"] = { "n", 166383 },	-- Commander Gregor
 						["sourceQuest"] = 60767,	-- Return of the Scourge (A)
 						["lvl"] = 50,
 					}),
