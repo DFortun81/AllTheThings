@@ -12571,11 +12571,15 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				-- print("update groups");
 				UpdateGroups(self.data, self.data.g);				
 				-- sort only the top layer of groups if not in an instance with difficulty, force visible so sort goes through
-				if not hasDifficulties then
+				-- print(GetInstanceInfo());
+				local difficultyID = select(3, GetInstanceInfo());
+				if not difficultyID or difficultyID < 1 then
 					self.data.visible = true;
+					-- print("sortname");
 					SortGroup(self.data, "name", nil, false);
 				else
 					self.data.visible = true;
+					-- print("sortdiff");
 					SortGroup(self.data, "difficultyID", nil, false);
 				end
 				-- check to expand groups after they have been built and updated
@@ -12583,9 +12587,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				ExpandGroupsRecursively(self.data, true);
 				
 				-- if enabled, minimize rows based on difficulty
-				local difficultyID = nil;
 				if app.Settings:GetTooltipSetting("Expand:Difficulty") then
-					difficultyID = select(3, GetInstanceInfo());
 					if difficultyID and difficultyID > 0 and self.data.g then
 						for _, row in ipairs(self.data.g) do
 							if row.difficultyID or row.difficulties then
@@ -12599,7 +12601,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					end
 				end
 				if app.Settings:GetTooltipSetting("Warn:Difficulty") then
-					if not difficultyID then difficultyID = select(3, GetInstanceInfo()); end
 					if difficultyID and difficultyID > 0 and self.data.g then
 						local completed,other = true, nil;
 						for _, row in ipairs(self.data.g) do
