@@ -45,6 +45,7 @@ i(62346);	-- Greater Inscription of Shattered Crystal
 i(62333);	-- Greater Inscription of Unbreakable Quartz
 i(43626);	-- Happy Pet Snack
 i(33928);	-- Hollowed Bone Decanter
+i(101436);	-- Icemother Milk
 i(18284);	-- Kreeg's Stout Beatdown
 i(19297);	-- Lesser Darkmoon Prize
 i(62342);	-- Lesser Inscription of Charged Lodestone

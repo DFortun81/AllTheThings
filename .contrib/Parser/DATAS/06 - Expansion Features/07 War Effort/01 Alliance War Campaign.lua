@@ -80,7 +80,7 @@ _.ExpansionFeatures =
 						i(163654),	-- 7th Legionnaire's Circlet
 						i(163653),	-- 7th Legionnaire's Mantle
 						i(163676),	-- 7th Legionnaire's Raiment
-						i(175386),	-- 7th Legionnaire's Circlet 
+						i(175386),	-- 7th Legionnaire's Circlet
 						i(175385),	-- 7th Legionnaire's Mantle
 						i(175408),	-- 7th Legionnaire's Raiment
 						-- Leather
