@@ -28,6 +28,7 @@ _.ExpansionFeatures =
 				["sourceQuest"] = 51903,
 				["races"] = ALLIANCE_ONLY,
 				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
+				["maps"] = { 1022 },	-- Uncharted Island
 			}),
 			q(51870, {	-- Island Expedition (1/2) (H)
 				["sourceQuest"] = 53061,
@@ -38,6 +39,7 @@ _.ExpansionFeatures =
 				["sourceQuest"] = 51903,
 				["races"] = HORDE_ONLY,
 				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
+				["maps"] = { 1022 },	-- Uncharted Island
 			}),
 			q(53061, {	-- The Azerite Advantage (A)
 				["races"] = ALLIANCE_ONLY,

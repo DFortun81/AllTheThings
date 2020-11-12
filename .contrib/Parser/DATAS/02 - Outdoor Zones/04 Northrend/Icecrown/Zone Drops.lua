@@ -7,8 +7,8 @@ _.Zones =
 	m(113, {	-- Northrend
 		m(118, {	-- Icecrown
 			n(ZONEDROPS, {
-                i(50379),	-- Battered Hilt (Alliance) - These are dropping zone-wide during Shadowlands Prepatch Event; remains to be seen whether they will permanently drop from here.
-                i(50380),	-- Battered Hilt (Horde)
+				i(50379),	-- Battered Hilt (Alliance) - These are dropping zone-wide during Shadowlands Prepatch Event; remains to be seen whether they will permanently drop from here.
+				i(50380),	-- Battered Hilt (Horde)
 				i(37331, {	-- Formula: Enchant Cloak - Superior Fire Resistance
 					["u"] = REMOVED_FROM_GAME,
 					["spellID"] = 0,

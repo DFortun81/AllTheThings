@@ -413,6 +413,7 @@ _.WorldEvents =
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183664),	-- Bracer of Ground Molars
+							i(183667),	-- Geistslicer
 							i(183665),	-- Valonforth's Marred Pauldrons
 							i(183666),	-- Legguards of the Frosty Fathoms
 						},
@@ -624,17 +625,17 @@ _.WorldEvents =
 						},
 						["g"] = bubbleDown({["cost"] = { { "c", 1754, 15 } }}, {
 							i(183552, {	-- Argent Conscript's Drape
-                                ["classes"] = { MAGE, PRIEST, WARLOCK },
-                            }),
+								["classes"] = { MAGE, PRIEST, WARLOCK },
+							}),
 							i(183553, {	-- Argent Conscript's Cloak
-                                ["classes"] = { ROGUE, MONK, DRUID, DEMONHUNTER },
-                            }),
+								["classes"] = { ROGUE, MONK, DRUID, DEMONHUNTER },
+							}),
 							i(183554, {	-- Argent Conscript's Lined Cloak
-                                ["classes"] = { HUNTER, SHAMAN },
-                            }),
+								["classes"] = { HUNTER, SHAMAN },
+							}),
 							i(183555, {	-- Argent Conscript's Cape
-                                ["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
-                            }),
+								["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+							}),
 							i(183538),	-- Argent Conscript's Treads
 							i(183576),	-- Argent Conscript's Gloves
 							i(183575),	-- Argent Conscript's Skullcap
@@ -681,8 +682,8 @@ _.WorldEvents =
 						["g"] = bubbleDown({["cost"] = { { "c", 1754, 15 } }}, {
 							-- Alliance items
 							i(183524, {	-- Argent Conscript's Drape
-                                ["classes"] = { MAGE, PRIEST, WARLOCK },
-                            }),
+								["classes"] = { MAGE, PRIEST, WARLOCK },
+							}),
 							i(183525),	-- Argent Conscript's Robe
 							i(183526),	-- Argent Conscript's Tunic
 							i(183527),	-- Argent Conscript's Treads
@@ -698,14 +699,14 @@ _.WorldEvents =
 							i(183547),	-- Argent Conscript's Gloves
 							i(183548),	-- Argent Conscript's Cord
 							i(183549, {	-- Argent Conscript's Cloak
-                                ["classes"] = { ROGUE, MONK, DRUID, DEMONHUNTER },
-                            }),
+								["classes"] = { ROGUE, MONK, DRUID, DEMONHUNTER },
+							}),
 							i(183550, {	-- Argent Conscript's Cape
-                                ["classes"] = { HUNTER, SHAMAN },
-                            }),
+								["classes"] = { HUNTER, SHAMAN },
+							}),
 							i(183551, {	-- Argent Conscript's Lined Cloak
-                                ["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
-                            }),
+								["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+							}),
 							i(183556),	-- Argent Conscript's Pauldrons
 							i(183557),	-- Argent Conscript's Cowl
 							i(183558),	-- Argent Conscript's Boots
@@ -726,17 +727,17 @@ _.WorldEvents =
 							i(183573),	-- Argent Conscript's Buckle
 							-- Horde items
 							i(183552, {	-- Argent Conscript's Drape
-                                ["classes"] = { MAGE, PRIEST, WARLOCK },
-                            }),
+								["classes"] = { MAGE, PRIEST, WARLOCK },
+							}),
 							i(183553, {	-- Argent Conscript's Cloak
-                                ["classes"] = { ROGUE, MONK, DRUID, DEMONHUNTER },
-                            }),
+								["classes"] = { ROGUE, MONK, DRUID, DEMONHUNTER },
+							}),
 							i(183554, {	-- Argent Conscript's Lined Cloak
-                                ["classes"] = { HUNTER, SHAMAN },
-                            }),
+								["classes"] = { HUNTER, SHAMAN },
+							}),
 							i(183555, {	-- Argent Conscript's Cape
-                                ["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
-                            }),
+								["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+							}),
 							i(183538),	-- Argent Conscript's Treads
 							i(183576),	-- Argent Conscript's Gloves
 							i(183575),	-- Argent Conscript's Skullcap
@@ -784,8 +785,8 @@ _.WorldEvents =
 						},
 						["g"] = bubbleDown({["cost"] = { { "c", 1754, 15 } }}, {
 							i(183524, {	-- Argent Conscript's Drape
-                                ["classes"] = { MAGE, PRIEST, WARLOCK },
-                            }),
+								["classes"] = { MAGE, PRIEST, WARLOCK },
+							}),
 							i(183525),	-- Argent Conscript's Robe
 							i(183526),	-- Argent Conscript's Tunic
 							i(183527),	-- Argent Conscript's Treads
@@ -801,14 +802,14 @@ _.WorldEvents =
 							i(183547),	-- Argent Conscript's Gloves
 							i(183548),	-- Argent Conscript's Cord
 							i(183549, {	-- Argent Conscript's Cloak
-                                ["classes"] = { ROGUE, MONK, DRUID, DEMONHUNTER },
-                            }),
+								["classes"] = { ROGUE, MONK, DRUID, DEMONHUNTER },
+							}),
 							i(183550, {	-- Argent Conscript's Cape
-                                ["classes"] = { HUNTER, SHAMAN },
-                            }),
+								["classes"] = { HUNTER, SHAMAN },
+							}),
 							i(183551, {	-- Argent Conscript's Lined Cloak
-                                ["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
-                            }),
+								["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+							}),
 							i(183556),	-- Argent Conscript's Pauldrons
 							i(183557),	-- Argent Conscript's Cowl
 							i(183558),	-- Argent Conscript's Boots
