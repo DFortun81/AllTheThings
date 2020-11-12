@@ -16125,6 +16125,7 @@ app.events.VARIABLES_LOADED = function()
 	RefreshAchievementCollection();
 	
 	-- Set the Current Map ID
+	-- TODO: think this might trigger too early sometimes? keep getting Northrend minilist in Icecrown like 10% of logins...
 	app.CurrentMapID = app.GetCurrentMapID();
 	
 	-- Attempt to register for the addon message prefix.

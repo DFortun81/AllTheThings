@@ -23,6 +23,7 @@ namespace ATT
         /// </summary>
         static HashSet<string> ObsoleteTags { get; } = new HashSet<string>()
         {
+            "_bad_races",
         };
 
         /// <summary>
@@ -47,6 +48,16 @@ namespace ATT
         /// Represents the set of all keys which will need to be consolidated
         /// </summary>
         static HashSet<string> FullConsolidateKeySet { get; } = new HashSet<string>(ConsolidateKeys.Values.SelectMany(s => s));
+
+        /// <summary>
+        /// Represents all the reported 'missing' keys so that they are only reported once per ID to save on space
+        /// </summary>
+        static Dictionary<int, HashSet<string>> ReportedMissingKeys { get; } = new Dictionary<int, HashSet<string>>();
+
+        /// <summary>
+        /// Represents all the per-ID/per-DB differences which are encountered during the comparison process so consolidate reporting at the end
+        /// </summary>
+        static Dictionary<int, Dictionary<string, List<string>>> ReportedPerIDDifferences { get; } = new Dictionary<int, Dictionary<string, List<string>>>();
 
         static void Main(string[] args)
         {
@@ -105,6 +116,18 @@ namespace ATT
                 {
                     Console.WriteLine("Source: " + fileName);
                     CreateSource(source, objectKey, dbObjects);
+
+                    Console.Write(source.Count);
+                    Console.WriteLine(" Starting IDs in the DB");
+                    bool comma = false;
+                    foreach (var id in source.Keys.OrderBy(k => k))
+                    {
+                        if (comma)
+                            Console.Write(", ");
+                        Console.Write(id.ToString());
+                        comma = true;
+                    }
+                    Console.WriteLine();
                 }
                 else
                 {
@@ -112,7 +135,7 @@ namespace ATT
                     {
                         Console.WriteLine("------");
                         Console.WriteLine("Comparing " + fileName);
-                        var diffMiss = CompareSource(source, objectKey, dbObjects);
+                        var diffMiss = CompareSource(source, objectKey, dbObjects, fileName);
 
                         // save the compare results into a separate file for easy reference
                         string diffFile = fileName.Replace(DBSuffix, DiffSuffix + DBSuffix);
@@ -133,6 +156,25 @@ namespace ATT
             // save the cumulative set of things
             List<Dictionary<string, object>> fullObjs = ConvertDBtoList(source, objectKey);
             File.WriteAllText(dbFilter + FullSuffix + DBSuffix, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, fullObjs } }));
+
+            // report all the per-ID/per-DB differences
+            Console.WriteLine();
+            Console.WriteLine("== Per Item Differences Breakdown ==");
+            List<int> ids = ReportedPerIDDifferences.Keys.ToList();
+            ids.Sort();
+            foreach (var id in ids)
+            {
+                var idDiffs = ReportedPerIDDifferences[id];
+                Console.WriteLine("#" + id.ToString());
+                foreach (var dbDiffs in idDiffs.OrderBy(kvp => kvp.Key))
+                {
+                    Console.WriteLine(dbDiffs.Key);
+                    foreach (var diff in dbDiffs.Value)
+                    {
+                        Console.WriteLine(diff);
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -221,7 +263,7 @@ namespace ATT
         /// <param name="objectKey"></param>
         /// <param name="dbObjects"></param>
         /// <returns></returns>
-        private static Tuple<Dictionary<int, Dictionary<string, object>>, Dictionary<int, Dictionary<string, object>>> CompareSource(Dictionary<int, Dictionary<string, object>> sourceDB, string objectKey, List<object> dbObjects)
+        private static Tuple<Dictionary<int, Dictionary<string, object>>, Dictionary<int, Dictionary<string, object>>> CompareSource(Dictionary<int, Dictionary<string, object>> sourceDB, string objectKey, List<object> dbObjects, string compareDBName)
         {
             var compareDB = new Dictionary<int, Dictionary<string, object>>();
             CreateSource(compareDB, objectKey, dbObjects);
@@ -251,6 +293,7 @@ namespace ATT
                 if (!sourceDB.ContainsKey(id))
                 {
                     brandNewIDs.Add(id);
+                    //CaptureIDDifference(id, compareDBName, " NEW!");
                     NewObject(diffDB, id, compareDB);
                     NewObject(sourceDB, id, compareDB);
                 }
@@ -267,9 +310,9 @@ namespace ATT
                 comma = true;
             }
             Console.WriteLine();
+
             Console.Write(brandNewIDs.Count);
             Console.WriteLine(" Brand New IDs in the New DB compared to the Old DB.");
-
             comma = false;
             foreach (var id in brandNewIDs)
             {
@@ -290,7 +333,6 @@ namespace ATT
                     var brandNewKeys = new List<string>();
                     var compareKeys = compareObj.Keys.ToList();
                     compareKeys.Sort();
-                    bool logged = false;
 
                     // Remove some common ones. (due to optimizations Crieve made to not include for default data)
                     compareKeys.Remove("equippable");       // For NON-EQUIP types.
@@ -304,11 +346,7 @@ namespace ATT
                             // see if a compare key will override an existing key
                             if (CheckOverrideKeys(sourceObj, key))
                             {
-                                logged = TryStartNewID(id, logged);
-                                if (comma)
-                                    Console.Write(", ");
-                                Console.Write("- OVERRIDE: " + OverrideKeys[key] + " => " + key);
-                                comma = true;
+                                CaptureIDDifference(id, compareDBName, "- OVERRIDE: " + OverrideKeys[key] + " => " + key);
                                 CheckOverrideKeys(diffDB, id, key);
                             }
                             else
@@ -319,8 +357,6 @@ namespace ATT
                             DiffObjectKey(sourceDB, id, compareObj, key);
                         }
                     }
-                    if (logged)
-                        Console.WriteLine();
 
                     var sourceKeys = sourceObj.Keys.ToList();
                     sourceKeys.Sort();
@@ -329,7 +365,7 @@ namespace ATT
                     sourceKeys.Remove("b");             // For NON-BOP types.
                     foreach (var key in sourceKeys)
                     {
-                        if (!compareObj.ContainsKey(key))
+                        if (!compareObj.ContainsKey(key) && CheckFirstReportForID(id, key))
                         {
                             missingKeys.Add(key);
                         }
@@ -338,33 +374,31 @@ namespace ATT
                     bool added = brandNewKeys.Any();
                     if (missing || added)
                     {
-                        logged = TryStartNewID(id, logged);
-
                         if (missing)
                         {
-                            Console.Write("- EMPTY : ");
                             comma = false;
+                            StringBuilder missingKeysLine = new StringBuilder();
                             foreach (var key in missingKeys)
                             {
                                 if (comma)
-                                    Console.Write(", ");
-                                Console.Write(key);
+                                    missingKeysLine.Append(", ");
+                                missingKeysLine.Append(key);
                                 comma = true;
                             }
-                            Console.WriteLine();
+                            CaptureIDDifference(id, compareDBName, "- EMPTY: " + missingKeysLine.ToString());
                         }
                         if (added)
                         {
-                            Console.Write("- ADDED : ");
                             comma = false;
+                            StringBuilder addedKeysLine = new StringBuilder();
                             foreach (var key in brandNewKeys)
                             {
                                 if (comma)
-                                    Console.Write(", ");
-                                Console.Write(key + " = " + MiniJSON.Json.Serialize(compareObj[key]));
+                                    addedKeysLine.Append(", ");
+                                addedKeysLine.Append(key + " = " + MiniJSON.Json.Serialize(compareObj[key]));
                                 comma = true;
                             }
-                            Console.WriteLine();
+                            CaptureIDDifference(id, compareDBName, "- ADDED: " + addedKeysLine.ToString());
                         }
                     }
                     foreach (var key in compareKeys)
@@ -373,9 +407,7 @@ namespace ATT
                             && compareObj.TryGetValue(key, out object compareValue)
                             && !CompareValues(sourceValue, compareValue))
                         {
-                            logged = TryStartNewID(id, logged);
-
-                            Console.WriteLine("- CHANGE: " + key + ": " + MiniJSON.Json.Serialize(sourceValue) + " --> " + MiniJSON.Json.Serialize(compareValue));
+                            CaptureIDDifference(id, compareDBName, "- CHANGE: " + key + ": " + MiniJSON.Json.Serialize(sourceValue) + " --> " + MiniJSON.Json.Serialize(compareValue));
 
                             DiffObjectKey(diffDB, id, compareObj, key);
                             DiffObjectKey(sourceDB, id, compareObj, key);
@@ -387,10 +419,32 @@ namespace ATT
             return new Tuple<Dictionary<int, Dictionary<string, object>>, Dictionary<int, Dictionary<string, object>>>(diffDB, missDB);
         }
 
-        private static bool TryStartNewID(int id, bool logged)
+        /// <summary>
+        /// Captures a difference for an ID within the given compared DB
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="compareDBName"></param>
+        /// <param name="difference"></param>
+        private static void CaptureIDDifference(int id, string compareDBName, string difference)
         {
-            if (!logged)
-                Console.WriteLine("ID #" + id.ToString());
+            if (!ReportedPerIDDifferences.TryGetValue(id, out Dictionary<string, List<string>> idDiffs))
+                ReportedPerIDDifferences[id] = idDiffs = new Dictionary<string, List<string>>();
+
+            if (!idDiffs.TryGetValue(compareDBName, out List<string> dbDiffs))
+                idDiffs[compareDBName] = dbDiffs = new List<string>();
+
+            dbDiffs.Add(difference);
+        }
+
+        private static bool CheckFirstReportForID(int id, string key)
+        {
+            if (!ReportedMissingKeys.TryGetValue(id, out HashSet<string> reported))
+                ReportedMissingKeys[id] = reported = new HashSet<string>();
+
+            if (reported.Contains(key))
+                return false;
+
+            reported.Add(key);
             return true;
         }
 
@@ -460,6 +514,12 @@ namespace ATT
                     return false;
                 }
 
+                // enumerable and non-enumerable, then skip trying to compare
+                var oldEnumerable = oldValue as IEnumerable<object>;
+                var newEnumerable = newValue as IEnumerable<object>;
+                if (oldEnumerable != null || newEnumerable != null)
+                    return false;
+
                 // If the old value is a boolean (True/False) convert to (1/0).
                 //if (oldType == typeof(bool)) return Convert.ToInt32(oldValue) == Convert.ToInt32(newValue);
 
@@ -474,15 +534,16 @@ namespace ATT
                 catch { }
 
                 // Default, not sure how to parse this so assume difference
-                Console.WriteLine("NOT SURE HOW TO PARSE THIS:");
-                Console.Write(MiniJSON.Json.Serialize(oldValue));
-                Console.Write(" (");
-                Console.Write(oldType);
-                Console.WriteLine(") OLD");
-                Console.Write(MiniJSON.Json.Serialize(newValue));
-                Console.Write(" (");
-                Console.Write(newType);
-                Console.WriteLine(") NEW");
+                // dont need to spam this...
+                //Console.WriteLine("NOT SURE HOW TO PARSE THIS:");
+                //Console.Write(MiniJSON.Json.Serialize(oldValue));
+                //Console.Write(" (");
+                //Console.Write(oldType);
+                //Console.WriteLine(") OLD");
+                //Console.Write(MiniJSON.Json.Serialize(newValue));
+                //Console.Write(" (");
+                //Console.Write(newType);
+                //Console.WriteLine(") NEW");
                 return false;
             }
             return true;
