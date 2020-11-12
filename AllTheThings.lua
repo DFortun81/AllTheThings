@@ -9550,7 +9550,7 @@ local function NestSourceQuests(root, addedQuests, depth)
 					-- clone the object so as to not modify actual data
 					sq = CloneData(sq);
 					-- force collectible to make sure it shows in list
-					if not sq.isBreadcrumb then
+					if not (sq.isBreadcrumb or sq.repeatable) then
 						sq.collectible = true;
 					end
 					sq.visible = true;
@@ -9741,7 +9741,7 @@ function app:CreateMiniListForGroup(group)
 				group = group.parent;
             end
 			local root = group;
-			root.collectible = true;
+			root.collectible = not root.repeatable;
 			local g = { root };
 			
 			-- Check to see if Source Quests are listed elsewhere.
