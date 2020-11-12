@@ -463,7 +463,7 @@ _.WorldEvents =
 							i(183641),	-- Shoulderpads of Corpal Rigidity
 							i(183653),	-- Deathwhisper Vestment
 							i(183655),	-- Handgrips of Rime and Sleet
-							i(183652),	-- Zod's Echoing Longbow - themed off of the "Njorndar Bone Bow" she drops in ICC. Needs confirmation due to lack of data
+							i(183652),	-- Zod's Echoing Longbow - confirmed
 						},
 					}),
 					n(174055, {	-- Marwyn (16)
