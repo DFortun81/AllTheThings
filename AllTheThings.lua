@@ -12600,11 +12600,13 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				-- sort only the top layer of groups if not in an instance with difficulty, force visible so sort goes through
 				-- print(GetInstanceInfo());
 				local difficultyID = select(3, GetInstanceInfo());
+				-- sort by name if not in an instance
 				if not difficultyID or difficultyID < 1 then
 					self.data.visible = true;
 					-- print("sortname");
 					SortGroup(self.data, "name", nil, false);
-				else
+				-- sort by difficulty ONLY if the instance has actual difficulty dividers
+				elseif hasDifficulties then
 					self.data.visible = true;
 					-- print("sortdiff");
 					SortGroup(self.data, "difficultyID", nil, false);
