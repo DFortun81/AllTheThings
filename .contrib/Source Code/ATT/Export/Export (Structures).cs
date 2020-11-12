@@ -51,7 +51,7 @@ namespace ATT
                 var order = STRUCTURE_COUNTS.ToList();
                 STRUCTURE_COUNTS.Clear();
 
-                // Sort the KeyValues so that the most replacements are exported first.
+                // Sort the KeyValues so that the most-used replacements are exported first for performance reasons
                 var keyValues = new List<KeyValuePair<string, string>>();
                 order.Sort(delegate (KeyValuePair<string, int> a, KeyValuePair<string, int> b)
                 {
