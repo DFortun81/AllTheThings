@@ -732,7 +732,10 @@ _.Zones =
 					["coord"] = { 76.8, 47.5, 115 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27784 },	-- Commander Eligor Dawnbringer
-					["sourceQuest"] = 12237,	-- Flight of the Wintergarde Defender
+					["sourceQuests"] = {
+						12174,	-- High Commander Halford Wyrmbane (Dragonblight)
+						12298,	-- High Commander Halford Wyrmbane (Howling Fjord)
+					},
 					["g"] = {
 						i(38178),	-- Battlement Enforcer's Axe
 						i(38177),	-- Siege Captain's Gun
