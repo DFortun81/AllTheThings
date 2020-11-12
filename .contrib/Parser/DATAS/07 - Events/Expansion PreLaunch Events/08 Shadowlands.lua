@@ -623,7 +623,18 @@ _.WorldEvents =
 							85,	-- Orgrimmar
 						},
 						["g"] = bubbleDown({["cost"] = { { "c", 1754, 15 } }}, {
-							i(183555),	-- Argent Conscript's Cape
+							i(183552, {	-- Argent Conscript's Drape
+                                ["classes"] = { MAGE, PRIEST, WARLOCK },
+                            }),
+							i(183553, {	-- Argent Conscript's Cloak
+                                ["classes"] = { ROGUE, MONK, DRUID, DEMONHUNTER },
+                            }),
+							i(183554, {	-- Argent Conscript's Lined Cloak
+                                ["classes"] = { HUNTER, SHAMAN },
+                            }),
+							i(183555, {	-- Argent Conscript's Cape
+                                ["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+                            }),
 							i(183538),	-- Argent Conscript's Treads
 							i(183576),	-- Argent Conscript's Gloves
 							i(183575),	-- Argent Conscript's Skullcap
@@ -669,7 +680,9 @@ _.WorldEvents =
 						},
 						["g"] = bubbleDown({["cost"] = { { "c", 1754, 15 } }}, {
 							-- Alliance items
-							i(183524),	-- Argent Conscript's Drape
+							i(183524, {	-- Argent Conscript's Drape
+                                ["classes"] = { MAGE, PRIEST, WARLOCK },
+                            }),
 							i(183525),	-- Argent Conscript's Robe
 							i(183526),	-- Argent Conscript's Tunic
 							i(183527),	-- Argent Conscript's Treads
@@ -684,8 +697,15 @@ _.WorldEvents =
 							i(183546),	-- Argent Conscript's Circlet
 							i(183547),	-- Argent Conscript's Gloves
 							i(183548),	-- Argent Conscript's Cord
-							i(183549),	-- Argent Conscript's Cloak
-							i(183551),	-- Argent Conscript's Lined Cloak
+							i(183549, {	-- Argent Conscript's Cloak
+                                ["classes"] = { ROGUE, MONK, DRUID, DEMONHUNTER },
+                            }),
+							i(183550, {	-- Argent Conscript's Cape
+                                ["classes"] = { HUNTER, SHAMAN },
+                            }),
+							i(183551, {	-- Argent Conscript's Lined Cloak
+                                ["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+                            }),
 							i(183556),	-- Argent Conscript's Pauldrons
 							i(183557),	-- Argent Conscript's Cowl
 							i(183558),	-- Argent Conscript's Boots
@@ -705,7 +725,18 @@ _.WorldEvents =
 							i(183572),	-- Argent Conscript's Greaves
 							i(183573),	-- Argent Conscript's Buckle
 							-- Horde items
-							i(183555),	-- Argent Conscript's Cape
+							i(183552, {	-- Argent Conscript's Drape
+                                ["classes"] = { MAGE, PRIEST, WARLOCK },
+                            }),
+							i(183553, {	-- Argent Conscript's Cloak
+                                ["classes"] = { ROGUE, MONK, DRUID, DEMONHUNTER },
+                            }),
+							i(183554, {	-- Argent Conscript's Lined Cloak
+                                ["classes"] = { HUNTER, SHAMAN },
+                            }),
+							i(183555, {	-- Argent Conscript's Cape
+                                ["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+                            }),
 							i(183538),	-- Argent Conscript's Treads
 							i(183576),	-- Argent Conscript's Gloves
 							i(183575),	-- Argent Conscript's Skullcap
@@ -752,7 +783,9 @@ _.WorldEvents =
 							84,	-- Stormwind City
 						},
 						["g"] = bubbleDown({["cost"] = { { "c", 1754, 15 } }}, {
-							i(183524),	-- Argent Conscript's Drape
+							i(183524, {	-- Argent Conscript's Drape
+                                ["classes"] = { MAGE, PRIEST, WARLOCK },
+                            }),
 							i(183525),	-- Argent Conscript's Robe
 							i(183526),	-- Argent Conscript's Tunic
 							i(183527),	-- Argent Conscript's Treads
@@ -767,8 +800,15 @@ _.WorldEvents =
 							i(183546),	-- Argent Conscript's Circlet
 							i(183547),	-- Argent Conscript's Gloves
 							i(183548),	-- Argent Conscript's Cord
-							i(183549),	-- Argent Conscript's Cloak
-							i(183551),	-- Argent Conscript's Lined Cloak
+							i(183549, {	-- Argent Conscript's Cloak
+                                ["classes"] = { ROGUE, MONK, DRUID, DEMONHUNTER },
+                            }),
+							i(183550, {	-- Argent Conscript's Cape
+                                ["classes"] = { HUNTER, SHAMAN },
+                            }),
+							i(183551, {	-- Argent Conscript's Lined Cloak
+                                ["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+                            }),
 							i(183556),	-- Argent Conscript's Pauldrons
 							i(183557),	-- Argent Conscript's Cowl
 							i(183558),	-- Argent Conscript's Boots
