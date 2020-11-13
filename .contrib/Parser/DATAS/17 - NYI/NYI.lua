@@ -1557,7 +1557,7 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(163312)),	-- 7th Legionnaire's Shawl
 			un(NEVER_IMPLEMENTED, i(163348)),	-- Warfront Gear Cloak
 			un(NEVER_IMPLEMENTED, i(163364)),	-- Warfront Gear Cloak
-			un(NEVER_IMPLEMENTED, i(146793)),	-- Man'ari Magus Drape
+			-- un(NEVER_IMPLEMENTED, i(146793)),	-- Man'ari Magus Drape -- reported in #errors 20201113
 			un(NEVER_IMPLEMENTED, i(146794)),	-- Sargerei Herald's Cloak
 			un(NEVER_IMPLEMENTED, i(146795)),	-- Terrorfiend Greatcloak
 			un(NEVER_IMPLEMENTED, i(153397)),	-- Salt Starched Shawl

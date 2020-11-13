@@ -516,6 +516,9 @@ _.Zones =
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_CLOAK"}, 3 },	-- Cloak Only!
 								},
+								["g"] = {
+									i(146793),	-- Man'ari Magus Drape (reported in #errors on 20201113)
+								},
 							}),
 							i(153208, {	-- Relinquished Chestguard
 								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
