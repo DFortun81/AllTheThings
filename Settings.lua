@@ -102,12 +102,12 @@ local GeneralSettingsBase = {
 		["Thing:FlightPaths"] = true,
 		["Thing:Followers"] = true,
 		["Thing:Heirlooms"] = true,
-		["Heirloom:Upgrades"] = true,
+		["Thing:HeirloomUpgrades"] = true,
 		["Thing:Illusions"] = true,
 		["Thing:Mounts"] = true,
 		["Thing:MusicRolls"] = true,
 		["Thing:Quests"] = false,
-		["Quests:Breadcrumbs"] = false,
+		["Thing:QuestBreadcrumbs"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
 		["Thing:SelfieFilters"] = true,
@@ -544,12 +544,12 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleFlightPaths = self:Get("Thing:FlightPaths");
 		app.CollectibleFollowers = self:Get("Thing:Followers");
 		app.CollectibleHeirlooms = self:Get("Thing:Heirlooms");
-		app.CollectibleHeirloomUpgrades = self:Get("Heirloom:Upgrades");
+		app.CollectibleHeirloomUpgrades = self:Get("Thing:HeirloomUpgrades");
 		app.CollectibleIllusions = self:Get("Thing:Illusions");
 		app.CollectibleMounts = self:Get("Thing:Mounts");
 		app.CollectibleMusicRolls = self:Get("Thing:MusicRolls");
 		app.CollectibleQuests = self:Get("Thing:Quests");
-		app.CollectibleBreadcrumbs = self:Get("Quests:Breadcrumbs");
+		app.CollectibleBreadcrumbs = self:Get("Thing:QuestBreadcrumbs");
 		app.CollectibleRecipes = self:Get("Thing:Recipes");
 		app.CollectibleReputations = self:Get("Thing:Reputations");
 		app.CollectibleSelfieFilters = self:Get("Thing:SelfieFilters");
@@ -1075,7 +1075,7 @@ HeirloomsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
 
 local HeirloomUpgradesCheckBox = settings:CreateCheckBox("+Upgrades",
 function(self)
-	self:SetChecked(settings:Get("Heirloom:Upgrades"));
+	self:SetChecked(settings:Get("Thing:HeirloomUpgrades"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Heirlooms") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -1085,7 +1085,7 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("Heirloom:Upgrades", self:GetChecked());
+	settings:Set("Thing:HeirloomUpgrades", self:GetChecked());
 	settings:UpdateMode(1);
 end);
 HeirloomUpgradesCheckBox:SetATTTooltip("Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle.");
@@ -1215,7 +1215,7 @@ QuestsCheckBox:SetPoint("TOPLEFT", MusicRollsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local QuestBreadcrumbsCheckBox = settings:CreateCheckBox("+Breadcrumbs",
 function(self)
-	self:SetChecked(settings:Get("Quests:Breadcrumbs"));
+	self:SetChecked(settings:Get("Thing:QuestBreadcrumbs"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -1225,7 +1225,7 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("Quests:Breadcrumbs", self:GetChecked());
+	settings:Set("Thing:QuestBreadcrumbs", self:GetChecked());
 	settings:UpdateMode(1);
 end);
 QuestBreadcrumbsCheckBox:SetATTTooltip("Enable this option to specifically include tracking of Breadcrumb Quest completion.\n\nBreadcrumb Quests are technically 'optional' in that they only serve to lead the player to a different Quest, and become unavailable if they are not completed prior to completing their following Quest(s).\nThis can make obtaining Breadcrumbs very reliant on the Party Sync feature or Account Mode + Account-Wide Quests");
