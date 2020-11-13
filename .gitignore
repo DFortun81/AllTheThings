@@ -67,3 +67,4 @@ obj/
 **/desktop.ini
 *.bak
 .contrib/.source/ATT Sync Tool/bin/x86/Debug/log.txt
+.contrib/Harvesters/DBs/

@@ -1663,7 +1663,9 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 				-- it's not an item
 				(not group.itemID and
 				-- incomplete things actually exist below itself
-				((group.total or 0) > (group.progress or 0)))
+				((group.total or 0) > (group.progress or 0)) and
+				-- it is not a 'saved' thing for this character
+				(not group.saved or group.saved ~= 1))
 			) then
 			-- print("expanded",group.key,group[group.key]);
 			group.expanded = expanded;
