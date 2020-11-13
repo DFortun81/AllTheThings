@@ -1472,7 +1472,7 @@ end
 local function CreateHash(t)
 	local key = t.key or GetKey(t);
 	if key then
-		local hash = key .. (rawget(t, key) or t[key]);
+		local hash = key .. (rawget(t, key) or t[key] or "NOKEY");
 		if key == "criteriaID" and t.achievementID then hash = hash .. ":" .. t.achievementID; end
 		if key == "creatureID" then
 			if t.encounterID then hash = hash .. ":" .. t.encounterID; end
