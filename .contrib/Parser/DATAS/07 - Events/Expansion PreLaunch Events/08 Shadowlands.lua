@@ -461,7 +461,6 @@ _.WorldEvents =
 						["isRepeatable"] = true,
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
-							i(183641),	-- Shoulderpads of Corpal Rigidity
 							i(183653),	-- Deathwhisper Vestment
 							i(183655),	-- Handgrips of Rime and Sleet
 							i(183652),	-- Zod's Echoing Longbow - confirmed
@@ -524,7 +523,6 @@ _.WorldEvents =
 						["g"] = {
 							i(183200),	-- Pitch Black Scourgestone
 							i(183678),	-- Keleseth's Influencer
-							i(183677),	-- Blood-Drinker's Belt -- TODO: does Keleseth actually drop this or does Taldaram? Need more data
 							i(183661),	-- Drake Stablers Gauntlets
 							i(183680),	-- Royal Sanguine Cloak
 						},
