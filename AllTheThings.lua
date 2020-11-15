@@ -11276,7 +11276,7 @@ function app:GetDataCache()
 		db = {};
 		db.expanded = false;
 		db.text = GROUP_FINDER;
-		db.icon = "Interface\\LFGFRAME\\LFGIcon-ReturntoKarazhan";
+		db.icon = "Interface\\Addons\\AllTheThings\\assets\\D&R";
 		db.g = app.Categories.Instances;
 		table.insert(g, db);
 		
@@ -11285,7 +11285,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(46, app.Categories.Zones);
 			db.expanded = false;
 			db.text = BUG_CATEGORY2;
-			db.icon = "Interface\\ICONS\\Achievement_Zone_Outland_01"
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\zones"
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -11296,7 +11296,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = TRANSMOG_SOURCE_4;
 			--db.text = ITEM_BIND_ON_EQUIP;
-			db.icon = "Interface\\ICONS\\INV_Misc_Map02";
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\wdrop";
 			db.g = app.Categories.WorldDrops;
 			table.insert(g, db);
 		end
@@ -11306,6 +11306,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(4476, app.Categories.GroupFinder);	-- Looking for More
 			db.expanded = false;
 			db.text = DUNGEONS_BUTTON;
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\grpf"
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -11315,6 +11316,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(4496, app.Categories.Achievements);	-- It's Over Nine Thousand
 			db.expanded = false;
 			db.text = TRACKER_HEADER_ACHIEVEMENTS;
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\ach"
 			db.npcID = -4;
 			db.collectible = false;
 			table.insert(g, db);
@@ -11326,7 +11328,7 @@ function app:GetDataCache()
 			db.lvl = 50;	-- used to be 120 pre-scale
 			db.expanded = false
 			db.text = "Azerite Essences"
-			db.icon = "Interface\\ICONS\\Inv_heartofazeroth"
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\Azerite"
 			db.description = "Essences have two effects on them, one major and one minor power.\n\nPlayers may place an Essence in every unlocked Major or Minor slot in the Heart of Azeroth.\n\nThe major power will only be activated if the Essence is placed in the central Major slot.\n\nThe minor power will be activated if the Essence is placed in any Minor slot or the central Major slot.\n\nThe same Essence cannot be placed in multiple slots.\n\nEssences must be learned at the Heart Forge, but can be swapped out in any Rest Area."
 			db.g = app.Categories.Essences
 			table.insert(g, db)
@@ -11366,7 +11368,7 @@ function app:GetDataCache()
 			db.lvl = 26;	-- used to be 67 pre-scale
 			db.expanded = false;
 			db.text = GetCategoryInfo(15301);
-			db.icon = "Interface\\ICONS\\Achievement_Battleground_TempleOfKotmogu_02_Green";
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\xpacf";
 			db.g = app.Categories.ExpansionFeatures;
 			db.collectible = false;
 			table.insert(g, db);
@@ -11375,7 +11377,7 @@ function app:GetDataCache()
 		-- Events
 		if app.Categories.WorldEvents then
 			db = app.CreateDifficulty(18, app.Categories.WorldEvents);
-			db.icon = "Interface\\Icons\\inv_misc_celebrationcake_01";
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\event";
 			db.expanded = false;
 			db.collectible = false;
 			table.insert(g, db);
@@ -11416,7 +11418,7 @@ function app:GetDataCache()
 		end;
 		db.OnUpdate(db);
 		db.text = "Flight Paths";
-		db.icon = "Interface\\Minimap\\Tracking\\Flightmaster";
+		db.icon = "Interface\\Addons\\AllTheThings\\assets\\fpl";
 		table.insert(g, db);
 		
 		-- Pet Battles
@@ -11425,6 +11427,7 @@ function app:GetDataCache()
 			db.lvl = 3; -- Must be 3 to train (used to be 5 pre-scale)
 			db.expanded = false;
 			db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\petb"
 			db.g = app.Categories.PetBattles;
 			db.collectible = false;
 			table.insert(g, db);
@@ -11435,7 +11438,7 @@ function app:GetDataCache()
 			db = {};
 			db.expanded = false;
 			db.text = STAT_CATEGORY_PVP;
-			db.icon = "Interface\\Icons\\Achievement_PVP_Legion08";
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\pvp";
 			db.g = app.Categories.PVP;
 			db.collectible = false;
 			table.insert(g, db);
@@ -11446,7 +11449,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(5035, {});
 			db.expanded = false;
 			db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
-			db.icon = "Interface\\ICONS\\ability_repair";
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\craft";
 			db.g = app.Categories.Craftables;
 			db.collectible = false;
 			table.insert(g, db);
@@ -11457,7 +11460,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(10583, {});
 			db.expanded = false;
 			db.text = TRADE_SKILLS;
-			db.icon = "Interface\\ICONS\\INV_Scroll_04";
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\prof";
 			db.g = app.Categories.Professions;
 			db.collectible = false;
 			table.insert(g, db);
@@ -11469,8 +11472,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.description = "Naughty secrets...";
 			db.text = L["SECRETS_HEADER"];
-			db.icon = "Interface\\ICONS\\Spell_Nature_Polymorph_Cow";
-			db.model = "1526032";
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\secrets";
 			db.g = app.Categories.Secrets;
 			db.collectible = false;
 			table.insert(g, db);
@@ -11478,9 +11480,11 @@ function app:GetDataCache()
 		
 		-- Selfie Filters
 		if app.Categories.SelfieFilters then
-			db = app.CreateItem(122674, app.Categories.SelfieFilters);
+			db = { };
 			db.expanded = false;
 			db.text = L["SELFIE_FILTERS_HEADER"];
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\Selfc";
+			db.g = app.Categories.SelfieFilters;
 			db.lvl = 40;	-- used to be 100
 			table.insert(g, db);
 		end
@@ -11490,7 +11494,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(11761, app.Categories.GearSets);
 			db.expanded = false;
 			db.text = LOOT_JOURNAL_ITEM_SETS;
-			db.icon = "Interface\\ICONS\\Achievement_Transmog_Collections";
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\isets";
 			table.insert(g, db);
 		end
 		
@@ -11499,7 +11503,7 @@ function app:GetDataCache()
 			db = { };
 			db.expanded = false;
 			db.text = BATTLE_PET_SOURCE_10;
-			db.icon = "Interface\\ICONS\\INV_Misc_Map02";
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\gshop";
 			db.g = app.Categories.InGameShop;
 			table.insert(g, db);
 		end
@@ -11518,6 +11522,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(11177, app.Categories.Factions);
 			db.expanded = false;
 			db.text = "Factions";
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\factions";
 			table.insert(g, db);
 		end
 		
@@ -11526,6 +11531,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(app.FactionID == Enum.FlightPathFaction.Horde and 12934 or 12933, app.Categories.Mounts);
 			db.expanded = false;
 			db.text = MOUNTS;
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\mounts"
 			table.insert(g, db);
 		end
 		
@@ -11535,7 +11541,7 @@ function app:GetDataCache()
 			db.f = 101;
 			db.expanded = false;
 			db.text = PET_JOURNAL;
-			db.icon = "Interface\\ICONS\\INV_Pet_BattlePetTraining";
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\petj";
 			table.insert(g, db);
 		end
 		
@@ -11550,7 +11556,7 @@ function app:GetDataCache()
 		-- Toys
 		if app.Categories.Toys then
 			db = app.CreateAchievement(12996, app.Categories.Toys);
-			db.icon = "Interface\\ICONS\\INV_Misc_Toy_10";
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\toy";
 			db.expanded = false;
 			db.f = 102;
 			db.text = TOY_BOX;
