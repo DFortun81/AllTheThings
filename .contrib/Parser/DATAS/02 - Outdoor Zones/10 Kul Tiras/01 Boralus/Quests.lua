@@ -789,14 +789,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 135259 },	-- Taelia
 					["g"] = {
-						i(155034),	-- Freebooter Cowl
-						i(155022),	-- Freebooter Tunic
-						i(155039),	-- Navigator's Robes
-						i(155032),	-- Navigator's Circlet
-						i(155021),	-- Outrigger Chainmail
-						i(155033),	-- Outrigger Helm
-						i(155031),	-- Sea Raider's Greathelm
-						i(155020),	-- Sea Raider's Breastplate
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155034),	-- Freebooter Cowl
+									i(155022),	-- Freebooter Tunic
+									i(155039),	-- Navigator's Robes
+									i(155032),	-- Navigator's Circlet
+									i(155021),	-- Outrigger Chainmail
+									i(155033),	-- Outrigger Helm
+									i(155031),	-- Sea Raider's Greathelm
+									i(155020),	-- Sea Raider's Breastplate
+								},
+						}),
 						i(175297),	-- Freebooter Cowl (no azerite version)
 						i(175356),	-- Freebooter Tunic (no azerite version)
 						i(175357),	-- Navigator's Robes (no azerite version)

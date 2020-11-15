@@ -311,14 +311,19 @@ _.Zones =
 					["coord"] = { 55.63, 36.23, 1009 },	-- The Blood Font (Vol'dun)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(155396),	-- Exiled Veteran's Helm
-						i(161158),	-- Exiled Veteran's Spaulders
-						i(155397),	-- Lastwind Hood
-						i(161161),	-- Lastwind Shoulderpads
-						i(155398),	-- Resilient Outcast's Coif
-						i(161159),	-- Resilient Outcast's Spaulders
-						i(155399),	-- Scorching Sands Mask
-						i(161160),	-- Scorching Sands Shoulderspads
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155396),	-- Exiled Veteran's Helm
+									i(161158),	-- Exiled Veteran's Spaulders
+									i(155397),	-- Lastwind Hood
+									i(161161),	-- Lastwind Shoulderpads
+									i(155398),	-- Resilient Outcast's Coif
+									i(161159),	-- Resilient Outcast's Spaulders
+									i(155399),	-- Scorching Sands Mask
+									i(161160),	-- Scorching Sands Shoulderspads
+								},
+						}),
 						i(175310),	-- Exiled Veteran's Helm (no azerite version)
 						i(175346),	-- Exiled Veteran's Spaulders (no azerite version)
 						i(175311),	-- Lastwind Hood (no azerite version)
@@ -379,14 +384,19 @@ _.Zones =
 					["coord"] = { 52.2, 79.8, 864 },	-- Valley of Sorrows (Vol'dun)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(155404),	-- Lastwind Robes
-						i(155407),	-- Lastwind Mantle
-						i(155386),	-- Resilient Outcast's Hauberk
-						i(155408),	-- Resilient Outcasat's Shoulderguards
-						i(155385),	-- Exiled Veteran's Cuirass
-						i(155406),	-- Exiled Veteran's Pauldrons
-						i(155387),	-- Scorching Sands Wraps
-						i(155405),	-- Scorching Sand Shoulderpads
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155404),	-- Lastwind Robes
+									i(155407),	-- Lastwind Mantle
+									i(155386),	-- Resilient Outcast's Hauberk
+									i(155408),	-- Resilient Outcasat's Shoulderguards
+									i(155385),	-- Exiled Veteran's Cuirass
+									i(155406),	-- Exiled Veteran's Pauldrons
+									i(155387),	-- Scorching Sands Wraps
+									i(155405),	-- Scorching Sand Shoulderpads
+								},
+						}),
 						i(175373),	-- Lastwind Robes (no azerite item)
 						i(175340),	-- Lastwind Mantle (no azerite item)
 						i(175371),	-- Resilient Outcast's Hauberk (no azerite item)

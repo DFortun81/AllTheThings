@@ -101,15 +101,20 @@ _.Zones =
 						-- Awarded "A New Order" criteria.
 					},
 					["g"] = {
-						i(155107),	-- Banisher Cowl
-						i(155104),	-- Waycrest Militia Helmet
-						i(160888),	-- Banisher Jerkin
-						i(160890),	-- Waycrest Militia Battleplate
-						i(160889),	-- Crone-Seeker's Chainmail
-						i(155106),	-- Crone-Seeker's Helm
-						un(NEVER_IMPLEMENTED, i(160891)), -- Wickerwoven Robe
-						i(160887),	-- Wickerwoven Vestments
-						i(155105),	-- Wickerwoven Crown
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155107),	-- Banisher Cowl
+									i(155104),	-- Waycrest Militia Helmet
+									i(160888),	-- Banisher Jerkin
+									i(160890),	-- Waycrest Militia Battleplate
+									i(160889),	-- Crone-Seeker's Chainmail
+									i(155106),	-- Crone-Seeker's Helm
+									un(NEVER_IMPLEMENTED, i(160891)), -- Wickerwoven Robe
+									i(160887),	-- Wickerwoven Vestments
+									i(155105),	-- Wickerwoven Crown
+								},
+						}),
 						i(175301),	-- Banisher Cowl (no azerite version)
 						i(175298),	-- Waycrest Militia Helmet (no azerite version)
 						i(175380),	-- Banisher Jerkin (no azerite version)
@@ -1013,14 +1018,19 @@ _.Zones =
 						-- Awarded "Storming the Manor" criteria.
 					},
 					["g"] = {
-						i(155112),	-- Wickerwoven Robe
-						i(155115),	-- Wickerwoven Amice
-						i(155095),	-- Banisher Tunic
-						i(155113),	-- Banisher Shoulderpads
-						i(155094),	-- Crone-Seeker's Breastplate
-						i(155116),	-- Crone-Seeker's Shoulderguards
-						i(155093),	-- Waycrest Militia Breastplate (Plate reward confirmed by Iyanden 10-13-18)
-						i(155114),	-- Waycrest Militia Spaulders (Plate reward confirmed by Iyanden 10-13-18)
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155112),	-- Wickerwoven Robe
+									i(155115),	-- Wickerwoven Amice
+									i(155095),	-- Banisher Tunic
+									i(155113),	-- Banisher Shoulderpads
+									i(155094),	-- Crone-Seeker's Breastplate
+									i(155116),	-- Crone-Seeker's Shoulderguards
+									i(155093),	-- Waycrest Militia Breastplate (Plate reward confirmed by Iyanden 10-13-18)
+									i(155114),	-- Waycrest Militia Spaulders (Plate reward confirmed by Iyanden 10-13-18)
+								},
+						}),
 						i(175361),	-- Wickerwoven Robe (no azerite version)
 						i(175324),	-- Wickerwoven Amice (no azerite version)
 						i(175360),	-- Banisher Tunic (no azerite version)
