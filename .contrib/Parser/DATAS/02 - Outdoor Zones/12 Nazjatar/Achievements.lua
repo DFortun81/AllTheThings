@@ -31,7 +31,8 @@ _.Zones =
 					}),
 					crit(11, {	-- Frenzied Knifefang
 						["crs"] = { 154920 },	-- Frenzied Knifefang
-						["coord"] = { 59.1, 26.6, 1355 },
+						["coord"] = { 61.40, 19.85, 1355 },
+						["description"] = "Inside the cave.",
 					}),
 					crit(12, {	-- Giant Opaline Conch
 						["crs"] = { 154921 },	-- Giant Opaline Conch
