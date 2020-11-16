@@ -415,7 +415,6 @@ _.WorldEvents =
 							i(183664),	-- Bracer of Ground Molars
 							i(183667),	-- Geistslicer
 							i(183665),	-- Valonforth's Marred Pauldrons
-							i(183666),	-- Legguards of the Frosty Fathoms
 						},
 					}),
 					n(174056, {	-- Forgemaster Garfrost (15)
