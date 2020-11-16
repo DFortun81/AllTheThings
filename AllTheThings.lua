@@ -3006,6 +3006,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
 		end
 		
+		if paramA == "itemID" and paramB == 137642 then
+			if app.Settings:GetTooltipSetting("SummarizeThings") then
+				tinsert(info, 1, { left = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content\n(Type '/att ' in chat then Shift-Click to link the item)", wrap = false, color = "ffff8426" });
+			end			
+		end
+		
 		local collectionData;
 		if group.g and #group.g > 0 then
 			--[[
@@ -4927,6 +4933,9 @@ local function AttachTooltip(self)
 				-- Does the tooltip have an itemlink?
 				local link = select(2, self:GetItem());
 				if link then
+					-- local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, reforging, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
+					local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
+					-- print(Ltype,Id);
 					--[[
 					local itemString = string.match(link, "item[%-?%d:]+");
 					-- mythic keystones have no itemID ... ?? so itemString is nil here
@@ -4936,7 +4945,11 @@ local function AttachTooltip(self)
 						self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
 					end--]]
 					-- print("Search Item",itemID);
-					AttachTooltipSearchResults(self, link, SearchForLink, link);
+					if Ltype == "item" and Id == "137642" then -- skip Mark of Honor for now
+						AttachTooltipSearchResults(self, link, function() end, "itemID", 137642);
+					else
+						AttachTooltipSearchResults(self, link, SearchForLink, link);
+					end
 				end
 				
 				-- Does this tooltip have a 'shown Thing'
