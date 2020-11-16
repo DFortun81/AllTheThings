@@ -2146,6 +2146,7 @@ app.L = {
 		[211754] = "Interface\\Icons\\inv_misc_book_11",
 		[213363] = "Interface\\Icons\\inv_weapon_shortblade_46",
 		[213364] = "Interface\\Icons\\inv_pick_05",
+		[213651] = "Interface\\Icons\\inv_misc_treasurechest05b",
 		[213741] = "Interface\\Icons\\inv_staff_07",
 		[213742] = "Interface\\Icons\\inv_mace_46",
 		[213743] = "Interface\\Icons\\inv_sword_38",
