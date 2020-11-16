@@ -863,7 +863,7 @@ namespace ATT
             public static void Export(string directory)
             {
                 var AllContainerClones = new Dictionary<string, List<object>>(AllContainers);
-                AllContainerClones.Remove("Blacklist");
+                AllContainerClones.Remove("Uncollectable");
                 File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString());
             }
             #endregion
