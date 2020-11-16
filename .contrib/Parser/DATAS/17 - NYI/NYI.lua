@@ -1907,6 +1907,35 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(168030)),	-- dnt hyperbolic circuit
 			un(NEVER_IMPLEMENTED, i(168031)),	-- dnt transference disc
 		}),
+		-- M+ PTR Testing
+		un(NEVER_IMPLEMENTED, i(159681)),	-- Set Keystone Map: Darkheart Thicket
+		un(NEVER_IMPLEMENTED, i(159683)),	-- Set Keystone Map: Black Rook Hold
+		un(NEVER_IMPLEMENTED, i(159684)),	-- Set Keystone Map: Cathedral of Eternal Night
+		un(NEVER_IMPLEMENTED, i(159685)),	-- Set Keystone Map: Court of Stars
+		un(NEVER_IMPLEMENTED, i(159686)),	-- Set Keystone Map: Eye of Azshara
+		un(NEVER_IMPLEMENTED, i(159687)),	-- Set Keystone Map: Halls of Valor
+		un(NEVER_IMPLEMENTED, i(159688)),	-- Set Keystone Map: Maw of Souls
+		un(NEVER_IMPLEMENTED, i(159689)),	-- Set Keystone Map: Lower Karazhan
+		un(NEVER_IMPLEMENTED, i(159690)),	-- Set Keystone Map: Upper Karazhan
+		un(NEVER_IMPLEMENTED, i(159691)),	-- Set Keystone Map: Seat of the Triumvirate
+		un(NEVER_IMPLEMENTED, i(159692)),	-- Set Keystone Map: The Arcway
+		un(NEVER_IMPLEMENTED, i(159693)),	-- Set Keystone Map: Vault of the Wardens
+		un(NEVER_IMPLEMENTED, i(159694)),	-- Set Keystone Level: 15
+		un(NEVER_IMPLEMENTED, i(159695)),	-- Set Keystone Level: 16
+		un(NEVER_IMPLEMENTED, i(159696)),	-- Set Keystone Level: 17
+		un(NEVER_IMPLEMENTED, i(159697)),	-- Set Keystone Level: 18
+		un(NEVER_IMPLEMENTED, i(159698)),	-- Set Keystone Level: 19
+		un(NEVER_IMPLEMENTED, i(159699)),	-- Set Keystone Level: 20
+		un(NEVER_IMPLEMENTED, i(159700)),	-- Set Keystone Level: 21
+		un(NEVER_IMPLEMENTED, i(159701)),	-- Set Keystone Level: 22
+		un(NEVER_IMPLEMENTED, i(159702)),	-- Set Keystone Level: 23
+		un(NEVER_IMPLEMENTED, i(159703)),	-- Set Keystone Level: 24
+		un(NEVER_IMPLEMENTED, i(159704)),	-- Set Keystone Level: 25
+		un(NEVER_IMPLEMENTED, i(159705)),	-- Set Keystone Level: 26
+		un(NEVER_IMPLEMENTED, i(159706)),	-- Set Keystone Level: 27
+		un(NEVER_IMPLEMENTED, i(159707)),	-- Set Keystone Level: 28
+		un(NEVER_IMPLEMENTED, i(159708)),	-- Set Keystone Level: 29
+		un(NEVER_IMPLEMENTED, i(159709)),	-- Set Keystone Level: 30
 		un(NEVER_IMPLEMENTED, i(79907)),	-- Spear of Xuen (Old Version)
 		un(NEVER_IMPLEMENTED, i(129742)),	-- Badge of Timewalking Justice cap
 		un(NEVER_IMPLEMENTED, i(31496)),	-- Unknown
