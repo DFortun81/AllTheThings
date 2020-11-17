@@ -212,7 +212,7 @@ _.Zones =
 						47870,	-- Dead Men Tell No Tales
 						47871,	-- Seafaring Necessities
 					},
-					["provider"] = { "n", 124468 },	-- Randall Redmond
+					["provider"] = { "n", 139069 },	-- First Mate Redmond
 					["coord"] = { 44.6, 86.9, 864 },
 				}),
 				q(51991, {	-- Charging the Batteries
@@ -241,7 +241,7 @@ _.Zones =
 					["description"] = "Must be wearing Ashvane Garb to pick up and turn in the quest.",
 					["provider"] = { "n", 128618 },	-- Dockmaster Herrington
 					["coord"] = { 44.6, 88.2, 864 },
-					["races"] = HORDE_ONLY,
+					-- ["races"] = HORDE_ONLY,	-- via #errors 20201105-14:19
 				}),
 				q(50746, {	-- Crater Conquered
 					["sourceQuests"] = {
@@ -311,14 +311,19 @@ _.Zones =
 					["coord"] = { 55.63, 36.23, 1009 },	-- The Blood Font (Vol'dun)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(155396),	-- Exiled Veteran's Helm
-						i(161158),	-- Exiled Veteran's Spaulders
-						i(155397),	-- Lastwind Hood
-						i(161161),	-- Lastwind Shoulderpads
-						i(155398),	-- Resilient Outcast's Coif
-						i(161159),	-- Resilient Outcast's Spaulders
-						i(155399),	-- Scorching Sands Mask
-						i(161160),	-- Scorching Sands Shoulderspads
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155396),	-- Exiled Veteran's Helm
+									i(161158),	-- Exiled Veteran's Spaulders
+									i(155397),	-- Lastwind Hood
+									i(161161),	-- Lastwind Shoulderpads
+									i(155398),	-- Resilient Outcast's Coif
+									i(161159),	-- Resilient Outcast's Spaulders
+									i(155399),	-- Scorching Sands Mask
+									i(161160),	-- Scorching Sands Shoulderspads
+								},
+						}),
 						i(175310),	-- Exiled Veteran's Helm (no azerite version)
 						i(175346),	-- Exiled Veteran's Spaulders (no azerite version)
 						i(175311),	-- Lastwind Hood (no azerite version)
@@ -379,14 +384,19 @@ _.Zones =
 					["coord"] = { 52.2, 79.8, 864 },	-- Valley of Sorrows (Vol'dun)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(155404),	-- Lastwind Robes
-						i(155407),	-- Lastwind Mantle
-						i(155386),	-- Resilient Outcast's Hauberk
-						i(155408),	-- Resilient Outcasat's Shoulderguards
-						i(155385),	-- Exiled Veteran's Cuirass
-						i(155406),	-- Exiled Veteran's Pauldrons
-						i(155387),	-- Scorching Sands Wraps
-						i(155405),	-- Scorching Sand Shoulderpads
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155404),	-- Lastwind Robes
+									i(155407),	-- Lastwind Mantle
+									i(155386),	-- Resilient Outcast's Hauberk
+									i(155408),	-- Resilient Outcasat's Shoulderguards
+									i(155385),	-- Exiled Veteran's Cuirass
+									i(155406),	-- Exiled Veteran's Pauldrons
+									i(155387),	-- Scorching Sands Wraps
+									i(155405),	-- Scorching Sand Shoulderpads
+								},
+						}),
 						i(175373),	-- Lastwind Robes (no azerite item)
 						i(175340),	-- Lastwind Mantle (no azerite item)
 						i(175371),	-- Resilient Outcast's Hauberk (no azerite item)
@@ -463,7 +473,7 @@ _.Zones =
 					["description"] = "Must be wearing Ashvane Garb to pick up and turn in the quest.",
 					["provider"] = { "n", 128618 },	-- Dockmaster Herrington
 					["coord"] = { 44.6, 88.2, 864 },
-					["races"] = HORDE_ONLY,
+					-- ["races"] = HORDE_ONLY,	-- via #errors 20201105-14:19
 				}),
 				q(50775, {	-- Get Us Some Beach
 					["sourceQuests"] = { 50834 },	-- Keep It Down! (breadcrumb)
@@ -1013,7 +1023,6 @@ _.Zones =
 					["sourceQuests"] = { 51810 },	-- Captain Hartford
 					["provider"] = { "n", 139070 },	-- Captain Redmond
 					["coord"] = { 43.2, 90.8, 864 },
-					["races"] = HORDE_ONLY,
 				}),
 				q(48655, {	-- The Chef's Apprentice
 					["sourceQuests"] = {

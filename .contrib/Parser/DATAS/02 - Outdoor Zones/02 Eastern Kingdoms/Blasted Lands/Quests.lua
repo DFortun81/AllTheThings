@@ -491,7 +491,7 @@ _.Zones =
 						i(118778),	-- Ironmender's Totem
 						i(118779),	-- Bladespike Charm
 						i(118780),	-- Bloodburn Protector
-						i(111600),	-- Iron Starlette
+						i(111660),	-- Iron Starlette
 					},
 				}),
 				q(2581, {	-- Snickerfang Jowls
@@ -813,7 +813,7 @@ _.Zones =
 						i(118778),	-- Ironmender's Totem
 						i(118779),	-- Bladespike Charm
 						i(118780),	-- Bloodburn Protector
-						i(111600),	-- Iron Starlette
+						i(111660),	-- Iron Starlette
 					},
 				}),
 				q(25714, {	-- Watcher Mahar Ba

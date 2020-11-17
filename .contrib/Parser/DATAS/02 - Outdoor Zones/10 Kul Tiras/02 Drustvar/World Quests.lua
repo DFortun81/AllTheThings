@@ -15,50 +15,34 @@ _.Zones =
 					}),
 					q(53280, {	-- Blooming Siren's Sting
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53299, {	-- Blooming Siren's Sting
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53271, {	-- Blooming Star Moss
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53317, {	-- Dense Storm Silver
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53302, {	-- Flourishing Riverbud
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53297, {	-- Flourishing Riverbud
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(53270, {	-- Flourishing Riverbud
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53284, {	-- Flourishing Riverbud
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(48604, {	-- Home Again, Home Again
 						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53274, {	-- Overgrown Anchor Weed
-						["isWorldQuest"] = true,
-						["requireSkill"] = HERBALISM,
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(53282, {	-- Overgrown Anchor Weed
-						["isWorldQuest"] = true,
-						["requireSkill"] = HERBALISM,
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
 					}),
 					q(54627),	-- Paragon of the Order of Embers
 					q(48515, {	-- Silver Blades
@@ -70,27 +54,18 @@ _.Zones =
 					q(48808, {	-- Thesis Statement
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51769, {	-- What a Gull Wants
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53273, {	-- Winter's Kiss Cluster
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52407, {	-- Work Order: Golden Beryl
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(50986, {	-- Work Order: Sea Stalk
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(50985, {	-- Work Order: Siren's Pollen
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 ]]--
@@ -101,31 +76,31 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51616, {	-- A Final Rest
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51719, {	-- A Glaive Mistake
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51727, {	-- A Shot at the Dark Iron
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51687, {	-- A Smelly Solution
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51745, {	-- A Smelly Solution
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51576, {	-- Any Witch Way but Dead
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -135,16 +110,16 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51541, {	-- Arclight
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51466, {	-- Arvon the Betrayed
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51542, {	-- Avalanche
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(54681, {	-- Azerite Caravan (Faction Assault WQ)
 						["lvl"] = 110,
@@ -152,67 +127,67 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(52862, {	-- Azerite Empowerment
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51612, { 	-- Azerite Empowerment
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51608, {	-- Azerite Madness
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52872, {	-- Azerite Mining
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51615, {	-- Azerite Mining
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51609, {	-- Azerite Wounds
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51491, {	-- Balethorn
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51506, {	-- Barbthorn Queen
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51681, {	-- Basic Witch
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51637, {	-- Beachhead
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(50000, {	-- Beastly Dealings
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51832, {	-- Beat Around The Bush
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(51917, {	-- Beshol
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51469, {	-- Betsy
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51512, {	-- Bilefang Mother
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(54143, {	-- Bird's-Eye (Faction Assault WQ)
 						["lvl"] = 110,
@@ -220,30 +195,30 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51699, {	-- Blighted Monstrosity
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53272, {	-- Blooming Siren's Sting
 						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(51709, {	-- Bombarbment (A)
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51741, {	-- Bombarbment (H)
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(51468, {	-- Bonesquall
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51989, {	-- Braedan Whitewall
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(54662, {	-- Brought to Light (Faction Assault WQ)
@@ -252,49 +227,49 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(50369, { 	-- Bruin Potions (A)
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51737, {	-- Bruin Potions
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53312, {	-- Burnished Platinum
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["requireSkill"] = MINING,
 					}),
 					q(55264, {	-- Calligraphy
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51528, {	-- Captain Leadfist
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51920, {	-- Cottontail Matron
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52009, {	-- Crab People
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51706, { 	-- Deadwood
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51461, { 	-- Deathcap
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51754, {	-- Dogged Tenacity
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(54665, {	-- Duchess Fallensong (Faction Assault WQ)
 						["lvl"] = 110,
@@ -302,7 +277,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51747, {	-- Early Warning
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -318,7 +293,7 @@ _.Zones =
 					}),
 					q(51919, {	-- Emily Mayville
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(53867, {	-- Engineer Bolthold (Faction Assault WQ)
 						["lvl"] = 110,
@@ -326,26 +301,31 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51527, {	-- Executioner Blackwell
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51761, {	-- Familiar Foes
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51588, {	-- Familiar Foes
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(53270, {	-- Flourishing Riverbud
+						["isWorldQuest"] = true,
+						["lvl"] = { 50 },
+						["requireSkill"] = HERBALISM,
+					}),
 					q(53266, {	-- Flourishing Sea Stalks
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 						["requireSkill"] = HERBALISM,
 					}),
 					q(51658, { 	-- Fly the Coop!
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -360,53 +340,53 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51887, {	-- Fungi Trio
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53311, {	-- Gleaming Storm Silver
 						["requireSkill"] = MINING,
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(51507, {	-- Gorehorn
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51874, {	-- Gorged Boar
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51909, {	-- Grozgore
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51884, {	-- Haywire Golem
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51604, {	-- Hunters Hunted
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51764, {	-- Hunters Hunted
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51697, {	-- Hunting for Truffle Hunters (A)
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51740, {	-- Hunting for Truffle Hunters
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51467, {	-- Hyo'gi
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(54137, {	-- In Every Dark Corner (Faction Assault WQ)
 						["lvl"] = 110,
@@ -420,14 +400,14 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51693, {	-- Intercepting the Irontide
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51742, {	-- Intercepting the Irontide
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(54689, {	-- Lights Out (Faction Assault WQ)
 						["lvl"] = 110,
@@ -438,11 +418,11 @@ _.Zones =
 						},
 					}),
 					q(51972, {	-- Lost Goat
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(53308, {	-- Luminous Monelite
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 						["requireSkill"] = MINING,
 					}),
@@ -457,7 +437,7 @@ _.Zones =
 						["lvl"] = 110,
 					}),
 					q(51433, {	-- Matron Morana
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(54686, {	-- Medical Emergency (Faction Assault WQ)
@@ -466,14 +446,14 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51707, {	-- More Valuable Than Gold (A)
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51743, {	-- More Valuable Than Gold (H)
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(54650, {	-- Muk'luk (Faction Assault WQ)
 						["lvl"] = 110,
@@ -481,34 +461,34 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(53979, {	-- Naga Attack!
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
 					q(53963, {	-- Naga Attack!
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
 					q(51620, {	-- Natural Resources
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51768, {	-- Natural Resources
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51908, {	-- Nevermore
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52218, {	-- Night Horrors
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(54089, {	-- Omgar Doombow (Faction Assault WQ)
@@ -517,9 +497,21 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51454, {	-- Once More Into Battle
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(53274, {	-- Overgrown Anchor Weed
+						["requireSkill"] = HERBALISM,
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,	-- probably?  reported as seen on an alliance character
+						["lvl"] = { 50 },
+					}),
+					q(53282, {	-- Overgrown Anchor Weed
+						["requireSkill"] = HERBALISM,
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,	-- probably?
+						["lvl"] = { 50 },
 					}),
 					q(54666, {	-- Packmaster Swiftarrow (Faction Assault WQ)
 						["lvl"] = 110,
@@ -532,86 +524,86 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51505, {	-- Quillrat Matriarch
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51585, {	-- Quit Your Witchin'
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51897, {	-- Rimestone
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(51710, {	-- Rise of the Yetis (A)
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51739, {	-- Rise of the Yetis (H)
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52278, {	-- Rogue Azerite
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(49397, {	-- Sausage Party
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51625, {	-- Shell Game
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51906, { 	-- Sister Martha
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51683, {	-- Slash and Burn Tactics
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51431, { 	-- Soul Goliath
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51434, {	-- Stone Golem
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52381, {	-- Supplies Needed: Lane Snapper
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(51529, {	-- Talon
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51672, {	-- Tangled Webs (A)
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51765, {	-- Tangled Webs (H)
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(54187, {	-- Tea for Two
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(54190, {	-- Tea for Two
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(54471, {	-- Tend the Wounded (Faction Assault WQ)
 						["lvl"] = 110,
@@ -619,24 +611,24 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51970, { 	-- The Caterer
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(55215, { 	-- The Cycle of Life
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51690, { 	-- The Shadows of Corlain
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51746, {	-- The Shadows of Corlain
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51667, {	-- This Bird You Cannot Change
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["g"] = {
@@ -644,26 +636,26 @@ _.Zones =
 						},
 					}),
 					q(51767, {	-- Trapline
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51619, {	-- Trapline
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51397, { 	-- Up In Your Drill
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51508, {	-- Vicemaul
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(51530, {	-- Wedding Crashers
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -674,43 +666,48 @@ _.Zones =
 					}),
 					q(51457, {	-- Whargarble the Ill-Tempered
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52297, {	-- What's the Buzz?
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
-					q(51676, {	-- What a Gull Wants
-						["lvl"] = 120,
+					q(51676, {	-- What a Gull Wants (A)
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(51769, {	-- What a Gull Wants (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = { 50 },
+					}),
 					q(51686, {	-- Where My Witches at?
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51694, {	-- Which Witch?
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51988, {	-- Whitney "Steelclaw" Ramsay
 						["isWorldQuest"] = true,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(51682, {	-- Witches by the Dozen (A)
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51738, {	-- Witches by the Dozen (H)
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 					}),
 					q(52424, {	-- Work Order: Battle Flag: Rallying Swiftness
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = TAILORING,
@@ -719,14 +716,14 @@ _.Zones =
 						},
 					}),
 					q(50991, {	-- Work Order: Blood-Stained Bone
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = SKINNING,
 					}),
 					q(52390, {	-- Work Order: Contract: Order of Embers
 						["requireSkill"] = INSCRIPTION,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["g"] = {
@@ -734,14 +731,14 @@ _.Zones =
 						},
 					}),
 					q(52414, {	-- Work Order: Drums of the Maelstrom
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = LEATHERWORKING,
 					}),
 					q(52357, {	-- Work Order: Enchant Weapon - Quick Navigation
 						["requireSkill"] = ENCHANTING,
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["g"] = {
@@ -749,7 +746,7 @@ _.Zones =
 						},
 					}),
 					q(52365, {	-- Work Order: F.R.I.E.D.
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENGINEERING,
@@ -758,13 +755,13 @@ _.Zones =
 						},
 					}),
 					q(50987, {	-- Work Order: Monelite Ore
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = MINING,
 					}),
 					q(52334, {	-- Work Order: Potion of Concealment
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = ALCHEMY,
@@ -773,18 +770,24 @@ _.Zones =
 						},
 					}),
 					q(52406, {	-- Work Order: Rubellite
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = JEWELCRAFTING,
 					}),
+					q(50985, {	-- Work Order: Siren's Pollen
+						["isWorldQuest"] = true,
+						["lvl"] = { 50 },
+						["races"] = ALLIANCE_ONLY,
+						["requireSkill"] = HERBALISM,
+					}),
 					q(50994, {	-- Work Order: Tempest Hide
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52364, {	-- Work Order: Thermo-Accelerated Plague Spreader
-						["lvl"] = 120,
+						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENGINEERING,

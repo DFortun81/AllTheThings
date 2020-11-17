@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S       M O D U L E          --
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 _.Zones =
@@ -209,7 +209,7 @@ _.Zones =
 							["coord"] = { 53.1, 70.9, 1473 },
 							["description"] = "Your Heart of Azeroth needs to be 54 to start the questline.",
 							["lvl"] = 120,
-						}),	
+						}),
 						q(55392, {	-- Enter the Dreamway
 							["provider"] = { "n", 151682 },	-- Merithra of the Dream
 							["coord"] = { 51.6, 57.2, 641 },
@@ -247,7 +247,7 @@ _.Zones =
 								55395,	-- Don't Close Your Eyes
 							},
 							["lvl"] = 120,
-							["maps"] = { 
+							["maps"] = {
 								1471,	-- Emerald Dreamway
 								1475,	-- The Emerald Dream
 							},
@@ -312,7 +312,7 @@ _.Zones =
 							["coord"] = { 50.0, 59.2, 1473 },
 							["sourceQuests"] = {
 								56261,	-- Return to the Heart (A)
-								55522,	-- Return to the Heart (H)	
+								55522,	-- Return to the Heart (H)
 							},
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["lvl"] = 120,
@@ -344,7 +344,7 @@ _.Zones =
 							["coord"] = { 36.0, 50.5, 241 },
 							["sourceQuest"] = 56167,	-- Investigating the Highlands
 							["lvl"] = 120,
-							["maps"] = { 
+							["maps"] = {
 								241,	-- Twilight Highlands
 								1476,	-- Twilight Highlands (Szenario)
 							},
@@ -425,7 +425,7 @@ _.Zones =
 								56263,	-- Unlocking the Power (A)
 								56260,	-- Unlocking the Power (H)
 							},
-							["g"] = { 
+							["g"] = {
 								i(168614, {	-- Charged Scale of the Blue Aspect
 									az(12, 4),	-- The Crucible of Flame (Rank 4)
 								}),
@@ -580,7 +580,7 @@ _.Zones =
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
-							["sourceQuest"] = 57362,	-- Deeper Into the Darkness
+							["sourceQuest"] = 57373,	-- Descending Into Madness
 							["g"] = {
 								spell(315864),	-- Tenebrous Conduit (unlocks horrific visions)
 							},
@@ -589,7 +589,7 @@ _.Zones =
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
-							["sourceQuest"] = 58634,	-- Opening the Gateway
+							["sourceQuest"] = 57362,	-- Deeper Into the Darkness
 							["g"] = {
 								-- Plate
 								i(173821),	-- Malignant Leviathan's Clasp
@@ -674,7 +674,6 @@ _.Zones =
 							["sourceQuest"] = 57402,	-- Reconstructing "The Curse of Stone"
 							["cost"] = { { "i", 174782, 1 } },	-- Fear and Flesh
 							["g"] = {
-									
 								i(169223, {	-- Ashjra'kamas, Shroud of Resolve
 									["bonusID"] = 6277,	-- (Rank 6 appearence)
 								}),

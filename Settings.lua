@@ -102,12 +102,12 @@ local GeneralSettingsBase = {
 		["Thing:FlightPaths"] = true,
 		["Thing:Followers"] = true,
 		["Thing:Heirlooms"] = true,
-		["Heirloom:Upgrades"] = true,
+		["Thing:HeirloomUpgrades"] = true,
 		["Thing:Illusions"] = true,
 		["Thing:Mounts"] = true,
 		["Thing:MusicRolls"] = true,
 		["Thing:Quests"] = false,
-		["Quests:Breadcrumbs"] = false,
+		["Thing:QuestBreadcrumbs"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
 		["Thing:SelfieFilters"] = true,
@@ -379,8 +379,7 @@ end
 
 settings.SetAccountMode = function(self, accountMode)
 	self:Set("AccountMode", accountMode);
-	self:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	self:UpdateMode(1);
 end
 settings.ToggleAccountMode = function(self)
 	self:SetAccountMode(not self:Get("AccountMode"));
@@ -416,24 +415,21 @@ end
 settings.SetCompletedThings = function(self, checked)
 	self:Set("Show:CompletedGroups", checked);
 	self:Set("Show:CollectedThings", checked);
-	self:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	self:UpdateMode(1);
 end
 settings.ToggleCompletedThings = function(self)
 	self:SetCompletedThings(not self:Get("Show:CompletedGroups"));
 end
 settings.SetCompletedGroups = function(self, checked)
 	self:Set("Show:CompletedGroups", checked);
-	self:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	self:UpdateMode(1);
 end
 settings.ToggleCompletedGroups = function(self)
 	self:SetCompletedGroups(not self:Get("Show:CompletedGroups"));
 end
 settings.SetCollectedThings = function(self, checked)
 	self:Set("Show:CollectedThings", checked);
-	self:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	self:UpdateMode(1);
 end
 settings.ToggleCollectedThings = function(self)
 	settings:SetCollectedThings(not self:Get("Show:CollectedThings", checked));
@@ -450,7 +446,7 @@ end
 settings.ToggleBOEItems = function(self)
 	self:SetHideBOEItems(not self:Get("Hide:BoEs"));
 end
-settings.UpdateMode = function(self)
+settings.UpdateMode = function(self, doRefresh)
 	if self:Get("Completionist") then
 		app.ItemSourceFilter = app.FilterItemSource;
 		app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
@@ -470,7 +466,7 @@ settings.UpdateMode = function(self)
 		app.GroupFilter = app.NoFilter;
 		app.SeasonalItemFilter = app.NoFilter;
 		app.UnobtainableItemFilter = app.NoFilter;
-		app.VisibilityFilter = app.NoFilter;
+		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.ShowIncompleteThings = app.NoFilter;
 		
 		app.AccountWideAchievements = true;
@@ -548,12 +544,12 @@ settings.UpdateMode = function(self)
 		app.CollectibleFlightPaths = self:Get("Thing:FlightPaths");
 		app.CollectibleFollowers = self:Get("Thing:Followers");
 		app.CollectibleHeirlooms = self:Get("Thing:Heirlooms");
-		app.CollectibleHeirloomUpgrades = self:Get("Heirloom:Upgrades");
+		app.CollectibleHeirloomUpgrades = self:Get("Thing:HeirloomUpgrades");
 		app.CollectibleIllusions = self:Get("Thing:Illusions");
 		app.CollectibleMounts = self:Get("Thing:Mounts");
 		app.CollectibleMusicRolls = self:Get("Thing:MusicRolls");
 		app.CollectibleQuests = self:Get("Thing:Quests");
-		app.CollectibleBreadcrumbs = self:Get("Quests:Breadcrumbs");
+		app.CollectibleBreadcrumbs = self:Get("Thing:QuestBreadcrumbs");
 		app.CollectibleRecipes = self:Get("Thing:Recipes");
 		app.CollectibleReputations = self:Get("Thing:Reputations");
 		app.CollectibleSelfieFilters = self:Get("Thing:SelfieFilters");
@@ -572,12 +568,12 @@ settings.UpdateMode = function(self)
 		app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
 		app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
 	end
-	if self:Get("Show:CompletedGroups") or self:Get("DebugMode") then
+	if self:Get("Show:CompletedGroups") then
 		app.GroupVisibilityFilter = app.NoFilter;
 	else
 		app.GroupVisibilityFilter = app.FilterGroupsByCompletion;
 	end
-	if self:Get("Show:CollectedThings") or self:Get("DebugMode") then
+	if self:Get("Show:CollectedThings") then
 		app.CollectedItemVisibilityFilter = app.NoFilter;
 	else
 		app.CollectedItemVisibilityFilter = app.Filter;
@@ -613,6 +609,11 @@ settings.UpdateMode = function(self)
 	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
 		app:RegisterEvent("TAXIMAP_OPENED");
 	end
+	
+	-- if auto-refresh
+	if doRefresh then
+		app:RefreshData(nil,nil,true);
+	end		
 end
 
 -- The ALL THE THINGS Epic Logo!
@@ -687,6 +688,16 @@ function(self)
 end,
 function(self)
 	settings:SetDebugMode(self:GetChecked());
+	if self:GetChecked() then
+		-- cache the current settings to re-apply after
+		settings:Set("Cache:CompletedGroups", settings:Get("Show:CompletedGroups"));
+		settings:Set("Cache:CollectedThings", settings:Get("Show:CollectedThings"));
+		settings:SetCompletedGroups(true);
+		settings:SetCollectedThings(true);
+	else
+		settings:SetCompletedGroups(settings:Get("Cache:CompletedGroups"));
+		settings:SetCollectedThings(settings:Get("Cache:CollectedThings"));
+	end
 end);
 DebugModeCheckBox:SetATTTooltip("Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.");
 DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -1);
@@ -852,8 +863,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Achievements", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 AchievementsCheckBox:SetATTTooltip("Enable this option to track achievements.");
 AchievementsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -1);
@@ -871,8 +881,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Achievements", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 AchievementsAccountWideCheckBox:SetATTTooltip("Achievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.");
 AchievementsAccountWideCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "TOPLEFT", 220, 0);
@@ -924,8 +933,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:AzeriteEssences", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 AzeriteEssencesCheckBox:SetATTTooltip("Enable this option to track Azerite Essences.\n\nTracked per character by default.");
 AzeriteEssencesCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "BOTTOMLEFT", 0, 4);
@@ -943,8 +951,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:AzeriteEssences", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 AzeriteEssencesAccountWideCheckBox:SetATTTooltip("Azerite Essences cannot technically be collected and used account-wide, but if you only care about collecting them on your main character then you may prefer tracking them account-wide.");
 AzeriteEssencesAccountWideCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "TOPLEFT", 220, 0);
@@ -962,8 +969,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:BattlePets", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 BattlePetsCheckBox:SetATTTooltip("Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.\n\nTracked Account Wide by Default.");
 BattlePetsCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "BOTTOMLEFT", 0, 4);
@@ -974,9 +980,7 @@ function(self)
 	self:Disable();
 	self:SetAlpha(0.2);
 end,
-function(self)
-	print("Battle pets are only tracked account wide.");
-end);
+nil);
 BattlePetsAccountWideCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "TOPLEFT", 220, 0);
 
 local FlightPathsCheckBox = settings:CreateCheckBox("Flight Paths / Ferry Stations",
@@ -992,8 +996,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:FlightPaths", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 FlightPathsCheckBox:SetATTTooltip("Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\NOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.");
 FlightPathsCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1011,8 +1014,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:FlightPaths", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 FlightPathsAccountWideCheckBox:SetATTTooltip("Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
 FlightPathsAccountWideCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "TOPLEFT", 220, 0);
@@ -1030,8 +1032,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Followers", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 FollowersCheckBox:SetATTTooltip("Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, and BFA Campaign Minions.");
 FollowersCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1049,8 +1050,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Followers", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 FollowersAccountWideCheckBox:SetATTTooltip("Followers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.");
 FollowersAccountWideCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "TOPLEFT", 220, 0);
@@ -1068,15 +1068,14 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Heirlooms", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 HeirloomsCheckBox:SetATTTooltip("Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.");
 HeirloomsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
 
 local HeirloomUpgradesCheckBox = settings:CreateCheckBox("+Upgrades",
 function(self)
-	self:SetChecked(settings:Get("Heirloom:Upgrades"));
+	self:SetChecked(settings:Get("Thing:HeirloomUpgrades"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Heirlooms") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -1086,9 +1085,8 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("Heirloom:Upgrades", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:Set("Thing:HeirloomUpgrades", self:GetChecked());
+	settings:UpdateMode(1);
 end);
 HeirloomUpgradesCheckBox:SetATTTooltip("Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle.");
 HeirloomUpgradesCheckBox:SetPoint("TOP", HeirloomsCheckBox, "TOP", 0, 0);
@@ -1117,8 +1115,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Illusions", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 IllusionsCheckBox:SetATTTooltip("Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.\n\nTracked Account Wide by Default.");
 IllusionsCheckBox:SetPoint("TOPLEFT", HeirloomsCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1131,8 +1128,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Illusions", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 IllusionsAccountWideCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox, "TOPLEFT", 220, 0);
 
@@ -1149,8 +1145,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Mounts", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 MountsCheckBox:SetATTTooltip("Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!\n\nTracked Account Wide by Default.");
 MountsCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1176,8 +1171,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:MusicRolls", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 MusicRollsCheckBox:SetATTTooltip("Enable this option to track music rolls.\n\nYou can use your Jukebox Toy to play in-game music!");
 MusicRollsCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1195,8 +1189,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:MusicRolls", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 MusicRollsAccountWideCheckBox:SetATTTooltip("Music Rolls are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You can only play Music Rolls using the Jukebox Toy that you have collected on your current character.");
 MusicRollsAccountWideCheckBox:SetPoint("TOPLEFT", MusicRollsCheckBox, "TOPLEFT", 220, 0);
@@ -1214,8 +1207,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Quests", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 QuestsCheckBox:SetATTTooltip("Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and World Quests are tracked in the Blizzard Database.");
 QuestsCheckBox.Text:SetWidth(50);
@@ -1223,7 +1215,7 @@ QuestsCheckBox:SetPoint("TOPLEFT", MusicRollsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local QuestBreadcrumbsCheckBox = settings:CreateCheckBox("+Breadcrumbs",
 function(self)
-	self:SetChecked(settings:Get("Quests:Breadcrumbs"));
+	self:SetChecked(settings:Get("Thing:QuestBreadcrumbs"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -1233,9 +1225,8 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("Quests:Breadcrumbs", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:Set("Thing:QuestBreadcrumbs", self:GetChecked());
+	settings:UpdateMode(1);
 end);
 QuestBreadcrumbsCheckBox:SetATTTooltip("Enable this option to specifically include tracking of Breadcrumb Quest completion.\n\nBreadcrumb Quests are technically 'optional' in that they only serve to lead the player to a different Quest, and become unavailable if they are not completed prior to completing their following Quest(s).\nThis can make obtaining Breadcrumbs very reliant on the Party Sync feature or Account Mode + Account-Wide Quests");
 QuestBreadcrumbsCheckBox:SetPoint("TOP", QuestsCheckBox, "TOP", 0, 0);
@@ -1254,8 +1245,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Quests", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 QuestsAccountWideCheckBox:SetATTTooltip("Quest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.");
 QuestsAccountWideCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 220, 0);
@@ -1273,8 +1263,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Recipes", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 RecipesCheckBox:SetATTTooltip("Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.");
 RecipesCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1292,8 +1281,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Recipes", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 RecipesAccountWideCheckBox:SetATTTooltip("Recipes are not normally tracked account wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.");
 RecipesAccountWideCheckBox:SetPoint("TOPLEFT", RecipesCheckBox, "TOPLEFT", 220, 0);
@@ -1311,8 +1299,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Reputations", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 ReputationsCheckBox:SetATTTooltip("Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.");
 ReputationsCheckBox:SetPoint("TOPLEFT", RecipesCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1330,8 +1317,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Reputations", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 ReputationsAccountWideCheckBox:SetATTTooltip("Reputations are now tracked account wide in Blizzard's database for achievements, so turning this on may be a good idea.");
 ReputationsAccountWideCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "TOPLEFT", 220, 0);
@@ -1349,8 +1335,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:SelfieFilters", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 SelfieFiltersCheckBox:SetATTTooltip("Enable this option to track selfie filters for S.E.L.F.I.E Camera Toy.\n\nOh joy! Selfies! Okay duuude.");
 SelfieFiltersCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1368,8 +1353,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:SelfieFilters", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 SelfieFiltersAccountWideCheckBox:SetATTTooltip("Selfie Filters are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You have to snap a selfie with your S.E.L.F.I.E Camera Toy!");
 SelfieFiltersAccountWideCheckBox:SetPoint("TOPLEFT", SelfieFiltersCheckBox, "TOPLEFT", 220, 0);
@@ -1387,8 +1371,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Titles", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 TitlesCheckBox:SetATTTooltip("Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.");
 TitlesCheckBox:SetPoint("TOPLEFT", SelfieFiltersCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1406,8 +1389,7 @@ function(self)
 end,
 function(self)
 	settings:Set("AccountWide:Titles", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 TitlesAccountWideCheckBox:SetATTTooltip("Most titles are tracked account wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.");
 TitlesAccountWideCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "TOPLEFT", 220, 0);
@@ -1425,8 +1407,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Toys", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 ToysCheckBox:SetATTTooltip("Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!\n\nTracked Account Wide by Default.");
 ToysCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1477,18 +1458,11 @@ MinimapButtonStyleCheckBox:SetPoint("TOPLEFT", ShowMinimapButtonCheckBox, "BOTTO
 local ShowCompletedGroupsCheckBox = settings:CreateCheckBox("Show Completed Groups",
 function(self)
 	self:SetChecked(settings:Get("Show:CompletedGroups"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
 end,
 function(self)
 	settings:SetCompletedGroups(self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:Set("Cache:CompletedGroups", self:GetChecked());
+	settings:UpdateMode(1);
 end);
 ShowCompletedGroupsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
 ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", MinimapButtonStyleCheckBox, "BOTTOMLEFT", -4, -2);
@@ -1496,18 +1470,11 @@ ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", MinimapButtonStyleCheckBox, "BOT
 local ShowCollectedThingsCheckBox = settings:CreateCheckBox("Show Collected Things",
 function(self)
 	self:SetChecked(settings:Get("Show:CollectedThings"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
 end,
 function(self)
 	settings:SetCollectedThings(self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:Set("Cache:CollectedThings", self:GetChecked());
+	settings:UpdateMode(1);
 end);
 ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
 ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", ShowCompletedGroupsCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1525,8 +1492,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Show:IncompleteThings", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 ShowIncompleteThingsCheckBox:SetATTTooltip("Enable this option if you want to see items, objects, NPCs, and headers which can be tracked within the game without necessarily being considered 'collectible'.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.");
 ShowIncompleteThingsCheckBox:SetPoint("TOPLEFT", ShowCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1544,8 +1510,7 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("Repeatable", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 ShowRepeatableThingsCheckBox:SetATTTooltip("Enable this option if you want to treat repeatable daily, weekly, and yearly quests as collectible. They will appear in the list like a regular collectible quest.\n\nNOTE: This is NOT intended to be used all the time, but if you're doing a set of dailies in a zone you've otherwise completed and need to be reminded of what is there, you can use this to see them.");
 ShowRepeatableThingsCheckBox:SetPoint("TOPLEFT", ShowIncompleteThingsCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1563,8 +1528,7 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("RepeatableFirstTime", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 ShowRepeatableThingsFirstTimeCheckBox:SetATTTooltip("Enable this option if you want to treat repeatable daily, weekly, yearly and world quests as collected if completed at least once, ignoring quest previously completed that has been reset.\n\nNOTE: Previously completed repeatable quest are only stored if you completed the quest with the addon active and that data will be lost if removed the addon data from WTF folder.");
 ShowRepeatableThingsFirstTimeCheckBox:SetPoint("TOPLEFT", ShowRepeatableThingsCheckBox, "BOTTOMLEFT", 4, 4);
@@ -1582,8 +1546,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Filter:ByLevel", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 FilterThingsByLevelCheckBox:SetATTTooltip("Enable this setting if you only want to see content available to your current level character.\n\nNOTE: This is especially useful on Starter Accounts.");
 FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", ShowRepeatableThingsFirstTimeCheckBox, "BOTTOMLEFT", -4, -2);
@@ -1618,8 +1581,7 @@ function(self)
 end,
 function(self)
 	settings:Set("Filter:BoEs", self:GetChecked());
-	settings:UpdateMode();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 IgnoreFiltersForBoEsCheckBox:SetATTTooltip("Enable this setting if you want to ignore armor, weapon, race, class, or profession requirements for BoE items.\n\nIf you are trying to collect things for your alts via Auction House scanning, this mode may be useful to you.");
 IgnoreFiltersForBoEsCheckBox:SetPoint("TOPLEFT", HideBoEItemsCheckBox, "BOTTOMLEFT", 0, 4);
@@ -2965,7 +2927,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("QuestChain:Nested", self:GetChecked());
 end);
-QuestChainRequirementsNested:SetATTTooltip("Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out. Otherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.");
+QuestChainRequirementsNested:SetATTTooltip("Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.");
 QuestChainRequirementsNested:SetPoint("TOPLEFT", SortByCompletionInstead, "BOTTOMLEFT", 0, 4);
 
 local CelebrationsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");

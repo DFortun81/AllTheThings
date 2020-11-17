@@ -15,7 +15,7 @@ _.WorldEvents =
 		["icon"] = "Interface\\Icons\\ability_warrior_secondwind",
 		["g"] = {
 			n(-227, {	-- Victory
-			--	attaching questIDs and sourceQuests here makes the SQ list not display correctly (the items display instead of the quests).
+				--	attaching questIDs and sourceQuests here makes the SQ list not display correctly (the items display instead of the quests).
 				i(92718, {	-- Brawler's Purse
 					["description"] = "\nAwarded for winning a Brawl. If you haven't already finished the quest chain for Bruce, save these for the 'Soul Splinters' quest.\n",
 				}),

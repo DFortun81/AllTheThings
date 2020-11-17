@@ -7,6 +7,11 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
 			n(TREASURES, {
+				--[[ TODO: find out objectID
+				o(, {	-- Book Treasure
+					["questID"] = 37980,
+					["coord"] = { 58.38, 12.28, 630 },
+				}),]]--
 				o(240638, {	-- Disputed Treasure
 					["questID"] = 38365,
 					["coord"] = { 55.9, 56.9, 630 },

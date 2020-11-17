@@ -13,9 +13,6 @@ _.Zones =
 					["g"] = {
 					
 					--	TODO:
-						-- verify if the following dailies are removed:
-							-- The Trainer's Challenge: Ace Longpaw (31717)
-							-- The Trainer's Challenge: Ningna Darkwheel (31719)
 						-- verify if the following dailies exist independent of completion of other dailies:
 							-- Pooped (31716), got credit for this + the 31704 version of "Pooped" when completing 30150, "Sweet as Honey" *** MUST STILL HAVE A HATCHLING ***
 						n(QUESTS, {
@@ -371,10 +368,11 @@ _.Zones =
 								["coord"] = { 58.5, 43.7, 371 },
 							}),
 							q(31717, {	-- The Trainer's Challenge: Ace Longpaw
-								["u"] = REMOVED_FROM_GAME,
+								["minReputation"] = { 1271, REVERED },
+								["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
 								["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
-								["coord"] = { 57.6, 44.8, 371 },
 								["isDaily"] = true,
+								["coord"] = { 57.6, 44.8, 371 },
 							}),
 							q(31718, {	-- The Trainer's Challenge: Big Bao
 								["minReputation"] = { 1271, REVERED },
@@ -384,10 +382,11 @@ _.Zones =
 								["coord"] = { 57.6, 44.8, 371 },
 							}),
 							q(31719, {	-- The Trainer's Challenge: Ningna Darkwheel
-								["u"] = REMOVED_FROM_GAME,
+								["minReputation"] = { 1271, REVERED },
+								["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
 								["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
-								["coord"] = { 57.6, 44.8, 371 },
 								["isDaily"] = true,
+								["coord"] = { 57.6, 44.8, 371 },
 							}),
 							q(31721, {	-- The Trainer's Challenge: Qua-Ro Whitebrow
 								["minReputation"] = { 1271, REVERED },

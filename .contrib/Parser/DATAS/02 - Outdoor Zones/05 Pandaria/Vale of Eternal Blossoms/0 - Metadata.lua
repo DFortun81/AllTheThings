@@ -12,7 +12,6 @@ _.Zones =
 				395,	-- Guo-Lai Halls
 				396,	-- The Hall of the Serpent
 			},
-			["lvl"] = 85,
 		}),
 	}),
 };

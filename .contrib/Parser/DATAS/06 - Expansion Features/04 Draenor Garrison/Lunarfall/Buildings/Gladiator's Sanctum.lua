@@ -54,6 +54,66 @@ _.ExpansionFeatures =
 								--	not sure whether to remove warlord's flag or if it was placed here intentionally so it doesn't get lost elsewhere
 								}),
 							}),
+							q(36957, {	-- Nemesis: Becoming Death (Blood Elf)
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36959, {	-- Nemesis: Becoming Death (Forsaken)
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36969, {	-- Nemesis: Becoming Death (Goblin)
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36963, {	-- Nemesis: Becoming Death (Orc)
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36967, {	-- Nemesis: Becoming Death (Pandaren)
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36961, {	-- Nemesis: Becoming Death (Tauren)
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36965, {	-- Nemesis: Becoming Death (Troll)
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36960, {	-- Nemesis: Death Stalker
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36955, {	-- Nemesis: Hunter - Hunted
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36968, {	-- Nemesis: Huojin's Fall
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36970, {	-- Nemesis: Killer of Kezan
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36964, {	-- Nemesis: Orcslayer
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36958, {	-- Nemesis: Slayer of Sin'dorei
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36962, {	-- Nemesis: The Butcher
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(36966, {	-- Nemesis: Troll Hunter
+								["provider"] = { "n", 86677 },	-- Kuros
+								["races"] = ALLIANCE_ONLY,
+							}),
 						}),
 						n(-153, {	-- Work Orders
 							n(86639, { 	-- Altar of Bones

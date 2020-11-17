@@ -146,15 +146,6 @@ _.Zones =
 						}),
 					},
 				}),
-				n(112419, {	-- Kuglaroth
-					["questID"] = 44055,
-					["coord"] = { 29.7, 40.1, 650 },	-- quest pickup
-					["g"] = {
-						crit(4, {	-- Stormheim
-							["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
-						}),
-					},
-				}),
 				n(98024,  {	-- Luggut the Eggeater
 					["questID"] = 40406,
 					["coords"] = {

@@ -37,6 +37,7 @@ _.Zones =
 						crit(5, {	-- Ratchet
 							["sourceQuests"] = {
 								14050,	-- Gazlowe's Fortune
+								14063,	-- Mutiny, Mon!
 								14067,	-- The Stolen Silver
 							},
 						}),

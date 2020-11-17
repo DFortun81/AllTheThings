@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -35,7 +36,7 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 					["u"] = REMOVED_FROM_GAME,
-				}),					
+				}),
 				q(1581,  {	-- Elixirs for the Bladeleafs
 					["provider"] = { "n", 2083 },	-- Syral Bladeleaf
 					["coord"] = { 55.8, 50.4, 57 },
@@ -324,7 +325,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32327,	-- The Darnassus Mission
 					["level"] = 81,
-					
 				}),
 				q(488,   {	-- Zenn's Bidding
 					["provider"] = { "n", 2150 },	-- Zenn Foulhoof

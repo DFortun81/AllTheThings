@@ -40,7 +40,7 @@ namespace ATT
         static int API_ExpectedThrottle { get; set; } = API_ThrottleSecond;
         static string RawDirectoryFormat { get; set; }
         static string RawAPICallFormat { get; set; }
-        static int MaxItemID { get; set; } = 180000;
+        static int MaxItemID { get; set; } = 185000;
         static int MaxQuestID { get; set; } = 60000;
         static bool WaitForAPI { get; set; }
         static bool WaitForData { get; set; }
@@ -329,6 +329,7 @@ namespace ATT
             HasClientInitialized = true;
 
             Client.BaseAddress = new Uri("https://us.api.blizzard.com");
+            Client.Timeout = new TimeSpan(0, 0, 10);
             Client.DefaultRequestHeaders.Accept.Clear();
             Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
@@ -534,24 +535,22 @@ namespace ATT
                 Name = "DataParser.Thread",
             };
             threadDataParser.Start();
-
-            // items
-            if (ProcessObjects[ObjType.item])
-            {
-                var rawDataDirectory = Directory.CreateDirectory("RAW/items." + (parseOnlyDate ?? DateStamp));
-                var allFiles = rawDataDirectory.EnumerateFiles("*.raw").AsParallel();
-                allFiles.ForAll(EnqueueFileContents);
-            }
-            // quests
-            if (ProcessObjects[ObjType.quest])
-            {
-                var rawDataDirectory = Directory.CreateDirectory("RAW/quests." + (parseOnlyDate ?? DateStamp));
-                var allFiles = rawDataDirectory.EnumerateFiles("*.raw").AsParallel();
-                allFiles.ForAll(EnqueueFileContents);
-            }
+            ProcessObjType(ObjType.item, parseOnlyDate);
+            ProcessObjType(ObjType.quest, parseOnlyDate);
 
             WaitForParseQueue = false;
             Console.WriteLine("Done Queueing the raw data.");
+        }
+
+        private static void ProcessObjType(ObjType objtype, string parseOnlyDate)
+        {
+            // items
+            if (ProcessObjects[objtype])
+            {
+                var rawDataDirectory = Directory.CreateDirectory("RAW/" + objtype.ToString() + "s." + (parseOnlyDate ?? DateStamp));
+                var allFiles = rawDataDirectory.EnumerateFiles("*.raw").AsParallel();
+                allFiles.ForAll(EnqueueFileContents);
+            }
         }
 
         private static void EnqueueFileContents(FileInfo fileInfo)
@@ -570,7 +569,7 @@ namespace ATT
 
             // New Format 2020-03-26
             if (subData.TryGetValue("level", out int level) && level > 1) dict["iLvl"] = level;
-            if (subData.TryGetValue("required_level", out level) && level > 1) dict["reqlvl"] = new List<object>() { level };
+            if (subData.TryGetValue("required_level", out level) && level > 1) dict["lvl"] = new List<object>() { level };
             if (subData.TryGetValue("is_equippable", out bool b) && b) dict["equippable"] = 1;
             if (subData.TryGetValue("is_repeatable", out bool isRepeatable) && isRepeatable) dict["repeatable"] = 1;
             if (subData.TryGetValue("is_daily", out bool isDaily) && isDaily) dict["isDaily"] = 1;
@@ -969,12 +968,12 @@ namespace ATT
             //requirements.TryGetValue("max_character_level", out int maxlvl);
             //if (minlvl > 0 && maxlvl > 0)
             //{
-            //    dict["reqlvl"] = new List<object>() { minlvl, maxlvl };
+            //    dict["lvl"] = new List<object>() { minlvl, maxlvl };
             //}
             //else 
             if (minlvl > 0)
             {
-                dict["reqlvl"] = new List<object>() { minlvl };
+                dict["lvl"] = new List<object>() { minlvl };
             }
             if (requirements.TryGetValue("playable_classes", out d) && d.TryGetValue("links", out List<object> l))
             {
@@ -1155,7 +1154,6 @@ namespace ATT
             WaitForParsingData = true;
             while (WaitForParseQueue || ParseDatas.Count > 0)
             {
-                // TODO: do in parallel once queueing is done
                 if (ParseDatas.TryDequeue(out string contents))
                 {
                     if (MiniJSON.Json.Deserialize(contents) is Dictionary<string, object> rawData)
@@ -1183,9 +1181,9 @@ namespace ATT
             }
 
             if (ProcessObjects[ObjType.item])
-                File.WriteAllText("itemDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "items", dataItems.Values.ToList() } }));
+                File.WriteAllText(".\\DBs\\" + "itemDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "items", dataItems.Values.ToList() } }));
             if (ProcessObjects[ObjType.quest])
-                File.WriteAllText("questDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "quests", dataQuests.Values.ToList() } }));
+                File.WriteAllText(".\\DBs\\" + "questDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "quests", dataQuests.Values.ToList() } }));
 
             Console.WriteLine("Done exporting the data.");
             WaitForParsingData = false;

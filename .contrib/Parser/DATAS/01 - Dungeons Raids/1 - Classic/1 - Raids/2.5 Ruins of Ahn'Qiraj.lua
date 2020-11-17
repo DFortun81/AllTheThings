@@ -448,72 +448,6 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			filter(200, {	-- Recipes
-				["crs"] = {
-					15369,	-- Ayamiss the Hunter
-					15370,	-- Buru the Gorger
-					15341,	-- General Rajaxx
-					15348,	-- Kurinnaxx
-					15340,	-- Moam
-					15339,	-- Ossirian the Unscarred
-				},
-				["g"] = {
-					-- Class Books
-					cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
-						i(21294),	-- Book of Healing Touch XI
-						i(21295),	-- Book of Starfire VII
-						i(21296),	-- Book of Rejuvenation XI
-					})),
-					cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
-						i(21304),	-- Guide: Multi-Shot V
-						i(21306),	-- Guide: Serpent Sting IX
-						i(21307),	-- Guide: Aspect of the Hawk VII
-					})),
-					cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
-						i(21280),	-- Tome of Arcane Missiles VIII
-						i(21279),	-- Tome of Fireball XII
-						i(21214),	-- Tome of Frostbolt XI
-					})),
-					cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
-						i(21289),	-- Libram: Blessing of Might VII
-						i(21288),	-- Libram: Blessing of Wisdom VI
-						i(21290),	-- Libram: Holy Light IX
-					})),
-					cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
-						i(21284),	-- Codex of Greater Heal V
-						i(21285),	-- Codex of Renew X
-						i(21287),	-- Codex of Prayer of Healing V
-					})),
-					cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
-						i(21300),	-- Handbook of Backstab IX
-						i(21302),	-- Handbook of Deadly Poison V
-						i(21303),	-- Handbook of Feint V
-					})),
-					cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
-						i(21293),	-- Tablet of Grace of Air Totem III
-						i(21291),	-- Tablet of Healing Wave X
-						i(21292),	-- Tablet of Strength of Earth Totem V
-					})),
-					cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
-						i(21283),	-- Grimoire of Corruption VII
-						i(21282),	-- Grimoire of Immolate VIII
-						i(21281),	-- Grimoire of Shadow Bolt X
-					})),
-					cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
-						i(21298),	-- Manual of Battle Shout VII
-						i(21297),	-- Manual of Heroic Strike IX
-						i(21299),	-- Manual of Revenge VI
-					})),
-					-- Enchants
-					i(20729),	-- Formula: Enchant Gloves - Fire Power
-					i(20728),	-- Formula: Enchant Gloves - Frost Power
-					i(20730),	-- Formula: Enchant Gloves - Healing Power
-					i(20727),	-- Formula: Enchant Gloves - Shadow Power
-					i(20731),	-- Formula: Enchant Gloves - Superior Agility
-					i(20736),	-- Formula: Enchant Cloak - Dodge
-					i(20734),	-- Formula: Enchant Cloak - Stealth
-				},
-			}),
 			n(ZONEDROPS, {
 				i(21801, {	-- Antenna of Invigoration
 					["crs"] = {
@@ -689,6 +623,72 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
+				filter(200, {	-- Recipes
+					["crs"] = {
+						15369,	-- Ayamiss the Hunter
+						15370,	-- Buru the Gorger
+						15341,	-- General Rajaxx
+						15348,	-- Kurinnaxx
+						15340,	-- Moam
+						15339,	-- Ossirian the Unscarred
+					},
+					["g"] = {
+						-- Class Books
+						cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
+							i(21294),	-- Book of Healing Touch XI
+							i(21295),	-- Book of Starfire VII
+							i(21296),	-- Book of Rejuvenation XI
+						})),
+						cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
+							i(21304),	-- Guide: Multi-Shot V
+							i(21306),	-- Guide: Serpent Sting IX
+							i(21307),	-- Guide: Aspect of the Hawk VII
+						})),
+						cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
+							i(21280),	-- Tome of Arcane Missiles VIII
+							i(21279),	-- Tome of Fireball XII
+							i(21214),	-- Tome of Frostbolt XI
+						})),
+						cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
+							i(21289),	-- Libram: Blessing of Might VII
+							i(21288),	-- Libram: Blessing of Wisdom VI
+							i(21290),	-- Libram: Holy Light IX
+						})),
+						cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
+							i(21284),	-- Codex of Greater Heal V
+							i(21285),	-- Codex of Renew X
+							i(21287),	-- Codex of Prayer of Healing V
+						})),
+						cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
+							i(21300),	-- Handbook of Backstab IX
+							i(21302),	-- Handbook of Deadly Poison V
+							i(21303),	-- Handbook of Feint V
+						})),
+						cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
+							i(21293),	-- Tablet of Grace of Air Totem III
+							i(21291),	-- Tablet of Healing Wave X
+							i(21292),	-- Tablet of Strength of Earth Totem V
+						})),
+						cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
+							i(21283),	-- Grimoire of Corruption VII
+							i(21282),	-- Grimoire of Immolate VIII
+							i(21281),	-- Grimoire of Shadow Bolt X
+						})),
+						cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
+							i(21298),	-- Manual of Battle Shout VII
+							i(21297),	-- Manual of Heroic Strike IX
+							i(21299),	-- Manual of Revenge VI
+						})),
+						-- Enchants
+						i(20729),	-- Formula: Enchant Gloves - Fire Power
+						i(20728),	-- Formula: Enchant Gloves - Frost Power
+						i(20730),	-- Formula: Enchant Gloves - Healing Power
+						i(20727),	-- Formula: Enchant Gloves - Shadow Power
+						i(20731),	-- Formula: Enchant Gloves - Superior Agility
+						i(20736),	-- Formula: Enchant Cloak - Dodge
+						i(20734),	-- Formula: Enchant Cloak - Stealth
+					},
+				}),
 				i(20888, {	-- Qiraji Ceremonial Ring
 					["crs"] = {
 						15369,	-- Ayamiss the Hunter

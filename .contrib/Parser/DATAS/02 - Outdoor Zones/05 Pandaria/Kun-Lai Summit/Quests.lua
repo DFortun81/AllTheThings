@@ -39,11 +39,6 @@ _.Zones =
 						i(82504),	-- Wallwatcher Shoulders
 					},
 				}),
-				q(32352, {	-- A Gathering Storm
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68287 },	-- Baine Bloodhoof
-					["sourceQuest"] = 32351,	-- Echoes of Thunder
-				}),
 				q(30808, {	-- A Grummle's Luck
 					["coord"] = { 64.7, 61.7, 379 },
 					["provider"] = { "n", 59371 },	-- Lucky Eightcoins
@@ -232,11 +227,6 @@ _.Zones =
 					["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
 					["sourceQuest"] = 30799,	-- The Tomb of Shadows
 				}),
-				q(32401, {	-- Breath of Darkest Shadow (A)
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 68939 },	-- Anduin Wrynn
-					["sourceQuest"] = 32400,	-- The Bell Speaks
-				}),
 				q(32399, {	-- Breath of Darkest Shadow (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 67844 },	-- Malkorok
@@ -331,10 +321,6 @@ _.Zones =
 					["coord"] = { 74.9, 88.5, 379 },
 					["provider"] = { "n", 60973 },	-- Waterspeaker Gorai
 					["sourceQuest"] = 30480,	-- The Ritual
-				}),
-				q(32378, {	-- Clearing a Path
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68370 },	-- Lor'themar Theron
 				}),
 				q(30487, {	-- Comin' Round the Mountain
 					["coord"] = { 57.2, 61.2, 379 },
@@ -611,10 +597,6 @@ _.Zones =
 						30750,	-- Off the Wall!
 					},
 				}),
-				q(32379, {	-- Legacy of the Korune
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68370 },	-- Lor'themar Theron
-				}),
 				q(30801, {	-- Lessons from History
 					["coord"] = { 57.3, 47.9, 379 },
 					["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
@@ -640,10 +622,6 @@ _.Zones =
 						i(90488),	-- Shomi's Crane
 						i(90489),	-- Shomi's Fan
 					},
-				}),
-				q(32368, {	-- Memory Wine (H)
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68287 },	-- Baine Bloodhoof
 				}),
 				q(30619, {	-- Mogu?! Oh No-gu! (A)
 					["coord"] = { 54.1, 83.4, 379 },
@@ -1086,10 +1064,6 @@ _.Zones =
 						31453,	-- The Shado-Pan (breadcrumb)
 					},
 				}),
-				q(32392, {	-- The Divine Bell (H)
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68337 },	-- Ishi
-				}),
 				q(30855, {	-- The Fall of Shai Hu
 					["coord"] = { 74.9, 88.5, 379 },
 					["provider"] = { "n", 61065 },	-- Waterspeaker Gorai
@@ -1369,10 +1343,6 @@ _.Zones =
 						i(88080),	-- Wallwatcher Vest
 					},
 				}),
-				q(32448, {	-- Ties with the Past
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68267 },	-- Baine Bloodhoof
-				}),
 				q(30724, {	-- To the Wall!
 					["coord"] = { 34.9, 59.3, 379 },
 					["provider"] = { "n", 61816 },	-- Lin Silentstrike
@@ -1396,10 +1366,6 @@ _.Zones =
 						i(82569),	-- Luckydo Ring
 						i(82573),	-- Sootassle Band
 					},
-				}),
-				q(32384, {	-- Trapping the Leader
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 68370 },	-- Lor'themar Theron
 				}),
 				q(30826, {	-- Trouble Brewing
 					["coord"] = { 40.3, 81.5, 379 },

@@ -1219,22 +1219,27 @@ _.Zones =
 					["coord"] = { 75.5, 26.9, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(155180),	-- Darkwater Hood
-						i(155186),	-- Darkwater Shoulderpads
-						i(155177),	-- Dread Corsair Greathelm
-						i(155187),	-- Dread Corsair Shoulderplates
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155180),	-- Darkwater Hood
+									i(155186),	-- Darkwater Shoulderpads
+									i(155177),	-- Dread Corsair Greathelm
+									i(155187),	-- Dread Corsair Shoulderplates
+									i(155178),	-- Tidespeaker Circlet
+									i(155188),	-- Tidespeaker Mantle
+									i(155189),	-- Stormchaser Pauldrons	
+									i(155179),	-- Stormchaser Coif
+								},
+						}),
+						i(175303),	-- Tidespeaker Circlet (no azerite version)
+						i(175328),	-- Tidespeaker Mantle (no azerite version)
+						i(175304),	-- Stormchaser Coif (no azerite version)	
+						i(175329),	-- Stormchaser Pauldrons (no azerite version)
 						i(175305),	-- Darkwater Hood (no azerite version)
 						i(175326),	-- Darkwater Shoulderpads (no azerite version)
 						i(175302),	-- Dread Corsair Greathelm (no azerite version)
 						i(175327),	-- Dread Corsair Shoulderplates (no azerite version)
-						i(155178),	-- Tidespeaker Circlet
-						i(155188),	-- Tidespeaker Mantle
-						i(175303),	-- Tidespeaker Circlet (no azerite version)
-						i(175328),	-- Tidespeaker Mantle (no azerite version)
-						i(155179),	-- Stormchaser Coif
-						i(175304),	-- Stormchaser Coif (no azerite version)
-						i(155189),	-- Stormchaser Pauldrons	
-						i(175329),	-- Stormchaser Pauldrons (no azerite version)
 					},
 				}),
 				q(49997, {	-- Storm's Judgment
@@ -1247,21 +1252,26 @@ _.Zones =
 					["coord"] = { 66.4, 56.5, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(155168),	-- Darkwater Tunic
-						i(160878),	-- Darkwater Shoulderguards
-						i(155166),	-- Dread Corsair Breastplate
-						i(160880),	-- Dread Corsair Pauldrons
-						i(175342),	-- Tidespeaker Amice
-						i(175365),	-- Tidespeaker Vestments
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155168),	-- Darkwater Tunic
+									i(160878),	-- Darkwater Shoulderguards
+									i(155166),	-- Dread Corsair Breastplate
+									i(160880),	-- Dread Corsair Pauldrons
+									i(175342),	-- Tidespeaker Amice
+									i(175365),	-- Tidespeaker Vestments
+									i(160879),	-- Stormchaser Shoulderguards
+									i(155167),	-- Stormchaser Chainmail
+								},
+						}),
 						i(175364),	-- Darkwater Tunic (no azerite version)
 						i(175343),	-- Darkwater Shoulderguards (no azerite version) 
 						i(175362),	-- Dread Corsair Breastplate (no azerite version)
 						i(175345),	-- Dread Corsair Pauldrons (no azerite version)
 						i(160877),	-- Tidespeaker Amice (no azerite version)
 						i(155185),	-- Tidespeaker Vestments (no azerite version)
-						i(160879),	-- Stormchaser Shoulderguards
 						i(175344),	-- Stormchaser Shoulderguards (no azerite version)
-						i(155167),	-- Stormchaser Chainmail
 						i(175363),	-- Stormchaser Chainmail (no azerite version)
 					},
 				}),

@@ -45,6 +45,7 @@ _.PVP =
 						n(VENDORS, {
 							n(15126, {	-- Rutherford Twing
 								["itemID"] = 137642,	-- Mark of Honor
+								["races"] = HORDE_ONLY,	-- to hide it in Mark of Honor list
 								["coord"] = { 68.4, 30.6, 14 },
 								["g"] = {
 									i(20176),	-- Defiler's Epaulets
@@ -204,6 +205,7 @@ _.PVP =
 						n(VENDORS, {
 							n(15127, {	-- Samuel Hawke
 								["itemID"] = 137642,	-- Mark of Honor
+								["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 								["coord"] = { 40.2, 46.4, 14 },
 								["g"] = {
 									i(20061),	-- Highlander's Epaulets

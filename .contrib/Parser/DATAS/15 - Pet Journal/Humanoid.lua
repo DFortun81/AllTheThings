@@ -42,6 +42,7 @@ _.PetJournal =
 		un(REMOVED_FROM_GAME, p(2777, {	-- Gillvanas (Blizzcon 2019)
 			["races"] = HORDE_ONLY,
 		})),
+		p(2888),            -- Glimr
 		p(2114),			-- Globe Yeti
 		un(10, p(333)),		-- Gregarious Grell
 		un(REMOVED_FROM_GAME, p(1602)),		-- Grommloc

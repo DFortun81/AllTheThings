@@ -838,10 +838,8 @@ _.Zones =
 				q(40872),	-- Going Out With a Bang
 				q(40875),	-- Going to Waste
 				q(38948),	-- Hard Times
-				q(39876),	-- Helping the Hunters
 				q(43561),	-- I Believe I Can Fly!
 				q(40874),	-- I'd Do It Myself, But...
-				q(39877),	-- In the Loop
 				q(45794),	-- Informing the Council
 				q(37908),	-- Inquisitor Ernstenbok
 				q(39389),	-- It Hungers for Blood
@@ -891,7 +889,6 @@ _.Zones =
 				q(45025),	-- Stealing the Source of Power
 				q(40131),	-- Stonehide Leather Sample
 				q(40141),	-- Stormscale Sample
-				q(40048),	-- Strings of the Puppet Masters
 				q(41288),	-- Supplies Needed: Aethril
 				q(41327),	-- Supplies Needed: Stormscales
 				q(38957),	-- Taking Inspiration

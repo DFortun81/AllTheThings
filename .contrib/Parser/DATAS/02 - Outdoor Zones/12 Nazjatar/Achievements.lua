@@ -31,7 +31,8 @@ _.Zones =
 					}),
 					crit(11, {	-- Frenzied Knifefang
 						["crs"] = { 154920 },	-- Frenzied Knifefang
-						["coord"] = { 59.1, 26.6, 1355 },
+						["coord"] = { 61.40, 19.85, 1355 },
+						["description"] = "Inside the cave.",
 					}),
 					crit(12, {	-- Giant Opaline Conch
 						["crs"] = { 154921 },	-- Giant Opaline Conch
@@ -40,7 +41,7 @@ _.Zones =
 					crit(9, {	-- Kelpstone
 						["crs"] = { 154918 },	-- Kelpstone
 						["coord"] = { 46.6, 28.0, 1355 },
-						["description"] = "Inside a case at the bottom of the waterfall.",
+						["description"] = "Inside a cave at the bottom of the waterfall.",
 					}),
 					crit(8, {	-- Mindshackle
 						["crs"] = { 154917 },	-- Mindshackle

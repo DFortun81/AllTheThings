@@ -7,11 +7,6 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
 			n(QUESTS, {	-- [Alliance]
-				i(163603, {	-- Lucille's Handkerchief
-					["sourceQuests"] = { 50763 },	-- One Last Request
-					["description"] = "After completing the quest \"One Last Request\" you can return back to the house, go upstairs and it will be in the dresser.",
-					["coord"] = { 24.3, 14.9, 896 },
-				}),
 				q(50970, {	-- A Farmer's Fate
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
 					["coord"] = { 29.9, 40.4, 896 },
@@ -106,15 +101,20 @@ _.Zones =
 						-- Awarded "A New Order" criteria.
 					},
 					["g"] = {
-						i(155107),	-- Banisher Cowl
-						i(155104),	-- Waycrest Militia Helmet
-						i(160888),	-- Banisher Jerkin
-						i(160890),	-- Waycrest Militia Battleplate
-						i(160889),	-- Crone-Seeker's Chainmail
-						i(155106),	-- Crone-Seeker's Helm
-						un(NEVER_IMPLEMENTED, i(160891)), -- Wickerwoven Robe
-						i(160887),	-- Wickerwoven Vestments
-						i(155105),	-- Wickerwoven Crown
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155107),	-- Banisher Cowl
+									i(155104),	-- Waycrest Militia Helmet
+									i(160888),	-- Banisher Jerkin
+									i(160890),	-- Waycrest Militia Battleplate
+									i(160889),	-- Crone-Seeker's Chainmail
+									i(155106),	-- Crone-Seeker's Helm
+									un(NEVER_IMPLEMENTED, i(160891)), -- Wickerwoven Robe
+									i(160887),	-- Wickerwoven Vestments
+									i(155105),	-- Wickerwoven Crown
+								},
+						}),
 						i(175301),	-- Banisher Cowl (no azerite version)
 						i(175298),	-- Waycrest Militia Helmet (no azerite version)
 						i(175380),	-- Banisher Jerkin (no azerite version)
@@ -721,10 +721,18 @@ _.Zones =
 					["sourceQuests"] = { 48111 },	-- Trial by Superstition
 				}),
 				q(50763, {	-- One Last Request
+					["sourceQuests"] = { 50762 },	-- The Lady's Fate
 					["provider"] = { "n", 135200 },	-- Alexander Treadward
 					["coord"] = { 23.3, 17.4, 896 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 50762 },	-- The Lady's Fate
+					["g"] = {
+					--	putting it here because it makes more sense to only be displayed for alliance characters in the zone, as they are the only ones who can collect it, and must complete this quest to do so.  it will still show up in the toy section of the mainlist, as the item itself is not tagged ALLIANCE_ONLY, but will not appear for characters who cannot collect it (without account mode on).
+					--	also, if people report "i did the quest and didn't receive the item," "read the description on the toy" is a simpler explanation than "the toy can only be collected on alliance characters but can be used by both factions, so you need to collect it on an alt."  we will get reports either way, but it should be easier for us this way
+						i(163603, {	-- Lucille's Handkerchief
+							["description"] = "After completing the quest \"One Last Request\" you can return back to the house, go upstairs and it will be in the dresser.",
+							["coord"] = { 24.3, 14.9, 896 },
+						}),
+					},
 					-- Not required for "Drust Do It."
 				}),
 				q(50911, {	-- One Man Against the Horde
@@ -1010,14 +1018,19 @@ _.Zones =
 						-- Awarded "Storming the Manor" criteria.
 					},
 					["g"] = {
-						i(155112),	-- Wickerwoven Robe
-						i(155115),	-- Wickerwoven Amice
-						i(155095),	-- Banisher Tunic
-						i(155113),	-- Banisher Shoulderpads
-						i(155094),	-- Crone-Seeker's Breastplate
-						i(155116),	-- Crone-Seeker's Shoulderguards
-						i(155093),	-- Waycrest Militia Breastplate (Plate reward confirmed by Iyanden 10-13-18)
-						i(155114),	-- Waycrest Militia Spaulders (Plate reward confirmed by Iyanden 10-13-18)
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155112),	-- Wickerwoven Robe
+									i(155115),	-- Wickerwoven Amice
+									i(155095),	-- Banisher Tunic
+									i(155113),	-- Banisher Shoulderpads
+									i(155094),	-- Crone-Seeker's Breastplate
+									i(155116),	-- Crone-Seeker's Shoulderguards
+									i(155093),	-- Waycrest Militia Breastplate (Plate reward confirmed by Iyanden 10-13-18)
+									i(155114),	-- Waycrest Militia Spaulders (Plate reward confirmed by Iyanden 10-13-18)
+								},
+						}),
 						i(175361),	-- Wickerwoven Robe (no azerite version)
 						i(175324),	-- Wickerwoven Amice (no azerite version)
 						i(175360),	-- Banisher Tunic (no azerite version)

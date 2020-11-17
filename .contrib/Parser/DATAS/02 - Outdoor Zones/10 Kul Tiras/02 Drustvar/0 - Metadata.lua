@@ -11,7 +11,6 @@ _.Zones =
 			["maps"] = {
 				1045,	-- Thros, the Blighted Lands
 			},
-			["lvl"] = 110,
 		}),
 	}),
 };

@@ -8,7 +8,6 @@ _.Zones =
 		m(507, {	-- Isle of Giants
 			["description"] = "|cff66ccffThe Isle of Giants is an island that has been lost in time, home to primal devilsaurs, direhorns, and skyscreamers raised by the Zandalar tribe on the isle since the loss of Zandalar.|r",
 			["icon"] = "Interface\\Icons\\ability_hunter_pet_devilsaur",
-			["lvl"] = 85,
 			["g"] = {
 				n(-228, {	-- Flight Paths
 					fp(1221, {	-- Beeble's Wreck, Isle Of Giants

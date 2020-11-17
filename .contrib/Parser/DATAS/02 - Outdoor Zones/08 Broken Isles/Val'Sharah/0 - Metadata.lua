@@ -15,7 +15,6 @@ _.Zones =
 				758,	-- Gloaming Reef
 				868,	-- Val'sharah (Legion Invasion)
 			},
-			["lvl"] = 98,
 		}),
 	}),
 };

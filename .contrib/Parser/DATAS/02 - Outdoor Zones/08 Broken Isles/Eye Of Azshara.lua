@@ -6,9 +6,8 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(790, {	-- Eye of Azshara
-			["description"] = "|cff66ccffThe Eye of Azshara is zone south of Dalaran in the Broken Isles. It is a level 110 elite zone that is a replica of the dungeon of the same name. A flight master can be found here, but even with a level 100 boost, you need to unlock it by visiting the flight point.|r",
+			["description"] = "|cff66ccffThe Eye of Azshara is zone south of Dalaran in the Broken Isles. It is an elite zone that is a replica of the dungeon of the same name. A flight master can be found here, you need to unlock it by visiting the flight point.|r",
 			["icon"] = "Interface\\Icons\\achievement_dungeon_eyeofazshara",
-			["lvl"] = 110,
 			["g"] = {
 				filter(101, {	-- Battle Pet
 					p(1914, {	-- Coastal Sandpiper

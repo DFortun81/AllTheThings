@@ -1826,4 +1826,126 @@ profession(ARCHAEOLOGY, {
 			i(160753),	-- Sanguinating Totem
 		}),
 	}),
+	n(VENDORS, {	-- These don't actually show in the list for some reason but cause tooltips on the Crate items in vendor windows. Nice!
+		i(142113, {	-- Crate of Arakkoa Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 829, }	-- Arakkoa Archaeology Fragment
+			},
+		}),
+		i(164625, {	-- Crate of Demon Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 1174, }	-- Demon Archaeology Fragment
+			},
+		}),
+		i(87534, {	-- Crate of Draenei Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 398, }	-- Draenei Archaeology Fragment
+			},
+		}),
+		i(142114, {	-- Crate of Draenor Clans Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 821, }	-- Draenor Clans Archaeology Fragment
+			},
+		}),
+		i(183834, {	-- Crate of Drust Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 1535, }	-- Drust Archaeology Fragment
+			},
+		}),
+		i(87533, {	-- Crate of Dwarven Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 384, }	-- Dwarf Archaeology Fragment
+			},
+		}),
+		i(87535, {	-- Crate of Fossil Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 393, }	-- Fossil Archaeology Fragment
+			},
+		}),
+		i(164626, {	-- Crate of Highborne Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 1172, }	-- Highborne Archaeology Fragment
+			},
+		}),
+		i(164627, {	-- Crate of Highmountain Tauren Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 1173, }	-- Highmountain Tauren Archaeology Fragment
+			},
+		}),
+		i(117388, {	-- Crate of Mantid Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 754, }	-- Mantid Archaeology Fragment
+			},
+		}),	
+		i(117387, {	-- Crate of Mogu Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 677, }	-- Mogu Archaeology Fragment
+			},
+		}),
+		i(87536, {	-- Crate of Night Elf Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 394, }	-- Night Elf Archaeology Fragment
+			},
+		}),
+		i(87537, {	-- Crate of Nerubian Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 400, }	-- Nerubian Archaeology Fragment
+			},
+		}),
+		i(142115, {	-- Crate of Ogre Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 828, }	-- Ogre Archaeology Fragment
+			},
+		}),
+		i(87538, {	-- Crate of Orc Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 397, }	-- Orc Archaeology Fragment
+			},
+		}),
+		i(117386, {	-- Crate of Pandaren Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 676, }	-- Pandaren Archaeology Fragment
+			},
+		}),
+		i(87539, {	-- Crate of Tol'vir Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 401, }	-- Tol'vir Archaeology Fragment
+			},
+		}),
+		i(87540, {	-- Crate of Troll Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 385, }	-- Troll Archaeology Fragment
+			},
+		}),
+		i(87541, {	-- Crate of Vrykul Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 399, }	-- Vrykul Archaeology Fragment
+			},
+		}),
+		i(183835, {	-- Crate of Zandalari Archaeology Fragments
+			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+			["g"] = {
+				{ ["currencyID"] = 1534, }	-- Zandalari Archaeology Fragment
+			},
+		}),
+	}),
 });

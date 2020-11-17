@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -8,7 +9,7 @@ _.Zones =
 			n(RARES, {
 				n(50737, {	-- Acroniss
 					["coord"] = { 73.6, 16.0, 81 },
-				}), 
+				}),
 				n(15211, { 	-- Azure Templar
 					["description"] = "The Azure Templar is a level 60 named water elemental summoned in Silithus from a Lesser Wind Stone. The summoning ritual requires a Twilight Trappings set. To guarantee that the specific Abyssal Templar is summoned, an Object of Beckoning can be used.",
 					["u"] = REMOVED_FROM_GAME,
@@ -29,7 +30,7 @@ _.Zones =
 				}),
 				n(50746, {	-- Bornix the Burrower
 					["coord"] = { 63.0, 89.0, 81 },
-				}), 
+				}),
 				n(15209, { 	-- Crimson Templar
 					["description"] = "The Crimson Templar is a level 60 fire elemental summoned in Silithus from a Lesser Wind Stone. The summoning ritual requires a Twilight Trappings set. To guarantee that the specific Abyssal Templar is summoned, an Object of Beckoning can be used.",
 					["u"] = REMOVED_FROM_GAME,
@@ -50,7 +51,7 @@ _.Zones =
 				}),
 				n(50897, {	-- Ffexk the Dunestalker
 					["coord"] = { 32.1, 53.8, 81 },
-				}), 
+				}),
 				n(14472, {	-- Gretheer
 					["coords"] = {
 						{ 36.2, 39.6, 81 },
@@ -58,7 +59,7 @@ _.Zones =
 						{ 52.2, 55.2, 81 },
 						{ 64.2, 58.2, 81 },
 					},
-				}), 
+				}),
 				n(14477, {	-- Grubthor
 					["coords"] = {
 						{ 34.6, 72.8, 81 },
@@ -96,10 +97,10 @@ _.Zones =
 						{ 30.2, 24.2, 81 },
 						{ 29.4, 19.2, 81 },
 					},
-				}), 
+				}),
 				n(50370, {	-- Karapax
 					["coord"] = { 57.5, 14.8, 81 },
-				}), 
+				}),
 				n(14476, {	-- Krellack
 					["coords"] = {
 						{ 62.4, 18.6, 81 },
@@ -107,7 +108,7 @@ _.Zones =
 						{ 69.8, 37.4, 81 },
 						{ 64.8, 39.4, 81 },
 					},
-				}), 
+				}),
 				n(14473, {	-- Lapress
 					["coords"] = {
 						{ 58.6, 66.8, 81 },
@@ -119,7 +120,7 @@ _.Zones =
 						{ 65.6, 75.2, 81 },
 						{ 63.6, 82.0, 81 },
 					},
-				}), 
+				}),
 				n(15305, {	-- Lord Skwol <Abyssal High Council>
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -130,10 +131,10 @@ _.Zones =
 				}),
 				n(50745, {	-- Losaj
 					["coord"] = { 42.6, 56.6, 81 },
-				}), 
+				}),
 				n(50743, {	-- Manax
 					["coord"] = { 67.5, 66.6, 81 },
-				}), 
+				}),
 				n(15203, {	-- Prince Skaldrenox <Abyssal High Council>
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -144,17 +145,17 @@ _.Zones =
 				}),
 				n(50742, {	-- Qem
 					["coord"] = { 44.0, 17.2, 81 },
-				}), 
+				}),
 				n(50744, {	-- Qu'rik
 					["coord"] = { 54.6, 26.6, 81 },
-				}), 
+				}),
 				n(14475, {	-- Rex Ashil
 					["coords"] = {
 						{ 51.0, 23.0, 81 },
 						{ 52.0, 24.8, 81 },
 						{ 51.6, 26.6, 81 },
 					},
-				}),		
+				}),
 				n(14471, {	-- Setis
 					["coord"] = { 36.0, 82.8, 81 },
 				}),
@@ -205,7 +206,7 @@ _.Zones =
 				}),
 				n(51004, {	-- Toxx
 					["coord"] = { 42.8, 18.2, 81 },
-				}), 
+				}),
 				n(14479, {	-- Twilight Lord Everun
 					["coords"] = {
 						{ 44.2, 40.2, 81 },
@@ -213,7 +214,7 @@ _.Zones =
 						{ 33.0, 30.0, 81 },
 						{ 35.0, 30.8, 81 },
 					},
-				}), 
+				}),
 				n(14474, {	-- Zora
 					["coords"] = {
 						{ 33.8, 53.4, 81 },

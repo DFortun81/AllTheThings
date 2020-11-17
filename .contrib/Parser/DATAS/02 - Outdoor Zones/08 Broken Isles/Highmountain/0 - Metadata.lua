@@ -24,7 +24,6 @@ _.Zones =
 				869,	-- Highmountain (Legion Invasion Ship 1)
 				870,	-- Highmountain (Legion Invasion Ship 2)
 			},
-			["lvl"] = 98,
 		}),
 	}),
 };

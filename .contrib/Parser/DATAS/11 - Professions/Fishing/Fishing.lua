@@ -84,19 +84,24 @@ profession(FISHING, {
 		i(13917),	-- 103 Pound Mightfish
 	}),
 	i(168016, {	-- Hyper-Compressed Ocean
-		i(139408, {	-- Deck Sandals
-			["bonusID"] = 1812,
-		}),
-		i(139407, {	-- Diver's Chain Boots
-			["bonusID"] = 1812,
-		}),
-		i(139405, {	-- Kul'Tiras Marine Issue Boots
-			["bonusID"] = 1812,
-		}),
-		i(139406, {	-- Sea Dog Boots
-			["bonusID"] = 1812,
-		}),
-		i(7188),	--  Stormwind Guard Shield
+		["crs"] = {
+			152121,	-- Hyper-Compressed Ocean NPC
+		},
+		["g"] = {	-- Confirmed Drops
+			i(139408, {	-- Deck Sandals
+				["bonusID"] = 1812,
+			}),
+			i(139407, {	-- Diver's Chain Boots
+				["bonusID"] = 1812,
+			}),
+			i(139405, {	-- Kul'Tiras Marine Issue Boots
+				["bonusID"] = 1812,
+			}),
+			i(139406, {	-- Sea Dog Boots
+				["bonusID"] = 1812,
+			}),
+			i(7188),	--  Stormwind Guard Shield
+		}
 	}),
 	n(-217,   {	-- Lures
 		i(133715, {	-- Ancient Vrykul Ring
@@ -516,6 +521,7 @@ profession(FISHING, {
 	}),
 	--]]
 	tier(7, { 	-- Legion
+		--[[	-- Already listed under Dalaran Zone
 		faction(1975, {	-- Conjurer Margoss
 			["requireSkill"] = FISHING,
 			["description"] = "Can be found on a floating island called Margoss' Retreat just north of Dalaran.\n\nIt is recommended to be in a group in order to reach Best Friend the quickest.",
@@ -542,7 +548,7 @@ profession(FISHING, {
 					["cost"] = { { "i", 138777, 50 }, },	-- 50x Drowned Mana
 				}),
 			},
-		}),
+		}),--]]--
 		spell(201943, {	-- Better Luck Next Time
 			["maps"] = { 630, 646, 790, 650, 634, 680, 641 },	-- Azsuna / Broken Shore / Eye of Azshara / Highmountain / Stormheim / Suramar / Val'sharah
 			["g"] = {
@@ -560,7 +566,9 @@ profession(FISHING, {
 				}),
 			},
 		}),
-		ach(10596),		-- Bigger Fish to Fry
+		-- Achievements are already listed in Achievements > Professions > Fishing
+		--ach(10596),		-- Bigger Fish to Fry
+		--[[	-- Achievement itself listed in Achievements > Professions > Fishing, and breakdowns listed in specific Zones
 		ach(11725, { 	-- Fisherfriend of the Isles
 			["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
 			["g"] = {
@@ -646,7 +654,8 @@ profession(FISHING, {
 					},
 				}),
 			},
-		}),
+		}),--]]--
+		--[[	-- Already listed in Dalaran
 		ach(10722, { 	-- The Wish Remover
 			["description"] = "You need to use the special lures sold by the trainer to earn this achievement.",
 			["requireSkill"] = FISHING,
@@ -708,6 +717,6 @@ profession(FISHING, {
 				crit(55),	-- Gallywix's Coin-on-a-String
 				crit(56),	-- Li Li's Coin
 			},
-		}),
+		}),--]]--
 	}),
 });

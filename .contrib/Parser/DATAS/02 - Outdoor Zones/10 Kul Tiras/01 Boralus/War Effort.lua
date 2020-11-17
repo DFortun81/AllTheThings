@@ -736,6 +736,12 @@ _.Zones =
 								}),
 							},
 						}),
+						q(53185, {	-- Warfront Contribution
+							["sourceQuests"] = { 53194 },	-- To The Front
+							["provider"] = { "n", 142721 },	-- Ralston Karn
+							["coord"] = { 66.0, 26.0, 1161 },
+							["races"] = ALLIANCE_ONLY,
+						}),
 						-- INCURSIONS INFO STARTS HERE
 						i(165872, {	-- 7th Legion Equipment Cache (awarded for all incursions)
 							["description"] = "This cache is awarded for completing any incursion on an Alliance character.",

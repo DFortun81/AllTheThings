@@ -14,7 +14,6 @@ _.Zones =
 				538,	-- The Breached Ossuary
 				594,	-- Shattrath City (The Battle for Shattrath scenario)
 			},
-			["lvl"] = 94,
 		}),
 	}),
 };

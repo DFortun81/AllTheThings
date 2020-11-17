@@ -18,17 +18,11 @@ _.Achievements =
 			a(ach(13026, {	-- 7th Legion Spycatcher
 				["_quests"] = { 50899 },	-- Don't Stalk Me, Troll (A)
 			})),
-			h(ach(12480)),	-- A Bargain of Blood
 			h(ach(13021, {	-- A Most Efficient Apocalypse
 				["_quests"] = { 50665 },	-- Cancel the Blood Troll Apocalypse
 			})),
-			a(ach(12891, {	-- A Nation United
-				crit(1),		-- Loremaster of Kul Tiras
-				crit(2),		-- The Pride of Kul Tiras
-				crit(3),		-- A Nation United
-			})),
-			ach(13042, {		-- About To Break
-				["_quests"] = { 
+			ach(13042, {	-- About To Break
+				["_quests"] = {
 					53108,	-- Iconoclasm [A]
 					53344	-- Iconoclasm
 				},
@@ -60,28 +54,28 @@ _.Achievements =
 			ach(13050, {	-- Bless the Rains Down in Freehold
 				crit(1, {		-- Banana Hoard
 					["coord"] = { 76.1, 84.6, 895 },
-					["_quests"] = { 
+					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
 					},
 				}),
 				crit(2, {		-- Sweete's Feast
 					["coord"] = { 73.3, 83.9, 895 },
-					["_quests"] = { 
+					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
 					},
 				}),
 				crit(3, {		-- Cart o' Cutlasses
 					["coord"] = { 75.0, 82.9, 895 },
-					["_quests"] = { 
+					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
 					},
 				}),
 				crit(4, {		-- Blacktooth Brew
 					["coord"] = { 76.6, 81.8, 895 },
-					["_quests"] = { 
+					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
 					},
@@ -98,11 +92,11 @@ _.Achievements =
 				crit(8),		-- Rezan respected
 				crit(9),		-- Sethraliss respected
 			})),
-			ach(13035, {		-- By de Power of de Loa!
-				["_quests"] = { 
+			ach(13035, {	-- By de Power of de Loa!
+				["_quests"] = {
 					51178,	-- Hundred Troll Holdout (A)
 					51232,	-- Hundred Troll Holdout (H)
-				},	-- 
+				},
 			}),
 			h(ach(13017)),	-- Champion of the Vulpera
 			ach(13047),		-- Clever Use of Mechanical Explosives
@@ -119,7 +113,7 @@ _.Achievements =
 			h(ach(13435)),	-- Doomsoul Surprise
 			a(ach(13059, {	-- Drag Race
 				["_quests"] = { 53346 },	-- Trogg Tromping
-			})),	
+			})),
 			ach(13045),		-- Every Day I'm Truffling
 			a(ach(13283, {	-- Frontline Warrior (A)
 				crit(1, {		-- A Sound Defense
@@ -237,70 +231,6 @@ _.Achievements =
 				crit(5),		-- Boon of Kimbul
 				crit(6),		-- Boon of Krag'wa
 			})),
-			a(ach(12593, {	-- Loremaster of Kul Tiras [A]
-				a(ach(12473, {	-- A Sound Plan
-					crit(1),		-- The Ashvane Trading Company
-					crit(2),		-- Freehold
-					crit(3),		-- Defenders of Daelin's Gate
-					crit(4),		-- Enemies Within
-					crit(5),		-- The Shadow Over Anglepoint
-					crit(6),		-- The Norwington Estate
-					crit(7),		-- Castaways and Cutouts
-				})),
-				a(ach(12497, {	-- Drust Do It.
-					title(378),		-- Inquisitor %s
-					crit(1),		-- The Final Effigy
-					crit(2),		-- The Burden of Proof
-					crit(3),		-- An Airtight Alibi
-					crit(4),		-- The Order of Embers
-					crit(5),		-- A New Order
-					crit(6),		-- Break on Through
-					crit(7),		-- Storming the Manor
-					crit(8),		-- Clear Victory
-					crit(9),		-- Fighting With Fire
-					crit(10),		-- Stick It To 'Em!
-				})),
-				a(ach(12496, {	-- Stormsong and Dance
-					crit(1),		-- The Tidesages of Stormsong
-					crit(2),		-- A House in Peril
-					crit(3),		-- The Growing Tempest
-					crit(4),		-- At the Edge of Madness
-					crit(5),		-- Cycle of Hatred
-					crit(6),		-- From the Depths They Come
-					crit(7),		-- Briarback Kraul
-					crit(8),		-- Treasure in Deadwash
-				})),
-			})),
-			h(ach(13294, {	-- Loremaster of Zandalar [H]
-				h(ach(11861, {	-- The Throne of Zuldazar
-					crit(1),		-- Portents and Prophecies
-					crit(2),		-- Port of Zandalar
-					crit(3),		-- Warport Rastari
-					crit(4),		-- Web of Lies
-					crit(5),		-- Among the People
-					crit(6),		-- The Zanchuli Council
-					crit(7),		-- March of the Loa
-				})),
-				h(ach(11868, {	-- The Dark Heart of Nazmir
-					crit(1),		-- Deep in the Swamp
-					crit(2),		-- A Pact with Death
-					crit(3),		-- Undercover Sista
-					crit(4),		-- Turtle Power
-					crit(5),		-- A Friend of the Frogs
-					crit(6),		-- Everything Contained
-					crit(7),		-- Bring the Boom
-					crit(8),		-- Bleeding the Blood Trolls
-				})),
-				h(ach(12478, {	-- Secrets in the Sands
-					crit(1),		-- Dangers in the Desert
-					crit(2),		-- The Warguard's Fate
-					crit(3),		-- A City of Secrets
-					crit(4),		-- The Three Keepers
-					crit(5),		-- Storming the Spire
-					crit(6),		-- Atul'Aman
-					crit(7),		-- Unlikely Allies
-				})),
-			})),
 			ach(13791, {	-- Making the Mount
 				i(168827),		-- Scrapforged Mechaspider
 				crit(1),		-- Shop Project
@@ -387,8 +317,7 @@ _.Achievements =
 				crit(2),		-- Secrets in the Sea
 				crit(3),		-- Turning the Tide
 			})),
-			ach(14157),	-- The Corruptor's End
-			h(ach(12481)),	-- The Final Seal
+			ach(14157),		-- The Corruptor's End
 			h(ach(13924, {	-- The Fourth War
 				title(412),		-- Veteran of the Fourth War, <Name>
 			})),
@@ -435,34 +364,101 @@ _.Achievements =
 				crit(15),		-- Send My Father a Message
 				crit(16),		-- Welcome to the Resistance
 			})),
-			a(ach(12997)),	-- The Pride of Kul Tiras
 			a(ach(12087, {	-- The Reining Champion
 				["_quests"] = { 53331 },	-- The Reining Champion
 			})),
 			h(ach(13263)),	-- The Shadow Hunter
 			ach(13046),		-- These Hills Sing
-			a(ach(13467, {	-- Tides of Vengeance (A)
-				crit(1),		-- War Marches On
-				crit(2),		-- The Sleeper Agent
-				crit(3),		-- Mischief Managed
-				crit(4),		-- He Who Walks in the Light
-			})),
-			h(ach(13466, {	-- Tides of Vengeance (H)
-				crit(1),		-- The Day is Won
-				crit(2),		-- Mekkatorque's Battle Plans
-				crit(3),		-- Through the Front Door
-				crit(4),		-- Fly Out to Meet Them
-			})),
 			h(ach(13037, {	-- Torcanata
 				["u"] = NEVER_IMPLEMENTED,
 			})),
 			ach(13517, {	-- Two Sides To Every Tale
 				h(i(168055)),	-- Bloodflank Charger (mount)
 				a(i(168056)),	-- Ironclad Frostclaw (mount)
-				crit(1),		-- A Nation United
-				crit(2),		-- Tides of Vengeance (A)
-				crit(3),		-- Zandalar Forever!
-				crit(4),		-- Tides of Vengeance (H)
+				a(ach(12891, {	-- A Nation United
+					a(ach(12593, {	-- Loremaster of Kul Tiras [A]
+						a(ach(12473, {	-- A Sound Plan
+							crit(1),		-- The Ashvane Trading Company
+							crit(2),		-- Freehold
+							crit(3),		-- Defenders of Daelin's Gate
+							crit(4),		-- Enemies Within
+							crit(5),		-- The Shadow Over Anglepoint
+							crit(6),		-- The Norwington Estate
+							crit(7),		-- Castaways and Cutouts
+						})),
+						a(ach(12497, {	-- Drust Do It.
+							title(378),		-- Inquisitor %s
+							crit(1),		-- The Final Effigy
+							crit(2),		-- The Burden of Proof
+							crit(3),		-- An Airtight Alibi
+							crit(4),		-- The Order of Embers
+							crit(5),		-- A New Order
+							crit(6),		-- Break on Through
+							crit(7),		-- Storming the Manor
+							crit(8),		-- Clear Victory
+							crit(9),		-- Fighting With Fire
+							crit(10),		-- Stick It To 'Em!
+						})),
+						a(ach(12496, {	-- Stormsong and Dance
+							crit(1),		-- The Tidesages of Stormsong
+							crit(2),		-- A House in Peril
+							crit(3),		-- The Growing Tempest
+							crit(4),		-- At the Edge of Madness
+							crit(5),		-- Cycle of Hatred
+							crit(6),		-- From the Depths They Come
+							crit(7),		-- Briarback Kraul
+							crit(8),		-- Treasure in Deadwash
+						})),
+					})),
+					a(ach(12997)),	-- The Pride of Kul Tiras
+					crit(3),		-- A Nation United
+				})),
+				a(ach(13467, {	-- Tides of Vengeance (A)
+					crit(1),		-- War Marches On
+					crit(2),		-- The Sleeper Agent
+					crit(3),		-- Mischief Managed
+					crit(4),		-- He Who Walks in the Light
+				})),
+				h(ach(12479, {	-- Zandalar Forever!
+					h(ach(13294, {	-- Loremaster of Zandalar [H]
+						h(ach(11861, {	-- The Throne of Zuldazar
+							crit(1),		-- Portents and Prophecies
+							crit(2),		-- Port of Zandalar
+							crit(3),		-- Warport Rastari
+							crit(4),		-- Web of Lies
+							crit(5),		-- Among the People
+							crit(6),		-- The Zanchuli Council
+							crit(7),		-- March of the Loa
+						})),
+						h(ach(11868, {	-- The Dark Heart of Nazmir
+							crit(1),		-- Deep in the Swamp
+							crit(2),		-- A Pact with Death
+							crit(3),		-- Undercover Sista
+							crit(4),		-- Turtle Power
+							crit(5),		-- A Friend of the Frogs
+							crit(6),		-- Everything Contained
+							crit(7),		-- Bring the Boom
+							crit(8),		-- Bleeding the Blood Trolls
+						})),
+						h(ach(12478, {	-- Secrets in the Sands
+							crit(1),		-- Dangers in the Desert
+							crit(2),		-- The Warguard's Fate
+							crit(3),		-- A City of Secrets
+							crit(4),		-- The Three Keepers
+							crit(5),		-- Storming the Spire
+							crit(6),		-- Atul'Aman
+							crit(7),		-- Unlikely Allies
+						})),
+					})),
+					h(ach(12480)),	-- A Bargain of Blood
+					h(ach(12481)),	-- The Final Seal
+				})),
+				h(ach(13466, {	-- Tides of Vengeance (H)
+					crit(1),		-- The Day is Won
+					crit(2),		-- Mekkatorque's Battle Plans
+					crit(3),		-- Through the Front Door
+					crit(4),		-- Fly Out to Meet Them
+				})),
 			}),
 			ach(14153, {	-- Uldum Under Assault
 				crit(1),		-- Assault: Amathet Advance
@@ -505,13 +501,6 @@ _.Achievements =
 			})),
 			h(ach(12555)),	-- Welcome to Zandalar
 			ach(13144),		-- Wide World of Quests
-			h(ach(12479, {	-- Zandalar Forever!
-				crit(1),		-- The Throne of Zuldazar
-				crit(2),		-- The Dark Heart of Nazmir
-				crit(3),		-- Secrets in the Sands
-				crit(4),		-- A Bargain of Blood
-				crit(5),		-- The Final Seal
-			})),
 			h(ach(13025, {	-- Zandalari Spycatcher
 				["_quests"] = { 50717 },	-- Don't Stalk Me, Troll (H)
 			})),

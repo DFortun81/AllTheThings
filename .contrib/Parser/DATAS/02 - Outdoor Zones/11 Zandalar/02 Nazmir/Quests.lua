@@ -125,14 +125,19 @@ _.Zones =
 					["coord"] = { 49.3, 57.1, 863 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(155335),	-- Death-Pledged Shoulderguards
-						i(159011),	-- Death-Pledged Hauberk
-						i(155334),	-- Loa Speaker's Epaulets
-						i(159029),	-- Loa Speaker's Vestments
-						i(159010),	-- Nazmani Warplate Chestpiece
-						i(155333),	-- Nazmani Warplate Spaulders
-						i(155332),	-- Ritual Flayer's Spaulders
-						i(159012),	-- Ritual Flayer's Jerkin
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155335),	-- Death-Pledged Shoulderguards
+									i(159011),	-- Death-Pledged Hauberk
+									i(155334),	-- Loa Speaker's Epaulets
+									i(159029),	-- Loa Speaker's Vestments
+									i(159010),	-- Nazmani Warplate Chestpiece
+									i(155333),	-- Nazmani Warplate Spaulders
+									i(155332),	-- Ritual Flayer's Spaulders
+									i(159012),	-- Ritual Flayer's Jerkin
+								},
+						}),
 						i(175337),	-- Death-Pledged Shoulderguards no azerite version 
 						i(175376),	-- Death-Pledged Hauberk no azerite version 
 						i(175336),	-- Loa Speaker's Epaulets no azerite version 
@@ -1151,14 +1156,19 @@ _.Zones =
 					["coord"] = { 31.3, 46.8, 863 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(155313),	-- Death-Pleged Chestguard
-						i(155325),	-- Death-Pledged Helm
-						i(155324),	-- Loa Speaker's Hood
-						i(155510),	-- Loa Speaker's Robes
-						i(155326),	-- Ritual Flayer's Mask
-						i(155314),	-- Ritual Flayer's Vest
-						i(155312),	-- Nazmani Warplate Chestplate
-						i(155323),	-- Nazmani Warplate Faceguard
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155313),	-- Death-Pleged Chestguard
+									i(155325),	-- Death-Pledged Helm
+									i(155324),	-- Loa Speaker's Hood
+									i(155510),	-- Loa Speaker's Robes
+									i(155326),	-- Ritual Flayer's Mask
+									i(155314),	-- Ritual Flayer's Vest
+									i(155312),	-- Nazmani Warplate Chestplate
+									i(155323),	-- Nazmani Warplate Faceguard
+								},
+						}),
 						i(175368),	-- Death-Pleged Chestguard (no azerite version)
 						i(175308),	-- Death-Pledged Helm (no azerite version)
 						i(175307),	-- Loa Speaker's Hood (no azerite version)

@@ -265,6 +265,22 @@ _.Zones =
 				}),
 				
 				
+				q(30376, {	-- Hope Springs Eternal
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						30174,	-- For Family
+						30273,	-- In the House of the Red Crane
+						30117,	-- Stoneplow Thirsts
+						29990,	-- Training and Discipline
+					--	TODO: may also require the following quests:
+					--	29581,	-- The Golden Dream
+					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
+					},
+					["provider"] = { "n", 59719 },	-- Chi-Ji
+					["coord"] = { 41.6, 46.3, 418 },
+				}),
+				
+				
 				q(30348, {	-- Immortality?
 					["sourceQuests"] = { 30347 },	-- The Pools of Youth
 					["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
@@ -857,6 +873,23 @@ _.Zones =
 				}),
 				
 				
+				q(30360, {	-- Warn Stoneplow (A)
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						30174,	-- For Family
+						30273,	-- In the House of the Red Crane
+						30117,	-- Stoneplow Thirsts
+						29990,	-- Training and Discipline
+					--	TODO: may also require the following quests:
+					--	29581,	-- The Golden Dream
+					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
+					},
+					["provider"] = { "n", 58821 },	-- Lyalia
+					["coord"] = { 24.7, 29.9, 418 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(30079, {	-- What's Eating Zhu's Watch?
 					["sourceQuests"] = {
 						29873,	-- Ken-Ken
@@ -944,10 +977,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32170, {	-- Ancient's Fall
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				i(91856, {	-- Sturdy Crab Crate
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -975,29 +1004,11 @@ _.Zones =
 						}),
 					},
 				}),
-				i(91854, {
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						q(32164, {	-- Beastmaster's Hunt: The Crane
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
 				i(91821, {
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						q(32162, {	-- Beastmaster's Hunt: The Tiger
 							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
-				i(91855, {
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						q(32165, {	-- Beastmaster's Hunt: The Tiger
-							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
 					},
@@ -1017,47 +1028,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32184, {	-- Beastmaster's Quarry: The Crane
-					["provider"] = { "n", 67503 },	-- Ancient Bloodcrown Crane
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(32182, {	-- Beastmaster's Quarry: The Tiger
 					["provider"] = { "n", 67498 },	-- Krasari Elder
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32185, {	-- Beastmaster's Quarry: The Tiger
-					["provider"] = { "n", 67498 },	-- Krasari Elder
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32214, {	-- Bilgewater Infiltrators
-					["provider"] = { "n", 67608 },	-- Rivett Clutchpop
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32401, {	-- Breath of Darkest Shadow
-					["provider"] = { "n", 68939 },	-- Anduin Wrynn
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 32400 },	-- The Bell Speaks
-				}),
-				q(31379, {	-- Challenge At The Temple of the Red Crane
-					["provider"] = { "n", 64001 },	-- Sage Lotusbloom
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(30740, {	-- Champion of Chi-Ji
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
-				}),
-				q(30730, {	-- Dextrous Izissha
-					["provider"] = { "n", 60506 },	-- Thelonius
-					["isDaily"] = true,
-				}),
-				q(32351, {	-- Echoes of Thunder
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["races"] = HORDE_ONLY,
 				}),
 				q(30739, {	-- Ellia Ravenmane: Redemption
 					["provider"] = { "n", 60506 },	-- Thelonius
@@ -1071,42 +1049,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,	-- where is this from?
 				}),
-				q(32171, {	-- End of an Elder
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,	-- where is this from?
-				}),
 				q(30737, {	-- Fat Long-Fat: Rematch
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
-				}),
-				q(36608, {	-- Finding Nat Pagle
-					["providers"] = {
-						{ "n", 79917 },	-- Rak'jin
-						{ "n", 85708 },	-- Segumi
-					},
-					["sourceQuests"] = { 36612, 36870 },	-- Luring Nat (both faction versions)
-				}),
-				q(32329, {	-- Get My Results!
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["coords"] = { 10.4, 53.8, 418 },
-					["races"] = HORDE_ONLY,
 				}),
 				q(32134, {	-- Hard Counter
 					["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				}),
-				q(30376, {	-- Hope Springs Eternal
-					["isBreadcrumb"] = true,
-					["sourceQuests"] = {
-						30174,	-- For Family
-						30273,	-- In the House of the Red Crane
-						30117,	-- Stoneplow Thirsts
-					--	TODO: may also require the following quests:
-					--	29581,	-- The Golden Dream
-					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
-					},
-					["provider"] = { "n", 59719 },	-- Chi-Ji
 				}),
 				q(30734, {	-- Huck Wheelbarrow
 					["provider"] = { "n", 60506 },	-- Thelonius
@@ -1116,11 +1066,6 @@ _.Zones =
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["coord"] = { 9.3, 51.1, 418 },
 					["races"] = HORDE_ONLY,
-				}),
-				q(32344, {	-- It Is A Mystery
-					["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
 				}),
 				q(29875, {	-- Kang Bramblestaff
 					["provider"] = { "n", 56110 },	-- Xiao
@@ -1145,21 +1090,6 @@ _.Zones =
 				}),
 				q(30735, {	-- Mindel Sunspeaker
 					["provider"] = { "n", 60506 },	-- Thelonius
-					["isDaily"] = true,
-				}),
-				q(32197, {	-- Mystery Meatloaf
-					["provider"] = { "n", 67562 },	-- Duke
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32237, {	-- Precious Resource
-					["provider"] = { "n", 67553 },	-- Bixy Buzzsaw
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32137, {	-- Runnin' On Empty
-					["provider"] = { "n", 67542 },	-- Grizzle Gearslip
-					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				i(86544, {	-- Spinefish Alpha
@@ -1187,10 +1117,6 @@ _.Zones =
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
 				}),
-				q(32400, {	-- The Bell Speaks
-					["provider"] = { "n", 67940 },	-- Admiral Taylor
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(36882, {	-- The Great Angler Returns
 					["provider"] = { "n", 63721 },	-- Nat Pagle
 					["races"] = ALLIANCE_ONLY,
@@ -1201,38 +1127,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
 				}),
-				q(32336, {	-- The Handle
-					["provider"] = { "n", 68538 },	-- The Monkey King
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32338, {	-- The Harmonic Ointment
-					["provider"] = { "n", 68538 },	-- The Monkey King
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32337, {	-- The Head
-					["provider"] = { "n", 68538 },	-- The Monkey King
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32363, {	-- The Kun-Lai Expedition
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["races"] = HORDE_ONLY,
-				}),
 				q(31254, {	-- The Road to Kun-Lai
 					["sourceQuests"] = { 59559 },	-- Hero's Call: Kun-Lai Summit!
 					["provider"] = { "n", 63778 },	-- Messenger Grummle
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32391, {	-- The Ruins of Korune
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["races"] = HORDE_ONLY,
-				}),
-				q(32455, {	-- The Silence
-					["provider"] = { "n", 68987 },	-- Anduin Wrynn
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 32401 },	-- Breath of Darkest Shadow
-					["g"] = {
-						i(93385),	-- Grand Gryphon
-					},
 				}),
 				q(32402, {	-- The Situation In Dalaran
 					["provider"] = { "n", 67939 },	-- General Nazgrim
@@ -1241,10 +1139,6 @@ _.Zones =
 				q(30738, {	-- Thelonius
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
-				}),
-				q(32376, {	-- To the Valley!
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["races"] = HORDE_ONLY,
 				}),
 				q(30733, {	-- Tukka-Tuk
 					["provider"] = { "n", 60506 },	-- Thelonius
@@ -1260,28 +1154,9 @@ _.Zones =
 					["sourceQuests"] = { 32327 },	-- The Darnassus Mission
 					["level"] = 81,
 				}),
-				o(216322, {	-- Bounty Board
-					q(32222, {	-- Wanted: Chief Engineer Cogwrench
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-					}),
-				}),
 				q(32223, {	-- Wanted: Lieutenant Ethan Jacobson
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-				}),
-				q(30360, {	-- Warn Stoneplow (A)
-					["isBreadcrumb"] = true,
-					["sourceQuests"] = {
-						30273,	-- In the House of the Red Crane
-						30117,	-- Stoneplow Thirsts
-						30445,	-- The Waters of Youth
-					--	TODO: may also require the following quests:
-					--	29581,	-- The Golden Dream
-					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
-					},
-					["provider"] = { "n", 58821 },	-- Lyalia
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30241, {	-- Warn Stoneplow (H)
 					["isBreadcrumb"] = true,
@@ -1289,17 +1164,13 @@ _.Zones =
 						30174,	-- For Family
 						30273,	-- In the House of the Red Crane
 						30117,	-- Stoneplow Thirsts
+						29990,	-- Training and Discipline
 					--	TODO: may also require the following quests:
 					--	29581,	-- The Golden Dream
 					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
 					},
 					["provider"] = { "n", 58607 },	-- Sunwalker Dezco
 					["races"] = HORDE_ONLY,
-				}),
-				q(32136, {	-- Work Order: Fuel
-					["provider"] = { "n", 67535 },	-- Boss-Lady Trixel
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
 				}),
 				q(32138, {	-- Work Order: Lumber
 					["races"] = HORDE_ONLY,
@@ -1312,10 +1183,6 @@ _.Zones =
 --[[
 				The following quests have all been removed from the game
 				q(32236, {	-- Bug Off!
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-				}),
-				q(32199, {	-- Krasarang Steampot
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),

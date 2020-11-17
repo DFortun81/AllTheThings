@@ -51,6 +51,66 @@ _.ExpansionFeatures =
 									i(119219),	-- Warlord's Flag of Victory (Toy)
 								}),
 							}),
+							q(36929, {	-- Nemesis: Becoming Death (Draenei)
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
+							q(36923, {	-- Nemesis: Becoming Death (Dwarf)
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
+							q(36925, {	-- Nemesis: Becoming Death (Gnome)
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
+							q(36897, {	-- Nemesis: Becoming Death (Human)
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
+							q(36931, {	-- Nemesis: Becoming Death (Night Elf)
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
+							q(36933, {	-- Nemesis: Becoming Death (Pandaren)
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
+							q(36927, {	-- Nemesis: Becoming Death (Worgen)
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
+							q(36930, {	-- Nemesis: Draenei Destroyer
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
+							q(36924, {	-- Nemesis: Dwarfstalker
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
+							q(36926, {	-- Nemesis: Gnomebane
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
+							q(36889, {	-- Nemesis: Hunter - Hunted
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
+							q(36921, {	-- Nemesis: Manslayer
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
+							q(36932, {	-- Nemesis: Scourge of the Kaldorei
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
+							q(36934, {	-- Nemesis: Terror of the Tushui
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
+							q(36928, {	-- Nemesis: Worgen Hunter
+								["provider"] = { "n", 86629 },	-- Raza'kul
+								["races"] = HORDE_ONLY,
+							}),
 						}),
 						n(-153, {	-- Work Orders
 							n(86639, {	-- Altar of Bones

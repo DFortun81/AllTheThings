@@ -1484,14 +1484,19 @@ _.Zones =
 					["coord"] = { 49.6, 64.5, 862 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(155250),	-- Rastari Helm
-						i(155260),	-- Rastari Pauldrons
-						i(155252),	-- Torcalin Coif
-						i(155262),	-- Torcalin Spaulders
-						i(155253),	-- Jambani Hood
-						i(155259),	-- Jambani Shoulderpads
-						i(155251),	-- Zanchuli Cowl
-						i(155261),	-- Zanchuli Mantle
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155250),	-- Rastari Helm
+									i(155260),	-- Rastari Pauldrons
+									i(155252),	-- Torcalin Coif
+									i(155262),	-- Torcalin Spaulders
+									i(155253),	-- Jambani Hood
+									i(155259),	-- Jambani Shoulderpads
+									i(155251),	-- Zanchuli Cowl
+									i(155261),	-- Zanchuli Mantle
+								},
+						}),
 						-- NO NECK Gear
 						i(175283),	-- Rastari Helm
 						i(175287),	-- Rastari Pauldrons
@@ -1822,14 +1827,19 @@ _.Zones =
 					["coord"] = { 43.6, 39.2, 862 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(155239),	-- Rastari Breastplate
-						i(161143),	-- Rastari Helmet
-						i(161141),	-- Torcalin Headguard
-						i(155240),	-- Torcalin Chainmail
-						i(161140),	-- Jambani Mask
-						i(155241),	-- Jambani Jerkin
-						i(161142),	-- Zanchuli Crest
-						i(155258),	-- Zanchuli Raiment
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(155239),	-- Rastari Breastplate
+									i(161143),	-- Rastari Helmet
+									i(161141),	-- Torcalin Headguard
+									i(155240),	-- Torcalin Chainmail
+									i(161140),	-- Jambani Mask
+									i(155241),	-- Jambani Jerkin
+									i(161142),	-- Zanchuli Crest
+									i(155258),	-- Zanchuli Raiment
+								},
+						}),
 						-- NO NECK Gear
 						i(175291),	-- Torcalin Headguard
 						i(175281),	-- Torcalin Chainmail

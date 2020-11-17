@@ -4370,28 +4370,26 @@ _.Zones =
 				n(107109, {	-- Xur'ios <Vaultkeeper of the Void>
 					["coord"] = { 48.8, 13.5, 627 },
 					["g"] = {
-						currency(1275, {	-- Curious Coin
-							i(141713, {	-- Arcadian War Turtle (MOUNT!)
-								["cost"] = { { "c", 1275, 150 }, },	-- 150x Curious Coin
-							}),
-							i(136702, {	-- Formula: Soul Fibril
-								["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
-							}),
-							i(141862, {	-- Mote of Light (TOY!)
-								["cost"] = { { "c", 1275, 50 }, },	-- 50x Curious Coin
-							}),
-							i(136699, {	-- Recipe: Flamespike
-								["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
-							}),
-							i(137935, {	-- Recipe: Leather Love Seat
-								["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
-							}),
-							i(137727, {	-- Schematic: Mecha-Bond Imprint Matrix
-								["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
-							}),
-							i(136706, {	-- Technique: Straszan Mark
-								["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
-							}),
+						i(141713, {	-- Arcadian War Turtle (MOUNT!)
+							["cost"] = { { "c", 1275, 150 }, },	-- 150x Curious Coin
+						}),
+						i(136702, {	-- Formula: Soul Fibril
+							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+						}),
+						i(141862, {	-- Mote of Light (TOY!)
+							["cost"] = { { "c", 1275, 50 }, },	-- 50x Curious Coin
+						}),
+						i(136699, {	-- Recipe: Flamespike
+							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+						}),
+						i(137935, {	-- Recipe: Leather Love Seat
+							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+						}),
+						i(137727, {	-- Schematic: Mecha-Bond Imprint Matrix
+							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+						}),
+						i(136706, {	-- Technique: Straszan Mark
+							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
 					},
 				}),

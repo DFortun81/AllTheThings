@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -212,6 +213,7 @@ _.Zones =
 					},
 				}),
 				n(40216,  {	-- Blazzek the Biter <Vicious Gladiator>
+					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, 71 },
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -661 },
@@ -228,6 +230,7 @@ _.Zones =
 					},
 				}),
 				n(69322,  {	-- Capps Carlin <Cataclysmic Gladiator>
+					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, 71 },
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -674, -661 },
@@ -334,6 +337,7 @@ _.Zones =
 					},
 				}),
 				n(69323,  {	-- Tiny Tayger <Ruthless Gladiator>
+					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, 71 },
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -661 },
@@ -371,10 +375,10 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(30345)),	-- medallion of the horde (shaman)
 						un(REMOVED_FROM_GAME, i(37865)),	-- medallion of the horde (epic)
 						un(REMOVED_FROM_GAME, i(38588)),	-- Medallion of the horde (dk)
-						un(REMOVED_FROM_GAME, i(69862)),	-- Medallion of the horde 
+						un(REMOVED_FROM_GAME, i(69862)),	-- Medallion of the horde
 						un(REMOVED_FROM_GAME, i(37864)),	-- medallion of the alliance (epic)
 						un(REMOVED_FROM_GAME, i(38589)),	-- Medallion of the alliance (dk)
-						un(REMOVED_FROM_GAME, i(69861)),	-- Medallion of the alliance 
+						un(REMOVED_FROM_GAME, i(69861)),	-- Medallion of the alliance
 						un(REMOVED_FROM_GAME, i(34576)),	-- battlemaster's cruelty
 						un(REMOVED_FROM_GAME, i(34577)),	-- battlemaster's depravity
 						un(REMOVED_FROM_GAME, i(34578)),	-- battlemaster's determination

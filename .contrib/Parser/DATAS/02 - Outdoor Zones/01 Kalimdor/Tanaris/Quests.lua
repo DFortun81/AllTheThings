@@ -226,7 +226,6 @@ _.Zones =
 					["coord"] = { 52.4, 29.0, 71 },
 					["sourceQuests"] = {
 						6611,	-- To Gadgetzan You Go!
-						6612,	-- I Know A Guy...
 					},
 					["requireSkill"] = COOKING,
 					["g"] = {

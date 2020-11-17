@@ -959,7 +959,7 @@ _.Zones =
 					["provider"] = { "n", 2215 },	-- High Executor Darthalia
 					["coord"] = { 29.2, 63.3, 25 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 27746, 28089 },	-- Empire of Dirt & Warchief's Command: Hillsbrad Foothills!
+					["sourceQuests"] = { 28089 },	-- Warchief's Command: Hillsbrad Foothills!
 					["g"] = {
 						i(65711),	-- Portable Lap Desk
 						i(65693),	-- Quest Giver's Pauldrons

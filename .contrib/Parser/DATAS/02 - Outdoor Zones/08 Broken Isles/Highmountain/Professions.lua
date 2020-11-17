@@ -157,6 +157,14 @@ _.Zones =
 							i(128570),	-- Formula: Enchant Cloak - Word of Strength (Rank 1)
 						},
 					}),
+					q(39879, {	-- Strong Like the Earth
+						["sourceQuests"] = { 39878 },	-- Thunder Struck
+						["provider"] = { "n", 98017 },	-- Guron Twaintail
+					}),
+					q(39880, {	-- Waste Not
+						["sourceQuests"] = { 39878 },	-- Thunder Struck
+						["provider"] = { "n", 98017 },	-- Guron Twaintail
+					}),
 				}),
 				prof(FISHING, {
 					n(-10067, { 	-- Artifact
@@ -170,146 +178,171 @@ _.Zones =
 						},
 					}),
 					ach(10596, {	-- Bigger Fish to Fry
-						n(-218, {		-- Coastal
-							i(133722, {		-- Axefish Lure
-								["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-								["groups"] = {
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 4,			-- Axefish (Criteria)
-										["itemID"] = 133740,		-- Axefish (Item)
-									},
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 4,			-- Axefish (Criteria)
-										["itemID"] = 139667,		-- Axefish (Item)
-									},
-								},
-							}),
-							i(133724, {		-- Decayed Whale Blubber
-								["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-								["groups"] = {
-									i(133795),	-- Ravenous Fly
-								}
-							}),
-							i(133721, {		-- Message in a Bottle
-								["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-								["groups"] = {
-									i(133722)		-- Axefish Lure
-								},
-							}),
-							i(133795, {		-- Ravenous Fly
-								["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-								["groups"] = {
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-										["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
-									},
-									{
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
-										["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
-									},
-								},
-							}),
-							i(133723, {		-- Stunned, Angry Shark
-								["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-								["groups"] = {
-									n(102359, {		-- Landlocked Shark
-										["description"] = "Drops 7-9 Seabottom Squid when killed.",
-										["groups"] = {
-											{
-												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-												["itemID"] = 133741,		-- Seabottom Squid (Item)
-											},
-											{
-												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
-												["itemID"] = 139668,		-- Seabottom Squid (Item)
-											},
+						["collectible"] = false,
+						["g"] = {
+							n(-218, {		-- Coastal
+								i(133722, {		-- Axefish Lure
+									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 133740,		-- Axefish (Item)
 										},
-									})
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 4,			-- Axefish (Criteria)
+											["itemID"] = 139667,		-- Axefish (Item)
+										},
+									},
+								}),
+								i(133724, {		-- Decayed Whale Blubber
+									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
+									["groups"] = {
+										i(133795),	-- Ravenous Fly
+									}
+								}),
+								i(133721, {		-- Message in a Bottle
+									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
+									["groups"] = {
+										i(133722)		-- Axefish Lure
+									},
+								}),
+								i(133795, {		-- Ravenous Fly
+									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
+									["groups"] = {
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 133742,		-- Ancient Black Barracuda (Item)
+										},
+										{
+											["achievementID"] = 10596,	-- Bigger Fish to Fry
+											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
+											["itemID"] = 139669,		-- Ancient Black Barracuda (Item)
+										},
+									},
+								}),
+								i(133723, {		-- Stunned, Angry Shark
+									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
+									["groups"] = {
+										n(102359, {		-- Landlocked Shark
+											["description"] = "Drops 7-9 Seabottom Squid when killed.",
+											["groups"] = {
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 133741,		-- Seabottom Squid (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
+													["itemID"] = 139668,		-- Seabottom Squid (Item)
+												},
+											},
+										})
+									},
+								}),
+							}),
+							i(133712, {		-- Frost Worm
+								["description"] = "This item will allow you to catch the Rare fish Coldriver Carp in Highmountain.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 5,			-- Coldriver Carp (Criteria)
+										["itemID"] = 133732,		-- Coldriver Carp (Item)
+									},
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 5,			-- Coldriver Carp (Criteria)
+										["itemID"] = 139659,		-- Coldriver Carp (Item)
+									},
 								},
 							}),
-						}),
-						i(133712, {		-- Frost Worm
-							["description"] = "This item will allow you to catch the Rare fish Coldriver Carp in Highmountain.",
-							["groups"] = {
-								{
-									["achievementID"] = 10596,	-- Bigger Fish to Fry
-									["criteriaID"] = 5,			-- Coldriver Carp (Criteria)
-									["itemID"] = 133732,		-- Coldriver Carp (Item)
+							i(133709, {		-- Funky Sea Snail
+								["description"] = "The short buff will eventually expire and this item will disappear from your inventory. When it does, the attached mob will spawn.",
+								["groups"] = {
+									n(102347, {
+										["description"] = "After the short buff expires, this mob spawns. Kill it for the lure.",
+										["groups"] = {
+											i(133710), 	-- Salmon Lure
+										},
+									}),
 								},
-								{
-									["achievementID"] = 10596,	-- Bigger Fish to Fry
-									["criteriaID"] = 5,			-- Coldriver Carp (Criteria)
-									["itemID"] = 139659,		-- Coldriver Carp (Item)
-								},
-							},
-						}),
-						i(133709, {		-- Funky Sea Snail
-							["description"] = "The short buff will eventually expire and this item will disappear from your inventory. When it does, the attached mob will spawn.",
-							["groups"] = {
-								n(102347, {
-									["description"] = "After the short buff expires, this mob spawns. Kill it for the lure.",
-									["groups"] = {
-										i(133710), 	-- Salmon Lure
+							}),
+							i(133710, {		-- Salmon Lure
+								["description"] = "This item will allow you to catch the Rare fish Ancient Highmountain Salmon in Highmountain.",
+								["groups"] = {
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 2,			-- Ancient Highmountain Salmon (Criteria)
+										["itemID"] = 133733,		-- Ancient Highmountain Salmon (Item)
 									},
-								}),
-							},
-						}),
-						i(133710, {		-- Salmon Lure
-							["description"] = "This item will allow you to catch the Rare fish Ancient Highmountain Salmon in Highmountain.",
-							["groups"] = {
-								{
-									["achievementID"] = 10596,	-- Bigger Fish to Fry
-									["criteriaID"] = 2,			-- Ancient Highmountain Salmon (Criteria)
-									["itemID"] = 133733,		-- Ancient Highmountain Salmon (Item)
-								},
-								{
-									["achievementID"] = 10596,	-- Bigger Fish to Fry
-									["criteriaID"] = 2,			-- Ancient Highmountain Salmon (Criteria)
-									["itemID"] = 139660,		-- Ancient Highmountain Salmon (Item)
-								},
-							},
-						}),
-						i(133711, {		-- Swollen Murloc Egg
-							["description"] = "This item that will spawn a Swamprock Tadpole that grants the Blessing of the Murlocs buff, increasing your chance to fish up Mountain Puffer.",
-							["groups"] = {
-								n(102339, {		-- Swamprock Tadpole
-									["description"] = "Casts the Blessing of the Murlocs buff on you, increasing your chance to fish up Mountain Puffer.",
-									["groups"] = {
-										spell(202056, {		-- Blessing of the Murlocs
-											{
-												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 10,		-- Mountain Puffer (Criteria)
-												["itemID"] = 133731,		-- Mountain Puffer (Item)
-											},
-											{
-												["achievementID"] = 10596,	-- Bigger Fish to Fry
-												["criteriaID"] = 10,		-- Mountain Puffer (Criteria)
-												["itemID"] = 139658,		-- Mountain Puffer (Item)
-											},
-										}),
+									{
+										["achievementID"] = 10596,	-- Bigger Fish to Fry
+										["criteriaID"] = 2,			-- Ancient Highmountain Salmon (Criteria)
+										["itemID"] = 139660,		-- Ancient Highmountain Salmon (Item)
 									},
-								}),
-							},
-						}),
+								},
+							}),
+							i(133711, {		-- Swollen Murloc Egg
+								["description"] = "This item that will spawn a Swamprock Tadpole that grants the Blessing of the Murlocs buff, increasing your chance to fish up Mountain Puffer.",
+								["groups"] = {
+									n(102339, {		-- Swamprock Tadpole
+										["description"] = "Casts the Blessing of the Murlocs buff on you, increasing your chance to fish up Mountain Puffer.",
+										["groups"] = {
+											spell(202056, {		-- Blessing of the Murlocs
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 10,		-- Mountain Puffer (Criteria)
+													["itemID"] = 133731,		-- Mountain Puffer (Item)
+												},
+												{
+													["achievementID"] = 10596,	-- Bigger Fish to Fry
+													["criteriaID"] = 10,		-- Mountain Puffer (Criteria)
+													["itemID"] = 139658,		-- Mountain Puffer (Item)
+												},
+											}),
+										},
+									}),
+								},
+							}),
+						},
 					}),
 					ach(11725, { 	-- Fisherfriend of the Isles
-						faction(2099, {	-- Akule Riverhorn
-							["groups"] = {
-								i(146960, {		-- Ancient Totem Fragment
-									i(147310),	-- Floating Totem
-									i(152556), 	-- Trawler Totem
-								}),
-							},
-							["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF32.4, 41.8|r at the bottom of Thunder Totem in the boat on the water.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-							["requireSkill"] = FISHING,
-							["creatureID"] = 120457
-						}),
+						["collectible"] = false,
+						["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
+						["g"] = {
+							faction(2099, {	-- Akule Riverhorn
+								["creatureID"] = 120457,
+								["coord"] = { 32.4, 40.9, 750 },	-- Highmountain (Thunder Totem)
+								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF32.4, 40.9|r at the bottom of Thunder Totem in the boat on the water.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+								["requireSkill"] = FISHING,
+								["groups"] = {
+									i(146960, {		-- Ancient Totem Fragment
+										-- extra info for the item can go here
+									}),
+									i(147310, {	-- Crate of Bobbers: Floating Totem (TOY!)
+										["cost"] = { { "i", 146960, 100 }, },	-- 100x Ancient Totem Fragment
+									}),
+									i(152556, {	-- Trawler Totem (TOY!)
+										["cost"] = { { "i", 146960, 50 }, },	-- 50x Ancient Totem Fragment
+									}),
+									i(133709, {	-- Funky Sea Snail
+										["cost"] = { { "i", 146960, 25 }, },	-- 25x Ancient Totem Fragment
+									}),
+									i(133711, {	-- Swollen Murloc Egg
+										["cost"] = { { "i", 146960, 25 }, },	-- 25x Ancient Totem Fragment
+									}),
+									i(133712, {	-- Frost Worm
+										["cost"] = { { "i", 146960, 25 }, },	-- 25x Ancient Totem Fragment
+									}),
+									i(124109, {	-- Highmountain Salmon
+										["cost"] = { { "i", 146960, 10 }, },	-- 10x Ancient Totem Fragment
+									}),
+								},
+							}),
+						},
 					}),
 					i(137695), 	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),

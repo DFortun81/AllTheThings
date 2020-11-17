@@ -10,7 +10,6 @@ _.Zones =
 			["maps"] = {
 				416,	-- Dustwallow Marsh
 			},
-			["lvl"] = 35,
 		}),
 	}),
 };

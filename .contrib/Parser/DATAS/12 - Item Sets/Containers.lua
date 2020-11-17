@@ -167,6 +167,7 @@ _.GearSets =
 		}),
 		i(173393, {	-- Black Empire Plate Chestpiece
 			i(173454),	-- Malignant Leviathan's Chestplate
+			i(184599),	-- Malignant Leviathan's Chestplate
 			i(173837),	-- Malignant Leviathan's Hauberk
 		}),
 		i(173395, {	-- Black Empire Plate Gloves

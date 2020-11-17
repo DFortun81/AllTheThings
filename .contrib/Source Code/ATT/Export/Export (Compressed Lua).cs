@@ -91,6 +91,7 @@ namespace ATT
             }
             // Cache the fields
             var fields = data.Keys.ToList();
+            fields.Sort();
 
             // If this is a constructed object type, then we need to write a parenthesis afterward.
             var constructed = ExportShortcut(builder, data, fields);
@@ -196,7 +197,7 @@ namespace ATT
                     subbuilder.Append('{');
 
                     // Export Fields
-                    int maxValue = 0, value = 0;
+                    //int maxValue = 0, value = 0;
                     for (int i = 0, count = list.Count; i < count; ++i)
                     {
                         // If this is NOT the first field, append a comma.
@@ -206,8 +207,8 @@ namespace ATT
                         ExportCompressedLua(subbuilder, list[i]);
 
                         // Determine if this is higher than the current max value.
-                        value = Convert.ToInt32(list[i]);
-                        if (value > maxValue) maxValue = value;
+                        //value = Convert.ToInt32(list[i]);
+                        //if (value > maxValue) maxValue = value;
                     }
 
                     // Close Bracket for the end of the List.
@@ -215,7 +216,7 @@ namespace ATT
 
                     // Cache the structure, mark it, then write it to the builder.
                     var structure = subbuilder.ToString();
-                    if (maxValue < 40) MarkStructure(structure);
+                    /*if (maxValue < 40)*/ MarkStructure(structure);
                     builder.Append(structure);
                 }
                 else

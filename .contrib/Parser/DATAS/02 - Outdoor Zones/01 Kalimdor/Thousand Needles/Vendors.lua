@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -11,7 +12,7 @@ _.Zones =
 					["g"] = {
 						i(13309, {	-- Schematic: Lovingly Crafted Boomstick
 							["spellID"] = 0,	-- now learned from trainer, schematic was removed from game
-							["u"] = REMOVED_FROM_GAME, 
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),

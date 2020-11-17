@@ -12,7 +12,6 @@ _.Zones =
 				540,	-- Bloodthorn Cave
 				541,	-- Den of Secrets
 			},
-			["lvl"] = 90,
 		}),
 	}),
 };

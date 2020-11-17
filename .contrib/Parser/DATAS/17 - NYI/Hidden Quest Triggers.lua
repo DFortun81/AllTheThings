@@ -182,6 +182,7 @@ _.HiddenQuestTriggers =
 		q(39828),	-- Horseman and Guards Shared Criteria, triggered when I applied Creepy Crawlers garrison decoration
 
 		-- Darkmoon Faire
+		q(57776),	-- unknown tracking quest that appeared after speaking to Selina Dourman
 		q(30557),	-- [DNT] A Captured Banner TRACKER - triggers after completing A Captured Banner (questID 29456)
 		q(30553),	-- [DNT] A Curious Crystal TRACKER - triggers after completing A Curious Crystal (questID 29443)
 		q(30562),	-- [DNT] A Fizzy Fusion TRACKER - triggers after completing A Fizzy Fusion (questID 29506)
@@ -408,6 +409,7 @@ _.HiddenQuestTriggers =
 		q(35412),	-- Zul'Gurub Bonus Objective Reward Quest. Killing Cache of Madness
 		q(35435),	-- Well of Eternity Reward Quest
 
+		-- QUESTING
 		q(28347),	-- Coffer of Promise TRACKING QUEST
 		q(25071),	-- FLAG - Purple Murloc
 		q(28889),	-- Arcane Instructions Tracking Quest
@@ -423,7 +425,6 @@ _.HiddenQuestTriggers =
 		q(29286),	-- Druid Tree, Stage 2 Tracking
 		q(29291),	-- triggered with Peaked Interest 29287
 		q(29292),	-- triggered with Peaked Interest 29287
-
 		q(26565),	-- A Furious Catch (REMOVED) — unused version of Orgrimmar Cata fishing daily "A Golden Opportunity"
 		q(25829),	-- Mount Hyjal - goldrinn hub complete
 		q(27872),	-- Mount Hyjal - tortolla hub complete
@@ -448,6 +449,13 @@ _.HiddenQuestTriggers =
 		-------------------
 		q(32357),	-- triggered after watching the RP that takes place after turning in #32316, "Heart of the Alliance," part of the Operation: Shieldwall campaign
 		q(32395),	-- Tracking Event: Saw Avartu - triggered while on "The Divine Bell," part of the Operation: Shieldwall campaign (at the end of the quest before killing Avartu)
+		q(32339),	-- Rebuilding the Mallet (Tracker) — triggered after turning in The Head and The Harmonic Ointment (The Handle was turned in earlier, but presumably requires all 3), part of the Operation: Shieldwall campaign
+		q(32365),	-- Tracking Event: Epilogue Complete — triggered after turning in "The Silence" and watching the RP, part of the Operation: Shieldwall campaign.  didn't go off until I left the area and turned in another quest (which is a daily that doesn't normally have any additional tracking quests attached, so i know it was from the final campaign quest)
+		q(32361),	-- triggered after turning in #32352, "A Gathering Storm," part of the Dominance Offensive campaign
+		q(32364),	-- triggered after turning in #32448, "Ties with the Past," part of the Dominance Offensive campaign
+		q(32437),	-- Tracking Event: Saw Sarannha 1 — triggered at the end of "The Divine Bell," part of the Dominance Offensive campaign
+		q(32438),	-- Tracking Event: Saw Sarannha 2 — same as above
+		q(30720),	-- FLAG - Cradle of Chi-Ji Progress Bit 02 — triggered after turning in Dextrous Izissha quest, 6th for Champion of Chi-Ji.  triggered on another character after turning in Minh Do-Tan, which is the 2nd
 		q(30629),	-- triggered after cutscene prompted by turning in "Stoneplow Thirsts" in Valley of the Four Winds
 		q(31371),	-- Tracking Event: Player Has Completed One Anglers Daily
 		q(30719),	-- FLAG - Cradle of Chi-Ji Progress Bit 01
@@ -746,6 +754,7 @@ _.HiddenQuestTriggers =
 		q(39307),	-- Gorgrond - Mechasuit
 		q(36712),	-- Gorgrond - Mill Treasure 1 - triggers when looting the ancient titan chest questID 35701
 		q(35946),	-- Gorgrond - Peckers the Majestic - triggers if you free Peckers from his cage in Kor'gall's Hovel with the sparring arena active (37.3, 70.7)
+		q(37629),	-- Assault on Mok'gol Watchpost
 		q(36797),	-- Shadowmoon Valley - Founded the garrison
 		q(35626),	-- Shadowmoon Valley - Friend of the Exarchs: Apprentice Artificer Andren selected
 		q(35629),	-- Shadowmoon Valley - Friend of the Exarchs: Vindicator Onaala selected
@@ -942,9 +951,22 @@ _.HiddenQuestTriggers =
 		q(36295),	-- Lumber Mill — Phylarch the Evergreen second attack
 		q(39414),	-- Gladiator's Sanctum - Triggers on construction of the gladiator's sanctum (Lunarfall)
 		q(36058),	-- Seal of Tempered Fate: Armory
+		q(36894),	-- Nemesis Flag, Draenei/Blood Elf — all these are for burning effigies of specific races in the Gladiator Sanctum
+		q(36891),	-- Nemesis Flag, Dwarf/Forsaken
+		q(36892),	-- Nemesis Flag, Gnome/Tauren
+		q(36956),	-- Nemesis Flag, Human
+		q(36890),	-- Nemesis Flag, Human/Orc
+		q(36893),	-- Nemesis Flag, Night Elf/Troll
+		q(36896),	-- Nemesis Flag, Pandaren (A/H)
+		q(36895),	-- Nemesis Flag, Worgen/Goblin
 
+		-- ASSAULTS
 		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
 		q(36809), 	-- Missive completion: Assault on the Heart of Shattrath
+		q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36807),	-- Assault on the Heart of Shattrath (When completing the criteria for Assault on the Hearth of Shattrath on Horde character)
 
 		-- GARRISON COMMAND TABLE
 		q(39413),
@@ -1037,6 +1059,11 @@ _.HiddenQuestTriggers =
 		--    Legion     --
 		-------------------
 		--	Various tracking quests
+		q(44608),	-- Tracking Quest: Holy Ground 1 — these 5 are for the missions done during the priest class hall quest "Awakening the Light"
+		q(44609),	-- Tracking Quest: Holy Ground 2
+		q(44610),	-- Tracking Quest: Holy Ground 3
+		q(44611),	-- Tracking Quest: Holy Ground 4
+		q(44612),	-- Tracking Quest: Holy Ground 5
 		q(40076),	-- Start Demon Hunter Tracking - triggers right after creating a demon hunter
 		q(39517),	-- Demon Hunter - picked Havoc during "Fel Secrets" on Mardum
 		q(39518),	-- Demon Hunter - picked Vengeance during "Fel Secrets" on Mardum
@@ -1156,6 +1183,7 @@ _.HiddenQuestTriggers =
 		q(46717),	-- got achievement Burning Bridges and looted Qa'pla, Eredun War Order legendary, so one of the two
 		q(46835),	-- Whispers of a Frightened World Tracking, while doing quest 46206
 		q(43659),	-- Mage - learned the Felo'melorn appearance from The Stars' Design (maybe put this on the appearance item?)
+		q(42189),	-- Fire Mage - Flavor Event 01. Showed Arcanomancer Vridiel in Dalaran the newly acquired Felo'melorne
 		q(44426),	-- Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
 		q(40340),	-- Alard Schmied Greeting Seen. "Well, I'll be... the Ashbringer. ...' in Dalaran
 
@@ -1360,6 +1388,7 @@ _.HiddenQuestTriggers =
 		--	Artifact Appearances
 		q(43655),	-- Hidden Appearance unlocked (The Silver Hand?)
 		q(45130),	-- Hidden Appearance unlocked
+		q(43647),	-- Hidden Appearance Unlocked (learning a hidden artifact appearance on a DK, presumably the one from Soultakers, based on Discord reports)
 
 		--	Professions
 		--	Archaeology
@@ -1455,6 +1484,7 @@ _.HiddenQuestTriggers =
 		q(47091),	-- Si'vash bonus roll
 		q(44510),	-- The Soultakers killID
 		q(44905),	-- The Soultakers bonus roll
+		q(44149),	-- The Soultakers, triggered when Runes of the Darkening drops for a DK
 		q(44511),	-- Withered J'im killID
 		q(44906),	-- Withered J'im bonus roll
 
@@ -1545,8 +1575,10 @@ _.HiddenQuestTriggers =
 		--	Rares
 		q(43961),	-- Azsuna - WQ rare: Bestrix
 		q(44882),	-- Azsuna - WQ rare: Bloodgazer Matriarch
+		q(42699),	-- Azsuna - WQ rare: Coura, Mistress of Arcana
 		q(45489),	-- Azsuna - WQ rare: Deepclaw
 		q(45499),	-- Azsuna - WQ rare: Fjordun
+		q(45497),	-- Azsuna - WQ rare: Stormfeather
 		q(44035),	-- Azsuna - WQ rare: Torrentius
 		q(45513),	-- Highmountain - WQ rare: Defilia
 		q(45512),	-- Highmountain - WQ rare: Mawat'aki
@@ -1596,7 +1628,10 @@ _.HiddenQuestTriggers =
 		q(37779),	-- Tip the Scales
 
 		--	Highmountain bonus objectives
+		q(40050),	-- Shipwreck Cove
+		q(39317),	-- Siege of Crawliac
 		q(40316),	-- The Screeching Crag
+		q(42373),	-- Vengeance for the Stonedark
 		q(39371),	-- Witches of the Sky
 
 		--	Stormheim bonus objectives
@@ -1740,6 +1775,9 @@ _.HiddenQuestTriggers =
 		]]--
 
 		--	VARIOUS
+		q(47703),	-- triggered while on #47631, "Rendezvous with the Libation"
+		q(50465),	-- triggered with #49950, "Blood Purification"
+		q(50419),	-- tracking quest from the 8.1.5 Blacksmithing questling ending with "Therazane's Choice"
 		q(48575),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity? Maybe an alliance/horde equivalent?
 		q(53441),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity?
 		q(53470),	-- Vol'dun - Alliance - landed in Vol'Dun while doing the war campaign. First zone landing
@@ -2287,6 +2325,7 @@ _.HiddenQuestTriggers =
 		q(50925),	-- Vol'dun repeatable random chest
 		-- Various
 		q(49684),	-- triggered when picking the staff on "Armed and Ready"
+		q(49685),	-- triggered when picking the scythe/glaive thing on "Armed and Ready"
 		q(47647),	-- Monsters of Zem'lan - bonus quest
 		q(50805),	-- Skycaller Shutdown - bonus quest
 		q(50805),	-- Skycaller Shutdown - bonus quest
@@ -2574,6 +2613,7 @@ _.HiddenQuestTriggers =
 		q(56330),	-- Triggered shortly after completing "Chopped Bots". Possibly shuts down the magnet?
 		q(56660),	-- Triggered on Mechagon randomly
 		q(55260),	-- triggers when making the Volatile Blaster first time on character
+		q(55414),	-- triggers when making the Ricket's Special Delivery first time on character
 		q(56840),	-- Toys of Destruction - made the Volatile Blaster. Maybe triggers for all the toys to indicate the toy extra action button is available?
 		q(56624),	-- collected Izira Gearsworn mini for "Most Minis Wins"
 		q(56625),	-- collected Bondo Grosbloc mini for "Most Minis Wins"

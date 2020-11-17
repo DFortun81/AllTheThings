@@ -10,49 +10,49 @@ _.Zones =
 				q(56396, {	-- Creakclank
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
-					["lvl"] = 120,
+					["lvl"] = { 50 },
 				}),
 				q(56397, {	-- CK-9 Micro-Oppression Unit
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
-					["lvl"] = 120,
+					["lvl"] = { 50 },
 				}),
 				q(56393, {	-- Gnomefeaster
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
-					["lvl"] = 120,
+					["lvl"] = { 50 },
 				}),
 				q(56395, {	-- Goldenbot XD
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
-					["lvl"] = 120,
+					["lvl"] = { 50 },
 				}),
 				q(56139, {	-- Junkyard Treasures
 					["isWorldQuest"] = true,
-					["lvl"] = 120,
+					["lvl"] = { 50 },
 					["g"] = {
 						i(168832),	-- Galvanic Oscillator
 					},
 				}),
 				q(55901, {	-- Rustbolt Rebellion
 					["isWorldQuest"] = true,
-					["lvl"] = 120,
+					["lvl"] = { 50 },
 					["g"] = {
 						i(168832),	-- Galvanic Oscillator
 					},
 				}),
 				q(56131, {	-- Security First
-					["isWorldQuest"] = true,
+					["isWorldQuest"] = true,	-- already completed on a Horde character without doing it?
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
+					["lvl"] = { 50 },
 					["g"] = {
 						i(168832),	-- Galvanic Oscillator
 					},
 				}),
 				q(56141, {	-- Security First
 					["isWorldQuest"] = true,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
+					-- ["races"] = ALLIANCE_ONLY,	-- Currently available for Horde character
+					["lvl"] = { 50 },
 					["g"] = {
 						i(168832),	-- Galvanic Oscillator
 					},
@@ -60,22 +60,22 @@ _.Zones =
 				q(56394, {	-- Sputtertube
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
-					["lvl"] = 120,
+					["lvl"] = { 50 },
 				}),
 				q(56399, {	-- Unit 6
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
-					["lvl"] = 120,
+					["lvl"] = { 50 },
 				}),
 				q(56400, {	-- Unit 17
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
-					["lvl"] = 120,
+					["lvl"] = { 50 },
 				}),
 				q(56398, {	-- Unit 35
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
-					["lvl"] = 120,
+					["lvl"] = { 50 },
 				}),
 			}),
 		}),

@@ -2,11 +2,9 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
--- TODO: fromatting
 _.WorldEvents =
 {
-	{	-- 11th Anniversary
-		["npcID"] = -5360,	-- 11th Anniversary
+	n(-5360, {	-- 11th Anniversary
 		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
 		["maps"] = {
 			85,	-- Orgrimmar
@@ -14,47 +12,36 @@ _.WorldEvents =
 			13,	-- Stormwind City
 		},
 		["g"] = {
-			{	-- 8th Anniversary
-				["achievementID"] = 10058,	-- 11th Anniversary
-				["u"] = 36,					-- WoW Anniversary Filter
-			},
-			{	-- Mailbox
-				["npcID"] = -297,	-- Mailbox
-				["g"] = {
-					{	-- Anniversary Gift
-						["itemID"] = 128513,	-- Anniversary Gift
-						["u"] = 36,				-- WoW Anniversary Filter
-						["g"] = {
-							{	-- Celebration Package
-								["itemID"] = 127987,	-- Celebration Package
-								["u"] = 36,				-- WoW Anniversary Filter
+			ach(10058, {	-- 11th Anniversary
+				["u"] = 36,	-- WoW Anniversary [Removed]
+			}),
+			n(-297, {	-- Mailbox
+				i(128513, {	-- Anniversary Gift
+					["u"] = 36,				-- WoW Anniversary [Removed]
+					["g"] = {
+						i(127987, {	-- Celebration Package
+							["u"] = 36,	-- WoW Anniversary [Removed]
+						}),
+						i(128506, {	-- Celebration Wand - Gnoll
+							["u"] = 31,	-- WoW Anniversary Filter
+						}),
+						i(128505, {	-- Celebration Wand - Murloc
+							["u"] = 31,	-- WoW Anniversary Filter
+						}),
+						i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"
+							["u"] = 31,	-- WoW Anniversary Filter
+						}),
+						i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
+							["u"] = 31,	-- WoW Anniversary Filter
+							["g"] = {
+								ach(10335, {	-- Did Someone Say...?
+									["u"] = 31,	-- WoW Anniversary Filter
+								}),
 							},
-							{	-- Celebration Wand - Gnoll
-								["itemID"] = 128506,	-- Celebration Wand - Gnoll
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- Celebration Wand - Murloc
-								["itemID"] = 128505,	-- Celebration Wand - Murloc
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- Exquisite Costume Set: "Edwin VanCleef"
-								["itemID"] = 128510,	-- Exquisite Costume Set: "Edwin VanCleef"
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-								["itemID"] = 128507,	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-								["u"] = 31,				-- WoW Anniversary Filter
-								["g"] = {
-									{	-- Did Someone Say...?
-										["achievementID"] = 10335,	-- Did Someone Say...?
-										["u"] = 31,				-- WoW Anniversary Filter
-									},
-								},
-							},
-						},
+						}),
 					},
-				},
-			},
+				}),
+			}),
 		},
-	},
+	}),
 };

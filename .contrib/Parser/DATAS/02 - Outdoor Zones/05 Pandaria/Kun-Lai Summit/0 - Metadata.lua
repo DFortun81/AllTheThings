@@ -19,7 +19,6 @@ _.Zones =
 				387,	-- Ruins of Korune (Lower Floor)
 				434,	-- The Ancient Passage
 			},
-			["lvl"] = 82,
 		}),
 	}),
 };

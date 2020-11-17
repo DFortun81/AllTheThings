@@ -28,7 +28,7 @@ _.Secrets =
 						},
 					}),
 					i(44958, {	-- Ethereal Oil
-						["description"] = "Qty:1\n\nPurchase on the AH or make your own (Alchemy)",
+						["description"] = "Qty:1\n\nPurchase on the AH or make your own (Alchemy).",
 					}),
 					i(18258, {	-- Gordok Ogre Suit
 						["description"] = "Qty:1\n\nPurchase on the AH, make your own (pre Cata Tailors/Leatherworkers only), or head to Dire Maul North.\n\nOnce inside find Knot Thimblejack near Guard Slip'kik, and complete his quest for the suit.",
@@ -85,25 +85,25 @@ _.Secrets =
 						},
 					}),
 					i(22845, {	-- Major Arcane Protection Potion
-						["description"] = "Qty:1\n\nPurchase on the AH or make your own (Alchemy)",
+						["description"] = "Qty:1\n\nPurchase on the AH or make your own (Alchemy).",
 					}),
 					i(22841, {	-- Major Fire Protection Potion
-						["description"] = "Qty:1\n\nPurchase on the AH or make your own (Alchemy)",
+						["description"] = "Qty:1\n\nPurchase on the AH or make your own (Alchemy).",
 					}),
 					i(22842, {	-- Major Frost Protection Potion
-						["description"] = "Qty:1\n\nPurchase on the AH or make your own (Alchemy)",
+						["description"] = "Qty:1\n\nPurchase on the AH or make your own (Alchemy).",
 					}),
 					i(22847, {	-- Major Holy Protection Potion
-						["description"] = "Qty:1\n\nPurchase on the AH or make your own (Alchemy)",
+						["description"] = "Qty:1\n\nPurchase on the AH or make your own (Alchemy).",
 					}),
 					i(22844, {	-- Major Nature Protection Potion
-						["description"] = "Qty:1\n\nPurchase on the AH or make your own (Alchemy)",
+						["description"] = "Qty:1\n\nPurchase on the AH or make your own (Alchemy).",
 					}),
 					i(22846, {	-- Major Shadow Protection Potion
-						["description"] = "Qty:1\n\nPurchase on the AH or make your own (Alchemy)",
+						["description"] = "Qty:1\n\nPurchase on the AH or make your own (Alchemy).",
 					}),
 					i(8529, {	-- Noggenfogger Elixir
-						["description"] = "Qty:20\n\nPurchase from Sprinkle Noggenfogger in Tanaris",
+						["description"] = "Qty:20\n\nPurchase from Sprinkle Noggenfogger in Tanaris.",
 						["g"] = {
 							n(98844, {	-- Sprinkle Noggenfogger
 								["coord"] = { 51.2, 29.8, 71 },
@@ -111,10 +111,10 @@ _.Secrets =
 						},
 					}),
 					n(37865, {	-- Perky Pug
-						["description"] = "Qty:1\n\nObtained from the Dungeons & Raids achievement \"Looking for Multitudes\"",
+						["description"] = "Qty:1\n\nObtained from the Dungeons & Raids achievement \"Looking for Multitudes\".",
 					}),
 					i(40195, {	-- Pygmy Oil
-						["description"] = "Qty:20\n\nPurchase on the AH or make your own (Alchemy)",
+						["description"] = "Qty:20\n\nPurchase on the AH or make your own (Alchemy).",
 					}),
 					i(89373, {	-- Scotty's Lucky Coin
 						["description"] = "Qty:1\n\nObtained from killing Scotty in Townlong Steppes.\n\nScotty's behind the Mantid house in the middle of the tree, so either walk around the left side of the house, or fly just above the house down into the crevice.",
@@ -150,7 +150,7 @@ _.Secrets =
 						},
 					}),
 					i(12820, {	-- Winterfall Firewater
-						["description"] = "Qty:1\n\nPurchase on the AH, or farm Winterfall furbolgs in Winterspring",
+						["description"] = "Qty:1\n\nPurchase on the AH, or farm Winterfall furbolgs in Winterspring.",
 					}),
 				},
 			}),
@@ -161,10 +161,10 @@ _.Secrets =
 				},
 			}),
 			o(9999910, {	-- |cFFFFFFFFStep 3:|r Fire Barrier
-				["description"] = "|cFFFFFFFFSTEP 3:|r |cff66ccffUse the Major Fire Protection Potion, and pass through the Fire Barrier|r",
+				["description"] = "|cFFFFFFFFSTEP 3:|r |cff66ccffUse the Major Fire Protection Potion, and pass through the Fire Barrier.|r",
 			}),
 			o(9999911, {	-- |cFFFFFFFFStep 4:|r Prismatic Barrier
-				["description"] = "|cFFFFFFFFSTEP 4:|r |cff66ccffUse the rest of the Major Potions and pass through the Prismatic Barrier|r",
+				["description"] = "|cFFFFFFFFSTEP 4:|r |cff66ccffUse the rest of the Major Potions and pass through the Prismatic Barrier.|r",
 			}),
 			o(9999912, {	-- |cFFFFFFFFStep 5:|r Diligent Watcher
 				["description"] = "|cFFFFFFFFSTEP 5:|r |cff66ccffUse Noggenfogger Elixir until you turn into a Skeleton, then walk past the Diligent Watcher.|r",
@@ -176,7 +176,7 @@ _.Secrets =
 				["description"] = "|cFFFFFFFFSTEP 7:|r |cff66ccffUse the Water Stone, backtrack to the Blue Barrier and walk through ever so slightly.|r",	-- i(147455)	-- Water Stone
 			}),
 			o(9999915, {	-- |cFFFFFFFFStep 8:|r Stone Golem
-				["description"] = "|cFFFFFFFFSTEP 8:|r |cff66ccffUse the Dire Brew and walk past the Stone Watcher|r",
+				["description"] = "|cFFFFFFFFSTEP 8:|r |cff66ccffUse the Dire Brew and walk past the Stone Watcher.|r",
 			}),
 			o(9999916, {	-- |cFFFFFFFFStep 9:|r Ethereal Barrier
 				["description"] = "|cFFFFFFFFSTEP 9:|r |cff66ccffGo up the ramp on the right to the Purple Transparent Barrier. Use Ethereal Oil and walk through the barrier to the Strange Stone in the back.|r",

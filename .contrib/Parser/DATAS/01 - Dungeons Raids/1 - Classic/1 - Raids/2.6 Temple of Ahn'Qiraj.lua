@@ -1058,29 +1058,29 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 				},
 			}),
-			filter(200, {	-- Recipes
-				["crs"] = {
-					15516,	-- Battleguard Sartura
-					15510,	-- Fankriss the Unyielding
-					15511,	-- Lord Kri
-					15517,	-- Ouro
-					15509,	-- Princess Huhuran
-					15543,	-- Princess Yauj
-					15263,	-- The Prophet Skeram
-					15544,	-- Vem
-					15299,	-- Viscidus
-				},
-				["g"] = {
-					i(20736),	-- Formula: Enchant Cloak - Dodge
-					i(20734),	-- Formula: Enchant Cloak - Stealth
-					i(20729),	-- Formula: Enchant Gloves - Fire Power
-					i(20728),	-- Formula: Enchant Gloves - Frost Power
-					i(20730),	-- Formula: Enchant Gloves - Healing Power
-					i(20727),	-- Formula: Enchant Gloves - Shadow Power
-					i(20731),	-- Formula: Enchant Gloves - Superior Agility
-				},
-			}),
 			n(COMMON_BOSS_DROPS, {
+				filter(200, {	-- Recipes
+					["crs"] = {
+						15516,	-- Battleguard Sartura
+						15510,	-- Fankriss the Unyielding
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15509,	-- Princess Huhuran
+						15543,	-- Princess Yauj
+						15263,	-- The Prophet Skeram
+						15544,	-- Vem
+						15299,	-- Viscidus
+					},
+					["g"] = {
+						i(20736),	-- Formula: Enchant Cloak - Dodge
+						i(20734),	-- Formula: Enchant Cloak - Stealth
+						i(20729),	-- Formula: Enchant Gloves - Fire Power
+						i(20728),	-- Formula: Enchant Gloves - Frost Power
+						i(20730),	-- Formula: Enchant Gloves - Healing Power
+						i(20727),	-- Formula: Enchant Gloves - Shadow Power
+						i(20731),	-- Formula: Enchant Gloves - Superior Agility
+					},
+				}),
 				i(21232, {	-- Imperial Qiraji Armaments
 					["crs"] = {
 						15510,	-- Fankriss the Unyielding

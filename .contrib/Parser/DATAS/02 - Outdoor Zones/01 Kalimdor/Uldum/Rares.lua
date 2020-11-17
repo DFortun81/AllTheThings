@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -29,7 +30,7 @@ _.Zones =
 						{ 51.0, 20.4, 249 },
 						{ 53.4, 19.0, 249 },
 					},
-				}), 
+				}),
 				n(51404, {	-- Madexx - Blue
 					["coords"] = {
 						{ 47.6, 18.8, 249 },
@@ -49,7 +50,7 @@ _.Zones =
 						{ 50.0, 23.8, 249 },
 						{ 53.8, 19.4, 249 },
 					},
-				}), 
+				}),
 				n(51402, {	-- Madexx - Green
 					["coords"] = {
 						{ 44.8, 10.0, 249 },
@@ -59,7 +60,7 @@ _.Zones =
 						{ 50.0, 23.8, 249 },
 						{ 53.8, 19.4, 249 },
 					},
-				}), 
+				}),
 				n(51401, {	-- Madexx - Red
 					["coords"] = {
 						{ 44.8, 10.0, 249 },
@@ -68,7 +69,7 @@ _.Zones =
 						{ 50.8, 20.2, 249 },
 						{ 50.0, 23.8, 249 },
 					},
-				}), 
+				}),
 				n(50409, {	-- Mysterious Camel Figurine
 					["description"] = "If you're lucky enough to find the right Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
 					["coords"] = {

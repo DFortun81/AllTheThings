@@ -218,6 +218,7 @@ _.Zones =
 						}),
 						n(93907, {	-- Amelia Clarke <Wild Gladiator>
 							["itemID"] = 137642,	-- Mark of Honor
+							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 54.8, 17.0, 622 },
 							["g"] = {
 								i(138633, {	-- Arsenal: Wild Gladiator's Weapons
@@ -482,6 +483,7 @@ _.Zones =
 							},
 						}),
 						n(86175, {	-- Bregg Coppercast <Primal Combatant>
+							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 56.2, 20.0, 622 },
 							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -679, -9914, -660 },
@@ -1176,24 +1178,40 @@ _.Zones =
 						n(87365, {  -- Grakis
 							["coord"] = { 48.6, 33.5, 622 },
 							["g"] = {
+								i(122606, {	-- Explorer's Notebook
+									["cost"] = { { "i", 87399, 5 } },	-- 5x  Restored Artifact
+								}),
+								i(117389, {	-- Draenor Archaeologist's Lodestone
+									["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+								}),
+								i(117390, {	-- Draenor Archaeologist's Map
+									["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+								}),
+								i(118727, {	-- Frostfire Treasure Map
+									["questID"] = 34557,
+									["cost"] = { { "g", 1000000 } }	-- 100g
+								}),
 								i(118729, {	-- Gorgrond Treasure Map
 									["questID"] = 36465,
+									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
 								i(118732, {	-- Nagrand Treasure Map
 									["questID"] = 36468,
-								}),
-								i(118728, {	-- Shadowmoon Valley Treasure Map
-									["questID"] = 36464,
+									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
 								i(118731, {	-- Spires of Arak Treasure Map
 									["questID"] = 36467,
+									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
 								i(118730, {	-- Talador Treasure Map
 									["questID"] = 36466,
+									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
 							},
 						}),
 						n(93914, {	-- Holly McTilla <Warmongering Gladiator>
+							["itemID"] = 137642,	-- Mark of Honor
+							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 54.8, 18.8, 622 },
 							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -681, -9914, -661 },
@@ -1216,6 +1234,7 @@ _.Zones =
 						}),
 						n(86176, {	-- Ingrid Blackingot <Primal Gladiator>
 							["itemID"] = 137642,	-- Mark of Honor
+							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 55.0, 19.4, 622 },
 							["g"] = {
 								i(138631),	-- Arsenal: Primal Gladiator's Weapons
@@ -1553,6 +1572,7 @@ _.Zones =
 							},
 						}),
 						n(93915, {	-- Li "Crunchpaw" Tsang <Warmongering Combatant>
+							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 54.8, 18.8, 622 },
 							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 },
@@ -1682,6 +1702,7 @@ _.Zones =
 						}),
 						n(93906, {	-- Slugg Spinbolt <Wild Combatant>
 							["itemID"] = 137642,	-- Mark of Honor
+							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 54.6, 17.6, 622 },
 							["g"] = {
 								i(138630),	-- Arsenal: Wild Combatant's Weapons

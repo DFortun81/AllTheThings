@@ -19,9 +19,6 @@ _.Zones =
 				}),
 				n(QUESTS, {
 --[[
-					q(32352, {	-- A Gathering Storm
-						["races"] = HORDE_ONLY,
-					}),
 					q(31511, {	-- A Witness to History
 						["races"] = HORDE_ONLY,
 					}),

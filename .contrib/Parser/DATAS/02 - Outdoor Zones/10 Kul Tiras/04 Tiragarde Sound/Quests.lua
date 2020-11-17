@@ -399,14 +399,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128927 },	-- Venrik
 					["g"] = {
-						i(160859),	-- Freebooter Hood
-						i(155040),	-- Freebooter Shoulderpads
-						i(160858),	-- Navigator's Crown
-						i(155042),	-- Navigator's Mantle
-						i(160860),	-- Outrigger Coif
-						i(155043),	-- Outrigger Pauldrons
-						i(160861),	-- Sea Raider's Helmet
-						i(155041),	-- Sea Raider's Spaulders
+						n(-862, {	-- Hearth of Azeroth
+							["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
+								["g"] = {
+									i(160859),	-- Freebooter Hood
+									i(155040),	-- Freebooter Shoulderpads
+									i(160858),	-- Navigator's Crown
+									i(155042),	-- Navigator's Mantle
+									i(160860),	-- Outrigger Coif
+									i(155043),	-- Outrigger Pauldrons
+									i(160861),	-- Sea Raider's Helmet
+									i(155041),	-- Sea Raider's Spaulders
+								},
+						}),
 						i(175315),	-- Freebooter Hood (no azerite version)
 						i(175318),	-- Freebooter Shoulderpads (no azerite version)
 						i(175314),	-- Navigator's Crown (no azerite version)

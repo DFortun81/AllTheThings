@@ -1557,7 +1557,6 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(163312)),	-- 7th Legionnaire's Shawl
 			un(NEVER_IMPLEMENTED, i(163348)),	-- Warfront Gear Cloak
 			un(NEVER_IMPLEMENTED, i(163364)),	-- Warfront Gear Cloak
-			un(NEVER_IMPLEMENTED, i(146793)),	-- Man'ari Magus Drape
 			un(NEVER_IMPLEMENTED, i(146794)),	-- Sargerei Herald's Cloak
 			un(NEVER_IMPLEMENTED, i(146795)),	-- Terrorfiend Greatcloak
 			un(NEVER_IMPLEMENTED, i(153397)),	-- Salt Starched Shawl
@@ -1610,6 +1609,17 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(172662)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(172851)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(172855)),	-- Unknown
+			un(NEVER_IMPLEMENTED, i(158500)),	-- [Salt Starched Shawl]
+			un(NEVER_IMPLEMENTED, i(158552)),	-- [Drape of the Golden City]
+			un(NEVER_IMPLEMENTED, i(163346)),	-- [Warfront Gear Drape]
+			un(NEVER_IMPLEMENTED, i(163349)),	-- [7th Legionnaire's Chain Cloak]
+			un(NEVER_IMPLEMENTED, i(163350)),	-- [7th Legionnaire's Cloak]
+			un(NEVER_IMPLEMENTED, i(163352)),	-- [7th Legionnaire's Steel Cloak]
+			un(NEVER_IMPLEMENTED, i(163359)),	-- [Warfront Gear Cape]
+			un(NEVER_IMPLEMENTED, i(163363)),	-- [Warfront Gear Cape]
+			un(NEVER_IMPLEMENTED, i(163369)),	-- [Honorbound Centurion's Greatcloak]
+			un(NEVER_IMPLEMENTED, i(163370)),	-- [Warfront Gear Drape]
+			un(NEVER_IMPLEMENTED, i(169822)),	-- Flowing Cloak
 			un(NEVER_IMPLEMENTED, i(174857)),	-- Hidden Cloak (Vulpera?)
 			un(NEVER_IMPLEMENTED, i(163371)),	-- Honorbound Centurions Cloak
 			un(NEVER_IMPLEMENTED, i(163356)),	-- Honorbound Artificier Drape (different version used with locked to specific classes)
@@ -1896,6 +1906,9 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(142378)),	-- zzz old vial of ancient mana
 			un(NEVER_IMPLEMENTED, i(17347)),	-- unknown
 			un(NEVER_IMPLEMENTED, i(17409)),	-- Encrusted Crystal Fragment
+			un(NEVER_IMPLEMENTED, i(169696)),	-- reuse me [mtmm]]
+			un(NEVER_IMPLEMENTED, i(169702)),	-- reuse me [mtmm]]
+			un(NEVER_IMPLEMENTED, i(169703)),	-- reuse me [mtmm]]
 			un(NEVER_IMPLEMENTED, i(20883)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(20936)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(20937)),	-- Unknownwwwwwwwwwww
@@ -1907,6 +1920,35 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(168030)),	-- dnt hyperbolic circuit
 			un(NEVER_IMPLEMENTED, i(168031)),	-- dnt transference disc
 		}),
+		-- M+ PTR Testing
+		un(NEVER_IMPLEMENTED, i(159681)),	-- Set Keystone Map: Darkheart Thicket
+		un(NEVER_IMPLEMENTED, i(159683)),	-- Set Keystone Map: Black Rook Hold
+		un(NEVER_IMPLEMENTED, i(159684)),	-- Set Keystone Map: Cathedral of Eternal Night
+		un(NEVER_IMPLEMENTED, i(159685)),	-- Set Keystone Map: Court of Stars
+		un(NEVER_IMPLEMENTED, i(159686)),	-- Set Keystone Map: Eye of Azshara
+		un(NEVER_IMPLEMENTED, i(159687)),	-- Set Keystone Map: Halls of Valor
+		un(NEVER_IMPLEMENTED, i(159688)),	-- Set Keystone Map: Maw of Souls
+		un(NEVER_IMPLEMENTED, i(159689)),	-- Set Keystone Map: Lower Karazhan
+		un(NEVER_IMPLEMENTED, i(159690)),	-- Set Keystone Map: Upper Karazhan
+		un(NEVER_IMPLEMENTED, i(159691)),	-- Set Keystone Map: Seat of the Triumvirate
+		un(NEVER_IMPLEMENTED, i(159692)),	-- Set Keystone Map: The Arcway
+		un(NEVER_IMPLEMENTED, i(159693)),	-- Set Keystone Map: Vault of the Wardens
+		un(NEVER_IMPLEMENTED, i(159694)),	-- Set Keystone Level: 15
+		un(NEVER_IMPLEMENTED, i(159695)),	-- Set Keystone Level: 16
+		un(NEVER_IMPLEMENTED, i(159696)),	-- Set Keystone Level: 17
+		un(NEVER_IMPLEMENTED, i(159697)),	-- Set Keystone Level: 18
+		un(NEVER_IMPLEMENTED, i(159698)),	-- Set Keystone Level: 19
+		un(NEVER_IMPLEMENTED, i(159699)),	-- Set Keystone Level: 20
+		un(NEVER_IMPLEMENTED, i(159700)),	-- Set Keystone Level: 21
+		un(NEVER_IMPLEMENTED, i(159701)),	-- Set Keystone Level: 22
+		un(NEVER_IMPLEMENTED, i(159702)),	-- Set Keystone Level: 23
+		un(NEVER_IMPLEMENTED, i(159703)),	-- Set Keystone Level: 24
+		un(NEVER_IMPLEMENTED, i(159704)),	-- Set Keystone Level: 25
+		un(NEVER_IMPLEMENTED, i(159705)),	-- Set Keystone Level: 26
+		un(NEVER_IMPLEMENTED, i(159706)),	-- Set Keystone Level: 27
+		un(NEVER_IMPLEMENTED, i(159707)),	-- Set Keystone Level: 28
+		un(NEVER_IMPLEMENTED, i(159708)),	-- Set Keystone Level: 29
+		un(NEVER_IMPLEMENTED, i(159709)),	-- Set Keystone Level: 30
 		un(NEVER_IMPLEMENTED, i(79907)),	-- Spear of Xuen (Old Version)
 		un(NEVER_IMPLEMENTED, i(129742)),	-- Badge of Timewalking Justice cap
 		un(NEVER_IMPLEMENTED, i(31496)),	-- Unknown
@@ -3571,7 +3613,6 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(5748)),	-- Centaur Longbow
 			un(NEVER_IMPLEMENTED, i(108783)),   	-- Unknown
 			un(NEVER_IMPLEMENTED, i(167144)),   	-- Unknown
-			un(NEVER_IMPLEMENTED, i(174855)),	-- Bow of Calamity
 			un(NEVER_IMPLEMENTED, i(154971)),	-- howdah-riers bow
 			un(NEVER_IMPLEMENTED, i(115294)),	-- Spectral Longbow
 			un(NEVER_IMPLEMENTED, i(109283)),   	-- 6.0 QA Combat Test Hunter Bow
@@ -3721,6 +3762,12 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(150592)),	-- Justicar's Hammer
 		}),
 		n(-334, {	-- One-Handed Axes
+			un(NEVER_IMPLEMENTED, i(174298)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - blue
+			un(NEVER_IMPLEMENTED, i(174299)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - copper
+			un(NEVER_IMPLEMENTED, i(174300)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - dark
+			un(NEVER_IMPLEMENTED, i(174301)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - gold
+			un(NEVER_IMPLEMENTED, i(174302)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - silver
+			un(NEVER_IMPLEMENTED, i(174303)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - pink gold
 			un(NEVER_IMPLEMENTED, i(68050)),	-- Shatterscale Mightfish
 			un(NEVER_IMPLEMENTED, i(49456)),	-- Will of the Earth
 			un(NEVER_IMPLEMENTED, i(50251)),	-- Unknown
@@ -3824,6 +3871,12 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(140420)),	-- Battering Tempest
 		}),
 		n(-332, {	-- Shields
+			un(NEVER_IMPLEMENTED, i(174310)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Blue]
+			un(NEVER_IMPLEMENTED, i(174311)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Copper]
+			un(NEVER_IMPLEMENTED, i(174312)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Dark]
+			un(NEVER_IMPLEMENTED, i(174313)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Gold]
+			un(NEVER_IMPLEMENTED, i(174314)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Pink Gold]
+			un(NEVER_IMPLEMENTED, i(174315)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Silver]
 			un(NEVER_IMPLEMENTED, i(165617)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(139439)),	-- Highkeepers' Ward
 			un(NEVER_IMPLEMENTED, i(108808)),	-- Unknown

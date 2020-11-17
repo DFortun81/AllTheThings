@@ -799,6 +799,7 @@ _.Zones =
 					},
 				}),
 				n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
+					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 33.0, 64.2, 109 },
 					["sym"] = { {"sub", "pvp_gear_base", -10003, -665, -661 }, },	-- Merciless Gladiator: Season 2 Gladiator Gear
 				}),

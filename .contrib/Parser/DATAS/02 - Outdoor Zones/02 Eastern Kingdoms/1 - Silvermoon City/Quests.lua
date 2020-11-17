@@ -335,13 +335,6 @@ _.Zones =
 						mount(34767),	-- Summon Thalassian Charger
 					},
 				}),
-				q(32330, {	-- What's in the Box?
-					["provider"] = { "n", 16802 },	-- Lor'themar Theron
-					["coords"] = { 54.0, 20.4, 110 },
-					["sourceQuest"] =	32329, 	-- Get My Results!
-					["races"] = HORDE_ONLY,
-					["lvl"] = 81,
-				}),
 			}),
 		}),
 	}),

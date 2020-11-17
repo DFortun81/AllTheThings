@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -12,7 +13,7 @@ _.Zones =
 				un(REMOVED_FROM_GAME, i(8399)),	-- Pattern: Tough Scorpid Boots (old BoE version was removed from game)
 				i(72026),	-- Pattern: Tough Scorpid Bracers
 				un(REMOVED_FROM_GAME, i(8397)),	-- Pattern: Tough Scorpid Bracers (old BoE version was removed from game)
-				i(72029),	-- Pattern: Tough Scorpid Breastplate			
+				i(72029),	-- Pattern: Tough Scorpid Breastplate
 				un(REMOVED_FROM_GAME, i(8395)),	-- Pattern: Tough Scorpid Breastplate (old BoE version was removed from game)
 				i(72025),	-- Pattern: Tough Scorpid Gloves
 				un(REMOVED_FROM_GAME, i(8398)),	-- Pattern: Tough Scorpid Gloves (old BoE version was removed from game)

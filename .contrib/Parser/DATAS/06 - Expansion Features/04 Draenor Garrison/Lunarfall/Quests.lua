@@ -469,6 +469,222 @@ _.ExpansionFeatures =
 							{ 31.1, 32.8, 582 },	-- lvl 2 garrison
 						},
 					}),
+					q(36679, {	-- Assault on Darktide Roost
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(9, {
+								["achievementID"] = 9564,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36681, {	-- Assault on Lost Veil Anzu
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36675, {	-- Assault on Magnarok
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(3, {
+								["achievementID"] = 9564,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36678, {	-- Assault on Mok'gol Watchpost
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(7, {
+								["achievementID"] = 9564,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36682, {	-- Assault on Pillars of Fate
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(11, {
+								["achievementID"] = 9564,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36649, {	-- Assault on Shattrath Harbor
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(12, {
+								["achievementID"] = 9564,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36683, {	-- Assault on Skettis
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(10, {
+								["achievementID"] = 9564,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36680, {	-- Assault on Socrethar's Rise
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(8, {
+								["achievementID"] = 9564,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36648, {	-- Assault on Stonefury Cliffs
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(2, {
+								["achievementID"] = 9564,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36677, {	-- Assault on the Broken Precipice
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(6, {
+								["achievementID"] = 9564,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36676, {	-- Assault on the Everbloom Wilds
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(5, {
+								["achievementID"] = 9564,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36685, {	-- Assault on the Heart of Shattrath
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36674, {	-- Assault on the Iron Siegeworks
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(1, {
+								["achievementID"] = 9564,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36686, {	-- Assault on the Pit
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(4, {
+								["achievementID"] = 9564,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x1000
+						},
+					}),
+					q(36684, {	-- Battle in Ashran
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							currency(823),	-- Apexis Crystal x1000
+						},
+					}),
 					q(36592, {	-- Bigger is Better
 						["sourceQuest"] = 34692,	-- Delegating on Draenor
 						["coord"] = { 41.2, 49.3, 582 },
@@ -520,6 +736,18 @@ _.ExpansionFeatures =
 					q(35988, {	-- Call of the Archmage
 						["provider"] = { "n", 83858 },	-- Khadgar's Servant
 						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(36684, {	-- Challenge at the Ring of Blood
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236165 },	-- War Planning Map
+						["coords"] = {
+							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
+							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							currency(823),	-- Apexis Crystal x1000
+						},
 					}),
 					q(36404, {	-- Clearing the Garden
 						["sourceQuest"] = 36592,	-- Bigger is Better
@@ -937,16 +1165,6 @@ _.ExpansionFeatures =
 						["coords"] = {
 							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
 							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
-						},
-						["g"] = {
-							q(36686, {	-- Assault on the Pit
-								["races"] = ALLIANCE_ONLY,
-								["isDaily"] = true,
-							}),
-							q(36679, {	-- Assault on Darktide Roost
-								["races"] = ALLIANCE_ONLY,
-								["isDaily"] = true,
-							}),
 						},
 					}),
 					q(38257, {	-- We Need a Shipwright

@@ -116,6 +116,11 @@ _.Zones =
 					["coord"] = { 48.6, 59.5, 7 },
 					["races"] = { TAUREN },
 				}),
+				q(748,   {	-- Poison Water
+					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["races"] = { TAUREN },
+					["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the current version found above
+				}),
 				q(744,   {	-- Preparation for Ceremony
 					["provider"] = { "n", 2987 },	-- Eyahn Eagletalon
 					["coord"] = { 49.6, 17.4, 7 },
@@ -274,11 +279,21 @@ _.Zones =
 					["races"] = { TAUREN },
 					["sourceQuest"] = 24441,	-- Thunderhorn Totem
 				}),
+				q(758, {	-- Thunderhorn Cleansing
+					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["races"] = { TAUREN },
+					["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the current version found above
+				}),
 				q(24441, {	-- Thunderhorn Totem
 					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.8, 7 },
 					["races"] = { TAUREN },
 					["sourceQuest"] = 24440,	-- Winterhoof Cleansing
+				}),
+				q(756, {	-- Thunderhorn Totem
+					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["races"] = { TAUREN },
+					["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the current version found above
 				}),
 				q(24524, {	-- Wildmane Cleansing
 					["provider"] = { "n", 37024 },	-- Una Wildmane
@@ -304,6 +319,11 @@ _.Zones =
 					["coord"] = { 48.6, 59.8, 7 },
 					["races"] = { TAUREN },
 					["sourceQuest"] = 20440,	-- Poison Water
+				}),
+				q(754, {	-- Winterhoof Cleansing
+					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["races"] = { TAUREN },
+					["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the current version found above
 				}),
 			}),
 		}),

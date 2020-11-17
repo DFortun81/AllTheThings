@@ -67,10 +67,4 @@ obj/
 **/desktop.ini
 *.bak
 .contrib/.source/ATT Sync Tool/bin/x86/Debug/log.txt
-.contrib/Parser/DATAS/00 - Item Database/itemDB-20201014.json
-.contrib/Parser/DATAS/00 - Item Database/itemDB-20201018.json
-.contrib/Parser/DATAS/00 - Item Database/itemDB-20201024.json
-.contrib/Parser/DATAS/00 - Item Database/oldItemDB.json.old
-.contrib/Parser/DATAS/00 - Item Database/questDB-20201014.json
-.contrib/Parser/DATAS/00 - Item Database/questDB-20201018.json
-.contrib/Parser/DATAS/00 - Item Database/questDB-20201024.json
+.contrib/Harvesters/DBs/

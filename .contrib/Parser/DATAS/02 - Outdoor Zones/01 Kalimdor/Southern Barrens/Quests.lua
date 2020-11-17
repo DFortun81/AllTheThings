@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(12, {	-- Kalimdor
@@ -748,7 +749,7 @@ _.Zones =
 						i(53160),	-- Vest of the Nightmare Rift
 						i(53159),	-- Naralex's Slippers
 						i(131379),	-- Tunic of the Nightmare Rift
-						i(156997),	-- Scepter of Naralex 
+						i(156997),	-- Scepter of Naralex
 						i(156998),	-- Cudgel of Naralex
 					},
 				}),

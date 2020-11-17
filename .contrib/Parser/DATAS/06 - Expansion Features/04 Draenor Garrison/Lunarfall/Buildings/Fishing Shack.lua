@@ -96,6 +96,13 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 127994, 1 }, },	-- Felmouth Frenzy Lunker
 							}),
+							q(36608, {	-- Finding Nat Pagle
+								["sourceQuests"] = { 36612, 36870 },	-- Luring Nat (both faction versions)
+								["providers"] = {
+									{ "n", 79917 },	-- Rak'jin
+									{ "n", 85708 },	-- Segumi
+								},
+							}),
 							q(36510, {	-- Fire Ammonite
 								["requireSkill"] = FISHING,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
@@ -129,6 +136,11 @@ _.ExpansionFeatures =
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116822, 1 }, },	-- Jawless Skulker Lunker
+							}),
+							q(36870, {	-- Luring Nat
+								["description"] = "Requires upgrading your Fishing Shack to level 3.",
+								["provider"] = { "n", 85708 },	-- Segumi
+								["races"] = ALLIANCE_ONLY,
 							}),
 							q(38406, {	-- Sea Scorpion Lunker
 								["requireSkill"] = FISHING,

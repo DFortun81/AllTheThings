@@ -16,7 +16,6 @@ _.Zones =
 				791,	-- temple of the jade serpent #1
 				792,	-- temple of the jade serpent #2
 			},
-			["lvl"] = 80,
 		}),
 	}),
 };

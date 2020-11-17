@@ -19,7 +19,7 @@ _.PVP =
 		}),
 		i(135539, {	-- Crate of Battlefield Goods 10-49	-- 9.0+
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 10-49 range.|r",
-			["lvl"] = 10,
+			["lvl"] = { 10, 49 },
 			["g"] = {
 				i(134643),	-- Auxiliary's Cuffs*
 				i(134642),	-- Auxiliary's Leggings*
@@ -27,16 +27,21 @@ _.PVP =
 				i(134641),	-- Auxiliary's Treads*
 				i(134650),	-- Rookie's Bindings
 				i(134648),	-- Rookie's Boots
+				i(134676),	-- Rookie's Helm			-- Confirmed 08 Nov 2020
 				i(134649),	-- Rookie's Pants
 				i(134647),	-- Rookie's Tunic
 				i(134654),	-- Greenhorn's Armbands
 				i(134651),	-- Greenhorn's Armor
 				i(134652),	-- Greenhorn's Footguards
+				i(134679),	-- Greenhorn's Gauntlets	-- Confirmed 09 Nov 2020
+				i(134680),	-- Greenhorn's Helm			-- Confirmed 08 Nov 2020
 				i(134653),	-- Greenhorn's Leggings
+				i(134682),	-- Greenhorn's Spaulders
 				i(134658),	-- Front-Line Armplates*
 				i(134655),	-- Front-Line Breastplate*
 				i(134657),	-- Front-Line Legguards*
 				i(134656),	-- Front-Line Warboots*
+				i(134689),	-- Recruit's Accolade
 				i(134636),	-- Recruit's Cleaver*
 				i(134635),	-- Recruit's Decapitator*
 				i(134637),	-- Recruit's Dirk*
@@ -48,7 +53,7 @@ _.PVP =
 				i(134638),	-- Recruit's Rifle
 				i(134663),	-- Recruit's Slicer*
 				i(134639),	-- Recruit's Staff*
-				i(134661),	-- Recruit's Signet		//** 4/21/19
+				i(134661),	-- Recruit's Signet			//** 4/21/19
 				i(134660),  -- Recruit's Band
 				i(134659),  -- Recruit's Ring
 			},
@@ -61,18 +66,18 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(134669)),	-- Auxiliary's Handwraps
 				un(REMOVED_FROM_GAME, i(134671)),	-- Auxiliary's Trousers
 				un(REMOVED_FROM_GAME, i(134675)),	-- Rookie's Gloves*
-				un(REMOVED_FROM_GAME, i(134676)),	-- Rookie's Helm*
+				--un(REMOVED_FROM_GAME, i(134676)),	-- Rookie's Helm*	-- Available from another crate
 				un(REMOVED_FROM_GAME, i(134677)),	-- Rookie's Legguards*
 				un(REMOVED_FROM_GAME, i(134678)),	-- Rookie's Shoulders*
-				un(REMOVED_FROM_GAME, i(134679)),	-- Greenhorn's Gauntlets
-				un(REMOVED_FROM_GAME, i(134680)),	-- Greenhorn's Helm
+				--un(REMOVED_FROM_GAME, i(134679)),	-- Greenhorn's Gauntlets	-- Available from another crate
+				--un(REMOVED_FROM_GAME, i(134680)),	-- Greenhorn's Helm	-- Available from another crate
 				un(REMOVED_FROM_GAME, i(134681)),	-- Greenhorn's Legguards
-				un(REMOVED_FROM_GAME, i(134682)),	-- Greenhorn's Spaulders
+				--un(REMOVED_FROM_GAME, i(134682)),	-- Greenhorn's Spaulders	-- Available from another crate
 				un(REMOVED_FROM_GAME, i(134683)),	-- Front-Line Gauntlets*
 				un(REMOVED_FROM_GAME, i(134685)),	-- Front-Line Greaves*
 				un(REMOVED_FROM_GAME, i(134684)),	-- Front-Line Helm*
 				un(REMOVED_FROM_GAME, i(134686)),	-- Front-Line Shoulders*
-				un(REMOVED_FROM_GAME, i(134689)),	-- Recruit's Accolade*
+				--un(REMOVED_FROM_GAME, i(134689)),	-- Recruit's Accolade*	-- Available from another crate
 				un(REMOVED_FROM_GAME, i(134687)),	-- Recruit's Barrier
 				un(REMOVED_FROM_GAME, i(134674)),	-- Recruit's Battle Staff*
 				un(REMOVED_FROM_GAME, i(134690)),	-- Recruit's Distinction

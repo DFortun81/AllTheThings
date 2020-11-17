@@ -390,7 +390,7 @@ _.Zones =
 						["provider"] = { "n", 93530 },	-- Ildine Sorrowspear
 					}),
 					q(39878, {	-- Thunder Struck
-						["sourceQuests"] = { 40048 },	-- Strings of the Puppet Masters
+						["sourceQuests"] = { 39905 },	-- Ringing True
 						["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
 					}),
 					n(-34, {	-- World Quests
@@ -570,195 +570,205 @@ _.Zones =
 						},
 					}),
 					faction(1975, {	-- Conjurer Margoss
-						["g"] = {
-							q(42911),	-- Drowned Mana (Quest)
-							i(138777, {	-- Drowned Mana
-								i(138811),	-- Brinedeep Bottom Feeder Mount
-								i(142532),	-- Crate of Bobbers: Murloc Head Toy
-								i(142531),	-- Crate of Bobbers: Squeaky Duck Toy
-								i(138810),	-- Sting Ray Pup
-								i(143842),	-- Trashy
-							}),
-						},
+						["creatureID"] = 108825,
 						["description"] = "Can be found on a floating island called Margoss' Retreat just North of Dalaran.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
 						["requireSkill"] = FISHING,
-						["creatureID"] = 108825
+						["g"] = {
+							q(42911, {	-- Drowned Mana
+								["provider"] = { "n", 108825 },	-- Conjurer Margoss
+								["lvl"] = 100,
+							}),
+							i(138811, {	-- Brinedeep Bottom Feeder (MOUNT!)
+								["cost"] = { { "i", 138777, 100 }, },	-- 100x Drowned Mana
+							}),
+							i(142532, {	-- Crate of Bobbers: Murloc Head (TOY!)
+								["cost"] = { { "i", 138777, 100 }, },	-- 100x Drowned Mana
+							}),
+							i(142531, {	-- Crate of Bobbers: Squeaky Duck (TOY!)
+								["cost"] = { { "i", 138777, 100 }, },	-- 100x Drowned Mana
+							}),
+							i(138810, {	-- Sting Ray Pup (PET!)
+								["cost"] = { { "i", 138777, 50 }, },	-- 50x Drowned Mana
+							}),
+							i(143842, {	-- Trashy (PET!)
+								["cost"] = { { "i", 138777, 50 }, },	-- 50x Drowned Mana
+							}),
+						},
 					}),
 					n(95844, {	-- Marcia Chase <Fishing Trainer & Supplies>
 						ach(10722, { 	-- The Wish Remover
-							["g"] = {
-								{
-									["criteriaID"] = 1,		-- Stellagosa's Silver Coin (Criteria)
-									["itemID"] = 138894,	-- Stellagosa's Silver Coin (Item)
-								},
-								{
-									["criteriaID"] = 2,
-								},
-								{
-									["criteriaID"] = 3,
-								},
-								{
-									["criteriaID"] = 4,
-								},
-								{
-									["criteriaID"] = 5,
-								},
-								{
-									["criteriaID"] = 6,
-								},
-								{
-									["criteriaID"] = 7,
-								},
-								{
-									["criteriaID"] = 8,
-								},
-								{
-									["criteriaID"] = 9,
-								},
-								{
-									["criteriaID"] = 10,
-								},
-								{
-									["criteriaID"] = 11,
-								},
-								{
-									["criteriaID"] = 12,
-								},
-								{
-									["criteriaID"] = 13,
-								},
-								{
-									["criteriaID"] = 14,
-								},
-								{
-									["criteriaID"] = 15,
-								},
-								{
-									["criteriaID"] = 16,
-								},
-								{
-									["criteriaID"] = 17,
-								},
-								{
-									["criteriaID"] = 18,
-								},
-								{
-									["criteriaID"] = 19,
-								},
-								{
-									["criteriaID"] = 20,
-								},
-								{
-									["criteriaID"] = 21,
-								},
-								{
-									["criteriaID"] = 22,
-								},
-								{
-									["criteriaID"] = 23,
-								},
-								{
-									["criteriaID"] = 24,
-								},
-								{
-									["criteriaID"] = 25,
-								},
-								{
-									["criteriaID"] = 26,
-								},
-								{
-									["criteriaID"] = 27,
-								},
-								{
-									["criteriaID"] = 28,
-								},
-								{
-									["criteriaID"] = 29,
-								},
-								{
-									["criteriaID"] = 30,
-								},
-								{
-									["criteriaID"] = 31,
-								},
-								{
-									["criteriaID"] = 32,
-								},
-								{
-									["criteriaID"] = 33,
-								},
-								{
-									["criteriaID"] = 34,
-								},
-								{
-									["criteriaID"] = 35,
-								},
-								{
-									["criteriaID"] = 36,
-								},
-								{
-									["criteriaID"] = 37,
-								},
-								{
-									["criteriaID"] = 38,
-								},
-								{
-									["criteriaID"] = 39,
-								},
-								{
-									["criteriaID"] = 40,
-								},
-								{
-									["criteriaID"] = 41,
-								},
-								{
-									["criteriaID"] = 42,
-								},
-								{
-									["criteriaID"] = 43,
-								},
-								{
-									["criteriaID"] = 44,
-								},
-								{
-									["criteriaID"] = 45,
-								},
-								{
-									["criteriaID"] = 46,
-								},
-								{
-									["criteriaID"] = 47,
-								},
-								{
-									["criteriaID"] = 48,
-								},
-								{
-									["criteriaID"] = 49,
-								},
-								{
-									["criteriaID"] = 50,
-								},
-								{
-									["criteriaID"] = 51,
-								},
-								{
-									["criteriaID"] = 52,
-								},
-								{
-									["criteriaID"] = 53,
-								},
-								{
-									["criteriaID"] = 54,
-								},
-								{
-									["criteriaID"] = 55,
-								},
-								{
-									["criteriaID"] = 56,
-								},
-							},
 							["description"] = "You need to use the special lures sold by the trainer to earn this achievement.",
 							["requireSkill"] = FISHING,
+							["g"] = {
+								crit(1, {	-- Stellagosa's Silver Coin
+									["itemID"] = 138894,	-- Stellagosa's Silver Coin (Item)
+								}),
+								crit(2, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(3, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(4, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(5, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(6, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(7, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(8, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(9, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(10, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(11, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(12, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(13, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(14, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(15, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(16, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(17, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(18, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(19, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(20, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(21, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(22, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(23, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(24, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(25, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(26, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(27, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(28, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(29, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(30, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(31, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(32, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(33, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(34, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(35, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(36, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(37, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(38, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(39, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(40, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(41, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(42, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(43, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(44, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(45, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(46, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(47, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(48, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(49, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(50, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(51, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(52, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(53, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(54, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(55, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+								crit(56, {	-- TODO
+									--["itemID"] = ,	-- TODO (Item)
+								}),
+							},
 						}),
 					}),
 					q(41010, {	-- Fish Frenzy

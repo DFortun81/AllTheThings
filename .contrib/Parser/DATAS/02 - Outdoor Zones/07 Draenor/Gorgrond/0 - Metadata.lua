@@ -16,7 +16,6 @@ _.Zones =
 				548,    -- Cragplume Cauldron
 				549,	-- Cragplume Cauldron
 			},
-			["lvl"] = 92,
 		}),
 	}),
 };

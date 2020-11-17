@@ -413,6 +413,7 @@ _.Zones =
 				}),
 				q(44760, {	-- Blood On Your Hands
 					["provider"] = { "n", 115264 },	-- Illnea Bloodthorn
+					["u"] = REMOVED_FROM_GAME,	-- presumably, was unable to find it on a character fresh to legion and on a level 50.  may be available under random specific circumstances (45 but not unlocked WQs, not above 45, etc) but LIKELY removed
 				}),
 				q(47025, {	-- Blood: Aid of the Illidari
 					["sourceQuests"] = {
@@ -859,14 +860,24 @@ _.Zones =
 					["provider"] = { "n", 105602 },	-- Vindicator Boros
 				}),
 				q(41009, {	-- Hunter to Hunter
+				--	these are possibly tied to specs?  this one is probably for BM hunters, quest text references Titanstrike
 					["sourceQuests"] = { 40419 },	-- Rescue Mission
-					["classes"] = { HUNTER },
+					["altQuests"] = { 40952, 41008 },	-- Hunter to Hunter
 					["provider"] = { "n", 106879 },	-- Grif Wildheart
+					["classes"] = { HUNTER },
 				}),
 				q(40952, {	-- Hunter to Hunter
+				--	probably for MM hunters, quest text references Thas'dorah
 					["sourceQuests"] = { 40419 },	-- Rescue Mission
+					["altQuests"] = { 41009, 41008 },	-- Hunter to Hunter
+					["provider"] = { "n", 102570 },	-- Vereesa Windrunner
 					["classes"] = { HUNTER },
-					["provider"] = { "n", 102570 },	-- Grif Wildheart
+				}),
+				q(41008, {	-- Hunter to Hunter
+				--	TODO: verify whether or not this version actually exists so we can add provider/coords / figre out if these are truly spec-specific.  this one is probably for surv hunters, quest text references Talonclaw
+					["sourceQuests"] = { 40419 },	-- Rescue Mission
+					["altQuests"] = { 41009, 40952 },	-- Hunter to Hunter
+					["classes"] = { HUNTER },
 				}),
 				q(44821, {	-- In Dire Need
 					["sourceQuests"] = { 44782 },	-- Away From Prying Eyes
@@ -1564,9 +1575,11 @@ _.Zones =
 				}),
 				q(46810, {	-- To the Forge It Goes...
 					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,	-- PVP wins no longer reward the quest item
 				}),
 				q(46946, {	-- To the Forge It Goes...
 					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,	-- PVP wins no longer reward the quest item
 				}),
 				q(39987, {	-- Trail of Echoes
 					["sourceQuests"] = { 39986 },	-- Magic Message

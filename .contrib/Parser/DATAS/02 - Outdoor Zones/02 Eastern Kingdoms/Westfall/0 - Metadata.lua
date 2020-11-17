@@ -13,7 +13,6 @@ _.Zones =
 				54,		-- Jangolode Mine
 				55,		-- PLEASE ADD NAME OF MAP, LOVE OXLOTUS
 			},
-			["lvl"] = 10,
 		}),
 	}),
 };

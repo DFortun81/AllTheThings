@@ -395,15 +395,29 @@ _.PVP =
 					n(80882, {	-- Crafticus Mindbender <Stormshield Quartermaster>
 						["coord"] = { 44.2, 74.0, 1478 },
 						["races"] = ALLIANCE_ONLY,
+						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
-							i(137642, {	-- Mark of Honor
-								i(116776),	-- Pale Thorngrazer
-								i(115501),	-- Kowalski's Music Box
-								i(116396),	-- LeBlanc's Recorder (A)
-								i(114126),	-- Disposable Pocket Flying Machine
-								i(114125),	-- Preserved Discombobulator Ray
-								i(115511),	-- Bizmo's Big Bang Boom Bomb
-								i(115513),	-- Wrynn's Vanguard Battle Standard
+							i(116776, {	-- Pale Thorngrazer
+								["cost"] = {
+									{ "i", 137642, 100 },	-- 100x Mark of Honor
+									{ "g", 45000000 },		-- 4500g
+								},
+							}),
+							i(115501, {	-- Kowalski's Music Box
+								["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+							}),
+							i(116396, {	-- LeBlanc's Recorder (A)
+								["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+							}),
+							i(114126),	-- Disposable Pocket Flying Machine
+							i(114125, {	-- Preserved Discombobulator Ray
+								["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							}),
+							i(115511, {	-- Bizmo's Big Bang Boom Bomb
+								["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							}),
+							i(115513, {	-- Wrynn's Vanguard Battle Standard
+								["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
 							}),
 							i(115517),	-- Wrynn's Vanguard Tabard
 						},
@@ -411,19 +425,38 @@ _.PVP =
 					n(85115, {	-- Dazzerian <Warspear Quartermaster>
 						["coord"] = { 48.4, 23.8, 1478 },
 						["races"] = HORDE_ONLY,
+						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
-							i(137642, {	-- Mark of Honor
-								i(116775),	-- Breezestrider Stallion
-								i(115501),	-- Kowalski's Music Box
-								i(115505),	-- LeBlanc's Recorder (H)
-								i(115500),	-- Disposable Pocket Flying Machine
-								i(114125),	-- Preserved Discombobulator Ray
-								i(115512),	-- Gazlowe's Gargantuan Grenade
-								i(115514),	-- Vol'jin's Spear Battle Standard
+							i(116775, {	-- Breezestrider Stallion
+								["cost"] = {
+									{ "i", 137642, 100 },	-- 100x Mark of Honor
+									{ "g", 45000000 },		-- 4500g
+								},
+							}),
+							i(115501, {	-- Kowalski's Music Box
+								["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+							}),
+							i(115505, {	-- LeBlanc's Recorder (H)
+								["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+							}),
+							i(115500),	-- Disposable Pocket Flying Machine
+							i(114125, {	-- Preserved Discombobulator Ray
+								["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							}),
+							i(115512, {	-- Gazlowe's Gargantuan Grenade
+								["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							}),
+							i(115514, {	-- Vol'jin's Spear Battle Standard
+								["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
 							}),
 							i(115518),	-- Vol'jin's Spear Tabard
 						},
 					}),
+				}),
+				n(ZONEDROPS, {
+					i(118333),	-- Universal Language Compensator [Part 1 of 3]
+					i(118334),	-- Universal Language Filter [Part 2 of 3]
+					i(118335),	-- Universal Language Repository [Part 3 of 3]
 				}),
 			},
 		}),

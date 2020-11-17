@@ -1394,7 +1394,12 @@ _.Zones =
 					},
 				}),
 				q(30625, {	-- Students No More
-					["sourceQuests"] = { 30622 },	-- The Swarm Begins
+					["sourceQuests"] = {
+						30624,	-- It Does You No Good In The Keg (A)
+						30653,	-- It Does You No Good In The Keg (H)
+						30623,	-- The Mantidote
+						30622,	-- The Swarm Begins
+					},
 					["coord"] = { 11.6, 49.5, 376 },
 					["provider"] = { "n", 57198 },	-- Guard Captain Oakenshield
 				}),
@@ -1632,12 +1637,13 @@ _.Zones =
 				}),
 				q(30622, {	-- The Swarm Begins
 					["sourceQuests"] = {
-						30078,	-- Cleaning House
 						30376,	-- Hope Springs Eternal (breadcrumb, neutral)
-						30117,	-- Stoneplow Thirsts (is this a breadcrumb literally who can say)
-						29990,	-- Training and Discipline
 						30360,	-- Warn Stoneplow (breadcrumb, A)
 						30241,	-- Warn Stoneplow (breadcrumb, H)
+						30174,	-- For Family
+						30273,	-- In the House of the Red Crane
+						30117,	-- Stoneplow Thirsts
+						29990,	-- Training and Discipline
 					},
 					["provider"] = { "n", 56720 },	-- Loon Mai
 					["coord"] = { 19.5, 56.9, 376 },

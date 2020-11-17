@@ -66,6 +66,7 @@ _.Craftables =
 								i(103670), 	-- Lil'Bling Pet
 								i(15996), 	-- Lifelike Mechanical Toad Pet
 								i(11826), 	-- Lil' Smoky Pet
+								i(118741), 	-- Mechanical Scorpid
 								i(4401), 	-- Mechanical Squirrel Box Pet
 								i(11825), 	-- Pet Bombling
 								i(115483), 	-- Sky-Bo Pet

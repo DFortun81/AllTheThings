@@ -2,16 +2,14 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
--- TODO: formatting
 _.Holidays =
 {
-	{	-- Free T-Shirt Day
-		["holidayID"] = 2827082,	-- Free T-Shirt Day
-		["u"] = 22,	-- Micro-Holiday Filter
+	holiday(2827082, {	-- Free T-Shirt Day
 		["maps"] = {
 			85,	-- Orgrimmar
 			84,	-- Stormwind
 		},
+		["u"] = 22,	-- Micro-Holiday Filter
 		["g"] = {
 			n(RARES, {
 				n(145826, {	-- Orgrimmar Entertainer
@@ -144,5 +142,5 @@ _.Holidays =
 				}),
 			}),
 		},
-	},
+	}),
 };

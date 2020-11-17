@@ -2,11 +2,9 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
--- TODO: fromatting
 _.WorldEvents =
 {
-	{	-- 12th Anniversary
-		["npcID"] = -5361,	-- 12th Anniversary
+	n(-5361, {	-- 12th Anniversary
 		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
 		["maps"] = {
 			85,	-- Orgrimmar
@@ -14,143 +12,82 @@ _.WorldEvents =
 			13,	-- Stormwind City
 		},
 		["g"] = {
-			{	-- 12th Anniversary
-				["achievementID"] = 10741,	-- 12th Anniversary
-				["u"] = 36,					-- WoW Anniversary Filter
-			},
-			{	-- Mailbox
-				["npcID"] = -297,	-- Mailbox
-				["g"] = {
-					{	-- Anniversary Gift
-						["itemID"] = 139284,	-- Anniversary Gift
-						["u"] = 36,				-- WoW Anniversary Filter
-						["g"] = {
-							{	-- Celebration Package
-								["itemID"] = 139285,	-- Celebration Package
-								["u"] = 36,				-- WoW Anniversary Filter
-							},
-							{	-- Letter from the Timewalker [Horde]
-								["itemID"] = 139410,	-- Letter from the Timewalker
-								["questID"] = 43472,	-- The Historians
-								["races"] = HORDE_ONLY,
-								["u"] = 31,				-- WoW Anniversary Filter
-								["isYearly"] = true,	 -- Resets each year even if you did it.
-							},
-							{	-- Letter from the Timewalker [Alliance]
-								["itemID"] = 139409,	-- Letter from the Timewalker
-								["questID"] = 43471,	-- The Historians
-								["races"] = ALLIANCE_ONLY,
-								["u"] = 31,				-- WoW Anniversary Filter
-								["isYearly"] = true,	 -- Resets each year even if you did it.
-							},
-						},
-					},
-				},
-			},
-			n(QUESTS, {
-				["g"] = {
-					{	-- A Time to Reflect
-						["questID"] = 43461,	-- A Time to Reflect
-						["provider"] = { "n", 110035 },		-- Historian Jupa
-						["isDaily"] = true,
-						["coords"] = {
-							{ 36.6, 74.6, 85 },
-						},
-						["races"] = HORDE_ONLY,
-						--Note!! See Master List of quiz answers at the end in a better format
-						--Was going to list it in description, but too many and terrible looking
-					},
-					{	-- A Time to Reflect
-						["questID"] = 43323,	-- A Time to Reflect
-						["provider"] = { "n", 110034 },		-- Historian Llore
-						["isDaily"] = true,
-						["coords"] = {
-							{ 84.61, 25.01, 13 },
-						},
-						["races"] = ALLIANCE_ONLY,
-						--Note!! See Master List of quiz answers at the end in a better format
-						--Was going to list it in description, but too many and terrible looking
-					},
-				},
+			ach(10741, {	-- 12th Anniversary
+				["u"] = 36,	-- WoW Anniversary [Removed]
 			}),
-			n(VENDORS, {
-				["g"] = {
-					{	-- Historian Jupa [Horde]
-						["npcID"] = 110035,		-- Historian Jupa
+			n(-297, bubbleDown({ ["u"] = 36, }, {	-- Mailbox
+				i(139284, {	-- Anniversary Gift
+					i(139285),	-- Celebration Package
+					i(139410, {	-- Letter from the Timewalker [Horde]
+						["questID"] = 43472,	-- The Historians
 						["races"] = HORDE_ONLY,
-						["currencyID"] = 1166,	-- Timewarped Badge
-						["coords"] = {
-							{ 36.6, 74.6, 85 },
-						},
-						["g"] = {
-							{	-- Corgi Pup
-								["itemID"] = 136925,	-- Corgi Pup
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- Celebration Wand - Gnoll
-								["itemID"] = 128506,	-- Celebration Wand - Gnoll
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- Celebration Wand - Murloc
-								["itemID"] = 128505,	-- Celebration Wand - Murloc
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- Exquisite Costume Set: "Edwin VanCleef"
-								["itemID"] = 128510,	-- Exquisite Costume Set: "Edwin VanCleef"
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-								["itemID"] = 128507,	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-								["u"] = 31,				-- WoW Anniversary Filter
-								["g"] = {
-									{	-- Did Someone Say...?
-										["achievementID"] = 10335,	-- Did Someone Say...?
-										["u"] = 31,				-- WoW Anniversary Filter
-									},
-								},
-							},
-						},
-					},
-					{	-- Historian Llore [Alliance]
-						["npcID"] = 110034,		-- Historian Llore
+						["isYearly"] = true,	 -- Resets each year even if you did it.
+					}),
+					i(139409, {	-- Letter from the Timewalker [Alliance]
+						["questID"] = 43471,	-- The Historians
 						["races"] = ALLIANCE_ONLY,
-						["currencyID"] = 1166,	-- Timewarped Badge
-						["coords"] = {
-							{ 84.61, 25.01, 13 },
-						},
-						["g"] = {
-							{	-- Corgi Pup
-								["itemID"] = 136925,	-- Corgi Pup
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- Celebration Wand - Gnoll
-								["itemID"] = 128506,	-- Celebration Wand - Gnoll
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- Celebration Wand - Murloc
-								["itemID"] = 128505,	-- Celebration Wand - Murloc
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- Exquisite Costume Set: "Edwin VanCleef"
-								["itemID"] = 128510,	-- Exquisite Costume Set: "Edwin VanCleef"
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-								["itemID"] = 128507,	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-								["u"] = 31,				-- WoW Anniversary Filter
-								["g"] = {
-									{	-- Did Someone Say...?
-										["achievementID"] = 10335,	-- Did Someone Say...?
-										["u"] = 31,				-- WoW Anniversary Filter
-									},
-								},
-							},
-						},
+						["isYearly"] = true,	 -- Resets each year even if you did it.
+					}),
+				}),
+			})),
+			n(QUESTS, bubbleDown({ ["u"] = 31, }, {
+				q(43461, {	-- A Time to Reflect
+					["provider"] = { "n", 110035 },		-- Historian Jupa
+					["isDaily"] = true,
+					["coords"] = {
+						{ 36.6, 74.6, 85 },
 					},
-				},
-			}),
+					["races"] = HORDE_ONLY,
+					-- Note!! See Master List of quiz answers at the end in a better format
+					-- Was going to list it in description, but too many and terrible looking
+				}),
+				q(43323, {	-- A Time to Reflect
+					["provider"] = { "n", 110034 },		-- Historian Llore
+					["isDaily"] = true,
+					["coords"] = {
+						{ 84.61, 25.01, 13 },
+					},
+					["races"] = ALLIANCE_ONLY,
+					-- Note!! See Master List of quiz answers at the end in a better format
+					-- Was going to list it in description, but too many and terrible looking
+				}),
+			})),
+			n(VENDORS, bubbleDown({ ["u"] = 31, }, {
+				n(110035, {	-- Historian Jupa [Horde]
+					["races"] = HORDE_ONLY,
+					["currencyID"] = 1166,	-- Timewarped Badge
+					["coords"] = {
+						{ 36.6, 74.6, 85 },
+					},
+					["g"] = {	-- WoW Anniversary
+						i(136925),	-- Corgi Pup
+						i(128506),	-- Celebration Wand - Gnoll
+						i(128505),	-- Celebration Wand - Murloc
+						i(128510),	-- Exquisite Costume Set: "Edwin VanCleef"
+						i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
+							ach(10335),	-- Did Someone Say...?
+						}),
+					},
+				}),
+				n(110034, {	-- Historian Llore [Alliance]
+					["races"] = ALLIANCE_ONLY,
+					["currencyID"] = 1166,	-- Timewarped Badge
+					["coords"] = {
+						{ 84.61, 25.01, 13 },
+					},
+					["g"] = {	-- WoW Anniversary
+						i(136925),	-- Corgi Pup
+						i(128506),	-- Celebration Wand - Gnoll
+						i(128505),	-- Celebration Wand - Murloc
+						i(128510),	-- Exquisite Costume Set: "Edwin VanCleef"
+						i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
+							ach(10335),	-- Did Someone Say...?
+						}),
+					},
+				}),
+			})),
 		},
-	},
+	}),
 };
 --[[
 Quiz Answers:

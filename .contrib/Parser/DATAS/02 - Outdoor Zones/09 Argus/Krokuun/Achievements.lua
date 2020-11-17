@@ -24,7 +24,7 @@ _.Zones =
 					}),
 					o(276489, {	-- Legion Tower Chest
 						["questID"] = 48885,
-						["description"] = "You will need |cFFFFD700Lightforged Warframe|r to unblock the rocks.",
+						["description"] = "You will need |cFFFFD700Light's Judgement|r to unblock the rocks.",
 						["icon"] = "Interface\\Icons\\inv_misc_treasurechest04d",
 						["coord"] = { 62.8, 37.6, 830 },
 						["groups"] = {
@@ -49,7 +49,7 @@ _.Zones =
 					}),
 					o(276491, {	-- Lost Krokul Chest
 						["questID"] = 48886,
-						["description"] = "You will need |cFFFFD700Lightforged Warframe|r to unblock the rocks.",
+						["description"] = "You will need |cFFFFD700Light's Judgement|r to unblock the rocks.",
 						["icon"] = "Interface\\Icons\\inv_misc_treasurechest04d",
 						["coord"] = { 48.5, 58.9, 830 },
 						["groups"] = {

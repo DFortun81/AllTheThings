@@ -73,12 +73,19 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "n", 58920 },	-- Kun Autumnlight
 				}),
-				q(31378, {	-- Challenge at the Temple of the Red Crane
+				q(31378, {	-- Challenge at the Temple of the Red Crane (A)
 					["sourceQuests"] = { 31512 },	-- A Witness to History
 					["provider"] = { "n", 64032 },	-- Sage Whiteheart
 					["isDaily"] = true,
 					["coord"] = { 84.6, 63.6, 390 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31379, {	-- Challenge At The Temple of the Red Crane (H)
+					["sourceQuests"] = { 31511 },	-- A Witness to History
+					["provider"] = { "n", 64001 },	-- Sage Lotusbloom
+					["isDaily"] = true,
+					["coord"] = { 62.7, 23.3, 390 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(31382, {	-- Defense At Niuzao Temple
 					["sourceQuests"] = { 31512 },	-- A Witness to History
