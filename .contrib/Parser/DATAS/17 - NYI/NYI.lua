@@ -1609,6 +1609,17 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(172662)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(172851)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(172855)),	-- Unknown
+			un(NEVER_IMPLEMENTED, i(158500)),	-- [Salt Starched Shawl]
+			un(NEVER_IMPLEMENTED, i(158552)),	-- [Drape of the Golden City]
+			un(NEVER_IMPLEMENTED, i(163346)),	-- [Warfront Gear Drape]
+			un(NEVER_IMPLEMENTED, i(163349)),	-- [7th Legionnaire's Chain Cloak]
+			un(NEVER_IMPLEMENTED, i(163350)),	-- [7th Legionnaire's Cloak]
+			un(NEVER_IMPLEMENTED, i(163352)),	-- [7th Legionnaire's Steel Cloak]
+			un(NEVER_IMPLEMENTED, i(163359)),	-- [Warfront Gear Cape]
+			un(NEVER_IMPLEMENTED, i(163363)),	-- [Warfront Gear Cape]
+			un(NEVER_IMPLEMENTED, i(163369)),	-- [Honorbound Centurion's Greatcloak]
+			un(NEVER_IMPLEMENTED, i(163370)),	-- [Warfront Gear Drape]
+			un(NEVER_IMPLEMENTED, i(169822)),	-- Flowing Cloak
 			un(NEVER_IMPLEMENTED, i(174857)),	-- Hidden Cloak (Vulpera?)
 			un(NEVER_IMPLEMENTED, i(163371)),	-- Honorbound Centurions Cloak
 			un(NEVER_IMPLEMENTED, i(163356)),	-- Honorbound Artificier Drape (different version used with locked to specific classes)
@@ -1895,6 +1906,9 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(142378)),	-- zzz old vial of ancient mana
 			un(NEVER_IMPLEMENTED, i(17347)),	-- unknown
 			un(NEVER_IMPLEMENTED, i(17409)),	-- Encrusted Crystal Fragment
+			un(NEVER_IMPLEMENTED, i(169696)),	-- reuse me [mtmm]]
+			un(NEVER_IMPLEMENTED, i(169702)),	-- reuse me [mtmm]]
+			un(NEVER_IMPLEMENTED, i(169703)),	-- reuse me [mtmm]]
 			un(NEVER_IMPLEMENTED, i(20883)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(20936)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(20937)),	-- Unknownwwwwwwwwwww
@@ -3748,6 +3762,12 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(150592)),	-- Justicar's Hammer
 		}),
 		n(-334, {	-- One-Handed Axes
+			un(NEVER_IMPLEMENTED, i(174298)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - blue
+			un(NEVER_IMPLEMENTED, i(174299)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - copper
+			un(NEVER_IMPLEMENTED, i(174300)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - dark
+			un(NEVER_IMPLEMENTED, i(174301)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - gold
+			un(NEVER_IMPLEMENTED, i(174302)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - silver
+			un(NEVER_IMPLEMENTED, i(174303)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - pink gold
 			un(NEVER_IMPLEMENTED, i(68050)),	-- Shatterscale Mightfish
 			un(NEVER_IMPLEMENTED, i(49456)),	-- Will of the Earth
 			un(NEVER_IMPLEMENTED, i(50251)),	-- Unknown
@@ -3851,6 +3871,12 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(140420)),	-- Battering Tempest
 		}),
 		n(-332, {	-- Shields
+			un(NEVER_IMPLEMENTED, i(174310)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Blue]
+			un(NEVER_IMPLEMENTED, i(174311)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Copper]
+			un(NEVER_IMPLEMENTED, i(174312)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Dark]
+			un(NEVER_IMPLEMENTED, i(174313)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Gold]
+			un(NEVER_IMPLEMENTED, i(174314)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Pink Gold]
+			un(NEVER_IMPLEMENTED, i(174315)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Silver]
 			un(NEVER_IMPLEMENTED, i(165617)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(139439)),	-- Highkeepers' Ward
 			un(NEVER_IMPLEMENTED, i(108808)),	-- Unknown

@@ -6,7 +6,7 @@ local i = function(itemID)
 end
 
 -- Consumables
-	-- BC
+-- BC
 i(23379);	-- Cinder Bracers
 i(23529);	-- Adamantite Sharpening Stone
 i(23764);	-- Adamantite Scope
@@ -258,6 +258,22 @@ i(15871);	-- Truesilver Skeleton Key
 i(15872);	-- Arcanite Skeleton Key
 i(18262);	-- Elemental Sharpening Stone
 i(18283);	-- Biznicks 247x128 Accurascope
+
+-- Bfa Consumables
+i(162107);	-- [Makeshift Azerite Detector]
+i(162108);	-- [Rough-hooked Tidespray Linen]
+i(162109);	-- [Storm Silver Spurs]
+i(162110);	-- [Disenchanting Rod]
+i(162111);	-- [Monelite Fish Finder]
+i(162111);	-- [Kaleidoscopic Lens]
+
+-- Bfa Quest Items
+i(169473);	-- Dormant Scale of the Blue Aspect
+
+
+-- Legion Consumables
+
+
 
 -- Grey
 i(158931);	-- Shiny Object
