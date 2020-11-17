@@ -55,7 +55,8 @@ _.PetJournal =
 		p(2405, {			-- Corlain Falcon
 			["races"] = ALLIANCE_ONLY,
 		}),
-		p(3065),			-- Courage
+		--TODO: probably changed, this pet returns nil from C_PetJournal.GetNumCollectedInfo
+		--p(3065),			-- Courage
 		p(1997),			-- Crackers
 		p(507),				-- Crested Owl
 		p(2567),			-- Crimson Bat Pup
@@ -140,7 +141,7 @@ _.PetJournal =
 		p(1469),			-- Junglebeak
 		p(1597),			-- Kaliri Hatchling
 		p(2585),			-- Kor'thik Swarmling
-		p(3063),			-- Larion Pouncer
+		-- TODO: wrong speciesID p(3063),			-- Larion Pouncer
 		p(2390),			-- Leafy Flutterwing
 		p(2552),			-- Leatherwing Screecher
 		p(1713),			-- Long-Eared Owl

@@ -7950,6 +7950,8 @@ end
 (function()
 local meta = {
 	__index = function(t, key)
+--		if C_PetJournal.GetNumCollectedInfo(key) == nil then
+--			print("C_PetJournal.GetNumCollectedInfo returns nil on speciesID:", key);
 		if C_PetJournal.GetNumCollectedInfo(key) > 0 then
 			rawset(t, key, 1);
 			return 1;

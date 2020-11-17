@@ -887,10 +887,11 @@ pet(166455, 2550);	-- Zur'aj the Depleted
 -----------------
 -- PATCH 9.0.1 --
 -----------------
+
 pet(180640, 2911);	-- Amber Glitterwing
 --pet(, 3051);	-- Animated Cruor
 pet(180587, 2893);	-- Animated Tome
-pet(184221, 3054);	-- Archivist's Quill
+-- TODO: wrong speciesID pet(184221, 3054);	-- Archivist's Quill
 pet(183193, 3030);	-- Ashen Chomper
 --pet(183853, );	-- Baby Sinfall Screecher
 pet(181268, 2958);	-- Backbone
@@ -912,7 +913,7 @@ pet(181259, 2950);	-- Clutch
 pet(180860, 2936);	-- Copperfur Kit // Orange Vulpin?
 pet(181265, 2955);	-- Corpselouse Larva
 pet(181168, 2945);	-- Corpulent Bonetusk
-pet(184400, 3065);	-- Courage
+-- TODO: wrong speciesID pet(184400, 3065);	-- Courage
 pet(180593, 2899);	-- Court Messenger Scroll // Court Messenger
 pet(180602, 2903);	-- Crimson Dredwing Pup
 pet(183859, 2900);	-- Dal's Courier Badge // Dal
@@ -949,13 +950,13 @@ pet(180871, 2941);	-- Indigo
 pet(181270, 2960);	-- Invertebrate Oil
 pet(183515, 3045);	-- Iridescent Ooze
 --pet(183601, );	-- Jiggles
-pet(184401, 3063);	-- Larion Pouncer
+-- TODO: wrong speciesID pet(184401, 3063);	-- Larion Pouncer
 pet(183196, 3035);	-- Lavender Nibbler
 pet(182662, 3017);	-- Leafadore
 pet(180586, 2892);	-- Lightbinders // Bound Lightspawn
-pet(184397, 3062);	-- Lost Featherling
+-- TODO: wrong speciesID pet(184397, 3062);	-- Lost Featherling
 pet(180590, 2895);	-- Lost Soul
---pet(3066);	-- Lucy
+-- TODO: wrong speciesID pet(3066);	-- Lucy
 pet(181171, 2947);	-- Luminous Webspinner
 pet(183191, 3029);	-- Maw Crawler
 pet(183194, 3033);	-- Maw Stalker
@@ -991,10 +992,10 @@ pet(181173, 2949);	-- Skittering Venomspitter
 pet(181271, 2961);	-- Sludge Feeler
 pet(183623, 3044);	-- Spinemaw Larva
 pet(180872, 2942);	-- Spirited Skyfoal
-pet(184509, 3067);	-- Spriggan Trickster
+-- TODO: wrong speciesID pet(184509, 3067);	-- Spriggan Trickster
 pet(180637, 2914);	-- Starry Dreamfoal
 pet(182664, 3019);	-- Stemmins
-pet(184398, 3061);	-- Steward Featherling
+-- TODO: wrong speciesID pet(184398, 3061);	-- Steward Featherling
 pet(180601, 3006);	-- Stonewing Dredwing Pup // Stoneskin Dredwing Pup
 pet(183855, 3012);	-- Stony's Infused Ruby // Stony
 pet(181269, 2959);	-- Suspended Corpse
@@ -1014,7 +1015,7 @@ pet(180603, 2904);	-- Violet Dredwing Pup
 pet(180867, 2939);	-- Wader Chick
 pet(180838, 2943);	-- Wild Etherwyrm
 pet(180636, 2915);	-- Willowbreeze
-pet(184512, 3079);	-- Winterleaf Spriggan
+-- TODO: wrong speciesID pet(184512, 3079);	-- Winterleaf Spriggan
 pet(181267, 2957);	-- Writhing Spine
 
 -- pets in journal
