@@ -42,8 +42,6 @@ _.Zones =
 						}),
 						o(213651, { 	-- Equipment Locker
 							["coord"] = { 43.7, 92.3, 418 },
-						--	["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
-						--	["modelScale"] = 1.5,
 							["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 							["questID"] = 31410,
 							["description"] = "On the bottom level of the ship — you will have to go down two sets of stairs.",
