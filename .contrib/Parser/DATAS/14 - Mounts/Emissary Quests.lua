@@ -39,11 +39,5 @@ _.Mounts =
 		i(180413),	-- Shadeleaf Runestag
 		i(180414),	-- Wakener's Runestag
 		i(180415),	-- Winterborn Runestag
-		--unsorted
-		--Adventures
-		i(183617),	-- Chittering Animite
-		i(183052),	-- Darkwarren Hardshell
-		i(183618),	-- Highwind Darkmane
-		i(183615),	-- Warstitched Darkhound
 	}),
 };

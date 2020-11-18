@@ -7,6 +7,14 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1648, {	-- The Maw
 			n(RARES, {
+				n(174827, {	-- Gorged Shadehound
+				--	["coord"] = { 27.3, 17.3, 1648 }, 
+				--	["questID"] = 61125,	-- 
+				--	["isDaily"] = true,
+					["g"] = {
+						i(181819),	-- Marrowfang's Reins
+					},
+				}),
 				n(171316, {	-- Malevolent Stygia
 					["coord"] = { 27.3, 17.3, 1648 }, 
 					["questID"] = 61125,	-- Malevolent Stygia

@@ -64,7 +64,9 @@ _.Zones =
 					["coord"] = { 31.4, 35.4, 1536 },
 					--["questID"] = ,
 					["isDaily"] = true,
+					["description"] = "Requires to be a Necrolords Covenant & channel anima to House of Constructs to summon him.",
 					["g"] = {
+						i(182080),	-- Predatory Plagueroc
 						ach(14308, crit(19)),	-- Adventurer of Maldraxxus / Gieger <Experimental Construct>
 					},
 				}),

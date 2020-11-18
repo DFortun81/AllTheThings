@@ -32,6 +32,7 @@ _.Mounts =
 		}),
 		i(166724),		-- Bruce
 		i(168408),		-- Child of Torcali
+		i(183617),		-- Chittering Animite
 		i(128311),		-- Coalfist Gronnling
 		i(32859),		-- Cobalt Netherwing Drake
 		i(52200),		-- Crimsom Deathcharger
@@ -39,6 +40,7 @@ _.Mounts =
 			["classes"] = { PALADIN },
 			["races"] = { DARKIRON },
 		}),
+		i(183052),		-- Darkwarren Hardshell
 		mount(270564, {	-- Dawnforge Ram
 			["classes"] = { PALADIN },
 			["races"] = { DWARF },
@@ -86,6 +88,7 @@ _.Mounts =
 		i(143504, {		-- Highlord's Vigilant Charger
 			["classes"] = { PALADIN },
 		}),
+		i(183618),		-- Highwind Darkmane
 		i(142224, {		-- High Priest's Lightsworn Seeker
 			["classes"] = { PRIEST },
 		}),
@@ -147,6 +150,7 @@ _.Mounts =
 		i(32862),		-- Violet Netherwing Drake
 		i(152901),		-- Violet Spellwing
 		i(137580),		-- Viridian Sharptalon
+		i(183615),		-- Warstitched Darkhound
 		i(163128), 		-- War-Torn Reins of the Undercity Plaguebat
 		mount(13819, {	-- Warhorse
 			["classes"] = { PALADIN },
