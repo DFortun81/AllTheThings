@@ -2877,13 +2877,6 @@ _.HiddenQuestTriggers =
 		-----------------
 		-- SHADOWLANDS --
 		-----------------
-		-- Pre-launch event
-		q(60490),	-- Triggers after completing "Advancing the Effort" and unlocking Icecrown dailies. Also triggered when starting the new phase at Ironwall Rampart. Maybe it's the zone story daily progression tracker?
-		q(60541),	--
-		q(60511),	-- Icecrown story - Advancing the effort (phase 2?). triggered after completing "Only Shadows Remain"
-		q(62808),	-- triggered when logging into a previously-120 character
-		q(62480),	-- triggered along with the Nathanos Blightcaller world quest (for killing Nathanos)
-
 		-- Exile's Reach
 		q(58418),	-- Triggers shortly after login. Possibly some kind of indicator for the account having done it at least once per faction?
 		q(54927),	-- Triggers after the cinematic. You can't move until this quest triggers
@@ -2908,5 +2901,12 @@ _.HiddenQuestTriggers =
 		q(62803),	-- Triggered after going to Orgrimmar for An End to Beginnings
 		q(63012),	-- Triggered after talking to Jaina at docks for The Nation of Kul Tiras
 		q(62912),	-- Triggered when flying from Exile's Reach (as Alliance if it matters)
+
+		-- Pre-launch event
+		q(60490),	-- Triggers after completing "Advancing the Effort" and unlocking Icecrown dailies. Also triggered when starting the new phase at Ironwall Rampart. Maybe it's the zone story daily progression tracker?
+		q(60541),	--
+		q(60511),	-- Icecrown story - Advancing the effort (phase 2?). triggered after completing "Only Shadows Remain"
+		q(62808),	-- triggered when logging into a previously-120 character
+		q(62480),	-- triggered along with the Nathanos Blightcaller world quest (for killing Nathanos)
 	}),
 };
