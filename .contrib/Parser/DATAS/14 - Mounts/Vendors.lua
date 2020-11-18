@@ -155,6 +155,7 @@ _.Mounts =
 		i(65356, {	-- Drake of the West Wind [Horde Only]
 			["races"] = HORDE_ONLY,
 		}),
+		i(181317),	-- Dauntless Duskrunner
 		i(180729),	-- Duskflutter Ardenmoth
 		i(116664),	-- Dusky Rockhide
 		i(161908, {	-- Dusky Waycrest Gryphon

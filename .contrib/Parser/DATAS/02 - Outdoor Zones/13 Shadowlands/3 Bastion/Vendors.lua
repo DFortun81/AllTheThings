@@ -54,12 +54,10 @@ _.Zones =
 					i(180761, {	-- Phalynx of Loyalty
 						["cost"] = { { "c", 1813, 1000 } },
 					}),
-					i(181300, {	-- Gruesome Flayedwing
-						["cost"] = { { "c", 1813, 2500 } },
-					}),
-					i(181316, {	-- Silvertip Dredwing
-						["cost"] = { { "c", 1813, 2500 } },
-					}),
+					i(180726),	-- Pale Acidmaw				-- no cost due each covernant offering this mount in different ways
+					i(181300),	-- Gruesome Flayedwing		-- no cost due each covernant offering this mount in different ways
+					i(181316),	-- Silvertip Dredwing		-- no cost due each covernant offering this mount in different ways
+					i(181317),	-- Dauntless Duskrunner		-- no cost due each covernant offering this mount in different ways
 				}),
 				n(171981,	{	-- Zeleskos <Pet Vendor>
 					--["coord"] = { 52.2, 47.0, 1533 },

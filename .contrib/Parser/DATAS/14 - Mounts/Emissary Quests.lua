@@ -14,9 +14,6 @@ _.Mounts =
 		i(182209),	-- Desire's Battle Gargon
 		i(180581),	-- Hopecrusher Gargon
 		--Kyrian
-		i(181317),	-- Dauntless Duskrunner
 		i(180762),	-- Phalynx of Humility
-		--Night Fae
-		i(180726),	-- Pale Acidmaw
 	}),
 };
