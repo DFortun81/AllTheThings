@@ -102,6 +102,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
+						i(182650),	-- Arboreal Gulper
 						ach(14309, crit(5)),	-- Adventurer of Ardenweald / Humon'gozz
 					},
 				}),

@@ -139,6 +139,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
+						i(182083),	-- Bonecleaver'S Skullboar
 						ach(14308, crit(13)),	-- Adventurer of Maldraxxus / Sabriel the Bonecleaver
 					},
 				}),

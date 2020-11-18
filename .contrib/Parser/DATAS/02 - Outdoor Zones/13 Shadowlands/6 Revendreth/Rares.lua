@@ -217,7 +217,11 @@ _.Zones =
 					["coord"] = { 38.6, 72.0, 1525 },
 					--["questID"] = ,
 					["isDaily"] = true,
+					["description"] = "To summon Worldedge Gorger you need to use Enticing Anima to lit worldedge braziers.Enticing Anima drops from worldeater rift mobs, you can kill many of them just along the river.",
 					["g"] = {
+						i(180583, {		-- Impressionable Gorger Spawn
+							i(182589),		-- Loyal Gorger
+						}),
 						ach(14310, crit(7)),	-- Adventurer of Revendreth / Worldedge Gorger
 					},
 				}),
