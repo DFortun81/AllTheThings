@@ -1432,6 +1432,7 @@ app.L = {
 -- Shadowlands Header
 	--	[-900] = 																-- Covenant Sanctrum
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
+		[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown
 
 
 -- Temporarily Header

@@ -5,13 +5,12 @@
 _.Mounts =
 {
 	n(-169, {	-- Emissary Quests
+		
 		-- temp beta covenant mounts and unsorted
 		--Necrolords
-		i(181822),	-- Armored War-Bred Tauralus
 		i(182075),	-- Bonehoof Tauralus
 		i(182078),	-- Bonesewn Fleshroc(Abom Stitching profession)
 		i(181300),	-- Gruesome Flayedwing
-		i(182076),	-- Plaguerot Tauralus
 		i(182077),	-- War-Bred Tauralus
 		--Venthyr
 		i(180948),	-- Battle Gargon Vrednic

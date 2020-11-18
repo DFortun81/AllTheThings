@@ -7,6 +7,16 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
 			n(QUESTS, {
+				currency(1832, {		-- Renown-Necrolord
+					q(59555, {	-- Enemy at the Door
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+					--	["sourceQuest"] = 57390,	-- To Die By the Sword
+					--	["lvl"] = 52,
+						["g"] = {
+							i(181822),		-- Armored War-Bred Tauralus
+						},
+					}),
+				}),
 			-- Champion of Pain
 				q(57390, {	-- To Die By the Sword
 					["provider"] = { "n", 164244 },	-- Grandmaster Vole

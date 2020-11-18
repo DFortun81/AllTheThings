@@ -282,6 +282,9 @@ _.Mounts =
 		i(116776),	-- Pale Thorngrazer
 		i(163589),	-- Palehide Direhorn
 		i(2414),	-- Pinto
+		i(182076, {	-- Plaguerot Tauralus
+			["cost"] = { { "c", 1813, 2500 } },
+		}),
 		i(166463, {	-- Priestess' Moonsaber
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = { { "c", 1717, 750 }, },	-- 750x 7th Legion Service Medal

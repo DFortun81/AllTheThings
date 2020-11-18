@@ -13,6 +13,9 @@ _.Zones =
 					-- { 52.21 40.74 } inside seat of the primus
 					},
 					["g"] = {
+						i(182076, {	-- Plaguerot Tauralus
+							["cost"] = { { "c", 1813, 2500 } },
+						}),
 						i(182773, {	-- Necrolord Hearthstone
 							["cost"] = { { "c", 1813, 1500 } },
 						}),
