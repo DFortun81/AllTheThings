@@ -16145,10 +16145,11 @@ app.events.VARIABLES_LOADED = function()
 				return nil;
 			end
 		end
-		app:RefreshData(false);
-
 		-- finally can say the app is ready
+		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 		app.IsReady = true;
+
+		app:RefreshData(false);
 	end);
 end
 app.events.PLAYER_LOGIN = function()
