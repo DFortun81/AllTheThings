@@ -2253,8 +2253,8 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(184400)),	-- Courage
 		un(NEVER_IMPLEMENTED, i(66075)),	-- Bubbles
 		un(NEVER_IMPLEMENTED, i(184509)),	-- Spriggan Trickster
-		un(NEVER_IMPLEMENTED, i(184398)),	-- -- Steward Featherling
-		un(NEVER_IMPLEMENTED, i(184512)),	-- Winterleaf Spriggan 
+		un(NEVER_IMPLEMENTED, i(184398)),	-- Steward Featherling
+		un(NEVER_IMPLEMENTED, i(184512)),	-- Winterleaf Spriggan
 		un(NEVER_IMPLEMENTED, i(184221)),	-- Archivist's Quill
 		un(NEVER_IMPLEMENTED, i(184401)),	-- Larion Pouncer
 		un(NEVER_IMPLEMENTED, i(184397)),	-- Lost Featherling

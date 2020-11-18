@@ -2907,6 +2907,7 @@ _.HiddenQuestTriggers =
 		q(60541),	--
 		q(60511),	-- Icecrown story - Advancing the effort (phase 2?). triggered after completing "Only Shadows Remain"
 		q(62808),	-- triggered when logging into a previously-120 character
+		q(62480),	-- triggered along with the Nathanos Blightcaller world quest (for killing Nathanos)
 
 		-- Torghast
 		q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)
