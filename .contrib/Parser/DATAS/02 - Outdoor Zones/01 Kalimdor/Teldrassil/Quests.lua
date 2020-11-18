@@ -179,13 +179,6 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(32327, {	-- The Darnassus Mission
-					["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
-					["coord"] = { 40.0, 50.4, 57 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 32326,	-- Insertion
-					["level"] = 81,
-				}),
 				q(2438,  {	-- The Emerald Dreamcatcher
 					["provider"] = { "n", 3567 },	-- Tallonkai Swiftroot
 					["coord"] = { 55.5, 49.9, 57 },
@@ -318,13 +311,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(5459)),	-- Defender Axe	NOTE: This is an old reward, quest has been repurposed
 						un(REMOVED_FROM_GAME, i(5587)),	-- Thornroot Club	NOTE: This is an old reward, quest has been repurposed
 					},
-				}),
-				q(32328, {	-- Victorious Return
-					["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
-					["coord"] = { 40.0, 50.4, 57 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 32327,	-- The Darnassus Mission
-					["level"] = 81,
 				}),
 				q(488,   {	-- Zenn's Bidding
 					["provider"] = { "n", 2150 },	-- Zenn Foulhoof

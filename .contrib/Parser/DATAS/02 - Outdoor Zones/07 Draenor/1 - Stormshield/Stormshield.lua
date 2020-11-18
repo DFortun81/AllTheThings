@@ -1187,10 +1187,6 @@ _.Zones =
 								i(117390, {	-- Draenor Archaeologist's Map
 									["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
 								}),
-								i(118727, {	-- Frostfire Treasure Map
-									["questID"] = 34557,
-									["cost"] = { { "g", 1000000 } }	-- 100g
-								}),
 								i(118729, {	-- Gorgrond Treasure Map
 									["questID"] = 36465,
 									["cost"] = { { "g", 1000000 } }	-- 100g

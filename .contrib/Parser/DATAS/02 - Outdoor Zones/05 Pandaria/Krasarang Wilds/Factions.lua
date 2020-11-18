@@ -17,38 +17,40 @@ _.Zones =
 							ach(7929, {	-- Dominance Offensive Campaign
 								["races"] = HORDE_ONLY,
 								["g"] = {
-									crit(1, {	-- Domination Point
+									crit(1,  {	-- Domination Point
 										["sourceQuests"] = { 32108 },	-- Domination Point
 									}),
-									crit(2, {	-- The Voice of the Gods
+									crit(2,  {	-- The Voice of the Gods
 										["sourceQuests"] = { 32257 },	-- Voice of the Gods
 									}),
-									crit(3, {	-- The Horde is Family
+									crit(3,  {	-- The Horde is Family
 										["sourceQuests"] = { 32372 },	-- De-Subjugation
 									}),
-									crit(4, {	-- Blood For Blood
+									crit(4,  {	-- Blood For Blood
 										["sourceQuests"] = {
 											32191,	-- Ancient Guardians
 											32192,	-- Bloodlines
 											32244,	-- The Korune
 										},
 									}),
-									crit(5, {	-- The Korune
+									crit(5,  {	-- The Korune
 										["sourceQuests"] = { 32384 },	-- Trapping the Leader
 									}),
-									crit(6, {	-- Pride
+									crit(6,  {	-- Pride
 										["sourceQuests"] = { 32352 },	-- A Gathering Storm
 									}),
-									crit(7, {	-- Rise of the Blood Elves
+									crit(7,  {	-- Rise of the Blood Elves
 										["sourceQuests"] = { 32330 },	-- What's in the Box?
 									}),
-									crit(8, {	-- Secrets of the Past
+									crit(8,  {	-- Secrets of the Past
 										["sourceQuests"] = { 32368 },	-- Memory Wine
 									}),
-									crit(9, {	-- The Divine Bell
+									crit(9,  {	-- The Divine Bell
 										["sourceQuests"] = { 32392 },	-- The Divine Bell
 									}),
-									crit(10),	-- The Darnassus Operation
+									crit(10, {	-- The Darnassus Operation
+										["sourceQuests"] = { 32328 },	-- Victorious Return
+									}),
 									crit(11),	-- The Purge of Dalaran
 									crit(12),	-- Breath of Darkest Shadow
 									i(93386),	-- Grand Wyvern (MOUNT!)
@@ -229,6 +231,13 @@ _.Zones =
 								["coord"] = { 79.7, 30.4, 418 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32326, {	-- Insertion
+								["minReputation"] = { 1375, REVERED+14540 },	-- possibly 14530
+								["sourceQuests"] = { 32392 },	-- The Divine Bell
+								["provider"] = { "n", 67939 },	-- General Nazgrim
+								["coord"] = { 9.3, 51.1, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32344, {	-- It Is A Mystery
 								["sourceQuests"] = { 32449 },	-- The Ruins of Ogudei
 								["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
@@ -338,6 +347,12 @@ _.Zones =
 								["coord"] = { 9.55, 50.9, 418 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32327, {	-- The Darnassus Mission
+								["sourceQuests"] = { 32326 },	-- Insertion
+								["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
+								["coord"] = { 40.0, 50.4, 57 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32392, {	-- The Divine Bell
 								["sourceQuests"] = { 32391 },	-- The Ruins of Korune
 								["provider"] = { "n", 68337 },	-- Ishi
@@ -431,6 +446,12 @@ _.Zones =
 								},
 								["provider"] = { "n", 68370 },	-- Lor'themar Theron
 								["coord"] = { 53.8, 49.1, 379 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32328, {	-- Victorious Return
+								["sourceQuests"] = { 32327 },	-- The Darnassus Mission
+								["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
+								["coord"] = { 40.0, 50.4, 57 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32257, {	-- Voice of the Gods

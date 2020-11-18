@@ -691,6 +691,7 @@ _.Zones =
 					["sourceQuest"] = 24948,	-- Lifting the Siege
 				}),
 				q(25197, {	-- The Admiral Won't Back Down
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 39322 },	-- Horton Gimbleheart
 					["coord"] = { 68.6, 49.0, 199 },
 					["races"] = ALLIANCE_ONLY,

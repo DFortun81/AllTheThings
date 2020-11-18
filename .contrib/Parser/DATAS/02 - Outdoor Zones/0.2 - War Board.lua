@@ -54,12 +54,13 @@ _.Zones =
 			q(49817, {	-- To Northrend! (Horde)
 				["isBreadcrumb"] = true,
 				["lvl"] = 60,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49852, {	-- To Pandaria! (Horde)
 				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Pandaria)
 				["isBreadcrumb"] = true,
-				["lvl"] = 80,
 				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(28572, {	-- Warchief's Command: Arathi Highlands!
 				["isBreadcrumb"] = true,
@@ -593,9 +594,9 @@ _.Zones =
 			}),
 			q(49846, {	-- Wars on Two Fronts [Cataclysm]
 				["isBreadcrumb"] = true,
-				["lvl"] = 80,
 				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["provider"] = { "i", 156477 },	-- Special Duty Assignments
+				["u"] = REMOVED_FROM_GAME,
 				-- The same item is used to start Cataclysm or Pandaria content (your choice).
 				-- Received 49846 on Alliance Warlock when I hit 80, so it isn't the Horde version item as a previous comment speculated. - slumber
 			}),
@@ -603,29 +604,32 @@ _.Zones =
 				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 80,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49851, {	-- Cataclysm First Responder (Horde)
 				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
 				["isBreadcrumb"] = true,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 80,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49864, {	-- Wars on Two Fronts (Cataclysm or Pandaria)
 				["isBreadcrumb"] = true,
 				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["provider"] = { "i", 156477 },	-- Special Duty Assignments
 				["lvl"] = 80,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49863, {	-- To Northrend! (Alliance)
 				["isBreadcrumb"] = true,
 				["lvl"] = 60,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49866, {	-- To Pandaria! (Alliance)
 				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Cataclysm or Pandaria)
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 80,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 		},
 	}),

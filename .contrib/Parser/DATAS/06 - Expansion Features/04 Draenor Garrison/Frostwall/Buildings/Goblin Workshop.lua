@@ -29,6 +29,17 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
+						n(QUESTS, {
+							q(37418, {	-- Fully Armed and Operational
+							--	marked as removed on wowhead, but a discord user picked it up on november 16, 2020
+								["provider"] = { "n", 85369 },	-- Vee
+								["races"] = HORDE_ONLY,
+							}),
+							q(37044, {	-- Unconventional Inventions
+								["provider"] = { "n", 85369 },	-- Vee
+								["races"] = HORDE_ONLY,
+							}),
+						}),
 					},
 				}),
 			}),
