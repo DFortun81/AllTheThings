@@ -164,6 +164,7 @@ _.Mounts =
 		i(180724, {	-- Enchanted Winterborn Runestag
 			["cost"] = { { "c", 1813, 5000 } },
 		}),
+		i(180722),	-- Enchanted Shadeleaf Runestag
 		i(8588),	-- Emerald Raptor
 		i(161774, {	-- Expedition Bloodswarmer
 			["races"] = HORDE_ONLY,

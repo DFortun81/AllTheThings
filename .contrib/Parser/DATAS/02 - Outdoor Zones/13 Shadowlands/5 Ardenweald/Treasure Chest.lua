@@ -13,7 +13,20 @@ _.Zones =
 					["questID"] = 60715,
 					["repeatable"] = true,
 				}),
-]]--
+]]--			|cffcc33ffThe demons are taking over this island, you may want to leave.|r
+				o(350978, {	-- Queen's Conservatory Cache
+					["coord"] = { 43.4, 33.6, 1565 },
+					["repeatable"] = true,
+					["description"] = "Each Mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. After planting the seeds you need to wait 7 days for incubation. \n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots near. \n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near. \n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near.\n\nAfter 7 days open the Wildseed of Regrowth, speak with the NPC & then loot the Queen's Conservatory Cache.",
+					["g"] = {
+						i(181317),	-- Dauntless Duskrunner:
+						i(181316),	-- Silvertip Dredwing:
+						i(181300),	-- Gruesome Flayedwing:
+						i(180414),	-- Wakener's Runestag:
+						i(180726),	-- Pale Acidmaw:
+						i(180723),	-- Enchanted Wakener's Runestag:
+					},
+				}),
 				o(356820, {	-- Large Lunarlight Pod
 					["coord"] = { 65.3, 23.5, 1565 },
 					["questID"] = 60717,

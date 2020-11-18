@@ -18,7 +18,6 @@ _.Mounts =
 		i(181317),	-- Dauntless Duskrunner
 		i(180762),	-- Phalynx of Humility
 		--Night Fae
-		i(180722),	-- Enchanted Shadeleaf Runestag
 		i(180723),	-- Enchanted Wakener's Runestag
 		i(180726),	-- Pale Acidmaw
 		i(180414),	-- Wakener's Runestag
