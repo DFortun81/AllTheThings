@@ -84,6 +84,7 @@ _.Mounts =
 		i(89307),	-- Blue Shado-Pan Riding Tiger
 		i(13332),	-- Blue Skeletal Horse
 		i(25475),	-- Blue Wind Rider
+		i(182075),	-- Bonehoof Tauralus
 		i(116775),	-- Breezestrider Stallion
 		i(128481),	-- Bristling Hellboar
 		un(NEVER_IMPLEMENTED, i(128480)),	-- Bristling Hellboar
@@ -183,6 +184,7 @@ _.Mounts =
 		i(44086, {	-- Grand Ice Mammoth [Horde Only]
 			["races"] = HORDE_ONLY,
 		}),
+		i(182332),	-- Gravestone Battle Armor
 		i(29744),	-- Gray Elekk
 		i(15277),	-- Gray Kodo
 		i(5864),	-- Gray Ram
@@ -365,6 +367,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(45596),	-- Silvermoon Hawkstrider
+		i(183715),	-- Sinfall Gargon
 		i(161910, {	-- Smoky Charger
 			["races"] = ALLIANCE_ONLY,
 		}),

@@ -168,6 +168,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
+						i(182075),	-- Bonehoof Tauralus
 						i(181815),	-- Armored Bonehoof Tauralus
 						ach(14308, crit(12)),	-- Adventurer of Maldraxxus / Tahonta
 					},

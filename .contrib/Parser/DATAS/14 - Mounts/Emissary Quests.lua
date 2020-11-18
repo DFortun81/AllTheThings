@@ -8,7 +8,6 @@ _.Mounts =
 		
 		-- temp beta covenant mounts and unsorted
 		--Necrolords
-		i(182075),	-- Bonehoof Tauralus
 		i(182078),	-- Bonesewn Fleshroc(Abom Stitching profession)
 		i(181300),	-- Gruesome Flayedwing
 		i(182077),	-- War-Bred Tauralus
@@ -17,11 +16,9 @@ _.Mounts =
 		i(183798),	-- Silessa's Battle Harness(Battle Gargon Silessa in journal)
 		i(180945),	-- Crypt Gargon
 		i(182209),	-- Desire's Battle Gargon
-		i(182332),	-- Gravestone Battle Armor
 		i(180581),	-- Hopecrusher Gargon
 		i(182954),	-- Inquisition Gargon
 		i(181316),	-- Silvertip Dredwing
-		i(183715),	-- Sinfall Gargon
 		--Kyrian
 		i(181317),	-- Dauntless Duskrunner
 		i(180766),	-- Eternal Phalynx of Courage

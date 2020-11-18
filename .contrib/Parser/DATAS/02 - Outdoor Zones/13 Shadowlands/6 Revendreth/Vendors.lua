@@ -101,6 +101,12 @@ _.Zones =
 				n(174710, {	-- Chachi the Artiste <Renown Quartermaster>
 					["coord"] = { 54.0, 25.6, 1699 },
 					["g"] = {
+						i(183715, {	-- Sinfall Gargon
+							["cost"] = { { "c", 1816, 2000 } },
+						}),
+						i(182332, {	-- Gravestone Battle Armor
+							["cost"] = { { "c", 1816, 3000 } },
+						}),
 						i(183712, {	-- Gleaming Crypt Keeper's Mantle
 							["cost"] = { { "c", 1816, 2500 } },
 						}),

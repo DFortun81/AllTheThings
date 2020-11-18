@@ -90,10 +90,12 @@ _.Zones =
 					},
 				}),
 				n(164107, {	-- Gormtamer Tizo
-					--["coord"] = { 50.0, 20.6, 1565 },
+					["coord"] = { 28.4, 55.3, 1565 },
 					--["questID"] = ,
 					["isDaily"] = true,
+					["description"] = "Kill Deranged Guardians and Bristlecone Terrors until Chompy spawns. After killing Chompy Gormtamer Tizo will spawn",
 					["g"] = {
+						i(180725),	-- Spinemaw Gladechewer
 						ach(14309, crit(4)),	-- Adventurer of Ardenweald / Gormtamer Tizo
 					},
 				}),
@@ -148,7 +150,7 @@ _.Zones =
 					},
 				}),
 				n(168135, {	-- Night Mare
-					--["coord"] = { 59.2, 46.6, 1565 },
+					["coord"] = { 62.25, 53.97, 1565 },
 					--["questID"] = ,
 					["isDaily"] = true,
 					["description"] = "Requires to be a Night Fay Covenant & the item Dream Catcher.",
@@ -160,10 +162,12 @@ _.Zones =
 							["description"] = "West of Thirna Scithe on Ardenweald there is a platform with a broken cart on it. Loot the Cracked Soulweb Object next to it to receive the Broken Soulweb.",
 							["g"] = {
 								i(181242, {			-- Repaired Soulweb
+									["crs"] = { 165704 },	-- Elder Gwenna
 									["coord"] = { 50.44, 33.06, 1565 },
 									["description"] = "Return the Broken Soulweb & 10 Lightless Silk to Elder Gwenna to receive the Repaired Soulweb.",
 									["g"] = {
 										i(178675, {			-- Dream Catcher
+											["crs"] = { 160262 },	-- Ysera
 											["coord"] = { 45.30, 51.13, 1565 },
 											["description"] = "Talk to Ysera to enchant the Soulweb to receive the Dream Catcher.",
 											["g"] = {
