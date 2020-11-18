@@ -54,6 +54,7 @@ _.Mounts =
 			["classes"] = { WARLOCK },
 		}),
 		i(180263),	-- Dreamlight Runestag
+		i(180721),	-- Enchanted Dreamlight Runestag
 		i(180766),	-- Eternal Phalynx of Courage
 		mount(73629, {	-- Exarch's Elekk
 			["races"] = { DRAENEI },

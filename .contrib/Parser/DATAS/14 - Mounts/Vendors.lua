@@ -275,6 +275,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(169203),	-- Inkscale Deepseeker
+		i(182954),	-- Inquisition Gargon
 		i(45586),	-- Ironforge Ram
 		i(116782),	-- Ironside Warwolf
 		i(142369),	-- Ivory Hawkstrider

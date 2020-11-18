@@ -7,6 +7,15 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1565, {	-- Ardenweald
 			n(QUESTS, {
+				currency(1831, {		-- Renown-NightFae
+					q(60108, {	-- Drust and Ashes
+					--	["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
+						["lvl"] = 60,
+						["g"] = {
+							i(180721),	-- Enchanted Dreamlight Runestag
+						},
+					}),
+				}),
 			-- Welcome to Ardenweald
 				q(60763, {	-- I Moustache You to Lend a Hand
 					["provider"] = { "n", 168341 },	-- Lady Moonberry

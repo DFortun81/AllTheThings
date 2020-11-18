@@ -14,12 +14,10 @@ _.Mounts =
 		i(183798),	-- Silessa's Battle Harness(Battle Gargon Silessa in journal)
 		i(182209),	-- Desire's Battle Gargon
 		i(180581),	-- Hopecrusher Gargon
-		i(182954),	-- Inquisition Gargon
 		--Kyrian
 		i(181317),	-- Dauntless Duskrunner
 		i(180762),	-- Phalynx of Humility
 		--Night Fae
-		i(180721),	-- Enchanted Dreamlight Runestag
 		i(180722),	-- Enchanted Shadeleaf Runestag
 		i(180723),	-- Enchanted Wakener's Runestag
 		i(180726),	-- Pale Acidmaw
