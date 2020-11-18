@@ -182,6 +182,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178778),	-- Lichbone Legguards
 							i(178781),	-- Ritual Commander's Ring
 							i(178783),	-- Siphoning Phylactery Shard
+							i(181819),	-- Marrowfang's Reins
 						},
 					}),
 				},

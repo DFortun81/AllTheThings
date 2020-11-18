@@ -6,6 +6,7 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
 			n(ZONEDROPS, {
+				i(184062),	-- Gnawed Reins of the Battle-Bound Warhound(Battle-Bound Warhound in journal)
 				i(178944),
 				i(178951),
 				i(176983),

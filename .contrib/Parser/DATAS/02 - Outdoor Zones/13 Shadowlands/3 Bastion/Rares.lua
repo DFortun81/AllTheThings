@@ -207,10 +207,12 @@ _.Zones =
 					},
 				}),
 				n(170548, { -- Sundancer
-					--["coord"] = { 51.8, 68.6, 1533 },
+					["coord"] = { 60.6, 93.2, 1533 },
 					--["questID"] = ,
 					["isDaily"] = true,
+					["description"] = "Requires two Buffs to mount the rare. First buff is from the statue next to the rare & the second buff comes from the Skystrider Glider item.",
 					["g"] = {
+						i(180773),				-- Sundancer
 						ach(14307, crit(10)),	-- Adventurer of Bastion / Sundancer
 					},
 				}),

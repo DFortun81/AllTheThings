@@ -103,6 +103,7 @@ _.Mounts =
 		i(174653),	-- Mail Muncher
 		i(184167),	-- Mawsworn Soulhunter
 		i(174769),	-- Malevolent Drone
+		i(181819),	-- Marrowfang's Reins
 		i(168826),	-- Mechagon Peacekeeper
 		i(142236),	-- Midnight
 		i(45693),	-- Mimiron's Head
