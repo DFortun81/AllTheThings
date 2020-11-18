@@ -2217,6 +2217,8 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, model(51323, i(104011))),	-- Stormcrow 							(Never added in Game)
 		un(NEVER_IMPLEMENTED, i(143752)),	-- Sound Test Mount
 		un(NEVER_IMPLEMENTED, i(37598)),	-- Swift Zhevra OLD
+		
+		un(NEVER_IMPLEMENTED, i(184168)),	-- Tower Shadehound (beta only)
 		un(NEVER_IMPLEMENTED, i(44557)),	-- Swift Ebonweave Carpet (NOT IN GAME)
 		un(NEVER_IMPLEMENTED, i(44556)),	-- Swift Spellfire Carpet (NOT IN GAME)
 		un(NEVER_IMPLEMENTED, i(44555)),	-- Swift Mooncloth Carpet (NOT IN GAME)

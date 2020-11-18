@@ -164,7 +164,6 @@ _.Mounts =
 		i(90655),	-- Thundering Ruby Cloud Serpent
 		i(44168),	-- Time-Lost Proto-Drake
 		i(159921), 	-- Tomb Stalker
-		i(184168),	-- Tower Shadehound
 		i(116658),	-- Tundra Icehoof
 		i(163584),  -- Twilight Avenger
 		i(43954),	-- Twilight Drake

@@ -138,6 +138,7 @@ _.Zones =
 					["coord"] = { 50.4, 48.2, 1536 },
 					--["questID"] = ,
 					["isDaily"] = true,
+					["description"] = "Requires a Necrolord Covenant to summon",
 					["g"] = {
 						i(182083),	-- Bonecleaver'S Skullboar
 						ach(14308, crit(13)),	-- Adventurer of Maldraxxus / Sabriel the Bonecleaver
@@ -167,6 +168,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
+						i(181815),	-- Armored Bonehoof Tauralus
 						ach(14308, crit(12)),	-- Adventurer of Maldraxxus / Tahonta
 					},
 				}),

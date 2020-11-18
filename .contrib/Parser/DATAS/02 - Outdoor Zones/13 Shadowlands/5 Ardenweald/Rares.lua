@@ -151,8 +151,33 @@ _.Zones =
 					--["coord"] = { 59.2, 46.6, 1565 },
 					--["questID"] = ,
 					["isDaily"] = true,
+					["description"] = "Requires to be a Night Fay Covenant & the item Dream Catcher.",
 					["g"] = {
+						i(180728),				-- Swift Gloomhoof
 						ach(14309, crit(23)),	-- Adventurer of Ardenweald / Night Mare
+						i(181243, {			-- Broken Soulweb
+							["coord"] = { 19.67, 63.47, 1565 },
+							["description"] = "West of Thirna Scithe on Ardenweald there is a platform with a broken cart on it. Loot the Cracked Soulweb Object next to it to receive the Broken Soulweb.",
+							["g"] = {
+								n(165704, {			-- Elder Gwenna
+									i(181242, {			-- Repaired Soulweb
+										["coord"] = { 50.44, 33.06, 1565 },
+										["description"] = "Return the Broken Soulweb & 10 Lightless Silk to Elder Gwenna to receive the Repaired Soulweb.",
+										["g"] = {
+											n(160262, {			-- Ysera
+												i(178675, {			-- Dream Catcher
+													["coord"] = { 45.30, 51.13, 1565 },
+													["description"] = "Talk to Ysera to enchant the Soulweb to receive the Dream Catcher.",
+													["g"] = {
+														i(180728),				-- Swift Gloomhoof
+													},
+												}),
+											}),		
+										},
+									}),
+								}),
+							},
+						}),
 					},
 				}),
 				n(166146, {	-- Niya, As Xavius <Some Kind of Evil Sylvar>
@@ -224,7 +249,9 @@ _.Zones =
 					["coord"] = { 30.0, 55.0, 1565 },
 					--["questID"] = ,
 					["isDaily"] = true,
+					["description"] = "Requires a Night Fay Covenant to remove the Veil. The Anima Conductor needs to channel anima to Tirna Scithe. Afterwards you can loot the Animaseed Light at the boss to remove the Veil.",
 					["g"] = {
+						i(180730),	-- Wild Glimmerfur Prowler
 						ach(14309, crit(26)),	-- Adventurer of Ardenweald / Valfir the Unrelenting
 					},
 				}),
