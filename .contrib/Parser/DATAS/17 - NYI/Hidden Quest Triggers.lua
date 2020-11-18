@@ -942,6 +942,7 @@ _.HiddenQuestTriggers =
 		q(34813),	-- Nagrand - Horde Workshop Tracking Event
 		q(34518),	-- Nagrand - Nagrand Corral
 		q(36898),	-- Tracking Quest: Delvar Ironfist
+		q(36877),	-- Tracking Quest: Tormmok — taking Tormmok as a bodyguard/wingman
 		q(36569),	-- Unruly Visitors — triggers when turning in "Battle Pet Roundup"
 		q(36570),	-- Unruly Visitors — triggers when turning in "Battle Pet Roundup"
 		q(39058),	-- Critters of Draenor — looks like an unused version of #38299
@@ -1059,6 +1060,7 @@ _.HiddenQuestTriggers =
 		--    Legion     --
 		-------------------
 		--	Various tracking quests
+		q(40087),	-- "Enter the Illidari: Shivarra" - Sevis Brightflame Sacrificed Tracking Event
 		q(44608),	-- Tracking Quest: Holy Ground 1 — these 5 are for the missions done during the priest class hall quest "Awakening the Light"
 		q(44609),	-- Tracking Quest: Holy Ground 2
 		q(44610),	-- Tracking Quest: Holy Ground 3
@@ -1184,6 +1186,7 @@ _.HiddenQuestTriggers =
 		q(46835),	-- Whispers of a Frightened World Tracking, while doing quest 46206
 		q(43659),	-- Mage - learned the Felo'melorn appearance from The Stars' Design (maybe put this on the appearance item?)
 		q(42189),	-- Fire Mage - Flavor Event 01. Showed Arcanomancer Vridiel in Dalaran the newly acquired Felo'melorne
+		q(43660),	-- Hidden Appearance Unlocked — unlocking frost mage hidden appearance
 		q(44426),	-- Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
 		q(40340),	-- Alard Schmied Greeting Seen. "Well, I'll be... the Ashbringer. ...' in Dalaran
 
@@ -2445,6 +2448,7 @@ _.HiddenQuestTriggers =
 		q(56683),	-- after poen dialogue in the area where the hydra rares spawn: "I was born in the slave pens.  My family was broken by the naga... I never had a chance to heal them."  yikes, dude
 		q(56544),	-- after poen dialogue in cave at 26.7, 42.2: "This is one of my favorite spots!  I always keep snacks in my pocket!  It works out great for everyone!"
 		q(56671),	-- after poen dialogue around 70, 48, the area with the snapdragons: "I helped a little elf girl find her doll here, once.  It made her so happy, even though there was so little of it left.  I hugged Mak so hard when I got back to Newhome."
+		q(56690),	-- after poen dialogue: "It sounds like this Horde you come from has survived some awful things.  Just like us!  Seeing you stick together brings me hope."
 		q(56701),	-- vim brineheart dialogue, triggered around 43.5, 70.5: "Without Neri, we would have scattered with the current.  She brought us together."
 		q(56711),	-- vim brineheart dialogue, triggered around 33.4, 39.3 after picking up #55980, "Turn the Scale" — "I won't always be around to protect Newhome." "If these scales can help keep our people safe, then they're worth the effort."
 		q(56705),	-- vim brineheart dialogue, triggered around 71.6, 50.9: "Azshara and her 'loyal subjects' are the worst kind of monsters.  We have to stop them here and now."
@@ -2908,5 +2912,9 @@ _.HiddenQuestTriggers =
 		q(60511),	-- Icecrown story - Advancing the effort (phase 2?). triggered after completing "Only Shadows Remain"
 		q(62808),	-- triggered when logging into a previously-120 character
 		q(62480),	-- triggered along with the Nathanos Blightcaller world quest (for killing Nathanos)
+		q(62849),	-- \
+		q(62850),	--  \ triggered when logging into my 50 main during week 2 of the prepatch
+		q(62851),	--  / nothing else done, quests were not there during week 1
+		q(62852),	-- /
 	}),
 };

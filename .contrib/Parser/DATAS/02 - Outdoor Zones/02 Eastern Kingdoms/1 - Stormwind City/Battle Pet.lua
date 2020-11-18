@@ -33,6 +33,7 @@ _.Zones =
 						},
 					}),
 					q(31902, {	-- Battle Pet Tamers: Eastern Kingdoms
+						["altQuests"] = { 31903 },	-- Battle Pet Tamers: Eastern Kingdoms (Horde version, since only one can be completed per account and Blizz doesn't check it off, apparently)
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,

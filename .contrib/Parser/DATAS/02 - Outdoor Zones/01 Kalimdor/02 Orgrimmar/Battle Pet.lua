@@ -81,6 +81,7 @@ _.Zones =
 					},
 				}),
 				q(31903, {	-- Battle Pet Tamers: Eastern Kingdoms
+					["altQuests"] = { 31902 },	-- Battle Pet Tamers: Eastern Kingdoms (Alliance version, since only one can be completed per account and Blizz doesn't check it off, apparently)
 					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,

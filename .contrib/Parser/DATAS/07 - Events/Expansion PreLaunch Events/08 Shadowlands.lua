@@ -222,6 +222,7 @@ _.WorldEvents =
 					-------------------------- Week 2 --------------------------
 					q(62162, {	-- A Message from the Justicar (A)
 						-- TODO: coord and provider
+						["isBreadcrumb"] = true,
 						["maps"] = { 84 },	-- Stormwind
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
@@ -231,6 +232,7 @@ _.WorldEvents =
 						["maps"] = { 84 },	-- Stormwind
 					}),
 					q(62163, {	-- A Message from the Justicar (H)
+						["isBreadcrumb"] = true,
 						["maps"] = { 85 },	-- Orgrimmar
 						["coord"] = { 52.9, 77.3, 85 },
 						["provider"] = { "n", 169878 },	-- Commander Throgg

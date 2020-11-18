@@ -10,12 +10,6 @@ _.ExpansionFeatures =
 				garrisonBuilding(124,  {	-- Engineering Works (rank 1: 91, rank 2: 123, rank 3: 124)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(QUESTS, {
-							q(37044, {	-- Unconventional Inventions
-								["provider"] = { "n", 85369 },	-- Vee
-								["races"] = HORDE_ONLY,
-							}),
-						}),
 						n(VENDORS, {
 							n(88610, {	-- Engineering Follower <Engineering Entrepreneur>
 								["races"] = HORDE_ONLY,

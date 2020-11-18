@@ -1062,11 +1062,6 @@ _.Zones =
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
-				q(32326, {	-- Insertion
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["coord"] = { 9.3, 51.1, 418 },
-					["races"] = HORDE_ONLY,
-				}),
 				q(29875, {	-- Kang Bramblestaff
 					["provider"] = { "n", 56110 },	-- Xiao
 					["races"] = HORDE_ONLY,
@@ -1147,12 +1142,6 @@ _.Zones =
 				q(32238, {	-- Universal Remote-Explode
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-				}),
-				q(32328, {	-- Victorious Return
-					["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 32327 },	-- The Darnassus Mission
-					["level"] = 81,
 				}),
 				q(32223, {	-- Wanted: Lieutenant Ethan Jacobson
 					["isDaily"] = true,
