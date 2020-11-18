@@ -74,10 +74,12 @@ _.Zones =
 					},
 				}),
 				n(166521, {	-- Famu the Infinite
-					["coord"] = { 63.0, 48.6, 1525 },
+					["coord"] = { 62.6, 47.2, 1525 },
 					--["questID"] = ,
 					["isDaily"] = true,
+					["crs"] = { 166483 },	-- Seeker Hilda 
 					["g"] = {
+						i(180582),	-- Endmire Flyer Tether
 						ach(14310, crit(17)),	-- Adventurer of Revendreth / Famu the Infinite
 					},
 				}),
@@ -98,11 +100,43 @@ _.Zones =
 					},
 				}),
 				n(165290, {	-- Harika the Horrid
-					--["coord"] = { 66.4, 71.4, 1525 },
+					["coord"] = { 45.83, 79.34, 1525 },
 					--["questID"] = ,
 					["isDaily"] = true,
+					["description"] = "Requires to be a Venthyr Covenant & your Anima to be channel to Wanecrypt Hill to summon him. Use the Dredterror Ballista to make him attackable.",
 					["g"] = {
-						ach(14310, crit(15)),	-- Adventurer of Revendreth / Harika the Horrid
+						ach(14310, crit(15)),		-- Adventurer of Revendreth / Harika the Horrid
+						i(180461),			-- Horrid Dredwing
+						i(176396, {			-- Dredhollow Tools
+							["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
+							["crs"] = { 165325 },	-- Muckborn Craftsman
+							["coords"] = {
+								{ 40.77, 72.70, 1525 },	-- Tool1
+								{ 41.18, 74.67, 1525 },	-- Tool2
+							},
+							["g"] = {
+								n(165325, {		-- Muckborn Craftsman
+									["coord"] = { 46.0, 79.0, 1525 },	-- Muckborn Craftsman
+									["g"] = {
+										i(176397, {			-- Dredhollow Bolt
+											["description"] = "Used to shoot the Dredterror Ballista. Bring the item to Wingsmash.",
+											["coords"] = {
+												{ 43.23, 77.62, 1525 },	-- Dredhollow Bolt
+											},
+											["crs"] = { 165324 },	-- Dredterror Ballista
+											["g"] = {
+												n(165327, {		-- Wingsmash
+													["coord"] = { 46.30, 77.86, 1525 },	-- Wingsmash
+													["g"] = {
+														i(180461),			-- Horrid Dredwing
+													},
+												}),
+											},
+										}),
+									},
+								}),
+							},
+						}),					
 					},
 				}),
 				n(166679, {	-- Hopecrusher
@@ -153,6 +187,14 @@ _.Zones =
 					["g"] = {
 						ach(14310, crit(24)),	-- Adventurer of Revendreth / Manifestation of Wrath
 						i(180591),	-- Vial of Roiling Emotions
+					},
+				}),
+				n(162690, {	-- Nerissa Heartless
+					["coord"] = { 66.03, 35.32, 1525 },
+					--["questID"] = ,
+					["isDaily"] = true,
+					["g"] = {
+						i(182084),	-- Gorespine
 					},
 				}),
 				n(160675, {	-- Scrivener Lenua

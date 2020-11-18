@@ -38,8 +38,8 @@ _.Mounts =
 		i(21218),	-- Blue Qiraji Battle Tank
 		i(163578), 	-- Broken Highland Mustang
 		i(43951),	-- Bronze Drake
-		i(184160),	-- Bulbous Necroray
-		i(181818),	-- Chewed Reins of the Callow Flayedwing
+		--i(184160),	-- Bulbous Necroray -- Source Unknown (NYI ATM)
+		--i(181818),	-- Chewed Reins of the Callow Flayedwing Source Unknown (NYI ATM)
 		i(147806),	-- Cloudwing Hippogryph
 		i(173887),	-- Clutch of Ha-Li
 		i(95059),	-- Clutch of Ji-Kun
@@ -83,7 +83,7 @@ _.Mounts =
 		i(163579),	-- Highland Mustang
 		i(147807),	-- Highmountain Elderhorn
 		i(180461),	-- Horrid Dredwing
-		i(184161),	-- Infested Necroray
+		-- i(184161),	-- Infested Necroray -- Source Unknown (NYI ATM)
 		i(50818),	-- Invincible
 		i(116660),	-- Ironhoof Destroyer
 		i(166467),	-- Island Thunderscale
@@ -115,7 +115,7 @@ _.Mounts =
 		}),
 		i(174872),	-- Ny'alotha Allseer
 		i(49636),	-- Onyxian Drake
-		i(184162),	-- Pestilent Necroray
+		--i(184162),	-- Pestilent Necroray -- Source Unknown (NYI ATM)
 		i(63042),	-- Phosphorescent Stone Drake
 		i(182080),	-- Predatory Plagueroc
 		i(69224),	-- Pureblood Fire Hawk

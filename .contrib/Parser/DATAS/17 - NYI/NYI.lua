@@ -18,6 +18,15 @@ _.NeverImplemented =
 			["u"] = NEVER_IMPLEMENTED,
 			["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 		},
+	n(-10100, {	-- Shadowlands
+		-- Mounts
+		-- Oozing Necroray Egg (Source Unknown)
+		un(NEVER_IMPLEMENTED, i(184160)),	-- Bulbous Necroray
+		un(NEVER_IMPLEMENTED, i(184161)),	-- Infested Necroray
+		un(NEVER_IMPLEMENTED, i(184162)),	-- Pestilent Necroray 
+		--
+		un(NEVER_IMPLEMENTED, i(181818)),	-- Chewed Reins of the Callow Flayedwing Source Unknown (NYI ATM)
+	}),
 	n(-10052, {	-- BFA - Stuff that gets added later on 9.0 release
 		-- Future Emsembles!!
 		-- Leather Horde (you probably will learn both after learning one)
@@ -32,16 +41,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(163436)),	-- Honorbound Outrider's Faceguard
 		un(NEVER_IMPLEMENTED, i(163433)),	-- Honorbound Outrider's Mantle
 		un(NEVER_IMPLEMENTED, i(163440)),	-- Honorbound Outrider's Belt
-
-		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
-		un(NEVER_IMPLEMENTED, i(166700)),	-- Durable Sailor's Duffel
-		un(NEVER_IMPLEMENTED, i(161988)),	-- Tidespray Linen Cloak of the Feather
-		un(NEVER_IMPLEMENTED, i(161991)),	-- Tidespray Linen Cloak of Resilience
-		un(NEVER_IMPLEMENTED, i(165261)),	-- Unknown Cloak
-		un(NEVER_IMPLEMENTED, i(166680)),	-- Echo of Elune (maybe you will able to get it with a hotfix?)
-		un(NEVER_IMPLEMENTED, i(166358)),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform.A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
-		un(NEVER_IMPLEMENTED, i(165792)),	-- Worn Cloak (future WQ?)
-		un(NEVER_IMPLEMENTED, p(2341)),		-- Feathers (possibly tied to a quest?)
 
 
 		-- Scrapped Lv20 Gear (??)
@@ -1551,6 +1550,10 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(28045)),	-- Cloak of the Demon Stalker
 			un(NEVER_IMPLEMENTED, i(157751)),	-- Drape of New Beginnings
 			un(NEVER_IMPLEMENTED, i(134693)),	-- Enveloping Cape
+			un(NEVER_IMPLEMENTED, i(165792)),	-- Worn Cloak (future WQ?)un(NEVER_IMPLEMENTED, i(166700)),	-- Durable Sailor's Duffel
+			un(NEVER_IMPLEMENTED, i(161988)),	-- Tidespray Linen Cloak of the Feather
+			un(NEVER_IMPLEMENTED, i(161991)),	-- Tidespray Linen Cloak of Resilience
+			un(NEVER_IMPLEMENTED, i(165261)),	-- Unknown Cloak
 			un(NEVER_IMPLEMENTED, i(134699)),	-- Enveloping Drape
 			un(NEVER_IMPLEMENTED, i(134609)),	-- Scorching Cape
 			un(NEVER_IMPLEMENTED, i(163311)),	-- 7th Legionnaire's Shroud
@@ -2089,6 +2092,9 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(43016)),
 		un(NEVER_IMPLEMENTED, i(52446)),
 		un(NEVER_IMPLEMENTED, i(62898)),
+		un(NEVER_IMPLEMENTED, i(166680)),	-- Echo of Elune (maybe you will able to get it with a hotfix?)
+		un(NEVER_IMPLEMENTED, i(166358)),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform.A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
+		un(NEVER_IMPLEMENTED, p(2341)),		-- Feathers (possibly tied to a quest?)
 		un(NEVER_IMPLEMENTED, i(164769)),	-- Unknown
 		un(NEVER_IMPLEMENTED, i(33565)),	-- Uncommon Drop Certificate
 		un(NEVER_IMPLEMENTED, i(105914)),	-- Danger Detector Boots
