@@ -10920,12 +10920,14 @@ RowOnEnter = function (self)
 			end
 		end
 		
-		if reference.g then
-			-- If we're at the Auction House
-			if AuctionFrame and AuctionFrame:IsShown() then
-				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"], 1, 1, 1);
-			else
-				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
+		if app.Settings:GetTooltipSetting("Show:TooltipHelp") then
+			if reference.g then
+				-- If we're at the Auction House
+				if AuctionFrame and AuctionFrame:IsShown() then
+					GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"], 1, 1, 1);
+				else
+					GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
+				end
 			end
 		end
 		-- Add info in tooltip for the header of a Window for whether it is locked or not
@@ -10937,6 +10939,7 @@ RowOnEnter = function (self)
 				GameTooltip:AddLine(L["TOP_ROW_TO_LOCK"], 1, 1, 1);
 			end
 		end
+
 		-- print("OnRowEnter-Show");
 		GameTooltip.MiscFieldsComplete = true;
 		GameTooltip:Show();

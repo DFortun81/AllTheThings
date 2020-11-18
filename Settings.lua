@@ -155,6 +155,7 @@ local TooltipSettingsBase = {
 		["SharedAppearances"] = true,
 		["Show:Remaining"] = false,
 		["UseMoreColors"] = false,
+		["Show:TooltipHelp"] = true,
 		["Skip:Cutscenes"] = false,
 		["SourceLocations"] = true,
 		["SourceLocations:Completed"] = true,
@@ -2714,6 +2715,17 @@ function(self)
 end);
 UseMoreColorsCheckBox:SetATTTooltip("Enable this option if you want to see more colors utilized to help distinguish additional conditions for Things in lists (i.e. class colors, faction colors, etc.)");
 UseMoreColorsCheckBox:SetPoint("TOPLEFT", ShowRemainingCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ShowTooltipHelpCheckBox = settings:CreateCheckBox("Show Tooltip Help",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:TooltipHelp"));
+end,
+function(self)
+	settings:SetTooltipSetting("Show:TooltipHelp", self:GetChecked());
+	app:UpdateWindows();
+end);
+ShowTooltipHelpCheckBox:SetATTTooltip("Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.");
+ShowTooltipHelpCheckBox:SetPoint("TOPLEFT", UseMoreColorsCheckBox, "BOTTOMLEFT", 0, 4);
 
 
 local SizingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
