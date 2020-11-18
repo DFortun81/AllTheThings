@@ -12,6 +12,10 @@ _.PetJournal =
 		p(2842),	-- Anomalus
 		p(1160),	-- Arcane Eye
 		p(2131),	-- Arcane Gorger
+<<<<<<< HEAD
+=======
+		p(3054),	-- Archivist's Quill
+>>>>>>> parent of 4f564cccd... some pets were reworked/removed during beta and they were causing errors
 		p(2439), 	-- Azerite Puddle
 		p(2352),	-- Baa'l
 		p(2582),	-- Baoh-Xi
