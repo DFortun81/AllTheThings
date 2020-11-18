@@ -8,9 +8,7 @@ _.Mounts =
 		
 		-- temp beta covenant mounts and unsorted
 		--Necrolords
-		i(182078),	-- Bonesewn Fleshroc(Abom Stitching profession)
 		i(181300),	-- Gruesome Flayedwing
-		i(182077),	-- War-Bred Tauralus
 		--Venthyr
 		i(180948),	-- Battle Gargon Vrednic
 		i(183798),	-- Silessa's Battle Harness(Battle Gargon Silessa in journal)
@@ -28,7 +26,6 @@ _.Mounts =
 		i(180763),	-- Phalynx of Courage
 		i(180762),	-- Phalynx of Humility
 		i(180761),	-- Phalynx of Loyalty
-		i(180764),	-- Phalynx of Purity
 		--Night Fae
 		i(180263),	-- Dreamlight Runestag
 		i(180721),	-- Enchanted Dreamlight Runestag

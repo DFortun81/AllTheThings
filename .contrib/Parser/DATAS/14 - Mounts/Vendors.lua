@@ -85,6 +85,7 @@ _.Mounts =
 		i(13332),	-- Blue Skeletal Horse
 		i(25475),	-- Blue Wind Rider
 		i(182075),	-- Bonehoof Tauralus
+		i(182078),	-- Bonesewn Fleshroc(Abom Stitching profession)
 		i(116775),	-- Breezestrider Stallion
 		i(128481),	-- Bristling Hellboar
 		un(NEVER_IMPLEMENTED, i(128480)),	-- Bristling Hellboar
@@ -283,6 +284,9 @@ _.Mounts =
 		i(45595),	-- Orgrimmar Wolf
 		i(116776),	-- Pale Thorngrazer
 		i(163589),	-- Palehide Direhorn
+		i(180764, {	-- Phalynx of Purity
+			["cost"] = { { "c", 1813, 2500 } },
+		}),
 		i(2414),	-- Pinto
 		i(182076, {	-- Plaguerot Tauralus
 			["cost"] = { { "c", 1813, 2500 } },

@@ -12,7 +12,7 @@ _.Zones =
 				--	["questID"] = 61125,	-- 
 				--	["isDaily"] = true,
 					["g"] = {
-						i(181819),	-- Marrowfang's Reins
+						i(184167),	-- Mawsworn Soulhunter
 					},
 				}),
 				n(171316, {	-- Malevolent Stygia

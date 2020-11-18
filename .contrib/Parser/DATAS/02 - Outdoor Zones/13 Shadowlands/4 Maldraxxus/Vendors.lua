@@ -7,6 +7,29 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
 			n(VENDORS, {
+				n(167042, {	-- Abominable Stitching Table
+					["coord"] = { 55.0, 68.8, 1536 },
+					["g"] = {
+						i(182078, {	-- Bonesewn Fleshroc 
+							["cost"] = { { "i", 178061, 50 } },
+						}), 
+						i(181282, {	-- Mu'dud 
+							["cost"] = { { "i", 178061, 10 } },
+						}), 
+						i(183413, {	-- Ensemble: Stitched Alacrity of Maldraxxus 
+							["cost"] = { { "i", 178061, 500 } },
+						}), 
+						i(183411, {	-- Ensemble: Stitched Authority of Maldraxxus 
+							["cost"] = { { "i", 178061, 500 } },
+						}), 
+						i(183414, {	-- Ensemble: Stitched Guile of Maldraxxus  
+							["cost"] = { { "i", 178061, 500 } },
+						}), 
+						i(183415, {	-- Ensemble: Stitched Rationale of Maldraxxus
+							["cost"] = { { "i", 178061, 500 } },
+						}), 
+					},
+				}),
 				n(172176, {	-- Su Zettai <Renown Quartermaster>
 					["coords"] = {
 						{ 50.68, 71.38, 1536},

@@ -10,6 +10,9 @@ _.Zones =
 				n(160470, {	-- Adjutant Nikos <Quartermaster>
 					["coord"] = { 52.2, 47.0, 1533 },
 					["g"] = {
+						i(180764, {	-- Phalynx of Purity
+							["cost"] = { { "c", 1813, 2500 } },
+						}),
 						i(183740, {	-- Court Sinrunner
 							["cost"] = 300000000, -- 30,000g
 						}),

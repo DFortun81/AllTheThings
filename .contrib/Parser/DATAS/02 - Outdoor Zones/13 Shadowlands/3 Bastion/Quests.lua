@@ -7,6 +7,15 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
 			n(QUESTS, {
+				currency(1829, {		-- Renown-Kyrian
+					q(59555, {	-- Enemy at the Door
+						["provider"] = { "n", 174937 },	-- Adjutant Galos
+						["lvl"] = 60,
+						["g"] = {
+							i(180764),		-- Phalynx of Purity
+						},
+					}),
+				}),
 			-- Eternity's Call
 				q(59774, {	-- Welcome to Eternity
 					["provider"] = { "n", 166227 },	-- Kleia

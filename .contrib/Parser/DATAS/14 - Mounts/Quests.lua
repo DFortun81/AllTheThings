@@ -112,6 +112,7 @@ _.Mounts =
 		i(174771),		-- Obedient Drone
 		i(87768),		-- Onyx Cloud Serpent
 		i(32857),		-- Onyx Netherwing Drake
+		i(180764),		-- Phalynx of Purity
 		i(137577),		-- Predatory Bloodgazer
 		i(32860),		-- Purple Netherwing Drake
 		i(168827),		-- Scrapforged Mechaspider
@@ -151,6 +152,7 @@ _.Mounts =
 		i(152901),		-- Violet Spellwing
 		i(137580),		-- Viridian Sharptalon
 		i(183615),		-- Warstitched Darkhound
+		i(182077),		-- War-Bred Tauralus
 		i(163128), 		-- War-Torn Reins of the Undercity Plaguebat
 		mount(13819, {	-- Warhorse
 			["classes"] = { PALADIN },
