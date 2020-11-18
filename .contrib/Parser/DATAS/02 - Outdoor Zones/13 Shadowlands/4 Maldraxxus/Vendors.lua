@@ -148,21 +148,10 @@ _.Zones =
 						i(178535),	-- Suspicious Slime Shot
 						i(178546),	-- Questionable Meat Product
 						i(178547),	-- Questionable Fried Poultry
-						i(180726, {	-- Pale Acidmaw
-							["cost"] = { { "i", 178061, 500 } },
-						}),
-						i(181300, {	-- Pale Acidmaw
-							["cost"] = { { "i", 178061, 500 } },
-						}),
-						i(180726, {	-- Gruesome Flayedwing
-							["cost"] = { { "i", 178061, 500 } },
-						}),
-						i(181316, {	-- Silvertip Dredwing
-							["cost"] = { { "i", 178061, 500 } },
-						}),
-						i(181317, {	-- Dauntless Duskrunner
-							["cost"] = { { "i", 178061, 500 } },
-						}),
+						i(180726),	-- Pale Acidmaw				-- no cost due each covernant offering this mount in different ways
+						i(181300),	-- Gruesome Flayedwing		-- no cost due each covernant offering this mount in different ways
+						i(181316),	-- Silvertip Dredwing		-- no cost due each covernant offering this mount in different ways
+						i(181317),	-- Dauntless Duskrunner		-- no cost due each covernant offering this mount in different ways
 						i(180603, {	-- Violet Dredwing Pup
 							["cost"] = { { "i", 178061, 350 } },
 						}),

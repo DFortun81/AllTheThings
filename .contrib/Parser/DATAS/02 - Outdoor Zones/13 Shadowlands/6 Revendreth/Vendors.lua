@@ -777,6 +777,15 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(164966, {	-- Temel
+					["coord"] = { 28.0, 43.0, 1699 },
+					["g"] = {
+						i(180726),	-- Pale Acidmaw				-- no cost due each covernant offering this mount in different ways
+						i(181300),	-- Gruesome Flayedwing		-- no cost due each covernant offering this mount in different ways
+						i(181316),	-- Silvertip Dredwing		-- no cost due each covernant offering this mount in different ways
+						i(181317),	-- Dauntless Duskrunner		-- no cost due each covernant offering this mount in different ways
+					},
+				}),
 			}),
 		}),
 	}),

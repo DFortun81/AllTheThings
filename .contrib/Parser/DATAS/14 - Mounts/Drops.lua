@@ -53,6 +53,7 @@ _.Mounts =
 		i(163576),	-- Dune Scavenger
 		i(174860),	-- Elusive Quickhoof
 		i(180582),	-- Endmire Flyer Tether
+		i(180723),	-- Enchanted Wakener's Runestag
 		i(78919),	-- Experiment 12-B
 		i(169201),	-- Fabious
 		i(138201),	-- Fathom Dweller
@@ -175,6 +176,7 @@ _.Mounts =
 		i(152790),	-- Vile Fiend
 		i(63043),	-- Vitreous Stone Drake
 		i(121815),	-- Voidtalon of the Dark Star
+		i(180414),	-- Wakener's Runestag
 		i(116780),	-- Warsong Direfang
 		i(174753),	-- Waste Marauder
 		i(147804),	-- Wild Dreamrunner
