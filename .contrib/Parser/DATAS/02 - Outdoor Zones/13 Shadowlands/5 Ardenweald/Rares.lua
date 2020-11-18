@@ -159,22 +159,18 @@ _.Zones =
 							["coord"] = { 19.67, 63.47, 1565 },
 							["description"] = "West of Thirna Scithe on Ardenweald there is a platform with a broken cart on it. Loot the Cracked Soulweb Object next to it to receive the Broken Soulweb.",
 							["g"] = {
-								n(165704, {			-- Elder Gwenna
-									i(181242, {			-- Repaired Soulweb
-										["coord"] = { 50.44, 33.06, 1565 },
-										["description"] = "Return the Broken Soulweb & 10 Lightless Silk to Elder Gwenna to receive the Repaired Soulweb.",
-										["g"] = {
-											n(160262, {			-- Ysera
-												i(178675, {			-- Dream Catcher
-													["coord"] = { 45.30, 51.13, 1565 },
-													["description"] = "Talk to Ysera to enchant the Soulweb to receive the Dream Catcher.",
-													["g"] = {
-														i(180728),				-- Swift Gloomhoof
-													},
-												}),
-											}),		
-										},
-									}),
+								i(181242, {			-- Repaired Soulweb
+									["coord"] = { 50.44, 33.06, 1565 },
+									["description"] = "Return the Broken Soulweb & 10 Lightless Silk to Elder Gwenna to receive the Repaired Soulweb.",
+									["g"] = {
+										i(178675, {			-- Dream Catcher
+											["coord"] = { 45.30, 51.13, 1565 },
+											["description"] = "Talk to Ysera to enchant the Soulweb to receive the Dream Catcher.",
+											["g"] = {
+												i(180728),				-- Swift Gloomhoof
+											},
+										}),
+									},
 								}),
 							},
 						}),
