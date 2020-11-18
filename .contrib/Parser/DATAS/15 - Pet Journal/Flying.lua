@@ -55,10 +55,7 @@ _.PetJournal =
 		p(2405, {			-- Corlain Falcon
 			["races"] = ALLIANCE_ONLY,
 		}),
-<<<<<<< HEAD
-=======
 		p(3065),			-- Courage
->>>>>>> parent of 4f564cccd... some pets were reworked/removed during beta and they were causing errors
 		p(1997),			-- Crackers
 		p(507),				-- Crested Owl
 		p(2567),			-- Crimson Bat Pup
@@ -143,10 +140,7 @@ _.PetJournal =
 		p(1469),			-- Junglebeak
 		p(1597),			-- Kaliri Hatchling
 		p(2585),			-- Kor'thik Swarmling
-<<<<<<< HEAD
-=======
 		p(3063),			-- Larion Pouncer
->>>>>>> parent of 4f564cccd... some pets were reworked/removed during beta and they were causing errors
 		p(2390),			-- Leafy Flutterwing
 		p(2552),			-- Leatherwing Screecher
 		p(1713),			-- Long-Eared Owl

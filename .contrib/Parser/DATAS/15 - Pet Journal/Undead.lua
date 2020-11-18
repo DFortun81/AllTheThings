@@ -54,10 +54,7 @@ _.PetJournal =
 		un(10, p(249)),		-- Lil' K.T.
 		p(458),		-- Lost of Lordaeron
 		p(2895),	-- Lost Soul
-<<<<<<< HEAD
-=======
 		p(3066),	-- Lucy
->>>>>>> parent of 4f564cccd... some pets were reworked/removed during beta and they were causing errors
 		p(1351),	-- Macabre Marionette
 		p(3029),	-- Maw Crawler
 		p(2202), 	-- Miimii
