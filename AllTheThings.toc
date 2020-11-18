@@ -1,12 +1,12 @@
 ## Author: Crieve-Sargeras
-## Interface: 90001
+## Interface: 90002
 ## X-Curse-Project-ID: 267285
 ## Title: .|TInterface\Addons\AllTheThings\assets\logo_32x32:0|t AllTheThings |TInterface\Addons\AllTheThings\assets\logo_32x32:0|t
 ## Name: AllTheThings
 ## SavedVariables: AllTheThingsSettings, AllTheThingsAD, AllTheThingsAuctionConfig, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter
 ## Notes: Addon for Tracking Collections & Account Completion
-## Version: 2.1.4
+## Version: 2.1.5
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
