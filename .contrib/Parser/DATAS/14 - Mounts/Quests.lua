@@ -6,6 +6,9 @@ _.Mounts =
 {
 	n(QUESTS, {
 		i(142436),		-- Arcanist's Manasaber
+		i(181820, {		-- Armored Chosen Tauralus
+			["races"] = HORDE_ONLY,
+		}),
 		i(181822),		-- Armored War-Bred Tauralus
 		mount(48778, {	-- Acherus Deathcharger
 			["classes"] = { DEATHKNIGHT },

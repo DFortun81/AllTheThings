@@ -8,7 +8,6 @@ _.Mounts =
 		i(152815),	-- Antoran Gloomhound
 		i(44178),	-- Albino Drake
 		i(98259),	-- Armored Blue Dragonhawk
-		i(181820),	-- Armored Chosen Tauralus
 		i(116668),	-- Armored Frostboar
 		i(116781),	-- Armored Frostwolf
 		i(98104),	-- Armored Red Dragonhawk

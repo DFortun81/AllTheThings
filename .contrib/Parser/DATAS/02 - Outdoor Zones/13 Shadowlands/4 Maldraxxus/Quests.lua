@@ -8,10 +8,23 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(QUESTS, {
 				currency(1832, {		-- Renown-Necrolord
+				-- Renown 5
+				-- House of Eyes
 					q(59555, {	-- Enemy at the Door
 						["provider"] = { "n", 161907 },	-- Baroness Draka
 					--	["sourceQuest"] = 57390,	-- To Die By the Sword
 					--	["lvl"] = 52,
+						["g"] = {
+							i(181822),		-- Armored War-Bred Tauralus
+						},
+					}),
+				-- Renown 22
+				-- House of Rituals
+					q(59020, {	-- The Third Fall of Kel'Thuzad
+						["provider"] = { "n", 168381 },	-- Baroness Draka
+						["coord"] = { 50.3, 67.7, 1536 },
+						["lvl"] = 60,
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(181822),		-- Armored War-Bred Tauralus
 						},

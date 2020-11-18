@@ -187,6 +187,11 @@ _.Zones =
 					--	["questID"] = ,
 					}),
 				}),
+				ach(14751, {	-- The Gang's All Here
+					["g"] = {
+						i(182074),		-- Chosen Tauralus 
+					},
+				}),
 			}),
 		}),
 	}),
