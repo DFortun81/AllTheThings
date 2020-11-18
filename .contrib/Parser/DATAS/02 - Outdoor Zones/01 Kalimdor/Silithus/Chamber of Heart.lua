@@ -135,6 +135,18 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["lvl"] = 110,
 						}),
+						q(61872, {	-- To Current Matters (A)
+							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
+							["coord"] = { 50.1, 53.6, 1021 },
+							["sourceQuest"] = 54964,	-- A One-Way Ticket to the Heart
+							["lvl"] = { 50 },
+						}),
+						q(61871, {	-- To Current Matters (H)
+							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
+							["coord"] = { 50.1, 53.6, 1021 },
+							["sourceQuest"] = 54964,	-- A One-Way Ticket to the Heart
+							["lvl"] = { 50 },
+						}),
 						-- Unlock Heartforge / Essences
 						q(55533, {	-- MOTHER Knows Best
 							["provider"] = { "n", 152206 },	-- Magni Bronzebeard

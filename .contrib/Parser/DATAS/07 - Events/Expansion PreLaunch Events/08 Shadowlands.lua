@@ -222,11 +222,19 @@ _.WorldEvents =
 						["maps"] = { 84 },	-- Stormwind
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 					}),
+					q(61112, {	-- A Hunger for Flesh (A)
+						["provider"] = { "i", 180712 },	-- Partially Digested Cloth
+						["maps"] = { 84 },	-- Stormwind
+					}),
 					q(62163, {	-- A Message from the Justicar (H)
 						["maps"] = { 85 },	-- Orgrimmar
 						["coord"] = { 52.9, 77.3, 85 },
 						["provider"] = { "n", 169878 },	-- Commander Throgg
 						-- not sure when this quest actually appears. It wasn't there on day one but showed up on subsequent days. Possibly related to event phasing?
+					}),
+					q(61114, {	-- A Hunger for Flesh (H)
+						["provider"] = { "i", 180719 },	-- Partially Digested Leather
+						["maps"] = { 85 },	-- Orgrimmar
 					}),
 					q(60828, {	-- A New Foothold
 						["maps"] = { 118 },	-- Icecrown
@@ -307,10 +315,18 @@ _.WorldEvents =
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 					}),
+					q(62584, {	-- Frontline Resupply
+						["maps"] = { 118 },	-- Icecrown
+						["sourceQuest"] = 60932,	-- Only Shadows Remain
+					}),
 					q(59851, {	-- Frozen Solid
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 44.9, 44.7, 118 },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
+						["sourceQuest"] = 60932,	-- Only Shadows Remain
+					}),
+					q(62484, {	-- Werk In Progress
+						["maps"] = { 118 },	-- Icecrown
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 					}),
 					-- repeatables below
