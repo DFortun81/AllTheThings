@@ -8,11 +8,19 @@ _.Zones =
 		m(1533, {	-- Bastion
 			n(QUESTS, {
 				currency(1829, {		-- Renown-Kyrian
-					q(59555, {	-- Enemy at the Door
+					q(61697, {	-- A New Age
 						["provider"] = { "n", 174937 },	-- Adjutant Galos
 						["lvl"] = 60,
 						["g"] = {
-							i(180764),		-- Phalynx of Purity
+							i(180766),		-- Eternal Phalynx of Courage
+						},
+					}),
+					-- Phaetus, Genesis of Aeons
+					q(58181, {	-- Building the Base
+						["provider"] = { "n", 160280 },	-- Mikanikos <Forgelite Prime>
+						["lvl"] = 60,
+						["g"] = {
+							i(180763),		-- Phalynx of Courage
 						},
 					}),
 				}),

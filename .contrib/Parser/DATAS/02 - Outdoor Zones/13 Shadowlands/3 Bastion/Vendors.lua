@@ -7,12 +7,17 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
 			n(VENDORS, {
+				n(174937, {	-- Adjutant Galos <Renown Quartermaster>
+					i(180764, {	-- Phalynx of Purity
+						["cost"] = { { "c", 1813, 2500 } },
+					}),
+					i(180765, {	-- Eternal Phalynx of Purity
+						["cost"] = { { "c", 1813, 100 } },
+					}),
+				}),
 				n(160470, {	-- Adjutant Nikos <Quartermaster>
 					["coord"] = { 52.2, 47.0, 1533 },
 					["g"] = {
-						i(180764, {	-- Phalynx of Purity
-							["cost"] = { { "c", 1813, 2500 } },
-						}),
 						i(183740, {	-- Court Sinrunner
 							["cost"] = 300000000, -- 30,000g
 						}),
@@ -38,6 +43,23 @@ _.Zones =
 							["cost"] = 17650000, -- 1,765g
 						}),
 					},
+				}),
+				n(171973, {	-- Binkiros <Mount Vendor>
+					i(180767, {	-- Eternal Phalynx of Loyalty
+						["cost"] = { { "c", 1813, 2500 } },
+					}),
+					i(180768, {	-- Eternal Phalynx of Humility
+						["cost"] = { { "c", 1813, 2500 } },
+					}),
+					i(180761, {	-- Phalynx of Loyalty
+						["cost"] = { { "c", 1813, 1000 } },
+					}),
+					i(181300, {	-- Gruesome Flayedwing
+						["cost"] = { { "c", 1813, 2500 } },
+					}),
+					i(181316, {	-- Silvertip Dredwing
+						["cost"] = { { "c", 1813, 2500 } },
+					}),
 				}),
 				n(171981,	{	-- Zeleskos <Pet Vendor>
 					--["coord"] = { 52.2, 47.0, 1533 },

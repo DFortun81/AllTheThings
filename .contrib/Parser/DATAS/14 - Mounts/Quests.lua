@@ -52,6 +52,8 @@ _.Mounts =
 		mount(23161, {	-- Dreadsteed
 			["classes"] = { WARLOCK },
 		}),
+		i(180263),	-- Dreamlight Runestag
+		i(180766),	-- Eternal Phalynx of Courage
 		mount(73629, {	-- Exarch's Elekk
 			["races"] = { DRAENEI },
 			["classes"] = { PALADIN },
@@ -112,7 +114,7 @@ _.Mounts =
 		i(174771),		-- Obedient Drone
 		i(87768),		-- Onyx Cloud Serpent
 		i(32857),		-- Onyx Netherwing Drake
-		i(180764),		-- Phalynx of Purity
+		i(180763),		-- Phalynx of Courage
 		i(137577),		-- Predatory Bloodgazer
 		i(32860),		-- Purple Netherwing Drake
 		i(168827),		-- Scrapforged Mechaspider

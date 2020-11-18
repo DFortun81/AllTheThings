@@ -165,6 +165,13 @@ _.Mounts =
 		i(161774, {	-- Expedition Bloodswarmer
 			["races"] = HORDE_ONLY,
 		}),
+		i(180768),	-- Eternal Phalynx of Humility
+		i(180767, {	-- Eternal Phalynx of Loyalty
+			["cost"] = { { "c", 1813, 2500 } },
+		}),
+		i(180765, {	-- Eternal Phalynx of Purity
+			["cost"] = { { "c", 1813, 100 } },
+		}),
 		i(45590),	-- Exodar Elekk
 		i(45597),	-- Forsaken Warhorse
 		i(19029),	-- Frostwolf Howler
@@ -284,9 +291,13 @@ _.Mounts =
 		i(45595),	-- Orgrimmar Wolf
 		i(116776),	-- Pale Thorngrazer
 		i(163589),	-- Palehide Direhorn
+		i(180761, {	-- Phalynx of Loyalty
+			["cost"] = { { "c", 1813, 1000 } },
+		}),
 		i(180764, {	-- Phalynx of Purity
 			["cost"] = { { "c", 1813, 2500 } },
 		}),
+		i(180761),	-- Phalynx of Loyalty
 		i(2414),	-- Pinto
 		i(182076, {	-- Plaguerot Tauralus
 			["cost"] = { { "c", 1813, 2500 } },
@@ -356,6 +367,7 @@ _.Mounts =
 		i(166745, {	-- Siltwing Albatross
 			["cost"] = { { "c", 1710, 1000 }, },	-- 1000x Seafarer's Dubloon
 		}),
+		i(181316),	-- Silvertip Dredwing
 		i(46813),	-- Silver Covenant Hippogryph
 		i(32318),	-- Silver Riding Nether Ray
 		i(31832, {	-- Silver Riding Talbuk [Alliance Only]
