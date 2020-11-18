@@ -7,6 +7,15 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(QUESTS, {
+				currency(1830, {		-- Renown-Venthyr
+					q(58440, {	-- Mirror, Mirror...
+						["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
+						["lvl"] = 60,
+						["g"] = {
+							i(180945),	-- Crypt Gargon
+						},
+					}),
+				}),
 			-- Welcome to Revendreth
 				q(57026, {	-- The Sinstone
 					["provider"] = { "n", 155537 },	-- Rendle

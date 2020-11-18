@@ -161,6 +161,9 @@ _.Mounts =
 			["races"] = ALLIANCE_ONLY,
 		}),
 		i(25471),	-- Ebon Gryphon
+		i(180724, {	-- Enchanted Winterborn Runestag
+			["cost"] = { { "c", 1813, 5000 } },
+		}),
 		i(8588),	-- Emerald Raptor
 		i(161774, {	-- Expedition Bloodswarmer
 			["races"] = HORDE_ONLY,
@@ -363,6 +366,7 @@ _.Mounts =
 			["classes"] = { ROGUE },
 		}),
 		i(116772),	-- Shadowmane Charger
+		i(180413),	-- Shadeleaf Runestag
 		i(180748),	-- Silky Shimmermoth
 		i(166745, {	-- Siltwing Albatross
 			["cost"] = { { "c", 1710, 1000 }, },	-- 1000x Seafarer's Dubloon
@@ -528,6 +532,7 @@ _.Mounts =
 		i(40775, {	-- Winged Steed of the Ebon Blade [Death Knight Only]
 			["classes"] = { DEATHKNIGHT },
 		}),
+		i(180415),	-- Winterborn Runestag
 		i(116655),	-- Witherhide Cliffstomper
 		i(44230, {	-- Wooly Mammoth [Alliance Only]
 			["races"] = ALLIANCE_ONLY,

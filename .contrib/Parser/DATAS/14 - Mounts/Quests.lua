@@ -36,6 +36,7 @@ _.Mounts =
 		i(128311),		-- Coalfist Gronnling
 		i(32859),		-- Cobalt Netherwing Drake
 		i(52200),		-- Crimsom Deathcharger
+		i(180945),		-- Crypt Gargon
 		mount(270562, {	-- Darkforge Ram
 			["classes"] = { PALADIN },
 			["races"] = { DARKIRON },
