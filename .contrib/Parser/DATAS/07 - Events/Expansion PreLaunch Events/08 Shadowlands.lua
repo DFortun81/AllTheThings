@@ -11,114 +11,116 @@ _.WorldEvents =
 				n(QUESTS, {
 					-------------------------- Week 1 --------------------------
 					q(60113, {	-- An Urgent Request (A)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60115, {	-- An Urgent Request (H)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(62594, {	-- The Safety of Others (A)
 						["maps"] = { 84 },
+						["lvl"] = { 50 },
 					}),
 					q(62595, {	-- The Safety of Others (H)
 						["maps"] = { 85 },
+						["lvl"] = { 50 },
 					}),
 					q(60116, {	-- Cause for Distraction (A)
 						["maps"] = { 84 },	-- Stormwind
 						["coord"] = { 39.4, 64.1, 84 },
 						["provider"] = { "n", 167329 },	-- Genn Greymane
 						["sourceQuest"] = 60113,	-- An Urgent Request (A)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60669, {	-- Cause for Distraction (H)
 						["maps"] = { 85 },	-- Orgrimmar
 						["coord"] = { 49.2, 73.7, 85 },
 						["provider"] = { "n", 169928 },	-- Lor'themar Theron
 						["sourceQuest"] = 60115,	-- An Urgent Request (H)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60117, {	-- Return of the Crusade (A)
 						["maps"] = { 84 },	-- Stormwind
 						["coord"] = { 39.4, 64.1, 84 },
 						["provider"] = { "n", 167329 },	-- Genn Greymane
 						["sourceQuest"] = 60116,	-- Cause for Distraction (A)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60670, {	-- Return of the Crusade (H)
 						["maps"] = { 85 },	-- Orgrimmar
 						["coord"] = { 49.2, 73.7, 85 },
 						["provider"] = { "n", 169928 },	-- Lor'themar Theron
 						["sourceQuest"] = 60669,	-- Cause for Distraction (H)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(59876, {	-- Field Reports (A)
 						["maps"] = { 84 },	-- Stormwind
 						["coord"] = { 65.7, 77.1, 84 },
 						["provider"] = { "n", 166383 },	-- Commander Gregor
 						["sourceQuest"] = 60117,	-- Return of the Crusade (A)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60725, {	-- Field Reports (H)
 						["maps"] = { 85 },	-- Orgrimmar
 						["coord"] = { 52.9, 77.3, 85 },
 						["provider"] = { "n", 169878 },	-- Commander Throgg
 						["sourceQuest"] = 60670,	-- Return of the Crusade (H)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60766, {	-- Damned Intruders (A)
 						["maps"] = { 47 },	-- Duskwood
 						["coord"] = { 73.50, 47.20, 47 },
 						["provider"] = { "n", 166184 },	-- Lieutenant Vernon
 						["sourceQuest"] = 59876,	-- Field Reports (A)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60759, {	-- Damned Intruders (H)
 						["maps"] = { 10 },	-- Northern Barrens
 						["coord"] = { 49.5, 59.4, 10 },
 						["provider"] = { "n", 170084 },	-- Lieutenant Althera
 						["sourceQuest"] = 60725,	-- Field Reports (H)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60767, {	-- Return of the Scourge (A)
 						["maps"] = { 47 },	-- Duskwood
 						["coord"] = { 73.50, 47.20, 47 },
 						["provider"] = { "n", 166184 },	-- Lieutenant Vernon
 						["sourceQuest"] = 60766,	-- Damned Intruders (A)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60761, {	-- Return of the Scourge (H)
 						["maps"] = { 10 },	-- Northern Barrens
 						["coord"] = { 49.4, 59.3, 10 },
 						["provider"] = { "n", 170084 },	-- Lieutenant Althera
 						["sourceQuest"] = 60759,	-- Damned Intruders (H)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(61486, {	-- The Banshee's Champion (A)
 						["maps"] = { 84 },	-- Stormwind
 						["coord"] = { 65.55, 77.0, 84 },
 						["provider"] = { "n", 172510 },	-- Light's Hope Messenger
 						["sourceQuest"] = 60767,	-- Return of the Scourge (A)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(61488, {	-- The Banshee's Champion (H)
 						["maps"] = { 85 },	-- Orgrimmar
 						["coord"] = { 53.0, 77.0, 85 },
 						["provider"] = { "n", 172514 },	-- Light's Hope Messenger
 						["sourceQuest"] = 60761,	-- Return of the Scourge (H)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(59877, {	-- A Message from Icecrown (A)
 						["maps"] = { 84 },	-- Stormwind
 						["coord"] = { 65.7, 77.1, 84 },
 						["provider"] = { "n", 166383 },	-- Commander Gregor
 						["sourceQuest"] = 60767,	-- Return of the Scourge (A)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60727, {	-- A Message from Icecrown (H)
 						["maps"] = { 85 },	-- Orgrimmar
 						["coord"] = { 52.9, 77.2, 85 },
 						["provider"] = { "n", 169878 },	-- Commander Throgg
 						["sourceQuest"] = 60761,	-- Return of the Scourge (H)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60169, {	-- Securing the Area
 						["maps"] = { 118 },	-- Icecrown
@@ -128,21 +130,21 @@ _.WorldEvents =
 							59877,	-- A Message from Icecrown (A)
 							60727,	-- A Message from Icecrown (H)
 						},
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60003, {	-- A Valiant Effort (A)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 22.0, 118 },
 						["provider"] = { "n", 168123 },	-- Crusader Renn
 						["sourceQuest"] = 59877,	-- A Message from Icecrown (A)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60004, {	-- A Valiant Effort (H)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 22.0, 118 },
 						["provider"] = { "n", 168123 },	-- Crusader Renn
 						["sourceQuest"] = 60727,	-- A Message from Icecrown (H)
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(62157, {	-- Scouting from a Safe Distance
 						["maps"] = { 118 },	-- Icecrown
@@ -153,14 +155,14 @@ _.WorldEvents =
 							60004,	-- A Valiant Effort (H)
 							60169,	-- Securing the Area
 						},
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60827, {	-- Advancing the Effort
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 22.0, 118 },
 						["provider"] = { "n", 168123 },	-- Crusader Renn
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					-------------------------- Dailies --------------------------
 					q(59863, {	-- Combat Nullifier 07-X
@@ -168,59 +170,61 @@ _.WorldEvents =
 						["coord"] = { 73.1, 35.6, 118 },
 						["provider"] = { "n", 173124 },	-- Binkie Brightgear
 						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(59783, {	-- Cultist Captors
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 66.0, 21.9, 118 },
 						["provider"] = { "n", 168880 },	-- Sentry Joren
 						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(62553, {	-- Delaying Their Efforts
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 21.9, 118 },
 						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
 						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(60841, {	-- Evacuation Effort
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 21.9, 118 },
 						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
 						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(62262, {	-- Fungal Feeding
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.6, 21.0, 118 },
 						["provider"] = { "n", 167572 },	-- Crystal Brightspark
 						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(59782, {	-- The Deathspeaker's Devout
 						["maps"] = { 118 },	-- Icecrown
 						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["lvl"] = { 50 },
 					}),
 					q(59878, {	-- Too Many Whelps
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 21.9, 118 },
 						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
 						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(59839, {	-- WARNING: This is Only a Test!
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 66.0, 22.4, 118 },
 						["provider"] = { "n", 172905 },	-- Fizzix Blastbolt
 						["sourceQuest"] = 60827,	-- Advancing the Effort
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					-------------------------- Week 2 --------------------------
 					q(62162, {	-- A Message from the Justicar (A)
 						-- TODO: coord and provider
 						["maps"] = { 84 },	-- Stormwind
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
+						["lvl"] = { 50 },
 					}),
 					q(61112, {	-- A Hunger for Flesh (A)
 						["provider"] = { "i", 180712 },	-- Partially Digested Cloth
@@ -230,7 +234,7 @@ _.WorldEvents =
 						["maps"] = { 85 },	-- Orgrimmar
 						["coord"] = { 52.9, 77.3, 85 },
 						["provider"] = { "n", 169878 },	-- Commander Throgg
-						-- not sure when this quest actually appears. It wasn't there on day one but showed up on subsequent days. Possibly related to event phasing?
+						["lvl"] = { 50 },
 					}),
 					q(61114, {	-- A Hunger for Flesh (H)
 						["provider"] = { "i", 180719 },	-- Partially Digested Leather
@@ -244,18 +248,21 @@ _.WorldEvents =
 							62162,	-- A Message from the Justicar (A)
 							62163,	-- A Message from the Justicar (H)
 						},
+						["lvl"] = { 50 },
 					}),
 					q(60843, {	-- Cult Couture
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 44.9, 44.7, 118 },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60828,	-- A New Foothold
+						["lvl"] = { 50 },
 					}),
 					q(62185, {	-- Fighting for Attention
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 44.9, 44.7, 118 },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60828,	-- A New Foothold
+						["lvl"] = { 50 },
 					}),
 					q(60861, {	-- Secrets in Shadows
 						["maps"] = { 118 },	-- Icecrown
@@ -265,36 +272,42 @@ _.WorldEvents =
 							60843,	-- Cult Couture
 							62185,	-- Fighting for Attention
 						},
+						["lvl"] = { 50 },
 					}),
 					q(62225, {	-- Bursting the Bubble
 						["maps"] = { 118 },
 						["coord"] = { 61.4, 63.8, 118 },
 						["provider"] = { "o", 357758 },	-- Plague Barrel
 						["sourceQuest"] = 60861,	-- Secrets in Shadows
+						["lvl"] = { 50 },
 					}),
 					q(60867, {	-- A Message from Above
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 44.9, 44.7, 118 },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 62225,	-- Bursting the Bubble
+						["lvl"] = { 50 },
 					}),
 					q(60932, {	-- Only Shadows Remain
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 44.9, 44.7, 118 },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60867,	-- A Message from Above
+						["lvl"] = { 50 },
 					}),
 					q(60871, {	-- With Hope in Hand (A)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 44.9, 44.7, 118 },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
+						["lvl"] = { 50 },
 					}),
 					q(60869, {	-- With Hope in Hand (H)
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 44.9, 44.7, 118 },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
+						["lvl"] = { 50 },
 					}),
 					-------------------------- Dailies --------------------------
 					q(62365, {	-- Careful Creations
@@ -302,18 +315,21 @@ _.WorldEvents =
 						["coord"] = { 35.3, 66.3, 118 },
 						["provider"] = { "n", 173997 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
+						["lvl"] = { 50 },
 					}),
 					q(62295, {	-- Cleaning Out the Vault
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 42.8, 29.9, 118 },
 						["provider"] = { "n", 173869 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
+						["lvl"] = { 50 },
 					}),
 					q(59847, {	-- Defending the Rampart
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 44.9, 44.7, 118 },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
+						["lvl"] = { 50 },
 					}),
 					q(62584, {	-- Frontline Resupply
 						["maps"] = { 118 },	-- Icecrown
@@ -324,6 +340,7 @@ _.WorldEvents =
 						["coord"] = { 44.9, 44.7, 118 },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
+						["lvl"] = { 50 },
 					}),
 					q(62484, {	-- Werk In Progress
 						["maps"] = { 118 },	-- Icecrown
@@ -337,7 +354,7 @@ _.WorldEvents =
 						["g"] = {
 							i(12844),	-- Argent Dawn Valor Token
 						},
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(62293, {	-- Darkened Scourgestones
 						["maps"] = { 118 },	-- Icecrown
@@ -349,7 +366,7 @@ _.WorldEvents =
 						["g"] = {
 							i(12844),	-- Argent Dawn Valor Token
 						},
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 					q(62292, {	-- Pitch Black Scourgestones
 						["maps"] = { 118 },	-- Icecrown
@@ -361,7 +378,7 @@ _.WorldEvents =
 						["g"] = {
 							i(12844),	-- Argent Dawn Valor Token
 						},
-						["lvl"] = 50,
+						["lvl"] = { 50 },
 					}),
 				}),
 				n(RARES, {
