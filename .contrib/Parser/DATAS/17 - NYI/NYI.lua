@@ -2321,7 +2321,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(136913)),	-- Red Broodling (wild pet catchable, item was never used)
 		un(NEVER_IMPLEMENTED, i(136902)),	-- Toxic Whelpling (wild pet catchable, item was never used)
 		un(NEVER_IMPLEMENTED, i(136921)),	-- Trigger (132519 is crafted from engineering, doesn't appear this version was ever used)
-
 	}),
 	n(-38, {	-- Professions
 		n(-180, { 	-- Alchemy
