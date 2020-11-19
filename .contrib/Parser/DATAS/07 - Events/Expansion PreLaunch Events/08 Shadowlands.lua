@@ -8,6 +8,11 @@ _.WorldEvents =
 		["icon"] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",
 		["g"] = {
 			tier(9, {	-- Shadowlands
+				n(ACHIEVEMENTS, {
+					ach(14750, {	-- Death Rising
+						["sourceQuests"] = { 60871, 60869 },	-- With Hope in Hand (A, H)
+					}),
+				}),
 				n(QUESTS, {
 					-------------------------- Week 1 --------------------------
 					q(60113, {	-- An Urgent Request (A)
@@ -343,6 +348,13 @@ _.WorldEvents =
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
+					}),
+					q(59772, {	-- Research Ruination
+					--	i know i picked it up in this area, but not sure about the provider.  didn't realize it wasn't added until i turned it in
+						["sourceQuests"] = { 60932 },	-- Only Shadows Remain
+						["provider"] = { "n", 170467 },	-- Crusader Renn
+						["coord"] = { 44.9, 44.7, 118 },
+						["maps"] = { 118 },	-- Icecrown
 					}),
 					q(62484, {	-- Werk In Progress
 						["maps"] = { 118 },	-- Icecrown
