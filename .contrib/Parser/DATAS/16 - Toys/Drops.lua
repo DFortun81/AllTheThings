@@ -95,7 +95,7 @@ _.Toys =
 		i(169303),		-- Hell-Bent Bracers
 		i(86594),		-- Helpful Wikky's Whistle
 		i(166790),		-- Highborne Memento
-		i(182655),		-- Hill King's Roarbox
+		--i(182655),		-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
 		i(86593),		-- Hozen Beach Ball
 		i(113631),		-- Hypnosis Goggles
 		i(118244),		-- Iron Buccaneer's Hat

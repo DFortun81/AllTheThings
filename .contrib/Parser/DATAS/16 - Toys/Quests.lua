@@ -43,7 +43,7 @@ _.Toys =
 		i(156833),		-- Katys's Stampwhistle
 		i(88580),		-- Ken-Ken's Mask
 		i(95567),		-- Kirin Tor Beacon (Alliance)
-		i(174286),		-- Kyrian Ritual Vestments
+		--i(174286),		-- Kyrian Ritual Vestments (beta only? Retrieving data on 9.0.2)
 		i(88531),		-- Lao Chin's Last Mug
 		i(71259),		-- Leyara's Locket
 		i(119039),		-- Lilian's Warning Sign
@@ -71,7 +71,7 @@ _.Toys =
 		i(122674),		-- S.E.L.F.I.E. Camera MkII
 		i(88387),		-- Shushen's Spittoon
 		i(88381),		-- Silversage Incense
-		i(177665),		-- Spectral Hankerchief
+		--i(177665),		-- Spectral Hankerchief (beta only? Retrieving data on 9.0.2)
 		i(156871),		-- Spitzy
 		i(95568),		-- Sunreaver Beacon (Horde)
 		i(52253),		-- Sylvanas' Music Box
