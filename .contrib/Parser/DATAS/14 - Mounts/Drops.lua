@@ -38,7 +38,7 @@ _.Mounts =
 		i(21218),	-- Blue Qiraji Battle Tank
 		i(163578), 	-- Broken Highland Mustang
 		i(43951),	-- Bronze Drake
-		i(184160),	-- Bulbous Necroray 
+		i(184160),	-- Bulbous Necroray
 		--i(181818),	-- Chewed Reins of the Callow Flayedwing Source Unknown (NYI ATM)
 		i(147806),	-- Cloudwing Hippogryph
 		i(173887),	-- Clutch of Ha-Li
@@ -69,7 +69,7 @@ _.Mounts =
 		i(166705),	-- Glacial Tidestorm
 		i(153042),	-- Glorious Felcrusher Mount
 		i(166518),	-- G.M.O.D.
-		i(184062),	-- Gnawed Reins of the Battle-Bound Warhound(Battle-Bound Warhound in journal)
+		i(184062),	-- Gnawed Reins of the Battle-Bound Warhound (Battle-Bound Warhound in journal)
 		i(163573),	-- Goldenmane's Rein's
 		i(182084),	-- Gorespine
 		i(43959),	-- Grand Black War Mammoth (Alliance)
@@ -100,7 +100,7 @@ _.Mounts =
 		i(77069),	-- Life-Binder's Handmaiden
 		i(163646),	-- Lil' Donkey
 		i(138258),	-- Long-Forgotten Hippogryph
-		i(151623),	-- Lucid Nightmare Mount [Note: Drop's from Puzzler's Demise; a puzzle mount similar  to Kosumoth, Riddler's Mind Worm and Sun Darter Hatchling]
+		i(151623),	-- Lucid Nightmare Mount [Note: Drop's from Puzzler's Demise; a puzzle mount similar to Kosumoth, Riddler's Mind Worm and Sun Darter Hatchling]
 		i(152814),	-- Maddened Chaorunner
 		i(174653),	-- Mail Muncher
 		i(184167),	-- Mawsworn Soulhunter
@@ -126,7 +126,7 @@ _.Mounts =
 		i(32768),	-- Raven Lord
 		i(94291),	-- Red Primal Raptor
 		i(21321),	-- Red Qiraji Battle Tank
-		i(182081),	-- Reins of the Colossal Slaughterclaw(Colossal Slaughterclaw in journal)
+		i(182081),	-- Reins of the Colossal Slaughterclaw (Colossal Slaughterclaw in journal)
 		i(174841),	-- Ren's Stalwart Hound
 		i(147835),	-- Riddler's Mind-Worm
 		i(166466),	-- Risen Mare

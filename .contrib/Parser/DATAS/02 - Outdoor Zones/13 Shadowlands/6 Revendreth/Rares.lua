@@ -77,7 +77,7 @@ _.Zones =
 					["coord"] = { 62.6, 47.2, 1525 },
 					--["questID"] = ,
 					["isDaily"] = true,
-					["crs"] = { 166483 },	-- Seeker Hilda 
+					["crs"] = { 166483 },	-- Seeker Hilda
 					["g"] = {
 						i(180582),	-- Endmire Flyer Tether
 						ach(14310, crit(17)),	-- Adventurer of Revendreth / Famu the Infinite
@@ -136,7 +136,7 @@ _.Zones =
 									},
 								}),
 							},
-						}),					
+						}),
 					},
 				}),
 				n(166679, {	-- Hopecrusher

@@ -10,7 +10,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		},
 		["isRaid"] = true,
 		["order"] = "06",
-		["reqlvl"] = { 50 },
+		["lvl"] = { 50 },
 		["maps"] = {
 			1580,	-- Vision of Destiny
 			1581,	-- Annex of Prophecy
@@ -23,7 +23,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1595,	-- Maw of Gor'na
 			1596,	-- Warren of Decay
 			1597,	-- Chamber of Rebirth
-		--	,	-- Locus of Infinite Truth
+			--	,	-- Locus of Infinite Truth
 		},
 		["g"] = {
 			n(-852, {	-- Azerite Essences

@@ -78,7 +78,7 @@ _.Zones =
 					crit(1, {	-- Ornate Bone Shield
 						["objectID"] = 347444,	-- Ornate Bone Shield
 						["coord"] = { 47.2, 62.1, 1536 },
-					--	["questID"] = ,
+						--["questID"] = ,
 						["g"] = {
 							i(180749),	-- Hauk's Battle-Scarred Bulwark
 						},
@@ -127,9 +127,9 @@ _.Zones =
 						},
 					}),
 					crit(7, {	-- Sword of Oonar -- needs detailed description
-					--	["objectID"] = ,	-- Sword of Oonar
-					--	["coord"] = { 51.42, 48.47, 1536 },
-					--	["questID"] = ,
+						--["objectID"] = ,	-- Sword of Oonar
+						--["coord"] = { 51.42, 48.47, 1536 },
+						--["questID"] = ,
 						["g"] = {
 							i(181164),	-- Oonar's Arm
 							i(180273,	{	-- Sorrowbane
@@ -140,7 +140,7 @@ _.Zones =
 					crit(8, {	-- Forgotten Momentos
 						["objectID"] = 341424,	-- Forgotten Momentos
 						["coord"] = { 22.5, 30.5, 1536 },
-					--	["questID"] = ,
+						--["questID"] = ,
 					}),
 					crit(9, {	-- Chest of Eyes
 						["objectID"] = 345456,	-- Chest of Eyes
@@ -179,18 +179,16 @@ _.Zones =
 						["description"] = "Stand in the green Slime at |cFFFFFFFF60.4, 77.7|r for 10 Stacks of |cFFFFFFFFConcentrated Plague|r to get the Debuff |cFFFFFFFFPlaguefallen|r, then go to the cave at |cFFFFFFFF62.4, 76.5|r (under the plattform of Scunner) and use the pipe at the end of the cave to get to the chest.",
 						["g"] = {
 							i(183515),	-- Reanimated Plague
-						},						
+						},
 					}),
 					crit(14, {	-- Ritualist's Cache
 						["objectID"] = 345456,	-- Ritualist's Cache
 						["coord"] = { 64.67, 24.80, 1536 },
-					--	["questID"] = ,
+						--["questID"] = ,
 					}),
 				}),
 				ach(14751, {	-- The Gang's All Here
-					["g"] = {
-						i(182074),		-- Chosen Tauralus 
-					},
+					i(182074),		-- Chosen Tauralus
 				}),
 			}),
 		}),

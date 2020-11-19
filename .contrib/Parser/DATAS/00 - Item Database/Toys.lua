@@ -2,7 +2,7 @@ _.ItemDB = {};
 local t = function(itemID)
 	local item = { ["isToy"] = true, ["ignoreBonus"] = true };
 	_.ItemDB[itemID] = item;
-    return item;
+	return item;
 end
 
 t(116856);	-- "Blooming Rose" Contender's Costume
@@ -563,7 +563,6 @@ t(116691);	-- Zhevra Lounge Cushion
 ---------------
 -- PATCH 8.1 --
 ---------------
-
 t(166877);	-- Azerite Firework Launcher
 t(166808);	-- Bewitching Tea Set
 t(166743);	-- Blight Bomber
@@ -604,7 +603,6 @@ t(165791);	-- Worn Cloak
 -----------------
 -- PATCH 8.1.5 --
 -----------------
-
 t(168012);	-- Apexis Focusing Shard
 t(168014);	-- Banner of the Burning Blade
 t(168123);  -- Twitching Eyeball
@@ -615,7 +613,6 @@ t(166747);	-- Brewfest Reveler's Hearthstone
 -----------------
 -- PATCH 8.2.0 --
 -----------------
-
 t(169275);	-- Alliance War Banner
 t(169278);	-- Alliance War Standard
 t(169796);	-- Azeroth Mini Collection: Mechagon
@@ -673,7 +670,6 @@ t(174873);	-- Trans-mogu-rifier
 t(174995);	-- Void Tendril Pet Leash
 t(174921);	-- Void-Touched Skull
 t(174924);	-- Void-Touched Souvenir Totem
-
 
 -----------------
 -- PATCH 9.0.1 --

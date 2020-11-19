@@ -36,7 +36,7 @@ _.Achievements =
 			ach(14756),	-- Stygian Sample
 			ach(14233),	-- Tea Tales
 			ach(14758),	-- The World Beyond
-			ach(14737),	-- What Bastion Remembered	
+			ach(14737),	-- What Bastion Remembered
 		}),
 	}),
 };

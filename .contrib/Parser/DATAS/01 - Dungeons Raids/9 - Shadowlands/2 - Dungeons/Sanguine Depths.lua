@@ -8,7 +8,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["maps"] = {
 			1675,	-- Sanguine Depths
 		},
-		["lvl"] = 50,
+		["lvl"] = { 50 },
 		["g"] = {
 			n(QUESTS, {
 				q(60502,{	-- Sanguine Depths: An Ally Within
@@ -67,7 +67,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(2, {	-- Heroic
-				["lvl"] = 60,
+				["lvl"] = { 60 },
 				["g"] = {
 					e(2388, {	-- Kryxis the Voracious
 						["crs"] = { 162100 },	-- Kryxis the Voracious
@@ -122,7 +122,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			d(23, {	-- Mythic
 				["difficulties"] = { 8, 23 },
-				["lvl"] = 60,
+				["lvl"] = { 60 },
 				["g"] = {
 					n(ACHIEVEMENTS, {
 						ach(14290),	-- I Only Have Eyes For You

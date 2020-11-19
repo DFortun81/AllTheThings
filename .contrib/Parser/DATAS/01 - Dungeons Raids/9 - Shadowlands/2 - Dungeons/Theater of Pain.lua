@@ -8,22 +8,22 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["maps"] = {
 			1683,	-- Theater of Pain
 		},
-		["lvl"] = 50,
-		["g"] = {					
---			n(-34, {	-- World Quests
---			}),
+		["lvl"] = { 50 },
+		["g"] = {
+			--n(-34, {	-- World Quests
+			--}),
 			n(QUESTS, {
 				q(58095, {	-- Theater of Pain: Help Wanted
 					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
 					["coord"] = { 54.0, 50.8, 1536 },
 					["sourceQuest"] = 58090,	-- Side Effects
-					["lvl"] = 60,
+					["lvl"] = { 60 },
 					["maps"] = { 1536 },	-- Maldraxxus
 				}),
 			}),
 			d(1, {	-- Normal
 				e(2397, {	-- 	An Affront of Challengers
-					["crs"] = { 
+					["crs"] = {
 						164451,	-- Dessia the Decapitator
 						164463,	-- Paceran the Virulent
 						164461,	-- Sathel the Accursed
@@ -85,10 +85,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(2, {	-- Heroic
-				["lvl"] = 60,
+				["lvl"] = { 60 },
 				["g"] = {
 					e(2397, {	-- 	An Affront of Challengers
-						["crs"] = { 
+						["crs"] = {
 							164451,	-- Dessia the Decapitator
 							164463,	-- Paceran the Virulent
 							164461,	-- Sathel the Accursed
@@ -152,10 +152,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			d(23, {	-- Mythic
 				["difficulties"] = { 8, 23 },
-				["lvl"] = 60,
+				["lvl"] = { 60 },
 				["g"] = {
 					e(2397, {	-- 	An Affront of Challengers
-						["crs"] = { 
+						["crs"] = {
 							164451,	-- Dessia the Decapitator
 							164463,	-- Paceran the Virulent
 							164461,	-- Sathel the Accursed

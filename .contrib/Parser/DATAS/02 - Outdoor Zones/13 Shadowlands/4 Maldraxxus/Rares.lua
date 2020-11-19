@@ -140,7 +140,7 @@ _.Zones =
 					["coord"] = { 50.4, 48.2, 1536 },
 					--["questID"] = ,
 					["isDaily"] = true,
-					["description"] = "Requires a Necrolord Covenant to summon",
+					["description"] = "Requires a Necrolord Covenant to summon.",
 					["g"] = {
 						i(182083),	-- Bonecleaver'S Skullboar
 						i(181815),	-- Armored Bonehoof Tauralus
@@ -211,4 +211,3 @@ _.Zones =
 		}),
 	}),
 };
-					

@@ -8,8 +8,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["maps"] = {
 			1692,	-- Honor's Ascent
 		},
-		["lvl"] = 50,
-		["g"] = {					
+		["lvl"] = { 50 },
+		["g"] = {
 			d(1, {	-- Normal
 				e(2399, {	-- Kin-Tara
 					["crs"] = { 162059 },	-- Kin-Tara
@@ -44,7 +44,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(180118),	-- Anima Field Emitter
 						i(180117),	-- Empyreal Ordnance
 					},
-				}),	
+				}),
 				e(2412, {	-- 	Devos, Paragon of Doubt
 					["crs"] = { 167410 },	-- 	Devos, Paragon of Doubt
 					["g"] = {
@@ -60,7 +60,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(2, {	-- Heroic
-				["lvl"] = 60,
+				["lvl"] = { 60 },
 				["g"] = {
 					e(2399, {	-- Kin-Tara
 						["crs"] = { 162059 },	-- Kin-Tara
@@ -95,7 +95,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(180118),	-- Anima Field Emitter
 							i(180117),	-- Empyreal Ordnance
 						},
-					}),	
+					}),
 					e(2412, {	-- 	Devos, Paragon of Doubt
 						["crs"] = { 167410 },	-- 	Devos, Paragon of Doubt
 						["g"] = {
@@ -113,7 +113,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			d(23, {	-- Mythic
 				["difficulties"] = { 8, 23 },
-				["lvl"] = 60,
+				["lvl"] = { 60 },
 				["g"] = {
 					n(ACHIEVEMENTS, {
 						ach(14327),	-- I Can See My House From Here
@@ -152,7 +152,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(180118),	-- Anima Field Emitter
 							i(180117),	-- Empyreal Ordnance
 						},
-					}),	
+					}),
 					e(2412, {	-- 	Devos, Paragon of Doubt
 						["crs"] = { 167410 },	-- 	Devos, Paragon of Doubt
 						["g"] = {

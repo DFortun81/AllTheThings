@@ -164,7 +164,7 @@ _.Achievements =
 					["description"] = "Must earn with a female character.",
 				})),
 			})),
-			ach(13789),	-- Hertz Locker
+			un(REMOVED_FROM_GAME, ach(13789)),	-- Hertz Locker
 			un(REMOVED_FROM_GAME, ach(8903, {		-- Mistwalker
 				un(REMOVED_FROM_GAME, title(255)),	-- Mistwalker
 			})),

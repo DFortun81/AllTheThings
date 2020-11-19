@@ -9,19 +9,19 @@ _.Zones =
 			n(-169, {	-- Emissary Quests
 				q(61095, {	-- Supplies from The Undying Army
 					["provider"] = { "n", 173003 },	-- Nalcorn Talsen <Undying Army Quartermaster>
-					["lvl"] = 60,
+					["lvl"] = { 60 },
 					["coord"] = { 50.6, 53.4, 1536 },
 					["repeatable"] = true,
 					["g"] = {
 						i(180646, {	-- Supplies of the Undying Army
 							i(181269),	-- Suspended Corpse
-							i(182081),	-- Reins of the Colossal Slaughterclaw(Colossal Slaughterclaw in journal)
+							i(182081),	-- Reins of the Colossal Slaughterclaw (Colossal Slaughterclaw in journal)
 						}),
 					},
 				}),
 				q(62694, {	-- A Calling in Maldraxxus
 					["provider"] = { "n", 173003 },	-- Nalcorn Talsen <Undying Army Quartermaster>
-					["lvl"] = 60,
+					["lvl"] = { 60 },
 					["coord"] = { 50.6, 53.4, 1536 },
 					["repeatable"] = true,
 					["g"] = {

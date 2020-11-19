@@ -1,7 +1,7 @@
 _.ItemDB = {};
 local i = function(itemID, mountID)
 	local item = { ["itemID"] = itemID, ["mountID"] = mountID };
-	
+
 	_.ItemDB[itemID] = item;
 	return item;
 end
@@ -197,7 +197,6 @@ i(166775, 290133);	-- Vulpine Familiar
 i(166443, 288589);	-- Yellow Marsh Hopper
 i(142233, 238454);	-- Shadowy Reins of the Accursed Wrathsteed
 
-
 -----------------
 -- PATCH 8.1.5 --
 -----------------
@@ -205,7 +204,6 @@ i(167894, 294568);	-- Beastlord's Irontusk
 i(167895, 294569);	-- Beastlord's Warwolf
 i(168055, 295387);	-- Bloodflank Charger
 i(168056, 295386);	-- Ironclad Frostclaw
-
 
 -----------------
 -- PATCH 8.2.0 --
@@ -242,7 +240,6 @@ i(161667, 275840);	-- Voldunai Dunescraper
 i(169162, 290328);	-- Wonderwing 2.0
 i(167751, 294143);	-- X-995 Mechanocat
 i(153594, 256123);	-- Xiwyllag-ATV
-
 
 -----------------
 -- PATCH 8.2.5 --

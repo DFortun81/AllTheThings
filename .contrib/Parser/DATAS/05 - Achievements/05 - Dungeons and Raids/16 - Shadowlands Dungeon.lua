@@ -28,7 +28,7 @@ _.Achievements =
 				ach(14370),	-- Halls of Atonement
 				ach(14410),	-- Heroic: Halls of Atonement
 			}),
-			ach(14413, {	-- Mythic: Mists of Tirna Scithe			
+			ach(14413, {	-- Mythic: Mists of Tirna Scithe
 				ach(14371),	-- Mists of Tirna Scithe
 				ach(14412),	-- Heroic: Mists of Tirna Scithe
 			}),

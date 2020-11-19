@@ -9,7 +9,6 @@ _.Achievements =
 			ach(891),		-- Giddy Up! (Apprentice)
 			ach(889),		-- Fast and Furious (Journeyman)
 			ach(890),		-- Into The Wild Blue Yonder (Expert)
-			ach(892),		-- The Right Stuff (Artisan)
 		}),
 		ach(7380),		-- Double Agent
 		ach(12547, {	-- Epic (ilvl 340)

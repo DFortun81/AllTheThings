@@ -10,19 +10,19 @@ _.Instances = { tier(9, {	-- Shadowlands
 			1667,	-- Necrotic Wake
 			1668,	-- Necrotic Wake
 		},
-		["lvl"] = 50,
-		["g"] = {					
+		["lvl"] = { 50 },
+		["g"] = {
 			n(QUESTS, {
 				q(60057, {	-- Necrotic Wake: A Paragon's Plight
 					["provider"] = { "n", 167584 },	-- Disciple Apolon
 					["coord"] = { 40.9, 55.3, 1533 },
 					["sourceQuest"] = 60055,	-- A Time for Courage
-					["lvl"] = 50,
+					["lvl"] = { 50 },
 					["maps"] = { 1533 },	-- Bastion
 				}),
 			}),
---			n(-34, {	-- World Quests
---			}),
+			--n(-34, {	-- World Quests
+			--}),
 			d(1, {	-- Normal
 				e(2395, {	-- Blightbone
 					["crs"] = { 166880 },	-- Blightbone
@@ -59,7 +59,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(178751),	-- Spare Meat Hook
 						i(178772),	-- Satchel of Misbegotten Minions
 					},
-				}),	
+				}),
 				e(2396, {	-- Nalthor the Rimebinder
 					["crs"] = { 166945 },	-- Nalthor the Rimebinder
 					["g"] = {
@@ -75,7 +75,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(2, {	-- Heroic
-				["lvl"] = 60,
+				["lvl"] = { 60 },
 				["g"] = {
 					e(2395, {	-- Blightbone
 						["crs"] = { 166880 },	-- Blightbone
@@ -112,7 +112,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178751),	-- Spare Meat Hook
 							i(178772),	-- Satchel of Misbegotten Minions
 						},
-					}),	
+					}),
 					e(2396, {	-- Nalthor the Rimebinder
 						["crs"] = { 166945 },	-- Nalthor the Rimebinder
 						["g"] = {
@@ -130,7 +130,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			d(23, {	-- Mythic
 				["difficulties"] = { 8, 23 },
-				["lvl"] = 60,
+				["lvl"] = { 60 },
 				["g"] = {
 					e(2395, {	-- Blightbone
 						["crs"] = { 166880 },	-- Blightbone
@@ -169,7 +169,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178751),	-- Spare Meat Hook
 							i(178772),	-- Satchel of Misbegotten Minions
 						},
-					}),	
+					}),
 					e(2396, {	-- Nalthor the Rimebinder
 						["crs"] = { 166945 },	-- Nalthor the Rimebinder
 						["g"] = {

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.Craftables =
 {
 	tier(9, {	-- Shadowlands
@@ -9,7 +10,7 @@ _.Craftables =
 				i(173245),	-- Grim-Veiled Hood
 				i(173218),	-- Shadowlace Cowl
 				i(173197),	-- Shrouded Cloth Hood
-				i(180752),	-- Pink Party Hat 
+				i(180752),	-- Pink Party Hat
 			}),
 			n(-323, {	-- Chest
 				i(173241),	-- Grim-Veiled Robe

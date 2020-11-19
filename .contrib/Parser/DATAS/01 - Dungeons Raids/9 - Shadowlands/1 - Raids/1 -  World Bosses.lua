@@ -8,13 +8,13 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["ordered"] = true,
 		["isRaid"] = true,
 		["modID"] = 14,
-		["lvl"] = 60,
+		["lvl"] = { 60 },
 		["g"] = {
 			e(2430, {	-- Valinor, the Light of Eons
 				["isWeekly"] = true,
 				["questID"] = 61813,	-- Valinor, the Light of Eons (WQ)
 				["isRaid"] = true,
-			--	["coord"] = { 62.0, 24.0, 895 },
+				--["coord"] = { 62.0, 24.0, 895 },
 				["maps"] = {
 				},
 				["cr"] = 167524,	-- Valinor, the Light of Eons
@@ -32,9 +32,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			e(2431, {	-- Mortanis
 				["isWeekly"] = true,
-			--	["questID"] = ,	-- Mortanis (WQ)
+				--["questID"] = ,	-- Mortanis (WQ)
 				["isRaid"] = true,
-			--	["coord"] = { 62.0, 24.0, 895 },
+				--["coord"] = { 62.0, 24.0, 895 },
 				["maps"] = {
 				},
 				["cr"] = 173104,	-- Mortanis
@@ -54,7 +54,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				["isWeekly"] = true,
 				["questID"] = 61815,	-- Oranomonos the Everbranching (WQ)
 				["isRaid"] = true,
-			--	["coord"] = { 62.0, 24.0, 895 },
+				--["coord"] = { 62.0, 24.0, 895 },
 				["maps"] = {
 				},
 				["cr"] = 167527,	-- Oranomonos the Everbranching
@@ -72,9 +72,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			e(2433, {	-- Nurgash Muckformed
 				["isWeekly"] = true,
-			--	["questID"] = ,	-- Nurgash Muckformed (WQ)
+				--["questID"] = ,	-- Nurgash Muckformed (WQ)
 				["isRaid"] = true,
-			--	["coord"] = { 62.0, 24.0, 895 },
+				--["coord"] = { 62.0, 24.0, 895 },
 				["maps"] = {
 				},
 				["cr"] = 167526,	-- Nurgash Muckformed

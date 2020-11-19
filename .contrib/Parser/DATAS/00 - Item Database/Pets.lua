@@ -883,7 +883,6 @@ pet(113554, 1428);	-- Zomstrok
 pet(137298, 1903);	-- Zoom
 pet(166455, 2550);	-- Zur'aj the Depleted
 
-
 -----------------
 -- PATCH 9.0.1 --
 -----------------
@@ -1025,7 +1024,7 @@ pet(181267, 2957);	-- Writhing Spine
 
 -- pets in journal
 
--- Bastion 	23
+-- Bastion	23
 -- Mald		22
 -- Arden	21
 -- Raven	21

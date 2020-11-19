@@ -19,8 +19,7 @@ _.NeverImplemented =
 			["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 		},
 	n(-10100, {	-- Shadowlands
-		-- Mounts 
-		--
+		-- Mounts
 		un(NEVER_IMPLEMENTED, i(181818)),	-- Chewed Reins of the Callow Flayedwing Source Unknown (NYI ATM)
 	}),
 	n(-10052, {	-- BFA - Stuff that gets added later on 9.0 release
@@ -112,16 +111,16 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(150645)),	-- Mountainsage Sandals
 				un(NEVER_IMPLEMENTED, i(150650)),	-- Mountainsage Shoulderpads
 				un(NEVER_IMPLEMENTED, i(150652)),	-- Mountainsage Wristwraps
-				un(NEVER_IMPLEMENTED, i(46249)),    -- Kirin Tor Gauntlets
-				un(NEVER_IMPLEMENTED, i(46250)),    -- Kirin Tor Hood
-				un(NEVER_IMPLEMENTED, i(46251)),    -- Kirin Tor Leggings
-				un(NEVER_IMPLEMENTED, i(46252)),    -- Kirin Tor Shoulderpads
-				un(NEVER_IMPLEMENTED, i(46253)),    -- Kirin Tor Tunic
-				un(NEVER_IMPLEMENTED, i(48725)),    -- Khadgar's Gauntlets
-				un(NEVER_IMPLEMENTED, i(48726)),    -- Khadgar's Hood
-				un(NEVER_IMPLEMENTED, i(48727)),    -- Khadgar's Leggings
-				un(NEVER_IMPLEMENTED, i(48728)),    -- Khadgar's Robe
-				un(NEVER_IMPLEMENTED, i(48729)),    -- Khadgar's Shoulderpads
+				un(NEVER_IMPLEMENTED, i(46249)),	-- Kirin Tor Gauntlets
+				un(NEVER_IMPLEMENTED, i(46250)),	-- Kirin Tor Hood
+				un(NEVER_IMPLEMENTED, i(46251)),	-- Kirin Tor Leggings
+				un(NEVER_IMPLEMENTED, i(46252)),	-- Kirin Tor Shoulderpads
+				un(NEVER_IMPLEMENTED, i(46253)),	-- Kirin Tor Tunic
+				un(NEVER_IMPLEMENTED, i(48725)),	-- Khadgar's Gauntlets
+				un(NEVER_IMPLEMENTED, i(48726)),	-- Khadgar's Hood
+				un(NEVER_IMPLEMENTED, i(48727)),	-- Khadgar's Leggings
+				un(NEVER_IMPLEMENTED, i(48728)),	-- Khadgar's Robe
+				un(NEVER_IMPLEMENTED, i(48729)),	-- Khadgar's Shoulderpads
 				un(NEVER_IMPLEMENTED, i(48730)),	-- Sunstrider's Gauntlets of Conquest
 				un(NEVER_IMPLEMENTED, i(48731)),	-- Sunstrider's Hood of Conquest
 				un(NEVER_IMPLEMENTED, i(48732)),	-- Sunstrider's Leggings of Conquest
@@ -142,16 +141,16 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(78019)),	-- Replica Magister's Mantle
 				un(NEVER_IMPLEMENTED, i(78018)),	-- Replica Magister's Robes
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				un(NEVER_IMPLEMENTED, i(97006)), -- Gloves of the Chromatic Hydra
-				un(NEVER_IMPLEMENTED, i(97007)), -- Hood of the Chromatic Hydra
-				un(NEVER_IMPLEMENTED, i(97008)), -- Leggings of the Chromatic Hydra
-				un(NEVER_IMPLEMENTED, i(97009)), -- Robes of the Chromatic Hydra
-				un(NEVER_IMPLEMENTED, i(97010)), -- Mantle of the Chromatic Hydra
-				un(NEVER_IMPLEMENTED, i(96262)), -- Gloves of the Chromatic Hydra
-				un(NEVER_IMPLEMENTED, i(96263)), -- Hood of the Chromatic Hydra
-				un(NEVER_IMPLEMENTED, i(96264)), -- Leggings of the Chromatic Hydra
-				un(NEVER_IMPLEMENTED, i(96265)), -- Robes of the Chromatic Hydra
-				un(NEVER_IMPLEMENTED, i(96266)), -- Mantle of the Chromatic Hydra
+				un(NEVER_IMPLEMENTED, i(97006)),	-- Gloves of the Chromatic Hydra
+				un(NEVER_IMPLEMENTED, i(97007)),	-- Hood of the Chromatic Hydra
+				un(NEVER_IMPLEMENTED, i(97008)),	-- Leggings of the Chromatic Hydra
+				un(NEVER_IMPLEMENTED, i(97009)),	-- Robes of the Chromatic Hydra
+				un(NEVER_IMPLEMENTED, i(97010)),	-- Mantle of the Chromatic Hydra
+				un(NEVER_IMPLEMENTED, i(96262)),	-- Gloves of the Chromatic Hydra
+				un(NEVER_IMPLEMENTED, i(96263)),	-- Hood of the Chromatic Hydra
+				un(NEVER_IMPLEMENTED, i(96264)),	-- Leggings of the Chromatic Hydra
+				un(NEVER_IMPLEMENTED, i(96265)),	-- Robes of the Chromatic Hydra
+				un(NEVER_IMPLEMENTED, i(96266)),	-- Mantle of the Chromatic Hydra
 				un(NEVER_IMPLEMENTED, i(88251)),	-- gladiators silk amice
 				un(NEVER_IMPLEMENTED, i(88252)),	-- gladiators silk cowl
 				un(NEVER_IMPLEMENTED, i(88253)),	-- gladiators silk handguards
@@ -159,16 +158,16 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(88255)),	-- gladiators silk trousers
 			}),
 			cl(PRIEST, {
-				un(NEVER_IMPLEMENTED, i(46230)),    -- Circlet of Sanctification
-				un(NEVER_IMPLEMENTED, i(46231)),    -- Cowl of Sanctification
-				un(NEVER_IMPLEMENTED, i(46247)),    -- Gloves of Sanctification
-				un(NEVER_IMPLEMENTED, i(46248)),    -- Handwraps of Sanctification
-				un(NEVER_IMPLEMENTED, i(46254)),    -- Leggings of Sanctification
-				un(NEVER_IMPLEMENTED, i(46255)),    -- Mantle of Sanctification
-				un(NEVER_IMPLEMENTED, i(46256)),    -- Pants of Sanctification
-				un(NEVER_IMPLEMENTED, i(46257)),    -- Rainments of Sanctification
-				un(NEVER_IMPLEMENTED, i(46258)),    -- Robe of Sanctification
-				un(NEVER_IMPLEMENTED, i(46259)),    -- Shoulderpads of Sanctification
+				un(NEVER_IMPLEMENTED, i(46230)),	-- Circlet of Sanctification
+				un(NEVER_IMPLEMENTED, i(46231)),	-- Cowl of Sanctification
+				un(NEVER_IMPLEMENTED, i(46247)),	-- Gloves of Sanctification
+				un(NEVER_IMPLEMENTED, i(46248)),	-- Handwraps of Sanctification
+				un(NEVER_IMPLEMENTED, i(46254)),	-- Leggings of Sanctification
+				un(NEVER_IMPLEMENTED, i(46255)),	-- Mantle of Sanctification
+				un(NEVER_IMPLEMENTED, i(46256)),	-- Pants of Sanctification
+				un(NEVER_IMPLEMENTED, i(46257)),	-- Rainments of Sanctification
+				un(NEVER_IMPLEMENTED, i(46258)),	-- Robe of Sanctification
+				un(NEVER_IMPLEMENTED, i(46259)),	-- Shoulderpads of Sanctification
 				un(NEVER_IMPLEMENTED, i(88241)),	-- gladiators satin gloves
 				un(NEVER_IMPLEMENTED, i(88242)),	-- gladiators satin hood
 				un(NEVER_IMPLEMENTED, i(88243)),	-- gladiators satin leggings
@@ -222,26 +221,26 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(78035)),	-- Replica Devout Sandals
 				un(NEVER_IMPLEMENTED, i(78032)),	-- Replica Devout Skirt
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				un(NEVER_IMPLEMENTED, i(97041)), -- Handwraps of the Exorcist
-				un(NEVER_IMPLEMENTED, i(97042)), -- Cowl of the Exorcist
-				un(NEVER_IMPLEMENTED, i(97043)), -- Legwraps of the Exorcist
-				un(NEVER_IMPLEMENTED, i(97044)), -- Robes of the Exorcist
-				un(NEVER_IMPLEMENTED, i(97045)), -- Mantle of the Exorcist
-				un(NEVER_IMPLEMENTED, i(97046)), -- Gloves of the Exorcist
-				un(NEVER_IMPLEMENTED, i(97047)), -- Hood of the Exorcist
-				un(NEVER_IMPLEMENTED, i(97048)), -- Leggings of the Exorcist
-				un(NEVER_IMPLEMENTED, i(97049)), -- Raiment of the Exorcist
-				un(NEVER_IMPLEMENTED, i(97050)), -- Shoulderguards of the Exorcist
-				un(NEVER_IMPLEMENTED, i(96297)), -- Handwraps of the Exorcist
-				un(NEVER_IMPLEMENTED, i(96298)), -- Cowl of the Exorcist
-				un(NEVER_IMPLEMENTED, i(96299)), -- Legwraps of the Exorcist
-				un(NEVER_IMPLEMENTED, i(96300)), -- Robes of the Exorcist
-				un(NEVER_IMPLEMENTED, i(96301)), -- Mantle of the Exorcist
-				un(NEVER_IMPLEMENTED, i(96302)), -- Gloves of the Exorcist
-				un(NEVER_IMPLEMENTED, i(96303)), -- Hood of the Exorcist
-				un(NEVER_IMPLEMENTED, i(96304)), -- Leggings of the Exorcist
-				un(NEVER_IMPLEMENTED, i(96305)), -- Raiment of the Exorcist
-				un(NEVER_IMPLEMENTED, i(96306)), -- Shoulderguards of the Exorcist
+				un(NEVER_IMPLEMENTED, i(97041)),	-- Handwraps of the Exorcist
+				un(NEVER_IMPLEMENTED, i(97042)),	-- Cowl of the Exorcist
+				un(NEVER_IMPLEMENTED, i(97043)),	-- Legwraps of the Exorcist
+				un(NEVER_IMPLEMENTED, i(97044)),	-- Robes of the Exorcist
+				un(NEVER_IMPLEMENTED, i(97045)),	-- Mantle of the Exorcist
+				un(NEVER_IMPLEMENTED, i(97046)),	-- Gloves of the Exorcist
+				un(NEVER_IMPLEMENTED, i(97047)),	-- Hood of the Exorcist
+				un(NEVER_IMPLEMENTED, i(97048)),	-- Leggings of the Exorcist
+				un(NEVER_IMPLEMENTED, i(97049)),	-- Raiment of the Exorcist
+				un(NEVER_IMPLEMENTED, i(97050)),	-- Shoulderguards of the Exorcist
+				un(NEVER_IMPLEMENTED, i(96297)),	-- Handwraps of the Exorcist
+				un(NEVER_IMPLEMENTED, i(96298)),	-- Cowl of the Exorcist
+				un(NEVER_IMPLEMENTED, i(96299)),	-- Legwraps of the Exorcist
+				un(NEVER_IMPLEMENTED, i(96300)),	-- Robes of the Exorcist
+				un(NEVER_IMPLEMENTED, i(96301)),	-- Mantle of the Exorcist
+				un(NEVER_IMPLEMENTED, i(96302)),	-- Gloves of the Exorcist
+				un(NEVER_IMPLEMENTED, i(96303)),	-- Hood of the Exorcist
+				un(NEVER_IMPLEMENTED, i(96304)),	-- Leggings of the Exorcist
+				un(NEVER_IMPLEMENTED, i(96305)),	-- Raiment of the Exorcist
+				un(NEVER_IMPLEMENTED, i(96306)),	-- Shoulderguards of the Exorcist
 				un(NEVER_IMPLEMENTED, i(167111)),	-- Unknown
 				un(NEVER_IMPLEMENTED, i(167112)),	-- Unknown
 				un(NEVER_IMPLEMENTED, i(167113)),	-- Unknown
@@ -296,16 +295,16 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(78048)),	-- Replica Dreadmist Sandals
 				un(NEVER_IMPLEMENTED, i(78046)),	-- Replica Dreadmist Wraps
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				un(NEVER_IMPLEMENTED, i(97097)), -- Gloves of the Thousandfold Hells
-				un(NEVER_IMPLEMENTED, i(97098)), -- Hood of the Thousandfold Hells
-				un(NEVER_IMPLEMENTED, i(97099)), -- Leggings of the Thousandfold Hells
-				un(NEVER_IMPLEMENTED, i(97100)), -- Robes of the Thousandfold Hells
-				un(NEVER_IMPLEMENTED, i(97101)), -- Mantle of the Thousandfold Hells
-				un(NEVER_IMPLEMENTED, i(96353)), -- Gloves of the Thousandfold Hells
-				un(NEVER_IMPLEMENTED, i(96354)), -- Hood of the Thousandfold Hells
-				un(NEVER_IMPLEMENTED, i(96355)), -- Leggings of the Thousandfold Hells
-				un(NEVER_IMPLEMENTED, i(96356)), -- Robes of the Thousandfold Hells
-				un(NEVER_IMPLEMENTED, i(96357)), -- Mantle of the Thousandfold Hells
+				un(NEVER_IMPLEMENTED, i(97097)),	-- Gloves of the Thousandfold Hells
+				un(NEVER_IMPLEMENTED, i(97098)),	-- Hood of the Thousandfold Hells
+				un(NEVER_IMPLEMENTED, i(97099)),	-- Leggings of the Thousandfold Hells
+				un(NEVER_IMPLEMENTED, i(97100)),	-- Robes of the Thousandfold Hells
+				un(NEVER_IMPLEMENTED, i(97101)),	-- Mantle of the Thousandfold Hells
+				un(NEVER_IMPLEMENTED, i(96353)),	-- Gloves of the Thousandfold Hells
+				un(NEVER_IMPLEMENTED, i(96354)),	-- Hood of the Thousandfold Hells
+				un(NEVER_IMPLEMENTED, i(96355)),	-- Leggings of the Thousandfold Hells
+				un(NEVER_IMPLEMENTED, i(96356)),	-- Robes of the Thousandfold Hells
+				un(NEVER_IMPLEMENTED, i(96357)),	-- Mantle of the Thousandfold Hells
 			}),
 			un(NEVER_IMPLEMENTED, i(6243)),		-- Green Woolen Robe
 			un(NEVER_IMPLEMENTED, i(105710)),	-- Lasso Bracers, Humanoid
@@ -326,7 +325,7 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(109363)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109379)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(147036)),	-- Fel-Stippled Legguards 								(removed Beta)
-			un(NEVER_IMPLEMENTED, i(147058)), 	-- Chaos-Calming Wristguards 							(removed Beta)
+			un(NEVER_IMPLEMENTED, i(147058)),	-- Chaos-Calming Wristguards 							(removed Beta)
 			un(NEVER_IMPLEMENTED, i(147074)),	-- Vambraces of Resoulte Justice
 			un(NEVER_IMPLEMENTED, i(109398)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109405)),	-- Unknown
@@ -499,46 +498,46 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(78066)),	-- Replica Wildheart Spaulders
 				un(NEVER_IMPLEMENTED, i(78065)),	-- Replica Wildheart Vest
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				un(NEVER_IMPLEMENTED, i(96951)), -- Raiment of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96952)), -- Grips of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96953)), -- Headpiece of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96954)), -- Legguards of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96955)), -- Spaulders of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96956)), -- Handwraps of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96957)), -- Helm of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96958)), -- Legwraps of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96959)), -- Robes of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96960)), -- Mantle of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96961)), -- Gloves of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96962)), -- Cover of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96963)), -- Leggings of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96964)), -- Vestment of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96965)), -- Shoulderwraps of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96966)), -- Tunic of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96967)), -- Handguards of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96968)), -- Headguard of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96969)), -- Breeches of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96970)), -- Shoulderguards of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96207)), -- Raiment of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96208)), -- Grips of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96209)), -- Headpiece of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96210)), -- Legguards of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96211)), -- Spaulders of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96212)), -- Handwraps of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96213)), -- Helm of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96214)), -- Legwraps of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96215)), -- Robes of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96216)), -- Mantle of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96217)), -- Gloves of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96218)), -- Cover of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96219)), -- Leggings of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96220)), -- Vestment of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96221)), -- Shoulderwraps of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96222)), -- Tunic of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96223)), -- Handguards of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96224)), -- Headguard of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96225)), -- Breeches of the Haunted Forest
-				un(NEVER_IMPLEMENTED, i(96226)), -- Shoulderguards of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96951)),	-- Raiment of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96952)),	-- Grips of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96953)),	-- Headpiece of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96954)),	-- Legguards of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96955)),	-- Spaulders of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96956)),	-- Handwraps of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96957)),	-- Helm of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96958)),	-- Legwraps of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96959)),	-- Robes of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96960)),	-- Mantle of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96961)),	-- Gloves of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96962)),	-- Cover of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96963)),	-- Leggings of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96964)),	-- Vestment of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96965)),	-- Shoulderwraps of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96966)),	-- Tunic of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96967)),	-- Handguards of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96968)),	-- Headguard of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96969)),	-- Breeches of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96970)),	-- Shoulderguards of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96207)),	-- Raiment of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96208)),	-- Grips of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96209)),	-- Headpiece of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96210)),	-- Legguards of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96211)),	-- Spaulders of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96212)),	-- Handwraps of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96213)),	-- Helm of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96214)),	-- Legwraps of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96215)),	-- Robes of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96216)),	-- Mantle of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96217)),	-- Gloves of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96218)),	-- Cover of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96219)),	-- Leggings of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96220)),	-- Vestment of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96221)),	-- Shoulderwraps of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96222)),	-- Tunic of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96223)),	-- Handguards of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96224)),	-- Headguard of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96225)),	-- Breeches of the Haunted Forest
+				un(NEVER_IMPLEMENTED, i(96226)),	-- Shoulderguards of the Haunted Forest
 			}),
 			cl(ROGUE, {
 				un(NEVER_IMPLEMENTED, i(48804)),	-- Garona's Breastplate of Conquest
@@ -565,51 +564,51 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(78085)),	-- Replica Shadowcraft Spaulders
 				un(NEVER_IMPLEMENTED, i(78079)),	-- Replica Shadowcraft Tunic
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				un(NEVER_IMPLEMENTED, i(97051)), -- Nine-Tailed Tunic
-				un(NEVER_IMPLEMENTED, i(97052)), -- Nine-Tailed Gloves
-				un(NEVER_IMPLEMENTED, i(97053)), -- Nine-Tailed Helmet
-				un(NEVER_IMPLEMENTED, i(97054)), -- Nine-Tailed Legguards
-				un(NEVER_IMPLEMENTED, i(97055)), -- Nine-Tailed Spaulders
-				un(NEVER_IMPLEMENTED, i(97051)), -- Nine-Tailed Tunic
-				un(NEVER_IMPLEMENTED, i(97052)), -- Nine-Tailed Gloves
-				un(NEVER_IMPLEMENTED, i(97053)), -- Nine-Tailed Helmet
-				un(NEVER_IMPLEMENTED, i(97054)), -- Nine-Tailed Legguards
-				un(NEVER_IMPLEMENTED, i(97055)), -- Nine-Tailed Spaulders
+				un(NEVER_IMPLEMENTED, i(97051)),	-- Nine-Tailed Tunic
+				un(NEVER_IMPLEMENTED, i(97052)),	-- Nine-Tailed Gloves
+				un(NEVER_IMPLEMENTED, i(97053)),	-- Nine-Tailed Helmet
+				un(NEVER_IMPLEMENTED, i(97054)),	-- Nine-Tailed Legguards
+				un(NEVER_IMPLEMENTED, i(97055)),	-- Nine-Tailed Spaulders
+				un(NEVER_IMPLEMENTED, i(97051)),	-- Nine-Tailed Tunic
+				un(NEVER_IMPLEMENTED, i(97052)),	-- Nine-Tailed Gloves
+				un(NEVER_IMPLEMENTED, i(97053)),	-- Nine-Tailed Helmet
+				un(NEVER_IMPLEMENTED, i(97054)),	-- Nine-Tailed Legguards
+				un(NEVER_IMPLEMENTED, i(97055)),	-- Nine-Tailed Spaulders
 				-- Transmog set item that never became available
 				un(NEVER_IMPLEMENTED, i(130327)),	-- Artful Britches
 			}),
 			cl(MONK, {
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				un(NEVER_IMPLEMENTED, i(97011)), -- Fire-Charm Tunic
-				un(NEVER_IMPLEMENTED, i(97012)), -- Fire-Charm Grips
-				un(NEVER_IMPLEMENTED, i(97013)), -- Fire-Charm Headpiece
-				un(NEVER_IMPLEMENTED, i(97014)), -- Fire-Charm Leggings
-				un(NEVER_IMPLEMENTED, i(97015)), -- Fire-Charm Spaulders
-				un(NEVER_IMPLEMENTED, i(97016)), -- Fire-Charm Handwraps
-				un(NEVER_IMPLEMENTED, i(97017)), -- Fire-Charm Helm
-				un(NEVER_IMPLEMENTED, i(97018)), -- Fire-Charm Legwraps
-				un(NEVER_IMPLEMENTED, i(97019)), -- Fire-Charm Vest
-				un(NEVER_IMPLEMENTED, i(97020)), -- Fire-Charm Mantle
-				un(NEVER_IMPLEMENTED, i(97021)), -- Fire-Charm Chestguard
-				un(NEVER_IMPLEMENTED, i(97022)), -- Fire-Charm Gauntlets
-				un(NEVER_IMPLEMENTED, i(97023)), -- Fire-Charm Crown
-				un(NEVER_IMPLEMENTED, i(97024)), -- Fire-Charm Legguards
-				un(NEVER_IMPLEMENTED, i(97025)), -- Fire-Charm Shoulderguards
-				un(NEVER_IMPLEMENTED, i(96267)), -- Fire-Charm Tunic
-				un(NEVER_IMPLEMENTED, i(96268)), -- Fire-Charm Grips
-				un(NEVER_IMPLEMENTED, i(96269)), -- Fire-Charm Headpiece
-				un(NEVER_IMPLEMENTED, i(96270)), -- Fire-Charm Leggings
-				un(NEVER_IMPLEMENTED, i(96271)), -- Fire-Charm Spaulders
-				un(NEVER_IMPLEMENTED, i(96272)), -- Fire-Charm Handwraps
-				un(NEVER_IMPLEMENTED, i(96273)), -- Fire-Charm Helm
-				un(NEVER_IMPLEMENTED, i(96274)), -- Fire-Charm Legwraps
-				un(NEVER_IMPLEMENTED, i(96275)), -- Fire-Charm Vest
-				un(NEVER_IMPLEMENTED, i(96276)), -- Fire-Charm Mantle
-				un(NEVER_IMPLEMENTED, i(96277)), -- Fire-Charm Chestguard
-				un(NEVER_IMPLEMENTED, i(96278)), -- Fire-Charm Gauntlets
-				un(NEVER_IMPLEMENTED, i(96279)), -- Fire-Charm Crown
-				un(NEVER_IMPLEMENTED, i(96280)), -- Fire-Charm Legguards
-				un(NEVER_IMPLEMENTED, i(96281)), -- Fire-Charm Shoulderguards
+				un(NEVER_IMPLEMENTED, i(97011)),	-- Fire-Charm Tunic
+				un(NEVER_IMPLEMENTED, i(97012)),	-- Fire-Charm Grips
+				un(NEVER_IMPLEMENTED, i(97013)),	-- Fire-Charm Headpiece
+				un(NEVER_IMPLEMENTED, i(97014)),	-- Fire-Charm Leggings
+				un(NEVER_IMPLEMENTED, i(97015)),	-- Fire-Charm Spaulders
+				un(NEVER_IMPLEMENTED, i(97016)),	-- Fire-Charm Handwraps
+				un(NEVER_IMPLEMENTED, i(97017)),	-- Fire-Charm Helm
+				un(NEVER_IMPLEMENTED, i(97018)),	-- Fire-Charm Legwraps
+				un(NEVER_IMPLEMENTED, i(97019)),	-- Fire-Charm Vest
+				un(NEVER_IMPLEMENTED, i(97020)),	-- Fire-Charm Mantle
+				un(NEVER_IMPLEMENTED, i(97021)),	-- Fire-Charm Chestguard
+				un(NEVER_IMPLEMENTED, i(97022)),	-- Fire-Charm Gauntlets
+				un(NEVER_IMPLEMENTED, i(97023)),	-- Fire-Charm Crown
+				un(NEVER_IMPLEMENTED, i(97024)),	-- Fire-Charm Legguards
+				un(NEVER_IMPLEMENTED, i(97025)),	-- Fire-Charm Shoulderguards
+				un(NEVER_IMPLEMENTED, i(96267)),	-- Fire-Charm Tunic
+				un(NEVER_IMPLEMENTED, i(96268)),	-- Fire-Charm Grips
+				un(NEVER_IMPLEMENTED, i(96269)),	-- Fire-Charm Headpiece
+				un(NEVER_IMPLEMENTED, i(96270)),	-- Fire-Charm Leggings
+				un(NEVER_IMPLEMENTED, i(96271)),	-- Fire-Charm Spaulders
+				un(NEVER_IMPLEMENTED, i(96272)),	-- Fire-Charm Handwraps
+				un(NEVER_IMPLEMENTED, i(96273)),	-- Fire-Charm Helm
+				un(NEVER_IMPLEMENTED, i(96274)),	-- Fire-Charm Legwraps
+				un(NEVER_IMPLEMENTED, i(96275)),	-- Fire-Charm Vest
+				un(NEVER_IMPLEMENTED, i(96276)),	-- Fire-Charm Mantle
+				un(NEVER_IMPLEMENTED, i(96277)),	-- Fire-Charm Chestguard
+				un(NEVER_IMPLEMENTED, i(96278)),	-- Fire-Charm Gauntlets
+				un(NEVER_IMPLEMENTED, i(96279)),	-- Fire-Charm Crown
+				un(NEVER_IMPLEMENTED, i(96280)),	-- Fire-Charm Legguards
+				un(NEVER_IMPLEMENTED, i(96281)),	-- Fire-Charm Shoulderguards
 			}),
 			un(NEVER_IMPLEMENTED, i(27719)),	-- Aldor Leggings of Puissance (never made it to live)
 			un(NEVER_IMPLEMENTED, i(54685)),	-- Archer's Jerkin
@@ -910,36 +909,36 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(78098)),	-- Replica Beaststalker's Pants
 				un(NEVER_IMPLEMENTED, i(78096)),	-- Replica Beaststalker's Tunic
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				un(NEVER_IMPLEMENTED, i(97056)), -- Tunic of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(97057)), -- Handwraps of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(97058)), -- Faceguard of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(97059)), -- Legwraps of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(97060)), -- Mantle of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(97061)), -- Cuirass of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(97062)), -- Grips of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(97063)), -- Helmet of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(97064)), -- Legguards of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(97065)), -- Spaulders of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(97066)), -- Hauberk of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(97067)), -- Gloves of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(97068)), -- Headpiece of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(97069)), -- Kilt of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(97070)), -- Shoulderwraps of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96312)), -- Tunic of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96313)), -- Handwraps of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96314)), -- Faceguard of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96315)), -- Legwraps of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96316)), -- Mantle of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96317)), -- Cuirass of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96318)), -- Grips of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96319)), -- Helmet of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96320)), -- Legguards of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96321)), -- Spaulders of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96322)), -- Hauberk of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96323)), -- Gloves of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96324)), -- Headpiece of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96325)), -- Kilt of the Witch Doctor
-				un(NEVER_IMPLEMENTED, i(96326)), -- Shoulderwraps of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97056)),	-- Tunic of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97057)),	-- Handwraps of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97058)),	-- Faceguard of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97059)),	-- Legwraps of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97060)),	-- Mantle of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97061)),	-- Cuirass of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97062)),	-- Grips of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97063)),	-- Helmet of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97064)),	-- Legguards of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97065)),	-- Spaulders of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97066)),	-- Hauberk of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97067)),	-- Gloves of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97068)),	-- Headpiece of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97069)),	-- Kilt of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(97070)),	-- Shoulderwraps of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96312)),	-- Tunic of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96313)),	-- Handwraps of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96314)),	-- Faceguard of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96315)),	-- Legwraps of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96316)),	-- Mantle of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96317)),	-- Cuirass of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96318)),	-- Grips of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96319)),	-- Helmet of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96320)),	-- Legguards of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96321)),	-- Spaulders of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96322)),	-- Hauberk of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96323)),	-- Gloves of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96324)),	-- Headpiece of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96325)),	-- Kilt of the Witch Doctor
+				un(NEVER_IMPLEMENTED, i(96326)),	-- Shoulderwraps of the Witch Doctor
 				-- Not added boosted Gear
 				un(NEVER_IMPLEMENTED, i(122010)),	-- Stormseeker vest
 				un(NEVER_IMPLEMENTED, i(122012)),	-- Stormseeker sabatons
@@ -1016,16 +1015,16 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(78121)),	-- Replica Pauldrons of Elements
 				un(NEVER_IMPLEMENTED, i(78124)),	-- Replica Vest of Elements
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				un(NEVER_IMPLEMENTED, i(96998)), -- Saurok Stalker's Tunic
-				un(NEVER_IMPLEMENTED, i(96999)), -- Saurok Stalker's Gloves
-				un(NEVER_IMPLEMENTED, i(97000)), -- Saurok Stalker's Headguard
-				un(NEVER_IMPLEMENTED, i(97001)), -- Saurok Stalker's Legguards
-				un(NEVER_IMPLEMENTED, i(97002)), -- Saurok Stalker's Spaulders
-				un(NEVER_IMPLEMENTED, i(96254)), -- Saurok Stalker's Tunic
-				un(NEVER_IMPLEMENTED, i(96255)), -- Saurok Stalker's Gloves
-				un(NEVER_IMPLEMENTED, i(96256)), -- Saurok Stalker's Headguard
-				un(NEVER_IMPLEMENTED, i(96257)), -- Saurok Stalker's Legguards
-				un(NEVER_IMPLEMENTED, i(96258)), -- Saurok Stalker's Spaulders
+				un(NEVER_IMPLEMENTED, i(96998)),	-- Saurok Stalker's Tunic
+				un(NEVER_IMPLEMENTED, i(96999)),	-- Saurok Stalker's Gloves
+				un(NEVER_IMPLEMENTED, i(97000)),	-- Saurok Stalker's Headguard
+				un(NEVER_IMPLEMENTED, i(97001)),	-- Saurok Stalker's Legguards
+				un(NEVER_IMPLEMENTED, i(97002)),	-- Saurok Stalker's Spaulders
+				un(NEVER_IMPLEMENTED, i(96254)),	-- Saurok Stalker's Tunic
+				un(NEVER_IMPLEMENTED, i(96255)),	-- Saurok Stalker's Gloves
+				un(NEVER_IMPLEMENTED, i(96256)),	-- Saurok Stalker's Headguard
+				un(NEVER_IMPLEMENTED, i(96257)),	-- Saurok Stalker's Legguards
+				un(NEVER_IMPLEMENTED, i(96258)),	-- Saurok Stalker's Spaulders
 			}),
 				-- Future Emsembles!!
 			un(NEVER_IMPLEMENTED, i(163286)),	-- honorbound vanguard's footguards
@@ -1253,26 +1252,26 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(157661)),	-- Heart-Lesion Helm
 				un(NEVER_IMPLEMENTED, i(157663)),	-- Heart-Lesion Pauldrons
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				un(NEVER_IMPLEMENTED, i(96941)), -- Breastplate of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96942)), -- Gauntlets of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96943)), -- Helmet of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96944)), -- Greaves of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96945)), -- Pauldrons of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96946)), -- Chestguard of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96947)), -- Handguards of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96948)), -- Faceguard of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96949)), -- Legguards of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96950)), -- Shoulderguards of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96197)), -- Breastplate of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96198)), -- Gauntlets of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96199)), -- Helmet of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96200)), -- Greaves of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96201)), -- Pauldrons of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96202)), -- Chestguard of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96203)), -- Handguards of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96204)), -- Faceguard of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96205)), -- Legguards of the All-Consuming Maw
-				un(NEVER_IMPLEMENTED, i(96206)), -- Shoulderguards of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96941)),	-- Breastplate of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96942)),	-- Gauntlets of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96943)),	-- Helmet of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96944)),	-- Greaves of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96945)),	-- Pauldrons of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96946)),	-- Chestguard of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96947)),	-- Handguards of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96948)),	-- Faceguard of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96949)),	-- Legguards of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96950)),	-- Shoulderguards of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96197)),	-- Breastplate of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96198)),	-- Gauntlets of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96199)),	-- Helmet of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96200)),	-- Greaves of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96201)),	-- Pauldrons of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96202)),	-- Chestguard of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96203)),	-- Handguards of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96204)),	-- Faceguard of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96205)),	-- Legguards of the All-Consuming Maw
+				un(NEVER_IMPLEMENTED, i(96206)),	-- Shoulderguards of the All-Consuming Maw
 			}),
 			cl(PALADIN, {
 				un(NEVER_IMPLEMENTED, i(48905)),	-- Liadrin's Tunic of Conquest
@@ -1312,36 +1311,36 @@ _.NeverImplemented =
 				un(NEVER_IMPLEMENTED, i(78138)),	-- Replica Lightforge Legplates
 				un(NEVER_IMPLEMENTED, i(78141)),	-- Replica Lightforge Spaulders
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				un(NEVER_IMPLEMENTED, i(97026)), -- Lightning Emperor's Battleplate
-				un(NEVER_IMPLEMENTED, i(97027)), -- Lightning Emperor's Gauntlets
-				un(NEVER_IMPLEMENTED, i(97028)), -- Lightning Emperor's Helmet
-				un(NEVER_IMPLEMENTED, i(97029)), -- Lightning Emperor's Legplates
-				un(NEVER_IMPLEMENTED, i(97030)), -- Lightning Emperor's Pauldrons
-				un(NEVER_IMPLEMENTED, i(97031)), -- Lightning Emperor's Breastplate
-				un(NEVER_IMPLEMENTED, i(97032)), -- Lightning Emperor's Gloves
-				un(NEVER_IMPLEMENTED, i(97033)), -- Lightning Emperor's Headguard
-				un(NEVER_IMPLEMENTED, i(97034)), -- Lightning Emperor's Greaves
-				un(NEVER_IMPLEMENTED, i(97035)), -- Lightning Emperor's Mantle
-				un(NEVER_IMPLEMENTED, i(97036)), -- Lightning Emperor's Chestguard
-				un(NEVER_IMPLEMENTED, i(97037)), -- Lightning Emperor's Handguards
-				un(NEVER_IMPLEMENTED, i(97038)), -- Lightning Emperor's Faceguard
-				un(NEVER_IMPLEMENTED, i(97039)), -- Lightning Emperor's Legguards
-				un(NEVER_IMPLEMENTED, i(97040)), -- Lightning Emperor's Shoulderguards
-				un(NEVER_IMPLEMENTED, i(96282)), -- Lightning Emperor's Battleplate
-				un(NEVER_IMPLEMENTED, i(96283)), -- Lightning Emperor's Gauntlets
-				un(NEVER_IMPLEMENTED, i(96284)), -- Lightning Emperor's Helmet
-				un(NEVER_IMPLEMENTED, i(96285)), -- Lightning Emperor's Legplates
-				un(NEVER_IMPLEMENTED, i(96286)), -- Lightning Emperor's Pauldrons
-				un(NEVER_IMPLEMENTED, i(96287)), -- Lightning Emperor's Breastplate
-				un(NEVER_IMPLEMENTED, i(96288)), -- Lightning Emperor's Gloves
-				un(NEVER_IMPLEMENTED, i(96289)), -- Lightning Emperor's Headguard
-				un(NEVER_IMPLEMENTED, i(96290)), -- Lightning Emperor's Greaves
-				un(NEVER_IMPLEMENTED, i(96291)), -- Lightning Emperor's Mantle
-				un(NEVER_IMPLEMENTED, i(96292)), -- Lightning Emperor's Chestguard
-				un(NEVER_IMPLEMENTED, i(96293)), -- Lightning Emperor's Handguards
-				un(NEVER_IMPLEMENTED, i(96294)), -- Lightning Emperor's Faceguard
-				un(NEVER_IMPLEMENTED, i(96295)), -- Lightning Emperor's Legguards
-				un(NEVER_IMPLEMENTED, i(96296)), -- Lightning Emperor's Shoulderguards
+				un(NEVER_IMPLEMENTED, i(97026)),	-- Lightning Emperor's Battleplate
+				un(NEVER_IMPLEMENTED, i(97027)),	-- Lightning Emperor's Gauntlets
+				un(NEVER_IMPLEMENTED, i(97028)),	-- Lightning Emperor's Helmet
+				un(NEVER_IMPLEMENTED, i(97029)),	-- Lightning Emperor's Legplates
+				un(NEVER_IMPLEMENTED, i(97030)),	-- Lightning Emperor's Pauldrons
+				un(NEVER_IMPLEMENTED, i(97031)),	-- Lightning Emperor's Breastplate
+				un(NEVER_IMPLEMENTED, i(97032)),	-- Lightning Emperor's Gloves
+				un(NEVER_IMPLEMENTED, i(97033)),	-- Lightning Emperor's Headguard
+				un(NEVER_IMPLEMENTED, i(97034)),	-- Lightning Emperor's Greaves
+				un(NEVER_IMPLEMENTED, i(97035)),	-- Lightning Emperor's Mantle
+				un(NEVER_IMPLEMENTED, i(97036)),	-- Lightning Emperor's Chestguard
+				un(NEVER_IMPLEMENTED, i(97037)),	-- Lightning Emperor's Handguards
+				un(NEVER_IMPLEMENTED, i(97038)),	-- Lightning Emperor's Faceguard
+				un(NEVER_IMPLEMENTED, i(97039)),	-- Lightning Emperor's Legguards
+				un(NEVER_IMPLEMENTED, i(97040)),	-- Lightning Emperor's Shoulderguards
+				un(NEVER_IMPLEMENTED, i(96282)),	-- Lightning Emperor's Battleplate
+				un(NEVER_IMPLEMENTED, i(96283)),	-- Lightning Emperor's Gauntlets
+				un(NEVER_IMPLEMENTED, i(96284)),	-- Lightning Emperor's Helmet
+				un(NEVER_IMPLEMENTED, i(96285)),	-- Lightning Emperor's Legplates
+				un(NEVER_IMPLEMENTED, i(96286)),	-- Lightning Emperor's Pauldrons
+				un(NEVER_IMPLEMENTED, i(96287)),	-- Lightning Emperor's Breastplate
+				un(NEVER_IMPLEMENTED, i(96288)),	-- Lightning Emperor's Gloves
+				un(NEVER_IMPLEMENTED, i(96289)),	-- Lightning Emperor's Headguard
+				un(NEVER_IMPLEMENTED, i(96290)),	-- Lightning Emperor's Greaves
+				un(NEVER_IMPLEMENTED, i(96291)),	-- Lightning Emperor's Mantle
+				un(NEVER_IMPLEMENTED, i(96292)),	-- Lightning Emperor's Chestguard
+				un(NEVER_IMPLEMENTED, i(96293)),	-- Lightning Emperor's Handguards
+				un(NEVER_IMPLEMENTED, i(96294)),	-- Lightning Emperor's Faceguard
+				un(NEVER_IMPLEMENTED, i(96295)),	-- Lightning Emperor's Legguards
+				un(NEVER_IMPLEMENTED, i(96296)),	-- Lightning Emperor's Shoulderguards
 			}),
 			cl(WARRIOR, {
 				un(NEVER_IMPLEMENTED, i(48860)),	-- Hellscream's Battleplate of Conquest
@@ -1546,7 +1545,8 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(28045)),	-- Cloak of the Demon Stalker
 			un(NEVER_IMPLEMENTED, i(157751)),	-- Drape of New Beginnings
 			un(NEVER_IMPLEMENTED, i(134693)),	-- Enveloping Cape
-			un(NEVER_IMPLEMENTED, i(165792)),	-- Worn Cloak (future WQ?)un(NEVER_IMPLEMENTED, i(166700)),	-- Durable Sailor's Duffel
+			un(NEVER_IMPLEMENTED, i(165792)),	-- Worn Cloak (future WQ?)
+			un(NEVER_IMPLEMENTED, i(166700)),	-- Durable Sailor's Duffel
 			un(NEVER_IMPLEMENTED, i(161988)),	-- Tidespray Linen Cloak of the Feather
 			un(NEVER_IMPLEMENTED, i(161991)),	-- Tidespray Linen Cloak of Resilience
 			un(NEVER_IMPLEMENTED, i(165261)),	-- Unknown Cloak
@@ -2088,8 +2088,8 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(43016)),
 		un(NEVER_IMPLEMENTED, i(52446)),
 		un(NEVER_IMPLEMENTED, i(62898)),
-		un(NEVER_IMPLEMENTED, i(166680)),	-- Echo of Elune (maybe you will able to get it with a hotfix?)
-		un(NEVER_IMPLEMENTED, i(166358)),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform.A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
+		un(NEVER_IMPLEMENTED, i(166680)),	-- Echo of Elune (maybe you will be able to get it with a hotfix?)
+		un(NEVER_IMPLEMENTED, i(166358)),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform. A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
 		un(NEVER_IMPLEMENTED, p(2341)),		-- Feathers (possibly tied to a quest?)
 		un(NEVER_IMPLEMENTED, i(164769)),	-- Unknown
 		un(NEVER_IMPLEMENTED, i(33565)),	-- Uncommon Drop Certificate
@@ -2219,7 +2219,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, model(51323, i(104011))),	-- Stormcrow 							(Never added in Game)
 		un(NEVER_IMPLEMENTED, i(143752)),	-- Sound Test Mount
 		un(NEVER_IMPLEMENTED, i(37598)),	-- Swift Zhevra OLD
-		
+
 		un(NEVER_IMPLEMENTED, i(184168)),	-- Tower Shadehound (beta only)
 		un(NEVER_IMPLEMENTED, i(44557)),	-- Swift Ebonweave Carpet (NOT IN GAME)
 		un(NEVER_IMPLEMENTED, i(44556)),	-- Swift Spellfire Carpet (NOT IN GAME)

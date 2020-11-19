@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1409, {	-- Exile's Reach
 		["icon"] = 3567434,
-		["reqlvl"] = { 1, 18 },	-- Only new players, no exp gain after 18
+		["lvl"] = { 1, 18 },	-- Only new players, no exp gain after 18
 		["maps"] = {
 			1726,	-- North Sea (Alliance)
 			1727,	-- North Sea (Horde)
@@ -20,7 +20,7 @@ _.Zones =
 			]]--
 			m(1609, {	-- Darkmaul Citadel
 				["icon"] = 3759927,
-				["maps"] = { 
+				["maps"] = {
 					1610,	-- Darkmaul Citadel upper floor
 					1611,	-- uh another part of Darkmaul Citadel i guess (a user on Discord reported it, it just shows up in the screenshot as Dark Citadel)
 				},

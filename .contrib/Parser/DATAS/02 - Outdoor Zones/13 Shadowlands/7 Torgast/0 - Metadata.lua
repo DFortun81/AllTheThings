@@ -48,7 +48,6 @@ _.Zones =
 					1784,	-- TG75_Floor
 					1785,	-- TG76_Floor
 					1806,	-- TG96_Floor
-					
 				},
 			}),
 		}),

@@ -34,7 +34,7 @@ _.Zones =
 				}),
 				o(356820, {	-- Large Lunarlight Pod
 					["coord"] = { 51.7, 32.3, 1565 },
-				--	["questID"] = 60715,
+					--["questID"] = 60715,
 					["repeatable"] = true,
 				}),
 				n(170406,	{	-- Wish Cricket

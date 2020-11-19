@@ -30,7 +30,7 @@ _.Achievements =
 					}),
 				},
 				["races"] = ALLIANCE_ONLY,
-			--	["description"] = "Requires 7th Legion Exalted",
+				--["description"] = "Requires 7th Legion Exalted",
 				["lvl"] = 120,
 			}),
 			ach(12445, {	-- Allied Races: Highmountain Tauren
@@ -42,7 +42,7 @@ _.Achievements =
 					}),
 				},
 				["races"] = HORDE_ONLY,
-			--	["description"] = "Requires Battle for Azeroth to be purchased.",
+				--["description"] = "Requires Battle for Azeroth to be purchased.",
 				["lvl"] = 110,
 			}),
 			ach(12448, {	-- Allied Races: Lightforged Draenei
@@ -54,7 +54,7 @@ _.Achievements =
 					}),
 				},
 				["races"] = ALLIANCE_ONLY,
-			--	["description"] = "Requires Battle for Azeroth to be purchased.",
+				--["description"] = "Requires Battle for Azeroth to be purchased.",
 				["lvl"] = 110,
 			}),
 			ach(13092, {	-- Allied Races: Mag'har Orc
@@ -66,7 +66,7 @@ _.Achievements =
 					}),
 				},
 				["races"] = HORDE_ONLY,
-			--	["description"] = "Requires Honorbound Exalted",
+				--["description"] = "Requires Honorbound Exalted",
 				["lvl"] = 120,
 			}),
 			ach(13991, {	-- Allied Races: Mechagnome
@@ -89,7 +89,7 @@ _.Achievements =
 					}),
 				},
 				["races"] = HORDE_ONLY,
-			--	["description"] = "Requires Battle for Azeroth to be purchased.",
+				--["description"] = "Requires Battle for Azeroth to be purchased.",
 				["lvl"] = 110,
 			}),
 			ach(12447, {	-- Allied Races: Void Elf
@@ -227,7 +227,7 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, title(106)),	-- Obsidian Slayer
 			})),
 			un(REMOVED_FROM_GAME, ach(6829)),	-- Realm First! Pandaren Ambassador
-			un(REMOVED_FROM_GAME, ach(14662)),	-- Realm First! Shadowlands Keystone Master
+			ach(14662),	-- Realm First! Shadowlands Keystone Master
 			un(REMOVED_FROM_GAME, ach(6859)),	-- Realm First! Zen Master Alchemist
 			un(REMOVED_FROM_GAME, ach(6865)),	-- Realm First! Zen Master Angler
 			un(REMOVED_FROM_GAME, ach(6873)),	-- Realm First! Zen Master Archaeologist
@@ -254,7 +254,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(8812, {	-- You're Really Doing It Wrong (Level 90)
 				["maps"] = {
 					480,	-- Proving Grounds
-				},			
+				},
 			})),
 		}),
 	}),

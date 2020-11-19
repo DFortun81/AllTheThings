@@ -9,7 +9,7 @@ _.Zones =
 			n(-169, {	-- Emissary Quests
 				q(61098, {	-- Supplies from The Wild Hunt
 					["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
-					["lvl"] = 60,
+					["lvl"] = { 60 },
 					["coord"] = { 48.4, 50.4, 1565 },
 					["repeatable"] = true,
 					["g"] = {
@@ -21,7 +21,7 @@ _.Zones =
 				}),
 				q(62693, {	-- A Calling in Ardenweald
 					["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
-					["lvl"] = 60,
+					["lvl"] = { 60 },
 					["coord"] = { 48.4, 50.4, 1565 },
 					["repeatable"] = true,
 					["g"] = {

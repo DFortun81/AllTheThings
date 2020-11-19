@@ -185,7 +185,7 @@ _.Achievements =
 				crit(15),	-- Orophea
 				crit(16),	-- Shadeweaver Zeris
 				crit(17),	-- Soulforger Rhovus
-				crit(18),	-- Talaporas, Herald of Pain 
+				crit(18),	-- Talaporas, Herald of Pain
 				crit(19),	-- Thanassos
 				crit(20),	-- Yero the Skittish
 			}),
@@ -447,7 +447,7 @@ _.Achievements =
 				crit(6),	-- Makeshift Muckpool
 				crit(7),	-- Blanchy Assisted
 				crit(8),	-- Secret Chamber
-			}),	
+			}),
 			ach(14768, {	-- What is that Melody?
 				crit(1),	-- Hymn of Purity
 				crit(2),	-- Hymn of Courage

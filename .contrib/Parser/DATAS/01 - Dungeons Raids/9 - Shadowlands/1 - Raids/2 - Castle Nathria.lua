@@ -9,7 +9,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["order"] = "02",
 		["maps"] = {
 		},
-		["lvl"] = 60,
+		["lvl"] = { 60 },
 		["g"] = {
 			n(ACHIEVEMENTS,  {
 				ach(14715),	-- Castle Nathria
@@ -100,7 +100,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2426, {	-- The Council of Blood
-					["crs"] = { 
+					["crs"] = {
 						166971,	-- Castellan Niklaus
 						166970,	-- Lord Stavros
 						166969,	-- Baroness Frieda
@@ -185,7 +185,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183352),	-- A Memory of Skybreaker's Fiery Demise
 						i(183896),	-- Abominable Anima Spherule
 						i(183897),	-- Mystic Anima Spherule
-						i(183898),	-- Venerated Anima Spherule 
+						i(183898),	-- Venerated Anima Spherule
 						i(183899),	-- Zenith Anima Spherule
 						i(183020),	-- Shawl of the Penitent
 						i(182980),	-- Sadist's Sinister Mask
@@ -288,7 +288,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2426, {	-- The Council of Blood
-					["crs"] = { 
+					["crs"] = {
 						166971,	-- Castellan Niklaus
 						166970,	-- Lord Stavros
 						166969,	-- Baroness Frieda
@@ -377,7 +377,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183352),	-- A Memory of Skybreaker's Fiery Demise
 						i(183896),	-- Abominable Anima Spherule
 						i(183897),	-- Mystic Anima Spherule
-						i(183898),	-- Venerated Anima Spherule 
+						i(183898),	-- Venerated Anima Spherule
 						i(183899),	-- Zenith Anima Spherule
 						i(183020),	-- Shawl of the Penitent
 						i(182980),	-- Sadist's Sinister Mask
@@ -480,7 +480,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2426, {	-- The Council of Blood
-					["crs"] = { 
+					["crs"] = {
 						166971,	-- Castellan Niklaus
 						166970,	-- Lord Stavros
 						166969,	-- Baroness Frieda
@@ -570,7 +570,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(183352),	-- A Memory of Skybreaker's Fiery Demise
 						i(183896),	-- Abominable Anima Spherule
 						i(183897),	-- Mystic Anima Spherule
-						i(183898),	-- Venerated Anima Spherule 
+						i(183898),	-- Venerated Anima Spherule
 						i(183899),	-- Zenith Anima Spherule
 						i(183020),	-- Shawl of the Penitent
 						i(182980),	-- Sadist's Sinister Mask
@@ -681,7 +681,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2426, {	-- The Council of Blood
-						["crs"] = { 
+						["crs"] = {
 							166971,	-- Castellan Niklaus
 							166970,	-- Lord Stavros
 							166969,	-- Baroness Frieda
@@ -778,7 +778,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(183352),	-- A Memory of Skybreaker's Fiery Demise
 							i(183896),	-- Abominable Anima Spherule
 							i(183897),	-- Mystic Anima Spherule
-							i(183898),	-- Venerated Anima Spherule 
+							i(183898),	-- Venerated Anima Spherule
 							i(183899),	-- Zenith Anima Spherule
 							i(183020),	-- Shawl of the Penitent
 							i(182980),	-- Sadist's Sinister Mask

@@ -461,7 +461,7 @@ _.Zones =
 						i(181837, {	-- Clear Mind
 							["cost"] = { { "c", 1602, 200 } },
 							["classes"] = { PRIEST },
-						}), 
+						}),
 						i(181844, {	-- Pain Transformation
 							["cost"] = { { "c", 1602, 200 } },
 							["classes"] = { PRIEST },

@@ -284,10 +284,10 @@ _.Zones =
 				n(164966, {	-- Temel <The Party Herald> (with a hat)
 					["coord"] = { 28.0, 43.0, 1525},
 					["g"] = {
-						i(180726),	-- Pale Acidmaw				-- no cost due each covernant offering this mount in different ways
-						i(181300),	-- Gruesome Flayedwing		-- no cost due each covernant offering this mount in different ways
-						i(181316),	-- Silvertip Dredwing		-- no cost due each covernant offering this mount in different ways
-						i(181317),	-- Dauntless Duskrunner		-- no cost due each covernant offering this mount in different ways
+						i(180726),	-- Pale Acidmaw				-- no cost due each covenant offering this mount in different ways
+						i(181300),	-- Gruesome Flayedwing		-- no cost due each covenant offering this mount in different ways
+						i(181316),	-- Silvertip Dredwing		-- no cost due each covenant offering this mount in different ways
+						i(181317),	-- Dauntless Duskrunner		-- no cost due each covenant offering this mount in different ways
 						i(177234, {	-- Rally Bell
 							["cost"] = { { "c", 1816, 25 } },
 						}),
@@ -404,7 +404,7 @@ _.Zones =
 							["g"] = {
 								spell(341505, {
 									i(182719, {	-- Mail Courier's Runners
-										["cost"] = { 
+										["cost"] = {
 											{ "i", 183416, 1 },	-- Mail Courier's Left Runner
 											{ "i", 183417, 1 },	-- Mail Courier's Right Runner
 										},
@@ -416,7 +416,7 @@ _.Zones =
 							["cost"] = { { "c", 1820, 10 } },
 							["g"] = {
 								i(183418, {	-- Hopebreaker's Boots
-									["cost"] = { 
+									["cost"] = {
 										{ "i", 183419, 1 },	-- Hopebreaker's Left Boot
 										{ "i", 183420, 1 },	-- Hopebreaker's Right Boot
 									},
@@ -427,7 +427,7 @@ _.Zones =
 							["cost"] = { { "c", 1820, 10 } },
 							["g"] = {
 								i(183421, {	-- Stone Legion Sabatons
-									["cost"] = { 
+									["cost"] = {
 										{ "i", 183422, 1 },	-- Stone Legion Left Sabaton
 										{ "i", 183423, 1 },	-- Stone Legion Right Sabaton
 									},
@@ -438,7 +438,7 @@ _.Zones =
 							["cost"] = { { "c", 1820, 10 } },
 							["g"] = {
 								i(183425, {	-- Researcher's Slippers
-									["cost"] = { 
+									["cost"] = {
 										{ "i", 183427, 1 },	-- Researcher's Left Slipper
 										{ "i", 183430, 1 },	-- Researcher's Right Slipper
 									},
@@ -476,7 +476,7 @@ _.Zones =
 						}),
 						i(182396, {	-- Hungering Ritualist's Animablade
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
-						}),	
+						}),
 						i(182397, {	-- Nathrian Warglaive of the Wingdancer
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						}),
@@ -503,7 +503,7 @@ _.Zones =
 						}),
 						i(182418, {	-- Sinbearer's Absolution Rod
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
-						}),	
+						}),
 						i(182419, {	-- Nathrian Torchbearer's Rod
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						}),
@@ -518,7 +518,7 @@ _.Zones =
 						}),
 						i(182423, {	-- Nathrian Glaive of the Wingdancer
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
-						}),		
+						}),
 						i(182424, {	-- Dredbat Repeating Crossbow
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						}),
@@ -532,7 +532,7 @@ _.Zones =
 				}),
 				n(175406, {	-- Gregor the Pallidblade <Sinfall Quartermaster>
 					["coord"] = { 68.0, 23.0, 1699 },
-					["g"] = {	
+					["g"] = {
 						i(182388, {	-- Anima-Infused Backbiter
 							--["cost"] = { "i", 183897, 1 },	-- Mystic Anima Spherule
 						}),
@@ -559,7 +559,7 @@ _.Zones =
 						}),
 						i(182396, {	-- Hungering Ritualist's Animablade
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
-						}),	
+						}),
 						i(182397, {	-- Nathrian Warglaive of the Wingdancer
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						}),
@@ -586,7 +586,7 @@ _.Zones =
 						}),
 						i(182418, {	-- Sinbearer's Absolution Rod
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
-						}),	
+						}),
 						i(182419, {	-- Nathrian Torchbearer's Rod
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						}),
@@ -601,7 +601,7 @@ _.Zones =
 						}),
 						i(182423, {	-- Nathrian Glaive of the Wingdancer
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
-						}),		
+						}),
 						i(182424, {	-- Dredbat Repeating Crossbow
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						}),
@@ -642,7 +642,7 @@ _.Zones =
 						}),
 						i(182396, {	-- Hungering Ritualist's Animablade
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
-						}),	
+						}),
 						i(182397, {	-- Nathrian Warglaive of the Wingdancer
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						}),
@@ -669,7 +669,7 @@ _.Zones =
 						}),
 						i(182418, {	-- Sinbearer's Absolution Rod
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
-						}),	
+						}),
 						i(182419, {	-- Nathrian Torchbearer's Rod
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						}),
@@ -684,7 +684,7 @@ _.Zones =
 						}),
 						i(182423, {	-- Nathrian Glaive of the Wingdancer
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
-						}),		
+						}),
 						i(182424, {	-- Dredbat Repeating Crossbow
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						}),
@@ -725,7 +725,7 @@ _.Zones =
 						}),
 						i(182396, {	-- Hungering Ritualist's Animablade
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
-						}),	
+						}),
 						i(182397, {	-- Nathrian Warglaive of the Wingdancer
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						}),
@@ -752,7 +752,7 @@ _.Zones =
 						}),
 						i(182418, {	-- Sinbearer's Absolution Rod
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
-						}),	
+						}),
 						i(182419, {	-- Nathrian Torchbearer's Rod
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						}),
@@ -767,7 +767,7 @@ _.Zones =
 						}),
 						i(182423, {	-- Nathrian Glaive of the Wingdancer
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
-						}),		
+						}),
 						i(182424, {	-- Dredbat Repeating Crossbow
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						}),

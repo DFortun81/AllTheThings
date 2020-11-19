@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.Craftables =
 {
 	tier(9, {	-- Shadowlands
@@ -37,7 +38,7 @@ _.Craftables =
 					i(172327),	-- Boneshatter Pauldrons
 					i(172263),	-- Shadowscale Pauldrons
 					i(172247),	-- Desolate Scale Pauldrons
-				}),	
+				}),
 			}),
 			n(-323, {	-- Chest
 				filter(5, {	-- Leather
@@ -112,6 +113,5 @@ _.Craftables =
 				}),
 			}),
 		}),
-		
 	}),
 };

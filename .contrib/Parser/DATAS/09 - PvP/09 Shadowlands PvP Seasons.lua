@@ -1,6 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+
 _.PVP =
 {
 n(-10100, {	-- Shadowlands
@@ -82,11 +83,11 @@ n(-10100, {	-- Shadowlands
 			filter(100, {	-- Mounts
 				i(184014, {	-- Vicious War Spider (A)
 					["races"] = ALLIANCE_ONLY,
-				--	["u"] = REMOVED_FROM_GAME,
+					--["u"] = REMOVED_FROM_GAME,
 				}),
 				i(184013, {	-- Vicious War Spider (H)
 					["races"] = HORDE_ONLY,
-				--	["u"] = REMOVED_FROM_GAME,
+					--["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 		}),

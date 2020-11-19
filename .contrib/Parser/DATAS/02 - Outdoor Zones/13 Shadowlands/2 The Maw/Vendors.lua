@@ -9,7 +9,7 @@ _.Zones =
 			n(VENDORS, {
 				n(162804, {	-- Ve'nari
 					i(180949, {	-- Anima Stabilizer
-					--	["questID"] = 61144,
+						--["questID"] = 61144,
 						["cost"] = { { "c", 1767, 250 } },
 					}),
 					i(183190, {	-- Oublion Cipher
@@ -17,7 +17,7 @@ _.Zones =
 						["cost"] = { { "c", 1767, 50 } },
 					}),
 					i(180950, {	-- Pet Cometic ???
-					--	["questID"] = 61144,
+						--["questID"] = 61144,
 						["cost"] = { { "c", 1767, 5000 } },
 					}),
 					i(180952, {	-- Possibility Matrix

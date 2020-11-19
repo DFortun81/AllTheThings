@@ -10,11 +10,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 			1664,	-- The Narve of Pain / The Crimson Apse
 			1665,	-- Sanctury of Souls
 		},
-		["lvl"] = 50,
+		["lvl"] = { 50 },
 		["g"] = {
 			n(QUESTS, {
 				q(58092,{	-- Halls of Atonement: Your Absolution
-				--	["provider"] = { "n", 166689 },	-- General Draven
+					--["provider"] = { "n", 166689 },	-- General Draven
 				}),
 			}),
 			d(1, {	-- Normal
@@ -64,7 +64,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(2, {	-- Heroic
-				["lvl"] = 60,
+				["lvl"] = { 60 },
 				["g"] = {
 					e(2406, {	-- Halkias
 						["crs"] = { 165408 },	-- Halkias
@@ -114,7 +114,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			d(23, {	-- Mythic
 				["difficulties"] = { 8, 23 },
-				["lvl"] = 60,
+				["lvl"] = { 60 },
 				["g"] = {
 					e(2406, {	-- Halkias
 						["crs"] = { 165408 },	-- Halkias

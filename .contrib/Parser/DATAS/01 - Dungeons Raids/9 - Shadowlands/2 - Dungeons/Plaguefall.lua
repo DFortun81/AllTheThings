@@ -8,7 +8,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["maps"] = {
 			1674,	-- Plaguefall
 		},
-		["lvl"] = 50,
+		["lvl"] = { 50 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(14634, {	-- Nine Afterlives
@@ -22,7 +22,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["provider"] = { "n", 165052 },	-- Vial Master Lurgy
 					["coord"] = { 59.4, 72.9, 1536 },
 					["sourceQuest"] = 59223,	-- By Any Other Name
-					["lvl"] = 52,
+					["lvl"] = { 52 },
 					["maps"] = { 1536 },	-- Maldraxxus
 					["g"] = {
 						i(175512),	-- Epidemiologist's Raiment
@@ -32,8 +32,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 			}),
---			n(-34, {	-- World Quests
---			}),
+			--n(-34, {	-- World Quests
+			--}),
 			d(1, {	-- Normal
 				e(2419, {	-- Globgrog
 					["crs"] = { 164255 },	-- Globgrog
@@ -68,7 +68,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(178931),	-- Scarred Bloodbound Girdle
 						i(178933),	-- Arachnid Cipher Ring
 					},
-				}),	
+				}),
 				e(2404, {	-- Margrave Stradama
 					["crs"] = { 164267 },	-- Margrave Stradama
 					["g"] = {
@@ -84,7 +84,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(2, {	-- Heroic
-				["lvl"] = 60,
+				["lvl"] = { 60 },
 				["g"] = {
 					e(2419, {	-- Globgrog
 						["crs"] = { 164255 },	-- Globgrog
@@ -119,7 +119,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178931),	-- Scarred Bloodbound Girdle
 							i(178933),	-- Arachnid Cipher Ring
 						},
-					}),	
+					}),
 					e(2404, {	-- Margrave Stradama
 						["crs"] = { 164267 },	-- Margrave Stradama
 						["g"] = {
@@ -137,7 +137,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			d(23, {	-- Mythic
 				["difficulties"] = { 8, 23 },
-				["lvl"] = 60,
+				["lvl"] = { 60 },
 				["g"] = {
 					n(ACHIEVEMENTS, {
 						ach(14292),	-- Riding with my Slimes
@@ -177,7 +177,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178931),	-- Scarred Bloodbound Girdle
 							i(178933),	-- Arachnid Cipher Ring
 						},
-					}),	
+					}),
 					e(2404, {	-- Margrave Stradama
 						["crs"] = { 164267 },	-- Margrave Stradama
 						["g"] = {

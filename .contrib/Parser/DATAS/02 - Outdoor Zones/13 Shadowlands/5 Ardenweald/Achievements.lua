@@ -65,7 +65,7 @@ _.Zones =
 					crit(2, {	-- Lost Satchel
 						["objectID"] = 354645,	-- Lost Satchel
 						["coord"] = { 48.2, 20.3, 1565 },
-					--	["questID"] = ,								-- Seems to be missing in the beta
+						--["questID"] = ,								-- Seems to be missing in the beta
 						["g"] = {
 							i(182731, {	-- Satchel of Culexwood
 								["questID"] = 62187,	-- Satchel of Culexwood
@@ -83,7 +83,7 @@ _.Zones =
 					crit(4, {	-- Swollen Anima Seed
 						["objectID"] = 354911,	-- Swollen Anima Seed
 						["coord"] = { 76.6, 29.7, 1565 },
-					--	["questID"] = ,								-- Seems to be missing in the beta
+						--["questID"] = ,								-- Seems to be missing in the beta
 						["g"] = {
 							i(182730, {	-- Swollen Anima Seed
 								["questID"] = 62186,	-- Swollen Anima Seed
@@ -101,7 +101,7 @@ _.Zones =
 					crit(6, {	-- Harmonic Chest
 						["objectID"] = 355355,	-- Harmonic Chest
 						["coord"] = { 67.8, 34.6, 1565 },
-					--	["questID"] = ,
+						--["questID"] = ,
 						["description"] = "You need two people to open the chest. One need to click the harp the other one the drums.",
 					}),
 					crit(7, {	-- Hearty Dragon Plume
@@ -149,7 +149,7 @@ _.Zones =
 						},
 					}),
 					crit(9, {	-- Cache of the Moon
-					--	["objectID"] = ,	-- Cache of the Moon
+						--["objectID"] = ,	-- Cache of the Moon
 						["coords"] = {
 							{ 39.0, 56.9, 1565 },	-- Diary of the Night
 							{ 40.3, 52.6, 1565 },	-- Gardener's Basket
@@ -187,9 +187,9 @@ _.Zones =
 						},
 					}),
 					crit(12, {	-- Enchanted Dreamcatcher
-					--	["objectID"] = ,	-- Enchanted Dreamcatcher
+						--["objectID"] = ,	-- Enchanted Dreamcatcher
 						["coord"] = { 36.4, 25.0, 1565 },
-					--	["questID"] = ,
+						--["questID"] = ,
 						["g"] = {
 							i(183129, {	-- Anima-Laden Dreamcatcher
 								["questID"] = 62259,	-- Anima-Laden Dreamcatcher
@@ -210,12 +210,12 @@ _.Zones =
 						},
 					}),
 					crit(14, {	-- Cache of the Night
-					--	["objectID"] = ,	-- Cache of the Night
+						--["objectID"] = ,	-- Cache of the Night
 						["coord"] = { 36.1, 65.2, 1565 },
-					--	["questID"] = ,
+						--["questID"] = ,
 					}),
 					crit(15, {	-- Darkreach Supplies
-					--	["objectID"] = ,	-- Darkreach Supplies
+						--["objectID"] = ,	-- Darkreach Supplies
 						["coords"] = {
 							{ 37.6, 61.5, 1565 },	-- Mushroom
 							{ 36.1, 65.2, 1565 },	-- Treasure

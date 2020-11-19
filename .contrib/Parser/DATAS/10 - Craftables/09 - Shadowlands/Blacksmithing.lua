@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+
 _.Craftables =
 {
 	tier(9, {	-- Shadowlands
@@ -26,7 +27,7 @@ _.Craftables =
 			}),
 			filter(26, {	-- 2H Swords
 				i(171383),	-- Ceremonious Claymore
-			}),	
+			}),
 			filter(29, {	-- Polearms
 				i(171386),	-- Ceremonious Spear
 			}),

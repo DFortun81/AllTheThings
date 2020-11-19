@@ -55,7 +55,7 @@ _.Zones =
 						["objectID"] = 357467,	-- Forbidden Ink
 						["npcID"] = 173449,	-- Lost Quill
 						["coord"] = { 37.7, 69.2, 1525 },
-					--	["questID"] = 61065,
+						--["questID"] = 61065,
 						["description"] = "Take the |cFFFFFFFF[Forbidden Ink]|r from the Libary at |cFFFFFFFF37.6, 68.7|r and speak with the Lost Quill.",
 						["g"] = {
 							i(182613),	-- Refilling Inkwell
@@ -72,21 +72,21 @@ _.Zones =
 					crit(3, {	-- The Count
 						["npcID"] = 173488,	-- The Count
 						["coord"] = { 57.3, 43.3, 1525 },
-					--	["questID"] = 61065,
+						--["questID"] = 61065,
 						["g"] = {
 							i(182612),	-- The Count's Pendant
 						},
 					}),
 					crit(4, {	-- Rapier of the Fearless
-					--	["objectID"] = ,	-- 
-					--	["coord"] = { 52.9, 37.2, 1525 },
-					--	["questID"] = 61065,
-					--	["g"] = {
-					--		i(182689),	-- Rapier of the Fearless
-					--	},
+						--["objectID"] = ,	--
+						--["coord"] = { 52.9, 37.2, 1525 },
+						--["questID"] = 61065,
+						--["g"] = {
+						--	i(182689),	-- Rapier of the Fearless
+						--},
 					}),
 					crit(5, {	-- Vrytha's Dredglaive
-					--	["objectID"] = ,	-- Vrytha's Dredglaive
+						--["objectID"] = ,	-- Vrytha's Dredglaive
 						["coord"] = { 70.1, 60.0, 1525 },
 						["questID"] = 62164,
 						["g"] = {
@@ -94,7 +94,7 @@ _.Zones =
 						},
 					}),
 					crit(6, {	-- Makeshift Muckpool
-					--	["objectID"] = ,	-- Outcast's Makeshift Muckpool
+						--["objectID"] = ,	-- Outcast's Makeshift Muckpool
 						["coord"] = { 29.6, 37.1, 1525 },
 						["questID"] = 62198,
 						["g"] = {
@@ -114,9 +114,9 @@ _.Zones =
 						},
 					}),
 					crit(8, {	-- Blanchy Assisted
-					--	["objectID"] = 354646,	-- Ancient Cloudfeather Egg
+						--["objectID"] = 354646,	-- Ancient Cloudfeather Egg
 						["coord"] = { 63.01, 54.46, 1525 },
-					--	["questID"] = 61065,
+						--["questID"] = 61065,
 						["g"] = {
 							i(182614),	-- Blanchy's Reins
 						},
@@ -135,20 +135,3 @@ _.Zones =
 		}),
 	}),
 };
-
- 
-
- 
-
- 
-
- 
-
-
- 
-
- 
-
- 
-
- 

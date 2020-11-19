@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones = 
+_.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
@@ -26,20 +26,20 @@ _.Zones =
 						{ 39.13, 20.40, 1533 },	-- Vesper of Wisdom
 						{ 32.16, 17.82, 1533 },	-- Vesper of Loyalty
 					},
-					["crs"] = { 170834 },	-- Champion of Purity, 
-					["crs"] = { 170835 },	-- Champion of Courage, 
-					["crs"] = { 170833 },	-- Champion of Wisdom, 
+					["crs"] = { 170834 },	-- Champion of Purity,
+					["crs"] = { 170835 },	-- Champion of Courage,
+					["crs"] = { 170833 },	-- Champion of Wisdom,
 					["crs"] = { 170836 },	-- Champion of Humility,
 					["g"] = {
 						i(183741),	-- Ascended Skymane
-						n(170832, { -- Champion of Loyalty								
+						n(170832, { -- Champion of Loyalty
 							--["coord"] = { 43.0, 82.6, 1533 },
 							--["questID"] = ,
 							["isDaily"] = true,
 							["g"] = {
 								ach(14307, crit(28)),	-- Adventurer of Bastion / Champion of Loyalty
 							},
-						}), 
+						}),
 					},
 				}),
 				n(171211, { -- Aspirant Eolis
@@ -145,7 +145,7 @@ _.Zones =
 					},
 				}),
 				n(171013, { -- Embodied Hunger
-					["coords"] = { 
+					["coords"] = {
 						{ 55.8, 14.4, 1533},
 						{ 47.6, 42.8, 1533},
 						{ 59.8, 52.0, 1533},
@@ -173,7 +173,7 @@ _.Zones =
 						i(180444),	-- Harmonia's Chosen Belt
 					},
 				}),
-				n(158659, { -- Herculon											
+				n(158659, { -- Herculon
 					["coord"] = { 43.0, 82.6, 1533 },
 					--["questID"] = ,
 					["isDaily"] = true,
@@ -181,7 +181,7 @@ _.Zones =
 						ach(14307, crit(1)),	-- Adventurer of Bastion / Herculon
 					},
 				}),
-				n(156340, { -- Larionrider Orstus									
+				n(156340, { -- Larionrider Orstus
 					--["coord"] = { 43.0, 82.6, 1533 },
 					--["questID"] = ,
 					["isDaily"] = true,

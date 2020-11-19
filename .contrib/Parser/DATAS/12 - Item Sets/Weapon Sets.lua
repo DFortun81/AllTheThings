@@ -1071,12 +1071,12 @@ _.GearSets =
 				["lvl"] = 110,
 			}),
 			i(184303, {	-- Arsenal: Stitchmasters' Weapons
-				["reqlvl"] = { 50 },
+				["lvl"] = { 50 },
 				["g"] = {
 				},
 			}),
 			i(184118, {	-- Arsenal: Winterborn Weapons
-				["reqlvl"] = { 30 },
+				["lvl"] = { 30 },
 				["g"] = {
 				},
 			}),

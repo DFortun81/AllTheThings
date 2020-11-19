@@ -8,7 +8,7 @@ _.Zones =
 		m(1670, {	-- Oribos
 			n(-228, {	-- Flight Paths
 				fp(2395, {	-- Oribos
-					["coord"] = { 60.7, 68.6, 85 },
+					["coord"] = { 60.7, 68.6, 1670 },
 				}),
 			}),
 		}),

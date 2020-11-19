@@ -9,7 +9,7 @@ _.Zones =
 			n(-169, {	-- Emissary Quests
 				q(61100, {	-- Supplies from the Court of Harvesters
 					["provider"] = { "n", 156822 },	-- Mistress Mihaela <Court of Harvesters Quartermaster>
-					["lvl"] = 60,
+					["lvl"] = { 60 },
 					["coord"] = { 61.4, 63.8, 1525 },
 					["repeatable"] = true,
 					["g"] = {
@@ -19,7 +19,7 @@ _.Zones =
 				}),
 				q(62691, {	-- A Calling in Revendreth
 					["provider"] = { "n", 156822 },	-- Mistress Mihaela <Court of Harvesters Quartermaster>
-					["lvl"] = 60,
+					["lvl"] = { 60 },
 					["coord"] = { 61.4, 63.8, 1525 },
 					["repeatable"] = true,
 					["g"] = {

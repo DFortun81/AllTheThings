@@ -8,7 +8,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["maps"] = {
 			1680,	-- De Other Side
 		},
-		["lvl"] = 50,
+		["lvl"] = { 50 },
 		["g"] = {
 			n(QUESTS, {
 				q(62458, {	-- De Other Side
@@ -34,7 +34,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(179331),	-- Blood-Spattered Scale
 					},
 				}),
-				e(2409, {	-- The Manastorms 
+				e(2409, {	-- The Manastorms
 					["crs"] = { 101976 },	-- Millificent Manastorm
 					["g"] = {
 						i(179339),	-- Whizblast Walking Stick
@@ -73,7 +73,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(2, {	-- Heroic
-				["lvl"] = 60,
+				["lvl"] = { 60 },
 				["g"] = {
 					e(2408, {	-- Hakkar the Soulflayer
 						["crs"] = { 166473 },	-- Hakkar the Soulflayer
@@ -87,7 +87,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(179331),	-- Blood-Spattered Scale
 						},
 					}),
-					e(2409, {	-- The Manastorms 
+					e(2409, {	-- The Manastorms
 						["crs"] = { 101976 },	-- Millificent Manastorm
 						["g"] = {
 							i(179339),	-- Whizblast Walking Stick
@@ -128,7 +128,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			d(23, {	-- Mythic
 				["difficulties"] = { 8, 23 },
-				["lvl"] = 60,
+				["lvl"] = { 60 },
 				["g"] = {
 					n(ACHIEVEMENTS, {
 						ach(14354),	-- Highly Communicable
@@ -145,7 +145,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(179331),	-- Blood-Spattered Scale
 						},
 					}),
-					e(2409, {	-- The Manastorms 
+					e(2409, {	-- The Manastorms
 						["crs"] = { 101976 },	-- Millificent Manastorm
 						["g"] = {
 							ach(14374),	-- Couple's Therapy
