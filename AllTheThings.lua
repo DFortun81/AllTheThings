@@ -1185,6 +1185,7 @@ local function FilterSpecs(specs)
 end
 -- Returns proper, class-filtered specs for a given itemID
 local function GetFixedItemSpecInfo(itemID)
+	if not itemID then return {}; end
 	local specs = GetItemSpecInfo(itemID);
 	if not specs then
 		specs = {}
@@ -6786,7 +6787,7 @@ local itemFields = {
 		return t.saved;
 	end,
 	["icon"] = function(t)
-		return select(5, GetItemInfoInstant(t.itemID));
+		return select(5, GetItemInfoInstant(t.itemID or 0));
 	end,
 	["link"] = function(t)
 		local itemLink = t.itemID;
@@ -12667,6 +12668,10 @@ end);
 app:GetWindow("Harvester", UIParent, function(self)
 	if self:IsVisible() then
 		if not self.initialized then
+			-- ensure Debug is enabled to fully capture all information
+			if not app.Settings:Get("DebugMode") then
+				app.Settings:ToggleDebugMode();
+			end
 			self.initialized = true;
 			local db = {};
 			db.g = {};
@@ -15660,8 +15665,7 @@ SlashCmdList["AllTheThings"] = function(cmd)
 			app:ToggleMiniListForCurrentZone();
 			return true;
 		else
-			local subcmd = strsub(cmd, 1, 6);
-			if subcmd == "mapid:" then
+			if strsub(cmd, 1, 6) == "mapid:" then
 				app:GetWindow("CurrentInstance"):SetMapID(tonumber(strsub(cmd, 7)));
 				return true;
 			end
