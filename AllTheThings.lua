@@ -4759,14 +4759,16 @@ local function AttachTooltip(self)
 						-- print("Stop Processing");
 						self.AllTheThingsProcessing = nil;
 					end
-					-- return true;
+					return true;
 				end
 				
 				-- Does the tooltip have an itemlink?
 				local link = select(2, self:GetItem());
 				if link then
 					-- local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, reforging, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
-					local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
+					-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
+					local itemID = string.match(link, "item:(%d+)");
+					-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*)");
 					-- print(Ltype,Id);
 					--[[
 					local itemString = string.match(link, "item[%-?%d:]+");
@@ -4777,11 +4779,12 @@ local function AttachTooltip(self)
 						self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
 					end--]]
 					-- print("Search Item",itemID);
-					if Ltype == "item" and Id == "137642" then -- skip Mark of Honor for now
+					if itemID and itemID == "137642" then -- skip Mark of Honor for now
 						AttachTooltipSearchResults(self, link, function() end, "itemID", 137642);
 					else
 						AttachTooltipSearchResults(self, link, SearchForLink, link);
 					end
+					return true;
 				end
 				
 				-- Does this tooltip have a 'shown Thing'
@@ -12488,10 +12491,10 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					-- print("sortname");
 					SortGroup(self.data, "name", nil, false);
 				-- sort by difficulty ONLY if the instance has actual difficulty dividers
-				elseif hasDifficulties then
-					self.data.visible = true;
-					-- print("sortdiff");
-					SortGroup(self.data, "difficultyID", nil, false);
+				-- elseif hasDifficulties then
+				-- 	self.data.visible = true;
+				-- 	-- print("sortdiff");
+				-- 	SortGroup(self.data, "difficultyID", nil, false);
 				end
 				-- check to expand groups after they have been built and updated
 				-- print("expand current zone");
@@ -12629,11 +12632,15 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				OpenMiniListForCurrentZone();
 			end
 		end
+		local function LocationTrigger()
+			-- print("location trigger event");
+			StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
+		end
 		app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
 		app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
+		app.LocationTrigger = LocationTrigger;
 		self:SetScript("OnEvent", function(self, e, ...)
-			-- print("trigger event");
-			StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
+			LocationTrigger();
 		end);
 		self:RegisterEvent("VARIABLES_LOADED");
 		self:RegisterEvent("NEW_WMO_CHUNK");
@@ -16148,6 +16155,10 @@ app.events.VARIABLES_LOADED = function()
 		-- finally can say the app is ready
 		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 		app.IsReady = true;
+
+		-- fire a late location trigger to make sure the minilist syncs to the current zone
+		-- so that addon-loading doesn't interfere with map info
+		C_Timer.After(2, app.LocationTrigger);
 
 		app:RefreshData(false);
 	end);
