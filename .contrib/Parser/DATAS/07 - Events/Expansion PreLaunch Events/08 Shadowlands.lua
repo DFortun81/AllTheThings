@@ -338,7 +338,7 @@ _.WorldEvents =
 					q(62365, {	-- Careful Creations
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 35.3, 66.3, 118 },
-						["provider"] = { "n", 173997 },	-- Crusader Renn
+						["provider"] = { "n", 173997 },	-- Darkrider Arly
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
 					}),
@@ -358,6 +358,8 @@ _.WorldEvents =
 					}),
 					q(62584, {	-- Frontline Resupply
 						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 44.9, 44.7, 118 },
+						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
 					}),
@@ -378,6 +380,8 @@ _.WorldEvents =
 					}),
 					q(62484, {	-- Werk In Progress
 						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 35.3, 66.3, 118 },
+						["provider"] = { "n", 173997 },	-- Darkrider Arly
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
 					}),
