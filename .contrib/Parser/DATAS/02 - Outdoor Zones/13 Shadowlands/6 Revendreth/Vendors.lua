@@ -10,6 +10,7 @@ _.Zones =
 				n(156822, {	-- Mistress Mihaela <Court of Harvesters Quartermaster>
 					["coord"] = { 61.4, 63.8, 1525 },
 					["g"] = {
+						i(182209),	-- Desire's Battle Gargon
 						i(183518, {	-- Court Sinrunner
 							["cost"] = 300000000, -- 30,000g
 						}),
@@ -280,12 +281,13 @@ _.Zones =
 						}),
 					},
 				}),
-				n(164966, {	-- Temel <The Party Herald>
+				n(164966, {	-- Temel <The Party Herald> (with a hat)
 					["coord"] = { 28.0, 43.0, 1525},
 					["g"] = {
-						i(181316, {	-- Silvertip Dredwing
-							["cost"] = { { "c", 1816, 5000 } },
-						}),
+						i(180726),	-- Pale Acidmaw				-- no cost due each covernant offering this mount in different ways
+						i(181300),	-- Gruesome Flayedwing		-- no cost due each covernant offering this mount in different ways
+						i(181316),	-- Silvertip Dredwing		-- no cost due each covernant offering this mount in different ways
+						i(181317),	-- Dauntless Duskrunner		-- no cost due each covernant offering this mount in different ways
 						i(177234, {	-- Rally Bell
 							["cost"] = { { "c", 1816, 25 } },
 						}),
@@ -330,7 +332,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(172531, {	-- Temel <The Party Herald>
+				n(172531, {	-- Temel <The Party Herald> (with no hat)
 					["coord"] = { 58.8, 80.0, 1699},
 					["g"] = {
 						i(181316, {	-- Silvertip Dredwing
@@ -776,15 +778,6 @@ _.Zones =
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						}),
 					}),
-				}),
-				n(164966, {	-- Temel
-					["coord"] = { 28.0, 43.0, 1699 },
-					["g"] = {
-						i(180726),	-- Pale Acidmaw				-- no cost due each covernant offering this mount in different ways
-						i(181300),	-- Gruesome Flayedwing		-- no cost due each covernant offering this mount in different ways
-						i(181316),	-- Silvertip Dredwing		-- no cost due each covernant offering this mount in different ways
-						i(181317),	-- Dauntless Duskrunner		-- no cost due each covernant offering this mount in different ways
-					},
 				}),
 			}),
 		}),

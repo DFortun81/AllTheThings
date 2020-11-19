@@ -84,6 +84,7 @@ _.Mounts =
 		i(163579),	-- Highland Mustang
 		i(147807),	-- Highmountain Elderhorn
 		i(180461),	-- Horrid Dredwing
+		i(180581),	-- Hopecrusher Gargon
 		-- i(184161),	-- Infested Necroray -- Source Unknown (NYI ATM)
 		i(50818),	-- Invincible
 		i(116660),	-- Ironhoof Destroyer
@@ -117,6 +118,7 @@ _.Mounts =
 		i(174872),	-- Ny'alotha Allseer
 		i(49636),	-- Onyxian Drake
 		--i(184162),	-- Pestilent Necroray -- Source Unknown (NYI ATM)
+		i(180762),	-- Phalynx of Humility
 		i(63042),	-- Phosphorescent Stone Drake
 		i(182080),	-- Predatory Plagueroc
 		i(69224),	-- Pureblood Fire Hawk
@@ -137,6 +139,7 @@ _.Mounts =
 		i(116663),	-- Shadowhide Pearltusk
 		i(180727),	-- Shimmermist Runner
 		i(169163),	-- Silent Glider
+		i(183798),	-- Silessa's Battle Harness(Battle Gargon Silessa in journal)
 		i(180772),	-- Silverwind Larion
 		i(163645),	-- Skullripper
 		i(94229),	-- Slate Primordial Direhorn

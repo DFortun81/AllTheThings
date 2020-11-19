@@ -24,6 +24,7 @@ _.Mounts =
 		i(142232, {		-- Battlelord's Bloodthirsty War Wyrm
 			["classes"] = { WARRIOR },
 		}),
+		i(180948),		-- Battle Gargon Vrednic
 		i(94290),		-- Bone-White Primal Raptor
 		i(137579),		-- Brilliant Direbeak
 		mount(23214, {	-- Charger

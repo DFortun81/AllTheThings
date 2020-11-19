@@ -156,6 +156,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(181317),	-- Dauntless Duskrunner
+		i(182209),	-- Desire's Battle Gargon
 		i(180729),	-- Duskflutter Ardenmoth
 		i(116664),	-- Dusky Rockhide
 		i(161908, {	-- Dusky Waycrest Gryphon

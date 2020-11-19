@@ -93,7 +93,7 @@ _.Zones =
 					["coord"] = { 28.4, 55.3, 1565 },
 					--["questID"] = ,
 					["isDaily"] = true,
-					["description"] = "Kill Deranged Guardians and Bristlecone Terrors until Chompy spawns. After killing Chompy Gormtamer Tizo will spawn",
+					["description"] = "Kill Deranged Guardians and Bristlecone Terrors until Chompy spawns. After killing Chompy Gormtamer Tizo will spawn.",
 					["g"] = {
 						i(180725),	-- Spinemaw Gladechewer
 						ach(14309, crit(4)),	-- Adventurer of Ardenweald / Gormtamer Tizo

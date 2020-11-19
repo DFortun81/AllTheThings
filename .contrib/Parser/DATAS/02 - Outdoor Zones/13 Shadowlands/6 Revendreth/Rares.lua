@@ -144,6 +144,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
+						i(180581),	-- Hopecrusher Gargon
 						ach(14310, crit(19)),	-- Adventurer of Revendreth / Hopecrusher
 					},
 				}),

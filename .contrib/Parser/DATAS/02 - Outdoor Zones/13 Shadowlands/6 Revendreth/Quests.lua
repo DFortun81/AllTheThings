@@ -8,11 +8,20 @@ _.Zones =
 		m(1525, {	-- Revendreth
 			n(QUESTS, {
 				currency(1830, {		-- Renown-Venthyr
+					-- Chapter 4 (Avarice)
 					q(58440, {	-- Mirror, Mirror...
 						["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 						["lvl"] = 60,
 						["g"] = {
 							i(180945),	-- Crypt Gargon
+						},
+					}),
+					-- Chapter 8 (Dominion)
+					q(58407, {	-- The Medallion of Dominion
+						["provider"] = { "n", 170543 },	-- General Draven
+						["lvl"] = 60,
+						["g"] = {
+							i(180948),	-- Battle Gargon Vrednic
 						},
 					}),
 				}),
