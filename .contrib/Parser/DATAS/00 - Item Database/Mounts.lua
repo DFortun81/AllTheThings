@@ -1,7 +1,7 @@
 _.ItemDB = {};
 local i = function(itemID, mountID)
 	local item = { ["itemID"] = itemID, ["mountID"] = mountID };
-	
+
 	_.ItemDB[itemID] = item;
 	return item;
 end
@@ -197,7 +197,6 @@ i(166775, 290133);	-- Vulpine Familiar
 i(166443, 288589);	-- Yellow Marsh Hopper
 i(142233, 238454);	-- Shadowy Reins of the Accursed Wrathsteed
 
-
 -----------------
 -- PATCH 8.1.5 --
 -----------------
@@ -205,7 +204,6 @@ i(167894, 294568);	-- Beastlord's Irontusk
 i(167895, 294569);	-- Beastlord's Warwolf
 i(168055, 295387);	-- Bloodflank Charger
 i(168056, 295386);	-- Ironclad Frostclaw
-
 
 -----------------
 -- PATCH 8.2.0 --
@@ -242,7 +240,6 @@ i(161667, 275840);	-- Voldunai Dunescraper
 i(169162, 290328);	-- Wonderwing 2.0
 i(167751, 294143);	-- X-995 Mechanocat
 i(153594, 256123);	-- Xiwyllag-ATV
-
 
 -----------------
 -- PATCH 8.2.5 --
@@ -283,3 +280,92 @@ i(174754, 316276);	-- Wastewander Skyterror
 i(174770, 316340);	-- Wicked Swarmer
 i(174861, 316343);	-- Wriggling Parasite
 i(174840, 316723);	-- Xinlao
+
+-----------------
+-- PATCH 9.0.1 --
+-----------------
+i(183800, 342666);	-- Amber Ardenmoth
+i(182650, 339632);	-- Arboreal Gulper
+i(181815, 332466);	-- Armored Bonehoof Tauralus
+i(181820, 332467);	-- Armored Chosen Tauralus
+i(181821, 332464);	-- Armored Plaguerot Tauralus
+i(181822, 332462);	-- Armored War-Bred Tauralus
+i(183741, 342335);	-- Ascended Skymane
+i(180948, 312754);	-- Battle Gargon Vrednic
+i(182614, 339588);	-- Blanchy's Reins
+i(182085, 332478);	-- Blisterback Bloodtusk
+i(182083, 332482);	-- Bonecleaver's Skullboar
+i(182075, 332457);	-- Bonehoof Tauralus
+i(182078, 336041);	-- Bonesewn Fleshroc
+i(184160, 344574);	-- Bulbous Necroray
+i(181818, 336038);	-- Chewed Reins of the Callow Flayedwing
+i(183617, 312776);	-- Chittering Animite
+i(182074, 332460);	-- Chosen Tauralus
+i(184166, 344578);	-- Corridor Creeper
+i(183518, 341639);	-- Court Sinrunner
+i(180945, 332932);	-- Crypt Gargon
+i(183052, 312763);	-- Darkwarren Hardshell
+i(181317, 336064);	-- Dauntless Duskrunner
+i(181817, 318052);	-- Deathbringer's Flayedwing
+i(182209, 332949);	-- Desire's Battle Gargon
+i(180263, 312759);	-- Dreamlight Runedeer
+i(180263, 312759);	-- Dreamlight Runestag
+i(180729, 332256);	-- Duskflutter Ardenmoth
+i(180721, 312761);	-- Enchanted Dreamlight Runestag
+i(180722, 332246);	-- Enchanted Shadeleaf Runestag
+i(180723, 332247);	-- Enchanted Wakener's Runestag
+i(180724, 332248);	-- Enchanted Winterborn Runestag
+i(180582, 332905);	-- Endmire Flyer Tether
+i(180766, 334406);	-- Eternal Phalynx of Courage
+i(180768, 334409);	-- Eternal Phalynx of Humility
+i(180767, 334408);	-- Eternal Phalynx of Loyalty
+i(180765, 334403);	-- Eternal Phalynx of Purity
+i(183740, 342334);	-- Gilded Prowler
+i(184062, 344228);	-- Gnawed Reins of the Battle-Bound Warhound
+i(182084, 332480);	-- Gorespine
+i(182332, 333021);	-- Gravestone Battle Armor
+i(181300, 336039);	-- Gruesome Flayedwing
+i(183618, 341776);	-- Highwind Darkmane
+i(180581, 312753);	-- Hopecrusher Gargon
+i(180461, 332882);	-- Horrid Dredwing
+i(184161, 344576);	-- Infested Necroray
+i(182954, 332923);	-- Inquisition Gargon
+i(182589, 333027);	-- Loyal Gorger
+i(182082, 332484);	-- Lurid Bloodtusk
+i(181819, 336036);	-- Marrowfang's Reins
+i(184167, 312762);	-- Mawsworn Soulhunter
+i(180726, 334365);	-- Pale Acidmaw
+i(184162, 344575);	-- Pestilent Necroray
+i(180763, 334391);	-- Phalynx of Courage
+i(180762, 334386);	-- Phalynx of Humility
+i(180761, 334382);	-- Phalynx of Loyalty
+i(180764, 334398);	-- Phalynx of Purity
+i(182076, 332456);	-- Plaguerot Tauralus
+i(182080, 336045);	-- Predatory Plagueroc
+i(182596, 332903);	-- Rampart Screecher
+i(182081, 327405);	-- Reins of the Colossal Slaughterclaw
+i(180413, 332243);	-- Shadeleaf Runestag
+i(180727, 332252);	-- Shimmermist Runner
+i(183798, 333023);	-- Silessa's Battle Harness
+i(180748, 318051);	-- Silky Shimmermoth
+i(181316, 312777);	-- Silvertip Dredwing
+i(180772, 334433);	-- Silverwind Larion
+i(183715, 332927);	-- Sinfall Gargon
+i(183937, 332400);	-- Sinful Gladiator's Soul Eater
+i(182717, 340068);	-- Sintouched Deathwalker
+i(182079, 336042);	-- Slime-Covered Reins of the Hulking Deathroc
+i(180725, 334364);	-- Spinemaw Gladechewer
+i(180773, 312765);	-- Sundancer
+i(180728, 312767);	-- Swift Gloomhoof
+i(184168, 344577);	-- Tower Shadehound
+i(183053, 340503);	-- Umbral Scythehorn
+i(183801, 342667);	-- Vibrant Flutterwing
+i(184013, 327408);	-- Vicious War Spider(H)
+i(184014, 327407);	-- Vicious War Spider(A)
+i(184183, 344659);	-- Voracious Gorger
+i(180414, 332244);	-- Wakener's Runestag
+i(182077, 332455);	-- War-Bred Tauralus
+i(183615, 341766);	-- Warstitched Darkhound
+i(180730, 334366);	-- Wild Glimmerfur Prowler
+i(180731, 334352);	-- Wildseed Cradle
+i(180415, 332245);	-- Winterborn Runestag

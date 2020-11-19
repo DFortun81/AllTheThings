@@ -47,7 +47,7 @@ _.Zones =
 			q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
 				["isBreadcrumb"] = true,
 				["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
-				["reqlvl"] = { 15 },
+				["lvl"] = { 15 },
 			}),
 			q(36499),	-- Iron Horde Invasion
 			un(REMOVED_FROM_GAME, q(29157)),	-- The Zandalari Menace
@@ -553,7 +553,7 @@ _.Zones =
 			q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
 				["isBreadcrumb"] = true,
 				["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
-				["reqlvl"] = { 15 },
+				["lvl"] = { 15 },
 			}),
 			q(36498, {	-- Iron Horde Invasion
 				["isBreadcrumb"] = true,

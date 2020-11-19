@@ -15,6 +15,7 @@ _.Achievements =
 			}),
 			ach(11748),	-- Black is the New Black (Black Temple)
 			ach(11762),	-- Can I Get A Helya (Trial of Valor)
+			ach(14614),	-- Castle Vain (Castle Nathria)
 			ach(11716),	-- Cataclysmic Catwalk (PvP Season 11)
 			ach(12021),	-- Claws Out (PvP Season 23, 24, or 25)
 			ach(11723),	-- Cruel Intentions (PvP Season 21 or 22)

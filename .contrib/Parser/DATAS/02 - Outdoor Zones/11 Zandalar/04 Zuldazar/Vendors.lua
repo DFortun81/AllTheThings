@@ -761,7 +761,6 @@ _.Zones =
 					},
 				}),
 				n(143555, {	-- Xander Silberman
-					["sourceQuests"] = { 56500 },	-- Storming the Battlefields
 					["coord"] = { 51.6, 58.2, 862 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -777,6 +776,58 @@ _.Zones =
 							un(NEVER_IMPLEMENTED, i(166928)),	-- Dread Gladiator's Chain Spaulders
 							un(NEVER_IMPLEMENTED, i(166929)),	-- Dread Gladiator's Chain Waistguard
 							un(NEVER_IMPLEMENTED, i(166930)),	-- Dread Gladiator's Chain Armbands
+						-- Battle for Azeroth Season 1
+							i(180185, {	-- Ensemble: Dread Aspirant's Plate Armor (H) s1
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180183, {	-- Ensemble: Dread Aspirant's Mail Armor (H) s1
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180181, {	-- Ensemble: Dread Aspirant's Leather Armor (H) s1
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180179, {	-- Ensemble: Dread Aspirant's Cloth Armor (H) s1
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+						-- Battle for Azeroth Season 2
+							i(180191, {	-- Ensemble: Sinister Aspirant's Mail Armor (H) s2
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180189, {	-- Ensemble: Sinister Aspirant's Leather Armor (H) s2
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180187, {	-- Ensemble: Sinister Aspirant's Cloth Armor (H) s2
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180193, {	-- Ensemble: Sinister Aspirant's Plate Armor (H) s2
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+						-- Battle for Azeroth Season 3
+							i(180201, {	-- Ensemble: Notorious Aspirant's Plate Armor (H) s3
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180199, {	-- Ensemble: Notorious Aspirant's Mail Armor (H) s3
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180197, {	-- Ensemble: Notorious Aspirant's Leather Armor (H) s3
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180195, {	-- Ensemble: Notorious Aspirant's Cloth Armor (H) s3
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+						-- Battle for Azeroth Season 4
+							i(180206, {	-- Ensemble: Corrupted Aspirant's Plate Armor (H) s4
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180203, {	-- Ensemble: Corrupted Aspirant's Cloth Armor (H) s4
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180205, {	-- Ensemble: Corrupted Aspirant's Mail Armor (H) s4
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180204, {	-- Ensemble: Corrupted Aspirant's Leather Armor (H) s4
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
 						i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
 							["sourceQuests"] = { 56500 },	-- Storming the Battlefields
 							["classes"] = HEALERS,

@@ -369,4 +369,35 @@ _.Factions =
 		faction(2391),	-- Rustbolt Resistance
 		faction(2417),	-- Uldum Accord
 	}),
+	tier(9, {	-- Shadowlands
+		faction(2413), 	-- Court of Harvesters
+		faction(2407),	-- The Ascended
+		faction(2410), 	-- The Undying Army
+		faction(2422),	-- The Wild Hunt
+		--[[ -- Single comments denote factions with collectible items tied to rep atm
+		--faction(2464), 	-- Court of Night
+		faction(2455),	-- Cryptkeeper Kassir
+		faction(2456), 	-- Droman Aliothe
+		faction(2457),	-- Grandmaster Vole
+		faction(2451), 	-- Hunt-Captain Korayn
+		faction(2458),	-- Kleia and Pelagos
+		faction(2447), 	-- Lady Moonberry
+		faction(2463),	-- Marasmius
+		faction(2448), 	-- Mikanikos
+		faction(2461),	-- Plague Deviser Marileth
+		faction(2452), 	-- Polemarch Adrestes
+		faction(2453),	-- Rendle and Cudgelface
+		faction(2414), 	-- Shadowlands
+		faction(2459),	-- Sika
+		--faction(2462), 	-- Stitchmasters
+		faction(2460),	-- Stonehead
+		--faction(2439), 	-- The Avowed
+		faction(2449),	-- The Countess
+		--faction(2445), 	-- The Ember Court
+		faction(2432),	-- Ve'nari
+		faction(2450), 	-- Alexandros Mograine
+		faction(2446),	-- Baroness Vashj
+		faction(2454), 	-- Choofa
+		]]
+	}),
 };

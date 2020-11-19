@@ -1070,6 +1070,16 @@ _.GearSets =
 				},
 				["lvl"] = 110,
 			}),
+			i(184303, {	-- Arsenal: Stitchmasters' Weapons
+				["lvl"] = { 50 },
+				["g"] = {
+				},
+			}),
+			i(184118, {	-- Arsenal: Winterborn Weapons
+				["lvl"] = { 30 },
+				["g"] = {
+				},
+			}),
 		},
 		["achievementID"] = 705,	-- Master of Arms
 	}),

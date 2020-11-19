@@ -20,6 +20,7 @@ _.PetJournal =
 		p(1666), 	-- Blorp
 		p(2398),	-- Boghopper
 		p(2688),	-- Brilliant Glimmershell
+		p(2931),	-- Brightscale Hatchling
 		p(2479, {	-- Bucketshell
 			["races"] = HORDE_ONLY,
 		}),
@@ -57,6 +58,7 @@ _.PetJournal =
 		p(569), 	-- Garden Frog
 		p(2077), 	-- Ghost Shark
 		p(1665), 	-- Ghostshell Crab
+		p(2930),	-- Glimmerpool Hatchling
 		p(2647),	-- Glimmershell Scuttler
 		p(2684),	-- Glittering Diamondshell
 		p(749), 	-- Golden Civet
@@ -129,6 +131,7 @@ _.PetJournal =
 		p(2478, {	-- Sir Snips
 			["races"] = ALLIANCE_ONLY,
 		}),
+		p(2932),	-- Silvershell Snapper
 		p(2709),	-- Skittering Eel
 		p(2758),	-- Slimy Eel
 		p(2761),	-- Slimy Fangtooth

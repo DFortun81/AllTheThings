@@ -1,11 +1,11 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
---[[
+
 _.PVP =
 {
 n(-10100, {	-- Shadowlands
-		n(-692, {	-- Sinful Gladiator: Shadowlands Season 1
+		n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
 			n(-659, {	-- Aspirant PvP Gear
 				n(-319, {	-- Weapons
 				}),
@@ -68,6 +68,7 @@ n(-10100, {	-- Shadowlands
 
 				}),
 			}),
+			--[[
 			un(REMOVED_FROM_GAME, i(159570)),	-- Battleborn Sigil Dread Combatant
 			un(REMOVED_FROM_GAME, i(155622)),	-- Warlord's Trophy Dread Combatant
 			un(REMOVED_FROM_GAME, i(164580)),	-- Battleborn Sigil Dread Challenger
@@ -78,17 +79,17 @@ n(-10100, {	-- Shadowlands
 			un(REMOVED_FROM_GAME, i(164586)),	-- Warlord's Trophy Dread Duelist
 			un(REMOVED_FROM_GAME, i(164583)),	-- Battleborn Sigil Dread Elite
 			un(REMOVED_FROM_GAME, i(164587)),	-- Warlord's Trophy Dread Elite
+			--]]
 			filter(100, {	-- Mounts
-				i(163123, {	-- Vicious War Riverbeast (A)
+				i(184014, {	-- Vicious War Spider (A)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					--["u"] = REMOVED_FROM_GAME,
 				}),
-				i(163124, {	-- Vicious War Clefthoof (H)
+				i(184013, {	-- Vicious War Spider (H)
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					--["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 		}),
 	}),
 };
---]]

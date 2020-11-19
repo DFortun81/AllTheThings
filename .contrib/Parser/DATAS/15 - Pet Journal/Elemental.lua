@@ -15,11 +15,13 @@ _.PetJournal =
 		p(2086), 	-- Blazehound
 		p(1517),	-- Blazing Cindercrawler
 		un(BLIZZARD_BALANCE, p(1248)),	-- Blossoming Ancient
+		p(2892),	-- Bound Lightspawn
 		p(2082), 	-- Bound Stream
 		p(2706),	-- Brinestone Algan
 		p(1777),	-- Broot
 		p(2707),	-- Budding Algan
 		p(2428),	-- Carnivorous Lasher
+		p(3024),	-- Char
 		un(BLIZZARD_BALANCE, p(1117)),	-- Cinder Kitten
 		p(2087), 	-- Cinderweb Recluse
 		p(2708),	-- Coral Lashling
@@ -32,10 +34,12 @@ _.PetJournal =
 		p(270),		-- Dark Phoenix Hatchling
 		p(1564),	-- Doom Bloom
 		p(2085), 	-- Drafty
+		p(3037),	-- Dread
 		p(1331),	-- Droplet of Y'Shaarj
 		p(1179),	-- Electrified Razortooth
 		p(293),		-- Elementium Geode
 		p(837),		-- Emerald Shale Hatchling
+		p(2897),	-- Emotional Leecher
 		p(2548),	-- Everburning Treant
 		p(1998),	-- Everliving Spore
 		p(519),		-- Fel Flame
@@ -45,6 +49,7 @@ _.PetJournal =
 		p(1430),	-- Forest Sproutling
 		p(2440),	-- Fozling
 		p(253),		-- Frigid Frostling
+		p(3016),	-- Fun Guss
 		p(2466),	-- Giggling Flame
 		p(1332),	-- Gooey Sha-ling
 		p(834),		-- Grinder
@@ -62,10 +67,12 @@ _.PetJournal =
 		p(199),		-- Kirin Tor Familiar
 		p(2468),	-- Laughing Stoneskin
 		p(423),		-- Lava Crab
+		p(3017),	-- Leafadore
 		un(BLIZZARD_BALANCE, p(297)),		-- Lil' Ragnaros
 		p(1177),	-- Living Sandling
 		p(337),		-- Lumpy
 		p(1955),	-- Magma Rageling
+		p(3014),	-- Mire Creeper
 		p(2467),	-- Mischievous Zephyr
 		un(31, p(1451)),	-- Molten Corgi
 		p(1932),	-- Nightmare Lasher
@@ -81,6 +88,7 @@ _.PetJournal =
 		p(175),		-- Phoenix Hatchling
 		p(2465),	-- Playful Frostkin
 		p(2590),	-- Ravenous Prideling
+		p(2898),	-- Raw Emotion
 		p(1328),	-- Ruby Droplet
 		p(460),		-- Ruby Sapling
 		p(2703),	-- Sandkeep
@@ -94,6 +102,7 @@ _.PetJournal =
 		p(1569),	-- Soul of the Forge
 		p(128),		-- Spirit of Summer
 		p(2584),	-- Spirit of the Spring
+		p(3019),	-- Stemmins
 		p(1917),	-- Stormstruck Beaver
 		p(2702),	-- Stormwrath
 		p(1518),	-- Stout Alemental
@@ -109,11 +118,13 @@ _.PetJournal =
 		p(117),		-- Tiny Snowman
 		p(445),		-- Tiny Twister
 		p(480),		-- Topaz Shale Hatchling
+		p(3018),	-- Trootie
 		p(2092), 	-- Unstable Tendril
 		p(855),		-- Venus
 		p(2870),	-- Wailing Lasher
 		p(535),		-- Water Waveling
 		p(1959),	-- Winter Rageling
+		p(3015),	-- Withering Mire Creeper
 		p(220),		-- Withers
 		p(2084), 	-- Zephyrian Prince
 	}),

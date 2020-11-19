@@ -2,7 +2,7 @@ _.ItemDB = {};
 local t = function(itemID)
 	local item = { ["isToy"] = true, ["ignoreBonus"] = true };
 	_.ItemDB[itemID] = item;
-    return item;
+	return item;
 end
 
 t(116856);	-- "Blooming Rose" Contender's Costume
@@ -563,7 +563,6 @@ t(116691);	-- Zhevra Lounge Cushion
 ---------------
 -- PATCH 8.1 --
 ---------------
-
 t(166877);	-- Azerite Firework Launcher
 t(166808);	-- Bewitching Tea Set
 t(166743);	-- Blight Bomber
@@ -604,7 +603,6 @@ t(165791);	-- Worn Cloak
 -----------------
 -- PATCH 8.1.5 --
 -----------------
-
 t(168012);	-- Apexis Focusing Shard
 t(168014);	-- Banner of the Burning Blade
 t(168123);  -- Twitching Eyeball
@@ -615,7 +613,6 @@ t(166747);	-- Brewfest Reveler's Hearthstone
 -----------------
 -- PATCH 8.2.0 --
 -----------------
-
 t(169275);	-- Alliance War Banner
 t(169278);	-- Alliance War Standard
 t(169796);	-- Azeroth Mini Collection: Mechagon
@@ -673,3 +670,42 @@ t(174873);	-- Trans-mogu-rifier
 t(174995);	-- Void Tendril Pet Leash
 t(174921);	-- Void-Touched Skull
 t(174924);	-- Void-Touched Souvenir Totem
+
+-----------------
+-- PATCH 9.0.1 --
+-----------------
+t(183847);	-- Acolyte's Guise
+t(184292);	-- Ancient Elethium Coin
+t(180993);	-- Bat Visage Bobber
+t(183986);	-- Bondable Sinstone
+t(184312);	-- Borr-Geth's Fiery Brimstone
+t(183989);	-- Dredger Barrow Racer
+t(177951);	-- Glimmerflies on Strings
+t(174445);	-- Glimmerfly Cocoon
+t(182729);	-- Hearty Dragon Plume
+t(184223);	-- Helm of the Dominated
+t(182655);	-- Hill King's Roarbox
+t(174286);	-- Kyrian Ritual Vestments
+t(184508);	-- Mawsworn Pet Leash
+t(179393);	-- Mirror of Envious Dreams
+t(182780);	-- Muckpool Cookpot
+t(183856);	-- Mystical Orb of Meditation
+t(182773);	-- Necrolord Hearthstone
+t(181794);	-- Orophea's Lyre
+t(181825);	-- Phial of Ravenous Slime
+t(183876);	-- Quill of Correspondence
+t(182890);	-- Rapid Recitation Quill
+t(173984);	-- Scroll of Aeons
+t(183900);	-- Sinvyr Tea Set
+t(183903);	-- Smelly Jelly
+t(180873);	-- Smolderheart
+t(177665);	-- Spectral Hankerchief
+t(184075);	-- Stonewrought Sentry
+t(182694);	-- Stylish Black Parasol
+t(182696);	-- The Countess's Parasol
+t(182732);	-- The Necronom-i-nom
+t(180947);	-- Tithe Collector's Vessel
+t(183716);	-- Venthyr Sinstone
+t(184218);	-- Vulgarity Arbiter
+t(182695);	-- Weathered Purple Parasol
+t(172924);	-- Wormhole Generator: Shadowlands

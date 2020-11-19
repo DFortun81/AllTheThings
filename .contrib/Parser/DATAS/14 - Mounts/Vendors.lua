@@ -28,6 +28,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(116665),	-- Armored Irontusk
+		i(181821),	-- Armored Plaguerot Tauralus
 		i(44689),	-- Armored Snowy Gryphon
 		i(103638),	-- Ashhide Mushan Beast
 		i(87781),	-- Azure Riding Crane
@@ -83,6 +84,8 @@ _.Mounts =
 		i(89307),	-- Blue Shado-Pan Riding Tiger
 		i(13332),	-- Blue Skeletal Horse
 		i(25475),	-- Blue Wind Rider
+		i(182075),	-- Bonehoof Tauralus
+		i(182078),	-- Bonesewn Fleshroc(Abom Stitching profession)
 		i(116775),	-- Breezestrider Stallion
 		i(128481),	-- Bristling Hellboar
 		un(NEVER_IMPLEMENTED, i(128480)),	-- Bristling Hellboar
@@ -123,6 +126,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(123974),	-- Corrupted Dreadwing
+		i(183518),	-- Court Sinrunner
 		i(95565),	-- Crimson Primal Direhorn
 		i(169202),	-- Crimson Tidestallion
 		i(87791),	-- Crimson Water Strider
@@ -151,18 +155,33 @@ _.Mounts =
 		i(65356, {	-- Drake of the West Wind [Horde Only]
 			["races"] = HORDE_ONLY,
 		}),
+		i(181317),	-- Dauntless Duskrunner
+		i(182209),	-- Desire's Battle Gargon
+		i(180729),	-- Duskflutter Ardenmoth
 		i(116664),	-- Dusky Rockhide
 		i(161908, {	-- Dusky Waycrest Gryphon
 			["races"] = ALLIANCE_ONLY,
 		}),
 		i(25471),	-- Ebon Gryphon
+		i(180724, {	-- Enchanted Winterborn Runestag
+			["cost"] = { { "c", 1813, 5000 } },
+		}),
+		i(180722),	-- Enchanted Shadeleaf Runestag
 		i(8588),	-- Emerald Raptor
 		i(161774, {	-- Expedition Bloodswarmer
 			["races"] = HORDE_ONLY,
 		}),
+		i(180768),	-- Eternal Phalynx of Humility
+		i(180767, {	-- Eternal Phalynx of Loyalty
+			["cost"] = { { "c", 1813, 2500 } },
+		}),
+		i(180765, {	-- Eternal Phalynx of Purity
+			["cost"] = { { "c", 1813, 100 } },
+		}),
 		i(45590),	-- Exodar Elekk
 		i(45597),	-- Forsaken Warhorse
 		i(19029),	-- Frostwolf Howler
+		i(183740),	-- Gilded Prowler
 		i(45589),	-- Gnomeregan Mechanostrider
 		i(62461),	-- Goblin Trike
 		i(62462),	-- Goblin Turbo-Trike
@@ -179,6 +198,7 @@ _.Mounts =
 		i(44086, {	-- Grand Ice Mammoth [Horde Only]
 			["races"] = HORDE_ONLY,
 		}),
+		i(182332),	-- Gravestone Battle Armor
 		i(29744),	-- Gray Elekk
 		i(15277),	-- Gray Kodo
 		i(5864),	-- Gray Ram
@@ -244,6 +264,7 @@ _.Mounts =
 		i(13334),	-- Green Skeletal Warhorse
 		i(25476),	-- Green Wind Rider
 		i(87788),	-- Grey Riding Yak
+		i(181300),	-- Gruesome Flayedwing		-- no cost due each covenant offering this mount in different ways
 		i(87774),	-- Heavenly Golden Cloud Serpent
 		i(142228, {	-- Huntmaster's Dire Wolfhawk (Hunter)
 			["classes"] = { HUNTER },
@@ -258,11 +279,13 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(169203),	-- Inkscale Deepseeker
+		i(182954),	-- Inquisition Gargon
 		i(45586),	-- Ironforge Ram
 		i(116782),	-- Ironside Warwolf
 		i(142369),	-- Ivory Hawkstrider
 		i(67107),	-- Kor'kron Annihilator
 		i(152788),	-- Lightforged Warframe Mount
+		i(182082),	-- Lurid Bloodtusk
 		un(9, i(163042)),	-- Mighty Caravan Brutosaur
 		i(116768),	-- Mosshide Riverwallow
 		i(73838),	-- Mountain Horse
@@ -276,7 +299,17 @@ _.Mounts =
 		i(45595),	-- Orgrimmar Wolf
 		i(116776),	-- Pale Thorngrazer
 		i(163589),	-- Palehide Direhorn
+		i(180761, {	-- Phalynx of Loyalty
+			["cost"] = { { "c", 1813, 1000 } },
+		}),
+		i(180764, {	-- Phalynx of Purity
+			["cost"] = { { "c", 1813, 2500 } },
+		}),
+		i(180761),	-- Phalynx of Loyalty
 		i(2414),	-- Pinto
+		i(182076, {	-- Plaguerot Tauralus
+			["cost"] = { { "c", 1813, 2500 } },
+		}),
 		i(166463, {	-- Priestess' Moonsaber
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = { { "c", 1717, 750 }, },	-- 750x 7th Legion Service Medal
@@ -338,9 +371,12 @@ _.Mounts =
 			["classes"] = { ROGUE },
 		}),
 		i(116772),	-- Shadowmane Charger
+		i(180413),	-- Shadeleaf Runestag
+		i(180748),	-- Silky Shimmermoth
 		i(166745, {	-- Siltwing Albatross
 			["cost"] = { { "c", 1710, 1000 }, },	-- 1000x Seafarer's Dubloon
 		}),
+		i(181316),	-- Silvertip Dredwing
 		i(46813),	-- Silver Covenant Hippogryph
 		i(32318),	-- Silver Riding Nether Ray
 		i(31832, {	-- Silver Riding Talbuk [Alliance Only]
@@ -356,6 +392,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(45596),	-- Silvermoon Hawkstrider
+		i(183715),	-- Sinfall Gargon
 		i(161910, {	-- Smoky Charger
 			["races"] = ALLIANCE_ONLY,
 		}),
@@ -470,8 +507,10 @@ _.Mounts =
 		}),
 		i(8591),	-- Turquoise Raptor
 		i(152796),	-- Umber Ruinstrider
+		i(183053),	-- Umbral Scythehorn
 		i(13322),	-- Unpainted Mechanostrider
 		i(167170),	-- Unshackled Waveray
+		i(183801),	-- Vibrant Flutterwing
 		i(8592),	-- Violet Raptor
 		i(161667, {	-- Voldunai Dunescraper
 			["races"] = HORDE_ONLY,
@@ -498,6 +537,7 @@ _.Mounts =
 		i(40775, {	-- Winged Steed of the Ebon Blade [Death Knight Only]
 			["classes"] = { DEATHKNIGHT },
 		}),
+		i(180415),	-- Winterborn Runestag
 		i(116655),	-- Witherhide Cliffstomper
 		i(44230, {	-- Wooly Mammoth [Alliance Only]
 			["races"] = ALLIANCE_ONLY,

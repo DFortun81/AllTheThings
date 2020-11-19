@@ -12,6 +12,7 @@ _.PetJournal =
 		p(2848),	-- Aqir Tunneler
 		p(641),		-- Arctic Hare
 		p(272),		-- Armadillo Pup
+		p(3030),	-- Ashen Chomper
 		p(1738),	-- Auburn Ringtail
 		p(706),		-- Bandicoon
 		p(707),		-- Bandicoon Kit
@@ -38,7 +39,9 @@ _.PetJournal =
 		p(1061),	-- Darkmoon Hatchling
 		p(848),		-- Darkmoon Rabbit
 		p(755),		-- Death's Head Cockroach
+		p(3039),	-- Decaying Mawrat
 		p(555),		-- Deepholm Cockroach
+		p(3021),	-- Deepwood Leaper
 		p(2065),	-- Dig Rat
 		p(467),		-- Dung Beetle
 		p(1778),	-- Dust Bunny
@@ -52,6 +55,7 @@ _.PetJournal =
 		p(541),		-- Fire-Proof Roach
 		p(644),		-- Fjord Rat
 		p(2407),	-- Frenzied Cottontail
+		p(3032),	-- Frenzied Mawrat
 		p(1427),	-- Frostfur Rat
 		p(477),		-- Gazelle Fawn
 		p(193),		-- Giant Sewer Rat
@@ -70,10 +74,12 @@ _.PetJournal =
 		p(448),		-- Hare
 		p(550),		-- Highlands Mouse
 		p(823),		-- Highlands Skunk
+		p(3027),	-- Hissing Deathroach
 		p(1040),	-- Imperial Silkworm
 		p(442),		-- Irradiated Roach
 		p(2663),	-- Junkheap Roach
 		p(429),		-- Lava Beetle
+		p(3035),	-- Lavender Nibbler
 		p(203),		-- Little Fawn
 		p(2471),	-- Littlehoof
 		p(543),		-- Locust
@@ -130,10 +136,12 @@ _.PetJournal =
 		p(568),		-- Silkbead Snail
 		un(REMOVED_FROM_GAME, p(171)),	-- Silver Pig
 		p(820),		-- Singing Cricket
+		p(3023),	-- Sir Reginald
 		p(397),		-- Skunk
 		p(2063),	-- Sneaky Marmot
 		p(640),		-- Snowshoe Hare
 		p(72),		-- Snowshoe Rabbit
+		p(3044),	-- Spinemaw Larva
 		p(2653),	-- Spireshell Snail
 		p(200),		-- Spring Rabbit
 		p(379),		-- Squirrel
@@ -147,12 +155,14 @@ _.PetJournal =
 		p(546),		-- Tol'vir Scarab
 		p(729),		-- Tolai Hare
 		p(730),		-- Tolai Hare Pup
+		p(3026),	-- Tower Deathroach
 		p(2004),	-- Trashy
 		p(2659),	-- Trench Slug
 		p(2057),	-- Tricorne
 		p(469),		-- Twilight Beetle
 		p(55),		-- Undercity Cockroach
 		p(454),		-- Undercity Rat
+		p(3038),	-- Undying Deathroach
 		p(2843),	-- Void-Scarred Beetle
 		p(2839),	-- Void-Scarred Hare
 		p(2864),	-- Void-Scarred Locust

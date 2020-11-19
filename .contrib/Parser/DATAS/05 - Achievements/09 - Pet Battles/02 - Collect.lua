@@ -718,6 +718,29 @@ _.Achievements =
 				crit(10),	-- Living Amber			( HoF  — Amber-Shaper Un'sok )
 				crit(11),	-- Ravenous Prideling	( HoF  — Grand Empress Shek'zeer )
 			}),
+			ach(14867, {	-- Shadowlands Safari
+				crit(1),		-- Animared Cruor
+				crit(2),		-- Bleak Skitterer
+				crit(3),		-- Clutch
+				crit(4),		-- Copperfur Kit
+				crit(5),		-- Deepwood Leaper
+				crit(6),		-- Dusky Dredwing Pup
+				crit(7),		-- Fledgling Teroclaw
+				crit(8),		-- Fluttering Glimmerfly
+				crit(9),		-- Glimmerpool Hatchling
+				crit(10),		-- Gorm Rootstinger
+				crit(11),		-- Lost Soul
+				crit(12),		-- Mire Creeper
+				crit(13),		-- Necroray Spawnling
+				crit(14),		-- Pulsating Maggot
+				crit(15),		-- Rosetipped Spiderling
+				crit(16),		-- Rustfur Kit
+				crit(17),		-- Tranquil Wader
+				crit(18),		-- Vibrant Glimmerfly
+				crit(19),		-- Wader Chick
+				crit(20),		-- Wild Etherwyrm
+				crit(21),		-- Withering Creeper
+			}),
 			ach(6571),		-- That Was Close!*
 			ach(6590, {		-- World Safari*
 				title(199),		-- Zookeeper

@@ -10,9 +10,11 @@ _.Toys =
 		i(139773),		-- Emerald Winds
 		i(134034),		-- Esteemed Pennant
 		i(164310),		-- Glorious Pennant
+		i(184223),		-- Helm of the Dominated
 		i(87528),		-- Honorary Brewmaster Keg
 		i(134026),		-- Honorable Pennant
 		i(163697),		-- Laser Pointer
+		i(184508),		-- Mawsworn Pet Leash
 		i(174871),		-- Mayhem Mind Melder
 		un(REMOVED_FROM_GAME, i(89205)),	-- Mini Mana Bomb (Horde) No Longer Available
 		i(143660), 		-- Mrgrglhjorn
@@ -23,6 +25,7 @@ _.Toys =
 		i(92738),		-- Safari Hat
 		i(98132),		-- Shado-Pan Geyser Gun
 		i(174830),		-- Shadowy Disguise
+		i(183903),		-- Smelly Jelly
 		i(43824),		-- The Schools of Arcane Magic - Mastery
 		i(122293, {		-- Trans-Dimensional Bird Whistle
 			i(170151, {	-- A Tiny Clockwork Key
@@ -80,5 +83,6 @@ _.Toys =
 				-- TODO:: find the hat and add the relevant info
 			}),
 		}),
+		i(182695),		-- Weathered Purple Parasol
 	}),
 };

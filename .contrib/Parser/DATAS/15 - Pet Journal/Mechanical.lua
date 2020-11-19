@@ -65,6 +65,7 @@ _.PetJournal =
 		p(2714),	-- OOX-35/MG
 		p(261),		-- Personal World Destroyer
 		p(85),		-- Pet Bombling
+		p(2889),	-- PHA7-YNX
 		p(1204),	-- Pierre
 		p(2041),	-- Pocket Cannon
 		p(1233),	-- Pocket Reaver

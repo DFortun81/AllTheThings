@@ -17,12 +17,15 @@ _.PetJournal =
 		p(1343),			-- Bonkers
 		p(2457),			-- Coldlight Surfrunner
 		p(1149),			-- Corefire Imp
+		p(2899),			-- Court Messenger
 		p(1688),			-- Crusher
 		un(20, p(225)),		-- Curious Oracle Hatchling
 		un(20, p(226)),		-- Curious Wolvar Hatchling
 		p(2850),			-- Cursed Dune Watcher
+		p(2900),			-- Dal
 		p(1329),			-- Dandelion Frolicker
 		un(REMOVED_FROM_GAME, p(294)),		-- Deathy
+		p(2967),			-- Dredger Butler
 		p(1979, {			-- Dutiful Gruntling
 			["races"] = HORDE_ONLY,
 		}),
@@ -81,6 +84,7 @@ _.PetJournal =
 			["races"] = HORDE_ONLY,
 		}),
 		p(1226),			-- Lil' Bad Wolf
+		p(3062),			-- Lost Featherling
 		un(REMOVED_FROM_GAME, p(111)),		-- Lurky
 		un(REMOVED_FROM_GAME, p(189)),		-- Mini Tyrael
 		un(BLIZZARD_BALANCE, p(296, {	-- Moonkin Hatchling (Alliance)
@@ -109,17 +113,22 @@ _.PetJournal =
 		p(1953),			-- Snobold Runt
 		p(515),				-- Sporeling Sprout
 		p(1935),			-- Squirky
+		p(3067),			-- Spriggan Trickster
+		p(1935),			-- Squirky
+		p(3061),			-- Steward Featherling
 		p(1158),			-- Stunted Yeti
 		p(1885),			-- Sunborne Val'kyr
 		p(1073),			-- Terky
 		p(2469),			-- Thistlebrush Bud
 		p(1803),			-- Thistleleaf Adventurer
+		p(2901),			-- Trapped Stonefiend
 		un(REMOVED_FROM_GAME, p(1365)),		-- Treasure Goblin
 		p(2022),			-- Tylarr Gronnden
 		p(2136), 			-- Uuna
 		p(2833),			-- Void-Scarred Anubisath
 		un(BLIZZARD_BALANCE, p(2184)),	-- Whomper
 		p(120),				-- Winter's Little Helper
+		p(3079),			-- Winterleaf Spriggan
 		p(1634),			-- Wretched Servant
 		p(1887),			-- Wyrmy Tunkins
 		p(2680),			-- Zanj'ir Poker

@@ -2917,5 +2917,27 @@ _.HiddenQuestTriggers =
 		q(62850),	--  \ triggered when logging into my 50 main during week 2 of the prepatch
 		q(62851),	--  / nothing else done, quests were not there during week 1
 		q(62852),	-- /
+
+		-- Torghast
+		q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)
+		q(59988),	-- Tracking Quest (Finished The Soulforges Layer 1)
+		q(59989),	-- Tracking Quest (Finished Coldheart Interstitia Layer 1)
+		q(59990),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
+		q(59991),	-- Tracking Quest (Finished The Soulforges Layer 1)
+		q(59992),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
+		q(59993),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
+		q(59995),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
+		q(59996),	-- Tracking Quest (Finished Skoldus Hall Layer 1)
+		q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
+
+		-- Ardenweald Covenant Questline
+		q(62745),	-- Daughter of the Night Warrior Questline finished
+
+		-- Revendreth WQ
+		q(59858),	-- Tea Tales: Theotar Achievement criteria
+		q(59858),	-- Tea Tales: Theotar Achievement criteria
+
+		-- Dungeons
+		q(62658),	-- Shadowlands Dungeon Reward Quest
 	}),
 };

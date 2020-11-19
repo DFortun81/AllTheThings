@@ -136,6 +136,7 @@ app.L = {
 		["Mists of Pandaria"] = "MoP",
 		["Warlords of Draenor"] = "WoD",
 		["Battle for Azeroth"] = "BFA",
+		["Shadowlands"] = "SL",
 		["Player vs Player"] = "PvP",
 		["Raid Finder"] = "LFR",
 		["Looking For Raid"] = "LFR",
@@ -644,6 +645,7 @@ app.L = {
 		[-860] = "Interface\\Icons\\inv_smallazeriteshard",									-- Rank 3
 		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
 		[-862] = "Interface\\Icons\\inv_heartofazeroth",									-- Heart of Azeroth
+		[-901] = "Interface\\Icons\\inv_misc_covenant_renown",								-- Covenant Callings
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -953,6 +955,12 @@ app.L = {
 		[-10080] = "Interface\\Icons\\trade_alchemy_potiond2",						-- Horrific Visions
 		[-10081] = "Interface\\Icons\\spell_shadow_shadowmend",						-- Corrupted Area (Vision Scenario)
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
+
+		[-10100] = "Interface\\Icons\\Paladin_Protection",							-- Shadowlands
+		[-10101] = "Interface\\Icons\\Paladin_Protection",							-- Shadowlands Dungeon
+		[-10102] = "Interface\\Icons\\Paladin_Protection",							-- Shadowlands Raid
+		[-10103] = "Interface\\Icons\\Paladin_Protection",							-- The Maw and Torghast
+		[-10104] = "Interface\\Icons\\Paladin_Protection",							-- Covenant Sanctums
 
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1421,8 +1429,14 @@ app.L = {
 		[-860] = "Rank 3",														-- Rank 3
 		[-861] = "Rank 4",														-- Rank 4
 
--- Temporarily Header
+-- Shadowlands Header
+	--	[-900] = 																-- Covenant Sanctrum
+		[-901] = GetSpellInfo(339041),											-- Covenant Callings
+		[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown
+		[-940] = "Ascended Council",											-- Ascended Counil
 
+-- Temporarily Header
+		[-950] = "Adventures",													-- Temporary header for Adventures
 
 
 -- Weapon Sets
@@ -1866,7 +1880,13 @@ app.L = {
 		[-10080] = "Horrific Visions",
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
-		-- 9.0
+
+-- Shadowlands Achievement Header
+		[-10100] = select(1,GetCategoryInfo(15422)),	-- Shadowlands
+		[-10101] = select(1,GetCategoryInfo(15428)),	-- Shadowlands Dungeon
+		[-10102] = select(1,GetCategoryInfo(15438)),	-- Shadowlands Raids
+		[-10103] = select(1,GetCategoryInfo(15440)),	-- The Maw and Torghast
+		[-10104] = select(1,GetCategoryInfo(15441)),	-- Covenant Sanctums
 	},
 
 	["OBJECT_ID_ICONS"] = {
@@ -2557,6 +2577,7 @@ app.L = {
 		[339211] = "Interface\\Icons\\inv_misc_bowl_01",
 		[339770] = "Interface\\Icons\\inv_misc_treasurechest01c",
 		[343611] = "Interface\\Icons\\inv_misc_food_legion_gooamberpurple_chunk",
+		[350978] = "Interface\\Icons\\inv_legion_cache_dreamweavers",
 		[357758] = "Interface\\Icons\\ability_vehicle_plaguebarrel",
 		[9999890] = "Interface\\Icons\\INV_Heart_of_the_Thunder King_Icon",
 		[9999891] = "Interface\\Icons\\ability_paladin_blessedmending",

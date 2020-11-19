@@ -9,9 +9,42 @@ _.Achievements =
 			ach(891),		-- Giddy Up! (Apprentice)
 			ach(889),		-- Fast and Furious (Journeyman)
 			ach(890),		-- Into The Wild Blue Yonder (Expert)
-			ach(892),		-- The Right Stuff (Artisan)
 		}),
 		ach(7380),		-- Double Agent
+		ach(12547, {	-- Epic (ilvl 340)
+			crit(1),		-- Head
+			crit(2),		-- Neck
+			crit(3),		-- Shoulder
+			crit(4),		-- Chest
+			crit(5),		-- Waist
+			crit(6),		-- Legs
+			crit(7),		-- Feet
+			crit(8),		-- Wrist
+			crit(9),		-- Hands
+			crit(10),		-- Left Ring
+			crit(11),		-- Right Ring
+			crit(12),		-- First Trinket
+			crit(13),		-- Second Trinket
+			crit(14),		-- Cloak
+			crit(15),		-- Weapon
+			ach(12546, {	-- Superior (ilvl 310)
+				crit(1),		-- Head
+				crit(2),		-- Neck
+				crit(3),		-- Shoulder
+				crit(4),		-- Chest
+				crit(5),		-- Waist
+				crit(6),		-- Legs
+				crit(7),		-- Feet
+				crit(8),		-- Wrist
+				crit(9),		-- Hands
+				crit(10),		-- Left Ring
+				crit(11),		-- Right Ring
+				crit(12),		-- First Trinket
+				crit(13),		-- Second Trinket
+				crit(14),		-- Cloak
+				crit(15),		-- Weapon
+			}),
+		}),
 		ach(6753, {		-- Got My Mind On My Money (200,000)
 			ach(1176),		-- Got My Mind On My Money (100)
 			ach(1177),		-- Got My Mind On My Money (1,000)

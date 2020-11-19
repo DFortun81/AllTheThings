@@ -37,6 +37,18 @@ _.Achievements =
 				ach(12577),		-- Tour of Duty: Tiragarde Sound
 				ach(12575),		-- Tour of Duty: Zuldazar
 			}),
+			ach(14520, {	-- Deathbringer
+				title(424),	-- Deathbringer <Name>
+				ach(14519),	-- Covenant Combat
+				ach(14518, {	-- The Many Trials of Zo'Sorg
+					ach(14517),	-- First Trial, First Try
+				}),
+				ach(14516),	-- Impressing Zo'Sorg
+				ach(14514),	-- Tour of Duty: Bastion
+				ach(14513),	-- Tour of Duty: Maldraxxus
+				ach(14512),	-- Tour of Duty: Revendreth
+				ach(14511),	-- Tour of Duty: Ardenweald
+			}),
 			ach(13623, {	-- Fighting on Two Fronts
 				crit(1),	-- Acquire Nazjatar Battle Commendations
 				crit(2),	-- Kill Players in Mechagon

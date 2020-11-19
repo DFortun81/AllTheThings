@@ -164,10 +164,31 @@ _.Achievements =
 					["description"] = "Must earn with a female character.",
 				})),
 			})),
-			ach(13789),	-- Hertz Locker
+			un(REMOVED_FROM_GAME, ach(13789)),	-- Hertz Locker
 			un(REMOVED_FROM_GAME, ach(8903, {		-- Mistwalker
 				un(REMOVED_FROM_GAME, title(255)),	-- Mistwalker
 			})),
+			ach(14531, {	-- Shadowlands Keystone Conqueror: Season One
+				crit(1),	-- Necrotic Wake
+				crit(2),	-- Plaguefall
+				crit(3),	-- Mists of Tirna Scithe
+				crit(4),	-- Halls of Atonement
+				crit(5),	-- Spires of Ascension
+				crit(6),	-- Theater of Pain
+				crit(7),	-- De Other Side
+				crit(8),	-- Sanguine Depths
+			}),
+			ach(14532, {	-- Shadowlands Keystone Master: Season One
+				i(182717),	-- Sintouched Deathwalker
+				crit(1),	-- Necrotic Wake
+				crit(2),	-- Plaguefall
+				crit(3),	-- Mists of Tirna Scithe
+				crit(4),	-- Halls of Atonement
+				crit(5),	-- Spires of Ascension
+				crit(6),	-- Theater of Pain
+				crit(7),	-- De Other Side
+				crit(8),	-- Sanguine Depths
+			}),
 		}),
 	}),
 };

@@ -32,10 +32,14 @@ _.PetJournal =
 		p(75),				-- Black Kingsnake
 		p(42),				-- Black Tabby Cat
 		p(1743),			-- Black-Footed Fox Kit
+		p(2956),			-- Bloodlouse Hatchling
+		p(3013),			-- Bloodlouse Larva
 		p(2388),			-- Bloodfever Tarantula
+		p(2965),			-- Bloodfeaster Spiderling
 		p(2451),			-- Bloodstone Tunneler
 		p(1577),			-- Bloodthorn Hatchling
 		p(40),				-- Bombay Cat
+		p(2948),			-- Boneweave Hatchling
 		p(77),				-- Brown Snake
 		p(380),				-- Bucktooth Flapper
 		p(1726),			-- Burrow Spiderling
@@ -47,13 +51,17 @@ _.PetJournal =
 		p(2418),			-- Child of Jani
 		p(1662),			-- Cinder Pup
 		p(518),				-- Clefthoof Runt
+		p(2817),			-- Gloober, as G-huun
 		p(742),				-- Clouded Hedgehog
 		p(197),				-- Cobra Hatchling
+		p(2936),			-- Copperfur Kit
 		p(562),				-- Coral Adder
 		p(488),				-- Coral Snake
 		p(1890),			-- Corgi Pup
 		p(1929),			-- Corgnelius
 		p(41),				-- Cornish Rex Cat
+		p(2955),			-- Corpselouse Hatchling
+		p(2945),			-- Corpulent Bonetusk
 		p(2448),			-- Craghoof Kid
 		p(78),				-- Crimson Snake
 		p(745),				-- Crunchy Scorpion
@@ -74,6 +82,7 @@ _.PetJournal =
 		p(504),				-- Diemetradon Hatchling
 		p(2197),			-- Direhorn Hatchling
 		p(1205),			-- Direhorn Runt
+		p(2905),			-- Dodger
 		un(BLIZZARD_BALANCE, p(2623)),	-- Dottie
 		p(1952),			-- Dreadmaw
 		p(2406),			-- Drustvar Piglet
@@ -91,6 +100,7 @@ _.PetJournal =
 		p(714),				-- Feverbite Hatchling
 		p(529),				-- Fjord Worg Pup
 		p(1595),			-- Flat-Tooth Calf
+		p(2910),			-- Floofa
 		p(407),				-- Forest Spiderling
 		p(2121),			-- Fossorial Bile Larva
 		p(278),				-- Fox Kit
@@ -98,13 +108,17 @@ _.PetJournal =
 		p(2432),			-- Fuzzy Creepling
 		p(475),				-- Giraffe Calf
 		p(2711),			-- Golden Snorf
+		p(2934),			-- Goldenpaw Kit
 		p(571),				-- Grove Viper
+		p(2918),			-- Grubby
 		p(1705),			-- Grumpy
 		p(2190),			-- Guardian Cobra Hatchling
 		p(234),				-- Gundrak Hatchling
 		p(851),				-- Horned Lizard
+		p(2916),			-- Hungry Burrower
 		p(317),				-- Hyjal Bear Cub
 		p(1457),			-- Icespine Hatchling
+		p(2941),			-- Indigo
 		p(2089),			-- Infernal Pyreclaw
 		p(2852),			-- Jade Defender
 		p(2795),			-- Jenafur
@@ -125,6 +139,7 @@ _.PetJournal =
 		p(408),				-- Lizard Hatchling
 		p(2558),			-- Lord Woofington
 		p(1661),			-- Lost Netherpup
+		p(2847),			-- Luminous Webspinner
 		p(1922),			-- Lurking Owl Kitten
 		p(450),				-- Maggot
 		p(1446),			-- Meadowstomper Calf
@@ -148,9 +163,12 @@ _.PetJournal =
 		p(301),				-- Panther Cub
 		p(1615),			-- Parched Lizard
 		p(1663),			-- Periwinkle Calf
+		p(2946),			-- Pernicious Bonetusk
 		p(726),				-- Plains Monitor
+		p(2954),			-- Plaguelouse Hatchling
 		p(2188),			-- Poda
 		un(REMOVED_FROM_GAME, p(124)),		-- Poley
+		p(2935),			-- Purity
 		p(2849),			-- Pygmy Camel
 		p(1200),			-- Pygmy Direhorn
 		p(2437),			-- Ragepeep
@@ -162,15 +180,21 @@ _.PetJournal =
 		p(239),				-- Razzashi Hatchling
 		p(1176),			-- Red Panda
 		p(2525),			-- Redridge Tarantula
+		p(2878),			-- Renny
 		p(1756),			-- Ridgeback Piglet
 		p(2776, {			-- Rikki
 			["u"] = REMOVED_FROM_GAME,
 		}),
 		p(1453),			-- River Calf
 		p(482),				-- Rock Viper
+		p(2907),			-- Rocky
+		p(2891),			-- Rose Spiderling
 		p(1749),			-- Rose Taipan
+		p(3007),			-- Rosetipped Spiderling
 		p(2847),			-- Rotbreath
+		p(3020),			-- Runelight Leaper
 		p(2661),			-- Rustyroot Snooter
+		p(2933),			-- Sable
 		p(491),				-- Sand Kitten
 		p(1692),			-- Savage Cub
 		p(2436),			-- Scabby
@@ -178,6 +202,7 @@ _.PetJournal =
 		p(414),				-- Scorpid
 		p(416),				-- Scorpling
 		p(2560),			-- Scritches
+		p(3022),			-- Shimmerbough Hoarder
 		p(44),				-- Siamese Cat
 		p(511),				-- Sidewinder
 		p(741),				-- Silent Hedgehog
@@ -200,6 +225,8 @@ _.PetJournal =
 		p(1763),			-- Spiketail Beaver
 		p(433),				-- Spiky Lizard
 		p(466),				-- Spiny Lizard
+		p(2942),			-- Spirited Skyfoal
+		p(2914),			-- Starry Dreamfoal
 		p(2579),			-- Stoneclaw
 		p(432),				-- Stripe-Tailed Scorpid
 		p(1184),			-- Stunted Direhorn
@@ -216,6 +243,7 @@ _.PetJournal =
 		p(1759),			-- Thaumaturgical Piglet
 		p(1456),			-- Thicket Skitterer
 		p(1810),			-- Thornclaw Broodling
+		p(2922),			-- Thumbbiter
 		p(2529),			-- Thunder Lizard Runt
 		p(2412),			-- Tiny Direhorn
 		p(1236),			-- Tito
@@ -239,6 +267,7 @@ _.PetJournal =
 		p(46),				-- White Kitten
 		p(2851),			-- Wicked Lurker
 		p(400),				-- Widow Spiderling
+		p(2915),			-- Willowbreeze
 		un(REMOVED_FROM_GAME, p(246)),		-- Wind Rider Cub
 		p(306),				-- Winterspring Cub
 		p(89),				-- Worg Pup

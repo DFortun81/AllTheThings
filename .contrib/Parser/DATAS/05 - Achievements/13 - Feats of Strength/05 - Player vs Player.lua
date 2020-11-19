@@ -120,13 +120,6 @@ _.Achievements =
 				ach(12135, {	-- Dominant Elite
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				--[[ Legacy
-				ach(12137, {	-- Dominant Combatant Legion Season 6 (Alliance)
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				ach(12136, {	-- Dominant Combatant Legion Season 6 (Horde)
-					["u"] = REMOVED_FROM_GAME,
-				}),--]]
 				ach(12134, {	-- Dominant Gladiator: Legion Season 6
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -214,13 +207,6 @@ _.Achievements =
 						title(451),	-- Defender of the Alliance <Name>
 					},
 				}),
-				--[[ Legacy
-				ach(12200, {	-- Demonic Combatant Legion Season 7 (Alliance)
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				ach(12199, {	-- Demonic Combatant Legion Season 7 (Horde)
-					["u"] = REMOVED_FROM_GAME,
-				}),--]]
 				ach(12198, {	-- Demonic Elite
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -564,6 +550,73 @@ _.Achievements =
 					["g"] = {
 						title(411, {	-- Corrupted Gladiator <Name>
 							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+			}),
+			n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
+				ach(14686, {	-- Challenger: Shadowlands Season 1
+					--["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(32),	-- Challenger <Name>
+					},
+				}),
+				ach(14685, {	-- Combatant: Shadowlands Season 1
+					--["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(78),	-- Combatant <Name>
+					},
+				}),
+				ach(14688, {	-- Duelist: Shadowlands Season 1
+					--["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(30),	-- Duelist <Name>
+						-- Note!! Currently we can not list this due to having no item.
+						--[[ Illusion: Dreadflame // Dreadflame Illusion
+						i(172671, {	-- Corrupted Gladiator's Cloak (A)
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(172670, {	-- Corrupted Gladiator's Cloak (H)
+							["u"] = REMOVED_FROM_GAME,
+						}),--]]
+					},
+				}),
+				ach(14691, {	-- Elite: Shadowlands Season 1
+					--["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						i(180431, {	-- Sinful Gladiator's Tabard
+						--	["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+				ach(14689, {	-- Gladiator: Shadowlands Season 1
+					--["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(29),	-- Gladiator <Name>
+						i(183937, {	-- Sinful Gladiator's Soul Eater
+						--	["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+				ach(14692, {	-- Hero of the Alliance: Sinful
+					["races"] = ALLIANCE_ONLY,
+					--["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(14693, {	-- Hero of the Horde: Sinful
+					["races"] = HORDE_ONLY,
+					--["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(14687, {	-- Rival: Shadowlands Season 1
+					--["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(31),	-- Rival <Name>
+					},
+				}),
+				ach(14690, {	-- Sinful Gladiator: Shadowlands Season 1
+					--["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(434, {	-- Sinful Gladiator <Name>
+							--["u"] = REMOVED_FROM_GAME,
 						}),
 					},
 				}),

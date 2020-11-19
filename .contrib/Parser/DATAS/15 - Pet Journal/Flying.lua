@@ -15,6 +15,7 @@ _.PetJournal =
 			["races"] = ALLIANCE_ONLY,
 		}),
 		p(732),				-- Amber Moth
+		p(2911),			-- Amber Glitterwing
 		p(1465),			-- Amberbarb Wisp
 		p(2586),			-- Amberglow Stinger
 		p(52),				-- Ancona Chicken
@@ -23,6 +24,7 @@ _.PetJournal =
 		p(1470),			-- Axebeak Hatchling
 		p(1321),			-- Azure Crane Chick
 		p(626),				-- Bat
+		p(3011),			-- Battie
 		p(2124),			-- Bilescourge
 		p(1693),			-- Blazing Firehawk
 		p(1468),			-- Bloodbeak
@@ -42,7 +44,9 @@ _.PetJournal =
 		p(1303),			-- Chi-Chi, Hatchling of Chi-Ji
 		p(849),				-- Chi-Ji Kite
 		p(646),				-- Chicken
+		p(2908),			-- Chirpy Valeshrieker
 		p(2527),			-- Child of Pa'ku
+		p(2909),			-- Cloudfeather Fledgling
 		p(1914),			-- Coastal Sandpiper
 		p(2568, {			-- Cobalt Raven
 			["races"] = ALLIANCE_ONLY,
@@ -51,9 +55,11 @@ _.PetJournal =
 		p(2405, {			-- Corlain Falcon
 			["races"] = ALLIANCE_ONLY,
 		}),
+		p(3065),			-- Courage
 		p(1997),			-- Crackers
 		p(507),				-- Crested Owl
 		p(2567),			-- Crimson Bat Pup
+		p(2903),			-- Crimson Dredwing Pup
 		p(421),				-- Crimson Moth
 		p(2794),			-- Crimson Skipper
 		p(1537),			-- Crimson Spore
@@ -62,12 +68,15 @@ _.PetJournal =
 		p(336),				-- Darkmoon Balloon
 		p(1062),			-- Darkmoon Glowfly
 		p(2544),			-- Darkshore Sentinel
+		p(2940),			-- Devoured Wader
 		p(1975),			-- Direbeak Hatchling
 		p(2118),	 		-- Docile Skyfin
 		un(10, p(169)),		-- Dragon Kite
 		p(537),				-- Dragonbone Hatchling
 		un(REMOVED_FROM_GAME, p(1386)),		-- Dread Hatchling
 		p(2431),			-- Dreadtick Leecher
+		p(2902),			-- Dusky Dredwing Pup
+		p(2912),			-- Dusty Sporeflutterer
 		p(1588),			-- Dusty Sporewing
 		p(1761),			-- Echo Batling
 		p(747),				-- Effervescent Glowfly
@@ -83,19 +92,28 @@ _.PetJournal =
 		p(1709),			-- Fledgling Kingfeather
 		p(521),				-- Fledgling Nether Ray
 		p(1710),			-- Fledgling Oliveback
+		p(2926),			-- Fledgling Teroclaw
 		p(1716),			-- Fledgling Warden Owl
+		p(2927),			-- Fluttering Glimmerfly
 		p(478),				-- Forest Moth
 		p(2438),			-- Foulfeather
+		p(2964),			-- Foulwing Hatchling
 		p(2165),			-- Francois
 		p(1471),			-- Fruit Hunter
 		p(756),				-- Fungal Moth
+		p(2913),			-- Fuzzy Shimmermoth
 		p(753),				-- Garden Moth
 		p(748),				-- Gilded Moth
+		p(2938),			-- Gilded Wader
 		p(630),				-- Gilnean Raven
 		p(1598),			-- Glowing Sporebat
 		p(260),				-- Gold Mini Jouster
+		p(2925),			-- Golden Cloudfeather
 		p(1573),			-- Golden Dawnfeather
 		p(1712),			-- Golden Eaglet
+		p(2921),			-- Gorm Harrier
+		p(2920),			-- Gorm Needler
+		p(2919),			-- Gorm Rootstinger
 		p(68),				-- Great Horned Owl
 		p(2650),			-- Great Sea Albatross
 		p(2409),			-- Greatwing Macaw
@@ -104,6 +122,7 @@ _.PetJournal =
 		un(REMOVED_FROM_GAME, p(245)),		-- Gryphon Hatchling
 		un(REMOVED_FROM_GAME, p(311)),		-- Guardian Cub
 		p(67),				-- Hawk Owl
+		p(2928),			-- Helpful Glimmerfly
 		p(645),				-- Highlands Turkey
 		un(BLIZZARD_BALANCE, p(130)),		-- Hippogryph Hatchling
 		p(1762),			-- Hog-Nosed Bat
@@ -121,6 +140,7 @@ _.PetJournal =
 		p(1469),			-- Junglebeak
 		p(1597),			-- Kaliri Hatchling
 		p(2585),			-- Kor'thik Swarmling
+		p(3063),			-- Larion Pouncer
 		p(2390),			-- Leafy Flutterwing
 		p(2552),			-- Leatherwing Screecher
 		p(1713),			-- Long-Eared Owl
@@ -130,6 +150,7 @@ _.PetJournal =
 		p(149),				-- Miniwing
 		p(2483),			-- Murloc Balloon
 		p(1514),			-- Mystical Spring Bouquet
+		p(3052),			-- Necroray Spawnling
 		p(186),				-- Nether Ray Fry
 		p(1715),			-- Nightwatch Swooper
 		p(2563),			-- Nightwreathed Watcher
@@ -140,6 +161,7 @@ _.PetJournal =
 		p(2792),			-- Papi
 		p(2380),			-- Parasitic Boarfly
 		p(403),				-- Parrot
+		p(2923),			-- Pearlwing Heron
 		p(201),				-- Plump Turkey
 		p(409),				-- Polly
 		p(2452),			-- Poro
@@ -176,6 +198,8 @@ _.PetJournal =
 		p(1974),			-- Snowfeather Hatchling
 		p(69),				-- Snowy Owl
 		p(2441),			-- Squawkling
+		p(3006),			-- Stoneskin Dredwing Pup
+		p(3012),			-- Stony
 		p(1546),			-- Stormwing
 		p(1570),			-- Sunfire Kaliri
 		p(2473),			-- Sunscale Hatchling
@@ -185,10 +209,12 @@ _.PetJournal =
 		p(728),				-- Szechuan Chicken
 		p(498),				-- Tainted Moth
 		p(1416),			-- Teroclaw Hatchling
+		p(3009),			-- The Count
 		p(194),				-- Tickbird Hatchling
 		p(287),				-- Tiny Flamefly
 		p(167),				-- Tiny Sporebat
 		p(206),				-- Tirisfal Batling
+		p(2924),			-- Tranquil Wader
 		p(525),				-- Turkey
 		un(10, p(241)),		-- Tuskarr Kite
 		p(1464),			-- Twilight Wasp
@@ -196,6 +222,8 @@ _.PetJournal =
 		p(1737),			-- Vale Flitter
 		p(2376),			-- Valley Chicken
 		p(1596),			-- Veilwatcher Hatchling
+		p(2929),			-- Vibrant Glimmerfly
+		p(2904),			-- Violet Dredwing Pup
 		p(1591),			-- Violet Firefly
 		p(2866),			-- Voidglower
 		p(2460),			-- Voru'kar Leecher
@@ -203,6 +231,7 @@ _.PetJournal =
 		p(84),				-- Westfall Chicken
 		p(141),				-- White Moth
 		p(195),				-- White Tickbird Hatchling
+		p(2943),			-- Wild Etherwyrm
 		p(548),				-- Wildhammer Gryphon Hatchling
 		p(2853),			-- Windfeather Chick
 		p(2482),			-- Wolf Balloon

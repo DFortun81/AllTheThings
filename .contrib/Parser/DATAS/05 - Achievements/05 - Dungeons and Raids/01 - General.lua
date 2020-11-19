@@ -401,6 +401,19 @@ _.Achievements =
 				crit(16),		-- Infinitesimal
 				crit(17),		-- I've Got My Eyes On You
 			}),
+			ach(14355, {	-- Glory of the Nathria Raider
+				i(182596),	-- Nathria Rampart Screecher
+				crit(1),		-- Blind as a Bat
+				crit(2),		-- Taking Care of Business
+				crit(3),		-- Burning Bright
+				crit(4),		-- Private Stock
+				crit(5),		-- Feed the Beast
+				crit(6),		-- I Don't Know What I Expected
+				crit(7),		-- Pour Decision Making
+				crit(8),		-- Dirtflap's Revenge
+				crit(9),		-- Feed Me, Seymour!
+				crit(10),		-- Clear Conscience
+			}),
 			ach(14146, {	-- Glory of the Ny'alotha Raider
 				i(174861),	-- Wriggling Parasite
 				crit(1),	-- Smoke Test
@@ -542,6 +555,25 @@ _.Achievements =
 				crit(14),		-- The Twilight Zone (25 player)
 				crit(15),		-- The Hundred Club (25 player)
 				crit(16),		-- Just Can't Get Enough (25 player)
+			}),
+			ach(14322, {	-- Glory of the Shadowlands Hero
+				i(184183),		-- Voracious Gorger
+				crit(1),		-- Bountiful Harvest
+				crit(2),		-- Surgeon's Supplies
+				crit(3),		-- Ready for Raiding VII
+				crit(4),		-- Full Gores Meal
+				crit(5),		-- Going Viral
+				crit(6),		-- Riding with my Slimes
+				crit(7),		-- Someone Could Trip on These!
+				crit(8),		-- Breaking Bad
+				crit(9),		-- Nobody Puts Denathrius in a Corner
+				crit(10),		-- ExSPEARiential
+				crit(11),		-- I Can See My House From Here
+				crit(12),		-- Residue Evil
+				crit(13),		-- I Only Have Eyes For You
+				crit(14),		-- Three Choose One
+				crit(15),		-- Highly Communicable
+				crit(16),		-- Kaal-ed Shot
 			}),
 			ach(8124, {		-- Glory of the Thundering Raider
 				i(93662),		-- Reins of the Armored Skyscreamer
@@ -761,6 +793,16 @@ _.Achievements =
 				crit(8),		-- Warlord Zaela (Upper Blackrock Spire)
 				crit(9),		-- Imperator Mar'gok (Highmaul)
 				crit(10),		-- Warlord Blackhand (Blackrock Foundry)
+			}),
+			ach(14418, {	-- Shadowlands Dungeon Hero
+				crit(1),		-- Heroic: De Other Side
+				crit(2),		-- Heroic: Halls of Atonement
+				crit(3),		-- Heroic: Mists of Tirna Scithe
+				crit(4),		-- Heroic: Plaguefall
+				crit(5),		-- Heroic: Sanguine Depths
+				crit(6),		-- Heroic: Spires of Ascension
+				crit(7),		-- Heroic: The Necrotic Wake
+				crit(8),		-- Heroic: Theater of Pain
 			}),
 			ach(6926, {		-- Tranquil Master
 				title(203),		-- the Tranquil Master

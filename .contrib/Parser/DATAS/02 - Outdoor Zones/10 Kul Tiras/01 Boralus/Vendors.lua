@@ -1762,65 +1762,77 @@ _.Zones =
 					},
 				}),
 				n(143560, {	-- Marshal Gabriel
-					["sourceQuests"] = { 56499 },	-- Storming the Battlefields
 					["coord"] = { 56.2, 25.7, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
 							n(-659, {	-- Aspirant PvP Gear
 								i(180178, {		-- Ensemble: Dread Aspirant's Cloth Armor (A)
-									un(REMOVED_FROM_GAME, i(162925)),	-- Dread Aspirant's Silk Cord (A)
-									un(REMOVED_FROM_GAME, i(162928)),	-- Dread Aspirant's Silk Cuffs (A)
-									un(REMOVED_FROM_GAME, i(162911)),	-- Dread Aspirant's Silk Gloves (A)
-									un(REMOVED_FROM_GAME, i(162913)),	-- Dread Aspirant's Silk Hood (A)
-									un(REMOVED_FROM_GAME, i(162917)),	-- Dread Aspirant's Silk Leggings (A)
-									un(REMOVED_FROM_GAME, i(162922)),	-- Dread Aspirant's Silk Mantle (A)
-									un(REMOVED_FROM_GAME, i(162901)),	-- Dread Aspirant's Silk Robe (A)
-									un(REMOVED_FROM_GAME, i(162906)),	-- Dread Aspirant's Silk Treads (A)
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["g"] = {
+										un(REMOVED_FROM_GAME, i(162925)),	-- Dread Aspirant's Silk Cord (A)
+										un(REMOVED_FROM_GAME, i(162928)),	-- Dread Aspirant's Silk Cuffs (A)
+										un(REMOVED_FROM_GAME, i(162911)),	-- Dread Aspirant's Silk Gloves (A)
+										un(REMOVED_FROM_GAME, i(162913)),	-- Dread Aspirant's Silk Hood (A)
+										un(REMOVED_FROM_GAME, i(162917)),	-- Dread Aspirant's Silk Leggings (A)
+										un(REMOVED_FROM_GAME, i(162922)),	-- Dread Aspirant's Silk Mantle (A)
+										un(REMOVED_FROM_GAME, i(162901)),	-- Dread Aspirant's Silk Robe (A)
+										un(REMOVED_FROM_GAME, i(162906)),	-- Dread Aspirant's Silk Treads (A)
+									},
 								}),
 								i(180180, {		-- Ensemble: Dread Aspirant's Leather Armor (A)
-									un(REMOVED_FROM_GAME, i(162927)),	-- Dread Aspirant's Leather Belt (A)
-									un(REMOVED_FROM_GAME, i(162931)),	-- Dread Aspirant's Leather Bindings (A)
-									un(REMOVED_FROM_GAME, i(162908)),	-- Dread Aspirant's Leather Boots (A)
-									un(REMOVED_FROM_GAME, i(162909)),	-- Dread Aspirant's Leather Gloves (A)
-									un(REMOVED_FROM_GAME, i(162915)),	-- Dread Aspirant's Leather Helm (A)
-									un(REMOVED_FROM_GAME, i(162919)),	-- Dread Aspirant's Leather Legguards (A)
-									un(REMOVED_FROM_GAME, i(162920)),	-- Dread Aspirant's Leather Spaulders (A)
-									un(REMOVED_FROM_GAME, i(162904)),	-- Dread Aspirant's Leather Tunic (A)
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["g"] = {
+										un(REMOVED_FROM_GAME, i(162927)),	-- Dread Aspirant's Leather Belt (A)
+										un(REMOVED_FROM_GAME, i(162931)),	-- Dread Aspirant's Leather Bindings (A)
+										un(REMOVED_FROM_GAME, i(162908)),	-- Dread Aspirant's Leather Boots (A)
+										un(REMOVED_FROM_GAME, i(162909)),	-- Dread Aspirant's Leather Gloves (A)
+										un(REMOVED_FROM_GAME, i(162915)),	-- Dread Aspirant's Leather Helm (A)
+										un(REMOVED_FROM_GAME, i(162919)),	-- Dread Aspirant's Leather Legguards (A)
+										un(REMOVED_FROM_GAME, i(162920)),	-- Dread Aspirant's Leather Spaulders (A)
+										un(REMOVED_FROM_GAME, i(162904)),	-- Dread Aspirant's Leather Tunic (A)
+									},
 								}),
 								i(180182, {		-- Ensemble: Dread Aspirant's Mail Armor (A)
-									un(REMOVED_FROM_GAME, i(162930)),	-- Dread Aspirant's Chain Armbands (A)
-									un(REMOVED_FROM_GAME, i(162903)),	-- Dread Aspirant's Chain Armor (A)
-									un(REMOVED_FROM_GAME, i(162912)),	-- Dread Aspirant's Chain Gauntlets (A)
-									un(REMOVED_FROM_GAME, i(162914)),	-- Dread Aspirant's Chain Helm (A)
-									un(REMOVED_FROM_GAME, i(162918)),	-- Dread Aspirant's Chain Leggings (A)
-									un(REMOVED_FROM_GAME, i(162907)),	-- Dread Aspirant's Chain Sabatons (A)
-									un(REMOVED_FROM_GAME, i(162923)),	-- Dread Aspirant's Chain Spaulders (A)
-									un(REMOVED_FROM_GAME, i(162926)),	-- Dread Aspirant's Chain Waistguard (A)
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["g"] = {
+										un(REMOVED_FROM_GAME, i(162930)),	-- Dread Aspirant's Chain Armbands (A)
+										un(REMOVED_FROM_GAME, i(162903)),	-- Dread Aspirant's Chain Armor (A)
+										un(REMOVED_FROM_GAME, i(162912)),	-- Dread Aspirant's Chain Gauntlets (A)
+										un(REMOVED_FROM_GAME, i(162914)),	-- Dread Aspirant's Chain Helm (A)
+										un(REMOVED_FROM_GAME, i(162918)),	-- Dread Aspirant's Chain Leggings (A)
+										un(REMOVED_FROM_GAME, i(162907)),	-- Dread Aspirant's Chain Sabatons (A)
+										un(REMOVED_FROM_GAME, i(162923)),	-- Dread Aspirant's Chain Spaulders (A)
+										un(REMOVED_FROM_GAME, i(162926)),	-- Dread Aspirant's Chain Waistguard (A)
+									},
 								}),
 								i(180184, {		-- Ensemble: Dread Aspirant's Plate Armor (A)
-									un(REMOVED_FROM_GAME, i(162929)),	-- Dread Aspirant's Plate Armguards (A)
-									un(REMOVED_FROM_GAME, i(162902)),	-- Dread Aspirant's Plate Chestpiece (A)
-									un(REMOVED_FROM_GAME, i(162910)),	-- Dread Aspirant's Plate Gauntlets (A)
-									un(REMOVED_FROM_GAME, i(162924)),	-- Dread Aspirant's Plate Girdle (A)
-									un(REMOVED_FROM_GAME, i(162900)),	-- Dread Aspirant's Plate Helm (A)
-									un(REMOVED_FROM_GAME, i(162916)),	-- Dread Aspirant's Plate Legguards (A)
-									un(REMOVED_FROM_GAME, i(162921)),	-- Dread Aspirant's Plate Pauldrons (A)
-									un(REMOVED_FROM_GAME, i(162905)),	-- Dread Aspirant's Plate Warboots (A)
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["g"] = {
+										un(REMOVED_FROM_GAME, i(162929)),	-- Dread Aspirant's Plate Armguards (A)
+										un(REMOVED_FROM_GAME, i(162902)),	-- Dread Aspirant's Plate Chestpiece (A)
+										un(REMOVED_FROM_GAME, i(162910)),	-- Dread Aspirant's Plate Gauntlets (A)
+										un(REMOVED_FROM_GAME, i(162924)),	-- Dread Aspirant's Plate Girdle (A)
+										un(REMOVED_FROM_GAME, i(162900)),	-- Dread Aspirant's Plate Helm (A)
+										un(REMOVED_FROM_GAME, i(162916)),	-- Dread Aspirant's Plate Legguards (A)
+										un(REMOVED_FROM_GAME, i(162921)),	-- Dread Aspirant's Plate Pauldrons (A)
+										un(REMOVED_FROM_GAME, i(162905)),	-- Dread Aspirant's Plate Warboots (A)
+									},
 								}),
 							}),
 						}),
 						-- Battle for Azeroth Season 2
 							i(180186, {		-- Ensemble: Sinister Aspirant's Cloth Armor (A)
-
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							}),
 							i(180188, {		-- Ensemble: Sinister Aspirant's Leather Armor (A)
-
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							}),
 							i(180190, {		-- Ensemble: Sinister Aspirant's Mail Armor (A)
-
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							}),
 							i(180192, {		-- Ensemble: Sinister Aspirant's Plate Armor (A)
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							}),
 							-- <Leather Alliance Ensemble here> --
 								un(NEVER_IMPLEMENTED, i(166946)),	-- Dread Gladiator's Leather Tunic
@@ -1840,6 +1852,32 @@ _.Zones =
 								un(NEVER_IMPLEMENTED, i(166959)),	-- Dread Gladiator's Chain Spaulders
 								un(NEVER_IMPLEMENTED, i(166960)),	-- Dread Gladiator's Chain Waistguard
 								un(NEVER_IMPLEMENTED, i(166961)),	-- Dread Gladiator's Chain Armbands
+						-- Battle for Azeroth Season 3
+							i(180194, {	-- Ensemble: Notorious Aspirant's Cloth Armor (A)
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180196, {	-- Ensemble: Notorious Aspirant's Leather Armor (A)
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180198, {	-- Ensemble: Notorious Aspirant's Mail Armor (A)
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180200, {	-- Ensemble: Notorious Aspirant's Plate Armor (A)
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+						-- Battle for Azeroth Season 4
+							i(180206, {	-- Ensemble: Corrupted Aspirant's Plate Armor (A)
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180203, {	-- Ensemble: Corrupted Aspirant's Cloth Armor (A)
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180205, {	-- Ensemble: Corrupted Aspirant's Mail Armor (A)
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
+							i(180204, {	-- Ensemble: Corrupted Aspirant's Leather Armor (A)
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							}),
 						i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
 							["sourceQuests"] = { 56499 },	-- Storming the Battlefields
 							["classes"] = HEALERS,

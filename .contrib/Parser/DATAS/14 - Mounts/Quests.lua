@@ -6,6 +6,10 @@ _.Mounts =
 {
 	n(QUESTS, {
 		i(142436),		-- Arcanist's Manasaber
+		i(181820, {		-- Armored Chosen Tauralus
+			["races"] = HORDE_ONLY,
+		}),
+		i(181822),		-- Armored War-Bred Tauralus
 		mount(48778, {	-- Acherus Deathcharger
 			["classes"] = { DEATHKNIGHT },
 		}),
@@ -20,6 +24,7 @@ _.Mounts =
 		i(142232, {		-- Battlelord's Bloodthirsty War Wyrm
 			["classes"] = { WARRIOR },
 		}),
+		i(180948),		-- Battle Gargon Vrednic
 		i(94290),		-- Bone-White Primal Raptor
 		i(137579),		-- Brilliant Direbeak
 		mount(23214, {	-- Charger
@@ -28,13 +33,16 @@ _.Mounts =
 		}),
 		i(166724),		-- Bruce
 		i(168408),		-- Child of Torcali
+		i(183617),		-- Chittering Animite
 		i(128311),		-- Coalfist Gronnling
 		i(32859),		-- Cobalt Netherwing Drake
 		i(52200),		-- Crimsom Deathcharger
+		i(180945),		-- Crypt Gargon
 		mount(270562, {	-- Darkforge Ram
 			["classes"] = { PALADIN },
 			["races"] = { DARKIRON },
 		}),
+		i(183052),		-- Darkwarren Hardshell
 		mount(270564, {	-- Dawnforge Ram
 			["classes"] = { PALADIN },
 			["races"] = { DWARF },
@@ -46,6 +54,9 @@ _.Mounts =
 		mount(23161, {	-- Dreadsteed
 			["classes"] = { WARLOCK },
 		}),
+		i(180263),	-- Dreamlight Runestag
+		i(180721),	-- Enchanted Dreamlight Runestag
+		i(180766),	-- Eternal Phalynx of Courage
 		mount(73629, {	-- Exarch's Elekk
 			["races"] = { DRAENEI },
 			["classes"] = { PALADIN },
@@ -82,6 +93,7 @@ _.Mounts =
 		i(143504, {		-- Highlord's Vigilant Charger
 			["classes"] = { PALADIN },
 		}),
+		i(183618),		-- Highwind Darkmane
 		i(142224, {		-- High Priest's Lightsworn Seeker
 			["classes"] = { PRIEST },
 		}),
@@ -94,6 +106,7 @@ _.Mounts =
 		i(79802),		-- Jade Cloud Serpent
 		i(159146),		-- Kua'fon's Harness
 		i(137573),		-- Llothien Prowler
+		i(182589),		-- Loyal Gorger
 		i(161330, {		-- Mag'har Direwolf [Mag'har Orc Quest Chain]
 			["races"] = HORDE_ONLY
 		}),
@@ -104,6 +117,7 @@ _.Mounts =
 		i(174771),		-- Obedient Drone
 		i(87768),		-- Onyx Cloud Serpent
 		i(32857),		-- Onyx Netherwing Drake
+		i(180763),		-- Phalynx of Courage
 		i(137577),		-- Predatory Bloodgazer
 		i(32860),		-- Purple Netherwing Drake
 		i(168827),		-- Scrapforged Mechaspider
@@ -142,6 +156,8 @@ _.Mounts =
 		i(32862),		-- Violet Netherwing Drake
 		i(152901),		-- Violet Spellwing
 		i(137580),		-- Viridian Sharptalon
+		i(183615),		-- Warstitched Darkhound
+		i(182077),		-- War-Bred Tauralus
 		i(163128), 		-- War-Torn Reins of the Undercity Plaguebat
 		mount(13819, {	-- Warhorse
 			["classes"] = { PALADIN },

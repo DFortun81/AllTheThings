@@ -26,13 +26,16 @@ _.Mounts =
 		i(174066, {	-- Caravan Hyena
 			["races"] = HORDE_ONLY,
 		}),
+		i(182074),	-- Chosen Tauralus
 		i(163577),	-- Conquerer's Scythemaw
+		i(184166),	-- Corridor Creeper
 		i(69230),	-- Corrupted Fire Hawk
 		i(87769),	-- Crimson Cloud Serpent
 		i(166539),	-- Dazar'alor Windreaver
 		i(161331, {	-- Dark Iron Core Hound [Dark Iron Dwarf Allied Race]
 			["races"] = ALLIANCE_ONLY,
 		}),
+		i(181817),	-- Deathbringer's Flayedwing
 		i(62901),	-- Drake of the East Wind
 		i(118676),	-- Emerald Drake
 		i(69226),	-- Felfire Hawk
@@ -62,6 +65,7 @@ _.Mounts =
 		i(140500),	-- Mechanized Lumber Extractor
 		i(156487),	-- Nightborne Manasaber (Horde)
 		i(156881),	-- Notoroious Gladiator's Proto-Drake
+		i(182596),	-- Rampart Screecher
 		i(161215),	-- Reins of the Obsidian Krolusk
 		i(89785),	-- Pandaren Kite (Alliance)
 		i(81559),	-- Pandaren Kite (Horde)
@@ -80,7 +84,9 @@ _.Mounts =
 		i(44842),	-- Red Dragonhawk
 		i(44160),	-- Red Proto-Drake
 		i(45802),	-- Rusted Proto-Drake
+		i(183937),	-- Sinful Gladiator's Soul Eater
 		un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake
+		i(182717),	-- Sintouched Deathwalker
 		i(169194),	-- Snapback Scuttler
 		i(128706),	-- Soaring Skyterror
 		i(104208),	-- Spawn of Galakras
@@ -121,6 +127,8 @@ _.Mounts =
 		i(140354),	-- Vicious War Trike*
 		i(143648),	-- Vicious War Turtle (Alliance)*
 		i(143649),	-- Vicious War Turtle (Horde)*
+		i(184014),	-- Vicious War Spider (A)
+		i(184013),	-- Vicious War Spider (H)
 		i(70910),	-- Vicious War Wolf*
 		i(173713, {	-- Vicious White Bonesteed
 			["races"] = HORDE_ONLY,
@@ -130,6 +138,7 @@ _.Mounts =
 		}),
 		i(44177),	-- Violet Proto-Drake
 		i(62900),	-- Volcanic Stone Drake
+		i(184183),	-- Voracious Gorger
 		i(169162),	-- Wonderwing 2.0
 		i(174861),	-- Wriggling Parasite
 		i(157870, {	-- Zandalari Direhorn  [Zandalari Allied Race Quest Chain]
