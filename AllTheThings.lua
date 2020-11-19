@@ -241,10 +241,10 @@ end
 local function formatNumericWithCommas(amount)
   local formatted = amount
   while true do
-	formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
-	if (k==0) then
-	  break
-	end
+    formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
+    if (k==0) then
+      break
+    end
   end
   return formatted
 end
@@ -873,7 +873,7 @@ end
 local function GetProgressColorText(progress, total)
 	if total and total > 0 then
 		local percent = (progress or 0) / total;
-		return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%)|r";
+        return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%)|r";
 	end
 end
 local function GetCollectionIcon(state)
@@ -883,7 +883,7 @@ local function GetCollectionText(state)
 	return L[(state and (state == 2 and "COLLECTED_APPEARANCE" or "COLLECTED")) or "NOT_COLLECTED"];
 end
 local function GetCompletionIcon(state)
-	return L[state and "COMPLETE_ICON" or "INCOMPLETE_ICON"];
+    return L[state and "COMPLETE_ICON" or "INCOMPLETE_ICON"];
 end
 local function GetCompletionText(state)
 	return L[(state == 2 and "COMPLETE_OTHER") or (state and "COMPLETE") or "INCOMPLETE"];
@@ -915,29 +915,29 @@ CS:Hide();
 local DressUpModel = CreateFrame('DressUpModel');
 local NPCModelHarvester = CreateFrame('DressUpModel', nil, OffScreenFrame);
 local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
-	["INVTYPE_HEAD"] = {1},
+    ["INVTYPE_HEAD"] = {1},
 	["INVTYPE_NECK"] = {2},
-	["INVTYPE_SHOULDER"] = {3},
-	["INVTYPE_BODY"] = {4},
-	["INVTYPE_CHEST"] = {5},
-	["INVTYPE_ROBE"] = {5},
-	["INVTYPE_WAIST"] = {6},
-	["INVTYPE_LEGS"] = {7},
-	["INVTYPE_FEET"] = {8},
-	["INVTYPE_WRIST"] = {9},
-	["INVTYPE_HAND"] = {10},
+    ["INVTYPE_SHOULDER"] = {3},
+    ["INVTYPE_BODY"] = {4},
+    ["INVTYPE_CHEST"] = {5},
+    ["INVTYPE_ROBE"] = {5},
+    ["INVTYPE_WAIST"] = {6},
+    ["INVTYPE_LEGS"] = {7},
+    ["INVTYPE_FEET"] = {8},
+    ["INVTYPE_WRIST"] = {9},
+    ["INVTYPE_HAND"] = {10},
 	["INVTYPE_RING"] = {11},
 	["INVTYPE_TRINKET"] = {12},
-	["INVTYPE_CLOAK"] = {15},
-	["INVTYPE_WEAPON"] = {16, 17},
-	["INVTYPE_SHIELD"] = {17},
-	["INVTYPE_2HWEAPON"] = {16, 17},
-	["INVTYPE_WEAPONMAINHAND"] = {16},
-	["INVTYPE_RANGED"] = {16},
-	["INVTYPE_RANGEDRIGHT"] = {16},
-	["INVTYPE_WEAPONOFFHAND"] = {17},
-	["INVTYPE_HOLDABLE"] = {17},
-	["INVTYPE_TABARD"] = {19},
+    ["INVTYPE_CLOAK"] = {15},
+    ["INVTYPE_WEAPON"] = {16, 17},
+    ["INVTYPE_SHIELD"] = {17},
+    ["INVTYPE_2HWEAPON"] = {16, 17},
+    ["INVTYPE_WEAPONMAINHAND"] = {16},
+    ["INVTYPE_RANGED"] = {16},
+    ["INVTYPE_RANGEDRIGHT"] = {16},
+    ["INVTYPE_WEAPONOFFHAND"] = {17},
+    ["INVTYPE_HOLDABLE"] = {17},
+    ["INVTYPE_TABARD"] = {19},
 };
 local function BuildGroups(parent, g)
 	if g then
@@ -997,7 +997,7 @@ local function CloneData(data)
 	return clone;
 end
 local function GetSourceID(itemLink, itemID)
-	if IsDressableItem(itemLink) then
+    if IsDressableItem(itemLink) then
 		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
 		local sourceID = select(2, C_TransmogCollection.GetItemInfo(itemLink));
 		if sourceID then return sourceID, true; end
@@ -3913,38 +3913,38 @@ local function PopulateQuestObject(questObject)
 		end
 	end
 
-	-- Update Quest info from cache
-	cache = fieldCache["questID"][questObject.questID];
-	if cache then
-		for _,data in ipairs(cache) do
-			-- only merge into the WQ quest object properties from a quest object in cache
-			if data.key == "questID" or data["encounterID"] then
-				for key,value in pairs(data) do
-					if not (key == "g" or key == "parent") then
-						questObject[key] = value;
-					end
-				end
-				if data.isVignette then questObject.isVignette = true; end
-				if data.g then
-					for _,entry in ipairs(data.g) do
-						local resolved = ResolveSymbolicLink(entry);
-						if resolved then
-							entry = CreateObject(entry);
-							if entry.g then
-								MergeObjects(entry.g, resolved);
-							else
-								entry.g = resolved;
-							end
-						end
-						tinsert(questObject.g, entry);
-					end
-				end
-			-- otherwise this is a non-quest object flagged with this questID so it should be added under the quest
-			else
-				MergeObject(questObject.g, data);
-			end
-		end
-	end
+    -- Update Quest info from cache
+    cache = fieldCache["questID"][questObject.questID];
+    if cache then
+        for _,data in ipairs(cache) do
+            -- only merge into the WQ quest object properties from a quest object in cache
+            if data.key == "questID" or data["encounterID"] then
+                for key,value in pairs(data) do
+                    if not (key == "g" or key == "parent") then
+                        questObject[key] = value;
+                    end
+                end
+                if data.isVignette then questObject.isVignette = true; end
+                if data.g then
+                    for _,entry in ipairs(data.g) do
+                        local resolved = ResolveSymbolicLink(entry);
+                        if resolved then
+                            entry = CreateObject(entry);
+                            if entry.g then
+                                MergeObjects(entry.g, resolved);
+                            else
+                                entry.g = resolved;
+                            end
+                        end
+                        tinsert(questObject.g, entry);
+                    end
+                end
+            -- otherwise this is a non-quest object flagged with this questID so it should be added under the quest
+            else
+                MergeObject(questObject.g, data);
+            end
+        end
+    end
 
 	-- Check for provider info
 	if questObject.qgs and #questObject.qgs == 1 then
@@ -7434,8 +7434,8 @@ app.BaseQuest = {
 			end
 			if key == "preview" then
 				if t.repeatable then
-					return "Interface\\Icons\\Achievement_Quests_Completed_Daily_08";
-				end
+                    return "Interface\\Icons\\Achievement_Quests_Completed_Daily_08";
+                end
 				return "Interface\\Icons\\Achievement_Quests_Completed_08";
 			elseif t.isDaily or t.isWeekly then
 				return "Interface\\GossipFrame\\DailyQuestIcon";
@@ -8234,9 +8234,9 @@ function app.FilterItemClass_RequireRaces(item)
 end
 function app.FilterItemClass_SeasonalItem(item)
    if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] > 4 then
-	  return GetDataSubMember("SeasonalFilters", item.u);
+      return GetDataSubMember("SeasonalFilters", item.u);
    else
-	  return true
+      return true
    end
 end
 function app.FilterItemClass_UnobtainableItem(item)
@@ -9594,15 +9594,15 @@ function app:CreateMiniListForGroup(group)
 			-- This is a quest object. Let's show prereqs and breadcrumbs.
 			if group.questID ~= nil and group.parent and group.parent.questID == group.questID then
 				group = group.parent;
-			end
+            end
 			local root = group;
 			root.collectible = not root.repeatable;
 			local g = { root };
 
 			-- Check to see if Source Quests are listed elsewhere.
-			if group.questID and not group.sourceQuests then
-				local qs = SearchForField("questID", group.questID);
-				if qs and #qs > 1 then
+            if group.questID and not group.sourceQuests then
+                local qs = SearchForField("questID", group.questID);
+                if qs and #qs > 1 then
 					local i, sq = #qs;
 					while not sq and i > 0 do
 						if qs[i].questID == sourceQuestID then sq = qs[i]; end
@@ -9615,8 +9615,8 @@ function app:CreateMiniListForGroup(group)
 						root = searchResult;
 						g = { root };
 					end
-				end
-			end
+                end
+            end
 
 			-- Show Quest Prereqs
 			local gTop;
@@ -9958,8 +9958,8 @@ local function SetRowData(self, row, data)
 		local specs = data.specs;
 		if specs and #specs > 0 then
 			-- iterate backwards since the icons are appended from right to left, this way it matches the tooltip sort of spec icons
-			for i=#specs,1,-1 do
-				local spec = specs[i]
+            for i=#specs,1,-1 do
+                local spec = specs[i]
 				local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
 				summary = "|T" .. icon .. ":0|t " .. summary;
 				iconAdjust = iconAdjust - 1;
@@ -9967,7 +9967,7 @@ local function SetRowData(self, row, data)
 		end
 		row.Summary:SetText(summary);
 		-- for whatever reason, the Client does not properly align the Points when textures are used within the 'text' of the object, with each texture added causing a 1px offset on alignment
-		row.Summary:SetPoint("RIGHT", iconAdjust, 0);
+        row.Summary:SetPoint("RIGHT", iconAdjust, 0);
 		row.Summary:Show();
 		row.Label:SetPoint("LEFT", leftmost, relative, x, 0);
 		if row.Summary and row.Summary:IsShown() then
@@ -16134,7 +16134,6 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("HEIRLOOMS_UPDATED");
 		app:RegisterEvent("ARTIFACT_UPDATE");
 		app:RegisterEvent("TOYS_UPDATED");
-		app.IsReady = true;
 
 		-- Rebuild toy collection. This should only happen once to fix toy collection states from a bug prior 14.January.2020
 		local toyCacheRebuilt = GetDataMember("ToyCacheRebuilt");
@@ -16142,6 +16141,7 @@ app.events.VARIABLES_LOADED = function()
 			SetDataMember("ToyCacheRebuilt", true);
 			wipe(GetDataMember("CollectedToys", {}));
 			RefreshCollections();
+		end
 
 		-- NOTE: The auto refresh only happens once.
 		if not app.autoRefreshedCollections then
