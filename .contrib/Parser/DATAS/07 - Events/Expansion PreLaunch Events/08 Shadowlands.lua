@@ -211,6 +211,8 @@ _.WorldEvents =
 						["lvl"] = { 50 },
 					}),
 					q(59782, {	-- The Deathspeaker's Devout
+						["coord"] = { 66.0, 21.9, 118 },
+						["provider"] = { "n", 168880 },	-- Sentry Joren
 						["maps"] = { 118 },	-- Icecrown
 						["sourceQuest"] = 60827,	-- Advancing the Effort
 						["lvl"] = { 50 },
@@ -245,6 +247,7 @@ _.WorldEvents =
 							174621,	-- Bloodthirsty Ghoul
 							171447,	-- Infectious Zombie
 						},
+						["lvl"] = { 50 },
 					}),
 					q(62163, {	-- A Message from the Justicar (H)
 						["isBreadcrumb"] = true,
@@ -260,6 +263,7 @@ _.WorldEvents =
 							174621,	-- Bloodthirsty Ghoul
 							171447,	-- Infectious Zombie
 						},
+						["lvl"] = { 50 },
 					}),
 					q(60828, {	-- A New Foothold
 						["maps"] = { 118 },	-- Icecrown
@@ -355,6 +359,7 @@ _.WorldEvents =
 					q(62584, {	-- Frontline Resupply
 						["maps"] = { 118 },	-- Icecrown
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
+						["lvl"] = { 50 },
 					}),
 					q(59851, {	-- Frozen Solid
 						["maps"] = { 118 },	-- Icecrown
@@ -369,10 +374,12 @@ _.WorldEvents =
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["coord"] = { 44.9, 44.7, 118 },
 						["maps"] = { 118 },	-- Icecrown
+						["lvl"] = { 50 },
 					}),
 					q(62484, {	-- Werk In Progress
 						["maps"] = { 118 },	-- Icecrown
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
+						["lvl"] = { 50 },
 					}),
 					-- repeatables below
 					q(62401, {	-- Strange Scourgestones
