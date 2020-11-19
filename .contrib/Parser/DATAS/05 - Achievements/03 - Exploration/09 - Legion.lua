@@ -418,7 +418,21 @@ _.Achievements =
 				crit(21),		-- Precious Augari Keepsakes
 				crit(22),		-- Missing Augari Chest
 			}),
-			ach(14729),		-- To All The Squirrels I Love Despite Their Scars
+			ach(14729, {		-- To All The Squirrels I Love Despite Their Scars
+				crit(1),		-- Felspider
+				crit(2),		-- Tenebrous Snake
+				crit(3),		-- Albatross Chick
+				crit(4),		-- Coastal Sandpiper
+				crit(5),		-- Glitterpool Frog
+				crit(6),		-- Gleamhoof Fawn
+				crit(7),		-- Auburn Ringtail
+				crit(8),		-- Blighthawk
+				crit(9),		-- Black-Footed Fox Kit
+				crit(10),		-- Long-Eared Owl
+				crit(11),		-- Golden Eaglet
+				crit(12),		-- Tiny Apparition
+				crit(13),		-- Echo Batling
+			}),
 			ach(11256),		-- Treasures of Azsuna
 			ach(11257),		-- Treasures of Highmountain
 			ach(11259),		-- Treasures of Stormheim

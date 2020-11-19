@@ -1531,7 +1531,20 @@ _.Achievements =
 					}),
 				},
 			}),
-			ach(14730),		-- To All The Squirrels I Set Sail to See
+			ach(14730, {	-- To All The Squirrels I Set Sail to See
+				crit(1),	-- Honey Bee
+				crit(2),	-- Olivewing
+				crit(3),	-- Fluttering Softwing
+				crit(4),	-- Drustbat
+				crit(5),	-- Tiragarde Gull
+				crit(6),	-- Bramble Hare
+				crit(7),	-- Jungle Gulper
+				crit(8),	-- Crested Gekkota
+				crit(9),	-- Nazmani Weevil
+				crit(10),	-- Bloodfever Tarantula
+				crit(11),	-- Temple Beetle
+				crit(12),	-- Vale Flutterby
+			}),
 			ach(13635, {	-- Tour of the Depths
 				crit(1),	-- Complete an Emissary for your ally in Nazjatar
 				crit(2),	-- Defeat one of the World Bosses of Nazjatar

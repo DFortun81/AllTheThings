@@ -253,7 +253,23 @@ _.Achievements =
 				crit(11),		-- Wasp Stinger
 			}),
 			ach(9401),		-- Shredder Maniac
-			ach(14728),		-- To All The Squirrels Through Time and Space
+			ach(14728, {	-- To All The Squirrels Through Time and Space
+				crit(1),		-- Royal Moth
+				crit(2),		-- Moonshell Crab
+				crit(3),		-- Moon Snake
+				crit(4),		-- Mossbite Skitterer
+				crit(5),		-- Bloodbeak
+				crit(6),		-- Brilliant Bloodfeather
+				crit(7),		-- Flat-Tooth Calf
+				crit(8),		-- Frostfur Rat
+				crit(9),		-- Icespine Hatchling
+				crit(10),		-- Twilight Wasp
+				crit(11),		-- Parched Lizard
+				crit(12),		-- Shadow Sporebat
+				crit(13),		-- Thicket Skitterer
+				crit(14),		-- Mud Jumper
+				crit(15),		-- Leatherhide Runt
+			}),
 		}),
 	}),
 };
