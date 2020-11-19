@@ -439,7 +439,7 @@ _.Zones =
 					},
 				}),
 				n(44245, {	-- Faldren Tillsdale
-					["coord"] = { 79.1, 69.6, 84 },
+					["coord"] = { 76.07, 66.78, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(77162),	-- Arrowflick Gauntlets

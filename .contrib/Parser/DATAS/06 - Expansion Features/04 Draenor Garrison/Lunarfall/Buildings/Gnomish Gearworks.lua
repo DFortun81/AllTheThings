@@ -30,7 +30,7 @@ _.ExpansionFeatures =
 						}),
 						n(QUESTS, {
 							q(37420, {	-- Fully Armed and Operational
-							--	marked as removed on wowhead, but a discord user picked it up on november 16, 2020
+								-- marked as removed on wowhead, but a discord user picked it up on november 16, 2020
 								["provider"] = { "n", 84286 },	-- Zee
 								["races"] = ALLIANCE_ONLY,
 							}),

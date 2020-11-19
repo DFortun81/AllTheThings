@@ -231,7 +231,8 @@ _.WorldEvents =
 					}),
 					-------------------------- Week 2 --------------------------
 					q(62162, {	-- A Message from the Justicar (A)
-						-- TODO: coord and provider
+						["coord"] = { 65.7, 77.1, 84 },
+						["provider"] = { "n", 166383 },	-- Commander Gregor
 						["isBreadcrumb"] = true,
 						["maps"] = { 84 },	-- Stormwind
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
@@ -363,7 +364,7 @@ _.WorldEvents =
 						["lvl"] = { 50 },
 					}),
 					q(59772, {	-- Research Ruination
-					--	i know i picked it up in this area, but not sure about the provider.  didn't realize it wasn't added until i turned it in
+						-- i know i picked it up in this area, but not sure about the provider.  didn't realize it wasn't added until i turned it in
 						["sourceQuests"] = { 60932 },	-- Only Shadows Remain
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["coord"] = { 44.9, 44.7, 118 },
