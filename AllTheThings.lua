@@ -4581,7 +4581,7 @@ end
 app.RefreshCollections = RefreshCollections;
 app.RefreshSaves = RefreshSaves;
 app.TryColorizeName = function(self, name)
-	if name == RETRIEVING_DATA then return name; end
+	if not name or name == RETRIEVING_DATA then return name; end
 	if self.isBreadcrumb then
 		return "|cff7f40bf" .. name .. "|r";
 	elseif self.isRaid then
@@ -7181,7 +7181,7 @@ local npcFields = {
 	end,
 	["name"] = function(t)
 		_cache = rawget(t, "npcID");
-		return (_cache > 0 and NPCNameFromID or L["NPC_ID_NAMES"])[_cache];
+		return app.TryColorizeName(t, (_cache > 0 and NPCNameFromID or L["NPC_ID_NAMES"])[_cache]);
 	end,
 	["repeatable"] = function(t)
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly")  or rawget(t, "isWorldQuest");
