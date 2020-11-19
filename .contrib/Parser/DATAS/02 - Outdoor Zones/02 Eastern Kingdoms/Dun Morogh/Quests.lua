@@ -33,6 +33,7 @@ _.Zones =
 						i(57563),	-- South Gate Blunderbuss
 						i(131612),	-- Siege Engineer's Waistband
 					},
+					["sourceQuest"] = 26854,	-- The Lost Pilot
 				}),
 				q(417,   {	-- A Pilot's Revenge
 					["u"] = REMOVED_FROM_GAME,
