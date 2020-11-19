@@ -15,7 +15,6 @@ _.Zones =
 					--	["sourceQuest"] = 57390,	-- To Die By the Sword
 						["lvl"] = 60,
 						["g"] = {
-							i(181822),		-- Armored War-Bred Tauralus
 							i(182077),		-- War-Bred Tauralus
 						},
 					}),
