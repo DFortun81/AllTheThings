@@ -12,7 +12,8 @@ _.Zones =
 						["provider"] = { "n", 174937 },	-- Adjutant Galos
 						["lvl"] = { 60 },
 						["g"] = {
-							i(180766),		-- Eternal Phalynx of Courage
+							i(180766),	-- Eternal Phalynx of Courage
+							i(180633),	-- Grubby
 						},
 					}),
 					-- Phaetus, Genesis of Aeons

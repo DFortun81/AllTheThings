@@ -1,13 +1,11 @@
 unsourced pet items
 -- already in ATT pet journal
-i(180637)	-- Starry Dreamfoal
 i(182671)	-- Runelight Leaper
 i(182683)	-- Dredger Butler's Contract(probably Temel vendor)
 i(183107)	-- Pile of Ashen Dust(Ashen Amalaganation drop)
 i(180629)	-- Thumbbiter
 i(181282)	-- Mu'dud(profession abom stitching)
 i(175114)	-- Renny
-i(180602)	-- Crimson Dredwing Pup(dredbats in raven)
 i(181171)	-- Luminous Webspinner(cache of eyes in mald)
 i(180589)	-- Soullocked Sinstone(hidden crypt in raven)
 i(180601)	-- Stonewing Dredwing Pup(court of harvesters tribute)

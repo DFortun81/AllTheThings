@@ -210,9 +210,12 @@ _.Zones =
 						},
 					}),
 					crit(14, {	-- Cache of the Night
-						--["objectID"] = ,	-- Cache of the Night
+						["objectID"] = 355000,	-- Cache of the Night
 						["coord"] = { 36.1, 65.2, 1565 },
 						--["questID"] = ,
+						["g"] = {
+							i(180637),	-- Starry Dreamfoal
+						},
 					}),
 					crit(15, {	-- Darkreach Supplies
 						--["objectID"] = ,	-- Darkreach Supplies

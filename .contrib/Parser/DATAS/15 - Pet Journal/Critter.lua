@@ -70,6 +70,7 @@ _.PetJournal =
 		p(443),		-- Grasslands Cottontail
 		p(647),		-- Grizzly Squirrel
 		p(539),		-- Grotto Vale
+		p(2918),	-- Grubby
 		p(1345),	-- Gu'chi Swarmling
 		p(448),		-- Hare
 		p(550),		-- Highlands Mouse

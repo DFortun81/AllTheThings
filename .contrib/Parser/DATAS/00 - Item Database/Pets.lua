@@ -174,6 +174,7 @@ pet(163805, 2448);	-- Craghoof Kid
 pet(60847, 264);	-- Crawling Claw
 pet(110721, 1396);	-- Crazy Carrot
 pet(71076, 321);	-- Creepy Crate
+pet(180602, 2903);	-- Crimson Dredwing Pup
 pet(163510, 2424);	-- Crimson Frog
 pet(70160, 318);	-- Crimson Lasher
 pet(166500, 2562);	-- Crimson Octopode
@@ -338,6 +339,7 @@ pet(21301, 119);	-- Green Helper Box (Father WInter's Helper)
 pet(72134, 333);	-- Grell Moss (Gregarious Grell)
 pet(118517, 1602);	-- Grommloc
 pet(122105, 1622);	-- Grotesque Statue (Grotesque)
+pet(180633, 2918);	-- Grubby
 pet(169679, 2747);	-- Gruesome Belcher
 pet(128770, 1725);	-- Grumpling
 pet(128354, 1705);	-- Grumpy
@@ -726,6 +728,7 @@ pet(11474, 87);		-- Sprite Darter Egg (Sprite Darter Hatchling)
 pet(163712, 2441);	-- Squawkling
 pet(166454, 2549);	-- Squishy Purple Goo (Void Jelly)
 pet(142100, 1969);	-- Stardust
+pet(180637, 2914);	-- Starry Dreamfoal
 pet(138810, 1911);	-- Sting Ray Pup
 pet(167047, 2579);	-- Stoneclaw
 pet(116402, 1515);	-- Stonegrinder
