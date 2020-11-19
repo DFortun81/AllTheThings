@@ -8,6 +8,16 @@ _.WorldEvents =
 		["icon"] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",
 		["g"] = {
 			tier(9, {	-- Shadowlands
+				n(ACHIEVEMENTS, {
+					ach(14750, {	-- Death Rising
+						["sourceQuests"] = { 60871, 60869 },	-- With Hope in Hand (A, H)
+						["maps"] = {
+							118,	-- Icecrown (achievement pops in your capital, but all the SQs are in Icecrown so it's probably helpful to see it there
+							85,		-- Orgrimmar
+							84,		-- Stormwind
+						},
+					}),
+				}),
 				n(QUESTS, {
 					-------------------------- Week 1 --------------------------
 					q(60113, {	-- An Urgent Request (A)
@@ -230,6 +240,10 @@ _.WorldEvents =
 					q(61112, {	-- A Hunger for Flesh (A)
 						["provider"] = { "i", 180712 },	-- Partially Digested Cloth
 						["maps"] = { 84 },	-- Stormwind
+						["crs"] = {
+							174621,	-- Bloodthirsty Ghoul
+							171447,	-- Infectious Zombie
+						},
 					}),
 					q(62163, {	-- A Message from the Justicar (H)
 						["isBreadcrumb"] = true,
@@ -241,6 +255,10 @@ _.WorldEvents =
 					q(61114, {	-- A Hunger for Flesh (H)
 						["provider"] = { "i", 180719 },	-- Partially Digested Leather
 						["maps"] = { 85 },	-- Orgrimmar
+						["crs"] = {
+							174621,	-- Bloodthirsty Ghoul
+							171447,	-- Infectious Zombie
+						},
 					}),
 					q(60828, {	-- A New Foothold
 						["maps"] = { 118 },	-- Icecrown
@@ -343,6 +361,13 @@ _.WorldEvents =
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
+					}),
+					q(59772, {	-- Research Ruination
+					--	i know i picked it up in this area, but not sure about the provider.  didn't realize it wasn't added until i turned it in
+						["sourceQuests"] = { 60932 },	-- Only Shadows Remain
+						["provider"] = { "n", 170467 },	-- Crusader Renn
+						["coord"] = { 44.9, 44.7, 118 },
+						["maps"] = { 118 },	-- Icecrown
 					}),
 					q(62484, {	-- Werk In Progress
 						["maps"] = { 118 },	-- Icecrown

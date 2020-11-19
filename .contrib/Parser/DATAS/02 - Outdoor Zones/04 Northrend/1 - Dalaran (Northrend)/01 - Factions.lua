@@ -8,38 +8,68 @@ _.Zones =
 		m(125, {	-- Dalaran: Northrend
 			n(FACTIONS, {
 				faction(1124, {	-- The Sunreavers
-					["creatureID"] = 30116,	-- Archmage Aethas Sunreaver <Kirin Tor>
 					["races"] = HORDE_ONLY,
+					["icon"] = "Interface\\Icons\\inv_elemental_primal_nether",
 					["g"] = {
 						n(29631, {	-- Awilo Longomba
 							["description"] = "All dailies offered by this questgiver award at least one Epicurean's Award and a Small Spice Bag, which can contain the recipes for Captain Rumsey's Lager, Delicious Chocolate Cake, and Stormchops.",
 							["races"] = HORDE_ONLY,
 							["coord"] = { 70.0, 39.0, 125 },
 							["g"] = {
-								h({
-									["achievementID"] = 1783,	-- Our Daily Bread (Horde)
-									["criteriaID"] = 4,		-- Cheese for Glowergold
-									["questID"] = 13115,	-- Cheese for Glowergold
+								q(13115, {	-- Cheese for Glowergold
+									["provider"] = { "n", 29631 },	-- Awilo Longomba
+									["coord"] = { 70.0, 39.0, 125 },
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										crit(4, {	-- Cheese for Glowergold
+											["achievementID"] = 1783,	-- Our Daily Bread
+											["races"] = HORDE_ONLY,
+										}),
+									},
 								}),
-								h({
-									["achievementID"] = 1783,	-- Our Daily Bread (Horde)
-									["criteriaID"] = 2,		-- Convention at the Legerdemain
-									["questID"] = 13113,	-- Convention at the Legerdemain
+								q(13113, {	-- Convention at the Legerdemain
+									["provider"] = { "n", 29631 },	-- Awilo Longomba
+									["coord"] = { 70.0, 39.0, 125 },
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										crit(2, {	-- Convention at the Legerdemain
+											["achievementID"] = 1783,	-- Our Daily Bread
+											["races"] = HORDE_ONLY,
+										}),
+									},
 								}),
-								h({
-									["achievementID"] = 1783,	-- Our Daily Bread (Horde)
-									["criteriaID"] = 1,		-- Infused Mushroom Meatloaf
-									["questID"] = 13112,	-- Infused Mushroom Meatloaf
+								q(13112, {	-- Infused Mushroom Meatloaf
+									["provider"] = { "n", 29631 },	-- Awilo Longomba
+									["coord"] = { 70.0, 39.0, 125 },
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										crit(1, {	-- Infused Mushroom Meatloaf
+											["achievementID"] = 1783,	-- Our Daily Bread
+											["races"] = HORDE_ONLY,
+										}),
+									},
 								}),
-								h({
-									["achievementID"] = 1783,	-- Our Daily Bread (Horde)
-									["criteriaID"] = 5,		-- Mustard Dogs!
-									["questID"] = 13116,	-- Mustard Dogs!
+								q(13116, {	-- Mustard Dogs!
+									["provider"] = { "n", 29631 },	-- Awilo Longomba
+									["coord"] = { 70.0, 39.0, 125 },
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										crit(5, {	-- Mustard Dogs!
+											["achievementID"] = 1783,	-- Our Daily Bread
+											["races"] = HORDE_ONLY,
+										}),
+									},
 								}),
-								h({
-									["achievementID"] = 1783,	-- Our Daily Bread (Horde)
-									["criteriaID"] = 3,		-- Sewer Stew
-									["questID"] = 13114,	-- Sewer Stew
+								q(13114, {	-- Sewer Stew
+									["provider"] = { "n", 29631 },	-- Awilo Longomba
+									["coord"] = { 70.0, 39.0, 125 },
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										crit(3, {	-- Sewer Stew
+											["achievementID"] = 1783,	-- Our Daily Bread
+											["races"] = HORDE_ONLY,
+										}),
+									},
 								}),
 							},
 						}),
@@ -883,8 +913,8 @@ _.Zones =
 					},
 				}),
 				faction(1094, {	-- The Silver Covenant
-					["creatureID"] = 30115,	-- Vareesa Windrunner <Ranger-General of the Silver Covenant>
 					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\inv_banner_02",
 					["g"] = {
 						n(31579, {	-- Arcanist Adurin <Legacy Justice Quartermaster>
 							["races"] = ALLIANCE_ONLY,
@@ -1705,30 +1735,60 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["coord"] = { 40.6, 64.9, 125 },
 							["g"] = {
-								a({
-									["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
-									["criteriaID"] = 4,		-- Cheese for Glowergold
-									["questID"] = 13103,	-- Cheese for Glowergold
+								q(13103, {	-- Cheese for Glowergold
+									["provider"] = { "n", 28705 },	-- Katherine Lee
+									["coord"] = { 40.6, 64.9, 125 },
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										crit(4, {	-- Cheese for Glowergold
+											["achievementID"] = 1782,	-- Our Daily Bread
+											["races"] = ALLIANCE_ONLY,
+										}),
+									},
 								}),
-								a({
-									["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
-									["criteriaID"] = 2,		-- Convention at the Legerdemain
-									["questID"] = 13101,	-- Convention at the Legerdemain
+								q(13101, {	-- Convention at the Legerdemain
+									["provider"] = { "n", 28705 },	-- Katherine Lee
+									["coord"] = { 40.6, 64.9, 125 },
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										crit(2, {	-- Convention at the Legerdemain
+											["achievementID"] = 1782,	-- Our Daily Bread
+											["races"] = ALLIANCE_ONLY,
+										}),
+									},
 								}),
-								a({
-									["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
-									["criteriaID"] = 1,		-- Infused Mushroom Meatloaf
-									["questID"] = 13100,	-- Infused Mushroom Meatloaf
+								q(13100, {	-- Infused Mushroom Meatloaf
+									["provider"] = { "n", 28705 },	-- Katherine Lee
+									["coord"] = { 40.6, 64.9, 125 },
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										crit(1, {	-- Infused Mushroom Meatloaf
+											["achievementID"] = 1782,	-- Our Daily Bread
+											["races"] = ALLIANCE_ONLY,
+										}),
+									},
 								}),
-								a({
-									["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
-									["criteriaID"] = 5,		-- Mustard Dogs!
-									["questID"] = 13107,	-- Mustard Dogs!
+								q(13107, {	-- Mustard Dogs!
+									["provider"] = { "n", 28705 },	-- Katherine Lee
+									["coord"] = { 40.6, 64.9, 125 },
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										crit(5, {	-- Mustard Dogs!
+											["achievementID"] = 1782,	-- Our Daily Bread
+											["races"] = ALLIANCE_ONLY,
+										}),
+									},
 								}),
-								a({
-									["achievementID"] = 1782,	-- Our Daily Bread (Alliance)
-									["criteriaID"] = 3,		-- Sewer Stew
-									["questID"] = 13102,	-- Sewer Stew
+								q(13102, {	-- Sewer Stew
+									["provider"] = { "n", 28705 },	-- Katherine Lee
+									["coord"] = { 40.6, 64.9, 125 },
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										crit(3, {	-- Sewer Stew
+											["achievementID"] = 1782,	-- Our Daily Bread
+											["races"] = ALLIANCE_ONLY,
+										}),
+									},
 								}),
 							},
 						}),
