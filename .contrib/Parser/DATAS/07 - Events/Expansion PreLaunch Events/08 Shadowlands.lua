@@ -11,6 +11,11 @@ _.WorldEvents =
 				n(ACHIEVEMENTS, {
 					ach(14750, {	-- Death Rising
 						["sourceQuests"] = { 60871, 60869 },	-- With Hope in Hand (A, H)
+						["maps"] = {
+							118,	-- Icecrown (achievement pops in your capital, but all the SQs are in Icecrown so it's probably helpful to see it there
+							85,		-- Orgrimmar
+							84,		-- Stormwind
+						},
 					}),
 				}),
 				n(QUESTS, {
@@ -235,6 +240,10 @@ _.WorldEvents =
 					q(61112, {	-- A Hunger for Flesh (A)
 						["provider"] = { "i", 180712 },	-- Partially Digested Cloth
 						["maps"] = { 84 },	-- Stormwind
+						["crs"] = {
+							174621,	-- Bloodthirsty Ghoul
+							171447,	-- Infectious Zombie
+						},
 					}),
 					q(62163, {	-- A Message from the Justicar (H)
 						["isBreadcrumb"] = true,
@@ -246,6 +255,10 @@ _.WorldEvents =
 					q(61114, {	-- A Hunger for Flesh (H)
 						["provider"] = { "i", 180719 },	-- Partially Digested Leather
 						["maps"] = { 85 },	-- Orgrimmar
+						["crs"] = {
+							174621,	-- Bloodthirsty Ghoul
+							171447,	-- Infectious Zombie
+						},
 					}),
 					q(60828, {	-- A New Foothold
 						["maps"] = { 118 },	-- Icecrown

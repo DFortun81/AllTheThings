@@ -387,6 +387,7 @@ _.HiddenQuestTriggers =
 		--	Dungeons & Raids
 		q(35348),	-- Blackrock Caverns Reward Quest
 		q(35351),	-- Blackrock Caverns Reward Quest
+		q(35349),	-- Blackrock Caverns Bonus Reward
 		q(35352),	-- Blackrock Caverns Bonus Reward. Killing Beauty
 		q(35587),	-- Deadmines heroic completion
 		q(35358),	-- End Time heroic completion
