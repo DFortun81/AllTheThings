@@ -23,8 +23,8 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(181818)),	-- Chewed Reins of the Callow Flayedwing Source Unknown (NYI ATM)
 		-- Toy
 		un(NEVER_IMPLEMENTED, i(182655)),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
-		un(NEVER_IMPLEMENTED, i(174286)),		-- Kyrian Ritual Vestments (beta only? Retrieving data on 9.0.2)
-		un(NEVER_IMPLEMENTED, i(177665)),		-- Spectral Hankerchief (beta only? Retrieving data on 9.0.2)
+		un(NEVER_IMPLEMENTED, i(174286)),	-- Kyrian Ritual Vestments (beta only? Retrieving data on 9.0.2)
+		un(NEVER_IMPLEMENTED, i(177665)),	-- Spectral Hankerchief (beta only? Retrieving data on 9.0.2)
 	}),
 	n(-10052, {	-- BFA - Stuff that gets added later on 9.0 release
 		-- Future Emsembles!!

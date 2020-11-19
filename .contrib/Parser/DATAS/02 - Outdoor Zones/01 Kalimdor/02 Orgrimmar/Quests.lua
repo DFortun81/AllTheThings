@@ -2353,6 +2353,10 @@ _.Zones =
 						i(18797),	-- Horn of the Swift Timber Wolf
 					},
 				}),
+				q(60097,   {	-- Wrath of the Lich King: To Northrend!
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, 85 },
+				}),
 			}),
 		}),
 	}),

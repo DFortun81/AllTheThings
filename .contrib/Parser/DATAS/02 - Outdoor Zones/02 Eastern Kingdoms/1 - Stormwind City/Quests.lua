@@ -1502,11 +1502,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 85,
 				}),
-				q(60096,   {	-- To Northrend
-					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.26, 17.32, 84 },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(60120,   {	-- To Outland
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.26, 17.32, 84 },
@@ -1682,6 +1677,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(60096,   {	-- Wrath of the Lich King: To Northrend!
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1698,  {	-- Yorus Barleybrew
 					["provider"] = { "n", 5479 },	-- Wu Shen
