@@ -19,11 +19,7 @@ _.NeverImplemented =
 			["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 		},
 	n(-10100, {	-- Shadowlands
-		-- Mounts
-		-- Oozing Necroray Egg (Source Unknown)
-		un(NEVER_IMPLEMENTED, i(184160)),	-- Bulbous Necroray
-		un(NEVER_IMPLEMENTED, i(184161)),	-- Infested Necroray
-		un(NEVER_IMPLEMENTED, i(184162)),	-- Pestilent Necroray 
+		-- Mounts 
 		--
 		un(NEVER_IMPLEMENTED, i(181818)),	-- Chewed Reins of the Callow Flayedwing Source Unknown (NYI ATM)
 	}),

@@ -19,6 +19,23 @@ _.Zones =
 						}),
 					},
 				}),
+				q(62694, {	-- A Calling in Maldraxxus
+					["provider"] = { "n", 173003 },	-- Nalcorn Talsen <Undying Army Quartermaster>
+					["lvl"] = 60,
+					["coord"] = { 50.6, 53.4, 1536 },
+					["repeatable"] = true,
+					["g"] = {
+						i(181732, {	-- Tribute of the Ambitious
+							i(184159, {	-- Oozing Necroray Egg (Timer)
+								i(184158, {	-- Oozing Necroray Egg (No Timer)
+									i(184160),	-- Bulbous Necroray
+									i(184161),	-- Infested Necroray
+									i(184162),	-- Pestilent Necroray
+								}),
+							}),
+						}),
+					},
+				}),
 			}),
 		}),
 	}),

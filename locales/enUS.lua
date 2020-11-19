@@ -1433,7 +1433,7 @@ app.L = {
 	--	[-900] = 																-- Covenant Sanctrum
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
 		[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown
-
+		[-940] = "Ascended Council",											-- Ascended Counil
 
 -- Temporarily Header
 		[-950] = "Adventures",													-- Temporary header for Adventures

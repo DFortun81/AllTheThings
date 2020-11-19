@@ -19,6 +19,23 @@ _.Zones =
 						}),
 					},
 				}),
+				q(62693, {	-- A Calling in Ardenweald
+					["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
+					["lvl"] = 60,
+					["coord"] = { 48.4, 50.4, 1565 },
+					["repeatable"] = true,
+					["g"] = {
+						i(181476, {	-- Tribute of the Wild Hunt
+							i(184159, {	-- Oozing Necroray Egg (Timer)
+								i(184158, {	-- Oozing Necroray Egg (No Timer)
+									i(184160),	-- Bulbous Necroray
+									i(184161),	-- Infested Necroray
+									i(184162),	-- Pestilent Necroray
+								}),
+							}),
+						}),
+					},
+				}),
 			}),
 		}),
 	}),

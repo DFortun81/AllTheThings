@@ -16,6 +16,32 @@ _.Zones =
 						i(179487),	-- Aethon's Horn
 					},
 				}),
+				n(-940, {	-- Ascendend Council
+					["description"] = "You have to ring all 5 vespers within 5 minutes to summon the Ascended Council at 53.50, 88.37.",
+					["coords"] = {
+						{ 53.50, 88.37, 1533 },	-- The Ascended Council
+						{ 33.38, 59.77, 1533 },	-- Vesper of Courage
+						{ 71.87, 38.87, 1533 },	-- Vesper of Humility
+						{ 64.32, 69.80, 1533 },	-- Vesper of Purity
+						{ 39.13, 20.40, 1533 },	-- Vesper of Wisdom
+						{ 32.16, 17.82, 1533 },	-- Vesper of Loyalty
+					},
+					["crs"] = { 170834 },	-- Champion of Purity, 
+					["crs"] = { 170835 },	-- Champion of Courage, 
+					["crs"] = { 170833 },	-- Champion of Wisdom, 
+					["crs"] = { 170836 },	-- Champion of Humility,
+					["g"] = {
+						i(183741),	-- Ascended Skymane
+						n(170832, { -- Champion of Loyalty								
+							--["coord"] = { 43.0, 82.6, 1533 },
+							--["questID"] = ,
+							["isDaily"] = true,
+							["g"] = {
+								ach(14307, crit(28)),	-- Adventurer of Bastion / Champion of Loyalty
+							},
+						}), 
+					},
+				}),
 				n(171211, { -- Aspirant Eolis
 					["coord"] = { 32.6, 23.4, 1533 },
 					--["questID"] = ,
@@ -46,14 +72,6 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14307, crit(21)),	-- Adventurer of Bastion / Bookkeeper Mnemis
-					},
-				}),
-				n(170832, { -- Champion of Loyalty								
-					--["coord"] = { 43.0, 82.6, 1533 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
-						ach(14307, crit(28)),	-- Adventurer of Bastion / Champion of Loyalty
 					},
 				}),
 				n(170932, { -- Cloudfeather Guardian

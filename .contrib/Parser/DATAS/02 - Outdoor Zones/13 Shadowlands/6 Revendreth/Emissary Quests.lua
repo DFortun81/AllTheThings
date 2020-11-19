@@ -17,6 +17,23 @@ _.Zones =
 						}),
 					},
 				}),
+				q(62691, {	-- A Calling in Revendreth
+					["provider"] = { "n", 156822 },	-- Mistress Mihaela <Court of Harvesters Quartermaster>
+					["lvl"] = 60,
+					["coord"] = { 61.4, 63.8, 1525 },
+					["repeatable"] = true,
+					["g"] = {
+						i(181556, {	-- Tribute of the Court
+							i(184159, {	-- Oozing Necroray Egg (Timer)
+								i(184158, {	-- Oozing Necroray Egg (No Timer)
+									i(184160),	-- Bulbous Necroray
+									i(184161),	-- Infested Necroray
+									i(184162),	-- Pestilent Necroray
+								}),
+							}),
+						}),
+					},
+				}),
 			}),
 		}),
 	}),
