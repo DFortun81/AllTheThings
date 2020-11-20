@@ -262,13 +262,13 @@ _.Zones =
 									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 								}),
 								i(184058, {	-- Corrupted Aspirant's Medallion
-									["cost"] = { { "g", 8000000 } },	-- 500g
+									["cost"] = { { "g", 8000000 } },	-- 800g
 								}),
 								i(184059, {	-- Corrupted Aspirant's Relentless Brooch
-									["cost"] = { { "g", 8000000 } },	-- 500g
+									["cost"] = { { "g", 8000000 } },	-- 800g
 								}),
 								i(184060, {	-- Corrupted Aspirant's Sigil of Adaptation
-									["cost"] = { { "g", 8000000 } },	-- 500g
+									["cost"] = { { "g", 8000000 } },	-- 800g
 								}),
 							}),
 						}),

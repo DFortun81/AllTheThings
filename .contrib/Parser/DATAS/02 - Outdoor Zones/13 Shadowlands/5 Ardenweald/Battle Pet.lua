@@ -11,7 +11,7 @@ _.Zones =
 					["crs"] = { 173590 },	-- Deepwood Leaper
 				}),
 				i(180632, {	-- Gorm Rootstinger
-				--	["crs"] = { 173590 },	-- Gorm Rootstinger
+					--["crs"] = { 173590 },	-- Gorm Rootstinger
 				}),
 				i(180627, {	-- Tranquil Wader
 					["crs"] = { 171228 },	-- Tranquil Wader

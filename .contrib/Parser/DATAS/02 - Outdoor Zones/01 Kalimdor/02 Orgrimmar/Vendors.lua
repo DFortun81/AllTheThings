@@ -18,84 +18,201 @@ _.Zones =
 					["g"] = {
 						n(-659, {	-- Aspirant PvP Gear
 							n(-319, {	-- Weapons
-								i(172881),	-- Corrupted Aspirant's Chopper (H)
-								i(174012),	-- Corrupted Aspirant's Claw (H)
-								i(172879),	-- Corrupted Aspirant's Cleaver (H)
-								i(174014),	-- Corrupted Aspirant's Decapitator (H)
-								i(172873),	-- Corrupted Aspirant's Gavel (H)
-								i(172885),	-- Corrupted Aspirant's Greatsword (H)
-								i(172871),	-- Corrupted Aspirant's Longbow (H)
-								i(172883),	-- Corrupted Aspirant's Pike (H)
-								i(172875),	-- Corrupted Aspirant's Pummeler (H)
-								i(172867),	-- Corrupted Aspirant's Reprieve (H)
-								i(174016),	-- Corrupted Aspirant's Rifle (H)
-								i(172861),	-- Corrupted Aspirant's Shanker (H)
-								i(172869),	-- Corrupted Aspirant's Shield Wall (H)
-								i(172877),	-- Corrupted Aspirant's Slicer (H)
-								i(174010),	-- Corrupted Aspirant's Spellblade (H)
-								i(172860),	-- Corrupted Aspirant's Stabber (H)
-								i(172865),	-- Corrupted Aspirant's Staff (H)
-								i(172863),	-- Corrupted Aspirant's Wand (H)
-								i(174018),	-- Corrupted Aspirant's War Staff (H)
-								i(172887),	-- Corrupted Aspirant's Warglaive (H)
+								i(172881, {	-- Corrupted Aspirant's Chopper (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(174012, {	-- Corrupted Aspirant's Claw (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172879, {	-- Corrupted Aspirant's Cleaver (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(174014, {	-- Corrupted Aspirant's Decapitator (H)
+									["cost"] = { { "c", 1792, 1750 } },	-- 1750x Honor
+								}),
+								i(172873, {	-- Corrupted Aspirant's Gavel (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172885, {	-- Corrupted Aspirant's Greatsword (H)
+									["cost"] = { { "c", 1792, 1750 } },	-- 1750x Honor
+								}),
+								i(172871, {	-- Corrupted Aspirant's Longbow (H)
+									["cost"] = { { "c", 1792, 1750 } },	-- 1750x Honor
+								}),
+								i(172883, {	-- Corrupted Aspirant's Pike (H)
+									["cost"] = { { "c", 1792, 1750 } },	-- 1750x Honor
+								}),
+								i(172875, {	-- Corrupted Aspirant's Pummeler (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172867, {	-- Corrupted Aspirant's Reprieve (H)
+									["cost"] = { { "c", 1792, 425 } },	-- 425x Honor
+								}),
+								i(174016, {	-- Corrupted Aspirant's Rifle (H)
+									["cost"] = { { "c", 1792, 1750 } },	-- 1750x Honor
+								}),
+								i(172861, {	-- Corrupted Aspirant's Shanker (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172869, {	-- Corrupted Aspirant's Shield Wall (H)
+									["cost"] = { { "c", 1792, 425 } },	-- 425x Honor
+								}),
+								i(172877, {	-- Corrupted Aspirant's Slicer (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(174010, {	-- Corrupted Aspirant's Spellblade (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172860, {	-- Corrupted Aspirant's Stabber (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172865, {	-- Corrupted Aspirant's Staff (H)
+									["cost"] = { { "c", 1792, 1750 } },	-- 1750x Honor
+								}),
+								i(172863, {	-- Corrupted Aspirant's Wand (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(174018, {	-- Corrupted Aspirant's War Staff (H)
+									["cost"] = { { "c", 1792, 1750 } },	-- 1750x Honor
+								}),
+								i(172887, {	-- Corrupted Aspirant's Warglaive (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
 							}),
 							n(-43, {	-- Cloth
-								i(172787),	-- Corrupted Aspirant's Silk Cord (H)
-								i(172786),	-- Corrupted Aspirant's Silk Cuffs (H)
-								i(172782),	-- Corrupted Aspirant's Silk Gloves (H)
-								i(172783),	-- Corrupted Aspirant's Silk Hood (H)
-								i(172784),	-- Corrupted Aspirant's Silk Leggings (H)
-								i(172785),	-- Corrupted Aspirant's Silk Mantle (H)
-								i(172780),	-- Corrupted Aspirant's Silk Robe (H)
-								i(172781),	-- Corrupted Aspirant's Silk Treads (H)
+								i(172787, {	-- Corrupted Aspirant's Silk Cord (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172786, {	-- Corrupted Aspirant's Silk Cuffs (H)
+									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+								}),
+								i(172782, {	-- Corrupted Aspirant's Silk Gloves (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172783, {	-- Corrupted Aspirant's Silk Hood (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172784, {	-- Corrupted Aspirant's Silk Leggings (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172785, {	-- Corrupted Aspirant's Silk Mantle (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172780, {	-- Corrupted Aspirant's Silk Robe (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172781, {	-- Corrupted Aspirant's Silk Treads (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
 							}),
 							n(-44, {	-- Leather
-								i(172794),	-- Corrupted Aspirant's Leather Belt (H)
-								i(172795),	-- Corrupted Aspirant's Leather Bindings (H)
-								i(172789),	-- Corrupted Aspirant's Leather Boots (H)
-								i(172790),	-- Corrupted Aspirant's Leather Gloves (H)
-								i(172791),	-- Corrupted Aspirant's Leather Helm (H)
-								i(172792),	-- Corrupted Aspirant's Leather Legguards (H)
-								i(172793),	-- Corrupted Aspirant's Leather Spaulders (H)
-								i(172788),	-- Corrupted Aspirant's Leather Tunic (H)
+								i(172794, {	-- Corrupted Aspirant's Leather Belt (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172795, {	-- Corrupted Aspirant's Leather Bindings (H)
+									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+								}),
+								i(172789, {	-- Corrupted Aspirant's Leather Boots (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172790, {	-- Corrupted Aspirant's Leather Gloves (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172791, {	-- Corrupted Aspirant's Leather Helm (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172792, {	-- Corrupted Aspirant's Leather Legguards (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172793, {	-- Corrupted Aspirant's Leather Spaulders (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172788, {	-- Corrupted Aspirant's Leather Tunic (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
 							}),
 							n(-45, {	-- Mail
-								i(172803),	-- Corrupted Aspirant's Chain Armbands (H)
-								i(172796),	-- Corrupted Aspirant's Chain Armor (H)
-								i(172798),	-- Corrupted Aspirant's Chain Gauntlets (H)
-								i(172799),	-- Corrupted Aspirant's Chain Helm (H)
-								i(172800),	-- Corrupted Aspirant's Chain Leggings (H)
-								i(172797),	-- Corrupted Aspirant's Chain Sabatons (H)
-								i(172801),	-- Corrupted Aspirant's Chain Spaulders (H)
-								i(172802),	-- Corrupted Aspirant's Chain Waistguard (H)
+								i(172803, {	-- Corrupted Aspirant's Chain Armbands (H)
+									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+								}),
+								i(172796, {	-- Corrupted Aspirant's Chain Armor (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172798, {	-- Corrupted Aspirant's Chain Gauntlets (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172799, {	-- Corrupted Aspirant's Chain Helm (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172800, {	-- Corrupted Aspirant's Chain Leggings (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172797, {	-- Corrupted Aspirant's Chain Sabatons (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172801, {	-- Corrupted Aspirant's Chain Spaulders (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172802, {	-- Corrupted Aspirant's Chain Waistguard (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
 							}),
 							n(-46, {	-- Plate
-								i(172811),	-- Corrupted Aspirant's Plate Armguards (H)
-								i(172805),	-- Corrupted Aspirant's Plate Chestpiece (H)
-								i(172807),	-- Corrupted Aspirant's Plate Gauntlets (H)
-								i(172810),	-- Corrupted Aspirant's Plate Girdle (H)
-								i(172804),	-- Corrupted Aspirant's Plate Helm (H)
-								i(172808),	-- Corrupted Aspirant's Plate Legguards (H)
-								i(172809),	-- Corrupted Aspirant's Plate Pauldrons (H)
-								i(172806),	-- Corrupted Aspirant's Plate Warboots (H)
+								i(172811, {	-- Corrupted Aspirant's Plate Armguards (H)
+									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+								}),
+								i(172805, {	-- Corrupted Aspirant's Plate Chestpiece (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172807, {	-- Corrupted Aspirant's Plate Gauntlets (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172810, {	-- Corrupted Aspirant's Plate Girdle (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172804, {	-- Corrupted Aspirant's Plate Helm (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172808, {	-- Corrupted Aspirant's Plate Legguards (H)
+									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+								}),
+								i(172809, {	-- Corrupted Aspirant's Plate Pauldrons (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172806, {	-- Corrupted Aspirant's Plate Warboots (H)
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
 							}),
-							--[[n(-322, {	-- Back
-								i(172857),	-- Corrupted Aspirant's Cape (A)
-								i(172856),	-- Corrupted Aspirant's Drape (A)
-								i(172854),	-- Corrupted Aspirant's Shawl (A)
-								i(172853),	-- Corrupted Aspirant's Cape (H)
-								i(172852),	-- Corrupted Aspirant's Drape (H)
-								i(172850),	-- Corrupted Aspirant's Shawl (H)
-							}),--]]
 							n(-385, {	-- Finger
-								i(172845),	-- Corrupted Aspirant's Band
-								i(172844),	-- Corrupted Aspirant's Ring
+								i(172845, {	-- Corrupted Aspirant's Band
+									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+								}),
+								i(172844, {	-- Corrupted Aspirant's Ring
+									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+								}),
 							}),
 							n(-386, {	-- Trinkets
-								i(172849),	-- Corrupted Aspirant's Badge
-								i(172847),	-- Corrupted Aspirant's Emblem
-								i(172848),	-- Corrupted Aspirant's Insignia
-								i(172846),	-- Corrupted Aspirant's Medallion
+								i(172849, {	-- Corrupted Aspirant's Badge
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172846, {	-- Corrupted Aspirant's Bauble
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172847, {	-- Corrupted Aspirant's Emblem
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(172848, {	-- Corrupted Aspirant's Insignia
+									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+								}),
+								i(184058, {	-- Corrupted Aspirant's Medallion
+									["cost"] = { { "g", 8000000 } },	-- 800g
+								}),
+								i(184059, {	-- Corrupted Aspirant's Relentless Brooch
+									["cost"] = { { "g", 8000000 } },	-- 800g
+								}),
+								i(184060, {	-- Corrupted Aspirant's Sigil of Adaptation
+									["cost"] = { { "g", 8000000 } },	-- 800g
+								}),
 							}),
 						}),
 					},
