@@ -799,7 +799,7 @@ _.Achievements =
 					["_quests"] = { 56016 },
 				}),
 				crit(11, {	-- Medium Runelocked Chest: Red
-					["_quests"] = { 56007 },
+					["_quests"] = { 56015 },
 				}),
 				crit(12, {	-- Medium Runelocked Chest: Purple
 					["_quests"] = { 56014 },
@@ -813,22 +813,22 @@ _.Achievements =
 				crit(15, {	-- Medium Runelocked Chest: Blue
 					["_quests"] = { 56011 },
 				}),
-				crit(16, {	-- Medium Runelocked Chest: Blue
+				crit(16, {	-- Easy Runelocked Chest: Blue
 					["_quests"] = { 56010 },
 				}),
-				crit(17, {	-- Medium Runelocked Chest: Purple
+				crit(17, {	-- Easy Runelocked Chest: Purple
 					["_quests"] = { 56009 },
 				}),
-				crit(18, {	-- Medium Runelocked Chest: Yellow
+				crit(18, {	-- Easy Runelocked Chest: Yellow
 					["_quests"] = { 56008 },
 				}),
-				crit(19, {	-- Medium Runelocked Chest: Red
-					["_quests"] = { 56015 },
+				crit(19, {	-- Easy Runelocked Chest: Red
+					["_quests"] = { 56007 },
 				}),
-				crit(20, {	-- Medium Runelocked Chest: Orange
+				crit(20, {	-- Easy Runelocked Chest: Orange
 					["_quests"] = { 56006 },
 				}),
-				crit(21, {	-- Medium Runelocked Chest: Green
+				crit(21, {	-- Easy Runelocked Chest: Green
 					["_quests"] = { 56003 },
 				}),
 			}),
