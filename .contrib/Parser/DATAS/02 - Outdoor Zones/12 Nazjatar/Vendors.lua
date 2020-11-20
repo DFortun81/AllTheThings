@@ -265,8 +265,9 @@ _.Zones =
 						},
 					}),
 					i(168849, {	-- Pearl of Luminous Designs (Rank 4)
-						["description"] = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
-						["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
+					--	["description"] = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
+					--	["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
+						["u"] = 2,
 						["g"] = {
 							az(27, 4),	-- Memory of Lucid Dreams (Rank 4)
 						},
@@ -336,8 +337,9 @@ _.Zones =
 						},
 					}),
 					i(168853, {	-- Glinting Battlefield Memento (Rank 4)
-						["description"] = "Requires completing the achievement |cffffff00Supplying the Assassins|r.\n",
-						["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
+					--	["description"] = "Requires completing the achievement |cffffff00Supplying the Assassins|r.\n",
+					--	["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
+						["u"] = 2,
 						["g"] = {
 							az(15, 4),	-- Ripple in Space (Rank 4)
 						},
@@ -575,7 +577,8 @@ _.Zones =
 						},
 					}),
 					i(168853, {	-- Glinting Battlefield Memento (Rank 4)
-						["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
+					--	["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
+						["u"] = 2,
 						["g"] = {
 							az(15, 4),	-- Ripple in Space (Rank 4)
 						},
@@ -1148,8 +1151,9 @@ _.Zones =
 						},
 					}),
 					i(168849, {	-- Pearl of Luminous Designs (Rank 4)
-						["description"] = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
-						["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
+					--	["description"] = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
+					--	["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
+						["u"] = 2,
 						["g"] = {
 							az(27, 4),	-- Memory of Lucid Dreams (Rank 4)
 						},

@@ -947,15 +947,20 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						ach(13768),	-- The Best of Us
 						i(168538, {	-- Dazzling Azerite Formation (Rank 4)
 							["classes"] = TANKS,
+							["u"] = 2,
 							["g"] = {
 								az(2, 4),	-- Azeroth's Undying Gift (Rank 4)
 							},
 						}),
 						i(168857, {	-- Sparkling Elemental Heart (Rank 4)
-							az(14, 4),	-- Condensed Life-Force (Rank 4)
+							["u"] = 2,
+							["g"] = {
+								az(14, 4),	-- Condensed Life-Force (Rank 4)
+							},
 						}),
 						i(168944, {	-- Web of Unbridled Vitality (Rank 4)
 							["classes"] = HEALERS,
+							["u"] = 2,
 							["g"] = {
 								az(21, 4),	-- Vitality Conduit (Rank 4)
 							},

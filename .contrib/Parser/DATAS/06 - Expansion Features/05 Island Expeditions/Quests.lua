@@ -88,10 +88,9 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(170150, {	-- Map to the Last Worldvein
-						i(168618, {	-- Brilliant Worldvein (Rank 4)
-							--["modID"] = 31,
+						un(REMOVED_FROM_GAME, i(168618, {	-- Brilliant Worldvein (Rank 4)
 							az(4, 4),	-- Worldvein Resonance (Rank 4)
-						}),
+						})),
 					}),
 				},
 			}),
@@ -132,9 +131,9 @@ _.ExpansionFeatures =
 						},
 					}),
 					i(170149, {	-- Map to the Last Worldvein
-						i(168618, {	-- Brilliant Worldvein (Rank 4)
+						un(REMOVED_FROM_GAME, i(168618, {	-- Brilliant Worldvein (Rank 4)
 							az(4, 4),	-- Worldvein Resonance (Rank 4)
-						}),
+						})),
 					}),
 				},
 			}),

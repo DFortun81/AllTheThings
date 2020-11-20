@@ -979,7 +979,10 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						})),
 						ach(14148),	-- Peer Pressure
 						i(173886, {	-- Bursting Void Droplet
-							az(37, 4),	-- The Formless Void (Rank 4)
+							["u"] = 2,
+							["g"] = {
+								az(37, 4),	-- The Formless Void (Rank 4)
+							},
 						}),
 						i(175062),	-- Malefic Core
 						i(174452),	-- Eye of Corruption (Pet)
