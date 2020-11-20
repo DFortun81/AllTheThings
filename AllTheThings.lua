@@ -4756,9 +4756,10 @@ local function AttachTooltip(self)
 					-- print("Search spellID",spellID);
 					AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForField, "spellID", spellID);
 					-- self:Show();
+					-- this evals to true for mount journal tooltips
 					if owner and owner.ActiveTexture then
 						-- print("Stop Processing");
-						self.AllTheThingsProcessing = nil;
+						-- self.AllTheThingsProcessing = nil;
 					end
 					return true;
 				end
