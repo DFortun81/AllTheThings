@@ -916,11 +916,11 @@ pet(181265, 2955);	-- Corpselouse Larva
 pet(181168, 2945);	-- Corpulent Bonetusk
 pet(184400, 3065);	-- Courage
 pet(180593, 2899);	-- Court Messenger Scroll // Court Messenger
-pet(180602, 2903);	-- Crimson Dredwing Pup
 pet(183859, 2900);	-- Dal's Courier Badge // Dal
 pet(183412, 3041);	-- Death Seeker
 pet(183409, 3039);	-- Decaying Mawrat
 pet(182672, 3021);	-- Deepwood Leaper
+pet(180629, 2922);	-- Devouring Animite
 pet(180869, 2940);	-- Devoured Wader
 pet(180645, 2905);	-- Dodger
 pet(183407, 3037);	-- Dread

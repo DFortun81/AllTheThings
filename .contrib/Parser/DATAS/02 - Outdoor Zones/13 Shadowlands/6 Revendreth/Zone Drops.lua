@@ -19,6 +19,7 @@ _.Zones =
 				i(178945),	-- Boneclutched Greatstaff
 				i(177800),	-- Bubbling Concoction
 				i(179319),	-- Caged Cudgel
+				i(180602),	-- Crimson Dredwing Pup (Bats only?)
 				i(177778),	-- Depraved Darkblade's Belt
 				i(177779),	-- Depraved Darkblade's Bindings
 				i(177797),	-- Depraved Darkblade's Epaulets

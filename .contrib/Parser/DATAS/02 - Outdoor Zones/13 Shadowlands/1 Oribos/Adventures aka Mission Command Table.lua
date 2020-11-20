@@ -10,10 +10,13 @@ _.Zones =
 				--["modelScale"] = 2,
 				["g"] = {
 					--mission(1877, {	-- The Shadow War
+						-- Mounts
 						i(183617),	-- Chittering Animite
 						i(183052),	-- Darkwarren Hardshell
 						i(183618),	-- Highwind Darkmane
 						i(183615),	-- Warstitched Darkhound
+						-- Pets
+						i(180629),	-- Devouring Animite
 				},
 			}),
 		}),

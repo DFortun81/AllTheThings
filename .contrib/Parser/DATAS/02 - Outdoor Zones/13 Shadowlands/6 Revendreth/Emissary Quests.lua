@@ -14,6 +14,7 @@ _.Zones =
 					["repeatable"] = true,
 					["g"] = {
 						i(180648, {	-- Court of Harvesters Supplies
+							i(180601),	-- Stonewing Dredwing Pup
 						}),
 					},
 				}),

@@ -69,6 +69,7 @@ _.PetJournal =
 		p(1062),			-- Darkmoon Glowfly
 		p(2544),			-- Darkshore Sentinel
 		p(2940),			-- Devoured Wader
+		p(2922),			-- Devouring Animite
 		p(1975),			-- Direbeak Hatchling
 		p(2118),	 		-- Docile Skyfin
 		un(10, p(169)),		-- Dragon Kite
