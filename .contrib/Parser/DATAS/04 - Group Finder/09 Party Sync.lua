@@ -72,7 +72,7 @@ _.GroupFinder =
 						i(173597),	-- Trailseeker Helm
 						i(173598),	-- Trailseeker Legguards
 						i(173599, {	-- Trailseeker Spaulders
-							["modID"] = 11,
+							-- ["s"] = 107613,	-- sourceID, in-game API doesn't return info
 						}),
 						i(173594),	-- Trailseeker Vest
 					},
