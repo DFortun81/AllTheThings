@@ -4757,10 +4757,10 @@ local function AttachTooltip(self)
 					AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForField, "spellID", spellID);
 					-- self:Show();
 					-- this evals to true for mount journal tooltips
-					if owner and owner.ActiveTexture then
+					-- if owner and owner.ActiveTexture then
 						-- print("Stop Processing");
 						-- self.AllTheThingsProcessing = nil;
-					end
+					-- end
 					return true;
 				end
 
@@ -7183,7 +7183,7 @@ local npcFields = {
 	end,
 	["name"] = function(t)
 		_cache = rawget(t, "npcID");
-		return app.TryColorizeName(t, (_cache > 0 and NPCNameFromID or L["NPC_ID_NAMES"])[_cache]);
+		return _cache > 0 and app.TryColorizeName(t, NPCNameFromID) or L["NPC_ID_NAMES"][_cache];
 	end,
 	["repeatable"] = function(t)
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly")  or rawget(t, "isWorldQuest");
