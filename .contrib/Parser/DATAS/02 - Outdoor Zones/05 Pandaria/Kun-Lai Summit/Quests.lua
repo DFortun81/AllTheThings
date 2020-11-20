@@ -227,14 +227,6 @@ _.Zones =
 					["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
 					["sourceQuest"] = 30799,	-- The Tomb of Shadows
 				}),
-				q(32399, {	-- Breath of Darkest Shadow (H)
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 67844 },	-- Malkorok
-					["sourceQuest"] = 32398,	-- The Bell Speaks
-					["g"] = {
-						i(93386),	-- Grand Wyvern
-					},
-				}),
 				q(30605, {	-- Bros Before Hozen
 					["coord"] = { 51.9, 67.2, 379 },
 					["provider"] = { "n", 59452 },	-- Brother Rabbitsfoot

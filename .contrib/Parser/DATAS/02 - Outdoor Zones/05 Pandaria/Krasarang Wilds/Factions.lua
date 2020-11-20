@@ -51,9 +51,10 @@ _.Zones =
 									crit(10, {	-- The Darnassus Operation
 										["sourceQuests"] = { 32328 },	-- Victorious Return
 									}),
-									crit(11),	-- The Purge of Dalaran
+									crit(11, {	-- The Purge of Dalaran
+										["sourceQuests"] = { 32412 },	-- One Last Grasp
+									}),
 									crit(12),	-- Breath of Darkest Shadow
-									i(93386),	-- Grand Wyvern (MOUNT!)
 								},
 							}),
 							ach(7932, {	-- I'm In Your Base, Killing Your Dudes
@@ -110,6 +111,12 @@ _.Zones =
 								["coord"] = { 68.9, 45.8, 392 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32406, {	-- A Tactical Assault
+								["sourceQuests"] = { 32405 },	-- Hand of the Silver Covenant
+								["provider"] = { "n", 68586 },	-- Grand Magister Rommath
+								["coord"] = { 64.0, 47.9, 502 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32127, {	-- All Dead, All Dead
 								["sourceQuests"] = {
 									32235,	-- Flash! Aaaaaahhhh!
@@ -148,6 +155,15 @@ _.Zones =
 								["provider"] = { "n", 67581 },	-- Lor'themar Theron
 								["coord"] = { 57.1, 78.9, 379 },
 								["races"] = HORDE_ONLY,
+							}),
+							q(32399, {	-- Breath of Darkest Shadow (H)
+								["sourceQuests"] = { 32398 },	-- The Bell Speaks
+								["provider"] = { "n", 67844 },	-- Malkorok
+								["coord"] = { 55.9, 33.9, 379 },
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									i(93386),	-- Grand Wyvern (MOUNT!)
+								},
 							}),
 							q(32242, {	-- Buried Secrets
 								["sourceQuests"] = { 32256 },	-- Rise Of An Empire
@@ -224,6 +240,12 @@ _.Zones =
 								["coord"] = { 79.8, 30.1, 418 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32405, {	-- Hand of the Silver Covenant
+								["sourceQuests"] = { 32404 },	-- Violence in the Arena
+								["provider"] = { "n", 68586 },	-- Grand Magister Rommath
+								["coord"] = { 54.3, 28.3, 502 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32135, {	-- Hero Killer
 								["sourceQuests"] = { 32450 },	-- The Time is Now!
 								["provider"] = { "n", 67628 },	-- Shademaster Kiryn
@@ -245,6 +267,12 @@ _.Zones =
 								["coord"] = { 36.2, 41.1, 421 },	-- Ruins of Ogudei
 								["races"] = HORDE_ONLY,
 							}),
+							q(32403, {	-- It Starts in the Sewers
+								["sourceQuests"] = { 32402 },	-- The Situation In Dalaran
+								["provider"] = { "n", 68586 },	-- Grand Magister Rommath
+								["coord"] = { 31.4, 50.4, 502 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32348, {	-- Kick 'em While They're Down
 								["sourceQuests"] = { 32449 },	-- The Ruins of Ogudei
 								["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
@@ -257,6 +285,12 @@ _.Zones =
 								["provider"] = { "n", 67562 },	-- Duke
 								["isDaily"] = true,
 								["coord"] = { 12.9, 53.4, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32410, {	-- Krasus' Landing
+								["sourceQuests"] = { 32406 },	-- A Tactical Assault
+								["provider"] = { "n", 68586 },	-- Grand Magister Rommath
+								["coord"] = { 50.9, 48.0, 501 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32120, {	-- Legacy of Ogudei
@@ -290,6 +324,12 @@ _.Zones =
 								["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
 								["isDaily"] = true,
 								["coord"] = { 36.2, 41.1, 421 },	-- Ruins of Ogudei
+								["races"] = HORDE_ONLY,
+							}),
+							q(32412, {	-- One Last Grasp
+								["sourceQuests"] = { 32411 },	-- The Remaining Sunreavers
+								["provider"] = { "n", 68586 },	-- Grand Magister Rommath
+								["coord"] = { 50.9, 48.0, 501 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32237, {	-- Precious Resource
@@ -347,6 +387,13 @@ _.Zones =
 								["coord"] = { 9.55, 50.9, 418 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32398, {	-- The Bell Speaks
+								["minReputation"] = { 1375, EXALTED },
+								["sourceQuests"] = { 32412 },	-- One Last Grasp
+								["provider"] = { "n", 67939 },	-- General Nazgrim
+								["coord"] = { 9.30, 51.2, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32327, {	-- The Darnassus Mission
 								["sourceQuests"] = { 32326 },	-- Insertion
 								["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
@@ -401,6 +448,35 @@ _.Zones =
 								["coord"] = { 9.04, 51.2, 418 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32409, {	-- The Kirin Tor's True Colors
+								["sourceQuests"] = { 32406 },	-- A Tactical Assault
+								["provider"] = { "n", 68586 },	-- Grand Magister Rommath
+								["coord"] = { 50.9, 48.0, 501 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32411, {	-- The Remaining Sunreavers
+								["sourceQuests"] = {
+									32410,	-- Krasus' Landing
+									32409,	-- The Kirin Tor's True Colors
+									32408,	-- The Silver Covenant's Stronghold
+								},
+								["provider"] = { "n", 68586 },	-- Grand Magister Rommath
+								["coord"] = { 50.9, 48.0, 501 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32408, {	-- The Silver Covenant's Stronghold
+								["sourceQuests"] = { 32406 },	-- A Tactical Assault
+								["provider"] = { "n", 68586 },	-- Grand Magister Rommath
+								["coord"] = { 50.9, 48.0, 501 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32402, {	-- The Situation In Dalaran
+								["minReputation"] = { 1375, REVERED+18500 },
+								["sourceQuests"] = { 32328 },	-- Victorious Return
+								["provider"] = { "n", 67939 },	-- General Nazgrim
+								["coord"] = { 9.30, 51.2, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32342, {	-- The Spirit Trap
 								["sourceQuests"] = { 32449 },	-- The Ruins of Ogudei
 								["provider"] = { "n", 68274 },	-- Kaelis Sunsoar
@@ -452,6 +528,12 @@ _.Zones =
 								["sourceQuests"] = { 32327 },	-- The Darnassus Mission
 								["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
 								["coord"] = { 40.0, 50.4, 57 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32404, {	-- Violence in the Arena
+								["sourceQuests"] = { 32403 },	-- It Starts in the Sewers
+								["provider"] = { "n", 68586 },	-- Grand Magister Rommath
+								["coord"] = { 45.1, 54.0, 502 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32257, {	-- Voice of the Gods
@@ -638,6 +720,14 @@ _.Zones =
 							}),
 						}),
 						n(QUESTS, {
+							q(32172, {	-- A Colossal Victory
+								["sourceQuests"] = { 32186 },	-- Beastmaster's Quarry: The Crab
+								["provider"] = { "n", 67558 },	-- Huntsman Blake (summons the mob for you to kill)
+								["isDaily"] = true,
+								["coord"] = { 88.3, 14.0, 418 },
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = { 67557 },	-- Colossal Viseclaw (killing the mob procs the quest)
+							}),
 							q(32143, {	-- A Kind of Magic
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
 								["provider"] = { "n", 67976 },	-- Tinkmaster Overspark
@@ -710,6 +800,12 @@ _.Zones =
 								["coord"] = { 59.9, 75.4, 379 },
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(32166, {	-- Beastmaster's Hunt: The Crab
+								["provider"] = { "i", 91856 },	-- Sturdy Crab Crate
+								["isDaily"] = true,
+								["coord"] = { 94.4, 29.3, 418 },	-- location of NPC from which to purchase
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(32164, {	-- Beastmaster's Hunt: The Crane
 								["provider"] = { "i", 91854 },	-- Sturdy Crane Snare
 								["isDaily"] = true,
@@ -720,6 +816,13 @@ _.Zones =
 								["provider"] = { "i", 91855 },	-- Sturdy Tiger Trap
 								["isDaily"] = true,
 								["coord"] = { 94.4, 29.3, 418 },	-- location of NPC from which to purchase
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(32186, {	-- Beastmaster's Quarry: The Crab
+								["sourceQuests"] = { 32166 },	-- Beastmaster's Hunt: The Crab
+								["provider"] = { "n", 67508 },	-- Colossal Viseclaw	
+								["isDaily"] = true,
+								["coord"] = { 58.7, 38.7, 418 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32184, {	-- Beastmaster's Quarry: The Crane
@@ -1255,7 +1358,6 @@ _.Zones =
 					["g"] = {
 						n(QUESTS, {
 						--	TODO: add the following quests.  i'm just moving them into the file as i see them so i can ensure the correct coordinates are added and none get forgotten.  i hate this zone.
-							-- Mimic Octopus
 							-- Spinefish Alpha
 							q(30613, {	-- Armored Carp
 								["requireSkill"] = FISHING,
@@ -1305,6 +1407,12 @@ _.Zones =
 								["isDaily"] = true,
 								["coord"] = { 70.8, 41.3, 418 },
 							}),
+							q(31446, {	-- Mimic Octopus
+								["requireSkill"] = FISHING,
+								["description"] = "Found while fishing in any inland body of water on Pandaria.",
+								["provider"] = { "i", 86545 },	-- Mimic Octopus
+								["isDaily"] = true,
+							}),
 							q(30763, {	-- Piranha!
 								["requireSkill"] = FISHING,
 								["provider"] = { "n", 60675 },	-- Fo Fook
@@ -1328,6 +1436,12 @@ _.Zones =
 								["provider"] = { "n", 59586 },	-- Angler Shen
 								["isDaily"] = true,
 								["coord"] = { 70.8, 40.2, 418 },
+							}),
+							q(31444, {	-- Spinefish Alpha
+								["requireSkill"] = FISHING,
+								["description"] = "Found while fishing in inland water near Sha-touched land.",
+								["provider"] = { "i", 86544 },	-- Spinefish Alpha
+								["isDaily"] = true,
 							}),
 							q(30701, {	-- Viseclaw Soup
 								["requireSkill"] = FISHING,

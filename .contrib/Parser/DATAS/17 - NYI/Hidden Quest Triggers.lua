@@ -1188,6 +1188,7 @@ _.HiddenQuestTriggers =
 		q(43659),	-- Mage - learned the Felo'melorn appearance from The Stars' Design (maybe put this on the appearance item?)
 		q(42189),	-- Fire Mage - Flavor Event 01. Showed Arcanomancer Vridiel in Dalaran the newly acquired Felo'melorne
 		q(43660),	-- Hidden Appearance Unlocked — unlocking frost mage hidden appearance
+		q(44380),	-- Havoc Chosen — Choosing Havoc Weapon Artifact (DH)
 		q(44426),	-- Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
 		q(40340),	-- Alard Schmied Greeting Seen. "Well, I'll be... the Ashbringer. ...' in Dalaran
 

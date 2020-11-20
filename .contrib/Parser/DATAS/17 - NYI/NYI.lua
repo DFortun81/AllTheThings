@@ -378,8 +378,6 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(109298)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109299)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(109302)),	-- Unknown
-			un(NEVER_IMPLEMENTED, i(90358)),	-- Honorary Combat Engineer's Silk Trousers
-			un(NEVER_IMPLEMENTED, i(90359)),	-- Honorary Combat Engineer's Satin Leggings
 			un(NEVER_IMPLEMENTED, i(6478)),		-- Rat Stompers
 			un(NEVER_IMPLEMENTED, i(10010)),	-- Stormcloth Pants
 			un(NEVER_IMPLEMENTED, i(10011)),	-- Stormcloth Gloves

@@ -1011,12 +1011,12 @@ _.Zones =
 					["sourceQuests"] = { 31312 },	-- The Old Map
 					["provider"] = { "n", 58705 },	-- Fish Fellreed
 				}),
-				q(29874, {	-- Kang Bramblestaff
+				q(29874, {	-- Kang Bramblestaff (A)
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 84.0, 21.1, 376 },
 					["provider"] = { "n", 56110 },	-- Xiao
 				}),
-				q(29875, {	-- Kang Bramblestaff
+				q(29875, {	-- Kang Bramblestaff (H)
 					["races"] = HORDE_ONLY,
 					["coord"] = { 84.0, 21.1, 376 },
 					["provider"] = { "n", 56110 },	-- Xiao

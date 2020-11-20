@@ -890,6 +890,23 @@ _.Zones =
 				}),
 				
 				
+				q(30241, {	-- Warn Stoneplow (H)
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						30174,	-- For Family
+						30273,	-- In the House of the Red Crane
+						30117,	-- Stoneplow Thirsts
+						29990,	-- Training and Discipline
+					--	TODO: may also require the following quests:
+					--	29581,	-- The Golden Dream
+					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
+					},
+					["provider"] = { "n", 58607 },	-- Sunwalker Dezco
+					["coord"] = { 29.1, 48.1, 418 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(30079, {	-- What's Eating Zhu's Watch?
 					["sourceQuests"] = {
 						29873,	-- Ken-Ken
@@ -969,22 +986,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32172, {	-- A Colossal Victory
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(32167, {	-- Ancient's Fall
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-				}),
-				i(91856, {	-- Sturdy Crab Crate
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						q(32166, {	-- Beastmaster's Hunt: The Crab
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
 				}),
 				i(91822, {
 					["races"] = HORDE_ONLY,
@@ -1012,11 +1016,6 @@ _.Zones =
 							["isDaily"] = true,
 						}),
 					},
-				}),
-				q(32186, {	-- Beastmaster's Quarry: The Crab
-					["provider"] = { "n", 67508 },	-- Colossal Viseclaw
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
 				}),
 				q(32183, {	-- Beastmaster's Quarry: The Crab
 					["provider"] = { "n", 67508 },	-- Colossal Viseclaw
@@ -1062,38 +1061,13 @@ _.Zones =
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
-				q(29875, {	-- Kang Bramblestaff
-					["provider"] = { "n", 56110 },	-- Xiao
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,	-- Hidden once you finish Valley of the Four Winds Story Line
-				}),
-				q(29874, {	-- Kang Bramblestaff
-					["provider"] = { "n", 56110 },	-- Xiao
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,	-- Hidden once you finish Valley of the Four Winds Story Line
-				}),
 				q(30731, {	-- Kuo-Na Quillpaw
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
-				i(86545, {
-					q(31446, {	-- Mimic Octopus
-						["requireSkill"] = FISHING,
-						["isDaily"] = true,
-						["description"] = "Found while fishing in any inland body of water on Pandaria",
-					}),
-				}),
 				q(30735, {	-- Mindel Sunspeaker
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
-				}),
-				i(86544, {	-- Spinefish Alpha
-					["g"] = {
-						q(31444, {	-- Spinefish Alpha
-							["requireSkill"] = FISHING,
-							["isDaily"] = true,
-						}),
-					},
 				}),
 				q(32139, {	-- Stacked!
 					["isDaily"] = true,
@@ -1103,33 +1077,20 @@ _.Zones =
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				q(31370, {	-- The Anglers
-					["provider"] = { "n", 64010 },	-- Master Angler Karu
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(32398, {	-- The Bell Speaks
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["races"] = HORDE_ONLY,
-				}),
 				q(36882, {	-- The Great Angler Returns
+					["requireSkill"] = FISHING,
 					["provider"] = { "n", 63721 },	-- Nat Pagle
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = FISHING,
 				}),
 				q(36609, {	-- The Great Angler Returns
+					["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
 					["provider"] = { "n", 63721 },	-- Nat Pagle
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
 				}),
 				q(31254, {	-- The Road to Kun-Lai
 					["sourceQuests"] = { 59559 },	-- Hero's Call: Kun-Lai Summit!
 					["provider"] = { "n", 63778 },	-- Messenger Grummle
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32402, {	-- The Situation In Dalaran
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["races"] = HORDE_ONLY,
 				}),
 				q(30738, {	-- Thelonius
 					["provider"] = { "n", 60506 },	-- Thelonius
@@ -1145,20 +1106,6 @@ _.Zones =
 				}),
 				q(32223, {	-- Wanted: Lieutenant Ethan Jacobson
 					["isDaily"] = true,
-					["races"] = HORDE_ONLY,
-				}),
-				q(30241, {	-- Warn Stoneplow (H)
-					["isBreadcrumb"] = true,
-					["sourceQuests"] = {
-						30174,	-- For Family
-						30273,	-- In the House of the Red Crane
-						30117,	-- Stoneplow Thirsts
-						29990,	-- Training and Discipline
-					--	TODO: may also require the following quests:
-					--	29581,	-- The Golden Dream
-					--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
-					},
-					["provider"] = { "n", 58607 },	-- Sunwalker Dezco
 					["races"] = HORDE_ONLY,
 				}),
 				q(32138, {	-- Work Order: Lumber
