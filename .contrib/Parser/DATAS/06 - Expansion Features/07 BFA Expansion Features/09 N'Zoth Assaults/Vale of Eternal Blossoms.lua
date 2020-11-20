@@ -1139,12 +1139,14 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(174483, {	-- Rajani Supplies
 								i(168816, {	-- Pulsing Star Heart (Rank 4)
+									["u"] = REMOVED_FROM_GAME,
 									["classes"] = HEALERS,
 									["g"] = {
 										az(24, 4),	-- Spirit of Preservation (Rank 4)
 									},
 								}),
 								i(168576, {	-- Roots of Magnificent Revival (Rank 4)
+									["u"] = REMOVED_FROM_GAME,
 									["classes"] = TANKS,
 									["g"] = {
 										az(33, 4),	-- Touch of the Everlasting (Rank 4)

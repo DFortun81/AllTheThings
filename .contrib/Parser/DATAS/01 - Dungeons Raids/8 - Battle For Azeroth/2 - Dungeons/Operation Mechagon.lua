@@ -250,11 +250,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["lvl"] = 120,
 				["g"] = {
 					ach(13789, {	-- Hertz Locker
-					--	["description"] = "After completing the achievement, speak to Prince Erazmin on Mechagon Island to get the essence.  You must already have the Rank 3 version.",
-						["u"] = 2,
+						["description"] = "After completing the achievement, speak to Prince Erazmin on Mechagon Island to get the essence.  You must already have the Rank 3 version.",
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							i(168845, {	-- Mecha-Perfection Turbo (Rank 4)
-								["u"] = 2,
+								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									az(22, 4),	-- Vision of Perfection (Rank 4)
 								},

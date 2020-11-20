@@ -1468,6 +1468,7 @@ _.Zones =
 					["coord"] = { 53.9, 88.9, 1165 },
 					["g"] = {
 						i(168623, {	-- Biconcavic Lens of the Focusing Iris (Rank 4)
+							["u"] = REMOVED_FROM_GAME,
 							["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
 							["g"] = {
@@ -1475,6 +1476,7 @@ _.Zones =
 							},
 						}),
 						i(168560, {	-- Fetish of the Gilded Catacombs (Rank 4)
+							["u"] = REMOVED_FROM_GAME,
 							["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 							["classes"] = TANKS,
 							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
@@ -1483,6 +1485,7 @@ _.Zones =
 							},
 						}),
 						i(168927, {	-- Seed of Vibrant Blooms (Rank 4)
+							["u"] = REMOVED_FROM_GAME,
 							["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 							["classes"] = HEALERS,
 							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
@@ -1490,8 +1493,9 @@ _.Zones =
 								az(20, 4),	-- Life-Binder's Invocation (Rank 4)
 							},
 						}),
-					--	this gear currently doesn't display the correct version that the vendor sells, and it's also all duplicated gear from BFA mythics.  commenting out until someone figures out a better way to display it.
-				--[[	i(155860),	-- Spymaster's Wrap
+						-- this gear currently doesn't display the correct version that the vendor sells, and it's also all duplicated gear from BFA mythics.  commenting out until someone figures out a better way to display it.
+						--[[
+						i(155860),	-- Spymaster's Wrap
 						i(155866),	-- Soulspun Casque
 						i(155885),	-- Sea-Brawler's Greathelm
 						i(155886),	-- Smartly Plumed Cap

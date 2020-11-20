@@ -13,6 +13,7 @@ _.Zones =
 					["g"] = {
 						i(170061, {	-- Rustbolt Supplies
 							i(168935, {	-- Existence Vibrancy Display (Rank 4)
+								["u"] = REMOVED_FROM_GAME,
 								["modelScale"] = 3,
 								["classes"] = HEALERS,
 								["model"] = 2974000,
@@ -21,6 +22,7 @@ _.Zones =
 								},
 							}),
 							i(168569, {	-- Null Force Visualizer (Rank 4)
+								["u"] = REMOVED_FROM_GAME,
 								["modelScale"] = 3,
 								["classes"] = TANKS,
 								["model"] = 2924336,
@@ -29,6 +31,7 @@ _.Zones =
 								},
 							}),
 							i(168861, {	-- Ultimate Purification Protocols (Rank 4)
+								["u"] = REMOVED_FROM_GAME,
 								["modelScale"] = 4,
 								["model"] = 2958033,
 								["g"] = {

@@ -439,7 +439,7 @@ _.Zones =
 							},
 							["g"] = {
 								i(168614, {	-- Charged Scale of the Blue Aspect
-									["u"] = 2,
+									["u"] = REMOVED_FROM_GAME,
 									["g"] = {
 										az(12, 4),	-- The Crucible of Flame (Rank 4)
 									},
@@ -1069,18 +1069,18 @@ _.Zones =
 										["cost"] = { { "c", 1755, 10000 }, },	-- 10,000 Coalescing Visions
 									}),
 									i(173291, {	-- Luminous Azerite Geode (Rank 4)
-									--	["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
-									--	["cost"] = { { "c", 1719, 10 } },		-- 10x Corrupted Mementos
-										["u"] = 2,
+										["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
+										["cost"] = { { "c", 1719, 10 } },		-- 10x Corrupted Mementos
+										["u"] = REMOVED_FROM_GAME,
 										["g"] = {
 											az(36, 4),	-- Spark of Inspiration (Rank 4)
 										},
 									}),
 									i(173311, {	-- Resplendent Warden's Badge (Rank 4)
-									--	["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
-									--	["classes"] = TANKS,
-									--	["cost"] = { { "c", 1719, 10 } },		-- 10x Corrupted Mementos
-										["u"] = 2,
+										["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
+										["classes"] = TANKS,
+										["cost"] = { { "c", 1719, 10 } },		-- 10x Corrupted Mementos
+										["u"] = REMOVED_FROM_GAME,
 										["g"] = {
 											az(34, 4, {	-- Strength of the Warden (Rank 4)
 												["classes"] = TANKS,
@@ -1088,9 +1088,9 @@ _.Zones =
 										},
 									}),
 									i(168940, {	-- Ward of Unimaginable Brilliance (Rank 4)
-									--	["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
-									--	["classes"] = HEALERS,
-										["u"] = 2,
+										["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
+										["classes"] = HEALERS,
+										["u"] = REMOVED_FROM_GAME,
 										["g"] = {
 											az(16, 4),	-- Unwavering Ward (Rank 4)
 										},

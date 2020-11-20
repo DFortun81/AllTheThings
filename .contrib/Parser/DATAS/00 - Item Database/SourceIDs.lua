@@ -8,7 +8,7 @@ end
 
 i(7509, 1, 2859);		-- Manaweave Robe (Ghostlands)
 i(24339, 1, 9500);		-- Stung
-i(49888, 1, 24432); 	-- Shadow's Edge
+i(49888, 1, 24432);		-- Shadow's Edge
 i(20637, 1, 8133);		-- Acid Inscribed Pauldrons
 i(5197, 1, 1989);		-- Cookie's Tenderizer
 i(41755, 1, 20156);		-- The Fire Extinguisher
@@ -41,11 +41,11 @@ i(118380, 1, 66540);	-- Hightfish Cap
 -- S T E I N S   /   M U G S --
 -------------------------------
 
-i(18044, 1, 7222); 		-- Hurley's Tankard
-i(12791, 1, 4544); 		-- Barman Shanker
-i(117378, 1, 65960); 	-- Direbrew's Bloodied Shanker
-i(71331, 1, 36595); 	-- Direbrew's Bloodied Shanker
-i(107217, 1, 57985); 	-- Direbrew's Bloodied Shanker
+i(18044, 1, 7222);		-- Hurley's Tankard
+i(12791, 1, 4544);		-- Barman Shanker
+i(117378, 1, 65960);	-- Direbrew's Bloodied Shanker
+i(71331, 1, 36595);		-- Direbrew's Bloodied Shanker
+i(107217, 1, 57985);	-- Direbrew's Bloodied Shanker
 i(37597, 1, 17888);		-- Direbrew's Shanker
 i(37892, 1, 18084);		-- Green Brewfest Stein
 i(37893, 1, 18085);		-- Filled Green Brewfest Stein
@@ -88,7 +88,7 @@ i(84661, 1, 43159);		-- Dragon Fishing Pole
 i(118381, 1, 66541);	-- Ephemeral Fishing Pole
 i(45992, 1, 22167);		-- Jeweled Fishing Pole
 i(44050, 1, 21318);		-- Mastercraft Kalu'ak Fishing Pole
-i(19022, 1, 7546); 		-- Nat Pagle's Extreme Angler FC-5000
+i(19022, 1, 7546);		-- Nat Pagle's Extreme Angler FC-5000
 i(45858, 1, 22092);		-- Nat's Lucky Fishing Pole
 i(84660, 1, 43158);		-- Pandaren Fishing Pole
 i(116825, 1, 65557);	-- Savage Fishing Pole
@@ -120,11 +120,11 @@ i(119556, 1, 67388);	-- Trailseeker Spaulders [Hidden Shoulder Appearance]
 i(162796, 1, 98636);	-- Wildguard Spaulders [Hidden Shoulder Appearance]
 i(129485, 1, 74101);	-- Mistdancer Pauldrons [Hidden Shoulders]
 i(129482, 1, 74098);	-- Mistdancer Handguards
-i(129714, 1, 74250); 	-- Trailseeker Spaulders [Hidden Shoulders]
+i(129714, 1, 74250);	-- Trailseeker Spaulders [Hidden Shoulders]
 i(153810, 1, 91083);	-- Trailseeker Spaulders
 i(153842, 1, 91113);	-- Mistdancer Spaulders
 i(153839, 1, 91102);	-- Mistandcer Handguards
 i(153842, 1, 91105);	-- Mistdancer Pauldrons
-i(173615, 1, 107629);	-- Mistdancer Pauldrons(Party Sync)
+i(173615, 1, 107629);	-- Mistdancer Pauldrons (Party Sync)
 i(11930, 1, 4326);		-- The Emperor's New Cape
-i(173599, 1, 107613);	-- Trailseeker Spaulders(Party Sync)
+i(173599, 1, 107613);	-- Trailseeker Spaulders (Party Sync)

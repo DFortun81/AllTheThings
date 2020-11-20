@@ -853,6 +853,7 @@ _.Zones =
 							},
 						}),
 						i(168923, {	-- Unburdened Azerite Timequartz (Rank 4)
+							["u"] = REMOVED_FROM_GAME,
 							["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 							["classes"] = HEALERS,
 							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
@@ -882,6 +883,7 @@ _.Zones =
 							},
 						}),
 						i(168814, {	-- Animated Blood of the Decimated (Rank 4)
+							["u"] = REMOVED_FROM_GAME,
 							["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
 							["g"] = {
@@ -913,6 +915,7 @@ _.Zones =
 							},
 						}),
 						i(168581, {	-- Sphere of Incandescent Neutralization (Rank 4)
+							["u"] = REMOVED_FROM_GAME,
 							["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 							["classes"] = TANKS,
 							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor

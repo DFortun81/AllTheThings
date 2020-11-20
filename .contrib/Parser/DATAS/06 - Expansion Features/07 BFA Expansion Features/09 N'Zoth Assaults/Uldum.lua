@@ -1270,7 +1270,10 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(174484, {	-- Uldum Accord Supplies
 								i(173283, {	-- Token of a Brilliant Death (Rank 4)
-									az(35, 4),	-- Breath of the Dying (Rank 4)
+									["u"] = REMOVED_FROM_GAME,
+									["g"] = {
+										az(35, 4),	-- Breath of the Dying (Rank 4)
+									},
 								}),
 								i(174481),	-- Cursed Dune Watcher
 							}),

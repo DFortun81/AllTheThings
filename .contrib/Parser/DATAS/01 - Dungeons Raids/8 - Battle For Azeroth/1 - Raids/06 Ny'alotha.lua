@@ -979,7 +979,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						})),
 						ach(14148),	-- Peer Pressure
 						i(173886, {	-- Bursting Void Droplet
-							["u"] = 2,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								az(37, 4),	-- The Formless Void (Rank 4)
 							},

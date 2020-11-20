@@ -50,9 +50,9 @@ _.Zones =
 								},
 							}),
 							i(169899, {	-- Polished Skull Trophy (Rank 4)
-							--	["description"] = "Requires reaching Elite rating in PvP and opening your next weekly chest.\n",
-							--	["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
-								["u"] = 2,	-- PvP Elite/Gladiator
+								["description"] = "Requires reaching Elite rating in PvP and opening your next weekly chest.\n",
+								["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
+								["u"] = REMOVED_FROM_GAME,	-- PvP Elite/Gladiator
 								["g"] = {
 									az(32, 4),	-- Conflict and Strife (Rank 4)
 								},

@@ -1903,6 +1903,7 @@ _.Zones =
 							},
 						}),
 						i(168923, {	-- Unburdened Azerite Timequartz (Rank 4)
+							["u"] = REMOVED_FROM_GAME,
 							["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 							["classes"] = HEALERS,
 							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
@@ -1932,6 +1933,7 @@ _.Zones =
 							},
 						}),
 						i(168814, {	-- Animated Blood of the Decimated (Rank 4)
+							["u"] = REMOVED_FROM_GAME,
 							["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
 							["g"] = {
@@ -1963,6 +1965,7 @@ _.Zones =
 							},
 						}),
 						i(168581, {	-- Sphere of Incandescent Neutralization (Rank 4)
+							["u"] = REMOVED_FROM_GAME,
 							["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 							["classes"] = TANKS,
 							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
@@ -2148,6 +2151,7 @@ _.Zones =
 					["coord"] = { 71.7, 13.7, 1161 },
 					["g"] = {
 						i(168623, {	-- Biconcavic Lens of the Focusing Iris (Rank 4)
+							["u"] = REMOVED_FROM_GAME,
 							["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
 							["g"] = {
@@ -2155,6 +2159,7 @@ _.Zones =
 							},
 						}),
 						i(168560, {	-- Fetish of the Gilded Catacombs (Rank 4)
+							["u"] = REMOVED_FROM_GAME,
 							["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 							["classes"] = TANKS,
 							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
@@ -2163,6 +2168,7 @@ _.Zones =
 							},
 						}),
 						i(168927, {	-- Seed of Vibrant Blooms (Rank 4)
+							["u"] = REMOVED_FROM_GAME,
 							["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 							["classes"] = HEALERS,
 							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum

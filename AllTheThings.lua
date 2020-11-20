@@ -11185,46 +11185,6 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 
-		-- Azerite Essences
-		if app.Categories.Essences then
-			db = {}
-			db.g = app.Categories.Essences;
-			db.lvl = 50;	-- used to be 120 pre-scale
-			db.expanded = false
-			db.text = "Azerite Essences"
-			db.icon = "Interface\\Addons\\AllTheThings\\assets\\Azerite"
-			db.description = "The Heart of Azeroth, rewarded by Magni in the Heart of Chamber (Silithus), is required to learn Essences and maybe even to have them drop. Essences have two effects on them, one major and one minor power.\n\nPlayers may place an Essence in every unlocked Major or Minor slot in the Heart of Azeroth.\n\nThe major power will only be activated if the Essence is placed in the central Major slot.\n\nThe minor power will be activated if the Essence is placed in any Minor slot or the central Major slot.\n\nThe same Essence cannot be placed in multiple slots."
-			table.insert(g, db)
-		end
-		--[[ automated category replaced by manual database. leaving this here temporarily as a reference point
-		-- TODO: Remove commented code when finished with essences.
-		db = {};
-		db.g = {};
-		db.lvl = 50;
-		db.OnUpdate = function(self)
-			local level = UnitLevel("player");
-			if level and level >= 120 then
-				local essences = C_AzeriteEssence.GetEssences();
-				if essences and #essences > 0 then
-					local cache = self.g;
-					table.wipe(cache);
-					for i,essence in ipairs(essences) do
-						tinsert(cache, app.CreateAzeriteEssence(essence.ID));
-					end
-					table.sort(cache, function(a, b)
-						return a.name < b.name;
-					end);
-					self.g = cache;
-					self.OnUpdate = nil;
-				end
-			end
-		end;
-		db.OnUpdate(db);
-		db.text = "Azerite Essences";
-		db.icon = "Interface\\ICONS\\Inv_heartofazeroth";
-		db.description = "Essences have two effects on them, one major and one minor power.\n\nPlayers may place an Essence in every unlocked Major or Minor slot in the Heart of Azeroth.\n\nThe major power will only be activated if the Essence is placed in the central Major slot.\n\nThe minor power will be activated if the Essence is placed in any Minor slot or the central Major slot.\n\nThe same Essence cannot be placed in multiple slots.\n\nEssences must be learned at the Heart Forge, but can be swapped out in any Rest Area.";
-		table.insert(g, db);
-		]]--
 		-- Expansion Features
 		if app.Categories.ExpansionFeatures then
 			db = {};
