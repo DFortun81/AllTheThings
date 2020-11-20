@@ -13,10 +13,10 @@ _.WorldEvents =
 			626,	-- Dalaran: Rogue Class Hall	-- Still works in 9.0.2
 			862,	-- Dazar'alor
 			1525,	-- Ravendreth
-		--	625,	-- Dalaran: Broken Isles -- Option to interact with this Version removed in 9.0.2
-		--	628,	-- Dalaran: The Underbelly -- Option to interact with this Version removed in 9.0.2
-		--	590,	-- Frostwall
-		--	582,	-- Lunarfall
+			--625,	-- Dalaran: Broken Isles -- Option to interact with this Version removed in 9.0.2
+			--628,	-- Dalaran: The Underbelly -- Option to interact with this Version removed in 9.0.2
+			--590,	-- Frostwall
+			--582,	-- Lunarfall
 		},
 		["crs"] = {
 			142062,	-- Madam Gosu [Boralus - Alliance]
@@ -24,15 +24,15 @@ _.WorldEvents =
 			135709,	-- Madam Goya [Dazar'alor - Horde]
 			160081,	-- Ta'xera <Matron of the Market>
 			94829,	-- Zhang Yeoh [Garrison]
-		--	100986,	-- Madam Goya [Underbelly] -- Option to interact with this Version removed in 9.0.2
+			--100986,	-- Madam Goya [Underbelly] -- Option to interact with this Version removed in 9.0.2
 		},
 		["coords"] = {
 			{ 56.71, 46.32, 1161 },	-- Madam Gosu, Boralus
 			{ 57.91, 46.28, 626 },	-- Madam Gosu, Dalaran: Rogue Class Hall
 			{ 63.54, 62.68, 862 },	-- Madam Goya, Dazar'alor
 			{ 52.40, 83.80, 1525 },	-- Ta'xera, Ravendreth <Matron of the Market>
-		--	{ 71.37, 17.93, 628 },	-- Madam Goya, Dalaran: The Underbelly -- Option to interact with this Version removed in 9.0.2
-		--	{ 44.96, 50.07, 590 },	-- Zhang Yeoh, Frostwall
+			--{ 71.37, 17.93, 628 },	-- Madam Goya, Dalaran: The Underbelly -- Option to interact with this Version removed in 9.0.2
+			--{ 44.96, 50.07, 590 },	-- Zhang Yeoh, Frostwall
 		},
 		["g"] = {
 			n(-492, {	-- Illusions
@@ -219,26 +219,24 @@ _.WorldEvents =
 				i(49287),	-- Tuskarr Kite
 			}),
 			n(-235, {	-- Recipes
-				["g"] = {
-					i(86238),	-- Pattern: Chestguard of Nemeses
-					i(86272),	-- Pattern: Fists of Lightning
-					i(86380),	-- Pattern: Imperial Silk Gloves
-					i(86381),	-- Pattern: Legacy of the Emperor
-					i(86279),	-- Pattern: Liferuned Leather Gloves
-					i(86280),	-- Pattern: Murderer's Gloves
-					i(86281),	-- Pattern: Nightfire Robe
-					i(86283),	-- Pattern: Raiment of Blood and Bone
-					i(86284),	-- Pattern: Raven Lord's Gloves
-					i(86379),	-- Pattern: Robe of Eternal Rule
-					i(86297),	-- Pattern: Stormbreaker Chestguard
-					i(86382),	-- Pattern: Touch of the Light
-					i(87411),	-- Plans: Bloodforged Warfists
-					i(87412),	-- Plans: Chestplate of Limitless Faith
-					i(87409),	-- Plans: Gauntlets of Battle Command
-					i(87413),	-- Plans: Gauntlets of Unbound Devotion
-					i(87410),	-- Plans: Ornate Battleplate of the Master
-					i(87408),	-- Plans: Unyielding Bloodplate
-				},
+				i(86238),	-- Pattern: Chestguard of Nemeses
+				i(86272),	-- Pattern: Fists of Lightning
+				i(86380),	-- Pattern: Imperial Silk Gloves
+				i(86381),	-- Pattern: Legacy of the Emperor
+				i(86279),	-- Pattern: Liferuned Leather Gloves
+				i(86280),	-- Pattern: Murderer's Gloves
+				i(86281),	-- Pattern: Nightfire Robe
+				i(86283),	-- Pattern: Raiment of Blood and Bone
+				i(86284),	-- Pattern: Raven Lord's Gloves
+				i(86379),	-- Pattern: Robe of Eternal Rule
+				i(86297),	-- Pattern: Stormbreaker Chestguard
+				i(86382),	-- Pattern: Touch of the Light
+				i(87411),	-- Plans: Bloodforged Warfists
+				i(87412),	-- Plans: Chestplate of Limitless Faith
+				i(87409),	-- Plans: Gauntlets of Battle Command
+				i(87413),	-- Plans: Gauntlets of Unbound Devotion
+				i(87410),	-- Plans: Ornate Battleplate of the Master
+				i(87408),	-- Plans: Unyielding Bloodplate
 			}),
 			n(-325, {	-- Tabard
 				i(38312),	-- Tabard of Brilliance
