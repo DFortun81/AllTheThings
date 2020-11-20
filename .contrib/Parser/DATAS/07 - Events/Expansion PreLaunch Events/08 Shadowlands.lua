@@ -385,6 +385,13 @@ _.WorldEvents =
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
 					}),
+					q(62473, {	-- What's Old is New
+						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 72.08, 20.72, 118 },
+						["provider"] = { "n", 167577 },	-- Brollen Wheatbeard
+						["sourceQuest"] = 60932,	-- Only Shadows Remain
+						["lvl"] = { 50 },
+					}),
 					-- repeatables below
 					q(62401, {	-- Strange Scourgestones
 						["maps"] = { 118 },	-- Icecrown
