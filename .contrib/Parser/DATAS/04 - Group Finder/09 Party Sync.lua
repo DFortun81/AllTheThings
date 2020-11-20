@@ -71,9 +71,7 @@ _.GroupFinder =
 						i(173595),	-- Trailseeker Greaves
 						i(173597),	-- Trailseeker Helm
 						i(173598),	-- Trailseeker Legguards
-						i(173599, {	-- Trailseeker Spaulders
-							-- ["s"] = 107613,	-- sourceID, in-game API doesn't return info
-						}),
+						i(173599),	-- Trailseeker Spaulders
 						i(173594),	-- Trailseeker Vest
 					},
 				}),

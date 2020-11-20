@@ -127,3 +127,4 @@ i(153839, 1, 91102);	-- Mistandcer Handguards
 i(153842, 1, 91105);	-- Mistdancer Pauldrons
 i(173615, 1, 107629);	-- Mistdancer Pauldrons(Party Sync)
 i(11930, 1, 4326);		-- The Emperor's New Cape
+i(173599, 1, 107613);	-- Trailseeker Spaulders(Party Sync)
