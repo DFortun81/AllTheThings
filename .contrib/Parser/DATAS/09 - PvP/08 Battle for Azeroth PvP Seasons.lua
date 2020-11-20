@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	n(-10052, {	-- Battle for Azeroth
+	tier(8, {	-- Battle for Azeroth
 		n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
 			n(-659, {	-- Aspirant PvP Gear
 				n(-319, {	-- Weapons
