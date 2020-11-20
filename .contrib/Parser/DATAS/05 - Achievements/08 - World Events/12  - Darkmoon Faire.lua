@@ -90,15 +90,14 @@ _.Achievements =
 				crit(4),		-- Cooking
 				crit(5),		-- Enchanting
 				crit(6),		-- Engineering
-				crit(7),		-- First Aid
-				crit(8),		-- Fishing
-				crit(9),		-- Herbalism
-				crit(10),		-- Inscription
-				crit(11),		-- Jewelcrafting
-				crit(12),		-- Leatherworking
-				crit(13),		-- Mining
-				crit(14),		-- Skinning
-				crit(15),		-- Tailoring
+				crit(7),		-- Fishing
+				crit(8),		-- Herbalism
+				crit(9),		-- Inscription
+				crit(10),		-- Jewelcrafting
+				crit(11),		-- Leatherworking
+				crit(12),		-- Mining
+				crit(13),		-- Skinning
+				crit(14),		-- Tailoring
 			}),
 			ach(6026, {		-- Fairegoer's Feast
 				crit(1),		-- Corn-Breaded Sausage

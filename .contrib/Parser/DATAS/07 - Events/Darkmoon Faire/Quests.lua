@@ -361,7 +361,7 @@ _.WorldEvents =
 				["provider"] = { "n", 10445 },	-- Selina Dourman
 				["coord"] = { 55.56, 55.03, 407 },
 				["g"] = {
-					crit(12, {	-- Leatherworking
+					crit(11, {	-- Leatherworking
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
@@ -382,7 +382,7 @@ _.WorldEvents =
 				["provider"] = { "n", 14841 },	-- Rinling
 				["coord"] = { 49.2, 60.7, 407 },
 				["g"] = {
-					crit(15, {	-- Tailoring
+					crit(14, {	-- Tailoring
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
@@ -426,7 +426,7 @@ _.WorldEvents =
 				["provider"] = { "n", 14833 },	-- Chronos
 				["coord"] = { 54.9, 70.7, 407 },
 				["g"] = {
-					crit(9, {	-- Herbalism
+					crit(8, {	-- Herbalism
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
@@ -467,7 +467,7 @@ _.WorldEvents =
 				["provider"] = { "n", 14833 },	-- Chronos
 				["coord"] = { 54.9, 70.7, 407 },
 				["g"] = {
-					crit(11, {	-- Jewelcrafting
+					crit(10, {	-- Jewelcrafting
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
@@ -582,7 +582,7 @@ _.WorldEvents =
 				["provider"] = { "n", 14841 },	-- Rinling
 				["coord"] = { 49.2, 60.7, 407 },
 				["g"] = {
-					crit(13, {	-- Mining
+					crit(12, {	-- Mining
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
@@ -632,7 +632,7 @@ _.WorldEvents =
 				["provider"] = { "n", 14845 },	-- Stamp Thunderhorn
 				["coord"] = { 52.8, 67.9, 407 },
 				["g"] = {
-					crit(8, {	-- Fishing
+					crit(7, {	-- Fishing
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
@@ -657,7 +657,7 @@ _.WorldEvents =
 				["provider"] = { "n", 14833 },	-- Chronos
 				["coord"] = { 54.9, 70.7, 407 },
 				["g"] = {
-					crit(14, {	-- Skinning
+					crit(13, {	-- Skinning
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
@@ -877,7 +877,7 @@ _.WorldEvents =
 				["provider"] = { "n", 14822 },	-- Sayge
 				["coord"] = { 53.2, 75.8, 407 },
 				["g"] = {
-					crit(10, {	-- Inscription
+					crit(9, {	-- Inscription
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
