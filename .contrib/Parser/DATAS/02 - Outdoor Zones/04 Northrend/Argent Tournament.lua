@@ -10,10 +10,6 @@ _.Zones =
 			["lvl"] = 67,
 			["g"] = {
 				n(ACHIEVEMENTS, {
-					-- TODO:: add all achievements here?
-					ach(2756, {	-- Argent Aspiration
-						["sourceQuest"] = 13668,	-- The Argent Tournament
-					}),
 					ach(4596, {	-- The Sword in the Skull
 						["description"] = "This is the quest chain for obtaining an epic Quel'Delar weapon.\n\nNOTE: A Warrior can learn all of the weapon appearances.",
 						["maps"] = {

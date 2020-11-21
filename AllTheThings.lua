@@ -12213,7 +12213,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				-- Simplify the returned groups
 				local groups, holiday = {}, {};
 				local header = app.CreateMap(self.mapID, { g = groups });
+				-- local mergeGroups;
 				for i, group in ipairs(results) do
+					-- mergeGroups = nil;
 					-- print(group.key,group[group.key]);
 					-- clone the information from the group so it can be adjusted in the list without changing the source
 					local clone = {};
@@ -12240,6 +12242,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					-- Cache the difficultyID, if there is one. Also, ignore the event tag for anything that isn't Bizmo's Brawlpub.
 					local difficultyID = not GetRelativeField(group, "npcID", -496) and GetRelativeValue(group, "difficultyID");
 					-- local first = false;
+
+					-- can probably re-factor this logic at some point to implicitly merge into the proper existing group instead of
+					-- ALWAYS creating the shared group, and then merging into the entire set of groups...
 
 					-- If this is relative to a holiday, let's do something special
 					if GetRelativeField(group, "npcID", -3) then
@@ -12291,6 +12296,26 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						if holidayID then group = app.CreateHoliday(holidayID, { g = { group }, u = u }); end
 						MergeObject(holiday, group);
 					else
+						-- Check if any top-level group in the mapped-groups matches the mapped-group (or its parent) being pulled in
+						-- if so, merge the categorized group into the matching topGroup instead of directly at the zone-level
+						-- Source:
+						-- Category > Divider? > Mapped-Thing
+						-- Zone:
+						-- Divider? > Category > Mapped-Thing
+						-- if group.npcID and group.npcID < 0 then
+						-- 	for i,topGroup in ipairs(groups) do
+						-- 		if topGroup.npcID
+						-- 		and topGroup.npcID < 0
+						-- 		and (topGroup.npcID == group.npcID
+						-- 			or (group.parent and topGroup.npcID == group.parent.npcID)) then
+						-- 			if not topGroup.g then
+						-- 				topGroup.g = {};
+						-- 			end
+						-- 			mergeGroups = topGroup.g;
+						-- 		end
+						-- 	end
+						-- end
+
 						if group.key == "instanceID" or group.key == "mapID" or group.key == "classID" then
 							header.key = group.key;
 							header[group.key] = group[group.key];
