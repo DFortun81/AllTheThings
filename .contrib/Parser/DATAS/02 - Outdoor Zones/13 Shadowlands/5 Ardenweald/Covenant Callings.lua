@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1565, {	-- Ardenweald
-			n(-910, {	-- Covenant Callings (Nightfae)
+			n(-910, {	-- Covenant Callings (Night Fae)
 				q(61098, {	-- Supplies from The Wild Hunt
 					["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
 					["lvl"] = { 60 },

@@ -1776,7 +1776,6 @@ _.HiddenQuestTriggers =
 		-------------------
 		--[[ All of these pop up with brand new characters. Something account-wide triggers these. Possibly related to certain kinds of transmog events
 		q(52969),	--
-		q(57096),	--
 		]]--
 
 		--	VARIOUS
@@ -1842,6 +1841,7 @@ _.HiddenQuestTriggers =
 		q(54635),	-- additional version of Mekkatorque's Battle Plans, presumably if you don't pick it up from a mob during "Killing on the Side," but idk how that could happen
 		q(58417),	-- triggered when starting the mission "Casting the Bait" while on "Under False Colors" during the Horde War Campaign
 		q(55135),	-- triggered after finishing the mission "Casting the Bait" during the Horde War Campaign
+		q(54854),	-- naming the ship "Tiffin's Melody" during Blessing of the Tides quest to recruit Kul Tirans
 
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
