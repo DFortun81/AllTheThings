@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
-			n(-169, {	-- Emissary Quests
+			n(-912, {	-- Covenant Callings (Venthyr)
 				q(61100, {	-- Supplies from the Court of Harvesters
 					["provider"] = { "n", 156822 },	-- Mistress Mihaela <Court of Harvesters Quartermaster>
 					["lvl"] = { 60 },

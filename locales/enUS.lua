@@ -1451,6 +1451,10 @@ app.L = {
 -- Shadowlands Header
 	--	[-900] = 																-- Covenant Sanctrum
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
+		[-910] = GetSpellInfo(339041),											-- Covenant Callings (Nightfae)
+		[-911] = GetSpellInfo(339036),											-- Covenant Callings (Kyrian)
+		[-912] = GetSpellInfo(339037),											-- Covenant Callings (Venthyr)
+		[-913] = GetSpellInfo(339038),											-- Covenant Callings (Necrolord)
 		[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown
 		[-940] = "Ascended Council",											-- Ascended Counil
 

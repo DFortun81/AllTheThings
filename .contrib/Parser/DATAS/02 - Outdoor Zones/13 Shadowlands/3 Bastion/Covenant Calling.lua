@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
-			n(-169, {	-- Emissary Quests
+			n(-911, {	-- Covenant Callings (Kyrian)
 				q(61097, {	-- Supplies from The Ascended
 					["provider"] = { "n", 160470 },	-- Adjutant Nikos <Quartermaster>
 					["lvl"] = { 60 },

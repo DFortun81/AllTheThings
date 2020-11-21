@@ -5,27 +5,27 @@
 _.Zones =
 {
 	m(1550, {	-- Shadowlands
-		m(1565, {	-- Ardenweald
-			n(-169, {	-- Emissary Quests
-				q(61098, {	-- Supplies from The Wild Hunt
-					["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
+		m(1536, {	-- Maldraxxus
+			n(-913, {	-- Covenant Callings (Necrolord)
+				q(61095, {	-- Supplies from The Undying Army
+					["provider"] = { "n", 173003 },	-- Nalcorn Talsen <Undying Army Quartermaster>
 					["lvl"] = { 60 },
-					["coord"] = { 48.4, 50.4, 1565 },
+					["coord"] = { 50.6, 53.4, 1536 },
 					["repeatable"] = true,
 					["g"] = {
-						i(180649, {	-- Wild Hunt Supplies
-							i(180635),	-- Hungry Burrower
-							i(183800),	-- Amber Ardenmoth
+						i(180646, {	-- Supplies of the Undying Army
+							i(181269),	-- Suspended Corpse
+							i(182081),	-- Reins of the Colossal Slaughterclaw (Colossal Slaughterclaw in journal)
 						}),
 					},
 				}),
-				q(62693, {	-- A Calling in Ardenweald
-					["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
+				q(62694, {	-- A Calling in Maldraxxus
+					["provider"] = { "n", 173003 },	-- Nalcorn Talsen <Undying Army Quartermaster>
 					["lvl"] = { 60 },
-					["coord"] = { 48.4, 50.4, 1565 },
+					["coord"] = { 50.6, 53.4, 1536 },
 					["repeatable"] = true,
 					["g"] = {
-						i(181476, {	-- Tribute of the Wild Hunt
+						i(181732, {	-- Tribute of the Ambitious
 							i(184159, {	-- Oozing Necroray Egg (Timer)
 								i(184158, {	-- Oozing Necroray Egg (No Timer)
 									i(184160),	-- Bulbous Necroray
