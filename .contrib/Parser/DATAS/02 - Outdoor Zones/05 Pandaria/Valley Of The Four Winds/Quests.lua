@@ -434,10 +434,6 @@ _.Zones =
 					["coord"] = { 52.7, 50.4, 376 },
 					["provider"] = { "n", 64464 },	-- Andi
 				}),
-				q(30252, {	-- A Helping Hand
-					["coord"] = { 52.0, 48.1, 376 },
-					["provider"] = { "n", 58721 },	-- Farmer Yoon
-				}),
 				q(30399, {	-- A Jade Cat for Chee Chee
 					["provider"] = { "n", 58709 },	-- Chee Chee
 					["repeatable"] = true,
@@ -1041,26 +1037,6 @@ _.Zones =
 					["g"] = {
 						i(88375),  -- Turnip Punching Bag
 					},
-				}),
-				q(30535, {	-- Learn and Grow I: Seeds
-					["sourceQuests"] = { 30252 },	-- A Helping Hand
-					["coord"] = { 52.2, 48.8, 376 },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
-				q(30254, {	-- Learn and Grow II: Tilling and Planting
-					["sourceQuests"] = { 30535 },	-- Learn and Grow I: Seeds
-					["coord"] = { 52.2, 48.8, 376 },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
-				q(30255, {	-- Learn and Grow III: Tending Crops
-					["sourceQuests"] = { 30254 },	-- Learn and Grow II: Tilling and Planting
-					["coord"] = { 52.2, 48.8, 376 },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
-				q(30256, {	-- Learn and Grow IV: Harvesting
-					["sourceQuests"] = { 30255 },	-- Learn and Grow III: Tending Crops
-					["coord"] = { 52.2, 48.8, 376 },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
 				}),
 				q(30257, {	-- Learn and Grow V: Halfhill Market
 					["sourceQuests"] = { 30256 },	-- Learn and Grow IV: Harvesting

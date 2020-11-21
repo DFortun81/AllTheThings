@@ -986,23 +986,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(32167, {	-- Ancient's Fall
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 				i(91822, {
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						q(32163, {	-- Beastmaster's Hunt: The Crab
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
-				i(91819, {	-- Sturdy Crane Snare
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						q(32161, {	-- Beastmaster's Hunt: The Crane
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -1019,11 +1006,6 @@ _.Zones =
 				}),
 				q(32183, {	-- Beastmaster's Quarry: The Crab
 					["provider"] = { "n", 67508 },	-- Colossal Viseclaw
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32181, {	-- Beastmaster's Quarry: The Crane
-					["provider"] = { "n", 67436 },	-- Ancient Bloodcrown Crane
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),

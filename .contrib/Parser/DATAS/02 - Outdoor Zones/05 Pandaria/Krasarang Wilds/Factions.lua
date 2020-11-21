@@ -133,6 +133,14 @@ _.Zones =
 								["coord"] = { 57.1, 78.6, 379 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32167, {	-- Ancient's Fall
+								["sourceQuests"] = { 32181 },	-- Beastmaster's Quarry: The Crane
+								["provider"] = { "n", 67447 },	-- Jorn Skyseer (summons the mob for you to fight)
+								["isDaily"] = true,
+								["coord"] = { 11.7, 60.8, 418 },
+								["races"] = HORDE_ONLY,
+								["crs"] = { 67436 },	-- Ancient Bloodcrown Crane (killing the mob procs the quest)
+							}),
 							q(32128, {	-- Another One Bites the Dust
 								["sourceQuests"] = {
 									32235,	-- Flash! Aaaaaahhhh!
@@ -141,6 +149,19 @@ _.Zones =
 								["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
 								["isDaily"] = true,
 								["coord"] = { 9.02, 51.2, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32161, {	-- Beastmaster's Hunt: The Crane
+								["provider"] = { "i", 91819 },	-- Sturdy Crane Snare
+								["isDaily"] = true,
+								["coord"] = { 9.67, 50.9, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32181, {	-- Beastmaster's Quarry: The Crane
+								["sourceQuests"] = { 32161 },	-- Beastmaster's Hunt: The Crane
+								["provider"] = { "n", 67503 },	-- Ancient Bloodcrown Crane
+								["isDaily"] = true,
+								["coord"] = { 40.3, 60.0, 418 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32214, {	-- Bilgewater Infiltrators
