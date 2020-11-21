@@ -297,6 +297,7 @@ app.L = {
 
 	-- These need to be localized manually.
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
+	-- https://www.wowhead.com/icons
 	["NPC_ID_ICONS"] = {
 
 		--[-] = "Interface\\Icons\\",														--
@@ -663,6 +664,10 @@ app.L = {
 		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
 		[-862] = "Interface\\Icons\\inv_heartofazeroth",									-- Heart of Azeroth
 		[-901] = "Interface\\Icons\\inv_misc_covenant_renown",								-- Covenant Callings
+		[-910] = 3257750,																	-- Covenant Callings (Night Fae)
+		[-911] = 3257748,																	-- Covenant Callings (Kyrian)
+		[-912] = 3257751,																	-- Covenant Callings (Venthyr)
+		[-913] = 3257749,																	-- Covenant Callings (Necrolord)
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1449,8 +1454,12 @@ app.L = {
 		[-861] = "Rank 4",														-- Rank 4
 
 -- Shadowlands Header
-	--	[-900] = 																-- Covenant Sanctrum
-		[-901] = GetSpellInfo(339041),											-- Covenant Callings
+		--[-900] = 																-- Covenant Sanctrum
+		[-901] = GetSpellInfo(339041),											-- Covenant Callings (General)
+		[-910] = GetSpellInfo(339041),											-- Covenant Callings (Night Fae)
+		[-911] = GetSpellInfo(339036),											-- Covenant Callings (Kyrian)
+		[-912] = GetSpellInfo(339037),											-- Covenant Callings (Venthyr)
+		[-913] = GetSpellInfo(339038),											-- Covenant Callings (Necrolord)
 		[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown
 		[-940] = "Ascended Council",											-- Ascended Counil
 
@@ -3145,6 +3154,7 @@ app.L = {
 		[231903] = "Razzlebeard's Report",
 		[232066] = "Sunken Treasure",
 		[232067] = "Stolen Treasure",
+		[232090] = "Spark's Stolen Supplies",
 		[232214] = "Ogre Booty",
 		[232215] = "Gorr'thogg's Personal Reserve",
 		[232216] = "Ogre Booty",
@@ -3152,6 +3162,10 @@ app.L = {
 		[232218] = "Doorog's Secret Stash",
 		[232219] = "Ogre Booty",
 		[232237] = "Ogre Booty",
+		[232248] = "Pippers' Buried Supplies",
+		[232250] = "Pippers' Buried Supplies",
+		[232251] = "Pippers' Buried Supplies",
+		[232252] = "Pippers' Buried Supplies",
 		[232406] = "Adventurer's Pack",
 		[232416] = "Command Board",
 		[232492] = "Doomshot",

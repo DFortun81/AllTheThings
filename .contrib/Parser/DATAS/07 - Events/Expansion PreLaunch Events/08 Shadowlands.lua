@@ -29,10 +29,12 @@ _.WorldEvents =
 					q(62594, {	-- The Safety of Others (A)
 						["maps"] = { 84 },
 						["lvl"] = { 50 },
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(62595, {	-- The Safety of Others (H)
 						["maps"] = { 85 },
 						["lvl"] = { 50 },
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(60116, {	-- Cause for Distraction (A)
 						["maps"] = { 84 },	-- Stormwind
