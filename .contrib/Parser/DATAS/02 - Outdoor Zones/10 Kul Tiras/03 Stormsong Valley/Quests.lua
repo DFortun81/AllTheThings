@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
-			n(QUESTS, {	-- [Finalized]
+			n(QUESTS, {
 				--	NEED MAIL AZERITE REWARDS FOR "STORM'S JUDGMENT" QUEST.
 				--	NEED MAIL AZERITE REWARDS FOR "STORM'S END" QUEST.
 				q(50616, {	-- A Bit of a Bind
@@ -1259,8 +1259,8 @@ _.Zones =
 									i(160878),	-- Darkwater Shoulderguards
 									i(155166),	-- Dread Corsair Breastplate
 									i(160880),	-- Dread Corsair Pauldrons
-									i(175342),	-- Tidespeaker Amice
-									i(175365),	-- Tidespeaker Vestments
+									i(160877),	-- Tidespeaker Amice
+									i(155185),	-- Tidespeaker Vestments
 									i(160879),	-- Stormchaser Shoulderguards
 									i(155167),	-- Stormchaser Chainmail
 								},
@@ -1269,8 +1269,8 @@ _.Zones =
 						i(175343),	-- Darkwater Shoulderguards (no azerite version) 
 						i(175362),	-- Dread Corsair Breastplate (no azerite version)
 						i(175345),	-- Dread Corsair Pauldrons (no azerite version)
-						i(160877),	-- Tidespeaker Amice (no azerite version)
-						i(155185),	-- Tidespeaker Vestments (no azerite version)
+						i(175342),	-- Tidespeaker Amice (no azerite version)
+						i(175365),	-- Tidespeaker Vestments (no azerite version)
 						i(175344),	-- Stormchaser Shoulderguards (no azerite version)
 						i(175363),	-- Stormchaser Chainmail (no azerite version)
 					},
