@@ -5784,7 +5784,9 @@ app.BaseFaction = {
 		elseif key == "link" then
 			return t.achievementID and GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
-			return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or t.isFriend and select(6, GetFriendshipReputation(t.factionID));
+			return t.achievementID and select(10, GetAchievementInfo(t.achievementID))
+				or t.isFriend and select(6, GetFriendshipReputation(t.factionID))
+				or "Interface\\Addons\\AllTheThings\\assets\\factions";
 		elseif key == "isFriend" then
 			if select(1, GetFriendshipReputation(t.factionID)) then
 				rawset(t, "isFriend", true);
@@ -7883,7 +7885,7 @@ end)();
 		"Interface\\Icons\\expansionicon_mistsofpandaria",			-- Mists
 		"Interface\\Icons\\Achievement_boss_hellfire_archimonde",	-- WoD
 		"Interface\\Icons\\achievements_zone_brokenshore",			-- Legion
-		"Interface\\Icons\\achievement_cloudnine",					-- Battle For Azeroth
+		"Interface\\Icons\\factionchange",							-- Battle For Azeroth
 		"Interface\\Icons\\inv_torghast",							-- Shadowlands
 	};
 	local tierLevel = {

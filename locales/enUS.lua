@@ -284,6 +284,7 @@ app.L = {
 	},
 
 	-- These need to be localized manually.
+	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	["NPC_ID_ICONS"] = {
 
 		--[-] = "Interface\\Icons\\",														--
@@ -422,6 +423,7 @@ app.L = {
 		[-208] = "Interface\\Icons\\achievement_alliedrace_voidelf",						-- Void Elf
 		[-209] = "Interface\\Icons\\achievement_alliedrace_highmountaintauren",				-- Highmountain Tauren
 		[-210] = "Interface\\Icons\\achievement_alliedrace_nightborne",						-- Nightborne
+		[-211] = 1530081,																	-- New Characters
 		[-212] = "Interface\\WorldMap\\TreasureChest_64",									-- Treasure Chest
 		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",								-- The Underbelly
 		[-214] = "Interface\\Icons\\achievement_alliedrace_nightborne",						-- Nightborne
@@ -498,6 +500,9 @@ app.L = {
 		[-357] = "Interface\\Icons\\garrison_building_sparringarena",						-- Sparring Arena Outpost (Gorgond)
 		[-358] = "Interface\\Icons\\garrison_building_lumbermill",							-- Lumber Mill Outpost (Gorgrond)
 		[-363] = "Interface\\Icons\\achievement_reputation_argentchampion",					-- The Argent Tournament
+		[-364] = 236215,																	-- Legendaries
+		[-365] = 135360,																	-- Heirlooms
+		[-366] = 132349,																	-- Weapon Sets
 		[-367] = "Interface\\Icons\\ability_rogue_deviouspoisons",							-- The Construct Quarter
 		[-368] = "Interface\\Icons\\inv_trinket_naxxramas04",								-- The Arachnid Quarter
 		[-369] = "Interface\\Icons\\spell_deathknight_classicon",							-- The Military Quarter
@@ -942,6 +947,7 @@ app.L = {
 		[-10059] = "Interface\\Icons\\Paladin_Protection",							-- Pandaria Scenarios
 		[-10060] = "Interface\\Icons\\achievement_arena_3v3_1",						-- Arena of Annihilation (Scenario)
 		[-10061] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
+		[-10067] = 1309100,															-- Artifacts
 		[-10070] = "Interface\\Icons\\Paladin_Protection",							--
 		[-10071] = "Interface\\Icons\\Paladin_Protection",							--
 		[-10072] = "Interface\\Icons\\ability_deathwing_assualtaspects",			-- N'Zoth Assault

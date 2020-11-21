@@ -1081,6 +1081,5 @@ _.GearSets =
 				},
 			}),
 		},
-		["achievementID"] = 705,	-- Master of Arms
 	}),
 };

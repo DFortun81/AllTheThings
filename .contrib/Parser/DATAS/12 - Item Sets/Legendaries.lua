@@ -5,7 +5,6 @@
 _.GearSets =
 {
 	n(-364, {	-- Legendaries
-		["achievementID"] = 5010,	-- The Ultimate Collection
 		["g"] = {
 			n(-319, {	-- Weapons
 				un(REMOVED_FROM_GAME, i(22632, {	-- Atiesh, Greatstaff of the Guardian
