@@ -9,7 +9,7 @@ _.Zones =
 			n(RARES, {
 				i(87779, {	-- Ancient Guo-Lai Cache Key
 					["description"] = "Use these keys to unlock Ancient Guo Lai Cache chests in the Vault.",
-					["groups"] = {
+					["g"] = {
 						i(90470),	-- Design: Jade Owl
 						i(90471),	-- Design: Sapphire Cub
 						i(101768),	-- Recipe: Farmer's Delight
@@ -30,12 +30,18 @@ _.Zones =
 				n(58778, {	-- Aetha
 					["coord"] = { 35.0, 89.9, 390 },
 					["g"] = {
+						crit(5, {	-- Aetha
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
 				n(50822, {	-- Ai-Ran the Shifting Cloud
 					["coord"] = { 42.8, 69.2, 390 },
 					["g"] = {
+						crit(42, {	-- Ai-Ran the Shifting Cloud
+							["achievementID"] = 7439,	-- Glorious!
+						}),
 						i(87638),	-- Cloak of Tranquil Clouds
 						i(86590),	-- Essence of the Breeze
 						i(87637),	-- Jade Harbinger's Cloak
@@ -43,10 +49,6 @@ _.Zones =
 						i(87636),	-- Cloak of the Forgotten Emperor
 						i(87639),	-- Tattered Guo-Lai Dynasty Cloak
 						i(87217),	-- Small Bag of Goods
-						{	-- Glorious!
-							["achievementID"] = 7439,
-							["criteriaID"] = 42,
-						},
 					},
 				}),
 				n(64403, {	-- Alani
@@ -57,18 +59,24 @@ _.Zones =
 						{ 38.6, 64.6, 390 },
 					},
 					["g"] = {
-						i(90655),	-- Reins of the Thundering Ruby Cloud Serpent
+						i(90655),	-- Reins of the Thundering Ruby Cloud Serpent (MOUNT!)
 					},
 				}),
 				n(58949, {	-- Bai-Jin the Butcher
 					["coord"] = { 17.0, 48.7, 390 },
 					["g"] = {
+						crit(14, {	-- Bai-Jin the Butcher
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
 				n(63695, {	-- Baolai the Immolator
 					["coord"] = { 28.7, 43.3, 390 },
 					["g"] = {
+						crit(8, {	-- Baolai the Immolator
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
@@ -78,12 +86,18 @@ _.Zones =
 						{ 22.4, 26.7, 395 },	-- Entrance
 					},
 					["g"] = {
+						crit(10, {	-- Bloodtip
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
 				n(58768, {	-- Cracklefang
 					["coord"] = { 46.4, 59.3, 390 },
 					["g"] = {
+						crit(1, {	-- Cracklefang
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
@@ -93,6 +107,9 @@ _.Zones =
 						{ 22.4, 26.7, 395 },	-- Entrance
 					},
 					["g"] = {
+						crit(9, {	-- Gaohun the Soul-Severer
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
@@ -102,12 +119,18 @@ _.Zones =
 						{ 28.9, 56.3, 390 },
 					},
 					["g"] = {
+						crit(3, {	-- General Temuja
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
 				n(62880, {	-- Gochao the Ironfist
 					["coord"] = { 26.86, 13.08, 390 },
 					["g"] = {
+						crit(12, {	-- Gochao the Ironfist
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
@@ -118,12 +141,18 @@ _.Zones =
 						{ 22.43, 26.75, 395 },	-- Entrance
 					},
 					["g"] = {
+						crit(13, {	-- Huo-Shuang
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
 				n(50749, {	-- Kal'tik the Blight
 					["coord"] = { 14.0, 58.6, 390 },
 					["g"] = {
+						crit(21, {	-- Kal'tik the Blight
+							["achievementID"] = 7439,	-- Glorious!
+						}),
 						i(87637),	-- Jade Harbinger's Cloak
 						i(87217),	-- Small Bag of Goods
 						i(87636),	-- Cloak of the Forgotten Emperor
@@ -131,15 +160,14 @@ _.Zones =
 						i(87640),	-- Softfoot's Drape
 						i(87639),	-- Tattered Guo-Lai Dynasty Cloak
 						i(134023),	-- Bottled Tornado
-						{	-- Glorious!
-							["achievementID"] = 7439,
-							["criteriaID"] = 21,
-						},
 					},
 				}),
 				n(50349, {	-- Kang the Soul Thief
 					["coord"] = { 15.2, 35.2, 390 },
 					["g"] = {
+						crit(28, {	-- Kang the Soul Thief
+							["achievementID"] = 7439,	-- Glorious!
+						}),
 						i(87638),	-- Cloak of Tranquil Clouds
 						i(87639),	-- Tattered Guo-Lai Dynasty Cloak
 						i(87636),	-- Cloak of the Forgotten Emperor
@@ -147,21 +175,23 @@ _.Zones =
 						i(87217),	-- Small Bag of Goods
 						i(86571),	-- Kang's Bindstone
 						i(87640),	-- Softfoot's Drape
-						{	-- Glorious!
-							["achievementID"] = 7439,
-							["criteriaID"] = 28,
-						},
 					},
 				}),
 				n(63978, {	-- Kri'chon
 					["coord"] = { 6.27, 58.5, 390 },
 					["g"] = {
+						crit(15, {	-- Kri'chon
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
 				n(50840, {	-- Major Nanners
 					["coord"] = { 30.7, 91.5, 390 },
 					["g"] = {
+						crit(7, {	-- Major Nanners
+							["achievementID"] = 7439,	-- Glorious!
+						}),
 						i(87636),	-- Cloak of the Forgotten Emperor
 						i(87639),	-- Tattered Guo-Lai Dynasty Cloak
 						i(86594),	-- Helpful Wikky's Whistle
@@ -169,10 +199,6 @@ _.Zones =
 						i(87638),	-- Cloak of Tranquil Clouds
 						i(87640),	-- Softfoot's Drape
 						i(87637),	-- Jade Harbinger's Cloak
-						{	-- Glorious!
-							["achievementID"] = 7439,
-							["criteriaID"] = 7,
-						},
 					},
 				}),
 				n(50806, {	-- Moldo One-Eye
@@ -181,6 +207,9 @@ _.Zones =
 						{ 34.8, 60.7, 390 },
 					},
 					["g"] = {
+						crit(49, {	-- Moldo One-Eye
+							["achievementID"] = 7439,	-- Glorious!
+						}),
 						i(87639),	-- Tattered Guo-Lai Dynasty Cloak
 						i(87640),	-- Softfoot's Drape
 						i(87217),	-- Small Bag of Goods
@@ -188,21 +217,23 @@ _.Zones =
 						i(87638),	-- Cloak ok Tranquil Clouds
 						i(86586),	-- Panflute of Pandaria
 						i(87637),	-- Jade Harbinger's Cloak
-						{	-- Glorious!
-							["achievementID"] = 7439,
-							["criteriaID"] = 49,
-						},
 					},
 				}),
 				n(58771, {	-- Quid
 					["coord"] = { 66.4, 39.3, 390 },
 					["g"] = {
+						crit(6, {	-- Quid
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
 				n(50780, {	-- Sahn Tidehunter
 					["coord"] = { 69.4, 30.5, 390 },
 					["g"] = {
+						crit(14, {	-- Sahn Tidehunter
+							["achievementID"] = 7439,	-- Glorious!
+						}),
 						i(87217),	-- Small Bag of Goods
 						i(87636),	-- Cloak of the Forgotten Emperor
 						i(87637),	-- Jade Harbinger's Cloak
@@ -210,27 +241,32 @@ _.Zones =
 						i(87638),	-- Cloak ok Tranquil Clouds
 						i(87640),	-- Softfoot's Drape
 						i(86582),	-- Aqua Jewel
-						{	-- Glorious!
-							["achievementID"] = 7439,
-							["criteriaID"] = 14,
-						},
 					},
 				}),
 				n(63240, {	-- Shadowmaster Sydow
 					["coord"] = { 30.5, 78.4, 390 },
 					["g"] = {
+						crit(4, {	-- Shadowmaster Sydow
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
 				n(58817, {	-- Spirit of Lao-Fe
 					["coord"] = { 47.4, 65.6, 390 },
 					["g"] = {
+						crit(7, {	-- Spirit of Lao-Fe
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
 				n(50359, {	-- Urgolax
 					["coord"] = { 39.5, 25.1, 390 },
 					["g"] = {
+						crit(35, {	-- Urgolax
+							["achievementID"] = 7439,	-- Glorious!
+						}),
 						i(87638),	-- Cloak of Tranquil Clouds
 						i(87637),	-- Jade Harbinger's Cloak
 						i(87217),	-- Small Bag of Goods
@@ -238,21 +274,23 @@ _.Zones =
 						i(87636),	-- Cloak of the Forgotten Emperor
 						i(87640),	-- Softfoot's Drape
 						i(86575),	-- Chalice of Secrets
-						{	-- Glorious!
-							["achievementID"] = 7439,
-							["criteriaID"] = 35,
-						},
 					},
 				}),
 				n(58769, {	-- Vicejaw
 					["coord"] = { 37.4, 50.9, 390 },
 					["g"] = {
+						crit(2, {	-- Vicejaw
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
 				n(63977, {	-- Vyraxxis
 					["coord"] = { 7.92, 33.8, 390 },
 					["g"] = {
+						crit(16, {	-- Vyraxxis
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
@@ -262,12 +300,18 @@ _.Zones =
 						{ 40.2, 77.1, 390 },
 					},
 					["g"] = {
+						crit(11, {	-- Wulon
+							["achievementID"] = 7317,	-- One Many Army
+						}),
 						i(103624),	-- Treasures of the Vale
 					},
 				}),
 				n(50336, {	-- Yorik Sharpeye
 					["coord"] = { 88.0, 44.3, 390 },
 					["g"] = {
+						crit(56, {	-- Yorik Sharpeye
+							["achievementID"] = 7439,	-- Glorious!
+						}),
 						i(87638),	-- Cloak of Tranquil Clouds
 						i(87640),	-- Softfoot's Drape
 						i(87636),	-- Cloak of the Forgotten Emperor
@@ -275,10 +319,6 @@ _.Zones =
 						i(87217),	-- Small Bag of Goods
 						i(87639),	-- Tattered Guo-Lai Dynasty Cloak
 						i(86568),	-- Mr. Smite's Brass Compass
-						{	-- Glorious!
-							["achievementID"] = 7439,
-							["criteriaID"] = 56,
-						},
 					},
 				}),
 				--n(50843, { 		-- Portent	}),
