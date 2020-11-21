@@ -163,12 +163,24 @@ app.L = {
 		["World Quests"] = "WQ",
 		["WoW Anniversary"] = "Anniversary",
 	};
+
 	["CUSTOM_DIFFICULTIES"] = {
 		[-1] = "Raid Finder (5.4)",
 		[-2] = "Flexible (5.4)",
 		[-3] = "Normal (5.4)",
 		[-4] = "Heroic (5.4)",
-	},
+	};
+
+	-- Custom Icons for Factions (seems to be no automatic Faction-Icon associations in-game)
+	["FACTION_ID_ICONS"] = {
+		-- Examples --
+		-- [FACTION_ID] = "PATH//TO//ICON",	-- Faction Name
+		-- [FACTION_ID] = ICON_ID			-- Faction Name
+
+		[1168] = 461821,	-- Guild
+
+	};
+
 	["FILTER_ID_TYPES"] = {
 		-- "Armor Types"
 		[1] = INVTYPE_HOLDABLE, 								-- Held in Off-Hand
@@ -281,7 +293,7 @@ app.L = {
 		[200] = "Interface\\Icons\\inv_scroll_05",								-- Recipes
 		[999] = "Interface\\Icons\\INV_Holiday_Christmas_Present_01",			-- Event Item
 
-	},
+	};
 
 	-- These need to be localized manually.
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
@@ -973,6 +985,7 @@ app.L = {
 		[-101503] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101504] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 	};
+
 	["NPC_ID_NAMES"] = {
 
 -- Commonly used
@@ -1893,7 +1906,7 @@ app.L = {
 		[-10102] = select(1,GetCategoryInfo(15438)),	-- Shadowlands Raids
 		[-10103] = select(1,GetCategoryInfo(15440)),	-- The Maw and Torghast
 		[-10104] = select(1,GetCategoryInfo(15441)),	-- Covenant Sanctums
-	},
+	};
 
 	["OBJECT_ID_ICONS"] = {
 		[31] = "Interface\\Icons\\INV_Mount_AllianceLionG",

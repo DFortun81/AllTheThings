@@ -5785,6 +5785,7 @@ app.BaseFaction = {
 			return t.achievementID and GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
 			return t.achievementID and select(10, GetAchievementInfo(t.achievementID))
+				or L["FACTION_ID_ICONS"][t.factionID]
 				or t.isFriend and select(6, GetFriendshipReputation(t.factionID))
 				or "Interface\\Addons\\AllTheThings\\assets\\factions";
 		elseif key == "isFriend" then
