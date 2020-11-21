@@ -7887,7 +7887,7 @@ end)();
 		"Interface\\Addons\\AllTheThings\\assets\\WoD",	-- WoD
 		"Interface\\Addons\\AllTheThings\\assets\\leg",			-- Legion
 		"Interface\\Addons\\AllTheThings\\assets\\BfA",							-- Battle For Azeroth
-		"Interface\\Icons\\inv_torghast",							-- Shadowlands
+		"Interface\\Addons\\AllTheThings\\assets\\SL",							-- Shadowlands
 	};
 	local tierLevel = {
 		1, 	-- Classic
