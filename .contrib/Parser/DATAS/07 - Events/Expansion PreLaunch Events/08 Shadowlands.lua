@@ -173,6 +173,7 @@ _.WorldEvents =
 						["provider"] = { "n", 168123 },	-- Crusader Renn
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
+						["u"] = REMOVED_FROM_GAME,	-- no longer available during week 2 of the SL pre-patch
 					}),
 					-------------------------- Dailies --------------------------
 					q(59863, {	-- Combat Nullifier 07-X
@@ -237,7 +238,7 @@ _.WorldEvents =
 						["provider"] = { "n", 166383 },	-- Commander Gregor
 						["isBreadcrumb"] = true,
 						["maps"] = { 84 },	-- Stormwind
-						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
+						["sourceQuest"] = 60827,	-- Advancing the Effort
 						["lvl"] = { 50 },
 					}),
 					q(61112, {	-- A Hunger for Flesh (A)
@@ -254,6 +255,7 @@ _.WorldEvents =
 						["maps"] = { 85 },	-- Orgrimmar
 						["coord"] = { 52.9, 77.3, 85 },
 						["provider"] = { "n", 169878 },	-- Commander Throgg
+						["sourceQuest"] = 60827,	-- Advancing the Effort
 						["lvl"] = { 50 },
 					}),
 					q(61114, {	-- A Hunger for Flesh (H)
