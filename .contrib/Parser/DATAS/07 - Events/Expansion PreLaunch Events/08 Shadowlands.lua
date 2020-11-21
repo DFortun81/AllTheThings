@@ -385,6 +385,13 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["lvl"] = { 50 },
 					}),
+					q(59838, {	-- Scourge War Machines
+						["sourceQuests"] = { 60932 },	-- Only Shadows Remain
+						["provider"] = { "n", 170467 },	-- Crusader Renn
+						["coord"] = { 44.9, 44.7, 118 },
+						["maps"] = { 118 },	-- Icecrown
+						["lvl"] = { 50 },
+					}),
 					q(62484, {	-- Werk In Progress
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 35.3, 66.3, 118 },
