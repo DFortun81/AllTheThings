@@ -21,11 +21,15 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(QUESTS, {
-					q(41541, {	-- A Beastly Expedition
-						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
-						["classes"] = { HUNTER },
-					}),
-					q(41541),	-- A Beastly Expedition
+                    q(41541, {	-- A Beastly Expedition
+                        ["classes"] = { HUNTER },
+                        ["providers"] = {
+                            { "n", 102478 },	-- Emmarel Shadewarden
+                            { "n", 107317 },	-- Emmarel Shadewarden
+                            { "n", 107973 },	-- Emmarel Shadewarden
+                        },
+						["maps"] = { 627 },	-- Dalaran
+                    }),
 					q(43423),	-- A Hero's Weapon
 					q(43370),	-- A New Invention
 					q(40957),	-- A Strong Right Hand
@@ -82,6 +86,11 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 42399,  -- Ready to Work
 						["classes"] = { HUNTER },
 					}),
+                    q(42185, {	-- Never Hunt Alone
+                        ["sourceQuests"] = { 42158 },	-- The Creator's Workshop
+                        ["classes"] = { HUNTER },
+                        ["provider"] = { "n", 106558 },	-- Mimiron
+                    }),
 					q(40955),	-- Oath of Service
 					q(40953),	-- On Eagle's Wings
 					q(44366),	-- One Last Adventure
@@ -105,12 +114,23 @@ _.ExpansionFeatures =
 					q(45552, {	-- Soothing Wounds
 						["classes"] = { HUNTER },
 					}),
+                    q(41574, {	-- Stolen Thunder
+                        ["sourceQuests"] = { 41541 },	-- A Beastly Expedition
+                        ["classes"] = { HUNTER },
+                        ["provider"] = { "n", 104381 },	-- Grif Wildheart
+						["maps"] = { 627 },	-- Dalaran
+                    }),
 					q(40958),	-- Tactical Matters
 					q(45554, {	-- Taking Control
 						["classes"] = { HUNTER },
 					}),
 					q(42526),	-- Tech It Up A Notch
 					q(40959),	-- The Campaign Begins
+                    q(42158, {	-- The Creator's Workshop
+                        ["sourceQuests"] = { 41574 },	-- Stolen Thunder
+                        ["classes"] = { HUNTER },
+                        ["provider"] = { "n", 106558 },	-- Mimiron
+                    }),
 					q(45553, {	-- The Nighthuntress Beckons
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 117308 },	-- D'Bynn
