@@ -182,56 +182,56 @@ _.WorldEvents =
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 73.1, 35.6, 118 },
 						["provider"] = { "n", 173124 },	-- Binkie Brightgear
-						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					q(59783, {	-- Cultist Captors
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 66.0, 21.9, 118 },
 						["provider"] = { "n", 168880 },	-- Sentry Joren
-						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					q(62553, {	-- Delaying Their Efforts
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 21.9, 118 },
 						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
-						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					q(60841, {	-- Evacuation Effort
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 21.9, 118 },
 						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
-						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					q(62262, {	-- Fungal Feeding
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.6, 21.0, 118 },
 						["provider"] = { "n", 167572 },	-- Crystal Brightspark
-						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					q(59782, {	-- The Deathspeaker's Devout
 						["coord"] = { 66.0, 21.9, 118 },
 						["provider"] = { "n", 168880 },	-- Sentry Joren
 						["maps"] = { 118 },	-- Icecrown
-						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					q(59878, {	-- Too Many Whelps
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 71.0, 21.9, 118 },
 						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
-						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					q(59839, {	-- WARNING: This is Only a Test!
 						["maps"] = { 118 },	-- Icecrown
 						["coord"] = { 66.0, 22.4, 118 },
 						["provider"] = { "n", 172905 },	-- Fizzix Blastbolt
-						["sourceQuest"] = 60827,	-- Advancing the Effort
+						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					-------------------------- Week 2 --------------------------
@@ -242,6 +242,7 @@ _.WorldEvents =
 						["maps"] = { 84 },	-- Stormwind
 						["sourceQuest"] = 60827,	-- Advancing the Effort
 						["lvl"] = { 50 },
+						["description"] = "Only available if you've done \"Advancing the Effort\" in week 1."
 					}),
 					q(61112, {	-- A Hunger for Flesh (A)
 						["provider"] = { "i", 180712 },	-- Partially Digested Cloth
@@ -259,6 +260,7 @@ _.WorldEvents =
 						["provider"] = { "n", 169878 },	-- Commander Throgg
 						["sourceQuest"] = 60827,	-- Advancing the Effort
 						["lvl"] = { 50 },
+						["description"] = "Only available if you've done \"Advancing the Effort\" in week 1."
 					}),
 					q(61114, {	-- A Hunger for Flesh (H)
 						["provider"] = { "i", 180719 },	-- Partially Digested Leather
@@ -276,6 +278,7 @@ _.WorldEvents =
 						["sourceQuests"] = {
 							62162,	-- A Message from the Justicar (A)
 							62163,	-- A Message from the Justicar (H)
+							62157,	-- Scouting from a Safe Distance
 						},
 						["lvl"] = { 50 },
 					}),
