@@ -42,6 +42,12 @@ _.Zones =
 							["isDaily"] = true,
 							["coord"] = { 67.2, 55.9, 379 },
 						}),
+						q(30880, {	-- Round 1: The Streetfighter
+							["sourceQuests"] = { 31512, 31511 },	-- A Witness to History (A, H)
+							["provider"] = { "n", 60968 },	-- Xuen
+							["isDaily"] = true,
+							["coord"] = { 67.2, 55.9, 379 },
+						}),
 						q(30879, {	-- Round 1: Brewmaster Chani
 							["sourceQuests"] = { 31512, 31511 },	-- A Witness to History (A, H)
 							["provider"] = { "n", 60968 },	-- Xuen
@@ -54,11 +60,29 @@ _.Zones =
 							["isDaily"] = true,
 							["coord"] = { 70.3, 51.3, 379 },
 						}),
+						q(30882, {	-- Round 2: Kang Bramblestaff
+							["sourceQuests"] = { 30880 },	-- Round 1: The Streetfighter
+							["provider"] = { "n", 60968 },	-- Xuen
+							["isDaily"] = true,
+							["coord"] = { 70.3, 51.3, 379 },
+						}),
+						q(30885, {	-- Round 3: Master Boom Boom
+							["sourceQuests"] = { 30882 },	-- Round 2: Kang Bramblestaff
+							["provider"] = { "n", 60968 },	-- Xuen
+							["isDaily"] = true,
+							["coord"] = { 71.7, 45.0, 379 },
+						}),
 						q(30883, {	-- Round 3: The Wrestler
 							["sourceQuests"] = { 30881 },	-- Round 2: Clever Ashyo & Ken-Ken
 							["provider"] = { "n", 60968 },	-- Xuen
 							["isDaily"] = true,
 							["coord"] = { 71.7, 44.9, 379 },
+						}),
+						q(30902, {	-- Round 4: Master Windfur
+							["sourceQuests"] = { 30885 },	-- Round 3: Master Boom Boom
+							["provider"] = { "n", 60968 },	-- Xuen
+							["isDaily"] = true,
+							["coord"] = { 66.4, 46.3, 379 },
 						}),
 						q(30907, {	-- Round 4: The P.U.G.
 							["sourceQuests"] = { 30883 },	-- Round 3: The Wrestler

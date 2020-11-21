@@ -313,9 +313,13 @@ _.Zones =
 					["repeatable"] = true,
 				}),
 				q(30275, {	-- A Crocolisk Tale
-					["crs"] = { 58755 },	-- Manglemaw's Mother
-					["provider"] = { "i", 79238 },	-- Enormous Crocolisk Tail
 					["description"] = "Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",
+					["provider"] = { "i", 79238 },	-- Enormous Crocolisk Tail
+					["coord"] = { 57.7, 25.9, 376 },
+					["crs"] = {
+						58754,	-- Manglemaw
+						58755,	-- Manglemaw's Mother
+					},
 				}),
 				q(30402, {	-- A Dish for Chee Chee
 					["isDaily"] = true,
