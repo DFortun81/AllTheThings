@@ -297,6 +297,7 @@ app.L = {
 
 	-- These need to be localized manually.
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
+	-- https://www.wowhead.com/icons
 	["NPC_ID_ICONS"] = {
 
 		--[-] = "Interface\\Icons\\",														--
@@ -663,6 +664,10 @@ app.L = {
 		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
 		[-862] = "Interface\\Icons\\inv_heartofazeroth",									-- Heart of Azeroth
 		[-901] = "Interface\\Icons\\inv_misc_covenant_renown",								-- Covenant Callings
+		[-910] = 3257750,																	-- Covenant Callings (Nightfae)
+		[-911] = 3257748,																	-- Covenant Callings (Kyrian)
+		[-912] = 3257751,																	-- Covenant Callings (Venthyr)
+		[-913] = 3257749,																	-- Covenant Callings (Necrolord)
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1450,7 +1455,7 @@ app.L = {
 
 -- Shadowlands Header
 	--	[-900] = 																-- Covenant Sanctrum
-		[-901] = GetSpellInfo(339041),											-- Covenant Callings
+		[-901] = GetSpellInfo(339041),											-- Covenant Callings (General)
 		[-910] = GetSpellInfo(339041),											-- Covenant Callings (Nightfae)
 		[-911] = GetSpellInfo(339036),											-- Covenant Callings (Kyrian)
 		[-912] = GetSpellInfo(339037),											-- Covenant Callings (Venthyr)
