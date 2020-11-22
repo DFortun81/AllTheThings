@@ -896,6 +896,13 @@ _.Zones =
 					["model"] = 2929684,
 					["modelScale"] = 3,
 					["g"] = {
+						i(168946, {	-- Bundle of Recyclable Parts
+							["cost"] = { 
+								{ "i", 168217, 30 },	-- 30x Hardened Springs
+								{ "i", 168216, 10 },	-- 10x Tempered Plating
+								{ "i", 168215, 5 },	-- 5x Machined Gear Assembly
+							},
+						}),
 						q(55743, {	-- More Recycling
 							["coords"] = {
 								{ 58.8, 59.2, 1462 },
@@ -903,8 +910,9 @@ _.Zones =
 								{ 55.8, 62.7, 1462 },
 								{ 53.5, 61.5, 1462 },
 							},
+							["cost"] = { { "i", 168946, 1 }},	-- Bundle of Recyclable Parts
 							["isDaily"] = true,
-							["groups"] = {
+							["g"] = {
 								i(168264, {	-- Recycling Requisition(Green)
 									i(169167, {	-- Blueprint: Orange Spraybot
 										["questID"] = 55075,
@@ -1007,9 +1015,10 @@ _.Zones =
 								{ 55.8, 62.7, 1462 },
 								{ 53.5, 61.5, 1462 },
 							},
+							["cost"] = { { "i", 168946, 1 }},	-- Bundle of Recyclable Parts
 							["sourceQuest"] = 55743,	-- More Recycling
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(168264, {	-- Recycling Requisition(Green)
 									i(169167, {	-- Blueprint: Orange Spraybot
 										["questID"] = 55075,
