@@ -454,13 +454,6 @@ _.Instances = { tier(7, {	-- Legion
 						crit(4),	-- Drakes Uncleansed
 					}),
 					ach(10819, crit(3)),	-- Tormented Guardians / Cenarius
-					i(141303, {	-- Essence of Clarity (Normal)
-						["altQuests"] = {
-							44284,	-- The Emerald Nightmare: Piercing the Veil (Heroic)
-							44285,	-- The Emerald Nightmare: Piercing the Veil (Mythic)
-						},
-						["questID"] = 44283,	-- The Emerald Nightmare: Piercing the Veil
-					}),
 					i(127934),	-- Recipe: Spirit Cauldron [Rank 2]
 					i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1]
 					i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2]
@@ -696,10 +689,6 @@ _.Instances = { tier(7, {	-- Legion
 						crit(4),	-- Drakes Uncleansed
 					}),
 					ach(10819, crit(3)),	-- Tormented Guardians / Cenarius
-					i(141304, {	-- Essence of Clarity (Heroic)
-						["altQuests"] = { 44285 },	-- The Emerald Nightmare: Piercing the Veil (Mythic)
-						["questID"] = 44284,	-- The Emerald Nightmare: Piercing the Veil (Heroic)
-					}),
 					i(127934),	-- Recipe: Spirit Cauldron [Rank 2]
 					i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1]
 					i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2]
@@ -942,9 +931,6 @@ _.Instances = { tier(7, {	-- Legion
 					}),
 					ach(10826),	-- Mythic: Cenarius
 					ach(10819, crit(3)),	-- Tormented Guardians / Cenarius
-					i(141305, {	-- Essence of Clarity (Mythic)
-						["questID"] = 44285,	-- The Emerald Nightmare: Piercing the Veil (Mythic)
-					}),
 					i(127934),	-- Recipe: Spirit Cauldron [Rank 2]
 					i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1]
 					i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2]

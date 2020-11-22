@@ -344,7 +344,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							39505,	-- The Fel Spire (Mythic)
 						},
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["cost"] = { { "i", 128419, 4 } },	-- 4x Fel Essence
 					}),
 					q(39499, {	-- Well of Souls
 						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
@@ -353,7 +352,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							39501,	-- Well of Souls (Mythic)
 						},
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["cost"] = { { "i", 128416, 4 } },	-- 4x Soul Remnant
 					}),
 				}),
 				n(ZONEDROPS, {
@@ -525,14 +523,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124267),	-- Oathclaw Leggings (Druid)
 						i(124165),	-- Pantaloons of the Arcanic Conclave (Mage)
 					}),
-					i(128416),	-- Soul Remnant
-					-- Causes issues with the parser. The Quest describes the source of the items (kill Gorefiend)
-					--[[["questID"] = 39499,	-- Well of Souls
-						["altQuests"] = {
-							39500,	-- Well of Souls [Heroic]
-							39501,	-- Well of Souls [Mythic]
-						},
-					--]]
 					i(124380),	-- Spur of the Great Devourer
 					i(124359),	-- Voracious Souleater
 					i(124205),	-- Gibbering Madness
@@ -693,14 +683,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124246),	-- Oathclaw Vestment (Druid)
 						i(124171),	-- Robe of the Arcanic Conclave (Mage)
 					}),
-					i(128419),	-- Fel Essence
-					-- Causes issues with the parser. The Quest describes the source of the items (kill Mannoroth)
-					--[[	["questID"] = 39502,	-- The Fel Spire
-						["altQuests"] = {
-							39504,	-- The Fel Spire [Heroic]
-							39505,	-- The Fel Spire [Mythic]
-						},
-					--]]
 					i(124378),	-- Xu'tenash, Glaive of Ruin
 					i(124367),	-- Fang of the Pit
 					i(124361),	-- Cursed Demonbone Longbow
@@ -758,13 +740,11 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["sourceQuests"] = { 39500 },	-- Well of Souls (Heroic)
 						["altQuests"] = { 39505 },	-- The Fel Spire (Mythic)
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["cost"] = { { "i", 128420, 4 } },	-- 4x Fel Essence
 					}),
 					q(39500, {	-- Well of Souls (Heroic)
 						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
 						["altQuests"] = { 39501 },	-- Well of Souls (Mythic)
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["cost"] = { { "i", 128417, 4 } },	-- 4x Soul Remnant
 					}),
 				}),
 				n(ZONEDROPS, {
@@ -936,11 +916,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124267),	-- Oathclaw Leggings (Druid)
 						i(124165),	-- Pantaloons of the Arcanic Conclave (Mage)
 					}),
-					i(128417),	-- Soul Remnant [Heroic]
-					-- Causes issues with the parser. The Quest describes the source of the items (kill Gorefiend)
-					--[[	["questID"] = 39500,	-- Well of Souls [Heroic]
-						["altQuests"] = { 39501 },	-- Well of Souls [Mythic]
-					--]]
 					i(124380),	-- Spur of the Great Devourer
 					i(124359),	-- Voracious Souleater
 					i(124205),	-- Gibbering Madness
@@ -1101,11 +1076,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124246),	-- Oathclaw Vestment (Druid)
 						i(124171),	-- Robe of the Arcanic Conclave (Mage)
 					}),
-					i(128420),	-- Fel Essence [Heroic]
-					-- Causes issues with the parser. The Quest describes the source of the items (kill Gorefiend)
-					--[[	["questID"] = 39504,	-- The Fel Spire [Heroic]
-						["altQuests"] = { 39505 },	-- The Fel Spire [Mythic]
-					--]]
 					i(124378),	-- Xu'tenash, Glaive of Ruin
 					i(124367),	-- Fang of the Pit
 					i(124361),	-- Cursed Demonbone Longbow
@@ -1167,12 +1137,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.\n",
 						["sourceQuests"] = { 39501 },	-- Well of Souls (Mythic)
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["cost"] = { { "i", 128421, 4 } },	-- 4x Fel Essence
 					}),
 					q(39501, {	-- Well of Souls (Mythic)
 						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Mythic difficulty each week.\n",
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["cost"] = { { "i", 128418, 4 } },	-- 4x Soul Remnant
 					}),
 				}),
 				n(ZONEDROPS, {
@@ -1344,10 +1312,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124267),	-- Oathclaw Leggings (Druid)
 						i(124165),	-- Pantaloons of the Arcanic Conclave (Mage)
 					}),
-					{
-						["itemID"] = 128418,	-- Soul Remnant [Mythic]
-						["questID"] = 39501,	-- Well of Souls [Mythic]
-					},
 					i(124380),	-- Spur of the Great Devourer
 					i(124359),	-- Voracious Souleater
 					i(124205),	-- Gibbering Madness
@@ -1508,10 +1472,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124246),	-- Oathclaw Vestment (Druid)
 						i(124171),	-- Robe of the Arcanic Conclave (Mage)
 					}),
-					{	-- Fel Essence
-						["itemID"] = 128421,	-- Fel Essence [Mythic]
-						["questID"] = 39505,	-- The Fel Spire [Mythic]
-					},
 					i(124378),	-- Xu'tenash, Glaive of Ruin
 					i(124367),	-- Fang of the Pit
 					i(124361),	-- Cursed Demonbone Longbow
