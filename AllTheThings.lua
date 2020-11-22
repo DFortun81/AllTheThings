@@ -4679,12 +4679,22 @@ end
 -- end
 
 -- ARP begin
+
+npcQuestsCache = {}
+
 function app.GetQuestsForNPC(self, npc_id)
 	--local found = false
+	local group = {}
 
+	if (npcQuestsCache[npc_id]) then
+		group = npcQuestsCache[npc_id]
+	else
 	--print(tostring(npc_id))
-	local group, _, _ = SearchForField("creatureID", npc_id);
-	if not group then return false; end
+		group, _, _ = SearchForField("creatureID", npc_id);
+		if not group then return false; end
+		npcQuestsCache[npc_id] = group
+	end
+
 	local regroup = {};
 	for i,j in ipairs(group) do
 		if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
@@ -7652,6 +7662,7 @@ local function RefreshQuestCompletionState(questID)
 		app.QuestCompletionHelper(tonumber(questID));
 	end
 	wipe(DirtyQuests);
+	wipe(npcQuestsCache) -- ARP
 end
 
 -- Recipe Lib
