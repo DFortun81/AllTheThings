@@ -128,6 +128,7 @@ i(146977);	-- Legendary Tanner's Kit
 i(147209);	-- Legendary Wardenscale Supplies
 i(168280);	-- Lost Scale of the Scarlet Broodmother
 i(147582);	-- Mark of the Sentinax
+i(79269);	-- Marsh Lily
 i(146680);	-- Melandrus' Star-Touched Bracers
 i(169238);	-- Modified Radio Receiver
 i(169222);	-- Murloc Treasure

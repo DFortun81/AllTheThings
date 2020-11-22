@@ -1038,11 +1038,6 @@ _.Zones =
 						i(88375),  -- Turnip Punching Bag
 					},
 				}),
-				q(30257, {	-- Learn and Grow V: Halfhill Market
-					["sourceQuests"] = { 30256 },	-- Learn and Grow IV: Harvesting
-					["coord"] = { 52.2, 48.8, 376 },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
 				q(31945, {	-- Learn and Grow VI: Gina's Vote
 					["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
 					["coord"] = { 53.2, 51.8, 376 },
