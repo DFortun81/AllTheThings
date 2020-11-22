@@ -153,7 +153,7 @@ _.Zones =
 					["coord"] = { 62.25, 53.97, 1565 },
 					--["questID"] = ,
 					["isDaily"] = true,
-					["description"] = "Requires to be a Night Fay Covenant & the item Dream Catcher.",
+					["description"] = "Night Fay Covenant only. Requires Dream Catcher.",
 					["g"] = {
 						i(180728),				-- Swift Gloomhoof
 						ach(14309, crit(23)),	-- Adventurer of Ardenweald / Night Mare

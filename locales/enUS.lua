@@ -670,6 +670,8 @@ app.L = {
 		[-912] = 3257751,																	-- Covenant Callings (Venthyr)
 		[-913] = 3257749,																	-- Covenant Callings (Necrolord)
 		
+		[-930] = 136059,																	-- Queen's Conservatory
+		
 		[-950] = 3565720,																	-- Mirror Network
 		[-951] = 3528313,																	-- Tier 1 Mirror Mirror
 		[-952] = 3528312,																	-- Tier 2 Looking Glass
@@ -1465,8 +1467,10 @@ app.L = {
 		[-911] = GetSpellInfo(339036),											-- Covenant Callings (Kyrian)
 		[-912] = GetSpellInfo(339037),											-- Covenant Callings (Venthyr)
 		[-913] = GetSpellInfo(339038),											-- Covenant Callings (Necrolord)
+		[-914] = "Adventures",													-- Adventures
 		
-		[-939] = "Adventures",													-- Temporary header for Adventures
+-- SL Ardenweald/Nightfae
+		[-930] = "Queen's Conservatory",										-- Queen's Conservatory
 		
 -- SL Bastion/Kyrien
 		[-940] = "Ascended Council",											-- Ascended Counil
@@ -1476,6 +1480,7 @@ app.L = {
 		[-951] = "Tier 1 Mirror Mirror",										-- Tier 1 Mirror Mirror
 		[-952] = "Tier 2 Looking Glass",										-- Tier 2 Looking Glass"
 		[-953] = "Tier 3 Mirror's Edge",										-- Tier 3 Mirror's Edge
+		
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
 -- Weapon Sets
