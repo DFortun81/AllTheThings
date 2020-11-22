@@ -1,4 +1,3 @@
--- Edited October 22, 2018.  Should be almost accurate? -- Lucetia
 profession(COOKING, {
 	filter(200, {	-- Recipes
 		{	-- Old World Recipes
@@ -26,6 +25,15 @@ profession(COOKING, {
 						{	-- Lean Venison
 							["recipeID"] = 6419,	-- Lean Venison
 							["u"] = REMOVED_FROM_GAME,
+						},
+						{	-- Extra Fancy Darkmoon Feast (not in automation yet 9.0.2)
+							["recipeID"] = 347509,
+						},
+						{	-- Extra Lemony Herb Filet (not in automation yet 9.0.2)
+							["recipeID"] = 347457,
+						},
+						{	-- Extra Sugary Fish Feast (not in automation yet 9.0.2)
+							["recipeID"] = 347176,
 						},
 					}
 				},
