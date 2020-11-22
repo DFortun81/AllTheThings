@@ -709,3 +709,8 @@ t(183716);	-- Venthyr Sinstone
 t(184218);	-- Vulgarity Arbiter
 t(182695);	-- Weathered Purple Parasol
 t(172924);	-- Wormhole Generator: Shadowlands
+
+-----------------
+-- PATCH 9.0.2 --
+-----------------
+t(184449);	-- Jiggles's Favorite Toy

@@ -13,15 +13,16 @@ _.Toys =
 		i(184223),		-- Helm of the Dominated
 		i(87528),		-- Honorary Brewmaster Keg
 		i(134026),		-- Honorable Pennant
+		i(184449),		-- Jiggles's Favorite Toy
 		i(163697),		-- Laser Pointer
 		i(184508),		-- Mawsworn Pet Leash
 		i(174871),		-- Mayhem Mind Melder
 		un(REMOVED_FROM_GAME, i(89205)),	-- Mini Mana Bomb (Horde) No Longer Available
-		i(143660), 		-- Mrgrglhjorn
+		i(143660),		-- Mrgrglhjorn
 		i(86596),		-- Nat's Fishing Chair
-		i(122700), 		-- Portable Audiophone
+		i(122700),		-- Portable Audiophone
 		i(134031),		-- Prestigious Pennant
-		i(119215), 		-- Robo-Gnomebulator
+		i(119215),		-- Robo-Gnomebulator
 		i(92738),		-- Safari Hat
 		i(98132),		-- Shado-Pan Geyser Gun
 		i(174830),		-- Shadowy Disguise
