@@ -14,8 +14,6 @@ _.Zones =
 					["repeatable"] = true,
 				}),
 				]]--			|cffcc33ffThe demons are taking over this island, you may want to leave.|r
-				-- Listed under Queen's Conservatory
-				-- o(350978),	-- Queen's Conservatory Cache
 				o(356820, {	-- Large Lunarlight Pod
 					["coord"] = { 65.3, 23.5, 1565 },
 					["questID"] = 60717,

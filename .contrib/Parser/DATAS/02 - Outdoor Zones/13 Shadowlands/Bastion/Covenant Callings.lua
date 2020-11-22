@@ -8,7 +8,7 @@ _.Zones =
 		m(1533, {	-- Bastion
 			n(-901, {	-- Covenant Callings
 				q(60391, {	-- Aiding Ardenweald
-						["provider"] = { "n", 160387 },	-- Hermestes
+					["provider"] = { "n", 160387 },	-- Hermestes
 					["coord"] = { 64.6, 16.4, 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
@@ -30,7 +30,6 @@ _.Zones =
 					["coord"] = { 64.6, 16.4, 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
-					
 				}),
 				q(60400, {	-- Aiding Revendreth
 					["provider"] = { "n", 160387 },	-- Hermestes
@@ -60,8 +59,8 @@ _.Zones =
 					},
 				}),
 				q(60424, {	-- A Call to Ardenweald
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1533 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -69,8 +68,8 @@ _.Zones =
 					},
 				}),
 				q(60434, {	-- A Call to Revendreth
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1533 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -78,8 +77,8 @@ _.Zones =
 					},
 				}),
 				q(60430, {	-- A Call to Maldraxxus
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1533 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -87,8 +86,8 @@ _.Zones =
 					},
 				}),
 				q(60380, {	-- A Source of Sorrowvine
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1533 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -96,8 +95,8 @@ _.Zones =
 					},
 				}),
 				q(60372, {	-- A Wealth of Wealdwood
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1533 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -105,8 +104,8 @@ _.Zones =
 					},
 				}),
 				q(60377, {	-- Bonemetal Bonanza
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1533 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -150,8 +149,8 @@ _.Zones =
 					},
 				}),
 				q(60358, {	-- Gildenite Grab
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1533 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -159,8 +158,8 @@ _.Zones =
 					},
 				}),
 				q(60415, {	-- Rare Resources
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1533 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -178,7 +177,7 @@ _.Zones =
 				}),
 				q(60404, {	-- Training Our Forces
 					["provider"] = { "n", 168517 },	-- Kalisthene
-				--	["coord"] = { , 1533 },
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -187,7 +186,7 @@ _.Zones =
 				}),
 				q(60403, {	-- Training in Ardenweald
 					["provider"] = { "n", 168517 },	-- Kalisthene
-				--	["coord"] = { , 1533 },
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -196,7 +195,7 @@ _.Zones =
 				}),
 				q(60407, {	-- Training in Maldraxxus
 					["provider"] = { "n", 168517 },	-- Kalisthene
-				--	["coord"] = { , 1533 },
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -205,7 +204,7 @@ _.Zones =
 				}),
 				q(60412, {	-- Training in Revendreth
 					["provider"] = { "n", 168517 },	-- Kalisthene
-				--	["coord"] = { , 1533 },
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -213,8 +212,8 @@ _.Zones =
 					},
 				}),
 				q(60425, {	-- Troubles at Home
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1533 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {

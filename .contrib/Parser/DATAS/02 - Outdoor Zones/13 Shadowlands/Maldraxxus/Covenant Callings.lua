@@ -45,7 +45,7 @@ _.Zones =
 				}),
 				q(60464, {	-- Anima Appeal
 					["provider"] = { "n", 167205 },	-- Yondare Hex
-				--	["coord"] = { , 1536 },
+					--["coord"] = { , 1536 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -54,7 +54,7 @@ _.Zones =
 				}),
 				q(60459, {	-- Anima Salvage
 					["provider"] = { "n", 167207 },	-- Sabbath Nightshade
-				--	["coord"] = { , 1536 },
+					--["coord"] = { , 1536 },
 					["isWeekly"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -62,8 +62,8 @@ _.Zones =
 					},
 				}),
 				q(60423, {	-- A Call to Ardenweald
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1533 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -71,8 +71,8 @@ _.Zones =
 					},
 				}),
 				q(60426, {	-- A Call to Bastion
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1536 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1536 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -80,8 +80,8 @@ _.Zones =
 					},
 				}),
 				q(60433, {	-- A Call to Revendreth
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1536 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1536 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -89,8 +89,8 @@ _.Zones =
 					},
 				}),
 				q(60379, {	-- A Source of Sorrowvine
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1536 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1536 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -98,8 +98,8 @@ _.Zones =
 					},
 				}),
 				q(60371, {	-- A Wealth of Wealdwood
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1536 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1536 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -107,8 +107,8 @@ _.Zones =
 					},
 				}),
 				q(60376, {	-- Bonemetal Bonanza
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1536 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1536 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -117,7 +117,7 @@ _.Zones =
 				}),
 				q(60440, {	-- Challenges in Ardenweald
 					["provider"] = { "n", 167208 },	-- Grandmaster Vole
-				--	["coord"] = { , 1533 },
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -126,7 +126,7 @@ _.Zones =
 				}),
 				q(60443, {	-- Challenges in Bastion
 					["provider"] = { "n", 167208 },	-- Grandmaster Vole
-				--	["coord"] = { , 1533 },
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -135,7 +135,7 @@ _.Zones =
 				}),
 				q(60445, {	-- Challenges in Maldraxxus
 					["provider"] = { "n", 167208 },	-- Grandmaster Vole
-				--	["coord"] = { , 1533 },
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -144,7 +144,7 @@ _.Zones =
 				}),
 				q(60449, {	-- Challenges in Revendreth
 					["provider"] = { "n", 167208 },	-- Grandmaster Vole
-				--	["coord"] = { , 1533 },
+					--["coord"] = { , 1533 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -152,8 +152,8 @@ _.Zones =
 					},
 				}),
 				q(60363, {	-- Gildenite Grab
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1536 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1536 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -161,8 +161,8 @@ _.Zones =
 					},
 				}),
 				q(60416, {	-- Rare Resources
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , 1536 },
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , 1536 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -171,7 +171,7 @@ _.Zones =
 				}),
 				q(60455, {	-- Storm the Maw
 					["provider"] = { "n", 167207 },	-- Sabbath Nightshade
-				--	["coord"] = { , 1536 },
+					--["coord"] = { , 1536 },
 					["isWeekly"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
@@ -215,7 +215,7 @@ _.Zones =
 					},
 				}),
 				q(60429, {	-- Troubles at Home
-				--	["provider"] = { "n",  },	-- 
+				--	["provider"] = { "n",  },	--
 				--	["coord"] = { , 1536 },
 					["repeatable"] = true,
 					["lvl"] = { 60 },
