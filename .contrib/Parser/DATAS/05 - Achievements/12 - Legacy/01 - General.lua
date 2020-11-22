@@ -30,18 +30,6 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, h(ach(9172))),	-- You Are Not Your $#*@! Legplates (Season 2)
 				un(REMOVED_FROM_GAME, h(ach(7948))),	-- The First Rule of Brawler's Guild (Season 1 or 2)
 			}))),
-			un(REMOVED_FROM_GAME, ach(10765, {		-- Brokenly Epic (ilvl 840)
-				un(REMOVED_FROM_GAME, ach(9708)),		-- Savagely Epic (ilvl 640)
-				un(REMOVED_FROM_GAME, ach(6349)),		-- Mystically Epic (ilvl 476)
-				un(REMOVED_FROM_GAME, ach(5372)),		-- Cataclysmically Epic (ilvl 359)
-				un(REMOVED_FROM_GAME, ach(556)),		-- Epic (ilvl 213)
-			})),
-			un(REMOVED_FROM_GAME, ach(10764, {		-- Brokenly Superior (ilvl 790)
-				un(REMOVED_FROM_GAME, ach(9707)),		-- Savagely Superior (ilvl 608)
-				un(REMOVED_FROM_GAME, ach(6348)),		-- Mystically Superior (ilvl 450)
-				un(REMOVED_FROM_GAME, ach(5373)),		-- Cataclysmically Superior (ilvl 333)
-				un(REMOVED_FROM_GAME, ach(557)),		-- Superior (ilvl 187)
-			})),
 			un(REMOVED_FROM_GAME, ach(9640)),		-- Chapter I: Call of the Archmage
 			un(REMOVED_FROM_GAME, ach(7533)),		-- Chapter I: Trial of the Black Prince
 			un(REMOVED_FROM_GAME, ach(9641)),		-- Chapter II: Gul'dan Strikes Back
@@ -99,13 +87,10 @@ _.Achievements =
 				crit(12),				-- The Blind Hero
 				un(REMOVED_FROM_GAME, h(ach(8342))),	-- Collect Your Deck (Season 2)
 			})),
-			un(REMOVED_FROM_GAME, ach(16)),		-- Did Somebody Order a Knuckle Sandwich?
 			un(REMOVED_FROM_GAME, ach(2357, {		-- Dreadsteed of Xoroth
 				["classes"] = { WARLOCK },
 			})),
-			un(REMOVED_FROM_GAME, ach(2716)),		-- Dual Talent Specialization
 			un(REMOVED_FROM_GAME, ach(7315)),		-- Eternally in the Vale
-			un(REMOVED_FROM_GAME, ach(558)),		-- Greedy
 			un(REMOVED_FROM_GAME, ach(7945)),		-- Haters Gonna Hate (Season 2) **Can't find any commentary on whether this is still available in Legion season or not.**
 			un(REMOVED_FROM_GAME, a(ach(8335))),	-- Having a Brawl (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
 			un(REMOVED_FROM_GAME, h(ach(8337))),	-- Having a Brawl (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
@@ -136,8 +121,6 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, ach(11564)),		-- The Second Rule of Brawler's Guild(Legion)
 				un(REMOVED_FROM_GAME, ach(11561)),		-- You Are Not Your $#*@! Legplates(Legion)
 			}))),
-			un(REMOVED_FROM_GAME, ach(705)),		-- Master of Arms
-			un(REMOVED_FROM_GAME, ach(559)),		-- Needy
 			un(REMOVED_FROM_GAME, a(ach(7946))),	-- Now You're Just Showing Off (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
 			un(REMOVED_FROM_GAME, h(ach(8022))),	-- Now You're Just Showing Off (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
 			un(REMOVED_FROM_GAME, a(ach(9171))),	-- Now You're Just Showing Off (Season 2) (Alliance) **Comments on wowhead indicate this might still available in Legion, this needs to be tested.**
