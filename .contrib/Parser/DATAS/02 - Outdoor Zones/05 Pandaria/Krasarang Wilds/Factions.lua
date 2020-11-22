@@ -1583,6 +1583,11 @@ _.Zones =
 								["isDaily"] = true,
 								["coord"] = { 31.8, 61.5, 418 },
 							}),
+							q(30731, {	-- Kuo-Na Quillpaw
+								["provider"] = { "n", 60506 },	-- Thelonius
+								["isDaily"] = true,
+								["coord"] = { 31.8, 61.4, 418 },
+							}),
 							q(30726, {	-- Minh Do-Tan
 								["provider"] = { "n", 60506 },	-- Thelonius
 								["isDaily"] = true,

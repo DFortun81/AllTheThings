@@ -1025,10 +1025,6 @@ _.Zones =
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
 				}),
-				q(30731, {	-- Kuo-Na Quillpaw
-					["provider"] = { "n", 60506 },	-- Thelonius
-					["isDaily"] = true,
-				}),
 				q(30735, {	-- Mindel Sunspeaker
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
