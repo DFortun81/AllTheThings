@@ -664,11 +664,7 @@ app.L = {
 		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
 		[-862] = "Interface\\Icons\\inv_heartofazeroth",									-- Heart of Azeroth
 		[-900] = 3675495,																	-- Covenant Sanctum
-		[-901] = "Interface\\Icons\\inv_misc_covenant_renown",								-- Covenant Callings
-		[-910] = 3257750,																	-- Covenant Callings (Night Fae)
-		[-911] = 3257748,																	-- Covenant Callings (Kyrian)
-		[-912] = 3257751,																	-- Covenant Callings (Venthyr)
-		[-913] = 3257749,																	-- Covenant Callings (Necrolord)
+		[-901] = 3726261,																	-- Covenant Callings
 		
 		[-930] = 136059,																	-- Queen's Conservatory
 		[-931] = 636334,																	-- Lesser Spirit
@@ -1464,12 +1460,8 @@ app.L = {
 
 -- Shadowlands Header
 		[-900] = "Covenant Sanctum",											-- Covenant Sanctum
-		[-901] = GetSpellInfo(339041),											-- Covenant Callings (General)
+		[-901] = GetSpellInfo(339041),											-- Covenant Callings
 --		[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown (NYI)
-		[-910] = GetSpellInfo(339041),											-- Covenant Callings (Night Fae)
-		[-911] = GetSpellInfo(339036),											-- Covenant Callings (Kyrian)
-		[-912] = GetSpellInfo(339037),											-- Covenant Callings (Venthyr)
-		[-913] = GetSpellInfo(339038),											-- Covenant Callings (Necrolord)
 		[-914] = "Adventures",													-- Adventures
 		
 -- SL Ardenweald/Nightfae
