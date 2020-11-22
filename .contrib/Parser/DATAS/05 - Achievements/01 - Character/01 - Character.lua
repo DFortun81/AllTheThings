@@ -11,7 +11,7 @@ _.Achievements =
 			ach(890),		-- Into The Wild Blue Yonder (Expert)
 		}),
 		ach(7380),		-- Double Agent
-		ach(12547, {	-- Epic (ilvl 340)
+		ach(14797, {	-- Epic (ilvl 183)
 			crit(1),		-- Head
 			crit(2),		-- Neck
 			crit(3),		-- Shoulder
@@ -27,7 +27,7 @@ _.Achievements =
 			crit(13),		-- Second Trinket
 			crit(14),		-- Cloak
 			crit(15),		-- Weapon
-			ach(12546, {	-- Superior (ilvl 310)
+			ach(14796, {	-- Superior (ilvl 158)
 				crit(1),		-- Head
 				crit(2),		-- Neck
 				crit(3),		-- Shoulder
@@ -67,6 +67,5 @@ _.Achievements =
 		}),
 		ach(546),		-- Safe Deposit
 		ach(545),		-- Shave and a Haircut
-		ach(14796),		-- Superior
 	}),
 };
