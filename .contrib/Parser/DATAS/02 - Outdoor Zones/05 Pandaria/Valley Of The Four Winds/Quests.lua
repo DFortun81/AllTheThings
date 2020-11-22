@@ -46,9 +46,10 @@ _.Zones =
 							["provider"] = { "n", 65528 },	-- Nan Thunderfoot
 						}),
 						q(30332, {	-- Fatty Goatsteak
+							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
+							["provider"] = { "n", 58712 },	-- Kol Ironpaw
 							["isDaily"] = true,
 							["coord"] = { 53.0, 51.3, 376 },
-							["provider"] = { "n", 58712 },	-- Kol Ironpaw
 						}),
 						q(31480, {	-- Have a Drink
 							["sourceQuests"] = { 31479 },	-- Way of the Brew
@@ -345,11 +346,6 @@ _.Zones =
 					},
 				}),
 				q(30471, {	-- A Gift For Chee Chee
-					["isDaily"] = true,
-					["coord"] = { 52.7, 50.4, 376 },
-					["provider"] = { "n", 64464 },	-- Andi
-				}),
-				q(30474, {	-- A Gift For Ella
 					["isDaily"] = true,
 					["coord"] = { 52.7, 50.4, 376 },
 					["provider"] = { "n", 64464 },	-- Andi
@@ -880,15 +876,6 @@ _.Zones =
 					["coord"] = { 75.3, 35.5, 376 },
 					["provider"] = { "n", 56133 },	-- Chen Stormsout
 				}),
-				q(30524, {	-- Growing the Farm II: Knock on Wood
-					["sourceQuests"] = { 30523 },	-- Growing the Farm II: The Broken Wagon
-					["provider"] = { "n", 58705 },	-- Fish Fellreed
-				}),
-				q(30523, {	-- Growing the Farm II: The Broken Wagon
-					["description"] = "Must be Revered with The Tillers to start this quest.",
-					["coord"] = { 52.2, 48.8, 376 },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
 				q(30529, {	-- Growing the Farm III: The Mossy Boulder
 					["description"] = "Must be Exalted with The Tillers with all Tillers votes collected to start this quest.",
 					["coord"] = { 52.2, 48.8, 376 },
@@ -1095,21 +1082,6 @@ _.Zones =
 						i(81785),	-- Thunderfoot Heavy Warboots
 						i(81786),	-- Sunsong Armored Warboots
 					},
-				}),
-				q(30258, {	-- Mung-Mung's Vote I: A Hozen's Problem
-					["sourceQuests"] = { 31945 },	-- Learn and Grow VI: Gina's Vote
-					["coord"] = { 52.2, 48.8, 376 },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
-				q(30259, {	-- Mung-Mung's Vote II: Rotten to the Core
-					["sourceQuests"] = { 30258 },	-- Mung-Mung's Vote I: A Hozen's Problem
-					["coord"] = { 44.2, 34.2, 376 },
-					["provider"] = { "n", 57401 },	-- Mung-Mung
-				}),
-				q(31946, {	-- Mung-Mung's Vote III: The Great Carrot Caper
-					["sourceQuests"] = { 30258 },	-- Mung-Mung's Vote II: Rotten to the Core
-					["coord"] = { 44.2, 34.2, 376 },
-					["provider"] = { "n", 57401 },	-- Mung-Mung
 				}),
 				q(30181, {	-- Mushan Mastery
 					["coord"] = { 16.1, 82.6, 376 },
@@ -1454,11 +1426,6 @@ _.Zones =
 					["provider"] = { "i", 89812 },	-- "Jinyu Princess" Irrigation System
 					["coord"] = { 53.2, 51.8, 376 },
 				}),
-				q(30336, {	-- The Kunzen Hunter-Chief
-					["isDaily"] = true,
-					["coord"] = { 52.2, 48.8, 376 },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
 				q(30326, {	-- The Kunzen Legend-Chief
 					["isDaily"] = true,
 					["coord"] = { 52.8, 51.8, 376 },
@@ -1566,11 +1533,6 @@ _.Zones =
 					["sourceQuests"] = { 29944 },	-- Leaders Among Breeders
 					["coord"] = { 68.9, 43.2, 376 },
 					["provider"] = { "n", 56133 },	-- Chen Stormstout
-				}),
-				q(31675, {	-- The White Turnip Treatment
-					["isDaily"] = true,
-					["coord"] = { 52.2, 48.8, 376 },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
 				}),
 				q(30323, {	-- They Don't Even Wear Them
 					["isDaily"] = true,
@@ -1683,11 +1645,6 @@ _.Zones =
 					["description"] = "Only available as part of the \"Hop Hunting\" quest.",
 					["coord"] = { 38.6, 51.6, 376 },
 					["provider"] = { "n", 57385 },	-- Gai Lan
-				}),
-				q(30321, {	-- Weed War II
-					["isDaily"] = true,
-					["coord"] = { 53.6, 52.6, 376 },
-					["provider"] = { "n", 58710 },	-- Jogu the Drunk
 				}),
 				q(30072, {	-- Where Silk Comes From
 					["sourceQuests"] = { 32035 },	-- Got Silk?
@@ -1822,10 +1779,6 @@ _.Zones =
 					["g"] = {
 						i(88377),	-- Turnip Paint "Gun"
 					},
-				}),
-				q(30327, {	-- You Have to Burn the Ropes
-					["isDaily"] = true,
-					["provider"] = { "n", 58647 },	-- Ella
 				}),
 			}),
 		}),

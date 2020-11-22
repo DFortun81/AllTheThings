@@ -995,22 +995,8 @@ _.Zones =
 						}),
 					},
 				}),
-				i(91821, {
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						q(32162, {	-- Beastmaster's Hunt: The Tiger
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
 				q(32183, {	-- Beastmaster's Quarry: The Crab
 					["provider"] = { "n", 67508 },	-- Colossal Viseclaw
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32182, {	-- Beastmaster's Quarry: The Tiger
-					["provider"] = { "n", 67498 },	-- Krasari Elder
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
@@ -1025,10 +1011,6 @@ _.Zones =
 				q(30732, {	-- Ellia Ravenmane: Revenge
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,
-				}),
-				q(32168, {	-- End of an Elder
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,	-- where is this from?
 				}),
 				q(30737, {	-- Fat Long-Fat: Rematch
 					["provider"] = { "n", 60506 },	-- Thelonius

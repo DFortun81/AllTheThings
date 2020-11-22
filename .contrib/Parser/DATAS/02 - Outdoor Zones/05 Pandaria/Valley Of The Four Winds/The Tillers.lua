@@ -66,18 +66,35 @@ _.Zones =
 							["provider"] = { "n", 58761 },	-- Tina Mudclaw
 							["cost"] = { "i", 79265, 1 },	-- Blue Feather
 						}),
+						q(30474, {	-- A Gift For Ella
+							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
+							["provider"] = { "n", 64464 },	-- Andi
+							["isDaily"] = true,
+							["coord"] = { 52.7, 50.4, 376 },
+						}),
 						q(30252, {	-- A Helping Hand
 							["provider"] = { "n", 58721 },	-- Farmer Yoon
 							["coord"] = { 52.0, 48.1, 376 },
 						}),
 						q(30516, {	-- Growing the Farm I: A Little Problem
+							["minReputation"] = { 1272, HONORED },
 							["sourceQuests"] = { 30260 },	-- Growing the Farm I: The Weeds
 							["provider"] = { "n", 57385 },	-- Gai Lan
 							["coord"] = { 38.7, 51.7, 376 },
 						}),
 						q(30260, {	-- Growing the Farm I: The Weeds
-							["minReputation"] = { 1272, HONORED },
 							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
+							["provider"] = { "n", 58646 },	-- Farmer Yoon
+							["coord"] = { 52.2, 48.8, 376 },
+						}),
+						q(30524, {	-- Growing the Farm II: Knock on Wood
+							["sourceQuests"] = { 30523 },	-- Growing the Farm II: The Broken Wagon
+							["provider"] = { "n", 58705 },	-- Fish Fellreed
+							["coord"] = { 41.7, 30.1, 376 },
+						}),
+						q(30523, {	-- Growing the Farm II: The Broken Wagon
+							["minReputation"] = { 1272, REVERED },
+							["sourceQuests"] = { 30516 },	-- Growing the Farm I: A Little Problem
 							["provider"] = { "n", 58646 },	-- Farmer Yoon
 							["coord"] = { 52.2, 48.8, 376 },
 						}),
@@ -111,8 +128,36 @@ _.Zones =
 							["provider"] = { "n", 58706 },	-- Gina Mudclaw
 							["coord"] = { 53.2, 51.8, 376 },
 						}),
+						q(30258, {	-- Mung-Mung's Vote I: A Hozen's Problem
+							["sourceQuests"] = { 31945 },	-- Learn and Grow VI: Gina's Vote
+							["provider"] = { "n", 58646 },	-- Farmer Yoon
+							["coord"] = { 52.2, 48.8, 376 },
+						}),
+						q(30259, {	-- Mung-Mung's Vote II: Rotten to the Core
+							["sourceQuests"] = { 30258 },	-- Mung-Mung's Vote I: A Hozen's Problem
+							["provider"] = { "n", 57401 },	-- Mung-Mung
+							["coord"] = { 44.2, 34.2, 376 },
+						}),
+						q(31946, {	-- Mung-Mung's Vote III: The Great Carrot Caper
+							["sourceQuests"] = { 30258 },	-- Mung-Mung's Vote II: Rotten to the Core
+							["provider"] = { "n", 57401 },	-- Mung-Mung
+							["coord"] = { 44.2, 34.2, 376 },
+						}),
 						q(30335, {	-- Stalling the Ravage
 							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
+							["provider"] = { "n", 58646 },	-- Farmer Yoon
+							["isDaily"] = true,
+							["coord"] = { 52.2, 48.8, 376 },
+						}),
+						q(30336, {	-- The Kunzen Hunter-Chief
+							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
+							["provider"] = { "n", 58646 },	-- Farmer Yoon
+							["isDaily"] = true,
+							["coord"] = { 52.2, 48.8, 376 },
+						}),
+						q(31675, {	-- The White Turnip Treatment
+						--	i did 30336, turned it in, turned in Gina's Vote, then this daily popped up.  not sure if the daily itself is behind Gina's Vote or if doing Gina's Vote unlocks the ability to do more than 1 daily
+							["sourceQuests"] = { 31945 },	-- Learn and Grow VI: Gina's Vote
 							["provider"] = { "n", 58646 },	-- Farmer Yoon
 							["isDaily"] = true,
 							["coord"] = { 52.2, 48.8, 376 },
@@ -123,11 +168,23 @@ _.Zones =
 							["isDaily"] = true,
 							["coord"] = { 48.3, 33.9, 376 },
 						}),
+						q(30321, {	-- Weed War II
+							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
+							["provider"] = { "n", 58710 },	-- Jogu the Drunk
+							["isDaily"] = true,
+							["coord"] = { 53.6, 52.6, 376 },
+						}),
 						q(30325, {	-- Where It Counts
 							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
 							["provider"] = { "n", 58708 },	-- Sho
 							["isDaily"] = true,
 							["coord"] = { 53.1, 52.0, 376 },
+						}),
+						q(30327, {	-- You Have to Burn the Ropes
+							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
+							["provider"] = { "n", 58647 },	-- Ella
+							["isDaily"] = true,
+							["coord"] = { 53.0, 51.6, 376 },
 						}),
 					}),
 				},
