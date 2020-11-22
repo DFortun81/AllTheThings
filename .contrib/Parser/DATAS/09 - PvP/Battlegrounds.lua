@@ -66,8 +66,8 @@ _.PVP =
 				i(134663),	-- Recruit's Slicer*
 				i(134639),	-- Recruit's Staff*
 				i(134661),	-- Recruit's Signet			//** 4/21/19
-				i(134660),  -- Recruit's Band
-				i(134659),  -- Recruit's Ring
+				i(134660),	-- Recruit's Band
+				i(134659),	-- Recruit's Ring
 				i(134687),	-- Recruit's Barrier
 				i(134674),	-- Recruit's Battle Staff*
 				i(134690),	-- Recruit's Distinction
@@ -89,18 +89,18 @@ _.PVP =
 				--un(REMOVED_FROM_GAME, i(134669)),	-- Auxiliary's Handwraps
 				--un(REMOVED_FROM_GAME, i(134671)),	-- Auxiliary's Trousers
 				--un(REMOVED_FROM_GAME, i(134675)),	-- Rookie's Gloves*
-				--un(REMOVED_FROM_GAME, i(134676)),	-- Rookie's Helm*	-- Available from another crate
+				--un(REMOVED_FROM_GAME, i(134676)),	-- Rookie's Helm*
 				--un(REMOVED_FROM_GAME, i(134677)),	-- Rookie's Legguards*
 				--un(REMOVED_FROM_GAME, i(134678)),	-- Rookie's Shoulders*
-				--un(REMOVED_FROM_GAME, i(134679)),	-- Greenhorn's Ga--untlets	-- Available from another crate
-				--un(REMOVED_FROM_GAME, i(134680)),	-- Greenhorn's Helm	-- Available from another crate
+				--un(REMOVED_FROM_GAME, i(134679)),	-- Greenhorn's Gauntlets
+				--un(REMOVED_FROM_GAME, i(134680)),	-- Greenhorn's Helm
 				--un(REMOVED_FROM_GAME, i(134681)),	-- Greenhorn's Legguards
-				--un(REMOVED_FROM_GAME, i(134682)),	-- Greenhorn's Spaulders	-- Available from another crate
-				--un(REMOVED_FROM_GAME, i(134683)),	-- Front-Line Ga--untlets*
+				--un(REMOVED_FROM_GAME, i(134682)),	-- Greenhorn's Spaulders
+				--un(REMOVED_FROM_GAME, i(134683)),	-- Front-Line Gauntlets*
 				--un(REMOVED_FROM_GAME, i(134685)),	-- Front-Line Greaves*
 				--un(REMOVED_FROM_GAME, i(134684)),	-- Front-Line Helm*
 				--un(REMOVED_FROM_GAME, i(134686)),	-- Front-Line Shoulders*
-				--un(REMOVED_FROM_GAME, i(134689)),	-- Recruit's Accolade*	-- Available from another crate
+				--un(REMOVED_FROM_GAME, i(134689)),	-- Recruit's Accolade*
 				--un(REMOVED_FROM_GAME, i(134687)),	-- Recruit's Barrier
 				--un(REMOVED_FROM_GAME, i(134674)),	-- Recruit's Battle Staff*
 				--un(REMOVED_FROM_GAME, i(134690)),	-- Recruit's Distinction

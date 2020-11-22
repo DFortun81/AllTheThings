@@ -1418,7 +1418,7 @@ _.HiddenQuestTriggers =
 		q(38547),	-- FLAG: Demonsteel Gauntlets Crafted
 		q(38549),	-- FLAG: Demonsteel Helm Crafted
 		q(47096),	-- Broken Shore - Choice: Blacksmithing
-        --  Engineering
+		--  Engineering
 		q(41100),	-- FLAG - Swap Didis - triggered after completing Endless Possibilities (40854)
 		--	Jewelcrafting
 		q(40557), 	-- FLAG: Clive Cozen Leave - Triggers after completing Hidden Intentions (40539)

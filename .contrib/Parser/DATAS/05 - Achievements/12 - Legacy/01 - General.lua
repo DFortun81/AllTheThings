@@ -104,9 +104,6 @@ _.Achievements =
 				["classes"] = { WARLOCK },
 			})),
 			un(REMOVED_FROM_GAME, ach(2716)),		-- Dual Talent Specialization
-			un(REMOVED_FROM_GAME, ach(12547, {		-- Epic (Battle)
-				un(REMOVED_FROM_GAME, ach(12546)),		-- Superior (Battle)
-			})),
 			un(REMOVED_FROM_GAME, ach(7315)),		-- Eternally in the Vale
 			un(REMOVED_FROM_GAME, ach(558)),		-- Greedy
 			un(REMOVED_FROM_GAME, ach(7945)),		-- Haters Gonna Hate (Season 2) **Can't find any commentary on whether this is still available in Legion season or not.**
@@ -139,16 +136,6 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, ach(11564)),		-- The Second Rule of Brawler's Guild(Legion)
 				un(REMOVED_FROM_GAME, ach(11561)),		-- You Are Not Your $#*@! Legplates(Legion)
 			}))),
-			un(REMOVED_FROM_GAME, ach(12544, {		-- Level 120 (Legacy)
-				un(REMOVED_FROM_GAME, ach(10)),		-- Level 50 (Legacy)
-				un(REMOVED_FROM_GAME, ach(11)),		-- Level 60 (Legacy)
-				un(REMOVED_FROM_GAME, ach(12)),		-- Level 70 (Legacy)
-				un(REMOVED_FROM_GAME, ach(13)),		-- Level 80 (Legacy)
-				un(REMOVED_FROM_GAME, ach(4826)),	-- Level 85 (Legacy)
-				un(REMOVED_FROM_GAME, ach(6193)),	-- Level 90 (Legacy)
-				un(REMOVED_FROM_GAME, ach(9060)),	-- Level 100 (Legacy)
-				un(REMOVED_FROM_GAME, ach(10671)),	-- Level 110 (Legacy)
-			})),
 			un(REMOVED_FROM_GAME, ach(705)),		-- Master of Arms
 			un(REMOVED_FROM_GAME, ach(559)),		-- Needy
 			un(REMOVED_FROM_GAME, a(ach(7946))),	-- Now You're Just Showing Off (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**

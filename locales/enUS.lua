@@ -665,12 +665,12 @@ app.L = {
 		[-862] = "Interface\\Icons\\inv_heartofazeroth",									-- Heart of Azeroth
 		[-900] = 3675495,																	-- Covenant Sanctum
 		[-901] = 3726261,																	-- Covenant Callings
-		
+
 		[-930] = 136059,																	-- Queen's Conservatory
 		[-931] = 636334,																	-- Lesser Spirit
 		[-932] = 636335,																	-- Spirit
 		[-933] = 2451604,																	-- Greater Spirit
-		
+
 		[-950] = 3565720,																	-- Mirror Network
 		[-951] = 3528313,																	-- Tier 1 Mirror Mirror
 		[-952] = 3528312,																	-- Tier 2 Looking Glass
@@ -1436,7 +1436,7 @@ app.L = {
 		[-800] = GetSpellInfo(247402), 											-- Lucid Nightmare
 		[-801] = GetSpellInfo(243025),											-- Riddler's Mind-Worm
 		[-802] = GetSpellInfo(231215),											-- Sun Darter Hatchling
-	--	[-803] = select(2, EJ_GetCreatureInfo(111573)),							-- Kosumoth the Hungering
+		--[-803] = select(2, EJ_GetCreatureInfo(111573)),						-- Kosumoth the Hungering
 		[-804] = GetSpellInfo(254763),											-- Uuna
 		[-805] = GetSpellInfo(277461),											-- Baa'l
 		[-806] = "Waist of Time",												-- Waist of Time
@@ -1461,24 +1461,24 @@ app.L = {
 -- Shadowlands Header
 		[-900] = "Covenant Sanctum",											-- Covenant Sanctum
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
---		[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown (NYI)
+		--[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown (NYI)
 		[-914] = "Adventures",													-- Adventures
-		
+
 -- SL Ardenweald/Nightfae
 		[-930] = "Queen's Conservatory",										-- Queen's Conservatory
 		[-931] = GetSpellInfo(7851),											-- Lesser Spirit
 		[-932] = GetSpellInfo(172153),											-- Spirit
 		[-933] = GetSpellInfo(13826),											-- Greater Spirit
-		
+
 -- SL Bastion/Kyrien
 		[-940] = "Ascended Council",											-- Ascended Counil
-		
+
 -- SL Revendreth/Venthyr
 		[-950] = "Mirror Network",												-- Mirror Network
 		[-951] = "Tier 1 Mirror Mirror",										-- Tier 1 Mirror Mirror
 		[-952] = "Tier 2 Looking Glass",										-- Tier 2 Looking Glass"
 		[-953] = "Tier 3 Mirror's Edge",										-- Tier 3 Mirror's Edge
-		
+
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
 -- Weapon Sets

@@ -160,7 +160,6 @@ _.Zones =
 						i(181475),	-- Tribute of the Grove Wardens
 					},
 				}),
-				
 				q(60414, {	-- Rare Resources
 					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
 					["coord"] = { 16.5, 52.4, 1565 },
