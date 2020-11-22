@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		n(-900, {	-- Covenant Sanctum
-			["description"] = "This content is shared between each Covenant.",
+			["description"] = "Those rewards are shared between each Covenant.",
 			["g"] = {
 				n(-950, {	-- Adventures
 					-- todo: find object id for the table
