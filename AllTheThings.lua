@@ -89,10 +89,12 @@ local function StartCoroutine(name, method, delaySec)
 					local ok, err = coroutine.resume(instance);
 					if ok then return true;	-- This means more work is required.
 					else
-						-- Show the error. Returning nothing is the same as canceling the work.
-						print(debugstack(instance));
-						print(err);
-						app.report();
+						-- Throw the error. Returning nothing is the same as canceling the work.
+						-- local instanceTrace = debugstack(instance);
+						error(err,2);
+						-- print(debugstack(instance));
+						-- print(err);
+						-- app.report();
 					end
 				end
 				-- print("coroutine complete",name);
@@ -4503,8 +4505,8 @@ local function SortGroup(group, sortType, row, recur)
 		if sortType == "name" then
 			local txtA, txtB;
 			table.sort(group.g, function(a, b)
-				txtA = a and (a.name or a.text) or "";
-				txtB = b and (b.name or b.text) or "";
+				txtA = a and tostring(a.text) or "";
+				txtB = b and tostring(b.text) or "";
 				if txtA then
 					if txtB then return txtA < txtB; end
 					return true;
