@@ -489,6 +489,7 @@ _.Achievements =
 					i(168016),	-- Hyper-Compressed Ocean
 				},
 			}),
+			ach(14333),		-- Shadowlands Fisherman
 			ach(2095,  {	-- Silver in the City
 				crit(1),		-- Aegwynn's Silver Coin
 				crit(2),		-- Alleria's Silver Coin

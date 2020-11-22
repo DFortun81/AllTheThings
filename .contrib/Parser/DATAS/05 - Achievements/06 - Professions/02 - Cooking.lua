@@ -259,6 +259,7 @@ _.Achievements =
 				crit(2),		-- Train your student to become an Expert in Cooking (Exalted)
 			}),
 			ach(124),		-- Outland Cook
+			ach(14332),		-- Shadowlands Cook
 			ach(5473, {		-- The Cataclysmic Gourmet (30)
 				crit(1),		-- Baked Rockfish
 				crit(2),		-- Basilisk Liverdog

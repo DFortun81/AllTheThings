@@ -79,7 +79,7 @@ _.Achievements =
 			ach(7379, {		-- Pandaren Master of All
 				ach(7378),		-- Jack of All Trades
 			}),
-			ach(4924),		-- Professional Cataclsymic Master
+			ach(4924),		-- Professional Cataclysmic Master
 			ach(732, {		-- Professional Classic Master
 				ach(731),		-- Professional Expert
 				ach(116),		-- Professional Journeyman
@@ -90,14 +90,28 @@ _.Achievements =
 			ach(12731, {	-- Professional Kul Tiran Master (A)
 				["races"] = ALLIANCE_ONLY,
 			}),
-			ach(12733, {	-- Professional Zandalari Master (H)
-				["races"] = HORDE_ONLY,
-			}),
 			ach(10582),		-- Professional Legion Master
 			ach(734),		-- Professional Northrend Master
 			ach(733),		-- Professional Outland Master
+			ach(14328),		-- Professional Shadowlands Master
+			ach(12733, {	-- Professional Zandalari Master (H)
+				["races"] = HORDE_ONLY,
+			}),
 			ach(6830),		-- Professional Zen Master
 			ach(10761),		-- Resourceful
+			ach(14330, {	-- Shadowlands Master of All
+				crit(1),	-- Shadowlands Alchemy
+				crit(2),	-- Shadowlands Blacksmithing
+				crit(3),	-- Shadowlands Enchanting
+				crit(4),	-- Shadowlands Engineering
+				crit(5),	-- Shadowlands Herbalism
+				crit(6),	-- Shadowlands Inscription
+				crit(7),	-- Shadowlands Jewelcrafting
+				crit(8),	-- Shadowlands Leatherworking
+				crit(9),	-- Shadowlands Mining
+				crit(10),	-- Shadowlands Skinning
+				crit(11),	-- Shadowlands Tailoring
+			}),
 			ach(10588), 	-- The Shortest Distance
 			ach(6835),		-- Working For a Living
 			ach(9507),		-- Working in Draenor
@@ -109,6 +123,7 @@ _.Achievements =
 			}),
 			ach(735),		-- Working In the Cold
 			ach(4914),		-- Working In the Heat
+			ach(14329),		-- Working the Afterlife
 			ach(10581),		-- Working the Isles
 			ach(12737, {	-- Zandalari Master of All (H)
 				["races"] = HORDE_ONLY,
