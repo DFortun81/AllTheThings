@@ -231,6 +231,7 @@ _.Zones =
 					["repeatable"] = true,
 					["g"] = {
 						i(181556, {	-- Tribute of the Court
+							--[[ Might be Necro's only
 							i(184159, {	-- Oozing Necroray Egg (Timer)
 								i(184158, {	-- Oozing Necroray Egg (No Timer)
 									i(184160),	-- Bulbous Necroray
@@ -238,6 +239,7 @@ _.Zones =
 									i(184162),	-- Pestilent Necroray
 								}),
 							}),
+							--]]
 						}),
 					},
 				}),
