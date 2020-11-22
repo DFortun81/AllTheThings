@@ -671,6 +671,9 @@ app.L = {
 		[-913] = 3257749,																	-- Covenant Callings (Necrolord)
 		
 		[-930] = 136059,																	-- Queen's Conservatory
+		[-931] = 636334,																	-- Lesser Spirit
+		[-932] = 636335,																	-- Spirit
+		[-933] = 2451604,																	-- Greater Spirit
 		
 		[-950] = 3565720,																	-- Mirror Network
 		[-951] = 3528313,																	-- Tier 1 Mirror Mirror
@@ -1471,6 +1474,9 @@ app.L = {
 		
 -- SL Ardenweald/Nightfae
 		[-930] = "Queen's Conservatory",										-- Queen's Conservatory
+		[-931] = GetSpellInfo(7851),											-- Lesser Spirit
+		[-932] = GetSpellInfo(172153),											-- Spirit
+		[-933] = GetSpellInfo(13826),											-- Greater Spirit
 		
 -- SL Bastion/Kyrien
 		[-940] = "Ascended Council",											-- Ascended Counil
