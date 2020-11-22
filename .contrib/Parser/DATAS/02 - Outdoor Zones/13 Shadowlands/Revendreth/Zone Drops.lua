@@ -7,6 +7,9 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(ZONEDROPS, {
+				i(178884),	-- Greater Prideful Spirit (Epic)
+				i(178883),	-- Divine Prideful Spirit (Rare)
+				i(178882),	-- Prideful Spirit Revendreth(Uncommon)
 				i(177769),	-- Avowed Tormenter's Handwraps
 				i(177770),	-- Avowed Tormenter's Hood
 				i(177771),	-- Avowed Tormenter's Leggings

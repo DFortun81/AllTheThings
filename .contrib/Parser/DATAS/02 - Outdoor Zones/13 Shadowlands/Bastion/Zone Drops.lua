@@ -7,6 +7,9 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
 			n(ZONEDROPS, {
+				i(178879),	-- Greater Dutiful Spirit (Epic)
+				i(178880),	--	Divine Dutiful Spirit (Rare)
+				i(178881),	-- Dutiful Spirit Bastion (Uncommon)
 				i(176788),	-- Darkfeather Belt
 				i(176792),	-- Darkfeather Bindings
 				i(176780),	-- Darkfeather Breeches

@@ -7,6 +7,9 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1565, {	-- Ardenweald
 			n(ZONEDROPS, {
+				i(177698),	-- Untamed Spirit Ardenweald (Uncommon)
+				i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)
+				i(177700),	-- Greater Untamed Spirit Ardenweald (Epic)
 				i(175545),	-- Blackthorn Chestplate
 				i(175553),	-- Blackthorn Gauntlets
 				i(175567),	-- Blackthorn Girdle

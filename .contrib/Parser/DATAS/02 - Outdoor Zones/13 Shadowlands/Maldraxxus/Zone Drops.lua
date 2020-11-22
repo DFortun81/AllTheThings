@@ -7,6 +7,9 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
 			n(ZONEDROPS, {
+				i(178877),	-- Divine Martial Spirit (Rare)
+				i(178874),	-- Martial Spirit Maldraxxus (Uncommon)
+				i(178878),	-- Greater Martial Spirit (Epic)
 				i(184062),	-- Gnawed Reins of the Battle-Bound Warhound (Battle-Bound Warhound in journal)
 				i(176990),	-- Blackhound Armplates
 				i(178950),	-- Blackhound Bulwark
