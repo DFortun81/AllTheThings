@@ -31,7 +31,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["coords"] = { 72.4, 44.3, 390 },	-- Siege of Orgrimmar, Vale of Eternal Blossoms (door leading downstairs to entrance)
 		["g"] = {
 			n(VENDORS, {
-				n(5643, {	-- Tyranis Malem
+				n(72157, {	-- Hagrus <Reagents>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(5643),	-- Recipe: Great Rage Potion

@@ -907,25 +907,6 @@ _.Zones =
 						i(84515),	-- Yak Herder Monnion
 					},
 				}),
-				q(30880, {	-- Round 1: The Streetfighter
-					["isDaily"] = true,
-					["provider"] = { "n", 60968 },	-- Xuen
-				}),
-				q(30882, {	-- Round 2: Kang Bramblestaff
-					["isDaily"] = true,
-					["provider"] = { "n", 60968 },	-- Xuen
-					["sourceQuest"] = 30880,	-- Round 1: The Streetfighter
-				}),
-				q(30885, {	-- Round 3: Master Boom Boom
-					["isDaily"] = true,
-					["provider"] = { "n", 60968 },	-- Xuen
-					["sourceQuest"] = 30882,	-- Round 2: Kang Bramblestaff
-				}),
-				q(30902, {	-- Round 4: Master Windfur
-					["isDaily"] = true,
-					["provider"] = { "n", 60968 },	-- Xuen
-					["sourceQuest"] = 30885,	-- Round 3: Master Boom Boom
-				}),
 				q(30684, {	-- Seeker's Folly
 					["coord"] = { 48.1, 49.0, 379 },
 					["provider"] = { "n", 60175 },	-- Lucky Bluestring

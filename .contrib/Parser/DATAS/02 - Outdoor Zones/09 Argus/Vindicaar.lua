@@ -518,6 +518,7 @@ _.Zones =
 								},
 								["g"] = {
 									i(146793),	-- Man'ari Magus Drape (reported in #errors on 20201113)
+									i(146794),	-- Sargerei Herald's Cloak (reported in #errors on November 21, 2020)
 								},
 							}),
 							i(153208, {	-- Relinquished Chestguard

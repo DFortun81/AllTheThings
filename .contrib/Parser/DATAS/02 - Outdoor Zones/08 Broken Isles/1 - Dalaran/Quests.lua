@@ -78,14 +78,6 @@ _.Zones =
 						]]--
 					},
 				}),
-				q(41541, {	-- A Beastly Expedition
-					["classes"] = { HUNTER },
-					["providers"] = {
-						{ "n", 102478 },	-- Emmarel Shadewarden
-						{ "n", 107317 },	-- Emmarel Shadewarden
-						{ "n", 107973 },	-- Emmarel Shadewarden
-					},
-				}),
 				q(44720, {	-- A Call to Action
 					["lvl"] = 110,
 					["coords"] = {
@@ -1016,10 +1008,6 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["provider"] = { "n", 100786 },	-- Snowfeather
 				}),
-				q(42185, {	-- Never Hunt Alone -- actually started in an instanced version of Ulduar
-					["classes"] = { HUNTER },
-					["provider"] = { "n", 106558 },	-- Mimiron
-				}),
 				q(43250, {	-- Off to Court
 					["sourceQuests"] = { 43249 },	-- The Raven's Eye
 					["classes"] = { ROGUE },
@@ -1300,11 +1288,6 @@ _.Zones =
 					["provider"] = { "n", 105813 },	-- Orik Trueheart
 				}),
 			--	q(47148),	-- Something Different -- granted when entering a brawl. weekly?
-				q(41574, {	-- Stolen Thunder
-					["sourceQuests"] = { 41541 },	-- A Beastly Expedition
-					["classes"] = { HUNTER },
-					["provider"] = { "n", 104381 },	-- Grif Wildheart
-				}),
 				q(44411, {	-- Strange Humming Crystal
 					["provider"] = { "i", 141349 },	-- Strange Humming Crystal
 				}),

@@ -7881,15 +7881,15 @@ end)();
 -- Tier Lib
 (function()
 	local tierIcons = {
-		"Interface\\Icons\\expansionicon_classic", 					-- Classic
-		"Interface\\Icons\\expansionicon_burningcrusade",			-- Burning Crusade
-		"Interface\\Icons\\expansionicon_wrathofthelichking",		-- Wrath
-		"Interface\\Icons\\expansionicon_cataclysm",				-- Cata
-		"Interface\\Icons\\expansionicon_mistsofpandaria",			-- Mists
-		"Interface\\Icons\\Achievement_boss_hellfire_archimonde",	-- WoD
-		"Interface\\Icons\\achievements_zone_brokenshore",			-- Legion
-		"Interface\\Icons\\factionchange",							-- Battle For Azeroth
-		"Interface\\Icons\\inv_torghast",							-- Shadowlands
+		"Interface\\Addons\\AllTheThings\\assets\\Classic", 					-- Classic
+		"Interface\\Addons\\AllTheThings\\assets\\Bc",			-- Burning Crusade
+		"Interface\\Addons\\AllTheThings\\assets\\woltk",		-- Wrath
+		"Interface\\Addons\\AllTheThings\\assets\\Cata",				-- Cata
+		"Interface\\Addons\\AllTheThings\\assets\\MoP",			-- Mists
+		"Interface\\Addons\\AllTheThings\\assets\\WoD",	-- WoD
+		"Interface\\Addons\\AllTheThings\\assets\\leg",			-- Legion
+		"Interface\\Addons\\AllTheThings\\assets\\BfA",							-- Battle For Azeroth
+		"Interface\\Addons\\AllTheThings\\assets\\SL",							-- Shadowlands
 	};
 	local tierLevel = {
 		1, 	-- Classic
