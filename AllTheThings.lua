@@ -4677,6 +4677,36 @@ end
 		-- -- self.UpdateTooltip(self);
 	-- end
 -- end
+
+-- ARP begin
+function app.GetQuestsForNPC(self, npc_id)
+	--local found = false
+
+	--print(tostring(npc_id))
+	local group, _, _ = SearchForField("creatureID", npc_id);
+	if not group then return false; end
+	local regroup = {};
+	for i,j in ipairs(group) do
+		if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+			tinsert(regroup, j);
+		end
+	end
+
+	for i,v in pairs(regroup) do
+		--print(tostring(i))
+		--for i2,v2 in pairs(v) do
+		--	print("    " .. tostring(i2)..":"..tostring(v2))
+		--end
+		if (v["visible"] ~= nil and v["visible"] == true) then
+			return true;
+		end
+	end
+
+	--print("---------------------------------")
+	return false
+end
+-- ARP End
+
 local function AttachTooltip(self)
 	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
 	if not self.AllTheThingsProcessing then
