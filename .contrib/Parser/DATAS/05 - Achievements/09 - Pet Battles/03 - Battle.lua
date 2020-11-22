@@ -14,6 +14,39 @@ _.Achievements =
 {
 	n(-9963, {	-- Pet Battles
 		n(-10028, {	-- Battle
+			ach(14881, {	-- Abhorrent Adversaries of the Afterlife
+				i(184512),	-- Winterleaf Spriggan
+				crit(1,  {	-- Crystalsnap
+					--["coord"] = { 31.2, 74.2, 390 },
+				}),
+				crit(2,  {	-- Briarpaw
+					--["coord"] = { 50.0, 31.2, 539 },
+				}),
+				crit(3,  {	-- Chittermaw
+					--["coord"] = { 28.6, 33.8, 117 },
+				}),
+				crit(4,  {	-- Mistwing
+					--["coord"] = { 34.8, 59.6, 554 },
+				}),
+				crit(5,  {	-- Sewer Creeper
+					--["coord"] = { 30.6, 41.8, 104 },
+				}),
+				crit(6,  {	-- The Countess
+					--["coord"] = { 49.8, 57.0, 207 },
+				}),
+				crit(7,  {	-- Digallo
+					--["coord"] = { 61.4, 32.8, 198 },
+				}),
+				crit(8,  {	-- Gelatinous
+					--["coord"] = { 57.0, 42.2, 388 },
+				}),
+				crit(9,  {	-- Kostos <Challenger of the Small>
+					--["coord"] = { 34.8, 59.6, 554 },
+				}),
+				crit(10, {	-- Glurp
+					--["coord"] = { 34.8, 59.6, 554 },
+				}),
+			}),
 			ach(9069, {	-- An Awfully Big Adventure
 				i(120121),	-- Trunks
 				crit(1,  {	-- Aki the Chosen (Vale of Eternal Blossoms)
@@ -147,39 +180,6 @@ _.Achievements =
 				}),
 				crit(44, {	-- Wrathion (Celestial Tournament)
 					["coord"] = { 37.8, 57.2, 554 },
-				}),
-			}),
-			ach(14881, {	-- Abhorrent Adversaries of the Afterlife
-				i(184512),	-- Winterleaf Spriggan
-				crit(1,  {	-- Crystalsnap
-					--["coord"] = { 31.2, 74.2, 390 },
-				}),
-				crit(2,  {	-- Briarpaw
-					--["coord"] = { 50.0, 31.2, 539 },
-				}),
-				crit(3,  {	-- Chittermaw
-					--["coord"] = { 28.6, 33.8, 117 },
-				}),
-				crit(4,  {	-- Mistwing
-					--["coord"] = { 34.8, 59.6, 554 },
-				}),
-				crit(5,  {	-- Sewer Creeper
-					--["coord"] = { 30.6, 41.8, 104 },
-				}),
-				crit(6,  {	-- The Countess
-					--["coord"] = { 49.8, 57.0, 207 },
-				}),
-				crit(7,  {	-- Digallo
-					--["coord"] = { 61.4, 32.8, 198 },
-				}),
-				crit(8,  {	-- Gelatinous
-					--["coord"] = { 57.0, 42.2, 388 },
-				}),
-				crit(9,  {	-- Kostos <Challenger of the Small>
-					--["coord"] = { 34.8, 59.6, 554 },
-				}),
-				crit(10, {	-- Glurp
-					--["coord"] = { 34.8, 59.6, 554 },
 				}),
 			}),
 			ach(12088, {	-- Anomalous Animals of Argus

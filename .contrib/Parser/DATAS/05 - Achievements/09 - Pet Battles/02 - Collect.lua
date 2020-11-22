@@ -740,6 +740,10 @@ _.Achievements =
 				crit(19),		-- Wader Chick
 				crit(20),		-- Wild Etherwyrm
 				crit(21),		-- Withering Creeper
+				crit(22),		-- Verdant Kit
+				crit(23),		-- Decay Grub
+				crit(24),		-- Starmoth
+				crit(25),		-- Crawbat
 			}),
 			ach(6571),		-- That Was Close!*
 			ach(6590, {		-- World Safari*
