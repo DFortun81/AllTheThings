@@ -1061,6 +1061,10 @@ _.HiddenQuestTriggers =
 		--    Legion     --
 		-------------------
 		--	Various tracking quests
+		q(42181),	-- triggered after turning in #39733, "The Lone Mountain"
+		q(43447),	-- Vignette: Wraithtalon — newer tracking quest for Wraithtalon rare in Val'sharah (on top of normal tracking quest - both pop at the same time)
+		q(33820),	-- Tracking Quest: Seen Escape Cinematic — triggered by cinematic during quest #34338, "The Descent"
+		q(36588),	-- Tracking - See Closed Chest — triggered immediately after accepting quest #34410, "The Beating Heart"
 		q(40087),	-- "Enter the Illidari: Shivarra" - Sevis Brightflame Sacrificed Tracking Event
 		q(44608),	-- Tracking Quest: Holy Ground 1 — these 5 are for the missions done during the priest class hall quest "Awakening the Light"
 		q(44609),	-- Tracking Quest: Holy Ground 2
@@ -1608,12 +1612,13 @@ _.HiddenQuestTriggers =
 		q(45502),	-- Suramar - WQ rare: Selenyi
 		q(45477),	-- Suramar - WQ rare: Sorallus
 		q(45474),	-- Suramar - WQ rare: Volshax, Breaker of Will
-		q(45485),	-- Val'Sharah - WQ rare: Aodh Witherpetal
-		q(45483),	-- Val'Sharah - WQ rare: Ealdis
-		q(45501),	-- Val'Sharah - WQ rare: Malisandra
-		q(45488),	-- Val'Sharah - WQ rare: Nylaathria the Forgotten
-		q(45487),	-- Val'Sharah - WQ rare: Rabxach
-		q(45493),	-- Val'Sharah - WQ rare: Witchdoctor Grgl-Brgl
+		q(45485),	-- Val'sharah - WQ rare: Aodh Witherpetal
+		q(45483),	-- Val'sharah - WQ rare: Ealdis
+		q(45484),	-- Val'sharah - WQ rare: Harbinger of Screams
+		q(45501),	-- Val'sharah - WQ rare: Malisandra
+		q(45488),	-- Val'sharah - WQ rare: Nylaathria the Forgotten
+		q(45487),	-- Val'sharah - WQ rare: Rabxach
+		q(45493),	-- Val'sharah - WQ rare: Witchdoctor Grgl-Brgl
 
 		--	Treasures
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
