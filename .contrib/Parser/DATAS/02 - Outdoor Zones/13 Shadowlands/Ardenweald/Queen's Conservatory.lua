@@ -7,7 +7,7 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1565, {	-- Ardenweald
 			n(-930, {	-- Queen's Conservatory
-				["description"] = "|cFF2afe04Night Fae Covenant only.|r",
+				["description"] = "|cFFA330C9Night Fae Covenant|r only.",
 				["g"] = {
 					-- Achievements
 					filter(100, {	-- Mounts

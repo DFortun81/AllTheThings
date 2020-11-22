@@ -103,7 +103,7 @@ _.Zones =
 					["coord"] = { 45.83, 79.34, 1525 },
 					--["questID"] = ,
 					["isDaily"] = true,
-					["description"] = "Requires to be a Venthyr Covenant & your Anima to be channel to Wanecrypt Hill to summon him. Use the Dredterror Ballista to make him attackable.",
+					["description"] = "Requires to be a |cFFfe040fVenthyr Covenant|r & your Anima to be channel to Wanecrypt Hill to summon him. Use the Dredterror Ballista to make him attackable.",
 					["g"] = {
 						ach(14310, crit(15)),		-- Adventurer of Revendreth / Harika the Horrid
 						i(180461),			-- Horrid Dredwing

@@ -7,7 +7,7 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(-950, {	-- Mirror Network
-				["description"] = "|cFFfe040fVenthyr Covenant only.|r",
+				["description"] = "|cFFfe040fVenthyr Covenant|r only.",
 				["g"] = {
 					-- TODO: Add Questline for each Mirror Tier
 					n(-951, {	-- Tier 1 Mirror Mirror
