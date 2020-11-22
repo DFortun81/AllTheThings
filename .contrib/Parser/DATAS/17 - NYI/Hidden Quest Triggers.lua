@@ -448,6 +448,8 @@ _.HiddenQuestTriggers =
 		-------------------
 		--      MOP      --
 		-------------------
+		q(31485),	-- UNUSED — triggered after turning in quest #31281, "So You Want to Be a Chef..." in Valley of the Four Winds
+		q(31469),	-- UNUSED — triggered after turning in quest #31311, "Way of the Grill" in Vally of the Four Winds
 		q(32357),	-- triggered after watching the RP that takes place after turning in #32316, "Heart of the Alliance," part of the Operation: Shieldwall campaign
 		q(32395),	-- Tracking Event: Saw Avartu - triggered while on "The Divine Bell," part of the Operation: Shieldwall campaign (at the end of the quest before killing Avartu)
 		q(32339),	-- Rebuilding the Mallet (Tracker) — triggered after turning in The Head and The Harmonic Ointment (The Handle was turned in earlier, but presumably requires all 3), part of the Operation: Shieldwall campaign
@@ -471,7 +473,7 @@ _.HiddenQuestTriggers =
 		q(30533),	-- Tracking Event: Finished Second Expansion
 		q(30574),	-- Tracking Event: Finished Third Expansion
 		q(29884),	-- Tracking Event: Spies Leave — triggers after turning in The Pearlfin Situation and Road Rations in Jade Forest
-		q(30530),	-- Tracking Event: Started First Expansion
+		q(30530),	-- Tracking Event: Started First Expansion — triggers after turning in "Growing the Farm I: A Little Problem" in Valley of the Four Winds
 		q(30532),	-- Tracking Event: Started Second Expansion
 		q(30573),	-- Tracking Event: Started Third Expansion
 		q(30564),	-- Tracking Event: Talked to Dog at Farm

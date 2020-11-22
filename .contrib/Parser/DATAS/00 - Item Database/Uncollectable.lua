@@ -239,6 +239,7 @@ i(173771);	-- Old Apple
 i(173778);	-- Orange Orange
 i(72201);	-- Plump Intestines
 i(9316);	-- Prismatic Punch Card
+i(79104);	-- Rusty Watering Can
 i(139590);	-- Scroll of Teleport: Ravenholdt
 i(6357);	-- Sealed Crate
 i(88496);	-- Sealed Crate
@@ -246,6 +247,7 @@ i(173776);	-- Stale Loaf
 i(67495);	-- Strange Bloated Stomach
 i(160378);	-- Strongarm Stout
 i(170379);	-- Sunwarmed Sand
+i(80513);	-- Vintage Bug Sprayer
 i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate
 i(9279);	-- White Punch Card
@@ -303,3 +305,4 @@ i(150750);	-- Moonkissed Antidote
 
 -- Miscellaneous
 i(89427);	-- Ancient Mogu Treasure
+i(85224);	-- Basic Seed Pack
