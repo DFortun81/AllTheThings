@@ -7,7 +7,7 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
 			n(-901, {	-- Covenant Callings
-				["description"] = "|cFF68ccefKyrian Covenant|r only.",
+				["description"] = "|cFF516bfeKyrian Covenant|r only.",
 				["g"] = {
 					q(60391, {	-- Aiding Ardenweald
 						["provider"] = { "n", 160387 },	-- Hermestes
