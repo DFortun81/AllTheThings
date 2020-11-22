@@ -13,6 +13,7 @@ _.Achievements =
 				crit(3),	-- Court of Harvesters
 				crit(4),	-- The Wild Hunt
 			}),
+			ach(14656),	-- Trading Partners
 			ach(14336),	-- Undying Army
 			ach(14335),	-- The Ascended
 			ach(14337),	-- The Wild Hunt

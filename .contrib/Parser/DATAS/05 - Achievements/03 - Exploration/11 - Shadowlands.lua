@@ -166,6 +166,7 @@ _.Achievements =
 				crit(5),	-- The Path to Ascension
 			}),
 			ach(14769),	-- Bat!
+			ach(14272),	-- Best Bud With Benefits
 			ach(14744, {	-- Better to be Lucky than Dead
 				ach(14743),	-- Deadly Serious
 				crit(1),	-- Adjutant Dekaris
