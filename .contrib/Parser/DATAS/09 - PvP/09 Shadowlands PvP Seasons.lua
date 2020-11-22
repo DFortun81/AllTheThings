@@ -8,6 +8,7 @@ _.PVP =
 		["icon"] = "Interface\\Addons\\AllTheThings\\assets\\SL",
 		["g"] = {
 			n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
+				--[[Many items return as retrieving data. They either are added later or are changed (its the 2nd option 95% sure)
 				n(-659, {	-- Aspirant PvP Gear
 					n(-319, {	-- Weapons
 					}),
@@ -81,6 +82,7 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(164586)),	-- Warlord's Trophy Dread Duelist
 				un(REMOVED_FROM_GAME, i(164583)),	-- Battleborn Sigil Dread Elite
 				un(REMOVED_FROM_GAME, i(164587)),	-- Warlord's Trophy Dread Elite
+				--]]
 				--]]
 				filter(100, {	-- Mounts
 					i(184014, {	-- Vicious War Spider (A)
