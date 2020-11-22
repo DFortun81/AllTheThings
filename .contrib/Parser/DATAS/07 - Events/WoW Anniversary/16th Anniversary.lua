@@ -12,7 +12,7 @@ _.WorldEvents =
 		},
 		["g"] = {
 			ach(14271, {	-- 16th Anniversary
-				["u"] = 31,	-- WoW Anniversary
+				["u"] = 36,	-- WoW Anniversary [Removed]
 			}),
 			n(-297, bubbleDown({ ["u"] = 31, }, {	-- Mailbox
 				i(178513),	-- Anniversary Gift
