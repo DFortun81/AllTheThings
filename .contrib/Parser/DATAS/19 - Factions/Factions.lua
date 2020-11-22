@@ -372,8 +372,10 @@ _.Factions =
 	tier(9, {	-- Shadowlands
 		faction(2413), 	-- Court of Harvesters
 		faction(2407),	-- The Ascended
+		faction(2439), 	-- The Avowed
 		faction(2410), 	-- The Undying Army
-		faction(2422),	-- The Wild Hunt
+		faction(2465),	-- The Wild Hunt
+		faction(2432),	-- Ve'nari
 		--[[ -- Single comments denote factions with collectible items tied to rep atm
 		--faction(2464), 	-- Court of Night
 		faction(2455),	-- Cryptkeeper Kassir
@@ -391,10 +393,8 @@ _.Factions =
 		faction(2459),	-- Sika
 		--faction(2462), 	-- Stitchmasters
 		faction(2460),	-- Stonehead
-		--faction(2439), 	-- The Avowed
 		faction(2449),	-- The Countess
 		--faction(2445), 	-- The Ember Court
-		faction(2432),	-- Ve'nari
 		faction(2450), 	-- Alexandros Mograine
 		faction(2446),	-- Baroness Vashj
 		faction(2454), 	-- Choofa
