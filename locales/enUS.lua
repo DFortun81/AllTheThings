@@ -669,6 +669,11 @@ app.L = {
 		[-911] = 3257748,																	-- Covenant Callings (Kyrian)
 		[-912] = 3257751,																	-- Covenant Callings (Venthyr)
 		[-913] = 3257749,																	-- Covenant Callings (Necrolord)
+		
+		[-950] = 3565720,																	-- Mirror Network
+		[-951] = 3528313,																	-- Tier 1 Mirror Mirror
+		[-952] = 3528312,																	-- Tier 2 Looking Glass
+		[-953] = 3528311,																	-- Tier 3 Mirror's Edge
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1440,8 +1445,6 @@ app.L = {
 		[-850] = "Mechanized Chest",											-- Mechanized Chest
 		[-851] = "Irontide Chest",												-- Irontide Chest
 		[-862] = GetSpellInfo(275825),											-- Heart of Azeroth
-		[-1000] = WARDROBE_SETS, 												-- Sets
-		[-1001] = "The Black Vault",
 
 		[-852] = "Azerite Essences",											-- Azerite Essences
 		[-853] = "All Roles",													-- All Roles
@@ -1457,19 +1460,24 @@ app.L = {
 -- Shadowlands Header
 		[-900] = "Covenant Sanctum",											-- Covenant Sanctum
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings (General)
-		
+--		[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown (NYI)
 		[-910] = GetSpellInfo(339041),											-- Covenant Callings (Night Fae)
 		[-911] = GetSpellInfo(339036),											-- Covenant Callings (Kyrian)
 		[-912] = GetSpellInfo(339037),											-- Covenant Callings (Venthyr)
 		[-913] = GetSpellInfo(339038),											-- Covenant Callings (Necrolord)
-		[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown
--- SL Bastion
+		
+		[-939] = "Adventures",													-- Temporary header for Adventures
+		
+-- SL Bastion/Kyrien
 		[-940] = "Ascended Council",											-- Ascended Counil
-
--- Temporarily Header
-		[-950] = "Adventures",													-- Temporary header for Adventures
-
-
+		
+-- SL Revendreth/Venthyr
+		[-950] = "Mirror Network",												-- Mirror Network
+		[-951] = "Tier 1 Mirror Mirror",										-- Tier 1 Mirror Mirror
+		[-952] = "Tier 2 Looking Glass",										-- Tier 2 Looking Glass"
+		[-953] = "Tier 3 Mirror's Edge",										-- Tier 3 Mirror's Edge
+		[-1000] = WARDROBE_SETS, 												-- Sets
+		[-1001] = "The Black Vault",
 -- Weapon Sets
 		[-2000] = GetSpellInfo(41433),											-- Twin Blades of Azzinoth
 
