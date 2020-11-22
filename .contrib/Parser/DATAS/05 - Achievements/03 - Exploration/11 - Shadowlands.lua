@@ -21,111 +21,6 @@ _.Achievements =
 				crit(11),		-- Possibility Matrix
 				crit(12),		-- Loupe of Unusual Charm
 			}),
-			ach(14274),	-- Absolution for All
-			ach(14309, {	-- Adventurer of Ardenweald
-				crit(1),	-- Deathbinder Hroth
-				crit(2),	-- Mystic Rainbowhorn
-				crit(3),	-- Macabre
-				crit(4),	-- Gormtamer Tizo
-				crit(5),	-- Humon'gozz
-				crit(6),	-- Wrigglemortis
-				crit(7),	-- Deifir the Untamed
-				crit(8),	-- Old Ardeite
-				crit(9),	-- Skuld Vit
-				crit(10),	-- Hunter Vivanna
-				crit(11),	-- Mymaen
-				crit(12),	-- Rotbriar Changeling
-				crit(13),	-- Egg-Tender Leh'go
-				crit(14),	-- Rootwrithe
-				crit(15),	-- The Slumbering Emperor
-				crit(16),	-- Night Mare
-				crit(17),	-- Dustbrawl
-				crit(18),	-- Dustbrawl
-				crit(19),	-- Valfir the Unrelenting
-				crit(20),	-- Soultwister Cero
-				crit(21),	-- Soultwister Cero
-			}),
-			ach(14307, {	-- Adventurer of Bastion
-				crit(1),	-- Herculon
-				crit(2),	-- Fallen Acolyte Erisne
-				crit(3),	-- Sigilback
-				crit(4),	-- Cloudtail
-				crit(5),	-- Nemaeus
-				crit(6),	-- Baedos
-				crit(7),	-- Wingflayer the Cruel
-				crit(8),	-- Vesper Repair: Sophia's Aria
-				crit(9),	-- Dionae
-				crit(10),	-- Sundancer
-				crit(11),	-- Basilofos, King of the Hill
-				crit(12),	-- Dark Watcher
-				crit(13),	-- Cloudfeather Patriarch
-				crit(14),	-- Enforcer Aegeon
-				crit(15),	-- Unstable Memory
-				crit(16),	-- Embodied Hunger
-				crit(17),	-- Xixin the Ravening
-				crit(18),	-- Worldfeaster Chronn
-				crit(19),	-- Collector Astorestes
-				crit(20),	-- Demi the Relic Hoarder
-				crit(21),	-- Bookkeeper Mnemis
-				crit(22),	-- Aspirant Eolis
-				crit(23),	-- Echo of Aella
-				crit(24),	-- Corrupted Clawguard
-				crit(25),	-- Reekmonger
-				crit(26),	-- Aethon
-				crit(27),	-- Vesper Repair: Sophia's Overture
-				crit(28),	-- Orstus and Sotiros
-				crit(29),	-- The Ascended Council
-			}),
-			ach(14308, {	-- Adventurer of Maldraxxus
-				crit(1),	-- Corpsecutter Moroc
-				crit(2),	-- Scunner
-				crit(3),	-- Zargox the Reborn
-				crit(4),	-- Collector Kash
-				crit(5),	-- Ravenomous
-				crit(6),	-- Sister Chelicerae
-				crit(7),	-- Taskmaster Xox
-				crit(8),	-- Indomitable Schmitd
-				crit(9),	-- Nirvaska the Summoner
-				crit(10),	-- Thread Mistress Leeda
-				crit(11),	-- Smorgas The Feaster
-				crit(12),	-- Tahonta
-				crit(13),	-- Sabreil the Bonecleaver
-				crit(14),	-- Gristlebeak
-				crit(15),	-- Devour'us
-				crit(16),	-- Nerissa Heartless
-				crit(17),	-- Deadly Dapperling
-				crit(18),	-- Bubbleblood
-				crit(19),	-- Pesticide
-				crit(20),	-- Deepscar
-				crit(21),	-- Warbringer Mal'Korak
-				crit(22),	-- Necromantic Anomaly
-			}),
-			ach(14310, {	-- Adventurer of Revendreth
-				crit(1),	-- Soulstalker Doina
-				crit(2),	-- Scrivener Lenua
-				crit(3),	-- Innervus
-				crit(4),	-- Tomb Burster
-				crit(5),	-- Stonefist
-				crit(6),	-- Worldedge Gorger
-				crit(7),	-- Sire Ladinas
-				crit(8),	-- Executioner Adrastia
-				crit(9),	-- Lord Mortegore
-				crit(10),	-- Leeched Soul
-				crit(11),	-- Endlurker
-				crit(12),	-- Amalgamation of Light
-				crit(13),	-- Tollkeeper Varaboss
-				crit(14),	-- Amalgamation of Filth
-				crit(15),	-- Famu the Infinite
-				crit(16),	-- Azgar
-				crit(17),	-- Hopecrusher
-				crit(18),	-- Bog Beast
-				crit(19),	-- Executioner Aatron
-				crit(20),	-- Huntmaster Petrus
-				crit(21),	-- Grand Arcanist Dimitri
-				crit(22),	-- Manifestation of Wrath
-				crit(23),	-- Amalgamation of Sin
-				crit(24),	-- Sinstone Hoarder
-			}),
 			ach(14774, {	-- Ardenweald Gourmand
 				crit(1),	-- Glittersnap Snowpeas
 				crit(2),	-- Glazed Glowberries
@@ -202,7 +97,6 @@ _.Achievements =
 				crit(6),	-- Amethystine Dye
 				crit(7),	-- Ritualist's Mantle
 			}),
-			ach(14273),	-- Crypt Kicker
 			ach(14761, {	-- Deciphering Death's Intentions
 				crit(1),	-- Constellan Writ
 				crit(2),	-- Shifting Cryptogram
@@ -227,69 +121,6 @@ _.Achievements =
 				crit(21),	-- Wailing Coin
 				crit(22),	-- Mawsworn Orders
 			}),
-			ach(14304, {	-- Explore Ardenweald
-				crit(1),	-- Dusty Burrows
-				crit(2),	-- The Stalks
-				crit(3),	-- Starlit Overlook
-				crit(4),	-- Shimmerbough
-				crit(5),	-- Tirna Scithe
-				crit(6),	-- Hibernal Hollow
-				crit(7),	-- Heart of the Forest
-				crit(8),	-- Gormhive
-				crit(9),	-- Glitterfall Basin
-				crit(10),	-- Tirna Noch
-				crit(11),	-- Darkreach
-				crit(12),	-- Crumbled Ridge
-				crit(13),	-- Gossamer Cliffs
-			}),
-			ach(14303, {	-- Explore Bastion
-				crit(1),	-- Vestribule of Eternity
-				crit(2),	-- Temple of Humility
-				crit(3),	-- Purity's Pinnacle
-				crit(4),	-- Firstborne's Bounty
-				crit(5),	-- The Mnemonic Locus
-				crit(6),	-- The Eternal Forge
-				crit(7),	-- Elysian Hold
-				crit(8),	-- Citadel of Loyalty
-				crit(9),	-- Temple of Courage
-				crit(10),	-- Aspirant's Crucible
-				crit(11),	-- Agthia's Repose
-			}),
-			ach(14305, {	-- Explore Maldraxxus
-				crit(1),	-- Theater of Pain
-				crit(2),	-- The Stitchyard
-				crit(3),	-- The Spearhead
-				crit(4),	-- Sepulcher of Knowledge
-				crit(5),	-- Seat of the Primus
-				crit(6),	-- House of Plagues
-				crit(7),	-- House of the Chosen
-				crit(8),	-- House of Rituals
-				crit(9),	-- House of Eyes
-				crit(10),	-- House of Constructs
-				crit(11),	-- Glutharn's Decay
-				crit(12),	-- Forgotten Wounds
-				crit(13),	-- Burning Thicket
-			}),
-			ach(14306, {	-- Explore Revendreth
-				crit(1),	-- Caretaker's Manor
-				crit(2),	-- Archivam
-				crit(3),	-- Witherfall Ruin
-				crit(4),	-- The Endmire
-				crit(5),	-- Catacombs of Regret
-				crit(6),	-- Old Gate
-				crit(7),	-- The Night Market
-				crit(8),	-- The Banewood
-				crit(9),	-- Stalker's Lodge
-				crit(10),	-- Chalice District
-				crit(11),	-- Redelav District
-				crit(12),	-- Dredhollow
-				crit(13),	-- Ember Ward
-				crit(14),	-- Darkwall Tower
-				crit(15),	-- Court of the Harvesters
-				crit(16),	-- Dominance Gate
-				crit(17),	-- The Shrouded Asylum
-				crit(18),	-- Dominance Keep
-			}),
 			ach(14663, {	-- Explore The Maw
 				crit(1),	-- Calcis
 				crit(2),	-- Cocyrus
@@ -305,18 +136,240 @@ _.Achievements =
 				crit(12),	-- Zovaal's Cauldron
 			}),
 			ach(14825, {	-- Explorer of the Shadowlands
-				crit(1),	-- Explore Revendreth
-				crit(2),	-- Explore Maldraxxus
-				crit(3),	-- Explore Ardenweald
-				crit(4),	-- Explore Bastion
-				crit(5),	-- Adventurer of Revendreth
-				crit(6),	-- Adventurer of Ardenweald
-				crit(7),	-- Adventurer of Maldraxxus
-				crit(8),	-- Adventurer of Bastion
-				crit(9),	-- Treasures of Revendreth
-				crit(10),	-- Treasures of Ardenweald
-				crit(11),	-- Treasures of Maldraxxus
-				crit(12),	-- Treasures of Bastion
+				ach(14306, {	-- Explore Revendreth
+					crit(1),	-- Caretaker's Manor
+					crit(2),	-- Archivam
+					crit(3),	-- Witherfall Ruin
+					crit(4),	-- The Endmire
+					crit(5),	-- Catacombs of Regret
+					crit(6),	-- Old Gate
+					crit(7),	-- The Night Market
+					crit(8),	-- The Banewood
+					crit(9),	-- Stalker's Lodge
+					crit(10),	-- Chalice District
+					crit(11),	-- Redelav District
+					crit(12),	-- Dredhollow
+					crit(13),	-- Ember Ward
+					crit(14),	-- Darkwall Tower
+					crit(15),	-- Court of the Harvesters
+					crit(16),	-- Dominance Gate
+					crit(17),	-- The Shrouded Asylum
+					crit(18),	-- Dominance Keep
+				}),
+				ach(14305, {	-- Explore Maldraxxus
+					crit(1),	-- Theater of Pain
+					crit(2),	-- The Stitchyard
+					crit(3),	-- The Spearhead
+					crit(4),	-- Sepulcher of Knowledge
+					crit(5),	-- Seat of the Primus
+					crit(6),	-- House of Plagues
+					crit(7),	-- House of the Chosen
+					crit(8),	-- House of Rituals
+					crit(9),	-- House of Eyes
+					crit(10),	-- House of Constructs
+					crit(11),	-- Glutharn's Decay
+					crit(12),	-- Forgotten Wounds
+					crit(13),	-- Burning Thicket
+				}),
+				ach(14304, {	-- Explore Ardenweald
+					crit(1),	-- Dusty Burrows
+					crit(2),	-- The Stalks
+					crit(3),	-- Starlit Overlook
+					crit(4),	-- Shimmerbough
+					crit(5),	-- Tirna Scithe
+					crit(6),	-- Hibernal Hollow
+					crit(7),	-- Heart of the Forest
+					crit(8),	-- Gormhive
+					crit(9),	-- Glitterfall Basin
+					crit(10),	-- Tirna Noch
+					crit(11),	-- Darkreach
+					crit(12),	-- Crumbled Ridge
+					crit(13),	-- Gossamer Cliffs
+				}),
+				ach(14303, {	-- Explore Bastion
+					crit(1),	-- Vestribule of Eternity
+					crit(2),	-- Temple of Humility
+					crit(3),	-- Purity's Pinnacle
+					crit(4),	-- Firstborne's Bounty
+					crit(5),	-- The Mnemonic Locus
+					crit(6),	-- The Eternal Forge
+					crit(7),	-- Elysian Hold
+					crit(8),	-- Citadel of Loyalty
+					crit(9),	-- Temple of Courage
+					crit(10),	-- Aspirant's Crucible
+					crit(11),	-- Agthia's Repose
+				}),
+				ach(14310, {	-- Adventurer of Revendreth
+					crit(1),	-- Soulstalker Doina
+					crit(2),	-- Scrivener Lenua
+					crit(3),	-- Innervus
+					crit(4),	-- Tomb Burster
+					crit(5),	-- Stonefist
+					crit(6),	-- Worldedge Gorger
+					crit(7),	-- Sire Ladinas
+					crit(8),	-- Executioner Adrastia
+					crit(9),	-- Lord Mortegore
+					crit(10),	-- Leeched Soul
+					crit(11),	-- Endlurker
+					crit(12),	-- Amalgamation of Light
+					crit(13),	-- Tollkeeper Varaboss
+					crit(14),	-- Amalgamation of Filth
+					crit(15),	-- Famu the Infinite
+					crit(16),	-- Azgar
+					crit(17),	-- Hopecrusher
+					crit(18),	-- Bog Beast
+					crit(19),	-- Executioner Aatron
+					crit(20),	-- Huntmaster Petrus
+					crit(21),	-- Grand Arcanist Dimitri
+					crit(22),	-- Manifestation of Wrath
+					crit(23),	-- Amalgamation of Sin
+					crit(24),	-- Sinstone Hoarder
+				}),
+				ach(14309, {	-- Adventurer of Ardenweald
+					crit(1),	-- Deathbinder Hroth
+					crit(2),	-- Mystic Rainbowhorn
+					crit(3),	-- Macabre
+					crit(4),	-- Gormtamer Tizo
+					crit(5),	-- Humon'gozz
+					crit(6),	-- Wrigglemortis
+					crit(7),	-- Deifir the Untamed
+					crit(8),	-- Old Ardeite
+					crit(9),	-- Skuld Vit
+					crit(10),	-- Hunter Vivanna
+					crit(11),	-- Mymaen
+					crit(12),	-- Rotbriar Changeling
+					crit(13),	-- Egg-Tender Leh'go
+					crit(14),	-- Rootwrithe
+					crit(15),	-- The Slumbering Emperor
+					crit(16),	-- Night Mare
+					crit(17),	-- Dustbrawl
+					crit(18),	-- Dustbrawl
+					crit(19),	-- Valfir the Unrelenting
+					crit(20),	-- Soultwister Cero
+					crit(21),	-- Soultwister Cero
+				}),
+				ach(14308, {	-- Adventurer of Maldraxxus
+					crit(1),	-- Corpsecutter Moroc
+					crit(2),	-- Scunner
+					crit(3),	-- Zargox the Reborn
+					crit(4),	-- Collector Kash
+					crit(5),	-- Ravenomous
+					crit(6),	-- Sister Chelicerae
+					crit(7),	-- Taskmaster Xox
+					crit(8),	-- Indomitable Schmitd
+					crit(9),	-- Nirvaska the Summoner
+					crit(10),	-- Thread Mistress Leeda
+					crit(11),	-- Smorgas The Feaster
+					crit(12),	-- Tahonta
+					crit(13),	-- Sabreil the Bonecleaver
+					crit(14),	-- Gristlebeak
+					crit(15),	-- Devour'us
+					crit(16),	-- Nerissa Heartless
+					crit(17),	-- Deadly Dapperling
+					crit(18),	-- Bubbleblood
+					crit(19),	-- Pesticide
+					crit(20),	-- Deepscar
+					crit(21),	-- Warbringer Mal'Korak
+					crit(22),	-- Necromantic Anomaly
+				}),
+				ach(14307, {	-- Adventurer of Bastion
+					crit(1),	-- Herculon
+					crit(2),	-- Fallen Acolyte Erisne
+					crit(3),	-- Sigilback
+					crit(4),	-- Cloudtail
+					crit(5),	-- Nemaeus
+					crit(6),	-- Baedos
+					crit(7),	-- Wingflayer the Cruel
+					crit(8),	-- Vesper Repair: Sophia's Aria
+					crit(9),	-- Dionae
+					crit(10),	-- Sundancer
+					crit(11),	-- Basilofos, King of the Hill
+					crit(12),	-- Dark Watcher
+					crit(13),	-- Cloudfeather Patriarch
+					crit(14),	-- Enforcer Aegeon
+					crit(15),	-- Unstable Memory
+					crit(16),	-- Embodied Hunger
+					crit(17),	-- Xixin the Ravening
+					crit(18),	-- Worldfeaster Chronn
+					crit(19),	-- Collector Astorestes
+					crit(20),	-- Demi the Relic Hoarder
+					crit(21),	-- Bookkeeper Mnemis
+					crit(22),	-- Aspirant Eolis
+					crit(23),	-- Echo of Aella
+					crit(24),	-- Corrupted Clawguard
+					crit(25),	-- Reekmonger
+					crit(26),	-- Aethon
+					crit(27),	-- Vesper Repair: Sophia's Overture
+					crit(28),	-- Orstus and Sotiros
+					crit(29),	-- The Ascended Council
+				}),
+				ach(14314, {	-- Treasures of Revendreth
+					crit(1),	-- Lost Quill
+					crit(2),	-- Stylish Parasol
+					crit(3),	-- The Count
+					crit(4),	-- Rapier of the Fearless
+					crit(5),	-- Vrytha's Dredglaive
+					crit(6),	-- Makeshift Muckpool
+					crit(7),	-- Taskmaster's Trove
+					crit(8),	-- Forbidden Chamber
+					crit(9),	-- Smuggled Cache
+					crit(10),	-- Chest of Envious Dreams
+					crit(11),	-- Filcher's Prize
+					crit(12),	-- Wayfarer's Abandoned Spoils
+					crit(13),	-- Remlate's Hidden Cache
+					crit(14),	-- Fleeing Soul's Bundle
+					crit(15),	-- Gilded Plum Chest
+					crit(16),	-- Abandoned Curios
+				}),
+				ach(14313, {	-- Treasures of Ardenweald
+					crit(1),	-- Aerto's Body
+					crit(2),	-- Lost Satchel
+					crit(3),	-- Veilwing Egg
+					crit(4),	-- Swollen Anima Seed
+					crit(5),	-- Faerie Trove
+					crit(6),	-- Harmonic Chest
+					crit(7),	-- Hearty Dragon Plume
+					crit(8),	-- Playful Vulpin Befriended
+					crit(9),	-- Cache of the Moon
+					crit(10),	-- Desiccated Moth
+					crit(11),	-- Dreamsong Heart
+					crit(12),	-- Enchanted Dreamcatcher
+					crit(13),	-- Elusive Faerie Cache
+					crit(14),	-- Cache of the Night
+					crit(15),	-- Darkreach Supplies
+				}),
+				ach(14312, {	-- Treasures of Maldraxxus
+					crit(1),	-- Ornate Bone Shield
+					crit(2),	-- Kyrian Keepsake
+					crit(3),	-- Halis's Lunch Pail
+					crit(4),	-- Vat of Conspicuous Slime
+					crit(5),	-- Stolen Jar
+					crit(6),	-- Necro Tome
+					crit(7),	-- Forgotten Momentos
+					crit(8),	-- Chest of Eyes
+					crit(9),	-- Misplaced Supplies
+					crit(10),	-- Glutharn's Stash
+					crit(11),	-- Runespeaker's Trove
+					crit(12),	-- Plaguefallen Chest
+					crit(13),	-- Ritualist's Cache
+				}),
+				ach(14311, {	-- Treasures of Bastion
+					crit(1),	-- Scroll of Aeons
+					crit(2),	-- Vesper of Virtues
+					crit(3),	-- Purifying Draught
+					crit(4),	-- Lost Disciple's Notes
+					crit(5),	-- Larion Tamer's Harness
+					crit(6),	-- Stolen Equipment
+					crit(7),	-- Abandoned Stockpile
+					crit(8),	-- Experimental Construct Part
+					crit(9),	-- Windsmith's Tools
+					crit(10),	-- Memorial Offerings
+					crit(11),	-- Gift of Agthia
+					crit(12),	-- Gift of Vesiphone
+					crit(13),	-- Gift of Chyrus
+					crit(14),	-- Gift of Thenios
+					crit(15),	-- Gift of Devos
+				}),
 			}),
 			ach(14788, {	-- Fractured Faerie Tales
 				crit(1),	-- A Meandering Story
@@ -355,18 +408,6 @@ _.Achievements =
 				crit(17),	-- Stygian Incinerator
 				crit(18),	-- Dath Rezara
 				crit(19),	-- Ratgusher
-			}),
-			ach(14276, {	-- It's Always Sinny in Revendreth
-				crit(1),	-- Inquisitor Otilia
-				crit(2),	-- Inquisitor Petre
-				crit(3),	-- Inquisitor Sorin
-				crit(4),	-- Inquisitor Traian
-				crit(5),	-- High Inquisitor Dacian
-				crit(6),	-- High Inquisitor Gabi
-				crit(7),	-- High Inquisitor Magda
-				crit(8),	-- High Inquisitor Radu
-				crit(9),	-- Grand Inquisitor Aurica
-				crit(10),	-- Grand Inquisitor Nicu
 			}),
 			ach(14721, {	-- It's in the Mix
 				i(183903),	-- Smelly Jelly
@@ -411,9 +452,20 @@ _.Achievements =
 			}),
 			ach(14277, {	-- The Accuser's Avowed
 				title(423),	-- Cryptkeeper
-				crit(1),	-- Crypt Kicker
-				crit(2),	-- Absolution for All
-				crit(3),	-- It's Always Sinny in Revendreth
+				ach(14273),	-- Crypt Kicker
+				ach(14274),	-- Absolution for All
+				ach(14276, {	-- It's Always Sinny in Revendreth
+					crit(1),	-- Inquisitor Otilia
+					crit(2),	-- Inquisitor Petre
+					crit(3),	-- Inquisitor Sorin
+					crit(4),	-- Inquisitor Traian
+					crit(5),	-- High Inquisitor Dacian
+					crit(6),	-- High Inquisitor Gabi
+					crit(7),	-- High Inquisitor Magda
+					crit(8),	-- High Inquisitor Radu
+					crit(9),	-- Grand Inquisitor Aurica
+					crit(10),	-- Grand Inquisitor Nicu
+				}),
 			}),
 			ach(14731, {	-- To All the Squirrels I've Loved and Lost
 				crit(1),	-- Dreadfur Kit
@@ -428,73 +480,6 @@ _.Achievements =
 				crit(10),	-- Shardling
 				crit(11),	-- Emaciated Bat
 				crit(12),	-- Creeper
-			}),
-			ach(14313, {	-- Treasures of Ardenweald
-				crit(1),	-- Aerto's Body
-				crit(2),	-- Lost Satchel
-				crit(3),	-- Veilwing Egg
-				crit(4),	-- Swollen Anima Seed
-				crit(5),	-- Faerie Trove
-				crit(6),	-- Harmonic Chest
-				crit(7),	-- Hearty Dragon Plume
-				crit(8),	-- Playful Vulpin Befriended
-				crit(9),	-- Cache of the Moon
-				crit(10),	-- Desiccated Moth
-				crit(11),	-- Dreamsong Heart
-				crit(12),	-- Enchanted Dreamcatcher
-				crit(13),	-- Elusive Faerie Cache
-				crit(14),	-- Cache of the Night
-				crit(15),	-- Darkreach Supplies
-			}),
-			ach(14311, {	-- Treasures of Bastion
-				crit(1),	-- Scroll of Aeons
-				crit(2),	-- Vesper of Virtues
-				crit(3),	-- Purifying Draught
-				crit(4),	-- Lost Disciple's Notes
-				crit(5),	-- Larion Tamer's Harness
-				crit(6),	-- Stolen Equipment
-				crit(7),	-- Abandoned Stockpile
-				crit(8),	-- Experimental Construct Part
-				crit(9),	-- Windsmith's Tools
-				crit(10),	-- Memorial Offerings
-				crit(11),	-- Gift of Agthia
-				crit(12),	-- Gift of Vesiphone
-				crit(13),	-- Gift of Chyrus
-				crit(14),	-- Gift of Thenios
-				crit(15),	-- Gift of Devos
-			}),
-			ach(14312, {	-- Treasures of Maldraxxus
-				crit(1),	-- Ornate Bone Shield
-				crit(2),	-- Kyrian Keepsake
-				crit(3),	-- Halis's Lunch Pail
-				crit(4),	-- Vat of Conspicuous Slime
-				crit(5),	-- Stolen Jar
-				crit(6),	-- Necro Tome
-				crit(7),	-- Forgotten Momentos
-				crit(8),	-- Chest of Eyes
-				crit(9),	-- Misplaced Supplies
-				crit(10),	-- Glutharn's Stash
-				crit(11),	-- Runespeaker's Trove
-				crit(12),	-- Plaguefallen Chest
-				crit(13),	-- Ritualist's Cache
-			}),
-			ach(14314, {	-- Treasures of Revendreth
-				crit(1),	-- Lost Quill
-				crit(2),	-- Stylish Parasol
-				crit(3),	-- The Count
-				crit(4),	-- Rapier of the Fearless
-				crit(5),	-- Vrytha's Dredglaive
-				crit(6),	-- Makeshift Muckpool
-				crit(7),	-- Taskmaster's Trove
-				crit(8),	-- Forbidden Chamber
-				crit(9),	-- Smuggled Cache
-				crit(10),	-- Chest of Envious Dreams
-				crit(11),	-- Filcher's Prize
-				crit(12),	-- Wayfarer's Abandoned Spoils
-				crit(13),	-- Remlate's Hidden Cache
-				crit(14),	-- Fleeing Soul's Bundle
-				crit(15),	-- Gilded Plum Chest
-				crit(16),	-- Abandoned Curios
 			}),
 			ach(14768, {	-- What is that Melody?
 				crit(1),	-- Hymn of Purity
