@@ -2932,6 +2932,9 @@ _.HiddenQuestTriggers =
 		q(62850),	--  \ triggered when logging into my 50 main during week 2 of the prepatch
 		q(62851),	--  / nothing else done, quests were not there during week 1
 		q(62852),	-- /
+		
+		-- Various tracking quests
+		q(61858),	-- taking the portal to Acherus during "Shadowlands: A Chilling Summons"
 
 		-- Torghast
 		q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)
