@@ -28,6 +28,14 @@ _.Zones =
 							i(181822),		-- Armored War-Bred Tauralus
 						},
 					}),
+					q(61761, {	-- The Better Part of Valor
+						--["provider"] = { "n", 168381 },	-- Baroness Draka
+						--["coord"] = { 50.3, 67.7, 1536 },
+						["lvl"] = { 60 },
+						["g"] = {
+							i(183847),		-- Acolyte's Guise
+						},
+					}),
 				}),
 				-- Champion of Pain
 				q(57390, {	-- To Die By the Sword

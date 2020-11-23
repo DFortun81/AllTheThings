@@ -14,17 +14,19 @@ profession(COOKING, {
 						},
 						{
 							["categoryID"] = 343--[[Meat Dishes]],
+							["g"] = {
+								{
+									["recipeID"] = 169696,--[[Marinated Elekk Steak]]
+									["u"] = NEVER_IMPLEMENTED,
+								},
+								{
+									["recipeID"] = 169699,--[[Seasoned Elekk Ribeye]]
+									["u"] = NEVER_IMPLEMENTED,
+								},
+							},
 						},
 						{
 							["categoryID"] = 344--[[Fish Dishes]],
-						},
-						{
-							["recipeID"] = 169696,--[[Marinated Elekk Steak]]
-							["u"] = NEVER_IMPLEMENTED,
-						},
-						{
-							["recipeID"] = 169699,--[[Seasoned Elekk Ribeye]]
-							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 169701,--[[Seasoned Elekk Ribeye]]

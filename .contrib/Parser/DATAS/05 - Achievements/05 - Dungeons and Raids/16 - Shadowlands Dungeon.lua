@@ -54,6 +54,10 @@ _.Achievements =
 			}),
 			ach(14352),	-- Nobody Puts Denathrius in a Corner
 			ach(14567),	-- Picking Up the Pieces
+			ach(14285),	-- Ready for Raiding VII
+			ach(14286),	-- Residue Evil
+			ach(14292),	-- Riding with my Slimes
+			ach(14533),	-- Royal Rumble
 			ach(14291, {	-- Someone Could Trip on These!
 				crit(1),	-- First Toy
 				crit(2),	-- Second Toy
@@ -62,9 +66,6 @@ _.Achievements =
 				crit(5),	-- Fifth Toy
 				crit(6),	-- Sixth Toy
 			}),
-			ach(14285),	-- Ready for Raiding VII
-			ach(14286),	-- Residue Evil
-			ach(14292),	-- Riding with my Slimes
 			ach(14320),	-- Surgeon's Supplies
 			ach(14606),	-- Thinking with...
 			ach(14297, {	-- Three Choose One

@@ -561,19 +561,27 @@ _.Achievements =
 				crit(1),		-- Bountiful Harvest
 				crit(2),		-- Surgeon's Supplies
 				crit(3),		-- Ready for Raiding VII
-				crit(4),		-- Full Gores Meal
-				crit(5),		-- Going Viral
-				crit(6),		-- Riding with my Slimes
-				crit(7),		-- Someone Could Trip on These!
-				crit(8),		-- Breaking Bad
-				crit(9),		-- Nobody Puts Denathrius in a Corner
-				crit(10),		-- ExSPEARiential
-				crit(11),		-- I Can See My House From Here
-				crit(12),		-- Residue Evil
-				crit(13),		-- I Only Have Eyes For You
-				crit(14),		-- Three Choose One
-				crit(15),		-- Highly Communicable
-				crit(16),		-- Kaal-ed Shot
+				crit(4),		-- Hooked On Hydroponics
+				crit(5),		-- Someone Could Trip on These!
+				crit(6),		-- Hunger for Knowledge
+				crit(7),		-- Full Gores Meal
+				crit(8),		-- Going Viral
+				crit(9),		-- Riding with my Slimes
+				crit(10),		-- Picking Up the Pieces
+				crit(11),		-- Breaking Bad
+				crit(12),		-- Nobody Puts Denathrius in a Corner
+				crit(13),		-- Couples Therapy
+				crit(14),		-- Highly Communicable
+				crit(15),		-- Thinking with...
+				crit(16),		-- Goliath Offline
+				crit(17),		-- ExSPEARiential
+				crit(18),		-- I Can See My House From Here
+				crit(19),		-- Three Choose One
+				crit(20),		-- Fresh Meat!
+				crit(21),		-- Royal Rumble
+				crit(22),		-- Residue Evil
+				crit(23),		-- I Only Have Eyes For You
+				crit(24),		-- Kaal-ed Shot
 			}),
 			ach(8124, {		-- Glory of the Thundering Raider
 				i(93662),		-- Reins of the Armored Skyscreamer

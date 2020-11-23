@@ -26,7 +26,6 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(7292),	-- Green Acres (Halfhill)
 				ach(6850, {	-- Hozen in the Mist
 					["collectible"] = false,
 					["g"] = {

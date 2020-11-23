@@ -100,17 +100,17 @@ _.Achievements =
 			ach(6830),		-- Professional Zen Master
 			ach(10761),		-- Resourceful
 			ach(14330, {	-- Shadowlands Master of All
-				crit(1),	-- Shadowlands Alchemy
-				crit(2),	-- Shadowlands Blacksmithing
-				crit(3),	-- Shadowlands Enchanting
-				crit(4),	-- Shadowlands Engineering
-				crit(5),	-- Shadowlands Herbalism
-				crit(6),	-- Shadowlands Inscription
-				crit(7),	-- Shadowlands Jewelcrafting
-				crit(8),	-- Shadowlands Leatherworking
-				crit(9),	-- Shadowlands Mining
-				crit(10),	-- Shadowlands Skinning
-				crit(11),	-- Shadowlands Tailoring
+				crit(1),		-- Shadowlands Alchemy
+				crit(2),		-- Shadowlands Blacksmithing
+				crit(3),		-- Shadowlands Enchanting
+				crit(4),		-- Shadowlands Engineering
+				crit(5),		-- Shadowlands Herbalism
+				crit(6),		-- Shadowlands Inscription
+				crit(7),		-- Shadowlands Jewelcrafting
+				crit(8),		-- Shadowlands Leatherworking
+				crit(9),		-- Shadowlands Mining
+				crit(10),		-- Shadowlands Skinning
+				crit(11),		-- Shadowlands Tailoring
 			}),
 			ach(10588), 	-- The Shortest Distance
 			ach(6835),		-- Working For a Living

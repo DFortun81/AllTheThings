@@ -7,9 +7,9 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(-950, {	-- Mirror Network
-				["description"] = "|cFFfe040fVenthyr Covenant only.|r",
+				["description"] = "|cFFfe040fVenthyr Covenant|r only.",
 				["g"] = {
-				-- To Do: Add Questline for each Mirror Tier
+					-- TODO: Add Questline for each Mirror Tier
 					n(-951, {	-- Tier 1 Mirror Mirror
 					}),
 					n(-952, {	-- Tier 2 Looking Glass
@@ -17,20 +17,20 @@ _.Zones =
 					}),
 					n(-953, {	-- Tier 3 Mirror's Edge
 						["description"] = "Requires Venthyr Renown 19.",
-					--	o(357565, {	-- Repaired Transport Mirror
-						--	["description"] = "Requires Tier 3 Mirror Network to see.",
-						--	["npcID"] = 173634,	-- Muckribbon
-						--	["coord"] = { 69.3, 77.9, 1525 },
-						--	["questID"] = 62196,
+						--o(357565, {	-- Repaired Transport Mirror
+							--["description"] = "Requires Tier 3 Mirror Network to see.",
+							--["npcID"] = 173634,	-- Muckribbon
+							--["coord"] = { 69.3, 77.9, 1525 },
+							--["questID"] = 62196,
 							["g"] = {
 								i(183855),	-- Stony's Infused Ruby
-					--		},
-					--	}),
+							--},
+						--}),
 					--[[
 					--object(xxxxxx, {	--
-					--	["description"] = "Chance to loot from repairing broken mirrors.",
+						--["description"] = "Chance to loot from repairing broken mirrors.",
 					--]]
-					--	 	["g"] = {
+							--["g"] = {
 								i(183798),	-- Silessa's Battle Harness
 							},
 					--[[

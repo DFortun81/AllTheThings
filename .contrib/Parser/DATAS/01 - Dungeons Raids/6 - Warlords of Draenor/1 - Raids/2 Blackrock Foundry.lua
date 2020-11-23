@@ -372,15 +372,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(115535),	-- Ogreskull Boneplate Greaves
 						i(115573),	-- Poisoner's Legguards
 					}),
-					i(118382), -- Ember of the Mountain
-					-- Causes issues with the parser. The Quest describes the source of the items (Final Boss of each wing)
-					--[[	q(37029, { 	-- Sigil of the Black Hand
-							["altQuests"] = {
-								37030,	-- Sigil of the Black Hand [Heroic]
-								37031,	-- Sigil of the Black Hand [Mythic]
-							},
-						}),
-					--]]
 					i(113886),	-- Crescent of Living Magma
 					i(113885),	-- Mouth of The Fury
 					i(113891),	-- Blast-Proof Cowl
@@ -477,15 +468,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(115539),	-- Ogreskull Boneplate Greathelm
 						i(115572),	-- Poisoner's Helmet
 					}),
-					i(118383),	-- Heart of Stone
-					-- Causes issues with the parser. The Quest describes the source of the items (Final Boss of each wing)
-					--[[	
-						["questID"] = 37029,	-- Sigil of the Black Hand
-						["altQuests"] = {
-							37030,	-- Sigil of the Black Hand [Heroic]
-							37031,	-- Sigil of the Black Hand [Mythic]
-						},
-					--]]
 					i(113934),	-- Fang of the Earth
 					i(113927),	-- Kromog's Brutal Fist
 					i(113926),	-- Kromog's Protecting Palm
@@ -594,15 +576,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(115538),	-- Ogreskull Boneplate Gauntlets
 							i(115571),	-- Poisoner's Gloves
 						}),
-						i(118384),	-- Sliver of Iron
-						-- Causes issues with the parser. The Quest describes the source of the items (Final Boss of each wing)
-						--[[	
-							["questID"] = 37029,	-- Sigil of the Black Hand
-							["altQuests"] = {
-								37030,	-- Sigil of the Black Hand [Heroic]
-								37031,	-- Sigil of the Black Hand [Mythic]
-							},
-						--]]
 						i(113966),	-- Gar'an's Brutal Spearlauncher
 						i(113973),	-- Koloch Na, the Blood Feast
 						i(113965),	-- Sorka's Chainfist
@@ -954,12 +927,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(115535),	-- Ogreskull Boneplate Greaves
 						i(115573),	-- Poisoner's Legguards
 					}),
-					i(118387),	-- Ember of the Mountain (Heroic)
-					-- Causes issues with the parser. The Quest describes the source of the items (Final Boss of each wing)
-					--[[		q(37030, {	-- Sigil of the Black Hand [Heroic]
-							["altQuests"] = { 37031 },	-- Sigil of the Black Hand [Mythic]
-						}),
-					--]]
 					i(113886),	-- Crescent of Living Magma
 					i(113885),	-- Mouth of The Fury
 					i(113891),	-- Blast-Proof Cowl
@@ -1056,11 +1023,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(115539),	-- Ogreskull Boneplate Greathelm
 						i(115572),	-- Poisoner's Helmet
 					}),
-					i(118386),	-- Heart of Stone (Heroic)
-					-- Causes issues with the parser. The Quest describes the source of the items (Final Boss of each wing)
-					--[[		["questID"] = 37030,	-- Sigil of the Black Hand [Heroic]
-						["altQuests"] = { 37031 },	-- Sigil of the Black Hand [Mythic]
-					--]]
 					i(113934),	-- Fang of the Earth
 					i(113927),	-- Kromog's Brutal Fist
 					i(113926),	-- Kromog's Protecting Palm
@@ -1169,11 +1131,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(115538),	-- Ogreskull Boneplate Gauntlets
 							i(115571),	-- Poisoner's Gloves
 						}),
-						i(118385),	-- Sliver of Iron (Heroic)
-						-- Causes issues with the parser. The Quest describes the source of the items (Final Boss of each wing)
-						--[[["questID"] = 37030,	-- Sigil of the Black Hand [Heroic]
-							["altQuests"] = { 37031 },	-- Sigil of the Black Hand [Mythic]
-						--]]
 						i(113966),	-- Gar'an's Brutal Spearlauncher
 						i(113973),	-- Koloch Na, the Blood Feast
 						i(113965),	-- Sorka's Chainfist
@@ -1530,9 +1487,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(115535),	-- Ogreskull Boneplate Greaves
 						i(115573),	-- Poisoner's Legguards
 					}),
-					i(118390, {	-- Ember of the Mountain (Mythic)
-						["questID"] = 37031,	-- Sigil of the Black Hand (Mythic)
-					}),
 					i(113886),	-- Crescent of Living Magma
 					i(113885),	-- Mouth of The Fury
 					i(113891),	-- Blast-Proof Cowl
@@ -1631,9 +1585,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(115542),	-- Living Wood Headpiece
 						i(115539),	-- Ogreskull Boneplate Greathelm
 						i(115572),	-- Poisoner's Helmet
-					}),
-					i(118389, {	-- Heart of Stone (Mythic)
-						["questID"] = 37031,	-- Sigil of the Black Hand (Mythic)
 					}),
 					i(113934),	-- Fang of the Earth
 					i(113927),	-- Kromog's Brutal Fist
@@ -1745,9 +1696,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(115541),	-- Living Wood Grips
 							i(115538),	-- Ogreskull Boneplate Gauntlets
 							i(115571),	-- Poisoner's Gloves
-						}),
-						i(118388, {	-- Sliver of Iron (Mythic)
-							["questID"] = 37031,	-- Sigil of the Black Hand (Mythic)
 						}),
 						i(113966),	-- Gar'an's Brutal Spearlauncher
 						i(113973),	-- Koloch Na, the Blood Feast

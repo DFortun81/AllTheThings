@@ -64,7 +64,7 @@ _.Zones =
 					["coord"] = { 31.4, 35.4, 1536 },
 					--["questID"] = ,
 					["isDaily"] = true,
-					["description"] = "Requires to be a Necrolords Covenant & channel anima to House of Constructs to summon him.",
+					["description"] = "Requires to be a |cFF40bf40Necrolord Covenant|r & channel anima to House of Constructs to summon him.",
 					["g"] = {
 						i(182080),	-- Predatory Plagueroc
 						ach(14308, crit(19)),	-- Adventurer of Maldraxxus / Gieger <Experimental Construct>
@@ -140,7 +140,7 @@ _.Zones =
 					["coord"] = { 50.4, 48.2, 1536 },
 					--["questID"] = ,
 					["isDaily"] = true,
-					["description"] = "Requires a Necrolord Covenant to summon.",
+					["description"] = "Requires a |cFF40bf40Necrolord Covenant|r to summon.",
 					["g"] = {
 						i(182083),	-- Bonecleaver'S Skullboar
 						i(181815),	-- Armored Bonehoof Tauralus

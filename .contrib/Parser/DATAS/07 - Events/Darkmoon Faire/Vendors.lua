@@ -764,6 +764,15 @@ _.WorldEvents =
 					i(126930, {	-- Faded Treasure Map
 						["cost"] = { { "i", 124669, 100 }, },	-- 100x Darkmoon Daggermaw
 					}),
+					i(184689, {	-- Recipe: Extra Fancy Darkmoon Feast
+						["cost"] = { { "i", 124669, 50 }, },	-- 50x Darkmoon Daggermaw
+					}),
+					i(184683, {	-- Recipe: Extra Lemony Herb Filet
+						["cost"] = { { "i", 124669, 10 }, },	-- 10x Darkmoon Daggermaw
+					}),
+					i(184625, {	-- Recipe: Extra Sugary Fish Feast
+						["cost"] = { { "i", 124669, 25 }, },	-- 25x Darkmoon Daggermaw
+					}),
 					i(126929, {	-- Recipe: Fancy Darkmoon Feast
 						["cost"] = { { "i", 124669, 50 }, },	-- 50x Darkmoon Daggermaw
 					}),

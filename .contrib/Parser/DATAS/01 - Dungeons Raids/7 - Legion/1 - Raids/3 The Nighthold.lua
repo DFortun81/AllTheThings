@@ -662,10 +662,6 @@ _.Instances = { tier(7, {	-- Legion
 				cr(106643, e(1743, {	-- Elisande
 					ach(10838, crit(3)),	-- Nightspire / Elisande
 					ach(10699),	-- Infinitesimal
-					i(143656, {	-- Echo of Time (Normal)
-						["altQuests"] = { 45382, 45383 },	-- The Nighthold: Talisman of the Shal'dorei (H, M)
-						["questID"] = 45381,	-- The Nighthold: Talisman of the Shal'dorei (Normal)
-					}),
 					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
 					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]
 					i(143565, {	-- Helm of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -1042,10 +1038,6 @@ _.Instances = { tier(7, {	-- Legion
 						["achievementID"] = 10838,	-- Nightspire
 					}),
 					ach(10699),	-- Infinitesimal
-					i(143657, {	-- Echo of Time (Heroic)
-						["altQuests"] = { 45383 },	-- The Nighthold: Talisman of the Shal'dorei (M)
-						["questID"] = 45382,	-- The Nighthold: Talisman of the Shal'dorei (Heroic)
-					}),
 					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
 					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]
 					i(143565, {	-- Helm of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -1431,9 +1423,6 @@ _.Instances = { tier(7, {	-- Legion
 					ach(10838, crit(3)),	-- Nightspire / Elisande
 					ach(10849),	-- Mythic: Grand Magistrix Elisande
 					ach(10699),	-- Infinitesimal
-					i(143658, {	-- Echo of Time (Mythic)
-						["questID"] = 45383,	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
-					}),
 					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
 					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]
 					i(143565, {	-- Helm of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]

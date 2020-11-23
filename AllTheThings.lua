@@ -7884,15 +7884,15 @@ end)();
 -- Tier Lib
 (function()
 	local tierIcons = {
-		"Interface\\Addons\\AllTheThings\\assets\\Classic", 					-- Classic
-		"Interface\\Addons\\AllTheThings\\assets\\Bc",			-- Burning Crusade
-		"Interface\\Addons\\AllTheThings\\assets\\woltk",		-- Wrath
-		"Interface\\Addons\\AllTheThings\\assets\\Cata",				-- Cata
-		"Interface\\Addons\\AllTheThings\\assets\\MoP",			-- Mists
-		"Interface\\Addons\\AllTheThings\\assets\\WoD",	-- WoD
-		"Interface\\Addons\\AllTheThings\\assets\\leg",			-- Legion
-		"Interface\\Addons\\AllTheThings\\assets\\BfA",							-- Battle For Azeroth
-		"Interface\\Addons\\AllTheThings\\assets\\SL",							-- Shadowlands
+		"Interface\\Addons\\AllTheThings\\assets\\Classic",	-- Classic
+		"Interface\\Addons\\AllTheThings\\assets\\Bc",		-- Burning Crusade
+		"Interface\\Addons\\AllTheThings\\assets\\woltk",	-- Wrath
+		"Interface\\Addons\\AllTheThings\\assets\\Cata",	-- Cata
+		"Interface\\Addons\\AllTheThings\\assets\\MoP",		-- Mists
+		"Interface\\Addons\\AllTheThings\\assets\\WoD",		-- WoD
+		"Interface\\Addons\\AllTheThings\\assets\\leg",		-- Legion
+		"Interface\\Addons\\AllTheThings\\assets\\BfA",		-- Battle For Azeroth
+		"Interface\\Addons\\AllTheThings\\assets\\SL",		-- Shadowlands
 	};
 	local tierLevel = {
 		1, 	-- Classic

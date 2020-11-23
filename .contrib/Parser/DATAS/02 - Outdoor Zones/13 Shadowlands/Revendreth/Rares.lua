@@ -103,7 +103,7 @@ _.Zones =
 					["coord"] = { 45.83, 79.34, 1525 },
 					--["questID"] = ,
 					["isDaily"] = true,
-					["description"] = "Requires to be a Venthyr Covenant & your Anima to be channel to Wanecrypt Hill to summon him. Use the Dredterror Ballista to make him attackable.",
+					["description"] = "Requires to be a |cFFfe040fVenthyr Covenant|r & your Anima to be channel to Wanecrypt Hill to summon him. Use the Dredterror Ballista to make him attackable.",
 					["g"] = {
 						ach(14310, crit(15)),		-- Adventurer of Revendreth / Harika the Horrid
 						i(180461),			-- Horrid Dredwing
@@ -216,11 +216,30 @@ _.Zones =
 					},
 				}),
 				n(160857, {	-- Sire Ladinas <The Lightrazed>
+					["description"] = "Collect Remnant of Light and use the received Extraaction Button on Crazed Ash Ghouls to have a chance to make Sire Ladinas spawn.",
 					["coord"] = { 34.6, 56.2, 1525 },
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(8)),	-- Adventurer of Revendreth / Sire Ladinas <The Lightrazed>
+						i(180873),	-- Smolderheart
+						o(339499, {	-- Remnant of Light
+							["coords"] = {
+								{ 36.77, 61.08, 1648 },
+								{ 36.01, 60.22, 1648 },
+								{ 35.34, 60.22, 1648 },
+								{ 35.39, 59.08, 1648 },
+								{ 35.32, 59.35, 1648 },
+								{ 35.03, 59.14, 1648 },
+								{ 34.87, 59.39, 1648 },
+								{ 34.36, 58.52, 1648 },
+								{ 34.83, 57.62, 1648 },
+								{ 33.92, 53.65, 1648 },
+							},
+							["g"] = {
+								i(180873),	-- Smolderheart
+							},
+						}),
 					},
 				}),
 				n(160392, {	-- Soulstalker Doina

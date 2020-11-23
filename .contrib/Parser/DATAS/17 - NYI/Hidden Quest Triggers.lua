@@ -448,6 +448,10 @@ _.HiddenQuestTriggers =
 		-------------------
 		--      MOP      --
 		-------------------
+		q(31485),	-- UNUSED — triggered after turning in quest #31281, "So You Want to Be a Chef..." in Valley of the Four Winds
+		q(31469),	-- UNUSED — triggered after turning in quest #31311, "Way of the Grill" in Vally of the Four Winds
+		q(30536),	-- FLAG - Weed War Training — triggered after turning in daily quest #30321, "Weed War II"
+		q(31950),	-- Tracking Quest: Move NPCs to Dais — triggered after turning in quest #31945, "Learn and Grow VI: Gina's Vote"
 		q(32357),	-- triggered after watching the RP that takes place after turning in #32316, "Heart of the Alliance," part of the Operation: Shieldwall campaign
 		q(32395),	-- Tracking Event: Saw Avartu - triggered while on "The Divine Bell," part of the Operation: Shieldwall campaign (at the end of the quest before killing Avartu)
 		q(32339),	-- Rebuilding the Mallet (Tracker) — triggered after turning in The Head and The Harmonic Ointment (The Handle was turned in earlier, but presumably requires all 3), part of the Operation: Shieldwall campaign
@@ -471,7 +475,7 @@ _.HiddenQuestTriggers =
 		q(30533),	-- Tracking Event: Finished Second Expansion
 		q(30574),	-- Tracking Event: Finished Third Expansion
 		q(29884),	-- Tracking Event: Spies Leave — triggers after turning in The Pearlfin Situation and Road Rations in Jade Forest
-		q(30530),	-- Tracking Event: Started First Expansion
+		q(30530),	-- Tracking Event: Started First Expansion — triggers after turning in "Growing the Farm I: A Little Problem" in Valley of the Four Winds
 		q(30532),	-- Tracking Event: Started Second Expansion
 		q(30573),	-- Tracking Event: Started Third Expansion
 		q(30564),	-- Tracking Event: Talked to Dog at Farm
@@ -1061,6 +1065,10 @@ _.HiddenQuestTriggers =
 		--    Legion     --
 		-------------------
 		--	Various tracking quests
+		q(42181),	-- triggered after turning in #39733, "The Lone Mountain"
+		q(43447),	-- Vignette: Wraithtalon — newer tracking quest for Wraithtalon rare in Val'sharah (on top of normal tracking quest - both pop at the same time)
+		q(33820),	-- Tracking Quest: Seen Escape Cinematic — triggered by cinematic during quest #34338, "The Descent"
+		q(36588),	-- Tracking - See Closed Chest — triggered immediately after accepting quest #34410, "The Beating Heart"
 		q(40087),	-- "Enter the Illidari: Shivarra" - Sevis Brightflame Sacrificed Tracking Event
 		q(44608),	-- Tracking Quest: Holy Ground 1 — these 5 are for the missions done during the priest class hall quest "Awakening the Light"
 		q(44609),	-- Tracking Quest: Holy Ground 2
@@ -1412,7 +1420,7 @@ _.HiddenQuestTriggers =
 		q(38547),	-- FLAG: Demonsteel Gauntlets Crafted
 		q(38549),	-- FLAG: Demonsteel Helm Crafted
 		q(47096),	-- Broken Shore - Choice: Blacksmithing
-        --  Engineering
+		--  Engineering
 		q(41100),	-- FLAG - Swap Didis - triggered after completing Endless Possibilities (40854)
 		--	Jewelcrafting
 		q(40557), 	-- FLAG: Clive Cozen Leave - Triggers after completing Hidden Intentions (40539)
@@ -1608,12 +1616,13 @@ _.HiddenQuestTriggers =
 		q(45502),	-- Suramar - WQ rare: Selenyi
 		q(45477),	-- Suramar - WQ rare: Sorallus
 		q(45474),	-- Suramar - WQ rare: Volshax, Breaker of Will
-		q(45485),	-- Val'Sharah - WQ rare: Aodh Witherpetal
-		q(45483),	-- Val'Sharah - WQ rare: Ealdis
-		q(45501),	-- Val'Sharah - WQ rare: Malisandra
-		q(45488),	-- Val'Sharah - WQ rare: Nylaathria the Forgotten
-		q(45487),	-- Val'Sharah - WQ rare: Rabxach
-		q(45493),	-- Val'Sharah - WQ rare: Witchdoctor Grgl-Brgl
+		q(45485),	-- Val'sharah - WQ rare: Aodh Witherpetal
+		q(45483),	-- Val'sharah - WQ rare: Ealdis
+		q(45484),	-- Val'sharah - WQ rare: Harbinger of Screams
+		q(45501),	-- Val'sharah - WQ rare: Malisandra
+		q(45488),	-- Val'sharah - WQ rare: Nylaathria the Forgotten
+		q(45487),	-- Val'sharah - WQ rare: Rabxach
+		q(45493),	-- Val'sharah - WQ rare: Witchdoctor Grgl-Brgl
 
 		--	Treasures
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8

@@ -6,6 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
+			-- TODO: should be under its own header or in Achievements header? currently it's just lone achievement in the Maldraxxus list
 			ach(14721, {	-- It's in the Mix --- needs work, think labortory of mardivas
 				--["description"] = "",
 				["coord"] = { 58.6, 74.2, 1536 },

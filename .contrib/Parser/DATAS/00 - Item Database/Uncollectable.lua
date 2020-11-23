@@ -107,15 +107,30 @@ i(12843);	-- Corruptor's Scourgestone
 i(169250);	-- Crude Eating Utensil
 i(9265);	-- Cuergo's Hidden Treasure
 i(169232);	-- Dud Blast Canister
+i(143656);	-- Echo of Time (N)
+i(143657);	-- Echo of Time (H)
+i(143658);	-- Echo of Time (M)
+i(118382);	-- Ember of the Mountain (N)
+i(118387);	-- Ember of the Mountain (H)
+i(118390);	-- Ember of the Mountain (M)
 i(164731);	-- Enchanted Shroud
 i(169778);	-- Enchanting Crystal
+i(141303);	-- Essence of Clarity (N)
+i(141304);	-- Essence of Clarity (H)
+i(141305);	-- Essence of Clarity (M)
 i(132560);	-- Essence of the Whirlwind
 i(132745);	-- Essence of the Whirlwind
 i(169229);	-- Exhaust Aromatics
 i(169164);	-- Father's Bones
 i(169166);	-- Father's Clothes
 i(169165);	-- Father's Sword
+i(128419);	-- Fel Essence (N)
+i(128420);	-- Fel Essence (H)
+i(128421);	-- Fel Essence (M)
 i(169228);	-- Hazardous Container
+i(118383);	-- Heart of Stone (N)
+i(118386);	-- Heart of Stone (H)
+i(118389);	-- Heart of Stone (M)
 i(168236);	-- Hearthstone Card
 i(158913);	-- Huge Dragon Kite
 i(169240);	-- Idea Starter
@@ -128,6 +143,7 @@ i(146977);	-- Legendary Tanner's Kit
 i(147209);	-- Legendary Wardenscale Supplies
 i(168280);	-- Lost Scale of the Scarlet Broodmother
 i(147582);	-- Mark of the Sentinax
+i(79269);	-- Marsh Lily
 i(146680);	-- Melandrus' Star-Touched Bracers
 i(169238);	-- Modified Radio Receiver
 i(169222);	-- Murloc Treasure
@@ -165,6 +181,12 @@ i(146911);	-- Sentinax Beacon of the Greater Firestorm
 i(169249);	-- Shark Tooth Necklace
 i(169253);	-- Shell Horn
 i(168817);	-- Siphoning Crystal
+i(118384);	-- Sliver of Iron (N)
+i(118385);	-- Sliver of Iron (H)
+i(118388);	-- Sliver of Iron (M)
+i(128416);	-- Soul Remnant (N)
+i(128417);	-- Soul Remnant (H)
+i(128418);	-- Soul Remnant (M)
 i(147075);	-- Spirit Net
 i(169246);	-- Strangely Seasoned Meat
 i(146682);	-- Suramari Soul-Wraps
@@ -238,6 +260,7 @@ i(173771);	-- Old Apple
 i(173778);	-- Orange Orange
 i(72201);	-- Plump Intestines
 i(9316);	-- Prismatic Punch Card
+i(79104);	-- Rusty Watering Can
 i(139590);	-- Scroll of Teleport: Ravenholdt
 i(6357);	-- Sealed Crate
 i(88496);	-- Sealed Crate
@@ -245,6 +268,7 @@ i(173776);	-- Stale Loaf
 i(67495);	-- Strange Bloated Stomach
 i(160378);	-- Strongarm Stout
 i(170379);	-- Sunwarmed Sand
+i(80513);	-- Vintage Bug Sprayer
 i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate
 i(9279);	-- White Punch Card
@@ -302,3 +326,4 @@ i(150750);	-- Moonkissed Antidote
 
 -- Miscellaneous
 i(89427);	-- Ancient Mogu Treasure
+i(85224);	-- Basic Seed Pack

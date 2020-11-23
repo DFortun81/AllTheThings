@@ -157,11 +157,24 @@ _.Zones =
 								["coord"] = { 9.67, 50.9, 418 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32162, {	-- Beastmaster's Hunt: The Tiger
+								["provider"] = { "i", 91821 },	-- Sturdy Tiger Trap
+								["isDaily"] = true,
+								["coord"] = { 9.70, 51.0, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32181, {	-- Beastmaster's Quarry: The Crane
 								["sourceQuests"] = { 32161 },	-- Beastmaster's Hunt: The Crane
 								["provider"] = { "n", 67503 },	-- Ancient Bloodcrown Crane
 								["isDaily"] = true,
 								["coord"] = { 40.3, 60.0, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32182, {	-- Beastmaster's Quarry: The Tiger
+								["sourceQuests"] = { 32162 },	-- Beastmaster's Hunt: The Tiger
+								["provider"] = { "n", 67498 },	-- Krasari Elder
+								["isDaily"] = true,
+								["coord"] = { 13.0, 37.7, 418 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32214, {	-- Bilgewater Infiltrators
@@ -233,6 +246,14 @@ _.Zones =
 								["provider"] = { "n", 67939 },	-- General Nazgrim
 								["coord"] = { 9.29, 51.2, 418 },
 								["races"] = HORDE_ONLY,
+							}),
+							q(32168, {	-- End of an Elder
+								["sourceQuests"] = { 32182 },	-- Beastmaster's Quarry: The Tiger
+								["provider"] = { "n", 67447 },	-- Jorn Skyseer (summons the mob)
+								["isDaily"] = true,
+								["coord"] = { 11.7, 60.8, 418 },
+								["races"] = HORDE_ONLY,
+								["crs"] = { 67438 },	-- Krasari Elder (killing the mob procs the quest)
 							}),
 							q(32319, {	-- Find Thrall!
 								["sourceQuests"] = { 32318 },	-- Regeneration Takes Time
@@ -1561,6 +1582,11 @@ _.Zones =
 								["provider"] = { "n", 60506 },	-- Thelonius
 								["isDaily"] = true,
 								["coord"] = { 31.8, 61.5, 418 },
+							}),
+							q(30731, {	-- Kuo-Na Quillpaw
+								["provider"] = { "n", 60506 },	-- Thelonius
+								["isDaily"] = true,
+								["coord"] = { 31.8, 61.4, 418 },
 							}),
 							q(30726, {	-- Minh Do-Tan
 								["provider"] = { "n", 60506 },	-- Thelonius

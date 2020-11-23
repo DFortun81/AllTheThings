@@ -153,7 +153,7 @@ _.Zones =
 					["coord"] = { 62.25, 53.97, 1565 },
 					--["questID"] = ,
 					["isDaily"] = true,
-					["description"] = "Night Fay Covenant only. Requires Dream Catcher.",
+					["description"] = "|cFFA330C9Night Fae Covenant|r only. Requires Dream Catcher.",
 					["g"] = {
 						i(180728),				-- Swift Gloomhoof
 						ach(14309, crit(23)),	-- Adventurer of Ardenweald / Night Mare
@@ -275,7 +275,7 @@ _.Zones =
 					["coord"] = { 30.0, 55.0, 1565 },
 					--["questID"] = ,
 					["isDaily"] = true,
-					["description"] = "Requires a Night Fay Covenant to remove the Veil. The Anima Conductor needs to channel anima to Tirna Scithe. Afterwards you can loot the Animaseed Light at the boss to remove the Veil.",
+					["description"] = "Requires a |cFFA330C9Night Fae Covenant|r to remove the Veil. The Anima Conductor needs to channel anima to Tirna Scithe. Afterwards you can loot the Animaseed Light at the boss to remove the Veil.",
 					["g"] = {
 						i(180730),	-- Wild Glimmerfur Prowler
 						ach(14309, crit(26)),	-- Adventurer of Ardenweald / Valfir the Unrelenting
