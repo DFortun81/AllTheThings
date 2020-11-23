@@ -5,9 +5,33 @@
 _.Achievements =
 {
 	n(-10055, {	-- Expansion Features
-		n(-10103, {	-- The Maw and Torghast
+		n(-10103, {	-- Torghast
 			ach(14759),	-- It's Coming Back to Me...
 			ach(14755),	-- Legendary Accord
+			ach(14810, {	-- Terror of Torghast (Layer 8)
+				ach(14809, {	-- Traversing Torghast (Layer 4)
+					ach(14808, {	-- Touring Torghast (Layer 1)
+						crit(1),	-- Skoldus Hall
+						crit(2),	-- Fracture Chambers
+						crit(3),	-- The Soulforges
+						crit(4),	-- Coldheart Interstitia
+						crit(5),	-- Mort'regar
+						crit(6),	-- The Upper Reaches
+					}),
+					crit(1),	-- Skoldus Hall
+					crit(2),	-- Fracture Chambers
+					crit(3),	-- The Soulforges
+					crit(4),	-- Coldheart Interstitia
+					crit(5),	-- Mort'regar
+					crit(6),	-- The Upper Reaches
+				}),
+				crit(1),	-- Skoldus Hall
+				crit(2),	-- Fracture Chambers
+				crit(3),	-- The Soulforges
+				crit(4),	-- Coldheart Interstitia
+				crit(5),	-- Mort'regar
+				crit(6),	-- The Upper Reaches
+			}),
 			ach(14754),	-- The Forgotten One
 			ach(14587, {	-- Torghast: Coldheart Interstitia: Layer 9
 				ach(14483),	-- Torghast: Coldheart Interstitia: Layer 1
