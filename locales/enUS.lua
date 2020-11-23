@@ -4330,4 +4330,8 @@ app.L = {
 		{0, "", ""}, -- 44
 		{1, "|CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nHouse of Nobles Cape/Gurubashi Empire Greatcloak (both BFA Emissary Rewards) & Ogom the Mangler \nare currently broken and need to be fixed.|r", "Broken Loot (45)"}, -- 45
 	};
+
+	["CUSTOM_COLLECTS_REASONS"] = {
+		["NPE"] = { "New Player Experience", "Only a New Character can Collect this" },
+	};
 };

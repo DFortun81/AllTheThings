@@ -275,6 +275,7 @@ namespace ATT
                     // String Data Type Fields
                     case "name":
                     case "description":
+                    case "customCollect":
                         {
                             item[field] = ATT.Export.ToString(value);
                             break;

@@ -5,6 +5,7 @@
 _.Zones =
 {
 	m(1409, {	-- Exile's Reach
+		["customCollect"] = "NPE",
 		["icon"] = 3567434,
 		["lvl"] = { 1, 18 },	-- Only new players, no exp gain after 18
 		["maps"] = {
@@ -19,6 +20,7 @@ _.Zones =
 				* Some class-specific quests are missing providers. Search "TODO" for which ones are needed
 			]]--
 			m(1609, {	-- Darkmaul Citadel
+				["customCollect"] = "NPE",
 				["icon"] = 3759927,
 				["maps"] = {
 					1610,	-- Darkmaul Citadel upper floor
@@ -45,17 +47,13 @@ _.Zones =
 					}),
 				},
 			}),
-			n(QUESTS, bubbleDown({
-					-- ["altQuests"] = {
-						-- 62808,	-- 120 character prior to 9.0
-					-- },
+			n(QUESTS, sharedData({
+					["customCollect"] = "NPE",
 				}, {
 				cl(DRUID, {
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 							["classes"] = { DRUID },
-							-- ["altQuests"] = {
-								-- 62808,	-- 120 character prior to 9.0
-							-- },
+							["customCollect"] = "NPE",
 						}, {
 						q(59350, {	-- A Druid's Form (A)
 							["coord"] = { 52.0, 55.2, 1409 },
@@ -78,11 +76,9 @@ _.Zones =
 					}),
 				}),
 				cl(HUNTER, {
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 							["classes"] = { HUNTER },
-							-- ["altQuests"] = {
-								-- 62808,	-- 120 character prior to 9.0
-							-- },
+							["customCollect"] = "NPE",
 						}, {
 						q(59342, {	-- Taming the Wilds (A)
 							["coord"] = { 62.7, 69.8, 1409 },
@@ -141,11 +137,9 @@ _.Zones =
 					}),
 				}),
 				cl(MAGE, {
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 							["classes"] = { MAGE },
-							-- ["altQuests"] = {
-								-- 62808,	-- 120 character prior to 9.0
-							-- },
+							["customCollect"] = "NPE",
 						}, {
 						q(59352, {	-- A Mage's Knowledge (A)
 							["coord"] = { 52.0, 55.2, 1409 },
@@ -180,11 +174,9 @@ _.Zones =
 					}),
 				}),
 				cl(MONK, {
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 							["classes"] = { MONK },
-							-- ["altQuests"] = {
-								-- 62808,	-- 120 character prior to 9.0
-							-- },
+							["customCollect"] = "NPE",
 						}, {
 						q(59339, {	-- Enhanced Combat Tactics (A - Monk)
 							["coord"] = { 58.3, 74.6, 1409 },
@@ -231,11 +223,9 @@ _.Zones =
 					}),
 				}),
 				cl(PALADIN, {
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 							["classes"] = { PALADIN },
-							-- ["altQuests"] = {
-								-- 62808,	-- 120 character prior to 9.0
-							-- },
+							["customCollect"] = "NPE",
 						}, {
 						q(58923, {	-- A Paladin's Service (A)
 							["coord"] = { 52.0, 55.4, 1409 },
@@ -265,11 +255,9 @@ _.Zones =
 					}),
 				}),
 				cl(PRIEST, {
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 							["classes"] = { PRIEST },
-							-- ["altQuests"] = {
-								-- 62808,	-- 120 character prior to 9.0
-							-- },
+							["customCollect"] = "NPE",
 						}, {
 						q(58953, {	-- A Priest's End (A)
 							["coord"] = { 52.0, 55.2, 1409 },
@@ -298,11 +286,9 @@ _.Zones =
 					}),
 				}),
 				cl(ROGUE, {
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 							["classes"] = { ROGUE },
-							-- ["altQuests"] = {
-								-- 62808,	-- 120 character prior to 9.0
-							-- },
+							["customCollect"] = "NPE",
 						}, {
 						q(58917, {	-- A Rogue's End (A)
 							["coord"] = { 52.0, 55.2, 1409 },
@@ -331,11 +317,9 @@ _.Zones =
 					}),
 				}),
 				cl(SHAMAN, {
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 							["classes"] = { SHAMAN },
-							-- ["altQuests"] = {
-								-- 62808,	-- 120 character prior to 9.0
-							-- },
+							["customCollect"] = "NPE",
 						}, {
 						-- apparently horde and alliance shamans get the same quest.  a horde user also picked up 59002 on their shaman.
 						q(59002, {	-- A Shaman's Duty
@@ -347,11 +331,9 @@ _.Zones =
 					}),
 				}),
 				cl(WARLOCK, {
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 							["classes"] = { WARLOCK },
-							-- ["altQuests"] = {
-								-- 62808,	-- 120 character prior to 9.0
-							-- },
+							["customCollect"] = "NPE",
 						}, {
 						q(58962, {	-- A Warlock's Bargain (A)
 							["coord"] = { 52.0, 55.2, 1409 },
@@ -368,11 +350,9 @@ _.Zones =
 					}),
 				}),
 				cl(WARRIOR, {
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 							["classes"] = { WARRIOR },
-							-- ["altQuests"] = {
-								-- 62808,	-- 120 character prior to 9.0
-							-- },
+							["customCollect"] = "NPE",
 						}, {
 						q(58914, {	-- A Warrior's End (A)
 							["coord"] = { 52.0, 55.2, 1409 },
@@ -604,7 +584,6 @@ _.Zones =
 					["altQuests"] = {	-- Optional Quest, becomes unavailable once leaving the zone
 						55991,	-- An End to Beginnings [A]
 						59985,	-- An End to Beginnings [H]
-						-- 62808,	-- 120 character prior to 9.0, bubbleDown doesn't merge with existing tag
 					},
 				}),
 				q(55764, {	-- Harpy Culling (A)
@@ -630,7 +609,6 @@ _.Zones =
 					["altQuests"] = {	-- Optional Quest, becomes unavailable once leaving the zone
 						55991,	-- An End to Beginnings [A]
 						59985,	-- An End to Beginnings [H]
-						-- 62808,	-- 120 character prior to 9.0, bubbleDown doesn't merge with existing tag
 					},
 					["g"] = {
 						i(175229, {	-- Expeditionary Cloth Mantle
@@ -1024,9 +1002,9 @@ _.Zones =
 					},
 				}),
 			})),
-			n(RARES, bubbleDown({
+			n(RARES, sharedData({
+					["customCollect"] = "NPE",
 					["altQuests"] = {
-						-- 62808,	-- 120 character prior to 9.0
 						55991,	-- An End to Beginnings [A]
 						59985,	-- An End to Beginnings [H]
 					},
@@ -1043,9 +1021,9 @@ _.Zones =
 					["questID"] = 59611,
 				}),
 			})),
-			n(TREASURES, bubbleDown({
+			n(TREASURES, sharedData({
+					["customCollect"] = "NPE",
 					["altQuests"] = {
-						-- 62808,	-- 120 character prior to 9.0
 						55991,	-- An End to Beginnings [A]
 						59985,	-- An End to Beginnings [H]
 					},

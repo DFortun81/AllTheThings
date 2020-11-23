@@ -7606,6 +7606,9 @@ app.CollectibleAsQuest = function(t)
 	app.CollectibleQuests
 	-- must not be repeatable, unless considering repeatable quests as trackable
 	and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
+	-- must match custom collectibility if set as well
+	and (not t.customCollect or
+		(app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode") or app.CustomCollects[t.customCollect]))
 	-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode
 	-- TODO: revisit if party sync option becomes a thing
 	and ((not t.isBreadcrumb and not t.DisablePartySync) or
@@ -8691,39 +8694,38 @@ UpdateGroup = function(parent, group, defaultVisibility)
 			-- If this item is collectible, then mark it as such.
 			if group.collectible then
 				-- An item is a special case where it may have both an appearance and a set of items
-				group.progress = group.collected and (group.matCount or 1) or 0;
-				group.total = group.matCount or 1;
+				group.progress = group.collected and 1 or 0;
+				group.total = 1;
 			elseif group.s and group.s < 1 then
 				-- This item is missing its source ID. :(
 				group.progress = 0;
-				group.total = group.matCount or 1;
+				group.total = 1;
 			else
 				-- Default to 0 for both
 				group.progress = 0;
 				group.total = 0;
 			end
-
+			
 			-- If the 'can equip' filter says true
 			if app.GroupFilter(group) then
-
-				-- Update the subgroups recursively...
+				-- Update the subgroups recursively
 				UpdateGroups(group, group.g, defaultVisibility);
-
-				-- Special case for crafting material lists!
-				-- Increment the parent group's totals.
+				
+				-- increment the parent group's stats
 				parent.total = (parent.total or 0) + group.total;
 				parent.progress = (parent.progress or 0) + group.progress;
-
 				-- If this group needs to be shown due to child groups, then make it visible and skip other logic
 				if group.visible == 1 then
 					group.visible = true;
+					-- if this group is visible ensure parent is also visible
+					parent.visible = 1;
 				-- If this group is trackable, then we should show it.
 				elseif group.total > 0 and app.GroupVisibilityFilter(group) then
 					group.visible = true;
 				elseif group.trackable and app.ShowIncompleteThings(group) then
 					-- If this group is trackable, then we should show it.
 					group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
-					-- flag parent to set itself visible when update order falls back out since this is not a normally collectible thing
+					-- if this group is visible ensure parent is also visible
 					if group.visible then parent.visible = 1; end
 				else
 					-- Hide this group. We aren't filtering for it.
@@ -8738,25 +8740,25 @@ UpdateGroup = function(parent, group, defaultVisibility)
 			if app.GroupFilter(group) then
 				if group.collectible then
 					-- Increment the parent group's totals.
-					parent.total = (parent.total or 0) + (group.total or group.matCount or 1);
+					parent.total = (parent.total or 0) + (group.total or 1);
 
 					-- If we've collected the item, use the "Show Collected Items" filter.
 					if group.collected then
 						group.visible = app.CollectedItemVisibilityFilter(group);
-						parent.progress = (parent.progress or 0) + (group.progress or group.matCount or 1);
+						parent.progress = (parent.progress or 0) + (group.progress or 1);
 					else
 						group.visible = true;
+						-- if this group is visible, ensure parent is also visible
+						parent.visible = 1;
 					end
 				elseif group.trackable and app.ShowIncompleteThings(group) then
 					-- If this group is trackable, then we should show it.
 					group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
-					-- flag parent to set itself visible when update order falls back out since this is not a normally collectible thing
+					-- if this group is visible, ensure parent is also visible
 					if group.visible then parent.visible = 1; end
 				else
 					-- Hide this group.
 					group.visible = defaultVisibility;
-					-- flag parent to set itself visible when update order falls back out since this is not a normally collectible thing
-					if group.visible then parent.visible = 1; end
 				end
 			else
 				-- Hide this group. We aren't filtering for it.
@@ -9204,6 +9206,21 @@ function app:CheckYieldHelper()
 			-- print("yieldHelper",app.nextYield);
 			coroutine.yield();
 		end
+	end
+end
+-- receives a key and a function which returns the value to be set for
+-- that key in the CustomCollectibility data member based on the current value
+app.CustomCollects = {};
+function app.SetCustomCollectibility(key, func)
+	local playerKey = key .. "-" .. app.GUID;
+	local cc = GetDataMember("CustomCollectibility", {});
+	-- print("cached",playerKey,type(cc),cc,cc[playerKey]);
+	local result = func(cc[playerKey]);
+	if result ~= nil then
+		-- print("saved",playerKey,result);
+		app.CustomCollects[key] = result;
+		cc[playerKey] = result;
+		SetDataMember("CustomCollectibility", cc);
 	end
 end
 
@@ -10808,6 +10825,13 @@ RowOnEnter = function (self)
 					end
 				end
 			end
+		end
+
+		-- Show info about if this Thing cannot be collected due to a custom collectibility
+		-- restriction on the Thing which this character does not meet
+		if reference.customCollect and not app.CustomCollects[reference.customCollect] then
+			local customCollectEx = L["CUSTOM_COLLECTS_REASONS"][reference.customCollect];
+			GameTooltip:AddDoubleLine("Requires: |cff5bc41d" .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]") .. "|r", customCollectEx[2] or "[MISSING_LOCAL_REASON");
 		end
 
 		-- Show Quest Prereqs
@@ -15982,6 +16006,7 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedTitles",
 		"CollectedTitlesPerCharacter",
 		"CollectedToys",
+		"CustomCollectibility",
 		"FilterSeasonal",
 		"FilterUnobtainableItems",
 		"LockedWindows",
@@ -16013,7 +16038,6 @@ app.events.VARIABLES_LOADED = function()
 	RefreshAchievementCollection();
 
 	-- Set the Current Map ID
-	-- TODO: think this might trigger too early sometimes? keep getting Northrend minilist in Icecrown like 10% of logins...
 	app.CurrentMapID = app.GetCurrentMapID();
 
 	-- Attempt to register for the addon message prefix.
@@ -16130,34 +16154,76 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("ARTIFACT_UPDATE");
 		app:RegisterEvent("TOYS_UPDATED");
 
+		local needRefresh;
 		-- Rebuild toy collection. This should only happen once to fix toy collection states from a bug prior 14.January.2020
 		local toyCacheRebuilt = GetDataMember("ToyCacheRebuilt");
 		if not toyCacheRebuilt then
 			SetDataMember("ToyCacheRebuilt", true);
 			wipe(GetDataMember("CollectedToys", {}));
-			RefreshCollections();
+			needRefresh = true;
 		end
 
-		-- NOTE: The auto refresh only happens once.
+		-- NOTE: The auto refresh only happens once per version
 		if not app.autoRefreshedCollections then
 			app.autoRefreshedCollections = true;
 			local lastTime = GetDataMember("RefreshedCollectionsAlready");
 			if not lastTime or (lastTime ~= app.Version) then
 				SetDataMember("RefreshedCollectionsAlready", app.Version);
 				wipe(GetDataMember("CollectedSources", {}));	-- This option causes a caching issue, so we have to purge the Source ID data cache.
-				RefreshCollections();
-				return nil;
+				needRefresh = true;
 			end
 		end
+
+		-- do one-time per character custom visibility check(s)
+		-- Exile's Reach (New Player Experience)
+		app.SetCustomCollectibility("NPE", function(cc)
+			-- character is not checked
+			if cc == nil then
+				-- print("first check");
+				-- check if the current MapID is in Exile's Reach
+				local maps = { 1409, 1609, 1610, 1611, 1726, 1727 };
+				while not app.CurrentMapID do
+					app.CurrentMapID = app.GetCurrentMapID();
+				end
+				-- print("map check",app.CurrentMapID);
+				-- this is an NPE character, so flag the GUID
+				if contains(maps, app.CurrentMapID) then
+					-- print("on map");
+					return true;
+				-- if character has completed the first NPE quest
+				elseif ((IsQuestFlaggedCompleted(56775) or IsQuestFlaggedCompleted(59926))
+						-- but not finished the NPE chain
+						and not (IsQuestFlaggedCompleted(60359) or IsQuestFlaggedCompleted(58911))) then
+					-- print("incomplete NPE chain");
+					return true;
+				end
+				-- otherwise character is not NPE
+				return false;
+			-- character has previously been flagged
+			elseif cc then
+				-- finished the NPE chain
+				if IsQuestFlaggedCompleted(60359) or IsQuestFlaggedCompleted(58911) then
+					-- print("complete NPE chain");
+					return false;
+				end
+			end
+			return cc;
+		end);
+
 		-- finally can say the app is ready
 		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 		app.IsReady = true;
 
+		if needRefresh then
+			-- collection refresh includes data refresh
+			RefreshCollections();
+		else
+			app:RefreshData(false);
+		end
+
 		-- fire a late location trigger to make sure the minilist syncs to the current zone
 		-- so that addon-loading doesn't interfere with map info
 		C_Timer.After(2, app.LocationTrigger);
-
-		app:RefreshData(false);
 	end);
 end
 app.events.PLAYER_LOGIN = function()
