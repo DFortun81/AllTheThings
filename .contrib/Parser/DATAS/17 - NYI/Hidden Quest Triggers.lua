@@ -2935,6 +2935,9 @@ _.HiddenQuestTriggers =
 		
 		-- Various tracking quests
 		q(61858),	-- taking the portal to Acherus during "Shadowlands: A Chilling Summons"
+		
+		-- The Maw
+		q(59911),	-- triggered after picking up Ruiner's End
 
 		-- Torghast
 		q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)
