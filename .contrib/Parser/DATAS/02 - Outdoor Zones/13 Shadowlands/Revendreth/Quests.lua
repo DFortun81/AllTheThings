@@ -16,6 +16,14 @@ _.Zones =
 							i(180945),	-- Crypt Gargon
 						},
 					}),
+					-- Chapter 7 (Envy)
+					q(57771, {	-- An Unwelcome Incursion
+					--	["provider"] = { "n", 170543 },	-- General Draven
+						["lvl"] = { 60 },
+						["g"] = {
+							i(180947),	-- Tithe Collector's Vessel
+						},
+					}),
 					-- Chapter 8 (Dominion)
 					q(58407, {	-- The Medallion of Dominion
 						["provider"] = { "n", 170543 },	-- General Draven

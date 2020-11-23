@@ -14,6 +14,7 @@ _.Zones =
 					["g"] = {
 						ach(14307, crit(26)),	-- Adventurer of Bastion / Aethon
 						i(179487),	-- Aethon's Horn
+						i(174445),	-- Glimmerfly Cocoon
 					},
 				}),
 				n(-940, {	-- Ascendend Council
@@ -91,6 +92,7 @@ _.Zones =
 					["g"] = {
 						ach(14307, crit(4)),	-- Adventurer of Bastion / Cloudtail
 						i(179488),	-- Cloudtail's Paw
+						i(174445),	-- Glimmerfly Cocoon
 					},
 				}),
 				n(171014, { -- Collector Astorestes
@@ -197,6 +199,7 @@ _.Zones =
 					["g"] = {
 						ach(14307, crit(5)),	-- Adventurer of Bastion / Nemaeus
 						i(179485),	-- Fang of Nemaeus
+						i(174445),	-- Glimmerfly Cocoon
 					},
 				}),
 				n(160882, { -- Nikara Blackheart
@@ -222,6 +225,7 @@ _.Zones =
 					["g"] = {
 						ach(14307, crit(3)),	-- Adventurer of Bastion / Sigilback
 						i(179486),	-- Sigilback's Smashshell
+						i(174445),	-- Glimmerfly Cocoon
 					},
 				}),
 				n(170548, { -- Sundancer

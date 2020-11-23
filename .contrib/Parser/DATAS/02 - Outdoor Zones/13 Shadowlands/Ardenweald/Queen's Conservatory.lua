@@ -24,6 +24,11 @@ _.Zones =
 						},
 					}),
 					-- Pets
+					n(QUESTS, {
+					-- q(xxxxx, {	-- Master of Inner Calm
+							i(183856),	-- Mystical Orb of Medidation
+					--	}),
+					}),
 					-- Spirits/Transmog
 					n(-931, {		-- Lesser Spirit
 						["description"] = "Requires minimum |cFFFFD7001x|r Wildseed Root Grain. Its possible to receive rewards from higher quality spirits of the same type as well.",
