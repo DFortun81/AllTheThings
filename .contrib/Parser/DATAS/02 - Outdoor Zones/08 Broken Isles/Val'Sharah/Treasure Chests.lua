@@ -37,8 +37,10 @@ _.Zones =
 					["coord"] = { 63.4, 88.4, 641 },
 				}),
 				o(269049, {	-- Small Treasure Chest
-					["questID"] = 38861,
-					["coord"] = { 56.0, 83.8, 641 },
+				--	TODO: what is the questID for this chest?  we had 38861 attached to it but it belongs to the sprite chest at 56.0, 83.7
+				--	i can't actually *find* a chest at these coordinates.  is this a repeatable/daily/once-per-invasion chest?
+				--	["questID"] = ,	-- 
+					["coord"] = { 42.5, 80.1, 641 },
 				}),
 				o(240651, {	-- Small Treasure Chest
 					["questID"] = 38386,
@@ -101,8 +103,7 @@ _.Zones =
 					["coord"] = { 62.8, 70.3, 641 },
 				}),
 				o(242242, {	-- Small Treasure Chest
-					-- TODO: what is the questID for this treasure?
-					--["questID"] = ,
+					["questID"] = 38861,
 					["coord"] = { 56.0, 83.7, 641 },
 				}),
 				o(240608, {	-- Small Treasure Chest
