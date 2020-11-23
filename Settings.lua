@@ -154,6 +154,7 @@ local TooltipSettingsBase = {
 		["ShowIconOnly"] = false,
 		["SharedAppearances"] = true,
 		["Show:Remaining"] = false,
+		["Show:Percentage"] = true,
 		["UseMoreColors"] = false,
 		["Show:TooltipHelp"] = true,
 		["Skip:Cutscenes"] = false,
@@ -2705,6 +2706,17 @@ end);
 ShowRemainingCheckBox:SetATTTooltip("Enable this option if you want to see the number of items remaining instead of the progress over total.");
 ShowRemainingCheckBox:SetPoint("TOPLEFT", MiscLabel, "BOTTOMLEFT", 4, 0);
 
+local ShowPercentagesCheckBox = settings:CreateCheckBox("Show Percentage Completion",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:Percentage"));
+end,
+function(self)
+	settings:SetTooltipSetting("Show:Percentage", self:GetChecked());
+	app:UpdateWindows();
+end);
+ShowPercentagesCheckBox:SetATTTooltip("Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.");
+ShowPercentagesCheckBox:SetPoint("TOPLEFT", ShowRemainingCheckBox, "BOTTOMLEFT", 0, 4);
+
 local UseMoreColorsCheckBox = settings:CreateCheckBox("Use More Colors! |CFF4AA7FF[Beta]|R",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("UseMoreColors"));
@@ -2714,7 +2726,7 @@ function(self)
 	app:UpdateWindows();
 end);
 UseMoreColorsCheckBox:SetATTTooltip("Enable this option if you want to see more colors utilized to help distinguish additional conditions for Things in lists (i.e. class colors, faction colors, etc.)");
-UseMoreColorsCheckBox:SetPoint("TOPLEFT", ShowRemainingCheckBox, "BOTTOMLEFT", 0, 4);
+UseMoreColorsCheckBox:SetPoint("TOPLEFT", ShowPercentagesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowTooltipHelpCheckBox = settings:CreateCheckBox("Show Tooltip Help",
 function(self)

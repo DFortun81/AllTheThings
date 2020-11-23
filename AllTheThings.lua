@@ -869,13 +869,18 @@ end
 local function GetProgressTextRemaining(progress, total)
 	return tostring((total or 0) - (progress or 0));
 end
+local function GetProgressPercent(progress, total)
+	local percent = (progress or 0) / total;
+	return percent, app.Settings:GetTooltipSetting("Show:Percentage") 
+		and (" (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%)");
+end
 local function GetProgressColor(p)
 	return progress_colors[p];
 end
 local function GetProgressColorText(progress, total)
 	if total and total > 0 then
-		local percent = (progress or 0) / total;
-		return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%)|r";
+		local percent, percentText = GetProgressPercent(progress, total);
+		return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. (percentText or " ") .. "|r";
 	end
 end
 local function GetCollectionIcon(state)
