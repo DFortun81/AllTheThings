@@ -7,6 +7,7 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1670, {	-- Oribos
 			n(VENDORS, {
+				--[[	Many items return as retrieving data. They either are added later or are changed (its the 2nd option 95% sure)
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, 1670 },
 					["g"] = {
@@ -607,7 +608,7 @@ _.Zones =
 							["classes"] = { ROGUE },
 						}),
 					},
-				}),
+				}),--]]
 			}),
 		}),
 	}),

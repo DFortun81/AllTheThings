@@ -1,1 +1,1 @@
-["description"] = "|cFF68ccefKyrian Covenant|r only.",
+["description"] = "|cFF516bfeKyrian Covenant|r only.",

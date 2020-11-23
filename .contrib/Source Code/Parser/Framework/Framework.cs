@@ -1639,6 +1639,7 @@ namespace ATT
                 case "qgs":
                 case "r": // horde/alliance faction
                 case "races":
+                case "customCollect":
                 case "setHeaderID":
                 case "setSubHeaderID":
                 case "setID":
