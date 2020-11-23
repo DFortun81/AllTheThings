@@ -571,8 +571,15 @@ namespace ATT
             if (subData.TryGetValue("level", out int level) && level > 1) dict["iLvl"] = level;
             if (subData.TryGetValue("required_level", out level) && level > 1) dict["lvl"] = new List<object>() { level };
             if (subData.TryGetValue("is_equippable", out bool b) && b) dict["equippable"] = 1;
-            if (subData.TryGetValue("is_repeatable", out bool isRepeatable) && isRepeatable) dict["repeatable"] = 1;
-            if (subData.TryGetValue("is_daily", out bool isDaily) && isDaily) dict["isDaily"] = 1;
+            subData.TryGetValue("is_repeatable", out bool isRepeatable);
+            subData.TryGetValue("is_daily", out bool isDaily);
+
+            // only set repeatable if it exists, API likes to give repeatable + daily which is silly
+            if (isRepeatable)
+                dict["repeatable"] = 1;
+            else if (isDaily)
+                dict["isDaily"] = 1;
+
             if (subData.TryGetValue("quality", out Dictionary<string, object> d))
             {
                 if (d.TryGetValue("type", out o) && TryParseQuality(o.ToString(), out int qualityID))
