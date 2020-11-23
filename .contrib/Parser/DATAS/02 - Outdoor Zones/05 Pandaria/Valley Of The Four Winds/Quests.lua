@@ -140,9 +140,9 @@ _.Zones =
 							["coord"] = { 53.0, 51.3, 376 },
 						}),
 						q(30331, {	-- The Mile-High Grub
+							["provider"] = { "n", 58714 },	-- Mei Mei Ironpaw
 							["isDaily"] = true,
 							["coord"] = { 52.5, 51.6, 376 },
-							["provider"] = { "n", 58714 },	-- Mei Mei Ironpaw
 						}),
 						q(33027, {	-- The Secret Ingredient Is...
 							["sourceQuests"] = { 33026 },	-- These Aren't Your Fatty Goatsteaks
@@ -361,11 +361,6 @@ _.Zones =
 					["provider"] = { "n", 64464 },	-- Andi
 				}),
 				q(30479, {	-- A Gift For Gina
-					["isDaily"] = true,
-					["coord"] = { 52.7, 50.4, 376 },
-					["provider"] = { "n", 64464 },	-- Andi
-				}),
-				q(30477, {	-- A Gift For Haohan
 					["isDaily"] = true,
 					["coord"] = { 52.7, 50.4, 376 },
 					["provider"] = { "n", 64464 },	-- Andi
@@ -611,11 +606,6 @@ _.Zones =
 						i(81777),	-- Sunsong Armored Legguards
 					},
 				}),
-				q(32189, {	-- A Shabby New Face
-					["description"] = "Available only on days where Barnaby Fletcher is in Halfhill.",
-					["coord"] = { 52.8, 52.0, 376 },
-					["provider"] = { "n", 58718 },	-- Merchant Greenfield
-				}),
 				q(29988, {	-- A Taste For Eggs
 					["sourceQuests"] = { 29987 },	-- Unyielding Fists: Trial of Wood
 					["coord"] = { 18.3, 31.3, 376 },
@@ -806,21 +796,6 @@ _.Zones =
 						i(88020),	-- Thunderfoot Heavy Pauldrons
 						i(88019),	-- Sunsong Armored Pauldrons
 					},
-				}),
-				q(30517, {	-- Farmer Fung's Vote I: Yak Attack
-					["description"] = "Must be revered with at least 4500 reputation with The Tillers.",
-					["coord"] = { 52.2, 48.8, 376 },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
-				q(30518, {	-- Farmer Fung's Vote II: On the Loose
-					["sourceQuests"] = { 30517 },	-- Farmer Fung's Vote I: Yak Attack
-					["coord"] = { 48.3, 33.9, 376 },
-					["provider"] = { "n", 57298 },	-- Farmer Fung
-				}),
-				q(31947, {	-- Farmer Fung's Vote III: Crazy For Cabbage
-					["sourceQuests"] = { 30518 },	-- Farmer Fung's Vote II: On the Loose
-					["coord"] = { 48.3, 33.9, 376 },
-					["provider"] = { "n", 57298 },	-- Farmer Fung
 				}),
 				q(29986, {	-- Fog Wards
 					["sourceQuests"] = { 29984 },	-- Unyielding Fists: Trial of Bamboo
@@ -1117,11 +1092,6 @@ _.Zones =
 					["coord"] = { 54.7, 47.0, 376 },
 					["provider"] = { "n", 64597 },	-- Nana Mudclaw
 				}),
-				q(30324, {	-- Not in Chee-Chee's Backyard
-					["isDaily"] = true,
-					["coord"] = { 53.0, 52.0, 376 },
-					["provider"] = { "n", 58709 },	-- Chee Chee
-				}),
 				q(31340, {	-- Oh Sheepie...
 					["description"] = "Requires reputation level of \"Good Friend\" or better with Chee Chee",
 					["provider"] = { "n", 58709 },	-- Chee Chee
@@ -1129,12 +1099,6 @@ _.Zones =
 				q(31314, {	-- Old Man Thistle's Treasure
 					["sourceQuests"] = { 31313 },	-- Just a Folk Story
 					["provider"] = { "n", 58705 },	-- Fish Fellreed
-				}),
-				q(32198, {	-- One Magical, Flying Kingdom's Trash...
-					["sourceQuests"] = { 32189 },	-- A Shabby New Face
-					["description"] = "Appears in Halfhill on random days.",
-					["coord"] = { 53.2, 51.4, 376 },
-					["provider"] = { "n", 67565 },	-- Barnaby Fletcher
 				}),
 				q(30030, {	-- Out of Sprite
 					["sourceQuests"] = { 30048 },	-- Li Li and the Grain
@@ -1150,15 +1114,6 @@ _.Zones =
 						i(81821),	-- Nesingwary's Signet
 						i(81822),	-- Band of Parental Mastery
 						i(81823),	-- Ring of Torjar's Bane
-					},
-				}),
-				q(30319, {	-- Pest Problems
-					["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
-					["isDaily"] = true,
-					["coord"] = { 53.0, 51.7, 376 },
-					["providers"] = {
-						{ "n", 57402 },	-- Haohan Mudclaw
-						{ "n", 59594 },	-- Haohan Mudclaw
 					},
 				}),
 				q(29916, {	-- Piercing Talons and Slavering Jaws
@@ -1254,11 +1209,6 @@ _.Zones =
 					},
 					["coord"] = { 15.9, 82.2, 376 },
 					["provider"] = { "n", 58434 },	-- Matt "Lucky" Gotcher
-				}),
-				q(30334, {	-- Stealing is Bad... Re-Stealing is OK
-					["isDaily"] = true,
-					["coord"] = { 52.2, 48.8, 376 },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
 				}),
 				q(29981, {	-- Stemming the Swarm
 					["sourceQuests"] = { 29872 },	-- Lin Tenderpaw
@@ -1659,11 +1609,6 @@ _.Zones =
 					},
 				}),
 				q(31943, {	-- Which Berries? Witchberries.
-					["isDaily"] = true,
-					["coord"] = { 52.2, 48.8, 376 },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
-				q(31671, {	-- Why Not Scallions?
 					["isDaily"] = true,
 					["coord"] = { 52.2, 48.8, 376 },
 					["provider"] = { "n", 58646 },	-- Farmer Yoon

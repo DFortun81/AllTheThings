@@ -1964,7 +1964,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(5130)),	-- Unknown
 		un(NEVER_IMPLEMENTED, i(5131)),	-- Unknown
 		un(NEVER_IMPLEMENTED, i(5132)),	-- Unknown
-		un(NEVER_IMPLEMENTED, i(175160)),	-- Unknown
 		un(NEVER_IMPLEMENTED, i(175246)),	-- N'lyeth (Unused)
 		un(NEVER_IMPLEMENTED, i(169177)),	-- Blueprint: TK32(DNT))
 		un(NEVER_IMPLEMENTED, i(168171)),	-- ph objective

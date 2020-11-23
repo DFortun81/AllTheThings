@@ -451,6 +451,7 @@ _.HiddenQuestTriggers =
 		q(31485),	-- UNUSED — triggered after turning in quest #31281, "So You Want to Be a Chef..." in Valley of the Four Winds
 		q(31469),	-- UNUSED — triggered after turning in quest #31311, "Way of the Grill" in Vally of the Four Winds
 		q(30536),	-- FLAG - Weed War Training — triggered after turning in daily quest #30321, "Weed War II"
+		q(30566),	-- FLAG - Pest Problems Training — triggered after turning in daily quest #30319, "Pest Problems"
 		q(31950),	-- Tracking Quest: Move NPCs to Dais — triggered after turning in quest #31945, "Learn and Grow VI: Gina's Vote"
 		q(32357),	-- triggered after watching the RP that takes place after turning in #32316, "Heart of the Alliance," part of the Operation: Shieldwall campaign
 		q(32395),	-- Tracking Event: Saw Avartu - triggered while on "The Divine Bell," part of the Operation: Shieldwall campaign (at the end of the quest before killing Avartu)
@@ -1065,6 +1066,7 @@ _.HiddenQuestTriggers =
 		--    Legion     --
 		-------------------
 		--	Various tracking quests
+		q(38229),	-- triggered after recruiting Lord Maxwell Tyrosus for paladin order hall
 		q(42181),	-- triggered after turning in #39733, "The Lone Mountain"
 		q(43447),	-- Vignette: Wraithtalon — newer tracking quest for Wraithtalon rare in Val'sharah (on top of normal tracking quest - both pop at the same time)
 		q(33820),	-- Tracking Quest: Seen Escape Cinematic — triggered by cinematic during quest #34338, "The Descent"
