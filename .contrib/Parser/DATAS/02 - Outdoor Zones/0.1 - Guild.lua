@@ -22,7 +22,6 @@ _.Zones =
 		},
 		["g"] = {
 			faction(1168, {	-- Your Guild (Faction) <Guild Vendor>
-				["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO",
 				["coords"] = {
 					{ 48.47, 75.58, 85 },	-- Goram [Orgrimmar]
 					{ 69.84, 43.72, 90 },	-- Kim Horn [Undercity]

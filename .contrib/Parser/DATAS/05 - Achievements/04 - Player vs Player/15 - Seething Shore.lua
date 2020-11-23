@@ -13,7 +13,6 @@ TODO:
 _.Achievements =
 {
 	n(-9958, {	-- Player vs Player
-		["achievementID"] = 12412,
 		["g"] = {
 			n(-10001, {	-- Seething Shore
 				["maps"] = {
