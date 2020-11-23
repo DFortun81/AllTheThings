@@ -217,7 +217,6 @@ _.Zones =
 				}),
 				n(160857, {	-- Sire Ladinas <The Lightrazed>
 					["description"] = "Collect Remnant of Light and use the received Extraaction Button on Crazed Ash Ghouls to have a chance to make Sire Ladinas spawn.",
-					
 					["coord"] = { 34.6, 56.2, 1525 },
 					--["questID"] = ,
 					["isDaily"] = true,
@@ -225,7 +224,7 @@ _.Zones =
 						ach(14310, crit(8)),	-- Adventurer of Revendreth / Sire Ladinas <The Lightrazed>
 						i(180873),	-- Smolderheart
 						o(339499, {	-- Remnant of Light
-							["coords"] = { 
+							["coords"] = {
 								{ 36.77, 61.08, 1648 },
 								{ 36.01, 60.22, 1648 },
 								{ 35.34, 60.22, 1648 },
@@ -238,7 +237,7 @@ _.Zones =
 								{ 33.92, 53.65, 1648 },
 							},
 							["g"] = {
-								i(180873),	-- Smolderheart 
+								i(180873),	-- Smolderheart
 							},
 						}),
 					},

@@ -37,24 +37,24 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				n(162849, {	-- Morguliax <Lord of Decapitation>
-				--	["coord"] = { 27.4, 49.4, 1648 },
-				--	--["questID"] = 61125,	
+					--["coord"] = { 27.4, 49.4, 1648 },
+					--["questID"] = 61125,
 					["isDaily"] = true,
 					["g"] = {
 						i(184292),		-- Ancient Elethium Coin
 					},
 				}),
-				n(172577, {	--  Orophea.
+				n(172577, {	--  Orophea
 					["description"] = "Collect Eurydea's Amulet and offer it to Orophea.",
 					["coord"] = { 23.6, 21.6, 1648 },
-				--	["questID"] = 61125,	
+					--["questID"] = 61125,
 					["isDaily"] = true,
 					["g"] = {
-						i(181794),		-- Orophea's Lyre 
+						i(181794),		-- Orophea's Lyre
 						o(356555, {	-- Eurydea's Necklace
 							["coord"] = { 26.8, 29.3, 1648 },
 							["g"] = {
-								i(181794),		-- Orophea's Lyre 
+								i(181794),		-- Orophea's Lyre
 							},
 						}),
 					},

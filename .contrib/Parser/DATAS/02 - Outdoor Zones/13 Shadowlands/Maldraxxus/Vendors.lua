@@ -117,7 +117,7 @@ _.Zones =
 							["cost"] = 17650000, -- 1,765g
 						}),
 						i(183112, {	-- Animated Radius
-							["cost"] = { { "i", 163036, 250 } },
+							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
 							["g"] = {
 								i(183114, {	-- Carpal
 									["cost"] = {
