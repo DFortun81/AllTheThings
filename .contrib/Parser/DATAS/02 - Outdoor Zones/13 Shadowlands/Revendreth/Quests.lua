@@ -95,10 +95,13 @@ _.Zones =
 					["lvl"] = { 57 },
 				}),
 				q(58272, {	-- Words Have Power
-					["provider"] = { "o", 352490 },	-- Join the Rebellion!	-- TODO: Need to add the Object
+					["provider"] = { "o", 352490 },	-- Join the Rebellion!
 					["coord"] = { 67.7, 67.6, 1525 },
 					["sourceQuest"] = 56942,	-- On The Road Again
 					["lvl"] = { 57 },
+					["g"] = {
+						i(177665),	-- Spectral Hankerchief
+					},
 				}),
 				q(56978, {	-- To Darkhaven
 					["provider"] = { "n", 168341 },	-- Lady Moonberry

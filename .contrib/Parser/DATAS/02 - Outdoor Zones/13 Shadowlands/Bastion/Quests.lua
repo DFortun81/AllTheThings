@@ -65,6 +65,11 @@ _.Zones =
 					["coord"] = { 51.7, 81.0, 1533 },
 					["lvl"] = { 50 },
 				}),
+				q(62718, {	-- Hero's Rest
+					["provider"] = { "o", 362489 },	-- Elysian Decree
+					["coord"] = { 48.8, 73.3, 1533 },
+					["lvl"] = { 50 },
+				}),
 				q(57549, {	-- In Agthia's Memory
 				--	TODO: figure out SQ.  picked it up during "A Soulbind in Need" / "The Things That Haunt Us" when i took a detour to run up the hill to kill a rare that spawned.
 					["provider"] = { "n", 158078 },	-- Keeper Mnemis
