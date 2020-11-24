@@ -50,7 +50,7 @@ _.Zones =
 				}),
 				q(60156, {	-- The Path to Bastion
 					["sourceQuests"] = { 60154 },	-- Understanding the Shadowlands
-					["provider"] = { "n", 167424 },	-- Overseer Kah-Sher
+					["provider"] = { "n", 175829 },	-- Overseer Kah-Sher
 					["coord"] = { 50.5, 62.0, 1670 },
 					["lvl"] = { 50 },
 				}),
@@ -60,14 +60,14 @@ _.Zones =
 					["coord"] = { 40.0, 64.8, 1670 },
 					["lvl"] = { 50 },
 				}),
-				
-				
-				
-				
-				
-				
-				
-				
+
+
+
+
+
+
+
+
 				-- Skip Quests
 				q(62801, {	-- The Call of Fate
 					["sourceQuest"] = 59770,	-- Stand as One
