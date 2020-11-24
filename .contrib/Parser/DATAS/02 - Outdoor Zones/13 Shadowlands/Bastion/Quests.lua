@@ -75,14 +75,22 @@ _.Zones =
 					["lvl"] = { 50 },
 				}),
 				q(57545, {	-- Distractions for Kala
+					["sourceQuests"] = { 57529 },	-- Garden in Turmoil
 					["provider"] = { "n", 158004 },	-- Zosime
 					["coord"] = { 51.3, 59.6, 1533 },
 					["lvl"] = { 50 },
 				}),
 				q(57538, {	-- Disturbing the Peace
+					["sourceQuests"] = { 57529 },	-- Garden in Turmoil
 					["provider"] = { "n", 158004 },	-- Zosime
 					["coord"] = { 51.3, 59.6, 1533 },
 					["lvl"] = { 50 },
+				}),
+				q(57529, {	-- Garden in Turmoil
+					["provider"] = { "n", 158005 },	-- Tamesis
+					["coord"] = { 52.3, 61.3, 1533 },
+					["lvl"] = { 50 },
+					["isBreadcrumb"] = true,
 				}),
 				q(62718, {	-- Hero's Rest
 					["provider"] = { "o", 362489 },	-- Elysian Decree
