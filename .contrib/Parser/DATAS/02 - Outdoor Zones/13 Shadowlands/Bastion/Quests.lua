@@ -210,8 +210,8 @@ _.Zones =
 						i(175616),	-- Courageous Aspirant's Gloves
 						i(175619),	-- Humble Aspirant's Gauntlets
 						i(175617),	-- Judicious Aspirant's Gauntlets
-						i(175762),	-- Larion Tamer's Cloak
 						i(175618),	-- Pure Aspirant's Gloves
+						-- wowhead also lists 175762 (Larion Tamer's Cloak) but it comes from quest 60366 not this one (as of 9.0.2)
 					},
 				}),
 				q(60735, {	-- Trouble in Paradise
@@ -741,6 +741,9 @@ _.Zones =
 					--["provider"] = { "o", 352028 },	-- Wanted Scroll			-- TODO: Need to add the Object 352027 or 352028
 					["coord"] = { 53.2, 46.4, 1533 },
 					["lvl"] = { 50 },
+					["g"] = {
+						i(175762),	-- Larion Tamer's Cloak
+					},
 				}),
 				q(59674, {	-- A Friendly Rivalry
 					["provider"] = { "n", 158765 },	-- Pelodis
