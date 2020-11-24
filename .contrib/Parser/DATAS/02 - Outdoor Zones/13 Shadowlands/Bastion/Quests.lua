@@ -13,11 +13,27 @@ _.Zones =
 					["coord"] = { 41.9, 78.0, 1533 },
 					["lvl"] = { 50 },
 				}),
+				q(57711, {	-- A Forge Gone Cold
+					["sourceQuests"] = { 57710 },	-- A Life of Service
+					["provider"] = { "n", 158807 },	-- Forgelite Sophone
+					["coord"] = { 56.1, 81.7, 1533 },
+					["lvl"] = { 50 },
+				}),
 				q(62714, {	-- A Gift for An Acolyte
 					["sourceQuests"] = { 60466 },	-- The Old Ways
 					["provider"] = { "n", 160598 },	-- Klystere
 					["coord"] = { 47.8, 73.2, 1533 },
 					["lvl"] = { 50 },
+				}),
+				q(57710, {	-- A Life of Service
+					["sourceQuests"] = { 57709 },	-- The Aspirant's Crucible
+					["provider"] = { "n", 158807 },	-- Forgelite Sophone
+					["coord"] = { 56.1, 81.7, 1533 },
+					["lvl"] = { 50 },
+					["g"] = {
+						i(173797),	-- Amulet of Heroic Accomplishment
+						i(173344),	-- Band of Chronicled Deeds
+					},
 				}),
 				q(57677, {	-- A Soulbind In Need
 					["sourceQuests"] = { 57261 },	-- Walk the Path, Aspirant
@@ -37,10 +53,32 @@ _.Zones =
 					["coord"] = { 46.9, 63.4, 1533 },
 					["lvl"] = { 50 },
 				}),
+				q(57909, {	-- Assessing Your Stamina
+					["sourceQuests"] = { 57908 },	-- The True Crucible Awaits
+					["provider"] = { "n", 158861 },	-- Pelagos
+					["coord"] = { 51.7, 80.9, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57288, {	-- Assessing Your Strength
+					["sourceQuests"] = { 57908 },	-- The True Crucible Awaits
+					["provider"] = { "n", 158862 },	-- Kleia
+					["coord"] = { 51.7, 81.0, 1533 },
+					["lvl"] = { 50 },
+				}),
 				q(57549, {	-- In Agthia's Memory
 				--	TODO: figure out SQ.  picked it up during "A Soulbind in Need" / "The Things That Haunt Us" when i took a detour to run up the hill to kill a rare that spawned.
 					["provider"] = { "n", 158078 },	-- Keeper Mnemis
 					["coord"] = { 46.9, 63.4, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(59920, {	-- Light the Forge, Forgelite
+					["sourceQuests"] = {
+						57263,	-- The Cycle of Anima: Etherwyrms
+						57267,	-- The Cycle of Anima: Flower Power
+						57265,	-- The Cycle of Anima: Drought Conditions
+					},
+					["provider"] = { "n", 158807 },	-- Forgelite Sophone
+					["coord"] = { 52.5, 82.7, 1533 },
 					["lvl"] = { 50 },
 				}),
 				q(62715, {	-- More Than A Gift
@@ -74,6 +112,11 @@ _.Zones =
 						i(175719),	-- Agitha's Void-Tinged Speartip
 					},
 				}),
+				q(57712, {	-- Suggested Reading
+					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
+					["provider"] = { "n", 157138 },	-- Aspirant Akimos
+					["coord"] = { 55.3, 83.4, 1533 },
+				}),
 				q(57709, {	-- The Aspirant's Crucible
 					["sourceQuests"] = {
 						57676,	-- The Things That Haunt Us
@@ -81,6 +124,24 @@ _.Zones =
 					},
 					["provider"] = { "n", 165107 },	-- Kleia
 					["coord"] = { 48.3, 72.7, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57265, {	-- The Cycle of Anima: Drought Conditions
+					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
+					["provider"] = { "n", 158807 },	-- Forgelite Sophone
+					["coord"] = { 52.5, 82.7, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57263, {	-- The Cycle of Anima: Etherwyrms
+					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
+					["provider"] = { "n", 166577 },	-- Sika
+					["coord"] = { 52.7, 82.5, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57267, {	-- The Cycle of Anima: Flower Power
+					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
+					["provider"] = { "n", 166577 },	-- Sika
+					["coord"] = { 52.7, 82.5, 1533 },
 					["lvl"] = { 50 },
 				}),
 				q(60466, {	-- The Old Ways
@@ -97,6 +158,24 @@ _.Zones =
 					["provider"] = { "n", 165107 },	-- Kleia
 					["coord"] = { 48.3, 72.7, 1533 },
 					["lvl"] = { 50 },
+				}),
+				q(57908, {	-- The True Crucible Awaits
+					["sourceQuests"] = { 57713 },	-- The Work of One's Hands
+					["provider"] = { "n", 158807 },	-- Forgelite Sophone
+					["coord"] = { 52.9, 83.4, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57713, {	-- The Work of One's Hands
+					["sourceQuests"] = { 59920 },	-- Light the Forge, Forgelite
+					["provider"] = { "n", 158807 },	-- Forgelite Sophone
+					["coord"] = { 52.9, 83.4, 1533 },
+					["lvl"] = { 50 },
+					["g"] = {
+						i(173317),	-- Waylight Vestment
+						i(173320),	-- Waylight Tunic
+						i(173319),	-- Waylight Chainmail
+						i(173318),	-- Waylight Breastplate
+					},
 				}),
 				q(60735, {	-- Trouble in Paradise
 					["sourceQuests"] = { 57584 },	-- A Fate Most Noble
@@ -155,80 +234,6 @@ _.Zones =
 					}),
 				}),
 				-- The Aspirant's Crucible
-				q(57710, {	-- A Life of Service
-					["provider"] = { "n", 158807 },	-- Forgelite Sophone
-					["coord"] = { 56.1, 81.7, 1533 },
-					["sourceQuest"] = 57709,	-- The Aspirant's Crucible
-					["lvl"] = { 50 },
-					["g"] = {
-						i(173797),	-- Amulet of Heroic Accomplishment
-						i(173344),	-- Band of Chronicled Deeds
-					},
-				}),
-				q(57711, {	-- A Forge Gone Cold
-					["provider"] = { "n", 158807 },	-- Forgelite Sophone
-					["coord"] = { 56.1, 81.7, 1533 },
-					["sourceQuest"] = 57710,	-- A Life of Service
-					["lvl"] = { 50 },
-				}),
-				q(57263, {	-- The Cycle of Anima: Etherwyrms
-					["provider"] = { "n", 166577 },	-- Sika
-					["coord"] = { 52.7, 82.5, 1533 },
-					["sourceQuest"] = 57711,	-- A Forge Gone Cold
-					["lvl"] = { 50 },
-				}),
-				q(57267, {	-- The Cycle of Anima: Flower Power
-					["provider"] = { "n", 166577 },	-- Sika
-					["coord"] = { 52.7, 82.5, 1533 },
-					["sourceQuest"] = 57711,	-- A Forge Gone Cold
-					["lvl"] = { 50 },
-				}),
-				q(57265, {	-- The Cycle of Anima: Drought Conditions
-					["provider"] = { "n", 158807 },	-- Forgelite Sophone
-					["coord"] = { 52.5, 82.7, 1533 },
-					["sourceQuest"] = 57711,	-- A Forge Gone Cold
-					["lvl"] = { 50 },
-				}),
-				q(59920, {	-- Light the Forge, Forgelite
-					["provider"] = { "n", 158807 },	-- Forgelite Sophone
-					["coord"] = { 52.5, 82.7, 1533 },
-					["sourceQuests"] = {
-						57263,	-- The Cycle of Anima: Etherwyrms
-						57267,	-- The Cycle of Anima: Flower Power
-						57265,	-- The Cycle of Anima: Drought Conditions
-					 },
-					["lvl"] = { 50 },
-				}),
-				q(57713, {	-- The Work of One's Hands
-					["provider"] = { "n", 158807 },	-- Forgelite Sophone
-					["coord"] = { 52.9, 83.4, 1533 },
-					["sourceQuest"] = 59920,	-- Light the Forge, Forgelite
-					["lvl"] = { 50 },
-					["g"] = {
-						i(173317),	-- Waylight Vestment
-						i(173320),	-- Waylight Tunic
-						i(173319),	-- Waylight Chainmail
-						i(173318),	-- Waylight Breastplate
-					},
-				}),
-				q(57908, {	-- The True Crucible Awaits
-					["provider"] = { "n", 158807 },	-- Forgelite Sophone
-					["coord"] = { 52.9, 83.4, 1533 },
-					["sourceQuest"] = 57713,	-- The Work of One's Hands
-					["lvl"] = { 50 },
-				}),
-				q(57909, {	-- Assessing Your Stamina
-					["provider"] = { "n", 158861 },	-- Pelagos
-					["coord"] = { 51.7, 80.9, 1533 },
-					["sourceQuest"] = 57908,	-- The True Crucible Awaits
-					["lvl"] = { 50 },
-				}),
-				q(57288, {	-- Assessing Your Strength
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 51.7, 81.0, 1533 },
-					["sourceQuest"] = 57908,	-- The True Crucible Awaits
-					["lvl"] = { 50 },
-				}),
 				q(57714, {	-- Assessing Your Spirit
 					["provider"] = { "n", 158862 },	-- Kleia
 					["coord"] = { 81.6, 80.9, 1533 },
