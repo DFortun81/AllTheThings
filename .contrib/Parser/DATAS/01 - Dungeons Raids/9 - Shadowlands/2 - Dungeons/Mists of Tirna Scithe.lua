@@ -14,8 +14,14 @@ _.Instances = { tier(9, {	-- Shadowlands
 				q(62371, {	-- Tirna Scithe: A Warning Silence
 					["provider"] = { "n", 168032 },	-- Flwngyrr
 					["coord"] = { 48.3, 50.5, 1565 },
-					["lvl"] = { 60 },
+					["lvl"] = { 56 },
 					["maps"] = { 1565 },	-- Ardenweald
+					["g"] = {
+						i(184516),	-- Mistveil Sandals
+						i(184517),	-- Gladechewer Footguards
+						i(184518),	-- Boots of the Oaken Assembly
+						i(184515),	-- Sacred Grove Sabatons
+					},
 				}),
 			}),
 			d(1, {	-- Normal
