@@ -714,6 +714,9 @@ _.Zones =
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 57.4, 54.2, 1533 },
 					["lvl"] = { 50 },
+					["altQuests"] = {
+						63068,	-- Settling Disputes
+					},
 				}),
 				q(57931, {	-- Phalynx Malfunction
 					["provider"] = { "n", 158765 },	-- Pelodis
