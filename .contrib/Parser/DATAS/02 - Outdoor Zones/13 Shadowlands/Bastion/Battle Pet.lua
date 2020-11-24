@@ -11,7 +11,7 @@ _.Zones =
 					--["crs"] = {  },	-- Vibrant Glimmerfly
 				}),
 				i(180837, {	-- Fluttering Glimmerfly
-					--["crs"] = {  },	-- Fluttering Glimmerfly
+					["crs"] = { 171664 },	-- Fluttering Glimmerfly
 				}),
 				i(180813, {	-- Fledgling Teroclaw
 					--["crs"] = {  },	-- Fledgling Teroclaw
@@ -26,7 +26,7 @@ _.Zones =
 					--["crs"] = {  },	-- Fledgling Teroclaw
 				}),
 				p(2930, {	-- Glimmerpool Hatchling // Olive Dragon Turtle??
-					--["crs"] = {  },	-- Fledgling Teroclaw
+					["crs"] = { 171670 },	-- Fledgling Teroclaw
 				}),
 				i(180861, {	-- Rustfur Kit // Red Vulpin??
 					--["crs"] = {  },	-- Fledgling Teroclaw

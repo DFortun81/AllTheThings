@@ -8,11 +8,14 @@ _.Zones =
 		m(1533, {	-- Bastion
 			n(RARES, {
 				n(161528, { -- Aethon
-					["coord"] = { 55.3, 80.3, 1533 },
 					["questID"] = 58526,
 					["isDaily"] = true,
+					["coord"] = { 55.3, 80.3, 1533 },
+					["crs"] = { 161441 },	-- Orator Kloe
 					["g"] = {
-						ach(14307, crit(26)),	-- Adventurer of Bastion / Aethon
+						crit(26, {	-- Aethon
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 						i(179487),	-- Aethon's Horn
 						i(174445),	-- Glimmerfly Cocoon
 					},
@@ -86,11 +89,14 @@ _.Zones =
 					},
 				}),
 				n(161530, { -- Cloudtail
-					["coord"] = { 55.3, 80.3, 1533 },
-					["questID"] = 60569,
+					["questID"] = 60571,
 					["isDaily"] = true,
+					["coord"] = { 55.3, 80.3, 1533 },
+					["crs"] = { 161441 },	-- Orator Kloe
 					["g"] = {
-						ach(14307, crit(4)),	-- Adventurer of Bastion / Cloudtail
+						crit(4, {	-- Cloudtail
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 						i(179488),	-- Cloudtail's Paw
 						i(174445),	-- Glimmerfly Cocoon
 					},
@@ -103,12 +109,17 @@ _.Zones =
 						ach(14307, crit(19)),	-- Adventurer of Bastion / Collector Astorestes
 					},
 				}),
-				n(171010, { -- Corrupted Clawguard(possibly lvl 60 only)
+				n(171010, { -- Corrupted Clawguard (possibly lvl 60 only)
+					["questID"] = 60999,	-- Malfunctioning Clawguard
 					["coord"] = { 56.8, 47.6, 1533 },
-					["questID"] = 60999,	-- Malfunction Clawguard
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(24)),	-- Adventurer of Bastion / Corrupted Clawguard
+						crit(24, {	-- Corrupted Clawguard
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
+						i(182759, {	-- Functioning Anima Core
+							["questID"] = 62200,	-- Functioning Anima Core
+						}),
 					},
 				}),
 				n(170623, { -- Dark Watcher
@@ -136,13 +147,15 @@ _.Zones =
 					},
 				}),
 				n(171255, { -- Echo of Aella <Hand of Courage>
-					["coord"] = { 46.8, 64.0, 1533 },
 					["questID"] = 61082,	-- upon kill
 					--["questID"] = 61091,	-- upon chest loot
 					--["questID"] = 62251,	-- upon chest loot
 					["isDaily"] = true,
+					["coord"] = { 46.8, 64.0, 1533 },
 					["g"] = {
-						ach(14307, crit(23)),	-- Adventurer of Bastion / Echo of Aella <Hand of Courage>
+						crit(23, {	-- Echo of Aella
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 						i(180062),	-- Heavenly Drum
 					},
 				}),
@@ -176,11 +189,17 @@ _.Zones =
 					},
 				}),
 				n(158659, { -- Herculon
-					["coord"] = { 43.0, 82.6, 1533 },
-					--["questID"] = ,
+					["questID"] = 57705,	-- upon defeating rare, this popped.  upon looting Aspirant's Chest, 57708 + 62201 popped.
+					--	based on questID, i think 62201 may be the questID for looting Functioning Anima Core (starts quest #62200); 57708 may be daily loot trigger?  in which case we should change the tracked quest on the rare to that one, and move 57705 to HQT
 					["isDaily"] = true,
+					["coord"] = { 43.0, 82.6, 1533 },
 					["g"] = {
-						ach(14307, crit(1)),	-- Adventurer of Bastion / Herculon
+						crit(1, {	-- Herculon
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
+						i(182759, {	-- Functioning Anima Core
+							["questID"] = 62200,	-- Functioning Anima Core
+						}),
 					},
 				}),
 				n(156340, { -- Larionrider Orstus
@@ -192,12 +211,15 @@ _.Zones =
 						i(184401),	-- Larion Pouncer
 					},
 				}),
-				n(161529, { -- Nemaeus											-- Something is wrong here ... QuestID and/or crit
-					["coord"] = { 55.3, 80.3, 1533 },
-					["questID"] = 50570,
+				n(161529, { -- Nemaeus
+					["questID"] = 60569,
 					["isDaily"] = true,
+					["coord"] = { 55.3, 80.3, 1533 },
+					["crs"] = { 161441 },	-- Orator Kloe
 					["g"] = {
-						ach(14307, crit(5)),	-- Adventurer of Bastion / Nemaeus
+						crit(5, {	-- Nemaeus
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 						i(179485),	-- Fang of Nemaeus
 						i(174445),	-- Glimmerfly Cocoon
 					},
@@ -219,11 +241,14 @@ _.Zones =
 					},
 				}),
 				n(161527, { -- Sigilback
-					["coord"] = { 55.3, 80.3, 1533 },
-					["questID"] = 60571,
+					["questID"] = 60570,
 					["isDaily"] = true,
+					["coord"] = { 55.3, 80.3, 1533 },
+					["crs"] = { 161441 },	-- Orator Kloe
 					["g"] = {
-						ach(14307, crit(3)),	-- Adventurer of Bastion / Sigilback
+						crit(3, {	-- Sigilback
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 						i(179486),	-- Sigilback's Smashshell
 						i(174445),	-- Glimmerfly Cocoon
 					},

@@ -6,7 +6,136 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
-			n(QUESTS, {
+			n(QUESTS, {	
+				q(57584, {	-- A Fate Most Noble
+					["sourceQuests"] = { 57102 },	-- Pardon Our Dust
+					["provider"] = { "n", 158281 },	-- Greeter Mnemis
+					["coord"] = { 41.9, 78.0, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(62714, {	-- A Gift for An Acolyte
+					["sourceQuests"] = { 60466 },	-- The Old Ways
+					["provider"] = { "n", 160598 },	-- Klystere
+					["coord"] = { 47.8, 73.2, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57677, {	-- A Soulbind In Need
+					["sourceQuests"] = { 57261 },	-- Walk the Path, Aspirant
+					["provider"] = { "n", 165107 },	-- Kleia
+					["coord"] = { 48.3, 72.7, 1533 },
+					["lvl"] = { 50 },
+					["g"] = {
+						i(175624),	-- Pure Aspirant's Leggings
+						i(175626),	-- Courageous Aspirant's Breeches
+						i(175625),	-- Humble Aspirant's Leggings
+						i(175623),	-- Judicious Aspirant's Legguards
+					},
+				}),
+				q(57551, {	-- Agthia's Path
+					["sourceQuests"] = { 57549 },	-- In Agthia's Memory
+					["provider"] = { "n", 158078 },	-- Keeper Mnemis
+					["coord"] = { 46.9, 63.4, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57549, {	-- In Agthia's Memory
+				--	TODO: figure out SQ.  picked it up during "A Soulbind in Need" / "The Things That Haunt Us" when i took a detour to run up the hill to kill a rare that spawned.
+					["provider"] = { "n", 158078 },	-- Keeper Mnemis
+					["coord"] = { 46.9, 63.4, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(62715, {	-- More Than A Gift
+					["sourceQuests"] = { 62714 },	-- A Gift for An Acolyte
+					["provider"] = { "n", 174900 },	-- Acolyte Amalthina
+					["coord"] = { 47.8, 73.2, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57553, {	-- On Wounded Wings
+					["sourceQuests"] = { 57549 },	-- In Agthia's Memory
+					["provider"] = { "n", 158178 },	-- Agthian Defender
+					["coord"] = { 46.4, 63.6, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57102, {	-- Pardon Our Dust
+					["sourceQuests"] = { 59774 },	-- Welcome to Eternity
+					["provider"] = { "n", 165107 },	-- Kleia
+					["coord"] = { 41.8, 78.1, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57555, {	-- Shadow's Fall
+					["sourceQuests"] = {
+						57552,	-- Warriors of the Void
+						57554,	-- Wicked Gateways
+						57553,	-- On Wounded Wings
+					},
+					["provider"] = { "n", 158181 },	-- Agthia
+					["coord"] = { 46.5, 63.4, 1533 },
+					["lvl"] = { 50 },
+					["g"] = {
+						i(175719),	-- Agitha's Void-Tinged Speartip
+					},
+				}),
+				q(57709, {	-- The Aspirant's Crucible
+					["sourceQuests"] = {
+						57676,	-- The Things That Haunt Us
+						57677,	-- A Soulbind In Need
+					},
+					["provider"] = { "n", 165107 },	-- Kleia
+					["coord"] = { 48.3, 72.7, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(60466, {	-- The Old Ways
+					["sourceQuests"] = {
+						57676,	-- The Things That Haunt Us
+						57677,	-- A Soulbind In Need
+					},
+					["provider"] = { "n", 160598 },	-- Klystere
+					["coord"] = { 47.8, 73.2, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57676, {	-- The Things That Haunt Us
+					["sourceQuests"] = { 57261 },	-- Walk the Path, Aspirant
+					["provider"] = { "n", 165107 },	-- Kleia
+					["coord"] = { 48.3, 72.7, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(60735, {	-- Trouble in Paradise
+					["sourceQuests"] = { 57584 },	-- A Fate Most Noble
+					["provider"] = { "n", 165107 },	-- Kleia
+					["coord"] = { 41.8, 78.1, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57261, {	-- Walk the Path, Aspirant
+					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
+					["provider"] = { "n", 166306 },	-- Kalisthene
+					["coord"] = { 42.2, 78.1, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57552, {	-- Warriors of the Void
+					["sourceQuests"] = { 57549 },	-- In Agthia's Memory
+					["provider"] = { "n", 158181 },	-- Agthia
+					["coord"] = { 46.5, 63.4, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(59774, {	-- Welcome to Eternity
+					["sourceQuests"] = { 59773 },	-- Seek the Ascended
+					["provider"] = { "n", 166227 },	-- Kleia
+					["coord"] = { 37.3, 76.4, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57554, {	-- Wicked Gateways
+					["sourceQuests"] = { 57549 },	-- In Agthia's Memory
+					["provider"] = { "n", 158181 },	-- Agthia
+					["coord"] = { 46.5, 63.4, 1533 },
+					["lvl"] = { 50 },
+				}),
+				
+				
+				
+				
+				
+				
+				
+				
 				currency(1829, {		-- Renown-Kyrian
 					q(61697, {	-- A New Age
 						["provider"] = { "n", 174937 },	-- Adjutant Galos
@@ -25,65 +154,7 @@ _.Zones =
 						},
 					}),
 				}),
-				-- Eternity's Call
-				q(59774, {	-- Welcome to Eternity
-					["provider"] = { "n", 166227 },	-- Kleia
-					["coord"] = { 37.3, 76.4, 1533 },
-					["sourceQuest"] = 59773,	-- Seek the Ascended
-					["lvl"] = { 50 },
-				}),
-				q(57102, {	-- Pardon Our Dust
-					["provider"] = { "n", 165107 },	-- Kleia
-					["coord"] = { 41.8, 78.1, 1533 },
-					["sourceQuest"] = 59774,	-- Welcome to Eternity
-					["lvl"] = { 50 },
-				}),
-				q(57584, {	-- A Fate Most Noble
-					["provider"] = { "n", 158281 },	-- Greeter Mnemis
-					["coord"] = { 41.9, 78.0, 1533 },
-					["sourceQuest"] = 57102,	-- Pardon Our Dust
-					["lvl"] = { 50 },
-				}),
-				q(60735, {	-- Trouble in Paradise
-					["provider"] = { "n", 165107 },	-- Kleia
-					["coord"] = { 41.8, 78.1, 1533 },
-					["sourceQuest"] = 57584,	-- A Fate Most Noble
-					["lvl"] = { 50 },
-				}),
-				q(57261, {	-- Walk the Path, Aspirant
-					["provider"] = { "n", 166306 },	-- Kalisthene
-					["coord"] = { 42.2, 78.1, 1533 },
-					["sourceQuest"] = 59773,	-- Seek the Ascended
-					["lvl"] = { 50 },
-				}),
-				q(57676, {	-- The Things That Haunt Us
-					["provider"] = { "n", 165107 },	-- Kleia
-					["coord"] = { 48.3, 72.7, 1533 },
-					["sourceQuest"] = 57261,	-- Walk the Path, Aspirant
-					["lvl"] = { 50 },
-				}),
-				q(57677, {	-- A Soulbind In Need
-					["provider"] = { "n", 165107 },	-- Kleia
-					["coord"] = { 48.3, 72.7, 1533 },
-					["sourceQuest"] = 57261,	-- Walk the Path, Aspirant
-					["lvl"] = { 50 },
-					["g"] = {
-						i(175624),	-- Pure Aspirant's Leggings
-						i(175626),	-- Courageous Aspirant's Breeches
-						i(175625),	-- Humble Aspirant's Leggings
-						i(175623),	-- Judicious Aspirant's Legguards
-					},
-				}),
 				-- The Aspirant's Crucible
-				q(57709, {	-- The Aspirant's Crucible
-					["provider"] = { "n", 165107 },	-- Kleia
-					["coord"] = { 48.3, 72.7, 1533 },
-					["sourceQuests"] = {
-						57676,	-- The Things That Haunt Us
-						57677,	-- A Soulbind In Need
-					 },
-					["lvl"] = { 50 },
-				}),
 				q(57710, {	-- A Life of Service
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 56.1, 81.7, 1533 },
@@ -614,23 +685,6 @@ _.Zones =
 				-- End of Zone Achievement Quests
 
 				-- An Act of Service
-				q(60466, {	-- The Old Ways
-					["provider"] = { "n", 160598 },	-- Klystere
-					["coord"] = { 47.8, 73.2, 1533 },
-					["lvl"] = { 50 },
-				}),
-				q(62714, {	-- A Gift for An Acolyte
-					["provider"] = { "n", 160598 },	-- Klystere
-					["coord"] = { 47.8, 73.2, 1533 },
-					["sourceQuest"] = 60466,	-- The Old Ways
-					["lvl"] = { 50 },
-				}),
-				q(62715, {	-- More Than A Gift
-					["provider"] = { "n", 174900 },	-- Acolyte Amalthina
-					["coord"] = { 47.8, 73.2, 1533 },
-					["sourceQuest"] = 62714,	-- A Gift for An Acolyte
-					["lvl"] = { 50 },
-				}),
 				q(60316, {	-- WANTED: Altered Sentinel
 					--["provider"] = { "o", 352027 },	-- Wanted Scroll			-- TODO: Need to add the Object 352027 or 352028
 					["coord"] = { 49.1, 72.8, 1533 },
@@ -806,49 +860,6 @@ _.Zones =
 					--["provider"] = { "o", ?? },	-- Notice						-- TODO: Need to add the ObjectID
 					["coord"] = { 51.5, 47.1, 1533 },
 					["lvl"] = { 50 },
-				}),
-				q(57549, {	-- In Agthia's Memory
-					["provider"] = { "n", 158078 },	-- Keeper Mnemis
-					["coord"] = { 46.9, 63.4, 1533 },
-					["sourceQuest"] = 59554,	-- A Fine Journey
-					["lvl"] = { 50 },
-				}),
-				q(57551, {	-- Agthia's Path
-					["provider"] = { "n", 158078 },	-- Keeper Mnemis
-					["coord"] = { 46.9, 63.4, 1533 },
-					["sourceQuest"] = 57549,	-- In Agthia's Memory
-					["lvl"] = { 50 },
-				}),
-				q(57552, {	-- Warriors of the Void
-					["provider"] = { "n", 158181 },	-- Agthia
-					["coord"] = { 46.5, 63.4, 1533 },
-					["sourceQuest"] = 57549,	-- In Agthia's Memory
-					["lvl"] = { 50 },
-				}),
-				q(57554, {	-- Wicked Gateways
-					["provider"] = { "n", 158181 },	-- Agthia
-					["coord"] = { 46.5, 63.4, 1533 },
-					["sourceQuest"] = 57549,	-- In Agthia's Memory
-					["lvl"] = { 50 },
-				}),
-				q(57553, {	-- On Wounded Wings
-					["provider"] = { "n", 158178 },	-- Agthian Defender
-					["coord"] = { 46.4, 63.6, 1533 },
-					["sourceQuest"] = 57549,	-- In Agthia's Memory
-					["lvl"] = { 50 },
-				}),
-				q(57555, {	-- Shadow's Fall
-					["provider"] = { "n", 158181 },	-- Agthia
-					["coord"] = { 46.5, 63.4, 1533 },
-					["sourceQuests"] = {
-						57552,	-- Warriors of the Void
-						57554,	-- Wicked Gateways
-						57553,	-- On Wounded Wings
-					},
-					["lvl"] = { 50 },
-					["g"] = {
-						i(175719),	-- Agitha's Void-Tinged Speartip
-					},
 				}),
 				q(62170, {	-- You'll Never Walk Alone
 					["provider"] = { "i", 182693 },	-- Lost Disciple's Notes

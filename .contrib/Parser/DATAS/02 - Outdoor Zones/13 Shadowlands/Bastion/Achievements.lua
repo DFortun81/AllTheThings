@@ -7,6 +7,18 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
 			n(ACHIEVEMENTS, {
+				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
+				--	TODO: finish adding criteria here + other SL zones
+					["collectible"] = false,
+					["g"] = {
+						crit(1, {	-- Crystalsnap
+							["coord"] = { 52.7, 74.2, 1533 },
+						}),
+						crit(9, {	-- Kostos
+							["coord"] = { 46.6, 49.4, 1533 },
+						}),
+					},
+				}),
 				ach(14281, {	-- The Path to Ascension
 					crit(1, {	-- Eternity's Call
 						["sourceQuest"] = 57677,	-- A Soulbind In Need
@@ -75,7 +87,7 @@ _.Zones =
 					}),
 					crit(3, {	-- Purifying Draught
 						["objectID"] = 339641,	-- The Purifying Draught
-						["coord"] = { 52.0, 86.0, 1536 },
+						["coord"] = { 52.0, 86.0, 1533 },
 						["questID"] = 58329,
 						["g"] = {
 							i(174007),	-- Purifying Draught
