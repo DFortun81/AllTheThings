@@ -288,14 +288,10 @@ _.Zones =
 					 },
 					["lvl"] = { 50 },
 					["g"] = {
-						i(173322),	-- Aspiring Defender's Sandals
-						i(173327),	-- Sparring Trainer's Handwraps
-						i(173324),	-- Aspiring Defender's Treads
-						i(173325),	-- Sparring Trainer's Grips
-						i(173323),	-- Aspiring Defender's Striders
-						i(173328),	-- Sparring Trainer's Gloves
-						i(173321),	-- Aspiring Defender's Footguards
 						i(173326),	-- Sparring Trainer's Gauntlets
+						i(173328),	-- Sparring Trainer's Gloves
+						i(173325),	-- Sparring Trainer's Grips
+						i(173327),	-- Sparring Trainer's Handwraps
 					},
 				}),
 				q(57291, {	-- The Chamber of First Reflection
@@ -309,6 +305,12 @@ _.Zones =
 					["coord"] = { 57.2, 86.5, 1533 },
 					["sourceQuest"] = 57291,	-- The Chamber of First Reflectiont
 					["lvl"] = { 50 },
+					["g"] = {
+						i(173324),	-- Boots of Inner Calm
+						i(173323),	-- Contemplative Striders
+						i(173321),	-- Footguards of Self-Reflection
+						i(173322),	-- Sandals of Soul's Clarity
+					},
 				}),
 				q(57715, {	-- The Archon's Answer (Deathknight)
 					["provider"] = { "n", 158862 },	-- Kleia
