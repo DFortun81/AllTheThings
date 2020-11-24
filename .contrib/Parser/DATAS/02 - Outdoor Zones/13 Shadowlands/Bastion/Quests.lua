@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
-			n(QUESTS, {	
+			n(QUESTS, {
 				q(57584, {	-- A Fate Most Noble
 					["sourceQuests"] = { 57102 },	-- Pardon Our Dust
 					["provider"] = { "n", 158281 },	-- Greeter Mnemis
@@ -49,7 +49,7 @@ _.Zones =
 				}),
 				q(57547, {	-- A Test of Courage
 					["provider"] = { "n", 158004 },	-- Zosime
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						57545,	-- Distractions for Kala
 						57538,	-- Disturbing the Peace
 					},
@@ -252,14 +252,14 @@ _.Zones =
 					["coord"] = { 46.5, 63.4, 1533 },
 					["lvl"] = { 50 },
 				}),
-				
-				
-				
-				
-				
-				
-				
-				
+
+
+
+
+
+
+
+
 				currency(1829, {		-- Renown-Kyrian
 					q(61697, {	-- A New Age
 						["provider"] = { "n", 174937 },	-- Adjutant Galos
@@ -397,8 +397,8 @@ _.Zones =
 					["lvl"] = { 50 },
 				}),
 				q(58174, {	-- All An Aspirant Can Do
-					["provider"] = { "n", 165107 },	-- Kleia
-					["coord"] = { 48.3, 72.7, 1533 },
+					["provider"] = { "n", 158862 },	-- Kleia
+					["coord"] = { 53.5, 87.3, 1533 },
 					["sourceQuests"] = {
 						57715,	-- The Archon's Answer (Deathknight)
 						60217,	-- The Archon's Answer (Demonhunter)
