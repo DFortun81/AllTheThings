@@ -2938,6 +2938,9 @@ _.HiddenQuestTriggers =
 		
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
+		q(58117),	-- Triggered after turning in The Aspirant's Crucible (57709)
+		q(60570),	-- Triggered after first time killing Cloudtail rare
+		q(62841),	-- Triggered after first time using Kyrian Bell buff item
 		
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
