@@ -16,6 +16,9 @@ _.Zones =
 				p(3050,	{	-- Bleak Skitterer
 					--["crs"] = {  },
 				}),
+				p(3083, {	-- Crawbat
+					["crs"] = {	176024 },
+				}),
 				p(3049,	{	-- Pulsating Maggot
 					--["crs"] = {  },
 				}),

@@ -57,6 +57,7 @@ _.PetJournal =
 		}),
 		p(3065),			-- Courage
 		p(1997),			-- Crackers
+		p(3083),			-- Crawbat
 		p(507),				-- Crested Owl
 		p(2567),			-- Crimson Bat Pup
 		p(2903),			-- Crimson Dredwing Pup

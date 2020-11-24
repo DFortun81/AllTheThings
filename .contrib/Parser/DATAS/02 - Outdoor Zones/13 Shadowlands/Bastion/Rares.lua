@@ -72,10 +72,11 @@ _.Zones =
 				}),
 				n(171189, { -- Bookkeeper Mnemis
 					["coord"] = { 57.2, 62.4, 1533 },
-					--["questID"] = ,
+					["questID"] = 59022,	-- 62167 also triggered (adding to HQT for now)
 					["isDaily"] = true,
 					["g"] = {
 						ach(14307, crit(21)),	-- Adventurer of Bastion / Bookkeeper Mnemis
+						i(182682),	-- Book-Borrower Identification
 					},
 				}),
 				n(170932, { -- Cloudfeather Guardian

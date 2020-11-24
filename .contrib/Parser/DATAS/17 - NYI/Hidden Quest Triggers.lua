@@ -2941,6 +2941,7 @@ _.HiddenQuestTriggers =
 		q(58117),	-- Triggered after turning in The Aspirant's Crucible (57709)
 		q(60294),	-- Triggered after choosing Larion from Nemea during Pride Or Unit quest
 		--q(xxxxx),	-- Triggered after choosing Phalynx from Pelodis during Pride Or Unit quest
+		q(62167),	-- Triggered after killing Bookkeeper Mnemis along with 59022
 		q(62191),	-- Triggered after killing Cloudfeather Guardian
 		q(62841),	-- Triggered after first time using Kyrian Bell buff item
 		
