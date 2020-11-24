@@ -47,6 +47,15 @@ _.Zones =
 						i(175623),	-- Judicious Aspirant's Legguards
 					},
 				}),
+				q(57547, {	-- A Test of Courage
+					["provider"] = { "n", 158004 },	-- Zosime
+					["sourceQuests"] = { 
+						57545,	-- Distractions for Kala
+						57538,	-- Disturbing the Peace
+					},
+					["coord"] = { 51.3, 59.6, 1533 },
+					["lvl"] = { 50 },
+				}),
 				q(57551, {	-- Agthia's Path
 					["sourceQuests"] = { 57549 },	-- In Agthia's Memory
 					["provider"] = { "n", 158078 },	-- Keeper Mnemis
@@ -63,6 +72,16 @@ _.Zones =
 					["sourceQuests"] = { 57908 },	-- The True Crucible Awaits
 					["provider"] = { "n", 158862 },	-- Kleia
 					["coord"] = { 51.7, 81.0, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57545, {	-- Distractions for Kala
+					["provider"] = { "n", 158004 },	-- Zosime
+					["coord"] = { 51.3, 59.6, 1533 },
+					["lvl"] = { 50 },
+				}),
+				q(57538, {	-- Disturbing the Peace
+					["provider"] = { "n", 158004 },	-- Zosime
+					["coord"] = { 51.3, 59.6, 1533 },
 					["lvl"] = { 50 },
 				}),
 				q(62718, {	-- Hero's Rest
@@ -180,6 +199,19 @@ _.Zones =
 						i(173320),	-- Waylight Tunic
 						i(173319),	-- Waylight Chainmail
 						i(173318),	-- Waylight Breastplate
+					},
+				}),
+				q(57568, {	-- Tough Love
+					["sourceQuests"] = { 57547 },	-- A Test of Courage
+					["provider"] = { "n", 158004 },	-- Zosime
+					["coord"] = { 51.2, 56.8, 1533 },
+					["lvl"] = { 50 },
+					["g"] = {
+						i(175616),	-- Courageous Aspirant's Gloves
+						i(175619),	-- Humble Aspirant's Gauntlets
+						i(175617),	-- Judicious Aspirant's Gauntlets
+						i(175762),	-- Larion Tamer's Cloak
+						i(175618),	-- Pure Aspirant's Gloves
 					},
 				}),
 				q(60735, {	-- Trouble in Paradise

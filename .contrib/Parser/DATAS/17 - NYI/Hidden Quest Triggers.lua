@@ -2939,6 +2939,9 @@ _.HiddenQuestTriggers =
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
 		q(58117),	-- Triggered after turning in The Aspirant's Crucible (57709)
+		q(60294),	-- Triggered after choosing Larion from Nemea during Pride Or Unit quest
+		--q(xxxxx),	-- Triggered after choosing Phalynx from Pelodis during Pride Or Unit quest
+		q(62191),	-- Triggered after killing Cloudfeather Guardian
 		q(62841),	-- Triggered after first time using Kyrian Bell buff item
 		
 		-- The Maw

@@ -46,7 +46,7 @@ _.Zones =
 					crit(2, {	-- Wings of Freedom
 						["sourceQuest"] = 59865,	-- Glimmerflight
 					}),
-					crit(3, {	-- Dirty Jobs
+					crit(3, {	-- In the Garden of Respite
 						["sourceQuest"] = 57568,	-- Tough Love
 					}),
 					crit(4, {	-- The Spear of Kalliope
