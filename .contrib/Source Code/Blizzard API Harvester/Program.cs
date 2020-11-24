@@ -21,12 +21,23 @@ namespace ATT
     {
         const string API_CALL_ITEM = "/data/wow/item/{0}?namespace=static-us&locale=en_US&access_token=";
         const string API_CALL_QUEST = "/data/wow/quest/{0}?namespace=static-us&locale=en_US&access_token=";
+        /// <summary>
+        /// Examples of search
+        /// https://us.api.blizzard.com/data/wow/search/item?namespace=static-us&locale=en_US&inventory_type.name.en_US=Off&_page=1&_pageSize=1000&orderby=id:asc&access_token=
+        /// </summary>
+        const string API_CALL_SEARCH = "/data/wow/search/{0}?namespace=static-us&locale=en_US&_page={1}&_pageSize=1000&access_token=";
+        
         static string API_KEY = null;
         static HttpClient Client { get; } = new HttpClient();
         static bool HasClientInitialized { get; set; } = false;
         static ConcurrentQueue<Tuple<int, string>> DataResults { get; } = new ConcurrentQueue<Tuple<int, string>>();
         static ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>> APIResults { get; } = new ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>>();
         static ConcurrentQueue<string> ParseDatas { get; } = new ConcurrentQueue<string>();
+        /// <summary>
+        /// A queue of the locks for each attempted
+        /// </summary>
+        static ConcurrentQueue<Action> ThrottleQueue { get; } = new ConcurrentQueue<Action>();
+        static readonly object ThrottleLock = new object();
         static string DateStamp { get; } = DateTime.UtcNow.Year.ToString() + DateTime.UtcNow.Month.ToString("00") + DateTime.UtcNow.Day.ToString("00");
         /// <summary>
         /// Represents how long to wait between API calls on average over an hour (since it will take more than an hour to retrieve all item IDs)
@@ -46,8 +57,20 @@ namespace ATT
         static bool WaitForData { get; set; }
         static bool WaitForParseQueue { get; set; }
         static bool WaitForParsingData { get; set; }
+        /// <summary>
+        /// Represents whether the throttling thread is currently spinning
+        /// </summary>
+        static bool ThrottleSpinning { get; set; }
         static string Error { get; set; }
         static Dictionary<ObjType, bool> ProcessObjects { get; } = new Dictionary<ObjType, bool>();
+        /// <summary>
+        /// Represents the pre-determined IDs which will be available from the API for the given object type
+        /// </summary>
+        static Dictionary<ObjType, int[]> AvailableObjectIDs { get; } = new Dictionary<ObjType, int[]>();
+        /// <summary>
+        /// Represents the currently-running Thread IDs while performing API Search queries
+        /// </summary>
+        static List<int> SearchThreadIDs { get; } = new List<int>();
 
         static void Main(string[] args)
         {
@@ -82,6 +105,9 @@ namespace ATT
                     ProcessObjects[parseType] = true;
                 }
             }
+
+            // pre-determine which IDs will exist in the API for each type
+            //DetermineAvailableIDs();
 
             // start thread for simply writing data
             Thread threadDataWriter = new Thread(SaveFiles)
@@ -138,6 +164,74 @@ namespace ATT
             while (WaitForParseQueue || WaitForParsingData || ParseDatas.Count > 0) { Thread.Sleep(50); }
 
             //Console.ReadLine();
+        }
+
+        private static void DetermineAvailableIDs()
+        {
+            foreach (ObjType objType in ProcessObjects.Keys)
+            {
+                if (ProcessObjects[objType])
+                    StartSearchForObjectType(objType);
+            }
+
+            // wait for search threads to complete
+            while (SearchThreadIDs.Any()) { Thread.Sleep(100); }
+        }
+
+        private static void StartSearchForObjectType(ObjType objType)
+        {
+            InitClient();
+            Thread thread = new Thread(SearchForObjectType)
+            {
+                IsBackground = true,
+                Name = "Thread.APISearch." + objType.ToString(),
+            };
+            thread.Start(objType);
+            SearchThreadIDs.Add(thread.ManagedThreadId);
+        }
+
+        private static void SearchForObjectType(object obj)
+        {
+            ObjType objType = (ObjType)obj;
+            string objStr = objType.ToString();
+            bool moreItems = true;
+            int page = 1;
+
+            var availableItems = new HashSet<int>();
+            while (moreItems)
+            {
+                string url = string.Format(API_CALL_SEARCH, objStr, page.ToString()) + API_KEY;
+                Console.WriteLine("Search URL: " + url);
+                HttpResponseMessage response = QueueAPIRequest(url).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    string respStr = response.Content.ReadAsStringAsync().Result;
+                    var objData = MiniJSON.Json.Deserialize(respStr) as Dictionary<string, object>;
+                    objData.TryGetValue("resultCountCapped", out moreItems);
+                    page++;
+                    if (objData.TryGetValue("results", out List<object> results))
+                    {
+                        foreach (object result in results)
+                        {
+                            if (result is Dictionary<string, object> item)
+                            {
+                                if (item.TryGetValue("data", out Dictionary<string, object> data))
+                                {
+                                    if (data.TryGetValue("id", out int id))
+                                    {
+                                        Console.WriteLine("Available ID:" + id.ToString());
+                                        availableItems.Add(id);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            AvailableObjectIDs.Add(objType, availableItems.ToArray());
+
+            SearchThreadIDs.Remove(Thread.CurrentThread.ManagedThreadId);
         }
 
         private static void InitItems()
@@ -264,14 +358,6 @@ namespace ATT
         static void HarvestItems()
         {
             InitClient();
-            var APIKeyFileName = "API.key";
-            if (File.Exists(APIKeyFileName)) API_KEY = File.ReadAllText(APIKeyFileName);
-            else
-            {
-                Console.WriteLine("You are missing an API.key API Key file! Please get one and try again.");
-                Console.ReadLine();
-                return;
-            }
             RawAPICallFormat = API_CALL_ITEM + API_KEY;
             int i = MaxItemID;
             while (i > 0)
@@ -295,14 +381,6 @@ namespace ATT
         static void HarvestQuests()
         {
             InitClient();
-            var APIKeyFileName = "API.key";
-            if (File.Exists(APIKeyFileName)) API_KEY = File.ReadAllText(APIKeyFileName);
-            else
-            {
-                Console.WriteLine("You are missing an API.key API Key file! Please get one and try again.");
-                Console.ReadLine();
-                return;
-            }
             RawAPICallFormat = API_CALL_QUEST + API_KEY;
             int i = MaxQuestID;
             while (i > 0)
@@ -328,6 +406,13 @@ namespace ATT
             if (HasClientInitialized) return;
             HasClientInitialized = true;
 
+            while (!File.Exists("API.key"))
+            {
+                Console.WriteLine("You are missing an 'API.key' API Key file! Please get one and try again.");
+                Console.ReadLine();
+            }
+            API_KEY = File.ReadAllText("API.key");
+
             Client.BaseAddress = new Uri("https://us.api.blizzard.com");
             Client.Timeout = new TimeSpan(0, 0, 10);
             Client.DefaultRequestHeaders.Accept.Clear();
@@ -344,6 +429,53 @@ namespace ATT
             Thread.Sleep(delay);
             APIResults.Enqueue(new Tuple<int, Task<HttpResponseMessage>>(i, Client.GetAsync(string.Format(RawAPICallFormat, i))));
         }
+
+        private static Task<HttpResponseMessage> QueueAPIRequest(string url)
+        {
+            WaitForThrottle();
+            return Client.GetAsync(url);
+        }
+
+        private static void WaitForThrottle()
+        {
+            lock (ThrottleLock)
+            {
+                Thread.Sleep(API_ExpectedThrottle);
+            }
+
+            //// ensure the throttler is spinning
+            //if (!ThrottleSpinning)
+            //{
+            //    Thread throttler = new Thread(SpinThrottle)
+            //    {
+            //        IsBackground = true,
+            //        Name = "Thread.Throttler",
+            //    };
+            //    throttler.Start();
+            //    ThrottleSpinning = true;
+            //}
+
+            //ThrottleQueue.Enqueue(a =>
+            //{
+
+            //});
+            //lock (waiting)
+            //{
+            //    while ()
+            //}
+        }
+
+        //private static void SpinThrottle()
+        //{
+        //    while(true)
+        //    {
+        //        if (ThrottleQueue.TryDequeue(out Action exe))
+        //        {
+        //            exe();
+        //        }
+        //        Thread.Sleep(API_ExpectedThrottle);
+        //    }
+        //}
 
         static bool TryParseBinding(string binding, out int bindingID)
         {
