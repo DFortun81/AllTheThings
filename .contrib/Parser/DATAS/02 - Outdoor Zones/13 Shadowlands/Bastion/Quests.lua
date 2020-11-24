@@ -513,8 +513,8 @@ _.Zones =
 					["lvl"] = { 50 },
 				}),
 				q(57446, {	-- The Enemy You Know
-					["provider"] = { "n", 165107 },	-- Kleia
-					["coord"] = { 48.3, 72.7, 1533 },
+					["provider"] = { "n", 159762 },	-- Eridia
+					["coord"] = { 61.3, 74.4, 1533 },
 					["sourceQuests"] = {
 						57037,	-- A Once Sweet Sound
 						59147,	-- The Hand of Purification
