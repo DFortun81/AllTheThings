@@ -24,7 +24,6 @@ _.NeverImplemented =
 		-- Toy
 		un(NEVER_IMPLEMENTED, i(182655)),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
 		un(NEVER_IMPLEMENTED, i(174286)),	-- Kyrian Ritual Vestments (beta only? Retrieving data on 9.0.2)
-		un(NEVER_IMPLEMENTED, i(177665)),	-- Spectral Hankerchief (beta only? Retrieving data on 9.0.2)
 		-- Pets
 		un(NEVER_IMPLEMENTED, i(175114)),	-- Renny (has quest, no source yet)
 		un(NEVER_IMPLEMENTED, i(180589)),	-- Soullocked Sinstone (obtainable according to journal)

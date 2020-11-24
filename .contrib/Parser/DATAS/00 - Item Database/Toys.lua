@@ -699,7 +699,6 @@ t(173984);	-- Scroll of Aeons
 t(183900);	-- Sinvyr Tea Set
 t(183903);	-- Smelly Jelly
 t(180873);	-- Smolderheart
-t(177665);	-- Spectral Hankerchief
 t(184075);	-- Stonewrought Sentry
 t(182694);	-- Stylish Black Parasol
 t(182696);	-- The Countess's Parasol
