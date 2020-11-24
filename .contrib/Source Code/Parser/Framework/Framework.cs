@@ -166,9 +166,6 @@ namespace ATT
                                 quest[key.Key] = key.Value;
                             }
                         }
-
-                        // pre-consolidate the level information so it doesn't get merged around later
-                        LevelConsolidation(quest, 1);
                     }
                 }
             }
@@ -191,9 +188,6 @@ namespace ATT
                             {
                                 cachedQuest[key.Key] = key.Value;
                             }
-
-                            // pre-consolidate the level information so it doesn't get merged around later
-                            LevelConsolidation(cachedQuest, 1);
                         }
                     }
                 }
@@ -598,6 +592,24 @@ namespace ATT
             return minLevel;
         }
 
+        /// <summary>
+        /// Returns the minimum level requirement for this data
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        private static int? GetDataMinLevel(Dictionary<string, object> data)
+        {
+            // If the level of this object is less than the current minimum level, we can safely remove it.
+            if (data.TryGetValue("lvl", out object lvlRef))
+            {
+                if (lvlRef is List<object> lvls && lvls.Count > 0)
+                    return Convert.ToInt32(lvls[0]);
+                else if (lvlRef is int)
+                    return Convert.ToInt32(lvlRef);
+            }
+            return null;
+        }
+
         private static void DuplicateDataIntoGroups(Dictionary<string, object> data, object groups, string type)
         {
             var groupIDs = groups as List<object>;
@@ -861,7 +873,9 @@ namespace ATT
                 {
                     if (moreThanOne)
                     {
-                        if (item.TryGetValue("lvl", out object lvlRef) && lvlRef is int level)
+                        // sort by level into tier
+                        var level = GetDataMinLevel(item);
+                        if (level.HasValue)
                         {
                             if (level <= 25) tier = tierLists[1]; // Classic
                             else if (level <= 27) tier = tierLists[2];   // Burning Crusade
@@ -871,8 +885,9 @@ namespace ATT
                             else if (level <= 40) tier = tierLists[6];   // Warlords of Draenor
                             else if (level <= 45) tier = tierLists[7];   // Legion
                             else if (level <= 50) tier = tierLists[8];   // Battle For Azeroth
-                            else tier = tierLists[8];   // Shadowlands
+                            else tier = tierLists[9];   // Shadowlands
                         }
+                        // else try to sort by itemID
                         else if (item.TryGetValue("itemID", out object itemIDRef))
                         {
                             var itemID = Convert.ToInt32(itemIDRef);
@@ -886,6 +901,7 @@ namespace ATT
                             else if (itemID < 174366) tier = tierLists[8];   // Battle For Azeroth
                             else tier = tierLists[9];   // Shadowlands
                         }
+                        // default tier assignment
                         else tier = tierLists[1];
                     }
 
@@ -1095,7 +1111,10 @@ namespace ATT
                         Objects.Merge(entry, questRef);
                         // dont bother adding quests which literally have nothing useful in them
                         if (entry.Count > 1)
+                        {
+                            LevelConsolidation(entry, 1);
                             unsortedQuests.Add(entry);
+                        }
                     }
                 }
                 if (unsortedQuests.Count > 0)
