@@ -2932,10 +2932,10 @@ _.HiddenQuestTriggers =
 		q(62850),	--  \ triggered when logging into my 50 main during week 2 of the prepatch
 		q(62851),	--  / nothing else done, quests were not there during week 1
 		q(62852),	-- /
-		
+
 		-- Various tracking quests
 		q(61858),	-- taking the portal to Acherus during "Shadowlands: A Chilling Summons"
-		
+
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
 		q(58117),	-- Triggered after turning in The Aspirant's Crucible (57709)
@@ -2944,7 +2944,10 @@ _.HiddenQuestTriggers =
 		q(62167),	-- Triggered after killing Bookkeeper Mnemis along with 59022
 		q(62191),	-- Triggered after killing Cloudfeather Guardian
 		q(62841),	-- Triggered after first time using Kyrian Bell buff item
-		
+		q(58292),	-- looting Purians
+		q(58293),	-- placing first Purian in the bowl
+		q(58294),	-- placing second Purian in the bowl
+
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
 		q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)

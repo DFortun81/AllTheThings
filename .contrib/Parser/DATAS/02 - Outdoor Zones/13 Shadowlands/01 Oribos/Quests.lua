@@ -27,8 +27,8 @@ _.Zones =
 				}),
 				q(59773, {	-- Seek the Ascended
 					["sourceQuests"] = { 60156 },	-- The Path to Bastion
-					["provider"] = { "n", 172421 },	-- Overseer Kah-Sher
-					["coord"] = { 64.3, 52.2, 1670 },
+					["provider"] = { "n", 175133 },	-- Pathscribe Roh-Avonavi
+					["coord"] = { 64.3, 49.7, 1670 },
 					["lvl"] = { 50 },
 				}),
 				q(60129, {	-- Stranger in an Even Stranger Land
