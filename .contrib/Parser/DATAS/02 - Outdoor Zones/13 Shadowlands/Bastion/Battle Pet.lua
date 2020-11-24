@@ -8,7 +8,7 @@ _.Zones =
 		m(1533, {	-- Bastion
 			filter(101, {	-- Battle Pets
 				i(180840, {	-- Vibrant Glimmerfly
-					--["crs"] = {  },	-- Vibrant Glimmerfly
+					["crs"] = { 171668 },	-- Vibrant Glimmerfly
 				}),
 				i(180837, {	-- Fluttering Glimmerfly
 					["crs"] = { 171664 },	-- Fluttering Glimmerfly

@@ -11,25 +11,30 @@ _.Zones =
 					["sourceQuests"] = { 57102 },	-- Pardon Our Dust
 					["provider"] = { "n", 158281 },	-- Greeter Mnemis
 					["coord"] = { 41.9, 78.0, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57711, {	-- A Forge Gone Cold
 					["sourceQuests"] = { 57710 },	-- A Life of Service
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 56.1, 81.7, 1533 },
-					["lvl"] = { 50 },
+				}),
+				q(59674, {	-- A Friendly Rivalry
+				--	TODO: figure out SQs
+					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						63068,	-- Settling Disputes
+					},
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 57.4, 54.2, 1533 },
 				}),
 				q(62714, {	-- A Gift for An Acolyte
 					["sourceQuests"] = { 60466 },	-- The Old Ways
 					["provider"] = { "n", 160598 },	-- Klystere
 					["coord"] = { 47.8, 73.2, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57710, {	-- A Life of Service
 					["sourceQuests"] = { 57709 },	-- The Aspirant's Crucible
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 56.1, 81.7, 1533 },
-					["lvl"] = { 50 },
 					["g"] = {
 						i(173797),	-- Amulet of Heroic Accomplishment
 						i(173344),	-- Band of Chronicled Deeds
@@ -39,7 +44,6 @@ _.Zones =
 					["sourceQuests"] = { 57261 },	-- Walk the Path, Aspirant
 					["provider"] = { "n", 165107 },	-- Kleia
 					["coord"] = { 48.3, 72.7, 1533 },
-					["lvl"] = { 50 },
 					["g"] = {
 						i(175624),	-- Pure Aspirant's Leggings
 						i(175626),	-- Courageous Aspirant's Breeches
@@ -48,60 +52,52 @@ _.Zones =
 					},
 				}),
 				q(57547, {	-- A Test of Courage
-					["provider"] = { "n", 158004 },	-- Zosime
 					["sourceQuests"] = {
 						57545,	-- Distractions for Kala
 						57538,	-- Disturbing the Peace
 					},
+					["provider"] = { "n", 158004 },	-- Zosime
 					["coord"] = { 51.3, 59.6, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57551, {	-- Agthia's Path
 					["sourceQuests"] = { 57549 },	-- In Agthia's Memory
 					["provider"] = { "n", 158078 },	-- Keeper Mnemis
 					["coord"] = { 46.9, 63.4, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57909, {	-- Assessing Your Stamina
 					["sourceQuests"] = { 57908 },	-- The True Crucible Awaits
 					["provider"] = { "n", 158861 },	-- Pelagos
 					["coord"] = { 51.7, 80.9, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57288, {	-- Assessing Your Strength
 					["sourceQuests"] = { 57908 },	-- The True Crucible Awaits
 					["provider"] = { "n", 158862 },	-- Kleia
 					["coord"] = { 51.7, 81.0, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57545, {	-- Distractions for Kala
 					["sourceQuests"] = { 57529 },	-- Garden in Turmoil
 					["provider"] = { "n", 158004 },	-- Zosime
 					["coord"] = { 51.3, 59.6, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57538, {	-- Disturbing the Peace
 					["sourceQuests"] = { 57529 },	-- Garden in Turmoil
 					["provider"] = { "n", 158004 },	-- Zosime
 					["coord"] = { 51.3, 59.6, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57529, {	-- Garden in Turmoil
+				--	TODO: figure out SQs
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 158005 },	-- Tamesis
 					["coord"] = { 52.3, 61.3, 1533 },
-					["lvl"] = { 50 },
-					["isBreadcrumb"] = true,
 				}),
 				q(62718, {	-- Hero's Rest
 					["provider"] = { "o", 362489 },	-- Elysian Decree
 					["coord"] = { 48.8, 73.3, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57549, {	-- In Agthia's Memory
 				--	TODO: figure out SQ.  picked it up during "A Soulbind in Need" / "The Things That Haunt Us" when i took a detour to run up the hill to kill a rare that spawned.
 					["provider"] = { "n", 158078 },	-- Keeper Mnemis
 					["coord"] = { 46.9, 63.4, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(59920, {	-- Light the Forge, Forgelite
 					["sourceQuests"] = {
@@ -111,25 +107,45 @@ _.Zones =
 					},
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 52.5, 82.7, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(62715, {	-- More Than A Gift
 					["sourceQuests"] = { 62714 },	-- A Gift for An Acolyte
 					["provider"] = { "n", 174900 },	-- Acolyte Amalthina
 					["coord"] = { 47.8, 73.2, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57553, {	-- On Wounded Wings
 					["sourceQuests"] = { 57549 },	-- In Agthia's Memory
 					["provider"] = { "n", 158178 },	-- Agthian Defender
 					["coord"] = { 46.4, 63.6, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57102, {	-- Pardon Our Dust
 					["sourceQuests"] = { 59774 },	-- Welcome to Eternity
 					["provider"] = { "n", 165107 },	-- Kleia
 					["coord"] = { 41.8, 78.1, 1533 },
-					["lvl"] = { 50 },
+				}),
+				q(58037, {	-- Part of the Pride
+					["sourceQuests"] = {
+						59674,	-- A Friendly Rivalry
+						58184,	-- Antiquated Methodology
+					},
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, 1533 },
+				}),
+				q(57931, {	-- Phalynx Malfunction
+					["sourceQuests"] = {
+						59674,	-- A Friendly Rivalry
+						58185,	-- Success Without Soul
+					},
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, 1533 },
+				}),
+				q(57932, {	-- Resource Drain
+					["sourceQuests"] = {
+						59674,	-- A Friendly Rivalry
+						58185,	-- Success Without Soul
+					},
+					["provider"] = { "n", 159609 },	-- Hopo
+					["coord"] = { 54.7, 41.2, 1533 },
 				}),
 				q(57555, {	-- Shadow's Fall
 					["sourceQuests"] = {
@@ -139,7 +155,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 158181 },	-- Agthia
 					["coord"] = { 46.5, 63.4, 1533 },
-					["lvl"] = { 50 },
 					["g"] = {
 						i(175719),	-- Agitha's Void-Tinged Speartip
 					},
@@ -156,25 +171,21 @@ _.Zones =
 					},
 					["provider"] = { "n", 165107 },	-- Kleia
 					["coord"] = { 48.3, 72.7, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57265, {	-- The Cycle of Anima: Drought Conditions
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 52.5, 82.7, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57263, {	-- The Cycle of Anima: Etherwyrms
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
 					["provider"] = { "n", 166577 },	-- Sika
 					["coord"] = { 52.7, 82.5, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57267, {	-- The Cycle of Anima: Flower Power
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
 					["provider"] = { "n", 166577 },	-- Sika
 					["coord"] = { 52.7, 82.5, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(60466, {	-- The Old Ways
 					["sourceQuests"] = {
@@ -183,25 +194,21 @@ _.Zones =
 					},
 					["provider"] = { "n", 160598 },	-- Klystere
 					["coord"] = { 47.8, 73.2, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57676, {	-- The Things That Haunt Us
 					["sourceQuests"] = { 57261 },	-- Walk the Path, Aspirant
 					["provider"] = { "n", 165107 },	-- Kleia
 					["coord"] = { 48.3, 72.7, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57908, {	-- The True Crucible Awaits
 					["sourceQuests"] = { 57713 },	-- The Work of One's Hands
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 52.9, 83.4, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57713, {	-- The Work of One's Hands
 					["sourceQuests"] = { 59920 },	-- Light the Forge, Forgelite
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 52.9, 83.4, 1533 },
-					["lvl"] = { 50 },
 					["g"] = {
 						i(173317),	-- Waylight Vestment
 						i(173320),	-- Waylight Tunic
@@ -213,7 +220,6 @@ _.Zones =
 					["sourceQuests"] = { 57547 },	-- A Test of Courage
 					["provider"] = { "n", 158004 },	-- Zosime
 					["coord"] = { 51.2, 56.8, 1533 },
-					["lvl"] = { 50 },
 					["g"] = {
 						i(175616),	-- Courageous Aspirant's Gloves
 						i(175619),	-- Humble Aspirant's Gauntlets
@@ -226,31 +232,45 @@ _.Zones =
 					["sourceQuests"] = { 57584 },	-- A Fate Most Noble
 					["provider"] = { "n", 165107 },	-- Kleia
 					["coord"] = { 41.8, 78.1, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57261, {	-- Walk the Path, Aspirant
 					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 					["provider"] = { "n", 166306 },	-- Kalisthene
 					["coord"] = { 42.2, 78.1, 1533 },
-					["lvl"] = { 50 },
+				}),
+				q(60366, {	-- WANTED: Darkwing
+				--	TODO: figure out SQs
+					["provider"] = { "o", 352027 },	-- Wanted Scroll
+					["coord"] = { 53.2, 46.4, 1533 },
+					["g"] = {
+						i(175762),	-- Larion Tamer's Cloak
+					},
+				}),
+				q(60315, {	-- WANTED: Gorgebeak
+				--	TODO: figure out SQs
+					["provider"] = { "o", 352027 },	-- Wanted Scroll
+					["coord"] = { 53.2, 46.4, 1533 },
+					["g"] = {
+						i(173345),	-- Cranefeather Bracers
+						i(173346),	-- Beakblockers
+						i(173347),	-- Down-Lined Wristguards
+						i(173348),	-- Gluttonous Wristwraps
+					},
 				}),
 				q(57552, {	-- Warriors of the Void
 					["sourceQuests"] = { 57549 },	-- In Agthia's Memory
 					["provider"] = { "n", 158181 },	-- Agthia
 					["coord"] = { 46.5, 63.4, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(59774, {	-- Welcome to Eternity
 					["sourceQuests"] = { 59773 },	-- Seek the Ascended
 					["provider"] = { "n", 166227 },	-- Kleia
 					["coord"] = { 37.3, 76.4, 1533 },
-					["lvl"] = { 50 },
 				}),
 				q(57554, {	-- Wicked Gateways
 					["sourceQuests"] = { 57549 },	-- In Agthia's Memory
 					["provider"] = { "n", 158181 },	-- Agthia
 					["coord"] = { 46.5, 63.4, 1533 },
-					["lvl"] = { 50 },
 				}),
 
 
@@ -285,7 +305,7 @@ _.Zones =
 					["sourceQuests"] = {
 						57909,	-- Assessing Your Stamina
 						57288,	-- Assessing Your Strength
-					 },
+					},
 					["lvl"] = { 50 },
 					["g"] = {
 						i(173326),	-- Sparring Trainer's Gauntlets
@@ -444,13 +464,9 @@ _.Zones =
 					["lvl"] = { 50 },
 					["g"] = {
 						i(173341),	-- Cord of Uncertain Devotion
-						i(173345),	-- Penitent Acolyte's Wristwraps
 						i(173343),	-- Belt of Uncertain Devotion
-						i(173348),	-- Penitent Acolyte's Bindings
 						i(173342),	-- Cinch of Uncertain Devotion
-						i(173347),	-- Penitent Acolyte's Bracers
 						i(173340),	-- Cincture of Uncertain Devotion
-						i(173346),	-- Penitent Acolyte's Armplates
 					},
 				}),
 				q(57717, {	-- Step Back From That Ledge, My Friend
@@ -742,45 +758,6 @@ _.Zones =
 					["coord"] = { 49.1, 72.8, 1533 },
 					["lvl"] = { 50 },
 				}),
-				q(60315, {	-- WANTED: Gorgebeak
-					--["provider"] = { "o", 352028 },	-- Wanted Scroll			-- TODO: Need to add the Object 352027 or 352028
-					["coord"] = { 53.2, 46.4, 1533 },
-					["lvl"] = { 50 },
-				}),
-				q(60366, {	-- WANTED: Darkwing
-					--["provider"] = { "o", 352028 },	-- Wanted Scroll			-- TODO: Need to add the Object 352027 or 352028
-					["coord"] = { 53.2, 46.4, 1533 },
-					["lvl"] = { 50 },
-					["g"] = {
-						i(175762),	-- Larion Tamer's Cloak
-					},
-				}),
-				q(59674, {	-- A Friendly Rivalry
-					["provider"] = { "n", 158765 },	-- Pelodis
-					["coord"] = { 57.4, 54.2, 1533 },
-					["lvl"] = { 50 },
-					["altQuests"] = {
-						63068,	-- Settling Disputes
-					},
-				}),
-				q(57931, {	-- Phalynx Malfunction
-					["provider"] = { "n", 158765 },	-- Pelodis
-					["coord"] = { 54.7, 41.1, 1533 },
-					["sourceQuests"] = {
-						59674,	-- A Friendly Rivalry
-						58185,	-- Success Without Soul
-					},
-					["lvl"] = { 50 },
-				}),
-				q(57932, {	-- Resource Drain
-					["provider"] = { "n", 159609 },	-- Hopo
-					["coord"] = { 54.7, 41.2, 1533 },
-					["sourceQuests"] = {
-						59674,	-- A Friendly Rivalry
-						58185,	-- Success Without Soul
-					},
-					["lvl"] = { 50 },
-				}),
 				q(57933, {	-- We Can Rebuild Him
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 54.7, 41.1, 1533 },
@@ -835,15 +812,6 @@ _.Zones =
 					["altQuests"] = {
 						58184,	-- Antiquated Methodology
 						58185,	-- Success Without Soul
-					},
-					["lvl"] = { 50 },
-				}),
-				q(58037, {	-- Part of the Pride
-					["provider"] = { "n", 157696 },	-- Nemea
-					["coord"] = { 57.2, 39.2, 1533 },
-					["sourceQuests"] = {
-						59674,	-- A Friendly Rivalry
-						58184,	-- Antiquated Methodology
 					},
 					["lvl"] = { 50 },
 				}),

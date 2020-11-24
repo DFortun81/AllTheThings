@@ -21,7 +21,7 @@ _.Zones =
 					},
 				}),
 				n(-940, {	-- Ascendend Council
-					["description"] = "You have to ring all 5 vespers within 5 minutes to summon the Ascended Council at 53.50, 88.37.",
+					["description"] = "You have to ring all 5 vespers within 5 minutes to summon the Ascended Council at 53.5, 88.3.",
 					["coords"] = {
 						{ 53.50, 88.37, 1533 },	-- The Ascended Council
 						{ 33.38, 59.77, 1533 },	-- Vesper of Courage
@@ -41,7 +41,9 @@ _.Zones =
 							--["questID"] = ,
 							["isDaily"] = true,
 							["g"] = {
-								ach(14307, crit(28)),	-- Adventurer of Bastion / Champion of Loyalty
+								crit(28, {	-- Champion of Loyalty
+									["achievementID"] = 14307,	-- Adventurer of Bastion
+								}),
 							},
 						}),
 					},
@@ -51,15 +53,21 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(22)),	-- Adventurer of Bastion / Aspirant Eolis
+						crit(22, {	-- Aspirant Eolis
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 				n(160629, { -- Baedos
-					["coord"] = { 51.2, 40.6, 1533 },
-					--["questID"] = ,
+					["description"] = "To start the encounter, find casks full of Fermenting Purian Fruit near the rare and bring them to Baedos' Fruit Barrel.",
+					["questID"] = 58648,	-- also triggered 62192 on first kill.  no additional questID popped for looting the chest left behind
 					["isDaily"] = true,
+					["coord"] = { 51.2, 40.6, 1533 },
+					["crs"] = { 161536 },	-- Baedos' Fruit Barrel
 					["g"] = {
-						ach(14307, crit(6)),	-- Adventurer of Bastion / Baedos
+						crit(6, {	-- Baedos
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 				n(170659, { -- Basilofos, King of the Hill
@@ -67,7 +75,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(11)),	-- Adventurer of Bastion / Basilofos, King of the Hill
+						crit(11, {	-- Basilofos, King of the Hill
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 				n(171189, { -- Bookkeeper Mnemis
@@ -75,7 +85,9 @@ _.Zones =
 					["questID"] = 59022,	-- 62167 also triggered (adding to HQT for now)
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(21)),	-- Adventurer of Bastion / Bookkeeper Mnemis
+						crit(21, {	-- Bookkeeper Mnemis
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 						i(182682),	-- Book-Borrower Identification
 					},
 				}),
@@ -85,7 +97,9 @@ _.Zones =
 					--["questID"] = 62191,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(13)),	-- Adventurer of Bastion / Cloudfeather Guardian
+						crit(13, {	-- Cloudfeather Guardian
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 						i(180812),	-- Golden Teroclaw
 					},
 				}),
@@ -107,7 +121,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(19)),	-- Adventurer of Bastion / Collector Astorestes
+						crit(19, {	-- Collector Astorestes
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 				n(171010, { -- Corrupted Clawguard (possibly lvl 60 only)
@@ -128,7 +144,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(12)),	-- Adventurer of Bastion / Dark Watcher
+						crit(12, {	-- Dark Watcher
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 				n(171011, { -- Demi the Relic Hoarder
@@ -136,7 +154,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(20)),	-- Adventurer of Bastion / Demi the Relic Hoarder
+						crit(20, {	-- Demi the Relic Hoarder
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 				n(163460, { -- Dionae
@@ -144,7 +164,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(9)),	-- Adventurer of Bastion / Dionae
+						crit(9, {	-- Dionae
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 				n(171255, { -- Echo of Aella <Hand of Courage>
@@ -169,7 +191,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(16)),	-- Adventurer of Bastion / Embodied Hunger
+						crit(16, {	-- Embodied Hunger
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 				n(171009, { -- Enforcer Aegeon
@@ -177,7 +201,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(14)),	-- Adventurer of Bastion / Enforcer Aegeon
+						crit(14, {	-- Enforcer Aegeon
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 				n(160721, { -- Fallen Acolyte Erisne
@@ -185,7 +211,9 @@ _.Zones =
 					["questID"] = 58222,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(2)),	-- Adventurer of Bastion / Fallen Acolyte Erisne
+						crit(2, {	-- Fallen Acolyte Erisne
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 						i(180444),	-- Harmonia's Chosen Belt
 					},
 				}),
@@ -208,7 +236,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(27)),	-- Adventurer of Bastion / Larionrider Orstus
+						crit(27, {	-- Larionrider Orstus
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 						i(184401),	-- Larion Pouncer
 					},
 				}),
@@ -230,7 +260,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(8)),	-- Adventurer of Bastion / Nikara Blackheart
+						crit(8, {	-- Nikara Blackheart
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 				n(171327, { -- Reekmonger
@@ -238,7 +270,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(25)),	-- Adventurer of Bastion / Reekmonger
+						crit(25, {	-- Reekmonger
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 				n(161527, { -- Sigilback
@@ -260,8 +294,10 @@ _.Zones =
 					["isDaily"] = true,
 					["description"] = "Requires two Buffs to mount the rare. First buff is from the statue next to the rare & the second buff comes from the Skystrider Glider item.",
 					["g"] = {
-						i(180773),				-- Sundancer
-						ach(14307, crit(10)),	-- Adventurer of Bastion / Sundancer
+						crit(10, {	-- Sundancer
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
+						i(180773),	-- Sundancer
 					},
 				}),
 				n(171008, { -- Unstable Memory
@@ -269,7 +305,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(15)),	-- Adventurer of Bastion / Unstable Memory
+						crit(15, {	-- Unstable Memory
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 				n(167078, { -- Wingflayer the Cruel
@@ -277,7 +315,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(7)),	-- Adventurer of Bastion / Wingflayer the Cruel
+						crit(7, {	-- Wingflayer the Cruel
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 				n(171041, { -- Worldfeaster Chronn
@@ -289,7 +329,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(18)),	-- Adventurer of Bastion / Worldfeaster Chronn
+						crit(18, {	-- Worldfeaster Chronn
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 				n(171040, { -- Xixin the Ravening
@@ -301,7 +343,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14307, crit(17)),	-- Adventurer of Bastion / Xixin the Ravening
+						crit(17, {	-- Xixin the Ravening
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
 					},
 				}),
 			}),
