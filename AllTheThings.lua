@@ -14169,6 +14169,12 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				--{ 14 },		-- Arathi Highlands does not need to be included as a separate mapID as it is contained in the the EK mapID
 				--{ 62 },	-- Darkshore does not need to be included as a separate mapID as it is contained in the the Kalimdor mapID
 				{
+					1550,	-- Shadowlands
+					{
+						-- oof callings
+					}
+				},
+				{
 					875,	-- Zandalar
 					{
 						{ 863, 5969, { 54135, 54136 }},	-- Nazmir (Romp in the Swamp [H] / March on the Marsh [A])
