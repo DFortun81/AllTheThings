@@ -1390,17 +1390,6 @@ _.Zones =
 				q(47835, {	-- The Hand of Fate (H)
 					["u"] = REMOVED_FROM_GAME, -- old version that used to be automatically provided
 				}),
-				q(40731, {	-- The Heart of the Dreadscar
-					["sourceQuests"] = {
-						40712,	-- The Power Possessed
-						41156,	-- The Power Possessed
-						42125,	-- Dark Whispers
-					},
-					["classes"] = { WARLOCK },
-					["coord"] = { 56.4, 65.0, 628 },
-					["lvl"] = 98,
-					["provider"] = { "n", 101097 },	-- Calydus
-				}),
 				q(41415, {	-- The Hunter's Call
 					["classes"] = { HUNTER },
 					["provider"] = { "n", 102478 },	-- Emmarel Shadewarden
