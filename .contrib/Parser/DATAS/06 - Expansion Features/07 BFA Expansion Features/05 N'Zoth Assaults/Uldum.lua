@@ -226,6 +226,12 @@ _.ExpansionFeatures =
 								{ 80.7, 47.7, 1527 },
 							},
 						}),
+						n(152431, {	-- Kaneb-ti
+							["questID"] = 55629,
+							["coord"] = { 77.2, 50.0, 1527 },
+							["cost"] = { { "i", 168160, 1 } },	-- 1x Jeweled Scarab Figurine
+							["isDaily"] = true,
+						}),
 						n(157157, {	-- Muminah the Incandescent
 							["questID"] = 57277,
 							["coord"] = { 66.8, 20.3, 1527 },
@@ -2024,7 +2030,6 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(-34,	{	-- World Quests
-						un(NEVER_IMPLEMENTED, q(55629)),	-- Unknown quest populating /attwq
 						q(58743, {	-- Dune Buggy
 							-- pet battle
 							["lvl"] = 120,

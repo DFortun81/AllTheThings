@@ -3877,9 +3877,7 @@ end
 -- Populates/replaces data within a questObject for displaying in a row
 local function PopulateQuestObject(questObject)
 	-- cannot do anything on a missing object or questID
-	if not questObject or not questObject.questID then
-		return nil;
-	end
+	if not questObject or not questObject.questID then return; end
 
 	local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
 
@@ -3922,11 +3920,11 @@ local function PopulateQuestObject(questObject)
 	end
 
 	-- Update Quest info from cache
-	cache = fieldCache["questID"][questObject.questID];
+	cache = SearchForField("questID",questObject.questID);
 	if cache then
 		for _,data in ipairs(cache) do
-			-- only merge into the WQ quest object properties from a quest object in cache
-			if data.key == "questID" or data["encounterID"] then
+			-- only merge into the WQ quest object properties from an object in cache with this questID
+			if data["questID"] == questObject.questID then
 				for key,value in pairs(data) do
 					if not (key == "g" or key == "parent") then
 						questObject[key] = value;
@@ -3952,12 +3950,14 @@ local function PopulateQuestObject(questObject)
 				MergeObject(questObject.g, data);
 			end
 		end
+	-- else
+	-- 	print("non-cached quest",questObject.questID);
 	end
 
 	-- Check for provider info
 	if questObject.qgs and #questObject.qgs == 1 then
 		for j,qg in ipairs(questObject.qgs) do
-			cache = fieldCache["creatureID"][qg];
+			cache = SearchForField("creatureID", qg);
 			if cache then
 				for _,data in ipairs(cache) do
 					if GetRelativeField(group, "npcID", -16) then	-- Rares only!
@@ -4133,8 +4133,11 @@ local function PopulateQuestObject(questObject)
 		end
 	end
 
-	-- Since this is not a metatable yet, create a raw isRepeatable value for use prior to that
-	questObject.isRepeatable = questObject.isDaily or questObject.isWeekly or questObject.isMonthly or questObject.isYearly;
+	-- If this is not a metatable yet, create a raw repeatable value for use prior to that
+	if not questObject.repeatable and
+		(questObject.isDaily or questObject.isWeekly or questObject.isMonthly or questObject.isYearly) then
+			questObject.repeatable = true;
+	end
 
 	-- Query quest name if not existing
 	-- This messes up World Bosses somehow, and not sorting on quest names, so don't need to pull it right here
@@ -14166,14 +14169,14 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				{ app.FactionID == Enum.FlightPathFaction.Horde and 875 or 876, 895 },	-- Kul'Tiras or Zandalar, Stormsong Valley
 			};
 			local worldMapIDs = {
-				--{ 14 },		-- Arathi Highlands does not need to be included as a separate mapID as it is contained in the the EK mapID
-				--{ 62 },	-- Darkshore does not need to be included as a separate mapID as it is contained in the the Kalimdor mapID
+				-- Shadowlands Continents
 				{
 					1550,	-- Shadowlands
 					{
-						-- oof callings
+						-- TODO: callings?
 					}
 				},
+				-- BFA Continents
 				{
 					875,	-- Zandalar
 					{
@@ -14190,6 +14193,8 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						{ 895, 5896, { 53939, 53711 }},	-- Tiragarde Sound (Breaching Boralus [H] / A Sound Defense [A])
 					}
 				},
+				{ 1355 },	-- Nazjatar
+				-- Legion Continents
 				{
 					619, 	-- Broken Isles
 					{
@@ -14199,19 +14204,10 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						{ 641, 5210, { 47063 }},	-- Val'Sharah
 					}
 				},
-				{ 885 },	-- Antoran Wastes
-				{ 830 },	-- Krokuun
-				{ 882 },	-- Mac'Aree
-				{ 1355 },	-- Nazjatar
-				-- { 1462 },	-- Mechagon does not need to be included as a separate mapID as it is contained in the the Kul Tiras mapID
-				{
-					12,		-- Kalimdor
-					{
-						{ 1527, 6486, { 57157 }},	-- Assault: The Black Empire
-						{ 1527, 6488, { 56308 }},	-- Assault: Aqir Unearthed
-						{ 1527, 6487, { 55350 }},	-- Assault: Amathet Advance
-					},
-				},
+				{ 905 },	-- Argus, already has individual zones above
+				-- WoD Continents
+				{ 572 },	-- Draenor
+				-- MoP Continents
 				{
 					424,	-- Pandaria
 					{
@@ -14220,13 +14216,22 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						{ 1530, 6490, { 57008 }},	-- Assault: The Warring Clans
 					},
 				},
-				{ 13 },		-- Eastern Kingdoms
-				-- Additional 'Continent' Maps for the Storyline Quests feature
-				{ 101 }, 	-- Outland
-				{ 113 },	-- Northrend
-				{ 572 },	-- Draenor
-				-- { 905 },	-- Argus, already has individual zones above
+				-- Cataclysm Continents
 				{ 948 },	-- The Maelstrom
+				-- WotLK Continents
+				{ 113 },	-- Northrend
+				-- BC Continents
+				{ 101 }, 	-- Outland
+				-- Vanilla Continents
+				{
+					12,		-- Kalimdor
+					{
+						{ 1527, 6486, { 57157 }},	-- Assault: The Black Empire
+						{ 1527, 6488, { 56308 }},	-- Assault: Aqir Unearthed
+						{ 1527, 6487, { 55350 }},	-- Assault: Amathet Advance
+					},
+				},
+				{ 13 },		-- Eastern Kingdoms
 			};
 			-- local OnUpdateForItem = function(self)
 				-- print("update on group",self.key, self[self.key]);
@@ -14234,7 +14239,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					-- o.visible = false;
 				-- end
 			-- end;
-			function UnsetNotCollectible(o)
+			local function UnsetNotCollectible(o)
 				if o.collectible == false then o.collectible = nil; end
 				if o.g then
 					for i,p in ipairs(o.g) do
@@ -14249,39 +14254,61 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				tinsert(self.data.g, temp);
 				self:Update();
 			end
+			-- World Quests (Tasks)
+			self.MergeTasks = function(self, mapObject)	
+				local mapID = mapObject.mapID;
+				if not mapID then return; end
+				local pois = C_TaskQuest.GetQuestsForPlayerByMapID(mapID);
+				if pois then
+					for i,poi in ipairs(pois) do
+						-- only include Tasks on this actual mapID since each Zone mapID is checked individually						
+						if poi.mapID == mapID then
+							local questObject = GetPopulatedQuestObject(poi.questId);
+
+							-- see if need to retry based on missing data
+							if not self.retry and questObject.missingData then self.retry = true; end
+
+							MergeObject(mapObject.g, questObject);
+						end
+					end
+				end				
+			end
+			-- Storylines/Map Quest Icons
+			self.MergeStorylines = function(self, mapObject, includeAll, includePermanent, includeQuests)
+				local mapID = mapObject.mapID;
+				if not mapID then return; end
+				C_QuestLine.RequestQuestLinesForMap(mapID);
+				local questLines = C_QuestLine.GetAvailableQuestLines(mapID)
+				if questLines then
+					for id,questLine in pairs(questLines) do
+						-- dont show 'hidden' quest lines... not sure what this is exactly
+						if not questLine.hidden then
+							local questObject = GetPopulatedQuestObject(questLine.questID);
+							if includeAll or
+								-- include the quest in the list if holding shift and tracking quests
+								(includePermanent and includeQuests) or
+								-- or if it is repeatable (i.e. one attempt per day/week/year)
+								questObject.repeatable or
+								-- or if it has time remaining
+								(questObject.timeRemaining or 0 > 0) then
+								MergeObject(mapObject.g, questObject);
+							end
+						end
+					end
+				else
+					-- print("No questline data yet for mapID:",mapID);
+					self.retry = true;
+				end
+			end
 			self.Rebuild = function(self, no)
 				-- Rebuild all World Quest data
-				local retry = false;
+				self.retry = nil;
 				local temp = {};
 				-- options when refreshing the list
 				local includeAll = app.Settings:Get("DebugMode");
 				local includeQuests = app.CollectibleQuests;
 				local includePermanent = IsAltKeyDown() or includeAll;
 				local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies") or includeAll;
-
-				-- Acquire all of the emissary quests
-				for _,pair in ipairs(emissaryMapIDs) do
-					local mapID = pair[1];
-					-- print("WQ.EmissaryMapIDs." .. tostring(mapID))
-					local mapObject = GetPopulatedMapObject(mapID);
-					local bounties = C_QuestLog.GetBountiesForMapID(pair[2]);
-					if bounties and #bounties > 0 then
-						for i,bounty in ipairs(bounties) do
-							local questObject = GetPopulatedQuestObject(bounty.questID);
-							MergeObject(mapObject.g, questObject);
-						end
-					end
-					if #mapObject.g > 0 then
-						table.sort(mapObject.g, self.Sort);
-						-- Sort the map groups as well
-						for i,mapGrp in ipairs(mapObject.g) do
-							if (mapGrp.mapID and mapGrp.g and #mapGrp.g > 1) then
-								table.sort(mapGrp.g, self.Sort);
-							end
-						end
-						MergeObject(temp, mapObject);
-					end
-				end
 
 				-- Acquire all of the world quests
 				for _,pair in ipairs(worldMapIDs) do
@@ -14324,113 +14351,55 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						end
 					end
 
-					-- World Quests (Tasks)
-					local pois = C_TaskQuest.GetQuestsForPlayerByMapID(mapID);
-					if pois then
-						for i,poi in ipairs(pois) do
-							local questObject = GetPopulatedQuestObject(poi.questId);
-
-							-- see if need to retry based on missing data
-							retry = retry or questObject.missingData;
-
-							-- if mapID == 13 then
-								-- for k,v in pairs(questObject) do
-									-- print(k,v);
-								-- end
-								-- --print(i, ": ", mapID, " ", poi.mapID, ", ", questObject.questID,#questObject.g,questObject.repeatable,questObject.timeRemaining);
-								-- -- print(tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft);
-							-- end
-
-							-- only merge POIs with time remaining, or collectible rewards unless shift is held down (bonus objectives are POIs but not time-limited)
-							-- repeatable tasks usually indicate quests which are also up for long durations of time, but will expire (warfront scenario, etc.)
-							if includeAll or
-								-- include the quest in the list if holding shift and tracking quests
-								(includePermanent and includeQuests) or
-								-- or if it is repeatable (i.e. one attempt per day/week/year)
-								questObject.repeatable or
-								-- or if it has time remaining
-								(questObject.timeRemaining or 0 > 0) then
-								if poi.mapID ~= mapID then
-									local subMapObject = GetPopulatedMapObject(poi.mapID);
-									MergeObject(subMapObject.g, questObject);
-									MergeObject(mapObject.g, subMapObject);
-								else
-									MergeObject(mapObject.g, questObject);
-								end
-							end
-						end
-					end
-
-					-- Available Quest Lines/Map Quest Icons
-					-- Look for quest lines on the provided map
-					C_QuestLine.RequestQuestLinesForMap(mapID);
-					local questLines = C_QuestLine.GetAvailableQuestLines(mapID)
-					if questLines then
-						for id,questLine in pairs(questLines) do
-							-- dont show 'hidden' quest lines... not sure what this is exactly
-							if not questLine.hidden then
-								local questObject = GetPopulatedQuestObject(questLine.questID);
-								if includeAll or
-									-- include the quest in the list if holding shift and tracking quests
-									(includePermanent and includeQuests) or
-									-- or if it is repeatable (i.e. one attempt per day/week/year)
-									questObject.repeatable or
-									-- or if it has time remaining
-									(questObject.timeRemaining or 0 > 0) then
-									MergeObject(mapObject.g, questObject);
-								end
-							end
-						end
-					else
-						-- print("No questline data yet for mapID:",mapID);
-						retry = true;
-					end
-
-					-- look for quest lines on 'Zone' map child maps as well
+					-- look for quests on 'Zone' map child maps as well
 					local mapChildInfos = C_Map.GetMapChildrenInfo(mapID, 3, false)
 					if mapChildInfos then
 						for i,mapInfo in ipairs(mapChildInfos) do
-							local subMapObject = GetPopulatedMapObject(mapInfo.mapID);
+							-- start fetching the data while other stuff is setup
 							C_QuestLine.RequestQuestLinesForMap(mapInfo.mapID);
-							local questLines = C_QuestLine.GetAvailableQuestLines(mapInfo.mapID)
-							if questLines then
-								for id,questLine in pairs(questLines) do
-									-- dont show 'hidden' quest lines... not sure what this is exactly
-									if not questLine.hidden then
-										local questObject = GetPopulatedQuestObject(questLine.questID);
-										if includeAll or
-											-- include the quest in the list if holding shift and tracking quests
-											(includePermanent and includeQuests) or
-											-- or if it has a collectible and is repeatable (i.e. one attempt per day/week/year)
-											(#questObject.g > 0 and questObject.isRepeatable) or
-											-- or if it has time remaining
-											(questObject.timeRemaining or 0 > 0) then
-											MergeObject(subMapObject.g, questObject);
-										end
-									end
-								end
-							else
-								-- print("No questline data yet for mapInfo.mapID:",mapInfo.mapID);
-								retry = true;
-							end
+							local subMapObject = GetPopulatedMapObject(mapInfo.mapID);
 
-							-- if #subMapObject.g > 0 then
+							-- Merge Tasks for Zone
+							self:MergeTasks(subMapObject);
+
+							-- Merge Storylines for Zone
+							self:MergeStorylines(subMapObject, includeAll, includePermanent, includeQuests);
+							
 							MergeObject(mapObject.g, subMapObject);
-							-- end
 						end
 					end
 
 					-- Merge everything for this map into the list
-					if #mapObject.g > 0 then
-						table.sort(mapObject.g, self.Sort);
-						-- Sort the sub-groups as well
-						for i,mapGrp in ipairs(mapObject.g) do
-							if (mapGrp.mapID and mapGrp.g and #mapGrp.g > 1) then
-								table.sort(mapGrp.g, self.Sort);
-							end
+					table.sort(mapObject.g, self.Sort);
+					-- Sort the sub-groups as well
+					for i,mapGrp in ipairs(mapObject.g) do
+						if mapGrp.mapID and mapGrp.g then
+							table.sort(mapGrp.g, self.Sort);
 						end
-						MergeObject(temp, mapObject);
 					end
+					MergeObject(temp, mapObject);
+				end
+
+				-- Acquire all of the emissary quests
+				for _,pair in ipairs(emissaryMapIDs) do
+					local mapID = pair[1];
+					-- print("WQ.EmissaryMapIDs." .. tostring(mapID))
+					local mapObject = GetPopulatedMapObject(mapID);
+					local bounties = C_QuestLog.GetBountiesForMapID(pair[2]);
+					if bounties and #bounties > 0 then
+						for i,bounty in ipairs(bounties) do
+							local questObject = GetPopulatedQuestObject(bounty.questID);
+							MergeObject(mapObject.g, questObject);
+						end
+					end
+					table.sort(mapObject.g, self.Sort);
+					-- Sort the map groups as well
+					for i,mapGrp in ipairs(mapObject.g) do
+						if mapGrp.mapID and mapGrp.g then
+							table.sort(mapGrp.g, self.Sort);
+						end
+					end
+					MergeObject(temp, mapObject);
 				end
 
 				-- Heroic Deeds
@@ -14457,9 +14426,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							MergeObject(mapObject.g, data);
 						end
 					end
-					if #mapObject.g > 0 then
-						MergeObject(temp, mapObject);
-					end
+					MergeObject(temp, mapObject);
 				end
 
 				-- Get the LFG Rewards Available at this level
@@ -14572,9 +14539,9 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					table.insert(temp, groupFinder);
 				end
 
-				if retry == true
-				then
-					--print("Missing API quest data on this World Quest refresh");
+				if self.retry then
+					-- print("Missing API quest data on this World Quest refresh");
+					self.retry = nil;
 					return true;
 				end
 
