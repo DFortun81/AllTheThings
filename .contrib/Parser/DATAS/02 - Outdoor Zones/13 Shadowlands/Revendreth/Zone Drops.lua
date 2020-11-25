@@ -55,6 +55,7 @@ _.Zones =
 						},
 					}),
 				}),
+				i(182725),	-- Mail Courier's Wristguards
 				i(177795),	-- Night Guardian Armplates
 				i(177789),	-- Night Guardian Breastplate
 				i(177794),	-- Night Guardian Cincture
@@ -93,6 +94,7 @@ _.Zones =
 				}),
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace
+				i(179334),	-- Wingblade Staff
 			}),
 		}),
 	}),

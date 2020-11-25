@@ -3224,14 +3224,11 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(168451)),	-- Formula: Enchant Ring - Accord of Haste (not used, vendors sell 169531 and 169605)
 			un(NEVER_IMPLEMENTED, i(168452)),	-- Formula: Enchant Ring - Accord of Mastery (not used, vendors sell 169532 and 169606)
 			un(NEVER_IMPLEMENTED, i(168453)),	-- Formula: Enchant Ring - Accord of Versatility (not used, vendors sell 169533 and 169607)
-			un(NEVER_IMPLEMENTED, i(168583)),	-- "REUSE ME [MTMM]"
 			un(NEVER_IMPLEMENTED, i(168584)),	-- "REUSE ME [MTMM]"
 			un(NEVER_IMPLEMENTED, i(168585)),	-- "REUSE ME [MTMM]"
-			un(NEVER_IMPLEMENTED, i(168586)),	-- "REUSE ME [MTMM]"
 			un(NEVER_IMPLEMENTED, i(169537)),	-- "REUSE ME [MTMM] (DNT)" (naga hide rank 3 recipe in game is 170213)
 			un(NEVER_IMPLEMENTED, i(168587)),	-- "REUSE ME [MTMM]"
 			un(NEVER_IMPLEMENTED, i(168588)),	-- "REUSE ME [MTMM]"
-			un(NEVER_IMPLEMENTED, i(168589)),	-- "REUSE ME [MTMM]"
 			un(NEVER_IMPLEMENTED, i(168590)),	-- "REUSE ME [MTMM]"
 		}),
 		n(-185, { 	-- Inscription
