@@ -200,6 +200,7 @@ _.PetJournal =
 		p(1974),			-- Snowfeather Hatchling
 		p(69),				-- Snowy Owl
 		p(2441),			-- Squawkling
+		p(3082),			-- Starmoth
 		p(3006),			-- Stoneskin Dredwing Pup
 		p(3012),			-- Stony
 		p(1546),			-- Stormwing

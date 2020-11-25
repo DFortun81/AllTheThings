@@ -253,6 +253,7 @@ _.PetJournal =
 		p(2375),			-- Vale Marmot
 		p(1344),			-- Vengeful Porcupette
 		p(506),				-- Venomspitter Hatchling
+		p(3080),			-- Verdant Kit
 		p(1807),			-- Vicious Broodling
 		p(2840),			-- Void-Scarred Cat
 		p(2797),			-- Void-Scarred Pup

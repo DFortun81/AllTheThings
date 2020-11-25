@@ -41,6 +41,7 @@ _.PetJournal =
 		p(1061),	-- Darkmoon Hatchling
 		p(848),		-- Darkmoon Rabbit
 		p(755),		-- Death's Head Cockroach
+		p(3081),	-- Decay Grub
 		p(3039),	-- Decaying Mawrat
 		p(555),		-- Deepholm Cockroach
 		p(3021),	-- Deepwood Leaper

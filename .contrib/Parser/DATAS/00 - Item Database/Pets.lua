@@ -919,7 +919,6 @@ pet(180593, 2899);	-- Court Messenger Scroll // Court Messenger
 pet(183859, 2900);	-- Dal's Courier Badge // Dal
 pet(183412, 3041);	-- Death Seeker
 pet(183409, 3039);	-- Decaying Mawrat
-pet(182672, 3021);	-- Deepwood Leaper
 pet(180629, 2922);	-- Devouring Animite
 pet(180869, 2940);	-- Devoured Wader
 pet(180645, 2905);	-- Dodger
@@ -942,7 +941,6 @@ pet(180812, 2925);	-- Golden Cloudfeather
 pet(180857, 2934);	-- Goldenpaw Kit
 pet(180630, 2921);	-- Gorm Harrier
 pet(180631, 2920);	-- Gorm Needler
-pet(180632, 2919);	-- Gorm Rootstinger
 pet(180633, 2918);	-- Grubby
 pet(180839, 2928);	-- Helpful Glimmerfly
 pet(183116, 3027);	-- Hissing Deathroach
@@ -1012,7 +1010,6 @@ pet(180629, 2922);	-- Thumbbiter
 pet(181272, 2962);	-- Toenail
 pet(183195, 3034);	-- Torghast Lurker
 pet(183115, 3026);	-- Tower Deathroach
-pet(180627, 2924);	-- Tranquil Wader
 pet(180592, 2901);	-- Trapped Stonefiend
 pet(182663, 3018);	-- Trootie
 pet(183408, 3038);	-- Undying Deathroach
