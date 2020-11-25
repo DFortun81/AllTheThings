@@ -200,7 +200,7 @@ _.Zones =
 				}),
 				n(160675, {	-- Scrivener Lenua
 					["coord"] = { 38.4, 69.6, 1525 },
-					--["questID"] = ,
+					["questID"] = 58213,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(2)),	-- Adventurer of Revendreth / Scrivener Lenua
@@ -277,7 +277,7 @@ _.Zones =
 				}),
 				n(160821, {	-- Worldedge Gorger
 					["coord"] = { 38.6, 72.0, 1525 },
-					--["questID"] = ,
+					["questID"] = 58259,
 					["isDaily"] = true,
 					["description"] = "To summon Worldedge Gorger you need to use Enticing Anima to lit worldedge braziers. Enticing Anima drops from worldeater rift mobs, you can kill many of them just along the river.",
 					["g"] = {

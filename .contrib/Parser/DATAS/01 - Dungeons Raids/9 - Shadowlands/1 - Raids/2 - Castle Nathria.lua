@@ -8,6 +8,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["coord"] = { 46.1, 41.5, 1525 },
 		["order"] = "02",
 		["maps"] = {
+			1755,	-- Castle Nathria [Storyline Instance]
 		},
 		["lvl"] = { 60 },
 		["g"] = {

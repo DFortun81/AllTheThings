@@ -69,6 +69,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 60,
 				}),
+				q(61467, {	-- Mining: Luminous Solenium Cluster
+					["isWorldQuest"] = true,
+					["lvl"] = 60,
+					["requireSkill"] = MINING,
+				}),
 				q(59717, {	-- Things Remembered
 					["isWorldQuest"] = true,
 					["lvl"] = 60,

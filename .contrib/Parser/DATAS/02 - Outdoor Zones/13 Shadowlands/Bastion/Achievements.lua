@@ -173,7 +173,7 @@ _.Zones =
 					crit(12, {	-- Gift of Vesiphone
 						["objectID"] = 353940,	-- Gift of Vesiphone
 						["coord"] = { 64.9, 71.1, 1533 },
-						--["questID"] = ,
+						["questID"] = 60890,
 						["g"] = {
 							i(180859),	-- Purity
 						},
