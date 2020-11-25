@@ -46,10 +46,11 @@ _.Zones =
 						{ 54.0, 45.6, 1536 },
 						{ 48.2, 51.6, 1536 },
 					},
-					--["questID"] = ,
+					["questID"] = 58878,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14308, crit(21)),	-- Adventurer of Maldraxxus / Deepscar <Pit Hound>
+						ach(14308, crit(20)),	-- Adventurer of Maldraxxus / Deepscar <Pit Hound>
+						i(182191),	-- Slobber-Soaked Chew Toy
 					},
 				}),
 				n(162669, { -- Devour'us
@@ -67,7 +68,6 @@ _.Zones =
 					["description"] = "Requires to be a |cFF40bf40Necrolord Covenant|r & channel anima to House of Constructs to summon him.",
 					["g"] = {
 						i(182080),	-- Predatory Plagueroc
-						ach(14308, crit(19)),	-- Adventurer of Maldraxxus / Gieger <Experimental Construct>
 					},
 				}),
 				n(162588, { -- Gristlebeak
@@ -91,7 +91,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14308, crit(23)),	-- Adventurer of Maldraxxus / Necromantic Anomaly
+						ach(14308, crit(22)),	-- Adventurer of Maldraxxus / Necromantic Anomaly
 					},
 				}),
 				n(162690, {	-- Nerissa Heartless
@@ -115,7 +115,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14308, crit(20)),	-- Adventurer of Maldraxxus / Pesticide
+						ach(14308, crit(19)),	-- Adventurer of Maldraxxus / Pesticide
 					},
 				}),
 				n(159753, { -- Ravenomous
@@ -196,7 +196,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14308, crit(22)),	-- Adventurer of Maldraxxus / Warbringer Mal'Korak
+						ach(14308, crit(21)),	-- Adventurer of Maldraxxus / Warbringer Mal'Korak
 					},
 				}),
 				n(157125, { -- Zargox the Reborn
