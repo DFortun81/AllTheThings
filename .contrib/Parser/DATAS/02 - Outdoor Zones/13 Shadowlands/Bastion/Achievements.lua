@@ -21,22 +21,22 @@ _.Zones =
 				}),
 				ach(14281, {	-- The Path to Ascension
 					crit(1, {	-- Eternity's Call
-						["sourceQuest"] = 57677,	-- A Soulbind In Need
+						["sourceQuests"] = { 57677 },	-- A Soulbind In Need
 					}),
 					crit(2, {	-- The Aspirant's Crucible
-						["sourceQuest"] = 58174,	-- All An Aspirant Can Do
+						["sourceQuests"] = { 58174 },	-- All An Aspirant Can Do
 					}),
-					crit(3, {	-- 	The Temple of Purity
-						["sourceQuest"] = 57447,	-- Purity's Prerogative
+					crit(3, {	-- The Temple of Purity
+						["sourceQuests"] = { 57447 },	-- Purity's Prerogative
 					}),
 					crit(4, {	-- Chasing a Memory
-						["sourceQuest"] = 60013,	-- Leave it to Mnemis
+						["sourceQuests"] = { 60013 },	-- Leave it to Mnemis
 					}),
 					crit(5, {	-- By the Archon's Will
-						["sourceQuest"] = 59200,	-- The Wards of Bastion
+						["sourceQuests"] = { 59200 },	-- The Wards of Bastion
 					}),
 					crit(6, {	-- The Temple of Courage
-						["sourceQuest"] = 60055,	-- A Time for Courage
+						["sourceQuests"] = { 60055 },	-- A Time for Courage
 					}),
 				}),
 				ach(14339, {	-- Shard Labor
@@ -47,13 +47,13 @@ _.Zones =
 				}),
 				ach(14801, {	-- Sojourner of Bastion
 					crit(1, {	-- In Agthia's Memory
-						["sourceQuest"] = 57555,	-- Shadow's Fall
+						["sourceQuests"] = { 57555 },	-- Shadow's Fall
 					}),
 					crit(2, {	-- Wings of Freedom
-						["sourceQuest"] = 59865,	-- Glimmerflight
+						["sourceQuests"] = { 59865 },	-- Glimmerflight
 					}),
 					crit(3, {	-- In the Garden of Respite
-						["sourceQuest"] = 57568,	-- Tough Love
+						["sourceQuests"] = { 57568 },	-- Tough Love
 					}),
 					crit(4, {	-- The Spear of Kalliope
 						["sourceQuests"] = {
@@ -84,9 +84,10 @@ _.Zones =
 						},
 					}),
 					crit(2, {	-- Vesper of Virtues
+						["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
 						["objectID"] = 352428,	-- Vesper of Virtues
-						["coord"] = { 58.6, 71.4, 1533 },
 						["questID"] = 60478,	-- 62841 triggered too
+						["coord"] = { 58.6, 71.4, 1533 },
 						["g"] = {
 							i(179982),	-- Kyrian Bell
 						},

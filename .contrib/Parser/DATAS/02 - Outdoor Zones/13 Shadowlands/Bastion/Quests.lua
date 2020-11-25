@@ -18,7 +18,7 @@ _.Zones =
 					["coord"] = { 56.1, 81.7, 1533 },
 				}),
 				q(59674, {	-- A Friendly Rivalry
-				--	TODO: figure out SQs
+				--	TODO: figure out SQs.  saw while on assessing your strength/stamina
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						63068,	-- Settling Disputes
@@ -40,6 +40,20 @@ _.Zones =
 						i(173344),	-- Band of Chronicled Deeds
 					},
 				}),
+				q(57037, {	-- A Once Sweet Sound
+					["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
+					["provider"] = { "n", 159762 },	-- Eridia
+					["coord"] = { 59.3, 77.0, 1533 },
+					["g"] = {
+						i(176335),	-- Chime of Melodic Reflection
+						i(176333),	-- Melody Defender's Bulwark
+					},
+				}),
+				q(60180, {	-- A Paragon's Reflection
+					["sourceQuests"] = { 58843 },	-- The Vault of the Archon
+					["provider"] = { "n", 167504 },	-- Vault-Keeper Mnemis
+					["coord"] = { 56.1, 67.6, 1533 },
+				}),
 				q(57677, {	-- A Soulbind In Need
 					["sourceQuests"] = { 57261 },	-- Walk the Path, Aspirant
 					["provider"] = { "n", 165107 },	-- Kleia
@@ -51,6 +65,11 @@ _.Zones =
 						i(175623),	-- Judicious Aspirant's Legguards
 					},
 				}),
+				q(57977, {	-- A Temple in Need
+					["sourceQuests"] = { 57270 },	-- The Temple of Purity
+					["provider"] = { "n", 159762 },	-- Eridia
+					["coord"] = { 54.1, 73.6, 1533 },
+				}),
 				q(57547, {	-- A Test of Courage
 					["sourceQuests"] = {
 						57545,	-- Distractions for Kala
@@ -59,10 +78,61 @@ _.Zones =
 					["provider"] = { "n", 158004 },	-- Zosime
 					["coord"] = { 51.3, 59.6, 1533 },
 				}),
+				q(57716, {	-- A Wayward Disciple?
+					["sourceQuests"] = {
+						57977,	-- A Temple in Need
+						57264,	-- On The Edge of a Revelation
+					},
+					["provider"] = { "n", 159762 },	-- Eridia
+					["coord"] = { 59.4, 78.0, 1533 },
+					["g"] = {
+						i(173341),	-- Cord of Uncertain Devotion
+						i(173343),	-- Belt of Uncertain Devotion
+						i(173342),	-- Cinch of Uncertain Devotion
+						i(173340),	-- Cincture of Uncertain Devotion
+					},
+				}),
 				q(57551, {	-- Agthia's Path
 					["sourceQuests"] = { 57549 },	-- In Agthia's Memory
 					["provider"] = { "n", 158078 },	-- Keeper Mnemis
 					["coord"] = { 46.9, 63.4, 1533 },
+				}),
+				q(58174, {	-- All An Aspirant Can Do
+					["sourceQuests"] = {
+						57715,	-- The Archon's Answer (Deathknight)
+						60217,	-- The Archon's Answer (Demonhunter)
+						60218,	-- The Archon's Answer (Druid)
+						60219,	-- The Archon's Answer (Hunter)
+						60220,	-- The Archon's Answer (Mage)
+						60221,	-- The Archon's Answer (Monk)
+						60222,	-- The Archon's Answer (Paladin)
+						60223,	-- The Archon's Answer (Priest)
+						60224,	-- The Archon's Answer (Rogue)
+						60225,	-- The Archon's Answer (Shaman)
+						60226,	-- The Archon's Answer (Warlock)
+						60229,	-- The Archon's Answer (Warror)
+					},
+					["provider"] = { "n", 158862 },	-- Kleia
+					["coord"] = { 53.5, 87.3, 1533 },
+				}),
+				q(57444, {	-- An Inspired Moral Inventory
+					["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
+					["provider"] = { "n", 160647 },	-- Acolyte Galistos
+					["coord"] = { 61.1, 74.4, 1533 },
+				}),
+				q(57714, {	-- Assessing Your Spirit
+					["sourceQuests"] = {
+						57909,	-- Assessing Your Stamina
+						57288,	-- Assessing Your Strength
+					},
+					["provider"] = { "n", 158862 },	-- Kleia
+					["coord"] = { 81.6, 80.9, 1533 },
+					["g"] = {
+						i(173326),	-- Sparring Trainer's Gauntlets
+						i(173328),	-- Sparring Trainer's Gloves
+						i(173325),	-- Sparring Trainer's Grips
+						i(173327),	-- Sparring Trainer's Handwraps
+					},
 				}),
 				q(57909, {	-- Assessing Your Stamina
 					["sourceQuests"] = { 57908 },	-- The True Crucible Awaits
@@ -73,6 +143,34 @@ _.Zones =
 					["sourceQuests"] = { 57908 },	-- The True Crucible Awaits
 					["provider"] = { "n", 158862 },	-- Kleia
 					["coord"] = { 51.7, 81.0, 1533 },
+				}),
+				q(58976, {	-- Chasing a Memory
+					["sourceQuests"] = { 57447 },	-- Purity's Prerogative
+					["provider"] = { "n", 156238 },	-- Kleia
+					["coord"] = { 53.8, 73.6, 1533 },
+				}),
+				q(57934, {	-- Combat Drills
+					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, 1533 },
+				}),
+				q(57719, {	-- Dangerous Discourse
+					["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
+					["provider"] = { "o", 344726  },	-- Dark Sermon
+					["coord"] = { 57.2, 71.8, 1533 },
+				}),
+				q(60292, {	-- Dangerous Discourse
+					["sourceQuests"] = {
+						57037,	-- A Once Sweet Sound
+						59147,	-- The Hand of Purification
+					},
+					["provider"] = { "n", 159762 },	-- Eridia
+					["coord"] = { 61.2, 74.3, 1533 },
+				}),
+				q(58771, {	-- Directions Not Included
+					["sourceQuests"] = { 58976 },	-- Chasing a Memory
+					["provider"] = { "n", 167034 },	-- Mikanikos
+					["coord"] = { 54.7, 64.1, 1533 },
 				}),
 				q(57545, {	-- Distractions for Kala
 					["sourceQuests"] = { 57529 },	-- Garden in Turmoil
@@ -85,19 +183,59 @@ _.Zones =
 					["coord"] = { 51.3, 59.6, 1533 },
 				}),
 				q(57529, {	-- Garden in Turmoil
-				--	TODO: figure out SQs
+				--	TODO: figure out SQs.  saw while on assessing your strength/stamina
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 158005 },	-- Tamesis
 					["coord"] = { 52.3, 61.3, 1533 },
 				}),
+				q(59196, {	-- Go in Service
+					["sourceQuests"] = { 60013 },	-- Leave it to Mnemis
+					["provider"] = { "n", 167038 },	-- Kleia
+					["coord"] = { 54.4, 64.2, 1533 },
+				}),
 				q(62718, {	-- Hero's Rest
+					["sourceQuests"] = {	-- TODO: verify SQs.  saw when coming back to aspirant's rest after turning in 'the archon's answer'
+						57715,	-- The Archon's Answer (Deathknight)
+						60217,	-- The Archon's Answer (Demonhunter)
+						60218,	-- The Archon's Answer (Druid)
+						60219,	-- The Archon's Answer (Hunter)
+						60220,	-- The Archon's Answer (Mage)
+						60221,	-- The Archon's Answer (Monk)
+						60222,	-- The Archon's Answer (Paladin)
+						60223,	-- The Archon's Answer (Priest)
+						60224,	-- The Archon's Answer (Rogue)
+						60225,	-- The Archon's Answer (Shaman)
+						60226,	-- The Archon's Answer (Warlock)
+						60229,	-- The Archon's Answer (Warror)
+					},
 					["provider"] = { "o", 362489 },	-- Elysian Decree
 					["coord"] = { 48.8, 73.3, 1533 },
+				}),
+				q(58979, {	-- I MADE You!
+					["sourceQuests"] = { 58978 },	-- Lysonia's Truth
+					["provider"] = { "n", 167034 },	-- Mikanikos
+					["coord"] = { 57.2, 55.3, 1533 },
+					["g"] = {
+						i(173329),	-- Pure Aspirant's Hood
+						i(173331),	-- Courageous Aspirant's Helm
+						i(173330),	-- Humble Aspirant's Helm
+						i(173315),	-- Judicious Aspirant's Helm
+					},
 				}),
 				q(57549, {	-- In Agthia's Memory
 				--	TODO: figure out SQ.  picked it up during "A Soulbind in Need" / "The Things That Haunt Us" when i took a detour to run up the hill to kill a rare that spawned.
 					["provider"] = { "n", 158078 },	-- Keeper Mnemis
 					["coord"] = { 46.9, 63.4, 1533 },
+				}),
+				q(57935, {	-- Laser Location
+					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, 1533 },
+				}),
+				q(60013, {	-- Leave it to Mnemis
+					["sourceQuests"] = { 60180 },	-- A Paragon's Reflection
+					["provider"] = { "n", 167504 },	-- Vault-Keeper Mnemis
+					["coord"] = { 56.1, 67.6, 1533 },
 				}),
 				q(59920, {	-- Light the Forge, Forgelite
 					["sourceQuests"] = {
@@ -108,10 +246,25 @@ _.Zones =
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 52.5, 82.7, 1533 },
 				}),
+				q(58978, {	-- Lysonia's Truth
+					["sourceQuests"] = { 58977 },	-- What's In a Memory?
+					["provider"] = { "n", 167038 },	-- Kleia
+					["coord"] = { 57.5, 61.7, 1533 },
+				}),
+				q(58980, {	-- Mnemis, At Your Service
+					["sourceQuests"] = { 58979 },	-- I MADE You!
+					["provider"] = { "n", 167035 },	-- Locus-Keeper Mnemis
+					["coord"] = { 57.2, 55.2, 1533 },
+				}),
 				q(62715, {	-- More Than A Gift
 					["sourceQuests"] = { 62714 },	-- A Gift for An Acolyte
 					["provider"] = { "n", 174900 },	-- Acolyte Amalthina
 					["coord"] = { 47.8, 73.2, 1533 },
+				}),
+				q(57264, {	-- On The Edge of a Revelation
+					["sourceQuests"] = { 57270 },	-- The Temple of Purity
+					["provider"] = { "n", 157673 },	-- Disciple Kosmas
+					["coord"] = { 56.7, 74.4, 1533 },
 				}),
 				q(57553, {	-- On Wounded Wings
 					["sourceQuests"] = { 57549 },	-- In Agthia's Memory
@@ -139,6 +292,11 @@ _.Zones =
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 54.7, 41.1, 1533 },
 				}),
+				q(57447, {	-- Purity's Prerogative
+					["sourceQuests"] = { 57269 },	-- The Hand of Doubt
+					["provider"] = { "n", 157687 },	-- Vesiphone
+					["coord"] = { 64.4, 71.0, 1533 },
+				}),
 				q(57932, {	-- Resource Drain
 					["sourceQuests"] = {
 						59674,	-- A Friendly Rivalry
@@ -159,10 +317,102 @@ _.Zones =
 						i(175719),	-- Agitha's Void-Tinged Speartip
 					},
 				}),
+				q(57717, {	-- Step Back From That Ledge, My Friend
+					["sourceQuests"] = { 57716 },	-- A Wayward Disciple?
+					["provider"] = { "n", 159762 },	-- Eridia
+					["coord"] = { 54.1, 73.6, 1533 },
+				}),
 				q(57712, {	-- Suggested Reading
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
 					["provider"] = { "n", 157138 },	-- Aspirant Akimos
 					["coord"] = { 55.3, 83.4, 1533 },
+				}),
+				q(57936, {	-- Superior Programming
+					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
+					["provider"] = { "n", 159609 },	-- Hopo
+					["coord"] = { 54.7, 41.2, 1533 },
+					["g"] = {
+						i(175613),	-- Pure Aspirant's Treads
+						i(175635),	-- Pure Aspirant's Wristwraps
+						i(175615),	-- Courageous Aspirant's Boots
+						i(175638),	-- Courageous Aspirant's Wristwraps
+						i(175614),	-- Humble Aspirant's Sabatons
+						i(175637),	-- Humble Aspirant's Wristwraps
+						i(175612),	-- Judicious Aspirant's Warboots
+						i(175636),	-- Judicious Aspirant's Wristwraps
+					},
+				}),
+				q(57715, {	-- The Archon's Answer (Death Knight)
+					["sourceQuests"] = { 57266 },	-- The First Cleansing
+					["provider"] = { "n", 158862 },	-- Kleia
+					["classes"] = { DEATHKNIGHT },
+					["coord"] = { 55.6, 86.4, 1533 },
+				}),
+				q(60217, {	-- The Archon's Answer (Demon Hunter)
+					["sourceQuests"] = { 57266 },	-- The First Cleansing
+					["provider"] = { "n", 158862 },	-- Kleia
+					["classes"] = { DEMONHUNTER },
+					["coord"] = { 55.6, 86.4, 1533 },
+				}),
+				q(60218, {	-- The Archon's Answer (Druid)
+					["sourceQuests"] = { 57266 },	-- The First Cleansing
+					["provider"] = { "n", 158862 },	-- Kleia
+					["classes"] = { DRUID },
+					["coord"] = { 55.6, 86.4, 1533 },
+				}),
+				q(60219, {	-- The Archon's Answer (Hunter)
+					["sourceQuests"] = { 57266 },	-- The First Cleansing
+					["provider"] = { "n", 158862 },	-- Kleia
+					["classes"] = { HUNTER },
+					["coord"] = { 55.6, 86.4, 1533 },
+				}),
+				q(60220, {	-- The Archon's Answer (Mage)
+					["sourceQuests"] = { 57266 },	-- The First Cleansing
+					["provider"] = { "n", 158862 },	-- Kleia
+					["classes"] = { MAGE },
+					["coord"] = { 55.6, 86.4, 1533 },
+				}),
+				q(60221, {	-- The Archon's Answer (Monk)
+					["sourceQuests"] = { 57266 },	-- The First Cleansing
+					["provider"] = { "n", 158862 },	-- Kleia
+					["classes"] = { MONK },
+					["coord"] = { 55.6, 86.4, 1533 },
+				}),
+				q(60222, {	-- The Archon's Answer (Paladin)
+					["sourceQuests"] = { 57266 },	-- The First Cleansing
+					["provider"] = { "n", 158862 },	-- Kleia
+					["classes"] = { PALADIN },
+					["coord"] = { 55.6, 86.4, 1533 },
+				}),
+				q(60223, {	-- The Archon's Answer (Priest)
+					["sourceQuests"] = { 57266 },	-- The First Cleansing
+					["provider"] = { "n", 158862 },	-- Kleia
+					["classes"] = { PRIEST },
+					["coord"] = { 55.6, 86.4, 1533 },
+				}),
+				q(60224, {	-- The Archon's Answer (Rogue)
+					["sourceQuests"] = { 57266 },	-- The First Cleansing
+					["provider"] = { "n", 158862 },	-- Kleia
+					["classes"] = { ROGUE },
+					["coord"] = { 55.6, 86.4, 1533 },
+				}),
+				q(60225, {	-- The Archon's Answer (Shaman)
+					["sourceQuests"] = { 57266 },	-- The First Cleansing
+					["provider"] = { "n", 158862 },	-- Kleia
+					["classes"] = { SHAMAN },
+					["coord"] = { 55.6, 86.4, 1533 },
+				}),
+				q(60226, {	-- The Archon's Answer (Warlock)
+					["sourceQuests"] = { 57266 },	-- The First Cleansing
+					["provider"] = { "n", 158862 },	-- Kleia
+					["classes"] = { WARLOCK },
+					["coord"] = { 55.6, 86.4, 1533 },
+				}),
+				q(60229, {	-- The Archon's Answer (Warrior)
+					["sourceQuests"] = { 57266 },	-- The First Cleansing
+					["provider"] = { "n", 158862 },	-- Kleia
+					["classes"] = { WARRIOR },
+					["coord"] = { 55.6, 86.4, 1533 },
 				}),
 				q(57709, {	-- The Aspirant's Crucible
 					["sourceQuests"] = {
@@ -171,6 +421,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 165107 },	-- Kleia
 					["coord"] = { 48.3, 72.7, 1533 },
+				}),
+				q(57291, {	-- The Chamber of First Reflection
+					["sourceQuests"] = { 57714 },	-- Assessing Your Spirit
+					["provider"] = { "n", 158807 },	-- Forgelite Sophone
+					["coord"] = { 51.6, 80.9, 1533 },
 				}),
 				q(57265, {	-- The Cycle of Anima: Drought Conditions
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
@@ -187,6 +442,59 @@ _.Zones =
 					["provider"] = { "n", 166577 },	-- Sika
 					["coord"] = { 52.7, 82.5, 1533 },
 				}),
+				q(57446, {	-- The Enemy You Know
+					["sourceQuests"] = {
+						57037,	-- A Once Sweet Sound
+						57719,	-- Dangerous Discourse
+						60292,	-- Dangerous Discourse
+						59147,	-- The Hand of Purification
+					},
+					["provider"] = { "n", 159762 },	-- Kleia
+					["coord"] = { 61.3, 74.4, 1533 },
+				}),
+				q(57266, {	-- The First Cleansing
+					["sourceQuests"] = { 57291 },	-- The Chamber of First Reflectiont
+					["provider"] = { "n", 159583 },	-- Kleia
+					["coord"] = { 57.2, 86.5, 1533 },
+					["g"] = {
+						i(173324),	-- Boots of Inner Calm
+						i(173323),	-- Contemplative Striders
+						i(173321),	-- Footguards of Self-Reflection
+						i(173322),	-- Sandals of Soul's Clarity
+					},
+				}),
+				q(57269, {	-- The Hand of Doubt
+					["sourceQuests"] = { 57446 },	-- The Enemy You Know
+					["provider"] = { "n", 157673 },	-- Disciple Kosmas
+					["coord"] = { 64.2, 71.4, 1533 },
+					["g"] = {
+						i(176337),	-- Skytone Quickblade
+						i(176388),	-- Guidenote Dagger
+						i(176390),	-- Silverchime Gavel
+						i(176339),	-- Skytone Mallet
+						i(176330),	-- Guidenote Crossbow
+						i(176334),	-- Silverchime Longspear
+						i(176338),	-- Skytone Greatsword
+						i(176336),	-- Guidenote Grip
+						i(176332),	-- Silverchime Warglaive
+					},
+				}),
+				q(59147, {	-- The Hand of Purification
+					["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
+					["provider"] = { "n", 159762 },	-- Eridia
+					["coord"] = { 59.3, 77.0, 1533 },
+				}),
+				q(58800, {	-- The Mnemonic Locus
+					["sourceQuests"] = {
+						58771,	-- Directions Not Included
+						58799,	-- The Prime's Directive
+					},
+					["provider"] = { "n", 167034 },	-- Mikanikos
+					["coord"] = { 57.1, 61.6, 1533 },
+					["g"] = {
+						i(175704),	-- Reverberating Silver Band
+					},
+				}),
 				q(60466, {	-- The Old Ways
 					["sourceQuests"] = {
 						57676,	-- The Things That Haunt Us
@@ -194,6 +502,16 @@ _.Zones =
 					},
 					["provider"] = { "n", 160598 },	-- Klystere
 					["coord"] = { 47.8, 73.2, 1533 },
+				}),
+				q(58799, {	-- The Prime's Directive
+					["sourceQuests"] = { 58976 },	-- Chasing a Memory
+					["provider"] = { "n", 167034 },	-- Mikanikos
+					["coord"] = { 54.7, 64.1, 1533 },
+				}),
+				q(57270, {	-- The Temple of Purity
+					["sourceQuests"] = { 58174 },	-- All An Aspirant Can Do
+					["provider"] = { "n", 157673 },	-- Disciple Kosmas
+					["coord"] = { 55.6, 86.4, 1533 },
 				}),
 				q(57676, {	-- The Things That Haunt Us
 					["sourceQuests"] = { 57261 },	-- Walk the Path, Aspirant
@@ -204,6 +522,11 @@ _.Zones =
 					["sourceQuests"] = { 57713 },	-- The Work of One's Hands
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 52.9, 83.4, 1533 },
+				}),
+				q(58843, {	-- The Vault of the Archon
+					["sourceQuests"] = { 58980 },	-- Mnemis, At Your Service
+					["provider"] = { "n", 167035 },	-- Locus-Keeper Mnemis
+					["coord"] = { 58.8, 65.2, 1533 },
 				}),
 				q(57713, {	-- The Work of One's Hands
 					["sourceQuests"] = { 59920 },	-- Light the Forge, Forgelite
@@ -238,8 +561,26 @@ _.Zones =
 					["provider"] = { "n", 166306 },	-- Kalisthene
 					["coord"] = { 42.2, 78.1, 1533 },
 				}),
+				q(60316, {	-- WANTED: Altered Sentinel
+					["sourceQuests"] = {	-- TODO: verify SQs.  saw when coming back to aspirant's rest after turning in 'the archon's answer'
+						57715,	-- The Archon's Answer (Deathknight)
+						60217,	-- The Archon's Answer (Demonhunter)
+						60218,	-- The Archon's Answer (Druid)
+						60219,	-- The Archon's Answer (Hunter)
+						60220,	-- The Archon's Answer (Mage)
+						60221,	-- The Archon's Answer (Monk)
+						60222,	-- The Archon's Answer (Paladin)
+						60223,	-- The Archon's Answer (Priest)
+						60224,	-- The Archon's Answer (Rogue)
+						60225,	-- The Archon's Answer (Shaman)
+						60226,	-- The Archon's Answer (Warlock)
+						60229,	-- The Archon's Answer (Warror)
+					},
+					["provider"] = { "o", 352028 },	-- Wanted Scroll
+					["coord"] = { 49.1, 72.8, 1533 },
+				}),
 				q(60366, {	-- WANTED: Darkwing
-				--	TODO: figure out SQs
+				--	TODO: figure out SQs.  saw while on assessing your strength/stamina
 					["provider"] = { "o", 352027 },	-- Wanted Scroll
 					["coord"] = { 53.2, 46.4, 1533 },
 					["g"] = {
@@ -247,7 +588,7 @@ _.Zones =
 					},
 				}),
 				q(60315, {	-- WANTED: Gorgebeak
-				--	TODO: figure out SQs
+				--	TODO: figure out SQs.  saw while on assessing your strength/stamina
 					["provider"] = { "o", 352027 },	-- Wanted Scroll
 					["coord"] = { 53.2, 46.4, 1533 },
 					["g"] = {
@@ -262,10 +603,23 @@ _.Zones =
 					["provider"] = { "n", 158181 },	-- Agthia
 					["coord"] = { 46.5, 63.4, 1533 },
 				}),
+				q(57933, {	-- We Can Rebuild Him
+					["sourceQuests"] = {
+						57931,	-- Phalynx Malfunction
+						57932,	-- Resource Drain
+					},
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, 1533 },
+				}),
 				q(59774, {	-- Welcome to Eternity
 					["sourceQuests"] = { 59773 },	-- Seek the Ascended
 					["provider"] = { "n", 166227 },	-- Kleia
 					["coord"] = { 37.3, 76.4, 1533 },
+				}),
+				q(58977, {	-- What's In a Memory?
+					["sourceQuests"] = { 58800 },	-- The Mnemonic Locus
+					["provider"] = { "n", 167034 },	-- Mikanikos
+					["coord"] = { 57.5, 61.8, 1533 },
 				}),
 				q(57554, {	-- Wicked Gateways
 					["sourceQuests"] = { 57549 },	-- In Agthia's Memory
@@ -283,7 +637,6 @@ _.Zones =
 				currency(1829, {		-- Renown-Kyrian
 					q(61697, {	-- A New Age
 						["provider"] = { "n", 174937 },	-- Adjutant Galos
-						["lvl"] = { 60 },
 						["g"] = {
 							i(180766),	-- Eternal Phalynx of Courage
 							i(180633),	-- Grubby
@@ -292,305 +645,13 @@ _.Zones =
 					-- Phaetus, Genesis of Aeons
 					q(58181, {	-- Building the Base
 						["provider"] = { "n", 160280 },	-- Mikanikos <Forgelite Prime>
-						["lvl"] = { 60 },
 						["g"] = {
 							i(180763),		-- Phalynx of Courage
 						},
 					}),
 				}),
-				-- The Aspirant's Crucible
-				q(57714, {	-- Assessing Your Spirit
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 81.6, 80.9, 1533 },
-					["sourceQuests"] = {
-						57909,	-- Assessing Your Stamina
-						57288,	-- Assessing Your Strength
-					},
-					["g"] = {
-						i(173326),	-- Sparring Trainer's Gauntlets
-						i(173328),	-- Sparring Trainer's Gloves
-						i(173325),	-- Sparring Trainer's Grips
-						i(173327),	-- Sparring Trainer's Handwraps
-					},
-				}),
-				q(57291, {	-- The Chamber of First Reflection
-					["provider"] = { "n", 158807 },	-- Forgelite Sophone
-					["coord"] = { 51.6, 80.9, 1533 },
-					["sourceQuest"] = 57714,	-- Assessing Your Spirit
-				}),
-				q(57266, {	-- The First Cleansing
-					["provider"] = { "n", 159583 },	-- Kleia
-					["coord"] = { 57.2, 86.5, 1533 },
-					["sourceQuest"] = 57291,	-- The Chamber of First Reflectiont
-					["g"] = {
-						i(173324),	-- Boots of Inner Calm
-						i(173323),	-- Contemplative Striders
-						i(173321),	-- Footguards of Self-Reflection
-						i(173322),	-- Sandals of Soul's Clarity
-					},
-				}),
-				q(57715, {	-- The Archon's Answer (Deathknight)
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 55.6, 86.4, 1533 },
-					["sourceQuest"] = 57266,	-- The First Cleansing
-					["classes"] = { DEATHKNIGHT },
-				}),
-				q(60217, {	-- The Archon's Answer (Demonhunter)
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 55.6, 86.4, 1533 },
-					["sourceQuest"] = 57266,	-- The First Cleansing
-					["classes"] = { DEMONHUNTER },
-				}),
-				q(60218, {	-- The Archon's Answer (Druid)
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 55.6, 86.4, 1533 },
-					["sourceQuest"] = 57266,	-- The First Cleansing
-					["classes"] = { DRUID },
-				}),
-				q(60219, {	-- The Archon's Answer (Hunter)
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 55.6, 86.4, 1533 },
-					["sourceQuest"] = 57266,	-- The First Cleansing
-					["classes"] = { HUNTER },
-				}),
-				q(60220, {	-- The Archon's Answer (Mage)
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 55.6, 86.4, 1533 },
-					["sourceQuest"] = 57266,	-- The First Cleansing
-					["classes"] = { MAGE },
-				}),
-				q(60221, {	-- The Archon's Answer (Monk)
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 55.6, 86.4, 1533 },
-					["sourceQuest"] = 57266,	-- The First Cleansing
-					["classes"] = { MONK },
-				}),
-				q(60222, {	-- The Archon's Answer (Paladin)
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 55.6, 86.4, 1533 },
-					["sourceQuest"] = 57266,	-- The First Cleansing
-					["classes"] = { PALADIN },
-				}),
-				q(60223, {	-- The Archon's Answer (Priest)
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 55.6, 86.4, 1533 },
-					["sourceQuest"] = 57266,	-- The First Cleansing
-					["classes"] = { PRIEST },
-				}),
-				q(60224, {	-- The Archon's Answer (Rogue)
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 55.6, 86.4, 1533 },
-					["sourceQuest"] = 57266,	-- The First Cleansing
-					["classes"] = { ROGUE },
-				}),
-				q(60225, {	-- The Archon's Answer (Shaman)
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 55.6, 86.4, 1533 },
-					["sourceQuest"] = 57266,	-- The First Cleansing
-					["classes"] = { SHAMAN },
-				}),
-				q(60226, {	-- The Archon's Answer (Warlock)
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 55.6, 86.4, 1533 },
-					["sourceQuest"] = 57266,	-- The First Cleansing
-					["classes"] = { WARLOCK },
-				}),
-				q(60229, {	-- The Archon's Answer (Warror)
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 55.6, 86.4, 1533 },
-					["sourceQuest"] = 57266,	-- The First Cleansing
-					["classes"] = { WARRIOR },
-				}),
-				q(58174, {	-- All An Aspirant Can Do
-					["provider"] = { "n", 158862 },	-- Kleia
-					["coord"] = { 53.5, 87.3, 1533 },
-					["sourceQuests"] = {
-						57715,	-- The Archon's Answer (Deathknight)
-						60217,	-- The Archon's Answer (Demonhunter)
-						60218,	-- The Archon's Answer (Druid)
-						60219,	-- The Archon's Answer (Hunter)
-						60220,	-- The Archon's Answer (Mage)
-						60221,	-- The Archon's Answer (Monk)
-						60222,	-- The Archon's Answer (Paladin)
-						60223,	-- The Archon's Answer (Priest)
-						60224,	-- The Archon's Answer (Rogue)
-						60225,	-- The Archon's Answer (Shaman)
-						60226,	-- The Archon's Answer (Warlock)
-						60229,	-- The Archon's Answer (Warror)
-					 },
-				}),
-				-- The Temple of Purity
-				q(57270, {	-- The Temple of Purity
-					["provider"] = { "n", 157673 },	-- Disciple Kosmas
-					["coord"] = { 55.6, 86.4, 1533 },
-					["sourceQuest"] = 58174,	-- All An Aspirant Can Do
-				}),
-				q(57977, {	-- A Temple in Need
-					["provider"] = { "n", 159762 },	-- Eridia
-					["coord"] = { 54.1, 73.6, 1533 },
-					["sourceQuest"] = 57270,	-- The Temple of Purity
-				}),
-				q(57264, {	-- On The Edge of a Revelation
-					["provider"] = { "n", 157673 },	-- Disciple Kosmas
-					["coord"] = { 56.7, 74.4, 1533 },
-					["sourceQuest"] = 57270,	-- The Temple of Purity
-				}),
-				q(57716, {	-- A Wayward Disciple?
-					["provider"] = { "n", 159762 },	-- Eridia
-					["coord"] = { 59.4, 78.0, 1533 },
-					["sourceQuests"] = {
-						57977,	-- A Temple in Need
-						57264,	-- On The Edge of a Revelation
-					},
-					["g"] = {
-						i(173341),	-- Cord of Uncertain Devotion
-						i(173343),	-- Belt of Uncertain Devotion
-						i(173342),	-- Cinch of Uncertain Devotion
-						i(173340),	-- Cincture of Uncertain Devotion
-					},
-				}),
-				q(57717, {	-- Step Back From That Ledge, My Friend
-					["provider"] = { "n", 159762 },	-- Eridia
-					["coord"] = { 54.1, 73.6, 1533 },
-					["sourceQuest"] = 57716,	-- A Wayward Disciple?
-				}),
-				q(57037, {	-- A Once Sweet Sound
-					["provider"] = { "n", 159762 },	-- Eridia
-					["coord"] = { 59.3, 77.0, 1533 },
-					["sourceQuest"] = 57717,	-- Step Back From That Ledge, My Friend
-					["g"] = {
-						i(176335),	-- Chime of Melodic Reflection
-						i(176333),	-- Melody Defender's Bulwark
-					},
-				}),
-				q(59147, {	-- The Hand of Purification
-					["provider"] = { "n", 159762 },	-- Eridia
-					["coord"] = { 59.3, 77.0, 1533 },
-					["sourceQuest"] = 57717,	-- Step Back From That Ledge, My Friend
-				}),
-				q(57719, {	-- Dangerous Discourse
-					["provider"] = { "o", 344726  },	-- Dark Sermon							-- TODO: Need to add the Object
-					["coord"] = { 57.2, 71.8, 1533 },
-					["sourceQuest"] = 57717,	-- Step Back From That Ledge, My Friend
-				}),
-				q(60292, {	-- Dangerous Discourse
-					["provider"] = { "n", 159762 },	-- Eridia
-					["coord"] = { 61.2, 74.3, 1533 },
-					["sourceQuests"] = {
-						59147,	-- The Hand of Purification
-						57037,	-- A Once Sweet Sound
-					},
-				}),
-				q(57444, {	-- An Inspired Moral Inventory
-					["provider"] = { "n", 160647 },	-- Acolyte Galistos
-					["coord"] = { 61.1, 74.4, 1533 },
-					["sourceQuest"] = 57717,	-- Step Back From That Ledge, My Friend
-				}),
-				q(57446, {	-- The Enemy You Know
-					["provider"] = { "n", 159762 },	-- Eridia
-					["coord"] = { 61.3, 74.4, 1533 },
-					["sourceQuests"] = {
-						57037,	-- A Once Sweet Sound
-						59147,	-- The Hand of Purification
-						57719,	-- Dangerous Discourse
-						60292,	-- Dangerous Discourse
-					 },
-				}),
-				q(57269, {	-- The Hand of Doubt
-					["provider"] = { "n", 157673 },	-- Disciple Kosmas
-					["coord"] = { 64.2, 71.4, 1533 },
-					["sourceQuest"] = 57446,	-- The Enemy You Know
-					["g"] = {
-						i(176337),	-- Skytone Quickblade
-						i(176388),	-- Guidenote Dagger
-						i(176390),	-- Silverchime Gavel
-						i(176339),	-- Skytone Mallet
-						i(176330),	-- Guidenote Crossbow
-						i(176334),	-- Silverchime Longspear
-						i(176338),	-- Skytone Greatsword
-						i(176336),	-- Guidenote Grip
-						i(176332),	-- Silverchime Warglaive
-					},
-				}),
-				q(57447, {	-- Purity's Prerogative
-					["provider"] = { "n", 157687 },	-- Vesiphone
-					["coord"] = { 64.4, 71.0, 1533 },
-					["sourceQuest"] = 57269,	-- The Hand of Doubt
-				}),
 				-- Chasing a Memory
-				q(58976, {	-- Chasing a Memory
-					["provider"] = { "n", 156238 },	-- Kleia
-					["coord"] = { 53.8, 73.6, 1533 },
-					["sourceQuest"] = 57447,	-- Purity's Prerogative
-				}),
-				q(58771, {	-- Directions Not Included
-					["provider"] = { "n", 167034 },	-- Mikanikos
-					["coord"] = { 54.7, 64.1, 1533 },
-					["sourceQuest"] = 58976,	-- Chasing a Memory
-				}),
-				q(58799, {	-- The Prime's Directive
-					["provider"] = { "n", 167034 },	-- Mikanikos
-					["coord"] = { 54.7, 64.1, 1533 },
-					["sourceQuest"] = 58976,	-- Chasing a Memory
-				}),
-				q(58800, {	-- The Mnemonic Locus
-					["provider"] = { "n", 167034 },	-- Mikanikos
-					["coord"] = { 57.1, 61.6, 1533 },
-					["sourceQuests"] = {
-						58771,	-- Directions Not Included
-						58799,	-- The Prime's Directive
-					},
-					["g"] = {
-						i(175704),	-- Reverberating Silver Band
-					},
-				}),
-				q(58977, {	-- What's In a Memory?
-					["provider"] = { "n", 167034 },	-- Mikanikos
-					["coord"] = { 57.5, 61.8, 1533 },
-					["sourceQuest"] = 58800,	-- The Mnemonic Locus
-				}),
-				q(58978, {	-- Lysonia's Truth
-					["provider"] = { "n", 167038 },	-- Kleia
-					["coord"] = { 57.5, 61.7, 1533 },
-					["sourceQuest"] = 58977,	-- What's In a Memory?
-				}),
-				q(58979, {	-- I MADE You!
-					["provider"] = { "n", 167034 },	-- Mikanikos
-					["coord"] = { 57.2, 55.3, 1533 },
-					["sourceQuest"] = 58978,	-- Lysonia's Truth
-					["g"] = {
-						i(173329),	-- Pure Aspirant's Hood
-						i(173331),	-- Courageous Aspirant's Helm
-						i(173330),	-- Humble Aspirant's Helm
-						i(173315),	-- Judicious Aspirant's Helm
-					},
-				}),
-				q(58980, {	-- Mnemis, At Your Service
-					["provider"] = { "n", 167035 },	-- Locus-Keeper Mnemis
-					["coord"] = { 57.2, 55.2, 1533 },
-					["sourceQuest"] = 58979,	-- I MADE You!
-				}),
-				q(58843, {	-- The Vault of the Archon
-					["provider"] = { "n", 167035 },	-- Locus-Keeper Mnemis
-					["coord"] = { 58.8, 65.2, 1533 },
-					["sourceQuest"] = 58980,	-- Mnemis, At Your Service
-				}),
-				q(60180, {	-- A Paragon's Reflection
-					["provider"] = { "n", 167504 },	-- Vault-Keeper Mnemis
-					["coord"] = { 56.1, 67.6, 1533 },
-					["sourceQuest"] = 58843,	-- The Vault of the Archon
-				}),
-				q(60013, {	-- Leave it to Mnemis
-					["provider"] = { "n", 167504 },	-- Vault-Keeper Mnemis
-					["coord"] = { 56.1, 67.6, 1533 },
-					["sourceQuest"] = 60180,	-- A Paragon's Reflection
-				}),
 				-- By the Archon's Will
-				q(59196, {	-- Go in Service
-					["provider"] = { "n", 167038 },	-- Kleia
-					["coord"] = { 54.4, 64.2, 1533 },
-					["sourceQuest"] = 60013,	-- Leave it to Mnemis
-				}),
 				q(59426, {	-- Your Personal Assistant
 					["provider"] = { "n", 165045 },	-- Kalisthene
 					["coord"] = { 52.8, 47.8, 1533 },
@@ -693,43 +754,6 @@ _.Zones =
 				-- End of Zone Achievement Quests
 
 				-- An Act of Service
-				q(60316, {	-- WANTED: Altered Sentinel
-					--["provider"] = { "o", 352027 },	-- Wanted Scroll			-- TODO: Need to add the Object 352027 or 352028
-					["coord"] = { 49.1, 72.8, 1533 },
-				}),
-				q(57933, {	-- We Can Rebuild Him
-					["provider"] = { "n", 158765 },	-- Pelodis
-					["coord"] = { 54.7, 41.1, 1533 },
-					["sourceQuests"] = {
-						57931,	-- Phalynx Malfunction
-						57932,	-- Resource Drain
-					},
-				}),
-				q(57934, {	-- Combat Drills
-					["provider"] = { "n", 158765 },	-- Pelodis
-					["coord"] = { 54.7, 41.1, 1533 },
-					["sourceQuest"] = 57933,	-- We Can Rebuild Him
-				}),
-				q(57935, {	-- Laser Location
-					["provider"] = { "n", 158765 },	-- Pelodis
-					["coord"] = { 54.7, 41.1, 1533 },
-					["sourceQuest"] = 57933,	-- We Can Rebuild Him
-				}),
-				q(57936, {	-- Superior Programming
-					["provider"] = { "n", 159609 },	-- Hopo
-					["coord"] = { 54.7, 41.2, 1533 },
-					["sourceQuest"] = 57933,	-- We Can Rebuild Him
-					["g"] = {
-						i(175613),	-- Pure Aspirant's Treads
-						i(175635),	-- Pure Aspirant's Wristwraps
-						i(175615),	-- Courageous Aspirant's Boots
-						i(175638),	-- Courageous Aspirant's Wristwraps
-						i(175614),	-- Humble Aspirant's Sabatons
-						i(175637),	-- Humble Aspirant's Wristwraps
-						i(175612),	-- Judicious Aspirant's Warboots
-						i(175636),	-- Judicious Aspirant's Wristwraps
-					},
-				}),
 				q(57937, {	-- Tactical Formation
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 54.7, 41.1, 1533 },

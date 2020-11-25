@@ -268,6 +268,7 @@ i(173776);	-- Stale Loaf
 i(67495);	-- Strange Bloated Stomach
 i(160378);	-- Strongarm Stout
 i(170379);	-- Sunwarmed Sand
+i(178150);	-- Tasty Purian
 i(80513);	-- Vintage Bug Sprayer
 i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate

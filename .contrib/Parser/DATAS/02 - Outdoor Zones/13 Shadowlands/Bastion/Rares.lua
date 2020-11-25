@@ -92,10 +92,11 @@ _.Zones =
 					},
 				}),
 				n(170932, { -- Cloudfeather Guardian
-					["coord"] = { 50.6, 59.6, 1533 },
+					["description"] = "If the rare is not attackable, you can kill Anima-Starved Cloudfeathers in the area to provoke it.",
 					["questID"] = 60978,	-- Both procced on kill
 					--["questID"] = 62191,
 					["isDaily"] = true,
+					["coord"] = { 50.6, 59.6, 1533 },
 					["g"] = {
 						crit(13, {	-- Cloudfeather Guardian
 							["achievementID"] = 14307,	-- Adventurer of Bastion
@@ -126,16 +127,19 @@ _.Zones =
 						}),
 					},
 				}),
-				n(171010, { -- Corrupted Clawguard (possibly lvl 60 only)
+				n(171010, { -- Corrupted Clawguard
+					["description"] = "To start the encounter, you need to find a Discarded Phalynx Core and use it on the Malfunctioning Clawguard.",
 					["questID"] = 60999,	-- Malfunctioning Clawguard
-					["coord"] = { 56.8, 47.6, 1533 },
 					["isDaily"] = true,
+					["coord"] = { 56.4, 46.1, 1533 },
+					["crs"] = { 171300 },	-- Malfunctioning Clawguard
 					["g"] = {
 						crit(24, {	-- Corrupted Clawguard
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 						i(182759, {	-- Functioning Anima Core
 							["questID"] = 62200,	-- Functioning Anima Core
+							["isDaily"] = true,	-- might be repeatable
 						}),
 					},
 				}),
@@ -207,9 +211,11 @@ _.Zones =
 					},
 				}),
 				n(160721, { -- Fallen Acolyte Erisne
-					["coord"] = { 60.5, 73.4, 1533 },
+				--	you defeat a non-rare version of this mob while on 57977 'a temple in need' / 57264 'on the edge of revelation' - figure out when the rare version becomes available, these quests or 
+				--	cutscene phased the area during 57717, 'step back from that ledge, my friend' and the end of that storyline is 57447, 'purity's prerogative'
 					["questID"] = 58222,
 					["isDaily"] = true,
+					["coord"] = { 60.5, 73.4, 1533 },
 					["g"] = {
 						crit(2, {	-- Fallen Acolyte Erisne
 							["achievementID"] = 14307,	-- Adventurer of Bastion
@@ -219,7 +225,7 @@ _.Zones =
 				}),
 				n(158659, { -- Herculon
 					["questID"] = 57705,	-- upon defeating rare, this popped.  upon looting Aspirant's Chest, 57708 + 62201 popped.
-					--	based on questID, i think 62201 may be the questID for looting Functioning Anima Core (starts quest #62200); 57708 may be daily loot trigger?  in which case we should change the tracked quest on the rare to that one, and move 57705 to HQT
+					--	57708 may be daily loot trigger?  in which case we should change the tracked quest on the rare to that one, and move 57705 to HQT
 					["isDaily"] = true,
 					["coord"] = { 43.0, 82.6, 1533 },
 					["g"] = {
@@ -228,6 +234,7 @@ _.Zones =
 						}),
 						i(182759, {	-- Functioning Anima Core
 							["questID"] = 62200,	-- Functioning Anima Core
+							["isDaily"] = true,	-- might be repeatable
 						}),
 					},
 				}),

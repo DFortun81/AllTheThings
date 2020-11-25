@@ -17,7 +17,7 @@ _.Zones =
 					--["crs"] = {  },	-- Fledgling Teroclaw
 				}),
 				i(180838, {	-- Wild Etherwyrm
-					--["crs"] = {  },	-- Fledgling Teroclaw
+					["crs"] = { 171666 },	-- Fledgling Teroclaw
 				}),
 				i(180867, {	-- Wader Chick
 					["crs"] = { 171712 },	-- Wader Chick
