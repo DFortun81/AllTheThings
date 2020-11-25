@@ -32,8 +32,6 @@ _.PetJournal =
 		p(75),				-- Black Kingsnake
 		p(42),				-- Black Tabby Cat
 		p(1743),			-- Black-Footed Fox Kit
-		p(2956),			-- Bloodlouse Hatchling
-		p(3013),			-- Bloodlouse Larva
 		p(2388),			-- Bloodfever Tarantula
 		p(2965),			-- Bloodfeaster Spiderling
 		p(2451),			-- Bloodstone Tunneler
@@ -60,7 +58,6 @@ _.PetJournal =
 		p(1890),			-- Corgi Pup
 		p(1929),			-- Corgnelius
 		p(41),				-- Cornish Rex Cat
-		p(2955),			-- Corpselouse Hatchling
 		p(2945),			-- Corpulent Bonetusk
 		p(2448),			-- Craghoof Kid
 		p(78),				-- Crimson Snake
@@ -165,7 +162,6 @@ _.PetJournal =
 		p(1663),			-- Periwinkle Calf
 		p(2946),			-- Pernicious Bonetusk
 		p(726),				-- Plains Monitor
-		p(2954),			-- Plaguelouse Hatchling
 		p(2188),			-- Poda
 		un(REMOVED_FROM_GAME, p(124)),		-- Poley
 		p(2935),			-- Purity

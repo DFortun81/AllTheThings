@@ -2948,6 +2948,9 @@ _.HiddenQuestTriggers =
 		q(58293),	-- placing first Purian in the bowl
 		q(58294),	-- placing second Purian in the bowl
 
+		-- Maldraxxus
+		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
+
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
 		q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)

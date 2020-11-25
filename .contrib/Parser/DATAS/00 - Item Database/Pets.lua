@@ -975,7 +975,7 @@ pet(181170, 2946);	-- Pernicious Bonetusk
 pet(180208, 2889);	-- PHA7-YNX
 pet(183107, 3024);	-- Pile of Ashen Dust // Char
 pet(173891, 2798);	-- Plagueborn Slime
-pet(181264, 2954);	-- Plaguelouse Hatchling
+pet(181264, 2954);	-- Plaguelouse Larva
 pet(183395, 3036);	-- Projection of Remornia
 --pet(3049);	-- Pulsating Maggot
 pet(180859, 2935);	-- Purity

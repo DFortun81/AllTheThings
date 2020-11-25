@@ -162,8 +162,8 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(11)),	-- Adventurer of Maldraxxus / Smorgas the Feaster
-						i(181265),	-- Corpselouse Hatchling
-						i(181266),	-- Bloodlouse Hatchling
+						i(181265),	-- Corpselouse Larva
+						i(181266),	-- Feasting Larva
 					},
 				}),
 				n(162586, { -- Tahonta

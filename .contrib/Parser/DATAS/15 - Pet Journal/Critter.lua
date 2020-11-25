@@ -25,6 +25,7 @@ _.PetJournal =
 		p(2476),	-- Bloated Bloodfeaster
 		p(2414),	-- Bloodfeaster Larva
 		p(2476),	-- Bloodfeaster Larva (Alchemy version)
+		p(3013),	-- Bloodlouse Larva
 		p(639),		-- Borean Marmot
 		p(449),		-- Brown Marmot
 		p(70),		-- Brown Prairie Dog
@@ -32,6 +33,7 @@ _.PetJournal =
 		p(1516),	-- Bush Chicken
 		p(540),		-- Carrion Rat
 		p(393),		-- Cockroach
+		p(2955),	-- Corpselouse Larva
 		p(468),		-- Creepy Crawly
 		p(1752),	-- Crispin
 		p(556),		-- Crystal Beetle
@@ -50,6 +52,7 @@ _.PetJournal =
 		p(209),		-- Elwynn Lamb
 		p(2664),	-- Experimental Roach
 		p(447),		-- Fawn
+		p(2956),	-- Feasting Larva
 		p(2113), 	-- Felclaw Marsuul
 		p(415),		-- Fire Beetle
 		p(541),		-- Fire-Proof Roach
@@ -111,6 +114,7 @@ _.PetJournal =
 		un(20, p(159)),		-- Peanut
 		p(250),		-- Perky Pug
 		p(166),		-- Pint-Sized Pink Pachyderm
+		p(2954),	-- Plaguelouse Larva
 		p(381),		-- Porcupette
 		p(386),		-- Prairie Dog
 		p(727),		-- Prairie Mouse

@@ -14,14 +14,6 @@ _.Zones =
 						i(183619),	-- Everlasting Boneforged Greataxe
 					},
 				}),
-				o(348521, {	-- Strange Growth
-					["coord"] = { 55.9, 38.9, 1536 },
-					["g"] = {
-						i(182607, {	-- Hairy Egg
-							i(182606),	-- Bloodlouse Larva
-						}),
-					},
-				}),
 				o(354856, {	-- Slime-Coated Crate
 					["coords"] = {
 						{ 70.4, 75.3, 1536 },
@@ -66,6 +58,15 @@ _.Zones =
 						i(181671),	-- Corpsehide Spaulders
 						i(182441),	-- Markman's Advantage
 						i(181173),	-- Skittering Venomspitter???
+					},
+				}),
+				o(348521, {	-- Strange Growth
+					["coord"] = { 55.9, 38.9, 1536 },
+					["questID"] = 59428,	-- 59429 also triggered simultaneously; adding it to HQT for now
+					["g"] = {
+						i(182607, {	-- Hairy Egg
+							i(182606),	-- Bloodlouse Larva
+						}),
 					},
 				}),
 			}),
