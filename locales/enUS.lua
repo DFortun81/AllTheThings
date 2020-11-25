@@ -4124,6 +4124,7 @@ app.L = {
 		[332577] = "Crystalline Cat Figurine",	-- Need to be confirmed
 		[332704] = "Corrupted Chest",
 		[339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
+		[339499] = "Remnant of Light",
 		[339770] = "Abandoned Treasure Chest",
 		[343611] = "Voidtouched Egg",
 		[344588] = "Stewart's Stewpendous Stew",

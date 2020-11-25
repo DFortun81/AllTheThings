@@ -12,7 +12,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(16)),	-- Adventurer of Revendreth / Amalgamation of Filth
+						ach(14310, crit(14)),	-- Adventurer of Revendreth / Amalgamation of Filth
 					},
 				}),
 				n(164388, {	-- Amalgamation of Light
@@ -20,7 +20,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(13)),	-- Adventurer of Revendreth / Amalgamation of Light
+						ach(14310, crit(12)),	-- Adventurer of Revendreth / Amalgamation of Light
 						i(180586),	-- Lightbinders
 					},
 				}),
@@ -29,7 +29,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(25)),	-- Adventurer of Revendreth / Amalgamation of Sin
+						ach(14310, crit(23)),	-- Adventurer of Revendreth / Amalgamation of Sin
 					},
 				}),
 				n(166576, {	-- Azgar
@@ -37,7 +37,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(18)),	-- Adventurer of Revendreth / Azgar
+						ach(14310, crit(16)),	-- Adventurer of Revendreth / Azgar
 					},
 				}),
 				n(166292, {	-- Bog Beast
@@ -45,16 +45,17 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(20)),	-- Adventurer of Revendreth / Bog Beast
+						ach(14310, crit(18)),	-- Adventurer of Revendreth / Bog Beast
 						i(180588),	-- Bucket of Primordial Sludge
 					},
 				}),
 				n(165206, {	-- Endlurker
 					["coord"] = { 66.4, 59.6, 1525 },
-					--["questID"] = ,
+					["questID"] = 59582,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(12)),	-- Adventurer of Revendreth / Endlurker
+						ach(14310, crit(11)),	-- Adventurer of Revendreth / Endlurker
+						i(179927),	-- Glowing Endmire Stinger
 					},
 				}),
 				n(166710, {	-- Executioner Aatron
@@ -62,7 +63,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(21)),	-- Adventurer of Revendreth / Executioner Aatron
+						ach(14310, crit(19)),	-- Adventurer of Revendreth / Executioner Aatron
 					},
 				}),
 				n(161310, {	-- Executioner Adrastia
@@ -70,7 +71,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(9)),	-- Adventurer of Revendreth / Executioner Adrastia
+						ach(14310, crit(8)),	-- Adventurer of Revendreth / Executioner Adrastia
 					},
 				}),
 				n(166521, {	-- Famu the Infinite
@@ -80,7 +81,7 @@ _.Zones =
 					["crs"] = { 166483 },	-- Seeker Hilda
 					["g"] = {
 						i(180582),	-- Endmire Flyer Tether
-						ach(14310, crit(17)),	-- Adventurer of Revendreth / Famu the Infinite
+						ach(14310, crit(15)),	-- Adventurer of Revendreth / Famu the Infinite
 					},
 				}),
 				n(159496, {	-- Forgemaster Madalav
@@ -88,7 +89,6 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(6)),	-- Adventurer of Revendreth / Forgemaster Madalav
 					},
 				}),
 				n(167464, {	-- Grand Arcanist Dimitri
@@ -96,7 +96,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(23)),	-- Adventurer of Revendreth / Grand Arcanist Dimitri
+						ach(14310, crit(21)),	-- Adventurer of Revendreth / Grand Arcanist Dimitri
 					},
 				}),
 				n(165290, {	-- Harika the Horrid
@@ -105,7 +105,6 @@ _.Zones =
 					["isDaily"] = true,
 					["description"] = "Requires to be a |cFFfe040fVenthyr Covenant|r & your Anima to be channel to Wanecrypt Hill to summon him. Use the Dredterror Ballista to make him attackable.",
 					["g"] = {
-						ach(14310, crit(15)),		-- Adventurer of Revendreth / Harika the Horrid
 						i(180461),			-- Horrid Dredwing
 						i(176396, {			-- Dredhollow Tools
 							["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
@@ -145,7 +144,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						i(180581),	-- Hopecrusher Gargon
-						ach(14310, crit(19)),	-- Adventurer of Revendreth / Hopecrusher
+						ach(14310, crit(17)),	-- Adventurer of Revendreth / Hopecrusher
 					},
 				}),
 				n(166993, {	-- Huntmaster Petrus
@@ -153,7 +152,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(22)),	-- Adventurer of Revendreth / Huntmaster Petrus
+						ach(14310, crit(20)),	-- Adventurer of Revendreth / Huntmaster Petrus
 					},
 				}),
 				n(160640, {	-- Innervus
@@ -169,7 +168,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(11)),	-- Adventurer of Revendreth / Leeched Soul
+						ach(14310, crit(10)),	-- Adventurer of Revendreth / Leeched Soul
 						i(180585),	-- Bottled Up Emotions
 					},
 				}),
@@ -178,7 +177,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(10)),	-- Adventurer of Revendreth / Lord Mortegore
+						ach(14310, crit(9)),	-- Adventurer of Revendreth / Lord Mortegore
 					},
 				}),
 				n(170048, {	-- Manifestation of Wrath
@@ -186,7 +185,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(24)),	-- Adventurer of Revendreth / Manifestation of Wrath
+						ach(14310, crit(22)),	-- Adventurer of Revendreth / Manifestation of Wrath
 						i(180591),	-- Vial of Roiling Emotions
 					},
 				}),
@@ -212,7 +211,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(26)),	-- Adventurer of Revendreth / Sinstone Hoarder
+						ach(14310, crit(24)),	-- Adventurer of Revendreth / Sinstone Hoarder
 					},
 				}),
 				n(160857, {	-- Sire Ladinas <The Lightrazed>
@@ -221,8 +220,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(8)),	-- Adventurer of Revendreth / Sire Ladinas <The Lightrazed>
-						i(180873),	-- Smolderheart
+						ach(14310, crit(7)),	-- Adventurer of Revendreth / Sire Ladinas <The Lightrazed>
 						o(339499, {	-- Remnant of Light
 							["coords"] = {
 								{ 36.77, 61.08, 1648 },
@@ -263,7 +261,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(14)),	-- Adventurer of Revendreth / Tollkeeper Varaboss
+						ach(14310, crit(13)),	-- Adventurer of Revendreth / Tollkeeper Varaboss
 					},
 				}),
 				n(155779, {	-- Tomb Burster <Dread Crawler Queen>
@@ -284,7 +282,7 @@ _.Zones =
 						i(180583, {		-- Impressionable Gorger Spawn
 							i(182589),		-- Loyal Gorger
 						}),
-						ach(14310, crit(7)),	-- Adventurer of Revendreth / Worldedge Gorger
+						ach(14310, crit(6)),	-- Adventurer of Revendreth / Worldedge Gorger
 					},
 				}),
 			}),

@@ -2970,6 +2970,9 @@ _.HiddenQuestTriggers =
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
 
+		-- Revendreth
+		q(60581),	-- Triggered after killing Endlurker along with 59582; probably triggers on first kill
+
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
 		q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)
