@@ -735,570 +735,460 @@ _.Achievements =
 					crit(1,  {	-- Sylla
 						["coord"] = { 39.8, 52.4, 1525 },
 						["cr"] = 173315,	-- Sylla
-						["_quests"] = { 61883 },	-- Resilient Survivors
 					}),
 					crit(2,  {	-- Eyegor
 						["coord"] = { 67.6, 66.0, 1525 },
 						["cr"] = 173324,	-- Eyegor
-						["_quests"] = { 61885 },	-- Eyegor's Special Friends
 					}),
 					crit(3,  {	-- Addius the Tormentor
 						["coord"] = { 61.2, 41.0, 1525 },
 						["cr"] = 173331,	-- Addius the Tormentor
-						["_quests"] = { 61886 },	-- The Mind Games of Addius
 					}),
 					crit(4,  {	-- Rotgut
 						["coord"] = { 34.0, 55.2, 1536 },
 						["cr"] = 173263,	-- Rotgut
-						["_quests"] = { 61867 },	-- Extra Pieces
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
 						["coord"] = { 63.2, 46.8, 1536 },
 						["cr"] = 173267,	-- Dundley Stickyfingers
-						["_quests"] = { 61868 },	-- Uncomfortably Undercover
 					}),
 					crit(6,  {	-- Caregiver Maximillian
 						["coord"] = { 46.8, 50.0, 1536 },
 						["cr"] = 173257,	-- Caregiver Maximillian
-						["_quests"] = { 61866 },	-- Mighty Minions of Maldraxxus
 					}),
 					crit(7,  {	-- Zolla
 						["coord"] = { 51.4, 38.2, 1533 },
 						["cr"] = 173130,	-- Zolla
-						["_quests"] = { 61787 },	-- Micro Defense Force
 					}),
 					crit(8,  {	-- Thenia
 						["coord"] = { 54.6, 56.0, 1533 },
 						["cr"] = 173129,	-- Thenia
-						["_quests"] = { 61791 },	-- Thenia's Loyal Companions
 					}),
 					crit(9,  {	-- Stratios
 						["coord"] = { 34.8, 62.8, 1533 },
 						["cr"] = 173131,	-- Stratios
-						["_quests"] = { 61784 },	-- Cliffs of Bastion
 					}),
 					crit(10, {	-- Glitterdust
 						["coord"] = { 58.2, 56.8, 1565 },
 						["cr"] = 173372,	-- Glitterdust
-						["_quests"] = { 61946 },	-- Natural Defenders
 					}),
 					crit(11, {	-- Faryl
 						["coord"] = { 51.2, 44.2, 1565 },
 						["cr"] = 173377,	-- Faryl
-						["_quests"] = { 61948 },	-- Airborne Defense Force
 					}),
 				}),
 				ach(14869, {	-- Beast Busters  -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
 						["coord"] = { 39.8, 52.4, 1525 },
 						["cr"] = 173315,	-- Sylla
-						["_quests"] = { 61883 },	-- Resilient Survivors
 					}),
 					crit(2,  {	-- Eyegor
 						["coord"] = { 67.6, 66.0, 1525 },
 						["cr"] = 173324,	-- Eyegor
-						["_quests"] = { 61885 },	-- Eyegor's Special Friends
 					}),
 					crit(3,  {	-- Addius the Tormentor
 						["coord"] = { 61.2, 41.0, 1525 },
 						["cr"] = 173331,	-- Addius the Tormentor
-						["_quests"] = { 61886 },	-- The Mind Games of Addius
 					}),
 					crit(4,  {	-- Rotgut
 						["coord"] = { 34.0, 55.2, 1536 },
 						["cr"] = 173263,	-- Rotgut
-						["_quests"] = { 61867 },	-- Extra Pieces
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
 						["coord"] = { 63.2, 46.8, 1536 },
 						["cr"] = 173267,	-- Dundley Stickyfingers
-						["_quests"] = { 61868 },	-- Uncomfortably Undercover
 					}),
 					crit(6,  {	-- Caregiver Maximillian
 						["coord"] = { 46.8, 50.0, 1536 },
 						["cr"] = 173257,	-- Caregiver Maximillian
-						["_quests"] = { 61866 },	-- Mighty Minions of Maldraxxus
 					}),
 					crit(7,  {	-- Zolla
 						["coord"] = { 51.4, 38.2, 1533 },
 						["cr"] = 173130,	-- Zolla
-						["_quests"] = { 61787 },	-- Micro Defense Force
 					}),
 					crit(8,  {	-- Thenia
 						["coord"] = { 54.6, 56.0, 1533 },
 						["cr"] = 173129,	-- Thenia
-						["_quests"] = { 61791 },	-- Thenia's Loyal Companions
 					}),
 					crit(9,  {	-- Stratios
 						["coord"] = { 34.8, 62.8, 1533 },
 						["cr"] = 173131,	-- Stratios
-						["_quests"] = { 61784 },	-- Cliffs of Bastion
 					}),
 					crit(10, {	-- Glitterdust
 						["coord"] = { 58.2, 56.8, 1565 },
 						["cr"] = 173372,	-- Glitterdust
-						["_quests"] = { 61946 },	-- Natural Defenders
 					}),
 					crit(11, {	-- Faryl
 						["coord"] = { 51.2, 44.2, 1565 },
 						["cr"] = 173377,	-- Faryl
-						["_quests"] = { 61948 },	-- Airborne Defense Force
 					}),
 				}),
 				ach(14870, {	-- Creepy Critters  -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
 						["coord"] = { 39.8, 52.4, 1525 },
 						["cr"] = 173315,	-- Sylla
-						["_quests"] = { 61883 },	-- Resilient Survivors
 					}),
 					crit(2,  {	-- Eyegor
 						["coord"] = { 67.6, 66.0, 1525 },
 						["cr"] = 173324,	-- Eyegor
-						["_quests"] = { 61885 },	-- Eyegor's Special Friends
 					}),
 					crit(3,  {	-- Addius the Tormentor
 						["coord"] = { 61.2, 41.0, 1525 },
 						["cr"] = 173331,	-- Addius the Tormentor
-						["_quests"] = { 61886 },	-- The Mind Games of Addius
 					}),
 					crit(4,  {	-- Rotgut
 						["coord"] = { 34.0, 55.2, 1536 },
 						["cr"] = 173263,	-- Rotgut
-						["_quests"] = { 61867 },	-- Extra Pieces
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
 						["coord"] = { 63.2, 46.8, 1536 },
 						["cr"] = 173267,	-- Dundley Stickyfingers
-						["_quests"] = { 61868 },	-- Uncomfortably Undercover
 					}),
 					crit(6,  {	-- Caregiver Maximillian
 						["coord"] = { 46.8, 50.0, 1536 },
 						["cr"] = 173257,	-- Caregiver Maximillian
-						["_quests"] = { 61866 },	-- Mighty Minions of Maldraxxus
 					}),
 					crit(7,  {	-- Zolla
 						["coord"] = { 51.4, 38.2, 1533 },
 						["cr"] = 173130,	-- Zolla
-						["_quests"] = { 61787 },	-- Micro Defense Force
 					}),
 					crit(8,  {	-- Thenia
 						["coord"] = { 54.6, 56.0, 1533 },
 						["cr"] = 173129,	-- Thenia
-						["_quests"] = { 61791 },	-- Thenia's Loyal Companions
 					}),
 					crit(9,  {	-- Stratios
 						["coord"] = { 34.8, 62.8, 1533 },
 						["cr"] = 173131,	-- Stratios
-						["_quests"] = { 61784 },	-- Cliffs of Bastion
 					}),
 					crit(10, {	-- Glitterdust
 						["coord"] = { 58.2, 56.8, 1565 },
 						["cr"] = 173372,	-- Glitterdust
-						["_quests"] = { 61946 },	-- Natural Defenders
 					}),
 					crit(11, {	-- Faryl
 						["coord"] = { 51.2, 44.2, 1565 },
 						["cr"] = 173377,	-- Faryl
-						["_quests"] = { 61948 },	-- Airborne Defense Force
 					}),
 				}),
 				ach(14871, {	-- Deathly Dragonkin -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
 						["coord"] = { 39.8, 52.4, 1525 },
 						["cr"] = 173315,	-- Sylla
-						["_quests"] = { 61883 },	-- Resilient Survivors
 					}),
 					crit(2,  {	-- Eyegor
 						["coord"] = { 67.6, 66.0, 1525 },
 						["cr"] = 173324,	-- Eyegor
-						["_quests"] = { 61885 },	-- Eyegor's Special Friends
 					}),
 					crit(3,  {	-- Addius the Tormentor
 						["coord"] = { 61.2, 41.0, 1525 },
 						["cr"] = 173331,	-- Addius the Tormentor
-						["_quests"] = { 61886 },	-- The Mind Games of Addius
 					}),
 					crit(4,  {	-- Rotgut
 						["coord"] = { 34.0, 55.2, 1536 },
 						["cr"] = 173263,	-- Rotgut
-						["_quests"] = { 61867 },	-- Extra Pieces
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
 						["coord"] = { 63.2, 46.8, 1536 },
 						["cr"] = 173267,	-- Dundley Stickyfingers
-						["_quests"] = { 61868 },	-- Uncomfortably Undercover
 					}),
 					crit(6,  {	-- Caregiver Maximillian
 						["coord"] = { 46.8, 50.0, 1536 },
 						["cr"] = 173257,	-- Caregiver Maximillian
-						["_quests"] = { 61866 },	-- Mighty Minions of Maldraxxus
 					}),
 					crit(7,  {	-- Zolla
 						["coord"] = { 51.4, 38.2, 1533 },
 						["cr"] = 173130,	-- Zolla
-						["_quests"] = { 61787 },	-- Micro Defense Force
 					}),
 					crit(8,  {	-- Thenia
 						["coord"] = { 54.6, 56.0, 1533 },
 						["cr"] = 173129,	-- Thenia
-						["_quests"] = { 61791 },	-- Thenia's Loyal Companions
 					}),
 					crit(9,  {	-- Stratios
 						["coord"] = { 34.8, 62.8, 1533 },
 						["cr"] = 173131,	-- Stratios
-						["_quests"] = { 61784 },	-- Cliffs of Bastion
 					}),
 					crit(10, {	-- Glitterdust
 						["coord"] = { 58.2, 56.8, 1565 },
 						["cr"] = 173372,	-- Glitterdust
-						["_quests"] = { 61946 },	-- Natural Defenders
 					}),
 					crit(11, {	-- Faryl
 						["coord"] = { 51.2, 44.2, 1565 },
 						["cr"] = 173377,	-- Faryl
-						["_quests"] = { 61948 },	-- Airborne Defense Force
 					}),
 				}),
 				ach(14872, {	-- Eerie Elementals -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
 						["coord"] = { 39.8, 52.4, 1525 },
 						["cr"] = 173315,	-- Sylla
-						["_quests"] = { 61883 },	-- Resilient Survivors
 					}),
 					crit(2,  {	-- Eyegor
 						["coord"] = { 67.6, 66.0, 1525 },
 						["cr"] = 173324,	-- Eyegor
-						["_quests"] = { 61885 },	-- Eyegor's Special Friends
 					}),
 					crit(3,  {	-- Addius the Tormentor
 						["coord"] = { 61.2, 41.0, 1525 },
 						["cr"] = 173331,	-- Addius the Tormentor
-						["_quests"] = { 61886 },	-- The Mind Games of Addius
 					}),
 					crit(4,  {	-- Rotgut
 						["coord"] = { 34.0, 55.2, 1536 },
 						["cr"] = 173263,	-- Rotgut
-						["_quests"] = { 61867 },	-- Extra Pieces
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
 						["coord"] = { 63.2, 46.8, 1536 },
 						["cr"] = 173267,	-- Dundley Stickyfingers
-						["_quests"] = { 61868 },	-- Uncomfortably Undercover
 					}),
 					crit(6,  {	-- Caregiver Maximillian
 						["coord"] = { 46.8, 50.0, 1536 },
 						["cr"] = 173257,	-- Caregiver Maximillian
-						["_quests"] = { 61866 },	-- Mighty Minions of Maldraxxus
 					}),
 					crit(7,  {	-- Zolla
 						["coord"] = { 51.4, 38.2, 1533 },
 						["cr"] = 173130,	-- Zolla
-						["_quests"] = { 61787 },	-- Micro Defense Force
 					}),
 					crit(8,  {	-- Thenia
 						["coord"] = { 54.6, 56.0, 1533 },
 						["cr"] = 173129,	-- Thenia
-						["_quests"] = { 61791 },	-- Thenia's Loyal Companions
 					}),
 					crit(9,  {	-- Stratios
 						["coord"] = { 34.8, 62.8, 1533 },
 						["cr"] = 173131,	-- Stratios
-						["_quests"] = { 61784 },	-- Cliffs of Bastion
 					}),
 					crit(10, {	-- Glitterdust
 						["coord"] = { 58.2, 56.8, 1565 },
 						["cr"] = 173372,	-- Glitterdust
-						["_quests"] = { 61946 },	-- Natural Defenders
 					}),
 					crit(11, {	-- Faryl
 						["coord"] = { 51.2, 44.2, 1565 },
 						["cr"] = 173377,	-- Faryl
-						["_quests"] = { 61948 },	-- Airborne Defense Force
 					}),
 				}),
 				ach(14873, {	-- Flickering Fliers -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
 						["coord"] = { 39.8, 52.4, 1525 },
 						["cr"] = 173315,	-- Sylla
-						["_quests"] = { 61883 },	-- Resilient Survivors
 					}),
 					crit(2,  {	-- Eyegor
 						["coord"] = { 67.6, 66.0, 1525 },
 						["cr"] = 173324,	-- Eyegor
-						["_quests"] = { 61885 },	-- Eyegor's Special Friends
 					}),
 					crit(3,  {	-- Addius the Tormentor
 						["coord"] = { 61.2, 41.0, 1525 },
 						["cr"] = 173331,	-- Addius the Tormentor
-						["_quests"] = { 61886 },	-- The Mind Games of Addius
 					}),
 					crit(4,  {	-- Rotgut
 						["coord"] = { 34.0, 55.2, 1536 },
 						["cr"] = 173263,	-- Rotgut
-						["_quests"] = { 61867 },	-- Extra Pieces
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
 						["coord"] = { 63.2, 46.8, 1536 },
 						["cr"] = 173267,	-- Dundley Stickyfingers
-						["_quests"] = { 61868 },	-- Uncomfortably Undercover
 					}),
 					crit(6,  {	-- Caregiver Maximillian
 						["coord"] = { 46.8, 50.0, 1536 },
 						["cr"] = 173257,	-- Caregiver Maximillian
-						["_quests"] = { 61866 },	-- Mighty Minions of Maldraxxus
 					}),
 					crit(7,  {	-- Zolla
 						["coord"] = { 51.4, 38.2, 1533 },
 						["cr"] = 173130,	-- Zolla
-						["_quests"] = { 61787 },	-- Micro Defense Force
 					}),
 					crit(8,  {	-- Thenia
 						["coord"] = { 54.6, 56.0, 1533 },
 						["cr"] = 173129,	-- Thenia
-						["_quests"] = { 61791 },	-- Thenia's Loyal Companions
 					}),
 					crit(9,  {	-- Stratios
 						["coord"] = { 34.8, 62.8, 1533 },
 						["cr"] = 173131,	-- Stratios
-						["_quests"] = { 61784 },	-- Cliffs of Bastion
 					}),
 					crit(10, {	-- Glitterdust
 						["coord"] = { 58.2, 56.8, 1565 },
 						["cr"] = 173372,	-- Glitterdust
-						["_quests"] = { 61946 },	-- Natural Defenders
 					}),
 					crit(11, {	-- Faryl
 						["coord"] = { 51.2, 44.2, 1565 },
 						["cr"] = 173377,	-- Faryl
-						["_quests"] = { 61948 },	-- Airborne Defense Force
 					}),
 				}),
 				ach(14874, {	-- Haunted Humanoids -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
 						["coord"] = { 39.8, 52.4, 1525 },
 						["cr"] = 173315,	-- Sylla
-						["_quests"] = { 61883 },	-- Resilient Survivors
 					}),
 					crit(2,  {	-- Eyegor
 						["coord"] = { 67.6, 66.0, 1525 },
 						["cr"] = 173324,	-- Eyegor
-						["_quests"] = { 61885 },	-- Eyegor's Special Friends
 					}),
 					crit(3,  {	-- Addius the Tormentor
 						["coord"] = { 61.2, 41.0, 1525 },
 						["cr"] = 173331,	-- Addius the Tormentor
-						["_quests"] = { 61886 },	-- The Mind Games of Addius
 					}),
 					crit(4,  {	-- Rotgut
 						["coord"] = { 34.0, 55.2, 1536 },
 						["cr"] = 173263,	-- Rotgut
-						["_quests"] = { 61867 },	-- Extra Pieces
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
 						["coord"] = { 63.2, 46.8, 1536 },
 						["cr"] = 173267,	-- Dundley Stickyfingers
-						["_quests"] = { 61868 },	-- Uncomfortably Undercover
 					}),
 					crit(6,  {	-- Caregiver Maximillian
 						["coord"] = { 46.8, 50.0, 1536 },
 						["cr"] = 173257,	-- Caregiver Maximillian
-						["_quests"] = { 61866 },	-- Mighty Minions of Maldraxxus
 					}),
 					crit(7,  {	-- Zolla
 						["coord"] = { 51.4, 38.2, 1533 },
 						["cr"] = 173130,	-- Zolla
-						["_quests"] = { 61787 },	-- Micro Defense Force
 					}),
 					crit(8,  {	-- Thenia
 						["coord"] = { 54.6, 56.0, 1533 },
 						["cr"] = 173129,	-- Thenia
-						["_quests"] = { 61791 },	-- Thenia's Loyal Companions
 					}),
 					crit(9,  {	-- Stratios
 						["coord"] = { 34.8, 62.8, 1533 },
 						["cr"] = 173131,	-- Stratios
-						["_quests"] = { 61784 },	-- Cliffs of Bastion
 					}),
 					crit(10, {	-- Glitterdust
 						["coord"] = { 58.2, 56.8, 1565 },
 						["cr"] = 173372,	-- Glitterdust
-						["_quests"] = { 61946 },	-- Natural Defenders
 					}),
 					crit(11, {	-- Faryl
 						["coord"] = { 51.2, 44.2, 1565 },
 						["cr"] = 173377,	-- Faryl
-						["_quests"] = { 61948 },	-- Airborne Defense Force
 					}),
 				}),
 				ach(14875, {	-- Mummified Magics -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
 						["coord"] = { 39.8, 52.4, 1525 },
 						["cr"] = 173315,	-- Sylla
-						["_quests"] = { 61883 },	-- Resilient Survivors
 					}),
 					crit(2,  {	-- Eyegor
 						["coord"] = { 67.6, 66.0, 1525 },
 						["cr"] = 173324,	-- Eyegor
-						["_quests"] = { 61885 },	-- Eyegor's Special Friends
 					}),
 					crit(3,  {	-- Addius the Tormentor
 						["coord"] = { 61.2, 41.0, 1525 },
 						["cr"] = 173331,	-- Addius the Tormentor
-						["_quests"] = { 61886 },	-- The Mind Games of Addius
 					}),
 					crit(4,  {	-- Rotgut
 						["coord"] = { 34.0, 55.2, 1536 },
 						["cr"] = 173263,	-- Rotgut
-						["_quests"] = { 61867 },	-- Extra Pieces
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
 						["coord"] = { 63.2, 46.8, 1536 },
 						["cr"] = 173267,	-- Dundley Stickyfingers
-						["_quests"] = { 61868 },	-- Uncomfortably Undercover
 					}),
 					crit(6,  {	-- Caregiver Maximillian
 						["coord"] = { 46.8, 50.0, 1536 },
 						["cr"] = 173257,	-- Caregiver Maximillian
-						["_quests"] = { 61866 },	-- Mighty Minions of Maldraxxus
 					}),
 					crit(7,  {	-- Zolla
 						["coord"] = { 51.4, 38.2, 1533 },
 						["cr"] = 173130,	-- Zolla
-						["_quests"] = { 61787 },	-- Micro Defense Force
 					}),
 					crit(8,  {	-- Thenia
 						["coord"] = { 54.6, 56.0, 1533 },
 						["cr"] = 173129,	-- Thenia
-						["_quests"] = { 61791 },	-- Thenia's Loyal Companions
 					}),
 					crit(9,  {	-- Stratios
 						["coord"] = { 34.8, 62.8, 1533 },
 						["cr"] = 173131,	-- Stratios
-						["_quests"] = { 61784 },	-- Cliffs of Bastion
 					}),
 					crit(10, {	-- Glitterdust
 						["coord"] = { 58.2, 56.8, 1565 },
 						["cr"] = 173372,	-- Glitterdust
-						["_quests"] = { 61946 },	-- Natural Defenders
 					}),
 					crit(11, {	-- Faryl
 						["coord"] = { 51.2, 44.2, 1565 },
 						["cr"] = 173377,	-- Faryl
-						["_quests"] = { 61948 },	-- Airborne Defense Force
 					}),
 				}),
 				ach(14876, {	-- Macabre Mechanicals -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
 						["coord"] = { 39.8, 52.4, 1525 },
 						["cr"] = 173315,	-- Sylla
-						["_quests"] = { 61883 },	-- Resilient Survivors
 					}),
 					crit(2,  {	-- Eyegor
 						["coord"] = { 67.6, 66.0, 1525 },
 						["cr"] = 173324,	-- Eyegor
-						["_quests"] = { 61885 },	-- Eyegor's Special Friends
 					}),
 					crit(3,  {	-- Addius the Tormentor
 						["coord"] = { 61.2, 41.0, 1525 },
 						["cr"] = 173331,	-- Addius the Tormentor
-						["_quests"] = { 61886 },	-- The Mind Games of Addius
 					}),
 					crit(4,  {	-- Rotgut
 						["coord"] = { 34.0, 55.2, 1536 },
 						["cr"] = 173263,	-- Rotgut
-						["_quests"] = { 61867 },	-- Extra Pieces
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
 						["coord"] = { 63.2, 46.8, 1536 },
 						["cr"] = 173267,	-- Dundley Stickyfingers
-						["_quests"] = { 61868 },	-- Uncomfortably Undercover
 					}),
 					crit(6,  {	-- Caregiver Maximillian
 						["coord"] = { 46.8, 50.0, 1536 },
 						["cr"] = 173257,	-- Caregiver Maximillian
-						["_quests"] = { 61866 },	-- Mighty Minions of Maldraxxus
 					}),
 					crit(7,  {	-- Zolla
 						["coord"] = { 51.4, 38.2, 1533 },
 						["cr"] = 173130,	-- Zolla
-						["_quests"] = { 61787 },	-- Micro Defense Force
 					}),
 					crit(8,  {	-- Thenia
 						["coord"] = { 54.6, 56.0, 1533 },
 						["cr"] = 173129,	-- Thenia
-						["_quests"] = { 61791 },	-- Thenia's Loyal Companions
 					}),
 					crit(9,  {	-- Stratios
 						["coord"] = { 34.8, 62.8, 1533 },
 						["cr"] = 173131,	-- Stratios
-						["_quests"] = { 61784 },	-- Cliffs of Bastion
 					}),
 					crit(10, {	-- Glitterdust
 						["coord"] = { 58.2, 56.8, 1565 },
 						["cr"] = 173372,	-- Glitterdust
-						["_quests"] = { 61946 },	-- Natural Defenders
 					}),
 					crit(11, {	-- Faryl
 						["coord"] = { 51.2, 44.2, 1565 },
 						["cr"] = 173377,	-- Faryl
-						["_quests"] = { 61948 },	-- Airborne Defense Force
 					}),
 				}),
 				ach(14877, {	-- Unholy Undead -- TODO: copy to zones achiev files.
 					crit(1,  {	-- Sylla
 						["coord"] = { 39.8, 52.4, 1525 },
 						["cr"] = 173315,	-- Sylla
-						["_quests"] = { 61883 },	-- Resilient Survivors
 					}),
 					crit(2,  {	-- Eyegor
 						["coord"] = { 67.6, 66.0, 1525 },
 						["cr"] = 173324,	-- Eyegor
-						["_quests"] = { 61885 },	-- Eyegor's Special Friends
 					}),
 					crit(3,  {	-- Addius the Tormentor
 						["coord"] = { 61.2, 41.0, 1525 },
 						["cr"] = 173331,	-- Addius the Tormentor
-						["_quests"] = { 61886 },	-- The Mind Games of Addius
 					}),
 					crit(4,  {	-- Rotgut
 						["coord"] = { 34.0, 55.2, 1536 },
 						["cr"] = 173263,	-- Rotgut
-						["_quests"] = { 61867 },	-- Extra Pieces
 					}),
 					crit(5,  {	-- Dundley Stickyfingers
 						["coord"] = { 63.2, 46.8, 1536 },
 						["cr"] = 173267,	-- Dundley Stickyfingers
-						["_quests"] = { 61868 },	-- Uncomfortably Undercover
 					}),
 					crit(6,  {	-- Caregiver Maximillian
 						["coord"] = { 46.8, 50.0, 1536 },
 						["cr"] = 173257,	-- Caregiver Maximillian
-						["_quests"] = { 61866 },	-- Mighty Minions of Maldraxxus
 					}),
 					crit(7,  {	-- Zolla
 						["coord"] = { 51.4, 38.2, 1533 },
 						["cr"] = 173130,	-- Zolla
-						["_quests"] = { 61787 },	-- Micro Defense Force
 					}),
 					crit(8,  {	-- Thenia
 						["coord"] = { 54.6, 56.0, 1533 },
 						["cr"] = 173129,	-- Thenia
-						["_quests"] = { 61791 },	-- Thenia's Loyal Companions
 					}),
 					crit(9,  {	-- Stratios
 						["coord"] = { 34.8, 62.8, 1533 },
 						["cr"] = 173131,	-- Stratios
-						["_quests"] = { 61784 },	-- Cliffs of Bastion
 					}),
 					crit(10, {	-- Glitterdust
 						["coord"] = { 58.2, 56.8, 1565 },
 						["cr"] = 173372,	-- Glitterdust
-						["_quests"] = { 61946 },	-- Natural Defenders
 					}),
 					crit(11, {	-- Faryl
 						["coord"] = { 51.2, 44.2, 1565 },
 						["cr"] = 173377,	-- Faryl
-						["_quests"] = { 61948 },	-- Airborne Defense Force
 					}),
 				}),
 			}),
