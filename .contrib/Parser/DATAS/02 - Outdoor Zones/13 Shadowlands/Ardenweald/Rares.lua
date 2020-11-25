@@ -12,7 +12,6 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(12)),	-- Adventurer of Ardenweald / Astra, As Azshara <An Infamous Queen>
 					},
 				}),
 				n(164477, {	-- Deathbinder Hroth
@@ -37,7 +36,6 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(17)),	-- Adventurer of Ardenweald / Dreamweaver, As N'Zoth <An Eldritch Abomination>
 					},
 				}),
 				n(163229, {	-- Dustbrawl
@@ -45,7 +43,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(24)),	-- Adventurer of Ardenweald / Dustbrawl
+						ach(14309, crit(17)),	-- Adventurer of Ardenweald / Dustbrawl (crit 18 is also Dustbrawl, why??)
 					},
 				}),
 				n(167851, {	-- Egg-Tender Leh'go
@@ -53,7 +51,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(20)),	-- Adventurer of Ardenweald / Egg-Tender Leh'go
+						ach(14309, crit(13)),	-- Adventurer of Ardenweald / Egg-Tender Leh'go
 					},
 				}),
 				n(171688, {	-- Faeflayer
@@ -61,7 +59,6 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(28)),	-- Adventurer of Ardenweald / Faeflayer
 					},
 				}),
 				n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
@@ -69,7 +66,6 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(16)),	-- Adventurer of Ardenweald / Glimmerdust, As Jaina <A Magic Ice Princess>
 					},
 				}),
 				n(166139, {	-- Glimmerdust, As Kil'jaeden <of The Burning Legion>
@@ -77,7 +73,6 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(14)),	-- Adventurer of Ardenweald / Glimmerdust, As Kil'jaeden <of The Burning Legion>
 					},
 				}),
 				n(163370, {	-- Gormbore
@@ -85,7 +80,6 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(25)),	-- Adventurer of Ardenweald / Gormbore
 						i(183196),	-- Lavender Nibbler
 					},
 				}),
@@ -101,7 +95,7 @@ _.Zones =
 				}),
 				n(164112, {	-- Humon'gozz
 					["coord"] = { 32.6, 31.0, 1565 },
-					--["questID"] = ,
+					["questID"] = 59157,
 					["isDaily"] = true,
 					["g"] = {
 						i(182650),	-- Arboreal Gulper
@@ -130,7 +124,6 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(13)),	-- Adventurer of Ardenweald / Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
 					},
 				}),
 				n(165053, {	-- Mymaen
@@ -156,7 +149,7 @@ _.Zones =
 					["description"] = "|cFFA330C9Night Fae Covenant|r only. Requires Dream Catcher.",
 					["g"] = {
 						i(180728),				-- Swift Gloomhoof
-						ach(14309, crit(23)),	-- Adventurer of Ardenweald / Night Mare
+						ach(14309, crit(16)),	-- Adventurer of Ardenweald / Night Mare
 						i(181243, {			-- Broken Soulweb
 							["coord"] = { 19.67, 63.47, 1565 },
 							["description"] = "West of Thirna Scithe on Ardenweald there is a platform with a broken cart on it. Loot the Cracked Soulweb Object next to it to receive the Broken Soulweb.",
@@ -195,7 +188,6 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(18)),	-- Adventurer of Ardenweald / Niya, As Xavius <Some Kind of Evil Sylvar>
 					},
 				}),
 				n(164391, {	-- Old Ardeite
@@ -212,7 +204,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(21)),	-- Adventurer of Ardenweald / Rootwrithe
+						ach(14309, crit(14)),	-- Adventurer of Ardenweald / Rootwrithe
 					},
 				}),
 				n(167724, {	-- Rotbriar Changeling
@@ -220,7 +212,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(19)),	-- Adventurer of Ardenweald / Rotbriar Changeling
+						ach(14309, crit(12)),	-- Adventurer of Ardenweald / Rotbriar Changeling
 					},
 				}),
 				n(166140, {	-- Senthii, As Gul'dan <From an Alternate Timeline>
@@ -228,7 +220,6 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(15)),	-- Adventurer of Ardenweald / Senthii, As Gul'dan <From an Alternate Timeline>
 					},
 				}),
 				n(171699, {	-- Shimmermist Runner
@@ -260,7 +251,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(27)),	-- Adventurer of Ardenweald / Soultwister Cero
+						ach(14309, crit(20)),	-- Adventurer of Ardenweald / Soultwister Cero (crit 21 is also Soultwister Cero, why??)
 						i(180164),	-- Soultwister's Scythe
 					},
 				}),
@@ -269,7 +260,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(22)),	-- Adventurer of Ardenweald / The Slumbering Emperor
+						ach(14309, crit(15)),	-- Adventurer of Ardenweald / The Slumbering Emperor
 					},
 				}),
 				n(168647, {	-- Valfir the Unrelenting
@@ -279,7 +270,7 @@ _.Zones =
 					["description"] = "Requires a |cFFA330C9Night Fae Covenant|r to remove the Veil. The Anima Conductor needs to channel anima to Tirna Scithe. Afterwards you can loot the Animaseed Light at the boss to remove the Veil.",
 					["g"] = {
 						i(180730),	-- Wild Glimmerfur Prowler
-						ach(14309, crit(26)),	-- Adventurer of Ardenweald / Valfir the Unrelenting
+						ach(14309, crit(19)),	-- Adventurer of Ardenweald / Valfir the Unrelenting
 					},
 				}),
 				n(164147, {	-- Wrigglemortis
