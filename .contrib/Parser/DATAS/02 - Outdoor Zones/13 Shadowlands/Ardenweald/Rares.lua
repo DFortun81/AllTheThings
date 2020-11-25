@@ -261,6 +261,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14309, crit(27)),	-- Adventurer of Ardenweald / Soultwister Cero
+						i(180164),	-- Soultwister's Scythe
 					},
 				}),
 				n(167721, {	-- The Slumbering Emperor

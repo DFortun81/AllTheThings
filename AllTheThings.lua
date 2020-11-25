@@ -871,7 +871,7 @@ local function GetProgressTextRemaining(progress, total)
 end
 local function GetProgressPercent(progress, total)
 	local percent = (progress or 0) / total;
-	return percent, app.Settings:GetTooltipSetting("Show:Percentage") 
+	return percent, app.Settings:GetTooltipSetting("Show:Percentage")
 		and (" (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%)");
 end
 local function GetProgressColor(p)
@@ -8710,12 +8710,12 @@ UpdateGroup = function(parent, group, defaultVisibility)
 				group.progress = 0;
 				group.total = 0;
 			end
-			
+
 			-- If the 'can equip' filter says true
 			if app.GroupFilter(group) then
 				-- Update the subgroups recursively
 				UpdateGroups(group, group.g, defaultVisibility);
-				
+
 				-- increment the parent group's stats
 				parent.total = (parent.total or 0) + group.total;
 				parent.progress = (parent.progress or 0) + group.progress;
@@ -11224,7 +11224,7 @@ function app:GetDataCache()
 		if app.Categories.ExpansionFeatures then
 			db = {};
 			db.g = app.Categories.ExpansionFeatures;
-			db.lvl = 26;	-- used to be 67 pre-scale
+			db.lvl = 10;
 			db.expanded = false;
 			db.text = GetCategoryInfo(15301);
 			db.icon = "Interface\\Addons\\AllTheThings\\assets\\xpacf";

@@ -9,12 +9,10 @@ _.ExpansionFeatures =
 			["classes"] = { WARLOCK },
 			["mapID"] = 717,	-- Dreadscar Rift (Warlock)
 			["maps"] = { 718 },	-- Dreadscar Rift (scenario version at the beginning of class campaign)
-			["lvl"] = 98,
 			["g"] = {
 				gt(366, {	-- Demonic Offering Class Hall Ability
 					["description"] = "This class hall ability allows you and two other members to summon a demon that you must kill. As part of the ritual, one of your party members (or you) will be sacrificed, so make sure to Soulstone yourself prior to summoning. Upon killing them they have a chance of dropping these items. This also has a chance to drop the destruction Hidden Appearance item.",
 					["questID"] = 42481,	-- Daily Quest
-					["lvl"] = 105,
 					["crs"] = {
 						112385,	-- Argothel
 						112380,	-- Balzorok
@@ -67,14 +65,12 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 43984 },	-- The Tome Opens Again
 						["classes"] = { WARLOCK },
 						["coord"] = { 37.6, 31.9, 717 },
-						["lvl"] = 102,
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(41759, {	-- An Unlikely Ally
 						["sourceQuests"] = { 42097 },	-- Searching the Archives
 						["classes"] = { WARLOCK },
 						["coord"] = { 65.9, 47.0, 717 },
-						["lvl"] = 103,
 						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 					}),
 					q(45989, {	-- An Urgent Warning
@@ -84,7 +80,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
 						["classes"] = { WARLOCK },
 						["coord"] = { 37.6, 31.8, 717 },
-						["lvl"] = 101,
 						["provider"] = { "n", 101097 },	-- Calydus
 						["g"] = {
 							follower(616),	-- Calydus
@@ -94,7 +89,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
 						["classes"] = { WARLOCK },
 						["coord"] = { 65.4, 47.3, 717 },
-						["lvl"] = 101,
 						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 						["g"] = {
 							follower(589),	-- Ritssyn Flamescowl
@@ -104,7 +98,6 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 40588,	-- Following the Curse
 						["classes"] = { WARLOCK },
 						["coord"] = { 52.3, 34.5, 42 },
-						["lvl"] = 98,
 						["provider"] = { "n", 100729 },	-- Revil Kost
 						["maps"] = { 42 },	-- Deadwind Pass
 					}),
@@ -116,7 +109,6 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { WARLOCK },
 						["coord"] = { 37.7, 31.8, 717 },
-						["lvl"] = 98,
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(40588, {	-- Following the Curse
@@ -124,7 +116,6 @@ _.ExpansionFeatures =
 						["classes"] = { WARLOCK },
 						["coord"] = { 77.4, 36.1, 47 },
 						["provider"] = { "n", 100323 },	-- Revil Kost
-						["lvl"] = 98,
 						["maps"] = { 47 }	-- Duskwood
 					}),
 					q(46150, {	-- Furthering Knowledge
@@ -144,7 +135,6 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { WARLOCK },
 						["coord"] = { 66.3, 46.2, 717 },
-						["lvl"] = 101,
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 					}),
 					q(45990, {	-- Investigate the Broken Shore
@@ -157,21 +147,18 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
 						["classes"] = { WARLOCK },
 						["coord"] = { 37.7, 31.8, 717 },
-						["lvl"] = 98,
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(41797, {	-- Recruiting The Troops
 						["sourceQuests"] = { 42603 },	-- Information at Any Cost
 						["classes"] = { WARLOCK },
 						["coord"] = { 66.3, 46.2, 717 },
-						["lvl"] = 101,
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 					}),
 					q(42608, {	-- Rise, Champions
 						["sourceQuests"] = { 44099 },	-- A Mutual Friend
 						["classes"] = { WARLOCK },
 						["coord"] = { 37.6, 31.8, 717 },
-						["lvl"] = 101,
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(42128, {	-- Ritual Reagents
@@ -182,28 +169,24 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { WARLOCK },
 						["coord"] = { 37.7, 31.8, 717 },
-						["lvl"] = 98,
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(42097, {	-- Searching the Archives
 						["sourceQuests"] = { 42601 },	-- Tech It Up A Notch
 						["classes"] = { WARLOCK },
 						["coord"] = { 65.6, 47.2, 717 },
-						["lvl"] = 101,
 						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 					}),
 					q(42601, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 42602 },	-- Troops in the Field
 						["classes"] = { WARLOCK },
 						["coord"] = { 66.3, 46.2, 717 },
-						["lvl"] = 101,
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 					}),
 					q(40623, {	-- The Dark Riders
 						["sourceQuests"] = { 40611 },	-- The Fate of Deadwind
 						["classes"] = { WARLOCK },
 						["coord"] = { 49.4, 74.8, 42 },
-						["lvl"] = 98,
 						["provider"] = { "n", 100812 },	-- Revil Kost
 						["maps"] = { 42 },	-- Deadwind Pass
 						["altQuests"] = { 41155 },	-- The Dark Riders
@@ -212,7 +195,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40606 },	-- To Point the Way
 						["classes"] = { WARLOCK },
 						["coord"] = { 52.3, 34.4, 42 },
-						["lvl"] = 98,
 						["provider"] = { "n", 100729 },	-- Revil Kost
 						["maps"] = { 42 },	-- Deadwind Pass
 						["altQuests"] = { 41154 },
@@ -225,7 +207,6 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { WARLOCK },
 						["coord"] = { 56.4, 65.0, 628 },
-						["lvl"] = 98,
 						["provider"] = { "n", 101097 },	-- Calydus
 						["maps"] = { 628 },	-- Dalaran, Broken Isles
 					}),
@@ -233,7 +214,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40823 },	-- Rebuilding the Council
 						["classes"] = { WARLOCK },
 						["coord"] = { 31.2, 58.8, 717 },
-						["lvl"] = 98,
 						["provider"] = { "n", 101921 },	-- Ritssyn Flamescowl
 					}),
 					q(43984, {	-- The Tome Opens Again
@@ -243,7 +223,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40604 },	-- Disturbing the Past
 						["classes"] = { WARLOCK },
 						["coord"] = { 52.3, 33.9, 42 },
-						["lvl"] = 98,
 						["icon"] = "Interface\\Icons\\inv_offhand_1h_draenorcrafted_d_02a",
 						["maps"] = { 42 },	-- Deadwind Pass
 					}),
@@ -255,7 +234,6 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { WARLOCK },
 						["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
-						["lvl"] = 98,
 						["provider"] = { "n", 101282 },	-- Revil Kost
 						["altQuests"] = { 41156 },	-- The Power Possessed
 						["maps"] = { 46 },
@@ -264,7 +242,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41797 },	-- Recruiting The Troops
 						["classes"] = { WARLOCK },
 						["coord"] = { 66.3, 46.2, 717 },
-						["lvl"] = 101,
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 					}),
 					q(46940, {	-- Using Lost Knowledge
@@ -278,7 +255,6 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { WARLOCK },
 						["coord"] = { 37.7, 31.8, 717 },
-						["lvl"] = 98,
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 
@@ -290,7 +266,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = {  },	--
 						["classes"] = { WARLOCK },
 						["coord"] = { , , 717 },
-						["lvl"] = ,
 						["provider"] = { "n",  },	--
 					}),
 --]]
@@ -350,7 +325,6 @@ _.ExpansionFeatures =
 					q(44227),	-- Unleashing our Wrath
 					q(44682),	-- Unparalleled Power
 					q(46243, {	-- The Wrathsteed of Xoroth
-						["lvl"] = 110,
 						["classes"] = { WARLOCK },
 						["g"] = {
 							{ ["mountID"] = 232412 },	-- Netherlord's Chaotic Wrathsteed
