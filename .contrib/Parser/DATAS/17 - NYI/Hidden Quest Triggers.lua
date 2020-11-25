@@ -1098,8 +1098,8 @@ _.HiddenQuestTriggers =
 		q(41306),	-- The Fallen Lion. Triggers with regular "The Fallen Lion" 40517
 		q(33079),	-- Triggers with "Demons Among Us" 40593
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
-		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin (all classes?)
-		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin (all classes?)
+		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock (all classes?)
+		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock (all classes?)
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
 		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
@@ -1399,6 +1399,9 @@ _.HiddenQuestTriggers =
 		q(41360),	-- Warrior Order Hall - Stormheim Teleport learned in Valdisdall
 		q(44062),	-- Warrior Order Hall - Suramar Teleport learned in Meredil
 		q(44061),	-- Warrior Order Hall - Val'sharah Teleport learned in Loriathil
+
+		q(40686),	-- Warlock Order Hall - Affliction chosen first
+		q(40514),	-- Warlock Order Hall - Revil convinced
 
 		--	Artifact Appearances
 		q(43655),	-- Hidden Appearance unlocked (The Silver Hand?)
@@ -2943,6 +2946,7 @@ _.HiddenQuestTriggers =
 		--q(xxxxx),	-- Triggered after choosing Phalynx from Pelodis during Pride Or Unit quest
 		q(62167),	-- Triggered after killing Bookkeeper Mnemis along with 59022
 		q(62191),	-- Triggered after killing Cloudfeather Guardian
+		q(62192),	-- Triggered after killing Baedos along with 58648
 		q(62841),	-- Triggered after first time using Kyrian Bell buff item
 		q(58292),	-- looting Purians
 		q(58293),	-- placing first Purian in the bowl

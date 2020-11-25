@@ -100,6 +100,14 @@ _.ExpansionFeatures =
 							follower(589),	-- Ritssyn Flamescowl
 						},
 					}),
+					q(40604, {	-- Disturbing the Past
+						["sourceQuest"] = 40588,	-- Following the Curse
+						["classes"] = { WARLOCK },
+						["coord"] = { 52.3, 34.5, 42 },
+						["lvl"] = 98,
+						["provider"] = { "n", 100729 },	-- Revil Kost
+						["maps"] = { 42 },	-- Deadwind Pass
+					}),
 					q(43100, {	-- Finding the Scepter
 						["sourceQuests"] = {
 							40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
@@ -111,8 +119,20 @@ _.ExpansionFeatures =
 						["lvl"] = 98,
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
+					q(40588, {	-- Following the Curse
+						["sourceQuest"] = 40495,	-- Ulthalesh, the Deadwind Harvester
+						["classes"] = { WARLOCK },
+						["coord"] = { 77.4, 36.1, 47 },
+						["provider"] = { "n", 100323 },	-- Revil Kost
+						["lvl"] = 98,
+						["maps"] = { 47 }	-- Duskwood
+					}),
 					q(46150, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(44254, {	-- Gazing Into Oblivion
+						["sourceQuest"] = 40823,	-- Rebuilding the Council
+						--["races"] = HORDE_ONLY,
 					}),
 					q(43887, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
@@ -179,6 +199,36 @@ _.ExpansionFeatures =
 						["lvl"] = 101,
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 					}),
+					q(40623, {	-- The Dark Riders
+						["sourceQuests"] = { 40611 },	-- The Fate of Deadwind
+						["classes"] = { WARLOCK },
+						["coord"] = { 49.4, 74.8, 42 },
+						["lvl"] = 98,
+						["provider"] = { "n", 100812 },	-- Revil Kost
+						["maps"] = { 42 },	-- Deadwind Pass
+						["altQuests"] = { 41155 },	-- The Dark Riders
+					}),
+					q(40611, {	-- The Fate of Deadwind
+						["sourceQuests"] = { 40606 },	-- To Point the Way
+						["classes"] = { WARLOCK },
+						["coord"] = { 52.3, 34.4, 42 },
+						["lvl"] = 98,
+						["provider"] = { "n", 100729 },	-- Revil Kost
+						["maps"] = { 42 },	-- Deadwind Pass
+						["altQuests"] = { 41154 },
+					}),
+					q(40731, {	-- The Heart of the Dreadscar
+						["sourceQuests"] = {
+							40712,	-- The Power Possessed
+							41156,	-- The Power Possessed
+							42125,	-- Dark Whispers
+						},
+						["classes"] = { WARLOCK },
+						["coord"] = { 56.4, 65.0, 628 },
+						["lvl"] = 98,
+						["provider"] = { "n", 101097 },	-- Calydus
+						["maps"] = { 628 },	-- Dalaran, Broken Isles
+					}),
 					q(40824, {	-- The Path of the Dreadscar
 						["sourceQuests"] = { 40823 },	-- Rebuilding the Council
 						["classes"] = { WARLOCK },
@@ -188,6 +238,27 @@ _.ExpansionFeatures =
 					}),
 					q(43984, {	-- The Tome Opens Again
 						["provider"] = { "n", 101097 },	-- Calydus
+					}),
+					q(40606, {	-- To Point the Way
+						["sourceQuests"] = { 40604 },	-- Disturbing the Past
+						["classes"] = { WARLOCK },
+						["coord"] = { 52.3, 33.9, 42 },
+						["lvl"] = 98,
+						["icon"] = "Interface\\Icons\\inv_offhand_1h_draenorcrafted_d_02a",
+						["maps"] = { 42 },	-- Deadwind Pass
+					}),
+					q(40712, {	-- The Power Possessed
+						["sourceQuests"] = {
+							40623,	-- The Dark Riders
+							41155,	-- The Dark Riders
+							42168,	-- Looking into the Darkness
+						},
+						["classes"] = { WARLOCK },
+						["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
+						["lvl"] = 98,
+						["provider"] = { "n", 101282 },	-- Revil Kost
+						["altQuests"] = { 41156 },	-- The Power Possessed
+						["maps"] = { 46 },
 					}),
 					q(42602, {	-- Troops in the Field
 						["sourceQuests"] = { 41797 },	-- Recruiting The Troops
@@ -252,9 +323,6 @@ _.ExpansionFeatures =
 					q(46239),	-- Fel to the Core
 					q(41785),	-- Finding Fizzlebang
 					q(46784),	-- Further Advancement
-					q(44254, {	-- Gazing Into Oblivion
-						["races"] = HORDE_ONLY,
-					}),
 					q(46240),	-- Give Me Fuel, Give Me Fire
 					q(46238),	-- If You Build It
 					q(45794),	-- Informing the Council
@@ -270,13 +338,13 @@ _.ExpansionFeatures =
 					q(41796),	-- Selecting a Sixth
 					q(41768),	-- Soul Beacon
 					q(41795),	-- Summoning the Sisters
+					q(41155),	-- The Dark Riders
 					q(46242),	-- The Dreadlord's Calling
 					q(46241, {	-- The Minions of Hel'nurath
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(40729),	-- The New Blood
 					q(41156),	-- The Power Possessed
-					q(40712),	-- The Power Possessed
 					q(46243),	-- The Wrathsteed of Xoroth
 					q(45027),	-- To the Broken Shore
 					q(44227),	-- Unleashing our Wrath
