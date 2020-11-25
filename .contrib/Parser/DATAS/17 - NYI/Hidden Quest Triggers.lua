@@ -2949,6 +2949,19 @@ _.HiddenQuestTriggers =
 		q(58294),	-- placing second Purian in the bowl
 		q(62201),	-- triggers when killing Herculon, which drops Functioning Anima Core.  based on the fact that the questID for the core is 62200, i think this + 62202 are tracking chances at it dropping
 		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
+		q(60260),	-- Your Personal Assistant - choosing Ipa
+		q(60262),	-- Your Personal Assistant - choosing Ipa — shares appearance with Dintos + Minta, so possible each steward has its own questID and you get credit for all the ones that share its appearance?
+		q(60263),	-- Your Personal Assistant - choosing Ipa
+		--	more steward info: https://imgur.com/0tLgE13
+		--	if each one has its own questID but grants credit for all in the same shared appearances set, these are the sets that are missing:
+		--	Bumos / Ilapos / Asellia / Syla / Zenza
+		--	Abalus / Thima
+		--	Bola / Pico / Ipadipos / Chaermi
+		--	Gramilos / Apa / Dafi
+		--	Haka
+		--	Mupu / Deka / Laratis
+		--	Kimos / Toulis / Korinthe
+		--	Akiris / Isilios / Koukis / Tibo / Farra / Arathane
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)

@@ -32,12 +32,18 @@ _.Zones =
 					crit(4, {	-- Chasing a Memory
 						["sourceQuests"] = { 60013 },	-- Leave it to Mnemis
 					}),
-					crit(5, {	-- By the Archon's Will
-						["sourceQuests"] = { 59200 },	-- The Wards of Bastion
+					crit(5, {	-- Your Personal Assistant
+						["sourceQuests"] = { 59426 },	-- Your Personal Assistant
 					}),
-					crit(6, {	-- The Temple of Courage
+					crit(6, {	-- A Time for Courage
 						["sourceQuests"] = { 60055 },	-- A Time for Courage
 					}),
+					crit(7, {	-- A Land of Strife
+					--	["sourceQuests"] = {  },	-- 
+					}),
+				--	crit(5, {	-- By the Archon's Will	-- 	keeping this here for now in case the sq is the same for the changed criteria
+				--		["sourceQuests"] = { 59200 },	-- The Wards of Bastion
+				--	}),
 				}),
 				ach(14339, {	-- Shard Labor
 				--	https://www.wowhead.com/achievement=14339/shard-labor#comments
@@ -63,8 +69,8 @@ _.Zones =
 					}),
 					crit(5, {	-- Pride or Unit
 						["sourceQuests"] = {
-							58103,	-- Pride or Unit
-							60296,	-- Pride or Unit
+							60296,	-- Pride or Unit (Nemea - Larion)
+							58103,	-- Pride or Unit (Pelodis - Phalynx)
 						},
 					}),
 				}),
@@ -122,8 +128,8 @@ _.Zones =
 					}),
 					crit(6, {	-- Stolen Equipment
 						["objectID"] = 354208,	-- Stolen Equipment
-						["coord"] = { 40.5, 49.8, 1533 },
 						["questID"] = 61044,
+						["coord"] = { 40.5, 49.8, 1533 },
 						["g"] = {
 							i(182561),	-- Fallen Disciple's Cloak
 						},

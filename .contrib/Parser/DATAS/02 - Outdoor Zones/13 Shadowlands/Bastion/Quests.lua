@@ -115,6 +115,11 @@ _.Zones =
 					["provider"] = { "n", 158862 },	-- Kleia
 					["coord"] = { 53.5, 87.3, 1533 },
 				}),
+				q(58038, {	-- All Natural Chews
+					["sourceQuests"] = { 58037 },	-- Part of the Pride
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, 1533 },
+				}),
 				q(57444, {	-- An Inspired Moral Inventory
 					["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
 					["provider"] = { "n", 160647 },	-- Acolyte Galistos
@@ -149,6 +154,15 @@ _.Zones =
 					["provider"] = { "n", 156238 },	-- Kleia
 					["coord"] = { 53.8, 73.6, 1533 },
 				}),
+				q(60053, {	-- Clear as Crystal
+					["sourceQuests"] = {
+						60009,	-- Fight Another Day
+						60008,	-- Rip and Tear
+						60007,	-- Stay Scrappy
+					},
+					["provider"] = { "n", 167135 },	-- Mikanikos
+					["coord"] = { 40.7, 55.5, 1533 },
+				}),
 				q(57934, {	-- Combat Drills
 					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
 					["provider"] = { "n", 158765 },	-- Pelodis
@@ -181,6 +195,27 @@ _.Zones =
 					["sourceQuests"] = { 57529 },	-- Garden in Turmoil
 					["provider"] = { "n", 158004 },	-- Zosime
 					["coord"] = { 51.3, 59.6, 1533 },
+				}),
+				q(60052, {	-- Double Tap
+					["sourceQuests"] = {
+						60009,	-- Fight Another Day
+						60008,	-- Rip and Tear
+						60007,	-- Stay Scrappy
+					},
+					["provider"] = { "n", 167164 },	-- Thanikos
+				}),
+				q(60009, {	-- Fight Another Day
+					["sourceQuests"] = { 60006 },	-- Now or Never
+					["provider"] = { "n", 167269 },	-- Disciple Apolon
+					["coord"] = { 41.2, 54.2, 1533 },
+					["g"] = {
+						i(175718),	-- Ascended Defender's Crest
+					},
+				}),
+				q(60056, {	-- Follow the Path
+					["sourceQuests"] = { 60055 },	-- A Time for Courage
+					["provider"] = { "n", 167583 },	-- Disciple Apolon
+					["coord"] = { 40.9, 55.1, 1533 },
 				}),
 				q(57529, {	-- Garden in Turmoil
 				--	TODO: figure out SQs.  saw while on assessing your strength/stamina
@@ -222,10 +257,25 @@ _.Zones =
 						i(173315),	-- Judicious Aspirant's Helm
 					},
 				}),
+				q(60005, {	-- Imminent Danger
+					["sourceQuests"] = { 59200 },	-- The Wards of Bastion
+					["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+					["coord"] = { 55.5, 42.0, 1533 },
+				}),
 				q(57549, {	-- In Agthia's Memory
 				--	TODO: figure out SQ.  picked it up during "A Soulbind in Need" / "The Things That Haunt Us" when i took a detour to run up the hill to kill a rare that spawned.
 					["provider"] = { "n", 158078 },	-- Keeper Mnemis
 					["coord"] = { 46.9, 63.4, 1533 },
+				}),
+				q(59199, {	-- Kyrestia, the Firstborne
+					["sourceQuests"] = { 59198 },	-- On Swift Wings
+					["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+					["coord"] = { 55.5, 42.0, 1533 },
+				}),
+				q(58039, {	-- Larion at Large
+					["sourceQuests"] = { 58037 },	-- Part of the Pride
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, 1533 },
 				}),
 				q(57935, {	-- Laser Location
 					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
@@ -261,6 +311,46 @@ _.Zones =
 					["provider"] = { "n", 174900 },	-- Acolyte Amalthina
 					["coord"] = { 47.8, 73.2, 1533 },
 				}),
+				q(60057, {	-- Necrotic Wake: A Paragon's Plight
+					["sourceQuests"] = { 60055 },	-- A Time For Courage
+					["provider"] = { "n", 167584 },	-- Disciple Artemede
+					["coord"] = { 40.9, 55.3, 1533 },
+					["maps"] = { 1666 },	-- The Necrotic Wake
+					["g"] = {
+						i(184712),	-- Refulgent Raiment
+						i(184713),	-- Refulgent Cuirass
+						i(184714),	-- Refulgent Chestguard
+						i(184715),	-- Refulgent Tunic
+					},
+				}),
+				q(60006, {	-- Now or Never
+					["sourceQuests"] = { 60005 },	-- Imminent Danger
+					["provider"] = { "n", 167873 },	-- Thanikos
+					["coord"] = { 41.7, 55.1, 1533 },
+				}),
+				q(58042, {	-- On Larion Wings
+					["sourceQuests"] = {
+						58040,	-- With Lance and Larion
+						58041,	-- Providing for the Pack
+					},
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, 1533 },
+					["g"] = {
+						i(173333),	-- Pure Aspirant's Leggings
+						i(173335),	-- Courageous Aspirant's Breeches
+						i(173334),	-- Humble Aspirant's Leggings
+						i(173332),	-- Judicious Aspirant's Legguards
+					},
+				}),
+				q(59198, {	-- On Swift Wings
+					["sourceQuests"] = { 59197 },	-- Steward at Work
+					["provider"] = { "n", 165048 },	-- Polemarch Adrestes
+					["coord"] = { 52.8, 45.6, 1533 },
+					["g"] = {
+						i(173316),	-- Skyloom Cloak
+						i(175703),	-- Silverspire Signet
+					},
+				}),
 				q(57264, {	-- On The Edge of a Revelation
 					["sourceQuests"] = { 57270 },	-- The Temple of Purity
 					["provider"] = { "n", 157673 },	-- Disciple Kosmas
@@ -292,6 +382,30 @@ _.Zones =
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 54.7, 41.1, 1533 },
 				}),
+				q(60296, {	-- Pride or Unit (Nemea - Larion)
+					["sourceQuests"] = {	-- requires completion of both chains.  both quests are available, it's just which NPC you want to pick it up from/which one you're nearest
+						57937,	-- Tactical Formation
+						58042,	-- On Larion Wings
+					},
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, 1533 },
+				}),
+				q(58103, {	-- Pride or Unit (Pelodis - Phalynx)
+					["sourceQuests"] = {	-- requires completion of both chains.  both quests are available, it's just which NPC you want to pick it up from/which one you're nearest
+						57937,	-- Tactical Formation
+						58042,	-- On Larion Wings
+					},
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, 1533 },
+				}),
+				q(58041, {	-- Providing for the Pack
+					["sourceQuests"] = {
+						58038,	-- All Natural Chews
+						58039,	-- Larion at Large
+					},
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, 1533 },
+				}),
 				q(57447, {	-- Purity's Prerogative
 					["sourceQuests"] = { 57269 },	-- The Hand of Doubt
 					["provider"] = { "n", 157687 },	-- Vesiphone
@@ -305,6 +419,11 @@ _.Zones =
 					["provider"] = { "n", 159609 },	-- Hopo
 					["coord"] = { 54.7, 41.2, 1533 },
 				}),
+				q(60008, {	-- Rip and Tear
+					["sourceQuests"] = { 60006 },	-- Now or Never
+					["provider"] = { "n", 167134 },	-- Thanikos
+					["coord"] = { 40.5, 55.2, 1533 },
+				}),
 				q(57555, {	-- Shadow's Fall
 					["sourceQuests"] = {
 						57552,	-- Warriors of the Void
@@ -317,10 +436,25 @@ _.Zones =
 						i(175719),	-- Agitha's Void-Tinged Speartip
 					},
 				}),
+				q(60055, {	-- A Time for Courage
+					["sourceQuests"] = { 60054 },	-- The Final Countdown
+					["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+					["coord"] = { 55.5, 42.0, 1533 },
+				}),
+				q(60007, {	-- Stay Scrappy
+					["sourceQuests"] = { 60006 },	-- Now or Never
+					["provider"] = { "n", 167135 },	-- Mikanikos
+					["coord"] = { 40.7, 55.5, 1533 },
+				}),
 				q(57717, {	-- Step Back From That Ledge, My Friend
 					["sourceQuests"] = { 57716 },	-- A Wayward Disciple?
 					["provider"] = { "n", 159762 },	-- Eridia
 					["coord"] = { 54.1, 73.6, 1533 },
+				}),
+				q(59197, {	-- Steward at Work
+					["sourceQuests"] = { 59426 },	-- Your Personal Assistant
+					["provider"] = { "n", 165045 },	-- Kalisthene
+					["coord"] = { 52.8, 47.8, 1533 },
 				}),
 				q(57712, {	-- Suggested Reading
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
@@ -341,6 +475,15 @@ _.Zones =
 						i(175612),	-- Judicious Aspirant's Warboots
 						i(175636),	-- Judicious Aspirant's Wristwraps
 					},
+				}),
+				q(57937, {	-- Tactical Formation
+					["sourceQuests"] = {
+						57934,	-- Combat Drills
+						57935,	-- Laser Location
+						57936,	-- Superior Programming
+					},
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, 1533 },
 				}),
 				q(57715, {	-- The Archon's Answer (Death Knight)
 					["sourceQuests"] = { 57266 },	-- The First Cleansing
@@ -452,6 +595,20 @@ _.Zones =
 					["provider"] = { "n", 159762 },	-- Kleia
 					["coord"] = { 61.3, 74.4, 1533 },
 				}),
+				q(60054, {	-- The Final Countdown
+					["sourceQuests"] = {
+						60052,	-- Double Tap
+						60053,	-- Clear as Crystal
+					},
+					["provider"] = { "n", 167423 },	-- Thanikos
+					["coord"] = { 39.4, 55.2, 1533 },
+					["g"] = {
+						i(173338),	-- Waylight Shoulderpads
+						i(173336),	-- Waylight Epaulets
+						i(173339),	-- Waylight Shoulderguards
+						i(173337),	-- Waylight Pauldrons
+					},
+				}),
 				q(57266, {	-- The First Cleansing
 					["sourceQuests"] = { 57291 },	-- The Chamber of First Reflectiont
 					["provider"] = { "n", 159583 },	-- Kleia
@@ -527,6 +684,11 @@ _.Zones =
 					["sourceQuests"] = { 58980 },	-- Mnemis, At Your Service
 					["provider"] = { "n", 167035 },	-- Locus-Keeper Mnemis
 					["coord"] = { 58.8, 65.2, 1533 },
+				}),
+				q(59200, {	-- The Wards of Bastion
+					["sourceQuests"] = { 59199 },	-- Kyrestia, the Firstborne
+					["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+					["coord"] = { 55.5, 42.0, 1533 },
 				}),
 				q(57713, {	-- The Work of One's Hands
 					["sourceQuests"] = { 59920 },	-- Light the Forge, Forgelite
@@ -626,8 +788,23 @@ _.Zones =
 					["provider"] = { "n", 158181 },	-- Agthia
 					["coord"] = { 46.5, 63.4, 1533 },
 				}),
-
-
+				q(58040, {	-- With Lance and Larion
+					["sourceQuests"] = {
+						58038,	-- All Natural Chews
+						58039,	-- Larion at Large
+					},
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, 1533 },
+				}),
+				q(62170, {	-- You'll Never Walk Alone
+					["provider"] = { "i", 182693 },	-- Lost Disciple's Notes
+					["coord"] = { 59.3, 60.9, 1533 },
+				}),
+				q(59426, {	-- Your Personal Assistant
+					["sourceQuests"] = { 59196 },	-- Go in Service
+					["provider"] = { "n", 165045 },	-- Kalisthene
+					["coord"] = { 52.8, 47.8, 1533 },
+				}),
 
 
 
@@ -650,119 +827,10 @@ _.Zones =
 						},
 					}),
 				}),
-				-- Chasing a Memory
-				-- By the Archon's Will
-				q(59426, {	-- Your Personal Assistant
-					["provider"] = { "n", 165045 },	-- Kalisthene
-					["coord"] = { 52.8, 47.8, 1533 },
-					["sourceQuest"] = 59196,	-- Go in Service
-				}),
-				q(59197, {	-- Steward at Work
-					["provider"] = { "n", 165045 },	-- Kalisthene
-					["coord"] = { 52.8, 47.8, 1533 },
-					["sourceQuest"] = 59426,	-- Your Personal Assistant
-				}),
-				q(59198, {	-- On Swift Wings
-					["provider"] = { "n", 165048 },	-- Polemarch Adrestes
-					["coord"] = { 52.8, 45.6, 1533 },
-					["sourceQuest"] = 59197,	-- Steward at Work
-					["g"] = {
-						i(173316),	-- Skyloom Cloak
-						i(175703),	-- Silverspire Signet
-					},
-				}),
-				q(59199, {	-- Kyrestia, the Firstborne
-					["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-					["coord"] = { 55.5, 42.0, 1533 },
-					["sourceQuest"] = 59198,	-- On Swift Wings
-				}),
-				q(59200, {	-- The Wards of Bastion
-					["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-					["coord"] = { 55.5, 42.0, 1533 },
-					["sourceQuest"] = 59199,	-- Kyrestia, the Firstborne
-				}),
 				-- The Temple of Courage
-				q(60005, {	-- Imminent Danger
-					["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-					["coord"] = { 55.5, 42.0, 1533 },
-					["sourceQuest"] = 59200,	-- The Wards of Bastion
-				}),
-				q(60006, {	-- Now or Never
-					["provider"] = { "n", 167873 },	-- Thanikos
-					["coord"] = { 41.7, 55.1, 1533 },
-					["sourceQuest"] = 60005,	-- Imminent Danger
-				}),
-				q(60007, {	-- Stay Scrappy
-					["provider"] = { "n", 167135 },	-- Mikanikos
-					["coord"] = { 40.7, 55.5, 1533 },
-					["sourceQuest"] = 60006,	-- Now or Never
-				}),
-				q(60008, {	-- Rip and Tear
-					["provider"] = { "n", 167134 },	-- Thanikos
-					["coord"] = { 40.5, 55.2, 1533 },
-					["sourceQuest"] = 60006,	-- Now or Never
-				}),
-				q(60009, {	-- Fight Another Day
-					["provider"] = { "n", 167269 },	-- Disciple Apolon
-					["coord"] = { 41.2, 54.2, 1533 },
-					["sourceQuest"] = 60006,	-- Now or Never
-					["g"] = {
-						i(175718),	-- Ascended Defender's Crest
-					},
-				}),
-				q(60052, {	-- Double Tap
-					["provider"] = { "n", 167164 },	-- Thanikos
-					["sourceQuests"] = {
-						60007,	-- Stay Scrappy
-						60008,	-- Rip and Tear
-						60009,	-- Fight Another Day
-					},
-				}),
-				q(60053, {	-- Clear as Crystal
-					["provider"] = { "n", 167135 },	-- Mikanikos
-					["coord"] = { 40.7, 55.5, 1533 },
-					["sourceQuests"] = {
-						60007,	-- Stay Scrappy
-						60008,	-- Rip and Tear
-						60009,	-- Fight Another Day
-					},
-				}),
-				q(60054, {	-- The Final Countdown
-					["provider"] = { "n", 167423 },	-- Thanikos
-					["coord"] = { 39.4, 55.2, 1533 },
-					["sourceQuests"] = {
-						60052,	-- Double Tap
-						60053,	-- Clear as Crystal
-					},
-					["g"] = {
-						i(173338),	-- Waylight Shoulderpads
-						i(173336),	-- Waylight Epaulets
-						i(173339),	-- Waylight Shoulderguards
-						i(173337),	-- Waylight Pauldrons
-					},
-				}),
-				q(60055, {	-- A Time for Courage
-					["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-					["coord"] = { 55.5, 42.0, 1533 },
-					["sourceQuest"] = 60054,	-- The Final Countdown
-				}),
-				q(60056, {	-- Follow the Path
-					["provider"] = { "n", 167583 },	-- Disciple Apolon
-					["coord"] = { 40.9, 55.1, 1533 },
-					["sourceQuest"] = 60055,	-- A Time for Courage
-				}),
 				-- End of Zone Achievement Quests
 
 				-- An Act of Service
-				q(57937, {	-- Tactical Formation
-					["provider"] = { "n", 158765 },	-- Pelodis
-					["coord"] = { 54.7, 41.1, 1533 },
-					["sourceQuests"] = {
-						57934,	-- Combat Drills
-						57935,	-- Laser Location
-						57936,	-- Superior Programming
-					},
-				}),
 				q(58184, {	-- Antiquated Methodology
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 54.7, 41.1, 1533 },
@@ -770,46 +838,6 @@ _.Zones =
 					["altQuests"] = {
 						58184,	-- Antiquated Methodology
 						58185,	-- Success Without Soul
-					},
-				}),
-				q(58038, {	-- All Natural Chews
-					["provider"] = { "n", 157696 },	-- Nemea
-					["coord"] = { 57.2, 39.2, 1533 },
-					["sourceQuest"] = 58037,	-- Part of the Pride
-				}),
-				q(58039, {	-- Larion at Large
-					["provider"] = { "n", 157696 },	-- Nemea
-					["coord"] = { 57.2, 39.2, 1533 },
-					["sourceQuest"] = 58037,	-- Part of the Pride
-				}),
-				q(58040, {	-- With Lance and Larion
-					["provider"] = { "n", 157696 },	-- Nemea
-					["coord"] = { 57.2, 39.2, 1533 },
-					["sourceQuests"] = {
-						58038,	-- All Natural Chews
-						58039,	-- Larion at Large
-					},
-				}),
-				q(58041, {	-- Providing for the Pack
-					["provider"] = { "n", 157696 },	-- Nemea
-					["coord"] = { 57.2, 39.2, 1533 },
-					["sourceQuests"] = {
-						58038,	-- All Natural Chews
-						58039,	-- Larion at Large
-					},
-				}),
-				q(58042, {	-- On Larion Wings
-					["provider"] = { "n", 157696 },	-- Nemea
-					["coord"] = { 57.2, 39.2, 1533 },
-					["sourceQuests"] = {
-						58040,	-- With Lance and Larion
-						58041,	-- Providing for the Pack
-					},
-					["g"] = {
-						i(173333),	-- Pure Aspirant's Leggings
-						i(173335),	-- Courageous Aspirant's Breeches
-						i(173334),	-- Humble Aspirant's Leggings
-						i(173332),	-- Judicious Aspirant's Legguards
 					},
 				}),
 				q(58185, {	-- Success Without Soul
@@ -821,24 +849,9 @@ _.Zones =
 						58185,	-- Success Without Soul
 					},
 				}),
-				q(58103, {	-- Pride or Unit
-					["provider"] = { "n", 158765 },	-- Pelodis
-					["coord"] = { 54.7, 41.1, 1533 },
-					["sourceQuest"] = 57937,	-- Tactical Formation
-				}),
-				q(60296, {	-- Pride or Unit
-					["provider"] = { "n", 157696 },	-- Nemea
-					["coord"] = { 57.2, 39.2, 1533 },
-					["sourceQuest"] = 58042,	-- On Larion Wings
-				}),
 				q(59554, {	-- A Fine Journey
 					--["provider"] = { "o", ?? },	-- Notice						-- TODO: Need to add the ObjectID
 					["coord"] = { 51.5, 47.1, 1533 },
-				}),
-				q(62170, {	-- You'll Never Walk Alone
-					["provider"] = { "i", 182693 },	-- Lost Disciple's Notes
-					["coord"] = { 59.3, 60.9, 1533 },
-					["lvl"] = { 51 },
 				}),
 				q(60466, {	-- The Old Ways
 					["provider"] = { "n", 160598 },	-- Klystere

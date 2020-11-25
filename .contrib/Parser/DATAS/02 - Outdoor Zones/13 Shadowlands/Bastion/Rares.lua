@@ -212,7 +212,7 @@ _.Zones =
 					},
 				}),
 				n(160721, { -- Fallen Acolyte Erisne
-				--	you defeat a non-rare version of this mob while on 57977 'a temple in need' / 57264 'on the edge of revelation' - figure out when the rare version becomes available, these quests or
+				--	you defeat a non-rare version of this mob while on 57977 'a temple in need' / 57264 'on the edge of revelation' - figure out when the rare version becomes available, these quests or later
 				--	cutscene phased the area during 57717, 'step back from that ledge, my friend' and the end of that storyline is 57447, 'purity's prerogative'
 					["questID"] = 58222,
 					["isDaily"] = true,

@@ -21,7 +21,6 @@ _.Zones =
 				i(176765),	-- Darkfeather Tunic
 				i(176795),	-- Defender's Aspis
 				i(176796),	-- Elysian Dory
-				i(182561),	-- Fallen Disciple's Cloak
 				i(176794),	-- Gilded Glaive
 				i(176790),	-- Glimmerhoof Armplates
 				i(176763),	-- Glimmerhoof Breastplate

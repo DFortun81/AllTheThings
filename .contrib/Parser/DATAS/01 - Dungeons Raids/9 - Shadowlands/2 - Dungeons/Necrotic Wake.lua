@@ -13,13 +13,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["lvl"] = { 50 },
 		["g"] = {
 			n(QUESTS, {
-				q(60057, {	-- Necrotic Wake: A Paragon's Plight
-					["provider"] = { "n", 167584 },	-- Disciple Apolon
-					["coord"] = { 40.9, 55.3, 1533 },
-					["sourceQuest"] = 60055,	-- A Time for Courage
-					["lvl"] = { 50 },
-					["maps"] = { 1533 },	-- Bastion
-				}),
+				-- please don't delete this header!  a quest is linked here from outside, and with the header missing the category ports to the bottom of the list below all 3 instance difficulties
 			}),
 			--n(-34, {	-- World Quests
 			--}),
