@@ -294,6 +294,35 @@ _.Zones =
 						}),
 					},
 				}),
+				n(165859, {	-- Dimwiddle
+					["coord"] = { 60.8, 62.5, 1525 },
+					["g"] = {
+						i(180687, {	-- Anima Residue
+							["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby
+						}),
+						i(179938, {	-- Crumbling Pride Extractors
+							["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby
+						}),
+						i(184719, {	-- Enchanted Map of Infused Ruby Network
+							["cost"] = { { "c", 1820, 100 } },	-- Infused Ruby
+						}),
+						i(180714, {	-- Endmire Salve
+							["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby
+						}),
+						i(180683, {	-- Guardian Stonewing
+							["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby
+						}),
+						i(184716, {	-- Sentry Neutralizer
+							["cost"] = { { "c", 1820, 3 } },	-- Infused Ruby
+						}),
+						i(179937, {	-- Sliver of Burgeoning Ambition
+							["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby
+						}),
+						i(184718, {	-- Stolen Map of Infused Ruby Network
+							["cost"] = { { "c", 1820, 5 } },	-- Infused Ruby
+						}),
+					},
+				}),
 				n(165419, {	-- Grand Marshal Mudrag
 					["coord"] = { 40.6, 46.8, 1699 },
 					["g"] = {
@@ -397,111 +426,9 @@ _.Zones =
 						}),
 					},
 				}),
-				n(164966, {	-- Temel <The Party Herald> (with a hat)
-					["coord"] = { 28.0, 43.0, 1525},
-					["g"] = {
-						i(180726),	-- Pale Acidmaw				-- no cost due each covenant offering this mount in different ways
-						i(181300),	-- Gruesome Flayedwing		-- no cost due each covenant offering this mount in different ways
-						i(181316),	-- Silvertip Dredwing		-- no cost due each covenant offering this mount in different ways
-						i(181317),	-- Dauntless Duskrunner		-- no cost due each covenant offering this mount in different ways
-						i(177234, {	-- Rally Bell
-							["cost"] = { { "c", 1816, 25 } },
-						}),
-						i(181441, {	-- Altar of Accomplishment
-							["cost"] = { { "c", 1816, 25 } },
-						}),
-						i(181517, {	-- Building: Dredger Pool
-							["cost"] = { { "c", 1816, 100 } },
-						}),
-						i(181518, {	-- Building: Guardhouse
-							["cost"] = { { "c", 1816, 100 } },
-						}),
-						i(181519, {	-- Staff: Dredger Decorators
-							["cost"] = 2500000,	-- 250g
-						}),
-						i(181520, {	-- Staff: Stage Crew
-							["cost"] = 2500000,	-- 250g
-						}),
-						i(181522, {	-- Staff: Waiters
-							["cost"] = 2500000,	-- 250g
-						}),
-						i(181523, {	-- Staff: Bouncers
-							["cost"] = 2500000,	-- 250g
-						}),
-						i(182296, {	-- Letter of Note, Premier Party Planner
-							["cost"] = { { "c", 1820, 85 } },
-						}),
-						i(182973, {	-- Leather Dredger Coif
-							["cost"] = { { "c", 1820, 10 } },
-						}),
-						i(183706, {	-- Mantle of Court Blades
-							["cost"] = { { "c", 1816, 300 } },
-						}),
-						i(183842, {	-- Sinrunner Pony Reins
-							["cost"] = { { "c", 1820, 55 } },
-						}),
-						i(183843, {	-- Juvenile Dredbat Harness
-							["cost"] = { { "c", 1820, 70 } },
-						}),
-						i(183854, {	-- Battie's Pendant
-							["cost"] = { { "i", 163036, 250 } },
-						}),
-					},
-				}),
-				n(172531, {	-- Temel <The Party Herald> (with no hat)
-					["coord"] = { 58.8, 80.0, 1699},
-					["g"] = {
-						i(181316, {	-- Silvertip Dredwing
-							["cost"] = { { "c", 1813, 5000 } },
-						}),
-						i(177234, {	-- Rally Bell
-							["cost"] = { { "c", 1813, 25 } },
-						}),
-						i(181441, {	-- Altar of Accomplishment
-							["cost"] = { { "c", 1813, 25 } },
-						}),
-						i(181517, {	-- Building: Dredger Pool
-							["cost"] = { { "c", 1813, 100 } },
-						}),
-						i(181518, {	-- Building: Guardhouse
-							["cost"] = { { "c", 1813, 100 } },
-						}),
-						i(181519, {	-- Staff: Dredger Decorators
-							["cost"] = 2500000,	-- 250g
-						}),
-						i(181520, {	-- Staff: Stage Crew
-							["cost"] = 2500000,	-- 250g
-						}),
-						i(181522, {	-- Staff: Waiters
-							["cost"] = 2500000,	-- 250g
-						}),
-						i(181523, {	-- Staff: Bouncers
-							["cost"] = 2500000,	-- 250g
-						}),
-						i(182296, {	-- Letter of Note, Premier Party Planner
-							["cost"] = { { "c", 1820, 85 } },
-						}),
-						i(182973, {	-- Leather Dredger Coif
-							["cost"] = { { "c", 1820, 10 } },
-						}),
-						i(183706, {	-- Mantle of Court Blades
-							["cost"] = { { "c", 1813, 300 } },
-						}),
-						i(183842, {	-- Sinrunner Pony Reins
-							["cost"] = { { "c", 1820, 55 } },
-						}),
-						i(183843, {	-- Juvenile Dredbat Harness
-							["cost"] = { { "c", 1820, 70 } },
-						}),
-						i(183854, {	-- Battie's Pendant
-							["cost"] = { { "i", 163036, 250 } },
-						}),
-					},
-				}),
 				n(156822, {	-- Mistress Mihaela <Court of Harvesters Quartermaster>
 					["coord"] = { 61.4, 63.8, 1525 },
 					["g"] = {
-						i(182209),	-- Desire's Battle Gargon
 						i(183518, {	-- Court Sinrunner
 							["cost"] = 300000000, -- 30,000g
 						}),
@@ -524,7 +451,7 @@ _.Zones =
 							["cost"] = 11000000, -- 1,100g
 						}),
 						i(183708, {	-- Glittering Gold Sinstone Chain
-							["cost"] = { { "c", 1813, 2500 } },
+							["cost"] = { { "c", 1813, 3500 } },
 						}),
 						i(183839, {	-- Pattern: Heavy Desolate Hide
 							["cost"] = 17650000, -- 1,765g
@@ -535,6 +462,17 @@ _.Zones =
 						i(183900, {	-- Sinvyr Tea Set
 							["cost"] = 13500000, -- 1,350g
 						}),
+						i(177665),	-- Spectral Hankerchief
+						i(184720),	-- Reflective Waistguard
+						i(184721),	-- Flourished Cummerbund
+						i(184722),	-- Ostentatious Buckle
+						i(184723),	-- Bedazzled Belt
+						i(184724),	-- Courtier's Pauldron
+						i(184725),	-- Courtier's Shoulderplate
+						i(184726),	-- Courtier's Mantle
+						i(184727),	-- Courtier's Shoulderguard
+						i(184755),	-- Reinforced High Collar
+						i(182207),	-- Illusion: Sinsedge
 					},
 				}),
 				n(174183, {	-- Solivane <Raid Finder Nathrian Weaponsmith>
@@ -702,6 +640,107 @@ _.Zones =
 							--["cost"] = { "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						}),
 					}),
+				}),
+				n(164966, {	-- Temel <The Party Herald> (with a hat)
+					["coord"] = { 28.0, 43.0, 1525},
+					["g"] = {
+						i(180726),	-- Pale Acidmaw				-- no cost due each covenant offering this mount in different ways
+						i(181300),	-- Gruesome Flayedwing		-- no cost due each covenant offering this mount in different ways
+						i(181316),	-- Silvertip Dredwing		-- no cost due each covenant offering this mount in different ways
+						i(181317),	-- Dauntless Duskrunner		-- no cost due each covenant offering this mount in different ways
+						i(177234, {	-- Rally Bell
+							["cost"] = { { "c", 1816, 25 } },
+						}),
+						i(181441, {	-- Altar of Accomplishment
+							["cost"] = { { "c", 1816, 25 } },
+						}),
+						i(181517, {	-- Building: Dredger Pool
+							["cost"] = { { "c", 1816, 100 } },
+						}),
+						i(181518, {	-- Building: Guardhouse
+							["cost"] = { { "c", 1816, 100 } },
+						}),
+						i(181519, {	-- Staff: Dredger Decorators
+							["cost"] = 2500000,	-- 250g
+						}),
+						i(181520, {	-- Staff: Stage Crew
+							["cost"] = 2500000,	-- 250g
+						}),
+						i(181522, {	-- Staff: Waiters
+							["cost"] = 2500000,	-- 250g
+						}),
+						i(181523, {	-- Staff: Bouncers
+							["cost"] = 2500000,	-- 250g
+						}),
+						i(182296, {	-- Letter of Note, Premier Party Planner
+							["cost"] = { { "c", 1820, 85 } },
+						}),
+						i(182973, {	-- Leather Dredger Coif
+							["cost"] = { { "c", 1820, 10 } },
+						}),
+						i(183706, {	-- Mantle of Court Blades
+							["cost"] = { { "c", 1816, 300 } },
+						}),
+						i(183842, {	-- Sinrunner Pony Reins
+							["cost"] = { { "c", 1820, 55 } },
+						}),
+						i(183843, {	-- Juvenile Dredbat Harness
+							["cost"] = { { "c", 1820, 70 } },
+						}),
+						i(183854, {	-- Battie's Pendant
+							["cost"] = { { "i", 163036, 250 } },
+						}),
+					},
+				}),
+				n(172531, {	-- Temel <The Party Herald> (with no hat)
+					["coord"] = { 58.8, 80.0, 1699},
+					["g"] = {
+						i(181316, {	-- Silvertip Dredwing
+							["cost"] = { { "c", 1813, 5000 } },
+						}),
+						i(177234, {	-- Rally Bell
+							["cost"] = { { "c", 1813, 25 } },
+						}),
+						i(181441, {	-- Altar of Accomplishment
+							["cost"] = { { "c", 1813, 25 } },
+						}),
+						i(181517, {	-- Building: Dredger Pool
+							["cost"] = { { "c", 1813, 100 } },
+						}),
+						i(181518, {	-- Building: Guardhouse
+							["cost"] = { { "c", 1813, 100 } },
+						}),
+						i(181519, {	-- Staff: Dredger Decorators
+							["cost"] = 2500000,	-- 250g
+						}),
+						i(181520, {	-- Staff: Stage Crew
+							["cost"] = 2500000,	-- 250g
+						}),
+						i(181522, {	-- Staff: Waiters
+							["cost"] = 2500000,	-- 250g
+						}),
+						i(181523, {	-- Staff: Bouncers
+							["cost"] = 2500000,	-- 250g
+						}),
+						i(182296, {	-- Letter of Note, Premier Party Planner
+							["cost"] = { { "c", 1820, 85 } },
+						}),
+						i(182973, {	-- Leather Dredger Coif
+							["cost"] = { { "c", 1820, 10 } },
+						}),
+						i(183706, {	-- Mantle of Court Blades
+							["cost"] = { { "c", 1813, 300 } },
+						}),
+						i(183842, {	-- Sinrunner Pony Reins
+							["cost"] = { { "c", 1820, 55 } },
+						}),
+						i(183843, {	-- Juvenile Dredbat Harness
+							["cost"] = { { "c", 1820, 70 } },
+						}),
+						i(183854, {	-- Battie's Pendant
+							["cost"] = { { "i", 163036, 250 } },
+						}),
+					},
 				}),
 				n(175369, {	-- Vorpalia <Mythic Nathrian Weaponsmith>
 					["coord"] = { 40.6, 45.4, 1699 },
