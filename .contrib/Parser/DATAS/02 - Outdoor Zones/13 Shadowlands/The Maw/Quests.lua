@@ -221,13 +221,6 @@ _.Zones =
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
 					["coord"] = { 32.9, 66.4, 1648 },
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
-					["lvl"] = { 54 },
-					["g"] = {
-						i(175524),	-- Epidemiologist's Cowl
-						i(175526),	-- Deceitful Agent's Cover
-						i(175525),	-- Flesh Architect's Cowl
-						i(175511),	-- Cruel Executioner's Headguard
-					},
 				}),
 				q(61190, {	-- Wake of Ashes
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
@@ -239,7 +232,12 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 49.9, 41.6, 1543 },
 					["sourceQuest"] = 59973,	-- A Bond Beyond Death
-					["lvl"] = { 60 },
+					["g"] = {
+						i(175511),	-- Fallen Protector's Headguard
+						i(175525),	-- Forgotten Pursuer's Cowl
+						i(175524),	-- Risen Journeyman's Visage
+						i(175526),	-- Vicious Reclaimer's Cover
+					},
 				}),
 				-- The Prince and the Tower (Prince Renathal) (Revendreth Storyline)
 				q(57690, {	-- Cages For All Occasions
