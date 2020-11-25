@@ -283,10 +283,11 @@ _.Zones =
 				}),
 				n(164147, {	-- Wrigglemortis
 					["coord"] = { 58.0, 61.6, 1565 },
-					--["questID"] = ,
+					["questID"] = 59170,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14309, crit(6)),	-- Adventurer of Ardenweald / Wrigglemortis
+						i(181396),	-- Thornsweeper Scythe
 					},
 				}),
 			}),

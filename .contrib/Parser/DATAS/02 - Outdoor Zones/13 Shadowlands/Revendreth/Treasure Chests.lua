@@ -44,6 +44,8 @@ _.Zones =
 						i(182969),	-- The Countess's Parasol
 					},
 				}),]]
+
+				-- treasure @ 68,64 questID = 59884
 			}),
 		}),
 	}),

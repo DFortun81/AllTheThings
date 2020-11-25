@@ -13,6 +13,8 @@ _.Zones =
 				1702,	-- Heart of the Forest
 				1703,	-- Heart of the Forest
 				1662,	-- Queen's Conservatory
+				1818,	-- Tirna Vaal
+				1824,	-- Matriarch's Den
 			},
 		}),
 	}),

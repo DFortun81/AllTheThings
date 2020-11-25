@@ -80,10 +80,11 @@ _.Zones =
 				}),
 				n(161105, { -- Indomitable Schmitd
 					["coord"] = { 39.8, 43.4, 1536 },
-					--["questID"] = ,
+					["questID"] = 58332,	-- 61988 also triggered...
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(8)),	-- Adventurer of Maldraxxus / Indomitable Schmitd
+						i(182192),	-- Knee-Obstructing Legguards
 					},
 				}),
 				n(174108, { -- Necromantic Anomaly
@@ -172,6 +173,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						i(182075),	-- Bonehoof Tauralus
+						i(182190),	-- Tauralus Hide Collar
 						ach(14308, crit(12)),	-- Adventurer of Maldraxxus / Tahonta
 					},
 				}),
