@@ -14,6 +14,7 @@ _.Toys =
 		}),
 		i(168012),		-- Apexis Focusing Shard
 		i(46843),		-- Argent Crusader's Banner
+		i(184410),		-- Aspirant's Stretcher
 		i(147537, { 	-- A Tiny Set of Warglaives -- demon hunter class hall
 			["classes"] = { DEMONHUNTER },
 		}),

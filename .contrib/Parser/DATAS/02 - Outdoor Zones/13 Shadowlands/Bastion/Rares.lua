@@ -60,7 +60,7 @@ _.Zones =
 				}),
 				n(160629, { -- Baedos
 					["description"] = "To start the encounter, find casks full of Fermenting Purian Fruit near the rare and bring them to Baedos' Fruit Barrel.",
-					["questID"] = 58648,	-- also triggered 62192 on first kill.  no additional questID popped for looting the chest left behind
+					["questID"] = 58648,	-- TODO: also triggered 62192 on first kill.  no additional questID popped for looting the chest left behind
 					["isDaily"] = true,
 					["coord"] = { 51.2, 40.6, 1533 },
 					["crs"] = { 161536 },	-- Baedos' Fruit Barrel
@@ -175,6 +175,7 @@ _.Zones =
 				}),
 				n(171255, { -- Echo of Aella <Hand of Courage>
 					["questID"] = 61082,	-- upon kill
+					-- TODO: put it in HQT? or make separate treasure chest? might be daily(?) trackers?
 					--["questID"] = 61091,	-- upon chest loot
 					--["questID"] = 62251,	-- upon chest loot
 					["isDaily"] = true,
@@ -211,7 +212,7 @@ _.Zones =
 					},
 				}),
 				n(160721, { -- Fallen Acolyte Erisne
-				--	you defeat a non-rare version of this mob while on 57977 'a temple in need' / 57264 'on the edge of revelation' - figure out when the rare version becomes available, these quests or 
+				--	you defeat a non-rare version of this mob while on 57977 'a temple in need' / 57264 'on the edge of revelation' - figure out when the rare version becomes available, these quests or
 				--	cutscene phased the area during 57717, 'step back from that ledge, my friend' and the end of that storyline is 57447, 'purity's prerogative'
 					["questID"] = 58222,
 					["isDaily"] = true,

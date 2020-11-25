@@ -21,20 +21,16 @@ _.Zones =
 						i(183740, {	-- Court Sinrunner
 							["cost"] = 300000000, -- 30,000g
 						}),
-						i(183094, {	-- Plans: Shadowsteel Helm
-							["cost"] = 210000, -- 21g
-						}),
-						i(183097, {	-- Schematic: PHA7-YNX
-							--["cost"] = 210000, -- 21g
-						}),
-						i(183098, {	-- Technique: Codex of the Still Mind
-							--["cost"] = 210000, -- 21g
-						}),
+						i(184410),	-- Aspirant's Stretcher (TOY!)
+						i(183094),	-- Plans: Shadowsteel Helm
+						i(183097),	-- Schematic: PHA7-YNX
+						i(183098),	-- Technique: Codex of the Still Mind
 						i(183103, {	-- Technique: Contract: The Ascended
 							["cost"] = 17650000, -- 1,765g
 						}),
 						i(183243, {	-- Memory of the Arbiter's Judgment
 							["cost"] = 11000000, -- 1,100g
+							["modID"] = 14,
 						}),
 						i(183870, {	-- Recipe: Crafter's Mark II
 							["cost"] = 20000000, -- 2,000g
@@ -42,6 +38,17 @@ _.Zones =
 						i(180857, {	-- Goldenpaw Kit
 							["cost"] = 17650000, -- 1,765g
 						}),
+						i(184351),	-- Illusion: Devoted Spirit
+						i(178991),	-- Tabard of the Ascended
+						i(184734),	-- Bracers of Regret
+						i(184728),	-- Casque of the Path
+						i(184730),	-- Cowl of the Path
+						i(184731),	-- Gorget of the Path
+						i(184732),	-- Manacles of Burden
+						i(184729),	-- Masque of the Path
+						i(184756),	-- Smoothed Loop of Contemplation
+						i(184733),	-- Wristclamps of Remorse
+						i(184735),	-- Wristclasps of Shame
 					},
 				}),
 				n(171973, {	-- Binkiros <Mount Vendor>

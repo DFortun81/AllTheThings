@@ -30,6 +30,7 @@ _.Zones =
 						}),
 						i(183243, {	-- Memory of the Arbiter's Judgment
 							["cost"] = 11000000,	-- 1,100g
+							["modID"] = 14,
 						}),
 						i(183864, {	-- Plans: Crafter's Mark III
 							["cost"] = { { "c", 1816, 50 } },
