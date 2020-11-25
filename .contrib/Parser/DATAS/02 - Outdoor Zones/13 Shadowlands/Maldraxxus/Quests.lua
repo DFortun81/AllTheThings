@@ -516,22 +516,21 @@ _.Zones =
 					["provider"] = { "n", 162801 },	-- Alexandros Mograine
 					["coord"] = { 41.3, 60.5, 1536 },
 					["sourceQuest"] = 59974,	-- A Soul Saved
-					["lvl"] = { 54 },
 					["g"] = {
-						i(176277),	-- Ruthless Contender's Dagger
-						i(181529),	-- Ruthless Contender's Blade
-						i(176278),	-- Ruthless Contender's Hammer
-						i(176280),	-- Ruthless Contender's Sword
-						i(181531),	-- Ruthless Contender's Spellblade
-						i(176444),	-- Ruthless Contender's Steel
-						i(176282),	-- Ruthless Contender's Wand
-						i(176286),	-- Ruthless Contender's Warglaive
-						i(176281),	-- Ruthless Contender's Crossbow
-						i(176279),	-- Ruthless Contender's Staff
-						i(181534),	-- Ruthless Contender's Rod
-						i(176283),	-- Ruthless Contender's Claymore
-						i(176285),	-- Ruthless Contender's Tome
-						i(176284),	-- Ruthless Contender's Shield
+						i(180791),	-- Reanimated Executioner's Shank
+						i(180663),	-- War Scholar's Bonesaw
+						i(180666),	-- Bonebender's Warblade
+						i(180664),	-- Reanimated Executioner's Crusher
+						i(180792),	-- War Scholar's Shortsword
+						i(180673),	-- Reanimated Executioner's Sword
+						i(180668),	-- War Scholar's Wand
+						i(180672),	-- Bonebender's Warglaive
+						i(180667),	-- Enlarged Jawbone Crossbow
+						i(180665),	-- Grasping Greatstaff
+						i(180790),	-- War Scholar's Stave
+						i(180669),	-- Reanimated Executioner's Greatsword
+						i(180671),	-- War Scholar's Tome
+						i(180670),	-- Cruel Executioner's Bulwark
 					},
 				}),
 				q(60737, {	-- The Door to the Unknown
@@ -622,22 +621,21 @@ _.Zones =
 					["provider"] = { "n", 161733 },	-- Anzio The Infallible
 					["coord"] = { 50.5, 51.6, 1536 },
 					["sourceQuest"] = 59837,	-- Working For The Living
-					["lvl"] = { 55 },
 					["g"] = {
-						i(180791),	-- Reanimated Executioner's Shank
-						i(180663),	-- War Scholar's Bonesaw
-						i(180666),	-- Bonebender's Warblade
-						i(180664),	-- Reanimated Executioner's Crusher
-						i(180792),	-- War Scholar's Shortsword
-						i(180673),	-- Reanimated Executioner's Sword
-						i(180668),	-- War Scholar's Wand
-						i(180672),	-- Bonebender's Warglaive
-						i(180667),	-- Enlarged Jawbone Crossbow
-						i(180665),	-- Grasping Greatstaff
-						i(180790),	-- War Scholar's Stave
-						i(180669),	-- Reanimated Executioner's Greatsword
-						i(180671),	-- War Scholar's Tome
-						i(180670),	-- Cruel Executioner's Bulwark
+						i(176277),	-- Ruthless Contender's Dagger
+						i(181529),	-- Ruthless Contender's Blade
+						i(176278),	-- Ruthless Contender's Hammer
+						i(176280),	-- Ruthless Contender's Sword
+						i(181531),	-- Ruthless Contender's Spellblade
+						i(176444),	-- Ruthless Contender's Steel
+						i(176282),	-- Ruthless Contender's Wand
+						i(176286),	-- Ruthless Contender's Warglaive
+						i(176281),	-- Ruthless Contender's Crossbow
+						i(176279),	-- Ruthless Contender's Staff
+						i(181534),	-- Ruthless Contender's Rod
+						i(176283),	-- Ruthless Contender's Claymore
+						i(176285),	-- Ruthless Contender's Tome
+						i(176284),	-- Ruthless Contender's Shield
 					},
 				}),
 				q(58068, {	-- ...Even The Most Ridiculous Request!
