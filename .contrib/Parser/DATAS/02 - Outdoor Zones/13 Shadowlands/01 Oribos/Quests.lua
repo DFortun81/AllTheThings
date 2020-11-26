@@ -17,6 +17,78 @@ _.Zones =
 					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
 					["coord"] = {61.1, 36.9, 1670 },
 				}),
+				q(60256, {	-- A Valuable Find: Halls of Atonement
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["coord"] = { 51.4, 43.7, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
+				q(60253, {	-- A Valuable Find: Necrotic Wake
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["coord"] = { 51.4, 43.7, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
+				q(60251, {	-- A Valuable Find: Plaguefall
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["coord"] = { 51.4, 43.7, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
+				q(60257, {	-- A Valuable Find: Sanguine Depths
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["coord"] = { 51.4, 43.7, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
+				q(60252, {	-- A Valuable Find: Spires of Ascension
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["coord"] = { 51.4, 43.7, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
+				q(60255, {	-- A Valuable Find: The Other Side
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["coord"] = { 51.4, 43.7, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
+				q(60250, {	-- A Valuable Find: Theater of Pain
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["coord"] = { 51.4, 43.7, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
+				q(60254, {	-- A Valuable Find: Tirna Scithe
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["coord"] = { 51.4, 43.7, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
 				q(60149, {	-- Audience with the Arbiter
 					["sourceQuests"] = { 60148 },	-- No Place for the Living
 					["provider"] = { "n", 167486 },	-- Tal-Inara
@@ -60,6 +132,82 @@ _.Zones =
 					["sourceQuests"] = { 60154 },	-- Understanding the Shadowlands
 					["provider"] = { "n", 175829 },	-- Overseer Kah-Sher
 					["coord"] = { 50.5, 62.0, 1670 },
+				}),
+				q(60274, {	-- Trading Favors
+					["provider"] = { "n", 156688 },	-- Host Ta'rela
+					["coord"] = { 67.2, 50.6, 1670 },
+				}),
+				q(60244, {	-- Trading Favors: Halls of Atonement
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["coord"] = { 52.4, 55.3, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
+				q(60242, {	-- Trading Favors: Necrotic Wake
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["coord"] = { 52.4, 55.3, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
+				q(60248, {	-- Trading Favors: Plaguefall
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["coord"] = { 52.4, 55.3, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
+				q(60243, {	-- Trading Favors: Sanguine Depths
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["coord"] = { 52.4, 55.3, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
+				q(60249, {	-- Trading Favors: Spires of Ascension
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["coord"] = { 52.4, 55.3, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
+				q(60245, {	-- Trading Favors: The Other Side
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["coord"] = { 52.4, 55.3, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
+				q(60247, {	-- Trading Favors: Theater of Pain
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["coord"] = { 52.4, 55.3, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
+				}),
+				q(60246, {	-- Trading Favors: Tirna Scithe
+					["sourceQuests"] = { 60274 },	-- Trading Favors
+					["isWeekly"] = true,
+					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["coord"] = { 52.4, 55.3, 1670 },
+					["g"] = {
+						i(184374),	-- Cartel Exchange Vessel
+					},
 				}),
 				q(60154, {	-- Understanding the Shadowlands
 					["sourceQuests"] = { 60152 },	-- The Eternal City
