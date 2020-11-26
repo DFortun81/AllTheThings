@@ -2946,16 +2946,17 @@ _.HiddenQuestTriggers =
 		--q(xxxxx),	-- Triggered after choosing Phalynx from Pelodis during Pride Or Unit quest
 		q(62167),	-- Triggered after killing Bookkeeper Mnemis along with 59022
 		q(62191),	-- Triggered after killing Cloudfeather Guardian
-		q(62192),	-- Triggered after killing Baedos along with 58648
+		q(62192),	-- Triggered after killing Baedos first time
 		q(62841),	-- Triggered after first time using Kyrian Bell buff item
 		q(58292),	-- looting Purians
 		q(58293),	-- placing first Purian in the bowl
 		q(58294),	-- placing second Purian in the bowl
 		q(62201),	-- triggers when killing Herculon, which drops Functioning Anima Core.  based on the fact that the questID for the core is 62200, i think this + 62202 are tracking chances at it dropping
 		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
-		q(60260),	-- Your Personal Assistant - choosing Ipa
-		q(60262),	-- Your Personal Assistant - choosing Ipa — shares appearance with Dintos + Minta, so possible each steward has its own questID and you get credit for all the ones that share its appearance?
-		q(60263),	-- Your Personal Assistant - choosing Ipa
+		q(60259),	-- Your Personal Assistant - choosing Akiris
+		q(60260),	-- Your Personal Assistant - choosing Ipa — shares appearance with Dintos + Minta, so possible each steward has its own questID and you get credit for all the ones that share its appearance?
+		q(60262),	-- Your Personal Assistant - choosing Ipa/Akiris
+		q(60263),	-- Your Personal Assistant - choosing Ipa/Akiris
 		--	more steward info: https://imgur.com/0tLgE13
 		--	if each one has its own questID but grants credit for all in the same shared appearances set, these are the sets that are missing:
 		--	Bumos / Ilapos / Asellia / Syla / Zenza

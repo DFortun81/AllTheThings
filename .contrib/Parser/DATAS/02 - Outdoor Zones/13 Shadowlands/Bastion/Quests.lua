@@ -438,8 +438,8 @@ _.Zones =
 				}),
 				q(60055, {	-- A Time for Courage
 					["sourceQuests"] = { 60054 },	-- The Final Countdown
-					["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-					["coord"] = { 55.5, 42.0, 1533 },
+					["provider"] = { "n", 167460 },	-- Thanikos
+					["coord"] = { 38.9, 55.2, 1533 },
 				}),
 				q(60007, {	-- Stay Scrappy
 					["sourceQuests"] = { 60006 },	-- Now or Never

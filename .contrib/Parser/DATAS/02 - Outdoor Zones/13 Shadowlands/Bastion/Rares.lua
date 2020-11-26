@@ -60,7 +60,7 @@ _.Zones =
 				}),
 				n(160629, { -- Baedos
 					["description"] = "To start the encounter, find casks full of Fermenting Purian Fruit near the rare and bring them to Baedos' Fruit Barrel.",
-					["questID"] = 58648,
+					["questID"] = 58648,	-- looting chest triggers this and it's repeatable
 					["isDaily"] = true,
 					["coord"] = { 51.2, 40.6, 1533 },
 					["crs"] = { 161536 },	-- Baedos' Fruit Barrel
