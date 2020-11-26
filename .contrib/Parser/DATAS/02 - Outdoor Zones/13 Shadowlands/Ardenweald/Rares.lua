@@ -217,7 +217,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 65.6, 24.0, 1565 },
 					["crs"] = { 171684 },	-- Daffodil
-					["crs"] = { 171690 },	-- Gwyncierw
 					["g"] = {
 						crit(12, {	-- Rotbriar Changeling
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
