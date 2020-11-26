@@ -481,6 +481,7 @@ _.Achievements =
 				crit(11),		-- Emaciated Bat
 				crit(12),		-- Creeper
 			}),
+			ach(14791),		-- Toss a Seed to Your Hunter...
 			ach(14768, {	-- What is that Melody?
 				crit(1),		-- Hymn of Purity
 				crit(2),		-- Hymn of Courage

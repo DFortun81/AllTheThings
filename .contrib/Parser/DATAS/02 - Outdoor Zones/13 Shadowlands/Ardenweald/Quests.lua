@@ -7,12 +7,26 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1565, {	-- Ardenweald
 			n(QUESTS, {
+				q(60341, {	-- First on the Agenda
+					["sourceQuests"] = { 60763 },	-- I Moustache You to Lend a Hand
+					["provider"] = { "n", 157788 },	-- Lady Moonberry
+					["coord"] = { 65.0, 19.5, 1565 },
+				}),
 				q(60763, {	-- I Moustache You to Lend a Hand
 					["sourceQuests"] = { 60338 },	-- Journey to Ardenweald
 					["provider"] = { "n", 168341 },	-- Lady Moonberry
 					["coord"] = { 68.2, 18.3, 1565 },
 				}),
-				
+				q(60857, {	-- We Can't Save Them All
+					["sourceQuests"] = { 60778 },	-- Wildseed Rescue
+					["provider"] = { "n", 170175 },	-- Featherlight
+					["coord"] = { 67.7, 20.6, 1565 },
+				}),
+				q(60778, {	-- Wildseed Rescue
+					["sourceQuests"] = { 60341 },	-- First on the Agenda
+					["provider"] = { "n", 170175 },	-- Featherlight
+					["coord"] = { 65.0, 19.5, 1565 },
+				}),
 				
 				
 				
@@ -28,21 +42,6 @@ _.Zones =
 					}),
 				}),
 				-- Welcome to Ardenweald
-				q(60341, {	-- First on the Agenda
-					["provider"] = { "n", 157788 },	-- Lady Moonberry
-					["coord"] = { 65.0, 19.5, 1565 },
-					["sourceQuests"] = { 60763 },	-- I Moustache You to Lend a Hand
-				}),
-				q(60778, {	-- Wildseed Rescue
-					["provider"] = { "n", 170175 },	-- Featherlight
-					["coord"] = { 65.0, 19.5, 1565 },
-					["sourceQuests"] = { 60341 },	-- First on the Agenda
-				}),
-				q(60857, {	-- We Can't Save Them All
-					["provider"] = { "n", 170175 },	-- Featherlight
-					["coord"] = { 67.7, 20.6, 1565 },
-					["sourceQuests"] = { 60778 },	-- Wildseed Rescue
-				}),
 				q(60859, {	-- Souls of the Forest
 					["provider"] = { "n", 170533 },	-- Featherlight
 					["coord"] = { 67.8, 24.1, 1565 },

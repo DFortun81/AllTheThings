@@ -53,6 +53,14 @@ _.Zones =
 					--	["sourceQuest"] = 58723,	-- The Court of Winter
 					}),
 				}),
+				ach(14791, {	-- Toss a Seed to Your Hunter...
+					["description"] = "The Faintly Glowing Seeds can be found scattered around the zone, but the closest ones to the encounter are up the hill in Heartwood Grove.  Look around the bases of trees for sparkling bluish-purple plants.",
+					["coord"] = { 65.6, 24.6, 1565 },
+					["crs"] = { 171690 },	-- Gwyncierw
+					["g"] = {
+						i(183902),	-- A Faintly Glowing Seed
+					},
+				}),
 				ach(14313, {	-- Treasures of Ardenweald
 					crit(1, {	-- Aerto's Body
 						["npcID"] =	 171156,	-- Aerto

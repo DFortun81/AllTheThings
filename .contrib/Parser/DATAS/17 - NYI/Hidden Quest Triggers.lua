@@ -3009,6 +3009,7 @@ _.HiddenQuestTriggers =
 		q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
 
 		-- Ardenweald Covenant Questline
+		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
 		q(62745),	-- Daughter of the Night Warrior Questline finished
 
 		-- Revendreth WQ

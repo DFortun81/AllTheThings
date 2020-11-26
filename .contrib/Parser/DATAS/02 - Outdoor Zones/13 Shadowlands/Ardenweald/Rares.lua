@@ -55,10 +55,15 @@ _.Zones =
 					},
 				}),
 				n(171688, {	-- Faeflayer
-					["coord"] = { 68.6, 28.0, 1565 },
-					--["questID"] = ,
+					["description"] = "In a cave behind a waterfall.",
+					["questID"] = 61184,
 					["isDaily"] = true,
+					["coord"] = { 68.4, 29.4, 1565 },
 					["g"] = {
+						crit(21, {	-- Faeflayer (incorrectly showing in-game as Soultwister Cero -- but that rare awards criteria 20)
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
+						i(180144),	-- Faeflayer's Hatchet
 					},
 				}),
 				n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
@@ -208,11 +213,16 @@ _.Zones =
 					},
 				}),
 				n(167724, {	-- Rotbriar Changeling
-					["coord"] = { 65.6, 24.0, 1565 },
-					--["questID"] = ,
+					["questID"] = 60258,
 					["isDaily"] = true,
+					["coord"] = { 65.6, 24.0, 1565 },
+					["crs"] = { 171684 },	-- Daffodil
+					["crs"] = { 171690 },	-- Gwyncierw
 					["g"] = {
-						ach(14309, crit(12)),	-- Adventurer of Ardenweald / Rotbriar Changeling
+						crit(12, {	-- Rotbriar Changeling
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
+						i(175729),	-- Rotbriar Sprout
 					},
 				}),
 				n(166140, {	-- Senthii, As Gul'dan <From an Alternate Timeline>
@@ -247,11 +257,13 @@ _.Zones =
 					},
 				}),
 				n(171451, {	-- Soultwister Cero
-					["coord"] = { 72.4, 51.6, 1565 },
 					--["questID"] = ,
 					["isDaily"] = true,
+					["coord"] = { 72.4, 51.6, 1565 },
 					["g"] = {
-						ach(14309, crit(20)),	-- Adventurer of Ardenweald / Soultwister Cero (crit 21 is also Soultwister Cero, why??)
+						crit(20, {	-- Soultwister Cero
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
 						i(180164),	-- Soultwister's Scythe
 					},
 				}),
@@ -278,11 +290,13 @@ _.Zones =
 					},
 				}),
 				n(164147, {	-- Wrigglemortis
-					["coord"] = { 58.0, 61.6, 1565 },
 					["questID"] = 59170,
 					["isDaily"] = true,
+					["coord"] = { 58.0, 61.6, 1565 },
 					["g"] = {
-						ach(14309, crit(6)),	-- Adventurer of Ardenweald / Wrigglemortis
+						crit(6, {	-- Wrigglemortis
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
 						i(181396),	-- Thornsweeper Scythe
 					},
 				}),
