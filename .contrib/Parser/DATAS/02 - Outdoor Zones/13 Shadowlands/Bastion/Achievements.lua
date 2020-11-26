@@ -186,9 +186,9 @@ _.Zones =
 							{ 42.3, 23.3, 1533 },	-- Transport Pad
 							{ 40.6, 18.9, 1533 },	-- Treasure
 						},
-						--["questID"] = ,
+						["description"] = "Incense of Patience -> Incense of Knowledge -> Incense of Insight -> Blue Orb -> Incense of Judgement",
+						["questID"] = 60894,
 						["g"] = {
-							i(182732),	-- The Necronom-i-nom
 						},
 					}),
 					crit(15, {	-- Gift of Devos

@@ -25,7 +25,7 @@ _.Zones =
 				}),
 				n(157058, { -- Corspecutter Moroc
 					["coord"] = { 26.6, 27.2, 1536 },
-					--["questID"] = ,
+					["questID"] = 58335,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(1)),	-- Adventurer of Maldraxxus / Corspecutter Moroc

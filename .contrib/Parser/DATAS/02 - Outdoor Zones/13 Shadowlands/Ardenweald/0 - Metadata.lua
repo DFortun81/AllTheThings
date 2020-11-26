@@ -15,6 +15,7 @@ _.Zones =
 				1662,	-- Queen's Conservatory
 				1818,	-- Tirna Vaal
 				1824,	-- Matriarch's Den
+				1829,	-- Ardenweald_Micro_B
 			},
 		}),
 	}),

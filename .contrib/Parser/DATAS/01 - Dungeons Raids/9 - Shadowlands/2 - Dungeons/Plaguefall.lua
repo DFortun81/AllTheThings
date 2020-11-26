@@ -7,6 +7,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["coord"] = { 59.3, 64.8, 1536 },
 		["maps"] = {
 			1674,	-- Plaguefall
+			1697,	-- Plaguefall
 		},
 		["lvl"] = { 50 },
 		["g"] = {
