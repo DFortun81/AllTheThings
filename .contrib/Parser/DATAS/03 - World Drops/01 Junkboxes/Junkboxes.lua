@@ -224,6 +224,7 @@ _.WorldDrops =
 				i(88150),	-- Krol Scimitar
 			}),
 			i(169475),	-- Barnacled Lockbox
+			i(180532),	-- Laestrite Lockbox
 		},
 	}),
 };

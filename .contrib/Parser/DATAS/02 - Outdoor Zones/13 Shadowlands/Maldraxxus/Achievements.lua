@@ -7,11 +7,21 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
 			n(ACHIEVEMENTS, {
+				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
+				--	TODO: finish adding criteria here + other SL zones
+					["collectible"] = false,
+					["g"] = {
+						crit(8, {	-- Gelatinous
+							["coord"] = { 61.8, 78.8, 1536 },
+							["crs"] = { 175784 },	-- Gelatinous
+						}),
+					},
+				}),
 				ach(14206, {	-- Blade of the Primus
 					crit(1, {	-- Champion of Pain
 						["sourceQuests"] = { 57515 },	-- The House of the Chosen
 					}),
-					crit(2, {	-- 	House of the Chosen
+					crit(2, {	-- House of the Chosen
 						["sourceQuests"] = { 60886 },	-- The Seat of the Primus
 					}),
 					crit(3, {	-- Matron of Spies
@@ -20,7 +30,7 @@ _.Zones =
 					crit(4, {	-- House of Constructs
 						["sourceQuests"] = { 60733 },	-- Front and Center
 					}),
-					crit(5, {	-- 	House of Plagues
+					crit(5, {	-- House of Plagues
 						["sourceQuests"] = { 59231 },	-- Fathomless Power
 					}),
 					crit(6, {	-- Ritual for the Damned
