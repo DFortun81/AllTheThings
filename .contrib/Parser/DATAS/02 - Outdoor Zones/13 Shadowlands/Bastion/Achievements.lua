@@ -39,11 +39,8 @@ _.Zones =
 						["sourceQuests"] = { 60055 },	-- A Time for Courage
 					}),
 					crit(7, {	-- A Land of Strife
-					--	["sourceQuests"] = {  },	-- 
+						["sourceQuests"] = { 61107 },	-- A Land of Strife
 					}),
-				--	crit(5, {	-- By the Archon's Will	-- 	keeping this here for now in case the sq is the same for the changed criteria
-				--		["sourceQuests"] = { 59200 },	-- The Wards of Bastion
-				--	}),
 				}),
 				ach(14339, {	-- Shard Labor
 				--	https://www.wowhead.com/achievement=14339/shard-labor#comments

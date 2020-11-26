@@ -4132,6 +4132,7 @@ app.L = {
 		[348521] = "Strange Growth",
 		[349565] = "Chest of Envious Dreams",
 		[349797] = "Abandoned Curios",
+		[351467] = "Faded Epitaph",
 		[352027] = "Wanted Scroll",
 		[352028] = "Wanted Scroll",
 		[352086] = "Blackhound Cache",

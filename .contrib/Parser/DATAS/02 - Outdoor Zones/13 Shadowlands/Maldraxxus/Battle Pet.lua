@@ -11,7 +11,7 @@ _.Zones =
 					--["crs"] = {  },
 				}),
 				p(3051, {	-- Animated Cruor
-					--["crs"] = {  },
+					["crs"] = { 175023 },
 				}),
 				p(3050,	{	-- Bleak Skitterer
 					--["crs"] = {  },
@@ -20,7 +20,7 @@ _.Zones =
 					["crs"] = {	176024 },
 				}),
 				p(3049,	{	-- Pulsating Maggot
-					--["crs"] = {  },
+					["crs"] = { 175021 },
 				}),
 			}),
 		}),

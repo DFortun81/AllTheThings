@@ -7,6 +7,39 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
 			n(QUESTS, {
+				q(60020, {	-- An Opportunistic Strike
+					["sourceQuests"] = { 57390 },	-- To Die By the Sword
+					["provider"] = { "n", 164244 },	-- Grandmaster Vole
+					["coord"] = { 50.3, 44.3, 1536 },
+				}),
+				q(57511, {	-- Arms for the Poor
+					["sourceQuests"] = { 57425 },	-- Land of Opportunity
+					["provider"] = { "n", 162069 },	-- Baroness Draka
+					["coord"] = { 48.3, 57.1, 1536 },
+				}),
+				q(60021, {	-- Champion the Cause
+					["sourceQuests"] = { 60020 },	-- An Opportunistic Strike
+					["provider"] = { "n", 164244 },	-- Grandmaster Vole
+					["coord"] = { 50.3, 44.3, 1536 },
+				}),
+				q(57390, {	-- To Die By the Sword
+					["sourceQuests"] = { 57386 },	-- If You Want Peace...
+					["provider"] = { "n", 164244 },	-- Grandmaster Vole
+					["coord"] = { 50.1, 41.6, 1536 },
+				}),
+				q(57512, {	-- Walk Among Death
+					["sourceQuests"] = { 57425 },	-- Land of Opportunity
+					["provider"] = { "n", 162069 },	-- Baroness Draka
+					["coord"] = { 48.3, 57.1, 1536 },
+				}),
+				
+				
+				
+				
+				
+				
+				
+				
 				currency(1832, {		-- Renown-Necrolord
 					-- Renown 5
 					-- House of Eyes
@@ -38,63 +71,30 @@ _.Zones =
 					}),
 				}),
 				-- Champion of Pain
-				q(57390, {	-- To Die By the Sword
-					["provider"] = { "n", 164244 },	-- Grandmaster Vole
-					["coord"] = { 50.1, 41.6, 1536 },
-					["sourceQuest"] = 57386,	-- If You Want Peace...
-					["lvl"] = { 52 },
-				}),
-				q(60020, {	-- An Opportunistic Strike
-					["provider"] = { "n", 164244 },	-- Grandmaster Vole
-					["coord"] = { 50.3, 44.3, 1536 },
-					["sourceQuest"] = 57390,	-- To Die By the Sword
-					["lvl"] = { 52 },
-				}),
-				q(60021, {	-- Champion the Cause
-					["provider"] = { "n", 164244 },	-- Grandmaster Vole
-					["coord"] = { 50.3, 44.3, 1536 },
-					["sourceQuest"] = 60020,	-- An Opportunistic Strike
-					["lvl"] = { 52 },
-				}),
 				q(57425, {	-- Land of Opportunity
 					["provider"] = { "n", 164244 },	-- Grandmaster Vole
 					["coord"] = { 50.3, 44.3, 1536 },
-					["sourceQuest"] = 60021,	-- Champion the Cause
-					["lvl"] = { 52 },
+					["sourceQuests"] = { 60021 },	-- Champion the Cause
 					["g"] = {
-						i(175459),	-- Epidemiologist's Hood
-						i(175461),	-- Deceitful Agent's Helm
-						i(175460),	-- Flesh Architect's Coif
-						i(175446),	-- Cruel Executioner's Helmet
+						i(175468),	-- Corpse-Stitcher's Mantle
+						i(175466),	-- Deceitful Agent's Spaulders
+						i(175469),	-- Flesh Architect's Mantle
+						i(175467),	-- Cruel Executioner's Shoulders
 					},
-				}),
-				q(57511, {	-- Arms for the Poor
-					["provider"] = { "n", 162069 },	-- Baroness Draka
-					["coord"] = { 48.3, 57.1, 1536 },
-					["sourceQuest"] = 57425,	-- Land of Opportunity
-					["lvl"] = { 52 },
 				}),
 				q(60181, {	-- Trench Warfare
 					["provider"] = { "n", 164244 },	-- Grandmaster Vole
 					["coord"] = { 50.3, 44.3, 1536 },
 					["sourceQuest"] = 57511,	-- Arms for the Poor
-					["lvl"] = { 52 },
 					["g"] = {
 						i(175739),	-- Reclaimed Maldraxxi Choker
 						i(180827),	-- Maldraxxi Warhorn
 					},
 				}),
-				q(57512, {	-- Walk Among Death
-					["provider"] = { "n", 162069 },	-- Baroness Draka
-					["coord"] = { 48.3, 57.1, 1536 },
-					["sourceQuest"] = 57425,	-- Land of Opportunity
-					["lvl"] = { 52 },
-				}),
 				q(60179, {	-- Memory of Honor
-					--["provider"] = { "o", ?? },	-- Faded Epitaphs						-- TODO: Need to add the ObjectID
+					["sourceQuests"] = { 57425 },	-- Land of Opportunity
+					["provider"] = { "o", 351467 },	-- Faded Epitaphs
 					["coord"] = { 48.3, 57.7, 1536 },
-					["sourceQuest"] = 57425,	-- Land of Opportunity
-					["lvl"] = { 52 },
 				}),
 				q(57515, {	-- The House of the Chosen
 					["provider"] = { "n", 159065 },	-- Baroness Draka
@@ -103,26 +103,22 @@ _.Zones =
 						57512,	-- Walk Among Death
 						60179,	-- Memory of Honor
 					},
-					["lvl"] = { 52 },
 				}),
 				-- House of the Chosen
 				q(57514, {	-- The First Act of War
 					["provider"] = { "n", 159065 },	-- Baroness Draka
 					["coord"] = { 38.9, 65.1, 1536 },
 					["sourceQuest"] = 57515,	-- The House of the Chosen
-					["lvl"] = { 52 },
 				}),
 				q(58617, {	-- Maintaining Order
 					["provider"] = { "n", 157895 },	-- Baron Vyraz
 					["coord"] = { 36.3, 60.2, 1536 },
 					["sourceQuest"] = 57514,	-- The First Act of War
-					["lvl"] = { 52 },
 				}),
 				q(58351, {	-- The Hills Have Eyes
 					["provider"] = { "n", 157895 },	-- Baron Vyraz
 					["coord"] = { 36.3, 60.2, 1536 },
 					["sourceQuest"] = 57514,	-- The First Act of War
-					["lvl"] = { 52 },
 				}),
 				q(60451, {	-- Never Enough
 					["provider"] = { "n", 157895 },	-- Baron Vyraz
@@ -131,13 +127,11 @@ _.Zones =
 						58617,	-- Maintaining Order
 						58351,	-- The Hills Have Eyes
 					},
-					["lvl"] = { 52 },
 				}),
 				q(57516, {	-- Through the Fire and Flames
 					["provider"] = { "n", 159065 },	-- Baroness Draka
 					["coord"] = { 38.9, 65.1, 1536 },
 					["sourceQuest"] = 60451,	-- Never Enough
-					["lvl"] = { 52 },
 					["g"] = {
 						i(175471),	-- Epidemiologist's Cord
 						i(175473),	-- Deceitful Agent's Belt
@@ -149,19 +143,16 @@ _.Zones =
 					["provider"] = { "n", 159065 },	-- Baroness Draka
 					["coord"] = { 38.2, 66.5, 1536 },
 					["sourceQuest"] = 57516,	-- Through the Fire and Flames
-					["lvl"] = { 52 },
 				}),
 				q(58618, {	-- Ossein Enchantment
 					["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
 					["coord"] = { 36.2, 71.0, 1536 },
 					["sourceQuest"] = 58616,	-- Forging a Champion
-					["lvl"] = { 52 },
 				}),
 				q(58726, {	-- Thick Skin
 					["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
 					["coord"] = { 36.2, 71.0, 1536 },
 					["sourceQuest"] = 58616,	-- Forging a Champion
-					["lvl"] = { 52 },
 					["g"] = {
 						i(175463),	-- Epidemiologist's Leggings
 						i(175465),	-- Deceitful Agent's Breeches
@@ -176,25 +167,21 @@ _.Zones =
 						58618,	-- Ossein Enchantment
 						58726,	-- Thick Skin
 					},
-					["lvl"] = { 52 },
 				}),
 				q(60453, {	-- The Path to Glory
 					["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
 					["coord"] = { 36.2, 71.0, 1536 },
 					["sourceQuest"] = 60428,	-- The Blade of the Primus
-					["lvl"] = { 52 },
 				}),
 				q(60461, {	-- Meet the Margrave
 					["provider"] = { "n", 159065 },	-- Baroness Draka
 					["coord"] = { 38.9, 65.1, 1536 },
 					["sourceQuest"] = 60453,	-- The Path to Glory
-					["lvl"] = { 52 },
 				}),
 				q(60886, {	-- The Seat of the Primus
 					["provider"] = { "n", 158007 },	-- Margrave Krexus
 					["coord"] = { 36.9, 68.4, 1536 },
 					["sourceQuest"] = 60461,	-- Meet the Margrave
-					["lvl"] = { 52 },
 					["g"] = {
 						i(180826),	-- Bonefused Shortsword
 						i(180818),	-- Bonefused Bonesaw
@@ -212,19 +199,16 @@ _.Zones =
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
 					["sourceQuest"] = 60886,	-- The Seat of the Primus
-					["lvl"] = { 52 },
 				}),
 				q(59171, {	-- Prey Upon Them
 					["provider"] = { "n", 162487 },	-- Baroness Vashj
 					["coord"] = { 50.3, 67.7, 1536 },
 					["sourceQuest"] = 58751,	-- A Common Peril
-					["lvl"] = { 52 },
 				}),
 				q(58821, {	-- Glorious Pursuits
 					["provider"] = { "n", 162487 },	-- Baroness Vashj
 					["coord"] = { 50.3, 67.7, 1536 },
 					["sourceQuest"] = 58751,	-- A Common Peril
-					["lvl"] = { 52 },
 				}),
 				q(59172, {	-- War is Deception
 					["provider"] = { "n", 162487 },	-- Baroness Vashj
@@ -233,7 +217,6 @@ _.Zones =
 						59171,	-- Prey Upon Them
 						58821,	-- Glorious Pursuits
 					},
-					["lvl"] = { 52 },
 					["g"] = {
 						i(175706),	-- Mind-Torn Band
 					},
@@ -242,24 +225,21 @@ _.Zones =
 					["provider"] = { "n", 162487 },	-- Baroness Vashj
 					["coord"] = { 50.3, 67.7, 1536 },
 					["sourceQuest"] = 59172,	-- War is Deception
-					["lvl"] = { 52 },
 				}),
 				q(59185, {	-- Entangling Web
 					["provider"] = { "n", 162487 },	-- Baroness Vashj
 					["coord"] = { 50.3, 67.7, 1536 },
 					["sourceQuest"] = 59172,	-- War is Deception
-					["lvl"] = { 52 },
 				}),
 				q(59188, {	-- Vaunted Vengeance
 					["provider"] = { "n", 164297 },	-- Khaliiq
 					["coord"] = { 67.7, 45.6, 1536 },
 					["sourceQuest"] = 59172,	-- War is Deception
-					["lvl"] = { 52 },
 					["g"] = {
-						i(175468),	-- Epidemiologist's Mantle
-						i(175466),	-- Deceitful Agent's Spaulders
-						i(175469),	-- Flesh Architect's Mantle
-						i(175467),	-- Cruel Executioner's Shoulders
+						i(175459),	-- Corpse-Stitcher's Hood
+						i(175461),	-- Deceitful Agent's Helm
+						i(175460),	-- Flesh Architect's Coif
+						i(175446),	-- Cruel Executioner's Helmet
 					},
 				}),
 				q(59190, {	-- Seek Your Mark
@@ -270,19 +250,16 @@ _.Zones =
 						59185,	-- Entangling Web
 						59188,	-- Vaunted Vengeance
 					},
-					["lvl"] = { 52 },
 				}),
 				q(59025, {	-- Straight to the Heart
 					["provider"] = { "n", 164326 },	-- Baroness Vashj
 					["coord"] = { 73.5, 44.5, 1536 },
 					["sourceQuest"] = 59190,	-- Seek Your Mark
-					["lvl"] = { 52 },
 				}),
 				q(59009, {	-- Her Rightful Place
 					["provider"] = { "n", 164326 },	-- Baroness Vashj
 					["coord"] = { 73.5, 44.5, 1536 },
 					["sourceQuest"] = 59025,	-- Straight to the Heart
-					["lvl"] = { 52 },
 				}),
 				-- House of Constructs
 				q(57912, {	-- Baron of the Chosen
@@ -641,13 +618,11 @@ _.Zones =
 				q(58068, {	-- ...Even The Most Ridiculous Request!
 					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
 					["coord"] = { 54.0, 50.8, 1536 },
-					["lvl"] = { 52 },
 				}),
 				q(58088, {	-- Juicing Up
 					["provider"] = { "n", 159827 },	-- Scrapper Minoire
 					["coord"] = { 53.8, 50.5, 1536 },
 					["sourceQuest"] = 58068,	-- ...Even The Most Ridiculous Request!
-					["lvl"] = { 52 },
 				}),
 				q(58090, {	-- Side Effects
 					["provider"] = { "n", 159833 },	-- So'narynar
@@ -721,25 +696,21 @@ _.Zones =
 					["provider"] = { "n", 157945 },	-- Boil Master Yetch
 					["coord"] = { 59.0, 73.8, 1536 },
 					["sourceQuest"] = 59430,	-- Plagues Aid
-					["lvl"] = { 52 },
 				}),
 				q(57301, {	-- Callous Concoctions
 					["provider"] = { "n", 157313 },	-- Foul-Tongue Cyrlix
 					["coord"] = { 58.5, 73.4, 1536 },
 					["sourceQuest"] = 58431,	-- Pool of Potions
 					["isWeekly"] = true,
-					["lvl"] = { 52 },
 				}),
 				-- Wasteland Work
 				q(58785, {	-- Smack And Grab
 					["provider"] = { "n", 162615 },	-- Caleesy
 					["coord"] = { 47.0, 49.0, 1536 },
-					["lvl"] = { 52 },
 				}),
 				q(58750, {	-- Take The Bull By The Horns
 					["provider"] = { "n", 162474 },	-- Dundae
 					["coord"] = { 46.8, 48.5, 1536 },
-					["lvl"] = { 52 },
 				}),
 				q(58794, {	-- Stabbing Wasteward
 					["provider"] = { "n", 162474 },	-- Dundae
@@ -748,7 +719,6 @@ _.Zones =
 						58785,	-- Smack And Grab
 						58750,	-- Take The Bull By The Horns
 					},
-					["lvl"] = { 52 },
 				}),
 			}),
 		}),

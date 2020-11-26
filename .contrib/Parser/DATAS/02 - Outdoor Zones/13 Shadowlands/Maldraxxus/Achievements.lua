@@ -77,8 +77,8 @@ _.Zones =
 				ach(14312, {	-- Treasures of Maldraxxus
 					crit(1, {	-- Ornate Bone Shield
 						["objectID"] = 347444,	-- Ornate Bone Shield
+						["questID"] = 59358,
 						["coord"] = { 47.2, 62.1, 1536 },
-						--["questID"] = ,
 						["g"] = {
 							i(180749),	-- Hauk's Battle-Scarred Bulwark
 						},
