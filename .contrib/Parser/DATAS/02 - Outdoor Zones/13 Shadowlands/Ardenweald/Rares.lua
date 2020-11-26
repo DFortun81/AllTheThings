@@ -256,11 +256,15 @@ _.Zones =
 					},
 				}),
 				n(167721, {	-- The Slumbering Emperor
-					["coord"] = { 59.2, 46.6, 1565 },
-					--["questID"] = ,
+					["description"] = "You can use various toys (Darkmoon Cannon, Phial of Ravenous Slime), pet abilities, and AoE abilities to pull this rare.  If you need help not falling asleep, pulling a nearby Greater Ardenmoth can apply a poison that will give you a few more seconds by waking you up with each tick.",
+					["questID"] = 60290,	-- no other quest popped
 					["isDaily"] = true,
+					["coord"] = { 59.2, 46.6, 1565 },
 					["g"] = {
-						ach(14309, crit(15)),	-- Adventurer of Ardenweald / The Slumbering Emperor
+						crit(15, {	-- The Slumbering Emperor
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
+						i(175711),	-- Slumberwood Band
 					},
 				}),
 				n(168647, {	-- Valfir the Unrelenting

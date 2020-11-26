@@ -161,9 +161,13 @@ _.Zones =
 						},
 					}),
 					crit(6, {	-- Necro Tome
+						["sourceQuests"] = {
+							59917,	-- Kill Them, Of Course
+							58620,	-- Slaylines
+						},
 						["objectID"] = 355880,	-- The Necronom-i-nom
-						["coord"] = { 42.3, 23.3, 1536 },
 						["questID"] = 61470,
+						["coord"] = { 42.3, 23.3, 1536 },
 						["g"] = {
 							i(182732),	-- The Necronom-i-nom
 						},

@@ -7,6 +7,18 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1565, {	-- Ardenweald
 			n(QUESTS, {
+				q(60763, {	-- I Moustache You to Lend a Hand
+					["sourceQuests"] = { 60338 },	-- Journey to Ardenweald
+					["provider"] = { "n", 168341 },	-- Lady Moonberry
+					["coord"] = { 68.2, 18.3, 1565 },
+				}),
+				
+				
+				
+				
+				
+				
+				
 				currency(1831, {		-- Renown-NightFae
 					q(60108, {	-- Drust and Ashes
 						--["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
@@ -16,30 +28,25 @@ _.Zones =
 					}),
 				}),
 				-- Welcome to Ardenweald
-				q(60763, {	-- I Moustache You to Lend a Hand
-					["provider"] = { "n", 168341 },	-- Lady Moonberry
-					["coord"] = { 68.2, 18.3, 1565 },
-					["sourceQuest"] = 60338,	-- Journey to Ardenweald
-				}),
 				q(60341, {	-- First on the Agenda
 					["provider"] = { "n", 157788 },	-- Lady Moonberry
 					["coord"] = { 65.0, 19.5, 1565 },
-					["sourceQuest"] = 60763,	-- I Moustache You to Lend a Hand
+					["sourceQuests"] = { 60763 },	-- I Moustache You to Lend a Hand
 				}),
 				q(60778, {	-- Wildseed Rescue
 					["provider"] = { "n", 170175 },	-- Featherlight
 					["coord"] = { 65.0, 19.5, 1565 },
-					["sourceQuest"] = 60341,	-- First on the Agenda
+					["sourceQuests"] = { 60341 },	-- First on the Agenda
 				}),
 				q(60857, {	-- We Can't Save Them All
 					["provider"] = { "n", 170175 },	-- Featherlight
 					["coord"] = { 67.7, 20.6, 1565 },
-					["sourceQuest"] = 60778,	-- Wildseed Rescue
+					["sourceQuests"] = { 60778 },	-- Wildseed Rescue
 				}),
 				q(60859, {	-- Souls of the Forest
 					["provider"] = { "n", 170533 },	-- Featherlight
 					["coord"] = { 67.8, 24.1, 1565 },
-					["sourceQuest"] = 60857,	-- We Can't Save Them All
+					["sourceQuests"] = { 60857 },	-- We Can't Save Them All
 					["g"] = {
 						i(175675),	-- Spirit Tender's Cuffs
 						i(175678),	-- Starshroud Bracers
@@ -50,23 +57,23 @@ _.Zones =
 				q(57787, {	-- Keep to the Path
 					["provider"] = { "n", 170533 },	-- Featherlight
 					["coord"] = { 65.6, 27.9, 1565 },
-					["sourceQuest"] = 60859,	-- Souls of the Forest
+					["sourceQuests"] = { 60859 },	-- Souls of the Forest
 				}),
 				-- Tranquil Pools
 				q(57816, {	-- Dreamweaver
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
 					["coord"] = { 63.4, 36.2, 1565 },
-					["sourceQuest"] = 57787,	-- Keep to the Path
+					["sourceQuests"] = { 57787 },	-- Keep to the Path
 				}),
 				q(60567, {	-- Shooing Wildlife
 					["provider"] = { "n", 169116 },	-- Dreamweaver
 					["coord"] = { 64.2, 41.2, 1565 },
-					["sourceQuest"] = 57816,	-- Dreamweaver
+					["sourceQuests"] = { 57816 },	-- Dreamweaver
 				}),
 				q(60563, {	-- Tending to Wildseeds
 					["provider"] = { "n", 169116 },	-- Dreamweaver
 					["coord"] = { 64.2, 41.2, 1565 },
-					["sourceQuest"] = 57816,	-- Dreamweaver
+					["sourceQuests"] = { 57816 },	-- Dreamweaver
 				}),
 				q(60575, {	-- Belly Full of Fae
 					["provider"] = { "n", 169202 },	-- Dreamweaver
@@ -102,17 +109,17 @@ _.Zones =
 				q(57947, {	-- Spirits of the Glen
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
 					["coord"] = { 63.4, 36.2, 1565 },
-					["sourceQuest"] = 57787,	-- Keep to the Path
+					["sourceQuests"] = { 57787 },	-- Keep to the Path
 				}),
 				q(57948, {	-- Nothing Left to Give
 					["provider"] = { "n", 159638 },	-- Choofa
 					["coord"] = { 67.1, 32.1, 1565 },
-					["sourceQuest"] = 57947,	-- Spirits of the Glen
+					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
 				}),
 				q(57949, {	-- They Need to Calm Down
 					["provider"] = { "n", 159638 },	-- Choofa
 					["coord"] = { 97.1, 32.1, 1565 },
-					["sourceQuest"] = 57947,	-- Spirits of the Glen
+					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
 				}),
 				q(57950, {	-- Mizik the Haughty
 					["provider"] = { "n", 159639 },	-- Choofa
@@ -124,7 +131,7 @@ _.Zones =
 				q(57951, {	-- Souls Come Home
 					["provider"] = { "n", 159639 },	-- Choofa
 					["coord"] = { 67.1, 32.1, 1565 },
-					["sourceQuest"] = 57950,	-- Mizik the Haughty
+					["sourceQuests"] = { 57950 },	-- Mizik the Haughty
 					["g"] = {
 						i(175658),	-- Spirit Tender's Handwraps
 						i(175656),	-- Starshroud Gloves
@@ -136,27 +143,27 @@ _.Zones =
 				q(60600, {	-- Preparing for the Winter Queen
 					["provider"] = { "n", 169031 },	-- Lady Moonberry
 					["coord"] = { 63.5, 36.2, 1565 },
-					["sourceQuest"] = 57951,	-- Souls Come Home
+					["sourceQuests"] = { 57951 },	-- Souls Come Home
 				}),
 				q(60624, {	-- Ride to Heartwood Grove
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
 					["coord"] = { 63.5, 36.2, 1565 },
-					["sourceQuest"] = 60600,	-- Preparing for the Winter Queen
+					["sourceQuests"] = { 60600 },	-- Preparing for the Winter Queen
 				}),
 				q(60637, {	-- The End of Former Friends
 					["provider"] = { "n", 169686 },	-- Niya
 					["coord"] = { 66.9, 26.5, 1565 },
-					["sourceQuest"] = 60624,	-- Ride to Heartwood Grove
+					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
 				}),
 				q(60638, {	-- Recovering Wildseeds
 					["provider"] = { "n", 169686 },	-- Niya
 					["coord"] = { 66.9, 26.5, 1565 },
-					["sourceQuest"] = 60624,	-- Ride to Heartwood Grove
+					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
 				}),
 				q(60639, {	-- Heart of the Grove
 					["provider"] = { "n", 169686 },	-- Niya
 					["coord"] = { 66.9, 26.5, 1565 },
-					["sourceQuest"] = 60624,	-- Ride to Heartwood Grove
+					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
 				}),
 				q(60647, {	-- Recovering the Animacones
 					["provider"] = { "n", 169868 },	-- Niya
@@ -186,12 +193,12 @@ _.Zones =
 				q(60709, {	-- Recovering the Heart
 					["provider"] = { "n", 169956 },	-- Warden Casad
 					["coord"] = { 66.2, 23.8, 1565 },
-					["sourceQuest"] = 60671,	-- The Sacrifices We Must Make
+					["sourceQuests"] = { 60671 },	-- The Sacrifices We Must Make
 				}),
 				q(60724, {	-- Heartless
 					["provider"] = { "n", 170012 },	-- Niya
 					["coord"] = { 65.3, 26.6, 1565 },
-					["sourceQuest"] = 60709,	-- Recovering the Heart
+					["sourceQuests"] = { 60709 },	-- Recovering the Heart
 					["g"] = {
 						i(175648),	-- Spirit Tender's Robe
 						i(175651),	-- Starshroud Vest
@@ -202,28 +209,28 @@ _.Zones =
 				q(60519, {	-- Audience with the Winter Queen
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
 					["coord"] = { 63.4, 36.0, 1565 },
-					["sourceQuest"] = 60724,	-- Heartless
+					["sourceQuests"] = { 60724 },	-- Heartless
 				}),
 				-- When a Gorm Eats a God
 				q(57952, {	-- In Need of Gorm Gris
 					["provider"] = { "n", 158921 },	-- Guardian Kota
 					["coord"] = { 62.6, 36.0, 1565 },
-					["sourceQuest"] = 60519,	-- Audience with the Winter Queen
+					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
 				}),
 				q(57818, {	-- Nothing Goes to Waste
 					["provider"] = { "n", 158969 },	-- Master Sha'lor
 					["coord"] = { 64.8, 38.9, 1565 },
-					["sourceQuest"] = 57952,	-- In Need of Gorm Gris
+					["sourceQuests"] = { 57952 },	-- In Need of Gorm Gris
 				}),
 				q(57824, {	-- Collection Day
 					["provider"] = { "n", 158969 },	-- Master Sha'lor
 					["coord"] = { 64.8, 38.9, 1565 },
-					["sourceQuest"] = 57818,	-- Nothing Goes to Waste
+					["sourceQuests"] = { 57818 },	-- Nothing Goes to Waste
 				}),
 				q(57825, {	-- Delivery for Guardian Kota
 					["provider"] = { "n", 158969 },	-- Master Sha'lor
 					["coord"] = { 64.8, 38.9, 1565 },
-					["sourceQuest"] = 57824,	-- Collection Day
+					["sourceQuests"] = { 57824 },	-- Collection Day
 					["g"] = {
 						i(175741),	-- Gormgris Gorget
 					},
@@ -231,22 +238,22 @@ _.Zones =
 				q(61051, {	-- The Absent-Minded Artisan
 					["provider"] = { "n", 158921 },	-- Guardian Kota
 					["coord"] = { 62.6, 36.0, 1565 },
-					["sourceQuest"] = 57825,	-- Delivery for Guardian Kota
+					["sourceQuests"] = { 57825 },	-- Delivery for Guardian Kota
 				}),
 				q(58022, {	-- Finish What He Started
 					["provider"] = { "n", 171099 },	-- Guardian Kota
 					["coord"] = { 62,8, 32.1, 1565 },
-					["sourceQuest"] = 61051,	-- The Absent-Minded Artisan
+					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
 				}),
 				q(58023, {	-- One Big Problem
 					["provider"] = { "n", 171099 },	-- Guardian Kota
 					["coord"] = { 62,8, 32.1, 1565 },
-					["sourceQuest"] = 61051,	-- The Absent-Minded Artisan
+					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
 				}),
 				q(58024, {	-- Burrows Away
 					["provider"] = { "n", 171195 },	-- Gorm Burrow
 					["coord"] = { 62.1, 29.9, 1565 },
-					["sourceQuest"] = 61051,	-- The Absent-Minded Artisan
+					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
 				}),
 				q(58025, {	-- Queen of the Underground
 					["provider"] = { "n", 160155 },	-- Guardian Kota
@@ -260,7 +267,7 @@ _.Zones =
 				q(58026, {	-- When a Gorm Eats a God
 					["provider"] = { "n", 160155 },	-- Guardian Kota
 					["coord"] = { 59.6, 33.4, 1565 },
-					["sourceQuest"] = 58025,	-- Queen of the Underground
+					["sourceQuests"] = { 58025 },	-- Queen of the Underground
 					["g"] = {
 						i(175664),	-- Spirit Tender's Leggings
 						i(175666),	-- Starshroud Breeches
@@ -271,23 +278,23 @@ _.Zones =
 				q(57660, {	-- The Grove of Creation
 					["provider"] = { "n", 160121 },	-- Master Sha'lor
 					["coord"] = { 62.9, 36.2, 1565 },
-					["sourceQuest"] = 58026,	-- When a Gorm Eats a God
+					["sourceQuests"] = { 58026 },	-- When a Gorm Eats a God
 				}),
 				-- Glitterfall Heights
 				q(60521, {	-- Call of the Hunt
 					["provider"] = { "n", 169031 },	-- Lady Moonberry
 					["coord"] = { 63.5, 36.2, 1565 },
-					["sourceQuest"] = 60519,	-- Audience with the Winter Queen
+					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
 				}),
 				q(60628, {	-- The Missing Hunters
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
 					["coord"] = { 51.3, 34.0, 1565 },
-					["sourceQuest"] = 60521,	-- Call of the Hunt
+					["sourceQuests"] = { 60521 },	-- Call of the Hunt
 				}),
 				q(60629, {	-- Extreme Recycling
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
 					["coord"] = { 51.3, 34.0, 1565 },
-					["sourceQuest"] = 60521,	-- Call of the Hunt
+					["sourceQuests"] = { 60521 },	-- Call of the Hunt
 				}),
 				q(60630, {	-- Totem Eclipse
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
@@ -321,33 +328,33 @@ _.Zones =
 				q(60522, {	-- Return to Tirna Vaal
 					["provider"] = { "n", 169935 },	-- Ara'lon
 					["coord"] = { 51.3, 34.0, 1565 },
-					["sourceQuest"] = 60632,	-- I Know Your Face
+					["sourceQuests"] = { 60632 },	-- I Know Your Face
 				}),
 				q(60520, {	-- Nightmares Manifest
 					["provider"] = { "n", 169142 },	-- Dreamweaver
 					["coord"] = { 65.2, 36.6, 1565 },
-					["sourceQuest"] = 60522,	-- Return to Tirna Vaal
+					["sourceQuests"] = { 60522 },	-- Return to Tirna Vaal
 				}),
 				-- This is the Way
 				q(60738, {	-- The Way to Hibernal Hollow
 					["provider"] = { "n", 169142 },	-- Dreamweaver
 					["coord"] = { 65.2, 36.6, 1565 },
-					["sourceQuest"] = 60520,	-- Nightmares Manifest
+					["sourceQuests"] = { 60520 },	-- Nightmares Manifest
 				}),
 				q(60764, {	-- Soothing Song
 					["provider"] = { "n", 169142 },	-- Dreamweaver
 					["coord"] = { 64.5, 39.0, 1565 },
-					["sourceQuest"] = 60738,	-- The Way to Hibernal Hollow
+					["sourceQuests"] = { 60738 },	-- The Way to Hibernal Hollow
 				}),
 				q(60839, {	-- Remnants of the Wild Hunt
 					["provider"] = { "n", 170290 },	-- Ara'lon
 					["coord"] = { 62.3, 45.5, 1565 },
-					["sourceQuest"] = 60764,	-- Soothing Song
+					["sourceQuests"] = { 60764 },	-- Soothing Song
 				}),
 				q(60856, {	-- Toppling the Brute
 					["provider"] = { "n", 170485 },	-- Ara'lon
 					["coord"] = { 64.2, 49.9, 1565 },
-					["sourceQuest"] = 60839,	-- Remnants of the Wild Hunt
+					["sourceQuests"] = { 60839 },	-- Remnants of the Wild Hunt
 					["g"] = {
 						i(175986),	-- Grove Defender's Maul
 						i(175983),	-- Heartwood Bow
@@ -364,23 +371,23 @@ _.Zones =
 				q(60881, {	-- Ride of the Wild Hunt
 					["provider"] = { "n", 170485 },	-- Ara'lon
 					["coord"] = { 64.2, 49.9, 1565 },
-					["sourceQuest"] = 60856,	-- Toppling the Brute
+					["sourceQuests"] = { 60856 },	-- Toppling the Brute
 				}),
 				q(60901, {	-- Passage to Hibernal Hollow
 					["provider"] = { "n", 170290 },	-- Ara'lon
 					["coord"] = { 62.3, 45.5, 1565 },
-					["sourceQuest"] = 60881,	-- Ride of the Wild Hunt
+					["sourceQuests"] = { 60881 },	-- Ride of the Wild Hunt
 				}),
 				q(60905, {	-- Infusing the Wildseed
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
 					["coord"] = { 60.0, 53.9, 1565 },
-					["sourceQuest"] = 60901,	-- Passage to Hibernal Hollow
+					["sourceQuests"] = { 60901 },	-- Passage to Hibernal Hollow
 				}),
 				-- The Fallen Tree
 				q(58473, {	-- Echoes of Tirna Noch
 					["providers"] = { "n", 160963 },	-- Ara'lon
 					["coord"] = { 60.1, 52.8, 1565 },
-					["sourceQuest"] = 60905,	-- Infusing the Wildseed
+					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
 				}),
 				q(58480, {	-- Read the Roots
 					["providers"] = {
@@ -388,7 +395,7 @@ _.Zones =
 						{ "n", 161446 },	-- Ara'lon
 					},
 					["coord"] = { 68.4, 57.4, 1565 },
-					["sourceQuest"] = 58473,	-- Echoes of Tirna Noch
+					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
 				}),
 				q(58484, {	-- Take What You Can
 					["providers"] = {
@@ -396,7 +403,7 @@ _.Zones =
 						{ "n", 161446 },	-- Ara'lon
 					},
 					["coord"] = { 68.4, 57.4, 1565 },
-					["sourceQuest"] = 58473,	-- Echoes of Tirna Noch
+					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
 				}),
 				q(58483, {	-- Mementos
 					["providers"] = {
@@ -404,7 +411,7 @@ _.Zones =
 						{ "n", 161447 },	-- Niya
 					},
 					["coord"] = { 68.4, 57.4, 1565 },
-					["sourceQuest"] = 58473,	-- Echoes of Tirna Noch
+					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
 				}),
 				q(58486, {	-- He's Drust in the Way
 					["provider"] = { "n", 161446 },	-- Ara'lon
@@ -417,12 +424,12 @@ _.Zones =
 				q(58488, {	-- Go for the Heart
 					["provider"] = { "n", 161492 },	-- Ara'lon
 					["coord"] = { 71.4, 54.5, 1565 },
-					["sourceQuest"] = 58486,	-- He's Drust in the Way
+					["sourceQuests"] = { 58486 },	-- He's Drust in the Way
 				}),
 				q(58524, {	-- Sparkles Rain from Above
 					["provider"] = { "n", 161494 },	-- Lady Moonberry
 					["coord"] = { 71.5, 54.6, 1565 },
-					["sourceQuest"] = 58488,	-- Go for the Heart
+					["sourceQuests"] = { 58488 },	-- Go for the Heart
 					["g"] = {
 						i(175767),	-- Glitterwing Greatcloak
 					},
@@ -431,22 +438,22 @@ _.Zones =
 				q(58591, {	-- Despoilers
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
 					["coord"] = { 60.0, 53.9, 1565 },
-					["sourceQuest"] = 58524,	-- Sparkles Rain from Above
+					["sourceQuests"] = { 58524 },	-- Sparkles Rain from Above
 				}),
 				q(60572, {	-- For the Sake of Spirit
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
 					["coord"] = { 60.0, 53.9, 1565 },
-					["sourceQuest"] = 58524,	-- Sparkles Rain from Above
+					["sourceQuests"] = { 58524 },	-- Sparkles Rain from Above
 				}),
 				q(58589, {	-- The Restless Dreamer
 					["provider"] = { "n", 160962 },	-- Dreamweaver
 					["coord"] = { 60.0, 52.9, 1565 },
-					["sourceQuest"] = 60572,	-- For the Sake of Spirit
+					["sourceQuests"] = { 60572 },	-- For the Sake of Spirit
 				}),
 				q(58592, {	-- Caring for the Caretakers
 					["provider"] = { "n", 160962 },	-- Dreamweaver
 					["coord"] = { 60.0, 52.9, 1565 },
-					["sourceQuest"] = 60572,	-- For the Sake of Spirit
+					["sourceQuests"] = { 60572 },	-- For the Sake of Spirit
 				}),
 				q(58590, {	-- Visions of the Dreamer: Origins
 					["provider"] = { "n", 160962 },	-- Dreamweaver
@@ -485,12 +492,12 @@ _.Zones =
 				q(58714, {	-- The Forest Has Eyes
 					["provider"] = { "n", 161847 },	-- Lady Moonberry
 					["coord"] = { 59.9, 53.0, 1565 },
-					["sourceQuest"] = 58593,	-- End of the Dream
+					["sourceQuests"] = { 58593 },	-- End of the Dream
 				}),
 				q(58719, {	-- The Droman's Call
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
 					["coord"] = { 60.0, 53.9, 1565 },
-					["sourceQuest"] = 58593,	-- End of the Dream
+					["sourceQuests"] = { 58593 },	-- End of the Dream
 				}),
 				q(58720, {	-- Missing!
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
@@ -503,27 +510,27 @@ _.Zones =
 				q(60621, {	-- Enemies at the Gates
 					["provider"] = { "n", 162541 },	-- Hunt-Captain Korayn
 					["coord"] = { 55.9, 57.6, 1565 },
-					["sourceQuest"] = 58720,	-- Missing!
+					["sourceQuests"] = { 58720 },	-- Missing!
 				}),
 				q(58869, {	-- Battle for Hibernal Hollow
 					["provider"] = { "n", 169541 },	-- Droman Aliothe
 					["coord"] = { 59.9, 53.1, 1565 },
-					["sourceQuest"] = 60621,	-- Enemies at the Gates
+					["sourceQuests"] = { 60621 },	-- Enemies at the Gates
 				}),
 				q(60661, {	-- Dying Dreams
 					["provider"] = { "n", 161847 },	-- Lady Moonberry
 					["coord"] = { 60.0, 53.0, 1565 },
-					["sourceQuest"] = 58869,	-- Battle for Hibernal Hollow
+					["sourceQuests"] = { 58869 },	-- Battle for Hibernal Hollow
 				}),
 				q(58721, {	-- Awaken the Dreamer
 					["provider"] = { "n", 169869 },	-- Lord Herne
 					["coord"] = { 47.9, 53.8, 1565 },
-					["sourceQuest"] = 60661,	-- Dying Dreams!
+					["sourceQuests"] = { 60661 },	-- Dying Dreams!
 				}),
 				q(58723, {	-- The Court of Winter
 					["provider"] = { "n", 162968 },	-- Winter Queen
 					["coord"] = { 45.2, 63.0, 1565 },
-					["sourceQuest"] = 58721,	-- Awaken the Dreamer
+					["sourceQuests"] = { 58721 },	-- Awaken the Dreamer
 					["g"] = {
 						i(175710),	-- Night Courtier's Ring
 					},
@@ -531,7 +538,7 @@ _.Zones =
 				q(58724, {	-- The Queen's Request
 					["provider"] = { "n", 161847 },	-- Winter Queen
 					["coord"] = { 48.9, 33.5, 1565 },
-					["sourceQuest"] = 58723,	-- The Court of Winter!
+					["sourceQuests"] = { 58723 },	-- The Court of Winter!
 				}),
 				-- End of Zone Achievement Quests
 				-- Start of the Covenant Quests
@@ -539,57 +546,57 @@ _.Zones =
 				q(61479, {	-- The Boon of Shapes
 					["provider"] = { "n", 172431 },	-- Lady Moonberry
 					["coord"] = { 39.7, 60.8, 1565 },
-					["sourceQuest"] = 61475,	-- The Heart of the Forest
+					["sourceQuests"] = { 61475 },	-- The Heart of the Forest
 				}),
 				q(61541, {	-- The Forge of Bonds
 					["provider"] = { "n", 172431 },	-- Lady Moonberry
 					["coord"] = { 49.2, 39.9, 1565 },
-					["sourceQuest"] = 61475,	-- The Heart of the Forest
+					["sourceQuests"] = { 61475 },	-- The Heart of the Forest
 				}),
 				q(61542, {	-- The Boon of Binding
 					["provider"] = { "n", 158553 },	-- Flutterby
 					["coord"] = { 33.9, 43.4, 1565 },
-					["sourceQuest"] = 61541,	-- The Forge of Bonds
+					["sourceQuests"] = { 61541 },	-- The Forge of Bonds
 				}),
 				q(61550, {	-- Strengthening the Bond
 					["provider"] = { "n", 172677 },	-- Niya
 					["coord"] = { 33.4, 45.2, 1565 },
-					["sourceQuest"] = 61542,	-- The Boon of Binding
+					["sourceQuests"] = { 61542 },	-- The Boon of Binding
 				}),
 				q(61552, {	-- The Hunt Watches
 					["provider"] = { "n", 172677 },	-- Niya
 					["coord"] = { 33.4, 45.2, 1565 },
-					["sourceQuest"] = 61550,	-- Strengthening the Bond
+					["sourceQuests"] = { 61550 },	-- Strengthening the Bond
 				}),
 				q(61553, {	-- Know Where to Strike
 					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 					["coord"] = { 44.6, 56.2, 1565 },
-					["sourceQuest"] = 61552,	-- The Hunt Watches
+					["sourceQuests"] = { 61552 },	-- The Hunt Watches
 				}),
 				q(61554, {	-- The Play's The Thing
 					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 					["coord"] = { 44.6, 56.2, 1565 },
-					["sourceQuest"] = 61553,	-- Know Where to Strike
+					["sourceQuests"] = { 61553 },	-- Know Where to Strike
 				}),
 				q(58104, {	-- Show, Don't Tell
 					["provider"] = { "n", 161509 },	-- Lady Moonberry
 					["coord"] = { 44.9, 35.7, 1565 },
-					["sourceQuest"] = 61554,	-- The Play's The Thing
+					["sourceQuests"] = { 61554 },	-- The Play's The Thing
 				}),
 				q(58157, {	-- Break a Leg
 					["provider"] = { "n", 160484 },	-- Featherlight
 					["coord"] = { 40.7, 42.7, 1565 },
-					["sourceQuest"] = 58104,	-- Show, Don't Tell
+					["sourceQuests"] = { 58104 },	-- Show, Don't Tell
 				}),
 				q(58158, {	-- The Fourth Wall, er, War
 					["provider"] = { "n", 160484 },	-- Featherlight
 					["coord"] = { 40.7, 42.7, 1565 },
-					["sourceQuest"] = 58157,	-- Break a Leg
+					["sourceQuests"] = { 58157 },	-- Break a Leg
 				}),
 				q(58159, {	-- What's My Motivation?
 					["provider"] = { "n", 160484 },	-- Featherlight
 					["coord"] = { 40.7, 42.7, 1565 },
-					["sourceQuest"] = 58158,	-- The Fourth Wall, er, War
+					["sourceQuests"] = { 58158 },	-- The Fourth Wall, er, War
 					["g"] = {
 						i(180263),	-- Dreamlight Runedeer
 					},
@@ -597,7 +604,7 @@ _.Zones =
 				q(58160, {	-- For Queen and Grove!
 					["provider"] = { "n", 160500 },	-- Ysera
 					["coord"] = { 42.4, 45.2, 1565 },
-					["sourceQuest"] = 58159,	-- What's My Motivation?
+					["sourceQuests"] = { 58159 },	-- What's My Motivation?
 					["g"] = {
 						spell(338946),	-- World Quests
 					},
@@ -606,52 +613,52 @@ _.Zones =
 				q(60233, {	-- Souls of the Damned (Ardenweald)
 					["provider"] = { "n", 158553 },	-- Flutterby
 					["coord"] = { 33.9, 43.5, 1565 },
-					["sourceQuest"] = 58160,	-- For Queen and Grove!
+					["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				}),
 				q(61508, {	-- Soul Salvation (Ardenweald)
 					["provider"] = { "n", 158553 },	-- Flutterby
 					["coord"] = { 33.9, 43.5, 1565 },
-					["sourceQuest"] = 60233,	-- Souls of the Damned
+					["sourceQuests"] = { 60233 },	-- Souls of the Damned
 				}),
 				-- Daughter of the Night Warrior
 				q(59246, {	-- Daughter of the Night Warrior (Horde)
 					["provider"] = { "n", 160262 },	-- Ysera
 					["coord"] = { 44.9, 38.8, 1565 },
-					--["sourceQuest"] =
+					--["sourceQuests"] = {  },	-- 
 					["races"] = HORDE_ONLY,
 				}),
 				q(59179, {	-- Daughter of the Night Warrior (Alliance)
 					["provider"] = { "n", 160262 },	-- Ysera
 					["coord"] = { 44.9, 38.8, 1565 },
-					--["sourceQuest"] =
+					--["sourceQuests"] = {  },	-- 
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- From Ardenweald to the Maw and back
 				q(62536, {	-- The Lost of Teldrassil
 					["provider"] = { "n", 160262 },	-- Ysera
 					["coord"] = { 44.9, 38.8, 1565 },
-					["sourceQuest"] = 59242,	-- Their New Home
+					["sourceQuests"] = { 59242 },	-- Their New Home
 				}),
 				-- Da Boss
 				q(59809, {	-- On De Other Side
 					["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-					["sourceQuest"] = 62536,	-- The Lost of Teldrassil
+					["sourceQuests"] = { 62536 },	-- The Lost of Teldrassil
 				}),
 				q(59811, {	-- Taking Inventory
 					["provider"] = { "n", 166281 },	-- Bwonsamdi
-					["sourceQuest"] = 59809,	-- On De Other Side
+					["sourceQuests"] = { 59809 },	-- On De Other Side
 				}),
 				q(59812, {	-- Following the Trail
 					["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-					["sourceQuest"] = 59811,	-- Taking Inventory
+					["sourceQuests"] = { 59811 },	-- Taking Inventory
 				}),
 				q(59813, {	-- Minions of Mueh'zala
 					["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-					["sourceQuest"] = 59812,	-- Following the Trail
+					["sourceQuests"] = { 59812 },	-- Following the Trail
 				}),
 				q(59815, {	-- Stolen Loa
 					["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-					["sourceQuest"] = 59812,	-- Following the Trail
+					["sourceQuests"] = { 59812 },	-- Following the Trail
 				}),
 				q(59817, {	-- Winter Be Comin'
 					["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
@@ -669,17 +676,17 @@ _.Zones =
 				q(59818, {	-- Gathering The Hunt
 					["provider"] = { "n", 156634 },	-- Winter Queen
 					["coord"] = { 51.3, 27.2, 1565 },
-					["sourceQuest"] = 59817,	-- Winter Be Comin'
+					["sourceQuests"] = { 59817 },	-- Winter Be Comin'
 				}),
 				q(59819, {	-- Cleansing the Forest
 					["provider"] = { "n", 167823 },	-- Lady Moonberry
 					["coord"] = { 66.6, 55.6, 1565 },
-					["sourceQuest"] = 59818,	-- Gathering The Hunt
+					["sourceQuests"] = { 59818 },	-- Gathering The Hunt
 				}),
 				q(59821, {	-- Report to the Queen
 					["provider"] = { "n", 167823 },	-- Lady Moonberry
 					["coord"] = { 68.4, 65.2, 1565 },
-					["sourceQuest"] = 59819,	-- Cleansing the Forest
+					["sourceQuests"] = { 59819 },	-- Cleansing the Forest
 					["g"] = {
 						i(179657),	-- Faewoven Tunic
 						i(175576),	-- Faewoven Raiment
@@ -694,22 +701,22 @@ _.Zones =
 				q(58610, {	-- The Speaker of Elune
 					["provider"] = { "n", 160262 },	-- Ysera
 					["coord"] = { 44.7, 39.0, 1565 },
-					["sourceQuest"] = 59821,	-- Report to the Queen
+					["sourceQuests"] = { 59821 },	-- Report to the Queen
 				}),
 				q(58647, {	-- Broken Webs
 					["provider"] = { "n", 161786 },	-- Qadarin
 					["coord"] = { 42.8, 36.4, 1565 },
-					["sourceQuest"] = 58610,	-- The Speaker of Elune
+					["sourceQuests"] = { 58610 },	-- The Speaker of Elune
 				}),
 				q(58669, {	-- A Little Pruning
 					["provider"] = { "n", 161786 },	-- Qadarin
 					["coord"] = { 42.8, 36.4, 1565 },
-					["sourceQuest"] = 58610,	-- The Speaker of Elune
+					["sourceQuests"] = { 58610 },	-- The Speaker of Elune
 				}),
 				q(59008, {	-- Spriggan Snares
 					["provider"] = { "n", 163385 },	-- Cirrik
 					["coord"] = { 39.0, 52.4, 1565 },
-					["sourceQuest"] = 58610,	-- The Speaker of Elune
+					["sourceQuests"] = { 58610 },	-- The Speaker of Elune
 				}),
 				q(58704, {	-- The Garden of Night
 					["provider"] = { "n", 161934 },	-- Helpful Soul
@@ -729,37 +736,37 @@ _.Zones =
 				q(58871, {	-- Broken Harts
 					["provider"] = { "n", 161785 },	-- Thiernax
 					["coord"] = { 39.0, 59.4, 1565 },
-					["sourceQuest"] = 58704,	-- The Garden of Night
+					["sourceQuests"] = { 58704 },	-- The Garden of Night
 				}),
 				q(59725, {	-- Archivist on the Edge
 					["provider"] = { "n", 161509 },	-- Lady Moonberry
 					["coord"] = { 44.7, 39.0, 1565 },
-					["sourceQuest"] = 58871,	-- Broken Harts
+					["sourceQuests"] = { 58871 },	-- Broken Harts
 				}),
 				q(59063, {	-- Curses!
 					["provider"] = { "n", 165867 },	-- Archivist Dreyden
 					["coord"] = { 63.6, 22.6, 1565 },
-					["sourceQuest"] = 59725,	-- Archivist on the Edge
+					["sourceQuests"] = { 59725 },	-- Archivist on the Edge
 				}),
 				q(59068, {	-- A Secret Never Spoken
 					["provider"] = { "n", 161509 },	-- Lady Moonberry
 					["coord"] = { 44.6, 36.4, 1565 },
-					["sourceQuest"] = 59063,	-- Curses!
+					["sourceQuests"] = { 59063 },	-- Curses!
 				}),
 				q(59069, {	-- A Token of Lost Love
 					["provider"] = { "n", 160262 },	-- Ysera
 					["coord"] = { 44.4, 38.2, 1565 },
-					["sourceQuest"] = 59068,	-- A Secret Never Spoken
+					["sourceQuests"] = { 59068 },	-- A Secret Never Spoken
 				}),
 				q(59070, {	-- A Sacrifice of Anima
 					["provider"] = { "n", 161509 },	-- Lady Moonberry
 					["coord"] = { 44.6, 36.4, 1565 },
-					["sourceQuest"] = 59069,	-- A Token of Lost Love
+					["sourceQuests"] = { 59069 },	-- A Token of Lost Love
 				}),
 				q(59071, {	-- Mending a Broken Hart
 					["provider"] = { "n", 165867 },	-- Archivist Dreyden
 					["coord"] = { 63.6, 22.6, 1565 },
-					["sourceQuest"] = 59070,	-- A Sacrifice of Anima
+					["sourceQuests"] = { 59070 },	-- A Sacrifice of Anima
 					["g"] = {
 						i(181301),	-- Faewoven Branches
 						i(182172, {	-- Equine Soul
@@ -770,22 +777,22 @@ _.Zones =
 				q(52883, {	-- The Forest Will Sing Your Name
 					["provider"] = { "n", 156634 },	-- Winter Queen
 					["coord"] = { 51.8, 28.1, 1565 },
-					["sourceQuest"] = 58160,	-- For Queen and Grove!
+					["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				}),
 				q(62884, {	-- Who Shapes the Forest
 					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
 					["coord"] = { 40.7, 33.1, 1565 },
-					["sourceQuest"] = 52883,	-- The Forest Will Sing Your Name
+					["sourceQuests"] = { 52883 },	-- The Forest Will Sing Your Name
 				}),
 				q(62697, {	-- A Call to Service
 					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
 					["coord"] = { 40.7, 33.1, 1565 },
-					["sourceQuest"] = 62884,	-- Who Shapes the Forest
+					["sourceQuests"] = { 62884 },	-- Who Shapes the Forest
 				}),
 				q(62693, {	-- A Calling in Ardenweald
 					["provider"] = { "n", 165702 },	-- Blodwyn
 					["coord"] = { 46.4, 50.6, 1565 },
-					["sourceQuest"] = 62884,	-- Who Shapes the Forest
+					["sourceQuests"] = { 62884 },	-- Who Shapes the Forest
 					["g"] = {
 						i(181475),	-- Tribute of the Grove Wardens
 					},
@@ -793,74 +800,74 @@ _.Zones =
 				q(62890, {	-- The Life-blood of the Forest
 					["provider"] = { "n", 165702 },	-- Blodwyn
 					["coord"] = { 46.4, 50.6, 1565 },
-					["sourceQuest"] = 62693,	-- A Calling in Ardenweald
+					["sourceQuests"] = { 62693 },	-- A Calling in Ardenweald
 				}),
 				q(62891, {	-- Into the Reservoir
 					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
 					["coord"] = { 40.7, 33.2, 1565 },
-					["sourceQuest"] = 62890,	-- The Life-blood of the Forest
+					["sourceQuests"] = { 62890 },	-- The Life-blood of the Forest
 				}),
 				q(62892, {	-- Recover the Lost
 					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
 					["coord"] = { 40.7, 33.2, 1565 },
-					["sourceQuest"] = 62891,	-- Into the Reservoir
+					["sourceQuests"] = { 62891 },	-- Into the Reservoir
 				}),
 				q(62893, {	-- Do What We Cannot
 					["provider"] = { "n", 158553 },	-- Flutterby
 					["coord"] = { 33.9, 43.4, 1565 },
-					["sourceQuest"] = 62892,	-- Recover the Lost
+					["sourceQuests"] = { 62892 },	-- Recover the Lost
 				}),
 				-- The Queen's Conservatory
 				q(62624, {	-- The Queen's Conservatory
 					["provider"] = { "n", 173171 },	-- Conservator Saola
 					["coord"] = { 53.2, 43.5, 1565 },
-					["sourceQuest"] = 58160,	-- For Queen and Grove!
+					["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				}),
 				q(59862, {	-- A Savior for Lost Souls
 					["provider"] = { "n", 166476 },	-- Warden Casad
 					["coord"] = { 69.9, 44.7, 1662 },
-					["sourceQuest"] = 62624,	-- The Queen's Conservatory
+					["sourceQuests"] = { 62624 },	-- The Queen's Conservatory
 				}),
 				q(59872, {	-- How to Save a God
 					["provider"] = { "n", 166476 },	-- Warden Casad
 					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuest"] = 59862,	-- A Savior for Lost Souls
+					["sourceQuests"] = { 59862 },	-- A Savior for Lost Souls
 				}),
 				q(59873, {	-- Greeting a God
 					["provider"] = { "n", 166476 },	-- Warden Casad
 					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuest"] = 59872,	-- How to Save a God
+					["sourceQuests"] = { 59872 },	-- How to Save a God
 				}),
 --[[ TODO
 				q(59999, {	-- Rebirth of the Grove
 					["provider"] = { "n", 166476 },	-- Warden Casad
 					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuest"] = 59873,	-- Greeting a God
+					["sourceQuests"] = { 59873 },	-- Greeting a God
 				}),
 				q(59871, {	-- Catalyze This
 					["provider"] = { "n", 166476 },	-- Warden Casad
 					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuest"] = 59999,	-- Rebirth of the Grove
+					["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 				}),
 				q(62467, {	-- Seed of a Thought
 					["provider"] = { "n", 166476 },	-- Warden Casad
 					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuest"] = 59871,	-- Catalyze This
+					["sourceQuests"] = { 59871 },	-- Catalyze This
 				}),
 				q(60640, {	-- Regrowth of the Grove
 					["provider"] = { "n", 166476 },	-- Warden Casad
 					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuest"] = 62467,	-- Seed of a Thought
+					["sourceQuests"] = { 62467 },	-- Seed of a Thought
 				}),
 				q(60641, {	-- Blossoming of the Grove
 					["provider"] = { "n", 166476 },	-- Warden Casad
 					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuest"] = 60640,	-- Regrowth of the Grove
+					["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
 				}),
 				q(60642, {	-- The Grove Resplendent
 					["provider"] = { "n", 166476 },	-- Warden Casad
 					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuest"] = 60641,	-- Blossoming of the Grove
+					["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
 				}),
 ]]--
 				q(62447, {	-- A Rare and Unusual Spirit
@@ -898,19 +905,19 @@ _.Zones =
 				q(61984, {	-- Replenish the Reservoir
 					["provider"] = { "n", 158553 },	-- Flutterby
 					["coord"] = { 33.9, 43.5, 1565 },
-					["sourceQuest"] = 58160,	-- For Queen and Grove!
+					["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 					["isWeekly"] = true,
 				}),
 				q(61331, {	-- Return Lost Souls
 					["provider"] = { "n", 158553 },	-- Flutterby
 					["coord"] = { 33.9, 43.5, 1565 },
-					["sourceQuest"] = 58160,	-- For Queen and Grove!
+					["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 					["isWeekly"] = true,
 				}),
 				q(62441, {	-- Fair Exchange for a Soul
 					["provider"] = { "n", 166476 },	-- Warden Casad
 					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuest"] = 59873,	-- Greeting a God
+					["sourceQuests"] = { 59873 },	-- Greeting a God
 					["isWeekly"] = true,
 				}),
 				-- Covenant progress
@@ -940,21 +947,21 @@ _.Zones =
 				q(58265, {	-- Blooming Villains
 					["provider"] = { "n", 160929 },	-- Guardian Molan
 					["coord"] = { 60.6, 51.3, 1565 },
-					["sourceQuest"] = 58524,	-- Sparkles Rain from Above
+					["sourceQuests"] = { 58524 },	-- Sparkles Rain from Above
 				}),
 				q(58266, {	-- Break It Down
 					["provider"] = { "n", 160749 },	-- Primrose
 					["coord"] = { 53.4, 58.7, 1565 },
-					["sourceQuest"] = 58265,	-- Blooming Villains
+					["sourceQuests"] = { 58265 },	-- Blooming Villains
 				}),
 				q(58264, {	-- Wake Up, Get Up, Get Out There
 					["provider"] = { "n", 160749 },	-- Primrose
 					["coord"] = { 53.4, 58.7, 1565 },
-					["sourceQuest"] = 58265,	-- Blooming Villains
+					["sourceQuests"] = { 58265 },	-- Blooming Villains
 				}),
 				q(58267, {	-- Beneath the Mask
 					["provider"] = { "n", 160749 },	-- Primrose
-					["sourceQuest"] = 58264,	-- Wake Up, Get Up, Get Out There
+					["sourceQuests"] = { 58264 },	-- Wake Up, Get Up, Get Out There
 					["g"] = {
 						i(175712),	-- Shimmerbough Loop
 					},
@@ -963,17 +970,17 @@ _.Zones =
 				q(57651, {	-- Trouble in the Banks
 					["provider"] = { "n", 158345 },	-- Lady of the Falls
 					["coord"] = { 51.1, 33.8, 1565 },
-					["sourceQuest"] = 60522,	-- Return to Tirna Vaal
+					["sourceQuests"] = { 60522 },	-- Return to Tirna Vaal
 				}),
 				q(59621, {	-- Breaking A Few Eggs
 					["provider"] = { "n", 158422 },	-- Foreman Thorodir
 					["coord"] = { 46.6, 29.4, 1565 },
-					["sourceQuest"] = 57651,	-- Trouble in the Banks
+					["sourceQuests"] = { 57651 },	-- Trouble in the Banks
 				}),
 				q(59622, {	-- Tending to the Tenders
 					["provider"] = { "n", 158422 },	-- Foreman Thorodir
 					["coord"] = { 46.6, 29.4, 1565 },
-					["sourceQuest"] = 57651,	-- Trouble in the Banks
+					["sourceQuests"] = { 57651 },	-- Trouble in the Banks
 				}),
 				q(57653, {	-- Unsafe Workplace
 					["provider"] = { "n", 158422 },	-- Foreman Thorodir
@@ -990,7 +997,7 @@ _.Zones =
 				q(57657, {	-- Tied Totem Toter
 					["provider"] = { "n", 158489 },	-- Fluttercatch
 					["coord"] = { 48.0, 24.3, 1565 },
-					["sourceQuest"] = 57656,	-- Gifts of the Forest
+					["sourceQuests"] = { 57656 },	-- Gifts of the Forest
 				}),
 				q(59656, {	-- Well, Tell the Lady
 					["provider"] = { "n", 158422 },	-- Foreman Thorodir
@@ -1004,12 +1011,12 @@ _.Zones =
 				q(57865, {	-- Ages-Echoing Wisdom
 					["provider"] = { "n", 158489 },	-- Lady of the Falls
 					["coord"] = { 51.1, 33.8, 1565 },
-					["sourceQuest"] = 59656,	-- Well, Tell the Lady
+					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
 				}),
 				q(57866, {	-- Idle Hands
 					["provider"] = { "n", 158489 },	-- Lady of the Falls
 					["coord"] = { 51.1, 33.8, 1565 },
-					["sourceQuest"] = 59656,	-- Well, Tell the Lady
+					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
 				}),
 				q(57867, {	-- The Sweat of Our Brow
 					["provider"] = { "n", 160045 },	-- Helpful Faerie
@@ -1026,7 +1033,7 @@ _.Zones =
 				q(57871, {	-- Outplayed
 					["provider"] = { "n", 159465 },	-- Elder Gwenna
 					["coord"] = { 59.0, 24.3, 1565 },
-					["sourceQuest"] = 57870,	-- The Games We Play
+					["sourceQuests"] = { 57870 },	-- The Games We Play
 				}),
 				q(57868, {	-- Craftsman Needs No Tools
 					["provider"] = { "n", 159427 },	-- Elder Finnan
@@ -1064,22 +1071,22 @@ _.Zones =
 				q(58161, {	-- Forest Disappearances
 					["provider"] = { "n", 160440 },	-- Brigdin
 					["coord"] = { 64.4, 35.2, 1565 },
-					["sourceQuest"] = 60519,	-- Audience with the Winter Queen
+					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
 				}),
 				q(58164, {	-- Cult of Personality
 					["provider"] = { "n", 160439 },	-- Partik
 					["coord"] = { 70.3, 32.5, 1565 },
-					["sourceQuest"] = 58161,	-- Forest Disappearances
+					["sourceQuests"] = { 58161 },	-- Forest Disappearances
 				}),
 				q(58162, {	-- Mysterious Masks
 					["provider"] = { "n", 160439 },	-- Partik
 					["coord"] = { 70.3, 32.5, 1565 },
-					["sourceQuest"] = 58161,	-- Forest Disappearances
+					["sourceQuests"] = { 58161 },	-- Forest Disappearances
 				}),
 				q(58163, {	-- A Desperate Solution
 					["provider"] = { "o", 349515 },	-- Battered Journal									-- TODO: Need to add the Object
 					["coord"] = { 70.3, 32.5, 1565 },
-					["sourceQuest"] = 58161,	-- Forest Disappearances
+					["sourceQuests"] = { 58161 },	-- Forest Disappearances
 				}),
 				q(59802, {	-- The Crumbling Village
 					["provider"] = { "n", 160439 },	-- Partik
@@ -1093,12 +1100,12 @@ _.Zones =
 				q(58165, {	-- Cut the Roots
 					["provider"] = { "n", 160439 },	-- Partik
 					["coord"] = { 74.3, 32.3, 1565 },
-					["sourceQuest"] = 59802,	-- The Crumbling Village
+					["sourceQuests"] = { 59802 },	-- The Crumbling Village
 				}),
 				q(59801, {	-- Take the Power
 					["provider"] = { "n", 160439 },	-- Partik
 					["coord"] = { 74.3, 32.3, 1565 },
-					["sourceQuest"] = 59802,	-- The Crumbling Village
+					["sourceQuests"] = { 59802 },	-- The Crumbling Village
 				}),
 				q(58166, {	-- Unknown Assailants
 					["provider"] = { "n", 160439 },	-- Partik
@@ -1122,27 +1129,27 @@ _.Zones =
 				q(60061, {	-- Tough as Silk
 					["provider"] = { "n", 159270 },	-- Caretaker Lillythistle
 					["coord"] = { 38.9, 29.9, 1565 },
-					["sourceQuest"] = 57661,	-- Silk Shortage
+					["sourceQuests"] = { 57661 },	-- Silk Shortage
 				}),
 				q(60062, {	-- The Shattered Harp
 					--["provider"] = { "o", 350804 },	-- Broken Harp							-- TODO: Need to add the Object
 					["coord"] = { 38.1, 28.7, 1565 },
-					["sourceQuest"] = 57661,	-- Silk Shortage
+					["sourceQuests"] = { 57661 },	-- Silk Shortage
 				}),
 				q(60063, {	-- A Song for Silkstriders
 					["provider"] = { "n", 167047 },	-- Artisan Rees
 					["coord"] = { 37.0, 29.6, 1565 },
-					["sourceQuest"] = 60062,	-- The Shattered Harp
+					["sourceQuests"] = { 60062 },	-- The Shattered Harp
 				}),
 				q(60064, {	-- Save Ol' Gertie
 					["provider"] = { "n", 167047 },	-- Artisan Rees
 					["coord"] = { 37.0, 29.6, 1565 },
-					["sourceQuest"] = 60062,	-- The Shattered Harp
+					["sourceQuests"] = { 60062 },	-- The Shattered Harp
 				}),
 				q(60065, {	-- Thread of Hope
 					["provider"] = { "n", 159388 },	-- Gertie Jr.
 					["coord"] = { 37.2, 25.9, 1565 },
-					["sourceQuest"] = 60064,	-- Save Ol' Gertie
+					["sourceQuests"] = { 60064 },	-- Save Ol' Gertie
 				}),
 				q(60066, {	-- Silk for Ardenweald
 					["provider"] = { "n", 160439 },	-- Partik
@@ -1164,12 +1171,12 @@ _.Zones =
 				q(57455, {	-- Mushroom For Improvement
 					["provider"] = { "n", 157710 },	-- Cortinarius
 					["coord"] = { 33.2, 36.3, 1565 },
-					["sourceQuest"] = 57454,	-- Silence in the Stalks
+					["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 				}),
 				q(57458, {	-- Ring Repairs
 					["provider"] = { "n", 157710 },	-- Cortinarius
 					["coord"] = { 33.2, 36.3, 1565 },
-					["sourceQuest"] = 57454,	-- Silence in the Stalks
+					["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 				}),
 				q(57459, {	-- Fighting For Fungus
 					["provider"] = { "n", 157710 },	-- Cortinarius
@@ -1182,17 +1189,17 @@ _.Zones =
 				q(57463, {	-- My Way or the Hyphae
 					["provider"] = { "n", 166982 },	-- Marasmius
 					["coord"] = { 29.5, 34.6, 1565 },
-					["sourceQuest"] = 57454,	-- Silence in the Stalks
+					["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 				}),
 				q(57583, {	-- Through the Veil
 					["provider"] = { "n", 166982 },	-- Marasmius
 					["coord"] = { 29.5, 34.6, 1565 },
-					["sourceQuest"] = 57454,	-- Silence in the Stalks
+					["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 				}),
 				q(62611, {	-- Hyphae Patrol: Heartwood Grove
 					["provider"] = { "n", 167455 },	-- Marasmius
 					["coord"] = { 52.7, 56.1, 1565 },
-					["sourceQuest"] = 57583,	-- Through the Veil
+					["sourceQuests"] = { 57583 },	-- Through the Veil
 				}),
 				-- Anima Conductor Tier 1
 				q(60723, {	-- The Roots Thirst

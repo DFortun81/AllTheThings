@@ -22,6 +22,11 @@ _.Zones =
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
 				}),
+				q(58623, {	-- A Complete Set
+					["sourceQuests"] = { 59994 },	-- Trust Fall
+					["provider"] = { "n", 166664 },	-- Ta'eran
+					["coord"] = { 43.0, 25.1, 1536 },
+				}),
 				q(57987, {	-- A Deadly Distraction
 					["sourceQuests"] = { 57984 },	-- The Ones in Charge
 					["provider"] = { "n", 165397 },	-- Secutor Mevix
@@ -55,6 +60,11 @@ _.Zones =
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
 					["provider"] = { "o", 353645 },	-- Marileth's Journal
 					["coord"] = { 56.5, 57.2, 1536 },
+				}),
+				q(60900, {	-- Archival Protection
+					["sourceQuests"] = { 58622 },	-- Secrets Among the Shelves
+					["provider"] = { "n", 170667 },	-- Ta'eran
+					["coord"] = { 41.7, 23.6, 1536 },
 				}),
 				q(57983, {	-- Archon Save Us
 					["sourceQuests"] = { 59616 },	-- Army of One
@@ -325,6 +335,14 @@ _.Zones =
 						i(175707),	-- Signet of the Learned
 					},
 				}),
+				q(58622, {	-- Secrets Among the Shelves
+					["sourceQuests"] = {
+						59917,	-- Kill Them, Of Course
+						58620,	-- Slaylines
+					},
+					["provider"] = { "n", 166664 },	-- Ta'eran
+					["coord"] = { 43.0, 25.1, 1536 },
+				}),
 				q(59190, {	-- Seek Your Mark
 					["sourceQuests"] = {
 						59210,	-- Tainted Cores
@@ -338,6 +356,11 @@ _.Zones =
 					["sourceQuests"] = { 58088 },	-- Juicing Up
 					["provider"] = { "n", 159833 },	-- So'narynar
 					["coord"] = { 53.7, 47.8, 1536 },
+				}),
+				q(58620, {	-- Slaylines
+					["sourceQuests"] = { 58621 },	-- Repeat After Me
+					["provider"] = { "n", 166664 },	-- Ta'eran
+					["coord"] = { 43.0, 25.1, 1536 },
 				}),
 				q(58027, {	-- Slime, Anyone?
 					["sourceQuests"] = {
@@ -359,6 +382,14 @@ _.Zones =
 					["sourceQuests"] = { 59130 },	-- The House of Plagues
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
+				}),
+				q(58794, {	-- Stabbing Wasteward
+					["sourceQuests"] = {
+						58785,	-- Smack And Grab
+						58750,	-- Take The Bull By The Horns
+					},
+					["provider"] = { "n", 162474 },	-- Dundae
+					["coord"] = { 46.8, 48.5, 1536 },
 				}),
 				q(59025, {	-- Straight to the Heart
 					["sourceQuests"] = { 59190 },	-- Seek Your Mark
@@ -548,6 +579,16 @@ _.Zones =
 						i(180827),	-- Maldraxxi Warhorn
 					},
 				}),
+				q(59994, {	-- Trust Fall
+					["sourceQuests"] = { 60900 },	-- Archival Protection
+					["provider"] = { "n", 162476 },	-- Ta'eran
+					["g"] = {
+						i(175517),	-- Corpse-Stitcher's Slippers
+						i(175519),	-- Deceitful Agent's Treads
+						i(175518),	-- Flesh Architect's Galoshes
+						i(175516),	-- Cruel Executioner's Stompers
+					},
+				}),
 				q(57993, {	-- Two of Them, Two of Us
 					["sourceQuests"] = { 57982 },	-- Breaking Down Barriers
 					["provider"] = { "n", 165397 },	-- Secutor Mevix
@@ -631,46 +672,6 @@ _.Zones =
 				}),
 				-- Sojourner of Maldraxxus
 				-- Theater of Pain
-				-- Archival Protection
-				q(58620, {	-- Slaylines
-					["provider"] = { "n", 166664 },	-- Ta'eran
-					["coord"] = { 43.0, 25.1, 1536 },
-					["sourceQuests"] = { 58621 },	-- Repeat After Me
-				}),
-				q(58622, {	-- Secrets Among the Shelves
-					["provider"] = { "n", 166664 },	-- Ta'eran
-					["coord"] = { 43.0, 25.1, 1536 },
-					["sourceQuests"] = { 58620 },	-- Slaylines
-				}),
-				q(60900, {	-- Archival Protection
-					["provider"] = { "n", 170667 },	-- Ta'eran
-					["coord"] = { 41.7, 23.6, 1536 },
-					["sourceQuests"] = { 58622 },	-- Secrets Among the Shelves
-				}),
-				q(59994, {	-- Trust Fall
-					["provider"] = { "n", 162476 },	-- Ta'eran
-					["sourceQuests"] = { 60900 },	-- Archival Protection
-					["g"] = {
-						i(175517),	-- Corpse-Stitcher's Slippers
-						i(175519),	-- Deceitful Agent's Treads
-						i(175518),	-- Flesh Architect's Galoshes
-						i(175516),	-- Cruel Executioner's Stompers
-					},
-				}),
-				q(58623, {	-- A Complete Set
-					["provider"] = { "n", 166664 },	-- Ta'eran
-					["coord"] = { 43.0, 25.1, 1536 },
-					["sourceQuests"] = { 59994 },	-- Trust Fall
-				}),
-				-- Wasteland Work
-				q(58794, {	-- Stabbing Wasteward
-					["provider"] = { "n", 162474 },	-- Dundae
-					["coord"] = { 46.8, 48.5, 1536 },
-					["sourceQuests"] = {
-						58785,	-- Smack And Grab
-						58750,	-- Take The Bull By The Horns
-					},
-				}),
 			}),
 		}),
 	}),

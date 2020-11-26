@@ -12,6 +12,14 @@ _.Zones =
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 40.0, 65.3, 1670 },
 				}),
+				q(61716, {	-- A Glimpse into Darkness
+					["sourceQuests"] = { 61715 },	-- Request of the Highlord
+					["provider"] = { "n", 173384 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 40.3, 68.7, 1670 },
+					["g"] = {
+						i(184165),	-- Seal of Fordragon
+					},
+				}),
 				q(61107, {	-- A Land of Strife
 					["sourceQuests"] = { 61096 },	-- The Arbiter's Will
 					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
@@ -112,6 +120,11 @@ _.Zones =
 					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
 					["coord"] = {61.1, 36.9, 1670 },
 				}),
+				q(60338, {	-- Journey to Ardenweald
+					["sourceQuests"] = { 61715 },	-- Request of the Highlord
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 69.9, 1670 },
+				}),
 				q(60148, {	-- No Place for the Living
 					["sourceQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 					["provider"] = { "n", 167425 },	-- Overseer Kah-Delen
@@ -121,6 +134,11 @@ _.Zones =
 					["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.2, 69.7, 1670 },
+				}),
+				q(61715, {	-- Request of the Highlord
+					["sourceQuests"] = { 59206 },	-- Words of the Primus
+					["provider"] = { "n", 162928 },	-- Overseer Kah-Delen
+					["coord"] = { 54.4, 54.2, 1670 },
 				}),
 				q(59773, {	-- Seek the Ascended
 					["sourceQuests"] = { 60156 },	-- The Path to Bastion
@@ -257,23 +275,23 @@ _.Zones =
 
 				-- Skip Quests
 				q(62801, {	-- The Call of Fate
-					["sourceQuest"] = 59770,	-- Stand as One
+					["sourceQuests"] = { 59770 },	-- Stand as One
 					["isBreadcrumb"] = true,
 				}),
 				q(62704, {	-- The Threads of Fate
 					["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
 					["coord"] = { 19.6, 50.2, 1670 },
-					["sourceQuest"] = 59770,	-- Stand as One
+					["sourceQuests"] = { 59770 },	-- Stand as One
 				}),
 				q(62716, {	-- Re-Introductionse
 					["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
 					["coord"] = { 19.6, 50.2, 1670 },
-					["sourceQuest"] = 62704,	-- The Threads of Fate
+					["sourceQuests"] = { 62704 },	-- The Threads of Fate
 				}),
 				q(62000, {	-- Choosing Your Purpose
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
-					["sourceQuest"] = 62716,	-- Re-Introductionse
+					["sourceQuests"] = { 62716 },	-- Re-Introductionse
 					["g"] = {
 						ach(14627),	-- Choosing your Purpose
 					},
@@ -281,58 +299,42 @@ _.Zones =
 				q(62159, {	-- Aiding the Shadowlands
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
-					["sourceQuest"] = 62000,	-- Choosing Your Purpose
+					["sourceQuests"] = { 62000 },	-- Choosing Your Purpose
 				}),
 				q(62277, {	-- Ardenweald
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
-					["sourceQuest"] = 62159,	-- Aiding the Shadowlands
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62275, {	-- Bastion
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
-					["sourceQuest"] = 62159,	-- Aiding the Shadowlands
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62707, {	-- The Elysian Fields
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
-					["sourceQuest"] = 62275,	-- Bastion
+					["sourceQuests"] = { 62275 },	-- Bastion
 				}),
 				q(62723, {	-- Bolstering Bastion
 					["provider"] = { "n", 163427 },	-- Kalisthene
 					["coord"] = { 51.1, 43.7, 1533 },
-					["sourceQuest"] = 62707,	-- The Elysian Fields
+					["sourceQuests"] = { 62707 },	-- The Elysian Fields
 				}),
 				q(62729, {	-- Return to Oribos
 					["provider"] = { "n", 159478 },	-- Kalisthene
 					["coord"] = { 51.1, 43.7, 1533 },
-					["sourceQuest"] = 62723,	-- Bolstering Bastion
+					["sourceQuests"] = { 62723 },	-- Bolstering Bastion
 				}),
 				q(62278, {	-- Maldraxxus
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
-					["sourceQuest"] = 62159,	-- Aiding the Shadowlands
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62279, {	-- Revendreth
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
-					["sourceQuest"] = 62159,	-- Aiding the Shadowlands
-				}),
-				-- From Maldraxxus to Ardenweald
-				q(61715, {	-- Request of the Highlord
-					["provider"] = { "n", 162928 },	-- Overseer Kah-Delen
-					["coord"] = { 54.4, 54.2, 1670 },
-					["sourceQuest"] = 59206,	-- Words of the Primus
-				}),
-				q(61716, {	-- A Glimpse into Darkness
-					["provider"] = { "n", 173384 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 40.3, 68.7, 1670 },
-					["sourceQuest"] = 61715,	-- Request of the Highlord
-				}),
-				q(60338, {	-- Journey to Ardenweald
-					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 69.9, 1670 },
-					["sourceQuest"] = 61715,	-- Request of the Highlord
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				-- From Ardenweald to Revendreth
 				q(57025, {	-- A Plea to Revendreth
@@ -341,24 +343,24 @@ _.Zones =
 						{ 48.9, 60.1, 1670 },
 						{ 38.8, 70.2, 1670 },
 					},
-					["sourceQuest"] = 58724,	-- The Queen's Request
+					["sourceQuests"] = { 58724 },	-- The Queen's Request
 				}),
 				-- From Revendreth
 				-- Choosing Your Covenant
 				q(59314, {	-- Sinfall
 					["provider"] = { "n", 171589 },	-- General Draven
 					["coord"] = { 44.8, 68.9, 1670 },
-					["sourceQuest"] = 57878,	-- Choosing Your Purpose
+					["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
 				}),
 				q(60491, {	-- Among the Kyrian
 					["provider"] = { "n", 171787 },	-- Polemarch Adrestes
 					["coord"] = { 36.1, 64.1, 1670 },
-					["sourceQuest"] = 57878,	-- Choosing Your Purpose
+					["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
 				}),
 				q(58609, {	-- Taking The Seat
 					["provider"] = { "n", 171821 },	-- Baroness Draka
 					["coord"] = { 42.9, 74.1, 1670 },
-					["sourceQuest"] = 57878,	-- Choosing Your Purpose
+					["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
 				}),
 				q(60286, {	-- A Token of Our Admiration
 					["provider"] = { "n", 168432 },	-- Ve'rayn

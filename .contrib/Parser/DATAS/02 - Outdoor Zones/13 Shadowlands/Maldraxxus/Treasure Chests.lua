@@ -8,8 +8,9 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(-212, {	-- Treasure Chest
 				o(352086, {	-- Blackhound Cache
-					["coord"] = { 44.0, 39.8, 1536 },
+					["description"] = "|cFF40bf40Necrolord Covenant|r only.",
 					["questID"] = 60368,
+					["coord"] = { 44.0, 39.8, 1536 },
 					["g"] = {
 						i(183619),	-- Everlasting Boneforged Greataxe
 					},
