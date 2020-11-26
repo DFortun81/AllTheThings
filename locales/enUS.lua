@@ -4146,6 +4146,7 @@ app.L = {
 		[354852] = "Sprouting Growth",
 		[354853] = "Sprouting Growth",
 		[354856] = "Slime-Coated Crate",
+		[355798] = "Cage",
 		[356555] = "Eurydea's Necklace",
 		[356820] = "Large Lunarlight Pod",
 		[357758] = "Plague Barrel",

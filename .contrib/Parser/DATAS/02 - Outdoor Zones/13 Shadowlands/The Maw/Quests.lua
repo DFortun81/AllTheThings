@@ -12,6 +12,11 @@ _.Zones =
 				}),
 			}),
 			n(QUESTS, {
+				q(59973, {	-- A Bond Beyond Death
+					["sourceQuests"] = { 59962 },	-- Hope Never Dies
+					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
+					["coord"] = { 32.9, 66.4, 1648 },
+				}),
 				q(60545, {	-- A Chilling Summons (A)
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = {
@@ -27,6 +32,9 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 50 },
+				}),
+				q(59960, {	-- A Cooling Trail
+					["sourceQuests"] = { 60972 },	-- The Hunt for the Baron
 				}),
 				q(59755, {	-- A Flight from Darkness
 					["sourceQuests"] = { 59754 },	-- On Blackened Wings
@@ -67,6 +75,11 @@ _.Zones =
 					["coord"] = { 24.4, 37.0, 1648 },
 					["lvl"] = { 50 },
 				}),
+				q(59966, {	-- Delving Deeper
+					["sourceQuests"] = { 59962 },	-- Hope Never Dies
+					["provider"] = { "n", 171770 },	-- Ve'nari
+					["coord"] = { 36.2, 55.7, 1648 },
+				}),
 				q(60644, {	-- Draw Out the Darkness
 					["sourceQuests"] = {
 						59765,	-- Wounds Beyond Flesh
@@ -99,6 +112,22 @@ _.Zones =
 					["provider"] = { "n", 167826 },	-- Lady Jaina Proudmoore
 					["coord"] = { 25.0, 13.4, 1648 },
 					["lvl"] = { 50 },
+				}),
+				q(59962, {	-- Hope Never Dies
+					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
+					["provider"] = { "n", 171770 },	-- Ve'nari
+					["coord"] = { 36.5, 50.7, 1648 },
+				}),
+				q(62654, {	-- Maw Walker
+					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 49.9, 41.6, 1543 },
+					["g"] = {
+						i(175511),	-- Fallen Protector's Headguard
+						i(175525),	-- Forgotten Pursuer's Cowl
+						i(175524),	-- Risen Journeyman's Visage
+						i(175526),	-- Vicious Reclaimer's Cover
+					},
 				}),
 				q(59907, {	-- Mawsworn Menace
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
@@ -140,6 +169,15 @@ _.Zones =
 					["coord"] = { 25.0, 13.3, 1648 },
 					["lvl"] = { 50 },
 				}),
+				q(59959, {	-- The Brand Holds the Key
+					["sourceQuests"] = { 59960 },	-- A Cooling Trail
+					["provider"] = { "o", 355798 },	-- Cage
+					["coord"] = { 38.3, 48.5, 1648 },
+				}),
+				q(60972, {	-- The Hunt for the Baron
+					["sourceQuests"] = { 59897 },	-- Seeking the Baron
+					["coord"] = { 44.9, 40.9, 1543 },
+				}),
 				q(59759, {	-- The Lion's Cage
 					["sourceQuests"] = { 59915 },	-- Soul in Hand
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
@@ -164,6 +202,11 @@ _.Zones =
 					},
 					["lvl"] = { 50 },
 				}),
+				q(61190, {	-- Wake of Ashes
+					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
+					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
+					["coord"] = { 32.9, 66.4, 1648 },
+				}),
 				q(59765, {	-- Wounds Beyond Flesh
 					["sourceQuests"] = { 59762 },	-- By and Down the River
 					["providers"] = {
@@ -184,61 +227,6 @@ _.Zones =
 				
 				
 				
-				-- Ritual for the Dammed (Maldraxxus Storyline)
-				q(60972, {	-- The Hunt for the Baron
-					["sourceQuests"] = { 59897 },	-- Seeking the Baron
-					["lvl"] = { 54 },
-				}),
-				q(59960, {	-- A Cooling Trail
-					["sourceQuests"] = { 60972 },	-- The Hunt for the Baron
-					["lvl"] = { 54 },
-				}),
-				q(59959, {	-- The Brand Holds the Key
-					--["provider"] = { "o", ?? },	-- Cage							-- TODO: Need to add the Object
-					["coord"] = { 38.3, 48.5, 1648 },
-					["sourceQuests"] = { 59960 },	-- A Cooling Trail
-					["lvl"] = { 54 },
-					["g"] = {
-						i(175528),	-- Epidemiologist's Trousers
-						i(175530),	-- Deceitful Agent's Legwraps
-						i(175529),	-- Flesh Architect's Greaves
-						i(175527),	-- Cruel Executioner's Greaves
-					},
-				}),
-				q(59962, {	-- Hope Never Dies
-					["provider"] = { "n", 171770 },	-- Ve'nari
-					["coord"] = { 36.5, 50.7, 1648 },
-					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
-					["lvl"] = { 54 },
-				}),
-				q(59966, {	-- Delving Deeper
-					["provider"] = { "n", 171770 },	-- Ve'nari
-					["coord"] = { 36.2, 55.7, 1648 },
-					["sourceQuests"] = { 59962 },	-- Hope Never Dies
-					["lvl"] = { 54 },
-				}),
-				q(59973, {	-- A Bond Beyond Death
-					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
-					["coord"] = { 32.9, 66.4, 1648 },
-					["sourceQuests"] = { 59962 },	-- Hope Never Dies
-				}),
-				q(61190, {	-- Wake of Ashes
-					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
-					["coord"] = { 32.9, 66.4, 1648 },
-					["sourceQuest"] = 59973,	-- A Bond Beyond Death
-					["lvl"] = { 54 },
-				}),
-				q(62654, {	-- Maw Walker
-					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 49.9, 41.6, 1543 },
-					["sourceQuest"] = 59973,	-- A Bond Beyond Death
-					["g"] = {
-						i(175511),	-- Fallen Protector's Headguard
-						i(175525),	-- Forgotten Pursuer's Cowl
-						i(175524),	-- Risen Journeyman's Visage
-						i(175526),	-- Vicious Reclaimer's Cover
-					},
-				}),
 				-- The Prince and the Tower (Prince Renathal) (Revendreth Storyline)
 				q(57690, {	-- Cages For All Occasions
 					["provider"] = { "n", 158649 },	-- Vorpalia
@@ -255,7 +243,7 @@ _.Zones =
 				q(57693, {	-- Torghast, Tower of the Damned
 					["provider"] = { "n", 158645 },	-- Prince Renathal
 					["coord"] = { 34.6, 18.6, 1543 },
-					["sourceQuest"] = 57691,	-- A Royal Key
+					["sourceQuests"] = { 57691 },	-- A Royal Key
 					["lvl"] = { 57 },
 					["g"] = {
 						i(175731),	-- Stolen Maw Badge
@@ -265,37 +253,37 @@ _.Zones =
 				q(60232, {	-- Souls of the Damned (Bastion)
 					["provider"] = { "n", 160212 },	-- Soulguide Daelia
 					["coord"] = { 33.9, 43.5, 1533 },
-					["sourceQuest"] = 57905,	-- A Unique Opportunity
+					["sourceQuests"] = { 57905 },	-- A Unique Opportunity
 					["lvl"] = { 60 },
 				}),
 				q(60130, {	-- Souls of the Damned (Maldraxxus)
 					["provider"] = { "n", 167748 },	-- Osbourne Black
 					--["coord"] = { 33.9, 43.5, 1536 },
-					["sourceQuest"] = 61397,	-- Opportunity Strikes
+					["sourceQuests"] = { 61397 },	-- Opportunity Strikes
 					["lvl"] = { 60 },
 				}),
 				q(60234, {	-- Souls of the Damned (Revendreth)
 					["provider"] = { "n", 164738 },	-- Tenaval
 					["coord"] = { 46.6, 28.6, 1525 },
-					["sourceQuest"] = 59320,	-- Souls to Save
+					["sourceQuests"] = { 59320 },	-- Souls to Save
 					["lvl"] = { 60 },
 				}),
 				q(61508, {	-- Soul Salvation (Bastion)
 					--["provider"] = { "n", 158553 },	-- Flutterby
 					--["coord"] = { 33.9, 43.5, 1533 },
-					["sourceQuest"] = 60232,	-- Souls of the Damned (Bastion)
+					["sourceQuests"] = { 60232 },	-- Souls of the Damned (Bastion)
 					["lvl"] = { 60 },
 				}),
 				q(61513, {	-- Soul Salvation (Maldraxxus)
 					--["provider"] = { "n", 158553 },	-- Flutterby
 					--["coord"] = { 33.9, 43.5, 1536 },
-					["sourceQuest"] = 60130,	-- Souls of the Damned (Maldraxxus)
+					["sourceQuests"] = { 60130 },	-- Souls of the Damned (Maldraxxus)
 					["lvl"] = { 60 },
 				}),
 				q(61515, {	-- Soul Salvation (Revendreth)
 					["provider"] = { "n", 158553 },	-- Tenaval
 					["coord"] = { 33.9, 43.5, 1525 },
-					["sourceQuest"] = 60234,	-- Souls of the Damned (Revendreth)
+					["sourceQuests"] = { 60234 },	-- Souls of the Damned (Revendreth)
 					["lvl"] = { 60 },
 				}),
 				q(61496, {	-- A Familiar Energy
@@ -317,17 +305,17 @@ _.Zones =
 				q(62882, {	-- Setting the Ground Rules
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
-					["sourceQuest"] = 61496,	-- A Familiar Energy
+					["sourceQuests"] = { 61496 },	-- A Familiar Energy
 					["lvl"] = { 60 },
 				}),
 				q(60234, {	-- Rule 1: Have an Escape Plan
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
-					["sourceQuest"] = 62882,	-- Setting the Ground Rules
+					["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
 					["lvl"] = { 60 },
 				}),
 				q(61391, {	-- The Eye of the Jailer
-					["sourceQuest"] = 62882,	-- Setting the Ground Rules
+					["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
 					["lvl"] = { 60 },
 				}),
 				q(61355, {	-- Rule 2: Keep a Low Profile
@@ -342,31 +330,31 @@ _.Zones =
 				q(60289, {	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
-					["sourceQuest"] = 61355,	-- Rule 2: Keep a Low Profile
+					["sourceQuests"] = { 61355 },	-- Rule 2: Keep a Low Profile
 					["lvl"] = { 60 },
 				}),
 				q(62837, {	-- Hopeful News
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
-					["sourceQuest"] = 60289,	-- Rule 3: Trust is Earned
+					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["lvl"] = { 60 },
 				}),
 				q(62838, {	-- Soulful Recovery
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
-					["sourceQuest"] = 60289,	-- Rule 3: Trust is Earned
+					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["lvl"] = { 60 },
 				}),
 				q(60134, {	-- A Tauren in Trade
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
-					["sourceQuest"] = 60289,	-- Rule 3: Trust is Earned
+					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["lvl"] = { 60 },
 				}),
 				q(60136, {	-- Into Torghast
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
-					["sourceQuest"] = 60134,	-- A Tauren in Trade
+					["sourceQuests"] = { 60134 },	-- A Tauren in Trade
 					["lvl"] = { 60 },
 					["g"] = {
 						spell(334746),	-- Torghast
@@ -385,26 +373,26 @@ _.Zones =
 				q(60134, {	-- On the Trail
 					["provider"] = { "n", 174833 },	-- Shandris Feathermoon
 					["coord"] = { 44.3, 41.1, 1543 },
-					["sourceQuest"] = 59181,	-- Into the Maw
+					["sourceQuests"] = { 59181 },	-- Into the Maw
 					["lvl"] = { 60 },
 				}),
 				q(60530, {	-- The Sea of Souls
 					["provider"] = { "n", 168929 },	-- Shandris Feathermoon
 					["coord"] = { 30.1, 36.4, 1543 },
-					["sourceQuest"] = 60134,	-- On the Trail
+					["sourceQuests"] = { 60134 },	-- On the Trail
 					["lvl"] = { 60 },
 				}),
 				q(59189, {	-- The Recovery of Tyrande Whisperwind
 					["provider"] = { "n", 174834 },	-- Shandris Feathermoon
 					["coord"] = { 46.8, 41.7, 1543 },
-					["sourceQuest"] = 60530,	-- The Sea of Souls
+					["sourceQuests"] = { 60530 },	-- The Sea of Souls
 					["lvl"] = { 60 },
 					["maps"] = { 1720 },	-- Torghast Scenario
 				}),
 				q(59242, {	-- Their New Home
 					["provider"] = { "n", 174834 },	-- Shandris Feathermoon
 					["coord"] = { 46.8, 41.7, 1543 },
-					["sourceQuest"] = 59189,	-- The Recovery of Tyrande Whisperwind
+					["sourceQuests"] = { 59189 },	-- The Recovery of Tyrande Whisperwind
 					["lvl"] = { 60 },
 					["g"] = {
 						i(179498),	-- Faesworn Barb
@@ -423,14 +411,14 @@ _.Zones =
 				q(61088, {	-- Dust to Dust
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
-					["sourceQuest"] = 60289,	-- Rule 3: Trust is Earned
+					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["isDaily"] = true,
 					["lvl"] = { 60 },
 				}),
 				q(61103, {	-- Thin Their Numbers
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
-					["sourceQuest"] = 60289,	-- Rule 3: Trust is Earned
+					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["isDaily"] = true,
 					["lvl"] = { 60 },
 				}),

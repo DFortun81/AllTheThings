@@ -36,7 +36,7 @@ _.Zones =
 					crit(6, {	-- Ritual for the Damned
 						["sourceQuests"] = { 59974 },	-- A Soul Saved
 					}),
-					crit(7, {	--  The Empty Throne
+					crit(7, {	-- The Empty Throne
 						["sourceQuests"] = { 60737 },	-- The Door to the Unknown
 					}),
 				}),

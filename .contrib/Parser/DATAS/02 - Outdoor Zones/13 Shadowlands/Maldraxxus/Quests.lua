@@ -32,6 +32,15 @@ _.Zones =
 					["provider"] = { "n", 165049 },	-- Judas Sneap
 					["coord"] = { 58.0, 72.1, 1536 },
 				}),
+				q(59202, {	-- Among the Chosen
+					["sourceQuests"] = {
+						59231,	-- Fathomless Power
+						60733,	-- Front and Center
+						59009,	-- Her Rightful Place
+					},
+					["provider"] = { "n", 168381 },	-- Baroness Draka
+					["coord"] = { 50.3, 67.7, 1536 },
+				}),
 				q(60020, {	-- An Opportunistic Strike
 					["sourceQuests"] = { 57390 },	-- To Die By the Sword
 					["provider"] = { "n", 164244 },	-- Grandmaster Vole
@@ -96,6 +105,11 @@ _.Zones =
 					["provider"] = { "n", 164244 },	-- Grandmaster Vole
 					["coord"] = { 50.3, 44.3, 1536 },
 				}),
+				q(59185, {	-- Entangling Web
+					["sourceQuests"] = { 59172 },	-- War is Deception
+					["provider"] = { "n", 162487 },	-- Baroness Vashj
+					["coord"] = { 50.3, 67.7, 1536 },
+				}),
 				q(59231, {	-- Fathomless Power
 					["sourceQuests"] = { 60831 },	-- Fit For a Margrave
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
@@ -140,6 +154,17 @@ _.Zones =
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, 1536 },
 				}),
+				q(59009, {	-- Her Rightful Place
+					["sourceQuests"] = { 59025 },	-- Straight to the Heart
+					["provider"] = { "n", 164326 },	-- Baroness Vashj
+					["coord"] = { 73.5, 44.5, 1536 },
+					["g"] = {
+						i(175452),	-- Corpse-Stitcher's Treads
+						i(175454),	-- Deceitful Agent's Boots
+						i(175453),	-- Flesh Architect's Footguards
+						i(175451),	-- Cruel Executioner's Warboots
+					},
+				}),
 				q(59750, {	-- How To Get A Head
 					["sourceQuests"] = { 57425 },	-- Land of Opportunity
 					["provider"] = { "n", 161559 },	-- Louison
@@ -151,6 +176,27 @@ _.Zones =
 					["provider"] = { "n", 161733 },	-- Anzio The Infallible
 					["coord"] = { 50.5, 51.6, 1536 },
 				}),
+				q(59011, {	-- In Death We Are Truly Tested
+					["sourceQuests"] = { 59974 },	-- A Soul Saved
+					["provider"] = { "n", 162801 },	-- Alexandros Mograine
+					["coord"] = { 41.3, 60.5, 1536 },
+					["g"] = {
+						i(180791),	-- Reanimated Executioner's Shank
+						i(180663),	-- War Scholar's Bonesaw
+						i(180666),	-- Bonebender's Warblade
+						i(180664),	-- Reanimated Executioner's Crusher
+						i(180792),	-- War Scholar's Shortsword
+						i(180673),	-- Reanimated Executioner's Sword
+						i(180668),	-- War Scholar's Wand
+						i(180672),	-- Bonebender's Warglaive
+						i(180667),	-- Enlarged Jawbone Crossbow
+						i(180665),	-- Grasping Greatstaff
+						i(180790),	-- War Scholar's Stave
+						i(180669),	-- Reanimated Executioner's Greatsword
+						i(180671),	-- War Scholar's Tome
+						i(180670),	-- Cruel Executioner's Bulwark
+					},
+				}),
 				q(57994, {	-- In The Flesh
 					["sourceQuests"] = { 57993 },	-- Two of Them, Two of Us
 					["provider"] = { "n", 165575 },	-- Aspirant Thales
@@ -160,6 +206,17 @@ _.Zones =
 					["sourceQuests"] = { 58619 },	-- Read Between the Lines
 					["provider"] = { "n", 166664 },	-- Ta'eran
 					["coord"] = { 43.0, 25.1, 1536 },
+				}),
+				q(57425, {	-- Land of Opportunity
+					["sourceQuests"] = { 60021 },	-- Champion the Cause
+					["provider"] = { "n", 164244 },	-- Grandmaster Vole
+					["coord"] = { 50.3, 44.3, 1536 },
+					["g"] = {
+						i(175468),	-- Corpse-Stitcher's Mantle
+						i(175466),	-- Deceitful Agent's Spaulders
+						i(175469),	-- Flesh Architect's Mantle
+						i(175467),	-- Cruel Executioner's Shoulders
+					},
 				}),
 				q(57976, {	-- Lead By Example
 					["sourceQuests"] = { 57912 },	-- Baron of the Chosen
@@ -175,6 +232,11 @@ _.Zones =
 					["sourceQuests"] = { 60453 },	-- The Path to Glory
 					["provider"] = { "n", 159065 },	-- Baroness Draka
 					["coord"] = { 38.9, 65.1, 1536 },
+				}),
+				q(60179, {	-- Memory of Honor
+					["sourceQuests"] = { 57425 },	-- Land of Opportunity
+					["provider"] = { "o", 351467 },	-- Faded Epitaphs
+					["coord"] = { 48.3, 57.7, 1536 },
 				}),
 				q(60451, {	-- Never Enough
 					["sourceQuests"] = {
@@ -248,6 +310,15 @@ _.Zones =
 						i(175707),	-- Signet of the Learned
 					},
 				}),
+				q(59190, {	-- Seek Your Mark
+					["sourceQuests"] = {
+						59210,	-- Tainted Cores
+						59185,	-- Entangling Web
+						59188,	-- Vaunted Vengeance
+					},
+					["provider"] = { "n", 164326 },	-- Baroness Vashj
+					["coord"] = { 73.5, 44.5, 1536 },
+				}),
 				q(58027, {	-- Slime, Anyone?
 					["sourceQuests"] = {
 						58011,	-- Bug Bites
@@ -269,6 +340,16 @@ _.Zones =
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
 				}),
+				q(59025, {	-- Straight to the Heart
+					["sourceQuests"] = { 59190 },	-- Seek Your Mark
+					["provider"] = { "n", 164326 },	-- Baroness Vashj
+					["coord"] = { 73.5, 44.5, 1536 },
+				}),
+				q(59210, {	-- Tainted Cores
+					["sourceQuests"] = { 59172 },	-- War is Deception
+					["provider"] = { "n", 162487 },	-- Baroness Vashj
+					["coord"] = { 50.3, 67.7, 1536 },
+				}),
 				q(58750, {	-- Take The Bull By The Horns
 					["sourceQuests"] = { 57425 },	-- Land of Opportunity
 					["provider"] = { "n", 162474 },	-- Dundae
@@ -286,6 +367,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
 					["coord"] = { 36.2, 71.0, 1536 },
+				}),
+				q(60737, {	-- The Door to the Unknown
+					["sourceQuests"] = { 59011 },	-- In Death We Are Truly Tested
+					["provider"] = { "n", 170309 },	-- Baroness Draka
+					["coord"] = { 50.5, 67.8, 1536 },
 				}),
 				q(57514, {	-- The First Act of War
 					["sourceQuests"] = { 57515 },	-- The House of the Chosen
@@ -316,6 +402,11 @@ _.Zones =
 					["g"] = {
 						i(175725),	-- Newcomer's Gladiatorial Badge
 					},
+				}),
+				q(59874, {	-- The Maw
+					["sourceQuests"] = { 59202 },	-- Among the Chosen
+					["provider"] = { "n", 164843 },	-- Baron Vyraz
+					["coord"] = { 38.2, 66.7, 1536 },
 				}),
 				q(57984, {	-- The Ones in Charge
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
@@ -398,13 +489,38 @@ _.Zones =
 						i(175447),	-- Corpse-Stitcher's Robe
 					},
 				}),
+				q(59188, {	-- Vaunted Vengeance
+					["sourceQuests"] = { 59172 },	-- War is Deception
+					["provider"] = { "n", 164297 },	-- Khaliiq
+					["coord"] = { 67.7, 45.6, 1536 },
+					["g"] = {
+						i(175459),	-- Corpse-Stitcher's Hood
+						i(175461),	-- Deceitful Agent's Helm
+						i(175460),	-- Flesh Architect's Coif
+						i(175446),	-- Cruel Executioner's Helmet
+					},
+				}),
 				q(57512, {	-- Walk Among Death
 					["sourceQuests"] = { 57425 },	-- Land of Opportunity
 					["provider"] = { "n", 162069 },	-- Baroness Draka
 					["coord"] = { 48.3, 57.1, 1536 },
 				}),
-				
-				
+				q(59172, {	-- War is Deception
+					["sourceQuests"] = {
+						59171,	-- Prey Upon Them
+						58821,	-- Glorious Pursuits
+					},
+					["provider"] = { "n", 162487 },	-- Baroness Vashj
+					["coord"] = { 50.3, 67.7, 1536 },
+					["g"] = {
+						i(175706),	-- Mind-Torn Band
+					},
+				}),
+				q(59206, {	-- Words of the Primus
+					["sourceQuests"] = { 60737 },	-- The Door to the Unknown
+					["provider"] = { "n", 167903 },	-- Baroness Draka
+					["coord"] = { 39.1, 49.9, 1536 },
+				}),
 				
 				
 				
@@ -441,143 +557,6 @@ _.Zones =
 						},
 					}),
 				}),
-				-- Champion of Pain
-				q(57425, {	-- Land of Opportunity
-					["provider"] = { "n", 164244 },	-- Grandmaster Vole
-					["coord"] = { 50.3, 44.3, 1536 },
-					["sourceQuests"] = { 60021 },	-- Champion the Cause
-					["g"] = {
-						i(175468),	-- Corpse-Stitcher's Mantle
-						i(175466),	-- Deceitful Agent's Spaulders
-						i(175469),	-- Flesh Architect's Mantle
-						i(175467),	-- Cruel Executioner's Shoulders
-					},
-				}),
-				q(60179, {	-- Memory of Honor
-					["sourceQuests"] = { 57425 },	-- Land of Opportunity
-					["provider"] = { "o", 351467 },	-- Faded Epitaphs
-					["coord"] = { 48.3, 57.7, 1536 },
-				}),
-				-- Matron of Spies
-				q(59172, {	-- War is Deception
-					["provider"] = { "n", 162487 },	-- Baroness Vashj
-					["coord"] = { 50.3, 67.7, 1536 },
-					["sourceQuests"] = {
-						59171,	-- Prey Upon Them
-						58821,	-- Glorious Pursuits
-					},
-					["g"] = {
-						i(175706),	-- Mind-Torn Band
-					},
-				}),
-				q(59210, {	-- Tainted Cores
-					["provider"] = { "n", 162487 },	-- Baroness Vashj
-					["coord"] = { 50.3, 67.7, 1536 },
-					["sourceQuests"] = { 59172 },	-- War is Deception
-				}),
-				q(59185, {	-- Entangling Web
-					["provider"] = { "n", 162487 },	-- Baroness Vashj
-					["coord"] = { 50.3, 67.7, 1536 },
-					["sourceQuests"] = { 59172 },	-- War is Deception
-				}),
-				q(59188, {	-- Vaunted Vengeance
-					["provider"] = { "n", 164297 },	-- Khaliiq
-					["coord"] = { 67.7, 45.6, 1536 },
-					["sourceQuests"] = { 59172 },	-- War is Deception
-					["g"] = {
-						i(175459),	-- Corpse-Stitcher's Hood
-						i(175461),	-- Deceitful Agent's Helm
-						i(175460),	-- Flesh Architect's Coif
-						i(175446),	-- Cruel Executioner's Helmet
-					},
-				}),
-				q(59190, {	-- Seek Your Mark
-					["provider"] = { "n", 164326 },	-- Baroness Vashj
-					["coord"] = { 73.5, 44.5, 1536 },
-					["sourceQuests"] = {
-						59210,	-- Tainted Cores
-						59185,	-- Entangling Web
-						59188,	-- Vaunted Vengeance
-					},
-				}),
-				q(59025, {	-- Straight to the Heart
-					["provider"] = { "n", 164326 },	-- Baroness Vashj
-					["coord"] = { 73.5, 44.5, 1536 },
-					["sourceQuests"] = { 59190 },	-- Seek Your Mark
-				}),
-				q(59009, {	-- Her Rightful Place
-					["provider"] = { "n", 164326 },	-- Baroness Vashj
-					["coord"] = { 73.5, 44.5, 1536 },
-					["sourceQuests"] = { 59025 },	-- Straight to the Heart
-				}),
-				-- Ritual for the Damned
-				q(59202, {	-- Among the Chosen
-					["provider"] = { "n", 168381 },	-- Baroness Draka
-					["coord"] = { 50.3, 67.7, 1536 },
-					["sourceQuests"] = {
-						59009,	-- Her Rightful Place
-						60733,	-- Front and Center
-						59231,	-- Fathomless Power
-					},
-					["lvl"] = { 54 },
-				}),
-				q(59874, {	-- The Maw
-					["provider"] = { "n", 164843 },	-- Baron Vyraz
-					["coord"] = { 38.2, 66.7, 1536 },
-					["sourceQuests"] = { 59202 },	-- Among the Chosen
-					["lvl"] = { 54 },
-				}),
-				q(59897, {	-- Seeking the Baron
-					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
-					["sourceQuests"] = { 59874 },	-- The Maw
-					["lvl"] = { 54 },
-				}),
-				-- To The Maw and Back To Maldraxxus
-				q(59974, {	-- A Soul Saved
-					["provider"] = { "n", 167903 },	-- Baroness Draka
-					["coord"] = { 39.1, 49.9, 1670 },
-					["sourceQuests"] = {
-						61190,	-- Wake of Ashes
-						62654,	-- Maw Walker
-					},
-					["lvl"] = { 54 },
-				}),
-				-- The Empty Throne
-				q(59011, {	-- In Death We Are Truly Tested
-					["provider"] = { "n", 162801 },	-- Alexandros Mograine
-					["coord"] = { 41.3, 60.5, 1536 },
-					["sourceQuests"] = { 59974 },	-- A Soul Saved
-					["g"] = {
-						i(180791),	-- Reanimated Executioner's Shank
-						i(180663),	-- War Scholar's Bonesaw
-						i(180666),	-- Bonebender's Warblade
-						i(180664),	-- Reanimated Executioner's Crusher
-						i(180792),	-- War Scholar's Shortsword
-						i(180673),	-- Reanimated Executioner's Sword
-						i(180668),	-- War Scholar's Wand
-						i(180672),	-- Bonebender's Warglaive
-						i(180667),	-- Enlarged Jawbone Crossbow
-						i(180665),	-- Grasping Greatstaff
-						i(180790),	-- War Scholar's Stave
-						i(180669),	-- Reanimated Executioner's Greatsword
-						i(180671),	-- War Scholar's Tome
-						i(180670),	-- Cruel Executioner's Bulwark
-					},
-				}),
-				q(60737, {	-- The Door to the Unknown
-					["provider"] = { "n", 170309 },	-- Baroness Draka
-					["coord"] = { 50.5, 67.8, 1536 },
-					["sourceQuests"] = { 59011 },	-- In Death We Are Truly Tested
-					["lvl"] = { 54 },
-				}),
-				q(59206, {	-- Words of the Primus
-					["provider"] = { "n", 167903 },	-- Baroness Draka
-					["coord"] = { 39.1, 49.9, 1536 },
-					["sourceQuests"] = { 60737 },	-- The Door to the Unknown
-					["lvl"] = { 54 },
-				}),
-				-- End of Zone Achievement Quests
 				-- Sojourner of Maldraxxus
 				-- Theater of Pain
 				q(58575, {	-- Stuff We All Get

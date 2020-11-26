@@ -17,6 +17,11 @@ _.Zones =
 					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
 					["coord"] = {61.1, 36.9, 1670 },
 				}),
+				q(59974, {	-- A Soul Saved
+					["sourceQuests"] = { 62654 },	-- Maw Walker
+					["provider"] = { "n", 167903 },	-- Baroness Draka
+					["coord"] = { 39.1, 49.9, 1670 },
+				}),
 				q(60256, {	-- A Valuable Find: Halls of Atonement
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["isWeekly"] = true,
@@ -108,6 +113,11 @@ _.Zones =
 					["sourceQuests"] = { 60156 },	-- The Path to Bastion
 					["provider"] = { "n", 175133 },	-- Pathscribe Roh-Avonavi
 					["coord"] = { 64.3, 49.7, 1670 },
+				}),
+				q(59897, {	-- Seeking the Baron
+					["sourceQuests"] = { 59874 },	-- The Maw
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, 1670 },
 				}),
 				q(60129, {	-- Stranger in an Even Stranger Land
 					["sourceQuests"] = { 59770 },	-- Stand as One
