@@ -91,12 +91,13 @@ i(44050, 1, 21318);		-- Mastercraft Kalu'ak Fishing Pole
 i(19022, 1, 7546);		-- Nat Pagle's Extreme Angler FC-5000
 i(45858, 1, 22092);		-- Nat's Lucky Fishing Pole
 i(84660, 1, 43158);		-- Pandaren Fishing Pole
+i(168804, 1, 104673);	-- Powered Piscine Procurement Pole
 i(116825, 1, 65557);	-- Savage Fishing Pole
 i(25978, 1, 10687);		-- Seth's Graphite Fishing Pole
 i(88535, 1, 45845);		-- Sharpened Tuskarr Spear
+i(180136, 1, 112899);	-- The Brokers Angle'r
 i(120163, 1, 67918);	-- Thruk's Fishing Rod
 i(133755, 1, 76909);	-- Underlight Angler
-i(168804, 1, 104673);	-- Powered Piscine Procurement Pole
 
 -------------------
 -- F I S H I E S --

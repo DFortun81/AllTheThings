@@ -202,6 +202,11 @@ _.Zones =
 					["provider"] = { "n", 165575 },	-- Aspirant Thales
 					["coord"] = { 28.8, 22.1, 1536 },
 				}),
+				q(58088, {	-- Juicing Up
+					["sourceQuests"] = { 58068 },	-- ...Even The Most Ridiculous Request!
+					["provider"] = { "n", 159827 },	-- Scrapper Minoire
+					["coord"] = { 53.8, 50.5, 1536 },
+				}),
 				q(59917, {	-- Kill Them, Of Course
 					["sourceQuests"] = { 58619 },	-- Read Between the Lines
 					["provider"] = { "n", 166664 },	-- Ta'eran
@@ -318,6 +323,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 164326 },	-- Baroness Vashj
 					["coord"] = { 73.5, 44.5, 1536 },
+				}),
+				q(58090, {	-- Side Effects
+					["sourceQuests"] = { 58088 },	-- Juicing Up
+					["provider"] = { "n", 159833 },	-- So'narynar
+					["coord"] = { 53.7, 47.8, 1536 },
 				}),
 				q(58027, {	-- Slime, Anyone?
 					["sourceQuests"] = {
@@ -627,16 +637,6 @@ _.Zones =
 						i(176285),	-- Ruthless Contender's Tome
 						i(176284),	-- Ruthless Contender's Shield
 					},
-				}),
-				q(58088, {	-- Juicing Up
-					["provider"] = { "n", 159827 },	-- Scrapper Minoire
-					["coord"] = { 53.8, 50.5, 1536 },
-					["sourceQuests"] = { 58068 },	-- ...Even The Most Ridiculous Request!
-				}),
-				q(58090, {	-- Side Effects
-					["provider"] = { "n", 159833 },	-- So'narynar
-					["coord"] = { 53.7, 47.8, 1536 },
-					["sourceQuests"] = { 58088 },	-- Juicing Up
 				}),
 				-- Archival Protection
 				q(58620, {	-- Slaylines
