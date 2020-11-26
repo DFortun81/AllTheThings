@@ -32,6 +32,9 @@ _.Craftables =
 				i(170316),	-- Uncanny Combatant's Etched Vessel [Alliance]
 				i(170317),	-- Uncanny Combatant's Etched Vessel [Horde]
 			}),
+			sp(269065, {	-- Scroll of Unlocking
+				i(159825),	-- Scroll of Unlocking
+			}),
 			n(-491, {	-- Tarot Cards
 				sp(278527, {	-- Darkmoon Card of War
 					sp(267087, {	-- Blockades Deck

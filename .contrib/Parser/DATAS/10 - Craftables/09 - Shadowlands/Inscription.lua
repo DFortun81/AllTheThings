@@ -33,6 +33,9 @@ _.Craftables =
 			sp(311425, {	-- Tome of the Still Mind
 				i(173049)	-- Tome of the Still Mind
 			}),
+			sp(311423, {	-- Writ of Grave Robbing
+				i(173065)	-- Writ of Grave Robbing
+			}),
 		}),
 	}),
 };
