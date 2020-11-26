@@ -2974,6 +2974,8 @@ _.HiddenQuestTriggers =
 		q(59439),	-- triggered when throwing Viscous Oil from Burning Extract into the Pool of Potions while on the quest "Pool of Potions"
 		q(61988),	-- Indomitable Schmitd first kill
 		q(57619),	-- triggered while on "In Death We Are Truly Tested" -- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
+		q(59843),	-- triggered when turning in "A Sure Bet"
+		q(62786),	-- triggered when killing Unbreakable Urtz during "The Ladder" - no other arena opponents triggered quests
 
 		-- Revendreth
 		q(60523),	-- Triggered after reading Theotar's Diary

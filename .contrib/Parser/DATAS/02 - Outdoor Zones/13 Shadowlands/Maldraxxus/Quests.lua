@@ -32,6 +32,11 @@ _.Zones =
 					["provider"] = { "n", 165049 },	-- Judas Sneap
 					["coord"] = { 58.0, 72.1, 1536 },
 				}),
+				q(58900, {	-- A Sure Bet
+					["sourceQuests"] = { 59837 },	-- Working For The Living
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, 1536 },
+				}),
 				q(59202, {	-- Among the Chosen
 					["sourceQuests"] = {
 						59231,	-- Fathomless Power
@@ -228,6 +233,11 @@ _.Zones =
 					["provider"] = { "n", 159894 },	-- Baron Vyraz
 					["coord"] = { 39.2, 55.9, 1536 },
 				}),
+				q(59203, {	-- Leave Me a Loan
+					["sourceQuests"] = { 58947 },	-- Test Your Mettle
+					["provider"] = { "n", 159830 },	-- Au'narim
+					["coord"] = { 53.6, 47.5, 1536 },
+				}),
 				q(58617, {	-- Maintaining Order
 					["sourceQuests"] = { 57514 },	-- The First Act of War
 					["provider"] = { "n", 157895 },	-- Baron Vyraz
@@ -355,6 +365,14 @@ _.Zones =
 					["provider"] = { "n", 164326 },	-- Baroness Vashj
 					["coord"] = { 73.5, 44.5, 1536 },
 				}),
+				q(58575, {	-- Stuff We All Get
+					["sourceQuests"] = {
+						59750,	-- How To Get A Head
+						59781,	-- The Last Guy
+					},
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, 1536 },
+				}),
 				q(59210, {	-- Tainted Cores
 					["sourceQuests"] = { 59172 },	-- War is Deception
 					["provider"] = { "n", 162487 },	-- Baroness Vashj
@@ -369,6 +387,22 @@ _.Zones =
 					["sourceQuests"] = { 57912 },	-- Baron of the Chosen
 					["provider"] = { "n", 169359 },	-- Secutor Mevix
 					["coord"] = { 39.4, 55.5, 1536 },
+				}),
+				q(59800, {	-- Team Spirit
+					["sourceQuests"] = {
+						59750,	-- How To Get A Head
+						59781,	-- The Last Guy
+					},
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, 1536 },
+				}),
+				q(58947, {	-- Test Your Mettle
+					["sourceQuests"] = {
+						58575,	-- Stuff We All Get
+						59800,	-- Team Spirit
+					},
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, 1536 },
 				}),
 				q(60428, {	-- The Blade of the Primus
 					["sourceQuests"] = {
@@ -404,6 +438,27 @@ _.Zones =
 						60179,	-- Memory of Honor
 					},
 					["provider"] = { "n", 159065 },	-- Baroness Draka
+				}),
+				q(57316, {	-- The Ladder
+					["sourceQuests"] = { 58900 },	-- A Sure Bet
+					["provider"] = { "n", 161733 },	-- Anzio The Infallible
+					["coord"] = { 50.5, 51.6, 1536 },
+					["g"] = {
+						i(176277),	-- Ruthless Contender's Dagger
+						i(181529),	-- Ruthless Contender's Blade
+						i(176278),	-- Ruthless Contender's Hammer
+						i(176280),	-- Ruthless Contender's Sword
+						i(181531),	-- Ruthless Contender's Spellblade
+						i(176444),	-- Ruthless Contender's Steel
+						i(176282),	-- Ruthless Contender's Wand
+						i(176286),	-- Ruthless Contender's Warglaive
+						i(176281),	-- Ruthless Contender's Crossbow
+						i(176279),	-- Ruthless Contender's Staff
+						i(181534),	-- Ruthless Contender's Rod
+						i(176283),	-- Ruthless Contender's Claymore
+						i(176285),	-- Ruthless Contender's Tome
+						i(176284),	-- Ruthless Contender's Shield
+					},
 				}),
 				q(59781, {	-- The Last Guy
 					["sourceQuests"] = { 62785 },	-- I Could Be A Contender
@@ -459,6 +514,11 @@ _.Zones =
 						i(175465),	-- Deceitful Agent's Breeches
 						i(175462),	-- Cruel Executioner's Legguards
 					},
+				}),
+				q(59879, {	-- This Thing Of Ours
+					["sourceQuests"] = { 58947 },	-- Test Your Mettle
+					["provider"] = { "n", 161559 },	-- Louison
+					["coord"] = { 54.4, 48.6, 1536 },
 				}),
 				q(57516, {	-- Through the Fire and Flames
 					["sourceQuests"] = { 60451 },	-- Never Enough
@@ -531,7 +591,12 @@ _.Zones =
 					["provider"] = { "n", 167903 },	-- Baroness Draka
 					["coord"] = { 39.1, 49.9, 1536 },
 				}),
-				
+				q(59837, {	-- Working For The Living
+					["sourceQuests"] = { 59203 },	-- Leave Me a Loan
+					["provider"] = { "n", 159830 },	-- Au'narim
+					["coord"] = { 53.6, 47.5, 1536 },
+					["maps"] = { 1691 },	-- Shattered Grove
+				}),
 				
 				
 				
@@ -569,75 +634,6 @@ _.Zones =
 				}),
 				-- Sojourner of Maldraxxus
 				-- Theater of Pain
-				q(58575, {	-- Stuff We All Get
-					["provider"] = { "n", 161559 },	-- Louison
-					["coord"] = { 54.4, 48.6, 1536 },
-					["sourceQuests"] = {
-						59781,	-- The Last Guy
-						59750,	-- How To Get A Head
-					},
-				}),
-				q(59800, {	-- Team Spirit
-					["provider"] = { "n", 161559 },	-- Louison
-					["coord"] = { 54.4, 48.6, 1536 },
-					["sourceQuests"] = {
-						59781,	-- The Last Guy
-						59750,	-- How To Get A Head
-					},
-				}),
-				q(58947, {	-- Test Your Mettle
-					["provider"] = { "n", 161559 },	-- Louison
-					["coord"] = { 54.4, 48.6, 1536 },
-					["sourceQuests"] = {
-						58575,	-- Stuff We All Get
-						59800,	-- Team Spirit
-					},
-				}),
-				q(59879, {	-- This Thing Of Ours
-					["provider"] = { "n", 161559 },	-- Louison
-					["coord"] = { 54.4, 48.6, 1536 },
-					["sourceQuests"] = { 58947 },	-- Test Your Mettle
-				}),
-				q(59203, {	-- Leave Me a Loan
-					["provider"] = { "n", 159830 },	-- Au'narim
-					["coord"] = { 53.6, 47.5, 1536 },
-					["sourceQuests"] = { 58947 },	-- Test Your Mettle
-					["lvl"] = { 55 },
-				}),
-				q(59837, {	-- Working For The Living
-					["provider"] = { "n", 159830 },	-- Au'narim
-					["coord"] = { 53.6, 47.5, 1536 },
-					["sourceQuests"] = { 59203 },	-- Leave Me a Loan
-					["lvl"] = { 55 },
-					["maps"] = { 1691 },	-- Shattered Grove
-				}),
-				q(58900, {	-- A Sure Bet									triggers 59843 too
-					["provider"] = { "n", 161559 },	-- Louison
-					["coord"] = { 54.4, 48.6, 1536 },
-					["sourceQuests"] = { 59837 },	-- Working For The Living
-					["lvl"] = { 55 },
-				}),
-				q(57316, {	-- The Ladder
-					["provider"] = { "n", 161733 },	-- Anzio The Infallible
-					["coord"] = { 50.5, 51.6, 1536 },
-					["sourceQuests"] = { 59837 },	-- Working For The Living
-					["g"] = {
-						i(176277),	-- Ruthless Contender's Dagger
-						i(181529),	-- Ruthless Contender's Blade
-						i(176278),	-- Ruthless Contender's Hammer
-						i(176280),	-- Ruthless Contender's Sword
-						i(181531),	-- Ruthless Contender's Spellblade
-						i(176444),	-- Ruthless Contender's Steel
-						i(176282),	-- Ruthless Contender's Wand
-						i(176286),	-- Ruthless Contender's Warglaive
-						i(176281),	-- Ruthless Contender's Crossbow
-						i(176279),	-- Ruthless Contender's Staff
-						i(181534),	-- Ruthless Contender's Rod
-						i(176283),	-- Ruthless Contender's Claymore
-						i(176285),	-- Ruthless Contender's Tome
-						i(176284),	-- Ruthless Contender's Shield
-					},
-				}),
 				-- Archival Protection
 				q(58620, {	-- Slaylines
 					["provider"] = { "n", 166664 },	-- Ta'eran
