@@ -13,7 +13,6 @@ _.Zones =
 						["provider"] = { "n", 160387 },	-- Hermestes
 						["coord"] = { 64.6, 16.4, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -22,7 +21,6 @@ _.Zones =
 						["provider"] = { "n", 160387 },	-- Hermestes
 						["coord"] = { 64.6, 16.4, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -31,13 +29,11 @@ _.Zones =
 						["provider"] = { "n", 160387 },	-- Hermestes
 						["coord"] = { 64.6, 16.4, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 					}),
 					q(60400, {	-- Aiding Revendreth
 						["provider"] = { "n", 160387 },	-- Hermestes
 						["coord"] = { 64.6, 16.4, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -46,7 +42,6 @@ _.Zones =
 						["provider"] = { "n", 158773 },	-- Capheus
 						["coord"] = { 64.0, 20.0, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -55,7 +50,6 @@ _.Zones =
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
 						["coord"] = { 66.8, 15.8, 1533 },
 						["isWeekly"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -64,7 +58,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -73,7 +66,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -82,7 +74,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -91,7 +82,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -100,7 +90,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -109,7 +98,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -118,7 +106,6 @@ _.Zones =
 						["provider"] = { "n", 154627 },	-- Xandria
 						["coord"] = { 67.2, 16.0, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181741),	-- Tribute of the Paragon
 						},
@@ -127,7 +114,6 @@ _.Zones =
 						["provider"] = { "n", 154627 },	-- Xandria
 						["coord"] = { 67.2, 16.0, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181741),	-- Tribute of the Paragon
 						},
@@ -136,7 +122,6 @@ _.Zones =
 						["provider"] = { "n", 154627 },	-- Xandria
 						["coord"] = { 67.2, 16.0, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181741),	-- Tribute of the Paragon
 						},
@@ -145,7 +130,6 @@ _.Zones =
 						["provider"] = { "n", 154627 },	-- Xandria
 						["coord"] = { 67.2, 16.0, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181741),	-- Tribute of the Paragon
 						},
@@ -154,7 +138,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -163,7 +146,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -172,7 +154,6 @@ _.Zones =
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
 						["coord"] = { 66.8, 15.8, 1533 },
 						["isWeekly"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -181,7 +162,6 @@ _.Zones =
 						["provider"] = { "n", 168517 },	-- Kalisthene
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -190,7 +170,6 @@ _.Zones =
 						["provider"] = { "n", 168517 },	-- Kalisthene
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -199,7 +178,6 @@ _.Zones =
 						["provider"] = { "n", 168517 },	-- Kalisthene
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -208,7 +186,6 @@ _.Zones =
 						["provider"] = { "n", 168517 },	-- Kalisthene
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -217,7 +194,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181741),	-- Tribute of the Paragon
 						},
@@ -225,7 +201,6 @@ _.Zones =
 					-- One time Calling Quest to Indroduce Calling Quests, should be sorted in the normal Questfile
 					q(62692, {	-- A Calling in Bastion
 						["provider"] = { "n", 160470 },	-- Adjutant Nikos
-						["lvl"] = { 60 },
 						["coord"] = { 52.2, 47.0, 1533 },
 						["repeatable"] = true,
 						["g"] = {

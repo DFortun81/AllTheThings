@@ -251,7 +251,6 @@ _.Zones =
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["sourceQuest"] = 62716,	-- Re-Introductionse
-					["lvl"] = { 60 },
 					["g"] = {
 						ach(14627),	-- Choosing your Purpose
 					},
@@ -301,19 +300,16 @@ _.Zones =
 					["provider"] = { "n", 162928 },	-- Overseer Kah-Delen
 					["coord"] = { 54.4, 54.2, 1670 },
 					["sourceQuest"] = 59206,	-- Words of the Primus
-					["lvl"] = { 54 },
 				}),
 				q(61716, {	-- A Glimpse into Darkness
 					["provider"] = { "n", 173384 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 40.3, 68.7, 1670 },
 					["sourceQuest"] = 61715,	-- Request of the Highlord
-					["lvl"] = { 54 },
 				}),
 				q(60338, {	-- Journey to Ardenweald
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 69.9, 1670 },
 					["sourceQuest"] = 61715,	-- Request of the Highlord
-					["lvl"] = { 54 },
 				}),
 				-- From Ardenweald to Revendreth
 				q(57025, {	-- A Plea to Revendreth
@@ -323,7 +319,6 @@ _.Zones =
 						{ 38.8, 70.2, 1670 },
 					},
 					["sourceQuest"] = 58724,	-- The Queen's Request
-					["lvl"] = { 54 },
 				}),
 				-- From Revendreth
 				-- Choosing Your Covenant
@@ -331,13 +326,11 @@ _.Zones =
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["sourceQuest"] = 57876,	-- The End of the Beginning
-					["lvl"] = { 60 },
 				}),
 				q(57878, {	-- Choosing Your Purpose
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["sourceQuest"] = 57877,	-- The Looming Dark
-					["lvl"] = { 60 },
 					["g"] = {
 						ach(14627),	-- Choosing your Purpose
 					},
@@ -346,30 +339,25 @@ _.Zones =
 					["provider"] = { "n", 171589 },	-- General Draven
 					["coord"] = { 44.8, 68.9, 1670 },
 					["sourceQuest"] = 57878,	-- Choosing Your Purpose
-					["lvl"] = { 60 },
 				}),
 				q(60491, {	-- Among the Kyrian
 					["provider"] = { "n", 171787 },	-- Polemarch Adrestes
 					["coord"] = { 36.1, 64.1, 1670 },
 					["sourceQuest"] = 57878,	-- Choosing Your Purpose
-					["lvl"] = { 60 },
 				}),
 				q(58609, {	-- Taking The Seat
 					["provider"] = { "n", 171821 },	-- Baroness Draka
 					["coord"] = { 42.9, 74.1, 1670 },
 					["sourceQuest"] = 57878,	-- Choosing Your Purpose
-					["lvl"] = { 60 },
 				}),
 				q(61475, {	-- The Heart of the Forest
 					["provider"] = { "n", 171795 },	-- Lady Moonberry
 					["coord"] = { 39.7, 60.8, 1670 },
 					["sourceQuest"] = 57878,	-- Choosing Your Purpose
-					["lvl"] = { 60 },
 				}),
 				q(60286, {	-- A Token of Our Admiration
 					["provider"] = { "n", 168432 },	-- Ve'rayn
 					["coord"] = { 33.2, 48.9, 1670 },
-					["lvl"] = { 60 },
 				}),
 			}),
 		}),

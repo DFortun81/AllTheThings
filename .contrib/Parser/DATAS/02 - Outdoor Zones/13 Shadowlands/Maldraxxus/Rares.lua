@@ -123,7 +123,7 @@ _.Zones =
 					},
 				}),
 				n(162767, {	-- Pesticide
-					["questID"] = 58875,	-- also triggered 61992 on first kill
+					["questID"] = 58875,
 					["isDaily"] = true,
 					["coord"] = { 53.8, 61.0, 1536 },
 					["g"] = {
@@ -182,7 +182,7 @@ _.Zones =
 					},
 				}),
 				n(162586, { -- Tahonta
-					["questID"] = 58783,	-- also triggered 61986 on first kill
+					["questID"] = 58783,
 					["isDaily"] = true,
 					["coord"] = { 44.6, 52.0, 1536 },
 					["g"] = {

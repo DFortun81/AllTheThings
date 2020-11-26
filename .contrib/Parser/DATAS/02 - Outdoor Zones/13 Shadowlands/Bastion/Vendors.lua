@@ -52,9 +52,7 @@ _.Zones =
 					},
 				}),
 				n(175574, {	-- Angler Danica
-					["g"] = {
-						i(180136),	-- The Brokers Angle'r
-					},
+					i(180136),	-- The Brokers Angle'r
 				}),
 				n(171973, {	-- Binkiros <Mount Vendor>
 					i(180767, {	-- Eternal Phalynx of Loyalty

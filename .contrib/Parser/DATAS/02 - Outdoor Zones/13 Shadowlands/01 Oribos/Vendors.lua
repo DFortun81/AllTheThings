@@ -8,9 +8,7 @@ _.Zones =
 		m(1670, {	-- Oribos
 			n(VENDORS, {
 				n(156690, {	-- Distributor Au'nagl
-					["g"] = {
-						i(180136),	-- The Brokers Angle'r
-					},
+					i(180136),	-- The Brokers Angle'r
 				}),
 				--[[	Many items return as retrieving data. They either are added later or are changed (its the 2nd option 95% sure)
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>

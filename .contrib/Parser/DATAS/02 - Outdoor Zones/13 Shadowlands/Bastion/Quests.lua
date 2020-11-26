@@ -871,31 +871,26 @@ _.Zones =
 				q(59262, {	-- Broken Wings
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.82, 42.73, 1533 },
-					["lvl"] = { 60 },
 				}),
 				q(59263, {	-- Feathers of Flight
 					["sourceQuest"] = 59262,	-- Broken Wings
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.82, 42.73, 1533 },
-					["lvl"] = { 60 },
 				}),
 				q(60660, {	-- Flight Test
 					["sourceQuest"] = 59263,	-- Feathers of Flight
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.82, 42.73, 1533 },
-					["lvl"] = { 60 },
 				}),
 				q(59348, {	-- More Wings!
 					["sourceQuest"] = 60660,	-- Flight Test
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.82, 42.73, 1533 },
-					["lvl"] = { 60 },
 				}),
 				q(59351, {	-- Strings and Things
 					["sourceQuest"] = 60660,	-- Flight Test
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.82, 42.73, 1533 },
-					["lvl"] = { 60 },
 				}),
 				q(59311, {	-- How to Catch a Glimmerfly
 					["sourceQuests"] = {
@@ -904,7 +899,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.82, 42.73, 1533 },
-					["lvl"] = { 60 },
 					["g"] = {
 						i(180839)	-- Helpful Glimmerfly
 					},
@@ -913,7 +907,6 @@ _.Zones =
 					["sourceQuest"] = 59311,	-- How to Catch a Glimmerfly
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.82, 42.73, 1533 },
-					["lvl"] = { 60 },
 					["g"] = {
 						i(177951),	-- Glimmerflies on Strings
 					},

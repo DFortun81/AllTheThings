@@ -597,18 +597,17 @@ _.Zones =
 					["coord"] = { 53.6, 47.5, 1536 },
 					["maps"] = { 1691 },	-- Shattered Grove
 				}),
-				
-				
-				
-				
-				
+
+
+
+
+
 				currency(1832, {		-- Renown-Necrolord
 					-- Renown 5
 					-- House of Eyes
 					q(59555, {	-- Enemy at the Door
 						["provider"] = { "n", 161907 },	-- Baroness Draka
 						--["sourceQuests"] = { 57390 },	-- To Die By the Sword
-						["lvl"] = { 60 },
 						["g"] = {
 							i(182077),		-- War-Bred Tauralus
 						},
@@ -618,7 +617,6 @@ _.Zones =
 					q(59020, {	-- The Third Fall of Kel'Thuzad
 						["provider"] = { "n", 168381 },	-- Baroness Draka
 						["coord"] = { 50.3, 67.7, 1536 },
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181822),		-- Armored War-Bred Tauralus
 						},
@@ -626,7 +624,6 @@ _.Zones =
 					q(61761, {	-- The Better Part of Valor
 						--["provider"] = { "n", 168381 },	-- Baroness Draka
 						--["coord"] = { 50.3, 67.7, 1536 },
-						["lvl"] = { 60 },
 						["g"] = {
 							i(183847),		-- Acolyte's Guise
 						},

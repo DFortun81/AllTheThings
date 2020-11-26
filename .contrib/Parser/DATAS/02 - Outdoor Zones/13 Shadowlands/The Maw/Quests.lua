@@ -23,7 +23,6 @@ _.Zones =
 						1681,	-- Icecrown Citadel
 						1682,	-- Icecrown Citadel
 					},
-					["lvl"] = { 50 },
 				}),
 				q(61874, {	-- A Chilling Summons (H)
 					["maps"] = {
@@ -31,7 +30,6 @@ _.Zones =
 						1682,	-- Icecrown Citadel
 					},
 					["races"] = HORDE_ONLY,
-					["lvl"] = { 50 },
 				}),
 				q(59960, {	-- A Cooling Trail
 					["sourceQuests"] = { 60972 },	-- The Hunt for the Baron
@@ -40,13 +38,11 @@ _.Zones =
 					["sourceQuests"] = { 59754 },	-- On Blackened Wings
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 23.1, 31.6, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59752, {	-- A Fractured Blade
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 19.2, 57.0, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59766, {	-- A Good Axe
 					["sourceQuests"] = { 59762 },	-- By and Down the River
@@ -55,25 +51,21 @@ _.Zones =
 						{ "n", 167827 },	-- Thrall, post-pickup
 					},
 					["coord"] = { 29.6, 43.6, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59756, {	-- A Moment's Respite
 					["sourceQuests"] = { 59755 },	-- A Flight from Darkness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 36.2, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59761, {	-- An Undeserved Fate
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 25.0, 13.3, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59762, {	-- By and Down the River
 					["sourceQuests"] = { 59776 },	-- From the Mouths of Madness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 37.0, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59966, {	-- Delving Deeper
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
@@ -86,7 +78,6 @@ _.Zones =
 						59766,	-- A Good Axe
 					},
 					["provider"] = { "n", 167827 },	-- Thrall
-					["lvl"] = { 50 },
 				}),
 				q(59914, {	-- Fear to Tread
 					["sourceQuests"] = {
@@ -96,13 +87,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 21.5, 41.7, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59757, {	-- Field Seance
 					["sourceQuests"] = { 59756 },	-- A Moment's Respite
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 24.4, 35.9, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59776, {	-- From the Mouths of Madness
 					["sourceQuests"] = {
@@ -111,7 +100,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 167826 },	-- Lady Jaina Proudmoore
 					["coord"] = { 25.0, 13.4, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59962, {	-- Hope Never Dies
 					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
@@ -133,41 +121,34 @@ _.Zones =
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
 					["coord"] = { 19.2, 57.0, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59754, {	-- On Blackened Wings
 					["sourceQuests"] = { 59914 },	-- Fear to Tread
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 22.2, 33.0, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59753, {	-- Ruiner's End
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 170624 },	-- Wilona Thorne
 					["coord"] = { 22.7, 51.9, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59915, {	-- Soul in Hand
 					["sourceQuests"] = { 59758 },	-- Speaking to the Dead
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
-					["lvl"] = { 50 },
 				}),
 				q(59758, {	-- Speaking to the Dead
 					["sourceQuests"] = { 59757 },	-- Field Seance
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
-					["lvl"] = { 50 },
 				}),
 				q(59770, {	-- Stand as One
 					["sourceQuests"] = { 59767 },	-- The Path to Salvation
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 42.3, 42.1, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59760, {	-- The Afflictor's Key
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 25.0, 13.3, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59959, {	-- The Brand Holds the Key
 					["sourceQuests"] = { 59960 },	-- A Cooling Trail
@@ -182,13 +163,11 @@ _.Zones =
 					["sourceQuests"] = { 59915 },	-- Soul in Hand
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 36.2, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59767, {	-- The Path to Salvation
 					["sourceQuests"] = { 60644 },	-- Draw Out the Darkness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 29.4, 44.0, 1648 },
-					["lvl"] = { 50 },
 				}),
 				q(59751, {	-- Through the Shattered Sky
 					["sourceQuests"] = {
@@ -200,7 +179,6 @@ _.Zones =
 						1681,	-- Icecrown Citadel
 						1682,	-- Icecrown Citadel
 					},
-					["lvl"] = { 50 },
 				}),
 				q(61190, {	-- Wake of Ashes
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
@@ -214,37 +192,33 @@ _.Zones =
 						{ "n", 167827 },	-- Thrall, post-pickup
 					},
 					["coord"] = { 29.6, 43.6, 1648 },
-					["lvl"] = { 50 },
 				}),
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
+
+
+
+
+
+
+
+
+
+
+
 				-- The Prince and the Tower (Prince Renathal) (Revendreth Storyline)
 				q(57690, {	-- Cages For All Occasions
 					["provider"] = { "n", 158649 },	-- Vorpalia
 					["coord"] = { 38.7, 28.3, 1543 },
 					["sourceQuests"] = { 57689 },	-- Prince Renathal
-					["lvl"] = { 57 },
 				}),
 				q(57691, {	-- A Royal Key
 					["provider"] = { "n", 158645 },	-- Prince Renathal
 					["coord"] = { 34.6, 18.6, 1543 },
 					["sourceQuests"] = { 57690 },	-- Cages For All Occasions
-					["lvl"] = { 57 },
 				}),
 				q(57693, {	-- Torghast, Tower of the Damned
 					["provider"] = { "n", 158645 },	-- Prince Renathal
 					["coord"] = { 34.6, 18.6, 1543 },
 					["sourceQuests"] = { 57691 },	-- A Royal Key
-					["lvl"] = { 57 },
 					["g"] = {
 						i(175731),	-- Stolen Maw Badge
 					},
@@ -254,37 +228,31 @@ _.Zones =
 					["provider"] = { "n", 160212 },	-- Soulguide Daelia
 					["coord"] = { 33.9, 43.5, 1533 },
 					["sourceQuests"] = { 57905 },	-- A Unique Opportunity
-					["lvl"] = { 60 },
 				}),
 				q(60130, {	-- Souls of the Damned (Maldraxxus)
 					["provider"] = { "n", 167748 },	-- Osbourne Black
 					--["coord"] = { 33.9, 43.5, 1536 },
 					["sourceQuests"] = { 61397 },	-- Opportunity Strikes
-					["lvl"] = { 60 },
 				}),
 				q(60234, {	-- Souls of the Damned (Revendreth)
 					["provider"] = { "n", 164738 },	-- Tenaval
 					["coord"] = { 46.6, 28.6, 1525 },
 					["sourceQuests"] = { 59320 },	-- Souls to Save
-					["lvl"] = { 60 },
 				}),
 				q(61508, {	-- Soul Salvation (Bastion)
 					--["provider"] = { "n", 158553 },	-- Flutterby
 					--["coord"] = { 33.9, 43.5, 1533 },
 					["sourceQuests"] = { 60232 },	-- Souls of the Damned (Bastion)
-					["lvl"] = { 60 },
 				}),
 				q(61513, {	-- Soul Salvation (Maldraxxus)
 					--["provider"] = { "n", 158553 },	-- Flutterby
 					--["coord"] = { 33.9, 43.5, 1536 },
 					["sourceQuests"] = { 60130 },	-- Souls of the Damned (Maldraxxus)
-					["lvl"] = { 60 },
 				}),
 				q(61515, {	-- Soul Salvation (Revendreth)
 					["provider"] = { "n", 158553 },	-- Tenaval
 					["coord"] = { 33.9, 43.5, 1525 },
 					["sourceQuests"] = { 60234 },	-- Souls of the Damned (Revendreth)
-					["lvl"] = { 60 },
 				}),
 				q(61496, {	-- A Familiar Energy
 					["provider"] = { "n", 172543 },	-- Rescued Soul
@@ -300,23 +268,19 @@ _.Zones =
 						61513,	-- Soul Salvation (Maldraxxus)
 						61515,	-- Soul Salvation (Revendreth)
 					},
-					["lvl"] = { 60 },
 				}),
 				q(62882, {	-- Setting the Ground Rules
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 					["sourceQuests"] = { 61496 },	-- A Familiar Energy
-					["lvl"] = { 60 },
 				}),
 				q(60234, {	-- Rule 1: Have an Escape Plan
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 					["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
-					["lvl"] = { 60 },
 				}),
 				q(61391, {	-- The Eye of the Jailer
 					["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
-					["lvl"] = { 60 },
 				}),
 				q(61355, {	-- Rule 2: Keep a Low Profile
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -325,37 +289,31 @@ _.Zones =
 						60234,	-- Rule 1: Have an Escape Plan
 						61391,	-- The Eye of the Jailer
 					},
-					["lvl"] = { 60 },
 				}),
 				q(60289, {	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 					["sourceQuests"] = { 61355 },	-- Rule 2: Keep a Low Profile
-					["lvl"] = { 60 },
 				}),
 				q(62837, {	-- Hopeful News
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
-					["lvl"] = { 60 },
 				}),
 				q(62838, {	-- Soulful Recovery
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
-					["lvl"] = { 60 },
 				}),
 				q(60134, {	-- A Tauren in Trade
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
-					["lvl"] = { 60 },
 				}),
 				q(60136, {	-- Into Torghast
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
 					["sourceQuests"] = { 60134 },	-- A Tauren in Trade
-					["lvl"] = { 60 },
 					["g"] = {
 						spell(334746),	-- Torghast
 					},
@@ -368,32 +326,27 @@ _.Zones =
 						59246,	-- Daughter of the Night Warrior (Horde)
 						59179,	-- Daughter of the Night Warrior (Alliance)
 					},
-					["lvl"] = { 60 },
 				}),
 				q(60134, {	-- On the Trail
 					["provider"] = { "n", 174833 },	-- Shandris Feathermoon
 					["coord"] = { 44.3, 41.1, 1543 },
 					["sourceQuests"] = { 59181 },	-- Into the Maw
-					["lvl"] = { 60 },
 				}),
 				q(60530, {	-- The Sea of Souls
 					["provider"] = { "n", 168929 },	-- Shandris Feathermoon
 					["coord"] = { 30.1, 36.4, 1543 },
 					["sourceQuests"] = { 60134 },	-- On the Trail
-					["lvl"] = { 60 },
 				}),
 				q(59189, {	-- The Recovery of Tyrande Whisperwind
 					["provider"] = { "n", 174834 },	-- Shandris Feathermoon
 					["coord"] = { 46.8, 41.7, 1543 },
 					["sourceQuests"] = { 60530 },	-- The Sea of Souls
-					["lvl"] = { 60 },
 					["maps"] = { 1720 },	-- Torghast Scenario
 				}),
 				q(59242, {	-- Their New Home
 					["provider"] = { "n", 174834 },	-- Shandris Feathermoon
 					["coord"] = { 46.8, 41.7, 1543 },
 					["sourceQuests"] = { 59189 },	-- The Recovery of Tyrande Whisperwind
-					["lvl"] = { 60 },
 					["g"] = {
 						i(179498),	-- Faesworn Barb
 						i(182323),	-- Faesworn Spellblade
@@ -413,24 +366,20 @@ _.Zones =
 					["coord"] = { 46.9, 41.7, 1543 },
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["isDaily"] = true,
-					["lvl"] = { 60 },
 				}),
 				q(61103, {	-- Thin Their Numbers
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["isDaily"] = true,
-					["lvl"] = { 60 },
 				}),
 				-- Bonus Objectives
 				q(59007, {	-- Soul Well
-					["lvl"] = { 60 },
 				}),
 				-- Bonus Objectives ?? Rares or WQ
 				q(59441, {	-- The Soulsmith
 					["coord"] = { 36.2, 37.4, 1543 },
 					["isDaily"] = true,
-					["lvl"] = { 60 },
 				}),
 			}),
 		}),

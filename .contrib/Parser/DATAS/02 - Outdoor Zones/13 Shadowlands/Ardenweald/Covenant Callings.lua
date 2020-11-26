@@ -13,7 +13,6 @@ _.Zones =
 						["provider"] = { "n", 167195 },	-- Blodwyn
 						["coord"] = { 46.4, 50.6, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -22,7 +21,6 @@ _.Zones =
 						["provider"] = { "n", 167195 },	-- Blodwyn
 						["coord"] = { 46.4, 50.6, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -31,7 +29,6 @@ _.Zones =
 						["provider"] = { "n", 167195 },	-- Blodwyn
 						["coord"] = { 46.4, 50.6, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -40,7 +37,6 @@ _.Zones =
 						["provider"] = { "n", 167195 },	-- Blodwyn
 						["coord"] = { 46.4, 50.6, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -49,7 +45,6 @@ _.Zones =
 						["provider"] = { "n", 167196 },	-- Sesselie
 						["coord"] = { 48.9, 39.3, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -58,7 +53,6 @@ _.Zones =
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["coord"] = { 33.9, 43.5, 1565 },
 						["isWeekly"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181476),	-- Tribute of the Wild Hunt
 						},
@@ -67,7 +61,6 @@ _.Zones =
 						["provider"] = { "n", 167193 },	-- Featherlight
 						["coord"] = { 59.7, 31.3, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -76,7 +69,6 @@ _.Zones =
 						["provider"] = { "n", 167193 },	-- Featherlight
 						["coord"] = { 59.7, 31.3, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -85,7 +77,6 @@ _.Zones =
 						["provider"] = { "n", 167193 },	-- Featherlight
 						["coord"] = { 59.7, 31.3, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -94,7 +85,6 @@ _.Zones =
 						["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
 						["coord"] = { 16.5, 52.4, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -103,7 +93,6 @@ _.Zones =
 						["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
 						["coord"] = { 16.5, 52.4, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -112,7 +101,6 @@ _.Zones =
 						["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
 						["coord"] = { 16.5, 52.4, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -121,7 +109,6 @@ _.Zones =
 						["provider"] = { "n", 167206 },	-- Yanlar
 						["coord"] = { 36.8, 24.8, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181476),	-- Tribute of the Wild Hunt
 						},
@@ -130,7 +117,6 @@ _.Zones =
 						["provider"] = { "n", 167206 },	-- Yanlar
 						["coord"] = { 36.8, 24.8, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181476),	-- Tribute of the Wild Hunt
 						},
@@ -139,7 +125,6 @@ _.Zones =
 						["provider"] = { "n", 167206 },	-- Yanlar
 						["coord"] = { 36.8, 24.8, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181476),	-- Tribute of the Wild Hunt
 						},
@@ -148,7 +133,6 @@ _.Zones =
 						["provider"] = { "n", 167206 },	-- Yanlar
 						["coord"] = { 36.8, 24.8, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181476),	-- Tribute of the Wild Hunt
 						},
@@ -157,7 +141,6 @@ _.Zones =
 						["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
 						["coord"] = { 16.5, 52.4, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -166,7 +149,6 @@ _.Zones =
 						["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
 						["coord"] = { 16.5, 52.4, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -175,7 +157,6 @@ _.Zones =
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["coord"] = { 33.9, 43.5, 1565 },
 						["isWeekly"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181476),	-- Tribute of the Wild Hunt
 						},
@@ -184,7 +165,6 @@ _.Zones =
 						["provider"] = { "n", 158544 },	-- Lord Herne
 						["coord"] = { 40.9, 72.4, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -193,7 +173,6 @@ _.Zones =
 						["provider"] = { "n", 158544 },	-- Lord Herne
 						["coord"] = { 40.9, 72.4, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -202,7 +181,6 @@ _.Zones =
 						["provider"] = { "n", 158544 },	-- Lord Herne
 						["coord"] = { 40.9, 72.4, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -211,7 +189,6 @@ _.Zones =
 						["provider"] = { "n", 158544 },	-- Lord Herne
 						["coord"] = { 40.9, 72.4, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
@@ -220,7 +197,6 @@ _.Zones =
 						["provider"] = { "n", 167193 },	-- Featherlight
 						["coord"] = { 59.7, 31.3, 1565 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181475),	-- Tribute of the Grove Wardens
 						},
