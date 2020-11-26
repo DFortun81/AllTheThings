@@ -42,7 +42,7 @@ _.Zones =
 				}),
 				n(166292, {	-- Bog Beast
 					["coord"] = { 35.8, 32.6, 1525 },
-					--["questID"] = ,
+					["questID"] = 59823,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(18)),	-- Adventurer of Revendreth / Bog Beast
@@ -195,6 +195,14 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						i(182084),	-- Gorespine
+					},
+				}),
+				n(165175, {	-- Prideful Hulk
+					["coord"] = { 67.8, 82.0, 1525 },
+					["questID"] = 59580,
+					["isDaily"] = true,
+					["g"] = {
+						i(183736),	-- Pride Resistant Handwraps
 					},
 				}),
 				n(160675, {	-- Scrivener Lenua

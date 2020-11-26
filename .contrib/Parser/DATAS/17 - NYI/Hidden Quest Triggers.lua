@@ -2955,6 +2955,7 @@ _.HiddenQuestTriggers =
 		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
 		q(60259),	-- Your Personal Assistant - choosing Akiris
 		q(60260),	-- Your Personal Assistant - choosing Ipa — shares appearance with Dintos + Minta, so possible each steward has its own questID and you get credit for all the ones that share its appearance?
+		q(60261),	-- Your Personal Assistant - this one has triggered when choosing Thima and Syla so far
 		q(60262),	-- Your Personal Assistant - choosing Ipa/Akiris
 		q(60263),	-- Your Personal Assistant - choosing Ipa/Akiris
 		--	more steward info: https://imgur.com/0tLgE13
@@ -2974,6 +2975,7 @@ _.HiddenQuestTriggers =
 
 		-- Revendreth
 		q(60581),	-- Triggered after killing Endlurker along with 59582; probably triggers on first kill
+		q(62463),	-- Triggered after killing Prideful Hulk along with 59580; probably triggers on first kill
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
