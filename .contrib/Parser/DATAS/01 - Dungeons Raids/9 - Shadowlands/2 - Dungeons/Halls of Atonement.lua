@@ -7,7 +7,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["coord"] = { 78.4, 49.0, 1525 },
 		["maps"] = {
 			1663,	-- Halls of Atonement
-			1664,	-- The Narve of Pain / The Crimson Apse
+			1664,	-- The Nave of Pain / The Crimson Apse
 			1665,	-- Sanctury of Souls
 		},
 		["lvl"] = { 50 },

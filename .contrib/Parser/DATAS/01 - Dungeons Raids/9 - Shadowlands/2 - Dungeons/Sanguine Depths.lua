@@ -7,6 +7,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["coord"] = { 51.0, 30.1, 1525 },
 		["maps"] = {
 			1675,	-- Sanguine Depths
+			1676,	-- Amphitheater of Sorrow / Ring of Souls
 		},
 		["lvl"] = { 50 },
 		["g"] = {
