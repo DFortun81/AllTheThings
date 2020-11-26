@@ -12,6 +12,11 @@ _.Zones =
 					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
 					["coord"] = { 54.0, 50.8, 1536 },
 				}),
+				q(58751, {	-- A Common Peril
+					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
+					["provider"] = { "n", 168381 },	-- Baroness Draka
+					["coord"] = { 50.3, 67.7, 1536 },
+				}),
 				q(59430, {	-- A Plague On Your House
 					["sourceQuests"] = { 57425 },	-- Land of Opportunity
 					["provider"] = { "n", 165049 },	-- Judas Sneap
@@ -26,6 +31,16 @@ _.Zones =
 					["sourceQuests"] = { 57425 },	-- Land of Opportunity
 					["provider"] = { "n", 162069 },	-- Baroness Draka
 					["coord"] = { 48.3, 57.1, 1536 },
+				}),
+				q(57912, {	-- Baron of the Chosen
+					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
+					["provider"] = { "n", 168381 },	-- Baroness Draka
+					["coord"] = { 50.3, 67.7, 1536 },
+				}),
+				q(58011, {	-- Bug Bites
+					["sourceQuests"] = { 59130 },	-- The House of Plagues
+					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
+					["coord"] = { 56.4, 57.2, 1536 },
 				}),
 				q(60021, {	-- Champion the Cause
 					["sourceQuests"] = { 60020 },	-- An Opportunistic Strike
@@ -57,6 +72,11 @@ _.Zones =
 					["sourceQuests"] = { 57514 },	-- The First Act of War
 					["provider"] = { "n", 157895 },	-- Baron Vyraz
 					["coord"] = { 36.3, 60.2, 1536 },
+				}),
+				q(60461, {	-- Meet the Margrave
+					["sourceQuests"] = { 60453 },	-- The Path to Glory
+					["provider"] = { "n", 159065 },	-- Baroness Draka
+					["coord"] = { 38.9, 65.1, 1536 },
 				}),
 				q(60451, {	-- Never Enough
 					["sourceQuests"] = {
@@ -90,10 +110,23 @@ _.Zones =
 					["provider"] = { "n", 162615 },	-- Caleesy
 					["coord"] = { 47.0, 49.0, 1536 },
 				}),
+				q(58016, {	-- Spores Galore
+					["sourceQuests"] = { 59130 },	-- The House of Plagues
+					["provider"] = { "n", 168381 },	-- Baroness Draka
+					["coord"] = { 50.3, 67.7, 1536 },
+				}),
 				q(58750, {	-- Take The Bull By The Horns
 					["sourceQuests"] = { 57425 },	-- Land of Opportunity
 					["provider"] = { "n", 162474 },	-- Dundae
 					["coord"] = { 46.8, 48.5, 1536 },
+				}),
+				q(60428, {	-- The Blade of the Primus
+					["sourceQuests"] = {
+						58618,	-- Ossein Enchantment
+						58726,	-- Thick Skin
+					},
+					["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
+					["coord"] = { 36.2, 71.0, 1536 },
 				}),
 				q(57514, {	-- The First Act of War
 					["sourceQuests"] = { 57515 },	-- The House of the Chosen
@@ -104,6 +137,11 @@ _.Zones =
 					["sourceQuests"] = { 57514 },	-- The First Act of War
 					["provider"] = { "n", 157895 },	-- Baron Vyraz
 					["coord"] = { 36.3, 60.2, 1536 },
+				}),
+				q(59130, {	-- The House of Plagues
+					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
+					["provider"] = { "n", 168381 },	-- Baroness Draka
+					["coord"] = { 50.3, 67.7, 1536 },
 				}),
 				q(57515, {	-- The House of the Chosen
 					["sourceQuests"] = {
@@ -118,6 +156,27 @@ _.Zones =
 					["coord"] = { 54.4, 48.6, 1536 },
 					["g"] = {
 						i(175725),	-- Newcomer's Gladiatorial Badge
+					},
+				}),
+				q(60453, {	-- The Path to Glory
+					["sourceQuests"] = { 60428 },	-- The Blade of the Primus
+					["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
+					["coord"] = { 36.2, 71.0, 1536 },
+				}),
+				q(60886, {	-- The Seat of the Primus
+					["sourceQuests"] = { 60461 },	-- Meet the Margrave
+					["provider"] = { "n", 158007 },	-- Margrave Krexus
+					["coord"] = { 36.9, 68.4, 1536 },
+					["g"] = {
+						i(180826),	-- Bonefused Shortsword
+						i(180818),	-- Bonefused Bonesaw
+						i(180824),	-- Bonefused Sword
+						i(180825),	-- Bonefused Shank
+						i(180823),	-- Bonefused Greatsword
+						i(180819),	-- Bonefused Crusher
+						i(180820),	-- Bonefused Greatstaff
+						i(180822),	-- Bonefused Crossbow
+						i(180821),	-- Bonefused Warblade
 					},
 				}),
 				q(58726, {	-- Thick Skin
@@ -219,47 +278,7 @@ _.Zones =
 					["provider"] = { "o", 351467 },	-- Faded Epitaphs
 					["coord"] = { 48.3, 57.7, 1536 },
 				}),
-				-- House of the Chosen
-				q(60428, {	-- The Blade of the Primus
-					["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
-					["coord"] = { 36.2, 71.0, 1536 },
-					["sourceQuests"] = {
-						58618,	-- Ossein Enchantment
-						58726,	-- Thick Skin
-					},
-				}),
-				q(60453, {	-- The Path to Glory
-					["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
-					["coord"] = { 36.2, 71.0, 1536 },
-					["sourceQuests"] = { 60428 },	-- The Blade of the Primus
-				}),
-				q(60461, {	-- Meet the Margrave
-					["provider"] = { "n", 159065 },	-- Baroness Draka
-					["coord"] = { 38.9, 65.1, 1536 },
-					["sourceQuests"] = { 60453 },	-- The Path to Glory
-				}),
-				q(60886, {	-- The Seat of the Primus
-					["provider"] = { "n", 158007 },	-- Margrave Krexus
-					["coord"] = { 36.9, 68.4, 1536 },
-					["sourceQuests"] = { 60461 },	-- Meet the Margrave
-					["g"] = {
-						i(180826),	-- Bonefused Shortsword
-						i(180818),	-- Bonefused Bonesaw
-						i(180824),	-- Bonefused Sword
-						i(180825),	-- Bonefused Shank
-						i(180823),	-- Bonefused Greatsword
-						i(180819),	-- Bonefused Crusher
-						i(180820),	-- Bonefused Greatstaff
-						i(180822),	-- Bonefused Crossbow
-						i(180821),	-- Bonefused Warblade
-					},
-				}),
 				-- Matron of Spies
-				q(58751, {	-- A Common Peril
-					["provider"] = { "n", 168381 },	-- Baroness Draka
-					["coord"] = { 50.3, 67.7, 1536 },
-					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
-				}),
 				q(59171, {	-- Prey Upon Them
 					["provider"] = { "n", 162487 },	-- Baroness Vashj
 					["coord"] = { 50.3, 67.7, 1536 },
@@ -322,11 +341,6 @@ _.Zones =
 					["sourceQuests"] = { 59025 },	-- Straight to the Heart
 				}),
 				-- House of Constructs
-				q(57912, {	-- Baron of the Chosen
-					["provider"] = { "n", 168381 },	-- Baroness Draka
-					["coord"] = { 50.3, 67.7, 1536 },
-					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
-				}),
 				q(57976, {	-- Lead By Example
 					["provider"] = { "n", 159894 },	-- Baron Vyraz
 					["coord"] = { 39.2, 55.9, 1536 },
@@ -420,21 +434,6 @@ _.Zones =
 					["sourceQuests"] = { 57994 },	-- In The Flesh
 				}),
 				-- House of Plagues
-				q(59130, {	-- The House of Plagues
-					["provider"] = { "n", 168381 },	-- Baroness Draka
-					["coord"] = { 50.3, 67.7, 1536 },
-					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
-				}),
-				q(58011, {	-- Bug Bites
-					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
-					["coord"] = { 56.4, 57.2, 1536 },
-					["sourceQuests"] = { 59130 },	-- The House of Plagues
-				}),
-				q(58016, {	-- Spores Galore
-					["provider"] = { "n", 168381 },	-- Baroness Draka
-					["coord"] = { 50.3, 67.7, 1536 },
-					["sourceQuests"] = { 59130 },	-- The House of Plagues
-				}),
 				q(58027, {	-- Slime, Anyone?
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, 1536 },

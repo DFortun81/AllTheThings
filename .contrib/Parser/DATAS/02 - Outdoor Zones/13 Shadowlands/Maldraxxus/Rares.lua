@@ -123,11 +123,14 @@ _.Zones =
 					},
 				}),
 				n(162767, {	-- Pesticide
-					["coord"] = { 53.8, 61.0, 1536 },
-					--["questID"] = ,
+					["questID"] = 58875,	-- also triggered 61992 on first kill
 					["isDaily"] = true,
+					["coord"] = { 53.8, 61.0, 1536 },
 					["g"] = {
-						ach(14308, crit(19)),	-- Adventurer of Maldraxxus / Pesticide
+						crit(19, {	-- Pesticide
+							["achievementID"] = 14308,	-- Adventurer of Bastion
+						}),
+						i(182205),	-- Scarab-Shell Faceguard
 					},
 				}),
 				n(159753, { -- Ravenomous
