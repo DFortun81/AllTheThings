@@ -17,6 +17,17 @@ _.Zones =
 					["provider"] = { "n", 168341 },	-- Lady Moonberry
 					["coord"] = { 68.2, 18.3, 1565 },
 				}),
+				q(60859, {	-- Souls of the Forest
+					["sourceQuests"] = { 60857 },	-- We Can't Save Them All
+					["provider"] = { "n", 170537 },	-- Te'zan
+					["coord"] = { 67.8, 24.1, 1565 },
+					["g"] = {
+						i(175654),	-- Dreamthorn Sabatons
+						i(175652),	-- Grove Warden's Warboots
+						i(175653),	-- Spirit Tender's Slippers
+						i(175655),	-- Starshroud Boots
+					},
+				}),
 				q(60857, {	-- We Can't Save Them All
 					["sourceQuests"] = { 60778 },	-- Wildseed Rescue
 					["provider"] = { "n", 170175 },	-- Featherlight
@@ -42,17 +53,6 @@ _.Zones =
 					}),
 				}),
 				-- Welcome to Ardenweald
-				q(60859, {	-- Souls of the Forest
-					["provider"] = { "n", 170533 },	-- Featherlight
-					["coord"] = { 67.8, 24.1, 1565 },
-					["sourceQuests"] = { 60857 },	-- We Can't Save Them All
-					["g"] = {
-						i(175675),	-- Spirit Tender's Cuffs
-						i(175678),	-- Starshroud Bracers
-						i(175677),	-- Dreamthorn Wristguards
-						i(175676),	-- Grove Warden's Vambraces
-					},
-				}),
 				q(57787, {	-- Keep to the Path
 					["provider"] = { "n", 170533 },	-- Featherlight
 					["coord"] = { 65.6, 27.9, 1565 },
@@ -1114,10 +1114,10 @@ _.Zones =
 						59801,	-- Take the Power
 					},
 					["g"] = {
-						i(175653),	-- Spirit Tender's Slippers
-						i(175655),	-- Starshroud Boots
-						i(175654),	-- Dreamthorn Sabatons
-						i(175652),	-- Grove Warden's Warboots
+						i(175677),	-- Dreamthorn Wristguards
+						i(175676),	-- Grove Warden's Vambraces
+						i(175675),	-- Spirit Tender's Cuffs
+						i(175678),	-- Starshroud Bracers
 					},
 				}),
 				-- Thread of Hope
