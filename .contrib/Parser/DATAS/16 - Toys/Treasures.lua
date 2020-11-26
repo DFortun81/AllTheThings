@@ -8,6 +8,7 @@ _.Toys =
 		i(180993),	-- Bat Visage Bobber
 		i(183986),	-- Bondable Sinstone
 		i(174920),	-- Coifcurl's Close Shave Kit
+		i(184489),	-- Fae Harp
 		i(182729),	-- Hearty Dragon Plume
 		i(179393),	-- Mirror of Envious Dreams
 		i(182780),	-- Muckpool Cookpot

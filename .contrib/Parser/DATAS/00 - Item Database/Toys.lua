@@ -177,6 +177,7 @@ t(129929);	-- Ever-Shifting Mirror
 t(45020);	-- Exodar Banner (Alliance)
 t(147309);	-- Face of the Forest
 t(53057);	-- Faded Wizard Hat (Horde)
+t(184489);	-- Fae Harp
 t(129113);	-- Faintly Glowing Flagon of Mead
 t(142495);	-- Fake Teeth
 t(140779);	-- Falanaar Echo (Never Implemented)

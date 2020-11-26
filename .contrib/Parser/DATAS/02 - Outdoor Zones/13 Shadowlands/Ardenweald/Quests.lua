@@ -7,6 +7,11 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1565, {	-- Ardenweald
 			n(QUESTS, {
+				q(57816, {	-- Dreamweaver
+					["sourceQuests"] = { 57787 },	-- Keep to the Path
+					["provider"] = { "n", 158487 },	-- Droman Tashmur
+					["coord"] = { 63.4, 36.2, 1565 },
+				}),
 				q(60341, {	-- First on the Agenda
 					["sourceQuests"] = { 60763 },	-- I Moustache You to Lend a Hand
 					["provider"] = { "n", 157788 },	-- Lady Moonberry
@@ -16,6 +21,21 @@ _.Zones =
 					["sourceQuests"] = { 60338 },	-- Journey to Ardenweald
 					["provider"] = { "n", 168341 },	-- Lady Moonberry
 					["coord"] = { 68.2, 18.3, 1565 },
+				}),
+				q(57787, {	-- Keep to the Path
+					["sourceQuests"] = { 60859 },	-- Souls of the Forest
+					["provider"] = { "n", 170533 },	-- Featherlight
+					["coord"] = { 65.6, 27.9, 1565 },
+				}),
+				q(57948, {	-- Nothing Left to Give
+					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
+					["provider"] = { "n", 159638 },	-- Choofa
+					["coord"] = { 67.1, 32.1, 1565 },
+				}),
+				q(60567, {	-- Shooing Wildlife
+					["sourceQuests"] = { 57816 },	-- Dreamweaver
+					["provider"] = { "n", 169116 },	-- Dreamweaver
+					["coord"] = { 64.2, 41.2, 1565 },
 				}),
 				q(60859, {	-- Souls of the Forest
 					["sourceQuests"] = { 60857 },	-- We Can't Save Them All
@@ -27,6 +47,21 @@ _.Zones =
 						i(175653),	-- Spirit Tender's Slippers
 						i(175655),	-- Starshroud Boots
 					},
+				}),
+				q(57947, {	-- Spirits of the Glen
+					["sourceQuests"] = { 57787 },	-- Keep to the Path
+					["provider"] = { "n", 158487 },	-- Droman Tashmur
+					["coord"] = { 63.4, 36.2, 1565 },
+				}),
+				q(60563, {	-- Tending to Wildseeds
+					["sourceQuests"] = { 57816 },	-- Dreamweaver
+					["provider"] = { "n", 169116 },	-- Dreamweaver
+					["coord"] = { 64.2, 41.2, 1565 },
+				}),
+				q(57949, {	-- They Need to Calm Down
+					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
+					["provider"] = { "n", 159638 },	-- Choofa
+					["coord"] = { 97.1, 32.1, 1565 },
 				}),
 				q(60857, {	-- We Can't Save Them All
 					["sourceQuests"] = { 60778 },	-- Wildseed Rescue
@@ -52,28 +87,7 @@ _.Zones =
 						},
 					}),
 				}),
-				-- Welcome to Ardenweald
-				q(57787, {	-- Keep to the Path
-					["provider"] = { "n", 170533 },	-- Featherlight
-					["coord"] = { 65.6, 27.9, 1565 },
-					["sourceQuests"] = { 60859 },	-- Souls of the Forest
-				}),
 				-- Tranquil Pools
-				q(57816, {	-- Dreamweaver
-					["provider"] = { "n", 158487 },	-- Droman Tashmur
-					["coord"] = { 63.4, 36.2, 1565 },
-					["sourceQuests"] = { 57787 },	-- Keep to the Path
-				}),
-				q(60567, {	-- Shooing Wildlife
-					["provider"] = { "n", 169116 },	-- Dreamweaver
-					["coord"] = { 64.2, 41.2, 1565 },
-					["sourceQuests"] = { 57816 },	-- Dreamweaver
-				}),
-				q(60563, {	-- Tending to Wildseeds
-					["provider"] = { "n", 169116 },	-- Dreamweaver
-					["coord"] = { 64.2, 41.2, 1565 },
-					["sourceQuests"] = { 57816 },	-- Dreamweaver
-				}),
 				q(60575, {	-- Belly Full of Fae
 					["provider"] = { "n", 169202 },	-- Dreamweaver
 					["coord"] = { 61.4, 40.9, 1565 },
@@ -105,21 +119,6 @@ _.Zones =
 					},
 				}),
 				-- Spirit Glen
-				q(57947, {	-- Spirits of the Glen
-					["provider"] = { "n", 158487 },	-- Droman Tashmur
-					["coord"] = { 63.4, 36.2, 1565 },
-					["sourceQuests"] = { 57787 },	-- Keep to the Path
-				}),
-				q(57948, {	-- Nothing Left to Give
-					["provider"] = { "n", 159638 },	-- Choofa
-					["coord"] = { 67.1, 32.1, 1565 },
-					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
-				}),
-				q(57949, {	-- They Need to Calm Down
-					["provider"] = { "n", 159638 },	-- Choofa
-					["coord"] = { 97.1, 32.1, 1565 },
-					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
-				}),
 				q(57950, {	-- Mizik the Haughty
 					["provider"] = { "n", 159639 },	-- Choofa
 					["sourceQuests"] = {

@@ -2990,6 +2990,9 @@ _.HiddenQuestTriggers =
 		q(60527),	-- Triggered after reading Theotar's Diary
 		q(60581),	-- Triggered after killing Endlurker along with 59582; probably triggers on first kill
 		q(62463),	-- Triggered after killing Prideful Hulk along with 59580; probably triggers on first kill
+		-- Revendreth WQ
+		q(59858),	-- Tea Tales: Theotar Achievement criteria
+		q(59858),	-- Tea Tales: Theotar Achievement criteria
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
@@ -3008,16 +3011,14 @@ _.HiddenQuestTriggers =
 		q(59996),	-- Tracking Quest (Finished Skoldus Hall Layer 1)
 		q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
 
-		-- Ardenweald Covenant Questline
+		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
+		q(61170),	-- triggered when unlocking the Harmonic Chest (looting it has a separate ID, in Achievements file)
+		-- Ardenweald Covenant
 		q(62745),	-- Daughter of the Night Warrior Questline finished
 		q(57559),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(62706),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
-
-		-- Revendreth WQ
-		q(59858),	-- Tea Tales: Theotar Achievement criteria
-		q(59858),	-- Tea Tales: Theotar Achievement criteria
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest
