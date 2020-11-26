@@ -54,6 +54,13 @@ _.Zones =
 						i(180459),	-- Dessication Duster
 					},
 				}),
+				q(60279, {	-- WANTED: The Pale Doom
+					["provider"] = { "o", 351889 },	-- Wanted: The Pale Doom
+					["coord"] = { 62.2, 63.5, 1525 },
+					["g"] =  {
+						i(180458),	-- Writ of Tithe Exemption
+					},
+				}),
 
 
 

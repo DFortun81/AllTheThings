@@ -4136,6 +4136,7 @@ app.L = {
 		[351467] = "Faded Epitaph",
 		[351874] = "Wanted: Enforcer Kristof",
 		[351888] = "Wanted: Summoner Marcelis",
+		[351889] = "Wanted: The Pale Doom",
 		[352027] = "Wanted Scroll",
 		[352028] = "Wanted Scroll",
 		[352086] = "Blackhound Cache",
