@@ -11,6 +11,7 @@ _.Zones =
 			["maps"] = {
 				1690,	-- Aspirant's Quarters
 				1707,	-- Elysian Hold
+				1714,	-- Third Chamber of Kalliope
 			},
 		}),
 	}),

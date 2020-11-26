@@ -51,6 +51,11 @@ _.Zones =
 						i(184735),	-- Wristclasps of Shame
 					},
 				}),
+				n(175574, {	-- Angler Danica
+					["g"] = {
+						i(180136),	-- The Brokers Angle'r
+					},
+				}),
 				n(171973, {	-- Binkiros <Mount Vendor>
 					i(180767, {	-- Eternal Phalynx of Loyalty
 						["cost"] = { { "c", 1813, 2500 } },

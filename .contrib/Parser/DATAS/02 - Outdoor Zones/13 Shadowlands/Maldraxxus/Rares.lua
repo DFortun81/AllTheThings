@@ -37,6 +37,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(17)),	-- Adventurer of Maldraxxus / Deadly Dapperling
+						i(184280),	-- Dapper Threads
 						i(181263),	-- Shy Melvin
 					},
 				}),
