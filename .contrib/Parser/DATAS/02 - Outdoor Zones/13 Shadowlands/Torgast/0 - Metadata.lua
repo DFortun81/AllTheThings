@@ -41,6 +41,7 @@ _.Zones =
 					1769,	-- TG59_Floor
 					1771,	-- TG61_Floor
 					1772,	-- TG62_Floor
+					1774,	-- Torghast
 					1776,	-- TG66_Floor
 					1777,	-- TG67_Floor
 					1778,	-- TG68_Floor
@@ -50,6 +51,7 @@ _.Zones =
 					1784,	-- TG75_Floor
 					1785,	-- TG76_Floor
 					1806,	-- TG96_Floor
+					1811,
 				},
 			}),
 		}),

@@ -7,7 +7,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["coord"] = { 53.1, 53.0, 1536 },
 		["maps"] = {
 			1683,	-- Theater of Pain
+			1684,	-- 
+			1676,	-- 
 			1685,	-- Theater of Pain
+			1686,	-- 
+			1687,	-- 
 		},
 		["lvl"] = { 50 },
 		["g"] = {
