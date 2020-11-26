@@ -31,7 +31,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2391, {	-- Amarth, The Harvester
-					["crs"] = { 166855 },	-- Amarth, The Harvester
+					["crs"] = { 163157 },	-- Amarth, The Harvester
 					["g"] = {
 						i(178737),	-- Amarth's Spellblade
 						i(178738),	-- Rattling Deadeye Hood
@@ -42,7 +42,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2392, {	-- Surgeon Stitchflesh
-					["crs"] = { 166880 },	-- Surgeon Stitchflesh
+					["crs"] = { 162689 },	-- Surgeon Stitchflesh
 					["g"] = {
 						i(178743),	-- Stitchflesh's Scalpel
 						i(178750),	-- Encrusted Canopic Lid
