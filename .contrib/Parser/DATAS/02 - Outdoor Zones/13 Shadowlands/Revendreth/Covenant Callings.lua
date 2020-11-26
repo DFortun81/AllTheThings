@@ -64,12 +64,13 @@ _.Zones =
 						},
 					}),
 					q(60422, {	-- A Call to Ardenweald
-						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
+						["provider"] = { "n", 158653 },	-- Prince Renathal
+						["coord"] = { 51.8, 37.5, 1699 },
 						["repeatable"] = true,
 						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
+							i(181475),	-- Bounty of the Grovewardens [Live Reward]
 						},
 					}),
 					q(60427, {	-- A Call to Bastion
@@ -119,11 +120,12 @@ _.Zones =
 					}),
 					q(60441, {	-- Challenges in Ardenweald
 						["provider"] = { "n", 165291 },	-- The Accuser
-						--["coord"] = { , 1533 },
+						["coord"] = { 55.9, 78.6, 1799 },
 						["repeatable"] = true,
 						["lvl"] = { 60 },
 						["g"] = {
 							i(181557),	-- Favor of the Court
+							i(181476),	-- Tribute of the Wild Hunt [Live Reward]
 						},
 					}),
 					q(60444, {	-- Challenges in Bastion

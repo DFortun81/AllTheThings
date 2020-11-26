@@ -9,6 +9,7 @@ _.Zones =
 			m(1627, {	-- Torghast
 				["icon"] = 3642306,
 				["maps"] = {
+					1911,	-- Torghast Entrance
 					1705,	-- Torghast Entrance
 					1621,	-- Torghast
 					1624,	-- Torghast
@@ -18,6 +19,7 @@ _.Zones =
 					1786,	-- Torghast
 					1787,	-- Torghast
 					1791,	-- Torghast
+					1794,	-- Torghast
 					1728,	-- The Rundecarver
 					1656,	-- Floor 10
 					1751,	-- Floor 13
