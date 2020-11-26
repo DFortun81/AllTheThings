@@ -692,6 +692,7 @@ t(179393);	-- Mirror of Envious Dreams
 t(182780);	-- Muckpool Cookpot
 t(183856);	-- Mystical Orb of Meditation
 t(182773);	-- Necrolord Hearthstone
+t(180290);	-- Night Fae Hearthstone
 t(181794);	-- Orophea's Lyre
 t(181825);	-- Phial of Ravenous Slime
 t(183876);	-- Quill of Correspondence

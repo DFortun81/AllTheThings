@@ -58,6 +58,7 @@ _.PetJournal =
 		p(415),		-- Fire Beetle
 		p(541),		-- Fire-Proof Roach
 		p(644),		-- Fjord Rat
+		p(2910),	-- Floofa
 		p(2407),	-- Frenzied Cottontail
 		p(3032),	-- Frenzied Mawrat
 		p(1427),	-- Frostfur Rat

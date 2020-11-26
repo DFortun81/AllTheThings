@@ -533,6 +533,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(174770),	-- Wicked Swarmer
+		i(180730),	-- Wild Glimmerfur Prowler
 		i(116671),	-- Wild Goretusk
 		i(40775, {	-- Winged Steed of the Ebon Blade [Death Knight Only]
 			["classes"] = { DEATHKNIGHT },

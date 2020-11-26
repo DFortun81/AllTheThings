@@ -98,6 +98,7 @@ _.Toys =
 			["classes"] = { DRUID },
 		}),
 		i(182773),		-- Necrolord Hearthstone
+		i(180290),		-- Night Fae Hearthstone
 		i(134004),		-- Noble's Eternal Elementium Signet
 		i(45014),		-- Orgrimmar Banner (Horde)
 		i(158149, {		-- Overtuned Corgi Goggles
