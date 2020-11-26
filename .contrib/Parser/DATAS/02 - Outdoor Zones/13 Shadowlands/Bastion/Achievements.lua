@@ -9,6 +9,7 @@ _.Zones =
 			n(ACHIEVEMENTS, {
 				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 				--	TODO: finish adding criteria here + other SL zones
+					--	add ["crs"] for these as well!
 					["collectible"] = false,
 					["g"] = {
 						crit(1, {	-- Crystalsnap

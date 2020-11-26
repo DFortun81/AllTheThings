@@ -47,10 +47,44 @@ _.Zones =
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, 1536 },
 				}),
+				q(59223, {	-- By Any Other Name
+					["sourceQuests"] = {
+						58036,	-- Hazardous Waste Collection
+						58045,	-- Plague is Thicker Than Water
+						58031,	-- Applied Science
+					},
+					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
+					["coord"] = { 58.3, 71.6, 1536 },
+				}),
+				q(57301, {	-- Callous Concoctions
+					["sourceQuests"] = { 58431 },	-- Pool of Potions
+					["provider"] = { "n", 157313 },	-- Foul-Tongue Cyrlix
+					["isWeekly"] = true,
+					["coord"] = { 58.5, 73.4, 1536 },
+				}),
 				q(60021, {	-- Champion the Cause
 					["sourceQuests"] = { 60020 },	-- An Opportunistic Strike
 					["provider"] = { "n", 164244 },	-- Grandmaster Vole
 					["coord"] = { 50.3, 44.3, 1536 },
+				}),
+				q(59231, {	-- Fathomless Power
+					["sourceQuests"] = { 60831 },	-- Fit For a Margrave
+					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
+					["coord"] = { 60.4, 71.6, 1536 },
+				}),
+				q(60557, {	-- First Time? You Have to Fight!
+					["sourceQuests"] = { 57912 },	-- Baron of the Chosen
+					["provider"] = { "n", 159894 },	-- Baron Vyraz
+					["coord"] = { 39.2, 55.9, 1536 },
+				}),
+				q(60831, {	-- Fit For a Margrave
+					["sourceQuests"] = { 59223 },	-- By Any Other Name
+					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
+					["coord"] = { 60.4, 71.6, 1536 },
+					["g"] = {
+						i(175722),	-- Vial of Caustic Liquid
+						i(175723),	-- Rejuvenating Serum
+					},
 				}),
 				q(58616, {	-- Forging a Champion
 					["sourceQuests"] = { 57516 },	-- Through the Fire and Flames
@@ -78,6 +112,11 @@ _.Zones =
 					["provider"] = { "n", 166664 },	-- Ta'eran
 					["coord"] = { 43.0, 25.1, 1536 },
 				}),
+				q(57976, {	-- Lead By Example
+					["sourceQuests"] = { 57912 },	-- Baron of the Chosen
+					["provider"] = { "n", 159894 },	-- Baron Vyraz
+					["coord"] = { 39.2, 55.9, 1536 },
+				}),
 				q(58617, {	-- Maintaining Order
 					["sourceQuests"] = { 57514 },	-- The First Act of War
 					["provider"] = { "n", 157895 },	-- Baron Vyraz
@@ -96,6 +135,18 @@ _.Zones =
 					["provider"] = { "n", 157895 },	-- Baron Vyraz
 					["coord"] = { 36.3, 60.2, 1536 },
 				}),
+				q(57979, {	-- Offensive Behavior
+					["sourceQuests"] = {
+						57976,	-- Lead By Example
+						60557,	-- First Time? You Have to Fight!
+						58268,	-- Take the High Ground
+					},
+					["provider"] = { "n", 169226 },	-- Secutor Mevix
+					["coord"] = { 39.4, 46.7, 1536 },
+					["g"] = {
+						i(175763),	-- Salvaged Mercenary's Drape
+					},
+				}),
 				q(58618, {	-- Ossein Enchantment
 					["sourceQuests"] = { 58616 },	-- Forging a Champion
 					["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
@@ -111,6 +162,23 @@ _.Zones =
 						i(175458),	-- Favored Fanatic's Gauntlets
 						i(175456),	-- Intimidating Initiate's Crushers
 					},
+				}),
+				q(59520, {	-- Plaguefall: Knee Deep In It
+					["sourceQuests"] = { 59223 },	-- By Any Other Name
+					["provider"] = { "n", 165052 },	-- Vial Master Lurgy
+					["coord"] = { 59.4, 72.9, 1536 },
+					["maps"] = { 1674 },	-- Plaguefall
+					["g"] = {
+						i(175513),	-- Cruel Executioner's Breastplate
+						i(175515),	-- Deceitful Agent's Tunic
+						i(175514),	-- Flesh Architect's Hauberk
+						i(175533),	-- Corpse-Stitcher's Raiment
+					},
+				}),
+				q(58431, {	-- Pool of Potions
+					["sourceQuests"] = { 59430 },	-- Plagues Aid
+					["provider"] = { "n", 157945 },	-- Boil Master Yetch
+					["coord"] = { 59.0, 73.8, 1536 },
 				}),
 				q(58619, {	-- Read Between the Lines
 				--	TODO: verify SQs
@@ -151,6 +219,11 @@ _.Zones =
 					["sourceQuests"] = { 57425 },	-- Land of Opportunity
 					["provider"] = { "n", 162474 },	-- Dundae
 					["coord"] = { 46.8, 48.5, 1536 },
+				}),
+				q(58268, {	-- Take the High Ground
+					["sourceQuests"] = { 57912 },	-- Baron of the Chosen
+					["provider"] = { "n", 169359 },	-- Secutor Mevix
+					["coord"] = { 39.4, 55.5, 1536 },
 				}),
 				q(60428, {	-- The Blade of the Primus
 					["sourceQuests"] = {
@@ -373,33 +446,6 @@ _.Zones =
 					["sourceQuests"] = { 59025 },	-- Straight to the Heart
 				}),
 				-- House of Constructs
-				q(57976, {	-- Lead By Example
-					["provider"] = { "n", 159894 },	-- Baron Vyraz
-					["coord"] = { 39.2, 55.9, 1536 },
-					["sourceQuests"] = { 57912 },	-- Baron of the Chosen
-				}),
-				q(60557, {	-- First Time? You Have to Fight!
-					["provider"] = { "n", 159894 },	-- Baron Vyraz
-					["coord"] = { 39.2, 55.9, 1536 },
-					["sourceQuests"] = { 57912 },	-- Baron of the Chosen
-				}),
-				q(58268, {	-- Take the High Ground
-					["provider"] = { "n", 169359 },	-- Secutor Mevix
-					["coord"] = { 39.4, 55.5, 1536 },
-					["sourceQuests"] = { 57912 },	-- Baron of the Chosen
-				}),
-				q(57979, {	-- Offensive Behavior
-					["provider"] = { "n", 169226 },	-- Secutor Mevix
-					["coord"] = { 39.4, 46.7, 1536 },
-					["sourceQuests"] = {
-						57976,	-- Lead By Example
-						60557,	-- First Time? You Have to Fight!
-						58268,	-- Take the High Ground
-					},
-					["g"] = {
-						i(175763),	-- Salvaged Mercenary's Drape
-					},
-				}),
 				q(59616, {	-- Army of One
 					["provider"] = { "n", 169462 },	-- Baron Vyraz
 					["coord"] = { 39.7, 46.7, 1536 },
@@ -464,30 +510,6 @@ _.Zones =
 					["provider"] = { "n", 170094 },	-- Secutor Mevix
 					["coord"] = { 37.6, 29.1, 1536 },
 					["sourceQuests"] = { 57994 },	-- In The Flesh
-				}),
-				-- House of Plagues
-				q(59223, {	-- By Any Other Name
-					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
-					["coord"] = { 58.3, 71.6, 1536 },
-					["sourceQuests"] = {
-						58036,	-- Hazardous Waste Collection
-						58045,	-- Plague is Thicker Than Water
-						58031,	-- Applied Science
-					},
-				}),
-				q(60831, {	-- Fit For a Margrave
-					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
-					["coord"] = { 60.4, 71.6, 1536 },
-					["sourceQuests"] = { 59223 },	-- By Any Other Name
-					["g"] = {
-						i(175722),	-- Vial of Caustic Liquid
-						i(175723),	-- Rejuvenating Serum
-					},
-				}),
-				q(59231, {	-- Fathomless Power
-					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
-					["coord"] = { 60.4, 71.6, 1536 },
-					["sourceQuests"] = { 60831 },	-- Fit For a Margrave
 				}),
 				-- Ritual for the Damned
 				q(59202, {	-- Among the Chosen
@@ -668,18 +690,6 @@ _.Zones =
 					["provider"] = { "n", 166664 },	-- Ta'eran
 					["coord"] = { 43.0, 25.1, 1536 },
 					["sourceQuests"] = { 59994 },	-- Trust Fall
-				}),
-				-- Mixing Monstrosities
-				q(58431, {	-- Pool of Potions
-					["provider"] = { "n", 157945 },	-- Boil Master Yetch
-					["coord"] = { 59.0, 73.8, 1536 },
-					["sourceQuests"] = { 59430 },	-- Plagues Aid
-				}),
-				q(57301, {	-- Callous Concoctions
-					["provider"] = { "n", 157313 },	-- Foul-Tongue Cyrlix
-					["coord"] = { 58.5, 73.4, 1536 },
-					["sourceQuests"] = { 58431 },	-- Pool of Potions
-					["isWeekly"] = true,
 				}),
 				-- Wasteland Work
 				q(58794, {	-- Stabbing Wasteward

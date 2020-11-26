@@ -19,19 +19,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			n(QUESTS, {
-				q(59520, {	-- Plaguefall: Knee Deep In It
-					["provider"] = { "n", 165052 },	-- Vial Master Lurgy
-					["coord"] = { 59.4, 72.9, 1536 },
-					["sourceQuest"] = 59223,	-- By Any Other Name
-					["lvl"] = { 52 },
-					["maps"] = { 1536 },	-- Maldraxxus
-					["g"] = {
-						i(175512),	-- Epidemiologist's Raiment
-						i(175515),	-- Deceitful Agent's Tunic
-						i(175514),	-- Flesh Architect's Hauberk
-						i(175513),	-- Cruel Executioner's Breastplate
-					},
-				}),
+				-- do not delete header!
 			}),
 			--n(-34, {	-- World Quests
 			--}),
