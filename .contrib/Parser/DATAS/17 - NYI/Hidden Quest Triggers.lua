@@ -2972,8 +2972,11 @@ _.HiddenQuestTriggers =
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
 		q(59439),	-- triggered when throwing Viscous Oil from Burning Extract into the Pool of Potions while on the quest "Pool of Potions"
+		q(61988),	-- Indomitable Schmitd first kill
 
 		-- Revendreth
+		q(60523),	-- Triggered after reading Theotar's Diary
+		q(60527),	-- Triggered after reading Theotar's Diary
 		q(60581),	-- Triggered after killing Endlurker along with 59582; probably triggers on first kill
 		q(62463),	-- Triggered after killing Prideful Hulk along with 59580; probably triggers on first kill
 

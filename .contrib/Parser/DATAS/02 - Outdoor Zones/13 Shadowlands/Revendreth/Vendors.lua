@@ -426,6 +426,32 @@ _.Zones =
 						}),
 					},
 				}),
+				n(166076, {	-- Mats
+					["coord"] = { 32.6, 49.3, 1525 },
+					["g"] = {
+						i(180676, {	-- Discarded Commendation
+							["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby
+						}),
+						i(184719, {	-- Enchanted Map of Infused Ruby Network
+							["cost"] = { { "c", 1820, 100 } },	-- Infused Ruby
+						}),
+						i(180678, {	-- Peck Acorn
+							["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby
+						}),
+						i(180689, {	-- Pocket Embers
+							["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby
+						}),
+						i(184716, {	-- Sentry Neutralizer
+							["cost"] = { { "c", 1820, 3 } },	-- Infused Ruby
+						}),
+						i(184718, {	-- Stolen Map of Infused Ruby Network
+							["cost"] = { { "c", 1820, 5 } },	-- Infused Ruby
+						}),
+						i(180658, {	-- Witherlight Crystal
+							["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby
+						}),
+					},
+				}),
 				n(156822, {	-- Mistress Mihaela <Court of Harvesters Quartermaster>
 					["coord"] = { 61.4, 63.8, 1525 },
 					["g"] = {

@@ -91,7 +91,7 @@ _.Zones =
 				}),
 				n(161105, { -- Indomitable Schmitd
 					["coord"] = { 39.8, 43.4, 1536 },
-					["questID"] = 58332,	-- TODO: 61988 also triggered...
+					["questID"] = 58332,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(8)),	-- Adventurer of Maldraxxus / Indomitable Schmitd

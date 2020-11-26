@@ -33,6 +33,30 @@ _.Zones =
 						},
 					}),
 				}),
+				q(62189, {	-- Parasol Components
+					["provider"] = { "o", 349798 },	-- Smuggled Cache
+					["coord"] = { 31.1, 55.1, 1525 },
+					["g"] =  {
+						i(182738),	-- Bundle of Smuggled Parasol Components
+					},
+				}),
+				q(60275, {	-- WANTED: Enforcer Kristof
+					["provider"] = { "o", 351874 },	-- Wanted: Enforcer Kristof
+					["coord"] = { 30.6, 48.9, 1525 },
+					["g"] =  {
+						i(181714),	-- Jeweled Hand Fan
+					},
+				}),
+				q(60276, {	-- WANTED: Summoner Marcelis
+					["provider"] = { "o", 351888 },	-- Wanted: Summoner Marcelis
+					["coord"] = { 30.8, 49.0, 1525 },
+					["g"] =  {
+						i(180459),	-- Dessication Duster
+					},
+				}),
+
+
+
 				-- Welcome to Revendreth
 				q(57026, {	-- The Sinstone
 					["provider"] = { "n", 155537 },	-- Rendle
@@ -431,7 +455,12 @@ _.Zones =
 					["provider"] = { "n", 158542 },	-- Theotar
 					["coord"] = { 37.1, 57.5, 1525 },
 					["sourceQuest"] = 59256,	-- The Fearstalker
-					["lvl"] = { 57 },
+					["g"] = {
+						i(179988),	-- Ash-Scored Girdle
+						i(179991),	-- Light-Bleached Greaves
+						i(179990),	-- Shattereye's Chestguard
+						i(179989),	-- Marquis's Lace Cuffs
+					},
 				}),
 				q(60566, {	-- Into the Light
 					["provider"] = { "n", 158694 },	-- Theotar
@@ -454,6 +483,8 @@ _.Zones =
 						i(177637),	-- Sinfall Arquebus
 						i(177635),	-- Sinfall Legion Smasher
 						i(177636),	-- Sinfall Legionaire's Barbed Staff
+						i(184326),	-- Sinfall Stoneborn Cudgel
+						i(184320),	-- Sinfall Initiate's Staff
 					},
 				}),
 				-- The Prince and the Tower (Prince Renathal)
@@ -576,16 +607,6 @@ _.Zones =
 				-- The Final Atonement
 				-- Mirror Maker of the Master
 				-- Revelations of the Light
-				q(60275, {	-- WANTED: Enforcer Kristof
-					["provider"] = { "o", 351874 },	-- Wanted: Enforcer Kristof	-- TODO: Need to add the Object
-					["coord"] = { 30.6, 48.9, 1525 },
-					["lvl"] = { 57 },
-				}),
-				q(60276, {	-- WANTED: Summoner Marcelis	-- TODO: Need to add the Object
-					["provider"] = { "o", 351888 },	-- Wanted: Summoner Marcelis
-					["coord"] = { 30.8, 49.0, 1525 },
-					["lvl"] = { 57 },
-				}),
 				-- Bonus Objective
 				q(57177, {	-- A Fresh Start
 					["lvl"] = { 57 },
