@@ -540,13 +540,65 @@ _.Zones =
 					["sourceQuests"] = { 58723 },	-- The Court of Winter!
 				}),
 				-- End of Zone Achievement Quests
-				-- Start of the Covenant Quests
-					-- For Queen and Grove!
+				
+				
+				
+				
+				-- Start of the Covenant Quests (keeping these down here for now in case we want to put them under a different header)
+				-- currently in order of the quest sequence, will alphabetize after verifying all
 				q(61479, {	-- The Boon of Shapes
+					["sourceQuests"] = { 61475 },	-- The Heart of the Forest
 					["provider"] = { "n", 172431 },	-- Lady Moonberry
 					["coord"] = { 39.7, 60.8, 1565 },
-					["sourceQuests"] = { 61475 },	-- The Heart of the Forest
 				}),
+				q(58104, {	-- Show, Don't Tell
+					["sourceQuests"] = { 61479 },	-- The Boon of Shapes
+					["provider"] = { "n", 161509 },	-- Lady Moonberry
+					["coord"] = { 49.5, 40.1, 1701 },
+				}),
+				q(58157, {	-- Break a Leg
+					["sourceQuests"] = { 58104 },	-- Show, Don't Tell
+					["provider"] = { "n", 160484 },	-- Featherlight
+					["coord"] = { 40.7, 42.7, 1565 },
+				}),
+				q(58158, {	-- The Fourth Wall, er, War
+					["sourceQuests"] = { 58157 },	-- Break a Leg
+					["provider"] = { "n", 160484 },	-- Featherlight
+					["coord"] = { 40.7, 42.7, 1565 },
+				}),
+				q(58159, {	-- What's My Motivation?
+					["sourceQuests"] = { 58158 },	-- The Fourth Wall, er, War
+					["provider"] = { "n", 160484 },	-- Featherlight
+					["coord"] = { 40.7, 42.7, 1565 },
+					["g"] = {
+						i(180263),	-- Dreamlight Runestag
+					},
+				}),
+				q(58160, {	-- For Queen and Grove!
+					["sourceQuests"] = { 58159 },	-- What's My Motivation?
+					["provider"] = { "n", 160500 },	-- Ysera
+					["coord"] = { 42.4, 45.2, 1565 },
+					["g"] = {
+						spell(338946),	-- World Quests
+					},
+				}),
+				q(62883, {	-- Keeper of Great Renown
+					["sourceQuests"] = { 58160 },	-- For Queen and Grove!
+					["provider"] = { "n", 156634 },	-- Winter Queen
+				}),
+				q(62884, {	-- The Forest Will Sing Your Name
+					["sourceQuests"] = { 62883 },	-- Keeper of Great Renown
+					["provider"] = { "n", 176096 },	-- Laurel
+					["coord"] = { 34.3, 36.8, 1701 },
+				}),
+				q(62697, {	-- A Call to Service
+					["sourceQuests"] = { 62884 },	-- The Forest Will Sing Your Name
+					["provider"] = { "n", 176096 },	-- Laurel
+					["coord"] = { 34.3, 36.8, 1701 },
+				}),
+				
+				
+				-- Everything past here has not been verified yet in retail
 				q(61541, {	-- The Forge of Bonds
 					["provider"] = { "n", 172431 },	-- Lady Moonberry
 					["coord"] = { 49.2, 39.9, 1565 },
@@ -576,37 +628,6 @@ _.Zones =
 					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 					["coord"] = { 44.6, 56.2, 1565 },
 					["sourceQuests"] = { 61553 },	-- Know Where to Strike
-				}),
-				q(58104, {	-- Show, Don't Tell
-					["provider"] = { "n", 161509 },	-- Lady Moonberry
-					["coord"] = { 44.9, 35.7, 1565 },
-					["sourceQuests"] = { 61554 },	-- The Play's The Thing
-				}),
-				q(58157, {	-- Break a Leg
-					["provider"] = { "n", 160484 },	-- Featherlight
-					["coord"] = { 40.7, 42.7, 1565 },
-					["sourceQuests"] = { 58104 },	-- Show, Don't Tell
-				}),
-				q(58158, {	-- The Fourth Wall, er, War
-					["provider"] = { "n", 160484 },	-- Featherlight
-					["coord"] = { 40.7, 42.7, 1565 },
-					["sourceQuests"] = { 58157 },	-- Break a Leg
-				}),
-				q(58159, {	-- What's My Motivation?
-					["provider"] = { "n", 160484 },	-- Featherlight
-					["coord"] = { 40.7, 42.7, 1565 },
-					["sourceQuests"] = { 58158 },	-- The Fourth Wall, er, War
-					["g"] = {
-						i(180263),	-- Dreamlight Runedeer
-					},
-				}),
-				q(58160, {	-- For Queen and Grove!
-					["provider"] = { "n", 160500 },	-- Ysera
-					["coord"] = { 42.4, 45.2, 1565 },
-					["sourceQuests"] = { 58159 },	-- What's My Motivation?
-					["g"] = {
-						spell(338946),	-- World Quests
-					},
 				}),
 				-- Return to the Maw
 				q(60233, {	-- Souls of the Damned (Ardenweald)
@@ -772,21 +793,6 @@ _.Zones =
 							["questID"] = 62428,	-- Equine Soul
 						}),
 					},
-				}),
-				q(52883, {	-- The Forest Will Sing Your Name
-					["provider"] = { "n", 156634 },	-- Winter Queen
-					["coord"] = { 51.8, 28.1, 1565 },
-					["sourceQuests"] = { 58160 },	-- For Queen and Grove!
-				}),
-				q(62884, {	-- Who Shapes the Forest
-					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-					["coord"] = { 40.7, 33.1, 1565 },
-					["sourceQuests"] = { 52883 },	-- The Forest Will Sing Your Name
-				}),
-				q(62697, {	-- A Call to Service
-					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-					["coord"] = { 40.7, 33.1, 1565 },
-					["sourceQuests"] = { 62884 },	-- Who Shapes the Forest
 				}),
 				q(62693, {	-- A Calling in Ardenweald
 					["provider"] = { "n", 165702 },	-- Blodwyn

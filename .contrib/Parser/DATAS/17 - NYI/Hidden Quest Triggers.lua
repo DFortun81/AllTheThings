@@ -3011,6 +3011,9 @@ _.HiddenQuestTriggers =
 		-- Ardenweald Covenant Questline
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
 		q(62745),	-- Daughter of the Night Warrior Questline finished
+		q(57559),	-- Triggered after turning in For Queen and Grove! (58160)
+		q(62706),	-- Triggered after turning in For Queen and Grove! (58160)
+		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
 
 		-- Revendreth WQ
 		q(59858),	-- Tea Tales: Theotar Achievement criteria
