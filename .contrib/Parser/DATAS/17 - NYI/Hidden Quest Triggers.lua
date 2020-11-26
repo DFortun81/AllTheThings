@@ -2979,6 +2979,12 @@ _.HiddenQuestTriggers =
 		q(59843),	-- triggered when turning in "A Sure Bet"
 		q(62786),	-- triggered when killing Unbreakable Urtz during "The Ladder" - no other arena opponents triggered quests
 
+		-- Oribos
+		q(62019),	-- Triggered after choosing Night Fae covenant
+		q(62710),	-- Triggered after choosing Night Fae covenant
+		q(62023),	-- Triggered after choosing Kyrian covenant
+		q(62708),	-- Triggered after choosing Kyrian covenant
+
 		-- Revendreth
 		q(60523),	-- Triggered after reading Theotar's Diary
 		q(60527),	-- Triggered after reading Theotar's Diary

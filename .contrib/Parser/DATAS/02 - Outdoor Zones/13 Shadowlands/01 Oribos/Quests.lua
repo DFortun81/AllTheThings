@@ -99,6 +99,14 @@ _.Zones =
 					["provider"] = { "n", 167486 },	-- Tal-Inara
 					["coord"] = { 40.5, 65.9, 1670 },
 				}),
+				q(57878, {	-- Choosing Your Purpose
+					["sourceQuests"] = { 57877 },	-- The Looming Dark
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.2, 69.7, 1670 },
+					["g"] = {
+						ach(14627),	-- Choosing your Purpose
+					},
+				}),
 				q(57386, {	-- If You Want Peace...
 					["sourceQuests"] = { 61107 },	-- A Land of Strife
 					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
@@ -108,6 +116,11 @@ _.Zones =
 					["sourceQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 					["provider"] = { "n", 167425 },	-- Overseer Kah-Delen
 					["coord"] = { 39.7, 66.1, 1670 },
+				}),
+				q(63214, {	-- Report to Moonberry
+					["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.2, 69.7, 1670 },
 				}),
 				q(59773, {	-- Seek the Ascended
 					["sourceQuests"] = { 60156 },	-- The Path to Bastion
@@ -137,6 +150,16 @@ _.Zones =
 					["sourceQuests"] = { 60151 },	-- A Doorway Through the Veil
 					["provider"] = { "n", 167424 },	-- Overseer Kah-Sher
 					["coord"] = { 39.7, 66.1, 1670 },
+				}),
+				q(61475, {	-- The Heart of the Forest
+					["sourceQuests"] = { 63214 },	-- Report to Moonberry
+					["provider"] = { "n", 171795 },	-- Lady Moonberry
+					["coord"] = { 39.7, 61.0, 1670 },
+				}),
+				q(57877, {	-- The Looming Dark
+					["sourceQuests"] = { 57876 },	-- The End of the Beginning
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.2, 69.7, 1670 },
 				}),
 				q(60156, {	-- The Path to Bastion
 					["sourceQuests"] = { 60154 },	-- Understanding the Shadowlands
@@ -322,19 +345,6 @@ _.Zones =
 				}),
 				-- From Revendreth
 				-- Choosing Your Covenant
-				q(57877, {	-- The Looming Dark
-					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
-					["sourceQuest"] = 57876,	-- The End of the Beginning
-				}),
-				q(57878, {	-- Choosing Your Purpose
-					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
-					["sourceQuest"] = 57877,	-- The Looming Dark
-					["g"] = {
-						ach(14627),	-- Choosing your Purpose
-					},
-				}),
 				q(59314, {	-- Sinfall
 					["provider"] = { "n", 171589 },	-- General Draven
 					["coord"] = { 44.8, 68.9, 1670 },
@@ -348,11 +358,6 @@ _.Zones =
 				q(58609, {	-- Taking The Seat
 					["provider"] = { "n", 171821 },	-- Baroness Draka
 					["coord"] = { 42.9, 74.1, 1670 },
-					["sourceQuest"] = 57878,	-- Choosing Your Purpose
-				}),
-				q(61475, {	-- The Heart of the Forest
-					["provider"] = { "n", 171795 },	-- Lady Moonberry
-					["coord"] = { 39.7, 60.8, 1670 },
 					["sourceQuest"] = 57878,	-- Choosing Your Purpose
 				}),
 				q(60286, {	-- A Token of Our Admiration
