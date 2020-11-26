@@ -27,6 +27,11 @@ _.Zones =
 					["provider"] = { "n", 164244 },	-- Grandmaster Vole
 					["coord"] = { 50.3, 44.3, 1536 },
 				}),
+				q(58031, {	-- Applied Science
+					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
+					["provider"] = { "o", 353645 },	-- Marileth's Journal
+					["coord"] = { 56.5, 57.2, 1536 },
+				}),
 				q(57511, {	-- Arms for the Poor
 					["sourceQuests"] = { 57425 },	-- Land of Opportunity
 					["provider"] = { "n", 162069 },	-- Baroness Draka
@@ -51,6 +56,11 @@ _.Zones =
 					["sourceQuests"] = { 57516 },	-- Through the Fire and Flames
 					["provider"] = { "n", 159065 },	-- Baroness Draka
 					["coord"] = { 38.2, 66.5, 1536 },
+				}),
+				q(58036, {	-- Hazardous Waste Collection
+					["sourceQuests"] = { 58027 },	-- Slime, Anyone?
+					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
+					["coord"] = { 56.4, 57.2, 1536 },
 				}),
 				q(59750, {	-- How To Get A Head
 					["sourceQuests"] = { 57425 },	-- Land of Opportunity
@@ -91,6 +101,17 @@ _.Zones =
 					["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
 					["coord"] = { 36.2, 71.0, 1536 },
 				}),
+				q(58045, {	-- Plague is Thicker Than Water
+					["sourceQuests"] = { 58027 },	-- Slime, Anyone?
+					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
+					["coord"] = { 56.4, 57.2, 1536 },
+					["g"] = {
+						i(175457),	-- Popular Pupil's Mitts
+						i(175455),	-- Adored Apprentice's Gloves
+						i(175458),	-- Favored Fanatic's Gauntlets
+						i(175456),	-- Intimidating Initiate's Crushers
+					},
+				}),
 				q(58619, {	-- Read Between the Lines
 				--	TODO: verify SQs
 					["sourceQuests"] = { 57425 },	-- Land of Opportunity
@@ -103,6 +124,17 @@ _.Zones =
 					["coord"] = { 43.0, 25.1, 1536 },
 					["g"] = {
 						i(175707),	-- Signet of the Learned
+					},
+				}),
+				q(58027, {	-- Slime, Anyone?
+					["sourceQuests"] = {
+						58011,	-- Bug Bites
+						58016,	-- Spores Galore
+					},
+					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
+					["coord"] = { 56.4, 57.2, 1536 },
+					["g"] = {
+						i(173891),	-- 	Plagueborn Slime (PET!)
 					},
 				}),
 				q(58785, {	-- Smack And Grab
@@ -434,38 +466,6 @@ _.Zones =
 					["sourceQuests"] = { 57994 },	-- In The Flesh
 				}),
 				-- House of Plagues
-				q(58027, {	-- Slime, Anyone?
-					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
-					["coord"] = { 56.4, 57.2, 1536 },
-					["sourceQuests"] = {
-						58011,	-- Bug Bites
-						58016,	-- Spores Galore
-					},
-					["g"] = {
-						i(173891),	-- 	Plagueborn Slime
-					},
-				}),
-				q(58036, {	-- Hazardous Waste Collection
-					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
-					["coord"] = { 56.4, 57.2, 1536 },
-					["sourceQuests"] = { 58027 },	-- Slime, Anyone?
-				}),
-				q(58045, {	-- Plague is Thicker Than Water
-					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
-					["coord"] = { 56.4, 57.2, 1536 },
-					["sourceQuests"] = { 58027 },	-- Slime, Anyone?
-					["g"] = {
-						i(175457),	-- Epidemiologist's Gloves
-						i(175455),	-- Deceitful Agent's Gloves
-						i(175458),	-- Flesh Architect's Gauntlets
-						i(175456),	-- Cruel Executioner's Gauntlets
-					},
-				}),
-				q(58031, {	-- Applied Science
-					--	["provider"] = { "o", 353645 },	-- Marileth's Journal						-- TODO: Need to add the Object
-					["coord"] = { 56.5, 57.2, 1536 },
-					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
-				}),
 				q(59223, {	-- By Any Other Name
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 58.3, 71.6, 1536 },

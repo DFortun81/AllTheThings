@@ -4139,6 +4139,7 @@ app.L = {
 		[352490] = "Join the Rebellion!",
 		[352596] = "Sprouting Growth",
 		[353232] = "Bleakwood Chest",
+		[353645] = "Marileth's Journal",
 		[354852] = "Sprouting Growth",
 		[354853] = "Sprouting Growth",
 		[354856] = "Slime-Coated Crate",

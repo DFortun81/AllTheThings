@@ -30,6 +30,12 @@ _.Zones =
 						["sourceQuests"] = { 60737 },	-- The Door to the Unknown
 					}),
 				}),
+				ach(14626, {	-- Harvester of Sorrow
+				--	TODO: figure out a better way to display these?  maybe secrets?  maybe in a treasures header?  maybe the 'special' header?
+				--	the 'harvester of sorrow' achievement is granted by looting 'sorrowbane,' the pet is granted by looting oonar's arm... both have similarly convoluted loot methods and, from what i can tell, the objects are connected to each other.  this WAS part of the 'treasures of maldraxxus' achievement, but was moved to be its own thing
+					i(181164),	-- Oonar's Arm (PET!)
+					i(180273),	-- Sorrowbane
+				}),
 				ach(14634, {	-- Nine Afterlives
 					crit(1),	-- Hairball
 					crit(2, {	-- Snots
@@ -126,40 +132,29 @@ _.Zones =
 							i(182732),	-- The Necronom-i-nom
 						},
 					}),
-					crit(7, {	-- Sword of Oonar -- needs detailed description
-						--["objectID"] = ,	-- Sword of Oonar
-						--["coord"] = { 51.42, 48.47, 1536 },
-						--["questID"] = ,
-						["g"] = {
-							i(181164),	-- Oonar's Arm
-							i(180273,	{	-- Sorrowbane
-								ach(14626),	-- Harvester of Sorrow
-							}),
-						},
-					}),
-					crit(8, {	-- Forgotten Momentos
+					crit(7, {	-- Forgotten Momentos
 						["objectID"] = 341424,	-- Forgotten Momentos
 						["coord"] = { 22.5, 30.5, 1536 },
 						--["questID"] = ,
 					}),
-					crit(9, {	-- Chest of Eyes
+					crit(8, {	-- Chest of Eyes
 						["objectID"] = 345456,	-- Chest of Eyes
 						["coord"] = { 48.3, 16.3, 1536 },
 						["questID"] = 59244,
 						["description"] = "Take the path behind the destoyed necropole.",
 					}),
-					crit(10, {	-- Misplaced Supplies
+					crit(9, {	-- Misplaced Supplies
 						["objectID"] = 351980,	-- Misplaced Supplies
 						["coord"] = { 62.4, 59.9, 1536 },
 						["questID"] = 59245,
 						["description"] = "On top of the mushroom.",
 					}),
-					crit(11, {	-- Glutharn's Stash
+					crit(10, {	-- Glutharn's Stash
 						["objectID"] = 355947,	-- Glutharn's Stash
 						["coord"] = { 72.8, 53.6, 1536 },
 						["questID"] = 61484,
 					}),
-					crit(12, {	-- Runespeaker's Trove
+					crit(11, {	-- Runespeaker's Trove
 						["objectID"] = 345456,	-- Runespeaker's Trove
 						["coords"] = {
 							{ 37.8, 70.1, 1536 },	-- Runespeaker Phaeton / Runespeaker's Key
@@ -168,7 +163,7 @@ _.Zones =
 						["questID"] = 61491,
 						["description"] = "You need |cFFFFFFFF[Runespeaker's Key]|r from Runespeaker Phaeton at |cFFFFFFFF37.8, 70.1|r to open the chest. ",
 					}),
-					crit(13, {	-- Plaguefallen Chest
+					crit(12, {	-- Plaguefallen Chest
 						["objectID"] = 355886,	-- Plaguefallen Chest
 						["coords"] = {
 							{ 60.4, 77.7, 1536 },	-- Slime for the Debuff
@@ -181,7 +176,7 @@ _.Zones =
 							i(183515),	-- Reanimated Plague
 						},
 					}),
-					crit(14, {	-- Ritualist's Cache
+					crit(13, {	-- Ritualist's Cache
 						["objectID"] = 345456,	-- Ritualist's Cache
 						["coord"] = { 64.67, 24.80, 1536 },
 						--["questID"] = ,
