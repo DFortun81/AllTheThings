@@ -11,6 +11,7 @@ _.Zones =
 				["maps"] = {
 					1911,	-- Torghast Entrance
 					1705,	-- Torghast Entrance
+					1618,	-- Torghast
 					1621,	-- Torghast
 					1624,	-- Torghast
 					1660,	-- Alpha_TG_R04
@@ -32,6 +33,7 @@ _.Zones =
 					1749,	-- TG34_Floor
 					1630,	-- Floor 40
 					1628,	-- Floor 41
+					1754,	-- Torghast
 					1756,	-- TG44_Floor
 					1762,	-- TG47_Floor
 					1758,	-- TG48_Floor
@@ -50,8 +52,10 @@ _.Zones =
 					1773,	-- TG73_Floor
 					1784,	-- TG75_Floor
 					1785,	-- TG76_Floor
+					1789,	-- Torghast
 					1806,	-- TG96_Floor
-					1811,
+					1807,	-- Torghast
+					1811,	-- Torghast
 				},
 			}),
 		}),

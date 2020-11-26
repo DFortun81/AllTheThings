@@ -7,11 +7,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["coord"] = { 53.1, 53.0, 1536 },
 		["maps"] = {
 			1683,	-- Theater of Pain
-			1684,	-- 
+			1684,	-- Chamber of Conquest
 			1676,	-- 
 			1685,	-- Theater of Pain
-			1686,	-- 
-			1687,	-- 
+			1686,	-- Upper Barrow of Carnage
+			1687,	-- Lower Barrow of Carnage
 		},
 		["lvl"] = { 50 },
 		["g"] = {
