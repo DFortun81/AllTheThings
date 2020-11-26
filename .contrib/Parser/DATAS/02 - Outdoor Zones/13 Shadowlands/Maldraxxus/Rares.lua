@@ -179,13 +179,15 @@ _.Zones =
 					},
 				}),
 				n(162586, { -- Tahonta
-					["coord"] = { 44.6, 52.0, 1536 },
-					--["questID"] = ,
+					["questID"] = 58783,	-- also triggered 61986 on first kill
 					["isDaily"] = true,
+					["coord"] = { 44.6, 52.0, 1536 },
 					["g"] = {
+						crit(12, {	-- Tahonta
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 						i(182075),	-- Bonehoof Tauralus
 						i(182190),	-- Tauralus Hide Collar
-						ach(14308, crit(12)),	-- Adventurer of Maldraxxus / Tahonta
 					},
 				}),
 				n(160059, { -- Taskmaster Xox <Master Taskmaster>

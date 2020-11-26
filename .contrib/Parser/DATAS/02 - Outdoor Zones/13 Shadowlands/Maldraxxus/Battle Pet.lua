@@ -19,6 +19,9 @@ _.Zones =
 				p(3083, {	-- Crawbat
 					["crs"] = {	176024 },
 				}),
+				p(3052, {	-- Necroray Spawnling
+					["crs"] = { 175024 },
+				}),
 				p(3049,	{	-- Pulsating Maggot
 					["crs"] = { 175021 },
 				}),
