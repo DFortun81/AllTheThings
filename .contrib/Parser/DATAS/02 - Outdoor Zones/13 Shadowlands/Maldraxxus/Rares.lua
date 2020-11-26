@@ -46,10 +46,12 @@ _.Zones =
 						{ 54.0, 45.6, 1536 },
 						{ 48.2, 51.6, 1536 },
 					},
-					["questID"] = 58878,
+					["questID"] = 58878,	-- also triggered 61987 on first kill
 					["isDaily"] = true,
 					["g"] = {
-						ach(14308, crit(20)),	-- Adventurer of Maldraxxus / Deepscar <Pit Hound>
+						crit(20, {	-- Deepscar
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 						i(182191),	-- Slobber-Soaked Chew Toy
 					},
 				}),
@@ -71,11 +73,19 @@ _.Zones =
 					},
 				}),
 				n(162588, { -- Gristlebeak
+					["description"] = "Kill the Unusual Eggs and Gristled Hatchlings to lure Gristlebeak.",
 					["coord"] = { 57.6, 51.6, 1536 },
-					--["questID"] = ,
+					["questID"] = 58837,	-- also triggered 61991 on first kill
 					["isDaily"] = true,
+					["crs"] = {
+						168258,	-- Gristled Hatchling
+						162761,	-- Unusual Egg
+					},
 					["g"] = {
-						ach(14308, crit(14)),	-- Adventurer of Maldraxxus / Gristlebeak
+						crit(14, {	-- Gristlebeak
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
+						i(182196),	-- Arbalest of the Colossal Predator
 					},
 				}),
 				n(161105, { -- Indomitable Schmitd

@@ -22,6 +22,12 @@ _.Zones =
 					["provider"] = { "n", 164244 },	-- Grandmaster Vole
 					["coord"] = { 50.3, 44.3, 1536 },
 				}),
+				q(62785, {	-- I Could Be A Contender
+					["sourceQuests"] = { 57425 },	-- Land of Opportunity
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 161733 },	-- Anzio The Infallible
+					["coord"] = { 50.5, 51.6, 1536 },
+				}),
 				q(57390, {	-- To Die By the Sword
 					["sourceQuests"] = { 57386 },	-- If You Want Peace...
 					["provider"] = { "n", 164244 },	-- Grandmaster Vole
@@ -266,25 +272,21 @@ _.Zones =
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
 					["sourceQuest"] = 60886,	-- The Seat of the Primus
-					["lvl"] = { 53 },
 				}),
 				q(57976, {	-- Lead By Example
 					["provider"] = { "n", 159894 },	-- Baron Vyraz
 					["coord"] = { 39.2, 55.9, 1536 },
 					["sourceQuest"] = 57912,	-- Baron of the Chosen
-					["lvl"] = { 53 },
 				}),
 				q(60557, {	-- First Time? You Have to Fight!
 					["provider"] = { "n", 159894 },	-- Baron Vyraz
 					["coord"] = { 39.2, 55.9, 1536 },
 					["sourceQuest"] = 57912,	-- Baron of the Chosen
-					["lvl"] = { 53 },
 				}),
 				q(58268, {	-- Take the High Ground
 					["provider"] = { "n", 169359 },	-- Secutor Mevix
 					["coord"] = { 39.4, 55.5, 1536 },
 					["sourceQuest"] = 57912,	-- Baron of the Chosen
-					["lvl"] = { 53 },
 				}),
 				q(57979, {	-- Offensive Behavior
 					["provider"] = { "n", 169226 },	-- Secutor Mevix
@@ -294,7 +296,6 @@ _.Zones =
 						60557,	-- First Time? You Have to Fight!
 						58268,	-- Take the High Ground
 					},
-					["lvl"] = { 53 },
 					["g"] = {
 						i(175763),	-- Salvaged Mercenary's Drape
 					},
@@ -303,18 +304,15 @@ _.Zones =
 					["provider"] = { "n", 169462 },	-- Baron Vyraz
 					["coord"] = { 39.7, 46.7, 1536 },
 					["sourceQuest"] = 57979,	-- Offensive Behavior
-					["lvl"] = { 53 },
 				}),
 				q(57983, {	-- Archon Save Us
 					["provider"] = { "n", 160211 },	-- Aspirant Thales
 					["coord"] = { 33.8, 31.0, 1536 },
 					["sourceQuest"] = 59616,	-- Army of One
-					["lvl"] = { 53 },
 				}),
 				q(57984, {	-- The Ones in Charge
 					["provider"] = { "n", 160211 },	-- Aspirant Thales
 					["sourceQuest"] = 60886,	-- The Seat of the Primus
-					["lvl"] = { 53 },
 					["g"] = {
 						i(175474),	-- Epidemiologist's Wristwraps
 						i(175477),	-- Deceitful Agent's Wristwraps
@@ -326,19 +324,16 @@ _.Zones =
 					["provider"] = { "n", 165397 },	-- Secutor Mevix
 					["coord"] = { 31.9, 27.3, 1536 },
 					["sourceQuest"] = 57984,	-- The Ones in Charge
-					["lvl"] = { 53 },
 				}),
 				q(57987, {	-- A Deadly Distraction
 					["provider"] = { "n", 165397 },	-- Secutor Mevix
 					["coord"] = { 31.9, 27.3, 1536 },
 					["sourceQuest"] = 57984,	-- The Ones in Charge
-					["lvl"] = { 53 },
 				}),
 				q(57986, {	-- A Burden Worth Bearing
 					["provider"] = { "n", 160211 },	-- Aspirant Thales
 					["coord"] = { 32.0 , 27.4, 1536 },
 					["sourceQuest"] = 57984,	-- The Ones in Charge
-					["lvl"] = { 53 },
 				}),
 				q(57982, {	-- Breaking Down Barriers
 					["provider"] = { "n", 170018 },	-- Secutor Mevix
@@ -348,13 +343,11 @@ _.Zones =
 						57987,	-- A Deadly Distraction
 						57986,	-- A Burden Worth Bearing
 					},
-					["lvl"] = { 53 },
 				}),
 				q(57993, {	-- Two of Them, Two of Us
 					["provider"] = { "n", 170018 },	-- Secutor Mevix
 					["coord"] = { 30.1, 23.7, 1536 },
 					["sourceQuest"] = 57982,	-- Breaking Down Barriers
-					["lvl"] = { 53 },
 					["g"] = {
 						i(175447),	-- Epidemiologist's Robe
 						i(175450),	-- Deceitful Agent's Vest
@@ -366,32 +359,27 @@ _.Zones =
 					["provider"] = { "n", 165575 },	-- Aspirant Thales
 					["coord"] = { 28.8, 22.1, 1536 },
 					["sourceQuest"] = 57993,	-- Two of Them, Two of Us
-					["lvl"] = { 53 },
 				}),
 				q(60733, {	-- Front and Center
 					["provider"] = { "n", 170094 },	-- Secutor Mevix
 					["coord"] = { 37.6, 29.1, 1536 },
 					["sourceQuest"] = 57994,	-- In The Flesh
-					["lvl"] = { 53 },
 				}),
 				-- House of Plagues
 				q(59130, {	-- The House of Plagues
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
 					["sourceQuest"] = 60886,	-- The Seat of the Primus
-					["lvl"] = { 53 },
 				}),
 				q(58011, {	-- Bug Bites
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, 1536 },
 					["sourceQuest"] = 59130,	-- The House of Plagues
-					["lvl"] = { 53 },
 				}),
 				q(58016, {	-- Spores Galore
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
 					["sourceQuest"] = 59130,	-- The House of Plagues
-					["lvl"] = { 53 },
 				}),
 				q(58027, {	-- Slime, Anyone?
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
@@ -400,7 +388,6 @@ _.Zones =
 						58011,	-- Bug Bites
 						58016,	-- Spores Galore
 					},
-					["lvl"] = { 53 },
 					["g"] = {
 						i(173891),	-- 	Plagueborn Slime
 					},
@@ -409,13 +396,11 @@ _.Zones =
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, 1536 },
 					["sourceQuest"] = 58027,	-- Slime, Anyone?
-					["lvl"] = { 53 },
 				}),
 				q(58045, {	-- Plague is Thicker Than Water
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, 1536 },
 					["sourceQuest"] = 58027,	-- Slime, Anyone?
-					["lvl"] = { 53 },
 					["g"] = {
 						i(175457),	-- Epidemiologist's Gloves
 						i(175455),	-- Deceitful Agent's Gloves
@@ -427,7 +412,6 @@ _.Zones =
 					--	["provider"] = { "o", 353645 },	-- Marileth's Journal						-- TODO: Need to add the Object
 					["coord"] = { 56.5, 57.2, 1536 },
 					["sourceQuest"] = 60886,	-- The Seat of the Primus
-					["lvl"] = { 53 },
 				}),
 				q(59223, {	-- By Any Other Name
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
@@ -437,13 +421,11 @@ _.Zones =
 						58045,	-- Plague is Thicker Than Water
 						58031,	-- Applied Science
 					},
-					["lvl"] = { 53 },
 				}),
 				q(60831, {	-- Fit For a Margrave
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 60.4, 71.6, 1536 },
 					["sourceQuest"] = 59223,	-- By Any Other Name
-					["lvl"] = { 53 },
 					["g"] = {
 						i(175722),	-- Vial of Caustic Liquid
 						i(175723),	-- Rejuvenating Serum
@@ -453,7 +435,6 @@ _.Zones =
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 60.4, 71.6, 1536 },
 					["sourceQuest"] = 60831,	-- Fit For a Margrave
-					["lvl"] = { 53 },
 				}),
 				-- Ritual for the Damned
 				q(59202, {	-- Among the Chosen
@@ -525,22 +506,14 @@ _.Zones =
 				-- End of Zone Achievement Quests
 				-- Sojourner of Maldraxxus
 				-- Theater of Pain
-				q(62785, {	-- I Could Be A Contender
-					["provider"] = { "n", 161733 },	-- Anzio The Infallible
-					["coord"] = { 50.5, 51.6, 1536 },
-					["isBreadcrumb"] = true,
-					["lvl"] = { 53 },
-				}),
 				q(59781, {	-- The Last Guy
 					["provider"] = { "n", 161559 },	-- Louison
 					["coord"] = { 54.4, 48.6, 1536 },
 					["sourceQuest"] = 62785,	-- I Could Be A Contender
-					["lvl"] = { 53 },
 				}),
 				q(59750, {	-- How To Get A Head
 					["provider"] = { "n", 161559 },	-- Louison
 					["coord"] = { 54.4, 48.6, 1536 },
-					["lvl"] = { 53 },
 				}),
 				q(58575, {	-- Stuff We All Get
 					["provider"] = { "n", 161559 },	-- Louison
@@ -549,7 +522,6 @@ _.Zones =
 						59781,	-- The Last Guy
 						59750,	-- How To Get A Head
 					},
-					["lvl"] = { 53 },
 				}),
 				q(59800, {	-- Team Spirit
 					["provider"] = { "n", 161559 },	-- Louison
@@ -558,7 +530,6 @@ _.Zones =
 						59781,	-- The Last Guy
 						59750,	-- How To Get A Head
 					},
-					["lvl"] = { 53 },
 				}),
 				q(58947, {	-- Test Your Mettle
 					["provider"] = { "n", 161559 },	-- Louison
@@ -567,13 +538,11 @@ _.Zones =
 						58575,	-- Stuff We All Get
 						59800,	-- Team Spirit
 					},
-					["lvl"] = { 53 },
 				}),
 				q(59879, {	-- This Thing Of Ours
 					["provider"] = { "n", 161559 },	-- Louison
 					["coord"] = { 54.4, 48.6, 1536 },
 					["sourceQuest"] = 58947,	-- Test Your Mettle
-					["lvl"] = { 53 },
 				}),
 				q(59203, {	-- Leave Me a Loan
 					["provider"] = { "n", 159830 },	-- Au'narim
@@ -628,19 +597,16 @@ _.Zones =
 					["provider"] = { "n", 159833 },	-- So'narynar
 					["coord"] = { 53.7, 47.8, 1536 },
 					["sourceQuest"] = 58088,	-- Juicing Up
-					["lvl"] = { 53 },
 				}),
 				-- Archival Protection
 				q(58619, {	-- Read Between the Lines
 					["provider"] = { "n", 162615 },	-- Ta'eran
 					["coord"] = { 40.6, 33.0, 1536 },
-					["lvl"] = { 53 },
 				}),
 				q(58621, {	-- Repeat After Me
 					["provider"] = { "n", 166664 },	-- Ta'eran
 					["coord"] = { 43.0, 25.1, 1536 },
 					["sourceQuest"] = 58619,	-- Read Between the Lines
-					["lvl"] = { 53 },
 					["g"] = {
 						i(175707),	-- Signet of the Learned
 					},
@@ -649,30 +615,25 @@ _.Zones =
 					["provider"] = { "n", 166664 },	-- Ta'eran
 					["coord"] = { 43.0, 25.1, 1536 },
 					["sourceQuest"] = 58619,	-- Read Between the Lines
-					["lvl"] = { 53 },
 				}),
 				q(58620, {	-- Slaylines
 					["provider"] = { "n", 166664 },	-- Ta'eran
 					["coord"] = { 43.0, 25.1, 1536 },
 					["sourceQuest"] = 58621,	-- Repeat After Me
-					["lvl"] = { 53 },
 				}),
 				q(58622, {	-- Secrets Among the Shelves
 					["provider"] = { "n", 166664 },	-- Ta'eran
 					["coord"] = { 43.0, 25.1, 1536 },
 					["sourceQuest"] = 58620,	-- Slaylines
-					["lvl"] = { 53 },
 				}),
 				q(60900, {	-- Archival Protection
 					["provider"] = { "n", 170667 },	-- Ta'eran
 					["coord"] = { 41.7, 23.6, 1536 },
 					["sourceQuest"] = 58622,	-- Secrets Among the Shelves
-					["lvl"] = { 53 },
 				}),
 				q(59994, {	-- Trust Fall
 					["provider"] = { "n", 162476 },	-- Ta'eran
 					["sourceQuest"] = 60900,	-- Archival Protection
-					["lvl"] = { 53 },
 					["g"] = {
 						i(175517),	-- Corpse-Stitcher's Slippers
 						i(175519),	-- Deceitful Agent's Treads
@@ -684,13 +645,11 @@ _.Zones =
 					["provider"] = { "n", 166664 },	-- Ta'eran
 					["coord"] = { 43.0, 25.1, 1536 },
 					["sourceQuest"] = 59994,	-- Trust Fall
-					["lvl"] = { 53 },
 				}),
 				-- Mixing Monstrosities
 				q(59430, {	-- A Plague On Your House
 					["provider"] = { "n", 165049 },	-- Judas Sneap
 					["coord"] = { 58.0, 72.1, 1536 },
-					["lvl"] = { 53 },
 				}),
 				q(58431, {	-- Pool of Potions
 					["provider"] = { "n", 157945 },	-- Boil Master Yetch
