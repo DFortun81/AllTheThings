@@ -12,10 +12,20 @@ _.Zones =
 					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
 					["coord"] = { 54.0, 50.8, 1536 },
 				}),
+				q(57986, {	-- A Burden Worth Bearing
+					["sourceQuests"] = { 57984 },	-- The Ones in Charge
+					["provider"] = { "n", 160211 },	-- Aspirant Thales
+					["coord"] = { 32.0 , 27.4, 1536 },
+				}),
 				q(58751, {	-- A Common Peril
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
+				}),
+				q(57987, {	-- A Deadly Distraction
+					["sourceQuests"] = { 57984 },	-- The Ones in Charge
+					["provider"] = { "n", 165397 },	-- Secutor Mevix
+					["coord"] = { 31.9, 27.3, 1536 },
 				}),
 				q(59430, {	-- A Plague On Your House
 					["sourceQuests"] = { 57425 },	-- Land of Opportunity
@@ -32,15 +42,34 @@ _.Zones =
 					["provider"] = { "o", 353645 },	-- Marileth's Journal
 					["coord"] = { 56.5, 57.2, 1536 },
 				}),
+				q(57983, {	-- Archon Save Us
+					["sourceQuests"] = { 59616 },	-- Army of One
+					["provider"] = { "n", 160211 },	-- Aspirant Thales
+					["coord"] = { 33.8, 31.0, 1536 },
+				}),
 				q(57511, {	-- Arms for the Poor
 					["sourceQuests"] = { 57425 },	-- Land of Opportunity
 					["provider"] = { "n", 162069 },	-- Baroness Draka
 					["coord"] = { 48.3, 57.1, 1536 },
 				}),
+				q(59616, {	-- Army of One
+					["sourceQuests"] = { 57979 },	-- Offensive Behavior
+					["provider"] = { "n", 169462 },	-- Baron Vyraz
+					["coord"] = { 39.7, 46.7, 1536 },
+				}),
 				q(57912, {	-- Baron of the Chosen
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
+				}),
+				q(57982, {	-- Breaking Down Barriers
+					["sourceQuests"] = {
+						57986,	-- A Burden Worth Bearing
+						57987,	-- A Deadly Distraction
+						57985,	-- Give Them a Hand
+					},
+					["provider"] = { "n", 170018 },	-- Secutor Mevix
+					["coord"] = { 30.1, 23.7, 1536 },
 				}),
 				q(58011, {	-- Bug Bites
 					["sourceQuests"] = { 59130 },	-- The House of Plagues
@@ -86,10 +115,20 @@ _.Zones =
 						i(175723),	-- Rejuvenating Serum
 					},
 				}),
+				q(60733, {	-- Front and Center
+					["sourceQuests"] = { 57994 },	-- In The Flesh
+					["provider"] = { "n", 170094 },	-- Secutor Mevix
+					["coord"] = { 37.6, 29.1, 1536 },
+				}),
 				q(58616, {	-- Forging a Champion
 					["sourceQuests"] = { 57516 },	-- Through the Fire and Flames
 					["provider"] = { "n", 159065 },	-- Baroness Draka
 					["coord"] = { 38.2, 66.5, 1536 },
+				}),
+				q(57985, {	-- Give Them a Hand
+					["sourceQuests"] = { 57984 },	-- The Ones in Charge
+					["provider"] = { "n", 165397 },	-- Secutor Mevix
+					["coord"] = { 31.9, 27.3, 1536 },
 				}),
 				q(58036, {	-- Hazardous Waste Collection
 					["sourceQuests"] = { 58027 },	-- Slime, Anyone?
@@ -106,6 +145,11 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 161733 },	-- Anzio The Infallible
 					["coord"] = { 50.5, 51.6, 1536 },
+				}),
+				q(57994, {	-- In The Flesh
+					["sourceQuests"] = { 57993 },	-- Two of Them, Two of Us
+					["provider"] = { "n", 165575 },	-- Aspirant Thales
+					["coord"] = { 28.8, 22.1, 1536 },
 				}),
 				q(59917, {	-- Kill Them, Of Course
 					["sourceQuests"] = { 58619 },	-- Read Between the Lines
@@ -263,6 +307,16 @@ _.Zones =
 						i(175725),	-- Newcomer's Gladiatorial Badge
 					},
 				}),
+				q(57984, {	-- The Ones in Charge
+					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
+					["provider"] = { "n", 160211 },	-- Aspirant Thales
+					["g"] = {
+						i(175477),	-- Deceitful Agent's Wristwraps
+						i(175475),	-- Cruel Executioner's Wristwraps
+						i(175476),	-- Flesh Architect's Wristwraps
+						i(175474),	-- Corpse-Stitcher's Wristwraps
+					},
+				}),
 				q(60453, {	-- The Path to Glory
 					["sourceQuests"] = { 60428 },	-- The Blade of the Primus
 					["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
@@ -321,6 +375,17 @@ _.Zones =
 					["g"] = {
 						i(175739),	-- Reclaimed Maldraxxi Choker
 						i(180827),	-- Maldraxxi Warhorn
+					},
+				}),
+				q(57993, {	-- Two of Them, Two of Us
+					["sourceQuests"] = { 57982 },	-- Breaking Down Barriers
+					["provider"] = { "n", 165397 },	-- Secutor Mevix
+					["coord"] = { 30.1, 23.7, 1536 },
+					["g"] = {
+						i(175449),	-- Flesh Architect's Chainmail
+						i(175448),	-- Cruel Executioner's Chestplate
+						i(175450),	-- Deceitful Agent's Vest
+						i(175447),	-- Corpse-Stitcher's Robe
 					},
 				}),
 				q(57512, {	-- Walk Among Death
@@ -444,72 +509,6 @@ _.Zones =
 					["provider"] = { "n", 164326 },	-- Baroness Vashj
 					["coord"] = { 73.5, 44.5, 1536 },
 					["sourceQuests"] = { 59025 },	-- Straight to the Heart
-				}),
-				-- House of Constructs
-				q(59616, {	-- Army of One
-					["provider"] = { "n", 169462 },	-- Baron Vyraz
-					["coord"] = { 39.7, 46.7, 1536 },
-					["sourceQuests"] = { 57979 },	-- Offensive Behavior
-				}),
-				q(57983, {	-- Archon Save Us
-					["provider"] = { "n", 160211 },	-- Aspirant Thales
-					["coord"] = { 33.8, 31.0, 1536 },
-					["sourceQuests"] = { 59616 },	-- Army of One
-				}),
-				q(57984, {	-- The Ones in Charge
-					["provider"] = { "n", 160211 },	-- Aspirant Thales
-					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
-					["g"] = {
-						i(175474),	-- Epidemiologist's Wristwraps
-						i(175477),	-- Deceitful Agent's Wristwraps
-						i(175476),	-- Flesh Architect's Wristwraps
-						i(175475),	-- Cruel Executioner's Wristwraps
-					},
-				}),
-				q(57985, {	-- Give Them a Hand
-					["provider"] = { "n", 165397 },	-- Secutor Mevix
-					["coord"] = { 31.9, 27.3, 1536 },
-					["sourceQuests"] = { 57984 },	-- The Ones in Charge
-				}),
-				q(57987, {	-- A Deadly Distraction
-					["provider"] = { "n", 165397 },	-- Secutor Mevix
-					["coord"] = { 31.9, 27.3, 1536 },
-					["sourceQuests"] = { 57984 },	-- The Ones in Charge
-				}),
-				q(57986, {	-- A Burden Worth Bearing
-					["provider"] = { "n", 160211 },	-- Aspirant Thales
-					["coord"] = { 32.0 , 27.4, 1536 },
-					["sourceQuests"] = { 57984 },	-- The Ones in Charge
-				}),
-				q(57982, {	-- Breaking Down Barriers
-					["provider"] = { "n", 170018 },	-- Secutor Mevix
-					["coord"] = { 30.1, 23.7, 1536 },
-					["sourceQuests"] = {
-						57985,	-- Give Them a Hand
-						57987,	-- A Deadly Distraction
-						57986,	-- A Burden Worth Bearing
-					},
-				}),
-				q(57993, {	-- Two of Them, Two of Us
-					["provider"] = { "n", 170018 },	-- Secutor Mevix
-					["coord"] = { 30.1, 23.7, 1536 },
-					["sourceQuests"] = { 57982 },	-- Breaking Down Barriers
-					["g"] = {
-						i(175447),	-- Epidemiologist's Robe
-						i(175450),	-- Deceitful Agent's Vest
-						i(175449),	-- Flesh Architect's Chainmail
-						i(175448),	-- Cruel Executioner's Chestplate
-					},
-				}),
-				q(57994, {	-- In The Flesh
-					["provider"] = { "n", 165575 },	-- Aspirant Thales
-					["coord"] = { 28.8, 22.1, 1536 },
-					["sourceQuests"] = { 57993 },	-- Two of Them, Two of Us
-				}),
-				q(60733, {	-- Front and Center
-					["provider"] = { "n", 170094 },	-- Secutor Mevix
-					["coord"] = { 37.6, 29.1, 1536 },
-					["sourceQuests"] = { 57994 },	-- In The Flesh
 				}),
 				-- Ritual for the Damned
 				q(59202, {	-- Among the Chosen

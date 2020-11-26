@@ -102,17 +102,19 @@ _.Zones =
 					crit(2, {	-- Kyrian Keepsake
 						["npcID"] = 169664,	-- Kyrian Corpse
 						["coord"] = { 32.7, 21.2, 1536 },
-						["questID"] = 60587,
 						["g"] = {
 							i(180085, {	-- Kyrian Keepsake
-								i(175708),	-- Reconstructed Family Locket
+								["questID"] = 60587,	-- quest pops for opening the keepsake, not looting it
+								["g"] = {
+									i(175708),	-- Reconstructed Family Locket
+								},
 							}),
 						},
 					}),
 					crit(3, {	-- Halis's Lunch Pail
 						["objectID"] = 353380,	-- Halis's Lunch Pail
-						["coord"] = { 30.7, 28.7, 1536 },
 						["questID"] = 60730,
+						["coord"] = { 30.7, 28.7, 1536 },
 					}),
 					crit(4, {	-- Vat of Conspicuous Slime
 						["objectID"] = 355865,	-- Vat of Conspicuous Slime
