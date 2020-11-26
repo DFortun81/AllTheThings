@@ -130,6 +130,11 @@ _.Zones =
 					["provider"] = { "n", 165397 },	-- Secutor Mevix
 					["coord"] = { 31.9, 27.3, 1536 },
 				}),
+				q(58821, {	-- Glorious Pursuits
+					["sourceQuests"] = { 58751 },	-- A Common Peril
+					["provider"] = { "n", 162487 },	-- Baroness Vashj
+					["coord"] = { 50.3, 67.7, 1536 },
+				}),
 				q(58036, {	-- Hazardous Waste Collection
 					["sourceQuests"] = { 58027 },	-- Slime, Anyone?
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
@@ -223,6 +228,11 @@ _.Zones =
 					["sourceQuests"] = { 59430 },	-- Plagues Aid
 					["provider"] = { "n", 157945 },	-- Boil Master Yetch
 					["coord"] = { 59.0, 73.8, 1536 },
+				}),
+				q(59171, {	-- Prey Upon Them
+					["sourceQuests"] = { 58751 },	-- A Common Peril
+					["provider"] = { "n", 162487 },	-- Baroness Vashj
+					["coord"] = { 50.3, 67.7, 1536 },
 				}),
 				q(58619, {	-- Read Between the Lines
 				--	TODO: verify SQs
@@ -449,16 +459,6 @@ _.Zones =
 					["coord"] = { 48.3, 57.7, 1536 },
 				}),
 				-- Matron of Spies
-				q(59171, {	-- Prey Upon Them
-					["provider"] = { "n", 162487 },	-- Baroness Vashj
-					["coord"] = { 50.3, 67.7, 1536 },
-					["sourceQuests"] = { 58751 },	-- A Common Peril
-				}),
-				q(58821, {	-- Glorious Pursuits
-					["provider"] = { "n", 162487 },	-- Baroness Vashj
-					["coord"] = { 50.3, 67.7, 1536 },
-					["sourceQuests"] = { 58751 },	-- A Common Peril
-				}),
 				q(59172, {	-- War is Deception
 					["provider"] = { "n", 162487 },	-- Baroness Vashj
 					["coord"] = { 50.3, 67.7, 1536 },

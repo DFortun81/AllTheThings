@@ -126,10 +126,10 @@ _.Zones =
 						},
 					}),
 					crit(5, {	-- Stolen Jar
-						["objectID"] = 355872,	-- Stolen Jar
-						["coord"] = { 66.1, 49.9, 1536 },
-						["questID"] = 61451,
 						["description"] = "There are two caves, the Treasure is in the lower one.",
+						["objectID"] = 355872,	-- Stolen Jar
+						["questID"] = 61451,
+						["coord"] = { 65.6, 50.8, 1536 },
 						["g"] = {
 							i(182618, {	-- Reclaimed Vessel
 								["questID"] = 62085,	-- ...Why Me?
