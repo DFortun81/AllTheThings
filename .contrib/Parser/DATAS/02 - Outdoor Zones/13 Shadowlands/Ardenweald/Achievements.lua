@@ -33,7 +33,7 @@ _.Zones =
 						["sourceQuests"] = { 58593 },	-- End of the Dream
 					}),
 					crit(8, {	-- Awaken the Dreamer
-						["sourceQuests"] = { 58723 },	-- The Court of Winter
+						["sourceQuests"] = { 58724 },	-- The Queen's Request
 					}),
 				}),
 				ach(14800, {	-- Sojourner of Ardenweald

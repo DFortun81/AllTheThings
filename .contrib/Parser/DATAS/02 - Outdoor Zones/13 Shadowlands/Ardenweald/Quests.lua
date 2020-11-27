@@ -12,6 +12,16 @@ _.Zones =
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
 					["coord"] = { 63.4, 36.0, 1565 },
 				}),
+				q(58721, {	-- Awaken the Dreamer
+					["sourceQuests"] = { 60661 },	-- Dying Dreams
+					["provider"] = { "n", 169869 },	-- Lord Herne
+					["coord"] = { 47.9, 53.8, 1565 },
+				}),
+				q(58869, {	-- Battle for Hibernal Hollow
+					["sourceQuests"] = { 60621 },	-- Enemies at the Gates
+					["provider"] = { "n", 169541 },	-- Droman Aliothe
+					["coord"] = { 59.9, 53.1, 1565 },
+				}),
 				q(60575, {	-- Belly Full of Fae
 					["sourceQuests"] = {
 						60567,	-- Shooing Wildlife
@@ -34,15 +44,65 @@ _.Zones =
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
 					["coord"] = { 51.3, 34.0, 1565 },
 				}),
+				q(58265, {	-- Blooming Villains
+					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
+					["provider"] = { "n", 160929 },	-- Guardian Molan
+					["coord"] = { 60.6, 51.3, 1565 },
+				}),
+				q(58266, {	-- Break It Down
+				--	TODO: figure out SQs.  in the same area as 'blooming villains,' but that is NOT their SQ.  possibly unlocked by completion of 60905, 'infusing the wildseed'?
+					["provider"] = { "n", 160749 },	-- Primrose
+					["coord"] = { 53.4, 58.7, 1565 },
+				}),
 				q(60521, {	-- Call of the Hunt
 					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
 					["provider"] = { "n", 169031 },	-- Lady Moonberry
 					["coord"] = { 63.5, 36.2, 1565 },
 				}),
+				q(58592, {	-- Caring for the Caretakers
+					["sourceQuests"] = { 60572 },	-- For the Sake of Spirit
+					["provider"] = { "n", 160962 },	-- Dreamweaver
+					["coord"] = { 60.0, 52.9, 1565 },
+				}),
+				q(58591, {	-- Despoilers
+					["sourceQuests"] = { 58524 },	-- Sparkles Rain from Above
+					["provider"] = { "n", 160894 },	-- Droman Aliothe
+					["coord"] = { 60.0, 53.9, 1565 },
+				}),
 				q(57816, {	-- Dreamweaver
 					["sourceQuests"] = { 57787 },	-- Keep to the Path
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
 					["coord"] = { 63.4, 36.2, 1565 },
+				}),
+				q(60661, {	-- Dying Dreams
+					["sourceQuests"] = { 58869 },	-- Battle for Hibernal Hollow
+					["provider"] = { "n", 161847 },	-- Lady Moonberry
+					["coord"] = { 60.0, 53.0, 1565 },
+				}),
+				q(58473, {	-- Echoes of Tirna Noch
+					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
+					["providers"] = { "n", 160963 },	-- Ara'lon
+					["coord"] = { 60.1, 52.8, 1565 },
+				}),
+				q(58593, {	-- End of the Dream
+					["sourceQuests"] = {
+						58590,	-- Visions of the Dreamer: Origins
+						60578,	-- Visions of the Dreamer: The Betrayal
+					},
+					["provider"] = { "n", 160962 },	-- Dreamweaver
+					["coord"] = { 60.0, 52.9, 1565 },
+					["g"] = {
+						i(175660),	-- Spirit Tender's Hood
+						i(175662),	-- Starshroud Helm
+						i(175661),	-- Dreamthorn Headgear
+						i(175647),	-- Grove Warden's Greathelm
+					},
+					["maps"] = { 1642 },	-- Val'sharah (Ysera Scenario)
+				}),
+				q(60621, {	-- Enemies at the Gates
+					["sourceQuests"] = { 58720 },	-- Missing!
+					["provider"] = { "n", 162541 },	-- Hunt-Captain Korayn
+					["coord"] = { 55.9, 57.6, 1565 },
 				}),
 				q(60629, {	-- Extreme Recycling
 					["sourceQuests"] = { 60521 },	-- Call of the Hunt
@@ -54,10 +114,33 @@ _.Zones =
 					["provider"] = { "n", 157788 },	-- Lady Moonberry
 					["coord"] = { 65.0, 19.5, 1565 },
 				}),
+				q(60572, {	-- For the Sake of Spirit
+					["sourceQuests"] = { 58524 },	-- Sparkles Rain from Above
+					["provider"] = { "n", 160894 },	-- Droman Aliothe
+					["coord"] = { 60.0, 53.9, 1565 },
+				}),
 				q(58161, {	-- Forest Disappearances
 					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
 					["provider"] = { "n", 160440 },	-- Brigdin
 					["coord"] = { 64.4, 35.2, 1565 },
+				}),
+				q(62807, {	-- Forest Refugees
+					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
+					["provider"] = { "n", 160894 },	-- Droman Aliothe
+					["coord"] = { 60.0, 53.9, 1565 },
+				}),
+				q(58488, {	-- Go for the Heart
+					["sourceQuests"] = { 58486 },	-- He's Drust in the Way
+					["provider"] = { "n", 161492 },	-- Ara'lon
+					["coord"] = { 71.4, 54.5, 1565 },
+				}),
+				q(58486, {	-- He's Drust in the Way
+					["sourceQuests"] = {
+						58483,	-- Mementos
+						58480,	-- Read the Roots
+						58484,	-- Take What You Can
+					},
+					["provider"] = { "n", 161446 },	-- Ara'lon
 				}),
 				q(60639, {	-- Heart of the Grove
 					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
@@ -111,6 +194,22 @@ _.Zones =
 					["provider"] = { "n", 170533 },	-- Featherlight
 					["coord"] = { 65.6, 27.9, 1565 },
 				}),
+				q(58483, {	-- Mementos
+					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
+					["providers"] = {
+						{ "n", 161379 },	-- Niya
+						{ "n", 161447 },	-- Niya
+					},
+					["coord"] = { 68.4, 57.4, 1565 },
+				}),
+				q(58720, {	-- Missing!
+					["sourceQuests"] = {
+						58714,	-- The Forest Has Eyes
+						58719,	-- The Droman's Call
+					},
+					["provider"] = { "n", 160894 },	-- Droman Aliothe
+					["coord"] = { 60.1, 53.8, 1565 },
+				}),
 				q(57950, {	-- Mizik the Haughty
 					["sourceQuests"] = {
 						57948,	-- Nothing Left to Give
@@ -136,6 +235,11 @@ _.Zones =
 					["provider"] = { "n", 169217 },	-- Dreamweaver
 					["coord"] = { 62.1, 36.4, 1565 },
 				}),
+				q(60901, {	-- Passage to Hibernal Hollow
+					["sourceQuests"] = { 60881 },	-- Ride of the Wild Hunt
+					["provider"] = { "n", 170290 },	-- Ara'lon
+					["coord"] = { 62.3, 45.5, 1565 },
+				}),
 				q(60600, {	-- Preparing for the Winter Queen
 					["sourceQuests"] = {
 						60594,	-- One Special Spirit
@@ -143,6 +247,14 @@ _.Zones =
 					},
 					["provider"] = { "n", 169031 },	-- Lady Moonberry
 					["coord"] = { 63.5, 36.2, 1565 },
+				}),
+				q(58480, {	-- Read the Roots
+					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
+					["providers"] = {
+						{ "n", 161378 },	-- Ara'lon
+						{ "n", 161446 },	-- Ara'lon
+					},
+					["coord"] = { 68.4, 57.4, 1565 },
 				}),
 				q(60647, {	-- Recovering the Animacones
 					["sourceQuests"] = {
@@ -218,6 +330,14 @@ _.Zones =
 						i(175655),	-- Starshroud Boots
 					},
 				}),
+				q(58524, {	-- Sparkles Rain from Above
+					["sourceQuests"] = { 58488 },	-- Go for the Heart
+					["provider"] = { "n", 161494 },	-- Lady Moonberry
+					["coord"] = { 71.5, 54.6, 1565 },
+					["g"] = {
+						i(175767),	-- Glitterwing Greatcloak
+					},
+				}),
 				q(57947, {	-- Spirits of the Glen
 					["sourceQuests"] = { 57787 },	-- Keep to the Path
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
@@ -235,20 +355,56 @@ _.Zones =
 					},
 					["coord"] = { 68.4, 24.5, 1565 },
 				}),
+				q(58484, {	-- Take What You Can
+					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
+					["providers"] = {
+						{ "n", 161378 },	-- Ara'lon
+						{ "n", 161446 },	-- Ara'lon
+					},
+					["coord"] = { 68.4, 57.4, 1565 },
+				}),
 				q(60563, {	-- Tending to Wildseeds
 					["sourceQuests"] = { 57816 },	-- Dreamweaver
 					["provider"] = { "n", 169116 },	-- Dreamweaver
 					["coord"] = { 64.2, 41.2, 1565 },
+				}),
+				q(58723, {	-- The Court of Winter
+					["sourceQuests"] = { 58721 },	-- Awaken the Dreamer
+					["provider"] = { "n", 162968 },	-- Winter Queen
+					["coord"] = { 45.2, 63.0, 1565 },
+					["g"] = {
+						i(175710),	-- Night Courtier's Ring
+					},
+				}),
+				q(58719, {	-- The Droman's Call
+					["sourceQuests"] = { 58593 },	-- End of the Dream
+					["provider"] = { "n", 160894 },	-- Droman Aliothe
+					["coord"] = { 60.0, 53.9, 1565 },
 				}),
 				q(60637, {	-- The End of Former Friends
 					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
 					["provider"] = { "n", 169686 },	-- Niya
 					["coord"] = { 66.9, 26.5, 1565 },
 				}),
+				q(58714, {	-- The Forest Has Eyes
+					["sourceQuests"] = { 58593 },	-- End of the Dream
+					["provider"] = { "n", 161847 },	-- Lady Moonberry
+					["coord"] = { 59.9, 53.0, 1565 },
+				}),
 				q(60628, {	-- The Missing Hunters
 					["sourceQuests"] = { 60521 },	-- Call of the Hunt
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
 					["coord"] = { 51.3, 34.0, 1565 },
+				}),
+				q(58724, {	-- The Queen's Request
+					["sourceQuests"] = { 58723 },	-- The Court of Winter
+					["provider"] = { "n", 161847 },	-- Winter Queen
+					["coord"] = { 48.9, 33.5, 1565 },
+				}),
+				q(58589, {	-- The Restless Dreamer
+					["sourceQuests"] = { 60572 },	-- For the Sake of Spirit
+					["provider"] = { "n", 160962 },	-- Dreamweaver
+					["coord"] = { 60.0, 52.9, 1565 },
 				}),
 				q(60671, {	-- The Sacrifices We Must Make
 					["sourceQuests"] = {
@@ -266,6 +422,11 @@ _.Zones =
 					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
 					["provider"] = { "n", 159638 },	-- Choofa
 					["coord"] = { 97.1, 32.1, 1565 },
+				}),
+				q(60905, {	-- Infusing the Wildseed
+					["sourceQuests"] = { 60901 },	-- Passage to Hibernal Hollow
+					["provider"] = { "n", 160894 },	-- Droman Aliothe
+					["coord"] = { 60.0, 53.9, 1565 },
 				}),
 				q(60856, {	-- Toppling the Brute
 					["sourceQuests"] = { 60839 },	-- Remnants of the Wild Hunt
@@ -298,6 +459,29 @@ _.Zones =
 					["sourceQuests"] = { 60521 },	-- Call of the Hunt
 					["provider"] = { "n", 158345 },	-- Lady of the Falls
 					["coord"] = { 51.1, 33.8, 1565 },
+				}),
+				q(58590, {	-- Visions of the Dreamer: Origins
+					["sourceQuests"] = {
+						58591,	-- Despoilers
+						58589,	-- The Restless Dreamer
+						58592,	-- Caring for the Caretakers
+					},
+					["provider"] = { "n", 160962 },	-- Dreamweaver
+					["coord"] = { 60.0, 52.9, 1565 },
+				}),
+				q(60578, {	-- Visions of the Dreamer: The Betrayal
+					["sourceQuests"] = {
+						58591,	-- Despoilers
+						58589,	-- The Restless Dreamer
+						58592,	-- Caring for the Caretakers
+					},
+					["provider"] = { "n", 160962 },	-- Dreamweaver
+					["coord"] = { 60.0, 52.9, 1565 },
+				}),
+				q(58264, {	-- Wake Up, Get Up, Get Out There
+				--	TODO: figure out SQs.  in the same area as 'blooming villains,' but that is NOT their SQ.  possibly unlocked by completion of 60905, 'infusing the wildseed'?
+					["provider"] = { "n", 160749 },	-- Primrose
+					["coord"] = { 53.4, 58.7, 1565 },
 				}),
 				q(60857, {	-- We Can't Save Them All
 					["sourceQuests"] = { 60778 },	-- Wildseed Rescue
@@ -386,174 +570,6 @@ _.Zones =
 					["provider"] = { "n", 160121 },	-- Master Sha'lor
 					["coord"] = { 62.9, 36.2, 1565 },
 					["sourceQuests"] = { 58026 },	-- When a Gorm Eats a God
-				}),
-				-- This is the Way
-				q(60901, {	-- Passage to Hibernal Hollow
-					["provider"] = { "n", 170290 },	-- Ara'lon
-					["coord"] = { 62.3, 45.5, 1565 },
-					["sourceQuests"] = { 60881 },	-- Ride of the Wild Hunt
-				}),
-				q(60905, {	-- Infusing the Wildseed
-					["provider"] = { "n", 160894 },	-- Droman Aliothe
-					["coord"] = { 60.0, 53.9, 1565 },
-					["sourceQuests"] = { 60901 },	-- Passage to Hibernal Hollow
-				}),
-				-- The Fallen Tree
-				q(58473, {	-- Echoes of Tirna Noch
-					["providers"] = { "n", 160963 },	-- Ara'lon
-					["coord"] = { 60.1, 52.8, 1565 },
-					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
-				}),
-				q(58480, {	-- Read the Roots
-					["providers"] = {
-						{ "n", 161378 },	-- Ara'lon
-						{ "n", 161446 },	-- Ara'lon
-					},
-					["coord"] = { 68.4, 57.4, 1565 },
-					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
-				}),
-				q(58484, {	-- Take What You Can
-					["providers"] = {
-						{ "n", 161378 },	-- Ara'lon
-						{ "n", 161446 },	-- Ara'lon
-					},
-					["coord"] = { 68.4, 57.4, 1565 },
-					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
-				}),
-				q(58483, {	-- Mementos
-					["providers"] = {
-						{ "n", 161379 },	-- Niya
-						{ "n", 161447 },	-- Niya
-					},
-					["coord"] = { 68.4, 57.4, 1565 },
-					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
-				}),
-				q(58486, {	-- He's Drust in the Way
-					["provider"] = { "n", 161446 },	-- Ara'lon
-					["sourceQuests"] = {
-						58484,	-- Take What You Can
-						58484,	-- Take What You Can
-						58483,	-- Mementos
-					},
-				}),
-				q(58488, {	-- Go for the Heart
-					["provider"] = { "n", 161492 },	-- Ara'lon
-					["coord"] = { 71.4, 54.5, 1565 },
-					["sourceQuests"] = { 58486 },	-- He's Drust in the Way
-				}),
-				q(58524, {	-- Sparkles Rain from Above
-					["provider"] = { "n", 161494 },	-- Lady Moonberry
-					["coord"] = { 71.5, 54.6, 1565 },
-					["sourceQuests"] = { 58488 },	-- Go for the Heart
-					["g"] = {
-						i(175767),	-- Glitterwing Greatcloak
-					},
-				}),
-				-- Visions of the Dreamer
-				q(58591, {	-- Despoilers
-					["provider"] = { "n", 160894 },	-- Droman Aliothe
-					["coord"] = { 60.0, 53.9, 1565 },
-					["sourceQuests"] = { 58524 },	-- Sparkles Rain from Above
-				}),
-				q(60572, {	-- For the Sake of Spirit
-					["provider"] = { "n", 160894 },	-- Droman Aliothe
-					["coord"] = { 60.0, 53.9, 1565 },
-					["sourceQuests"] = { 58524 },	-- Sparkles Rain from Above
-				}),
-				q(58589, {	-- The Restless Dreamer
-					["provider"] = { "n", 160962 },	-- Dreamweaver
-					["coord"] = { 60.0, 52.9, 1565 },
-					["sourceQuests"] = { 60572 },	-- For the Sake of Spirit
-				}),
-				q(58592, {	-- Caring for the Caretakers
-					["provider"] = { "n", 160962 },	-- Dreamweaver
-					["coord"] = { 60.0, 52.9, 1565 },
-					["sourceQuests"] = { 60572 },	-- For the Sake of Spirit
-				}),
-				q(58590, {	-- Visions of the Dreamer: Origins
-					["provider"] = { "n", 160962 },	-- Dreamweaver
-					["coord"] = { 60.0, 52.9, 1565 },
-					["sourceQuests"] = {
-						58591,	-- Despoilers
-						58589,	-- The Restless Dreamer
-						58592,	-- Caring for the Caretakers
-					},
-				}),
-				q(60578, {	-- Visions of the Dreamer: The Betrayal
-					["provider"] = { "n", 160962 },	-- Dreamweaver
-					["coord"] = { 60.0, 52.9, 1565 },
-					["sourceQuests"] = {
-						58591,	-- Despoilers
-						58589,	-- The Restless Dreamer
-						58592,	-- Caring for the Caretakers
-					},
-				}),
-				q(58593, {	-- End of the Dream
-					["provider"] = { "n", 160962 },	-- Dreamweaver
-					["coord"] = { 60.0, 52.9, 1565 },
-					["sourceQuests"] = {
-						58590,	-- Visions of the Dreamer: Origins
-						60578,	-- Visions of the Dreamer: The Betrayal
-					},
-					["g"] = {
-						i(175660),	-- Spirit Tender's Hood
-						i(175662),	-- Starshroud Helm
-						i(175661),	-- Dreamthorn Headgear
-						i(175647),	-- Grove Warden's Greathelm
-					},
-					["maps"] = { 1642 },	-- Val'sharah (Ysera Scenario)
-				}),
-				-- Awaken the Dreamer
-				q(58714, {	-- The Forest Has Eyes
-					["provider"] = { "n", 161847 },	-- Lady Moonberry
-					["coord"] = { 59.9, 53.0, 1565 },
-					["sourceQuests"] = { 58593 },	-- End of the Dream
-				}),
-				q(58719, {	-- The Droman's Call
-					["provider"] = { "n", 160894 },	-- Droman Aliothe
-					["coord"] = { 60.0, 53.9, 1565 },
-					["sourceQuests"] = { 58593 },	-- End of the Dream
-				}),
-				q(58720, {	-- Missing!
-					["provider"] = { "n", 160894 },	-- Droman Aliothe
-					["coord"] = { 60.1, 53.8, 1565 },
-					["sourceQuests"] = {
-						58714,	-- The Forest Has Eyes
-						58719,	-- The Droman's Call
-					},
-				}),
-				q(60621, {	-- Enemies at the Gates
-					["provider"] = { "n", 162541 },	-- Hunt-Captain Korayn
-					["coord"] = { 55.9, 57.6, 1565 },
-					["sourceQuests"] = { 58720 },	-- Missing!
-				}),
-				q(58869, {	-- Battle for Hibernal Hollow
-					["provider"] = { "n", 169541 },	-- Droman Aliothe
-					["coord"] = { 59.9, 53.1, 1565 },
-					["sourceQuests"] = { 60621 },	-- Enemies at the Gates
-				}),
-				q(60661, {	-- Dying Dreams
-					["provider"] = { "n", 161847 },	-- Lady Moonberry
-					["coord"] = { 60.0, 53.0, 1565 },
-					["sourceQuests"] = { 58869 },	-- Battle for Hibernal Hollow
-				}),
-				q(58721, {	-- Awaken the Dreamer
-					["provider"] = { "n", 169869 },	-- Lord Herne
-					["coord"] = { 47.9, 53.8, 1565 },
-					["sourceQuests"] = { 60661 },	-- Dying Dreams!
-				}),
-				q(58723, {	-- The Court of Winter
-					["provider"] = { "n", 162968 },	-- Winter Queen
-					["coord"] = { 45.2, 63.0, 1565 },
-					["sourceQuests"] = { 58721 },	-- Awaken the Dreamer
-					["g"] = {
-						i(175710),	-- Night Courtier's Ring
-					},
-				}),
-				q(58724, {	-- The Queen's Request
-					["provider"] = { "n", 161847 },	-- Winter Queen
-					["coord"] = { 48.9, 33.5, 1565 },
-					["sourceQuests"] = { 58723 },	-- The Court of Winter!
 				}),
 				-- End of Zone Achievement Quests
 				
@@ -1006,21 +1022,6 @@ _.Zones =
 				}),
 				-- Sojourner of Ardenweald Achievenemt
 				-- Wicked Plan
-				q(58265, {	-- Blooming Villains
-					["provider"] = { "n", 160929 },	-- Guardian Molan
-					["coord"] = { 60.6, 51.3, 1565 },
-					["sourceQuests"] = { 58524 },	-- Sparkles Rain from Above
-				}),
-				q(58266, {	-- Break It Down
-					["provider"] = { "n", 160749 },	-- Primrose
-					["coord"] = { 53.4, 58.7, 1565 },
-					["sourceQuests"] = { 58265 },	-- Blooming Villains
-				}),
-				q(58264, {	-- Wake Up, Get Up, Get Out There
-					["provider"] = { "n", 160749 },	-- Primrose
-					["coord"] = { 53.4, 58.7, 1565 },
-					["sourceQuests"] = { 58265 },	-- Blooming Villains
-				}),
 				q(58267, {	-- Beneath the Mask
 					["provider"] = { "n", 160749 },	-- Primrose
 					["sourceQuests"] = { 58264 },	-- Wake Up, Get Up, Get Out There
@@ -1257,11 +1258,6 @@ _.Zones =
 				q(60723, {	-- The Roots Thirst
 					["provider"] = { "n", 167196 },	-- Sesselie
 					["coord"] = { 49.1, 39.1, 1565 },
-				}),
-				-- Other Quests
-				q(62807, {	-- Forest Refugees
-					["provider"] = { "n", 160894 },	-- Droman Aliothe
-					["coord"] = { 60.0, 53.9, 1565 },
 				}),
 				-- Bonus Objective
 				q(60840, {	-- Wild Hunt Offensive

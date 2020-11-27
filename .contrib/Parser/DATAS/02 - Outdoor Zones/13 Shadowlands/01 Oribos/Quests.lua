@@ -25,6 +25,14 @@ _.Zones =
 					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
 					["coord"] = {61.1, 36.9, 1670 },
 				}),
+				q(57025, {	-- A Plea to Revendreth
+					["sourceQuests"] = { 58724 },	-- The Queen's Request
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coords"] = {
+						{ 49.4, 60.1, 1670 },
+						{ 38.8, 70.2, 1670 },
+					},
+				}),
 				q(59974, {	-- A Soul Saved
 					["sourceQuests"] = { 62654 },	-- Maw Walker
 					["provider"] = { "n", 167903 },	-- Baroness Draka
@@ -348,15 +356,6 @@ _.Zones =
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-				}),
-				-- From Ardenweald to Revendreth
-				q(57025, {	-- A Plea to Revendreth
-					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coords"] = {
-						{ 48.9, 60.1, 1670 },
-						{ 38.8, 70.2, 1670 },
-					},
-					["sourceQuests"] = { 58724 },	-- The Queen's Request
 				}),
 				-- From Revendreth
 				-- Choosing Your Covenant
