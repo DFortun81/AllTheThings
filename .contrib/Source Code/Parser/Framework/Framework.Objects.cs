@@ -325,7 +325,13 @@ namespace ATT
                         }
 
                     // Recipes
-                    case 9: return Filters.Recipe;
+                    case 9:
+                        switch (itemSubClass)
+                        {
+                            // TODO: this causes them to be uncollectible...
+                            //case 0: return Filters.ClassBooks;    // Recipes with no Profession are class books from API data
+                            default: return Filters.Recipe;
+                        }
 
                     // Tokens
                     //case 10: return Filters.Ignored;    // Tokens

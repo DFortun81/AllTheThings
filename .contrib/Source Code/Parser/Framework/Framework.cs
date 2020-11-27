@@ -534,15 +534,16 @@ namespace ATT
                     TryFindRecipeID(data);
                 }
             }
-            else
-            {
-                // if this data has a recipeID, cache the information
-                if (data.TryGetValue("recipeID", out int recipeID))
-                {
-                    Items.TryGetName(data, out string recipeName);
-                    Objects.AddRecipe(null, recipeName, recipeID);
-                }
-            }
+            //else
+            //{
+            //    // if this data has a recipeID, cache the information
+            //    if (data.TryGetValue("recipeID", out int recipeID))
+            //    {
+            //        Items.TryGetName(data, out string recipeName);
+            //        //Trace.WriteLine("Encountered RecipeID without 'requireSkill' tag. " + recipeID.ToString() + " [" + recipeName + "]");
+            //        Objects.AddRecipe(null, recipeName, recipeID);
+            //    }
+            //}
 
             if (data.TryGetValue("name", out string name))
             {
