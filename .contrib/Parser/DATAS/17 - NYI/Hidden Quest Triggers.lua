@@ -3003,6 +3003,7 @@ _.HiddenQuestTriggers =
 		q(59911),	-- triggered after picking up Ruiner's End
 		q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)
 		q(62939),	-- triggered after watching the cutscene for Stand as One / landing in Oribos
+		q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
 
 		-- Torghast
 		q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)

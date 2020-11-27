@@ -8,14 +8,27 @@ _.Zones =
 		m(1648, {	-- The Maw
 			m(1627, {	-- Torghast
 				n(QUESTS, {
-					q(61099, {	-- Skoldus Hall
+					q(62932, {	-- Explore Torghast
+						["sourceQuests"] = { 61099 },	-- The Search for Baine
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-						["sourceQuest"] = 60136,	-- Into Torghast
+						["coord"] = { 39.9, 68.5, 1670 },
+						["g"] = {
+							i(184758),	-- Drape of Inscrutable Purpose
+						},
 					}),
 					q(60267, {	-- Prison of the Forgotten
 						["provider"] = { "i", 178585 },	-- The Forgotten Key
 						["cr"] = 151329,	-- Warden Skoldus
 					}),
+					q(61099, {	-- The Search for Baine
+						["sourceQuests"] = { 60136 },	-- Into Torghast
+						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+						["coord"] = { 39.9, 68.5, 1670 },
+					}),
+					
+					
+					
+					-------- unverifed on live yet; adding to alphabetized list above as they are verified in game
 					q(60268, {	-- Deep Within
 						["provider"] = { "n", 164937 },	-- Runecarver
 						["sourceQuest"] = 60267,	-- Prison of the Forgotten

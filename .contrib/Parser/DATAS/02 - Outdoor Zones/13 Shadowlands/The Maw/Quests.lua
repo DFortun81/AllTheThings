@@ -67,10 +67,18 @@ _.Zones =
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 37.0, 1648 },
 				}),
+				q(61346, {	-- Cyrixia the Willbreaker (Bonus Objective)
+					["coord"] = { 27.6, 28.2, 1543 },
+				}),
 				q(59966, {	-- Delving Deeper
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
 					["provider"] = { "n", 171770 },	-- Ve'nari
 					["coord"] = { 36.2, 55.7, 1648 },
+				}),
+				q(60732, {	-- Disrupting the Flow
+					["provider"] = { "n", 176164 },	-- Doomed Soul
+					["coord"] = { 46.9, 41.7, 1543 },
+					["isDaily"] = true,
 				}),
 				q(60644, {	-- Draw Out the Darkness
 					["sourceQuests"] = {
@@ -78,6 +86,11 @@ _.Zones =
 						59766,	-- A Good Axe
 					},
 					["provider"] = { "n", 167827 },	-- Thrall
+				}),
+				q(60622, {	-- Eye of the Scryer
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+					["isDaily"] = true,
 				}),
 				q(59914, {	-- Fear to Tread
 					["sourceQuests"] = {
@@ -155,6 +168,11 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
+				q(60281, {	-- Rule 4: Make A List
+					["sourceQuests"] = { 63051 },	-- Trust Issues
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
 				q(62882, {	-- Setting the Ground Rules
 					["sourceQuests"] = { 
 						62905,	-- Back into the Darkness (Venthyr)
@@ -169,6 +187,11 @@ _.Zones =
 					["sourceQuests"] = { 59758 },	-- Speaking to the Dead
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
 				}),
+				q(63206, {	-- Soulless Husks
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+					["isDaily"] = true,
+				}),
 				q(59758, {	-- Speaking to the Dead
 					["sourceQuests"] = { 59757 },	-- Field Seance
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
@@ -177,6 +200,9 @@ _.Zones =
 					["sourceQuests"] = { 59767 },	-- The Path to Salvation
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 42.3, 42.1, 1648 },
+				}),
+				q(62539, {	-- Stygian Incinerator (Bonus Objective)
+					["coord"] = { 37.2, 44.6, 1543 },
 				}),
 				q(59760, {	-- The Afflictor's Key
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage

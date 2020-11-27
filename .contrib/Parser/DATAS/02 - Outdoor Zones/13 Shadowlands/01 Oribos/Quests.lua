@@ -129,14 +129,14 @@ _.Zones =
 					["coord"] = {61.1, 36.9, 1670 },
 				}),
 				q(60136, {	-- Into Torghast
-					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
 					["sourceQuests"] = { 
 						63029,	-- The Highlord Calls (Kyrian)
 						63030,	-- The Highlord Calls (Night Fae)
 						63032,	-- The Highlord Calls (Necrolords)
 						63033,	-- The Highlord Calls (Venthyr)
 					},
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, 1670 },
 					["g"] = {
 						spell(334746),	-- Access to Torghast
 					},
@@ -280,6 +280,10 @@ _.Zones =
 					["g"] = {
 						i(184374),	-- Cartel Exchange Vessel
 					},
+				}),
+				q(63051, {	-- Trust Issues
+					["sourceQuests"] = { 61099 },	-- The Search for Baine
+					["provider"] = { "n", 168432 },	-- Ve'rayn
 				}),
 				q(60154, {	-- Understanding the Shadowlands
 					["sourceQuests"] = { 60152 },	-- The Eternal City
