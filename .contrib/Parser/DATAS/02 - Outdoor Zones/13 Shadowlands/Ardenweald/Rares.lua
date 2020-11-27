@@ -47,9 +47,10 @@ _.Zones =
 					},
 				}),
 				n(167851, {	-- Egg-Tender Leh'go
+					["description"] = "At the back of the cave.",
 					["questID"] = 60266,
 					["isDaily"] = true,
-					["coord"] = { 58.0, 29.4, 1565 },
+					["coord"] = { 58.5, 31.8, 1565 },
 					["g"] = {
 						crit(13, {	-- Egg-Tender Leh'go
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald

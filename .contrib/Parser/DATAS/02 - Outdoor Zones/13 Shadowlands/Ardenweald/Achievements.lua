@@ -7,6 +7,16 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1565, {	-- Ardenweald
 			n(ACHIEVEMENTS, {
+				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
+				--	TODO: finish adding criteria here/in other zones as pets are found
+					["collectible"] = false,
+					["g"] = {
+						crit(2, {	-- Briarpaw
+							["coord"] = { 34.2, 44.4, 1565 },
+							["crs"] = { 175778 },	-- Briarpaw
+						}),
+					},
+				}),
 				ach(14164, {	-- Awaken, Ardenweald
 					crit(1, {	-- Welcome to Ardenweald
 						["sourceQuests"] = { 57787 },	-- Keep to the Path
@@ -94,8 +104,8 @@ _.Zones =
 					}),
 					crit(4, {	-- Swollen Anima Seed
 						["objectID"] = 354911,	-- Swollen Anima Seed
+					--	["questID"] = ,	-- no questID associated with this as of November 27th, 2020
 						["coord"] = { 76.6, 29.7, 1565 },
-						--["questID"] = ,								-- Seems to be missing in the beta
 						["g"] = {
 							i(182730, {	-- Swollen Anima Seed
 								["questID"] = 62186,	-- Swollen Anima Seed
@@ -131,38 +141,53 @@ _.Zones =
 						},
 					}),
 					crit(8, {	-- Playful Vulpin Befriended
-						["npcID"] =	171206,	-- Playful Vulpin Befriended
+						["description"] = "You need to find the Playful Vulpin five times and use the following emotes.\n\n 1. Playful Vulpin begins to dig curiously. |cFFFFFFFF/curious|r\n 2. Playful Vulpin wanders around unable to sit still. |cFFFFFFFF/sit|r\n 3. Playful Vulpin sings all alone. |cFFFFFFFF/sing|r\n 4. Playful Vulpin dances with joy. |cFFFFFFFF/dance|r\n 5. Playful Vulpin sits down lonely and sad. |cFFFFFFFF/pet|r\n\nIt just counts if the Playful Vulpin react to your emote and run away.",
+						["questID"] = 61086,
 						["coords"] = {
+							{ 32.0, 43.2, 1565 },
+							{ 33.0, 43.9, 1565 },
+							{ 34.1, 44.9, 1565 },	-- confirmed
+							{ 36.1, 49.6, 1565 },
 							{ 40.7, 27.4, 1565 },	-- confirmed
 							{ 40.8, 51.4, 1565 },
 							{ 41.2, 49.7, 1565 },
-							{ 50.9, 54.6, 1565 },	-- confirmed
-							{ 46.4, 66.5, 1565 },
-							{ 32.0, 43.2, 1565 },
-							{ 64.3, 29.5, 1565 },
-							{ 63.2, 26.1, 1565 },
-							{ 66.4, 31.1, 1565 },
-							{ 72.3, 31.4, 1565 },
-							{ 70.4, 29.7, 1565 },
-							{ 67.8, 32.0, 1565 },
-							{ 67.1, 28.8, 1565 },	-- confirmed
-							{ 64.9, 22.9, 1565 },
-							{ 48.5, 59.1, 1565 },
 							{ 43.0, 64.9, 1565 },
 							{ 44.1, 66.6, 1565 },
-							{ 36.1, 49.6, 1565 },
-							{ 33.0, 43.9, 1565 },
-							{ 34.1, 44.9, 1565 },	-- confirmed
+							{ 46.4, 66.5, 1565 },
+							{ 48.5, 59.1, 1565 },
+							{ 50.9, 54.6, 1565 },	-- confirmed
+							{ 63.2, 26.1, 1565 },
+							{ 64.3, 29.5, 1565 },
+							{ 64.9, 22.9, 1565 },
+							{ 66.4, 31.1, 1565 },
+							{ 67.1, 28.8, 1565 },	-- confirmed
+							{ 67.8, 32.0, 1565 },	-- confirmed
 							{ 69.1, 30.0, 1565 },
+							{ 70.4, 29.7, 1565 },
+							{ 72.3, 31.4, 1565 },
 						},
-						["questID"] = 61086,
-						["description"] = "You need to find the Playful Vulpin five times and use the following emotes.\n\n 1. Playful Vulpin begins to dig curiously. |cFFFFFFFF/curious|r\n 2. Playful Vulpin wanders around unable to sit still. |cFFFFFFFF/sit|r\n 3. Playful Vulpin sings all alone. |cFFFFFFFF/sing|r\n 4. Playful Vulpin dances with joy. |cFFFFFFFF/dance|r\n 5. Playful Vulpin sits down lonely and sad. |cFFFFFFFF/pet|r\n\nIt just counts if the Playful Vulpin react to your emote and run away.",
+						["crs"] = { 171206 },	-- Playful Vulpin Befriended
 						--		61080,	-- 	/curious
 						--		61081,	-- 	/sit
 						--		61084,	-- 	/sing
 						--		61085,	-- 	/dance
 						--		61078,	-- 	/pet
 						["g"] = {
+							q(61080, {	-- /curious
+								["title"] = "/curious",
+							}),
+							q(61081, {	-- /sit
+								["title"] = "/sit",
+							}),
+							q(61084, {	-- /sing
+								["title"] = "/sing",
+							}),
+							q(61085, {	-- /dance
+								["title"] = "/dance",
+							}),
+							q(61078, {	-- /pet
+								["title"] = "/pet",
+							}),
 							i(180645),	-- Dodger
 						},
 					}),
@@ -196,10 +221,11 @@ _.Zones =
 						},
 					}),
 					crit(11, {	-- Dreamsong Heart
+						["description"] = "Use the Bounding Shroom at |cFFFFFFFF38.0, 36.2|r to get to the top of the tree.",
 						["objectID"] = 354650,	-- Dreamsong Heart
-						["coord"] = { 37.6, 37.0, 1565 },
 						["questID"] = 61070,
-						["description"] = "Use the Bounding Mushroom at |cFFFFFFFF38.0, 36.2|r to get up on the Tree.",
+						["coord"] = { 37.6, 37.0, 1565 },
+						["crs"] = { 174911 },	-- Bounding Shroom
 						["g"] = {
 							i(179510),	-- Dreamsong Warglaive
 						},

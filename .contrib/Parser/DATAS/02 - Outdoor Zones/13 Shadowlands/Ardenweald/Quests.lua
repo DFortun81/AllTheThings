@@ -7,6 +7,14 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1565, {	-- Ardenweald
 			n(QUESTS, {
+				q(58163, {	-- A Desperate Solution
+					["sourceQuests"] = { 58161 },	-- Forest Disappearances
+					["provider"] = { "o", 349515 },	-- Battered Journal
+					["coord"] = { 70.3, 32.5, 1565 },
+					["g"] = {
+						i(183851),	-- Withergrove Shardling
+					},
+				}),
 				q(60519, {	-- Audience with the Winter Queen
 					["sourceQuests"] = { 60724 },	-- Heartless
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
@@ -73,6 +81,16 @@ _.Zones =
 					["sourceQuests"] = { 57818 },	-- Nothing Goes to Waste
 					["provider"] = { "n", 158969 },	-- Master Sha'lor
 					["coord"] = { 64.8, 38.9, 1565 },
+				}),
+				q(58164, {	-- Cult of Personality
+					["sourceQuests"] = { 58161 },	-- Forest Disappearances
+					["provider"] = { "n", 160439 },	-- Partik
+					["coord"] = { 70.3, 32.5, 1565 },
+				}),
+				q(58165, {	-- Cut the Roots
+					["sourceQuests"] = { 59802 },	-- The Crumbling Village
+					["provider"] = { "n", 160439 },	-- Partik
+					["coord"] = { 74.3, 32.3, 1565 },
 				}),
 				q(57825, {	-- Delivery for Guardian Kota
 					["sourceQuests"] = { 57824 },	-- Collection Day
@@ -240,6 +258,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 159639 },	-- Choofa
 				}),
+				q(58162, {	-- Mysterious Masks
+					["sourceQuests"] = { 58161 },	-- Forest Disappearances
+					["provider"] = { "n", 160439 },	-- Partik
+					["coord"] = { 70.3, 32.5, 1565 },
+				}),
 				q(60520, {	-- Nightmares Manifest
 					["sourceQuests"] = { 60522 },	-- Return to Tirna Vaal
 					["provider"] = { "n", 169142 },	-- Dreamweaver
@@ -280,6 +303,14 @@ _.Zones =
 					},
 					["provider"] = { "n", 169031 },	-- Lady Moonberry
 					["coord"] = { 63.5, 36.2, 1565 },
+				}),
+				q(58025, {	-- Queen of the Underground
+					["sourceQuests"] = {
+						58022,	-- Finish What He Started
+						58023,	-- One Big Problem
+					},
+					["provider"] = { "n", 160155 },	-- Guardian Kota
+					["coord"] = { 59.6, 33.4, 1565 },
 				}),
 				q(58480, {	-- Read the Roots
 					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
@@ -376,6 +407,11 @@ _.Zones =
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
 					["coord"] = { 63.4, 36.2, 1565 },
 				}),
+				q(57652, {	-- Supplies Needed: Amber Grease
+				--	TODO: figure out SQs.  saw this after doing the overall zone meta and after finishing the "when a gorm eats a god" criteria of "sojourner of ardenweald"
+					["provider"] = { "o", 348747 },	-- Muddy Scroll
+					["coord"] = { 46.9, 27.6, 1565 },
+				}),
 				q(60648, {	-- Survivors of Heartwood Grove
 					["sourceQuests"] = {
 						60639,	-- Heart of the Grove
@@ -387,6 +423,11 @@ _.Zones =
 						{ "n", 169868 },	-- Niya	(post-pickup)
 					},
 					["coord"] = { 68.4, 24.5, 1565 },
+				}),
+				q(59801, {	-- Take the Power
+					["sourceQuests"] = { 59802 },	-- The Crumbling Village
+					["provider"] = { "n", 160439 },	-- Partik
+					["coord"] = { 74.3, 32.3, 1565 },
 				}),
 				q(58484, {	-- Take What You Can
 					["sourceQuests"] = { 58473 },	-- Echoes of Tirna Noch
@@ -413,6 +454,15 @@ _.Zones =
 					["g"] = {
 						i(175710),	-- Night Courtier's Ring
 					},
+				}),
+				q(59802, {	-- The Crumbling Village
+					["sourceQuests"] = {
+						58163,	-- A Desperate Solution
+						58164,	-- Cult of Personality
+						58162,	-- Mysterious Masks
+					},
+					["provider"] = { "n", 160439 },	-- Partik
+					["coord"] = { 70.3, 32.5, 1565 },
 				}),
 				q(58719, {	-- The Droman's Call
 					["sourceQuests"] = { 58593 },	-- End of the Dream
@@ -498,6 +548,20 @@ _.Zones =
 					["provider"] = { "n", 158345 },	-- Lady of the Falls
 					["coord"] = { 51.1, 33.8, 1565 },
 				}),
+				q(58166, {	-- Unknown Assailants
+					["sourceQuests"] = {
+						58165,	-- Cut the Roots
+						59801,	-- Take the Power
+					},
+					["provider"] = { "n", 160439 },	-- Partik
+					["coord"] = { 74.3, 32.3, 1565 },
+					["g"] = {
+						i(175677),	-- Dreamthorn Wristguards
+						i(175676),	-- Grove Warden's Vambraces
+						i(175675),	-- Spirit Tender's Cuffs
+						i(175678),	-- Starshroud Bracers
+					},
+				}),
 				q(58590, {	-- Visions of the Dreamer: Origins
 					["sourceQuests"] = {
 						58591,	-- Despoilers
@@ -526,6 +590,17 @@ _.Zones =
 					["provider"] = { "n", 170175 },	-- Featherlight
 					["coord"] = { 67.7, 20.6, 1565 },
 				}),
+				q(58026, {	-- When a Gorm Eats a God
+					["sourceQuests"] = { 58025 },	-- Queen of the Underground
+					["provider"] = { "n", 160155 },	-- Guardian Kota
+					["coord"] = { 59.6, 33.4, 1565 },
+					["g"] = {
+						i(175664),	-- Spirit Tender's Leggings
+						i(175666),	-- Starshroud Breeches
+						i(175665),	-- Dreamthorn Legguards
+						i(175663),	-- Grove Warden's Greaves
+					},
+				}),
 				q(60778, {	-- Wildseed Rescue
 					["sourceQuests"] = { 60341 },	-- First on the Agenda
 					["provider"] = { "n", 170175 },	-- Featherlight
@@ -546,26 +621,6 @@ _.Zones =
 					}),
 				}),
 				-- When a Gorm Eats a God
-				q(58025, {	-- Queen of the Underground
-					["provider"] = { "n", 160155 },	-- Guardian Kota
-					["coord"] = { 59.6, 33.4, 1565 },
-					["sourceQuests"] = {
-						58022,	-- Finish What He Started
-						58023,	-- One Big Problem
-						58024,	-- Burrows Away
-					},
-				}),
-				q(58026, {	-- When a Gorm Eats a God
-					["provider"] = { "n", 160155 },	-- Guardian Kota
-					["coord"] = { 59.6, 33.4, 1565 },
-					["sourceQuests"] = { 58025 },	-- Queen of the Underground
-					["g"] = {
-						i(175664),	-- Spirit Tender's Leggings
-						i(175666),	-- Starshroud Breeches
-						i(175665),	-- Dreamthorn Legguards
-						i(175663),	-- Grove Warden's Greaves
-					},
-				}),
 				q(57660, {	-- The Grove of Creation
 					["provider"] = { "n", 160121 },	-- Master Sha'lor
 					["coord"] = { 62.9, 36.2, 1565 },
@@ -1098,10 +1153,6 @@ _.Zones =
 					["coord"] = { 55.8, 23.4, 1565 },
 				}),
 				-- Supplies Needed
-				q(57652, {	-- Supplies Needed: Amber Grease
-					["provider"] = { "o", 348747 },	-- Muddy Scroll	-- TODO: Need to add the Object
-					["coord"] = { 46.9, 27.6, 1565 },
-				}),
 				q(57655, {	-- Supplies Needed: Amber Grease
 					["provider"] = { "o", 336415 },	-- Discarded Scroll	-- TODO: Need to add the Object
 					["coord"] = { 47.5, 26.2, 1565 },
@@ -1123,55 +1174,6 @@ _.Zones =
 						i(178030),	-- Gormstinger Warglaive
 						i(180474),	-- Culexwood Dagger
 						i(180473),	-- Culexwood Spellmace
-					},
-				}),
-				-- An Ominous Stone
-				q(58164, {	-- Cult of Personality
-					["provider"] = { "n", 160439 },	-- Partik
-					["coord"] = { 70.3, 32.5, 1565 },
-					["sourceQuests"] = { 58161 },	-- Forest Disappearances
-				}),
-				q(58162, {	-- Mysterious Masks
-					["provider"] = { "n", 160439 },	-- Partik
-					["coord"] = { 70.3, 32.5, 1565 },
-					["sourceQuests"] = { 58161 },	-- Forest Disappearances
-				}),
-				q(58163, {	-- A Desperate Solution
-					["provider"] = { "o", 349515 },	-- Battered Journal									-- TODO: Need to add the Object
-					["coord"] = { 70.3, 32.5, 1565 },
-					["sourceQuests"] = { 58161 },	-- Forest Disappearances
-				}),
-				q(59802, {	-- The Crumbling Village
-					["provider"] = { "n", 160439 },	-- Partik
-					["coord"] = { 70.3, 32.5, 1565 },
-					["sourceQuests"] = {
-						58164,	-- Cult of Personality
-						58162,	-- Mysterious Masks
-						58163,	-- A Desperate Solution
-					},
-				}),
-				q(58165, {	-- Cut the Roots
-					["provider"] = { "n", 160439 },	-- Partik
-					["coord"] = { 74.3, 32.3, 1565 },
-					["sourceQuests"] = { 59802 },	-- The Crumbling Village
-				}),
-				q(59801, {	-- Take the Power
-					["provider"] = { "n", 160439 },	-- Partik
-					["coord"] = { 74.3, 32.3, 1565 },
-					["sourceQuests"] = { 59802 },	-- The Crumbling Village
-				}),
-				q(58166, {	-- Unknown Assailants
-					["provider"] = { "n", 160439 },	-- Partik
-					["coord"] = { 74.3, 32.3, 1565 },
-					["sourceQuests"] = {
-						58165,	-- Cut the Roots
-						59801,	-- Take the Power
-					},
-					["g"] = {
-						i(175677),	-- Dreamthorn Wristguards
-						i(175676),	-- Grove Warden's Vambraces
-						i(175675),	-- Spirit Tender's Cuffs
-						i(175678),	-- Starshroud Bracers
 					},
 				}),
 				-- Thread of Hope
