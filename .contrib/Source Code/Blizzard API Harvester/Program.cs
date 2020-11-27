@@ -751,104 +751,9 @@ namespace ATT
                     Parse_requirements(dict, requirements);
                 }
                 if (preview_item.TryGetValue("spells", out List<object> spells))
-                {
-                    var ignoreItem = false;
-
-                    // Inventory Types
-                    // Some inventory types make this very very easy to calculate.
-                    if (dict.TryGetValue("inventoryType", out object inventoryTypeRef))
-                    {
-                        switch (Convert.ToInt32(inventoryTypeRef))
-                        {
-                            case 00: // ???
-                                ignoreItem = false;
-                                break;
-                            case 02: // Neck
-                            case 04: // Shirt
-                            case 11: // Ring
-                            case 12: // Trinket
-                            case 16: // Cloak
-                            case 19: // Tabard
-                                ignoreItem = true;
-                                break;
-                            default:
-                                // All of them?!
-                                ignoreItem = true;
-                                break;
-                        }
-                    }
-
-                    if (!ignoreItem)
-                    {
-                        var listOfSpells = new List<int>();
-                        foreach (var spellRef in spells)
-                        {
-                            // The extra level of nesting is super assy, Blizzard.
-                            if (spellRef is Dictionary<string, object> spellData && spellData.TryGetValue("spell", out Dictionary<string, object> spell))
-                            {
-                                if (spell.TryGetValue("id", out int spellID))
-                                {
-                                    switch (spellID)
-                                    {
-                                        case 483:       // "Learning"
-                                        case 55884:     // "Learning"
-                                        case 213820:    // "Learning"
-                                        case 135930:    // "Learning"
-
-                                        case 64981:     // Summon Random Vanquished Tentacle
-                                        case 202510:    // Summon Nomi
-                                        case 222965:    // Summon Beliath Dawnblade
-                                        case 81040:     // Unknown
-                                        case 82238:     // Unknown
-                                            break;
-                                        case 21160:   // Eye of Sulfuras
-                                        case 43732:   // Remove Amani Curse
-                                        case 73324:   // Portal: Dalaran
-                                        case 178210:  // Legs of Iron
-                                        case 178209:  // Chest of Iron
-                                        case 178212:  // Helm of Iron
-                                        case 178213:  // Shoulders of Iron
-                                        case 178211:  // Gloves of Iron
-                                        case 238151:  // Create Item
-                                        case 238155:  // Create Item
-                                        case 238158:  // Create Item
-                                        case 238159:  // Create Item
-                                        case 238254:  // Create Item
-                                        case 230286:  // Lava Skin
-                                        case 233325:  // Damp Pet Supplies
-                                            break;
-                                        default:
-                                            if (spell.TryGetValue("trigger", out object triggerRef))
-                                            {
-                                                var name = triggerRef.ToString();
-                                                if (!name.Contains("ON_LEARN"))
-                                                {
-                                                    // NO
-                                                    break;
-                                                }
-                                            }
-                                            // Add the spell to the list of spells.
-                                            listOfSpells.Add(spellID);
-                                            break;
-                                    }
-                                }
-                            }
-                        }
-                        var count = listOfSpells.Count;
-                        if (count > 0)
-                        {
-                            dict["spellID"] = listOfSpells[0];
-                            if (count > 1)
-                            {
-                                Console.Write("Item [");
-                                Console.Write(dict["name"]);
-                                Console.Write("] has ");
-                                Console.Write(count);
-                                Console.WriteLine(" spells!");
-                            }
-                        }
-                    }
-                }
+                    Parse_spells(dict, spells);
+                //if (preview_item.TryGetValue("recipe", out Dictionary<string, object> recipe))
+                //    Parse_recipe(dict, recipe);
             }
             // quests have requirements raw
             else if (subData.TryGetValue("requirements", out Dictionary<string, object> requirements))
@@ -987,6 +892,112 @@ namespace ATT
             #endregion
 
             return dict;
+        }
+
+        private static void Parse_recipe(Dictionary<string, object> dict, Dictionary<string, object> recipe)
+        {
+            if (recipe.TryGetValue("spells", out List<object> spells))
+                Parse_spells(dict, spells);
+        }
+
+        private static void Parse_spells(Dictionary<string, object> dict, List<object> spells)
+        {
+            var ignoreItem = false;
+
+            // Inventory Types
+            // Some inventory types make this very very easy to calculate.
+            if (dict.TryGetValue("inventoryType", out object inventoryTypeRef))
+            {
+                switch (Convert.ToInt32(inventoryTypeRef))
+                {
+                    case 00: // ???
+                        ignoreItem = false;
+                        break;
+                    case 02: // Neck
+                    case 04: // Shirt
+                    case 11: // Ring
+                    case 12: // Trinket
+                    case 16: // Cloak
+                    case 19: // Tabard
+                        ignoreItem = true;
+                        break;
+                    default:
+                        // All of them?!
+                        ignoreItem = true;
+                        break;
+                }
+            }
+
+            if (!ignoreItem)
+            {
+                var listOfSpells = new List<int>();
+                foreach (var spellRef in spells)
+                {
+                    // The extra level of nesting is super assy, Blizzard.
+                    if (spellRef is Dictionary<string, object> spellData && spellData.TryGetValue("spell", out Dictionary<string, object> spell))
+                    {
+                        if (spell.TryGetValue("id", out int spellID))
+                        {
+                            switch (spellID)
+                            {
+                                case 483:       // "Learning"
+                                case 55884:     // "Learning"
+                                case 213820:    // "Learning"
+                                case 135930:    // "Learning"
+
+                                case 64981:     // Summon Random Vanquished Tentacle
+                                case 202510:    // Summon Nomi
+                                case 222965:    // Summon Beliath Dawnblade
+                                case 81040:     // Unknown
+                                case 82238:     // Unknown
+                                    break;
+                                case 21160:   // Eye of Sulfuras
+                                case 43732:   // Remove Amani Curse
+                                case 73324:   // Portal: Dalaran
+                                case 178210:  // Legs of Iron
+                                case 178209:  // Chest of Iron
+                                case 178212:  // Helm of Iron
+                                case 178213:  // Shoulders of Iron
+                                case 178211:  // Gloves of Iron
+                                case 238151:  // Create Item
+                                case 238155:  // Create Item
+                                case 238158:  // Create Item
+                                case 238159:  // Create Item
+                                case 238254:  // Create Item
+                                case 230286:  // Lava Skin
+                                case 233325:  // Damp Pet Supplies
+                                    break;
+                                default:
+                                    if (spell.TryGetValue("trigger", out object triggerRef))
+                                    {
+                                        var name = triggerRef.ToString();
+                                        if (!name.Contains("ON_LEARN"))
+                                        {
+                                            // NO
+                                            break;
+                                        }
+                                    }
+                                    // Add the spell to the list of spells.
+                                    listOfSpells.Add(spellID);
+                                    break;
+                            }
+                        }
+                    }
+                }
+                var count = listOfSpells.Count;
+                if (count > 0)
+                {
+                    dict["spellID"] = listOfSpells[0];
+                    if (count > 1)
+                    {
+                        Console.Write("Item [");
+                        Console.Write(dict["name"]);
+                        Console.Write("] has ");
+                        Console.Write(count);
+                        Console.WriteLine(" spells!");
+                    }
+                }
+            }
         }
 
         /// <summary>
