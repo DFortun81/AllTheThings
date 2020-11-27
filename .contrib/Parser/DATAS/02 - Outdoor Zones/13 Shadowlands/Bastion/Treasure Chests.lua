@@ -23,6 +23,15 @@ _.Zones =
 				--treasure here
 				--Not sure if this is the intended way to get this mount, but Kyrian can channel anima to the Temple of Purity for a treasure,
 				--and this mount dropped for me once i reached the Brazier of Purity.
+				o(356823, {	-- Cloudwalker's Coffer
+					["coord"] = { 61.1, 15.1, 1533 },
+					["questID"] = 61698,
+					["g"] = {
+						i(180783, {	-- Design: Crown of the Righteous
+							["requireSkill"] = JEWELCRAFTING,
+						}),
+					},
+				}),
 			}),
 		}),
 	}),

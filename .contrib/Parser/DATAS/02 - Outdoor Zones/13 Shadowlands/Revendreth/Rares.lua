@@ -17,11 +17,12 @@ _.Zones =
 				}),
 				n(164388, {	-- Amalgamation of Light
 					["coord"] = { 25.4, 48.4, 1525 },
-					--["questID"] = ,
+					["questID"] = 59584,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(12)),	-- Adventurer of Revendreth / Amalgamation of Light
 						i(180586),	-- Lightbinders
+						i(180688),	-- Infused Remnant of Light
 					},
 				}),
 				n(170434, {	-- Amalgamation of Sin
@@ -93,10 +94,12 @@ _.Zones =
 				}),
 				n(167464, {	-- Grand Arcanist Dimitri
 					["coord"] = { 20.6, 53.0, 1525 },
-					--["questID"] = ,
+					["questID"] = 60173,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(21)),	-- Adventurer of Revendreth / Grand Arcanist Dimitri
+						i(180708),	-- Mirror of Despair
+						i(180659),	-- Soul Siphoning Shard
 					},
 				}),
 				n(165290, {	-- Harika the Horrid
@@ -250,10 +253,11 @@ _.Zones =
 				}),
 				n(160392, {	-- Soulstalker Doina
 					["coord"] = { 65.0, 57.0, 1525 },
-					--["questID"] = ,
+					["questID"] = 58130,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(1)),	-- Adventurer of Revendreth / Soulstalker Doina
+						i(180692),	-- Box of Stalker Traps
 					},
 				}),
 				n(159503, {	-- Stonefist

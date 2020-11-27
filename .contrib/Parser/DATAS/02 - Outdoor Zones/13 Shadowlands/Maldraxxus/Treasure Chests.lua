@@ -70,6 +70,13 @@ _.Zones =
 						}),
 					},
 				}),
+				o(350802, {	-- Web Sealed Chest
+					["coord"] = { 54.9, 26.1, 1536 },
+					["questID"] = 60109,
+					["g"] = {
+						i(183602),	-- Sticky Webbing
+					},
+				}),
 			}),
 		}),
 	}),

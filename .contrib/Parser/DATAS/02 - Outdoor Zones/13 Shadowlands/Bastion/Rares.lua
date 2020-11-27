@@ -72,12 +72,13 @@ _.Zones =
 				}),
 				n(170659, { -- Basilofos, King of the Hill
 					["coord"] = { 48.4, 50.4, 1533 },
-					--["questID"] = ,
+					["questID"] = 60897,	-- TODO: 62158 triggered as well
 					["isDaily"] = true,
 					["g"] = {
 						crit(11, {	-- Basilofos, King of the Hill
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
+						i(180704),	-- Infused Pet Biscuit (consumable, maybe ignore)
 					},
 				}),
 				n(171189, { -- Bookkeeper Mnemis

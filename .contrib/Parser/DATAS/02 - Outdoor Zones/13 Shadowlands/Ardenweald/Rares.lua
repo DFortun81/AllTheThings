@@ -16,10 +16,11 @@ _.Zones =
 				}),
 				n(164477, {	-- Deathbinder Hroth
 					["coord"] = { 34.6, 68.0, 1565 },
-					--["questID"] = ,
+					["questID"] = 59226,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14309, crit(1)),	-- Adventurer of Ardenweald / Deathbinder Hroth
+						i(180166),	-- Deathbinder's Staff
 					},
 				}),
 				n(164238, {	-- Deifir the Untamed

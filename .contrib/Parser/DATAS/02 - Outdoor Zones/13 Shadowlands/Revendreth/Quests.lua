@@ -29,6 +29,12 @@ _.Zones =
 							i(180948),	-- Battle Gargon Vrednic
 						},
 					}),
+					-- Mirror Network
+				}),
+				q(58062, {	-- A Very Special Guest
+					["provider"] = { "n", 160091 },	-- Ta'ruca
+					-- ["coord"] = { ##, ##, 1525 },
+					["sourceQuests"] = { 58060 },	-- The Night Market
 				}),
 				q(62189, {	-- Parasol Components
 					["provider"] = { "o", 349798 },	-- Smuggled Cache
@@ -37,12 +43,31 @@ _.Zones =
 						i(182738),	-- Bundle of Smuggled Parasol Components
 					},
 				}),
+				h(q(62653, {	-- Stop the Inquisition
+					-- ["provider"] = { "n", ### },	-- 
+					-- ["coord"] = { ##, ##, 1525 },
+					-- ["sourceQuests"] = { },
+					["isWeekly"] = true,
+				})),
+				q(58060, {	-- The Night Market
+					["provider"] = { "n", 160100 },	-- Provisioner Dracho
+					-- ["coord"] = { ##, ##, 1525 },
+					-- ["sourceQuests"] = {  },
+				}),
+				q(60278, {	-- WANTED: Duke Anton
+					-- ["provider"] = { "o", ### },	-- Wanted: Duke Anto
+					-- ["coord"] = { ##, ##, 1525 },
+				}),
 				q(60275, {	-- WANTED: Enforcer Kristof
 					["provider"] = { "o", 351874 },	-- Wanted: Enforcer Kristof
 					["coord"] = { 30.6, 48.9, 1525 },
 					["g"] =  {
 						i(181714),	-- Jeweled Hand Fan
 					},
+				}),
+				q(60280, {	-- WANTED: Lord Darion
+					-- ["provider"] = { "o", ### },	-- Wanted: Lord Darion
+					-- ["coord"] = { ##, ##, 1525 },
 				}),
 				q(60276, {	-- WANTED: Summoner Marcelis
 					["provider"] = { "o", 351888 },	-- Wanted: Summoner Marcelis
@@ -543,6 +568,18 @@ _.Zones =
 				}),
 				-- The Final Atonement
 				-- Mirror Maker of the Master
+				q(57531, {	-- An Unfortunate Situation
+					-- ["coords"] = { ##, ##, 1525 },
+					["provider"] = { "n", 158038 },	-- Laurent
+					["sourceQuests"] = {
+						60051,	-- A Master of Their Craft (breadcrumb possible for Venthyr characters)
+					},
+				}),
+				q(57536, {	-- Mirror making, Not Breaking
+					-- ["coord"] = { ##, ##, 1699/1700 },
+					-- ["provider"] = { "n", ### },
+					-- ["sourceQuests"] = { },
+				}),
 				-- Revelations of the Light
 				-- Bonus Objective
 				q(57177, {	-- A Fresh Start

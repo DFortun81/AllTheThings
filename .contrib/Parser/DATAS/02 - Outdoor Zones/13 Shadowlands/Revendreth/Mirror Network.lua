@@ -9,8 +9,37 @@ _.Zones =
 			n(-950, {	-- Mirror Network
 				["description"] = "|cFFfe040fVenthyr Covenant|r only.",
 				["g"] = {
+					q(63056, {	-- Sanctum Upgrade: Mirror Network
+						-- ["coord"] = { ##, ##, 1699/1700 },
+						-- ["provider"] = { "n", ### },
+						-- ["sourceQuests"] = { },
+					}),
 					-- TODO: Add Questline for each Mirror Tier
+					q(60051,{	-- A Master of Their Craft
+						-- ["coord"] = { ##, ##, 1699/1700 },
+						-- ["provider"] = { "n", ### },
+						["sourceQuests"] = { 63056 },
+						["isBreadcrumb"] = true,	-- might not be breadcrumb?
+					}),
 					n(-951, {	-- Tier 1 Mirror Mirror
+						["g"] = {
+							q(60060, {	-- Mirror Attunement: Pridefall Hamlet
+								-- ["coord"] = { ##, ##, 1699/1700 },
+								-- ["provider"] = { "n", ### },
+								["sourceQuests"] = {
+									60051,	-- A Master of Their Craft
+									57536,	-- Mirror Making, Not Breaking
+								},
+							}),
+							q(60147, {	-- Mirror Attunement: The Eternal Terrace
+								-- ["coord"] = { ##, ##, 1699/1700 },
+								-- ["provider"] = { "n", ### },
+								["sourceQuests"] = {
+									60051,	-- A Master of Their Craft
+									57536,	-- Mirror Making, Not Breaking
+								},
+							}),
+						},
 					}),
 					n(-952, {	-- Tier 2 Looking Glass
 						["description"] = "Requires Venthyr Renown 11.",

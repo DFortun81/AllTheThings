@@ -9,7 +9,7 @@ _.Zones =
 			n(RARES, {
 				n(162727, {	-- Bubbleblood
 					["coord"] = { 52.6, 35.6, 1536 },
-					--["questID"] = ,
+					["questID"] = 58870,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(18)),	-- Adventurer of Maldraxxus / Bubbleblood
@@ -17,10 +17,11 @@ _.Zones =
 				}),
 				n(159105, { -- Collector Kash
 					["coord"] = { 49.8, 24.6, 1536 },
-					--["questID"] = ,
+					["questID"] = 58005,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(4)),	-- Adventurer of Maldraxxus / Collector Kash
+						i(184188),	-- Collector's Corpse Gambrel
 					},
 				}),
 				n(157058, { -- Corspecutter Moroc
@@ -135,7 +136,7 @@ _.Zones =
 				}),
 				n(159753, { -- Ravenomous
 					["coord"] = { 54.0, 18.4, 1536 },
-					--["questID"] = ,
+					["questID"] = 58004,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(5)),	-- Adventurer of Maldraxxus / Ravenomous
@@ -144,7 +145,7 @@ _.Zones =
 				}),
 				n(159886, { -- Sister Chelicerae
 					["coord"] = { 55.6, 22.4, 1536 },
-					--["questID"] = ,
+					["questID"] = 58003,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(6)),	-- Adventurer of Maldraxxus / Sister Chelicerae

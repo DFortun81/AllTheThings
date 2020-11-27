@@ -44,7 +44,7 @@ _.Zones =
 						["sourceQuest"] = 60487,	-- It Used to Be Quiet Here
 					}),
 					crit(5, {	-- Mirror Maker of the Master
-						["sourceQuest"] = 59427,	-- We Need More Power
+						["sourceQuest"] = 57536,	-- Mirror Making, Not Breaking
 					}),
 					crit(6, {	-- Revelations of the Light
 						["sourceQuest"] = 60470,	-- Setting Sabina Free
@@ -128,6 +128,64 @@ _.Zones =
 						["description"] = "Use the Anima Canister to drain anima from Silent Observer and feed it to the Chamber Guardian.",
 						["g"] = {
 							i(184075),	-- Stonewrought Sentry
+						},
+					}),
+					crit(10, {	-- Chest of Envious Dreams
+						["objectID"] = 349565,	-- Chest of Envious Dreams
+						["coord"] = { 69.3, 77.9, 1525 },
+						["questID"] = 59833,
+						-- ["description"] = "",
+						["g"] = {
+							i(179393),	-- Mirror of Envious Dreams
+						},
+					}),
+					crit(11, {	-- Filcher's Prize
+						-- ["objectID"] = ###,	-- Filcher's Prize
+						-- ["coord"] = { ##, ##, 1525 },
+						-- ["questID"] = ###,
+						-- ["description"] = "",
+						["g"] = {
+						},
+					}),
+					crit(12, {	-- Wayfarer's Abandoned Spoils
+						-- ["objectID"] = ###,	-- Wayfarer's Abandoned Spoils
+						-- ["coord"] = { ##, ##, 1525 },
+						-- ["questID"] = ###,
+						-- ["description"] = "",
+						["g"] = {
+						},
+					}),
+					crit(13, {	-- Remlate's Hidden Cache
+						-- ["objectID"] = ###,	-- Remlate's Hidden Cache
+						["coord"] = { 61.5, 58.6, 1525 },
+						["questID"] = 59885,
+						["description"] = "Hug the cliff from the nearby flightpath around the building.\nDrops 2 Random Green Zone Drops",
+						["g"] = {
+						},
+					}),
+					crit(14, {	-- Fleeing Soul's Bundle
+						-- ["objectID"] = ###,	-- Fleeing Soul's Bundle
+						-- ["coord"] = { ##, ##, 1525 },
+						-- ["questID"] = ###,
+						-- ["description"] = "",
+						["g"] = {
+						},
+					}),
+					crit(15, {	-- Gilded Plum Chest
+						-- ["objectID"] = ###,	-- Gilded Plum Chest
+						-- ["coord"] = { ##, ##, 1525 },
+						-- ["questID"] = ###,
+						-- ["description"] = "",
+						["g"] = {
+						},
+					}),
+					crit(16, {	-- Abandoned Curios
+						["objectID"] = 349797,	-- Abandoned Curios
+						["coord"] = { 51.8, 59.5, 1525 },
+						["questID"] = 59888,
+						-- ["description"] = "",
+						["g"] = {
+							i(182744),	-- Ornate Belt Buckle
 						},
 					}),
 				}),

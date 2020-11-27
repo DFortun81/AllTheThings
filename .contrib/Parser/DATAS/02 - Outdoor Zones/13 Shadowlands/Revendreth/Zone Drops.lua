@@ -47,6 +47,10 @@ _.Zones =
 				}),
 				i(179333),	-- Inquisitor Cudgel
 				i(177809),	-- Lithe Rapier
+				i(173721, {	-- Love and Terror
+					["questID"] = 58081,
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
+				}),
 				i(183417, {	-- Mail Courier's Right Runner
 					i(182719, {	-- Mail Courier's Runners
 						["cost"] = {

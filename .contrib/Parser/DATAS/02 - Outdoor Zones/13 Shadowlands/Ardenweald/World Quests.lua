@@ -119,6 +119,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				i(181430),	-- Evernight Drape
 				i(181407),	-- Runetender Mitts
 				i(175740),	-- Valeshroud Torque
 			}),
