@@ -188,6 +188,7 @@ i(118388);	-- Sliver of Iron (M)
 i(128416);	-- Soul Remnant (N)
 i(128417);	-- Soul Remnant (H)
 i(128418);	-- Soul Remnant (M)
+i(180207);	-- Spirit Cradle
 i(147075);	-- Spirit Net
 i(169246);	-- Strangely Seasoned Meat
 i(146682);	-- Suramari Soul-Wraps

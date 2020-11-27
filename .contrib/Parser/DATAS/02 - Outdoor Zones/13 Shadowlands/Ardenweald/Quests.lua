@@ -26,6 +26,14 @@ _.Zones =
 						i(175671),	-- Grove Warden's Girdle
 					},
 				}),
+				q(60631, {	-- Big Problem, Little Vorkai
+					["sourceQuests"] = {
+						60629,	-- Extreme Recycling
+						60628,	-- The Missing Hunters
+					},
+					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
+					["coord"] = { 51.3, 34.0, 1565 },
+				}),
 				q(60521, {	-- Call of the Hunt
 					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
 					["provider"] = { "n", 169031 },	-- Lady Moonberry
@@ -75,6 +83,19 @@ _.Zones =
 					["provider"] = { "n", 169202 },	-- Dreamweaver
 					["coord"] = { 61.4, 40.9, 1565 },
 				}),
+				q(60632, {	-- I Know Your Face
+					["sourceQuests"] = {
+						60631,	-- Big Problem, Little Vorkai
+						60630,	-- Totem Eclipse
+					},
+					["provider"] = { "n", 169772 },	-- Hunt-Captain Korayn
+					["g"] = {
+						i(175669),	-- Spirit Tender's Mantle
+						i(175667),	-- Starshroud Shoulderpads
+						i(175670),	-- Dreamthorn Spaulders
+						i(175668),	-- Grove Warden's Shoulderplates
+					},
+				}),
 				q(60763, {	-- I Moustache You to Lend a Hand
 					["sourceQuests"] = { 60338 },	-- Journey to Ardenweald
 					["provider"] = { "n", 168341 },	-- Lady Moonberry
@@ -96,6 +117,11 @@ _.Zones =
 						57949,	-- They Need to Calm Down
 					},
 					["provider"] = { "n", 159639 },	-- Choofa
+				}),
+				q(60520, {	-- Nightmares Manifest
+					["sourceQuests"] = { 60522 },	-- Return to Tirna Vaal
+					["provider"] = { "n", 169142 },	-- Dreamweaver
+					["coord"] = { 65.2, 36.6, 1565 },
 				}),
 				q(57948, {	-- Nothing Left to Give
 					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
@@ -140,6 +166,21 @@ _.Zones =
 					["provider"] = { "n", 169686 },	-- Niya
 					["coord"] = { 66.9, 26.5, 1565 },
 				}),
+				q(60839, {	-- Remnants of the Wild Hunt
+					["sourceQuests"] = { 60764 },	-- Soothing Song
+					["provider"] = { "n", 170290 },	-- Ara'lon
+					["coord"] = { 62.3, 45.5, 1565 },
+				}),
+				q(60522, {	-- Return to Tirna Vaal
+					["sourceQuests"] = { 60632 },	-- I Know Your Face
+					["provider"] = { "n", 169935 },	-- Ara'lon
+					["coord"] = { 51.3, 34.0, 1565 },
+				}),
+				q(60881, {	-- Ride of the Wild Hunt
+					["sourceQuests"] = { 60856 },	-- Toppling the Brute
+					["provider"] = { "n", 170485 },	-- Ara'lon
+					["coord"] = { 64.2, 49.9, 1565 },
+				}),
 				q(60624, {	-- Ride to Heartwood Grove
 					["sourceQuests"] = { 60600 },	-- Preparing for the Winter Queen
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
@@ -149,6 +190,11 @@ _.Zones =
 					["sourceQuests"] = { 57816 },	-- Dreamweaver
 					["provider"] = { "n", 169116 },	-- Dreamweaver
 					["coord"] = { 64.2, 41.2, 1565 },
+				}),
+				q(60764, {	-- Soothing Song
+					["sourceQuests"] = { 60738 },	-- The Way to Hibernal Hollow
+					["provider"] = { "n", 170172 },	-- Dreamweaver
+					["coord"] = { 64.5, 39.0, 1565 },
 				}),
 				q(57951, {	-- Souls Come Home
 					["sourceQuests"] = { 57950 },	-- Mizik the Haughty
@@ -211,10 +257,42 @@ _.Zones =
 					},
 					["provider"] = { "n", 169686 },	-- Niya
 				}),
+				q(60738, {	-- The Way to Hibernal Hollow
+					["sourceQuests"] = { 60520 },	-- Nightmares Manifest
+					["provider"] = { "n", 169142 },	-- Dreamweaver
+					["coord"] = { 65.2, 36.6, 1565 },
+				}),
 				q(57949, {	-- They Need to Calm Down
 					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
 					["provider"] = { "n", 159638 },	-- Choofa
 					["coord"] = { 97.1, 32.1, 1565 },
+				}),
+				q(60856, {	-- Toppling the Brute
+					["sourceQuests"] = { 60839 },	-- Remnants of the Wild Hunt
+					["provider"] = { "n", 170485 },	-- Ara'lon
+					["coord"] = { 64.2, 49.9, 1565 },
+					["g"] = {
+						i(175986, {	-- Grove Defender's Maul
+							["f"] = 24,	-- 2H mace (for some reason erroneously has filterID of 23, which is 1H maces)
+						}),
+						i(175983),	-- Heartwood Bow
+						i(175984),	-- Heartwood Dagger
+						i(175985),	-- Grove Defender's Pummeler
+						i(175990),	-- Meadow Guardian's Shield
+						i(175987),	-- Grove Defender's Spear
+						i(175988),	-- Meadow Guardian's Staff
+						i(175989),	-- Grove Defender's Sword
+						i(175992),	-- Heartwood Warglaive
+						i(178029),	-- Meadow Guardian's Focus
+					},
+				}),
+				q(60630, {	-- Totem Eclipse
+					["sourceQuests"] = {
+						60629,	-- Extreme Recycling
+						60628,	-- The Missing Hunters
+					},
+					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
+					["coord"] = { 51.3, 34.0, 1565 },
 				}),
 				q(57651, {	-- Trouble in the Banks
 					["sourceQuests"] = { 60521 },	-- Call of the Hunt
@@ -309,84 +387,7 @@ _.Zones =
 					["coord"] = { 62.9, 36.2, 1565 },
 					["sourceQuests"] = { 58026 },	-- When a Gorm Eats a God
 				}),
-				-- Glitterfall Heights
-				q(60630, {	-- Totem Eclipse
-					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
-					["coord"] = { 51.3, 34.0, 1565 },
-					["sourceQuests"] = {
-						60628,	-- The Missing Hunters
-						60629,	-- Extreme Recycling
-					},
-				}),
-				q(60631, {	-- Big Problem, Little Vorkai
-					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
-					["coord"] = { 51.3, 34.0, 1565 },
-					["sourceQuests"] = {
-						60628,	-- The Missing Hunters
-						60629,	-- Extreme Recycling
-					},
-				}),
-				q(60632, {	-- I Know Your Face
-					["provider"] = { "n", 169772 },	-- Hunt-Captain Korayn
-					["sourceQuests"] = {
-						60630,	-- Totem Eclipse
-						60631,	-- Big Problem, Little Vorkai
-					},
-					["g"] = {
-						i(175669),	-- Spirit Tender's Mantle
-						i(175667),	-- Starshroud Shoulderpads
-						i(175670),	-- Dreamthorn Spaulders
-						i(175668),	-- Grove Warden's Shoulderplates
-					},
-				}),
-				q(60522, {	-- Return to Tirna Vaal
-					["provider"] = { "n", 169935 },	-- Ara'lon
-					["coord"] = { 51.3, 34.0, 1565 },
-					["sourceQuests"] = { 60632 },	-- I Know Your Face
-				}),
-				q(60520, {	-- Nightmares Manifest
-					["provider"] = { "n", 169142 },	-- Dreamweaver
-					["coord"] = { 65.2, 36.6, 1565 },
-					["sourceQuests"] = { 60522 },	-- Return to Tirna Vaal
-				}),
 				-- This is the Way
-				q(60738, {	-- The Way to Hibernal Hollow
-					["provider"] = { "n", 169142 },	-- Dreamweaver
-					["coord"] = { 65.2, 36.6, 1565 },
-					["sourceQuests"] = { 60520 },	-- Nightmares Manifest
-				}),
-				q(60764, {	-- Soothing Song
-					["provider"] = { "n", 169142 },	-- Dreamweaver
-					["coord"] = { 64.5, 39.0, 1565 },
-					["sourceQuests"] = { 60738 },	-- The Way to Hibernal Hollow
-				}),
-				q(60839, {	-- Remnants of the Wild Hunt
-					["provider"] = { "n", 170290 },	-- Ara'lon
-					["coord"] = { 62.3, 45.5, 1565 },
-					["sourceQuests"] = { 60764 },	-- Soothing Song
-				}),
-				q(60856, {	-- Toppling the Brute
-					["provider"] = { "n", 170485 },	-- Ara'lon
-					["coord"] = { 64.2, 49.9, 1565 },
-					["sourceQuests"] = { 60839 },	-- Remnants of the Wild Hunt
-					["g"] = {
-						i(175986),	-- Grove Defender's Maul
-						i(175983),	-- Heartwood Bow
-						i(175984),	-- Heartwood Dagger
-						i(175985),	-- Grove Defender's Pummeler
-						i(175990),	-- Meadow Guardian's Shield
-						i(175987),	-- Grove Defender's Spear
-						i(175988),	-- Meadow Guardian's Staff
-						i(175989),	-- Grove Defender's Sword
-						i(175992),	-- Heartwood Warglaive
-						i(178029),	-- Meadow Guardian's Focus
-					},
-				}),
-				q(60881, {	-- Ride of the Wild Hunt
-					["provider"] = { "n", 170485 },	-- Ara'lon
-					["coord"] = { 64.2, 49.9, 1565 },
-					["sourceQuests"] = { 60856 },	-- Toppling the Brute
-				}),
 				q(60901, {	-- Passage to Hibernal Hollow
 					["provider"] = { "n", 170290 },	-- Ara'lon
 					["coord"] = { 62.3, 45.5, 1565 },

@@ -122,11 +122,12 @@ _.Zones =
 						},
 					}),
 					crit(7, {	-- Hearty Dragon Plume
+						["description"] = "The path to get up to the treasure starts at 48.1, 39.0.\n\nFollow it up and to the left until you reach the beginning of the bridge at 46.1, 39.1, and cross it to get to the ledge above the treasure.  Any class should be able to safely make it down to the treasure with two jumps (or use a Goblin Glider), but you can also use the feather found at 48.9, 41.0 to slow fall.",
 						["objectID"] = 354647,	-- Hearty Dragon Plume
-						["coord"] = { 48.2, 39.2, 1565 },
 						["questID"] = 61067,
+						["coord"] = { 48.2, 39.2, 1565 },
 						["g"] = {
-							i(182729),	-- Hearty Dragon Plume
+							i(182729),	-- Hearty Dragon Plume (TOY!)
 						},
 					}),
 					crit(8, {	-- Playful Vulpin Befriended
