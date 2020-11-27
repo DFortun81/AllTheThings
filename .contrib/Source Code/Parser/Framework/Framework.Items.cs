@@ -116,6 +116,26 @@ namespace ATT
                 // Attempt to get an existing item dictionary.
                 return ITEMS.TryGetValue(itemID, out Dictionary<string, object> obj) ? obj : null;
             }
+
+            /// <summary>
+            /// Returns the 'name' field of the data, or the corresponding name based on the 'itemID' of the data if it has been
+            /// cached into the Item DB already
+            /// </summary>
+            /// <param name="data"></param>
+            /// <returns></returns>
+            public static bool TryGetName(Dictionary<string, object> data, out string name)
+            {
+                data.TryGetValue("name", out name);
+
+                if (name == null)
+                {
+                    data.TryGetValue("itemID", out int itemID);
+                    if (itemID > 0)
+                        Get(itemID).TryGetValue("name", out name);
+                }
+
+                return name != null;
+            }
             #endregion
             #region Export
             /// <summary>

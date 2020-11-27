@@ -472,6 +472,7 @@ _.Zones =
 						}),
 						i(183102, {	-- Technique: Contract: Court of Harvesters
 							["cost"] = 17650000, -- 1,765g
+							["recipeID"] = 311412,
 						}),
 						i(183245, {	-- Memory of Norgannon
 							["cost"] = 11000000, -- 1,100g

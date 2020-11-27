@@ -56,6 +56,11 @@ namespace ATT
             /// </summary>
             public static IDictionary<int, Dictionary<string, object>> AllQuests { get; } = new Dictionary<int, Dictionary<string, object>>();
 
+            /// <summary>
+            /// All of the Recipes (Name,RecipeID) that are in the database, keyed by required skill
+            /// </summary>
+            public static IDictionary<object, List<Tuple<string, int>>> AllRecipes { get; } = new Dictionary<object, List<Tuple<string, int>>>();
+
             #endregion
             #region Filters
             /// <summary>
@@ -405,6 +410,48 @@ namespace ATT
                 return CalculateFilter(itemClass, itemSubClass, inventoryType);
             }
 
+            internal static void AddRecipe(object requiredSkill, string recipeName, int recipeID)
+            {
+                // only add recipes with a name and requiredSkill
+                if (recipeName == null || requiredSkill == null)
+                    return;
+
+                // ensure skill bucket exists
+                if (!AllRecipes.TryGetValue(requiredSkill, out List<Tuple<string, int>> skillRecipes))
+                    AllRecipes[requiredSkill] = skillRecipes = new List<Tuple<string, int>>();
+
+                // do not add matching recipeID
+                if (skillRecipes.Any(sr => sr.Item2 == recipeID))
+                    return;
+
+                // add the recipe info
+                skillRecipes.Add(new Tuple<string, int>(recipeName, recipeID));
+            }
+
+            internal static bool FindRecipeByName(object requiredSkill, string recipeItemName, out int recipeID)
+            {
+                recipeID = 0;
+                if (recipeItemName == null)
+                    return false;
+
+                // find skill bucket
+                if (!AllRecipes.TryGetValue(requiredSkill, out List<Tuple<string, int>> skillRecipes))
+                    return false;
+
+                foreach (Tuple<string, int> recipeInfo in skillRecipes)
+                {
+                    // perfect recipe - item match!
+                    if (recipeItemName.Contains(recipeInfo.Item1))
+                    {
+                        recipeID = recipeInfo.Item2;
+                        return true;
+                    }
+                    // do we need further checking?
+                }
+
+                return false;
+            }
+
             /// <summary>
             /// Assign the Filter ID for this data dictionary if a valid ID hasn't already been assigned.
             /// </summary>
@@ -580,6 +627,9 @@ namespace ATT
 	            {2565, 186},	// Kul Tiran Mining [8.0.1]
 	            {2761, 186},	// Shadowlands Mining [9.0.1]
 
+                // Runeforging [Deathknight only]
+                {960, 960},     // Runeforging
+
 	            // Skinning Skills
 	            {393, 393},	    // Skinning [7.3.5]
 	            {2564, 393},	// Classic Skinning [8.0.1]
@@ -603,6 +653,9 @@ namespace ATT
 	            {2534, 197},	// Legion Tailoring [8.0.1]
 	            {2533, 197},    // Kul Tiran Tailoring [8.0.1]
 	            {2759, 197},    // Shadowlands Tailoring [9.0.1]
+
+                // Tinkering [Mechagon]
+                {2720, 2720},   // Tinkering [8.2]
             };
 
             /// <summary>

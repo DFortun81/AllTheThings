@@ -113,6 +113,7 @@ _.Zones =
 						}),
 						i(183093, {	-- Technique: Contract: The Wild Hunt
 							["cost"] = 17650000,	-- 1,765g
+							["recipeID"] = 311410,
 						}),
 						i(183096, {	-- Formula: Sacred Shard
 							["cost"] = 13500000,	-- 1,350g

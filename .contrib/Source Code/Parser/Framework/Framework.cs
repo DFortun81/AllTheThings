@@ -514,10 +514,33 @@ namespace ATT
                                 Trace.Write("Missing Skill ID in Conversion Table: ");
                                 Trace.WriteLine(requiredSkill);
                                 Trace.WriteLine(ToJSON(data));
-                                Console.ReadLine();
+                                //Console.ReadLine();
                                 break;
                             }
                     }
+                }
+
+                // if this data has a recipeID, cache the information
+                if (data.TryGetValue("recipeID", out int recipeID))
+                {
+                    Items.TryGetName(data, out string recipeName);
+                    Objects.AddRecipe(newRequiredSkill ?? requiredSkill, recipeName, recipeID);
+                }
+                // otherwise see if we can associate a recipeID
+                else
+                {
+                    // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
+                    // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
+                    TryFindRecipeID(data);
+                }
+            }
+            else
+            {
+                // if this data has a recipeID, cache the information
+                if (data.TryGetValue("recipeID", out int recipeID))
+                {
+                    Items.TryGetName(data, out string recipeName);
+                    Objects.AddRecipe(null, recipeName, recipeID);
                 }
             }
 
@@ -546,6 +569,24 @@ namespace ATT
             }
 
             return true;
+        }
+
+        /// <summary>
+        /// Attempts to find the recipe ID in the already parsed data which corresponds to this item.... by name
+        /// </summary>
+        /// <param name="data"></param>
+        private static void TryFindRecipeID(Dictionary<string, object> data)
+        {
+            // all recipes require a skill
+            if (!data.TryGetValue("requireSkill", out object requiredSkill))
+                return;
+
+            // get the name of the recipe item (i.e. Technique: blah blah)
+            Items.TryGetName(data, out string name);
+
+            // see if a matching recipe name exists for this skill, and use that recipeID
+            if (Objects.FindRecipeByName(requiredSkill, name, out int recipeID))
+                data["recipeID"] = recipeID;
         }
 
         /// <summary>

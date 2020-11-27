@@ -730,7 +730,7 @@ prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
-	local p = prof(skillID, t);
+	local p = prof(skillID, bubbleDown({ ["requireSkill"] = skillID, }, t));
 	_.Professions = { p };
 	return p;
 end
