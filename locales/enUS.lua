@@ -666,10 +666,14 @@ app.L = {
 		[-900] = 3675495,																	-- Covenant Sanctum
 		[-901] = 3726261,																	-- Covenant Callings
 
+		[-920] = "Interface\\Icons\\ui_sigil_necrolord",									-- Necrolord Covenant
+		[-929] = "Interface\\Icons\\ui_sigil_nightfae",										-- Night Fae Covenant
 		[-930] = 136059,																	-- Queen's Conservatory
 		[-931] = 636334,																	-- Lesser Spirit
 		[-932] = 636335,																	-- Spirit
 		[-933] = 2451604,																	-- Greater Spirit
+		[-939] = "Interface\\Icons\\ui_sigil_kyrian",										-- Kyrian Covenant
+		[-949] = "Interface\\Icons\\ui_sigil_venthyr",										-- Venthyr Covenant
 
 		[-950] = 3565720,																	-- Mirror Network
 		[-951] = 3528313,																	-- Tier 1 Mirror Mirror
@@ -1463,17 +1467,23 @@ app.L = {
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
 		--[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown (NYI)
 		[-914] = "Adventures",													-- Adventures
+		
+-- SL Maldraxxus/Necrolord
+		[-920] = "Necrolord Covenant",											-- Necrolord Covenant
 
 -- SL Ardenweald/Night Fae
+		[-929] = "Night Fae Covenant",											-- Night Fae Covenant
 		[-930] = "Queen's Conservatory",										-- Queen's Conservatory
 		[-931] = GetSpellInfo(7851),											-- Lesser Spirit
 		[-932] = GetSpellInfo(172153),											-- Spirit
 		[-933] = GetSpellInfo(13826),											-- Greater Spirit
 
 -- SL Bastion/Kyrian
+		[-939] = "Kyrian Covenant",												-- Kyrian Covenant
 		[-940] = "Ascended Council",											-- Ascended Counil
 
 -- SL Revendreth/Venthyr
+		[-949] = "Venthyr Covenant",											-- Venthyr Covenant
 		[-950] = "Mirror Network",												-- Mirror Network
 		[-951] = "Tier 1 Mirror Mirror",										-- Tier 1 Mirror Mirror
 		[-952] = "Tier 2 Looking Glass",										-- Tier 2 Looking Glass"

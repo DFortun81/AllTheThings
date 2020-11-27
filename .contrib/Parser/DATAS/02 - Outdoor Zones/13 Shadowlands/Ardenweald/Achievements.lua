@@ -99,11 +99,12 @@ _.Zones =
 						},
 					}),
 					crit(5, {	-- Faerie Trove
+						["description"] = "Underneath the platform.",
 						["objectID"] = 354652,	-- Faerie Trove
-						["coord"] = { 49.7, 55.9, 1565 },
 						["questID"] = 61073,
+						["coord"] = { 49.7, 55.9, 1565 },
 						["g"] = {
-							i(182673),	-- Shimmerbough Hoarder
+							i(182673),	-- Shimmerbough Hoarder (PET!)
 						},
 					}),
 					crit(6, {	-- Harmonic Chest

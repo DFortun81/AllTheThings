@@ -138,6 +138,7 @@ _.PetJournal =
 		p(717),		-- Savory Beetle
 		p(512),		-- Scarab Hatchling
 		un(20, p(289)),		-- Scooter the Snail
+		p(3022),	-- Shimmerbough Hoarder
 		p(493),		-- Shimmershell Snail
 		p(677),		-- Shy Bandicoon
 		p(568),		-- Silkbead Snail
