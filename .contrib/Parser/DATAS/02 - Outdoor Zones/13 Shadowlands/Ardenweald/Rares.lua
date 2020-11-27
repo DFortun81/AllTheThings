@@ -104,12 +104,15 @@ _.Zones =
 					},
 				}),
 				n(164112, {	-- Humon'gozz
-					["coord"] = { 32.6, 31.0, 1565 },
 					["questID"] = 59157,
 					["isDaily"] = true,
+					["coord"] = { 32.6, 31.0, 1565 },
+					["crs"] = { 164122 },	-- Rapidly Growing Mushroom/Humon'gozz (npcID stays the same after it morphs from the mushroom into Humon'gozz)
 					["g"] = {
-						i(182650),	-- Arboreal Gulper
-						ach(14309, crit(5)),	-- Adventurer of Ardenweald / Humon'gozz
+						crit(5, {	-- Humon'gozz
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
+						i(182650),	-- Arboreal Gulper (MOUNT!)
 					},
 				}),
 				n(160448, {	-- Hunter Vivanna <The Wild Hunt>

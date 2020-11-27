@@ -7,6 +7,80 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1670, {	-- Oribos
 			n(QUESTS, {
+				n(-9, {	-- PvP
+					q(62910, {	-- Against Overwhelming Odds
+						["provider"] = { "n", 168011 },	-- Zo'sorg
+						["isWeekly"] = true,
+						["coord"] = { 34.7, 56.5, 1670 },
+					}),
+					q(62284, {	-- Observing Battle
+					--	TODO: is this weekly?  it isn't designated as weekly in quest API
+						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+						["coord"] = { 34.7, 56.5, 1670 },
+						["g"] = {
+							i(184315),	-- Multi-Modal Anima Container
+						},
+					}),
+					--[[
+				--	TODO: these are the rest of the PVP quests from Unsorted.  if they show up, it'll be easier to move them/add information.  if they don't show up they can be moved to the NYI > NYI Quests file.
+				--	if any of these wind up being NYI, we should add the ["drop"] = { "g" } tag so that the Cartel Exchange Vessel / Multi-Modal Anima Containers are not connected to nonexistant quests.
+					q(62289, {	-- Observing Conflict
+						["description"] = "Type: |cFFf09f26PvP|r\nArea: |cFFf09f26Oribos|r",
+						["lvl"] = 60,
+						["g"] = {
+							i(184374, { -- Cartel Exchange Vessel
+
+							})
+						}
+					}),
+					q(62285, {	-- Observing War
+						["description"] = "Type: |cFFf09f26PvP|r\nArea: |cFFf09f26Oribos|r",
+						["lvl"] = 60,
+						["g"] = {
+							i(184315, { -- Multi-Modal Anima Container
+
+							})
+						}
+					}),
+					q(62286, {	-- Observing Skirmishes
+						["description"] = "Type: |cFFf09f26PvP|r\nArea: |cFFf09f26Oribos|r",
+						["lvl"] = 60,
+						["g"] = {
+							i(184315, { -- Multi-Modal Anima Container
+
+							})
+						}
+					}),
+					q(62287, {	-- Observing Arenas
+						["description"] = "Type: |cFFf09f26PvP|r\nArea: |cFFf09f26Oribos|r",
+						["lvl"] = 60,
+						["g"] = {
+							i(184315, { -- Multi-Modal Anima Container
+
+							})
+						}
+					}),
+					q(62288, {	-- Observing Teamwork
+						["description"] = "Type: |cFFf09f26PvP|r\nArea: |cFFf09f26Oribos|r",
+						["lvl"] = 60,
+						["g"] = {
+							i(184315, { -- Multi-Modal Anima Container
+
+							})
+						}
+					}),
+					q(62569, {	-- quest not found
+						["description"] = "Area: |cFFf09f26Oribos|r",
+						["_drop"] = { "g" },
+						["lvl"] = 60,
+						["u"] = NEVER_IMPLEMENTED,	-- move to NYI > NYI Quests file if this doesn't show up in the next few months i guess
+						["g"] = {
+							i(184315, { -- Multi-Modal Anima Container
+
+							})
+						}
+					}),--]]
+				}),
 				q(60151, {	-- A Doorway Through the Veil
 					["sourceQuests"] = { 60150 },	-- Tether to Home
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
@@ -76,8 +150,8 @@ _.Zones =
 				}),
 				q(60252, {	-- A Valuable Find: Spires of Ascension
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["isWeekly"] = true,
 					["coord"] = { 51.4, 43.7, 1670 },
 					["g"] = {
 						i(184374),	-- Cartel Exchange Vessel
@@ -220,8 +294,8 @@ _.Zones =
 				}),
 				q(60242, {	-- Trading Favors: Necrotic Wake
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
 					["g"] = {
 						i(184374),	-- Cartel Exchange Vessel
