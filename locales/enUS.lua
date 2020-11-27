@@ -1477,6 +1477,7 @@ app.L = {
 		[-931] = GetSpellInfo(7851),											-- Lesser Spirit
 		[-932] = GetSpellInfo(172153),											-- Spirit
 		[-933] = GetSpellInfo(13826),											-- Greater Spirit
+		[-934] = "Star Lake Amphitheater",										-- Star Lake Amphitheater
 
 -- SL Bastion/Kyrian
 		[-939] = "Kyrian Covenant",												-- Kyrian Covenant
@@ -4133,6 +4134,7 @@ app.L = {
 		[332576] = "Crystalline Cat Figurine",
 		[332577] = "Crystalline Cat Figurine",	-- Need to be confirmed
 		[332704] = "Corrupted Chest",
+		[336415] = "Discarded Scroll",
 		[339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 		[339283] = "Forgotten Noble's Chest",
 		[339499] = "Remnant of Light",
@@ -4156,6 +4158,7 @@ app.L = {
 		[352490] = "Join the Rebellion!",
 		[352596] = "Sprouting Growth",
 		[353232] = "Bleakwood Chest",
+		[353331] = "Faerie Stash",
 		[353645] = "Marileth's Journal",
 		[354852] = "Sprouting Growth",
 		[354853] = "Sprouting Growth",

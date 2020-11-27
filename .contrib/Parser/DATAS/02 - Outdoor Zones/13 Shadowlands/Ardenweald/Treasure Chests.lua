@@ -14,6 +14,11 @@ _.Zones =
 					["repeatable"] = true,
 				}),
 				]]--			|cffcc33ffThe demons are taking over this island, you may want to leave.|r
+				o(353331, {	-- Faerie Stash
+					["description"] = "Use the Bounding Shroom at 39.9, 43.7 to reach the treasure.",
+					["questID"] = 60718,
+					["coord"] = { 41.3, 44.7, 1565 },
+				}),
 				o(356820, {	-- Large Lunarlight Pod
 					["coord"] = { 65.3, 23.5, 1565 },
 					["questID"] = 60717,

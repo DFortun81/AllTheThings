@@ -15,6 +15,11 @@ _.Zones =
 						i(183851),	-- Withergrove Shardling
 					},
 				}),
+				q(57865, {	-- Ages-Echoing Wisdom
+					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
+					["provider"] = { "n", 158345 },	-- Lady of the Falls
+					["coord"] = { 51.1, 33.8, 1565 },
+				}),
 				q(60519, {	-- Audience with the Winter Queen
 					["sourceQuests"] = { 60724 },	-- Heartless
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
@@ -44,6 +49,16 @@ _.Zones =
 						i(175671),	-- Grove Warden's Girdle
 					},
 				}),
+				q(58267, {	-- Beneath the Mask
+					["sourceQuests"] = {
+						58266,	-- Break it Down
+						58264,	-- Wake Up, Get Up, Get Out There
+					},
+					["provider"] = { "n", 160757 },	-- Primrose
+					["g"] = {
+						i(175712),	-- Shimmerbough Loop
+					},
+				}),
 				q(60631, {	-- Big Problem, Little Vorkai
 					["sourceQuests"] = {
 						60629,	-- Extreme Recycling
@@ -61,6 +76,11 @@ _.Zones =
 				--	TODO: figure out SQs.  in the same area as 'blooming villains,' but that is NOT their SQ.  possibly unlocked by completion of 60905, 'infusing the wildseed'?
 					["provider"] = { "n", 160749 },	-- Primrose
 					["coord"] = { 53.4, 58.7, 1565 },
+				}),
+				q(59621, {	-- Breaking A Few Eggs
+					["sourceQuests"] = { 57651 },	-- Trouble in the Banks
+					["provider"] = { "n", 158422 },	-- Foreman Thorodir
+					["coord"] = { 46.6, 29.4, 1565 },
 				}),
 				q(58024, {	-- Burrows Away
 					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
@@ -81,6 +101,12 @@ _.Zones =
 					["sourceQuests"] = { 57818 },	-- Nothing Goes to Waste
 					["provider"] = { "n", 158969 },	-- Master Sha'lor
 					["coord"] = { 64.8, 38.9, 1565 },
+				}),
+				q(57868, {	-- Craftsman Needs No Tools
+				--	TODO: verify SQs
+					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
+					["provider"] = { "n", 159427 },	-- Elder Finnan
+					["coord"] = { 55.8, 23.4, 1565 },
 				}),
 				q(58164, {	-- Cult of Personality
 					["sourceQuests"] = { 58161 },	-- Forest Disappearances
@@ -170,6 +196,14 @@ _.Zones =
 					["provider"] = { "n", 160894 },	-- Droman Aliothe
 					["coord"] = { 60.0, 53.9, 1565 },
 				}),
+				q(57656, {	-- Gifts of the Forest
+					["sourceQuests"] = {
+						59621,	-- Breaking a Few Eggs
+						59622,	-- Tending to the Tenders
+					},
+					["provider"] = { "n", 158489 },	-- Fluttercatch
+					["coord"] = { 48.0, 24.3, 1565 },
+				}),
 				q(58488, {	-- Go for the Heart
 					["sourceQuests"] = { 58486 },	-- He's Drust in the Way
 					["provider"] = { "n", 161492 },	-- Ara'lon
@@ -225,10 +259,20 @@ _.Zones =
 					["provider"] = { "n", 168341 },	-- Lady Moonberry
 					["coord"] = { 68.2, 18.3, 1565 },
 				}),
+				q(57866, {	-- Idle Hands
+					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
+					["provider"] = { "n", 158345 },	-- Lady of the Falls
+					["coord"] = { 51.1, 33.8, 1565 },
+				}),
 				q(57952, {	-- In Need of Gorm Gris
 					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
 					["provider"] = { "n", 158921 },	-- Guardian Kota
 					["coord"] = { 62.6, 36.0, 1565 },
+				}),
+				q(60905, {	-- Infusing the Wildseed
+					["sourceQuests"] = { 60901 },	-- Passage to Hibernal Hollow
+					["provider"] = { "n", 160894 },	-- Droman Aliothe
+					["coord"] = { 60.0, 53.9, 1565 },
 				}),
 				q(57787, {	-- Keep to the Path
 					["sourceQuests"] = { 60859 },	-- Souls of the Forest
@@ -290,6 +334,15 @@ _.Zones =
 					},
 					["provider"] = { "n", 169217 },	-- Dreamweaver
 					["coord"] = { 62.1, 36.4, 1565 },
+				}),
+				q(57871, {	-- Outplayed
+					["sourceQuests"] = { 57870 },	-- The Games We Play
+					["provider"] = { "n", 159465 },	-- Elder Gwenna
+					["coord"] = { 59.0, 24.3, 1565 },
+					["g"] = {
+						i(183850),	-- Wakener's Frond
+						i(183849),	-- Soulsifter Root
+					},
 				}),
 				q(60901, {	-- Passage to Hibernal Hollow
 					["sourceQuests"] = { 60881 },	-- Ride of the Wild Hunt
@@ -402,6 +455,12 @@ _.Zones =
 						i(175767),	-- Glitterwing Greatcloak
 					},
 				}),
+				q(57869, {	-- Spirit-Gathering Labor
+				--	TODO: verify SQs
+					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
+					["provider"] = { "n", 159428 },	-- Groonoomcrooek
+					["coord"] = { 56.4, 29.2, 1565 },
+				}),
 				q(57947, {	-- Spirits of the Glen
 					["sourceQuests"] = { 57787 },	-- Keep to the Path
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
@@ -411,6 +470,11 @@ _.Zones =
 				--	TODO: figure out SQs.  saw this after doing the overall zone meta and after finishing the "when a gorm eats a god" criteria of "sojourner of ardenweald"
 					["provider"] = { "o", 348747 },	-- Muddy Scroll
 					["coord"] = { 46.9, 27.6, 1565 },
+				}),
+				q(57655, {	-- Supplies Needed: More Husks!
+				--	TODO: figure out SQs.  saw after finish regular zone quest meta, while working on sojourner achievement, during 'unsafe workplace.'  but it may unlock sooner
+					["provider"] = { "o", 336415 },	-- Discarded Scroll	-- TODO: Need to add the Object
+					["coord"] = { 47.5, 26.2, 1565 },
 				}),
 				q(60648, {	-- Survivors of Heartwood Grove
 					["sourceQuests"] = {
@@ -436,6 +500,11 @@ _.Zones =
 						{ "n", 161446 },	-- Ara'lon
 					},
 					["coord"] = { 68.4, 57.4, 1565 },
+				}),
+				q(59622, {	-- Tending to the Tenders
+					["sourceQuests"] = { 57651 },	-- Trouble in the Banks
+					["provider"] = { "n", 158422 },	-- Foreman Thorodir
+					["coord"] = { 46.6, 29.4, 1565 },
 				}),
 				q(60563, {	-- Tending to Wildseeds
 					["sourceQuests"] = { 57816 },	-- Dreamweaver
@@ -479,6 +548,18 @@ _.Zones =
 					["provider"] = { "n", 161847 },	-- Lady Moonberry
 					["coord"] = { 59.9, 53.0, 1565 },
 				}),
+				q(57870, {	-- The Games We Play
+				--	TODO: verify SQs
+					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
+					["provider"] = { "n", 159465 },	-- Elder Gwenna
+					["coord"] = { 59.0, 24.3, 1565 },
+				}),
+				q(57660, {	-- The Grove of Creation
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 58026 },	-- When a Gorm Eats a God
+					["provider"] = { "n", 160121 },	-- Master Sha'lor
+					["coord"] = { 62.9, 36.2, 1565 },
+				}),
 				q(60628, {	-- The Missing Hunters
 					["sourceQuests"] = { 60521 },	-- Call of the Hunt
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
@@ -501,6 +582,12 @@ _.Zones =
 					},
 					["provider"] = { "n", 169686 },	-- Niya
 				}),
+				q(57867, {	-- The Sweat of Our Brow
+				--	TODO: verify SQs
+					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
+					["provider"] = { "n", 160045 },	-- Helpful Faerie
+					["coord"] = { 53.8, 27.5, 1565 },
+				}),
 				q(60738, {	-- The Way to Hibernal Hollow
 					["sourceQuests"] = { 60520 },	-- Nightmares Manifest
 					["provider"] = { "n", 169142 },	-- Dreamweaver
@@ -511,10 +598,23 @@ _.Zones =
 					["provider"] = { "n", 159638 },	-- Choofa
 					["coord"] = { 97.1, 32.1, 1565 },
 				}),
-				q(60905, {	-- Infusing the Wildseed
-					["sourceQuests"] = { 60901 },	-- Passage to Hibernal Hollow
-					["provider"] = { "n", 160894 },	-- Droman Aliothe
-					["coord"] = { 60.0, 53.9, 1565 },
+				q(57657, {	-- Tied Totem Toter
+					["sourceQuests"] = { 57656 },	-- Gifts of the Forest
+					["provider"] = { "n", 158489 },	-- Fluttercatch
+					["coord"] = { 48.0, 24.3, 1565 },
+				}),
+				q(62371, {	-- Tirna Scithe: A Warning Silence
+				--	TODO: verify SQs
+					["sourceQuests"] = { 58723 },	-- The Court of Winter
+					["provider"] = { "n", 168032 },	-- Flwngyrr
+					["coord"] = { 48.3, 50.5, 1565 },
+					["maps"] = { 1669 },	-- Mists of Tirna Scithe
+					["g"] = {
+						i(184516),	-- Mistveil Sandals
+						i(184517),	-- Gladechewer Footguards
+						i(184518),	-- Boots of the Oaken Assembly
+						i(184515),	-- Sacred Grove Sabatons
+					},
 				}),
 				q(60856, {	-- Toppling the Brute
 					["sourceQuests"] = { 60839 },	-- Remnants of the Wild Hunt
@@ -544,7 +644,10 @@ _.Zones =
 					["coord"] = { 51.3, 34.0, 1565 },
 				}),
 				q(57651, {	-- Trouble in the Banks
-					["sourceQuests"] = { 60521 },	-- Call of the Hunt
+					["sourceQuests"] = {
+						60521,	-- Call of the Hunt
+						57660,	-- The Grove of Creation (breadcrumb)
+					},
 					["provider"] = { "n", 158345 },	-- Lady of the Falls
 					["coord"] = { 51.1, 33.8, 1565 },
 				}),
@@ -561,6 +664,14 @@ _.Zones =
 						i(175675),	-- Spirit Tender's Cuffs
 						i(175678),	-- Starshroud Bracers
 					},
+				}),
+				q(57653, {	-- Unsafe Workplace
+					["sourceQuests"] = {
+						59621,	-- Breaking A Few Eggs
+						59622,	-- Tending to the Tenders
+					},
+					["provider"] = { "n", 158422 },	-- Foreman Thorodir
+					["coord"] = { 46.6, 29.4, 1565 },
 				}),
 				q(58590, {	-- Visions of the Dreamer: Origins
 					["sourceQuests"] = {
@@ -589,6 +700,33 @@ _.Zones =
 					["sourceQuests"] = { 60778 },	-- Wildseed Rescue
 					["provider"] = { "n", 170175 },	-- Featherlight
 					["coord"] = { 67.7, 20.6, 1565 },
+				}),
+				q(59656, {	-- Well, Tell the Lady
+					["sourceQuests"] = {
+						57653,	-- Unsafe Workplace
+						57657,	-- Tied Totem Toter
+					},
+					["provider"] = { "n", 158422 },	-- Foreman Thorodir
+					["coord"] = { 46.6, 29.4, 1565 },
+				}),
+				q(59623, {	-- What a Buzzkill
+					["sourceQuests"] = {
+						57652,	-- Supplies Needed: Amber Grease
+						57655,	-- Supplies Needed: More Husks
+					},
+					["provider"] = { "n", 165382 },	-- Gormsmith Cavina
+					["coord"] = { 51.5, 34.0, 1565 },
+					["g"] = {
+						i(178024),	-- Gormhusk Bludgeon
+						i(178021),	-- Culexwood Longbow
+						i(178022),	-- Culexwood Knife
+						i(178023),	-- Gormhusk Basher
+						i(178025),	-- Gormstinger Spear
+						i(178027),	-- Gormstinger Sword
+						i(178030),	-- Gormstinger Warglaive
+						i(180474),	-- Culexwood Dagger
+						i(180473),	-- Culexwood Spellmace
+					},
 				}),
 				q(58026, {	-- When a Gorm Eats a God
 					["sourceQuests"] = { 58025 },	-- Queen of the Underground
@@ -619,12 +757,6 @@ _.Zones =
 							i(180721),	-- Enchanted Dreamlight Runestag
 						},
 					}),
-				}),
-				-- When a Gorm Eats a God
-				q(57660, {	-- The Grove of Creation
-					["provider"] = { "n", 160121 },	-- Master Sha'lor
-					["coord"] = { 62.9, 36.2, 1565 },
-					["sourceQuests"] = { 58026 },	-- When a Gorm Eats a God
 				}),
 				-- End of Zone Achievement Quests
 				
@@ -1091,106 +1223,6 @@ _.Zones =
 					},
 				}),
 				-- Sojourner of Ardenweald Achievenemt
-				-- Wicked Plan
-				q(58267, {	-- Beneath the Mask
-					["provider"] = { "n", 160749 },	-- Primrose
-					["sourceQuests"] = { 58264 },	-- Wake Up, Get Up, Get Out There
-					["g"] = {
-						i(175712),	-- Shimmerbough Loop
-					},
-				}),
-				-- Trouble at the Gormling Corral
-				q(59621, {	-- Breaking A Few Eggs
-					["provider"] = { "n", 158422 },	-- Foreman Thorodir
-					["coord"] = { 46.6, 29.4, 1565 },
-					["sourceQuests"] = { 57651 },	-- Trouble in the Banks
-				}),
-				q(59622, {	-- Tending to the Tenders
-					["provider"] = { "n", 158422 },	-- Foreman Thorodir
-					["coord"] = { 46.6, 29.4, 1565 },
-					["sourceQuests"] = { 57651 },	-- Trouble in the Banks
-				}),
-				q(57653, {	-- Unsafe Workplace
-					["provider"] = { "n", 158422 },	-- Foreman Thorodir
-					["coord"] = { 46.6, 29.4, 1565 },
-					["sourceQuests"] = {
-						59621,	-- Breaking A Few Eggs
-						59622,	-- Tending to the Tenders
-					},
-				}),
-				q(57656, {	-- Gifts of the Forest
-					["provider"] = { "n", 158489 },	-- Fluttercatch
-					["coord"] = { 48.0, 24.3, 1565 },
-				}),
-				q(57657, {	-- Tied Totem Toter
-					["provider"] = { "n", 158489 },	-- Fluttercatch
-					["coord"] = { 48.0, 24.3, 1565 },
-					["sourceQuests"] = { 57656 },	-- Gifts of the Forest
-				}),
-				q(59656, {	-- Well, Tell the Lady
-					["provider"] = { "n", 158422 },	-- Foreman Thorodir
-					["coord"] = { 46.6, 29.4, 1565 },
-					["sourceQuests"] = {
-						57653,	-- Unsafe Workplace
-						57657,	-- Tied Totem Toter
-					},
-				}),
-				-- Tricky Spriggans
-				q(57865, {	-- Ages-Echoing Wisdom
-					["provider"] = { "n", 158489 },	-- Lady of the Falls
-					["coord"] = { 51.1, 33.8, 1565 },
-					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
-				}),
-				q(57866, {	-- Idle Hands
-					["provider"] = { "n", 158489 },	-- Lady of the Falls
-					["coord"] = { 51.1, 33.8, 1565 },
-					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
-				}),
-				q(57867, {	-- The Sweat of Our Brow
-					["provider"] = { "n", 160045 },	-- Helpful Faerie
-					["coord"] = { 53.8, 27.5, 1565 },
-				}),
-				q(57869, {	-- Spirit-Gathering Labor
-					["provider"] = { "n", 159428 },	-- Groonoomcrooek
-					["coord"] = { 56.4, 29.2, 1565 },
-				}),
-				q(57870, {	-- The Games We Play
-					["provider"] = { "n", 159465 },	-- Elder Gwenna
-					["coord"] = { 59.0, 24.3, 1565 },
-				}),
-				q(57871, {	-- Outplayed
-					["provider"] = { "n", 159465 },	-- Elder Gwenna
-					["coord"] = { 59.0, 24.3, 1565 },
-					["sourceQuests"] = { 57870 },	-- The Games We Play
-				}),
-				q(57868, {	-- Craftsman Needs No Tools
-					["provider"] = { "n", 159427 },	-- Elder Finnan
-					["coord"] = { 55.8, 23.4, 1565 },
-				}),
-				-- Supplies Needed
-				q(57655, {	-- Supplies Needed: Amber Grease
-					["provider"] = { "o", 336415 },	-- Discarded Scroll	-- TODO: Need to add the Object
-					["coord"] = { 47.5, 26.2, 1565 },
-				}),
-				q(59623, {	-- What a Buzzkill
-					["provider"] = { "n", 165382 },	-- Gormsmith Cavina
-					["coord"] = { 51.5, 34.0, 1565 },
-					["sourceQuests"] = {
-						57652,	-- Supplies Needed: Amber Grease
-						57655,	-- Supplies Needed: Amber Grease
-					},
-					["g"] = {
-						i(178024),	-- Gormhusk Bludgeon
-						i(178021),	-- Culexwood Longbow
-						i(178022),	-- Culexwood Knife
-						i(178023),	-- Gormhusk Basher
-						i(178025),	-- Gormstinger Spear
-						i(178027),	-- Gormstinger Sword
-						i(178030),	-- Gormstinger Warglaive
-						i(180474),	-- Culexwood Dagger
-						i(180473),	-- Culexwood Spellmace
-					},
-				}),
 				-- Thread of Hope
 				q(57661, {	-- Silk Shortage
 					["provider"] = { "n", 158556 },	-- Aithlyn

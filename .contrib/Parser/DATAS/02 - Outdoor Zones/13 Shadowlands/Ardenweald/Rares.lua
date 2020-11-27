@@ -271,6 +271,56 @@ _.Zones =
 						i(180164),	-- Soultwister's Scythe
 					},
 				}),
+				n(-934,   {	-- Star Lake Amphitheater
+					["description"] = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.",
+					["coord"] = { 41.5, 44.8, 1565 },
+					["crs"] = { 171743 },	-- Dapperdew
+					["g"] = {
+					--	TODO: add remaining questIDs + loot, figure out which are first-time kills and which are daily kills, if that applies
+					--	it looks like maybe only one is available per day, so they possibly share a 'daily kill' ID and have a 'loot' quest tracker, or tracking their achievement criteria
+						--[[
+						n(166135, {	-- Astra, As Azshara <An Infamous Queen>
+							["questID"] = ,
+							["g"] = {
+							},
+						}),
+						n(166145, {	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>
+							["questID"] = ,
+							["g"] = {
+							},
+						}),
+						n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
+							["questID"] = ,
+							["g"] = {
+							},
+						}),
+						n(166139, {	-- Glimmerdust, As Kil'jaeden <of The Burning Legion>
+							["questID"] = ,
+							["g"] = {
+							},
+						}),
+						--]]
+						n(166138, {	-- Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
+							["isDaily"] = true,	-- ??
+							["questID"] = 61202,	-- also triggered 61633 on first kill
+							["g"] = {
+								i(179534),	-- Mi'kai's Deathscythe
+							},
+						}),
+						--[[
+						n(166146, {	-- Niya, As Xavius <Some Kind of Evil Sylvar>
+							["questID"] = ,
+							["g"] = {
+							},
+						}),
+						n(166140, {	-- Senthii, As Gul'dan <From an Alternate Timeline>
+							["questID"] = ,
+							["g"] = {
+							},
+						}),
+						--]]
+					},
+				}),
 				n(167721, {	-- The Slumbering Emperor
 					["description"] = "You can use various toys (Darkmoon Cannon, Phial of Ravenous Slime), pet abilities, and AoE abilities to pull this rare.  If you need help not falling asleep, pulling a nearby Greater Ardenmoth can apply a poison that will give you a few more seconds by waking you up with each tick.",
 					["questID"] = 60290,	-- no other quest popped

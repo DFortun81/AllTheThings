@@ -17,6 +17,35 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(14353, {	-- Ardenweald's a Stage
+				--	TODO: you can't summon these without being in the Night Fae Covenant, but you *can* kill summoned mobs and get loot + achievement credit.
+				--	completing the achievement unlocks the ability to purchase the Silky Shimmermoth from Master Clerk Salorn, but you may need to be in the covenant to purchase it.  test?
+					["coord"] = { 41.5, 44.8, 1565 },
+					["crs"] = { 171743 },	-- Dapperdew
+					["g"] = {
+						crit(1, {	-- Xavius
+							["crs"] = { 166146 },	-- Niya, As Xavius <Some Kind of Evil Sylvar>
+						}),
+						crit(2, {	-- Gul'dan
+							["crs"] = { 166140 },	-- Senthii, As Gul'dan <From an Alternate Timeline>
+						}),
+						crit(3, {	-- Kil'jaeden
+							["crs"] = { 166139 },	-- Glimmerdust, As Kil'jaeden <of The Burning Legion>
+						}),
+						crit(4, {	-- Argus, The Unmaker
+							["crs"] = { 166138 },	-- Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
+						}),
+						crit(5, {	-- Jaina
+							["crs"] = { 166142 },	-- Glimmerdust, As Jaina <A Magic Ice Princess>
+						}),
+						crit(6, {	-- Azshara
+							["crs"] = { 166135 },	-- Astra, As Azshara <An Infamous Queen>
+						}),
+						crit(7, {	-- N'Zoth
+							["crs"] = { 166145 },	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>
+						}),
+					},
+				}),
 				ach(14164, {	-- Awaken, Ardenweald
 					crit(1, {	-- Welcome to Ardenweald
 						["sourceQuests"] = { 57787 },	-- Keep to the Path
@@ -63,7 +92,7 @@ _.Zones =
 						["sourceQuests"] = { 58166 },	-- Unknown Assailants
 					}),
 					crit(6, {	-- Wicked Plan
-					--	["sourceQuests"] = { 58723 },	-- The Court of Winter
+						["sourceQuests"] = { 58267 },	-- Beneath the Mask
 					}),
 				}),
 				ach(14791, {	-- Toss a Seed to Your Hunter...
@@ -76,17 +105,17 @@ _.Zones =
 				}),
 				ach(14313, {	-- Treasures of Ardenweald
 					crit(1, {	-- Aerto's Body
-						["npcID"] =	 171156,	-- Aerto
-						["coord"] = { 55.9, 21.0, 1565 },
 						["questID"] = 61072,
+						["coord"] = { 55.9, 21.0, 1565 },
+						["crs"] = { 171156 },	-- Aerto
 						["g"] = {
-							i(180630),	-- Gorm Harrier
+							i(180630),	-- Gorm Harrier (PET!)
 						},
 					}),
 					crit(2, {	-- Lost Satchel
+						["description"] = "You will not get credit for the criteria until you turn in the quest started by the satchel.",
 						["objectID"] = 354645,	-- Lost Satchel
 						["coord"] = { 48.2, 20.3, 1565 },
-						--["questID"] = ,								-- Seems to be missing in the beta
 						["g"] = {
 							i(182731, {	-- Satchel of Culexwood
 								["questID"] = 62187,	-- Satchel of Culexwood
@@ -103,8 +132,8 @@ _.Zones =
 						},
 					}),
 					crit(4, {	-- Swollen Anima Seed
+						["description"] = "You will not get credit for the criteria until you turn in the quest started by the seed.",
 						["objectID"] = 354911,	-- Swollen Anima Seed
-					--	["questID"] = ,	-- no questID associated with this as of November 27th, 2020
 						["coord"] = { 76.6, 29.7, 1565 },
 						["g"] = {
 							i(182730, {	-- Swollen Anima Seed
@@ -141,7 +170,7 @@ _.Zones =
 						},
 					}),
 					crit(8, {	-- Playful Vulpin Befriended
-						["description"] = "You need to find the Playful Vulpin five times and use the following emotes.\n\n 1. Playful Vulpin begins to dig curiously. |cFFFFFFFF/curious|r\n 2. Playful Vulpin wanders around unable to sit still. |cFFFFFFFF/sit|r\n 3. Playful Vulpin sings all alone. |cFFFFFFFF/sing|r\n 4. Playful Vulpin dances with joy. |cFFFFFFFF/dance|r\n 5. Playful Vulpin sits down lonely and sad. |cFFFFFFFF/pet|r\n\nIt just counts if the Playful Vulpin react to your emote and run away.",
+						["description"] = "You need to find the Playful Vulpin five times and use the following emotes.\n\n 1. Playful Vulpin begins to dig curiously. |cFFFFFFFF/curious|r\n 2. Playful Vulpin wanders around unable to sit still. |cFFFFFFFF/sit|r\n 3. Playful Vulpin sings all alone. |cFFFFFFFF/sing|r\n 4. Playful Vulpin dances with joy. |cFFFFFFFF/dance|r\n 5. Playful Vulpin sits down lonely and sad. |cFFFFFFFF/pet|r\n\nIt only counts if the Playful Vulpin reacts to your emote and runs away.",
 						["questID"] = 61086,
 						["coords"] = {
 							{ 32.0, 43.2, 1565 },
