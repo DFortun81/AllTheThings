@@ -2987,6 +2987,8 @@ _.HiddenQuestTriggers =
 		q(62710),	-- Triggered after choosing Night Fae covenant
 		q(62023),	-- Triggered after choosing Kyrian covenant
 		q(62708),	-- Triggered after choosing Kyrian covenant
+		q(62020),	-- Triggered after choosing Venthyr covenant
+		q(62709),	-- Triggered after choosing Venthyr covenant
 
 		-- Revendreth
 		q(60523),	-- Triggered after reading Theotar's Diary
@@ -3017,12 +3019,19 @@ _.HiddenQuestTriggers =
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
 		q(61170),	-- triggered when unlocking the Harmonic Chest (looting it has a separate ID, in Achievements file)
+		q(62943),	-- Triggered when looting Crafter's Basket for the Enchanting: Boundless Basket WQ
 		
 		-- Ardenweald Covenant (Night Fae)
 		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
 		q(57559),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(62706),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
+		q(63070),	-- Triggered after completing first Adventure tutorial mission
+		q(63359),	-- Triggered after completing first Adventure tutorial mission
+		q(63071),	-- Triggered after completing last Adventure tutorial mission
+		q(63363),	-- Triggered after completing last Adventure tutorial mission
+		q(60634),	-- Triggered after completing last Adventure tutorial mission
+		q(63367),	-- Triggered after completing last Adventure tutorial mission
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

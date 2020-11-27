@@ -22,11 +22,17 @@ _.Zones =
 				q(60649, {	-- A Thorn In Their Side
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						i(175713),	-- Sprigthistle Loop
-					},
+				}),
+				q(61948, {	-- Airborne Defense Force
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
 				}),
 				q(61949, {	-- Ardenweald's Tricksters
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61440, {	-- Enchanting: Boundless Basket
+					["requireSkill"] = ENCHANTING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -121,6 +127,8 @@ _.Zones =
 				}),
 				i(181430),	-- Evernight Drape
 				i(181407),	-- Runetender Mitts
+				i(181417),	-- Runetender Pants
+				i(175713),	-- Sprigthistle Loop
 				i(175740),	-- Valeshroud Torque
 			}),
 		}),
