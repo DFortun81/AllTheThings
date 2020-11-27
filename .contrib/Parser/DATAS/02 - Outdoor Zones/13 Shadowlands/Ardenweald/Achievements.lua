@@ -12,7 +12,10 @@ _.Zones =
 						["sourceQuests"] = { 57787 },	-- Keep to the Path
 					}),
 					crit(2, {	-- Aiding Tirna Vaal
-						["sourceQuests"] = { 57951 },	-- Souls Come Home
+						["sourceQuests"] = {
+							60594,	-- One Special Spirit
+							57951,	-- Souls Come Home
+						},
 					}),
 					crit(3, {	-- Waning Grove
 						["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
@@ -81,11 +84,12 @@ _.Zones =
 						},
 					}),
 					crit(3, {	-- Veilwing Egg
+						["description"] = "The path to get up to the treasure starts at 50.6, 38.8.",
 						["objectID"] = 354646,	-- Ancient Cloudfeather Egg
-						["coord"] = { 52.9, 37.2, 1565 },
 						["questID"] = 61065,
+						["coord"] = { 52.9, 37.2, 1565 },
 						["g"] = {
-							i(180642),	-- Downfeather Ragewing
+							i(180642),	-- Cloudfeather Fledgling (PET!)
 						},
 					}),
 					crit(4, {	-- Swollen Anima Seed

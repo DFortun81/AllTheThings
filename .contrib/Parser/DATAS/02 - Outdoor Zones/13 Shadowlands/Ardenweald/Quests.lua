@@ -7,35 +7,159 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1565, {	-- Ardenweald
 			n(QUESTS, {
+				q(60519, {	-- Audience with the Winter Queen
+					["sourceQuests"] = { 60724 },	-- Heartless
+					["provider"] = { "n", 158487 },	-- Droman Tashmur
+					["coord"] = { 63.4, 36.0, 1565 },
+				}),
+				q(60575, {	-- Belly Full of Fae
+					["sourceQuests"] = {
+						60567,	-- Shooing Wildlife
+						60563,	-- Tending to Wildseeds
+					},
+					["provider"] = { "n", 169202 },	-- Dreamweaver
+					["coord"] = { 61.4, 40.9, 1565 },
+					["g"] = {
+						i(175672),	-- Spirit Tender's Cord
+						i(175674),	-- Starshroud Belt
+						i(175673),	-- Dreamthorn Chain
+						i(175671),	-- Grove Warden's Girdle
+					},
+				}),
+				q(60521, {	-- Call of the Hunt
+					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
+					["provider"] = { "n", 169031 },	-- Lady Moonberry
+					["coord"] = { 63.5, 36.2, 1565 },
+				}),
 				q(57816, {	-- Dreamweaver
 					["sourceQuests"] = { 57787 },	-- Keep to the Path
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
 					["coord"] = { 63.4, 36.2, 1565 },
+				}),
+				q(60629, {	-- Extreme Recycling
+					["sourceQuests"] = { 60521 },	-- Call of the Hunt
+					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
+					["coord"] = { 51.3, 34.0, 1565 },
 				}),
 				q(60341, {	-- First on the Agenda
 					["sourceQuests"] = { 60763 },	-- I Moustache You to Lend a Hand
 					["provider"] = { "n", 157788 },	-- Lady Moonberry
 					["coord"] = { 65.0, 19.5, 1565 },
 				}),
+				q(58161, {	-- Forest Disappearances
+					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
+					["provider"] = { "n", 160440 },	-- Brigdin
+					["coord"] = { 64.4, 35.2, 1565 },
+				}),
+				q(60639, {	-- Heart of the Grove
+					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
+					["provider"] = { "n", 169686 },	-- Niya
+					["coord"] = { 66.9, 26.5, 1565 },
+				}),
+				q(60724, {	-- Heartless
+					["sourceQuests"] = { 60709 },	-- Recovering the Heart
+					["provider"] = { "n", 170012 },	-- Niya
+					["coord"] = { 65.3, 26.6, 1565 },
+					["g"] = {
+						i(175648),	-- Spirit Tender's Robe
+						i(175651),	-- Starshroud Vest
+						i(175650),	-- Dreamthorn Chainmail
+						i(175649),	-- Grove Warden's Breastplate
+					},
+				}),
+				q(60577, {	-- Hungry for Animacones
+					["sourceQuests"] = {
+						60567,	-- Shooing Wildlife
+						60563,	-- Tending to Wildseeds
+					},
+					["provider"] = { "n", 169202 },	-- Dreamweaver
+					["coord"] = { 61.4, 40.9, 1565 },
+				}),
 				q(60763, {	-- I Moustache You to Lend a Hand
 					["sourceQuests"] = { 60338 },	-- Journey to Ardenweald
 					["provider"] = { "n", 168341 },	-- Lady Moonberry
 					["coord"] = { 68.2, 18.3, 1565 },
+				}),
+				q(57952, {	-- In Need of Gorm Gris
+					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
+					["provider"] = { "n", 158921 },	-- Guardian Kota
+					["coord"] = { 62.6, 36.0, 1565 },
 				}),
 				q(57787, {	-- Keep to the Path
 					["sourceQuests"] = { 60859 },	-- Souls of the Forest
 					["provider"] = { "n", 170533 },	-- Featherlight
 					["coord"] = { 65.6, 27.9, 1565 },
 				}),
+				q(57950, {	-- Mizik the Haughty
+					["sourceQuests"] = {
+						57948,	-- Nothing Left to Give
+						57949,	-- They Need to Calm Down
+					},
+					["provider"] = { "n", 159639 },	-- Choofa
+				}),
 				q(57948, {	-- Nothing Left to Give
 					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
 					["provider"] = { "n", 159638 },	-- Choofa
 					["coord"] = { 67.1, 32.1, 1565 },
 				}),
+				q(60594, {	-- One Special Spirit
+					["sourceQuests"] = {
+						60575,	-- Belly Full of Fae
+						60577,	-- Hungry for Animacones
+					},
+					["provider"] = { "n", 169217 },	-- Dreamweaver
+					["coord"] = { 62.1, 36.4, 1565 },
+				}),
+				q(60600, {	-- Preparing for the Winter Queen
+					["sourceQuests"] = {
+						60594,	-- One Special Spirit
+						57951,	-- Souls Come Home
+					},
+					["provider"] = { "n", 169031 },	-- Lady Moonberry
+					["coord"] = { 63.5, 36.2, 1565 },
+				}),
+				q(60647, {	-- Recovering the Animacones
+					["sourceQuests"] = {
+						60639,	-- Heart of the Grove
+						60638,	-- Recovering Wildseeds
+						60637,	-- The End of Former Friends
+					},
+					["providers"] = {
+						{ "n", 169748 },	-- Niya (pre-pickup)
+						{ "n", 169868 },	-- Niya	(post-pickup)
+					},
+					["coord"] = { 68.4, 24.5, 1565 },
+				}),
+				q(60709, {	-- Recovering the Heart
+					["sourceQuests"] = { 60671 },	-- The Sacrifices We Must Make
+					["provider"] = { "n", 169956 },	-- Warden Casad
+					["coord"] = { 66.2, 23.8, 1565 },
+				}),
+				q(60638, {	-- Recovering Wildseeds
+					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
+					["provider"] = { "n", 169686 },	-- Niya
+					["coord"] = { 66.9, 26.5, 1565 },
+				}),
+				q(60624, {	-- Ride to Heartwood Grove
+					["sourceQuests"] = { 60600 },	-- Preparing for the Winter Queen
+					["provider"] = { "n", 158487 },	-- Droman Tashmur
+					["coord"] = { 63.5, 36.2, 1565 },
+				}),
 				q(60567, {	-- Shooing Wildlife
 					["sourceQuests"] = { 57816 },	-- Dreamweaver
 					["provider"] = { "n", 169116 },	-- Dreamweaver
 					["coord"] = { 64.2, 41.2, 1565 },
+				}),
+				q(57951, {	-- Souls Come Home
+					["sourceQuests"] = { 57950 },	-- Mizik the Haughty
+					["provider"] = { "n", 159639 },	-- Choofa
+					["coord"] = { 67.1, 32.1, 1565 },
+					["g"] = {
+						i(175658),	-- Spirit Tender's Handwraps
+						i(175656),	-- Starshroud Gloves
+						i(175659),	-- Dreamthorn Handguards
+						i(175657),	-- Grove Warden's Gauntlets
+					},
 				}),
 				q(60859, {	-- Souls of the Forest
 					["sourceQuests"] = { 60857 },	-- We Can't Save Them All
@@ -53,15 +177,49 @@ _.Zones =
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
 					["coord"] = { 63.4, 36.2, 1565 },
 				}),
+				q(60648, {	-- Survivors of Heartwood Grove
+					["sourceQuests"] = {
+						60639,	-- Heart of the Grove
+						60638,	-- Recovering Wildseeds
+						60637,	-- The End of Former Friends
+					},
+					["providers"] = {
+						{ "n", 169748 },	-- Niya (pre-pickup)
+						{ "n", 169868 },	-- Niya	(post-pickup)
+					},
+					["coord"] = { 68.4, 24.5, 1565 },
+				}),
 				q(60563, {	-- Tending to Wildseeds
 					["sourceQuests"] = { 57816 },	-- Dreamweaver
 					["provider"] = { "n", 169116 },	-- Dreamweaver
 					["coord"] = { 64.2, 41.2, 1565 },
 				}),
+				q(60637, {	-- The End of Former Friends
+					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
+					["provider"] = { "n", 169686 },	-- Niya
+					["coord"] = { 66.9, 26.5, 1565 },
+				}),
+				q(60628, {	-- The Missing Hunters
+					["sourceQuests"] = { 60521 },	-- Call of the Hunt
+					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
+					["coord"] = { 51.3, 34.0, 1565 },
+				}),
+				q(60671, {	-- The Sacrifices We Must Make
+					["sourceQuests"] = {
+						60647,	-- Recovering the Animacones
+						60648,	-- Survivors of Heartwood Grove
+					},
+					["provider"] = { "n", 169686 },	-- Niya
+				}),
 				q(57949, {	-- They Need to Calm Down
 					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
 					["provider"] = { "n", 159638 },	-- Choofa
 					["coord"] = { 97.1, 32.1, 1565 },
+				}),
+				q(57651, {	-- Trouble in the Banks
+					["sourceQuests"] = { 60521 },	-- Call of the Hunt
+					["provider"] = { "n", 158345 },	-- Lady of the Falls
+					["coord"] = { 51.1, 33.8, 1565 },
 				}),
 				q(60857, {	-- We Can't Save Them All
 					["sourceQuests"] = { 60778 },	-- Wildseed Rescue
@@ -87,134 +245,7 @@ _.Zones =
 						},
 					}),
 				}),
-				-- Tranquil Pools
-				q(60575, {	-- Belly Full of Fae
-					["provider"] = { "n", 169202 },	-- Dreamweaver
-					["coord"] = { 61.4, 40.9, 1565 },
-					["sourceQuests"] = {
-						60567,	-- Shooing Wildlife
-						60563,	-- Tending to Wildseeds
-					},
-					["g"] = {
-						i(175672),	-- Spirit Tender's Cord
-						i(175674),	-- Starshroud Belt
-						i(175673),	-- Dreamthorn Chain
-						i(175671),	-- Grove Warden's Girdle
-					},
-				}),
-				q(60577, {	-- Hungry for Animacones
-					["provider"] = { "n", 169202 },	-- Dreamweaver
-					["coord"] = { 61.4, 40.9, 1565 },
-					["sourceQuests"] = {
-						60567,	-- Shooing Wildlife
-						60563,	-- Tending to Wildseeds
-					},
-				}),
-				q(60594, {	-- One Special Spirit
-					["provider"] = { "n", 169217 },	-- Dreamweaver
-					["coord"] = { 62.1, 36.4, 1565 },
-					["sourceQuests"] = {
-						60575,	-- Belly Full of Fae
-						60577,	-- Hungry for Animacones
-					},
-				}),
-				-- Spirit Glen
-				q(57950, {	-- Mizik the Haughty
-					["provider"] = { "n", 159639 },	-- Choofa
-					["sourceQuests"] = {
-						57948,	-- Nothing Left to Give
-						57949,	-- They Need to Calm Down
-					},
-				}),
-				q(57951, {	-- Souls Come Home
-					["provider"] = { "n", 159639 },	-- Choofa
-					["coord"] = { 67.1, 32.1, 1565 },
-					["sourceQuests"] = { 57950 },	-- Mizik the Haughty
-					["g"] = {
-						i(175658),	-- Spirit Tender's Handwraps
-						i(175656),	-- Starshroud Gloves
-						i(175659),	-- Dreamthorn Handguards
-						i(175657),	-- Grove Warden's Gauntlets
-					},
-				}),
-				-- Waning Grove
-				q(60600, {	-- Preparing for the Winter Queen
-					["provider"] = { "n", 169031 },	-- Lady Moonberry
-					["coord"] = { 63.5, 36.2, 1565 },
-					["sourceQuests"] = { 57951 },	-- Souls Come Home
-				}),
-				q(60624, {	-- Ride to Heartwood Grove
-					["provider"] = { "n", 158487 },	-- Droman Tashmur
-					["coord"] = { 63.5, 36.2, 1565 },
-					["sourceQuests"] = { 60600 },	-- Preparing for the Winter Queen
-				}),
-				q(60637, {	-- The End of Former Friends
-					["provider"] = { "n", 169686 },	-- Niya
-					["coord"] = { 66.9, 26.5, 1565 },
-					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
-				}),
-				q(60638, {	-- Recovering Wildseeds
-					["provider"] = { "n", 169686 },	-- Niya
-					["coord"] = { 66.9, 26.5, 1565 },
-					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
-				}),
-				q(60639, {	-- Heart of the Grove
-					["provider"] = { "n", 169686 },	-- Niya
-					["coord"] = { 66.9, 26.5, 1565 },
-					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
-				}),
-				q(60647, {	-- Recovering the Animacones
-					["provider"] = { "n", 169868 },	-- Niya
-					["coord"] = { 68.4, 24.5, 1565 },
-					["sourceQuests"] = {
-						60637,	-- The End of Former Friends
-						60638,	-- Recovering Wildseeds
-						60639,	-- Heart of the Grove
-					},
-				}),
-				q(60648, {	-- Survivors of Heartwood Grove
-					["provider"] = { "n", 169868 },	-- Niya
-					["coord"] = { 68.4, 24.5, 1565 },
-					["sourceQuests"] = {
-						60637,	-- The End of Former Friends
-						60638,	-- Recovering Wildseeds
-						60639,	-- Heart of the Grove
-					},
-				}),
-				q(60671, {	-- The Sacrifices We Must Make
-					["provider"] = { "n", 169686 },	-- Niya
-					["sourceQuests"] = {
-						60647,	-- Recovering the Animacones
-						60648,	-- Survivors of Heartwood Grove
-					},
-				}),
-				q(60709, {	-- Recovering the Heart
-					["provider"] = { "n", 169956 },	-- Warden Casad
-					["coord"] = { 66.2, 23.8, 1565 },
-					["sourceQuests"] = { 60671 },	-- The Sacrifices We Must Make
-				}),
-				q(60724, {	-- Heartless
-					["provider"] = { "n", 170012 },	-- Niya
-					["coord"] = { 65.3, 26.6, 1565 },
-					["sourceQuests"] = { 60709 },	-- Recovering the Heart
-					["g"] = {
-						i(175648),	-- Spirit Tender's Robe
-						i(175651),	-- Starshroud Vest
-						i(175650),	-- Dreamthorn Chainmail
-						i(175649),	-- Grove Warden's Breastplate
-					},
-				}),
-				q(60519, {	-- Audience with the Winter Queen
-					["provider"] = { "n", 158487 },	-- Droman Tashmur
-					["coord"] = { 63.4, 36.0, 1565 },
-					["sourceQuests"] = { 60724 },	-- Heartless
-				}),
 				-- When a Gorm Eats a God
-				q(57952, {	-- In Need of Gorm Gris
-					["provider"] = { "n", 158921 },	-- Guardian Kota
-					["coord"] = { 62.6, 36.0, 1565 },
-					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
-				}),
 				q(57818, {	-- Nothing Goes to Waste
 					["provider"] = { "n", 158969 },	-- Master Sha'lor
 					["coord"] = { 64.8, 38.9, 1565 },
@@ -279,21 +310,6 @@ _.Zones =
 					["sourceQuests"] = { 58026 },	-- When a Gorm Eats a God
 				}),
 				-- Glitterfall Heights
-				q(60521, {	-- Call of the Hunt
-					["provider"] = { "n", 169031 },	-- Lady Moonberry
-					["coord"] = { 63.5, 36.2, 1565 },
-					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
-				}),
-				q(60628, {	-- The Missing Hunters
-					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
-					["coord"] = { 51.3, 34.0, 1565 },
-					["sourceQuests"] = { 60521 },	-- Call of the Hunt
-				}),
-				q(60629, {	-- Extreme Recycling
-					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
-					["coord"] = { 51.3, 34.0, 1565 },
-					["sourceQuests"] = { 60521 },	-- Call of the Hunt
-				}),
 				q(60630, {	-- Totem Eclipse
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
 					["coord"] = { 51.3, 34.0, 1565 },
@@ -1012,11 +1028,6 @@ _.Zones =
 					},
 				}),
 				-- Trouble at the Gormling Corral
-				q(57651, {	-- Trouble in the Banks
-					["provider"] = { "n", 158345 },	-- Lady of the Falls
-					["coord"] = { 51.1, 33.8, 1565 },
-					["sourceQuests"] = { 60522 },	-- Return to Tirna Vaal
-				}),
 				q(59621, {	-- Breaking A Few Eggs
 					["provider"] = { "n", 158422 },	-- Foreman Thorodir
 					["coord"] = { 46.6, 29.4, 1565 },
@@ -1113,11 +1124,6 @@ _.Zones =
 					},
 				}),
 				-- An Ominous Stone
-				q(58161, {	-- Forest Disappearances
-					["provider"] = { "n", 160440 },	-- Brigdin
-					["coord"] = { 64.4, 35.2, 1565 },
-					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
-				}),
 				q(58164, {	-- Cult of Personality
 					["provider"] = { "n", 160439 },	-- Partik
 					["coord"] = { 70.3, 32.5, 1565 },
