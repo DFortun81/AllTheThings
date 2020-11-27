@@ -615,6 +615,16 @@ _.Zones =
 					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
 					["coord"] = { 39.7, 55.7, 1701 },
 				}),
+				q(62892, {	-- Recover the Lost
+					["sourceQuests"] = { 62891 },	-- Into the Reservoir
+					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+					["coord"] = { 39.7, 55.7, 1701 },
+				}),
+				q(62893, {	-- Do What We Cannot
+					["sourceQuests"] = { 62892 },	-- Recover the Lost
+					["provider"] = { "n", 158553 },	-- Flutterby
+					["coord"] = { 34.1, 43.6, 1701 },
+				}),
 
 
 				
@@ -819,16 +829,6 @@ _.Zones =
 					["provider"] = { "n", 165702 },	-- Blodwyn
 					["coord"] = { 46.4, 50.6, 1565 },
 					["sourceQuests"] = { 62693 },	-- A Calling in Ardenweald
-				}),
-				q(62892, {	-- Recover the Lost
-					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-					["coord"] = { 40.7, 33.2, 1565 },
-					["sourceQuests"] = { 62891 },	-- Into the Reservoir
-				}),
-				q(62893, {	-- Do What We Cannot
-					["provider"] = { "n", 158553 },	-- Flutterby
-					["coord"] = { 33.9, 43.4, 1565 },
-					["sourceQuests"] = { 62892 },	-- Recover the Lost
 				}),
 				-- The Queen's Conservatory
 				q(62624, {	-- The Queen's Conservatory

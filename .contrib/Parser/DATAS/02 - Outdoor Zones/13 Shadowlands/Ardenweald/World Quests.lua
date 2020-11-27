@@ -22,6 +22,9 @@ _.Zones =
 				q(60649, {	-- A Thorn In Their Side
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
+					["g"] = {
+						i(175713),	-- Sprigthistle Loop
+					},
 				}),
 				q(61949, {	-- Ardenweald's Tricksters
 					["isWorldQuest"] = true,
@@ -44,7 +47,15 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61946, {	-- Natural Defenders
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61411, {	-- Our Heart Will Go On
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(58975, {	-- Pest Removal
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -60,11 +71,19 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(60574, {	-- Shaking 'Shrooms
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60585, {	-- Spriggan Riot
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
 				q(60770, {	-- Squish and Burn
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(58993, {	-- Swarm Defense
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
