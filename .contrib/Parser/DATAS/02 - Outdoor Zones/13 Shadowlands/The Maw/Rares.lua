@@ -67,6 +67,11 @@ _.Zones =
 						i(183410),	-- Sharpclaw
 					},
 				}),
+				n(166398, {	-- Soulforger Rhovus
+					["coord"] = { 35.1, 41.5, 1543 },
+					["questID"] = 60834,
+					["isDaily"] = true,
+				}),
 			}),
 		}),
 	}),

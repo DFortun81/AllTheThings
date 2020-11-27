@@ -625,6 +625,12 @@ _.Zones =
 					["provider"] = { "n", 158553 },	-- Flutterby
 					["coord"] = { 34.1, 43.6, 1701 },
 				}),
+				q(62894, {	-- Flutterback
+					["sourceQuests"] = { 62837 },	-- Hopeful News
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 40.0, 68.4, 1670 },
+					["maps"] = { 1670 },	-- Oribos
+				}),
 
 
 				

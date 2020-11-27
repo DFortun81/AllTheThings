@@ -106,6 +106,14 @@ _.Zones =
 					["provider"] = { "n", 171770 },	-- Ve'nari
 					["coord"] = { 36.5, 50.7, 1648 },
 				}),
+				q(62837, {	-- Hopeful News
+					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
+				q(63155, {	-- Indecipherable Map
+					["provider"] = { "i", 183058 },	-- Indecipherable Map
+				}),
 				q(62654, {	-- Maw Walker
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -131,6 +139,31 @@ _.Zones =
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 170624 },	-- Wilona Thorne
 					["coord"] = { 22.7, 51.9, 1648 },
+				}),
+				q(60287, {	-- Rule 1: Have an Escape Plan
+					["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
+				q(61355, {	-- Rule 2: Keep a Low Profile
+					["sourceQuests"] = { 60287 },	-- Rule 1: Have an Escape Plan
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
+				q(60289, {	-- Rule 3: Trust is Earned
+					["sourceQuests"] = { 61355 },	-- Rule 2: Keep a Low Profile
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
+				q(62882, {	-- Setting the Ground Rules
+					["sourceQuests"] = { 
+						62905,	-- Back into the Darkness (Venthyr)
+						62893,	-- Do What We Cannot (Night Fae)
+						62832,	-- Friends in Dark Places (Kyrian)
+						62843,	-- The Soul Contact (Necrolords)
+					},
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(59915, {	-- Soul in Hand
 					["sourceQuests"] = { 59758 },	-- Speaking to the Dead
@@ -223,83 +256,57 @@ _.Zones =
 						i(175731),	-- Stolen Maw Badge
 					},
 				}),
-				-- TODO: These Quests should be sorted in the zones tab
-				q(60232, {	-- Souls of the Damned (Bastion)
-					["provider"] = { "n", 160212 },	-- Soulguide Daelia
-					["coord"] = { 33.9, 43.5, 1533 },
-					["sourceQuests"] = { 57905 },	-- A Unique Opportunity
-				}),
-				q(60130, {	-- Souls of the Damned (Maldraxxus)
-					["provider"] = { "n", 167748 },	-- Osbourne Black
-					--["coord"] = { 33.9, 43.5, 1536 },
-					["sourceQuests"] = { 61397 },	-- Opportunity Strikes
-				}),
-				q(60234, {	-- Souls of the Damned (Revendreth)
-					["provider"] = { "n", 164738 },	-- Tenaval
-					["coord"] = { 46.6, 28.6, 1525 },
-					["sourceQuests"] = { 59320 },	-- Souls to Save
-				}),
-				q(61508, {	-- Soul Salvation (Bastion)
-					--["provider"] = { "n", 158553 },	-- Flutterby
-					--["coord"] = { 33.9, 43.5, 1533 },
-					["sourceQuests"] = { 60232 },	-- Souls of the Damned (Bastion)
-				}),
-				q(61513, {	-- Soul Salvation (Maldraxxus)
-					--["provider"] = { "n", 158553 },	-- Flutterby
-					--["coord"] = { 33.9, 43.5, 1536 },
-					["sourceQuests"] = { 60130 },	-- Souls of the Damned (Maldraxxus)
-				}),
-				q(61515, {	-- Soul Salvation (Revendreth)
-					["provider"] = { "n", 158553 },	-- Tenaval
-					["coord"] = { 33.9, 43.5, 1525 },
-					["sourceQuests"] = { 60234 },	-- Souls of the Damned (Revendreth)
-				}),
-				q(61496, {	-- A Familiar Energy
-					["provider"] = { "n", 172543 },	-- Rescued Soul
-					["coords"] = {
-						{ 33.8, 42.5, 1565 },	-- Ardenweald
-						--{ 33.8, 42.5, 1533 },	-- Bastion
-						--{ 33.8, 42.5, 1536 },	-- Maldraxxus
-						--{ 33.8, 42.5, 1525 },	-- Revendreth
-					},
-					["sourceQuests"] = {
-						61508,	-- Soul Salvation (Ardenweald)
-						61508,	-- Soul Salvation (Bastion)
-						61513,	-- Soul Salvation (Maldraxxus)
-						61515,	-- Soul Salvation (Revendreth)
-					},
-				}),
-				q(62882, {	-- Setting the Ground Rules
-					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
-					["sourceQuests"] = { 61496 },	-- A Familiar Energy
-				}),
-				q(60234, {	-- Rule 1: Have an Escape Plan
-					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
-					["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
-				}),
-				q(61391, {	-- The Eye of the Jailer
-					["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
-				}),
-				q(61355, {	-- Rule 2: Keep a Low Profile
-					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
-					["sourceQuests"] = {
-						60234,	-- Rule 1: Have an Escape Plan
-						61391,	-- The Eye of the Jailer
-					},
-				}),
-				q(60289, {	-- Rule 3: Trust is Earned
-					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
-					["sourceQuests"] = { 61355 },	-- Rule 2: Keep a Low Profile
-				}),
-				q(62837, {	-- Hopeful News
-					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
-					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
-				}),
+				
+				
+				-- Do not think these made it into the release version of the game
+				-- q(60232, {	-- Souls of the Damned (Bastion)
+					-- ["provider"] = { "n", 160212 },	-- Soulguide Daelia
+					-- ["coord"] = { 33.9, 43.5, 1533 },
+					-- ["sourceQuests"] = { 57905 },	-- A Unique Opportunity
+				-- }),
+				-- q(60130, {	-- Souls of the Damned (Maldraxxus)
+					-- ["provider"] = { "n", 167748 },	-- Osbourne Black
+					-- --["coord"] = { 33.9, 43.5, 1536 },
+					-- ["sourceQuests"] = { 61397 },	-- Opportunity Strikes
+				-- }),
+				-- q(60234, {	-- Souls of the Damned (Revendreth)
+					-- ["provider"] = { "n", 164738 },	-- Tenaval
+					-- ["coord"] = { 46.6, 28.6, 1525 },
+					-- ["sourceQuests"] = { 59320 },	-- Souls to Save
+				-- }),
+				-- q(61508, {	-- Soul Salvation (Bastion)
+					-- --["provider"] = { "n", 158553 },	-- Flutterby
+					-- --["coord"] = { 33.9, 43.5, 1533 },
+					-- ["sourceQuests"] = { 60232 },	-- Souls of the Damned (Bastion)
+				-- }),
+				-- q(61513, {	-- Soul Salvation (Maldraxxus)
+					-- --["provider"] = { "n", 158553 },	-- Flutterby
+					-- --["coord"] = { 33.9, 43.5, 1536 },
+					-- ["sourceQuests"] = { 60130 },	-- Souls of the Damned (Maldraxxus)
+				-- }),
+				-- q(61515, {	-- Soul Salvation (Revendreth)
+					-- ["provider"] = { "n", 158553 },	-- Tenaval
+					-- ["coord"] = { 33.9, 43.5, 1525 },
+					-- ["sourceQuests"] = { 60234 },	-- Souls of the Damned (Revendreth)
+				-- }),
+				-- q(61496, {	-- A Familiar Energy
+					-- ["provider"] = { "n", 172543 },	-- Rescued Soul
+					-- ["coords"] = {
+						-- { 33.8, 42.5, 1565 },	-- Ardenweald
+						-- --{ 33.8, 42.5, 1533 },	-- Bastion
+						-- --{ 33.8, 42.5, 1536 },	-- Maldraxxus
+						-- --{ 33.8, 42.5, 1525 },	-- Revendreth
+					-- },
+					-- ["sourceQuests"] = {
+						-- 61508,	-- Soul Salvation (Ardenweald)
+						-- 61508,	-- Soul Salvation (Bastion)
+						-- 61513,	-- Soul Salvation (Maldraxxus)
+						-- 61515,	-- Soul Salvation (Revendreth)
+					-- },
+				-- }),
+				-- q(61391, {	-- The Eye of the Jailer
+					-- ["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
+				-- }),
 				q(62838, {	-- Soulful Recovery
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
