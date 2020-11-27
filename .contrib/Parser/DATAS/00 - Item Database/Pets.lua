@@ -995,8 +995,6 @@ pet(181173, 2949);	-- Skittering Venomspitter
 pet(181271, 2961);	-- Sludge Feeler
 pet(183623, 3044);	-- Spinemaw Larva
 pet(180872, 2942);	-- Spirited Skyfoal
-pet(180637, 2914);	-- Starry Dreamfoal
-pet(182664, 3019);	-- Stemmins
 pet(184509, 3067);	-- Spriggan Trickster
 pet(180637, 2914);	-- Starry Dreamfoal
 pet(182664, 3019);	-- Stemmins

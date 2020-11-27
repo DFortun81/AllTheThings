@@ -140,7 +140,7 @@ _.Zones =
 						i(184753),	-- Tree-Scaler's Britches
 					},
 				}),
-				n(174766, {	-- Cortinarius
+				n(174766, {	-- Cortinarius <Marasmius Quartermaster>
 					["coords"] = {
 						{ 33.2, 36.4, 1565 },
 						{ 29.6, 34.8, 1565 },
@@ -733,35 +733,62 @@ _.Zones =
 						}),]]
 					}),
 				}),
-				n(162447, {	-- Spindlenose <Assistant Craftsmaster>
-					["coord"] = { 60.8, 54.2, 1565 },
+				n(162447, {	-- Spindlenose <Court of Night Quartermaster>
+					["coord"] = { 59.6, 52.9, 1565 },
 					["g"] = {
-						i(181308, {	-- Winterwoven Bulb
-							["cost"] = { { "c", 1813, 2500 } },
+						i(183053, {	-- Umbral Scythehorn (MOUNT)
+							["cost"] = { 
+								{ "c", 1813, 5000 },
+								{ "c", 1885, 5 },
+							},
 						}),
-						i(181312, {	-- Winterwoven Pack
-							["cost"] = { { "c", 1813, 2500 } },
-						}),
-						i(180415, {	-- Winterborn Runestag
-							["cost"] = { { "c", 1813, 5000 } },
-						}),
-						i(183053, {	-- Umbral Scythehorn
-							["cost"] = { { "c", 1813, 5000 } },
-						}),
-						i(180636, {	-- Willowbreeze
-							["cost"] = { { "i", 163036, 250 } },
-						}),
-						i(182174, {	-- Leonine Soul
-							["cost"] = { { "c", 1813, 1500 } },
-						}),
-						i(182182, {	-- Lupine Soul
-							["cost"] = { { "c", 1813, 1500 } },
+						i(180415, {	-- Winterborn Runestag (MOUNT)
+							["cost"] = { 
+								{ "c", 1813, 5000 },
+								{ "c", 1885, 5 },
+							},
 						}),
 						i(182664, {	-- Stemmins
-							["cost"] = { { "i", 163036, 250 } },
+							["cost"] = { 
+								{ "i", 163036, 250 },
+								{ "c", 1885, 5 },
+							},
+						}),
+						i(180636, {	-- Willowbreeze
+							["cost"] = { 
+								{ "i", 163036, 250 },
+								{ "c", 1885, 5 },
+							},
+						}),
+						i(182174, {	-- Leonine Soul
+							["cost"] = { 
+								{ "c", 1813, 1500 },
+								{ "c", 1885, 5 },
+							},
+						}),
+						i(182182, {	-- Lupine Soul
+							["cost"] = { 
+								{ "c", 1813, 1500 },
+								{ "c", 1885, 5 },
+							},
+						}),
+						i(181308, {	-- Winterwoven Bulb
+							["cost"] = { 
+								{ "c", 1813, 3500 },
+								{ "c", 1885, 5 },
+							},
+						}),
+						i(181312, {	-- Winterwoven Pack
+							["cost"] = { 
+								{ "c", 1813, 3500 },
+								{ "c", 1885, 5 },
+							},
 						}),
 						i(184117, {	-- Ensemble: Winterborn Warbark
-							["cost"] = { { "c", 1813, 10000 } },
+							["cost"] = { 
+								{ "c", 1813, 25000 },
+								{ "c", 1885, 5 },
+							},
 						}),
 					},
 				}),

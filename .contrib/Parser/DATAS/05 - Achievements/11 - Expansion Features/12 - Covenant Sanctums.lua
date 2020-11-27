@@ -31,6 +31,7 @@ _.Achievements =
 			}),
 			ach(14789),	-- All Spirits Great and Small
 			ach(14839),	-- Bound to Adventure
+			ach(14834),	-- Bound with Purpose
 			ach(14627),	-- Choosing your Purpose
 			ach(14631, {	-- Champion of the Covenant
 				ach(14628),	-- The Road to Renown
@@ -42,18 +43,15 @@ _.Achievements =
 			ach(14676),	-- Divine Spirit Savior
 			ach(14633),	-- Master Navigator
 			ach(14780),	-- Meditation Master
-			ach(14775),	-- Mush Appreciated
+			ach(14775, {	-- Mush Appreciated
+				title(689),	-- Fun Guy / Fun Gal
+			}),
 			ach(14837),	-- Nexus of Bonds
 			ach(14502),	-- Pursuing Loyalty
 			ach(14749),	-- Rendle's Big Day
 			ach(14777),	-- Restoration Expert
 			ach(14675),	-- Spirit Talker
-			ach(14677, {	-- Spiritual Observations
-				crit(1),	-- A Spirit's Pride
-				crit(2),	-- A Spirit's Duty
-				crit(3),	-- A Spirit's Heart
-				crit(4),	-- A Spirit's Might
-			}),
+			ach(14677),	-- Spiritual Observations
 			ach(14670),	-- That's the Spirit
 			ach(14638),	-- The Anima Must Flow
 			ach(14764),	-- The Great Luckydo

@@ -545,6 +545,8 @@ _.Zones =
 				
 				-- Start of the Covenant Quests (keeping these down here for now in case we want to put them under a different header)
 				-- currently in order of the quest sequence, will alphabetize after verifying all
+				
+				-- Chapter 1: For Queen and Grove!
 				q(61479, {	-- The Boon of Shapes
 					["sourceQuests"] = { 61475 },	-- The Heart of the Forest
 					["provider"] = { "n", 172431 },	-- Lady Moonberry
@@ -595,8 +597,28 @@ _.Zones =
 					["provider"] = { "n", 176096 },	-- Laurel
 					["coord"] = { 34.3, 36.8, 1701 },
 				}),
+				q(62693, {	-- A Calling in Ardenweald
+					["sourceQuests"] = { 62697 },	-- A Call to Service
+					["provider"] = { "n", 165702 },	-- Blodwyn
+					["coord"] = { 53.8, 6.2, 1701 },
+					["g"] = {
+						i(181475),	-- Bounty of the Grove Wardens
+					},
+				}),
+				q(62890, {	-- Who Shapes the Forest
+					["sourceQuests"] = { 62697 },	-- A Call to Service
+					["provider"] = { "n", 165702 },	-- Blodwyn
+					["coord"] = { 53.8, 6.2, 1701 },
+				}),
+				q(62891, {	-- Into the Reservoir
+					["sourceQuests"] = { 62890 },	-- Who Shapes the Forest
+					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+					["coord"] = { 39.7, 55.7, 1701 },
+				}),
+
+
 				
-				
+				------------------------------
 				-- Everything past here has not been verified yet in retail
 				q(61541, {	-- The Forge of Bonds
 					["provider"] = { "n", 172431 },	-- Lady Moonberry
@@ -793,23 +815,10 @@ _.Zones =
 						}),
 					},
 				}),
-				q(62693, {	-- A Calling in Ardenweald
-					["provider"] = { "n", 165702 },	-- Blodwyn
-					["coord"] = { 46.4, 50.6, 1565 },
-					["sourceQuests"] = { 62884 },	-- Who Shapes the Forest
-					["g"] = {
-						i(181475),	-- Tribute of the Grove Wardens
-					},
-				}),
 				q(62890, {	-- The Life-blood of the Forest
 					["provider"] = { "n", 165702 },	-- Blodwyn
 					["coord"] = { 46.4, 50.6, 1565 },
 					["sourceQuests"] = { 62693 },	-- A Calling in Ardenweald
-				}),
-				q(62891, {	-- Into the Reservoir
-					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-					["coord"] = { 40.7, 33.2, 1565 },
-					["sourceQuests"] = { 62890 },	-- The Life-blood of the Forest
 				}),
 				q(62892, {	-- Recover the Lost
 					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
