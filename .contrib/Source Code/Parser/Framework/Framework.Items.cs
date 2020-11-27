@@ -408,6 +408,10 @@ namespace ATT
                             if (field.StartsWith("_"))
                                 break;
 
+                            // ignore the 'hash' field which is generated during recipe automation and is dynamic in-game anyway
+                            if (field == "hash")
+                                break;
+
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;
                             WARNED_FIELDS[field] = true;
