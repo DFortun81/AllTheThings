@@ -27,6 +27,7 @@ _.Zones =
 						i(183098),	-- Technique: Codex of the Still Mind
 						i(183103, {	-- Technique: Contract: The Ascended
 							["cost"] = 17650000, -- 1,765g
+							["recipeID"] = 311409,
 						}),
 						i(183243, {	-- Memory of the Arbiter's Judgment
 							["cost"] = 11000000, -- 1,100g

@@ -131,6 +131,7 @@ _.Zones =
 						}),
 						i(183104, {	-- Technique: Contract: The Undying Army
 							["cost"] = 17650000, -- 1,765g
+							["recipeID"] = 311411,
 						}),
 						i(183112, {	-- Animated Radius
 							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
