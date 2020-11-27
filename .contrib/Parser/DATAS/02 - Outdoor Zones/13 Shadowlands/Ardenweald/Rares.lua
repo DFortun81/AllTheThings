@@ -47,11 +47,14 @@ _.Zones =
 					},
 				}),
 				n(167851, {	-- Egg-Tender Leh'go
-					["coord"] = { 58.0, 29.4, 1565 },
-					--["questID"] = ,
+					["questID"] = 60266,
 					["isDaily"] = true,
+					["coord"] = { 58.0, 29.4, 1565 },
 					["g"] = {
-						ach(14309, crit(13)),	-- Adventurer of Ardenweald / Egg-Tender Leh'go
+						crit(13, {	-- Egg-Tender Leh'go
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
+						i(179539),	-- Kelox's Eggbeater
 					},
 				}),
 				n(171688, {	-- Faeflayer

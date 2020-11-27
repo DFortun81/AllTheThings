@@ -249,6 +249,7 @@ i(173789);	-- Cross Bun
 i(6351);	-- Dented Crate
 i(173788);	-- Dusty Bun
 i(2460);	-- Elixir of Tongues
+i(183718);	-- Extra Gooey Gorm Gunk (move out of Uncollectable if this is used for anything)
 i(173786);	-- Ghostly Pale Ale
 i(151754);	-- Gold Plated Cage Head Key
 i(13874);	-- Heavy Crate

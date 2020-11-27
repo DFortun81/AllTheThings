@@ -54,6 +54,11 @@ _.Zones =
 					["provider"] = { "n", 160749 },	-- Primrose
 					["coord"] = { 53.4, 58.7, 1565 },
 				}),
+				q(58024, {	-- Burrows Away
+					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
+					["provider"] = { "n", 171195 },	-- Gorm Burrow
+					["coord"] = { 62.1, 29.9, 1565 },
+				}),
 				q(60521, {	-- Call of the Hunt
 					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
 					["provider"] = { "n", 169031 },	-- Lady Moonberry
@@ -63,6 +68,19 @@ _.Zones =
 					["sourceQuests"] = { 60572 },	-- For the Sake of Spirit
 					["provider"] = { "n", 160962 },	-- Dreamweaver
 					["coord"] = { 60.0, 52.9, 1565 },
+				}),
+				q(57824, {	-- Collection Day
+					["sourceQuests"] = { 57818 },	-- Nothing Goes to Waste
+					["provider"] = { "n", 158969 },	-- Master Sha'lor
+					["coord"] = { 64.8, 38.9, 1565 },
+				}),
+				q(57825, {	-- Delivery for Guardian Kota
+					["sourceQuests"] = { 57824 },	-- Collection Day
+					["provider"] = { "n", 158969 },	-- Master Sha'lor
+					["coord"] = { 64.8, 38.9, 1565 },
+					["g"] = {
+						i(175741),	-- Gormgris Gorget
+					},
 				}),
 				q(58591, {	-- Despoilers
 					["sourceQuests"] = { 58524 },	-- Sparkles Rain from Above
@@ -108,6 +126,11 @@ _.Zones =
 					["sourceQuests"] = { 60521 },	-- Call of the Hunt
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
 					["coord"] = { 51.3, 34.0, 1565 },
+				}),
+				q(58022, {	-- Finish What He Started
+					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
+					["provider"] = { "n", 171099 },	-- Guardian Kota
+					["coord"] = { 62,8, 32.1, 1565 },
 				}),
 				q(60341, {	-- First on the Agenda
 					["sourceQuests"] = { 60763 },	-- I Moustache You to Lend a Hand
@@ -222,10 +245,20 @@ _.Zones =
 					["provider"] = { "n", 169142 },	-- Dreamweaver
 					["coord"] = { 65.2, 36.6, 1565 },
 				}),
+				q(57818, {	-- Nothing Goes to Waste
+					["sourceQuests"] = { 57952 },	-- In Need of Gorm Gris
+					["provider"] = { "n", 158969 },	-- Master Sha'lor
+					["coord"] = { 64.8, 38.9, 1565 },
+				}),
 				q(57948, {	-- Nothing Left to Give
 					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
 					["provider"] = { "n", 159638 },	-- Choofa
 					["coord"] = { 67.1, 32.1, 1565 },
+				}),
+				q(58023, {	-- One Big Problem
+					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
+					["provider"] = { "n", 171099 },	-- Guardian Kota
+					["coord"] = { 62,8, 32.1, 1565 },
 				}),
 				q(60594, {	-- One Special Spirit
 					["sourceQuests"] = {
@@ -368,6 +401,11 @@ _.Zones =
 					["provider"] = { "n", 169116 },	-- Dreamweaver
 					["coord"] = { 64.2, 41.2, 1565 },
 				}),
+				q(61051, {	-- The Absent-Minded Artisan
+					["sourceQuests"] = { 57825 },	-- Delivery for Guardian Kota
+					["provider"] = { "n", 158921 },	-- Guardian Kota
+					["coord"] = { 62.6, 36.0, 1565 },
+				}),
 				q(58723, {	-- The Court of Winter
 					["sourceQuests"] = { 58721 },	-- Awaken the Dreamer
 					["provider"] = { "n", 162968 },	-- Winter Queen
@@ -508,44 +546,6 @@ _.Zones =
 					}),
 				}),
 				-- When a Gorm Eats a God
-				q(57818, {	-- Nothing Goes to Waste
-					["provider"] = { "n", 158969 },	-- Master Sha'lor
-					["coord"] = { 64.8, 38.9, 1565 },
-					["sourceQuests"] = { 57952 },	-- In Need of Gorm Gris
-				}),
-				q(57824, {	-- Collection Day
-					["provider"] = { "n", 158969 },	-- Master Sha'lor
-					["coord"] = { 64.8, 38.9, 1565 },
-					["sourceQuests"] = { 57818 },	-- Nothing Goes to Waste
-				}),
-				q(57825, {	-- Delivery for Guardian Kota
-					["provider"] = { "n", 158969 },	-- Master Sha'lor
-					["coord"] = { 64.8, 38.9, 1565 },
-					["sourceQuests"] = { 57824 },	-- Collection Day
-					["g"] = {
-						i(175741),	-- Gormgris Gorget
-					},
-				}),
-				q(61051, {	-- The Absent-Minded Artisan
-					["provider"] = { "n", 158921 },	-- Guardian Kota
-					["coord"] = { 62.6, 36.0, 1565 },
-					["sourceQuests"] = { 57825 },	-- Delivery for Guardian Kota
-				}),
-				q(58022, {	-- Finish What He Started
-					["provider"] = { "n", 171099 },	-- Guardian Kota
-					["coord"] = { 62,8, 32.1, 1565 },
-					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
-				}),
-				q(58023, {	-- One Big Problem
-					["provider"] = { "n", 171099 },	-- Guardian Kota
-					["coord"] = { 62,8, 32.1, 1565 },
-					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
-				}),
-				q(58024, {	-- Burrows Away
-					["provider"] = { "n", 171195 },	-- Gorm Burrow
-					["coord"] = { 62.1, 29.9, 1565 },
-					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
-				}),
 				q(58025, {	-- Queen of the Underground
 					["provider"] = { "n", 160155 },	-- Guardian Kota
 					["coord"] = { 59.6, 33.4, 1565 },
