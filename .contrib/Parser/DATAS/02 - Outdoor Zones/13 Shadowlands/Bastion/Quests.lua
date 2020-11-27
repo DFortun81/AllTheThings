@@ -217,6 +217,10 @@ _.Zones =
 					["provider"] = { "n", 167583 },	-- Disciple Apolon
 					["coord"] = { 40.9, 55.1, 1533 },
 				}),
+				q(62730, {	-- Fruit of the Gods
+					["provider"] = { "n", 170284 },	-- Elios
+					["coord"] = { 53.2, 46.4, 1533 },
+				}),
 				q(57529, {	-- Garden in Turmoil
 				--	TODO: figure out SQs.  saw while on assessing your strength/stamina
 					["isBreadcrumb"] = true,
@@ -664,6 +668,11 @@ _.Zones =
 					["sourceQuests"] = { 58976 },	-- Chasing a Memory
 					["provider"] = { "n", 167034 },	-- Mikanikos
 					["coord"] = { 54.7, 64.1, 1533 },
+				}),
+				q(62733, {	-- The Sweetest Tribute
+					["sourceQuests"] = { 62730 },	-- Fruit of the Gods
+					["provider"] = { "n", 170284 },	-- Elios
+					["coord"] = { 53.2, 46.4, 1533 },
 				}),
 				q(57270, {	-- The Temple of Purity
 					["sourceQuests"] = { 58174 },	-- All An Aspirant Can Do

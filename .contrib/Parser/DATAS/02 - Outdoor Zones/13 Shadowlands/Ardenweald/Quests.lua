@@ -634,6 +634,21 @@ _.Zones =
 				-- Start of the Covenant Quests (keeping these down here for now in case we want to put them under a different header)
 				-- currently in order of the quest sequence, will alphabetize after verifying all
 				
+				-- These quests are not part of the main covenant questline, but are Night Fae only so putting them down here
+				q(59087, {	-- That Darn Fox!
+					["provider"] = { "n", 163774 },	-- Clarion Song
+					["coord"] = { 50.9, 33.8, 1565 },
+				}),
+				q(59120, {	-- Renny the Vulpin
+					["sourceQuests"] = { 59087 },	-- That Darn Fox!
+					["provider"] = { "n", 163903 },	-- Renny
+					["coord"] = { 51.6, 8.1, 1701 },
+					["g"] = {
+						i(175114),	-- Renny
+					},
+				}),
+
+				
 				-- Chapter 1: For Queen and Grove!
 				q(61479, {	-- The Boon of Shapes
 					["sourceQuests"] = { 61475 },	-- The Heart of the Forest

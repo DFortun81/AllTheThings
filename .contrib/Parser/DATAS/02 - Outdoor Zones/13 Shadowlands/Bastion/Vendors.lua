@@ -18,7 +18,7 @@ _.Zones =
 				n(160470, {	-- Adjutant Nikos <Quartermaster>
 					["coord"] = { 52.2, 47.0, 1533 },
 					["g"] = {
-						i(183740, {	-- Court Sinrunner
+						i(183740, {	-- Gilded Prowler
 							["cost"] = 300000000, -- 30,000g
 						}),
 						i(184410),	-- Aspirant's Stretcher (TOY!)
@@ -36,7 +36,7 @@ _.Zones =
 							["cost"] = 20000000, -- 2,000g
 						}),
 						i(180857, {	-- Goldenpaw Kit
-							["cost"] = 17650000, -- 1,765g
+							["cost"] = { { "i", 163036, 250 } },
 						}),
 						i(184351),	-- Illusion: Devoted Spirit
 						i(178991),	-- Tabard of the Ascended
