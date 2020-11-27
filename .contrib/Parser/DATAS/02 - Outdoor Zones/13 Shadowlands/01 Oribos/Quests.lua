@@ -120,6 +120,19 @@ _.Zones =
 					["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
 					["coord"] = {61.1, 36.9, 1670 },
 				}),
+				q(60136, {	-- Into Torghast
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, 1670 },
+					["sourceQuests"] = { 
+						63029,	-- The Highlord Calls (Kyrian)
+						63030,	-- The Highlord Calls (Night Fae)
+						63032,	-- The Highlord Calls (Necrolords)
+						63033,	-- The Highlord Calls (Venthyr)
+					},
+					["g"] = {
+						spell(334746),	-- Access to Torghast
+					},
+				}),
 				q(60338, {	-- Journey to Ardenweald
 					["sourceQuests"] = { 61715 },	-- Request of the Highlord
 					["provider"] = { "n", 159478 },	-- Tal-Inara

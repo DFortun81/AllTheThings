@@ -317,14 +317,6 @@ _.Zones =
 					["coord"] = { 46.9, 41.7, 1543 },
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 				}),
-				q(60136, {	-- Into Torghast
-					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
-					["sourceQuests"] = { 60134 },	-- A Tauren in Trade
-					["g"] = {
-						spell(334746),	-- Torghast
-					},
-				}),
 				-- Daughter of the Night Warrior (Ardenweald Covenant Questline)
 				q(59181, {	-- Into the Maw
 					["provider"] = { "n", 164277 },	-- Shandris Feathermoon

@@ -3014,8 +3014,9 @@ _.HiddenQuestTriggers =
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
 		q(61170),	-- triggered when unlocking the Harmonic Chest (looting it has a separate ID, in Achievements file)
-		-- Ardenweald Covenant
-		q(62745),	-- Daughter of the Night Warrior Questline finished
+		
+		-- Ardenweald Covenant (Night Fae)
+		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
 		q(57559),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(62706),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)

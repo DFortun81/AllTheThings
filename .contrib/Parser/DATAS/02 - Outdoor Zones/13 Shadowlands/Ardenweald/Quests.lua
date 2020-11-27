@@ -631,26 +631,59 @@ _.Zones =
 					["coord"] = { 40.0, 68.4, 1670 },
 					["maps"] = { 1670 },	-- Oribos
 				}),
+				q(62897, {	-- Recovered Souls
+					["sourceQuests"] = { 62894 },	-- Flutterback
+					["provider"] = { "n", 158553 },	-- Flutterby
+					["coord"] = { 34.1, 43.6, 1701 },
+				}),
+				q(62898, {	-- The First New Growth
+					["sourceQuests"] = { 62897 },	-- Recovered Souls
+					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+					["coord"] = { 39.7, 55.7, 1701 },
+				}),
+				q(61541, {	-- The Forge of Bonds
+					["sourceQuests"] = { 62898 },	-- The First New Growth
+					["provider"] = { "n", 172431 },	-- Lady Moonberry
+					["coord"] = { 49.5, 40.0, 1701 },
+				}),
+				q(61542, {	-- The Boon of Binding
+					["sourceQuests"] = { 61541 },	-- The Forge of Bonds
+					["provider"] = { "n", 158553 },	-- Flutterby
+					["coord"] = { 34.1, 43.6, 1701 },
+				}),
+				q(61550, {	-- Strengthening the Bond
+					["sourceQuests"] = { 61542 },	-- The Boon of Binding
+					["provider"] = { "n", 172677 },	-- Niya
+					["coord"] = { 33.7, 45.0, 1701 },
+					["g"] = {
+						i(183473),	-- Conflux of Elements
+						i(183466),	-- Innate Resolve
+						i(183467),	-- Tireless Pursuit
+						-- TODO: figure out follower ID
+						--follower(xxxx),	-- Niya
+					},
+				}),
+				q(62900, {	-- A Conduit for Growth
+					["sourceQuests"] = { 61550 },	-- Strengthening the Bond
+					["provider"] = { "n", 172677 },	-- Niya
+					["coord"] = { 33.7, 45.0, 1701 },
+				}),
+				q(62899, {	-- The Endless Forest
+					["sourceQuests"] = { 62900 },	-- A Conduit for Growth
+					["provider"] = { "n", 158553 },	-- Flutterby
+					["coord"] = { 34.1, 43.6, 1701 },
+				}),
 
+				-- Chapter 2: Torghast
+				q(63030, {	-- The Highlord Calls
+					["sourceQuests"] = { 62899 },	-- The Endless Forest
+					["provider"] = { "n", 161509 },	-- Lady Moonberry
+					["coord"] = { 47.4, 36.2, 1701 },
+				}),
 
 				
 				------------------------------
 				-- Everything past here has not been verified yet in retail
-				q(61541, {	-- The Forge of Bonds
-					["provider"] = { "n", 172431 },	-- Lady Moonberry
-					["coord"] = { 49.2, 39.9, 1565 },
-					["sourceQuests"] = { 61475 },	-- The Heart of the Forest
-				}),
-				q(61542, {	-- The Boon of Binding
-					["provider"] = { "n", 158553 },	-- Flutterby
-					["coord"] = { 33.9, 43.4, 1565 },
-					["sourceQuests"] = { 61541 },	-- The Forge of Bonds
-				}),
-				q(61550, {	-- Strengthening the Bond
-					["provider"] = { "n", 172677 },	-- Niya
-					["coord"] = { 33.4, 45.2, 1565 },
-					["sourceQuests"] = { 61542 },	-- The Boon of Binding
-				}),
 				q(61552, {	-- The Hunt Watches
 					["provider"] = { "n", 172677 },	-- Niya
 					["coord"] = { 33.4, 45.2, 1565 },
@@ -940,13 +973,6 @@ _.Zones =
 					["isWeekly"] = true,
 				}),
 				-- Covenant progress
-				q(62900, {	-- Adventurer: Guardian Kota (Rank 2)
-					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-					["coord"] = { 29.6, 81.6, 1565 },
-					["g"] = {
-						follower(1283),	-- Guardian Kota
-					},
-				}),
 				q(61852, {	-- Adventurer: Guardian Kota (Rank 2)
 					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 					["coord"] = { 29.6, 81.6, 1565 },
