@@ -345,6 +345,7 @@ _.Zones =
 						crit(18, {	-- Worldfeaster Chronn
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
+						i(180869),	-- Devoured Wader
 					},
 				}),
 				n(171040, { -- Xixin the Ravening

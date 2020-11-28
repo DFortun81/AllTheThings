@@ -23,6 +23,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(62058, {	-- Centurions, Assemble!
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61784, {	-- Cliffs of Bastion
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -56,6 +60,10 @@ _.Zones =
 						ach(14735, crit(2)),	-- Flight School Graduate / Flight School: Up and Away!
 					},
 				}),
+				q(59804, {	-- Gateways of Horror
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61443, {	-- Herbalism: Windswept Rising Glory
 					["requireSkill"] = HERBALISM,
 					["isWorldQuest"] = true,
@@ -74,6 +82,14 @@ _.Zones =
 					["lvl"] = { 60 },
 					["requireSkill"] = MINING,
 				}),
+				q(61967, {	-- Remedial Lessons
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61791, {	-- Thenia's Loyal Companions
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59717, {	-- Things Remembered
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -82,15 +98,15 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				q(61967, {	-- Remedial Lessons
-					["isWorldQuest"] = true,
-					["lvl"] = { 60 },
-				}),
 				q(59680, {	-- Vesiphone's Vicious Vesper
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
 				q(59585, {	-- We'll Make an Aspirant Out of You
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(60958, {	-- We Send Only You
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
