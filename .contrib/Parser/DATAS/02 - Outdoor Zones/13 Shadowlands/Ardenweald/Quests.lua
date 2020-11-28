@@ -15,6 +15,11 @@ _.Zones =
 						i(183851),	-- Withergrove Shardling
 					},
 				}),
+				q(60063, {	-- A Song for Silkstriders
+					["sourceQuests"] = { 60062 },	-- The Shattered Harp
+					["provider"] = { "n", 167047 },	-- Artisan Rees
+					["coord"] = { 37.0, 29.6, 1565 },
+				}),
 				q(57865, {	-- Ages-Echoing Wisdom
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
 					["provider"] = { "n", 158345 },	-- Lady of the Falls
@@ -415,10 +420,28 @@ _.Zones =
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
 					["coord"] = { 63.5, 36.2, 1565 },
 				}),
+				q(60064, {	-- Save Ol' Gertie
+					["sourceQuests"] = { 60062 },	-- The Shattered Harp
+					["provider"] = { "n", 167047 },	-- Artisan Rees
+					["coord"] = { 37.0, 29.6, 1565 },
+				}),
 				q(60567, {	-- Shooing Wildlife
 					["sourceQuests"] = { 57816 },	-- Dreamweaver
 					["provider"] = { "n", 169116 },	-- Dreamweaver
 					["coord"] = { 64.2, 41.2, 1565 },
+				}),
+				q(60066, {	-- Silk for Ardenweald
+					["sourceQuests"] = {
+						60061,	-- Tough as Silk
+						60063,	-- A Song for Silkstriders
+						60065,	-- Thread of Hope
+					},
+					["provider"] = { "n", 159270 },	-- Caretaker Lillythistle
+					["coord"] = { 39.0, 29.9, 1565 },
+				}),
+				q(57661, {	-- Silk Shortage
+					["provider"] = { "n", 158556 },	-- Aithlyn
+					["coord"] = { 59.5, 31.5, 1565 },
 				}),
 				q(60764, {	-- Soothing Song
 					["sourceQuests"] = { 60738 },	-- The Way to Hibernal Hollow
@@ -582,6 +605,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 169686 },	-- Niya
 				}),
+				q(60062, {	-- The Shattered Harp
+					["sourceQuests"] = { 57661 },	-- Silk Shortage
+					["provider"] = { "o", 350804 },	-- Broken Harp
+					["coord"] = { 38.1, 28.7, 1565 },
+				}),
 				q(57867, {	-- The Sweat of Our Brow
 				--	TODO: verify SQs
 					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
@@ -597,6 +625,11 @@ _.Zones =
 					["sourceQuests"] = { 57947 },	-- Spirits of the Glen
 					["provider"] = { "n", 159638 },	-- Choofa
 					["coord"] = { 97.1, 32.1, 1565 },
+				}),
+				q(60065, {	-- Thread of Hope
+					["sourceQuests"] = { 60064 },	-- Save Ol' Gertie
+					["provider"] = { "n", 159388 },	-- Gertie Jr.
+					["coord"] = { 37.2, 25.9, 1565 },
 				}),
 				q(57657, {	-- Tied Totem Toter
 					["sourceQuests"] = { 57656 },	-- Gifts of the Forest
@@ -642,6 +675,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
 					["coord"] = { 51.3, 34.0, 1565 },
+				}),
+				q(60061, {	-- Tough as Silk
+					["sourceQuests"] = { 57661 },	-- Silk Shortage
+					["provider"] = { "n", 159270 },	-- Caretaker Lillythistle
+					["coord"] = { 38.9, 29.9, 1565 },
 				}),
 				q(57651, {	-- Trouble in the Banks
 					["sourceQuests"] = {
@@ -750,518 +788,12 @@ _.Zones =
 				
 				
 				
-				currency(1831, {		-- Renown-NightFae
-					q(60108, {	-- Drust and Ashes
-						--["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
-						["g"] = {
-							i(180721),	-- Enchanted Dreamlight Runestag
-						},
-					}),
-				}),
 				-- End of Zone Achievement Quests
 				
 				
 				
 				
-				-- Start of the Covenant Quests (keeping these down here for now in case we want to put them under a different header)
-				-- currently in order of the quest sequence, will alphabetize after verifying all
-				
-				-- These quests are not part of the main covenant questline chapters, but are Night Fae only so putting them down here
-				q(59087, {	-- That Darn Fox!
-					["provider"] = { "n", 163774 },	-- Clarion Song
-					["coord"] = { 50.9, 33.8, 1565 },
-				}),
-				q(59120, {	-- Renny the Vulpin
-					["sourceQuests"] = { 59087 },	-- That Darn Fox!
-					["provider"] = { "n", 163903 },	-- Renny
-					["coord"] = { 51.6, 8.1, 1701 },
-					["g"] = {
-						i(175114),	-- Renny
-					},
-				}),
-				q(61552, {	-- The Hunt Watches
-					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-					["coord"] = { 39.7, 55.7, 1701 },
-					["description"] = "Becomes available after you build Command Table in your sanctum.",
-				}),
-				q(61553, {	-- Know Where to Strike
-					["sourceQuests"] = { 61552 },	-- The Hunt Watches
-					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-					["coord"] = { 44.6, 56.2, 1565 },
-				}),
-
-				
-				-- Chapter 1: For Queen and Grove!
-				q(61479, {	-- The Boon of Shapes
-					["sourceQuests"] = { 61475 },	-- The Heart of the Forest
-					["provider"] = { "n", 172431 },	-- Lady Moonberry
-					["coord"] = { 39.7, 60.8, 1565 },
-				}),
-				q(58104, {	-- Show, Don't Tell
-					["sourceQuests"] = { 61479 },	-- The Boon of Shapes
-					["provider"] = { "n", 161509 },	-- Lady Moonberry
-					["coord"] = { 49.5, 40.1, 1701 },
-				}),
-				q(58157, {	-- Break a Leg
-					["sourceQuests"] = { 58104 },	-- Show, Don't Tell
-					["provider"] = { "n", 160484 },	-- Featherlight
-					["coord"] = { 40.7, 42.7, 1565 },
-				}),
-				q(58158, {	-- The Fourth Wall, er, War
-					["sourceQuests"] = { 58157 },	-- Break a Leg
-					["provider"] = { "n", 160484 },	-- Featherlight
-					["coord"] = { 40.7, 42.7, 1565 },
-				}),
-				q(58159, {	-- What's My Motivation?
-					["sourceQuests"] = { 58158 },	-- The Fourth Wall, er, War
-					["provider"] = { "n", 160484 },	-- Featherlight
-					["coord"] = { 40.7, 42.7, 1565 },
-					["g"] = {
-						i(180263),	-- Dreamlight Runestag
-					},
-				}),
-				q(58160, {	-- For Queen and Grove!
-					["sourceQuests"] = { 58159 },	-- What's My Motivation?
-					["provider"] = { "n", 160500 },	-- Ysera
-					["coord"] = { 42.4, 45.2, 1565 },
-					["g"] = {
-						spell(338946),	-- World Quests
-					},
-				}),
-				q(62883, {	-- Keeper of Great Renown
-					["sourceQuests"] = { 58160 },	-- For Queen and Grove!
-					["provider"] = { "n", 156634 },	-- Winter Queen
-				}),
-				q(62884, {	-- The Forest Will Sing Your Name
-					["sourceQuests"] = { 62883 },	-- Keeper of Great Renown
-					["provider"] = { "n", 176096 },	-- Laurel
-					["coord"] = { 34.3, 36.8, 1701 },
-				}),
-				q(62697, {	-- A Call to Service
-					["sourceQuests"] = { 62884 },	-- The Forest Will Sing Your Name
-					["provider"] = { "n", 176096 },	-- Laurel
-					["coord"] = { 34.3, 36.8, 1701 },
-				}),
-				q(62693, {	-- A Calling in Ardenweald
-					["sourceQuests"] = { 62697 },	-- A Call to Service
-					["provider"] = { "n", 165702 },	-- Blodwyn
-					["coord"] = { 53.8, 6.2, 1701 },
-					["g"] = {
-						i(181475),	-- Bounty of the Grove Wardens
-					},
-				}),
-				q(62890, {	-- Who Shapes the Forest
-					["sourceQuests"] = { 62697 },	-- A Call to Service
-					["provider"] = { "n", 165702 },	-- Blodwyn
-					["coord"] = { 53.8, 6.2, 1701 },
-				}),
-				q(62891, {	-- Into the Reservoir
-					["sourceQuests"] = { 62890 },	-- Who Shapes the Forest
-					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-					["coord"] = { 39.7, 55.7, 1701 },
-				}),
-				q(62892, {	-- Recover the Lost
-					["sourceQuests"] = { 62891 },	-- Into the Reservoir
-					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-					["coord"] = { 39.7, 55.7, 1701 },
-				}),
-				q(62893, {	-- Do What We Cannot
-					["sourceQuests"] = { 62892 },	-- Recover the Lost
-					["provider"] = { "n", 158553 },	-- Flutterby
-					["coord"] = { 34.1, 43.6, 1701 },
-				}),
-				q(62894, {	-- Flutterback
-					["sourceQuests"] = { 62837 },	-- Hopeful News
-					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 40.0, 68.4, 1670 },
-					["maps"] = { 1670 },	-- Oribos
-				}),
-				q(62897, {	-- Recovered Souls
-					["sourceQuests"] = { 62894 },	-- Flutterback
-					["provider"] = { "n", 158553 },	-- Flutterby
-					["coord"] = { 34.1, 43.6, 1701 },
-				}),
-				q(62898, {	-- The First New Growth
-					["sourceQuests"] = { 62897 },	-- Recovered Souls
-					["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-					["coord"] = { 39.7, 55.7, 1701 },
-				}),
-				q(61541, {	-- The Forge of Bonds
-					["sourceQuests"] = { 62898 },	-- The First New Growth
-					["provider"] = { "n", 172431 },	-- Lady Moonberry
-					["coord"] = { 49.5, 40.0, 1701 },
-				}),
-				q(61542, {	-- The Boon of Binding
-					["sourceQuests"] = { 61541 },	-- The Forge of Bonds
-					["provider"] = { "n", 158553 },	-- Flutterby
-					["coord"] = { 34.1, 43.6, 1701 },
-				}),
-				q(61550, {	-- Strengthening the Bond
-					["sourceQuests"] = { 61542 },	-- The Boon of Binding
-					["provider"] = { "n", 172677 },	-- Niya
-					["coord"] = { 33.7, 45.0, 1701 },
-					["g"] = {
-						i(183473),	-- Conflux of Elements
-						i(183466),	-- Innate Resolve
-						i(183467),	-- Tireless Pursuit
-						-- TODO: figure out follower ID
-						--follower(xxxx),	-- Niya
-					},
-				}),
-				q(62900, {	-- A Conduit for Growth
-					["sourceQuests"] = { 61550 },	-- Strengthening the Bond
-					["provider"] = { "n", 172677 },	-- Niya
-					["coord"] = { 33.7, 45.0, 1701 },
-				}),
-				q(62899, {	-- The Endless Forest
-					["sourceQuests"] = { 62900 },	-- A Conduit for Growth
-					["provider"] = { "n", 158553 },	-- Flutterby
-					["coord"] = { 34.1, 43.6, 1701 },
-				}),
-
-				-- Chapter 2: Torghast
-				q(63030, {	-- The Highlord Calls
-					["sourceQuests"] = { 62899 },	-- The Endless Forest
-					["provider"] = { "n", 161509 },	-- Lady Moonberry
-					["coord"] = { 47.4, 36.2, 1701 },
-				}),
-
-				
-				------------------------------
-				-- Everything past here has not been verified yet in retail
-				q(61554, {	-- The Play's The Thing
-					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-					["coord"] = { 44.6, 56.2, 1565 },
-					["sourceQuests"] = { 61553 },	-- Know Where to Strike
-				}),
-				-- Return to the Maw
-				q(60233, {	-- Souls of the Damned (Ardenweald)
-					["provider"] = { "n", 158553 },	-- Flutterby
-					["coord"] = { 33.9, 43.5, 1565 },
-					["sourceQuests"] = { 58160 },	-- For Queen and Grove!
-				}),
-				q(61508, {	-- Soul Salvation (Ardenweald)
-					["provider"] = { "n", 158553 },	-- Flutterby
-					["coord"] = { 33.9, 43.5, 1565 },
-					["sourceQuests"] = { 60233 },	-- Souls of the Damned
-				}),
-				-- Daughter of the Night Warrior
-				q(59246, {	-- Daughter of the Night Warrior (Horde)
-					["provider"] = { "n", 160262 },	-- Ysera
-					["coord"] = { 44.9, 38.8, 1565 },
-					--["sourceQuests"] = {  },	-- 
-					["races"] = HORDE_ONLY,
-				}),
-				q(59179, {	-- Daughter of the Night Warrior (Alliance)
-					["provider"] = { "n", 160262 },	-- Ysera
-					["coord"] = { 44.9, 38.8, 1565 },
-					--["sourceQuests"] = {  },	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				-- From Ardenweald to the Maw and back
-				q(62536, {	-- The Lost of Teldrassil
-					["provider"] = { "n", 160262 },	-- Ysera
-					["coord"] = { 44.9, 38.8, 1565 },
-					["sourceQuests"] = { 59242 },	-- Their New Home
-				}),
-				-- Da Boss
-				q(59809, {	-- On De Other Side
-					["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-					["sourceQuests"] = { 62536 },	-- The Lost of Teldrassil
-				}),
-				q(59811, {	-- Taking Inventory
-					["provider"] = { "n", 166281 },	-- Bwonsamdi
-					["sourceQuests"] = { 59809 },	-- On De Other Side
-				}),
-				q(59812, {	-- Following the Trail
-					["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-					["sourceQuests"] = { 59811 },	-- Taking Inventory
-				}),
-				q(59813, {	-- Minions of Mueh'zala
-					["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-					["sourceQuests"] = { 59812 },	-- Following the Trail
-				}),
-				q(59815, {	-- Stolen Loa
-					["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-					["sourceQuests"] = { 59812 },	-- Following the Trail
-				}),
-				q(59817, {	-- Winter Be Comin'
-					["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-					["sourceQuests"] = {
-						59813,	-- Minions of Mueh'zala
-						59815,	-- Stolen Loa
-					},
-					["g"] = {
-						i(175586),	-- Faewoven Handwraps
-						i(179767),	-- Oakheart Armguards
-						i(181911),	-- Runewarden's Gloves
-						i(179890),	-- Queensguard Gauntlets
-					},
-				}),
-				q(59818, {	-- Gathering The Hunt
-					["provider"] = { "n", 156634 },	-- Winter Queen
-					["coord"] = { 51.3, 27.2, 1565 },
-					["sourceQuests"] = { 59817 },	-- Winter Be Comin'
-				}),
-				q(59819, {	-- Cleansing the Forest
-					["provider"] = { "n", 167823 },	-- Lady Moonberry
-					["coord"] = { 66.6, 55.6, 1565 },
-					["sourceQuests"] = { 59818 },	-- Gathering The Hunt
-				}),
-				q(59821, {	-- Report to the Queen
-					["provider"] = { "n", 167823 },	-- Lady Moonberry
-					["coord"] = { 68.4, 65.2, 1565 },
-					["sourceQuests"] = { 59819 },	-- Cleansing the Forest
-					["g"] = {
-						i(179657),	-- Faewoven Tunic
-						i(175576),	-- Faewoven Raiment
-						i(179765),	-- Oakheart Tunic
-						i(179774),	-- Oakheart Vestment
-						i(181909),	-- Runewarden's Hauberk
-						i(181979),	-- Runewarden's Vestment
-						i(179888),	-- Queensguard Chestplate
-					},
-				}),
-				-- Night Warrior's Curse							-- wowhead, need to be confirmed
-				q(58610, {	-- The Speaker of Elune
-					["provider"] = { "n", 160262 },	-- Ysera
-					["coord"] = { 44.7, 39.0, 1565 },
-					["sourceQuests"] = { 59821 },	-- Report to the Queen
-				}),
-				q(58647, {	-- Broken Webs
-					["provider"] = { "n", 161786 },	-- Qadarin
-					["coord"] = { 42.8, 36.4, 1565 },
-					["sourceQuests"] = { 58610 },	-- The Speaker of Elune
-				}),
-				q(58669, {	-- A Little Pruning
-					["provider"] = { "n", 161786 },	-- Qadarin
-					["coord"] = { 42.8, 36.4, 1565 },
-					["sourceQuests"] = { 58610 },	-- The Speaker of Elune
-				}),
-				q(59008, {	-- Spriggan Snares
-					["provider"] = { "n", 163385 },	-- Cirrik
-					["coord"] = { 39.0, 52.4, 1565 },
-					["sourceQuests"] = { 58610 },	-- The Speaker of Elune
-				}),
-				q(58704, {	-- The Garden of Night
-					["provider"] = { "n", 161934 },	-- Helpful Soul
-					--["coord"] = { 44.7, 39.0, 1565 },
-					["sourceQuests"] = {
-						58647,	-- Broken Webs
-						58669,	-- A Little Pruning
-						59008,	-- Spriggan Snares
-					},
-					["g"] = {
-						i(175581),	-- Faewoven Sandals
-						i(179766),	-- Oakheart Anklewraps
-						i(181910),	-- Runewarden's Boots
-						i(179889),	-- Queensguard Sabatons
-					},
-				}),
-				q(58871, {	-- Broken Harts
-					["provider"] = { "n", 161785 },	-- Thiernax
-					["coord"] = { 39.0, 59.4, 1565 },
-					["sourceQuests"] = { 58704 },	-- The Garden of Night
-				}),
-				q(59725, {	-- Archivist on the Edge
-					["provider"] = { "n", 161509 },	-- Lady Moonberry
-					["coord"] = { 44.7, 39.0, 1565 },
-					["sourceQuests"] = { 58871 },	-- Broken Harts
-				}),
-				q(59063, {	-- Curses!
-					["provider"] = { "n", 165867 },	-- Archivist Dreyden
-					["coord"] = { 63.6, 22.6, 1565 },
-					["sourceQuests"] = { 59725 },	-- Archivist on the Edge
-				}),
-				q(59068, {	-- A Secret Never Spoken
-					["provider"] = { "n", 161509 },	-- Lady Moonberry
-					["coord"] = { 44.6, 36.4, 1565 },
-					["sourceQuests"] = { 59063 },	-- Curses!
-				}),
-				q(59069, {	-- A Token of Lost Love
-					["provider"] = { "n", 160262 },	-- Ysera
-					["coord"] = { 44.4, 38.2, 1565 },
-					["sourceQuests"] = { 59068 },	-- A Secret Never Spoken
-				}),
-				q(59070, {	-- A Sacrifice of Anima
-					["provider"] = { "n", 161509 },	-- Lady Moonberry
-					["coord"] = { 44.6, 36.4, 1565 },
-					["sourceQuests"] = { 59069 },	-- A Token of Lost Love
-				}),
-				q(59071, {	-- Mending a Broken Hart
-					["provider"] = { "n", 165867 },	-- Archivist Dreyden
-					["coord"] = { 63.6, 22.6, 1565 },
-					["sourceQuests"] = { 59070 },	-- A Sacrifice of Anima
-					["g"] = {
-						i(181301),	-- Faewoven Branches
-						i(182172, {	-- Equine Soul
-							["questID"] = 62428,	-- Equine Soul
-						}),
-					},
-				}),
-				q(62890, {	-- The Life-blood of the Forest
-					["provider"] = { "n", 165702 },	-- Blodwyn
-					["coord"] = { 46.4, 50.6, 1565 },
-					["sourceQuests"] = { 62693 },	-- A Calling in Ardenweald
-				}),
-				-- The Queen's Conservatory
-				q(62624, {	-- The Queen's Conservatory
-					["provider"] = { "n", 173171 },	-- Conservator Saola
-					["coord"] = { 53.2, 43.5, 1565 },
-					["sourceQuests"] = { 58160 },	-- For Queen and Grove!
-				}),
-				q(59862, {	-- A Savior for Lost Souls
-					["provider"] = { "n", 166476 },	-- Warden Casad
-					["coord"] = { 69.9, 44.7, 1662 },
-					["sourceQuests"] = { 62624 },	-- The Queen's Conservatory
-				}),
-				q(59872, {	-- How to Save a God
-					["provider"] = { "n", 166476 },	-- Warden Casad
-					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuests"] = { 59862 },	-- A Savior for Lost Souls
-				}),
-				q(59873, {	-- Greeting a God
-					["provider"] = { "n", 166476 },	-- Warden Casad
-					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuests"] = { 59872 },	-- How to Save a God
-				}),
---[[ TODO
-				q(59999, {	-- Rebirth of the Grove
-					["provider"] = { "n", 166476 },	-- Warden Casad
-					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuests"] = { 59873 },	-- Greeting a God
-				}),
-				q(59871, {	-- Catalyze This
-					["provider"] = { "n", 166476 },	-- Warden Casad
-					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
-				}),
-				q(62467, {	-- Seed of a Thought
-					["provider"] = { "n", 166476 },	-- Warden Casad
-					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuests"] = { 59871 },	-- Catalyze This
-				}),
-				q(60640, {	-- Regrowth of the Grove
-					["provider"] = { "n", 166476 },	-- Warden Casad
-					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuests"] = { 62467 },	-- Seed of a Thought
-				}),
-				q(60641, {	-- Blossoming of the Grove
-					["provider"] = { "n", 166476 },	-- Warden Casad
-					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
-				}),
-				q(60642, {	-- The Grove Resplendent
-					["provider"] = { "n", 166476 },	-- Warden Casad
-					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
-				}),
-]]--
-				q(62447, {	-- A Rare and Unusual Spirit
-					["provider"] = { "n", 171107 },	-- Cultivator Blaithin
-					["coord"] = { 42.2, 52.9, 1662 },
-					["maps"] = { 1669 },	-- Mists of Tirna Scithe
-					["g"] = {
-						i(183704),	-- Shifting Spirit of Knowledge
-					},
-				}),
-				q(62603, {	-- A Rare and Unusual Spirit
-					["provider"] = { "n", 171107 },	-- Cultivator Blaithin
-					["coord"] = { 42.2, 52.9, 1662 },
-					["maps"] = { 1669 },	-- Mists of Tirna Scithe
-					["g"] = {
-						i(183805),	-- Tranquil Spirit of the Cosmos
-					},
-				}),
-				q(62625, {	-- A Rare and Unusual Spirit
-					["provider"] = { "n", 171107 },	-- Cultivator Blaithin
-					["coord"] = { 42.2, 52.9, 1662 },
-					["maps"] = { 1669 },	-- Mists of Tirna Scithe
-					["g"] = {
-						i(183806),	-- Energetic Spirit of Curiosity
-					},
-				}),
-				q(62454, {	-- A Rare and Unusual Spirit
-					["provider"] = { "n", 174329 },	-- Falir the Shifting
-					["coord"] = { 24.0, 53.3, 1662 },
-					["g"] = {
-						i(183806),	-- Energetic Spirit of Curiosity
-					},
-				}),
-				-- Dailies / Weeklies
-				q(61984, {	-- Replenish the Reservoir
-					["provider"] = { "n", 158553 },	-- Flutterby
-					["coord"] = { 33.9, 43.5, 1565 },
-					["sourceQuests"] = { 58160 },	-- For Queen and Grove!
-					["isWeekly"] = true,
-				}),
-				q(61331, {	-- Return Lost Souls
-					["provider"] = { "n", 158553 },	-- Flutterby
-					["coord"] = { 33.9, 43.5, 1565 },
-					["sourceQuests"] = { 58160 },	-- For Queen and Grove!
-					["isWeekly"] = true,
-				}),
-				q(62441, {	-- Fair Exchange for a Soul
-					["provider"] = { "n", 166476 },	-- Warden Casad
-					["coord"] = { 33.4, 62.0, 1662 },
-					["sourceQuests"] = { 59873 },	-- Greeting a God
-					["isWeekly"] = true,
-				}),
-				-- Covenant progress
-				q(61852, {	-- Adventurer: Guardian Kota (Rank 2)
-					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-					["coord"] = { 29.6, 81.6, 1565 },
-					["g"] = {
-						follower(1283),	-- Guardian Kota
-					},
-				}),
-				q(61853, {	-- Adventurer: Te'zan (Rank ?)
-					["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-					["coord"] = { 29.6, 81.6, 1565 },
-					["g"] = {
-						follower(1285),	-- Te'zan
-					},
-				}),
 				-- Sojourner of Ardenweald Achievenemt
-				-- Thread of Hope
-				q(57661, {	-- Silk Shortage
-					["provider"] = { "n", 158556 },	-- Aithlyn
-					["coord"] = { 59.5, 31.5, 1565 },
-				}),
-				q(60061, {	-- Tough as Silk
-					["provider"] = { "n", 159270 },	-- Caretaker Lillythistle
-					["coord"] = { 38.9, 29.9, 1565 },
-					["sourceQuests"] = { 57661 },	-- Silk Shortage
-				}),
-				q(60062, {	-- The Shattered Harp
-					--["provider"] = { "o", 350804 },	-- Broken Harp							-- TODO: Need to add the Object
-					["coord"] = { 38.1, 28.7, 1565 },
-					["sourceQuests"] = { 57661 },	-- Silk Shortage
-				}),
-				q(60063, {	-- A Song for Silkstriders
-					["provider"] = { "n", 167047 },	-- Artisan Rees
-					["coord"] = { 37.0, 29.6, 1565 },
-					["sourceQuests"] = { 60062 },	-- The Shattered Harp
-				}),
-				q(60064, {	-- Save Ol' Gertie
-					["provider"] = { "n", 167047 },	-- Artisan Rees
-					["coord"] = { 37.0, 29.6, 1565 },
-					["sourceQuests"] = { 60062 },	-- The Shattered Harp
-				}),
-				q(60065, {	-- Thread of Hope
-					["provider"] = { "n", 159388 },	-- Gertie Jr.
-					["coord"] = { 37.2, 25.9, 1565 },
-					["sourceQuests"] = { 60064 },	-- Save Ol' Gertie
-				}),
-				q(60066, {	-- Silk for Ardenweald
-					["provider"] = { "n", 160439 },	-- Partik
-					["coord"] = { 74.3, 32.3, 1565 },
-					["sourceQuests"] = {
-						60061,	-- Tough as Silk
-						60063,	-- A Song for Silkstriders
-						60065,	-- Thread of Hope
-					},
-				}),
 				-- Saving the Stalks (Transport Network Tier 1)
 				q(57454, {	-- Silence in the Stalks
 					["provider"] = { "n", 158556 },	-- Aithlyn

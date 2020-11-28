@@ -2989,6 +2989,7 @@ _.HiddenQuestTriggers =
 		q(62020),	-- Triggered after choosing Venthyr covenant
 		q(62709),	-- Triggered after choosing Venthyr covenant
 		q(62017),	-- Triggered after choosing Necrolords covenant
+		q(63348),	-- Triggered after turning in Explore Torghast (62932) at Bolvar
 
 		-- Revendreth
 		q(60523),	-- Triggered after reading Theotar's Diary
@@ -3007,6 +3008,7 @@ _.HiddenQuestTriggers =
 		q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
 
 		-- Torghast
+		q(58192),	-- Triggered after killing The Grand Malleare to complete The Soulforges
 		q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)
 		q(59988),	-- Tracking Quest (Finished The Soulforges Layer 1)
 		q(59989),	-- Tracking Quest (Finished Coldheart Interstitia Layer 1)

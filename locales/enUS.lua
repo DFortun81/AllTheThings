@@ -4148,6 +4148,7 @@ app.L = {
 		[349565] = "Chest of Envious Dreams",
 		[349797] = "Abandoned Curios",
 		[349798] = "Smuggled Cache",
+		[350804] = "Broken Harp",
 		[351467] = "Faded Epitaph",
 		[351874] = "Wanted: Enforcer Kristof",
 		[351888] = "Wanted: Summoner Marcelis",
