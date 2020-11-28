@@ -89,7 +89,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				q(58993, {	-- Swarm Defense
+				q(60786, {	-- Swarm Defense
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),

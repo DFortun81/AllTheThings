@@ -2988,6 +2988,7 @@ _.HiddenQuestTriggers =
 		q(62708),	-- Triggered after choosing Kyrian covenant
 		q(62020),	-- Triggered after choosing Venthyr covenant
 		q(62709),	-- Triggered after choosing Venthyr covenant
+		q(62017),	-- Triggered after choosing Necrolords covenant
 
 		-- Revendreth
 		q(60523),	-- Triggered after reading Theotar's Diary
@@ -3002,6 +3003,7 @@ _.HiddenQuestTriggers =
 		q(59911),	-- triggered after picking up Ruiner's End
 		q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)
 		q(62939),	-- triggered after watching the cutscene for Stand as One / landing in Oribos
+		q(63177),	-- Triggered after using Encased Riftwalker Essence
 		q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
 
 		-- Torghast
@@ -3015,6 +3017,7 @@ _.HiddenQuestTriggers =
 		q(59995),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
 		q(59996),	-- Tracking Quest (Finished Skoldus Hall Layer 1)
 		q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
+		q(62967),	-- Triggered when opening Domination Lock for Prison of the Forgotten quest
 
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)

@@ -8,6 +8,21 @@ _.Zones =
 		m(1648, {	-- The Maw
 			m(1627, {	-- Torghast
 				n(QUESTS, {
+					q(60270, {	-- A Damned Pact
+						["sourceQuests"] = { 60269 },	-- Reawakening
+						["provider"] = { "n", 164937 },	-- Runecarver
+						["coord"] = { 50.6, 57.2, 1912 },
+					}),
+					q(62700, {	-- Ashes of the Tower
+						["sourceQuests"] = { 60272 },	-- The Weak Link
+						["provider"] = { "n", 164937 },	-- Runecarver
+						["coord"] = { 50.6, 57.2, 1912 },
+					}),
+					q(60268, {	-- Deep Within
+						["sourceQuests"] = { 60267 },	-- Prison of the Forgotten
+						["provider"] = { "n", 164937 },	-- Runecarver
+						["coord"] = { 50.6, 57.2, 1912 },
+					}),
 					q(62932, {	-- Explore Torghast
 						["sourceQuests"] = { 61099 },	-- The Search for Baine
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
@@ -20,40 +35,28 @@ _.Zones =
 						["provider"] = { "i", 178585 },	-- The Forgotten Key
 						["cr"] = 151329,	-- Warden Skoldus
 					}),
+					q(60269, {	-- Reawakening
+						["sourceQuests"] = { 60268 },	-- Deep Within
+						["provider"] = { "n", 164937 },	-- Runecarver
+						["coord"] = { 50.6, 57.2, 1912 },
+					}),
 					q(61099, {	-- The Search for Baine
 						["sourceQuests"] = { 60136 },	-- Into Torghast
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 						["coord"] = { 39.9, 68.5, 1670 },
 					}),
-					
-					
-					
-					-------- unverifed on live yet; adding to alphabetized list above as they are verified in game
-					q(60268, {	-- Deep Within
-						["provider"] = { "n", 164937 },	-- Runecarver
-						["sourceQuest"] = 60267,	-- Prison of the Forgotten
-					}),
-					q(60269, {	-- Reawakening
-						["provider"] = { "n", 164937 },	-- Runecarver
-						["sourceQuest"] = 60268,	-- Deep Within
-					}),
-					q(60270, {	-- A Damned Pact
-						["provider"] = { "n", 164937 },	-- Runecarver
-						["sourceQuest"] = 60269,	-- Reawakening
-					}),
-					q(60271, {	-- A Grave Chance
-						["provider"] = { "n", 162804 },	-- Ve'nari
-						["coord"] = { 46.9, 41.7, 1543 },
-						["sourceQuest"] = 60270,	-- A Damned Pact
-					}),
 					q(60272, {	-- The Weak Link
+						["sourceQuests"] = { 60271 },	-- A Grave Chance
 						["provider"] = { "n", 162804 },	-- Ve'nari
 						["coord"] = { 46.9, 41.7, 1543 },
-						["sourceQuest"] = 60271,	-- A Grave Chance
 						["g"] = {
 							ach(14754),	-- The Forgotten One
 						},
 					}),
+					
+					
+					
+					-------- unverifed on live yet; adding to alphabetized list above as they are verified in game
 					q(60137, {	-- The Fracture Chambers
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 						["sourceQuest"] = 61099,	-- Skoldus Hall

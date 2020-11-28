@@ -52,6 +52,11 @@ _.Zones =
 					},
 					["coord"] = { 29.6, 43.6, 1648 },
 				}),
+				q(60271, {	-- A Grave Chance
+					["sourceQuests"] = { 60270 },	-- A Damned Pact
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
 				q(59756, {	-- A Moment's Respite
 					["sourceQuests"] = { 59755 },	-- A Flight from Darkness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
@@ -66,6 +71,9 @@ _.Zones =
 					["sourceQuests"] = { 59776 },	-- From the Mouths of Madness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 37.0, 1648 },
+				}),
+				q(63135, {	-- Coldheart Flight Routes
+					["provider"] = { "i", 180801 },	-- Coldheart Flight Routes
 				}),
 				q(61346, {	-- Cyrixia the Willbreaker (Bonus Objective)
 					["coord"] = { 27.6, 28.2, 1543 },
@@ -203,6 +211,11 @@ _.Zones =
 				}),
 				q(62539, {	-- Stygian Incinerator (Bonus Objective)
 					["coord"] = { 37.2, 44.6, 1543 },
+				}),
+				q(63043, {	-- Sundered Souls
+					["provider"] = { "n", 175813 },	-- Trapped Soul
+					["coord"] = { 28.2, 14.6, 1543 },
+					["isDaily"] = true,
 				}),
 				q(59760, {	-- The Afflictor's Key
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
