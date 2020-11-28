@@ -177,6 +177,7 @@ _.Zones =
 						["repeatable"] = true,
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
+							i(181372),	-- Tribute of the Ascended [Live Reward]
 						},
 					}),
 					q(60406, {	-- Training in Bastion

@@ -8,6 +8,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["maps"] = {
 			1680,	-- De Other Side
 			1679,	-- Zul'Gurub
+			1677,	-- The Heap
 		},
 		["lvl"] = { 50 },
 		["g"] = {

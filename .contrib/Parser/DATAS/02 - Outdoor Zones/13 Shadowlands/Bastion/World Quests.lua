@@ -74,6 +74,10 @@ _.Zones =
 					["lvl"] = { 60 },
 					["requireSkill"] = MINING,
 				}),
+				q(61791, {	-- Thenia's Loyal Companions
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59717, {	-- Things Remembered
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

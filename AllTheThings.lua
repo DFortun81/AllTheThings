@@ -1231,13 +1231,13 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 			local searchResults = app.SearchForField("questID", key)
 			if not searchResults or #searchResults <= 0 or (searchResults[1].parent and searchResults[1].parent.parent.text == "Unsorted") then
-			   key = key .. " (Missing in ATT)";
+			   key = key .. " (Not in ATT " .. app.Version .. ")";
 			else
 				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
 					return true;
 				end
 			end
-			print("Completed Quest ID #" .. key);
+			print("Completed Quest #" .. key);
 		end
 	end
 end});

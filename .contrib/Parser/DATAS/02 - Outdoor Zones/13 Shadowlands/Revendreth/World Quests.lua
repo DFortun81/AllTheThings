@@ -50,6 +50,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(59718, {	-- Parasol Peril
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61883, {	-- Resilient Survivors
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

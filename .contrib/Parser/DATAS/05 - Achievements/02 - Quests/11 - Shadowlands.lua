@@ -93,7 +93,12 @@ _.Achievements =
 				}),
 			}),
 			ach(14766, {	-- Parasoling
-				i(182695),		-- Weathered Purple Parasol
+				["_quests"] = {
+					59718,	-- Parasol Peril
+				},
+				["g"] = {
+					i(182695),		-- Weathered Purple Parasol
+				},
 			}),
 			ach(14765),		-- Ramparts Racer
 			ach(14671),		-- Something's Not Quite Right....
