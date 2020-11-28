@@ -28,19 +28,73 @@ _.Zones =
 					["provider"] = { "n", 156822 },	-- Mistress Mihaela
 					["coord"] = { 61.3, 63.7, 1525 },
 				}),
+				q(57159, {	-- A Reflection of Truth
+					["sourceQuests"] = { 60506 },	-- The Accuser
+					["provider"] = { "n", 156554 },	-- The Accuser
+					["coord"] = { 51.5, 59.1, 1525 },
+					["maps"] = { 1755 },	-- Castle Nathria (scenario version)
+				}),
 				q(60467, {	-- A Rousing Aroma
 					["provider"] = { "n", 168455 },	-- Sabina
 					["coord"] = { 35.0, 53.9, 1525 },
+				}),
+				q(58996, {	-- Abel's Fate
+				--	TODO: figure out SQs.  i think it's somewhere between "the penitent hunt"+"devour this" and "a reflection of truth," because i saw it while on "dredhollow."
+				--	this doesn't require turning in "hunting trophies," the other quest the NPC provides - i went to him to turn it in and he had this other quest to offer me.
+					["provider"] = { "n", 156384 },	-- Huntmaster Constantin
+					["coord"] = { 48.5, 68.5, 1525 },
+				}),
+				q(58941, {	-- Alpha Bat
+					["sourceQuests"] = { 58916 },	-- Dread Priming
+					["provider"] = { "n", 163221 },	-- Flockmaster Sergio
+					["coord"] = { 51.2, 74.3, 1525 },
+					["g"] = {
+						i(175765),	-- Dredwing Shroud
+					},
 				}),
 				q(58433, {	-- Anima Attrition
 					["sourceQuests"] = { 56942 },	-- On The Road Again
 					["provider"] = { "n", 155533 },	-- Lord Chamberlain
 					["coord"] = { 67.5, 68.5, 1525 },
 				}),
+				q(58936, {	-- Beast Control
+				--	TODO: verify SQs.  i saw it after turning in 57098, "The Grove of Terror," not sure if it was available before that
+					["provider"] = { "o", 355296 },	-- Bounty: Beast Control
+					["coord"] = { 49.6, 75.9, 1525 },
+				}),
+				q(57189, {	-- Breaking the Hopebreakers
+					["sourceQuests"] = { 60313 },	-- Dredhollow
+					["provider"] = { "n", 168217 },	-- The Accuser
+					["coord"] = { 43.2, 73.8, 1525 },
+					["g"] = {
+						i(177646),	-- Vicious Dredblade
+						i(177651),	-- Nimble Hopebreaker's Rapier
+						i(177650),	-- Stalwart Hopebreaker's Rapier
+						i(177648),	-- Honed Dredglaive
+						i(177652),	-- Splinterball Morningstar
+						i(177634),	-- Vial of Volatile Essence
+						i(177633),	-- Steelbound Heater Shield
+					},
+				}),
 				q(60176, {	-- Bring Out Your Tithe
 					["sourceQuests"] = { 57174 },	-- The Stoneborn
 					["provider"] = { "n", 156822 },	-- Mistress Mihaela
 					["coord"] = { 61.3, 63.7, 1525 },
+				}),
+				q(57164, {	-- Devour This
+					["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
+					["provider"] = { "n", 168664 },	-- The Fearstalker
+					["coord"] = { 47.8, 70.1, 1525 },
+				}),
+				q(58916, {	-- Dread Priming
+					["sourceQuests"] = { 57098 },	-- The Grove of Terror
+					["provider"] = { "n", 169087 },	-- The Fearstalker
+					["coord"] = { 50.6, 73.8, 1525 },
+				}),
+				q(60313, {	-- Dredhollow
+					["sourceQuests"] = { 57159 },	-- A Reflection of Truth
+					["provider"] = { "n", 156554 },	-- The Accuser
+					["coord"] = { 51.5, 59.1, 1525 },
 				}),
 				q(59023, {	-- Ending the Inquisitor
 					["sourceQuests"] = { 57175 },	-- Inquisitor Vilhelm's Sinstone
@@ -71,6 +125,11 @@ _.Zones =
 						i(175430),	-- Stoneforged Legguards
 					},
 				}),
+				q(60514, {	-- Hunting Trophies
+					["sourceQuests"] = { 59014 },	-- King of the Hill
+					["provider"] = { "n", 156384 },	-- Huntmaster Constantin
+					["coord"] = { 48.5, 68.4, 1525 },
+				}),
 				q(57161, {	-- I Don't Get My Hands Dirty
 					["sourceQuests"] = { 57179 },	-- The Authority of Revendreth
 					["provider"] = { "n", 156605 },	-- Lord Chamberlain
@@ -99,6 +158,16 @@ _.Zones =
 					["provider"] = { "n", 168698 },	-- Chiselgrump
 					["coord"] = { 69.5, 53.3, 1525 },
 				}),
+				q(59014, {	-- King of the Hill
+					["sourceQuests"] = { 58941 },	-- Alpha Bat
+					["provider"] = { "n", 163221 },	-- Flockmaster Sergio
+					["coord"] = { 51.2, 74.3, 1525 },
+				}),
+				q(57131, {	-- Let the Hunt Begin
+					["sourceQuests"] = { 59014 },	-- King of the Hill
+					["provider"] = { "n", 168664 },	-- The Fearstalker
+					["coord"] = { 47.8, 70.1, 1525 },
+				}),
 				q(60509, {	-- Not My Job
 					["sourceQuests"] = { 56942 },	-- On The Road Again
 					["provider"] = { "n", 158057 },	-- Rendle
@@ -116,6 +185,17 @@ _.Zones =
 					["sourceQuests"] = { 57174 },	-- The Stoneborn
 					["provider"] = { "n", 167489 },	-- Lajos
 					["coord"] = { 62.2, 61.3, 1525 },
+				}),
+				q(59209, {	-- Rebel Reinforcements
+					["sourceQuests"] = { 60313 },	-- Dredhollow
+					["provider"] = { "n", 164394 },	-- General Draven
+					["coord"] = { 43.3, 74.0, 1525 },
+					["g"] = {
+						i(175427),	-- Hood of Pained Absolution
+						i(175429),	-- Nightcloaked Hood
+						i(175428),	-- Soul Hunter's Helm
+						i(175414),	-- Stoneforged Headgear
+					},
 				}),
 				q(56955, {	-- Rebels on the Road
 					["sourceQuests"] = { 56942 },	-- On The Road Again
@@ -137,6 +217,13 @@ _.Zones =
 					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
 					["description"] = "Automatically offered after Echelon drops you off during Inquisitor Stelia's Sinstone.",
 					["coord"] = { 69.4, 53.9, 1525 },
+				}),
+				q(60506, {	-- The Accuser
+					["sourceQuests"] = {
+						57164,	-- Devour This
+						57136,	-- The Penitent Hunt
+					},
+					["provider"] = { "n", 156499 },	-- The Fearstalker
 				}),
 				q(57182, {	-- The Accuser's Fate
 					["sourceQuests"] = { 57180 },	-- The Accuser's Secret
@@ -183,6 +270,14 @@ _.Zones =
 					["provider"] = { "n", 155541 },	-- General Kaal
 					["coord"] = { 60.4, 60.9, 1525 },
 				}),
+				q(57136, {	-- The Penitent Hunt
+					["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
+					["provider"] = { "n", 168664 },	-- The Fearstalker
+					["coord"] = { 47.8, 70.1, 1525 },
+					["g"] = {
+						i(175715),	-- Gargon Eye Ring
+					},
+				}),
 				q(57026, {	-- The Sinstone
 					["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
 					["provider"] = { "n", 155537 },	-- Rendle
@@ -192,6 +287,11 @@ _.Zones =
 					["sourceQuests"] = { 56978 },	-- To Darkhaven
 					["provider"] = { "n", 156374 },	-- Lord Chamberlain
 					["coord"] = { 63.2, 62.1, 1525 },
+				}),
+				q(57190, {	-- They Won't Know What Hit Them
+					["sourceQuests"] = { 60313 },	-- Dredhollow
+					["provider"] = { "n", 168217 },	-- The Accuser
+					["coord"] = { 43.2, 73.8, 1525 },
 				}),
 				q(56978, {	-- To Darkhaven
 					["sourceQuests"] = {
@@ -309,98 +409,6 @@ _.Zones =
 					-- ["sourceQuests"] = {  },
 				}),
 				-- The Rebellion (The Penitent Hunt)
-				q(58916, {	-- Dread Priming
-					["provider"] = { "n", 169087 },	-- The Fearstalker
-					["coord"] = { 50.6, 73.8, 1525 },
-					["sourceQuests"] = { 57098 },	-- The Grove of Terror
-				}),
-				q(58941, {	-- Alpha Bat
-					["provider"] = { "n", 163221 },	-- Flockmaster Sergio
-					["coord"] = { 51.2, 74.3, 1525 },
-					["sourceQuests"] = { 58916 },	-- Dread Priming
-					["g"] = {
-						i(175765),	-- Dredwing Shroud
-					},
-				}),
-				q(58936, {	-- Beast Control
-					["provider"] = { "o", 355296 },	-- Bounty: Beast Control	-- TODO: Need to add the Object
-					["coord"] = { 49.6, 75.9, 1525 },
-				}),
-				q(59014, {	-- King of the Hill
-					["provider"] = { "n", 163221 },	-- Flockmaster Sergio
-					["coord"] = { 51.2, 74.3, 1525 },
-					["sourceQuests"] = { 58941 },	-- Alpha Bat
-				}),
-				q(57131, {	-- Let the Hunt Begin
-					["provider"] = { "n", 168664 },	-- The Fearstalker
-					["coord"] = { 47.8, 70.1, 1525 },
-					["sourceQuests"] = { 59014 },	-- King of the Hill
-				}),
-				q(60514, {	-- Hunting Trophies
-					["provider"] = { "n", 156384 },	-- Huntmaster Constantin
-					["coord"] = { 48.5, 68.4, 1525 },
-					["sourceQuests"] = { 59014 },	-- King of the Hill
-				}),
-				q(57136, {	-- The Penitent Hunt
-					["provider"] = { "n", 168664 },	-- The Fearstalker
-					["coord"] = { 47.8, 70.1, 1525 },
-					["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
-					["g"] = {
-						i(175715),	-- Gargon Eye Ring
-					},
-				}),
-				q(57164, {	-- Devour This
-					["provider"] = { "n", 168664 },	-- The Fearstalker
-					["coord"] = { 47.8, 70.1, 1525 },
-					["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
-				}),
-				q(60506, {	-- The Accuser
-					["provider"] = { "n", 156499 },	-- The Fearstalker
-					["sourceQuests"] = {
-						57136,	-- The Penitent Hunt
-						57164,	-- Devour This
-					},
-				}),
-				q(57159, {	-- A Reflection of Truth
-					["provider"] = { "n", 156554 },	-- The Accuser
-					["coord"] = { 51.5, 59.1, 1525 },
-					["sourceQuests"] = { 60506 },	-- The Accuser
-				}),
-				q(60313, {	-- Dredhollow
-					["provider"] = { "n", 156554 },	-- The Accuser
-					["coord"] = { 51.5, 59.1, 1525 },
-					["sourceQuests"] = { 57159 },	-- A Reflection of Truth
-				}),
-				q(57189, {	-- Breaking the Hopebreakers
-					["provider"] = { "n", 168217 },	-- The Accuser
-					["coord"] = { 43.2, 73.8, 1525 },
-					["sourceQuests"] = { 60313 },	-- Dredhollow
-					["g"] = {
-						i(177646),	-- Vicious Dredblade
-						i(177651),	-- Nimble Hopebreaker's Rapier
-						i(177650),	-- Stalwart Hopebreaker's Rapier
-						i(177648),	-- Honed Dredglaive
-						i(177652),	-- Splinterball Morningstar
-						i(177634),	-- Vial of Volatile Essence
-						i(177633),	-- Steelbound Heater Shield
-					},
-				}),
-				q(57190, {	-- They Won't Know What Hit Them
-					["provider"] = { "n", 168217 },	-- The Accuser
-					["coord"] = { 43.2, 73.8, 1525 },
-					["sourceQuests"] = { 60313 },	-- Dredhollow
-				}),
-				q(59209, {	-- Rebel Reinforcements
-					["provider"] = { "n", 164394 },	-- General Draven
-					["coord"] = { 43.3, 74.0, 1525 },
-					["sourceQuests"] = { 60313 },	-- Dredhollow
-					["g"] = {
-						i(175427),	-- Hood of Pained Absolution
-						i(175429),	-- Nightcloaked Hood
-						i(175428),	-- Soul Hunter's Helm
-						i(175414),	-- Stoneforged Headgear
-					},
-				}),
 				q(59256, {	-- The Fearstalker
 					["provider"] = { "n", 168468 },	-- The Accuser
 					["coord"] = { 39.6, 81.2, 1525 },

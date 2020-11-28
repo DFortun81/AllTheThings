@@ -225,6 +225,9 @@ _.WorldDrops =
 			}),
 			i(169475),	-- Barnacled Lockbox
 			i(180532),	-- Laestrite Lockbox
+			i(179311),	-- Oxxein Lockbox
+			i(180522),	-- Phaedrum Lockbox
+			i(180533),	-- Solenium Lockbox
 		},
 	}),
 };

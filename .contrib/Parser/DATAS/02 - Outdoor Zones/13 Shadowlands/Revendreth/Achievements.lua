@@ -151,7 +151,6 @@ _.Zones =
 						["objectID"] = 349793,	-- Wayfarer's Abandoned Spoils
 						["questID"] = 59884,
 						["coord"] = { 68.4, 64.4, 1525 },
-						["crs"] = { 174969 },	-- Bounding Shroom
 					}),
 					crit(13, {	-- Remlate's Hidden Cache
 						["description"] = "Hug the cliff from the nearby flight path around the building.\nDrops 2 random green zone drops.",
@@ -160,12 +159,10 @@ _.Zones =
 						["coord"] = { 61.5, 58.6, 1525 },
 					}),
 					crit(14, {	-- Fleeing Soul's Bundle
-						-- ["objectID"] = ###,	-- Fleeing Soul's Bundle
-						-- ["coord"] = { ##, ##, 1525 },
-						-- ["questID"] = ###,
-						-- ["description"] = "",
-						["g"] = {
-						},
+						["description"] = "Use the Bounding Shroom at 47.0, 58.3 to reach the treasure.",
+						["objectID"] = 349795,	-- Fleeing Soul's Bundle
+						["coord"] = { 46.4, 58.1, 1525 },
+						["questID"] = 59886,
 					}),
 					crit(15, {	-- Gilded Plum Chest
 						-- ["objectID"] = ###,	-- Gilded Plum Chest
@@ -176,10 +173,11 @@ _.Zones =
 						},
 					}),
 					crit(16, {	-- Abandoned Curios
+						["sourceQuests"] = { 57159 },	-- A Reflection of Truth
+						["description"] = "You can reach it with Door of Shadows or by jumping down from the road above.",
 						["objectID"] = 349797,	-- Abandoned Curios
-						["coord"] = { 51.8, 59.5, 1525 },
 						["questID"] = 59888,
-						-- ["description"] = "",
+						["coord"] = { 51.8, 59.5, 1525 },
 						["g"] = {
 							i(182744),	-- Ornate Belt Buckle
 						},

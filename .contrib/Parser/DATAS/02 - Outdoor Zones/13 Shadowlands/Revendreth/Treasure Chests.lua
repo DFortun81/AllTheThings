@@ -60,6 +60,18 @@ _.Zones =
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 75.8, 77.3, 1525 },
 				}),
+				o(354113, {	-- Stoneborn Satchel
+				--	TODO: verify objectID.  it's probably this one or 354111, the only ones that didn't have confirmed locations so far
+					["description"] = "You can jump down from the ledge above or use the Bounding Shroom at 52.5, 59.2 to reach the treasure.",
+					["questID"] = 60983,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 53.6, 57.3, 1525 },
+					["g"] = {
+						i(182726, {	-- Nadja's Letter
+							["questID"] = 62182,	-- A Letter From Nadja
+						}),
+					},
+				}),
 			}),
 		}),
 	}),

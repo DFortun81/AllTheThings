@@ -38,6 +38,7 @@ i(129210);	-- Fel Crystal Fragments
 i(127768);	-- Fel Petal
 i(37431);	-- Fetch Ball
 i(139792);	-- Fruitful Bauble
+i(180874);	-- Gargon Whistle
 i(44618);	-- Glass of Aged Dalaran Red
 i(18269);	-- Gordok Green Grog
 i(19296);	-- Greater Darkmoon Prize

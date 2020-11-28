@@ -17,10 +17,10 @@ _.Zones =
 					["crs"] = { 171123 },	-- Lost Soul
 				}),
 				p(3014, {	-- Mire Creeper
-					--["crs"] = {  },	-- Mire Creeper
+					["crs"] = { 173555 },	-- Mire Creeper
 				}),
 				p(3007, {	-- Rosetipped Spiderling
-					--["crs"] = {  },	-- Rosetipped Spiderling
+					["crs"] = { 173506 },	-- Rosetipped Spiderling
 				}),
 			}),
 		}),
