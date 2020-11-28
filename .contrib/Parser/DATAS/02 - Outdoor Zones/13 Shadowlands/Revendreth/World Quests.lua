@@ -7,12 +7,20 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(-34,  {	-- World Quests
+				q(59905, {	-- A Curious Cache
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60655, {	-- A Stolen Stone Fiend
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
 						i(183859),	-- Dal's Courier Badge
 					},
+				}),
+				q(61879, {	-- Ashes Will Fall
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
 				}),
 				q(58144, {	-- Battered and Bruised
 					["isWorldQuest"] = true,
@@ -42,6 +50,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61544, {	-- Herbalism: Lush Widowbloom
+					["requireSkill"] = HERBALISM,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59643, {	-- It's Race Day in the Ramparts!
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -59,6 +72,10 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(59617, {	-- Stone Fiend Saboteurs
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(60656 , {	-- Summon Your Sins
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),

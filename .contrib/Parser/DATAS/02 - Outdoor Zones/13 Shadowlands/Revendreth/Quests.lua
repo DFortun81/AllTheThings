@@ -7,15 +7,97 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(QUESTS, {
+				q(59710, {	-- A Curious Invitation
+					["sourceQuests"] = { 57174 },	-- The Stoneborn
+					["provider"] = { "n", 165859 },	-- Dimwiddle
+					["coord"] = { 60.7, 62.5, 1525 },
+				}),
+				q(58654, {	-- A Plea to the Harvesters
+					["sourceQuests"] = { 57174 },	-- The Stoneborn
+					["provider"] = { "n", 156822 },	-- Mistress Mihaela
+					["coord"] = { 61.3, 63.7, 1525 },
+				}),
 				q(60467, {	-- A Rousing Aroma
 					["provider"] = { "n", 168455 },	-- Sabina
 					["coord"] = { 35.0, 53.9, 1525 },
 				}),
+				q(58433, {	-- Anima Attrition
+					["sourceQuests"] = { 56942 },	-- On The Road Again
+					["provider"] = { "n", 155533 },	-- Lord Chamberlain
+					["coord"] = { 67.5, 68.5, 1525 },
+				}),
+				q(60176, {	-- Bring Out Your Tithe
+					["sourceQuests"] = { 57174 },	-- The Stoneborn
+					["provider"] = { "n", 156822 },	-- Mistress Mihaela
+					["coord"] = { 61.3, 63.7, 1525 },
+				}),
+				q(57007, {	-- Invitation of the Master
+					["sourceQuests"] = { 57026 },	-- The Sinstone
+					["provider"] = { "n", 155533 },	-- Lord Chamberlain
+					["coord"] = { 69.0, 81.7, 1525 },
+				}),
+				q(60509, {	-- Not My Job
+					["sourceQuests"] = { 56942 },	-- On The Road Again
+					["provider"] = { "n", 158057 },	-- Rendle
+					["coord"] = { 67.5, 68.5, 1525 },
+				}),
+				q(56942, {	-- On The Road Again
+					["sourceQuests"] = {
+						56829,	-- Bottom Feeders
+						57381,	-- The Greatest Duelist
+					},
+					["provider"] = { "n", 155668 },	-- Rendle
+					["coord"] = { 65.3, 66.2, 1525 },
+				}),
+				q(60177, {	-- Reason for the Treason
+					["sourceQuests"] = { 57174 },	-- The Stoneborn
+					["provider"] = { "n", 167489 },	-- Lajos
+					["coord"] = { 62.2, 61.3, 1525 },
+				}),
+				q(56955, {	-- Rebels on the Road
+					["sourceQuests"] = { 56942 },	-- On The Road Again
+					["provider"] = { "n", 155533 },	-- Lord Chamberlain
+					["coord"] = { 67.5, 68.5, 1525 },
+					["g"] = {
+						i(175439),	-- Sash of Pained Absolution
+						i(175441),	-- Nightcloaked Belt
+						i(175440),	-- Soul Hunter's Belt
+						i(175438),	-- Stoneforged Girdle
+					},
+				}),
 				q(60480, {	-- The Endmire
-				--	TODO: unless 'invitation of the master' is a breadcrumb, it's not a SQ for this... i was able to pick it up before even turning in "a plea to revendreth"
-				--	["sourceQuests"] = { 57007 },	-- Invitation of the Master
 					["provider"] = { "n", 168618 },	-- Tessle the Snitch
 					["coord"] = { 65.1, 63.5, 1525 },
+				}),
+				q(57381, {	-- The Greatest Duelist
+					["sourceQuests"] = { 57007 },	-- Invitation of the Master
+					["provider"] = { "n", 157550 },	-- Nadjia the Mistblade
+					["coord"] = { 65.7, 64.6, 1525 },
+					["g"] = {
+						i(175730),	-- Master Duelist's Chit
+					},
+				}),
+				q(57026, {	-- The Sinstone
+					["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
+					["provider"] = { "n", 155537 },	-- Rendle
+					["coord"] = { 69.9, 82.6, 1525 },
+				}),
+				q(57174, {	-- The Stoneborn
+					["sourceQuests"] = { 56978 },	-- To Darkhaven
+					["provider"] = { "n", 156374 },	-- Lord Chamberlain
+					["coord"] = { 63.2, 62.1, 1525 },
+				}),
+				q(56978, {	-- To Darkhaven
+					["sourceQuests"] = {
+						56955,	-- Rebels on the Road
+						58433,	-- Anima Attrition
+					},
+					["provider"] = { "n", 168341 },	-- Lady Moonberry
+					["coord"] = { 70.7, 84.1, 1525 },
+				}),
+				q(60277, {	-- WANTED: Aggregate of Doom
+					["provider"] = { "o", 351885 },	-- Wanted: Aggregate of Doom
+					["coord"] = { 59.1, 69.2, 1525 },
 				}),
 				q(60278, {	-- WANTED: Duke Anton
 					["provider"] = { "o", 351886 },	-- Wanted: Duke Anton
@@ -42,7 +124,29 @@ _.Zones =
 						i(180459),	-- Dessication Duster
 					},
 				}),
-				
+				q(60279, {	-- WANTED: The Pale Doom
+				--	TODO: figure out SQs.  was not available prior to turning in 'a plea to revendreth,' like many other 'wanted' quests.
+				--  was available in town while on 'to darkhaven' (prior to turning in), so availability is somewhere before that point.
+				--	mob is in the endmire, so possibly after 'the endmire'?  ('the endmire' is also available prior to doing 'a plea to revendreth')
+					["provider"] = { "o", 351889 },	-- Wanted: The Pale Doom
+					["coord"] = { 62.2, 63.5, 1525 },
+					["g"] =  {
+						i(180458),	-- Writ of Tithe Exemption
+					},
+				}),
+				q(58272, {	-- Words Have Power
+					["sourceQuests"] = { 56942 },	-- On The Road Again
+					["provider"] = { "o", 352490 },	-- Join the Rebellion!
+					["coord"] = { 67.7, 67.6, 1525 },
+					["g"] = {
+						i(177665),	-- Spectral Hankerchief
+					},
+				}),
+				q(56829, {	-- Bottom Feeders
+					["sourceQuests"] = { 57007 },	-- Invitation of the Master
+					["provider"] = { "n", 155668 },	-- Rendle
+					["coord"] = { 65.3, 66.2, 1525 },
+				}),
 				
 				
 				
@@ -98,92 +202,7 @@ _.Zones =
 					-- ["coord"] = { ##, ##, 1525 },
 					-- ["sourceQuests"] = {  },
 				}),
-				q(60279, {	-- WANTED: The Pale Doom
-					["provider"] = { "o", 351889 },	-- Wanted: The Pale Doom
-					["coord"] = { 62.2, 63.5, 1525 },
-					["g"] =  {
-						i(180458),	-- Writ of Tithe Exemption
-					},
-				}),
-
-
-
-				-- Welcome to Revendreth
-				q(57026, {	-- The Sinstone
-					["provider"] = { "n", 155537 },	-- Rendle
-					["coord"] = { 69.9, 82.6, 1525 },
-					["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
-				}),
-				q(57007, {	-- Invitation of the Master
-					["provider"] = { "n", 155533 },	-- Lord Chamberlain
-					["coord"] = { 69.0, 81.7, 1525 },
-					["sourceQuests"] = { 57026 },	-- The Sinstone
-				}),
-				q(56829, {	-- Bottom Feeders
-					["provider"] = { "n", 155668 },	-- Rendle
-					["coord"] = { 65.3, 66.2, 1525 },
-					["sourceQuests"] = { 57007 },	-- Invitation of the Master
-				}),
-				q(57381, {	-- The Greatest Duelist
-					["provider"] = { "n", 157550 },	-- Nadjia the Mistblade
-					["coord"] = { 65.7, 64.6, 1525 },
-					["sourceQuests"] = { 57007 },	-- Invitation of the Master
-					["g"] = {
-						i(175730),	-- Master Duelist's Chit
-					},
-				}),
-				q(56942, {	-- On The Road Again
-					["provider"] = { "n", 155668 },	-- Rendle
-					["coord"] = { 65.3, 66.2, 1525 },
-					["sourceQuests"] = {
-						56829,	-- Bottom Feeders
-						57381,	-- The Greatest Duelist
-					},
-				}),
-				q(56955, {	-- Rebels on the Road
-					["provider"] = { "n", 155533 },	-- Lord Chamberlain
-					["coord"] = { 67.5, 68.5, 1525 },
-					["sourceQuests"] = { 56942 },	-- On The Road Again
-					["g"] = {
-						i(175439),	-- Sash of Pained Absolution
-						i(175441),	-- Nightcloaked Belt
-						i(175440),	-- Soul Hunter's Belt
-						i(175438),	-- Stoneforged Girdle
-					},
-				}),
-				q(58433, {	-- Anima Attrition
-					["provider"] = { "n", 155533 },	-- Lord Chamberlain
-					["coord"] = { 67.5, 68.5, 1525 },
-					["sourceQuests"] = { 56942 },	-- On The Road Again
-				}),
-				q(58272, {	-- Words Have Power
-					["provider"] = { "o", 352490 },	-- Join the Rebellion!
-					["coord"] = { 67.7, 67.6, 1525 },
-					["sourceQuests"] = { 56942 },	-- On The Road Again
-					["g"] = {
-						i(177665),	-- Spectral Hankerchief
-					},
-				}),
-				q(56978, {	-- To Darkhaven
-					["provider"] = { "n", 168341 },	-- Lady Moonberry
-					["coord"] = { 70.7, 84.1, 1525 },
-					["sourceQuests"] = {
-						56955,	-- Rebels on the Road
-						58433,	-- Anima Attrition
-						58272,	-- Words Have Power
-					},
-				}),
 				-- Meet the Master (The Master)
-				q(57174, {	-- The Stoneborn
-					["provider"] = { "n", 156374 },	-- Lord Chamberlain
-					["coord"] = { 63.2, 62.1, 1525 },
-					["sourceQuests"] = { 56978 },	-- To Darkhaven
-				}),
-				q(58654, {	-- A Plea to the Harvesters
-					["provider"] = { "n", 156822 },	-- Mistress Mihaela
-					["coord"] = { 61.3, 63.7, 1525 },
-					["sourceQuests"] = { 57174 },	-- The Stoneborn
-				}),
 				q(57178, {	-- The Master Awaits
 					["provider"] = { "n", 155541 },	-- General Kaal
 					["coord"] = { 60.4, 60.9, 1525 },
@@ -528,22 +547,7 @@ _.Zones =
 				}),
 				-- End of Zone Achievement Quests
 				-- The Duelist's Debt
-				q(59710, {	-- A Curious Invitation
-					["provider"] = { "n", 165859 },	-- Dimwiddle
-					["coord"] = { 60.7, 62.5, 1525 },
-					["sourceQuests"] = { 57174 },	-- The Stoneborn
-				}),
 				-- Tithes of Darkhaven
-				q(60176, {	-- Bring Out Your Tithe
-					["provider"] = { "n", 156822 },	-- Mistress Mihaela
-					["coord"] = { 61.3, 63.7, 1525 },
-					["sourceQuests"] = { 57174 },	-- The Stoneborn
-				}),
-				q(60177, {	-- Reason for the Treason
-					["provider"] = { "n", 167489 },	-- Lajos
-					["coord"] = { 62.2, 61.3, 1525 },
-					["sourceQuests"] = { 57174 },	-- The Stoneborn
-				}),
 				q(60178, {	-- And Then There Were None
 					["provider"] = { "n", 167489 },	-- Lajos
 					["coord"] = { 62.2, 61.3, 1525 },
@@ -554,11 +558,6 @@ _.Zones =
 					},
 				}),
 				-- Dirty Jobs
-				q(60509, {	-- Not My Job
-					["provider"] = { "n", 158057 },	-- Rendle
-					["coord"] = { 67.5, 68.5, 1525 },
-					["sourceQuests"] = { 56942 },	-- On The Road Again
-				}),
 				q(57471, {	-- It's a Dirty Job
 					["provider"] = { "n", 157846 },	-- Rendle
 					["coord"] = { 72.5, 73.2, 1525 },

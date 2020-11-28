@@ -156,11 +156,14 @@ _.Zones =
 					},
 				}),
 				n(166993, {	-- Huntmaster Petrus
-					["coord"] = { 61.8, 79.2, 1525 },
-					--["questID"] = ,
+					["questID"] = 60022,
 					["isDaily"] = true,
+					["coord"] = { 61.8, 79.2, 1525 },
+					["crs"] = { 165891 },	-- Reza
 					["g"] = {
-						ach(14310, crit(20)),	-- Adventurer of Revendreth / Huntmaster Petrus
+						crit(20, {	-- Huntmaster Petrus
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
 					},
 				}),
 				n(160640, {	-- Innervus
