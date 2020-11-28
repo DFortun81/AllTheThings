@@ -3746,6 +3746,7 @@ app.L = {
 		[253179] = "Sunblossom",
 		[253181] = "Thornstalk",
 		[253280] = "Leystone Seam",
+		[253994] = "Seemingly Unguarded Treasure",
 		[254007] = "Executioner's Altar",
 		[254025] = "Small Treasure Chest",
 		[254027] = "Small Treasure Chest",

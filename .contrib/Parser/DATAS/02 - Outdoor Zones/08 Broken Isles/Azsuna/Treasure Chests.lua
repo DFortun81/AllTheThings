@@ -7,11 +7,6 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
 			n(TREASURES, {
-				--[[ TODO: find out objectID
-				o(, {	-- Book Treasure
-					["questID"] = 37980,
-					["coord"] = { 58.38, 12.28, 630 },
-				}),]]--
 				o(240638, {	-- Disputed Treasure
 					["questID"] = 38365,
 					["coord"] = { 55.9, 56.9, 630 },
@@ -35,6 +30,12 @@ _.Zones =
 				o(250107, {	-- Glimmering Treasure Chest
 					["questID"] = 42297,
 					["coord"] = { 43.4, 22.4, 630 },
+				}),
+				o(253994, {	-- Seemingly Unguarded Treasure
+					["questID"] = 38239,
+					["g"] = {
+						i(129070),	-- Ring of the Dread Pirate Bob
+					},
 				}),
 				o(269064, {	-- Small Treasure Chest (need to verify objectID)
 					["questID"] = 42285,
@@ -141,6 +142,10 @@ _.Zones =
 					["questID"] = 42291,
 					["coord"] = { 45.4, 67.0, 632 },
 				}),
+				o(240635, {	-- Treasure Chest
+					["questID"] = 37980,
+					["coord"] = { 58.4, 12.3, 630 },
+				}),
 				o(240629, {	-- Treasure Chest
 					["questID"] = 37829,
 					["coord"] = { 53.2, 64.5, 630 },
@@ -165,8 +170,9 @@ _.Zones =
 					["coord"] = { 55.6, 18.5, 630 },
 				}),
 				o(240634, {	-- Treasure Chest
+					["description"] = "At the back of the room, behind some Withered Leyfeeders channeling a floating mana crystal.",
 					["questID"] = 37958,
-					["coord"] = { 57.9, 12.2, 630 },
+					["coord"] = { 57.3, 12.9, 630 },
 				}),
 				o(239803, {	-- Treasure Chest
 					["questID"] = 37832,
