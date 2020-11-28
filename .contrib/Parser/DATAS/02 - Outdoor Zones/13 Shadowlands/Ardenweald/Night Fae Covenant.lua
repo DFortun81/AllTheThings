@@ -477,10 +477,32 @@ _.Zones =
 							follower(1285),	-- Te'zan
 						},
 					}),
+					--	Unknown placement, reported in #errors
+					-- Anima Conductor Tier 1
+					q(63067, {	-- Root Restoration
+						["description"] = "Requires researching Tier 1 Anima Conductor",
+						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+						["coord"] = { 39.6, 55.0, 1702 },
+						-- Night Fae only
+					}),
+					q(60723, {	-- The Roots Thirst
+						["sourceQuests"] = { 63067 },	-- Root Restoration
+						["provider"] = { "n", 167196 },	-- Sesselie
+						["coord"] = { 49.1, 39.1, 1565 },
+					}),
 				}),
 				n(RARES, {
 				}),
 				n(TREASURES, {
+					o(356820, {	-- Large Lunarlight Pod
+						["description"] = "Requires channeling the Anima Conductor to Glitterfall Basin.  To unlock the chest, run over nearby Lunarlight Buds.",
+						["repeatable"] = true,	-- ??
+						["questID"] = 61691,
+						["coord"] = { 51.7, 32.3, 1565 },
+						["g"] = {
+							i(181457),	-- Wakener's Frond
+						},
+					}),
 				}),
 				n(VENDORS, {
 					n(174914, {	-- Elwyn <Renown Quartermaster>

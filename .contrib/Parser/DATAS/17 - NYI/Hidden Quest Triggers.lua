@@ -3014,6 +3014,8 @@ _.HiddenQuestTriggers =
 		q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)
 		q(62939),	-- triggered after watching the cutscene for Stand as One / landing in Oribos
 		q(63177),	-- Triggered after using Encased Riftwalker Essence
+		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
+		q(63414),	-- Wrath of the Jailer weekly event
 		q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
 
 		-- Torghast
@@ -3046,6 +3048,11 @@ _.HiddenQuestTriggers =
 		q(63363),	-- Triggered after completing last Adventure tutorial mission
 		q(60634),	-- Triggered after completing last Adventure tutorial mission
 		q(63367),	-- Triggered after completing last Adventure tutorial mission
+		q(61692),	-- \
+		q(61693),	--  \
+		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3 
+		q(61695),	--  /
+		q(61696),	-- /
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

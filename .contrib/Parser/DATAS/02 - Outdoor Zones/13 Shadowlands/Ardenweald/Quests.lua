@@ -835,11 +835,6 @@ _.Zones =
 					["coord"] = { 52.7, 56.1, 1565 },
 					["sourceQuests"] = { 57583 },	-- Through the Veil
 				}),
-				-- Anima Conductor Tier 1
-				q(60723, {	-- The Roots Thirst
-					["provider"] = { "n", 167196 },	-- Sesselie
-					["coord"] = { 49.1, 39.1, 1565 },
-				}),
 				-- Bonus Objective
 				q(60840, {	-- Wild Hunt Offensive
 				}),

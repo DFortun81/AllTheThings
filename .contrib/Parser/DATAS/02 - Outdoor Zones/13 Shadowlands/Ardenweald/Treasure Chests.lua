@@ -43,16 +43,6 @@ _.Zones =
 					["coord"] = { 32.8, 30.0, 1565 },
 				}),
 				--]]
-				o(356820, {	-- Large Lunarlight Pod
-					["coord"] = { 65.3, 23.5, 1565 },
-				--	["questID"] = 60717,	-- this is for Faerie Stash at 65.3, 23.5, so unless blizz reused the same questID for no reason, this is wrong
-					["repeatable"] = true,
-				}),
-				o(356820, {	-- Large Lunarlight Pod
-					["coord"] = { 51.7, 32.3, 1565 },
-					--["questID"] = 60715,
-					["repeatable"] = true,
-				}),
 				n(170406,	{	-- Wish Cricket
 					["repeatable"] = true,
 					["questID"] = 60829,
