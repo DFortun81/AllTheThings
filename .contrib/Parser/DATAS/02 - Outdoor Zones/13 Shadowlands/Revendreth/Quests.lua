@@ -12,6 +12,17 @@ _.Zones =
 					["provider"] = { "n", 165859 },	-- Dimwiddle
 					["coord"] = { 60.7, 62.5, 1525 },
 				}),
+				q(59232, {	-- A Lesson in Humility
+					["sourceQuests"] = { 57182 },	-- The Accuser's Fate
+					["provider"] = { "n", 156381 },	-- Sire Denathrius
+					["coord"] = { 53.4, 63.9, 1525 },
+					["g"] = {
+						i(175436),	-- Mantle of Pained Absolution
+						i(175434),	-- Nightcloaked Spaulders
+						i(175437),	-- Soul Hunter's Monnion
+						i(175435),	-- Stoneforged Spaulders
+					},
+				}),
 				q(58654, {	-- A Plea to the Harvesters
 					["sourceQuests"] = { 57174 },	-- The Stoneborn
 					["provider"] = { "n", 156822 },	-- Mistress Mihaela
@@ -31,10 +42,62 @@ _.Zones =
 					["provider"] = { "n", 156822 },	-- Mistress Mihaela
 					["coord"] = { 61.3, 63.7, 1525 },
 				}),
+				q(59023, {	-- Ending the Inquisitor
+					["sourceQuests"] = { 57175 },	-- Inquisitor Vilhelm's Sinstone
+					["provider"] = { "n", 164166 },	-- Echelon
+					["coord"] = { 65.9, 47.1, 1525 },
+					["g"] = {
+						i(175442),	-- Wraps of Pained Absolution
+						i(175445),	-- Nightcloaked Bindings
+						i(175444),	-- Soul Hunter's Bracers
+						i(175443),	-- Stoneforged Vambraces
+					},
+				}),
+				q(59021, {	-- Herald Their Demise
+					["sourceQuests"] = {
+						58931,	-- Inquisitor Stelia's Sinstone
+						58932,	-- Temel, the Sin Herald
+					},
+					["provider"] = { "n", 163576 },	-- Echelon
+					["coord"] = { 67.4, 53.5, 1525 },
+					["g"] = {
+						i(175415),	-- Vestments of Pained Absolution
+						i(175431),	-- Leggings of Pained Absolution
+						i(175418),	-- Nightcloaked Vest
+						i(175433),	-- Nightcloaked Breeches
+						i(175417),	-- Soul Hunter's Hauberk
+						i(175432),	-- Soul Hunter's Leggings
+						i(175416),	-- Stoneforged Chestplate
+						i(175430),	-- Stoneforged Legguards
+					},
+				}),
+				q(57161, {	-- I Don't Get My Hands Dirty
+					["sourceQuests"] = { 57179 },	-- The Authority of Revendreth
+					["provider"] = { "n", 156605 },	-- Lord Chamberlain
+					["coord"] = { 58.0, 49.5, 1525 },
+					["g"] = {
+						i(175714),	-- The Chamberlain's Tarnished Signet
+					},
+				}),
+				q(58931, {	-- Inquisitor Stelia's Sinstone
+					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
+					["provider"] = { "n", 156823 },	-- Lord Chamberlain
+					["coord"] = { 64.7, 49.9, 1525 },
+				}),
+				q(57175, {	-- Inquisitor Vilhelm's Sinstone
+					["sourceQuests"] = { 59021 },	-- Herald Their Demise
+					["provider"] = { "n", 163576 },	-- Echelon
+					["coord"] = { 67.4, 53.5, 1525 },
+				}),
 				q(57007, {	-- Invitation of the Master
 					["sourceQuests"] = { 57026 },	-- The Sinstone
 					["provider"] = { "n", 155533 },	-- Lord Chamberlain
 					["coord"] = { 69.0, 81.7, 1525 },
+				}),
+				q(60487, {	-- It Used to Be Quiet Here
+					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
+					["provider"] = { "n", 168698 },	-- Chiselgrump
+					["coord"] = { 69.5, 53.3, 1525 },
 				}),
 				q(60509, {	-- Not My Job
 					["sourceQuests"] = { 56942 },	-- On The Road Again
@@ -65,6 +128,39 @@ _.Zones =
 						i(175438),	-- Stoneforged Girdle
 					},
 				}),
+				q(57176, {	-- Sinstone Delivery
+					["sourceQuests"] = { 59023 },	-- Ending the Inquisitor
+					["provider"] = { "n", 164166 },	-- Echelon
+					["coord"] = { 65.9, 47.1, 1525 },
+				}),
+				q(58932, {	-- Temel, the Sin Herald
+					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
+					["description"] = "Automatically offered after Echelon drops you off during Inquisitor Stelia's Sinstone.",
+					["coord"] = { 69.4, 53.9, 1525 },
+				}),
+				q(57182, {	-- The Accuser's Fate
+					["sourceQuests"] = { 57180 },	-- The Accuser's Secret
+					["provider"] = { "n", 157084 },	-- Lord Chamberlain
+					["coord"] = { 66.3, 50.5, 1525 },
+				}),
+				q(57180, {	-- The Accuser's Secret
+					["sourceQuests"] = { 57176 },	-- Sinstone Delivery
+					["provider"] = { "n", 157069 },	-- Lord Chamberlain
+					["coord"] = { 65.6, 49.6, 1525 },
+					["g"] = {
+						i(175732),	-- Tablet of Despair
+					},
+				}),
+				q(57173, {	-- The Accuser's Sinstone
+					["sourceQuests"] = { 57161 },	-- I Don't Get My Hands Dirty
+					["provider"] = { "n", 156842 },	-- Echelon
+					["coord"] = { 64.7, 50.0, 1525 },
+				}),
+				q(57179, {	-- The Authority of Revendreth
+					["sourceQuests"] = { 57178 },	-- The Master Awaits
+					["provider"] = { "n", 156644 },	-- Sire Denathrius
+					["coord"] = { 57.4, 49.4, 1525 },
+				}),
 				q(60480, {	-- The Endmire
 					["provider"] = { "n", 168618 },	-- Tessle the Snitch
 					["coord"] = { 65.1, 63.5, 1525 },
@@ -76,6 +172,16 @@ _.Zones =
 					["g"] = {
 						i(175730),	-- Master Duelist's Chit
 					},
+				}),
+				q(57098, {	-- The Grove of Terror
+					["sourceQuests"] = { 59232 },	-- A Lesson in Humility
+					["provider"] = { "n", 156381 },	-- Sire Denathrius
+					["coord"] = { 53.4, 63.9, 1525 },
+				}),
+				q(57178, {	-- The Master Awaits
+					["sourceQuests"] = { 58654 },	-- A Plea to the Harvesters
+					["provider"] = { "n", 155541 },	-- General Kaal
+					["coord"] = { 60.4, 60.9, 1525 },
 				}),
 				q(57026, {	-- The Sinstone
 					["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
@@ -202,113 +308,7 @@ _.Zones =
 					-- ["coord"] = { ##, ##, 1525 },
 					-- ["sourceQuests"] = {  },
 				}),
-				-- Meet the Master (The Master)
-				q(57178, {	-- The Master Awaits
-					["provider"] = { "n", 155541 },	-- General Kaal
-					["coord"] = { 60.4, 60.9, 1525 },
-					["sourceQuests"] = { 58654 },	-- A Plea to the Harvestersn
-				}),
-				q(57179, {	-- The Authority of Revendreth
-					["provider"] = { "n", 156644 },	-- Sire Denathrius
-					["coord"] = { 57.4, 49.4, 1525 },
-					["sourceQuests"] = { 57178 },	-- The Master Awaits
-				}),
-				-- The Accuser's Secret (The Accuser)
-				q(57161, {	-- I Don't Get My Hands Dirty
-					["provider"] = { "n", 156605 },	-- Lord Chamberlain
-					["coord"] = { 58.0, 49.5, 1525 },
-					["sourceQuests"] = { 57179 },	-- The Authority of Revendreth
-					["g"] = {
-						i(175714),	-- The Chamberlain's Tarnished Signet
-					},
-				}),
-				q(57173, {	-- The Accuser's Sinstone
-					["provider"] = { "n", 156842 },	-- Echelon
-					["coord"] = { 64.7, 50.0, 1525 },
-					["sourceQuests"] = { 57161 },	-- I Don't Get My Hands Dirty
-				}),
-				q(58931, {	-- Inquisitor Stelia's Sinstone
-					["provider"] = { "n", 156823 },	-- Lord Chamberlain
-					["coord"] = { 64.7, 49.9, 1525 },
-					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
-				}),
-				q(58932, {	-- Temel, the Sin Herald
-					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
-				}),
-				q(60487, {	-- It Used to Be Quiet Here
-					["provider"] = { "n", 168698 },	-- Chiselgrump
-					["coord"] = { 69.5, 53.3, 1525 },
-					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
-				}),
-				q(59021, {	-- Herald Their Demise
-					["provider"] = { "n", 163576 },	-- Echelon
-					["coord"] = { 67.4, 53.5, 1525 },
-					["sourceQuests"] = {
-						58931,	-- Inquisitor Stelia's Sinstone
-						58932,	-- Temel, the Sin Herald
-					},
-					["g"] = {
-						i(175415),	-- Vestments of Pained Absolution
-						i(175431),	-- Leggings of Pained Absolution
-						i(175418),	-- Nightcloaked Vest
-						i(175433),	-- Nightcloaked Breeches
-						i(175417),	-- Soul Hunter's Hauberk
-						i(175432),	-- Soul Hunter's Leggings
-						i(175416),	-- Stoneforged Chestplate
-						i(175430),	-- Stoneforged Legguards
-					},
-				}),
-				q(57175, {	-- Inquisitor Vilhelm's Sinstone
-					["provider"] = { "n", 163576 },	-- Echelon
-					["coord"] = { 67.4, 53.5, 1525 },
-					["sourceQuests"] = { 57179 },	-- The Authority of Revendreth
-				}),
-				q(59023, {	-- Ending the Inquisitor
-					["provider"] = { "n", 164166 },	-- Echelon
-					["coord"] = { 65.9, 47.1, 1525 },
-					["sourceQuests"] = { 57175 },	-- Inquisitor Vilhelm's Sinstone
-					["g"] = {
-						i(175442),	-- Wraps of Pained Absolution
-						i(175445),	-- Nightcloaked Bindings
-						i(175444),	-- Soul Hunter's Bracers
-						i(175443),	-- Stoneforged Vambraces
-					},
-				}),
-				q(57176, {	-- Sinstone Delivery
-					["provider"] = { "n", 164166 },	-- Echelon
-					["coord"] = { 65.9, 47.1, 1525 },
-					["sourceQuests"] = { 59023 },	-- Ending the Inquisitor
-				}),
-				q(57180, {	-- The Accuser's Secret
-					["provider"] = { "n", 157069 },	-- Lord Chamberlain
-					["coord"] = { 65.6, 49.6, 1525 },
-					["sourceQuests"] = { 57176 },	-- Sinstone Delivery
-					["g"] = {
-						i(175732),	-- Tablet of Despair
-					},
-				}),
-				q(57182, {	-- The Accuser's Fate
-					["provider"] = { "n", 157084 },	-- Lord Chamberlain
-					["coord"] = { 66.3, 50.5, 1525 },
-					["sourceQuests"] = { 57180 },	-- The Accuser's Secret
-				}),
-				q(59232, {	-- A Lesson in Humility
-					["provider"] = { "n", 156381 },	-- Sire Denathrius
-					["coord"] = { 53.4, 63.9, 1525 },
-					["sourceQuests"] = { 57182 },	-- The Accuser's Fate
-					["g"] = {
-						i(175436),	-- Mantle of Pained Absolution
-						i(175434),	-- Nightcloaked Spaulders
-						i(175437),	-- Soul Hunter's Monnion
-						i(175435),	-- Stoneforged Spaulders
-					},
-				}),
 				-- The Rebellion (The Penitent Hunt)
-				q(57098, {	-- The Grove of Terror
-					["provider"] = { "n", 156381 },	-- Sire Denathrius
-					["coord"] = { 53.4, 63.9, 1525 },
-					["sourceQuests"] = { 59232 },	-- A Lesson in Humility
-				}),
 				q(58916, {	-- Dread Priming
 					["provider"] = { "n", 169087 },	-- The Fearstalker
 					["coord"] = { 50.6, 73.8, 1525 },
@@ -601,6 +601,8 @@ _.Zones =
 				-- Revelations of the Light
 				-- Bonus Objective
 				q(57177, {	-- A Fresh Start
+				--	probably have to be on quest 57175, "Inquisitor Vilhelm's Sinstone" for this to show up
+					["sourceQuests"] = { 59021 },	-- Herald Their Demise
 				}),
 				q(59211, {	-- Forgotten Village
 				}),

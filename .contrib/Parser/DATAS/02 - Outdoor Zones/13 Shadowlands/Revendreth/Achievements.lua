@@ -11,11 +11,11 @@ _.Zones =
 					crit(1, {	-- Welcome to Revendreth
 						["sourceQuests"] = { 56978 },	-- To Darkhaven
 					}),
-					crit(2, {	-- Meet the Master
+					crit(2, {	-- The Master
 						["sourceQuests"] = { 57179 },	-- The Authority of Revendreth
 					}),
-					crit(3, {	-- The Accuser's Secret
-						["sourceQuests"] = { 57180 },	-- The Accuser's Secret
+					crit(3, {	-- The Accuser
+						["sourceQuests"] = { 59232 },	-- A Lesson in Humility
 					}),
 					crit(4, {	-- The Rebellion
 						["sourceQuests"] = { 59256 },	-- The Fearstalker
@@ -70,11 +70,12 @@ _.Zones =
 						},
 					}),
 					crit(3, {	-- The Count
-						["npcID"] = 173488,	-- The Count
+					--	["questID"] = 61065,
 						["coord"] = { 57.3, 43.3, 1525 },
-						--["questID"] = 61065,
+						["cost"] = { { "c", 1820, 99 } },	-- 99x Infused Ruby
+						["crs"] = { 173488 },	-- The Count
 						["g"] = {
-							i(182612),	-- The Count's Pendant
+							i(182612),	-- The Count's Pendant (PET!)
 						},
 					}),
 					crit(4, {	-- Rapier of the Fearless

@@ -7,21 +7,36 @@ _.Achievements =
 	n(-9956, {	-- Quests
 		n(-10100, {	-- Shadowlands
 			ach(14672, {	-- A Bit of This, A Bit of That
-				crit(1),		-- Faerie Pomander
-				crit(2),		-- Slumberweb
-				crit(3),		-- Vorkai War Paint
-				crit(4),		-- Gorm Whisperer
-				crit(5),		-- Tirnenn Resilience
-				crit(6),		-- Finnan's Luck
+			--	["_quests"] = { 60475 },	-- We'll Workshop It
+				["g"] = {
+					crit(1),		-- Faerie Pomander
+					crit(2),		-- Slumberweb
+					crit(3),		-- Vorkai War Paint
+					crit(4),		-- Gorm Whisperer
+					crit(5),		-- Tirnenn Resilience
+					crit(6),		-- Finnan's Luck
+				},
 			}),
-			ach(14741),		-- Aerial Ace
-			ach(14762),		-- Breaking the Stratus Fear
-			ach(14772),		-- Caught in a Bat Romance
+			ach(14741, {	-- Aerial Ace
+				["_quests"] = { 60911 },	-- Flight School: Flapping Frenzy
+			}),
+			ach(14762, {	-- Breaking the Stratus Fear
+				["_quests"] = { 60858 },	-- Flight School: Up and Away!
+			}),
+			ach(14772, {	-- Caught in a Bat Romance
+				["_quests"] = { 60602 },	-- Secret Service
+			}),
 			ach(14790),		-- Covenant Campaign
 			ach(14735, {	-- Flight School Graduate
-				crit(1),		-- Flight School: Falling With Style
-				crit(2),		-- Flight School: Up and Away!
-				crit(3),		-- Flight School: Flapping Frenzy
+				crit(1, {		-- Flight School: Falling With Style
+					["_quests"] = { 60844 },	-- Flight School: Falling With Style
+				}),
+				crit(2, {		-- Flight School: Up and Away!
+					["_quests"] = { 60858 },	-- Flight School: Up and Away!
+				}),
+				crit(3, {		-- Flight School: Flapping Frenzy
+					["_quests"] = { 60911 },	-- Flight School: Flapping Frenzy
+				}),
 			}),
 			ach(14334),		-- Into the Maw
 			ach(14280, {	-- Loremaster of Shadowlands
@@ -93,26 +108,44 @@ _.Achievements =
 				}),
 			}),
 			ach(14766, {	-- Parasoling
-				i(182695),		-- Weathered Purple Parasol
+				["_quests"] = { 59718 },	-- Parasol Peril
+				["g"] = {
+					i(182695),		-- Weathered Purple Parasol
+				},
 			}),
-			ach(14765),		-- Ramparts Racer
-			ach(14671),		-- Something's Not Quite Right....
+			ach(14765, {	-- Ramparts Racer
+				["_quests"] = { 59643 },	-- It's Race Day in the Ramparts!
+			}),
+			ach(14671, {	-- Something's Not Quite Right....
+				["_quests"] = { 60739 },	-- Tough Crowd
+			}),
 			ach(14233, {	-- Tea Tales
-				crit(1),		-- Tea Tales: Theotar
-				crit(2),		-- Tea Tales: Vulca
-				crit(3),		-- Tea Tales: Gubbins and Tubbins
-				crit(4),		-- Tea Tales: Lost Sybille
+				crit(1, {		-- Tea Tales: Theotar
+					["_quests"] = { 59848 },	-- Tea Tales: Theotar
+				}),
+				crit(2, {		-- Tea Tales: Vulca
+					["_quests"] = { 59850 },	-- Tea Tales: Vulca
+				}),
+				crit(3, {		-- Tea Tales: Gubbins and Tubbins
+					["_quests"] = { 59852 },	-- Tea Tales: Gubbins and Tubbins
+				}),
+				crit(4, {		-- Tea Tales: Lost Sybille
+					["_quests"] = { 59853 },	-- Tea Tales: Lost Sybille
+				}),
 			}),
 			ach(14758),		-- The World Beyond
 			ach(14737, {	-- What Bastion Remembered
-				crit(1),		-- Eridia, Hand of Purity
-				crit(2),		-- Kalisthene
-				crit(3),		-- Chyrus, Paragon of Humility
-				crit(4),		-- Kleia
-				crit(5),		-- Pelagos
-				crit(6),		-- Forgelite Sophone
-				crit(7),		-- Uther
-				crit(8),		-- Mikanikos
+			--	["_quests"] = { 59717 },	-- Things Remembered
+				["g"] = {
+					crit(1),		-- Eridia, Hand of Purity
+					crit(2),		-- Kalisthene
+					crit(3),		-- Chyrus, Paragon of Humility
+					crit(4),		-- Kleia
+					crit(5),		-- Pelagos
+					crit(6),		-- Forgelite Sophone
+					crit(7),		-- Uther
+					crit(8),		-- Mikanikos
+				},
 			}),
 		}),
 	}),

@@ -36,6 +36,7 @@ _.Zones =
 				i(177816),	-- Dredhollow Cape
 				i(179323),	-- Dredhollow Cudgel
 				i(179329),	-- Gargoyle Heartpiercer
+				i(182690),	-- Gilded Crusader's Morningstar
 				i(177813),	-- Hopebreaker's Badge
 				i(183420, {	-- Hopebreaker's Right Boot
 					i(183418, {	-- Hopebreaker's Boots
