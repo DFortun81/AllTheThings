@@ -31,6 +31,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61141, {	-- Deathfang's Favorite Toy
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61867, {	-- Extra Pieces
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -53,6 +57,10 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(58505, {	-- Planned Demise
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(60211, {	-- Spore Losers
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),

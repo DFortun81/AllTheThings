@@ -115,13 +115,9 @@ _.Zones =
 					["provider"] = { "n", 163576 },	-- Echelon
 					["coord"] = { 67.4, 53.5, 1525 },
 					["g"] = {
-						i(175415),	-- Vestments of Pained Absolution
 						i(175431),	-- Leggings of Pained Absolution
-						i(175418),	-- Nightcloaked Vest
 						i(175433),	-- Nightcloaked Breeches
-						i(175417),	-- Soul Hunter's Hauberk
 						i(175432),	-- Soul Hunter's Leggings
-						i(175416),	-- Stoneforged Chestplate
 						i(175430),	-- Stoneforged Legguards
 					},
 				}),
@@ -389,6 +385,22 @@ _.Zones =
 					["provider"] = { "n", 160091 },	-- Ta'ruca
 					-- ["coord"] = { ##, ##, 1525 },
 					["sourceQuests"] = { 58060 },	-- The Night Market
+				}),
+				q(59716, {	-- Comfortably Numb
+				--	TODO: add missing information, verify that both pants + chest come from this quest
+				--	["sourceQuests"] = {  },	-- 
+				--	["provider"] = { "n",  },	-- 
+				--	["coord"] = { , , 1525 },
+					["g"] = {
+						i(175496),	-- Pantaloons of Pained Absolution
+						i(175498),	-- Nightcloaked Pants
+						i(175497),	-- Soul Hunter's Legguards
+						i(175495),	-- Stoneforged Greaves
+						i(175415),	-- Vestments of Pained Absolution
+						i(175418),	-- Nightcloaked Vest
+						i(175417),	-- Soul Hunter's Hauberk
+						i(175416),	-- Stoneforged Chestplate
+					},
 				}),
 				q(62189, {	-- Parasol Components
 					["provider"] = { "o", 349798 },	-- Smuggled Cache

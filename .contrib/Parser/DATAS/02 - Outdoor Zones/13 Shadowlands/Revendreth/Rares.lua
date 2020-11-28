@@ -204,14 +204,6 @@ _.Zones =
 						i(180591),	-- Vial of Roiling Emotions
 					},
 				}),
-				n(162690, {	-- Nerissa Heartless
-					["coord"] = { 66.03, 35.32, 1525 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
-						i(182084),	-- Gorespine
-					},
-				}),
 				n(165175, {	-- Prideful Hulk
 					["coord"] = { 67.8, 82.0, 1525 },
 					["questID"] = 59580,
@@ -294,12 +286,16 @@ _.Zones =
 					},
 				}),
 				n(155779, {	-- Tomb Burster <Dread Crawler Queen>
-					["coord"] = { 42.8, 79.2, 1525 },
-					--["questID"] = ,
+					["description"] = "After you kill all the Crawler Eggs around Funguss and defeat several waves of Dread Crawlers, the rare will attack.",
+					["questID"] = 56877,
 					["isDaily"] = true,
+					["coord"] = { 42.8, 79.2, 1525 },
+					["crs"] = { 155777 },	-- Funguss
 					["g"] = {
-						ach(14310, crit(4)),	-- Adventurer of Revendreth / Tomb Burster <Dread Crawler Queen>
-						i(180584),	-- Rose Spiderling
+						crit(4, {	-- Tomb Burster
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180584),	-- Blushing Spiderling (PET!)
 					},
 				}),
 				n(160821, {	-- Worldedge Gorger

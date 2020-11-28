@@ -15,6 +15,10 @@ _.Zones =
 							["coord"] = { 34.2, 44.4, 1565 },
 							["crs"] = { 175778 },	-- Briarpaw
 						}),
+						crit(4, {	-- Mistwing
+							["coord"] = { 49.8, 41.6, 1565 },
+							["crs"] = { 175780 },	-- Mistwing
+						}),
 					},
 				}),
 				ach(14353, {	-- Ardenweald's a Stage

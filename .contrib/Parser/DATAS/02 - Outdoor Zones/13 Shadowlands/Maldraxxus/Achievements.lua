@@ -15,6 +15,10 @@ _.Zones =
 							["coord"] = { 61.8, 78.8, 1536 },
 							["crs"] = { 175784 },	-- Gelatinous
 						}),
+						crit(10, {	-- Glurp
+							["coord"] = { 26.4, 26.8, 1525 },
+							["crs"] = { 175786 },	-- Glurp
+						}),
 					},
 				}),
 				ach(14206, {	-- Blade of the Primus

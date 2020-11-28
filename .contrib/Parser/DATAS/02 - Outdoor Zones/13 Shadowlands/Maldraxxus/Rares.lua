@@ -108,11 +108,14 @@ _.Zones =
 					},
 				}),
 				n(162690, {	-- Nerissa Heartless
-					["coord"] = { 65.8, 36.0, 1536 },
 					["questID"] = 58851,
 					["isDaily"] = true,
+					["coord"] = { 65.8, 36.0, 1536 },
 					["g"] = {
-						ach(14308, crit(16)),	-- Adventurer of Maldraxxus / Nerissa Heartless
+						crit(16, {	-- Nerissa Heartless
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
+						i(182084),	-- Gorespine
 					},
 				}),
 				n(161857, { -- Nirvaska the Summoner

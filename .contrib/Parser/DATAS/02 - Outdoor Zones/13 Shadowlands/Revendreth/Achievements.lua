@@ -7,6 +7,15 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(ACHIEVEMENTS, {
+				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
+					["collectible"] = false,
+					["g"] = {
+						crit(6, {	-- The Countess
+							["coord"] = { 53.0, 41.8, 1525 },
+							["crs"] = { 175782 },	-- The Countess
+						}),
+					},
+				}),
 				ach(13878, {	-- The Master of Revendreth
 					crit(1, {	-- Welcome to Revendreth
 						["sourceQuests"] = { 56978 },	-- To Darkhaven

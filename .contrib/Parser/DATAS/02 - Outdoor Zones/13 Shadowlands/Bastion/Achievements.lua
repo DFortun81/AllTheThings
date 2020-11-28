@@ -14,6 +14,11 @@ _.Zones =
 					["g"] = {
 						crit(1, {	-- Crystalsnap
 							["coord"] = { 52.7, 74.2, 1533 },
+							["crs"] = { 175777 },	-- Crystalsnap
+						}),
+						crit(7, {	-- Digallo
+							["coord"] = { 25.8, 30.8, 1533 },
+							["crs"] = { 175783 },	-- Digallo
 						}),
 						crit(9, {	-- Kostos
 							["coord"] = { 46.6, 49.4, 1533 },
@@ -179,8 +184,8 @@ _.Zones =
 					}),
 					crit(13, {	-- Gift of Chyrus
 						["objectID"] = 353941,	-- Gift of Chyrus
-						["coord"] = { 78.5, 36.5, 1533 },
-						--["questID"] = ,
+					--	["questID"] = ,
+						["coord"] = { 70.4, 36.4, 1533 },
 					}),
 					crit(14, {	-- Gift of Thenios
 						["objectID"] = 353943,	-- Gift of Thenios
