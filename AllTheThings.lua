@@ -4695,7 +4695,7 @@ function app.GetQuestsForNPC(self, npc_id)
 		group = npcQuestsCache[npc_id]
 	else
 	--print(tostring(npc_id))
-		group, _, _ = SearchForField("creatureID", npc_id);
+		group, _, _ = app.SearchForField("creatureID", npc_id);
 		if not group then return false; end
 		npcQuestsCache[npc_id] = group
 	end
