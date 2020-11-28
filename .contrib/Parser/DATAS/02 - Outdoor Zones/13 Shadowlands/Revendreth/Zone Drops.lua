@@ -10,6 +10,7 @@ _.Zones =
 				i(178884),	-- Greater Prideful Spirit (Epic)
 				i(178883),	-- Divine Prideful Spirit (Rare)
 				i(178882),	-- Prideful Spirit Revendreth(Uncommon)
+				i(179311),	-- Oxxein Lockbox
 				i(177769),	-- Avowed Tormenter's Handwraps
 				i(177770),	-- Avowed Tormenter's Hood
 				i(177771),	-- Avowed Tormenter's Leggings
@@ -36,6 +37,7 @@ _.Zones =
 				i(177816),	-- Dredhollow Cape
 				i(179323),	-- Dredhollow Cudgel
 				i(179329),	-- Gargoyle Heartpiercer
+				i(182690),	-- Gilded Crusader's Morningstar
 				i(177813),	-- Hopebreaker's Badge
 				i(183420, {	-- Hopebreaker's Right Boot
 					i(183418, {	-- Hopebreaker's Boots

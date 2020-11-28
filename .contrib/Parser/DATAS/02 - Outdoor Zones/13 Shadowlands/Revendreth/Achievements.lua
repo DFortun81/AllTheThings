@@ -9,45 +9,45 @@ _.Zones =
 			n(ACHIEVEMENTS, {
 				ach(13878, {	-- The Master of Revendreth
 					crit(1, {	-- Welcome to Revendreth
-						["sourceQuest"] = 56978,	-- To Darkhaven
+						["sourceQuests"] = { 56978 },	-- To Darkhaven
 					}),
-					crit(2, {	-- Meet the Master
-						["sourceQuest"] = 57179,	-- The Authority of Revendreth
+					crit(2, {	-- The Master
+						["sourceQuests"] = { 57179 },	-- The Authority of Revendreth
 					}),
-					crit(3, {	-- The Accuser's Secret
-						["sourceQuest"] = 57180,	-- The Accuser's Secret
+					crit(3, {	-- The Accuser
+						["sourceQuests"] = { 59232 },	-- A Lesson in Humility
 					}),
 					crit(4, {	-- The Rebellion
-						["sourceQuest"] = 59256,	-- The Fearstalker
+						["sourceQuests"] = { 59256 },	-- The Fearstalker
 					}),
 					crit(5, {	-- Securing Sinfall
-						["sourceQuest"] = 57724,	-- Securing Sinfall
+						["sourceQuests"] = { 57724 },	-- Securing Sinfall
 					}),
 					crit(6, {	-- The Prince and the Tower
-						["sourceQuest"] = 57694,	-- Refuge of Revendreth
+						["sourceQuests"] = { 57694 },	-- Refuge of Revendreth
 					}),
 					crit(7, {	-- Menagerie of the Master
-						["sourceQuest"] = 58086,	-- The Master of Lies
+						["sourceQuests"] = { 58086 },	-- The Master of Lies
 					}),
 				}),
 				ach(14798, {	-- Sojourner of Revendreth
 					crit(1, {	-- The Duelist's Debt
-						["sourceQuest"] = 59868,	-- Offer of Freedom
+						["sourceQuests"] = { 59868 },	-- Offer of Freedom
 					}),
 					crit(2, {	-- Tithes of Darkhaven
-						["sourceQuest"] = 60178,	-- And Then There Were None
+						["sourceQuests"] = { 60178 },	-- And Then There Were None
 					}),
 					crit(3, {	-- Dirty Jobs
-						["sourceQuest"] = 57481,	-- Running a Muck
+						["sourceQuests"] = { 57481 },	-- Running a Muck
 					}),
 					crit(4, {	-- The Final Atonement
-						["sourceQuest"] = 60487,	-- It Used to Be Quiet Here
+						["sourceQuests"] = { 60487 },	-- It Used to Be Quiet Here
 					}),
 					crit(5, {	-- Mirror Maker of the Master
-						["sourceQuest"] = 57536,	-- Mirror Making, Not Breaking
+						["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
 					}),
 					crit(6, {	-- Revelations of the Light
-						["sourceQuest"] = 60470,	-- Setting Sabina Free
+						["sourceQuests"] = { 60470 },	-- Setting Sabina Free
 					}),
 				}),
 				ach(14314, {	-- Treasures of Revendreth
@@ -70,11 +70,12 @@ _.Zones =
 						},
 					}),
 					crit(3, {	-- The Count
-						["npcID"] = 173488,	-- The Count
+					--	["questID"] = 61065,
 						["coord"] = { 57.3, 43.3, 1525 },
-						--["questID"] = 61065,
+						["cost"] = { { "c", 1820, 99 } },	-- 99x Infused Ruby
+						["crs"] = { 173488 },	-- The Count
 						["g"] = {
-							i(182612),	-- The Count's Pendant
+							i(182612),	-- The Count's Pendant (PET!)
 						},
 					}),
 					crit(4, {	-- Rapier of the Fearless
@@ -102,15 +103,15 @@ _.Zones =
 						},
 					}),
 					crit(7, {	-- Taskmaster's Trove
+						["description"] = "Use the Ingress And Egress Rites at |cFFFFFFFF63.0, 72.1|r to see the Chest.",
 						["objectID"] = 357697,	-- Taskmaster's Trove
+						["questID"] = 62199,
 						["coords"] = {
 							{ 63.0, 72.1, 1525 },
 							{ 62.8, 75.3, 1525 },
 						},
-						["description"] = "Use the Ingress And Egress Rites at |cFFFFFFFF63.0, 72.1|r that you can see the Chest.",
-						["questID"] = 62199,
 						["g"] = {
-							i(183986),	-- Bondable Sinstone
+							i(183986),	-- Bondable Sinstone (TOY!)
 						},
 					}),
 					crit(8, {	-- Forbidden Chamber
@@ -141,35 +142,27 @@ _.Zones =
 						},
 					}),
 					crit(11, {	-- Filcher's Prize
-						-- ["objectID"] = ###,	-- Filcher's Prize
-						-- ["coord"] = { ##, ##, 1525 },
-						-- ["questID"] = ###,
-						-- ["description"] = "",
-						["g"] = {
-						},
+						["objectID"] = 349792,	-- Filcher's Prize
+						["questID"] = 59883,
+						["coord"] = { 64.2, 72.7, 1525 },
 					}),
 					crit(12, {	-- Wayfarer's Abandoned Spoils
 						["description"] = "Use the nearby Bounding Shroom to get up to the treasure.",
 						["objectID"] = 349793,	-- Wayfarer's Abandoned Spoils
 						["questID"] = 59884,
 						["coord"] = { 68.4, 64.4, 1525 },
-						["crs"] = { 174969 },	-- Bounding Shroom
 					}),
 					crit(13, {	-- Remlate's Hidden Cache
-						-- ["objectID"] = ###,	-- Remlate's Hidden Cache
-						["coord"] = { 61.5, 58.6, 1525 },
+						["description"] = "Hug the cliff from the nearby flight path around the building.\nDrops 2 random green zone drops.",
+						["objectID"] = 349794,	-- Remlate's Hidden Cache
 						["questID"] = 59885,
-						["description"] = "Hug the cliff from the nearby flightpath around the building.\nDrops 2 Random Green Zone Drops",
-						["g"] = {
-						},
+						["coord"] = { 61.5, 58.6, 1525 },
 					}),
 					crit(14, {	-- Fleeing Soul's Bundle
-						-- ["objectID"] = ###,	-- Fleeing Soul's Bundle
-						-- ["coord"] = { ##, ##, 1525 },
-						-- ["questID"] = ###,
-						-- ["description"] = "",
-						["g"] = {
-						},
+						["description"] = "Use the Bounding Shroom at 47.0, 58.3 to reach the treasure.",
+						["objectID"] = 349795,	-- Fleeing Soul's Bundle
+						["coord"] = { 46.4, 58.1, 1525 },
+						["questID"] = 59886,
 					}),
 					crit(15, {	-- Gilded Plum Chest
 						-- ["objectID"] = ###,	-- Gilded Plum Chest
@@ -180,10 +173,11 @@ _.Zones =
 						},
 					}),
 					crit(16, {	-- Abandoned Curios
+						["sourceQuests"] = { 57159 },	-- A Reflection of Truth
+						["description"] = "You can reach it with Door of Shadows or by jumping down from the road above.",
 						["objectID"] = 349797,	-- Abandoned Curios
-						["coord"] = { 51.8, 59.5, 1525 },
 						["questID"] = 59888,
-						-- ["description"] = "",
+						["coord"] = { 51.8, 59.5, 1525 },
 						["g"] = {
 							i(182744),	-- Ornate Belt Buckle
 						},

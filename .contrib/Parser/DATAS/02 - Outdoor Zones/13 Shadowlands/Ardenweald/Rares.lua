@@ -117,10 +117,14 @@ _.Zones =
 				}),
 				n(160448, {	-- Hunter Vivanna <The Wild Hunt>
 					["coord"] = { 67.8, 51.2, 1565 },
-					--["questID"] = ,
+					["questID"] = 59221,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14309, crit(10)),	-- Adventurer of Ardenweald / Hunter Vivanna <The Wild Hunt>
+						i(179596),	-- Drust Mask of Dominance
+						i(183091, {	-- Lifewoven Bracelet
+							["questID"] = 62246,	-- A Fallen Friend
+						}),
 					},
 				}),
 				n(164093, {	-- Macabre
@@ -214,7 +218,7 @@ _.Zones =
 				}),
 				n(167726, {	-- Rootwrithe
 					["coord"] = { 64.6, 44.0, 1565 },
-					--["questID"] = ,
+					["questID"] = 60273,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14309, crit(14)),	-- Adventurer of Ardenweald / Rootwrithe

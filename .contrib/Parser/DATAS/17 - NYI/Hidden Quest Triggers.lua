@@ -2944,42 +2944,50 @@ _.HiddenQuestTriggers =
 		q(58117),	-- Triggered after turning in The Aspirant's Crucible (57709)
 		q(60294),	-- Triggered after choosing Larion from Nemea during Pride Or Unit quest
 		--q(xxxxx),	-- Triggered after choosing Phalynx from Pelodis during Pride Or Unit quest
-		q(62158),	-- First kill of Basilofos
-		q(62167),	-- Triggered after killing Bookkeeper Mnemis along with 59022
-		q(62191),	-- Triggered after killing Cloudfeather Guardian
-		q(62192),	-- Triggered after killing Baedos first time
 		q(62841),	-- Triggered after first time using Kyrian Bell buff item
 		q(58292),	-- looting Purians
 		q(58293),	-- placing first Purian in the bowl
 		q(58294),	-- placing second Purian in the bowl
 		q(62734),	-- Triggered after opening Silver Strongbox during The Sweetest Tribute quest
-		q(62201),	-- triggers when killing Herculon, which drops Functioning Anima Core.  based on the fact that the questID for the core is 62200, i think this + 62202 are tracking chances at it dropping
-		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
 		q(60259),	-- Your Personal Assistant - choosing Akiris
 		q(60260),	-- Your Personal Assistant - choosing Ipa — shares appearance with Dintos + Minta, so possible each steward has its own questID and you get credit for all the ones that share its appearance?
 		q(60261),	-- Your Personal Assistant - this one has triggered when choosing Thima and Syla so far
 		q(60262),	-- Your Personal Assistant - choosing Ipa/Akiris
 		q(60263),	-- Your Personal Assistant - choosing Ipa/Akiris
-		--	more steward info: https://imgur.com/0tLgE13
-		--	if each one has its own questID but grants credit for all in the same shared appearances set, these are the sets that are missing:
-		--	Bumos / Ilapos / Asellia / Syla / Zenza
-		--	Abalus / Thima
-		--	Bola / Pico / Ipadipos / Chaermi
-		--	Gramilos / Apa / Dafi
-		--	Haka
-		--	Mupu / Deka / Laratis
-		--	Kimos / Toulis / Korinthe
-		--	Akiris / Isilios / Koukis / Tibo / Farra / Arathane
+			--	more steward info: https://imgur.com/0tLgE13
+			--	if each one has its own questID but grants credit for all in the same shared appearances set, these are the sets that are missing:
+			--	Bumos / Ilapos / Asellia / Syla / Zenza
+			--	Abalus / Thima
+			--	Bola / Pico / Ipadipos / Chaermi
+			--	Gramilos / Apa / Dafi
+			--	Haka
+			--	Mupu / Deka / Laratis
+			--	Kimos / Toulis / Korinthe
+			--	Akiris / Isilios / Koukis / Tibo / Farra / Arathane
+		--	Bastion Rares
+		q(63422),	-- Aethon secondary quest
+		q(62192),	-- Baedos secondary quest
+		q(62158),	-- Basilofos secondary quest
+		q(62191),	-- Cloudfeather Guardian secondary quest
+		q(63424),	-- Cloudtail secondary quest
+		q(62167),	-- Bookkeeper Mnemis secondary quest along with 59022
+		q(63421),	-- Nemaeus secondary quest
+		q(63423),	-- Sigilback secondary quest
+		q(62201),	-- triggers when killing Herculon, which drops Functioning Anima Core.  based on the fact that the questID for the core is 62200, i think this + 62202 are tracking chances at it dropping
+		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
+		--	Bastion WQs
+		q(63263),	-- triggered after completing the WQ #60911, "Flight School: Flapping Frenzy"
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
 		q(59439),	-- triggered when throwing Viscous Oil from Burning Extract into the Pool of Potions while on the quest "Pool of Potions"
-		q(61986),	-- Tahonta first kill
-		q(61988),	-- Indomitable Schmitd first kill
-		q(61992),	-- Pesticide first kill
 		q(57619),	-- triggered while on "In Death We Are Truly Tested" -- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
 		q(59843),	-- triggered when turning in "A Sure Bet"
 		q(62786),	-- triggered when killing Unbreakable Urtz during "The Ladder" - no other arena opponents triggered quests
+		-- Maldraxxus Rares
+		q(61986),	-- Tahonta secondary quest
+		q(61988),	-- Indomitable Schmitd secondary quest
+		q(61992),	-- Pesticide secondary quest
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant
@@ -2994,9 +3002,10 @@ _.HiddenQuestTriggers =
 		-- Revendreth
 		q(60523),	-- Triggered after reading Theotar's Diary
 		q(60527),	-- Triggered after reading Theotar's Diary
-		q(60581),	-- Triggered after killing Endlurker along with 59582; probably triggers on first kill
-		q(62463),	-- Triggered after killing Prideful Hulk along with 59580; probably triggers on first kill
-		-- Revendreth WQ
+		-- Revendreth Rares
+		q(60581),	-- Endlurker secondary quest
+		q(62463),	-- Prideful Hulk secondary quest
+		-- Revendreth WQs
 		q(59858),	-- Tea Tales: Theotar Achievement criteria
 		q(59858),	-- Tea Tales: Theotar Achievement criteria
 
@@ -3005,6 +3014,8 @@ _.HiddenQuestTriggers =
 		q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)
 		q(62939),	-- triggered after watching the cutscene for Stand as One / landing in Oribos
 		q(63177),	-- Triggered after using Encased Riftwalker Essence
+		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
+		q(63414),	-- Wrath of the Jailer weekly event
 		q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
 
 		-- Torghast
@@ -3037,6 +3048,11 @@ _.HiddenQuestTriggers =
 		q(63363),	-- Triggered after completing last Adventure tutorial mission
 		q(60634),	-- Triggered after completing last Adventure tutorial mission
 		q(63367),	-- Triggered after completing last Adventure tutorial mission
+		q(61692),	-- \
+		q(61693),	--  \
+		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3 
+		q(61695),	--  /
+		q(61696),	-- /
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

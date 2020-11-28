@@ -52,7 +52,7 @@ _.ExpansionFeatures =
 								}),
 							},
 						}),
-						q(58161, {	-- Minions of N'Zoth
+						q(58151, {	-- Minions of N'Zoth
 							["coord"] = { 84.2, 51.7, 1530 },
 							["isDaily"] = true,
 							["provider"] = { "n", 160252 },	-- Blacktalon Agent

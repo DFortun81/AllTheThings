@@ -147,20 +147,27 @@ _.Zones =
 					},
 				}),
 				n(166679, {	-- Hopecrusher
-					["coord"] = { 51.2, 52.2, 1525 },
-					--["questID"] = ,
+					["description"] = "When you inspect the Large Prey, Hopecrusher will attack you.",
+					["questID"] = 59900,
 					["isDaily"] = true,
+					["coord"] = { 51.2, 52.2, 1525 },
+					["crs"] = { 166682 },	-- Large Prey
 					["g"] = {
+						crit(17, {	-- Hopecrusher
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
 						i(180581),	-- Hopecrusher Gargon
-						ach(14310, crit(17)),	-- Adventurer of Revendreth / Hopecrusher
 					},
 				}),
 				n(166993, {	-- Huntmaster Petrus
-					["coord"] = { 61.8, 79.2, 1525 },
-					--["questID"] = ,
+					["questID"] = 60022,
 					["isDaily"] = true,
+					["coord"] = { 61.8, 79.2, 1525 },
+					["crs"] = { 165891 },	-- Reza
 					["g"] = {
-						ach(14310, crit(20)),	-- Adventurer of Revendreth / Huntmaster Petrus
+						crit(20, {	-- Huntmaster Petrus
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
 					},
 				}),
 				n(160640, {	-- Innervus

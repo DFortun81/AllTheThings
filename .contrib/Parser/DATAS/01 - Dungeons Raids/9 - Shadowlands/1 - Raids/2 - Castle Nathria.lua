@@ -8,7 +8,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["coord"] = { 46.1, 41.5, 1525 },
 		["order"] = "02",
 		["maps"] = {
-			1755,	-- Castle Nathria [Storyline Instance]
+			1744,	-- The Purloined Stores
+			1745,	-- Halls of the Faithful
+			1746,	-- Pride's Prison
+			1747,	-- Nightcloak Sanctum
+			1748,	-- The Observatorium
 		},
 		["lvl"] = { 60 },
 		["g"] = {

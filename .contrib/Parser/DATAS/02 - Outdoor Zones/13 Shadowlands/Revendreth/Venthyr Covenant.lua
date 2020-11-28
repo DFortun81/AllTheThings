@@ -10,6 +10,11 @@ _.Zones =
 				n(ACHIEVEMENTS, {
 				}),
 				n(QUESTS, {
+					q(61981, {	-- Replenish the Reservoir
+						["provider"] = { "n", 172605 },	-- Foreman Flatfinger <Sanctum Upgrades>
+						["isWeekly"] = true,
+						["coord"] = { 55.0, 26.8, 1699 },	-- Sinfall
+					}),
 				}),
 				n(RARES, {
 				}),

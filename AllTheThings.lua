@@ -11246,9 +11246,10 @@ function app:GetDataCache()
 
 		-- Holidays
 		if app.Categories.Holidays then
-			-- db = {};
-			-- db.g = app.Categories.Holidays;
-			db = app.CreateAchievement(2144, app.Categories.Holidays);
+			db = {};
+			db.g = app.Categories.Holidays;
+			-- db = app.CreateAchievement(2144, app.Categories.Holidays);
+			db.icon = "Interface\\Addons\\AllTheThings\\assets\\Hol";
 			db.expanded = false;
 			db.text = GetItemSubClassInfo(15,3);
 			db.npcID = -3;

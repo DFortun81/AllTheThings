@@ -11,6 +11,7 @@ _.Zones =
 				i(178874),	-- Martial Spirit Maldraxxus (Uncommon)
 				i(178878),	-- Greater Martial Spirit (Epic)
 				i(184062),	-- Gnawed Reins of the Battle-Bound Warhound (Battle-Bound Warhound in journal)
+				i(180532),	-- Laestrite Lockbox
 				i(176990),	-- Blackhound Armplates
 				i(178950),	-- Blackhound Bulwark
 				i(176963),	-- Blackhound Chestguard

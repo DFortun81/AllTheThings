@@ -142,7 +142,7 @@ _.Zones =
 					crit(8, {	-- Experimental Construct Part
 						["objectID"] = 354275,	-- Experimental Construct Part
 						["coord"] = { 42.3, 23.3, 1533 },
-						["questID"] = 61006,
+						["questID"] = 61052,
 						["g"] = {
 							i(183609),	-- Re-Powered Golliath Fists
 						},
