@@ -2828,7 +2828,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							spec_label = spec_label .. "  |T" .. icon .. ":0|t " .. name;
 						end
 						tinsert(info, { right = spec_label });
-					else
+					elseif sourceID then
 						tinsert(info, { right = "Not available in Personal Loot." });
 					end
 				end
