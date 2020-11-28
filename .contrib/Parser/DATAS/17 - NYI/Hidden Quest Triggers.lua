@@ -3053,6 +3053,9 @@ _.HiddenQuestTriggers =
 		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3 
 		q(61695),	--  /
 		q(61696),	-- /
+		q(61590),	-- Triggered after first time channeling anima to Glitterfall Basin
+		q(60721),	-- Triggered after turning in The Roots Thirst
+		q(60722),	-- Triggered after turning in The Roots Thirst
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

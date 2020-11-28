@@ -11,12 +11,12 @@ _.Zones =
 				}),
 				n(QUESTS, {
 					-- Start of the Covenant Quests
-					-- currently in order of the quest sequence, will alphabetize after verifying all
 					
-					-- These quests are not part of the main covenant questline chapters, but are Night Fae only so putting them down here
-					q(59087, {	-- That Darn Fox!
-						["provider"] = { "n", 163774 },	-- Clarion Song
-						["coord"] = { 50.9, 33.8, 1565 },
+					-- These quests are not part of the covenant questline chapters, but are Night Fae only
+					q(61553, {	-- Know Where to Strike
+						["sourceQuests"] = { 61552 },	-- The Hunt Watches
+						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+						["coord"] = { 44.6, 56.2, 1565 },
 					}),
 					q(59120, {	-- Renny the Vulpin
 						["sourceQuests"] = { 59087 },	-- That Darn Fox!
@@ -32,18 +32,29 @@ _.Zones =
 						["coord"] = { 33.9, 43.5, 1565 },
 						["isWeekly"] = true,
 					}),
+					q(63067, {	-- Root Restoration
+						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+						["coord"] = { 39.6, 55.0, 1702 },
+						["description"] = "Becomes available after you build Anima Conductor in your sanctum.",
+					}),
 					q(61552, {	-- The Hunt Watches
 						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
 						["coord"] = { 39.7, 55.7, 1701 },
 						["description"] = "Becomes available after you build Command Table in your sanctum.",
 					}),
-					q(61553, {	-- Know Where to Strike
-						["sourceQuests"] = { 61552 },	-- The Hunt Watches
-						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-						["coord"] = { 44.6, 56.2, 1565 },
+					q(60723, {	-- The Roots Thirst
+						["sourceQuests"] = { 63067 },	-- Root Restoration
+						["provider"] = { "n", 167196 },	-- Sesselie
+						["coord"] = { 50.1, 63.7, 1702 },
+					}),
+					q(59087, {	-- That Darn Fox!
+						["provider"] = { "n", 163774 },	-- Clarion Song
+						["coord"] = { 50.9, 33.8, 1565 },
 					}),
 
 					
+					-- currently in order of the chapters / quest sequence, will alphabetize after verifying all
+
 					-- Chapter 1: For Queen and Grove!
 					q(61479, {	-- The Boon of Shapes
 						["sourceQuests"] = { 61475 },	-- The Heart of the Forest
@@ -476,19 +487,6 @@ _.Zones =
 						["g"] = {
 							follower(1285),	-- Te'zan
 						},
-					}),
-					--	Unknown placement, reported in #errors
-					-- Anima Conductor Tier 1
-					q(63067, {	-- Root Restoration
-						["description"] = "Requires researching Tier 1 Anima Conductor",
-						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-						["coord"] = { 39.6, 55.0, 1702 },
-						-- Night Fae only
-					}),
-					q(60723, {	-- The Roots Thirst
-						["sourceQuests"] = { 63067 },	-- Root Restoration
-						["provider"] = { "n", 167196 },	-- Sesselie
-						["coord"] = { 49.1, 39.1, 1565 },
 					}),
 					
 					-- not verified yet in live -- Saving the Stalks (Transport Network Tier 1)
