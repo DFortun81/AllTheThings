@@ -113,21 +113,23 @@ _.Zones =
 							i(183986),	-- Bondable Sinstone
 						},
 					}),
-					crit(8, {	-- Blanchy Assisted
-						--["objectID"] = 354646,	-- Ancient Cloudfeather Egg
-						["coord"] = { 63.01, 54.46, 1525 },
-						--["questID"] = 61065,
-						["g"] = {
-							i(182614),	-- Blanchy's Reins
-						},
-					}),
-					crit(9, {	-- Secret Chamber
+					crit(8, {	-- Forbidden Chamber
 						["objectID"] = 358298,	-- Forbidden Chamber Lockbox
 						["coord"] = { 47.3, 55.3, 1525 },
 						["questID"] = 62243,
 						["description"] = "Use the Anima Canister to drain anima from Silent Observer and feed it to the Chamber Guardian.",
 						["g"] = {
 							i(184075),	-- Stonewrought Sentry
+						},
+					}),
+					crit(9, {	-- Smuggled Cache
+						["objectID"] = 349798,	-- Smuggled Cache
+						["questID"] = 59889,
+						["coord"] = { 31.1, 55.0, 1525 },
+						["g"] = {
+							i(182738, {	-- Bundle of Smuggled Parasol Components
+								["questID"] = 62189,	-- Parasol Components
+							}),
 						},
 					}),
 					crit(10, {	-- Chest of Envious Dreams

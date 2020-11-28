@@ -7,6 +7,10 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(QUESTS, {
+				q(60467, {	-- A Rousing Aroma
+					["provider"] = { "n", 168455 },	-- Sabina
+					["coord"] = { 35.0, 53.9, 1525 },
+				}),
 				q(60480, {	-- The Endmire
 				--	TODO: unless 'invitation of the master' is a breadcrumb, it's not a SQ for this... i was able to pick it up before even turning in "a plea to revendreth"
 				--	["sourceQuests"] = { 57007 },	-- Invitation of the Master
@@ -18,6 +22,13 @@ _.Zones =
 					["coord"] = { 60.7, 40.1, 1525 },
 					["g"] = {
 						i(179380),	-- Redelev Purse
+					},
+				}),
+				q(60275, {	-- WANTED: Enforcer Kristof
+					["provider"] = { "o", 351874 },	-- Wanted: Enforcer Kristof
+					["coord"] = { 30.6, 48.9, 1525 },
+					["g"] =  {
+						i(181714),	-- Jeweled Hand Fan
 					},
 				}),
 				q(60280, {	-- WANTED: Lord Darion
@@ -86,13 +97,6 @@ _.Zones =
 					["provider"] = { "n", 160100 },	-- Provisioner Dracho
 					-- ["coord"] = { ##, ##, 1525 },
 					-- ["sourceQuests"] = {  },
-				}),
-				q(60275, {	-- WANTED: Enforcer Kristof
-					["provider"] = { "o", 351874 },	-- Wanted: Enforcer Kristof
-					["coord"] = { 30.6, 48.9, 1525 },
-					["g"] =  {
-						i(181714),	-- Jeweled Hand Fan
-					},
 				}),
 				q(60279, {	-- WANTED: The Pale Doom
 					["provider"] = { "o", 351889 },	-- Wanted: The Pale Doom

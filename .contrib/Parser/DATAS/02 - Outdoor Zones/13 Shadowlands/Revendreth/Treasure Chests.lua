@@ -7,6 +7,15 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(-212, {	-- Treasure Chest
+			--	TODO: figure out wtf to do with blanchy's reins
+			--	crit(8, {	-- Blanchy Assisted
+			--		--["objectID"] = 354646,	-- Ancient Cloudfeather Egg
+			--		["coord"] = { 63.01, 54.46, 1525 },
+					--["questID"] = 61065,
+			--		["g"] = {
+						i(182614),	-- Blanchy's Reins
+			--		},
+			--	}),
 				o(353232, {	-- Bleakwood Chest
 					["coord"] = { 32.0, 19.0, 1525 },
 					["g"] = {
