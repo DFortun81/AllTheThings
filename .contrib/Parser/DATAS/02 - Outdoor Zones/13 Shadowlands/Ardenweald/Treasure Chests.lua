@@ -21,18 +21,12 @@ _.Zones =
 					["questID"] = 60717,
 					["isDaily"] = true,	-- ??
 					["coord"] = { 65.3, 23.5, 1565 },
-					["g"] = {
-						i(175728),	-- Soulsifter Root
-					},
 				}),
 				o(353331, {	-- Faerie Stash
 					["description"] = "Use the Bounding Shroom at 39.9, 43.7 to reach the treasure.",
 					["questID"] = 60718,
 					["isDaily"] = true,	-- ??
 					["coord"] = { 41.3, 44.7, 1565 },
-					["g"] = {
-						i(179517),	-- Duskwarder Censor
-					},
 				}),
 				o(353332, {	-- Faerie Stash
 					["description"] = "Use the Bounding Shroom at 43.6, 22.9 to reach the treasure.",
@@ -51,9 +45,6 @@ _.Zones =
 					["questID"] = 60829,
 					["coords"] = {
 						{ 53.6, 60.0, 1525 },
-					},
-					["g"] = {
-						i(179517),	-- Duskwarder Censor
 					},
 				}),
 			}),

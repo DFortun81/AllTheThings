@@ -97,6 +97,7 @@ _.Zones =
 						i(183091, {	-- Lifewoven Bracelet
 							["questID"] = 62246,	-- A Fallen Friend
 						}),
+						i(180165),	-- Witherscorn Reaper (TODO: this may drop from other rares/treasures in zone too?)
 					},
 				}),
 				n(164093, {	-- Macabre

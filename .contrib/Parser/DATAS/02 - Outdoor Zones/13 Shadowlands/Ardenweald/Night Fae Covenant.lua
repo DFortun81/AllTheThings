@@ -183,7 +183,7 @@ _.Zones =
 						["coord"] = { 34.1, 43.6, 1701 },
 					}),
 
-					-- Chapter 2: Torghast
+					-- Chapter 2: Torghast (almost all quests in this chapter are shared among all covenants and can be found in the Torghast quest file)
 					q(63030, {	-- The Highlord Calls
 						["sourceQuests"] = { 62899 },	-- The Endless Forest
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
