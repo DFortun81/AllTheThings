@@ -12,6 +12,7 @@ t(116890);	-- "Santo's Sun" Contender's Costume
 t(116891);	-- "Snowy Owl" Contender's Costume
 t(147537);	-- a Tiny Set of Warglaives
 t(127670);	-- Accursed Tome of the Sargerei
+t(184418);	-- Acrobatic Steward
 t(144072);	-- Adopted Puppy Crate
 t(86589);	-- Ai-Li's Skymirror
 t(147838);	-- Akazamzarak's Spare Hat

@@ -7,6 +7,34 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
 			n(-212, {	-- Treasure Chest
+				o(353650, {	-- Steward's Golden Chest
+					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
+					["description"] = "Ask Elios about the Steward of the Day, and he will pin their location on your map.  Take a Ripe Purian to the steward, and then you can come back and loot the chest.",
+					["questID"] = 60779,
+					["isDaily"] = true,
+					["coord"] = { 53.2, 46.4, 1533 },
+					["crs"] = { 170284 },	-- Elios
+				}),
+				--	TODO: are Silver Strongbox rewards shared or specific to the objectID?
+				o(353205, {	-- Silver Strongbox (under Hero's Rest)
+				--	TODO: updated objectIDs to match with coords when the data is available
+					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
+					["description"] = "Requires a Ripe Purian to open.",
+					["questID"] = 60652,
+					["isDaily"] = true,	-- TODO: maybe repeatable?  not sure if these just show up again at random times on the map
+					["coord"] = { 50.8, 44.7, 1533 },
+				}),
+				o(363825, {	-- Silver Strongbox (near The Eternal Forge)
+				--	TODO: updated objectIDs to match with coords when the data is available
+					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
+					["description"] = "Requires a Ripe Purian to open.  Use the Anima Gateway at 52.9, 12.1 to get to the cliff above the treasure.",
+					["questID"] = 60754,
+					["isDaily"] = true,	-- TODO: maybe repeatable?  not sure if these just show up again at random times on the map
+					["coord"] = { 50.8, 44.7, 1533 },
+					["g"] = {
+						i(184418),	-- Acrobatic Steward (TOY!)
+					},
+				}),
 				o(344588, {	-- Stewart's Stewpendous Stew
 					-- TODO: ["coord"] = {},
 					["g"] = {

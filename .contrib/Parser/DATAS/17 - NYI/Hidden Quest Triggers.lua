@@ -2953,7 +2953,6 @@ _.HiddenQuestTriggers =
 		q(58293),	-- placing first Purian in the bowl
 		q(58294),	-- placing second Purian in the bowl
 		q(62734),	-- Triggered after opening Silver Strongbox during The Sweetest Tribute quest
-		q(60779),	-- Triggered after opening Steward's Golden Chest (daily)
 		q(62201),	-- triggers when killing Herculon, which drops Functioning Anima Core.  based on the fact that the questID for the core is 62200, i think this + 62202 are tracking chances at it dropping
 		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
 		q(60259),	-- Your Personal Assistant - choosing Akiris
