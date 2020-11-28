@@ -26,6 +26,12 @@ _.Zones =
 							i(175114),	-- Renny
 						},
 					}),
+					q(61984, {	-- Replenish the Reservoir
+						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
+						["provider"] = { "n", 158553 },	-- Flutterby
+						["coord"] = { 33.9, 43.5, 1565 },
+						["isWeekly"] = true,
+					}),
 					q(61552, {	-- The Hunt Watches
 						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
 						["coord"] = { 39.7, 55.7, 1701 },
@@ -444,12 +450,6 @@ _.Zones =
 						},
 					}),
 					-- Dailies / Weeklies
-					q(61984, {	-- Replenish the Reservoir
-						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 33.9, 43.5, 1565 },
-						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
-						["isWeekly"] = true,
-					}),
 					q(61331, {	-- Return Lost Souls
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["coord"] = { 33.9, 43.5, 1565 },
@@ -489,6 +489,48 @@ _.Zones =
 						["sourceQuests"] = { 63067 },	-- Root Restoration
 						["provider"] = { "n", 167196 },	-- Sesselie
 						["coord"] = { 49.1, 39.1, 1565 },
+					}),
+					
+					-- not verified yet in live -- Saving the Stalks (Transport Network Tier 1)
+					q(57454, {	-- Silence in the Stalks
+						["provider"] = { "n", 158556 },	-- Aithlyn
+						["coords"] = {
+							{ 59.4, 31.6, 1565 },
+							{ 48.4, 50.4, 1565 },
+						},
+					}),
+					q(57455, {	-- Mushroom For Improvement
+						["provider"] = { "n", 157710 },	-- Cortinarius
+						["coord"] = { 33.2, 36.3, 1565 },
+						["sourceQuests"] = { 57454 },	-- Silence in the Stalks
+					}),
+					q(57458, {	-- Ring Repairs
+						["provider"] = { "n", 157710 },	-- Cortinarius
+						["coord"] = { 33.2, 36.3, 1565 },
+						["sourceQuests"] = { 57454 },	-- Silence in the Stalks
+					}),
+					q(57459, {	-- Fighting For Fungus
+						["provider"] = { "n", 157710 },	-- Cortinarius
+						["coord"] = { 33.2, 36.3, 1565 },
+						["sourceQuests"] = {
+							57455,	-- Mushroom For Improvement
+							57458,	-- Ring Repairs
+						},
+					}),
+					q(57463, {	-- My Way or the Hyphae
+						["provider"] = { "n", 166982 },	-- Marasmius
+						["coord"] = { 29.5, 34.6, 1565 },
+						["sourceQuests"] = { 57454 },	-- Silence in the Stalks
+					}),
+					q(57583, {	-- Through the Veil
+						["provider"] = { "n", 166982 },	-- Marasmius
+						["coord"] = { 29.5, 34.6, 1565 },
+						["sourceQuests"] = { 57454 },	-- Silence in the Stalks
+					}),
+					q(62611, {	-- Hyphae Patrol: Heartwood Grove
+						["provider"] = { "n", 167455 },	-- Marasmius
+						["coord"] = { 52.7, 56.1, 1565 },
+						["sourceQuests"] = { 57583 },	-- Through the Veil
 					}),
 				}),
 				n(RARES, {

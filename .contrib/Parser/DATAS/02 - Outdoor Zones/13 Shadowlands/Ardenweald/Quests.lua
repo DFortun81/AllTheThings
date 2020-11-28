@@ -15,6 +15,9 @@ _.Zones =
 						i(183851),	-- Withergrove Shardling
 					},
 				}),
+				q(62246, {	-- A Fallen Friend
+					["provider"] = { "i", 183091 },	-- Lifewoven Bracelet
+				}),
 				q(60063, {	-- A Song for Silkstriders
 					["sourceQuests"] = { 60062 },	-- The Shattered Harp
 					["provider"] = { "n", 167047 },	-- Artisan Rees
@@ -496,7 +499,7 @@ _.Zones =
 				}),
 				q(57655, {	-- Supplies Needed: More Husks!
 				--	TODO: figure out SQs.  saw after finish regular zone quest meta, while working on sojourner achievement, during 'unsafe workplace.'  but it may unlock sooner
-					["provider"] = { "o", 336415 },	-- Discarded Scroll	-- TODO: Need to add the Object
+					["provider"] = { "o", 336415 },	-- Discarded Scroll
 					["coord"] = { 47.5, 26.2, 1565 },
 				}),
 				q(60648, {	-- Survivors of Heartwood Grove
@@ -777,66 +780,13 @@ _.Zones =
 						i(175663),	-- Grove Warden's Greaves
 					},
 				}),
+				q(60840, {	-- Wild Hunt Offensive (bonus objective)
+					["coord"] = { 64, 46, 1565 },
+				}),
 				q(60778, {	-- Wildseed Rescue
 					["sourceQuests"] = { 60341 },	-- First on the Agenda
 					["provider"] = { "n", 170175 },	-- Featherlight
 					["coord"] = { 65.0, 19.5, 1565 },
-				}),
-				
-				
-				
-				
-				
-				
-				-- End of Zone Achievement Quests
-				
-				
-				
-				
-				-- Sojourner of Ardenweald Achievenemt
-				-- Saving the Stalks (Transport Network Tier 1)
-				q(57454, {	-- Silence in the Stalks
-					["provider"] = { "n", 158556 },	-- Aithlyn
-					["coords"] = {
-						{ 59.4, 31.6, 1565 },
-						{ 48.4, 50.4, 1565 },
-					},
-				}),
-				q(57455, {	-- Mushroom For Improvement
-					["provider"] = { "n", 157710 },	-- Cortinarius
-					["coord"] = { 33.2, 36.3, 1565 },
-					["sourceQuests"] = { 57454 },	-- Silence in the Stalks
-				}),
-				q(57458, {	-- Ring Repairs
-					["provider"] = { "n", 157710 },	-- Cortinarius
-					["coord"] = { 33.2, 36.3, 1565 },
-					["sourceQuests"] = { 57454 },	-- Silence in the Stalks
-				}),
-				q(57459, {	-- Fighting For Fungus
-					["provider"] = { "n", 157710 },	-- Cortinarius
-					["coord"] = { 33.2, 36.3, 1565 },
-					["sourceQuests"] = {
-						57455,	-- Mushroom For Improvement
-						57458,	-- Ring Repairs
-					},
-				}),
-				q(57463, {	-- My Way or the Hyphae
-					["provider"] = { "n", 166982 },	-- Marasmius
-					["coord"] = { 29.5, 34.6, 1565 },
-					["sourceQuests"] = { 57454 },	-- Silence in the Stalks
-				}),
-				q(57583, {	-- Through the Veil
-					["provider"] = { "n", 166982 },	-- Marasmius
-					["coord"] = { 29.5, 34.6, 1565 },
-					["sourceQuests"] = { 57454 },	-- Silence in the Stalks
-				}),
-				q(62611, {	-- Hyphae Patrol: Heartwood Grove
-					["provider"] = { "n", 167455 },	-- Marasmius
-					["coord"] = { 52.7, 56.1, 1565 },
-					["sourceQuests"] = { 57583 },	-- Through the Veil
-				}),
-				-- Bonus Objective
-				q(60840, {	-- Wild Hunt Offensive
 				}),
 			}),
 		}),

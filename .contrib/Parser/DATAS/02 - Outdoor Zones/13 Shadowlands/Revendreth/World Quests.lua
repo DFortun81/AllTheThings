@@ -55,6 +55,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61624, {	-- Inscription: Catalog of Sins
+					["requireSkill"] = INSCRIPTION,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59643, {	-- It's Race Day in the Ramparts!
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
