@@ -4184,6 +4184,7 @@ app.L = {
 		[356555] = "Eurydea's Necklace",
 		[356820] = "Large Lunarlight Pod",
 		[356823] = "Cloudwalker's Coffer",
+		[356757] = "Greed's Desire",
 		[357584] = "Vyrtha's Dredglaive",
 		[357758] = "Plague Barrel",
 		[362489] = "Elysian Decree",

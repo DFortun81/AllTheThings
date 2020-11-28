@@ -8,7 +8,7 @@ _.Zones =
 		m(1565, {	-- Ardenweald
 			n(-212, {	-- Treasure Chest
 			--	TODO: figure out if Faerie Stashes are daily, repeatable (like if they pop back up on your map after a certain interval), or one-time only
-			--	if they're repeatable/daily, figure out if the loot is static or if they should be put in a Rewards header or something under this section?
+			--	if they're repeatable/daily, figure out if the loot is static or if they should be put in a Rewards/Common Box Drop header or something under this section?
 				--[[
 				o(, {	-- Decayed Husk
 					["coord"] = { 42.4, 31.2, 1565 },
@@ -30,6 +30,9 @@ _.Zones =
 					["questID"] = 60718,
 					["isDaily"] = true,	-- ??
 					["coord"] = { 41.3, 44.7, 1565 },
+					["g"] = {
+						i(179517),	-- Duskwarder Censor
+					},
 				}),
 				o(353332, {	-- Faerie Stash
 					["description"] = "Use the Bounding Shroom at 43.6, 22.9 to reach the treasure.",

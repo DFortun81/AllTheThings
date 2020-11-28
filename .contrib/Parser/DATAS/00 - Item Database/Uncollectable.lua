@@ -5,6 +5,9 @@ local i = function(itemID)
 	return item;
 end
 
+-- Battle Pet
+i(183714);	-- Swamp Reed (presumably Withered Creeper was originally learned via this item, but is now wild-caught, so this item being anywhere other than this folder makes the pet show as Unsorted or NYI or w/e)
+
 -- Consumables
 -- BC
 i(23379);	-- Cinder Bracers

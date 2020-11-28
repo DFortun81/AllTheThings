@@ -31,6 +31,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61631, {	-- Drust Between You and Me
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61440, {	-- Enchanting: Boundless Basket
 					["requireSkill"] = ENCHANTING,
 					["isWorldQuest"] = true,
