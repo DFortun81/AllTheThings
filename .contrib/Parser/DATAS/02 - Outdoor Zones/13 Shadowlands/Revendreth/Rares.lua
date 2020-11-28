@@ -51,20 +51,25 @@ _.Zones =
 					},
 				}),
 				n(165206, {	-- Endlurker
-					["coord"] = { 66.4, 59.6, 1525 },
+					["description"] = "There is a sparkling Anima Stake in front of the portal.  Pick it up and use the Extra Action Button to lure the rare.",
 					["questID"] = 59582,
 					["isDaily"] = true,
+					["coord"] = { 66.4, 59.6, 1525 },
 					["g"] = {
-						ach(14310, crit(11)),	-- Adventurer of Revendreth / Endlurker
+						crit(11, {	-- Endlurker
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
 						i(179927),	-- Glowing Endmire Stinger
 					},
 				}),
 				n(166710, {	-- Executioner Aatron
-					["coord"] = { 37.2, 47.8, 1525 },
-					--["questID"] = ,
+					["questID"] = 59913,
 					["isDaily"] = true,
+					["coord"] = { 37.2, 47.8, 1525 },
 					["g"] = {
-						ach(14310, crit(19)),	-- Adventurer of Revendreth / Executioner Aatron
+						crit(19, {	-- Executioner Aatron
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
 					},
 				}),
 				n(161310, {	-- Executioner Adrastia
@@ -269,11 +274,16 @@ _.Zones =
 					},
 				}),
 				n(165253, {	-- Tollkeeper Varaboss
-					["coord"] = { 66.4, 71.4, 1525 },
-					--["questID"] = ,
+					["questID"] = 59595,	-- also triggered 60583 on first kill
 					["isDaily"] = true,
+					["coord"] = { 66.4, 71.4, 1525 },
 					["g"] = {
-						ach(14310, crit(13)),	-- Adventurer of Revendreth / Tollkeeper Varaboss
+						crit(13, {	-- Tollkeeper Varaboss
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(179363, {	-- Misplaced Anima Tolls
+							["questID"] = 60517,	-- The Toll of the Road
+						}),
 					},
 				}),
 				n(155779, {	-- Tomb Burster <Dread Crawler Queen>

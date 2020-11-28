@@ -54,10 +54,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 32.6, 23.4, 1533 },
 					["g"] = {
-						i(180613),	-- Fragile Humility Scroll (not dropped by the boss, but putting here so that the source text associates it w/ the rare)
 						crit(22, {	-- Aspirant Eolis
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
+						i(183607),	-- Uncertain Aspirant's Spear
+						i(180613),	-- Fragile Humility Scroll (not dropped by the boss, but putting here so that the source text associates it w/ the rare)
 					},
 				}),
 				n(160629, { -- Baedos

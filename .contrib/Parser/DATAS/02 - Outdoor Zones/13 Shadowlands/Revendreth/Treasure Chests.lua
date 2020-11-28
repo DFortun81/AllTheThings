@@ -14,7 +14,7 @@ _.Zones =
 					},
 				}),
 				o(357565, {	-- Forgotten Angler's Rod
-					["npcID"] = 173634,	-- Muckribbon
+					["crs"] = { 173634 },	-- Muckribbon
 					["coord"] = { 69.3, 77.9, 1525 },
 					["questID"] = 62196,
 					["g"] = {
@@ -40,6 +40,17 @@ _.Zones =
 				}),]]
 
 				-- TODO: treasure @ 68,64 questID = 59884
+				o(354121, {	-- Pugilist's Prize
+					["description"] = "Defeat the mobs to make the treasure lootable.",
+					["questID"] = 60951,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 71.3, 80.2, 1525 },
+				}),
+				o(354186, {	-- Stoneborn Satchel
+					["questID"] = 60979,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 75.8, 77.3, 1525 },
+				}),
 			}),
 		}),
 	}),

@@ -85,10 +85,10 @@ _.Zones =
 						--	i(182689),	-- Rapier of the Fearless
 						--},
 					}),
-					crit(5, {	-- Vrytha's Dredglaive
-						--["objectID"] = ,	-- Vrytha's Dredglaive
-						["coord"] = { 70.1, 60.0, 1525 },
+					crit(5, {	-- Vyrtha's Dredglaive
+						["objectID"] = 357584,	-- Vyrtha's Dredglaive
 						["questID"] = 62164,
+						["coord"] = { 70.1, 60.0, 1525 },
 						["g"] = {
 							i(177807),	-- Vyrtha's Dredglaive
 						},
@@ -132,9 +132,8 @@ _.Zones =
 					}),
 					crit(10, {	-- Chest of Envious Dreams
 						["objectID"] = 349565,	-- Chest of Envious Dreams
-						["coord"] = { 69.3, 77.9, 1525 },
 						["questID"] = 59833,
-						-- ["description"] = "",
+						["coord"] = { 69.3, 77.9, 1525 },
 						["g"] = {
 							i(179393),	-- Mirror of Envious Dreams
 						},
@@ -148,12 +147,11 @@ _.Zones =
 						},
 					}),
 					crit(12, {	-- Wayfarer's Abandoned Spoils
-						-- ["objectID"] = ###,	-- Wayfarer's Abandoned Spoils
-						-- ["coord"] = { ##, ##, 1525 },
-						-- ["questID"] = ###,
-						-- ["description"] = "",
-						["g"] = {
-						},
+						["description"] = "Use the nearby Bounding Shroom to get up to the treasure.",
+						["objectID"] = 349793,	-- Wayfarer's Abandoned Spoils
+						["questID"] = 59884,
+						["coord"] = { 68.4, 64.4, 1525 },
+						["crs"] = { 174969 },	-- Bounding Shroom
 					}),
 					crit(13, {	-- Remlate's Hidden Cache
 						-- ["objectID"] = ###,	-- Remlate's Hidden Cache

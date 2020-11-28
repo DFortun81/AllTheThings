@@ -49,6 +49,7 @@ i(43626);	-- Happy Pet Snack
 i(33928);	-- Hollowed Bone Decanter
 i(101436);	-- Icemother Milk
 i(18284);	-- Kreeg's Stout Beatdown
+i(180696);	-- Legion Wing Insignia
 i(19297);	-- Lesser Darkmoon Prize
 i(62342);	-- Lesser Inscription of Charged Lodestone
 i(62344);	-- Lesser Inscription of Jagged Stone
@@ -82,6 +83,7 @@ i(143857);	-- Twilight Cultist Mantle
 i(143855);	-- Twilight Cultist Robe
 i(168003);	-- Unstable Manapearl
 i(13514);	-- Wail of the Banshee
+i(180697);	-- Wing Commanders Insignia
 i(85266);	-- Winter Blossom Tree
 i(128851);	-- Roasted juicycrunch carrots
 
