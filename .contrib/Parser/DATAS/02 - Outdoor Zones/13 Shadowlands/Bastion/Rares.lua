@@ -49,10 +49,12 @@ _.Zones =
 					},
 				}),
 				n(171211, { -- Aspirant Eolis
-					["coord"] = { 32.6, 23.4, 1533 },
-					--["questID"] = ,
+					["description"] = "Fragile Humility Scrolls can be found throughout the Court of Elation.  They are floating unfurled scrolls that do not sparkle, but glow purple.  After you find one, read it to Eolis to start the encounter.",
+					["questID"] = 61083,
 					["isDaily"] = true,
+					["coord"] = { 32.6, 23.4, 1533 },
 					["g"] = {
+						i(180613),	-- Fragile Humility Scroll (not dropped by the boss, but putting here so that the source text associates it w/ the rare)
 						crit(22, {	-- Aspirant Eolis
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
@@ -145,9 +147,10 @@ _.Zones =
 					},
 				}),
 				n(170623, { -- Dark Watcher
-					["coord"] = { 27.8, 30.0, 1533 },
-					--["questID"] = ,
+					["description"] = "If the rare is up, you will get a debuff called Ominous Gaze when you are close to it.  To start the encounter, you need to die and speak to the NPC.",
+					["questID"] = 60883,
 					["isDaily"] = true,
+					["coord"] = { 27.8, 30.0, 1533 },
 					["g"] = {
 						crit(12, {	-- Dark Watcher
 							["achievementID"] = 14307,	-- Adventurer of Bastion

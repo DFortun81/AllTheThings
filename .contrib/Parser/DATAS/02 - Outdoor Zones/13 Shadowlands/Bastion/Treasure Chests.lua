@@ -7,6 +7,15 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
 			n(-212, {	-- Treasure Chest
+				o(353234, {	-- Gilded Chest
+					["questID"] = 60663,
+					["isDaily"] = true,	-- repeatable?
+					["coords"] = {	-- there might be more
+						{ 24.5, 18.0, 1533 },
+						{ 24.8, 23.3, 1533 },
+						{ 27.5, 21.7, 1533 },
+					},
+				}),
 				o(353650, {	-- Steward's Golden Chest
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
 					["description"] = "Ask Elios about the Steward of the Day, and he will pin their location on your map.  Take a Ripe Purian to the steward, and then you can come back and loot the chest.",
