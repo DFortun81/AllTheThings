@@ -16,6 +16,11 @@ _.Zones =
 						{ 27.5, 21.7, 1533 },
 					},
 				}),
+				o(353868, {	-- Hidden Hoard
+				--	TODO: verify objectID when coords are available, probably this one or 353869
+					["questID"] = 60875,	-- also triggered 60877... why two quests?
+					["coord"] = { 61.6, 37.2, 1533 }
+				}),
 				o(353650, {	-- Steward's Golden Chest
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
 					["description"] = "Ask Elios about the Steward of the Day, and he will pin their location on your map.  Take a Ripe Purian to the steward, and then you can come back and loot the chest.",
@@ -43,6 +48,18 @@ _.Zones =
 					["g"] = {
 						i(184418),	-- Acrobatic Steward (TOY!)
 					},
+				}),
+				o(353314, {	-- Silver Strongbox
+				--	TODO: updated objectIDs to match with coords when the data is available
+					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
+					["description"] = "Requires a Ripe Purian to open.",
+					["questID"] = 60755,
+					["coord"] = { 48.7, 31.8, 1533 }
+				}),
+				o(353691, {	-- Skyward Bell
+				--	TODO: updated objectIDs to match with coords when the data is available
+					["questID"] = 60798,	-- also triggered 60874... why two quests?
+					["coord"] = { 45.6, 33.8, 1533 }
 				}),
 				o(344588, {	-- Stewart's Stewpendous Stew
 					-- TODO: ["coord"] = {},

@@ -23,6 +23,14 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(59836, {	-- Battles Won Long Ago
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61342, {	-- Battles Won Long Ago
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(57650, {	-- Better Off Dead
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

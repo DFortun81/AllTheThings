@@ -3005,9 +3005,10 @@ _.HiddenQuestTriggers =
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
+		q(60583),	-- Tollkeeper Varaboss secondary quest
 		-- Revendreth WQs
 		q(59858),	-- Tea Tales: Theotar Achievement criteria
-		q(59858),	-- Tea Tales: Theotar Achievement criteria
+		q(59861),	-- Tea Tales: Theotar Achievement criteria
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

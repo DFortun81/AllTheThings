@@ -17,7 +17,14 @@ _.Zones =
 			--		},
 			--	}),
 				o(353232, {	-- Bleakwood Chest
-					["coord"] = { 32.0, 19.0, 1525 },
+					["questID"] = 60665,
+					["isDaily"] = true,	-- repeatable??
+					["coords"] = {
+						{ 23.7, 28.5, 1525 },
+						{ 27.5, 11.9, 1525 },
+						{ 30.3, 24.8, 1525 },
+						{ 32.0, 19.0, 1525 },
+					},
 					["g"] = {
 						i(180592),	-- Trapped Stonefiend
 					},
@@ -55,6 +62,12 @@ _.Zones =
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 71.3, 80.2, 1525 },
 				}),
+				o(351542, {	-- Secret Treasure
+					["questID"] = 60199,
+					["isDaily"] = true,	-- ?? repeatable?
+					["coord"] = { 74.0, 61.9, 1525 }
+					
+				}),
 				o(354186, {	-- Stoneborn Satchel
 					["questID"] = 60979,
 					["isDaily"] = true,	-- repeatable?
@@ -77,6 +90,18 @@ _.Zones =
 					["questID"] = 60942,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 55.3, 42.3, 1525 },
+				}),
+				o(1278968751, {	-- Stoneborn Satchel
+				--	TODO: verify objectID, made a random one up
+					["questID"] = 60981,
+					["isDaily"] = true,
+					["coord"] = { 66.4, 65.4, 1525 },
+					["g"] = {
+					--	TODO: is this quest specific to this object?
+						i(182728, {	-- A Crate of Sinvyr Ore
+							["questID"] = 62184,	-- A Crate of Sinvyr Ore
+						}),
+					},
 				}),
 			}),
 		}),

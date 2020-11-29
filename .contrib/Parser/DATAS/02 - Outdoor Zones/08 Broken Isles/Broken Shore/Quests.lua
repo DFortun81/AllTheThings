@@ -586,6 +586,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53776 },	-- To the Broken Shore
 				}),
+				q(46069, {	-- Worthy of the Title
+					["sourceQuests"] = { 46246 },	-- Strike Them Down
+					["provider"] = { "n", 118376 },	-- Champion Cyssa Dawnrose
+					["coord"] = { 43.8, 63.0, 646 },
+				}),
 
 			-- TODO: unconfirmed or old af data that needs to be re-confirmed anyway
 				q(46827, {	-- Meld Into the Shadows
@@ -805,7 +810,6 @@ _.Zones =
 				q(45822),	-- Warrior
 				q(45385),	-- We Must be Prepared!
 				q(45103),	-- We Ride!
-				q(46069),	-- Worthy of the Title
 				q(46256),	-- X Treasures Found, 1 Challenge Attempted
 				q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
 			}),

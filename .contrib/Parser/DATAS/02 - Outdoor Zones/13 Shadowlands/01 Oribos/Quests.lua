@@ -193,9 +193,6 @@ _.Zones =
 					["sourceQuests"] = { 57877 },	-- The Looming Dark
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.2, 69.7, 1670 },
-					["g"] = {
-						ach(14627),	-- Choosing your Purpose
-					},
 				}),
 				q(57386, {	-- If You Want Peace...
 					["sourceQuests"] = { 61107 },	-- A Land of Strife
@@ -388,12 +385,9 @@ _.Zones =
 					["sourceQuests"] = { 62704 },	-- The Threads of Fate
 				}),
 				q(62000, {	-- Choosing Your Purpose
+					["sourceQuests"] = { 62716 },	-- Re-Introductionse
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
-					["sourceQuests"] = { 62716 },	-- Re-Introductionse
-					["g"] = {
-						ach(14627),	-- Choosing your Purpose
-					},
 				}),
 				q(62159, {	-- Aiding the Shadowlands
 					["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -437,11 +431,6 @@ _.Zones =
 				}),
 				-- From Revendreth
 				-- Choosing Your Covenant
-				q(59314, {	-- Sinfall
-					["provider"] = { "n", 171589 },	-- General Draven
-					["coord"] = { 44.8, 68.9, 1670 },
-					["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
-				}),
 				q(60491, {	-- Among the Kyrian
 					["provider"] = { "n", 171787 },	-- Polemarch Adrestes
 					["coord"] = { 36.1, 64.1, 1670 },

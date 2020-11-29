@@ -263,7 +263,7 @@ _.Zones =
 					},
 				}),
 				n(165253, {	-- Tollkeeper Varaboss
-					["questID"] = 59595,	-- also triggered 60583 on first kill
+					["questID"] = 59595,
 					["isDaily"] = true,
 					["coord"] = { 66.4, 71.4, 1525 },
 					["g"] = {
