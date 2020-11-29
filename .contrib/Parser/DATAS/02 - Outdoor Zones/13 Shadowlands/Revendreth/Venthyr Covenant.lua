@@ -306,6 +306,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(62914, {	-- A Coalition of the Willing
+						["sourceQuests"] = { 62870 },	-- Souls for Sinfall
+						["provider"] = { "n", 164738 },	-- Tenaval
+						["coord"] = { 45.9, 27.6, 1699 },	-- Sinfall Reaches
+					}),
 					q(59323, {	-- Anima Awakening
 						["sourceQuests"] = { 59321 },	-- Sacred Covenant
 						["provider"] = { "n", 171934 },	-- Prince Renathal
@@ -326,6 +331,11 @@ _.Zones =
 						["provider"] = { "n", 171934 },	-- Prince Renathal
 						["coord"] = { 45.5, 28.7, 1700 },	-- Sinfall Depths
 					}),
+					q(62915, {	-- Home Improvement
+						["sourceQuests"] = { 62837 },	-- Hopeful News
+						["provider"] = { "n", 172605 },	-- Foreman Flatfinger
+						["coord"] = { 55.3, 27.4, 1699 },	-- Sinfall Reaches
+					}),
 					q(62903, {	-- Into the Reservoir
 						["sourceQuests"] = { 62902 },	-- Anima is Power
 						["provider"] = { "n", 172605 },	-- Foreman Flatfinger
@@ -337,8 +347,8 @@ _.Zones =
 						["coord"] = { 55.0, 26.8, 1699 },	-- Sinfall Reaches
 					}),
 					q(63215, {	-- Report to Draven
-						["description"] = "|cFFfe040fVenthyr Covenant|r only.",
 						["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
+						["description"] = "|cFFfe040fVenthyr Covenant|r only.",
 						["provider"] = { "n", 159478 },	-- Tal-Inara
 						["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
 						["maps"] = { 1670 },	-- Oribos
@@ -349,11 +359,25 @@ _.Zones =
 						["coord"] = { 50.9, 38.1, 1699 },	-- Sinfall Reaches
 					}),
 					q(59314, {	-- Sinfall
-						["description"] = "|cFFfe040fVenthyr Covenant|r only.",
 						["sourceQuests"] = { 63215 },	-- Report to Draven
+						["description"] = "|cFFfe040fVenthyr Covenant|r only.",
 						["provider"] = { "n", 171589 },	-- General Draven
 						["coord"] = { 44.8, 68.9, 1670 },	-- Oribos
 						["maps"] = { 1670 },	-- Oribos
+					}),
+					q(62870, {	-- Souls for Sinfall
+						["sourceQuests"] = { 62837 },	-- Hopeful News
+						["description"] = "|cFFfe040fVenthyr Covenant|r only.",
+						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+						["coord"] = { 40.0, 68.3, 1670 },	-- Oribos
+						["maps"] = { 1670 },	-- Oribos
+						["g"] = {
+						--	TODO: verify mail reward.  Fearstalker's Ebony Gauntlets is not recorded in API as a reward, but it'd be weird if it wasn't one and all the other armor types got a piece from the quest
+							i(180909),	-- Ebony Death Shroud Gloves
+							i(180910),	-- Dread Sentinel's Ebony Grips
+							i(180911),	-- Soulbreaker's Ebony Handwraps
+							i(180912),	-- Fearstalker's Ebony Gauntlets
+						},
 					}),
 					q(62857, {	-- The Court's Bounty
 						["sourceQuests"] = { 62856 },	-- Building Your Renown

@@ -173,12 +173,16 @@ _.Zones =
 					},
 				}),
 				n(163460, { -- Dionae
-					--["coord"] = { 51.8, 68.6, 1533 },
-					--["questID"] = ,
+					["description"] = "Stewart offers you his Stewpendous Stew in thanks after you save him from Dionae.",
+					["questID"] = 62650,
 					["isDaily"] = true,
+					["coord"] = { 40.9, 47.4, 1533 },
 					["g"] = {
 						crit(9, {	-- Dionae
 							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
+						o(344588, {	-- Stewart's Stewpendous Stew
+							i(180856)	-- Silvershell Snapper
 						}),
 					},
 				}),
@@ -194,20 +198,6 @@ _.Zones =
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 						i(180062),	-- Heavenly Drum
-					},
-				}),
-				n(171013, { -- Embodied Hunger
-					["coords"] = {
-						{ 55.8, 14.4, 1533},
-						{ 47.6, 42.8, 1533},
-						{ 59.8, 52.0, 1533},
-					},
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
-						crit(16, {	-- Embodied Hunger
-							["achievementID"] = 14307,	-- Adventurer of Bastion
-						}),
 					},
 				}),
 				n(171009, { -- Enforcer Aegeon
@@ -317,6 +307,48 @@ _.Zones =
 						i(180773),	-- Sundancer
 					},
 				}),
+				n(171012, {	-- Swelling Tear
+					["description"] = "Swelling Tear has a chance to spawn Embodied Hunger, Worldfeaster Chronn, or Xixin the Ravening.",
+					["coords"] = {
+						{ 39.6, 45.0, 1533 },
+						{ 46.8, 42.2, 1533 },
+						{ 51.8, 21.0, 1533 },
+						{ 52.2, 32.6, 1533 },
+						{ 56.0, 14.2, 1533 },
+						{ 59.8, 51.8, 1533 },
+						{ 63.4, 36.0, 1533 },
+					},
+					["g"] = {
+						n(171013, { -- Embodied Hunger
+							--["questID"] = ,
+							["isDaily"] = true,
+							["g"] = {
+								crit(16, {	-- Embodied Hunger
+									["achievementID"] = 14307,	-- Adventurer of Bastion
+								}),
+							},
+						}),
+						n(171040, { -- Xixin the Ravening
+							--["questID"] = ,
+							["isDaily"] = true,
+							["g"] = {
+								crit(17, {	-- Xixin the Ravening
+									["achievementID"] = 14307,	-- Adventurer of Bastion
+								}),
+							},
+						}),
+						n(171041, { -- Worldfeaster Chronn
+							--["questID"] = ,
+							["isDaily"] = true,
+							["g"] = {
+								crit(18, {	-- Worldfeaster Chronn
+									["achievementID"] = 14307,	-- Adventurer of Bastion
+								}),
+								i(180869),	-- Devoured Wader
+							},
+						}),
+					},
+				}),
 				n(171008, { -- Unstable Memory
 					["description"] = "Get aggro on an Unstable Memory Fragment, drag it through more fragments until the mob has 10 stacks of Instability, and it will turn into the rare.\n\nIf Unstable Memory Fragments are not up, the rare is not available to summon.",
 					["coord"] = { 43.4, 25.2, 1533 },
@@ -335,35 +367,6 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						crit(7, {	-- Wingflayer the Cruel
-							["achievementID"] = 14307,	-- Adventurer of Bastion
-						}),
-					},
-				}),
-				n(171041, { -- Worldfeaster Chronn
-					["coords"] = {
-						{ 56.0, 14.6, 1533 },
-						{ 52.2, 31.6, 1533 },
-						{ 47.8, 42.8, 1533 },
-					},
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
-						crit(18, {	-- Worldfeaster Chronn
-							["achievementID"] = 14307,	-- Adventurer of Bastion
-						}),
-						i(180869),	-- Devoured Wader
-					},
-				}),
-				n(171040, { -- Xixin the Ravening
-					["coords"] = {
-						{ 47.6, 43.0, 1533 },
-						{ 63.6, 35.8, 1533 },
-						{ 59.8, 51.6, 1533 },
-					},
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
-						crit(17, {	-- Xixin the Ravening
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 					},

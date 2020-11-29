@@ -61,12 +61,6 @@ _.Zones =
 					["questID"] = 60798,	-- also triggered 60874... why two quests?
 					["coord"] = { 45.6, 33.8, 1533 }
 				}),
-				o(344588, {	-- Stewart's Stewpendous Stew
-					-- TODO: ["coord"] = {},
-					["g"] = {
-						i(180856)	-- Silvershell Snapper
-					},
-				}),
 				i(180866),	-- Gilded Wader
 				-- TODO: [[object(xxxxxx, {	--
 					--["description"] = "Requires to be Kyrian Covenant and channel Anima to Temple of Purity.",

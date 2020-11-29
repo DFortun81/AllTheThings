@@ -23,6 +23,7 @@ _.Zones =
 					i(179508),	-- Duskwarder Warglaive
 					i(181411),	-- Faemoss Coronet
 					i(175728),	-- Soulsifter Root
+					i(179594),	-- Witherscorn Guise
 				},
 			}),
 		}),

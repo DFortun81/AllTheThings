@@ -255,16 +255,19 @@ _.Zones =
 						--[[
 						n(166135, {	-- Astra, As Azshara <An Infamous Queen>
 							["questID"] = ,
+							["isDaily"] = true,
 							["g"] = {
 							},
 						}),
 						n(166145, {	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>
 							["questID"] = ,
+							["isDaily"] = true,
 							["g"] = {
 							},
 						}),
 						n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
 							["questID"] = ,
+							["isDaily"] = true,
 							["g"] = {
 							},
 						}),
@@ -286,11 +289,13 @@ _.Zones =
 						--[[
 						n(166146, {	-- Niya, As Xavius <Some Kind of Evil Sylvar>
 							["questID"] = ,
+							["isDaily"] = true,
 							["g"] = {
 							},
 						}),
 						n(166140, {	-- Senthii, As Gul'dan <From an Alternate Timeline>
 							["questID"] = ,
+							["isDaily"] = true,
 							["g"] = {
 							},
 						}),
