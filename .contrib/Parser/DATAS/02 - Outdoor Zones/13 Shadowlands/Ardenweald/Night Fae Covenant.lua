@@ -18,14 +18,6 @@ _.Zones =
 						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 						["coord"] = { 44.6, 56.2, 1565 },
 					}),
-					q(59120, {	-- Renny the Vulpin
-						["sourceQuests"] = { 59087 },	-- That Darn Fox!
-						["provider"] = { "n", 163903 },	-- Renny
-						["coord"] = { 51.6, 8.1, 1701 },
-						["g"] = {
-							i(175114),	-- Renny
-						},
-					}),
 					q(61984, {	-- Replenish the Reservoir
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 						["provider"] = { "n", 158553 },	-- Flutterby
@@ -46,10 +38,6 @@ _.Zones =
 						["sourceQuests"] = { 63067 },	-- Root Restoration
 						["provider"] = { "n", 167196 },	-- Sesselie
 						["coord"] = { 50.1, 63.7, 1702 },
-					}),
-					q(59087, {	-- That Darn Fox!
-						["provider"] = { "n", 163774 },	-- Clarion Song
-						["coord"] = { 50.9, 33.8, 1565 },
 					}),
 
 					

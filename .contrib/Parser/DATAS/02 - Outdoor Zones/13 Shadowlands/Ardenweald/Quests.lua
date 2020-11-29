@@ -408,6 +408,14 @@ _.Zones =
 					["provider"] = { "n", 170290 },	-- Ara'lon
 					["coord"] = { 62.3, 45.5, 1565 },
 				}),
+				q(59120, {	-- Renny the Vulpin
+					["sourceQuests"] = { 59087 },	-- That Darn Fox!
+					["provider"] = { "n", 163903 },	-- Renny
+					["coord"] = { 49.2, 51.9, 1565 },
+					["g"] = {
+						i(175114),	-- Renny (PET!)
+					},
+				}),
 				q(60522, {	-- Return to Tirna Vaal
 					["sourceQuests"] = { 60632 },	-- I Know Your Face
 					["provider"] = { "n", 169935 },	-- Ara'lon
@@ -536,6 +544,10 @@ _.Zones =
 					["sourceQuests"] = { 57816 },	-- Dreamweaver
 					["provider"] = { "n", 169116 },	-- Dreamweaver
 					["coord"] = { 64.2, 41.2, 1565 },
+				}),
+				q(59087, {	-- That Darn Fox!
+					["provider"] = { "n", 163774 },	-- Clarion Song
+					["coord"] = { 50.9, 33.8, 1565 },
 				}),
 				q(61051, {	-- The Absent-Minded Artisan
 					["sourceQuests"] = { 57825 },	-- Delivery for Guardian Kota

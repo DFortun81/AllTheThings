@@ -16,6 +16,7 @@ i(184294);	-- Ethereal Ambrosia
 i(181744);	-- Forgelite Ember
 i(181745);	-- Forgesmith's Coal
 i(181550);	-- Hopebreaker's Field Injector
+i(184387);	-- Misty Shimmerleaf
 i(181547);	-- Noble's Draught
 i(181649);	-- Preserved Preternatural Braincase
 i(184769);	-- Pressed Torchlily Blossom
