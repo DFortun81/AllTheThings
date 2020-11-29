@@ -17,12 +17,15 @@ _.Zones =
 					},
 				}),
 				n(164238, {	-- Deifir the Untamed
-					["coord"] = { 46.6, 26.2, 1565 },
-					--["questID"] = ,
+					["description"] = "The rare runs laps through the water.  You can hop on its back slow it and periodically stun it.",
+					["questID"] = 59201,
 					["isDaily"] = true,
+					["coord"] = { 47.6, 24.6, 1565 },
 					["g"] = {
-						ach(14309, crit(7)),	-- Adventurer of Ardenweald / Deifir the Untamed
-						i(180631),	-- Gorm Needler
+						crit(7, {	-- Deifir the Untamed
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
+						i(180631),	-- Gorm Needler (PET!)
 					},
 				}),
 				n(163229, {	-- Dustbrawl
@@ -101,12 +104,22 @@ _.Zones =
 					},
 				}),
 				n(164093, {	-- Macabre
-					--["coord"] = { 50.0, 20.6, 1565 },
-					--["questID"] = ,
+					["description"] = "Shows up as 'Mysterious Mushroom Ring' on the minimap.  Requires 3 players.\n\nAll 3 must stand in the Ring of Dance.  Player 1 /dances with Player 2, Player 2 /dances with Player 3, and Player 3 /dances with Player 1.",
+					["questID"] = 59140,
 					["isDaily"] = true,
+					["coords"] = {
+						{ 47.9, 40.2, 1565 },	-- confirmed
+						{ 36.5, 47.9, 1565 },
+						{ 59.9, 29.4, 1565 },
+						{ 36.5, 47.9, 1565 },
+						{ 32.7, 44.7, 1565 },
+						{ 57.9, 29.3, 1565 },
+					},
 					["g"] = {
-						ach(14309, crit(3)),	-- Adventurer of Ardenweald / Macabre
-						i(180644),	-- Rocky
+						crit(3, {	-- Macabre
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
+						i(180644),	-- Rocky (PET!)
 					},
 				}),
 				n(165053, {	-- Mymaen
@@ -265,7 +278,7 @@ _.Zones =
 						}),
 						n(166138, {	-- Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
 							["isDaily"] = true,	-- ??
-							["questID"] = 61202,	-- also triggered 61633 on first kill
+							["questID"] = 61202,
 							["g"] = {
 								i(179534),	-- Mi'kai's Deathscythe
 							},

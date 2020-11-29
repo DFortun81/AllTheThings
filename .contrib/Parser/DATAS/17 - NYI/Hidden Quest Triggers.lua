@@ -2938,6 +2938,33 @@ _.HiddenQuestTriggers =
 
 		-- Various tracking quests
 		q(61858),	-- taking the portal to Acherus during "Shadowlands: A Chilling Summons"
+		
+		-- Ardenweald
+		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
+		q(61170),	-- triggered when unlocking the Harmonic Chest (looting it has a separate ID, in Achievements file)
+		q(62943),	-- Triggered when looting Crafter's Basket for the Enchanting: Boundless Basket WQ
+		-- Rares
+		q(62271),	-- Deifir the Untamed secondary quest
+		q(62269),	-- Macabre secondary quest
+		-- Ardenweald Covenant (Night Fae)
+		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
+		q(57559),	-- Triggered after turning in For Queen and Grove! (58160)
+		q(62706),	-- Triggered after turning in For Queen and Grove! (58160)
+		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
+		q(63070),	-- Triggered after completing first Adventure tutorial mission
+		q(63359),	-- Triggered after completing first Adventure tutorial mission
+		q(63071),	-- Triggered after completing last Adventure tutorial mission
+		q(63363),	-- Triggered after completing last Adventure tutorial mission
+		q(60634),	-- Triggered after completing last Adventure tutorial mission
+		q(63367),	-- Triggered after completing last Adventure tutorial mission
+		q(61692),	-- \
+		q(61693),	--  \
+		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3 
+		q(61695),	--  /
+		q(61696),	-- /
+		q(61590),	-- Triggered after first time channeling anima to Glitterfall Basin
+		q(60721),	-- Triggered after turning in The Roots Thirst
+		q(60722),	-- Triggered after turning in The Roots Thirst
 
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
@@ -3036,31 +3063,6 @@ _.HiddenQuestTriggers =
 		q(59996),	-- Tracking Quest (Finished Skoldus Hall Layer 1)
 		q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
 		q(62967),	-- Triggered when opening Domination Lock for Prison of the Forgotten quest
-
-		-- Ardenweald
-		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
-		q(61170),	-- triggered when unlocking the Harmonic Chest (looting it has a separate ID, in Achievements file)
-		q(62943),	-- Triggered when looting Crafter's Basket for the Enchanting: Boundless Basket WQ
-		
-		-- Ardenweald Covenant (Night Fae)
-		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
-		q(57559),	-- Triggered after turning in For Queen and Grove! (58160)
-		q(62706),	-- Triggered after turning in For Queen and Grove! (58160)
-		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
-		q(63070),	-- Triggered after completing first Adventure tutorial mission
-		q(63359),	-- Triggered after completing first Adventure tutorial mission
-		q(63071),	-- Triggered after completing last Adventure tutorial mission
-		q(63363),	-- Triggered after completing last Adventure tutorial mission
-		q(60634),	-- Triggered after completing last Adventure tutorial mission
-		q(63367),	-- Triggered after completing last Adventure tutorial mission
-		q(61692),	-- \
-		q(61693),	--  \
-		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3 
-		q(61695),	--  /
-		q(61696),	-- /
-		q(61590),	-- Triggered after first time channeling anima to Glitterfall Basin
-		q(60721),	-- Triggered after turning in The Roots Thirst
-		q(60722),	-- Triggered after turning in The Roots Thirst
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

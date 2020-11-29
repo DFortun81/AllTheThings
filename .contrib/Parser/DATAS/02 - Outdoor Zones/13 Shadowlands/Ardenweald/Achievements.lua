@@ -241,16 +241,17 @@ _.Zones =
 						},
 					}),
 					crit(10, {	-- Desiccated Moth
-						["npcID"] =	 171484,	-- Desiccated Moth
+						["description"] = "Collect Aromatic Flowers from |cFFFFFFFF31.7, 32.5|r, jump with Bounding Shroom at |cFFFFFFFF41.4, 31.6|r on the Tree and burn the Flowers.",
+						["questID"] = 61147,
 						["coords"] = {
-							{ 36.4, 59.6, 1565 },	-- Flowers
+							{ 31.7, 32.5, 1565 },	-- Flowers
 							{ 41.4, 31.6, 1565 },	-- Mushroom
 							{ 42.0, 32.6, 1565 },	-- Treasure
 						},
-						["questID"] = 61147,
-						["description"] = "Collect Aromatic Flowers from |cFFFFFFFF36.4, 59.6|r, jump with Bounding Mushroom at |cFFFFFFFF41.4, 31.6|r on the Tree and burn the Flowers.",
+						["crs"] = { 171484 },	-- Desiccated Moth
 						["g"] = {
 							i(180640),	-- Amber Glitterwing
+							i(180784),	-- Aromatic Flowers (so the item is associated with the treasure)
 						},
 					}),
 					crit(11, {	-- Dreamsong Heart
