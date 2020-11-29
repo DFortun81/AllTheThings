@@ -24,6 +24,7 @@ _.Zones =
 					i(181411),	-- Faemoss Coronet
 					i(179549),	-- Nightwillow Cudgel
 					i(175728),	-- Soulsifter Root
+					i(179594),	-- Witherscorn Guise
 				},
 			}),
 		}),

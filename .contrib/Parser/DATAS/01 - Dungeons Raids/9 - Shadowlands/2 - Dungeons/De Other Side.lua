@@ -21,6 +21,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				q(62456,{	-- De Other Side: Dealin' Wit' Da Boss
 					["provider"] = { "n", 174327 },	-- Mask of Bwonsamdi
 					["sourceQuest"] = 62458,	-- De Other Side
+					["_drop"] = { "g" },	-- ignore Anima item that insists on being part of this quest
 				}),
 			}),
 			d(1, {	-- Normal

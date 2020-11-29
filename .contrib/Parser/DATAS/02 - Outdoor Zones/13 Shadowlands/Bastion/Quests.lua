@@ -250,6 +250,10 @@ _.Zones =
 					["provider"] = { "o", 362489 },	-- Elysian Decree
 					["coord"] = { 48.8, 73.3, 1533 },
 				}),
+				q(57860, {	-- How to Become Forsworn
+					["provider"] = { "n", 159248 },	-- Haetio
+					["coord"] = { 36.6, 37.6, 1533 },
+				}),
 				q(58979, {	-- I MADE You!
 					["sourceQuests"] = { 58978 },	-- Lysonia's Truth
 					["provider"] = { "n", 167034 },	-- Mikanikos
@@ -270,6 +274,14 @@ _.Zones =
 				--	TODO: figure out SQ.  picked it up during "A Soulbind in Need" / "The Things That Haunt Us" when i took a detour to run up the hill to kill a rare that spawned.
 					["provider"] = { "n", 158078 },	-- Keeper Mnemis
 					["coord"] = { 46.9, 63.4, 1533 },
+				}),
+				q(57861, {	-- Just Act Natural
+					["sourceQuests"] = {
+						57860,	-- How to Become Forsworn
+						59207,	-- Unshackled Knowledge
+					},
+					["provider"] = { "n", 159248 },
+					["coord"] = { 36.6, 37.6, 1533 },
 				}),
 				q(59199, {	-- Kyrestia, the Firstborne
 					["sourceQuests"] = { 59198 },	-- On Swift Wings
@@ -304,6 +316,16 @@ _.Zones =
 					["sourceQuests"] = { 58977 },	-- What's In a Memory?
 					["provider"] = { "n", 167038 },	-- Kleia
 					["coord"] = { 57.5, 61.7, 1533 },
+				}),
+				q(57875, {	-- Mark of Humility
+					["sourceQuests"] = { 57861 },	-- Just Act Natural
+					["provider"] = { "n", 159272 },	-- Artificer Ligiea
+					["coord"] = { 42.7, 39.3, 1533 },
+				}),
+				q(57914, {	-- Mark of Knowledge
+					["sourceQuests"] = { 57861 },	-- Just Act Natural
+					["provider"] = { "n", 159272 },	-- Artificer Ligiea
+					["coord"] = { 42.7, 39.3, 1533 },
 				}),
 				q(58980, {	-- Mnemis, At Your Service
 					["sourceQuests"] = { 58979 },	-- I MADE You!
@@ -727,6 +749,10 @@ _.Zones =
 					["provider"] = { "n", 165107 },	-- Kleia
 					["coord"] = { 41.8, 78.1, 1533 },
 				}),
+				q(59207, {	-- Unshackled Knowledge
+					["provider"] = { "n", 159248 },	-- Haetio
+					["coord"] = { 36.6, 37.6, 1533 },
+				}),
 				q(57261, {	-- Walk the Path, Aspirant
 					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 					["provider"] = { "n", 166306 },	-- Kalisthene
@@ -805,6 +831,14 @@ _.Zones =
 					["provider"] = { "n", 157696 },	-- Nemea
 					["coord"] = { 57.2, 39.2, 1533 },
 				}),
+				q(57966, {	-- You Go First
+					["sourceQuests"] = {
+						57875,	-- Mark of Humility
+						57914,	-- Mark of Knowledge
+					},
+					["provider"] = { "n", 159272 },	-- Artificer Ligiea
+					["coord"] = { 43.1, 38.4, 1533 },
+				}),
 				q(62170, {	-- You'll Never Walk Alone
 					["provider"] = { "i", 182693 },	-- Lost Disciple's Notes
 					["coord"] = { 59.3, 60.9, 1533 },
@@ -843,7 +877,7 @@ _.Zones =
 				q(58184, {	-- Antiquated Methodology
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 54.7, 41.1, 1533 },
-					["sourceQuest"] = 57937,	-- Tactical Formation
+					["sourceQuests"] = { 57937 },	-- Tactical Formation
 					["altQuests"] = {
 						58184,	-- Antiquated Methodology
 						58185,	-- Success Without Soul
@@ -852,7 +886,7 @@ _.Zones =
 				q(58185, {	-- Success Without Soul
 					["provider"] = { "n", 157696 },	-- Nemea
 					["coord"] = { 57.2, 39.2, 1533 },
-					["sourceQuest"] = 58042,	-- On Larion Wings
+					["sourceQuests"] = { 58042 },	-- On Larion Wings
 					["altQuests"] = {
 						58184,	-- Antiquated Methodology
 						58185,	-- Success Without Soul
@@ -867,12 +901,12 @@ _.Zones =
 					["coord"] = { 47.8, 73.2, 1533 },
 				}),
 				q(62714, {	-- A Gift for An Acolyte
-					["sourceQuest"] = 60466,	-- The Old Ways
+					["sourceQuests"] = { 60466 },	-- The Old Ways
 					["provider"] = { "n", 160598 },	-- Klystere
 					["coord"] = { 47.8, 73.2, 1533 },
 				}),
 				q(62715, {	-- More Than A Gift
-					["sourceQuest"] = 62714,	-- A Gift for An Acolyte
+					["sourceQuests"] = { 62714 },	-- A Gift for An Acolyte
 					["provider"] = { "n", 174900 },	-- Acolyte Amalthina
 					["coord"] = { 53.8, 73.8, 1533 },
 				}),
@@ -882,22 +916,22 @@ _.Zones =
 					["coord"] = { 42.82, 42.73, 1533 },
 				}),
 				q(59263, {	-- Feathers of Flight
-					["sourceQuest"] = 59262,	-- Broken Wings
+					["sourceQuests"] = { 59262 },	-- Broken Wings
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.82, 42.73, 1533 },
 				}),
 				q(60660, {	-- Flight Test
-					["sourceQuest"] = 59263,	-- Feathers of Flight
+					["sourceQuests"] = { 59263 },	-- Feathers of Flight
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.82, 42.73, 1533 },
 				}),
 				q(59348, {	-- More Wings!
-					["sourceQuest"] = 60660,	-- Flight Test
+					["sourceQuests"] = { 60660 },	-- Flight Test
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.82, 42.73, 1533 },
 				}),
 				q(59351, {	-- Strings and Things
-					["sourceQuest"] = 60660,	-- Flight Test
+					["sourceQuests"] = { 60660 },	-- Flight Test
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.82, 42.73, 1533 },
 				}),
@@ -913,7 +947,7 @@ _.Zones =
 					},
 				}),
 				q(59865, {	-- Glimmerflight
-					["sourceQuest"] = 59311,	-- How to Catch a Glimmerfly
+					["sourceQuests"] = { 59311 },	-- How to Catch a Glimmerfly
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.82, 42.73, 1533 },
 					["g"] = {
