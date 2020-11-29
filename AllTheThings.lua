@@ -757,7 +757,7 @@ app.print = function(...)
 	print(L["TITLE"], ...);
 end
 app.report = function()
-	app.print(app.Version .. ": Please report this to the ATT Discord! Thanks!");
+	app.print(app.Version .. ": Please report this to the ATT Discord in #errors! Thanks!");
 end
 
 -- audio lib
