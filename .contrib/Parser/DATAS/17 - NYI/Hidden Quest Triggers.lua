@@ -3009,6 +3009,10 @@ _.HiddenQuestTriggers =
 		-- Revendreth WQs
 		q(59858),	-- Tea Tales: Theotar Achievement criteria
 		q(59861),	-- Tea Tales: Theotar Achievement criteria
+		-- Venthyr Covenant
+		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
+		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
+		q(62827),	-- uhhhhh i killed myself by jumping into nothingness from one of the platforms
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

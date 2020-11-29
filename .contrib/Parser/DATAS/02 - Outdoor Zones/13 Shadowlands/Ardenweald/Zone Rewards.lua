@@ -21,6 +21,7 @@ _.Zones =
 					i(181432),	-- Duskwarder Spellthorn
 					i(179547),	-- Duskwarder Warclub
 					i(179508),	-- Duskwarder Warglaive
+					i(181411),	-- Faemoss Coronet
 					i(175728),	-- Soulsifter Root
 				},
 			}),

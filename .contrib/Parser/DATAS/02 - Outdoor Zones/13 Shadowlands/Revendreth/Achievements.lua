@@ -72,11 +72,12 @@ _.Zones =
 						},
 					}),
 					crit(2, {	-- Stylish Parasol
+						["description"] = "Go up the stairs that start at 41.3, 44.9.",
 						["objectID"] = 357487,	-- Stylish Parasol
-						["coord"] = { 38.4, 44.2, 1525 },
 						["questID"] = 61999,
+						["coord"] = { 38.4, 44.2, 1525 },
 						["g"] = {
-							i(182694),	-- Stylish Black Parasol
+							i(182694),	-- Stylish Black Parasol (TOY!)
 						},
 					}),
 					crit(3, {	-- The Count
@@ -125,12 +126,16 @@ _.Zones =
 						},
 					}),
 					crit(8, {	-- Forbidden Chamber
+						["description"] = "Use the Anima Canister to drain anima from Silent Observers, and then use the Extra Action Button next to the Chamber Guardian.",
 						["objectID"] = 358298,	-- Forbidden Chamber Lockbox
-						["coord"] = { 47.3, 55.3, 1525 },
 						["questID"] = 62243,
-						["description"] = "Use the Anima Canister to drain anima from Silent Observer and feed it to the Chamber Guardian.",
+						["coord"] = { 47.3, 55.3, 1525 },
+						["crs"] = {
+							173786,	-- Chamber Guardian
+							173838,	-- Silent Observer
+						},
 						["g"] = {
-							i(184075),	-- Stonewrought Sentry
+							i(184075),	-- Stonewrought Sentry (TOY!)
 						},
 					}),
 					crit(9, {	-- Smuggled Cache

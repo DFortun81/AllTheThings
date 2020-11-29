@@ -122,13 +122,17 @@ _.Zones =
 					},
 				}),
 				n(171014, { -- Collector Astorestes
-					--["coord"] = { 41.8, 55.4, 1533 },
-					--["questID"] = ,
+					["description"] = "First, read the 6 chapters of Mercia's Legacy.\n\nChapter One - 66.1, 44.1, on a small table with two vases.\nChapter Two - 65.9, 44.1, on a bench.\nChapter Three - 65.7, 43.9, behind a bench.\nChapter Four - 65.7, 43.4, on the lower-left shelf.\nChapter Five - 65.9, 43.2, to the right of the bench.\nChapter Six - 66.2, 43.2, on the lower-right corner of the table.\n\nSpeak to the Echo of Mercia, and she will give you a 5-minute buff allowing you to find the secret 7th chapter of the story.  It will be outside the main temple room; just look at all the tables until you find a glowing purple scroll.\n\nPick up the 7th chapter scroll, bring it to the Echo of Mercia, and the rare will appear.",
+					["questID"] = 61002,
 					["isDaily"] = true,
+					["coord"] = { 66.0, 43.6, 1533 },
+					["crs"] = { 157979 },	-- Echo of Mercia <Paragon of Humility>
 					["g"] = {
 						crit(19, {	-- Collector Astorestes
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
+						i(183614),	-- Gavel of Harmonious Wisdom
+						i(180569),	-- Mercia's Legacy: Chapter Seven (so the item is associated with the rare)
 					},
 				}),
 				n(171010, { -- Corrupted Clawguard
@@ -314,9 +318,11 @@ _.Zones =
 					},
 				}),
 				n(171008, { -- Unstable Memory
-					--["coord"] = { 50.8, 19.6, 1533 },
-					--["questID"] = ,
+					["description"] = "Get aggro on an Unstable Memory Fragment, drag it through more fragments until the mob has 10 stacks of Instability, and it will turn into the rare.\n\nIf Unstable Memory Fragments are not up, the rare is not available to summon.",
+					["coord"] = { 43.4, 25.2, 1533 },
+					["questID"] = 60997,
 					["isDaily"] = true,
+					["crs"] = { 171018 },	-- Unstable Memory Fragment
 					["g"] = {
 						crit(15, {	-- Unstable Memory
 							["achievementID"] = 14307,	-- Adventurer of Bastion
