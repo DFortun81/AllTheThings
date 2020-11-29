@@ -12,7 +12,9 @@ _.Zones =
 					["questID"] = 59226,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(1)),	-- Adventurer of Ardenweald / Deathbinder Hroth
+						crit(1, {	-- Deathbinder Hroth
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
 						i(180166),	-- Deathbinder's Staff
 					},
 				}),
@@ -33,7 +35,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(17)),	-- Adventurer of Ardenweald / Dustbrawl (crit 18 is also Dustbrawl, why??)
+						crit(17, {	-- Dustbrawl (crit 18 is also Dustbrawl, why??)
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
 					},
 				}),
 				n(167851, {	-- Egg-Tender Leh'go
@@ -74,8 +78,10 @@ _.Zones =
 					["isDaily"] = true,
 					["description"] = "Kill Deranged Guardians and Bristlecone Terrors until Chompy spawns. After killing Chompy Gormtamer Tizo will spawn.",
 					["g"] = {
+						crit(4, {	-- Gormtamer Tizo
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
 						i(180725),	-- Spinemaw Gladechewer
-						ach(14309, crit(4)),	-- Adventurer of Ardenweald / Gormtamer Tizo
 					},
 				}),
 				n(164112, {	-- Humon'gozz
@@ -95,7 +101,9 @@ _.Zones =
 					["questID"] = 59221,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(10)),	-- Adventurer of Ardenweald / Hunter Vivanna <The Wild Hunt>
+						crit(10, {	-- Hunter Vivanna
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
 						i(179596),	-- Drust Mask of Dominance
 						i(183091, {	-- Lifewoven Bracelet
 							["questID"] = 62246,	-- A Fallen Friend
@@ -127,7 +135,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(11)),	-- Adventurer of Ardenweald / Mymaen
+						crit(11, {	-- Mymaen
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
 					},
 				}),
 				n(164547, {	-- Mystic Rainbowhorn
@@ -135,7 +145,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(2)),	-- Adventurer of Ardenweald / Mystic Rainbowhorn
+						crit(2, {	-- Mystic Rainbowhorn
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
 					},
 				}),
 				n(168135, {	-- Night Mare
@@ -144,8 +156,10 @@ _.Zones =
 					["isDaily"] = true,
 					["description"] = "|cFFA330C9Night Fae Covenant|r only. Requires Dream Catcher.",
 					["g"] = {
+						crit(16, {	-- Night Mare
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
 						i(180728),				-- Swift Gloomhoof
-						ach(14309, crit(16)),	-- Adventurer of Ardenweald / Night Mare
 						i(181243, {			-- Broken Soulweb
 							["coord"] = { 19.67, 63.47, 1565 },
 							["description"] = "West of Thirna Scithe on Ardenweald there is a platform with a broken cart on it. Loot the Cracked Soulweb Object next to it to receive the Broken Soulweb.",
@@ -184,7 +198,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(8)),	-- Adventurer of Ardenweald / Old Ardeite
+						crit(8, {	-- Old Ardeite
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
 						i(180643),	-- Chirpy Valeshrieker
 					},
 				}),
@@ -193,7 +209,9 @@ _.Zones =
 					["questID"] = 60273,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(14)),	-- Adventurer of Ardenweald / Rootwrithe
+						crit(14, {	-- Rootwrithe
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
 					},
 				}),
 				n(167724, {	-- Rotbriar Changeling
@@ -230,7 +248,9 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14309, crit(9)),	-- Adventurer of Ardenweald / Skuld Vit
+						crit(9, {	-- Skuld Vit
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
 					},
 				}),
 				n(171451, {	-- Soultwister Cero
@@ -321,8 +341,13 @@ _.Zones =
 					["isDaily"] = true,
 					["description"] = "Requires a |cFFA330C9Night Fae Covenant|r to remove the Veil. The Anima Conductor needs to channel anima to Tirna Scithe. Afterwards you can loot the Animaseed Light at the boss to remove the Veil.",
 					["g"] = {
+						crit(19, {	-- Valfir the Unrelenting
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
 						i(180730),	-- Wild Glimmerfur Prowler
-						ach(14309, crit(19)),	-- Adventurer of Ardenweald / Valfir the Unrelenting
+						i(182176, {	-- Shadowstalker Soul
+							["questID"] = 62431,	-- Shadowstalker Soul
+						}),
 					},
 				}),
 				n(164147, {	-- Wrigglemortis

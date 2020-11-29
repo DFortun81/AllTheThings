@@ -77,6 +77,16 @@ _.Zones =
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 25.0, 13.3, 1648 },
 				}),
+				q(63039, {	-- A Monument to Vengeance
+					["provider"] = { "n", 175807 },	-- Knight of the Ebon Blade
+					["coord"] = { 22.1, 48.0, 1543 },
+					["isDaily"] = true,
+				}),
+				q(63047, {	-- Acquisition: Runeforged Shackles
+					["provider"] = { "o", 364926 },	-- Runeforged Shackles
+					["coord"] = { 25.6, 24.2, 1648 },
+					["isDaily"] = true,
+				}),
 				q(59762, {	-- By and Down the River
 					["sourceQuests"] = { 59776 },	-- From the Mouths of Madness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore

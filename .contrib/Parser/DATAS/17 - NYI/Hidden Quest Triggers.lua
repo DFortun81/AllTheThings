@@ -3069,6 +3069,7 @@ _.HiddenQuestTriggers =
 
 		-- Torghast
 		q(58192),	-- Triggered after killing The Grand Malleare to complete The Soulforges
+		q(59340),	-- Triggered after using Gallath's Bell
 		q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)
 		q(59988),	-- Tracking Quest (Finished The Soulforges Layer 1)
 		q(59989),	-- Tracking Quest (Finished Coldheart Interstitia Layer 1)

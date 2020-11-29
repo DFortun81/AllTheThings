@@ -160,6 +160,11 @@ _.Zones =
 						}),
 					},
 				}),
+				n(162829, {	-- Razkazzar
+					["questID"] = 60992,	-- also 63374 (first kill?)
+					["isDaily"] = true,
+					["coord"] = { 26.2, 37.4, 1648 },
+				}),
 				n(172521, {	-- Sanngror the Torturer
 					--["coord"] = { 27.4, 49.4, 1648 },
 					["questID"] = 62210,	-- Sanngror the Torturer
