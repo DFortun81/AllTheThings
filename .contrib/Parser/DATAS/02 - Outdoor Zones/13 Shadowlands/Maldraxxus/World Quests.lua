@@ -64,6 +64,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61537, {	-- Mining: Monolithic Oxxein Cluster
+					["requireSkill"] = MINING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(58437, {	-- Parts to a Whole
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

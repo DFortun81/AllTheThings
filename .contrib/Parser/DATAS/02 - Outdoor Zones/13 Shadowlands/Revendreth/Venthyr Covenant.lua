@@ -12,6 +12,13 @@ _.Zones =
 				n(-901, {	-- Covenant Callings
 					["description"] = "|cFFfe040fVenthyr Covenant|r only.",
 					["g"] = {
+						--[[
+							-- TODO: don't want to list within every Tribute of the Court item for calling rewards
+							-- but maybe somehow track what we can get from them? 
+						n(-903,	{ -- Zone Rewards
+							-- Conduits
+							i(182136),	-- Chilled to the Core [Shaman-Enhance]
+						}),--]]
 						q(60389, {	-- Aiding Ardenweald
 							["provider"] = { "n", 165302 },	-- Rendle
 							--["coord"] = { , 1525 },
@@ -377,8 +384,17 @@ _.Zones =
 					o(356757, {	-- Greed's Desire
 						["description"] = "Part of the Greater Greedstone treasure.  Requires focusing the Anima Conductor at Crypt of the Forgotten.",
 						["questID"] = 61646,
-						["isDaily"] = true,	-- repeatable??
+						["isDaily"] = true,
 						["coord"] = { 71.9, 34.5, 1525 },
+					}),
+					o(354211, {	-- Greed's Reward
+						["description"] = "Part of the Greater Greedstone treasure.  Requires focusing the Anima Conductor at Crypt of the Forgotten.",
+						["questID"] = 61045,
+						["isDaily"] = true,
+						["coord"] = { 46.0, 29.1, 1525 },
+						["g"] = {
+							i(182768),	-- The Enchanted Dragon (unknown if interesting yet)
+						},
 					}),
 				}),
 				n(VENDORS, {

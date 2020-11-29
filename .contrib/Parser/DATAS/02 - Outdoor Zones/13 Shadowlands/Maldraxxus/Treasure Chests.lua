@@ -7,8 +7,13 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
 			n(-212, {	-- Treasure Chest
+				o(353627, {	-- Battlefront Rations
+					-- ["coord"] = { ##, ##, 1536 },
+					["cost"] = { { "i", 180277, 1 } },	-- 1x Battlefront Rations Key
+					["questID"] = 60772,
+				}),
 				o(352086, {	-- Blackhound Cache
-					["description"] = "|cFF40bf40Necrolord Covenant|r only.",
+					["description"] = "|cFF40bf40Necrolord Covenant|r, or can be accessed by placing interactible Toys inside the gate.",
 					["questID"] = 60368,
 					["coord"] = { 44.0, 39.8, 1536 },
 					["g"] = {

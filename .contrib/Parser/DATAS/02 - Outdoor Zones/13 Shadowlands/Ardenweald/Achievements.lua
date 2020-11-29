@@ -227,12 +227,12 @@ _.Zones =
 							{ 39.7, 54.3, 1565 },	-- Gardener's Hammer
 							{ 38.4, 58.0, 1565 },	-- Gardener's Flute
 							{ 38.8, 60.1, 1565 },	-- Gardener's Wand
-							{ 63.8, 37.5, 1565 },	-- Twinklestar & Treasure
+							{ 63.8, 37.5, 1565 },	-- Twinklestar & Treasure (61126 HQT)
 						},
-						["questID"] = 61074,	-- maybe 61126 too
+						["questID"] = 61074,
 						["description"] = "You need to combine the following five items:\n\n1. |cff1eff00[Diary of the Night]|r from the plattform on the tree at |cFFFFFFFF39.0, 56.9|r\n2. |cff1eff00[Gardener's Basket]|r from the fountain's edge at |cFFFFFFFF40.3, 52.6|r\n3. |cff1eff00[Gardener's Hammer]|r from inside a cart at |cFFFFFFFF39.7, 54.3|r\n4. |cff1eff00[Gardener's Flute]|r in the middle of a group of Sicklethorn Spriggans at |cFFFFFFFF38.4, 58.0|r\n5. |cff1eff00[Gardener's Wand]|r between the weels of the cart at |cFFFFFFFF38.8, 60.1|r\n\nTake |cff0070dd[Twinklestar's Gardening Toolkit]|r to Twinklestar at |cFFFFFFFF63.8, 37.5|r, he will grand you the buff \"Moonsight\" allowing you to see the Treasure right behind him.",
 						["g"] = {
-							i(180731),	-- Wildseed Cradle		-- It doesn't drop in the beta but the mount journal say so
+							i(180731),	-- Wildseed Cradle
 						},
 					}),
 					crit(10, {	-- Desiccated Moth

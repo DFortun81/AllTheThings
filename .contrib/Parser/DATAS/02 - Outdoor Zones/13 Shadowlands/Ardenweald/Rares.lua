@@ -220,6 +220,7 @@ _.Zones =
 					},
 					["description"] = "Enter the Maze in Oaken Assembly on (31.04, 54.51).\n\n On the 1st intersection at (29.60, 55.76) go LEFT/SOUTH-EAST.\n\n On the 2nd intersection at (30.02, 57.49) go RIGHT/SOUTH-WEST.\n\n On the 3rd intersection at (29.56, 57.91) go LEFT/SOUTH.\n\n On the 4th intersection at (29.31, 59.10) go RIGHT/NORTH-WEST.\n\n On the 5th intersection at (28.82, 58.71) go FORWARD/NORTH-WEST.\n\n On the 6th and last intersection at (27.56, 57.85) go LEFT/WEST into the Area.\n\n You can now engage Shizgher.\n\n After defeating Shizgher you can click Shimmermist Runner and the mount Shimmermist Runner will be put in your bag.",
 					["crs"] = { 171767 },	-- Shizgher
+					["questID"] = 61192,
 					["g"] = {
 						i(180727),		-- Shimmermist Runner
 					},
@@ -311,7 +312,7 @@ _.Zones =
 				}),
 				n(168647, {	-- Valfir the Unrelenting
 					["coord"] = { 30.0, 55.0, 1565 },
-					--["questID"] = ,
+					["questID"] = 61632,
 					["isDaily"] = true,
 					["description"] = "Requires a |cFFA330C9Night Fae Covenant|r to remove the Veil. The Anima Conductor needs to channel anima to Tirna Scithe. Afterwards you can loot the Animaseed Light at the boss to remove the Veil.",
 					["g"] = {

@@ -53,6 +53,11 @@ _.Zones =
 				--	https://www.wowhead.com/achievement=14339/shard-labor#comments
 				--	there is a counter on the achievement for 50 shards, but no specific criteria.  are there questIDs attached to each shard?  ugh.
 				--	TODO: figure out if tracking this achievement is possible for us, i guess.  @blizzard answerforyourcrimesssssss
+					n(-10200, {	-- Shard ##
+						["coord"] = { 56.9, 75.0, 1533 },
+						["description"] = "Part-way up the wall",
+						["questID"] = 61247,
+					}),
 					i(180772),	-- Silverwind Larion (MOUNT!)
 				}),
 				ach(14801, {	-- Sojourner of Bastion
@@ -161,10 +166,10 @@ _.Zones =
 							i(180064),	-- Ascended Flute
 						},
 					}),
-					crit(10, {	-- Memorial Offering
-						["objectID"] = 355286,	-- Memorial Offering
+					crit(10, {	-- Memorial Offerings
+						["objectID"] = 355286,	-- Memorial Offerings
 						["coord"] = { 56.5, 17.2, 1533 },
-						--["questID"] = ,
+						["questID"] = 61150,
 					}),
 					crit(11, {	-- Gift of Agthia
 						["objectID"] = 353942,	-- Gift of Agthia
@@ -201,7 +206,7 @@ _.Zones =
 					crit(15, {	-- Gift of Devos
 						["objectID"] = 353944,	-- Gift of Devos
 						["coord"] = { 27.6, 21.8, 1533 },
-						--["questID"] = ,
+						["questID"] = 60895,	-- TODO: also triggered 62842
 						["g"] = {
 							i(179977),	-- Benevolent Gong
 						},

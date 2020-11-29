@@ -394,41 +394,56 @@ _.Zones =
 					["coord"] = { 38.8, 70.0, 1670 },
 					["sourceQuests"] = { 62000 },	-- Choosing Your Purpose
 				}),
+				
+				-- Zone Select Breadcrumbs
 				q(62277, {	-- Ardenweald
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
+					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62275, {	-- Bastion
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
+					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-				}),
-				q(62707, {	-- The Elysian Fields
-					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
-					["sourceQuests"] = { 62275 },	-- Bastion
-				}),
-				q(62723, {	-- Bolstering Bastion
-					["provider"] = { "n", 163427 },	-- Kalisthene
-					["coord"] = { 51.1, 43.7, 1533 },
-					["sourceQuests"] = { 62707 },	-- The Elysian Fields
-				}),
-				q(62729, {	-- Return to Oribos
-					["provider"] = { "n", 159478 },	-- Kalisthene
-					["coord"] = { 51.1, 43.7, 1533 },
-					["sourceQuests"] = { 62723 },	-- Bolstering Bastion
 				}),
 				q(62278, {	-- Maldraxxus
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
+					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62279, {	-- Revendreth
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
+					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
+
+				-- Zone Travel Breadcrumbs
+				q(62707, {	-- The Elysian Fields
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 62275 },	-- Bastion
+				}),
+				
+				-- Zone Meta Quests
+				-- TODO: adding later... oof
+				q(62723, {	-- Bolstering Bastion
+					["provider"] = { "n", 163427 },	-- Kalisthene
+					["coord"] = { 51.1, 43.7, 1533 },
+					["sourceQuests"] = { 62707 },	-- The Elysian Fields
+				}),
+
+				-- Oribos Return Quests
+				q(62729, {	-- Return to Oribos
+					["provider"] = { "n", 159478 },	-- Kalisthene
+					["coord"] = { 51.1, 43.7, 1533 },
+					["sourceQuests"] = { 62723 },	-- Bolstering Bastion
+				}),
+
 				-- From Revendreth
 				-- Choosing Your Covenant
 				q(60491, {	-- Among the Kyrian

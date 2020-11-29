@@ -62,11 +62,24 @@ _.Zones =
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 71.3, 80.2, 1525 },
 				}),
+				o(354123, {	-- Pugilist's Prize
+					["description"] = "Defeat the mobs to make the treasure lootable.",
+					["questID"] = 60953,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 48.7, 63.8, 1525 },
+				}),
+				o(351540, {	-- Secret Treasure
+					["questID"] = 60196,
+					["isDaily"] = true,	-- ?? repeatable?
+					["coord"] = { 73.8, 46.3, 1525 },	
+					["g"] = {
+						i(180400),	-- Inquisitions Final Judgment
+					}
+				}),
 				o(351542, {	-- Secret Treasure
 					["questID"] = 60199,
 					["isDaily"] = true,	-- ?? repeatable?
-					["coord"] = { 74.0, 61.9, 1525 }
-					
+					["coord"] = { 74.0, 61.9, 1525 },					
 				}),
 				o(354186, {	-- Stoneborn Satchel
 					["questID"] = 60979,
@@ -87,6 +100,12 @@ _.Zones =
 				}),
 				o(354111, {	-- Stoneborn Satchel
 				--	TODO: verify objectID.  it's probably this one or 354111, the only ones that didn't have confirmed locations so far
+					["questID"] = 60941,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 75.4, 39.0, 1525 },
+				}),
+				o(354111, {	-- Stoneborn Satchel
+				--	TODO: verify objectID.  it's probably this one or 354111, the only ones that didn't have confirmed locations so far
 					["questID"] = 60942,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 55.3, 42.3, 1525 },
@@ -102,6 +121,12 @@ _.Zones =
 							["questID"] = 62184,	-- A Crate of Sinvyr Ore
 						}),
 					},
+				}),
+				o(354111, {	-- Stoneborn Satchel
+				--	TODO: verify objectID.  it's probably this one or 354111, the only ones that didn't have confirmed locations so far
+					["questID"] = 60982,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 58.1, 67.3, 1525 },
 				}),
 			}),
 		}),

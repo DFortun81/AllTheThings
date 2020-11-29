@@ -997,6 +997,8 @@ app.L = {
 		[-10103] = "Interface\\Icons\\Paladin_Protection",							-- The Maw and Torghast
 		[-10104] = "Interface\\Icons\\Paladin_Protection",							-- Covenant Sanctums
 
+		[-10200] = 3528288,															-- Anima Shard (Shard Labor achieve locations)
+
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101503] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1942,6 +1944,8 @@ app.L = {
 		[-10102] = select(1,GetCategoryInfo(15438)),	-- Shadowlands Raids
 		[-10103] = select(1,GetCategoryInfo(15440)),	-- The Maw and Torghast
 		[-10104] = select(1,GetCategoryInfo(15441)),	-- Covenant Sanctums
+
+		[-10200] = "Anima Shard",
 	};
 
 	["OBJECT_ID_ICONS"] = {
@@ -4179,11 +4183,13 @@ app.L = {
 		[353332] = "Faerie Stash",
 		[353645] = "Marileth's Journal",
 		[353650] = "Steward's Golden Chest",
+		[353683] = "Lunarlight Pod",
 		[353691] = "Skyward Bell",
 		[353868] = "Hidden Hoard",
 		[354111] = "Stoneborn Satchel",
 		[354113] = "Stoneborn Satchel",
 		[354121] = "Pugilist's Prize",
+		[354123] = "Pugilist's Prize",
 		[354186] = "Stoneborn Satchel",
 		[1278968751] = "Stoneborn Satchel",	-- TODO: fix objectID when data becomes available
 		[354852] = "Sprouting Growth",

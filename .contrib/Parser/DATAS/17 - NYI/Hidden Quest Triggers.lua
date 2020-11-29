@@ -2941,11 +2941,13 @@ _.HiddenQuestTriggers =
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
+		q(61126),	-- Turning in the Twinklestar Gardening Tools during the Cache of the Moon sequence
 		q(61170),	-- triggered when unlocking the Harmonic Chest (looting it has a separate ID, in Achievements file)
 		q(62943),	-- Triggered when looting Crafter's Basket for the Enchanting: Boundless Basket WQ
 		-- Rares
 		q(62271),	-- Deifir the Untamed secondary quest
 		q(62269),	-- Macabre secondary quest
+		q(61198),	-- Triggers when successfully completing the pre-req sequence for the Shimmermist Runner rare
 		-- Ardenweald Covenant (Night Fae)
 		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
 		q(57559),	-- Triggered after turning in For Queen and Grove! (58160)
@@ -2957,6 +2959,11 @@ _.HiddenQuestTriggers =
 		q(63363),	-- Triggered after completing last Adventure tutorial mission
 		q(60634),	-- Triggered after completing last Adventure tutorial mission
 		q(63367),	-- Triggered after completing last Adventure tutorial mission
+		q(60820),	-- \
+		q(60821),	--  \
+		q(60822),	--   flower triggers for opening Lunarlight Pod (60794) (don't have coords)
+		q(60823),	--  /
+		q(60824),	-- /
 		q(61692),	-- \
 		q(61693),	--  \
 		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3 
@@ -3008,9 +3015,13 @@ _.HiddenQuestTriggers =
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
 		q(59439),	-- triggered when throwing Viscous Oil from Burning Extract into the Pool of Potions while on the quest "Pool of Potions"
+		q(59677),	-- Triggered when looting the Battlefront Rations Key (180277)
 		q(57619),	-- triggered while on "In Death We Are Truly Tested" -- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
 		q(59843),	-- triggered when turning in "A Sure Bet"
+		q(62372),	-- triggered when 'feeding' Page 76 to the necronomicron
 		q(62786),	-- triggered when killing Unbreakable Urtz during "The Ladder" - no other arena opponents triggered quests
+
+
 		-- Maldraxxus Rares
 		q(61986),	-- Tahonta secondary quest
 		q(61988),	-- Indomitable Schmitd secondary quest
@@ -3040,6 +3051,8 @@ _.HiddenQuestTriggers =
 		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62827),	-- uhhhhh i killed myself by jumping into nothingness from one of the platforms
+		q(60300),	-- Channeling Anima Conduit to Waynecrypt Hill
+		q(60304),	-- Channeling Anima Conduit to Crypt of the Forgotten
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

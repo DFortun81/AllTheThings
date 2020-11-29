@@ -40,6 +40,13 @@ _.Zones =
 					["coord"] = { 32.8, 30.0, 1565 },
 				}),
 				--]]
+				o(353683, {	-- Lunarlight Pod
+					-- TODO: not 100% on object ID/coord
+					-- ["coord"] = { 42.5, 21.8, 1565 },
+					["description"] = "Run through 5 nearby flowers with tiny wisps to be able to open this.",
+					["questID"] = 60794,
+					["isDaily"] = true,	-- ??
+				}),
 				n(170406,	{	-- Wish Cricket
 					["repeatable"] = true,
 					["questID"] = 60829,

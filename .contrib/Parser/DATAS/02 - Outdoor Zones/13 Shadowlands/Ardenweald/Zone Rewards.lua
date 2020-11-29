@@ -22,6 +22,7 @@ _.Zones =
 					i(179547),	-- Duskwarder Warclub
 					i(179508),	-- Duskwarder Warglaive
 					i(181411),	-- Faemoss Coronet
+					i(179549),	-- Nightwillow Cudgel
 					i(175728),	-- Soulsifter Root
 				},
 			}),

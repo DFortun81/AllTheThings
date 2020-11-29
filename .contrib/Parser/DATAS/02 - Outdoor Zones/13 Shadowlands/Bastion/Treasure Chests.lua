@@ -15,10 +15,14 @@ _.Zones =
 						{ 24.8, 23.3, 1533 },
 						{ 27.5, 21.7, 1533 },
 					},
+					["g"] = {
+						i(184418),	-- Acrobatic Steward (TOY!)
+					}
 				}),
 				o(353868, {	-- Hidden Hoard
 				--	TODO: verify objectID when coords are available, probably this one or 353869
 					["questID"] = 60875,	-- also triggered 60877... why two quests?
+					-- triggered 60880 on horde, non kyrian as well
 					["coord"] = { 61.6, 37.2, 1533 }
 				}),
 				o(353650, {	-- Steward's Golden Chest
@@ -27,6 +31,7 @@ _.Zones =
 					["questID"] = 60779,
 					["isDaily"] = true,
 					["coord"] = { 53.2, 46.4, 1533 },
+					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 					["crs"] = { 170284 },	-- Elios
 				}),
 				--	TODO: are Silver Strongbox rewards shared or specific to the objectID?
@@ -37,6 +42,7 @@ _.Zones =
 					["questID"] = 60652,
 					["isDaily"] = true,	-- TODO: maybe repeatable?  not sure if these just show up again at random times on the map
 					["coord"] = { 50.8, 44.7, 1533 },
+					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
 				o(363825, {	-- Silver Strongbox (near The Eternal Forge)
 				--	TODO: updated objectIDs to match with coords when the data is available
@@ -45,6 +51,7 @@ _.Zones =
 					["questID"] = 60754,
 					["isDaily"] = true,	-- TODO: maybe repeatable?  not sure if these just show up again at random times on the map
 					["coord"] = { 50.8, 44.7, 1533 },
+					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 					["g"] = {
 						i(184418),	-- Acrobatic Steward (TOY!)
 					},
@@ -54,11 +61,13 @@ _.Zones =
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
 					["description"] = "Requires a Ripe Purian to open.",
 					["questID"] = 60755,
-					["coord"] = { 48.7, 31.8, 1533 }
+					["coord"] = { 48.7, 31.8, 1533 },
+					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
 				o(353691, {	-- Skyward Bell
 				--	TODO: updated objectIDs to match with coords when the data is available
 					["questID"] = 60798,	-- also triggered 60874... why two quests?
+					-- also triggered 60799 for horde/non-kyrian
 					["coord"] = { 45.6, 33.8, 1533 }
 				}),
 				o(344588, {	-- Stewart's Stewpendous Stew

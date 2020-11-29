@@ -173,7 +173,8 @@ _.Zones =
 						["questID"] = 61470,
 						["coord"] = { 42.3, 23.3, 1536 },
 						["g"] = {
-							i(182732),	-- The Necronom-i-nom
+							i(182732),	-- The Necronom-i-nom TOY!
+							i(183120),	-- Partially Digested Encyclopedia (maybe drops when Toy is known?)
 						},
 					}),
 					crit(7, {	-- Forgotten Momentos

@@ -35,7 +35,7 @@ _.Zones =
 				}),
 				n(166576, {	-- Azgar
 					["coord"] = { 36.0, 68.6, 1525 },
-					--["questID"] = ,
+					["questID"] = 59893,	-- TODO: also triggered 62464
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(16)),	-- Adventurer of Revendreth / Azgar
@@ -109,41 +109,48 @@ _.Zones =
 				}),
 				n(165290, {	-- Harika the Horrid
 					["coord"] = { 45.83, 79.34, 1525 },
-					--["questID"] = ,
+					["questID"] = 59612,
 					["isDaily"] = true,
-					["description"] = "Requires to be a |cFFfe040fVenthyr Covenant|r & your Anima to be channel to Wanecrypt Hill to summon him. Use the Dredterror Ballista to make him attackable.",
+					["description"] = "Requires to be a |cFFfe040fVenthyr Covenant|r & your Anima to be channelled to Wanecrypt Hill to summon him. Use the Dredterror Ballista to make him attackable.",
 					["g"] = {
-						i(180461),			-- Horrid Dredwing
-						i(176396, {			-- Dredhollow Tools
-							["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
-							["crs"] = { 165325 },	-- Muckborn Craftsman
-							["coords"] = {
-								{ 40.77, 72.70, 1525 },	-- Tool1
-								{ 41.18, 74.67, 1525 },	-- Tool2
-							},
+						-- TODO: rearrange this probably...
+						n(165327, {	-- Wingsmash
+							["coord"] = { 46.30, 77.86, 1525 },
 							["g"] = {
-								n(165325, {		-- Muckborn Craftsman
-									["coord"] = { 46.0, 79.0, 1525 },	-- Muckborn Craftsman
-									["g"] = {
-										i(176397, {			-- Dredhollow Bolt
+								q(59607, {	-- Takin' Down the Beast
+									["description"] = "If this quest is offered, it must be completed to spawn the rare.",
+									["repeatable"] = true,
+									["cost"] = { "i", 176397, 1 },	-- 1x Dredhollow Bolt
+									["g"] = {										
+										i(176397, {	-- Dredhollow Bolt
 											["description"] = "Used to shoot the Dredterror Ballista. Bring the item to Wingsmash.",
 											["coords"] = {
 												{ 43.23, 77.62, 1525 },	-- Dredhollow Bolt
 											},
 											["crs"] = { 165324 },	-- Dredterror Ballista
-											["g"] = {
-												n(165327, {		-- Wingsmash
-													["coord"] = { 46.30, 77.86, 1525 },	-- Wingsmash
-													["g"] = {
-														i(180461),			-- Horrid Dredwing
-													},
-												}),
-											},
 										}),
-									},
+									}
 								}),
 							},
 						}),
+						n(165325, {	-- Muckborn Craftsman
+							["coord"] = { 46.0, 79.0, 1525 },	-- Muckborn Craftsman
+							["g"] = {
+								-- TODO: do they offer a quest to repair the ballista? have never seen it...
+								-- i(176396, {			-- Dredhollow Tools
+								-- 	["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
+								-- 	["crs"] = { 165325 },	-- Muckborn Craftsman
+								-- 	["coords"] = {
+								-- 		{ 40.77, 72.70, 1525 },	-- Tool1
+								-- 		{ 41.18, 74.67, 1525 },	-- Tool2
+								-- 	},
+								-- 	["g"] = {
+								-- 	},
+								-- }),
+							},
+						}),
+						i(180713),	-- Shrieker's Voicebox
+						i(180461),	-- Horrid Dredwing
 					},
 				}),
 				n(166679, {	-- Hopecrusher

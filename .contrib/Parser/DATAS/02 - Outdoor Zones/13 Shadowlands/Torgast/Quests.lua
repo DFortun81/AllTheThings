@@ -100,6 +100,15 @@ _.Zones =
 						["provider"] = { "n", 157406 },	-- Renavyth
 						["repeatable"] = true,
 					}),
+
+					-- Lockouts
+					-- TODO: Not sure how these all work or if we even want to track them (similar to how Horrific Visions had per-tier loot tracking?)
+					-- Upper Reaches
+					q(59337),	-- Level 1
+					q(61101),	-- Level 2
+					q(61131),	-- Level 3
+
+					
 				}),
 			}),
 		}),
