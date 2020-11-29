@@ -109,17 +109,17 @@ _.Zones =
 				}),
 				ach(14313, {	-- Treasures of Ardenweald
 					crit(1, {	-- Aerto's Body
-						["questID"] = 61072,
 						["coord"] = { 55.9, 21.0, 1565 },
+						["questID"] = 61072,
 						["crs"] = { 171156 },	-- Aerto
 						["g"] = {
 							i(180630),	-- Gorm Harrier (PET!)
 						},
 					}),
 					crit(2, {	-- Lost Satchel
-						["description"] = "You will not get credit for the criteria until you turn in the quest started by the satchel.",
 						["objectID"] = 354645,	-- Lost Satchel
 						["coord"] = { 48.2, 20.3, 1565 },
+						["description"] = "You will not get credit for the criteria until you turn in the quest started by the satchel.",
 						["g"] = {
 							i(182731, {	-- Satchel of Culexwood
 								["questID"] = 62187,	-- Satchel of Culexwood
@@ -127,18 +127,18 @@ _.Zones =
 						},
 					}),
 					crit(3, {	-- Veilwing Egg
-						["description"] = "The path to get up to the treasure starts at 50.6, 38.8.",
 						["objectID"] = 354646,	-- Ancient Cloudfeather Egg
-						["questID"] = 61065,
 						["coord"] = { 52.9, 37.2, 1565 },
+						["questID"] = 61065,
+						["description"] = "The path to get up to the treasure starts at |cFFFFFFFF50.6, 38.8|r.",
 						["g"] = {
 							i(180642),	-- Cloudfeather Fledgling (PET!)
 						},
 					}),
 					crit(4, {	-- Swollen Anima Seed
-						["description"] = "You will not get credit for the criteria until you turn in the quest started by the seed.",
 						["objectID"] = 354911,	-- Swollen Anima Seed
 						["coord"] = { 76.6, 29.7, 1565 },
+						["description"] = "You will not get credit for the criteria until you turn in the quest started by the seed.",
 						["g"] = {
 							i(182730, {	-- Swollen Anima Seed
 								["questID"] = 62186,	-- Swollen Anima Seed
@@ -146,36 +146,34 @@ _.Zones =
 						},
 					}),
 					crit(5, {	-- Faerie Trove
-						["description"] = "Underneath the platform.",
 						["objectID"] = 354652,	-- Faerie Trove
-						["questID"] = 61073,
 						["coord"] = { 49.7, 55.9, 1565 },
+						["questID"] = 61073,
+						["description"] = "Underneath the platform.",
 						["g"] = {
 							i(182673),	-- Shimmerbough Hoarder (PET!)
 						},
 					}),
 					crit(6, {	-- Harmonic Chest
-						["description"] = "You need two people to open the chest. One person needs to play the harp and one needs to play the drums.",
 						["objectID"] = 355355,	-- Harmonic Chest
-						["questID"] = 61165,	-- quest for actually looting it.  unlocking quest is in HQT
 						["coord"] = { 67.8, 34.6, 1565 },
+						["description"] = "You need two people to open the chest. One person needs to play the harp and one needs to play the drums.",
+						["questID"] = 61165,	-- quest for actually looting it.  unlocking quest is in HQT
 						["g"] = {
 							i(184489),	-- Fae Harp (TOY!)
 							i(179565),	-- Songwood Stem
 						},
 					}),
 					crit(7, {	-- Hearty Dragon Plume
-						["description"] = "The path to get up to the treasure starts at 48.1, 39.0.\n\nFollow it up and to the left until you reach the beginning of the bridge at 46.1, 39.1, and cross it to get to the ledge above the treasure.  Any class should be able to safely make it down to the treasure with two jumps (or use a Goblin Glider), but you can also use the feather found at 48.9, 41.0 to slow fall.",
 						["objectID"] = 354647,	-- Hearty Dragon Plume
-						["questID"] = 61067,
 						["coord"] = { 48.2, 39.2, 1565 },
+						["questID"] = 61067,
+						["description"] = "The path to get up to the treasure starts at 48.1, 39.0.\n\nFollow it up and to the left until you reach the beginning of the bridge at 46.1, 39.1, and cross it to get to the ledge above the treasure.  Any class should be able to safely make it down to the treasure with two jumps (or use a Goblin Glider), but you can also use the feather found at 48.9, 41.0 to slow fall.",
 						["g"] = {
 							i(182729),	-- Hearty Dragon Plume (TOY!)
 						},
 					}),
 					crit(8, {	-- Playful Vulpin Befriended
-						["description"] = "You need to find the Playful Vulpin five times and use the following emotes.\n\n 1. Playful Vulpin begins to dig curiously. |cFFFFFFFF/curious|r\n 2. Playful Vulpin wanders around unable to sit still. |cFFFFFFFF/sit|r\n 3. Playful Vulpin sings all alone. |cFFFFFFFF/sing|r\n 4. Playful Vulpin dances with joy. |cFFFFFFFF/dance|r\n 5. Playful Vulpin sits down lonely and sad. |cFFFFFFFF/pet|r\n\nIt only counts if the Playful Vulpin reacts to your emote and runs away.",
-						["questID"] = 61086,
 						["coords"] = {
 							{ 32.0, 43.2, 1565 },
 							{ 33.0, 43.9, 1565 },
@@ -199,12 +197,9 @@ _.Zones =
 							{ 70.4, 29.7, 1565 },
 							{ 72.3, 31.4, 1565 },
 						},
+						["questID"] = 61086,
+						["description"] = "You need to find the Playful Vulpin five times and use the following emotes.\n\n 1. Playful Vulpin begins to dig curiously. |cFFFFFFFF/curious|r\n 2. Playful Vulpin wanders around unable to sit still. |cFFFFFFFF/sit|r\n 3. Playful Vulpin sings all alone. |cFFFFFFFF/sing|r\n 4. Playful Vulpin dances with joy. |cFFFFFFFF/dance|r\n 5. Playful Vulpin sits down lonely and sad. |cFFFFFFFF/pet|r\n\nIt only counts if the Playful Vulpin reacts to your emote and runs away.",
 						["crs"] = { 171206 },	-- Playful Vulpin Befriended
-						--		61080,	-- 	/curious
-						--		61081,	-- 	/sit
-						--		61084,	-- 	/sing
-						--		61085,	-- 	/dance
-						--		61078,	-- 	/pet
 						["g"] = {
 							q(61080, {	-- /curious
 								["title"] = "/curious",
@@ -225,7 +220,7 @@ _.Zones =
 						},
 					}),
 					crit(9, {	-- Cache of the Moon
-						--["objectID"] = ,	-- Cache of the Moon
+						["objectID"] = 355041,	-- Cache of the Moon
 						["coords"] = {
 							{ 39.0, 56.9, 1565 },	-- Diary of the Night
 							{ 40.3, 52.6, 1565 },	-- Gardener's Basket
@@ -241,33 +236,33 @@ _.Zones =
 						},
 					}),
 					crit(10, {	-- Desiccated Moth
-						["description"] = "Collect Aromatic Flowers from |cFFFFFFFF31.7, 32.5|r, jump with Bounding Shroom at |cFFFFFFFF41.4, 31.6|r on the Tree and burn the Flowers.",
-						["questID"] = 61147,
 						["coords"] = {
 							{ 31.7, 32.5, 1565 },	-- Flowers
 							{ 41.4, 31.6, 1565 },	-- Mushroom
 							{ 42.0, 32.6, 1565 },	-- Treasure
 						},
 						["crs"] = { 171484 },	-- Desiccated Moth
+						["questID"] = 61147,
+						["description"] = "Collect Aromatic Flowers from |cFFFFFFFF36.4, 59.6|r, jump with Bounding Mushroom at |cFFFFFFFF41.4, 31.6|r on the Tree and burn the Flowers.",
 						["g"] = {
 							i(180640),	-- Amber Glitterwing
 							i(180784),	-- Aromatic Flowers (so the item is associated with the treasure)
 						},
 					}),
 					crit(11, {	-- Dreamsong Heart
-						["description"] = "Use the Bounding Shroom at |cFFFFFFFF38.0, 36.2|r to get to the top of the tree.",
 						["objectID"] = 354650,	-- Dreamsong Heart
-						["questID"] = 61070,
 						["coord"] = { 37.6, 37.0, 1565 },
+						["questID"] = 61070,
+						["description"] = "Use the Bounding Shroom at |cFFFFFFFF38.0, 36.2|r to get to the top of the tree.",
 						["crs"] = { 174911 },	-- Bounding Shroom
 						["g"] = {
 							i(179510),	-- Dreamsong Warglaive
 						},
 					}),
 					crit(12, {	-- Enchanted Dreamcatcher
-						--["objectID"] = ,	-- Enchanted Dreamcatcher
+						["objectID"] = 354651,	-- Enchanted Dreamcatcher
 						["coord"] = { 36.4, 25.0, 1565 },
-						--["questID"] = ,
+						["description"] = "You will not get credit for the criteria until you turn in the quest started by the dreamcatcher.",
 						["g"] = {
 							i(183129, {	-- Anima-Laden Dreamcatcher
 								["questID"] = 62259,	-- Anima-Laden Dreamcatcher
@@ -289,23 +284,31 @@ _.Zones =
 					}),
 					crit(14, {	-- Cache of the Night
 						["objectID"] = 355000,	-- Cache of the Night
-						["coord"] = { 36.1, 65.2, 1565 },
-						--["questID"] = ,
+						["coords"] = {
+							{ 36.9, 29.8, 1565 },	-- Raw Dream Fibers
+							{ 42.4, 46.7, 1565 },	-- Enchanted Bough
+							{ 51.5, 61.6, 1565 },	-- Fae Ornament
+							{ 36.1, 65.2, 1565 },	-- Treasure
+						},
+						["questID"] = 61110,
+						["description"] = "You need to dispell the barrier with |cff0070dd[Fae Dreamcatcher]|r which you get by combinig the following three items:\n\n1. |cff1eff00[Raw Dream Fibers]|r hanging from roots on the back of the plattform at |cFFFFFFFF36.9, 29.8|r\n2. |cff1eff00[Raw Dream Fibers]|r under the plattform with the big chair at |cFFFFFFFF42.4, 46.7|r\n3. |cff1eff00[Fae Ornament]|r from tree plattform at |cFFFFFFFF51.5, 61.6|r\n\nThe Cache of the Night at |cFFFFFFFF36.1, 65.2|r",
 						["g"] = {
 							i(180637),	-- Starry Dreamfoal
+							i(180652, {	-- Fae Dreamcatcher
+								i(180655),	-- Raw Dream Fibers
+								i(180656),	-- Enchanted Bough
+								i(180654),	-- Fae Ornament
+							}),
 						},
 					}),
 					crit(15, {	-- Darkreach Supplies
-						--["objectID"] = ,	-- Darkreach Supplies
+						["objectID"] = 354648,	-- Darkreach Supplies
 						["coords"] = {
 							{ 37.6, 61.5, 1565 },	-- Mushroom
 							{ 36.1, 65.2, 1565 },	-- Treasure
 						},
 						["questID"] = 61068,
 						["description"] = "Use the Mushroom at |cFFFFFFFF37.6, 61.5|r and jump into the broken tree.",
-						["g"] = {
-							i(179594),	-- Witherscorn Guise
-						},
 					}),
 				}),
 			}),
