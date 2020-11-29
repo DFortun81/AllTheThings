@@ -22,6 +22,9 @@ _.Zones =
 				p(3007, {	-- Rosetipped Spiderling
 					["crs"] = { 173506 },	-- Rosetipped Spiderling
 				}),
+				p(3015, {	-- Withering Creeper
+					["crs"] = { 173556 },	-- Withering Creeper
+				}),
 			}),
 		}),
 	}),

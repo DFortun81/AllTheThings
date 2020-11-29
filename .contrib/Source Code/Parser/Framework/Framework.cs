@@ -370,17 +370,21 @@ namespace ATT
                     altQuests.Remove(questID);
                 }
             }
+            // TODO: maybe consolidate this repeated logic if ever making items/npcs work for it...
             else if (data.TryGetValue("_quests", out object quests))
             {
                 DuplicateDataIntoGroups(data, quests, "quest");
+                data.Remove("_quests");
             }
             else if (data.TryGetValue("_items", out object items))
             {
                 DuplicateDataIntoGroups(data, items, "item");
+                data.Remove("_items");
             }
             else if (data.TryGetValue("_npcs", out object npcs))
             {
                 DuplicateDataIntoGroups(data, npcs, "npc");
+                data.Remove("_npcs");
             }
 
             // Throw away automatic Spell ID assignments for certain filter types.
@@ -729,9 +733,21 @@ namespace ATT
                             //    break;
                     }
                 }
-                catch (Exception ex)
+                catch (FormatException ex)
+                {
+                    Trace.WriteLine("Bad format " + type + "ID used in _" + type + "s property:" + dupeGroupID?.ToString());
+                    Trace.WriteLine(ex.Message);
+                    Trace.WriteLine(ex.StackTrace);
+                }
+                catch (InvalidCastException ex)
                 {
                     Trace.WriteLine("Non-integer " + type + "ID used in _" + type + "s property:" + dupeGroupID?.ToString());
+                    Trace.WriteLine(ex.Message);
+                    Trace.WriteLine(ex.StackTrace);
+                }
+                catch (Exception ex)
+                {
+                    Trace.WriteLine("Unexpected Exception Occurred while processing " + type + "ID used in _" + type + "s property:" + dupeGroupID?.ToString());
                     Trace.WriteLine(ex.Message);
                     Trace.WriteLine(ex.StackTrace);
                 }

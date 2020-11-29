@@ -1815,6 +1815,9 @@ namespace ATT
             /// <param name="data">The data to merge into the item.</param>
             public static void Merge(Dictionary<string, object> item, Dictionary<string, object> data)
             {
+                // make sure we somehow do not try to merge something into itself, since that's a bit pointless
+                if (ReferenceEquals(item, data))
+                    return;
                 foreach (var pair in data) Merge(item, pair.Key, pair.Value);
             }
 

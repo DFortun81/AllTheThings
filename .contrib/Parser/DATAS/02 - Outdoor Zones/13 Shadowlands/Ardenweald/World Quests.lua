@@ -31,6 +31,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61631, {	-- Drust Between You and Me
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61440, {	-- Enchanting: Boundless Basket
 					["requireSkill"] = ENCHANTING,
 					["isWorldQuest"] = true,
@@ -126,6 +130,7 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				i(181430),	-- Evernight Drape
+				i(181413),	-- Runetender Headguard
 				i(181407),	-- Runetender Mitts
 				i(181417),	-- Runetender Pants
 				i(175713),	-- Sprigthistle Loop

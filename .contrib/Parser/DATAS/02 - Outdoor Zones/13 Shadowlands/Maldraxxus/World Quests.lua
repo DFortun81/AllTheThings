@@ -11,6 +11,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61353, {	-- All Will Be Consumed
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(58605, {	-- Amateur Night
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

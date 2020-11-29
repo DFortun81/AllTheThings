@@ -7,13 +7,6 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1565, {	-- Ardenweald
 			n(RARES, {
-				n(166135, {	-- Astra, As Azshara <An Infamous Queen>
-					--["coord"] = { 62.2, 24.8, 1565 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
-					},
-				}),
 				n(164477, {	-- Deathbinder Hroth
 					["coord"] = { 34.6, 68.0, 1565 },
 					["questID"] = 59226,
@@ -30,13 +23,6 @@ _.Zones =
 					["g"] = {
 						ach(14309, crit(7)),	-- Adventurer of Ardenweald / Deifir the Untamed
 						i(180631),	-- Gorm Needler
-					},
-				}),
-				n(166145, {	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>
-					--["coord"] = { 62.2, 24.8, 1565 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
 					},
 				}),
 				n(163229, {	-- Dustbrawl
@@ -69,20 +55,6 @@ _.Zones =
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
 						i(180144),	-- Faeflayer's Hatchet
-					},
-				}),
-				n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
-					--["coord"] = { 62.2, 24.8, 1565 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
-					},
-				}),
-				n(166139, {	-- Glimmerdust, As Kil'jaeden <of The Burning Legion>
-					--["coord"] = { 62.2, 24.8, 1565 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
 					},
 				}),
 				n(163370, {	-- Gormbore
@@ -125,6 +97,7 @@ _.Zones =
 						i(183091, {	-- Lifewoven Bracelet
 							["questID"] = 62246,	-- A Fallen Friend
 						}),
+						i(180165),	-- Witherscorn Reaper (TODO: this may drop from other rares/treasures in zone too?)
 					},
 				}),
 				n(164093, {	-- Macabre
@@ -134,13 +107,6 @@ _.Zones =
 					["g"] = {
 						ach(14309, crit(3)),	-- Adventurer of Ardenweald / Macabre
 						i(180644),	-- Rocky
-					},
-				}),
-				n(166138, {	-- Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
-					--["coord"] = { 62.2, 24.8, 1565 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
 					},
 				}),
 				n(165053, {	-- Mymaen
@@ -200,13 +166,6 @@ _.Zones =
 						}),
 					},
 				}),
-				n(166146, {	-- Niya, As Xavius <Some Kind of Evil Sylvar>
-					--["coord"] = { 62.2, 24.8, 1565 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
-					},
-				}),
 				n(164391, {	-- Old Ardeite
 					["coord"] = { 52.0, 58.8, 1565 },
 					--["questID"] = ,
@@ -234,13 +193,6 @@ _.Zones =
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
 						i(175729),	-- Rotbriar Sprout
-					},
-				}),
-				n(166140, {	-- Senthii, As Gul'dan <From an Alternate Timeline>
-					--["coord"] = { 62.2, 24.8, 1565 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
 					},
 				}),
 				n(171699, {	-- Shimmermist Runner
@@ -280,7 +232,9 @@ _.Zones =
 				}),
 				n(-934,   {	-- Star Lake Amphitheater
 					["description"] = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.",
+					["questID"] = 61633,	-- this appears to trigger for all rares.  move to HQT if this changes, only 2 tested so far
 					["coord"] = { 41.5, 44.8, 1565 },
+					["icon"] = "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
 					["crs"] = { 171743 },	-- Dapperdew
 					["g"] = {
 					--	TODO: add remaining questIDs + loot, figure out which are first-time kills and which are daily kills, if that applies
@@ -301,12 +255,14 @@ _.Zones =
 							["g"] = {
 							},
 						}),
+						--]]
 						n(166139, {	-- Glimmerdust, As Kil'jaeden <of The Burning Legion>
-							["questID"] = ,
+							["questID"] = 61203,
+							["isDaily"] = true,
 							["g"] = {
+								i(182451),	-- Glimmerdust's Grand Design
 							},
 						}),
-						--]]
 						n(166138, {	-- Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
 							["isDaily"] = true,	-- ??
 							["questID"] = 61202,	-- also triggered 61633 on first kill
