@@ -9,6 +9,8 @@ _.Zones =
 			n(-903, {	-- Zone Rewards
 				["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
 				["g"] = {
+					i(181178),	-- Cowl of Emberfury
+					i(181631),	-- Requiem Chime
 					i(181211),	-- Souldrinker's Kris
 				},
 			}),

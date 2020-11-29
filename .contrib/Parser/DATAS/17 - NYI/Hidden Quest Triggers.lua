@@ -3021,12 +3021,13 @@ _.HiddenQuestTriggers =
 		q(59843),	-- triggered when turning in "A Sure Bet"
 		q(62372),	-- triggered when 'feeding' Page 76 to the necronomicron
 		q(62786),	-- triggered when killing Unbreakable Urtz during "The Ladder" - no other arena opponents triggered quests
-
-
+		-- Maldraxxus Pool of Mixed Monstrosities
+		q(62805),	-- Pulsing Leech secondary quest
 		-- Maldraxxus Rares
 		q(61986),	-- Tahonta secondary quest
 		q(61988),	-- Indomitable Schmitd secondary quest
 		q(61992),	-- Pesticide secondary quest
+
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant
@@ -3041,6 +3042,7 @@ _.HiddenQuestTriggers =
 		-- Revendreth
 		q(60523),	-- Triggered after reading Theotar's Diary
 		q(60527),	-- Triggered after reading Theotar's Diary
+		q(59222),	-- triggered during #57536, "Mirror Making, Not Breaking" when speaking to Laurent
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
@@ -3048,10 +3050,16 @@ _.HiddenQuestTriggers =
 		-- Revendreth WQs
 		q(59858),	-- Tea Tales: Theotar Achievement criteria
 		q(59861),	-- Tea Tales: Theotar Achievement criteria
+		q(60701),	-- triggered when completing #60653, "Mirror Restoration"
 		-- Venthyr Covenant
 		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62827),	-- uhhhhh i killed myself by jumping into nothingness from one of the platforms
+		q(59316),	-- turning in quest #62918, "Binding Power"
+		q(62950),	-- clicking "Activate" after putting "Thrill Seeker" in Nadjia's soulbind tree
+		q(59317),	-- triggered when turning in #62919, "Strengthening the Bond"
+		q(62749),	-- triggered when turning in #62921, "Our True Purpose"
+		q(63063),	-- looks like an unused version of #63056, "Sanctum Upgrade: Mirror Network"
 		q(60300),	-- Channeling Anima Conduit to Waynecrypt Hill
 		q(60304),	-- Channeling Anima Conduit to Crypt of the Forgotten
 

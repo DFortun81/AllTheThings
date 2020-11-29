@@ -63,6 +63,11 @@ _.Zones =
 						i(179989),	-- Marquis's Lace Cuffs
 					},
 				}),
+				q(57531, {	-- An Unfortunate Situation
+					["sourceQuests"] = { 60051 },	-- A Master of Their Craft
+					["provider"] = { "n", 158038 },	-- Laurent
+					["coord"] = { 26.3, 49.0, 1525 },	-- Revendreth
+				}),
 				q(58433, {	-- Anima Attrition
 					["sourceQuests"] = { 56942 },	-- On The Road Again
 					["provider"] = { "n", 155533 },	-- Lord Chamberlain
@@ -127,6 +132,19 @@ _.Zones =
 						i(175444),	-- Soul Hunter's Bracers
 						i(175443),	-- Stoneforged Vambraces
 					},
+				}),
+				q(57535, {	-- Escaping the Master
+					["sourceQuests"] = {
+						57533,	-- Light Punishment
+						57534,	-- When Only Ash Remains
+					},
+					["provider"] = { "n", 158205 },	-- Laurent
+					["coord"] = { 24.2, 49.4, 1525 },	-- Revendreth
+				}),
+				q(57532, {	-- Foraging for Fragments
+					["sourceQuests"] = { 57531 },	-- An Unfortunate Situation
+					["provider"] = { "n", 158038 },	-- Laurent
+					["coord"] = { 26.3, 49.0, 1525 },	-- Revendreth
 				}),
 				q(59021, {	-- Herald Their Demise
 					["sourceQuests"] = {
@@ -195,6 +213,11 @@ _.Zones =
 					["provider"] = { "n", 168664 },	-- The Fearstalker
 					["coord"] = { 47.8, 70.1, 1525 },
 				}),
+				q(57533, {	-- Light Punishment
+					["sourceQuests"] = { 57571 },	-- Moving Mirrors
+					["provider"] = { "n", 158088 },	-- Simone
+					["coord"] = { 24.2, 49.4, 1525 },	-- Revendreth
+				}),
 				q(57442, {	-- Lost in the Desiccation
 					["sourceQuests"] = {
 						57426,	-- My Terrible Morning
@@ -202,6 +225,23 @@ _.Zones =
 						57427,	-- Unbearable Light
 					},
 					["provider"] = { "n", 157650 },	-- Theotar
+				}),
+				q(57536, {	-- Mirror Making, Not Breaking
+					["sourceQuests"] = {
+						57535,	-- Escaping the Master
+						59427,	-- We Need More Power
+					},
+					["provider"] = { "n", 158205 },	-- Laurent
+					["coord"] = { 24.2, 49.4, 1525 },	-- Revendreth
+					["g"] = {
+						i(175733),	-- Brimming Ember Shard
+						i(177657),	-- Overflowing Ember Mirror
+					},
+				}),
+				q(57571, {	-- Moving Mirrors
+					["sourceQuests"] = { 57532 },	-- Foraging for Fragments
+					["provider"] = { "n", 158205 },	-- Laurent
+					["coord"] = { 24.2, 49.3, 1525 },	-- Revendreth
 				}),
 				q(57426, {	-- My Terrible Morning
 					["sourceQuests"] = { 57405 },	-- Chasing Madness
@@ -472,6 +512,26 @@ _.Zones =
 						i(180458),	-- Writ of Tithe Exemption
 					},
 				}),
+				q(59427, {	-- We Need More Power
+					["sourceQuests"] = {
+						57533,	-- Light Punishment
+						57534,	-- When Only Ash Remains
+					},
+					["provider"] = { "n", 158088 },	-- Simone
+					["coord"] = { 24.2, 49.4, 1525 },	-- Revendreth
+				}),
+				q(57534, {	-- When Only Ash Remains
+					["sourceQuests"] = { 57571 },	-- Moving Mirrors
+					["provider"] = { "n", 158205 },	-- Laurent
+					["coord"] = { 24.2, 49.4, 1525 },	-- Revendreth
+					["g"] = {
+						i(175507),	-- Bindings of Pained Absolution
+						i(175510),	-- Nightcloaked Bracers
+						i(175509),	-- Soul Hunter's Wristguards
+						i(175508),	-- Stoneforged Wristguards
+						i(175716),	-- Emberscorched Band
+					},
+				}),
 				q(57240, {	-- Where is Prince Renathal?
 					["sourceQuests"] = { 59256 },	-- The Fearstalker
 					["provider"] = { "n", 168217 },	-- The Accuser
@@ -601,19 +661,6 @@ _.Zones =
 					},
 				}),
 				-- The Final Atonement
-				-- Mirror Maker of the Master
-				q(57531, {	-- An Unfortunate Situation
-					-- ["coords"] = { ##, ##, 1525 },
-					["provider"] = { "n", 158038 },	-- Laurent
-					["sourceQuests"] = {
-						60051,	-- A Master of Their Craft (breadcrumb possible for Venthyr characters)
-					},
-				}),
-				q(57536, {	-- Mirror making, Not Breaking
-					-- ["coord"] = { ##, ##, 1699/1700 },
-					-- ["provider"] = { "n", ### },
-					-- ["sourceQuests"] = { },
-				}),
 				-- Revelations of the Light
 				-- Bonus Objective
 				q(57177, {	-- A Fresh Start

@@ -7,10 +7,13 @@ end
 
 -- Anima Items
 i(184381);	-- Astral Sapwood
+i(184773);	-- Battle-Tested Armor Component
 i(181541);	-- Celestial Acorn
+i(184768);	-- Censer of Dried Gracepetals
 i(184766);	-- Chronicles of the Paragons
 i(181552);	-- Collected Tithe
 i(184148);	-- Concealed Sinvyr Flask
+i(184151);	-- Counterfeit Ruby Brooch
 i(181645);	-- Engorged Monstrosity's Heart
 i(184294);	-- Ethereal Ambrosia
 i(181744);	-- Forgelite Ember
@@ -22,6 +25,7 @@ i(181649);	-- Preserved Preternatural Braincase
 i(184769);	-- Pressed Torchlily Blossom
 i(184771);	-- Remembrance Parchment Ash
 i(184293);	-- Sanctified Skylight Leaf
+i(181479);	-- Starlight Catcher
 i(184519);	-- Totem of Stolen Mojo
 
 -- Battle Pet

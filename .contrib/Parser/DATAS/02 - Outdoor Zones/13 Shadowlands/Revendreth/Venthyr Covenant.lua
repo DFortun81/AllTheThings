@@ -7,6 +7,9 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(-949, {	-- Venthyr Covenant
+			--	TODO: quest through as Venthyr and unlock Adventures Scouting Map first instead of Mirror Network to test alternative version of "Our True Purpose"
+			--	1699 = Sinfall Reaches
+			--	1700 = Sinfall Depths
 				n(ACHIEVEMENTS, {
 				}),
 				n(-901, {	-- Covenant Callings
@@ -20,6 +23,7 @@ _.Zones =
 							i(182136),	-- Chilled to the Core [Shaman-Enhance]
 						}),--]]
 						q(60389, {	-- Aiding Ardenweald
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 165302 },	-- Rendle
 							--["coord"] = { , 1525 },
 							["repeatable"] = true,
@@ -28,6 +32,7 @@ _.Zones =
 							},
 						}),
 						q(60394, {	-- Aiding Bastion
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 165302 },	-- Rendle
 							--["coord"] = { , 1525 },
 							["repeatable"] = true,
@@ -36,6 +41,7 @@ _.Zones =
 							},
 						}),
 						q(60397, {	-- Aiding Maldraxxus
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 165302 },	-- Rendle
 							--["coord"] = { , 1525 },
 							["repeatable"] = true,
@@ -44,6 +50,7 @@ _.Zones =
 							},
 						}),
 						q(60399, {	-- Aiding Revendreth
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 165302 },	-- Rendle
 							--["coord"] = { , 1525 },
 							["repeatable"] = true,
@@ -52,6 +59,7 @@ _.Zones =
 							},
 						}),
 						q(60462, {	-- Anima Appeal
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 164739 },	-- Devahia
 							--["coord"] = { 48.9, 39.3, 1525 },
 							["repeatable"] = true,
@@ -60,14 +68,16 @@ _.Zones =
 							},
 						}),
 						q(60460, {	-- Anima Salvage
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 164738 },	-- Tenaval
-							--["coord"] = { , 1525 },
 							["isWeekly"] = true,
+							["coord"] = { 45.9, 28.1, 1699 },	-- Sinfall Reaches
 							["g"] = {
 								i(181556),	-- 	Tribute of the Court
 							},
 						}),
 						q(60422, {	-- A Call to Ardenweald
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 51.8, 37.5, 1699 },
 							["repeatable"] = true,
@@ -77,6 +87,7 @@ _.Zones =
 							},
 						}),
 						q(60427, {	-- A Call to Bastion
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							--["provider"] = { "n",  },	--
 							--["coord"] = { , 1533 },
 							["repeatable"] = true,
@@ -85,6 +96,7 @@ _.Zones =
 							},
 						}),
 						q(60431, {	-- A Call to Maldraxxus
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							--["provider"] = { "n",  },	--
 							--["coord"] = { , 1533 },
 							["repeatable"] = true,
@@ -93,6 +105,7 @@ _.Zones =
 							},
 						}),
 						q(60378, {	-- A Source of Sorrowvine
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							--["provider"] = { "n",  },	--
 							--["coord"] = { , 1533 },
 							["repeatable"] = true,
@@ -101,6 +114,7 @@ _.Zones =
 							},
 						}),
 						q(60370, {	-- A Wealth of Wealdwood
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							--["provider"] = { "n",  },	--
 							--["coord"] = { , 1533 },
 							["repeatable"] = true,
@@ -109,6 +123,7 @@ _.Zones =
 							},
 						}),
 						q(60375, {	-- Bonemetal Bonanza
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							--["provider"] = { "n",  },	--
 							--["coord"] = { , 1533 },
 							["repeatable"] = true,
@@ -117,6 +132,7 @@ _.Zones =
 							},
 						}),
 						q(60441, {	-- Challenges in Ardenweald
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 165291 },	-- The Accuser
 							["coord"] = { 55.9, 78.6, 1799 },
 							["repeatable"] = true,
@@ -126,6 +142,7 @@ _.Zones =
 							},
 						}),
 						q(60444, {	-- Challenges in Bastion
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 165291 },	-- The Accuser
 							--["coord"] = { , 1533 },
 							["repeatable"] = true,
@@ -134,6 +151,7 @@ _.Zones =
 							},
 						}),
 						q(60446, {	-- Challenges in Maldraxxus
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 165291 },	-- The Accuser
 							--["coord"] = { , 1533 },
 							["repeatable"] = true,
@@ -142,6 +160,7 @@ _.Zones =
 							},
 						}),
 						q(60448, {	-- Challenges in Revendreth
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 165291 },	-- The Accuser
 							--["coord"] = { , 1533 },
 							["repeatable"] = true,
@@ -150,6 +169,7 @@ _.Zones =
 							},
 						}),
 						q(60365, {	-- Gildenite Grab
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 158713 },	-- The Curator
 							--["coord"] = { , 1533 },
 							["repeatable"] = true,
@@ -158,6 +178,7 @@ _.Zones =
 							},
 						}),
 						q(60417, {	-- Rare Resources
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 158713 },	-- The Curator
 							--["coord"] = { , 1533 },
 							["repeatable"] = true,
@@ -166,6 +187,7 @@ _.Zones =
 							},
 						}),
 						q(60456, {	-- Storm the Maw
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 164738 },	-- Tenaval
 							--["coord"] = { , 1525 },
 							["isWeekly"] = true,
@@ -174,6 +196,7 @@ _.Zones =
 							},
 						}),
 						q(60410, {	-- Training Our Forces
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
 							--["coord"] = { , 1533 },
 							["repeatable"] = true,
@@ -182,6 +205,7 @@ _.Zones =
 							},
 						}),
 						q(60403, {	-- Training in Ardenweald
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
 							--["coord"] = { , 1533 },
 							["repeatable"] = true,
@@ -191,14 +215,16 @@ _.Zones =
 							},
 						}),
 						q(60406, {	-- Training in Bastion
-							["provider"] = { "n", 164741 },	-- Tactician Sakaa
-							--["coord"] = { , 1533 },
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["repeatable"] = true,
+							["provider"] = { "n", 164741 },	-- Tactician Sakaa
+							["coord"] = { 58.0, 59.2, 1699 },	-- Sinfall Reaches
 							["g"] = {
-								i(181556),	-- 	Tribute of the Court
+								i(181372),	-- 	Tribute of the Ascended
 							},
 						}),
 						q(60409, {	-- Training in Maldraxxus
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
 							--["coord"] = { , 1533 },
 							["repeatable"] = true,
@@ -207,55 +233,47 @@ _.Zones =
 							},
 						}),
 						q(60432, {	-- Troubles at Home
-							["provider"] = { "n", 158653 },	-- Prince Renathal
-							--["coord"] = { , 1533 },
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["repeatable"] = true,
+							["provider"] = { "n", 158653 },	-- Prince Renathal
+							["coord"] = { 51.1, 38.0, 1699 },	-- Sinfall Reaches
 							["g"] = {
-								i(181557),	-- Favor of the Court
+								i(181556),	-- Tribute of the Court
 							},
 						}),
-						-- One time Calling Quest to Indroduce Calling Quests, should be sorted in the normal Questfile
 					},
 				}),
 				n(-950, {	-- Mirror Network
 					["description"] = "|cFFfe040fVenthyr Covenant|r only.",
 					["g"] = {
+						q(60051,{	-- A Master of Their Craft
+							["sourceQuests"] = { 63056 },	-- Sanctum Upgrade: Mirror Network
+							["isBreadcrumb"] = true,
+							["provider"] = { "n", 158653 },	-- Prince Renathal
+							["coord"] = { 51.1, 38.0, 1699 },	-- Sinfall Reaches
+						}),
 						q(63056, {	-- Sanctum Upgrade: Mirror Network
-							-- ["coord"] = { ##, ##, 1699/1700 },
-							-- ["provider"] = { "n", ### },
-							-- ["sourceQuests"] = { },
+							["sourceQuests"] = { 62915 },	-- Home Improvement
+							["provider"] = { "n", 172605 },	-- Foreman Flatfinger
+							["coord"] = { 55.3, 27.1, 1699 },	-- Sinfall Reaches
 						}),
 						-- TODO: Add Questline for each Mirror Tier
-						q(60051,{	-- A Master of Their Craft
-							-- ["coord"] = { ##, ##, 1699/1700 },
-							-- ["provider"] = { "n", ### },
-							["sourceQuests"] = { 63056 },
-							["isBreadcrumb"] = true,	-- might not be breadcrumb?
+						n(-951, {	-- Tier 1: Mirror Mirror
+							q(60060, {	-- Mirror Attunement: Pridefall Hamlet
+								["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
+								["provider"] = { "n", 167160 },	-- Laurent
+								["coord"] = { 47.2, 57.3, 1699 },	-- Sinfall Reaches
+							}),
+							q(60147, {	-- Mirror Attunement: The Eternal Terrace
+								["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
+								["provider"] = { "n", 167160 },	-- Laurent
+								["coord"] = { 47.2, 57.3, 1699 },	-- Sinfall Reaches
+							}),
 						}),
-						n(-951, {	-- Tier 1 Mirror Mirror
-							["g"] = {
-								q(60060, {	-- Mirror Attunement: Pridefall Hamlet
-									-- ["coord"] = { ##, ##, 1699/1700 },
-									-- ["provider"] = { "n", ### },
-									["sourceQuests"] = {
-										60051,	-- A Master of Their Craft
-										57536,	-- Mirror Making, Not Breaking
-									},
-								}),
-								q(60147, {	-- Mirror Attunement: The Eternal Terrace
-									-- ["coord"] = { ##, ##, 1699/1700 },
-									-- ["provider"] = { "n", ### },
-									["sourceQuests"] = {
-										60051,	-- A Master of Their Craft
-										57536,	-- Mirror Making, Not Breaking
-									},
-								}),
-							},
-						}),
-						n(-952, {	-- Tier 2 Looking Glass
+						n(-952, {	-- Tier 2: Looking Glass
 							["description"] = "Requires Venthyr Renown 11.",
 						}),
-						n(-953, {	-- Tier 3 Mirror's Edge
+						n(-953, {	-- Tier 3: Mirror's Edge
 							["description"] = "Requires Venthyr Renown 19.",
 							--o(357565, {	-- Repaired Transport Mirror
 								--["description"] = "Requires Tier 3 Mirror Network to see.",
@@ -318,6 +336,11 @@ _.Zones =
 						["provider"] = { "n", 164738 },	-- Tenaval
 						["coord"] = { 45.9, 27.6, 1699 },	-- Sinfall Reaches
 					}),
+					q(62920, {	-- A Conduit For Change
+						["sourceQuests"] = { 62919 },	-- Strengthening the Bond
+						["provider"] = { "n", 171950 },	-- The Accuser
+						["coord"] = { 44.6, 20.1, 1699 },	-- Sinfall Reaches
+					}),
 					q(59323, {	-- Anima Awakening
 						["sourceQuests"] = { 59321 },	-- Sacred Covenant
 						["provider"] = { "n", 171934 },	-- Prince Renathal
@@ -333,10 +356,20 @@ _.Zones =
 						["provider"] = { "n", 164738 },	-- Tenaval
 						["coord"] = { 46.0, 27.9, 1699 },	-- Sinfall Reaches
 					}),
+					q(62918, {	-- Binding Power
+						["sourceQuests"] = { 62915 },	-- Home Improvement
+						["provider"] = { "n", 171950 },	-- The Accuser
+						["coord"] = { 46.2, 21.6, 1699 },	-- Sinfall Reaches
+					}),
 					q(62856, {	-- Building Your Renown
 						["sourceQuests"] = { 59323 },	-- Anima Awakening
 						["provider"] = { "n", 171934 },	-- Prince Renathal
 						["coord"] = { 45.5, 28.7, 1700 },	-- Sinfall Depths
+					}),
+					q(60500, {	-- Halls of Atonement: Medallion of Pride
+						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+						["provider"] = { "o", 352520 },	-- Medallion of Pride
+						["coord"] = { 56.8, 30.8, 1699 },	-- Sinfall Reaches
 					}),
 					q(62915, {	-- Home Improvement
 						["sourceQuests"] = { 62837 },	-- Hopeful News
@@ -348,7 +381,18 @@ _.Zones =
 						["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 						["coord"] = { 54.9, 26.3, 1699 },	-- Sinfall Reaches
 					}),
+					q(62921, {	-- Our True Purpose
+						["sourceQuests"] = { 62920 },	-- A Conduit For Change
+						["provider"] = { "n", 171950 },	-- The Accuser
+						["coord"] = { 44.6, 20.1, 1699 },	-- Sinfall Reaches
+					}),
+					q(59324, {	-- Our True Purpose
+					--	["sourceQuests"] = {  },	-- TODO: unknown.  i think you get this version of "Our True Purpose" if you pursue the Adventures Scouting Map first, instead of Mirror Network?
+						["provider"] = { "n", 164741 },	-- Tactician Sakaa
+						["coord"] = { 57.6, 58.8, 1699 },	-- Sinfall Reaches
+					}),
 					q(61981, {	-- Replenish the Reservoir
+						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 						["provider"] = { "n", 172605 },	-- Foreman Flatfinger <Sanctum Upgrades>
 						["isWeekly"] = true,
 						["coord"] = { 55.0, 26.8, 1699 },	-- Sinfall Reaches
@@ -386,6 +430,16 @@ _.Zones =
 							i(180912),	-- Fearstalker's Ebony Gauntlets
 						},
 					}),
+					q(62919, {	-- Strengthening the Bond
+						["sourceQuests"] = { 62918 },	-- Binding Power
+						["provider"] = { "n", 171979 },	-- Nadjia the Mistblade
+						["coord"] = { 43.9, 17.9, 1699 },	-- Sinfall Reaches
+						["g"] = {	-- TODO: keep rewards here or put in Uncollectable?  unsure of how to get rewards for other classes (beyond playing through on each one)
+							i(182130),	-- Shattered Perceptions
+							i(181840),	-- Light's Inspiration
+							i(181962),	-- Mental Recovery
+						},
+					}),
 					q(62857, {	-- The Court's Bounty
 						["sourceQuests"] = { 62856 },	-- Building Your Renown
 						["provider"] = { "n", 175772 },	-- Rahel
@@ -395,6 +449,11 @@ _.Zones =
 						["sourceQuests"] = { 59314 },	-- Sinfall
 						["provider"] = { "n", 164742 },	-- Prince Renathal
 						["coord"] = { 25.4, 56.1, 1699 },	-- Sinfall Reaches
+					}),
+					q(63033, {	-- The Highlord Calls
+						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+						["provider"] = { "n", 158653 },	-- Prince Renathal
+						["coord"] = { 51.2, 37.8, 1699 },	-- Sinfall Reaches
 					}),
 					q(62904, {	-- The Souls Plight
 						["sourceQuests"] = { 62903 },	-- Into the Reservoir

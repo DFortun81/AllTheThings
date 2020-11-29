@@ -16,11 +16,14 @@ _.Zones =
 					},
 				}),
 				n(164388, {	-- Amalgamation of Light
-					["coord"] = { 25.4, 48.4, 1525 },
+					["description"] = "When the rare is available, 3 light-reflecting mirrors will appear.  Move all 3 start the encounter.",
 					["questID"] = 59584,
 					["isDaily"] = true,
+					["coord"] = { 25.3, 48.5, 1525 },
 					["g"] = {
-						ach(14310, crit(12)),	-- Adventurer of Revendreth / Amalgamation of Light
+						crit(12, {	-- Amalgamation of Light
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
 						i(180586),	-- Lightbinders
 						i(180688),	-- Infused Remnant of Light
 					},
@@ -98,11 +101,13 @@ _.Zones =
 					},
 				}),
 				n(167464, {	-- Grand Arcanist Dimitri
-					["coord"] = { 20.6, 53.0, 1525 },
 					["questID"] = 60173,
 					["isDaily"] = true,
+					["coord"] = { 20.9, 54.3, 1525 },
 					["g"] = {
-						ach(14310, crit(21)),	-- Adventurer of Revendreth / Grand Arcanist Dimitri
+						crit(21, {	-- Grand Arcanist Dimitri
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
 						i(180708),	-- Mirror of Despair
 						i(180659),	-- Soul Siphoning Shard
 					},

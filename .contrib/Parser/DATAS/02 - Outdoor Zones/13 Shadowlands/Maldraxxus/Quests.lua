@@ -305,10 +305,10 @@ _.Zones =
 					["coord"] = { 59.4, 72.9, 1536 },
 					["maps"] = { 1674 },	-- Plaguefall
 					["g"] = {
-						i(175513),	-- Cruel Executioner's Breastplate
-						i(175515),	-- Deceitful Agent's Tunic
-						i(175514),	-- Flesh Architect's Hauberk
-						i(175533),	-- Corpse-Stitcher's Raiment
+						i(175532),	-- Cruel Executioner's Pauldrons
+						i(175534),	-- Flesh Architect's Epaulets
+						i(175531),	-- Deceitful Agent's Shoulderpads
+						i(175533),	-- Corpse-Stitcher's Amice
 					},
 				}),
 				q(58431, {	-- Pool of Potions

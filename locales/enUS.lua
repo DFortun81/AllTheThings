@@ -677,9 +677,9 @@ app.L = {
 		[-949] = "Interface\\Icons\\ui_sigil_venthyr",										-- Venthyr Covenant
 
 		[-950] = 3565720,																	-- Mirror Network
-		[-951] = 3528313,																	-- Tier 1 Mirror Mirror
-		[-952] = 3528312,																	-- Tier 2 Looking Glass
-		[-953] = 3528311,																	-- Tier 3 Mirror's Edge
+		[-951] = 3528313,																	-- Tier 1: Mirror Mirror
+		[-952] = 3528312,																	-- Tier 2: Looking Glass
+		[-953] = 3528311,																	-- Tier 3: Mirror's Edge
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1490,9 +1490,9 @@ app.L = {
 -- SL Revendreth/Venthyr
 		[-949] = "Venthyr Covenant",											-- Venthyr Covenant
 		[-950] = "Mirror Network",												-- Mirror Network
-		[-951] = "Tier 1 Mirror Mirror",										-- Tier 1 Mirror Mirror
-		[-952] = "Tier 2 Looking Glass",										-- Tier 2 Looking Glass"
-		[-953] = "Tier 3 Mirror's Edge",										-- Tier 3 Mirror's Edge
+		[-951] = "Tier 1: Mirror Mirror",										-- Tier 1: Mirror Mirror
+		[-952] = "Tier 2: Looking Glass",										-- Tier 2: Looking Glass"
+		[-953] = "Tier 3: Mirror's Edge",										-- Tier 3: Mirror's Edge
 
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
@@ -4172,6 +4172,7 @@ app.L = {
 		[352028] = "Wanted Scroll",
 		[352086] = "Blackhound Cache",
 		[352490] = "Join the Rebellion!",
+		[352520] = "Medallion of Pride",
 		[352596] = "Sprouting Growth",
 		[353205] = "Silver Strongbox",
 		[353232] = "Bleakwood Chest",

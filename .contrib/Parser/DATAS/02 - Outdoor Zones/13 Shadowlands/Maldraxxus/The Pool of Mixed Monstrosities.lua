@@ -13,7 +13,10 @@ _.Zones =
 				["g"] = {
 					crit(1, {
 						n(157294, {	-- Pulsing Leech
-							i(184279),	-- Siphoning Blood-Drinker
+							["questID"] = 61718,
+							["g"] = {
+								i(184279),	-- Siphoning Blood-Drinker
+							},
 						}),
 					}),
 					crit(2, {
