@@ -62,6 +62,11 @@ _.Zones =
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 36.2, 1648 },
 				}),
+				q(63039, {	-- A Monument to Vengeance
+					["provider"] = { "n", 175807 },	-- Knight of the Ebon Blade
+					["coord"] = { 22.1, 48.0, 1543 },
+					["isDaily"] = true,
+				}),
 				q(57691, {	-- A Royal Key
 					["sourceQuests"] = { 57690 },	-- Cages For All Occasions
 					["provider"] = { "n", 158645 },	-- Prince Renathal
@@ -269,6 +274,12 @@ _.Zones =
 					["g"] = {
 						i(175731),	-- Stolen Maw Badge
 					},
+				}),
+				q(63062, {	-- Torment for the Taking
+					-- TODO: fill in provider and coord fields
+					--["provider"] = 
+					--["coord"] = 
+					["isDaily"] = true,
 				}),
 				q(61190, {	-- Wake of Ashes
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death

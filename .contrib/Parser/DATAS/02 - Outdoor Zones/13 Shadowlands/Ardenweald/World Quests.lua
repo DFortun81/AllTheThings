@@ -40,6 +40,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61983, {	-- Fishing: Speckled Flametail
+					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60855, {	-- Gormageddon
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
