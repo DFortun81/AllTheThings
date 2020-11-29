@@ -62,6 +62,11 @@ _.Zones =
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 36.2, 1648 },
 				}),
+				q(57691, {	-- A Royal Key
+					["sourceQuests"] = { 57690 },	-- Cages For All Occasions
+					["provider"] = { "n", 158645 },	-- Prince Renathal
+					["coord"] = { 34.6, 18.6, 1543 },
+				}),
 				q(59761, {	-- An Undeserved Fate
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
@@ -71,6 +76,11 @@ _.Zones =
 					["sourceQuests"] = { 59776 },	-- From the Mouths of Madness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 37.0, 1648 },
+				}),
+				q(57690, {	-- Cages For All Occasions
+					["sourceQuests"] = { 57689 },	-- Prince Renathal
+					["provider"] = { "n", 158649 },	-- Vorpalia
+					["coord"] = { 38.7, 28.3, 1543 },
 				}),
 				q(63135, {	-- Coldheart Flight Routes
 					["provider"] = { "i", 180801 },	-- Coldheart Flight Routes
@@ -252,6 +262,14 @@ _.Zones =
 						1682,	-- Icecrown Citadel
 					},
 				}),
+				q(57693, {	-- Torghast, Tower of the Damned
+					["sourceQuests"] = { 57691 },	-- A Royal Key
+					["provider"] = { "n", 158645 },	-- Prince Renathal
+					["coord"] = { 34.6, 18.6, 1543 },
+					["g"] = {
+						i(175731),	-- Stolen Maw Badge
+					},
+				}),
 				q(61190, {	-- Wake of Ashes
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
@@ -276,27 +294,6 @@ _.Zones =
 
 
 
-				-- The Prince and the Tower (Prince Renathal) (Revendreth Storyline)
-				q(57690, {	-- Cages For All Occasions
-					["provider"] = { "n", 158649 },	-- Vorpalia
-					["coord"] = { 38.7, 28.3, 1543 },
-					["sourceQuests"] = { 57689 },	-- Prince Renathal
-				}),
-				q(57691, {	-- A Royal Key
-					["provider"] = { "n", 158645 },	-- Prince Renathal
-					["coord"] = { 34.6, 18.6, 1543 },
-					["sourceQuests"] = { 57690 },	-- Cages For All Occasions
-				}),
-				q(57693, {	-- Torghast, Tower of the Damned
-					["provider"] = { "n", 158645 },	-- Prince Renathal
-					["coord"] = { 34.6, 18.6, 1543 },
-					["sourceQuests"] = { 57691 },	-- A Royal Key
-					["g"] = {
-						i(175731),	-- Stolen Maw Badge
-					},
-				}),
-				
-				
 				-- Do not think these made it into the release version of the game
 				-- q(60232, {	-- Souls of the Damned (Bastion)
 					-- ["provider"] = { "n", 160212 },	-- Soulguide Daelia

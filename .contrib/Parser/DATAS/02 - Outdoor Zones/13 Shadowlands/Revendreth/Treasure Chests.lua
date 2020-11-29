@@ -72,6 +72,12 @@ _.Zones =
 						}),
 					},
 				}),
+				o(354111, {	-- Stoneborn Satchel
+				--	TODO: verify objectID.  it's probably this one or 354111, the only ones that didn't have confirmed locations so far
+					["questID"] = 60942,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 55.3, 42.3, 1525 },
+				}),
 			}),
 		}),
 	}),

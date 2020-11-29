@@ -4138,7 +4138,6 @@ app.L = {
 		[336415] = "Discarded Scroll",
 		[339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
 		[339283] = "Forgotten Noble's Chest",
-		[339499] = "Remnant of Light",
 		[339770] = "Abandoned Treasure Chest",
 		[343611] = "Voidtouched Egg",
 		[344588] = "Stewart's Stewpendous Stew",

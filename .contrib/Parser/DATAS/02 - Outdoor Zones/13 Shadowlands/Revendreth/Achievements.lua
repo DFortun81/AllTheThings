@@ -26,16 +26,16 @@ _.Zones =
 					crit(3, {	-- The Accuser
 						["sourceQuests"] = { 59232 },	-- A Lesson in Humility
 					}),
-					crit(4, {	-- The Rebellion
+					crit(4, {	-- The Penitent Hunt
 						["sourceQuests"] = { 59256 },	-- The Fearstalker
 					}),
-					crit(5, {	-- Securing Sinfall
+					crit(5, {	-- The Mad Duke
 						["sourceQuests"] = { 57724 },	-- Securing Sinfall
 					}),
-					crit(6, {	-- The Prince and the Tower
+					crit(6, {	-- Prince Renathal
 						["sourceQuests"] = { 57694 },	-- Refuge of Revendreth
 					}),
-					crit(7, {	-- Menagerie of the Master
+					crit(7, {	-- The Master of Lies
 						["sourceQuests"] = { 58086 },	-- The Master of Lies
 					}),
 				}),
@@ -61,13 +61,14 @@ _.Zones =
 				}),
 				ach(14314, {	-- Treasures of Revendreth
 					crit(1, {	-- Lost Quill
+						["description"] = "Take the |cFFFFFFFF[Forbidden Ink]|r from the library at |cFFFFFFFF37.6, 68.7|r and give it to the Lost Quill.",
 						["objectID"] = 357467,	-- Forbidden Ink
 						["npcID"] = 173449,	-- Lost Quill
 						["coord"] = { 37.7, 69.2, 1525 },
-						--["questID"] = 61065,
-						["description"] = "Take the |cFFFFFFFF[Forbidden Ink]|r from the Libary at |cFFFFFFFF37.6, 68.7|r and speak with the Lost Quill.",
+						["questID"] = 61990,
 						["g"] = {
 							i(182613),	-- Refilling Inkwell
+							i(182475),	-- Forbidden Ink
 						},
 					}),
 					crit(2, {	-- Stylish Parasol
@@ -79,7 +80,7 @@ _.Zones =
 						},
 					}),
 					crit(3, {	-- The Count
-					--	["questID"] = 61065,
+						["questID"] = 62063,
 						["coord"] = { 57.3, 43.3, 1525 },
 						["cost"] = { { "c", 1820, 99 } },	-- 99x Infused Ruby
 						["crs"] = { 173488 },	-- The Count

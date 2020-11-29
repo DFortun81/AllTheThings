@@ -213,12 +213,16 @@ _.Zones =
 					},
 				}),
 				n(160675, {	-- Scrivener Lenua
-					["coord"] = { 38.4, 69.6, 1525 },
+					["description"] = "To spawn the rare, find four stacks of Forbidden Tomes in the surrounding area and deliver them to the library.",
 					["questID"] = 58213,
 					["isDaily"] = true,
+					["coord"] = { 37.6, 68.7, 1525 },
+					["crs"] = { 160753 },	-- Forbidden Tomes
 					["g"] = {
-						ach(14310, crit(2)),	-- Adventurer of Revendreth / Scrivener Lenua
-						i(180587),	-- Animated Tome
+						crit(2, {	-- Scrivener Lenua
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180587),	-- Animated Tome (PET!)
 					},
 				}),
 				n(162481, {	-- Sinstone Hoarder
@@ -230,29 +234,15 @@ _.Zones =
 					},
 				}),
 				n(160857, {	-- Sire Ladinas <The Lightrazed>
-					["description"] = "Collect Remnant of Light and use the received Extraaction Button on Crazed Ash Ghouls to have a chance to make Sire Ladinas spawn.",
-					["coord"] = { 34.6, 56.2, 1525 },
-					--["questID"] = ,
+					["description"] = "Remnants of Light are sparkling gold shards scattered around the Ember Ward.  Pick them up and use the Extra Action Button on Crazed Ash Ghouls for a chance to make Sire Ladinas spawn.\n\nIf the ghoul yells, the rare will spawn soon.",
+					["questID"] = 58263,
 					["isDaily"] = true,
+					["coord"] = { 34.0, 55.5, 1525 },
 					["g"] = {
-						ach(14310, crit(7)),	-- Adventurer of Revendreth / Sire Ladinas <The Lightrazed>
-						o(339499, {	-- Remnant of Light
-							["coords"] = {
-								{ 36.77, 61.08, 1648 },
-								{ 36.01, 60.22, 1648 },
-								{ 35.34, 60.22, 1648 },
-								{ 35.39, 59.08, 1648 },
-								{ 35.32, 59.35, 1648 },
-								{ 35.03, 59.14, 1648 },
-								{ 34.87, 59.39, 1648 },
-								{ 34.36, 58.52, 1648 },
-								{ 34.83, 57.62, 1648 },
-								{ 33.92, 53.65, 1648 },
-							},
-							["g"] = {
-								i(180873),	-- Smolderheart
-							},
+						crit(7, {	-- Sire Ladinas
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
+						i(180873),	-- Smolderheart
 					},
 				}),
 				n(160392, {	-- Soulstalker Doina
@@ -299,15 +289,18 @@ _.Zones =
 					},
 				}),
 				n(160821, {	-- Worldedge Gorger
-					["coord"] = { 38.6, 72.0, 1525 },
+					["description"] = "To summon Worldedge Gorger, you need to use Enticing Anima to light Worldedge Braziers. Enticing Anima can drop from the aberrations that spawn along the river.",
 					["questID"] = 58259,
 					["isDaily"] = true,
-					["description"] = "To summon Worldedge Gorger you need to use Enticing Anima to lit worldedge braziers. Enticing Anima drops from worldeater rift mobs, you can kill many of them just along the river.",
+					["coord"] = { 38.6, 72.0, 1525 },
 					["g"] = {
-						i(180583, {		-- Impressionable Gorger Spawn
-							i(182589),		-- Loyal Gorger
+						crit(6, {	-- Worldedge Gorger
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
-						ach(14310, crit(6)),	-- Adventurer of Revendreth / Worldedge Gorger
+						i(180583, {	-- Impressionable Gorger Spawn
+							i(182589),	-- Loyal Gorger (MOUNT!)
+						}),
+						i(173939),	-- Enticing Anima (so the item is associated with the rare)
 					},
 				}),
 			}),
