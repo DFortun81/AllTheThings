@@ -79,6 +79,34 @@ _.Zones =
 						["sourceQuests"] = { 58724 },	-- The Queen's Request
 					}),
 				}),
+				ach(14788, {	-- Fractured Faerie Tales
+					-- TODO: fill in more coords; figure out if some of them have multiple spawn points
+					crit(1, {	-- A Meandering Story
+						["questID"] = 62619,
+						["coord"] = { 53.6, 42.0, 1565 },
+						["crs"] = { 174721 },	-- Meandering Story
+					}),
+					crit(2, {	-- A Wandering Tale
+						["questID"] = 62620,
+						--["coord"] = { x, x, 1565 },
+						["crs"] = { 174723 },	-- Wandering Tale
+					}),
+					crit(3, {	-- An Escapist Novel
+						["questID"] = 62621,
+						--["coord"] = { x, x, 1565 },
+						["crs"] = { 174724 },	-- Escapist Novel
+					}),
+					crit(4, {	-- A Travel Journal
+						["questID"] = 62622,
+						--["coord"] = { x, x, 1565 },
+						["crs"] = { 174725 },	-- Travel Journal
+					}),
+					crit(5, {	-- A Naughty Story
+						["questID"] = 62623,
+						--["coord"] = { x, x, 1565 },
+						["crs"] = { 174726 },	-- A Naughty Story
+					}),
+				}),
 				ach(14800, {	-- Sojourner of Ardenweald
 					crit(1, {	-- Thread of Hope
 						["sourceQuests"] = { 60066 },	-- Silk for Ardenweald

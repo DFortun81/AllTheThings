@@ -2972,6 +2972,7 @@ _.HiddenQuestTriggers =
 		q(61590),	-- Triggered after first time channeling anima to Glitterfall Basin
 		q(60721),	-- Triggered after turning in The Roots Thirst
 		q(60722),	-- Triggered after turning in The Roots Thirst
+		q(59431),	-- Triggered when looting A Meandering Story
 
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
