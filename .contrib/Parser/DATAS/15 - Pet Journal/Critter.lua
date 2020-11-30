@@ -121,6 +121,7 @@ _.PetJournal =
 		p(386),		-- Prairie Dog
 		p(727),		-- Prairie Mouse
 		p(2698),	-- Prismatic Softshell
+		p(3049),	-- Pulsating Maggot
 		p(1543),	-- Pygmy Cow
 		p(2133),	-- Pygmy Marsuul
 		p(378),		-- Rabbit

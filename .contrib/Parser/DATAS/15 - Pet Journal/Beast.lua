@@ -190,6 +190,7 @@ _.PetJournal =
 		p(3007),			-- Rosetipped Spiderling
 		p(2847),			-- Rotbreath
 		p(3020),			-- Runelight Leaper
+		p(2937),			-- Rustfur Kit
 		p(2661),			-- Rustyroot Snooter
 		p(2933),			-- Sable
 		p(491),				-- Sand Kitten
@@ -222,7 +223,7 @@ _.PetJournal =
 		p(1763),			-- Spiketail Beaver
 		p(433),				-- Spiky Lizard
 		p(466),				-- Spiny Lizard
-		p(2942),			-- Spirited Skyfoal
+		un(NEVER_IMPLEMENTED, p(2942)),			-- Spirited Skyfoal
 		p(2914),			-- Starry Dreamfoal
 		p(2579),			-- Stoneclaw
 		p(432),				-- Stripe-Tailed Scorpid

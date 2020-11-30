@@ -7,30 +7,31 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
 			filter(101, {	-- Battle Pets
-				i(180840, {	-- Vibrant Glimmerfly
-					["crs"] = { 171668 },	-- Vibrant Glimmerfly
+				p(2936,	{	-- Copperfur Kit
+					["crs"] = { 171702 },	-- Copperfur Kit
 				}),
-				i(180837, {	-- Fluttering Glimmerfly
+				p(2926, {	-- Fledgling Teroclaw
+					["crs"] = { 171567 },	-- Fledgling Teroclaw
+				}),
+				p(2927, {	-- Fluttering Glimmerfly
 					["crs"] = { 171664 },	-- Fluttering Glimmerfly
 				}),
-				i(180813, {	-- Fledgling Teroclaw
-					--["crs"] = {  },	-- Fledgling Teroclaw
+				p(2930, {	-- Glimmerpool Hatchling
+					["crs"] = { 171670 },	-- Glimmerpool Hatchling
 				}),
-				i(180838, {	-- Wild Etherwyrm
-					["crs"] = { 171666 },	-- Fledgling Teroclaw
+				p(2937, {	-- Rustfur Kit
+					["crs"] = { 171703 },	-- Rustfur Kit
 				}),
-				i(180867, {	-- Wader Chick
+				p(2929, {	-- Vibrant Glimmerfly
+					["crs"] = { 171668 },	-- Vibrant Glimmerfly
+				}),
+				p(2939, {	-- Wader Chick
 					["crs"] = { 171712 },	-- Wader Chick
 				}),
-				i(180860,	{	-- Copperfur Kit
-					--["crs"] = {  },	-- Fledgling Teroclaw
+				p(2943, {	-- Wild Etherwyrm
+					["crs"] = { 171666 },	-- Wild Etherwyrm
 				}),
-				p(2930, {	-- Glimmerpool Hatchling // Olive Dragon Turtle??
-					["crs"] = { 171670 },	-- Fledgling Teroclaw
-				}),
-				i(180861, {	-- Rustfur Kit // Red Vulpin??
-					--["crs"] = {  },	-- Fledgling Teroclaw
-				}),
+				
 			}),
 		}),
 	}),

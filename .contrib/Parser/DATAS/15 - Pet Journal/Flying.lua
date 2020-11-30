@@ -230,6 +230,7 @@ _.PetJournal =
 		p(1591),			-- Violet Firefly
 		p(2866),			-- Voidglower
 		p(2460),			-- Voru'kar Leecher
+		p(2939),			-- Wader Chick
 		p(1593),			-- Waterfly
 		p(84),				-- Westfall Chicken
 		p(141),				-- White Moth
