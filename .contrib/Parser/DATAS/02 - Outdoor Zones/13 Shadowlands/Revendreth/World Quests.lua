@@ -18,6 +18,10 @@ _.Zones =
 						i(183859),	-- Dal's Courier Badge
 					},
 				}),
+				q(60657, {	-- Aid From Above
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61879, {	-- Ashes Will Fall
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

@@ -117,6 +117,11 @@ _.Zones =
 					["provider"] = { "n", 169087 },	-- The Fearstalker
 					["coord"] = { 50.6, 73.8, 1525 },
 				}),
+				q(57474, {	-- Dredger Duty
+					["sourceQuests"] = { 57471 },	-- It's a Dirty Job
+					["provider"] = { "n", 157846 },	-- Rendle
+					["coord"] = { 72.5, 73.2, 1525 },
+				}),
 				q(60313, {	-- Dredhollow
 					["sourceQuests"] = { 57159 },	-- A Reflection of Truth
 					["provider"] = { "n", 156554 },	-- The Accuser
@@ -203,6 +208,11 @@ _.Zones =
 					["provider"] = { "n", 168698 },	-- Chiselgrump
 					["coord"] = { 69.5, 53.3, 1525 },
 				}),
+				q(57471, {	-- It's a Dirty Job
+					["sourceQuests"] = { 60509 },	-- Not My Job
+					["provider"] = { "n", 157846 },	-- Rendle
+					["coord"] = { 72.5, 73.2, 1525 },
+				}),
 				q(59014, {	-- King of the Hill
 					["sourceQuests"] = { 58941 },	-- Alpha Bat
 					["provider"] = { "n", 163221 },	-- Flockmaster Sergio
@@ -267,6 +277,13 @@ _.Zones =
 					["provider"] = { "n", 155668 },	-- Rendle
 					["coord"] = { 65.3, 66.2, 1525 },
 				}),
+				q(58093, {	-- Our Forgotten Purpose
+				--	there is also a Venthyr-only version of this breadcrumb, #57918, "The Absolution of Souls."  that version references "returning" to Halls of Atonement, but this version was available before i had stepped foot in any SL dungeon
+				--	["sourceQuests"] = {  },	-- TODO: unknown.  possibly just requires 60
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 160248 },	-- Archivist Fane
+					["coord"] = { 72.9, 52.0, 1525 },
+				}),
 				q(57689, {	-- Prince Renathal
 					["sourceQuests"] = { 59327 },	-- In the Ruin of Rebellion
 					["provider"] = { "n", 158615 },	-- Vorpalia
@@ -303,6 +320,17 @@ _.Zones =
 					["sourceQuests"] = { 57693 },	-- Torghast, Tower of the Damned
 					["provider"] = { "n", 162688 },	-- Prince Renathal
 					["coord"] = { 25.8, 57.1, 1699 },	-- Sinfall Reaches
+				}),
+				q(57481, {	-- Running a Muck
+					["sourceQuests"] = { 57477 },	-- We're Gonna Need a Bigger Dredger
+					["provider"] = { "n", 157898 },	-- Bootus
+					["coord"] = { 72.8, 73.9, 1525 },
+					["g"] =  {
+						i(177656),	-- Boot-a-Charge Flyers
+						i(177655),	-- Air Bootuses
+						i(177654),	-- Bootus Shocks
+						i(177653),	-- Bootus Hardeneds
+					},
 				}),
 				q(57724, {	-- Securing Sinfall
 					["sourceQuests"] = { 60566 },	-- Into the Light
@@ -520,6 +548,11 @@ _.Zones =
 					["provider"] = { "n", 158088 },	-- Simone
 					["coord"] = { 24.2, 49.4, 1525 },	-- Revendreth
 				}),
+				q(57477, {	-- We're Gonna Need a Bigger Dredger
+					["sourceQuests"] = { 57474 },	-- Dredger Duty
+					["provider"] = { "n", 157846 },	-- Rendle
+					["coord"] = { 72.5, 73.2, 1525 },
+				}),
 				q(57534, {	-- When Only Ash Remains
 					["sourceQuests"] = { 57571 },	-- Moving Mirrors
 					["provider"] = { "n", 158205 },	-- Laurent
@@ -631,33 +664,6 @@ _.Zones =
 					["g"] = {
 						i(175766),	-- Ilka's Hunting Cloak
 						i(175737),	-- Samu's Inkwell Pendant
-					},
-				}),
-				-- Dirty Jobs
-				q(57471, {	-- It's a Dirty Job
-					["provider"] = { "n", 157846 },	-- Rendle
-					["coord"] = { 72.5, 73.2, 1525 },
-					["sourceQuests"] = { 60509 },	-- Not My Job
-				}),
-				q(57474, {	-- Dredger Duty
-					["provider"] = { "n", 157846 },	-- Rendle
-					["coord"] = { 72.5, 73.2, 1525 },
-					["sourceQuests"] = { 57471 },	-- It's a Dirty Job
-				}),
-				q(57477, {	-- We're Gonna Need a Bigger Dredger
-					["provider"] = { "n", 157846 },	-- Rendle
-					["coord"] = { 72.5, 73.2, 1525 },
-					["sourceQuests"] = { 57474 },	-- Dredger Duty
-				}),
-				q(57481, {	-- Running a Muck
-					["provider"] = { "n", 157898 },	-- Bootus
-					["coord"] = { 72.8, 73.9, 1525 },
-					["sourceQuests"] = { 57477 },	-- We're Gonna Need a Bigger Dredger
-					["g"] =  {
-						i(177656),	-- Boot-a-Charge Flyers
-						i(177655),	-- Air Bootuses
-						i(177654),	-- Bootus Shocks
-						i(177653),	-- Bootus Hardeneds
 					},
 				}),
 				-- The Final Atonement

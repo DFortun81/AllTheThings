@@ -362,9 +362,9 @@ _.Zones =
 					},
 				}),
 				n(167078, { -- Wingflayer the Cruel
-					["coord"] = { 41.8, 55.4, 1533 },
-					--["questID"] = ,
+					["questID"] = 60314,
 					["isDaily"] = true,
+					["coord"] = { 41.8, 55.4, 1533 },
 					["g"] = {
 						crit(7, {	-- Wingflayer the Cruel
 							["achievementID"] = 14307,	-- Adventurer of Bastion

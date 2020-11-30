@@ -24,6 +24,7 @@ _.Zones =
 						{ 27.5, 11.9, 1525 },
 						{ 30.3, 24.8, 1525 },
 						{ 32.0, 19.0, 1525 },
+						{ 33.8, 29.0, 1525 },
 					},
 					["g"] = {
 						i(180592),	-- Trapped Stonefiend
@@ -67,6 +68,13 @@ _.Zones =
 					["questID"] = 60953,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 48.7, 63.8, 1525 },
+				}),
+				o(1278968750, {	-- Secret Treasure
+				--	TODO: fix objectID when data becomes available
+					["description"] = "Find the small alcove at |cFFFFFFFF65.7, 42.9|r.  On the wall behind a dark red oval rug is a single |cFFFFFFFFFlickering Candle|r.  Click it to open up a secret passage beneath the rug.  To exit after you collect the treasure, click the candle on the right-hand side of the stairs where you entered.",
+					["questID"] = 60197,
+					["isDaily"] = true,	-- repeatable??
+					["coord"] = { 66.5, 42.8, 1525 },
 				}),
 				o(351540, {	-- Secret Treasure
 					["questID"] = 60196,

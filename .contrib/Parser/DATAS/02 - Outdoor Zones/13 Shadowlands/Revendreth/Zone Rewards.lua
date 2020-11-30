@@ -10,6 +10,7 @@ _.Zones =
 				["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
 				["g"] = {
 					i(181178),	-- Cowl of Emberfury
+					i(180355),	-- Ornate Pyx
 					i(181211),	-- Souldrinker's Kris
 				},
 			}),

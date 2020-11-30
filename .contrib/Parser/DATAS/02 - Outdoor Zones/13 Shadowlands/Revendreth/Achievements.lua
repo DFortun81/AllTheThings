@@ -16,6 +16,14 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(14277, {	-- The Accuser's Avowed
+					ach(14274),		-- Absolution For All
+					ach(14273, {	-- Crypt Kicker
+						["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
+					}),
+					ach(14276),		-- It's Always Sinny in Revendreth
+					title(423),		-- Cryptkeeper
+				}),
 				ach(13878, {	-- The Master of Revendreth
 					crit(1, {	-- Welcome to Revendreth
 						["sourceQuests"] = { 56978 },	-- To Darkhaven
@@ -106,11 +114,12 @@ _.Zones =
 						},
 					}),
 					crit(6, {	-- Makeshift Muckpool
-						--["objectID"] = ,	-- Outcast's Makeshift Muckpool
-						["coord"] = { 29.6, 37.1, 1525 },
+					--	["objectID"] = ,	-- Outcast's Makeshift Muckpool
 						["questID"] = 62198,
+						["coord"] = { 29.6, 37.1, 1525 },
+						["cost"] = { { "c", 1820, 30 } },	-- 30x Infused Ruby
 						["g"] = {
-							i(182780),	-- Muckpool Cookpot
+							i(182780),	-- Muckpool Cookpot (TOY!)
 						},
 					}),
 					crit(7, {	-- Taskmaster's Trove
@@ -180,10 +189,11 @@ _.Zones =
 						["questID"] = 59886,
 					}),
 					crit(15, {	-- Gilded Plum Chest
-						-- ["objectID"] = ###,	-- Gilded Plum Chest
-						-- ["coord"] = { ##, ##, 1525 },
-						-- ["questID"] = ###,
-						-- ["description"] = "",
+						["description"] = "There is a Greedy Soul that wanders up and down the road.  Kill it, and it will drop the treasure.",
+						["objectID"] = 349796,	-- Gilded Plum Chest
+						["questID"] = 59887,
+						["coord"] = { 75.2, 56.1, 1525 },
+						["crs"] = { 166680 },	-- Greedy Soul
 						["g"] = {
 						},
 					}),
