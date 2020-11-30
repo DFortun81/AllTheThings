@@ -3075,9 +3075,12 @@ _.HiddenQuestTriggers =
 		q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
 		q(62908),	-- triggered after collecting 5 souls during "Rule 1: Have an Escape Plan"
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
-		q(63414),	-- Wrath of the Jailer weekly event
 		q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
 		q(63377),	-- First kill of Soulsmith Yor-Mattar (bonus objective 59441)
+		-- The Maw rares
+		q(63373),	-- Dartanos secondary quest
+		q(63374),	-- Razkazzar secondary quest
+		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
 
 		-- Torghast
 		q(58192),	-- Triggered after killing The Grand Malleare to complete The Soulforges

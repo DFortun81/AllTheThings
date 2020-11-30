@@ -650,6 +650,7 @@ app.L = {
 		[-900] = 3675495,																	-- Covenant Sanctum
 		[-901] = 3726261,																	-- Covenant Callings
 		[-903] = "Interface\\Icons\\buff_feltreasures",										-- Zone Rewards
+		[-904] = "Interface\\Icons\\ui_torghast",											-- Wrath of the Jailer
 
 		[-920] = "Interface\\Icons\\ui_sigil_necrolord",									-- Necrolord Covenant
 		[-929] = "Interface\\Icons\\ui_sigil_nightfae",										-- Night Fae Covenant
@@ -1423,7 +1424,8 @@ app.L = {
 		[-900] = "Covenant Sanctum",											-- Covenant Sanctum
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
 	--	[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown (NYI)
-		[-903] = "Zone Rewards",
+		[-903] = "Zone Rewards",												-- Zone Rewards
+		[-904] = "Wrath of the Jailer",											-- Wrath of the Jailer
 		[-914] = "Adventures",													-- Adventures
 		
 -- SL Maldraxxus/Necrolord

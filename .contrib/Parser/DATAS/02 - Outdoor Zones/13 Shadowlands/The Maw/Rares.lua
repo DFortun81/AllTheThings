@@ -7,6 +7,7 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1648, {	-- The Maw
 			n(RARES, {
+			--	TODO: might need to confirm the mapID/coords on basically everything in the maw, we have 1648 set for everything here but i asked carb for the mapID when he was killing rares and he was on 1543.  so not sure if that affects coordinates but we should check
 				n(COMMON_BOSS_DROPS, {
 					i(184395, {	-- Fallen Adventurer's Cache
 						["description"] = "Drops from numerous rares, elites, and named mobs in The Maw.",
@@ -41,19 +42,36 @@ _.Zones =
 						},
 					}),
 				}),
+				n(157964, {	-- Adjutant Dekaris
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 25.8, 31.2, 1648 },
+					["g"] = {
+						crit(1, {	-- Adjutant Dekaris
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+					},
+				}),
 				n(170301, {	-- Apholeias, Herald of Loss
-					-- ["coord"] = { 27.4, 49.4, 1648 },
 					["questID"] = 60788,
 					["isDaily"] = true,
+					["coord"] = { 19.6, 42.0, 1648 },
 					["g"] = {
+						crit(2, {	-- Apholeias, Herald of Loss
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+						i(184106),	-- Gimble
 						i(182327),	-- Dominion Etching: Loss
 					},
 				}),
 				n(157833, {	-- Borr-Geth
-					["coord"] = { 38.9, 41.2, 1648 },
-					--["questID"] = 61125,	-- Malevolent Stygia
+					["questID"] = 57469,
 					["isDaily"] = true,
+					["coord"] = { 38.9, 41.2, 1648 },
 					["g"] = {
+						crit(3, {	-- Borr-Geth
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
 						i(184312),	-- Borr-Geth's Fiery Brimstone
 					},
 				}),
@@ -62,54 +80,108 @@ _.Zones =
 				--	["isDaily"] = true,
 					["coord"] = { 27.8, 13.2, 1648 },
 					["g"] = {
+						crit(4, {	-- Conjured Death
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
 						i(183887),	-- Suirhtaned, Blade of the Heir
 					},
 				}),
 				n(168693, {	-- Cyrixia
 					["questID"] = 61346,	-- also 63379, but it's probably the WQ
 					["isDaily"] = true,
-					-- ["coord"] = { 27.8, 13.2, 1648 },
+					["coord"] = { 28.4, 24.8, 1648 },
 					["g"] = {
 						i(183070),	-- Mawsworn Orders
+					},
+				}),
+				n(160770, {	-- Darithis the Bleak
+				--	["questID"] = ,
+					["isDaily"] = true,
+				--	["coord"] = { , , 1648 },
+					["g"] = {
+						crit(5, {	-- Darithis the Bleak
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+					},
+				}),
+				n(158025, {	-- Darklord Taraxis
+				--	["questID"] = ,
+					["isDaily"] = true,
+				--	["coord"] = { , , 1648 },
+					["g"] = {
+						crit(6, {	-- Darklord Taraxis
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
 					},
 				}),
 				n(162452, {	-- Dartanos
-					-- ["coord"] = { 27.8, 13.2, 1648 },
-					["questID"] = 59230,	-- also 63373
+					["questID"] = 59230,
 					["isDaily"] = true,
+					["coord"] = { 25.8, 14.8, 1648 },
 					["g"] = {
 						i(183070),	-- Mawsworn Orders
 					},
 				}),
-				n(154330, {	-- Eternas the Tormentor
-					["coord"] = { 27.4, 49.4, 1648 },
-					["questID"] = 57509,
+				n(170711, {	-- Dolos
+				--	["questID"] = ,
 					["isDaily"] = true,
+				--	["coord"] = { , , 1648 },
 					["g"] = {
-						i(183407),	-- Contained Essence of Dread
+						crit(7, {	-- Dolos
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+					},
+				}),
+				n(170774, {	-- Eketra <The Impaler>
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 22.8, 52.4, 1648 },
+					["g"] = {
+						crit(8, {	-- Eketra
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
 					},
 				}),
 				n(169827, {	-- Ekphoras, Herald of Grief
-					-- ["coord"] = { 27.4, 49.4, 1648 },
-					--["questID"] = 61125,	-- Malevolent Stygia
+				--	["questID"] = 61125,	-- Malevolent Stygia
 					["isDaily"] = true,
+					["coord"] = { 42.2, 21.0, 1648 },
 					["g"] = {
+						crit(9, {	-- Ekphoras, Herald of Grief
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+						i(184105),	-- Gyre
 						i(182328),	-- Dominion Etching: Grief
 					},
 				}),
+				n(154330, {	-- Eternas the Tormentor
+					["questID"] = 57509,
+					["isDaily"] = true,
+					["coord"] = { 27.4, 49.4, 1648 },	-- TODO: verify coords, wowhead says 19.8, 46.0
+					["g"] = {
+						crit(10, {	-- Eternas the Tormentor
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+						i(183407),	-- Contained Essence of Dread
+					},
+				}),
 				n(170303, {	-- Exos, Herald of Domination
-					-- ["coord"] = { 27.4, 49.4, 1648 },
-					-- ["questID"] = 61125,	-- Malevolent Stygia
-					-- ["isDaily"] = true,
-					-- TODO: if nested cost items ever work properly, then use this only and clean this up
-					-- ["cost"] = { { "i", 182329, 1 } },	-- 1x 182329
-					-- for now use the 3 individual as cost
+				--	TODO: add description about summoning or something
+				--	["questID"] = 61125,	-- Malevolent Stygia
+					["isDaily"] = true,
+				--	TODO: if nested cost items ever work properly, then use this only and clean this up
+				--	["cost"] = { { "i", 182329, 1 } },	-- 1x 182329
+				--	for now use the 3 individual as cost
+					["coord"] = { 21.0, 70.2, 1648 },
 					["cost"] = {
 						{ "i", 182328, 1 },	-- Dominion Etching: Grief
 						{ "i", 182327, 1 },	-- Dominion Etching: Loss
 						{ "i", 182326, 1 },	-- Dominion Etching: Pain
 					},
 					["g"] = {
+						crit(11, {	-- Exos, Herald of Domination
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
 						i(182329, {	-- Domination's Calling
 							["cost"] = {
 								{ "i", 182328, 1 },	-- Dominion Etching: Grief
@@ -127,6 +199,16 @@ _.Zones =
 						i(184167),	-- Mawsworn Soulhunter
 					},
 				}),
+				n(175012, {	-- Ikras the Devourer
+				--	["questID"] = ,
+					["isDaily"] = true,
+				--	["coord"] = { , , 1648 },
+					["g"] = {
+						crit(21, {	-- Ikras the Devourer
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+					},
+				}),
 				n(171316, {	-- Malevolent Stygia
 					["coord"] = { 27.3, 17.3, 1648 },
 					["questID"] = 61125,	-- Malevolent Stygia
@@ -137,13 +219,31 @@ _.Zones =
 					--["questID"] = 61125,
 					["isDaily"] = true,
 					["g"] = {
+						crit(12, {	-- Morguliax
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
 						i(184292),		-- Ancient Elethium Coin
 					},
 				}),
+				n(158278, {	-- Nascent Devourer
+				--	["questID"] = ,
+					["isDaily"] = true,
+				--	["coord"] = { , , 1648 },
+					["g"] = {
+						crit(13, {	-- Nascent Devourer
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+					},
+				}),
 				n(164064, {	-- Obolos
-					--["coord"] = { 27.4, 49.4, 1648 },
 					["questID"] = 60667,
 					["isDaily"] = true,
+					["coord"] = { 48.6, 18.4, 1648 },
+					["g"] = {
+						crit(14, {	-- Obolos
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+					},
 				}),
 				n(172577, {	-- Orophea
 					["description"] = "Collect Eurydea's Amulet and offer it to Orophea.",
@@ -151,6 +251,9 @@ _.Zones =
 					--["questID"] = 61125,
 					["isDaily"] = true,
 					["g"] = {
+						crit(15, {	-- Orophea
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
 						i(181794),	-- Orophea's Lyre
 						o(356555, {	-- Eurydea's Necklace
 							["coord"] = { 26.8, 29.3, 1648 },
@@ -161,7 +264,7 @@ _.Zones =
 					},
 				}),
 				n(162829, {	-- Razkazzar
-					["questID"] = 60992,	-- also 63374 (first kill?)
+					["questID"] = 60992,
 					["isDaily"] = true,
 					["coord"] = { 26.2, 37.4, 1648 },
 				}),
@@ -173,27 +276,94 @@ _.Zones =
 						i(183410),	-- Sharpclaw
 					},
 				}),
+				n(170634, {	-- Shadeweaver Zeris
+				--	["questID"] = ,
+					["isDaily"] = true,
+				--	["coord"] = { , , 1648 },
+					["g"] = {
+						crit(16, {	-- Shadeweaver Zeris
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+					},
+				}),
 				n(166398, {	-- Soulforger Rhovus
-					["coord"] = { 35.1, 41.5, 1543 },
 					["questID"] = 60834,
 					["isDaily"] = true,
+					["coord"] = { 35.1, 41.5, 1543 },
+					["g"] = {
+						crit(17, {	-- Soulforger Rhovus
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+					},
 				}),
 				n(170302, {	-- Talaporas, Herald of Pain
-					-- ["coord"] = { 27.4, 49.4, 1648 },
 					["questID"] = 60789,
 					["isDaily"] = true,
+					["coord"] = { 28.6, 12.6, 1543 },
 					["g"] = {
+						crit(18, {	-- Talaporas, Herald of Pain
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+						i(184107),	-- Borogove Cloak
 						i(182326),	-- Dominion Etching: Pain
 					},
 				}),
-				n(176173, {	-- Zograthos
-					-- ["coord"] = { 35.1, 41.5, 1543 },
-					["description"] = "A possible boss for the 'Wrath of the Jailer' map event.",
-					["questID"] = 63414,
-					["isWeekly"] = true,
+				n(170731, {	-- Thanassos <Death's Voice>
+				--	["questID"] = ,
+					["isDaily"] = true,
+				--	["coord"] = { , , 1648 },
 					["g"] = {
-						-- TODO: rewards are probably shared between multiple boss mobs in the maw, maybe consolidate into a different header
-						i(184658),	-- Dread Harrier's Pauldrons
+						crit(19, {	-- Thanassos
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+					},
+				}),
+				n(-904, {	-- Wrath of the Jailer
+					["isWeekly"] = true,
+					["questID"] = 63414,
+					["g"] = {
+						n(COMMON_BOSS_DROPS, {
+							i(183228),	-- Memory of Arcane Pulsars
+							i(184657),	-- Armguard of the Unseen Assailant
+							i(184661),	-- Bracers of the Tenebrous Retinue
+							i(184658),	-- Dread Harrier's Pauldrons
+							i(184660),	-- Dreadguard's Greathelm
+							i(184654),	-- Forgotten Shade's Shawl
+							i(184659),	-- Grips of the Dreadhound Tamer
+							i(184656),	-- Mawsworn Assassin's Doublet
+							i(184655),	-- Sash of the Ethereal Servant
+						}),
+						n(175846, {	-- Dathlane the Herald <Torghast Executioner>
+							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+							["isWeekly"] = true,
+							["questID"] = 63414,
+						}),
+						n(175877, {	-- Lumisende <Torghast Executioner>
+							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+							["isWeekly"] = true,
+							["questID"] = 63414,
+						}),
+						n(175881, {	-- Naelcrotix <Torghast Executioner>
+							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+							["isWeekly"] = true,
+							["questID"] = 63414,
+						}),
+						n(176173, {	-- Zograthos <Torghast Executioner>
+							-- ["coord"] = { 35.1, 41.5, 1543 },
+							["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+							["isWeekly"] = true,
+							["questID"] = 63414,
+						}),
+					},
+				}),
+				n(172862, {	-- Yero the Skittish
+				--	["questID"] = ,
+					["isDaily"] = true,
+				--	["coord"] = { , , 1648 },
+					["g"] = {
+						crit(20, {	-- Yero the Skittish
+							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
 					},
 				}),
 			}),
