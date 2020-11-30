@@ -7,9 +7,6 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			filter(101, {	-- Battle Pets
-				p(2903, {	-- Crimson Dredwing Pup
-					["crs"] = { 171150 },	-- Crimson Dredwing Pup
-				}),
 				p(2902, {	-- Dusky Dredwing Pup
 					["crs"] = { 171149 },	-- Dusky Dredwing Pup
 				}),
