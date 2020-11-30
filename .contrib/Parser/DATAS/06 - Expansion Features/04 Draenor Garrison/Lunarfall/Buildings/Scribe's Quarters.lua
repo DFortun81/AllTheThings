@@ -42,6 +42,7 @@ _.ExpansionFeatures =
 										["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
 									}),
 									i(120265, {	-- Technique: Ensorcelled Tarot
+										["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 										["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
 									}),
 									i(118607, {	-- Technique: Etched-Blade Warstaff
@@ -57,6 +58,7 @@ _.ExpansionFeatures =
 										["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
 									}),
 									i(118610, {	-- Technique: Weapon Crystal
+										["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 										["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
 									}),
 									un(NEVER_IMPLEMENTED, i(118608)),	-- Technique: Greater Weapon Crystal

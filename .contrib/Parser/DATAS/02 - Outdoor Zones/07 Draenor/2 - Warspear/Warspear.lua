@@ -1544,12 +1544,16 @@ _.Zones =
 								}),
 								i(118605),	-- Technique: Crystalfire Spellstaff
 								i(118606),	-- Technique: Darkmoon Card of Draenor
-								i(120265),	-- Technique: Ensorcelled Tarot
+								i(120265, {	-- Technique: Ensorcelled Tarot
+									["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+								}),	
 								i(118607),	-- Technique: Etched-Blade Warstaff
 								i(118613),	-- Technique: Shadowtome
 								i(118614),	-- Technique: Volatile Crystal
 								i(118615),	-- Technique: Warmaster's Firestick
-								i(118610),	-- Technique: Weapon Crystal
+								i(118610, {	-- Technique: Weapon Crystal
+									["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
+								}),	
 								un(NEVER_IMPLEMENTED, i(118608)),	-- Technique: Greater Weapon Crystal
 								un(NEVER_IMPLEMENTED, i(120266)),	-- Technique: Greater Ensorcelled Tarot
 								un(NEVER_IMPLEMENTED, i(122548)),	-- Technique: Powerful Ensorcelled Tarot

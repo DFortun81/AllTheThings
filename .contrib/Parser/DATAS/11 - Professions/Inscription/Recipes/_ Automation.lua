@@ -2011,39 +2011,9 @@ profession(773, {	-- Inscription
 					["hash"] = "categoryID361",
 					["g"] = {
 						{
-							["name"] = "Ensorcelled Tarot",
-							["hash"] = "recipeID178248",
-							["recipeID"] = 178248
-						},
-						{
-							["name"] = "Mighty Ensorcelled Tarot",
-							["hash"] = "recipeID187495",
-							["recipeID"] = 187495
-						},
-						{
-							["name"] = "Mighty Weapon Crystal",
-							["hash"] = "recipeID187494",
-							["recipeID"] = 187494
-						},
-						{
-							["name"] = "Savage Ensorcelled Tarot",
-							["hash"] = "recipeID187519",
-							["recipeID"] = 187519
-						},
-						{
-							["name"] = "Savage Weapon Crystal",
-							["hash"] = "recipeID187518",
-							["recipeID"] = 187518
-						},
-						{
 							["name"] = "Volatile Crystal",
 							["hash"] = "recipeID166432",
 							["recipeID"] = 166432
-						},
-						{
-							["name"] = "Weapon Crystal",
-							["hash"] = "recipeID166366",
-							["recipeID"] = 166366
 						}
 					}
 				},
