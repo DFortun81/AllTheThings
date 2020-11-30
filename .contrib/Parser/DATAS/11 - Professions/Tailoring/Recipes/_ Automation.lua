@@ -100,14 +100,31 @@ profession(197, {	-- Tailoring
 					}
 				},
 				{
+					["name"] = "Bags",
+					["categoryID"] = 1538,
+					["hash"] = "categoryID1538",
+					["g"] = {
+						{
+							["name"] = "Lightless Silk Pouch",
+							["hash"] = "recipeID345986",
+							["recipeID"] = 345986
+						},
+						{
+							["name"] = "Shrouded Cloth Bag",
+							["hash"] = "recipeID345985",
+							["recipeID"] = 345985
+						}
+					}
+				},
+				{
 					["name"] = "Specialized Armor",
 					["categoryID"] = 1513,
 					["hash"] = "categoryID1513",
 					["g"] = {
 						{
 							["name"] = "Grim-Veiled Belt",
-							["hash"] = "recipeID332072",
-							["recipeID"] = 332072
+							["hash"] = "recipeID332037",
+							["recipeID"] = 332037
 						},
 						{
 							["name"] = "Grim-Veiled Belt",
@@ -116,8 +133,8 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["name"] = "Grim-Veiled Belt",
-							["hash"] = "recipeID332037",
-							["recipeID"] = 332037
+							["hash"] = "recipeID332072",
+							["recipeID"] = 332072
 						},
 						{
 							["name"] = "Grim-Veiled Belt",
@@ -131,6 +148,11 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["name"] = "Grim-Veiled Bracers",
+							["hash"] = "recipeID310886",
+							["recipeID"] = 310886
+						},
+						{
+							["name"] = "Grim-Veiled Bracers",
 							["hash"] = "recipeID332038",
 							["recipeID"] = 332038
 						},
@@ -140,9 +162,9 @@ profession(197, {	-- Tailoring
 							["recipeID"] = 339004
 						},
 						{
-							["name"] = "Grim-Veiled Bracers",
-							["hash"] = "recipeID310886",
-							["recipeID"] = 310886
+							["name"] = "Grim-Veiled Cape",
+							["hash"] = "recipeID332067",
+							["recipeID"] = 332067
 						},
 						{
 							["name"] = "Grim-Veiled Cape",
@@ -160,16 +182,6 @@ profession(197, {	-- Tailoring
 							["recipeID"] = 338995
 						},
 						{
-							["name"] = "Grim-Veiled Cape",
-							["hash"] = "recipeID332067",
-							["recipeID"] = 332067
-						},
-						{
-							["name"] = "Grim-Veiled Hood",
-							["hash"] = "recipeID332069",
-							["recipeID"] = 332069
-						},
-						{
 							["name"] = "Grim-Veiled Hood",
 							["hash"] = "recipeID339000",
 							["recipeID"] = 339000
@@ -181,18 +193,13 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["name"] = "Grim-Veiled Hood",
+							["hash"] = "recipeID332069",
+							["recipeID"] = 332069
+						},
+						{
+							["name"] = "Grim-Veiled Hood",
 							["hash"] = "recipeID310882",
 							["recipeID"] = 310882
-						},
-						{
-							["name"] = "Grim-Veiled Mittens",
-							["hash"] = "recipeID338998",
-							["recipeID"] = 338998
-						},
-						{
-							["name"] = "Grim-Veiled Mittens",
-							["hash"] = "recipeID310881",
-							["recipeID"] = 310881
 						},
 						{
 							["name"] = "Grim-Veiled Mittens",
@@ -205,14 +212,14 @@ profession(197, {	-- Tailoring
 							["recipeID"] = 332033
 						},
 						{
-							["name"] = "Grim-Veiled Pants",
-							["hash"] = "recipeID332070",
-							["recipeID"] = 332070
+							["name"] = "Grim-Veiled Mittens",
+							["hash"] = "recipeID338998",
+							["recipeID"] = 338998
 						},
 						{
-							["name"] = "Grim-Veiled Pants",
-							["hash"] = "recipeID332035",
-							["recipeID"] = 332035
+							["name"] = "Grim-Veiled Mittens",
+							["hash"] = "recipeID310881",
+							["recipeID"] = 310881
 						},
 						{
 							["name"] = "Grim-Veiled Pants",
@@ -221,18 +228,18 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["name"] = "Grim-Veiled Pants",
+							["hash"] = "recipeID332070",
+							["recipeID"] = 332070
+						},
+						{
+							["name"] = "Grim-Veiled Pants",
 							["hash"] = "recipeID310883",
 							["recipeID"] = 310883
 						},
 						{
-							["name"] = "Grim-Veiled Robe",
-							["hash"] = "recipeID332031",
-							["recipeID"] = 332031
-						},
-						{
-							["name"] = "Grim-Veiled Robe",
-							["hash"] = "recipeID310879",
-							["recipeID"] = 310879
+							["name"] = "Grim-Veiled Pants",
+							["hash"] = "recipeID332035",
+							["recipeID"] = 332035
 						},
 						{
 							["name"] = "Grim-Veiled Robe",
@@ -245,9 +252,14 @@ profession(197, {	-- Tailoring
 							["recipeID"] = 332066
 						},
 						{
-							["name"] = "Grim-Veiled Sandals",
-							["hash"] = "recipeID332030",
-							["recipeID"] = 332030
+							["name"] = "Grim-Veiled Robe",
+							["hash"] = "recipeID332031",
+							["recipeID"] = 332031
+						},
+						{
+							["name"] = "Grim-Veiled Robe",
+							["hash"] = "recipeID310879",
+							["recipeID"] = 310879
 						},
 						{
 							["name"] = "Grim-Veiled Sandals",
@@ -256,13 +268,23 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["name"] = "Grim-Veiled Sandals",
-							["hash"] = "recipeID310878",
-							["recipeID"] = 310878
+							["hash"] = "recipeID332030",
+							["recipeID"] = 332030
 						},
 						{
 							["name"] = "Grim-Veiled Sandals",
 							["hash"] = "recipeID338997",
 							["recipeID"] = 338997
+						},
+						{
+							["name"] = "Grim-Veiled Sandals",
+							["hash"] = "recipeID310878",
+							["recipeID"] = 310878
+						},
+						{
+							["name"] = "Grim-Veiled Spaulders",
+							["hash"] = "recipeID310884",
+							["recipeID"] = 310884
 						},
 						{
 							["name"] = "Grim-Veiled Spaulders",
@@ -278,11 +300,6 @@ profession(197, {	-- Tailoring
 							["name"] = "Grim-Veiled Spaulders",
 							["hash"] = "recipeID332071",
 							["recipeID"] = 332071
-						},
-						{
-							["name"] = "Grim-Veiled Spaulders",
-							["hash"] = "recipeID310884",
-							["recipeID"] = 310884
 						}
 					}
 				},
@@ -475,7 +492,7 @@ profession(197, {	-- Tailoring
 			}
 		},
 		{
-			["name"] = "Zandalari Patterns",
+			["name"] = "Kul Tiran Patterns",
 			["categoryID"] = 942,
 			["hash"] = "categoryID942",
 			["g"] = {
@@ -2006,23 +2023,23 @@ profession(197, {	-- Tailoring
 					["g"] = {
 						{
 							["name"] = "Fearsome Battle Standard",
-							["hash"] = "recipeID176314",
-							["recipeID"] = 176314
-						},
-						{
-							["name"] = "Fearsome Battle Standard",
 							["hash"] = "recipeID176316",
 							["recipeID"] = 176316
 						},
 						{
-							["name"] = "Inspiring Battle Standard",
-							["hash"] = "recipeID176313",
-							["recipeID"] = 176313
+							["name"] = "Fearsome Battle Standard",
+							["hash"] = "recipeID176314",
+							["recipeID"] = 176314
 						},
 						{
 							["name"] = "Inspiring Battle Standard",
 							["hash"] = "recipeID176315",
 							["recipeID"] = 176315
+						},
+						{
+							["name"] = "Inspiring Battle Standard",
+							["hash"] = "recipeID176313",
+							["recipeID"] = 176313
 						}
 					}
 				},
@@ -2062,21 +2079,6 @@ profession(197, {	-- Tailoring
 							["name"] = "Hexweave Embroidery",
 							["hash"] = "recipeID168836",
 							["recipeID"] = 168836
-						},
-						{
-							["name"] = "Hexweave Essence",
-							["hash"] = "recipeID168855",
-							["recipeID"] = 168855
-						},
-						{
-							["name"] = "Mighty Hexweave Essence",
-							["hash"] = "recipeID187492",
-							["recipeID"] = 187492
-						},
-						{
-							["name"] = "Savage Hexweave Essence",
-							["hash"] = "recipeID187516",
-							["recipeID"] = 187516
 						}
 					}
 				},
@@ -3827,8 +3829,8 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["name"] = "Merlin's Robe",
-							["hash"] = "recipeID67146",
-							["recipeID"] = 67146
+							["hash"] = "recipeID67066",
+							["recipeID"] = 67066
 						},
 						{
 							["name"] = "Moonshroud Robe",
@@ -3842,8 +3844,8 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["name"] = "Royal Moonshroud Robe",
-							["hash"] = "recipeID67144",
-							["recipeID"] = 67144
+							["hash"] = "recipeID67064",
+							["recipeID"] = 67064
 						},
 						{
 							["name"] = "Spellweave Robe",
@@ -4004,8 +4006,8 @@ profession(197, {	-- Tailoring
 					["g"] = {
 						{
 							["name"] = "Bejeweled Wizard's Bracers",
-							["hash"] = "recipeID67145",
-							["recipeID"] = 67145
+							["hash"] = "recipeID67079",
+							["recipeID"] = 67079
 						},
 						{
 							["name"] = "Black Duskweave Wristwraps",
@@ -4034,8 +4036,8 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["name"] = "Royal Moonshroud Bracers",
-							["hash"] = "recipeID67147",
-							["recipeID"] = 67147
+							["hash"] = "recipeID67065",
+							["recipeID"] = 67065
 						}
 					}
 				},
