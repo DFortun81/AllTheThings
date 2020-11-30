@@ -50,75 +50,275 @@ _.Zones =
 					}),
 				}),
 				ach(14339, {	-- Shard Labor
-				--	https://www.wowhead.com/achievement=14339/shard-labor#comments
-				--	there is a counter on the achievement for 50 shards, but no specific criteria.  are there questIDs attached to each shard?  ugh.
-				--	TODO: figure out if tracking this achievement is possible for us, i guess.  @blizzard answerforyourcrimesssssss
-					n(-10200, {	-- Shard ##
-						["coords"] = {
-							{ 56.9, 75.0, 1533 },
-						--temp placement of shard coords	
-							{ 39.05, 77.04, 1533 },	--61225
-							{ 43.63, 76.22, 1533 },	--61235
-							{ 48.42, 72.73, 1533 },	--61236
-							{ 52.67, 75.55, 1533 },	--61237
-							{ 53.31, 73.62, 1533 },	--61238
-							{ 53.49, 80.60, 1533 },	--61239
-							{ 55.96, 86.66, 1533 },	--61241
-							{ 61.04, 85.66, 1533 },	--61244
-							{ 58.10, 80.08, 1533 },	--61245
-							{ 65.52, 71.92, 1533 },	--61249
-							{ 58.15, 63.91, 1533 },	--61250
-							{ 54.00, 59.70, 1533 },	--61251
-							{ 46.70, 65.95, 1533 },	--61253
-							{ 50.68, 56.14, 1533 },	--61254
-							{ 34.84, 65.78, 1533 }, --61257
-							{ 51.67, 48.02, 1533 },	--61258
-							{ 47.08, 49.23, 1533 },	--61260
-							{ 41.39, 46.63, 1533 },	--61261
-							{ 40.04, 59.12, 1533 },	--61263
-							{ 38.52, 53.26, 1533 },	--61264
-							{ 57.64, 55.67, 1533 },	--61270
-							{ 65.25, 42.88, 1533 },	--61271
-							{ 72.38, 40.29, 1533 },	--61273
-							{ 66.89, 26.92, 1533 },	--61274
-							{ 57.55, 38.27, 1533 },	--61275
-							{ 52.16, 39.39, 1533 },	--61277
-							{ 49.99, 38.26, 1533 },	--61278
-							{ 48.48, 34.91, 1533 },	--61279
-							{ 56.72, 28.84, 1533 },	--61280
-							{ 56.20, 17.31, 1533 },	--61281
-							{ 59.88, 13.91, 1533 },	--61282
-							{ 52.44, 09.42, 1533 },	--61283
-							{ 46.69, 18.04, 1533 },	--61284
-							{ 44.94, 28.45, 1533 },	--61285
-							{ 42.30, 24.02, 1533 },	--61286
-							{ 37.10, 24.68, 1533 },	--61287
-							{ 42.81, 33.23, 1533 },	--61288
-							{ 42.71, 39.40, 1533 },	--61289
-							{ 33.03, 37.62, 1533 },	--61290
-							{ 31.00, 27.47, 1533 },	--61291
-							{ 30.61, 23.73, 1533 },	--61292
-							{ 24.64, 22.98, 1533 },	--61293
-							{ 26.15, 22.62, 1533 },	--61294
-							{ 24.37, 18.21, 1533 },	--61295
-							--necrotic wake dungeon
-							{ 52.50, 88.60, },	--61296
-							{ 36.20, 22.80, },	--61297
-							--spires of ascension(gardens of repose)
-							{ 46.60, 53.10, },	--61298
-							{ 69.40, 38.70, },	--61299
-							--spires of ascension(font of feality)
-							{ 49.80, 46.90, },	--61300
-							--forging complete
-							--61229
-							--bell rang and chest looted
-							--61183
-							--61191
-						},
-						["description"] = "Part-way up the wall",
-						["questID"] = 61247,
-					}),
-					i(180772),	-- Silverwind Larion (MOUNT!)
+					["description"] = "Enable 'Quest' collecting to see/track individual shards.\nShards might be collected Account-Wide [Testing]",
+					["g"] = {
+						i(180772),	-- Silverwind Larion (MOUNT!)
+					--	https://www.wowhead.com/achievement=14339/shard-labor#comments
+						n(-1433901, {	-- Shard ##
+							["coord"] = { 39.05, 77.04, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61225,
+						}),
+						n(-1433902, {	-- Shard ##
+							["coord"] = { 43.63, 76.22, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61235,
+						}),
+						n(-1433903, {	-- Shard ##
+							["coord"] = { 48.42, 72.73, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61236,
+						}),
+						n(-1433904, {	-- Shard ##
+							["coord"] = { 52.67, 75.55, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61237,
+						}),
+						n(-1433905, {	-- Shard ##
+							["coord"] = { 53.31, 73.62, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61238,
+						}),
+						n(-1433906, {	-- Shard ##
+							["coord"] = { 53.49, 80.60, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61239,
+						}),
+						n(-1433907, {	-- Shard ##
+							["coord"] = { 55.96, 86.66, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61241,
+						}),
+						n(-1433908, {	-- Shard ##
+							["coord"] = { 61.04, 85.66, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61244,
+						}),
+						n(-1433909, {	-- Shard ##
+							["coord"] = { 58.10, 80.08, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61245,
+						}),
+						n(-1433910, {	-- Shard ##
+							["coord"] = { 56.9, 75.0, 1533 },
+							["description"] = "Part-way up the wall",
+							["questID"] = 61247,
+						}),
+						n(-1433911, {	-- Shard ##
+							["coord"] = { 65.52, 71.92, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61249,
+						}),
+						n(-1433912, {	-- Shard ##
+							["coord"] = { 58.15, 63.91, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61250,
+						}),
+						n(-1433913, {	-- Shard ##
+							["coord"] = { 54.00, 59.70, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61251,
+						}),
+						n(-1433914, {	-- Shard ##
+							["coord"] = { 46.70, 65.95, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61253,
+						}),
+						n(-1433915, {	-- Shard ##
+							["coord"] = { 50.68, 56.14, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61254,
+						}),
+						n(-1433916, {	-- Shard ##
+							["coord"] = { 34.84, 65.78, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61257,
+						}),
+						n(-1433917, {	-- Shard ##
+							["coord"] = { 51.67, 48.02, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61258,
+						}),
+						n(-1433918, {	-- Shard ##
+							["coord"] = { 47.08, 49.23, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61260,
+						}),
+						n(-1433919, {	-- Shard ##
+							["coord"] = { 41.39, 46.63, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61261,
+						}),
+						n(-1433920, {	-- Shard ##
+							["coord"] = { 40.04, 59.12, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61263,
+						}),
+						n(-1433921, {	-- Shard ##
+							["coord"] = { 38.52, 53.26, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61264,
+						}),
+						n(-1433922, {	-- Shard ##
+							["coord"] = { 57.64, 55.67, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61270,
+						}),
+						n(-1433923, {	-- Shard ##
+							["coord"] = { 65.25, 42.88, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61271,
+						}),
+						n(-1433924, {	-- Shard ##
+							["coord"] = { 72.38, 40.29, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61273,
+						}),
+						n(-1433925, {	-- Shard ##
+							["coord"] = { 66.89, 26.92, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61274,
+						}),
+						n(-1433926, {	-- Shard ##
+							["coord"] = { 57.55, 38.27, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61275,
+						}),
+						n(-1433927, {	-- Shard ##
+							["coord"] = { 52.16, 39.39, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61277,
+						}),
+						n(-1433928, {	-- Shard ##
+							["coord"] = { 49.99, 38.26, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61278,
+						}),
+						n(-1433929, {	-- Shard ##
+							["coord"] = { 48.48, 34.91, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61279,
+						}),
+						n(-1433930, {	-- Shard ##
+							["coord"] = { 56.72, 28.84, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61280,
+						}),
+						n(-1433931, {	-- Shard ##
+							["coord"] = { 56.20, 17.31, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61281,
+						}),
+						n(-1433932, {	-- Shard ##
+							["coord"] = { 59.88, 13.91, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61282,
+						}),
+						n(-1433933, {	-- Shard ##
+							["coord"] = { 52.44, 09.42, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61283,
+						}),
+						n(-1433934, {	-- Shard ##
+							["coord"] = { 46.69, 18.04, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61284,
+						}),
+						n(-1433935, {	-- Shard ##
+							["coord"] = { 44.94, 28.45, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61285,
+						}),
+						n(-1433936, {	-- Shard ##
+							["coord"] = { 42.30, 24.02, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61286,
+						}),
+						n(-1433937, {	-- Shard ##
+							["coord"] = { 37.10, 24.68, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61287,
+						}),
+						n(-1433938, {	-- Shard ##
+							["coord"] = { 42.81, 33.23, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61288,
+						}),
+						n(-1433939, {	-- Shard ##
+							["coord"] = { 42.71, 39.40, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61289,
+						}),
+						n(-1433940, {	-- Shard ##
+							["coord"] = { 33.03, 37.62, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61290,
+						}),
+						n(-1433941, {	-- Shard ##
+							["coord"] = { 31.00, 27.47, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61291,
+						}),
+						n(-1433942, {	-- Shard ##
+							["coord"] = { 30.61, 23.73, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61292,
+						}),
+						n(-1433943, {	-- Shard ##
+							["coord"] = { 24.64, 22.98, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61293,
+						}),
+						n(-1433944, {	-- Shard ##
+							["coord"] = { 26.15, 22.62, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61294,
+						}),
+						n(-1433945, {	-- Shard ##
+							["coord"] = { 24.37, 18.21, 1533 },
+							-- ["description"] = "",
+							["questID"] = 61295,
+						}),
+						-- necrotic wake dungeon
+						n(-1433946, {	-- Shard ##
+							-- ["coord"] = { 52.50, 88.60, MAPID },
+							-- ["maps"] = { MAPID },
+							["description"] = "In Dungeon: Necrotic Wake",
+							["questID"] = 61296,
+						}),
+						n(-1433947, {	-- Shard ##
+							-- ["coord"] = { 36.20, 22.80, MAPID },
+							-- ["maps"] = { MAPID },
+							["description"] = "In Dungeon: Necrotic Wake",
+							["questID"] = 61297,
+						}),
+						-- spires of ascension(gardens of repose)
+						n(-1433948, {	-- Shard ##
+							-- ["coord"] = { 46.60, 53.10, MAPID },
+							-- ["maps"] = { MAPID },
+							["description"] = "In Dungeon: Spires of Ascension",
+							["questID"] = 61298,
+						}),
+						n(-1433949, {	-- Shard ##
+							-- ["coord"] = { 69.40, 38.70, MAPID },
+							-- ["maps"] = { MAPID },
+							["description"] = "In Dungeon: Spires of Ascension",
+							["questID"] = 61299,
+						}),
+						-- spires of ascension(font of feality)
+						n(-1433950, {	-- Shard ##
+							-- ["coord"] = { 49.80, 46.90, MAPID },
+							-- ["maps"] = { MAPID },
+							["description"] = "In Dungeon: Spires of Ascension",
+							["questID"] = 61300
+						}),
+						-- TODO: are these other treasures? need more info on them
+						-- forging complete
+						-- 61229
+						-- bell rang and chest looted
+						-- 61183
+						-- 61191
+					},
 				}),
 				ach(14801, {	-- Sojourner of Bastion
 					crit(1, {	-- In Agthia's Memory
