@@ -100,11 +100,6 @@ profession(185, {	-- Cooking
 							["recipeID"] = 308420
 						},
 						{
-							["name"] = "Quiethounds",
-							["hash"] = "recipeID308416",
-							["recipeID"] = 308416
-						},
-						{
 							["name"] = "Seraph Tenders",
 							["hash"] = "recipeID308417",
 							["recipeID"] = 308417
@@ -132,12 +127,12 @@ profession(185, {	-- Cooking
 							["recipeID"] = 308411
 						},
 						{
-							["name"] = "Crawler Ravioli with Apple Sauce",
+							["name"] = "Iridescent Ravioli with Apple Sauce",
 							["hash"] = "recipeID308413",
 							["recipeID"] = 308413
 						},
 						{
-							["name"] = "Phantasmal Souffle and Fries",
+							["name"] = "Spinefin Souffle and Fries",
 							["hash"] = "recipeID308400",
 							["recipeID"] = 308400
 						},
@@ -236,8 +231,15 @@ profession(185, {	-- Cooking
 					["g"] = {
 						{
 							["name"] = "Grilled Catfish",
+							["hash"] = "recipeID259430",
+							["nextRecipeID"] = 259431,
+							["recipeID"] = 259430
+						},
+						{
+							["name"] = "Grilled Catfish",
 							["hash"] = "recipeID259431",
 							["nextRecipeID"] = 259432,
+							["previousRecipeID"] = 259430,
 							["recipeID"] = 259431
 						},
 						{
@@ -245,11 +247,6 @@ profession(185, {	-- Cooking
 							["hash"] = "recipeID259432",
 							["previousRecipeID"] = 259431,
 							["recipeID"] = 259432
-						},
-						{
-							["name"] = "Grilled Catfish",
-							["hash"] = "recipeID259430",
-							["recipeID"] = 259430
 						},
 						{
 							["name"] = "Heartsbane Hexwurst",
@@ -2474,6 +2471,21 @@ profession(185, {	-- Cooking
 							["name"] = "Dry Pork Ribs",
 							["hash"] = "recipeID2546",
 							["recipeID"] = 2546
+						},
+						{
+							["name"] = "Extra Fancy Darkmoon Feast",
+							["hash"] = "recipeID347509",
+							["recipeID"] = 347509
+						},
+						{
+							["name"] = "Extra Lemony Herb Filet",
+							["hash"] = "recipeID347457",
+							["recipeID"] = 347457
+						},
+						{
+							["name"] = "Extra Sugary Fish Feast",
+							["hash"] = "recipeID347176",
+							["recipeID"] = 347176
 						},
 						{
 							["name"] = "Fancy Darkmoon Feast",

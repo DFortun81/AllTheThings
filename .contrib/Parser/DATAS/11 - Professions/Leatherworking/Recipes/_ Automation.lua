@@ -223,17 +223,7 @@ profession(165, {	-- Leatherworking
 					["hash"] = "categoryID1338",
 					["g"] = {
 						{
-							["name"] = "Desolate Hide",
-							["hash"] = "recipeID308896",
-							["recipeID"] = 308896
-						},
-						{
-							["name"] = "Desolate Leather",
-							["hash"] = "recipeID308895",
-							["recipeID"] = 308895
-						},
-						{
-							["name"] = "Heavy Desolate Hide",
+							["name"] = "Heavy Callous Hide",
 							["hash"] = "recipeID308897",
 							["recipeID"] = 308897
 						},
@@ -241,26 +231,6 @@ profession(165, {	-- Leatherworking
 							["name"] = "Heavy Desolate Leather",
 							["hash"] = "recipeID308899",
 							["recipeID"] = 308899
-						},
-						{
-							["name"] = "Necrotic Leather",
-							["hash"] = "recipeID309216",
-							["recipeID"] = 309216
-						},
-						{
-							["name"] = "Purified Leather",
-							["hash"] = "recipeID309217",
-							["recipeID"] = 309217
-						},
-						{
-							["name"] = "Sinful Leather",
-							["hash"] = "recipeID309215",
-							["recipeID"] = 309215
-						},
-						{
-							["name"] = "Unseelie Leather",
-							["hash"] = "recipeID309214",
-							["recipeID"] = 309214
 						}
 					}
 				},
@@ -322,6 +292,16 @@ profession(165, {	-- Leatherworking
 					["g"] = {
 						{
 							["name"] = "Boneshatter Armguards",
+							["hash"] = "recipeID332064",
+							["recipeID"] = 332064
+						},
+						{
+							["name"] = "Boneshatter Armguards",
+							["hash"] = "recipeID309213",
+							["recipeID"] = 309213
+						},
+						{
+							["name"] = "Boneshatter Armguards",
 							["hash"] = "recipeID338994",
 							["recipeID"] = 338994
 						},
@@ -331,24 +311,14 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 332029
 						},
 						{
-							["name"] = "Boneshatter Armguards",
-							["hash"] = "recipeID309213",
-							["recipeID"] = 309213
-						},
-						{
-							["name"] = "Boneshatter Armguards",
-							["hash"] = "recipeID332064",
-							["recipeID"] = 332064
-						},
-						{
 							["name"] = "Boneshatter Gauntlets",
 							["hash"] = "recipeID338989",
 							["recipeID"] = 338989
 						},
 						{
 							["name"] = "Boneshatter Gauntlets",
-							["hash"] = "recipeID332024",
-							["recipeID"] = 332024
+							["hash"] = "recipeID332059",
+							["recipeID"] = 332059
 						},
 						{
 							["name"] = "Boneshatter Gauntlets",
@@ -357,8 +327,8 @@ profession(165, {	-- Leatherworking
 						},
 						{
 							["name"] = "Boneshatter Gauntlets",
-							["hash"] = "recipeID332059",
-							["recipeID"] = 332059
+							["hash"] = "recipeID332024",
+							["recipeID"] = 332024
 						},
 						{
 							["name"] = "Boneshatter Greaves",
@@ -367,8 +337,8 @@ profession(165, {	-- Leatherworking
 						},
 						{
 							["name"] = "Boneshatter Greaves",
-							["hash"] = "recipeID338991",
-							["recipeID"] = 338991
+							["hash"] = "recipeID309210",
+							["recipeID"] = 309210
 						},
 						{
 							["name"] = "Boneshatter Greaves",
@@ -377,13 +347,13 @@ profession(165, {	-- Leatherworking
 						},
 						{
 							["name"] = "Boneshatter Greaves",
-							["hash"] = "recipeID309210",
-							["recipeID"] = 309210
+							["hash"] = "recipeID338991",
+							["recipeID"] = 338991
 						},
 						{
 							["name"] = "Boneshatter Helm",
-							["hash"] = "recipeID332060",
-							["recipeID"] = 332060
+							["hash"] = "recipeID332025",
+							["recipeID"] = 332025
 						},
 						{
 							["name"] = "Boneshatter Helm",
@@ -397,18 +367,8 @@ profession(165, {	-- Leatherworking
 						},
 						{
 							["name"] = "Boneshatter Helm",
-							["hash"] = "recipeID332025",
-							["recipeID"] = 332025
-						},
-						{
-							["name"] = "Boneshatter Pauldrons",
-							["hash"] = "recipeID338992",
-							["recipeID"] = 338992
-						},
-						{
-							["name"] = "Boneshatter Pauldrons",
-							["hash"] = "recipeID309211",
-							["recipeID"] = 309211
+							["hash"] = "recipeID332060",
+							["recipeID"] = 332060
 						},
 						{
 							["name"] = "Boneshatter Pauldrons",
@@ -417,13 +377,23 @@ profession(165, {	-- Leatherworking
 						},
 						{
 							["name"] = "Boneshatter Pauldrons",
+							["hash"] = "recipeID309211",
+							["recipeID"] = 309211
+						},
+						{
+							["name"] = "Boneshatter Pauldrons",
+							["hash"] = "recipeID338992",
+							["recipeID"] = 338992
+						},
+						{
+							["name"] = "Boneshatter Pauldrons",
 							["hash"] = "recipeID332027",
 							["recipeID"] = 332027
 						},
 						{
 							["name"] = "Boneshatter Treads",
-							["hash"] = "recipeID309206",
-							["recipeID"] = 309206
+							["hash"] = "recipeID338988",
+							["recipeID"] = 338988
 						},
 						{
 							["name"] = "Boneshatter Treads",
@@ -432,18 +402,13 @@ profession(165, {	-- Leatherworking
 						},
 						{
 							["name"] = "Boneshatter Treads",
-							["hash"] = "recipeID332022",
-							["recipeID"] = 332022
+							["hash"] = "recipeID309206",
+							["recipeID"] = 309206
 						},
 						{
 							["name"] = "Boneshatter Treads",
-							["hash"] = "recipeID338988",
-							["recipeID"] = 338988
-						},
-						{
-							["name"] = "Boneshatter Vest",
-							["hash"] = "recipeID332058",
-							["recipeID"] = 332058
+							["hash"] = "recipeID332022",
+							["recipeID"] = 332022
 						},
 						{
 							["name"] = "Boneshatter Vest",
@@ -452,23 +417,18 @@ profession(165, {	-- Leatherworking
 						},
 						{
 							["name"] = "Boneshatter Vest",
-							["hash"] = "recipeID309207",
-							["recipeID"] = 309207
-						},
-						{
-							["name"] = "Boneshatter Vest",
 							["hash"] = "recipeID338987",
 							["recipeID"] = 338987
 						},
 						{
-							["name"] = "Boneshatter Waistguard",
-							["hash"] = "recipeID309212",
-							["recipeID"] = 309212
+							["name"] = "Boneshatter Vest",
+							["hash"] = "recipeID332058",
+							["recipeID"] = 332058
 						},
 						{
-							["name"] = "Boneshatter Waistguard",
-							["hash"] = "recipeID332063",
-							["recipeID"] = 332063
+							["name"] = "Boneshatter Vest",
+							["hash"] = "recipeID309207",
+							["recipeID"] = 309207
 						},
 						{
 							["name"] = "Boneshatter Waistguard",
@@ -477,13 +437,18 @@ profession(165, {	-- Leatherworking
 						},
 						{
 							["name"] = "Boneshatter Waistguard",
-							["hash"] = "recipeID332028",
-							["recipeID"] = 332028
+							["hash"] = "recipeID332063",
+							["recipeID"] = 332063
 						},
 						{
-							["name"] = "Umbrahide Armguards",
-							["hash"] = "recipeID332021",
-							["recipeID"] = 332021
+							["name"] = "Boneshatter Waistguard",
+							["hash"] = "recipeID309212",
+							["recipeID"] = 309212
+						},
+						{
+							["name"] = "Boneshatter Waistguard",
+							["hash"] = "recipeID332028",
+							["recipeID"] = 332028
 						},
 						{
 							["name"] = "Umbrahide Armguards",
@@ -492,18 +457,23 @@ profession(165, {	-- Leatherworking
 						},
 						{
 							["name"] = "Umbrahide Armguards",
-							["hash"] = "recipeID309205",
-							["recipeID"] = 309205
-						},
-						{
-							["name"] = "Umbrahide Armguards",
 							["hash"] = "recipeID338986",
 							["recipeID"] = 338986
 						},
 						{
+							["name"] = "Umbrahide Armguards",
+							["hash"] = "recipeID332021",
+							["recipeID"] = 332021
+						},
+						{
+							["name"] = "Umbrahide Armguards",
+							["hash"] = "recipeID309205",
+							["recipeID"] = 309205
+						},
+						{
 							["name"] = "Umbrahide Gauntlets",
-							["hash"] = "recipeID338981",
-							["recipeID"] = 338981
+							["hash"] = "recipeID332051",
+							["recipeID"] = 332051
 						},
 						{
 							["name"] = "Umbrahide Gauntlets",
@@ -512,18 +482,13 @@ profession(165, {	-- Leatherworking
 						},
 						{
 							["name"] = "Umbrahide Gauntlets",
-							["hash"] = "recipeID309200",
-							["recipeID"] = 309200
+							["hash"] = "recipeID338981",
+							["recipeID"] = 338981
 						},
 						{
 							["name"] = "Umbrahide Gauntlets",
-							["hash"] = "recipeID332051",
-							["recipeID"] = 332051
-						},
-						{
-							["name"] = "Umbrahide Helm",
-							["hash"] = "recipeID332052",
-							["recipeID"] = 332052
+							["hash"] = "recipeID309200",
+							["recipeID"] = 309200
 						},
 						{
 							["name"] = "Umbrahide Helm",
@@ -532,8 +497,8 @@ profession(165, {	-- Leatherworking
 						},
 						{
 							["name"] = "Umbrahide Helm",
-							["hash"] = "recipeID309201",
-							["recipeID"] = 309201
+							["hash"] = "recipeID332052",
+							["recipeID"] = 332052
 						},
 						{
 							["name"] = "Umbrahide Helm",
@@ -541,9 +506,19 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 338982
 						},
 						{
+							["name"] = "Umbrahide Helm",
+							["hash"] = "recipeID309201",
+							["recipeID"] = 309201
+						},
+						{
 							["name"] = "Umbrahide Leggings",
 							["hash"] = "recipeID309202",
 							["recipeID"] = 309202
+						},
+						{
+							["name"] = "Umbrahide Leggings",
+							["hash"] = "recipeID332053",
+							["recipeID"] = 332053
 						},
 						{
 							["name"] = "Umbrahide Leggings",
@@ -556,9 +531,9 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 338983
 						},
 						{
-							["name"] = "Umbrahide Leggings",
-							["hash"] = "recipeID332053",
-							["recipeID"] = 332053
+							["name"] = "Umbrahide Pauldrons",
+							["hash"] = "recipeID332054",
+							["recipeID"] = 332054
 						},
 						{
 							["name"] = "Umbrahide Pauldrons",
@@ -574,11 +549,6 @@ profession(165, {	-- Leatherworking
 							["name"] = "Umbrahide Pauldrons",
 							["hash"] = "recipeID332019",
 							["recipeID"] = 332019
-						},
-						{
-							["name"] = "Umbrahide Pauldrons",
-							["hash"] = "recipeID332054",
-							["recipeID"] = 332054
 						},
 						{
 							["name"] = "Umbrahide Treads",
@@ -612,23 +582,13 @@ profession(165, {	-- Leatherworking
 						},
 						{
 							["name"] = "Umbrahide Vest",
-							["hash"] = "recipeID309199",
-							["recipeID"] = 309199
-						},
-						{
-							["name"] = "Umbrahide Vest",
 							["hash"] = "recipeID332050",
 							["recipeID"] = 332050
 						},
 						{
-							["name"] = "Umbrahide Waistguard",
-							["hash"] = "recipeID332020",
-							["recipeID"] = 332020
-						},
-						{
-							["name"] = "Umbrahide Waistguard",
-							["hash"] = "recipeID338985",
-							["recipeID"] = 338985
+							["name"] = "Umbrahide Vest",
+							["hash"] = "recipeID309199",
+							["recipeID"] = 309199
 						},
 						{
 							["name"] = "Umbrahide Waistguard",
@@ -637,8 +597,18 @@ profession(165, {	-- Leatherworking
 						},
 						{
 							["name"] = "Umbrahide Waistguard",
+							["hash"] = "recipeID338985",
+							["recipeID"] = 338985
+						},
+						{
+							["name"] = "Umbrahide Waistguard",
 							["hash"] = "recipeID332055",
 							["recipeID"] = 332055
+						},
+						{
+							["name"] = "Umbrahide Waistguard",
+							["hash"] = "recipeID332020",
+							["recipeID"] = 332020
 						}
 					}
 				},
@@ -3123,24 +3093,9 @@ profession(165, {	-- Leatherworking
 					["hash"] = "categoryID384",
 					["g"] = {
 						{
-							["name"] = "Burnished Essence",
-							["hash"] = "recipeID171286",
-							["recipeID"] = 171286
-						},
-						{
 							["name"] = "Leather Refurbishing Kit",
 							["hash"] = "recipeID171266",
 							["recipeID"] = 171266
-						},
-						{
-							["name"] = "Mighty Burnished Essence",
-							["hash"] = "recipeID187489",
-							["recipeID"] = 187489
-						},
-						{
-							["name"] = "Savage Burnished Essence",
-							["hash"] = "recipeID187513",
-							["recipeID"] = 187513
 						}
 					}
 				},
