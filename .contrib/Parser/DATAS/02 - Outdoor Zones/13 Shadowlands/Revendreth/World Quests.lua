@@ -7,6 +7,10 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(-34,  {	-- World Quests
+				q(59904, {	-- A Curious Cache
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59905, {	-- A Curious Cache
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

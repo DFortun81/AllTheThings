@@ -15,6 +15,7 @@ i(184768);	-- Censer of Dried Gracepetals
 i(184766);	-- Chronicles of the Paragons
 i(181552);	-- Collected Tithe
 i(184148);	-- Concealed Sinvyr Flask
+i(181544);	-- Confessions of Misdeed
 i(184151);	-- Counterfeit Ruby Brooch
 i(181551);	-- Depleted Stoneborn Heart
 i(181645);	-- Engorged Monstrosity's Heart
@@ -27,8 +28,10 @@ i(181547);	-- Noble's Draught
 i(181649);	-- Preserved Preternatural Braincase
 i(184769);	-- Pressed Torchlily Blossom
 i(184771);	-- Remembrance Parchment Ash
+i(184770);	-- Roster of the Forgotten
 i(184293);	-- Sanctified Skylight Leaf
 i(184146);	-- Singed Soul Shackles
+i(184389);	-- Slumbering Starseed
 i(181479);	-- Starlight Catcher
 i(184519);	-- Totem of Stolen Mojo
 

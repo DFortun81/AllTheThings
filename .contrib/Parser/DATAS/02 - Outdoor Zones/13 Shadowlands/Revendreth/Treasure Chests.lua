@@ -95,7 +95,7 @@ _.Zones =
 					["coord"] = { 75.8, 77.3, 1525 },
 				}),
 				o(354113, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.  it's probably this one or 354111, the only ones that didn't have confirmed locations so far
+				--	TODO: verify objectID.
 					["description"] = "You can jump down from the ledge above or use the Bounding Shroom at 52.5, 59.2 to reach the treasure.",
 					["questID"] = 60983,
 					["isDaily"] = true,	-- repeatable?
@@ -107,13 +107,13 @@ _.Zones =
 					},
 				}),
 				o(354111, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.  it's probably this one or 354111, the only ones that didn't have confirmed locations so far
+				--	TODO: verify objectID.
 					["questID"] = 60941,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 75.4, 39.0, 1525 },
 				}),
-				o(354111, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.  it's probably this one or 354111, the only ones that didn't have confirmed locations so far
+				o(1278968752, {	-- Stoneborn Satchel
+				--	TODO: verify objectID.
 					["questID"] = 60942,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 55.3, 42.3, 1525 },
@@ -130,11 +130,17 @@ _.Zones =
 						}),
 					},
 				}),
-				o(354111, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.  it's probably this one or 354111, the only ones that didn't have confirmed locations so far
+				o(1278968753, {	-- Stoneborn Satchel
+				--	TODO: verify objectID.
 					["questID"] = 60982,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 58.1, 67.3, 1525 },
+				}),
+				o(1278968754, {	-- Stoneborn Satchel
+				--	TODO: verify objectID.
+					["questID"] = 60980,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 44.3, 77.9, 1525 },
 				}),
 			}),
 		}),

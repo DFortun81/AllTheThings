@@ -78,6 +78,15 @@ _.Zones =
 					["provider"] = { "n", 158038 },	-- Laurent
 					["coord"] = { 26.3, 49.0, 1525 },
 				}),
+				q(60178, {	-- And Then There Were None
+					["sourceQuests"] = { 60177 },	-- Reason for the Treason
+					["provider"] = { "n", 167489 },	-- Lajos
+					["coord"] = { 62.2, 61.3, 1525 },
+					["g"] = {
+						i(175766),	-- Ilka's Hunting Cloak
+						i(175737),	-- Samu's Inkwell Pendant
+					},
+				}),
 				q(58433, {	-- Anima Attrition
 					["sourceQuests"] = { 56942 },	-- On The Road Again
 					["provider"] = { "n", 155533 },	-- Lord Chamberlain
@@ -540,6 +549,10 @@ _.Zones =
 						i(175479),	-- Stoneforged Cover
 					},
 				}),
+				q(58060, {	-- The Night Market
+					["provider"] = { "n", 160100 },	-- Provisioner Dracho
+					["coord"] = { 61.0, 39.6, 1525 },
+				}),
 				q(57136, {	-- The Penitent Hunt
 					["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
 					["provider"] = { "n", 168664 },	-- The Fearstalker
@@ -718,23 +731,9 @@ _.Zones =
 					-- ["sourceQuests"] = { },
 					["isWeekly"] = true,
 				})),
-				q(58060, {	-- The Night Market
-					["provider"] = { "n", 160100 },	-- Provisioner Dracho
-					-- ["coord"] = { ##, ##, 1525 },
-					-- ["sourceQuests"] = {  },
-				}),
 				-- End of Zone Achievement Quests
 				-- The Duelist's Debt
 				-- Tithes of Darkhaven
-				q(60178, {	-- And Then There Were None
-					["provider"] = { "n", 167489 },	-- Lajos
-					["coord"] = { 62.2, 61.3, 1525 },
-					["sourceQuests"] = { 60177 },	-- Reason for the Treason
-					["g"] = {
-						i(175766),	-- Ilka's Hunting Cloak
-						i(175737),	-- Samu's Inkwell Pendant
-					},
-				}),
 				-- The Final Atonement
 				-- Revelations of the Light
 				-- Bonus Objective
