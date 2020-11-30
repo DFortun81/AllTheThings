@@ -16,12 +16,14 @@ i(184766);	-- Chronicles of the Paragons
 i(181552);	-- Collected Tithe
 i(184148);	-- Concealed Sinvyr Flask
 i(181544);	-- Confessions of Misdeed
+i(184363);	-- Considerations on Courage
 i(184151);	-- Counterfeit Ruby Brooch
 i(181551);	-- Depleted Stoneborn Heart
 i(181645);	-- Engorged Monstrosity's Heart
 i(184294);	-- Ethereal Ambrosia
 i(181744);	-- Forgelite Ember
 i(181745);	-- Forgesmith's Coal
+i(184384);	-- Hibernal Sproutling
 i(181550);	-- Hopebreaker's Field Injector
 i(184387);	-- Misty Shimmerleaf
 i(181547);	-- Noble's Draught

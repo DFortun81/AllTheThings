@@ -43,6 +43,12 @@ _.Zones =
 					["provider"] = { "n", 168455 },	-- Sabina
 					["coord"] = { 35.0, 53.9, 1525 },
 				}),
+				q(58062, {	-- A Very Special Guest
+					["sourceQuests"] = { 58060 },	-- The Night Market
+					["description"] = "Unlocks the Black Market Auction House.",
+					["provider"] = { "n", 160091 },	-- Ta'ruca
+					["coord"] = { 51.0, 78.6, 1525 },
+				}),
 				q(58996, {	-- Abel's Fate
 				--	TODO: figure out SQs.  i think it's somewhere between "the penitent hunt"+"devour this" and "a reflection of truth," because i saw it while on "dredhollow."
 				--	this doesn't require turning in "hunting trophies," the other quest the NPC provides - i went to him to turn it in and he had this other quest to offer me.
@@ -712,11 +718,6 @@ _.Zones =
 						},
 					}),
 					-- Mirror Network
-				}),
-				q(58062, {	-- A Very Special Guest
-					["provider"] = { "n", 160091 },	-- Ta'ruca
-					-- ["coord"] = { ##, ##, 1525 },
-					["sourceQuests"] = { 58060 },	-- The Night Market
 				}),
 				q(62189, {	-- Parasol Components
 					["provider"] = { "o", 349798 },	-- Smuggled Cache

@@ -668,8 +668,40 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(160084, {	-- Ta'rmoro <Purveyor of Arms>
+					["coord"] = { 50.4, 81.4, 1525 },
+					["g"] = {
+						i(183977, {	-- House Renathal Ceremonial Dagger
+							["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+						}),
+						i(183982, {	-- Devourer Mite Sticker
+							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
+						}),
+						i(183980, {	-- Kyrian Gladius
+							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
+						}),
+						i(183981, {	-- Kyrian Greatblade
+							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
+						}),
+						i(183985, {	-- Maldraxxian Bonesaw
+							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
+						}),
+						i(183984, {	-- Maldraxxian Shortblade
+							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
+						}),
+						i(183983, {	-- Rogue Ritualist's Spellblade
+							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
+						}),
+						i(183979, {	-- Standard Fenser's Rapier
+							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
+						}),
+						i(183968, {	-- Venthyr Ritualist's Kris
+							["cost"] = { { "c", 1813, 3500 } },	-- 3,500x Reservoir Anima
+						}),
+					},
+				}),
 				n(164966, {	-- Temel <The Party Herald> (with a hat)
-					["coord"] = { 28.0, 43.0, 1525},
+					["coord"] = { 28.0, 43.0, 1525 },
 					["g"] = {
 						i(180726),	-- Pale Acidmaw				-- no cost due each covenant offering this mount in different ways
 						i(181300),	-- Gruesome Flayedwing		-- no cost due each covenant offering this mount in different ways
