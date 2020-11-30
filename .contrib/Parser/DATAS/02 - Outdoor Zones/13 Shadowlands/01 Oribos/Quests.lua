@@ -363,12 +363,6 @@ _.Zones =
 				}),
 
 
-
-
-
-
-
-
 				-- Skip Quests
 				q(62801, {	-- The Call of Fate
 					["sourceQuests"] = { 59770 },	-- Stand as One
@@ -394,7 +388,7 @@ _.Zones =
 					["coord"] = { 38.8, 70.0, 1670 },
 					["sourceQuests"] = { 62000 },	-- Choosing Your Purpose
 				}),
-				
+
 				-- Zone Select Breadcrumbs
 				q(62277, {	-- Ardenweald
 					["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -422,26 +416,101 @@ _.Zones =
 				}),
 
 				-- Zone Travel Breadcrumbs
+				-- Ardenweald
+				-- Bastion
 				q(62707, {	-- The Elysian Fields
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62275 },	-- Bastion
 				}),
+				-- Maldraxxus
+				q(63035, {	-- A Fresh Blade
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 62278 },	-- Maldraxxus
+				}),
+				-- Revendreth
 				
-				-- Zone Meta Quests
-				-- TODO: adding later... oof
+				-- Zone Meta Quests (keep in Bastion for visibility to players who may skip storyline I suppose)
+				-- Ardenweald
+				-- Bastion
 				q(62723, {	-- Bolstering Bastion
+					["description"] = "Auto-accepted if entering the zone prior to completion of its breadcrumbs",
 					["provider"] = { "n", 163427 },	-- Kalisthene
 					["coord"] = { 51.1, 43.7, 1533 },
-					["sourceQuests"] = { 62707 },	-- The Elysian Fields
+					["sourceQuests"] = {
+						62159,	-- Aiding the Shadowlands
+						62707,	-- The Elysian Fields
+					},
+					["g"] = {
+						-- TODO: more rewards
+					},
+				}),
+				-- Maldraxxus
+				q(62748, {	-- Rallying Maldraxxus
+					["description"] = "Auto-accepted if entering the zone prior to completion of its breadcrumbs",
+					["provider"] = { "n", 175008 },	-- Secutor Mevix
+					["coord"] = { 52.8, 68.2, 1536 },
+					["sourceQuests"] = {
+						62159,	-- Aiding the Shadowlands
+						63035,	-- A Fresh Blade
+					},
+					["g"] = {
+						i(181690),	-- Gorewrought Crusher
+						i(181691),	-- Gorewrought Greatstaff
+						i(181692),	-- Gorewrought Warblade
+						-- TODO: more rewards
+					},
+				}),
+				-- Revendreth
+				q(62778, {	-- Reinforcing Revendreth
+					["description"] = "Auto-accepted if entering the zone prior to completion of its breadcrumbs",
+					["providers"] = {
+						{ "n", 158653 },	-- Prince Renathal [in Sinfall, for Venthyr]
+						{ "n", 175056 },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
+					},
+					["coords"] = {
+						{ 52.0, 38.6, 1699 },	-- Prince Renathal [in Sinfall, for Venthyr]
+						{ 61.4, 60.2, 1525 },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
+					},
+					["sourceQuests"] = {
+						62159,	-- Aiding the Shadowlands
+						-- ,	-- TODO: Revendreth Zone-Travel Quest
+					},
+					["g"] = {
+						i(181208),	-- Anima-Infused Muck
+						i(181223),	-- Mace of Emberwrath
+						-- TODO: more rewards
+					},
 				}),
 
 				-- Oribos Return Quests
+				-- Ardenweald
+				-- Bastion
 				q(62729, {	-- Return to Oribos
 					["provider"] = { "n", 159478 },	-- Kalisthene
 					["coord"] = { 51.1, 43.7, 1533 },
 					["sourceQuests"] = { 62723 },	-- Bolstering Bastion
+				}),
+				-- Maldraxxus
+				q(62761, {	-- Return to Oribos
+					["provider"] = { "n", 175008 },	-- Secutor Mevix
+					["coord"] = { 52.8, 68.2, 1536 },
+					["sourceQuests"] = { 62748 },	-- Rallying Maldraxxus
+				}),
+				-- Revendreth
+				q(62779, {	-- Return to Oribos
+					["providers"] = {
+						{ "n", 158653 },	-- Prince Renathal [in Sinfall, for Venthyr]
+						{ "n", 175056 },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
+					},
+					["coords"] = {
+						{ 52.0, 38.6, 1699 },	-- Prince Renathal [in Sinfall, for Venthyr]
+						{ 61.4, 60.2, 1525 },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
+					},
+					["sourceQuests"] = { 62778 },	-- Reinforcing Revendreth
 				}),
 
 				-- From Revendreth

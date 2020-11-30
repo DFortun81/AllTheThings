@@ -672,6 +672,12 @@ _.Zones =
 				}),
 				-- Sojourner of Maldraxxus
 				-- Theater of Pain
+
+				-- Bonus Objectives
+				q(62743, {	-- Decaying Situation (pre-60)
+					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				}),
 			}),
 		}),
 	}),

@@ -38,6 +38,11 @@ _.Zones =
 				i(179323),	-- Dredhollow Cudgel
 				i(179329),	-- Gargoyle Heartpiercer
 				i(182690),	-- Gilded Crusader's Morningstar
+				i(173720, {	-- Glittering Primrose Necklace
+					["questID"] = 58080,	-- Favor: Glittering Primrose Necklace
+					["isDaily"] = true,
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
+				}),
 				i(177813),	-- Hopebreaker's Badge
 				i(183420, {	-- Hopebreaker's Right Boot
 					i(183418, {	-- Hopebreaker's Boots
@@ -51,6 +56,7 @@ _.Zones =
 				i(177809),	-- Lithe Rapier
 				i(173721, {	-- Love and Terror
 					["questID"] = 58081,
+					["isDaily"] = true,	-- quest became incomplete the next day
 					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 				}),
 				i(183417, {	-- Mail Courier's Right Runner

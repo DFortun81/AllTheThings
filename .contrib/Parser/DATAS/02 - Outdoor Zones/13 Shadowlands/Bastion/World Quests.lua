@@ -31,6 +31,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61439, {	-- Cooking: Steward Stew
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+					["requireSkill"] = COOKING,
+				}),
 				q(61549, {	-- Drought Conditions
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -65,9 +70,9 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61443, {	-- Herbalism: Windswept Rising Glory
-					["requireSkill"] = HERBALISM,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
+					["requireSkill"] = HERBALISM,
 				}),
 				q(59771, {	-- History of Corruption
 					["isWorldQuest"] = true,

@@ -954,8 +954,13 @@ _.Zones =
 						i(177951),	-- Glimmerflies on Strings
 					},
 				}),
-				-- Bonus Objective
+				
+				-- Bonus Objectives
 				q(59015, {	-- Hostile Recollection
+				}),
+				q(62735, {	-- Hostile Recollection (pre-60)
+					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 			}),
 		}),

@@ -3021,6 +3021,8 @@ _.HiddenQuestTriggers =
 		q(59843),	-- triggered when turning in "A Sure Bet"
 		q(62372),	-- triggered when 'feeding' Page 76 to the necronomicron
 		q(62786),	-- triggered when killing Unbreakable Urtz during "The Ladder" - no other arena opponents triggered quests
+		q(62738),	-- triggered when accepting 62748 [Rallying Maldraxxus]
+		q(63416),	-- triggered when accepting 62748 [Rallying Maldraxxus]
 		-- Maldraxxus Pool of Mixed Monstrosities
 		q(62805),	-- Pulsing Leech secondary quest
 		-- Maldraxxus Rares
@@ -3037,12 +3039,15 @@ _.HiddenQuestTriggers =
 		q(62020),	-- Triggered after choosing Venthyr covenant
 		q(62709),	-- Triggered after choosing Venthyr covenant
 		q(62017),	-- Triggered after choosing Necrolords covenant
+		q(62711),	-- Triggered after choosing Necrolords covenant
+		-- q(62152),	-- Triggered when turning in 62159 after choosing Necrolords covenant... kind of want to see when it happens again though
 		q(63348),	-- Triggered after turning in Explore Torghast (62932) at Bolvar
 
 		-- Revendreth
 		q(60523),	-- Triggered after reading Theotar's Diary
 		q(60527),	-- Triggered after reading Theotar's Diary
 		q(59222),	-- triggered during #57536, "Mirror Making, Not Breaking" when speaking to Laurent
+		q(62661),	-- Triggered during first completion of #58080 [Favor: Glittering Primrose Necklace]
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest

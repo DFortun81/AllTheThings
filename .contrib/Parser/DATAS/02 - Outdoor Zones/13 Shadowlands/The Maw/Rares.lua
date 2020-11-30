@@ -51,7 +51,7 @@ _.Zones =
 				}),
 				n(157833, {	-- Borr-Geth
 					["coord"] = { 38.9, 41.2, 1648 },
-					--["questID"] = 61125,	-- Malevolent Stygia
+					["questID"] = 57469,
 					["isDaily"] = true,
 					["g"] = {
 						i(184312),	-- Borr-Geth's Fiery Brimstone

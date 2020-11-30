@@ -800,6 +800,13 @@ _.Zones =
 					["provider"] = { "n", 170175 },	-- Featherlight
 					["coord"] = { 65.0, 19.5, 1565 },
 				}),
+				
+				-- Bonus Objectives
+				q(62775, {	-- The Waning Grove (pre-60)
+					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					-- ["icon"] = 1001982,	-- Bonus Objective... need a different icon imo, or new tag for 'on your map, static quests'
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				}),
 			}),
 		}),
 	}),

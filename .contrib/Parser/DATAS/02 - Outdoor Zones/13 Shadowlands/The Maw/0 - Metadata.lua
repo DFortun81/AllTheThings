@@ -11,6 +11,7 @@ _.Zones =
 			["maps"] = {
 				1543,	-- The Maw
 				1822,	-- Maw Micro Tremaculum
+				1823,	-- Altar of Domination
 			},
 		}),
 	}),
