@@ -63,6 +63,12 @@ _.Zones =
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 71.3, 80.2, 1525 },
 				}),
+				o(354116, {	-- Pugilist's Prize
+					["description"] = "Defeat the mobs to make the treasure lootable.",
+					["questID"] = 60705,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 35.8, 67.5, 1525 },
+				}),
 				o(354123, {	-- Pugilist's Prize
 					["description"] = "Defeat the mobs to make the treasure lootable.",
 					["questID"] = 60953,

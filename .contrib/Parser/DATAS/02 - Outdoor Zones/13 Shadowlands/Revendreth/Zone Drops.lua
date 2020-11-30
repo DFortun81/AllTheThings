@@ -100,6 +100,19 @@ _.Zones =
 				}),
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace
+				i(173709, {	-- Vial of Dredger Muck
+					["description"] = "Drops from Dredger mobs and can be found in Revendreth treasure chests.",
+					["questID"] = 58071,	-- Favor: Vial of Dredger Muck
+					["crs"] = {
+						160846,	-- Beleaguered Excavator
+						161490,	-- Blackbale Flunky
+						161258,	-- Chalice Dredger
+						176118,	-- Confirmed Dredger
+						170953,	-- Head Pugilist
+						158193,	-- Manor Servant
+						159495,	-- Mire Dredger
+					},
+				}),
 				i(179334),	-- Wingblade Staff
 			}),
 		}),

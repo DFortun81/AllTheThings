@@ -4138,6 +4138,7 @@ app.L = {
 		[353868] = "Hidden Hoard",
 		[354111] = "Stoneborn Satchel",
 		[354113] = "Stoneborn Satchel",
+		[354116] = "Pugilist's Prize",
 		[354121] = "Pugilist's Prize",
 		[354123] = "Pugilist's Prize",
 		[354186] = "Stoneborn Satchel",

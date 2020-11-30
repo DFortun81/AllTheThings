@@ -452,6 +452,10 @@ _.Zones =
 					["provider"] = { "n", 164166 },	-- Echelon
 					["coord"] = { 65.9, 47.1, 1525 },
 				}),
+				q(58327, {	-- Snacks for Stonehead
+					["description"] = "Pick up the Hollow Rock at |cFFFFFFFF38.8, 64.3|r, or Stonehead will fling you away when you try to approach the quest.",
+					["coord"] = { 39.2, 65.2, 1525 },
+				}),
 				q(58932, {	-- Temel, the Sin Herald
 					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
 					["description"] = "Automatically offered after Echelon drops you off during Inquisitor Stelia's Sinstone.",
