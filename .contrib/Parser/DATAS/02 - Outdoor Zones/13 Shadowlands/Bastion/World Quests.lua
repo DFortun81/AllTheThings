@@ -40,6 +40,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61629, {	-- Enchanting: True Aim
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+					["requireSkill"] = ENCHANTING,
+				}),
 				q(61520, {	-- Enemy of My Mnemis
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
