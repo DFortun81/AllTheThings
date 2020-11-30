@@ -1075,7 +1075,7 @@ _.WorldEvents =
 											["races"] = HORDE_ONLY,
 										}),
 										i(171613, {	-- Sunwalker Legguards
-											["races"] = HORE_ONLY,
+											["races"] = HORDE_ONLY,
 										}),
 										i(171590, {	-- The Grinder
 											["races"] = ALLIANCE_ONLY,

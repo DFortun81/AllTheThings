@@ -93,7 +93,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 					125, -- Dalaran: Northrend
 				},
 				["isBreadcrumb"] = true,
-				["races"] = ALLIANCE_ONLY,
 			}),
 			q(29400, {	-- A Season for Celebration (Horde)
 				["providers"] = {
@@ -120,7 +119,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 					125, -- Dalaran: Northrend
 				},
 				["isBreadcrumb"] = true,
-				["races"] = HORDE_ONLY,
 			}),
 			q(29377, {	-- A Time to Break Down
 				["provider"] = { "n", 15197 },	-- Darkcaller Yanka

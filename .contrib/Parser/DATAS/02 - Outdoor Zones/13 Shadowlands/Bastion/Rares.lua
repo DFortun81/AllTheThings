@@ -30,10 +30,12 @@ _.Zones =
 						{ 39.13, 20.40, 1533 },	-- Vesper of Wisdom
 						{ 32.16, 17.82, 1533 },	-- Vesper of Loyalty
 					},
-					["crs"] = { 170834 },	-- Champion of Purity,
-					["crs"] = { 170835 },	-- Champion of Courage,
-					["crs"] = { 170833 },	-- Champion of Wisdom,
-					["crs"] = { 170836 },	-- Champion of Humility,
+					["crs"] = { 
+						170834,	-- Champion of Purity
+						170835,	-- Champion of Courage	
+						170833,	-- Champion of Wisdom
+						170836,	-- Champion of Humility
+					},
 					["g"] = {
 						i(183741),	-- Ascended Skymane
 						n(170832, { -- Champion of Loyalty

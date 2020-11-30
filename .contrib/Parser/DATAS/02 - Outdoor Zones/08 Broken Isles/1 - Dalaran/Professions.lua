@@ -109,7 +109,7 @@ _.Zones =
 							PRIEST,
 							ROGUE,
 						},
-						["races"] = { NIGHELF, VOIDELF, WORGEN },
+						["races"] = { NIGHTELF, VOIDELF, WORGEN },
 					}),
 					q(39327, {	-- There's a Scribe for That
 						["sourceQuests"] = { 39390 },	-- A Mysterious Text

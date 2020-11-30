@@ -127,7 +127,6 @@ _.Zones =
 									},
 								}),
 							},
-							["collectible"] = false,
 						}),
 						faction(934, {	-- The Scryers
 							["collectible"] = false,
@@ -251,7 +250,6 @@ _.Zones =
 									},
 								}),
 							},
-							["collectible"] = false,
 						}),
 					}),
 					crit(2, {		-- The Violet Tower

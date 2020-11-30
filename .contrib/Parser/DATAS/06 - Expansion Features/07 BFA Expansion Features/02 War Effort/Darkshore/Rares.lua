@@ -11,7 +11,7 @@ _.ExpansionFeatures =
 					n(RARES, {
 						["g"] = {
 							n(149652, {	-- Agathe Wyrmwood [A Only]
-								["questID"] = 54889,	-- Agathe Wyrmwood [Alliance]
+								-- ["questID"] = 54889,	-- Agathe Wyrmwood [Alliance]
 								["races"] = ALLIANCE_ONLY,
 								["questID"] = 54883,
 								["isWeekly"] = true,
@@ -74,7 +74,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							n(149141, {	-- Burninator Mark V [A Only]
-								["questID"] = 54451,	-- Burninator Mark V [Alliance]
+								-- ["questID"] = 54451,	-- Burninator Mark V [Alliance]
 								["races"] = ALLIANCE_ONLY,
 								["cr"] = 148497,	-- When he spawns as a WQ
 								["questID"] = 54768,
@@ -87,7 +87,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							n(147845, {	-- Commander Drald [A Only]
-								["questID"] = 54251,	-- Commander Drald [Alliance]
+								-- ["questID"] = 54251,	-- Commander Drald [Alliance]
 								["races"] = ALLIANCE_ONLY,
 								["questID"] = 54309,
 								["isWeekly"] = true,
@@ -116,7 +116,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							n(149655, {	-- Croz Bloodrage [A Only]
-								["questID"] = 54891,	-- Croz Bloodrage [Alliance]
+								-- ["questID"] = 54891,	-- Croz Bloodrage [Alliance]
 								["races"] = ALLIANCE_ONLY,
 								["questID"] = 54886,
 								["isWeekly"] = true,
@@ -203,7 +203,7 @@ _.ExpansionFeatures =
 								["coord"] = { 44.03, 48.21, 62 },
 							}),
 							n(147701, {	-- Moxo The Beheader [A Only]
-								["questID"] = 54430,	-- Moxo The Beheader [Alliance]
+								-- ["questID"] = 54430,	-- Moxo The Beheader [Alliance]
 								["races"] = ALLIANCE_ONLY,
 								["questID"] = 54277,
 								["isWeekly"] = true,
@@ -235,7 +235,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							n(149659, {	-- Orwell Stevenson [A Only]
-								["questID"] = 54890,	-- Orwell Stevenson [Alliance]
+								-- ["questID"] = 54890,	-- Orwell Stevenson [Alliance]
 								["races"] = ALLIANCE_ONLY,
 								["questID"] = 54889,
 								["isWeekly"] = true,
@@ -315,7 +315,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							n(147664, {	-- Zim'kaga [A Only]
-								["questID"] = 54290,	-- Zimkaga [Alliance]
+								-- ["questID"] = 54290,	-- Zimkaga [Alliance]
 								["races"] = ALLIANCE_ONLY,
 								["questID"] = 54274,
 								["isWeekly"] = true,

@@ -457,7 +457,7 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un2, i(4746),	-- Doomsayer's Robe
+						un(REMOVED_FROM_GAME, i(4746)),	-- Doomsayer's Robe
 					},
 				}),
 				q(716,   {	-- Stone Is Better than Cloth

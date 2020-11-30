@@ -45,7 +45,6 @@ _.Zones =
 					["coord"] = { 77.4, 19.6, 118 },
 					["provider"] = { "n", 66675 },	-- Major Payne
 					["isDaily"] = true,
-					["coord"] = { 77.4, 19.6, 118 },
 				}),
 			}),
 		}),

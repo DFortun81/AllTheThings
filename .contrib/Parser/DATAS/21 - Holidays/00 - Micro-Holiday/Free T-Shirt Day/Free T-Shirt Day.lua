@@ -49,7 +49,7 @@ _.Holidays =
 				}),
 				n(150942, {	-- Stormwind Entertainer
 					["description"] = "This NPC wanders around in Stormwind and shoots T-Shirts on the ground where you can pick them up.",
-					["races"] = ALIIANCE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["u"] = 22,
 					["g"] = {
 						un(22, i(167183)),	-- Amber Filigreed Doublet

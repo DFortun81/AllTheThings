@@ -192,6 +192,9 @@ NEVER_IMPLEMENTED = 1;
 REMOVED_FROM_GAME = 2;
 BLIZZARD_BALANCE = 35;
 
+-- Map IDs used in ATT-Classic which don't exist in Live
+STRANGLETHORN_VALE = nil;	-- 1434 Classic
+
 ItemClassInfo = {
 	{
 		"Soul Bag", -- [1]

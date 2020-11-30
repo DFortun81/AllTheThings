@@ -42,7 +42,7 @@ _.Zones =
 							["races"] = { GOBLIN },
 						}),
 						p(55, {	-- Undercity Cockroach
-							["races"] = { UNDEAD },s
+							["races"] = { UNDEAD },
 						}),
 					},
 				}),
