@@ -8,23 +8,32 @@ end
 -- Anima Items
 i(184381);	-- Astral Sapwood
 i(184773);	-- Battle-Tested Armor Component
+i(184150);	-- Bonded Tallow Candles
+i(184152);	-- Bottle of Diluted Anima-Wine
 i(181541);	-- Celestial Acorn
 i(184768);	-- Censer of Dried Gracepetals
 i(184766);	-- Chronicles of the Paragons
 i(181552);	-- Collected Tithe
 i(184148);	-- Concealed Sinvyr Flask
+i(181544);	-- Confessions of Misdeed
+i(184363);	-- Considerations on Courage
 i(184151);	-- Counterfeit Ruby Brooch
+i(181551);	-- Depleted Stoneborn Heart
 i(181645);	-- Engorged Monstrosity's Heart
 i(184294);	-- Ethereal Ambrosia
 i(181744);	-- Forgelite Ember
 i(181745);	-- Forgesmith's Coal
+i(184384);	-- Hibernal Sproutling
 i(181550);	-- Hopebreaker's Field Injector
 i(184387);	-- Misty Shimmerleaf
 i(181547);	-- Noble's Draught
 i(181649);	-- Preserved Preternatural Braincase
 i(184769);	-- Pressed Torchlily Blossom
 i(184771);	-- Remembrance Parchment Ash
+i(184770);	-- Roster of the Forgotten
 i(184293);	-- Sanctified Skylight Leaf
+i(184146);	-- Singed Soul Shackles
+i(184389);	-- Slumbering Starseed
 i(181479);	-- Starlight Catcher
 i(184519);	-- Totem of Stolen Mojo
 
@@ -277,6 +286,7 @@ i(9282);	-- Blue Punch Card
 i(160364);	-- Bunch of Berries
 i(171987);	-- Champions of Azeroth Survival Kit
 i(173789);	-- Cross Bun
+i(179535);	-- Crumbling Pride Extractors
 i(6351);	-- Dented Crate
 i(173788);	-- Dusty Bun
 i(2460);	-- Elixir of Tongues

@@ -7,6 +7,9 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1648, {	-- The Maw
 			n(ACHIEVEMENTS, {
+				ach(14744, {	-- Better to Be Lucky Than Dead
+					ach(14743),	-- Deadly Serious
+				}),
 				ach(14761, {	-- Deciphering Death's Intentions
 				--	TODO: reevaluate organization of this, maybe in january?
 				--	some of these don't have any known sources yet.  some come from 20 mobs, a mix of rare and normal.  some come from a specific mob.

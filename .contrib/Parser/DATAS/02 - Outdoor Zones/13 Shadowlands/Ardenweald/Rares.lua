@@ -8,9 +8,9 @@ _.Zones =
 		m(1565, {	-- Ardenweald
 			n(RARES, {
 				n(164477, {	-- Deathbinder Hroth
-					["coord"] = { 34.6, 68.0, 1565 },
 					["questID"] = 59226,
 					["isDaily"] = true,
+					["coord"] = { 34.6, 68.0, 1565 },
 					["g"] = {
 						crit(1, {	-- Deathbinder Hroth
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -273,13 +273,14 @@ _.Zones =
 					["g"] = {
 					--	TODO: add remaining questIDs + loot, figure out which are first-time kills and which are daily kills, if that applies
 					--	it looks like maybe only one is available per day, so they possibly share a 'daily kill' ID and have a 'loot' quest tracker, or tracking their achievement criteria
-						--[[
 						n(166135, {	-- Astra, As Azshara <An Infamous Queen>
-							["questID"] = ,
+							["questID"] = 61201,
 							["isDaily"] = true,
 							["g"] = {
+								i(179518),	-- Glimmerlight Staff
 							},
 						}),
+						--[[
 						n(166145, {	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>
 							["questID"] = ,
 							["isDaily"] = true,

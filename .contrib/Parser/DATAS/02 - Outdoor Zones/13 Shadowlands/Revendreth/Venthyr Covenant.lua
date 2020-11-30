@@ -22,6 +22,25 @@ _.Zones =
 							-- Conduits
 							i(182136),	-- Chilled to the Core [Shaman-Enhance]
 						}),--]]
+						q(62691, {	-- A Calling in Revendreth
+							["sourceQuests"] = { 62695 },	-- A Call to Service
+							["repeatable"] = true,	-- ??
+							["provider"] = { "n", 165302 },	-- Rendle
+							["coord"] = { 61.6, 75.6, 1700 },	-- Sinfall Depths
+							["g"] = {
+								i(181556, {	-- Tribute of the Court
+									--[[ Might be Necro's only
+									i(184159, {	-- Oozing Necroray Egg (Timer)
+										i(184158, {	-- Oozing Necroray Egg (No Timer)
+											i(184160),	-- Bulbous Necroray
+											i(184161),	-- Infested Necroray
+											i(184162),	-- Pestilent Necroray
+										}),
+									}),
+									--]]
+								}),
+							},
+						}),
 						q(60389, {	-- Aiding Ardenweald
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 165302 },	-- Rendle
@@ -312,25 +331,6 @@ _.Zones =
 						["provider"] = { "n", 175772 },	-- Rahel
 						["coord"] = { 54.0, 27.2, 1699 },	-- Sinfall Reaches
 					}),
-					q(62691, {	-- A Calling in Revendreth
-						["sourceQuests"] = { 62695 },	-- A Call to Service
-						["repeatable"] = true,	-- ??
-						["provider"] = { "n", 165302 },	-- Rendle
-						["coord"] = { 61.6, 75.6, 1700 },	-- Sinfall Depths
-						["g"] = {
-							i(181556, {	-- Tribute of the Court
-								--[[ Might be Necro's only
-								i(184159, {	-- Oozing Necroray Egg (Timer)
-									i(184158, {	-- Oozing Necroray Egg (No Timer)
-										i(184160),	-- Bulbous Necroray
-										i(184161),	-- Infested Necroray
-										i(184162),	-- Pestilent Necroray
-									}),
-								}),
-								--]]
-							}),
-						},
-					}),
 					q(62914, {	-- A Coalition of the Willing
 						["sourceQuests"] = { 62870 },	-- Souls for Sinfall
 						["provider"] = { "n", 164738 },	-- Tenaval
@@ -347,7 +347,7 @@ _.Zones =
 						["coord"] = { 45.3, 30.3, 1700 },	-- Sinfall Depths
 					}),
 					q(62902, {	-- Anima is Power
-						["sourceQuests"] = { 62691 },	-- A Calling in Revendreth
+						["description"] = "Becomes available after you complete your first Calling quest.",
 						["provider"] = { "n", 165302 },	-- Rendle
 						["coord"] = { 61.6, 75.7, 1700 },	-- Sinfall Depths
 					}),
@@ -439,6 +439,13 @@ _.Zones =
 							i(181840),	-- Light's Inspiration
 							i(181962),	-- Mental Recovery
 						},
+					}),
+					q(57918, {	-- The Absolution of Souls
+					--	TODO: may need to be marked as altQuests with 58093, "Our Forgotten Purpose," non-Venthyr version, if they don't complete each other
+					--	["sourceQuests"] = {  },	-- ??
+						["isBreadcrumb"] = true,
+						["provider"] = { "n", 165291 },	-- The Accuser
+						["coord"] = { 56.0, 76.8, 1700 },	-- Sinfall Depths
 					}),
 					q(62857, {	-- The Court's Bounty
 						["sourceQuests"] = { 62856 },	-- Building Your Renown

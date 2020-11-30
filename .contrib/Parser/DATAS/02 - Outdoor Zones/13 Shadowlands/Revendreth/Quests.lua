@@ -12,6 +12,11 @@ _.Zones =
 					["provider"] = { "n", 165859 },	-- Dimwiddle
 					["coord"] = { 60.7, 62.5, 1525 },
 				}),
+				q(59714, {	-- A Fine Vintage
+					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
+					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
+					["coord"] = { 59.9, 68.9, 1525 },
+				}),
 				q(59232, {	-- A Lesson in Humility
 					["sourceQuests"] = { 57182 },	-- The Accuser's Fate
 					["provider"] = { "n", 156381 },	-- Sire Denathrius
@@ -38,11 +43,22 @@ _.Zones =
 					["provider"] = { "n", 168455 },	-- Sabina
 					["coord"] = { 35.0, 53.9, 1525 },
 				}),
+				q(58062, {	-- A Very Special Guest
+					["sourceQuests"] = { 58060 },	-- The Night Market
+					["description"] = "Unlocks the Black Market Auction House.",
+					["provider"] = { "n", 160091 },	-- Ta'ruca
+					["coord"] = { 51.0, 78.6, 1525 },
+				}),
 				q(58996, {	-- Abel's Fate
 				--	TODO: figure out SQs.  i think it's somewhere between "the penitent hunt"+"devour this" and "a reflection of truth," because i saw it while on "dredhollow."
 				--	this doesn't require turning in "hunting trophies," the other quest the NPC provides - i went to him to turn it in and he had this other quest to offer me.
 					["provider"] = { "n", 156384 },	-- Huntmaster Constantin
 					["coord"] = { 48.5, 68.5, 1525 },
+				}),
+				q(59713, {	-- Active Ingredients
+					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
+					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
+					["coord"] = { 59.9, 68.9, 1525 },
 				}),
 				q(58941, {	-- Alpha Bat
 					["sourceQuests"] = { 58916 },	-- Dread Priming
@@ -66,7 +82,16 @@ _.Zones =
 				q(57531, {	-- An Unfortunate Situation
 					["sourceQuests"] = { 60051 },	-- A Master of Their Craft
 					["provider"] = { "n", 158038 },	-- Laurent
-					["coord"] = { 26.3, 49.0, 1525 },	-- Revendreth
+					["coord"] = { 26.3, 49.0, 1525 },
+				}),
+				q(60178, {	-- And Then There Were None
+					["sourceQuests"] = { 60177 },	-- Reason for the Treason
+					["provider"] = { "n", 167489 },	-- Lajos
+					["coord"] = { 62.2, 61.3, 1525 },
+					["g"] = {
+						i(175766),	-- Ilka's Hunting Cloak
+						i(175737),	-- Samu's Inkwell Pendant
+					},
 				}),
 				q(58433, {	-- Anima Attrition
 					["sourceQuests"] = { 56942 },	-- On The Road Again
@@ -107,6 +132,21 @@ _.Zones =
 					["provider"] = { "n", 157588 },	-- Lost Sybille
 					["coord"] = { 37.0, 63.0, 1525 },
 				}),
+				q(59716, {	-- Comfortably Numb
+					["sourceQuests"] = { 59715 },	-- Message for Matyas
+					["provider"] = { "n", 166081 },	-- Taskmaster Matyas
+					["coord"] = { 60.1, 69.4, 1525 },
+					["g"] = {
+						i(175496),	-- Pantaloons of Pained Absolution
+						i(175498),	-- Nightcloaked Pants
+						i(175497),	-- Soul Hunter's Legguards
+						i(175495),	-- Stoneforged Greaves
+						i(175415),	-- Vestments of Pained Absolution
+						i(175418),	-- Nightcloaked Vest
+						i(175417),	-- Soul Hunter's Hauberk
+						i(175416),	-- Stoneforged Chestplate
+					},
+				}),
 				q(57164, {	-- Devour This
 					["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
 					["provider"] = { "n", 168664 },	-- The Fearstalker
@@ -116,6 +156,11 @@ _.Zones =
 					["sourceQuests"] = { 57098 },	-- The Grove of Terror
 					["provider"] = { "n", 169087 },	-- The Fearstalker
 					["coord"] = { 50.6, 73.8, 1525 },
+				}),
+				q(57474, {	-- Dredger Duty
+					["sourceQuests"] = { 57471 },	-- It's a Dirty Job
+					["provider"] = { "n", 157846 },	-- Rendle
+					["coord"] = { 72.5, 73.2, 1525 },
 				}),
 				q(60313, {	-- Dredhollow
 					["sourceQuests"] = { 57159 },	-- A Reflection of Truth
@@ -139,12 +184,27 @@ _.Zones =
 						57534,	-- When Only Ash Remains
 					},
 					["provider"] = { "n", 158205 },	-- Laurent
-					["coord"] = { 24.2, 49.4, 1525 },	-- Revendreth
+					["coord"] = { 24.2, 49.4, 1525 },
+				}),
+				q(59846, {	-- Finders-Keepers, Sinners-Weepers
+					["sourceQuests"] = { 59712 },	-- The Lay of the Land
+					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
+					["coord"] = { 59.9, 68.9, 1525 },
+					["g"] = {
+						i(178067),	-- Mitts of Pained Absolution
+						i(178071),	-- Amice of Pained Absolution
+						i(178065),	-- Nightcloaked Mitts
+						i(178069),	-- Nightcloaked Mantle
+						i(178068),	-- Soul Hunter's Gloves
+						i(178072),	-- Soul Hunter's Shoulderguards
+						i(178066),	-- Stoneforged Gloves
+						i(178070),	-- Stoneforged Mantle
+					},
 				}),
 				q(57532, {	-- Foraging for Fragments
 					["sourceQuests"] = { 57531 },	-- An Unfortunate Situation
 					["provider"] = { "n", 158038 },	-- Laurent
-					["coord"] = { 26.3, 49.0, 1525 },	-- Revendreth
+					["coord"] = { 26.3, 49.0, 1525 },
 				}),
 				q(59021, {	-- Herald Their Demise
 					["sourceQuests"] = {
@@ -203,6 +263,30 @@ _.Zones =
 					["provider"] = { "n", 168698 },	-- Chiselgrump
 					["coord"] = { 69.5, 53.3, 1525 },
 				}),
+				q(57471, {	-- It's a Dirty Job
+					["sourceQuests"] = { 60509 },	-- Not My Job
+					["provider"] = { "n", 157846 },	-- Rendle
+					["coord"] = { 72.5, 73.2, 1525 },
+				}),
+				q(59726, {	-- It's a Trap
+					["sourceQuests"] = {
+						59868,	-- Offer of Freedom
+						59724,	-- The Field of Honor
+					},
+					["provider"] = { "n", 166616 },	-- Nadjia the Mistblade
+					["coord"] = { 60.2, 78.6, 1525 },
+					["g"] = {
+						i(178057),	-- Nobleman's Quickblade
+						i(178058),	-- Cavalier's Morningstar
+						i(178056),	-- Stonevigil Rapier
+						i(178055),	-- Briarbane Glaive
+						i(178054),	-- Briarbane Carbine
+						i(178059),	-- Sacred Morningstar
+						i(178053),	-- Thicket Sweeper
+						i(178060),	-- Briarbane Halberd
+						i(177640),	-- Sinstealer's Staff
+					},
+				}),
 				q(59014, {	-- King of the Hill
 					["sourceQuests"] = { 58941 },	-- Alpha Bat
 					["provider"] = { "n", 163221 },	-- Flockmaster Sergio
@@ -216,7 +300,7 @@ _.Zones =
 				q(57533, {	-- Light Punishment
 					["sourceQuests"] = { 57571 },	-- Moving Mirrors
 					["provider"] = { "n", 158088 },	-- Simone
-					["coord"] = { 24.2, 49.4, 1525 },	-- Revendreth
+					["coord"] = { 24.2, 49.4, 1525 },
 				}),
 				q(57442, {	-- Lost in the Desiccation
 					["sourceQuests"] = {
@@ -226,13 +310,21 @@ _.Zones =
 					},
 					["provider"] = { "n", 157650 },	-- Theotar
 				}),
+				q(59715, {	-- Message for Matyas
+					["sourceQuests"] = {
+						59714,	-- A Fine Vintage
+						59713,	-- Active Ingredients
+					},
+					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
+					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
+				}),
 				q(57536, {	-- Mirror Making, Not Breaking
 					["sourceQuests"] = {
 						57535,	-- Escaping the Master
 						59427,	-- We Need More Power
 					},
 					["provider"] = { "n", 158205 },	-- Laurent
-					["coord"] = { 24.2, 49.4, 1525 },	-- Revendreth
+					["coord"] = { 24.2, 49.4, 1525 },
 					["g"] = {
 						i(175733),	-- Brimming Ember Shard
 						i(177657),	-- Overflowing Ember Mirror
@@ -241,7 +333,7 @@ _.Zones =
 				q(57571, {	-- Moving Mirrors
 					["sourceQuests"] = { 57532 },	-- Foraging for Fragments
 					["provider"] = { "n", 158205 },	-- Laurent
-					["coord"] = { 24.2, 49.3, 1525 },	-- Revendreth
+					["coord"] = { 24.2, 49.3, 1525 },
 				}),
 				q(57426, {	-- My Terrible Morning
 					["sourceQuests"] = { 57405 },	-- Chasing Madness
@@ -259,6 +351,14 @@ _.Zones =
 					["provider"] = { "n", 158057 },	-- Rendle
 					["coord"] = { 67.5, 68.5, 1525 },
 				}),
+				q(59868, {	-- Offer of Freedom
+					["sourceQuests"] = { 59716 },	-- Comfortably Numb
+					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
+					["coord"] = { 60.1, 69.2, 1525 },
+					["g"] = {
+						i(178077),	-- Briarbane Signet
+					},
+				}),
 				q(56942, {	-- On The Road Again
 					["sourceQuests"] = {
 						56829,	-- Bottom Feeders
@@ -266,6 +366,13 @@ _.Zones =
 					},
 					["provider"] = { "n", 155668 },	-- Rendle
 					["coord"] = { 65.3, 66.2, 1525 },
+				}),
+				q(58093, {	-- Our Forgotten Purpose
+				--	there is also a Venthyr-only version of this breadcrumb, #57918, "The Absolution of Souls."  that version references "returning" to Halls of Atonement, but this version was available before i had stepped foot in any SL dungeon
+				--	["sourceQuests"] = {  },	-- TODO: unknown.  possibly just requires 60
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 160248 },	-- Archivist Fane
+					["coord"] = { 72.9, 52.0, 1525 },
 				}),
 				q(57689, {	-- Prince Renathal
 					["sourceQuests"] = { 59327 },	-- In the Ruin of Rebellion
@@ -304,6 +411,17 @@ _.Zones =
 					["provider"] = { "n", 162688 },	-- Prince Renathal
 					["coord"] = { 25.8, 57.1, 1699 },	-- Sinfall Reaches
 				}),
+				q(57481, {	-- Running a Muck
+					["sourceQuests"] = { 57477 },	-- We're Gonna Need a Bigger Dredger
+					["provider"] = { "n", 157898 },	-- Bootus
+					["coord"] = { 72.8, 73.9, 1525 },
+					["g"] =  {
+						i(177656),	-- Boot-a-Charge Flyers
+						i(177655),	-- Air Bootuses
+						i(177654),	-- Bootus Shocks
+						i(177653),	-- Bootus Hardeneds
+					},
+				}),
 				q(57724, {	-- Securing Sinfall
 					["sourceQuests"] = { 60566 },	-- Into the Light
 					["provider"] = { "n", 169105 },	-- Breakfist
@@ -333,6 +451,10 @@ _.Zones =
 					["sourceQuests"] = { 59023 },	-- Ending the Inquisitor
 					["provider"] = { "n", 164166 },	-- Echelon
 					["coord"] = { 65.9, 47.1, 1525 },
+				}),
+				q(58327, {	-- Snacks for Stonehead
+					["description"] = "Pick up the Hollow Rock at |cFFFFFFFF38.8, 64.3|r, or Stonehead will fling you away when you try to approach the quest.",
+					["coord"] = { 39.2, 65.2, 1525 },
 				}),
 				q(58932, {	-- Temel, the Sin Herald
 					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
@@ -393,6 +515,11 @@ _.Zones =
 						i(175484),	-- Stoneforged Sabatons
 					},
 				}),
+				q(59724, {	-- The Field of Honor
+					["sourceQuests"] = { 59716 },	-- Comfortably Numb
+					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
+					["coord"] = { 60.1, 69.2, 1525 },
+				}),
 				q(57381, {	-- The Greatest Duelist
 					["sourceQuests"] = { 57007 },	-- Invitation of the Master
 					["provider"] = { "n", 157550 },	-- Nadjia the Mistblade
@@ -405,6 +532,11 @@ _.Zones =
 					["sourceQuests"] = { 59232 },	-- A Lesson in Humility
 					["provider"] = { "n", 156381 },	-- Sire Denathrius
 					["coord"] = { 53.4, 63.9, 1525 },
+				}),
+				q(59712, {	-- The Lay of the Land
+					["sourceQuests"] = { 59710 },	-- A Curious Invitation
+					["provider"] = { "n", 169238 },	-- Courier Araak
+					["coord"] = { 59.5, 66.7, 1525 },
 				}),
 				q(57178, {	-- The Master Awaits
 					["sourceQuests"] = { 58654 },	-- A Plea to the Harvesters
@@ -426,6 +558,10 @@ _.Zones =
 						i(175481),	-- Stoneforged Hauberk
 						i(175479),	-- Stoneforged Cover
 					},
+				}),
+				q(58060, {	-- The Night Market
+					["provider"] = { "n", 160100 },	-- Provisioner Dracho
+					["coord"] = { 61.0, 39.6, 1525 },
 				}),
 				q(57136, {	-- The Penitent Hunt
 					["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
@@ -518,12 +654,17 @@ _.Zones =
 						57534,	-- When Only Ash Remains
 					},
 					["provider"] = { "n", 158088 },	-- Simone
-					["coord"] = { 24.2, 49.4, 1525 },	-- Revendreth
+					["coord"] = { 24.2, 49.4, 1525 },
+				}),
+				q(57477, {	-- We're Gonna Need a Bigger Dredger
+					["sourceQuests"] = { 57474 },	-- Dredger Duty
+					["provider"] = { "n", 157846 },	-- Rendle
+					["coord"] = { 72.5, 73.2, 1525 },
 				}),
 				q(57534, {	-- When Only Ash Remains
 					["sourceQuests"] = { 57571 },	-- Moving Mirrors
 					["provider"] = { "n", 158205 },	-- Laurent
-					["coord"] = { 24.2, 49.4, 1525 },	-- Revendreth
+					["coord"] = { 24.2, 49.4, 1525 },
 					["g"] = {
 						i(175507),	-- Bindings of Pained Absolution
 						i(175510),	-- Nightcloaked Bracers
@@ -582,27 +723,6 @@ _.Zones =
 					}),
 					-- Mirror Network
 				}),
-				q(58062, {	-- A Very Special Guest
-					["provider"] = { "n", 160091 },	-- Ta'ruca
-					-- ["coord"] = { ##, ##, 1525 },
-					["sourceQuests"] = { 58060 },	-- The Night Market
-				}),
-				q(59716, {	-- Comfortably Numb
-				--	TODO: add missing information, verify that both pants + chest come from this quest
-				--	["sourceQuests"] = {  },	-- 
-				--	["provider"] = { "n",  },	-- 
-				--	["coord"] = { , , 1525 },
-					["g"] = {
-						i(175496),	-- Pantaloons of Pained Absolution
-						i(175498),	-- Nightcloaked Pants
-						i(175497),	-- Soul Hunter's Legguards
-						i(175495),	-- Stoneforged Greaves
-						i(175415),	-- Vestments of Pained Absolution
-						i(175418),	-- Nightcloaked Vest
-						i(175417),	-- Soul Hunter's Hauberk
-						i(175416),	-- Stoneforged Chestplate
-					},
-				}),
 				q(62189, {	-- Parasol Components
 					["provider"] = { "o", 349798 },	-- Smuggled Cache
 					["coord"] = { 31.1, 55.1, 1525 },
@@ -616,50 +736,9 @@ _.Zones =
 					-- ["sourceQuests"] = { },
 					["isWeekly"] = true,
 				})),
-				q(58060, {	-- The Night Market
-					["provider"] = { "n", 160100 },	-- Provisioner Dracho
-					-- ["coord"] = { ##, ##, 1525 },
-					-- ["sourceQuests"] = {  },
-				}),
 				-- End of Zone Achievement Quests
 				-- The Duelist's Debt
 				-- Tithes of Darkhaven
-				q(60178, {	-- And Then There Were None
-					["provider"] = { "n", 167489 },	-- Lajos
-					["coord"] = { 62.2, 61.3, 1525 },
-					["sourceQuests"] = { 60177 },	-- Reason for the Treason
-					["g"] = {
-						i(175766),	-- Ilka's Hunting Cloak
-						i(175737),	-- Samu's Inkwell Pendant
-					},
-				}),
-				-- Dirty Jobs
-				q(57471, {	-- It's a Dirty Job
-					["provider"] = { "n", 157846 },	-- Rendle
-					["coord"] = { 72.5, 73.2, 1525 },
-					["sourceQuests"] = { 60509 },	-- Not My Job
-				}),
-				q(57474, {	-- Dredger Duty
-					["provider"] = { "n", 157846 },	-- Rendle
-					["coord"] = { 72.5, 73.2, 1525 },
-					["sourceQuests"] = { 57471 },	-- It's a Dirty Job
-				}),
-				q(57477, {	-- We're Gonna Need a Bigger Dredger
-					["provider"] = { "n", 157846 },	-- Rendle
-					["coord"] = { 72.5, 73.2, 1525 },
-					["sourceQuests"] = { 57474 },	-- Dredger Duty
-				}),
-				q(57481, {	-- Running a Muck
-					["provider"] = { "n", 157898 },	-- Bootus
-					["coord"] = { 72.8, 73.9, 1525 },
-					["sourceQuests"] = { 57477 },	-- We're Gonna Need a Bigger Dredger
-					["g"] =  {
-						i(177656),	-- Boot-a-Charge Flyers
-						i(177655),	-- Air Bootuses
-						i(177654),	-- Bootus Shocks
-						i(177653),	-- Bootus Hardeneds
-					},
-				}),
 				-- The Final Atonement
 				-- Revelations of the Light
 				-- Bonus Objective

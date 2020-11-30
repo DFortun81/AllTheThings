@@ -24,6 +24,7 @@ _.Zones =
 						{ 27.5, 11.9, 1525 },
 						{ 30.3, 24.8, 1525 },
 						{ 32.0, 19.0, 1525 },
+						{ 33.8, 29.0, 1525 },
 					},
 					["g"] = {
 						i(180592),	-- Trapped Stonefiend
@@ -62,11 +63,24 @@ _.Zones =
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 71.3, 80.2, 1525 },
 				}),
+				o(354116, {	-- Pugilist's Prize
+					["description"] = "Defeat the mobs to make the treasure lootable.",
+					["questID"] = 60705,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 35.8, 67.5, 1525 },
+				}),
 				o(354123, {	-- Pugilist's Prize
 					["description"] = "Defeat the mobs to make the treasure lootable.",
 					["questID"] = 60953,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 48.7, 63.8, 1525 },
+				}),
+				o(1278968750, {	-- Secret Treasure
+				--	TODO: fix objectID when data becomes available
+					["description"] = "Find the small alcove at |cFFFFFFFF65.7, 42.9|r.  On the wall behind a dark red oval rug is a single |cFFFFFFFFFlickering Candle|r.  Click it to open up a secret passage beneath the rug.  To exit after you collect the treasure, click the candle on the right-hand side of the stairs where you entered.",
+					["questID"] = 60197,
+					["isDaily"] = true,	-- repeatable??
+					["coord"] = { 66.5, 42.8, 1525 },
 				}),
 				o(351540, {	-- Secret Treasure
 					["questID"] = 60196,
@@ -87,7 +101,7 @@ _.Zones =
 					["coord"] = { 75.8, 77.3, 1525 },
 				}),
 				o(354113, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.  it's probably this one or 354111, the only ones that didn't have confirmed locations so far
+				--	TODO: verify objectID.
 					["description"] = "You can jump down from the ledge above or use the Bounding Shroom at 52.5, 59.2 to reach the treasure.",
 					["questID"] = 60983,
 					["isDaily"] = true,	-- repeatable?
@@ -99,13 +113,13 @@ _.Zones =
 					},
 				}),
 				o(354111, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.  it's probably this one or 354111, the only ones that didn't have confirmed locations so far
+				--	TODO: verify objectID.
 					["questID"] = 60941,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 75.4, 39.0, 1525 },
 				}),
-				o(354111, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.  it's probably this one or 354111, the only ones that didn't have confirmed locations so far
+				o(1278968752, {	-- Stoneborn Satchel
+				--	TODO: verify objectID.
 					["questID"] = 60942,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 55.3, 42.3, 1525 },
@@ -122,11 +136,17 @@ _.Zones =
 						}),
 					},
 				}),
-				o(354111, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.  it's probably this one or 354111, the only ones that didn't have confirmed locations so far
+				o(1278968753, {	-- Stoneborn Satchel
+				--	TODO: verify objectID.
 					["questID"] = 60982,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 58.1, 67.3, 1525 },
+				}),
+				o(1278968754, {	-- Stoneborn Satchel
+				--	TODO: verify objectID.
+					["questID"] = 60980,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 44.3, 77.9, 1525 },
 				}),
 			}),
 		}),

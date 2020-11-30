@@ -3008,10 +3008,14 @@ _.HiddenQuestTriggers =
 		q(62167),	-- Bookkeeper Mnemis secondary quest along with 59022
 		q(63421),	-- Nemaeus secondary quest
 		q(63423),	-- Sigilback secondary quest
+		q(62197),	-- Wingflayer the Cruel secondary quest
 		q(62201),	-- triggers when killing Herculon, which drops Functioning Anima Core.  based on the fact that the questID for the core is 62200, i think this + 62202 are tracking chances at it dropping
 		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
 		--	Bastion WQs
 		q(63263),	-- triggered after completing the WQ #60911, "Flight School: Flapping Frenzy"
+		--	Kyrian Covenant
+		q(63216),	-- triggers when turning in #57897, "Dangerous to Go Alone"
+		q(62755),	-- triggers when turning in #57904, "Our Eternal Charge"
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
@@ -3076,9 +3080,12 @@ _.HiddenQuestTriggers =
 		q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
 		q(62908),	-- triggered after collecting 5 souls during "Rule 1: Have an Escape Plan"
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
-		q(63414),	-- Wrath of the Jailer weekly event
 		q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
 		q(63377),	-- First kill of Soulsmith Yor-Mattar (bonus objective 59441)
+		-- The Maw rares
+		q(63373),	-- Dartanos secondary quest
+		q(63374),	-- Razkazzar secondary quest
+		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
 
 		-- Torghast
 		q(58192),	-- Triggered after killing The Grand Malleare to complete The Soulforges
