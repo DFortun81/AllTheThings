@@ -49,7 +49,7 @@ _.Zones =
 				}),
 				ach(14798, {	-- Sojourner of Revendreth
 					crit(1, {	-- The Duelist's Debt
-						["sourceQuests"] = { 59868 },	-- Offer of Freedom
+						["sourceQuests"] = { 59726 },	-- It's a Trap
 					}),
 					crit(2, {	-- Tithes of Darkhaven
 						["sourceQuests"] = { 60178 },	-- And Then There Were None
