@@ -77,6 +77,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61787, {	-- Micro Defense Force
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61467, {	-- Mining: Luminous Solenium Cluster
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

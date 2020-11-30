@@ -32,6 +32,7 @@ _.PetJournal =
 		p(75),				-- Black Kingsnake
 		p(42),				-- Black Tabby Cat
 		p(1743),			-- Black-Footed Fox Kit
+		p(3050),			-- Bleak Skitterer
 		p(2388),			-- Bloodfever Tarantula
 		p(2965),			-- Bloodfeaster Spiderling
 		p(2451),			-- Bloodstone Tunneler

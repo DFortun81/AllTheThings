@@ -7,6 +7,10 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
 			n(-34,  {	-- World Quests
+				q(59703, {	-- Abombing Run
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61352, {	-- All Will Be Consumed
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

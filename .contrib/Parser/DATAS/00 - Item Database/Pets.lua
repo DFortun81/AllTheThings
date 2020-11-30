@@ -897,7 +897,6 @@ pet(183193, 3030);	-- Ashen Chomper
 --pet(183853, );	-- Baby Sinfall Screecher
 pet(181268, 2958);	-- Backbone
 pet(183854, 3011);	-- Battie's Pendant // Battie
---pet(, 3050);	-- Bleak Skitterer
 pet(181315, 2965);	-- Bloodfeaster Spiderling
 pet(182606, 3013);	-- Bloodlouse Larva
 pet(180584, 2891);	-- Blushing Spiderling

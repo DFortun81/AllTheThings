@@ -143,6 +143,7 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				i(181209),	-- Devourer's Bite
+				i(181217),	-- Dominance Guard's Band
 				i(181205),	-- Soulstalker Epaulets
 				i(181185),	-- Soulstalker Breeches
 				i(181187),	-- Soulstalker Bindings
