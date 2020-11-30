@@ -7,6 +7,19 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
 			n(ZONEDROPS, {
+				i(184104, {	-- Blight-Touched Egg
+					["crs"] = {
+						170456,	-- Diseased Galescreamer
+						162259,	-- Galescreamer Pup
+						162588,	-- Gristlebeak
+						162589,	-- Neonate Boontooth
+						162258,	-- Ravenous Galescreamer
+						164587,	-- Satiated Sawtooth
+					},
+					["g"] = {
+						i(181818),	-- Chewed Reins of the Callowed Flayedwing
+					},
+				}),
 				i(178877),	-- Divine Martial Spirit (Rare)
 				i(178874),	-- Martial Spirit Maldraxxus (Uncommon)
 				i(178878),	-- Greater Martial Spirit (Epic)

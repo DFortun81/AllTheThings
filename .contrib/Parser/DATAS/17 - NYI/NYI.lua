@@ -20,7 +20,6 @@ _.NeverImplemented =
 		},
 	n(-10100, {	-- Shadowlands
 		-- Mounts
-		un(NEVER_IMPLEMENTED, i(181818)),	-- Chewed Reins of the Callow Flayedwing Source Unknown (NYI ATM)
 		-- Toy
 		un(NEVER_IMPLEMENTED, i(182655)),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
 		un(NEVER_IMPLEMENTED, i(174286)),	-- Kyrian Ritual Vestments (beta only? Retrieving data on 9.0.2)
