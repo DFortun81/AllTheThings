@@ -6,6 +6,7 @@ local i = function(itemID)
 end
 
 -- Anima Items
+i(181540);	-- Animaflower Bud
 i(184381);	-- Astral Sapwood
 i(184773);	-- Battle-Tested Armor Component
 i(184150);	-- Bonded Tallow Candles
@@ -21,10 +22,13 @@ i(184151);	-- Counterfeit Ruby Brooch
 i(181551);	-- Depleted Stoneborn Heart
 i(181645);	-- Engorged Monstrosity's Heart
 i(184294);	-- Ethereal Ambrosia
+i(184378);	-- Faeweald Amber
 i(181744);	-- Forgelite Ember
 i(181745);	-- Forgesmith's Coal
+i(184767);	-- Handheld Soul Mirror
 i(184384);	-- Hibernal Sproutling
 i(181550);	-- Hopebreaker's Field Injector
+i(184305);	-- Maldraxxi Champion's Armaments
 i(184387);	-- Misty Shimmerleaf
 i(181547);	-- Noble's Draught
 i(181649);	-- Preserved Preternatural Braincase

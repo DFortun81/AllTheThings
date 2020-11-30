@@ -315,8 +315,8 @@ _.Zones =
 						59714,	-- A Fine Vintage
 						59713,	-- Active Ingredients
 					},
-					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
 					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
+					["coord"] = { 59.9, 68.9, 1525 },
 				}),
 				q(57536, {	-- Mirror Making, Not Breaking
 					["sourceQuests"] = {

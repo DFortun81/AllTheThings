@@ -265,14 +265,14 @@ _.Zones =
 					},
 				}),
 				n(-934,   {	-- Star Lake Amphitheater
-					["description"] = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.",
+					["description"] = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
+				--	TODO: are these on a cycle?  i think it was Mi'kai > Glimmerdust as Kil'jaeden > Astra > Senthii so far, if order holds we can add it to the description
 					["questID"] = 61633,	-- this appears to trigger for all rares.  move to HQT if this changes, only 2 tested so far
 					["coord"] = { 41.5, 44.8, 1565 },
 					["icon"] = "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
 					["crs"] = { 171743 },	-- Dapperdew
 					["g"] = {
-					--	TODO: add remaining questIDs + loot, figure out which are first-time kills and which are daily kills, if that applies
-					--	it looks like maybe only one is available per day, so they possibly share a 'daily kill' ID and have a 'loot' quest tracker, or tracking their achievement criteria
+					--	TODO: add remaining questIDs + loot
 						n(166135, {	-- Astra, As Azshara <An Infamous Queen>
 							["questID"] = 61201,
 							["isDaily"] = true,
@@ -315,13 +315,14 @@ _.Zones =
 							["g"] = {
 							},
 						}),
+						--]]
 						n(166140, {	-- Senthii, As Gul'dan <From an Alternate Timeline>
-							["questID"] = ,
+							["questID"] = 61204,
 							["isDaily"] = true,
 							["g"] = {
+								i(182454),	-- Murmurs in the Dark
 							},
 						}),
-						--]]
 					},
 				}),
 				n(167721, {	-- The Slumbering Emperor
