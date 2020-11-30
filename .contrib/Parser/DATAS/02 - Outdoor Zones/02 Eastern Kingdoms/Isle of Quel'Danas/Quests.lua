@@ -126,6 +126,7 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(11534, {	-- Report to Nasuun
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 25034 },	-- Tradesman Portanuus
 					["coord"] = { 47.2, 35.0, 122 },
 				}),

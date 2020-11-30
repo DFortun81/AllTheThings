@@ -195,10 +195,10 @@ _.Zones =
 							["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
 						}),
 						q(11513, {	-- Intercepting the Mana Cells
-							["u"] = REMOVED_FROM_GAME,
+							["sourceQuests"] = { 11534 },	-- Report to Nasuun
 							["provider"] = { "n", 24932 },	-- Exarch Nasuun
+							["isDaily"] = true,
 							["coord"] = { 49.8, 42.6, 111 },
-							["repeatable"] = true,
 						}),
 						q(11514, {	-- Maintaining the Sunwell Portal
 							["provider"] = { "n", 24932 },	-- Exarch Nasuun
