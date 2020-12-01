@@ -52,6 +52,26 @@ _.Zones =
 						}),
 					},
 				}),
+				n(169102, {	-- Agonix
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 28.0, 44.6, 1648 },
+					["g"] = {
+						crit(8, {	-- Agonix
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+					},
+				}),
+				n(170787, {	-- Akros <Death's Hammer>
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 26.0, 54.9, 1648 },
+					["g"] = {
+						crit(10, {	-- Akros
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+					},
+				}),
 				n(170301, {	-- Apholeias, Herald of Loss
 					["questID"] = 60788,
 					["isDaily"] = true,
@@ -91,6 +111,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 28.4, 24.8, 1648 },
 					["g"] = {
+						crit(7, {	-- Cyrixia
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
 						i(183070),	-- Mawsworn Orders
 					},
 				}),
@@ -119,7 +142,20 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 25.8, 14.8, 1648 },
 					["g"] = {
+						crit(2, {	-- Dartanos
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
 						i(183070),	-- Mawsworn Orders
+					},
+				}),
+				n(162844, {	-- Dath Rezara
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 19.0, 57.6, 1648 },
+					["g"] = {
+						crit(18, {	-- Dath Rezara
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
 					},
 				}),
 				n(170711, {	-- Dolos
@@ -137,9 +173,8 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 32.0, 21.2, 1648 },
 					["g"] = {
-						crit(1,  {	-- Drifting Sorrow
+						crit(1, {	-- Drifting Sorrow
 							["achievementID"] = 14660,	-- It's About Sending a Message
-							["crs"] = { 158314 },	-- Drifting Sorrow
 						}),
 					},
 				}),
@@ -210,6 +245,26 @@ _.Zones =
 						i(184167),	-- Mawsworn Soulhunter
 					},
 				}),
+				n(172523, {	-- Houndmaster Vasanok
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 60.1, 64.9, 1648 },
+					["g"] = {
+						crit(13, {	-- Houndmaster Vasanok
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+					},
+				}),
+				n(162965, {	-- Huwerath
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 21.6, 29.2, 1648 },
+					["g"] = {
+						crit(5, {	-- Huwerath
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+					},
+				}),
 				n(175012, {	-- Ikras the Devourer
 				--	["questID"] = ,
 					["isDaily"] = true,
@@ -220,10 +275,25 @@ _.Zones =
 						}),
 					},
 				}),
+				n(170692, {	-- Krala <Death's Wings>
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 30.7, 68.8, 1648 },
+					["g"] = {
+						crit(9, {	-- Krala
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+					},
+				}),
 				n(171316, {	-- Malevolent Stygia
-					["coord"] = { 27.3, 17.3, 1648 },
 					["questID"] = 61125,	-- Malevolent Stygia
 					["isDaily"] = true,
+					["coord"] = { 27.3, 17.3, 1648 },
+					["g"] = {
+						crit(11, {	-- Malevolent Stygia
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+					},
 				}),
 				n(162849, {	-- Morguliax <Lord of Decapitation>
 					--["coord"] = { 27.4, 49.4, 1648 },
@@ -256,6 +326,26 @@ _.Zones =
 						}),
 					},
 				}),
+				n(172207, {	-- Odalrik
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 38.6, 28.8, 1648 },
+					["g"] = {
+						crit(16, {	-- Odalrik
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+					},
+				}),
+				n(162845, {	-- Orrholyn <Lord of Bloodletting>
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 25.6, 48.2, 1648 },
+					["g"] = {
+						crit(4, {	-- Orrholyn
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+					},
+				}),
 				n(172577, {	-- Orophea
 					["description"] = "Collect Eurydea's Amulet and offer it to Orophea.",
 					["coord"] = { 23.6, 21.6, 1648 },
@@ -274,16 +364,35 @@ _.Zones =
 						}),
 					},
 				}),
+				n(175821, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 21.6, 41.8, 1648 },
+					["g"] = {
+						crit(19, {	-- Ratgusher
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+					},
+				}),
 				n(162829, {	-- Razkazzar
 					["questID"] = 60992,
 					["isDaily"] = true,
 					["coord"] = { 26.2, 37.4, 1648 },
+					["g"] = {
+						crit(3, {	-- Razkazzar
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+					},
 				}),
 				n(172521, {	-- Sanngror the Torturer
-					--["coord"] = { 27.4, 49.4, 1648 },
+					["description"] = "Inside the cave.",
 					["questID"] = 62210,	-- Sanngror the Torturer
 					["isDaily"] = true,
+					["coord"] = { 55.8, 67.5, 1648 },
 					["g"] = {
+						crit(12, {	-- Sanngror the Torturer
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
 						i(183410),	-- Sharpclaw
 					},
 				}),
@@ -297,6 +406,16 @@ _.Zones =
 						}),
 					},
 				}),
+				n(172524, {	-- Skittering Broodmother
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 61.7, 77.6, 1648 },
+					["g"] = {
+						crit(14, {	-- Skittering Broodmother
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+					},
+				}),
 				n(166398, {	-- Soulforger Rhovus
 					["questID"] = 60834,
 					["isDaily"] = true,
@@ -304,6 +423,26 @@ _.Zones =
 					["g"] = {
 						crit(17, {	-- Soulforger Rhovus
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+					},
+				}),
+				n(165047, {	-- Soulsmith Yol-Mattar
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 36.6, 37.2, 1648 },
+					["g"] = {
+						crit(6, {	-- Soulsmith Yol-Mattar
+							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+					},
+				}),
+				n(156203, {	-- Stygian Incinerator
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 36.4, 44.4, 1648 },
+					["g"] = {
+						crit(17, {	-- Stygian Incinerator
+							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
 					},
 				}),
@@ -326,6 +465,16 @@ _.Zones =
 					["g"] = {
 						crit(19, {	-- Thanassos
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+					},
+				}),
+				n(173086, {	-- Valis the Cruel
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 40.8, 59.8, 1648 },
+					["g"] = {
+						crit(15, {	-- Valis the Cruel
+							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
 					},
 				}),
