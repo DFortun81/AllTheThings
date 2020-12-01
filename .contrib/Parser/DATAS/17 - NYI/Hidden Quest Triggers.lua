@@ -3003,13 +3003,16 @@ _.HiddenQuestTriggers =
 		q(63422),	-- Aethon secondary quest
 		q(62192),	-- Baedos secondary quest
 		q(62158),	-- Basilofos secondary quest
+		q(62167),	-- Bookkeeper Mnemis secondary quest along with 59022
 		q(62191),	-- Cloudfeather Guardian secondary quest
 		q(63424),	-- Cloudtail secondary quest
-		q(62167),	-- Bookkeeper Mnemis secondary quest along with 59022
+		q(61802),	-- Echo of Aella kill quest
+		q(62251),	-- Echo of Aella secondary loot quest
+		q(57705),	-- Herculon kill quest
+		q(62201),	-- Herculon secondary loot quest
 		q(63421),	-- Nemaeus secondary quest
 		q(63423),	-- Sigilback secondary quest
 		q(62197),	-- Wingflayer the Cruel secondary quest
-		q(62201),	-- triggers when killing Herculon, which drops Functioning Anima Core.  based on the fact that the questID for the core is 62200, i think this + 62202 are tracking chances at it dropping
 		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
 		--	Bastion WQs
 		q(63263),	-- triggered after completing the WQ #60911, "Flight School: Flapping Frenzy"

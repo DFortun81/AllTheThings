@@ -189,10 +189,7 @@ _.Zones =
 					},
 				}),
 				n(171255, { -- Echo of Aella <Hand of Courage>
-					["questID"] = 61082,	-- upon kill
-					-- TODO: put it in HQT? or make separate treasure chest? might be daily(?) trackers?
-					--["questID"] = 61091,	-- upon chest loot
-					--["questID"] = 62251,	-- upon chest loot
+					["questID"] = 61091,	-- looting (seems more important to track than killing)
 					["isDaily"] = true,
 					["coord"] = { 46.8, 64.0, 1533 },
 					["g"] = {
@@ -226,8 +223,8 @@ _.Zones =
 					},
 				}),
 				n(158659, { -- Herculon
-					["questID"] = 57705,	-- upon defeating rare, this popped.  upon looting Aspirant's Chest, 57708 + 62201 popped.
-					--	57708 may be daily loot trigger?  in which case we should change the tracked quest on the rare to that one, and move 57705 to HQT
+					["description"] = "Pick up anima from the Depleted Anima Canisters around the chamber and the area outside.  Feed them to Herculon to activate him.\n\nLoot will be in the Aspirant's Cache behind him after he is defeated.",
+					["questID"] = 57708,
 					["isDaily"] = true,
 					["coord"] = { 43.0, 82.6, 1533 },
 					["g"] = {

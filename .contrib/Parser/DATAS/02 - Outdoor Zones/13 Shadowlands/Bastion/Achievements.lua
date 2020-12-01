@@ -50,7 +50,7 @@ _.Zones =
 					}),
 				}),
 				ach(14339, {	-- Shard Labor
-					["description"] = "Enable 'Quest' collecting to see/track individual shards.\nShards might be collected Account-Wide [Testing]",
+					["description"] = "Quest tracking must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide.",
 					["lvl"] = { 60 },
 					["g"] = {
 						i(180772),	-- Silverwind Larion (MOUNT!)
@@ -61,15 +61,35 @@ _.Zones =
 							["questID"] = 61264,
 							["coord"] = { 38.5, 53.2, 1533 },
 						}),
+						n(-1433901, {	-- Shard ##
+							["description"] = "Underneath the bridge that runs from Aspirant's Crucible to the Vestibule of Eternity.\n\nUse a Goblin Glider at |cFFFFFFFF39.6, 74.6|r to reach the platform.  After you've collected the shard, leap off the side and a Kyrian will carry you to safety.",
+							["questID"] = 61225,
+							["coord"] = { 39.0, 77.0, 1533 },
+						}),
 						n(-1433939, {	-- Shard ##
 							["description"] = "On top of a gazebo with a crystal roof.  You will have to jump down to the shard from the cliffs above.",
 							["questID"] = 61289,
 							["coord"] = { 42.7, 39.4, 1533 },
 						}),
+						n(-1433902, {	-- Shard ##
+							["description"] = "On the middle level of the waterfall.  Jump down from above.",
+							["questID"] = 61235,
+							["coord"] = { 43.6, 76.2, 1533 },
+						}),
+						n(-1433914, {	-- Shard ##
+							["description"] = "On top of a fallen wall.  Climb up, and then you can carefully fall backwards towards the shard.",
+							["questID"] = 61253,
+							["coord"] = { 46.7, 65.9, 1533 },
+						}),
 						n(-1433918, {	-- Shard ##
 							["description"] = "On the middle section of the cliffside, underneath the platform.",
 							["questID"] = 61260,
 							["coord"] = { 47.0, 49.2, 1533 },
+						}),
+						n(-1433903, {	-- Shard ##
+							["description"] = "On a very narrow piece of the framework of Aspirant's Rest.  Use a Goblin Glider.  You can go to the highest cliff on the other side of the building, but I was able to glide straight towards the shard from |cFFFFFFFF48.6, 70.7|r, land on the nearby pillar, and hop over to pick up the shard.",
+							["questID"] = 61236,
+							["coord"] = { 48.4, 72.7, 1533 },
 						}),
 						n(-1433915, {	-- Shard ##
 							["description"] = "On a beam that goes across the top of a little hut.  You will have to jump down to the shard from the cliffs above.",
@@ -81,15 +101,35 @@ _.Zones =
 							["questID"] = 61258,
 							["coord"] = { 51.6, 48.0, 1533 },
 						}),
+						n(-1433904, {	-- Shard ##
+							["description"] = "Underneath the cliff, on a small outcropping above the water.  You'll need to jump from the side of the hill to get to the shard.  Slow fall abilities are useful here.",
+							["questID"] = 61237,
+							["coord"] = { 52.6, 75.5, 1533 },
+						}),
 						n(-1433905, {	-- Shard ##
 							["description"] = "Underwater, beneath the little bridge.",
 							["questID"] = 61238,
 							["coord"] = { 53.3, 73.6, 1533 },
 						}),
+						n(-1433906, {	-- Shard ##
+							["description"] = "On top of one of the pillars.  Some strategic jumping is required to get to this one (and luck).",
+							["questID"] = 61239,
+							["coord"] = { 53.5, 80.6, 1533 },
+						}),
 						n(-1433913, {	-- Shard ##
 							["description"] = "At the bottom of waterfall on the left-hand side, inside a small shrine.",
 							["questID"] = 61251,
 							["coord"] = { 54.0, 59.6, 1533 },
+						}),
+						n(-1433907, {	-- Shard ##
+							["description"] = "On a little outcropping on the cliffside.  Some strategic falling is required to reach this shard.",
+							["questID"] = 61241,
+							["coord"] = { 55.9, 86.6, 1533 },
+						}),
+						n(-1433910, {	-- Shard ##
+							["description"] = "Partway up the wall.  You must jump down from the platform above.",
+							["questID"] = 61247,
+							["coord"] = { 56.9, 74.9, 1533 },
 						}),
 						n(-1433922, {	-- Shard ##
 							["description"] = "On top of the cliff (not in the cave below), at the base of a tree.",
@@ -101,62 +141,22 @@ _.Zones =
 							["questID"] = 61250,
 							["coord"] = { 58.1, 63.9, 1533 },
 						}),
-				----------------------------------------------------------------------------------------------------------
-						n(-1433901, {	-- Shard ##
-							["coord"] = { 39.05, 77.04, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61225,
-						}),
-						n(-1433902, {	-- Shard ##
-							["coord"] = { 43.63, 76.22, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61235,
-						}),
-						n(-1433903, {	-- Shard ##
-							["coord"] = { 48.42, 72.73, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61236,
-						}),
-						n(-1433904, {	-- Shard ##
-							["coord"] = { 52.67, 75.55, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61237,
-						}),
-						n(-1433906, {	-- Shard ##
-							["coord"] = { 53.49, 80.60, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61239,
-						}),
-						n(-1433907, {	-- Shard ##
-							["coord"] = { 55.96, 86.66, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61241,
+						n(-1433909, {	-- Shard ##
+							["description"] = "You have to carefully jump down from the cliffs.  The shard is close to the edge of the map, next to a small pool of water at the top of a waterfall.",
+							["questID"] = 61245,
+							["coord"] = { 58.1, 80.0, 1533 },
 						}),
 						n(-1433908, {	-- Shard ##
-							["coord"] = { 61.04, 85.66, 1533 },
-							-- ["description"] = "",
+							["description"] = "On the edge of the cliffs.",
 							["questID"] = 61244,
-						}),
-						n(-1433909, {	-- Shard ##
-							["coord"] = { 58.10, 80.08, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61245,
-						}),
-						n(-1433910, {	-- Shard ##
-							["coord"] = { 56.9, 75.0, 1533 },
-							["description"] = "Part-way up the wall",
-							["questID"] = 61247,
+							["coord"] = { 61.0, 85.6, 1533 },
 						}),
 						n(-1433911, {	-- Shard ##
-							["coord"] = { 65.52, 71.92, 1533 },
-							-- ["description"] = "",
+							["description"] = "Use the Anima Gateway at |cFFFFFFFF65.5, 71.9|r.  You can only use the gateway if you aren't in combat, so be careful what you pull.\n\nAfter taking the gateway, head to the shard coordinates.  It is hidden behind a pillar.",
 							["questID"] = 61249,
+							["coord"] = { 65.5, 71.9, 1533 },
 						}),
-						n(-1433914, {	-- Shard ##
-							["coord"] = { 46.70, 65.95, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61253,
-						}),
+				----------------------------------------------------------------------------------------------------------
 						n(-1433916, {	-- Shard ##
 							["coord"] = { 34.84, 65.78, 1533 },
 							-- ["description"] = "",
@@ -443,11 +443,12 @@ _.Zones =
 						},
 					}),
 					crit(12, {	-- Gift of Vesiphone
+						["description"] = "Ring one of the Bells of Purification on either side of the treasure.  Then turn around and stand in in the waterfall next to the Purity Steward.  You will get a buff called Proof of Purity, allowing you to open the chest.",
 						["objectID"] = 353940,	-- Gift of Vesiphone
-						["coord"] = { 64.9, 71.1, 1533 },
 						["questID"] = 60890,
+						["coord"] = { 64.8, 71.1, 1533 },
 						["g"] = {
-							i(180859),	-- Purity
+							i(180859),	-- Purity (PET!)
 						},
 					}),
 					crit(13, {	-- Gift of Chyrus
