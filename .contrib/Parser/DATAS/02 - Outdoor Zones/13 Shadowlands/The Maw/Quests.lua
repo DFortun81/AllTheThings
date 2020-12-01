@@ -12,7 +12,6 @@ _.Zones =
 				}),
 			}),
 			n(QUESTS, {
-
 				q(59973, {	-- A Bond Beyond Death
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
@@ -84,7 +83,7 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(63031, {	-- Acquisition: Crystallized Stygia
-					-- ["provider"] = { "o", ### },	-- TODO
+					["provider"] = { "o", 364899 },	-- Crystallized Stygia
 					-- ["coord"] = { 25.6, 24.2, 1648 },
 					["isDaily"] = true,
 				}),

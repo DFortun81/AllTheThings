@@ -85,7 +85,7 @@ _.Zones =
 				}),
 				n(166521, {	-- Famu the Infinite
 					["coord"] = { 62.6, 47.2, 1525 },
-					--["questID"] = ,
+					["questID"] = 59869,
 					["isDaily"] = true,
 					["crs"] = { 166483 },	-- Seeker Hilda
 					["g"] = {

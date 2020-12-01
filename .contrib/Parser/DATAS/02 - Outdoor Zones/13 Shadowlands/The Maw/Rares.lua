@@ -53,7 +53,7 @@ _.Zones =
 					},
 				}),
 				n(169102, {	-- Agonix
-				--	["questID"] = ,
+					["questID"] = 61136,
 					["isDaily"] = true,
 					["coord"] = { 28.0, 44.6, 1648 },
 					["g"] = {
@@ -149,7 +149,7 @@ _.Zones =
 					},
 				}),
 				n(162844, {	-- Dath Rezara
-				--	["questID"] = ,
+					["questID"] = 60988,
 					["isDaily"] = true,
 					["coord"] = { 19.0, 57.6, 1648 },
 					["g"] = {
@@ -337,7 +337,7 @@ _.Zones =
 					},
 				}),
 				n(162845, {	-- Orrholyn <Lord of Bloodletting>
-				--	["questID"] = ,
+					["questID"] = 60991,
 					["isDaily"] = true,
 					["coord"] = { 25.6, 48.2, 1648 },
 					["g"] = {

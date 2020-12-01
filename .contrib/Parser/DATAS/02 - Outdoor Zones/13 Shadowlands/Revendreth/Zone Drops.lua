@@ -31,6 +31,7 @@ _.Zones =
 						156395,	-- Starving Dredbat
 					},
 				}),
+				i(180864),	-- Decanter of Distilled Shadows
 				i(177778),	-- Depraved Darkblade's Belt
 				i(177779),	-- Depraved Darkblade's Bindings
 				i(177797),	-- Depraved Darkblade's Epaulets

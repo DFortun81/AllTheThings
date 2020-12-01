@@ -2941,6 +2941,15 @@ _.HiddenQuestTriggers =
 		q(62686),	-- triggers when entering a zone with a 'Training' Calling active and your companion spawns (repeatable)
 		q(57565),	-- Aqir Assault Tracker — triggered upon picking up #61981, "Replenish the Reservoir"
 		q(57567),	-- N'Zoth Assault Tracker (Vale) — triggered upon picking up #61981, "Replenish the Reservoir"
+		q(63070),	-- Triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" (appears to be shared across covenants)
+		q(63360),	-- triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" as Kyrian
+		q(63359),	-- Triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" as Night Fae
+		q(63071),	-- Triggered after completing mi(2295), "Tutorial: Necromantic Intervention" (appears to be shared across covenants)
+		q(63364),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Kyrian
+		q(63363),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Night Fae
+		q(60634),	-- Triggered after completing mi(2175),	"Tutorial: Spinal Swarm" (appears to be shared across covenants)
+		q(63368),	-- triggered after completing mi(2175),	"Tutorial: Spinal Swarm" as Kyrian
+		q(63367),	-- Triggered after completing mi(2175),	"Tutorial: Spinal Swarm" as Night Fae
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
@@ -2958,15 +2967,6 @@ _.HiddenQuestTriggers =
 		q(57559),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(62706),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
-		q(63070),	-- Triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" (appears to be shared across covenants)
-		q(63360),	-- triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" as Kyrian
-		q(63359),	-- Triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" as Night Fae
-		q(63071),	-- Triggered after completing mi(2295), "Tutorial: Necromantic Intervention" (appears to be shared across covenants)
-		q(63364),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Kyrian
-		q(63363),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Night Fae
-		q(60634),	-- Triggered after completing mi(2175),	"Tutorial: Spinal Swarm" (appears to be shared across covenants)
-		q(63368),	-- triggered after completing mi(2175),	"Tutorial: Spinal Swarm" as Kyrian
-		q(63367),	-- Triggered after completing mi(2175),	"Tutorial: Spinal Swarm" as Night Fae
 		q(60820),	-- \
 		q(60821),	--  \
 		q(60822),	--   flower triggers for opening Lunarlight Pod (60794) (don't have coords)
@@ -3045,6 +3045,8 @@ _.HiddenQuestTriggers =
 		q(61986),	-- Tahonta secondary quest
 		q(61988),	-- Indomitable Schmitd secondary quest
 		q(61992),	-- Pesticide secondary quest
+		-- Maldraxxus WQs
+		q(62948),	-- "learning" the quest items while on #61615, "Tailoring: Haunting Hood"
 		-- Maldraxxus Covenant
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
 		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
@@ -3108,10 +3110,13 @@ _.HiddenQuestTriggers =
 		q(63377),	-- First kill of Soulsmith Yor-Mattar (bonus objective 59441)
 		q(63383),	-- First kill of Malevolent Stygia
 		-- The Maw rares
+		q(63380),	-- Agonix secondary quest
 		q(63373),	-- Dartanos secondary quest
+		q(61140),	-- Dath Rezara secondary quest
+		q(63413),	-- Odalrik secondary quest/first kill?
+		q(63375),	-- Orrholyn secondary quest
 		q(63388),	-- Ratgusher secondary quest?
 		q(63374),	-- Razkazzar secondary quest
-		q(63413),	-- Odalrik secondary quest/first kill?
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
 					-- also for mogwai when killing Eketra...
 		
@@ -3137,6 +3142,8 @@ _.HiddenQuestTriggers =
 		q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
 		q(62967),	-- Triggered when opening Domination Lock for Prison of the Forgotten quest
 		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
+		q(61305),	-- triggered when completing #61313, "Champion: Kythekios"
+		q(58194),	-- Soulforges, layer 3, (Arch-Suppressor Laguas as boss)
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

@@ -60,10 +60,20 @@ _.Zones =
 					}),
 					
 					-- Champion Unlocks
+					-- TODO: move to covenant files
 					q(61958, {	-- Champion: Gorgelimb [Necrolord]
 						["sourceQuests"] = { 60136 },	-- Into Torghast
 						["provider"] = { "n", 173397 },	-- Gorgelimb
-					}),					
+						["g"] = {
+						--	follower(1306),	-- Gorgelimb (doesn't appear to be working for now?)
+						},
+					}),
+					q(61313, {	-- Champion: Kythekios [Kyrian]
+						["provider"] = { "n", 171995 },	-- Kythekios
+						["g"] = {
+						--	follower(1222),	-- Kythekios (doesn't appear to be working for now?)
+						},
+					}),
 					
 					-------- unverifed on live yet; adding to alphabetized list above as they are verified in game
 					q(60137, {	-- The Fracture Chambers
@@ -100,6 +110,9 @@ _.Zones =
 					q(59775, {	-- Help Indigo find Penthia
 						["provider"] = { "n", 166123 },	-- Indigo
 						["repeatable"] = true,
+					}),
+					q(61322, {	-- Kythekios' Memory Stone
+						["repeatable"] = true,	-- ?????
 					}),
 					q(59345, {	-- Phantoriax's Warsword
 						["provider"] = { "n", 157432 },	-- Indigo

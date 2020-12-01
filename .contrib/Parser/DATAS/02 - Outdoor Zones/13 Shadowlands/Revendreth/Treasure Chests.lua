@@ -106,17 +106,22 @@ _.Zones =
 					["questID"] = 60983,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 53.6, 57.3, 1525 },
-					["g"] = {
-						i(182726, {	-- Nadja's Letter
-							["questID"] = 62182,	-- A Letter From Nadja
-						}),
-					},
+				}),
+				o(354108, {	-- Stoneborn Satchel
+					["questID"] = 60938,
+					["isDaily"] = true,
+					["coord"] = { 43.8, 57.1, 1525 },
 				}),
 				o(354111, {	-- Stoneborn Satchel
 				--	TODO: verify objectID.
 					["questID"] = 60941,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 75.4, 39.0, 1525 },
+				}),
+				o(354192, {	-- Stoneborn Satchel
+					["questID"] = 60984,
+					["isDaily"] = true,
+					["coord"] = { 23.5, 48.8, 1525 }
 				}),
 				o(1278968752, {	-- Stoneborn Satchel
 				--	TODO: verify objectID.

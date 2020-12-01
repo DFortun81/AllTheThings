@@ -105,6 +105,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61615, {	-- Tailoring: Haunting Hood
+					["requireSkill"] = TAILORING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59743, {	-- The Spider on the Wall
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

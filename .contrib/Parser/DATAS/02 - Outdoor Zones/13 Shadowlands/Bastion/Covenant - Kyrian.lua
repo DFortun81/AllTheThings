@@ -258,7 +258,7 @@ _.Zones =
 						["provider"] = { "n", 168906 },	-- Polemarch Adrestes
 						["coord"] = { 58.4, 28.9, 1533 },	-- Bastion
 					}),
-					q(62794, {    -- Enhancing the Hold
+					q(62794, {	-- Enhancing the Hold
 					--	TODO: verify SQ.  should be this, Return to Adrestes, or It's All Coming Together
 						-- Specific requirement unknown, available immediately after returning from the maw
 						["sourceQuests"] = { 62837 },	-- Hopeful News
@@ -300,6 +300,12 @@ _.Zones =
 						["description"] = "Becomes available after you complete your first Calling quest.",
 						["provider"] = { "n", 160387 },	-- Hermestes
 						["coord"] = { 40.9, 40.9, 1707 },	-- Elysian Hold
+					}),
+					q(61982, {	-- Replenish the Reservoir
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["provider"] = { "n", 167745 },	-- Haephus
+						["isWeekly"] = true,
+						["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
 					}),
 					q(63211, {	-- Report to Adrestes
 						["sourceQuests"] = { 62023 },	-- Choosing Your Purpose
@@ -372,6 +378,14 @@ _.Zones =
 					}),
 				}),
 				n(TREASURES, {
+					o(356818, {	-- Penitence of Purity
+						["description"] = "Requires channeling anima to the Temple of Purity.  The mount is not a guaranteed drop.",
+						["isDaily"] = true,	-- repeatable??
+						["coord"] = { 60.2, 78.2, 1533 },	-- Bastion
+						["g"] = {
+							i(180762),	-- Phalynx of Humility (MOUNT!)
+						},
+					}),
 				}),
 				n(VENDORS, {
 				}),

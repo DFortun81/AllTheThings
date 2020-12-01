@@ -199,6 +199,7 @@ _.Zones =
 							["provider"] = { "n", 24932 },	-- Exarch Nasuun
 							["isDaily"] = true,
 							["coord"] = { 49.8, 42.6, 111 },
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(11514, {	-- Maintaining the Sunwell Portal
 							["provider"] = { "n", 24932 },	-- Exarch Nasuun
