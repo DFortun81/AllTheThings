@@ -1305,7 +1305,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			local wqt_global = wqt_questDoneHistory.global
 			local wqt_local = wqt_questDoneHistory.character[app.GUID]
 
-			if wqt_local and wqt_local[questID] and wqt_local[questID] > 0 then
+			if wqt_local and wqt_local[t.questID] and wqt_local[t.questID] > 0 then
 				SetDataSubMember("CollectedQuests", t.questID, 1);
 				SetTempDataSubMember("CollectedQuests", t.questID, 1);
 				return 1;
@@ -1326,7 +1326,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			end
 
 			-- quest completed on any character, return shared completion
-			if wqt_global and wqt_global[questID] and wqt_global[questID] > 0 then
+			if wqt_global and wqt_global[t.questID] and wqt_global[t.questID] > 0 then
 				SetDataSubMember("CollectedQuests", t.questID, 1);
 				-- only return as completed if tracking account wide
 				if app.AccountWideQuests then
@@ -7474,8 +7474,8 @@ app.BaseQuest = {
 				for i,questID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, mark the altQuestID
 					if not found and IsQuestFlaggedCompleted(questID) then
+						-- print(t.questID,"locked by",questID,"alt-quest");
 						found = questID;
-						-- print("complete altquest found",questID,"=>",t.questID);
 					end
 				end
 			end
@@ -7483,26 +7483,23 @@ app.BaseQuest = {
 			return rawget(t, "altcollected");
 		-- returns nil if available or non-breadcrumb quest, or returns a completed questID which blocks this breadcrumb from being obtained
 		elseif key == "breadcrumbLockedBy" then
+			-- do not consider a completed breadcrumb as being locked from being collectible
+			if IsQuestFlaggedCompleted(t.questID) then return nil; end
 			-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
 			local found;
 			if t.isBreadcrumb and t.nextQuests then
 				for i,questID in ipairs(t.nextQuests) do
 					-- any nextQuests completed specifically on this character, mark the nextQuestsID
 					if not found and IsQuestFlaggedCompleted(questID) then
+						-- print(t.questID,"locked by",questID,"directly");
 						found = questID;
 					elseif not found then
 						-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
-						local qs = SearchForField("questID", questID);
+						local nq = app.SearchForObjectClone("questID", questID);
 						-- check the quests cached under this questID for the correct quest group
-						if qs and #qs > 0 then
-							local i, sq = #qs;
-							while not sq and i > 0 do
-								if qs[i].questID == questID then sq = qs[i]; end
-								i = i - 1;
-							end
-						end
-						if sq then
-							if sq.collected or sq.altcollected or sq.breadcrumbLockedBy then
+						if nq then
+							if nq.collected or nq.altcollected or nq.breadcrumbLockedBy then
+								-- print(t.questID,"locked by",questID,"locked by",nq.breadcrumbLockedBy);
 								found = questID;
 							end
 						end
@@ -10894,15 +10891,7 @@ RowOnEnter = function (self)
 				local nextq, nq = {};
 				for i,nextQuestID in ipairs(reference.nextQuests) do
 					if nextQuestID > 0 then
-						local nqs = SearchForField("questID", nextQuestID);
-						if nqs and #nqs > 1 then
-							local i = #nqs;
-							nq = nil;
-							while not nq and i > 0 do
-								if nqs[i].questID == sourceQuestID then nq = nqs[i]; end
-								i = i - 1;
-							end
-						end
+						local nq = app.SearchForObjectClone("questID", nextQuestID);
 						-- existing quest group
 						if nq then
 							table.insert(nextq, nq);
@@ -15076,9 +15065,9 @@ hooksecurefunc("EmbeddedItemTooltip_SetItemByQuestReward", function(self, ...)
 end);
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
-local ProcessAuctions = function()
-	StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
-end
+-- local ProcessAuctions = function()
+-- 	StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
+-- end
 
 local ProcessAuctionData = function()
 	-- If we have no auction data, then simply return now.
