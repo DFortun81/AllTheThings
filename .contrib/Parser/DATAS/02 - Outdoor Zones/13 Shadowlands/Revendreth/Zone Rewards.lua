@@ -15,7 +15,12 @@ _.Zones =
 					i(181223),	-- Mace of Emberwrath
 					i(180355),	-- Ornate Pyx
 					i(181211),	-- Souldrinker's Kris
+					i(181203),	-- Stonewrought Armplates
+					i(181197),	-- Stonewrought Breastplate
+					i(181199),	-- Stonewrought Gauntlets
 					i(181196),	-- Stonewrought Helm
+					i(181200),	-- Stonewrought Legguards
+					i(180398),	-- Stonewrought Legion Halberd
 				},
 			}),
 		}),

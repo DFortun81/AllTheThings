@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
-			n(-920, {	-- Necrolord Covenant
+			n(-920, {	-- Covenant: Necrolord
 				n(ACHIEVEMENTS, {
 				}),
 				n(QUESTS, {

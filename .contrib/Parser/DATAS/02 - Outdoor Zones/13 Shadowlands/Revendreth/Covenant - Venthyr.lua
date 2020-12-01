@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
-			n(-949, {	-- Venthyr Covenant
+			n(-949, {	-- Covenant: Venthyr
 			--	TODO: quest through as Venthyr and unlock Adventures Scouting Map first instead of Mirror Network to test alternative version of "Our True Purpose"
 			--	1699 = Sinfall Reaches
 			--	1700 = Sinfall Depths

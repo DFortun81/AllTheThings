@@ -21,7 +21,14 @@ _.Zones =
 					i(181432),	-- Duskwarder Spellthorn
 					i(179547),	-- Duskwarder Warclub
 					i(179508),	-- Duskwarder Warglaive
+					i(181420),	-- Faemoss Amice
 					i(181411),	-- Faemoss Coronet
+					i(181409),	-- Faemoss Gloves
+					i(181415),	-- Faemoss Leggings
+					i(181404),	-- Faemoss Shoes
+					i(181399),	-- Faemoss Vestment
+					i(181423),	-- Faemoss Waistband
+					i(181426),	-- Faemoss Bindings
 					i(179549),	-- Nightwillow Cudgel
 					i(175728),	-- Soulsifter Root
 					i(179594),	-- Witherscorn Guise

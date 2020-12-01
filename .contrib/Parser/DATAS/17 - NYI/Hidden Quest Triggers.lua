@@ -2945,6 +2945,7 @@ _.HiddenQuestTriggers =
 		q(61126),	-- Turning in the Twinklestar Gardening Tools during the Cache of the Moon sequence
 		q(61170),	-- triggered when unlocking the Harmonic Chest (looting it has a separate ID, in Achievements file)
 		q(62943),	-- Triggered when looting Crafter's Basket for the Enchanting: Boundless Basket WQ
+		q(61208),	-- triggered for no reason when i was traveling to the area where the "Swarm Defense" WQ takes place in Ardenweald.  i just went into the area between the main bit of Ardenweald + the Tirna Scythe area and it was like "what's up"
 		-- Rares
 		q(62271),	-- Deifir the Untamed secondary quest
 		q(62269),	-- Macabre secondary quest

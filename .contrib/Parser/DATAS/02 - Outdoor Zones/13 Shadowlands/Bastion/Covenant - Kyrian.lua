@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
-			n(-939, {	-- Kyrian Covenant
+			n(-939, {	-- Covenant: Kyrian
 				n(ACHIEVEMENTS, {
 				}),
 				n(-901, {	-- Covenant Callings

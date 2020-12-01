@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(1550, {	-- Shadowlands
 		m(1565, {	-- Ardenweald
-			n(-929, {	-- Night Fae Covenant
+			n(-929, {	-- Covenant: Night Fae
 				n(ACHIEVEMENTS, {
 				}),
 				n(QUESTS, {
