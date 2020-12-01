@@ -2938,7 +2938,7 @@ _.HiddenQuestTriggers =
 
 		-- Various tracking quests
 		q(61858),	-- taking the portal to Acherus during "Shadowlands: A Chilling Summons"
-		q(62686),	-- i have no idea what triggered this.  i had just reloaded my UI and refreshed ATT in Sinfall, then took a FP to Root-Home in Ardenweald.  i had not done anything of note for maybe 20 minutes (picking up/turning in quests) before this happened.  i had just been afking in Sinfall
+		q(62686),	-- triggers when entering a zone with a 'Training' Calling active and your companion spawns (repeatable)
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
@@ -3075,7 +3075,6 @@ _.HiddenQuestTriggers =
 		q(59861),	-- Tea Tales: Theotar Achievement criteria
 		q(60701),	-- triggered when completing #60653, "Mirror Restoration"
 		-- Venthyr Covenant
-		q(62686),	-- triggered when entering Ardenweald while on a 'Training' Calling (summons companion)
 		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62827),	-- uhhhhh i killed myself by jumping into nothingness from one of the platforms
