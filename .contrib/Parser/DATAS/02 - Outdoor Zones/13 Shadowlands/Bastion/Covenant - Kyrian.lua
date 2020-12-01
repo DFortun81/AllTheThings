@@ -344,6 +344,33 @@ _.Zones =
 				}),
 				n(RARES, {
 				}),
+				n(-941, {	-- Sanctum Upgrades
+					n(-942, {	-- Anima Conductor
+					--	tier 1: ?????? (create header)
+						q(57901, {	-- All That Remains
+							["provider"] = { "n", 167745 },	-- Haephus
+							["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+							-- Kyrian required, available after researching Anima Conductor tier 1
+						}),
+						q(57903, {	-- Power in the Sky
+							["sourceQuests"] = { 57901 },	-- All That Remains
+							["provider"] = { "n", 158773 },	-- Capheus
+							["coord"] = { 37.9, 67.5, 1707 },	-- Elysian Hold
+						}),
+					}),
+					n(-905, {	-- Command Table
+					--	tier 1: ????? (create header
+						q(57900, {	-- Across the Shadowlands
+							["sourceQuests"] = { 57899 },	-- More Work?
+							["provider"] = { "n", 160389 },	-- Koros
+							["coord"] = { 43.8, 40.7, 1707 },	-- Elysian Hold
+						}),
+						q(57899, {	-- More Work?
+							["provider"] = { "n", 167745 },	-- Haephus
+							["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+						}),
+					}),
+				}),
 				n(TREASURES, {
 				}),
 				n(VENDORS, {

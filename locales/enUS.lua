@@ -651,6 +651,7 @@ app.L = {
 		[-901] = 3726261,																	-- Covenant Callings
 		[-903] = "Interface\\Icons\\buff_feltreasures",										-- Zone Rewards
 		[-904] = "Interface\\Icons\\ui_torghast",											-- Wrath of the Jailer
+		[-905] = 3675495,																	-- Command Table
 
 		[-920] = "Interface\\Icons\\ui_sigil_necrolord",									-- Covenant: Necrolord
 		[-929] = "Interface\\Icons\\ui_sigil_nightfae",										-- Covenant: Night Fae
@@ -659,12 +660,15 @@ app.L = {
 		[-932] = 636335,																	-- Spirit
 		[-933] = 2451604,																	-- Greater Spirit
 		[-939] = "Interface\\Icons\\ui_sigil_kyrian",										-- Covenant: Kyrian
+		[-941] = "Interface\\Icons\\ui_sigil_kyrian",										-- Sanctum Upgrades (Kyrian)
+		[-942] = "Interface\\Icons\\spell_animabastion_beam",								-- Anima Conductor (Kyrian)
 		[-949] = "Interface\\Icons\\ui_sigil_venthyr",										-- Covenant: Venthyr
+		
 
-		[-950] = 3565720,																	-- Mirror Network
-		[-951] = 3528313,																	-- Tier 1: Mirror Mirror
-		[-952] = 3528312,																	-- Tier 2: Looking Glass
-		[-953] = 3528311,																	-- Tier 3: Mirror's Edge
+		[-950] = 3854020,																	-- Transport Network
+		[-951] = 3854020,																	-- Tier 1: Mirror Mirror
+		[-952] = 3854020,																	-- Tier 2: Looking Glass
+		[-953] = 3854020,																	-- Tier 3: Mirror's Edge
 		[-954] = "Interface\\Icons\\spell_animarevendreth_buff",							-- Inquisitors
 		[-955] = "Interface\\Icons\\spell_animarevendreth_buff",							-- High Inquisitors
 		[-956] = "Interface\\Icons\\spell_animarevendreth_buff",							-- Grand Inquisitors
@@ -1477,6 +1481,7 @@ app.L = {
 	--	[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown (NYI)
 		[-903] = "Zone Rewards",												-- Zone Rewards
 		[-904] = "Wrath of the Jailer",											-- Wrath of the Jailer
+		[-905] = "Command Table",												-- Command Table
 		[-914] = "Adventures",													-- Adventures
 		
 -- SL Maldraxxus/Necrolord
@@ -1493,6 +1498,8 @@ app.L = {
 -- SL Bastion/Kyrian
 		[-939] = "Covenant: Kyrian",											-- Covenant: Kyrian
 		[-940] = "Ascended Council",											-- Ascended Counil
+		[-941] = "Sanctum Upgrades",											-- Sanctum Upgrades (Kyrian)
+		[-942] = "Anima Conductor",												-- Anima Conductor (Kyrian)
 
 -- SL Revendreth/Venthyr
 		[-949] = "Covenant: Venthyr",											-- Covenant: Venthyr

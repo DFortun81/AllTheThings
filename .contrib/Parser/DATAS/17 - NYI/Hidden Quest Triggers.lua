@@ -2939,6 +2939,8 @@ _.HiddenQuestTriggers =
 		-- Various tracking quests
 		q(61858),	-- taking the portal to Acherus during "Shadowlands: A Chilling Summons"
 		q(62686),	-- triggers when entering a zone with a 'Training' Calling active and your companion spawns (repeatable)
+		q(57565),	-- Aqir Assault Tracker — triggered upon picking up #61981, "Replenish the Reservoir"
+		q(57567),	-- N'Zoth Assault Tracker (Vale) — triggered upon picking up #61981, "Replenish the Reservoir"
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
@@ -2956,12 +2958,15 @@ _.HiddenQuestTriggers =
 		q(57559),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(62706),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
-		q(63070),	-- Triggered after completing first Adventure tutorial mission
-		q(63359),	-- Triggered after completing first Adventure tutorial mission
-		q(63071),	-- Triggered after completing last Adventure tutorial mission
-		q(63363),	-- Triggered after completing last Adventure tutorial mission
-		q(60634),	-- Triggered after completing last Adventure tutorial mission
-		q(63367),	-- Triggered after completing last Adventure tutorial mission
+		q(63070),	-- Triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" (appears to be shared across covenants)
+		q(63360),	-- triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" as Kyrian
+		q(63359),	-- Triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" as Night Fae
+		q(63071),	-- Triggered after completing mi(2295), "Tutorial: Necromantic Intervention" (appears to be shared across covenants)
+		q(63364),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Kyrian
+		q(63363),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Night Fae
+		q(60634),	-- Triggered after completing mi(2175),	"Tutorial: Spinal Swarm" (appears to be shared across covenants)
+		q(63368),	-- triggered after completing mi(2175),	"Tutorial: Spinal Swarm" as Kyrian
+		q(63367),	-- Triggered after completing mi(2175),	"Tutorial: Spinal Swarm" as Night Fae
 		q(60820),	-- \
 		q(60821),	--  \
 		q(60822),	--   flower triggers for opening Lunarlight Pod (60794) (don't have coords)
@@ -3022,6 +3027,7 @@ _.HiddenQuestTriggers =
 		--	Kyrian Covenant
 		q(63216),	-- triggers when turning in #57897, "Dangerous to Go Alone"
 		q(62755),	-- triggers when turning in #57904, "Our Eternal Charge"
+		q(61589),	-- triggered when turning in #57903, "Power in the Sky," possibly connected to channeling anima to Purity's Pinnacle
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
