@@ -11,6 +11,7 @@ _.Zones =
 				i(178883),	-- Divine Prideful Spirit (Rare)
 				i(178882),	-- Prideful Spirit Revendreth(Uncommon)
 				i(179311),	-- Oxxein Lockbox
+				i(177772),	-- Avowed Tormenter's Cord
 				i(177769),	-- Avowed Tormenter's Handwraps
 				i(177770),	-- Avowed Tormenter's Hood
 				i(177771),	-- Avowed Tormenter's Leggings
@@ -23,7 +24,13 @@ _.Zones =
 				i(178945),	-- Boneclutched Greatstaff
 				i(177800),	-- Bubbling Concoction
 				i(179319),	-- Caged Cudgel
-				i(180602),	-- Crimson Dredwing Pup (Bats only?)
+				i(180602, {	-- Crimson Dredwing Pup
+					-- TODO: possibly add other bats?
+					["crs"] = {
+						169154,	-- Famished Fangling
+						156395,	-- Starving Dredbat
+					},
+				}),
 				i(177778),	-- Depraved Darkblade's Belt
 				i(177779),	-- Depraved Darkblade's Bindings
 				i(177797),	-- Depraved Darkblade's Epaulets

@@ -54,6 +54,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61599, {	-- Inscription: Hymnal of Reprise
+					["requireSkill"] = INSCRIPTION,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61303, {	-- It's Raining Sparkles
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

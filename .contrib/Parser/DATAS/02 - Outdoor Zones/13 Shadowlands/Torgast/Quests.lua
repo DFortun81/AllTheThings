@@ -40,6 +40,11 @@ _.Zones =
 						["provider"] = { "n", 164937 },	-- Runecarver
 						["coord"] = { 50.6, 57.2, 1912 },
 					}),
+					q(62935, {	-- Remnants of Hope
+						["sourceQuests"] = { 62932 },	-- Explore Torghast
+						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+						["coord"] = { 39.9, 68.5, 1670 },
+					}),
 					q(61099, {	-- The Search for Baine
 						["sourceQuests"] = { 60136 },	-- Into Torghast
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
