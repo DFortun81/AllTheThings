@@ -208,6 +208,12 @@ _.Zones =
 					}),
 					
 					-- These quests are not part of the covenant questline chapters, but are Night Fae only
+					q(62606, {	-- A Blackthorn Blend
+						["sourceQuests"] = { 57583 },	-- Through the Veil
+						["provider"] = { "n", 167455 },	-- Marasmius
+						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+						["isDaily"] = true,
+					}),
 					q(63073, {	-- A Mycelial Network
 						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
 						["coord"] = { 39.6, 55.0, 1702 },

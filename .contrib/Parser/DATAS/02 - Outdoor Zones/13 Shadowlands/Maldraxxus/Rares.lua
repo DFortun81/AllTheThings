@@ -59,7 +59,7 @@ _.Zones =
 				}),
 				n(162669, { -- Devour'us
 					["coord"] = { 45.6, 28.4, 1536 },
-					--["questID"] = ,
+					["questID"] = 58835,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(15)),	-- Adventurer of Maldraxxus / Devour'us
@@ -67,7 +67,7 @@ _.Zones =
 				}),
 				n(162741, {	-- Gieger <Experimental Construct>
 					["coord"] = { 31.4, 35.4, 1536 },
-					--["questID"] = ,
+					["questID"] = 58872,
 					["isDaily"] = true,
 					["description"] = "Requires to be a |cFF40bf40Necrolord Covenant|r & channel anima to House of Constructs to summon him.",
 					["g"] = {

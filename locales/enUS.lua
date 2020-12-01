@@ -4261,6 +4261,7 @@ app.L = {
 		[357565] = "Forgotten Angler's Rod",
 		[357584] = "Vyrtha's Dredglaive",
 		[357758] = "Plague Barrel",
+		[358533] = "Forgotten Supplies",
 		[362489] = "Elysian Decree",
 		[363825] = "Silver Strongbox",
 		[9999890] = "Corrupted Loot",

@@ -95,6 +95,12 @@ _.Zones =
 					["provider"] = { "n", 170018 },	-- Secutor Mevix
 					["coord"] = { 30.1, 23.7, 1536 },
 				}),
+				q(62605, {	-- Broker Business
+					-- TODO: add sourceQuests if there are any; it just showed up for me but I had completed main storyline for the entire zone already.
+					-- Possible that this is a breadcrumb?
+					["provider"] = { "o", 358533 },	-- Forgotten Supplies
+					["coord"] = { 38.2, 31.3, 1536 },
+				}),
 				q(58011, {	-- Bug Bites
 					["sourceQuests"] = { 59130 },	-- The House of Plagues
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
@@ -323,7 +329,10 @@ _.Zones =
 				}),
 				q(58619, {	-- Read Between the Lines
 				--	TODO: verify SQs
-					["sourceQuests"] = { 57425 },	-- Land of Opportunity
+					["sourceQuests"] = { 
+						62605,	-- Broker Business (breadcrumb?)
+						57425,	-- Land of Opportunity
+					},	
 					["provider"] = { "n", 162615 },	-- Ta'eran
 					["coord"] = { 40.6, 33.0, 1536 },
 				}),
