@@ -11,6 +11,7 @@ _.Zones =
 				["g"] = {
 					i(181664),	-- Bloodsilk Hood
 					i(181679),	-- Bloodsilk Wristwraps
+					i(181680),	-- Steelcore Wristwraps
 				},
 			}),
 		}),

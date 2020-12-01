@@ -11,9 +11,11 @@ _.Zones =
 				["g"] = {
 					i(181208),	-- Anima-Infused Muck
 					i(181178),	-- Cowl of Emberfury
+					i(181191),	-- Devourer Wrangler's Coif
 					i(181223),	-- Mace of Emberwrath
 					i(180355),	-- Ornate Pyx
 					i(181211),	-- Souldrinker's Kris
+					i(181196),	-- Stonewrought Helm
 				},
 			}),
 		}),
