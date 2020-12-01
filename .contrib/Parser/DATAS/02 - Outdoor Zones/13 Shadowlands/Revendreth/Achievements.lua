@@ -10,6 +10,10 @@ _.Zones =
 				ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 					["collectible"] = false,
 					["g"] = {
+						crit(5, {	-- Sewer Creeper
+							["coord"] = { 25.66, 23.62, 1525 },
+							["crs"] = { 175781 },	-- Sewer Creeper
+						}),
 						crit(6, {	-- The Countess
 							["coord"] = { 53.0, 41.8, 1525 },
 							["crs"] = { 175782 },	-- The Countess
