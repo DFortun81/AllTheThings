@@ -1221,6 +1221,23 @@ local function GetFixedItemSpecInfo(itemID)
 end
 
 -- Quest Completion Lib
+local PrintQuestInfo = function(questID, new, ...)
+	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
+		local searchResults = app.SearchForField("questID", questID)
+		if not searchResults or #searchResults <= 0 or (searchResults[1].parent and searchResults[1].parent.parent.text == "Unsorted") then
+			questID = questID .. " (Not in ATT " .. app.Version .. ")";
+		else
+			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
+				return true;
+			end
+		end
+		if new then
+			print("Quest accepted: #" .. questID, ...);
+		else
+			print("Completed Quest #" .. questID, ...);
+		end
+	end
+end
 local DirtyQuests = {};
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	if value then
@@ -1228,17 +1245,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		rawset(DirtyQuests, key, true);
 		SetDataSubMember("CollectedQuests", key, 1);
 		SetTempDataSubMember("CollectedQuests", key, 1);
-		if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-			local searchResults = app.SearchForField("questID", key)
-			if not searchResults or #searchResults <= 0 or (searchResults[1].parent and searchResults[1].parent.parent.text == "Unsorted") then
-			   key = key .. " (Not in ATT " .. app.Version .. ")";
-			else
-				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
-					return true;
-				end
-			end
-			print("Completed Quest #" .. key);
-		end
+		PrintQuestInfo(key);
 	end
 end});
 -- returns nil if nil provided, otherwise true/false based on the specific quest being completed by the current character
@@ -1356,12 +1363,9 @@ local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 	if not id then return nil; end
 	QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
 	QuestHarvester:SetHyperlink("quest:"..id);
---<<<<<<< HEAD
 	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetTitleForQuestID(id);
---=======
 	-- QuestHarvester:SetHyperlink("\124cffaaaaaa\124Hquest:".. id.."\124h[QUEST:".. id .. "]\124h\124r");
 --	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetQuestInfo(id);
--->>>>>>> 0875f21fddd2c298b32f8171030d1a637614cf34
 	QuestHarvester:Hide()
 	if title and title ~= RETRIEVING_DATA then
 		-- working Quest Link Example from Wowhead
@@ -16115,6 +16119,7 @@ app.events.VARIABLES_LOADED = function()
 		wipe(DirtyQuests);
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		app:RegisterEvent("QUEST_TURNED_IN");
+		app:RegisterEvent("QUEST_ACCEPTED");
 		RefreshSaves();
 
 		app.CacheFlightPathData();
@@ -16181,6 +16186,7 @@ app.events.VARIABLES_LOADED = function()
 		-- finally can say the app is ready
 		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 		app.IsReady = true;
+		-- print("ATT is Ready!");
 
 		if needRefresh then
 			-- collection refresh includes data refresh
@@ -16348,6 +16354,23 @@ app.events.QUEST_TURNED_IN = function(questID)
 end
 app.events.QUEST_LOG_UPDATE = function()
 	RefreshQuestCompletionState()
+end
+app.events.QUEST_ACCEPTED = function(questID)
+	if questID then		
+		local logIndex = C_QuestLog.GetLogIndexForQuestID(questID);
+		local freq;
+		if logIndex then
+			info = C_QuestLog.GetInfo(logIndex);
+			if info then
+				if info.frequency == 1 then
+					freq = "(D)";
+				elseif info.frequency == 2 then
+					freq = "(W)";
+				end
+			end
+		end
+		PrintQuestInfo(questID, 1, freq);
+	end
 end
 app.events.PET_BATTLE_OPENING_START = function(...)
 	local mini = app:GetWindow("CurrentInstance");
