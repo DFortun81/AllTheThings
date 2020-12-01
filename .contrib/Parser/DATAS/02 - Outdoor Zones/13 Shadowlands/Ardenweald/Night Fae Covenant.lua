@@ -13,10 +13,69 @@ _.Zones =
 					-- Start of the Covenant Quests
 					
 					-- These quests are not part of the covenant questline chapters, but are Night Fae only
+					q(63073, {	-- A Mycelial Network
+						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+						["coord"] = { 39.6, 55.0, 1702 },
+						["description"] = "Becomes available after you build Transport Network tier 1 in your sanctum.",
+					}),
+					q(62608, {	-- A Royal Treat
+						["sourceQuests"] = { 57583 },	-- Through the Veil
+						["provider"] = { "n", 167455 },	-- Marasmius
+						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+						["isDaily"] = true,
+					}),
+					q(60175, {	-- A Taste of Tirna Noch
+						["sourceQuests"] = { 57583 },	-- Through the Veil
+						["provider"] = { "n", 167455 },	-- Marasmius
+						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+						["isDaily"] = true,
+					}),
+					q(57459, {	-- Fighting For Fungus
+						["sourceQuests"] = {
+							57455,	-- Mushroom For Improvement
+							57458,	-- Ring Repairs
+						},
+						["provider"] = { "n", 157710 },	-- Cortinarius
+						["coord"] = { 29.5, 34.8, 1565 },
+					}),
+					q(62607, {	-- Glittering Gritty Goodness
+						["sourceQuests"] = { 57583 },	-- Through the Veil
+						["provider"] = { "n", 167455 },	-- Marasmius
+						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+						["isDaily"] = true,
+					}),
+					q(62614, {	-- Hyphae Patrol: Eventide Grove
+						["sourceQuests"] = { 57583 },	-- Through the Veil
+						["provider"] = { "n", 167455 },	-- Marasmius
+						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+						["isDaily"] = true,
+					}),
+					q(62615, {	-- Hyphae Patrol: Gossamer Cliffs
+						["sourceQuests"] = { 57583 },	-- Through the Veil
+						["provider"] = { "n", 167455 },	-- Marasmius
+						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+						["isDaily"] = true,
+					}),
+					q(62611, {	-- Hyphae Patrol: Heartwood Grove
+						["sourceQuests"] = { 57583 },	-- Through the Veil
+						["provider"] = { "n", 167455 },	-- Marasmius
+						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+						["isDaily"] = true,
+					}),
 					q(61553, {	-- Know Where to Strike
 						["sourceQuests"] = { 61552 },	-- The Hunt Watches
 						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 						["coord"] = { 44.6, 56.2, 1565 },
+					}),
+					q(57455, {	-- Mushroom For Improvement
+						["sourceQuests"] = { 57454 },	-- Silence in the Stalks
+						["provider"] = { "n", 157710 },	-- Cortinarius
+						["coord"] = { 33.2, 36.3, 1565 },
+					}),
+					q(57463, {	-- My Way or the Hyphae
+						["sourceQuests"] = { 57459 },	-- Fighting For Fungus
+						["provider"] = { "n", 166982 },	-- Marasmius
+						["coord"] = { 29.5, 34.6, 1565 },
 					}),
 					q(61984, {	-- Replenish the Reservoir
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
@@ -24,20 +83,35 @@ _.Zones =
 						["coord"] = { 33.9, 43.5, 1565 },
 						["isWeekly"] = true,
 					}),
+					q(57458, {	-- Ring Repairs
+						["sourceQuests"] = { 57454 },	-- Silence in the Stalks
+						["provider"] = { "n", 157710 },	-- Cortinarius
+						["coord"] = { 33.2, 36.3, 1565 },
+					}),
 					q(63067, {	-- Root Restoration
 						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
 						["coord"] = { 39.6, 55.0, 1702 },
-						["description"] = "Becomes available after you build Anima Conductor in your sanctum.",
+						["description"] = "Becomes available after you build Anima Conductor tier 1 in your sanctum.",
+					}),
+					q(57454, {	-- Silence in the Stalks
+						["sourceQuests"] = { 63073 },	-- A Mycelial Network
+						["provider"] = { "n", 174609 },	-- Zaki
+						["coord"] = { 53.2, 33.2, 1702 },
 					}),
 					q(61552, {	-- The Hunt Watches
 						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
 						["coord"] = { 39.7, 55.7, 1701 },
-						["description"] = "Becomes available after you build Command Table in your sanctum.",
+						["description"] = "Becomes available after you build Command Table tier 1 in your sanctum.",
 					}),
 					q(60723, {	-- The Roots Thirst
 						["sourceQuests"] = { 63067 },	-- Root Restoration
 						["provider"] = { "n", 167196 },	-- Sesselie
 						["coord"] = { 50.1, 63.7, 1702 },
+					}),
+					q(57583, {	-- Through the Veil
+						["sourceQuests"] = { 57463 },	-- My Way or the Hyphae
+						["provider"] = { "n", 166982 },	-- Marasmius
+						["coord"] = { 29.5, 34.6, 1565 },
 					}),
 
 					
@@ -178,6 +252,8 @@ _.Zones =
 						["coord"] = { 47.4, 36.2, 1701 },
 					}),
 
+					-- Chapter 3: The Night Warrior (Renown 5 required to start)
+					
 					
 					------------------------------
 					-- Everything past here has not been verified yet in retail
@@ -476,48 +552,6 @@ _.Zones =
 							follower(1285),	-- Te'zan
 						},
 					}),
-					
-					-- not verified yet in live -- Saving the Stalks (Transport Network Tier 1)
-					q(57454, {	-- Silence in the Stalks
-						["provider"] = { "n", 158556 },	-- Aithlyn
-						["coords"] = {
-							{ 59.4, 31.6, 1565 },
-							{ 48.4, 50.4, 1565 },
-						},
-					}),
-					q(57455, {	-- Mushroom For Improvement
-						["provider"] = { "n", 157710 },	-- Cortinarius
-						["coord"] = { 33.2, 36.3, 1565 },
-						["sourceQuests"] = { 57454 },	-- Silence in the Stalks
-					}),
-					q(57458, {	-- Ring Repairs
-						["provider"] = { "n", 157710 },	-- Cortinarius
-						["coord"] = { 33.2, 36.3, 1565 },
-						["sourceQuests"] = { 57454 },	-- Silence in the Stalks
-					}),
-					q(57459, {	-- Fighting For Fungus
-						["provider"] = { "n", 157710 },	-- Cortinarius
-						["coord"] = { 33.2, 36.3, 1565 },
-						["sourceQuests"] = {
-							57455,	-- Mushroom For Improvement
-							57458,	-- Ring Repairs
-						},
-					}),
-					q(57463, {	-- My Way or the Hyphae
-						["provider"] = { "n", 166982 },	-- Marasmius
-						["coord"] = { 29.5, 34.6, 1565 },
-						["sourceQuests"] = { 57454 },	-- Silence in the Stalks
-					}),
-					q(57583, {	-- Through the Veil
-						["provider"] = { "n", 166982 },	-- Marasmius
-						["coord"] = { 29.5, 34.6, 1565 },
-						["sourceQuests"] = { 57454 },	-- Silence in the Stalks
-					}),
-					q(62611, {	-- Hyphae Patrol: Heartwood Grove
-						["provider"] = { "n", 167455 },	-- Marasmius
-						["coord"] = { 52.7, 56.1, 1565 },
-						["sourceQuests"] = { 57583 },	-- Through the Veil
-					}),
 				}),
 				n(RARES, {
 				}),
@@ -533,6 +567,41 @@ _.Zones =
 					}),
 				}),
 				n(VENDORS, {
+					n(174766, {	-- Cortinarius <Marasmius Quartermaster>
+						["coord"] = { 56.1, 51.3, 1819 },	-- The Ring
+						["g"] = {
+							i(180724, {	-- Enchanted Winterborn Runestag (MOUNT)
+								["cost"] = { { "c", 1813, 5000 } },
+							}),
+							i(183801, {	-- Vibrant Flutterwing (MOUNT)
+								["cost"] = { { "c", 1813, 5000 } },
+							}),
+							i(184118, {	-- Arsenal: Winterborn Weapons
+								["cost"] = { { "c", 1813, 30000 } },
+							}),
+							i(181305, {	-- Faewoven Bulb
+								["cost"] = { { "c", 1813, 3500 } },
+							}),
+							i(182661, {	-- Fun Guss
+								["cost"] = { { "i", 163036, 250 } },
+							}),
+							i(180638, {	-- Fuzzy Shimmermoth
+								["cost"] = { { "i", 163036, 250 } },
+							}),
+							i(181303, {	-- Night Courtier's Branches
+								["cost"] = { { "c", 1813, 3500 } },
+							}),
+							i(182674, {	-- Sir Reginald
+								["cost"] = { { "i", 163036, 250 } },
+							}),
+							i(182181, {	-- Tiger Soul
+								["cost"] = { { "c", 1813, 1500 } },
+							}),
+							i(182166, {	-- Ursine Soul
+								["cost"] = { { "c", 1813, 1500 } },
+							}),
+						},
+					}),
 					n(174914, {	-- Elwyn <Renown Quartermaster>
 						["coord"] = { 60.2, 33.2, 1701 },	-- Heart of the Forest
 						["g"] = {

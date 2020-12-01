@@ -141,44 +141,6 @@ _.Zones =
 						i(184753),	-- Tree-Scaler's Britches
 					},
 				}),
-				n(174766, {	-- Cortinarius <Marasmius Quartermaster>
-					["coords"] = {
-						{ 33.2, 36.4, 1565 },
-						{ 29.6, 34.8, 1565 },
-					},
-					["g"] = {
-						i(181303, {	-- Night Courtier's Branches
-							["cost"] = { { "c", 1813, 2500 } },
-						}),
-						i(181305, {	-- Faewoven Bulb
-							["cost"] = { { "c", 1813, 2500 } },
-						}),
-						i(180724, {	-- Enchanted Winterborn Runestag
-							["cost"] = { { "c", 1813, 5000 } },
-						}),
-						i(183801, {	-- Vibrant Flutterwing
-							["cost"] = { { "c", 1813, 5000 } },
-						}),
-						i(184118, {	-- Arsenal: Winterborn Weapons
-							["cost"] = { { "c", 1813, 8000 } },
-						}),
-						i(180638, {	-- Fuzzy Shimmermoth
-							["cost"] = { { "i", 163036, 250 } },
-						}),
-						i(182166, {	-- Ursine Soul
-							["cost"] = { { "c", 1813, 1500 } },
-						}),
-						i(182181, {	-- Tiger Soul
-							["cost"] = { { "c", 1813, 1500 } },
-						}),
-						i(182661, {	-- Fun Guss
-							["cost"] = { { "i", 163036, 250 } },
-						}),
-						i(182674, {	-- Sir Reginald
-							["cost"] = { { "i", 163036, 250 } },
-						}),
-					},
-				}),
 				n(175415, {	-- Harkoth <Heroic Nathrian Weaponsmith>
 					--["coord"] = { 55.0, 51.4, 1699 },
 					["g"] = bubbleDown({["modID"] = 5}, {
