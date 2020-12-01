@@ -193,25 +193,28 @@ _.Zones =
 									},
 								}),
 								i(118723, {	-- Secret of Draenor Jewelcrafting
-									i(116096),	-- Recipe: Critical Strike Taladite
-									i(116093),	-- Recipe: Glowing Taladite Pendant
-									i(116090),	-- Recipe: Glowing Taladite Ring
-									i(116102),	-- Recipe: Greater Critical Strike Taladite
-									i(116103),	-- Recipe: Greater Haste Taladite
-									i(116104),	-- Recipe: Greater Mastery Taladite
-									i(116107),	-- Recipe: Greater Stamina Taladite
-									i(116106),	-- Recipe: Greater Versatility Taladite
-									i(116097),	-- Recipe: Haste Taladite
-									i(116098),	-- Recipe: Mastery Taladite
-									i(116109),	-- Recipe: Prismatic Focusing Lens
-									i(116108),	-- Recipe: Reflecting Prism
-									i(116094),	-- Recipe: Shifting Taladite Pendant
-									i(116091),	-- Recipe: Shifting Taladite Ring
-									i(116101),	-- Recipe: Stamina Taladite
-									i(116078),	-- Recipe: Taladite Recrystalizer
-									i(116100),	-- Recipe: Versatility Taladite
-									i(116095),	-- Recipe: Whispering Taladite Pendant
-									i(116092),	-- Recipe: Whispering Taladite Ring
+									["collectible"] = false,
+									["g"] = {
+										i(116096),	-- Recipe: Critical Strike Taladite
+										i(116093),	-- Recipe: Glowing Taladite Pendant
+										i(116090),	-- Recipe: Glowing Taladite Ring
+										i(116102),	-- Recipe: Greater Critical Strike Taladite
+										i(116103),	-- Recipe: Greater Haste Taladite
+										i(116104),	-- Recipe: Greater Mastery Taladite
+										i(116107),	-- Recipe: Greater Stamina Taladite
+										i(116106),	-- Recipe: Greater Versatility Taladite
+										i(116097),	-- Recipe: Haste Taladite
+										i(116098),	-- Recipe: Mastery Taladite
+										i(116109),	-- Recipe: Prismatic Focusing Lens
+										i(116108),	-- Recipe: Reflecting Prism
+										i(116094),	-- Recipe: Shifting Taladite Pendant
+										i(116091),	-- Recipe: Shifting Taladite Ring
+										i(116101),	-- Recipe: Stamina Taladite
+										i(116078),	-- Recipe: Taladite Recrystalizer
+										i(116100),	-- Recipe: Versatility Taladite
+										i(116095),	-- Recipe: Whispering Taladite Pendant
+										i(116092),	-- Recipe: Whispering Taladite Ring
+									},
 								}),
 							},
 						}),
@@ -1488,23 +1491,26 @@ _.Zones =
 								i(112040),	-- Recipe: Draenic Strength Potion
 								un(NEVER_IMPLEMENTED, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
 								i(118700, {	-- Secret of Draenor Alchemy
-									i(112023),	-- Recipe: Draenic Philosopher's Stone
-									i(112045),	-- Recipe: Draenic Rejuvenation Potion
-									i(112024),	-- Recipe: Draenic Agility Flask
-									i(112026),	-- Recipe: Draenic Intellect Flask
-									i(112030),	-- Recipe: Draenic Stamina Flask
-									i(112027),	-- Recipe: Draenic Strength Flask
-									i(112031),	-- Recipe: Greater Draenic Agility Flask
-									i(112033),	-- Recipe: Greater Draenic Intellect Flask
-									i(112037),	-- Recipe: Greater Draenic Stamina Flask
-									i(112034),	-- Recipe: Greater Draenic Strength Flask
-									i(112047),	-- Recipe: Transmorphic Tincture
-									i(160662),  -- Recipe: Blackwater Anti-Venom
-									i(160663),  -- Recipe: Healing Tonic
-									i(160661),  -- Recipe: Fire Ammonite Oil
-									i(114028, {	-- Small Pouch of Coins
-										["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
-									}),
+									["collectible"] = false,
+									["g"] = {
+										i(112023),	-- Recipe: Draenic Philosopher's Stone
+										i(112045),	-- Recipe: Draenic Rejuvenation Potion
+										i(112024),	-- Recipe: Draenic Agility Flask
+										i(112026),	-- Recipe: Draenic Intellect Flask
+										i(112030),	-- Recipe: Draenic Stamina Flask
+										i(112027),	-- Recipe: Draenic Strength Flask
+										i(112031),	-- Recipe: Greater Draenic Agility Flask
+										i(112033),	-- Recipe: Greater Draenic Intellect Flask
+										i(112037),	-- Recipe: Greater Draenic Stamina Flask
+										i(112034),	-- Recipe: Greater Draenic Strength Flask
+										i(112047),	-- Recipe: Transmorphic Tincture
+										i(160662),  -- Recipe: Blackwater Anti-Venom
+										i(160663),  -- Recipe: Healing Tonic
+										i(160661),  -- Recipe: Fire Ammonite Oil
+										i(114028, {	-- Small Pouch of Coins
+											["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
+										}),
+									},
 								}),
 							},
 						}),
@@ -1603,27 +1609,30 @@ _.Zones =
 									},
 								}),
 								i(118720, {	-- Secret of Draenor Blacksmithing
-									i(119329),	-- Recipe: Soul of the Forge
-									i(120262),	-- Recipe: Steelforged Aegis
-									i(120260),	-- Recipe: Steelforged Axe
-									i(116731),	-- Recipe: Steelforged Dagger
-									i(116729),	-- Recipe: Steelforged Greataxe
-									i(116732),	-- Recipe: Steelforged Hammer
-									i(116730),	-- Recipe: Steelforged Saber
-									i(116733),	-- Recipe: Steelforged Shield
-									i(116740),	-- Recipe: Truesteel Armguards
-									i(116741),	-- Recipe: Truesteel Boots
-									i(116739),	-- Recipe: Truesteel Breastplate
-									i(116738),	-- Recipe: Truesteel Gauntlets
-									i(116737),	-- Recipe: Truesteel Greaves
-									i(116734),	-- Recipe: Truesteel Grinder
-									i(116736),	-- Recipe: Truesteel Helm
-									i(116735),	-- Recipe: Truesteel Pauldrons
-									i(118044),	-- Recipe: Truesteel Reshaper
-									i(116742),	-- Recipe: Truesteel Waistguard
-									i(116764, {	-- Small Pouch of Coins
-										["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
-									}),
+									["collectible"] = false,
+									["g"] = {
+										i(119329),	-- Recipe: Soul of the Forge
+										i(120262),	-- Recipe: Steelforged Aegis
+										i(120260),	-- Recipe: Steelforged Axe
+										i(116731),	-- Recipe: Steelforged Dagger
+										i(116729),	-- Recipe: Steelforged Greataxe
+										i(116732),	-- Recipe: Steelforged Hammer
+										i(116730),	-- Recipe: Steelforged Saber
+										i(116733),	-- Recipe: Steelforged Shield
+										i(116740),	-- Recipe: Truesteel Armguards
+										i(116741),	-- Recipe: Truesteel Boots
+										i(116739),	-- Recipe: Truesteel Breastplate
+										i(116738),	-- Recipe: Truesteel Gauntlets
+										i(116737),	-- Recipe: Truesteel Greaves
+										i(116734),	-- Recipe: Truesteel Grinder
+										i(116736),	-- Recipe: Truesteel Helm
+										i(116735),	-- Recipe: Truesteel Pauldrons
+										i(118044),	-- Recipe: Truesteel Reshaper
+										i(116742),	-- Recipe: Truesteel Waistguard
+										i(116764, {	-- Small Pouch of Coins
+											["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
+										}),
+									},
 								}),
 								i(108421, {	-- Plans: Blackrock Crucibles and Their Uses
 									["u"] = NEVER_IMPLEMENTED,
@@ -1643,25 +1652,28 @@ _.Zones =
 									["collectible"] = false,
 								}),
 								i(119299, {	-- Secret of Draenor Engineering
-									i(118493),	-- Schematic: Didi's Delicate Assembly
-									i(118490),	-- Schematic: Blingtron 5000
-									i(118480),	-- Schematic: Findle's Loot-a-Rang
-									i(118495),	-- Schematic: Hemet's Heartseeker
-									i(118485),	-- Schematic: Lifelike Mechanical Frostboar
-									i(118484),	-- Schematic: Mechanical Axebeak
-									i(119177),	-- Schematic: Mechanical Scorpid
-									i(118478),	-- Schematic: Megawatt Filament
-									i(118477),	-- Schematic: Oglethorpe's Missle Splitter
-									i(118487),	-- Schematic: Personal Hologram
-									i(118497),	-- Schematic: Cybergenetic Mechshades
-									i(118498),	-- Schematic: Night-Vision Mechshades
-									i(118499),	-- Schematic: Plasma Mechshades
-									i(118500),	-- Schematic: Razorguard Mechshades
-									i(118476),	-- Schematic: Shrediron's Shredder
-									i(118489),	-- Schematic: Swapblaster
-									i(118481),	-- Schematic: World Shrinker
-									i(118488),	-- Schematic: Wormhole Centrifuge
-									i(128327),	-- Small Pouch of Coins
+									["collectible"] = false,
+									["g"] = {
+										i(118493),	-- Schematic: Didi's Delicate Assembly
+										i(118490),	-- Schematic: Blingtron 5000
+										i(118480),	-- Schematic: Findle's Loot-a-Rang
+										i(118495),	-- Schematic: Hemet's Heartseeker
+										i(118485),	-- Schematic: Lifelike Mechanical Frostboar
+										i(118484),	-- Schematic: Mechanical Axebeak
+										i(119177),	-- Schematic: Mechanical Scorpid
+										i(118478),	-- Schematic: Megawatt Filament
+										i(118477),	-- Schematic: Oglethorpe's Missle Splitter
+										i(118487),	-- Schematic: Personal Hologram
+										i(118497),	-- Schematic: Cybergenetic Mechshades
+										i(118498),	-- Schematic: Night-Vision Mechshades
+										i(118499),	-- Schematic: Plasma Mechshades
+										i(118500),	-- Schematic: Razorguard Mechshades
+										i(118476),	-- Schematic: Shrediron's Shredder
+										i(118489),	-- Schematic: Swapblaster
+										i(118481),	-- Schematic: World Shrinker
+										i(118488),	-- Schematic: Wormhole Centrifuge
+										i(128327),	-- Small Pouch of Coins
+									},
 								}),
 								i(120267, {	-- Schematic: Blackrock Rifling
 									["u"] = REMOVED_FROM_GAME,	-- Deprecated and removed in 6.2.0

@@ -19,24 +19,27 @@ profession(TAILORING, {
 						},
 					}),
 					i(118722, {	-- Secret of Draenor Tailoring
-						i(114863),	-- Pattern: Brilliant Hexweave Cloak
-						i(114866),	-- Pattern: Creeping Carpet
-						i(114865),	-- Pattern: Elekk Plushie
-						i(114852),	-- Pattern: Hexweave Embroidery
-						i(114864),	-- Pattern: Hexweave Bag
-						i(114860),	-- Pattern: Hexweave Belt
-						i(114858),	-- Pattern: Hexweave Bracers
-						i(114854),	-- Pattern: Hexweave Cowl
-						i(114856),	-- Pattern: Hexweave Gloves
-						i(114855),	-- Pattern: Hexweave Leggings
-						i(114853),	-- Pattern: Hexweave Mantle
-						i(114857),	-- Pattern: Hexweave Robe
-						i(114859),	-- Pattern: Hexweave Slippers
-						i(114862),	-- Pattern: Nimble Hexweave Cloak
-						i(114861),	-- Pattern: Powerful Hexweave Cloak
-						i(114970, {	-- Small Pouch of Coins
-							["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
-						}),
+						["collectible"] = false,
+						["g"] = {
+							i(114863),	-- Pattern: Brilliant Hexweave Cloak
+							i(114866),	-- Pattern: Creeping Carpet
+							i(114865),	-- Pattern: Elekk Plushie
+							i(114852),	-- Pattern: Hexweave Embroidery
+							i(114864),	-- Pattern: Hexweave Bag
+							i(114860),	-- Pattern: Hexweave Belt
+							i(114858),	-- Pattern: Hexweave Bracers
+							i(114854),	-- Pattern: Hexweave Cowl
+							i(114856),	-- Pattern: Hexweave Gloves
+							i(114855),	-- Pattern: Hexweave Leggings
+							i(114853),	-- Pattern: Hexweave Mantle
+							i(114857),	-- Pattern: Hexweave Robe
+							i(114859),	-- Pattern: Hexweave Slippers
+							i(114862),	-- Pattern: Nimble Hexweave Cloak
+							i(114861),	-- Pattern: Powerful Hexweave Cloak
+							i(114970, {	-- Small Pouch of Coins
+								["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
+							}),
+						},
 					}),
 				},
 			}),
@@ -72,24 +75,27 @@ profession(TAILORING, {
 						},
 					}),
 					i(118722, {	-- Secret of Draenor Tailoring
-						i(114863),	-- Pattern: Brilliant Hexweave Cloak
-						i(114866),	-- Pattern: Creeping Carpet
-						i(114865),	-- Pattern: Elekk Plushie
-						i(114852),	-- Pattern: Hexweave Embroidery
-						i(114864),	-- Pattern: Hexweave Bag
-						i(114860),	-- Pattern: Hexweave Belt
-						i(114858),	-- Pattern: Hexweave Bracers
-						i(114854),	-- Pattern: Hexweave Cowl
-						i(114856),	-- Pattern: Hexweave Gloves
-						i(114855),	-- Pattern: Hexweave Leggings
-						i(114853),	-- Pattern: Hexweave Mantle
-						i(114857),	-- Pattern: Hexweave Robe
-						i(114859),	-- Pattern: Hexweave Slippers
-						i(114862),	-- Pattern: Nimble Hexweave Cloak
-						i(114861),	-- Pattern: Powerful Hexweave Cloak
-						i(114970, {	-- Small Pouch of Coins
-							["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
-						}),
+						["collectible"] = false,
+						["g"] = {
+							i(114863),	-- Pattern: Brilliant Hexweave Cloak
+							i(114866),	-- Pattern: Creeping Carpet
+							i(114865),	-- Pattern: Elekk Plushie
+							i(114852),	-- Pattern: Hexweave Embroidery
+							i(114864),	-- Pattern: Hexweave Bag
+							i(114860),	-- Pattern: Hexweave Belt
+							i(114858),	-- Pattern: Hexweave Bracers
+							i(114854),	-- Pattern: Hexweave Cowl
+							i(114856),	-- Pattern: Hexweave Gloves
+							i(114855),	-- Pattern: Hexweave Leggings
+							i(114853),	-- Pattern: Hexweave Mantle
+							i(114857),	-- Pattern: Hexweave Robe
+							i(114859),	-- Pattern: Hexweave Slippers
+							i(114862),	-- Pattern: Nimble Hexweave Cloak
+							i(114861),	-- Pattern: Powerful Hexweave Cloak
+							i(114970, {	-- Small Pouch of Coins
+								["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
+							}),
+						},
 					}),
 				},
 			}),
