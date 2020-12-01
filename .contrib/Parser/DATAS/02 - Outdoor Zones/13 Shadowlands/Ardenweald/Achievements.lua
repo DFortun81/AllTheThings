@@ -21,6 +21,27 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(14774, {	-- Ardenweald Gourmand
+					["description"] = "All food is sold by Tanor in Ardenweald at |cFFFFFFFF65.0, 19.6|r.",
+					["g"] = {
+						crit(1),		-- Glittersnap Snowpeas
+						crit(2),		-- Glazed Glowberries
+						crit(3),		-- Candied Brightbark
+						crit(4),		-- Torchberry Bundle
+						crit(5),		-- Grilled Slumbershrooms
+						crit(6),		-- Charred Runeflank
+						crit(7),		-- Poached Strider Egg
+						crit(8),		-- Flask of Ardendew
+						crit(9),		-- Mulled Faewine
+						crit(10),		-- Wintermelon Brandy
+						crit(11),		-- Honeyplum Pie
+						crit(12),		-- Sylberry Snowcake
+						crit(13),		-- Ripe Wintermelon
+						crit(14),		-- Wild Hunter's Stew
+						crit(15),		-- Steamed Gorm Tail
+						crit(16),		-- Midnight Starpepper
+					},
+				}),
 				ach(14353, {	-- Ardenweald's a Stage
 				--	TODO: you can't summon these without being in the Night Fae Covenant, but you *can* kill summoned mobs and get loot + achievement credit.
 				--	completing the achievement unlocks the ability to purchase the Silky Shimmermoth from Master Clerk Salorn, but you may need to be in the covenant to purchase it.  test?
@@ -357,6 +378,20 @@ _.Zones =
 						["questID"] = 61068,
 						["description"] = "Use the Mushroom at |cFFFFFFFF37.6, 61.5|r and jump into the broken tree.",
 					}),
+				}),
+				ach(14779, {	-- Wild Hunting
+					crit(1),		-- Nightsong Wader
+					crit(2),		-- Decayfly
+					crit(3),		-- Basin Vulpin
+					crit(4),		-- Greater Ardenmoth
+					crit(5),		-- Verdant Prowler
+					crit(6),		-- Veilwing Guardian
+					crit(7),		-- Highland Runestag
+					crit(8),		-- Wild Gloomrunner
+					crit(9),		-- Voracious Lasher
+					crit(10),		-- Mystic Gulper
+					crit(11),		-- Roving Gladechewer
+					crit(12),		-- Wild Gormling
 				}),
 			}),
 		}),
