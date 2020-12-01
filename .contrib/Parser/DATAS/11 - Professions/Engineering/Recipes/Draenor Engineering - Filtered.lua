@@ -55,11 +55,13 @@ profession(ENGINEERING, {
 					["g"] = {
 						{
 							["name"] = "Advanced Muzzlesprocket",
-							["recipeID"] = 187496
+							["recipeID"] = 187496,
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{
 							["name"] = "Bi-Directional Fizzle Reducer",
-							["recipeID"] = 187497
+							["recipeID"] = 187497,
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{
 							["name"] = "Didi's Delicate Assembly",
@@ -79,11 +81,13 @@ profession(ENGINEERING, {
 						},
 						{
 							["name"] = "Infrablue-Blocker Lenses",
-							["recipeID"] = 187521
+							["recipeID"] = 187521,
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{
 							["name"] = "Linkgrease Locksprocket",
-							["recipeID"] = 169076
+							["recipeID"] = 169076,
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{
 							["name"] = "Mecha-Blast Rocket",
@@ -119,11 +123,13 @@ profession(ENGINEERING, {
 						},
 						{
 							["name"] = "Taladite Firing Pin",
-							["recipeID"] = 187520
+							["recipeID"] = 187520,
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{
 							["name"] = "True Iron Trigger",
-							["recipeID"] = 177363
+							["recipeID"] = 177363,
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{
 							["name"] = "Ultimate Gnomish Army Knife",

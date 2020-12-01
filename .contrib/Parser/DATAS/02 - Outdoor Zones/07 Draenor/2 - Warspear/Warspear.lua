@@ -1612,13 +1612,11 @@ _.Zones =
 									i(118478),	-- Schematic: Megawatt Filament
 									i(118477),	-- Schematic: Oglethorpe's Missle Splitter
 									i(118487),	-- Schematic: Personal Hologram
-									i(118491),	-- Schematic: Linkgrease Locksprocket
 									i(118497),	-- Schematic: Cybergenetic Mechshades
 									i(118498),	-- Schematic: Night-Vision Mechshades
 									i(118499),	-- Schematic: Plasma Mechshades
 									i(118500),	-- Schematic: Razorguard Mechshades
 									i(118476),	-- Schematic: Shrediron's Shredder
-									i(120268),	-- Schematic: True Iron Trigger
 									i(118489),	-- Schematic: Swapblaster
 									i(118481),	-- Schematic: World Shrinker
 									i(118488),	-- Schematic: Wormhole Centrifuge

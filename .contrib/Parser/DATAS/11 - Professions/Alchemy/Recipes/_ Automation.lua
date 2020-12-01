@@ -2199,11 +2199,6 @@ profession(171, {	-- Alchemy
 							["recipeID"] = 156560
 						},
 						{
-							["name"] = "Elemental Distillate",
-							["hash"] = "recipeID188676",
-							["recipeID"] = 188676
-						},
-						{
 							["name"] = "Stone of Fire",
 							["hash"] = "recipeID181650",
 							["recipeID"] = 181650
@@ -2222,11 +2217,6 @@ profession(171, {	-- Alchemy
 							["name"] = "Stone of Wind",
 							["hash"] = "recipeID181647",
 							["recipeID"] = 181647
-						},
-						{
-							["name"] = "Wildswater",
-							["hash"] = "recipeID188674",
-							["recipeID"] = 188674
 						}
 					}
 				}

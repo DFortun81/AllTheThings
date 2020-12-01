@@ -492,7 +492,7 @@ profession(197, {	-- Tailoring
 			}
 		},
 		{
-			["name"] = "Kul Tiran Patterns",
+			["name"] = "Zandalari Patterns",
 			["categoryID"] = 942,
 			["hash"] = "categoryID942",
 			["g"] = {
@@ -3829,8 +3829,8 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["name"] = "Merlin's Robe",
-							["hash"] = "recipeID67066",
-							["recipeID"] = 67066
+							["hash"] = "recipeID67146",
+							["recipeID"] = 67146
 						},
 						{
 							["name"] = "Moonshroud Robe",
@@ -3844,8 +3844,8 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["name"] = "Royal Moonshroud Robe",
-							["hash"] = "recipeID67064",
-							["recipeID"] = 67064
+							["hash"] = "recipeID67144",
+							["recipeID"] = 67144
 						},
 						{
 							["name"] = "Spellweave Robe",
@@ -4006,8 +4006,8 @@ profession(197, {	-- Tailoring
 					["g"] = {
 						{
 							["name"] = "Bejeweled Wizard's Bracers",
-							["hash"] = "recipeID67079",
-							["recipeID"] = 67079
+							["hash"] = "recipeID67145",
+							["recipeID"] = 67145
 						},
 						{
 							["name"] = "Black Duskweave Wristwraps",
@@ -4036,8 +4036,8 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["name"] = "Royal Moonshroud Bracers",
-							["hash"] = "recipeID67065",
-							["recipeID"] = 67065
+							["hash"] = "recipeID67147",
+							["recipeID"] = 67147
 						}
 					}
 				},

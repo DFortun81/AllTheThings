@@ -34,7 +34,6 @@ profession(TAILORING, {
 						i(114859),	-- Pattern: Hexweave Slippers
 						i(114862),	-- Pattern: Nimble Hexweave Cloak
 						i(114861),	-- Pattern: Powerful Hexweave Cloak
-						i(114871),	-- Recipe: Hexweave Essence
 						i(114970, {	-- Small Pouch of Coins
 							["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
 						}),
@@ -88,7 +87,6 @@ profession(TAILORING, {
 						i(114859),	-- Pattern: Hexweave Slippers
 						i(114862),	-- Pattern: Nimble Hexweave Cloak
 						i(114861),	-- Pattern: Powerful Hexweave Cloak
-						i(114871),	-- Recipe: Hexweave Essence
 						i(114970, {	-- Small Pouch of Coins
 							["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
 						}),

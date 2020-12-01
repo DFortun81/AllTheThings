@@ -32,9 +32,11 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(127724, {	-- Recipe: Mighty Hexweave Essence
+							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 						}),
 						i(127742, {	-- Recipe: Savage Hexweave Essence
+							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 						}),
 					},
@@ -591,18 +593,22 @@ _.ExpansionFeatures =
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127729, {	-- Schematic: Advanced Muzzlesprocket
+							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127721, {	-- Schematic: Bi-Directional Fizzle Reducer
+							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127739, {	-- Schematic: Infrablue-Blocker Lenses
+							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(122712, {	-- Schematic: Primal Welding
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127747, {	-- Schematic: Taladite Firing Pin
+							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 					},

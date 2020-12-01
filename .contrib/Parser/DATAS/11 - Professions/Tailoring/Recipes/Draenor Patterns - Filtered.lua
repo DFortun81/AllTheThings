@@ -40,6 +40,20 @@ profession(TAILORING, {
 				},
 				{
 					["categoryID"] = 364--[[Dyes and Thread]],
+					["g"] = {
+						{
+							["recipeID"] = 168855,	-- Hexweave Essence
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
+						},
+						{
+							["recipeID"] = 187492,	-- Mighty Hexweave Essence
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
+						},
+						{
+							["recipeID"] = 187516,	-- Savage Hexweave Essence
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
+						},
+					},
 				},
 				{
 					["categoryID"] = 363--[[Armor]],
