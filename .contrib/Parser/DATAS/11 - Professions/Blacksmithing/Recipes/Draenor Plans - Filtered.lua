@@ -26,22 +26,28 @@ profession(BLACKSMITHING, {
 					["categoryID"] = 391--[[Item Enhancers]],
 					["g"] = {
 						{	-- Savage Truesteel Essence
-							["recipeID"] = 187515--[[Savage Truesteel Essence]]
+							["recipeID"] = 187515,--[[Savage Truesteel Essence]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Savage Steelforged Essence
-							["recipeID"] = 187514--[[Savage Steelforged Essence]]
+							["recipeID"] = 187514,--[[Savage Steelforged Essence]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Mighty Truesteel Essence
-							["recipeID"] = 187491--[[Mighty Truesteel Essence]]
+							["recipeID"] = 187491,--[[Mighty Truesteel Essence]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Mighty Steelforged Essence
-							["recipeID"] = 187490--[[Mighty Steelforged Essence]]
+							["recipeID"] = 187490,--[[Mighty Steelforged Essence]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Steelforged Essence
-							["recipeID"] = 171710--[[Steelforged Essence]]
+							["recipeID"] = 171710,--[[Steelforged Essence]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Truesteel Essence
-							["recipeID"] = 171708--[[Truesteel Essence]]
+							["recipeID"] = 171708,--[[Truesteel Essence]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Truesteel Grinder
 							["recipeID"] = 171699--[[Truesteel Grinder]]

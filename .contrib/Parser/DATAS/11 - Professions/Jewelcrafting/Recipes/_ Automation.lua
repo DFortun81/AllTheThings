@@ -199,6 +199,28 @@ profession(755, {	-- Jewelcrafting
 					}
 				},
 				{
+					["name"] = "Optional Reagents",
+					["categoryID"] = 1421,
+					["hash"] = "categoryID1421",
+					["g"] = {
+						{
+							["name"] = "Crafter's Mark I",
+							["hash"] = "recipeID343697",
+							["recipeID"] = 343697
+						},
+						{
+							["name"] = "Crafter's Mark II",
+							["hash"] = "recipeID343696",
+							["recipeID"] = 343696
+						},
+						{
+							["name"] = "Novice Crafter's Mark",
+							["hash"] = "recipeID343693",
+							["recipeID"] = 343693
+						}
+					}
+				},
+				{
 					["name"] = "Necklaces",
 					["categoryID"] = 1422,
 					["hash"] = "categoryID1422",
@@ -299,13 +321,13 @@ profession(755, {	-- Jewelcrafting
 					["g"] = {
 						{
 							["name"] = "Shadowghast Necklace",
-							["hash"] = "recipeID327921",
-							["recipeID"] = 327921
+							["hash"] = "recipeID332040",
+							["recipeID"] = 332040
 						},
 						{
 							["name"] = "Shadowghast Necklace",
-							["hash"] = "recipeID332040",
-							["recipeID"] = 332040
+							["hash"] = "recipeID327921",
+							["recipeID"] = 327921
 						},
 						{
 							["name"] = "Shadowghast Necklace",
@@ -324,6 +346,11 @@ profession(755, {	-- Jewelcrafting
 						},
 						{
 							["name"] = "Shadowghast Ring",
+							["hash"] = "recipeID332074",
+							["recipeID"] = 332074
+						},
+						{
+							["name"] = "Shadowghast Ring",
 							["hash"] = "recipeID327920",
 							["recipeID"] = 327920
 						},
@@ -331,11 +358,6 @@ profession(755, {	-- Jewelcrafting
 							["name"] = "Shadowghast Ring",
 							["hash"] = "recipeID338978",
 							["recipeID"] = 338978
-						},
-						{
-							["name"] = "Shadowghast Ring",
-							["hash"] = "recipeID332074",
-							["recipeID"] = 332074
 						}
 					}
 				},
@@ -1559,13 +1581,13 @@ profession(755, {	-- Jewelcrafting
 						},
 						{
 							["name"] = "Taladite Crystal",
-							["hash"] = "recipeID170700",
-							["recipeID"] = 170700
+							["hash"] = "recipeID170832",
+							["recipeID"] = 170832
 						},
 						{
 							["name"] = "Taladite Crystal",
-							["hash"] = "recipeID170832",
-							["recipeID"] = 170832
+							["hash"] = "recipeID170700",
+							["recipeID"] = 170700
 						}
 					}
 				},
@@ -1574,21 +1596,6 @@ profession(755, {	-- Jewelcrafting
 					["categoryID"] = 375,
 					["hash"] = "categoryID375",
 					["g"] = {
-						{
-							["name"] = "Mighty Taladite Amplifier",
-							["hash"] = "recipeID187493",
-							["recipeID"] = 187493
-						},
-						{
-							["name"] = "Savage Taladite Amplifier",
-							["hash"] = "recipeID187517",
-							["recipeID"] = 187517
-						},
-						{
-							["name"] = "Taladite Amplifier",
-							["hash"] = "recipeID170702",
-							["recipeID"] = 170702
-						},
 						{
 							["name"] = "Taladite Recrystalizer",
 							["hash"] = "recipeID170701",

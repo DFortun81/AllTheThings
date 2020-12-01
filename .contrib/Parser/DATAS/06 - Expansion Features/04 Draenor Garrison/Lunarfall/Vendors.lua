@@ -20,12 +20,15 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(127725, {	-- Recipe: Mighty Steelforged Essence
+							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127726, {	-- Recipe: Mighty Taladite Amplifier
+							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127727, {	-- Recipe: Mighty Truesteel Essence
+							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						un(REMOVED_FROM_GAME, i(122551)),	-- Recipe: Powerful Taladite Amplifier
@@ -36,12 +39,15 @@ _.ExpansionFeatures =
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127743, {	-- Recipe: Savage Steelforged Essence
+							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127744, {	-- Recipe: Savage Taladite Amplifier
+							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127745, {	-- Recipe: Savage Truesteel Essence
+							["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127729, {	-- Schematic: Advanced Muzzlesprocket

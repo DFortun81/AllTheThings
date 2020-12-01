@@ -1498,7 +1498,6 @@ _.Zones =
 									i(116094),	-- Recipe: Shifting Taladite Pendant
 									i(116091),	-- Recipe: Shifting Taladite Ring
 									i(116101),	-- Recipe: Stamina Taladite
-									i(116079),	-- Recipe: Taladite Amplifier
 									i(116078),	-- Recipe: Taladite Recrystalizer
 									i(116100),	-- Recipe: Versatility Taladite
 									i(116095),	-- Recipe: Whispering Taladite Pendant
@@ -1654,7 +1653,6 @@ _.Zones =
 									i(120262),	-- Recipe: Steelforged Aegis
 									i(120260),	-- Recipe: Steelforged Axe
 									i(116731),	-- Recipe: Steelforged Dagger
-									i(116745),	-- Recipe: Steelforged Essence
 									i(116729),	-- Recipe: Steelforged Greataxe
 									i(116732),	-- Recipe: Steelforged Hammer
 									i(116730),	-- Recipe: Steelforged Saber
@@ -1662,7 +1660,6 @@ _.Zones =
 									i(116740),	-- Recipe: Truesteel Armguards
 									i(116741),	-- Recipe: Truesteel Boots
 									i(116739),	-- Recipe: Truesteel Breastplate
-									i(116743),	-- Recipe: Truesteel Essence
 									i(116738),	-- Recipe: Truesteel Gauntlets
 									i(116737),	-- Recipe: Truesteel Greaves
 									i(116734),	-- Recipe: Truesteel Grinder
