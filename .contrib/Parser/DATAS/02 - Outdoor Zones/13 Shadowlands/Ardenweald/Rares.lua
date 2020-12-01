@@ -32,7 +32,7 @@ _.Zones =
 				}),
 				n(163229, {	-- Dustbrawl
 					["coord"] = { 48.6, 76.8, 1565 },
-					--["questID"] = ,
+					["questID"] = 58987,
 					["isDaily"] = true,
 					["g"] = {
 						crit(17, {	-- Dustbrawl (crit 18 is also Dustbrawl, why??)

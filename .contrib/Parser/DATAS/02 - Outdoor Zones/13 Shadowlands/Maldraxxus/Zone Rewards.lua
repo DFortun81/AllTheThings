@@ -10,6 +10,7 @@ _.Zones =
 				["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
 				["g"] = {
 					i(181664),	-- Bloodsilk Hood
+					i(181679),	-- Bloodsilk Wristwraps
 				},
 			}),
 		}),
