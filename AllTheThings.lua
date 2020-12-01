@@ -1221,7 +1221,7 @@ local function GetFixedItemSpecInfo(itemID)
 end
 
 -- Quest Completion Lib
-local PrintQuestInfo = function(questID, new, ...)
+local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local searchResults = app.SearchForField("questID", questID)
 		if not searchResults or #searchResults <= 0 or (searchResults[1].parent and searchResults[1].parent.parent.text == "Unsorted") then
@@ -1232,9 +1232,9 @@ local PrintQuestInfo = function(questID, new, ...)
 			end
 		end
 		if new then
-			print("Quest accepted: #" .. questID, ...);
+			print("Quest accepted: #" .. questID .. (info or ""));
 		else
-			print("Completed Quest #" .. questID, ...);
+			print("Completed Quest #" .. questID .. (info or ""));
 		end
 	end
 end
@@ -16363,9 +16363,9 @@ app.events.QUEST_ACCEPTED = function(questID)
 			info = C_QuestLog.GetInfo(logIndex);
 			if info then
 				if info.frequency == 1 then
-					freq = "(D)";
+					freq = " (D)";
 				elseif info.frequency == 2 then
-					freq = "(W)";
+					freq = " (W)";
 				end
 			end
 		end
