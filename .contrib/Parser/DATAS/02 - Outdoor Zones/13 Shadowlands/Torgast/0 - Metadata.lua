@@ -12,6 +12,7 @@ _.Zones =
 					1911,	-- Torghast Entrance
 					1705,	-- Torghast Entrance
 					1618,	-- Torghast
+					1620,	-- Torghast
 					1621,	-- Torghast
 					1624,	-- Torghast
 					1660,	-- Alpha_TG_R04
@@ -37,6 +38,7 @@ _.Zones =
 					1756,	-- TG44_Floor
 					1762,	-- TG47_Floor
 					1758,	-- TG48_Floor
+					1759,	-- Torghast
 					1763,	-- TG52_Floor
 					1765,	-- TG54_Floor
 					1768,	-- TG58_Floor

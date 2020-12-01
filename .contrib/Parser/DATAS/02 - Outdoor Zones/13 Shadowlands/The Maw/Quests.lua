@@ -12,6 +12,7 @@ _.Zones =
 				}),
 			}),
 			n(QUESTS, {
+
 				q(59973, {	-- A Bond Beyond Death
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
@@ -80,6 +81,11 @@ _.Zones =
 				q(63039, {	-- A Monument to Vengeance
 					["provider"] = { "n", 175807 },	-- Knight of the Ebon Blade
 					["coord"] = { 22.1, 48.0, 1543 },
+					["isDaily"] = true,
+				}),
+				q(63031, {	-- Acquisition: Crystallized Stygia
+					-- ["provider"] = { "o", ### },	-- TODO
+					-- ["coord"] = { 25.6, 24.2, 1648 },
 					["isDaily"] = true,
 				}),
 				q(63047, {	-- Acquisition: Runeforged Shackles

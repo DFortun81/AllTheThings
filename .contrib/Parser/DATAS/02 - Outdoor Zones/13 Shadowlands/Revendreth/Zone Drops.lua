@@ -63,7 +63,7 @@ _.Zones =
 				i(177809),	-- Lithe Rapier
 				i(173721, {	-- Love and Terror
 					["questID"] = 58081,
-					["isDaily"] = true,	-- quest became incomplete the next day
+					["isDaily"] = true,
 					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 				}),
 				i(183417, {	-- Mail Courier's Right Runner
@@ -103,6 +103,11 @@ _.Zones =
 				i(177785),	-- Savage Bonemauler Shoulderguards
 				i(177781),	-- Savage Bonemauler Striders
 				i(177801),	-- Sky Legion Halbard
+				i(173707, {	-- Soul Hunter's Blade
+					["questID"] = 58070,
+					["isDaily"] = true,
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
+				}),
 				i(183423, {	-- Stone Legion Right Sabaton
 					i(183421, {	-- Stone Legion Sabatons
 						["cost"] = {
@@ -116,6 +121,8 @@ _.Zones =
 				i(173709, {	-- Vial of Dredger Muck
 					["description"] = "Drops from Dredger mobs and can be found in Revendreth treasure chests.",
 					["questID"] = 58071,	-- Favor: Vial of Dredger Muck
+					["isDaily"] = true,
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 					["crs"] = {
 						160846,	-- Beleaguered Excavator
 						161490,	-- Blackbale Flunky

@@ -59,7 +59,11 @@ _.Zones =
 						},
 					}),
 					
-					
+					-- Champion Unlocks
+					q(61958, {	-- Champion: Gorgelimb [Necrolord]
+						["sourceQuests"] = { 60136 },	-- Into Torghast
+						["provider"] = { "n", 173397 },	-- Gorgelimb
+					}),					
 					
 					-------- unverifed on live yet; adding to alphabetized list above as they are verified in game
 					q(60137, {	-- The Fracture Chambers
@@ -112,6 +116,11 @@ _.Zones =
 					q(59337),	-- Level 1
 					q(61101),	-- Level 2
 					q(61131),	-- Level 3
+
+					-- Soulforges
+					-- q(),	-- Level 1
+					-- q(),	-- Level 2
+					q(58193),	-- Level 3
 
 					
 				}),

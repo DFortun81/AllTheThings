@@ -3039,6 +3039,12 @@ _.HiddenQuestTriggers =
 		q(61986),	-- Tahonta secondary quest
 		q(61988),	-- Indomitable Schmitd secondary quest
 		q(61992),	-- Pesticide secondary quest
+		-- Maldraxxus Covenant
+		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
+		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
+		q(63361),	-- Triggered when completing 60459 'Anima Salvage' (First Calling)
+		q(63365),	-- Triggered after starting 3rd tutorial Adventure [Necrolord]
+		q(63369),	-- Triggered after completing 3rd tutorial Adventure [Necrolord]
 
 
 		-- Oribos
@@ -3058,6 +3064,8 @@ _.HiddenQuestTriggers =
 		q(60527),	-- Triggered after reading Theotar's Diary
 		q(59222),	-- triggered during #57536, "Mirror Making, Not Breaking" when speaking to Laurent
 		q(62661),	-- Triggered during first completion of #58080 [Favor: Glittering Primrose Necklace]
+		q(62669),	-- Triggered during first completion of #58070 [Favor: Soul Hunter Blade]
+		q(60847),	-- Upon looting [Soul Hunter's Blade] (173707)
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
@@ -3067,6 +3075,7 @@ _.HiddenQuestTriggers =
 		q(59861),	-- Tea Tales: Theotar Achievement criteria
 		q(60701),	-- triggered when completing #60653, "Mirror Restoration"
 		-- Venthyr Covenant
+		q(62686),	-- triggered when entering Ardenweald while on a 'Training' Calling (summons companion)
 		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62827),	-- uhhhhh i killed myself by jumping into nothingness from one of the platforms
@@ -3077,6 +3086,10 @@ _.HiddenQuestTriggers =
 		q(63063),	-- looks like an unused version of #63056, "Sanctum Upgrade: Mirror Network"
 		q(60300),	-- Channeling Anima Conduit to Waynecrypt Hill
 		q(60304),	-- Channeling Anima Conduit to Crypt of the Forgotten
+		q(63237),	-- Completing 1st 'Campaign Adventure'
+		q(63260),	-- Completing 1st 'Campaign Adventure'
+		q(63242),	-- Completing 2nd 'Campaign Adventure'
+		q(63323),	-- Completing 2nd 'Campaign Adventure'
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
@@ -3088,10 +3101,21 @@ _.HiddenQuestTriggers =
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
 		q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
 		q(63377),	-- First kill of Soulsmith Yor-Mattar (bonus objective 59441)
+		q(63383),	-- First kill of Malevolent Stygia
 		-- The Maw rares
 		q(63373),	-- Dartanos secondary quest
+		q(63388),	-- Ratgusher secondary quest?
 		q(63374),	-- Razkazzar secondary quest
+		q(63413),	-- Odalrik secondary quest/first kill?
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
+					-- also for mogwai when killing Eketra...
+		
+		-- Eye of the Jailer Levels
+		-- q(),	-- Mortars/Missiles (1)
+		q(63379),	-- Assassins (2)
+		-- q(),	-- Chains (3)
+		q(63376),	-- Abductors (4)
+		q(63417),	-- Immediate Extinction (5)
 
 		-- Torghast
 		q(58192),	-- Triggered after killing The Grand Malleare to complete The Soulforges
@@ -3107,6 +3131,7 @@ _.HiddenQuestTriggers =
 		q(59996),	-- Tracking Quest (Finished Skoldus Hall Layer 1)
 		q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
 		q(62967),	-- Triggered when opening Domination Lock for Prison of the Forgotten quest
+		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

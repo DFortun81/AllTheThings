@@ -179,7 +179,7 @@ _.Zones =
 					},
 				}),
 				n(170774, {	-- Eketra <The Impaler>
-				--	["questID"] = ,
+					["questID"] = 60915,
 					["isDaily"] = true,
 					["coord"] = { 22.8, 52.4, 1648 },
 					["g"] = {
@@ -256,7 +256,7 @@ _.Zones =
 					},
 				}),
 				n(162965, {	-- Huwerath
-				--	["questID"] = ,
+					["questID"] = 58918,
 					["isDaily"] = true,
 					["coord"] = { 21.6, 29.2, 1648 },
 					["g"] = {
@@ -327,7 +327,7 @@ _.Zones =
 					},
 				}),
 				n(172207, {	-- Odalrik
-				--	["questID"] = ,
+					["questID"] = 62618,
 					["isDaily"] = true,
 					["coord"] = { 38.6, 28.8, 1648 },
 					["g"] = {
@@ -349,7 +349,7 @@ _.Zones =
 				n(172577, {	-- Orophea
 					["description"] = "Collect Eurydea's Amulet and offer it to Orophea.",
 					["coord"] = { 23.6, 21.6, 1648 },
-					--["questID"] = 61125,
+					["questID"] = 61519,
 					["isDaily"] = true,
 					["g"] = {
 						crit(15, {	-- Orophea
@@ -365,7 +365,7 @@ _.Zones =
 					},
 				}),
 				n(175821, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
-				--	["questID"] = ,
+					["questID"] = 63044,
 					["isDaily"] = true,
 					["coord"] = { 21.6, 41.8, 1648 },
 					["g"] = {

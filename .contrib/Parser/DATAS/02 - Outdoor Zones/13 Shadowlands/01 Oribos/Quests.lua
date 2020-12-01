@@ -435,6 +435,19 @@ _.Zones =
 				
 				-- Zone Meta Quests (keep in Bastion for visibility to players who may skip storyline I suppose)
 				-- Ardenweald
+				q(62763, {	-- Support the Court
+					["description"] = "Auto-accepted if entering the zone prior to completion of its breadcrumbs",
+					["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
+					["coord"] = { 49.2, 52.2, 1565 },
+					["sourceQuests"] = {
+						62159,	-- Aiding the Shadowlands
+						-- ,	-- TODO: Ardenweald Zone-Travel Quest
+					},
+					["g"] = {
+						i(179532),	-- Duskwarder Scythe
+						-- TODO: more rewards
+					},
+				}),
 				-- Bastion
 				q(62723, {	-- Bolstering Bastion
 					["description"] = "Auto-accepted if entering the zone prior to completion of its breadcrumbs",
@@ -483,6 +496,11 @@ _.Zones =
 
 				-- Oribos Return Quests
 				-- Ardenweald
+				q(62776, {	-- Return to Oribos
+					["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
+					["coord"] = { 49.2, 52.2, 1565 },
+					["sourceQuests"] = { 62763 },	-- Support the Court
+				}),
 				-- Bastion
 				q(62729, {	-- Return to Oribos
 					["provider"] = { "n", 159478 },	-- Kalisthene
@@ -508,6 +526,19 @@ _.Zones =
 					["sourceQuests"] = { 62778 },	-- Reinforcing Revendreth
 				}),
 
+				-- Covenant Travel Quests
+				-- Ardenweald
+				-- Bastion
+				-- Maldraxxus
+				q(63212, {	-- Report to Mevix
+					["coord"] = { 38.8, 70.0, 1670 },
+					["description"] = "",
+					["isBreadcrumb"] = true,
+					["lvl"] = { 60 },
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+				}),
+				-- Revendreth
+
 				-- From Revendreth
 				-- Choosing Your Covenant
 				q(60491, {	-- Among the Kyrian
@@ -518,7 +549,10 @@ _.Zones =
 				q(58609, {	-- Taking The Seat
 					["provider"] = { "n", 171821 },	-- Baroness Draka
 					["coord"] = { 42.9, 74.1, 1670 },
-					["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
+					["sourceQuests"] = { 
+						57878,	-- Choosing Your Purpose [Story]
+						63212,	-- Report to Mevix [Skip+Necrolord]
+					},	
 				}),
 				q(60286, {	-- A Token of Our Admiration
 					["provider"] = { "n", 168432 },	-- Ve'rayn

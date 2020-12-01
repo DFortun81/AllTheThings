@@ -8,7 +8,9 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(-901, {	-- Covenant Callings
 				["description"] = "|cFF40bf40Necrolord Covenant|r only.",
-				["g"] = {
+				["g"] = sharedData({
+					["sourceQuests"] = { 59609 },	-- No Rest For the Dead
+				}, {
 					q(60390, {	-- Aiding Ardenweald
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
 						["coord"] = { 54.2, 68.8 , 1536 },
@@ -218,7 +220,7 @@ _.Zones =
 							}),
 						},
 					}),
-				},
+				}),
 			}),
 		}),
 	}),
