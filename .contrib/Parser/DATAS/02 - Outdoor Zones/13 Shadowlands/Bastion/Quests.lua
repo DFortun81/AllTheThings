@@ -445,6 +445,11 @@ _.Zones =
 					["provider"] = { "n", 159609 },	-- Hopo
 					["coord"] = { 54.7, 41.2, 1533 },
 				}),
+				q(60906, {	-- Rightful Resting Place
+					["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
+					["provider"] = { "n", 159248 },	-- Haetio
+					["coord"] = { 43.2, 38.5, 1533 },
+				}),
 				q(60008, {	-- Rip and Tear
 					["sourceQuests"] = { 60006 },	-- Now or Never
 					["provider"] = { "n", 167134 },	-- Thanikos
@@ -690,6 +695,11 @@ _.Zones =
 					["sourceQuests"] = { 58976 },	-- Chasing a Memory
 					["provider"] = { "n", 167034 },	-- Mikanikos
 					["coord"] = { 54.7, 64.1, 1533 },
+				}),
+				q(57989, {	-- The Spear of Kalliope
+					["sourceQuests"] = { 57966 },	-- You Go First
+					["provider"] = { "n", 159272 },	-- Artificer Ligiea
+					["coord"] = { 61.8, 50.3, 1714 },	-- Third Chamber of Kalliope
 				}),
 				q(62733, {	-- The Sweetest Tribute
 					["sourceQuests"] = { 62730 },	-- Fruit of the Gods

@@ -105,6 +105,7 @@ i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
 i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
+i(180170);	-- Pulsing Animacone
 i(33448);	-- Runic Mana Potion
 i(180405);	-- Rusty Gargon Chain
 i(165699);	-- Scarlet Herring Lure
@@ -136,6 +137,7 @@ i(146692);	-- Ancient Dreadleather Armor
 i(146700);	-- Ancient Gravenscale Armor
 i(169251);	-- Ancient Insect
 i(168234);	-- Ancient Runestone
+i(182021);	-- Antique Kyrian Javelin
 i(147438);	-- Bag of Wisp-Touched Elderhide
 i(146308);	-- Barrel of Storm Brew
 i(169224);	-- Big Red Button

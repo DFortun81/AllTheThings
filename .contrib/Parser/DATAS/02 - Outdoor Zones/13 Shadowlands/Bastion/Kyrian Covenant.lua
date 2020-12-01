@@ -315,6 +315,11 @@ _.Zones =
 						["coord"] = { 39.9, 68.6, 1670 },	-- Oribos
 						["maps"] = { 1670 },	-- Oribos
 					}),
+					q(57967, {	-- Rightful Resting Place
+						["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
+						["provider"] = { "n", 159248 },	-- Haetio
+						["coord"] = { 43.2, 38.5, 1533 },
+					}),
 					q(57898, {	-- Soul Meets Body
 						["sourceQuests"] = { 57897 },	-- Dangerous to Go Alone
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia

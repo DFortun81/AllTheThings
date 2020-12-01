@@ -51,9 +51,57 @@ _.Zones =
 				}),
 				ach(14339, {	-- Shard Labor
 					["description"] = "Enable 'Quest' collecting to see/track individual shards.\nShards might be collected Account-Wide [Testing]",
+					["lvl"] = { 60 },
 					["g"] = {
 						i(180772),	-- Silverwind Larion (MOUNT!)
 					--	https://www.wowhead.com/achievement=14339/shard-labor#comments
+					--	moving completed ones up to the top for now so it's easier to see which one checks off (to verify coords + add data more easily)
+						n(-1433921, {	-- Shard ##
+							["description"] = "Up at the top of a small fallen pillar.",	-- TODO: i don't remember if it was a pillar or a crumbled building or something, fix wording?
+							["questID"] = 61264,
+							["coord"] = { 38.5, 53.2, 1533 },
+						}),
+						n(-1433939, {	-- Shard ##
+							["description"] = "On top of a gazebo with a crystal roof.  You will have to jump down to the shard from the cliffs above.",
+							["questID"] = 61289,
+							["coord"] = { 42.7, 39.4, 1533 },
+						}),
+						n(-1433918, {	-- Shard ##
+							["description"] = "On the middle section of the cliffside, underneath the platform.",
+							["questID"] = 61260,
+							["coord"] = { 47.0, 49.2, 1533 },
+						}),
+						n(-1433915, {	-- Shard ##
+							["description"] = "On a beam that goes across the top of a little hut.  You will have to jump down to the shard from the cliffs above.",
+							["questID"] = 61254,
+							["coord"] = { 50.6, 56.1, 1533 },
+						}),
+						n(-1433917, {	-- Shard ##
+							["description"] = "On the ledge of Hero's Rest, next to the stairs.  You have to jump down to the bottom of the rocky platform and walk along the edge to reach the shard.",
+							["questID"] = 61258,
+							["coord"] = { 51.6, 48.0, 1533 },
+						}),
+						n(-1433905, {	-- Shard ##
+							["description"] = "Underwater, beneath the little bridge.",
+							["questID"] = 61238,
+							["coord"] = { 53.3, 73.6, 1533 },
+						}),
+						n(-1433913, {	-- Shard ##
+							["description"] = "At the bottom of waterfall on the left-hand side, inside a small shrine.",
+							["questID"] = 61251,
+							["coord"] = { 54.0, 59.6, 1533 },
+						}),
+						n(-1433922, {	-- Shard ##
+							["description"] = "On top of the cliff (not in the cave below), at the base of a tree.",
+							["questID"] = 61270,
+							["coord"] = { 57.6, 55.6, 1533 },
+						}),
+						n(-1433912, {	-- Shard ##
+							["description"] = "Don't go up the small staircase.  To the right of the stairs, there is a passage that leads to the bottom of a little waterfall on the cliffside.  The shard is there, to the left, underneath a Vesper.",
+							["questID"] = 61250,
+							["coord"] = { 58.1, 63.9, 1533 },
+						}),
+				----------------------------------------------------------------------------------------------------------
 						n(-1433901, {	-- Shard ##
 							["coord"] = { 39.05, 77.04, 1533 },
 							-- ["description"] = "",
@@ -73,11 +121,6 @@ _.Zones =
 							["coord"] = { 52.67, 75.55, 1533 },
 							-- ["description"] = "",
 							["questID"] = 61237,
-						}),
-						n(-1433905, {	-- Shard ##
-							["coord"] = { 53.31, 73.62, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61238,
 						}),
 						n(-1433906, {	-- Shard ##
 							["coord"] = { 53.49, 80.60, 1533 },
@@ -109,40 +152,15 @@ _.Zones =
 							-- ["description"] = "",
 							["questID"] = 61249,
 						}),
-						n(-1433912, {	-- Shard ##
-							["coord"] = { 58.15, 63.91, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61250,
-						}),
-						n(-1433913, {	-- Shard ##
-							["coord"] = { 54.00, 59.70, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61251,
-						}),
 						n(-1433914, {	-- Shard ##
 							["coord"] = { 46.70, 65.95, 1533 },
 							-- ["description"] = "",
 							["questID"] = 61253,
 						}),
-						n(-1433915, {	-- Shard ##
-							["coord"] = { 50.68, 56.14, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61254,
-						}),
 						n(-1433916, {	-- Shard ##
 							["coord"] = { 34.84, 65.78, 1533 },
 							-- ["description"] = "",
 							["questID"] = 61257,
-						}),
-						n(-1433917, {	-- Shard ##
-							["coord"] = { 51.67, 48.02, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61258,
-						}),
-						n(-1433918, {	-- Shard ##
-							["coord"] = { 47.08, 49.23, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61260,
 						}),
 						n(-1433919, {	-- Shard ##
 							["coord"] = { 41.39, 46.63, 1533 },
@@ -153,16 +171,6 @@ _.Zones =
 							["coord"] = { 40.04, 59.12, 1533 },
 							-- ["description"] = "",
 							["questID"] = 61263,
-						}),
-						n(-1433921, {	-- Shard ##
-							["coord"] = { 38.52, 53.26, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61264,
-						}),
-						n(-1433922, {	-- Shard ##
-							["coord"] = { 57.64, 55.67, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61270,
 						}),
 						n(-1433923, {	-- Shard ##
 							["coord"] = { 65.25, 42.88, 1533 },
@@ -243,11 +251,6 @@ _.Zones =
 							["coord"] = { 42.81, 33.23, 1533 },
 							-- ["description"] = "",
 							["questID"] = 61288,
-						}),
-						n(-1433939, {	-- Shard ##
-							["coord"] = { 42.71, 39.40, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61289,
 						}),
 						n(-1433940, {	-- Shard ##
 							["coord"] = { 33.03, 37.62, 1533 },
@@ -332,8 +335,8 @@ _.Zones =
 					}),
 					crit(4, {	-- The Spear of Kalliope
 						["sourceQuests"] = {
-							60906,	-- Rightful Resting Place
-							57967,	-- Rightful Resting Place
+							60906,	-- Rightful Resting Place (non-Kyrian)
+							57967,	-- Rightful Resting Place (Kyrian)
 						},
 					}),
 					crit(5, {	-- Pride or Unit

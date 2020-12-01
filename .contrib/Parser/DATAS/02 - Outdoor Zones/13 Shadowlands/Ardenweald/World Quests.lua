@@ -94,6 +94,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(60476, {	-- Spriggan Size Me!
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60770, {	-- Squish and Burn
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

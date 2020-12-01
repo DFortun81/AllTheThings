@@ -11,11 +11,19 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61148, {	-- AHHH! Real Monsters!
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(62235, {	-- Allay Their Fears
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
 				q(59601, {	-- Assault on the Vestibule
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(62451, {	-- Assault on the Vestibule
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -41,9 +49,9 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61629, {	-- Enchanting: True Aim
+					["requireSkill"] = ENCHANTING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["requireSkill"] = ENCHANTING,
 				}),
 				q(61520, {	-- Enemy of My Mnemis
 					["isWorldQuest"] = true,

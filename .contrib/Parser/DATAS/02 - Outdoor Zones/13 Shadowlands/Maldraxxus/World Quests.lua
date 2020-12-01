@@ -43,6 +43,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61477, {	-- Calling the Champions
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60531, {	-- Chosen Champions
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -64,6 +68,10 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61189, {	-- Further Gelatinous Research
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(58221, {	-- Gettin' Even
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
