@@ -118,6 +118,7 @@ _.Achievements =
 			}),
 			ach(14671, {	-- Something's Not Quite Right....
 				["_quests"] = { 60739 },	-- Tough Crowd
+				["crs"] = { 170080 },	-- Audience Member / Exposed Boggart
 			}),
 			ach(14233, {	-- Tea Tales
 				crit(1, {		-- Tea Tales: Theotar

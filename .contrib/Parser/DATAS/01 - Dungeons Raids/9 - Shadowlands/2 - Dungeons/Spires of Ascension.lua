@@ -13,9 +13,35 @@ _.Instances = { tier(9, {	-- Shadowlands
 		},
 		["lvl"] = { 50 },
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(14339, {	-- Shard Labor
+					["description"] = "Quest tracking must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide.  There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.\n\nBeing part of the |cFFfe040fVenthyr Covenant|r is not required, but the |cFFfe040fDoor of Shadows|r ability does trivialize a few of the more annoying shards!",
+					["collectible"] = false,
+					["lvl"] = { 60 },
+					["g"] = {
+						-- spires of ascension(gardens of repose)
+						n(-1433948, {	-- Shard ##
+							["description"] = "After Kin-Tara, behind a lounge chair on the left side of the fountain.",
+							["questID"] = 61298,
+						}),
+						n(-1433949, {	-- Shard ##
+							["description"] = "After Ventunax, behind the left-hand torch next to the Winged Guardian that will take you to the Font of Fealty.",
+							["questID"] = 61299,
+						}),
+						-- spires of ascension(font of feality)
+						n(-1433950, {	-- Shard ##
+							["description"] = "Can be collected before or after Oryphrion.  There is a heart-shaped whirlpool in the middle of the room.  The shard is at the top of the heart in the middle.  After the boss, there will be two Winged Guardians on either side of it.",
+							["questID"] = 61300
+						}),
+					},
+				}),
+			}),
 			d(1, {	-- Normal
 				e(2399, {	-- Kin-Tara
-					["crs"] = { 162059 },	-- Kin-Tara
+					["crs"] = {
+						163077,	-- Azules
+						162059,	-- Kin-Tara
+					},
 					["g"] = {
 						i(180097),	-- Quarterstaff of Discordant Ethic
 						i(180109),	-- Kin-Tara's Baleful Cord
@@ -49,7 +75,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2412, {	-- 	Devos, Paragon of Doubt
-					["crs"] = { 167410 },	-- 	Devos, Paragon of Doubt
+					["crs"] = { 162061 },	-- 	Devos, Paragon of Doubt
 					["g"] = {
 						ach(14326),	-- Spires of Ascension
 						i(180096),	-- Devos' Cacophonous Poleaxe
@@ -66,7 +92,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				["lvl"] = { 60 },
 				["g"] = {
 					e(2399, {	-- Kin-Tara
-						["crs"] = { 162059 },	-- Kin-Tara
+						["crs"] = {
+							163077,	-- Azules
+							162059,	-- Kin-Tara
+						},
 						["g"] = {
 							i(180097),	-- Quarterstaff of Discordant Ethic
 							i(180109),	-- Kin-Tara's Baleful Cord
@@ -100,7 +129,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2412, {	-- 	Devos, Paragon of Doubt
-						["crs"] = { 167410 },	-- 	Devos, Paragon of Doubt
+						["crs"] = { 162061 },	-- 	Devos, Paragon of Doubt
 						["g"] = {
 							ach(14324),	-- Heroic: Spires of Ascension
 							i(180096),	-- Devos' Cacophonous Poleaxe
@@ -122,7 +151,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						ach(14327),	-- I Can See My House From Here
 					}),
 					e(2399, {	-- Kin-Tara
-						["crs"] = { 162059 },	-- Kin-Tara
+						["crs"] = {
+							163077,	-- Azules
+							162059,	-- Kin-Tara
+						},
 						["g"] = {
 							i(180097),	-- Quarterstaff of Discordant Ethic
 							i(180109),	-- Kin-Tara's Baleful Cord
@@ -157,7 +189,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2412, {	-- 	Devos, Paragon of Doubt
-						["crs"] = { 167410 },	-- 	Devos, Paragon of Doubt
+						["crs"] = { 162061 },	-- 	Devos, Paragon of Doubt
 						["g"] = {
 							ach(14325),	-- Mythic: Spires of Ascension
 							ach(14323),	-- ExSPEARiential

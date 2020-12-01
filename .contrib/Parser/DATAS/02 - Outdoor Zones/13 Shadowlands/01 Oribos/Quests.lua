@@ -479,11 +479,6 @@ _.Zones =
 						62159,	-- Aiding the Shadowlands
 						-- ,	-- TODO: Revendreth Zone-Travel Quest
 					},
-					["g"] = {
-						i(181208),	-- Anima-Infused Muck
-						i(181223),	-- Mace of Emberwrath
-						-- TODO: more rewards
-					},
 				}),
 
 				-- Oribos Return Quests

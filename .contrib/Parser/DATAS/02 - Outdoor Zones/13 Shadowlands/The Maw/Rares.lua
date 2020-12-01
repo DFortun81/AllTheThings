@@ -132,6 +132,17 @@ _.Zones =
 						}),
 					},
 				}),
+				n(158314, {	-- Drifting Sorrow
+				--	["questID"] = ,
+					["isDaily"] = true,
+					["coord"] = { 32.0, 21.2, 1648 },
+					["g"] = {
+						crit(1,  {	-- Drifting Sorrow
+							["achievementID"] = 14660,	-- It's About Sending a Message
+							["crs"] = { 158314 },	-- Drifting Sorrow
+						}),
+					},
+				}),
 				n(170774, {	-- Eketra <The Impaler>
 				--	["questID"] = ,
 					["isDaily"] = true,

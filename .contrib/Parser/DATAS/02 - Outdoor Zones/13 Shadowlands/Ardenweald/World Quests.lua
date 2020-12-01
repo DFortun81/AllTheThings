@@ -121,6 +121,11 @@ _.Zones =
 				q(60739, {	-- Tough Crowd
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
+					["g"] = {
+						n(170080, {	-- Exposed Boggart
+							["description"] = "THIS IS A BOGGART.",
+						}),
+					},
 				}),
 				q(60597, {	-- Trouble at the Gormling Corral
 					["isWorldQuest"] = true,

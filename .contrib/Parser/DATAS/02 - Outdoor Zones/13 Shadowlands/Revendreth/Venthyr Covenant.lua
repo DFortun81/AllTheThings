@@ -223,6 +223,15 @@ _.Zones =
 								i(181556),	-- 	Tribute of the Court
 							},
 						}),
+						q(60401, {	-- Training in Ardenweald
+							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+							["repeatable"] = true,
+							["provider"] = { "n", 164741 },	-- Tactician Sakaa
+							["coord"] = { 57.8, 58.7, 1699 },	-- Sinfall Reaches
+							["g"] = {
+								i(181475),	-- Bounty of the Grove Wardens
+							},
+						}),
 						q(60403, {	-- Training in Ardenweald
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa

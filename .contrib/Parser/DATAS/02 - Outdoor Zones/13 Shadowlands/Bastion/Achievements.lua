@@ -50,12 +50,53 @@ _.Zones =
 					}),
 				}),
 				ach(14339, {	-- Shard Labor
-					["description"] = "Quest tracking must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide.",
+					["description"] = "Quest tracking must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide.  There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.\n\nBeing part of the |cFFfe040fVenthyr Covenant|r is not required, but the |cFFfe040fDoor of Shadows|r ability does trivialize a few of the more annoying shards!",
+					["collectible"] = false,
 					["lvl"] = { 60 },
 					["g"] = {
 						i(180772),	-- Silverwind Larion (MOUNT!)
 					--	https://www.wowhead.com/achievement=14339/shard-labor#comments
 					--	moving completed ones up to the top for now so it's easier to see which one checks off (to verify coords + add data more easily)
+						n(-1433945, {	-- Shard ##
+							["description"] = "On a bookshelf inside the room behind Rector Kalliope.",
+							["questID"] = 61295,
+							["coord"] = { 24.3, 18.2, 1533 },
+						}),
+						n(-1433943, {	-- Shard ##
+							["description"] = "On a pillar underneath the platform.  The shard is surrounded by mobs that will attack you even if you land properly on top of the pillar, so you need a way to stun, fear, or kill them so you can loot.\n\nDon't jump all the way down to the middle section.  There is a small gap between the staircase to the top of the platform and the archway the waterfall passes through.  Walk through the gap and forward along the ledge.  The shard can be difficult to see, depending on your camera angle, but you need to jump off the ledge towards the pillar.",
+							["questID"] = 61293,
+							["coord"] = { 24.6, 22.9, 1533 },
+						}),
+						n(-1433944, {	-- Shard ##
+							["description"] = "Behind some barrels of anima.",
+							["questID"] = 61294,
+							["coord"] = { 26.1, 22.6, 1533 },
+						}),
+						n(-1433942, {	-- Shard ##
+							["description"] = "The pathway to this shard starts at |cFFFFFFFF27.7, 19.2|r, in an area full of elite mobs.  Run up the ledge on the side of the mountain until you can jump down to the archway and pick up the shard.",
+							["questID"] = 61292,
+							["coord"] = { 30.6, 23.7, 1533 },
+						}),
+						n(-1433941, {	-- Shard ##
+							["description"] = "At the bottom of the lake, hidden inside the base of a fallen statue.",
+							["questID"] = 61291,
+							["coord"] = { 31.0, 27.4, 1533 },
+						}),
+						n(-1433940, {	-- Shard ##
+							["description"] = "Jump over the short wall to the left of the statue at |cFFFFFFFF33.2, 36.8|r.  The shard is at the end of the ledge.",
+							["questID"] = 61290,
+							["coord"] = { 33.0, 37.6, 1533 },
+						}),
+						n(-1433916, {	-- Shard ##
+							["description"] = "On a tiny outcropping behind Epistasia.  Jump from the side, rather than trying to fall backwards to the shard.",
+							["questID"] = 61257,
+							["coord"] = { 34.8, 65.7, 1533 },
+						}),
+						n(-1433937, {	-- Shard ##
+							["description"] = "The path to this shard starts at |cFFFFFFFF35.1, 23.2|r.  Just follow the ledge around the cliffs.",
+							["questID"] = 61287,
+							["coord"] = { 37.1, 24.6, 1533 },
+						}),
 						n(-1433921, {	-- Shard ##
 							["description"] = "Up at the top of a small fallen pillar.",	-- TODO: i don't remember if it was a pillar or a crumbled building or something, fix wording?
 							["questID"] = 61264,
@@ -66,15 +107,45 @@ _.Zones =
 							["questID"] = 61225,
 							["coord"] = { 39.0, 77.0, 1533 },
 						}),
+						n(-1433920, {	-- Shard ##
+							["description"] = "On top of a pillar.  Jump down from the cliffs above.  Levitate helped me reach this one.",
+							["questID"] = 61263,
+							["coord"] = { 40.0, 59.1, 1533 },
+						}),
+						n(-1433919, {	-- Shard ##
+							["description"] = "Don't fully jump down from the cliffs.  It's on the lower portion, hidden on a narrow ledge.",
+							["questID"] = 61261,
+							["coord"] = { 41.4, 46.6, 1533 },
+						}),
+						n(-1433936, {	-- Shard ##
+							["description"] = "From |cFFFFFFFF43.8, 21.6|r, simply walk toward the shard's coordinates.  It's just through an arch on a ledge.",
+							["questID"] = 61286,
+							["coord"] = { 42.3, 24.0, 1533 },
+						}),
 						n(-1433939, {	-- Shard ##
 							["description"] = "On top of a gazebo with a crystal roof.  You will have to jump down to the shard from the cliffs above.",
 							["questID"] = 61289,
 							["coord"] = { 42.7, 39.4, 1533 },
 						}),
+						n(-1433938, {	-- Shard ##
+							["description"] = "At the end of a narrow ledge that starts at |cFFFFFFFF43.6, 33.8|r.",
+							["questID"] = 61288,
+							["coord"] = { 42.8, 33.2, 1533 },
+						}),
 						n(-1433902, {	-- Shard ##
 							["description"] = "On the middle level of the waterfall.  Jump down from above.",
 							["questID"] = 61235,
 							["coord"] = { 43.6, 76.2, 1533 },
+						}),
+						n(-1433935, {	-- Shard ##
+							["description"] = "On a ledge underneath a waterfall.  The path starts at |cFFFFFFFF45.6, 25.2|r.  Follow the ledge to the right until you get to the shard.",
+							["questID"] = 61285,
+							["coord"] = { 44.9, 28.4, 1533 },
+						}),
+						n(-1433934, {	-- Shard ##
+							["description"] = "The path starts around |cFFFFFFFF45.5, 20.3|r.  Just follow the ledge on the right.  You will pass a statue of a steward when you are about halfway to the shard.  The path is so narrow and short in some places that mounting will knock you off the path or prevent you from continuing along it.",
+							["questID"] = 61284,
+							["coord"] = { 46.7, 18.0, 1533 },
 						}),
 						n(-1433914, {	-- Shard ##
 							["description"] = "On top of a fallen wall.  Climb up, and then you can carefully fall backwards towards the shard.",
@@ -91,6 +162,16 @@ _.Zones =
 							["questID"] = 61236,
 							["coord"] = { 48.4, 72.7, 1533 },
 						}),
+						n(-1433929, {	-- Shard ##
+							["description"] = "On top of a pillar.  You will need to jump down from the cliffs above.",
+							["questID"] = 61279,
+							["coord"] = { 48.5, 34.9, 1533 },
+						}),
+						n(-1433928, {	-- Shard ##
+							["description"] = "On a rock underneath the bridge.  You will have to jump down from the cliffs on the western side.",
+							["questID"] = 61278,
+							["coord"] = { 49.9, 38.2, 1533 },
+						}),
 						n(-1433915, {	-- Shard ##
 							["description"] = "On a beam that goes across the top of a little hut.  You will have to jump down to the shard from the cliffs above.",
 							["questID"] = 61254,
@@ -100,6 +181,16 @@ _.Zones =
 							["description"] = "On the ledge of Hero's Rest, next to the stairs.  You have to jump down to the bottom of the rocky platform and walk along the edge to reach the shard.",
 							["questID"] = 61258,
 							["coord"] = { 51.6, 48.0, 1533 },
+						}),
+						n(-1433927, {	-- Shard ##
+							["description"] = "On top of a pillar.  You will have to jump down from the cliffs above.",
+							["questID"] = 61277,
+							["coord"] = { 52.1, 39.4, 1533 },
+						}),
+						n(-1433933, {	-- Shard ##
+							["description"] = "Enter Covinkles' Workshop at |cFFFFFFFF53.8, 9.6|r.  The shard is on the left side, behind some barrels.",
+							["questID"] = 61283,
+							["coord"] = { 52.4, 09.3, 1533 },
 						}),
 						n(-1433904, {	-- Shard ##
 							["description"] = "Underneath the cliff, on a small outcropping above the water.  You'll need to jump from the side of the hill to get to the shard.  Slow fall abilities are useful here.",
@@ -126,10 +217,25 @@ _.Zones =
 							["questID"] = 61241,
 							["coord"] = { 55.9, 86.6, 1533 },
 						}),
+						n(-1433931, {	-- Shard ##
+							["description"] = "Underneath the highest part of the cliff.  Jump down to the second part of the cliff and walk underneath the large outcropping.",
+							["questID"] = 61281,
+							["coord"] = { 56.2, 17.3, 1533 },
+						}),
+						n(-1433930, {	-- Shard ##
+							["description"] = "Behind the Gilded Bulwark, on the left side of a small table.",
+							["questID"] = 61280,
+							["coord"] = { 56.7, 28.8, 1533 },
+						}),
 						n(-1433910, {	-- Shard ##
 							["description"] = "Partway up the wall.  You must jump down from the platform above.",
 							["questID"] = 61247,
 							["coord"] = { 56.9, 74.9, 1533 },
+						}),
+						n(-1433926, {	-- Shard ##
+							["description"] = "Enter the Hall of Beasts at |cFFFFFFFF55.6, 43.0|r.  The shard is all the way at the back, hidden behind some barrels.",
+							["questID"] = 61275,
+							["coord"] = { 57.5, 38.3, 1533 },
 						}),
 						n(-1433922, {	-- Shard ##
 							["description"] = "On top of the cliff (not in the cave below), at the base of a tree.",
@@ -146,175 +252,37 @@ _.Zones =
 							["questID"] = 61245,
 							["coord"] = { 58.1, 80.0, 1533 },
 						}),
+						n(-1433932, {	-- Shard ##
+							["description"] = "On a ledge.  You will need to jump down from the cliffs above.",
+							["questID"] = 61282,
+							["coord"] = { 59.8, 13.9, 1533 },
+						}),
 						n(-1433908, {	-- Shard ##
 							["description"] = "On the edge of the cliffs.",
 							["questID"] = 61244,
 							["coord"] = { 61.0, 85.6, 1533 },
+						}),
+						n(-1433923, {	-- Shard ##
+							["description"] = "On the upper level, in a bookshelf.",
+							["questID"] = 61271,
+							["coord"] = { 65.2, 42.8, 1533 },
 						}),
 						n(-1433911, {	-- Shard ##
 							["description"] = "Use the Anima Gateway at |cFFFFFFFF65.5, 71.9|r.  You can only use the gateway if you aren't in combat, so be careful what you pull.\n\nAfter taking the gateway, head to the shard coordinates.  It is hidden behind a pillar.",
 							["questID"] = 61249,
 							["coord"] = { 65.5, 71.9, 1533 },
 						}),
-				----------------------------------------------------------------------------------------------------------
-						n(-1433916, {	-- Shard ##
-							["coord"] = { 34.84, 65.78, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61257,
-						}),
-						n(-1433919, {	-- Shard ##
-							["coord"] = { 41.39, 46.63, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61261,
-						}),
-						n(-1433920, {	-- Shard ##
-							["coord"] = { 40.04, 59.12, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61263,
-						}),
-						n(-1433923, {	-- Shard ##
-							["coord"] = { 65.25, 42.88, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61271,
+						n(-1433925, {	-- Shard ##
+							["description"] = "Underneath the edge of the platform.  Facing north, towards the sky, drop off the left-hand side of the platform and walk under it.",
+							["questID"] = 61274,
+							["coord"] = { 66.9, 26.9, 1533 },
 						}),
 						n(-1433924, {	-- Shard ##
-							["coord"] = { 72.38, 40.29, 1533 },
-							-- ["description"] = "",
+							["description"] = "Walk along the lower ledge that starts at |cFFFFFFFF71.4, 38.9|r.",
 							["questID"] = 61273,
+							["coord"] = { 72.4, 40.2, 1533 },
 						}),
-						n(-1433925, {	-- Shard ##
-							["coord"] = { 66.89, 26.92, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61274,
-						}),
-						n(-1433926, {	-- Shard ##
-							["coord"] = { 57.55, 38.27, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61275,
-						}),
-						n(-1433927, {	-- Shard ##
-							["coord"] = { 52.16, 39.39, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61277,
-						}),
-						n(-1433928, {	-- Shard ##
-							["coord"] = { 49.99, 38.26, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61278,
-						}),
-						n(-1433929, {	-- Shard ##
-							["coord"] = { 48.48, 34.91, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61279,
-						}),
-						n(-1433930, {	-- Shard ##
-							["coord"] = { 56.72, 28.84, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61280,
-						}),
-						n(-1433931, {	-- Shard ##
-							["coord"] = { 56.20, 17.31, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61281,
-						}),
-						n(-1433932, {	-- Shard ##
-							["coord"] = { 59.88, 13.91, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61282,
-						}),
-						n(-1433933, {	-- Shard ##
-							["coord"] = { 52.44, 09.42, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61283,
-						}),
-						n(-1433934, {	-- Shard ##
-							["coord"] = { 46.69, 18.04, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61284,
-						}),
-						n(-1433935, {	-- Shard ##
-							["coord"] = { 44.94, 28.45, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61285,
-						}),
-						n(-1433936, {	-- Shard ##
-							["coord"] = { 42.30, 24.02, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61286,
-						}),
-						n(-1433937, {	-- Shard ##
-							["coord"] = { 37.10, 24.68, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61287,
-						}),
-						n(-1433938, {	-- Shard ##
-							["coord"] = { 42.81, 33.23, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61288,
-						}),
-						n(-1433940, {	-- Shard ##
-							["coord"] = { 33.03, 37.62, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61290,
-						}),
-						n(-1433941, {	-- Shard ##
-							["coord"] = { 31.00, 27.47, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61291,
-						}),
-						n(-1433942, {	-- Shard ##
-							["coord"] = { 30.61, 23.73, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61292,
-						}),
-						n(-1433943, {	-- Shard ##
-							["coord"] = { 24.64, 22.98, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61293,
-						}),
-						n(-1433944, {	-- Shard ##
-							["coord"] = { 26.15, 22.62, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61294,
-						}),
-						n(-1433945, {	-- Shard ##
-							["coord"] = { 24.37, 18.21, 1533 },
-							-- ["description"] = "",
-							["questID"] = 61295,
-						}),
-						-- necrotic wake dungeon
-						n(-1433946, {	-- Shard ##
-							-- ["coord"] = { 52.50, 88.60, MAPID },
-							-- ["maps"] = { MAPID },
-							["description"] = "In Dungeon: Necrotic Wake",
-							["questID"] = 61296,
-						}),
-						n(-1433947, {	-- Shard ##
-							-- ["coord"] = { 36.20, 22.80, MAPID },
-							-- ["maps"] = { MAPID },
-							["description"] = "In Dungeon: Necrotic Wake",
-							["questID"] = 61297,
-						}),
-						-- spires of ascension(gardens of repose)
-						n(-1433948, {	-- Shard ##
-							-- ["coord"] = { 46.60, 53.10, MAPID },
-							-- ["maps"] = { MAPID },
-							["description"] = "In Dungeon: Spires of Ascension",
-							["questID"] = 61298,
-						}),
-						n(-1433949, {	-- Shard ##
-							-- ["coord"] = { 69.40, 38.70, MAPID },
-							-- ["maps"] = { MAPID },
-							["description"] = "In Dungeon: Spires of Ascension",
-							["questID"] = 61299,
-						}),
-						-- spires of ascension(font of feality)
-						n(-1433950, {	-- Shard ##
-							-- ["coord"] = { 49.80, 46.90, MAPID },
-							-- ["maps"] = { MAPID },
-							["description"] = "In Dungeon: Spires of Ascension",
-							["questID"] = 61300
-						}),
+				----------------------------------------------------------------------------------------------------------
 						-- TODO: are these other treasures? need more info on them
 						-- forging complete
 						-- 61229

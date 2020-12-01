@@ -2938,6 +2938,7 @@ _.HiddenQuestTriggers =
 
 		-- Various tracking quests
 		q(61858),	-- taking the portal to Acherus during "Shadowlands: A Chilling Summons"
+		q(62686),	-- i have no idea what triggered this.  i had just reloaded my UI and refreshed ATT in Sinfall, then took a FP to Root-Home in Ardenweald.  i had not done anything of note for maybe 20 minutes (picking up/turning in quests) before this happened.  i had just been afking in Sinfall
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)

@@ -80,6 +80,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(59808, {	-- Muck it Up
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59718, {	-- Parasol Peril
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

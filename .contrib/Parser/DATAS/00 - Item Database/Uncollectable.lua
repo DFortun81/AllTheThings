@@ -33,6 +33,7 @@ i(184387);	-- Misty Shimmerleaf
 i(181547);	-- Noble's Draught
 i(181649);	-- Preserved Preternatural Braincase
 i(184769);	-- Pressed Torchlily Blossom
+i(182749);	-- Regurgitated Kyrian Wings
 i(184771);	-- Remembrance Parchment Ash
 i(184770);	-- Roster of the Forgotten
 i(184293);	-- Sanctified Skylight Leaf
@@ -40,6 +41,8 @@ i(184146);	-- Singed Soul Shackles
 i(184389);	-- Slumbering Starseed
 i(181479);	-- Starlight Catcher
 i(184519);	-- Totem of Stolen Mojo
+i(184776);	-- Urn of Arena Soil
+i(184371);	-- Vivacity of Collaboration
 
 -- Battle Pet
 i(183714);	-- Swamp Reed (presumably Withered Creeper was originally learned via this item, but is now wild-caught, so this item being anywhere other than this folder makes the pet show as Unsorted or NYI or w/e)
