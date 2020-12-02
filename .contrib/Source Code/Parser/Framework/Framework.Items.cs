@@ -387,7 +387,6 @@ namespace ATT
                         }
 
                     // List O' List O' Objects Data Type Fields (stored as List<List<object>> for usability reasons)
-                    case "cost":
                     case "sym":
                         {
                             // Convert the data to a list of generic objects.
@@ -415,6 +414,9 @@ namespace ATT
                             item[field] = newListOfLists;
                             break;
                         }
+                    case "cost":
+                        Objects.MergeField_cost(item, value);
+                        break;
 
                     // Functions
                     case "OnUpdate":

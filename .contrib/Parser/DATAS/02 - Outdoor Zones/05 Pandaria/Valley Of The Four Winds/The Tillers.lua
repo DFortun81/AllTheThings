@@ -19,52 +19,52 @@ _.Zones =
 						q(30400, {	-- A Blue Feather for Chee Chee
 							["repeatable"] = true,
 							["provider"] = { "n", 58709 },	-- Chee Chee
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30382, {	-- A Blue Feather for Ella
 							["repeatable"] = true,
 							["provider"] = { "n", 58647 },	-- Ella
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30419, {	-- A Blue Feather for Farmer Fung
 							["repeatable"] = true,
 							["provider"] = { "n", 57298 },	-- Farmer Fung
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30425, {	-- A Blue Feather for Fish
 							["repeatable"] = true,
 							["provider"] = { "n", 58705 },	-- Fish Fellreed
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30388, {	-- A Blue Feather for Gina
 							["repeatable"] = true,
 							["provider"] = { "n", 58706 },	-- Gina Mudclaw
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30412, {	-- A Blue Feather for Haohan
 							["repeatable"] = true,
 							["provider"] = { "n", 57402 },	-- Haohan Mudclaw
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30437, {	-- A Blue Feather for Jogu
 							["repeatable"] = true,
 							["provider"] = { "n", 58710 },	-- Jogu the Drunk
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30394, {	-- A Blue Feather for Old Hillpaw
 							["repeatable"] = true,
 							["provider"] = { "n", 58707 },	-- Old Hillpaw
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30406, {	-- A Blue Feather for Sho
 							["repeatable"] = true,
 							["provider"] = { "n", 58708 },	-- Sho
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30431, {	-- A Blue Feather for Tina
 							["repeatable"] = true,
 							["provider"] = { "n", 58761 },	-- Tina Mudclaw
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30474, {	-- A Gift For Ella
 							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market

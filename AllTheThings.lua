@@ -3833,6 +3833,7 @@ local function AddTomTomWaypoint(group, auto, recur)
 		if group.g then
 			for i,subgroup in ipairs(group.g) do
 				-- only automatically plot subGroups if they are not quests with incomplete source quests
+				-- TODO: use 'isLockedBy' property for quests
 				if not subgroup.sourceQuests or subgroup.sourceQuestsCompleted then
 					AddTomTomWaypoint(subgroup, auto, true);
 				end
@@ -7486,6 +7487,7 @@ app.BaseQuest = {
 			if found then rawset(t, "altcollected", found); end
 			return rawget(t, "altcollected");
 		-- returns nil if available or non-breadcrumb quest, or returns a completed questID which blocks this breadcrumb from being obtained
+		-- TODO: change to 'isLockedBy' property for all quests
 		elseif key == "breadcrumbLockedBy" then
 			-- do not consider a completed breadcrumb as being locked from being collectible
 			if IsQuestFlaggedCompleted(t.questID) then return nil; end

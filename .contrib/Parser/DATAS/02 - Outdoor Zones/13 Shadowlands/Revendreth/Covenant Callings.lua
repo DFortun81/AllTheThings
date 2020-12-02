@@ -108,7 +108,7 @@ _.Zones =
 					}),
 					q(60441, {	-- Challenges in Ardenweald
 						["provider"] = { "n", 165291 },	-- The Accuser
-						["coord"] = { 55.9, 78.6, 1799 },
+						["coord"] = { 56.5, 78.2, 1700 },
 						["repeatable"] = true,
 						["g"] = {
 							i(181557),	-- Favor of the Court
@@ -117,7 +117,7 @@ _.Zones =
 					}),
 					q(60444, {	-- Challenges in Bastion
 						["provider"] = { "n", 165291 },	-- The Accuser
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 78.2, 1700 },
 						["repeatable"] = true,
 						["g"] = {
 							i(181557),	-- Favor of the Court
@@ -125,15 +125,16 @@ _.Zones =
 					}),
 					q(60446, {	-- Challenges in Maldraxxus
 						["provider"] = { "n", 165291 },	-- The Accuser
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 78.2, 1700 },
 						["repeatable"] = true,
 						["g"] = {
 							i(181557),	-- Favor of the Court
+							i(181733),	-- Tribute of the Duty-Bound [Provided at Renown 6/Campaign 3]
 						},
 					}),
 					q(60448, {	-- Challenges in Revendreth
 						["provider"] = { "n", 165291 },	-- The Accuser
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 78.2, 1700 },
 						["repeatable"] = true,
 						["g"] = {
 							i(181557),	-- Favor of the Court
@@ -204,7 +205,7 @@ _.Zones =
 							i(181557),	-- Favor of the Court
 						},
 					}),
-					-- One time Calling Quest to Indroduce Calling Quests, should be sorted in the normal Questfile
+					-- One time Calling Quest to Introduce Calling Quests, should be sorted in the normal Questfile
 					q(62691, {	-- A Calling in Revendreth
 						["provider"] = { "n", 156822 },	-- Mistress Mihaela
 						["coord"] = { 61.4, 63.8, 1525 },

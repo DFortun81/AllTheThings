@@ -106,6 +106,7 @@ _.Zones =
 						["questID"] = 62619,
 						["coord"] = { 53.6, 42.0, 1565 },
 						["crs"] = { 174721 },	-- Meandering Story
+						["provider"] = { "i", 183877 },	-- A Meandering Story
 					}),
 					crit(2, {	-- A Wandering Tale
 						["questID"] = 62620,
@@ -116,6 +117,7 @@ _.Zones =
 							{ 37.9, 40.0, 1565 },
 						},
 						["crs"] = { 174723 },	-- Wandering Tale
+						["provider"] = { "i", 183878 },	-- A Wandering Tale
 					}),
 					crit(3, {	-- An Escapist Novel
 						["questID"] = 62621,
@@ -126,6 +128,7 @@ _.Zones =
 							{ 40.9, 42.3, 1565 },
 						},
 						["crs"] = { 174724 },	-- Escapist Novel
+						["provider"] = { "i", 183879 },	-- An Escapist Novel
 					}),
 					crit(4, {	-- A Travel Journal
 						["questID"] = 62622,
@@ -136,6 +139,7 @@ _.Zones =
 							{ 50.2, 41.9, 1565 },
 						},
 						["crs"] = { 174725 },	-- Travel Journal
+						["provider"] = { "i", 183880 },	-- A Travel Journal
 					}),
 					crit(5, {	-- A Naughty Story
 						["questID"] = 62623,
@@ -145,6 +149,7 @@ _.Zones =
 							{ 51.0, 54.8, 1565 },
 						},
 						["crs"] = { 174726 },	-- A Naughty Story
+						["provider"] = { "i", 183881 },	-- A Naughty Story
 					}),
 				}),
 				ach(14800, {	-- Sojourner of Ardenweald
@@ -170,10 +175,8 @@ _.Zones =
 				ach(14791, {	-- Toss a Seed to Your Hunter...
 					["description"] = "The Faintly Glowing Seeds can be found scattered around the zone, but the closest ones to the encounter are up the hill in Heartwood Grove.  Look around the bases of trees for sparkling bluish-purple plants.",
 					["coord"] = { 65.6, 24.6, 1565 },
+					["cost"] = { { "i", 183902, 1 } },	-- 1x A Faintly Glowing Seed
 					["crs"] = { 171690 },	-- Gwyncierw
-					["g"] = {
-						i(183902),	-- A Faintly Glowing Seed
-					},
 				}),
 				ach(14313, {	-- Treasures of Ardenweald
 					crit(1, {	-- Aerto's Body

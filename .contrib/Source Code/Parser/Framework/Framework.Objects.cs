@@ -1520,52 +1520,8 @@ namespace ATT
                         }
                     // List O' List O' Objects Data Type Fields that could also be numberical values.
                     case "cost":
-                        {
-
-                            // Convert the data to a list of generic objects.
-                            var newListOfLists = value as List<List<object>>;
-                            if (newListOfLists == null)
-                            {
-                                var newList = value as List<object>;
-                                if (newList == null)
-                                {
-                                    var dict = value as Dictionary<object, object>;
-                                    if (dict == null)
-                                    {
-                                        var cost = Convert.ToInt64(value);
-                                        if (cost > 0) item[field] = cost;
-                                        return;
-                                    }
-                                    else newList = dict.Values.ToList();
-                                }
-                                newListOfLists = new List<List<object>>();
-                                foreach (var o in newList)
-                                {
-                                    var list = o as List<object>;
-                                    if (list == null)
-                                    {
-                                        var dict = o as Dictionary<object, object>;
-                                        if (dict == null) return;
-                                        else list = dict.Values.ToList();
-                                    }
-
-                                    string costType = list[0].ToString();
-                                    // ensure the cost has the appropriate number of objects based on type
-                                    if ((costType == "i" || costType == "c") && list.Count != 3)
-                                        throw new InvalidDataException("'cost' tag expects a list of sub-lists of 2 (for gold amounts) or 3 values each, i.e. [\"cost\"] = { { type, id, count }, { \"g\", 100000 }, ... }");
-
-                                    // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                                    if (costType == "i")
-                                    {
-                                        int itemID = Convert.ToInt32(list[1]);
-                                        Items.MarkItemAsReferenced(itemID);
-                                    }
-                                    newListOfLists.Add(list);
-                                }
-                            }
-                            item[field] = newListOfLists;
-                            break;
-                        }
+                        MergeField_cost(item, value);
+                        break;
                     case "minReputation":
                     case "maxReputation":
                         {
@@ -1792,6 +1748,64 @@ namespace ATT
                             break;
                         }
                 }
+            }
+
+            internal static void MergeField_cost(Dictionary<string, object> item, object value)
+            {
+                const string field = "cost";
+
+                // Convert the raw data to a list of generic objects.
+                var costsObjs = CompressToList(value);
+                if (costsObjs == null)
+                {
+                    // simple gold cost is represented as a number
+                    try
+                    {
+                        var gold = Convert.ToInt64(value);
+                        item[field] = gold;
+                        return;
+                    }
+                    catch { }
+                    throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value));
+                }
+
+                // verify each generic object is itself a list of generic objects so we have nice typed values to work with
+                List<List<object>> costsList = new List<List<object>>();
+                bool nonNested = false;
+                foreach (var costObj in costsObjs)
+                {
+                    var costList = CompressToList(costObj);
+                    // assume that a single cost list was used for this 'cost' field... warn about it being non-standard
+                    if (costList == null)
+                    {
+                        nonNested = true;
+                        break;
+                    }
+                    costsList.Add(costList);
+                }
+
+                if (nonNested)
+                {
+                    Trace.WriteLine("Warning: Non-Standard format for '" + field + "' used:" + MiniJSON.Json.Serialize(costsObjs));
+                    costsList.Add(costsObjs);
+                }
+
+                foreach (var cost in costsList)
+                {
+                    string costType = cost[0].ToString();
+                    // ensure the cost has the appropriate number of objects based on type
+                    if ((costType == "i" || costType == "c") && cost.Count != 3)
+                        Trace.WriteLine("Warning: Non-Standard format for '" + field + "' used:" + MiniJSON.Json.Serialize(costsObjs));
+
+                    // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
+                    if (costType == "i")
+                    {
+                        int itemID = Convert.ToInt32(cost[1]);
+                        Items.MarkItemAsReferenced(itemID);
+                    }
+                }
+
+                item[field] = costsList;
             }
 
             /// <summary>
@@ -2161,15 +2175,12 @@ namespace ATT
             /// <returns></returns>
             public static List<object> ConvertToList(Dictionary<string, object> item, string field, object value)
             {
-                if (value is List<object> newList)
-                    return newList;
-
-                if (value is Dictionary<object, object> dict)
-                    return dict.Values.ToList();
+                List<object> list = CompressToList(value);
+                if (list != null)
+                    return list;
 
                 // incase a single value is provided instead of a list
                 bool found = false;
-                List<object> list = null;
                 if (value is int valint)
                 {
                     found = true;
@@ -2204,6 +2215,29 @@ namespace ATT
 
                 // no hope
                 throw new Exception("Failed parsing value '" + value?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
+            }
+
+            /// <summary>
+            /// Returns the specified data compressed into a List
+            /// </summary>
+            /// <param name="value"></param>
+            /// <returns></returns>
+            internal static List<object> CompressToList(object value)
+            {
+                if (value is List<object> newList)
+                    return newList;
+
+                if (value is IDictionary<object, object> dict)
+                    return dict.Values.ToList();
+
+                if (value is ICollection<object> icoll)
+                    return icoll.ToList();
+
+                if (value is IEnumerable<object> ienum)
+                    return ienum.ToList();
+
+                // something that doesn't make sense as a List
+                return null;
             }
             #endregion
         }

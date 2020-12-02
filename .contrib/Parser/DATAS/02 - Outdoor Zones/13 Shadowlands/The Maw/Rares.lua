@@ -232,7 +232,6 @@ _.Zones =
 								{ "i", 182326, 1 },	-- Dominion Etching: Pain
 							},
 						}),
-						i(183067),	-- Korrath's Grimoire: Belidir
 						i(184108),	-- Vorpal Amulet
 					}
 				}),

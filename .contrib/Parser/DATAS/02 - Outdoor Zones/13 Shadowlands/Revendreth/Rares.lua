@@ -167,7 +167,7 @@ _.Zones =
 								q(59607, {	-- Takin' Down the Beast
 									["description"] = "If this quest is offered, it must be completed to spawn the rare.",
 									["repeatable"] = true,
-									["cost"] = { "i", 176397, 1 },	-- 1x Dredhollow Bolt
+									["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
 									["g"] = {										
 										i(176397, {	-- Dredhollow Bolt
 											["description"] = "Used to shoot the Dredterror Ballista. Bring the item to Wingsmash.",
