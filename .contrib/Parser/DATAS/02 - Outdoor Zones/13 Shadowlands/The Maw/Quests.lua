@@ -135,6 +135,15 @@ _.Zones =
 					["coord"] = { 46.9, 41.7, 1543 },
 					["isDaily"] = true,
 				}),
+				q(62932, {	-- Explore Torghast
+					["sourceQuests"] = { 61099 },	-- The Search for Baine
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, 1670 },
+					["maps"] = { 1627 },	-- Torghast
+					["g"] = {
+						i(184758),	-- Drape of Inscrutable Purpose
+					},
+				}),
 				q(59914, {	-- Fear to Tread
 					["sourceQuests"] = {
 						59752,	-- A Fractured Blade
@@ -285,6 +294,9 @@ _.Zones =
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.8, 41.7, 1543 },
+					["g"] = {
+						i(184757),	-- Chain of the Purpose-Bound
+					},
 				}),
 				q(59751, {	-- Through the Shattered Sky
 					["sourceQuests"] = {

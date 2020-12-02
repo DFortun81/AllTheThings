@@ -44,7 +44,7 @@ _.Achievements =
 			ach(14633),	-- Master Navigator
 			ach(14780),	-- Meditation Master
 			ach(14775, {	-- Mush Appreciated
-				title(689),	-- Fun Guy / Fun Gal
+				title(435),	-- Fun Guy / Fun Gal
 			}),
 			ach(14837),	-- Nexus of Bonds
 			ach(14502),	-- Pursuing Loyalty

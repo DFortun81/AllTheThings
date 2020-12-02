@@ -3154,6 +3154,7 @@ _.HiddenQuestTriggers =
 		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
 		q(61305),	-- triggered when completing #61313, "Champion: Kythekios"
 		q(58194),	-- Soulforges, layer 3, (Arch-Suppressor Laguas as boss)
+		q(58186),	-- looting Soul Ash from Custodian Thonar on Floor 6 of the Fracture Chambers
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

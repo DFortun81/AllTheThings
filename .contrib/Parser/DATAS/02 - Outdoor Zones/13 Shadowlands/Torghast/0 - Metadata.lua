@@ -9,15 +9,18 @@ _.Zones =
 			m(1627, {	-- Torghast
 				["icon"] = 3642306,
 				["maps"] = {
+					1635,	-- Fracture Chambers - Floor 1
+					1641,	-- Fracture Chambers - Floor 2
+					1624,	-- Fracture Chambers - Floor 3
+					1621,	-- Fracture Chambers - Floor 4
+					1768,	-- Fracture Chambers - Floor 5
+					1770,	-- Fracture Chambers - Floor 6
 					1618,	-- Torghast
 					1620,	-- Torghast
-					1621,	-- Torghast
-					1624,	-- Torghast
 					1628,	-- Floor 41
 					1629,	-- Floor 28
 					1630,	-- Floor 40
 					1632,	-- Floor 29
-					1641,	-- TG35_Floor
 					1656,	-- Floor 10
 					1660,	-- Alpha_TG_R04
 					1705,	-- Torghast Entrance
@@ -33,11 +36,9 @@ _.Zones =
 					1758,	-- TG48_Floor
 					1759,	-- Torghast
 					1762,	-- TG47_Floor
-					1763,	-- TG52_Floor
+					1763,	-- Arkoban Hall - Floor 5
 					1765,	-- TG54_Floor
-					1768,	-- TG58_Floor
-					1769,	-- TG59_Floor
-					1770,	-- Floor 6 of The Fracture Chambers
+					1769,	-- Arkoban Hall - Floor 6
 					1771,	-- TG61_Floor
 					1772,	-- TG62_Floor
 					1773,	-- TG73_Floor
