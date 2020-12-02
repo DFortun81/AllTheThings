@@ -156,6 +156,26 @@ _.Zones =
 				}),
 				n(RARES, {
 				}),
+				n(-921, {	-- Sanctum Upgrades
+					-- Abomination Factory
+						-- Tier 1: Build a Buddy
+						-- Tier 2: Crafting Limbs
+						-- Tier 3: Bring Them to Life
+						-- Tier 4: Forged Friends
+						-- Tier 5: Best Fiends Forever
+					-- Anima Conductor
+						-- Tier 1: Flowing Tendrils
+						-- Tier 2: Streaming Threads
+						-- Tier 3: Flowing Power
+					-- Command Table
+						-- Tier 1: Tactical Insight
+						-- Tier 2: Recuperative Treatments
+						-- Tier 3: Forced March
+					-- Transport Network
+						-- Tier 1: Ziggaraut Now
+						-- Tier 2: A Keep Above
+						-- Tier 3: Flying Fortress
+				}),
 				n(TREASURES, {
 				}),
 				n(VENDORS, {

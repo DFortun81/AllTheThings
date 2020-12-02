@@ -352,6 +352,9 @@ _.Zones =
 				}),
 				n(-941, {	-- Sanctum Upgrades
 					n(-942, {	-- Anima Conductor
+						-- Tier 1: Flowing Tendrils
+						-- Tier 2: Streaming Threads
+						-- Tier 3: Flowing Power
 					--	tier 1: ?????? (create header)
 						q(57901, {	-- All That Remains
 							["provider"] = { "n", 167745 },	-- Haephus
@@ -365,6 +368,10 @@ _.Zones =
 						}),
 					}),
 					n(-905, {	-- Command Table
+					-- Command Table
+						-- Tier 1: Tactical Insight
+						-- Tier 2: Enhanced Purification
+						-- Tier 3: Wings of Light
 					--	tier 1: ????? (create header
 						q(57900, {	-- Across the Shadowlands
 							["sourceQuests"] = { 57899 },	-- More Work?
@@ -376,6 +383,16 @@ _.Zones =
 							["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
 						}),
 					}),
+					-- Path of Ascension
+						-- Tier 1: First Steps
+						-- Tier 2: Sacred Trials
+						-- Tier 3: Continued Training
+						-- Tier 4: Teachings of Wisdom
+						-- Tier 5: Trials of Humility
+					-- Transport Network
+						-- Tier 1: Step of Faith
+						-- Tier 2: Leap of Power
+						-- Tier 3: Eternal Paths
 				}),
 				n(TREASURES, {
 					o(356818, {	-- Penitence of Purity

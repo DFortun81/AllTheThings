@@ -43,13 +43,13 @@ _.Zones =
 					},
 				}),
 				n(162797, {	-- Deepscar <Pit Hound>
+					["questID"] = 58878,
+					["isDaily"] = true,
 					["coords"] = {
 						{ 46.8, 45.6, 1536 },
 						{ 54.0, 45.6, 1536 },
 						{ 48.2, 51.6, 1536 },
 					},
-					["questID"] = 58878,	-- also triggered 61987 on first kill
-					["isDaily"] = true,
 					["g"] = {
 						crit(20, {	-- Deepscar
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
@@ -76,9 +76,9 @@ _.Zones =
 				}),
 				n(162588, { -- Gristlebeak
 					["description"] = "Kill the Unusual Eggs and Gristled Hatchlings to lure Gristlebeak.",
-					["coord"] = { 57.6, 51.6, 1536 },
-					["questID"] = 58837,	-- also triggered 61991 on first kill
+					["questID"] = 58837,
 					["isDaily"] = true,
+					["coord"] = { 57.6, 51.6, 1536 },
 					["crs"] = {
 						168258,	-- Gristled Hatchling
 						162761,	-- Unusual Egg
@@ -176,11 +176,13 @@ _.Zones =
 					},
 				}),
 				n(162528, { -- Smorgas the Feaster
-					["coord"] = { 43.8, 53.2, 1536 },
-					--["questID"] = ,
+					["questID"] = 58768,
 					["isDaily"] = true,
+					["coord"] = { 43.8, 53.2, 1536 },
 					["g"] = {
-						ach(14308, crit(11)),	-- Adventurer of Maldraxxus / Smorgas the Feaster
+						crit(11, {	-- Smorgas the Feaster
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 						i(181265),	-- Corpselouse Larva
 						i(181266),	-- Feasting Larva
 					},

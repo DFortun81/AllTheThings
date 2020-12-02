@@ -3039,12 +3039,15 @@ _.HiddenQuestTriggers =
 		q(62786),	-- triggered when killing Unbreakable Urtz during "The Ladder" - no other arena opponents triggered quests
 		q(62738),	-- triggered when accepting 62748 [Rallying Maldraxxus]
 		q(63416),	-- triggered when accepting 62748 [Rallying Maldraxxus]
+		q(62712),	-- bonus objective, "War of Attrition" -- what controls availability of these in SL?  i have a bonus objective up at 60 in Ardenweald but i can't see this one
 		-- Maldraxxus Pool of Mixed Monstrosities
 		q(62805),	-- Pulsing Leech secondary quest
 		-- Maldraxxus Rares
-		q(61986),	-- Tahonta secondary quest
+		q(61987),	-- Deepscar secondary kill
+		q(61991),	-- Gristlebeak secondary kill
 		q(61988),	-- Indomitable Schmitd secondary quest
 		q(61992),	-- Pesticide secondary quest
+		q(61986),	-- Tahonta secondary quest
 		-- Maldraxxus WQs
 		q(62948),	-- "learning" the quest items while on #61615, "Tailoring: Haunting Hood"
 		-- Maldraxxus Covenant
@@ -3091,7 +3094,8 @@ _.HiddenQuestTriggers =
 		q(59317),	-- triggered when turning in #62919, "Strengthening the Bond"
 		q(62749),	-- triggered when turning in #62921, "Our True Purpose"
 		q(63063),	-- looks like an unused version of #63056, "Sanctum Upgrade: Mirror Network"
-		q(60300),	-- Channeling Anima Conduit to Waynecrypt Hill
+		q(60300),	-- Channeling Anima Conduit to Wanecrypt Hill
+		q(61587),	-- Channeling Anima Conduit to Wanecrypt Hill for the 3rd day
 		q(60304),	-- Channeling Anima Conduit to Crypt of the Forgotten
 		q(63237),	-- Completing 1st 'Campaign Adventure'
 		q(63260),	-- Completing 1st 'Campaign Adventure'

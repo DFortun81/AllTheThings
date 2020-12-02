@@ -7,6 +7,10 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
 			n(-34,  {	-- World Quests
+				q(57205, {	-- A Few Bumps Along the Way
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59703, {	-- Abombing Run
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -48,6 +52,10 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(60531, {	-- Chosen Champions
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(58490, {	-- Deadly Reminder
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),

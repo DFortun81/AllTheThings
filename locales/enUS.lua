@@ -654,11 +654,13 @@ app.L = {
 		[-905] = 3675495,																	-- Command Table
 
 		[-920] = "Interface\\Icons\\ui_sigil_necrolord",									-- Covenant: Necrolord
+		[-921] = "Interface\\Icons\\ui_sigil_necrolord",									-- Sanctum Upgrades (Necrolord)
 		[-929] = "Interface\\Icons\\ui_sigil_nightfae",										-- Covenant: Night Fae
 		[-930] = 136059,																	-- Queen's Conservatory
 		[-931] = 636334,																	-- Lesser Spirit
 		[-932] = 636335,																	-- Spirit
 		[-933] = 2451604,																	-- Greater Spirit
+		[-935] = "Interface\\Icons\\ui_sigil_nightfae",										-- Sanctum Upgrades (Night Fae)
 		[-939] = "Interface\\Icons\\ui_sigil_kyrian",										-- Covenant: Kyrian
 		[-941] = "Interface\\Icons\\ui_sigil_kyrian",										-- Sanctum Upgrades (Kyrian)
 		[-942] = "Interface\\Icons\\spell_animabastion_beam",								-- Anima Conductor (Kyrian)
@@ -672,6 +674,7 @@ app.L = {
 		[-954] = "Interface\\Icons\\spell_animarevendreth_buff",							-- Inquisitors
 		[-955] = "Interface\\Icons\\spell_animarevendreth_buff",							-- High Inquisitors
 		[-956] = "Interface\\Icons\\spell_animarevendreth_buff",							-- Grand Inquisitors
+		[-957] = "Interface\\Icons\\ui_sigil_venthyr",										-- Sanctum Upgrades (Venthyr)
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1486,6 +1489,7 @@ app.L = {
 		
 -- SL Maldraxxus/Necrolord
 		[-920] = "Covenant: Necrolord",											-- Covenant: Necrolord
+		[-921] = "Sanctum Upgrades",											-- Sanctum Upgrades (Necrolord)
 
 -- SL Ardenweald/Night Fae
 		[-929] = "Covenant: Night Fae",											-- Covenant: Night Fae
@@ -1494,6 +1498,7 @@ app.L = {
 		[-932] = GetSpellInfo(172153),											-- Spirit
 		[-933] = GetSpellInfo(13826),											-- Greater Spirit
 		[-934] = "Star Lake Amphitheater",										-- Star Lake Amphitheater
+		[-935] = "Sanctum Upgrades",											-- Sanctum Upgrades (Night Fae)
 
 -- SL Bastion/Kyrian
 		[-939] = "Covenant: Kyrian",											-- Covenant: Kyrian
@@ -1503,13 +1508,14 @@ app.L = {
 
 -- SL Revendreth/Venthyr
 		[-949] = "Covenant: Venthyr",											-- Covenant: Venthyr
-		[-950] = "Mirror Network",												-- Mirror Network
+		[-950] = "Transport Network",											-- Transport Network
 		[-951] = "Tier 1: Mirror Mirror",										-- Tier 1: Mirror Mirror
 		[-952] = "Tier 2: Looking Glass",										-- Tier 2: Looking Glass"
 		[-953] = "Tier 3: Mirror's Edge",										-- Tier 3: Mirror's Edge
 		[-954] = "Inquisitors",													-- Inquisitors
 		[-955] = "High Inquisitors",											-- High Inquisitors
 		[-956] = "Grand Inquisitors",											-- Grand Inquisitors
+		[-957] = "Sanctum Upgrades",											-- Sanctum Upgrades (Venthyr)
 
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",

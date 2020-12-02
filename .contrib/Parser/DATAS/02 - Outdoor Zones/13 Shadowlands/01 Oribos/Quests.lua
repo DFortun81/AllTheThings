@@ -388,6 +388,18 @@ _.Zones =
 					["coord"] = { 38.8, 70.0, 1670 },
 					["sourceQuests"] = { 62000 },	-- Choosing Your Purpose
 				}),
+				q(63208, {	-- The Next Step
+				--	TODO: not sure where to put this
+				--	After completing your first zone in Threads of Fate mode
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 69.9, 1670 },
+				}),
+				q(63209, {	-- Furthering the Purpose
+				--	TODO: not sure where to put this
+				--	After completing your second zone in Threads of Fate mode
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 69.9, 1670 },
+				}),
 
 				-- Zone Select Breadcrumbs
 				q(62277, {	-- Ardenweald
