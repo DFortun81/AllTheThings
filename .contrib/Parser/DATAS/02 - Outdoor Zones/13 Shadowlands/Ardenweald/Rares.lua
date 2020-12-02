@@ -205,13 +205,16 @@ _.Zones =
 					},
 				}),
 				n(167726, {	-- Rootwrithe
-					["coord"] = { 64.6, 44.0, 1565 },
+					["description"] = "Poke the Dormant Blossoms repeatedly to summon the rare.",
 					["questID"] = 60273,
 					["isDaily"] = true,
+					["coord"] = { 64.6, 44.0, 1565 },
+					["crs"] = { 167928, 167929, 167916 },	-- Dormant Blossom
 					["g"] = {
 						crit(14, {	-- Rootwrithe
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
+						i(179603),	-- Nettlehusk Barrier
 					},
 				}),
 				n(167724, {	-- Rotbriar Changeling
@@ -266,7 +269,7 @@ _.Zones =
 				}),
 				n(-934,   {	-- Star Lake Amphitheater
 					["description"] = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
-				--	TODO: are these on a cycle?  i think it was Mi'kai > Glimmerdust as Kil'jaeden > Astra > Senthii so far, if order holds we can add it to the description
+				--	TODO: are these on a cycle?  i think it was Mi'kai > Glimmerdust as Kil'jaeden > Astra > Senthii > Niya so far, if order holds we can add it to the description
 					["questID"] = 61633,	-- this appears to trigger for all rares.  move to HQT if this changes, only 2 tested so far
 					["coord"] = { 41.5, 44.8, 1565 },
 					["icon"] = "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
@@ -308,14 +311,13 @@ _.Zones =
 								i(179534),	-- Mi'kai's Deathscythe
 							},
 						}),
-						--[[
 						n(166146, {	-- Niya, As Xavius <Some Kind of Evil Sylvar>
-							["questID"] = ,
+							["questID"] = 61207,
 							["isDaily"] = true,
 							["g"] = {
+								i(182455),	-- Dreamer's Mending
 							},
 						}),
-						--]]
 						n(166140, {	-- Senthii, As Gul'dan <From an Alternate Timeline>
 							["questID"] = 61204,
 							["isDaily"] = true,

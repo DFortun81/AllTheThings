@@ -793,6 +793,7 @@ _.Zones =
 					},
 				}),
 				q(60840, {	-- Wild Hunt Offensive (bonus objective)
+					["isWorldQuest"] = true,	-- shows up in /attwq without this
 					["coord"] = { 64, 46, 1565 },
 				}),
 				q(60778, {	-- Wildseed Rescue

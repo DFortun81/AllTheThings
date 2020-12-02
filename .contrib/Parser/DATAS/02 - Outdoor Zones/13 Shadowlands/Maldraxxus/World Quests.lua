@@ -88,6 +88,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61540, {	-- Just Winging It
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61537, {	-- Mining: Monolithic Oxxein Cluster
 					["requireSkill"] = MINING,
 					["isWorldQuest"] = true,

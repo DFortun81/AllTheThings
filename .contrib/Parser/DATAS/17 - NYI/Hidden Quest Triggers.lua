@@ -2944,12 +2944,15 @@ _.HiddenQuestTriggers =
 		q(63070),	-- Triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" (appears to be shared across covenants)
 		q(63360),	-- triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" as Kyrian
 		q(63359),	-- Triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" as Night Fae
+		q(63362),	-- triggered after completing mi(2174), "Tutorial, Dispose of the Detritus" as Venthyr
 		q(63071),	-- Triggered after completing mi(2295), "Tutorial: Necromantic Intervention" (appears to be shared across covenants)
 		q(63364),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Kyrian
 		q(63363),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Night Fae
+		q(63366),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Venthyr
 		q(60634),	-- Triggered after completing mi(2175),	"Tutorial: Spinal Swarm" (appears to be shared across covenants)
 		q(63368),	-- triggered after completing mi(2175),	"Tutorial: Spinal Swarm" as Kyrian
 		q(63367),	-- Triggered after completing mi(2175),	"Tutorial: Spinal Swarm" as Night Fae
+		q(63370),	-- triggered after completing mi(2175), "Tutorial: Spinal Swarm" as Venthyr
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)

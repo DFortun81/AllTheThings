@@ -46,6 +46,7 @@ i(184770);	-- Roster of the Forgotten
 i(184293);	-- Sanctified Skylight Leaf
 i(184146);	-- Singed Soul Shackles
 i(184389);	-- Slumbering Starseed
+i(184373);	-- Small Anima Globe
 i(181647);	-- Stabilized Plague Strain
 i(181479);	-- Starlight Catcher
 i(184519);	-- Totem of Stolen Mojo
@@ -298,6 +299,7 @@ i(171315); 	-- Reuse me (MTMM)
 
 
 -- "Toy"
+i(184634);	-- Adventurer's Herbalism Cache
 i(173791);	-- Baguette
 i(9282);	-- Blue Punch Card
 i(160364);	-- Bunch of Berries

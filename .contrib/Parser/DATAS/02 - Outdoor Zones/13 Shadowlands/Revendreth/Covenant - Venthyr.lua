@@ -431,16 +431,25 @@ _.Zones =
 						}),
 					}),
 					n(-905, {	-- Command Table
-						q(61729, {	-- Adventurer: Rahel
-						--	TODO: everything lmao
-						--	["sourceQuests"] = {  },	-- 
-						--	["provider"] = { "n",  },	-- Tactician Sakaa
-						--	["coord"] = { , ,  },	-- 
-							["g"] = {
-							--	follower(1250),	-- Rahel
-							},
-						}),
 						n(-906, {	-- Tier 1: Tactical Insight
+							q(59319, {	-- Advancing Our Efforts
+								["sourceQuests"] = { 63064 },	-- Sanctum Upgrade: Adventures Scouting Map
+								["provider"] = { "n", 164741 },	-- Tactician Sakaa
+								["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+							}),
+							q(63064, {	-- Sanctum Upgrade: Adventures Scouting Map
+								["provider"] = { "n", 172605 },	-- Foreman Flatfinger
+								["coord"] = { 55.4, 27.0, 1699 },	-- Sinfall Reaches
+							}),
+							q(61729, {	-- Adventurer: Rahel
+								["sourceQuests"] = { 63064 },	-- Sanctum Upgrade: Adventures Scouting Map
+								["description"] = "Requires 4 Renown.",
+								["provider"] = { "n", 164741 },	-- Tactician Sakaa
+								["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+								["g"] = {
+									follower(1250),	-- Rahel
+								},
+							}),
 						}),
 						n(-958, {	-- Tier 2: Deserved Feast
 						}),
