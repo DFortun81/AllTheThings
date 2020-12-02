@@ -757,14 +757,20 @@ _.Zones =
 				n(RARES, {
 				}),
 				n(-935, {	-- Sanctum Upgrades
-					-- Anima Conductor
-						-- Tier 1: Flowing Tendrils
-						-- Tier 2: Streaming Tendrils
-						-- Tier 3: Flowing Power
-					-- Command Table
-						-- Tier 1: Tactical Insight
+					n(-915, {	-- Anima Conductor
+						n(-916, {	-- Tier 1: Flowing Tendrils
+						}),
+						n(-917, {	-- Tier 2: Streaming Threads
+						}),
+						n(-918, {	-- Tier 3: Flowing Power
+						}),
+					}),
+					n(-905, {	-- Command Table
+						n(-906, {	-- Tier 1: Tactical Insight
+						}),
 						-- Tier 2: Grovetender's Gift
 						-- Tier 3: Hidden Pathways
+					}),
 					n(-930, {	-- Queen's Conservatory
 						["description"] = "|cFFA330C9Night Fae Covenant|r only.",
 						["g"] = {

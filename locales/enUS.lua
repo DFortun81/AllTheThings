@@ -652,7 +652,12 @@ app.L = {
 		[-903] = "Interface\\Icons\\buff_feltreasures",										-- Zone Rewards
 		[-904] = "Interface\\Icons\\ui_torghast",											-- Wrath of the Jailer
 		[-905] = 3675495,																	-- Command Table
+		[-906] = 3675495,																	-- Tier 1: Tactical Insight
 
+		[-915] = "Interface\\Icons\\sanctum_features_animadiversion",						-- Anima Conductor
+		[-916] = "Interface\\Icons\\sanctum_features_animadiversion",						-- Tier 1: Flowing Tendrils
+		[-917] = "Interface\\Icons\\sanctum_features_animadiversion",						-- Tier 2: Streaming Threads
+		[-918] = "Interface\\Icons\\sanctum_features_animadiversion",						-- Tier 3: Flowing Power
 		[-920] = "Interface\\Icons\\ui_sigil_necrolord",									-- Covenant: Necrolord
 		[-921] = "Interface\\Icons\\ui_sigil_necrolord",									-- Sanctum Upgrades (Necrolord)
 		[-929] = "Interface\\Icons\\ui_sigil_nightfae",										-- Covenant: Night Fae
@@ -663,8 +668,8 @@ app.L = {
 		[-935] = "Interface\\Icons\\ui_sigil_nightfae",										-- Sanctum Upgrades (Night Fae)
 		[-939] = "Interface\\Icons\\ui_sigil_kyrian",										-- Covenant: Kyrian
 		[-941] = "Interface\\Icons\\ui_sigil_kyrian",										-- Sanctum Upgrades (Kyrian)
-		[-942] = "Interface\\Icons\\spell_animabastion_beam",								-- Anima Conductor (Kyrian)
 		[-949] = "Interface\\Icons\\ui_sigil_venthyr",										-- Covenant: Venthyr
+		
 		
 
 		[-950] = 3854020,																	-- Transport Network
@@ -675,6 +680,14 @@ app.L = {
 		[-955] = "Interface\\Icons\\spell_animarevendreth_buff",							-- High Inquisitors
 		[-956] = "Interface\\Icons\\spell_animarevendreth_buff",							-- Grand Inquisitors
 		[-957] = "Interface\\Icons\\ui_sigil_venthyr",										-- Sanctum Upgrades (Venthyr)
+		[-958] = 3675495,																	-- Tier 2: Deserved Feast
+		[-959] = 3675495,																	-- Tier 3: Superior Efficiency
+		[-960] = 3675493,																	-- The Ember Court
+		[-961] = 3675493,																	-- Tier 1: A New Court
+		[-962] = 3675493,																	-- Tier 2: Homegrown Help
+		[-963] = 3675493,																	-- Tier 3: Court Influencer
+		[-964] = 3675493,																	-- Tier 4: Discerning Taste
+		[-965] = 3675493,																	-- Tier 5: The Professionals
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1485,7 +1498,12 @@ app.L = {
 		[-903] = "Zone Rewards",												-- Zone Rewards
 		[-904] = "Wrath of the Jailer",											-- Wrath of the Jailer
 		[-905] = "Command Table",												-- Command Table
+		[-906] = "Tier 1: Tactical Insight",									-- Tier 1: Tactical Insight
 		[-914] = "Adventures",													-- Adventures
+		[-915] = "Anima Conductor",												-- Anima Conductor
+		[-916] = "Tier 1: Flowing Tendrils",									-- Tier 1: Flowing Tendrils
+		[-917] = "Tier 2: Streaming Threads",									-- Tier 2: Streaming Threads
+		[-918] = "Tier 3: Flowing Power",										-- Tier 3: Flowing Power
 		
 -- SL Maldraxxus/Necrolord
 		[-920] = "Covenant: Necrolord",											-- Covenant: Necrolord
@@ -1504,7 +1522,6 @@ app.L = {
 		[-939] = "Covenant: Kyrian",											-- Covenant: Kyrian
 		[-940] = "Ascended Council",											-- Ascended Counil
 		[-941] = "Sanctum Upgrades",											-- Sanctum Upgrades (Kyrian)
-		[-942] = "Anima Conductor",												-- Anima Conductor (Kyrian)
 
 -- SL Revendreth/Venthyr
 		[-949] = "Covenant: Venthyr",											-- Covenant: Venthyr
@@ -1516,6 +1533,14 @@ app.L = {
 		[-955] = "High Inquisitors",											-- High Inquisitors
 		[-956] = "Grand Inquisitors",											-- Grand Inquisitors
 		[-957] = "Sanctum Upgrades",											-- Sanctum Upgrades (Venthyr)
+		[-958] = "Tier 2: Deserved Feast",										-- Tier 2: Deserved Feast
+		[-959] = "Tier 3: Superior Efficiency",									-- Tier 3: Superior Efficiency
+		[-960] = "The Ember Court",												-- The Ember Court
+		[-961] = "Tier 1: A New Court",											-- Tier 1: A New Court
+		[-962] = "Tier 2: Homegrown Help",										-- Tier 2: Homegrown Help
+		[-963] = "Tier 3: Court Influencer",									-- Tier 3: Court Influencer
+		[-964] = "Tier 4: Discerning Taste",									-- Tier 4: Discerning Taste
+		[-965] = "Tier 5: The Professionals",									-- Tier 5: The Professionals
 
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",

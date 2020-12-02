@@ -163,14 +163,20 @@ _.Zones =
 						-- Tier 3: Bring Them to Life
 						-- Tier 4: Forged Friends
 						-- Tier 5: Best Fiends Forever
-					-- Anima Conductor
-						-- Tier 1: Flowing Tendrils
-						-- Tier 2: Streaming Threads
-						-- Tier 3: Flowing Power
-					-- Command Table
-						-- Tier 1: Tactical Insight
+					n(-915, {	-- Anima Conductor
+						n(-916, {	-- Tier 1: Flowing Tendrils
+						}),
+						n(-917, {	-- Tier 2: Streaming Threads
+						}),
+						n(-918, {	-- Tier 3: Flowing Power
+						}),
+					}),
+					n(-905, {	-- Command Table
+						n(-906, {	-- Tier 1: Tactical Insight
+						}),
 						-- Tier 2: Recuperative Treatments
 						-- Tier 3: Forced March
+					}),
 					-- Transport Network
 						-- Tier 1: Ziggaraut Now
 						-- Tier 2: A Keep Above

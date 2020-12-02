@@ -351,37 +351,38 @@ _.Zones =
 				n(RARES, {
 				}),
 				n(-941, {	-- Sanctum Upgrades
-					n(-942, {	-- Anima Conductor
-						-- Tier 1: Flowing Tendrils
-						-- Tier 2: Streaming Threads
-						-- Tier 3: Flowing Power
-					--	tier 1: ?????? (create header)
-						q(57901, {	-- All That Remains
-							["provider"] = { "n", 167745 },	-- Haephus
-							["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
-							-- Kyrian required, available after researching Anima Conductor tier 1
+					n(-915, {	-- Anima Conductor
+						n(-916, {	-- Tier 1: Flowing Tendrils
+							q(57901, {	-- All That Remains
+								["provider"] = { "n", 167745 },	-- Haephus
+								["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+							}),
+							q(57903, {	-- Power in the Sky
+								["sourceQuests"] = { 57901 },	-- All That Remains
+								["provider"] = { "n", 158773 },	-- Capheus
+								["coord"] = { 37.9, 67.5, 1707 },	-- Elysian Hold
+							}),
 						}),
-						q(57903, {	-- Power in the Sky
-							["sourceQuests"] = { 57901 },	-- All That Remains
-							["provider"] = { "n", 158773 },	-- Capheus
-							["coord"] = { 37.9, 67.5, 1707 },	-- Elysian Hold
+						n(-917, {	-- Tier 2: Streaming Threads
+						}),
+						n(-918, {	-- Tier 3: Flowing Power
 						}),
 					}),
 					n(-905, {	-- Command Table
-					-- Command Table
-						-- Tier 1: Tactical Insight
+						n(-906, {	-- Tier 1: Tactical Insight
+							q(57900, {	-- Across the Shadowlands
+								["sourceQuests"] = { 57899 },	-- More Work?
+								["provider"] = { "n", 160389 },	-- Koros
+								["coord"] = { 43.8, 40.7, 1707 },	-- Elysian Hold
+							}),
+							q(57899, {	-- More Work?
+								["provider"] = { "n", 167745 },	-- Haephus
+								["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+							}),
+						}),
+						-- TODO: create headers for these
 						-- Tier 2: Enhanced Purification
 						-- Tier 3: Wings of Light
-					--	tier 1: ????? (create header
-						q(57900, {	-- Across the Shadowlands
-							["sourceQuests"] = { 57899 },	-- More Work?
-							["provider"] = { "n", 160389 },	-- Koros
-							["coord"] = { 43.8, 40.7, 1707 },	-- Elysian Hold
-						}),
-						q(57899, {	-- More Work?
-							["provider"] = { "n", 167745 },	-- Haephus
-							["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
-						}),
 					}),
 					-- Path of Ascension
 						-- Tier 1: First Steps

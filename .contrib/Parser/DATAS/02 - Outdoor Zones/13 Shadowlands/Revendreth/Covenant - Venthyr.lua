@@ -417,20 +417,34 @@ _.Zones =
 				n(RARES, {
 				}),
 				n(-957, {	-- Sanctum Upgrades
-					-- Anima Conductor
-						-- Tier 1: Flowing Tendrils
-						-- Tier 2: Streaming Threads
-						-- Tier 3: Flowing Power
-					-- Command Table
-						-- Tier 1: Tactical Insight
-						-- Tier 2: Deserved Feast
-						-- Tier 3: Superior Efficiency
-					-- The Ember Court
-						-- Tier 1: A New Court
-						-- Tier 2: Homegrown Help
-						-- Tier 3: Court Influencer
-						-- Tier 4: Discerning Taste
-						-- Tier 5: The Professionals
+					n(-915, {	-- Anima Conductor
+						n(-916, {	-- Tier 1: Flowing Tendrils
+						}),
+						n(-917, {	-- Tier 2: Streaming Threads
+						}),
+						n(-918, {	-- Tier 3: Flowing Power
+						}),
+					}),
+					n(-905, {	-- Command Table
+						n(-906, {	-- Tier 1: Tactical Insight
+						}),
+						n(-958, {	-- Tier 2: Deserved Feast
+						}),
+						n(-959, {	-- Tier 3: Superior Efficiency
+						}),
+					}),
+					n(-960, {	-- The Ember Court
+						n(-961, {	-- Tier 1: A New Court
+						}),
+						n(-962, {	-- Tier 2: Homegrown Help
+						}),
+						n(-963, {	-- Tier 3: Court Influencer
+						}),
+						n(-964, {	-- Tier 4: Discerning Taste
+						}),
+						n(-965, {	-- Tier 5: The Professionals
+						}),
+					}),
 					n(-950, {	-- Transport Network
 						q(60051,{	-- A Master of Their Craft
 							["sourceQuests"] = { 63056 },	-- Sanctum Upgrade: Mirror Network
