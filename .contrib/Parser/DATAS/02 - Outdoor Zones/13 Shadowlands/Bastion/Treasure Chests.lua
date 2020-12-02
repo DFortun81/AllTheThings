@@ -56,6 +56,12 @@ _.Zones =
 						i(184418),	-- Acrobatic Steward (TOY!)
 					},
 				}),
+				o(1278968755, {	-- Silver Strongbox
+				--	TODO: fix object ID when data is available
+					["questID"] = 60758,
+					["isDaily"] = true,
+					["coord"] = { 63.8, 29.1, 1533 }
+				}),
 				o(353314, {	-- Silver Strongbox
 				--	TODO: updated objectIDs to match with coords when the data is available
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute

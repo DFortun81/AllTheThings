@@ -7,8 +7,10 @@ end
 
 -- Anima Items
 i(181540);	-- Animaflower Bud
+i(181477);	-- Ardendew Pearl
 i(184381);	-- Astral Sapwood
 i(184773);	-- Battle-Tested Armor Component
+i(181545);	-- Bloodbound Globule
 i(184150);	-- Bonded Tallow Candles
 i(184152);	-- Bottle of Diluted Anima-Wine
 i(181541);	-- Celestial Acorn
@@ -28,6 +30,7 @@ i(181745);	-- Forgesmith's Coal
 i(184767);	-- Handheld Soul Mirror
 i(184384);	-- Hibernal Sproutling
 i(181550);	-- Hopebreaker's Field Injector
+i(181377);	-- Illustrated Combat Meditation Aid
 i(184305);	-- Maldraxxi Champion's Armaments
 i(184387);	-- Misty Shimmerleaf
 i(181547);	-- Noble's Draught

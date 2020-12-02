@@ -15,6 +15,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(60929, {	-- Air Supremacy
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(62235, {	-- Allay Their Fears
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

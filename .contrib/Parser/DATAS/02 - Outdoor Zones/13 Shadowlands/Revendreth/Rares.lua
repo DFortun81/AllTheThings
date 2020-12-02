@@ -70,13 +70,16 @@ _.Zones =
 					},
 				}),
 				n(166710, {	-- Executioner Aatron
+					["description"] = "Kill the 3 Stone Legion Punishers along the wall to make the rare attackable.",
 					["questID"] = 59913,
 					["isDaily"] = true,
 					["coord"] = { 37.2, 47.8, 1525 },
+					["crs"] = { 166715 },	-- Stone Legion Punisher
 					["g"] = {
 						crit(19, {	-- Executioner Aatron
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
+						i(183737),	-- Aatron's Stone Girdle
 					},
 				}),
 				n(161310, {	-- Executioner Adrastia
