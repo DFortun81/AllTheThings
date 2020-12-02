@@ -14,12 +14,14 @@ _.Zones =
 						["coord"] = { 34.7, 56.5, 1670 },
 					}),
 					q(62284, {	-- Observing Battle
-					--	TODO: is this weekly?  it isn't designated as weekly in quest API
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+						["isWeekly"] = true,
 						["coord"] = { 34.7, 56.5, 1670 },
-						["g"] = {
-							i(184315),	-- Multi-Modal Anima Container
-						},
+					}),
+					q(62285, {	-- Observing War
+						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+						["isWeekly"] = true,
+						["coord"] = { 34.7, 56.5, 1670 },
 					}),
 					--[[
 				--	TODO: these are the rest of the PVP quests from Unsorted.  if they show up, it'll be easier to move them/add information.  if they don't show up they can be moved to the NYI > NYI Quests file.
@@ -29,15 +31,6 @@ _.Zones =
 						["lvl"] = 60,
 						["g"] = {
 							i(184374, { -- Cartel Exchange Vessel
-
-							})
-						}
-					}),
-					q(62285, {	-- Observing War
-						["description"] = "Type: |cFFf09f26PvP|r\nArea: |cFFf09f26Oribos|r",
-						["lvl"] = 60,
-						["g"] = {
-							i(184315, { -- Multi-Modal Anima Container
 
 							})
 						}
@@ -282,8 +275,8 @@ _.Zones =
 				}),
 				q(60244, {	-- Trading Favors: Halls of Atonement
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
 					["g"] = {
 						i(184374),	-- Cartel Exchange Vessel
@@ -300,8 +293,8 @@ _.Zones =
 				}),
 				q(60248, {	-- Trading Favors: Plaguefall
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
 					["g"] = {
 						i(184374),	-- Cartel Exchange Vessel
@@ -309,8 +302,8 @@ _.Zones =
 				}),
 				q(60243, {	-- Trading Favors: Sanguine Depths
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
 					["g"] = {
 						i(184374),	-- Cartel Exchange Vessel
@@ -318,8 +311,8 @@ _.Zones =
 				}),
 				q(60249, {	-- Trading Favors: Spires of Ascension
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
 					["g"] = {
 						i(184374),	-- Cartel Exchange Vessel
@@ -327,8 +320,8 @@ _.Zones =
 				}),
 				q(60245, {	-- Trading Favors: The Other Side
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
 					["g"] = {
 						i(184374),	-- Cartel Exchange Vessel
@@ -336,8 +329,8 @@ _.Zones =
 				}),
 				q(60247, {	-- Trading Favors: Theater of Pain
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
 					["g"] = {
 						i(184374),	-- Cartel Exchange Vessel
@@ -345,8 +338,8 @@ _.Zones =
 				}),
 				q(60246, {	-- Trading Favors: Tirna Scithe
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
+					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
 					["g"] = {
 						i(184374),	-- Cartel Exchange Vessel

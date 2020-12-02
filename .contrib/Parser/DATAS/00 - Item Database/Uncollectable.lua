@@ -13,6 +13,7 @@ i(184773);	-- Battle-Tested Armor Component
 i(181545);	-- Bloodbound Globule
 i(184150);	-- Bonded Tallow Candles
 i(184152);	-- Bottle of Diluted Anima-Wine
+i(183723);	-- Brimming Anima Orb
 i(181541);	-- Celestial Acorn
 i(184768);	-- Censer of Dried Gracepetals
 i(184766);	-- Chronicles of the Paragons
@@ -33,6 +34,7 @@ i(181550);	-- Hopebreaker's Field Injector
 i(181377);	-- Illustrated Combat Meditation Aid
 i(184305);	-- Maldraxxi Champion's Armaments
 i(184387);	-- Misty Shimmerleaf
+i(184315);	-- Multi-Modal Anima Container
 i(181547);	-- Noble's Draught
 i(181649);	-- Preserved Preternatural Braincase
 i(184769);	-- Pressed Torchlily Blossom

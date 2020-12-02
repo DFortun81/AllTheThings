@@ -96,8 +96,9 @@ _.Zones =
 					["coord"] = { 30.1, 23.7, 1536 },
 				}),
 				q(62605, {	-- Broker Business
-					-- TODO: add sourceQuests if there are any; it just showed up for me but I had completed main storyline for the entire zone already.
-					-- Possible that this is a breadcrumb?
+					-- TODO: verify SQs (multiple reports that this showed up after finishing the 'House of Constructs' criteria.  'Read Between the Lines' is available immediately as soon as the zone unlocks, so this breadcrumb is easy to miss if you explore before you start questing)
+					["sourceQuests"] = { 60733 },	-- Front and Center
+					["isBreadcrumb"] = true,
 					["provider"] = { "o", 358533 },	-- Forgotten Supplies
 					["coord"] = { 38.2, 31.3, 1536 },
 				}),

@@ -45,11 +45,6 @@ _.Zones =
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 						["coord"] = { 39.9, 68.5, 1670 },
 					}),
-					q(61099, {	-- The Search for Baine
-						["sourceQuests"] = { 60136 },	-- Into Torghast
-						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-						["coord"] = { 39.9, 68.5, 1670 },
-					}),
 					q(60272, {	-- The Weak Link
 						["sourceQuests"] = { 60271 },	-- A Grave Chance
 						["provider"] = { "n", 162804 },	-- Ve'nari

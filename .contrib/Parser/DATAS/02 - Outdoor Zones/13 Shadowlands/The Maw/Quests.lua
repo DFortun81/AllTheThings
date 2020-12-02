@@ -281,6 +281,11 @@ _.Zones =
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
 					["coord"] = { 29.4, 44.0, 1648 },
 				}),
+				q(61099, {	-- The Search for Baine
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, 1543 },
+				}),
 				q(59751, {	-- Through the Shattered Sky
 					["sourceQuests"] = {
 						60545, -- A Chilling Summons (A)

@@ -347,6 +347,11 @@ _.Zones =
 							i(182584),    -- Cheetah's Vigor
 						},
 					}),
+					q(63029, {	-- The Highlord Calls
+						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.6, 42.0, 1707 },	-- Elysian Hold
+					}),
 					q(62790, {	-- The Path Provides
 						["sourceQuests"] = { 62789 },	-- Of Great Renown
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
