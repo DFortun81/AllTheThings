@@ -23,6 +23,7 @@ i(181544);	-- Confessions of Misdeed
 i(184363);	-- Considerations on Courage
 i(184151);	-- Counterfeit Ruby Brooch
 i(181551);	-- Depleted Stoneborn Heart
+i(184383);	-- Duskfall Tuber
 i(181645);	-- Engorged Monstrosity's Heart
 i(184294);	-- Ethereal Ambrosia
 i(184378);	-- Faeweald Amber
@@ -45,6 +46,7 @@ i(184770);	-- Roster of the Forgotten
 i(184293);	-- Sanctified Skylight Leaf
 i(184146);	-- Singed Soul Shackles
 i(184389);	-- Slumbering Starseed
+i(181647);	-- Stabilized Plague Strain
 i(181479);	-- Starlight Catcher
 i(184519);	-- Totem of Stolen Mojo
 i(184776);	-- Urn of Arena Soil
