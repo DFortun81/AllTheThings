@@ -675,13 +675,6 @@ _.Zones =
 						["coord"] = { 46.4, 50.6, 1565 },
 						["sourceQuests"] = { 62693 },	-- A Calling in Ardenweald
 					}),
-					-- Dailies / Weeklies
-					q(62441, {	-- Fair Exchange for a Soul
-						["provider"] = { "n", 166476 },	-- Warden Casad
-						["coord"] = { 33.4, 62.0, 1662 },
-						["sourceQuests"] = { 59873 },	-- Greeting a God
-						["isWeekly"] = true,
-					}),
 					-- Covenant progress
 					q(61853, {	-- Adventurer: Te'zan (Rank ?)
 						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
@@ -731,25 +724,44 @@ _.Zones =
 					n(-930, {	-- Queen's Conservatory
 						["description"] = "|cFFA330C9Night Fae Covenant|r only.",
 						["g"] = {
-							-- Achievements
-							filter(100, {	-- Mounts
-								["coord"] = { 43.4, 33.6, 1565 },
-								["description"] = "Each Mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. Once the seeds are planted, you need to wait |cFFFFD7007|r days for the incubation.\n\nOnce the Wildseed of Regrowth fully incubated, you can loot it which causes an NPC to spawn next to you. Talking with him enables you to loot the Queen's Conservatory Cache.\n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearb.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearby. \n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
-								-- TODO: use objectID? o(350978),	-- Queen's Conservatory Cache
-								["g"] = {
-									i(181317),	-- Dauntless Duskrunner
-									i(180723),	-- Enchanted Wakener's Runestag
-									i(181300),	-- Gruesome Flayedwing
-									i(180726),	-- Pale Acidmaw
-									i(181316),	-- Silvertip Dredwing
-									i(180414),	-- Wakener's Runestag
-								},
+							o(350978, {	-- Queen's Conservatory Cache
+								filter(100, {	-- Mounts
+									["coord"] = { 43.4, 33.6, 1565 },
+									["description"] = "Each Mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. Once the seeds are planted, you need to wait |cFFFFD7007|r days for the incubation.\n\nOnce the Wildseed of Regrowth fully incubated, you can loot it which causes an NPC to spawn next to you. Talking with him enables you to loot the Queen's Conservatory Cache.\n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearb.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearby. \n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
+									-- TODO: use objectID? o(350978),	-- Queen's Conservatory Cache
+									["g"] = {
+										i(181317),	-- Dauntless Duskrunner
+										i(180723),	-- Enchanted Wakener's Runestag
+										i(181300),	-- Gruesome Flayedwing
+										i(180726),	-- Pale Acidmaw
+										i(181316),	-- Silvertip Dredwing
+										i(180414),	-- Wakener's Runestag
+									},
+								}),
+								i(181314, {	-- Gulper Soul
+									["questID"] = 62421,	-- Gulper Soul
+								}),
+								i(181313, {	-- Snapper Soul
+									["questID"] = 62420,	-- Snapper Soul
+								}),
 							}),
 							n(QUESTS, {
 								q(59862, {	-- A Savior for Lost Souls
 									["sourceQuests"] = { 63046 },	-- The End and the Beginning
 									["provider"] = { "n", 166476 },	-- Warden Casad
 									["coord"] = { 69.9, 44.7, 1662 },
+								}),
+								q(62441, {	-- Fair Exchange for a Soul
+									["sourceQuests"] = { 59873 },	-- Greeting a God
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+									["isWeekly"] = true,
+									["g"] = {
+										i(178880),	-- Greater Dutiful Spirit
+										i(178877),	-- Greater Martial Spirit
+										i(178883),	-- Greater Prideful Spirit
+										i(177699),	-- Greater Untamed Spirit
+									},
 								}),
 								q(59873, {	-- Greeting a God
 									["sourceQuests"] = { 59872 },	-- How to Save a God
@@ -758,6 +770,11 @@ _.Zones =
 								}),
 								q(59872, {	-- How to Save a God
 									["sourceQuests"] = { 59862 },	-- A Savior for Lost Souls
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+								}),
+								q(59999, {	-- Rebirth of the Grove
+									["sourceQuests"] = { 59873 },	-- Greeting a God
 									["provider"] = { "n", 166476 },	-- Warden Casad
 									["coord"] = { 33.4, 62.0, 1662 },
 								}),
@@ -773,11 +790,6 @@ _.Zones =
 								}),
 								
 								-- TODO: everything past here is yet to be verified on retail
-								q(59999, {	-- Rebirth of the Grove
-									["provider"] = { "n", 166476 },	-- Warden Casad
-									["coord"] = { 33.4, 62.0, 1662 },
-									["sourceQuests"] = { 59873 },	-- Greeting a God
-								}),
 								q(59871, {	-- Catalyze This
 									["provider"] = { "n", 166476 },	-- Warden Casad
 									["coord"] = { 33.4, 62.0, 1662 },
@@ -952,6 +964,83 @@ _.Zones =
 						-- Tier 2: Fun with Fungi
 						-- Tier 3: Blossoming Network
 				}),
+				n(-936, {	-- Soulshape Forms
+					-- TODO: fill in remaining quests that are as yet unknown
+					q(62422, {	-- Ardenmoth Soul
+						["provider"] = { "i", 182165 },	-- Ardenmoth Soul
+					}),
+					--q(xxxxx, {	-- Cobra Soul
+						--["provider"] = { "i", 182167 },	-- Cobra Soul
+					--}),
+					q(62424, {	-- Crane Soul
+						["provider"] = { "i", 182168 },	-- Crane Soul
+					}),
+					q(62428, {	-- Equine Soul
+						["provider"] = { "i", 182172 },	-- Equine Soul
+					}),
+					--q(xxxxx, {	-- Gryphon Soul
+						--["provider"] = { "i", 182170 },	-- Gryphon Soul
+					--}),
+					q(62421, {	-- Gulper Soul
+						["provider"] = { "i", 181314 },	-- Gulper Soul
+					}),
+					--q(xxxxx, {	-- Hippogryph Soul
+						--["provider"] = { "i", 182171 },	-- Hippogryph Soul
+					--}),
+					--q(xxxxx, {	-- Hyena Soul
+						--["provider"] = { "i", 182173 },	-- Hyena Soul
+					--}),
+					q(62429, {	-- Leonine Soul
+						["provider"] = { "i", 182174 },	-- Leonine Soul
+					}),
+					q(62438, {	-- Lupine Soul
+						["provider"] = { "i", 182182 },	-- Lupine Soul
+					}),
+					q(62430, {	-- Moose Soul
+						["provider"] = { "i", 182175 },	-- Moose Soul
+					}),
+					--q(xxxxx, {	-- Owlcat Soul
+						--["provider"] = { "i", 182177 },	-- Owlcat Soul
+					--}),
+					q(62433, {	-- Raptor Soul
+						["provider"] = { "i", 182178 },	-- Raptor Soul
+						["crs"] = { 169769 },	-- 	Mueh'zala
+					}),
+					q(62434, {	-- Runestag Soul
+						["provider"] = { "i", 182179 },	-- Runestag Soul
+						["crs"] = { 164547 },	-- Mystic Rainbowhorn
+					}),
+					q(62431, {	-- Shadowstalker Soul
+						["provider"] = { "i", 182176 },	-- Shadowstalker Soul
+						["crs"] = { 168647 },	-- Valfir the Unrelenting
+					}),
+					q(62436, {	-- Shrieker Soul
+						["provider"] = { "i", 182185 },	-- Shrieker Soul
+						["crs"] = { 164501 },	-- Mistcaller
+					}),
+					q(62420, {	-- Snapper Soul
+						["provider"] = { "i", 181313 },	-- Snapper Soul
+					}),
+					--q(xxxxx, {	-- Stag Soul
+						--["provider"] = { "i", 182180 },	-- Stag Soul
+					--}),
+					q(62437, {	-- Tiger Soul
+						["provider"] = { "i", 182181 },	-- Tiger Soul
+					}),
+					q(62423, {	-- Ursine Soul
+						["provider"] = { "i", 182166 },	-- Ursine Soul
+					}),
+					--q(xxxxx, {	-- Veilwing Soul
+						--["provider"] = { "i", 182169 },	-- Veilwing Soul
+					--}),
+					q(62439, {	-- Wolfhawk Soul
+						["provider"] = { "i", 182183 },	-- Wolfhawk Soul
+						["crs"] = { 164415 },	-- Skuld Vit
+					}),
+					q(62440, {	-- Wyvern Soul
+						["provider"] = { "i", 182184 },	-- Wyvern Soul
+					}),
+				}),
 				n(TREASURES, {
 					o(356820, {	-- Large Lunarlight Pod
 						["description"] = "Requires channeling the Anima Conductor to Glitterfall Basin.  To unlock the chest, run over nearby Lunarlight Buds.",
@@ -992,9 +1081,11 @@ _.Zones =
 								["cost"] = { { "i", 163036, 250 } },
 							}),
 							i(182181, {	-- Tiger Soul
+								["questID"] = 62437,
 								["cost"] = { { "c", 1813, 1500 } },
 							}),
 							i(182166, {	-- Ursine Soul
+								["questID"] = 62423,
 								["cost"] = { { "c", 1813, 1500 } },
 							}),
 						},
@@ -1375,12 +1466,14 @@ _.Zones =
 								},
 							}),
 							i(182174, {	-- Leonine Soul
+								["questID"] = 62429,
 								["cost"] = { 
 									{ "c", 1813, 1500 },
 									{ "c", 1885, 5 },
 								},
 							}),
 							i(182182, {	-- Lupine Soul
+								["questID"] = 62438,
 								["cost"] = { 
 									{ "c", 1813, 1500 },
 									{ "c", 1885, 5 },

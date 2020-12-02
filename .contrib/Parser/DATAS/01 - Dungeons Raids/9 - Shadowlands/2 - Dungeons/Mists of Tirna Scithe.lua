@@ -39,6 +39,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(178706),	-- Fogweaver Gauntlets
 						i(178707),	-- Trailspinner Pendant
 						i(178715),	-- Mistcaller Ocarina
+						i(182185, {	-- Shrieker Soul
+							["questID"] = 62436,	-- Shrieker Soul
+						}),
 					},
 				}),
 				e(2405, {	-- 	Tred'ova
@@ -84,6 +87,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178706),	-- Fogweaver Gauntlets
 							i(178707),	-- Trailspinner Pendant
 							i(178715),	-- Mistcaller Ocarina
+							i(182185, {	-- Shrieker Soul
+								["questID"] = 62436,	-- Shrieker Soul
+							}),
 						},
 					}),
 					e(2405, {	-- 	Tred'ova
@@ -142,6 +148,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178706),	-- Fogweaver Gauntlets
 							i(178707),	-- Trailspinner Pendant
 							i(178715),	-- Mistcaller Ocarina
+							i(182185, {	-- Shrieker Soul
+								["questID"] = 62436,	-- Shrieker Soul
+							}),
 						},
 					}),
 					e(2405, {	-- 	Tred'ova

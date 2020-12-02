@@ -72,6 +72,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(179354),	-- Reality-Shatter Vambraces
 						i(179355),	-- Death God's Signet
 						i(179356),	-- Shadowgrasp Totem
+						i(182178, {	-- Raptor Soul
+							["questID"] = 62433,	-- Raptor Soul
+						}),
 					},
 				}),
 			}),
@@ -125,6 +128,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(179354),	-- Reality-Shatter Vambraces
 							i(179355),	-- Death God's Signet
 							i(179356),	-- Shadowgrasp Totem
+							i(182178, {	-- Raptor Soul
+								["questID"] = 62433,	-- Raptor Soul
+							}),
 						},
 					}),
 				},
@@ -185,6 +191,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(179354),	-- Reality-Shatter Vambraces
 							i(179355),	-- Death God's Signet
 							i(179356),	-- Shadowgrasp Totem
+							i(182178, {	-- Raptor Soul
+								["questID"] = 62433,	-- Raptor Soul
+							}),
 						},
 					}),
 				},

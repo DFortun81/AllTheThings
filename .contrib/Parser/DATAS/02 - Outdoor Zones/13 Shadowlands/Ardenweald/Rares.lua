@@ -148,6 +148,9 @@ _.Zones =
 						crit(2, {	-- Mystic Rainbowhorn
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
+						i(182179, {	-- Runestag Soul
+							["questID"] = 62434,	-- Runestag Soul
+						}),
 					},
 				}),
 				n(168135, {	-- Night Mare
@@ -248,11 +251,14 @@ _.Zones =
 				}),
 				n(164415, {	-- Skuld Vit
 					["coord"] = { 37.4, 59.6, 1565 },
-					--["questID"] = ,
+					["questID"] = 59220,
 					["isDaily"] = true,
 					["g"] = {
 						crit(9, {	-- Skuld Vit
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
+						i(182183, {	-- Wolfhawk Soul
+							["questID"] = 62439,	-- Shadowstalker Soul
 						}),
 					},
 				}),
