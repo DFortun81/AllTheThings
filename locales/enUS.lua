@@ -4276,6 +4276,7 @@ app.L = {
 		[353683] = "Lunarlight Pod",
 		[353691] = "Skyward Bell",
 		[353868] = "Hidden Hoard",
+		[353876] = "Virtue of Penitence",
 		[354108] = "Stoneborn Satchel",
 		[354111] = "Stoneborn Satchel",
 		[354113] = "Stoneborn Satchel",

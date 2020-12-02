@@ -411,6 +411,11 @@ _.Zones =
 					["provider"] = { "n", 162688 },	-- Prince Renathal
 					["coord"] = { 25.8, 57.1, 1699 },	-- Sinfall Reaches
 				}),
+				q(60468, {	-- Rubble Rummaging
+					["sourceQuests"] = { 60467 },	-- A Rousing Aroma
+					["provider"] = { "n", 168455 },	-- Sabina
+					["coord"] = { 35.0, 53.9, 1525 },
+				}),
 				q(57481, {	-- Running a Muck
 					["sourceQuests"] = { 57477 },	-- We're Gonna Need a Bigger Dredger
 					["provider"] = { "n", 157898 },	-- Bootus
@@ -421,6 +426,11 @@ _.Zones =
 						i(177654),	-- Bootus Shocks
 						i(177653),	-- Bootus Hardeneds
 					},
+				}),
+				q(60469, {	-- Safe in the Shadows
+					["sourceQuests"] = { 60467 },	-- A Rousing Aroma
+					["provider"] = { "n", 168455 },	-- Sabina
+					["coord"] = { 35.0, 53.9, 1525 },
 				}),
 				q(57724, {	-- Securing Sinfall
 					["sourceQuests"] = { 60566 },	-- Into the Light
@@ -440,6 +450,17 @@ _.Zones =
 						i(177636),	-- Sinfall Legionaire's Barbed Staff
 						i(184326),	-- Sinfall Stoneborn Cudgel
 						i(184320),	-- Sinfall Initiate's Staff
+					},
+				}),
+				q(60470, {	-- Setting Sabina Free
+					["sourceQuests"] = {
+						60468,	-- Rubble Rummaging
+						60469,	-- Safe in the Shadows
+					},
+					["provider"] = { "n", 168455 },	-- Sabina
+					["coord"] = { 35.0, 53.9, 1525 },
+					["g"] = {
+						i(175736),	-- Hopebreaker Pendant
 					},
 				}),
 				q(57380, {	-- Sign Your Own Death Warrant

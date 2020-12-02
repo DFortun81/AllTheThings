@@ -43,6 +43,7 @@ _.Zones =
 					1765,	-- TG54_Floor
 					1768,	-- TG58_Floor
 					1769,	-- TG59_Floor
+					1770,	-- Floor 6 of The Fracture Chambers
 					1771,	-- TG61_Floor
 					1772,	-- TG62_Floor
 					1774,	-- Torghast

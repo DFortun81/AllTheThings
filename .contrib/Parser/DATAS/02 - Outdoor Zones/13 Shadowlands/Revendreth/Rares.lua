@@ -45,12 +45,16 @@ _.Zones =
 					},
 				}),
 				n(166292, {	-- Bog Beast
-					["coord"] = { 35.8, 32.6, 1525 },
+					["description"] = "Only available when the 'Muck It Up' world quest is active.  Loot Primordial Muck from the quest mobs and throw it into the mire for a chance to summon the rare.",
 					["questID"] = 59823,
 					["isDaily"] = true,
+					["coord"] = { 35.8, 32.6, 1525 },
 					["g"] = {
-						ach(14310, crit(18)),	-- Adventurer of Revendreth / Bog Beast
-						i(180588),	-- Bucket of Primordial Sludge
+						crit(18, {	-- Bog Beast
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180588),	-- Bucket of Primordial Sludge (PET!)
+						i(180707),	-- Sticky Muck
 					},
 				}),
 				n(165206, {	-- Endlurker
@@ -101,6 +105,7 @@ _.Zones =
 					},
 				}),
 				n(167464, {	-- Grand Arcanist Dimitri
+					["description"] = "Kill the Shrouded Ritualists to spawn the rare.",
 					["questID"] = 60173,
 					["isDaily"] = true,
 					["coord"] = { 20.9, 54.3, 1525 },
@@ -108,6 +113,7 @@ _.Zones =
 						crit(21, {	-- Grand Arcanist Dimitri
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
+						i(180503),	-- Grand Arcanist's Soulblade
 						i(180708),	-- Mirror of Despair
 						i(180659),	-- Soul Siphoning Shard
 					},

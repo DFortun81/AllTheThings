@@ -3050,6 +3050,7 @@ _.HiddenQuestTriggers =
 		q(61986),	-- Tahonta secondary quest
 		-- Maldraxxus WQs
 		q(62948),	-- "learning" the quest items while on #61615, "Tailoring: Haunting Hood"
+		q(57242),	-- triggered when completing #57205, "A Few Bumps Along the Way"
 		-- Maldraxxus Covenant
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
 		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
@@ -3077,6 +3078,7 @@ _.HiddenQuestTriggers =
 		q(62661),	-- Triggered during first completion of #58080 [Favor: Glittering Primrose Necklace]
 		q(62669),	-- Triggered during first completion of #58070 [Favor: Soul Hunter Blade]
 		q(60847),	-- Upon looting [Soul Hunter's Blade] (173707)
+		q(62641),	-- killing or looting Sabina during "Setting Sabina Free"
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest

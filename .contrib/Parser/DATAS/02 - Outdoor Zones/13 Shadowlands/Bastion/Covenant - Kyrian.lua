@@ -314,6 +314,11 @@ _.Zones =
 						["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
 						["maps"] = { 1670 },	-- Oribos
 					}),
+					q(61332, {	-- Return Lost Souls
+						["provider"] = { "n", 160212 },	-- Soulguide Daelia
+						["isWeekly"] = true,
+						["coord"] = { 59.5, 34.2, 1708 },	-- Elysian Hold
+					}),
 					q(62796, {	-- Return to Adrestes
 						["sourceQuests"] = { 62837 },	-- Hopeful News
 						["description"] = "|cFF516bfeKyrian Covenant|r only.",
@@ -396,9 +401,11 @@ _.Zones =
 						-- Tier 3: Eternal Paths
 				}),
 				n(TREASURES, {
+				--	TODO: move anima conductor treasures to anima conductor section??
 					o(356818, {	-- Penitence of Purity
 						["description"] = "Requires channeling anima to the Temple of Purity.  The mount is not a guaranteed drop.",
-						["isDaily"] = true,	-- repeatable??
+						["isDaily"] = true,
+						["questID"] = 61688,
 						["coord"] = { 60.2, 78.2, 1533 },	-- Bastion
 						["g"] = {
 							i(180762),	-- Phalynx of Humility (MOUNT!)

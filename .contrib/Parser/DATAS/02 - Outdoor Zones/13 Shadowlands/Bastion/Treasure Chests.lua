@@ -70,6 +70,11 @@ _.Zones =
 					-- also triggered 60799 for horde/non-kyrian
 					["coord"] = { 45.6, 33.8, 1533 }
 				}),
+				o(353876, {	-- Virtue of Penitence
+					["questID"] = 60882,
+					["isDaily"] = true,
+					["coord"] = { 57.2, 92.7, 1533 }
+				}),
 				i(180866),	-- Gilded Wader
 				-- TODO: [[object(xxxxxx, {	--
 					--["description"] = "Requires to be Kyrian Covenant and channel Anima to Temple of Purity.",

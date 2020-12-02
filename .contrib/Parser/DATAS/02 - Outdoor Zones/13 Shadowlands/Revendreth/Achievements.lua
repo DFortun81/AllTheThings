@@ -20,6 +20,9 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(14272, {	-- Best Bud With Benefits
+					["sourceQuests"] = { 58327 },	-- Snacks for Stonehead
+				}),
 				ach(14277, {	-- The Accuser's Avowed
 					ach(14274),		-- Absolution For All
 					ach(14273, {	-- Crypt Kicker

@@ -107,11 +107,11 @@ _.Zones =
 						}),
 						q(60427, {	-- A Call to Bastion
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							--["provider"] = { "n",  },	--
-							--["coord"] = { , 1533 },
 							["repeatable"] = true,
+							["provider"] = { "n", 158653 },	-- Prince Renathal
+							["coord"] = { 51.2, 37.9, 1699 },	-- Sinfall Reaches
 							["g"] = {
-								i(181556),	-- 	Tribute of the Court
+								i(181372),	-- 	Tribute of the Ascended
 							},
 						}),
 						q(60431, {	-- A Call to Maldraxxus
@@ -349,6 +349,11 @@ _.Zones =
 						["provider"] = { "n", 159478 },	-- Tal-Inara
 						["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
 						["maps"] = { 1670 },	-- Oribos
+					}),
+					q(61334, {	-- Return Lost Souls
+						["provider"] = { "n", 164738 },	-- Tenaval
+						["isWeekly"] = true,
+						["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
 					}),
 					q(59321, {	-- Sacred Covenant
 						["sourceQuests"] = { 59315 },	-- The Court of Harvesters
