@@ -61,7 +61,7 @@ _.Zones =
 					}),
 					q(60423, {	-- A Call to Ardenweald
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
+						--["coord"] = { , 1698 },
 						["repeatable"] = true,
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
@@ -109,7 +109,7 @@ _.Zones =
 					}),
 					q(60440, {	-- Challenges in Ardenweald
 						["provider"] = { "n", 167208 },	-- Grandmaster Vole
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 44.0, 1698 },
 						["repeatable"] = true,
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
@@ -117,7 +117,7 @@ _.Zones =
 					}),
 					q(60443, {	-- Challenges in Bastion
 						["provider"] = { "n", 167208 },	-- Grandmaster Vole
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 44.0, 1698 },
 						["repeatable"] = true,
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
@@ -125,7 +125,7 @@ _.Zones =
 					}),
 					q(60445, {	-- Challenges in Maldraxxus
 						["provider"] = { "n", 167208 },	-- Grandmaster Vole
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 44.0, 1698 },
 						["repeatable"] = true,
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
@@ -133,7 +133,7 @@ _.Zones =
 					}),
 					q(60449, {	-- Challenges in Revendreth
 						["provider"] = { "n", 167208 },	-- Grandmaster Vole
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 44.0, 1698 },
 						["repeatable"] = true,
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
