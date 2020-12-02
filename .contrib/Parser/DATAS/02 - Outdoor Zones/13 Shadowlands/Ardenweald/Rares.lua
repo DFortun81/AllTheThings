@@ -194,14 +194,14 @@ _.Zones =
 					},
 				}),
 				n(164391, {	-- Old Ardeite
-					["coord"] = { 52.0, 58.8, 1565 },
-					--["questID"] = ,
+					["questID"] = 59208,
 					["isDaily"] = true,
+					["coord"] = { 52.0, 58.8, 1565 },
 					["g"] = {
 						crit(8, {	-- Old Ardeite
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(180643),	-- Chirpy Valeshrieker
+						i(180643),	-- Chirpy Valeshrieker (PET!)
 					},
 				}),
 				n(167726, {	-- Rootwrithe

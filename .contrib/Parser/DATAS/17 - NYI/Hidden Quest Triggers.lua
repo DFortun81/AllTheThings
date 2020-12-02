@@ -2961,6 +2961,7 @@ _.HiddenQuestTriggers =
 		-- Rares
 		q(62271),	-- Deifir the Untamed secondary quest
 		q(62269),	-- Macabre secondary quest
+		q(62270),	-- Old Ardeite secondary quest
 		q(61198),	-- Triggers when successfully completing the pre-req sequence for the Shimmermist Runner rare
 		-- Ardenweald Covenant (Night Fae)
 		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
@@ -2986,7 +2987,7 @@ _.HiddenQuestTriggers =
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
 		q(58117),	-- Triggered after turning in The Aspirant's Crucible (57709)
 		q(60294),	-- Triggered after choosing Larion from Nemea during Pride Or Unit quest
-		--q(xxxxx),	-- Triggered after choosing Phalynx from Pelodis during Pride Or Unit quest
+		q(60293),	-- Triggered after choosing Phalynx from Pelodis during Pride Or Unit quest
 		q(62841),	-- Triggered after first time using Kyrian Bell buff item
 		q(58292),	-- looting Purians
 		q(58293),	-- placing first Purian in the bowl
@@ -3116,6 +3117,7 @@ _.HiddenQuestTriggers =
 		q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
 		q(62908),	-- triggered after collecting 5 souls during "Rule 1: Have an Escape Plan"
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
+		q(61600),	-- triggered when using Animaflow Stabilizer (Ve'nari item)
 		q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
 		q(63377),	-- First kill of Soulsmith Yor-Mattar (bonus objective 59441)
 		q(63383),	-- First kill of Malevolent Stygia
@@ -3123,6 +3125,7 @@ _.HiddenQuestTriggers =
 		q(63380),	-- Agonix secondary quest
 		q(63373),	-- Dartanos secondary quest
 		q(61140),	-- Dath Rezara secondary quest
+		q(63372),	-- Drifting Sorrow secondary quest
 		q(63413),	-- Odalrik secondary quest/first kill?
 		q(63375),	-- Orrholyn secondary quest
 		q(63388),	-- Ratgusher secondary quest?
@@ -3155,6 +3158,11 @@ _.HiddenQuestTriggers =
 		q(61305),	-- triggered when completing #61313, "Champion: Kythekios"
 		q(58194),	-- Soulforges, layer 3, (Arch-Suppressor Laguas as boss)
 		q(58186),	-- looting Soul Ash from Custodian Thonar on Floor 6 of the Fracture Chambers
+		q(58187),	-- Fracture Chambers Layer 2
+		q(58188),	-- Fracture Chambers Layer 3
+		q(58204),	-- Mort'regar Layer 1
+		q(58205),	-- Mort'regar Layer 2
+		q(59326),	-- Mort'regar Layer 3
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

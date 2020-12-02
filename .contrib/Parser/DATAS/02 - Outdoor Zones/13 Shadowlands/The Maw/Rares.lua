@@ -109,12 +109,14 @@ _.Zones =
 				n(168693, {	-- Cyrixia
 					["questID"] = 61346,	-- also 63379, but it's probably the WQ
 					["isDaily"] = true,
-					["coord"] = { 28.4, 24.8, 1648 },
+					["coord"] = { 28.6, 25.0, 1543 },
 					["g"] = {
 						crit(7, {	-- Cyrixia
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						i(183070),	-- Mawsworn Orders
+						i(183070, {	-- Mawsworn Orders
+							["questID"] = 63164,
+						}),
 					},
 				}),
 				n(160770, {	-- Darithis the Bleak
@@ -169,9 +171,10 @@ _.Zones =
 					},
 				}),
 				n(158314, {	-- Drifting Sorrow
-				--	["questID"] = ,
+					["description"] = "To summon the mob, kill Agonizing Shades near the dark floating orb.",
+					["questID"] = 59183,
 					["isDaily"] = true,
-					["coord"] = { 32.0, 21.2, 1648 },
+					["coord"] = { 32.0, 21.7, 1543 },
 					["g"] = {
 						crit(1, {	-- Drifting Sorrow
 							["achievementID"] = 14660,	-- It's About Sending a Message

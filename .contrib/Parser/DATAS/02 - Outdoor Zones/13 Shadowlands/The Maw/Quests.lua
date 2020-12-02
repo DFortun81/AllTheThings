@@ -298,6 +298,11 @@ _.Zones =
 						i(184757),	-- Chain of the Purpose-Bound
 					},
 				}),
+				q(60272, {	-- The Weak Link
+					["sourceQuests"] = { 60271 },	-- A Grave Chance
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
 				q(59751, {	-- Through the Shattered Sky
 					["sourceQuests"] = {
 						60545, -- A Chilling Summons (A)

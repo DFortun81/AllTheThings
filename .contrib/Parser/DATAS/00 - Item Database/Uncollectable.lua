@@ -36,6 +36,7 @@ i(184305);	-- Maldraxxi Champion's Armaments
 i(184387);	-- Misty Shimmerleaf
 i(184315);	-- Multi-Modal Anima Container
 i(181547);	-- Noble's Draught
+i(181743);	-- Plume of the Archon
 i(181649);	-- Preserved Preternatural Braincase
 i(184769);	-- Pressed Torchlily Blossom
 i(182749);	-- Regurgitated Kyrian Wings

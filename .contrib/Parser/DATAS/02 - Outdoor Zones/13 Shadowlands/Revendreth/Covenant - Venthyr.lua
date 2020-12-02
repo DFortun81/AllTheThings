@@ -431,6 +431,15 @@ _.Zones =
 						}),
 					}),
 					n(-905, {	-- Command Table
+						q(61729, {	-- Adventurer: Rahel
+						--	TODO: everything lmao
+						--	["sourceQuests"] = {  },	-- 
+						--	["provider"] = { "n",  },	-- Tactician Sakaa
+						--	["coord"] = { , ,  },	-- 
+							["g"] = {
+							--	follower(1250),	-- Rahel
+							},
+						}),
 						n(-906, {	-- Tier 1: Tactical Insight
 						}),
 						n(-958, {	-- Tier 2: Deserved Feast

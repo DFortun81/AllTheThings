@@ -209,6 +209,9 @@ _.Zones =
 						crit(5),	-- Mort'regar
 						crit(6),	-- The Upper Reaches
 					}),
+					ach(14754, {	-- The Forgotten One
+						["sourceQuests"] = { 60272 },	-- The Weak Link
+					}),
 					ach(14571, {	-- Torghast: Twisting Corridors: Layer 9
 						ach(14468),		-- Torghast: Twisting Corridors: Layer 1
 						ach(14469, {	-- Torghast: Twisting Corridors: Layer 2

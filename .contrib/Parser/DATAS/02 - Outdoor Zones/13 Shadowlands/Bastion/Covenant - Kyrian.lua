@@ -232,6 +232,11 @@ _.Zones =
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
 						["coord"] = { 59.5, 34.2, 1708 },	-- Elysian Hold
 					}),
+					q(58791, {	-- A Day in the Life
+						["sourceQuests"] = { 58790 },
+						["provider"] = { "n", 162558 },	-- Alithea
+						["coord"] = { 32.5, 39.7, 49 }, -- Redridge Mountains
+					}),
 					q(60492, {	-- A Proper Reception
 						["sourceQuests"] = { 60491 },	-- Among the Kyrian
 						["provider"] = { "n", 168742 },	-- Polemarch Adrestes
@@ -241,6 +246,29 @@ _.Zones =
 						["sourceQuests"] = { 62792 },	-- Into the Reservoir
 						["provider"] = { "n", 167745 },	-- Haephus
 						["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+					}),
+					q(61860, {	-- Adventurer: Pelodis
+					--	Requires Kyrian renown 4
+					--	TODO: figure out if this also requires command table unlocked?
+						["sourceQuests"] = { 58103 },    -- Pride or Unit
+						["provider"] = { "n", 160389 },    -- Koros
+						["coord"] = { 43.8, 40.7, 1707 },
+					}),
+					q(58795, {	-- Ascended
+						["sourceQuests"] = { 58793 },	-- Faith Through the Darkness
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 47.8, 53.6, 1707 },	-- Elysian Hold
+						["g"] = {
+							i(178157),	-- Selfless Watcher's Legguards
+							i(177054),	-- Selfless Bearer's Legs
+							i(179944),	-- Selfless Forgelite's Breeches
+							i(174293),	-- Selfless Collector's Legguards
+						},
+					}),
+					q(58788, {	-- Censers of Guidance
+						["sourceQuests"] = { 58787 },	-- Trial of Ascension
+						["provider"] = { "n", 162542 },	-- Kleia
+						["coord"] = { 33.2, 26.1, 1533 }, -- Bastion
 					}),
 					q(57897, {	-- Dangerous to Go Alone
 						["sourceQuests"] = { 62794 },	-- Enhancing the Hold
@@ -265,6 +293,22 @@ _.Zones =
 						["provider"] = { "n", 167745 },    -- Haephus
 						["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
 					}),
+					q(58793, {	-- Faith Through the Darkness
+						["sourceQuests"] = { 58792 },	-- Where a Soul Belongs
+						["provider"] = { "n", 162542 },	-- Kleia
+						["coord"] = { 43.6, 51.6, 1671 },	-- Oribos
+					}),
+					q(58948, {	-- Food on the Table
+						["sourceQuests"] = { 58791 },	-- A Day in the Life
+						["provider"] = { "n", 162953 },	-- Sarah Howell
+						["coord"] = { 21.6, 42.0, 49 },
+					}),
+					q(58797, {	-- Forged by Trial
+					--	Unlocks Soulbind: Kleia (344757)
+						["sourceQuests"] = { 58796 },	-- The Forsworn Onslaught
+						["provider"] = { "n", 163650 },	-- Kleia
+						["coord"] = { 51.6, 47.7, 1707 },
+					}),
 					q(62832, {	-- Friends in Dark Places
 						["sourceQuests"] = { 57905 },	-- A Unique Opportunity
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
@@ -285,6 +329,40 @@ _.Zones =
 							i(179942),	-- Selfless Forgelite's Gloves
 							i(174292),	-- Selfless Collector's Gauntlets
 						},
+					}),
+					q(58951, {	-- Lakeshire's Last Stand
+						["sourceQuests"] = { 58950 },	-- Lumber for Lakeshire
+						["provider"] = { "n", 163111 },	-- Magistrate Solomon
+						["coord"] = { 28.9, 41.1, 49 },
+					}),
+					q(58950, {	-- Lumber for Lakeshire
+						["sourceQuests"] = {
+							58948,	-- Food on the Table
+							58949,	-- Millie's Garden
+						},
+						["provider"] = { "n", 162953 },	-- Sarah Howell
+						["coord"] = { 21.6, 42.0, 49 },
+					}),
+					q(58949, {	-- Millie's Garden
+						["sourceQuests"] = { 58791 },	-- A Day in the Life
+						["provider"] = { "n", 162953 },	-- Sarah Howell
+						["coord"] = { 21.6, 42.0, 49 },
+					}),
+					q(58789, {	-- Misguiding Mentors
+						["sourceQuests"] = { 58787 },	-- Trial of Ascension
+						["provider"] = { "n", 162544 },	-- Achillon
+						["coord"] = { 33.2, 26.2, 1533 },
+						["g"] = {
+							i(174297),	-- Selfless Collector's Greatcloak
+							i(177058),	-- Selfless Bearer's Cloak
+							i(178161),	-- Selfless Watcher's Cloak
+							i(179948),	-- Selfless Forgelite's Drape
+						},
+					}),
+					i(183054, {	-- Mysterious Soul Mirror
+					--	TODO: move to Spires of Ascension?  auhghghgshghshgh
+						["questID"] = 62237,	-- Mysterious Soul Mirror
+						["crs"] = { 162061 },	-- Devos
 					}),
 					q(62789, {	-- Of Great Renown
 						["sourceQuests"] = { 57895 },	-- Elysian Hold
@@ -331,6 +409,19 @@ _.Zones =
 						["provider"] = { "n", 159248 },	-- Haetio
 						["coord"] = { 43.2, 38.5, 1533 },
 					}),
+					q(63068, {	-- Settling Disputes
+					--	Requires Kyrian renown 4
+					--	TODO: is altQuests necessary or do they complete each other?
+						["isBreadcrumb"] = true,
+						["altQuests"] = { 59674 },    -- A Friendly Rivalry
+						["provider"] = { "n", 160389 },    -- Koros
+						["coord"] = { 43.8, 40.7, 1707 },
+					}),
+					q(62238, {	-- Soul Led Astray
+						["sourceQuests"] = { 62237 },    -- Mysterious Soul Mirror
+						["provider"] = { "n", 173771 },    -- Thenios
+						["coord"] = { 40.4, 19.9, 1533 }, -- Bastion
+					}),
 					q(57898, {	-- Soul Meets Body
 						["sourceQuests"] = { 57897 },	-- Dangerous to Go Alone
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
@@ -347,6 +438,11 @@ _.Zones =
 							i(182584),    -- Cheetah's Vigor
 						},
 					}),
+					q(58796, {	-- The Forsworn Onslaught
+						["sourceQuests"] = { 58795 },	-- Ascended
+						["provider"] = { "n", 163650 },	-- Kleia
+						["coord"] = { 51.6, 47.7, 1707 },
+					}),
 					q(63029, {	-- The Highlord Calls
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
@@ -356,6 +452,30 @@ _.Zones =
 						["sourceQuests"] = { 62789 },	-- Of Great Renown
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
 						["coord"] = { 42.8, 70.2, 1707 },	-- Elysian Hold
+					}),
+					q(58798, {	-- The Spires of Ascension
+					--	Increase Kyrian renown by 1
+						["sourceQuests"] = { 58797 },	-- Forged by Trial
+						["provider"] = { "n", 163650 },	-- Kleia
+						["coord"] = { 59.9, 36.2, 1708 },
+					}),
+					q(58790, {	-- To Cross the Veil
+						["sourceQuests"] = {
+							58788,	-- Censers of Guidance
+							58789,	-- Misguiding Mentors
+						},
+						["provider"] = { "n", 162542 },	-- Kleia
+						["coord"] = { 32.1, 21.2, 1533 },
+					}),
+					q(58787, {	-- Trial of Ascension
+					--	Requires Kyrian renown 5
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.6, 42.0, 1707 }, -- Elysian Hold
+					}),
+					q(58792, {	-- Where a Soul Belongs
+						["sourceQuests"] = { 58951 },	-- Lakeshire's Last Stand
+						["provider"] = { "n", 162558 },	-- Alithea
+						["coord"] = { 32.5, 39.7, 49 }, -- Redridge Mountains
 					}),
 				}),
 				n(RARES, {

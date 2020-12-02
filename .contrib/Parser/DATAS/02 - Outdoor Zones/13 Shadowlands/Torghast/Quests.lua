@@ -37,13 +37,10 @@ _.Zones =
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 						["coord"] = { 39.9, 68.5, 1670 },
 					}),
-					q(60272, {	-- The Weak Link
-						["sourceQuests"] = { 60271 },	-- A Grave Chance
-						["provider"] = { "n", 162804 },	-- Ve'nari
-						["coord"] = { 46.9, 41.7, 1543 },
-						["g"] = {
-							ach(14754),	-- The Forgotten One
-						},
+					q(62719, {    -- The Final Pieces
+						["sourceQuests"] = { 62700 },    -- Ashes of the Tower
+						["provider"] = { "n", 164937 },    -- Runecarver
+						["coord"] = { 50.4, 53.8, 1912 },    -- The Runecarver's Oubliette
 					}),
 					
 					-- Champion Unlocks
@@ -94,13 +91,17 @@ _.Zones =
 						["sourceQuest"] = 60146,	-- The Upper Reaches
 					}),
 					-- Bonus Quests
-					q(59775, {	-- Help Indigo find Penthia
-						["provider"] = { "n", 166123 },	-- Indigo
-						["repeatable"] = true,
-					}),
 					q(59777, {	-- Help Calix find Amethia
 						["repeatable"] = true,
 						["provider"] = { "n", 166147 },	-- Calix
+					}),
+					q(59775, {	-- Help Indigo find Penthia
+						["repeatable"] = true,
+						["provider"] = { "n", 166123 },	-- Indigo
+					}),
+					q(59778, {	-- Help Sawn find Varrik
+						["repeatable"] = true,
+						["provider"] = { "n", 166148 },	-- Sawn
 					}),
 					q(61322, {	-- Kythekios' Memory Stone
 						["repeatable"] = true,	-- ?????
