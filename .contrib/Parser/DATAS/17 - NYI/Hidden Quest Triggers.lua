@@ -3019,9 +3019,13 @@ _.HiddenQuestTriggers =
 		q(57705),	-- Herculon kill quest
 		q(62201),	-- Herculon secondary loot quest
 		q(63421),	-- Nemaeus secondary quest
+		q(63411),	-- Nikara Blackheart secondary quest
 		q(63423),	-- Sigilback secondary quest
 		q(62197),	-- Wingflayer the Cruel secondary quest
 		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
+		--	Bastion Treasures
+		q(60875),	-- seems to trigger for all Hidden Hoard chests on top of unique questIDs for each
+		q(60880),	-- triggers on Hidden Hoard chests for Kyrian players (???)
 		--	Bastion WQs
 		q(63263),	-- triggered after completing the WQ #60911, "Flight School: Flapping Frenzy"
 		--	Kyrian Covenant

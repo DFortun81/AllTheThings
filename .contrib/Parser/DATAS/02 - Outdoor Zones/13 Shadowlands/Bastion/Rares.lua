@@ -148,9 +148,10 @@ _.Zones =
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 						i(182759, {	-- Functioning Anima Core
+							["repeatable"] = true,
 							["questID"] = 62200,	-- Functioning Anima Core
-							["isDaily"] = true,	-- might be repeatable
 						}),
+						i(180651),	-- Discarded Phalynx Core (so the item is associated with the rare)
 					},
 				}),
 				n(170623, { -- Dark Watcher
@@ -232,8 +233,8 @@ _.Zones =
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 						i(182759, {	-- Functioning Anima Core
+							["repeatable"] = true,
 							["questID"] = 62200,	-- Functioning Anima Core
-							["isDaily"] = true,	-- might be repeatable
 						}),
 					},
 				}),
@@ -262,9 +263,10 @@ _.Zones =
 					},
 				}),
 				n(160882, { -- Nikara Blackheart
-					["coord"] = { 51.8, 68.6, 1533 },
-					--["questID"] = ,
+					["description"] = "Requires 3 people to summon.  After all 3 have channeled the incense, the vesper will ring and Sophia will appear.  Protect her by defeating 2 waves of Forsworn attackers, and then the rare will spawn.\n\nAfter Nikara is defeated, Sophia will leave behind a chest called Sophia's Gift.",
+					["questID"] = 58319,
 					["isDaily"] = true,
+					["coord"] = { 51.8, 68.6, 1533 },
 					["g"] = {
 						crit(8, {	-- Nikara Blackheart
 							["achievementID"] = 14307,	-- Adventurer of Bastion

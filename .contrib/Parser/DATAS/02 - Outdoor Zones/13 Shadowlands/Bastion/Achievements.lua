@@ -282,13 +282,25 @@ _.Zones =
 							["questID"] = 61273,
 							["coord"] = { 72.4, 40.2, 1533 },
 						}),
-				----------------------------------------------------------------------------------------------------------
-						-- TODO: are these other treasures? need more info on them
-						-- forging complete
-						-- 61229
-						-- bell rang and chest looted
-						-- 61183
-						-- 61191
+					--	TODO: keep these here, within the achievement, or move them to treasures or something?  you do the final 3 steps after the achievement is totally completed, it's just a prerequisite...so i'm not sure if it makes sense to have them here??
+						n(171732, {	-- Forgelite Hephaesius
+							["description"] = "After you finish collecting all the shards from Bastion, Necrotic Wake, and Spires of Ascension, visit Hephaesius.  Give him the shards, and he will forge them into a mallet.",
+							["questID"] = 61229,	-- receiving the mallet from Hephaesius
+							["coord"] = { 59.3, 31.4, 1533 },
+							["g"] = {
+								i(180858),	-- Crystal Mallet of Heralds
+							},
+						}),
+						o(355435, {	-- Vesper of the Silver Wind
+							["description"] = "Once you have the mallet, take it to the Vesper of the Silver Wind and ring the bell.",
+							["questID"] = 61191,	-- ringing the bell
+							["coord"] = { 36.1, 26.6, 1533 },
+						}),
+						o(355449, {	-- Gift of the Silver Wind
+							["description"] = "A Silverwind Larion will spawn behind you and drop a treasure chest containing the mount.",
+							["questID"] = 61183,	-- looting the treasure
+							["coord"] = { 36.1, 26.6, 1533 },
+						}),
 					},
 				}),
 				ach(14801, {	-- Sojourner of Bastion

@@ -21,9 +21,13 @@ _.Zones =
 				}),
 				o(353868, {	-- Hidden Hoard
 				--	TODO: verify objectID when coords are available, probably this one or 353869
-					["questID"] = 60875,	-- also triggered 60877... why two quests?
-					-- triggered 60880 on horde, non kyrian as well
+					["questID"] = 60877,	-- 60875 put in HQT, seems to trigger for all Hidden Hoard objects (or at least multiple)
 					["coord"] = { 61.6, 37.2, 1533 }
+				}),
+				o(353871, {	-- Hidden Hoard
+					["description"] = "The coordinates are for a cave entrance hidden in the side of a cliff.  You'll have to walk along a ledge halfway up the cliffside to access it.",
+					["questID"] = 60878,	-- 60875 put in HQT, seems to trigger for all Hidden Hoard objects (or at least multiple)
+					["coord"] = { 47.7, 35.1, 1533 },
 				}),
 				o(353650, {	-- Steward's Golden Chest
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
@@ -58,6 +62,7 @@ _.Zones =
 				}),
 				o(1278968755, {	-- Silver Strongbox
 				--	TODO: fix object ID when data is available
+					["description"] = "Requires a Ripe Purian to open.  You will have to jump down from the cliffs above.",
 					["questID"] = 60758,
 					["isDaily"] = true,
 					["coord"] = { 63.8, 29.1, 1533 }
