@@ -108,7 +108,7 @@ _.Zones =
 									i(181475),	-- Tribute of the Grove Wardens
 								},
 							}),
-							q(60438, {	-- Challenges in Aredenweald
+							q(60438, {	-- Challenges in Ardenweald
 								["provider"] = { "n", 167206 },	-- Yanlar
 								["coord"] = { 36.8, 24.8, 1533 },
 								["repeatable"] = true,
@@ -234,6 +234,7 @@ _.Zones =
 					q(61852, {	-- Adventurer: Guardian Kota
 						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 						["coord"] = { 44.7, 56.3, 1565 },
+						["description"] = "Becomes available at Renown 4",
 						["g"] = {
 							follower(1283),	-- Guardian Kota
 						},
@@ -270,11 +271,6 @@ _.Zones =
 						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 						["isDaily"] = true,
 					}),
-					q(61553, {	-- Know Where to Strike
-						["sourceQuests"] = { 61552 },	-- The Hunt Watches
-						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-						["coord"] = { 44.6, 56.2, 1565 },
-					}),
 					q(57455, {	-- Mushroom For Improvement
 						["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 						["provider"] = { "n", 157710 },	-- Cortinarius
@@ -302,25 +298,10 @@ _.Zones =
 						["provider"] = { "n", 157710 },	-- Cortinarius
 						["coord"] = { 33.2, 36.3, 1565 },
 					}),
-					q(63067, {	-- Root Restoration
-						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-						["coord"] = { 39.6, 55.0, 1702 },
-						["description"] = "Becomes available after you build Anima Conductor tier 1 in your sanctum.",
-					}),
 					q(57454, {	-- Silence in the Stalks
 						["sourceQuests"] = { 63073 },	-- A Mycelial Network
 						["provider"] = { "n", 174609 },	-- Zaki
 						["coord"] = { 53.2, 33.2, 1702 },
-					}),
-					q(61552, {	-- The Hunt Watches
-						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-						["coord"] = { 39.7, 55.7, 1701 },
-						["description"] = "Becomes available after you build Command Table tier 1 in your sanctum.",
-					}),
-					q(60723, {	-- The Roots Thirst
-						["sourceQuests"] = { 63067 },	-- Root Restoration
-						["provider"] = { "n", 167196 },	-- Sesselie
-						["coord"] = { 50.1, 63.7, 1702 },
 					}),
 					q(57583, {	-- Through the Veil
 						["sourceQuests"] = { 57463 },	-- My Way or the Hyphae
@@ -694,90 +675,6 @@ _.Zones =
 						["coord"] = { 46.4, 50.6, 1565 },
 						["sourceQuests"] = { 62693 },	-- A Calling in Ardenweald
 					}),
-					-- The Queen's Conservatory
-					q(62624, {	-- The Queen's Conservatory
-						["provider"] = { "n", 173171 },	-- Conservator Saola
-						["coord"] = { 53.2, 43.5, 1565 },
-						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
-					}),
-					q(59862, {	-- A Savior for Lost Souls
-						["provider"] = { "n", 166476 },	-- Warden Casad
-						["coord"] = { 69.9, 44.7, 1662 },
-						["sourceQuests"] = { 62624 },	-- The Queen's Conservatory
-					}),
-					q(59872, {	-- How to Save a God
-						["provider"] = { "n", 166476 },	-- Warden Casad
-						["coord"] = { 33.4, 62.0, 1662 },
-						["sourceQuests"] = { 59862 },	-- A Savior for Lost Souls
-					}),
-					q(59873, {	-- Greeting a God
-						["provider"] = { "n", 166476 },	-- Warden Casad
-						["coord"] = { 33.4, 62.0, 1662 },
-						["sourceQuests"] = { 59872 },	-- How to Save a God
-					}),
-	--[[ TODO
-					q(59999, {	-- Rebirth of the Grove
-						["provider"] = { "n", 166476 },	-- Warden Casad
-						["coord"] = { 33.4, 62.0, 1662 },
-						["sourceQuests"] = { 59873 },	-- Greeting a God
-					}),
-					q(59871, {	-- Catalyze This
-						["provider"] = { "n", 166476 },	-- Warden Casad
-						["coord"] = { 33.4, 62.0, 1662 },
-						["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
-					}),
-					q(62467, {	-- Seed of a Thought
-						["provider"] = { "n", 166476 },	-- Warden Casad
-						["coord"] = { 33.4, 62.0, 1662 },
-						["sourceQuests"] = { 59871 },	-- Catalyze This
-					}),
-					q(60640, {	-- Regrowth of the Grove
-						["provider"] = { "n", 166476 },	-- Warden Casad
-						["coord"] = { 33.4, 62.0, 1662 },
-						["sourceQuests"] = { 62467 },	-- Seed of a Thought
-					}),
-					q(60641, {	-- Blossoming of the Grove
-						["provider"] = { "n", 166476 },	-- Warden Casad
-						["coord"] = { 33.4, 62.0, 1662 },
-						["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
-					}),
-					q(60642, {	-- The Grove Resplendent
-						["provider"] = { "n", 166476 },	-- Warden Casad
-						["coord"] = { 33.4, 62.0, 1662 },
-						["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
-					}),
-	]]--
-					q(62447, {	-- A Rare and Unusual Spirit
-						["provider"] = { "n", 171107 },	-- Cultivator Blaithin
-						["coord"] = { 42.2, 52.9, 1662 },
-						["maps"] = { 1669 },	-- Mists of Tirna Scithe
-						["g"] = {
-							i(183704),	-- Shifting Spirit of Knowledge
-						},
-					}),
-					q(62603, {	-- A Rare and Unusual Spirit
-						["provider"] = { "n", 171107 },	-- Cultivator Blaithin
-						["coord"] = { 42.2, 52.9, 1662 },
-						["maps"] = { 1669 },	-- Mists of Tirna Scithe
-						["g"] = {
-							i(183805),	-- Tranquil Spirit of the Cosmos
-						},
-					}),
-					q(62625, {	-- A Rare and Unusual Spirit
-						["provider"] = { "n", 171107 },	-- Cultivator Blaithin
-						["coord"] = { 42.2, 52.9, 1662 },
-						["maps"] = { 1669 },	-- Mists of Tirna Scithe
-						["g"] = {
-							i(183806),	-- Energetic Spirit of Curiosity
-						},
-					}),
-					q(62454, {	-- A Rare and Unusual Spirit
-						["provider"] = { "n", 174329 },	-- Falir the Shifting
-						["coord"] = { 24.0, 53.3, 1662 },
-						["g"] = {
-							i(183806),	-- Energetic Spirit of Curiosity
-						},
-					}),
 					-- Dailies / Weeklies
 					q(62441, {	-- Fair Exchange for a Soul
 						["provider"] = { "n", 166476 },	-- Warden Casad
@@ -799,6 +696,16 @@ _.Zones =
 				n(-935, {	-- Sanctum Upgrades
 					n(-915, {	-- Anima Conductor
 						n(-916, {	-- Tier 1: Flowing Tendrils
+							q(63067, {	-- Root Restoration
+								["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+								["coord"] = { 39.6, 55.0, 1702 },
+								["description"] = "Becomes available after you build Anima Conductor tier 1 in your sanctum.",
+							}),
+							q(60723, {	-- The Roots Thirst
+								["sourceQuests"] = { 63067 },	-- Root Restoration
+								["provider"] = { "n", 167196 },	-- Sesselie
+								["coord"] = { 50.1, 63.7, 1702 },
+							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
 						}),
@@ -807,6 +714,16 @@ _.Zones =
 					}),
 					n(-905, {	-- Command Table
 						n(-906, {	-- Tier 1: Tactical Insight
+							q(61553, {	-- Know Where to Strike
+								["sourceQuests"] = { 61552 },	-- The Hunt Watches
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.6, 56.2, 1565 },
+							}),
+							q(61552, {	-- The Hunt Watches
+								["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+								["coord"] = { 39.7, 55.7, 1701 },
+								["description"] = "Becomes available after you build Command Table tier 1 in your sanctum.",
+							}),
 						}),
 						-- Tier 2: Grovetender's Gift
 						-- Tier 3: Hidden Pathways
@@ -828,10 +745,98 @@ _.Zones =
 									i(180414),	-- Wakener's Runestag
 								},
 							}),
-							-- Pets
 							n(QUESTS, {
+								q(59862, {	-- A Savior for Lost Souls
+									["sourceQuests"] = { 63046 },	-- The End and the Beginning
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 69.9, 44.7, 1662 },
+								}),
+								q(59873, {	-- Greeting a God
+									["sourceQuests"] = { 59872 },	-- How to Save a God
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+								}),
+								q(59872, {	-- How to Save a God
+									["sourceQuests"] = { 59862 },	-- A Savior for Lost Souls
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+								}),
+								q(63046, {	-- The End and the Beginning
+									["sourceQuests"] = { 62624 },	-- The Queen's Conservatory
+									["provider"] = { "n", 173171 },	-- Conservator Starry Night
+									["coord"] = { 56.0, 68.2, 1702 },
+								}),
+								q(62624, {	-- The Queen's Conservatory
+									["provider"] = { "n", 173171 },	-- Conservator Starry Night
+									["coord"] = { 56.0, 68.2, 1702 },
+									["description"] = "Becomes available after you build Queen's Conservatory tier 1 in your sanctum.",
+								}),
+								
+								-- TODO: everything past here is yet to be verified on retail
+								q(59999, {	-- Rebirth of the Grove
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+									["sourceQuests"] = { 59873 },	-- Greeting a God
+								}),
+								q(59871, {	-- Catalyze This
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
+								}),
+								q(62467, {	-- Seed of a Thought
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+									["sourceQuests"] = { 59871 },	-- Catalyze This
+								}),
+								q(60640, {	-- Regrowth of the Grove
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+									["sourceQuests"] = { 62467 },	-- Seed of a Thought
+								}),
+								q(60641, {	-- Blossoming of the Grove
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+									["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
+								}),
+								q(60642, {	-- The Grove Resplendent
+									["provider"] = { "n", 166476 },	-- Warden Casad
+									["coord"] = { 33.4, 62.0, 1662 },
+									["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
+								}),
+								q(62447, {	-- A Rare and Unusual Spirit
+									["provider"] = { "n", 171107 },	-- Cultivator Blaithin
+									["coord"] = { 42.2, 52.9, 1662 },
+									["maps"] = { 1669 },	-- Mists of Tirna Scithe
+									["g"] = {
+										i(183704),	-- Shifting Spirit of Knowledge
+									},
+								}),
+								q(62603, {	-- A Rare and Unusual Spirit
+									["provider"] = { "n", 171107 },	-- Cultivator Blaithin
+									["coord"] = { 42.2, 52.9, 1662 },
+									["maps"] = { 1669 },	-- Mists of Tirna Scithe
+									["g"] = {
+										i(183805),	-- Tranquil Spirit of the Cosmos
+									},
+								}),
+								q(62625, {	-- A Rare and Unusual Spirit
+									["provider"] = { "n", 171107 },	-- Cultivator Blaithin
+									["coord"] = { 42.2, 52.9, 1662 },
+									["maps"] = { 1669 },	-- Mists of Tirna Scithe
+									["g"] = {
+										i(183806),	-- Energetic Spirit of Curiosity
+									},
+								}),
+								q(62454, {	-- A Rare and Unusual Spirit
+									["provider"] = { "n", 174329 },	-- Falir the Shifting
+									["coord"] = { 24.0, 53.3, 1662 },
+									["g"] = {
+										i(183806),	-- Energetic Spirit of Curiosity
+									},
+								}),
 								--q(xxxxx, {	-- Master of Inner Calm
-									i(183856),	-- Mystical Orb of Medidation
+									ach(14780),	-- Meditation Master
+									i(183856),	-- Mystical Orb of Meditation
 								--}),
 							}),
 							-- Spirits/Transmog

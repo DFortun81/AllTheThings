@@ -380,18 +380,42 @@ _.Zones =
 					}),
 				}),
 				ach(14779, {	-- Wild Hunting
-					crit(1),		-- Nightsong Wader
-					crit(2),		-- Decayfly
-					crit(3),		-- Basin Vulpin
-					crit(4),		-- Greater Ardenmoth
-					crit(5),		-- Verdant Prowler
-					crit(6),		-- Veilwing Guardian
-					crit(7),		-- Highland Runestag
-					crit(8),		-- Wild Gloomrunner
-					crit(9),		-- Voracious Lasher
-					crit(10),		-- Mystic Gulper
-					crit(11),		-- Roving Gladechewer
-					crit(12),		-- Wild Gormling
+					crit(1, {	-- Nightsong Wader
+						["crs"] = { 161889 },
+					}),
+					crit(2, {	-- Decayfly
+						["crs"] = { 170734 },
+					}),
+					crit(3, {	-- Basin Vulpin
+						["crs"] = { 163093 },
+					}),
+					crit(4, {	-- Greater Ardenmoth
+						["crs"] = { 166073 },
+					}),
+					crit(5, {	-- Verdant Prowler
+						["crs"] = { 161917 },
+					}),
+					crit(6, {	-- Veilwing Guardian
+						["crs"] = { 167503 },
+					}),
+					crit(7, {	-- Highland Runestag
+						["crs"] = { 170856 },
+					}),
+					crit(8, {	-- Wild Gloomrunner
+						["crs"] = { 169750 },
+					}),
+					crit(9, {	-- Voracious Lasher
+						["crs"] = { 169819 },
+					}),
+					crit(10, {	-- Mystic Gulper
+						["crs"] = { 169768 },
+					}),
+					crit(11, {	-- Roving Gladechewer
+						["crs"] = { 165912 },
+					}),
+					crit(12, {	-- Wild Gormling
+						["crs"] = { 158946 },
+					}),
 				}),
 			}),
 		}),
