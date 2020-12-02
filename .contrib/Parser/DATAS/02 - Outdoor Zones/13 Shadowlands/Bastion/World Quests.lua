@@ -61,6 +61,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61442, {	-- Fishing: Glorious Shimmerfin
+					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60844, {	-- Flight School: Falling With Style
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

@@ -461,46 +461,50 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(59181, {	-- Into the Maw
-						["provider"] = { "n", 164292 },	-- Shandris Feathermoon
-						["coord"] = { 39.2, 67.2, 1670 },
 						["sourceQuests"] = {
 							59246,	-- Daughter of the Night Warrior (Horde)
 							59179,	-- Daughter of the Night Warrior (Alliance)
 						},
+						["provider"] = { "n", 164292 },	-- Shandris Feathermoon
+						["coord"] = { 39.2, 67.2, 1670 },
 					}),
-					q(60134, {	-- On the Trail
+					q(60508, {	-- On the Trail
+						["sourceQuests"] = { 59181 },	-- Into the Maw
 						["provider"] = { "n", 174833 },	-- Shandris Feathermoon
 						["coord"] = { 44.3, 41.1, 1543 },
-						["sourceQuests"] = { 59181 },	-- Into the Maw
 					}),
 					q(60530, {	-- The Sea of Souls
+						["sourceQuests"] = { 60508 },	-- On the Trail
 						["provider"] = { "n", 168929 },	-- Shandris Feathermoon
 						["coord"] = { 30.1, 36.4, 1543 },
-						["sourceQuests"] = { 60134 },	-- On the Trail
 					}),
 					q(59189, {	-- The Recovery of Tyrande Whisperwind
+						["sourceQuests"] = { 60530 },	-- The Sea of Souls
 						["provider"] = { "n", 174834 },	-- Shandris Feathermoon
 						["coord"] = { 46.8, 41.7, 1543 },
-						["sourceQuests"] = { 60530 },	-- The Sea of Souls
 						["maps"] = { 1720 },	-- Torghast Scenario
 					}),
 					q(59242, {	-- Their New Home
+						["sourceQuests"] = { 59189 },	-- The Recovery of Tyrande Whisperwind
 						["provider"] = { "n", 174834 },	-- Shandris Feathermoon
 						["coord"] = { 46.8, 41.7, 1543 },
-						["sourceQuests"] = { 59189 },	-- The Recovery of Tyrande Whisperwind
 						["g"] = {
-							i(179498),	-- Faesworn Barb
-							i(182323),	-- Faesworn Spellblade
-							i(179546),	-- Faesworn Warclub
-							i(182322),	-- Faesworn Gavel
-							i(179515),	-- Faesworn Falchion
-							i(179511),	-- Faesworn Glaive
-							i(179583),	-- Faesworn Warbow
-							i(179536),	-- Faesworn Warmaul
-							i(179531),	-- Faesworn Reaper
-							i(179564),	-- Faesworn Channeling Root
+							i(175576),	-- Faewoven Raiment
+							i(179657),	-- Faewoven Tunic
+							i(179765),	-- Oakheart Tunic
+							i(179774),	-- Oakheart Vestment
+							i(179888),	-- Queensguard Chestplate
+							i(181909),	-- Runewarden's Hauberk
+							i(181979),	-- Runewarden's Vestment
 						},
 					}),					
+
+					-- Chapter 4: Da Boss (Renown 8 required to start)
+					-- Chapter 5: Night Warrior's Curse (Renown 11 required to start)
+					-- Chapter 6: Drust to Drust (Renown 13 required to start)
+					-- Chapter 7: The Horned Hunter (Renown 17 required to start)
+					-- Chapter 8: Deal for a Loa (Renown 20 required to start)
+					-- Chapter 9: Drust and Ashes (Renown 22 required to start)
 					
 					------------------------------
 					-- Everything past here has not been verified yet in retail

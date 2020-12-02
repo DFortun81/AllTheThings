@@ -417,7 +417,7 @@ _.Zones =
 					crit(11, {	-- Gift of Agthia
 						["objectID"] = 353942,	-- Gift of Agthia
 						["coord"] = { 35.1, 58.1, 1533 },
-						--["questID"] = ,
+						["questID"] = 60893,	-- 62847 also completed when opening
 						["g"] = {
 							i(180063),	-- Unearthly Chime
 						},
