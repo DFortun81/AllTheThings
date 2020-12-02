@@ -108,6 +108,11 @@ _.Zones =
 				q(61346, {	-- Cyrixia the Willbreaker (Bonus Objective)
 					["coord"] = { 27.6, 28.2, 1543 },
 				}),
+				q(60762, {	-- Death Motes
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+					["isDaily"] = true,
+				}),
 				q(59966, {	-- Delving Deeper
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
 					["provider"] = { "n", 171770 },	-- Ve'nari
@@ -151,6 +156,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 167826 },	-- Lady Jaina Proudmoore
 					["coord"] = { 25.0, 13.4, 1648 },
+				}),
+				q(61104, {	-- Grathalax, the Extractor
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+					["isDaily"] = true,
 				}),
 				q(59962, {	-- Hope Never Dies
 					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
@@ -379,48 +389,7 @@ _.Zones =
 					["coord"] = { 46.9, 41.7, 1543 },
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 				}),
-				-- Daughter of the Night Warrior (Ardenweald Covenant Questline)
-				q(59181, {	-- Into the Maw
-					["provider"] = { "n", 164277 },	-- Shandris Feathermoon
-					["coord"] = { 39.2, 67.2, 1670 },
-					["sourceQuests"] = {
-						59246,	-- Daughter of the Night Warrior (Horde)
-						59179,	-- Daughter of the Night Warrior (Alliance)
-					},
-				}),
-				q(60134, {	-- On the Trail
-					["provider"] = { "n", 174833 },	-- Shandris Feathermoon
-					["coord"] = { 44.3, 41.1, 1543 },
-					["sourceQuests"] = { 59181 },	-- Into the Maw
-				}),
-				q(60530, {	-- The Sea of Souls
-					["provider"] = { "n", 168929 },	-- Shandris Feathermoon
-					["coord"] = { 30.1, 36.4, 1543 },
-					["sourceQuests"] = { 60134 },	-- On the Trail
-				}),
-				q(59189, {	-- The Recovery of Tyrande Whisperwind
-					["provider"] = { "n", 174834 },	-- Shandris Feathermoon
-					["coord"] = { 46.8, 41.7, 1543 },
-					["sourceQuests"] = { 60530 },	-- The Sea of Souls
-					["maps"] = { 1720 },	-- Torghast Scenario
-				}),
-				q(59242, {	-- Their New Home
-					["provider"] = { "n", 174834 },	-- Shandris Feathermoon
-					["coord"] = { 46.8, 41.7, 1543 },
-					["sourceQuests"] = { 59189 },	-- The Recovery of Tyrande Whisperwind
-					["g"] = {
-						i(179498),	-- Faesworn Barb
-						i(182323),	-- Faesworn Spellblade
-						i(179546),	-- Faesworn Warclub
-						i(182322),	-- Faesworn Gavel
-						i(179515),	-- Faesworn Falchion
-						i(179511),	-- Faesworn Glaive
-						i(179583),	-- Faesworn Warbow
-						i(179536),	-- Faesworn Warmaul
-						i(179531),	-- Faesworn Reaper
-						i(179564),	-- Faesworn Channeling Root
-					},
-				}),
+
 				-- Dailies
 				q(61088, {	-- Dust to Dust
 					["provider"] = { "n", 162804 },	-- Ve'nari

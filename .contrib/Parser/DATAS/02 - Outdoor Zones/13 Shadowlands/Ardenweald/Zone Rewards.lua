@@ -31,6 +31,7 @@ _.Zones =
 					i(181426),	-- Faemoss Bindings
 					i(179549),	-- Nightwillow Cudgel
 					i(175728),	-- Soulsifter Root
+					i(181205),	-- Soulstalker Epaulets (saw it on mission table)
 					i(179594),	-- Witherscorn Guise
 				},
 			}),

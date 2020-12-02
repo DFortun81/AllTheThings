@@ -231,6 +231,13 @@ _.Zones =
 						["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 						["isDaily"] = true,
 					}),
+					q(61852, {	-- Adventurer: Guardian Kota
+						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+						["coord"] = { 44.7, 56.3, 1565 },
+						["g"] = {
+							follower(1283),	-- Guardian Kota
+						},
+					}),
 					q(57459, {	-- Fighting For Fungus
 						["sourceQuests"] = {
 							57455,	-- Mushroom For Improvement
@@ -460,7 +467,59 @@ _.Zones =
 					}),
 
 					-- Chapter 3: The Night Warrior (Renown 5 required to start)
-					
+					q(59246, {	-- Daughter of the Night Warrior (Horde)
+						["sourceQuests"] = { 60272 },	-- The Weak Link
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.9, 38.8, 1701 },
+						["races"] = HORDE_ONLY,
+					}),
+					q(59179, {	-- Daughter of the Night Warrior (Alliance)
+						["sourceQuests"] = { 60272 },	-- The Weak Link
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.9, 38.8, 1701 },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(59181, {	-- Into the Maw
+						["provider"] = { "n", 164292 },	-- Shandris Feathermoon
+						["coord"] = { 39.2, 67.2, 1670 },
+						["sourceQuests"] = {
+							59246,	-- Daughter of the Night Warrior (Horde)
+							59179,	-- Daughter of the Night Warrior (Alliance)
+						},
+					}),
+					q(60134, {	-- On the Trail
+						["provider"] = { "n", 174833 },	-- Shandris Feathermoon
+						["coord"] = { 44.3, 41.1, 1543 },
+						["sourceQuests"] = { 59181 },	-- Into the Maw
+					}),
+					q(60530, {	-- The Sea of Souls
+						["provider"] = { "n", 168929 },	-- Shandris Feathermoon
+						["coord"] = { 30.1, 36.4, 1543 },
+						["sourceQuests"] = { 60134 },	-- On the Trail
+					}),
+					q(59189, {	-- The Recovery of Tyrande Whisperwind
+						["provider"] = { "n", 174834 },	-- Shandris Feathermoon
+						["coord"] = { 46.8, 41.7, 1543 },
+						["sourceQuests"] = { 60530 },	-- The Sea of Souls
+						["maps"] = { 1720 },	-- Torghast Scenario
+					}),
+					q(59242, {	-- Their New Home
+						["provider"] = { "n", 174834 },	-- Shandris Feathermoon
+						["coord"] = { 46.8, 41.7, 1543 },
+						["sourceQuests"] = { 59189 },	-- The Recovery of Tyrande Whisperwind
+						["g"] = {
+							i(179498),	-- Faesworn Barb
+							i(182323),	-- Faesworn Spellblade
+							i(179546),	-- Faesworn Warclub
+							i(182322),	-- Faesworn Gavel
+							i(179515),	-- Faesworn Falchion
+							i(179511),	-- Faesworn Glaive
+							i(179583),	-- Faesworn Warbow
+							i(179536),	-- Faesworn Warmaul
+							i(179531),	-- Faesworn Reaper
+							i(179564),	-- Faesworn Channeling Root
+						},
+					}),					
 					
 					------------------------------
 					-- Everything past here has not been verified yet in retail
@@ -489,18 +548,6 @@ _.Zones =
 						["sourceQuests"] = { 60233 },	-- Souls of the Damned
 					}),
 					-- Daughter of the Night Warrior
-					q(59246, {	-- Daughter of the Night Warrior (Horde)
-						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.9, 38.8, 1565 },
-						--["sourceQuests"] = {  },	-- 
-						["races"] = HORDE_ONLY,
-					}),
-					q(59179, {	-- Daughter of the Night Warrior (Alliance)
-						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.9, 38.8, 1565 },
-						--["sourceQuests"] = {  },	-- 
-						["races"] = ALLIANCE_ONLY,
-					}),
 					-- From Ardenweald to the Maw and back
 					q(62536, {	-- The Lost of Teldrassil
 						["provider"] = { "n", 160262 },	-- Ysera
@@ -739,13 +786,6 @@ _.Zones =
 						["isWeekly"] = true,
 					}),
 					-- Covenant progress
-					q(61852, {	-- Adventurer: Guardian Kota (Rank 2)
-						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-						["coord"] = { 29.6, 81.6, 1565 },
-						["g"] = {
-							follower(1283),	-- Guardian Kota
-						},
-					}),
 					q(61853, {	-- Adventurer: Te'zan (Rank ?)
 						["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 						["coord"] = { 29.6, 81.6, 1565 },
