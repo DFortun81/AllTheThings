@@ -762,12 +762,54 @@ _.Zones =
 				-- Tithes of Darkhaven
 				-- The Final Atonement
 				-- Revelations of the Light
-				-- Bonus Objective
+
+
+				-- Bonus Objectives
 				q(57177, {	-- A Fresh Start
 				--	probably have to be on quest 57175, "Inquisitor Vilhelm's Sinstone" for this to show up
 					["sourceQuests"] = { 59021 },	-- Herald Their Demise
 				}),
+				q(62781, {	-- Ash You Like It (pre-60)
+					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+					["g"] = {
+						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
+						i(181334),	-- Essence Extractor [monk]
+					},
+				}),
+				q(62784, {	-- Charlatans (pre-60)
+					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+					["g"] = {
+						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
+						i(181185),	-- Soulstalker Breeches [monk]
+					},
+				}),
 				q(59211, {	-- Forgotten Village
+				}),
+				q(62780, {	-- Parasites of Reality (pre-60)
+					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+					["g"] = {
+						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
+						i(181183),	-- Soulstalker Grips [monk]
+					},
+				}),
+				q(62783, {	-- Stalking Fear (pre-60)
+					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+					["g"] = {
+						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
+						i(181187),	-- Soulstalker Bindings [monk]
+					},
+				}),
+				q(62782, {	-- The Banewood (pre-60)
+					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+					["g"] = {
+						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
+						i(181184),	-- Soulstalker Helm [monk]
+					},
 				}),
 			}),
 		}),

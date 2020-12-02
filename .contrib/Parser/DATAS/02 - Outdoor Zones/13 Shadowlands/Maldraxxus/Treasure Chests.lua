@@ -34,7 +34,7 @@ _.Zones =
 					["coords"] = {
 						{ 46.8, 31.7, 1536 },
 					},
-					--["questID"] = 60368,
+					["questID"] = 61089,
 					["g"] = {
 						i(181697),	-- Gorewrought Spellblade
 						i(182318),	-- Viscous Ink
@@ -58,10 +58,9 @@ _.Zones =
 						{ 36.5, 49.9, 1536 },
 						{ 34.8, 55.0, 1536 },
 					},
-					--["questID"] = 60368,
+					["questID"] = 60556,
 					["g"] = {
 						i(181501),	-- Flame of Battle
-						i(181671),	-- Corpsehide Spaulders
 						i(182441),	-- Markman's Advantage
 						i(181173),	-- Skittering Venomspitter???
 					},

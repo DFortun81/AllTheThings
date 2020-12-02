@@ -966,11 +966,35 @@ _.Zones =
 				}),
 				
 				-- Bonus Objectives
+				q(62737, {	-- Aspirant For a Day (pre-60)
+					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+					["g"] = {
+						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
+						i(181580),	-- Soulbearer's Gloves [monk]
+					},
+				}),
 				q(59015, {	-- Hostile Recollection
 				}),
 				q(62735, {	-- Hostile Recollection (pre-60)
 					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				}),
+				q(62732, {	-- Locus Focus (pre-60)
+					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+					["g"] = {
+						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
+						i(181587),	-- Soulbearer's Belt [monk]
+					},
+				}),
+				q(62736, {	-- Maldraxxi Eviction Notice (pre-60)
+					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+					["g"] = {
+						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
+						i(181577),	-- Soulbearer's Vest [monk]
+					},
 				}),
 			}),
 		}),

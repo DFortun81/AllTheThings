@@ -134,7 +134,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				i(181671),	-- Corpsehide Spaulders
 				i(181625),	-- Gorewrought Medallion
 			}),
 		}),

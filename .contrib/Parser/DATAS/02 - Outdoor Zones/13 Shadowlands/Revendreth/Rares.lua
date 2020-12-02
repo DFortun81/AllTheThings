@@ -470,10 +470,11 @@ _.Zones =
 					},
 				}),
 				n(160821, {	-- Worldedge Gorger
-					["description"] = "To summon Worldedge Gorger, you need to use Enticing Anima to light Worldedge Braziers. Enticing Anima can drop from the aberrations that spawn along the river.",
+					["description"] = "To summon Worldedge Gorger, you need to use |cff1eff00Enticing Anima|r to light Worldedge Braziers. |cff1eff00Enticing Anima|r drops from the aberrations that spawn along the river.",
 					["questID"] = 58259,
 					["isDaily"] = true,
 					["coord"] = { 38.6, 72.0, 1525 },
+					["cost"] = { { "i", 173939, 1 }, },	-- Enticing Anima
 					["g"] = {
 						crit(6, {	-- Worldedge Gorger
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
@@ -481,7 +482,12 @@ _.Zones =
 						i(180583, {	-- Impressionable Gorger Spawn
 							i(182589),	-- Loyal Gorger (MOUNT!)
 						}),
-						i(173939),	-- Enticing Anima (so the item is associated with the rare)
+						n(160815, {	-- Encroaching Gorger
+							["description"] = "Drops |cff1eff00Enticing Anima|r",
+							["g"] = {
+								i(173939),	-- Enticing Anima
+							},
+						})
 					},
 				}),
 			}),

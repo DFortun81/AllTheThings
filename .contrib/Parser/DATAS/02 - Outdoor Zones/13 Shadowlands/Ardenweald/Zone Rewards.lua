@@ -29,6 +29,8 @@ _.Zones =
 					i(181399),	-- Faemoss Vestment
 					i(181423),	-- Faemoss Waistband
 					i(181426),	-- Faemoss Bindings
+					i(181412),	-- Gormhusk Hood
+					i(181416),	-- Gormhusk Kilt
 					i(179549),	-- Nightwillow Cudgel
 					i(175728),	-- Soulsifter Root
 					i(181205),	-- Soulstalker Epaulets (saw it on mission table)

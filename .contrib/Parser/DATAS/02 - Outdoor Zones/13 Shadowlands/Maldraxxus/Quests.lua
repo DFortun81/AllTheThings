@@ -684,9 +684,33 @@ _.Zones =
 				-- Theater of Pain
 
 				-- Bonus Objectives
+				q(62742, {	-- Avoid 'Em Like the Plague (pre-60)
+					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+					["g"] = {
+						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
+						i(181638),	-- Gorewrought Drape [monk]
+					},
+				}),
 				q(62743, {	-- Decaying Situation (pre-60)
 					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				}),
+				q(62721, {	-- Deconstructing The Problem (pre-60)
+					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+					["g"] = {
+						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
+						i(181682),	-- Corpsehide Wristwraps [monk]
+					},
+				}),
+				q(62712, {	-- War of Attrition (pre-60)
+					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+					["g"] = {
+						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
+						i(181678),	-- Corpsehide Belt [monk]
+					},
 				}),
 			}),
 		}),

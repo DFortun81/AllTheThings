@@ -18,10 +18,15 @@ _.Zones =
 					i(181208),	-- Anima-Infused Muck
 					i(181178),	-- Cowl of Emberfury
 					i(181191),	-- Devourer Wrangler's Coif
+					i(181334),	-- Essence Extractor
 					i(181223),	-- Mace of Emberwrath
 					i(180355),	-- Ornate Pyx
 					i(182689),	-- Rapier of the Fearless
 					i(181211),	-- Souldrinker's Kris
+					i(181187),	-- Soulstalker Bindings
+					i(181185),	-- Soulstalker Breeches
+					i(181183),	-- Soulstalker Grips
+					i(181184),	-- Soulstalker Helm
 					i(181203),	-- Stonewrought Armplates
 					i(181197),	-- Stonewrought Breastplate
 					i(181199),	-- Stonewrought Gauntlets

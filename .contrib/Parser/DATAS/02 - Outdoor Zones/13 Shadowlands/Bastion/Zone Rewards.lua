@@ -11,6 +11,9 @@ _.Zones =
 				["g"] = {
 					i(181631),	-- Requiem Chime
 					i(181704),	-- Silvernote Cloak
+					i(181587),	-- Soulbearer's Belt
+					i(181580),	-- Soulbearer's Gloves
+					i(181577),	-- Soulbearer's Vest
 				},
 			}),
 		}),

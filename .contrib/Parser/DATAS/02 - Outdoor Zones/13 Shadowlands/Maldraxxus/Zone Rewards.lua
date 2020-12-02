@@ -22,6 +22,7 @@ _.Zones =
 					i(181670),	-- Corpsehide Breeches
 					i(181660),	-- Corpsehide Gloves
 					i(181666),	-- Corpsehide Helm
+					i(181671),	-- Corpsehide Spaulders
 					i(181655),	-- Corpsehide Vest
 					i(181682),	-- Corpsehide Wristwraps
 					i(181677),	-- Fleshscale Belt
@@ -32,6 +33,7 @@ _.Zones =
 					i(181669),	-- Fleshscale Leggings
 					i(181674),	-- Fleshscale Mantle
 					i(181681),	-- Fleshscale Wristwraps
+					i(181638),	-- Gorewrought Drape
 					i(181653),	-- Steelcore Chestplate
 					i(181661),	-- Steelcore Gauntlets
 					i(181675),	-- Steelcore Girdle

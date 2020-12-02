@@ -149,8 +149,6 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				i(181430),	-- Evernight Drape
-				-- Gormhusk [Leather]
-				i(181416),	-- Gormhusk Kilt
 				-- Runetender [Leather]
 				i(181413),	-- Runetender Headguard
 				i(181407),	-- Runetender Mitts

@@ -215,29 +215,25 @@ _.Zones =
 					},
 				}),
 				n(170303, {	-- Exos, Herald of Domination
-				--	TODO: add description about summoning or something
 				--	["questID"] = 61125,	-- Malevolent Stygia
 					["isDaily"] = true,
-				--	TODO: if nested cost items ever work properly, then use this only and clean this up
-				--	["cost"] = { { "i", 182329, 1 } },	-- 1x 182329
-				--	for now use the 3 individual as cost
+					["cost"] = { { "i", 182329, 1 } },	-- 1x 182329
 					["coord"] = { 21.0, 70.2, 1648 },
-					["cost"] = {
-						{ "i", 182328, 1 },	-- Dominion Etching: Grief
-						{ "i", 182327, 1 },	-- Dominion Etching: Loss
-						{ "i", 182326, 1 },	-- Dominion Etching: Pain
-					},
+					["description"] = "Summoned using |cff0070ddDomination's Calling|r",
 					["g"] = {
 						crit(11, {	-- Exos, Herald of Domination
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
 						i(182329, {	-- Domination's Calling
+							["description"] = "This is NOT consumed upon use",
 							["cost"] = {
 								{ "i", 182328, 1 },	-- Dominion Etching: Grief
 								{ "i", 182327, 1 },	-- Dominion Etching: Loss
 								{ "i", 182326, 1 },	-- Dominion Etching: Pain
 							},
 						}),
+						i(183067),	-- Korrath's Grimoire: Belidir
+						i(184108),	-- Vorpal Amulet
 					}
 				}),
 				n(174827, {	-- Gorged Shadehound
@@ -375,6 +371,7 @@ _.Zones =
 						crit(19, {	-- Ratgusher
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
+						i(183136),	-- Incendiary Mawrat
 					},
 				}),
 				n(162829, {	-- Razkazzar
@@ -427,6 +424,7 @@ _.Zones =
 						crit(17, {	-- Soulforger Rhovus
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(183141),	-- Stygic Magma
 					},
 				}),
 				n(165047, {	-- Soulsmith Yol-Mattar
