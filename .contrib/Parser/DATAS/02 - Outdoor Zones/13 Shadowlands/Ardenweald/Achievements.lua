@@ -381,39 +381,51 @@ _.Zones =
 				}),
 				ach(14779, {	-- Wild Hunting
 					crit(1, {	-- Nightsong Wader
+						["coord"] = { 37.7, 56.9, 1565 },
 						["crs"] = { 161889 },
 					}),
 					crit(2, {	-- Decayfly
+						["coord"] = { 64.5, 24.2, 1565 },
 						["crs"] = { 170734 },
 					}),
 					crit(3, {	-- Basin Vulpin
+						["coord"] = { 61.5, 50.3, 1565 },
 						["crs"] = { 163093 },
 					}),
 					crit(4, {	-- Greater Ardenmoth
+						["coord"] = { 60.5, 38.6, 1565 },
 						["crs"] = { 166073 },
 					}),
 					crit(5, {	-- Verdant Prowler
+						["coord"] = { 42.7, 58.7, 1565 },
 						["crs"] = { 161917 },
 					}),
 					crit(6, {	-- Veilwing Guardian
+						["coord"] = { 47.6, 43.2, 1565 },
 						["crs"] = { 167503 },
 					}),
 					crit(7, {	-- Highland Runestag
+						["coord"] = { 58.0, 57.8, 1565 },
 						["crs"] = { 170856 },
 					}),
 					crit(8, {	-- Wild Gloomrunner
+						["coord"] = { 39.7, 43.3, 1565 },
 						["crs"] = { 169750 },
 					}),
 					crit(9, {	-- Voracious Lasher
+						["coord"] = { 35.5, 37.0, 1565 },
 						["crs"] = { 169819 },
 					}),
 					crit(10, {	-- Mystic Gulper
+						["coord"] = { 36.0, 38.5, 1565 },
 						["crs"] = { 169768 },
 					}),
 					crit(11, {	-- Roving Gladechewer
+						["coord"] = { 66.0, 51.2, 1565 },
 						["crs"] = { 165912 },
 					}),
 					crit(12, {	-- Wild Gormling
+						["coord"] = { 65.8, 51.6, 1565 },
 						["crs"] = { 158946 },
 					}),
 				}),
