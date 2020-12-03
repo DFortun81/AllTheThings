@@ -296,13 +296,14 @@ _.Zones =
 							["g"] = {
 							},
 						}),
+						--]]
 						n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
-							["questID"] = ,
+							["questID"] = 61205,
 							["isDaily"] = true,
 							["g"] = {
+								i(182452),	-- Everchill Brambles
 							},
 						}),
-						--]]
 						n(166139, {	-- Glimmerdust, As Kil'jaeden <of The Burning Legion>
 							["questID"] = 61203,
 							["isDaily"] = true,

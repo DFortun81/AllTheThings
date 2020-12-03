@@ -27,6 +27,7 @@ _.Zones =
 					i(181176),	-- Sincollector's Sandals
 					i(181206),	-- Sincollector's Shoulderpads
 					i(181175),	-- Sincollector's Vestment
+					i(181212),	-- Soulcaster's Mace
 					i(181211),	-- Souldrinker's Kris
 					i(181187),	-- Soulstalker Bindings
 					i(181185),	-- Soulstalker Breeches
