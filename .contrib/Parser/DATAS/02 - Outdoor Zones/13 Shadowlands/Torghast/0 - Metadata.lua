@@ -9,12 +9,14 @@ _.Zones =
 			m(1627, {	-- Torghast
 				["icon"] = 3642306,
 				["maps"] = {
-					1635,	-- Fracture Chambers - Floor 1
-					1641,	-- Fracture Chambers - Floor 2
-					1624,	-- Fracture Chambers - Floor 3
-					1621,	-- Fracture Chambers - Floor 4
-					1768,	-- Fracture Chambers - Floor 5
-					1770,	-- Fracture Chambers - Floor 6
+					1635,	-- Fracture Chambers - Layer 1, Floor 1
+					1641,	-- Fracture Chambers - Layer 1, Floor 2
+					1624,	-- Fracture Chambers - Layer 1, Floor 3
+					1621,	-- Fracture Chambers - Layer 1, Floor 4
+					1768,	-- Fracture Chambers - Layer 1, Floor 5
+					1770,	-- Fracture Chambers - Layer 1, Floor 6
+					--
+					1764,	-- Fracture Chambers - Layer 2, Floor 2
 					1618,	-- Torghast
 					1620,	-- Torghast
 					1628,	-- Floor 41

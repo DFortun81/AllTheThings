@@ -357,12 +357,20 @@ _.Zones =
 					}),
 				}),
 				n(165152, {	-- Leeched Soul
-					["coord"] = { 67.8, 81.8, 1525 },
-					--["questID"] = ,
+					["description"] = "Inside the crypt.  Protect Absolver Meylann from waves of mobs.",
+					["questID"] = 59580,
 					["isDaily"] = true,
+					["coord"] = { 67.5, 82.2, 1525 },
+					["crs"] = {
+						165151,	-- Absolver Meylann
+						165175,	-- Prideful Hulk
+					},
 					["g"] = {
-						ach(14310, crit(10)),	-- Adventurer of Revendreth / Leeched Soul
-						i(180585),	-- Bottled Up Emotions
+						crit(10, {	-- Leeched Soul
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180585),	-- Bottled Up Rage (PET!)
+						i(183736),	-- Pride Resistant Handwraps
 					},
 				}),
 				n(161891, {	-- Lord Mortegore
@@ -380,14 +388,6 @@ _.Zones =
 					["g"] = {
 						ach(14310, crit(22)),	-- Adventurer of Revendreth / Manifestation of Wrath
 						i(180591),	-- Vial of Roiling Emotions
-					},
-				}),
-				n(165175, {	-- Prideful Hulk
-					["coord"] = { 67.8, 82.0, 1525 },
-					["questID"] = 59580,
-					["isDaily"] = true,
-					["g"] = {
-						i(183736),	-- Pride Resistant Handwraps
 					},
 				}),
 				n(160675, {	-- Scrivener Lenua

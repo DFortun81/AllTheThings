@@ -74,6 +74,35 @@ _.Zones =
 						["sourceQuests"] = { 60470 },	-- Setting Sabina Free
 					}),
 				}),
+				ach(14771, {	-- The Afterlife Express
+					["description"] = "Coordinates listed are a single point along the path driven by each carriage.  Some have more circuitous routes than others and will require a longer wait.",
+					["g"] = {
+						crit(1, {	-- Chalice Carriage
+							["coord"] = { 47.5, 47.7, 1525 },
+							["crs"] = { 174750 },	-- Chalice Carriage
+						}),
+						crit(2, {	-- Old Gate Carriage
+							["coord"] = { 59.2, 39.0, 1525 },
+							["crs"] = { 174751 },	-- Old Gate Carriage
+						}),
+						crit(3, {	-- Banewood Carriage
+							["coord"] = { 40.1, 67.4, 1525 },
+							["crs"] = { 158365 },	-- Banewood Carriage
+						}),
+						crit(4, {	-- Pridefall Carriage
+							["coord"] = { 69.2, 81.4, 1525 },
+							["crs"] = { 161879 },	-- Pridefall Carriage
+						}),
+						crit(5, {	-- Darkhaven Carriage
+							["coord"] = { 64.2, 58.8, 1525 },
+							["crs"] = { 158336 },	-- Darkhaven Carriage
+						}),
+						crit(6, {	-- The Castle Carriage
+							["coord"] = { 44.2, 41.4, 1525 },
+							["crs"] = { 174754 },	-- The Castle Carriage
+						}),
+					},
+				}),
 				ach(14314, {	-- Treasures of Revendreth
 					crit(1, {	-- Lost Quill
 						["description"] = "Take the |cFFFFFFFF[Forbidden Ink]|r from the library at |cFFFFFFFF37.6, 68.7|r and give it to the Lost Quill.",

@@ -312,10 +312,31 @@ _.Zones =
 						["provider"] = { "n", 171934 },	-- Prince Renathal
 						["coord"] = { 45.5, 28.7, 1700 },	-- Sinfall Depths
 					}),
+					q(59701, {	-- Common Ground
+					--	requires 5 renown
+						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+						["provider"] = { "n", 158653 },	-- Prince Renathal
+						["coord"] = { 51.0, 38.0, 1699 },	-- Sinfall Reaches
+					}),
 					q(60500, {	-- Halls of Atonement: Medallion of Pride
 						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 						["provider"] = { "o", 352520 },	-- Medallion of Pride
 						["coord"] = { 56.8, 30.8, 1699 },	-- Sinfall Reaches
+					}),
+					q(59676, {	-- Harvester of Desire
+						["sourceQuests"] = { 59706 },	-- Invitation for the Countess
+						["provider"] = { "n", 165658 },	-- Cudgelface
+						["coord"] = { 52.4, 35.4, 1525 },	-- Revendreth
+					}),
+					q(59711, {	-- Harvester of Envy
+						["sourceQuests"] = { 59707 },	-- Invitation for the Tithelord
+						["provider"] = { "n", 165818 },	-- Nadjia the Mistblade
+						["coord"] = { 72.1, 74.9, 1525 },	-- Revendreth
+					}),
+					q(59708, {	-- Harvester of Wrath
+						["sourceQuests"] = { 59708 },	-- Invitation for the Stonewright
+						["provider"] = { "n", 165865 },	-- General Draven
+						["coord"] = { 40.3, 30.7, 1525 },	-- Revendreth
 					}),
 					q(62915, {	-- Home Improvement
 						["sourceQuests"] = { 62837 },	-- Hopeful News
@@ -326,6 +347,35 @@ _.Zones =
 						["sourceQuests"] = { 62902 },	-- Anima is Power
 						["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 						["coord"] = { 54.9, 26.3, 1699 },	-- Sinfall Reaches
+					}),
+					q(59706, {	-- Invitation for the Countess
+						["sourceQuests"] = {
+							59701,	-- Common Ground
+							61492,	-- The Princeguard
+						},
+						["provider"] = { "n", 165661 },	-- Prince Renathal
+						["coord"] = { 41.0, 54.7, 1525 },	-- Revendreth
+					}),
+					q(59708, {	-- Invitation for the Stonewright
+						["sourceQuests"] = {
+							59701,	-- Common Ground
+							61492,	-- The Princeguard
+						},
+						["provider"] = { "n", 165661 },	-- Prince Renathal
+						["coord"] = { 41.0, 54.7, 1525 },	-- Revendreth
+					}),
+					q(59707, {	-- Invitation for the Tithelord
+						["sourceQuests"] = {
+							59701,	-- Common Ground
+							61492,	-- The Princeguard
+						},
+						["provider"] = { "n", 165661 },	-- Prince Renathal
+						["coord"] = { 41.0, 54.7, 1525 },	-- Revendreth
+					}),
+					q(59343, {	-- Kindred Spirits
+						["sourceQuests"] = { 59719 },	-- The Court
+						["provider"] = { "n", 161979 },	-- Theotar
+						["coord"] = { 50.3, 18.8, 1699 },	-- Sinfall Reaches
 					}),
 					q(62921, {	-- Our True Purpose
 						["sourceQuests"] = { 62920 },	-- A Conduit For Change
@@ -399,6 +449,22 @@ _.Zones =
 						["provider"] = { "n", 165291 },	-- The Accuser
 						["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
 					}),
+					q(59719, {	-- The Court
+						["sourceQuests"] = {
+							59676,	-- Harvester of Desire
+							59711,	-- Harvester of Envy
+							59708,	-- Harvester of Wrath
+						},
+						["provider"] = { "n", 165661 },	-- Prince Renathal
+						["coord"] = { 41.0, 54.7, 1525 },	-- Revendreth
+						["g"] = {
+							i(180928),	-- Soulbreaker's Ebony Wraps
+						--	TODO: verify non-cloth rewards.  API doesn't pick up rewards for this quest, but it gave me cloth wrists on my priest
+							i(180931),	-- Ebony Death Shroud Bindings
+							i(180930),	-- Fearstalker's Ebony Bracers
+							i(180929),	-- Dread Sentinel's Ebony Vambraces
+						},
+					}),
 					q(62857, {	-- The Court's Bounty
 						["sourceQuests"] = { 62856 },	-- Building Your Renown
 						["provider"] = { "n", 175772 },	-- Rahel
@@ -413,6 +479,12 @@ _.Zones =
 						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 						["provider"] = { "n", 158653 },	-- Prince Renathal
 						["coord"] = { 51.2, 37.8, 1699 },	-- Sinfall Reaches
+					}),
+					q(61492, {	-- The Princeguard
+					--	requires 5 renown
+						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+						["provider"] = { "n", 161977 },	-- General Draven
+						["coord"] = { 46.3, 15.7, 1699 },	-- Sinfall Reaches
 					}),
 					q(62904, {	-- The Souls Plight
 						["sourceQuests"] = { 62903 },	-- Into the Reservoir

@@ -30,6 +30,7 @@ i(184294);	-- Ethereal Ambrosia
 i(184378);	-- Faeweald Amber
 i(181744);	-- Forgelite Ember
 i(181745);	-- Forgesmith's Coal
+i(184777);	-- Gravedredger's Shovel
 i(184767);	-- Handheld Soul Mirror
 i(184384);	-- Hibernal Sproutling
 i(181550);	-- Hopebreaker's Field Injector
@@ -37,6 +38,7 @@ i(181377);	-- Illustrated Combat Meditation Aid
 i(184305);	-- Maldraxxi Champion's Armaments
 i(184387);	-- Misty Shimmerleaf
 i(184315);	-- Multi-Modal Anima Container
+i(184386);	-- Nascent Sporepod
 i(181547);	-- Noble's Draught
 i(181743);	-- Plume of the Archon
 i(181649);	-- Preserved Preternatural Braincase
@@ -78,6 +80,7 @@ i(44626);	-- Cask of Aged Dalaran Red
 i(13509);	-- Clutch of Foresight
 i(23122);	-- Consecrated Sharpening Stone
 i(143542);	-- Crown Co. "Kure-Everything" Tonic
+i(180693);	-- Cyclonic Chronicles
 i(173810);	-- Darksight Potion
 i(142264);	-- Drudge Fluid
 i(120257);	-- Drums of Fury

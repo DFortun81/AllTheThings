@@ -3030,6 +3030,7 @@ _.HiddenQuestTriggers =
 		q(60875),	-- seems to trigger for all Hidden Hoard chests on top of unique questIDs for each
 		q(60880),	-- triggers on Hidden Hoard chests for Kyrian players (???)
 		--	Bastion WQs
+		q(63262),	-- triggered after completing the WQ #60858, "Flight School: Up and Away!"
 		q(63263),	-- triggered after completing the WQ #60911, "Flight School: Flapping Frenzy"
 		--	Kyrian Covenant
 		q(63216),	-- triggers when turning in #57897, "Dangerous to Go Alone"
@@ -3086,6 +3087,7 @@ _.HiddenQuestTriggers =
 		q(62669),	-- Triggered during first completion of #58070 [Favor: Soul Hunter Blade]
 		q(60847),	-- Upon looting [Soul Hunter's Blade] (173707)
 		q(62641),	-- killing or looting Sabina during "Setting Sabina Free"
+		q(62671),	-- think this triggered when i turned in "Favor: Vial of Dredger Muck"
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
@@ -3094,6 +3096,7 @@ _.HiddenQuestTriggers =
 		q(59858),	-- Tea Tales: Theotar Achievement criteria
 		q(59861),	-- Tea Tales: Theotar Achievement criteria
 		q(60701),	-- triggered when completing #60653, "Mirror Restoration"
+		q(59857),	-- triggered when completing Tea Tales: Vulca
 		-- Venthyr Covenant
 		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
