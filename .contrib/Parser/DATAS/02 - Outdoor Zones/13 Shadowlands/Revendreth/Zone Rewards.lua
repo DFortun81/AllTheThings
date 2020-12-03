@@ -16,8 +16,13 @@ _.Zones =
 						["questID"] = 62182,	-- A Letter From Nadja
 					}),
 					i(181208),	-- Anima-Infused Muck
+					i(181224),	-- Avowed Arcanist's Staff
+					i(181216),	-- Cinderwall Great Mace
 					i(181178),	-- Cowl of Emberfury
+					i(181215),	-- Darkwing Assassin's Blade
+					i(181222),	-- Darkwing Rebel's Halberd
 					i(181191),	-- Devourer Wrangler's Coif
+					i(181210),	-- Dredhollow Boomstick
 					i(181334),	-- Essence Extractor
 					i(181223),	-- Mace of Emberwrath
 					i(180355),	-- Ornate Pyx

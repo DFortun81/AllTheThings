@@ -56,6 +56,7 @@ i(181647);	-- Stabilized Plague Strain
 i(181479);	-- Starlight Catcher
 i(184519);	-- Totem of Stolen Mojo
 i(184776);	-- Urn of Arena Soil
+i(184765);	-- Vesper Strikehammer
 i(184371);	-- Vivacity of Collaboration
 
 -- Battle Pet
@@ -306,6 +307,7 @@ i(171315); 	-- Reuse me (MTMM)
 
 -- "Toy"
 i(184634);	-- Adventurer's Herbalism Cache
+i(184635);	-- Adventurer's Mining Cache
 i(173791);	-- Baguette
 i(9282);	-- Blue Punch Card
 i(160364);	-- Bunch of Berries

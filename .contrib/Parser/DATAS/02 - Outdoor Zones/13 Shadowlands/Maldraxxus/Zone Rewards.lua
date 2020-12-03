@@ -9,6 +9,7 @@ _.Zones =
 			n(-903, {	-- Zone Rewards
 				["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
 				["g"] = {
+					i(181507),	-- Beating Abomination Core
 					i(181676),	-- Bloodsilk Cord
 					i(181662),	-- Bloodsilk Gloves
 					i(181664),	-- Bloodsilk Hood
@@ -35,6 +36,7 @@ _.Zones =
 					i(181674),	-- Fleshscale Mantle
 					i(181681),	-- Fleshscale Wristwraps
 					i(181638),	-- Gorewrought Drape
+					i(181626),	-- Gorewrought Loop
 					i(181653),	-- Steelcore Chestplate
 					i(181661),	-- Steelcore Gauntlets
 					i(181675),	-- Steelcore Girdle

@@ -250,7 +250,7 @@ _.Zones =
 							["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
 							["repeatable"] = true,
 							["g"] = {
-								i(181556),	-- 	Tribute of the Court
+								i(181732),	-- 	Tribute of the Ambitious
 							},
 						}),
 						q(60432, {	-- Troubles at Home
