@@ -412,7 +412,7 @@ _.Zones =
 						["crs"] = { 170856 },
 					}),
 					crit(8, {	-- Wild Gloomrunner
-						["coord"] = { 39.7, 43.3, 1565 },
+						["coord"] = { 39.7, 34.3, 1565 },
 						["crs"] = { 169750 },
 					}),
 					crit(9, {	-- Voracious Lasher
