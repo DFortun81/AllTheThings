@@ -13,9 +13,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["lvl"] = { 50 },
 		["g"] = {
 			n(QUESTS, {
-				q(58092,{	-- Halls of Atonement: Your Absolution
-					--["provider"] = { "n", 166689 },	-- General Draven
-				}),
+				-- don't delete this section
 			}),
 			d(1, {	-- Normal
 				e(2406, {	-- Halkias

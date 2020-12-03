@@ -206,6 +206,15 @@ _.Zones =
 					["provider"] = { "n", 158038 },	-- Laurent
 					["coord"] = { 26.3, 49.0, 1525 },
 				}),
+				q(58092,{	-- Halls of Atonement: Your Absolution
+					["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
+					["provider"] = { "n", 160248 },	-- Archivist Fane
+					["coord"] = { 73.0, 52.0, 1525 },
+					["maps"] = { 1663 },	-- Halls of Atonement
+					["g"] = {
+						i(184717),	-- Lord Chamberlain's Cloak
+					},
+				}),
 				q(59021, {	-- Herald Their Demise
 					["sourceQuests"] = {
 						58931,	-- Inquisitor Stelia's Sinstone

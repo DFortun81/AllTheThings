@@ -65,7 +65,8 @@ _.Zones =
 					["description"] = "Requires a Ripe Purian to open.  You will have to jump down from the cliffs above.",
 					["questID"] = 60758,
 					["isDaily"] = true,
-					["coord"] = { 63.8, 29.1, 1533 }
+					["coord"] = { 63.8, 29.1, 1533 },
+					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
 				o(353314, {	-- Silver Strongbox
 				--	TODO: updated objectIDs to match with coords when the data is available
@@ -75,16 +76,27 @@ _.Zones =
 					["coord"] = { 48.7, 31.8, 1533 },
 					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
+				o(1278968756, {	-- Silver Strongbox
+				--	TODO: updated objectIDs to match with coords when the data is available
+					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
+					["description"] = "Requires a Ripe Purian to open.",
+					["questID"] = 60712,
+					["coord"] = { 46.8, 19.9, 1533 },
+					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
+				}),
 				o(353691, {	-- Skyward Bell
 				--	TODO: updated objectIDs to match with coords when the data is available
 					["questID"] = 60798,	-- also triggered 60874... why two quests?
-					-- also triggered 60799 for horde/non-kyrian
-					["coord"] = { 45.6, 33.8, 1533 }
+					-- also triggered 60799 for non-kyrian
+					["coords"] = {
+						{ 45.6, 33.8, 1533 },
+						{ 59.5, 66.3, 1533 },	-- triggered 60798 / 60799
+					},
 				}),
 				o(353876, {	-- Virtue of Penitence
 					["questID"] = 60882,
 					["isDaily"] = true,
-					["coord"] = { 57.2, 92.7, 1533 }
+					["coord"] = { 57.2, 92.7, 1533 },
 				}),
 				i(180866),	-- Gilded Wader
 				-- TODO: [[object(xxxxxx, {	--

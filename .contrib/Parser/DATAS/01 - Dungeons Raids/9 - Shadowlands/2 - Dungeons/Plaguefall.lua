@@ -13,9 +13,13 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(14634, {	-- Nine Afterlives
-					crit(1, {	-- Hairball
-						["description"] = "Hairball in the hallway in the opposite direction of the endboss, go through the slime in the hallway to the left and turn left to pet her.",
-					}),
+					["collectible"] = false,
+					["g"] = {
+						crit(1, {	-- Hairball
+							["description"] = "Close to the top-left corner of the final boss's map.  On the left side of the slime pool, kill a green ooze and then turn left.  Hairball is in a tiny alcove filled with fish skeletons and candles.",
+							["crs"] = { 174195 },	-- Hairball
+						}),
+					},
 				}),
 			}),
 			n(QUESTS, {
@@ -62,6 +66,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["crs"] = { 164267 },	-- Margrave Stradama
 					["g"] = {
 						ach(14369),	-- Plaguefall
+						i(183319),	-- Memory of my Crystalline Reflection
 						i(178754),	-- Poxstorm, Longsword of Pestilence
 						i(178755),	-- Blighted Margrave's Cloak
 						i(178761),	-- Leggings of the Erudite Scholar
@@ -113,6 +118,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["crs"] = { 164267 },	-- Margrave Stradama
 						["g"] = {
 							ach(14414),	-- Heroic: Plaguefall
+							i(183319),	-- Memory of my Crystalline Reflection
 							i(178754),	-- Poxstorm, Longsword of Pestilence
 							i(178755),	-- Blighted Margrave's Cloak
 							i(178761),	-- Leggings of the Erudite Scholar
@@ -171,6 +177,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["crs"] = { 164267 },	-- Margrave Stradama
 						["g"] = {
 							ach(14415),	-- Mythic: Plaguefall
+							i(183319),	-- Memory of my Crystalline Reflection
 							i(178754),	-- Poxstorm, Longsword of Pestilence
 							i(178755),	-- Blighted Margrave's Cloak
 							i(178761),	-- Leggings of the Erudite Scholar
