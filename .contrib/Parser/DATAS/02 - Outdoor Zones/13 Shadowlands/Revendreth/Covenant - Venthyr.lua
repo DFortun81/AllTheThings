@@ -153,7 +153,7 @@ _.Zones =
 						q(60441, {	-- Challenges in Ardenweald
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 165291 },	-- The Accuser
-							["coord"] = { 55.9, 78.6, 1799 },
+							["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
 							["repeatable"] = true,
 							["g"] = {
 								i(181557),	-- Favor of the Court
@@ -163,7 +163,7 @@ _.Zones =
 						q(60444, {	-- Challenges in Bastion
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 165291 },	-- The Accuser
-							--["coord"] = { , 1533 },
+							["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
 							["repeatable"] = true,
 							["g"] = {
 								i(181557),	-- Favor of the Court
@@ -181,7 +181,7 @@ _.Zones =
 						q(60448, {	-- Challenges in Revendreth
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 165291 },	-- The Accuser
-							--["coord"] = { , 1533 },
+							["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
 							["repeatable"] = true,
 							["g"] = {
 								i(181557),	-- Favor of the Court
@@ -217,7 +217,7 @@ _.Zones =
 						q(60410, {	-- Training Our Forces
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
-							--["coord"] = { , 1533 },
+							["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
 							["repeatable"] = true,
 							["g"] = {
 								i(181556),	-- 	Tribute of the Court
@@ -235,7 +235,7 @@ _.Zones =
 						q(60403, {	-- Training in Ardenweald
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
-							--["coord"] = { , 1533 },
+							["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
 							["repeatable"] = true,
 							["g"] = {
 								i(181556),	-- 	Tribute of the Court
@@ -246,7 +246,7 @@ _.Zones =
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["repeatable"] = true,
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
-							["coord"] = { 58.0, 59.2, 1699 },	-- Sinfall Reaches
+							["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
 							["g"] = {
 								i(181372),	-- 	Tribute of the Ascended
 							},
@@ -254,7 +254,7 @@ _.Zones =
 						q(60409, {	-- Training in Maldraxxus
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
-							--["coord"] = { , 1533 },
+							["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
 							["repeatable"] = true,
 							["g"] = {
 								i(181556),	-- 	Tribute of the Court
