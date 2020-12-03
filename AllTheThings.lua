@@ -3112,18 +3112,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- If there was any informational text generated, then attach that info.
 		if #info > 0 then
 			-- not sure it's necessary or useful in most situations to try cleaning unqiue entries by name
-			-- local uniques, dupes = {}, {};
-			-- for i,item in ipairs(info) do
-				-- if not item.left then
-					-- tinsert(uniques, item);
-				-- elseif not dupes[item.left] then
-					-- dupes[item.left] = true;
-					-- tinsert(uniques, item);
-				-- end
-			-- end
-
-			group.info = info;
+			-- putting this back due to descriptions, ugh
+			local uniques, dupes = {}, {};
 			for i,item in ipairs(info) do
+				if not item.left then
+					tinsert(uniques, item);
+				elseif not dupes[item.left] then
+					dupes[item.left] = true;
+					tinsert(uniques, item);
+				end
+			end
+
+			group.info = uniques;
+			for i,item in ipairs(uniques) do
 				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 			end
 		end
