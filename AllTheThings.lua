@@ -8741,11 +8741,11 @@ UpdateGroup = function(parent, group, defaultVisibility)
 					if group.visible then parent.visible = 1; end
 				else
 					-- Hide this group. We aren't filtering for it.
-					group.visible = false;
+					group.visible = defaultVisibility;
 				end
 			else
 				-- Hide this group. We aren't filtering for it.
-				group.visible = false;
+				group.visible = defaultVisibility;
 			end
 		else
 			-- If the 'can equip' filter says true

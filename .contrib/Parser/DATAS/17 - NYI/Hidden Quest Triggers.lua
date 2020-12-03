@@ -2968,8 +2968,8 @@ _.HiddenQuestTriggers =
 		q(61198),	-- Triggers when successfully completing the pre-req sequence for the Shimmermist Runner rare
 		-- Ardenweald Covenant (Night Fae)
 		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
-		q(57559),	-- Triggered after turning in For Queen and Grove! (58160)
-		q(62706),	-- Triggered after turning in For Queen and Grove! (58160)
+		q(57559),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)
+		q(62706),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)
 		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(60820),	-- \
 		q(60821),	--  \
@@ -3044,7 +3044,7 @@ _.HiddenQuestTriggers =
 		q(57619),	-- triggered while on "In Death We Are Truly Tested" -- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
 		q(59843),	-- triggered when turning in "A Sure Bet"
 		q(62372),	-- triggered when 'feeding' Page 76 to the necronomicron
-		q(62786),	-- triggered when killing Unbreakable Urtz during "The Ladder" - no other arena opponents triggered quests
+		q(62786),	-- triggered when killing Unbreakable Urtz during "The Ladder" - no other arena opponents triggered quests / Killing Xantuth
 		q(62738),	-- triggered when accepting 62748 [Rallying Maldraxxus]
 		q(63416),	-- triggered when accepting 62748 [Rallying Maldraxxus]
 		q(62712),	-- bonus objective, "War of Attrition" -- what controls availability of these in SL?  i have a bonus objective up at 60 in Ardenweald but i can't see this one
@@ -3101,7 +3101,7 @@ _.HiddenQuestTriggers =
 		-- Venthyr Covenant
 		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
-		q(62827),	-- uhhhhh i killed myself by jumping into nothingness from one of the platforms
+		q(62827),	-- uhhhhh i killed myself by jumping into nothingness from one of the platforms / while on FP through Oribos
 		q(59316),	-- turning in quest #62918, "Binding Power"
 		q(62950),	-- clicking "Activate" after putting "Thrill Seeker" in Nadjia's soulbind tree
 		q(59317),	-- triggered when turning in #62919, "Strengthening the Bond"

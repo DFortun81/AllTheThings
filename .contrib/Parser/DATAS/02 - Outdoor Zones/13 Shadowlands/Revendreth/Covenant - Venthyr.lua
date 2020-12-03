@@ -15,13 +15,6 @@ _.Zones =
 				n(-901, {	-- Covenant Callings
 					["description"] = "|cFFfe040fVenthyr Covenant|r only.",
 					["g"] = {
-						--[[
-							-- TODO: don't want to list within every Tribute of the Court item for calling rewards
-							-- but maybe somehow track what we can get from them? 
-						n(-903,	{ -- Zone Rewards
-							-- Conduits
-							i(182136),	-- Chilled to the Core [Shaman-Enhance]
-						}),--]]
 						q(62691, {	-- A Calling in Revendreth
 							["sourceQuests"] = { 62695 },	-- A Call to Service
 							["repeatable"] = true,	-- ??

@@ -216,15 +216,7 @@ _.Zones =
 								["coord"] = { 50.6, 53.4, 1536 },
 								["repeatable"] = true,
 								["g"] = {
-									i(181732, {	-- Tribute of the Ambitious
-										i(184159, {	-- Oozing Necroray Egg (Timer)
-											i(184158, {	-- Oozing Necroray Egg (No Timer)
-												i(184160),	-- Bulbous Necroray
-												i(184161),	-- Infested Necroray
-												i(184162),	-- Pestilent Necroray
-											}),
-										}),
-									}),
+									i(181732),	-- Tribute of the Ambitious
 								},
 							}),
 						}),
