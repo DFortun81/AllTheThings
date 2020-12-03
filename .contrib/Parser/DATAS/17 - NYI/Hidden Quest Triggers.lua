@@ -2982,7 +2982,6 @@ _.HiddenQuestTriggers =
 		q(61695),	--  /
 		q(61696),	-- /
 		q(61590),	-- Triggered after first time channeling anima to Glitterfall Basin
-		q(60721),	-- Triggered after turning in The Roots Thirst
 		q(60722),	-- Triggered after turning in The Roots Thirst
 		q(59431),	-- Triggered when looting A Meandering Story
 
@@ -3104,8 +3103,8 @@ _.HiddenQuestTriggers =
 		q(59317),	-- triggered when turning in #62919, "Strengthening the Bond"
 		q(62749),	-- triggered when turning in #62921, "Our True Purpose"
 		q(63063),	-- looks like an unused version of #63056, "Sanctum Upgrade: Mirror Network"
-		q(60300),	-- Channeling Anima Conduit to Wanecrypt Hill
-		q(61587),	-- Channeling Anima Conduit to Wanecrypt Hill for the 3rd day
+		q(60300),	-- Channeling Anima Conduit to Wanecrypt Hill - 1st time
+		q(61587),	-- Channeling Anima Conduit to Wanecrypt Hill - 1st time
 		q(60304),	-- Channeling Anima Conduit to Crypt of the Forgotten
 		q(63237),	-- Completing 1st 'Campaign Adventure'
 		q(63260),	-- Completing 1st 'Campaign Adventure'

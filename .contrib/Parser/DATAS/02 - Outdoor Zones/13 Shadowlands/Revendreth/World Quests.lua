@@ -7,6 +7,10 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(-34,  {	-- World Quests
+				q(59902, {	-- A Curious Cache
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59904, {	-- A Curious Cache
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -121,30 +125,18 @@ _.Zones =
 				q(59852, {	-- Tea Tales: Gubbins and Tubbins
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						ach(14233, crit(3)),	-- Tea Tales: Gubbins and Tubbins
-					},
 				}),
 				q(59853, {	-- Tea Tales: Lost Sybille
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						ach(14233, crit(4)),	-- Tea Tales: Lost Sybille
-					},
 				}),
 				q(59848, {	-- Tea Tales: Theotar
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						ach(14233, crit(1)),	-- Tea Tales: Theotar
-					},
 				}),
 				q(59850, {	-- Tea Tales: Vulca
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						ach(14233, crit(2)),	-- Tea Tales: Vulca
-					},
 				}),
 				q(59581, {	-- The Strength of Sinfall
 					["isWorldQuest"] = true,

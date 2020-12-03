@@ -22,6 +22,11 @@ _.Zones =
 					i(181223),	-- Mace of Emberwrath
 					i(180355),	-- Ornate Pyx
 					i(182689),	-- Rapier of the Fearless
+					i(181180),	-- Sincollector's Cord
+					i(181179),	-- Sincollector's Leggings
+					i(181176),	-- Sincollector's Sandals
+					i(181206),	-- Sincollector's Shoulderpads
+					i(181175),	-- Sincollector's Vestment
 					i(181211),	-- Souldrinker's Kris
 					i(181187),	-- Soulstalker Bindings
 					i(181185),	-- Soulstalker Breeches

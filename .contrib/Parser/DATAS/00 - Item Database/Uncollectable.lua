@@ -16,6 +16,7 @@ i(184152);	-- Bottle of Diluted Anima-Wine
 i(183723);	-- Brimming Anima Orb
 i(181541);	-- Celestial Acorn
 i(184768);	-- Censer of Dried Gracepetals
+i(181368);	-- Centurion Power Core
 i(184766);	-- Chronicles of the Paragons
 i(181552);	-- Collected Tithe
 i(184148);	-- Concealed Sinvyr Flask

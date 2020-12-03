@@ -73,10 +73,10 @@ _.Zones =
 					},
 				}),
 				n(164107, {	-- Gormtamer Tizo
-					["coord"] = { 28.4, 55.3, 1565 },
-					--["questID"] = ,
+					["description"] = "Kill Deranged Guardians and Bristlecone Terrors until Chompy spawns.  Gormtamer Tizo will spawn after Chompy is killed.",
+					["questID"] = 59145,
 					["isDaily"] = true,
-					["description"] = "Kill Deranged Guardians and Bristlecone Terrors until Chompy spawns. After killing Chompy Gormtamer Tizo will spawn.",
+					["coord"] = { 28.4, 55.3, 1565 },
 					["g"] = {
 						crit(4, {	-- Gormtamer Tizo
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald

@@ -119,11 +119,14 @@ _.Zones =
 					},
 				}),
 				n(161857, { -- Nirvaska the Summoner
-					["coord"] = { 50.6, 63.2, 1536 },
-					--["questID"] = ,
+					["questID"] = 58629,
 					["isDaily"] = true,
+					["coord"] = { 50.6, 63.2, 1536 },
 					["g"] = {
-						ach(14308, crit(9)),	-- Adventurer of Maldraxxus / Nirvaska the Summoner
+						crit(9, {	-- Nirvaska the Summoner
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
+						i(183700),	-- Forgotten Summoner's Shoulderpads
 					},
 				}),
 				n(162767, {	-- Pesticide

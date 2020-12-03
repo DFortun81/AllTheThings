@@ -134,6 +134,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(58601, {	-- Web of Information
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				i(181625),	-- Gorewrought Medallion
 			}),
 		}),

@@ -171,11 +171,11 @@ _.Zones =
 						}),
 						q(60446, {	-- Challenges in Maldraxxus
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["provider"] = { "n", 165291 },	-- The Accuser
-							--["coord"] = { , 1533 },
 							["repeatable"] = true,
+							["provider"] = { "n", 165291 },	-- The Accuser
+							["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
 							["g"] = {
-								i(181557),	-- Favor of the Court
+								i(181733),	-- Tribute of the Duty-Bound
 							},
 						}),
 						q(60448, {	-- Challenges in Revendreth
@@ -393,10 +393,11 @@ _.Zones =
 					}),
 					q(57918, {	-- The Absolution of Souls
 					--	TODO: may need to be marked as altQuests with 58093, "Our Forgotten Purpose," non-Venthyr version, if they don't complete each other
+					--	unsure what triggered its availability.  "Our Forgotten Purpose" was available for me for days and this version wasn't.  i THINK it might have been unlocking the first tier of every sanctum upgrade?  i noticed it after going to pick up a daily quest from The Accuser after unlocking my final sanctum upgrade, and this quest wasn't up the night before when i started the upgrade
 					--	["sourceQuests"] = {  },	-- ??
 						["isBreadcrumb"] = true,
 						["provider"] = { "n", 165291 },	-- The Accuser
-						["coord"] = { 56.0, 76.8, 1700 },	-- Sinfall Depths
+						["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
 					}),
 					q(62857, {	-- The Court's Bounty
 						["sourceQuests"] = { 62856 },	-- Building Your Renown
@@ -424,6 +425,15 @@ _.Zones =
 				n(-957, {	-- Sanctum Upgrades
 					n(-915, {	-- Anima Conductor
 						n(-916, {	-- Tier 1: Flowing Tendrils
+							q(63066, {	-- Sanctum Upgrade: Anima Conductor
+								["provider"] = { "n", 172605 },	-- Foreman Flatfinger
+								["coord"] = { 55.4, 27.0, 1699 },	-- Sinfall Reaches
+							}),
+							q(60721, {	-- The Anima Must Flow
+								["sourceQuests"] = { 63066 },	-- Sanctum Upgrade: Anima Conductor
+								["provider"] = { "n", 164739 },	-- Devahia
+								["coord"] = { 48.3, 56.3, 1700 },	-- Sinfall Depths
+							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
 						}),

@@ -61,34 +61,34 @@ _.Zones =
 					
 					-------- unverifed on live yet; adding to alphabetized list above as they are verified in game
 					q(60137, {	-- The Fracture Chambers
+						["sourceQuests"] = { 61099 },	-- Skoldus Hall
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-						["sourceQuest"] = 61099,	-- Skoldus Hall
 					}),
 					q(60139, {	-- The Soulforges
+						["sourceQuests"] = { 60137 },	-- The Fracture Chambers
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-						["sourceQuest"] = 60137,	-- The Fracture Chambers
 					}),
 					q(60141, {	-- Coldheart Interstitia
+						["sourceQuests"] = { 60139 },	-- The Soulforges
 						["provider"] = { "n", 170153 },	-- Lady Jaina Proudmoore
 						["coord"] = { 39.8, 68.2, 1670 },
-						["sourceQuest"] = 60139,	-- The Soulforges
 					}),
 					q(60140, {	-- Mort'regar
+						["sourceQuests"] = { 60141 },	-- Coldheart Interstitia
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-						["sourceQuest"] = 60141,	-- Coldheart Interstitia
 					}),
 					q(60757, {	-- Skeleton Key
+						["sourceQuests"] = { 60140 },	-- Mort'regar
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-						["sourceQuest"] = 60140,	-- Mort'regar
 					}),
 					q(60146, {	-- The Upper Reaches
+						["sourceQuests"] = { 60757 },	-- Skeleton Key
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-						["sourceQuest"] = 60757,	-- Skeleton Key
 					}),
 					q(61730, {	-- The Upper Reaches
+						["sourceQuests"] = { 60146 },	-- The Upper Reaches
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 						["coord"] = { 39.9, 68.5, 1670 },
-						["sourceQuest"] = 60146,	-- The Upper Reaches
 					}),
 					-- Bonus Quests
 					q(59777, {	-- Help Calix find Amethia
@@ -103,16 +103,20 @@ _.Zones =
 						["repeatable"] = true,
 						["provider"] = { "n", 166148 },	-- Sawn
 					}),
+					q(59346, {	-- Indri's Flute
+						["repeatable"] = true,
+						["provider"] = { "n", 157426 },	-- Indri the Treesinger
+					}),
 					q(61322, {	-- Kythekios' Memory Stone
 						["repeatable"] = true,	-- ?????
 					}),
 					q(59345, {	-- Phantoriax's Warsword
-						["provider"] = { "n", 157432 },	-- Indigo
 						["repeatable"] = true,
+						["provider"] = { "n", 157432 },	-- Indigo
 					}),
 					q(59344, {	-- Renavyth's Medallion
-						["provider"] = { "n", 157406 },	-- Renavyth
 						["repeatable"] = true,
+						["provider"] = { "n", 157406 },	-- Renavyth
 					}),
 
 					-- Lockouts
