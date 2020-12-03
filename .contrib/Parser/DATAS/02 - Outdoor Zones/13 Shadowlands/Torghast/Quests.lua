@@ -38,7 +38,8 @@ _.Zones =
 						["coord"] = { 39.9, 68.5, 1670 },
 					}),
 					q(62719, {    -- The Final Pieces
-						["sourceQuests"] = { 62700 },    -- Ashes of the Tower
+						-- available without finishing the Ashes... not sure the specific SQ instead or if it was just time-gated
+						-- ["sourceQuests"] = { 62700 },    -- Ashes of the Tower
 						["provider"] = { "n", 164937 },    -- Runecarver
 						["coord"] = { 50.4, 53.8, 1912 },    -- The Runecarver's Oubliette
 					}),
