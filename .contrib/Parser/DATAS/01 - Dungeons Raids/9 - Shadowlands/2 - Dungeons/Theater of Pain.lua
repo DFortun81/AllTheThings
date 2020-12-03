@@ -8,7 +8,6 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["maps"] = {
 			1683,	-- Theater of Pain
 			1684,	-- Chamber of Conquest
-			1676,	-- 
 			1685,	-- Theater of Pain
 			1686,	-- Upper Barrow of Carnage
 			1687,	-- Lower Barrow of Carnage
