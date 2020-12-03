@@ -669,6 +669,16 @@ app.L = {
 		[-936] = "Interface\\Icons\\ui_sigil_nightfae",										-- Soulshape Forms (Night Fae)
 		[-939] = "Interface\\Icons\\ui_sigil_kyrian",										-- Covenant: Kyrian
 		[-941] = "Interface\\Icons\\ui_sigil_kyrian",										-- Sanctum Upgrades (Kyrian)
+		[-942] = 3675496,																	-- Path of Ascension
+		[-943] = 3536186,																	-- Tier 1: First Steps
+		[-944] = 3196822,																	-- Tier 2: Sacred Trials
+		[-945] = 3565450,																	-- Tier 3: Continued Training
+		[-946] = 3565447,																	-- Tier 4: Teachings of Wisdom
+		[-947] = 3565449,																	-- Tier 5: Trials of Humility
+		[-948] = 3854018,																	-- Transport Network (Kyrian)
+		[-3348] = 3854018,																	-- Tier 1: Step of Faith
+		[-3349] = 3854018,																	-- Tier 2: Leap of Power
+		[-3350] = 3854018,																	-- Tier 3: Eternal Paths
 		[-949] = "Interface\\Icons\\ui_sigil_venthyr",										-- Covenant: Venthyr
 		
 		
@@ -1524,6 +1534,16 @@ app.L = {
 		[-939] = "Covenant: Kyrian",											-- Covenant: Kyrian
 		[-940] = "Ascended Council",											-- Ascended Counil
 		[-941] = "Sanctum Upgrades",											-- Sanctum Upgrades (Kyrian)
+		[-942] = "Path of Ascension",											-- Path of Ascension
+		[-943] = "Tier 1: First Steps",											-- Tier 1: First Steps
+		[-944] = "Tier 2: Sacred Trials",										-- Tier 2: Sacred Trials
+		[-945] = "Tier 3: Continued Training",									-- Tier 3: Continued Teaching
+		[-946] = "Tier 4: Teachings of Wisdom",									-- Tier 4: Teachings of Wisdom
+		[-947] = "Tier 5: Trials of Humility",									-- Tier 5: Trials of Humility
+		[-948] = "Transport Network",											-- Transport Network (Kyrian)
+		[-3348] = "Tier 1: Step of Faith",										-- Tier 1: Step of Faith
+		[-3349] = "Tier 2: Leap of Power",										-- Tier 2: Leap of Power
+		[-3350] = "Tier 3: Eternal Paths",										-- Tier 3: Eternal Paths
 
 -- SL Revendreth/Venthyr
 		[-949] = "Covenant: Venthyr",											-- Covenant: Venthyr

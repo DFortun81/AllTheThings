@@ -42,7 +42,7 @@ _.Zones =
 					}),
 				}),
 				n(157964, {	-- Adjutant Dekaris
-				--	["questID"] = ,
+					["questID"] = 57482,
 					["isDaily"] = true,
 					["coord"] = { 25.8, 31.2, 1543 },
 					["g"] = {

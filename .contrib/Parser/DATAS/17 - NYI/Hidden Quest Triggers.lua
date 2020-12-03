@@ -966,6 +966,7 @@ _.HiddenQuestTriggers =
 		q(36893),	-- Nemesis Flag, Night Elf/Troll
 		q(36896),	-- Nemesis Flag, Pandaren (A/H)
 		q(36895),	-- Nemesis Flag, Worgen/Goblin
+		q(36905),	-- Ogre Waygate — Opening the Ogre Gateway in Talador during quest #36848, "Ogre Waygates"
 
 		-- ASSAULTS
 		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
@@ -3036,6 +3037,16 @@ _.HiddenQuestTriggers =
 		q(63216),	-- triggers when turning in #57897, "Dangerous to Go Alone"
 		q(62755),	-- triggers when turning in #57904, "Our Eternal Charge"
 		q(61589),	-- triggered when turning in #57903, "Power in the Sky," possibly connected to channeling anima to Purity's Pinnacle
+		q(60936),	-- Completed when crafting "Herald's Footpads" with Ascension Crafting
+		q(61054),	-- Completed when turning in quest 61473 (Sourcing Your Own Materials), Path of Ascension quest
+		q(60917),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Courage difficulty)
+		q(60918),	-- Looting Path of Ascension Victor's Chest (Echthra, Courage difficulty)
+		q(60919),	-- Looting Path of Ascension Victor's Chest (Alderyn and Myn'ir, Courage difficulty)
+		q(60921),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Courage difficulty)
+		q(60922),	-- Looting Path of Ascension Victor's Chest (Craven Corinth, Courage difficulty)
+		q(60923),	-- Looting Path of Ascension Victor's Chest (Splinterbark Nightmare, Courage difficulty)
+		q(61020),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Loyalty difficulty)
+		q(63079),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Loyalty difficulty)
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)

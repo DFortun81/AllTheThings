@@ -514,12 +514,193 @@ _.Zones =
 						-- Tier 2: Enhanced Purification
 						-- Tier 3: Wings of Light
 					}),
-					-- Path of Ascension
-						-- Tier 1: First Steps
-						-- Tier 2: Sacred Trials
-						-- Tier 3: Continued Training
-						-- Tier 4: Teachings of Wisdom
-						-- Tier 5: Trials of Humility
+					n(-942, {	-- Path of Ascension
+						n(-943, {	-- Tier 1: First Steps
+							q(62218, {	-- A Fountain for Fae
+								["sourceQuests"] = { 61361 },	-- Nuuminuuru
+								["provider"] = { "n", 168430 },	-- Dactylis
+								["coord"] = { 29.9, 38.8, 1707 },
+							}),
+							q(60495, {	-- A Suitable Opponent
+								["sourceQuests"] = { 60494 },	-- Your Friend, Dactylis
+								["provider"] = { "n", 168485 },	-- Apolon
+								["coord"] = { 27.8, 41.7, 1707 },
+							}),
+							q(61358, {	-- Alderyn and Myn'ir
+								["sourceQuests"] = { 60498 },	-- Overcoming the Trial
+								["provider"] = { "n", 168430 },	-- Dactylis
+								["coord"] = { 29.9, 38.8, 1707 },
+							}),
+							q(60907, {	-- Ascension Calling: Kleia
+								-- Quest starter is from defeating Nuuminuuru on Courage difficulty
+								["provider"] = { "i", 182095 },	-- Ascension Calling: Kleia
+							}),
+							q(60947, {	-- Blueprint: Charm of Fortitude
+								-- Quest starter is from defeating Echthra on Courage difficulty
+								-- Rewards: spell 333266 (Crafting: Charm of Fortitude), unlocking ascension crafting recipe
+								["provider"] = { "i", 180482 },	-- Blueprint: Charm of Fortitude
+							}),
+							q(61269, {	-- Blueprint: Charm of Persistence
+								-- Quest starter is from defeating Splinterbark Nightmare on Courage difficulty
+								-- Rewards spell 335605 (Crafting: Charm of Persistence)
+								["provider"] = { "i", 181147 },	-- Blueprint: Charm of Persistence
+							}),
+							q(61713, {	-- Blueprint: Charm of Quickness
+								-- Quest starter is from defeating Alderyn and Myn'ir on 'Courage' difficulty
+								-- Rewards: spell 346669 (Crafting: Charm of Quickness) unlocking ascension crafting recipe
+								["provider"] = { "i", 182162 },	-- Blueprint: Charm of Quickness
+							}),
+							q(60946, {	-- Blueprint: Deep Echo Trident
+								-- provider item 180472 contained in Path of Ascension chest after defeating Kalisthene on 'Courage' difficulty (easiest)
+								-- Grants Ascension Crafting recipe: Deep Echo Trident (spell 333265)
+								["provider"] = { "i", 180472 },	-- Blueprint: Deep Echo Trident
+							}),
+							q(60975, {	-- Blueprint: Spiritforged Aegis
+								-- Quest starter is from defeating Craven Corinth on Courage difficulty
+								-- Rewards spell 346676 (Crafting: Spiritforged Aegis)
+								["provider"] = { "i", 180494 },	-- Blueprint: Spiritforged Aegis
+							}),
+							q(61963, {	-- Called to the Hunt
+								["sourceQuests"] = { 61358 },	-- Alderyn and Myn'ir
+								["provider"] = { "n", 168430 },	-- Dactylis
+								["coord"] = { 29.9, 38.8, 1707 },
+							}),
+							q(61362, {	-- Caretaker of Faeries
+								-- Rewards spell 340388 (Trial: Nuuminuuru)
+								["sourceQuests"] = { 62219 },	-- Fanciful Distractions
+								["provider"] = { "n", 173710 },	-- Nuuminuuru
+								["coord"] = { 51.4, 33.7, 1565 }, -- Ardenweald
+							}),
+							q(61369, {	-- Craven Corinth
+								-- Available after defeating Echthre and 'Alderyn and Myn'ir' on Courage difficulty
+								["provider"] = { "n", 168430 },	-- Dactylis
+								["coord"] = { 29.9, 38.8, 1707 },
+							}),
+							q(60945, {	-- Deep Echo Trident
+								["provider"] = { "i", 181499 },	-- Deep Echo Trident
+								-- provider item 181499 crafted via Ascension Crafting
+							}),
+							q(61356, {	-- Echthra, Dame of Hated
+								["sourceQuests"] = { 60498 },	-- Overcoming the Trial
+								["provider"] = { "n", 168430 },	-- Dactylis
+								["coord"] = { 29.9, 38.8, 1707 },
+							}),
+							q(62219, {	-- Fanciful Distractions
+								["sourceQuests"] = { 62218 },	-- A Fountain for Fae
+								["provider"] = { "n", 173710 },	-- Nuuminuuru
+								["coord"] = { 51.4, 33.7, 1565 }, -- Ardenweald
+							}),
+							q(61357, {	-- Hatred Abated
+								-- Rewards spell 337133 "Trial: Echthra"
+								["sourceQuests"] = { 61490 },	-- War of Information
+								["provider"] = { "n", 172515 },	-- Echthra
+								["coord"] = { 56.7, 11.6, 1536 },	-- Maldraxxus
+							}),
+							q(60497, {	-- Herald's Footpads
+								-- Grants Ascension Crafting recipe: Herald's Footpads (spell 346680)
+								["sourceQuests"] = { 60496 },	-- Into the Coliseum
+								["provider"] = { "n", 168427 },	-- Artemede
+								["coord"] = { 28.2, 42.4, 1707 },	-- Elysian Hold
+							}),
+							q(60447, {	-- Humble Gatherer
+								["sourceQuests"] = { 60489 },	-- The Path of Ascension
+								["provider"] = { "n", 168485 },	-- Apolon
+								["coord"] = { 27.8, 41.7, 1707 },	-- Elysian Hold
+							}),
+							q(60496, {	-- Into the Coliseum
+								["sourceQuests"] = { 60495 },	-- A Suitable Opponent
+								["provider"] = { "n", 168427 },	-- Artemede
+								["coord"] = { 28.2, 42.4, 1707 },	-- Elysian Hold
+							}),
+							q(61370, {	-- No Other Way
+								-- Rewards spell 340105 (Trial: Craven Corinth)
+								["sourceQuests"] = { 61369 },	-- Craven Corinth
+								["provider"] = { "n", 168430 },	-- Dactylis
+								["coord"] = { 29.9, 38.8, 1707 },	-- Elysian Hold
+							}),
+							q(61361, {	-- Nuuminuuru
+								-- Available after defeating Echthre and 'Alderyn and Myn'ir' on Courage difficulty
+								["provider"] = { "n", 168430 },	-- Dactylis
+								["coord"] = { 29.9, 38.8, 1707 },	-- Elysian Hold
+							}),
+							q(61489, {	-- Of Hearsay and Heresy
+								["sourceQuests"] = { 61356 },	-- Echthre, Dame of Hatred
+								["provider"] = { "n", 168430 },	-- Dactylis
+								["coord"] = { 29.9, 38.8, 1707 },	-- Elysian Hold
+							}),
+							q(60498, {	-- Overcoming the Trial
+								["sourceQuests"] = { 61473 },	-- Sourcing Your Own Materials
+								["provider"] = { "n", 168427 },	-- Artemede
+								["coord"] = { 28.2, 42.4, 1707 },	-- Elysian Hold
+							}),
+							q(61965, {	-- Piercing the Shell
+								["sourceQuests"] = { 61963 },	-- Called to the Hunt
+								["provider"] = { "n", 173402 },	-- Alderyn
+								["coord"] = { 50.6, 69.9, 1565 },	-- Ardenweald
+							}),
+							q(61473, {	-- Sourcing Your Own Materials
+								["sourceQuests"] = { 60497 },	-- Herald's Footpads
+								["provider"] = { "n", 168430 },	-- Dactylis
+								["coord"] = { 29.9, 38.8, 1707 },	-- Elysian Hold
+							}),
+							q(61365, {	-- Splinterbark Nightmare
+								-- Available after defeating Echthre and 'Alderyn and Myn'ir' on Courage difficulty
+								["provider"] = { "n", 168430 },	-- Dactylis
+								["coord"] = { 29.9, 38.8, 1707 },	-- Elysian Hold
+							}),
+							q(61366, {	-- Tactical Operation
+								-- Rewards spell 340108 (Trial: Splinterbark Nightmare)
+								["sourceQuests"] = { 61365 },	-- Splinterbark Nightmare
+								["provider"] = { "n", 168430 },	-- Dactylis
+								["coord"] = { 29.9, 38.8, 1707 },	-- Elysian Hold
+							}),
+							q(61360, {	-- The Hunt's Gratitude
+								-- Rewards: spell 339523 "Trial: Alderyn and Myn'ir"
+								["sourceQuests"] = { 61965 },	-- Piercing the Shell
+								["provider"] = { "n", 173403 },	-- Myn'ir
+								["coord"] = { 51.7, 78.8, 1565 },
+							}),
+							q(60489, {	-- The Path of Ascension
+								["provider"] = { "n", 167745 },	-- Haephus
+								["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+							}),
+							q(61490, {	-- War of Information
+								["sourceQuests"] = { 61489 },	-- Of Hearsay and Heresy
+								["provider"] = { "n", 172515 },	-- Echthra
+								["coord"] = { 56.7, 11.6, 1536 },	-- Maldraxxus
+							}),
+							q(60494, {	-- Your Friend, Dactylis
+								["sourceQuests"] = { 60447 },	-- Humble Gatherer
+								["provider"] = { "n", 168485 },	-- Apolon
+								["coord"] = { 27.8, 41.7, 1707 },	-- Elysian Hold
+							}),
+						}),
+						n(-944, {	-- Tier 2: Sacred Trials
+						}),
+						n(-945, {	-- Tier 3: Continued Training
+						}),
+						n(-946, {	-- Tier 4: Teachings of Wisdom
+						}),
+						n(-947, {	-- Tier 5: Trials of Humility
+						}),
+					}),
+					n(-948, {	-- Transport Network
+						n(-3348, {	-- Tier 1: Step of Faith
+							q(63053, {	-- At a Moment's Notice
+								["sourceQuests"] = { 63052 },	-- Step of Faith
+								["provider"] = { "n", 175907 },	-- Khamsius
+								["coord"] = { 48.9, 62.7, 1707 },	-- Elysian Hold
+							}),
+							q(63052, {	-- Step of Faith
+								["provider"] = { "n", 167745 },	-- Haephus
+								["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
+							}),
+						}),
+						n(-3349, {	-- Tier 2: Leap of Power
+						}),
+						n(-3350, {	-- Tier 3: Eternal Paths
+						}),
+					}),
 					-- Transport Network
 						-- Tier 1: Step of Faith
 						-- Tier 2: Leap of Power

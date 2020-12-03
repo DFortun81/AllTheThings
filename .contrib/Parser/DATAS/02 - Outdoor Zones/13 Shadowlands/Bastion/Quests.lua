@@ -853,6 +853,12 @@ _.Zones =
 					["provider"] = { "i", 182693 },	-- Lost Disciple's Notes
 					["coord"] = { 59.3, 60.9, 1533 },
 				}),
+				q(62916, {	-- Your Next Best Friend
+					["sourceQuests"] = { 59196 },	-- Go in Service
+					["provider"] = { "n", 175426 },	-- Sika
+					["isWeekly"] = true,
+					["coord"] = { 53.0, 47.6, 1533 },
+				}),
 				q(59426, {	-- Your Personal Assistant
 					["sourceQuests"] = { 59196 },	-- Go in Service
 					["provider"] = { "n", 165045 },	-- Kalisthene
