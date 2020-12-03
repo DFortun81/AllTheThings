@@ -4242,6 +4242,7 @@ app.L = {
 		[348747] = "Muddy Scroll",
 		[349515] = "Battered Journal",
 		[349565] = "Chest of Envious Dreams",
+		[349612] = "Wanted: Appraiser Vix",
 		[349792] = "Filcher's Prize",
 		[349793] = "Wayfarer's Abandoned Spoils",
 		[349794] = "Remlate's Hidden Cache",

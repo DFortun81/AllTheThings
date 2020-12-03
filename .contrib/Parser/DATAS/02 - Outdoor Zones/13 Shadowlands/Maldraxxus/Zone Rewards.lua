@@ -25,6 +25,7 @@ _.Zones =
 					i(181671),	-- Corpsehide Spaulders
 					i(181655),	-- Corpsehide Vest
 					i(181682),	-- Corpsehide Wristwraps
+					i(181501),	-- Flame of Battle
 					i(181677),	-- Fleshscale Belt
 					i(181654),	-- Fleshscale Chainmail
 					i(181665),	-- Fleshscale Coif

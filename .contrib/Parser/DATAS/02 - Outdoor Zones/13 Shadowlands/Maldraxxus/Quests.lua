@@ -86,6 +86,11 @@ _.Zones =
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
 				}),
+				q(59826, {	-- Bet On Yourself
+				--	TODO: is this a daily?
+					["provider"] = { "n", 159830 },	-- Au'narim
+					["coord"] = { 53.7, 47.5, 1536 },
+				}),
 				q(57982, {	-- Breaking Down Barriers
 					["sourceQuests"] = {
 						57986,	-- A Burden Worth Bearing
@@ -577,6 +582,10 @@ _.Zones =
 					["provider"] = { "n", 164244 },	-- Grandmaster Vole
 					["coord"] = { 50.1, 41.6, 1536 },
 				}),
+				q(58095, {	-- Theater of Pain: Help Wanted
+					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
+					["coord"] = { 54.0, 50.8, 1536 },
+				}),
 				q(60181, {	-- Trench Warfare
 					["sourceQuests"] = {	-- TODO: verify SQs.  this didn't pop until i turned in Walk Among Death, but didn't require Memory of Honor
 						57511,	-- Arms for the Poor
@@ -625,6 +634,10 @@ _.Zones =
 					["sourceQuests"] = { 57425 },	-- Land of Opportunity
 					["provider"] = { "n", 162069 },	-- Baroness Draka
 					["coord"] = { 48.3, 57.1, 1536 },
+				}),
+				q(59867, {	-- WANTED: Appraiser Vix
+					["provider"] = { "o", 349612 },	-- Wanted: Appraiser Vix
+					["coord"] = { 54.1, 47.5, 1536 },
 				}),
 				q(59172, {	-- War is Deception
 					["sourceQuests"] = {

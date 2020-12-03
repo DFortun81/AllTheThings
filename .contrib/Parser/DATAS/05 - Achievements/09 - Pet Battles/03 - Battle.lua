@@ -227,7 +227,7 @@ _.Achievements =
 				crit(5,  {	-- The Mind Games of Addius
 					["_quests"] = { 61886 },	-- The Mind Games of Addius
 					["coord"] = { 61.2, 41.0, 1525 },
-					["cr"] = 173267,	-- Addius the Tormentor
+					["cr"] = 173331,	-- Addius the Tormentor
 				}),
 				crit(6,  {	-- Eyegor's Special Friends
 					["_quests"] = { 61885 },	-- Eyegor's Special Friends

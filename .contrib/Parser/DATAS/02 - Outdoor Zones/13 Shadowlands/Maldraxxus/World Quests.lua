@@ -97,6 +97,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(59234, {	-- Mixing a Mess
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(58437, {	-- Parts to a Whole
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

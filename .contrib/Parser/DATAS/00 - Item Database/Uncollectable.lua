@@ -35,6 +35,7 @@ i(184767);	-- Handheld Soul Mirror
 i(184384);	-- Hibernal Sproutling
 i(181550);	-- Hopebreaker's Field Injector
 i(181377);	-- Illustrated Combat Meditation Aid
+i(184307);	-- Maldraxxi Armor Scraps
 i(184305);	-- Maldraxxi Champion's Armaments
 i(184387);	-- Misty Shimmerleaf
 i(184315);	-- Multi-Modal Anima Container
@@ -45,6 +46,7 @@ i(181649);	-- Preserved Preternatural Braincase
 i(184769);	-- Pressed Torchlily Blossom
 i(182749);	-- Regurgitated Kyrian Wings
 i(184771);	-- Remembrance Parchment Ash
+i(184772);	-- Ritual Maldracite Crystal
 i(184770);	-- Roster of the Forgotten
 i(184293);	-- Sanctified Skylight Leaf
 i(184146);	-- Singed Soul Shackles

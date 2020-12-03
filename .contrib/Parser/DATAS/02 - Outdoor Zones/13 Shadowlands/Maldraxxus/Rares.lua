@@ -100,11 +100,14 @@ _.Zones =
 					},
 				}),
 				n(174108, { -- Necromantic Anomaly
-					["coord"] = { 73.0, 29.2, 1536 },
-					--["questID"] = ,
+					["questID"] = 62369,
 					["isDaily"] = true,
+					["coord"] = { 73.0, 29.2, 1536 },
 					["g"] = {
-						ach(14308, crit(22)),	-- Adventurer of Maldraxxus / Necromantic Anomaly
+						crit(22, {	-- Necromantic Anomaly
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
+						i(184174),	-- Clasp of Death
 					},
 				}),
 				n(162690, {	-- Nerissa Heartless
@@ -141,21 +144,31 @@ _.Zones =
 					},
 				}),
 				n(159753, { -- Ravenomous
-					["coord"] = { 54.0, 18.4, 1536 },
+					["description"] = "Crush Boneweave Spiderlings in the area for a chance to spawn the rare.  After flying around for a little while, it will land and be attackable.",
 					["questID"] = 58004,
 					["isDaily"] = true,
+					["coord"] = { 54.0, 18.4, 1536 },
 					["g"] = {
-						ach(14308, crit(5)),	-- Adventurer of Maldraxxus / Ravenomous
+						crit(5, {	-- Ravenomous
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 						i(181283),	-- Foulwing Hatchling
 					},
 				}),
 				n(159886, { -- Sister Chelicerae
-					["coord"] = { 55.6, 22.4, 1536 },
+					["description"] = "Destroy the Intricate Webbing and defeat waves of Chelicerae's Children.",
 					["questID"] = 58003,
 					["isDaily"] = true,
+					["coord"] = { 55.5, 23.6, 1536 },
+					["crs"] = {
+						159895,	-- Chelicerae's Children
+						159885,	-- Intricate Webbing
+					},
 					["g"] = {
-						ach(14308, crit(6)),	-- Adventurer of Maldraxxus / Sister Chelicerae
-						i(181172),	-- Boneweave Hatchling
+						crit(6, {	-- Sister Chelicerae
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
+						i(181172),	-- Boneweave Hatchling (PET!)
 					},
 				}),
 				n(168147, { -- Sabriel the Bonecleaver

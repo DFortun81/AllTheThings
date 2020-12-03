@@ -60,7 +60,6 @@ _.Zones =
 					},
 					["questID"] = 60556,
 					["g"] = {
-						i(181501),	-- Flame of Battle
 						i(182441),	-- Markman's Advantage
 						i(181173),	-- Skittering Venomspitter???
 					},

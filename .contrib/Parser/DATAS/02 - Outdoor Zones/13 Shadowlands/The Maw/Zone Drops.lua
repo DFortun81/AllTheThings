@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(1550, {	-- Shadowlands
-		m(1648, {	-- The Maw
+		m(1543, {	-- The Maw
 			n(ZONEDROPS, {
 			}),
 		}),

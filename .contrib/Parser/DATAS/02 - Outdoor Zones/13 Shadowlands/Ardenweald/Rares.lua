@@ -116,11 +116,11 @@ _.Zones =
 					["questID"] = 59140,
 					["isDaily"] = true,
 					["coords"] = {
+						{ 32.9, 44.4, 1565 },	-- confirmed
 						{ 47.9, 40.2, 1565 },	-- confirmed
 						{ 36.5, 47.9, 1565 },
 						{ 59.9, 29.4, 1565 },
 						{ 36.5, 47.9, 1565 },
-						{ 32.7, 44.7, 1565 },
 						{ 57.9, 29.3, 1565 },
 					},
 					["g"] = {
@@ -355,6 +355,7 @@ _.Zones =
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
 						i(180730),	-- Wild Glimmerfur Prowler
+						i(180154),	-- Greataxe of Unrelenting Pursuit
 						i(182176, {	-- Shadowstalker Soul
 							["questID"] = 62431,	-- Shadowstalker Soul
 						}),

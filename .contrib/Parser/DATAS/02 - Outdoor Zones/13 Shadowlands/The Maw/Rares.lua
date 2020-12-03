@@ -5,9 +5,8 @@
 _.Zones =
 {
 	m(1550, {	-- Shadowlands
-		m(1648, {	-- The Maw
+		m(1543, {	-- The Maw
 			n(RARES, {
-			--	TODO: might need to confirm the mapID/coords on basically everything in the maw, we have 1648 set for everything here but i asked carb for the mapID when he was killing rares and he was on 1543.  so not sure if that affects coordinates but we should check
 				n(COMMON_BOSS_DROPS, {
 					i(184395, {	-- Fallen Adventurer's Cache
 						["description"] = "Drops from numerous rares, elites, and named mobs in The Maw.",
@@ -45,7 +44,7 @@ _.Zones =
 				n(157964, {	-- Adjutant Dekaris
 				--	["questID"] = ,
 					["isDaily"] = true,
-					["coord"] = { 25.8, 31.2, 1648 },
+					["coord"] = { 25.8, 31.2, 1543 },
 					["g"] = {
 						crit(1, {	-- Adjutant Dekaris
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -55,7 +54,7 @@ _.Zones =
 				n(169102, {	-- Agonix
 					["questID"] = 61136,
 					["isDaily"] = true,
-					["coord"] = { 28.0, 44.6, 1648 },
+					["coord"] = { 28.0, 44.6, 1543 },
 					["g"] = {
 						crit(8, {	-- Agonix
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -65,7 +64,7 @@ _.Zones =
 				n(170787, {	-- Akros <Death's Hammer>
 				--	["questID"] = ,
 					["isDaily"] = true,
-					["coord"] = { 26.0, 54.9, 1648 },
+					["coord"] = { 26.0, 54.9, 1543 },
 					["g"] = {
 						crit(10, {	-- Akros
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -75,7 +74,7 @@ _.Zones =
 				n(170301, {	-- Apholeias, Herald of Loss
 					["questID"] = 60788,
 					["isDaily"] = true,
-					["coord"] = { 19.6, 42.0, 1648 },
+					["coord"] = { 19.6, 42.0, 1543 },
 					["g"] = {
 						crit(2, {	-- Apholeias, Herald of Loss
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -85,7 +84,7 @@ _.Zones =
 					},
 				}),
 				n(157833, {	-- Borr-Geth
-					["coord"] = { 38.9, 41.2, 1648 },
+					["coord"] = { 38.9, 41.2, 1543 },
 					["questID"] = 57469,
 					["isDaily"] = true,
 					["g"] = {
@@ -98,7 +97,7 @@ _.Zones =
 				n(171317, {	-- Conjured Death
 				--	["questID"] = ,
 				--	["isDaily"] = true,
-					["coord"] = { 27.8, 13.2, 1648 },
+					["coord"] = { 27.8, 13.2, 1543 },
 					["g"] = {
 						crit(4, {	-- Conjured Death
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -122,7 +121,7 @@ _.Zones =
 				n(160770, {	-- Darithis the Bleak
 				--	["questID"] = ,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1648 },
+				--	["coord"] = { , , 1543 },
 					["g"] = {
 						crit(5, {	-- Darithis the Bleak
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -132,7 +131,7 @@ _.Zones =
 				n(158025, {	-- Darklord Taraxis
 				--	["questID"] = ,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1648 },
+				--	["coord"] = { , , 1543 },
 					["g"] = {
 						crit(6, {	-- Darklord Taraxis
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -142,7 +141,7 @@ _.Zones =
 				n(162452, {	-- Dartanos
 					["questID"] = 59230,
 					["isDaily"] = true,
-					["coord"] = { 25.8, 14.8, 1648 },
+					["coord"] = { 25.8, 14.8, 1543 },
 					["g"] = {
 						crit(2, {	-- Dartanos
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -153,7 +152,7 @@ _.Zones =
 				n(162844, {	-- Dath Rezara
 					["questID"] = 60988,
 					["isDaily"] = true,
-					["coord"] = { 19.0, 57.6, 1648 },
+					["coord"] = { 19.0, 57.6, 1543 },
 					["g"] = {
 						crit(18, {	-- Dath Rezara
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -163,7 +162,7 @@ _.Zones =
 				n(170711, {	-- Dolos
 				--	["questID"] = ,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1648 },
+				--	["coord"] = { , , 1543 },
 					["g"] = {
 						crit(7, {	-- Dolos
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -184,7 +183,7 @@ _.Zones =
 				n(170774, {	-- Eketra <The Impaler>
 					["questID"] = 60915,
 					["isDaily"] = true,
-					["coord"] = { 22.8, 52.4, 1648 },
+					["coord"] = { 22.8, 52.4, 1543 },
 					["g"] = {
 						crit(8, {	-- Eketra
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -194,7 +193,7 @@ _.Zones =
 				n(169827, {	-- Ekphoras, Herald of Grief
 				--	["questID"] = 61125,	-- Malevolent Stygia
 					["isDaily"] = true,
-					["coord"] = { 42.2, 21.0, 1648 },
+					["coord"] = { 42.2, 21.0, 1543 },
 					["g"] = {
 						crit(9, {	-- Ekphoras, Herald of Grief
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -206,7 +205,7 @@ _.Zones =
 				n(154330, {	-- Eternas the Tormentor
 					["questID"] = 57509,
 					["isDaily"] = true,
-					["coord"] = { 27.4, 49.4, 1648 },	-- TODO: verify coords, wowhead says 19.8, 46.0
+					["coord"] = { 27.4, 49.4, 1543 },	-- TODO: verify coords, wowhead says 19.8, 46.0
 					["g"] = {
 						crit(10, {	-- Eternas the Tormentor
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -218,7 +217,7 @@ _.Zones =
 				--	["questID"] = 61125,	-- Malevolent Stygia
 					["isDaily"] = true,
 					["cost"] = { { "i", 182329, 1 } },	-- 1x 182329
-					["coord"] = { 21.0, 70.2, 1648 },
+					["coord"] = { 21.0, 70.2, 1543 },
 					["description"] = "Summoned using |cff0070ddDomination's Calling|r",
 					["g"] = {
 						crit(11, {	-- Exos, Herald of Domination
@@ -236,7 +235,7 @@ _.Zones =
 					}
 				}),
 				n(174827, {	-- Gorged Shadehound
-					--["coord"] = { 27.3, 17.3, 1648 },
+					--["coord"] = { 27.3, 17.3, 1543 },
 					--["questID"] = 61125,	--
 					--["isDaily"] = true,
 					["g"] = {
@@ -246,7 +245,7 @@ _.Zones =
 				n(172523, {	-- Houndmaster Vasanok
 				--	["questID"] = ,
 					["isDaily"] = true,
-					["coord"] = { 60.1, 64.9, 1648 },
+					["coord"] = { 60.1, 64.9, 1543 },
 					["g"] = {
 						crit(13, {	-- Houndmaster Vasanok
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -256,7 +255,7 @@ _.Zones =
 				n(162965, {	-- Huwerath
 					["questID"] = 58918,
 					["isDaily"] = true,
-					["coord"] = { 21.6, 29.2, 1648 },
+					["coord"] = { 21.3, 29.3, 1543 },
 					["g"] = {
 						crit(5, {	-- Huwerath
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -266,7 +265,7 @@ _.Zones =
 				n(175012, {	-- Ikras the Devourer
 				--	["questID"] = ,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1648 },
+				--	["coord"] = { , , 1543 },
 					["g"] = {
 						crit(21, {	-- Ikras the Devourer
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -276,7 +275,7 @@ _.Zones =
 				n(170692, {	-- Krala <Death's Wings>
 				--	["questID"] = ,
 					["isDaily"] = true,
-					["coord"] = { 30.7, 68.8, 1648 },
+					["coord"] = { 30.7, 68.8, 1543 },
 					["g"] = {
 						crit(9, {	-- Krala
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -286,7 +285,7 @@ _.Zones =
 				n(171316, {	-- Malevolent Stygia
 					["questID"] = 61125,	-- Malevolent Stygia
 					["isDaily"] = true,
-					["coord"] = { 27.3, 17.3, 1648 },
+					["coord"] = { 27.3, 17.3, 1543 },
 					["g"] = {
 						crit(11, {	-- Malevolent Stygia
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -294,7 +293,7 @@ _.Zones =
 					},
 				}),
 				n(162849, {	-- Morguliax <Lord of Decapitation>
-					--["coord"] = { 27.4, 49.4, 1648 },
+					--["coord"] = { 27.4, 49.4, 1543 },
 					--["questID"] = 61125,
 					["isDaily"] = true,
 					["g"] = {
@@ -307,7 +306,7 @@ _.Zones =
 				n(158278, {	-- Nascent Devourer
 				--	["questID"] = ,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1648 },
+				--	["coord"] = { , , 1543 },
 					["g"] = {
 						crit(13, {	-- Nascent Devourer
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -317,7 +316,7 @@ _.Zones =
 				n(164064, {	-- Obolos
 					["questID"] = 60667,
 					["isDaily"] = true,
-					["coord"] = { 48.6, 18.4, 1648 },
+					["coord"] = { 48.6, 18.4, 1543 },
 					["g"] = {
 						crit(14, {	-- Obolos
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -327,7 +326,7 @@ _.Zones =
 				n(172207, {	-- Odalrik
 					["questID"] = 62618,
 					["isDaily"] = true,
-					["coord"] = { 38.6, 28.8, 1648 },
+					["coord"] = { 38.6, 28.8, 1543 },
 					["g"] = {
 						crit(16, {	-- Odalrik
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -337,7 +336,7 @@ _.Zones =
 				n(162845, {	-- Orrholyn <Lord of Bloodletting>
 					["questID"] = 60991,
 					["isDaily"] = true,
-					["coord"] = { 25.6, 48.2, 1648 },
+					["coord"] = { 25.6, 48.2, 1543 },
 					["g"] = {
 						crit(4, {	-- Orrholyn
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -345,8 +344,8 @@ _.Zones =
 					},
 				}),
 				n(172577, {	-- Orophea
-					["description"] = "Collect Eurydea's Amulet and offer it to Orophea.",
-					["coord"] = { 23.6, 21.6, 1648 },
+					["description"] = "Collect Eurydea's Necklace and offer it to Orophea.",
+					["coord"] = { 23.6, 21.6, 1543 },
 					["questID"] = 61519,
 					["isDaily"] = true,
 					["g"] = {
@@ -355,7 +354,7 @@ _.Zones =
 						}),
 						i(181794),	-- Orophea's Lyre
 						o(356555, {	-- Eurydea's Necklace
-							["coord"] = { 26.8, 29.3, 1648 },
+							["coord"] = { 26.8, 29.3, 1543 },
 							["g"] = {
 								i(181794),		-- Orophea's Lyre
 							},
@@ -365,7 +364,7 @@ _.Zones =
 				n(175821, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
 					["questID"] = 63044,
 					["isDaily"] = true,
-					["coord"] = { 21.6, 41.8, 1648 },
+					["coord"] = { 21.6, 41.8, 1543 },
 					["g"] = {
 						crit(19, {	-- Ratgusher
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -376,7 +375,7 @@ _.Zones =
 				n(162829, {	-- Razkazzar
 					["questID"] = 60992,
 					["isDaily"] = true,
-					["coord"] = { 26.2, 37.4, 1648 },
+					["coord"] = { 26.2, 37.4, 1543 },
 					["g"] = {
 						crit(3, {	-- Razkazzar
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -387,7 +386,7 @@ _.Zones =
 					["description"] = "Inside the cave.",
 					["questID"] = 62210,	-- Sanngror the Torturer
 					["isDaily"] = true,
-					["coord"] = { 55.8, 67.5, 1648 },
+					["coord"] = { 55.8, 67.5, 1543 },
 					["g"] = {
 						crit(12, {	-- Sanngror the Torturer
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -398,7 +397,7 @@ _.Zones =
 				n(170634, {	-- Shadeweaver Zeris
 				--	["questID"] = ,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1648 },
+				--	["coord"] = { , , 1543 },
 					["g"] = {
 						crit(16, {	-- Shadeweaver Zeris
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -408,7 +407,7 @@ _.Zones =
 				n(172524, {	-- Skittering Broodmother
 				--	["questID"] = ,
 					["isDaily"] = true,
-					["coord"] = { 61.7, 77.6, 1648 },
+					["coord"] = { 61.7, 77.6, 1543 },
 					["g"] = {
 						crit(14, {	-- Skittering Broodmother
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -429,7 +428,7 @@ _.Zones =
 				n(165047, {	-- Soulsmith Yol-Mattar
 				--	["questID"] = ,
 					["isDaily"] = true,
-					["coord"] = { 36.6, 37.2, 1648 },
+					["coord"] = { 36.6, 37.2, 1543 },
 					["g"] = {
 						crit(6, {	-- Soulsmith Yol-Mattar
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -439,7 +438,7 @@ _.Zones =
 				n(156203, {	-- Stygian Incinerator
 				--	["questID"] = ,
 					["isDaily"] = true,
-					["coord"] = { 36.4, 44.4, 1648 },
+					["coord"] = { 36.4, 44.4, 1543 },
 					["g"] = {
 						crit(17, {	-- Stygian Incinerator
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -461,7 +460,7 @@ _.Zones =
 				n(170731, {	-- Thanassos <Death's Voice>
 				--	["questID"] = ,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1648 },
+				--	["coord"] = { , , 1543 },
 					["g"] = {
 						crit(19, {	-- Thanassos
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -471,7 +470,7 @@ _.Zones =
 				n(173086, {	-- Valis the Cruel
 				--	["questID"] = ,
 					["isDaily"] = true,
-					["coord"] = { 40.8, 59.8, 1648 },
+					["coord"] = { 40.8, 59.8, 1543 },
 					["g"] = {
 						crit(15, {	-- Valis the Cruel
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -519,7 +518,7 @@ _.Zones =
 				n(172862, {	-- Yero the Skittish
 				--	["questID"] = ,
 					["isDaily"] = true,
-				--	["coord"] = { , , 1648 },
+				--	["coord"] = { , , 1543 },
 					["g"] = {
 						crit(20, {	-- Yero the Skittish
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead

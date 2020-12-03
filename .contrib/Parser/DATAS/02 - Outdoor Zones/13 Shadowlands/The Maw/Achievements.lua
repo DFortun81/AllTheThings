@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(1550, {	-- Shadowlands
-		m(1648, {	-- The Maw
+		m(1543, {	-- The Maw
 			n(ACHIEVEMENTS, {
 				ach(14744, {	-- Better to Be Lucky Than Dead
 					ach(14743),	-- Deadly Serious
@@ -160,6 +160,9 @@ _.Zones =
 						["crs"] = { 168693 },	-- Cyrixia <The Willbreaker>
 						-- ["coords"] = { },
 					}),
+				}),
+				ach(14334, {	-- Into the Maw
+					["sourceQuests"] = { 59770 },	-- Stand as One
 				}),
 				ach(14660, {	-- It's About Sending a Message
 					ach(14659),	-- Handling His Henchmen
