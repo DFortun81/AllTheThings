@@ -142,6 +142,12 @@ _.Zones =
 						i(184753),	-- Tree-Scaler's Britches
 					},
 				}),
+				n(172634, {	-- Brightgleam
+					["coord"] = { 33.2, 51.6, 1565 },
+					["g"] = {
+						i(180782),	-- Technique: Fae Revel Masque
+					},
+				}),
 				n(175415, {	-- Harkoth <Heroic Nathrian Weaponsmith>
 					--["coord"] = { 55.0, 51.4, 1699 },
 					["g"] = bubbleDown({["modID"] = 5}, {

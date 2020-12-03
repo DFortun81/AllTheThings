@@ -32,8 +32,9 @@ _.Zones =
 					i(181412),	-- Gormhusk Hood
 					i(181416),	-- Gormhusk Kilt
 					i(179549),	-- Nightwillow Cudgel
+					i(181418),	-- Runetender Shoulderguards
 					i(175728),	-- Soulsifter Root
-					i(181205),	-- Soulstalker Epaulets (saw it on mission table)
+					i(181205),	-- Soulstalker Epaulets (seen on mission table)
 					i(179594),	-- Witherscorn Guise
 				},
 			}),

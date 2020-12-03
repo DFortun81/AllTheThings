@@ -473,16 +473,16 @@ _.Zones =
 						["provider"] = { "n", 174833 },	-- Shandris Feathermoon
 						["coord"] = { 44.3, 41.1, 1543 },
 					}),
-					q(60530, {	-- The Sea of Souls
-						["sourceQuests"] = { 60508 },	-- On the Trail
-						["provider"] = { "n", 168929 },	-- Shandris Feathermoon
-						["coord"] = { 30.1, 36.4, 1543 },
-					}),
 					q(59189, {	-- The Recovery of Tyrande Whisperwind
 						["sourceQuests"] = { 60530 },	-- The Sea of Souls
 						["provider"] = { "n", 174834 },	-- Shandris Feathermoon
 						["coord"] = { 46.8, 41.7, 1543 },
 						["maps"] = { 1720 },	-- Torghast Scenario
+					}),
+					q(60530, {	-- The Sea of Souls
+						["sourceQuests"] = { 60508 },	-- On the Trail
+						["provider"] = { "n", 168929 },	-- Shandris Feathermoon
+						["coord"] = { 30.1, 36.4, 1543 },
 					}),
 					q(59242, {	-- Their New Home
 						["sourceQuests"] = { 59189 },	-- The Recovery of Tyrande Whisperwind
