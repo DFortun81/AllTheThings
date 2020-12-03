@@ -59,6 +59,7 @@ _.Zones =
 					1789,	-- Torghast
 					1791,	-- Torghast
 					1794,	-- Torghast
+					1800,	-- Mort'regar / Level 3 / Floor 3
 					1806,	-- TG96_Floor
 					1807,	-- Torghast
 					1811,	-- Torghast
