@@ -98,6 +98,10 @@ profession(BLACKSMITHING, {
 				{	-- Weapons and Shields
 					["categoryID"] = 393--[[Weapons and Shields]],
 					["g"] = {
+						{	-- Peerless Draenic Steel Bulwark
+							["recipeID"] = 153668--[[Peerless Draenic Steel Bulwark]],
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
+						},
 						{	-- Steelforged Aegis
 							["recipeID"] = 178245--[[Steelforged Aegis]]
 						},

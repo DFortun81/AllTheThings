@@ -719,10 +719,6 @@ profession(BLACKSMITHING, {
 							["recipeID"] = 153655--[[Hardened Draenic Steel Bulwark]],
 							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
-						{	-- Peerless Draenic Steel Bulwark
-							["recipeID"] = 153668--[[Peerless Draenic Steel Bulwark]],
-							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
-						},
 						{	-- Draenic Steel Bulwark
 							["recipeID"] = 153631--[[Draenic Steel Bulwark]],
 							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
