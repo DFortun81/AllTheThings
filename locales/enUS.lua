@@ -4533,5 +4533,6 @@ app.L = {
 
 	["CUSTOM_COLLECTS_REASONS"] = {
 		["NPE"] = { "New Player Experience", "Only a New Character can Collect this" },
+		["SL_SKIP"] = { "Shadowlands Skip", "Only a Character who chose to skip the Shadowlands Storyline can Collect this" },
 	};
 };

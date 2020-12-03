@@ -16185,6 +16185,21 @@ app.events.VARIABLES_LOADED = function()
 			end
 			return cc;
 		end);
+		-- Shadowlands Skip
+		app.SetCustomCollectibility("SL_SKIP", function(cc)
+			-- character is not checked
+			if cc == nil then
+				-- print("first check of SL_SKIP");
+				-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
+				cc = IsQuestFlaggedCompleted(62713);
+			elseif not cc then
+				-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
+				cc = IsQuestFlaggedCompleted(62713);
+			end
+			-- no apparent way to revert this choice, so no logic to revert the CC value
+			-- print("isSkip",cc);
+			return cc;
+		end);
 
 		-- finally can say the app is ready
 		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...

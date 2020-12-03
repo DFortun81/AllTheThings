@@ -973,7 +973,7 @@ _.Zones =
 				
 				-- Bonus Objectives
 				q(62737, {	-- Aspirant For a Day (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
@@ -983,11 +983,11 @@ _.Zones =
 				q(59015, {	-- Hostile Recollection
 				}),
 				q(62735, {	-- Hostile Recollection (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62732, {	-- Locus Focus (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
@@ -995,7 +995,7 @@ _.Zones =
 					},
 				}),
 				q(62736, {	-- Maldraxxi Eviction Notice (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items

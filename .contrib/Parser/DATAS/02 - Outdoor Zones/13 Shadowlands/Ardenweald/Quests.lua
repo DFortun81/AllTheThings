@@ -804,7 +804,7 @@ _.Zones =
 				
 				-- Bonus Objectives
 				q(62775, {	-- The Waning Grove (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					-- ["icon"] = 1001982,	-- Bonus Objective... need a different icon imo, or new tag for 'on your map, static quests'
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),

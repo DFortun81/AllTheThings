@@ -358,62 +358,77 @@ _.Zones =
 
 				-- Skip Quests
 				q(62801, {	-- The Call of Fate
+					-- TODO: how does this even get completed?
+					-- ["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 					["sourceQuests"] = { 59770 },	-- Stand as One
 					["isBreadcrumb"] = true,
 				}),
 				q(62704, {	-- The Threads of Fate
+					-- Completing this Quest is what actually flags the character as a skip character (62713) if they chose that option
+					-- TODO: does anything weird happen when choosing the Story option?
+					-- Only available to 'alts' i.e. another character has completed (??)
+					["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 					["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
 					["coord"] = { 19.6, 50.2, 1670 },
 					["sourceQuests"] = { 59770 },	-- Stand as One
 				}),
-				q(62716, {	-- Re-Introductionse
+				q(62716, {	-- Re-Introductions
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
 					["coord"] = { 19.6, 50.2, 1670 },
 					["sourceQuests"] = { 62704 },	-- The Threads of Fate
 				}),
 				q(62000, {	-- Choosing Your Purpose
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62716 },	-- Re-Introductionse
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 				}),
 				q(62159, {	-- Aiding the Shadowlands
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["sourceQuests"] = { 62000 },	-- Choosing Your Purpose
 				}),
 				q(63208, {	-- The Next Step
 				--	TODO: not sure where to put this
-				--	After completing your first zone in Threads of Fate mode
+				--	After completing your first zone in Skip mode
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 69.9, 1670 },
 				}),
 				q(63209, {	-- Furthering the Purpose
 				--	TODO: not sure where to put this
-				--	After completing your second zone in Threads of Fate mode
+				--	After completing your second zone in Skip mode
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 69.9, 1670 },
 				}),
 
 				-- Zone Select Breadcrumbs
 				q(62277, {	-- Ardenweald
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62275, {	-- Bastion
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62278, {	-- Maldraxxus
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62279, {	-- Revendreth
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["isBreadcrumb"] = true,
@@ -424,6 +439,7 @@ _.Zones =
 				-- Ardenweald
 				-- Bastion
 				q(62707, {	-- The Elysian Fields
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["isBreadcrumb"] = true,
@@ -431,6 +447,7 @@ _.Zones =
 				}),
 				-- Maldraxxus
 				q(63035, {	-- A Fresh Blade
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["isBreadcrumb"] = true,
@@ -441,6 +458,7 @@ _.Zones =
 				-- Zone Meta Quests (keep in Bastion for visibility to players who may skip storyline I suppose)
 				-- Ardenweald
 				q(62763, {	-- Support the Court
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["description"] = "Auto-accepted if entering the zone prior to completion of its breadcrumbs",
 					["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
 					["coord"] = { 49.2, 52.2, 1565 },
@@ -455,6 +473,7 @@ _.Zones =
 				}),
 				-- Bastion
 				q(62723, {	-- Bolstering Bastion
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["description"] = "Auto-accepted if entering the zone prior to completion of its breadcrumbs",
 					["provider"] = { "n", 163427 },	-- Kalisthene
 					["coord"] = { 51.1, 43.7, 1533 },
@@ -468,6 +487,7 @@ _.Zones =
 				}),
 				-- Maldraxxus
 				q(62748, {	-- Rallying Maldraxxus
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["description"] = "Auto-accepted if entering the zone prior to completion of its breadcrumbs",
 					["provider"] = { "n", 175008 },	-- Secutor Mevix
 					["coord"] = { 52.8, 68.2, 1536 },
@@ -484,6 +504,7 @@ _.Zones =
 				}),
 				-- Revendreth
 				q(62778, {	-- Reinforcing Revendreth
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["description"] = "Auto-accepted if entering the zone prior to completion of its breadcrumbs",
 					["providers"] = {
 						{ "n", 158653 },	-- Prince Renathal [in Sinfall, for Venthyr]
@@ -502,24 +523,28 @@ _.Zones =
 				-- Oribos Return Quests
 				-- Ardenweald
 				q(62776, {	-- Return to Oribos
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
 					["coord"] = { 49.2, 52.2, 1565 },
 					["sourceQuests"] = { 62763 },	-- Support the Court
 				}),
 				-- Bastion
 				q(62729, {	-- Return to Oribos
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 159478 },	-- Kalisthene
 					["coord"] = { 51.1, 43.7, 1533 },
 					["sourceQuests"] = { 62723 },	-- Bolstering Bastion
 				}),
 				-- Maldraxxus
 				q(62761, {	-- Return to Oribos
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["provider"] = { "n", 175008 },	-- Secutor Mevix
 					["coord"] = { 52.8, 68.2, 1536 },
 					["sourceQuests"] = { 62748 },	-- Rallying Maldraxxus
 				}),
 				-- Revendreth
 				q(62779, {	-- Return to Oribos
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["providers"] = {
 						{ "n", 158653 },	-- Prince Renathal [in Sinfall, for Venthyr]
 						{ "n", 175056 },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
@@ -536,11 +561,11 @@ _.Zones =
 				-- Bastion
 				-- Maldraxxus
 				q(63212, {	-- Report to Mevix
+					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.8, 70.0, 1670 },
 					["description"] = "",
 					["isBreadcrumb"] = true,
 					["lvl"] = { 60 },
-					["provider"] = { "n", 159478 },	-- Tal-Inara
 				}),
 				-- Revendreth
 

@@ -779,7 +779,7 @@ _.Zones =
 					["sourceQuests"] = { 59021 },	-- Herald Their Demise
 				}),
 				q(62781, {	-- Ash You Like It (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
@@ -787,7 +787,7 @@ _.Zones =
 					},
 				}),
 				q(62784, {	-- Charlatans (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
@@ -797,7 +797,7 @@ _.Zones =
 				q(59211, {	-- Forgotten Village
 				}),
 				q(62780, {	-- Parasites of Reality (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
@@ -805,7 +805,7 @@ _.Zones =
 					},
 				}),
 				q(62783, {	-- Stalking Fear (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
@@ -813,7 +813,7 @@ _.Zones =
 					},
 				}),
 				q(62782, {	-- The Banewood (pre-60)
-					["description"] = "Offered to players who choose to skip the Shadowlands Storyline",
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
