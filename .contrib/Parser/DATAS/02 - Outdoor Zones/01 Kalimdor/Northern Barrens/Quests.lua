@@ -168,6 +168,7 @@ _.Zones =
 					},
 				}),
 				q(14073, {	-- Deathgate's Reinforcements
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 3429 },	-- Thork
 					["coord"] = { 48.7, 59.5, 10 },
 					["races"] = HORDE_ONLY,

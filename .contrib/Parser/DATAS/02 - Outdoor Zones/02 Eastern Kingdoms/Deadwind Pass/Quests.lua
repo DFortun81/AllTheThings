@@ -77,13 +77,6 @@ _.Zones =
 					["coord"] = { 46.9, 75.3, 42 },
 					["sourceQuest"] = 44686,	-- Thought Collection
 				}),
-				q(40604, {	-- Disturbing the Past
-					["provider"] = { "n", 100729 },	-- Revil Kost
-					["lvl"] = 98,
-					["coord"] = { 52.3, 34.5, 42 },
-					["classes"] = { WARLOCK },
-					["sourceQuest"] = 40588,	-- Following the Curse
-				}),
 				q(40932, {	-- Disturbing the Past
 					["provider"] = { "n", 100729 },	-- Revil Kost
 					["coord"] = { 52.3, 34.5, 42 },
@@ -95,12 +88,6 @@ _.Zones =
 					["lvl"] = 110,
 					["coord"] = { 47.0, 75.2, 42 },
 				}),
---[[
-				q(40588, {	-- Following the Curse
-					["provider"] = { "n", 100323 },	--
-					["classes"] = { WARLOCK },
-				}),
-				]]--
 				q(44734, {	-- Fragments of the Past
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar
 					["lvl"] = 110,
@@ -237,30 +224,12 @@ _.Zones =
 					["provider"] = { "n", 100812 },	--
 					["classes"] = { DEATHKNIGHT },
 				}),
-				q(41155, {	-- The Dark Riders
-					["provider"] = { "n", 100812 },	--
-					["classes"] = { WARLOCK },
-				}),
 --]]
-				q(40623, {	-- The Dark Riders
-					["provider"] = { "n", 100812 },	-- Revil Kost
-					["lvl"] = 98,
-					["coord"] = { 49.4, 74.8, 628 },
-					["classes"] = { WARLOCK },
-					["sourceQuest"] = 40611,	-- The Fate of Deadwind
-				}),
 --[[´
 				q(42970, {	-- The Diamond King
 					["provider"] = { "n", 113655 },	--
 				}),
 --]]
-				q(40611, {	-- The Fate of Deadwind
-					["provider"] = { "n", 100729 },	-- Revil Kost
-					["lvl"] = 98,
-					["coord"] = { 52.3, 34.4, 628 },
-					["classes"] = { WARLOCK },
-					["sourceQuest"] = 40606,	-- To Point the Way
-				}),
 --[[
 				o(254007, {	-- Executioner's Altar
 					q(44154, {	-- The Rite of the Executioner
@@ -268,13 +237,6 @@ _.Zones =
 					}),
 				}),
 				]]--
-				q(40606, {	-- To Point the Way
-					["lvl"] = 98,
-					["icon"] = "Interface\\Icons\\inv_offhand_1h_draenorcrafted_d_02a",
-					["coord"] = { 52.3, 33.9, 42 },
-					["classes"] = { WARLOCK },
-					["sourceQuest"] = 40604,	-- Disturbing the Past
-				}),
 				q(44686, {	-- Thought Collection
 					["provider"] = { "n", 114631 },	-- Archmage Karlain <Kirin Tor>
 					["lvl"] = 110,
@@ -305,26 +267,6 @@ _.Zones =
 					["lvl"] = 110,
 					["coord"] = { 46.9, 75.2, 42 },
 					["sourceQuest"] = 44764,	-- Demon in Disguise
-				}),
-				q(40712, {	-- The Power Possessed
-					["provider"] = { "n", 101282 },	-- Revil Kost
-					["lvl"] = 98,
-					["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
-					["classes"] = { WARLOCK },
-					["sourceQuests"] = {
-						40623,	-- The Dark Riders
-						41155,	-- The Dark Riders
-						42168,	-- Looking into the Darkness
-					},
-				}),
-				q(41156, {	-- The Power Possessed
-					["provider"] = { "n", 101282 },	-- Revil Kost
-					["classes"] = { WARLOCK },
-					["sourceQuests"] = {
-						40623,	-- The Dark Riders
-						41155,	-- The Dark Riders
-						42168,	-- Looking into the Darkness
-					},
 				}),
 				ql(q(30113, {	-- Victory in the Depths
 					["provider"] = { "n", 57770 },	-- Zazzo Twinklefingers

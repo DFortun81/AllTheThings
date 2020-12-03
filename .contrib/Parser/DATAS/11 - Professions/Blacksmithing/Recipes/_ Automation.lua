@@ -461,16 +461,6 @@ profession(164, {	-- Blacksmithing
 					["g"] = {
 						{
 							["name"] = "Shadowghast Armguards",
-							["hash"] = "recipeID338976",
-							["recipeID"] = 338976
-						},
-						{
-							["name"] = "Shadowghast Armguards",
-							["hash"] = "recipeID332041",
-							["recipeID"] = 332041
-						},
-						{
-							["name"] = "Shadowghast Armguards",
 							["hash"] = "recipeID307705",
 							["recipeID"] = 307705
 						},
@@ -480,14 +470,14 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 332006
 						},
 						{
-							["name"] = "Shadowghast Breastplate",
-							["hash"] = "recipeID307712",
-							["recipeID"] = 307712
+							["name"] = "Shadowghast Armguards",
+							["hash"] = "recipeID332041",
+							["recipeID"] = 332041
 						},
 						{
-							["name"] = "Shadowghast Breastplate",
-							["hash"] = "recipeID332013",
-							["recipeID"] = 332013
+							["name"] = "Shadowghast Armguards",
+							["hash"] = "recipeID338976",
+							["recipeID"] = 338976
 						},
 						{
 							["name"] = "Shadowghast Breastplate",
@@ -496,13 +486,23 @@ profession(164, {	-- Blacksmithing
 						},
 						{
 							["name"] = "Shadowghast Breastplate",
+							["hash"] = "recipeID332013",
+							["recipeID"] = 332013
+						},
+						{
+							["name"] = "Shadowghast Breastplate",
+							["hash"] = "recipeID307712",
+							["recipeID"] = 307712
+						},
+						{
+							["name"] = "Shadowghast Breastplate",
 							["hash"] = "recipeID338968",
 							["recipeID"] = 338968
 						},
 						{
 							["name"] = "Shadowghast Gauntlets",
-							["hash"] = "recipeID332011",
-							["recipeID"] = 332011
+							["hash"] = "recipeID338970",
+							["recipeID"] = 338970
 						},
 						{
 							["name"] = "Shadowghast Gauntlets",
@@ -516,8 +516,8 @@ profession(164, {	-- Blacksmithing
 						},
 						{
 							["name"] = "Shadowghast Gauntlets",
-							["hash"] = "recipeID338970",
-							["recipeID"] = 338970
+							["hash"] = "recipeID332011",
+							["recipeID"] = 332011
 						},
 						{
 							["name"] = "Shadowghast Greaves",
@@ -541,16 +541,6 @@ profession(164, {	-- Blacksmithing
 						},
 						{
 							["name"] = "Shadowghast Helm",
-							["hash"] = "recipeID332010",
-							["recipeID"] = 332010
-						},
-						{
-							["name"] = "Shadowghast Helm",
-							["hash"] = "recipeID307709",
-							["recipeID"] = 307709
-						},
-						{
-							["name"] = "Shadowghast Helm",
 							["hash"] = "recipeID338971",
 							["recipeID"] = 338971
 						},
@@ -560,9 +550,19 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 332045
 						},
 						{
+							["name"] = "Shadowghast Helm",
+							["hash"] = "recipeID307709",
+							["recipeID"] = 307709
+						},
+						{
+							["name"] = "Shadowghast Helm",
+							["hash"] = "recipeID332010",
+							["recipeID"] = 332010
+						},
+						{
 							["name"] = "Shadowghast Pauldrons",
-							["hash"] = "recipeID338974",
-							["recipeID"] = 338974
+							["hash"] = "recipeID307707",
+							["recipeID"] = 307707
 						},
 						{
 							["name"] = "Shadowghast Pauldrons",
@@ -576,18 +576,8 @@ profession(164, {	-- Blacksmithing
 						},
 						{
 							["name"] = "Shadowghast Pauldrons",
-							["hash"] = "recipeID307707",
-							["recipeID"] = 307707
-						},
-						{
-							["name"] = "Shadowghast Sabatons",
-							["hash"] = "recipeID307711",
-							["recipeID"] = 307711
-						},
-						{
-							["name"] = "Shadowghast Sabatons",
-							["hash"] = "recipeID332047",
-							["recipeID"] = 332047
+							["hash"] = "recipeID338974",
+							["recipeID"] = 338974
 						},
 						{
 							["name"] = "Shadowghast Sabatons",
@@ -596,18 +586,18 @@ profession(164, {	-- Blacksmithing
 						},
 						{
 							["name"] = "Shadowghast Sabatons",
+							["hash"] = "recipeID307711",
+							["recipeID"] = 307711
+						},
+						{
+							["name"] = "Shadowghast Sabatons",
 							["hash"] = "recipeID338969",
 							["recipeID"] = 338969
 						},
 						{
-							["name"] = "Shadowghast Waistguard",
-							["hash"] = "recipeID332007",
-							["recipeID"] = 332007
-						},
-						{
-							["name"] = "Shadowghast Waistguard",
-							["hash"] = "recipeID338975",
-							["recipeID"] = 338975
+							["name"] = "Shadowghast Sabatons",
+							["hash"] = "recipeID332047",
+							["recipeID"] = 332047
 						},
 						{
 							["name"] = "Shadowghast Waistguard",
@@ -618,6 +608,16 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Shadowghast Waistguard",
 							["hash"] = "recipeID332042",
 							["recipeID"] = 332042
+						},
+						{
+							["name"] = "Shadowghast Waistguard",
+							["hash"] = "recipeID332007",
+							["recipeID"] = 332007
+						},
+						{
+							["name"] = "Shadowghast Waistguard",
+							["hash"] = "recipeID338975",
+							["recipeID"] = 338975
 						}
 					}
 				},
@@ -2482,36 +2482,6 @@ profession(164, {	-- Blacksmithing
 					["categoryID"] = 391,
 					["hash"] = "categoryID391",
 					["g"] = {
-						{
-							["name"] = "Mighty Steelforged Essence",
-							["hash"] = "recipeID187490",
-							["recipeID"] = 187490
-						},
-						{
-							["name"] = "Mighty Truesteel Essence",
-							["hash"] = "recipeID187491",
-							["recipeID"] = 187491
-						},
-						{
-							["name"] = "Savage Steelforged Essence",
-							["hash"] = "recipeID187514",
-							["recipeID"] = 187514
-						},
-						{
-							["name"] = "Savage Truesteel Essence",
-							["hash"] = "recipeID187515",
-							["recipeID"] = 187515
-						},
-						{
-							["name"] = "Steelforged Essence",
-							["hash"] = "recipeID171710",
-							["recipeID"] = 171710
-						},
-						{
-							["name"] = "Truesteel Essence",
-							["hash"] = "recipeID171708",
-							["recipeID"] = 171708
-						},
 						{
 							["name"] = "Truesteel Grinder",
 							["hash"] = "recipeID171699",

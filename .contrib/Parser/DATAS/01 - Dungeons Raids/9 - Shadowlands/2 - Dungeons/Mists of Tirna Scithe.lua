@@ -11,12 +11,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["lvl"] = { 50 },
 		["g"] = {
 			n(QUESTS, {
-				q(62371, {	-- Tirna Scithe: A Warning Silence
-					["provider"] = { "n", 168032 },	-- Flwngyrr
-					["coord"] = { 48.3, 50.5, 1565 },
-					["lvl"] = { 60 },
-					["maps"] = { 1565 },	-- Ardenweald
-				}),
+				-- do not delete header!
 			}),
 			d(1, {	-- Normal
 				e(2400, {	-- Ingra Maloch
@@ -44,6 +39,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(178706),	-- Fogweaver Gauntlets
 						i(178707),	-- Trailspinner Pendant
 						i(178715),	-- Mistcaller Ocarina
+						i(182185, {	-- Shrieker Soul
+							["questID"] = 62436,	-- Shrieker Soul
+						}),
 					},
 				}),
 				e(2405, {	-- 	Tred'ova
@@ -89,6 +87,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178706),	-- Fogweaver Gauntlets
 							i(178707),	-- Trailspinner Pendant
 							i(178715),	-- Mistcaller Ocarina
+							i(182185, {	-- Shrieker Soul
+								["questID"] = 62436,	-- Shrieker Soul
+							}),
 						},
 					}),
 					e(2405, {	-- 	Tred'ova
@@ -147,6 +148,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178706),	-- Fogweaver Gauntlets
 							i(178707),	-- Trailspinner Pendant
 							i(178715),	-- Mistcaller Ocarina
+							i(182185, {	-- Shrieker Soul
+								["questID"] = 62436,	-- Shrieker Soul
+							}),
 						},
 					}),
 					e(2405, {	-- 	Tred'ova

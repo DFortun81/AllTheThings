@@ -166,9 +166,6 @@ namespace ATT
                                 quest[key.Key] = key.Value;
                             }
                         }
-
-                        // pre-consolidate the level information so it doesn't get merged around later
-                        LevelConsolidation(quest, 1);
                     }
                 }
             }
@@ -191,9 +188,6 @@ namespace ATT
                             {
                                 cachedQuest[key.Key] = key.Value;
                             }
-
-                            // pre-consolidate the level information so it doesn't get merged around later
-                            LevelConsolidation(cachedQuest, 1);
                         }
                     }
                 }
@@ -376,17 +370,21 @@ namespace ATT
                     altQuests.Remove(questID);
                 }
             }
+            // TODO: maybe consolidate this repeated logic if ever making items/npcs work for it...
             else if (data.TryGetValue("_quests", out object quests))
             {
                 DuplicateDataIntoGroups(data, quests, "quest");
+                data.Remove("_quests");
             }
             else if (data.TryGetValue("_items", out object items))
             {
                 DuplicateDataIntoGroups(data, items, "item");
+                data.Remove("_items");
             }
             else if (data.TryGetValue("_npcs", out object npcs))
             {
                 DuplicateDataIntoGroups(data, npcs, "npc");
+                data.Remove("_npcs");
             }
 
             // Throw away automatic Spell ID assignments for certain filter types.
@@ -520,12 +518,36 @@ namespace ATT
                                 Trace.Write("Missing Skill ID in Conversion Table: ");
                                 Trace.WriteLine(requiredSkill);
                                 Trace.WriteLine(ToJSON(data));
-                                Console.ReadLine();
+                                //Console.ReadLine();
                                 break;
                             }
                     }
                 }
+
+                // if this data has a recipeID, cache the information
+                if (data.TryGetValue("recipeID", out int recipeID))
+                {
+                    Items.TryGetName(data, out string recipeName);
+                    Objects.AddRecipe(newRequiredSkill ?? requiredSkill, recipeName, recipeID);
+                }
+                // otherwise see if we can associate a recipeID
+                else
+                {
+                    // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
+                    // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
+                    TryFindRecipeID(data);
+                }
             }
+            //else
+            //{
+            //    // if this data has a recipeID, cache the information
+            //    if (data.TryGetValue("recipeID", out int recipeID))
+            //    {
+            //        Items.TryGetName(data, out string recipeName);
+            //        //Trace.WriteLine("Encountered RecipeID without 'requireSkill' tag. " + recipeID.ToString() + " [" + recipeName + "]");
+            //        Objects.AddRecipe(null, recipeName, recipeID);
+            //    }
+            //}
 
             if (data.TryGetValue("name", out string name))
             {
@@ -552,6 +574,24 @@ namespace ATT
             }
 
             return true;
+        }
+
+        /// <summary>
+        /// Attempts to find the recipe ID in the already parsed data which corresponds to this item.... by name
+        /// </summary>
+        /// <param name="data"></param>
+        private static void TryFindRecipeID(Dictionary<string, object> data)
+        {
+            // all recipes require a skill
+            if (!data.TryGetValue("requireSkill", out object requiredSkill))
+                return;
+
+            // get the name of the recipe item (i.e. Technique: blah blah)
+            Items.TryGetName(data, out string name);
+
+            // see if a matching recipe name exists for this skill, and use that recipeID
+            if (Objects.FindRecipeByName(requiredSkill, name, out int recipeID))
+                data["recipeID"] = recipeID;
         }
 
         /// <summary>
@@ -596,6 +636,24 @@ namespace ATT
             }
 
             return minLevel;
+        }
+
+        /// <summary>
+        /// Returns the minimum level requirement for this data
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        private static int? GetDataMinLevel(Dictionary<string, object> data)
+        {
+            // If the level of this object is less than the current minimum level, we can safely remove it.
+            if (data.TryGetValue("lvl", out object lvlRef))
+            {
+                if (lvlRef is List<object> lvls && lvls.Count > 0)
+                    return Convert.ToInt32(lvls[0]);
+                else if (lvlRef is int)
+                    return Convert.ToInt32(lvlRef);
+            }
+            return null;
         }
 
         private static void DuplicateDataIntoGroups(Dictionary<string, object> data, object groups, string type)
@@ -675,9 +733,21 @@ namespace ATT
                             //    break;
                     }
                 }
-                catch (Exception ex)
+                catch (FormatException ex)
+                {
+                    Trace.WriteLine("Bad format " + type + "ID used in _" + type + "s property:" + dupeGroupID?.ToString());
+                    Trace.WriteLine(ex.Message);
+                    Trace.WriteLine(ex.StackTrace);
+                }
+                catch (InvalidCastException ex)
                 {
                     Trace.WriteLine("Non-integer " + type + "ID used in _" + type + "s property:" + dupeGroupID?.ToString());
+                    Trace.WriteLine(ex.Message);
+                    Trace.WriteLine(ex.StackTrace);
+                }
+                catch (Exception ex)
+                {
+                    Trace.WriteLine("Unexpected Exception Occurred while processing " + type + "ID used in _" + type + "s property:" + dupeGroupID?.ToString());
                     Trace.WriteLine(ex.Message);
                     Trace.WriteLine(ex.StackTrace);
                 }
@@ -861,7 +931,9 @@ namespace ATT
                 {
                     if (moreThanOne)
                     {
-                        if (item.TryGetValue("lvl", out object lvlRef) && lvlRef is int level)
+                        // sort by level into tier
+                        var level = GetDataMinLevel(item);
+                        if (level.HasValue)
                         {
                             if (level <= 25) tier = tierLists[1]; // Classic
                             else if (level <= 27) tier = tierLists[2];   // Burning Crusade
@@ -871,8 +943,9 @@ namespace ATT
                             else if (level <= 40) tier = tierLists[6];   // Warlords of Draenor
                             else if (level <= 45) tier = tierLists[7];   // Legion
                             else if (level <= 50) tier = tierLists[8];   // Battle For Azeroth
-                            else tier = tierLists[8];   // Shadowlands
+                            else tier = tierLists[9];   // Shadowlands
                         }
+                        // else try to sort by itemID
                         else if (item.TryGetValue("itemID", out object itemIDRef))
                         {
                             var itemID = Convert.ToInt32(itemIDRef);
@@ -886,6 +959,7 @@ namespace ATT
                             else if (itemID < 174366) tier = tierLists[8];   // Battle For Azeroth
                             else tier = tierLists[9];   // Shadowlands
                         }
+                        // default tier assignment
                         else tier = tierLists[1];
                     }
 
@@ -1095,7 +1169,10 @@ namespace ATT
                         Objects.Merge(entry, questRef);
                         // dont bother adding quests which literally have nothing useful in them
                         if (entry.Count > 1)
+                        {
+                            LevelConsolidation(entry, 1);
                             unsortedQuests.Add(entry);
+                        }
                     }
                 }
                 if (unsortedQuests.Count > 0)

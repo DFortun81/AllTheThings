@@ -54,6 +54,7 @@ profession(FISHING, {
 				["races"] = HORDE_ONLY,
 			}),
 			i(25978),	-- Seth's Graphite Fishing Pole
+			i(180136),	-- The Brokers Angle'r
 			i(120163),	-- Thruk's Fishing Rod
 		},
 	}),

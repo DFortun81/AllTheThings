@@ -19,54 +19,60 @@ _.Zones =
 						q(30400, {	-- A Blue Feather for Chee Chee
 							["repeatable"] = true,
 							["provider"] = { "n", 58709 },	-- Chee Chee
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30382, {	-- A Blue Feather for Ella
 							["repeatable"] = true,
 							["provider"] = { "n", 58647 },	-- Ella
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30419, {	-- A Blue Feather for Farmer Fung
 							["repeatable"] = true,
 							["provider"] = { "n", 57298 },	-- Farmer Fung
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30425, {	-- A Blue Feather for Fish
 							["repeatable"] = true,
 							["provider"] = { "n", 58705 },	-- Fish Fellreed
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30388, {	-- A Blue Feather for Gina
 							["repeatable"] = true,
 							["provider"] = { "n", 58706 },	-- Gina Mudclaw
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30412, {	-- A Blue Feather for Haohan
 							["repeatable"] = true,
 							["provider"] = { "n", 57402 },	-- Haohan Mudclaw
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30437, {	-- A Blue Feather for Jogu
 							["repeatable"] = true,
 							["provider"] = { "n", 58710 },	-- Jogu the Drunk
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30394, {	-- A Blue Feather for Old Hillpaw
 							["repeatable"] = true,
 							["provider"] = { "n", 58707 },	-- Old Hillpaw
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30406, {	-- A Blue Feather for Sho
 							["repeatable"] = true,
 							["provider"] = { "n", 58708 },	-- Sho
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30431, {	-- A Blue Feather for Tina
 							["repeatable"] = true,
 							["provider"] = { "n", 58761 },	-- Tina Mudclaw
-							["cost"] = { "i", 79265, 1 },	-- Blue Feather
+							["cost"] = { { "i", 79265, 1 } },	-- Blue Feather
 						}),
 						q(30474, {	-- A Gift For Ella
+							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
+							["provider"] = { "n", 64464 },	-- Andi
+							["isDaily"] = true,
+							["coord"] = { 52.7, 50.4, 376 },
+						}),
+						q(30477, {	-- A Gift For Haohan
 							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
 							["provider"] = { "n", 64464 },	-- Andi
 							["isDaily"] = true,
@@ -75,6 +81,27 @@ _.Zones =
 						q(30252, {	-- A Helping Hand
 							["provider"] = { "n", 58721 },	-- Farmer Yoon
 							["coord"] = { 52.0, 48.1, 376 },
+						}),
+						q(32189, {	-- A Shabby New Face
+							["description"] = "Available only on days where Barnaby Fletcher is in Halfhill.",
+							["provider"] = { "n", 58718 },	-- Merchant Greenfield
+							["coord"] = { 52.8, 52.0, 376 },
+						}),
+						q(30517, {	-- Farmer Fung's Vote I: Yak Attack
+							["minReputation"] = { 1272, REVERED+4500 },
+							["sourceQuests"] = { 31946 },	-- Mung-Mung's Vote III: The Great Carrot Caper
+							["provider"] = { "n", 58646 },	-- Farmer Yoon
+							["coord"] = { 52.2, 48.8, 376 },
+						}),
+						q(30518, {	-- Farmer Fung's Vote II: On the Loose
+							["sourceQuests"] = { 30517 },	-- Farmer Fung's Vote I: Yak Attack
+							["provider"] = { "n", 57298 },	-- Farmer Fung
+							["coord"] = { 48.3, 33.9, 376 },
+						}),
+						q(31947, {	-- Farmer Fung's Vote III: Crazy For Cabbage
+							["sourceQuests"] = { 30518 },	-- Farmer Fung's Vote II: On the Loose
+							["provider"] = { "n", 57298 },	-- Farmer Fung
+							["coord"] = { 48.3, 33.9, 376 },
 						}),
 						q(30516, {	-- Growing the Farm I: A Little Problem
 							["minReputation"] = { 1272, HONORED },
@@ -143,7 +170,34 @@ _.Zones =
 							["provider"] = { "n", 57401 },	-- Mung-Mung
 							["coord"] = { 44.2, 34.2, 376 },
 						}),
+						q(30324, {	-- Not in Chee-Chee's Backyard
+							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
+							["provider"] = { "n", 58709 },	-- Chee Chee
+							["isDaily"] = true,
+							["coord"] = { 53.0, 52.0, 376 },
+						}),
+						q(32198, {	-- One Magical, Flying Kingdom's Trash...
+							["sourceQuests"] = { 32189 },	-- A Shabby New Face
+							["description"] = "Available only on days where Barnaby Fletcher is in Halfhill.",
+							["provider"] = { "n", 67565 },	-- Barnaby Fletcher
+							["coord"] = { 53.2, 51.4, 376 },
+						}),
+						q(30319, {	-- Pest Problems
+							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
+							["providers"] = {
+								{ "n", 57402 },	-- Haohan Mudclaw
+								{ "n", 59594 },	-- Haohan Mudclaw
+							},
+							["isDaily"] = true,
+							["coord"] = { 53.0, 51.7, 376 },
+						}),
 						q(30335, {	-- Stalling the Ravage
+							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
+							["provider"] = { "n", 58646 },	-- Farmer Yoon
+							["isDaily"] = true,
+							["coord"] = { 52.2, 48.8, 376 },
+						}),
+						q(30334, {	-- Stealing is Bad... Re-Stealing is OK
 							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
 							["provider"] = { "n", 58646 },	-- Farmer Yoon
 							["isDaily"] = true,
@@ -157,7 +211,7 @@ _.Zones =
 						}),
 						q(31675, {	-- The White Turnip Treatment
 						--	i did 30336, turned it in, turned in Gina's Vote, then this daily popped up.  not sure if the daily itself is behind Gina's Vote or if doing Gina's Vote unlocks the ability to do more than 1 daily
-							["sourceQuests"] = { 31945 },	-- Learn and Grow VI: Gina's Vote
+							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
 							["provider"] = { "n", 58646 },	-- Farmer Yoon
 							["isDaily"] = true,
 							["coord"] = { 52.2, 48.8, 376 },
@@ -179,6 +233,12 @@ _.Zones =
 							["provider"] = { "n", 58708 },	-- Sho
 							["isDaily"] = true,
 							["coord"] = { 53.1, 52.0, 376 },
+						}),
+						q(31671, {	-- Why Not Scallions?
+							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
+							["provider"] = { "n", 58646 },	-- Farmer Yoon
+							["isDaily"] = true,
+							["coord"] = { 52.2, 48.8, 376 },
 						}),
 						q(30327, {	-- You Have to Burn the Ropes
 							["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market

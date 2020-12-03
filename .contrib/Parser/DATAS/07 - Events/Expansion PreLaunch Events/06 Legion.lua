@@ -154,7 +154,7 @@ _.WorldEvents =
 						}),
 					}),
 					n(-220, {	-- Class Changes
-						["groups"] = "A number of class specializations were modified just before Legion launch and Blizzard mailed items to help players adjust to these changes. The item level and quality of the item was determined by your character's progress in HFC.",
+						["description"] = "A number of class specializations were modified just before Legion launch and Blizzard mailed items to help players adjust to these changes. The item level and quality of the item was determined by your character's progress in HFC.",
 						["groups"] = {
 							{
 								["itemID"] = 150611,	-- Guardian's Oaken Spear

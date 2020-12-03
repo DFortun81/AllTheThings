@@ -41,8 +41,10 @@ _.Zones =
 				}),
 				i(2226, {	-- Ogremage Staff
 					["u"] = REMOVED_FROM_GAME,
-					["crs"] = { 1251 },	-- Splinter Fist Firemonger
-					["crs"] = { 891 },	-- Splinter Fist Fire Weaver
+					["crs"] = { 
+						1251,	-- Splinter Fist Firemonger
+						891,	-- Splinter Fist Fire Weaver
+					},
 				}),
 				i(5773, {	-- Pattern: Robes of Arcana
 					["u"] = REMOVED_FROM_GAME,

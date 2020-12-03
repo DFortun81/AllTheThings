@@ -62,33 +62,36 @@ profession(ENCHANTING, {
 						},
 					}),
 					i(119293, {		-- Secret of Draenor Enchanting
-						i(118394),	-- Formula: Enchant Cloak - Breath of Critical Strike
-						i(118429),	-- Formula: Enchant Cloak - Breath of Haste
-						i(118430),	-- Formula: Enchant Cloak - Breath of Mastery
-						i(118432),	-- Formula: Enchant Cloak - Breath of Versatility
-						i(118433),	-- Formula: Enchant Cloak - Gift of Critical Strike
-						i(118434),	-- Formula: Enchant Cloak - Gift of Haste
-						i(118435),	-- Formula: Enchant Cloak - Gift of Mastery
-						i(118437),	-- Formula: Enchant Cloak - Gift of Versatility
-						i(118438),	-- Formula: Enchant Neck - Breath of Critical Strike
-						i(118439),	-- Formula: Enchant Neck - Breath of Haste
-						i(118440),	-- Formula: Enchant Neck - Breath of Mastery
-						i(118442),	-- Formula: Enchant Neck - Breath of Versatility
-						i(118443),	-- Formula: Enchant Neck - Gift of Critical Strike
-						i(118444),	-- Formula: Enchant Neck - Gift of Haste
-						i(118445),	-- Formula: Enchant Neck - Gift of Mastery
-						i(118447),	-- Formula: Enchant Neck - Gift of Versatility
-						i(118453),	-- Formula: Enchant Ring - Gift of Critical Strike
-						i(118454),	-- Formula: Enchant Ring - Gift of Haste
-						i(118455),	-- Formula: Enchant Ring - Gift of Mastery
-						i(118457),	-- Formula: Enchant Ring - Gift of Versatility
-						i(118463),	-- Formula: Enchant Weapon - Mark of Blackrock
-						i(118467),	-- Formula: Enchant Weapon - Mark of Bleeding Hollow
-						i(118461),	-- Formula: Enchant Weapon - Mark of the Frostwolf
-						i(118458),	-- Formula: Enchant Weapon - Mark of the Thunderlord
-						i(118462),	-- Formula: Enchant Weapon - Mark of Shadowmoon
-						i(118460),	-- Formula: Enchant Weapon - Mark of Warsong
-						i(138882),	-- Formula: Tome of Illusions: Draenor
+						["collectible"] = false,
+						["g"] = {
+							i(118394),	-- Formula: Enchant Cloak - Breath of Critical Strike
+							i(118429),	-- Formula: Enchant Cloak - Breath of Haste
+							i(118430),	-- Formula: Enchant Cloak - Breath of Mastery
+							i(118432),	-- Formula: Enchant Cloak - Breath of Versatility
+							i(118433),	-- Formula: Enchant Cloak - Gift of Critical Strike
+							i(118434),	-- Formula: Enchant Cloak - Gift of Haste
+							i(118435),	-- Formula: Enchant Cloak - Gift of Mastery
+							i(118437),	-- Formula: Enchant Cloak - Gift of Versatility
+							i(118438),	-- Formula: Enchant Neck - Breath of Critical Strike
+							i(118439),	-- Formula: Enchant Neck - Breath of Haste
+							i(118440),	-- Formula: Enchant Neck - Breath of Mastery
+							i(118442),	-- Formula: Enchant Neck - Breath of Versatility
+							i(118443),	-- Formula: Enchant Neck - Gift of Critical Strike
+							i(118444),	-- Formula: Enchant Neck - Gift of Haste
+							i(118445),	-- Formula: Enchant Neck - Gift of Mastery
+							i(118447),	-- Formula: Enchant Neck - Gift of Versatility
+							i(118453),	-- Formula: Enchant Ring - Gift of Critical Strike
+							i(118454),	-- Formula: Enchant Ring - Gift of Haste
+							i(118455),	-- Formula: Enchant Ring - Gift of Mastery
+							i(118457),	-- Formula: Enchant Ring - Gift of Versatility
+							i(118463),	-- Formula: Enchant Weapon - Mark of Blackrock
+							i(118467),	-- Formula: Enchant Weapon - Mark of Bleeding Hollow
+							i(118461),	-- Formula: Enchant Weapon - Mark of the Frostwolf
+							i(118458),	-- Formula: Enchant Weapon - Mark of the Thunderlord
+							i(118462),	-- Formula: Enchant Weapon - Mark of Shadowmoon
+							i(118460),	-- Formula: Enchant Weapon - Mark of Warsong
+							i(138882),	-- Formula: Tome of Illusions: Draenor
+						},
 					}),
 				},
 			}),
@@ -146,33 +149,36 @@ profession(ENCHANTING, {
 						},
 					}),
 					i(119293, {		-- Secret of Draenor Enchanting
-						i(118394),	-- Formula: Enchant Cloak - Breath of Critical Strike
-						i(118429),	-- Formula: Enchant Cloak - Breath of Haste
-						i(118430),	-- Formula: Enchant Cloak - Breath of Mastery
-						i(118432),	-- Formula: Enchant Cloak - Breath of Versatility
-						i(118433),	-- Formula: Enchant Cloak - Gift of Critical Strike
-						i(118434),	-- Formula: Enchant Cloak - Gift of Haste
-						i(118435),	-- Formula: Enchant Cloak - Gift of Mastery
-						i(118437),	-- Formula: Enchant Cloak - Gift of Versatility
-						i(118438),	-- Formula: Enchant Neck - Breath of Critical Strike
-						i(118439),	-- Formula: Enchant Neck - Breath of Haste
-						i(118440),	-- Formula: Enchant Neck - Breath of Mastery
-						i(118442),	-- Formula: Enchant Neck - Breath of Versatility
-						i(118443),	-- Formula: Enchant Neck - Gift of Critical Strike
-						i(118444),	-- Formula: Enchant Neck - Gift of Haste
-						i(118445),	-- Formula: Enchant Neck - Gift of Mastery
-						i(118447),	-- Formula: Enchant Neck - Gift of Versatility
-						i(118453),	-- Formula: Enchant Ring - Gift of Critical Strike
-						i(118454),	-- Formula: Enchant Ring - Gift of Haste
-						i(118455),	-- Formula: Enchant Ring - Gift of Mastery
-						i(118457),	-- Formula: Enchant Ring - Gift of Versatility
-						i(118463),	-- Formula: Enchant Weapon - Mark of Blackrock
-						i(118467),	-- Formula: Enchant Weapon - Mark of Bleeding Hollow
-						i(118461),	-- Formula: Enchant Weapon - Mark of the Frostwolf
-						i(118458),	-- Formula: Enchant Weapon - Mark of the Thunderlord
-						i(118462),	-- Formula: Enchant Weapon - Mark of Shadowmoon
-						i(118460),	-- Formula: Enchant Weapon - Mark of Warsong
-						i(138882),	-- Formula: Tome of Illusions: Draenor
+						["collectible"] = false,
+						["g"] = {
+							i(118394),	-- Formula: Enchant Cloak - Breath of Critical Strike
+							i(118429),	-- Formula: Enchant Cloak - Breath of Haste
+							i(118430),	-- Formula: Enchant Cloak - Breath of Mastery
+							i(118432),	-- Formula: Enchant Cloak - Breath of Versatility
+							i(118433),	-- Formula: Enchant Cloak - Gift of Critical Strike
+							i(118434),	-- Formula: Enchant Cloak - Gift of Haste
+							i(118435),	-- Formula: Enchant Cloak - Gift of Mastery
+							i(118437),	-- Formula: Enchant Cloak - Gift of Versatility
+							i(118438),	-- Formula: Enchant Neck - Breath of Critical Strike
+							i(118439),	-- Formula: Enchant Neck - Breath of Haste
+							i(118440),	-- Formula: Enchant Neck - Breath of Mastery
+							i(118442),	-- Formula: Enchant Neck - Breath of Versatility
+							i(118443),	-- Formula: Enchant Neck - Gift of Critical Strike
+							i(118444),	-- Formula: Enchant Neck - Gift of Haste
+							i(118445),	-- Formula: Enchant Neck - Gift of Mastery
+							i(118447),	-- Formula: Enchant Neck - Gift of Versatility
+							i(118453),	-- Formula: Enchant Ring - Gift of Critical Strike
+							i(118454),	-- Formula: Enchant Ring - Gift of Haste
+							i(118455),	-- Formula: Enchant Ring - Gift of Mastery
+							i(118457),	-- Formula: Enchant Ring - Gift of Versatility
+							i(118463),	-- Formula: Enchant Weapon - Mark of Blackrock
+							i(118467),	-- Formula: Enchant Weapon - Mark of Bleeding Hollow
+							i(118461),	-- Formula: Enchant Weapon - Mark of the Frostwolf
+							i(118458),	-- Formula: Enchant Weapon - Mark of the Thunderlord
+							i(118462),	-- Formula: Enchant Weapon - Mark of Shadowmoon
+							i(118460),	-- Formula: Enchant Weapon - Mark of Warsong
+							i(138882),	-- Formula: Tome of Illusions: Draenor
+						},
 					}),
 				},
 			}),

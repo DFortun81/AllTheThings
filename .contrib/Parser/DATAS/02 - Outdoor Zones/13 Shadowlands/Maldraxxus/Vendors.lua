@@ -30,6 +30,22 @@ _.Zones =
 						}),
 					},
 				}),
+				n(166640, {	-- Au'larrynar <Enhancers>
+					["coord"] = { 53.7, 47.8, 1536 },
+					["g"] = {
+						i(180706),	-- Caustic Muck
+						i(180657),	-- Crystallized Ichor
+						i(179613),	-- Extra Sticky Spidey Webs
+						i(181623),	-- Flourescent Slime Sample
+						i(177957),	-- Necessary Enhancers
+						i(180771),	-- Potion of Unusual Strength
+						i(180659),	-- Soul Siphoning Shard
+						i(180969),	-- Spiral Deathroc Horn
+						i(180694),	-- Tome of Power
+						i(180658),	-- Witherlight Crystal
+						i(179939),	-- Wriggling Spider Sac
+					},
+				}),
 				n(172176, {	-- Su Zettai <Renown Quartermaster>
 					["coords"] = {
 						{ 50.68, 71.38, 1536},
@@ -115,6 +131,7 @@ _.Zones =
 						}),
 						i(183104, {	-- Technique: Contract: The Undying Army
 							["cost"] = 17650000, -- 1,765g
+							["recipeID"] = 311411,
 						}),
 						i(183112, {	-- Animated Radius
 							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
@@ -170,7 +187,7 @@ _.Zones =
 						i(181168, {	-- Corpulent Bonetusk
 							["cost"] = { { "i", 178061, 350 } },
 						}),
-						i(181264, {	-- Plaguelouse Hatchling
+						i(181264, {	-- Plaguelouse Larva
 							["cost"] = { { "i", 178061, 350 } },
 						}),
 						i(181315, {	-- Bloodfeaster Spiderling

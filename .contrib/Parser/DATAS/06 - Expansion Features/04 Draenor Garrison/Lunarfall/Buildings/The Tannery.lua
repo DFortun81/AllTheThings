@@ -37,6 +37,7 @@ _.ExpansionFeatures =
 										["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 									}),
 									i(116345, {	-- Recipe: Burnished Essence
+										["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 										["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
 									}),
 									i(116349, {	-- Recipe: Burnished Inscription Bag

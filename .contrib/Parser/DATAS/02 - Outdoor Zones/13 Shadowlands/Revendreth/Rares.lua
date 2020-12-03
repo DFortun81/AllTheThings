@@ -12,16 +12,20 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(16)),	-- Adventurer of Revendreth / Amalgamation of Filth
+						ach(14310, crit(14)),	-- Adventurer of Revendreth / Amalgamation of Filth
 					},
 				}),
 				n(164388, {	-- Amalgamation of Light
-					["coord"] = { 25.4, 48.4, 1525 },
-					--["questID"] = ,
+					["description"] = "When the rare is available, 3 light-reflecting mirrors will appear.  Move all 3 start the encounter.",
+					["questID"] = 59584,
 					["isDaily"] = true,
+					["coord"] = { 25.3, 48.5, 1525 },
 					["g"] = {
-						ach(14310, crit(13)),	-- Adventurer of Revendreth / Amalgamation of Light
+						crit(12, {	-- Amalgamation of Light
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
 						i(180586),	-- Lightbinders
+						i(180688),	-- Infused Remnant of Light
 					},
 				}),
 				n(170434, {	-- Amalgamation of Sin
@@ -29,40 +33,53 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(25)),	-- Adventurer of Revendreth / Amalgamation of Sin
+						ach(14310, crit(23)),	-- Adventurer of Revendreth / Amalgamation of Sin
 					},
 				}),
 				n(166576, {	-- Azgar
 					["coord"] = { 36.0, 68.6, 1525 },
-					--["questID"] = ,
+					["questID"] = 59893,	-- TODO: also triggered 62464
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(18)),	-- Adventurer of Revendreth / Azgar
+						ach(14310, crit(16)),	-- Adventurer of Revendreth / Azgar
 					},
 				}),
 				n(166292, {	-- Bog Beast
-					["coord"] = { 35.8, 32.6, 1525 },
-					--["questID"] = ,
+					["description"] = "Only available when the 'Muck It Up' world quest is active.  Loot Primordial Muck from the quest mobs and throw it into the mire for a chance to summon the rare.",
+					["questID"] = 59823,
 					["isDaily"] = true,
+					["coord"] = { 35.8, 32.6, 1525 },
 					["g"] = {
-						ach(14310, crit(20)),	-- Adventurer of Revendreth / Bog Beast
-						i(180588),	-- Bucket of Primordial Sludge
+						crit(18, {	-- Bog Beast
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180588),	-- Bucket of Primordial Sludge (PET!)
+						i(180707),	-- Sticky Muck
 					},
 				}),
 				n(165206, {	-- Endlurker
-					["coord"] = { 66.4, 59.6, 1525 },
-					--["questID"] = ,
+					["description"] = "There is a sparkling Anima Stake in front of the portal.  Pick it up and use the Extra Action Button to lure the rare.",
+					["questID"] = 59582,
 					["isDaily"] = true,
+					["coord"] = { 66.4, 59.6, 1525 },
 					["g"] = {
-						ach(14310, crit(12)),	-- Adventurer of Revendreth / Endlurker
+						crit(11, {	-- Endlurker
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(179927),	-- Glowing Endmire Stinger
 					},
 				}),
 				n(166710, {	-- Executioner Aatron
-					["coord"] = { 37.2, 47.8, 1525 },
-					--["questID"] = ,
+					["description"] = "Kill the 3 Stone Legion Punishers along the wall to make the rare attackable.",
+					["questID"] = 59913,
 					["isDaily"] = true,
+					["coord"] = { 37.2, 47.8, 1525 },
+					["crs"] = { 166715 },	-- Stone Legion Punisher
 					["g"] = {
-						ach(14310, crit(21)),	-- Adventurer of Revendreth / Executioner Aatron
+						crit(19, {	-- Executioner Aatron
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(183737),	-- Aatron's Stone Girdle
 					},
 				}),
 				n(161310, {	-- Executioner Adrastia
@@ -70,17 +87,17 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(9)),	-- Adventurer of Revendreth / Executioner Adrastia
+						ach(14310, crit(8)),	-- Adventurer of Revendreth / Executioner Adrastia
 					},
 				}),
 				n(166521, {	-- Famu the Infinite
 					["coord"] = { 62.6, 47.2, 1525 },
-					--["questID"] = ,
+					["questID"] = 59869,
 					["isDaily"] = true,
 					["crs"] = { 166483 },	-- Seeker Hilda
 					["g"] = {
 						i(180582),	-- Endmire Flyer Tether
-						ach(14310, crit(17)),	-- Adventurer of Revendreth / Famu the Infinite
+						ach(14310, crit(15)),	-- Adventurer of Revendreth / Famu the Infinite
 					},
 				}),
 				n(159496, {	-- Forgemaster Madalav
@@ -88,89 +105,272 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(6)),	-- Adventurer of Revendreth / Forgemaster Madalav
 					},
 				}),
 				n(167464, {	-- Grand Arcanist Dimitri
-					["coord"] = { 20.6, 53.0, 1525 },
-					--["questID"] = ,
+					["description"] = "Kill the Shrouded Ritualists to spawn the rare.",
+					["questID"] = 60173,
 					["isDaily"] = true,
+					["coord"] = { 20.9, 54.3, 1525 },
 					["g"] = {
-						ach(14310, crit(23)),	-- Adventurer of Revendreth / Grand Arcanist Dimitri
+						crit(21, {	-- Grand Arcanist Dimitri
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180503),	-- Grand Arcanist's Soulblade
+						i(180708),	-- Mirror of Despair
+						i(180659),	-- Soul Siphoning Shard
 					},
+				}),
+				n(-956, {	-- Grand Inquisitors
+					n(COMMON_BOSS_DROPS, {
+						i(173721, {	-- Love and Terror
+							["questID"] = 58081,	-- Favor: Love and Terror
+						}),
+						i(177803),	-- Grand Inquisitor's Stave
+						i(184210),	-- Spiked Cudgel fo the Inquisition (sic)
+					}),
+					n(159157, {	-- Grand Inquisitor Aurica
+						["description"] = "Requires |cff712daaGrand Inquisitor Aurica's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
+					--	["questID"] = ,
+						["isDaily"] = true,
+						["coord"] = { 69.7, 45.4, 1525 },
+						["g"] = {
+							crit(9, {	-- Grand Inquisitor Aurica
+								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
+							}),
+							i(173008),	-- Grand Inquisitor Aurica's Sinstone (so the item is associated with the rare)
+						},
+					}),
+					n(159156, {	-- Grand Inquisitor Nicu
+						["description"] = "Requires |cff712daaGrand Inquisitor Nicu's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
+					--	["questID"] = ,
+						["isDaily"] = true,
+						["coord"] = { 64.6, 52.6, 1525 },
+						["g"] = {
+							crit(10, {	-- Grand Inquisitor Nicu
+								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
+							}),
+							i(173007),	-- Grand Inquisitor Nicu's Sinstone (so the item is associated with the rare)
+						},
+					}),
 				}),
 				n(165290, {	-- Harika the Horrid
 					["coord"] = { 45.83, 79.34, 1525 },
-					--["questID"] = ,
+					["questID"] = 59612,
 					["isDaily"] = true,
-					["description"] = "Requires to be a |cFFfe040fVenthyr Covenant|r & your Anima to be channel to Wanecrypt Hill to summon him. Use the Dredterror Ballista to make him attackable.",
+					["description"] = "Requires to be a |cFFfe040fVenthyr Covenant|r & your Anima to be channelled to Wanecrypt Hill to summon him. Use the Dredterror Ballista to make him attackable.",
 					["g"] = {
-						ach(14310, crit(15)),		-- Adventurer of Revendreth / Harika the Horrid
-						i(180461),			-- Horrid Dredwing
-						i(176396, {			-- Dredhollow Tools
-							["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
-							["crs"] = { 165325 },	-- Muckborn Craftsman
-							["coords"] = {
-								{ 40.77, 72.70, 1525 },	-- Tool1
-								{ 41.18, 74.67, 1525 },	-- Tool2
-							},
+						-- TODO: rearrange this probably...
+						n(165327, {	-- Wingsmash
+							["coord"] = { 46.30, 77.86, 1525 },
 							["g"] = {
-								n(165325, {		-- Muckborn Craftsman
-									["coord"] = { 46.0, 79.0, 1525 },	-- Muckborn Craftsman
-									["g"] = {
-										i(176397, {			-- Dredhollow Bolt
+								q(59607, {	-- Takin' Down the Beast
+									["description"] = "If this quest is offered, it must be completed to spawn the rare.",
+									["repeatable"] = true,
+									["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
+									["g"] = {										
+										i(176397, {	-- Dredhollow Bolt
 											["description"] = "Used to shoot the Dredterror Ballista. Bring the item to Wingsmash.",
 											["coords"] = {
 												{ 43.23, 77.62, 1525 },	-- Dredhollow Bolt
 											},
 											["crs"] = { 165324 },	-- Dredterror Ballista
-											["g"] = {
-												n(165327, {		-- Wingsmash
-													["coord"] = { 46.30, 77.86, 1525 },	-- Wingsmash
-													["g"] = {
-														i(180461),			-- Horrid Dredwing
-													},
-												}),
-											},
 										}),
-									},
+									}
 								}),
 							},
 						}),
+						n(165325, {	-- Muckborn Craftsman
+							["coord"] = { 46.0, 79.0, 1525 },	-- Muckborn Craftsman
+							["g"] = {
+								-- TODO: do they offer a quest to repair the ballista? have never seen it...
+								-- i(176396, {			-- Dredhollow Tools
+								-- 	["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
+								-- 	["crs"] = { 165325 },	-- Muckborn Craftsman
+								-- 	["coords"] = {
+								-- 		{ 40.77, 72.70, 1525 },	-- Tool1
+								-- 		{ 41.18, 74.67, 1525 },	-- Tool2
+								-- 	},
+								-- 	["g"] = {
+								-- 	},
+								-- }),
+							},
+						}),
+						i(180713),	-- Shrieker's Voicebox
+						i(180461),	-- Horrid Dredwing
 					},
 				}),
+				n(-955,   {	-- High Inquisitors
+				--	TODO: add any missing loot (some is npc-specific, some is shared, ugh)
+					-- when i killed the first one, Gabi, i got a questID of 59887.  the second one, Radu, didn't give a questID.  are they shared through each tier (normal > high > grand), one-time, random?  test!
+					n(COMMON_BOSS_DROPS, {
+						i(173721, {	-- Love and Terror
+							["questID"] = 58081,	-- Favor: Love and Terror
+						}),
+						i(184211),	-- High Inquisitor's Banded Cincture
+						i(184212),	-- Intimidator Trainer's Cuffs
+					}),
+					n(159155, {	-- High Inquisitor Dacian
+						["description"] = "Requires |cff0c5baeHigh Inquisitor Dacian's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
+					--	["questID"] = ,
+						["isDaily"] = true,
+						["coord"] = { 72.0, 53.0, 1525 },
+						["g"] = {
+							crit(5, {	-- High Inquisitor Dacian
+								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
+							}),
+							i(180496),	-- High Inquisitor's Drape of Shame
+							i(173006),	-- High Inquisitor Dacian's Sinstone (so the item is associated with the rare)
+						},
+					}),
+					n(159152, {	-- High Inquisitor Gabi
+						["description"] = "Requires |cff0c5baeHigh Inquisitor Gabi's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
+						["questID"] = 59887,
+						["isDaily"] = true,
+						["coord"] = { 75.2, 44.2, 1525 },
+						["g"] = {
+							crit(6, {	-- High Inquisitor Gabi
+								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
+							}),
+							i(180500),	-- High Inquisitor's Bloody Cloak
+							i(173000),	-- High Inquisitor Gabi's Sinstone (so the item is associated with the rare)
+						},
+					}),
+					n(159154, {	-- High Inquisitor Magda
+						["description"] = "Requires |cff0c5baeHigh Inquisitor Magda's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
+					--	["questID"] = ,
+						["isDaily"] = true,
+						["coord"] = { 69.6, 52.0, 1525 },
+						["g"] = {
+							crit(7, {	-- High Inquisitor Magda
+								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
+							}),
+							i(180498),	-- High Inquisitor's Obscene Shawl
+						},
+					}),
+					n(159153, {	-- High Inquisitor Radu
+						["description"] = "Requires |cff0c5baeHigh Inquisitor Radu's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
+					--	["questID"] = ,
+						["isDaily"] = true,
+						["coord"] = { 71.4, 42.2, 1525 },
+						["g"] = {
+							crit(8, {	-- High Inquisitor Radu
+								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
+							}),
+							i(180499),	-- High Inquisitor's Cloak of Fanaticism
+							i(173001),	-- High Inquisitor Radu's Sinstone (so the item is associated with the rare)
+						},
+					}),
+				}),
 				n(166679, {	-- Hopecrusher
-					["coord"] = { 51.2, 52.2, 1525 },
-					--["questID"] = ,
+					["description"] = "When you inspect the Large Prey, Hopecrusher will attack you.",
+					["questID"] = 59900,
 					["isDaily"] = true,
+					["coord"] = { 51.2, 52.2, 1525 },
+					["crs"] = { 166682 },	-- Large Prey
 					["g"] = {
+						crit(17, {	-- Hopecrusher
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
 						i(180581),	-- Hopecrusher Gargon
-						ach(14310, crit(19)),	-- Adventurer of Revendreth / Hopecrusher
 					},
 				}),
 				n(166993, {	-- Huntmaster Petrus
-					["coord"] = { 61.8, 79.2, 1525 },
-					--["questID"] = ,
+					["questID"] = 60022,
 					["isDaily"] = true,
+					["coord"] = { 61.8, 79.2, 1525 },
+					["crs"] = { 165891 },	-- Reza
 					["g"] = {
-						ach(14310, crit(22)),	-- Adventurer of Revendreth / Huntmaster Petrus
+						crit(20, {	-- Huntmaster Petrus
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
 					},
 				}),
 				n(160640, {	-- Innervus
-					["coord"] = { 21.8, 36.0, 1525 },
-					--["questID"] = ,
+					["description"] = "You will need a |cFFFFFFFFScorched Crypt Key|r to enter the rare's tomb.  The key can drop from the Feral Ritualists and Blistering Inquisitors in the surrounding area.",
+					["questID"] = 58210,
 					["isDaily"] = true,
+					["coord"] = { 21.7, 35.9, 1525 },
 					["g"] = {
-						ach(14310, crit(3)),	-- Adventurer of Revendreth / Innervus
+						crit(3, {	-- Innervus
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(177223),	-- Scorched Crypt Key
 					},
 				}),
+				n(-954,   {	-- Inquisitors
+					n(COMMON_BOSS_DROPS, {
+						i(173721, {	-- Love and Terror
+							["questID"] = 58081,	-- Favor: Love and Terror
+						}),
+						i(184214),	-- Chained Manacles
+						i(184213),	-- Ritualist's Soles
+						i(184217),	-- Sinstone Stompers
+					}),
+					n(156918, {	-- Inquisitor Otilia
+						["description"] = "Requires |cff18bb0aInquisitor Otilia's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
+					--	["questID"] = ,	-- 
+						["isDaily"] = true,
+						["coord"] = { 64.8, 46.6, 1525 },
+						["g"] = {
+							crit(1, {	-- Inquisitor Otilia
+								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
+							}),
+							i(172998),	-- Inquisitor Otilia's Sinstone (so the item is associated with the rare)
+						},
+					}),
+					n(156919, {	-- Inquisitor Petre
+						["description"] = "Requires |cff18bb0aInquisitor Petre's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
+					--	["questID"] = ,	-- 
+						["isDaily"] = true,
+						["coord"] = { 67.2, 43.6, 1525 },
+						["g"] = {
+							crit(2, {	-- Inquisitor Petre
+								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
+							}),
+							i(172997),	-- Inquisitor Petre's Sinstone (so the item is associated with the rare)
+						},
+					}),
+					n(156916, {	-- Inquisitor Sorin
+						["description"] = "Requires |cff18bb0aInquisitor Sorin's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
+					--	["questID"] = ,	-- 
+						["isDaily"] = true,
+						["coord"] = { 69.6, 47.6, 1525 },
+						["g"] = {
+							crit(3, {	-- Inquisitor Sorin
+								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
+							}),
+							i(172996),	-- Inquisitor Sorin's Sinstone (so the item is associated with the rare)
+						},
+					}),
+					n(159151, {	-- Inquisitor Traian
+						["description"] = "Requires |cff18bb0aInquisitor Traian's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
+					--	["questID"] = ,	-- 
+						["isDaily"] = true,
+						["coord"] = { 76.0, 51.8, 1525 },
+						["g"] = {
+							crit(4, {	-- Inquisitor Traian
+								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
+							}),
+							i(172999),	-- Inquisitor Traian's Sinstone (so the item is associated with the rare)
+						},
+					}),
+				}),
 				n(165152, {	-- Leeched Soul
-					["coord"] = { 67.8, 81.8, 1525 },
-					--["questID"] = ,
+					["description"] = "Inside the crypt.  Protect Absolver Meylann from waves of mobs.",
+					["questID"] = 59580,
 					["isDaily"] = true,
+					["coord"] = { 67.5, 82.2, 1525 },
+					["crs"] = {
+						165151,	-- Absolver Meylann
+						165175,	-- Prideful Hulk
+					},
 					["g"] = {
-						ach(14310, crit(11)),	-- Adventurer of Revendreth / Leeched Soul
-						i(180585),	-- Bottled Up Emotions
+						crit(10, {	-- Leeched Soul
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180585),	-- Bottled Up Rage (PET!)
+						i(183736),	-- Pride Resistant Handwraps
 					},
 				}),
 				n(161891, {	-- Lord Mortegore
@@ -178,7 +378,7 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(10)),	-- Adventurer of Revendreth / Lord Mortegore
+						ach(14310, crit(9)),	-- Adventurer of Revendreth / Lord Mortegore
 					},
 				}),
 				n(170048, {	-- Manifestation of Wrath
@@ -186,25 +386,21 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(24)),	-- Adventurer of Revendreth / Manifestation of Wrath
+						ach(14310, crit(22)),	-- Adventurer of Revendreth / Manifestation of Wrath
 						i(180591),	-- Vial of Roiling Emotions
 					},
 				}),
-				n(162690, {	-- Nerissa Heartless
-					["coord"] = { 66.03, 35.32, 1525 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
-						i(182084),	-- Gorespine
-					},
-				}),
 				n(160675, {	-- Scrivener Lenua
-					["coord"] = { 38.4, 69.6, 1525 },
-					--["questID"] = ,
+					["description"] = "To spawn the rare, find four stacks of Forbidden Tomes in the surrounding area and deliver them to the library.",
+					["questID"] = 58213,
 					["isDaily"] = true,
+					["coord"] = { 37.6, 68.7, 1525 },
+					["crs"] = { 160753 },	-- Forbidden Tomes
 					["g"] = {
-						ach(14310, crit(2)),	-- Adventurer of Revendreth / Scrivener Lenua
-						i(180587),	-- Animated Tome
+						crit(2, {	-- Scrivener Lenua
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180587),	-- Animated Tome (PET!)
 					},
 				}),
 				n(162481, {	-- Sinstone Hoarder
@@ -212,79 +408,86 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						ach(14310, crit(26)),	-- Adventurer of Revendreth / Sinstone Hoarder
+						ach(14310, crit(24)),	-- Adventurer of Revendreth / Sinstone Hoarder
 					},
 				}),
 				n(160857, {	-- Sire Ladinas <The Lightrazed>
-					["description"] = "Collect Remnant of Light and use the received Extraaction Button on Crazed Ash Ghouls to have a chance to make Sire Ladinas spawn.",
-					["coord"] = { 34.6, 56.2, 1525 },
-					--["questID"] = ,
+					["description"] = "Remnants of Light are sparkling gold shards scattered around the Ember Ward.  Pick them up and use the Extra Action Button on Crazed Ash Ghouls for a chance to make Sire Ladinas spawn.\n\nIf the ghoul yells, the rare will spawn soon.",
+					["questID"] = 58263,
 					["isDaily"] = true,
+					["coord"] = { 34.0, 55.5, 1525 },
 					["g"] = {
-						ach(14310, crit(8)),	-- Adventurer of Revendreth / Sire Ladinas <The Lightrazed>
-						i(180873),	-- Smolderheart
-						o(339499, {	-- Remnant of Light
-							["coords"] = {
-								{ 36.77, 61.08, 1648 },
-								{ 36.01, 60.22, 1648 },
-								{ 35.34, 60.22, 1648 },
-								{ 35.39, 59.08, 1648 },
-								{ 35.32, 59.35, 1648 },
-								{ 35.03, 59.14, 1648 },
-								{ 34.87, 59.39, 1648 },
-								{ 34.36, 58.52, 1648 },
-								{ 34.83, 57.62, 1648 },
-								{ 33.92, 53.65, 1648 },
-							},
-							["g"] = {
-								i(180873),	-- Smolderheart
-							},
+						crit(7, {	-- Sire Ladinas
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
+						i(180873),	-- Smolderheart
 					},
 				}),
 				n(160392, {	-- Soulstalker Doina
 					["coord"] = { 65.0, 57.0, 1525 },
-					--["questID"] = ,
+					["questID"] = 58130,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(1)),	-- Adventurer of Revendreth / Soulstalker Doina
+						i(180692),	-- Box of Stalker Traps
 					},
 				}),
 				n(159503, {	-- Stonefist
-					["coord"] = { 31.0, 23.2, 1525 },
-					--["questID"] = ,
+					["questID"] = 62220,
 					["isDaily"] = true,
+					["coord"] = { 31.0, 23.2, 1525 },
 					["g"] = {
-						ach(14310, crit(5)),	-- Adventurer of Revendreth / Stonefist
+						crit(5, {	-- Stonefist
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180488),	-- Fist-Forged Breastplate
 					},
 				}),
 				n(165253, {	-- Tollkeeper Varaboss
-					["coord"] = { 66.4, 71.4, 1525 },
-					--["questID"] = ,
+					["questID"] = 59595,
 					["isDaily"] = true,
+					["coord"] = { 66.4, 71.4, 1525 },
 					["g"] = {
-						ach(14310, crit(14)),	-- Adventurer of Revendreth / Tollkeeper Varaboss
+						crit(13, {	-- Tollkeeper Varaboss
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(179363, {	-- Misplaced Anima Tolls
+							["questID"] = 60517,	-- The Toll of the Road
+						}),
 					},
 				}),
 				n(155779, {	-- Tomb Burster <Dread Crawler Queen>
-					["coord"] = { 42.8, 79.2, 1525 },
-					--["questID"] = ,
+					["description"] = "After you kill all the Crawler Eggs around Funguss and defeat several waves of Dread Crawlers, the rare will attack.",
+					["questID"] = 56877,
 					["isDaily"] = true,
+					["coord"] = { 42.8, 79.2, 1525 },
+					["crs"] = { 155777 },	-- Funguss
 					["g"] = {
-						ach(14310, crit(4)),	-- Adventurer of Revendreth / Tomb Burster <Dread Crawler Queen>
-						i(180584),	-- Rose Spiderling
+						crit(4, {	-- Tomb Burster
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(180584),	-- Blushing Spiderling (PET!)
 					},
 				}),
 				n(160821, {	-- Worldedge Gorger
-					["coord"] = { 38.6, 72.0, 1525 },
-					--["questID"] = ,
+					["description"] = "To summon Worldedge Gorger, you need to use |cff1eff00Enticing Anima|r to light Worldedge Braziers. |cff1eff00Enticing Anima|r drops from the aberrations that spawn along the river.",
+					["questID"] = 58259,
 					["isDaily"] = true,
-					["description"] = "To summon Worldedge Gorger you need to use Enticing Anima to lit worldedge braziers. Enticing Anima drops from worldeater rift mobs, you can kill many of them just along the river.",
+					["coord"] = { 38.6, 72.0, 1525 },
+					["cost"] = { { "i", 173939, 1 }, },	-- Enticing Anima
 					["g"] = {
-						i(180583, {		-- Impressionable Gorger Spawn
-							i(182589),		-- Loyal Gorger
+						crit(6, {	-- Worldedge Gorger
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
-						ach(14310, crit(7)),	-- Adventurer of Revendreth / Worldedge Gorger
+						i(180583, {	-- Impressionable Gorger Spawn
+							i(182589),	-- Loyal Gorger (MOUNT!)
+						}),
+						n(160815, {	-- Encroaching Gorger
+							["description"] = "Drops |cff1eff00Enticing Anima|r",
+							["g"] = {
+								i(173939),	-- Enticing Anima
+							},
+						})
 					},
 				}),
 			}),

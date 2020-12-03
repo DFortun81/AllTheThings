@@ -105,6 +105,13 @@ _.Zones =
 							}),
 						}),
 						n(QUESTS, {
+							q(32169, {	-- A Colossal Victory
+								["sourceQuests"] = { 32183 },	-- Beastmaster's Quarry: The Crab
+								["provider"] = { "n", 67447 },	-- Jorn Skyseer (summons the mob)
+								["isDaily"] = true,
+								["races"] = HORDE_ONLY,
+								["crs"] = { 67439 },	-- Colossal Viseclaw (killing the mob procs the quest)
+							}),
 							q(32352, {	-- A Gathering Storm
 								["sourceQuests"] = { 32351 },	-- Echoes of Thunder
 								["provider"] = { "n", 68287 },	-- Baine Bloodhoof
@@ -151,6 +158,12 @@ _.Zones =
 								["coord"] = { 9.02, 51.2, 418 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32163, {	-- Beastmaster's Hunt: The Crab
+								["provider"] = { "i", 91822 },	-- Sturdy Crab Crate
+								["isDaily"] = true,
+								["coord"] = { 9.68, 50.9, 418 },
+								["races"] = HORDE_ONLY,
+							}),
 							q(32161, {	-- Beastmaster's Hunt: The Crane
 								["provider"] = { "i", 91819 },	-- Sturdy Crane Snare
 								["isDaily"] = true,
@@ -161,6 +174,13 @@ _.Zones =
 								["provider"] = { "i", 91821 },	-- Sturdy Tiger Trap
 								["isDaily"] = true,
 								["coord"] = { 9.70, 51.0, 418 },
+								["races"] = HORDE_ONLY,
+							}),
+							q(32183, {	-- Beastmaster's Quarry: The Crab
+								["sourceQuests"] = { 32163 },	-- Beastmaster's Hunt: The Crab
+								["provider"] = { "n", 67508 },	-- Colossal Viseclaw
+								["isDaily"] = true,
+								["coord"] = { 58.7, 38.7, 418 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32181, {	-- Beastmaster's Quarry: The Crane

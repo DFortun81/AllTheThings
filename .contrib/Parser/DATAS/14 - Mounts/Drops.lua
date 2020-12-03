@@ -39,7 +39,7 @@ _.Mounts =
 		i(163578), 	-- Broken Highland Mustang
 		i(43951),	-- Bronze Drake
 		i(184160),	-- Bulbous Necroray
-		--i(181818),	-- Chewed Reins of the Callow Flayedwing Source Unknown (NYI ATM)
+		i(181818),	-- Chewed Reins of the Callow Flayedwing
 		i(147806),	-- Cloudwing Hippogryph
 		i(173887),	-- Clutch of Ha-Li
 		i(95059),	-- Clutch of Ji-Kun

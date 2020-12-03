@@ -29,6 +29,18 @@ profession(LEATHERWORKING, {
 					["name"] = "Armor Enhancers",
 					["categoryID"] = 384,
 					["g"] = {
+						{
+							["recipeID"] = 171286,	-- Burnished Essence
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
+						},
+						{
+							["recipeID"] = 187489,	-- Mighty Burnished Essence
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
+						},
+						{
+							["recipeID"] = 187513,	-- Savage Burnished Essence
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
+						},
 					}
 				},
 				{

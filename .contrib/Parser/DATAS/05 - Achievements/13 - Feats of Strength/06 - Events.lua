@@ -17,12 +17,12 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(8698)),		-- Crashin' Thrashin' Flyer
 			un(REMOVED_FROM_GAME, ach(1706)),		-- Crashin' Thrashin' Racer
 			un(REMOVED_FROM_GAME, ach(9915)),		-- Crashin' Thrashin' Shredder
-			ach(14750, {							-- Death Rising
+			un(REMOVED_FROM_GAME, ach(14750, {		-- Death Rising
 				["sourceQuests"] = {
 					60871,	-- With Hope in Hand (A)
 					60869,	-- With Hope in Hand (H)
 				},
-			}),
+			})),
 			un(REMOVED_FROM_GAME, ach(11201, {		-- Defender of Azeroth: Legion Invasions
 				un(REMOVED_FROM_GAME, ach(11200)),		-- Stand Against the Legion
 			})),

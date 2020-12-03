@@ -31,23 +31,26 @@ profession(ALCHEMY, {
 					i(112040),	-- Recipe: Draenic Strength Potion
 					un(NEVER_IMPLEMENTED, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
 					i(118700, {	-- Secret of Draenor Alchemy
-						i(112023),	-- Recipe: Draenic Philosopher's Stone
-						i(112045),	-- Recipe: Draenic Rejuvenation Potion
-						i(112024),	-- Recipe: Draenic Agility Flask
-						i(112026),	-- Recipe: Draenic Intellect Flask
-						i(112030),	-- Recipe: Draenic Stamina Flask
-						i(112027),	-- Recipe: Draenic Strength Flask
-						i(112031),	-- Recipe: Greater Draenic Agility Flask
-						i(112033),	-- Recipe: Greater Draenic Intellect Flask
-						i(112037),	-- Recipe: Greater Draenic Stamina Flask
-						i(112034),	-- Recipe: Greater Draenic Strength Flask
-						i(112047),	-- Recipe: Transmorphic Tincture
-						i(160662),  -- Recipe: Blackwater Anti-Venom
-						i(160663),  -- Recipe: Healing Tonic
-						i(160661),  -- Recipe: Fire Ammonite Oil
-						i(114028, {	-- Small Pouch of Coins
-							["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
-						}),
+						["collectible"] = false,
+						["g"] = {
+							i(112023),	-- Recipe: Draenic Philosopher's Stone
+							i(112045),	-- Recipe: Draenic Rejuvenation Potion
+							i(112024),	-- Recipe: Draenic Agility Flask
+							i(112026),	-- Recipe: Draenic Intellect Flask
+							i(112030),	-- Recipe: Draenic Stamina Flask
+							i(112027),	-- Recipe: Draenic Strength Flask
+							i(112031),	-- Recipe: Greater Draenic Agility Flask
+							i(112033),	-- Recipe: Greater Draenic Intellect Flask
+							i(112037),	-- Recipe: Greater Draenic Stamina Flask
+							i(112034),	-- Recipe: Greater Draenic Strength Flask
+							i(112047),	-- Recipe: Transmorphic Tincture
+							i(160662),  -- Recipe: Blackwater Anti-Venom
+							i(160663),  -- Recipe: Healing Tonic
+							i(160661),  -- Recipe: Fire Ammonite Oil
+							i(114028, {	-- Small Pouch of Coins
+								["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
+							}),
+						},
 					}),
 				},
 			}),
@@ -79,23 +82,26 @@ profession(ALCHEMY, {
 					i(112040),	-- Recipe: Draenic Strength Potion
 					un(NEVER_IMPLEMENTED, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
 					i(118700, {	-- Secret of Draenor Alchemy
-						i(112023),	-- Recipe: Draenic Philosopher's Stone
-						i(112045),	-- Recipe: Draenic Rejuvenation Potion
-						i(112024),	-- Recipe: Draenic Agility Flask
-						i(112026),	-- Recipe: Draenic Intellect Flask
-						i(112030),	-- Recipe: Draenic Stamina Flask
-						i(112027),	-- Recipe: Draenic Strength Flask
-						i(112031),	-- Recipe: Greater Draenic Agility Flask
-						i(112033),	-- Recipe: Greater Draenic Intellect Flask
-						i(112037),	-- Recipe: Greater Draenic Stamina Flask
-						i(112034),	-- Recipe: Greater Draenic Strength Flask
-						i(112047),	-- Recipe: Transmorphic Tincture
-						i(160662),  -- Recipe: Blackwater Anti-Venom
-						i(160663),  -- Recipe: Healing Tonic
-						i(160661),  -- Recipe: Fire Ammonite Oil
-						i(114028, {	-- Small Pouch of Coins
-							["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
-						}),
+						["collectible"] = false,
+						["g"] = {
+							i(112023),	-- Recipe: Draenic Philosopher's Stone
+							i(112045),	-- Recipe: Draenic Rejuvenation Potion
+							i(112024),	-- Recipe: Draenic Agility Flask
+							i(112026),	-- Recipe: Draenic Intellect Flask
+							i(112030),	-- Recipe: Draenic Stamina Flask
+							i(112027),	-- Recipe: Draenic Strength Flask
+							i(112031),	-- Recipe: Greater Draenic Agility Flask
+							i(112033),	-- Recipe: Greater Draenic Intellect Flask
+							i(112037),	-- Recipe: Greater Draenic Stamina Flask
+							i(112034),	-- Recipe: Greater Draenic Strength Flask
+							i(112047),	-- Recipe: Transmorphic Tincture
+							i(160662),  -- Recipe: Blackwater Anti-Venom
+							i(160663),  -- Recipe: Healing Tonic
+							i(160661),  -- Recipe: Fire Ammonite Oil
+							i(114028, {	-- Small Pouch of Coins
+								["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
+							}),
+						},
 					}),
 				},
 			}),

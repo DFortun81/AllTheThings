@@ -7,30 +7,23 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["coord"] = { 59.3, 64.8, 1536 },
 		["maps"] = {
 			1674,	-- Plaguefall
+			1697,	-- Plaguefall
 		},
 		["lvl"] = { 50 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(14634, {	-- Nine Afterlives
-					crit(1, {	-- Hairball
-						["description"] = "Hairball in the hallway in the opposite direction of the endboss, go through the slime in the hallway to the left and turn left to pet her.",
-					}),
+					["collectible"] = false,
+					["g"] = {
+						crit(1, {	-- Hairball
+							["description"] = "Close to the top-left corner of the final boss's map.  On the left side of the slime pool, kill a green ooze and then turn left.  Hairball is in a tiny alcove filled with fish skeletons and candles.",
+							["crs"] = { 174195 },	-- Hairball
+						}),
+					},
 				}),
 			}),
 			n(QUESTS, {
-				q(59520, {	-- Plaguefall: Knee Deep In It
-					["provider"] = { "n", 165052 },	-- Vial Master Lurgy
-					["coord"] = { 59.4, 72.9, 1536 },
-					["sourceQuest"] = 59223,	-- By Any Other Name
-					["lvl"] = { 52 },
-					["maps"] = { 1536 },	-- Maldraxxus
-					["g"] = {
-						i(175512),	-- Epidemiologist's Raiment
-						i(175515),	-- Deceitful Agent's Tunic
-						i(175514),	-- Flesh Architect's Hauberk
-						i(175513),	-- Cruel Executioner's Breastplate
-					},
-				}),
+				-- do not delete header!
 			}),
 			--n(-34, {	-- World Quests
 			--}),
@@ -73,6 +66,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["crs"] = { 164267 },	-- Margrave Stradama
 					["g"] = {
 						ach(14369),	-- Plaguefall
+						i(183319),	-- Memory of my Crystalline Reflection
 						i(178754),	-- Poxstorm, Longsword of Pestilence
 						i(178755),	-- Blighted Margrave's Cloak
 						i(178761),	-- Leggings of the Erudite Scholar
@@ -124,6 +118,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["crs"] = { 164267 },	-- Margrave Stradama
 						["g"] = {
 							ach(14414),	-- Heroic: Plaguefall
+							i(183319),	-- Memory of my Crystalline Reflection
 							i(178754),	-- Poxstorm, Longsword of Pestilence
 							i(178755),	-- Blighted Margrave's Cloak
 							i(178761),	-- Leggings of the Erudite Scholar
@@ -182,6 +177,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["crs"] = { 164267 },	-- Margrave Stradama
 						["g"] = {
 							ach(14415),	-- Mythic: Plaguefall
+							i(183319),	-- Memory of my Crystalline Reflection
 							i(178754),	-- Poxstorm, Longsword of Pestilence
 							i(178755),	-- Blighted Margrave's Cloak
 							i(178761),	-- Leggings of the Erudite Scholar

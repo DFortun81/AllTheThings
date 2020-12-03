@@ -309,7 +309,6 @@ _.Holidays =
 					{	-- Back to the Orphanage [Alliance - Draenei - FINAL]
 						["questID"] = 10966,	-- Back to the Orphanage
 						["u"] = 20,				-- Children's Week Filter
-						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 22818 },			-- Draenei Orphan
 						["crs"] = {
 							22819,			-- Orphan Matron Mercy
@@ -957,7 +956,6 @@ _.Holidays =
 							84,	-- Stormwind City
 							89,	-- Darnassus
 						},
-						["maps"] = { 89, },	-- Darnassus
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
 					},
@@ -1321,7 +1319,6 @@ _.Holidays =
 							87,		-- Ironforge
 							1361,	-- Old Ironforge
 						},
-						["maps"] = { 87, },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
 					},

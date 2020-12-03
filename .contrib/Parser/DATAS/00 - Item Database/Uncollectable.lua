@@ -5,6 +5,62 @@ local i = function(itemID)
 	return item;
 end
 
+-- Anima Items
+i(181540);	-- Animaflower Bud
+i(181477);	-- Ardendew Pearl
+i(184381);	-- Astral Sapwood
+i(184773);	-- Battle-Tested Armor Component
+i(181545);	-- Bloodbound Globule
+i(184150);	-- Bonded Tallow Candles
+i(184152);	-- Bottle of Diluted Anima-Wine
+i(183723);	-- Brimming Anima Orb
+i(181541);	-- Celestial Acorn
+i(184768);	-- Censer of Dried Gracepetals
+i(181368);	-- Centurion Power Core
+i(184766);	-- Chronicles of the Paragons
+i(181552);	-- Collected Tithe
+i(184148);	-- Concealed Sinvyr Flask
+i(181544);	-- Confessions of Misdeed
+i(184363);	-- Considerations on Courage
+i(184151);	-- Counterfeit Ruby Brooch
+i(181551);	-- Depleted Stoneborn Heart
+i(184383);	-- Duskfall Tuber
+i(181645);	-- Engorged Monstrosity's Heart
+i(184294);	-- Ethereal Ambrosia
+i(184378);	-- Faeweald Amber
+i(181744);	-- Forgelite Ember
+i(181745);	-- Forgesmith's Coal
+i(184777);	-- Gravedredger's Shovel
+i(184767);	-- Handheld Soul Mirror
+i(184384);	-- Hibernal Sproutling
+i(181550);	-- Hopebreaker's Field Injector
+i(181377);	-- Illustrated Combat Meditation Aid
+i(184307);	-- Maldraxxi Armor Scraps
+i(184305);	-- Maldraxxi Champion's Armaments
+i(184387);	-- Misty Shimmerleaf
+i(184315);	-- Multi-Modal Anima Container
+i(184386);	-- Nascent Sporepod
+i(181547);	-- Noble's Draught
+i(181743);	-- Plume of the Archon
+i(181649);	-- Preserved Preternatural Braincase
+i(184769);	-- Pressed Torchlily Blossom
+i(182749);	-- Regurgitated Kyrian Wings
+i(184771);	-- Remembrance Parchment Ash
+i(184772);	-- Ritual Maldracite Crystal
+i(184770);	-- Roster of the Forgotten
+i(184293);	-- Sanctified Skylight Leaf
+i(184146);	-- Singed Soul Shackles
+i(184389);	-- Slumbering Starseed
+i(184373);	-- Small Anima Globe
+i(181647);	-- Stabilized Plague Strain
+i(181479);	-- Starlight Catcher
+i(184519);	-- Totem of Stolen Mojo
+i(184776);	-- Urn of Arena Soil
+i(184371);	-- Vivacity of Collaboration
+
+-- Battle Pet
+i(183714);	-- Swamp Reed (presumably Withered Creeper was originally learned via this item, but is now wild-caught, so this item being anywhere other than this folder makes the pet show as Unsorted or NYI or w/e)
+
 -- Consumables
 -- BC
 i(23379);	-- Cinder Bracers
@@ -26,6 +82,7 @@ i(44626);	-- Cask of Aged Dalaran Red
 i(13509);	-- Clutch of Foresight
 i(23122);	-- Consecrated Sharpening Stone
 i(143542);	-- Crown Co. "Kure-Everything" Tonic
+i(180693);	-- Cyclonic Chronicles
 i(173810);	-- Darksight Potion
 i(142264);	-- Drudge Fluid
 i(120257);	-- Drums of Fury
@@ -38,6 +95,7 @@ i(129210);	-- Fel Crystal Fragments
 i(127768);	-- Fel Petal
 i(37431);	-- Fetch Ball
 i(139792);	-- Fruitful Bauble
+i(180874);	-- Gargon Whistle
 i(44618);	-- Glass of Aged Dalaran Red
 i(18269);	-- Gordok Green Grog
 i(19296);	-- Greater Darkmoon Prize
@@ -49,6 +107,7 @@ i(43626);	-- Happy Pet Snack
 i(33928);	-- Hollowed Bone Decanter
 i(101436);	-- Icemother Milk
 i(18284);	-- Kreeg's Stout Beatdown
+i(180696);	-- Legion Wing Insignia
 i(19297);	-- Lesser Darkmoon Prize
 i(62342);	-- Lesser Inscription of Charged Lodestone
 i(62344);	-- Lesser Inscription of Jagged Stone
@@ -64,7 +123,9 @@ i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
 i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
+i(180170);	-- Pulsing Animacone
 i(33448);	-- Runic Mana Potion
+i(180405);	-- Rusty Gargon Chain
 i(165699);	-- Scarlet Herring Lure
 i(141016);	-- Scroll of Town Portal: Faronaar
 i(141015);	-- Scroll of Town Portal: Kal'delar
@@ -75,12 +136,14 @@ i(169856);	-- Spark-1351
 i(1187);	-- Spiked Collar
 i(168271);	-- Stolen Ramkahen Banner
 i(15723);	-- Tea with Sugar
+i(178602);	-- Thorny Loop
 i(169860);	-- Tiny Dapper Hat
 i(143858);	-- Twilight Cultist Cowl
 i(143857);	-- Twilight Cultist Mantle
 i(143855);	-- Twilight Cultist Robe
 i(168003);	-- Unstable Manapearl
 i(13514);	-- Wail of the Banshee
+i(180697);	-- Wing Commanders Insignia
 i(85266);	-- Winter Blossom Tree
 i(128851);	-- Roasted juicycrunch carrots
 
@@ -92,6 +155,7 @@ i(146692);	-- Ancient Dreadleather Armor
 i(146700);	-- Ancient Gravenscale Armor
 i(169251);	-- Ancient Insect
 i(168234);	-- Ancient Runestone
+i(182021);	-- Antique Kyrian Javelin
 i(147438);	-- Bag of Wisp-Touched Elderhide
 i(146308);	-- Barrel of Storm Brew
 i(169224);	-- Big Red Button
@@ -152,6 +216,7 @@ i(169231);	-- Optical Override Drive
 i(163601);	-- Overgrown Anchor Weed
 i(167830);	-- Petrified Ebony Scale
 i(169325);	-- Petrified Ebony Scale
+i(174078);	-- Primrose's Pyrotechnic Powder
 i(169237);	-- Pulsating Marble
 i(168184);	-- Rare Metal
 i(169230);	-- Reflective Plating
@@ -187,6 +252,7 @@ i(118388);	-- Sliver of Iron (M)
 i(128416);	-- Soul Remnant (N)
 i(128417);	-- Soul Remnant (H)
 i(128418);	-- Soul Remnant (M)
+i(180207);	-- Spirit Cradle
 i(147075);	-- Spirit Net
 i(169246);	-- Strangely Seasoned Meat
 i(146682);	-- Suramari Soul-Wraps
@@ -239,14 +305,17 @@ i(171315); 	-- Reuse me (MTMM)
 
 
 -- "Toy"
+i(184634);	-- Adventurer's Herbalism Cache
 i(173791);	-- Baguette
 i(9282);	-- Blue Punch Card
 i(160364);	-- Bunch of Berries
 i(171987);	-- Champions of Azeroth Survival Kit
 i(173789);	-- Cross Bun
+i(179535);	-- Crumbling Pride Extractors
 i(6351);	-- Dented Crate
 i(173788);	-- Dusty Bun
 i(2460);	-- Elixir of Tongues
+i(183718);	-- Extra Gooey Gorm Gunk (move out of Uncollectable if this is used for anything)
 i(173786);	-- Ghostly Pale Ale
 i(151754);	-- Gold Plated Cage Head Key
 i(13874);	-- Heavy Crate
@@ -258,6 +327,7 @@ i(173781);	-- Lost Watermelon
 i(80914);	-- Mourning Glory
 i(173771);	-- Old Apple
 i(173778);	-- Orange Orange
+i(179392);	-- Orb of Burgeoning Ambition
 i(72201);	-- Plump Intestines
 i(9316);	-- Prismatic Punch Card
 i(79104);	-- Rusty Watering Can
@@ -268,6 +338,7 @@ i(173776);	-- Stale Loaf
 i(67495);	-- Strange Bloated Stomach
 i(160378);	-- Strongarm Stout
 i(170379);	-- Sunwarmed Sand
+i(178150);	-- Tasty Purian
 i(80513);	-- Vintage Bug Sprayer
 i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate

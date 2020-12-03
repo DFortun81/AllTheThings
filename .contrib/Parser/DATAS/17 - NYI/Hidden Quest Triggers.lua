@@ -451,6 +451,7 @@ _.HiddenQuestTriggers =
 		q(31485),	-- UNUSED — triggered after turning in quest #31281, "So You Want to Be a Chef..." in Valley of the Four Winds
 		q(31469),	-- UNUSED — triggered after turning in quest #31311, "Way of the Grill" in Vally of the Four Winds
 		q(30536),	-- FLAG - Weed War Training — triggered after turning in daily quest #30321, "Weed War II"
+		q(30566),	-- FLAG - Pest Problems Training — triggered after turning in daily quest #30319, "Pest Problems"
 		q(31950),	-- Tracking Quest: Move NPCs to Dais — triggered after turning in quest #31945, "Learn and Grow VI: Gina's Vote"
 		q(32357),	-- triggered after watching the RP that takes place after turning in #32316, "Heart of the Alliance," part of the Operation: Shieldwall campaign
 		q(32395),	-- Tracking Event: Saw Avartu - triggered while on "The Divine Bell," part of the Operation: Shieldwall campaign (at the end of the quest before killing Avartu)
@@ -1065,6 +1066,7 @@ _.HiddenQuestTriggers =
 		--    Legion     --
 		-------------------
 		--	Various tracking quests
+		q(38229),	-- triggered after recruiting Lord Maxwell Tyrosus for paladin order hall
 		q(42181),	-- triggered after turning in #39733, "The Lone Mountain"
 		q(43447),	-- Vignette: Wraithtalon — newer tracking quest for Wraithtalon rare in Val'sharah (on top of normal tracking quest - both pop at the same time)
 		q(33820),	-- Tracking Quest: Seen Escape Cinematic — triggered by cinematic during quest #34338, "The Descent"
@@ -1096,8 +1098,8 @@ _.HiddenQuestTriggers =
 		q(41306),	-- The Fallen Lion. Triggers with regular "The Fallen Lion" 40517
 		q(33079),	-- Triggers with "Demons Among Us" 40593
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
-		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin (all classes?)
-		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin (all classes?)
+		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock (all classes?)
+		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock (all classes?)
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
 		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
@@ -1397,6 +1399,9 @@ _.HiddenQuestTriggers =
 		q(41360),	-- Warrior Order Hall - Stormheim Teleport learned in Valdisdall
 		q(44062),	-- Warrior Order Hall - Suramar Teleport learned in Meredil
 		q(44061),	-- Warrior Order Hall - Val'sharah Teleport learned in Loriathil
+
+		q(40686),	-- Warlock Order Hall - Affliction chosen first
+		q(40514),	-- Warlock Order Hall - Revil convinced
 
 		--	Artifact Appearances
 		q(43655),	-- Hidden Appearance unlocked (The Silver Hand?)
@@ -2931,7 +2936,218 @@ _.HiddenQuestTriggers =
 		q(62851),	--  / nothing else done, quests were not there during week 1
 		q(62852),	-- /
 
+		-- Various tracking quests
+		q(61858),	-- taking the portal to Acherus during "Shadowlands: A Chilling Summons"
+		q(62686),	-- triggers when entering a zone with a 'Training' Calling active and your companion spawns (repeatable)
+		q(57565),	-- Aqir Assault Tracker — triggered upon picking up #61981, "Replenish the Reservoir"
+		q(57567),	-- N'Zoth Assault Tracker (Vale) — triggered upon picking up #61981, "Replenish the Reservoir"
+		q(63070),	-- Triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" (appears to be shared across covenants)
+		q(63360),	-- triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" as Kyrian
+		q(63359),	-- Triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" as Night Fae
+		q(63362),	-- triggered after completing mi(2174), "Tutorial, Dispose of the Detritus" as Venthyr
+		q(63071),	-- Triggered after completing mi(2295), "Tutorial: Necromantic Intervention" (appears to be shared across covenants)
+		q(63364),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Kyrian
+		q(63363),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Night Fae
+		q(63366),	-- triggered after completing mi(2295), "Tutorial: Necromantic Intervention" as Venthyr
+		q(60634),	-- Triggered after completing mi(2175),	"Tutorial: Spinal Swarm" (appears to be shared across covenants)
+		q(63368),	-- triggered after completing mi(2175),	"Tutorial: Spinal Swarm" as Kyrian
+		q(63367),	-- Triggered after completing mi(2175),	"Tutorial: Spinal Swarm" as Night Fae
+		q(63370),	-- triggered after completing mi(2175), "Tutorial: Spinal Swarm" as Venthyr
+		
+		-- Ardenweald
+		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
+		q(61126),	-- Turning in the Twinklestar Gardening Tools during the Cache of the Moon sequence
+		q(61170),	-- triggered when unlocking the Harmonic Chest (looting it has a separate ID, in Achievements file)
+		q(62943),	-- Triggered when looting Crafter's Basket for the Enchanting: Boundless Basket WQ
+		q(62945),	-- Triggered when looting Crafter's Basket for the Inscription: Hymnal of Reprise WQ
+		q(61208),	-- triggered for no reason when i was traveling to the area where the "Swarm Defense" WQ takes place in Ardenweald.  i just went into the area between the main bit of Ardenweald + the Tirna Scythe area and it was like "what's up"
+		-- Rares
+		q(62271),	-- Deifir the Untamed secondary quest
+		q(62269),	-- Macabre secondary quest
+		q(62270),	-- Old Ardeite secondary quest
+		q(61198),	-- Triggers when successfully completing the pre-req sequence for the Shimmermist Runner rare
+		-- Ardenweald Covenant (Night Fae)
+		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
+		q(57559),	-- Triggered after turning in For Queen and Grove! (58160)
+		q(62706),	-- Triggered after turning in For Queen and Grove! (58160)
+		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
+		q(60820),	-- \
+		q(60821),	--  \
+		q(60822),	--   flower triggers for opening Lunarlight Pod (60794) (don't have coords)
+		q(60823),	--  /
+		q(60824),	-- /
+		q(61692),	-- \
+		q(61693),	--  \
+		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3 
+		q(61695),	--  /
+		q(61696),	-- /
+		q(61590),	-- Triggered after first time channeling anima to Glitterfall Basin
+		q(60722),	-- Triggered after turning in The Roots Thirst
+		q(59431),	-- Triggered when looting A Meandering Story
+
+		-- Bastion
+		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
+		q(58117),	-- Triggered after turning in The Aspirant's Crucible (57709)
+		q(60294),	-- Triggered after choosing Larion from Nemea during Pride Or Unit quest
+		q(60293),	-- Triggered after choosing Phalynx from Pelodis during Pride Or Unit quest
+		q(62841),	-- Triggered after first time using Kyrian Bell buff item
+		q(58292),	-- looting Purians
+		q(58293),	-- placing first Purian in the bowl
+		q(58294),	-- placing second Purian in the bowl
+		q(62734),	-- Triggered after opening Silver Strongbox during The Sweetest Tribute quest
+		q(60259),	-- Your Personal Assistant - choosing Akiris
+		q(60260),	-- Your Personal Assistant - choosing Ipa — shares appearance with Dintos + Minta, so possible each steward has its own questID and you get credit for all the ones that share its appearance?
+		q(60261),	-- Your Personal Assistant - this one has triggered when choosing Thima and Syla so far
+		q(60262),	-- Your Personal Assistant - choosing Ipa/Akiris
+		q(60263),	-- Your Personal Assistant - choosing Ipa/Akiris
+			--	more steward info: https://imgur.com/0tLgE13
+			--	if each one has its own questID but grants credit for all in the same shared appearances set, these are the sets that are missing:
+			--	Bumos / Ilapos / Asellia / Syla / Zenza
+			--	Abalus / Thima
+			--	Bola / Pico / Ipadipos / Chaermi
+			--	Gramilos / Apa / Dafi
+			--	Haka
+			--	Mupu / Deka / Laratis
+			--	Kimos / Toulis / Korinthe
+			--	Akiris / Isilios / Koukis / Tibo / Farra / Arathane
+		--	Bastion Rares
+		q(63422),	-- Aethon secondary quest
+		q(62192),	-- Baedos secondary quest
+		q(62158),	-- Basilofos secondary quest
+		q(62167),	-- Bookkeeper Mnemis secondary quest along with 59022
+		q(62191),	-- Cloudfeather Guardian secondary quest
+		q(63424),	-- Cloudtail secondary quest
+		q(61802),	-- Echo of Aella kill quest
+		q(62251),	-- Echo of Aella secondary loot quest
+		q(57705),	-- Herculon kill quest
+		q(62201),	-- Herculon secondary loot quest
+		q(63421),	-- Nemaeus secondary quest
+		q(63411),	-- Nikara Blackheart secondary quest
+		q(63423),	-- Sigilback secondary quest
+		q(62197),	-- Wingflayer the Cruel secondary quest
+		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
+		--	Bastion Treasures
+		q(60875),	-- seems to trigger for all Hidden Hoard chests on top of unique questIDs for each
+		q(60880),	-- triggers on Hidden Hoard chests for Kyrian players (???)
+		--	Bastion WQs
+		q(63262),	-- triggered after completing the WQ #60858, "Flight School: Up and Away!"
+		q(63263),	-- triggered after completing the WQ #60911, "Flight School: Flapping Frenzy"
+		--	Kyrian Covenant
+		q(63216),	-- triggers when turning in #57897, "Dangerous to Go Alone"
+		q(62755),	-- triggers when turning in #57904, "Our Eternal Charge"
+		q(61589),	-- triggered when turning in #57903, "Power in the Sky," possibly connected to channeling anima to Purity's Pinnacle
+
+		-- Maldraxxus
+		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
+		q(59439),	-- triggered when throwing Viscous Oil from Burning Extract into the Pool of Potions while on the quest "Pool of Potions"
+		q(59677),	-- Triggered when looting the Battlefront Rations Key (180277)
+		q(57619),	-- triggered while on "In Death We Are Truly Tested" -- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
+		q(59843),	-- triggered when turning in "A Sure Bet"
+		q(62372),	-- triggered when 'feeding' Page 76 to the necronomicron
+		q(62786),	-- triggered when killing Unbreakable Urtz during "The Ladder" - no other arena opponents triggered quests
+		q(62738),	-- triggered when accepting 62748 [Rallying Maldraxxus]
+		q(63416),	-- triggered when accepting 62748 [Rallying Maldraxxus]
+		q(62712),	-- bonus objective, "War of Attrition" -- what controls availability of these in SL?  i have a bonus objective up at 60 in Ardenweald but i can't see this one
+		-- Maldraxxus Pool of Mixed Monstrosities
+		q(62805),	-- Pulsing Leech secondary quest
+		-- Maldraxxus Rares
+		q(61987),	-- Deepscar secondary kill
+		q(61991),	-- Gristlebeak secondary kill
+		q(61988),	-- Indomitable Schmitd secondary quest
+		q(61992),	-- Pesticide secondary quest
+		q(61986),	-- Tahonta secondary quest
+		-- Maldraxxus WQs
+		q(62948),	-- "learning" the quest items while on #61615, "Tailoring: Haunting Hood"
+		q(57242),	-- triggered when completing #57205, "A Few Bumps Along the Way"
+		-- Maldraxxus Covenant
+		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
+		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
+		q(63361),	-- Triggered when completing 60459 'Anima Salvage' (First Calling)
+		q(63365),	-- Triggered after starting 3rd tutorial Adventure [Necrolord]
+		q(63369),	-- Triggered after completing 3rd tutorial Adventure [Necrolord]
+
+
+		-- Oribos
+		q(62019),	-- Triggered after choosing Night Fae covenant
+		q(62710),	-- Triggered after choosing Night Fae covenant
+		q(62023),	-- Triggered after choosing Kyrian covenant
+		q(62708),	-- Triggered after choosing Kyrian covenant
+		q(62020),	-- Triggered after choosing Venthyr covenant
+		q(62709),	-- Triggered after choosing Venthyr covenant
+		q(62017),	-- Triggered after choosing Necrolords covenant
+		q(62711),	-- Triggered after choosing Necrolords covenant
+		-- q(62152),	-- Triggered when turning in 62159 after choosing Necrolords covenant... kind of want to see when it happens again though
+		q(63348),	-- Triggered after turning in Explore Torghast (62932) at Bolvar
+
+		-- Revendreth
+		q(60523),	-- Triggered after reading Theotar's Diary
+		q(60527),	-- Triggered after reading Theotar's Diary
+		q(59222),	-- triggered during #57536, "Mirror Making, Not Breaking" when speaking to Laurent
+		q(62661),	-- Triggered during first completion of #58080 [Favor: Glittering Primrose Necklace]
+		q(62669),	-- Triggered during first completion of #58070 [Favor: Soul Hunter Blade]
+		q(60847),	-- Upon looting [Soul Hunter's Blade] (173707)
+		q(62641),	-- killing or looting Sabina during "Setting Sabina Free"
+		q(62671),	-- think this triggered when i turned in "Favor: Vial of Dredger Muck"
+		-- Revendreth Rares
+		q(60581),	-- Endlurker secondary quest
+		q(62463),	-- Prideful Hulk secondary quest
+		q(60583),	-- Tollkeeper Varaboss secondary quest
+		-- Revendreth WQs
+		q(59858),	-- Tea Tales: Theotar Achievement criteria
+		q(59861),	-- Tea Tales: Theotar Achievement criteria
+		q(60701),	-- triggered when completing #60653, "Mirror Restoration"
+		q(59857),	-- triggered when completing Tea Tales: Vulca
+		-- Venthyr Covenant
+		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
+		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
+		q(62827),	-- uhhhhh i killed myself by jumping into nothingness from one of the platforms
+		q(59316),	-- turning in quest #62918, "Binding Power"
+		q(62950),	-- clicking "Activate" after putting "Thrill Seeker" in Nadjia's soulbind tree
+		q(59317),	-- triggered when turning in #62919, "Strengthening the Bond"
+		q(62749),	-- triggered when turning in #62921, "Our True Purpose"
+		q(63063),	-- looks like an unused version of #63056, "Sanctum Upgrade: Mirror Network"
+		q(60300),	-- Channeling Anima Conduit to Wanecrypt Hill - 1st time
+		q(61587),	-- Channeling Anima Conduit to Wanecrypt Hill - 1st time
+		q(60304),	-- Channeling Anima Conduit to Crypt of the Forgotten
+		q(63237),	-- Completing 1st 'Campaign Adventure'
+		q(63260),	-- Completing 1st 'Campaign Adventure'
+		q(63242),	-- Completing 2nd 'Campaign Adventure'
+		q(63323),	-- Completing 2nd 'Campaign Adventure'
+
+		-- The Maw
+		q(59911),	-- triggered after picking up Ruiner's End
+		q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)
+		q(62939),	-- triggered after watching the cutscene for Stand as One / landing in Oribos
+		q(63177),	-- Triggered after using Encased Riftwalker Essence
+		q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
+		q(62908),	-- triggered after collecting 5 souls during "Rule 1: Have an Escape Plan"
+		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
+		q(61600),	-- triggered when using Animaflow Stabilizer (Ve'nari item)
+		q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
+		q(63377),	-- First kill of Soulsmith Yor-Mattar (bonus objective 59441)
+		q(63383),	-- First kill of Malevolent Stygia
+		-- The Maw rares
+		q(63380),	-- Agonix secondary quest
+		q(63373),	-- Dartanos secondary quest
+		q(61140),	-- Dath Rezara secondary quest
+		q(63372),	-- Drifting Sorrow secondary quest
+		q(63413),	-- Odalrik secondary quest/first kill?
+		q(63375),	-- Orrholyn secondary quest
+		q(63388),	-- Ratgusher secondary quest?
+		q(63374),	-- Razkazzar secondary quest
+		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
+					-- also for mogwai when killing Eketra...
+		
+		-- Eye of the Jailer Levels
+		-- q(),	-- Mortars/Missiles (1)
+		q(63379),	-- Assassins (2)
+		-- q(),	-- Chains (3)
+		q(63376),	-- Abductors (4)
+		q(63417),	-- Immediate Extinction (5)
+
 		-- Torghast
+		q(58192),	-- Triggered after killing The Grand Malleare to complete The Soulforges
+		q(59340),	-- Triggered after using Gallath's Bell
 		q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)
 		q(59988),	-- Tracking Quest (Finished The Soulforges Layer 1)
 		q(59989),	-- Tracking Quest (Finished Coldheart Interstitia Layer 1)
@@ -2942,13 +3158,16 @@ _.HiddenQuestTriggers =
 		q(59995),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
 		q(59996),	-- Tracking Quest (Finished Skoldus Hall Layer 1)
 		q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
-
-		-- Ardenweald Covenant Questline
-		q(62745),	-- Daughter of the Night Warrior Questline finished
-
-		-- Revendreth WQ
-		q(59858),	-- Tea Tales: Theotar Achievement criteria
-		q(59858),	-- Tea Tales: Theotar Achievement criteria
+		q(62967),	-- Triggered when opening Domination Lock for Prison of the Forgotten quest
+		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
+		q(61305),	-- triggered when completing #61313, "Champion: Kythekios"
+		q(58194),	-- Soulforges, layer 3, (Arch-Suppressor Laguas as boss)
+		q(58186),	-- looting Soul Ash from Custodian Thonar on Floor 6 of the Fracture Chambers
+		q(58187),	-- Fracture Chambers Layer 2
+		q(58188),	-- Fracture Chambers Layer 3
+		q(58204),	-- Mort'regar Layer 1
+		q(58205),	-- Mort'regar Layer 2
+		q(59326),	-- Mort'regar Layer 3
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

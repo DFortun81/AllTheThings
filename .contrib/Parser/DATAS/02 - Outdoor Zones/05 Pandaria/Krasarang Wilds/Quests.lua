@@ -982,24 +982,6 @@ _.Zones =
 
 
 
-				q(32169, {	-- A Colossal Victory
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				i(91822, {
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						q(32163, {	-- Beastmaster's Hunt: The Crab
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-					},
-				}),
-				q(32183, {	-- Beastmaster's Quarry: The Crab
-					["provider"] = { "n", 67508 },	-- Colossal Viseclaw
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 				q(30740, {	-- Champion of Chi-Ji
 					["provider"] = { "n", 60506 },	-- Thelonius
 					["isDaily"] = true,

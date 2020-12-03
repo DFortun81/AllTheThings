@@ -116,6 +116,26 @@ namespace ATT
                 // Attempt to get an existing item dictionary.
                 return ITEMS.TryGetValue(itemID, out Dictionary<string, object> obj) ? obj : null;
             }
+
+            /// <summary>
+            /// Returns the 'name' field of the data, or the corresponding name based on the 'itemID' of the data if it has been
+            /// cached into the Item DB already
+            /// </summary>
+            /// <param name="data"></param>
+            /// <returns></returns>
+            public static bool TryGetName(Dictionary<string, object> data, out string name)
+            {
+                data.TryGetValue("name", out name);
+
+                if (name == null)
+                {
+                    data.TryGetValue("itemID", out int itemID);
+                    if (itemID > 0)
+                        Get(itemID).TryGetValue("name", out name);
+                }
+
+                return name != null;
+            }
             #endregion
             #region Export
             /// <summary>
@@ -367,7 +387,6 @@ namespace ATT
                         }
 
                     // List O' List O' Objects Data Type Fields (stored as List<List<object>> for usability reasons)
-                    case "cost":
                     case "sym":
                         {
                             // Convert the data to a list of generic objects.
@@ -395,6 +414,9 @@ namespace ATT
                             item[field] = newListOfLists;
                             break;
                         }
+                    case "cost":
+                        Objects.MergeField_cost(item, value);
+                        break;
 
                     // Functions
                     case "OnUpdate":
@@ -406,6 +428,10 @@ namespace ATT
                         {
                             // ignore fields starting with _ since those will be used for metadata in some scenarios
                             if (field.StartsWith("_"))
+                                break;
+
+                            // ignore the 'hash' field which is generated during recipe automation and is dynamic in-game anyway
+                            if (field == "hash")
                                 break;
 
                             // Only warn the programmer once per field per session.

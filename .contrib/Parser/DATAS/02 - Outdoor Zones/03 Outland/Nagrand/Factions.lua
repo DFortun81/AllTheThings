@@ -171,8 +171,10 @@ _.Zones =
 					}),
 					n(VENDORS, {
 						n(20241, {	-- Provisioner Nasela <Mag'har Quartermaster>
-							["coord"] = { 53.4, 36.8, 107 },
-							["coord"] = { 55.8, 37.8, 107 },
+							["coords"] = {
+								{ 53.4, 36.8, 107 },	-- matches Wowhead
+								{ 55.8, 37.8, 107 },
+							},
 							["g"] = {
 								i(29145),	-- Band of Ancestral Spirits
 								i(29139),	-- Ceremonial Cover

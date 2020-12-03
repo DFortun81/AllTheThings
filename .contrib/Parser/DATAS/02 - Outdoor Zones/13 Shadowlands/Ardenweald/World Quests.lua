@@ -23,7 +23,25 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61948, {	-- Airborne Defense Force
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61949, {	-- Ardenweald's Tricksters
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61631, {	-- Drust Between You and Me
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61440, {	-- Enchanting: Boundless Basket
+					["requireSkill"] = ENCHANTING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61983, {	-- Fishing: Speckled Flametail
+					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -36,6 +54,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61599, {	-- Inscription: Hymnal of Reprise
+					["requireSkill"] = INSCRIPTION,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61303, {	-- It's Raining Sparkles
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -44,7 +67,15 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61946, {	-- Natural Defenders
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61411, {	-- Our Heart Will Go On
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(58975, {	-- Pest Removal
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -60,11 +91,23 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(60574, {	-- Shaking 'Shrooms
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60585, {	-- Spriggan Riot
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(60476, {	-- Spriggan Size Me!
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60770, {	-- Squish and Burn
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(60786, {	-- Swarm Defense
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -83,6 +126,11 @@ _.Zones =
 				q(60739, {	-- Tough Crowd
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
+					["g"] = {
+						n(170080, {	-- Exposed Boggart
+							["description"] = "THIS IS A BOGGART.",
+						}),
+					},
 				}),
 				q(60597, {	-- Trouble at the Gormling Corral
 					["isWorldQuest"] = true,
@@ -100,7 +148,12 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				i(181430),	-- Evernight Drape
+				-- Runetender [Leather]
+				i(181413),	-- Runetender Headguard
 				i(181407),	-- Runetender Mitts
+				i(181417),	-- Runetender Pants
+				i(175713),	-- Sprigthistle Loop
 				i(175740),	-- Valeshroud Torque
 			}),
 		}),

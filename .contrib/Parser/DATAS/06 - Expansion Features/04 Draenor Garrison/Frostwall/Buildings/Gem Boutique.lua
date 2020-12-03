@@ -83,6 +83,7 @@ _.ExpansionFeatures =
 										["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 									}),
 									i(116079, {	-- Recipe: Taladite Amplifier
+										["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 										["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
 									}),
 									i(116078, {	-- Recipe: Taladite Recrystalizer

@@ -154,6 +154,11 @@ profession(202, {	-- Engineering
 							["recipeID"] = 310493
 						},
 						{
+							["name"] = "Disposable Spectrophasic Reanimator",
+							["hash"] = "recipeID345179",
+							["recipeID"] = 345179
+						},
+						{
 							["name"] = "Gravimetric Scrambler Cannon",
 							["hash"] = "recipeID310492",
 							["recipeID"] = 310492
@@ -1655,13 +1660,13 @@ profession(202, {	-- Engineering
 					["g"] = {
 						{
 							["name"] = "Gearspring Parts",
-							["hash"] = "recipeID169080",
-							["recipeID"] = 169080
+							["hash"] = "recipeID178242",
+							["recipeID"] = 178242
 						},
 						{
 							["name"] = "Gearspring Parts",
-							["hash"] = "recipeID178242",
-							["recipeID"] = 178242
+							["hash"] = "recipeID169080",
+							["recipeID"] = 169080
 						},
 						{
 							["name"] = "Primal Welding",
@@ -1708,16 +1713,6 @@ profession(202, {	-- Engineering
 					["hash"] = "categoryID418",
 					["g"] = {
 						{
-							["name"] = "Advanced Muzzlesprocket",
-							["hash"] = "recipeID187496",
-							["recipeID"] = 187496
-						},
-						{
-							["name"] = "Bi-Directional Fizzle Reducer",
-							["hash"] = "recipeID187497",
-							["recipeID"] = 187497
-						},
-						{
 							["name"] = "Didi's Delicate Assembly",
 							["hash"] = "recipeID169078",
 							["recipeID"] = 169078
@@ -1736,16 +1731,6 @@ profession(202, {	-- Engineering
 							["name"] = "Hemet's Heartseeker",
 							["hash"] = "recipeID173289",
 							["recipeID"] = 173289
-						},
-						{
-							["name"] = "Infrablue-Blocker Lenses",
-							["hash"] = "recipeID187521",
-							["recipeID"] = 187521
-						},
-						{
-							["name"] = "Linkgrease Locksprocket",
-							["hash"] = "recipeID169076",
-							["recipeID"] = 169076
 						},
 						{
 							["name"] = "Mecha-Blast Rocket",
@@ -1788,24 +1773,14 @@ profession(202, {	-- Engineering
 							["recipeID"] = 162217
 						},
 						{
-							["name"] = "Taladite Firing Pin",
-							["hash"] = "recipeID187520",
-							["recipeID"] = 187520
-						},
-						{
-							["name"] = "True Iron Trigger",
-							["hash"] = "recipeID177363",
-							["recipeID"] = 177363
+							["name"] = "Ultimate Gnomish Army Knife",
+							["hash"] = "recipeID162208",
+							["recipeID"] = 162208
 						},
 						{
 							["name"] = "Ultimate Gnomish Army Knife",
 							["hash"] = "recipeID169140",
 							["recipeID"] = 169140
-						},
-						{
-							["name"] = "Ultimate Gnomish Army Knife",
-							["hash"] = "recipeID162208",
-							["recipeID"] = 162208
 						},
 						{
 							["name"] = "World Shrinker",
@@ -2529,23 +2504,23 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Mechanized Snow Goggles",
-							["hash"] = "recipeID61481",
-							["recipeID"] = 61481
-						},
-						{
-							["name"] = "Mechanized Snow Goggles",
-							["hash"] = "recipeID61482",
-							["recipeID"] = 61482
-						},
-						{
-							["name"] = "Mechanized Snow Goggles",
 							["hash"] = "recipeID61483",
 							["recipeID"] = 61483
 						},
 						{
 							["name"] = "Mechanized Snow Goggles",
+							["hash"] = "recipeID61481",
+							["recipeID"] = 61481
+						},
+						{
+							["name"] = "Mechanized Snow Goggles",
 							["hash"] = "recipeID56465",
 							["recipeID"] = 56465
+						},
+						{
+							["name"] = "Mechanized Snow Goggles",
+							["hash"] = "recipeID61482",
+							["recipeID"] = 61482
 						},
 						{
 							["name"] = "Truesight Ice Blinders",

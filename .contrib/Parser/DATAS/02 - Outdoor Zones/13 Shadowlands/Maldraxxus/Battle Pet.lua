@@ -7,17 +7,23 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
 			filter(101, {	-- Battle Pets
-				i(181259, {	-- Clutch
-					--["crs"] = {  },
-				}),
 				p(3051, {	-- Animated Cruor
-					--["crs"] = {  },
+					["crs"] = { 175023 },
 				}),
 				p(3050,	{	-- Bleak Skitterer
-					--["crs"] = {  },
+					["crs"] = { 175022 },
+				}),
+				p(2950, {	-- Clutch
+					["crs"] = { 172130 },
+				}),
+				p(3083, {	-- Crawbat
+					["crs"] = {	176024 },
+				}),
+				p(3052, {	-- Necroray Spawnling
+					["crs"] = { 175024 },
 				}),
 				p(3049,	{	-- Pulsating Maggot
-					--["crs"] = {  },
+					["crs"] = { 175021 },
 				}),
 			}),
 		}),

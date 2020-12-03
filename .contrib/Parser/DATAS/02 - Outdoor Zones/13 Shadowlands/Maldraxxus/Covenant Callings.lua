@@ -8,12 +8,13 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(-901, {	-- Covenant Callings
 				["description"] = "|cFF40bf40Necrolord Covenant|r only.",
-				["g"] = {
+				["g"] = sharedData({
+					["sourceQuests"] = { 59609 },	-- No Rest For the Dead
+				}, {
 					q(60390, {	-- Aiding Ardenweald
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
 						["coord"] = { 54.2, 68.8 , 1536 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -22,7 +23,6 @@ _.Zones =
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
 						["coord"] = { 54.2, 68.8 , 1536 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -31,7 +31,6 @@ _.Zones =
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
 						["coord"] = { 54.2, 68.8 , 1536 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -40,7 +39,6 @@ _.Zones =
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
 						["coord"] = { 54.2, 68.8 , 1536 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -49,7 +47,6 @@ _.Zones =
 						["provider"] = { "n", 167205 },	-- Yondare Hex
 						--["coord"] = { , 1536 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -58,16 +55,14 @@ _.Zones =
 						["provider"] = { "n", 167207 },	-- Sabbath Nightshade
 						--["coord"] = { , 1536 },
 						["isWeekly"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60423, {	-- A Call to Ardenweald
 						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
+						--["coord"] = { , 1698 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -76,7 +71,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1536 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -85,7 +79,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1536 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -94,7 +87,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1536 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -103,7 +95,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1536 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -112,43 +103,38 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1536 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60440, {	-- Challenges in Ardenweald
 						["provider"] = { "n", 167208 },	-- Grandmaster Vole
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 44.0, 1698 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
 						},
 					}),
 					q(60443, {	-- Challenges in Bastion
 						["provider"] = { "n", 167208 },	-- Grandmaster Vole
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 44.0, 1698 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
 						},
 					}),
 					q(60445, {	-- Challenges in Maldraxxus
 						["provider"] = { "n", 167208 },	-- Grandmaster Vole
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 44.0, 1698 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
 						},
 					}),
 					q(60449, {	-- Challenges in Revendreth
 						["provider"] = { "n", 167208 },	-- Grandmaster Vole
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 44.0, 1698 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
 						},
@@ -157,7 +143,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1536 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -166,7 +151,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1536 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -175,7 +159,6 @@ _.Zones =
 						["provider"] = { "n", 167207 },	-- Sabbath Nightshade
 						--["coord"] = { , 1536 },
 						["isWeekly"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -184,7 +167,6 @@ _.Zones =
 						["provider"] = { "n", 167209 },	-- Niall Kugal
 						["coord"] = { 54.4, 67.8, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -193,7 +175,6 @@ _.Zones =
 						["provider"] = { "n", 167209 },	-- Niall Kugal
 						["coord"] = { 54.4, 67.8, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -202,7 +183,6 @@ _.Zones =
 						["provider"] = { "n", 167209 },	-- Niall Kugal
 						["coord"] = { 54.4, 67.8, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -211,7 +191,6 @@ _.Zones =
 						["provider"] = { "n", 167209 },	-- Niall Kugal
 						["coord"] = { 54.4, 67.8, 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -220,7 +199,6 @@ _.Zones =
 					--	["provider"] = { "n",  },	--
 					--	["coord"] = { , 1536 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
 						},
@@ -230,7 +208,6 @@ _.Zones =
 						["provider"] = { "n", 173003 },	-- Nalcorn Talsen
 						["coord"] = { 50.6, 53.4, 1536 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181732, {	-- Tribute of the Ambitious
 								i(184159, {	-- Oozing Necroray Egg (Timer)
@@ -243,7 +220,7 @@ _.Zones =
 							}),
 						},
 					}),
-				},
+				}),
 			}),
 		}),
 	}),

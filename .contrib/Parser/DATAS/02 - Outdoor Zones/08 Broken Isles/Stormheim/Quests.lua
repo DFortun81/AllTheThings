@@ -1182,18 +1182,6 @@ _.Zones =
 							}),
 						},
 					}),
-					n(-185, {	-- Inscription
-						["requireSkill"] = INSCRIPTION,
-						["g"] = {
-							q(40052, {	-- Ancient Vrykul Mastered
-								["sourceQuests"] = { 39947 },	-- Not So Complex?
-								["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
-								["g"] = {
-									i(137728),	-- Technique: Scroll of Forgotten Knowledge
-								},
-							}),
-						},
-					}),
 					n(-186, {	-- Jewelcrafting
 						["requireSkill"] = JEWELCRAFTING,
 						["g"] = {
@@ -1289,9 +1277,7 @@ _.Zones =
 				q(42399),	-- Ready to Work
 				q(38794),	-- Rethu's Sacrifice
 				q(47052),	-- Retribution: Fate of the Tideskorn
-				q(39946),	-- Right Tool for the Job
 				q(38803),	-- Rin'thissa
-				q(39945),	-- Runes Within the Ruins
 				q(40603),	-- Seeking the Valkyra
 				q(40146),	-- Seymour and Agnes
 				q(40404),	-- Show Legion Portal

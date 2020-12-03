@@ -168,13 +168,6 @@ _.Zones =
 						i(3683),	-- Recipe: Gooey Spider Cake
 					},
 				}),
-				q(40588, {	-- Following the Curse
-					["provider"] = { "n", 100323 },	-- Revil Kost
-					["lvl"] = 98,
-					["coord"] = { 77.4, 36.1, 47 },
-					["classes"] = { WARLOCK },
-					["sourceQuest"] = 40495,	-- Ulthalesh, the Deadwind Harvester
-				}),
 				q(40931, {	-- Following the Curse
 					["provider"] = { "n", 100323 },	-- Revil Kost
 					["lvl"] = 98,

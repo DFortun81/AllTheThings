@@ -10,6 +10,8 @@ _.Zones =
 				i(178884),	-- Greater Prideful Spirit (Epic)
 				i(178883),	-- Divine Prideful Spirit (Rare)
 				i(178882),	-- Prideful Spirit Revendreth(Uncommon)
+				i(179311),	-- Oxxein Lockbox
+				i(177772),	-- Avowed Tormenter's Cord
 				i(177769),	-- Avowed Tormenter's Handwraps
 				i(177770),	-- Avowed Tormenter's Hood
 				i(177771),	-- Avowed Tormenter's Leggings
@@ -22,7 +24,14 @@ _.Zones =
 				i(178945),	-- Boneclutched Greatstaff
 				i(177800),	-- Bubbling Concoction
 				i(179319),	-- Caged Cudgel
-				i(180602),	-- Crimson Dredwing Pup (Bats only?)
+				i(180602, {	-- Crimson Dredwing Pup
+					-- TODO: possibly add other bats?
+					["crs"] = {
+						169154,	-- Famished Fangling
+						156395,	-- Starving Dredbat
+					},
+				}),
+				i(180864),	-- Decanter of Distilled Shadows
 				i(177778),	-- Depraved Darkblade's Belt
 				i(177779),	-- Depraved Darkblade's Bindings
 				i(177797),	-- Depraved Darkblade's Epaulets
@@ -36,6 +45,12 @@ _.Zones =
 				i(177816),	-- Dredhollow Cape
 				i(179323),	-- Dredhollow Cudgel
 				i(179329),	-- Gargoyle Heartpiercer
+				i(182690),	-- Gilded Crusader's Morningstar
+				i(173720, {	-- Glittering Primrose Necklace
+					["questID"] = 58080,	-- Favor: Glittering Primrose Necklace
+					["isDaily"] = true,
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
+				}),
 				i(177813),	-- Hopebreaker's Badge
 				i(183420, {	-- Hopebreaker's Right Boot
 					i(183418, {	-- Hopebreaker's Boots
@@ -47,6 +62,11 @@ _.Zones =
 				}),
 				i(179333),	-- Inquisitor Cudgel
 				i(177809),	-- Lithe Rapier
+				i(173721, {	-- Love and Terror
+					["questID"] = 58081,
+					["isDaily"] = true,
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
+				}),
 				i(183417, {	-- Mail Courier's Right Runner
 					i(182719, {	-- Mail Courier's Runners
 						["cost"] = {
@@ -55,6 +75,7 @@ _.Zones =
 						},
 					}),
 				}),
+				i(182725),	-- Mail Courier's Wristguards
 				i(177795),	-- Night Guardian Armplates
 				i(177789),	-- Night Guardian Breastplate
 				i(177794),	-- Night Guardian Cincture
@@ -83,6 +104,11 @@ _.Zones =
 				i(177785),	-- Savage Bonemauler Shoulderguards
 				i(177781),	-- Savage Bonemauler Striders
 				i(177801),	-- Sky Legion Halbard
+				i(173707, {	-- Soul Hunter's Blade
+					["questID"] = 58070,
+					["isDaily"] = true,
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
+				}),
 				i(183423, {	-- Stone Legion Right Sabaton
 					i(183421, {	-- Stone Legion Sabatons
 						["cost"] = {
@@ -93,6 +119,22 @@ _.Zones =
 				}),
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace
+				i(173709, {	-- Vial of Dredger Muck
+					["description"] = "Drops from Dredger mobs and can be found in Revendreth treasure chests.",
+					["questID"] = 58071,	-- Favor: Vial of Dredger Muck
+					["isDaily"] = true,
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
+					["crs"] = {
+						160846,	-- Beleaguered Excavator
+						161490,	-- Blackbale Flunky
+						161258,	-- Chalice Dredger
+						176118,	-- Confirmed Dredger
+						170953,	-- Head Pugilist
+						158193,	-- Manor Servant
+						159495,	-- Mire Dredger
+					},
+				}),
+				i(179334),	-- Wingblade Staff
 			}),
 		}),
 	}),

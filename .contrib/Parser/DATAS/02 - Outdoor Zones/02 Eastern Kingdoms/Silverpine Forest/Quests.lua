@@ -257,7 +257,6 @@ _.Zones =
 					["provider"] = { "i", 61505 },	-- Partially Digested Head
 					["description"] = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.|r",
 					["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
-					["races"] = HORDE_ONLY,
 				}),
 				q(26998, {	-- Iterating Upon Success
 					["provider"] = { "n", 44784 },	-- High Apothecary Shana T'veen

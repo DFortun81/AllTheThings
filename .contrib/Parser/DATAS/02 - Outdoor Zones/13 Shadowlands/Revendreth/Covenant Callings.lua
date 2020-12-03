@@ -13,7 +13,6 @@ _.Zones =
 						["provider"] = { "n", 165302 },	-- Rendle
 						--["coord"] = { , 1525 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -22,7 +21,6 @@ _.Zones =
 						["provider"] = { "n", 165302 },	-- Rendle
 						--["coord"] = { , 1525 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -31,7 +29,6 @@ _.Zones =
 						["provider"] = { "n", 165302 },	-- Rendle
 						--["coord"] = { , 1525 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -40,7 +37,6 @@ _.Zones =
 						["provider"] = { "n", 165302 },	-- Rendle
 						--["coord"] = { , 1525 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -49,7 +45,6 @@ _.Zones =
 						["provider"] = { "n", 164739 },	-- Devahia
 						--["coord"] = { 48.9, 39.3, 1525 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -58,25 +53,23 @@ _.Zones =
 						["provider"] = { "n", 164738 },	-- Tenaval
 						--["coord"] = { , 1525 },
 						["isWeekly"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
 					}),
 					q(60422, {	-- A Call to Ardenweald
-						--["provider"] = { "n",  },	--
-						--["coord"] = { , 1533 },
+						["provider"] = { "n", 158653 },	-- Prince Renathal
+						["coord"] = { 51.8, 37.5, 1699 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
-							i(181556),	-- 	Tribute of the Court
+							i(181556),	-- Tribute of the Court
+							i(181475),	-- Bounty of the Grovewardens [Live Reward]
 						},
 					}),
 					q(60427, {	-- A Call to Bastion
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -85,7 +78,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -94,7 +86,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -103,7 +94,6 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -112,43 +102,40 @@ _.Zones =
 						--["provider"] = { "n",  },	--
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
 					}),
 					q(60441, {	-- Challenges in Ardenweald
 						["provider"] = { "n", 165291 },	-- The Accuser
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 78.2, 1700 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181557),	-- Favor of the Court
+							i(181476),	-- Tribute of the Wild Hunt [Live Reward]
 						},
 					}),
 					q(60444, {	-- Challenges in Bastion
 						["provider"] = { "n", 165291 },	-- The Accuser
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 78.2, 1700 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181557),	-- Favor of the Court
 						},
 					}),
 					q(60446, {	-- Challenges in Maldraxxus
 						["provider"] = { "n", 165291 },	-- The Accuser
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 78.2, 1700 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181557),	-- Favor of the Court
+							i(181733),	-- Tribute of the Duty-Bound [Provided at Renown 6/Campaign 3]
 						},
 					}),
 					q(60448, {	-- Challenges in Revendreth
 						["provider"] = { "n", 165291 },	-- The Accuser
-						--["coord"] = { , 1533 },
+						["coord"] = { 56.5, 78.2, 1700 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181557),	-- Favor of the Court
 						},
@@ -157,7 +144,6 @@ _.Zones =
 						["provider"] = { "n", 158713 },	-- The Curator
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -166,7 +152,6 @@ _.Zones =
 						["provider"] = { "n", 158713 },	-- The Curator
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -175,7 +160,6 @@ _.Zones =
 						["provider"] = { "n", 164738 },	-- Tenaval
 						--["coord"] = { , 1525 },
 						["isWeekly"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -184,7 +168,6 @@ _.Zones =
 						["provider"] = { "n", 164741 },	-- Tactician Sakaa
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -193,16 +176,15 @@ _.Zones =
 						["provider"] = { "n", 164741 },	-- Tactician Sakaa
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
+							i(181372),	-- Tribute of the Ascended [Live Reward]
 						},
 					}),
 					q(60406, {	-- Training in Bastion
 						["provider"] = { "n", 164741 },	-- Tactician Sakaa
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -211,7 +193,6 @@ _.Zones =
 						["provider"] = { "n", 164741 },	-- Tactician Sakaa
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181556),	-- 	Tribute of the Court
 						},
@@ -220,15 +201,13 @@ _.Zones =
 						["provider"] = { "n", 158653 },	-- Prince Renathal
 						--["coord"] = { , 1533 },
 						["repeatable"] = true,
-						["lvl"] = { 60 },
 						["g"] = {
 							i(181557),	-- Favor of the Court
 						},
 					}),
-					-- One time Calling Quest to Indroduce Calling Quests, should be sorted in the normal Questfile
+					-- One time Calling Quest to Introduce Calling Quests, should be sorted in the normal Questfile
 					q(62691, {	-- A Calling in Revendreth
 						["provider"] = { "n", 156822 },	-- Mistress Mihaela
-						["lvl"] = { 60 },
 						["coord"] = { 61.4, 63.8, 1525 },
 						["repeatable"] = true,
 						["g"] = {

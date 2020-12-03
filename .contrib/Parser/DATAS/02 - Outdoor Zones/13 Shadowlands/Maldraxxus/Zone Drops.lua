@@ -7,10 +7,29 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
 			n(ZONEDROPS, {
+				i(184104, {	-- Blight-Touched Egg
+					["crs"] = {
+						170456,	-- Diseased Galescreamer
+						162259,	-- Galescreamer Pup
+						162588,	-- Gristlebeak
+						162589,	-- Neonate Boontooth
+						162258,	-- Ravenous Galescreamer
+						164587,	-- Satiated Sawtooth
+					},
+					["g"] = {
+						i(181818),	-- Chewed Reins of the Callowed Flayedwing
+					},
+				}),
 				i(178877),	-- Divine Martial Spirit (Rare)
 				i(178874),	-- Martial Spirit Maldraxxus (Uncommon)
 				i(178878),	-- Greater Martial Spirit (Epic)
 				i(184062),	-- Gnawed Reins of the Battle-Bound Warhound (Battle-Bound Warhound in journal)
+				i(180781, {	-- Pattern: Pink Party Hat
+					["crs"] = {
+						165014,	-- Animated Plague
+					},
+				}),
+				i(180532),	-- Laestrite Lockbox
 				i(176990),	-- Blackhound Armplates
 				i(178950),	-- Blackhound Bulwark
 				i(176963),	-- Blackhound Chestguard

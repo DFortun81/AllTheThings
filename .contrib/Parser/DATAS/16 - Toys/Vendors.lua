@@ -14,6 +14,7 @@ _.Toys =
 		}),
 		i(168012),		-- Apexis Focusing Shard
 		i(46843),		-- Argent Crusader's Banner
+		i(184410),		-- Aspirant's Stretcher
 		i(147537, { 	-- A Tiny Set of Warglaives -- demon hunter class hall
 			["classes"] = { DEMONHUNTER },
 		}),
@@ -97,6 +98,7 @@ _.Toys =
 			["classes"] = { DRUID },
 		}),
 		i(182773),		-- Necrolord Hearthstone
+		i(180290),		-- Night Fae Hearthstone
 		i(134004),		-- Noble's Eternal Elementium Signet
 		i(45014),		-- Orgrimmar Banner (Horde)
 		i(158149, {		-- Overtuned Corgi Goggles

@@ -81,7 +81,6 @@ _.PetJournal =
 		p(500),		-- Minfernal
 		un(REMOVED_FROM_GAME, p(93)),	-- Mini Diablo
 		p(1156),	-- Mini Mindslayer
-		p(3021),	-- Misty Leaper(critter or beast pet?)
 		p(2832),	-- Muar
 		p(1604),	-- Nethaera's Light
 		p(1228),	-- Netherspace Abyssal

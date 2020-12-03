@@ -1248,18 +1248,6 @@ _.Zones =
 						23668,	-- Winterskorn Rune-Caster
 						23669,	-- Winterskorn Oracle
 					},
-					["crs"] = {
-						23662,	-- Winterskorn Woodsman
-						23661,	-- Winterskorn Tribesman
-						23664,	-- Winterskorn Warrior
-						23663,	-- Winterskorn Shield-Maiden
-						23665,	-- Winterskorn Raider
-						23666,	-- Winterskorn Berserker
-						23670,	-- Winterskorn Elder
-						23667,	-- Winterskorn Rune-Seer
-						23668,	-- Winterskorn Rune-Caster
-						23669,	-- Winterskorn Oracle
-					},
 					["g"] = {
 						i(35900),	-- Supple Doeskin Moccasins
 						i(35902),	-- Shock-Bound Spaulders

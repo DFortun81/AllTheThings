@@ -390,7 +390,6 @@ _.Zones =
 						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
 						["lvl"] = { 50 },
-						["isWorldQuest"] = true,
 					}),
 					q(51850, {	-- Preserve the Oasis
 						["lvl"] = { 50 },

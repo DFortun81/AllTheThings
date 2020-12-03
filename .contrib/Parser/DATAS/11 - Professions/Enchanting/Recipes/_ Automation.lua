@@ -182,9 +182,9 @@ profession(333, {	-- Enchanting
 					["hash"] = "categoryID1527",
 					["g"] = {
 						{
-							["name"] = "Bug Zapifier",
-							["hash"] = "recipeID338119",
-							["recipeID"] = 338119
+							["name"] = "Boundless Basket",
+							["hash"] = "recipeID346026",
+							["recipeID"] = 346026
 						},
 						{
 							["name"] = "Everburning Brand",
@@ -366,7 +366,7 @@ profession(333, {	-- Enchanting
 							["recipeID"] = 309636
 						},
 						{
-							["name"] = "Enchanted Heavy Desolate Hide",
+							["name"] = "Enchanted Heavy Callous Hide",
 							["hash"] = "recipeID309637",
 							["recipeID"] = 309637
 						},
@@ -1085,6 +1085,11 @@ profession(333, {	-- Enchanting
 						},
 						{
 							["name"] = "Notorious Combatant's Sorcerous Scepter",
+							["hash"] = "recipeID294781",
+							["recipeID"] = 294781
+						},
+						{
+							["name"] = "Notorious Combatant's Sorcerous Scepter",
 							["hash"] = "recipeID294782",
 							["recipeID"] = 294782
 						},
@@ -1092,11 +1097,6 @@ profession(333, {	-- Enchanting
 							["name"] = "Notorious Combatant's Sorcerous Scepter",
 							["hash"] = "recipeID294783",
 							["recipeID"] = 294783
-						},
-						{
-							["name"] = "Notorious Combatant's Sorcerous Scepter",
-							["hash"] = "recipeID294781",
-							["recipeID"] = 294781
 						},
 						{
 							["name"] = "Sinister Combatant's Sorcerous Scepter",
@@ -1838,13 +1838,13 @@ profession(333, {	-- Enchanting
 						},
 						{
 							["name"] = "Temporal Crystal",
-							["hash"] = "recipeID169092",
-							["recipeID"] = 169092
+							["hash"] = "recipeID178241",
+							["recipeID"] = 178241
 						},
 						{
 							["name"] = "Temporal Crystal",
-							["hash"] = "recipeID178241",
-							["recipeID"] = 178241
+							["hash"] = "recipeID169092",
+							["recipeID"] = 169092
 						}
 					}
 				},
@@ -2355,13 +2355,13 @@ profession(333, {	-- Enchanting
 						},
 						{
 							["name"] = "Exceptional Versatility",
-							["hash"] = "recipeID74231",
-							["recipeID"] = 74231
+							["hash"] = "recipeID74237",
+							["recipeID"] = 74237
 						},
 						{
 							["name"] = "Exceptional Versatility",
-							["hash"] = "recipeID74237",
-							["recipeID"] = 74237
+							["hash"] = "recipeID74231",
+							["recipeID"] = 74231
 						},
 						{
 							["name"] = "Greater Critical Strike",
@@ -2405,13 +2405,13 @@ profession(333, {	-- Enchanting
 						},
 						{
 							["name"] = "Haste",
-							["hash"] = "recipeID74199",
-							["recipeID"] = 74199
+							["hash"] = "recipeID74198",
+							["recipeID"] = 74198
 						},
 						{
 							["name"] = "Haste",
-							["hash"] = "recipeID74198",
-							["recipeID"] = 74198
+							["hash"] = "recipeID74199",
+							["recipeID"] = 74199
 						},
 						{
 							["name"] = "Intellect",
@@ -3890,13 +3890,13 @@ profession(333, {	-- Enchanting
 					["g"] = {
 						{
 							["name"] = "Agility",
-							["hash"] = "recipeID27837",
-							["recipeID"] = 27837
+							["hash"] = "recipeID23800",
+							["recipeID"] = 23800
 						},
 						{
 							["name"] = "Agility",
-							["hash"] = "recipeID23800",
-							["recipeID"] = 23800
+							["hash"] = "recipeID27837",
+							["recipeID"] = 27837
 						},
 						{
 							["name"] = "Crusader",

@@ -57,6 +57,7 @@ _.PetJournal =
 		}),
 		p(3065),			-- Courage
 		p(1997),			-- Crackers
+		p(3083),			-- Crawbat
 		p(507),				-- Crested Owl
 		p(2567),			-- Crimson Bat Pup
 		p(2903),			-- Crimson Dredwing Pup
@@ -199,6 +200,7 @@ _.PetJournal =
 		p(1974),			-- Snowfeather Hatchling
 		p(69),				-- Snowy Owl
 		p(2441),			-- Squawkling
+		p(3082),			-- Starmoth
 		p(3006),			-- Stoneskin Dredwing Pup
 		p(3012),			-- Stony
 		p(1546),			-- Stormwing
@@ -228,6 +230,7 @@ _.PetJournal =
 		p(1591),			-- Violet Firefly
 		p(2866),			-- Voidglower
 		p(2460),			-- Voru'kar Leecher
+		p(2939),			-- Wader Chick
 		p(1593),			-- Waterfly
 		p(84),				-- Westfall Chicken
 		p(141),				-- White Moth

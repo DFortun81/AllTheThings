@@ -141,7 +141,7 @@ _.Zones =
 				}),
 				q(31252, {	-- Back to Westwind Rest
 					["coord"] = { 60.2, 85.7, 379 },
-					["races"] = ALlIANCE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 59573 },	-- Farmer Chow
 					["sourceQuests"] = {
 						30581,	-- ... and the Pot, Too!

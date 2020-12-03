@@ -4,18 +4,16 @@
 
 _.Instances = { tier(9, {	-- Shadowlands
 	inst(1185, {	-- Halls of Atonement
-		["coord"] = { 78.4, 49.0, 1525 },
+		["coord"] = { 78.4, 48.9, 1525 },
 		["maps"] = {
 			1663,	-- Halls of Atonement
-			1664,	-- The Narve of Pain / The Crimson Apse
+			1664,	-- The Nave of Pain / The Crimson Apse
 			1665,	-- Sanctury of Souls
 		},
 		["lvl"] = { 50 },
 		["g"] = {
 			n(QUESTS, {
-				q(58092,{	-- Halls of Atonement: Your Absolution
-					--["provider"] = { "n", 166689 },	-- General Draven
-				}),
+				-- don't delete this section
 			}),
 			d(1, {	-- Normal
 				e(2406, {	-- Halkias

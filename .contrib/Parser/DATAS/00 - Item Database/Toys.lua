@@ -12,6 +12,7 @@ t(116890);	-- "Santo's Sun" Contender's Costume
 t(116891);	-- "Snowy Owl" Contender's Costume
 t(147537);	-- a Tiny Set of Warglaives
 t(127670);	-- Accursed Tome of the Sargerei
+t(184418);	-- Acrobatic Steward
 t(144072);	-- Adopted Puppy Crate
 t(86589);	-- Ai-Li's Skymirror
 t(147838);	-- Akazamzarak's Spare Hat
@@ -177,6 +178,7 @@ t(129929);	-- Ever-Shifting Mirror
 t(45020);	-- Exodar Banner (Alliance)
 t(147309);	-- Face of the Forest
 t(53057);	-- Faded Wizard Hat (Horde)
+t(184489);	-- Fae Harp
 t(129113);	-- Faintly Glowing Flagon of Mead
 t(142495);	-- Fake Teeth
 t(140779);	-- Falanaar Echo (Never Implemented)
@@ -691,6 +693,7 @@ t(179393);	-- Mirror of Envious Dreams
 t(182780);	-- Muckpool Cookpot
 t(183856);	-- Mystical Orb of Meditation
 t(182773);	-- Necrolord Hearthstone
+t(180290);	-- Night Fae Hearthstone
 t(181794);	-- Orophea's Lyre
 t(181825);	-- Phial of Ravenous Slime
 t(183876);	-- Quill of Correspondence
@@ -699,7 +702,6 @@ t(173984);	-- Scroll of Aeons
 t(183900);	-- Sinvyr Tea Set
 t(183903);	-- Smelly Jelly
 t(180873);	-- Smolderheart
-t(177665);	-- Spectral Hankerchief
 t(184075);	-- Stonewrought Sentry
 t(182694);	-- Stylish Black Parasol
 t(182696);	-- The Countess's Parasol
@@ -714,3 +716,4 @@ t(172924);	-- Wormhole Generator: Shadowlands
 -- PATCH 9.0.2 --
 -----------------
 t(184449);	-- Jiggles's Favorite Toy
+t(184410);	-- Aspirant's Stretcher

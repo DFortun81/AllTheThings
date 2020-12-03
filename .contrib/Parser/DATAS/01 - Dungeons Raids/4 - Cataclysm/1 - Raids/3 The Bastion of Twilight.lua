@@ -147,7 +147,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							}),
 							i(152972),	-- Twilight Summoning Portal (PET!)
 							i(175159, {	-- Sinister Shadows
-								["races"] = { VULPERA },
+								["races"] = { VULPERA },	-- TODO: figure out if there's a way to track its collection status
 							}),
 							i(59330),	-- Shalug'doom, the Axe of Unmaking
 							i(59494),	-- "Uhn'agh Fash, the Darkest Betrayal"
@@ -294,7 +294,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							}),
 							i(152972),	-- Twilight Summoning Portal (PET!)
 							i(175159, {	-- Sinister Shadows
-								["races"] = { VULPERA },
+								["races"] = { VULPERA },	-- TODO: figure out if there's a way to track its collection status
 							}),
 							i(65145),	-- Shalug'doom, the Axe of Unmaking
 							i(65090),	-- Twilight's Hammer

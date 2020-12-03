@@ -28,7 +28,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			569,
 			570,
 		},
-		["coords"] = { 72.4, 44.3, 390 },	-- Siege of Orgrimmar, Vale of Eternal Blossoms (door leading downstairs to entrance)
 		["g"] = {
 			n(VENDORS, {
 				n(72157, {	-- Hagrus <Reagents>

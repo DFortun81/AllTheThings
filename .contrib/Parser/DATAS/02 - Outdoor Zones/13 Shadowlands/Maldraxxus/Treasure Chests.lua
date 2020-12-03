@@ -7,19 +7,17 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1536, {	-- Maldraxxus
 			n(-212, {	-- Treasure Chest
+				o(353627, {	-- Battlefront Rations
+					-- ["coord"] = { ##, ##, 1536 },
+					["cost"] = { { "i", 180277, 1 } },	-- 1x Battlefront Rations Key
+					["questID"] = 60772,
+				}),
 				o(352086, {	-- Blackhound Cache
-					["coord"] = { 44.0, 39.8, 1536 },
+					["description"] = "|cFF40bf40Necrolord Covenant|r, or can be accessed by placing interactible Toys inside the gate.",
 					["questID"] = 60368,
+					["coord"] = { 44.0, 39.8, 1536 },
 					["g"] = {
 						i(183619),	-- Everlasting Boneforged Greataxe
-					},
-				}),
-				o(348521, {	-- Strange Growth
-					["coord"] = { 55.9, 38.9, 1536 },
-					["g"] = {
-						i(182607, {	-- Hairy Egg
-							i(182606),	-- Bloodlouse Larva
-						}),
 					},
 				}),
 				o(354856, {	-- Slime-Coated Crate
@@ -36,7 +34,7 @@ _.Zones =
 					["coords"] = {
 						{ 46.8, 31.7, 1536 },
 					},
-					--["questID"] = 60368,
+					["questID"] = 61089,
 					["g"] = {
 						i(181697),	-- Gorewrought Spellblade
 						i(182318),	-- Viscous Ink
@@ -60,12 +58,26 @@ _.Zones =
 						{ 36.5, 49.9, 1536 },
 						{ 34.8, 55.0, 1536 },
 					},
-					--["questID"] = 60368,
+					["questID"] = 60556,
 					["g"] = {
-						i(181501),	-- Flame of Battle
-						i(181671),	-- Corpsehide Spaulders
 						i(182441),	-- Markman's Advantage
 						i(181173),	-- Skittering Venomspitter???
+					},
+				}),
+				o(348521, {	-- Strange Growth
+					["coord"] = { 55.9, 38.9, 1536 },
+					["questID"] = 59428,	-- 59429 also triggered simultaneously; adding it to HQT for now
+					["g"] = {
+						i(182607, {	-- Hairy Egg
+							i(182606),	-- Bloodlouse Larva
+						}),
+					},
+				}),
+				o(350802, {	-- Web Sealed Chest
+					["coord"] = { 54.9, 26.1, 1536 },
+					["questID"] = 60109,
+					["g"] = {
+						i(183602),	-- Sticky Webbing
 					},
 				}),
 			}),

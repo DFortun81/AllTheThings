@@ -25,6 +25,7 @@ _.PetJournal =
 		p(2476),	-- Bloated Bloodfeaster
 		p(2414),	-- Bloodfeaster Larva
 		p(2476),	-- Bloodfeaster Larva (Alchemy version)
+		p(3013),	-- Bloodlouse Larva
 		p(639),		-- Borean Marmot
 		p(449),		-- Brown Marmot
 		p(70),		-- Brown Prairie Dog
@@ -32,6 +33,7 @@ _.PetJournal =
 		p(1516),	-- Bush Chicken
 		p(540),		-- Carrion Rat
 		p(393),		-- Cockroach
+		p(2955),	-- Corpselouse Larva
 		p(468),		-- Creepy Crawly
 		p(1752),	-- Crispin
 		p(556),		-- Crystal Beetle
@@ -39,6 +41,7 @@ _.PetJournal =
 		p(1061),	-- Darkmoon Hatchling
 		p(848),		-- Darkmoon Rabbit
 		p(755),		-- Death's Head Cockroach
+		p(3081),	-- Decay Grub
 		p(3039),	-- Decaying Mawrat
 		p(555),		-- Deepholm Cockroach
 		p(3021),	-- Deepwood Leaper
@@ -50,10 +53,12 @@ _.PetJournal =
 		p(209),		-- Elwynn Lamb
 		p(2664),	-- Experimental Roach
 		p(447),		-- Fawn
+		p(2956),	-- Feasting Larva
 		p(2113), 	-- Felclaw Marsuul
 		p(415),		-- Fire Beetle
 		p(541),		-- Fire-Proof Roach
 		p(644),		-- Fjord Rat
+		p(2910),	-- Floofa
 		p(2407),	-- Frenzied Cottontail
 		p(3032),	-- Frenzied Mawrat
 		p(1427),	-- Frostfur Rat
@@ -111,10 +116,12 @@ _.PetJournal =
 		un(20, p(159)),		-- Peanut
 		p(250),		-- Perky Pug
 		p(166),		-- Pint-Sized Pink Pachyderm
+		p(2954),	-- Plaguelouse Larva
 		p(381),		-- Porcupette
 		p(386),		-- Prairie Dog
 		p(727),		-- Prairie Mouse
 		p(2698),	-- Prismatic Softshell
+		p(3049),	-- Pulsating Maggot
 		p(1543),	-- Pygmy Cow
 		p(2133),	-- Pygmy Marsuul
 		p(378),		-- Rabbit
@@ -132,6 +139,7 @@ _.PetJournal =
 		p(717),		-- Savory Beetle
 		p(512),		-- Scarab Hatchling
 		un(20, p(289)),		-- Scooter the Snail
+		p(3022),	-- Shimmerbough Hoarder
 		p(493),		-- Shimmershell Snail
 		p(677),		-- Shy Bandicoon
 		p(568),		-- Silkbead Snail

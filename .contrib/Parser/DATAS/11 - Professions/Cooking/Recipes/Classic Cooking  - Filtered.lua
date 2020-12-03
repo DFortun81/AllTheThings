@@ -26,15 +26,6 @@ profession(COOKING, {
 							["recipeID"] = 6419,	-- Lean Venison
 							["u"] = REMOVED_FROM_GAME,
 						},
-						{	-- Extra Fancy Darkmoon Feast (not in automation yet 9.0.2)
-							["recipeID"] = 347509,
-						},
-						{	-- Extra Lemony Herb Filet (not in automation yet 9.0.2)
-							["recipeID"] = 347457,
-						},
-						{	-- Extra Sugary Fish Feast (not in automation yet 9.0.2)
-							["recipeID"] = 347176,
-						},
 					}
 				},
 			},

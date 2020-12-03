@@ -7,12 +7,32 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(-34,  {	-- World Quests
+				q(59902, {	-- A Curious Cache
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(59904, {	-- A Curious Cache
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(59905, {	-- A Curious Cache
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60655, {	-- A Stolen Stone Fiend
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 					["g"] = {
 						i(183859),	-- Dal's Courier Badge
 					},
+				}),
+				q(60657, {	-- Aid From Above
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61879, {	-- Ashes Will Fall
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
 				}),
 				q(58144, {	-- Battered and Bruised
 					["isWorldQuest"] = true,
@@ -42,6 +62,16 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61544, {	-- Herbalism: Lush Widowbloom
+					["requireSkill"] = HERBALISM,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61624, {	-- Inscription: Catalog of Sins
+					["requireSkill"] = INSCRIPTION,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59643, {	-- It's Race Day in the Ramparts!
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -50,7 +80,23 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(60653, {	-- Mirror Restoration
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(59808, {	-- Muck it Up
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(59718, {	-- Parasol Peril
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61883, {	-- Resilient Survivors
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(59599, {	-- Retaining the Court
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -59,6 +105,10 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(59617, {	-- Stone Fiend Saboteurs
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(60656 , {	-- Summon Your Sins
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -75,30 +125,18 @@ _.Zones =
 				q(59852, {	-- Tea Tales: Gubbins and Tubbins
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						ach(14233, crit(3)),	-- Tea Tales: Gubbins and Tubbins
-					},
 				}),
 				q(59853, {	-- Tea Tales: Lost Sybille
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						ach(14233, crit(4)),	-- Tea Tales: Lost Sybille
-					},
 				}),
 				q(59848, {	-- Tea Tales: Theotar
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						ach(14233, crit(1)),	-- Tea Tales: Theotar
-					},
 				}),
 				q(59850, {	-- Tea Tales: Vulca
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						ach(14233, crit(2)),	-- Tea Tales: Vulca
-					},
 				}),
 				q(59581, {	-- The Strength of Sinfall
 					["isWorldQuest"] = true,
@@ -113,6 +151,7 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				i(181209),	-- Devourer's Bite
+				i(181217),	-- Dominance Guard's Band
 				i(181205),	-- Soulstalker Epaulets
 				i(181185),	-- Soulstalker Breeches
 				i(181187),	-- Soulstalker Bindings

@@ -192,6 +192,9 @@ NEVER_IMPLEMENTED = 1;
 REMOVED_FROM_GAME = 2;
 BLIZZARD_BALANCE = 35;
 
+-- Map IDs used in ATT-Classic which don't exist in Live
+STRANGLETHORN_VALE = nil;	-- 1434 Classic
+
 ItemClassInfo = {
 	{
 		"Soul Bag", -- [1]
@@ -730,7 +733,7 @@ prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
-	local p = prof(skillID, t);
+	local p = prof(skillID, bubbleDown({ ["requireSkill"] = skillID, }, t));
 	_.Professions = { p };
 	return p;
 end

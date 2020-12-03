@@ -1286,14 +1286,6 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 154244 },	-- Apprentice Uataro
 			}),
-			q(56877, {	-- Plug the Geysers (H)
-				["provider"] = { "n", 153522 },	-- Scout Tuli
-				["coord"] = { 48.0, 46.5, 1355 },
-				["sourceQuest"] = 55500,	-- Save a Friend
-				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-				["isDaily"] = true,
-				["races"] = HORDE_ONLY,
-			}),
 			q(56160, {	-- Plug the Geysers
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",	-- NOT Farseer Ori!

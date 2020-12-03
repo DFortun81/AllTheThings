@@ -44,16 +44,20 @@ _.Zones =
 					["sourceQuests"] = { 32603 },	-- Beasts of Fable
 					["provider"] = { "n", 64572 },	-- Sara Finkleswitch
 				}),
-				q(31958, {	-- Grand Master Aki
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-					["isDaily"] = true,
+				q(31951, {	-- Grand Master Aki (one-time version)
+				--	TODO: i think this quest is automatically offered after completing the SQs, but i can't test since it's one time per account
 					["sourceQuests"] = {
 						31930,	-- Battle Pet Tamers: Pandaria [Alliance]
 						31952,	-- Battle Pet Tamers: Pandaria [Horde]
 					},
+				}),
+				q(31958, {	-- Grand Master Aki (daily version)
+					["sourceQuests"] = { 31951 },	-- Grand Master Aki (one-time version)
 					["provider"] = { "n", 66741 },	-- Aki the Chosen
+					["isDaily"] = true,
+					["g"] = {
+						i(89125),	-- Sack of Pet Supplies
+					},
 				}),
 				q(32428, {	-- Pandaren Spirit Tamer
 					["g"] = {

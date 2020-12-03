@@ -164,6 +164,7 @@ _.Zones =
 			{	-- Tabard of the Achiever
 				["itemID"] = 40643,	-- Tabard of the Achiever
 			},
+			i(178991),	-- Tabard of the Ascended
 			{	-- Tabard of the Explorer
 				["itemID"] = 43348,	-- Tabard of the Explorer
 			},

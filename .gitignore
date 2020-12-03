@@ -1,14 +1,6 @@
 .contrib/.builds/
 .contrib/Harvesters/RAW/
-.contrib/Harvesters/RAW_eventDB.json
-.contrib/Harvesters/eventDB.json
-.contrib/Harvesters/itemDB.json
-.contrib/Harvesters/npcDB_sweetlie.json
-.contrib/Harvesters/quests_dump.json
-.contrib/Harvesters/RAW_itemDB.json
-.contrib/Harvesters/RAW_npcDB.json
-.contrib/Harvesters/RAW_zoneDB.json
-.contrib/Harvesters/zoneDB.json
+.contrib/Harvesters/*.json
 .contrib/Parser/log.txt
 .contrib/Parser/Parser.exe.config
 .contrib/Parser/Parser.pdb
@@ -27,34 +19,7 @@
 .contrib/Parser/ATT.pdb
 .contrib/Source Code/Blizzard API Harvester/bin/
 .contrib/Source Code/Classic Item Detector/bin/
-contrib/Harvesters/RAW/
-contrib/Harvesters/RAW_eventDB.json
-contrib/Harvesters/eventDB.json
-contrib/Harvesters/itemDB.json
-contrib/Harvesters/npcDB_sweetlie.json
-contrib/Harvesters/quests_dump.json
-contrib/Harvesters/RAW_itemDB.json
-contrib/Harvesters/RAW_npcDB.json
-contrib/Harvesters/RAW_zoneDB.json
-contrib/Harvesters/zoneDB.json
-contrib/Parser/log.txt
-contrib/Parser/Parser.exe.config
-contrib/Parser/Parser.pdb
-contrib/Parser/Parser V2.exe.config
-contrib/Parser/Parser V2.pdb
-contrib/Debugging/
-contrib/Harvesters/System.Net.Http.Formatting.xml
-contrib/Harvesters/Blizzard API Harvester.pdb
-contrib/Harvesters/Blizzard API Harvester.exe.config
-contrib/Parser/DATAS/89 - Extra/
-contrib/Source Code/Parser/.vs/
-contrib/Source Code/ATT/bin
-contrib/Source Code/Parser/obj/
-contrib/Parser/log.txt
-contrib/Harvesters/API.key
-contrib/Parser/ATT.pdb
-contrib/Source Code/Blizzard API Harvester/bin/
-contrib/Source Code/Classic Item Detector/bin/
+contrib/
 AllTheThings.iml
 .idea/workspace.xml
 .idea/modules.xml
@@ -68,3 +33,5 @@ obj/
 *.bak
 .contrib/.source/ATT Sync Tool/bin/x86/Debug/log.txt
 .contrib/Harvesters/DBs/
+.contrib/Harvesters/*.log
+.contrib/Harvesters/*.bat

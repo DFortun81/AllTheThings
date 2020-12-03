@@ -72,22 +72,28 @@ profession(INSCRIPTION, {
 					["categoryID"] = 361--[[Item Enhancers]],
 					["g"] = {
 						{	-- Savage Ensorcelled Tarot
-							["recipeID"] = 187519--[[Savage Ensorcelled Tarot]]
+							["recipeID"] = 187519,--[[Savage Ensorcelled Tarot]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Savage Weapon Crystal
-							["recipeID"] = 187518--[[Savage Weapon Crystal]]
+							["recipeID"] = 187518,--[[Savage Weapon Crystal]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Mighty Ensorcelled Tarot
-							["recipeID"] = 187495--[[Mighty Ensorcelled Tarot]]
+							["recipeID"] = 187495,--[[Mighty Ensorcelled Tarot]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Mighty Weapon Crystal
-							["recipeID"] = 187494--[[Mighty Weapon Crystal]]
+							["recipeID"] = 187494,--[[Mighty Weapon Crystal]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Ensorcelled Tarot
-							["recipeID"] = 178248--[[Ensorcelled Tarot]]
+							["recipeID"] = 178248,--[[Ensorcelled Tarot]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Weapon Crystal
-							["recipeID"] = 166366--[[Weapon Crystal]]
+							["recipeID"] = 166366,--[[Weapon Crystal]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Volatile Crystal
 							["recipeID"] = 166432--[[Volatile Crystal]]

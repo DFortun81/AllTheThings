@@ -7,6 +7,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["coord"] = { 68.6, 66.5, 1565 },
 		["maps"] = {
 			1680,	-- De Other Side
+			1679,	-- Zul'Gurub
+			1677,	-- The Heap
 		},
 		["lvl"] = { 50 },
 		["g"] = {
@@ -19,6 +21,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				q(62456,{	-- De Other Side: Dealin' Wit' Da Boss
 					["provider"] = { "n", 174327 },	-- Mask of Bwonsamdi
 					["sourceQuest"] = 62458,	-- De Other Side
+					["_drop"] = { "g" },	-- ignore Anima item that insists on being part of this quest
 				}),
 			}),
 			d(1, {	-- Normal
@@ -69,6 +72,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(179354),	-- Reality-Shatter Vambraces
 						i(179355),	-- Death God's Signet
 						i(179356),	-- Shadowgrasp Totem
+						i(182178, {	-- Raptor Soul
+							["questID"] = 62433,	-- Raptor Soul
+						}),
 					},
 				}),
 			}),
@@ -122,6 +128,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(179354),	-- Reality-Shatter Vambraces
 							i(179355),	-- Death God's Signet
 							i(179356),	-- Shadowgrasp Totem
+							i(182178, {	-- Raptor Soul
+								["questID"] = 62433,	-- Raptor Soul
+							}),
 						},
 					}),
 				},
@@ -182,6 +191,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(179354),	-- Reality-Shatter Vambraces
 							i(179355),	-- Death God's Signet
 							i(179356),	-- Shadowgrasp Totem
+							i(182178, {	-- Raptor Soul
+								["questID"] = 62433,	-- Raptor Soul
+							}),
 						},
 					}),
 				},

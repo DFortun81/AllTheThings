@@ -32,8 +32,7 @@ _.PetJournal =
 		p(75),				-- Black Kingsnake
 		p(42),				-- Black Tabby Cat
 		p(1743),			-- Black-Footed Fox Kit
-		p(2956),			-- Bloodlouse Hatchling
-		p(3013),			-- Bloodlouse Larva
+		p(3050),			-- Bleak Skitterer
 		p(2388),			-- Bloodfever Tarantula
 		p(2965),			-- Bloodfeaster Spiderling
 		p(2451),			-- Bloodstone Tunneler
@@ -60,7 +59,6 @@ _.PetJournal =
 		p(1890),			-- Corgi Pup
 		p(1929),			-- Corgnelius
 		p(41),				-- Cornish Rex Cat
-		p(2955),			-- Corpselouse Hatchling
 		p(2945),			-- Corpulent Bonetusk
 		p(2448),			-- Craghoof Kid
 		p(78),				-- Crimson Snake
@@ -165,7 +163,6 @@ _.PetJournal =
 		p(1663),			-- Periwinkle Calf
 		p(2946),			-- Pernicious Bonetusk
 		p(726),				-- Plains Monitor
-		p(2954),			-- Plaguelouse Hatchling
 		p(2188),			-- Poda
 		un(REMOVED_FROM_GAME, p(124)),		-- Poley
 		p(2935),			-- Purity
@@ -193,6 +190,7 @@ _.PetJournal =
 		p(3007),			-- Rosetipped Spiderling
 		p(2847),			-- Rotbreath
 		p(3020),			-- Runelight Leaper
+		p(2937),			-- Rustfur Kit
 		p(2661),			-- Rustyroot Snooter
 		p(2933),			-- Sable
 		p(491),				-- Sand Kitten
@@ -225,7 +223,7 @@ _.PetJournal =
 		p(1763),			-- Spiketail Beaver
 		p(433),				-- Spiky Lizard
 		p(466),				-- Spiny Lizard
-		p(2942),			-- Spirited Skyfoal
+		un(NEVER_IMPLEMENTED, p(2942)),			-- Spirited Skyfoal
 		p(2914),			-- Starry Dreamfoal
 		p(2579),			-- Stoneclaw
 		p(432),				-- Stripe-Tailed Scorpid
@@ -257,6 +255,7 @@ _.PetJournal =
 		p(2375),			-- Vale Marmot
 		p(1344),			-- Vengeful Porcupette
 		p(506),				-- Venomspitter Hatchling
+		p(3080),			-- Verdant Kit
 		p(1807),			-- Vicious Broodling
 		p(2840),			-- Void-Scarred Cat
 		p(2797),			-- Void-Scarred Pup

@@ -12,20 +12,31 @@ _.Instances = { tier(9, {	-- Shadowlands
 		},
 		["lvl"] = { 50 },
 		["g"] = {
-			n(QUESTS, {
-				q(60057, {	-- Necrotic Wake: A Paragon's Plight
-					["provider"] = { "n", 167584 },	-- Disciple Apolon
-					["coord"] = { 40.9, 55.3, 1533 },
-					["sourceQuest"] = 60055,	-- A Time for Courage
-					["lvl"] = { 50 },
-					["maps"] = { 1533 },	-- Bastion
+			n(ACHIEVEMENTS, {
+				ach(14339, {	-- Shard Labor
+					["description"] = "Quest tracking must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide.  There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.\n\nGoblin Gliders are required for some of the shards in Bastion.  Being part of the |cFFfe040fVenthyr Covenant|r is not required, but the |cFFfe040fDoor of Shadows|r ability does trivialize a few of the more annoying shards!",
+					["collectible"] = false,
+					["lvl"] = { 60 },
+					["g"] = {
+						n(-1433946, {	-- Shard ##
+							["description"] = "After Blightbone, go up the stairs to the middle platform.  Straight ahead is a large fallen bell.  The shard is behind it on the right-hand side.",
+							["questID"] = 61296,
+						}),
+						n(-1433947, {	-- Shard ##
+							["description"] = "Before Amarth, at the middle of the top of the final platform is a little outcropping that juts north.  Climb behind the large broken pillar.  Behind it is a small broken pillar, and the shard is behind that.",
+							["questID"] = 61297,
+						}),
+					},
 				}),
+			}),
+			n(QUESTS, {
+				-- please don't delete this header!  a quest is linked here from outside, and with the header missing the category ports to the bottom of the list below all 3 instance difficulties
 			}),
 			--n(-34, {	-- World Quests
 			--}),
 			d(1, {	-- Normal
 				e(2395, {	-- Blightbone
-					["crs"] = { 166880 },	-- Blightbone
+					["crs"] = { 162691 },	-- Blightbone
 					["g"] = {
 						i(178730),	-- Engorged Worm Smasher
 						i(178735),	-- Blight Belcher
@@ -37,7 +48,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2391, {	-- Amarth, The Harvester
-					["crs"] = { 166855 },	-- Amarth, The Harvester
+					["crs"] = { 163157 },	-- Amarth, The Harvester
 					["g"] = {
 						i(178737),	-- Amarth's Spellblade
 						i(178738),	-- Rattling Deadeye Hood
@@ -48,7 +59,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2392, {	-- Surgeon Stitchflesh
-					["crs"] = { 166880 },	-- Surgeon Stitchflesh
+					["crs"] = { 162689 },	-- Surgeon Stitchflesh
 					["g"] = {
 						i(178743),	-- Stitchflesh's Scalpel
 						i(178750),	-- Encrusted Canopic Lid
@@ -61,7 +72,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2396, {	-- Nalthor the Rimebinder
-					["crs"] = { 166945 },	-- Nalthor the Rimebinder
+					["crs"] = { 162693 },	-- Nalthor the Rimebinder
 					["g"] = {
 						ach(14366),	-- The Necrotic Wake
 						i(178780),	-- Rimebinder's Runeblade
@@ -78,7 +89,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				["lvl"] = { 60 },
 				["g"] = {
 					e(2395, {	-- Blightbone
-						["crs"] = { 166880 },	-- Blightbone
+						["crs"] = { 162691 },	-- Blightbone
 						["g"] = {
 							i(178730),	-- Engorged Worm Smasher
 							i(178735),	-- Blight Belcher
@@ -114,7 +125,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2396, {	-- Nalthor the Rimebinder
-						["crs"] = { 166945 },	-- Nalthor the Rimebinder
+						["crs"] = { 162693 },	-- Nalthor the Rimebinder
 						["g"] = {
 							ach(14367),	-- Heroic: The Necrotic Wake
 							i(178780),	-- Rimebinder's Runeblade
@@ -133,7 +144,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				["lvl"] = { 60 },
 				["g"] = {
 					e(2395, {	-- Blightbone
-						["crs"] = { 166880 },	-- Blightbone
+						["crs"] = { 162691 },	-- Blightbone
 						["g"] = {
 							i(178730),	-- Engorged Worm Smasher
 							i(178735),	-- Blight Belcher
@@ -171,7 +182,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2396, {	-- Nalthor the Rimebinder
-						["crs"] = { 166945 },	-- Nalthor the Rimebinder
+						["crs"] = { 162693 },	-- Nalthor the Rimebinder
 						["g"] = {
 							ach(14368),	-- Mythic: The Necrotic Wake
 							ach(14285),	-- Ready for Raiding VII

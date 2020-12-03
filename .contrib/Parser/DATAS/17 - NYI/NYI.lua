@@ -20,14 +20,25 @@ _.NeverImplemented =
 		},
 	n(-10100, {	-- Shadowlands
 		-- Mounts
-		un(NEVER_IMPLEMENTED, i(181818)),	-- Chewed Reins of the Callow Flayedwing Source Unknown (NYI ATM)
 		-- Toy
 		un(NEVER_IMPLEMENTED, i(182655)),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
 		un(NEVER_IMPLEMENTED, i(174286)),	-- Kyrian Ritual Vestments (beta only? Retrieving data on 9.0.2)
-		un(NEVER_IMPLEMENTED, i(177665)),	-- Spectral Hankerchief (beta only? Retrieving data on 9.0.2)
 		-- Pets
-		un(NEVER_IMPLEMENTED, i(175114)),	-- Renny (has quest, no source yet)
+		un(NEVER_IMPLEMENTED, i(180838)),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
+		un(NEVER_IMPLEMENTED, i(180837)),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
+		un(NEVER_IMPLEMENTED, i(181259)),	-- Clutch (wild pet in game, item was never used)
+		un(NEVER_IMPLEMENTED, i(184400)),	-- Courage (possibly in game? need more info)
+		un(NEVER_IMPLEMENTED, i(184399)),	-- Larion Cub (possibly in game? need more info)
+		un(NEVER_IMPLEMENTED, i(184401)),	-- Larion Pouncer (possibly in game? need more info)
+		un(NEVER_IMPLEMENTED, i(180590)),	-- Lost Soul (wild pet in game, item was never used)
+		un(NEVER_IMPLEMENTED, i(180860)),	-- Orange Vulpin (Copperfur Kit is the equivalent wild pet in game, item was never used)
+		un(NEVER_IMPLEMENTED, i(180840)),	-- Pink Glimmerfly (Vibrant Glimmerfly is the equivalent wild pet in game, item was never used)
+		un(NEVER_IMPLEMENTED, i(180861)),	-- Red Vulpin (Rustfur Kit is the equivalent wild pet in game, item was never used)
+		un(NEVER_IMPLEMENTED, i(180867)),	-- Silver Crane (Wader Chick is the equivalent wild pet in game, item was never used)
+		un(NEVER_IMPLEMENTED, i(180813)),	-- Silver Teroclaw (Fledgling Teroclaw is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180589)),	-- Soullocked Sinstone (obtainable according to journal)
+		un(NEVER_IMPLEMENTED, i(180872)),	-- Spirited Skyfoal (possibly in game? need more info)
+		un(NEVER_IMPLEMENTED, i(183714)),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
 	}),
 	n(-10052, {	-- BFA - Stuff that gets added later on 9.0 release
 		-- Future Emsembles!!
@@ -1964,7 +1975,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(5130)),	-- Unknown
 		un(NEVER_IMPLEMENTED, i(5131)),	-- Unknown
 		un(NEVER_IMPLEMENTED, i(5132)),	-- Unknown
-		un(NEVER_IMPLEMENTED, i(175160)),	-- Unknown
 		un(NEVER_IMPLEMENTED, i(175246)),	-- N'lyeth (Unused)
 		un(NEVER_IMPLEMENTED, i(169177)),	-- Blueprint: TK32(DNT))
 		un(NEVER_IMPLEMENTED, i(168171)),	-- ph objective
@@ -2258,10 +2268,7 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(21168)),	-- Baby Shark
 		un(NEVER_IMPLEMENTED, i(39148)),	-- Baby Coralshell Turtle
 		un(NEVER_IMPLEMENTED, i(66070)),	-- Lizzy
-		un(NEVER_IMPLEMENTED, i(184400)),	-- Courage
 		un(NEVER_IMPLEMENTED, i(66075)),	-- Bubbles
-		un(NEVER_IMPLEMENTED, i(184221)),	-- Archivist's Quill
-		un(NEVER_IMPLEMENTED, i(184401)),	-- Larion Pouncer
 		un(NEVER_IMPLEMENTED, i(184397)),	-- Lost Featherling
 		un(NEVER_IMPLEMENTED, i(11903)),	-- Cat Carrier (Corrupted Kitten)
 		un(NEVER_IMPLEMENTED, i(109602)),	-- Echo of Murmur (temp item)
@@ -3226,14 +3233,11 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(168451)),	-- Formula: Enchant Ring - Accord of Haste (not used, vendors sell 169531 and 169605)
 			un(NEVER_IMPLEMENTED, i(168452)),	-- Formula: Enchant Ring - Accord of Mastery (not used, vendors sell 169532 and 169606)
 			un(NEVER_IMPLEMENTED, i(168453)),	-- Formula: Enchant Ring - Accord of Versatility (not used, vendors sell 169533 and 169607)
-			un(NEVER_IMPLEMENTED, i(168583)),	-- "REUSE ME [MTMM]"
 			un(NEVER_IMPLEMENTED, i(168584)),	-- "REUSE ME [MTMM]"
 			un(NEVER_IMPLEMENTED, i(168585)),	-- "REUSE ME [MTMM]"
-			un(NEVER_IMPLEMENTED, i(168586)),	-- "REUSE ME [MTMM]"
 			un(NEVER_IMPLEMENTED, i(169537)),	-- "REUSE ME [MTMM] (DNT)" (naga hide rank 3 recipe in game is 170213)
 			un(NEVER_IMPLEMENTED, i(168587)),	-- "REUSE ME [MTMM]"
 			un(NEVER_IMPLEMENTED, i(168588)),	-- "REUSE ME [MTMM]"
-			un(NEVER_IMPLEMENTED, i(168589)),	-- "REUSE ME [MTMM]"
 			un(NEVER_IMPLEMENTED, i(168590)),	-- "REUSE ME [MTMM]"
 		}),
 		n(-185, { 	-- Inscription

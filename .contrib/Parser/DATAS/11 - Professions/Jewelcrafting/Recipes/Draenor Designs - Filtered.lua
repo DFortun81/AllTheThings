@@ -27,13 +27,16 @@ profession(JEWELCRAFTING, {
 					["categoryID"] = 375--[[Jewelry Enhancers]],
 					["g"] = {
 						{	-- Savage Taladite Amplifier
-							["recipeID"] = 187517--[[Savage Taladite Amplifier]]
+							["recipeID"] = 187517,--[[Savage Taladite Amplifier]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Mighty Taladite Amplifier
-							["recipeID"] = 187493--[[Mighty Taladite Amplifier]]
+							["recipeID"] = 187493,--[[Mighty Taladite Amplifier]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Taladite Amplifier
-							["recipeID"] = 170702--[[Taladite Amplifier]]
+							["recipeID"] = 170702,--[[Taladite Amplifier]]
+							["u"] = REMOVED_FROM_GAME,	-- removed in 9.0.1
 						},
 						{	-- Taladite Recrystalizer
 							["recipeID"] = 170701--[[Taladite Recrystalizer]]

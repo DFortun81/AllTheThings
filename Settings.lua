@@ -398,9 +398,19 @@ end
 settings.SetDebugMode = function(self, debugMode)
 	self:Set("DebugMode", debugMode);
 	self:UpdateMode();
-	if debugMode and not self:Get("Thing:Transmog") then
-		wipe(app.GetDataMember("CollectedSources"));
-		app.RefreshCollections();
+	if debugMode then
+		if not self:Get("Thing:Transmog") then
+			wipe(app.GetDataMember("CollectedSources"));
+			app.RefreshCollections();
+		end
+		-- cache the current settings to re-apply after
+		settings:Set("Cache:CompletedGroups", settings:Get("Show:CompletedGroups"));
+		settings:Set("Cache:CollectedThings", settings:Get("Show:CollectedThings"));
+		settings:SetCompletedGroups(true, true);
+		settings:SetCollectedThings(true, true);
+	else
+		settings:SetCompletedGroups(settings:Get("Cache:CompletedGroups"), true);
+		settings:SetCollectedThings(settings:Get("Cache:CollectedThings"), true);
 	end
 	app:RefreshData(nil,nil,true);
 end
@@ -422,16 +432,16 @@ end
 settings.ToggleCompletedThings = function(self)
 	self:SetCompletedThings(not self:Get("Show:CompletedGroups"));
 end
-settings.SetCompletedGroups = function(self, checked)
+settings.SetCompletedGroups = function(self, checked, skipRefresh)
 	self:Set("Show:CompletedGroups", checked);
-	self:UpdateMode(1);
+	self:UpdateMode(not skipRefresh);
 end
 settings.ToggleCompletedGroups = function(self)
 	self:SetCompletedGroups(not self:Get("Show:CompletedGroups"));
 end
-settings.SetCollectedThings = function(self, checked)
+settings.SetCollectedThings = function(self, checked, skipRefresh)
 	self:Set("Show:CollectedThings", checked);
-	self:UpdateMode(1);
+	self:UpdateMode(not skipRefresh);
 end
 settings.ToggleCollectedThings = function(self)
 	settings:SetCollectedThings(not self:Get("Show:CollectedThings", checked));
@@ -690,16 +700,6 @@ function(self)
 end,
 function(self)
 	settings:SetDebugMode(self:GetChecked());
-	if self:GetChecked() then
-		-- cache the current settings to re-apply after
-		settings:Set("Cache:CompletedGroups", settings:Get("Show:CompletedGroups"));
-		settings:Set("Cache:CollectedThings", settings:Get("Show:CollectedThings"));
-		settings:SetCompletedGroups(true);
-		settings:SetCollectedThings(true);
-	else
-		settings:SetCompletedGroups(settings:Get("Cache:CompletedGroups"));
-		settings:SetCollectedThings(settings:Get("Cache:CollectedThings"));
-	end
 end);
 DebugModeCheckBox:SetATTTooltip("Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.");
 DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -1);
@@ -1618,17 +1618,17 @@ end);
 ReportCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.");
 ReportCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnDifficultyCheckBox, "BOTTOMLEFT", 0, -4);
 
-local ReportCompletedQuestsCheckBox = settings:CreateCheckBox("Report Completed Quests",
+local ReportCompletedQuestsCheckBox = settings:CreateCheckBox("Report Quests",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Report:CompletedQuests"));
 end,
 function(self)
 	settings:SetTooltipSetting("Report:CompletedQuests", self:GetChecked());
 end);
-ReportCompletedQuestsCheckBox:SetATTTooltip("Enable this option if you want to see the Quest ID for any quest you complete immediately after it happens. (For reporting bugs, trackings purposes, etc)");
+ReportCompletedQuestsCheckBox:SetATTTooltip("Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)");
 ReportCompletedQuestsCheckBox:SetPoint("TOPLEFT", ReportCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ReportUnsortedCompletedQuestsCheckBox = settings:CreateCheckBox("Only 'Unsorted'",
+local ReportUnsortedCompletedQuestsCheckBox = settings:CreateCheckBox("Only 'Unsourced'",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Report:UnsortedQuests"));
 	if not settings:GetTooltipSetting("Report:CompletedQuests") then
@@ -1642,7 +1642,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("Report:UnsortedQuests", self:GetChecked());
 end);
-ReportUnsortedCompletedQuestsCheckBox:SetATTTooltip("Enable this option if you only want to see the Quest ID for any quest you complete that isn't already listed in the addon.");
+ReportUnsortedCompletedQuestsCheckBox:SetATTTooltip("Enable this option if you only want to see the QuestID if it isn't already Sourced.");
 ReportUnsortedCompletedQuestsCheckBox:SetPoint("TOPLEFT", ReportCompletedQuestsCheckBox, "BOTTOMLEFT", 4, 4);
 end)();
 

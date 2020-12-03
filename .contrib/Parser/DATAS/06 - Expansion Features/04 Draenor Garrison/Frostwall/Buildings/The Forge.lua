@@ -37,6 +37,7 @@ _.ExpansionFeatures =
 										["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
 									}),
 									i(116745, {	-- Recipe: Steelforged Essence
+										["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 										["cost"] = { { "i", 118720, 5 }, },	-- 5x Secret of Draenor Blacksmithing
 									}),
 									i(116729, {	-- Recipe: Steelforged Greataxe
@@ -61,6 +62,7 @@ _.ExpansionFeatures =
 										["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
 									}),
 									i(116743, {	-- Recipe: Truesteel Essence
+										["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
 										["cost"] = { { "i", 118720, 5 }, },	-- 5x Secret of Draenor Blacksmithing
 									}),
 									i(116738, {	-- Recipe: Truesteel Gauntlets

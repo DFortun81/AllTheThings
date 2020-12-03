@@ -10,6 +10,7 @@ _.Zones =
 				i(178879),	-- Greater Dutiful Spirit (Epic)
 				i(178880),	-- Divine Dutiful Spirit (Rare)
 				i(178881),	-- Dutiful Spirit Bastion (Uncommon)
+				i(180533),	-- Solenium Lockbox
 				i(176788),	-- Darkfeather Belt
 				i(176792),	-- Darkfeather Bindings
 				i(176780),	-- Darkfeather Breeches
@@ -21,7 +22,6 @@ _.Zones =
 				i(176765),	-- Darkfeather Tunic
 				i(176795),	-- Defender's Aspis
 				i(176796),	-- Elysian Dory
-				i(182561),	-- Fallen Disciple's Cloak
 				i(176794),	-- Gilded Glaive
 				i(176790),	-- Glimmerhoof Armplates
 				i(176763),	-- Glimmerhoof Breastplate
@@ -39,6 +39,9 @@ _.Zones =
 				i(176800),	-- Modest Greatblade
 				i(176987),	-- Ossein Scale Belt
 				i(176799),	-- Reverent Dagger
+				i(178915, {	-- Ripe Purian
+					["description"] = "Can be looted from objects scattered around the zone.  Used to open Silver Strongboxes and the Steward's Golden Chest.",
+				}),
 				i(176797),	-- Ritual Bell
 				i(176791),	-- Steelscale Bracers
 				i(176764),	-- Steelscale Chainmail

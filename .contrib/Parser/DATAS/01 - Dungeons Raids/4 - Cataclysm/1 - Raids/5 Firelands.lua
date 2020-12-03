@@ -537,7 +537,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							}),
 							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
 							i(175158, {	-- Flames of Fury
-								["races"] = { VULPERA },
+								["races"] = { VULPERA },	-- TODO: figure out if there's a way to track its collection status
 							}),
 							i(71798),	-- Sho'ravon, Greatstaff of Annihilation
 							i(71352),	-- Sulfuras, the Extinguished Hand
@@ -914,7 +914,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							}),
 							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
 							i(175158, {	-- Flames of Fury
-								["races"] = { VULPERA },
+								["races"] = { VULPERA },	-- TODO: figure out if there's a way to track its collection status
 							}),
 							i(71797),	-- Sho'ravon, Greatstaff of Annihilation
 							i(70723),	-- Sulfuras, the Extinguished Hand
