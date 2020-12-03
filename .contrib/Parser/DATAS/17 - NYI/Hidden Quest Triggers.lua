@@ -3059,6 +3059,7 @@ _.HiddenQuestTriggers =
 		-- Maldraxxus WQs
 		q(62948),	-- "learning" the quest items while on #61615, "Tailoring: Haunting Hood"
 		q(57242),	-- triggered when completing #57205, "A Few Bumps Along the Way"
+		q(62942),	-- Triggered when looting Crafted Crate for WQ Cooking: Spider Jerky
 		-- Maldraxxus Covenant
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
 		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'

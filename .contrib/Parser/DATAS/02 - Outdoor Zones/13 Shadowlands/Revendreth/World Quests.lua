@@ -138,6 +138,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61886, {	-- The Mind Games of Addius
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59581, {	-- The Strength of Sinfall
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

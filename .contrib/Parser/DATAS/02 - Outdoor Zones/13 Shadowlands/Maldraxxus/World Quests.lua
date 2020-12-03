@@ -55,6 +55,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61607, {	-- Cooking: Spider Jerky
+					["requireSkill"] = COOKING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(58490, {	-- Deadly Reminder
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -89,6 +94,10 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61540, {	-- Just Winging It
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61866, {	-- Mighty Minions of Maldraxxus
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),

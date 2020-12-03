@@ -7,6 +7,10 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
 			n(-34,  {	-- World Quests
+				q(61593, {	-- A Crisis of Memory (no idea why there are 2 versions of this)
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61689, {	-- A Crisis of Memory
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -101,6 +105,10 @@ _.Zones =
 					["lvl"] = { 60 },
 				}),
 				q(61337, {	-- March of the Eternal Protector
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
+				q(61783, {	-- Mega Bite
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
