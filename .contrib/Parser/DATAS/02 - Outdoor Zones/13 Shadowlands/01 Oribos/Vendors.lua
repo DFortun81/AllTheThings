@@ -41,6 +41,41 @@ _.Zones =
 						i(184735),	-- Wristclasps of Shame
 					},
 				}),
+				n(176368, {	-- Archivist Leonara <Avowed Quartermaster>
+					["coord"] = { 46.1, 77.7, 1670 },
+					["g"] = {
+						i(184221, {	-- Archivist's Quill
+							["cost"] = { { "c", 1816, 1000 } },
+						}),
+						i(184220, {	-- Encyclopedia of Sinstone Fragment Recovery
+							["cost"] = { { "c", 1816, 600 } },
+						}),
+						i(184222, {	-- Lemet's Requisition Orders
+							["cost"] = { { "c", 1816, 350 } },
+						}),
+						i(182890, {	-- Rapid Recitation Quill
+							["cost"] = { { "c", 1816, 500 } },
+						}),
+						i(182660, {	-- Recipe: Shadestone
+							["cost"] = { { "c", 1816, 35 } },
+						}),
+						i(184219, {	-- Treatise on Sinstone Fragment Acquisition
+							["cost"] = { { "c", 1816, 600 } },
+						}),
+						i(184218, {	-- Vulgarity Arbiter
+							["cost"] = { { "c", 1816, 1000 } },
+						}),
+						n(-949, {	-- Covenant: Venthyr
+							-- These are only available to Venthyr covenant members
+							i(180940, {	-- Ebony Crypt Keeper's Mantle
+								["cost"] = { { "c", 1816, 500 } },
+							}),
+							i(182954, {	-- Inquisition Gargon
+								["cost"] = { { "c", 1816, 2000 } },
+							}),
+						}),
+					},
+				}),
 				n(176067, {	-- Dar Vattish <Undying Army Quartermaster>
 					["coord"] = { 47.8, 77.9, 1670 },
 					["g"] = {

@@ -7,57 +7,38 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(VENDORS, {
-				n(173705, {	-- Archivist Janeera
+				n(173705, {	-- Archivist Janeera <Avowed Quartermaster>
 					["coord"] = { 73.0, 52.0, 1525 },
 					["g"] = {
-						i(180940, {	-- Ebony Crypt Keeper's Mantle
-							["cost"] = 3000000, -- 300g
-						}),
-						i(182954, {	-- Inquisition Gargon
+						i(184221, {	-- Archivist's Quill
 							["cost"] = { { "c", 1816, 1000 } },
 						}),
-						i(182660, {	-- Recipe: Shadestone
-							["cost"] = { { "c", 1816, 35 } },
+						i(184220, {	-- Encyclopedia of Sinstone Fragment Recovery
+							["cost"] = { { "c", 1816, 600 } },
 						}),
-						i(182666, {	-- Formula: Enchanted Elethium Bar
-							["cost"] = { { "c", 1816, 50 } },
-						}),
-						i(182668, {	-- Recipe: Feast of Gluttonous Hedonism
-							["cost"] = { { "c", 1816, 35 } },
+						i(184222, {	-- Lemet's Requisition Orders
+							["cost"] = { { "c", 1816, 350 } },
 						}),
 						i(182890, {	-- Rapid Recitation Quill
 							["cost"] = { { "c", 1816, 500 } },
 						}),
-						i(183243, {	-- Memory of the Arbiter's Judgment
-							["cost"] = 11000000,	-- 1,100g
-							["modID"] = 14,
+						i(182660, {	-- Recipe: Shadestone
+							["cost"] = { { "c", 1816, 35 } },
 						}),
-						i(183864, {	-- Plans: Crafter's Mark III
-							["cost"] = { { "c", 1816, 50 } },
-						}),
-						i(183867, {	-- Schematic: Crafter's Mark III
-							["cost"] = { { "c", 1816, 50 } },
-						}),
-						i(183869, {	-- Pattern: Crafter's Mark III
-							["cost"] = { { "c", 1816, 50 } },
-						}),
-						i(183870, {	-- Recipe: Crafter's Mark II
-							["cost"] = { { "c", 1816, 50 } },
-						}),
-						i(183871, {	-- Pattern: Crafter's Mark III
-							["cost"] = { { "c", 1816, 50 } },
-						}),
-						i(183940, {	-- Avowed Archivist's Tome
-							["cost"] = { { "c", 1816, 2000 } },
-							["g"] = {
-								title(436),	-- the Avowed
-							},
+						i(184219, {	-- Treatise on Sinstone Fragment Acquisition
+							["cost"] = { { "c", 1816, 600 } },
 						}),
 						i(184218, {	-- Vulgarity Arbiter
 							["cost"] = { { "c", 1816, 1000 } },
 						}),
-						i(184221, {	-- Archivist's Quill
-							["cost"] = { { "c", 1816, 1000 } },
+						n(-949, {	-- Covenant: Venthyr
+							-- These are only available to Venthyr covenant members
+							i(180940, {	-- Ebony Crypt Keeper's Mantle
+								["cost"] = { { "c", 1816, 500 } },
+							}),
+							i(182954, {	-- Inquisition Gargon
+								["cost"] = { { "c", 1816, 2000 } },
+							}),
 						}),
 					},
 				}),
