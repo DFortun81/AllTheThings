@@ -3131,6 +3131,11 @@ _.HiddenQuestTriggers =
 		q(63242),	-- Completing 2nd 'Campaign Adventure'
 		q(63323),	-- Completing 2nd 'Campaign Adventure'
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
+		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
+		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal"
+		q(61438),	-- triggered when turning in #61404, "Ember Court: Tubbins's Tea Party"
+		q(59506),	-- triggered when signing Tubbins's Contract
+		q(59507),	-- triggered when signing Tubbins's Contract
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

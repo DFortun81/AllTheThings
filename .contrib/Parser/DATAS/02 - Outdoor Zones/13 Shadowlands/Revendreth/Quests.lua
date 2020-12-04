@@ -68,6 +68,14 @@ _.Zones =
 						i(175765),	-- Dredwing Shroud
 					},
 				}),
+				q(57919, {	-- An Abuse of Power
+					["sourceQuests"] = {
+						58093,	-- Our Forgotten Purpose (neutral)
+						57918,	-- The Absolution of Souls (Venthyr)
+					},
+					["provider"] = { "n", 160116 },	-- The Accuser
+					["coord"] = { 71.7, 40.3, 1525 },
+				}),
 				q(57461, {	-- An Uneventful Stroll
 					["sourceQuests"] = { 57460 },	-- Tubbins's Tea
 					["provider"] = { "n", 158542 },	-- Theotar
@@ -206,7 +214,7 @@ _.Zones =
 					["provider"] = { "n", 158038 },	-- Laurent
 					["coord"] = { 26.3, 49.0, 1525 },
 				}),
-				q(58092,{	-- Halls of Atonement: Your Absolution
+				q(58092, {	-- Halls of Atonement: Your Absolution
 					["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
 					["provider"] = { "n", 160248 },	-- Archivist Fane
 					["coord"] = { 73.0, 52.0, 1525 },
@@ -377,9 +385,9 @@ _.Zones =
 					["coord"] = { 65.3, 66.2, 1525 },
 				}),
 				q(58093, {	-- Our Forgotten Purpose
-				--	there is also a Venthyr-only version of this breadcrumb, #57918, "The Absolution of Souls."  that version references "returning" to Halls of Atonement, but this version was available before i had stepped foot in any SL dungeon
 				--	["sourceQuests"] = {  },	-- TODO: unknown.  possibly just requires 60
 					["isBreadcrumb"] = true,
+					["altQuests"] = { 57918 },	-- The Absolution of Souls
 					["provider"] = { "n", 160248 },	-- Archivist Fane
 					["coord"] = { 72.9, 52.0, 1525 },
 				}),
@@ -600,6 +608,21 @@ _.Zones =
 					["g"] = {
 						i(175715),	-- Gargon Eye Ring
 					},
+				}),
+				q(57922, {	-- The Proper Punishment
+					["sourceQuests"] = { 57919 },	-- An Abuse of Power
+					["provider"] = { "n", 160116 },	-- The Accuser
+					["coord"] = { 71.8, 40.3, 1525 },
+				}),
+				q(57920, {	-- The Proper Souls
+					["sourceQuests"] = { 57919 },	-- An Abuse of Power
+					["provider"] = { "n", 160116 },	-- The Accuser
+					["coord"] = { 71.8, 40.3, 1525 },
+				}),
+				q(57921, {	-- The Proper Tools
+					["sourceQuests"] = { 57919 },	-- An Abuse of Power
+					["provider"] = { "n", 160116 },	-- The Accuser
+					["coord"] = { 71.8, 40.3, 1525 },
 				}),
 				q(57026, {	-- The Sinstone
 					["sourceQuests"] = { 57025 },	-- A Plea to Revendreth

@@ -312,6 +312,7 @@ i(171315); 	-- Reuse me (MTMM)
 
 
 -- "Toy"
+i(184631);	-- Adventurer's Enchanting Cache
 i(184634);	-- Adventurer's Herbalism Cache
 i(184635);	-- Adventurer's Mining Cache
 i(173791);	-- Baguette
@@ -347,6 +348,7 @@ i(67495);	-- Strange Bloated Stomach
 i(160378);	-- Strongarm Stout
 i(170379);	-- Sunwarmed Sand
 i(178150);	-- Tasty Purian
+i(181715);	-- Temel's Certificate of Completion
 i(80513);	-- Vintage Bug Sprayer
 i(174922);	-- Void-Touched Skull
 i(6352);	-- Waterlogged Crate

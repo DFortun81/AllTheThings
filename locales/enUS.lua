@@ -1511,6 +1511,7 @@ app.L = {
 		[-904] = "Wrath of the Jailer",											-- Wrath of the Jailer
 		[-905] = "Command Table",												-- Command Table
 		[-906] = "Tier 1: Tactical Insight",									-- Tier 1: Tactical Insight
+		[-907] = "Dead Blanchy",												-- Dead Blanchy
 		[-914] = "Adventures",													-- Adventures
 		[-915] = "Anima Conductor",												-- Anima Conductor
 		[-916] = "Tier 1: Flowing Tendrils",									-- Tier 1: Flowing Tendrils

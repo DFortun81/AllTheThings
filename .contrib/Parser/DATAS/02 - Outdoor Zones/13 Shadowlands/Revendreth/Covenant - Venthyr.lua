@@ -11,6 +11,45 @@ _.Zones =
 			--	1699 = Sinfall Reaches
 			--	1700 = Sinfall Depths
 				n(ACHIEVEMENTS, {
+					ach(14680, {	-- Something for Everyone
+						crit(1, {	-- Atoning Rituals
+						--	["sourceQuests"] = {  },	-- 
+						}),
+						crit(2, {	-- Glimpse of the Wilds
+						--	["sourceQuests"] = {  },	-- 
+						}),
+						crit(3, {	-- Lost Chalice Band
+						--	["sourceQuests"] = {  },	-- 
+						}),
+						crit(4, {	-- Tubbins's Tea Party
+							["sourceQuests"] = { 61404 },	-- Ember Court: Tubbins's Tea Party
+							["description"] = "Requires signing Tubbins's contract after completing the quest.",
+						}),
+						crit(5, {	-- Divine Desserts
+						--	["sourceQuests"] = {  },	-- 
+						}),
+						crit(6, {	-- Mushroom Surprise
+						--	["sourceQuests"] = {  },	-- 
+						}),
+						crit(7, {	-- Traditional Decorations
+						--	["sourceQuests"] = {  },	-- 
+						}),
+						crit(8, {	-- Mortal Reminders
+						--	["sourceQuests"] = {  },	-- 
+						}),
+						crit(9, {	-- Mystery Mirrors
+						--	["sourceQuests"] = {  },	-- 
+						}),
+						crit(10, {	-- Venthyr Volunteers
+						--	["sourceQuests"] = {  },	-- 
+						}),
+						crit(11, {	-- Stoneborn Reserves
+						--	["sourceQuests"] = {  },	-- 
+						}),
+						crit(12, {	-- Maldraxxian Army
+						--	["sourceQuests"] = {  },	-- 
+						}),
+					}),
 				}),
 				n(-901, {	-- Covenant Callings
 					["description"] = "|cFFfe040fVenthyr Covenant|r only.",
@@ -439,6 +478,7 @@ _.Zones =
 					--	unsure what triggered its availability.  "Our Forgotten Purpose" was available for me for days and this version wasn't.  i THINK it might have been unlocking the first tier of every sanctum upgrade?  i noticed it after going to pick up a daily quest from The Accuser after unlocking my final sanctum upgrade, and this quest wasn't up the night before when i started the upgrade
 					--	["sourceQuests"] = {  },	-- ??
 						["isBreadcrumb"] = true,
+						["altQuests"] = { 58093 },	-- Our Forgotten Purpose
 						["provider"] = { "n", 165291 },	-- The Accuser
 						["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
 					}),
@@ -533,6 +573,51 @@ _.Zones =
 					}),
 					n(-960, {	-- The Ember Court
 						n(-961, {	-- Tier 1: A New Court
+							q(59660, {	-- A New Court
+								["sourceQuests"] = { 63065 },	-- Sanctum Upgrade: The Ember Court
+								["provider"] = { "n", 161979 },	-- Theotar
+								["coord"] = { 49.9, 19.3, 1699 },	-- Sinfall Reaches
+							}),
+							q(61706, {	-- Ember Court: Entertainment
+							--	also requires Absolution Crypt storyline, add that SQ upon completion
+								["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
+								["provider"] = { "n", 164966 },	-- Temel
+								["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+							}),
+							q(61704, {	-- Ember Court: Guest RSVPs
+							--	also requires Absolution Crypt storyline, add that SQ upon completion
+								["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
+								["provider"] = { "n", 164966 },	-- Temel
+								["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+							}),
+							q(61705, {	-- Ember Court: Refreshments
+								["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
+								["provider"] = { "n", 164966 },	-- Temel
+								["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+							}),
+							q(61404, {	-- Ember Court: Tubbins's Tea Party
+								["sourceQuests"] = { 61705 },	-- Ember Court: Refreshments
+								["provider"] = { "n", 167863 },	-- Tubbins
+								["coord"] = { 30.9, 57.6, 1525 },	-- Revendreth
+								["g"] = {
+									i(176134),	-- Contract: Tubbins's Tea Party
+								},
+							}),
+							q(59661, {	-- Ember Court Rehearsal
+								["sourceQuests"] = { 59660 },	-- A New Court
+								["provider"] = { "n", 164966 },	-- Temel
+								["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+								["maps"] = { 1644 },	-- Ember Court (scenario)
+							}),
+							q(61884, {	-- Formal Refreshments
+								["sourceQuests"] = { 61404 },	-- Ember Court: Tubbins's Tea Party
+								["provider"] = { "n", 167863 },	-- Tubbins
+								["coord"] = { 30.9, 57.6, 1525 },	-- Revendreth
+							}),
+							q(63065, {	-- Sanctum Upgrade: The Ember Court
+								["provider"] = { "n", 172605 },	-- Foreman Flatfinger
+								["coord"] = { 55.5, 27.0, 1699 },	-- Sinfall Reaches
+							}),
 						}),
 						n(-962, {	-- Tier 2: Homegrown Help
 						}),
