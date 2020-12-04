@@ -86,13 +86,13 @@ _.Zones =
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
 				}),
-				q(59826, {	-- Bet On Yourself (1 - Mistress Dyrax)
-				--	TODO: is this a daily?
+				q(59827, {	-- Bet On Yourself (Devmorta)
+					["isWorldQuest"] = true,	-- shows up in /attwq without this even though there are no related collectibles
 					["provider"] = { "n", 159830 },	-- Au'narim
 					["coord"] = { 53.7, 47.5, 1536 },
 				}),
-				q(59827, {	-- Bet On Yourself (2 - Devmorta)
-				--	TODO: is this a daily?  are they on a cycle / do they require SQs?
+				q(59826, {	-- Bet On Yourself (Mistress Dyrax)
+					["isWorldQuest"] = true,	-- shows up in /attwq without this even though there are no related collectibles
 					["provider"] = { "n", 159830 },	-- Au'narim
 					["coord"] = { 53.7, 47.5, 1536 },
 				}),

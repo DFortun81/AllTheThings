@@ -285,9 +285,9 @@ _.Zones =
 						}),
 						q(60409, {	-- Training in Maldraxxus
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+							["repeatable"] = true,
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
 							["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
-							["repeatable"] = true,
 							["g"] = {
 								i(181732),	-- 	Tribute of the Ambitious
 							},

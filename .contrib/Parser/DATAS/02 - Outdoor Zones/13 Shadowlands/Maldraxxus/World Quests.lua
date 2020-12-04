@@ -68,6 +68,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61608, {	-- Enchanting: Unbreakable Crystal
+					["requireSkill"] = ENCHANTING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61867, {	-- Extra Pieces
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

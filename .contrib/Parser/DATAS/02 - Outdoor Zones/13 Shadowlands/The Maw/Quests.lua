@@ -116,8 +116,8 @@ _.Zones =
 				}),
 				q(60732, {	-- Disrupting the Flow
 					["provider"] = { "n", 176164 },	-- Doomed Soul
-					["coord"] = { 46.9, 41.7, 1543 },
 					["isDaily"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(60644, {	-- Draw Out the Darkness
 					["sourceQuests"] = {
