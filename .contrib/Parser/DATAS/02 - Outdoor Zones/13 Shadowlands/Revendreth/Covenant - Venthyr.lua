@@ -8,6 +8,8 @@ _.Zones =
 		m(1525, {	-- Revendreth
 			n(-949, {	-- Covenant: Venthyr
 			--	TODO: quest through as Venthyr and unlock Adventures Scouting Map first instead of Mirror Network to test alternative version of "Our True Purpose"
+			-- "Our True Purpose" 59324 no longer shows as a 'valid Quest' from the server (2020-12-04), meaning likely no character has acquired it this week (2) of the expac?
+			-- But it is complete for my main, as well as 62921... /shrug
 			--	1699 = Sinfall Reaches
 			--	1700 = Sinfall Depths
 				n(ACHIEVEMENTS, {
@@ -141,7 +143,7 @@ _.Zones =
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["repeatable"] = true,
 							["provider"] = { "n", 158653 },	-- Prince Renathal
-							["coord"] = { 51.2, 37.9, 1699 },	-- Sinfall Reaches
+							["coord"] = { 51.8, 37.4, 1699 },	-- Sinfall Reaches
 							["g"] = {
 								i(181372),	-- 	Tribute of the Ascended
 							},
@@ -296,7 +298,7 @@ _.Zones =
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["repeatable"] = true,
 							["provider"] = { "n", 158653 },	-- Prince Renathal
-							["coord"] = { 51.1, 38.0, 1699 },	-- Sinfall Reaches
+							["coord"] = { 51.8, 37.4, 1699 },	-- Sinfall Reaches
 							["g"] = {
 								i(181556),	-- Tribute of the Court
 							},
