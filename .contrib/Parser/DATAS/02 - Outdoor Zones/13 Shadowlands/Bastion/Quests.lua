@@ -130,6 +130,14 @@ _.Zones =
 					["provider"] = { "n", 160647 },	-- Acolyte Galistos
 					["coord"] = { 61.1, 74.4, 1533 },
 				}),
+				q(58184, {	-- Antiquated Methodology
+					["sourceQuests"] = { 57937 },	-- Tactical Formation
+					["isBreadcrumb"] = true,
+					["description"] = "Only available if you complete all of Pelodis's quests before any of Nemea's quests.",
+					["altQuests"] = { 58185 },	-- Success Without Soul
+					["provider"] = { "n", 158765 },	-- Pelodis
+					["coord"] = { 54.7, 41.1, 1533 },
+				}),
 				q(57714, {	-- Assessing Your Spirit
 					["sourceQuests"] = {
 						57909,	-- Assessing Your Stamina
@@ -486,6 +494,14 @@ _.Zones =
 					["sourceQuests"] = { 59426 },	-- Your Personal Assistant
 					["provider"] = { "n", 165045 },	-- Kalisthene
 					["coord"] = { 52.8, 47.8, 1533 },
+				}),
+				q(58185, {	-- Success Without Soul
+					["sourceQuests"] = { 58042 },	-- On Larion Wings
+					["isBreadcrumb"] = true,
+					["description"] = "Only available if you complete all of Nemea's quests before any of Pelodis's quests.",
+					["altQuests"] = { 58184 },	-- Antiquated Methodology
+					["provider"] = { "n", 157696 },	-- Nemea
+					["coord"] = { 57.2, 39.2, 1533 },
 				}),
 				q(57712, {	-- Suggested Reading
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
@@ -890,24 +906,6 @@ _.Zones =
 				-- End of Zone Achievement Quests
 
 				-- An Act of Service
-				q(58184, {	-- Antiquated Methodology
-					["provider"] = { "n", 158765 },	-- Pelodis
-					["coord"] = { 54.7, 41.1, 1533 },
-					["sourceQuests"] = { 57937 },	-- Tactical Formation
-					["altQuests"] = {
-						58184,	-- Antiquated Methodology
-						58185,	-- Success Without Soul
-					},
-				}),
-				q(58185, {	-- Success Without Soul
-					["provider"] = { "n", 157696 },	-- Nemea
-					["coord"] = { 57.2, 39.2, 1533 },
-					["sourceQuests"] = { 58042 },	-- On Larion Wings
-					["altQuests"] = {
-						58184,	-- Antiquated Methodology
-						58185,	-- Success Without Soul
-					},
-				}),
 				q(59554, {	-- A Fine Journey
 					--["provider"] = { "o", ?? },	-- Notice						-- TODO: Need to add the ObjectID
 					["coord"] = { 51.5, 47.1, 1533 },

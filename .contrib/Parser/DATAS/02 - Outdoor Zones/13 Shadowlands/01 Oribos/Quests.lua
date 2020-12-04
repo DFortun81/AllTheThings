@@ -445,6 +445,13 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 62275 },	-- Bastion
 				}),
+				q(63034, {	-- The Elysian Fields
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 62275 },	-- Bastion
+				}),
 				-- Maldraxxus
 				q(63035, {	-- A Fresh Blade
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
