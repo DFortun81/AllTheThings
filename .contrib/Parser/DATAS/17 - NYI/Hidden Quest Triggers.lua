@@ -3108,6 +3108,8 @@ _.HiddenQuestTriggers =
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
 		q(60583),	-- Tollkeeper Varaboss secondary quest
+		-- Revendreth Treasures
+		q(60954),	-- secondary questID when looting Pugilist's Prize (35.8, 67.5)
 		-- Revendreth WQs
 		q(59858),	-- Tea Tales: Theotar Achievement criteria
 		q(59861),	-- Tea Tales: Theotar Achievement criteria

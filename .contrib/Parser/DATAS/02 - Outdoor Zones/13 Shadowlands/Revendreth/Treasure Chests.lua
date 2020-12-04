@@ -7,15 +7,6 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(-212, {	-- Treasure Chest
-			--	TODO: figure out wtf to do with blanchy's reins
-			--	crit(8, {	-- Blanchy Assisted
-			--		--["objectID"] = 354646,	-- Ancient Cloudfeather Egg
-			--		["coord"] = { 63.01, 54.46, 1525 },
-					--["questID"] = 61065,
-			--		["g"] = {
-						i(182614),	-- Blanchy's Reins
-			--		},
-			--	}),
 				o(353232, {	-- Bleakwood Chest
 					["questID"] = 60665,
 					["isDaily"] = true,	-- repeatable??
@@ -106,6 +97,17 @@ _.Zones =
 					["questID"] = 60983,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 53.6, 57.3, 1525 },
+				}),
+				i(354189, {	-- Stoneborn Satchel
+					["questID"] = 60896,
+					["isDaily"] = true,
+					["coord"] = { 58.0, 67.2, 1525 },
+				}),
+				o(1278968759, {	-- Stoneborn Satchel
+				--	TODO: fix objectID when data is available
+					["questID"] = 60944,
+					["isDaily"] = true,
+					["coord"] = { 57.7, 29.4, 1525 },
 				}),
 				o(354108, {	-- Stoneborn Satchel
 					["questID"] = 60938,

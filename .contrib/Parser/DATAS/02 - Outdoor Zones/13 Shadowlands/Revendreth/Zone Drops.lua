@@ -120,10 +120,10 @@ _.Zones =
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace
 				i(173709, {	-- Vial of Dredger Muck
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 					["description"] = "Drops from Dredger mobs and can be found in Revendreth treasure chests.",
 					["questID"] = 58071,	-- Favor: Vial of Dredger Muck
 					["isDaily"] = true,
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 					["crs"] = {
 						160846,	-- Beleaguered Excavator
 						161490,	-- Blackbale Flunky

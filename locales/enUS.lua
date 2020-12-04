@@ -4324,6 +4324,7 @@ app.L = {
 		[1278968756] = "Silver Strongbox",	-- TODO: fix objectID when data becomes available
 		[1278968757] = "Silver Strongbox",	-- TODO: fix objectID when data becomes available
 		[1278968758] = "Hidden Hoard",		-- TODO: fix objectID when data becomes available
+		[1278968759] = "Stoneborn Satchel",		-- TODO: fix objectID when data becomes available
 		[354852] = "Sprouting Growth",
 		[354853] = "Sprouting Growth",
 		[354856] = "Slime-Coated Crate",

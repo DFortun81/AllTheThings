@@ -13,6 +13,25 @@ _.Zones =
 						["questID"] = 62183,	-- A Leaking Box Marked Perishable
 						["isDaily"] = true,
 					}),
+					i(180453, {	-- Favor: She Had a Stone Heart
+						["questID"] = 60889,	-- Favor: She Had a Stone Heart
+						["isDaily"] = true,
+					}),
+					i(173709, {	-- Vial of Dredger Muck
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["description"] = "Drops from Dredger mobs and can be found in Revendreth treasure chests.",
+						["questID"] = 58071,	-- Favor: Vial of Dredger Muck
+						["isDaily"] = true,
+						["crs"] = {
+							160846,	-- Beleaguered Excavator
+							161490,	-- Blackbale Flunky
+							161258,	-- Chalice Dredger
+							176118,	-- Confirmed Dredger
+							170953,	-- Head Pugilist
+							158193,	-- Manor Servant
+							159495,	-- Mire Dredger
+						},
+					}),
 					i(182726, {	-- Nadja's Letter
 						["questID"] = 62182,	-- A Letter From Nadja
 						["isDaily"] = true,
