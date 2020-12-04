@@ -4278,6 +4278,7 @@ app.L = {
 		[350804] = "Broken Harp",
 		[350978] = "Queen's Conservatory Cache",
 		[351467] = "Faded Epitaph",
+		[351540] = "Secret Treasure",
 		[351542] = "Secret Treasure",
 		[351874] = "Wanted: Enforcer Kristof",
 		[351885] = "Wanted: Aggregate of Doom",
@@ -4315,6 +4316,7 @@ app.L = {
 		[354123] = "Pugilist's Prize",
 		[354186] = "Stoneborn Satchel",
 		[354192] = "Stoneborn Satchel",
+		[354211] = "Greed's Reward",
 		[1278968750] = "Secret Treasure",	-- TODO: fix objectID when data becomes available
 		[1278968751] = "Stoneborn Satchel",	-- TODO: fix objectID when data becomes available
 		[1278968752] = "Stoneborn Satchel",	-- TODO: fix objectID when data becomes available
@@ -4545,5 +4547,9 @@ app.L = {
 	["CUSTOM_COLLECTS_REASONS"] = {
 		["NPE"] = { "New Player Experience", "Only a New Character can Collect this" },
 		["SL_SKIP"] = { "Shadowlands Skip", "Only a Character who chose to skip the Shadowlands Storyline can Collect this" },
+		["SL_COV_KYR"] = { "|cFF516bfeKyrian Covenant|r" },
+		["SL_COV_NEC"] = { "|cFF40bf40Necrolord Covenant|r" },
+		["SL_COV_NFA"] = { "|cFFA330C9Night Fae Covenant|r" },
+		["SL_COV_VEN"] = { "|cFFfe040fVenthyr Covenant|r" },
 	};
 };

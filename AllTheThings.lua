@@ -10843,7 +10843,7 @@ RowOnEnter = function (self)
 		-- restriction on the Thing which this character does not meet
 		if reference.customCollect and not app.CustomCollects[reference.customCollect] then
 			local customCollectEx = L["CUSTOM_COLLECTS_REASONS"][reference.customCollect];
-			GameTooltip:AddDoubleLine("Requires: |cff5bc41d" .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]") .. "|r", customCollectEx[2] or "[MISSING_LOCAL_REASON");
+			GameTooltip:AddDoubleLine("Requires: |cff5bc41d" .. (customCollectEx[1] or "[MISSING_LOCALE_KEY]") .. "|r", customCollectEx[2] or "");
 		end
 
 		-- Show Quest Prereqs
