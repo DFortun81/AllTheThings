@@ -477,9 +477,6 @@ _.Zones =
 						i(183245, {	-- Memory of Norgannon
 							["cost"] = 11000000, -- 1,100g
 						}),
-						i(183708, {	-- Glittering Gold Sinstone Chain
-							["cost"] = { { "c", 1813, 3500 } },
-						}),
 						i(183839, {	-- Pattern: Heavy Desolate Hide
 							["cost"] = 17650000, -- 1,765g
 						}),
@@ -500,6 +497,12 @@ _.Zones =
 						i(184727),	-- Courtier's Shoulderguard
 						i(184755),	-- Reinforced High Collar
 						i(182207),	-- Illusion: Sinsedge
+						n(-949, {	-- Covenant: Venthyr
+							-- These are only available to Venthyr covenant members
+							i(183708, {	-- Glittering Gold Sinstone Chain
+								["cost"] = { { "c", 1813, 3500 } },
+							}),
+						}),
 					},
 				}),
 				n(174183, {	-- Solivane <Raid Finder Nathrian Weaponsmith>
