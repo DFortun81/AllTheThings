@@ -201,13 +201,14 @@ _.Zones =
 					},
 				}),
 				n(171009, { -- Enforcer Aegeon
-					["coord"] = { 50.8, 19.6, 1533 },
-					--["questID"] = ,
+					["questID"] = 60998,
 					["isDaily"] = true,
+					["coord"] = { 50.8, 19.6, 1533 },
 					["g"] = {
 						crit(14, {	-- Enforcer Aegeon
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
+						i(184404),	-- Ever-Abundant Hearth (TOY!)
 					},
 				}),
 				n(160721, { -- Fallen Acolyte Erisne
