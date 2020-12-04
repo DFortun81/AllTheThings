@@ -73,23 +73,14 @@ _.Zones =
 				q(60844, {	-- Flight School: Falling With Style
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						ach(14735, crit(1)),	-- Flight School Graduate / Flight School: Falling With Style
-					},
 				}),
 				q(60911, {	-- Flight School: Flapping Frenzy
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						ach(14735, crit(3)),	-- Flight School Graduate / Flight School: Flapping Frenzy
-					},
 				}),
 				q(60858, {	-- Flight School: Up and Away!
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
-					["g"] = {
-						ach(14735, crit(2)),	-- Flight School Graduate / Flight School: Up and Away!
-					},
 				}),
 				q(59804, {	-- Gateways of Horror
 					["isWorldQuest"] = true,
