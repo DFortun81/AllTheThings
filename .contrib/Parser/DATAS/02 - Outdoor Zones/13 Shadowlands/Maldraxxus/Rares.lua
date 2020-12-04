@@ -177,12 +177,16 @@ _.Zones =
 					},
 				}),
 				n(158406, { -- Scunner
-					["coord"] = { 61.6, 76.4, 1536 },
-					--["questID"] = ,
+					["description"] = "Get a gas mask from |cff005f10Pandemis|r at |cFFFFFFFF59.7, 71.2|r to negate Scunner's aura.",
+					["questID"] = 58006,
 					["isDaily"] = true,
+					["coord"] = { 61.6, 76.4, 1536 },
 					["g"] = {
-						ach(14308, crit(2)),	-- Adventurer of Maldraxxus / Scunner
-						i(181267),	-- Writhing Spine
+						crit(2, {	-- Scunner
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
+						i(181267),	-- Writhing Spine (PET!)
+						i(184287),	-- Scum-Caked Epaulettes
 					},
 				}),
 				n(162528, { -- Smorgas the Feaster

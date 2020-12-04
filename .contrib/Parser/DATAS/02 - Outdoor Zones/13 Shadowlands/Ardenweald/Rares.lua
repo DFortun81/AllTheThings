@@ -97,9 +97,9 @@ _.Zones =
 					},
 				}),
 				n(160448, {	-- Hunter Vivanna <The Wild Hunt>
-					["coord"] = { 67.8, 51.2, 1565 },
 					["questID"] = 59221,
 					["isDaily"] = true,
+					["coord"] = { 67.8, 51.2, 1565 },
 					["g"] = {
 						crit(10, {	-- Hunter Vivanna
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -134,72 +134,33 @@ _.Zones =
 					},
 				}),
 				n(165053, {	-- Mymaen
-					["coord"] = { 62.2, 24.8, 1565 },
-					--["questID"] = ,
+				--	["questID"] = ,
 					["isDaily"] = true,
+					["coord"] = { 62.2, 24.8, 1565 },
 					["g"] = {
 						crit(11, {	-- Mymaen
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
+						i(179502),	-- Ripvine Barb
 					},
 				}),
 				n(164547, {	-- Mystic Rainbowhorn
-					["coord"] = { 50.0, 20.6, 1565 },
-					--["questID"] = ,
+				--	["questID"] = ,
 					["isDaily"] = true,
+					["coord"] = { 50.0, 20.6, 1565 },
 					["g"] = {
 						crit(2, {	-- Mystic Rainbowhorn
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
 						i(182179, {	-- Runestag Soul
+						--	TODO: apparently can be picked up by non-Night Fae, but requires NF to turn in, because it's in their sanctum. move to NF file?
 							["questID"] = 62434,	-- Runestag Soul
 						}),
-					},
-				}),
-				n(168135, {	-- Night Mare
-					["coord"] = { 62.25, 53.97, 1565 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["description"] = "|cFFA330C9Night Fae Covenant|r only. Requires Dream Catcher.",
-					["g"] = {
-						crit(16, {	-- Night Mare
-							["achievementID"] = 14309,	-- Adventurer of Ardenweald
-						}),
-						i(180728),				-- Swift Gloomhoof
-						i(181243, {			-- Broken Soulweb
-							["coord"] = { 19.67, 63.47, 1565 },
-							["description"] = "West of Thirna Scithe on Ardenweald there is a platform with a broken cart on it. Loot the Cracked Soulweb Object next to it to receive the Broken Soulweb.",
-							["g"] = {
-								n(165704, {		-- Elder Gwenna
-									["coord"] = { 50.44, 33.06, 1565 },	-- Elder Gwenna
-									["g"] = {
-										i(181242, {			-- Repaired Soulweb
-											["crs"] = { 165704 },	-- Elder Gwenna
-											["coord"] = { 50.44, 33.06, 1565 },
-											["description"] = "Return the Broken Soulweb & 10 Lightless Silk to Elder Gwenna to receive the Repaired Soulweb.",
-											["g"] = {
-												n(160262, {		-- Ysera
-													["coord"] = { 45.30, 51.13, 1565 },	-- Ysera
-													["g"] = {
-														i(178675, {			-- Dream Catcher
-															["crs"] = { 160262 },	-- Ysera
-															["coord"] = { 45.30, 51.13, 1565 },
-															["description"] = "Talk to Ysera to enchant the Soulweb to receive the Dream Catcher.",
-															["g"] = {
-																i(180728),				-- Swift Gloomhoof
-															},
-														}),
-													},
-												}),
-											},
-										}),
-									},
-								}),
-							},
-						}),
+						i(179586),	-- Elderwood Piercer
 					},
 				}),
 				n(164391, {	-- Old Ardeite
+					["description"] = "Use either a |cff16bf0dPinch of Faerie Dust|r (dropped by the mobs in the area) or the buff from |cFFFFFFFFBasket of Enchanted Wings|r to fly up to the rare.  When you get close enough, it will fly down and be attackable.",
 					["questID"] = 59208,
 					["isDaily"] = true,
 					["coord"] = { 52.0, 58.8, 1565 },
@@ -223,7 +184,7 @@ _.Zones =
 						i(179603),	-- Nettlehusk Barrier
 					},
 				}),
-				n(167724, {	-- Rotbriar Changeling
+				n(167724, {	-- Rotbriar Boggart
 					["questID"] = 60258,
 					["isDaily"] = true,
 					["coord"] = { 65.6, 24.0, 1565 },
@@ -253,9 +214,9 @@ _.Zones =
 					},
 				}),
 				n(164415, {	-- Skuld Vit
-					["coord"] = { 37.4, 59.6, 1565 },
 					["questID"] = 59220,
 					["isDaily"] = true,
+					["coord"] = { 37.4, 59.6, 1565 },
 					["g"] = {
 						crit(9, {	-- Skuld Vit
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
@@ -263,10 +224,11 @@ _.Zones =
 						i(182183, {	-- Wolfhawk Soul
 							["questID"] = 62439,	-- Shadowstalker Soul
 						}),
+						i(180146),	-- Axe of Broken Wills
 					},
 				}),
 				n(171451, {	-- Soultwister Cero
-					--["questID"] = ,
+				--	["questID"] = ,
 					["isDaily"] = true,
 					["coord"] = { 72.4, 51.6, 1565 },
 					["g"] = {
@@ -278,7 +240,6 @@ _.Zones =
 				}),
 				n(-934,   {	-- Star Lake Amphitheater
 					["description"] = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
-				--	TODO: are these on a cycle?  i think it was Mi'kai > Glimmerdust as Kil'jaeden > Astra > Senthii > Niya so far, if order holds we can add it to the description
 					["questID"] = 61633,	-- this appears to trigger for all rares.  move to HQT if this changes, only 2 tested so far
 					["coord"] = { 41.5, 44.8, 1565 },
 					["icon"] = "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
@@ -350,15 +311,15 @@ _.Zones =
 					},
 				}),
 				n(168647, {	-- Valfir the Unrelenting
-					["coord"] = { 30.0, 55.0, 1565 },
+					["description"] = "Requires a member of the |cFFA330C9Night Fae Covenant|r to channel anima to Tirna Scithe. Afterwards, you can loot the Animaseed Light at the boss to remove its veil.",
 					["questID"] = 61632,
 					["isDaily"] = true,
-					["description"] = "Requires a |cFFA330C9Night Fae Covenant|r to remove the Veil. The Anima Conductor needs to channel anima to Tirna Scithe. Afterwards you can loot the Animaseed Light at the boss to remove the Veil.",
+					["coord"] = { 30.0, 55.0, 1565 },
 					["g"] = {
 						crit(19, {	-- Valfir the Unrelenting
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(180730),	-- Wild Glimmerfur Prowler
+						i(180730),	-- Wild Glimmerfur Prowler (MOUNT!)
 						i(180154),	-- Greataxe of Unrelenting Pursuit
 						i(182176, {	-- Shadowstalker Soul
 							["questID"] = 62431,	-- Shadowstalker Soul

@@ -124,12 +124,12 @@ _.Zones =
 						["coord"] = { 30.7, 28.7, 1536 },
 					}),
 					crit(4, {	-- Vat of Conspicuous Slime
+						["description"] = "Pick up the |cFFFFFFFFEmpty Plague Bottle|r from the table next to the vat.",
 						["objectID"] = 355865,	-- Vat of Conspicuous Slime
-						["coord"] = { 59.8, 79.0, 1536 },
 						["questID"] = 61444,
-						["description"] = "Take the |cFFFFFFFF[Empty Plague Bottle]|r from the table and use it on the pool next to you.",
+						["coord"] = { 59.8, 79.0, 1536 },
 						["g"] = {
-							i(181825),	-- Phial of Ravenous Slime
+							i(181825),	-- Phial of Ravenous Slime (TOY!)
 						},
 					}),
 					crit(5, {	-- Stolen Jar
@@ -188,16 +188,13 @@ _.Zones =
 						["description"] = "You need |cFFFFFFFF[Runespeaker's Key]|r from Runespeaker Phaeton at |cFFFFFFFF37.8, 70.1|r to open the chest. ",
 					}),
 					crit(12, {	-- Plaguefallen Chest
+						["description"] = "To access this chest, you need the |cFFFFFFFFPlaguefallen|r debuff.  You can either pick up a Plaguefallen Potion from |cFFFFFFFF58.4, 73.3|r in Plague Watch, or stand in green slime until you have 10 stacks of |cFFFFFFFFConcentrated Plague|r (living through the stacks requires significant self-healing, but picking up the potion far away from the cave gives you very little time to get there).\n\nWith the debuff, you have 2 minutes to make it to the cave at |cFFFFFFFF62.3, 76.6|r (behind Scunner's platform) and use the pipe at the back of the cave to teleported to the chest.\n\nYou MUST still have the debuff to loot the chest, so don't alt-tab after you get teleported!",
 						["objectID"] = 355886,	-- Plaguefallen Chest
-						["coords"] = {
-							{ 60.4, 77.7, 1536 },	-- Slime for the Debuff
-							{ 62.4, 76.5, 1536 },	-- Cave
-							{ 57.6, 75.8, 1536 },	-- Treasure
-						},
 						["questID"] = 61474,
-						["description"] = "Stand in the green Slime at |cFFFFFFFF60.4, 77.7|r for 10 Stacks of |cFFFFFFFFConcentrated Plague|r to get the Debuff |cFFFFFFFFPlaguefallen|r, then go to the cave at |cFFFFFFFF62.4, 76.5|r (under the plattform of Scunner) and use the pipe at the end of the cave to get to the chest.",
+						["coords"] = { 62.4, 76.5, 1536 },
+						["lvl"] = { 60 },
 						["g"] = {
-							i(183515),	-- Reanimated Plague
+							i(183515),	-- Iridescent Ooze (PET!)
 						},
 					}),
 					crit(13, {	-- Ritualist's Cache

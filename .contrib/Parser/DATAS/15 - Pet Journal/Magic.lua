@@ -62,6 +62,7 @@ _.PetJournal =
 		p(1926),	-- Hungering Claw
 		p(1631),	-- Hyjal Wisp
 		p(2960),	-- Invertebrate Oil
+		p(3045),	-- Iridescent Ooze
 		p(446),		-- Jade Oozeling
 		p(845),		-- Jade Owl
 		un(REMOVED_FROM_GAME, p(231)),	-- Jade Tiger

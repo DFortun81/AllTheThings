@@ -57,6 +57,7 @@ i(184373);	-- Small Anima Globe
 i(181647);	-- Stabilized Plague Strain
 i(181479);	-- Starlight Catcher
 i(184519);	-- Totem of Stolen Mojo
+i(181644);	-- Unlabeled Culture Jars
 i(184776);	-- Urn of Arena Soil
 i(184765);	-- Vesper Strikehammer
 i(184371);	-- Vivacity of Collaboration
@@ -127,6 +128,8 @@ i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
 i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
 i(180170);	-- Pulsing Animacone
+i(180008);	-- Resonating Anima Core
+i(180009);	-- Resonating Anima Mote
 i(33448);	-- Runic Mana Potion
 i(180405);	-- Rusty Gargon Chain
 i(165699);	-- Scarlet Herring Lure
@@ -144,6 +147,7 @@ i(169860);	-- Tiny Dapper Hat
 i(143858);	-- Twilight Cultist Cowl
 i(143857);	-- Twilight Cultist Mantle
 i(143855);	-- Twilight Cultist Robe
+i(182198);	-- Undulating Blood Burrower
 i(168003);	-- Unstable Manapearl
 i(13514);	-- Wail of the Banshee
 i(180697);	-- Wing Commanders Insignia

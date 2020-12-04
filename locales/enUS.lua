@@ -1516,6 +1516,7 @@ app.L = {
 		[-916] = "Tier 1: Flowing Tendrils",									-- Tier 1: Flowing Tendrils
 		[-917] = "Tier 2: Streaming Threads",									-- Tier 2: Streaming Threads
 		[-918] = "Tier 3: Flowing Power",										-- Tier 3: Flowing Power
+		[-919] = "Night Mare",													-- Night Mare
 		
 -- SL Maldraxxus/Necrolord
 		[-920] = "Covenant: Necrolord",											-- Covenant: Necrolord
