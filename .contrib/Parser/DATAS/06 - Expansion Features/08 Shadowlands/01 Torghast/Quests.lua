@@ -17,6 +17,12 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
+				q(61426, {	-- Champion: Yira'lya
+					["provider"] = { "n", 172243 },	-- Yira'lya
+					["g"] = {
+						follower(1282)	-- Yira'lya
+					},
+				}),
 				q(60268, {	-- Deep Within
 					["sourceQuests"] = { 60267 },	-- Prison of the Forgotten
 					["provider"] = { "n", 164937 },	-- Runecarver

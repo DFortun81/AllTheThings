@@ -3193,6 +3193,7 @@ _.HiddenQuestTriggers =
 		q(58204),	-- Mort'regar Layer 1
 		q(58205),	-- Mort'regar Layer 2
 		q(59326),	-- Mort'regar Layer 3
+		q(61420),	-- Triggered when freeing Yira'lya
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

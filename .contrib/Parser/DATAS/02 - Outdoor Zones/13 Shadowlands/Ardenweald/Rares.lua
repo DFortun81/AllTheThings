@@ -110,6 +110,7 @@ _.Zones =
 						i(179596),	-- Drust Mask of Dominance
 					--	TODO: the items below also drop from zone treasures, so i'm putting them in Zone Rewards as well.  this is the only rare currently showing as dropping them at all, so for now i'm leaving them on her loot table.  if they wind up being dropped by a kazillion rares in the future we could add that information to the ZR header and remove them from vivanna	
 						i(179593),	-- Darkreach Mask
+						i(180142),	-- Deadstone Hatchet
 						i(179594),	-- Witherscorn Guise
 						i(180165),	-- Witherscorn Reaper
 					},
