@@ -95,6 +95,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61446, {	-- Inscription: Invocation of Duty
+					["requireSkill"] = INSCRIPTION,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61337, {	-- March of the Eternal Protector
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

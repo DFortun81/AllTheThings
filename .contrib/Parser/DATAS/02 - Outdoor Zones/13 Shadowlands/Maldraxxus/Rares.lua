@@ -35,6 +35,8 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(1)),	-- Adventurer of Maldraxxus / Corspecutter Moroc
+						i(184177),	-- Grotesque Goring Pick
+						i(184176),	-- Moroc's Boneslicing Warglaive
 					},
 				}),
 				n(162711, {	-- Deadly Dapperling
@@ -293,8 +295,8 @@ _.Zones =
 					},
 				}),
 				n(157125, { -- Zargox the Reborn
-					--["coord"] = { 61.6, 76.4, 1536 },
-					--["questID"] = ,
+					["coord"] = { 29.0, 51.6, 1536 },
+					["questID"] = 50290,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(3)),	-- Adventurer of Maldraxxus / Zargox the Reborn

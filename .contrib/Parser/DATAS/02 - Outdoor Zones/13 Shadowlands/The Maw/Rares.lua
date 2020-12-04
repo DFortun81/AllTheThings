@@ -294,7 +294,7 @@ _.Zones =
 				}),
 				n(162849, {	-- Morguliax <Lord of Decapitation>
 					--["coord"] = { 27.4, 49.4, 1543 },
-					--["questID"] = 61125,
+					["questID"] = 60987,
 					["isDaily"] = true,
 					["g"] = {
 						crit(12, {	-- Morguliax
