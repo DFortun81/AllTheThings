@@ -86,8 +86,13 @@ _.Zones =
 					["provider"] = { "n", 168381 },	-- Baroness Draka
 					["coord"] = { 50.3, 67.7, 1536 },
 				}),
-				q(59826, {	-- Bet On Yourself
+				q(59826, {	-- Bet On Yourself (1 - Mistress Dyrax)
 				--	TODO: is this a daily?
+					["provider"] = { "n", 159830 },	-- Au'narim
+					["coord"] = { 53.7, 47.5, 1536 },
+				}),
+				q(59827, {	-- Bet On Yourself (2 - Devmorta)
+				--	TODO: is this a daily?  are they on a cycle / do they require SQs?
 					["provider"] = { "n", 159830 },	-- Au'narim
 					["coord"] = { 53.7, 47.5, 1536 },
 				}),
@@ -638,6 +643,10 @@ _.Zones =
 				q(59867, {	-- WANTED: Appraiser Vix
 					["provider"] = { "o", 349612 },	-- Wanted: Appraiser Vix
 					["coord"] = { 54.1, 47.5, 1536 },
+				}),
+				q(62462, {	-- WANTED: The Key of Eyes
+					["provider"] = { "o", 358382 },	-- Wanted: Chelicera
+					["coord"] = { 53.0, 41.4, 1536 },
 				}),
 				q(59172, {	-- War is Deception
 					["sourceQuests"] = {

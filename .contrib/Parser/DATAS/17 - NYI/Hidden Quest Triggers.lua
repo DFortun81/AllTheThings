@@ -3025,12 +3025,14 @@ _.HiddenQuestTriggers =
 		q(62201),	-- Herculon secondary loot quest
 		q(63421),	-- Nemaeus secondary quest
 		q(63411),	-- Nikara Blackheart secondary quest
+		q(63410),	-- Selena the Reborn secondary quest
 		q(63423),	-- Sigilback secondary quest
 		q(62197),	-- Wingflayer the Cruel secondary quest
 		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
 		--	Bastion Treasures
 		q(60875),	-- seems to trigger for all Hidden Hoard chests on top of unique questIDs for each
 		q(60880),	-- triggers on Hidden Hoard chests for Kyrian players (???)
+		q(60797),	-- secondary quest trigger on Broken Bell (58.3, 66.2)
 		--	Bastion WQs
 		q(63262),	-- triggered after completing the WQ #60858, "Flight School: Up and Away!"
 		q(63263),	-- triggered after completing the WQ #60911, "Flight School: Flapping Frenzy"
@@ -3056,7 +3058,7 @@ _.HiddenQuestTriggers =
 		q(57619),	-- triggered while on "In Death We Are Truly Tested" -- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
 		q(59843),	-- triggered when turning in "A Sure Bet"
 		q(62372),	-- triggered when 'feeding' Page 76 to the necronomicron
-		q(62786),	-- triggered when killing Unbreakable Urtz during "The Ladder" - no other arena opponents triggered quests / Killing Xantuth
+		q(62786),	-- triggered when killing Unbreakable Urtz during "The Ladder" - no other arena opponents triggered quests / Killing Xantuth / killing Devmorta ... maybe triggers on the first ToP rare/day?
 		q(62738),	-- triggered when accepting 62748 [Rallying Maldraxxus]
 		q(63416),	-- triggered when accepting 62748 [Rallying Maldraxxus]
 		q(62712),	-- bonus objective, "War of Attrition" -- what controls availability of these in SL?  i have a bonus objective up at 60 in Ardenweald but i can't see this one

@@ -46,27 +46,6 @@ _.Zones =
 				}),
 				ach(14802, {	-- Bloodsport
 				--	TODO: does this require being on/having completed The Ladder or can you get credit before 'unlocking' the arena?
-					crit(1, {	-- Azmogal
-						["crs"] = { 162873 },	-- Azmogal
-					}),
-					crit(2, {	-- Unbreakable Urtz
-						["crs"] = { 162853 },	-- Unbreakable Urtz
-					}),
-					crit(3, {	-- Xantuth the Blighted
-						["crs"] = { 162872 },	-- Xantuth the Blighted
-					}),
-					crit(4, {	-- Mistress Dyrax
-						["crs"] = { 162880 },	-- Mistress Dyrax
-					}),
-					crit(5, {	-- Devmorta
-						["crs"] = { 162875 },	-- Devmorta
-					}),
-					crit(6, {	-- Ti'or
-						["crs"] = { 162874 },	-- Ti'or
-					}),
-					crit(7, {	-- Sabriel the Bonecleaver
-						["crs"] = { 168147 },	-- Sabriel the Bonecleaver
-					}),
 				}),
 				ach(14626, {	-- Harvester of Sorrow
 				--	TODO: figure out a better way to display these?  maybe secrets?  maybe in a treasures header?  maybe the 'special' header?

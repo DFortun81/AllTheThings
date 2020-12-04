@@ -7,6 +7,11 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
 			n(-212, {	-- Treasure Chest
+				o(353688, {	-- Broken Bell
+					["questID"] = 60795,
+					["isDaily"] = true,
+					["coord"] = { 58.3, 66.2, 1533 },
+				}),
 				o(353234, {	-- Gilded Chest
 					["questID"] = 60663,
 					["isDaily"] = true,	-- repeatable?
@@ -28,6 +33,11 @@ _.Zones =
 					["description"] = "The coordinates are for a cave entrance hidden in the side of a cliff.  You'll have to walk along a ledge halfway up the cliffside to access it.",
 					["questID"] = 60878,	-- 60875 put in HQT, seems to trigger for all Hidden Hoard objects (or at least multiple)
 					["coord"] = { 47.7, 35.1, 1533 },
+				}),
+				o(1278968758, {	-- Hidden Hoard
+					["description"] = "The coordinates are for a cave entrance hidden behind some vines in the side of a cliff.",
+					["questID"] = 60879,
+					["coord"] = { 48.5, 45.4, 1533 },
 				}),
 				o(353650, {	-- Steward's Golden Chest
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
@@ -82,6 +92,21 @@ _.Zones =
 					["description"] = "Requires a Ripe Purian to open.",
 					["questID"] = 60712,
 					["coord"] = { 46.8, 19.9, 1533 },
+					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
+				}),
+				o(1278968757, {	-- Silver Strongbox
+				--	TODO: fix objectID when data is available
+					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
+					["description"] = "Requires a Ripe Purian to open.",
+					["questID"] = 60627,
+					["coord"] = { 60.8, 80.3, 1533 },
+					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
+				}),
+				o(353643, {	-- Silver Strongbox
+					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
+					["description"] = "Requires a Ripe Purian to open.",
+					["questID"] = 60777,
+					["coord"] = { 62.4, 57.6, 1533 },
 					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
 				o(353691, {	-- Skyward Bell

@@ -14,7 +14,7 @@ _.ExpansionFeatures =
 				1624,	-- Fracture Chambers - Layer 1, Floor 3
 				1621,	-- Fracture Chambers - Layer 1, Floor 4
 				1768,	-- Fracture Chambers - Layer 1, Floor 5
-				1770,	-- Fracture Chambers - Layer 1, Floor 6
+				1770,	-- Fracture Chambers - Layer 1, Floor 6 / Layer 3, Floor 6
 				--
 				1764,	-- Fracture Chambers - Layer 2, Floor 2
 				1802,	-- Torghast

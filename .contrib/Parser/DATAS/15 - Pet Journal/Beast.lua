@@ -137,7 +137,7 @@ _.PetJournal =
 		p(408),				-- Lizard Hatchling
 		p(2558),			-- Lord Woofington
 		p(1661),			-- Lost Netherpup
-		p(2847),			-- Luminous Webspinner
+		p(2947),			-- Luminous Webspinner
 		p(1922),			-- Lurking Owl Kitten
 		p(450),				-- Maggot
 		p(1446),			-- Meadowstomper Calf

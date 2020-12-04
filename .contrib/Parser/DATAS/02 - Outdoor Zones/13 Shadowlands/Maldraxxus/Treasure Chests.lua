@@ -20,6 +20,13 @@ _.Zones =
 						i(183619),	-- Everlasting Boneforged Greataxe
 					},
 				}),
+				o(352433, {	-- Cache of Eyes
+					["description"] = "Coordinates are to the entrance of Sightless Hold.  The cache spawns in numerous locations within the cave.  The pet is not a 100% drop and the chest is not always up, but there is no cooldown or lockout for opening the chest.",
+					["coord"] = { 54.0, 12.3, 1536 },
+					["g"] = {
+						i(181171),	-- Luminous Webspinner (PET!)
+					},
+				}),
 				o(354856, {	-- Slime-Coated Crate
 					["coords"] = {
 						{ 70.4, 75.3, 1536 },

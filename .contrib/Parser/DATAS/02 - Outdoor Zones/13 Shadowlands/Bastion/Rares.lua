@@ -244,9 +244,6 @@ _.Zones =
 					--["questID"] = ,
 					["isDaily"] = true,
 					["g"] = {
-						crit(27, {	-- Larionrider Orstus
-							["achievementID"] = 14307,	-- Adventurer of Bastion
-						}),
 						i(184401),	-- Larion Pouncer
 					},
 				}),
@@ -280,6 +277,18 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						crit(25, {	-- Reekmonger
+							["achievementID"] = 14307,	-- Adventurer of Bastion
+						}),
+					},
+				}),
+				n(160985, {	-- Selena the Reborn
+					["description"] = "Requires 3 people to summon.  After all 3 have channeled the incense, the vesper will ring and Sophia will appear.  Protect her by defeating 2 waves of Forsworn attackers, and then the rare will spawn.\n\nAfter Nikara is defeated, Sophia will leave behind a chest called Sophia's Radiance.",
+					["questID"] = 58320,
+					["isDaily"] = true,
+					["coord"] = { 61.2, 51.0, 1533 },
+					["crs"] = { 160875 },	-- Sophia
+					["g"] = {
+						crit(27, {	-- Vesper Repair: Sophia's Overture
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 					},

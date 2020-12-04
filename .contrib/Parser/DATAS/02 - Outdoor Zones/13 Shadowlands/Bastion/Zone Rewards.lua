@@ -9,6 +9,7 @@ _.Zones =
 			n(-903, {	-- Zone Rewards
 				["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
 				["g"] = {
+					i(179593),	-- Darkreach Mask
 					i(181603),	-- Forgehand's Chain
 					i(181591),	-- Forgehand's Chainmail
 					i(181596),	-- Forgehand's Handguards
@@ -43,6 +44,8 @@ _.Zones =
 					i(181574),	-- Spiritmender's Mantle
 					i(181569),	-- Spiritmender's Robe
 					i(181570),	-- Spiritmender's Slippers
+					i(179594),	-- Witherscorn Guise
+					i(180165),	-- Witherscorn Reaper
 				},
 			}),
 		}),

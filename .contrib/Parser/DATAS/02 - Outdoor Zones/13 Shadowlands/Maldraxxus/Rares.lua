@@ -8,11 +8,16 @@ _.Zones =
 		m(1536, {	-- Maldraxxus
 			n(RARES, {
 				n(162727, {	-- Bubbleblood
-					["coord"] = { 52.6, 35.6, 1536 },
 					["questID"] = 58870,
 					["isDaily"] = true,
+					["coord"] = { 52.2, 35.1, 1536 },
 					["g"] = {
-						ach(14308, crit(18)),	-- Adventurer of Maldraxxus / Bubbleblood
+						crit(18, {	-- Bubbleblood
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
+						i(184476),	-- Regenerating Slime Vial (TOY!)
+						i(184290),	-- Blood-Dyed Bonesaw
+						i(184154),	-- Grungy Containment Pack
 					},
 				}),
 				n(159105, { -- Collector Kash
@@ -171,17 +176,6 @@ _.Zones =
 						i(181172),	-- Boneweave Hatchling (PET!)
 					},
 				}),
-				n(168147, { -- Sabriel the Bonecleaver
-					["coord"] = { 50.4, 48.2, 1536 },
-					--["questID"] = ,
-					["isDaily"] = true,
-					["description"] = "Requires a |cFF40bf40Necrolord Covenant|r to summon.",
-					["g"] = {
-						i(182083),	-- Bonecleaver'S Skullboar
-						i(181815),	-- Armored Bonehoof Tauralus
-						ach(14308, crit(13)),	-- Adventurer of Maldraxxus / Sabriel the Bonecleaver
-					},
-				}),
 				n(158406, { -- Scunner
 					["coord"] = { 61.6, 76.4, 1536 },
 					--["questID"] = ,
@@ -221,6 +215,60 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(7)),	-- Adventurer of Maldraxxus / Taskmaster Xox <Master Taskmaster>
+					},
+				}),
+				n(-922,   {	-- Theater of Pain
+					["description"] = "These mobs all spawn in the Theater of Pain, a free-for-all arena in the middle of Maldraxxus.",
+					["g"] = {
+						n(COMMON_BOSS_DROPS, {
+							i(184062),	-- Gnawed Reins of the Battle-Bound Warhound (MOUNT!)
+						}),
+						n(162873, {	-- Azmogal
+							crit(1, {	-- Azmogal
+								["achievementID"] = 14802,	-- Bloodsport
+							}),
+						}),
+						n(162875, {	-- Devmorta
+							crit(5, {	-- Devmorta
+								["achievementID"] = 14802,	-- Bloodsport
+							}),
+						}),
+						n(162880, {	-- Mistress Dyrax
+							crit(4, {	-- Mistress Dyrax
+								["achievementID"] = 14802,	-- Bloodsport
+							}),
+						}),
+						n(168147, { -- Sabriel the Bonecleaver
+							["description"] = "Requires a member of the |cFF40bf40Necrolord Covenant|r to summon.",
+							["isDaily"] = true,
+						--	["questID"] = ,
+							["coord"] = { 50.4, 48.2, 1536 },
+							["g"] = {
+								crit(13, {	-- Sabriel the Bonecleaver
+									["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+								}),
+								crit(7, {	-- Sabriel the Bonecleaver
+									["achievementID"] = 14802,	-- Bloodsport
+								}),
+								i(182083),	-- Bonecleaver'S Skullboar
+								i(181815),	-- Armored Bonehoof Tauralus
+							},
+						}),
+						n(162874, {	-- Ti'or
+							crit(6, {	-- Ti'or
+								["achievementID"] = 14802,	-- Bloodsport
+							}),
+						}),
+						n(162853, {	-- Unbreakable Urtz
+							crit(2, {	-- Unbreakable Urtz
+								["achievementID"] = 14802,	-- Bloodsport
+							}),
+						}),
+						n(162872, {	-- Xantuth the Blighted
+							crit(3, {	-- Xantuth the Blighted
+								["achievementID"] = 14802,	-- Bloodsport
+							}),
+						}),
 					},
 				}),
 				n(162180, { -- Thread Mistress Leeda

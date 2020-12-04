@@ -387,15 +387,16 @@ _.Zones =
 						},
 					}),
 					crit(7, {	-- Abandoned Stockpile
+						["description"] = "Coordinates are for a cave entrance hidden by plants.",
 						["objectID"] = 354202,	-- Abandoned Stockpile
-						["coord"] = { 46.1, 45.3, 1533 },
 						["questID"] = 61006,
-						["description"] = "Inside a cave hidden by plants at |cFFFFFFFF46.4, 46.5|r.",
+						["coord"] = { 46.4, 46.5, 1533 },
 					}),
 					crit(8, {	-- Experimental Construct Part
+						["description"] = "Requires an |cFFFFFFFFUnstable Construct Anima|r, which can be found in the surrounding area.  It looks similar to the other jars of anima, but is smaller and glows purple.",
 						["objectID"] = 354275,	-- Experimental Construct Part
-						["coord"] = { 42.3, 23.3, 1533 },
 						["questID"] = 61052,
+						["coord"] = { 42.3, 23.3, 1533 },
 						["g"] = {
 							i(183609),	-- Re-Powered Golliath Fists
 						},

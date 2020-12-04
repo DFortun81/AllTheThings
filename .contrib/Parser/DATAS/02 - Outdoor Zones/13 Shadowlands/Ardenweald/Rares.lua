@@ -65,11 +65,11 @@ _.Zones =
 					},
 				}),
 				n(163370, {	-- Gormbore
-					["coord"] = { 53.8, 75.8, 1565 },
-					--["questID"] = ,
+				--	["questID"] = ,
 					["isDaily"] = true,
+					["coord"] = { 53.8, 75.8, 1565 },
 					["g"] = {
-						i(183196),	-- Lavender Nibbler
+						i(183196),	-- Lavender Nibbler (PET!)
 					},
 				}),
 				n(164107, {	-- Gormtamer Tizo
@@ -104,11 +104,14 @@ _.Zones =
 						crit(10, {	-- Hunter Vivanna
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(179596),	-- Drust Mask of Dominance
 						i(183091, {	-- Lifewoven Bracelet
 							["questID"] = 62246,	-- A Fallen Friend
 						}),
-						i(180165),	-- Witherscorn Reaper (TODO: this may drop from other rares/treasures in zone too?)
+						i(179596),	-- Drust Mask of Dominance
+					--	TODO: the items below also drop from zone treasures, so i'm putting them in Zone Rewards as well.  this is the only rare currently showing as dropping them at all, so for now i'm leaving them on her loot table.  if they wind up being dropped by a kazillion rares in the future we could add that information to the ZR header and remove them from vivanna	
+						i(179593),	-- Darkreach Mask
+						i(179594),	-- Witherscorn Guise
+						i(180165),	-- Witherscorn Reaper
 					},
 				}),
 				n(164093, {	-- Macabre
