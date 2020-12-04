@@ -27,7 +27,9 @@ _.Zones =
 						n(-11, {	-- Common Box Drops
 							["description"] = "Can be contained in any of the Calling rewards",
 							["g"] = {
-								i(182136),	-- Chilled to the Core [Shaman-Enhance] -- guessing any box can reward this?
+								-- guessing any box can reward the same set of conduits
+								i(182136),	-- Chilled to the Core [Shaman-Enhance] 
+								i(182127),	-- Shake the Foundations [Shaman-Elemental]
 							},
 						}),
 						-- Rare Quality Calling Rewards / Zone
@@ -39,7 +41,9 @@ _.Zones =
 						i(181556, {	-- Tribute of the Court / Revendreth
 							["description"] = "Rewarded by completing a Calling based in Revendreth",
 							["g"] = {
+								i(181224),	-- Avowed Arcanist's Staff
 								i(182136),	-- Chilled to the Core [Shaman-Enhance] / Source Drop
+								i(182127),	-- Shake the Foundations [Shaman-Elemental] / Source Drop
 							},
 						}),
 						i(181732, {	-- Tribute of the Ambitious / Maldraxxus

@@ -36,6 +36,7 @@ _.ExpansionFeatures =
 				1753,	-- Floor 18
 				1754,	-- Torghast
 				1756,	-- TG44_Floor
+				1757,	-- 
 				1758,	-- TG48_Floor
 				1759,	-- Torghast
 				1762,	-- TG47_Floor
