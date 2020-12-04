@@ -351,6 +351,7 @@ _.Zones =
 						["modelScale"] = 0.5,
 						["g"] = {
 							i(179512),	-- Dreamsong Saber
+							i(184490),	-- Fae Pipes
 						},
 					}),
 					crit(14, {	-- Cache of the Night

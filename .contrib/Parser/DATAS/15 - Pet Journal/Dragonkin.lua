@@ -8,7 +8,7 @@ _.PetJournal =
 		p(2072),	-- Ageless Bronze Drake
 		p(1385),	-- Albino Chimaeraling
 		p(2779, {	-- Anima Wyrmling
-			["u"] = REMOVED_FROM_GAME,
+			["u"] = BLIZZARD_BALANCE,
 		}),
 		p(57),		-- Azure Whelpling
 		p(2583),	-- Azure Windseeker
