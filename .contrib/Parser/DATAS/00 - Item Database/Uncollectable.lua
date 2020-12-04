@@ -30,6 +30,7 @@ i(184294);	-- Ethereal Ambrosia
 i(184378);	-- Faeweald Amber
 i(181744);	-- Forgelite Ember
 i(181745);	-- Forgesmith's Coal
+i(184385);	-- Fossilized Heartwood
 i(184777);	-- Gravedredger's Shovel
 i(184767);	-- Handheld Soul Mirror
 i(184384);	-- Hibernal Sproutling

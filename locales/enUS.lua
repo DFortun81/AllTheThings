@@ -4335,6 +4335,7 @@ app.L = {
 		[362489] = "Elysian Decree",
 		[363825] = "Silver Strongbox",
 		[364899] = "Crystallized Stygia",
+		[364932] = "Blazing Ingot",
 		[9999890] = "Corrupted Loot",
 		[9999891] = "Main Objective Only",
 		[9999892] = "Main Objective + 2 Bonus Areas",

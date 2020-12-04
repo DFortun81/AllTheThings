@@ -3110,6 +3110,7 @@ _.HiddenQuestTriggers =
 		q(59861),	-- Tea Tales: Theotar Achievement criteria
 		q(60701),	-- triggered when completing #60653, "Mirror Restoration"
 		q(59857),	-- triggered when completing Tea Tales: Vulca
+		q(59859),	-- triggered when completing Tea Tales: Gubbins and Tubbins
 		-- Venthyr Covenant
 		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
@@ -3119,13 +3120,14 @@ _.HiddenQuestTriggers =
 		q(59317),	-- triggered when turning in #62919, "Strengthening the Bond"
 		q(62749),	-- triggered when turning in #62921, "Our True Purpose"
 		q(63063),	-- looks like an unused version of #63056, "Sanctum Upgrade: Mirror Network"
-		q(60300),	-- Channeling Anima Conduit to Wanecrypt Hill - 1st time
+		q(60300),	-- appears to trigger with every anima conduit
 		q(61587),	-- Channeling Anima Conduit to Wanecrypt Hill - 1st time
 		q(60304),	-- Channeling Anima Conduit to Crypt of the Forgotten
 		q(63237),	-- Completing 1st 'Campaign Adventure'
 		q(63260),	-- Completing 1st 'Campaign Adventure'
 		q(63242),	-- Completing 2nd 'Campaign Adventure'
 		q(63323),	-- Completing 2nd 'Campaign Adventure'
+		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

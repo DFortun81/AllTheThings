@@ -8,11 +8,15 @@ _.Zones =
 		m(1525, {	-- Revendreth
 			n(RARES, {
 				n(166393, {	-- Amalgamation of Filth
-					["coord"] = { 53.0, 72.8, 1525 },
-					--["questID"] = ,
+					["description"] = "Click on the sparkling Rubbish Box and throw rubbish into the water.  Kill the oozes, and eventually the rare will spawn.",
+					["questID"] = 59854,
 					["isDaily"] = true,
+					["coord"] = { 53.8, 72.5, 1525 },
 					["g"] = {
-						ach(14310, crit(14)),	-- Adventurer of Revendreth / Amalgamation of Filth
+						crit(14, {	-- Amalgamation of Filth
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
+						i(183729),	-- Filth-Splattered Headcover
 					},
 				}),
 				n(164388, {	-- Amalgamation of Light
@@ -155,10 +159,10 @@ _.Zones =
 					}),
 				}),
 				n(165290, {	-- Harika the Horrid
-					["coord"] = { 45.83, 79.34, 1525 },
+					["description"] = "Can be killed and looted by any Covenant, but requires a member of the |cFFfe040fVenthyr Covenant|r to channel anima to Wanecrypt Hill to summon it. Use the Dredterror Ballista to make him attackable.",
 					["questID"] = 59612,
 					["isDaily"] = true,
-					["description"] = "Requires to be a |cFFfe040fVenthyr Covenant|r & your Anima to be channelled to Wanecrypt Hill to summon him. Use the Dredterror Ballista to make him attackable.",
+					["coord"] = { 45.8, 79.0, 1525 },
 					["g"] = {
 						-- TODO: rearrange this probably...
 						n(165327, {	-- Wingsmash
@@ -166,14 +170,12 @@ _.Zones =
 							["g"] = {
 								q(59607, {	-- Takin' Down the Beast
 									["description"] = "If this quest is offered, it must be completed to spawn the rare.",
-									["repeatable"] = true,
+									["isDaily"] = true,
 									["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
 									["g"] = {										
 										i(176397, {	-- Dredhollow Bolt
 											["description"] = "Used to shoot the Dredterror Ballista. Bring the item to Wingsmash.",
-											["coords"] = {
-												{ 43.23, 77.62, 1525 },	-- Dredhollow Bolt
-											},
+											["coord"] = { 43.2, 77.6, 1525 },	-- Dredhollow Bolt
 											["crs"] = { 165324 },	-- Dredterror Ballista
 										}),
 									}
@@ -459,9 +461,12 @@ _.Zones =
 				n(155779, {	-- Tomb Burster <Dread Crawler Queen>
 					["description"] = "After you kill all the Crawler Eggs around Funguss and defeat several waves of Dread Crawlers, the rare will attack.",
 					["questID"] = 56877,
-					["isDaily"] = true,
+					["isDaily"] = true,	--	the quest for this one appears to be permanent and not a daily reset.  having the isDaily tag doesn't affect it, so if blizz ever fixes it it'll already be good to go
 					["coord"] = { 42.8, 79.2, 1525 },
-					["crs"] = { 155777 },	-- Funguss
+					["crs"] = {
+						155769,	-- Crawler Egg
+						155777,	-- Funguss
+					},
 					["g"] = {
 						crit(4, {	-- Tomb Burster
 							["achievementID"] = 14310,	-- Adventurer of Revendreth

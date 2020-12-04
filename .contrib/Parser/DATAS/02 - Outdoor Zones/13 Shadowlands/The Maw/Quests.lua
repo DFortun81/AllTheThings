@@ -60,33 +60,33 @@ _.Zones =
 				}),
 				q(63039, {	-- A Monument to Vengeance
 					["provider"] = { "n", 175807 },	-- Knight of the Ebon Blade
-					["coord"] = { 22.1, 48.0, 1543 },
 					["isDaily"] = true,
+					["coord"] = { 22.1, 48.0, 1543 },
 				}),
 				q(57691, {	-- A Royal Key
 					["sourceQuests"] = { 57690 },	-- Cages For All Occasions
 					["provider"] = { "n", 158645 },	-- Prince Renathal
 					["coord"] = { 34.6, 18.6, 1543 },
 				}),
-				q(59761, {	-- An Undeserved Fate
-					["sourceQuests"] = { 59759 },	-- The Lion's Cage
-					["provider"] = { "n", 167833 },	-- Anduin Wrynn
-					["coord"] = { 25.0, 13.3, 1648 },
-				}),
-				q(63039, {	-- A Monument to Vengeance
-					["provider"] = { "n", 175807 },	-- Knight of the Ebon Blade
-					["coord"] = { 22.1, 48.0, 1543 },
+				q(63050, {	-- Acquisition: Blazing Ingots
+					["provider"] = { "o", 364932 },	-- Blazing Ingot
 					["isDaily"] = true,
+					["coord"] = { 39.0, 39.9, 1543 },
 				}),
 				q(63031, {	-- Acquisition: Crystallized Stygia
 					["provider"] = { "o", 364899 },	-- Crystallized Stygia
-					-- ["coord"] = { 25.6, 24.2, 1648 },
 					["isDaily"] = true,
+					["coord"] = { 21.2, 34.1, 1543 },
 				}),
 				q(63047, {	-- Acquisition: Runeforged Shackles
 					["provider"] = { "o", 364926 },	-- Runeforged Shackles
 					["coord"] = { 25.6, 24.2, 1648 },
 					["isDaily"] = true,
+				}),
+				q(59761, {	-- An Undeserved Fate
+					["sourceQuests"] = { 59759 },	-- The Lion's Cage
+					["provider"] = { "n", 167833 },	-- Anduin Wrynn
+					["coord"] = { 25.0, 13.3, 1648 },
 				}),
 				q(59762, {	-- By and Down the River
 					["sourceQuests"] = { 59776 },	-- From the Mouths of Madness
@@ -126,10 +126,15 @@ _.Zones =
 					},
 					["provider"] = { "n", 167827 },	-- Thrall
 				}),
+				q(63179, {	-- Drowned and Torn Asunder
+					["provider"] = { "n", 176144 },	-- Disciple Kimonas
+					["isDaily"] = true,
+					["coord"] = { 38.8, 23.6, 1543 },
+				}),
 				q(60622, {	-- Eye of the Scryer
 					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.9, 41.7, 1543 },
 					["isDaily"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(62932, {	-- Explore Torghast
 					["sourceQuests"] = { 61099 },	-- The Search for Baine
@@ -223,6 +228,11 @@ _.Zones =
 				}),
 				q(60281, {	-- Rule 4: Make A List
 					["sourceQuests"] = { 63051 },	-- Trust Issues
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+				}),
+				q(60284, {	-- Rule 5: Be Audacious
+					["sourceQuests"] = { 60281 },	-- Rule 4: Make a List
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
 				}),
@@ -328,6 +338,11 @@ _.Zones =
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
 					["coord"] = { 32.9, 66.4, 1648 },
+				}),
+				q(61765, {	-- Words of Warding
+				--	TODO: add SQs?
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(59765, {	-- Wounds Beyond Flesh
 					["sourceQuests"] = { 59762 },	-- By and Down the River

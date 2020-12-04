@@ -11,9 +11,11 @@ _.Zones =
 				["g"] = {
 					i(182727, {	-- A Leaking Package
 						["questID"] = 62183,	-- A Leaking Box Marked Perishable
+						["isDaily"] = true,
 					}),
 					i(182726, {	-- Nadja's Letter
 						["questID"] = 62182,	-- A Letter From Nadja
+						["isDaily"] = true,
 					}),
 					i(181208),	-- Anima-Infused Muck
 					i(181224),	-- Avowed Arcanist's Staff

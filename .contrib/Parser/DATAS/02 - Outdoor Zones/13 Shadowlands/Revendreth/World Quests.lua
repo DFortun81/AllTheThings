@@ -108,7 +108,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				q(60656 , {	-- Summon Your Sins
+				q(60656, {	-- Summon Your Sins
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
@@ -121,6 +121,11 @@ _.Zones =
 							i(180591),	-- Vial of Roiling Emotions
 						}),
 					},
+				}),
+				q(61628, {	-- Tailoring: Looming Tapestry
+					["requireSkill"] = TAILORING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
 				}),
 				q(59852, {	-- Tea Tales: Gubbins and Tubbins
 					["isWorldQuest"] = true,
