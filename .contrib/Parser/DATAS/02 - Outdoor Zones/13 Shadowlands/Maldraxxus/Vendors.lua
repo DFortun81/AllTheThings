@@ -102,36 +102,8 @@ _.Zones =
 				n(173003, {	-- Nalcorn Talsen <Undying Army Quartermaster>
 					["coord"] = { 50.6, 53.4, 1536 },
 					["g"] = {
-						i(182082, {	-- Lurid Bloodtusk
+						i(182082, {	-- Lurid Bloodtusk (MOUNT)
 							["cost"] = 300000000, -- 30,000g
-						}),
-						i(182085, {	-- Blisterback Bloodtusk
-							["cost"] = 300000000, -- 30,000g
-						}),
-						i(180456, {	-- Colors of the Undying Army
-							["cost"] = 2500000, -- 250g
-						}),
-						i(181272, {	-- Toenail
-							["cost"] = 17650000, -- 1,765g
-						}),
-						i(181807, {	-- Barbarous Osteowings
-							["cost"] = 5000000, -- 500g
-						}),
-						i(181808, {	-- Death Fetish
-							["cost"] = 5000000, -- 500g
-						}),
-						i(183095, {	-- Plans: Shadowsteel Pauldrons
-							["cost"] = 13500000, -- 1,350g
-						}),
-						i(183099, {	-- Design: Revitalizing Jewel Doublet
-							["cost"] = 13500000, -- 1,350g
-						}),
-						i(183101, {	-- Pattern: Shadowlace Cloak
-							["cost"] = 13500000, -- 1,350g
-						}),
-						i(183104, {	-- Technique: Contract: The Undying Army
-							["cost"] = 17650000, -- 1,765g
-							["recipeID"] = 311411,
 						}),
 						i(183112, {	-- Animated Radius
 							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
@@ -145,17 +117,48 @@ _.Zones =
 								}),
 							},
 						}),
+						i(181272, {	-- Toenail
+							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+						}),
+						i(183101, {	-- Pattern: Shadowlace Cloak
+							["cost"] = 13500000, -- 1,350g
+						}),
+						i(183095, {	-- Plans: Shadowsteel Pauldrons
+							["cost"] = 13500000, -- 1,350g
+						}),
+						i(183858, {	-- Schematic: Wormhole Generator: Shadowlands
+							["cost"] = 13500000, -- 1,350g
+						}),
+						i(183104, {	-- Technique: Contract: The Undying Army
+							["cost"] = 17650000, -- 1,765g
+							["recipeID"] = 311411,
+						}),
+						i(184741),	-- Apprentice Necromancer's Gloves
+						i(184738),	-- Chainmail of the March Warden
+						i(184737),	-- Chestplate of the March Warden
+						i(180456, {	-- Colors of the Undying Army
+							["cost"] = 2500000, -- 250g
+						}),
+						i(184740),	-- Fortified Jawcrackers
+						i(184744),	-- Gnarled Boneloop
 						i(183189, {	-- Illusion: Undying Spirit
 							["cost"] = 12500000, -- 1,250g
 						}),
 						i(183244, {	-- Memory of the Rattle of the Maw
 							["cost"] = 11000000, -- 1,100g
 						}),
-						i(183858, {	-- Schematic: Wormhole Generator: Shadowlands
-							["cost"] = 13500000, -- 1,350g
-						}),
-						i(183868, {	-- Recipe: Crafter's Mark III
-							["cost"] = 20000000, -- 2,000g
+						i(184739),	-- Pallid Stitched Gloves
+						i(184742),	-- Rattling Bonefists
+						i(184736),	-- Robe of the March Warden
+						i(184745),	-- Tunic of the March Warden
+						n(-920, {	-- Covenant: Necrolord
+							-- These are only available to Necrolord covenant members
+							i(181807, {	-- Barbarous Osteowings
+								["cost"] = 5000000, -- 500g
+							}),
+							i(181808, {	-- Death Fetish
+								["cost"] = 5000000, -- 500g
+							}),
 						}),
 					},
 				}),

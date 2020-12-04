@@ -7,6 +7,69 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1670, {	-- Oribos
 			n(VENDORS, {
+				n(176067, {	-- Dar Vattish <Undying Army Quartermaster>
+					["coord"] = { 47.8, 77.9, 1670 },
+					["g"] = {
+						i(182082, {	-- Lurid Bloodtusk (MOUNT)
+							["cost"] = 300000000, -- 30,000g
+						}),
+						i(183112, {	-- Animated Radius
+							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+							["g"] = {
+								i(183114, {	-- Carpal
+									["cost"] = {
+										{ "i", 183112, 1 },	-- Animated Radius
+										{ "i", 183111, 1 },	-- Animated Ulna
+										{ "i", 183113, 1 },	-- Flexing Phalanges
+									},
+								}),
+							},
+						}),
+						i(181272, {	-- Toenail
+							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+						}),
+						i(183101, {	-- Pattern: Shadowlace Cloak
+							["cost"] = 13500000, -- 1,350g
+						}),
+						i(183095, {	-- Plans: Shadowsteel Pauldrons
+							["cost"] = 13500000, -- 1,350g
+						}),
+						i(183858, {	-- Schematic: Wormhole Generator: Shadowlands
+							["cost"] = 13500000, -- 1,350g
+						}),
+						i(183104, {	-- Technique: Contract: The Undying Army
+							["cost"] = 17650000, -- 1,765g
+							["recipeID"] = 311411,
+						}),
+						i(184741),	-- Apprentice Necromancer's Gloves
+						i(184738),	-- Chainmail of the March Warden
+						i(184737),	-- Chestplate of the March Warden
+						i(180456, {	-- Colors of the Undying Army
+							["cost"] = 2500000, -- 250g
+						}),
+						i(184740),	-- Fortified Jawcrackers
+						i(184744),	-- Gnarled Boneloop
+						i(183189, {	-- Illusion: Undying Spirit
+							["cost"] = 12500000, -- 1,250g
+						}),
+						i(183244, {	-- Memory of the Rattle of the Maw
+							["cost"] = 11000000, -- 1,100g
+						}),
+						i(184739),	-- Pallid Stitched Gloves
+						i(184742),	-- Rattling Bonefists
+						i(184736),	-- Robe of the March Warden
+						i(184745),	-- Tunic of the March Warden
+						n(-920, {	-- Covenant: Necrolord
+							-- These are only available to Necrolord covenant members
+							i(181807, {	-- Barbarous Osteowings
+								["cost"] = 5000000, -- 500g
+							}),
+							i(181808, {	-- Death Fetish
+								["cost"] = 5000000, -- 500g
+							}),
+						}),
+					},
+				}),
 				n(156690, {	-- Distributor Au'nagl
 					i(180136),	-- The Brokers Angle'r
 				}),

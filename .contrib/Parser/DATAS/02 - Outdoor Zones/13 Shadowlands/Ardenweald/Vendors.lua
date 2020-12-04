@@ -261,7 +261,8 @@ _.Zones =
 						i(175069, {	-- Theater Ticket
 							["cost"] = 2000,	-- 2 silver
 						}),
-						n(-929, {	-- Night Fae Covenant
+						n(-929, {	-- Covenant: Night Fae
+							-- These are only available to Night Fae covenant members
 							i(182662, {	-- Leafadore
 								["cost"] = { { "i", 163036, 250 } },
 							}),
