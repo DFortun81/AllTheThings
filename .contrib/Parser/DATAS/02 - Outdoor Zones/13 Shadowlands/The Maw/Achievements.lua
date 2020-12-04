@@ -70,7 +70,7 @@ _.Zones =
 					crit(8,  {	-- Soulforge Blueprints
 						["provider"] = { "i", 180805 },	-- Soulforge Blueprints
 						["questID"] = 63142,	-- Soulforge Blueprints
-						-- ["crs"] = { },
+						["crs"] = { 162452 },	-- Dartanos
 						-- ["coords"] = { },
 					}),
 					crit(9,  {	-- Shadebound Testimonial
