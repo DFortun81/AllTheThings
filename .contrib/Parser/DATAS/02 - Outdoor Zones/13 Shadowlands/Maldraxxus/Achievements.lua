@@ -54,34 +54,45 @@ _.Zones =
 					i(180273),	-- Sorrowbane
 				}),
 				ach(14634, {	-- Nine Afterlives
-					crit(1),	-- Hairball
-					crit(2, {	-- Snots
-						["coord"] = { 31.9, 57.0, 1536 },
-					}),
-					crit(3, {	-- Pus-In-Boots
-						["coord"] = { 50.2, 60.2, 1536 },
-						["description"] = "Pus-In-Boots is under the brigde."
-					}),
-					crit(4, {	-- Envy
-						["coord"] = { 65.2, 50.6, 1536 },
-					}),
-					crit(5, {	-- Mr. Jigglesworth
-						["coord"] = { 64.8, 22.2, 1536 },
-					}),
-					crit(6, {	-- Lime
-						["coord"] = { 51.0, 27.5, 1536 },
-						["description"] = "Lime is on the bone arch."
-					}),
-					crit(7, {	-- Mayhem
-						["coord"] = { 49.4, 17.5, 1536 },
-					}),
-					crit(8, {	-- Moldstopheles
-						["coord"] = { 47.5, 33.7, 1536 },
-						["description"] = "Moldstopheles is on a \"leaf\" of the big mushroom."
-					}),
-					crit(9, {	-- Meowmalade
-						["coord"] = { 34.3, 53.1, 1536 },
-					}),
+					["collectible"] = false,
+					["g"] = {
+						crit(2, {	-- Snots
+							["coord"] = { 31.9, 57.0, 1536 },
+							["crs"] = { 174221 },	-- Snots
+						}),
+						crit(3, {	-- Pus-In-Boots
+							["description"] = "Under the bridge.",
+							["coord"] = { 50.2, 60.2, 1536 },
+							["crs"] = { 174223 },
+						}),
+						crit(4, {	-- Envy
+							["coord"] = { 65.2, 50.6, 1536 },
+							["crs"] = { 174224 },	-- Envy
+						}),
+						crit(5, {	-- Mr. Jigglesworth
+							["coord"] = { 64.8, 22.2, 1536 },
+							["crs"] = { 174226 },	-- Mr. Jigglesworth
+						}),
+						crit(6, {	-- Lime
+							["description"] = "Lime is on the bone arch that runs over the road.",
+							["coord"] = { 51.0, 27.5, 1536 },
+							["crs"] = { 174230 },	-- Lime
+						}),
+						crit(7, {	-- Mayhem
+							["coord"] = { 49.4, 17.5, 1536 },
+							["crs"] = { 174234 },	-- Mayhem
+						}),
+						crit(8, {	-- Moldstopheles
+							["description"] = "Moldstopheles is on an offshoot on the side of the big mushroom.",
+							["coord"] = { 47.5, 33.7, 1536 },
+							["crs"] = { 174236 },	-- Moldstopheles
+						}),
+						crit(9, {	-- Meowmalade
+							["description"] = "Napping inside a small crate.",
+							["coord"] = { 34.3, 53.1, 1536 },
+							["crs"] = { 174237 },	-- Meowmalade
+						}),
+					},
 				}),
 				ach(14799, {	-- Sojourner of Maldraxxus
 					crit(1, {	-- Theater of Pain
@@ -162,10 +173,13 @@ _.Zones =
 						--["questID"] = ,
 					}),
 					crit(8, {	-- Chest of Eyes
+						["description"] = "The path to the treasure starts at |cFFFFFFFF51.6, 13.7|r.  Climb up the side of the crumbled building until you get close to the treasure, then just turn right and walk up the cliff to it.",
 						["objectID"] = 345456,	-- Chest of Eyes
-						["coord"] = { 48.3, 16.3, 1536 },
 						["questID"] = 59244,
-						["description"] = "Take the path behind the destoyed necropole.",
+						["coord"] = { 48.3, 16.3, 1536 },
+						["g"] = {
+							i(183696),	-- Sp-eye-glass
+						},
 					}),
 					crit(9, {	-- Misplaced Supplies
 						["objectID"] = 351980,	-- Misplaced Supplies
@@ -198,9 +212,15 @@ _.Zones =
 						},
 					}),
 					crit(13, {	-- Ritualist's Cache
+						["description"] = "Loot the |cFFFFFFFFRitual Pages|r from the front-right corner of the room.  Take them to the back-right corner and use the |cFFFFFFFFBook of Binding Rituals|r, and then you can loot the chest.",
 						["objectID"] = 345456,	-- Ritualist's Cache
-						["coord"] = { 64.67, 24.80, 1536 },
-						--["questID"] = ,
+						["questID"] = 61514,
+						["coord"] = { 64.6, 24.8, 1536 },
+						["g"] = {
+							i(183517, {	-- Page 76 of the Necronom-i-nom
+								["questID"] = 62372,
+							}),
+						},
 					}),
 				}),
 				ach(14751, {	-- The Gang's All Here

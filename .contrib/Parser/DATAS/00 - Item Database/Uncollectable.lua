@@ -59,6 +59,7 @@ i(184293);	-- Sanctified Skylight Leaf
 i(184146);	-- Singed Soul Shackles
 i(184389);	-- Slumbering Starseed
 i(184373);	-- Small Anima Globe
+i(184306);	-- Soulcatching Sludge
 i(181647);	-- Stabilized Plague Strain
 i(181479);	-- Starlight Catcher
 i(184519);	-- Totem of Stolen Mojo

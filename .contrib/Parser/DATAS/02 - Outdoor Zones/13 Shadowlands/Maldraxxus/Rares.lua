@@ -65,11 +65,14 @@ _.Zones =
 					},
 				}),
 				n(162669, { -- Devour'us
-					["coord"] = { 45.6, 28.4, 1536 },
 					["questID"] = 58835,
 					["isDaily"] = true,
+					["coord"] = { 45.6, 28.4, 1536 },
 					["g"] = {
-						ach(14308, crit(15)),	-- Adventurer of Maldraxxus / Devour'us
+						crit(15, {	-- Devour'us
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
+						i(184178),	-- Worldrending Claymore
 					},
 				}),
 				n(162741, {	-- Gieger <Experimental Construct>

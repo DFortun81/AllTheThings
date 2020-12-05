@@ -3058,7 +3058,6 @@ _.HiddenQuestTriggers =
 		q(59677),	-- Triggered when looting the Battlefront Rations Key (180277)
 		q(57619),	-- triggered while on "In Death We Are Truly Tested" -- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
 		q(59843),	-- triggered when turning in "A Sure Bet"
-		q(62372),	-- triggered when 'feeding' Page 76 to the necronomicron
 		q(62786),	-- triggered when killing Unbreakable Urtz during "The Ladder" - no other arena opponents triggered quests / Killing Xantuth / killing Devmorta ... maybe triggers on the first ToP rare/day?
 		q(62738),	-- triggered when accepting 62748 [Rallying Maldraxxus]
 		q(63416),	-- triggered when accepting 62748 [Rallying Maldraxxus]
