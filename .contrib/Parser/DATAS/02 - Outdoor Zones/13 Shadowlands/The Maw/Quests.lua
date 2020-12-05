@@ -174,6 +174,12 @@ _.Zones =
 					["coord"] = { 46.9, 41.7, 1543 },
 					["isDaily"] = true,
 				}),
+				q(61765, {	-- Guaranteed Delivery
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+					["provider"] = { "n", 175797 },	-- Deceased Broker
+					["coord"] = { 30.7, 58.3, 1543 },
+					["isDaily"] = true,
+				}),
 				q(59962, {	-- Hope Never Dies
 					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
 					["provider"] = { "n", 171770 },	-- Ve'nari
@@ -202,6 +208,11 @@ _.Zones =
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
 					["coord"] = { 19.2, 57.0, 1648 },
+				}),
+				q(63100, {	-- Misery's Company
+					["provider"] = { "n", 176069 },	-- Hopeless Vessel
+					["coord"] = { 24.6, 45.2, 1648 },
+					["isDaily"] = true,
 				}),
 				q(59754, {	-- On Blackened Wings
 					["sourceQuests"] = { 59914 },	-- Fear to Tread
@@ -237,6 +248,7 @@ _.Zones =
 					["sourceQuests"] = { 60281 },	-- Rule 4: Make a List
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
+					["description"] = "Requires Tentative reputation with Ve'nari",
 				}),
 				q(62882, {	-- Setting the Ground Rules
 					["sourceQuests"] = { 
@@ -343,9 +355,10 @@ _.Zones =
 					["coord"] = { 32.9, 66.4, 1648 },
 				}),
 				q(61765, {	-- Words of Warding
-				--	TODO: add SQs?
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, 1543 },
+					["isDaily"] = true,
 				}),
 				q(59765, {	-- Wounds Beyond Flesh
 					["sourceQuests"] = { 59762 },	-- By and Down the River
