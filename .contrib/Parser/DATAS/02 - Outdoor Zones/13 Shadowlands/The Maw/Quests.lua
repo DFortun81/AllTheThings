@@ -101,8 +101,10 @@ _.Zones =
 				q(63135, {	-- Coldheart Flight Routes
 					["provider"] = { "i", 180801 },	-- Coldheart Flight Routes
 				}),
+				-- TODO: bonus objective is the same ID as the Rare kill daily?
 				q(61346, {	-- Cyrixia the Willbreaker (Bonus Objective)
 					["coord"] = { 27.6, 28.2, 1543 },
+					["isDaily"] = true,
 				}),
 				q(60762, {	-- Death Motes
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -266,6 +268,7 @@ _.Zones =
 				}),
 				q(62539, {	-- Stygian Incinerator (Bonus Objective)
 					["coord"] = { 37.2, 44.6, 1543 },
+					["isDaily"] = true,
 				}),
 				q(63043, {	-- Sundered Souls
 					["provider"] = { "n", 175813 },	-- Trapped Soul

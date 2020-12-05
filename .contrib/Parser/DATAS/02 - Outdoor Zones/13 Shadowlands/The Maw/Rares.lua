@@ -106,7 +106,7 @@ _.Zones =
 					},
 				}),
 				n(168693, {	-- Cyrixia
-					["questID"] = 61346,	-- also 63379, but it's probably the WQ
+					["questID"] = 61346,
 					["isDaily"] = true,
 					["coord"] = { 28.6, 25.0, 1543 },
 					["g"] = {

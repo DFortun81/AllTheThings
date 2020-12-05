@@ -48,13 +48,11 @@ _.Zones =
 						i(183416, {	-- Mail Courier's Left Runner
 							["cost"] = { { "c", 1820, 10 } },
 							["g"] = {
-								spell(341505, {
-									i(182719, {	-- Mail Courier's Runners
-										["cost"] = {
-											{ "i", 183416, 1 },	-- Mail Courier's Left Runner
-											{ "i", 183417, 1 },	-- Mail Courier's Right Runner
-										},
-									}),
+								i(182719, {	-- Mail Courier's Runners
+									["cost"] = {
+										{ "i", 183416, 1 },	-- Mail Courier's Left Runner
+										{ "i", 183417, 1 },	-- Mail Courier's Right Runner
+									},
 								}),
 							},
 						}),
@@ -87,6 +85,17 @@ _.Zones =
 									["cost"] = {
 										{ "i", 183427, 1 },	-- Researcher's Left Slipper
 										{ "i", 183430, 1 },	-- Researcher's Right Slipper
+									},
+								}),
+							},
+						}),
+						i(182746, {	-- All-In-One Belt Repair Kit
+							["cost"] = { { "c", 1820, 5 } },
+							["g"] = {
+								i(182739, {	-- Buckled Chain Belt
+									["cost"] = {
+										{ "i", 182746, 1 },	-- All-In-One Belt Repair Kit
+										{ "i", 182744, 1 },	-- Ornate Belt Buckle
 									},
 								}),
 							},

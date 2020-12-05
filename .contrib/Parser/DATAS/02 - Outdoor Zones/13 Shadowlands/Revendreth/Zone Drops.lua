@@ -52,14 +52,7 @@ _.Zones =
 					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 				}),
 				i(177813),	-- Hopebreaker's Badge
-				i(183420, {	-- Hopebreaker's Right Boot
-					i(183418, {	-- Hopebreaker's Boots
-						["cost"] = {
-							{ "i", 183419, 1 },	-- Hopebreaker's Left Boot
-							{ "i", 183420, 1 },	-- Hopebreaker's Right Boot
-						},
-					}),
-				}),
+				i(183420),	-- Hopebreaker's Right Boot
 				i(179333),	-- Inquisitor Cudgel
 				i(177809),	-- Lithe Rapier
 				i(173721, {	-- Love and Terror
@@ -67,14 +60,7 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 				}),
-				i(183417, {	-- Mail Courier's Right Runner
-					i(182719, {	-- Mail Courier's Runners
-						["cost"] = {
-							{ "i", 183416, 1 },	-- Mail Courier's Left Runner
-							{ "i", 183417, 1 },	-- Mail Courier's Right Runner
-						},
-					}),
-				}),
+				i(183417),	-- Mail Courier's Right Runner
 				i(182725),	-- Mail Courier's Wristguards
 				i(177795),	-- Night Guardian Armplates
 				i(177789),	-- Night Guardian Breastplate
@@ -86,14 +72,7 @@ _.Zones =
 				i(177793),	-- Night Guardian Pauldrons
 				i(177812),	-- Redelv House Band
 				i(177808),	-- Reinforced Rapier
-				i(183430, {	-- Researcher's Right Slipper
-					i(183425, {	-- Researcher's Slippers
-						["cost"] = {
-							{ "i", 183427, 1 },	-- Researcher's Left Slipper
-							{ "i", 183430, 1 },	-- Researcher's Right Slipper
-						},
-					}),
-				}),
+				i(183430),	-- Researcher's Right Slipper
 				i(177804),	-- Ritualist Dagger
 				i(177787),	-- Savage Bonemauler Bracers
 				i(177780),	-- Savage Bonemauler Chainmail
@@ -109,14 +88,7 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 				}),
-				i(183423, {	-- Stone Legion Right Sabaton
-					i(183421, {	-- Stone Legion Sabatons
-						["cost"] = {
-							{ "i", 183422, 1 },	-- Stone Legion Left Sabaton
-							{ "i", 183423, 1 },	-- Stone Legion Right Sabaton
-						},
-					}),
-				}),
+				i(183423),	-- Stone Legion Right Sabaton
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace
 				i(173709, {	-- Vial of Dredger Muck

@@ -2337,80 +2337,83 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	local progress = 0;
 	for i,group in ipairs(groups) do
 		-- print(group.hash,group.key,group[group.key],group.collectible,group.collected,group.trackable,group.saved,group.visible);
-		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
-		if app.RecursiveGroupRequirementsFilter(group) then
-			local right = nil;
-			if group.total and (group.collectible and group.total > 1 or group.total > 0) then
-				total = total + group.total;
-				progress = progress + (group.progress or 0);
-				if app.GroupVisibilityFilter(group) then
-					right = GetProgressColorText(group.progress, group.total);
-				-- the group itself may be a trackable thing
-				elseif group.trackable then
-					if group.saved then
-						if app.CollectedItemVisibilityFilter(group) then
-							right = L["COMPLETE_ICON"];
+		-- dont list itself under Contains
+		if not paramA or not paramB or not group[paramA] or not (group[paramA] == paramB) then
+			-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
+			if app.RecursiveGroupRequirementsFilter(group) then
+				local right = nil;
+				if group.total and (group.collectible and group.total > 1 or group.total > 0) then
+					total = total + group.total;
+					progress = progress + (group.progress or 0);
+					if app.GroupVisibilityFilter(group) then
+						right = GetProgressColorText(group.progress, group.total);
+					-- the group itself may be a trackable thing
+					elseif group.trackable then
+						if group.saved then
+							if app.CollectedItemVisibilityFilter(group) then
+								right = L["COMPLETE_ICON"];
+							end
+						elseif app.ShowIncompleteThings(group) then
+							right = L["INCOMPLETE_ICON"];
 						end
-					elseif app.ShowIncompleteThings(group) then
-						right = L["INCOMPLETE_ICON"];
+					elseif group.visible then
+						right = group.count and (group.count .. "x") or "---";
 					end
-				elseif group.visible then
-					right = group.count and (group.count .. "x") or "---";
+				else
+					if group.collectible then
+						total = total + 1;
+						if group.collected then
+							progress = progress + 1;
+							if app.CollectedItemVisibilityFilter(group) then
+								right = GetCollectionIcon(group.collected);
+							end
+						else
+							right = L["NOT_COLLECTED_ICON"];
+						end
+					elseif group.trackable then
+						if group.saved then
+							if app.CollectedItemVisibilityFilter(group) then
+								right = L["COMPLETE_ICON"];
+							end
+						elseif app.ShowIncompleteThings(group) then
+							right = L["INCOMPLETE_ICON"];
+						end
+					elseif group.visible then
+						right = group.count and (group.count .. "x") or "---";
+					end
 				end
-			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
-				if group.collectible then
-					total = total + 1;
-					if group.collected then
-						progress = progress + 1;
-						if app.CollectedItemVisibilityFilter(group) then
-							right = GetCollectionIcon(group.collected);
-						end
-					else
-						right = L["NOT_COLLECTED_ICON"];
-					end
-				elseif group.trackable then
-					if group.saved then
-						if app.CollectedItemVisibilityFilter(group) then
-							right = L["COMPLETE_ICON"];
-						end
-					elseif app.ShowIncompleteThings(group) then
-						right = L["INCOMPLETE_ICON"];
-					end
-				elseif group.visible then
-					right = group.count and (group.count .. "x") or "---";
-				end
-			end
 
-			-- If there's progress to display, then let's summarize a bit better.
-			if right then
-				-- Insert into the display.
-				local o = { prefix = indent, group = group, right = right };
-				-- i wanted an icon to show "have you done this non-collectible thing which may contain collectible things?" but it looks bad
-				-- if not group.collectible and group.trackable then o.right = GetCompletionIcon(group.saved) .. o.right; end
-				if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. GetUnobtainableTexture(group) .. ":0|t "; end
-				tinsert(entries, o);
+				-- If there's progress to display, then let's summarize a bit better.
+				if right then
+					-- Insert into the display.
+					local o = { prefix = indent, group = group, right = right };
+					-- i wanted an icon to show "have you done this non-collectible thing which may contain collectible things?" but it looks bad
+					-- if not group.collectible and group.trackable then o.right = GetCompletionIcon(group.saved) .. o.right; end
+					if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. GetUnobtainableTexture(group) .. ":0|t "; end
+					tinsert(entries, o);
 
-				-- Only go down one more level.
-				if layer < 3 and group.g and (not group.achievementID or paramA == "creatureID") and (not group.parent or not group.parent.difficultyID) and #group.g > 0 and not (group.g[1].artifactID or group.filterID == 109) and not group.symbolized then
-					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. "  ", layer + 1);
-				-- else
-					-- print("skipped sub-contains");
+					-- Only go down one more level.
+					if layer < 3 and group.g and (not group.achievementID or paramA == "creatureID") and (not group.parent or not group.parent.difficultyID) and #group.g > 0 and not (group.g[1].artifactID or group.filterID == 109) and not group.symbolized then
+						BuildContainsInfo(group.g, entries, paramA, paramB, indent .. "  ", layer + 1);
+					-- else
+						-- print("skipped sub-contains");
+					end
+				-- If this group is a Quest, then it may be a source Quest to another Quest which has a Nested Collectible that needs to be shown
+				-- This is just too laggy in some situations to search for sourceQuests repeatedly... maybe if it can be coroutined in the tooltip...?
+				-- elseif group.questID and not group.isBreadcrumb then
+					-- -- print("check if is a sourceQuest for",group.questID);
+					-- local search = app.SearchForField("sourceQuests", group.questID);
+					-- if search then
+						-- -- for i,g in ipairs(search) do
+							-- -- print("has sq",RecurseGroupParent(g));
+						-- -- end
+						-- BuildContainsInfo(search, entries, paramA, paramB, indent .. " ", layer);
+					-- end
 				end
-			-- If this group is a Quest, then it may be a source Quest to another Quest which has a Nested Collectible that needs to be shown
-			-- This is just too laggy in some situations to search for sourceQuests repeatedly... maybe if it can be coroutined in the tooltip...?
-			-- elseif group.questID and not group.isBreadcrumb then
-				-- -- print("check if is a sourceQuest for",group.questID);
-				-- local search = app.SearchForField("sourceQuests", group.questID);
-				-- if search then
-					-- -- for i,g in ipairs(search) do
-						-- -- print("has sq",RecurseGroupParent(g));
-					-- -- end
-					-- BuildContainsInfo(search, entries, paramA, paramB, indent .. " ", layer);
-				-- end
+				-- print("total",tostring(total),"progress",tostring(progress));
+			-- else
+				-- print("ex",group.key,group[group.key],RecurseGroupParent(group));
 			end
-			-- print("total",tostring(total),"progress",tostring(progress));
-		-- else
-			-- print("ex",group.key,group[group.key],RecurseGroupParent(group));
 		end
 	end
 	if (total > 0) then
