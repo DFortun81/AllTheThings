@@ -60,7 +60,7 @@ _.Zones =
 							}),
 							q(60459, {	-- Anima Salvage
 								["provider"] = { "n", 167207 },	-- Sabbath Nightshade
-								--["coord"] = { , 1536 },
+								["coord"] = { 43.2, 47.8, 1698 },
 								["isWeekly"] = true,
 								["g"] = {
 									i(181732),	-- Tribute of the Ambitious
@@ -164,10 +164,10 @@ _.Zones =
 							}),
 							q(60455, {	-- Storm the Maw
 								["provider"] = { "n", 167207 },	-- Sabbath Nightshade
-								--["coord"] = { , 1536 },
+								["coord"] = { 43.2, 47.8, 1698 },
 								["isWeekly"] = true,
 								["g"] = {
-									i(181732),	-- Tribute of the Ambitious
+									i(181733),	-- Tribute of the Duty-Bound
 								},
 							}),
 							q(60408, {	-- Training Our Forces

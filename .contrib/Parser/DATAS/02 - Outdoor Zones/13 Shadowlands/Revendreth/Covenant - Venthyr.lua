@@ -146,8 +146,8 @@ _.Zones =
 						q(60460, {	-- Anima Salvage
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 164738 },	-- Tenaval
+							["coord"] = { 45.4, 28.5, 1699 },	-- Sinfall Reaches
 							["isWeekly"] = true,
-							["coord"] = { 45.9, 28.1, 1699 },	-- Sinfall Reaches
 							["g"] = {
 								i(181556),	-- 	Tribute of the Court
 							},
@@ -265,10 +265,10 @@ _.Zones =
 						q(60456, {	-- Storm the Maw
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 164738 },	-- Tenaval
+							["coord"] = { 45.4, 28.5, 1699 },	-- Sinfall Reaches
 							["isWeekly"] = true,
-							["coord"] = { 45.8, 27.9, 1699 },	-- Sinfall Reaches
 							["g"] = {
-								i(181556),	-- 	Tribute of the Court
+								i(181557),	-- Favor of the Court
 							},
 						}),
 						q(60410, {	-- Training Our Forces
