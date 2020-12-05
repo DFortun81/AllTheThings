@@ -20,9 +20,8 @@ _.NeverImplemented =
 		},
 	n(-10100, {	-- Shadowlands
 		-- Mounts
-		-- Toy
-		un(NEVER_IMPLEMENTED, i(182655)),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
-		un(NEVER_IMPLEMENTED, i(174286)),	-- Kyrian Ritual Vestments (beta only? Retrieving data on 9.0.2)
+		-- Gear
+		un(NEVER_IMPLEMENTED, i(181810)),	-- Phylactery of the Dead Conniver (existed in beta; doesn't appear to exist in live)
 		-- Pets
 		un(NEVER_IMPLEMENTED, i(180838)),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
 		un(NEVER_IMPLEMENTED, i(180837)),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
@@ -41,6 +40,9 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(183714)),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
 		-- Recipes
 		un(NEVER_IMPLEMENTED, i(182666)),	-- Formula: Enchanted Elethium Bar (learned from trainer not item)
+		-- Toy
+		un(NEVER_IMPLEMENTED, i(182655)),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
+		un(NEVER_IMPLEMENTED, i(174286)),	-- Kyrian Ritual Vestments (beta only? Retrieving data on 9.0.2)
 		-- Other
 		un(NEVER_IMPLEMENTED, i(183940)),	-- Avowed Archivist's Tome (this was on a vendor and awarded "the Avowed" title in Beta but has not been seen in the actual expansion)
 	}),

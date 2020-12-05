@@ -210,68 +210,62 @@ _.Zones =
 									i(181733),	-- Tribute of the Duty-Bound
 								},
 							}),
-							-- One time Calling Quest to Indroduce Calling Quests, should be sorted in the normal Questfile
-							q(62694, {	-- A Calling in Maldraxxus
-								["provider"] = { "n", 173003 },	-- Nalcorn Talsen
-								["coord"] = { 50.6, 53.4, 1536 },
-								["repeatable"] = true,
-								["g"] = {
-									i(181732),	-- Tribute of the Ambitious
-								},
-							}),
 						}),
 					}),
 					-- Covenant Intro
 					q(59556, {	-- Welcome To Our House
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
 						["sourceQuests"] = { 58609 },	-- Taking The Seat
+						["provider"] = { "n", 158453 },	-- Baroness Draka
+						["coord"] = { 49.5, 21.9, 1698 },
 					}),
 					q(61359, {	-- Power of the Primus
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
 						["sourceQuests"] = { 59556 },	-- Welcome To Our House
+						["provider"] = { "n", 165182 },	-- Baroness Draka
+						["coord"] = { 49.7, 43.4, 1698 },
 					}),
 					q(62833, {	-- A Hero of Great Renown
 						-- TODO: Draka offers an alternate 'skip' option with this quest... not sure what that triggers
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
 						["sourceQuests"] = { 61359 },	-- Power of the Primus
+						["provider"] = { "n", 165182 },	-- Baroness Draka
+						["coord"] = { 49.7, 43.4, 1698 },
 					}),
 					q(62834, {	-- Glorious Ambition
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
 						["sourceQuests"] = { 62833 },	-- A Hero of Great Renown
+						["provider"] = { "n", 175998 },	-- Elspeth Larink
+						["coord"] = { 46.7, 40.4, 1698 },
 					}),
 					q(62835, {	-- A Call to Service
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
 						["sourceQuests"] = { 62834 },	-- Glorious Ambition
+						["provider"] = { "n", 175998 },	-- Elspeth Larink
+						["coord"] = { 46.7, 40.4, 1698 },
 					}),
-					-- q(, {	-- A Calling in Maldraxxus
-					-- 	-- ["coord"] = { xx, xx, 1536 },
-					-- 	-- ["provider"] = { "n", xx },	-- 
-					-- 	["sourceQuests"] = { 62835 },	-- A Call to Service
-					-- }),
-					q(62839, {	-- Anima is Strength
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
+					q(62694, {	-- A Calling in Maldraxxus
 						["sourceQuests"] = { 62835 },	-- A Call to Service
+						["provider"] = { "n", 158339 },	-- Sergeant Romark
+						["coord"] = { 47.7, 29.1, 1698 },
+						["g"] = {
+							i(181732),	-- Tribute of the Ambitious
+						},
+					}),
+					q(62839, {	-- Anima is Strength
+						["sourceQuests"] = { 62835 },	-- A Call to Service
+						["provider"] = { "n", 158339 },	-- Sergeant Romark
+						["coord"] = { 47.7, 29.1, 1698 },
 					}),
 					q(62840, {	-- Into the Reservoir
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
 						["sourceQuests"] = { 62839 },	-- Anima is Strength
+						["provider"] = { "n", 161909 },	-- Arkadia Moa
+						["coord"] = { 52.4, 38.4, 1698 },
 					}),
 					q(61397, {	-- Opportunity Strikes
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
 						["sourceQuests"] = { 62840 },	-- Into the Reservoir
+						["provider"] = { "n", 161909 },	-- Arkadia Moa
+						["coord"] = { 52.4, 38.4, 1698 },
 					}),
 					q(62843, {	-- The Soul Contact
-						-- ["coord"] = { xx, xx, 1536 },
-						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 						["sourceQuests"] = { 61397 },	-- Opportunity Strikes
+						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
+						["coord"] = { 46.5, 42.2, 1698 },
 					}),
 					q(62844, {	-- Return to Draka
 						["coord"] = { 40.0, 68.4, 1670 },
@@ -393,6 +387,338 @@ _.Zones =
 				n(TREASURES, {
 				}),
 				n(VENDORS, {
+					n(172176, {	-- Su Zettai <Renown Quartermaster>
+						["coords"] = {
+							{ 50.68, 71.38, 1536},	-- Maldraxxus
+							{ 52.5, 41.2, 1698 },	-- Seat of the Primus
+						},
+						["g"] = {
+							i(181815, {	-- Armored Bonehoof Tauralus (MOUNT)
+								["cost"] = { 
+									{ "c", 1813, 5000 },
+									{ "c", 1885, 100 },
+								},
+							}),
+							i(181821, {	-- Armored Plaguerot Tauralus (MOUNT)
+								["cost"] = { 
+									{ "c", 1813, 100 },
+									{ "c", 1885, 50 },
+								},
+							}),
+							i(182076, {	-- Plaguerot Tauralus (MOUNT)
+								["cost"] = { { "c", 1813, 5000 } },
+							}),
+							i(183462, {	-- Illusion: Unbreakable Resolve
+								["cost"] = { { "c", 1813, 2500 } },
+							}),
+							i(183601, {	-- Jiggles (PET)
+								["cost"] = { 
+									{ "c", 1813, 1500 },
+									{ "c", 1885, 30 },
+								},
+							}),
+							i(182773, {	-- Necrolord Hearthstone (TOY)
+								["cost"] = { { "c", 1813, 750 } },
+							}),
+							i(184071, {	-- Blooddoused Aranakk Polearm
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 50 },
+								},
+							}),
+							i(184072, {	-- Brutal Fury-Forged Cleaver
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 50 },
+								},
+							}),
+							i(184074, {	-- Chopper of the Hidden Hand
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 50 },
+								},
+							}),
+							i(184070, {	-- Colossal Greataxe of Pandemonium
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 50 },
+								},
+							}),
+							i(184073, {	-- Crooked Plaguedtouched Dagger
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 50 },
+								},
+							}),
+							i(184064, {	-- Deathforged Bulwark of Maldraxxus
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 50 },
+								},
+							}),
+							i(184068, {	-- Greatstaff of the Lichsworn
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 50 },
+								},
+							}),
+							i(184065, {	-- Lambent Plaguetouched Focux
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 50 },
+								},
+							}),
+							i(181805, {	-- Osteowings of the Necrolords
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 40 },
+								},
+							}),
+							i(182239, {	-- Prime Conjurer's Cape
+								["cost"] = { 
+									{ "c", 1813, 1500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(182237, {	-- Prime Conjurer's Cinch
+								["cost"] = { 
+									{ "c", 1813, 3000 },
+									{ "c", 1885, 25 },
+								},
+							}),
+							i(182231, {	-- Prime Conjurer's Cowl
+								["cost"] = { 
+									{ "c", 1813, 4000 },
+									{ "c", 1885, 30 },
+								},
+							}),
+							i(182234, {	-- Prime Conjurer's Gloves
+								["cost"] = { 
+									{ "c", 1813, 2000 },
+									{ "c", 1885, 15 },
+								},
+							}),
+							i(182235, {	-- Prime Conjurer's Leggings
+								["cost"] = { 
+									{ "c", 1813, 3000 },
+									{ "c", 1885, 25 },
+								},
+							}),
+							i(182236, {	-- Prime Conjurer's Mantle
+								["cost"] = { 
+									{ "c", 1813, 4000 },
+									{ "c", 1885, 30 },
+								},
+							}),
+							i(182233, {	-- Prime Conjurer's Slippers
+								["cost"] = { 
+									{ "c", 1813, 2000 },
+									{ "c", 1885, 15 },
+								},
+							}),
+							i(182232, {	-- Prime Conjurer's Tunic
+								["cost"] = { 
+									{ "c", 1813, 4000 },
+									{ "c", 1885, 30 },
+								},
+							}),
+							i(182238, {	-- Prime Conjurer's Wristwraps
+								["cost"] = { 
+									{ "c", 1813, 2000 },
+									{ "c", 1885, 15 },
+								},
+							}),
+							i(182214, {	-- Prime Harbinger's Chestguard
+								["cost"] = { 
+									{ "c", 1813, 4000 },
+									{ "c", 1885, 30 },
+								},
+							}),
+							i(182216, {	-- Prime Harbinger's Crushers
+								["cost"] = { 
+									{ "c", 1813, 2000 },
+									{ "c", 1885, 15 },
+								},
+							}),
+							i(182221, {	-- Prime Harbinger's Greatcloak
+								["cost"] = { 
+									{ "c", 1813, 1500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(182213, {	-- Prime Harbinger's Greathelm
+								["cost"] = { 
+									{ "c", 1813, 4000 },
+									{ "c", 1885, 30 },
+								},
+							}),
+							i(182217, {	-- Prime Harbinger's Greaves
+								["cost"] = { 
+									{ "c", 1813, 3000 },
+									{ "c", 1885, 25 },
+								},
+							}),
+							i(182218, {	-- Prime Harbinger's Pauldrons
+								["cost"] = { 
+									{ "c", 1813, 4000 },
+									{ "c", 1885, 30 },
+								},
+							}),
+							i(182215, {	-- Prime Harbinger's Stompers
+								["cost"] = { 
+									{ "c", 1813, 2000 },
+									{ "c", 1885, 15 },
+								},
+							}),
+							i(182220, {	-- Prime Harbinger's Vambraces
+								["cost"] = { 
+									{ "c", 1813, 2000 },
+									{ "c", 1885, 15 },
+								},
+							}),
+							i(182219, {	-- Prime Harbinger's Warbelt
+								["cost"] = { 
+									{ "c", 1813, 3000 },
+									{ "c", 1885, 25 },
+								},
+							}),
+							i(182247, {	-- Prime Tactician's Bracers
+								["cost"] = { 
+									{ "c", 1813, 2000 },
+									{ "c", 1885, 15 },
+								},
+							}),
+							i(182244, {	-- Prime Tactician's Chausses
+								["cost"] = { 
+									{ "c", 1813, 3000 },
+									{ "c", 1885, 25 },
+								},
+							}),
+							i(182248, {	-- Prime Tactician's Drape
+								["cost"] = { 
+									{ "c", 1813, 1500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(182240, {	-- Prime Tactician's Faceguard
+								["cost"] = { 
+									{ "c", 1813, 4000 },
+									{ "c", 1885, 30 },
+								},
+							}),
+							i(182243, {	-- Prime Tactician's Gauntlets
+								["cost"] = { 
+									{ "c", 1813, 2000 },
+									{ "c", 1885, 15 },
+								},
+							}),
+							i(182246, {	-- Prime Tactician's Girdle
+								["cost"] = { 
+									{ "c", 1813, 3000 },
+									{ "c", 1885, 25 },
+								},
+							}),
+							i(182241, {	-- Prime Tactician's Hauberk
+								["cost"] = { 
+									{ "c", 1813, 4000 },
+									{ "c", 1885, 30 },
+								},
+							}),
+							i(182242, {	-- Prime Tactician's Sabatons
+								["cost"] = { 
+									{ "c", 1813, 2000 },
+									{ "c", 1885, 15 },
+								},
+							}),
+							i(182245, {	-- Prime Tactician's Spaulders
+								["cost"] = { 
+									{ "c", 1813, 4000 },
+									{ "c", 1885, 30 },
+								},
+							}),
+							i(182229, {	-- Prime Wraith's Armguards
+								["cost"] = { 
+									{ "c", 1813, 2000 },
+									{ "c", 1885, 15 },
+								},
+							}),
+							i(182228, {	-- Prime Wraith's Belt
+								["cost"] = { 
+									{ "c", 1813, 3000 },
+									{ "c", 1885, 25 },
+								},
+							}),
+							i(182226, {	-- Prime Wraith's Breeches
+								["cost"] = { 
+									{ "c", 1813, 3000 },
+									{ "c", 1885, 25 },
+								},
+							}),
+							i(182224, {	-- Prime Wraith's Boots
+								["cost"] = { 
+									{ "c", 1813, 2000 },
+									{ "c", 1885, 15 },
+								},
+							}),
+							i(182230, {	-- Prime Wraith's Cloak
+								["cost"] = { 
+									{ "c", 1813, 1500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(182223, {	-- Prime Wraith's Jerkin
+								["cost"] = { 
+									{ "c", 1813, 4000 },
+									{ "c", 1885, 30 },
+								},
+							}),
+							i(182227, {	-- Prime Wraith's Shoulders
+								["cost"] = { 
+									{ "c", 1813, 4000 },
+									{ "c", 1885, 30 },
+								},
+							}),
+							i(182225, {	-- Prime Wraith's Stranglers
+								["cost"] = { 
+									{ "c", 1813, 2000 },
+									{ "c", 1885, 15 },
+								},
+							}),
+							i(182222, {	-- Prime Wraith's Visage
+								["cost"] = { 
+									{ "c", 1813, 4000 },
+									{ "c", 1885, 30 },
+								},
+							}),
+							i(184063, {	-- Shank of the Unseen Eye
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 50 },
+								},
+							}),
+							i(184067, {	-- Skullformed Ossein Warglaive
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 50 },
+								},
+							}),
+							i(184069, {	-- Soulbarb, the Breathless Kill
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 50 },
+								},
+							}),
+							i(181801, {	-- Standard of the Necrolords
+								["cost"] = { { "c", 1813, 3500 } },
+							}),
+							i(184066, {	-- Wriggling Soulcharged Mace
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 50 },
+								},
+							}),
+						},
+					}),
 				}),
 			}),
 		}),

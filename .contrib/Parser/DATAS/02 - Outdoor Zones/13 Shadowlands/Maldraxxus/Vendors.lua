@@ -46,59 +46,6 @@ _.Zones =
 						i(179939),	-- Wriggling Spider Sac
 					},
 				}),
-				n(172176, {	-- Su Zettai <Renown Quartermaster>
-					["coords"] = {
-						{ 50.68, 71.38, 1536},
-						--{ 52.21 40.74 } inside seat of the primus
-					},
-					["g"] = {
-						i(182076, {	-- Plaguerot Tauralus
-							["cost"] = { { "c", 1813, 2500 } },
-						}),
-						i(182773, {	-- Necrolord Hearthstone
-							["cost"] = { { "c", 1813, 1500 } },
-						}),
-						i(183462, {	-- Illusion: Unbreakable Resolve
-							["cost"] = { { "c", 1813, 2000 } },
-						}),
-						i(183601, {	-- Jiggles
-							["cost"] = { { "c", 1813, 1500 } },
-						}),
-						i(182076, {	-- Plaguerot Tauralus
-							["cost"] = { { "c", 1813, 2000 } },
-						}),
-						i(181821, {	-- Armored Plaguerot Tauralus
-							["cost"] = { { "c", 1813, 3000 } },
-						}),
-						i(181801, {	-- Standard of the Necrolords
-							["cost"] = { { "c", 1813, 2500 } },
-						}),
-						i(181810, {	-- Phylactery of the Dead Conniver
-							["cost"] = { { "c", 1813, 2500 } },
-						}),
-						i(184063, {	-- Shank of the Unseen Eye
-							["cost"] = { { "c", 1813, 2500 } },
-						}),
-						i(184074, {	-- Chopper of the Hidden Hand
-							["cost"] = { { "c", 1813, 2500 } },
-						}),
-						i(182239, {	-- Prime Conjurer's Cape
-							["cost"] = { { "c", 1813, 1500 } },
-						}),
-						i(182230, {	-- Prime Wraith's Cloak
-							["cost"] = { { "c", 1813, 1500 } },
-						}),
-						i(182222, {	-- Prime Wraith's Visage
-							["cost"] = { { "c", 1813, 2500 } },
-						}),
-						i(182248, {	-- Prime Tactician's Drape
-							["cost"] = { { "c", 1813, 1500 } },
-						}),
-						i(182221, {	-- Prime Harbinger's Greatcloak
-							["cost"] = { { "c", 1813, 1500 } },
-						}),
-					},
-				}),
 				n(173003, {	-- Nalcorn Talsen <Undying Army Quartermaster>
 					["coord"] = { 50.6, 53.4, 1536 },
 					["g"] = {

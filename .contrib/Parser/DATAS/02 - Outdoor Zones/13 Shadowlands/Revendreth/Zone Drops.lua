@@ -23,6 +23,7 @@ _.Zones =
 				i(176989),	-- Bloodskin Wristwraps
 				i(178945),	-- Boneclutched Greatstaff
 				i(177800),	-- Bubbling Concoction
+				i(180862),	-- Bulletslinger
 				i(179319),	-- Caged Cudgel
 				i(180602, {	-- Crimson Dredwing Pup
 					-- TODO: possibly add other bats?
@@ -51,6 +52,7 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 				}),
+				i(177802),	-- Hopebreaker Carbine
 				i(177813),	-- Hopebreaker's Badge
 				i(183420),	-- Hopebreaker's Right Boot
 				i(179333),	-- Inquisitor Cudgel
