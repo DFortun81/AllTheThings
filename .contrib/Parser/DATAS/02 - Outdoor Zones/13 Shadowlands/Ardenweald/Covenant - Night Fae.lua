@@ -1442,6 +1442,194 @@ _.Zones =
 							}),
 						},
 					}),
+					n(175418, {	-- Mar'lan <Night Fae Armor Trader>
+						["coord"] = { 45.9, 56.4, 1701 },
+						["g"] = {
+							i(179602, {	-- Bulwark of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(175597, {	-- Faewoven Amice
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(175588, {	-- Faewoven Cowl
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(175603, {	-- Faewoven Cuffs
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179623, {	-- Faewoven Drape
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(175586, {	-- Faewoven Handwraps
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(175592, {	-- Faewoven Leggings
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(175576, {	-- Faewoven Raiment
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(175581, {	-- Faewoven Sandals
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(175600, {	-- Faewoven Sash
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179657, {	-- Faewoven Tunic
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179493, {	-- Fang of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(179567, {	-- Harp of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(179580, {	-- Jaws of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(182319, {	-- Mace of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(179766, {	-- Oakheart Anklewraps
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179767, {	-- Oakheart Armguards
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179771, {	-- Oakheart Belt
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179772, {	-- Oakheart Bracers
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179769, {	-- Oakheart Britches
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179773, {	-- Oakheart Cape
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179768, {	-- Oakheart Crest
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179770, {	-- Oakheart Mantle
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179765, {	-- Oakheart Tunic
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179774, {	-- Oakheart Vestment
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179888, {	-- Queensguard Chestplate
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179620, {	-- Queensguard Cloak
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179890, {	-- Queensguard Gauntlets
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179893, {	-- Queensguard Girdle
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179887, {	-- Queensguard Greathelm
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179891, {	-- Queensguard Greaves
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179892, {	-- Queensguard Pauldrons
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179889, {	-- Queensguard Sabatons
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179894, {	-- Queensguard Vambraces
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181916, {	-- Runewarden's Armguards
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181910, {	-- Runewarden's Boots
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181915, {	-- Runewarden's Buckle
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181911, {	-- Runewarden's Gloves
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181877, {	-- Runewarden's Greatcloak
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181912, {	-- Runewarden's Guise
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181909, {	-- Runewarden's Hauberk
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181913, {	-- Runewarden's Legguards
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181914, {	-- Runewarden's Spaulders
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(181979, {	-- Runewarden's Vestment
+								["cost"] = { { "c", 1813, 100 } },
+							}),
+							i(179560, {	-- Scepter of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(180005, {	-- Staff of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(180021, {	-- Wand of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(180079, {	-- Warbow of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(180259, {	-- Warglaive of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+							i(179542, {	-- Warmaul of the Wild Hunt
+								["cost"] = { 
+									{ "c", 1813, 3500 },
+									{ "c", 1885, 10 },
+								},
+							}),
+						},
+					}),
 					n(162447, {	-- Spindlenose <Court of Night Quartermaster>
 						["coord"] = { 59.6, 52.9, 1565 },
 						["g"] = {
