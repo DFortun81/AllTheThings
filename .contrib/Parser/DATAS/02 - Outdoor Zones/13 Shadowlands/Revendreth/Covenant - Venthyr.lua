@@ -265,8 +265,8 @@ _.Zones =
 						q(60456, {	-- Storm the Maw
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 164738 },	-- Tenaval
-							["coord"] = { 45.8, 27.9, 1699 },	-- Sinfall Reaches
 							["isWeekly"] = true,
+							["coord"] = { 45.8, 27.9, 1699 },	-- Sinfall Reaches
 							["g"] = {
 								i(181556),	-- 	Tribute of the Court
 							},

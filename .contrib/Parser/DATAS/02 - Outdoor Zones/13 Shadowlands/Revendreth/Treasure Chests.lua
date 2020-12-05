@@ -67,8 +67,7 @@ _.Zones =
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 48.7, 63.8, 1525 },
 				}),
-				o(1278968750, {	-- Secret Treasure
-				--	TODO: fix objectID when data becomes available
+				o(351487, {	-- Secret Treasure
 					["description"] = "Find the small alcove at |cFFFFFFFF65.7, 42.9|r.  On the wall behind a dark red oval rug is a single |cFFFFFFFFFlickering Candle|r.  Click it to open up a secret passage beneath the rug.  To exit after you collect the treasure, click the candle on the right-hand side of the stairs where you entered.",
 					["questID"] = 60197,
 					["isDaily"] = true,	-- repeatable??
@@ -82,34 +81,24 @@ _.Zones =
 						i(180400),	-- Inquisitions Final Judgment
 					}
 				}),
+				o(351541, {	-- Secret Treasure
+					["description"] = "Enter the crypt at |cFFFFFFFF41.9, 50.0|r.  Downstairs, go through the right-hand door.  On the left side of the room is a bookshelf with a |cFFFFFFFFNondescript Book|r.  Click the book, and the treasure will appear.",
+					["questID"] = 60198,
+					["isDaily"] = true,
+					["coord"] = { 42.5, 50.3, 1525 },
+				}),
 				o(351542, {	-- Secret Treasure
 					["description"] = "Destroy the |cFFFFFFFFCracked Crate|r in the small alcove at |cFFFFFFFF74.6, 62.6|r.  Turn the |cFFFFFFFFHidden Valve|r found inside, and find the treasure in the hidden chamber that opens up in the floor.",
 					["questID"] = 60199,
 					["isDaily"] = true,	-- ?? repeatable?
 					["coord"] = { 74.0, 61.9, 1525 },					
 				}),
-				o(354186, {	-- Stoneborn Satchel
-					["questID"] = 60979,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 75.8, 77.3, 1525 },
-				}),
-				o(354113, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.
-					["description"] = "You can jump down from the ledge above or use the Bounding Shroom at |cFFFFFFFF52.5, 59.2|r to reach the treasure.",
-					["questID"] = 60983,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 53.6, 57.3, 1525 },
-				}),
-				i(354189, {	-- Stoneborn Satchel
-					["questID"] = 60896,
+				o(1278968750, {	-- Secret Treasure
+				--	TODO: fix objectID when data becomes available
+					["description"] = "Enter the crypt at |cFFFFFFFF55.2, 34.7|r.  Downstairs, go through the right-hand door and defeat Lord Darion.\n\nWhen you turn to leave the room, you will see a painting on either side of the door.  The one on the right side is a |cFFFFFFFFFlickering Portrait|r, and it has a hidden lever behind it that will open the door to the treasure.  There are two more Venthyr guarding the chest.",
+					["questID"] = 60201,
 					["isDaily"] = true,
-					["coord"] = { 58.0, 67.2, 1525 },
-				}),
-				o(1278968759, {	-- Stoneborn Satchel
-				--	TODO: fix objectID when data is available
-					["questID"] = 60944,
-					["isDaily"] = true,
-					["coord"] = { 57.7, 29.4, 1525 },
+					["coord"] = { 55.3, 35.9, 1525 },
 				}),
 				o(354108, {	-- Stoneborn Satchel
 					["questID"] = 60938,
@@ -117,24 +106,26 @@ _.Zones =
 					["coord"] = { 43.8, 57.1, 1525 },
 				}),
 				o(354111, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.
-					["questID"] = 60941,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 75.4, 39.0, 1525 },
-				}),
-				o(354192, {	-- Stoneborn Satchel
-					["questID"] = 60984,
-					["isDaily"] = true,
-					["coord"] = { 23.5, 48.8, 1525 }
-				}),
-				o(1278968752, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.
 					["questID"] = 60942,
-					["isDaily"] = true,	-- repeatable?
+					["isDaily"] = true,
 					["coord"] = { 55.3, 42.3, 1525 },
 				}),
-				o(1278968751, {	-- Stoneborn Satchel
-				--	TODO: verify objectID, made a random one up
+				o(354112, {	-- Stoneborn Satchel
+					["questID"] = 60941,
+					["isDaily"] = true,
+					["coord"] = { 75.4, 39.0, 1525 },
+				}),
+				o(354186, {	-- Stoneborn Satchel
+					["questID"] = 60979,
+					["isDaily"] = true,	-- repeatable?
+					["coord"] = { 75.8, 77.3, 1525 },
+				}),
+				o(354187, {	-- Stoneborn Satchel
+					["questID"] = 60980,
+					["isDaily"] = true,
+					["coord"] = { 44.3, 77.9, 1525 },
+				}),
+				o(354188, {	-- Stoneborn Satchel
 					["questID"] = 60981,
 					["isDaily"] = true,
 					["coord"] = { 66.4, 65.4, 1525 },
@@ -145,17 +136,35 @@ _.Zones =
 						}),
 					},
 				}),
-				o(1278968753, {	-- Stoneborn Satchel
-				--	TODO: verify objectID.
-					["questID"] = 60982,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 58.1, 67.3, 1525 },
+				o(354189, {	-- Stoneborn Satchel
+					["altQuests"] = { 60982 },	-- shrug emoji, had these coordinates+this name linked up with two separate questIDs, so who knows what's going on there
+					["questID"] = 60896,
+					["isDaily"] = true,
+					["coord"] = { 58.0, 67.2, 1525 },
 				}),
-				o(1278968754, {	-- Stoneborn Satchel
+				o(354192, {	-- Stoneborn Satchel
+					["questID"] = 60984,
+					["isDaily"] = true,
+					["coord"] = { 23.5, 48.8, 1525 }
+				}),
+				o(1278968751, {	-- Stoneborn Satchel
 				--	TODO: verify objectID.
-					["questID"] = 60980,
+					["description"] = "You can jump down from the ledge above or use the Bounding Shroom at |cFFFFFFFF52.5, 59.2|r to reach the treasure.",
+					["questID"] = 60983,
 					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 44.3, 77.9, 1525 },
+					["coord"] = { 53.6, 57.3, 1525 },
+				}),
+				o(1278968752, {	-- Stoneborn Satchel
+				--	TODO: verify objectID when data is available
+					["questID"] = 60986,
+					["isDaily"] = true,
+					["coord"] = { 29.9, 37.4, 1525 },
+				}),
+				o(1278968759, {	-- Stoneborn Satchel
+				--	TODO: fix objectID when data is available
+					["questID"] = 60944,
+					["isDaily"] = true,
+					["coord"] = { 57.7, 29.4, 1525 },
 				}),
 			}),
 		}),

@@ -40,6 +40,7 @@ _.Zones =
 					i(181224),	-- Avowed Arcanist's Staff
 					i(181216),	-- Cinderwall Great Mace
 					i(181178),	-- Cowl of Emberfury
+					i(180397),	-- Crown of Decadent Desires
 					i(181215),	-- Darkwing Assassin's Blade
 					i(181222),	-- Darkwing Rebel's Halberd
 					i(181191),	-- Devourer Wrangler's Coif
