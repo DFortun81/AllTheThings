@@ -20,6 +20,7 @@ _.Zones =
 							i(183615),	-- Warstitched Darkhound
 							-- Pets
 							i(180629),	-- Devouring Animite
+							i(182671),	-- Runelight Leaper
 					},
 				}),
 				n(-901, {	-- Covenant Callings

@@ -19,8 +19,8 @@ _.PetJournal =
 		p(2652),	-- Bloodseeker
 		p(1666), 	-- Blorp
 		p(2398),	-- Boghopper
-		p(2688),	-- Brilliant Glimmershell
 		p(2931),	-- Brightscale Hatchling
+		p(2688),	-- Brilliant Glimmershell
 		p(2479, {	-- Bucketshell
 			["races"] = HORDE_ONLY,
 		}),
@@ -114,7 +114,7 @@ _.PetJournal =
 		p(2373),	-- River Frog
 		p(2378),	-- River Otter
 		p(2685),	-- Sandclaw Nestseeker
-		p(2646),	-- Sandclaw Pincher
+		p(2645),	-- Sandclaw Pincher
 		p(2646),	-- Sandclaw Sunshell
 		p(2377),	-- Sandyback Crawler
 		p(2704),	-- Scalebrood Hydra
@@ -123,15 +123,15 @@ _.PetJournal =
 		p(340), 	-- Sea Pony
 		p(1754), 	-- Sewer-Pipe Jelly
 		p(2381),	-- Shack Crab
-		p(2372),	-- shadowback Crawler
+		p(2372),	-- Shadowback Crawler
 		p(388), 	-- Shore Crab
 		p(629), 	-- Shore Crawler
 		p(711), 	-- Sifang Otter
 		p(712), 	-- Sifang Otter Pup
+		p(2932),	-- Silvershell Snapper
 		p(2478, {	-- Sir Snips
 			["races"] = ALLIANCE_ONLY,
 		}),
-		p(2932),	-- Silvershell Snapper
 		p(2709),	-- Skittering Eel
 		p(2758),	-- Slimy Eel
 		p(2761),	-- Slimy Fangtooth

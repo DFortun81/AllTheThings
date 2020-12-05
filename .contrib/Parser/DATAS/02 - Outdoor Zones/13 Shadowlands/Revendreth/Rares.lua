@@ -200,6 +200,7 @@ _.Zones =
 						}),
 						i(180713),	-- Shrieker's Voicebox
 						i(180461),	-- Horrid Dredwing
+						i(183720),	-- Dredbatskin Jerkin
 					},
 				}),
 				n(-955,   {	-- High Inquisitors

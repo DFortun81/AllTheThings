@@ -363,7 +363,7 @@ _.Zones =
 							{ 36.1, 65.2, 1565 },	-- Treasure
 						},
 						["questID"] = 61110,
-						["description"] = "You need to dispel the barrier with |cff0070dd[Fae Dreamcatcher]|r which you get by combining the following three items:\n\n1. |cff1eff00[Raw Dream Fibers]|r hanging from roots on the back of the platform at |cFFFFFFFF36.9, 29.8|r\n2. |cff1eff00[Raw Dream Fibers]|r under the platform with the big chair at |cFFFFFFFF42.4, 46.7|r\n3. |cff1eff00[Fae Ornament]|r from tree platform at |cFFFFFFFF51.5, 61.6|r\n\nThe Cache of the Night at |cFFFFFFFF36.1, 65.2|r",
+						["description"] = "You need to dispel the barrier with |cff0070dd[Fae Dreamcatcher]|r which you get by combining the following three items:\n\n1. |cff1eff00[Raw Dream Fibers]|r hanging from roots on the back of the platform at |cFFFFFFFF36.9, 29.8|r\n2. |cff1eff00[Enchanted Bough]|r under the platform with the big chair at |cFFFFFFFF42.4, 46.7|r\n3. |cff1eff00[Fae Ornament]|r from tree platform at |cFFFFFFFF51.5, 61.6|r\n\nThe Cache of the Night at |cFFFFFFFF36.1, 65.2|r",
 						["g"] = {
 							i(180637),	-- Starry Dreamfoal
 							i(180652, {	-- Fae Dreamcatcher

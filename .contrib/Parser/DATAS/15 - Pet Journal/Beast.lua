@@ -37,6 +37,7 @@ _.PetJournal =
 		p(2965),			-- Bloodfeaster Spiderling
 		p(2451),			-- Bloodstone Tunneler
 		p(1577),			-- Bloodthorn Hatchling
+		p(2891),			-- Blushing Spiderling
 		p(40),				-- Bombay Cat
 		p(2948),			-- Boneweave Hatchling
 		p(77),				-- Brown Snake
@@ -50,7 +51,6 @@ _.PetJournal =
 		p(2418),			-- Child of Jani
 		p(1662),			-- Cinder Pup
 		p(518),				-- Clefthoof Runt
-		p(2817),			-- Gloober, as G-huun
 		p(742),				-- Clouded Hedgehog
 		p(197),				-- Cobra Hatchling
 		p(2936),			-- Copperfur Kit
@@ -98,7 +98,6 @@ _.PetJournal =
 		p(714),				-- Feverbite Hatchling
 		p(529),				-- Fjord Worg Pup
 		p(1595),			-- Flat-Tooth Calf
-		p(2910),			-- Floofa
 		p(407),				-- Forest Spiderling
 		p(2121),			-- Fossorial Bile Larva
 		p(278),				-- Fox Kit
@@ -113,7 +112,6 @@ _.PetJournal =
 		p(2190),			-- Guardian Cobra Hatchling
 		p(234),				-- Gundrak Hatchling
 		p(851),				-- Horned Lizard
-		p(2916),			-- Hungry Burrower
 		p(317),				-- Hyjal Bear Cub
 		p(1457),			-- Icespine Hatchling
 		p(2941),			-- Indigo
@@ -185,11 +183,9 @@ _.PetJournal =
 		p(1453),			-- River Calf
 		p(482),				-- Rock Viper
 		p(2907),			-- Rocky
-		p(2891),			-- Rose Spiderling
 		p(1749),			-- Rose Taipan
 		p(3007),			-- Rosetipped Spiderling
 		p(2847),			-- Rotbreath
-		p(3020),			-- Runelight Leaper
 		p(2937),			-- Rustfur Kit
 		p(2661),			-- Rustyroot Snooter
 		p(2933),			-- Sable
@@ -200,7 +196,6 @@ _.PetJournal =
 		p(414),				-- Scorpid
 		p(416),				-- Scorpling
 		p(2560),			-- Scritches
-		p(3022),			-- Shimmerbough Hoarder
 		p(44),				-- Siamese Cat
 		p(511),				-- Sidewinder
 		p(741),				-- Silent Hedgehog
@@ -208,6 +203,7 @@ _.PetJournal =
 		p(2163),			-- Silithid Mini-Tank
 		p(45),				-- Silver Tabby Cat
 		p(637),				-- Skittering Cavern Crawler
+		p(2949),			-- Skittering Venomspitter
 		p(1736),			-- Slithering Brownscale
 		p(90),				-- Smolderweb Hatchling
 		p(387),				-- Snake
@@ -241,7 +237,6 @@ _.PetJournal =
 		p(1759),			-- Thaumaturgical Piglet
 		p(1456),			-- Thicket Skitterer
 		p(1810),			-- Thornclaw Broodling
-		p(2922),			-- Thumbbiter
 		p(2529),			-- Thunder Lizard Runt
 		p(2412),			-- Tiny Direhorn
 		p(1236),			-- Tito
