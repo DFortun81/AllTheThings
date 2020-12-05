@@ -15,22 +15,45 @@ _.Zones =
 				--	1700 = Sinfall Depths
 				["g"] = {
 					n(ACHIEVEMENTS, {
+						ach(14679, {	-- Party Palace
+						--	TODO: track with provider?  cost?
+							crit(1),	-- Building: Dredger Pool
+							crit(2),	-- Building: Guardhouse
+							crit(3),	-- Staff: Dredger Decorators
+							crit(4),	-- Staff: Stage Crew
+							crit(5),	-- Staff: Waiters
+							crit(6),	-- Staff: Bouncers
+							crit(7),	-- Staff: Revendreth Ambassador
+							crit(8),	-- Staff: Ardenweald Ambassador
+							crit(9),	-- Staff: Maldraxxus Ambassador
+							crit(10),	-- Staff: Bastion Ambassador
+							crit(11),	-- Stock: Greeting Kits
+							crit(12),	-- Stock: Appetizers
+							crit(13),	-- Stock: Anima Samples
+							crit(14),	-- Stock: Comfy Chairs
+							crit(15),	-- Second Guest List Page ... i(181536),	-- Guest List Page (1st EC)
+							crit(16),	-- Third Guest List Page
+							crit(17),	-- Fourth Guest List Page
+						}),
 						ach(14680, {	-- Something for Everyone
 							crit(1, {	-- Atoning Rituals
-							--	["sourceQuests"] = {  },	-- 
+								["sourceQuests"] = { 61407 },	-- Ember Court: Atoning Rituals
+								["description"] = "Requires using |cFF16be0dContract: Atoning Rituals|r after completing the quest.",
 							}),
 							crit(2, {	-- Glimpse of the Wilds
-							--	["sourceQuests"] = {  },	-- 
+								["sourceQuests"] = { 61408 },	-- Glimpse of the Wilds
+								["description"] = "Requires using |cFF16be0dContract: Glimpse of the Wilds|r after completing the quest.",
 							}),
 							crit(3, {	-- Lost Chalice Band
 							--	["sourceQuests"] = {  },	-- 
 							}),
 							crit(4, {	-- Tubbins's Tea Party
 								["sourceQuests"] = { 61404 },	-- Ember Court: Tubbins's Tea Party
-								["description"] = "Requires signing Tubbins's contract after completing the quest.",
+								["description"] = "Requires using |cFF16be0dContract: Tubbins's Tea Party|r after completing the quest.",
 							}),
 							crit(5, {	-- Divine Desserts
-							--	["sourceQuests"] = {  },	-- 
+								["sourceQuests"] = { 61405 },	-- Divine Desserts
+								["description"] = "Requires using |cFF16be0dContract: Divine Desserts|r after completing the quest.",
 							}),
 							crit(6, {	-- Mushroom Surprise
 							--	["sourceQuests"] = {  },	-- 
@@ -571,17 +594,57 @@ _.Zones =
 							}),
 						}),
 						n(-960, {	-- The Ember Court
+							n(-908, {	-- Rewards
+							--	TODO: are there enough potential rewards from this to warrant separating them into their specific sources?
+								i(180963),	-- Crypt Keeper's Vessel (Cryptkeeper Kassir, Formal, Elated)
+							}),
 							n(-961, {	-- Tier 1: A New Court
+							--	TODO: i tipped the scales toward "formal" as hard as i could in the initial scenario, and got quests for 'formal refreshments' and 'formal entertainment.'  if you tip them towards casual (or land in the middle) what happens?
 								q(59660, {	-- A New Court
 									["sourceQuests"] = { 63065 },	-- Sanctum Upgrade: The Ember Court
 									["provider"] = { "n", 161979 },	-- Theotar
 									["coord"] = { 49.9, 19.3, 1699 },	-- Sinfall Reaches
 								}),
+								q(61351, {	-- Ancient Sinstone (+Formal)
+									["provider"] = { "n", 164965 },	-- Prince Renathal
+									["isWeekly"] = true,	-- i guess?
+									["cost"] = { { "i", 181248, 1 } },	-- 1x Ancient Sinstone
+									["maps"] = { 1644 },	-- Ember Court (scenario)
+									["crs"] = { 171705 },	-- Court Crusher
+								}),
+								q(61407, {	-- Ember Court: Atoning Rituals
+									["sourceQuests"] = {
+										61706,	-- Ember Court: Entertainment
+										57929,	-- Hunting an Inquisitor
+									},
+									["provider"] = { "n", 167332 },	-- Gresit
+									["coord"] = { 71.7, 40.3, 1525 },	-- Revendreth
+									["g"] = {
+										i(176130),	-- Contract: Atoning Rituals
+									},
+								}),
+								q(61405, {	-- Ember Court: Divine Desserts
+									["sourceQuests"] = { 61880 },	-- Honored Attendance
+									["isWorldQuest"] = true,	-- shows up in /attwq without this despite having no attached collectibles
+									["provider"] = { "n", 172448 },	-- Stewart
+									["coord"] = { 33.9, 66.5, 1533 },	-- Bastion
+									["g"] = {
+										i(176135),	-- Contract: Divine Desserts
+									},
+								}),
 								q(61706, {	-- Ember Court: Entertainment
-								--	also requires Absolution Crypt storyline, add that SQ upon completion
 									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 									["provider"] = { "n", 164966 },	-- Temel
 									["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
+								}),
+								q(61408, {	-- Ember Court: Glimpse of the Wilds
+									["sourceQuests"] = { 61880 },	-- Honored Attendance
+									["isWorldQuest"] = true,	-- shows up in /attwq without this despite having no attached collectibles
+									["provider"] = { "n", 172352 },	-- Niya
+									["coord"] = { 56.3, 55.6, 1565 },	-- Ardenweald
+									["g"] = {
+										i(176131),	-- Contract: Glimpse of the Wilds
+									},
 								}),
 								q(61704, {	-- Ember Court: Guest RSVPs
 								--	also requires Absolution Crypt storyline, add that SQ upon completion
@@ -608,14 +671,64 @@ _.Zones =
 									["coord"] = { 27.9, 43.1, 1525 },	-- Revendreth
 									["maps"] = { 1644 },	-- Ember Court (scenario)
 								}),
+								q(61882, {	-- Formal Entertainment
+									["sourceQuests"] = { 61407 },	-- Ember Court: Atoning Rituals
+									["provider"] = { "n", 167332 },	-- Gresit
+									["coord"] = { 71.7, 40.3, 1525 },	-- Revendreth
+								}),
 								q(61884, {	-- Formal Refreshments
 									["sourceQuests"] = { 61404 },	-- Ember Court: Tubbins's Tea Party
 									["provider"] = { "n", 167863 },	-- Tubbins
 									["coord"] = { 30.9, 57.6, 1525 },	-- Revendreth
 								}),
+								q(61880, {	-- Honored Attendance
+									["sourceQuests"] = { 60236 },	-- RSVP: Cryptkeeper Kassir
+									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
+									["coord"] = { 70.0, 56.2, 1525 },
+								}),
+								q(62080, {	-- Restock: Herbal Tea
+									["repeatable"] = true,	-- it shows up as a blue ?
+									["provider"] = { "n", 165490 },	-- Picky Stefan
+									["coord"] = { 29.0, 44.2, 1525 },
+								}),
+								q(60236, {	-- RSVP: Cryptkeeper Kassir
+									["sourceQuests"] = {
+										57928,	-- Atonement Crypt Key
+										61704,	-- Ember Court: Guest RSVPs
+									},
+									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
+									["isDaily"] = true,
+									["coord"] = { 70.2, 56.1, 1525 },	-- Revendreth
+									["g"] = {
+										i(176120),	-- RSVP: Cryptkeeper Kassir
+									},
+								}),
+								q(61256, {	-- RSVP: Kleia and Pelagos
+									["sourceQuests"] = { 61880 },	-- Honored Attendance
+									["provider"] = { "n", 174916 },	-- Kleia
+									["isDaily"] = true,	-- according to the API!
+									["coord"] = { 55.8, 86.4, 1533 },	-- Bastion
+									["g"] = {
+										i(176123),	-- RSVP: Kleia and Pelagos
+									},
+								}),
 								q(63065, {	-- Sanctum Upgrade: The Ember Court
 									["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 									["coord"] = { 55.5, 27.0, 1699 },	-- Sinfall Reaches
+								}),
+								q(61616, {	-- The Ember Court
+									["sourceQuests"] = {
+										61882,	-- Formal Entertainment
+										61884,	-- Formal Refreshments
+										61880,	-- Honored Attendance
+									},
+									["provider"] = { "n", 164966 },	-- Temel
+									["isDaily"] = true,
+									["coord"] = { 28.0, 43.1, 1525 },	-- Revendreth
+									["maps"] = { 1644 },	-- Ember Court (scenario)
+									["g"] = {
+										i(181536),	-- Guest List Page (1st EC)
+									},
 								}),
 							}),
 							n(-962, {	-- Tier 2: Homegrown Help

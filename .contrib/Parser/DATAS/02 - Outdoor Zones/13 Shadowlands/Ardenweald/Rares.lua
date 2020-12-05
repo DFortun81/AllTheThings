@@ -328,9 +328,11 @@ _.Zones =
 					},
 				}),
 				n(164147, {	-- Wrigglemortis
+					["description"] = "Pull on the Wriggling Tendril to spawn the rare.",
 					["questID"] = 59170,
 					["isDaily"] = true,
 					["coord"] = { 58.0, 61.6, 1565 },
+					["crs"] = { 164179 },	-- Wriggling Tendril
 					["g"] = {
 						crit(6, {	-- Wrigglemortis
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald

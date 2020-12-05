@@ -653,6 +653,7 @@ app.L = {
 		[-904] = "Interface\\Icons\\ui_torghast",											-- Wrath of the Jailer
 		[-905] = 3675495,																	-- Command Table
 		[-906] = 3675495,																	-- Tier 1: Tactical Insight
+		[-908] = 901746,																	-- Rewards
 
 		[-915] = "Interface\\Icons\\sanctum_features_animadiversion",						-- Anima Conductor
 		[-916] = "Interface\\Icons\\sanctum_features_animadiversion",						-- Tier 1: Flowing Tendrils
@@ -1512,6 +1513,7 @@ app.L = {
 		[-905] = "Command Table",												-- Command Table
 		[-906] = "Tier 1: Tactical Insight",									-- Tier 1: Tactical Insight
 		[-907] = "Dead Blanchy",												-- Dead Blanchy
+		[-908] = "Rewards",														-- Rewards
 		[-914] = "Adventures",													-- Adventures
 		[-915] = "Anima Conductor",												-- Anima Conductor
 		[-916] = "Tier 1: Flowing Tendrils",									-- Tier 1: Flowing Tendrils

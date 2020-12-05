@@ -43,6 +43,12 @@ _.Zones =
 								-- TODO: add sinstone
 							},
 						}),
+						n(62653, {	-- Stop the Inquisition
+							["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
+							["provider"] = { "n", 167332 },	-- Gresit
+							["isWeekly"] = true,
+							["coord"] = { 71.7, 40.3, 1525 },
+						}),
 					}),
 					n(RARES, {
 						n(-954, {	-- Inquisitors

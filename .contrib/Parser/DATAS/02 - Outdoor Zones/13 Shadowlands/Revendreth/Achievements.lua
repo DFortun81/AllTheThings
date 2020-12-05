@@ -65,7 +65,7 @@ _.Zones =
 						["sourceQuests"] = { 57481 },	-- Running a Muck
 					}),
 					crit(4, {	-- The Final Atonement
-						["sourceQuests"] = { 60487 },	-- It Used to Be Quiet Here
+						["sourceQuests"] = { 58092 },	-- Halls of Atonement: Your Absolution
 					}),
 					crit(5, {	-- Mirror Maker of the Master
 						["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking

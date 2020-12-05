@@ -22,11 +22,12 @@ _.Zones =
 					},
 				}),
 				o(357565, {	-- Forgotten Angler's Rod
-					["crs"] = { 173634 },	-- Muckribbon
-					["coord"] = { 69.3, 77.9, 1525 },
+					["description"] = "Click the fishing rod to spawn Muckribbon.",
 					["questID"] = 62196,
+					["coord"] = { 73.7, 75.4, 1525 },
+					["crs"] = { 173634 },	-- Muckribbon
 					["g"] = {
-						i(180993),	-- Bat Visage Bobber
+						i(180993),	-- Bat Visage Bobber (TOY!)
 					},
 				}),
 				o(339283, {	-- Forgotten Noble's Chest
@@ -82,6 +83,7 @@ _.Zones =
 					}
 				}),
 				o(351542, {	-- Secret Treasure
+					["description"] = "Destroy the |cFFFFFFFFCracked Crate|r in the small alcove at |cFFFFFFFF74.6, 62.6|r.  Turn the |cFFFFFFFFHidden Valve|r found inside, and find the treasure in the hidden chamber that opens up in the floor.",
 					["questID"] = 60199,
 					["isDaily"] = true,	-- ?? repeatable?
 					["coord"] = { 74.0, 61.9, 1525 },					
@@ -93,7 +95,7 @@ _.Zones =
 				}),
 				o(354113, {	-- Stoneborn Satchel
 				--	TODO: verify objectID.
-					["description"] = "You can jump down from the ledge above or use the Bounding Shroom at 52.5, 59.2 to reach the treasure.",
+					["description"] = "You can jump down from the ledge above or use the Bounding Shroom at |cFFFFFFFF52.5, 59.2|r to reach the treasure.",
 					["questID"] = 60983,
 					["isDaily"] = true,	-- repeatable?
 					["coord"] = { 53.6, 57.3, 1525 },

@@ -24,6 +24,7 @@ i(184148);	-- Concealed Sinvyr Flask
 i(181544);	-- Confessions of Misdeed
 i(184363);	-- Considerations on Courage
 i(184151);	-- Counterfeit Ruby Brooch
+i(181548);	-- Darkhaven Soul Lantern
 i(181551);	-- Depleted Stoneborn Heart
 i(184383);	-- Duskfall Tuber
 i(181645);	-- Engorged Monstrosity's Heart
@@ -167,6 +168,7 @@ i(146700);	-- Ancient Gravenscale Armor
 i(169251);	-- Ancient Insect
 i(168234);	-- Ancient Runestone
 i(182021);	-- Antique Kyrian Javelin
+i(182043);	-- Antique Necromancer's Staff
 i(147438);	-- Bag of Wisp-Touched Elderhide
 i(146308);	-- Barrel of Storm Brew
 i(169224);	-- Big Red Button

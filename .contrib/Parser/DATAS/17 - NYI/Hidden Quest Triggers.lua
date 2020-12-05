@@ -3140,6 +3140,31 @@ _.HiddenQuestTriggers =
 		q(61438),	-- triggered when turning in #61404, "Ember Court: Tubbins's Tea Party"
 		q(59506),	-- triggered when signing Tubbins's Contract
 		q(59507),	-- triggered when signing Tubbins's Contract
+		q(62813),	-- triggered when looting Atonement Crypt Key while on #60236, "RSVP: Cryptkeeper Kassir"
+		q(62814),	-- triggered when opening a crypt with the key
+		q(59409),	-- triggered when using the RSVP: Cryptkeeper Kassir item
+		q(59410),	-- triggered when using the RSVP: Cryptkeeper Kassir item
+		q(59493),	-- selecting "Atoning Rituals" as the Ember Court entertainment during the daily
+		q(59505),	-- selecting "Tubbins's Tea Party" as the Ember Court refreshments during the daily
+		q(59440),	-- triggered when entering the Ember Court for the week
+		q(61927),	-- triggered when entering the Ember Court for the week
+		q(62124),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Atoning Rituals" entertainment event
+	--	q(62125),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
+	--	q(62130),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
+		q(62131),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Tea Time" objective
+		q(62138),	-- picked up when entering the Ember Court for the week — triggered completed upon finishing the "Court Crusher" objective
+	--	q(62148),	-- picked up when entering the Ember Court for the week — ???, commenting because i want to figure out wtf they are
+		q(62496),	-- triggered when Ember Court ended
+		q(62512),	-- triggered when Ember Court ended
+		q(59634),	-- triggered upon actually leaving the Ember Court
+		q(59638),	-- triggered when using item #181536, "Guest List Page"
+		q(61504),	-- triggered when using item #181536, "Guest List Page"
+		q(59491),	-- triggered when using "Contract: Glimpse of the Wilds"
+		q(59492),	-- triggered when using "Contract: Glimpse of the Wilds"
+		q(59418),	-- triggered when using "RSVP: Kleia and Pelagos"
+		q(59419),	-- triggered when using "RSVP: Kleia and Pelagos"
+		q(59503),	-- triggered when using "Contract: Divine Desserts"
+		q(59504),	-- triggered when using "Contract: Divine Desserts"
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

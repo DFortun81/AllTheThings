@@ -139,9 +139,10 @@ _.Zones =
 					},
 				}),
 				n(162452, {	-- Dartanos
+					["description"] = "Coordinates are for a teleportation pad that will take you to the rare's platform.",
 					["questID"] = 59230,
 					["isDaily"] = true,
-					["coord"] = { 25.8, 14.8, 1543 },
+					["coord"] = { 27.5, 17.3, 1543 },
 					["g"] = {
 						crit(2, {	-- Dartanos
 							["achievementID"] = 14660,	-- It's About Sending a Message
