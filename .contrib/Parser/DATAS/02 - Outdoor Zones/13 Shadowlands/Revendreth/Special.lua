@@ -51,7 +51,7 @@ _.Zones =
 						}),
 						i(182595, {	-- Sturdy Horseshoe
 							["description"] = "Day 3: Collect 4 |cFFFFFFFFSturdy Horseshoes|r.  They can be found scattered around roads in Revendreth.  Unlike the Sacks of Oats, these sparkle.",
-						--	["questID"] = ,
+							["questID"] = 62047,
 							["coords"] = {
 								{ 61.2, 69.4, 1525 },	-- Revendreth
 								{ 63.2, 65.7, 1525 },

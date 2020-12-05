@@ -104,6 +104,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(58084, {	-- Soul Snares
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(59617, {	-- Stone Fiend Saboteurs
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
