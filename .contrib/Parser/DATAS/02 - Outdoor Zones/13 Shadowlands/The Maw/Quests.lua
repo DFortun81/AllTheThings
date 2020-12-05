@@ -174,7 +174,7 @@ _.Zones =
 					["coord"] = { 46.9, 41.7, 1543 },
 					["isDaily"] = true,
 				}),
-				q(61765, {	-- Guaranteed Delivery
+				q(63038, {	-- Guaranteed Delivery
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 175797 },	-- Deceased Broker
 					["coord"] = { 30.7, 58.3, 1543 },

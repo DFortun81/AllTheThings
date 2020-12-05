@@ -62,7 +62,7 @@ _.Zones =
 					},
 				}),
 				n(170787, {	-- Akros <Death's Hammer>
-				--	["questID"] = ,
+					["questID"] = 60920,
 					["isDaily"] = true,
 					["coord"] = { 26.0, 54.9, 1543 },
 					["g"] = {
@@ -274,7 +274,7 @@ _.Zones =
 					},
 				}),
 				n(170692, {	-- Krala <Death's Wings>
-				--	["questID"] = ,
+					["questID"] = 60903,
 					["isDaily"] = true,
 					["coord"] = { 30.7, 68.8, 1543 },
 					["g"] = {
