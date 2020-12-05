@@ -6,6 +6,7 @@ local i = function(itemID)
 end
 
 -- Anima Items
+i(184147);	-- Agony Enrichment Device
 i(181540);	-- Animaflower Bud
 i(181477);	-- Ardendew Pearl
 i(184381);	-- Astral Sapwood
@@ -43,9 +44,12 @@ i(184315);	-- Multi-Modal Anima Container
 i(184360);	-- Musings on Repetition
 i(184386);	-- Nascent Sporepod
 i(181547);	-- Noble's Draught
+i(181642);	-- Novice Principles of Plaguistry
 i(181743);	-- Plume of the Archon
+i(184388);	-- Plump Glitterroot
 i(181649);	-- Preserved Preternatural Braincase
 i(184769);	-- Pressed Torchlily Blossom
+i(184362);	-- Reflections on Purity
 i(182749);	-- Regurgitated Kyrian Wings
 i(184771);	-- Remembrance Parchment Ash
 i(184772);	-- Ritual Maldracite Crystal

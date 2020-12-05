@@ -125,39 +125,6 @@ _.Zones =
 						i(180659),	-- Soul Siphoning Shard
 					},
 				}),
-				n(-956, {	-- Grand Inquisitors
-					n(COMMON_BOSS_DROPS, {
-						i(173721, {	-- Love and Terror
-							["questID"] = 58081,	-- Favor: Love and Terror
-						}),
-						i(177803),	-- Grand Inquisitor's Stave
-						i(184210),	-- Spiked Cudgel fo the Inquisition (sic)
-					}),
-					n(159157, {	-- Grand Inquisitor Aurica
-						["description"] = "Requires |cff712daaGrand Inquisitor Aurica's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-					--	["questID"] = ,
-						["isDaily"] = true,
-						["coord"] = { 69.7, 45.4, 1525 },
-						["g"] = {
-							crit(9, {	-- Grand Inquisitor Aurica
-								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
-							}),
-							i(173008),	-- Grand Inquisitor Aurica's Sinstone (so the item is associated with the rare)
-						},
-					}),
-					n(159156, {	-- Grand Inquisitor Nicu
-						["description"] = "Requires |cff712daaGrand Inquisitor Nicu's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-					--	["questID"] = ,
-						["isDaily"] = true,
-						["coord"] = { 64.6, 52.6, 1525 },
-						["g"] = {
-							crit(10, {	-- Grand Inquisitor Nicu
-								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
-							}),
-							i(173007),	-- Grand Inquisitor Nicu's Sinstone (so the item is associated with the rare)
-						},
-					}),
-				}),
 				n(165290, {	-- Harika the Horrid
 					["description"] = "Can be killed and looted by any Covenant, but requires a member of the |cFFfe040fVenthyr Covenant|r to channel anima to Wanecrypt Hill to summon it. Use the Dredterror Ballista to make him attackable.",
 					["questID"] = 59612,
@@ -203,68 +170,6 @@ _.Zones =
 						i(183720),	-- Dredbatskin Jerkin
 					},
 				}),
-				n(-955,   {	-- High Inquisitors
-				--	TODO: add any missing loot (some is npc-specific, some is shared, ugh)
-					-- when i killed the first one, Gabi, i got a questID of 59887.  the second one, Radu, didn't give a questID.  are they shared through each tier (normal > high > grand), one-time, random?  test!
-					n(COMMON_BOSS_DROPS, {
-						i(173721, {	-- Love and Terror
-							["questID"] = 58081,	-- Favor: Love and Terror
-						}),
-						i(184211),	-- High Inquisitor's Banded Cincture
-						i(184212),	-- Intimidator Trainer's Cuffs
-					}),
-					n(159155, {	-- High Inquisitor Dacian
-						["description"] = "Requires |cff0c5baeHigh Inquisitor Dacian's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-					--	["questID"] = ,
-						["isDaily"] = true,
-						["coord"] = { 72.0, 53.0, 1525 },
-						["g"] = {
-							crit(5, {	-- High Inquisitor Dacian
-								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
-							}),
-							i(180496),	-- High Inquisitor's Drape of Shame
-							i(173006),	-- High Inquisitor Dacian's Sinstone (so the item is associated with the rare)
-						},
-					}),
-					n(159152, {	-- High Inquisitor Gabi
-						["description"] = "Requires |cff0c5baeHigh Inquisitor Gabi's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-						["questID"] = 59887,
-						["isDaily"] = true,
-						["coord"] = { 75.2, 44.2, 1525 },
-						["g"] = {
-							crit(6, {	-- High Inquisitor Gabi
-								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
-							}),
-							i(180500),	-- High Inquisitor's Bloody Cloak
-							i(173000),	-- High Inquisitor Gabi's Sinstone (so the item is associated with the rare)
-						},
-					}),
-					n(159154, {	-- High Inquisitor Magda
-						["description"] = "Requires |cff0c5baeHigh Inquisitor Magda's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-					--	["questID"] = ,
-						["isDaily"] = true,
-						["coord"] = { 69.6, 52.0, 1525 },
-						["g"] = {
-							crit(7, {	-- High Inquisitor Magda
-								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
-							}),
-							i(180498),	-- High Inquisitor's Obscene Shawl
-						},
-					}),
-					n(159153, {	-- High Inquisitor Radu
-						["description"] = "Requires |cff0c5baeHigh Inquisitor Radu's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-					--	["questID"] = ,
-						["isDaily"] = true,
-						["coord"] = { 71.4, 42.2, 1525 },
-						["g"] = {
-							crit(8, {	-- High Inquisitor Radu
-								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
-							}),
-							i(180499),	-- High Inquisitor's Cloak of Fanaticism
-							i(173001),	-- High Inquisitor Radu's Sinstone (so the item is associated with the rare)
-						},
-					}),
-				}),
 				n(166679, {	-- Hopecrusher
 					["description"] = "When you inspect the Large Prey, Hopecrusher will attack you.",
 					["questID"] = 59900,
@@ -300,64 +205,6 @@ _.Zones =
 						}),
 						i(177223),	-- Scorched Crypt Key
 					},
-				}),
-				n(-954,   {	-- Inquisitors
-					n(COMMON_BOSS_DROPS, {
-						i(173721, {	-- Love and Terror
-							["questID"] = 58081,	-- Favor: Love and Terror
-						}),
-						i(184214),	-- Chained Manacles
-						i(184213),	-- Ritualist's Soles
-						i(184217),	-- Sinstone Stompers
-					}),
-					n(156918, {	-- Inquisitor Otilia
-						["description"] = "Requires |cff18bb0aInquisitor Otilia's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-					--	["questID"] = ,	-- 
-						["isDaily"] = true,
-						["coord"] = { 64.8, 46.6, 1525 },
-						["g"] = {
-							crit(1, {	-- Inquisitor Otilia
-								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
-							}),
-							i(172998),	-- Inquisitor Otilia's Sinstone (so the item is associated with the rare)
-						},
-					}),
-					n(156919, {	-- Inquisitor Petre
-						["description"] = "Requires |cff18bb0aInquisitor Petre's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-					--	["questID"] = ,	-- 
-						["isDaily"] = true,
-						["coord"] = { 67.2, 43.6, 1525 },
-						["g"] = {
-							crit(2, {	-- Inquisitor Petre
-								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
-							}),
-							i(172997),	-- Inquisitor Petre's Sinstone (so the item is associated with the rare)
-						},
-					}),
-					n(156916, {	-- Inquisitor Sorin
-						["description"] = "Requires |cff18bb0aInquisitor Sorin's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-					--	["questID"] = ,	-- 
-						["isDaily"] = true,
-						["coord"] = { 69.6, 47.6, 1525 },
-						["g"] = {
-							crit(3, {	-- Inquisitor Sorin
-								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
-							}),
-							i(172996),	-- Inquisitor Sorin's Sinstone (so the item is associated with the rare)
-						},
-					}),
-					n(159151, {	-- Inquisitor Traian
-						["description"] = "Requires |cff18bb0aInquisitor Traian's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-					--	["questID"] = ,	-- 
-						["isDaily"] = true,
-						["coord"] = { 76.0, 51.8, 1525 },
-						["g"] = {
-							crit(4, {	-- Inquisitor Traian
-								["achievementID"] = 14276,	-- It's Always Sinny in Revendreth
-							}),
-							i(172999),	-- Inquisitor Traian's Sinstone (so the item is associated with the rare)
-						},
-					}),
 				}),
 				n(165152, {	-- Leeched Soul
 					["description"] = "Inside the crypt.  Protect Absolver Meylann from waves of mobs.",
@@ -426,12 +273,21 @@ _.Zones =
 						i(180873),	-- Smolderheart
 					},
 				}),
-				n(160392, {	-- Soulstalker Doina
-					["coord"] = { 65.0, 57.0, 1525 },
+				n(160385, {	-- Soulstalker Doina
+					["description"] = "Spawns at the top of the tower.  She will escape through mirror portals twice during the encounter.  Follow her to continue the fight.",
 					["questID"] = 58130,
 					["isDaily"] = true,
+					["coord"] = { 78.5, 49.7, 1525 },
+					["crs"] = {	-- she spawned as 160385, but i think her npcID changes each time she ports, because there's no loot recorded as dropping from that version or 160393
+						160392,	-- Soulstalker Doina
+						160393,	-- Soulstalker Doina
+						160401,	-- Grenich
+						160402,	-- Grond
+					},
 					["g"] = {
-						ach(14310, crit(1)),	-- Adventurer of Revendreth / Soulstalker Doina
+						crit(1, {	-- Soulstalker Doina
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
 						i(180692),	-- Box of Stalker Traps
 					},
 				}),

@@ -18,6 +18,7 @@ _.Achievements =
 				},
 			}),
 			ach(14741, {	-- Aerial Ace
+				["description"] = "Speak to the NPC after completing the WQ and ask to complete the Paragon's Challenge.",
 				["_quests"] = { 60911 },	-- Flight School: Flapping Frenzy
 			}),
 			ach(14762, {	-- Breaking the Stratus Fear

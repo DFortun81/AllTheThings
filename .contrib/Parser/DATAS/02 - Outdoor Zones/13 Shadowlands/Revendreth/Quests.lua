@@ -106,6 +106,17 @@ _.Zones =
 					["provider"] = { "n", 155533 },	-- Lord Chamberlain
 					["coord"] = { 67.5, 68.5, 1525 },
 				}),
+				q(57925, {	-- Archivist Fane
+					["sourceQuests"] = { 57924 },	-- Ritual of Judgment
+					["provider"] = { "n", 160294 },	-- The Accuser
+					["coord"] = { 74.2, 49.6, 1525 },
+				}),
+				q(57928, {	-- Atonement Crypt Key
+				--	using a description instead of ["crs"] because i think the quest showing up in mobs' tooltips prior to its availability would be confusing/potentially cause people to waste time killing the mobs when they can't get the item/quest
+					["sourceQuests"] = { 57925 },	-- Archivist Fane
+					["description"] = "The quest item drops from Depraved and Dredger mobs in the Court of the Harvesters.",
+					["provider"] = { "i", 172957 },	-- Atonement Crypt Key
+				}),
 				q(58936, {	-- Beast Control
 				--	TODO: verify SQs.  i saw it after turning in 57098, "The Grove of Terror," not sure if it was available before that
 					["provider"] = { "o", 355296 },	-- Bounty: Beast Control
@@ -237,6 +248,14 @@ _.Zones =
 						i(175430),	-- Stoneforged Legguards
 					},
 				}),
+				q(57929, {	-- Hunting an Inquisitor
+					["sourceQuests"] = {	-- didn't require turning in "Atonement Crypt Key"
+						60128,	-- Ready to Serve
+						57926,	-- The Sinstone Archive
+					},
+					["provider"] = { "n", 160248 },	-- Archivist Fane
+					["coord"] = { 73.0, 52.0, 1525 },
+				}),
 				q(60514, {	-- Hunting Trophies
 					["sourceQuests"] = { 59014 },	-- King of the Hill
 					["provider"] = { "n", 156384 },	-- Huntmaster Constantin
@@ -347,6 +366,11 @@ _.Zones =
 						i(177657),	-- Overflowing Ember Mirror
 					},
 				}),
+				q(60127, {	-- Missing Stone Fiend
+					["sourceQuests"] = { 57925 },	-- Archivist Fane
+					["provider"] = { "n", 160248 },	-- Archivist Fane
+					["coord"] = { 73.0, 52.0, 1525 },
+				}),
 				q(57571, {	-- Moving Mirrors
 					["sourceQuests"] = { 57532 },	-- Foraging for Fragments
 					["provider"] = { "n", 158205 },	-- Laurent
@@ -396,6 +420,11 @@ _.Zones =
 					["provider"] = { "n", 158615 },	-- Vorpalia
 					["coord"] = { 42.8, 43.5, 1525 },
 				}),
+				q(60128, {	-- Ready to Serve
+					["sourceQuests"] = { 57927 },	-- Rebuilding Temel
+					["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
+					["coord"] = { 70.1, 56.1, 1525 },
+				}),
 				q(60177, {	-- Reason for the Treason
 					["sourceQuests"] = { 57174 },	-- The Stoneborn
 					["provider"] = { "n", 167489 },	-- Lajos
@@ -423,10 +452,29 @@ _.Zones =
 						i(175438),	-- Stoneforged Girdle
 					},
 				}),
+				q(57927, {	-- Rebuilding Temel
+					["sourceQuests"] = { 60127 },	-- Missing Stone Fiend
+					["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
+					["coord"] = { 70.1, 56.1, 1525 },
+				}),
 				q(57694, {	-- Refuge of Revendreth
 					["sourceQuests"] = { 57693 },	-- Torghast, Tower of the Damned
 					["provider"] = { "n", 162688 },	-- Prince Renathal
 					["coord"] = { 25.8, 57.1, 1699 },	-- Sinfall Reaches
+				}),
+				q(57923, {	-- Ritual of Absolution
+					["sourceQuests"] = {
+						57922,	-- The Proper Punishment
+						57920,	-- The Proper Souls
+						57921,	-- The Proper Tools
+					},
+					["provider"] = { "n", 160139 },	-- The Accuser
+					["coord"] = { 70.7, 46.8, 1525 },
+				}),
+				q(57924, {	-- Ritual of Judgment
+					["sourceQuests"] = { 57923 },	-- Ritual of Absolution
+					["provider"] = { "n", 160163 },	-- The Accuser
+					["coord"] = { 71.9, 46.3, 1525 },
 				}),
 				q(60468, {	-- Rubble Rummaging
 					["sourceQuests"] = { 60467 },	-- A Rousing Aroma
@@ -628,6 +676,11 @@ _.Zones =
 					["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
 					["provider"] = { "n", 155537 },	-- Rendle
 					["coord"] = { 69.9, 82.6, 1525 },
+				}),
+				q(57926, {	-- The Sinstone Archive
+					["sourceQuests"] = { 57925 },	-- Archivist Fane
+					["provider"] = { "n", 160248 },	-- Archivist Fane
+					["coord"] = { 73.0, 52.0, 1525 },
 				}),
 				q(57174, {	-- The Stoneborn
 					["sourceQuests"] = { 56978 },	-- To Darkhaven

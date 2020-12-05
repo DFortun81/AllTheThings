@@ -7,41 +7,6 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1525, {	-- Revendreth
 			n(VENDORS, {
-				n(173705, {	-- Archivist Janeera <Avowed Quartermaster>
-					["coord"] = { 73.0, 52.0, 1525 },
-					["g"] = {
-						i(184221, {	-- Archivist's Quill
-							["cost"] = { { "c", 1816, 1000 } },
-						}),
-						i(184220, {	-- Encyclopedia of Sinstone Fragment Recovery
-							["cost"] = { { "c", 1816, 600 } },
-						}),
-						i(184222, {	-- Lemet's Requisition Orders
-							["cost"] = { { "c", 1816, 350 } },
-						}),
-						i(182890, {	-- Rapid Recitation Quill
-							["cost"] = { { "c", 1816, 500 } },
-						}),
-						i(182660, {	-- Recipe: Shadestone
-							["cost"] = { { "c", 1816, 35 } },
-						}),
-						i(184219, {	-- Treatise on Sinstone Fragment Acquisition
-							["cost"] = { { "c", 1816, 600 } },
-						}),
-						i(184218, {	-- Vulgarity Arbiter
-							["cost"] = { { "c", 1816, 1000 } },
-						}),
-						n(-949, {	-- Covenant: Venthyr
-							-- These are only available to Venthyr covenant members
-							i(180940, {	-- Ebony Crypt Keeper's Mantle
-								["cost"] = { { "c", 1816, 500 } },
-							}),
-							i(182954, {	-- Inquisition Gargon
-								["cost"] = { { "c", 1816, 2000 } },
-							}),
-						}),
-					},
-				}),
 				n(156218, {	-- Deadfoot <General Goods, Repairs, & Boots>
 					["coord"] = { 48.6, 68.6, 1525 },
 					["g"] = {

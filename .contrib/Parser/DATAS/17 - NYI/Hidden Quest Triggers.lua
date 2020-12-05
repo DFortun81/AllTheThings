@@ -2824,6 +2824,9 @@ _.HiddenQuestTriggers =
 		]]--
 
 		-- N'Zoth assaults
+		q(57565),	-- Aqir Assault Tracker — triggered upon picking up #61981, "Replenish the Reservoir"
+		q(57567),	-- N'Zoth Assault Tracker (Vale) — triggered upon picking up #61981, "Replenish the Reservoir"
+		q(57562),	-- Amathet Assault Tracker — triggered when logging in
 		q(55689),	-- Uldum - Amathet cache
 		q(55690),	-- Uldum - Amathet cache
 		q(55691),	-- Uldum - Amathet cache
@@ -2941,8 +2944,6 @@ _.HiddenQuestTriggers =
 		q(61858),	-- taking the portal to Acherus during "Shadowlands: A Chilling Summons"
 		q(62686),	-- triggers when entering a zone with a 'Training' Calling active and your companion spawns (repeatable)
 		q(62713),	-- triggers when chosing to Skip the SL Storyline. Using this as the source of whether a character is a 'Skip' character
-		q(57565),	-- Aqir Assault Tracker — triggered upon picking up #61981, "Replenish the Reservoir"
-		q(57567),	-- N'Zoth Assault Tracker (Vale) — triggered upon picking up #61981, "Replenish the Reservoir"
 		q(63070),	-- Triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" (appears to be shared across covenants)
 		q(63360),	-- triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" as Kyrian
 		q(63359),	-- Triggered after completing mi(2174), "Tutorial: Dispose of the Detritus" as Night Fae
@@ -3104,6 +3105,7 @@ _.HiddenQuestTriggers =
 		q(60847),	-- Upon looting [Soul Hunter's Blade] (173707)
 		q(62641),	-- killing or looting Sabina during "Setting Sabina Free"
 		q(62671),	-- think this triggered when i turned in "Favor: Vial of Dredger Muck"
+		q(58107),	-- triggered when opening a crypt while on "Atonement Crypt Key"
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
