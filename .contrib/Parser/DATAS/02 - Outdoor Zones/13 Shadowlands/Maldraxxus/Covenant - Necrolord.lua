@@ -392,6 +392,12 @@ _.Zones =
 				n(TREASURES, {
 				}),
 				n(VENDORS, {
+					n(172176, {	-- Slayer Araya <Covenant Armor>
+						["coord"] = { 57.1, 48.3, 1698 },
+						["g"] = {
+							-- TODO: Add the 48 items he sells
+						},
+					}),
 					n(172176, {	-- Su Zettai <Renown Quartermaster>
 						["coords"] = {
 							{ 50.68, 71.38, 1536},	-- Maldraxxus

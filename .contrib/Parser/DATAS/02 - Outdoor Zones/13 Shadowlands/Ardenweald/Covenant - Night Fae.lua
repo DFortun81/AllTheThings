@@ -1057,6 +1057,84 @@ _.Zones =
 					}),
 				}),
 				n(VENDORS, {
+					n(175414, {	-- Adera <Normal Nathrian Weaponsmith>
+						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
+						["coord"] = { 48.1, 53.5, 1702 },
+						["g"] = bubbleDown({["modID"] = 3}, {	-- Normal
+							i(179544, {	-- Ashcarved Sledgehammer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179557, {	-- Baron's Oaken Scepter
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179611, {	-- Bulwark of the Unbowed
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179541, {	-- Colossal Sludgepounder
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180260, {	-- Deathdancer's Warglaive
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179610, {	-- Dredge-Giant's Warshield
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180258, {	-- Faeweald Fleshrender
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179497, {	-- Fang of the Winged Sentry
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179527, {	-- Gargon-Tamer's Spear
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179570, {	-- Harp of the Sanguine Courts
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180073, {	-- Heartstalker's Longbow
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179579, {	-- Jaws of the Hungerer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179492, {	-- Keepcrawler's Gutripper
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179566, {	-- Lyre of Decadent Frivolity
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(182351, {	-- Mace of the Unburdened
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179530, {	-- Nightwatch Eviscerator
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180022, {	-- Rootbulb of the Sinless
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179561, {	-- Rootspinner's Bloodbough
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180071, {	-- Shrieking Sinseeker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180002, {	-- Spire of the Long Dark
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180000, {	-- Staff of the Penitent
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184241, {	-- Stone-Sentinel Breaker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179577, {	-- Stonesnap Mandibles
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180023, {	-- Wand of Arboreal Artifice
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+						}),
+					}),
 					n(174766, {	-- Cortinarius <Marasmius Quartermaster>
 						["coord"] = { 56.1, 51.3, 1819 },	-- The Ring
 						["g"] = {
@@ -1442,6 +1520,84 @@ _.Zones =
 							}),
 						},
 					}),
+					n(175415, {	-- Harkoth <Heroic Nathrian Weaponsmith>
+						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
+						["coord"] = { 49.4, 54.4, 1702 },
+						["g"] = bubbleDown({["modID"] = 5}, {	-- Heroic
+							i(179544, {	-- Ashcarved Sledgehammer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179557, {	-- Baron's Oaken Scepter
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179611, {	-- Bulwark of the Unbowed
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179541, {	-- Colossal Sludgepounder
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180260, {	-- Deathdancer's Warglaive
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179610, {	-- Dredge-Giant's Warshield
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180258, {	-- Faeweald Fleshrender
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179497, {	-- Fang of the Winged Sentry
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179527, {	-- Gargon-Tamer's Spear
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179570, {	-- Harp of the Sanguine Courts
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180073, {	-- Heartstalker's Longbow
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179579, {	-- Jaws of the Hungerer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179492, {	-- Keepcrawler's Gutripper
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179566, {	-- Lyre of Decadent Frivolity
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(182351, {	-- Mace of the Unburdened
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179530, {	-- Nightwatch Eviscerator
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180022, {	-- Rootbulb of the Sinless
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179561, {	-- Rootspinner's Bloodbough
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180071, {	-- Shrieking Sinseeker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180002, {	-- Spire of the Long Dark
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180000, {	-- Staff of the Penitent
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184241, {	-- Stone-Sentinel Breaker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179577, {	-- Stonesnap Mandibles
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180023, {	-- Wand of Arboreal Artifice
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+						}),
+					}),
 					n(175418, {	-- Mar'lan <Night Fae Armor Trader>
 						["coord"] = { 45.9, 56.4, 1701 },
 						["g"] = {
@@ -1630,6 +1786,84 @@ _.Zones =
 							}),
 						},
 					}),
+					n(175413, {	-- Sparklebreeze <Raid Finder Nathrian Weaponsmith>
+						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
+						["coord"] = { 46.9, 54.3, 1702 },
+						["g"] = bubbleDown({["modID"] = 4}, {	-- LFR
+							i(179544, {	-- Ashcarved Sledgehammer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179557, {	-- Baron's Oaken Scepter
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179611, {	-- Bulwark of the Unbowed
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179541, {	-- Colossal Sludgepounder
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180260, {	-- Deathdancer's Warglaive
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179610, {	-- Dredge-Giant's Warshield
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180258, {	-- Faeweald Fleshrender
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179497, {	-- Fang of the Winged Sentry
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179527, {	-- Gargon-Tamer's Spear
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179570, {	-- Harp of the Sanguine Courts
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180073, {	-- Heartstalker's Longbow
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179579, {	-- Jaws of the Hungerer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179492, {	-- Keepcrawler's Gutripper
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179566, {	-- Lyre of Decadent Frivolity
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(182351, {	-- Mace of the Unburdened
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179530, {	-- Nightwatch Eviscerator
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180022, {	-- Rootbulb of the Sinless
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179561, {	-- Rootspinner's Bloodbough
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180071, {	-- Shrieking Sinseeker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180002, {	-- Spire of the Long Dark
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180000, {	-- Staff of the Penitent
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184241, {	-- Stone-Sentinel Breaker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179577, {	-- Stonesnap Mandibles
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180023, {	-- Wand of Arboreal Artifice
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+						}),
+					}),
 					n(162447, {	-- Spindlenose <Court of Night Quartermaster>
 						["coord"] = { 59.6, 52.9, 1565 },
 						["g"] = {
@@ -1690,6 +1924,84 @@ _.Zones =
 								},
 							}),
 						},
+					}),
+					n(175417, {	-- Sulanoom <Mythic Nathrian Weaponsmith>
+						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
+						["coord"] = { 49.4, 54.4, 1702 },
+						["g"] = bubbleDown({["modID"] = 6}, {	-- Mythic
+							i(179544, {	-- Ashcarved Sledgehammer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179557, {	-- Baron's Oaken Scepter
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179611, {	-- Bulwark of the Unbowed
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179541, {	-- Colossal Sludgepounder
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180260, {	-- Deathdancer's Warglaive
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179610, {	-- Dredge-Giant's Warshield
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180258, {	-- Faeweald Fleshrender
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179497, {	-- Fang of the Winged Sentry
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179527, {	-- Gargon-Tamer's Spear
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179570, {	-- Harp of the Sanguine Courts
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180073, {	-- Heartstalker's Longbow
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179579, {	-- Jaws of the Hungerer
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179492, {	-- Keepcrawler's Gutripper
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179566, {	-- Lyre of Decadent Frivolity
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(182351, {	-- Mace of the Unburdened
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179530, {	-- Nightwatch Eviscerator
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180022, {	-- Rootbulb of the Sinless
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179561, {	-- Rootspinner's Bloodbough
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180071, {	-- Shrieking Sinseeker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180002, {	-- Spire of the Long Dark
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180000, {	-- Staff of the Penitent
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184241, {	-- Stone-Sentinel Breaker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(179577, {	-- Stonesnap Mandibles
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(180023, {	-- Wand of Arboreal Artifice
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+						}),
 					}),
 				}),
 			}),
