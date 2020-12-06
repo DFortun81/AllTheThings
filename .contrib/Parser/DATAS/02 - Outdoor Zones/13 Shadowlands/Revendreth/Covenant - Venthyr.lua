@@ -15,68 +15,74 @@ _.Zones =
 				--	1700 = Sinfall Depths
 				["g"] = {
 					n(ACHIEVEMENTS, {
-						ach(14679, {	-- Party Palace
-						--	TODO: track with provider?  cost?
-							crit(1),	-- Building: Dredger Pool
-							crit(2),	-- Building: Guardhouse
-							crit(3),	-- Staff: Dredger Decorators
-							crit(4),	-- Staff: Stage Crew
-							crit(5),	-- Staff: Waiters
-							crit(6),	-- Staff: Bouncers
-							crit(7),	-- Staff: Revendreth Ambassador
-							crit(8),	-- Staff: Ardenweald Ambassador
-							crit(9),	-- Staff: Maldraxxus Ambassador
-							crit(10),	-- Staff: Bastion Ambassador
-							crit(11),	-- Stock: Greeting Kits
-							crit(12),	-- Stock: Appetizers
-							crit(13),	-- Stock: Anima Samples
-							crit(14),	-- Stock: Comfy Chairs
-							crit(15),	-- Second Guest List Page ... i(181536),	-- Guest List Page (1st EC)
-							crit(16),	-- Third Guest List Page
-							crit(17),	-- Fourth Guest List Page
-						}),
-						ach(14680, {	-- Something for Everyone
-							crit(1, {	-- Atoning Rituals
-								["sourceQuests"] = { 61407 },	-- Ember Court: Atoning Rituals
-								["description"] = "Requires using |cFF16be0dContract: Atoning Rituals|r after completing the quest.",
+						n(-960, sharedData({["maps"] = { 1644 },}, {	-- The Ember Court
+							ach(14679, {	-- Party Palace
+							--	TODO: track with provider?  cost?
+								crit(1),	-- Building: Dredger Pool
+								crit(2),	-- Building: Guardhouse
+								crit(3),	-- Staff: Dredger Decorators
+								crit(4),	-- Staff: Stage Crew
+								crit(5),	-- Staff: Waiters
+								crit(6),	-- Staff: Bouncers
+								crit(7),	-- Staff: Revendreth Ambassador
+								crit(8),	-- Staff: Ardenweald Ambassador
+								crit(9),	-- Staff: Maldraxxus Ambassador
+								crit(10),	-- Staff: Bastion Ambassador
+								crit(11),	-- Stock: Greeting Kits
+								crit(12),	-- Stock: Appetizers
+								crit(13),	-- Stock: Anima Samples
+								crit(14),	-- Stock: Comfy Chairs
+								crit(15),	-- Second Guest List Page ... i(181536),	-- Guest List Page (1st EC)
+								crit(16),	-- Third Guest List Page
+								crit(17),	-- Fourth Guest List Page
 							}),
-							crit(2, {	-- Glimpse of the Wilds
-								["sourceQuests"] = { 61408 },	-- Glimpse of the Wilds
-								["description"] = "Requires using |cFF16be0dContract: Glimpse of the Wilds|r after completing the quest.",
+							ach(14680, {	-- Something for Everyone
+								crit(1, {	-- Atoning Rituals
+									["questID"] = 59494,
+									["sourceQuests"] = { 61407 },	-- Ember Court: Atoning Rituals
+									["description"] = "Requires using |cFF16be0dContract: Atoning Rituals|r after completing the quest.",
+									["provider"] = { "i", 176130 },	-- Contract: Atoning Rituals
+								}),
+								crit(2, {	-- Glimpse of the Wilds
+									["sourceQuests"] = { 61408 },	-- Glimpse of the Wilds
+									["description"] = "Requires using |cFF16be0dContract: Glimpse of the Wilds|r after completing the quest.",
+								}),
+								crit(3, {	-- Lost Chalice Band
+								--	["sourceQuests"] = {  },	-- 
+								}),
+								crit(4, {	-- Tubbins's Tea Party
+									["questID"] = 59506,
+									["sourceQuests"] = { 61404 },	-- Ember Court: Tubbins's Tea Party
+									["description"] = "Requires using |cFF16be0dContract: Tubbins's Tea Party|r after completing the quest.",
+									["provider"] = { "i", 176134 },	-- Contract: Tubbins's Tea Party
+								}),
+								crit(5, {	-- Divine Desserts
+									["sourceQuests"] = { 61405 },	-- Divine Desserts
+									["description"] = "Requires using |cFF16be0dContract: Divine Desserts|r after completing the quest.",
+								}),
+								crit(6, {	-- Mushroom Surprise
+								--	["sourceQuests"] = {  },	-- 
+								}),
+								crit(7, {	-- Traditional Decorations
+								--	["sourceQuests"] = {  },	-- 
+								}),
+								crit(8, {	-- Mortal Reminders
+								--	["sourceQuests"] = {  },	-- 
+								}),
+								crit(9, {	-- Mystery Mirrors
+								--	["sourceQuests"] = {  },	-- 
+								}),
+								crit(10, {	-- Venthyr Volunteers
+								--	["sourceQuests"] = {  },	-- 
+								}),
+								crit(11, {	-- Stoneborn Reserves
+								--	["sourceQuests"] = {  },	-- 
+								}),
+								crit(12, {	-- Maldraxxian Army
+								--	["sourceQuests"] = {  },	-- 
+								}),
 							}),
-							crit(3, {	-- Lost Chalice Band
-							--	["sourceQuests"] = {  },	-- 
-							}),
-							crit(4, {	-- Tubbins's Tea Party
-								["sourceQuests"] = { 61404 },	-- Ember Court: Tubbins's Tea Party
-								["description"] = "Requires using |cFF16be0dContract: Tubbins's Tea Party|r after completing the quest.",
-							}),
-							crit(5, {	-- Divine Desserts
-								["sourceQuests"] = { 61405 },	-- Divine Desserts
-								["description"] = "Requires using |cFF16be0dContract: Divine Desserts|r after completing the quest.",
-							}),
-							crit(6, {	-- Mushroom Surprise
-							--	["sourceQuests"] = {  },	-- 
-							}),
-							crit(7, {	-- Traditional Decorations
-							--	["sourceQuests"] = {  },	-- 
-							}),
-							crit(8, {	-- Mortal Reminders
-							--	["sourceQuests"] = {  },	-- 
-							}),
-							crit(9, {	-- Mystery Mirrors
-							--	["sourceQuests"] = {  },	-- 
-							}),
-							crit(10, {	-- Venthyr Volunteers
-							--	["sourceQuests"] = {  },	-- 
-							}),
-							crit(11, {	-- Stoneborn Reserves
-							--	["sourceQuests"] = {  },	-- 
-							}),
-							crit(12, {	-- Maldraxxian Army
-							--	["sourceQuests"] = {  },	-- 
-							}),
-						}),
+						})),
 					}),
 					n(-901, {	-- Covenant Callings
 						q(62691, {	-- A Calling in Revendreth
@@ -369,7 +375,7 @@ _.Zones =
 							["coord"] = { 45.5, 28.7, 1700 },	-- Sinfall Depths
 						}),
 						q(59701, {	-- Common Ground
-						--	requires 5 renown
+							["description"] = "Requires Renown 5",
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 158653 },	-- Prince Renathal
 							["coord"] = { 51.0, 38.0, 1699 },	-- Sinfall Reaches
@@ -389,7 +395,7 @@ _.Zones =
 							["provider"] = { "n", 165818 },	-- Nadjia the Mistblade
 							["coord"] = { 72.1, 74.9, 1525 },	-- Revendreth
 						}),
-						q(59708, {	-- Harvester of Wrath
+						q(59720, {	-- Harvester of Wrath
 							["sourceQuests"] = { 59708 },	-- Invitation for the Stonewright
 							["provider"] = { "n", 165865 },	-- General Draven
 							["coord"] = { 40.3, 30.7, 1525 },	-- Revendreth
@@ -430,7 +436,7 @@ _.Zones =
 						}),
 						q(59343, {	-- Kindred Spirits
 							["sourceQuests"] = { 59719 },	-- The Court
-							["provider"] = { "n", 161979 },	-- Theotar
+							["provider"] = { "n", 172042 },	-- Theotar
 							["coord"] = { 50.3, 18.8, 1699 },	-- Sinfall Reaches
 						}),
 						q(62921, {	-- Our True Purpose
@@ -535,7 +541,7 @@ _.Zones =
 							["coord"] = { 51.2, 37.8, 1699 },	-- Sinfall Reaches
 						}),
 						q(61492, {	-- The Princeguard
-						--	requires 5 renown
+							["description"] = "Requires Renown 5",
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 							["provider"] = { "n", 161977 },	-- General Draven
 							["coord"] = { 46.3, 15.7, 1699 },	-- Sinfall Reaches

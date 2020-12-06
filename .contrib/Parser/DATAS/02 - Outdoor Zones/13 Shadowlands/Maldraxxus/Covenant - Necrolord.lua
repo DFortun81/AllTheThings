@@ -162,6 +162,11 @@ _.Zones =
 									i(181732),	-- Tribute of the Ambitious
 								},
 							}),
+							q(61333, {	-- Return Lost Souls
+								["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
+								["coord"] = { 46.5, 42.2, 1698 },
+								["isWeekly"] = true,
+							}),
 							q(60455, {	-- Storm the Maw
 								["provider"] = { "n", 167207 },	-- Sabbath Nightshade
 								["coord"] = { 43.2, 47.8, 1698 },

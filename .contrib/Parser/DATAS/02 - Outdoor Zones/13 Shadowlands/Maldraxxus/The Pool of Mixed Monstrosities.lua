@@ -35,8 +35,11 @@ _.Zones =
 					}),
 					crit(5, {
 						n(157309, {	-- Violet Mistake
-							i(184301),	-- Twenty-Loop Violet Girdle
-							i(182079),	-- Slime-Covered Reins of the Hulking Deathroc
+							["questID"] = 61720,
+							["g"] = {
+								i(184301),	-- Twenty-Loop Violet Girdle
+								i(182079),	-- Slime-Covered Reins of the Hulking Deathroc
+							},
 						}),
 					}),
 					crit(6, {
@@ -44,7 +47,10 @@ _.Zones =
 					}),
 					crit(7, {
 						n(157308, {	-- Corrupted Sediment
-							i(184302),	-- Residue-Coated Muck Waders
+							["questID"] = 61719,
+							["g"] = {
+								i(184302),	-- Residue-Coated Muck Waders
+							},
 						}),
 					}),
 					i(183903),	-- Smelly Jelly

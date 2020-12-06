@@ -680,7 +680,8 @@ _.Zones =
 					-- House of Eyes
 					q(59555, {	-- Enemy at the Door
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						--["sourceQuests"] = { 57390 },	-- To Die By the Sword
+						["coord"] = { 49.6, 50.7, 1698 },
+						["sourceQuests"] = { 62448 },	-- Securing the House
 						["g"] = {
 							i(182077),		-- War-Bred Tauralus
 						},

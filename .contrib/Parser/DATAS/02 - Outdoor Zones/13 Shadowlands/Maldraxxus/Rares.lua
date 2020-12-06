@@ -290,7 +290,16 @@ _.Zones =
 				}),
 				n(162819, { -- Warbringer Mal'Korak
 					["coord"] = { 34.4, 79.4, 1536 },
-					--["questID"] = ,
+					["questID"] = 58889,
+					["isDaily"] = true,
+					["g"] = {
+						ach(14308, crit(21)),	-- Adventurer of Maldraxxus / Warbringer Mal'Korak
+						i(182085),	-- Blisterback Bloodtusk
+					},
+				}),
+				n(162819, { -- Warbringer Mal'Korak
+					["coord"] = { 34.4, 79.4, 1536 },
+					["questID"] = 58889,
 					["isDaily"] = true,
 					["g"] = {
 						ach(14308, crit(21)),	-- Adventurer of Maldraxxus / Warbringer Mal'Korak

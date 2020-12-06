@@ -127,8 +127,8 @@ _.Zones =
 					crit(17, {	-- Tormentor's Notes
 						["provider"] = { "i", 183069 },	-- Tormentor's Notes
 						["questID"] = 63163,	-- Tormentor's Notes
-						-- ["crs"] = { },
-						-- ["coords"] = { },
+						["crs"] = { 173811 },	-- Subject 638
+						["coord"] = { 35.8, 45.5, 1543 },
 					}),
 					crit(18, {	-- Shadehound Armor Plating
 						["provider"] = { "i", 183057 },	-- Shadehound Armor Plating

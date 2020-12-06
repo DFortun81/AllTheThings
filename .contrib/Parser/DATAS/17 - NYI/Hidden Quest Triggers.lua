@@ -2985,7 +2985,7 @@ _.HiddenQuestTriggers =
 		q(61695),	--  /
 		q(61696),	-- /
 		q(61590),	-- Triggered after first time channeling anima to Glitterfall Basin
-		q(60722),	-- Triggered after turning in The Roots Thirst
+		-- q(60722),	-- Triggered after turning in The Roots Thirst [Wait what, this a Necrolords quest o_o]
 		q(59431),	-- Triggered when looting A Meandering Story
 
 		-- Bastion
@@ -3101,6 +3101,7 @@ _.HiddenQuestTriggers =
 		q(59222),	-- triggered during #57536, "Mirror Making, Not Breaking" when speaking to Laurent
 		q(62661),	-- Triggered during first completion of #58080 [Favor: Glittering Primrose Necklace]
 		q(62669),	-- Triggered during first completion of #58070 [Favor: Soul Hunter Blade]
+		q(60707),	-- When looting [The Venthyr Diaries] (173705)
 		q(60847),	-- Upon looting [Soul Hunter's Blade] (173707)
 		q(62641),	-- killing or looting Sabina during "Setting Sabina Free"
 		q(62671),	-- think this triggered when i turned in "Favor: Vial of Dredger Muck"
@@ -3137,13 +3138,14 @@ _.HiddenQuestTriggers =
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
 		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal"
 		q(61438),	-- triggered when turning in #61404, "Ember Court: Tubbins's Tea Party"
-		q(59506),	-- triggered when signing Tubbins's Contract
+		-- q(59506),	-- triggered when signing Tubbins's Contract (used on the item itself)
 		q(59507),	-- triggered when signing Tubbins's Contract
 		q(62813),	-- triggered when looting Atonement Crypt Key while on #60236, "RSVP: Cryptkeeper Kassir"
 		q(62814),	-- triggered when opening a crypt with the key
 		q(59409),	-- triggered when using the RSVP: Cryptkeeper Kassir item
 		q(59410),	-- triggered when using the RSVP: Cryptkeeper Kassir item
 		q(59493),	-- selecting "Atoning Rituals" as the Ember Court entertainment during the daily
+		q(59495),	-- when using Contract: Atoning Rituals (59594)
 		q(59505),	-- selecting "Tubbins's Tea Party" as the Ember Court refreshments during the daily
 		q(59440),	-- triggered when entering the Ember Court for the week
 		q(61927),	-- triggered when entering the Ember Court for the week
@@ -3213,7 +3215,7 @@ _.HiddenQuestTriggers =
 		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
 		q(61305),	-- triggered when completing #61313, "Champion: Kythekios"
 		q(58194),	-- Soulforges, layer 3, (Arch-Suppressor Laguas as boss)
-		q(58186),	-- looting Soul Ash from Custodian Thonar on Floor 6 of the Fracture Chambers
+		q(58186),	-- Fracture Chambers Layer 1
 		q(58187),	-- Fracture Chambers Layer 2
 		q(58188),	-- Fracture Chambers Layer 3
 		q(58204),	-- Mort'regar Layer 1

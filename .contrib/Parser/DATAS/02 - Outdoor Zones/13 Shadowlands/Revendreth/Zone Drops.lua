@@ -93,6 +93,11 @@ _.Zones =
 				i(183423),	-- Stone Legion Right Sabaton
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace
+				i(173705, {	-- The Venthyr Diaries
+					["questID"] = 58069,	-- Favor: The Venthyr Dairies
+					["isDaily"] = true,
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
+				}),
 				i(173709, {	-- Vial of Dredger Muck
 					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 					["description"] = "Drops from Dredger mobs and can be found in Revendreth treasure chests.",

@@ -156,6 +156,14 @@ _.Zones =
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 21.5, 41.7, 1648 },
 				}),
+				q(63045, {	-- Feed Your Soul
+					-- ["sourceQuests"] = {
+						-- TODO: Perdition's Hold Daily... requires some quest to unlock... rules #5 ?
+					-- },
+					["isDaily"] = true,
+					["provider"] = { "n", 175866 },	-- Vengeful Soul
+					["coord"] = { 25.2, 66.6, 1648 },
+				}),
 				q(59757, {	-- Field Seance
 					["sourceQuests"] = { 59756 },	-- A Moment's Respite
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine

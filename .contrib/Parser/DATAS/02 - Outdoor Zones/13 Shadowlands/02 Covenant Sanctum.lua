@@ -29,8 +29,10 @@ _.Zones =
 							["description"] = "Can be contained in any of the Calling rewards",
 							["g"] = {
 								-- guessing any box can reward the same set of conduits
+								i(181435),	-- Calcualted Strikes [Monk-Windwalker]
 								i(182136),	-- Chilled to the Core [Shaman-Enhance] 
 								i(182127),	-- Shake the Foundations [Shaman-Elemental]
+								i(181742),	-- Walk with the Ox [Monk-Brewmaster]
 							},
 						}),
 						-- Rare Quality Calling Rewards / Zone
@@ -43,8 +45,8 @@ _.Zones =
 							["description"] = "Rewarded by completing a Calling based in Revendreth",
 							["g"] = {
 								i(181224),	-- Avowed Arcanist's Staff
-								i(182136),	-- Chilled to the Core [Shaman-Enhance] / Source Drop
-								i(182127),	-- Shake the Foundations [Shaman-Elemental] / Source Drop
+								-- i(182136),	-- Chilled to the Core [Shaman-Enhance] / Source Drop
+								-- i(182127),	-- Shake the Foundations [Shaman-Elemental] / Source Drop
 							},
 						}),
 						i(181732, {	-- Tribute of the Ambitious / Maldraxxus
@@ -57,6 +59,8 @@ _.Zones =
 										i(184162),	-- Pestilent Necroray
 									}),
 								}),
+								-- i(181435),	-- Calcualted Strikes [Monk-Windwalker] / Source Drop
+								-- i(181742),	-- Walk with the Ox [Monk-Brewmaster] / Source Drop
 							},
 						}),
 						i(181372, {	-- Tribute of the Ascended / Bastion
@@ -81,6 +85,7 @@ _.Zones =
 						i(181733, {	-- Tribute of the Duty-Bound / Maldraxxus
 							["description"] = "Rewarded by completing a 'Challenges' Calling based in Maldraxxus",
 							["g"] = {
+								i(181705),	-- Celestial Effervescence
 							},
 						}),
 						i(181741, {	-- Tribute of the Paragon / Bastion
