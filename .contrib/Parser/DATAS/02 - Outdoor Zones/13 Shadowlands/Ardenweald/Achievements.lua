@@ -45,31 +45,9 @@ _.Zones =
 				ach(14353, {	-- Ardenweald's a Stage
 				--	TODO: you can't summon these without being in the Night Fae Covenant, but you *can* kill summoned mobs and get loot + achievement credit.
 				--	completing the achievement unlocks the ability to purchase the Silky Shimmermoth from Master Clerk Salorn, but you may need to be in the covenant to purchase it.  test?
+					["description"] = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
 					["coord"] = { 41.5, 44.8, 1565 },
 					["crs"] = { 171743 },	-- Dapperdew
-					["g"] = {
-						crit(1, {	-- Xavius
-							["crs"] = { 166146 },	-- Niya, As Xavius <Some Kind of Evil Sylvar>
-						}),
-						crit(2, {	-- Gul'dan
-							["crs"] = { 166140 },	-- Senthii, As Gul'dan <From an Alternate Timeline>
-						}),
-						crit(3, {	-- Kil'jaeden
-							["crs"] = { 166139 },	-- Glimmerdust, As Kil'jaeden <of The Burning Legion>
-						}),
-						crit(4, {	-- Argus, The Unmaker
-							["crs"] = { 166138 },	-- Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
-						}),
-						crit(5, {	-- Jaina
-							["crs"] = { 166142 },	-- Glimmerdust, As Jaina <A Magic Ice Princess>
-						}),
-						crit(6, {	-- Azshara
-							["crs"] = { 166135 },	-- Astra, As Azshara <An Infamous Queen>
-						}),
-						crit(7, {	-- N'Zoth
-							["crs"] = { 166145 },	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>
-						}),
-					},
 				}),
 				ach(14164, {	-- Awaken, Ardenweald
 					crit(1, {	-- Welcome to Ardenweald

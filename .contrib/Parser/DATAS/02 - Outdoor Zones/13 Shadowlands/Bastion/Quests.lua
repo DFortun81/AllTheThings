@@ -162,6 +162,10 @@ _.Zones =
 					["provider"] = { "n", 158862 },	-- Kleia
 					["coord"] = { 51.7, 81.0, 1533 },
 				}),
+				q(59262, {	-- Broken Wings
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, 1533 },
+				}),
 				q(58976, {	-- Chasing a Memory
 					["sourceQuests"] = { 57447 },	-- Purity's Prerogative
 					["provider"] = { "n", 156238 },	-- Kleia
@@ -925,10 +929,6 @@ _.Zones =
 					["coord"] = { 53.8, 73.8, 1533 },
 				}),
 				-- Glimmerfly toy/pet questline
-				q(59262, {	-- Broken Wings
-					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.82, 42.73, 1533 },
-				}),
 				q(59263, {	-- Feathers of Flight
 					["sourceQuests"] = { 59262 },	-- Broken Wings
 					["provider"] = { "n", 164640 },	-- Kowalskos

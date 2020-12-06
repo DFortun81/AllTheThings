@@ -323,6 +323,7 @@ t(142536);	-- Memory Cube
 t(153126);	-- Micro-Artillery Controller
 t(89205);	-- Mini Mana Bomb (Horde) No Longer Available
 t(46709);	-- MiniZep Controller
+t(184413);	-- Mnemonic Attunement Pane
 t(140324);	-- Mobile Telemancy Beacon
 t(40768);	-- MOLL-E (Engineering)
 t(163775);	-- Molok Morion

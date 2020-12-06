@@ -40,11 +40,13 @@ _.Zones =
 					},
 				}),
 				n(162711, {	-- Deadly Dapperling
-					["coord"] = { 76.8, 57.0, 1536 },
-					--["questID"] = ,
+					["questID"] = 58868,
 					["isDaily"] = true,
+					["coord"] = { 76.8, 57.0, 1536 },
 					["g"] = {
-						ach(14308, crit(17)),	-- Adventurer of Maldraxxus / Deadly Dapperling
+						crit(17, {	-- Deadly Dapperling
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 						i(184280),	-- Dapper Threads
 						i(181263),	-- Shy Melvin
 					},
@@ -230,7 +232,17 @@ _.Zones =
 					["description"] = "These mobs all spawn in the Theater of Pain, a free-for-all arena in the middle of Maldraxxus.",
 					["g"] = {
 						n(COMMON_BOSS_DROPS, {
-							i(184062),	-- Gnawed Reins of the Battle-Bound Warhound (MOUNT!)
+							i(184062, {	-- Gnawed Reins of the Battle-Bound Warhound (MOUNT!)
+								["crs"] = {
+									162873,	-- Azmogal
+									162875,	-- Devmorta
+									162880,	-- Mistress Dyrax
+									168147,	-- Sabriel the Bonecleaver
+									162874,	-- Ti'or
+									162853,	-- Unbreakable Urtz
+									162872,	-- Xantuth the Blighted
+								},
+							}),
 						}),
 						n(162873, {	-- Azmogal
 							crit(1, {	-- Azmogal
@@ -289,20 +301,13 @@ _.Zones =
 					},
 				}),
 				n(162819, { -- Warbringer Mal'Korak
-					["coord"] = { 34.4, 79.4, 1536 },
 					["questID"] = 58889,
 					["isDaily"] = true,
-					["g"] = {
-						ach(14308, crit(21)),	-- Adventurer of Maldraxxus / Warbringer Mal'Korak
-						i(182085),	-- Blisterback Bloodtusk
-					},
-				}),
-				n(162819, { -- Warbringer Mal'Korak
 					["coord"] = { 34.4, 79.4, 1536 },
-					["questID"] = 58889,
-					["isDaily"] = true,
 					["g"] = {
-						ach(14308, crit(21)),	-- Adventurer of Maldraxxus / Warbringer Mal'Korak
+						crit(21, {	-- Warbringer Mal'Korak
+							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
+						}),
 						i(182085),	-- Blisterback Bloodtusk
 					},
 				}),

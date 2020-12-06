@@ -96,6 +96,11 @@ _.Zones =
 					["provider"] = { "n", 159830 },	-- Au'narim
 					["coord"] = { 53.7, 47.5, 1536 },
 				}),
+				q(59828, {	-- Bet On Yourself (Ti'or)
+					["isWorldQuest"] = true,	-- shows up in /attwq without this even though there are no related collectibles
+					["provider"] = { "n", 159830 },	-- Au'narim
+					["coord"] = { 53.7, 47.5, 1536 },
+				}),
 				q(57982, {	-- Breaking Down Barriers
 					["sourceQuests"] = {
 						57986,	-- A Burden Worth Bearing
@@ -679,9 +684,9 @@ _.Zones =
 					-- Renown 5
 					-- House of Eyes
 					q(59555, {	-- Enemy at the Door
+						["sourceQuests"] = { 62448 },	-- Securing the House
 						["provider"] = { "n", 161907 },	-- Baroness Draka
 						["coord"] = { 49.6, 50.7, 1698 },
-						["sourceQuests"] = { 62448 },	-- Securing the House
 						["g"] = {
 							i(182077),		-- War-Bred Tauralus
 						},

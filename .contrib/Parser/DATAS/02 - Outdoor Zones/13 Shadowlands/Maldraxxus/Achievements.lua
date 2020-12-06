@@ -188,9 +188,10 @@ _.Zones =
 						["description"] = "On top of the mushroom.",
 					}),
 					crit(10, {	-- Glutharn's Stash
+						["description"] = "In a cave behind the slime waterfall.",
 						["objectID"] = 355947,	-- Glutharn's Stash
-						["coord"] = { 72.8, 53.6, 1536 },
 						["questID"] = 61484,
+						["coord"] = { 72.1, 52.7, 1536 },
 					}),
 					crit(11, {	-- Runespeaker's Trove
 						["objectID"] = 345456,	-- Runespeaker's Trove

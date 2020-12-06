@@ -20,15 +20,15 @@ _.Zones =
 						i(174445),	-- Glimmerfly Cocoon
 					},
 				}),
-				n(-940, {	-- Ascendend Council
-					["description"] = "You have to ring all 5 vespers within 5 minutes to summon the Ascended Council at 53.5, 88.3.",
+				n(-940,   {	-- Ascendend Council
+					["description"] = "You have to ring all 5 vespers within 5 minutes to summon the Ascended Council at |cFFFFFFFF53.5, 88.3|r.  The vespers are spread out all over the map, so this will require at least a couple people.",
 					["coords"] = {
-						{ 53.50, 88.37, 1533 },	-- The Ascended Council
-						{ 33.38, 59.77, 1533 },	-- Vesper of Courage
-						{ 71.87, 38.87, 1533 },	-- Vesper of Humility
-						{ 64.32, 69.80, 1533 },	-- Vesper of Purity
-						{ 39.13, 20.40, 1533 },	-- Vesper of Wisdom
-						{ 32.16, 17.82, 1533 },	-- Vesper of Loyalty
+						{ 53.5, 88.3, 1533 },	-- The Ascended Council
+						{ 33.3, 59.7, 1533 },	-- Vesper of Courage
+						{ 71.8, 38.8, 1533 },	-- Vesper of Humility
+						{ 64.3, 69.8, 1533 },	-- Vesper of Purity
+						{ 39.1, 20.4, 1533 },	-- Vesper of Wisdom
+						{ 32.1, 17.8, 1533 },	-- Vesper of Loyalty
 					},
 					["crs"] = { 
 						170834,	-- Champion of Purity
@@ -76,9 +76,9 @@ _.Zones =
 					},
 				}),
 				n(170659, { -- Basilofos, King of the Hill
-					["coord"] = { 48.4, 50.4, 1533 },
 					["questID"] = 60897,	-- TODO: 62158 triggered as well
 					["isDaily"] = true,
+					["coord"] = { 48.4, 50.4, 1533 },
 					["g"] = {
 						crit(11, {	-- Basilofos, King of the Hill
 							["achievementID"] = 14307,	-- Adventurer of Bastion
@@ -87,9 +87,9 @@ _.Zones =
 					},
 				}),
 				n(171189, { -- Bookkeeper Mnemis
-					["coord"] = { 57.2, 62.4, 1533 },
-					["questID"] = 59022,	-- 62167 also triggered (adding to HQT for now)
+					["questID"] = 59022,
 					["isDaily"] = true,
+					["coord"] = { 57.2, 62.4, 1533 },
 					["g"] = {
 						crit(21, {	-- Bookkeeper Mnemis
 							["achievementID"] = 14307,	-- Adventurer of Bastion
@@ -99,15 +99,14 @@ _.Zones =
 				}),
 				n(170932, { -- Cloudfeather Guardian
 					["description"] = "If the rare is not attackable, you can kill Anima-Starved Cloudfeathers in the area to provoke it.",
-					["questID"] = 60978,	-- Both procced on kill
-					--["questID"] = 62191,
+					["questID"] = 60978,
 					["isDaily"] = true,
 					["coord"] = { 50.6, 59.6, 1533 },
 					["g"] = {
 						crit(13, {	-- Cloudfeather Guardian
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
-						i(180812),	-- Golden Teroclaw
+						i(180812),	-- Golden Teroclaw (PET!)
 					},
 				}),
 				n(161530, { -- Cloudtail
@@ -124,7 +123,7 @@ _.Zones =
 					},
 				}),
 				n(171014, { -- Collector Astorestes
-					["description"] = "First, read the 6 chapters of Mercia's Legacy.\n\nChapter One - 66.1, 44.1, on a small table with two vases.\nChapter Two - 65.9, 44.1, on a bench.\nChapter Three - 65.7, 43.9, behind a bench.\nChapter Four - 65.7, 43.4, on the lower-left shelf.\nChapter Five - 65.9, 43.2, to the right of the bench.\nChapter Six - 66.2, 43.2, on the lower-right corner of the table.\n\nSpeak to the Echo of Mercia, and she will give you a 5-minute buff allowing you to find the secret 7th chapter of the story.  It will be outside the main temple room; just look at all the tables until you find a glowing purple scroll.\n\nPick up the 7th chapter scroll, bring it to the Echo of Mercia, and the rare will appear.",
+					["description"] = "First, read the 6 chapters of Mercia's Legacy in order.\n\nChapter One - |cFFFFFFFF66.1, 44.1|r, on a small table with two vases.\nChapter Two - |cFFFFFFFF65.9, 44.1|r, on a bench.\nChapter Three - |cFFFFFFFF65.7, 43.9|r, behind a bench.\nChapter Four - |cFFFFFFFF65.7, 43.4|r, on the lower-left shelf.\nChapter Five - |cFFFFFFFF65.9, 43.2|r, to the right of the bench.\nChapter Six - |cFFFFFFFF66.2, 43.2|r, on the lower-right corner of the table.\n\nSpeak to the Echo of Mercia, and she will give you a 5-minute buff allowing you to find the secret 7th chapter of the story.  It will be outside the main temple room; just look at all the tables until you find a glowing purple scroll.\n\nPick up the 7th chapter scroll, bring it to the Echo of Mercia, and the rare will appear.",
 					["questID"] = 61002,
 					["isDaily"] = true,
 					["coord"] = { 66.0, 43.6, 1533 },
@@ -133,7 +132,12 @@ _.Zones =
 						crit(19, {	-- Collector Astorestes
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
+						i(183606),	-- Bulwark of Echoing Courage
+						i(184295),	-- Eternal Daybreak Necklace
+						i(183608),	-- Evernote Vesper
 						i(183614),	-- Gavel of Harmonious Wisdom
+						i(183611),	-- Humble Ophelia's Greatblade
+						i(183604),	-- Piercing Timbre Crossbow
 						i(180569),	-- Mercia's Legacy: Chapter Seven (so the item is associated with the rare)
 					},
 				}),
@@ -163,16 +167,27 @@ _.Zones =
 						crit(12, {	-- Dark Watcher
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
+						i(184297),	-- Death Warden's Greatblade
 					},
 				}),
 				n(171011, { -- Demi the Relic Hoarder
-					["coord"] = { 38.8, 40.8, 1533 },
-					--["questID"] = ,
+					["description"] = "As soon as Demi is pulled, she will start running east.  She will pull additional Forsworn mobs for you to contend with, and she has 100 stacks of a buff that causes her to take reduced damage.  The stacks drop each time she is attacked, so she will take progressively more damage.  Upon defeat, she drops the treasure she is holding.\n\nThis rare is soloable, but having decent gear and at least one more person may be helpful — if Demi makes it to safety, she will despawn.",
+					["questID"] = 61000,
 					["isDaily"] = true,
+					["coord"] = { 37.0, 41.8, 1533 },
 					["g"] = {
 						crit(20, {	-- Demi the Relic Hoarder
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
+						i(183606),	-- Bulwark of Echoing Courage
+						i(183608),	-- Evernote Vesper
+						i(183614),	-- Gavel of Harmonious Wisdom
+						i(183613),	-- Glinting Daybreak Dagger
+						i(183611),	-- Humble Ophelia's Greatblade
+						i(183612),	-- Loyal Champion's Hammer
+						i(183604),	-- Piercing Timbre Crossbow
+						i(183609),	-- Re-Powered Golliath Fists
+						i(183607),	-- Uncertain Aspirant's Spear
 					},
 				}),
 				n(163460, { -- Dionae
@@ -185,7 +200,7 @@ _.Zones =
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
 						o(344588, {	-- Stewart's Stewpendous Stew
-							i(180856)	-- Silvershell Snapper
+							i(180856)	-- Silvershell Snapper (PET!)
 						}),
 					},
 				}),
@@ -240,11 +255,12 @@ _.Zones =
 					},
 				}),
 				n(156340, { -- Larionrider Orstus
-					--["coord"] = { 43.0, 82.6, 1533 },
-					--["questID"] = ,
+					["description"] = "Take the anima gateway and click the Black Bell.  Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Citadel of Loyalty can click the bell.",
 					["isDaily"] = true,
+					["coord"] = { 24.5, 22.7, 1533 },
+					--["questID"] = ,
 					["g"] = {
-						i(184401),	-- Larion Pouncer
+						i(184401),	-- Larion Pouncer (PET!)
 					},
 				}),
 				n(161529, { -- Nemaeus
@@ -330,8 +346,24 @@ _.Zones =
 						{ 63.4, 36.0, 1533 },
 					},
 					["g"] = {
+						n(COMMON_BOSS_DROPS, {
+							i(180869, {	-- Devoured Wader (PET!)
+								["crs"] = {
+									171013,	-- Embodied Hunger
+									171041,	-- Worldfeaster Chronn
+									171040,	-- Xixin the Ravening
+								},
+							}),
+							i(183605, {	-- Devourer Wrought Warglaive
+								["crs"] = {
+									171013,	-- Embodied Hunger
+									171041,	-- Worldfeaster Chronn
+									171040,	-- Xixin the Ravening
+								},
+							}),
+						}),
 						n(171013, { -- Embodied Hunger
-							--["questID"] = ,
+						--	["questID"] = ,
 							["isDaily"] = true,
 							["g"] = {
 								crit(16, {	-- Embodied Hunger
@@ -339,8 +371,17 @@ _.Zones =
 								}),
 							},
 						}),
+						n(171041, { -- Worldfeaster Chronn
+						--	["questID"] = ,
+							["isDaily"] = true,
+							["g"] = {
+								crit(18, {	-- Worldfeaster Chronn
+									["achievementID"] = 14307,	-- Adventurer of Bastion
+								}),
+							},
+						}),
 						n(171040, { -- Xixin the Ravening
-							--["questID"] = ,
+						--	["questID"] = ,
 							["isDaily"] = true,
 							["g"] = {
 								crit(17, {	-- Xixin the Ravening
@@ -348,28 +389,19 @@ _.Zones =
 								}),
 							},
 						}),
-						n(171041, { -- Worldfeaster Chronn
-							--["questID"] = ,
-							["isDaily"] = true,
-							["g"] = {
-								crit(18, {	-- Worldfeaster Chronn
-									["achievementID"] = 14307,	-- Adventurer of Bastion
-								}),
-								i(180869),	-- Devoured Wader
-							},
-						}),
 					},
 				}),
 				n(171008, { -- Unstable Memory
 					["description"] = "Get aggro on an Unstable Memory Fragment, drag it through more fragments until the mob has 10 stacks of Instability, and it will turn into the rare.\n\nIf Unstable Memory Fragments are not up, the rare is not available to summon.",
-					["coord"] = { 43.4, 25.2, 1533 },
 					["questID"] = 60997,
 					["isDaily"] = true,
+					["coord"] = { 43.4, 25.2, 1533 },
 					["crs"] = { 171018 },	-- Unstable Memory Fragment
 					["g"] = {
 						crit(15, {	-- Unstable Memory
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
+						i(184413),	-- Mnemonic Attunement Pane (TOY!)
 					},
 				}),
 				n(167078, { -- Wingflayer the Cruel

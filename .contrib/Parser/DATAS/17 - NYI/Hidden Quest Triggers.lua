@@ -3020,6 +3020,7 @@ _.HiddenQuestTriggers =
 		q(62167),	-- Bookkeeper Mnemis secondary quest along with 59022
 		q(62191),	-- Cloudfeather Guardian secondary quest
 		q(63424),	-- Cloudtail secondary quest
+		i(61069),	-- Demi the Relic Hoarder secondary quest
 		q(61802),	-- Echo of Aella kill quest
 		q(62251),	-- Echo of Aella secondary loot quest
 		q(57705),	-- Herculon kill quest

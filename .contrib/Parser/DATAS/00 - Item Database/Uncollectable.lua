@@ -40,6 +40,7 @@ i(181550);	-- Hopebreaker's Field Injector
 i(181377);	-- Illustrated Combat Meditation Aid
 i(184307);	-- Maldraxxi Armor Scraps
 i(184305);	-- Maldraxxi Champion's Armaments
+i(181546);	-- Mature Cryptbloom
 i(184387);	-- Misty Shimmerleaf
 i(184315);	-- Multi-Modal Anima Container
 i(184360);	-- Musings on Repetition
