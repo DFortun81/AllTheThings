@@ -534,6 +534,7 @@ _.Zones =
 					["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
 					["coord"] = { 49.2, 52.2, 1565 },
 					["sourceQuests"] = { 62763 },	-- Support the Court
+					["lvl"] = { 48, 59 },
 				}),
 				-- Bastion
 				q(62729, {	-- Return to Oribos
@@ -541,6 +542,7 @@ _.Zones =
 					["provider"] = { "n", 159478 },	-- Kalisthene
 					["coord"] = { 51.1, 43.7, 1533 },
 					["sourceQuests"] = { 62723 },	-- Bolstering Bastion
+					["lvl"] = { 48, 59 },
 				}),
 				-- Maldraxxus
 				q(62761, {	-- Return to Oribos
@@ -548,6 +550,7 @@ _.Zones =
 					["provider"] = { "n", 175008 },	-- Secutor Mevix
 					["coord"] = { 52.8, 68.2, 1536 },
 					["sourceQuests"] = { 62748 },	-- Rallying Maldraxxus
+					["lvl"] = { 48, 59 },
 				}),
 				-- Revendreth
 				q(62779, {	-- Return to Oribos
@@ -561,6 +564,7 @@ _.Zones =
 						{ 61.4, 60.2, 1525 },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 					},
 					["sourceQuests"] = { 62778 },	-- Reinforcing Revendreth
+					["lvl"] = { 48, 59 },
 				}),
 
 				-- Covenant Travel Quests
