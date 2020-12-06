@@ -129,12 +129,6 @@ _.Zones =
 					["questID"] = 60981,
 					["isDaily"] = true,
 					["coord"] = { 66.4, 65.4, 1525 },
-					["g"] = {
-					--	TODO: is this quest specific to this object?
-						i(182728, {	-- A Crate of Sinvyr Ore
-							["questID"] = 62184,	-- A Crate of Sinvyr Ore
-						}),
-					},
 				}),
 				o(354189, {	-- Stoneborn Satchel
 					["altQuests"] = { 60982 },	-- shrug emoji, had these coordinates+this name linked up with two separate questIDs, so who knows what's going on there
@@ -165,6 +159,12 @@ _.Zones =
 					["questID"] = 60944,
 					["isDaily"] = true,
 					["coord"] = { 57.7, 29.4, 1525 },
+				}),
+				o(1278968753, {	-- Stoneborn Satchel
+				--	TODO: fix objectID when data is available
+					["questID"] = 60852,	-- also triggered 60940, put that one in HQT
+					["isDaily"] = true,
+					["coord"] = { 76.6, 51.0, 1525 },
 				}),
 			}),
 		}),

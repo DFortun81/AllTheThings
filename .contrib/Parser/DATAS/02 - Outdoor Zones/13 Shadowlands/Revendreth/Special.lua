@@ -64,7 +64,7 @@ _.Zones =
 						}),
 						i(182599, {	-- Bucket of Clean Water
 							["description"] = "Day 4: Pick up the |cFFFFFFFFEmpty Water Bucket|r in Revendreth, and fill it in either Bastion or Ardenweald.",
-						--	["questID"] = ,
+							["questID"] = 62049,
 							["coord"] = { 63.2, 61.5, 1525 },
 							["cost"] = { { "i", 182620, 1 } },	-- 1x Empty Water Bucket
 						}),

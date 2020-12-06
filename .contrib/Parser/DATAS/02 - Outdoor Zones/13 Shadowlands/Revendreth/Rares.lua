@@ -95,13 +95,16 @@ _.Zones =
 					},
 				}),
 				n(166521, {	-- Famu the Infinite
-					["coord"] = { 62.6, 47.2, 1525 },
 					["questID"] = 59869,
 					["isDaily"] = true,
+					["coord"] = { 62.6, 47.2, 1525 },
 					["crs"] = { 166483 },	-- Seeker Hilda
 					["g"] = {
+						crit(15, {	-- Famu the Infinite
+							["achievementID"] = 14310,	-- Adventurer of Revendreth
+						}),
 						i(180582),	-- Endmire Flyer Tether
-						ach(14310, crit(15)),	-- Adventurer of Revendreth / Famu the Infinite
+						i(183739),	-- Endmire Wristwarmers
 					},
 				}),
 				n(159496, {	-- Forgemaster Madalav

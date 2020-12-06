@@ -9,11 +9,23 @@ _.Zones =
 			n(-903, {	-- Zone Rewards
 				["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
 				["g"] = {
+					i(182728, {	-- A Crate of Sinvyr Ore
+						["questID"] = 62184,	-- A Crate of Sinvyr Ore
+						["isDaily"] = true,
+					}),
 					i(182727, {	-- A Leaking Package
 						["questID"] = 62183,	-- A Leaking Box Marked Perishable
 						["isDaily"] = true,
 					}),
-					i(180453, {	-- Favor: She Had a Stone Heart
+					i(182726, {	-- Nadja's Letter
+						["questID"] = 62182,	-- A Letter From Nadja
+						["isDaily"] = true,
+					}),
+					i(173710, {	-- Petrified Stonefiend
+						["questID"] = 58072,	-- Favor: Petrified Stonefiend
+						["isDaily"] = true,
+					}),
+					i(180453, {	-- She Had a Stone Heart
 						["questID"] = 60889,	-- Favor: She Had a Stone Heart
 						["isDaily"] = true,
 					}),
@@ -31,10 +43,6 @@ _.Zones =
 							158193,	-- Manor Servant
 							159495,	-- Mire Dredger
 						},
-					}),
-					i(182726, {	-- Nadja's Letter
-						["questID"] = 62182,	-- A Letter From Nadja
-						["isDaily"] = true,
 					}),
 					i(181208),	-- Anima-Infused Muck
 					i(181224),	-- Avowed Arcanist's Staff

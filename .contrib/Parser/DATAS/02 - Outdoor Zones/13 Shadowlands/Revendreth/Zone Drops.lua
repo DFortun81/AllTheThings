@@ -58,9 +58,9 @@ _.Zones =
 				i(179333),	-- Inquisitor Cudgel
 				i(177809),	-- Lithe Rapier
 				i(173721, {	-- Love and Terror
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 					["questID"] = 58081,
 					["isDaily"] = true,
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 				}),
 				i(183417),	-- Mail Courier's Right Runner
 				i(182725),	-- Mail Courier's Wristguards
@@ -72,6 +72,20 @@ _.Zones =
 				i(177788),	-- Night Guardian Helm
 				i(177792),	-- Night Guardian Legguards
 				i(177793),	-- Night Guardian Pauldrons
+				i(173719, {	-- Pristine Dredbat Fang
+					["questID"] = 58079,	-- Favor: Pristine Dredbat Fang
+					["isDaily"] = true,
+					["crs"] = {
+						169154,	-- Famished Fangling
+						161206,	-- Fanged Dredbat
+						163893,	-- Fanged Dredbat
+						161207,	-- Fangling
+						156077,	-- Fiendish Terrorwing
+						165290,	-- Harika the Horrid
+						158976,	-- Shrieking Evedweller
+						156395,	-- Starving Dredbat
+					},
+				}),
 				i(177812),	-- Redelv House Band
 				i(177808),	-- Reinforced Rapier
 				i(183430),	-- Researcher's Right Slipper
@@ -86,9 +100,9 @@ _.Zones =
 				i(177781),	-- Savage Bonemauler Striders
 				i(177801),	-- Sky Legion Halbard
 				i(173707, {	-- Soul Hunter's Blade
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 					["questID"] = 58070,
 					["isDaily"] = true,
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 				}),
 				i(183423),	-- Stone Legion Right Sabaton
 				i(177799),	-- Stoneborn Shield

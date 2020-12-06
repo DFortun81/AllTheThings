@@ -45,6 +45,7 @@ i(184387);	-- Misty Shimmerleaf
 i(184315);	-- Multi-Modal Anima Container
 i(184360);	-- Musings on Repetition
 i(184386);	-- Nascent Sporepod
+i(184775);	-- Necromancy for the Practical Ritualist
 i(181547);	-- Noble's Draught
 i(181642);	-- Novice Principles of Plaguistry
 i(181743);	-- Plume of the Archon

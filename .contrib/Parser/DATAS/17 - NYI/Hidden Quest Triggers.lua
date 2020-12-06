@@ -3107,18 +3107,22 @@ _.HiddenQuestTriggers =
 		q(62641),	-- killing or looting Sabina during "Setting Sabina Free"
 		q(62671),	-- think this triggered when i turned in "Favor: Vial of Dredger Muck"
 		q(58107),	-- triggered when opening a crypt while on "Atonement Crypt Key"
+		q(60703),	-- triggered when looting Pristine Dredbat Fang
+		q(62667),	-- triggered when turning in #58079, Favor: Pristine Dredbat Fang
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
 		q(60583),	-- Tollkeeper Varaboss secondary quest
 		-- Revendreth Treasures
-		q(60954),	-- secondary questID when looting Pugilist's Prize (35.8, 67.5)
+		q(60954),	-- secondary questID when looting Pugilist's Prize (35.8, 67.5 location only)
+		q(60940),	-- secondary questID when looting Stoneborn Satchel (76.6, 51.0 location only)
 		-- Revendreth WQs
 		q(59858),	-- Tea Tales: Theotar Achievement criteria
 		q(59861),	-- Tea Tales: Theotar Achievement criteria
 		q(60701),	-- triggered when completing #60653, "Mirror Restoration"
 		q(59857),	-- triggered when completing Tea Tales: Vulca
 		q(59859),	-- triggered when completing Tea Tales: Gubbins and Tubbins
+		q(59860),	-- triggered when completing Tea Tales: Lost Sybille
 		-- Venthyr Covenant
 		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
@@ -3133,8 +3137,8 @@ _.HiddenQuestTriggers =
 		q(60304),	-- Channeling Anima Conduit to Crypt of the Forgotten
 		q(63237),	-- Completing 1st 'Campaign Adventure'
 		q(63260),	-- Completing 1st 'Campaign Adventure'
-		q(63242),	-- Completing 2nd 'Campaign Adventure'
-		q(63323),	-- Completing 2nd 'Campaign Adventure'
+		q(63242),	-- Completing 2nd 'Campaign Adventure' — this was the 1st one i completed, it was "Campaign: Stacka's Last Stand"
+		q(63323),	-- Completing 2nd 'Campaign Adventure' — this was the 1st one i completed, it was "Campaign: Stacka's Last Stand"
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
 		q(59635),	-- triggered when turning in #59661, "Ember Court Rehearsal"
@@ -3167,6 +3171,7 @@ _.HiddenQuestTriggers =
 		q(59419),	-- triggered when using "RSVP: Kleia and Pelagos"
 		q(59503),	-- triggered when using "Contract: Divine Desserts"
 		q(59504),	-- triggered when using "Contract: Divine Desserts"
+		q(62668),	-- after looting a Dirty Glinting Object -- someone on discord got this when turning in Favor: She Had a Stone Heart, but i did not
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
