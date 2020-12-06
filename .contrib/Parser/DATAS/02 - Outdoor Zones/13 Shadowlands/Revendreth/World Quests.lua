@@ -42,6 +42,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61621, {	-- Cooking: Skewered Meats
+					["requireSkill"] = COOKING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60532, {	-- Destroy the Dominant
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
