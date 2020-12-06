@@ -74,6 +74,8 @@ _.Zones =
 						i(181557, {	-- Favor of the Court / Revendreth
 							["description"] = "Rewarded by completing a 'Challenges' Calling based in Revendreth",
 							["g"] = {
+								i(176850),	-- Blank Invitation
+								i(182348),	-- Lavish Harvest
 							},
 						}),
 						i(181733, {	-- Tribute of the Duty-Bound / Maldraxxus
