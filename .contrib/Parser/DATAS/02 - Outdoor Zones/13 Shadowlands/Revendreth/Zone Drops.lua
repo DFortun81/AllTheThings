@@ -48,14 +48,19 @@ _.Zones =
 				i(179329),	-- Gargoyle Heartpiercer
 				i(182690),	-- Gilded Crusader's Morningstar
 				i(173720, {	-- Glittering Primrose Necklace
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 					["questID"] = 58080,	-- Favor: Glittering Primrose Necklace
 					["isDaily"] = true,
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 				}),
 				i(177802),	-- Hopebreaker Carbine
 				i(177813),	-- Hopebreaker's Badge
 				i(183420),	-- Hopebreaker's Right Boot
 				i(179333),	-- Inquisitor Cudgel
+				i(173712, {	-- Ledger of Souls
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
+					["questID"] = 58074,
+					["isDaily"] = true,
+				}),
 				i(177809),	-- Lithe Rapier
 				i(173721, {	-- Love and Terror
 					["sourceQuests"] = { 58062 },	-- A Very Special Guest
@@ -73,6 +78,7 @@ _.Zones =
 				i(177792),	-- Night Guardian Legguards
 				i(177793),	-- Night Guardian Pauldrons
 				i(173719, {	-- Pristine Dredbat Fang
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 					["questID"] = 58079,	-- Favor: Pristine Dredbat Fang
 					["isDaily"] = true,
 					["crs"] = {
@@ -108,9 +114,9 @@ _.Zones =
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace
 				i(173705, {	-- The Venthyr Diaries
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 					["questID"] = 58069,	-- Favor: The Venthyr Dairies
 					["isDaily"] = true,
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 				}),
 				i(173709, {	-- Vial of Dredger Muck
 					["sourceQuests"] = { 58062 },	-- A Very Special Guest

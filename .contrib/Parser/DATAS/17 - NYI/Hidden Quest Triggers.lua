@@ -3108,6 +3108,7 @@ _.HiddenQuestTriggers =
 		q(62671),	-- think this triggered when i turned in "Favor: Vial of Dredger Muck"
 		q(58107),	-- triggered when opening a crypt while on "Atonement Crypt Key"
 		q(60703),	-- triggered when looting Pristine Dredbat Fang
+		q(62662),	-- triggered when turning in #58074, Favor: Ledger of Souls
 		q(62667),	-- triggered when turning in #58079, Favor: Pristine Dredbat Fang
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest

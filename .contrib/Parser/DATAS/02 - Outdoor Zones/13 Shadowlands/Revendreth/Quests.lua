@@ -45,7 +45,7 @@ _.Zones =
 				}),
 				q(58062, {	-- A Very Special Guest
 					["sourceQuests"] = { 58060 },	-- The Night Market
-					["description"] = "Unlocks the Black Market Auction House.",
+					["description"] = "Unlocks the Black Market Auction House and item drops for Favor quests.",
 					["provider"] = { "n", 160091 },	-- Ta'ruca
 					["coord"] = { 51.0, 78.6, 1525 },
 				}),
