@@ -1153,8 +1153,8 @@ app.L = {
 		[-133] = "Duskwood "..GetSpellInfo(78741),								-- Duskwood Activated
 --Invasions
 		[-136] = GARRISON_LANDING_INVASION,										-- Garrison Invasion
-		[-137] = string.format(SPELLBOOK_AVAILABLE_AT, 90),						-- Level 90
-		[-138] = string.format(SPELLBOOK_AVAILABLE_AT, 100),					-- Level 100
+		[-137] = "Level 90",													-- Level 90
+		[-138] = "Level 100",													-- Level 100
 		[-139] = RAID_BOSSES,													-- Bosses
 -- Class Trial Sets
 		[-140] = "Communal",
@@ -1170,8 +1170,8 @@ app.L = {
 		[-150] = "Trailseeker",
 		[-152] = "Garrison Campaign",
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
-		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
-		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 120),					-- Level 120
+		[-154] = "Level 110",													-- Level 110
+		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50),						-- Level 50 (old Level 120)
 		[-157] = "The Hinterlands "..GetSpellInfo(78741),						-- The Hinterlands Activated
 		[-158] = "Feralas "..GetSpellInfo(78741),								-- Feralas Activated
 		[-159] = "Event Roll",													-- Daily Dreamway Event Roll
