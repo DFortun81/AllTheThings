@@ -3086,6 +3086,8 @@ _.HiddenQuestTriggers =
 		q(61988),	-- Indomitable Schmitd secondary quest
 		q(61992),	-- Pesticide secondary quest
 		q(61986),	-- Tahonta secondary quest
+		-- Maldraxxus treasures
+		q(61720),	-- when opening Plaguefallen Chest (61474)
 		-- Maldraxxus WQs
 		q(62948),	-- "learning" the quest items while on #61615, "Tailoring: Haunting Hood"
 		q(57242),	-- triggered when completing #57205, "A Few Bumps Along the Way"

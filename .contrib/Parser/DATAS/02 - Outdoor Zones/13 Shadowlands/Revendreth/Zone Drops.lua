@@ -62,6 +62,21 @@ _.Zones =
 				i(177788),	-- Night Guardian Helm
 				i(177792),	-- Night Guardian Legguards
 				i(177793),	-- Night Guardian Pauldrons
+				i(173719, {	-- Pristine Dredbat Fang
+					["sourceQuests"] = { 58062 },	-- A Very Special Guest
+					["questID"] = 58079,	-- Favor: Pristine Dredbat Fang
+					["isDaily"] = true,
+					["crs"] = {
+						169154,	-- Famished Fangling
+						161206,	-- Fanged Dredbat
+						163893,	-- Fanged Dredbat
+						161207,	-- Fangling
+						156077,	-- Fiendish Terrorwing
+						165290,	-- Harika the Horrid
+						158976,	-- Shrieking Evedweller
+						156395,	-- Starving Dredbat
+					},
+				}),
 				i(177812),	-- Redelv House Band
 				i(177808),	-- Reinforced Rapier
 				i(183430),	-- Researcher's Right Slipper

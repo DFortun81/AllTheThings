@@ -348,12 +348,13 @@ _.Zones =
 						i(180583, {	-- Impressionable Gorger Spawn
 							i(182589),	-- Loyal Gorger (MOUNT!)
 						}),
-						n(160815, {	-- Encroaching Gorger
-							["description"] = "Drops |cff1eff00Enticing Anima|r",
-							["g"] = {
-								i(173939),	-- Enticing Anima
+						i(173939, {	-- Enticing Anima
+							["description"] = "Used to summon the Worldedge Gorger",
+							["crs"] = {
+								159676,	-- Animus Mite
+								160815,	-- Encroaching Gorger
 							},
-						})
+						}),
 					},
 				}),
 			}),

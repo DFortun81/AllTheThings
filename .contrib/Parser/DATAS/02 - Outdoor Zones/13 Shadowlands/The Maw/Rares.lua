@@ -227,7 +227,7 @@ _.Zones =
 					},
 				}),
 				n(170303, {	-- Exos, Herald of Domination
-				--	["questID"] = 61125,	-- Malevolent Stygia
+					["questID"] = 62260,
 					["isDaily"] = true,
 					["cost"] = { { "i", 182329, 1 } },	-- 1x 182329
 					["coord"] = { 21.0, 70.2, 1543 },

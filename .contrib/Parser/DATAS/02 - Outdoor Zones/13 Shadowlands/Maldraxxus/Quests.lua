@@ -720,6 +720,10 @@ _.Zones =
 						i(181638),	-- Gorewrought Drape [monk]
 					},
 				}),
+				q(62741, {	-- Choice of Action (pre-60)
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				}),
 				q(62743, {	-- Decaying Situation (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
