@@ -473,7 +473,7 @@ _.Zones =
 				-- Ardenweald
 				q(62763, {	-- Support the Court
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["description"] = "Auto-accepted if entering the zone prior to completion of its breadcrumbs",
+					["description"] = "Auto-accepted if entering Ardenweald after choosing a different Zone",
 					["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
 					["coord"] = { 49.2, 52.2, 1565 },
 					["sourceQuests"] = {
@@ -488,7 +488,7 @@ _.Zones =
 				-- Bastion
 				q(62723, {	-- Bolstering Bastion
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["description"] = "Auto-accepted if entering the zone prior to completion of its breadcrumbs",
+					["description"] = "Auto-accepted if entering Bastion after choosing a different Zone",
 					["provider"] = { "n", 163427 },	-- Kalisthene
 					["coord"] = { 51.1, 43.7, 1533 },
 					["sourceQuests"] = {
@@ -502,7 +502,7 @@ _.Zones =
 				-- Maldraxxus
 				q(62748, {	-- Rallying Maldraxxus
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["description"] = "Auto-accepted if entering the zone prior to completion of its breadcrumbs",
+					["description"] = "Auto-accepted if entering Maldraxxus after choosing a different Zone",
 					["provider"] = { "n", 175008 },	-- Secutor Mevix
 					["coord"] = { 52.8, 68.2, 1536 },
 					["sourceQuests"] = {
@@ -519,7 +519,7 @@ _.Zones =
 				-- Revendreth
 				q(62778, {	-- Reinforcing Revendreth
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["description"] = "Auto-accepted if entering the zone prior to completion of its breadcrumbs",
+					["description"] = "Auto-accepted if entering Revendreth after choosing a different Zone",
 					["providers"] = {
 						{ "n", 158653 },	-- Prince Renathal [in Sinfall, for Venthyr]
 						{ "n", 175056 },	-- Prince Renathal [at Darkhaven, for non-Venthyr]

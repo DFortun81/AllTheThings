@@ -402,8 +402,9 @@ _.Zones =
 						},
 					}),
 					crit(9, {	-- Windsmith's Tools
-						--["objectID"] = ,	-- The Necronom-i-nom
+						["objectID"] = 354289,	-- Windsmith's Tools
 						["coord"] = { 35.8, 48.1, 1533 },
+						["cost"] = { { "i", 180536, 1 } },	-- 1x Broken Kyrian Flute
 						["questID"] = 61053,
 						["description"] = "The |cff0070ddBroken Kyrian Flute|r drops from |cFFFFFFFFUnsettled Etherwyrm|r fying around the treasure after you got it use the |cFFFFFFFFWindsmith's Tools|r to restore the flute.",
 						["g"] = {

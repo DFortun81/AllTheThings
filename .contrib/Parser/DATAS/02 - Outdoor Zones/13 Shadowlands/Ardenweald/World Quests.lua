@@ -67,6 +67,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61530, {	-- Mining: Ligneous Phaedrum Cluster
+					["requireSkill"] = MINING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61946, {	-- Natural Defenders
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

@@ -803,9 +803,16 @@ _.Zones =
 				}),
 				
 				-- Bonus Objectives
+				q(62773, {	-- Dreamshrine Basin (pre-60)
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				}),
 				q(62775, {	-- The Waning Grove (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					-- ["icon"] = 1001982,	-- Bonus Objective... need a different icon imo, or new tag for 'on your map, static quests'
+					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				}),
+				q(62774, {	-- Tranquil Pools (pre-60)
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 			}),

@@ -29,6 +29,7 @@ _.Zones =
 							["description"] = "Can be contained in any of the Calling rewards",
 							["g"] = {
 								-- guessing any box can reward the same set of conduits
+								i(181770),	-- Bone Marrow Hops [Monk]
 								i(181435),	-- Calcualted Strikes [Monk-Windwalker]
 								i(182136),	-- Chilled to the Core [Shaman-Enhance] 
 								i(181508),	-- Fortifying Ingredients [Monk-Brewmaster]
@@ -70,6 +71,7 @@ _.Zones =
 						i(181372, {	-- Tribute of the Ascended / Bastion
 							["description"] = "Rewarded by completing a Calling based in Bastion",
 							["g"] = {
+								-- i(181770),	-- Bone Marrow Hops [Monk] / Source Drop
 							},
 						}),
 
