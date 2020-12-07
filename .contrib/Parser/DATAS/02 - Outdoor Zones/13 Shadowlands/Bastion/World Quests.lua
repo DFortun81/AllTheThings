@@ -15,6 +15,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(60623, {	-- AHHH! Real Monsters!
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61148, {	-- AHHH! Real Monsters!
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

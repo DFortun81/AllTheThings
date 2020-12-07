@@ -160,12 +160,11 @@ _.Zones =
 						}),
 						q(60422, {	-- A Call to Ardenweald
 							["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-							["provider"] = { "n", 158653 },	-- Prince Renathal
-							["coord"] = { 51.8, 37.5, 1699 },
 							["repeatable"] = true,
+							["provider"] = { "n", 158653 },	-- Prince Renathal
+							["coord"] = { 51.2, 37.7, 1699 },
 							["g"] = {
-								i(181556),	-- Tribute of the Court
-								i(181475),	-- Bounty of the Grovewardens [Live Reward]
+								i(181475),	-- Bounty of the Grovewardens
 							},
 						}),
 						q(60427, {	-- A Call to Bastion

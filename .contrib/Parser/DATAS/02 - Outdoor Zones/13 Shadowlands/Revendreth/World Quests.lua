@@ -63,6 +63,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61630, {	-- Enchanting: Everburning Brand
+					["requireSkill"] = ENCHANTING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61885, {	-- Eyegor's Special Friends
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

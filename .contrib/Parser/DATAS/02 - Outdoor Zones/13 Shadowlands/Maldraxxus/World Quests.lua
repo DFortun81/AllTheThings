@@ -102,6 +102,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61539, {	-- Liches Get Stitches
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61866, {	-- Mighty Minions of Maldraxxus
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
