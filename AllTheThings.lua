@@ -1230,6 +1230,12 @@ local PrintQuestInfo = function(questID, new, info)
 			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
 				return true;
 			end
+			-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
+			-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet  .. select(1, EJ_GetEncounterInfo(group.encounterID)) .. 
+			-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
+			if searchResults[1].parent and searchResults[1].parent.parent.text == "Hidden Quest Triggers" then
+				questID = questID .. " [HQT]";
+			end
 		end
 		if new then
 			print("Quest accepted: #" .. questID .. (info or ""));
