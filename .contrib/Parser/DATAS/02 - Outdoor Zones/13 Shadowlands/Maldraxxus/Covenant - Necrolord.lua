@@ -329,6 +329,14 @@ _.Zones =
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
 					}),
 
+					q(62448, {	-- Securing the House
+						-- Might be breadcrumb if able to reach Renown 5 prior to picking this up? not sure...
+						["coord"] = { 49.7, 50.6, 1698 },
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["sourceQuests"] = { 62694 },	-- A Calling in Maldraxxus
+					}),
+
+
 					-- Weekly Quests
 					q(61983, {	-- Replenish the Reservoir
 						-- ["coord"] = { xx, xx, 1536 },

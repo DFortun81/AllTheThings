@@ -46,6 +46,7 @@ _.Zones =
 					["isDaily"] = true,
 					["g"] = {
 						ach(14310, crit(16)),	-- Adventurer of Revendreth / Azgar
+						i(180691),	-- Obscuring Ash Cloud
 					},
 				}),
 				n(166292, {	-- Bog Beast

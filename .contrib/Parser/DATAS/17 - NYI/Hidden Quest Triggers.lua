@@ -3204,25 +3204,25 @@ _.HiddenQuestTriggers =
 		q(62908),	-- triggered after collecting 5 souls during "Rule 1: Have an Escape Plan"
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
 		q(61600),	-- triggered when using Animaflow Stabilizer (Ve'nari item)
-		q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
-		q(63377),	-- First kill of Soulsmith Yor-Mattar (bonus objective 59441)
-		q(63383),	-- First kill of Malevolent Stygia
-		q(63381),	-- First kill of Krala
+		-- q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
+		-- q(63377),	-- First kill of Soulsmith Yor-Mattar (bonus objective 59441)
+		-- q(63383),	-- First kill of Malevolent Stygia
+		-- q(63381),	-- First kill of Krala
 		-- The Maw rares
-		q(63380),	-- Agonix secondary quest
-		q(63373),	-- Dartanos secondary quest
-		q(61140),	-- Dath Rezara secondary quest
-		q(63372),	-- Drifting Sorrow secondary quest
-		q(60903),	-- Krala bonus objective
-		q(63413),	-- Odalrik secondary quest/first kill?
-		q(63375),	-- Orrholyn secondary quest
-		q(63388),	-- Ratgusher secondary quest?
-		q(63374),	-- Razkazzar secondary quest
+		-- q(63380),	-- Agonix secondary quest
+		-- q(63373),	-- Dartanos secondary quest
+		-- q(61140),	-- Dath Rezara secondary quest
+		-- q(63372),	-- Drifting Sorrow secondary quest
+		-- q(60903),	-- Krala bonus objective
+		-- q(63413),	-- Odalrik secondary quest/first kill?
+		-- q(63375),	-- Orrholyn secondary quest
+		-- q(63388),	-- Ratgusher secondary quest?
+		-- q(63374),	-- Razkazzar secondary quest
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
 					-- also for mogwai when killing Eketra...
 		
 		-- Eye of the Jailer Levels
-		-- q(),	-- Mortars/Missiles (1)
+		q(63382),	-- Mortars/Missiles (1)
 		q(63379),	-- Assassins (2)
 		-- q(),	-- Chains (3)
 		q(63376),	-- Abductors (4)

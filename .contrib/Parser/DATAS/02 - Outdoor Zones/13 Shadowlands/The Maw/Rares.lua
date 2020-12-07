@@ -52,12 +52,15 @@ _.Zones =
 					},
 				}),
 				n(169102, {	-- Agonix
-					["questID"] = 61136,
+					["questID"] = 63380,
 					["isDaily"] = true,
 					["coord"] = { 28.0, 44.6, 1543 },
 					["g"] = {
 						crit(8, {	-- Agonix
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						q(61136, {	-- Bonus Objective
+							["isDaily"] = true,
 						}),
 					},
 				}),
@@ -140,12 +143,15 @@ _.Zones =
 				}),
 				n(162452, {	-- Dartanos
 					["description"] = "Coordinates are for a teleportation pad that will take you to the rare's platform.",
-					["questID"] = 59230,
+					["questID"] = 63373,
 					["isDaily"] = true,
 					["coord"] = { 27.5, 17.3, 1543 },
 					["g"] = {
 						crit(2, {	-- Dartanos
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						q(59230, {	-- Bonus Objective
+							["isDaily"] = true,
 						}),
 						i(183070),	-- Mawsworn Orders
 					},
@@ -157,6 +163,9 @@ _.Zones =
 					["g"] = {
 						crit(18, {	-- Dath Rezara
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						q(61140, {	-- Bonus Objective
+							["isDaily"] = true,
 						}),
 					},
 				}),
@@ -172,12 +181,15 @@ _.Zones =
 				}),
 				n(158314, {	-- Drifting Sorrow
 					["description"] = "To summon the mob, kill Agonizing Shades near the dark floating orb.",
-					["questID"] = 59183,
+					["questID"] = 63372,
 					["isDaily"] = true,
 					["coord"] = { 32.0, 21.7, 1543 },
 					["g"] = {
 						crit(1, {	-- Drifting Sorrow
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						q(59183, {	-- Bonus Objective
+							["isDaily"] = true,
 						}),
 					},
 				}),
@@ -281,15 +293,21 @@ _.Zones =
 						crit(9, {	-- Krala
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
+						q(60903, {	-- Bonus Objective
+							["isDaily"] = true,
+						}),
 					},
 				}),
 				n(171316, {	-- Malevolent Stygia
-					["questID"] = 61125,	-- Malevolent Stygia
+					["questID"] = 63383,
 					["isDaily"] = true,
 					["coord"] = { 27.3, 17.3, 1543 },
 					["g"] = {
 						crit(11, {	-- Malevolent Stygia
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						q(61125, {	-- Bonus Objective
+							["isDaily"] = true,
 						}),
 					},
 				}),
@@ -325,22 +343,28 @@ _.Zones =
 					},
 				}),
 				n(172207, {	-- Odalrik
-					["questID"] = 62618,
+					["questID"] = 63413,
 					["isDaily"] = true,
 					["coord"] = { 38.6, 28.8, 1543 },
 					["g"] = {
 						crit(16, {	-- Odalrik
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
+						q(62618, {	-- Bonus Objective
+							["isDaily"] = true,
+						}),
 					},
 				}),
 				n(162845, {	-- Orrholyn <Lord of Bloodletting>
-					["questID"] = 60991,
+					["questID"] = 63375,
 					["isDaily"] = true,
 					["coord"] = { 25.6, 48.2, 1543 },
 					["g"] = {
 						crit(4, {	-- Orrholyn
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						q(60991, {	-- Bonus Objective
+							["isDaily"] = true,
 						}),
 					},
 				}),
@@ -363,23 +387,29 @@ _.Zones =
 					},
 				}),
 				n(175821, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
-					["questID"] = 63044,
+					["questID"] = 63388,
 					["isDaily"] = true,
 					["coord"] = { 21.6, 41.8, 1543 },
 					["g"] = {
 						crit(19, {	-- Ratgusher
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
+						q(63044, {	-- Bonus Objective
+							["isDaily"] = true,
+						}),
 						i(183136),	-- Incendiary Mawrat
 					},
 				}),
 				n(162829, {	-- Razkazzar
-					["questID"] = 60992,
+					["questID"] = 63374,
 					["isDaily"] = true,
 					["coord"] = { 26.2, 37.4, 1543 },
 					["g"] = {
 						crit(3, {	-- Razkazzar
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						q(60992, {	-- Bonus Objective
+							["isDaily"] = true,
 						}),
 					},
 				}),
@@ -427,22 +457,28 @@ _.Zones =
 					},
 				}),
 				n(165047, {	-- Soulsmith Yol-Mattar
-				--	["questID"] = ,
+					["questID"] = 63377,
 					["isDaily"] = true,
 					["coord"] = { 36.6, 37.2, 1543 },
 					["g"] = {
 						crit(6, {	-- Soulsmith Yol-Mattar
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
+						q(59441, {	-- Bonus Objective
+							["isDaily"] = true,
+						}),
 					},
 				}),
 				n(156203, {	-- Stygian Incinerator
-				--	["questID"] = ,
+					["questID"] = 63371,
 					["isDaily"] = true,
 					["coord"] = { 36.4, 44.4, 1543 },
 					["g"] = {
 						crit(17, {	-- Stygian Incinerator
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						q(62539, {	-- Bonus Objective
+							["isDaily"] = true,
 						}),
 					},
 				}),
@@ -469,12 +505,15 @@ _.Zones =
 					},
 				}),
 				n(173086, {	-- Valis the Cruel
-				--	["questID"] = ,
+					["questID"] = 63387,
 					["isDaily"] = true,
 					["coord"] = { 40.8, 59.8, 1543 },
 					["g"] = {
 						crit(15, {	-- Valis the Cruel
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						q(61728, {	-- Bonus Objective
+							["isDaily"] = true,
 						}),
 					},
 				}),
