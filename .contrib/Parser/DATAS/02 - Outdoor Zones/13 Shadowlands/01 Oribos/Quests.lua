@@ -570,31 +570,44 @@ _.Zones =
 				-- Covenant Travel Quests
 				-- Ardenweald
 				-- Bastion
-				-- Maldraxxus
-				q(63212, {	-- Report to Mevix
+				q(63211, {	-- Report to Adrestes
+					-- TODO: not 62023... that's a HQT or doesn't exist anymore? prob different for Story/Skip
+					-- ["sourceQuests"] = { 62023 },	-- Choosing Your Purpose
+					["customCollect"] = "SL_SKIP",
+					["description"] = "|cFF516bfeKyrian Covenant|r only.",
 					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 38.8, 70.0, 1670 },
-					["description"] = "",
-					["isBreadcrumb"] = true,
+					["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
 					["lvl"] = { 60 },
 				}),
-				-- Revendreth
-
-				-- From Revendreth
-				-- Choosing Your Covenant
 				q(60491, {	-- Among the Kyrian
 					["provider"] = { "n", 171787 },	-- Polemarch Adrestes
 					["coord"] = { 36.1, 64.1, 1670 },
-					["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
+					["sourceQuests"] = { 
+						57878,	-- Choosing Your Purpose [Story]
+						63211,	-- Report to Adrestes [Skip]
+					 },
+				}),
+				-- Maldraxxus
+				q(63212, {	-- Report to Mevix
+					["customCollect"] = "SL_SKIP",
+					["description"] = "|cFF40bf40Necrolord Covenant|r only.",
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
+					-- ["isBreadcrumb"] = true, -- don't think this is breadcrumb for Skip characters
+					["lvl"] = { 60 },
 				}),
 				q(58609, {	-- Taking The Seat
 					["provider"] = { "n", 171821 },	-- Baroness Draka
 					["coord"] = { 42.9, 74.1, 1670 },
 					["sourceQuests"] = { 
 						57878,	-- Choosing Your Purpose [Story]
-						63212,	-- Report to Mevix [Skip+Necrolord]
+						63212,	-- Report to Mevix [Skip]
 					},	
 				}),
+				-- Revendreth
+
+				-- From Revendreth
+				-- Choosing Your Covenant
 				q(60286, {	-- A Token of Our Admiration
 					["provider"] = { "n", 168432 },	-- Ve'rayn
 					["coord"] = { 33.2, 48.9, 1670 },

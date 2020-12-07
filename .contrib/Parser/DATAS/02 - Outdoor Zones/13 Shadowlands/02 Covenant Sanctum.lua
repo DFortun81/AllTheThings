@@ -86,6 +86,7 @@ _.Zones =
 							["description"] = "Rewarded by completing a 'Challenges' Calling based in Maldraxxus",
 							["g"] = {
 								i(181705),	-- Celestial Effervescence
+								i(182111),	-- Spiritual Resonance
 							},
 						}),
 						i(181741, {	-- Tribute of the Paragon / Bastion

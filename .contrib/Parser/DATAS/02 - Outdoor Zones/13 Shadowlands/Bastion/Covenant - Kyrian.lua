@@ -385,13 +385,6 @@ _.Zones =
 						["isWeekly"] = true,
 						["coord"] = { 42.6, 53.1, 1707 },	-- Elysian Hold
 					}),
-					q(63211, {	-- Report to Adrestes
-						["sourceQuests"] = { 62023 },	-- Choosing Your Purpose
-						["description"] = "|cFF516bfeKyrian Covenant|r only.",
-						["provider"] = { "n", 159478 },	-- Tal-Inara
-						["coord"] = { 39.2, 69.7, 1670 },	-- Oribos
-						["maps"] = { 1670 },	-- Oribos
-					}),
 					q(61332, {	-- Return Lost Souls
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
 						["isWeekly"] = true,

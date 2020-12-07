@@ -161,7 +161,7 @@ _.Zones =
 					},
 				}),
 				n(170711, {	-- Dolos
-				--	["questID"] = ,
+					["questID"] = 60909,
 					["isDaily"] = true,
 				--	["coord"] = { , , 1543 },
 					["g"] = {
@@ -264,7 +264,7 @@ _.Zones =
 					},
 				}),
 				n(175012, {	-- Ikras the Devourer
-				--	["questID"] = ,
+					["questID"] = 62788,
 					["isDaily"] = true,
 				--	["coord"] = { , , 1543 },
 					["g"] = {
@@ -459,7 +459,7 @@ _.Zones =
 					},
 				}),
 				n(170731, {	-- Thanassos <Death's Voice>
-				--	["questID"] = ,
+					["questID"] = 60914,
 					["isDaily"] = true,
 				--	["coord"] = { , , 1543 },
 					["g"] = {
