@@ -408,6 +408,240 @@ _.Zones =
 				n(TREASURES, {
 				}),
 				n(VENDORS, {
+					n(175310, {	-- Mellisa Fate <Raid Finder Nathrian Warsmith>
+						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
+						["coord"] = { 60.8, 44.3, 1698 },
+						["g"] = bubbleDown({["modID"] = 4}, {	-- LFR
+							i(184253, {	-- Abdomen Chopper
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184265, {	-- Abdomen Splitter
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184252, {	-- Aranakk Torture Device
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184245, {	-- Barrier of the Chosen
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184244, {	-- Biting Gutsliver Shank
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184248, {	-- Blightforged Twinblade
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184257, {	-- Burden of the Protectorate
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184250, {	-- Deadeye Blunderbuss
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184262, {	-- Deadeye Cannon
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184266, {	-- Fleshscourge Sickle
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184246, {	-- Frigid Invoker's Focus
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184259, {	-- Grasp from the Grave
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184261, {	-- Greatstaff of the Lichsworn General
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184247, {	-- Grip of the Dead
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184255, {	-- Gristlegore Hacker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184264, {	-- Krexus's Bloodletting Polearm
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184258, {	-- Malevolent Invoker's Crystal
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184251, {	-- Ossified Broadaxe
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184263, {	-- Ossified Greataxe
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184254, {	-- Plaguespine Sickle
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184267, {	-- Skullcleaver of the Merciless One
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184249, {	-- Staff of the Lichsworn Lieutenant
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184256, {	-- Vicious Goreripper Shank
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184260, {	-- Warglaive of the Hidden Fiend
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+						}),
+					}),
+					n(175371, {	-- Mortis Elfsen <Normal Nathrian Warsmith>
+						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
+						["coord"] = { 61.1, 45.7, 1698 },
+						["g"] = bubbleDown({["modID"] = 3}, {	-- Normal
+							i(184253, {	-- Abdomen Chopper
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184265, {	-- Abdomen Splitter
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184252, {	-- Aranakk Torture Device
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184245, {	-- Barrier of the Chosen
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184244, {	-- Biting Gutsliver Shank
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184248, {	-- Blightforged Twinblade
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184257, {	-- Burden of the Protectorate
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184250, {	-- Deadeye Blunderbuss
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184262, {	-- Deadeye Cannon
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184266, {	-- Fleshscourge Sickle
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184246, {	-- Frigid Invoker's Focus
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184259, {	-- Grasp from the Grave
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184261, {	-- Greatstaff of the Lichsworn General
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184247, {	-- Grip of the Dead
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184255, {	-- Gristlegore Hacker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184264, {	-- Krexus's Bloodletting Polearm
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184258, {	-- Malevolent Invoker's Crystal
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184251, {	-- Ossified Broadaxe
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184263, {	-- Ossified Greataxe
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184254, {	-- Plaguespine Sickle
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184267, {	-- Skullcleaver of the Merciless One
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184249, {	-- Staff of the Lichsworn Lieutenant
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184256, {	-- Vicious Goreripper Shank
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184260, {	-- Warglaive of the Hidden Fiend
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+						}),
+					}),
+					n(175370, {	-- Odious Gwor <Mythic Nathrian Warsmith>
+						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
+						["coord"] = { 60.5, 48.6, 1698 },
+						["g"] = bubbleDown({["modID"] = 6}, {	-- Mythic
+							i(184253, {	-- Abdomen Chopper
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184265, {	-- Abdomen Splitter
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184252, {	-- Aranakk Torture Device
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184245, {	-- Barrier of the Chosen
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184244, {	-- Biting Gutsliver Shank
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184248, {	-- Blightforged Twinblade
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184257, {	-- Burden of the Protectorate
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184250, {	-- Deadeye Blunderbuss
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184262, {	-- Deadeye Cannon
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184266, {	-- Fleshscourge Sickle
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184246, {	-- Frigid Invoker's Focus
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184259, {	-- Grasp from the Grave
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184261, {	-- Greatstaff of the Lichsworn General
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184247, {	-- Grip of the Dead
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184255, {	-- Gristlegore Hacker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184264, {	-- Krexus's Bloodletting Polearm
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184258, {	-- Malevolent Invoker's Crystal
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184251, {	-- Ossified Broadaxe
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184263, {	-- Ossified Greataxe
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184254, {	-- Plaguespine Sickle
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184267, {	-- Skullcleaver of the Merciless One
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184249, {	-- Staff of the Lichsworn Lieutenant
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184256, {	-- Vicious Goreripper Shank
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184260, {	-- Warglaive of the Hidden Fiend
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+						}),
+					}),
 					n(172176, {	-- Slayer Araya <Covenant Armor>
 						["coord"] = { 57.1, 48.3, 1698 },
 						["g"] = {
@@ -745,6 +979,84 @@ _.Zones =
 								},
 							}),
 						},
+					}),
+					n(175312, {	-- Taiya Tacere <Heroic Nathrian Warsmith>
+						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
+						["coord"] = { 61.2, 47.4, 1698 },
+						["g"] = bubbleDown({["modID"] = 5}, {	-- Heroic
+							i(184253, {	-- Abdomen Chopper
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184265, {	-- Abdomen Splitter
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184252, {	-- Aranakk Torture Device
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184245, {	-- Barrier of the Chosen
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184244, {	-- Biting Gutsliver Shank
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184248, {	-- Blightforged Twinblade
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184257, {	-- Burden of the Protectorate
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184250, {	-- Deadeye Blunderbuss
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184262, {	-- Deadeye Cannon
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184266, {	-- Fleshscourge Sickle
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184246, {	-- Frigid Invoker's Focus
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184259, {	-- Grasp from the Grave
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184261, {	-- Greatstaff of the Lichsworn General
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184247, {	-- Grip of the Dead
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184255, {	-- Gristlegore Hacker
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184264, {	-- Krexus's Bloodletting Polearm
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184258, {	-- Malevolent Invoker's Crystal
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184251, {	-- Ossified Broadaxe
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184263, {	-- Ossified Greataxe
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184254, {	-- Plaguespine Sickle
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184267, {	-- Skullcleaver of the Merciless One
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184249, {	-- Staff of the Lichsworn Lieutenant
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184256, {	-- Vicious Goreripper Shank
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+							i(184260, {	-- Warglaive of the Hidden Fiend
+								--["cost"] = { { "x", yyyy, zzzz } },
+							}),
+						}),
 					}),
 				}),
 			}),
