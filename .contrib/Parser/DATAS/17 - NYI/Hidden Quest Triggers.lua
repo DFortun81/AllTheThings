@@ -2994,6 +2994,11 @@ _.HiddenQuestTriggers =
 		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3 
 		q(61695),	--  /
 		q(61696),	-- /
+		q(60815),	-- \
+		q(60816),	--  \
+		q(60817),	--   running over Lunarlight Buds (55.4, 38.6) to light up Dim Lunarlight Pod and turn it into Lunarlight Pod
+		q(60818),	--  /
+		q(60819),	-- /
 		q(61590),	-- Triggered after first time channeling anima to Glitterfall Basin
 		-- q(60722),	-- Triggered after turning in The Roots Thirst [Wait what, this a Necrolords quest o_o]
 		q(59431),	-- Triggered when looting A Meandering Story
@@ -3123,6 +3128,7 @@ _.HiddenQuestTriggers =
 		q(62667),	-- triggered when turning in #58079, Favor: Pristine Dredbat Fang
 		q(62665),	-- triggered when turning in #58072, Favor: Petrified Stonefiend
 		q(62670),	-- triggered when turning in #58069, Favor: The Venthyr Diaries
+		q(62666),	-- triggered when turning in #58073, Favor: Portrait of the Sire
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest

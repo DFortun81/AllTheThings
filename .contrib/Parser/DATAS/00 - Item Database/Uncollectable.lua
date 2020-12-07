@@ -38,6 +38,7 @@ i(184767);	-- Handheld Soul Mirror
 i(184384);	-- Hibernal Sproutling
 i(181550);	-- Hopebreaker's Field Injector
 i(181377);	-- Illustrated Combat Meditation Aid
+i(184382);	-- Luminous Sylberry
 i(184307);	-- Maldraxxi Armor Scraps
 i(184305);	-- Maldraxxi Champion's Armaments
 i(181546);	-- Mature Cryptbloom
@@ -172,6 +173,7 @@ i(146692);	-- Ancient Dreadleather Armor
 i(146700);	-- Ancient Gravenscale Armor
 i(169251);	-- Ancient Insect
 i(168234);	-- Ancient Runestone
+i(182067);	-- Antique Duelist's Rapier
 i(182021);	-- Antique Kyrian Javelin
 i(182043);	-- Antique Necromancer's Staff
 i(147438);	-- Bag of Wisp-Touched Elderhide

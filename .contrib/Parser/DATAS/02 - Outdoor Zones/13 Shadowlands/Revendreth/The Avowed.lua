@@ -12,6 +12,16 @@ _.Zones =
 				["collectible"] = false,
 				["icon"] = 458226,
 				["g"] = {
+					n(ACHIEVEMENTS, {
+						ach(14277, {	-- The Accuser's Avowed
+							ach(14274),		-- Absolution For All
+							ach(14273, {	-- Crypt Kicker
+								["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
+							}),
+							ach(14276),		-- It's Always Sinny in Revendreth
+							title(423),		-- Cryptkeeper
+						}),
+					}),
 					n(QUESTS, {
 						n(58127, {	-- Inquisitor Sinstone
 							["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
