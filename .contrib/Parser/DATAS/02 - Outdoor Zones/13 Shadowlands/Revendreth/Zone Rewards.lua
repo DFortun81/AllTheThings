@@ -17,6 +17,21 @@ _.Zones =
 						["questID"] = 62183,	-- A Leaking Box Marked Perishable
 						["isDaily"] = true,
 					}),
+					i(173720, {	-- Glittering Primrose Necklace
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 58080,	-- Favor: Glittering Primrose Necklace
+						["isDaily"] = true,
+					}),
+					i(173712, {	-- Ledger of Souls
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 58074,
+						["isDaily"] = true,
+					}),
+					i(173721, {	-- Love and Terror
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 58081,
+						["isDaily"] = true,
+					}),
 					i(182726, {	-- Nadja's Letter
 						["questID"] = 62182,	-- A Letter From Nadja
 						["isDaily"] = true,
@@ -25,8 +40,22 @@ _.Zones =
 						["questID"] = 58072,	-- Favor: Petrified Stonefiend
 						["isDaily"] = true,
 					}),
+					i(173711, {	-- Portrait of the Sire
+						["questID"] = 58073,	-- Favor: Portrait of the Sire
+						["isDaily"] = true,
+					}),
 					i(180453, {	-- She Had a Stone Heart
 						["questID"] = 60889,	-- Favor: She Had a Stone Heart
+						["isDaily"] = true,
+					}),
+					i(173707, {	-- Soul Hunter's Blade
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 58070,
+						["isDaily"] = true,
+					}),
+					i(173705, {	-- The Venthyr Diaries
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 58069,	-- Favor: The Venthyr Dairies
 						["isDaily"] = true,
 					}),
 					i(173709, {	-- Vial of Dredger Muck

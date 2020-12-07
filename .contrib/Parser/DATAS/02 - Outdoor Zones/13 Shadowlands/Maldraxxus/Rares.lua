@@ -230,6 +230,7 @@ _.Zones =
 				}),
 				n(-922,   {	-- Theater of Pain
 					["description"] = "These mobs all spawn in the Theater of Pain, a free-for-all arena in the middle of Maldraxxus.",
+					["questID"] = 62786,	-- seems to trigger on first ToP rare killed each day
 					["g"] = {
 						n(COMMON_BOSS_DROPS, {
 							i(184062, {	-- Gnawed Reins of the Battle-Bound Warhound (MOUNT!)

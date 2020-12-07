@@ -47,26 +47,11 @@ _.Zones =
 				i(179323),	-- Dredhollow Cudgel
 				i(179329),	-- Gargoyle Heartpiercer
 				i(182690),	-- Gilded Crusader's Morningstar
-				i(173720, {	-- Glittering Primrose Necklace
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58080,	-- Favor: Glittering Primrose Necklace
-					["isDaily"] = true,
-				}),
 				i(177802),	-- Hopebreaker Carbine
 				i(177813),	-- Hopebreaker's Badge
 				i(183420),	-- Hopebreaker's Right Boot
 				i(179333),	-- Inquisitor Cudgel
-				i(173712, {	-- Ledger of Souls
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58074,
-					["isDaily"] = true,
-				}),
 				i(177809),	-- Lithe Rapier
-				i(173721, {	-- Love and Terror
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58081,
-					["isDaily"] = true,
-				}),
 				i(183417),	-- Mail Courier's Right Runner
 				i(182725),	-- Mail Courier's Wristguards
 				i(177795),	-- Night Guardian Armplates
@@ -105,34 +90,9 @@ _.Zones =
 				i(177785),	-- Savage Bonemauler Shoulderguards
 				i(177781),	-- Savage Bonemauler Striders
 				i(177801),	-- Sky Legion Halbard
-				i(173707, {	-- Soul Hunter's Blade
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58070,
-					["isDaily"] = true,
-				}),
 				i(183423),	-- Stone Legion Right Sabaton
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace
-				i(173705, {	-- The Venthyr Diaries
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58069,	-- Favor: The Venthyr Dairies
-					["isDaily"] = true,
-				}),
-				i(173709, {	-- Vial of Dredger Muck
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["description"] = "Drops from Dredger mobs and can be found in Revendreth treasure chests.",
-					["questID"] = 58071,	-- Favor: Vial of Dredger Muck
-					["isDaily"] = true,
-					["crs"] = {
-						160846,	-- Beleaguered Excavator
-						161490,	-- Blackbale Flunky
-						161258,	-- Chalice Dredger
-						176118,	-- Confirmed Dredger
-						170953,	-- Head Pugilist
-						158193,	-- Manor Servant
-						159495,	-- Mire Dredger
-					},
-				}),
 				i(179334),	-- Wingblade Staff
 			}),
 		}),
