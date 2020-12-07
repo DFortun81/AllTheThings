@@ -3110,6 +3110,7 @@ _.HiddenQuestTriggers =
 		q(60703),	-- triggered when looting Pristine Dredbat Fang
 		q(62662),	-- triggered when turning in #58074, Favor: Ledger of Souls
 		q(62667),	-- triggered when turning in #58079, Favor: Pristine Dredbat Fang
+		q(62665),	-- triggered when turning in #58072, Favor: Petrified Stonefiend
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest

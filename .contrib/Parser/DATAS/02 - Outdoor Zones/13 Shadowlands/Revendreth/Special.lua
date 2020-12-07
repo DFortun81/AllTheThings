@@ -71,7 +71,7 @@ _.Zones =
 						i(182597, {	-- Comfortable Saddle Blanket
 							["description"] = "Day 5: Purchase 1 |cFFFFFFFFComfortable Saddle Blanket|r from Ta'tru in Revendreth.  Requires 30 |cFFFFFFFFCreeping Crawler Meat|r.",
 						--	["questID"] = ,
-							["coord"] = { 51.0, 78.8, 1525 },
+							["coord"] = { 51.1, 78.8, 1525 },
 							["cost"] = { { "i", 179314, 30 } },	-- 30x Creeping Crawler Meat
 							["crs"] = { 171808 },	-- Ta'tru <Barterer>
 						}),
