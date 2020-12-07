@@ -58,8 +58,7 @@ _.Zones =
 					crit(6,  {	-- Puzzling Cryptogram
 						["provider"] = { "i", 180803 },	-- Puzzling Cryptogram
 						["questID"] = 63137,	-- Puzzling Cryptogram
-						-- ["crs"] = { },
-						-- ["coords"] = { },
+						-- No crs/coords... can even drop from Assassins
 					}),
 					crit(7,  {	-- Worn Obleron Etching
 						["provider"] = { "i", 180804 },	-- Worn Obleron Etching

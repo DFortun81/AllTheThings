@@ -31,6 +31,7 @@ _.Zones =
 								-- guessing any box can reward the same set of conduits
 								i(181435),	-- Calcualted Strikes [Monk-Windwalker]
 								i(182136),	-- Chilled to the Core [Shaman-Enhance] 
+								i(181508),	-- Fortifying Ingredients [Monk-Brewmaster]
 								i(182127),	-- Shake the Foundations [Shaman-Elemental]
 								i(181742),	-- Walk with the Ox [Monk-Brewmaster]
 							},
@@ -47,6 +48,7 @@ _.Zones =
 								i(181224),	-- Avowed Arcanist's Staff
 								-- i(182136),	-- Chilled to the Core [Shaman-Enhance] / Source Drop
 								-- i(182127),	-- Shake the Foundations [Shaman-Elemental] / Source Drop
+								-- i(181508),	-- Fortifying Ingredients [Monk-Brewmaster] / Source Drop
 							},
 						}),
 						i(181732, {	-- Tribute of the Ambitious / Maldraxxus

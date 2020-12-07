@@ -287,7 +287,8 @@ _.Zones =
 						["coord"] = { 58.4, 28.9, 1533 },	-- Bastion
 					}),
 					q(62794, {	-- Enhancing the Hold
-					--	TODO: verify SQ.  should be this, Return to Adrestes, or It's All Coming Together
+						-- TODO: verify SQ.  should be this, or It's All Coming Together
+						-- does not rely on 62796 [Return to Adrestes]
 						-- Specific requirement unknown, available immediately after returning from the maw
 						["sourceQuests"] = { 62837 },	-- Hopeful News
 						["provider"] = { "n", 167745 },    -- Haephus

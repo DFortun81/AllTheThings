@@ -437,6 +437,13 @@ _.Zones =
 
 				-- Zone Travel Breadcrumbs
 				-- Ardenweald
+				q(62739, {	-- Restoring Balance
+					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 38.8, 70.0, 1670 },
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 62277 },	-- Ardenweald
+				}),
 				-- Bastion
 				q(62707, {	-- The Elysian Fields
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -471,7 +478,7 @@ _.Zones =
 					["coord"] = { 49.2, 52.2, 1565 },
 					["sourceQuests"] = {
 						62159,	-- Aiding the Shadowlands
-						-- ,	-- TODO: Ardenweald Zone-Travel Quest
+						62739,	-- Restoring Balance
 					},
 					["g"] = {
 						i(179532),	-- Duskwarder Scythe

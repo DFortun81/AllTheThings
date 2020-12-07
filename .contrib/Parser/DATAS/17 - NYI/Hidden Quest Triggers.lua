@@ -3099,11 +3099,12 @@ _.HiddenQuestTriggers =
 		q(62710),	-- Triggered after choosing Night Fae covenant
 		q(62023),	-- Triggered after choosing Kyrian covenant
 		q(62708),	-- Triggered after choosing Kyrian covenant
+		-- q(62153),	-- when completing 62159 (Aiding the Shadowlands) as Skip+Kyrian... it's for another covenant or something
 		q(62020),	-- Triggered after choosing Venthyr covenant
 		q(62709),	-- Triggered after choosing Venthyr covenant
 		q(62017),	-- Triggered after choosing Necrolords covenant
 		q(62711),	-- Triggered after choosing Necrolords covenant
-		-- q(62152),	-- Triggered when turning in 62159 after choosing Necrolords covenant... kind of want to see when it happens again though
+		-- q(62152),	-- when completing 62159 (Aiding the Shadowlands) as Skip+Necrolords covenant... kind of want to see when it happens again though
 		q(63348),	-- Triggered after turning in Explore Torghast (62932) at Bolvar
 
 		-- Revendreth
@@ -3200,6 +3201,7 @@ _.HiddenQuestTriggers =
 		q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
 		q(63377),	-- First kill of Soulsmith Yor-Mattar (bonus objective 59441)
 		q(63383),	-- First kill of Malevolent Stygia
+		q(63381),	-- First kill of Krala
 		-- The Maw rares
 		q(63380),	-- Agonix secondary quest
 		q(63373),	-- Dartanos secondary quest
