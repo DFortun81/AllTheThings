@@ -100,6 +100,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61449, {	-- Leatherworking: Steelhide Leather Harness
+					["requireSkill"] = LEATHERWORKING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61337, {	-- March of the Eternal Protector
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

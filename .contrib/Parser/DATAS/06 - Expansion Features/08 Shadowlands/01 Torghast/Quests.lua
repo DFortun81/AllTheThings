@@ -17,12 +17,6 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
-				q(61426, {	-- Champion: Yira'lya
-					["provider"] = { "n", 172243 },	-- Yira'lya
-					["g"] = {
-						follower(1282)	-- Yira'lya
-					},
-				}),
 				q(60268, {	-- Deep Within
 					["sourceQuests"] = { 60267 },	-- Prison of the Forgotten
 					["provider"] = { "n", 164937 },	-- Runecarver
@@ -42,15 +36,34 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, 1670 },
 				}),
-				q(62719, {    -- The Final Pieces
+				q(62719, {	-- The Final Pieces
 					-- available without finishing the Ashes... not sure the specific SQ instead or if it was just time-gated
 					-- ["sourceQuests"] = { 62700 },    -- Ashes of the Tower
 					["provider"] = { "n", 164937 },    -- Runecarver
 					["coord"] = { 50.4, 53.8, 1912 },    -- The Runecarver's Oubliette
 				}),
-				
+				q(62800, {	-- The Vessels of Jewels
+				--	TODO: add SQs, figure out if any rewards need to be added.  only thing listed is "Unlock the Shadowghast Jewelry recipes at your trainer in Oribos." but uh...what are they.
+					["requireSkill"] = JEWELCRAFTING,
+				--	["sourceQuests"] = {  },	-- 
+					["provider"] = { "n", 164937 },	-- Runecarver
+					["coord"] = { 50.6, 57.2, 1912 },
+				}),
+				q(62798, {	-- The Vessels of Leather and Bone
+				--	TODO: add SQs, figure out if any rewards need to be added.  only thing listed is "Unlock the Boneshatter Armor recipes at your trainer in Oribos." but uh...what are they.
+					["requireSkill"] = LEATHERWORKING,
+				--	["sourceQuests"] = {  },	-- 
+					["provider"] = { "n", 164937 },	-- Runecarver
+					["coord"] = { 50.6, 57.2, 1912 },
+				}),
 				-- Champion Unlocks
 				-- TODO: move to covenant files
+				q(61222, {	-- Champion: Kaletar the Mender (Venthyr)
+					["provider"] = { "n", 171898 },	-- Kaletar <Mender>
+					["g"] = {
+						follower(1217),	-- Kaletar the Mender
+					},
+				}),
 				q(61958, {	-- Champion: Gorgelimb [Necrolord]
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["provider"] = { "n", 173397 },	-- Gorgelimb
@@ -62,6 +75,12 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 171995 },	-- Kythekios
 					["g"] = {
 					--	follower(1222),	-- Kythekios (doesn't appear to be working for now?)
+					},
+				}),
+				q(61426, {	-- Champion: Yira'lya
+					["provider"] = { "n", 172243 },	-- Yira'lya
+					["g"] = {
+						follower(1282)	-- Yira'lya
 					},
 				}),
 				
@@ -104,6 +123,10 @@ _.ExpansionFeatures =
 				q(59775, {	-- Help Indigo find Penthia
 					["repeatable"] = true,
 					["provider"] = { "n", 166123 },	-- Indigo
+				}),
+				q(59779, {	-- Help Moriaz find Buttons
+					["repeatable"] = true,
+					["provider"] = { "n", 166151 },	-- Moriaz the Red
 				}),
 				q(59778, {	-- Help Sawn find Varrik
 					["repeatable"] = true,

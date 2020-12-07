@@ -185,8 +185,15 @@ _.Zones =
 				q(63038, {	-- Guaranteed Delivery
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 175797 },	-- Deceased Broker
-					["coord"] = { 30.7, 58.3, 1543 },
 					["isDaily"] = true,
+					["coord"] = { 30.7, 58.3, 1543 },
+				}),
+				q(63040, {	-- Guaranteed Delivery
+				--	TODO: add literally everything
+				--	["sourceQuests"] = {  },	-- 
+				--	["provider"] = { "n",  },	-- 
+					["isDaily"] = true,
+				--	["coord"] = { , , 1543 },
 				}),
 				q(59962, {	-- Hope Never Dies
 					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
@@ -219,8 +226,8 @@ _.Zones =
 				}),
 				q(63100, {	-- Misery's Company
 					["provider"] = { "n", 176069 },	-- Hopeless Vessel
-					["coord"] = { 24.6, 45.2, 1648 },
 					["isDaily"] = true,
+					["coord"] = { 24.6, 45.2, 1648 },
 				}),
 				q(59754, {	-- On Blackened Wings
 					["sourceQuests"] = { 59914 },	-- Fear to Tread

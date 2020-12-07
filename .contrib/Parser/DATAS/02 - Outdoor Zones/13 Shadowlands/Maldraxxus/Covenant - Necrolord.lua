@@ -380,6 +380,14 @@ _.Zones =
 					}),
 					n(-905, {	-- Command Table
 						n(-906, {	-- Tier 1: Tactical Insight
+							q(62309, {	-- Adventurer: Secutor Mevix
+							--	requires Renown 4
+								["provider"] = { "n", 165321 },	-- Merick Feldscar <Communicator>
+								["coord"] = { 38.8, 48.5, 1698 },	-- Seat of the Primus
+								["g"] = {
+									follower(1300),	-- Secutor Mevix
+								},
+							}),
 						}),
 						-- Tier 2: Recuperative Treatments
 						-- Tier 3: Forced March

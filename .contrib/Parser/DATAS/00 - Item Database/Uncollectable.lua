@@ -70,6 +70,7 @@ i(181644);	-- Unlabeled Culture Jars
 i(184776);	-- Urn of Arena Soil
 i(184765);	-- Vesper Strikehammer
 i(184371);	-- Vivacity of Collaboration
+i(181648);	-- Ziggurat Focusing Crystal
 
 -- Battle Pet
 i(183714);	-- Swamp Reed (presumably Withered Creeper was originally learned via this item, but is now wild-caught, so this item being anywhere other than this folder makes the pet show as Unsorted or NYI or w/e)

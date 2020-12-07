@@ -1088,6 +1088,7 @@ _.HiddenQuestTriggers =
 		q(40374),	-- Demon Hunter - chose Kayn during "A New Direction" in the Vault of the Wardens scenario
 		q(40375),	-- Demon Hunter - chose Altruis during "A New Direction" in the Vault of the Wardens scenario
 		q(40386),	-- Demon Hunter - escaped the Vault of the Wardens entry scenario
+		q(48311),	-- Demon Hunter - class hall mission
 		q(42741),	-- Legion Expansion Started Tracking Quest
 		q(46733),	-- Legion Expansion Started Tracking Quest
 		q(40658),	-- Durotar - Tracking Quest - W1 - See Demon Attack ("Demons Among Us" quest)
@@ -2956,6 +2957,10 @@ _.HiddenQuestTriggers =
 		q(63368),	-- triggered after completing mi(2175),	"Tutorial: Spinal Swarm" as Kyrian
 		q(63367),	-- Triggered after completing mi(2175),	"Tutorial: Spinal Swarm" as Night Fae
 		q(63370),	-- triggered after completing mi(2175), "Tutorial: Spinal Swarm" as Venthyr
+		q(63247),	-- triggered after completing mi(2211),	"Campaign: Whisper in the Dark" (Venthyr, but are these shared among covenants?)
+		q(63280),	-- triggered after completing mi(2211),	"Campaign: Whisper in the Dark" (probably Night Fae covenant)
+		q(63283),	-- triggered after completing mi(2211),	"Campaign: Whisper in the Dark" (Venthyr, but are these shared among covenants?)
+		q(57622),	-- triggered when turning in #58609, "Taking a Seat" (idk if this is covenant-related or skip-related or something else)
 		
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
@@ -2979,6 +2984,11 @@ _.HiddenQuestTriggers =
 		q(60822),	--   flower triggers for opening Lunarlight Pod (60794) (don't have coords)
 		q(60823),	--  /
 		q(60824),	-- /
+		q(60800),	-- \
+		q(60801),	--  \
+		q(60802),	--   running over Lunarlight Buds (48.1, 70.8), user could not find associated treasure
+		q(60803),	--  /
+		q(60804),	-- /
 		q(61692),	-- \
 		q(61693),	--  \
 		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3 
@@ -3038,6 +3048,7 @@ _.HiddenQuestTriggers =
 		--	Bastion WQs
 		q(63262),	-- triggered after completing the WQ #60858, "Flight School: Up and Away!"
 		q(63263),	-- triggered after completing the WQ #60911, "Flight School: Flapping Frenzy"
+		q(62947),	-- triggered during the WQ #61449, "Leatherworking: Steelhide Leather Harness"
 		--	Kyrian Covenant
 		q(63216),	-- triggers when turning in #57897, "Dangerous to Go Alone"
 		q(62755),	-- triggers when turning in #57904, "Our Eternal Charge"
@@ -3111,6 +3122,7 @@ _.HiddenQuestTriggers =
 		q(62662),	-- triggered when turning in #58074, Favor: Ledger of Souls
 		q(62667),	-- triggered when turning in #58079, Favor: Pristine Dredbat Fang
 		q(62665),	-- triggered when turning in #58072, Favor: Petrified Stonefiend
+		q(62670),	-- triggered when turning in #58069, Favor: The Venthyr Diaries
 		-- Revendreth Rares
 		q(60581),	-- Endlurker secondary quest
 		q(62463),	-- Prideful Hulk secondary quest
@@ -3174,6 +3186,8 @@ _.HiddenQuestTriggers =
 		q(59503),	-- triggered when using "Contract: Divine Desserts"
 		q(59504),	-- triggered when using "Contract: Divine Desserts"
 		q(62668),	-- after looting a Dirty Glinting Object -- someone on discord got this when turning in Favor: She Had a Stone Heart, but i did not
+		q(63252),	-- triggered when completing mi(2228), "Discarded But Not Useless" as Venthyr
+		q(63303),	-- triggered when completing mi(2228), "Discarded But Not Useless" as Venthyr
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
@@ -3192,6 +3206,7 @@ _.HiddenQuestTriggers =
 		q(63373),	-- Dartanos secondary quest
 		q(61140),	-- Dath Rezara secondary quest
 		q(63372),	-- Drifting Sorrow secondary quest
+		q(60903),	-- Krala bonus objective
 		q(63413),	-- Odalrik secondary quest/first kill?
 		q(63375),	-- Orrholyn secondary quest
 		q(63388),	-- Ratgusher secondary quest?
@@ -3230,6 +3245,7 @@ _.HiddenQuestTriggers =
 		q(58205),	-- Mort'regar Layer 2
 		q(59326),	-- Mort'regar Layer 3
 		q(61420),	-- Triggered when freeing Yira'lya
+		q(61215),	-- triggered when completing Champion: Kaletar
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

@@ -115,6 +115,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61604, {	-- Tailoring: Cloak of Camouflage
+					["requireSkill"] = TAILORING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(60533, {	-- Terrors in Tirna Scithe
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

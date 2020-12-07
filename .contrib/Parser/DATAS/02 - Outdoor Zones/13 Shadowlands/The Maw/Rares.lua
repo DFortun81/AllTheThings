@@ -274,7 +274,7 @@ _.Zones =
 					},
 				}),
 				n(170692, {	-- Krala <Death's Wings>
-					["questID"] = 60903,
+					["questID"] = 63381,
 					["isDaily"] = true,
 					["coord"] = { 30.7, 68.8, 1543 },
 					["g"] = {
@@ -517,7 +517,7 @@ _.Zones =
 					},
 				}),
 				n(172862, {	-- Yero the Skittish
-				--	["questID"] = ,
+					["questID"] = 61568,
 					["isDaily"] = true,
 				--	["coord"] = { , , 1543 },
 					["g"] = {

@@ -2275,7 +2275,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(39148)),	-- Baby Coralshell Turtle
 		un(NEVER_IMPLEMENTED, i(66070)),	-- Lizzy
 		un(NEVER_IMPLEMENTED, i(66075)),	-- Bubbles
-		un(NEVER_IMPLEMENTED, i(184397)),	-- Lost Featherling
 		un(NEVER_IMPLEMENTED, i(11903)),	-- Cat Carrier (Corrupted Kitten)
 		un(NEVER_IMPLEMENTED, i(109602)),	-- Echo of Murmur (temp item)
 		un(NEVER_IMPLEMENTED, i(169195)),	-- Golden Cricket

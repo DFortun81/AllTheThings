@@ -40,7 +40,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						i(178730),	-- Engorged Worm Smasher
 						i(178735),	-- Blight Belcher
-						i(178732),	-- Abominable Visage
+						i(178732, {	-- Abominable Visage
+							["filterID"] = 4,	-- Cloth (blizz says cloak for some reason)
+						}),
 						i(178733),	-- Blightbone Spaulders
 						i(178734),	-- Fused Bone Greatbelt
 						i(178731),	-- Viscera-Stitched Footpads
@@ -93,7 +95,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["g"] = {
 							i(178730),	-- Engorged Worm Smasher
 							i(178735),	-- Blight Belcher
-							i(178732),	-- Abominable Visage
+							i(178732, {	-- Abominable Visage
+								["filterID"] = 4,	-- Cloth (blizz says cloak for some reason)
+							}),
 							i(178733),	-- Blightbone Spaulders
 							i(178734),	-- Fused Bone Greatbelt
 							i(178731),	-- Viscera-Stitched Footpads
@@ -148,7 +152,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["g"] = {
 							i(178730),	-- Engorged Worm Smasher
 							i(178735),	-- Blight Belcher
-							i(178732),	-- Abominable Visage
+							i(178732, {	-- Abominable Visage
+								["filterID"] = 4,	-- Cloth (blizz says cloak for some reason)
+							}),
 							i(178733),	-- Blightbone Spaulders
 							i(178734),	-- Fused Bone Greatbelt
 							i(178731),	-- Viscera-Stitched Footpads

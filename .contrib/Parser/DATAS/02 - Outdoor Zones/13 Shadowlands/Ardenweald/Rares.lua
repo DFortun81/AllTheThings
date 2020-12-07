@@ -65,10 +65,13 @@ _.Zones =
 					},
 				}),
 				n(163370, {	-- Gormbore
-				--	["questID"] = ,
+					["questID"] = 59006,
 					["isDaily"] = true,
 					["coord"] = { 53.8, 75.8, 1565 },
 					["g"] = {
+						crit(18, {	-- Gormbore (listed erroneously in-game as another "Dustbrawl")
+							["achievementID"] = 14309,	-- Adventurer of Ardenweald
+						}),
 						i(183196),	-- Lavender Nibbler (PET!)
 					},
 				}),
