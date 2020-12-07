@@ -5,7 +5,7 @@
 _.GearSets =
 {
 	n(-5350, {	-- Class Trial Item Sets
-		n(-155, {	-- Level 120
+		n(-155, {	-- Level 50 (Old Level 120)
 			n(-142, {	-- Heart-Lesion
 				["classes"] = { DEATHKNIGHT },
 				["groups"] = {
@@ -16,7 +16,6 @@ _.GearSets =
 						}),
 					}),
 					i(170604, {	-- Heart-Lesion Runeblade
-						["u"] = NEVER_IMPLEMENTED,
 					}),
 					i(170770, {	-- Heart-Lesion Faceguard
 						["u"] = NEVER_IMPLEMENTED,

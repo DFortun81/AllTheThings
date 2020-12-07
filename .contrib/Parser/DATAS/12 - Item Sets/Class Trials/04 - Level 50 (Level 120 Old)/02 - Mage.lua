@@ -5,7 +5,7 @@
 _.GearSets =
 {
 	n(-5350, {	-- Class Trial Item Sets
-		n(-155, {	-- Level 120
+		n(-155, {	-- Level 50 (Old Level 120)
 			n(-145, {	-- Mountainsage
 				["classes"] = { MAGE },
 				["groups"] = {

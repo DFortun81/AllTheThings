@@ -390,6 +390,7 @@ app.L = {
 		[-149] = "Interface\\Icons\\ClassIcon_Paladin",										-- Paladin
 		[-150] = "Interface\\Icons\\ClassIcon_Hunter",										-- Hunter
 		[-152] = "Interface\\Icons\\achievement_zone_draenor_01",							-- Garrison Campaign
+		[-155] = 236566,																	-- Level 50 (old Level 120)
 		[-160] = "Interface\\Addons\\AllTheThings\\assets\\mounts",							-- Mounts
 		[-161] = "Interface\\Addons\\AllTheThings\\assets\\toy",							-- Toy
 		[-162] = "Interface\\Icons\\inv_box_petcarrier_01",									-- Pets
