@@ -42,7 +42,6 @@ _.NeverImplemented =
 		un(NEVER_IMPLEMENTED, i(182666)),	-- Formula: Enchanted Elethium Bar (learned from trainer not item)
 		-- Toy
 		un(NEVER_IMPLEMENTED, i(182655)),	-- Hill King's Roarbox (beta only? Retrieving data on 9.0.2)
-		un(NEVER_IMPLEMENTED, i(174286)),	-- Kyrian Ritual Vestments (beta only? Retrieving data on 9.0.2)
 		-- Other
 		un(NEVER_IMPLEMENTED, i(183940)),	-- Avowed Archivist's Tome (this was on a vendor and awarded "the Avowed" title in Beta but has not been seen in the actual expansion)
 	}),
@@ -3782,11 +3781,9 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(150592)),	-- Justicar's Hammer
 		}),
 		n(-334, {	-- One-Handed Axes
-			un(NEVER_IMPLEMENTED, i(174298)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - blue
 			un(NEVER_IMPLEMENTED, i(174299)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - copper
 			un(NEVER_IMPLEMENTED, i(174300)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - dark
 			un(NEVER_IMPLEMENTED, i(174301)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - gold
-			un(NEVER_IMPLEMENTED, i(174302)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - silver
 			un(NEVER_IMPLEMENTED, i(174303)),	-- [9.0 Covenant - Bastion - Weapon - 1H Axe AGI - pink gold
 			un(NEVER_IMPLEMENTED, i(68050)),	-- Shatterscale Mightfish
 			un(NEVER_IMPLEMENTED, i(49456)),	-- Will of the Earth
@@ -3891,12 +3888,10 @@ _.NeverImplemented =
 			un(NEVER_IMPLEMENTED, i(140420)),	-- Battering Tempest
 		}),
 		n(-332, {	-- Shields
-			un(NEVER_IMPLEMENTED, i(174310)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Blue]
 			un(NEVER_IMPLEMENTED, i(174311)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Copper]
 			un(NEVER_IMPLEMENTED, i(174312)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Dark]
 			un(NEVER_IMPLEMENTED, i(174313)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Gold]
 			un(NEVER_IMPLEMENTED, i(174314)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Pink Gold]
-			un(NEVER_IMPLEMENTED, i(174315)),	-- [9.0 Covenant - Bastion - Weapon - Shield - Silver]
 			un(NEVER_IMPLEMENTED, i(165617)),	-- Unknown
 			un(NEVER_IMPLEMENTED, i(139439)),	-- Highkeepers' Ward
 			un(NEVER_IMPLEMENTED, i(108808)),	-- Unknown

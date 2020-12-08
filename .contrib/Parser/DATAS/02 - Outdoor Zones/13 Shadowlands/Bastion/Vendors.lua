@@ -7,14 +7,6 @@ _.Zones =
 	m(1550, {	-- Shadowlands
 		m(1533, {	-- Bastion
 			n(VENDORS, {
-				n(174937, {	-- Adjutant Galos <Renown Quartermaster>
-					i(180764, {	-- Phalynx of Purity
-						["cost"] = { { "c", 1813, 2500 } },
-					}),
-					i(180765, {	-- Eternal Phalynx of Purity
-						["cost"] = { { "c", 1813, 100 } },
-					}),
-				}),
 				n(160470, {	-- Adjutant Nikos <Ascended Quartermaster>
 					["coord"] = { 52.2, 47.0, 1533 },
 					["g"] = {

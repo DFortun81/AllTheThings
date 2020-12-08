@@ -43,7 +43,6 @@ _.Toys =
 		i(156833),		-- Katys's Stampwhistle
 		i(88580),		-- Ken-Ken's Mask
 		i(95567),		-- Kirin Tor Beacon (Alliance)
-		--i(174286),		-- Kyrian Ritual Vestments (beta only? Retrieving data on 9.0.2)
 		i(88531),		-- Lao Chin's Last Mug
 		i(71259),		-- Leyara's Locket
 		i(119039),		-- Lilian's Warning Sign

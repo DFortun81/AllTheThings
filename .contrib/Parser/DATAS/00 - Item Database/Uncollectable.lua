@@ -221,6 +221,7 @@ i(169240);	-- Idea Starter
 i(169233);	-- Infinite Loop Spring
 i(169227);	-- Irradiated Bolts
 i(169257);	-- Jagged Rune
+i(174286);	-- Kyrian Ritual Vestments
 i(169236);	-- Latch-and-Lock Trigger
 i(146952);	-- Legendary Tailor's Materials
 i(146977);	-- Legendary Tanner's Kit
