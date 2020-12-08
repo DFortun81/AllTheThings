@@ -2828,6 +2828,8 @@ _.HiddenQuestTriggers =
 		q(57565),	-- Aqir Assault Tracker — triggered upon picking up #61981, "Replenish the Reservoir"
 		q(57567),	-- N'Zoth Assault Tracker (Vale) — triggered upon picking up #61981, "Replenish the Reservoir"
 		q(57562),	-- Amathet Assault Tracker — triggered when logging in
+		q(57564),	-- Mantid Assault Tracker — triggered when logging in
+		q(57566),	-- N'Zoth Assault Tracker (Uldum) — triggered when logging in
 		q(55689),	-- Uldum - Amathet cache
 		q(55690),	-- Uldum - Amathet cache
 		q(55691),	-- Uldum - Amathet cache

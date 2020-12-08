@@ -32,11 +32,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			e(2431, {	-- Mortanis
 				["isWeekly"] = true,
-				--["questID"] = ,	-- Mortanis (WQ)
+				["questID"] = 61816,	-- Mortanis (WQ)
 				["isRaid"] = true,
-				--["coord"] = { 62.0, 24.0, 895 },
-				["maps"] = {
-				},
+				["coord"] = { 32.1, 67.3, 1536 },
+				["maps"] = { 1536 },	-- Maldraxxus
 				["cr"] = 173104,	-- Mortanis
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183341),	-- Memory of a Guile Charm

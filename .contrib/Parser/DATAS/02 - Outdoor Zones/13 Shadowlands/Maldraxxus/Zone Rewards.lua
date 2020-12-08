@@ -52,6 +52,7 @@ _.Zones =
 					i(181684),	-- Gorewrought Wand
 					i(181692),	-- Gorewrought Warblade
 					i(181687),	-- Gorewrought Warglaive
+					i(181502),	-- Rejuvenating Serum
 					i(181653),	-- Steelcore Chestplate
 					i(181661),	-- Steelcore Gauntlets
 					i(181675),	-- Steelcore Girdle
