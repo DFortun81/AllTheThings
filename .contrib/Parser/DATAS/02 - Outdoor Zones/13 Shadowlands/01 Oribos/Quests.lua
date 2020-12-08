@@ -254,6 +254,13 @@ _.Zones =
 					["provider"] = { "n", 167424 },	-- Overseer Kah-Sher
 					["coord"] = { 39.7, 66.1, 1670 },
 				}),
+				q(62457, {	-- The Great Vault
+					["provider"] = { "n", 173350 },	-- Ba'vol
+					["coord"] = { 64.4, 35.8, 1670 },
+					["g"] = {
+						i(183224), -- Memory of a Deep Focus Draught
+					},
+				}),
 				q(61475, {	-- The Heart of the Forest
 					["sourceQuests"] = { 63214 },	-- Report to Moonberry
 					["provider"] = { "n", 171795 },	-- Lady Moonberry
