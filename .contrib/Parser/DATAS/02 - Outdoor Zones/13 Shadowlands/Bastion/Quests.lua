@@ -221,6 +221,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 167164 },	-- Thanikos
 				}),
+				q(59263, {	-- Feathers of Flight
+					["sourceQuests"] = { 59262 },	-- Broken Wings
+					["provider"] = { "n", 164640 },	-- Kowalskos
+					["coord"] = { 42.8, 42.7, 1533 },
+				}),
 				q(60009, {	-- Fight Another Day
 					["sourceQuests"] = { 60006 },	-- Now or Never
 					["provider"] = { "n", 167269 },	-- Disciple Apolon
@@ -929,25 +934,20 @@ _.Zones =
 					["coord"] = { 53.8, 73.8, 1533 },
 				}),
 				-- Glimmerfly toy/pet questline
-				q(59263, {	-- Feathers of Flight
-					["sourceQuests"] = { 59262 },	-- Broken Wings
-					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.82, 42.73, 1533 },
-				}),
 				q(60660, {	-- Flight Test
 					["sourceQuests"] = { 59263 },	-- Feathers of Flight
 					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.82, 42.73, 1533 },
+					["coord"] = { 42.8, 42.7, 1533 },
 				}),
 				q(59348, {	-- More Wings!
 					["sourceQuests"] = { 60660 },	-- Flight Test
 					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.82, 42.73, 1533 },
+					["coord"] = { 42.8, 42.7, 1533 },
 				}),
 				q(59351, {	-- Strings and Things
 					["sourceQuests"] = { 60660 },	-- Flight Test
 					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.82, 42.73, 1533 },
+					["coord"] = { 42.8, 42.7, 1533 },
 				}),
 				q(59311, {	-- How to Catch a Glimmerfly
 					["sourceQuests"] = {
@@ -955,7 +955,7 @@ _.Zones =
 						59351,	-- Strings and Things
 					},
 					["provider"] = { "n", 164640 },	-- Kowalskos
-					["coord"] = { 42.82, 42.73, 1533 },
+					["coord"] = { 42.8, 42.7, 1533 },
 					["g"] = {
 						i(180839)	-- Helpful Glimmerfly
 					},

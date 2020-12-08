@@ -290,6 +290,7 @@ i(169867);	-- Visual Holo Sphere
 i(146688);	-- Waterlogged Handmaiden's Gloves
 i(146702);	-- White Lightningsteel
 i(156926);	-- Witchrend
+i(142509);	-- Withered Targeting Orb
 i(164761);	-- Xal'atath, Blade of the Black Empire
 i(146690);	-- Xavius' Torn Spellsash
 i(17384);	-- Zinfizzlex's Portable Shredder Unit
