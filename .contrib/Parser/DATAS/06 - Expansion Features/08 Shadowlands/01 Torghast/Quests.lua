@@ -36,11 +36,6 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
-				q(62935, {	-- Remnants of Hope
-					["sourceQuests"] = { 62932 },	-- Explore Torghast
-					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.9, 68.5, 1670 },
-				}),
 				q(62719, {	-- The Final Pieces
 					-- available without finishing the Ashes... not sure the specific SQ instead or if it was just time-gated
 					-- ["sourceQuests"] = { 62700 },    -- Ashes of the Tower

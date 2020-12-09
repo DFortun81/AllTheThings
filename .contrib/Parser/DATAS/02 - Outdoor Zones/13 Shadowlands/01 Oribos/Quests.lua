@@ -30,53 +30,29 @@ _.Zones =
 					}),
 					--[[
 				--	TODO: these are the rest of the PVP quests from Unsorted.  if they show up, it'll be easier to move them/add information.  if they don't show up they can be moved to the NYI > NYI Quests file.
-				--	if any of these wind up being NYI, we should add the ["drop"] = { "g" } tag so that the Cartel Exchange Vessel / Multi-Modal Anima Containers are not connected to nonexistant quests.
 					q(62289, {	-- Observing Conflict
-						["description"] = "Type: |cFFf09f26PvP|r\nArea: |cFFf09f26Oribos|r",
-						["lvl"] = 60,
-						["g"] = {
-							i(184374, { -- Cartel Exchange Vessel
-
-							})
-						}
-					}),
-					q(62286, {	-- Observing Skirmishes
-						["description"] = "Type: |cFFf09f26PvP|r\nArea: |cFFf09f26Oribos|r",
-						["lvl"] = 60,
-						["g"] = {
-							i(184315, { -- Multi-Modal Anima Container
-
-							})
-						}
+						["provider"] = { "n",  },	-- 
+						["isWeekly"] = true,
+						["coord"] = { , , 1670 },
+						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					q(62287, {	-- Observing Arenas
-						["description"] = "Type: |cFFf09f26PvP|r\nArea: |cFFf09f26Oribos|r",
-						["lvl"] = 60,
-						["g"] = {
-							i(184315, { -- Multi-Modal Anima Container
-
-							})
-						}
+						["provider"] = { "n",  },	-- 
+						["isWeekly"] = true,
+						["coord"] = { , , 1670 },
+						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					q(62288, {	-- Observing Teamwork
-						["description"] = "Type: |cFFf09f26PvP|r\nArea: |cFFf09f26Oribos|r",
-						["lvl"] = 60,
-						["g"] = {
-							i(184315, { -- Multi-Modal Anima Container
-
-							})
-						}
+						["provider"] = { "n",  },	-- 
+						["isWeekly"] = true,
+						["coord"] = { , , 1670 },
+						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					q(62569, {	-- quest not found
 						["description"] = "Area: |cFFf09f26Oribos|r",
 						["_drop"] = { "g" },
 						["lvl"] = 60,
 						["u"] = NEVER_IMPLEMENTED,	-- move to NYI > NYI Quests file if this doesn't show up in the next few months i guess
-						["g"] = {
-							i(184315, { -- Multi-Modal Anima Container
-
-							})
-						}
 					}),--]]
 				}),
 				q(60151, {	-- A Doorway Through the Veil
@@ -112,75 +88,59 @@ _.Zones =
 				}),
 				q(60256, {	-- A Valuable Find: Halls of Atonement
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["isWeekly"] = true,
 					["coord"] = { 51.4, 43.7, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60253, {	-- A Valuable Find: Necrotic Wake
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["isWeekly"] = true,
 					["coord"] = { 51.4, 43.7, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60251, {	-- A Valuable Find: Plaguefall
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["isWeekly"] = true,
 					["coord"] = { 51.4, 43.7, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60257, {	-- A Valuable Find: Sanguine Depths
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["isWeekly"] = true,
 					["coord"] = { 51.4, 43.7, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60252, {	-- A Valuable Find: Spires of Ascension
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 					["isWeekly"] = true,
 					["coord"] = { 51.4, 43.7, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60255, {	-- A Valuable Find: The Other Side
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["isWeekly"] = true,
 					["coord"] = { 51.4, 43.7, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60250, {	-- A Valuable Find: Theater of Pain
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["isWeekly"] = true,
 					["coord"] = { 51.4, 43.7, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60254, {	-- A Valuable Find: Tirna Scithe
 					["sourceQuests"] = { 60274 },	-- Trading Favors
-					["isWeekly"] = true,
 					["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+					["isWeekly"] = true,
 					["coord"] = { 51.4, 43.7, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60149, {	-- Audience with the Arbiter
 					["sourceQuests"] = { 60148 },	-- No Place for the Living
@@ -219,6 +179,13 @@ _.Zones =
 					["sourceQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 					["provider"] = { "n", 167425 },	-- Overseer Kah-Delen
 					["coord"] = { 39.7, 66.1, 1670 },
+				}),
+				q(62935, {	-- Remnants of Hope
+				--	reputation requirement may change in the future, but this quest was unavailable to me until hitting Tentative (despite having met the SQ requirement + doing Torghast weeks before)
+					["sourceQuests"] = { 62932 },	-- Explore Torghast
+					["description"] = "Requires Tentative reputation with Ve'nari.",
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, 1670 },
 				}),
 				q(63214, {	-- Report to Moonberry
 					["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
@@ -290,72 +257,56 @@ _.Zones =
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60242, {	-- Trading Favors: Necrotic Wake
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60248, {	-- Trading Favors: Plaguefall
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60243, {	-- Trading Favors: Sanguine Depths
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60249, {	-- Trading Favors: Spires of Ascension
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60245, {	-- Trading Favors: The Other Side
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60247, {	-- Trading Favors: Theater of Pain
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(60246, {	-- Trading Favors: Tirna Scithe
 					["sourceQuests"] = { 60274 },	-- Trading Favors
 					["provider"] = { "n", 167880 },	-- Finder Ta'sul
 					["isWeekly"] = true,
 					["coord"] = { 52.4, 55.3, 1670 },
-					["g"] = {
-						i(184374),	-- Cartel Exchange Vessel
-					},
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(63051, {	-- Trust Issues
 					["sourceQuests"] = { 61099 },	-- The Search for Baine

@@ -15,6 +15,7 @@ i(181545);	-- Bloodbound Globule
 i(184150);	-- Bonded Tallow Candles
 i(184152);	-- Bottle of Diluted Anima-Wine
 i(183723);	-- Brimming Anima Orb
+i(184374);	-- Cartel Exchange Vessel
 i(181541);	-- Celestial Acorn
 i(184768);	-- Censer of Dried Gracepetals
 i(181368);	-- Centurion Power Core
@@ -190,6 +191,7 @@ i(169235);	-- Confusing Spring Box
 i(12843);	-- Corruptor's Scourgestone
 i(169250);	-- Crude Eating Utensil
 i(9265);	-- Cuergo's Hidden Treasure
+i(182688);	-- Cypher of Obfuscation
 i(169232);	-- Dud Blast Canister
 i(143656);	-- Echo of Time (N)
 i(143657);	-- Echo of Time (H)

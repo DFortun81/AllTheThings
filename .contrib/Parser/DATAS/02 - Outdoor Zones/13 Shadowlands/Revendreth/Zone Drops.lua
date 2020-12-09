@@ -93,6 +93,7 @@ _.Zones =
 				i(183423),	-- Stone Legion Right Sabaton
 				i(177799),	-- Stoneborn Shield
 				i(177810),	-- Stonebreaker Mace
+				i(180487),	-- Stonefist's Knuckle Cover
 				i(179334),	-- Wingblade Staff
 			}),
 		}),

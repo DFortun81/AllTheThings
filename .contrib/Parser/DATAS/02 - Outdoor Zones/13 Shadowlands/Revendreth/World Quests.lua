@@ -89,6 +89,9 @@ _.Zones =
 				q(59643, {	-- It's Race Day in the Ramparts!
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
+					["g"] = {
+						i(177239),	-- Racing Permit (Ember Court item)
+					},
 				}),
 				q(60659, {	-- Light Defense
 					["isWorldQuest"] = true,

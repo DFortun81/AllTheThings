@@ -2971,16 +2971,12 @@ _.HiddenQuestTriggers =
 		q(62943),	-- Triggered when looting Crafter's Basket for the Enchanting: Boundless Basket WQ
 		q(62945),	-- Triggered when looting Crafter's Basket for the Inscription: Hymnal of Reprise WQ
 		q(61208),	-- triggered for no reason when i was traveling to the area where the "Swarm Defense" WQ takes place in Ardenweald.  i just went into the area between the main bit of Ardenweald + the Tirna Scythe area and it was like "what's up"
-		-- Rares
+		-- Ardenweald Rares
 		q(62271),	-- Deifir the Untamed secondary quest
 		q(62269),	-- Macabre secondary quest
 		q(62270),	-- Old Ardeite secondary quest
 		q(61198),	-- Triggers when successfully completing the pre-req sequence for the Shimmermist Runner rare
-		-- Ardenweald Covenant (Night Fae)
-		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
-		q(57559),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)
-		q(62706),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)
-		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
+		-- Ardenweald Treasures
 		q(60820),	-- \
 		q(60821),	--  \
 		q(60822),	--   flower triggers for opening Lunarlight Pod (60794) (don't have coords)
@@ -2991,16 +2987,26 @@ _.HiddenQuestTriggers =
 		q(60802),	--   running over Lunarlight Buds (48.1, 70.8), user could not find associated treasure
 		q(60803),	--  /
 		q(60804),	-- /
-		q(61692),	-- \
-		q(61693),	--  \
-		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3 
-		q(61695),	--  /
-		q(61696),	-- /
 		q(60815),	-- \
 		q(60816),	--  \
 		q(60817),	--   running over Lunarlight Buds (55.4, 38.6) to light up Dim Lunarlight Pod and turn it into Lunarlight Pod
 		q(60818),	--  /
 		q(60819),	-- /
+		q(60810),	-- \
+		q(60811),	--  \
+		q(60812),	--   running over Lunarlight Buds (somewhere in/near Glitterfall Basin) to light up Dim Lunarlight Pod and turn it into Lunarlight Pod (questID #60792)
+		q(60813),	--  /
+		q(60814),	-- /
+		-- Ardenweald Covenant (Night Fae)
+		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
+		q(61692),	-- \
+		q(61693),	--  \
+		q(61694),	--   all these quests are for running over Lunarlight Buds to open the Large Lunarlight Pod at 51.7, 32.3 
+		q(61695),	--  /
+		q(61696),	-- /
+		q(57559),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)
+		q(62706),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)
+		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(61590),	-- Triggered after first time channeling anima to Glitterfall Basin
 		-- q(60722),	-- Triggered after turning in The Roots Thirst [Wait what, this a Necrolords quest o_o]
 		q(59431),	-- Triggered when looting A Meandering Story
@@ -3167,8 +3173,8 @@ _.HiddenQuestTriggers =
 		q(60300),	-- appears to trigger with every anima conduit
 		q(61587),	-- Channeling Anima Conduit to Wanecrypt Hill - 1st time
 		q(60304),	-- Channeling Anima Conduit to Crypt of the Forgotten
-		q(63237),	-- Completing 1st 'Campaign Adventure'
-		q(63260),	-- Completing 1st 'Campaign Adventure'
+		q(63237),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" — one of these quests is probably Venthyr-specific and the other is shared
+		q(63260),	-- Completing mi(2194), "Campaign: Erezuel's Revenge" — one of these quests is probably Venthyr-specific and the other is shared
 		q(63242),	-- Completing 2nd 'Campaign Adventure' — this was the 1st one i completed, it was "Campaign: Stacka's Last Stand"
 		q(63323),	-- Completing 2nd 'Campaign Adventure' — this was the 1st one i completed, it was "Campaign: Stacka's Last Stand"
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
@@ -3206,6 +3212,7 @@ _.HiddenQuestTriggers =
 		q(62668),	-- after looting a Dirty Glinting Object -- someone on discord got this when turning in Favor: She Had a Stone Heart, but i did not
 		q(63252),	-- triggered when completing mi(2228), "Discarded But Not Useless" as Venthyr
 		q(63303),	-- triggered when completing mi(2228), "Discarded But Not Useless" as Venthyr
+		q(59690),	-- triggered when using "Racing Permit," reward from "It's Race Day in the Ramparts!" WQ
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
@@ -3216,6 +3223,7 @@ _.HiddenQuestTriggers =
 		q(62908),	-- triggered after collecting 5 souls during "Rule 1: Have an Escape Plan"
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
 		q(61600),	-- triggered when using Animaflow Stabilizer (Ve'nari item)
+		q(63446),	-- triggered when landing in The Maw on 12/9/20
 		-- q(63371),	-- First kill of Stygian Incinerator (bonus objective 62539)
 		-- q(63377),	-- First kill of Soulsmith Yor-Mattar (bonus objective 59441)
 		-- q(63383),	-- First kill of Malevolent Stygia

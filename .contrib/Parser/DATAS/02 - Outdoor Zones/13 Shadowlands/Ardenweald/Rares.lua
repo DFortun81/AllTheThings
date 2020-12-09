@@ -245,7 +245,7 @@ _.Zones =
 					},
 				}),
 				n(-934,   {	-- Star Lake Amphitheater
-					["description"] = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
+					["description"] = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
 					["questID"] = 61633,	-- this appears to trigger for all rares.  move to HQT if this changes, only 2 tested so far
 					["coord"] = { 41.5, 44.8, 1565 },
 					["icon"] = "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
@@ -256,6 +256,9 @@ _.Zones =
 							["questID"] = 61201,
 							["isDaily"] = true,
 							["g"] = {
+								crit(6, {	-- Azshara
+									["achievementID"] = 14353,	-- Ardenweald's a Stage
+								}),
 								i(179518),	-- Glimmerlight Staff
 							},
 						}),
@@ -263,12 +266,18 @@ _.Zones =
 							["questID"] = 61206,
 							["isDaily"] = true,
 							["g"] = {
+								crit(7, {	-- N'zoth
+									["achievementID"] = 14353,	-- Ardenweald's a Stage
+								}),
 							},
 						}),
 						n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
 							["questID"] = 61205,
 							["isDaily"] = true,
 							["g"] = {
+								crit(5, {	-- Jaina
+									["achievementID"] = 14353,	-- Ardenweald's a Stage
+								}),
 								i(182452),	-- Everchill Brambles
 							},
 						}),
@@ -276,6 +285,9 @@ _.Zones =
 							["questID"] = 61203,
 							["isDaily"] = true,
 							["g"] = {
+								crit(3, {	-- Kil'jaeden
+									["achievementID"] = 14353,	-- Ardenweald's a Stage
+								}),
 								i(182451),	-- Glimmerdust's Grand Design
 							},
 						}),
@@ -283,6 +295,9 @@ _.Zones =
 							["isDaily"] = true,	-- ??
 							["questID"] = 61202,
 							["g"] = {
+								crit(4, {	-- Argus, The Unmaker
+									["achievementID"] = 14353,	-- Ardenweald's a Stage
+								}),
 								i(179534),	-- Mi'kai's Deathscythe
 							},
 						}),
@@ -290,6 +305,9 @@ _.Zones =
 							["questID"] = 61207,
 							["isDaily"] = true,
 							["g"] = {
+								crit(1, {	-- Xavius
+									["achievementID"] = 14353,	-- Ardenweald's a Stage
+								}),
 								i(182455),	-- Dreamer's Mending
 							},
 						}),
@@ -297,6 +315,9 @@ _.Zones =
 							["questID"] = 61204,
 							["isDaily"] = true,
 							["g"] = {
+								crit(2, {	-- Gul'dan
+									["achievementID"] = 14353,	-- Ardenweald's a Stage
+								}),
 								i(182454),	-- Murmurs in the Dark
 							},
 						}),

@@ -166,6 +166,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 76.6, 51.0, 1525 },
 				}),
+				o(1278968764, {	-- Stoneborn Satchel
+					["questID"] = 60985,
+					["isDaily"] = true,
+					["coord"] = { 36.5, 51.5, 1525 },
+				}),
 			}),
 		}),
 	}),

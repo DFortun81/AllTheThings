@@ -27,6 +27,18 @@ _.Zones =
 						i(181171),	-- Luminous Webspinner (PET!)
 					},
 				}),
+				o(1278968762, {	-- Runebound Coffer
+				--	TODO: verify objectID when data is available
+					["description"] = "To unlock it, you must find 3 nearby |cFFFFFFFFRunes of Constructs|r and click them to deactivate the corresponding runes on the chest.",
+					["questID"] = 61115,	-- TODO: verify questID, i didn't realize each rune deactivation had its own quest, so all 4 triggered at once.  the other quests were 61120, 61121, and 61122
+					["coord"] = { 34.9, 30.9, 1536 },
+				}),
+				o(355038, {	-- Runebound Coffer
+				--	TODO: are the runes in this area also called Rune of Constructs?  other treasure was in the House of Constructs area and this one is in House of Rituals, so they may be Rune of Rituals.  confirm + add to desc
+					["description"] = "To unlock it, you must find 3 nearby runes and click them to deactivate the corresponding runes on the chest.",
+					["questID"] = 61116,
+					["coord"] = { 69.6, 33.5, 1536 },
+				}),
 				o(354856, {	-- Slime-Coated Crate
 					["questID"] = 61093,
 					["coords"] = {
