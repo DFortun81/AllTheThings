@@ -145,6 +145,7 @@ _.Toys =
 		}),
 		i(127394),		-- Podling Camouflage
 		i(153181),		-- Red Conservatory Scroll
+		i(184476),		-- Regenerating Slime Vial
 		i(104294),		-- Rime of the Time-Lost Mariner
 		i(131811),		-- Rocfeather Skyhorn Kite
 		i(174928),		-- Rotten Apple

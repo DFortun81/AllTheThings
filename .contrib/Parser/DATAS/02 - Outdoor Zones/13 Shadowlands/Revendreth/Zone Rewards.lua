@@ -36,6 +36,11 @@ _.Zones =
 						["questID"] = 62182,	-- A Letter From Nadja
 						["isDaily"] = true,
 					}),
+					i(173717, {	-- Perfected Hand Mirror
+						["sourceQuests"] = { 58062 },	-- A Very Special Guest
+						["questID"] = 58077,	-- Favor: Perfected Hand Mirror
+						["isDaily"] = true,
+					}),
 					i(173710, {	-- Petrified Stonefiend
 						["sourceQuests"] = { 58062 },	-- A Very Special Guest
 						["questID"] = 58072,	-- Favor: Petrified Stonefiend

@@ -98,6 +98,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61611, {	-- Inscription: Litany of Might
+					["requireSkill"] = INSCRIPTION,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61540, {	-- Just Winging It
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

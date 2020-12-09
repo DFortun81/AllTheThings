@@ -3132,6 +3132,7 @@ _.HiddenQuestTriggers =
 		q(58107),	-- triggered when opening a crypt while on "Atonement Crypt Key"
 		q(60703),	-- triggered when looting Pristine Dredbat Fang
 		q(62662),	-- triggered when turning in #58074, Favor: Ledger of Souls
+		q(62664),	-- triggered when turning in #58077, Favor: Perfected Hand Mirror
 		q(62667),	-- triggered when turning in #58079, Favor: Pristine Dredbat Fang
 		q(62665),	-- triggered when turning in #58072, Favor: Petrified Stonefiend
 		q(62670),	-- triggered when turning in #58069, Favor: The Venthyr Diaries
