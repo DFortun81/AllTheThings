@@ -67,11 +67,11 @@ _.Zones =
 								},
 							}),
 							q(60423, {	-- A Call to Ardenweald
-								--["provider"] = { "n",  },	--
-								--["coord"] = { , 1698 },
+								["provider"] = { "n", 167210 },	-- Tabulator Killham
+								["coord"] = { 59.6, 43.5, 1698 },
 								["repeatable"] = true,
 								["g"] = {
-									i(181732),	-- Tribute of the Ambitious
+									i(181475),	-- Bounty of the Grove Wardens
 								},
 							}),
 							q(60426, {	-- A Call to Bastion
@@ -204,7 +204,7 @@ _.Zones =
 								["coord"] = { 54.4, 67.8, 1533 },
 								["repeatable"] = true,
 								["g"] = {
-									i(181732),	-- Tribute of the Ambitious
+									i(181556),	-- Tribute of the Court
 								},
 							}),
 							q(60429, {	-- Troubles at Home
@@ -273,62 +273,70 @@ _.Zones =
 						["coord"] = { 46.5, 42.2, 1698 },
 					}),
 					q(62844, {	-- Return to Draka
+						["sourceQuests"] = { 62837 },	-- Hopeful News
+						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 						["coord"] = { 40.0, 68.4, 1670 },
 						["maps"] = { 1670 },	-- Oribos
-						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-						["sourceQuests"] = { 62837 },	-- Hopeful News
 					}),
 					q(62845, {	-- Bringing It All Together
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
 						["sourceQuests"] = { 62844 },	-- Return to Draka
+						["provider"] = { "n", 161907 },	-- Baroness Draka
 						["g"] = {
+							i(182272),	-- Bladesworn Conjurer's Leggings
+							i(182254),	-- Bladesworn Harbinger's Greaves
+							i(182281),	-- Bladesworn Tactician's Chausses
 							i(182263),	-- Bladesworn Wraith's Breeches
 						},
 					}),
 					q(62846, {	-- Sanctum Improvements
-						-- ["coord"] = { xx, xx, 1536 },
-						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
 						["sourceQuests"] = { 62845 },	-- Bringing It All Together
+						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
+						["coord"] = { 52.4, 38.4, 1698 },
 					}),
 					q(59596, {	-- Collective Soul
-						-- ["coord"] = { xx, xx, 1536 },
-						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
 						["sourceQuests"] = { 62846 },	-- Sanctum Improvements
 						["altQuests"] = { 63003 },	-- Collective Soul
+						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
+						["coord"] = { 52.4, 38.4, 1698 },
 					}),
 					q(63003, {	-- Collective Soul
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- Draka
 						["sourceQuests"] = { 62846 },	-- Sanctum Improvements
 						["altQuests"] = { 59596 },	-- Collective Soul
+						["provider"] = { "n", 161907 },	-- Baroness Draka
 					}),
 					q(59597, {	-- Come On, We're Simpatico!
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
 						["sourceQuests"] = { 59596, 63003 },	-- Collective Soul
+						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
+						["coord"] = { 38.8, 32.4, 1698 },
 					}),
 					q(61388, {	-- A Journey Made Together
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
 						["sourceQuests"] = { 59597 },	-- Come On, We're Simpatico!
+						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
+						["coord"] = { 38.8, 32.4, 1698 },
 					}),
 					q(62848, {	-- Conduits, What Are They For?
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
 						["sourceQuests"] = { 61388 },	-- A Journey Made Together
+						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
+						["coord"] = { 38.8, 32.4, 1698 },
 					}),
 					q(59609, {	-- No Rest For the Dead
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
-						["sourceQuests"] = { 62848 },	-- A Journey Made Together
+						["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
+						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
+						["coord"] = { 38.8, 32.4, 1698 },
 					}),
 					q(63032, {	-- The Highlord Calls
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.6, 1698 },
 					}),
 
+					-- Zone Breadcrumbs?
+					q(58665, {	-- Rebellious Souls
+						-- TODO: might be breadcrumb?
+						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
+						["provider"] = { "n", 162222 },	-- Rathan
+						["coord"] = { 48.0, 50.2, 1698 },
+					}),
 					q(62448, {	-- Securing the House
 						-- Might be breadcrumb if able to reach Renown 5 prior to picking this up? not sure...
 						["coord"] = { 49.7, 50.6, 1698 },
@@ -339,10 +347,10 @@ _.Zones =
 
 					-- Weekly Quests
 					q(61983, {	-- Replenish the Reservoir
-						-- ["coord"] = { xx, xx, 1536 },
-						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
-						["isWeekly"] = true,
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
+						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
+						["coord"] = { 52.4, 38.4, 1698 },
+						["isWeekly"] = true,
 					}),
 
 					-- Feature Unlocks
@@ -360,13 +368,6 @@ _.Zones =
 
 
 
-					-- Zone Breadcrumbs?
-					q(58665, {	-- Rebellious Souls
-						-- TODO: might be breadcrumb?
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
-						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
-					}),
 
 				}),
 				n(RARES, {
