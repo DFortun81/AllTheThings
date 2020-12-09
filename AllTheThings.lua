@@ -5799,11 +5799,10 @@ app.BaseFaction = {
 		elseif key == "trackable" or key == "collectible" then
 			return app.CollectibleReputations;
 		elseif key == "saved" or key == "collected" then
-			if app.AccountWideReputations then
-				if GetDataSubMember("CollectedFactions", t.factionID) then return 1; end
-			else
-				if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
-			end
+			-- this character is exalted
+			if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
+			-- another character exalted with account-wide
+			if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
 			if t.isFriend and not select(9, GetFriendshipReputation(t.factionID)) or t.standing == 8 then
 				SetTempDataSubMember("CollectedFactions", t.factionID, 1);
 				SetDataSubMember("CollectedFactions", t.factionID, 1);
@@ -12455,11 +12454,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
 				end
 
-				local hasDifficulties;
 				-- Check for timewalking difficulty objects
 				for i, group in ipairs(groups) do
 					if group.difficultyID then
-						hasDifficulties = true;
 						if group.difficultyID == 24 and group.g then
 							-- Look for a Common Boss Drop header.
 							local cbdIndex = -1;
@@ -12540,25 +12537,20 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				BuildGroups(self.data, self.data.g);
 				-- print("update groups");
 				UpdateGroups(self.data, self.data.g);
-				-- sort only the top layer of groups if not in an instance with difficulty, force visible so sort goes through
+				-- sort only the top layer of groups if not in an instance, force visible so sort goes through
 				-- print(GetInstanceInfo());
-				local difficultyID = select(3, GetInstanceInfo());
 				-- sort by name if not in an instance
-				if not difficultyID or difficultyID < 1 then
+				if not self.data.instanceID then
 					self.data.visible = true;
 					-- print("sortname");
 					SortGroup(self.data, "name", nil, false);
-				-- sort by difficulty ONLY if the instance has actual difficulty dividers
-				-- elseif hasDifficulties then
-				-- 	self.data.visible = true;
-				-- 	-- print("sortdiff");
-				-- 	SortGroup(self.data, "difficultyID", nil, false);
 				end
 				-- check to expand groups after they have been built and updated
 				-- print("expand current zone");
 				ExpandGroupsRecursively(self.data, true);
 
 				-- if enabled, minimize rows based on difficulty
+				local difficultyID = select(3, GetInstanceInfo());
 				if app.Settings:GetTooltipSetting("Expand:Difficulty") then
 					if difficultyID and difficultyID > 0 and self.data.g then
 						for _, row in ipairs(self.data.g) do
