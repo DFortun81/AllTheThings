@@ -331,12 +331,6 @@ _.Zones =
 					}),
 
 					-- Zone Breadcrumbs?
-					q(58665, {	-- Rebellious Souls
-						-- TODO: might be breadcrumb?
-						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
-						["provider"] = { "n", 162222 },	-- Rathan
-						["coord"] = { 48.0, 50.2, 1698 },
-					}),
 					q(62448, {	-- Securing the House
 						-- Might be breadcrumb if able to reach Renown 5 prior to picking this up? not sure...
 						["coord"] = { 49.7, 50.6, 1698 },
@@ -352,29 +346,86 @@ _.Zones =
 						["coord"] = { 52.4, 38.4, 1698 },
 						["isWeekly"] = true,
 					}),
-
-					-- Feature Unlocks
-					-- Command Table
-					q(63054, {	-- Strength in Numbers
-						-- ["coord"] = { xx, xx, 1536 },
-						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
-						["sourceQuests"] = { 62846 },	-- Sanctum Improvements -- TODO: might actually be 61388 (A Journey Made Together)
-					}),
-					q(59603, {	-- In Shadowlands Service
-						-- ["coord"] = { xx, xx, 1536 },
-						-- ["provider"] = { "n", xx },	-- 
-						["sourceQuests"] = { 63054 },	-- Strength in Numbers
-					}),
-
-
-
-
 				}),
 				n(RARES, {
 				}),
 				n(-921, {	-- Sanctum Upgrades
-					-- Abomination Factory
+					n(-923, {	-- Abomination Factory
 						-- Tier 1: Build a Buddy
+						q(59042, {	-- A Bountiful Haul
+							["sourceQuests"] = { 60041 },	-- Build-A-Bomination
+							["isWeekly"] = true,
+						}),
+						q(59042, {	-- A Good Heart
+							["sourceQuests"] = { 58686 },	-- Weapon of Mass Construction
+							["provider"] = { "n", 162222 },	-- Rathan
+							["coord"] = { 48.0, 50.2, 1698 },
+						}),
+						q(58727, {	-- A Place To Call Home
+							["sourceQuests"] = { 58671 },	-- Bottled Up Inside
+							["provider"] = { "n", 162174 },	-- Emeni
+							["coord"] = { 24.9, 31.7, 1536 },
+						}),
+						q(60049, {	-- At Your Service
+							["sourceQuests"] = { 58727 },	-- A Place To Call Home
+							["provider"] = { "n", 167044 },	-- Emeni
+							["coord"] = { 55.1, 68.7, 1536 },
+						}),
+						q(58671, {	-- Bottled Up Inside
+							["sourceQuests"] = { 59042 },	-- A Good Heart
+							["provider"] = { "n", 162174 },	-- Emeni
+							["coord"] = { 23.8, 39.1, 1536 },
+						}),
+						q(60041, {	-- Build-A-Bomination
+							["sourceQuests"] = { 60048 },	-- Stitching Time
+						}),
+						q(58668, {	-- Find The Way
+							["sourceQuests"] = { 58665 },	-- Rebellious Souls
+							["provider"] = { "n", 162153 },	-- Rathan
+							["coord"] = { 26.0, 42.6, 1536 },
+						}),
+						q(58680, {	-- Loose Threads
+							["sourceQuests"] = { 58668 },	-- Find The Way
+							["provider"] = { "n", 162227 },	-- Rathan
+							["coord"] = { 24.2, 38.8, 1536 },
+						}),
+						q(60042, {	-- May I Take Your Order?
+							["sourceQuests"] = { 60041 },	-- Build-A-Bomination
+						}),
+						q(58665, {	-- Rebellious Souls
+							-- TODO: might be breadcrumb?
+							["sourceQuests"] = { 59609 },	-- No Rest For the Dead
+							["provider"] = { "n", 162222 },	-- Rathan
+							["coord"] = { 48.0, 50.2, 1698 },
+						}),
+						q(58677, {	-- Skin in the Game
+							["sourceQuests"] = { 58668 },	-- Find The Way
+							["provider"] = { "n", 161285 },	-- Emeni
+							["coord"] = { 24.1, 38.7, 1536 },
+						}),
+						q(58432, {	-- Something Old, Something Used
+							["sourceQuests"] = { 60041 },	-- Build-A-Bomination
+							["isWeekly"] = true,
+						}),
+						q(60048, {	-- Stitching Time
+							["sourceQuests"] = { 58727 },	-- A Place To Call Home
+							["provider"] = { "n", 167150 },	-- Rathan
+							["coord"] = { 55.1, 68.8, 1536 },
+						}),
+						q(58670, {	-- The Slaughter Daughter
+							["sourceQuests"] = { 59042 },	-- A Good Heart
+							["provider"] = { "n", 162174 },	-- Emeni
+							["coord"] = { 23.8, 39.1, 1536 },
+						}),
+						q(58686, {	-- Weapon of Mass Construction
+							["sourceQuests"] = { 
+								58680,	-- Loose Threads
+								58677,	-- Skin in the Game
+							},
+							["provider"] = { "n", 162227 },	-- Rathan
+							["coord"] = { 24.2, 38.8, 1536 },
+						}),
+					}),
 						-- Tier 2: Crafting Limbs
 						-- Tier 3: Bring Them to Life
 						-- Tier 4: Forged Friends
@@ -390,12 +441,23 @@ _.Zones =
 					n(-905, {	-- Command Table
 						n(-906, {	-- Tier 1: Tactical Insight
 							q(62309, {	-- Adventurer: Secutor Mevix
-							--	requires Renown 4
-								["provider"] = { "n", 165321 },	-- Merick Feldscar <Communicator>
-								["coord"] = { 38.8, 48.5, 1698 },	-- Seat of the Primus
+								--	requires Renown 4
+								["sourceQuests"] = { 59603 },	-- In Shadowlands Service
+								["provider"] = { "n", 165321 },	-- Merick Feldscar
+								["coord"] = { 38.8, 48.2, 1698 },
 								["g"] = {
 									follower(1300),	-- Secutor Mevix
 								},
+							}),
+							q(59603, {	-- In Shadowlands Service
+								["sourceQuests"] = { 63054 },	-- Strength in Numbers
+								["provider"] = { "n", 165321 },	-- Merick Feldscar
+								["coord"] = { 38.8, 48.2, 1698 },
+							}),
+							q(63054, {	-- Strength in Numbers
+								["provider"] = { "n", 161909 },	-- Arkadia Moa
+								["coord"] = { 52.4, 38.4, 1698 },
+								["description"] = "Becomes available after you build Command Table tier 1 in your sanctum.",
 							}),
 						}),
 						-- Tier 2: Recuperative Treatments

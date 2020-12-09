@@ -663,6 +663,7 @@ app.L = {
 		[-920] = "Interface\\Icons\\ui_sigil_necrolord",									-- Covenant: Necrolord
 		[-921] = "Interface\\Icons\\ui_sigil_necrolord",									-- Sanctum Upgrades (Necrolord)
 		[-922] = 132334,																	-- Theater of Pain
+		[-923] = "Interface\\Icons\\ui_sigil_necrolord",									-- Abomination Factory (Necrolord)
 		[-929] = "Interface\\Icons\\ui_sigil_nightfae",										-- Covenant: Night Fae
 		[-930] = 136059,																	-- Queen's Conservatory
 		[-931] = 636334,																	-- Lesser Spirit
@@ -1526,6 +1527,7 @@ app.L = {
 		[-920] = "Covenant: Necrolord",											-- Covenant: Necrolord
 		[-921] = "Sanctum Upgrades",											-- Sanctum Upgrades (Necrolord)
 		[-922] = "Theater of Pain",												-- Theater of Pain
+		[-923] = "Abomination Factory",											-- Abomination Factory (Necrolord)
 
 -- SL Ardenweald/Night Fae
 		[-929] = "Covenant: Night Fae",											-- Covenant: Night Fae

@@ -18,6 +18,11 @@ _.Zones =
 						["isWeekly"] = true,
 						["coord"] = { 34.7, 56.5, 1670 },
 					}),
+					q(62286, {	-- Observing Skirmishes
+						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+						["isWeekly"] = true,
+						["coord"] = { 34.7, 56.5, 1670 },
+					}),
 					q(62285, {	-- Observing War
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isWeekly"] = true,

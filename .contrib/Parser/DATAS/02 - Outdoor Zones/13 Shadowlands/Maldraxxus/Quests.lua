@@ -56,6 +56,12 @@ _.Zones =
 					["provider"] = { "n", 164244 },	-- Grandmaster Vole
 					["coord"] = { 50.3, 44.3, 1536 },
 				}),
+				q(57245, {	-- Ani-Matter Animator
+					-- TODO: is this Necrolord only, or available to anyone?
+					["provider"] = { "n", 157076 },	-- Synder Sixfold
+					["coord"] = { 26.3, 42.7, 1536 },
+					["isWeekly"] = true,
+				}),
 				q(58031, {	-- Applied Science
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
 					["provider"] = { "o", 353645 },	-- Marileth's Journal

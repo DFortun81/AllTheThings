@@ -3118,6 +3118,9 @@ _.HiddenQuestTriggers =
 		q(62711),	-- Triggered after choosing Necrolords covenant
 		-- q(62152),	-- when completing 62159 (Aiding the Shadowlands) as Skip+Necrolords covenant... kind of want to see when it happens again though
 		q(63348),	-- Triggered after turning in Explore Torghast (62932) at Bolvar
+		q(63340),	-- Triggered after turning in Night Fae Veteran (63346) at Zo'sorg [one of these is probably for all covenants, one for Night Fae only, and one for ??]
+		q(63342),	-- Triggered after turning in Night Fae Veteran (63346) at Zo'sorg
+		q(63344),	-- Triggered after turning in Night Fae Veteran (63346) at Zo'sorg
 
 		-- Revendreth
 		q(60523),	-- Triggered after reading Theotar's Diary
