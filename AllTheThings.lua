@@ -75,7 +75,7 @@ local function Push(self, name, method)
 	if not self.__stack then
 		self.__stack = {};
 	end
-	--print("Push->" .. name);
+	-- print("Push->" .. name);
 	table.insert(self.__stack, { method, name });
 	self:SetScript("OnUpdate", OnUpdate);
 end
@@ -2399,7 +2399,20 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					tinsert(entries, o);
 
 					-- Only go down one more level.
-					if layer < 3 and group.g and (not group.achievementID or paramA == "creatureID") and (not group.parent or not group.parent.difficultyID) and #group.g > 0 and not (group.g[1].artifactID or group.filterID == 109) and not group.symbolized then
+					if layer < 3
+						-- if there are sub groups
+						and group.g and #group.g > 0
+						-- not for achievements unless tied to an NPC
+						and (not group.achievementID or paramA == "creatureID")
+						-- not for things with a parent unless the parent has no difficultyID
+						and (not group.parent or not group.parent.difficultyID)
+						-- not for group which contains an artifact 
+						and not group.g[1].artifactID
+						-- not for heirlooms
+						and not group.filterID == 109
+						-- not for a group which is symbolized
+						and not group.symbolized 
+						then
 						BuildContainsInfo(group.g, entries, paramA, paramB, indent .. "  ", layer + 1);
 					-- else
 						-- print("skipped sub-contains");
@@ -3542,15 +3555,20 @@ fieldConverters = {
 	end,
 };
 CacheFields = function(group)
-	local n = 0;
-	local clone = {};
+	-- local n = 0;
+	-- local clone = {};
+	-- for key,value in pairs(group) do
+	-- 	n = n + 1;
+	-- 	rawset(clone, n, key);
+	-- end
+	-- for i=1,n,1 do
+	-- 	_cache = rawget(fieldConverters, rawget(clone, i));
+	-- 	if _cache then _cache(group, rawget(group, rawget(clone, i))); end
+	-- end
+	-- iteration only moves across raw values
 	for key,value in pairs(group) do
-		n = n + 1
-		rawset(clone, n, key);
-	end
-	for i=1,n,1 do
-		_cache = rawget(fieldConverters, rawget(clone, i));
-		if _cache then _cache(group, rawget(group, rawget(clone, i))); end
+		_cache = rawget(fieldConverters, key);
+		if _cache then _cache(group, value); end
 	end
 end
 end)();
@@ -3615,10 +3633,12 @@ end
 -- provided field type and key id
 -- Meaning, when using this function, the results must be filtered to ensure the expected group(s) are being utilized
 -- i.e. "questID" & 55780 will return groups for 55780 AND 55781 (which is an altquest of 55780)
-local function SearchForField(field, id)
+local function SearchForField(field, id, onlyCached)
 	if field and id then
 		_cache = rawget(fieldCache, field);
 		if _cache then return rawget(_cache, id), field, id; end
+		if onlyCached then return nil, field, id; end
+		-- print("Recursive Search!",field,id);
 		return SearchForFieldRecursively(app:GetDataCache(), field, id), field, id;
 	end
 end
@@ -3972,7 +3992,7 @@ local function PopulateQuestObject(questObject)
 	-- Check for provider info
 	if questObject.qgs and #questObject.qgs == 1 then
 		for j,qg in ipairs(questObject.qgs) do
-			cache = SearchForField("creatureID", qg);
+			cache = SearchForField("creatureID", qg, true);
 			if cache then
 				for _,data in ipairs(cache) do
 					if GetRelativeField(group, "npcID", -16) then	-- Rares only!
@@ -10036,6 +10056,7 @@ local function SetRowData(self, row, data)
 	end
 end
 local function Refresh(self)
+	if not app.IsReady then return; end
 	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
 	if self:GetHeight() < 40 then
 		self.CloseButton:Hide();
@@ -10121,10 +10142,8 @@ local function IsSelfOrChild(self, focus)
 	return focus and (self == focus or IsSelfOrChild(self, focus:GetParent()));
 end
 local function StopMovingOrSizing(self)
-	if self.isMoving then
-		self:StopMovingOrSizing();
-		self.isMoving = false;
-	end
+	self:StopMovingOrSizing();
+	self.isMoving = nil;
 end
 local function StartMovingOrSizing(self, fromChild)
 	if not self:IsMovable() and not self:IsResizable() or self.isLocked then
@@ -10138,20 +10157,22 @@ local function StartMovingOrSizing(self, fromChild)
 			self:StartSizing();
 			Push(self, "StartMovingOrSizing (Sizing)", function()
 				if self.isMoving then
+					-- keeps the rows within the window fitting to the window as it resizes
 					self:Refresh();
 					return true;
 				end
 			end);
 		elseif self:IsMovable() then
 			self:StartMoving();
-			Push(app, "StartMovingOrSizing (Moving)", function()
-				-- This fixes a bug where the window will get stuck on the mouse until you reload.
-				if IsSelfOrChild(self, GetMouseFocus()) then
-					return true;
-				else
-					StopMovingOrSizing(self);
-				end
-			end);
+			-- never encountered this bug without this added logic...is there some specific way to trigger it?
+			-- Push(app, "StartMovingOrSizing (Moving)", function()
+			-- 	-- This fixes a bug where the window will get stuck on the mouse until you reload.
+			-- 	if IsSelfOrChild(self, GetMouseFocus()) then
+			-- 		return true;
+			-- 	else
+			-- 		StopMovingOrSizing(self);
+			-- 	end
+			-- end);
 		end
 	end
 end
@@ -10366,12 +10387,13 @@ local function RowOnClick(self, button)
 						RowOnLeave(self);
 						RowOnEnter(self);
 					end
+				else
+					self:SetScript("OnMouseUp", function(self)
+						self:SetScript("OnMouseUp", nil);
+						StopMovingOrSizing(owner);
+					end);
+					StartMovingOrSizing(owner, true);
 				end
-				self:SetScript("OnMouseUp", function(self)
-					self:SetScript("OnMouseUp", nil);
-					StopMovingOrSizing(owner);
-				end);
-				StartMovingOrSizing(owner, true);
 			end
 		end
 	end
@@ -11081,10 +11103,10 @@ local function OnScrollBarMouseWheel(self, delta)
 	self.ScrollBar:SetValue(self.ScrollBar.CurrentValue - delta);
 end
 local function OnScrollBarValueChanged(self, value)
-	local un = math.floor(value);
-	local up = un + 1;
-	self.CurrentValue = (up - value) > (-(un - value)) and un or up;
-	self:GetParent():Refresh();
+	if self.CurrentValue ~= value then
+		self.CurrentValue = value;
+		self:GetParent():Refresh();
+	end
 end
 local function ProcessGroup(data, object)
 	if app.VisibilityFilter(object) then
@@ -11802,14 +11824,16 @@ local backdrop = {
 
 -- Collection Window Creation
 function app:RefreshData(lazy, got, manual)
-	--print("RefreshData(" .. tostring(lazy or false) .. ", " .. tostring(got or false) .. ")");
+	-- print("RefreshData(" .. tostring(lazy or false) .. ", " .. tostring(got or false) .. ")");
 	app.refreshDataForce = app.refreshDataForce or not lazy;
 	app.countdown = manual and 0 or 30;
 	StartCoroutine("RefreshData", function()
 		-- While the player is in combat, wait for combat to end.
+		-- print("Wait Combat/Ready")
 		while InCombatLockdown() or not app.IsReady do coroutine.yield(); end
 
 		-- Wait 1/2 second. For multiple simultaneous requests, each one will reapply the delay. [This should fix a lot of lag with ensembles.]
+		-- print("Wait Countdown")
 		while app.countdown > 0 do
 			app.countdown = app.countdown - 1;
 			coroutine.yield();
@@ -11818,6 +11842,7 @@ function app:RefreshData(lazy, got, manual)
 		-- Send an Update to the Windows to Rebuild their Row Data
 		if app.refreshDataForce then
 			app.refreshDataForce = nil;
+			-- print("Update Groups")
 			app:GetDataCache();
 			for i,data in ipairs(app.RawData) do
 				data.progress = 0;
@@ -11912,6 +11937,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		scrollbar.back:SetAllPoints(scrollbar);
 		scrollbar:SetMinMaxValues(1, 1);
 		scrollbar:SetValueStep(1);
+		scrollbar:SetObeyStepOnDrag(true);
 		scrollbar.CurrentValue = 1;
 		scrollbar:SetWidth(16);
 		scrollbar:EnableMouseWheel(true);
@@ -13892,7 +13918,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 
 							-- Make sure a cache table exists for this item.
 							-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
-							-- Index 2: The Crafted Item IDs
+							-- Index 2: The Crafted Item IDs => reagentCount
 							-- TODO: potentially re-design this structure
 							if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
 							reagentCache[itemID][1][spellRecipeInfo.recipeID] = { craftedItemID, reagentCount };
@@ -16028,13 +16054,14 @@ app.events.VARIABLES_LOADED = function()
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
 
 	local reagentCache = app.GetDataMember("Reagents", {});
+	local rebuildReagents = 2;
 	-- verify that reagent cache is of the correct format by checking a special key
-	if not reagentCache[-1] or reagentCache[-1] < 2 then
-		C_Timer.After(20, function() app.print("Reagent Cache is out-of-date and will be re-cached when opening your professions!"); end);
+	if not reagentCache[-1] or reagentCache[-1] < rebuildReagents then
+		C_Timer.After(30, function() app.print("Reagent Cache is out-of-date and will be re-cached when opening your professions!"); end);
 		wipe(reagentCache);
 	end
 	if reagentCache then
-		reagentCache[-1] = 2;
+		reagentCache[-1] = rebuildReagents;
 		local craftedItem = { {}, {[31890] = 1} };	-- Blessings Deck
 		for i,itemID in ipairs({ 31882, 31889, 31888, 31885, 31884, 31887, 31886, 31883 }) do reagentCache[itemID] = craftedItem; end
 		craftedItem = { {}, {[31907] = 1} };	-- Furies Deck
