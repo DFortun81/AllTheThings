@@ -366,6 +366,11 @@ _.Achievements =
 					crit(15),		-- Gift of Devos
 				}),
 			}),
+			ach(14767, {	-- Count Your Blessings
+				crit(1), 		-- Purified Blessing of Grace
+				crit(2), 		-- Purified Blessing of Power
+				crit(3), 		-- Purified Blessing of Fortitude
+			}),
 			ach(14788, {	-- Fractured Faerie Tales
 				crit(1),		-- A Meandering Story
 				crit(2),		-- A Wandering Tale
@@ -428,6 +433,13 @@ _.Achievements =
 				crit(9),		-- Meowmalade
 			}),
 			ach(14746),		-- Prepare for Trouble!
+			ach(14734, {	-- Rallying Cry of the Ascended
+				crit(1),		-- Vesper of Courage
+				crit(2),		-- Vesper of Wisdom
+				crit(3),		-- Vesper of Humility
+				crit(4),		-- Vesper of Loyalty
+				crit(5),		-- Vesper of Purity
+			}),
 			ach(14339),		-- Shard Labor
 			ach(14658),		-- Soulkeeper's Burden
 			ach(14771, {	-- The Afterlife Express
@@ -475,6 +487,12 @@ _.Achievements =
 				crit(2),		-- Hole in the Wall
 				crit(3),		-- Dominance Gate Battlements
 				crit(4),		-- Darkhaven
+			}),
+			ach(14768, {	-- What is that Melody?
+				crit(1),		-- Hymn of Purity
+				crit(2),		-- Hymn of Courage
+				crit(3),		-- Hymn of Humility
+				crit(4),		-- Hymn of Wisdom
 			}),
 			ach(14742),		-- Who Sent You?
 			ach(14779, {	-- Wild Hunting
