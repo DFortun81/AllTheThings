@@ -432,6 +432,16 @@ _.Zones =
 						-- Tier 5: Best Fiends Forever
 					n(-915, {	-- Anima Conductor
 						n(-916, {	-- Tier 1: Flowing Tendrils
+							q(63057, {	-- Restoring Power
+								["provider"] = { "n", 161909 },	-- Arkadia Moa
+								["coord"] = { 52.4, 38.4, 1698 },
+								["description"] = "Becomes available after you build Anima Conductor tier 1 in your sanctum.",
+							}),
+							q(60722, {	-- Tower Power
+								["sourceQuests"] = { 63057 },	-- Restoring Power
+								["provider"] = { "n", 167205 },	-- Yondare Hex
+								["coord"] = { 490.0, 36.0, 1698 },
+							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
 						}),

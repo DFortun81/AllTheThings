@@ -35,6 +35,11 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
+				q(61596, {	-- Cooking: Arden Apple Pie
+					["requireSkill"] = COOKING,
+					["isWorldQuest"] = true,
+					["lvl"] = { 60 },
+				}),
 				q(61440, {	-- Enchanting: Boundless Basket
 					["requireSkill"] = ENCHANTING,
 					["isWorldQuest"] = true,

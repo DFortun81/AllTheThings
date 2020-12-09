@@ -259,14 +259,12 @@ _.Zones =
 								i(179518),	-- Glimmerlight Staff
 							},
 						}),
-						--[[
 						n(166145, {	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>
-							["questID"] = ,
+							["questID"] = 61206,
 							["isDaily"] = true,
 							["g"] = {
 							},
 						}),
-						--]]
 						n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
 							["questID"] = 61205,
 							["isDaily"] = true,

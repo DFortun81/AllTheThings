@@ -3104,6 +3104,7 @@ _.HiddenQuestTriggers =
 		q(63361),	-- Triggered when completing 60459 'Anima Salvage' (First Calling)
 		q(63365),	-- Triggered after starting 3rd tutorial Adventure [Necrolord]
 		q(63369),	-- Triggered after completing 3rd tutorial Adventure [Necrolord]
+		q(61588),	-- Triggered after first time channeling anima (to House of Constructs)
 
 
 		-- Oribos
