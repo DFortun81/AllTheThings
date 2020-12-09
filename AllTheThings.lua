@@ -1682,8 +1682,8 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 				(not group.itemID and
 				-- incomplete things actually exist below itself
 				((group.total or 0) > (group.progress or 0)) and
-				-- it is not a 'saved' thing for this character
-				(not group.saved or group.saved ~= 1))
+				-- it is not a 'saved' thing for this character or account mode is active
+				(not group.saved or group.saved ~= 1 or app.Settings:Get("AccountMode")))
 			) then
 			-- print("expanded",group.key,group[group.key]);
 			group.expanded = expanded;
