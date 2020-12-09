@@ -98,6 +98,7 @@ _.Zones =
 						i(181741, {	-- Tribute of the Paragon / Bastion
 							["description"] = "Rewarded by completing a 'Challenges' Calling based in Bastion",
 							["g"] = {
+								i(181944),	-- Resonant Words
 							},
 						}),
 					},
