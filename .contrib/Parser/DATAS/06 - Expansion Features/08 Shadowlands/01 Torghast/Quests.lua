@@ -61,6 +61,12 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
+				q(60139, {	-- Torment Chamber: Jaina
+					["sourceQuests"] = { 62938 },	-- Information for a Price
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, 1670 },
+				}),
+
 				-- Champion Unlocks
 				-- TODO: move to covenant files
 				q(61222, {	-- Champion: Kaletar the Mender (Venthyr)
@@ -92,10 +98,6 @@ _.ExpansionFeatures =
 				-------- unverifed on live yet; adding to alphabetized list above as they are verified in game
 				q(60137, {	-- The Fracture Chambers
 					["sourceQuests"] = { 61099 },	-- Skoldus Hall
-					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-				}),
-				q(60139, {	-- The Soulforges
-					["sourceQuests"] = { 60137 },	-- The Fracture Chambers
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				}),
 				q(60141, {	-- Coldheart Interstitia

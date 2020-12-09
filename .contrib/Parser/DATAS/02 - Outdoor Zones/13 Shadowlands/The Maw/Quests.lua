@@ -169,6 +169,12 @@ _.Zones =
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 24.4, 35.9, 1648 },
 				}),
+				q(62214, {	-- Forces of Perdition
+					-- Think this requires "Tentative" with Ve'nari
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, 1543 },
+					["isWeekly"] = true,
+				}),
 				q(59776, {	-- From the Mouths of Madness
 					["sourceQuests"] = {
 						59760,	-- The Afflictor's Key
@@ -315,6 +321,11 @@ _.Zones =
 				q(60972, {	-- The Hunt for the Baron
 					["sourceQuests"] = { 59897 },	-- Seeking the Baron
 					["coord"] = { 44.9, 40.9, 1543 },
+				}),
+				q(60622, {	-- The Jailer's Share
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isDaily"] = true,
+					["coord"] = { 46.9, 41.7, 1543 },
 				}),
 				q(59759, {	-- The Lion's Cage
 					["sourceQuests"] = { 59915 },	-- Soul in Hand
