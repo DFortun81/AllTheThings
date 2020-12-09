@@ -3088,8 +3088,11 @@ _.HiddenQuestTriggers =
 		q(61988),	-- Indomitable Schmitd secondary quest
 		q(61992),	-- Pesticide secondary quest
 		q(61986),	-- Tahonta secondary quest
-		-- Maldraxxus treasures
+		-- Maldraxxus Treasures
 		q(61720),	-- when opening Plaguefallen Chest (61474)
+		q(61120),	-- interacting with runes to unlock a Runebound Coffer (61115)
+		q(61121),	-- interacting with runes to unlock a Runebound Coffer (61115)
+		q(61122),	-- interacting with runes to unlock a Runebound Coffer (61115)
 		-- Maldraxxus WQs
 		q(62948),	-- "learning" the quest items while on #61615, "Tailoring: Haunting Hood"
 		q(57242),	-- triggered when completing #57205, "A Few Bumps Along the Way"
@@ -3260,5 +3263,8 @@ _.HiddenQuestTriggers =
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest
+		
+		-- World Bosses
+		q(62810),	-- Mortanis kill questID
 	}),
 };

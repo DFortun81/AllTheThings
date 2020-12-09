@@ -10,6 +10,7 @@ _.Zones =
 				n(-907, {	-- Dead Blanchy
 					["description"] = "Enable quest tracking to see all the steps.\n\nTo get Blanchy's Reins, you must interact with Dead Blanchy once a day for 6 days.  On each day, you must have a specific item.  You can gather all the items in advance.  You will need to visit Revendreth, Westfall, and take a detour to either Ardenweald or Bastion.\n\nBlanchy spawns around |cFFFFFFFF63.1, 43.1|r in Revendreth.  Similar to the Friendly Alpaca in Uldum, anyone can interact with Blanchy for a small window, roughly 5 minutes, and then she will despawn for 1 to 2 hours.\n\nOne of the special items you need to purchase costs 30 |cFFFFFFFFCreeping Crawler Meat|r, so make sure to collect it or pull it out of your bank before trekking all the way to the vendor!",
 					["questID"] = 62107,	-- daily Blanchy interaction
+					["isDaily"] = true,
 					["coord"] = { 63.1, 43.1, 1525 },	-- Revendreth, area where Dead Blanchy spawns
 					["icon"] = 2143082,
 					["crs"] = { 173468 },	-- Dead Blanchy
@@ -77,7 +78,7 @@ _.Zones =
 						}),
 						i(179271, {	-- Dredhollow Apple
 							["description"] = "Day 6: Purchase 3 |cFFFFFFFFDredhollow Apples|r from either Mims or Slabchop in Revendreth.",
-						--	["questID"] = ,
+							["questID"] = 62050,
 							["coords"] = {
 								{ 40.8, 46.6, 1525 },	-- Mims <Innkeeper>
 								{ 70.6, 80.2, 1525 },	-- Slabchop <Chugs, Chews, and Stews>
