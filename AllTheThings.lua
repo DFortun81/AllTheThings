@@ -4657,6 +4657,10 @@ end
 -- Tooltip Functions
 local function AttachTooltipRawSearchResults(self, group)
 	if group then
+		-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
+		if group.encounterID and group.collectionText then
+			self:AddDoubleLine("Progress", group.collectionText);
+		end
 		-- If there was info text generated for this search result, then display that first.
 		if group.info then
 			local left, right;
@@ -4682,7 +4686,7 @@ local function AttachTooltipRawSearchResults(self, group)
 		end
 
 		-- If the user has Show Collection Progress turned on.
-		if group.collectionText and self:NumLines() > 0 then
+		if group.collectionText and not group.encounterID and self:NumLines() > 0 then
 			local rightSide = _G[self:GetName() .. "TextRight1"];
 			if rightSide then
 				if self.CloseButton then
