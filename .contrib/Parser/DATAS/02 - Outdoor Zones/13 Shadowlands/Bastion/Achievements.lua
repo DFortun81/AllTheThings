@@ -458,6 +458,33 @@ _.Zones =
 						},
 					}),
 				}),
+				ach(14767, {	-- Count Your Blessings
+					crit(1, {		-- Purified Blessing of Grace
+						["coord"] = { 53.8, 28.9, 1533 },
+						["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
+					}),
+					crit(2, {		-- Purified Blessing of Power
+						["coord"] = { 45.3, 59.8, 1533 },
+						["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
+					}),
+					crit(3, {		-- Purified Blessing of Fortitude
+						["coord"] = { 34.7, 30.0, 1533 },
+						["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
+					}),
+				}),
+				ach(14734, {	-- Rallying Cry of the Ascended
+					crit(1),		-- Vesper of Courage
+					crit(2),		-- Vesper of Wisdom
+					crit(3),		-- Vesper of Humility
+					crit(4),		-- Vesper of Loyalty
+					crit(5),		-- Vesper of Purity
+				}),
+				ach(14768, {	-- What is that Melody?
+					crit(1),		-- Hymn of Purity
+					crit(2),		-- Hymn of Courage
+					crit(3),		-- Hymn of Humility
+					crit(4),		-- Hymn of Wisdom
+				}),
 			}),
 		}),
 	}),

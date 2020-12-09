@@ -83,11 +83,6 @@ _.Achievements =
 				crit(6),		-- Ti'or
 				crit(7),		-- Sabriel the Bonecleaver
 			}),
-			ach(14767, {	-- Count Your Blessings
-				crit(1),		-- Purified Blessing of Grace
-				crit(2),		-- Purified Blessing of Power
-				crit(3),		-- Purified Blessing of Fortitude
-			}),
 			ach(14763, {	-- Crypt Couture
 				crit(1),		-- Ashen Ink
 				crit(2),		-- Jagged Bonesaw
@@ -433,13 +428,6 @@ _.Achievements =
 				crit(9),		-- Meowmalade
 			}),
 			ach(14746),		-- Prepare for Trouble!
-			ach(14734, {	-- Rallying Cry of the Ascended
-				crit(1),		-- Vesper of Courage
-				crit(2),		-- Vesper of Wisdom
-				crit(3),		-- Vesper of Humility
-				crit(4),		-- Vesper of Loyalty
-				crit(5),		-- Vesper of Purity
-			}),
 			ach(14339),		-- Shard Labor
 			ach(14658),		-- Soulkeeper's Burden
 			ach(14771, {	-- The Afterlife Express
@@ -482,12 +470,6 @@ _.Achievements =
 				crit(12),		-- Creeper
 			}),
 			ach(14791),		-- Toss a Seed to Your Hunter...
-			ach(14768, {	-- What is that Melody?
-				crit(1),		-- Hymn of Purity
-				crit(2),		-- Hymn of Courage
-				crit(3),		-- Hymn of Humility
-				crit(4),		-- Hymn of Wisdom
-			}),
 			ach(14770, {	-- What We Ride in the Shadows
 				crit(1),		-- Old Gate
 				crit(2),		-- Hole in the Wall
