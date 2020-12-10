@@ -12,31 +12,35 @@ _.Zones =
 						["provider"] = { "n", 168011 },	-- Zo'sorg
 						["isWeekly"] = true,
 						["coord"] = { 34.7, 56.5, 1670 },
+						["_drop"] = { "g" },	-- drop anima trash
+					}),
+					q(62287, {	-- Observing Arenas
+						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+						["isWeekly"] = true,
+						["coord"] = { 34.3, 55.8, 1670 },
+						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					q(62284, {	-- Observing Battle
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isWeekly"] = true,
 						["coord"] = { 34.7, 56.5, 1670 },
+						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					q(62286, {	-- Observing Skirmishes
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isWeekly"] = true,
 						["coord"] = { 34.7, 56.5, 1670 },
+						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					q(62285, {	-- Observing War
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isWeekly"] = true,
 						["coord"] = { 34.7, 56.5, 1670 },
+						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					--[[
 				--	TODO: these are the rest of the PVP quests from Unsorted.  if they show up, it'll be easier to move them/add information.  if they don't show up they can be moved to the NYI > NYI Quests file.
 					q(62289, {	-- Observing Conflict
-						["provider"] = { "n",  },	-- 
-						["isWeekly"] = true,
-						["coord"] = { , , 1670 },
-						["_drop"] = { "g" },	-- drop anima trash
-					}),
-					q(62287, {	-- Observing Arenas
 						["provider"] = { "n",  },	-- 
 						["isWeekly"] = true,
 						["coord"] = { , , 1670 },

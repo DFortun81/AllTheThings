@@ -18,14 +18,14 @@ _.Zones =
 					["coords"] = {	-- there might be more
 						{ 24.5, 18.0, 1533 },
 						{ 24.8, 23.3, 1533 },
+					--	{ 25.6, 26.2, 1533 },
 						{ 27.5, 21.7, 1533 },
 					},
 					["g"] = {
 						i(184418),	-- Acrobatic Steward (TOY!)
 					}
 				}),
-				o(353868, {	-- Hidden Hoard
-				--	TODO: verify objectID when coords are available, probably this one or 353869
+				o(353872, {	-- Hidden Hoard
 					["questID"] = 60877,	-- 60875 put in HQT, seems to trigger for all Hidden Hoard objects (or at least multiple)
 					["isDaily"] = true,
 					["coord"] = { 61.6, 37.2, 1533 }
@@ -36,11 +36,16 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 47.7, 35.1, 1533 },
 				}),
-				o(1278968758, {	-- Hidden Hoard
+				o(353870, {	-- Hidden Hoard
 					["description"] = "The coordinates are for a cave entrance hidden behind some vines in the side of a cliff.",
 					["questID"] = 60879,
 					["isDaily"] = true,
 					["coord"] = { 48.5, 45.4, 1533 },
+				}),
+				o(353869, {	-- Hidden Hoard
+					["questID"] = 60880,
+					["isDaily"] = true,
+					["coord"] = { 47.3, 16.5, 1533 },
 				}),
 				o(353650, {	-- Steward's Golden Chest
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
@@ -53,11 +58,10 @@ _.Zones =
 				}),
 				--	TODO: are Silver Strongbox rewards shared or specific to the objectID?
 				o(353205, {	-- Silver Strongbox (under Hero's Rest)
-				--	TODO: updated objectIDs to match with coords when the data is available
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
 					["description"] = "Requires a Ripe Purian to open.",
 					["questID"] = 60652,
-					["isDaily"] = true,	-- TODO: maybe repeatable?  not sure if these just show up again at random times on the map
+					["isDaily"] = true,
 					["coord"] = { 50.8, 44.7, 1533 },
 					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
@@ -67,22 +71,20 @@ _.Zones =
 					["description"] = "Requires a Ripe Purian to open.  Use the Anima Gateway at 52.9, 12.1 to get to the cliff above the treasure.",
 					["questID"] = 60754,
 					["isDaily"] = true,	-- TODO: maybe repeatable?  not sure if these just show up again at random times on the map
-					["coord"] = { 50.8, 44.7, 1533 },
+				--	["coord"] = { 50.8, 44.7, 1533 },	-- somehow pasted the coords from the one above here, so these are wrong
 					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 					["g"] = {
 						i(184418),	-- Acrobatic Steward (TOY!)
 					},
 				}),
-				o(1278968755, {	-- Silver Strongbox
-				--	TODO: fix object ID when data is available
+				o(353516, {	-- Silver Strongbox
 					["description"] = "Requires a Ripe Purian to open.  You will have to jump down from the cliffs above.",
 					["questID"] = 60758,
 					["isDaily"] = true,
 					["coord"] = { 63.8, 29.1, 1533 },
 					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
-				o(353314, {	-- Silver Strongbox
-				--	TODO: updated objectIDs to match with coords when the data is available
+				o(353503, {	-- Silver Strongbox
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
 					["description"] = "Requires a Ripe Purian to open.",
 					["questID"] = 60755,
@@ -90,8 +92,7 @@ _.Zones =
 					["coord"] = { 48.7, 31.8, 1533 },
 					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
-				o(1278968756, {	-- Silver Strongbox
-				--	TODO: updated objectIDs to match with coords when the data is available
+				o(353325, {	-- Silver Strongbox
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
 					["description"] = "Requires a Ripe Purian to open.",
 					["questID"] = 60712,
@@ -99,8 +100,7 @@ _.Zones =
 					["coord"] = { 46.8, 19.9, 1533 },
 					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
-				o(1278968757, {	-- Silver Strongbox
-				--	TODO: fix objectID when data is available
+				o(353019, {	-- Silver Strongbox
 					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
 					["description"] = "Requires a Ripe Purian to open.",
 					["questID"] = 60627,
@@ -114,6 +114,14 @@ _.Zones =
 					["questID"] = 60777,
 					["isDaily"] = true,
 					["coord"] = { 62.4, 57.6, 1533 },
+					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
+				}),
+				o(1278968755, {	-- Silver Strongbox
+					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
+					["description"] = "Requires a Ripe Purian to open.",
+					["questID"] = 60668,
+					["isDaily"] = true,
+					["coord"] = { 43.2, 36.2, 1533 },
 					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
 				}),
 				o(353691, {	-- Skyward Bell

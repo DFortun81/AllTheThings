@@ -166,6 +166,9 @@ _.Zones =
 				ach(14660, {	-- It's About Sending a Message
 					ach(14659),	-- Handling His Henchmen
 				}),
+				ach(14746, {	-- Prepare for Trouble!
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+				}),
 			}),
 		}),
 	}),

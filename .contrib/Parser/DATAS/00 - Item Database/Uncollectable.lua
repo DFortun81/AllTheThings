@@ -352,6 +352,7 @@ i(173784);	-- Hoppy Mead
 i(173782);	-- Karaweizen
 i(151757);	-- Limited Run Blight Boar Poster
 i(173781);	-- Lost Watermelon
+i(184485);	-- Mawsworn Key
 i(80914);	-- Mourning Glory
 i(173771);	-- Old Apple
 i(173778);	-- Orange Orange

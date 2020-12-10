@@ -3056,7 +3056,6 @@ _.HiddenQuestTriggers =
 		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
 		--	Bastion Treasures
 		q(60875),	-- seems to trigger for all Hidden Hoard chests on top of unique questIDs for each
-		q(60880),	-- triggers on Hidden Hoard chests for Kyrian players (???)
 		q(60797),	-- secondary quest trigger on Broken Bell (58.3, 66.2)
 		--	Bastion WQs
 		q(63262),	-- triggered after completing the WQ #60858, "Flight School: Up and Away!"

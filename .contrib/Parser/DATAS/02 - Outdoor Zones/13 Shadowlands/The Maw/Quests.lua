@@ -170,7 +170,7 @@ _.Zones =
 					["coord"] = { 24.4, 35.9, 1648 },
 				}),
 				q(62214, {	-- Forces of Perdition
-					-- Think this requires "Tentative" with Ve'nari
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, 1543 },
